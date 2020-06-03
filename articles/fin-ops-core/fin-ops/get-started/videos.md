@@ -1,9 +1,9 @@
 ---
 title: Videot
-description: Tämä sivu sisältää luettelon Microsoftin luomista ohjevideoista ja Finance and Operations -sovelluksia koskevista teknisistä videoista, jotka ovat saatavilla YouTubessa ja muilla sivustoilla.
+description: Tällä sivulla on Microsoftin luomia toimintaohjeita ja Finance and Operations -sovelluksiin liittyviä teknisiä keskusteluja sisältäviä videoita, joita voi katsoa YouTubessa ja muissa sivustoissa.
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781847"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367126"
 ---
 # <a name="videos"></a>Videot 
 
 [!include [banner](../includes/banner.md)]
 
-[Microsoft Dynamics 365:n YouTube-kanavalta](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) löydät Microsoftin luomia videoita, jotka esittelevät kattavasti Dynamics 365 -tuotteiden liiketoimintaratkaisuja. Tässä osiossa on luettelo kanvalla isännöidyistä Finance and Operations -sovellusten opetusvideoista.
+[Microsoft Dynamics 365:n YouTube-kanavalta](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) löydät Microsoftin luomia videoita, jotka esittelevät kattavasti Dynamics 365 -tuotteiden liiketoimintaratkaisuja. Tässä osassa on luettelo kanavan Finance and Operations -sovelluksen ohjevideoista.
 
 > [!Note]
 > Joissakin luettelossa olevissa videoissa mainitaan vanha tuotenimi, mutta niiden tiedot ovat edelleen voimassa.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Finance and Operationsin kehittämistä ja hallintaa koskevat videot
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Finance and Operationsin kehitys- ja hallintavideot
 
 ### <a name="data-integration"></a>Tietojen integrointi
 
@@ -55,7 +55,7 @@ ms.locfileid: "2781847"
 ### <a name="intelligence"></a>Tiedot
 
 - [Upotetun raportin muokkaaminen analyysityötilassa](https://youtu.be/_8WlwmSggcQ)
-- [PowerBI.com-raporttien upottaminen Finance and Operations -sovelluksiin](https://youtu.be/gGWuNJDoi-M)
+- [PowerBI.com-raporttien upottaminen Finance and Operations -sovelluksissa](https://youtu.be/gGWuNJDoi-M)
 - [Oman tietokannan tuonti Finance and Operations -sovelluksiin](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Kustannustenhallinnan Power BI -sisällön käyttö Dynamics 365:ssä](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
@@ -76,6 +76,12 @@ ms.locfileid: "2781847"
 - [Tietojen päivittäminen tuotantoympäristössä](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Uuden ympäristön käyttäminen käyttöympäristöpäivityksen 3 jälkeen](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Telemetrian käyttö suorituskykymittarien seuraamiseksi Dynamics Lifecycle Servicesissä](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT)
+
+- [Tehtävien tallennustoiminnon käyttö Regression Suite Automation Tool (RSAT) -työkalun testitapauksen luonnissa](https://youtu.be/bBr4BXAxTNI)
+- [Regression Suite Automation Tool (RSAT) -työkalun kanssa käytettävän testisuunnitelman luonti Azure DevOpsissa](https://youtu.be/3jIuBleAnQk) 
+- [Regression Suite Automation Tool (RSAT) -työkalun käyttäminen](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Financea koskevat videot

@@ -1,9 +1,9 @@
 ---
-title: Yhdistäminen ohjejärjestelmään
-description: Tämä ohjeaihe sisältää Finance and Operations -sovellusten ohjejärjestelmän osien kuvauksen, niiden yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen yhteenvedon.
+title: Finance and Operations -sovellusten ohjekokemuksen määrittäminen
+description: Tässä ohjeaiheessa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista. Siinä käsitellään myös kyseisten sovellusten yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
 author: margoc
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,81 +18,85 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 827d4cd14f497b79c85fb084a6295af13c5eb0c7
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006169"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367381"
 ---
-# <a name="connect-the-help-system"></a>Yhdistäminen ohjejärjestelmään
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten ohjekokemuksen määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan Finance and Operations -sovellusten, kuten Dynamics 365 Financen, Supply Chain Managementin, Commercen ja Human Resourcesin ohjejärjestelmän komponentteja. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon.
+Tässä ohjeaiheessa on Finance and Operations -sovellusten, kuten Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce ja Dynamics 365 Human Resources, ohjejärjestelmän osien yleiskatsaus. Ohjeaiheessa käsitellään myös kyseisten osien yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
 
 ## <a name="help-architecture"></a>Ohjearkkitehtuuri
 
-Seuraavassa kuvassa on osa ohjejärjestelmästä. Tuotteen ohjejärjestelmä käyttää sivuston https://docs.microsoft.com artikkeleja sekä Lifecycle Servicesin (LCS) liiketoimintaprosessin mallintajaan tallennettuja tehtäväoppaita.
-
-> [!NOTE]
-> Jos kaaviossa on ominaisuuden vieressä tähtimerkki (\*), ominaisuutta suunnitellaan mutta se ei ole vielä käytössä.
+Finance and Operations -sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
 
 [![Ohjearkkitehtuuri](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Yhteyden muodostaminen ohjejärjestelmään
+Tuotteen ohjejärjestelmä hakee artikkeleita docs.microsoft.comista ja muista yhdistetyistä sivustoista. Se hakee myös liiketoimintaprosessien mallintajaan Microsoft Dynamics Lifecycle Servicesissä (LCS) tallennetuista tehtäväoppaista.
+
+## <a name="adding-task-guides"></a>Tehtäväoppaiden lisääminen
 
 > [!NOTE]
-> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Dynamics 365 Human Resourcesissa tai Commercessa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Menettelyohjeet ovat käytettävissä myös docs.microsoft.com-sivustossa sekä Human Resourcesille että Commercelle.
+> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Human Resourcesissa tai Commercessa. <!--We are currently working to enable this functionality in a future release.--> Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat kuitenkin edelleen käytettävissä. Sekä Human Resourcesin että Commercen menettelyohjeet ovat käytettävissä [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa.
 
-Järjestelmänvalvojat voivat muodostaa **Järjestelmäparametrit**-lomakkeella yhteyden käyttöönotettaviin ohjejärjestelmän osiin.
+Järjestelmänvalvojat voivat määrittää **Järjestelmän parametrit** -sivulla käyttöönottoon soveltuvien tehtäväopaskirjastojen käyttöoikeudet.
+
+> [!NOTE]
+> - Ohjeen määrittämistä varten kirjauduttava tilille sinä vuokraajana, jossa sovellus on otettu käyttöön.
+> - LCS-kirjastoon ei voi muodostaa yhteyttä sovelluksen siitä esiintymästä, jota käytetään paikallisella virtuaalikiintolevyllä (VHD).
 
 [![Järjestelmäparametrit-lomake ja ohjeen asetukset](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
-Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
+Ratkaisun tehtäväoppaiden määrittämisohjeet ovat **Järjestelmän parametrit** -sivulla.
 
 > [!IMPORTANT]
-> Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja nouda **Järjestelmäparametrit**-sivu valitsemalla **OK**.
+> Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja hae **Järjestelmäparametrit**-sivu valitsemalla **OK**.
 >
 > [![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Muodosta yhteys LCS:ään")](./media/connect-to-lcs-crop.png)
 
 1. Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
-3. Määritä BPM-kirjastojen näyttöjärjestys. Tämä asetus määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
+3. Määritä BPM-kirjastojen näyttöjärjestys. Näyttöjärjestys määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
 
-Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtäväoppaat**-välilehden, jolla on näkyvissä on avointa Finance and Operations -sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
+Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtäväoppaat**-välilehden, jossa on näkyvissä avointa Finance and Operations -sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
 ### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
 
-Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväopasohjeen Finance and Operations -sovelluksissa, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**.
+Käännetyt tehtäväoppaat julkaistiin ensimmäisen kerran toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Lokalisoidun tehtäväoppaan ohjeen katsominen edellyttää, että Dynamics 365 -ratkaisu on yhdistetty toukokuun 2016 kirjastoon. Käyttäjät voivat muuttaa kielen, jota käytetään avautuvassa tehtäväoppaassa, muuttamalla kieliasetuksia kohdassa **Asetukset** &gt; **Asetukset**.
 
 > [!NOTE]
-> Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun kirjastossa. Lisää käännöksiä julkaistaan päivitetyssä kirjastossa.
+> Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun 2016 kirjastossa. Microsoft julkaisee lisää käännöksiä sisältävän päivitetyn kirjaston.
 >
 > - Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
 > - Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
-## <a name="creating-custom-help"></a>Mukautetun ohjeen luominen
+## <a name="adding-custom-help"></a>Mukautetun ohjeen lisääminen
 
-Voit luoda tehtäväoppaiden avulla mukautetun ohjeen tai yhdistää sivuston Ohje-ruutuun.
+Voit luoda tehtäväoppaiden avulla mukautetun ohjeen tai yhdistää mukautetun Ohje-sivuston **Ohje**-ruutuun.
 
-### <a name="create-custom-help-with-task-guides"></a>Mukautetun ohjeen luominen tehtäväoppaiden avulla
+### <a name="create-custom-help-by-using-task-guides"></a>Mukautetun ohjeen luominen tehtäväoppaiden avulla
 
-Voit luoda oman mukautetun Finance-, Supply Chain Management- tai Commerce-ohjeen luomalla sille tehtävätallenteita ja tallentamalla ne LCS:n liiketoimintaprosessien kirjastoon. Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita Human Resourcesille.
+Voit luoda tuettujen sovellusten oman mukautetun ohjeen luomalla toteutusta vastaavia tehtävätallenteita ja tallentamalla ne sitten LCS:n liiketoimintaprosessien kirjastoon. Human Resourcesiin ei voi luoda mukautettuja tehtäväoppaita.
 
-Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on kohdassa [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md).
+Kumppanit voivat puolestaan siirtää kirjaston yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn APQC-kirjaston sekä avata tehtävätallenteet kopioissa, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on kohdassa [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md).
 
-### <a name="connect-a-custom-site"></a>Mukautetun sivuston yhdistäminen
+### <a name="connect-a-custom-help-site"></a>Yhdistäminen mukautettuun ohjesivustoon
 
-Microsoftilla on raportti ja näytekoodi, jossa selitetään, miten mukautettu ohjesivusto luodaan ja yhdistetään Ohje-ruutuun. Lisätietoja:
+Finance and Operations -sovelluksia käytetään vain harvoin sellaisenaan. Ratkaisu sen mukautetaan ja laajennetaan organisaation tarpeita vastaavaksi. Myös ohjekokemusta voi mukauttaa ja laajentaa. Mukautetun ohjeen voi esimerkiksi lisätä tuotteen **Ohje**-ruutuun.
 
-- [Luo mukautettu Ohje Finance and Operations -sovelluksille (tekninen raportti)](https://go.microsoft.com/fwlink/?linkid=2041185)
-- [Mukautetun ohjeen GitHub-säilö](https://github.com/microsoft/dynamics356f-o-custom-help)
+Microsoftilla on työkalut, joilla mukautetun ohjeen voi ottaa käyttöön **Ohje**-ruudussa ja yhdistää siihen. Lisätietoja **Ohje**-ruutuun yhdistetyn mukautetun ohjeratkaisun määrittämisestä on kohdassa [Mukautetun ohjeen yleiskatsaus](../../dev-itpro/help/custom-help-overview.md).
 
-## <a name="additional-resources"></a>Lisäresurssit
+Jos haluat tehdä Microsoftin kanssa yhteistyötä ohjeen mukauttamistyökalujen ja -prosessien osalta, täytä lomake osoitteessa [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
 
-[Ohjejärjestelmä](help-overview.md)
+## <a name="see-also"></a>Lisätietoja
 
-[Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)
-
-[Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Ohjejärjestelmä](help-overview.md)  
+[Mukautetun ohjeen yleiskatsaus](../../dev-itpro/help/custom-help-overview.md)  
+[Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)  
+[Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
+[Mukautetun ohjeen GitHub-säilö](https://github.com/microsoft/dynamics356f-o-custom-help)  

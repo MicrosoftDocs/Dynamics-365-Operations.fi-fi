@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204283"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367404"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Määritä klusterikeräily
+
+[!include[banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, kuinka työntekijät voivat käyttää mobiililaitteitaan ryhmittelemään työn keräilyn klustereihin, jotta he voivat keräillä nimikkeet yhdestä sijainnista useille työtilauksille samanaikaisesti. Tätä kutsutaan nimellä *klusterin keräys*.
 
@@ -36,35 +36,35 @@ Kun työtilaukset on vapautettu varastoon, työntekijä voi määrittää tilauk
 
 Tarvittaessa työntekijä voi siirtää klusterin toiselle työntekijälle. Tämä muuttaa klusterin tilaksi Hyväksytty. Kun hän käyttää kannettavaa laitetta ja ilmoittaa, että keräily ja hyllytys on valmis, lähetys tai kuorma on vahvistettava asiakasohjelmassa.
 
-## <a name="set-up-cluster-picking"></a>Määritä klusterikeräily
+## <a name="enable-cluster-picking"></a>Klusterikeräilyn ottaminen käyttöön
 
 Jos haluat ottaa klusterin keräilyn käyttöön, sinun on määritettävä seuraavat:
 
--   **Klusteriprofiilit** – Määritä, luodaanko klusterin tunnukset, käytettävien sijaintien määrä ja klusterien keskeytyskohta automaattisesti. Määritä myös, miten keräilytyö jaksotetaan ja vahvistetaan.
+- **Klusteriprofiilit** – Määritä, luodaanko klusterin tunnukset, käytettävien sijaintien määrä ja klusterien keskeytyskohta automaattisesti. Määritä myös, miten keräilytyö jaksotetaan ja vahvistetaan.
 
--   **Työmallit** – Määritä, miten klusterikeräilyn keräilytyö luodaan.
+- **Työmallit** – Määritä, miten klusterikeräilyn keräilytyö luodaan.
 
--   **Sijaintidirektiivit** – Määritä, mistä nimikkeet kerätään ja mihin ne laitetaan.
+- **Sijaintidirektiivit** – Määritä, mistä nimikkeet kerätään ja mihin ne sijoitetaan.
 
--   **Mobiililaitteen valikkovaihtoehdot** – Määritä mobiililaitteen valikkovaihtoehto käyttämään klusterikeräilyn ohjaamaa työtä. Sinun on lisättävä valikkokohde mobiililaitteen valikkoon, jotta se näkyy mobiililaitteilla.
+- **Mobiililaitteen valikkovaihtoehdot** – Määritä mobiililaitteen valikkovaihtoehto käyttämään klusterikeräilyn ohjaamaa työtä. Sinun on lisättävä valikkokohde mobiililaitteen valikkoon, jotta se näkyy mobiililaitteilla.
 
--   **Varastonhallinnan parametrit** – Määritä numerosarja, jota haluat käyttää klustereiden tunnisteiden luontiin.
+- **Varastonhallinnan parametrit** – Määritä numerosarja, jota haluat käyttää klustereiden tunnisteiden luontiin.
 
 ## <a name="set-up-a-cluster-profile"></a>Klusteriprofiilin määrittäminen
 
 Määritä klusteriprofiili noudattamalla seuraavia ohjeita:
 
-1.  Valitse **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Klusteriprofiilit**.
+1. Valitse **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Klusteriprofiilit**.
 
-2.  Luo uusi profiili valitsemalla **Uusi**.
+1. Luo uusi profiili valitsemalla **Uusi**.
 
-3.  Määritä klusterin lajitteluperuste valitsemalla ensin **Luo klusteri** ja sitten **Klusterin lajittelu** -kohdassa **Uusi**. Lajitteluehto hallitsee järjestystä, jonka perusteella työntekijä suorittaa keräilytyön. Voit luoda tarvitsemasi määrän kriteereitä.
+1. Määritä klusterin lajitteluperuste valitsemalla ensin **Luo klusteri** ja sitten **Klusterin lajittelu** -kohdassa **Uusi**. Lajitteluehto hallitsee järjestystä, jonka perusteella työntekijä suorittaa keräilytyön. Voit luoda tarvitsemasi määrän kriteereitä.
 
-4.  Anna **Järjestysnumero**-kentässä numero, joka määrittää lajitteluehtojen käsittelyjärjestyksen.
+1. Anna **Järjestysnumero**-kentässä numero, joka määrittää lajitteluehtojen käsittelyjärjestyksen.
 
-5.  Valitse **Kentän nimi** -kentässä kenttä, joka määrittää lajitteluun. Esimerkiksi jos valitset **WMSLocationId**-kentän, työ lajitellaan sijainnin mukaan.
+1. Valitse **Kentän nimi** -kentässä kenttä, joka määrittää lajitteluun. Esimerkiksi jos valitset **WMSLocationId**-kentän, työ lajitellaan sijainnin mukaan.
 
-6.  Valitse **Lajittelu**-kentässä jokin seuraavista vaihtoehdoista.
+1. Valitse **Lajittelu**-kentässä jokin seuraavista vaihtoehdoista.
 
 | **Vaihtoehto**     | **Kuvaus**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärk
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Nimiketarkistuksen määrittäminen klusterikeräilyssä
 
-1.  Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** \> **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
+1. Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** \> **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
 
-2.  Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**. **Tuotteen vahvistus** -asetuksella voi tarkistaa kunkin varastokappaleen mobiililaitteessa skannauksen yhteydessä.
+1. Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**. **Tuotteen vahvistus** -asetuksella voi tarkistaa kunkin varastokappaleen mobiililaitteessa skannauksen yhteydessä.

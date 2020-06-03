@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 438e13d6887decc9867d474467efc06d7a2f3274
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205710"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383087"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
@@ -224,7 +224,7 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </tr>
 <tr class="even">
 <td>Järjestelmäohjattu</td>
-<td>Supply Chain Management ohjaa työn tyyppiä, joka on määritetty työntekijälle, ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
+<td>Supply Chain Management ohjaa työn tyyppiä, joka on määritetty työntekijälle, ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> ja avata <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajitteluehdot. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
 </tr>
 <tr class="odd">
 <td>Käyttäjäohjattu</td>
@@ -257,7 +257,7 @@ Tämä on hyödyllinen vaihtoehto esimerkiksi silloin, kun useita kuormalavoja a
 </tr>
 <tr class="even">
 <td>Inventoinnin ryhmittely</td>
-<td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin ja Supply Chain Management määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudusta myös <strong>Inventointi</strong>-vaihtoehdon määrittääksesi lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
+<td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin ja Supply Chain Management määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudussa myös <strong>Inventointi</strong>-vaihtoehdon sekä määrittää lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
 </tr>
  <tr class="odd">
 <td>Kuljetuksen kuormaus</td>

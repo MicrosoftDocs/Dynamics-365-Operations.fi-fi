@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d307ceae85773feb58d11e575df27e74b065cd3
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a9b5bafb70883d9daf35a7d5a9107d7aee23469
+ms.sourcegitcommit: 98ef9178b28cd548f08f8c32255636e6e09b25f2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773446"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3395983"
 ---
 # <a name="vat-reporting-for-europe"></a>ALV-raportointi Euroopassa
 
@@ -265,13 +265,13 @@ Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimuk
 | Belgia        |                                                                                 |
 | Tšekin tasavalta |  [Tšekin tasavallan ALV-ilmoitus](emea-cze-vat-statement-details.md)   |
 | Viro        |  [ALV-ilmoituksen erittely, Viro](emea-est-vat-statement-details.md) |
-| Suomi        |                                                                                 |
-| Saksa        |                                                                                 |
+| Suomi        | [Suomen arvonlisäveroraportti](emea-fin-sales-tax-payment-report-finland.md)          |
+| Saksa        | [Saksan ALV-ilmoitus](emea-de-vat-declaration.md)                       |
 | Italia          | [ALV-ilmoituksen erittely, Italia](emea-ita-vat-statements-details.md)            |
 | Latvia         | [ALV-ilmoituksen erittely, Latvia](emea-lva-vat-statement-details.md)           |
 | Liettua      | [ALV-ilmoituksen erittely, Liettua](emea-ltu-vat-statement-details.md)         |
-| Alankomaat    |                                                                                 |
-| Ruotsi         |                                                                                 |
+| Alankomaat    | [Alankomaiden ALV-ilmoitus](emea-nl-vat-declaration.md)           |
+| Ruotsi         | [Ruotsin arvonlisäveroraportti](emea-swe-sales-tax-payment-report-sweden.md)          |
 
 
 

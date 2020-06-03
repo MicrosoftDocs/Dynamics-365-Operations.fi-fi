@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26112a9d25c0097bdbf30003247ce6dd4b4fb634
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204881"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383225"
 ---
 # <a name="create-a-purchase-order"></a>Ostotilauksen luominen
 
@@ -68,7 +68,7 @@ Tässä aiheessa näytetään, miten ostotilaus luodaan manuaalisesti. Ostotilau
 ## <a name="review-order-totals"></a>Tilauksen kokonaissummien tarkastelu
 1. Valitse **Summat**.
 
-    - Jos et näe **Summat**-toimintoa, napsauta **Ostotilaus**-välilehteä toimintoriviltä.  
+    - Jos et näe **Summat**-toimintoa, valitse **Ostotilaus**-välilehti toimintoruudussa.  
     - Tässä valintaikkunassa esitetään koko tilauksen kokonaissummat.  
     - **Valinta**-kentän avulla voit muuttaa kokonaissummien laskentaperusteen. Voit esimerkiksi valita **Tuotteen vastaanottomäärä** -kentän, jos haluat esittää kokonaissummat, jotka liittyvät vastaanotettujen tuotteiden määrään, tai **Tilattu määrä** -kentän, jos haluat esittää tuotteen tilausmäärät.  
 

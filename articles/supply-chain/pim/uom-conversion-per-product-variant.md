@@ -1,9 +1,9 @@
 ---
 title: Mittayksiköiden tuotevarianttikohtaiset muunnokset
-description: Tässä ohjeaiheessa käsitellään tuotevarianteille määritettäviä mittayksiköiden muunnoksia.
+description: Tässä ohjeaiheessa käsitellään tuotevarianttien mittayksiköiden muunnosten määrittämistä. Siinä on myös määritysesimerkki.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204490"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382794"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mittayksiköiden tuotevarianttikohtaiset muunnokset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään tuotevarianteille määritettäviä mittayksiköiden muunnoksia. Siinä on myös määritysesimerkki.
+Tässä ohjeaiheessa käsitellään eri tuotevarianttien mittayksiköiden muunnosten määrittämistä.
 
-Tämän ominaisuuden ansiosta yritykset voivat määrittää yksikkömuunnokset saman tuotteen varianttien välillä. Tässä ohjeaiheessa käytetään seuraavaa esimerkkiä. Yritys myy t-paitoja, joiden koot ovat S, M, L ja XL. T-paita määritetään tuotteena ja eri koot määritetään tuotteen variantteina. T-paidat pakataan laatikoihin. Laatikossa voi olla viisi t-paitaa, joskin XL-koossa tilaa on kuitenkin vain neljälle t-paidalle. Yritys haluaa seurata t-paitojen eri variantteja **Kappaletta**-yksikkönä, vaikka niitä myydään **Laatikot**-yksikkönä. Varastoyksikön ja myyntiyksikön välinen muunto on 1 laatikko = 5 kappaletta. XL-variantin muunto on kuitenkin 1 laatikko = 4 kappaletta.
+Tuotevarianttien avulla yksittäisestä tuotteesta voi luoda variaatioita sen sijaan, että luotaisiin useita ylläpidettäviä yksittäisiä tuotteita. Tuotevariantti voi olla esimeriksi tietyn kokoinen ja värinen T-paita.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Tuotteen varianttikohtaisen yksikkömuunnoksen määrittäminen
+Aiemmin yksikkömuunnokset voitiin määrittää vain päätuotteissa. Tämän vuoksi kaikilla tuotevarianteilla oli samat yksikön muunnossäännöt. Jos *Tuotevarianttien mittamuunnosten yksikkö* -toiminto on kuitenkin otettu käyttöön ja jos T-paitoja myydään laatikoittain ja laatikkoon pakattavien T-paitojen määrä määräytyy T-paitojen koon mukaan, yksikkömuunnokset voidaan nyt määrittää T-paitojen eri kokojen ja pakkauksessa käytettyjen laatikoitten mukaan,
 
-Tuotevariantit voidaan luoda vain **Tuotteen alatyyppi**: **Päätuote** -tuotteille. Lisätietoja on kohdassa [Päätuotteen luominen](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>Toiminnon ottaminen käyttöön järjestelmässä
 
-Tätä ominaisuutta ei ole otettu käyttöön tuotteille, jotka on määritetty todellisen painon prosesseille. 
+Jos toiminto ei vielä näy järjestelmässä valitse [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Tuotevarianttien mittamuunnosten yksikkö* -toiminto käyttöön.
 
-Kun luodaan päätuote, jolla on julkaistuja tuotevariantteja, varianttikohtaiset yksikkömuunnokset voidaan määrittää. Yksikön muunnossivun avaava valikkovaihtoehto on tuotteen tai tuotevariantin yhteydessä seuraavilla sivuilla.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Tuotteen varianttikohtaisen yksikkömuunnoksen määrittäminen
 
--   **Tuotteen tiedot** -sivut
--   **Julkaistujen tuotteiden tiedot** -sivu
--   **Vapautetut tuotevariantit** -sivu
+Tuotevariantteja voidaan luoda vain tuotteille, jotka ovat päätuotteita. Lisätietoja on kohdassa [Päätuotteen luominen](tasks/create-product-master.md). *Tuotevarianttien mittamuunnosten yksikkö* -toimintoa ei voi käyttää tuotteissa, joihin on määritetty todellisen painon prosesseja.
 
-Kun avaat **Yksikkömuunnos**-sivun päätuotteen tai vapautetun tuotevariantin yhteydessä, voit valita, haluatko määrittää tuotteelle tai tuotevariantille yksikkömuunnoksen. Tee se valitsemalla joko **Tuotevariantti** tai **Tuote** **Luo muunnos kohteelle** -kentässä.
+Päätuote määritetään tukemaan varianttikohtaista yksikkömuunnosta seuraavasti:
 
-### <a name="product-variant"></a>Tuotevariantti
+1. Valitse **Tuotetietojen hallinta \> Tuotteet \> Päätuotteet**.
+1. Päätuotteen voi luoda tai avata tuotteen **Tuotteen tiedot** -sivulla.
+1. Määritä **Ota käyttöön mittayksiköiden muunnokset** -asetukseksi *Kyllä*.
+1. Valitse toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Yksikkömuunnokset**.
+1. **Yksikkömuunnokset** -sivu avautuu. Valitse yksi seuraavista välilehdistä:
 
-Jos valitset **Tuotevariantti**, voit sitten valita, minkä variantin yksikkömuunnoksen haluat määrittää **Tuotevariantti**-kentässä.
+    - **Luokansisäiset muunnokset** – valitse tämä välilehti, kun haluat muuntaa samaan yksikköluokkaan kuuluvia yksiköitä.
+    - **Luokkienväliset muunnokset** – valitse tämä välilehti, kun haluat muuntaa eri yksikköluokkiin kuuluvia yksiköitä.
 
-### <a name="product"></a>Tuote
+1. Lisää uusi yksikkömuunto valitsemalla **Uusi**.
+1. Määritä **Luo muunnos kohteelle** -kentän arvoksi jokin seuraavista:
 
-Jos valitset **Tuote**, voit määrittää päätuotteen yksikkömuunnoksen. Tätä yksikkömuunnosta käytetään kaikissa tuotevarianteissa, joissa yksikkömuunnosta ei ole määritetty.
+    - **Tuote** – Jos valitset tämän arvon, voit määrittää päätuotteen yksikkömuunnoksen. Tätä yksikkömuunnosta käytetään kaikkien niiden tuotevarianttien varalla olevan muunnoksena, jos mitään yksikkömuunnosta ei ole määritetty.
+    - **Tuotevariantti** – Jos valitset tämän arvon, voit määrittää tietyn tuotevariantin yksikkömuunnoksen. Valitse variantti **Tuotevariantti**-kentän avulla.
 
-### <a name="example"></a>Esimerkki
+    ![Uuden yksikkömuunnoksen lisääminen](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")
 
-Päätuotteella, **T-paita**, on neljä vapautettua tuotevarianttia: S, M, L ja XL. T-paidat pakataan laatikoihin. Laatikossa voi olla viisi t-paitaa, joskin XL-koossa tilaa on kuitenkin vain neljälle t-paidalle.
+1. Käytä muita käytettävissä olevia kenttiä yksikkömuunnoksen määrittämiseen.
+1. Tallenna uusi yksikkömuunnos valitsemalla **OK**.
 
-Avaa ensin **Yksikkömuunnos**-sivu **t-paidan** Vapautetun tuotteen tiedot -sivulla.
+> [!TIP]
+> Voit avata tuotteen tai tuotevariantin **Yksikkömuunnokset**-sivun seuraavilta sivuilta:
+> 
+> - Tuotteen tiedot
+> - Vapautettujen tuotteiden tiedot
+> - Vapautetut tuotevariantit
 
-Määritä **Yksikkömuunnos**-sivulla vapautetun XL-tuotevariantin yksikkömuunnos.
+## <a name="example-scenario"></a>Esimerkkiskenaario
 
-| **Kenttä**             | **Asetus**             |
-|-----------------------|-------------------------|
-| Luo muunnos kohteelle | Tuotevariantti         |
-| Tuotevariantti       | T-paita : : XL : : |
-| Yksiköstä             | Laatikot                   |
-| Kerroin                | 4                       |
-| Yksikköön               | Kappaletta                  |
+Tässä skenaariossa yritys myy t-paitoja, joiden koot ovat S, M, L ja XL. T-paita määritetään tuotteena ja eri koot määritetään kyseisen tuotteen variantteina. T-paidat pakataan laatikkoihin. Kussakin laatikossa voi olla viisi S-, M- ja L-kokoista T-paitaa. XL-kokoisia T-paitoja voi laatikossa olla vain neljä.
 
-Vapautetuilla S-, M- ja L-tuotevarianteilla on sama yksikkömuunnos laatikon ja kappaleen välillä, joten voit määrittää näiden tuotevarianttien yksikkömuunnoksen päätuotteessa.
+Yritys haluaa seurata eri variantteja *Kappaletta*-yksikkönä, vaikka niitä myydään *Laatikot*-yksikkönä. S-, M- ja L-kokojen varastoyksikön ja myyntiyksikön muunnos on 1 laatikko = 5 kappaletta. XL-kokoisten muunnos on 1 laatikko = 4 kappaletta.
 
-| **Kenttä**             | **Asetus** |
-|-----------------------|-------------|
-| Luo muunnos kohteelle | Tuote     |
-| Tuote               | T-paita     |
-| Yksiköstä             | Laatikot       |
-| Kerroin                | 5           |
-| Yksikköön               | Kappaletta      |
+1. Avaa **Yksikkömuunnokset**-sivu **T-paita**-tuotteen **Vapautetun tuotteen tiedot** -sivulla.
+1. Määritä **Yksikkömuunnokset**-sivulla seuraava vapautetun **XL**-tuotevariantin yksikkömuunnos.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>Yksikkömuunnosten päivittäminen Excelin avulla
+    | Kenttä                 | Asetus                 |
+    |-----------------------|-------------------------|
+    | Luo muunnos kohteelle | Tuotevariantti         |
+    | Tuotevariantti       | T-paita : : XL : : |
+    | Yksiköstä             | Laatikot                   |
+    | Kerroin                | 4                       |
+    | Yksikköön               | Kappaletta                  |
 
-Jos tuotteella on useita tuotevariantteja, joilla on erilaiset yksikkömuunnokset, yksikkömuunnokset kannattaa viedä **Yksikkömuunnos**-sivulta Excel-laskentataulukkoon, päivittää sitten muunnokset ja julkaista ne lopuksi takaisin Supply Chain Mangementiin.
+1. Koska **S**-, **M**- ja **L**-tuotevarianteilla on kaikilla sama yksikkömuunnos *Laatikko*- ja *Kappaleet*-yksikköjen välillä, voit määrittää niiden seuraavan yksikkömuunnoksen päätuotteessa.
 
-Exceliin viennin ja muokkausten takaisin Supply Chain Mangementiin julkaisemisen asetus otetaan käyttöön **Yksikkömuunnos**-sivun toimintoruudun **Avaa Microsoft Officessa** -valikkovaihtoehdossa.
+    | Kenttä                 | Asetus |
+    |-----------------------|---------|
+    | Luo muunnos kohteelle | Tuote |
+    | Tuote               | T-paita |
+    | Yksiköstä             | Laatikot   |
+    | Kerroin                | 5       |
+    | Yksikköön               | Kappaletta  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>Yksikkömuunnosten päivittäminen Excelin avulla
+
+Jos tuotteella on useita tuotevariantteja, joilla on erilaiset yksikkömuunnokset, yksikkömuunnokset kannattaa viedä Microsoft Excel -työkirjaan, päivittää ne siellä ja julkaista ne lopuksi takaisin Dynamics 365 Supply Chain Managementiin.
+
+Yksikkömuunnokset viedään Exceliin valitsemalla **Yksikkömuunnokset**-sivun toimintoruudussa **Avaa Microsoft Officessa**.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Mittayksikön hallinta](tasks/manage-unit-measure.md)
