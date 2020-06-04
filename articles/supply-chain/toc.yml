@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management
+        - name: Dynamics 365 Supply Chain Management -aloitussivu
           href: index.md
         - name: Aloittaminen
           items:
@@ -54,7 +54,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Paikallisten käyttöönottojen järjestelmävaatimukset
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Osta Finance and Operations (on-premises)
+                - name: Finance + Operations (on-premises) -version ostaminen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Varastoinnin määrittäminen paikallisille ympäristöille
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Yhdistäminen ohjejärjestelmään
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Yhdistäminen mukautettuun ohjesivustoon
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mukautetun ohjeen yleiskatsaus
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kenttäkuvausten näyttäminen ja vienti
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tehtävien tallennustoiminto
@@ -1021,7 +1021,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
             - name: (ER) Yritysten väliset tietolähteet sähköisessä raportoinnissa
               href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten dokumenttien luomiseksi eri muodoissa
+            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten asiakirjojen luomiseksi eri muodoissa
               items:
                 - name: (ER) Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -1131,7 +1131,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisen raportoinnin konfiguraatioiden lataaminen RCS-säiliöstä
                   items:
-                    - name: Konfiguraatioiden lataaminen RCS-tyypin sähköisen raportoinnin säiliöstä
+                    - name: Konfiguraatioiden lataaminen RCS-tyyppisestä sähköisen raportoinnin säilöstä
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Konfiguraatioiden tuonti RCS:stä'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: IoT-analyysi
+          items:
+            - name: IoT-analyysi – aloitussivu
+              href: iot/iot-intelligence-home-page.md
+            - name: Azure-resurssien määrittäminen
+              href: iot/iot-azure-setup.md
+            - name: IoT-keskittimen sanomaskeeman muodot
+              href: iot/iot-schema-format.md
+            - name: 'Lisäosan asentaminen LCS:ssä'
+              href: iot/iot-lcs-setup.md
+            - name: Mittareiden määrittäminen
+              href: iot/iot-metrics-setup.md
+            - name: Skenaarion määrittäminen
+              href: iot/iot-scenario-setup.md
+            - name: Valvonta ja hallinta
+              href: iot/iot-management.md
         - name: Pääsuunnittelu
           items:
             - name: Pääsuunnittelun aloitussivu
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Suunnittelutyön peruuttaminen
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Suunnittelun optimoinnin vianmääritys
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Pääsuunnitelmat
               items:
                 - name: Pääsuunnitelmien yleiskatsaus
@@ -1469,7 +1487,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Mallien lisääminen Avaa-riveille Excelin valikossa
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Mukauta Avaa-toimintoa Microsoft Officen valikossa
+            - name: Avaa-toiminnon mukauttaminen Microsoft Officen valikossa
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sähköpostiviestin määrittäminen ja lähettäminen
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
@@ -2653,11 +2671,11 @@
                   href: warehousing/immediate-replenishment.md
                 - name: Täydennys ja otto-kanbanit
                   href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Määritä minimi-/maksimitäydennysprosessi
+                - name: Vähimmäis-/enimmäistäydennysprosessin määrittäminen
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: Varastointisovelluksen asentaminen ja määrittäminen
               items:
-                - name: Asentaminen ja määrittäminen – yleiskatsaus
+                - name: Varastointisovelluksen asentaminen ja yhdistäminen
                   href: warehousing/install-configure-warehousing-app.md
                 - name: Kenttien nimien määrittäminen varastointisovelluksessa
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,7 +2715,23 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Työmallin määrittäminen ostotilauksia varten
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
-        - name: Toimitusketjun hallinnan kehittäminen
+            - name: Lähetyksen konsolidoinnin käytännöt
+              items:
+                - name: Lähetyksen konsolidoinnin käytännöt
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: 'Skenaario 1 – Lähetysten konsolidointi, kun lähetykset vapautetaan varastoon käyttämällä myyntitilausten automaattista vapautusta'
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: 'Skenaario 2 – Lähetysten konsolidointi, kun lähetysten konsolidointikäytäntö ohitetaan Vapauta varastoon -sivulla'
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: Skenaario 3 – Lähetysten konsolidointi käyttämällä varastoon vapauttamista kuormasuunnittelun työtilasta
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: Skenaario 4 – Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: Skenaario 5 – Lähetysten konsolidointi manuaalisesti käyttämällä Lähetysten konsolidointi -sivua
+                  href: warehousing/consolidate-shipments-manual-form.md
+        - name: Supply Chain Managementin kehittäminen
           items:
             - name: Gantt-ohjausobjektin kehitysopas
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
