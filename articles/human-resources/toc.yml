@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 14. toukokuuta 2020
+          href: hr-whats-new-2020-05-14.md
         - name: 1. toukokuuta 2020
           href: hr-whats-new-2020-05-01.md
         - name: 13. huhtikuuta 2020
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Tietoja Lifecycle Services -palveluista
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Teamsin Human Resources -sovellus
+          href: hr-admin-teams-leave-app.md
         - name: Dokumentaatioresurssit
           items:
             - name: Ohjejärjestelmä
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Yhdistäminen ohjejärjestelmään
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Yhdistäminen mukautettuun ohjesivustoon
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: Mukautetun ohjeen yleiskatsaus
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Kenttäkuvausten näyttäminen ja vienti
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Tehtävien tallennustoiminto
@@ -511,10 +515,12 @@
               href: hr-leave-and-absence-analytics.md
             - name: Loma- ja poissaolopyyntöjen hallinta
               href: hr-employee-self-service-manage-requests.md
-            - name: Pyydä vapaata
+            - name: Poissaolopyyntö
               href: hr-employee-self-service-request-time-off.md
             - name: Ryhmä- ja yrityskalenterien tarkasteleminen
               href: hr-employee-self-service-calendar.md
+        - name: Lomapyyntöjen hallinta Teamsissa
+          href: hr-teams-leave-app.md
         - name: Työntekijöiden kehittäminen
           items:
             - name: Suorituksen hallinnan yleiskatsaus

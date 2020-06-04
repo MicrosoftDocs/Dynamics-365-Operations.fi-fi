@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Dynamics 365 Commerce -aloitussivu
           href: index.md
         - name: Aloittaminen
           items:
@@ -66,7 +66,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Osta Finance and Operations (on-premises)
+                - name: Finance + Operations (on-premises) -version ostaminen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
@@ -79,7 +79,7 @@
                 - name: 'Vaiheittain tapahtuvan käyttöönoton (N-1) asentaminen, määrittäminen ja käyttöön siirtyminen'
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Päivitä vähittäismyyntikanavan laajennus viimeisimpään Retail SDK -pakettiin
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: Uudet ja muuttuneet ominaisuudet
               items:
                 - name: Finance and Operations -sovellusten uudet ja muuttuneet ominaisuudet
@@ -112,8 +112,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Yhdistäminen ohjejärjestelmään
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: Yhdistäminen mukautettuun ohjesivustoon
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Mukautetun ohjeen yleiskatsaus
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Kenttäkuvausten näyttäminen ja vienti
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: Tehtävien tallennustoiminto
@@ -196,7 +196,7 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: Valitse myymälän topologia
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchangen ja myyntikanavan tietoliikenne
+                - name: Commerce Data Exchangen ja Commerce-kanavan tietoliikenne
                   href: dev-itpro/define-retail-channel-communications-cdx.md
                 - name: Modern POS -arkkitehtuuri
                   href: dev-itpro/retail-modern-pos-architecture.md
@@ -499,17 +499,21 @@
                     - name: Adyen-maksuyhdistin
                       href: dev-itpro/adyen-connector.md
                     - name: Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Asiakkaan vahva todennus (SCA) Adyen-yhdistimellä
+                      href: adyen_redirect.md
                     - name: Lahjakortti- ja hyvityslaskutoimintojen saumaton offline-tilaan vaihtaminen
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Laskunmaksutapojen määrittäminen
                       href: payinvoice.md
                     - name: Maksujen kaksoiskappaleiden estäminen
                       href: duplicate-payment-protection.md
-                    - name: Omnikanavamaksujen yleiskatsaus
+                    - name: Monikanavamaksut – yleiskatsaus
                       href: omni-channel-payments.md
                     - name: Maksut – usein kysytyt kysymykset
                       href: dev-itpro/payments-retail.md
+                - name: Bing Maps -karttapalvelun hallinta organisaatiossa
+                  href: dev-itpro/manage-bing-maps.md
         - name: Tuotteiden ja palveluiden myynninedistäminen
           items:
             - name: 'Luokat, tuotteet ja valikoimat'
@@ -824,6 +828,8 @@
                   href: search-engine-optimization-considerations.md
                 - name: Sisällön suojauskäytännön (CSP) hallinta
                   href: manage-csp.md
+                - name: Verkkotehtävätapahtumien keräämisestä kieltäytyminen
+                  href: web-activity-opt-out.md
             - name: Sivuston sisällön hallinta
               items:
                 - name: Tapoja lisästä sisältöä
@@ -1468,7 +1474,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
             - name: (ER) Yritysten väliset tietolähteet sähköisessä raportoinnissa
               href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
-            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten dokumenttien luomiseksi eri muodoissa
+            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten asiakirjojen luomiseksi eri muodoissa
               items:
                 - name: (ER) Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1504,9 +1510,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
             - name: Sähköisen raportoinnin muotojen suunnitteleminen laskennan ja yhteenlaskujen suorittamiseksi luotujen tietojen perusteella
               items:
-                - name: Muotojen luominen laskennan ja summien tuottamista varten
+                - name: Muotojen luominen laskentaa ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Muodon konfigurointi laskennan ja summien tuottamista varten
+                - name: Muodon konfigurointi laskentaa ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
                 - name: Laskutoimitusten käyttäminen laskentaan ja summien tuottamiseen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
@@ -1578,7 +1584,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Sähköisen raportoinnin konfiguraatioiden lataaminen RCS-säiliöstä
                   items:
-                    - name: Konfiguraatioiden lataaminen RCS-tyypin sähköisen raportoinnin säiliöstä
+                    - name: Konfiguraatioiden lataaminen RCS-tyyppisestä sähköisen raportoinnin säilöstä
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Konfiguraatioiden tuonti RCS:stä'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
@@ -1710,10 +1716,12 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: Mallien lisääminen Avaa-riveille Excelin valikossa
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
-            - name: Mukauta Avaa-toimintoa Microsoft Officen valikossa
+            - name: Avaa-toiminnon mukauttaminen Microsoft Officen valikossa
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: Sähköpostiviestin määrittäminen ja lähettäminen
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Tapahtuman tapahtumien sähköpostimallien luominen
+              href: email-templates-transactions.md
             - name: Sähköpostikokemusten kehittäminen
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
             - name: Office-integraation vianmääritys
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: Valmiiksi laajennetut sarakkeet kanavatietokannassa
                   href: dev-itpro/extended-columns.md
+                - name: Commerce Data Exchangen laajentaminen – Real-time Service
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: Maksuyhdistimen laajennettavuus
               items:
                 - name: Maksun integroinnin luominen maksupäätteelle

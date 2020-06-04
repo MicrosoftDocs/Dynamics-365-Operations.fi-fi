@@ -3,7 +3,7 @@ title: Jaettu tilausten hallinta (JTH)
 description: Tässä aiheessa kuvataan Dynamics 365 Commerce -ohjelman jaetun tilausten hallinnan (JTH) toimintoja.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004317"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396029"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (JTH)
 
@@ -37,20 +37,20 @@ JTH optimoi tilausten toteutuksen järjestelmien ja prosessien monimutkaisessa v
 
 Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
 
-![Myyntitilauksen elinkaari JTH-kontekstissa](./media/flow.png "Myyntitilauksen elinkaari JTH-kontekstissa")
+![![Myyntitilauksen elinkaari JTH-kontekstissa](./media/flow.png "Myyntitilauksen elinkaari JTH-kontekstissa")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>JTH:n määrittäminen
 
 1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
-2. Laajenna **Konfigurointiavaimet**-välilehdessä **Kaupankäynti**-solmu ja valitse **Jaettu tilausten hallinta** -valintaruutu.
-3. Siirry kohtaan **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.
+2. Laajenna **Konfigurointiavaimet**-välilehdessä **Commerce**-solmu ja valitse **Jaettu tilausten hallinta** -valintaruutu.
+3. Siirry kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.
 4. Määritä **Yleiset**-välilehdessä seuraavat arvot:
 
     - **Ota jaettu tilausten hallinta käyttöön** – Määritä tähän arvoksi **Kyllä**.
     - **Vahvista Bing Maps -palvelun käyttö JTH:ssa** – Määritä tähän arvoksi **Kyllä**.
 
         > [!NOTE]
-        > Voit määrittää tähän arvoksi **Kyllä** vain, jos **Ota Bing Maps käyttöön** -asetuksen arvo **Bing Maps** -välilehdessä **Kaupan yhteiset parametrit** -sivulla (**Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan yhteiset parametrit**) on myös **Kyllä** ja jos **Bing Maps -avain** -kenttään annetaan kelvollinen avain.
+        > Voit määrittää tähän arvoksi **Kyllä** vain, jos **Ota Bing Maps käyttöön** -asetuksen arvo **Bing Maps** -välilehdessä **Commercen yhteiset parametrit** -sivulla (**Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen yhteiset parametrit**) on myös **Kyllä** ja jos **Bing Maps -avain** -kenttään annetaan kelvollinen avain.
 
     - **Pidätyskausi päivinä** – Määritä, kauanko JTH-ajojen luomia täyttämistilauksia säilytetään järjestelmässä. **JTH-täyttämistietojen poistotyön asetukset** -eräyö poistaa kaikki täyttämissuunnitelmat, jotka ovat tässä määritettyä päivien määrää vanhempia.
     - **Hylkäämiskausi (päivinä)** – Määritä, kuinka paljon aikaa pitää kulua, ennen kuin hylätty tilausrivi voidaan määrittää samaan sijaintiin.
@@ -71,7 +71,7 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
         >
         > Vaikka yksinkertaistettu selvitys sisältää samat toiminnot kuin tuotannon selvitys, siinä on rajoituksia suorituskyvyn suhteen (tilauksien ja tilausrivien määrä, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämisen suhteen (tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa).
      
-6. Siirry takaisin kohtaan **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.
+6. Siirry takaisin kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.
 7. Määritä **Numerosarjat**-välilehdessä tarvittavat numerosarjat eri JTH-yksiköille.
 
     > [!NOTE]
@@ -79,15 +79,24 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
 
 8. JTH-ominaisuus tukee erilaisia JTH-sääntöjen määrityksiä, ja organisaatiot voivat määrittää useita sääntöjä liiketoiminnan tarpeiden mukaan. JTH-säännöt voidaan määrittää sijaintiryhmälle tai yksittäiselle sijainnille sekä tietylle tuoteluokalle, tuotteelle tai variantille. Voit luoda JTH-säännöissä käytettävät sijaintien ryhmittelyt seuraavasti:
 
-    1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Kanavan asetukset \> Täytäntöönpanoryhmät**.
+    1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Täytäntöönpanoryhmät**.
     2. Valitse **Uusi** ja kirjoita uuden ryhmän nimi ja kuvaus.
     3. Valitse **Tallenna**.
     4. Voit lisätä ryhmään yksittäisen sijainnin valitsemalla **Lisää rivi**. Vaihtoehtoisesti voit lisätä useita sijainteja valitsemalla **Lisää rivejä**.
+    
+    > [!NOTE]
+    > Commerce 10.0.12:ssa ja sitä uudemmassa versiossa **Mahdollisuus määrittää sijainniksi Lähetys tai Nouto on otettu käyttöön täyttämisryhmässä** -vaihtoehto on oltava otettuna käyttöön **Ominaisuuden hallinta** -työtilassa.
+    >
+    > Tämä ominaisuus lisää uudet määritykset **Täyttämisryhmä**-sivulla, joten voit määrittää, käytetäänkö varastoa lähetykseen vai käytetäänkö varastoa ja myymälää yhdessä lähetykseen, noutoon tai molempiin. 
+    >
+    > Jos otat ominaisuuden käyttöön, sijainnin valintavaihtoehdot päivitetään, kun nouto- tai toimitustilauksia luodaan myyntipisteessä.
+    >
+    > Kun ominaisuus otetaan käyttöön, myyntipisteen sivut päivitetään, kun valitaan kaikkien tai valittujen toimitus.
 
-9. Voit määrittää säännöt kohdassa **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Asetukset \> Sääntöjen hallinta**. Tällä hetkellä tuetaan seuraavia JTH-sääntöjä:
+9. Voit määrittää säännöt valitsemalla **Retail ja Commerce \> Jaettu tilausten hallinta \> Asetukset \> Sääntöjen hallinta**. Tällä hetkellä tuetaan seuraavia DOM-sääntöjä:
 
-    - **Vähimmäisvarastosääntö** – Tämäntyyppisen säännön avulla organisaatiot voivat merkitä tuotteen tietyn määrän erityiseksi muihin tarkoituksiin kuin tilauksen täytäntöönpanoon. Esimerkiksi organisaatiot eivät ehkä halua JTH-ajon kohdistavan myymälässä saatavilla olevan varaston koko määrää tilausten täytäntöönpanoon. Sen sijaan voidaan haluta varata osa saldosta fyysiseen kauppaan tuleville asiakkaille. Kun käytetään tämäntyyppistä sääntöä, voidaan määrittää vähimmäisvarasto, jota täytyy ylläpitää tietylle tuoteluokalle, yksittäiselle tuotteelle tai tuotevariantille yhtä sijaintia tai sijaintiryhmää kohden.
-    - **Täyttämissijainnin prioriteettisääntö** – Tämäntyyppisen säännön avulla organisaatiot voivat määrittää sijaintihierarkian JTH-moduulin priorisointia varten, kun se yrittää tunnistaa tiettyjen tuotteiden täyttämissijainnit. Prioriteettien arvot voivat olla välillä on 1–10, jossa 1 on suurin prioriteetti ja 10 on pienin prioriteetti. Suuren prioriteetin sijainteja käytetään ennen sijainteja, joilla on alhaisempi prioriteetti. Jos sääntö määritetään kovana rajoitussääntönä, tilaukset välitetään vain sijainteihin, joille on määritetty prioriteetti.
+    - **Vähimmäisvarastosääntö** – Tämäntyyppisen säännön avulla organisaatiot voivat merkitä tuotteen tietyn määrän erityiseksi muihin tarkoituksiin kuin tilauksen täytäntöönpanoon. Esimerkiksi organisaatiot eivät ehkä halua DOM-ajon kohdistavan myymälässä saatavilla olevan varaston koko määrää tilausten täytäntöönpanoon. Sen sijaan voidaan haluta varata osa saldosta fyysiseen kauppaan tuleville asiakkaille. Kun käytetään tämäntyyppistä sääntöä, voidaan määrittää vähimmäisvarasto, jota täytyy ylläpitää tietylle tuoteluokalle, yksittäiselle tuotteelle tai tuotevariantille yhtä sijaintia tai sijaintiryhmää kohden.
+    - **Täyttämissijainnin prioriteettisääntö** – Tämäntyyppisen säännön avulla organisaatiot voivat määrittää sijaintihierarkian DOM-moduulin priorisointia varten, kun se yrittää tunnistaa tiettyjen tuotteiden täyttämissijainnit. Prioriteettien arvot voivat olla välillä on 1–10, jossa 1 on suurin prioriteetti ja 10 on pienin prioriteetti. Suuren prioriteetin sijainteja käytetään ennen sijainteja, joilla on alhaisempi prioriteetti. Jos sääntö määritetään kovana rajoitussääntönä, tilaukset välitetään vain sijainteihin, joille on määritetty prioriteetti.
     - **Osittaistilausten sääntö** – Tämän säännön avulla organisaatiot voivat määrittää, voidaanko tilaus tai tilausrivit toteuttaa vain osittain. Seuraavat parametrit ovat käytettävissä:
 
         - **Täytetäänkö osittaistilaukset?** – Jos tämä asetus on **Kyllä**, JTH voi täyttää vain osan tilausrivin määrästä. Osittainen täyttäminen saavutetaan jakamalla tilausrivi.
@@ -106,13 +115,13 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
         | 5\*  | Ei                     | Ei käytettävissä        | Kyllä                                  | Kaikki tilausrivit on täytettävä, yksittäisiä rivejä ei voida täyttää vain osittain ja kaikki tilausrivit voidaan toimittaa vain yhdestä sijainnista. |
         | 6\*  | Ei                     | Ei käytettävissä        | Ei                                   | Tämä yhdistelmä toimii samalla tavalla kuin yhdistelmä 4, koska **Täytä osittaiset rivit** -asetukseksi ei voi määrittää **Kyllä**, kun **Täytä osittaistilaukset** -asetuksella on arvo **Ei**. |
         | 7\*  | Ei                     | Ei käytettävissä        | Kyllä                                  | Tämä yhdistelmä toimii samalla tavalla kuin yhdistelmä 5, koska **Täytä osittaiset rivit** -asetukseksi ei voi määrittää **Kyllä**, kun **Täytä osittaistilaukset** -asetuksella on arvo **Ei**. |
-        | 8    | Kyllä                    | Ei                    | Ei                                   | Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida toteuttaa vain osittain, ja eri tilausrivit voidaan täyttää useammasta kuin yhdestä sijainnista JTH-suoritusesiintymän yhteydessä. |
+        | 8    | Kyllä                    | Ei                    | Ei                                   | Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida toteuttaa vain osittain, ja eri tilausrivit voidaan täyttää useammasta kuin yhdestä sijainnista DOM-suoritusesiintymän yhteydessä. |
         | 9\*  | Ei                     | Ei käytettävissä        | Kyllä                                  | Kaikki tilausrivit on täytettävä ja ne on täytettävä vain yhdestä sijainnista. |
 
         \* Jos **Täytä osittaistilaukset** -asetukseksi määritetään **Ei**, **Täytä osittaiset rivit** -asetuksen arvona on aina arvo **Ei** riippumatta siitä, mikä arvo asetukseen on määritetty.
 
         > [!NOTE]
-        > Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -kohdan arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voisi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen.
+        > Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -parametrin arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voisi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen.
 
    - **Offline-täyttämisen sijaintisääntö** – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai DOM:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi näistä sijainneista.
     - **Hylkäysten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää hylkäyksille raja-arvon. Kun raja-arvo saavutetaan, JTH-käsittelijä merkitsee tilauksen vai tilausrivin poikkeukseksi ja jättää sen jatkokäsittelyn ulkopuolelle.
@@ -130,12 +139,22 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
 
 10. Täyttämisprofiileja käytetään sääntökokoelmien, yritysten, myyntitilausten alkuperien ja toimitustapojen ryhmittelyyn. Jokainen JTH-suoritus on tiettyä täyttämisprofiilia varten. Näin organisaatiot voivat määrittää ja suorittaa sääntöjoukkoja yritysjoukossa sellaisille tilauksille, joilla on tietyt myyntitilauksen alkuperät ja toimitustavat. Jos siis pitää suorittaa eri sääntöjoukkoja myyntitilausten alkuperän tai toimitustavan mukaan, täyttämisprofiilit voidaan määrittää vastaavasti. Voit määrittää täyttämisprofiileita noudattamalla seuraavia ohjeita:  
 
-    1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Asetukset \> Täyttämisprofiilit**.
+    1. Siirry kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Asetukset \> Täyttämisprofiilit**.
     2. Valitse **Uusi**.
     3. Kirjoita arvot **Profiili**- ja **Kuvaus**-kenttiin.
     4. Määritä **Automaattinen tuloksen käyttö** -asetus. Jos määrität tämän asetuksen arvoksi **Kyllä**, profiilin JTH-ajon tulokset kohdistetaan automaattisesti myyntitilauksen riveille. Jos määrität arvoksi **Ei**, tuloksia voi tarkastella vain täyttämissuunnitelmassa. Niitä ei kohdisteta myyntitilausriveille.
-    5. Jos haluat, että JTH-profiili suoritetaan tilauksille, joilla on kaikki myyntitilausten alkuperät (myös tilauksille, joissa myyntitilauksen alkuperää ei ole määritetty), määritä **Käsittele tilaukset, joilla on tyhjä myynnin alkuperä** -asetuksen arvoksi **Kyllä**. Voit suorittaa profiilin vain joillekin myyntitilauksen alkuperille määrittämällä ne **Myynnin alkuperät** -sivulla jäljempänä esitetyllä tavalla.
-    6. Valitse **Yritykset**-pikavälilehdessä **Lisää** ja sitten haluttu yritys.
+    5. Jos haluat, että DOM-profiili suoritetaan tilauksille, joilla on kaikki myyntitilausten alkuperät (mukaan lukien tilaukset, joissa myyntitilauksen alkuperää ei ole määritetty), määritä **Käsittele tilaukset, joilla on tyhjä myynnin alkuperä** -asetuksen arvoksi **Kyllä**. Voit suorittaa profiilin vain joillekin myyntitilauksen alkuperille määrittämällä ne **Myynnin alkuperät** -sivulla jäljempänä esitetyllä tavalla.
+
+    > [!NOTE]
+    > Commerce 10.0.12:ssa ja sitä uudemmassa versiossa **Mahdollisuus määrittää täyttämisryhmä täyttämisprofiiliin** -vaihtoehto on oltava otettuna käyttöön **Ominaisuuden hallinta** -työtilassa. 
+    >
+    > Tämä toiminto lisää **Täyttämisprofiili**-sivulle uuden profiilin, joka voidaan liittää yhteen täyttämisryhmään. 
+    >
+    > Jos valitset täyttämisryhmän, kyseisen täyttämisprofiilin DOM-säännöt voidaan suorittaa täyttämisryhmään sisältyvissä toimitusvarastoissa. 
+    > 
+    > Tämän toiminnon käyttö tehokkaasti edellyttää, että yksi täyttämisryhmä sisältää kaikki toimitusvarastot ja että kyseinen täyttämisryhmä liitetään sitten täyttämisprofiiliin.
+    
+    6. Valitse **Yritykset**-pikavälilehdessä **Lisää** ja sitten sopiva yritys.
     7. Valitse **Säännöt**-pikavälilehdessä **Lisää** ja sitten profiiliin linkitettävä sääntö.
     8. Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat säännöt on liitetty profiiliin.
     9. Valitse **Tallenna**.
@@ -157,7 +176,7 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
 
 JTH suoritetaan vain erätyönä. Voit määrittää JTH-ajojen erätyön seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Eräkäsittely \> JTH-käsittelijän työasetukset**.
+1. Siirry kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Eräkäsittely \> JTH-käsittelijän työasetukset**.
 1. Valitse **Parametrit**-pikavälilehden **Täyttämisprofiili** -kentässä profiili, jota varten JTH suoritetaan.
 1. Valitse **Suorita taustalla** -pikavälilehden **Eräryhmä**-kentässä määritetty eräryhmä.
 1. Kirjoita **Tehtävän kuvaus** -kenttään erätyön nimi.
@@ -168,7 +187,7 @@ Käsittelyn aikana JTH ottaa huomioon seuraavassa kuvatut tilaukset ja tilausriv
 
 - Myyntitilauksen alkuperään, toimitustapaan ja yritykseen liittyvät JTH-profiilissa määritetyt ehdot täyttävät tilausrivit, jotka täyttävät myös jonkin seuraavista ehdoista:
 
-    - Ne on luotu kauppakanavista.
+    - Ne on luotu Commerce-kanavista.
     - JTH ei ole koskaan välittänyt niitä
     - JTH on välittänyt niitä aiemmin, mutta ne on merkitty poikkeuksiksi ja ovat yritysten määrän raja-arvon alapuolella.
     - Toimitustapa ei ole nouto tai sähköinen toimitus.
@@ -179,7 +198,7 @@ Käsittelyn aikana JTH ottaa huomioon seuraavassa kuvatut tilaukset ja tilausriv
 
 Sen jälkeen, kun JTH on käyttänyt sääntöjä, varaston rajoituksia ja optimointia, JTH valitsee sijainnin, joka on lähinnä asiakkaan toimitusosoitetta.
 
-![Myyntitilausten ehdot](./media/ordercriteria.png "Myyntitilausten ehdot")
+![![Myyntitilausten ehdot](./media/ordercriteria.png "Myyntitilausten ehdot")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>JTH-suoritusten tulokset
 
@@ -187,7 +206,7 @@ Jos täyttämisprofiiliksi valitaan **Automaattinen käyttö**, ajon tulokset ko
 
 Näet kaikki luodut täyttämissuunnitelmat seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Jaettu tilausten hallinta**.
+1. Siirry kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Jaettu tilausten hallinta**.
 2. Valitse **Jaettu tilausten hallinta** -työtilassa **Täyttämissuunnitelmat**-ruutu.
 3. Voit tarkastella haluttua täyttämissuunnitelmaa valitsemalla sen tunnuksen.
 
@@ -201,7 +220,7 @@ Näet kaikki luodut täyttämissuunnitelmat seuraavasti.
 
 ## <a name="order-line-actions-and-statuses"></a>Tilausrivin toiminnot ja tilat
 
-Seuraavassa kuvataan tilausrivin asetukset. Voit avata tilausrivin siirtymällä kohtaan **Vähittäismyynti ja kauppa \> Asiakkaat \> Kaikki myyntitilaukset**.
+Seuraavassa kuvataan tilausrivin asetukset. Voit avata tilausrivin siirtymällä kohtaan **Retail ja Commerce \> Asiakkaat \> Kaikki myyntitilaukset**.
 - Jos määrität **Jätä pois JTH-käsittelystä** -asetuksen (myyntitilausrivin **Yleiset**-välilehdessä) arvoksi **Kyllä**, tilaus tai tilausrivi jätetään pois JTH-käsittelystä.
 - **JTH-tila**-kenttään (myyntitilausrivin **Yleiset**-välilehdessä) voidaan määrittää jokin seuraavista arvoista:
 
@@ -221,7 +240,7 @@ Seuraavassa kuvataan tilausrivin asetukset. Voit avata tilausrivin siirtymällä
 
 JTH-käsittelyn aikana luodaan täyttämissuunnitelmia. Ajan kuluessa järjestelmään kertyy paljon täyttämissuunnitelmia. Voit hallita järjestelmän säilyttämien täyttämissuunnitelmien määrää määrittämällä erätyön, joka poistaa vanhoja täyttämissuunnitelma **Pidätyskausi päivinä** -arvon perusteella.
 
-1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Jaettu tilausten hallinta \> Eräkäsittely \> JTH-täyttämistietojen poistotyön asetukset**. 
+1. Siirry kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Eräkäsittely \> JTH-täyttämistietojen poistotyön asetukset**. 
 1. Valitse määritetty eräryhmä **Eräryhmä**-kentässä.
 1. Määritä **Toistuminen**-kohdassa erätyön toistuminen.
 1. Valitse **OK**.
@@ -230,6 +249,6 @@ JTH-käsittelyn aikana luodaan täyttämissuunnitelmia. Ajan kuluessa järjestel
 
 Seuraavat asiat on hyvä huomioida JTH-ominaisuutta käytettäessä:
 
-- Tällä hetkellä JTH tarkastelee vain kauppakanavissa luotuja tilauksia. Myyntilaukset tunnistetaan vähittäismyynnin myyntitilauksiksi, kun **Kauppamyynti**-asetukseksi on määritetty **Kyllä**.
+- Tällä hetkellä JTH tarkastelee vain Commerce-kanavissa luotuja tilauksia. Myyntilaukset tunnistetaan vähittäismyynnin myyntitilauksiksi, kun **Commerce-myynti**-asetukseksi on määritetty **Kyllä**.
 - Microsoft ei ole testannut JTH-ominaisuutta edistyneen varastonhallinnan ominaisuuksien kanssa. Asiakkaiden ja kumppanien on huolellisesti selvitettävä, onko JTH yhteensopiva heille tärkeiden edistyneen varastonhallinnan ominaisuuksien ja prosessien kanssa.
 - JTH on saatavissa vain Commerce-ratkaisun pilvipalveluversioon. Sitä ei tueta paikallisissa käyttöönotoissa.
