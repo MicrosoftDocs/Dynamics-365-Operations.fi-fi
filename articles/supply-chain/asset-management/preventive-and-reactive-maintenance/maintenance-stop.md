@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8946baa4597ad4b696bcb6bcc49d4202163a41a9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214854"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383524"
 ---
 # <a name="maintenance-downtime"></a>Ylläpidon käyttökatko
 
@@ -75,7 +75,7 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 9. **Laske kapasiteetin kuormitus** -valintaikkunassa muokkaa aloitus- ja loppuaikoja tarvittaessa ja valitse, haluatko sisällyttää työtilaukset ja ylläpitosuunnitelmat laskentaan. **Taso** -kentän avulla voit määrittää, miten yksityiskohtaisen kapasiteetin kuormituksen laskennasta haluat liittyen toiminnallisiin sijainteihin. Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssit, jotka on valittu huoltoseisokkitoiminnossa, näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki kapasiteetin kuormituksen rivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
 
-10. Aloita laskenta valitsemalla **OK**. Tuntien kokonaismäärä näkyy **Kapasiteetin kuormitus** -yhteenvedossa. Valitse **Kapasiteetin kuormitus** -välilehden **Ryhmittely...** -toimintoruuturyhmissä asiaankuuluvat painikkeita saadaksesi tarkemman yhteenvedon ennustettujen tuntien kohdistuksesta. Alla oleva kuva näyttää **Kapasiteetin kuormitus** -laskennan tulokset.
+10. Aloita laskenta valitsemalla **OK**. Tuntien kokonaismäärä näkyy **Kapasiteetin kuormitus** -yhteenvedossa. Valitse **Kapasiteetin kuormitus** -välilehden **Ryhmittely...**-toimintoruuturyhmissä painikkeet, joilla saadaan tarkka yleiskatsaus ennustettujen tuntien kohdistuksesta. Alla oleva kuva näyttää **Kapasiteetin kuormitus** -laskennan tulokset.
 
 ![Kuva 3](media/21-preventive-maintenance.png)
 
@@ -92,7 +92,7 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 15. **Laske nimikkeen ennuste** -valintaikkunassa muokkaa aloitus- ja loppuaikoja tarvittaessa ja valitse, haluatko sisällyttää työtilaukset ja ylläpitosuunnitelmat laskentaan. **Taso** -kentän avulla voit määrittää, miten yksityiskohtaisen kapasiteetin kuormituksen laskennasta haluat liittyen toiminnallisiin sijainteihin. Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssit, jotka on valittu huoltoseisokkitoiminnossa, näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki kapasiteetin kuormituksen rivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
 
-16. Aloita laskenta valitsemalla **OK**. Nimike-ennusteiden kokonaismäärä näkyy **Nimike-ennuste** -yhteenvedossa. Valitse **Nimike-ennuste** -välilehden **Ryhmittely...** -toimintoruuturyhmissä asiaankuuluvat painikkeita saadaksesi tarkemman yhteenvedon ennustettujen nimikkeiden kohdistuksesta. Alla olevassa kuvassa on **Nimike-ennuste** -laskennan tuloksista.
+16. Aloita laskenta valitsemalla **OK**. Nimike-ennusteiden kokonaismäärä näkyy **Nimike-ennuste** -yhteenvedossa. Valitse **Nimike-ennuste** -välilehden **Ryhmittely...**-toimintoruuturyhmissä painikkeita, joilla saadaan yleiskatsaus ennustettujen nimikkeiden kohdistuksesta. Alla olevassa kuvassa on **Nimike-ennuste**-laskennan tuloksia.
 
 ![Kuva 4](media/22-preventive-maintenance.png)
 

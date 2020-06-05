@@ -3,7 +3,7 @@ title: Myyntipisteen lähtevä varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen lähtevä varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123919"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384126"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -117,6 +117,18 @@ Jokainen viivakoodin skannaus päivittää määrän **Lähetys nyt** -kentäss�
 ### <a name="over-delivery-shipping-validations"></a>Ylitoimituksen lähetyksen tarkistukset
 
 Tarkistukset tapahtuvat asiakirjarivien vastaanottoprosessin aikana. Ne sisältävät ylitoimituksen tarkistukset. Jos käyttäjä yrittää vastaanottaa enemmän varastoa kuin ostotilauksen mukaan on tilattu, mutta ylitoimitusta ei ole määritetty tai vastaanotettu määrä ylittää ostotilausrivillä määritetyn ylitoimitustoleranssin, käyttäjä vastaanottaa virheen, koska ylimääräistä määrää ei voi vastaanottaa.
+
+### <a name="underdelivery-close-lines"></a>Alitoimituksen sulkemisrivit
+
+Commerce-versioon 10.0.12 lisättiin toimintoja, joilla myyntipisteen käyttäjät voivat sulkea tai peruuttaa jäljellä olevat määrät lähtevän tilauksen lähetyksessä, jos lähtevä varasto määrittää, ettei se voi lähettää koko pyydettyä määrää. Määrät voidaan sulkea tai peruuttaa myös myöhemmin. Tämän ominaisuuden käyttäminen edellyttää, että yritys on määritettävä sallimaan siirtotilausten alitoimitus. Lisäksi siirtotilausriville on määritettävä alitoimitusprosentti.
+
+Yritys voidaan määrittää sallimaan siirtotilausten alitoimitus valitsemalla Commerce Headquartersissa **Varastonhallinta \> Asetukset \> Varasto ja varastonhallinnan parametrit**. Ota **Varasto ja varastonhallinnan parametrit** -sivun **Siirtotilaukset**-välilehdessä käyttöön **Hyväksy alitoimitus** -parametri. Synkronoi sitten parametrimuutokset myymäläkanavaa suorittamalla jakelun ajastustyö **1070**.
+
+Siirtotilausrivin alitoimitusprosentti voidaan määrittää tuotteissa ennalta tuotteen määrityksen osana Commerce Headquartersissa. Vaihtoehtoisesti ne voidaan määrittää tai korvata tietyllä siirtotilausrivillä Commerce Headquartersissa.
+
+Kun organisaatio on määrittänyt siirtotilauksen alitoimituksen, käyttäjät näkevät **Sulje jäljellä oleva määrä** -vaihtoehdon **Tiedot**-ruudussa, kun he valitsevat lähtevän siirtotilausrivin myyntipisteen **Lähtevä toiminto** -toiminnon. Kun käyttäjät sitten viimeistelevät lähetyksen **Viimeistele täyttäminen** -toiminnon, he voivat sitten lähettää Commerce Headquartersiin jäljellä olevan lähettämättömän määrän peruutuspyynnön. Jos käyttää valitsee jäljellä olevan määrän sulkemisen, Commerce varmistaa tarkistamalla, että peruutettava määrä on siirtotilausrivillä määritetyn alitoimitusprosentin toleranssin mukainen. Jos alitoimituksen toleranssi ylittyy, käyttäjä saa virhesanoman eikä voi sulkea jäljellä olevaa määrää, ennen kuin aiemmin lähetetty ja nyt lähetettävä määrä on alitoimituksen toleranssin mukainen tai sitä suurempi.
+
+Kun lähetys on synkronoitu Commerce Headquartersiin, myyntipisteessä siirtotilausrivin **Lähetä nyt** -kentässä määritetyt määrät päivitetään Commerce Headquartersissa lähetettyyn tilaan. Kaikkia lähettämättömiä määriä, joita olisi aiemmin pidetty lähetettävänä jäljellä olevana määränä (eli myöhemmin lähetettävänä määränä), pidetään sen sijaan peruutettuina määrinä. Siirtotilausrivin lähetettävän jäljellä olevan määrän arvo on **0** (nolla), ja rivi katsotaan kokonaisuudessaan lähetetyksi.
 
 ### <a name="shipping-location-controlled-items"></a>Lähetyksen sijaintiohjatut nimikkeet
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eaab2093eb2531b63f27717d828f7064a8f9ed1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e45c80718c73ad785643c2a5fc0e712b291104d5
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207505"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383110"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Määritä hankintaluokkahierarkia
 
@@ -31,8 +31,8 @@ Tässä menettelyssä selvitetään, miten voit luoda uusia solmuja hankintaluok
 
 ## <a name="add-a-new-procurement-category"></a>Lisää uusi hankintaluokka
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Hankinta > Tavaralähetys > Hankintaluokat**.
-2. Valitse toimintoruudusta **Muokkaa luokkahierarkiaa**. Nykyisen hankintaluokkahierarkia näkyy sivun vasemmalla puolella. Olet muokkaamassa hierarkiaa.  
-3. Valitse toimintoruudusta **Uusi luokkasolmu**. Järjestelmä valitsee oletusarvoisesti ylimmän solmun. Jos käytät menettelyä tehtävän ohjauksena, voit napsauttaa Poista lukitus -painiketta ja valita toisen pääsolmun, johon voit lisätä uuden solmun. Kun tämä on tehty, lukitse tehtäväopas uudelleen ja napsauta Uusi luokka -solmua.  
+2. Valitse toimintoruudussa **Muokkaa luokkahierarkiaa**. Nykyisen hankintaluokkahierarkia näkyy sivun vasemmalla puolella. Olet muokkaamassa hierarkiaa.  
+3. Valitse toimintoruudussa **Uusi luokkasolmu**. Järjestelmä valitsee oletusarvoisesti ylimmän solmun. Jos käytät menettelyä tehtävän ohjauksena, voit napsauttaa Poista lukitus -painiketta ja valita toisen pääsolmun, johon voit lisätä uuden solmun. Kun tämä on tehty, lukitse tehtäväopas uudelleen ja napsauta Uusi luokka -solmua.  
 4. Kirjoita arvo **Nimi**-kenttään.
 5. Kirjoita **Kuvaus**-kenttään arvo.
 6. Kirjoita **Kutsumanimi**-kenttään arvo. Kutsumanimi on valinnainen. Se näkyy luokkahauissa yhdessä luokan nimen kanssa.  

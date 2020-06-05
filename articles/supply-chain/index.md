@@ -1,5 +1,5 @@
 ---
-title: Supply Chain Managementin ohjeresurssit
+title: Supply Chain Managementin aloitussivu
 description: Tällä sivulla on luettelo Supply Chain Managementin toimintoja koskevista ohjeaiheista ja muista resursseista.
 author: josaw1
 manager: tfehr
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cf505f3e84cb8a8b4a1ac0af9f776587c06acf77
+ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201522"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "3386384"
 ---
-# <a name="help-resources-for-supply-chain-management"></a>Supply Chain Managementin ohjeresurssit
+# <a name="supply-chain-management-home-page"></a>Supply Chain Managementin aloitussivu
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on luettelo Dynamics 365 Supply Chain Management -ohjelman ohjeaiheista ja muista resursseista. 
+Tässä aiheessa on luettelo Dynamics 365 Supply Chain Managementin ohjeaiheista ja muista resursseista. 
 
 ## <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 <a href="https://roadmap.dynamics.com/">Dynamics 365 Tiekartta -sivustolla</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
@@ -42,6 +42,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 - [Kustannuslaskenta](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kustannusten hallinta](cost-management/cost-management-home-page.md)  
 - [Varastonhallinta](inventory/inventory-home-page.md)
+- [IoT-analyysi](iot/iot-intelligence-home-page.md)
 - [Pääsuunnittelu](master-planning/master-planning-home-page.md)
 - [Hankinta](procurement/procurement-sourcing-overview.md)
 - [Tuotetietojen hallinta](pim/product-information.md)
@@ -109,7 +110,7 @@ Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -s
 -  [Kuljetustenhallinta uudessa Microsoft Dynamics AX -ohjelmassa](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogit
-<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa</a> on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
+<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n Supply Chain Managementin tutkimus- ja kehitysryhmän blogissa</a> on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
 
 ## <a name="white-papers"></a>Tulostettavat ohjeet
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Kustannuslaskennan käytännön harjoituksia</a> 

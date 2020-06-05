@@ -17,26 +17,28 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e6493afb64acb4d7644aac8dad71a0917c76549
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 272c3a13b68e2b862faf20cc269ca790322b61de
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205779"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367289"
 ---
+# <a name="product-confirmation-for-cluster-picking"></a>Tuotteen vahvistus klusterikeräilyä varten
+
 [!include [banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a>Tuotteen vahvistus klusterikeräilyä varten
 Klusterikeräilyssä voi kerätä usean tilauksen nimikkeitä samalla kertaa. Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärkeää, jotta klustereihin lisättävät nimikkeet voidaan tarkistaa. Voit tarkistaa klusterikeräilyn nimikkeet klusterikeräilyn aikana.
 
 ## <a name="where-it-applies"></a>Käyttö
+
 Klusterikeräilyn nimiketarkistus toimii samalla tavalla kuin nimikkeen tarkistaminen ei-klusterikeräilyprosesseissa. Määritys perustuu tuotteen viivakoodin asetuksiin.
 
 ## <a name="set-up-item-verification-with-cluster-picking"></a>Nimiketarkistuksen määrittäminen klusterikeräilyssä
-1.  Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** > **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**.
-2.  Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**.
+
+1. Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** > **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**.
+1. Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**.
 
 |        Vaihtoehto        |                                    kuvaus                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Tuotteen vahvistus | Voit skannattaessa tarkistaa kunkin varastokappaleen mobiililaitteessa. |
-

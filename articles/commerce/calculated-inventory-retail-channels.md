@@ -3,7 +3,7 @@ title: Varaston saatavuuden laskeminen vähittäismyyntikanaville
 description: Tässä ohjeaiheessa kerrotaan vaihtoehdot, jotka ovat valittavissa käytettävissä olevan varaston näyttämiseksi myymälä- ja online-kanavissa.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113917"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379233"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Varaston saatavuuden laskeminen vähittäismyyntikanaville
 
@@ -50,12 +50,7 @@ Molemmat ohjelmointirajapinnat hakevat tietoja Commerce-palvelimelta ja antavat 
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Sähköisen kaupankäynnin lasketun varaston saatavuuden toiminnon aloittaminen
 
-Ennen kuin käytät näitä kahta aiemmin mainittua ohjelmointirajapintaa, Commerce Headquarters -sovelluksessa on tehtävä parametrin muutos. Näin varmistetaan, että varastoarvojen tilannekuvaus, jonka Commerce Headquarters laskee **Tuotteen saatavuus** -työn avulla, syöttää tiedot oikeisiin taulukoihin.
-
-Määritä parametri seuraavien vaiheiden avulla.
-
-1. Valitse **Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan jaetut parametrit**.
-1. Valitse **Varasto**-välilehden **Tuotteen saatavuus -työ** -osassa **Käytä optimoitua prosessia tuotteen saatavuuden työssä**. Tämä asetus varmistaa, että kanavan käytettävissä olevan varaston laskennassa käytetään optimaalista toimintojoukkoa Commerce-palvelimessa.
+Ennen kahden aiemmin mainitun ohjelmointirajapinnan käyttöä on otettava käyttöön **Optimoitu tuotteen saatavuuden laskenta** -toiminto Commercen Headquartersin **Toimintojen hallinta** -työtilassa.
 
 Ennen kuin ohjelmointirajapinnat voivat laskea parhaan varaston saatavuuden arvion nimikkeelle, Commerce Headquarters -sovelluksen varaston saatavuuden kausittainen tilannevedos on käsiteltävä ja lähetettävä siihen kanavan tietokantaan, jota sähköisen kaupankäynnin Commerce Scale Unit käyttää. Tilannevedos vastaa tietoja, jotka Commerce Headquarters -sovelluksella on varaston saatavuudesta tietylle tuotteen tai tuotevariantin ja varaston yhdistelmälle. Se voi sisältää varaston oikaisuja tai siirtoja, jotka johtuvat varaston vastaanotoista, lähetyksistä tai muista prosesseista, jotka Commerce Headquarters suorittaa ja joista sähköisen kaupankäynnin kanavalla on tietoja vain synkronisointiprosessin vuoksi.
 
@@ -85,20 +80,15 @@ Kun kanavan laskenta on oikein määritetty ja hallittu, se voi tuottaa luotetta
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Myyntipisteen kanavan lasketun varaston saatavuuden toiminnon aloittaminen
 
-Voit käyttää kanavan laskentalogiikkaa ja ottaa reaaliaikaiset palvelukutsut pois käytöstä varastohauissa myyntipistesovelluksessa, jos teet ensin kaksi parametrimuutosta. Tämän jälkeen muutokset synkronoidaan kanavassa jakeluaikatauluprosessin kautta.
+Kanavapuolen laskentalogiikan käyttö ja myyntipistesovelluksen reaaliaikaisten varastohakukutsujen käytöstäpoisto edellyttää, että **Optimoitu tuotteen saatavuuden laskenta** -toiminto otetaan ensin käyttöön Commerce Headquartersin **Toiminnon hallinta** -työtilassa. Toiminnon käyttöönottamisen lisäksi on tehtävä muutoksia **toimintoprofiiliin**.
 
-Määritä ensimmäinen parametri seuraavien vaiheiden avulla.
-
-1. Valitse **Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan jaetut parametrit**.
-1. Valitse **Varasto**-välilehden **Tuotteen saatavuus -työ** -osassa **Käytä optimoitua prosessia tuotteen saatavuuden työssä**. Tämä asetus varmistaa, että kanavan käytettävissä olevan varaston laskennassa käytetään optimaalista toimintojoukkoa Commerce-palvelimessa.
-
-Määritä toinen parametri seuraavien vaiheiden avulla.
+**Toimintoprofiilia** muutetaan seuraavasti:
 
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**.
 1. Valitse toimintoprofiili.
 1. Muuta **Toiminnot**-pikavälilehden **Varaston saatavuuden laskenta** -osassa **Varaston saatavuuden laskentatila** -kentän arvo **Reaaliaikainen palvelu** -arvosta **Kanava**-arvoksi. Oletusarvoisesti kaikki toimintoprofiilit käyttävät reaaliaikaisia palvelukutsuja. Tämän vuoksi sinun on muutettava tämän kentän arvoa, jos haluat käyttää kanavan laskentalogiikkaa. Tämä muutos vaikuttaa jokaiseen valittuun toimintoprofiiliin linkitettyyn vähittäismyymälään.
 
-Päivitä palvelimet seuraavien vaiheiden avulla.
+Muutokset on sitten synkronoitava kanavaan jakelun aikataulutusprosessilla seuraavien ohjeiden mukaisesti:
 
 1. Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.
 1. Suorita **1070** (**Kanavan määritys**) -työ.

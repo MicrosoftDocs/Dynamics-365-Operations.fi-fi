@@ -1,5 +1,5 @@
 ---
-title: Kustannuslaskentapalvelun käytön aloittaminen
+title: Kustannuslaskentapalvelun käytön aloittaminen (yksityinen esiversio)
 description: Tässä ohjeaiheessa on kustannuslaskentapalvelun käyttöoikeustiedot ja asennusohjeet.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276912"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372733"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Kustannuslaskentapalvelun käytön aloittaminen
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Kustannuslaskentapalvelun käytön aloittaminen (yksityinen esiversio)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ Kustannuslaskentapalvelu on apuohjelma. Jos haluat käyttää sen toimintoja, si
 
 Kustannuslaskentapalvelu ei tällä hetkellä tue kaikkia Dynamics 365 Supply Chain Managementin sisäänrakennettuja kustannustenhallintatoimintoja. Tämän vuoksi on tärkeää arvioida, vastaako tällä hetkellä käytössä oleva toimintojoukko tarpeitasi.
 
-## <a name="licensing"></a>Käyttöoikeudet
-
-Kustannuslaskentapalvelu on lisensoitu yhdessä Supply Chain Managementin käytettävissä olevien varastokirjanpidon vakiotoimintojen kanssa. Sinun ei tarvitse ostaa lisäkäyttöoikeutta, jotta voisit käyttää kustannuslaskentapalvelua.
-
-## <a name="install-the-add-in"></a>Lisäosan asentaminen
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Kustannuslaskentapalvelun hankkiminen (yksityinen esiversio)
 
 > [!IMPORTANT]
 > Kustannuslaskentapalvelun käyttäminen edellyttää, että käytössä on LCS-yhteensopiva korkean käytettävyyden ympäristö (ei OneBox-ympäristö) ja että käytössä on Dynamics 365 Supply Chain Managementin versio 10.0.11 tai uudempi.
 
+Kustannuslaskentapalvelun yksityiseen esiversioon kirjaudutaan lähettämällä LCS-ympäristön tunnus sähköpostitse [kustannuslaskentapalveluun (yksityinen esikatselu)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). Kun sinut hyväksytään ohjelmaan, saat seurantasähköpostin, jossa on kustannuslaskentapalvelun beeta-avain. Kun olet saanut beeta-avaimen, voit jatkaa [lisäosan asentamiseen](#install).
+
+## <a name="licensing"></a>Käyttöoikeudet
+
+Kustannuslaskentapalvelu on lisensoitu yhdessä Supply Chain Managementin käytettävissä olevien varastokirjanpidon vakiotoimintojen kanssa. Sinun ei tarvitse ostaa lisäkäyttöoikeutta, jotta voisit käyttää kustannuslaskentapalvelua.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Lisäosan asentaminen
+
 Jos haluat käyttää kustannuslaskentapalvelua, asenna kustannuslaskentapalvelun apuohjelma Supply Chain Managementia varten seuraavassa kuvatulla tavalla.
+
+1. [Kirjaudu](#sign-up) kustannuslaskentapalveluun (yksityinen esiversio).
 
 1. Kirjaudu sisään LCS:ään.
 

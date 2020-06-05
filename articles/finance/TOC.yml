@@ -54,7 +54,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/finance/toc.json
                 - name: Paikallisten käyttöönottojen järjestelmävaatimukset
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Osta Finance and Operations (on-premises)
+                - name: Finance + Operations (on-premises) -version ostaminen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Varastoinnin määrittäminen paikallisille ympäristöille
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Yhdistäminen ohjejärjestelmään
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: Yhdistäminen mukautettuun ohjesivustoon
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
+                - name: Mukautetun ohjeen yleiskatsaus
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Kenttäkuvausten näyttäminen ja vienti
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Tehtävien tallennustoiminto
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: ALV-ilmoituksen antaminen sähköisesti (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Saksan ALV-ilmoitus
+                  href: localizations/emea-de-vat-declaration.md
                 - name: Kirjauskansioluettelon raportti
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Sähköisten veroilmoitusten määrittäminen
@@ -2024,7 +2026,7 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Vekselin protestin tuonti
                   href: localizations/emea-ita-exil-protest-boe.md
-                - name: Enimmäisvero
+                - name: Verokatto
                   href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japani
               items:
@@ -2286,7 +2288,7 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL -integrointi
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Tarkistustiedosto (XML Auditfile Financieel, XAF)'
+                - name: 'Tarkistustiedosto – XML Auditfile Financieel, XAF'
                   hred: localizations/emea-nl-audit-file.md
             - name: Norja
               items:
@@ -2398,9 +2400,11 @@
                       href: localizations/rus-prepayments-management.md
                     - name: Saapuvien arvonlisäverojen palauttaminen
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: Vientikaupan laskujen käsittely
+                      href: localizations/rus-export-trade.md
                 - name: Käyttöomaisuuserät
                   items:
-                    - name: Käyttöomaisuuden yleiskatsaus
+                    - name: Käyttöomaisuuserien yleiskatsaus
                       href: localizations/rus-fixed-assets-overview.md
                     - name: Käyttöomaisuuserien määrittäminen
                       items:
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Varastoraportit
                       href: localizations/rus-inventory-reports.md
+                    - name: Varastoprofiilin yleiskatsaus
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: Varastoprofiilin määrittäminen
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: Varastoprofiilin käyttäminen asiakirjoissa ja kyselyissä
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Raportointi
                   items:
                     - name: Taloushallinnon raportointi
@@ -3246,36 +3256,42 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Tietomallin määritysten valitseminen luotaessa muotoja
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten dokumenttien luomiseksi eri muodoissa
+            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten asiakirjojen luomiseksi eri muodoissa
               items:
-                - name: (ER) Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (ER) Konfiguraatioiden suunnitteleminen raporttien luomiseksi Word-muodossa
+                - name: Konfiguraatioiden suunnitteleminen lähtevien asiakirjojen luomiseksi Excel-muodossa
+                  items:
+                    - name: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: Esimerkki raporttien luomisesta OPENXML-muodossa
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja uudelleen
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
+                      items:
+                        - name: Muotojen suunnitteleminen lisäämään sarakkeita dynaamisesti Excel-raportteihin
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Sarakkeiden lisääminen dynaamisesti Excel-raportteihin muotoja suorittamalla
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Konfiguraatioiden suunnitteleminen raporttien luontiin Word-muodossa
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguraatioiden suunnitteleminen PDF-mallien täyttämiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: Kuvien ja muotojen upottaminen
-              items:
-                - name: (ER) Kuvien ja muotojen upottaminen luomiisi asiakirjoihin
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: Esimerkki kuvien ja muotojen upottamisesta
+                - name: Kuvien ja muotojen upottaminen
                   items:
-                    - name: Konfiguraatioiden suunnitteleminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfiguraatioiden tarkastaminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Upotettuja kuvia sisältävien raporttien luominen Office-muodoissa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: (ER) Kuvien ja muotojen upottaminen luomiisi asiakirjoihin
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: Esimerkki kuvien ja muotojen upottamisesta
+                      items:
+                        - name: Konfiguraatioiden suunnitteleminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfiguraatioiden tarkastaminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Upotettuja kuvia sisältävien raporttien luominen Office-muodoissa
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
-              items:
-                - name: Muotojen suunnitteleminen sarakkeiden lisäämiseksi Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: Muotojen suorittaminen sarakkeiden lisäämiseksi Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: Sovellustietojen päivittäminen sähköisen raportoinnin avulla
               items:
                 - name: Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen
@@ -3306,8 +3322,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muotojen määrittäminen XML-muotoisten tiedostojen tuomiseksi valinnaisilla määritteillä
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Konfiguraation elinkaari
               items:
                 - name: Konfiguraatioiden elinkaaren hallinta
@@ -3324,10 +3338,14 @@
                   href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                 - name: Sähköisen raportoinnin konfiguraatioiden lataaminen RCS-säiliöstä
                   items:
-                    - name: Konfiguraatioiden lataaminen RCS-tyypin sähköisen raportoinnin säiliöstä
+                    - name: Konfiguraatioiden lataaminen RCS-tyyppisestä sähköisen raportoinnin säilöstä
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: 'Konfiguraatioiden tuonti RCS:stä'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: 'Sähköisen raportoinnin konfiguraatioiden luominen RCS:ssä ja niiden lataaminen yleiseen säilöön'
+                  href: localizations/rcs-global-repo-upload.md
+                - name: 'Sähköisen raportoinnin konfiguraatioiden jakaminen RCS:ssä ulkoisten organisaatioiden kanssa'
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: Oppaat
               items:
                 - name: Tietolähteiden käyttäminen
@@ -3506,7 +3524,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Mallien lisääminen Avaa-riveille Excelin valikossa
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
-            - name: Mukauta Avaa-toimintoa Microsoft Officen valikossa
+            - name: Avaa-toiminnon mukauttaminen Microsoft Officen valikossa
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/finance/toc.json
             - name: Sähköpostiviestin määrittäminen ja lähettäminen
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json

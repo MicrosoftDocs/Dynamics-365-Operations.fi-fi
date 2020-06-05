@@ -3,7 +3,7 @@ title: Kulutositteiden käsittely
 description: Tässä ohjeaiheessa on tietoja optisen merkkien tunnistuksen (OCR) käytöstä tositteiden käsittelyssä. Tämä ominaisuus on suunniteltu parantamaan käyttökokemusta, kun luodaan kuluraportteja Microsoft Dynamics 365 Financessa.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248960"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378228"
 ---
 # <a name="expense-receipt-processing"></a>Kulukuittien käsittely
 
@@ -36,24 +36,24 @@ Kulujen kirjausta on parannettu ottamalla käyttöön optinen merkkien tunnistus
 
 ## <a name="usage-examples"></a>Käyttöesimerkkejä
 
-- **Luottokorttitapahtumia sisältävien tositteiden automaattinen liittäminen, kun kuluraportti luodaan.**
+Luottokorttitapahtumia sisältävien tositteiden automaattinen liittäminen, kun kuluraportti luodaan seuraavasti:
 
-    1. Avaa **Kulujen hallinta** -työtila.
-    2. Tarkista **Tositteet**-välilehdessä, että liittämättömiä tositteita on olemassa. Voit myös ladata tositteita **Tositteet**-välilehteen.
-    3. Tarkista **Kulut**-välilehdessä, että liittämättömiä kuluja on olemassa. Tavallisesti kulujen hallinnoija tuo nämä kulut luottokortin myöntäjältä.
-    4. Valitse **Uusi kuluraportti**. Huomaa, että voit nyt sisällyttää kuluja ja tositteita myös kuluraporttiin. Jos lisäät sekä kuluja että tositteita, automaattinen tositteiden ja kulujen yhdistäminen käynnistyy.
+  1. Avaa **Kulujen hallinta** -työtila.
+  2. Tarkista **Tositteet**-välilehdessä, että liittämättömiä tositteita on olemassa. Voit myös ladata tositteita **Tositteet**-välilehteen.
+  3. Tarkista **Kulut**-välilehdessä, että liittämättömiä kuluja on olemassa. Tavallisesti kulujen hallinnoija tuo nämä kulut luottokortin myöntäjältä.
+  4. Valitse **Uusi kuluraportti**. Huomaa, että voit nyt sisällyttää kuluja ja tositteita myös kuluraporttiin. Jos lisäät sekä kuluja että tositteita, automaattinen tositteiden ja kulujen yhdistäminen käynnistyy.
 
-- **Luo kulu tai yhdistä kulu tositteesta.**
+Kulu luodaan tai täsmäytetään tositteesta seuraavasti:
 
-    1. Liitä tosite kuluraporttiin valitsemalla sen **Tositteet**-välilehdessä **Lisää tositteita**.
-    2. Huomaa tositteen ladatun kuvan alla asetukset **Luo** ja **Yhdistä**.
+  1. Liitä tosite kuluraporttiin valitsemalla sen **Tositteet**-välilehdessä **Lisää tositteita**.
+  2. Huomaa tositteen ladatun kuvan alla asetukset **Luo** ja **Yhdistä**.
 
-        - Luo manuaalisesti kirjattu kulutapahtuma ja täytä tositteesta haetut arvot valitsemalla **Luo**.
-        - Jos valitset **Yhdistä**, järjestelmä yrittää yhdistää olemassa olevan kulun tositteeseen.
+      - Luo manuaalisesti kirjattu kulutapahtuma ja täytä tositteesta haetut arvot valitsemalla **Luo**.
+      - Jos valitset **Yhdistä**, järjestelmä yrittää yhdistää olemassa olevan kulun tositteeseen.
 
 ## <a name="installation"></a>Asentaminen
 
-Tämä ominaisuus toimii yhdessä **Kuluraporttien uusi toteutus** -ominaisuuden kanssa yksinkertaistaen kulukokemusta.
+Tämä ominaisuus toimii yhdessä **Kuluraporttien uusi toteutus** -ominaisuuden kanssa yksinkertaistaen kulukokemusta. Toiminto on käytettävissä vain tasoa 2 korkeammissa ympäristöissä eli eristys- ja tuotantoympäristöissä.
 
 Jos haluat käyttää näitä kehittyneitä kuluominaisuuksia, asenna Microsoftin Dynamics 365 Financen kulujenhallintapalvelu ja ota ominaisuudet käyttöön esiintymässäsi. Voit käyttää lisäosaa projektistasi Microsoft Dynamicsin Lifecycle Servicesissä (LCS).
 

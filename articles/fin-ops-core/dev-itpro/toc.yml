@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Paketin käyttöönotto-ongelmien vianmääritys
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Mukautetun ohjeen käyttöönotto
+              items:
+                - name: Mukautetun ohjeen yleiskatsaus
+                  href: help/custom-help-overview.md
+                - name: Sisällön valmisteleminen ohjeruudun avulla
+                  href: help/preparing-content.md
+                - name: Mukautetun ohjeen käyttöönottaminen Azuressa
+                  href: help/walkthrough-help-azure.md
+                - name: Mukautetun ohjeen yhdistäminen ohjeruutuun
+                  href: help/connect-help-pane.md
+                - name: Mukautetun ohjeen työkalut
+                  items:
+                    - name: Yleiskatsaus
+                      href: help/custom-help-toolkit.md
+                    - name: HTML From Repo Generator -työkalu
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Convert HTML To JSON -työkalu
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: HTML Locale Changer -työkalu
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Mukautetun Dynamics AX -ohjeen muuntaminen Dynamics 365 -käyttöön
+                      href: help/migrate-dynamicsax2012.md
+                - name: Kielen ja aluekohtaisten asetusten kuvaus koko tuotteessa ja ohjeessa
+                  href: help/language-locale.md
+                - name: 'Ohjeen laajentaminen, mukauttaminen ja käyttäminen yhdessä'
+                  href: help/contributor-guide.md
         - name: Kehittäminen ja mukauttaminen
           items:
             - name: Kehittäminen ja mukauttaminen – aloitussivu
@@ -835,7 +861,7 @@
                     - name: Laajennettavuuden muutokset versiossa 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Laajennettavuuden muutokset versiossa 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Laajennettavuuden muutokset versiossa 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Laajennettavuuden muutokset heinäkuu 2017

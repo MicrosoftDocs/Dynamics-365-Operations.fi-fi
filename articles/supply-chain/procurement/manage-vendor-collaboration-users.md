@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8491fd7c5af015989d409391e3ac143d88b6ad92
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 29930fdb65f96e281e0f0f01db41ec1475ad81c2
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207160"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383064"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Toimittajayhteistyön käyttäjien hallinta
 
@@ -49,7 +49,7 @@ Jos haluat poistaa yhteyshenkilön tiedot, voit poistaa vain itse luomasi tiedot
 Toimittajayhteistyön käyttäjäpyyntöjä voi esittää hankinta-asiantuntija tai ulkoisen toimittajan järjestelmänvalvoja.
 
 -   Jos olet ulkoinen toimittaja, lähetä pyynnöt **Kaikki yhteyshenkilöt** -sivulta **Toimittajayhteistyö**-moduulista.
--   Jos olet hankinta-asiantuntija, lähetä pyynnöt **Tarkastele yhteyshenkilöitä** -sivulta. Voit tehdä tämän valitsemalla toimittajatietueessa siirtymisruudun **Asetukset** osassa, valitsemalla **Yhteyshenkilöt** &gt; **Tarkastele yhteyshenkilöitä**.
+-   Jos olet hankinta-asiantuntija, lähetä pyynnöt **Tarkastele yhteyshenkilöitä** -sivulta. Voit tehdä tämän valitsemalla toimittajatietueessa toimintoruudussa **Asetukset** ja valitsemalla sitten **Yhteyshenkilöt** &gt; **Tarkastele yhteyshenkilöitä**.
 
 Voit tehdä pyynnön käyttäjän valmistelemisesta, käyttäjän poistamisesta tai käyttöoikeusroolien muokkaamisesta. Jos olet ulkoisen toimittajan järjestelmänvalvoja, sinun on rekisteröidyttävä yhteyshenkilöksi toimittajatileille, joille haluat tehdä käyttäjän pyyntöjä, ja sinulla on oltava toimittajayhteistyöliittymän käyttöoikeudet näiltä toimittajatileiltä.  
 
