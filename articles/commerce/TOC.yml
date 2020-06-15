@@ -88,6 +88,8 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (elokuu 2020)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (heinäkuu 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (toukokuu 2020)
@@ -212,9 +214,9 @@
               items:
                 - name: Itsepalveluasennusohjelmien synkronointi Dynamics 365 Commercessa
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (paikallinen ympäristö)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Commerce Scale Unitin määrittäminen ja asentaminen
+                - name: Commerce Scale Unitin määrittäminen ja asentaminen (paikallinen ympäristö)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: 'Modern POS:n määritykset ja asentaminen'
                   href: retail-modern-pos-device-activation.md
@@ -604,7 +606,7 @@
               items:
                 - name: Tuotesuositusten yleiskatsaus
                   href: product-recommendations.md
-                - name: 'ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä'
+                - name: Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä
                   href: enable-ADLS-environment.md
                 - name: Tuotesuositusten ottaminen käyttöön
                   href: enable-product-recommendations.md
@@ -646,8 +648,8 @@
                   items:
                     - name: Myymälän varastonhallinta
                       href: work-with-store-inventory.md
-                    - name: Sarjoitettujen nimikkeiden käyttäminen
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Varastopuskureiden ja varastotasojen konfiguroiminen
+                      href: inventory-buffers-levels.md
                     - name: Sarjoitettujen nimikkeiden käyttäminen myyntipisteessä
                       href: pos-serialized-items.md
                     - name: Tuotteiden siirto jakelukeskuksesta myymälään käyttäen ostotarjontaa
@@ -824,6 +826,8 @@
                   href: authoring-home-overview.md
                 - name: Käyttäjien ja roolien hallinta
                   href: manage-ecommerce-users-roles.md
+                - name: Varastoasetusten käyttäminen
+                  href: inventory-settings.md
                 - name: Sivuston hakukoneoptimointia (SEO) koskevia tietoja
                   href: search-engine-optimization-considerations.md
                 - name: Sisällön suojauskäytännön (CSP) hallinta
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: Työskentely CSS-korvaustiedostojen kanssa
                       href: css-override-files.md
+                    - name: Tyylien esimääritysten käyttäminen
+                      href: style-presets.md
                     - name: Favicon-kuvakkeen lisääminen
                       href: add-favicon.md
                     - name: Tervetuloviestin lisääminen
@@ -932,6 +938,10 @@
                   items:
                     - name: Konttimoduuli
                       href: add-container-module.md
+                    - name: Haitarivalikkomoduuli
+                      href: add-accordion.md
+                    - name: Välilehtimoduuli
+                      href: add-tab.md
                 - name: Markkinointimoduulit
                   items:
                     - name: Promopalkkimoduuli
@@ -978,7 +988,11 @@
                   items:
                     - name: Tuotekokoelmamoduulit
                       href: product-collection-module-overview.md
-            - name: Hae
+                - name: Siirtymismoduulit
+                  items:
+                    - name: Navigointipolkumoduuli
+                      href: add-breadcrumb.md
+            - name: Etsi
               items:
                 - name: Luokan oletussaapumis- ja oletushakutulossivu
                   href: category-search-page-overview.md
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Käyttöönotto-ohjeet kassakoneille
                   href: localizations/emea-fra-deployment.md
+            - name: Saksa
+              items:
+                - name: Saksan tilikausirekisteröintipalvelun integroinnin malli
+                  href: localizations/emea-deu-fi-sample.md
             - name: Intia
               items:
                 - name: Arvonlisäveron (GST) integrointi kassakoneisiin
@@ -1460,7 +1478,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
                         - name: 'Teksti: NumberFormat'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Teksti: QRCode'
+                        - name: 'Teksti: QrCode'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
                         - name: 'Teksti: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Teeman asetusten määrittäminen
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Teeman laajentaminen
+                    - name: Teeman laajentaminen moduulilaajennuksien lisäämistä varten
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Teeman laajentaminen perusteemasta
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Komentosarjan lisääminen
                   items:
@@ -2072,11 +2092,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Serverin laajennettavuus
               items:
-                - name: Retail Server OData -ohjaimen laajentaminen
+                - name: Commerce Scale Unitin OData-ohjaimen laajentaminen
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: Retail Serverin asiakkaan ja kuluttajan ohjelmointirajapinnat
+                - name: Commerce Scale Unitin asiakas- ja kuluttajaohjelmointirajapinnat
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Oletusarvoisen Retail Server -metatietojen ohjaimen laajentaminen
+                - name: Commerce Scale Unitin metatietojen ohjaimen laajentaminen
                   href: dev-itpro/extend-metadata.md
                 - name: CRT-palvelun kutsuminen offline-tilassa
                   href: dev-itpro/call-crt-service-offline.md
@@ -2096,8 +2116,6 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Vähittäismyyntikanavien salaisuuksien hallinta
                   href: dev-itpro/manage-secrets.md
-                - name: Ominaisuuksien lisääminen myyntitilauksiin
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: 'CRT:n laajennettavuus ja käynnistimet'
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Tapahtumien estäminen käynnistimien avulla

@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.12 (elokuu 2020)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (heinäkuu 2020)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (toukokuu 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management 10.0.9 (huhtikuu 2020)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Tuoterakenteen laskentaryhmät
                   href: cost-management/bom-calculation-groups.md
+                - name: Kustannuslaskentataso
+                  href: cost-management/cost-calculation-level.md
                 - name: Jälkikustannuslaskenta
                   href: cost-management/backflush-costing.md
                 - name: Tuotannon varianssien yhteiset lähteet
@@ -1007,7 +1009,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Teksti: NumberFormat'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: 'Teksti: QRCode'
+                        - name: 'Teksti: QrCode'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Teksti: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Suodattimien käyttäminen suunnitelmaan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Pääsuunnittelu ja ostokauppasopimukset
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automaattinen vahvistus ja suunnittelun optimointi
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Tuotantotilausten ilmoittaminen valmistuneiksi
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Ilmoita valmistuneeksi rekisterikilpiohjattuun sijaintiin
+                    - name: Konfiguroi työkortti laitteita varten
+                      href: production-control/config-job-card-device.md
+                    - name: Ilmoita valmiiksi työkorttilaitteesta
                       href: production-control/report-finished-job-device.md
                     - name: Tuotantotilauksen tilan palauttaminen
                       href: production-control/reverse-production-order-status.md
@@ -2259,6 +2265,16 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Myyntiprovision sääntöjen määrittäminen
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Asiakasportaali Dynamics 365 Supply Chain Managementille
+              items:
+                - name: Asiakkaan portaalin yhteenveto
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Asiakasportaalin asentaminen, määrittäminen ja päivittäminen'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Asiakasportaalin käyttäjien luominen ja hallinta
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Asiakasportaalin mukauttaminen ja käyttäminen
+                  href: sales-marketing/customer-portal-customize.md
             - name: Myynninedistämispalkkio
               href: sales-marketing/trade-allowance.md
             - name: Uuden kauppasopimuksen luominen
@@ -2655,6 +2671,8 @@
                   href: warehousing/partial-location-cycle-counting.md
                 - name: Sijainnin osittaisen inventointiprosessin määrittäminen
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
+                  href: warehousing/onhand-cleanup.md
                 - name: Varastokirjauskansio
                   href: inventory/inventory-journals.md
                 - name: Varastosijainti
