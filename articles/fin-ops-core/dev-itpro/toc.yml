@@ -14,6 +14,8 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
+                - name: Platform update -päivitykset 10.0.12 (elokuu 2020)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform update -päivitykset 10.0.11 (heinäkuu 2020)
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platform update -päivitykset 10.0.10 (toukokuu 2020)
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integroitu työntekijä, työ ja sijainti'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Varaston käytettävyys
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: Kaksoiskirjoituksen tuki
                           items:
                             - name: Tuki Field Service- ja Project Service Automation -ratkaisuille
@@ -452,9 +456,9 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Päivitysten käyttöönotto pilviympäristöissä
                   href: deployment/apply-deployable-package-system.md
-                - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn vähittäismyyntikanavan osiin
+                - name: Päivitysten ja laajennuksien kohdistaminen Commerce Scale Unitiin (pilvi)
                   href: deployment/Update-retail-channel.md
-                - name: Alusta Retail Cloud Scale Unit
+                - name: Alusta Commerce Scale Unit (pilvi)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Retail-tietojen sijainti
                   href: deployment/retail-data-residency.md
@@ -488,6 +492,8 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Asiakasohjelman Internet-yhteys
                       href: user-interface/client-disconnected.md
+                    - name: Määritä vain erä- ja vain vuorovaikutteiset AOS-solmut paikallisissa käyttöönotoissa
+                      href: deployment/onprem-batchonly.md
                     - name: Välityspalvelimien määrittäminen paikallisiin ympäristöihin
                       href: deployment/onprem-reverseproxy.md
                     - name: Paikallisten ympäristöjen diagnostiikka
@@ -1048,6 +1054,8 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services -käyttöopas
               href: lifecycle-services/lcs-user-guide.md
+            - name: Projektin perehdytys
+              href: lifecycle-services/project-onboarding.md
             - name: Tilauksen arviointityökalu
               href: lifecycle-services/subscription-estimator.md
             - name: Suojauksen määrittäminen
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Käännösmuistitiedostot
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Microsoft Power Platform -integraatio
+          items:
+            - name: Microsoft Power Platform- ja Finance and Operations -integraatio
+              href: power-platform/overview.md
+            - name: Yksikkömallinnus
+              href: power-platform/entity-modeling.md
+            - name: Sovellusten elinkaaren hallinta
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations- ja Common Data Service -järjestelmänvalvojan viitetiedot
+              href: power-platform/admin-reference.md
+            - name: Power Apps -portaalit Finance and Operationsin kanssa
+              href: power-platform/power-portal-reference.md
+            - name: Finance and Operations -virtuaaliyksiköiden usein kysytyt kysymykset
+              href: power-platform/faq.md
         - name: Mobiiliympäristö
           items:
             - name: Mobiiliympäristön resurssit
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Asennus ja määrittäminen
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Tietoriippumaaton testaaminen Regression Suite Automation Toolilla
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Testitapausten suorittaminen
+            - name: Regression Suite Automation Toolin käyttäminen
               href: perf-test/rsat/rsat-run.md
             - name: Odotettujen arvojen tarkistaminen
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Johdetut testitapaukset
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Regression Suite Automation Tool -oppaan käyttäminen
+            - name: Regression Suite Automation Tool -opas ja muut ominaisuudet
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Parhaat käytännöt
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Tietoriippumaaton testaaminen Regression Suite Automation Toolilla
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Vianmääritys
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Ratkaisujen vapauttaminen Lifecycle Services -portaalin avulla
@@ -1436,12 +1458,14 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Eräkäsittely ja eräpalvelimet
                   href: sysadmin/batch-server-overview.md
-                - name: Erätöiden luominen
+                - name: Luo erätyöt
                   href: sysadmin/tasks/create-batch-job.md
                 - name: Erätyön kopiointi
                   href: sysadmin/copy-batch-job.md
                 - name: Aktiiviset eräjaksot
                   href: sysadmin/activeperiod.md
+                - name: Aktiivisten eräkausien kesäajan tuki
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Erien hallinnan käyttöoikeusrooli
                   href: sysadmin/runby.md
                 - name: Erätyö SQL-indeksin eheyttämisen käsittelemistä varten
