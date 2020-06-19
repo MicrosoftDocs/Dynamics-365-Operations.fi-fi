@@ -1,6 +1,6 @@
 ---
-title: ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä
-description: Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen (ADLS:n) käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
+title: Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä
+description: Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
 author: bebeale
 manager: AnnBe
 ms.date: 04/13/2020
@@ -19,57 +19,57 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 83b829306c2da2d10924e547fd3cac6ae6781db3
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259745"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404183"
 ---
-# <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä
+# <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen (ADLS:n) käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
+Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Dynamics 365 Commerce -ratkaisussa kaikkia tuote- ja tapahtumatietoja seurataan ympäristön yksikkösäilöön. Näiden tietojen muiden Dynamics 365:n palvelujen, kuten tietojen analytiikan, yritystietojen ja mukautettujen suositusten, käyttöön asettamista varten ympäristö on yhdistettävä asiakkaan omistamaan toisen sukupolven Azure Data Lake Storage (ADLS) -ratkaisuun.
+Dynamics 365 Commerce -ratkaisussa kaikkia tuote- ja tapahtumatietoja seurataan ympäristön yksikkösäilöön. Näiden tietojen muiden Dynamics 365:n palvelujen, kuten tietojen analytiikan, yritystietojen ja mukautettujen suositusten, käyttöön asettamista varten ympäristö on yhdistettävä asiakkaan omistamaan toisen sukupolven Azure Data Lake Storage Gen 2 -ratkaisuun.
 
-Koska ADLS on määritetty ympäristössä, kaikki tarvittavat tiedot peilataan yksikkösäilöstä samalla, kun ne ovat edelleen suojattuja ja asiakkaan valvonnassa.
+Koska Azure Data Lake Storage on määritetty ympäristössä, kaikki tarvittavat tiedot peilataan yksikkösäilöstä samalla, kun ne ovat edelleen suojattuja ja asiakkaan valvonnassa.
 
-Jos myös tuotesuositukset tai mukautetut suositukset ovat käytössä ympäristössä, tuotesuositusten pinolle myönnetään käyttöoikeus ADLS:n varattuun kansioon asiakastietojen noutamista ja niihin perustuvien suositusten laskemista varten.
+Jos myös tuotesuositukset tai mukautetut suositukset ovat käytössä ympäristössä, tuotesuositusten pinolle myönnetään käyttöoikeus Azure Data Lake Storagen varattuun kansioon asiakastietojen noutamista ja niihin perustuvien suositusten laskemista varten.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Asiakkailla on oltava ADLS määritettynä omistamassaan Azure-tilauksessa. Tässä ohjeaiheessa ei käsitellä Azure-tilauksen hankkimista eikä ADLS-yhteensopivan säilötilin määrittämistä.
+Asiakkailla on oltava Azure Data Lake Storage määritettynä omistamassaan Azure-tilauksessa. Tässä ohjeaiheessa ei käsitellä Azure-tilauksen hankkimista eikä Azure Data Lake Storage -yhteensopivan säilötilin määrittämistä.
 
-Lisätietoja ADLS:stä on kohdassa [ADLS:n virallinen dokumentaatio](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Lisätietoja Azure Data Lake Storagesta on kohdassa [Azure Data Lake Storage Gen2:n virallinen dokumentaatio](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Määritysvaiheet
 
-Tämä osa sisältää määritysvaiheet, jotka ovat tarpeen, jotta ADLS voidaan ottaa käyttöön ympäristössä, joka liittyy tuotesuosituksiin.
-Lisätietoja ADLS-lisäosan käyttöön tarvittavista vaiheista on ohjeaiheessa [Määritä yksikkösäilö käytettäväksi Data Lakessa](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+Tämä osa sisältää määritysvaiheet, jotka ovat tarpeen, jotta Azure Data Lake Storage voidaan ottaa käyttöön ympäristössä, joka liittyy tuotesuosituksiin.
+Lisätietoja Azure Data Lake Storage -lisäosan käyttöön tarvittavista vaiheista on ohjeaiheessa [Määritä yksikkösäilö käytettäväksi Data Lakessa](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
-### <a name="enable-adls-in-the-environment"></a>ADLS:n käyttöönotto ympäristössä
+### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Azure Data Lake Storagen käyttöönotto ympäristössä
 
 1. Kirjaudu ympäristön taustajärjestelmäportaaliin.
 1. Etsi **Järjestelmäparametrit** ja siirry **Tietoyhteydet**-välilehteen. 
 1. Määritä **Ota Data Lake -integrointi käyttöön** -parametrin arvoksi **Kyllä**.
 1. Määritä **Data Laken vähittäinen päivitys** -parametrin arvoksi **Kyllä**.
 1. Syötä sitten seuraavat vaaditut tiedot:
-    1. **Sovellustunnus** // **Sovelluksen salauskoodi** // **DNS-nimi** – Tarvitaan siihen KeyVault-säilöön yhdistämistä varten, johon ADLS-salauskoodi on tallennettu.
-    1. **Salainen nimi** – KeyVaultiin tallennettu ja ADLS-todennukseen käytetty salainen nimi.
+    1. **Sovellustunnus** // **Sovelluksen salauskoodi** // **DNS-nimi** – Tarvitaan siihen KeyVault-säilöön yhdistämistä varten, johon Azure Data Lake Storage -salauskoodi on tallennettu.
+    1. **Salainen nimi** – KeyVaultiin tallennettu ja Azure Data Lake Storage -todennukseen käytetty salainen nimi.
 1. Tallenna muutoksesi sivun vasemmassa yläkulmassa.
 
-Seuraavassa kuvassa näkyy esimerkki ADLS-määrityksessä.
+Seuraavassa kuvassa näkyy esimerkki Azure Data Lake Storage -määrityksessä.
 
-![Esimerkki ADLS-määrityksestä](./media/exampleADLSConfig1.png)
+![Esimerkki Azure Data Lake Storage -määrityksestä](./media/exampleADLSConfig1.png)
 
-### <a name="test-the-adls-connection"></a>ADLS-yhteyden testaaminen
+### <a name="test-the-azure-data-lake-storage-connection"></a>Azure Data Lake Storage -yhteyden testaaminen
 
 1. Testaa yhteys KeyVaultiin **Testaa Azure Vault** -linkin avulla.
-1. Testaa yhteys ADLS:ään käyttämällä **Testaa Azure-tallennustila** -linkin avulla.
+1. Testaa yhteys Azure Data Lake Storageen käyttämällä **Testaa Azure-tallennustila** -linkin avulla.
 
 > [!NOTE]
 > Jos testit epäonnistuvat, tarkista uudelleen, että kaikki edellä lisätyt KeyVault-tiedot ovat oikein. Kokeile sen jälkeen uudelleen.
@@ -86,7 +86,7 @@ Seuraavassa kuvassa näkyy esimerkki yksikkösäilöstä, jossa automaattinen p�
 
 ![Esimerkki yksikkötallennustilasta, jossa automaattinen päivitys on käytössä](./media/exampleADLSConfig2.png)
 
-ADLS on nyt määritetty ympäristölle. 
+Azure Data Lake Storage on nyt määritetty ympäristölle. 
 
 Jos et ole vielä suorittanut niitä, suorita ympäristön [tuotesuositusten ja mukautusten käyttöönoton](enable-product-recommendations.md) vaiheet.
 

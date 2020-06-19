@@ -3,7 +3,7 @@ title: Eurooppalaiset verodirektiivit
 description: Voit määrittää, sisältävätkö myyntilaskut ja projektilaskut arvonlisäverokoodin selityksen. Voit tulostaa viitenumerot myyntilaskuihin, vapaatekstilaskuihin ja projektilaskuihin.
 author: epodkolz
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2d054a1bdcfb3d189b343b51de77b407335a7792
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
+ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183622"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3422990"
 ---
 # <a name="tax-directives-for-europe"></a>Eurooppalaiset verodirektiivit
 
@@ -31,3 +31,5 @@ Kaikkien jäsenmaiden on noudatettava EU-direktiivin säädöksiä, jotka koskev
 - Voit tulostaa arvolisäkoodien kuvauksen myyntilaskuun, vapaatekstilaskuun tai projektilaskuraportti määrittämällä arvonlisäverokoodin verodirektiivin viittaustekstin.
 - Alkuperäisen laskun numero ja päivämäärä on tulostettava hyvityslaskuihin oikaisun syyn lisäksi.
 
+> [!NOTE]
+> Tarkista **Lomakeasetukset**-sivulla (**Myyntireskontra** > **Asetus** > **Lomakkeet** > **Lomakkeen asetukset**, **Yleinen-välilehti**), että **Arvonlisäveroerittely**-kentän arvoksi määritetään **Kirjausvaluutta** tai **Kirjaus- ja perusvaluutta**.

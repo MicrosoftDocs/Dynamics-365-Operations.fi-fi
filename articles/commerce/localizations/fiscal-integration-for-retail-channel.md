@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057553"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403212"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -139,6 +139,7 @@ Seuraavat kirjanpidon integrointimallit ovat käytettävissä Retail SDK:ssa:
 - [Itävallan tilikausirekisteröintipalvelun integroinnin malli](emea-aut-fi-sample.md)
 - [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](emea-cze-fi-sample.md)
 - [Tarkistusyksikön integrointimalli – Ruotsi](./emea-swe-fi-sample.md)
+- [Saksan tilikausirekisteröintipalvelun integroinnin malli](./emea-deu-fi-sample.md)
 
 Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Retail SDK:ssa, mutta se ei tällä hetkellä käytä kirjanpidon integrointikehikkoa. Tämä toiminto on tarkoitus siirtää kirjanpidon integrointikehikkoon myöhemmissä päivityksissä.
 

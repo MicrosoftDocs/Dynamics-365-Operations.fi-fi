@@ -3,7 +3,7 @@ title: Videotoistinmoduuli
 description: Tässä ohjeaiheessa on tietoja videotoistinmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025642"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411156"
 ---
 # <a name="video-player-module"></a>Videotoistinmoduuli
 
@@ -47,9 +47,13 @@ Videosoitinmoduuli tukee myös toissijaisia ääniraitoja. Kun video ladataan CM
 - Markkinointisivuilla olevat käytäntöjä koskevat kampanjavideot tai videot
 - Markkinointivideot, joissa kerrotaan tuotteen ominaisuuksista tuotetietosivuilla tai markkinointisivuilla
 
+Seuraavassa kuvassa on esimerkki videotoistinmoduulista kotisivulla.
+
+![Esimerkki videotoistinmoduulista](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Videotoistinmoduulin ominaisuudet
 
-| Ominaisuuden nimi         | Arvo                               | Kuvaus |
+| Ominaisuuden nimi         | Arvo                               | kuvaus |
 |-----------------------|-------------------------------------|-------------|
 | Automaattinen toisto             | **Tosi** vai **Epätosi**               | Kun arvoksi on määritetty **Tosi**, videota toistetaan automaattisesti. |
 | Vaimenna                  | **Tosi** vai **Epätosi**               | Kun arvoksi on määritetty **Tosi**, ääni on vaimennettu. Tämän toistimen oletusarvo on **Epätosi**. Chrome-selaimessa automaattisen toiston videot vaimennetaan oletusarvoisesti. Ääni toistetaan vain, jos käyttäjä toistaa videon manuaalisesti. |
@@ -68,22 +72,34 @@ Videosoitinmoduuli tukee myös toissijaisia ääniraitoja. Kun video ladataan CM
 
 Voit lisätä videotoistinmoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Videotoistinmalli**.
-1. Lisää säilömoduuli oletussivun **pääpaikkaan**.
-1. Lisää säilömoduulissa videotoistinmoduuli ja ympäristön videotoistinmoduuli.
-1. Kun mallin muokkaus on valmis, julkaise se.
-1. Käytä luotua videotoistinmallia, kun haluat luoda sivun nimeltä **Videotoistimen sivu**.
-1. Lisää videotoistinmoduuli uuden sivun **pääpaikkaan**.
+1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Videotoistimen malli** ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
+1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Videotoistin**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**. 
+1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunassa luomasi videotoistimen malli. Kirjoita **Sivun nimi** -kohtaan **Videotoistinsivu** ja valitse sitten **OK**.
+1. Valitse uudella sivulla **Pää**-paikka. Valitse kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Videotoistin**-moduuli ja valitse sitten **OK**.
 1. Valitse videotoistinmoduulin ominaisuusruudussa **Lisää video**.
 1. Valitse **Mediavalitsin**-valintaikkunassa video ja valitse sitten **Lataa uusi medianimike**.
-1. Tallenna ja esikatsele sivu. Videomoduulin pitäisi näkyä sivulla. Voit muokata moduulin toimintaa muuttamalla lisäasetuksia.
-1. Kun sivun muokkaus on valmis, julkaise se.
+1. Valitse Resurssienhallinnassa videotiedosto ja valitse sitten **Avaa**.
+1. Kirjoita **Lataa mediakohde** -valintaikkunaan otsikko ja muut tarvittavat tiedot ja valitse sitten **OK**.
+1. Valitse **Mediavalitsin**-valintaikkunassa **Sulje**.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Videomoduulin pitäisi näkyä sivulla. Voit muokata moduulin toimintaa muuttamalla lisäasetuksia.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
 
-[Kampanjabannerimoduuli](add-alert.md)
+[Promopalkkimoduuli](add-alert.md)
 
 [Karusellimoduuli](add-carousel.md)
 

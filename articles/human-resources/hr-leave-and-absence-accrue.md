@@ -3,12 +3,12 @@ title: Jaksota loma- ja poissaolosuunnitelmat
 description: Voit jaksottaa lomaa ja poissaoloa Dynamics 365 Human Resourcesissa useille työntekijöille tai yksittäisille henkilöille.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197310"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429056"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Jaksota loma- ja poissaolosuunnitelmat
 
@@ -103,7 +103,19 @@ Poista tietyn suunnitelman ja päivämäärävälin jaksotustiedot. Jaksotuspäi
 
 2. Valitse **Hallitse lomia** -kohdassa **Poista lomakertymien valvonta**.
 
+## <a name="configure-preview-features"></a>Esikatseluominaisuuksien määrittäminen
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+Jos olet ottanut käyttöön loman ja poissaolon esikatseluominaisuudet, sinun on määritettävä myös niiden asetukset.
+
+### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Loman jaksottaminen yrityksen tai lomasuunnitelman mukaan
+
+Kun loma- ja poissaolosuunnitelmat kertyvät, voit määrittää, että kaikki yritykset jaksotetaan. Jos valitset kaikki yritykset, et voi valita yksittäistä lomasuunnitelmaa. Jos valitset, että kaikkia yrityksiä ei kerrytetä, voit jaksottaa tietyn lomasuunnitelman. 
+
+Nämä vaihtoehdot ovat käytettävissä, kun ne kertyvät kaikille työntekijöille tai yksittäisille työntekijöille. 
+
 ## <a name="see-also"></a>Lisätietoja
 
-- [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
-- [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
+[Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)</br>
+[Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
