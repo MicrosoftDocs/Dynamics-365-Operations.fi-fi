@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
 ms.technology: ''
-ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
+ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1b2494ac717bc8c0171be49cc39e6aefff4425ab
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008935"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430552"
 ---
 # <a name="compensation-plans"></a>Kompensaatiosuunnitelmat
 
@@ -37,7 +37,7 @@ Työntekijä voidaan liittää yhteen tai useaan suunnitelmaan, ja työntekijäl
 -   Työntekijällä on oltava aktiivinen toimen määritys.
 -   Työntekijä on täytettävä kompensaatiosuunnitelman kelpoisuussääntöjen ehdot.
 
-## <a name="compensation-setup"></a> Kompensaation määrittäminen
+## <a name="compensation-setup"></a>Kompensaation määrittäminen
 Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka voivat olla olennaisia yrityksen kompensaatiosuunnitelmien määrittämisessä.
 
 <table>
@@ -53,7 +53,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 <td>Kiinteän kompensaation toiminnot, joilla on kaksi tarkoitusta:
 <ul>
 <li>Toiminnoilla voidaan määrittää minkälaiset tiedot on kirjattava, kun työntekijän kompensaatio muuttuu. Voit esimerkiksi edellyttää, että muutoksen syy, kuten ylennys tai alennus, kirjataan.</li>
-<li>Toiminnot voivat varmistaa, että laskentaa käytetään, kun kiinteitä kompensaatiosuunnitelmia käsitellään.  Esimerkiksi Oma pääoma -tyypin toiminnot vertaavat työntekijöiden palkkaa työntekijän tason vähimmäisviitepisteeseen, mikä varmistaa, että työntekijälle maksetaan ainakin minimipalkka.</li>
+<li>Toiminnot voivat varmistaa, että laskentaa käytetään, kun kiinteitä kompensaatiosuunnitelmia käsitellään.  Esimerkiksi Oma pääoma -tyypin toiminnot vertaavat työntekijöiden palkkaa työntekijän&#39;tason vähimmäisviitepisteeseen, mikä varmistaa, että työntekijälle maksetaan ainakin minimipalkka.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -62,7 +62,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 </tr>
 <tr class="odd">
 <td>Palkka-alueen käyttöastematriisi</td>
-<td>Palkka-alueen käyttöastematriisi auttaa siirtämään työntekijät työtä vastaavaan tarkistuspisteeseen. Voit myös ohjata palkka-alueen käyttöasteen avulla yrityksen palkkiopääomia huomioimatta yksittäisen työntekijän suoritustasoa tai yrityksen yleistä suoritustasoa. Esimerkiksi työntekijöille, joille maksetaan palkka-alueella pienempää palkkaa, annetaan suuremmat prosenttikorotukset kuin palkka-alueella suurempaa palkkaa saaville työntekijöille. Tällä tavoin voit järjestelmällisesti siirtää pääoman eroja. Palkka-alueen käyttöaste lasketaan seuraavasti: (kiinteä palkkio – alueen vähimmäisarvominimi) ÷ (alueen enimmäisarvo – alueen vähimmäisarvo).</td>
+<td>Palkka-alueen käyttöastematriisi auttaa siirtämään työntekijät työtä vastaavaan tarkistuspisteeseen. Voit myös ohjata palkka-alueen käyttöasteen avulla yrityksen palkkiopääomia huomioimatta yksittäisen työntekijän&#39;suoritustasoa tai yrityksen yleistä suoritustasoa. Esimerkiksi työntekijöille, joille maksetaan palkka-alueella pienempää palkkaa, annetaan suuremmat prosenttikorotukset kuin palkka-alueella suurempaa palkkaa saaville työntekijöille. Tällä tavoin voit järjestelmällisesti siirtää pääoman eroja. Palkka-alueen käyttöaste lasketaan seuraavasti: (kiinteä palkkio – alueen vähimmäisarvominimi) ÷ (alueen enimmäisarvo – alueen vähimmäisarvo).</td>
 </tr>
 <tr class="even">
 <td>Viitepisteiden määritykset</td>
@@ -127,7 +127,7 @@ Prosessitapahtuma laskee tietyn kauden kompensaatiotiedot kaikille työntekijöi
 
 Aina kun prosessitapahtuma suoritetaan, kompensaatiotapahtuma luodaan.  Kompensaatiotapahtumat sisältävät kunkin työntekijän kyseiseen prosessitapahtumaan sisältyvän kompensaatioprosessin tulokset.  Kun laskelmat ovat oikein, voit ladata kompensaatiotapahtuman päivittääksesi kompensaatiotietueet työntekijöille, joihin prosessitapahtuma vaikuttaa.
 
-## <a name="recommendations"></a> Suositukset
+## <a name="recommendations"></a>Suositukset
 Voit suositella prosessitapahtuman suorittamisen jälkeen muutoksia työntekijän palkankorotus- tai palkkiosummaan prosessitapahtuman laskemien ohjeiden perusteella. Työntekijäsuositusten tekeminen edellyttää, että suositukset on otettu käyttöön, kun kompensaatiosuunnitelmat tai prosessitapahtuma määritettiin.
 
 
