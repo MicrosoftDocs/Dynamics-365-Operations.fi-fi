@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 28. toukokuuta 2020
+          href: hr-whats-new-2020-05-28.md
         - name: 14. toukokuuta 2020
           href: hr-whats-new-2020-05-14.md
         - name: 1. toukokuuta 2020
@@ -505,20 +507,26 @@
               href: hr-leave-and-absence-plans.md
             - name: Työntekijöiden liittäminen lomasuunnitelmaan
               href: hr-leave-and-absence-enroll.md
-            - name: Loma- ja poissaolosuunnitelmien jaksottaminen
+            - name: Jaksota loma- ja poissaolosuunnitelmat
               href: hr-leave-and-absence-accrue.md
             - name: Loman keskeyttäminen
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Virkavapaapyyntö
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Työntekijän loman hallinta
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Loma- ja poissaoloanalyysien tarkasteleminen
               href: hr-leave-and-absence-analytics.md
             - name: Loma- ja poissaolopyyntöjen hallinta
               href: hr-employee-self-service-manage-requests.md
-            - name: Poissaolopyyntö
+            - name: Pyydä vapaata
               href: hr-employee-self-service-request-time-off.md
             - name: Ryhmä- ja yrityskalenterien tarkasteleminen
               href: hr-employee-self-service-calendar.md
+            - name: Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Vaihda lomaa rahaksi tai lomapalkka vapaaksi
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Lomapyyntöjen hallinta Teamsissa
           href: hr-teams-leave-app.md
         - name: Työntekijöiden kehittäminen
