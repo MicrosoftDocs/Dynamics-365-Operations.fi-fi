@@ -3,7 +3,7 @@ title: Dynamics 365 Commercen esiversioympäristön valmistelu
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit valmistella Microsoft Dynamics 365 Commercen esikatseluympäristön.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254745"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426462"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commercen esiversioympäristön valmistelu
 
@@ -39,7 +39,7 @@ Ennen kuin aloitat, suosittelemme, että tarkistat tämän aiheen nopeasti, jott
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Jotta voit laatia Commerce Preview -ympäristön onnistuneesti, sinun on luotava projekti, jolla on tietty tuotteen nimi ja tyyppi. Ympäristöllä ja commerce scale unit (CSU) -ratkaisulla on myös joitakin tiettyjä parametreja, joita on käytettävä, kun myöhemmin valmistelet sähköistä kaupankäyntiä. Tämän ohjeaiheen ohjeissa kuvataan kaikki tarvittavat vaiheet käyttöönoton suorittamiseksi ja parametrit, joita sinun on käytettävä.
+Jotta voit laatia Commerce Preview -ympäristön onnistuneesti, sinun on luotava projekti, jolla on tietty tuotteen nimi ja tyyppi. Ympäristöllä ja Commerce Scale Unit (CSU) -ratkaisulla on myös joitakin tiettyjä parametreja, joita on käytettävä, kun myöhemmin valmistelet sähköistä kaupankäyntiä. Tämän ohjeaiheen ohjeissa kuvataan kaikki tarvittavat vaiheet käyttöönoton suorittamiseksi ja parametrit, joita sinun on käytettävä.
 
 Kun olet onnistuneesti valmistellut Commercen esikatseluympäristön, sinun on suoritettava muutama valmistelun jälkeinen vaihe sen valmistelemiseksi. Jotkin vaiheet ovat valinnaisia. Tämä riippuu siitä, mitä järjestelmän alueita haluat arvioida. Voit aina suorittaa valinnaiset vaiheet myöhemmin.
 
@@ -193,7 +193,7 @@ Määritä ympäristö näiden ohjeiden avulla.
 
 1. Varmista ennen jatkamista, että ympäristösi tila on **Otettu käyttöön**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Alusta Commerce Scale unit (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Alusta Commerce Scale Unit (pilvi)
 
 Alusta CSU-osoite seuraavien ohjeiden avulla.
 
@@ -215,7 +215,7 @@ Alusta sähköinen kaupankäynti seuraavien ohjeiden avulla.
 
 1. Tarkista esikatselun suostumus **sähköisen kaupankäynnin**-välilehdestä ja valitse sitten **Asetukset**.
 1. Kirjoita **Sähköisen kaupankäynnin vuokraajan nimi** -kenttään nimi. Ota huomioon, että tämä nimi näkyy joissakin sähköisen kaupankäynnin esiintymään vievissä URL-osoitteissa.
-1. Valitse **Commerce Scale -yksikön nimi** -kentässä CSU-luettelosta. (Luettelossa pitäisi olla vain yksi vaihtoehto.)
+1. Valitse **Commerce Scale Unitin nimi** -kentässä CSU-luettelosta. (Luettelossa pitäisi olla vain yksi vaihtoehto.)
 
     **Sähköisen kaupankäynnin paikkatieto** -kenttä määritetään automaattisesti, eikä arvoa voi muuttaa.
 
@@ -251,7 +251,7 @@ Jatkaaksesi käyttöönotto- ja määritysprosessia Commercen esikatseluympäris
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (pilvi)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 

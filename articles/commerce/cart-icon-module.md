@@ -3,7 +3,7 @@ title: Ostoskorikuvakemoduuli
 description: Tässä ohjeaiheessa käsitellään ostoskorimoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8cc96e0476a9d8a46aed7011359dc65fbc678fbf
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261564"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411086"
 ---
 # <a name="cart-icon-module"></a>Ostoskorikuvakemoduuli
 
@@ -33,6 +33,10 @@ Tässä ohjeaiheessa käsitellään ostoskorimoduulia ja sen lisäämistä sivus
 ## <a name="overview"></a>Yleiskuvaus
 
 Ostoskorikuvakemoduuli edustaa koria sivun otsikkomoduulissa ja ilmaisee, kuinka monta nimikettä ostoskorissa on. Ostoskorikuvakemoduuli näyttää myös ostoskorin yhteenvedon (tunnetaan myös nimellä miniostoskori), kun hiiri viedään ostoskorikuvakkeen yli. Pienoiskori antaa käyttäjälle yhteenvedon ostoskorin nimikkeistä ilman, että sinun tarvitsee siirtyä ostoskorisivulle. Lisäksi se mahdollistaa myös käyttäjän siirtymisen suoraan kassasivulle, jos hän on tyytyväinen yhteenvetoon. Tämä vähentää sivusiirtymien määrää ja nopeuttaa uloskuittausta. 
+
+Seuraavassa kuvassa näkyy esimerkki ostoskorin kuvakemoduulista, jossa näkyy pienoiskärry Fabrikam-otsikossa.
+
+![Esimerkki ostoskärrykuvakemoduulista](./media/ecommerce-Minicart.PNG)
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 

@@ -1,42 +1,150 @@
 ---
-title: Valmiiksi ilmoittaminen rekisterikilpiohjattuun sijaintiin työkorttilaitteelta
-description: Tässä ohjeaiheessa käsitellään valmiiden tuotteiden viimeistelyprosessia, kun rekisterikilpi ohjaa sijaintia.
+title: Ilmoita valmiiksi työkorttilaitteesta
+description: Tässä aiheessa kuvataan, miten järjestelmä konfiguroidaan niin, että työkorttilaitteen käyttäjät voivat raportoida valmiit tuotteet tuotantotilauksesta varastoon.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
+ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
-ms.custom: 19351
-ms.assetid: bcc9e242-b4b8-4144-b14d-c3c106fb40ec
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2019-09-06
-ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: 74e1e30f5afe51cd0ecec2530ffcb9a59eec5fee
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.search.validFrom: 2020-05-18
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f5d34893ddc8adc3785ec50dbd72438cf8f68c5d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367242"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403259"
 ---
-# <a name="report-as-finished-to-a-license-plate-controlled-location-from-the-job-card-device"></a>Valmiiksi ilmoittaminen rekisterikilpiohjattuun sijaintiin työkorttilaitteelta
+# <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
 [!include [banner](../includes/banner.md)]
 
-Valmiiksi ilmoittamiseksi kutsuttu prosessi viimeistelee tuotantotilauksen valmiit tuotteet varastoon. Jos valmis tuote on otettu käyttöön edistyksellisiä varastoprosesseja varten, se ilmoitetaan valmiiksi tuotannon tuotossijainniksi kutsuttuun sijaintiin. Lisätietoja tuotannon tuotossijainnin määrittämisestä on kohdassa [Tuotannon tuotossijainti](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location)
+Työntekijät käyttävät työkorttilaitteen **Raportin edistyminen** -sivua tuotantotyötä varten valmistuneiden määrien raportoinnissa.
 
-Jos tuotannon tuotossijainti on rekisterikilpiohjattu, niin rekisterikilpi on annettava, kun raportoidaan valmiiksi. **Rekisterikilpi**-kenttä näytetään **Raportointi on meneillään** -kehotteessa **Työkorttilaite**-sivulla. Kenttä näkyy vain **Raportin edistyminen** -kehotteessa, kun tuotantotilauksen viimeinen työvaihe raportoidaan ja tuotantotilauksen nimike on otettu käyttöön varastonhallintaprosesseille.
+## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Määrittää, lisätäänkö valmiiksi ilmoitetut määrät varastoon
 
-Rekisterikilven voi antaa kahdella tavalla:
+Seuraavien vaiheiden avulla voit määrittää, lisätäänkö viimeisen työvaiheen valmiiksi ilmoitetut määrät varastoon.
 
-- Käyttäjä valitsee aiemmin luodun rekisterikilven rekisterikilpikentässä.
-- Rekisterikilpi luodaan automaattisesti numerosarjasta, ja se on oletusarvoisesti rekisterikilpikentässä.
+1. Valitse **Tuotannonhallinta \> Asetukset \> Tuotannonohjaus \> Tuotantotilauksen oletusarvot**.
+1. Määritä **Ilmoita valmiiksi** -välilehdessä **Päivitä valmis raportti verkossa** -kenttään jokin seuraavista arvoista:
 
-Vaihtoehto, jonka mukaan rekisterikilpi luodaan automaattisesti, määritetään valitsemalla vaihtoehto **Luo rekisterikilpi** **Määritä työkortti laitteille** -sivulla.
+    - **Ei** – Varastoon ei lisätä määrää, kun viimeisestä työvaiheesta raportoidaan määriä. Tuotantotilauksen tila ei muutu koskaan.
+    - **Tila + määrä** – Tuotantotilauksen tilaksi tulee *Ilmoitettu valmiiksi*, ja määrä ilmoitetaan valmiiksi varastoon.
+    - **Määrä** – Määrän tilaksi tulee Ilmoitettu valmiiksi, mutta tuotantotilauksen tila ei muutu koskaan.
+    - **Tila** – Vain tuotantotilauksen tila muuttuu. Varastoon ei lisätä määrää, kun viimeisestä työvaiheesta raportoidaan määriä.
+
+> [!NOTE]
+> Määriä ei seurata varastossa, jos ne työvaiheet, jotka ne on ilmoitettu valmiiksi, eivät ole määritelleet viimeistä työvaihetta. Näitä määriä voidaan kuitenkin käyttää edistymisen tarkastelemiseen. Ne voidaan myös sisällyttää sääntöihin, joissa määritetään, voivatko työntekijät aloittaa seuraavan työvaiheen, ennen kuin edellisessä työvaiheessa määritetty ilmoitettu määräraja saavutetaan. Voit määrittää nämä säännöt **Tuotantotilauksen oletukset** -sivun **Määrän oikeellisuustarkistus** -välilehdessä.
+
+Lisätietoja **Tuotantotilauksen oletukset** -sivun käyttämisestä on kohdassa [Tuotantoparametrit tuotannon suorituksessa](production-parameters-manufacturing-execution.md).
+
+## <a name="report-batch-controlled-items-as-finished"></a>Eräohjattujen nimikkeiden ilmoittaminen valmiiksi
+
+Työkorttilaite tukee kolmea eränimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, jotka on otettu käyttöön lisävarastoprosesseja varten, että nimikkeitä, jotka eivät ole käytössä lisävarastoprosesseissa.
+
+- **Manuaalisesti määritellyt eränumerot:** Työntekijät voivat määrittää mukautetun eränumeron. Tämä eränumero voi olla peräisin ulkoisesta lähteestä, jota järjestelmä ei tunne.
+- **Ennalta määritetyt eränumerot:** Työntekijät valitsevat eränumeron niiden eränumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
+- **Kiinteät eränumerot:** Työntekijät eivät voi syöttää tai valita eränumeroa. Sen sijaan järjestelmä liittää tuotantotilaukseen automaattisesti eränumeron ennen kuin se on vapautettu.
+
+Kukin skenaario otetaan käyttöön seuraavasti.
+
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Valitse määritettävä tuote.
+1. Valitse **Hallitse varastoa** -pikavälilehden **Eränumeroryhmä**-kentässä skenaarion tueksi määritetty seurantanumeroryhmä.
+
+> [!NOTE]
+> Jos eräohjattavia tuotteita varten ei ole määritetty eränumeroryhmää, työkorttilaite antaa eränumerolle manuaalisen merkinnän valmiiksi ilmoittamisen aikana.
+
+Seuraavissa jaksoissa kuvataan, miten seurantanumeroryhmiä määritetään tukemaan kolmea eränimikkeiden raportointiskenaariota.
+
+### <a name="enable-batch-number-reporting-on-the-job-card-device"></a>Ota eränumeroiden raportointi käyttöön työkorttilaitteessa
+
+Jos haluat, että työkorttilaitteet hyväksyvät eränumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat ominaisuudet käyttöön (tässä järjestyksessä) [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
+
+1. Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa
+1. Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta (esiversio)
+
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Määritä seurantanumeroryhmä, jonka avulla työntekijät määrittävät eränumeron manuaalisesti
+
+Voit sallia manuaalisesti määritetyt eränumerot asettamalla seuraavien vaiheiden ryhmän seuraavien ohjeiden mukaisesti.
+
+1. Siirry kohtaan **Varaston hallinta \> Asetukset \> Dimensiot \> Seurantanumeroryhmät**.
+1. Luo tai valitse määritettävä seurantanumeroryhmä.
+1. Määritä **Yleinen**-pikavälilehden **Manuaalinen**-asetukseksi **Kyllä**.
+
+    ![Seurantanumeroryhmät -sivu](media/tracking-number-group-manual.png "Seurantanumeroryhmät -sivu")
+
+1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden eränumeroksi, jota varten haluat käyttää tätä skenaariota.
+
+Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Eränumero**-kenttä on tekstiruutu, jossa työntekijät voivat syöttää minkä tahansa arvon.
+
+![Raportin edistymissivu, jossa on kenttä manuaalisia eränumeroita varten](media/job-card-device-batch-manual.png "Raportin edistymissivu, jossa on kenttä manuaalisia eränumeroita varten")
+
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>Määritä seurantanumeroryhmä, joka sisältää luettelon esimääritetyistä eränumeroista
+
+Voit tarjota luettelon esimääritetyistä eränumeroista asettamalla seuraavien vaiheiden ryhmän seuraavien ohjeiden mukaisesti.
+
+1. Siirry kohtaan **Varaston hallinta \> Asetukset > Dimensiot \> Seurantanumeroryhmät**.
+1. Luo tai valitse määritettävä seurantanumeroryhmä.
+1. Määritä **Yleinen**-pikavälilehden **Vain varastotransaktioille** -asetukseksi **Kyllä**.
+1. Käytä **per määrä** -kenttää, kun haluat jakaa eränumerot määrää kohden määrittämäsi arvon perusteella. Esimerkiksi tuotantotilaus on kymmenen kappaletta ja **per määrä** -kentän arvoksi on määritetty *2*. Tässä tapauksessa tuotantotilaukseen liitetään viisi eränumeroa, kun se luodaan.
+
+    ![Seurantanumeroryhmät -sivu](media/tracking-number-group-predefined.png "Seurantanumeroryhmät -sivu")
+
+1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden eränumeroksi, jota varten haluat käyttää tätä skenaariota.
+
+Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Eränumero**-kenttä on pudotusvalikko, josta työntekijöiden tulee valita esimääritetty arvo.
+
+![Raportin edistymissivu, jossa on luettelo esimääritettyjä eränumeroita varten](media/job-card-device-batch-predefined.png "Raportin edistymissivu, jossa on luettelo esimääritettyjä eränumeroita varten")
+
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-batch-numbers"></a>Määritä seurantanumeroryhmä, joka automaattisesti määrittää eränumerot
+
+Jos eränumerot määritetään automaattisesti ilman työntekijän syöttöä, määritä seurantanumeroryhmä noudattamalla näitä ohjeita.
+
+1. Siirry kohtaan **Varaston hallinta \> Asetukset \> Dimensiot \> Seurantanumeroryhmät**.
+1. Luo tai valitse määritettävä seurantanumeroryhmä.
+1. Määritä **Yleinen**-pikavälilehden **Vain varastotransaktioille** -asetukseksi **Ei**.
+1. Määritä kohdan **Manuaalinen** asetukseksi **Ei**.
+
+    ![Seurantanumeroryhmät -sivu](media/tracking-number-group-fixed.png "Seurantanumeroryhmät -sivu")
+
+1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden eränumeroksi, jota varten haluat käyttää tätä skenaariota.
+
+Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Eränumero**-kenttä näyttää arvon, mutta työntekijät eivät voi muokata sitä.
+
+![Raportin edistymissivu, jossa on kiinteä eränumero](media/job-card-device-batch-fixed.png "Raportin edistymissivu, jossa on kiinteä eränumero")
+
+## <a name="report-as-finished-to-a-license-plate"></a>Ilmoita valmistuneeksi rekisterikilpeen
+
+Lisävarastoprosessit voivat käyttää käyttöoikeuskilpi-dimensiota tähän tarkoitukseen määritettyjen varastosijaintien varastonseurantaan. Tässä tapauksessa rekisterinumero on pakollinen, kun työntekijä ilmoittaa määrät valmiiksi.
+
+### <a name="enable-license-plate-reporting-and-label-printing"></a>Rekisterikilven raportoinnin ja etiketin tulostuksen ottaminen käyttöön
+
+Tässä osassa kuvattujen toimintojen käyttäminen edellyttää, että otat seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla (tässä järjestyksessä):
+
+1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi
+1. Tulosta etiketti työkorttilaitteesta
+
+### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>Aseta raportointi valmistuneeksi rekisterikilpeen
+
+Noudattamalla seuraavia ohjeita voit määrittää, pitääkö työntekijöiden käyttää uudelleen aiemmin luotua rekisterikilpeä vai luoda uusi rekisterikilpi, kun he raportoivat määrät valmiiksi.
+
+1. Valitse **Tuotannonhallinta \> Asetukset \> Tuotannonohjaus \> Konfiguroi työkortti laitteita varten**.
+2. Aseta seuraavat asetukset kullekin laitteelle:
+
+    - **Luo rekisterikilpi** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat luoda uuden rekisterikilven kullekin valmistuneelle raportille. Aseta arvoksi **Ei**, jos aiemmin luotua rekisterikilpeä käytetään jokaisen valmiiksi määritetyn raportin yhteydessä.
+    - **Tulosta etiketti** – Määritä tämän asetuksen arvoksi **Kyllä**, jos työntekijän tulee tulostaa käyttöoikeuskilven otsikon kullekin valmiille raportille. Määritä arvoksi **Ei**, jos etikettiä ei tarvita. 
+
+![Konfiguroi työkortti laitteita varten -sivu](media/config-job-card-raf.png "Konfiguroi työkortti laitteita varten -sivu")
+
+> [!NOTE]
+> Määrittääksesi etiketin, siirry kohtaan **Varastonhallinta \> Asetukset \> Asiakirjan reititys \> Asiakirjan reititysasettelut**. Lisätietoja on kohdassa [Rekisterikilven tarratulostuksen ottaminen käyttöön](../warehousing/tasks/license-plate-label-printing.md).

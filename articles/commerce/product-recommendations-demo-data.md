@@ -3,7 +3,7 @@ title: Suositusten luominen esittelytietojen avulla
 description: Tämä aihe antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
 author: bebeale
 manager: AnnBe
-ms.date: 03/30/20
+ms.date: 05/26/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
-ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
+ms.openlocfilehash: 68275f3e36bce0f641b0273cf3b3b8c8ce9db137
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175546"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404322"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Suositusten luominen esittelytietojen avulla
 
@@ -71,11 +71,11 @@ Laajennus sisältää datatiedoston nimeltään RecoMockDataset.csv. Sen avulla 
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+[Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
-[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+[Tuotesuositusten ottaminen käyttöön](enable-product-recommendations.md)
 
-[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+[Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 

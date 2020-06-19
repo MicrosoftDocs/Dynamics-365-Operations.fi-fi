@@ -3,7 +3,7 @@ title: Tallennetut näkymät
 description: Tässä aiheessa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6b7f1c64c273f52dc1d414185ba54efdfb8e5c0
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260480"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412328"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -137,7 +137,7 @@ Jos muutokset, jotka haluat tehdä julkaistavaan näkymään, sisältävät vain
 7. [10.0.9/Platform-päivitys 33 tai uudempi] Jos olet alun perin valinnut tämän julkaistun näkymän oletusnäkymäksi, se on näiden käyttäjien oletusnäkymä uudelleen julkaisemisen jälkeen.  
 
 Jos julkaistuun näkymään tehdyt muutokset edellyttävät näkymään liittyvien räätälöintien tai suodattimien muokkaamista, toimi seuraavasti: 
-1.  Siirry julkaistuun näkymään, jota haluat muokata. 
+1.  Lataa julkaistu näkymä, jota haluat muokata. 
 2.  Voit luoda julkaistun näkymän paikallisen luonnoksen tallentamalla julkaistun näkymän kopion. 
 3.  Muokkaa paikallista luonnosta tarvittavin muutoksin.
 4.  Julkaise näkymä alkuperäisellä nimellä. 
@@ -149,12 +149,25 @@ Kun kaikki käyttäjät näkevät **Omat näkymät** -välilehden, jossa näkyv�
 
 Luetteloon sivun kaikista julkaistuista näkymistä on käytettävissä seuraavat toiminnot. 
 
--    **Julkaise**: **Julkaise**-toiminnon avulla voit julkaista näkymän uudelleen, kun julkaisuparametrit (nimi, kuvaus, käyttöoikeusroolit tai yritykset) ovat muuttuneet.
--    **Poista**: Käytä **Poista**-toimintoa julkaistun näkymän poistamiseen pysyvästi. Tämä toiminto poistaa näkymän kaikilta järjestelmän käyttäjiltä. Julkaistujen näkymien poistaminen tulee voimaan, kun **Tallenna**-painike on valittuna.
+-    **Julkaise** – **Julkaise**-toiminnon avulla voit julkaista näkymän uudelleen, kun julkaisuparametrit (nimi, kuvaus, käyttöoikeusroolit tai yritykset) ovat muuttuneet.
+-    **Tallenna henkilökohtaisena** – Voit luoda henkilökohtaisen luonnoskopion julkaistusta näkymästä **Tallenna henkilökohtaisena** -toiminnolla. Tämän ominaisuuden avulla voit ymmärtää sellaisen näkymän sisällön, jota ei ole julkaistu sinulle tai jota ei ole vielä julkaistu. Sen avulla voit myös muokata näkymää ja julkaista sen uudelleen. Tämä ominaisuus otetaan käyttöön versiossa 10.0.12.  
+-    **Poista** – Käytä **Poista**-toimintoa julkaistun näkymän poistamiseen pysyvästi. Tämä toiminto poistaa näkymän kaikilta järjestelmän käyttäjiltä. Julkaistujen näkymien poistaminen tulee voimaan, kun **Tallenna**-painike on valittuna.
+
+## <a name="managing-views-globally"></a>Näkymien hallinta globaalisti
+Vaikka jotkin hallintaominaisuudet näkyvät kaikilla sivuilla, kuten tässä ohjeaiheessa on mainittu, **Järjestelmän järjestelmänvalvojat** ja **Tallennetut näkymän järjestelmänvalvojat** voivat hallita näkymiä automaattisesti **Mukautus**-sivun kautta. Erityisesti tällä sivulla on seuraavat osiot ja ominaisuudet: 
+
+- **Julkaistut näkymät** – Tässä osassa luetellaan kaikki organisaatiollesi julkaistut näkymät. Tässä voit julkaista näkymän uudelleen sen jälkeen, kun olet oikaissut näkymän kohteena olevat käyttöoikeusroolit tai yritykset. Voit myös viedä tai poistaa yhden tai useita julkaistuja näkymiä. Versiossa 10.0.12 ja uudemmissa voit luoda näkymästä henkilökohtaisen kopion **Tallenna henkilökohtaisena** -toiminnon avulla, jolloin voit päivittää näkymän tai saada paremman käsityksen sen sisällöstä. 
+- **Julkaisemattomat näkymät** – Tämä osio luetteloi näkymät, jotka on tuotu järjestelmääsi muttei vielä julkaistu. Voit julkaista, viedä ja poistaa näitä näkymiä. Versioon 10.0.12 lisätty **Pikajulkaisu**-toiminto mahdollistaa useiden tämän osan näkymien julkaisemisen yhdessä toiminnossa käyttämällä aiemmin luotua käyttöoikeusroolia ja yritysten konfiguraatioita. Versiossa 10.0.12 ja uudemmissa voit luoda näkymästä henkilökohtaisia kopioita **Tallenna henkilökohtaisena** -toiminnon avulla, jolloin saada paremman käsityksen niiden sisällöstä.   
+- **Henkilökohtaiset näkymät** – Tämä osio luetteloi näkymät, jotka ovat järjestelmän käyttäjien luomia. Nyt voit julkaista henkilökohtaisen näkymän organisaatiolle tai kopioida yhden tai useamman näistä näkymistä muille käyttäjille. Voit myös viedä ja poistaa näitä näkymiä tarpeen mukaan.
+- **Käyttäjät** – Valitse käyttäjä, kun haluat näyttää käyttäjän vierailemien sivujen luettelon. Voit sitten muokata käyttäjän käyttävän mukautuksia tietyillä sivuilla tai koko järjestelmässä. Voit myös tuoda, viedä tai tyhjentää käyttäjän mukautuksen. Lisäksi voit palauttaa käyttäjän kuvatekstitoiminnot. Sen jälkeen, jos käyttäjä on aiemmin hylännyt uusia ominaisuuksia esitteleviä ponnahdusikkunoita, ne tulevat näkyviin uudelleen, kun kyseinen käyttäjä kohtaa kyseiset ominaisuudet.
+- **Järjestelmä** – Voit poistaa kaikkien järjestelmän käyttäjien mukautukset käytöstä väliaikaisesti. Tällöin kaikkien käyttäjien mukautukset poistetaan ja kaikki sivut palautetaan oletustiloihinsa. Jos otat mukautukset myöhemmin jälleen käyttöön, kaikkia mukautuksia sovelletaan uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voi palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
+
+Käyttäjät, joilla on käytössään **Mukauttaminen**-sivu, voivat myös tuoda henkilökohtaisia tai mallinäkymiä toimintoruudun **Tuo näkymiä** -painikkeen avulla. Versiossa 10.0.12 ja uudemmissa versioissa on lisätty mekanismi, jonka avulla näkymiä voidaan julkaista heti tuonnin yhteydessä.  
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Miten voin ottaa tallennetut näkymät käyttöön omassa ympäristössäni? 
-Huomautus: **Tallennetut näkymät** -toiminto edellyttää, että mukautusjärjestelmä Finance and Operationsissa otetaan käyttöön. Jos mukauttaminen on poistettu käytöstä koko ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit alla mainittuja vaiheita. 
+> [!NOTE]
+> **Tallennetut näkymät** -toiminto edellyttää, että mukautusjärjestelmä Finance and Operationsissa otetaan käyttöön. Jos mukauttaminen on poistettu käytöstä koko ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit alla mainittuja vaiheita. 
 
 **10.0.9/Platform-päivitys 33 ja** uudemmat **Tallennetut näkymät** -toiminto on käytettävissä suoraan ominaisuuksienhallinnassa missä tahansa ympäristössä. Kuten muutkin julkiset esikatseluominaisuudet, tämän toiminnon ottaminen käyttöön tuotannossa edellyttää [Lisäkäyttöehdot-sopimusta](https://go.microsoft.com/fwlink/?linkid=2105274).  
 

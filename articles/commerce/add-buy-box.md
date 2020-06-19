@@ -3,7 +3,7 @@ title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269748"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411339"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
@@ -38,6 +38,10 @@ Termi *ostoruutu* viittaa yleensä tuotetietojen sivun alueeseen, joka on sivun 
 Ostoruutumoduuli on erityinen säilö, jota käytetään kaikkien tuotetietosivun ostoruutualueella näkyvien moduulien isännöinnissä.
 
 Tuotetietosivun URL-osoite sisältää tuotteen tunnuksen. Kaikki ostoruudun hahmontamisessa vaadittavat tiedot saadaan tästä tuotteen tunnuksesta. Jos tuotteen tunnusta ei ole annettu, ostoruutumoduulia ei hahmonneta sivulla oikein. Tämän vuoksi ostoruutumoduulia voidaan käyttää vain sivuilla, joilla on tuotekonteksti. Jos sitä halutaan käyttää sivulla, jolla ei ole tuotekontekstia (kuten aloitus- tai markkinointisivulla), sitä mukautettava lisää.
+
+Seuraavassa kuvassa näkyy esimerkki ostoruutumoduulista tuotetietosivulla.
+
+![Esimerkki ostoruutumoduulista](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Ostoruutumoduulin ominaisuudet ja paikat 
 
@@ -58,35 +62,47 @@ Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen oh
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduulit, joita voidaan käyttää ostoruutumoduulissa
 
 - **Mediavalikoima** – Tämän moduulin avulla esitellään tuotteen kuvat tuotetietosivulla. Moduuli voi tukea yhtä kuvaa tai useita kuvia. Se tukee myös pikkukuvia. Pikkukuvat voivat olla vaakasuuntaisesti (rivinä kuvan alla) tai pystysuuntaisesti (pystyrivinä kuvan vieressä). Mediavalikoimamoduuli voidaan lisätä **Media**-paikkaan ostoruutumoduulissa. Se tukee tällä hetkellä vain kuvia. 
-- **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Lisätietoja tästä moduulista on kohdassa [Kaupan valitsinmoduuli](store-selector.md).
+- **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Lisätietoja tästä moduulista on kohdassa [Myymälävalitsinmoduuli](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ostoruutumoduulin asetukset
 
-Ostoruutumoduulissa on kolme asetusta, jotka voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
+Seuraavat ostoruutumoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
 
-- **Maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
-- **Varaston tarkistus** – Kun arvoksi on asetettu **Tosi**, nimike lisätään ostoskoriin vasta, kun ostoruutumoduuli varmistaa, että nimikettä on varastossa. Tämä varaston tarkistus tehdään skenaarioissa, joissa nimike toimitetaan, että skenaarioissa, joissa se noudetaan myymälästä. Jos arvoksi on määritetty **Epätosi**, varaston tarkistus tehdään vasta, kun nimike on lisätty ostoskoriin ja tilaus on tehty. Lisätietoja varastoasetusten määrittämisestä taustaohjelmassa on kohdassa [Varaston käytettävyyden laskeminen vähittäismyyntikanaville](calculated-inventory-retail-channels.md).
+- **Ostoskorin rivien maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
+- **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
+- **Lisää ostoskoriin** - Tämän ominaisuuden avulla määritetään, mitä tapahtuu, kun nimike on lisätty ostoskoriin. Mahdolliset arvot ovat **Siirry ostoskoriin**, **Älä siirry ostoskoriin** ja **Näytä ilmoitukset**. Kun arvoksi on määritetty **Siirry ostoskoriin**, käyttäjät lähetetään ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Älä siirry ostoskoriin**, käyttäjiä ei lähetetä ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Näytä ilmoitukset**, käyttäjille näytetään vahvistusilmoitus ja he voivat jatkaa selaamista tuotteen tiedot -sivulla. 
 
-- **Varaston puskuri** – Tällä ominaisuudella määritetään varaston puskurimäärä. Varastoa ylläpidetään reaaliaikaisesti. Jos useat asiakkaat tekevät tilauksia, todellisen varastomäärän ylläpitäminen voi olla vaikeaa. Kun varaston tarkistus tehdään ja varasto on pienempi kuin puskurisumma, tuotetta käsitellään kuin se olisi loppunut varastosta. Kun myynti tapahtuu nopeasti useiden kanavien kautta eikä varastomäärä ole täysin synkronoitu, on pienempi riski siitä, että nimikettä ei ole varastossa myynnin hetkellä.
+    Seuraavassa kuvassa on esimerkki Siirretty ostoskoriin -vahvistusilmoituksesta Fabrikam-sivustolla.
+
+    ![Esimerkki ilmoitusmoduulista](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
-Ostoruutumoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen avulla. Tuotetietosivulla olevaa tuotteen tunnusta käytetään kaikkien tietojen noutamisessa.
+Ostoruutumoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen (API) avulla. Tuotetietosivulla olevaa tuotteen tunnusta käytetään kaikkien tietojen noutamisessa.
 
 ## <a name="add-a-buy-box-module-to-a-page"></a>Ostoruutumoduulin lisääminen sivulle
 
 Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo osa nimeltä **Ostoruutuosa** ja lisää siihen ostoruutumoduuli.
-1. Lisää ostoruutumoduuliin **Media**-paikkaan mediavalikoimamoduuli.
-1. Lisää myymälän valitsinmoduuli ostoruutumoduulin **Myymälän valitsin** -paikkaan.
+1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi uuden osan.
+1. Valitse **Uusi sivun osa** -valintaikkunassa **Ostoruutu**-moduuli.
+1. Kirjoita **Sivun osan nimi** -kohtaan **Ostoruudun osa** ja valitse sitten **OK**.
+1. Valitse ostoruutumoduulissa **Mediavalikoima**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Mediavalikoima**-moduuli ja valitse sitten **OK**.
+1. Valitse ostoruutumoduulissa **Myymälävalitsin**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
-1. Luo tuotetietosivulla malli ja anna sen nimeksi **PDP-malli**.
-1. Lisää oletussivu.
-1. Lisää ostoruutuosa oletussivun **pääpaikkaan**.
+1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **PDP-malli** ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
+1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää sivun osa**.
+1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoruutuosa**, jonka loit aiemmin ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
-1. Käytä juuri luotua mallia, kun haluat luoda sivun nimeltä **PDP-sivu**.
-1. Lisää ostoruutuosa uuden sivun **pääpaikkaan**.
+1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunassa **PDP-malli**-pohja. Kirjoita **Sivun nimi** -kohtaan **PDP-sivu** ja valitse sitten **OK**.
+1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää sivun osa**.
+1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoruutuosa**, jonka loit aiemmin ja valitse sitten **OK**.
 1. Tallenna ja esikatsele sivu. Lisää **?productid=&lt;tuotteen tunnus&gt;** -kyselymerkkijonoparametri esikatselusivun URL-osoitteeseen. Näin tuotekontekstia käytetään esikatselusivun lataamiseen ja käsittelemiseen.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**. Tuotetietosivulla näkyy ostoruutu.
 

@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6a64aeb9a98eae7b54de5870118d6c49e5370cc
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000276"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426416"
 ---
-# <a name="configure-accounts-receivables-and-credit-and-collections"></a>Myyntireskontran ja luotonvalvonnan määrittäminen
+# <a name="configure-accounts-receivable-and-credit-and-collections"></a>Myyntireskontran ja luotonvalvonnan määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,7 +81,7 @@ Seuraavassa taulukossa on luettelo sivuista, jotka tukevat myyntireskontran ja l
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
 | Myyntireskontran tilastotietojen määrittäminen           | Erääntymiskausien määritykset             | Voit määrittää ja hallita käyttäjän määrittämiä erääntymisjaksomäärityksiä, joiden avulla analysoidaan asiakas- ja toimittajatilien erääntymistä määritetyn päivämäärän perusteella. Lisätietoja on ohjeaiheessa [Myyntireskontran erääntymistietojen määrittäminen ja luominen](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Liiketoimintatilastot                  | Voit määrittää liiketoiminnan tilastotietokyselyitä, jotka voivat auttaa organisaation suorituskyvyn analysoinnissa.                                                                                                                                                                              |
-|                                                      | Liiketoiminnan tilastotiedot              | Voit tarkastella valittuja liiketoiminnan tilastotietoja ruudukkomuodossa.                                                                                                                                                                                                                     |
+|                                                      | Liiketoiminnan tilastotiedot             | Voit tarkastella valittuja liiketoiminnan tilastotietoja ruudukkomuodossa.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
 | Ylläpidä asiakastietoja                     | Osoitekirja                         | Voit määrittää tai näyttää tietoja prospekteista, liideistä, mahdollisuuksista, asiakkaista, yhteyshenkilöistä, kilpailijoista ja työntekijöistä.                                                                                                                                                          |
 |                                                      | Asiakkaan pankkitilit               | Voit luoda ja hallita asiakkaan pankkitilejä.                                                                                                                                                                                                                                         |

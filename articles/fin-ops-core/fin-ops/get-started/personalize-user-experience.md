@@ -3,7 +3,7 @@ title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260503"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412351"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -117,7 +117,11 @@ Kun **Mukautus**-työkalurivi on auki, taustalla oleva sivu on vain luku -muodos
 - Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. Ota huomioon, ettet voi siirtää elementtiä sen pääryhmän ulkopuolelle. Voit käyttää tätä työkalua valitsemalla työkalurivin **Siirrä**-painikkeen ja valitsemalla siirrettävän elementin. Kun valitset elementin, sovellus määrittää sijainnit, joihin elementti voidaan siirtää. Näitä sijainteja kutsutaan *pudotusalueiksi*. Kun vedät elementtiä valitussa ryhmässa, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
 - Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset työkalurivin **Ohita**-painikkeen, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit lisätä kenttiä sarkainjärjestykseen ja poistaa niitä vuorovaikutteisesti.
 - Voit lisätä kentän pikavälilehtien yhteenveto-osaan käyttämällä **Näytä otsikossa**-työkalua. Kun valitset työkalurivin **Näytä otsikossa**-painikkeen, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa niitä siitä valitsemalla kenttiä.
-- Määritä **Vaadi**-työkalulla elementti, joka tarvitaan tietojen syöttämiseen. Kun valitset työkalurivin **Vaadi**-painikkeen, kaikki tarvittavat yksilöidyt elementit näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin ei vaadittaviksi. Tämä vaihtoehto on käytettävissä tulevasta versiosta alkaen, kun [Tallennetut näkymät](saved-views.md) ja **Määritä kentät tarpeen mukaan mukautuksen avulla** -ominaisuudet on otettu käyttöön.
+- Määritä **Vaadi**-työkalulla elementti, joka tarvitaan tietojen syöttämiseen. Kun valitset työkalurivin **Vaadi**-painikkeen, kaikki tarvittavat elementit, jotka on räätälöity niiden tekemiseksi tarvittaviksi näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin ei vaadittaviksi. Tämä vaihtoehto on käytettävissä versiossa 10.0.12 ja myöhemmin, kun **Määritä kentät tarpeen mukaan mukautuksen avulla** -ominaisuus on otettu käyttöön.
+
+    > [!IMPORTANT]
+    > Versio 10.0.12 on esikatseluversio. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - **Lukitse**-työkalulla voit merkitä, onko elementti muokattavaissa vai ei. Kun valitset työkalurivin **Lukitse**-painikkeen, kaikki elementit, jotka eivät tällä hetkellä ole muokattavissa, näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin muokattaviksi. Huomaa, että jotkut kentät ovat pakollisia, eikä niiden muokkausta voi estää. Näiden kenttien vieressä on lukkokuvake.
 - Käytä **Lisää sovellus Power Appsista** -painikkeella upottaaksesi sivulle sovelluksen, joka on luotu Microsoft Power Appsilla. Lisätietoja Power Apps -sovelluksen upottamisesta sivulle on kohdassa [Power Apps -sovellusten upottaminen](embed-power-apps.md). Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä.  
 - Käytä **Lisää sovellus** -painiketta upottaaksesi sivulle sovelluksen, joka on joko Microsoft Power Appsin tai kolmannen osapuolen luoma. Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on otettu käyttöön. 
@@ -159,28 +163,21 @@ Voit mukauttaa koontinäyttöä napsauttamalla jotakin ruutua hiiren kakkospaini
 - Voit muuttaa työtilan ruutujen järjestystä valitsemalla ominaisuusikkunassa **Mukauta tämä sivu**, jolloin **mukauttamisen** työkalurivi avautuu. Voit sitten järjestää ruudut uudelleen haluamallasi tavalla **Siirrä**-työkalun avulla.
 - Voit llisätä uuden työtilaruudun valitsemalla ominaisuusikkunassa **Lisää työtilaan**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän ohjeaiheen kohdassa [Luetteloiden, ruutujen tai linkkien lisääminen työtilaan](#adding-a-tile-list-or-link-to-a-workspace) kuvatulla tavalla.
 
+
+## <a name="sharing-personalizations"></a>Mukauttamisen jakaminen
+Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Voit sitten pyytää käyttäjiä avaamaan mukautetun sivun ja tuomaan luodun mukautustiedoston. Vaihtoehtoisesti voit antaa mukautuksesi käyttäjälle, jolla on järjestelmänvalvojan oikeudet. Käyttäjä voi sitten ottaa mukautustiedoston käyttöön useille käyttäjille samalla kertaa käyttämällä **Mukautus**-hallintasivua.
+
 ## <a name="administration-of-personalizations"></a>Mukautusten hallinta
+**Mukautus**-sivu on keskitetty keskus, jolla hallitaan räätälöintejä organisaatiotasolla. Tämän sivun sisältö ja ominaisuudet määräytyvät sen mukaan, onko **Tallennetut näkymät** -toiminto otettu käyttöön.  
 
-Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Voit sitten pyytää käyttäjiä avaamaan mukautetun sivun ja tuomaan luodun mukautustiedoston. Vaihtoehtoisesti voit antaa mukautuksesi käyttäjälle, jolla on järjestelmänvalvojan oikeudet. Tämä käyttäjä voi sitten ottaa mukautustiedoston käyttöön useille käyttäjille samanaikaisesti.
+Jos asiakas on ottanut käyttöön **Tallennetut näkymät** -toiminnon, lue Tallennettujen näkymien aiheen näkymien hallinta yleisesti [Tallennetut näkymät](saved-views.md) -osasta.  
 
-Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita muiden käyttäjien mukautuksia **Mukautukset**-sivulla.
-
-Niillä asiakkaila, jotka eivät ole ottaneet käyttöön [Tallennetut näkymät](saved-views.md) -ominaisuutta, tällä sivulla on neljä välilehteä:
+Niillä asiakkailla, jotka eivät ole vielä ottaneet käyttöön [Tallennetut näkymät](saved-views.md) -ominaisuutta, tällä sivulla on neljä välilehteä:
 
 - **Käytä** – Voit tuoda tai valita yhden tai usean käyttäjän mukautuksen. Jos mukautus otetaan käyttöön yhdelle tai usealle käyttäjälle, ensiksi valitaan rooli ja käyttäjät, joilla tämä rooli on. Valitse sitten joko aiemmin luotu mukautus, jota haluat käyttää valituille käyttäjille, tai tuo mukautustiedosto. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
 - **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan kaikki mukautukset. Valitse ensin sivu tai työtila. Näet nyt luettelon käyttäjistä, jotka ovat mukauttaneet sitä. Valitse sitten käyttäjät, joiden sivun tai mukautukset on tyhjennettävä. Valitse lopuksi **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
 - **Käyttäjät** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten sallia käyttäjän käyttävän mukautuksia tietyillä sivuilla tai koko järjestelmässä tai estää sen. Voit myös tuoda, viedä tai tyhjentää käyttäjän mukautuksen. Lisäksi voit palauttaa käyttäjän kuvatekstitoiminnot. Jos käyttäjä tällöin on aiemmin hylännyt uusia ominaisuuksia esitteleviä ponnahdusikkunoita, ne tulevat näkyviin uudelleen, kun kyseinen käyttäjä kohtaa kyseiset ominaisuudet.
 - **Järjestelmä** – Voit poistaa kaikkien järjestelmän käyttäjien mukautukset käytöstä väliaikaisesti. Tällöin kaikkien käyttäjien mukautukset poistetaan ja kaikki sivut palautetaan oletustiloihinsa. Jos otat mukautukset myöhemmin jälleen käyttöön, kaikkia mukautuksia sovelletaan uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voi palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
-
-Niillä asiakkailla, jotka ovat ottaneet [Tallennetut näkymät](saved-views.md) -ominaisuuden käyttöön, **Mukauttaminen**-sivulla on viisi välilehteä:
-
-- **Julkaistut näkymät** – Nämä näkymät on julkaistu organisaatiollesi. Voit muuttaa käyttäjiä, jotka ovat näiden näkymien kohteena, muuttamalla kuhunkin näkymään liittyviä käyttöoikeusrooleja tai yrityksiä. Voit myös viedä tai poistaa yhden tai useita julkaistuja näkymiä.
-- **Julkaisemattomat näkymät** – Nämä näkymät ovat mallinäkymiä, jotka on tuotu järjestelmääsi muttei vieelä julkaistu. Voit julkaista, viedä ja poistaa näitä näkymiä.
-- **Henkilökohtaiset näkymät** – Nämä näkymät ovat järjestelmän käyttäjien luomia. Voit julkaista henkilökohtaisen näkymän organisaatiolle tai kopioida yhden tai useamman näistä näkymistä muille käyttäjille. Voit myös viedä ja poistaa näitä näkymiä tarpeen mukaan.
-- **Käyttäjät** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten sallia käyttäjän käyttävän mukautuksia tietyillä sivuilla tai koko järjestelmässä tai estää sen. Voit myös tuoda, viedä tai tyhjentää käyttäjän mukautuksen. Lisäksi voit palauttaa käyttäjän kuvatekstitoiminnot. Jos käyttäjä tällöin on aiemmin hylännyt uusia ominaisuuksia esitteleviä ponnahdusikkunoita, ne tulevat näkyviin uudelleen, kun kyseinen käyttäjä kohtaa kyseiset ominaisuudet.
-- **Järjestelmä** – Voit poistaa kaikkien järjestelmän käyttäjien mukautukset käytöstä väliaikaisesti. Tällöin kaikkien käyttäjien mukautukset poistetaan ja kaikki sivut palautetaan oletustiloihinsa. Jos otat mukautukset myöhemmin jälleen käyttöön, kaikkia mukautuksia sovelletaan uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voi palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
-
-Käyttäjät, joilla on käytössään **Mukauttaminen**-sivu, voivat myös tuoda henkilökohtaisia tai mallinäkymiä toimintoruudun **Tuo näkymiä** -painikkeen avulla.
 
 ## <a name="personalizing-inventory-dimensions"></a>Varastodimensioiden mukauttaminen
 
