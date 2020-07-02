@@ -1820,6 +1820,32 @@
                   items:
                     - name: Intian GST-veron yleiskatsaus
                       href: localizations/apac-ind-gst.md
+                    - name: APAC-alueen ja Intian GST-veron lokalisointiin liittyvät uudet tai muuttuneet ominaisuudet
+                      items:
+                        - name: Version 10.0.0 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-00.md
+                        - name: Version 10.0.01 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-01.md
+                        - name: Version 10.0.02 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-02.md
+                        - name: Version 10.0.03 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-03.md
+                        - name: Version 10.0.04 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-04.md
+                        - name: Version 10.0.05 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-05.md
+                        - name: Version 10.0.06 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-06.md
+                        - name: Version 10.0.07 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-07.md
+                        - name: Version 10.0.08 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-08.md
+                        - name: Version 10.0.09 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-09.md
+                        - name: Version 10.0.10 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-10.md
+                        - name: Version 10.0.11 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-11.md
                     - name: Intian GST-veron viiteryhmät
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: Kassakoneiden GST-veron integrointi
@@ -2346,6 +2372,8 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Liikevaihdon saldoilmoitus
                   href: localizations/emea-pol-turnover-balances-statement.md
+                - name: Jaa osto- ja myyntireskontran kurssiero
+                  href: localizations/emea-pol-split-ap-ar-exchange-difference.md
             - name: Venäjä
               items:
                 - name: Venäjä – yleiskatsaus
@@ -2371,7 +2399,7 @@
                     - name: Venäjän ennakon haltijat – yleiskatsaus
                       href: localizations/rus-advance-holders.md
                     - name: Ennakon haltijan luominen
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Ennakkomaksun haltijoiden päivittäiset työvaiheet
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: Budjetin hallinnan sisältävät ennakkoraportit
@@ -3408,8 +3436,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Muotojen muokkaaminen ja suorittaminen asiakirjojen hallintatiedostojen käyttöä varten
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                        - name: Tietolähteiden vianmääritys
-                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Tietolähteiden vianmääritys
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: VIIVAKOODIN käyttäminen viivakoodikuvien luontiin
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Mallimääritysten määrittäminen
                   items:
                     - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
@@ -3418,18 +3448,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Muotojen konfigurointi
                   items:
+                    - name: Mallin määritysten valitseminen luotaessa muotoja
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muodon parametrien määrittäminen yrityskohtaisesti
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Mallin määritysten valitseminen luotaessa muotoja
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muodon elementtien suorituksen lykkääminen
                       items:
                         - name: Sekvenssielementin suorituksen lykkääminen
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                         - name: XML-elementin suorituksen lykkääminen
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Monikielisten raporttien suunnitteleminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Suhteellinen polku tietojen sidonnoissa
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operationsissa
