@@ -3,7 +3,7 @@ title: Asiakasportaalin asentaminen, määrittäminen ja päivittäminen
 description: Tässä ohjeaiheessa on asiakasportaalin käyttöoikeustiedot ja asennusohjeet.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413958"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435604"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Asiakasportaalin asentaminen, määrittäminen ja päivittäminen
 
@@ -35,7 +35,7 @@ Asiakasportaalin käyttöönotto edellyttää, että sinulla on seuraavat käytt
 
 Asiakasportaali on riippuvainen Power Apps -portaaleista ja kaksoiskirjoittamisesta, kuten seuraavasta kuvasta näkyy.
 
-![![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")](media/customer-portal-elements.png "Customer portal dependencies")
+![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 
 Toisin kuin muut Supply Chain Managementin ominaisuudet, asiakasportaalimalli sijaitsee Power Apps -portaaleissa. Tämän vuoksi asiakasportaalia rajoittaa Power Apps -portaalien ja kaksoiskirjoitusyritysten tarjoamat toiminnot ja ominaisuudet.
 
@@ -59,7 +59,7 @@ Varmista ennen aloittamista, että olet jo määrittänyt [tarvittavat määrity
 
 1. Siirry kohtaan [make.powerapps.com](https://make.powerapps.com/).
 2. Varmista, että käytät ympäristöä, jossa kaksoiskirjoitus on käytössä.
-3. Vieritä **Luo**-välilehdessä alaspäin **Aloita mallista** -osasta ja valitse malli, jonka nimi on **Supply Chain Managementin asiakas**.
+3. Vieritä **Luo**-välilehdessä alas **Aloita mallista** -osaan ja valitse malli, jonka nimi on **Asiakasportaali**.
 4. Noudata näytön ohjeita.
 
 Kun valmistelu on tehty, voit käyttää asiakas portaalia **Koti**-sivun **Sovellukset**-osiossa.
@@ -71,7 +71,7 @@ Kun valmistelu on tehty, voit käyttää asiakas portaalia **Koti**-sivun **Sove
 
 Asiakasportaaliin voidaan lisätä toimintoja myöhemmin. Kaikki Microsoftin pohjana olevan ratkaisun komponentteihin tekemät muutokset tulevat automaattisesti näkyviin ympäristössäsi. Ympäristössäsi valmisteltu verkkosivusto ei kuitenkaan automaattisesti vastaa määritystietoihin tehtyjä muutoksia. Sinun on sovellettava näitä muutoksia manuaalisesti, jotta saat uuden mallin koodin ja voit yhdistää sen valmistellulla verkkosivustolla.
 
-## <a name="resources"></a>Resurssit
+## <a name="additional-resources"></a>Lisäresurssit
 
 Jos haluat tietää, miten asiakasportaali voidaan määrittää ja mukauttaa, aloita tarkastelemalla seuraavia tekniikoita koskevia ohjeita:
 

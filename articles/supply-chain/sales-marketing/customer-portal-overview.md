@@ -3,7 +3,7 @@ title: Asiakasportaali Dynamics 365 Supply Chain Managementin yhteenvedoksi
 description: Tässä ohjeaiheessa esitellään asiakasportaali ja selitetään, kenen tulisi käyttää sitä ja miten se toimii.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b57365d8042c1d791ee2c50c5458a6595a58270
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413957"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456923"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Asiakasportaali Dynamics 365 Supply Chain Managementin yhteenvedoksi
 
@@ -37,6 +37,12 @@ Asiakasportaalimallissa on kaikki mukautustoiminnot, joita Power Appsin portaali
 
 > [!NOTE]
 > Asiakasportaalin dokumentaatio on suunnattu järjestelmänvalvojille, mukauttajille ja järjestelmäintegraattoreille, jotka määrittävät asiakasportaalin Supply Chain Managementin asennusta varten. Se käyttää termejä _asiakas_ ja _käyttäjä_ kuvaamaan ihmisiä, jotka ovat asiakkaita organisaatiossa, joka käyttää Supply Chain Managementia ja joka käyttää lopullista portaalia itse.
+
+## <a name="video"></a>Video
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+
+[Yleiskatsaus Dynamics 365 Supply Chain Managementin asiakasportaalimallista](https://youtu.be/nPrqoLuHfV8) -video (edellä) sisältyy [Finance and Operationsin toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
 
 ## <a name="who-should-use-it"></a>Kenen pitäisi käyttää sitä?
 
@@ -58,6 +64,6 @@ Asiakasportaali toimitetaan Power Apps -portaalien mallina. Se on riippuvainen P
 
 [Kaksoiskirjoitus](https://docs.microsoft.com/powerapps/maker/portals/overview) on valmis infrastruktuurituote, joka sisältää lähes reaaliaikaisen vuorovaikutuksen Dynamics 365:n mallipohjaisten sovellusten ja Finance and Operations -sovellusten välillä. Kaksoiskirjoitus sisältää kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Common Data Servicen välillä. Tästä syystä tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa. Asiakasportaali määräytyy niiden entiteettien mukaan, jotka on synkronoitu kaksoiskirjoituksen kanssa. Ennen kuin Supply Chain Managementin tiedot voidaan tuoda esiin asiakasportaalissa, kaksoiskirjoitus on otettava käyttöön kaikille asiaankuuluviin entiteetteihin.
 
-![![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")](media/customer-portal-elements.png "Customer portal dependencies")
+![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 
 Asiakasportaali toimii lähtökohtana organisaatioille, jotka haluavat käyttää Power Apps -portaaleja, joiden on tarkoitus muodostaa ulkoinen verkkosivusto, joka käyttää Supply Chain Managementin asennuksen tietoja. Sen avulla organisaatiot voivat yhdistää kaksoiskirjoituksen, Supply Chain Managementin ja Power Apps -portaalit.

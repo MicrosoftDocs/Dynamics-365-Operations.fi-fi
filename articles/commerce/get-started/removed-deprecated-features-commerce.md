@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335273"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443915"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -35,6 +35,16 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commercen version 10.0.11 poistetut tai vanhentuneet ominaisuudet
+### <a name="data-action-hooks"></a>Tietotoiminnon koukut
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tietotoiminnon koukkutoiminto on vanhentunut suorituskykyongelmien vuoksi. |
+| **Onko toinen ominaisuus korvannut?**   | Liiketoimintalogiikkaa kannattaa sen sijaan muokata tietotoimintokerroksessa [tietotoiminnon ohituksilla](../e-commerce-extensibility/data-action-overrides.md).|
+| **Tuotealueet, joihin vaikutetaan**         | Sähköisen kaupankäynnin laajennettavuuden tietotoiminnot |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: versiosta 10.0.11 alkaen |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Commercen version 10.0.10 poistetut tai vanhentuneet ominaisuudet
 ### <a name="pos-operation-803---picking-and-receiving"></a>Myyntipistetoiminto 803 - Keräys ja vastaanotto

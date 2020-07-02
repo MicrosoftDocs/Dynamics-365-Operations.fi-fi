@@ -589,6 +589,8 @@
                   href: cost-management/inventory-value-report-storage.md
                 - name: Varaston erääntymisraportin tallennus
                   href: cost-management/inventory-aging-report-storage.md
+                - name: Varaston erääntymisraportin esimerkit ja logiikka
+                  href: cost-management/inventory-aging-report.md
             - name: Valmistuksen kirjanpito
               items:
                 - name: Tuoterakennelaskelmat

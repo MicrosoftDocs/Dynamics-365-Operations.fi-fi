@@ -1,9 +1,9 @@
 ---
 title: Ominaisuuksien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778702"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456594"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -144,3 +144,34 @@ Ominaisuuksien hallinnan avulla voit hallita kuhunkin julkaisuun toimitettuja om
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>ISV-ominaisuuksien tai mukautettujen ominaisuuksien ottaminen käyttöön ominaisuuksien hallinnan avulla
 
 Ominaisuuksien hallinta ei ole tällä hetkellä käytettävissä itsenäisten ohjelmistotoimittajien (ISV) ja mukautettujen ominaisuuksien ominaisuuksista. Microsoft kuitenkin lisää toimintoja, jotka parantavat ominaisuuksien hallintaa. Kun nämä parannukset on tehty, Microsoft tekee ominaisuuksien hallinnan käytettäväksi kaikille toiminnoille ja antaa ohjeita toimintojen päivittämiseksi käyttöä varten.
+
+## <a name="frequently-asked-questions-faq"></a>Usein kysytyt kysymykset
+
+### <a name="when-are-features-added-removed-or-changed"></a>Milloin toimintoja lisätään, poistetaan tai muutetaan? 
+Toimintoja lisätään, poistetaan ja muutetaan koodia muuttamalla. Ympäristöt on päivitettävä näitä muutoksia varten.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Tuleeko toiminnosta pakollinen automaattisesti? 
+Ei. Toiminnosta ei tule pakollinen automaattisesti. Tuoteryhmien on tehtävä koodimuutos.
+
+### <a name="when-do-features-become-mandatory"></a>Milloin toiminnot tulevat pakollisiksi? 
+Käytäntönä on, että kaikki uudet toiminnot on ensin hyväksyttävä 12 kuukauden ajan eikä muutosten hallinta ole välttämätöntä ennen toiminnon käyttöönottamista. Tuoteryhmät voivat valita, tuleeko toiminnosta pakollinen tämän jakson päätyttyä. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Miksi käytössä ei ole erityistä pakollista käyttöönottopäivää? 
+Päivitysjulkaisujen ajoitus vaihtelee, ympäristöpäivityksen ajoitus vaihtelee ja asiakkaat voivat halutessaan ohittaa joitakin päivityksiä. Tämän vuoksi tietyt päivämäärät ovat vaikeasti määritettävissä. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Missä on pakolliseksi muuttuvien toimintojen ohjeistus? 
+Tämä ohjeistus saadaan sovellusryhmiltä. Usein niistä on maininta [poistetuissa tai vanhentuneissa toiminnoissa](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Onko tuotteessa käytössä sisäinen ilmoitus tai signaali, että toiminnon käyttöönotto tulee olemaan pakollista? 
+Tällä hetkellä ei ole olemassa toiminnon pakollisuuteen liittyvää ilmoitusmekanismia.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Otetaanko toimintoja koskaan käyttöön niin, että asiakas ei tiedä siitä? 
+Kyllä. Jos toiminnoilla ei ole vaikutusta toimintaan, ne voidaan ottaa oletusarvoisesti käyttöön.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Mitä toiminnon väliversiotestaus tarkoittaa ja miten se liittyy toiminnon hallintaan? 
+Toiminnon väliversiotestaukset on reaaliaikaisia Microsoftin hallitsemia päälle/pois-kytkimiä. Ne ovat erillään asiakkaan toimintojen hallinnan avulla tapahtuvasta hallinnasta. 
+- Yksityisiä esiversiotoimintoja ei mainita toimintojen hallinnassa, ennen kuin ne ovat väliversiotestauksessa. Tuotannossa asiakkaan on hyväksyttävä erikoisohjelmaan osallistuminen, jotta näin voi tapahtua.
+- Julkisen esiversion ja julkaistut (yleisesti saatavana olevat) toiminnot mainitaan toimintojen hallinnassa, ellei niiden väliversiotestaus ole pois käytöstä. Toiminnon väliversiotestauksen poistaminen on tuotantoryhmien viimeinen vaihtoehto, jos löytyy kriittinen ongelma ja se on yleensä asiakaskohtainen toiminta.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Otetaanko toimintoja koskaan pois väliversiotestauksesta siten, että asiakas ei tiedä siitä? 
+Kyllä, jos toiminto vaikuttaa ympäristön toimintaan silloin, kun niillä ei ole toiminnallista vaikutusta, jolloin ne voidaan ottaa oletusarvoisesti käyttöön.

@@ -3,7 +3,7 @@ title: FIFO-merkintä ja fyysinen arvo
 description: FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella.
 author: AndersGirke
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e237d1e9f9bb83d0fe65556eca07c8757f920664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a66a1b977a4e36f9ad057683366c39a81ba1d833
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201752"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454623"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
 
@@ -49,8 +49,8 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 -   4a. Varaston fyysinen vastaanotto määrälle 1 yksikkökustannuksen ollessa 30,00 USD.
 -   4b. Varaston taloudellinen vastaanotto määrälle 1 yksikkökustannuksen ollessa 30,00 USD.
 -   5a. Fyysinen varasto-otto, jossa määrä on 1 ja kappaleen kustannushinta 20,00 Yhdysvaltain dollaria (USD) (rahoituksellisesti päivitettyjen tapahtumien keskiarvo).
--   5b. Rahoituksellinen varasto-otto, jossa määrä on 1 ja kappaleen kustannushinta 20,00 Yhdysvaltain dollaria (USD) (rahoituksellisesti päivitettyjen tapahtumien keskiarvo).
--   6. Varaston sulkeminen on suoritettu. FIFO-menetelmään perustuen ensimmäinen rahoituksellisesti päivitetty varasto-otto täsmäytetään ensimmäisen rahoituksellisesti päivitetyn vastaanoton kanssa. Varasto-ottotapahtumalle tehdään –10,00 Yhdysvaltain dollarin (USD) oikaisu.
+-   5b. Rahoituksellinen varasto-otto, jossa määrä on 1 ja kappaleen kustannushinta 15,00 Yhdysvaltain dollaria (USD) (rahoituksellisesti päivitettyjen tapahtumien keskiarvo).
+-   6. Varaston sulkeminen on suoritettu. FIFO-menetelmään perustuen ensimmäinen rahoituksellisesti päivitetty varasto-otto täsmäytetään ensimmäisen rahoituksellisesti päivitetyn vastaanoton kanssa. Varasto-ottotapahtumalle tehdään –5,00 Yhdysvaltain dollarin (USD) oikaisu.
 
 Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen tapahtumien keskiarvoa. Seuraavissa kuvissa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. 
 

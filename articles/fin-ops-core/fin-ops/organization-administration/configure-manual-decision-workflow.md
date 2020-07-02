@@ -3,7 +3,7 @@ title: Manuaalisten päätösten konfiguroiminen työnkulkuun
 description: Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177628"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455030"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuaalisten päätösten konfiguroiminen työnkulkuun
 
@@ -239,26 +239,6 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
     <li><strong>Käytettävissä olevat käyttäjät</strong> -luettelo sisältää kaikki käyttäjät. Valitse käyttäjät, joille päätös liitetään ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Jono</td>
-    <td>Työnimikejono</td>
-    <td>
-    <ol>
-    <li>Valittuasi <strong>jonon</strong>, napsauta <strong>Jonoperustainen</strong>-välilehteä.</li>
-    <li>Voit määrittää päätöksen tiettyyn jonoon seuraavasti: <ol>
-    <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Työnimikejonot</strong>.</li>
-    <li>Valitse jono <strong>Jonon nimi</strong> -luettelosta.</li>
-    </ol>
-    </li>
-    <li>Noudata seuraavia ohjeita, jos haluat, että tietty ehto päättää, mihin jonoon päätös määritetään: <ol>
-    <li>Valitse <strong>Jonon tyyppi</strong> -luettelosta <strong>Ehdolliset työnimikejonot</strong>.</li>
-    <li>Valitse <strong>Ehdollinen jono</strong> <strong>Jonon nimi</strong> -luettelosta.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] Tätä vaihtoehtoa käytetään vain muutamissa työnkuluissa, kuten Palvelupyynnön hallinnassa.</blockquote>
     </td>
     </tr>
     </tbody>

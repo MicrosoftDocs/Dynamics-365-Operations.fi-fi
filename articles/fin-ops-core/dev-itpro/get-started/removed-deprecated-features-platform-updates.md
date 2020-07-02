@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
-ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433919"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457563"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -36,6 +36,22 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.13
+
+> [!NOTE]
+> Versiota 10.0.13 ei ole vielä julkaistu. Nämä tiedot on annettu suunnittelua varten. Version 10.0.13 sisältö ja toiminnot voivat muuttua. Lisätietoja versioista on kohdassa [Palvelupäivitysten saatavuus](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Kolmen jQuery-osakirjaston päivitys 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Kolmea jQuery-osakirjastoa päivitetään suojauskorjausten vuoksi ja valuutan ylläpitoa varten.   
+| **Onko toinen ominaisuus korvannut?**   | Kyse on seuraavista kirjastoista: jQuery (versioon 3.5.0 versiosta 2.1.4), jQuery UI (versioon 1.12.1 versiosta 1.11.4), jQuery qTip (versioon 3.0.3 versiosta 2.2.1). jQuerylla on verkossa ohjeet siirtoa varten.  |
+| **Tuotealueet, joihin vaikutetaan**         | Laajennettavat ohjausobjektit, etenkin vanhentuneita tai poistettuja ohjelmointirajapintoja käyttävä mukautettu JavaScript-koodi |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Versiossa 10.0.13 / Platform update 37:ssä asiakkailla on mahdollisuus siirtyä uusimpiin kirjastoihin ottamalla Kolmen jQuery-osakirjaston päivitys -toiminto käyttöön. Uusiin kirjastoihin siirtyminen tulee pakolliseksi huhtikuun 2021 -version myötä, jotta kyseisten ohjelmointirajapintojen siirtoon jää aikaa.   |
+
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.12
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Ruudukko- tai ryhmäohjausobjektin lomakelaajennukset, jotka sisältävät virheellisiä kenttäviittauksia
@@ -50,11 +66,11 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.11
 
-### <a name="explicit-whitelisting-for-self-service-environments"></a>Selkeä sallittujen osoitteiden luettelo itsepalveluympäristöissä
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Selkeä turvallisten osoitteiden luettelo itsepalveluympäristöissä
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Sallittujen IP-osoitteiden prosessi on muuttunut. Itsepalvelu ei enää tue sallittujen IP-osoitteiden tukemista. |
+| **Poiston tai vanhentumisen syy** | IP-osoitteiden turvallisiin osoitteisiin siirtymisprosessi on muuttunut. Itsepalvelu ei enää tue turvallisia IP-osoitteita. |
 | **Onko toinen ominaisuus korvannut?**   | Lisätietoja on kohdassa [Azure Active Directoryn ehdollisen käytön konfigurointi](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
 | **Tuotealueet, joihin vaikutetaan**         | Suojaus |
 | **Käytön asetukset**              | Pilvi |
