@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Päivitys ja N-1-tuki
               items:
-                - name: Vähittäismyynnin päivitys ja N-1 tuki
+                - name: Commercen päivitys ja N-1-tuki
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Vaiheittain tapahtuvan käyttöönoton (N-1) asentaminen, määrittäminen ja käyttöön siirtyminen'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (toukokuu 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Commerce 10.0.9 (huhtikuu 2020)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
@@ -504,6 +502,8 @@
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Asiakkaan vahva todennus (SCA) Adyen-yhdistimellä
                       href: adyen_redirect.md
+                    - name: Erilliset maksupäätteet ja kehotteet tulostinta ja käteislaatikkoa varten
+                      href: pos-multi-hws.md
                     - name: Lahjakortti- ja hyvityslaskutoimintojen saumaton offline-tilaan vaihtaminen
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Laskunmaksutapojen määrittäminen
@@ -572,13 +572,17 @@
                       href: set-up-bar-codes.md
                     - name: Viivakoodin muotojen määrittäminen
                       href: set-up-bar-code-masks.md
+                - name: Takuut
+                  items:
+                    - name: Laajennettujen takuiden luominen ja määrittäminen
+                      href: extended-warranty.md
             - name: Hinnoittelu ja alennukset
               items:
                 - name: Alennukset
                   href: retail-discounts-overview.md
                 - name: Myyntihintojen hallinta
                   href: price-management.md
-                - name: Hintojen muutokset ja alennukset
+                - name: Hinnanoikaisut ja alennukset
                   href: price-adjustments-discounts.md
                 - name: Useiden alennusten soveltaminen tuotteeseen
                   href: apply-multiple-retail-discounts.md
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Kassamoduuli
                       href: add-checkout-module.md
-                    - name: Tilauksen vahvistusmoduuli
+                    - name: Tilauksen tiedot -moduuli
                       href: order-confirmation-module.md
                     - name: Myymälän valitsinmoduuli
                       href: store-selector.md
@@ -1896,6 +1900,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Kehitysympäristöjen tiedoston (.env) määrittäminen
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Virheenkorjaus tason 1 Commerce-kehitysympäristössä
+                      href: e-commerce-extensibility/debug-tier-1.md
                     - name: Azure DevOps -koodin jakamisen määrittäminen ja pipelinen luominen
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Ympäristön yleiskatsaus
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Kehittäminen pilvi-isännöidyissä kehitysympäristöissä ilman järjestelmänvalvojan oikeuksia
                   href: dev-itpro/cloud-dev-box.md
+                - name: Commerce SDK -koontijakson määrittäminen
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: Myyntipisteen laajennettavuus
               items:
                 - name: Myyntipisteen näyttöasettelut
@@ -2102,7 +2110,7 @@
                   href: dev-itpro/call-crt-service-offline.md
                 - name: Uuden Retail Server -laajennuksen luominen
                   href: dev-itpro/retail-server-extension.md
-                - name: 'Retail Typescript ja C# proxy'
+                - name: Retail Typescript ja C# proxy
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Commerce Runtime (CRT) -ratkaisun laajennettavuus
               items:

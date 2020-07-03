@@ -19,17 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123943"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456570"
 ---
-# <a name="reset-receipt-numbers"></a>Vastaanottonumeroiden palauttaminen 
+# <a name="reset-receipt-numbers"></a>Kuittinumeroiden nollaaminen 
 
 [!include [banner](includes/banner.md)]
 
+> [!NOTE]
+> Toimintoprofiiliin kaikissa vastaanottotyypeissä on valittava **Itsenäinen sarja** -ominaisuus ennen tämän toiminnon käyttöä. Lisäksi sen laitteen järjestelmän aikavyöhykkeen, jossa myyntipistettä käytetään, on vastattava myymälän vastaavaa aikavyöhykettä. Nämä rajoitukset on tarkoitus poistaa tulevassa versiossa. Ota yhteys Microsoft-tukee ennen toiminnon käyttöä tuoteympäristössä.
 
 Vähittäiskauppiaat luovat vastaanottonumeroita myymälän eri toimenpiteille, kuten käteis- ja siirtotapahtumille, palautustapahtumille, asiakastilauksille, tarjouksille ja maksuille. Vaikka vähittäiskauppiaat määrittävät omat kuittimuotonsa, joillakin mailla tai alueilla on asetuksia, jotka asettavat rajoituksia näille kuittimuodoille. Nämä asetukset voivat esimerkiksi rajoittaa kuitin merkkien määrää, vaatia peräkkäisiä vastaanottonumeroita, rajoittaa tiettyjä erikoismerkkejä tai vaatia vastaanottonumeroiden palauttamista vuoden alussa. Microsoft Dynamics 365 Commerce tekee vastaanottonumeroiden hallinnasta erittäin joustavia, jotta jälleenmyyjät voivat täyttää lakisääteiset vaatimukset. Tässä ohjeaiheessa kerrotaan, kuinka vastaanottonumeroiden nollaamiseen käytetään toimintoa.
 

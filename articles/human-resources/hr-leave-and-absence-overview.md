@@ -3,12 +3,12 @@ title: Yleiskuvaus
 description: Dynamics 365 Human Resourcesissa Loma ja poissaolo -työtila tarjoaa joustavan kehyksen uusien lomasuunnitelmien luomiseen, pyyntöjen hallinnan työnkulkuja sekä intuitiivisen itsepalvelusivun, jonka avulla työntekijät voivat pyytää lomaa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325762"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428964"
 ---
 # <a name="overview"></a>Yleiskuvaus
 
@@ -84,10 +84,9 @@ Voit kokeilla uusia loman ja poissaolon esikatselutoimintoja **Eristys**-ympäri
 
 Esikatselutoimintoja ovat esimerkiksi seuraavat:
 
-- **Loman keskeytys** - Voit keskeyttää työntekijän loman ja poissaolon henkilöstöhallinnossa. Loman keskeyttäminen pysäyttää valittujen lomatyyppien lomajaksotukset. Jos keskeytys tapahtuu jaksotusprosessien jälkeen, loman keskeyttäminen luo suhteutetun oikaisun työntekijän lomasaldoon. Voit myös sisällyttää syykoodit, kun keskeytät työntekijän loman. Käyttökokemus on päivitetty osoittamaan keskeytystä. 
+- **Loman jaksotus yritystä tai suunnitelmaa kohden** - Voit suorittaa jaksotusprosessin joko kaikkien yritysten tai yksittäisen yrityksen osalta. Voit myös suorittaa jaksotusprosessin tiettyä yritystä varten määrätyn loma- ja poissaolosuunnitelman osalta. 
 
-- **Siirtosäännöt** - Voit määrittää siirrettäville saldoille siirtosäännön, johon on siirto-oikaisut siirretään. Jos työntekijä esimerkiksi siirtää vapaata kymmenen päivää eteenpäin, voit valita eri lomatyypin näiksi 10 päiväksi. 
+- **Osta loma** - Voit ottaa käyttöön ja luoda osta loma -käytäntöjä työntekijöille ostopyyntöjen lähettämistä varten. Työntekijät voivat lähettää ostopyyntöjä, ja niiden saldot päivitetään automaattisesti pyynnön mukaiseksi.  
 
-- **Sisällytä syykoodit ja kommentit oikaisuihin** - Voit sisällyttää syykoodin ja kommentin, kun teet oikaisun työntekijän lomasaldoon. 
+- **Liitteiden lisääminen hyväksyttyihin loma pyyntöihin** - Voit lisätä liitteen lomapyyntöön, joka on jo hyväksytty. 
 
-- **Siirtymä loma- ja poissaoloparametreihin** - Voit nyt käyttää vain loma- ja poissaoloparametreja henkilöstöhallinnon parametrien käyttämisen asemesta. 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383760"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403332"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -270,7 +270,7 @@ Tässä esimerkissä luodaan *Asiakkaat sallivat konsolidoinnin* -käytäntö, j
 
 - Käytäntö tekee kyselyn tietyssä tilauspoolissa lähetysten konsolidoinnin sallivien asiakkaiden tunnistamiseksi.
 - Avoimien lähetysten konsolidointi on poistettu käytöstä.
-- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Varasto**-valintaruutu).
+- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon**-valintaruutu).
 
 - Voit ohittaa myyntitilauksen säännön valitsemalla toisen tilauspoolin.
 
@@ -306,7 +306,7 @@ Tässä esimerkissä luodaan *Varastot sallivat konsolidoinnin* -käytäntö, jo
 
 - Käytäntö tekee kyselyn tietyssä tilauspoolissa lähetyksiä konsolidoivien varastojen tunnistamiseksi.
 - Avoimien lähetysten konsolidointi on poistettu käytöstä.
-- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Varasto**-valintaruutu).
+- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon**-valintaruutu).
 
 Yleensä tämä liiketoimintatapaus otetaan huomioon käyttämällä [skenaariossa 1](#scenario-1) luotoja oletuskäytäntöjä. Samanlaisia käytäntöjä voi kuitenkin luoda myös seuraavien ohjeiden mukaisesti:
 

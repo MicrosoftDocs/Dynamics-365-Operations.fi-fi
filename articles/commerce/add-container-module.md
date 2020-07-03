@@ -3,7 +3,7 @@ title: Konttimoduuli
 description: Tässä ohjeaiheessa on tietoja säilömoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025525"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417343"
 ---
 # <a name="container-module"></a>Konttimoduuli
-
 
 [!include [banner](includes/banner.md)]
 
@@ -46,9 +45,13 @@ Tuettuja säilömoduuleja on kolme:: säilö, säilö jossa on 2 paikkaa ja säi
 - Sivuston tekijä haluaa kuuden sarakkeen asettelun, jossa näytetään kuusi moduulia rinnakkain. Tämän vuoksi sivuston tekijä käyttää säilöä, joka sisältää kuusi saraketta.
 - Sivuston tekijä haluaa asettaa moduulin sivulle, mutta ei halua täyttää näyttöä. Tämän vuoksi sivuston tekijä lisää moduulin säilömoduuliin ja määrittää säilön **Leveys**-ominaisuudeksi **Sisällytä säilöön**.
 
+Seuraavassa kuvassa näkyy esimerkki säilömoduulista, joka sisältää karusellimoduulin Commercen sivustonluontityökalussa. Tässä esimerkissä konttimoduulin **Leveys**-ominaisuuden arvoksi on asetettu **Täytä näyttö**.
+
+![Esimerkki konttimoduulista](./media/ecommerce-container.PNG)
+
 ## <a name="container-module-properties"></a>Säilömoduulin ominaisuudet
 
-| Ominaisuuden nimi     | Arvot | Kuvaus |
+| Ominaisuuden nimi     | Arvot | kuvaus |
 |-------------------|--------|-------------|
 | Otsikko           | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Säilöö varten voidaan antaa valinnainen otsikko. Oletusarvoisesti otsikossa käytetään **H2**-otsikkotunnusta. Tunnuksen voi kuitenkin muuttaa, jotta helppokäyttötoimintojen vaatimukset täyttyvät. |
 | Leveys             | **Sisällytä säilöön** tai **Täytä näyttö** | Jos arvoksi on määritetty **Sisällytä säilöön** (oletusarvo), säilön sisällä olevat moduulit ovat korkeintaan säilön levyisiä. Jos arvo on määritetty **Täytä näyttö**, säilö ei rajoita moduulien kokoa, vaan ne voivat täyttää näytön. |
@@ -99,23 +102,32 @@ Lisäominaisuuksien avulla voidaan optimoida eri näkymäporttien asettelu. Joka
 
 Voit lisätä säilön toistinmoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Konttimalli**. 
-1. Lisää **Teksti**-paikkaan **Oletussivu**-moduuli.
-1. Kun mallin muokkaus on valmis, julkaise se.
-1. Käytä juuri luotua säilömallia, kun haluat luoda sivun nimeltä **Kontin sivu**.
-1. Lisää säilömoduuli uuden sivun **pääpaikkaan**.
+1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Konttimalli** ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**. 
+1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunassa luomasi videotoistimen malli. Kirjoita **Sivun nimi** -kohtaan **Konttisivu** ja valitse sitten **OK**.
+1. Valitse uudella sivulla **Pää**-paikka. Valitse kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
 1. Määritä säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **1** ja **Leveys**-ominaisuuden arvoksi **Täytä säiliö**.
-1. Lisää sisältölohko karusellimoduuliin säiliömoduulissa.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Sisältölohko**-moduuli ja valitse sitten **OK**.
 1. Määritä sisältölohkomoduulin ominaisuusruudussa otsikko, kuva ja asettelu.
-1. Tallenna ja esikatsele sivu. Näkyvissä on yksi säilömoduulin levyinen ominaisuusmoduuli.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä on yksi säilömoduulin levyinen ominaisuusmoduuli.
 1. Muuta säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **3**.
-1. Lisää säilömoduuliin kaksi muuta sisältölohkomoduulia.
-1. Tallenna ja esikatsele sivu. Nyt näkyviin tulee kolme sisältölohkomoduulia, jotka näkyvät vierekkäin.
-1. Kun olet tyytyväinen asetteluun, lopeta sivun muokkaus ja julkaise se.
+1. Lisää konttimoduuliin kaksi muuta sisällönestomoduulia ja määritä ne.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Nyt näkyviin tulee kolme sisältölohkomoduulia, jotka näkyvät vierekkäin.
+1. Kun olet saavuttanut haluamasi asettelun, valitse **Viimeistele muokkaus** tarkistaaksesi sivun ja julkaise se valitsemalla **Julkaise**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+
+[Haitarimoduuli](add-accordion.md)
+
+[Välilehtimoduuli](add-tab.md)
 
 [Karusellimoduuli](add-carousel.md)
 

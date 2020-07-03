@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
 ms.technology: ''
-ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
+ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Human Resources, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 98b9ba7f45a3af38fdd24c09b9a3164d1547a0d5
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008858"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430322"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 
@@ -48,7 +48,7 @@ Seuraavassa esimerkissä on kuvattu tässä artikkelissa käytettäviä käsitte
 
 Osasto on toimintayksikkö, joka edustaa organisaation luokkaa tai toiminta-aluetta ja vastaa tietystä organisaation osa-alueesta, kuten myynnistä tai kirjanpidosta. Osastoa käytetään toiminta-alueiden raportoinnissa, ja sillä voi olla tulosvastuu. Osasto voi myös sisältää kustannuspaikkojen ryhmän. Organisaation osastoja ovat esimerkiksi myynti, kirjanpito ja henkilöstöhallinto.
 
-## <a name="jobs-and-positions"></a> Työt ja toimet
+## <a name="jobs-and-positions"></a>Työt ja toimet
 Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Toimi on työn yksittäinen esiintymä. Työssä tarvittavat vastuualueet, työtehtävät, taidot, koulutustiedot ja todistukset tarvitaan myös työhön liittyvissä toimissa.
 ### <a name="job-tasks"></a>Työtehtävät
 

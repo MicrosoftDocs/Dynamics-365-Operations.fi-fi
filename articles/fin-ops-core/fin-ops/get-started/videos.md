@@ -3,7 +3,7 @@ title: Videot
 description: Tällä sivulla on Microsoftin luomia toimintaohjeita ja Finance and Operations -sovelluksiin liittyviä teknisiä keskusteluja sisältäviä videoita, joita voi katsoa YouTubessa ja muissa sivustoissa.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: e4756e4d1697fdba40ad8a71a5d33594583a219a
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367126"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456946"
 ---
 # <a name="videos"></a>Videot 
 
@@ -122,6 +122,9 @@ ms.locfileid: "3367126"
 - [Kustannusseurannan mobiilityötila](https://youtu.be/imsuTg8rUVk)
 - [Kustannuslaskennan käytön aloittaminen](https://youtu.be/1pUDtJQZ8FU)
 - [Excelin käyttäminen kustannusanalyysissa](https://youtu.be/-HKHYdClvx8)
+
+### <a name="customer-portal"></a>Asiakasportaali
+- [Dynamics 365 Supply Chain Managementin asiakasportaalimallin yleiskatsaus](https://youtu.be/nPrqoLuHfV8)
 
 ### <a name="help-system"></a>Ohjejärjestelmä
 

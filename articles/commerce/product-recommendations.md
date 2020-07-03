@@ -3,7 +3,7 @@ title: Tuotesuositusten yleiskatsaus
 description: Tässä aiheessa on yleisiä tietoja tuotesuosituksista. Tuotesuositusten avulla asiakkaat löytävät helposti ja nopeasti tuotteita, joita he haluavat. He löytävät jopa tuotteita, joita he eivät alun perin aikoneet ostaa.
 author: Moonma
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e61136ed296d673e14600762c6f6199093530546
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 1b01589322c26b6a7b69d1b992b03603f5f3d29a
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154223"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404345"
 ---
 # <a name="product-recommendations-overview"></a>Tuotesuositusten yleiskatsaus
 
@@ -40,7 +40,7 @@ Sähköisessä kaupankäynnissä tuotesuositukset perustuvat Microsoftin koneopp
 
 Tuotesuositukset-palvelu hyödyntää tekoäly-ja kone opiskelu tekniikoita (AI-ML) seuraavalla tavalla:
 
-- Tiedot muodossa, jota suosituspalvelu vaatii, saadaan Commercen toiminnallisesta tietokannasta. Tiedot lähetetään Azure Data Lake Storage -ratkaisuun (ADLS) tai yksikkösäiliöön.
+- Tiedot muodossa, jota suosituspalvelu vaatii, saadaan Commercen toiminnallisesta tietokannasta. Tiedot lähetetään Azure Data Lake Storageen tai entiteettimyymälään.
 - Suosituspalvelu käyttää tallennettuja tietoja suositusmallien opettamisessa **Ihmiset pitävät myös**-, **Ostetaan usein yhdessä**-, **Uudet**-, **Myydyimmät**- ja **Suositut**-luetteloissa.
 
 ## <a name="scenarios"></a>Skenaariot
@@ -67,11 +67,11 @@ Seuraavassa taulussa on automaattisten tuotesuositusten eri tyypit, jotka ovat v
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+[Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
-[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+[Tuotesuositusten ottaminen käyttöön](enable-product-recommendations.md)
 
-[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+[Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 

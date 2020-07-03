@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131728"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410410"
 ---
 # <a name="set-up-a-call-center-channel"></a>Puhelinkeskuskanavan määrittäminen
 
@@ -31,10 +31,10 @@ ms.locfileid: "3131728"
 
 Tässä ohjeaiheessa käsitellään uuden puhelinkeskuskanavan luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 
-Dynamics 365 Commerceissa puhelinpalvelukeskus on vähittäismyyntityyppinen kanava, joka voidaan määrittää sovelluksessa. Kun puhelinkeskusentiteeteille määritetään kanava, järjestelmä voi sitoa tietyt tiedot ja tilausten käsittelyn oletukset myyntitilauksiin. Yritys voi määrittää useita puhelinkeskuskanavia Commercessa. On kuitenkin tärkeää huomata, että yksittäinen käyttäjä voidaan linkittää vain yhteen puhelinkeskuskanavaan. 
+Dynamics 365 Commerceissa puhelinpalvelukeskus on Commerce-tyyppinen kanava, joka voidaan määrittää sovelluksessa. Kun puhelinkeskusentiteeteille määritetään kanava, järjestelmä voi sitoa tietyt tiedot ja tilausten käsittelyn oletukset myyntitilauksiin. Yritys voi määrittää useita puhelinkeskuskanavia Commercessa. On kuitenkin tärkeää huomata, että yksittäinen käyttäjä voidaan linkittää vain yhteen puhelinkeskuskanavaan. 
 
 Varmista ennen uuden puhelinkeskuskanavan luomista, että olet tehnyt valmiiksi [kanavan määrityksen edellytykset](channels-prerequisites.md).
 
@@ -84,7 +84,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavasta](media/channel-setup-retail-5.png)
+![Esimerkki maksutavasta](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 

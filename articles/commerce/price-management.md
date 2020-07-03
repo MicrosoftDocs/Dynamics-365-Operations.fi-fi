@@ -3,7 +3,7 @@ title: Vähittäismyynnin hintojen hallinta
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057484"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431998"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -53,7 +53,9 @@ Seuraavassa kuvassa esitellään hintaryhmien käyttöä. Huomaa, että tässä 
 
 Kun luotat hintaryhmiä, älä käytä samaa hintaryhmää useille kaupan yksikkötyypeille. Jos teet niin, voi olla vaikea päätellä, miksi tiettyä hintaa tai alennusta käytetään tapahtumassa.
 
-Kuvassa oleva punainen katkoviiva osoittaa, että Commerce ei tue asiakkaaseen suoraan perustuvaa hintaryhmää, joka Microsoft Dynamics 365:n perustoiminto. Tässä tapauksessa saat vain myyntihinnan kauppasopimukset. Jos haluat käyttää asiakaskohtaisia hintoja, hintaryhmien määrittämistä suoraan asiakkaan perusteella ei suositella. Käytä sen sijaan liitoksia.
+Kuvassa oleva punainen katkoviiva osoittaa, että Commerce ei tue asiakkaaseen suoraan perustuvaa hintaryhmää, joka Microsoft Dynamics 365:n perustoiminto. Tässä tapauksessa saat vain myyntihinnan kauppasopimukset. Jos haluat käyttää asiakaskohtaisia hintoja, hintaryhmien määrittämistä suoraan asiakkaan perusteella ei suositella. Käytä sen sijaan liitoksia. 
+
+Huomaa, että jos hintaryhmä on määritetty asiakkaalle, tämä hintaryhmä liitetään tälle asiakkaalle luotujen tilausten myyntitilauksen otsikkoon. Jos käyttäjä muuttaa tilausotsikon hintaryhmää, vanha hintaryhmä korvataan uudella hintaryhmällä vain nykyisessä tilauksessa. Esimerkiksi vanha hintaryhmä ei vaikuta nykyiseen tilaukseen, mutta se liitetään edelleen asiakkaaseen tulevia tilauksia varten.
 
 Seuraavissa osissa on lisätietoja niistä kaupan yksiköistä, joilla voit määrittää erilliset hinnat, kun hintaryhmiä käytetään. Hintojen ja alennusten näiden kohteiden määritysten kahdessa vaiheessa. Näiden vaiheiden suorittamisjärjestyksellä ei ole merkitystä. Loogista on kuitenkin määrittää ensin yksiköiden hintaryhmät, koska tämä vaihe tehdään todennäköisesti vain kerran käyttöönoton yhteydessä. Voit sitten määrittää hintaryhmät luotaville hinnoille ja alennuksille yksi kerrallaan.
 
@@ -226,6 +228,7 @@ Hinnoittelumoduuli **ei tue** seuraavia hinnoitteluominaisuuksia:
 - Hintojen määrittämistä toimipaikan tai toimipaikan ja varaston varastodimensioiden mukaan ei tueta. Jos määrität kauppasopimuksille vain toimipaikan dimension, hinnoittelumoduuli ohittaa sivuston ja soveltaa kauppasopimusta kaikkiin sivustoihin. Jos määrität sekä toimipaikan että varaston, toiminta on määrittämätön/testaamaton, koska on odotettavissa, että vähittäismyyjät käyttävät myymälän hintaryhmiä kunkin myymälän/varaston hintojen hallintaan.
 - Määriteperusteista hinnoittelua ei tueta.
 - Toimittajan alennuksen läpivientiä ei tueta.
+- Supply Chain Managementin perushinnoittelumoduuli tukee hinnoittelun laskemista, joka perustuu "pyydetty lähetyspäivämäärä"- ja "pyydetty vastaanottopäivämäärä" -kohtaan sekä nykyiseen päivään. Vähittäismyyntihinnoittelu ei kuitenkaan tällä hetkellä tue näitä arvoja. Syynä on se, että B2C-skenaarioiden asiakkaat eivät odota, että pyydetty toimituspäivämäärä vaikuttaisi nimikkeen hintaan. Joissakin tapauksissa vähittäismyyjillä on sekä B2B- että B2C-toimintoja. B2B-toiminnoissa on tavallista muuttaa hintoja toimituspäivämäärien perusteella. Nämä jälleenmyyjät voivat käyttää B2B-liiketoimintaan Supply Chain Managementin hinnoittelua ja vähittäismyyntihinnoittelua B2C-liiketoimintansa osalta. Retail-hinnoittelu tulee voimaan vain, jos sovelluskäyttäjä on lisätty Call Center -käyttäjänä, joten vähittäismyyjät voivat määrittää tietyille käyttäjille, joille sopii Supply Chain Managementin hinnoittelu ja määrittää muutamia, jotka toimivat Retail-hinnoittelulla, eli nämä käyttäjät on lisättävä Call Center -käyttäjiksi. Lisäksi **Käytä kuluvaa päivää hintojen laskemiselle** -ominaisuus kohdassa **Commercen parametrit > hinnoittelu ja alennukset > Muut** -osa on otettava käyttöön. Näin he voivat jatkaa myyntireskontran parametriarvon käyttöä pyydetyn lähetyspäivämäärän tai pyydetyn vastaanottopäivämäärän osalta Supply Chain Managementin hinnoittelussa, mutta vähittäismyyntihinnoittelussa käytetään kuluvan päivän päivää hinnoittelun laskennassa.
 
 Lisäksi **vain** hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 

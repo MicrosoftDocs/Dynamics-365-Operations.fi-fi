@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platform update -päivitykset 10.0.10 (toukokuu 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (huhtikuu 2020)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Ota käyttöön kaksoiskirjoituksen entiteettien yhdistämismääritys
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Valuuttatietotyyppien siirto kaksoiskirjoitusta varten
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Kaksoiskirjoituksen hallinta
                           items:
                             - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
@@ -364,6 +364,8 @@
           items:
             - name: Azure Data Lake -yleiskuvaus
               href: data-entities/azure-data-lake-overview.md
+            - name: Azure Data Lake -viennin määritys
+              href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations -sovellukset Azure Data Lakessa
               href: data-entities/finance-data-azure-data-lake.md
             - name: Yksikkösäilön määrittäminen saataville Data Lake -säilönä
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Paikallisten ympäristöjen diagnostiikka
                       href: deployment/on-premises-diagnostics.md
+                    - name: Paikallisen järjestelmäpalautuksen määritys
+                      href: deployment/onprem-dr.md
                     - name: PowerBI.com-integrointi paikallisiin ympäristöihin
                       href: analytics/entity-store-on-prem.md
                     - name: Ympäristöjen uudelleenmääritys
@@ -652,7 +656,7 @@
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-luokat pyyntö- tai vastausskenaarioissa
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Liiketoimintalogiikan kirjoittaminen C#- ja X++-lähdekoodilla'
+                - name: Liiketoimintalogiikan kirjoittaminen C#- ja X++-lähdekoodilla
                   href: dev-tools/write-business-logic.md
                 - name: X++-koodin muutokset ja X++-kääntäjä
                   href: dev-tools/programming-language-support.md
@@ -716,7 +720,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: X++-määriteluokat
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'X++- ja C#-kielen vertailu'
+                    - name: X++- ja C#-kielen vertailu
                       href: dev-ref/xpp-cs-comparison.md
                     - name: X++-syntaksi
                       href: dev-ref/xpp-syntax.md
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Suojausarkkitehtuuri
                   href: sysadmin/security-architecture.md
+                - name: Salaus Finance and Operations -sovelluksissa
+                  href: sysadmin/encryption.md
                 - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
                   href: sysadmin/session-idle-timeout.md
                 - name: Valmiit suojausraportit

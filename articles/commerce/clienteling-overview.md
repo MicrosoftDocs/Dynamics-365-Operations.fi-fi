@@ -3,7 +3,7 @@ title: Asiakashallinnan yleiskatsaus
 description: Tässä ohjeaiheessa on myymäläsovellukseen sisältyvien uusienasiakashallinnan ominaisuuksien yleiskatsaus.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4f045f8509a6b5027fd3cf8e5ca9e382457a5e83
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022352"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456504"
 ---
 # <a name="clienteling-overview"></a>Asiakashallinnan yleiskuvaus
 
@@ -115,7 +115,7 @@ Määritä integrointi noudattamalla seuraavia ohjeita:
 3. Luo Azure Key Vault ja tallenna sovelluksen salauskoodi. Lisätietoja on kohdassa [Pika-aloitus: Salauskoodin määrittäminen ja sen noutaminen Azure Key Vaultista Azure-portaalin avulla](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
 4. Azure Key Vaultin käyttöoikeuden ottaminen käyttöön Commercessa. Tämän vaiheen suorittamiseen tarvitaan sovelluksen tunnus ja salauskoodi. Sovellus voi olla sovellus, joka luotiin vaiheessa 1, tai se voi olla uusi sovellus. (Voit siis käyttää vaiheessa 1 luotua sovellusta sekä Key Vaultin että Customer Insights -palvelun käyttämiseen tai voit luoda kummankin käyttöä varten oman sovelluksen.) Lisätietoja on kohdassa [Palvelun päätunnistetietojen tallentaminen Azure Stack Key Vaultiin](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. Valitse Headquartersissa **Järjestelmän hallinta \> Asetukset \> Avainsäilön parametrit** ja anna tarvittavat avainsäilön tiedot. Anna sitten **Avainsäilön asiakas** -kentässä sovelluksen tunnus, jota käytit vaiheessa 4. Tällä tavoin Commerce voi käyttää avainsäilössä olevia salauskoodeja.
-6. Voit lisätä vaiheessa 1 luodun sovelluksen turvallisten sovellusten luetteloon (jota kutsutaan joskus sallittujen luetteloksi) siirtymällä Customer Insightsiin ja antamalla sovellukselle **katseluoikeuden**. Lisätietoja on kohdassa [Käyttöoikeudet](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Voit lisätä vaiheessa 1 luodun sovelluksen turvallisten sovellusten luetteloon (jota kutsutaan joskus turvallisten luetteloksi) siirtymällä Customer Insightsiin ja antamalla sovellukselle **katseluoikeuden**. Lisätietoja on kohdassa [Käyttöoikeudet](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. Toimi Commercen **Commercen parametrit** -sivun **Asiakashallinta**-välilehden **Dynamics 365 Customer Insights** -pikavälilehdessä seuraavasti:
 
     1. Anna **Sovelluksen tunnus** -kentässä vaiheessa 1 käytetty sovelluksen tunnus.

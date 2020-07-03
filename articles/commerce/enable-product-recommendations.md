@@ -3,7 +3,7 @@ title: Ota tuotesuositukset käyttöön
 description: Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259791"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404206"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -34,11 +34,11 @@ Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesu
 
 ## <a name="recommendations-pre-check"></a>Suositusten esitarkistus
 
-Ota huomioon ennen käyttöönottoa, että tuotesuosituksia tuetaan vain Commerce-asiakkaille, jotka ovat siirtäneet tallennustilansa Azure Data Lake Storagea (ADLS:ää) käyttäen. 
+Ota huomioon ennen käyttöönottoa, että tuotesuosituksia tuetaan vain Commerce-asiakkaille, jotka ovat siirtäneet tallennustilansa Azure Data Lake Storagea käyttäen. 
 
 Seuraavat kokoonpanot on otettava käyttöön taustajärjestelmässä ennen suositusten käyttöönottoa:
 
-1. Varmista, että ADLS on ostettu ja todennettu onnistuneesti ympäristössä. Katso lisätietoja kohdasta [Varmista, että ADLS on ostettu ja todennettu onnistuneesti ympäristössä](enable-ADLS-environment.md).
+1. Varmista, että Azure Data Lake Storage on ostettu ja todennettu onnistuneesti ympäristössä. Katso lisätietoja kohdasta [Varmista, että Azure Data Lake Storage on ostettu ja todennettu onnistuneesti ympäristössä](enable-ADLS-environment.md).
 2. Varmista, että yksikkösäilön päivitys on automatisoitu. Lisätietoja on kohdassa [Varmista, että yksikkösäilön päivitys on automatisoitu](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Vahvista, että Azure AD -käyttäjätietojen määritys sisältää suositusten merkinnän. Lisätietoja tästä toiminnosta alla.
 
@@ -92,7 +92,7 @@ Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten 
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+[Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
 [Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 

@@ -3,7 +3,7 @@ title: AI-ML-pohjaisten tuotesuositustulosten muokkaaminen
 description: Tässä ohjeaiheessa kerrotaan, miten yrityksen tuotesuositusten tuloksia räätälöidään tekoälyn koneoppimisen perusteella.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154338"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404368"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-pohjaisten tuotesuositustulosten muokkaaminen
 
@@ -102,11 +102,11 @@ Seuraavia ohjeita noudattamalla voit lisätä alkutuotteen tuloksia tai poistaa 
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+[Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
-[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+[Tuotesuositusten ottaminen käyttöön](enable-product-recommendations.md)
 
-[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+[Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 

@@ -3,7 +3,7 @@ title: Sarjoitettujen nimikkeiden käyttäminen myyntipisteessä
 description: Tässä ohjeaiheessa selitetään, kuinka sarjoitettuja nimikkeitä hallitaan myyntipisteen (POS) sovelluksessa.
 author: boycezhu
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 1e0d6aa7cd5576578378e70c6ee808833314aff3
-ms.sourcegitcommit: 919620b4aca425e6a1248ee12f50a622d2531e58
+ms.openlocfilehash: eedb64ae04345cb94bdd8cc68de833cfcfd40119
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "3290767"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407495"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Sarjoitettujen nimikkeiden käyttäminen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Monet jälleenmyyjät myyvät tuotteita, jotka edellyttävät sarjavalvontaa. Näitä nimikkeitä kutsutaan *sarjoitetuiksi nimikkeiksi*. Jotkin vähittäismyyjät haluavat ehkä ylläpitää sarjanumeroita seurantaa varten. Muut jälleenmyyjät saattavat haluta kaapata sarjanumeroita myyntiprosessin aikana huoltoa ja takuuta varten. Tässä ohjeaiheessa selitetään, kuinka voit hallita sarjoitettuja nimikkeitä Microsoft Dynamics 365 Commerce -myyntipisteen (POS) sovelluksessa.
 

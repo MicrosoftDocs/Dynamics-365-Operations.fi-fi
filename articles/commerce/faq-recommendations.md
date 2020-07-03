@@ -3,7 +3,7 @@ title: Tuotesuositukset – usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on tietoja prosesseista ja työkaluista, joiden avulla voit tehdä tuotesuosituksiin tai niiden tuloksiin liittyvien ongelmien vianmäärityksen.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2e30d29516dff6b2128e21bfa6e449e396884d00
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: e27e4c4d8bdf614d6f55f44daeac3bc152219004
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154387"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404299"
 ---
 # <a name="product-recommendations-faq"></a>Tuotesuositukset – usein kysytyt kysymykset
 
@@ -81,11 +81,11 @@ Kun olet ottanut käyttöön tuotesuositukset, sinun on lisättävä suositusten
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+[Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
-[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+[Tuotesuositusten ottaminen käyttöön](enable-product-recommendations.md)
 
-[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+[Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 

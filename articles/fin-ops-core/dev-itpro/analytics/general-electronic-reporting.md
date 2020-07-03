@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933929"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421652"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -40,7 +40,7 @@ Sähköinen raportointi tukee tällä hetkellä TXT-, XML- ja Microsoft Word -ti
 ## <a name="capabilities"></a>Toiminnot
 Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
-- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista sähköisen raportoinnin moduulia.
+- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista Finance and Operationsin sähköisen raportoinnin moduulia.
 - Se eristää raportin muodon nykyisestä käyttöönotosta. Toisin sanoen muotoa voi käyttää eri versioissa.
 - Se tukee alkuperäiseen muotoon perustuvan mukautetun muodon luontia. Sen toiminnoilla voi myös päivittää automaattisesti mukautetut muodot, kun alkuperäiseen muotoon on tehty muutoksia. Tämä onnistuu lokalisointi- ja mukautusvaatimusten avulla.
 - Siitä tulee ensisijainen vakiotyökalu lokalisointivaatimusten tukemiseen sähköisessä raportoinnissa – sekä Microsoftille että sen kumppaneille.
@@ -81,7 +81,7 @@ Saapuvia sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä o
 
 Tietomallikomponentti on suunniteltu käytettäväksi kullakin liiketoiminnan toimialueella yhtenäisenä tietolähteenä raportoinnissa, joka eristää raportoinnin Finance and Operationsin tietolähteiden fyysisestä toteuttamisesta. Se kuvaa toimialuekohtaisia liiketoimintakonsepteja ja toimintoja muodossa, joka tehostaa raportointimuotojen alkusuunnittelua ja sen jälkeisestä ylläpitoa.
 
-#### <a name="FormatComponentOutbound"></a>Lähtevien sähköisten asiakirjojen muotokomponentit
+#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Lähtevien sähköisten asiakirjojen muotokomponentit
 
 Muoto-osa on raporttitulostuksen malli, joka luodaan suorituksen aikana. Malli sisältää seuraavat elementit:
 
@@ -107,7 +107,7 @@ Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
 
 Voit suorittaa yksittäisen sähköisen raportoinnin muotomäärityksen ja luoda lähtevän sähköisen asiakirjan tunnistamalla muotomääritysten yhdistämismääritykset.
 
-#### <a name="FormatComponentInbound"></a>Saapuvien sähköisten asiakirjojen muotokomponentit
+#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Saapuvien sähköisten asiakirjojen muotokomponentit
 Muotokomponentti on saapuvan asiakirjan malli, joka tuodaan suorituksen aikana. Malli sisältää seuraavat elementit:
 
 - Muoto, joka määrittää suorituksen aikana tuodun, tietoja sisältävän saapuvan sähköisen asiakirjan rakenteen ja sisällön. Saapuva asiakirja jäsennetään muotokomponentin avulla eri muodoissa, kuten teksti- ja XML-muodossa.
@@ -144,7 +144,7 @@ Sähköisten raportointiosien käyttöoikeus määräytyy maan/alueen ISO-koodia
 
 Tietomuoto-osien eri versioilla voi olla erilaiset ISO-maa/aluekoodeja koskevat asetukset.
 
-#### <a name="Configuration"></a>Määritys
+#### <a name="configuration"></a><a name="Configuration"></a>Määritys
 
 Sähköinen raportointimääritys on tietyn sähköisen raportointikomponentin paketoija. Kyse voi olla joko tietomallikomponentista tai muotokomponentista. Määritykset voivat sisältää sähköisen raportointikomponentin eri versioita. Kukin määritys merkitään tietyn määrityslähteen omistamaksi. Määritysten osan **Luonnos**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu sovelluksen sähköisten raportointiasetusten aktiiviseksi lähteeksi.
 
@@ -154,26 +154,26 @@ Luodussa muotomäärityksessä on muotokomponentti. Alkuperäisten mallimäärit
 
 Sähköiset raportointimääritykset jaetaan sovelluksen yrityksille.
 
-#### <a name="Provider"></a>Palvelu
+#### <a name="provider"></a><a name="Provider"></a>Palvelu
 
-Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
+Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoft**-määrityspalvelu.
 
 Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtäväoppaassa **ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi** (liiketoimintaprosessin **7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677)** osa).
 
-#### <a name="Repository"></a>Säilö
+#### <a name="repository"></a><a name="Repository"></a>Säilö
 
 Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan seuraavia ER-säilötyyppejä: 
 
 - Jaettu LCS-kirjasto
 - LCS-projekti
 - Tiedostojärjestelmä
-- Regulatory Configuration Services (RCS)
-- Operatiiviset resurssit
-
+- RCS
+- Operations-resurssit
+- Yleinen tietovarasto
 
 **Jaettu LCS-kirjasto** -säilön kautta voi käyttää Lifecycle Servicesin (LCS) jaetun omaisuuskirjaston määritysluetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda jaetusta LCS-kirjastosta ER-määritysten uusimmat versiot nykyiseen esiintymään.
 
-**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Finance and Operationsin esiintymään.
+**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin, kun säilö rekisteröintiin. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Finance and Operations -sovellukseen.
 
 **Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen esiintymään. 
 
@@ -184,9 +184,13 @@ Huomaa, että tätä säilötyyppiä voi käyttää seuraavista ympäristöistä
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti](./electronic-reporting-import-ger-configurations.md)
 
-**LCS-esiintymän** säilössä on tietyn RCS-esiintymän määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen esiintymään, joten voit käyttää niitä sähköisessä raportoinnissa.
+**RCS**-säilössä on tietyn esiintymän [Määrityspalvelu (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) -määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen esiintymään, joten voit käyttää niitä sähköisessä raportoinnissa.
 
-Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](./rcs-download-configurations.md).
+Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti RCS:stä](./rcs-download-configurations.md).
+
+**Yleinen tietovarasto** -arkiston avulla voit käyttää [konfigurointipalvelun](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) yleisessä tietovarastossa olevien kokoonpanojen luetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda yleisestä tietovarastosta ER-määritysten uusimmat versiot nykyiseen esiintymään.
+
+Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti konfiguraatiopalvelun yleisestä säilöstä](./er-download-configurations-global-repo.md).
 
 **Operatiivisten resurssien** säilö antaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft sähköisen raportoinnin määrityspalveluna julkaisee aluksi sovellusratkaisun osana. Nämä määritykset voidaan tuoda nykyiseen esiintymään sähköistä raportointia tai näytetehtäväoppaisen toistamista varten. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa. Huomaa, että Microsoftin toimittamien sähköisten raportointimääritysten uusimmat versiot on tuotava LCS:n jaetun ominaisuuskirjastosta käyttämällä vastaavaa ER-säilöä.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008837"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443415"
 ---
 # <a name="overview"></a>Yleiskatsaus
 
@@ -34,22 +34,24 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
 - Voit määrittää ja hallita esiintymiä
   - [Human Resourcesin valmisteleminen](hr-admin-setup-provision.md)
   - [Kopioi esiintymä](hr-admin-setup-copy-instance.md)
-  - [Esiintymän poistaminen](hr-admin-setup-remove-instance.md)
+  - [Poista esiintymä](hr-admin-setup-remove-instance.md)
   - [Päivitysprosessi](hr-admin-setup-update-process.md)
 
-- Määritä dataintegrointi
+- Määritä tietojen integraatio
   - [Tietojen integrointiteknologian valitseminen](hr-admin-integration-choose-technology.md)
   - [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
-  - [Financeen integroinnin määritys](hr-admin-integration-finance.md)
-  - [Dayforceen integroinnin määritys](hr-admin-integration-dayforce.md)
-  - [Toistuvien tietovientien sovelluksen luomisen](hr-admin-integration-recurring-data-export.md)
-  - Officen integrointi
-    - [Office-integroinnin opetusohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+  - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
+  - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
+  - [Luo toistuvan tietojen viennin sovellus](hr-admin-integration-recurring-data-export.md)
+  - Luo integraatio Officen kanssa
+    - [Office-integraation opetusohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Yksikkötietojen päivittäminen Excelissä](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Avaa Excelissä -kokemusten luominen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Office-integroinnin vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integraation vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+
+- [Tietokannan lokikirjauksen määrittäminen ja hallinta](hr-admin-database-logging.md)
 
 - Käyttöliittymään tutustuminen
   - [Käyttöliittymäelementit](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
@@ -75,20 +77,19 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
 - Dokumentaatioresurssit
   - [Ohjejärjestelmä](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [Yhdistäminen ohjejärjestelmään](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Yhdistäminen mukautettuun ohjesivustoon](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [Kenttäkuvausten näyttäminen ja vienti](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Tehtävien tallennustoiminto](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Henkilöstöhallinnon vianmääritys
+- Human Resourcesin vianmääritys
   - [Tuen saaminen](hr-admin-troubleshooting-support.md)
   - [Optimoi suorituskyky automaattisilla tyhjennystehtävillä](hr-admin-troubleshooting-batch-history.md)
   - [Analytiikkaraportteja ei päivitetä](hr-admin-troubleshooting-analytic-reports.md)
   - [Power Apps -hallintakeskuksessa ei voi luoda ympäristöä](hr-admin-troubleshooting-power-apps.md)
   - [Asiakasohjelma katkaisee yhteyden](hr-admin-troubleshooting-disconnect.md)
-  - [Tekstin katkaisemisen välttäminen toimihierarkiassa](hr-admin-troubleshooting-truncate.md)
+  - [Vältä katkaistua tekstiä toimihierarkiassa](hr-admin-troubleshooting-truncate.md)
   - [Kompensaatioprosessin suorittaminen](hr-admin-troubleshooting-compensation.md)
-  - [Tehtäväoppaan tallennus LCS:ään](hr-admin-troubleshooting-task-guide.md)
+  - [Tehtäväoppaan tallentaminen LCS:ään](hr-admin-troubleshooting-task-guide.md)
   - [Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources ei näy Dynamics 365 -sovelluksissa](hr-admin-troubleshooting-not-in-apps.md)
   - [Raportointivaihtoehdot](hr-admin-troubleshooting-reporting.md)

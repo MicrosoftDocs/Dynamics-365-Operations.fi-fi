@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212500"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428397"
 ---
 # <a name="production-setup-requirements"></a>Tuotantoasetusten vaatimukset
 
@@ -71,7 +71,7 @@ Jos käytät reitityksiä, jokaiselle tuotantoreititykselle on määritettävä 
 2.  **Kustannusryhmät** – luo ja ylläpidä eri kustannuslaskennan tyyppejä määrittämällä kustannusryhmiä.
 3.  **Reititysryhmät** – Määritä reititysryhmien avulla reititysten ryhmiin liittyvät parametrit. Reititysryhmät on määritettävä ennen tuotantoreititysten luontia.
 4.  **Reitit** – määritä ensin tuotantoreititykset ja reitityksen työvaiheiden oletusasetukset, joilla hallitaan ajoitusta, kustannuslaskentaa ja hinnoittelua sekä tilaraporttia.
-5.  **Reitit** – ota tuotannon nimikevariaatiot käyttöön määrittämällä reititysversiot.
+5.  **Reittiversio** – Ota tuotannon nimikevariaatiot käyttöön määrittämällä reititysversiot.
 
 ## <a name="optional-advanced-settings"></a>Valinnaiset lisäasetukset
 1.  **Tuotantoryhmät** – Määritä tuotantoryhmät luomaan tuotetilausten ja kirjanpitotilien väliset suhteet. Kirjanpitotileillä tilaukset kirjataan tai ryhmitetään raportointia varten.

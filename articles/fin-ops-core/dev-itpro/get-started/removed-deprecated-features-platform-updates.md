@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268744"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457563"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -36,7 +36,55 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.13
+
+> [!NOTE]
+> Versiota 10.0.13 ei ole vielä julkaistu. Nämä tiedot on annettu suunnittelua varten. Version 10.0.13 sisältö ja toiminnot voivat muuttua. Lisätietoja versioista on kohdassa [Palvelupäivitysten saatavuus](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Kolmen jQuery-osakirjaston päivitys 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Kolmea jQuery-osakirjastoa päivitetään suojauskorjausten vuoksi ja valuutan ylläpitoa varten.   
+| **Onko toinen ominaisuus korvannut?**   | Kyse on seuraavista kirjastoista: jQuery (versioon 3.5.0 versiosta 2.1.4), jQuery UI (versioon 1.12.1 versiosta 1.11.4), jQuery qTip (versioon 3.0.3 versiosta 2.2.1). jQuerylla on verkossa ohjeet siirtoa varten.  |
+| **Tuotealueet, joihin vaikutetaan**         | Laajennettavat ohjausobjektit, etenkin vanhentuneita tai poistettuja ohjelmointirajapintoja käyttävä mukautettu JavaScript-koodi |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Versiossa 10.0.13 / Platform update 37:ssä asiakkailla on mahdollisuus siirtyä uusimpiin kirjastoihin ottamalla Kolmen jQuery-osakirjaston päivitys -toiminto käyttöön. Uusiin kirjastoihin siirtyminen tulee pakolliseksi huhtikuun 2021 -version myötä, jotta kyseisten ohjelmointirajapintojen siirtoon jää aikaa.   |
+
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.12
+
+### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Ruudukko- tai ryhmäohjausobjektin lomakelaajennukset, jotka sisältävät virheellisiä kenttäviittauksia
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ruudukko- tai ryhmäohjausobjektien tietoryhmäominaisuuden avulla voidaan automaattisesti näyttää kaikki kenttäryhmän kentät. Laajennuksessa lisätty ruudukko tai ryhmäohjausobjekti voi sisältää kenttiä, joita ei ole enää määritetty kenttäryhmässä, tai kenttäryhmään määritettyjä kenttiä ei ehkä löydy. Tämä voi aiheuttaa epäjohdonmukaista käyttäytymistä suorituksen aikana. Finance and Operations -sovellusten versio 10.0.12:n päivitykset luokittelevat nyt tämän ongelman kääntäjän *varoitukseksi*. Voit korjata tämän ongelman avaamalla lomakelaajennuksen ja tallentamalla sen.
+| **Onko toinen ominaisuus korvannut?**   | Tämä kääntäjän varoitus korvataan kääntäjän virheellä tulevassa päivityksessä. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Kääntäjävaroitus esiintyy Finance and Operations -sovellusalustan päivityksissä versiossa 10.0.12. |
+
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.11
+
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Selkeä turvallisten osoitteiden luettelo itsepalveluympäristöissä
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | IP-osoitteiden turvallisiin osoitteisiin siirtymisprosessi on muuttunut. Itsepalvelu ei enää tue turvallisia IP-osoitteita. |
+| **Onko toinen ominaisuus korvannut?**   | Lisätietoja on kohdassa [Azure Active Directoryn ehdollisen käytön konfigurointi](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Tuotealueet, joihin vaikutetaan**         | Suojaus |
+| **Käytön asetukset**              | Pilvi |
+| **Tila**                         | **Vanhentunut:** Tämä ominaisuus on täysin vanhentunut itsepalvelukäyttöönotoissa. |
+
+### <a name="visual-studio-2015"></a>Visual Studio 2015
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Uusimpien Visual Studio -versioiden tueksi on tehtävä joitakin muutoksia Visual Studion X + +-laajennuksiin. Nämä muutokset eivät ole yhteensopivia Visual Studio 2015:n kanssa. |
+| **Onko toinen ominaisuus korvannut?**   | Visual Studio 2017 korvaa Visual Studio 2015:n käyttöönotettuna ja vaaditussa muodossa. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Kun uusien virtuaalikoneiden (VM) ja Visual Studio 2017:n saatavuudesta on ilmoitettu, nykyiset VM:t, joissa on vain Visual Studio 2015, on otettava uudelleen käyttöön Release Wave 1/2021 mennessä. |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Virheellisiä kenttäviitteitä sisältävät kenttäryhmät
 

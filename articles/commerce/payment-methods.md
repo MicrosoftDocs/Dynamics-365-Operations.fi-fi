@@ -3,7 +3,7 @@ title: Maksutavat
 description: Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä, kun järjestelmä on määritetty. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6afbddad869c70e4527c49fc5d4b520d7602f825
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022447"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463157"
 ---
 # <a name="payment-methods"></a>Maksutavat
 
@@ -39,7 +39,7 @@ Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tu
 - **Valuutta** – Ensisijainen muu maksuväline kuin yrityksen oletusvaluutta. Kolikot ja setelit ovat valuutan muotoja. Valuutan maksutapaa edustaa kaikkia käytettäviä valuuttoja. Ennen tämän maksutavan käyttöönottoa on määritettävä valuutat sekä valuuttojen vaihtokurssitiedot.
 - **Kortti** – Kaikki käytettävät kortit, kuten pankki- ja luottokortit. Suosittelemme, että määrität yhden korttimaksutavan organisaatiotasolla, joka edustaa kaikkia korttityyppejä. Voit sitten määrittää maksutavan kussakin myymälässä kullekin kortille tai korttijoukolle, jota käsitellään käyttäen samoja asetuksia. Jotta voit hyväksyä korttimaksuja kaupassa, sinun on määritettävä markkinoilla saatavilla olevat eri valmistajien pankki- ja luottokortit.
 - **Hyvityslasku** – Hyvityslaskut, jotka annetaan tai hyvitetään myyntipisteessä. Hyvityslasku voi olla joko hyvitys tai palautuslasku, joka annetaan palautetulle myynnille. Jos hyvityslaskut hyvitetään vain osittain, ohjelma myöntää uudella numerolla uuden hyvityslaskun jäljelle jäävästä saldosummasta. Uudella hyvityslaskulla on uusi numero. Hyvityslaskua voi käyttää vain kerran, ja järjestelmä pitää yllä tietuetta kaikista käytetyistä numeroista. Tietuetta voi tarkastella **Hyvityslaskutaulukko**-sivulla. Asiakas ei voi lunastaa hyvityslaskun arvoa suurempaa summaa.
-- **Lahjakortti** – Lahjakortit, jotka myönnetään ja hyvitetään myyntipisteessä. Liikamaksu ei ole sallittu lahjakorteissa.
+- **Lahjakortti** – Lahjakortit, jotka myönnetään ja hyvitetään myyntipisteessä. Liikamaksu ei ole sallittu lahjakorteissa. Kaikissa lahjakorteissa on oltava korttinumeroiden yhdistämismääritykset. 
 - **Asiakastili** – Maksuja, jotka voidaan veloittaa myyntiajankohtana kassakoneelta asiakastilille. Tämän maksutavan avulla voit kerätä myyntitietoja tai asiakaskohtaisia alennuksia, kun asiakas tekee maksuja toista maksutapaa käyttäen. Tätä varten on määritettävä asiakaskohtaiset tiedot.
 - **Kanta-asiakkuuspisteet** – Pisteitä, joita asiakkaat kerryttävät osana kanta-asiakasohjelmaa. Jos luot kanta-asiakasohjelmia, asiakkaat voivat ansaita pisteitä ja saada niistä hyvityksen useilla tavoilla. Joissain kanta-asiakasohjelmissa asiakkaat voivat esimerkiksi lunastaa kanta-asiakaspisteensä alennuksen muodossa tai jopa käyttää niitä maksamiseen.
 

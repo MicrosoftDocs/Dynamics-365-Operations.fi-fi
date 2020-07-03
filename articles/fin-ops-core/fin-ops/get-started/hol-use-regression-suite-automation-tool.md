@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248733"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410147"
 ---
-# <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -oppaan käyttäminen
+# <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -opas
 
 [!include [banner](../includes/banner.md)]
 
@@ -97,7 +97,7 @@ Tämä toiminto ottaa näyttökuvat tehtävätallenteen aikana suoritetuista vai
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Kun ajat testitapauksen, RSAT luo tilannevedoksia (kuvia) vaiheista, jotka näytetään työskentelyhakemistossa olevien testitapausten toistokansiossa. Jos käytät vanhaa RSAT-versiota, kuvat tallennetaan kohteeseen **C:\\Käyttäjät\\\<Käyttäjätunnus\>\\AppData\\verkkovierailu\\regressiontool\\toisto**, erillinen kansio luodaan kullekin testitapaukselle, joka suoritetaan.
+Kun ajat testitapauksen, RSAT luo tilannevedoksia (kuvia) vaiheista, jotka näytetään työskentelyhakemistossa olevien testitapausten toistokansiossa. Jos käytät vanhaa RSAT-versiota, kuvat tallennetaan kohteeseen **C:\\Käyttäjät\\\<Username\>\\AppData\\verkkovierailu\\regressionTool\\toisto**, erillinen kansio luodaan kullekin testitapaukselle, joka suoritetaan.
 
 ## <a name="assignment"></a>Toimeksianto
 
@@ -452,9 +452,9 @@ Sinulla on uuden asiakkaan luova testikomentosarja. Tämä testisarja voidaan su
 
 - Asiakastunnus
 - Asiakkaan nimi
-- Asiakkaan osoitetiedot
+- Asiakkaan osoite
 
-Asiakastunnuksen muoto on seuraavanlainen: *ATCUS\<numero\>*, jossa \<numeron\> arvo on **000000001**–**999999999**.
+Asiakastunnuksen muoto on seuraavanlainen: *ATCUS\<number\>*, jossa \<number\> on arvo on luku **000000001** ja **999999999** väliltä.
 
 Seuraavassa esimerkissä käytetään yhtä **aloitus**-parametria määrittämään ensimmäinen käytettävä numero. Is käyttää seuraavaa parametria **nr** määrittämään luotavien asiakkaiden määrän. Excelin parametritiedoston parametrit muutetaan kussakin iteraatiossa käyttämällä UpdateCustomer-funktiota. RSAT-komentorivi kutsutaan sitten RunTestCase-funktiolla.
 

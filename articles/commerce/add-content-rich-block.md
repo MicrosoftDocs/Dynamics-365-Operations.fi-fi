@@ -3,7 +3,7 @@ title: Tekstilohkomoduuli
 description: Tässä ohjeaiheessa on tietoja tekstilohkomoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc5b2fa35633b1ce7f7ffefacec318e14fa8db3f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025594"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411132"
 ---
 # <a name="text-block-module"></a>Tekstilohkomoduuli
 
@@ -46,9 +46,13 @@ Tekstilohkomoduuleja voi käyttää seuraavasti:
 * Voit lisätä mukautettuja sanomia tuotetietosivulle. (esimerkiksi Ilmainen tilaus uli 50 $ arvoisille tilauksille).
 * Tuotetieto-, ostoskori-, kassa- ja muiden sivujen vastuuvapauslausekkeet ja yhteystiedot (esimerkiksi Myymälän käytännöt koskevat toimituksia ja palautuksia).
 
+Seuraavassa kuvassa näkyy esimerkki tekstilohkomoduulista, jota käytetään kotisivulla.
+
+![Esimerkki tekstilohkomoduulista](./media/ecommerce-textblock.PNG)
+
 ## <a name="text-block-module-properties"></a>Tekstilohkomoduulin ominaisuudet
 
-| Ominaisuuden nimi     | Value                                            | Kuvaus |
+| Ominaisuuden nimi     | Arvo                                            | kuvaus |
 |-------------------|--------------------------------------------------|-------------|
 | Muotoiltu teksti         | Muotoiltu teksti                                        | Kappaleen teksti. Joitakin RTF-ominaisuuksia tuetaan. Näitä ominaisuuksia ovat esimerkiksi lihavointi, alleviivaus ja kursiivi. |
 | Mukautetun luokan nimi | CSS-tyylisivujen luokan nimi        | Mukautetun CSS-luokan nimi, jonka kehittäjä antaa moduulin muotoiluun. Luokan nimi on määritettävä teemapaketissa. |
@@ -58,21 +62,27 @@ Tekstilohkomoduuleja voi käyttää seuraavasti:
 
 Voit lisätä tekstilohkomoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Sisältömalli**. 
-1. Lisää **Teksti**-paikkaan **Oletussivu**-moduuli.
-1. Kun mallin muokkaus on valmis, julkaise se.
-1. Käytä juuri luotua sisältömallia, kun haluat luoda sivun nimeltä **Sisältösivu**.
-1. Lisää säilömoduuli uuden sivun **pääpaikkaan**.
+1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Sisältömalli**.
+1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunassa **Sisältömalli**. Kirjoita **Sivun nimi** -kohtaan **Sisältösivu** ja valitse sitten **OK**.
+1. Valitse uudella sivulla **Pää**-paikka. Valitse kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
 1. Määritä säilömoduulin ominaisuusruudun **Leveys**-ominaisuudeksi **Täytä säilö**.
-1. Lisää tekstilohkomoduuli säilömoduuliin. 
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Tekstilohko**-moduuli ja valitse sitten **OK**. 
 1. Lisää tekstiä tekstilohkomoduulin ominaisuusruudun **RTF**-kenttään.
-1. Kun sivun muokkaus on valmis, julkaise se.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
 
-[Kampanjabannerimoduuli](add-alert.md)
+[Promopalkkimoduuli](add-alert.md)
 
 [Karusellimoduuli](add-carousel.md)
 

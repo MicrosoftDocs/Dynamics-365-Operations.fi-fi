@@ -3,7 +3,7 @@ title: Ostoskorimoduuli
 description: Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d91f6ff24f8f2c051ed23565983c2bc6a2c12b55
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 3ba46fd90507a9cf8da92598c8449a2e553da352
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261418"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411270"
 ---
 # <a name="cart-module"></a>Ostoskorimoduuli
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
@@ -36,7 +37,11 @@ Ostokorimoduuli näyttää ostoskoriin lisätyt nimikkeet ennen asiakkaan siirty
 
 Ostoskorimoduuli tukee kirjautuneiden kassan käyttämistä kirjautuneena ja vieraana. Se tukee myös **Jatka ostoksia** -linkkejä. Voit määrittää tämän linkin reitin valitsemalla **Sivuston asetukset \> Laajennukset \> Reitit**.
 
-Ostoskorimoduuli esittää tiedot ostoskorin tunnuksen mukaan, joka on koko sivuston käytettävissä oleva selaineväste.
+Ostoskorimoduuli esittää tiedot ostoskorin tunnuksen mukaan, joka on koko sivuston käytettävissä oleva selaineväste. 
+
+Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta.
+
+![Esimerkki ostoskärrymoduulista](./media/cart2.PNG)
 
 ## <a name="cart-module-properties-and-slots"></a>Ostoskorimoduulin ominaisuudet ja paikat
 
@@ -47,14 +52,12 @@ Ostoskorimoduulissa on **Otsikko**-ominaisuus, jonka arvoiksi voidaan määritt�
 - **Tekstilohko** – Tämä moduuli tukee mukautettua viestintää ostoskorimoduulissa. Sisällönhallintajärjestelmä (CMS) ohjaa viestintää. Voit lisätä minkä tahansa viestin, esimerkiksi Jos tilauksessa on ongelmia, soita numeroon 1-800-Fabrikam.
 - **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Lisätietoja tästä moduulista on kohdassa [Kaupan valitsinmoduuli](store-selector.md).
 
-
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
-Ostoskorimoduulissa on seuraavat asetukset, jotka voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
+Seuraavat ostoskorimoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
 
 - **Maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
-- **Varaston tarkistus** – Kun arvoksi on asetettu **Tosi**, nimike lisätään ostoskoriin vasta, kun ostoruutumoduuli varmistaa, että nimikettä on varastossa. Tämä varaston tarkistus tehdään skenaarioissa, joissa nimike toimitetaan, että skenaarioissa, joissa se noudetaan myymälästä. Jos arvoksi on määritetty **Epätosi**, varaston tarkistus tehdään vasta, kun nimike on lisätty ostoskoriin ja tilaus on tehty. Lisätietoja varastoasetusten määrittämisestä taustaohjelmassa on kohdassa [Varaston käytettävyyden laskeminen vähittäismyyntikanaville](calculated-inventory-retail-channels.md).
-- **Varaston puskuri** – Tällä ominaisuudella määritetään varaston puskurimäärä. Varastoa ylläpidetään reaaliaikaisesti. Jos useat asiakkaat tekevät tilauksia, todellisen varastomäärän ylläpitäminen voi olla vaikeaa. Kun varaston tarkistus tehdään ja varasto on pienempi kuin puskurisumma, tuotetta käsitellään kuin se olisi loppunut varastosta. Kun myynti tapahtuu nopeasti useiden kanavien kautta eikä varastomäärä ole täysin synkronoitu, on pienempi riski siitä, että nimikettä ei ole varastossa myynnin hetkellä.
+- **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
 - **Jatka ostoksia** – Tällä ominaisuudella määritetään **Jatka ostoksia** -linkin reitti. Reitti voidaan konfiguroida sivuston tasolla, jolloin jälleenmyyjät voivat ohjata asiakkaan takaisin kotisivulle tai mille tahansa muulle sivuston sivulle.
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
@@ -65,15 +68,23 @@ Ostoskorimoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 
 Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo osa nimeltä **Ostoskoriosa** ja lisää uuteen osaan ostoskorimoduuli.
-1. Lisää otsikko ostoskorimoduuliin.
-1. Lisää myymälän valitsinmoduuli ostoskorimoduuliin.
-1. Tallenna osa, lopeta sen muokkaus ja sitten julkaise osa.
-1. Luo malli nimeltä **Ostoskorimalli** ja lisää juuri luotu ostoskoriosa.
-1. Tallenna malli, lopeta sen muokkaus ja sitten julkaise malli.
-1. Luo sivu, joka käyttää uutta mallia.
-1. Tallenna ja esikatsele sivu.
-1. Lopeta sivun muokkaus ja sitten julkaise sivu.
+1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi uuden osan.
+1. Valitse **Uusi sivun osa** -valintaikkunassa **Ostoskori**-moduuli.
+1. Kirjoita **Sivun osan nimi** -kohtaan **Ostoskorin osa** ja valitse sitten **OK**.
+1. Valitse **Ostoskori**-paikka.
+1. Valitse oikealla olevassa ominaisuudet-ruudussa kynäsymboli, kirjoita otsikko tekstikenttään ja valitse sitten valintamerkkisymboli.
+1. Valitse kolme pistettä (**...**) **Ostoskori**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
+1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan mallin nimi.
+1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoskorin osa** ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunassa malli, jonka loit aiemmin, lisää sivun nimi ja valitse sitten **OK**.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
