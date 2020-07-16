@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (heinäkuu 2020)
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (toukokuu 2020)
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
@@ -1184,6 +1182,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Sarakemääritykset
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Talousraporttien raportointipuiden määritykset
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: Rivin määrityksen solujen muokkaaminen
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Talousraportoinnin tietovaraston osajoukon palauttaminen
@@ -3386,12 +3386,18 @@
                       items:
                         - name: 'Konfiguraatioiden tuonti GR:stä'
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Lataa konfiguraatiot GR-järjestelmään
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: 'Jaa kokoonpanot GR:ssä'
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Pika-aloitusoppaat
+              items:
+                - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: Oppaat
               items:
                 - name: Tietolähteiden käyttäminen

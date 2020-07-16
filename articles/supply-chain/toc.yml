@@ -74,8 +74,6 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (heinäkuu 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (toukokuu 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -2565,192 +2563,230 @@
           items:
             - name: Varastonhallinnan yleiskatsaus
               href: warehousing/warehouse-management-overview.md
-            - name: Varaston konfigurointi
+            - name: Saapuvien varaston työvaiheet
               items:
-                - name: Varaston konfiguroinnin yleiskatsaus
-                  href: warehousing/warehouse-configuration.md
-                - name: Varaston määrittäminen varaston konfigurointimallin avulla
-                  href: inventory/warehouse-template.md
-                - name: Työnhallinta työmallien ja sijaintidirektiivien avulla
-                  href: warehousing/control-warehouse-location-directives.md
-                - name: Aallon vaihekoodit
-                  href: warehousing/wave-step-codes.md
-                - name: Aaltokäsittelyn määritys
-                  href: warehousing/tasks/configure-wave-processing.md
-                - name: Lähetysten automaattinen päivitys
-                  href: warehousing/auto-update-shipment.md
-                - name: Toimipaikkaprofiilin luonti
-                  href: warehousing/tasks/create-location-profile.md
-                - name: Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa
-                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-                - name: Kuormituksen käyttöasteen ajoittaminen
-                  href: warehousing/schedule-load-utilization.md
-                - name: Kuormituskapasiteetin ajoittaminen
-                  href: warehousing/schedule-workload-capacity.md
-                - name: Määritä käsittelykoodit
-                  href: warehousing/tasks/set-up-dispositions-codes.md
-                - name: Mittayksikkö ja varastointikäytännöt
-                  href: warehousing/unit-measure-stocking-policies.md
-                - name: Varaston Power BI -sisältö
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                - name: Järjestelmän ryhmittely avoimessa työluettelossa
-                  href: warehousing/system-group-on-open-work-list.md
-                - name: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
-                  href: warehousing/document-routing-layout-for-license-plates.md
-                - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Mobiililaitteiden viivakoodituki
-                  href: warehousing/mobile-barcode-support.md
-                - name: Siirtotilausten varaston määrittäminen
-                  href: warehousing/transfer-orders-warehouse.md
-            - name: Varaukset varastonhallinnassa
+                - name: Rekisteröintien ja poispanojen vastaanotot
+                  items:
+                    - name: Ostotilausten saapuvien kuormien varastokäsittely
+                      href: warehousing/inbound-load-handling.md
+                    - name: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
+                      href: warehousing/tasks/register-items-advanced-warehousing.md
+                    - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
+                      href: warehousing/tasks/register-items-basic-warehousing.md
+                    - name: Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin
+                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                    - name: Sijaintidirektiivin määrittäminen ostotilauksen poispanolle
+                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                    - name: Työmallin määrittäminen ostotilauksia varten
+                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                    - name: Tuotedimensioiden yhdistäminen sijainnissa
+                      href: warehousing/location-product-dimension-mixing.md
+            - name: Lähtevien varaston työvaiheet
               items:
-                - name: Joustava varastotason dimensioiden varauskäytäntö
-                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
-            - name: Varaston työkäytännöt
-              items:
-                - name: Varaston työkäytännöt – yleiskatsaus
-                  href: warehousing/warehouse-work-policies.md
-                - name: Määritä varaston työkäytännöt
-                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
-                - name: Työhön liitetyn varaston siirtäminen varastonhallinnassa
-                  href: warehousing/move-inventory-associated-work.md
-                - name: Työluokan luominen
-                  href: warehousing/tasks/create-work-class.md
-                - name: Varastotyöntekijöiden hallinta
-                  href: warehousing/manage-warehouse-workers.md
-                - name: Varastotyön lykätty käsittely
-                  href: warehousing/deferred-put.md
-            - name: Cross-docking
-              items:
-                - name: Cross-docking tuotantotilauksista lähtevien laituriin
-                  href: production-control/cross-docking-opportunities.md
-                - name: Lähetyksen automaattinen vapauttaminen cross-dockingia varten
-                  href: warehousing/auto-release-shipment-for-cross-docking.md
-            - name: Osittainen vapautus ja osalähetys
-              items:
-                - name: Kuljetuskuorman osalähetys
-                  href: warehousing/partial-shipping-of-transport-loads.md
-                - name: Osittain varattujen siirtotilauserien vapautus
-                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-            - name: Keräys ja pakkaus
-              items:
-                - name: Määritä klusterikeräily
-                  href: warehousing/set-up-cluster-picking.md
-                - name: Määritä konttiinpakkaus
-                  href: warehousing/tasks/set-up-containerization.md
-                - name: Erän ja rekisterikilven tiedot
-                  href: warehousing/batch-and-license-plate-confirmation.md
-                - name: Rekisterikilven etiketin tulostuksen ottaminen käyttöön
-                  href: warehousing/tasks/license-plate-label-printing.md
-                - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Kappaleen keräilyvahvistus
-                  href: warehousing/piece-picking-confirmation.md
-                - name: Pakkausmateriaalit ja maksut
-                  href: warehousing/pack-materials-packing-material-fees.md
-                - name: Määritä manuaalinen pakkaus (vain helmikuu ja toukokuu 2016)
-                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                - name: Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
-                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
-                  href: warehousing/cancel-warehouse-work.md
-                - name: Järjestelmäohjattu klusterikeräily
-                  href: warehousing/system-directed-cluster-pick.md
-                - name: Keräilyrivin ryhmittely
-                  href: warehousing/pick-line-grouping.md
-            - name: Varastoinventointi
-              items:
-                - name: Varastoinventoinnin syykoodit
-                  href: warehousing/reason-codes-for-counting-journals.md
-                - name: Varaston esto
-                  href: inventory/inventory-blocking.md
-                - name: Inventointi
-                  href: warehousing/cycle-counting.md
-                - name: Inventoinnin määrittäminen
-                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
-                - name: Sijainnin osittainen inventointi
-                  href: warehousing/partial-location-cycle-counting.md
-                - name: Sijainnin osittaisen inventointiprosessin määrittäminen
-                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                - name: Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
-                  href: warehousing/onhand-cleanup.md
-                - name: Varastokirjauskansio
-                  href: inventory/inventory-journals.md
-                - name: Varastosijainti
-                  href: inventory/inventory-locations.md
-                - name: Varaston tila
-                  href: inventory/inventory-statuses.md
-                - name: Varaston tunnisteiden inventointi
-                  href: inventory/inventory-tag-counting.md
-            - name: Täydennys
-              items:
-                - name: Täydennyksen yleiskatsaus
-                  href: warehousing/replenishment.md
-                - name: Välitön täydennys
-                  href: warehousing/immediate-replenishment.md
-                - name: Täydennys ja otto-kanbanit
-                  href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Vähimmäis-/enimmäistäydennysprosessin määrittäminen
-                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
-            - name: Varastointisovelluksen asentaminen ja määrittäminen
-              items:
-                - name: Varastointisovelluksen asentaminen ja yhdistäminen
-                  href: warehousing/install-configure-warehousing-app.md
-                - name: Kenttien nimien määrittäminen varastointisovelluksessa
-                  href: warehousing/configure-app-field-names-priorities-warehouse.md
-                - name: Varastotyön mobiililaitteiden määrittäminen
-                  href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Rekisterikilven vastaanotto varastointisovelluksella
-                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
-                  href: warehousing/tasks/set-up-mobile-device-menu.md
-                - name: Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
-                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                - name: Luo valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten
-                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                - name: Yhdistetyn rekisterikilven vastaanotto mobiililaitteella
-                  href: warehousing/mixed-license-plate-receiving.md
-                - name: Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa
-                  href: warehousing/display-older-batches-within-warehouses.md
-                - name: Mobiililaitteen vanhimman erän kerääminen
-                  href: warehousing/pick-oldest-batch.md
-                - name: Prosessioppaan kehys
-                  href: warehousing/process-guide-framework.md
-            - name: Päivitys ja siirto
-              items:
-                - name: Päivitä varastonhallintaprosessit Microsoft Dynamics AX 2012 -versiosta Finance and Operationsiin
-                  href: warehousing/upgrade-migration-warehouse-management-processes.md
-            - name: Rekisteröintien ja poispanojen vastaanotot
-              items:
-                - name: Ostotilausten saapuvien kuormien varastokäsittely
-                  href: warehousing/inbound-load-handling.md
-                - name: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
-                  href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
-                  href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin
-                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                - name: Sijaintidirektiivin määrittäminen ostotilauksen poispanolle
-                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                - name: Työmallin määrittäminen ostotilauksia varten
-                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
-            - name: Lähetyksen konsolidoinnin käytännöt
-              items:
+                - name: Varaukset varastonhallinnassa
+                  items:
+                    - name: Joustava varastotason dimensioiden varauskäytäntö
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                - name: Osittainen vapautus ja osalähetys
+                  items:
+                    - name: Kuljetuskuorman osalähetys
+                      href: warehousing/partial-shipping-of-transport-loads.md
+                    - name: Osittain varattujen siirtotilauserien vapautus
+                      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                - name: Keräys ja pakkaus
+                  items:
+                    - name: Määritä klusterikeräily
+                      href: warehousing/set-up-cluster-picking.md
+                    - name: Määritä konttiinpakkaus
+                      href: warehousing/tasks/set-up-containerization.md
+                    - name: Erän ja rekisterikilven tiedot
+                      href: warehousing/batch-and-license-plate-confirmation.md
+                    - name: Rekisterikilven etiketin tulostuksen ottaminen käyttöön
+                      href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Kappaleen keräilyvahvistus
+                      href: warehousing/piece-picking-confirmation.md
+                    - name: Pakkausmateriaalit ja maksut
+                      href: warehousing/pack-materials-packing-material-fees.md
+                    - name: Määritä manuaalinen pakkaus (vain helmikuu ja toukokuu 2016)
+                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
+                      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                    - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
+                      href: warehousing/cancel-warehouse-work.md
+                    - name: Järjestelmäohjattu klusterikeräily
+                      href: warehousing/system-directed-cluster-pick.md
+                    - name: Järjestelmäohjattu työjärjestys
+                      href: warehousing/system-directed-work-sequencing.md
+                    - name: Keräilyrivin ryhmittely
+                      href: warehousing/pick-line-grouping.md
+                    - name: Varastopaikoitus
+                      href: warehousing/warehouse-slotting.md
+                - name: Täydennys
+                  items:
+                    - name: Täydennyksen yleiskatsaus
+                      href: warehousing/replenishment.md
+                    - name: Välitön täydennys
+                      href: warehousing/immediate-replenishment.md
+                    - name: Täydennys ja otto-kanbanit
+                      href: warehousing/material-replenishment-withdrawal-kanban.md
+                    - name: Vähimmäis-/enimmäistäydennysprosessin määrittäminen
+                      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                    - name: Vyöhykkeen rajatäydennys
+                      href: warehousing/zone-threshold-replenishment.md
+                - name: Kuormituksen luonti ja lähetykset
+                  items:
+                    - name: Vahvista ja siirrä
+                      href: warehousing/confirm-and-transfer.md
+                    - name: Kuormituksen lisäluonti aallon aikana
+                      href: warehousing/advanced-load-building-during-wave.md
+                    - name: Vapauta varastoon -sääntö
+                      href: warehousing/release-to-warehouse-rule.md
+                    - name: Aallon mallipohjan ryhmittely
+                      href: warehousing/wave-template-grouping.md
                 - name: Lähetyksen konsolidoinnin käytännöt
-                  href: warehousing/about-shipment-consolidation-policies.md
-                - name: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
-                  href: warehousing/configure-shipment-consolidation-policies.md
-                - name: 'Skenaario 1 – Lähetysten konsolidointi, kun lähetykset vapautetaan varastoon käyttämällä myyntitilausten automaattista vapautusta'
-                  href: warehousing/consolidate-shipments-automatic.md
-                - name: 'Skenaario 2 – Lähetysten konsolidointi, kun lähetysten konsolidointikäytäntö ohitetaan Vapauta varastoon -sivulla'
-                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                - name: Skenaario 3 – Lähetysten konsolidointi käyttämällä varastoon vapauttamista kuormasuunnittelun työtilasta
-                  href: warehousing/consolidate-shipments-load-planning-workbench.md
-                - name: Skenaario 4 – Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
-                  href: warehousing/consolidate-shipments-manual-workbench.md
-                - name: Skenaario 5 – Lähetysten konsolidointi manuaalisesti käyttämällä Lähetysten konsolidointi -sivua
-                  href: warehousing/consolidate-shipments-manual-form.md
+                  items:
+                    - name: Lähetyksen konsolidoinnin käytännöt
+                      href: warehousing/about-shipment-consolidation-policies.md
+                    - name: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
+                      href: warehousing/configure-shipment-consolidation-policies.md
+                    - name: 'Skenaario 1 – Lähetysten konsolidointi, kun lähetykset vapautetaan varastoon käyttämällä myyntitilausten automaattista vapautusta'
+                      href: warehousing/consolidate-shipments-automatic.md
+                    - name: 'Skenaario 2 – Lähetysten konsolidointi, kun lähetysten konsolidointikäytäntö ohitetaan Vapauta varastoon -sivulla'
+                      href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                    - name: Skenaario 3 – Lähetysten konsolidointi käyttämällä varastoon vapauttamista kuormasuunnittelun työtilasta
+                      href: warehousing/consolidate-shipments-load-planning-workbench.md
+                    - name: Skenaario 4 – Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
+                      href: warehousing/consolidate-shipments-manual-workbench.md
+                    - name: Skenaario 5 – Lähetysten konsolidointi manuaalisesti käyttämällä Lähetysten konsolidointi -sivua
+                      href: warehousing/consolidate-shipments-manual-form.md
+            - name: Koko varaston toiminnot
+              items:
+                - name: Varaston työkäytännöt
+                  items:
+                    - name: Varaston työkäytännöt – yleiskatsaus
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Määritä varaston työkäytännöt
+                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                    - name: Työhön liitetyn varaston siirtäminen varastonhallinnassa
+                      href: warehousing/move-inventory-associated-work.md
+                    - name: Työluokan luominen
+                      href: warehousing/tasks/create-work-class.md
+                    - name: Varastotyöntekijöiden hallinta
+                      href: warehousing/manage-warehouse-workers.md
+                    - name: Varastotyön lykätty käsittely
+                      href: warehousing/deferred-put.md
+                - name: Cross-docking
+                  items:
+                    - name: Cross-docking tuotantotilauksista lähtevien laituriin
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Lähetyksen automaattinen vapauttaminen cross-dockingia varten
+                      href: warehousing/auto-release-shipment-for-cross-docking.md
+                    - name: Suunniteltu cross-docking
+                      href: warehousing/planned-cross-docking.md
+                - name: Varastoinventointi
+                  items:
+                    - name: Varastoinventoinnin syykoodit
+                      href: warehousing/reason-codes-for-counting-journals.md
+                    - name: Varaston esto
+                      href: inventory/inventory-blocking.md
+                    - name: Inventointi
+                      href: warehousing/cycle-counting.md
+                    - name: Inventoinnin määrittäminen
+                      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                    - name: Sijainnin osittainen inventointi
+                      href: warehousing/partial-location-cycle-counting.md
+                    - name: Sijainnin osittaisen inventointiprosessin määrittäminen
+                      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
+                      href: warehousing/onhand-cleanup.md
+                    - name: Varastokirjauskansio
+                      href: inventory/inventory-journals.md
+                    - name: Varastosijainti
+                      href: inventory/inventory-locations.md
+                    - name: Varaston tila
+                      href: inventory/inventory-statuses.md
+                    - name: Varaston tunnisteiden inventointi
+                      href: inventory/inventory-tag-counting.md
+                - name: Varastotyö
+                  items:
+                    - name: Työrivin tiedot
+                      href: warehousing/work-line-details.md
+                    - name: Toimipaikan rekisterikilpien paikannus
+                      href: warehousing/location-license-plate-positioning.md
+            - name: Varaston asetukset
+              items:
+                - name: Varaston konfigurointi
+                  items:
+                    - name: Varaston konfiguroinnin yleiskatsaus
+                      href: warehousing/warehouse-configuration.md
+                    - name: Varaston määrittäminen varaston konfigurointimallin avulla
+                      href: inventory/warehouse-template.md
+                    - name: Työnhallinta työmallien ja sijaintidirektiivien avulla
+                      href: warehousing/control-warehouse-location-directives.md
+                    - name: Aallon vaihekoodit
+                      href: warehousing/wave-step-codes.md
+                    - name: Aaltokäsittelyn määritys
+                      href: warehousing/tasks/configure-wave-processing.md
+                    - name: Lähetysten automaattinen päivitys
+                      href: warehousing/auto-update-shipment.md
+                    - name: Toimipaikkaprofiilin luonti
+                      href: warehousing/tasks/create-location-profile.md
+                    - name: Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa
+                      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                    - name: Varastosijainnin tila
+                      href: warehousing/warehouse-location-status.md
+                    - name: Sijainnin lisävyöhykkeet
+                      href: warehousing/additional-location-zones.md
+                    - name: Ajoita kuormituksen käyttöaste
+                      href: warehousing/schedule-load-utilization.md
+                    - name: Kuormituskapasiteetin ajoittaminen
+                      href: warehousing/schedule-workload-capacity.md
+                    - name: Määritä käsittelykoodit
+                      href: warehousing/tasks/set-up-dispositions-codes.md
+                    - name: Mittayksikkö ja varastointikäytännöt
+                      href: warehousing/unit-measure-stocking-policies.md
+                    - name: Varaston Power BI -sisältö
+                      href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                    - name: Järjestelmän ryhmittely avoimessa työluettelossa
+                      href: warehousing/system-group-on-open-work-list.md
+                    - name: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
+                      href: warehousing/document-routing-layout-for-license-plates.md
+                    - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Mobiililaitteiden viivakoodituki
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Siirtotilausten varaston määrittäminen
+                      href: warehousing/transfer-orders-warehouse.md
+                - name: Varastosovelluksen asentaminen ja määrittäminen
+                  items:
+                    - name: Varastosovelluksen asentaminen ja yhdistäminen
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Kenttien nimien määrittäminen varastosovelluksessa
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Varastotyön mobiililaitteiden määrittäminen
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Rekisterikilven vastaanotto varastosovelluksella
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Luo valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Yhdistetyn rekisterikilven vastaanotto mobiililaitteella
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Mobiililaitteen vanhimman erän kerääminen
+                      href: warehousing/pick-oldest-batch.md
+                    - name: Prosessioppaan kehys
+                      href: warehousing/process-guide-framework.md
+                - name: Päivitys ja siirto
+                  items:
+                    - name: Päivitä varastonhallintaprosessit Microsoft Dynamics AX 2012 -versiosta Finance and Operationsiin
+                      href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Supply Chain Managementin kehittäminen
           items:
             - name: Gantt-ohjausobjektin kehitysopas
