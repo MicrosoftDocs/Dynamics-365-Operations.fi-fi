@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e6ccdce21ccc5f3e83ad860163cccadcea2edc
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 07/03/2020
 ms.locfileid: "3346419"
 ---
 # <a name="subcontracting"></a>Alihankinta
@@ -211,7 +211,7 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
 
     ![Kaksi työjoukkoa raakamateriaalin keräykseen Työ-sivulla](./media/subcontract22_work-page.png)
 
-26. Käynnistä varastointisovellus varastotyön käsittelemiseksi työvaiheelle 10.
+26. Käynnistä varastosovellus varastotyön käsittelemiseksi työvaiheelle 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -229,7 +229,7 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
 
     Huomaa, että tuotantotilauksen tilana on nyt **Käynnistetty**. Työvaiheen 10 materiaalit käytetään keräysluettelokirjauskansion automaattisessa kirjauksessa. Työvaiheen 10 ajankäyttö lasketaan reitityskorttikirjauskansion automaattisen kirjauksen mukaan.
 
-32. Käynnistä varastointisovellus varastotyön käsittelemiseksi työvaiheelle 20.
+32. Käynnistä varastosovellus varastotyön käsittelemiseksi työvaiheelle 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -252,7 +252,7 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
 
     ![Kirjauskansion rivit Keräysluettelo-sivulla](./media/subcontract25_picking-list.png)
 
-38. Valitse toimintoruudussa **Tulosta**\>**Keräysluettelon raportti**, jotta voit avata **Keräysluettelon raportti** -valintaikkunan.
+38. Valitse toimintoruudussa **Tulosta** \> **Keräysluettelon raportti**, jotta voit avata **Keräysluettelon raportti** -valintaikkunan.
 39. Määritä **Käytä toimitusilmoituksen asettelua** -vaihtoehdon arvoksi **Kyllä**.
 
     ![Keräysluettelon raportti -valintaikkuna](./media/subcontract26_picking-list-report-dialog.png)

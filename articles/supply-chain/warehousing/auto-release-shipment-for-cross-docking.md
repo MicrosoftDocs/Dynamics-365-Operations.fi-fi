@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201476"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530233"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Lähetyksen automaattinen vapautus cross-dockingia varten
 
@@ -164,7 +164,7 @@ Valmiin tavaramäärän cross-docking myyntitilauksen lähtösijaintiin tapahtuu
 8. Valitse **Tuotantotilaus**-sivun toimintoruudun **Tuotantotilaus**-välilehden **Prosessi**-ryhmässä **Arvio** ja sitten **OK**. Tilaus arvioidaan ja raaka-ainemäärä varataan tuotantoon.
 9. Valitse toimintoruudun **Tuotantotilaus**-välilehden **Prosessi**-ryhmässä **Vapautus** ja sitten **OK**. Raaka-aineille luodaan varaston keräilytyö.
 10. Avaa ja tarkista työ. Valitse toimintoruudun **Varasto**-välilehden **Yleinen**-ryhmässä **Työn tiedot**. Kirjoita työn tunnus muistiin.
-11. Avaa Dynamics 365 for Finance and Operationsin varastointisovellus ja kirjaudu siihen työn suorittamiseksi varastossa 51.
+11. Kirjaudu sisään varastosovellukseen ja suorita työ varastossa 51.
 12. Siirry kohtaan **Tuotanto** \> **Tuotannon keräily**.
 13. Aloita ja suorita raaka-aineiden keräily syöttämällä työn tunnus. 
 

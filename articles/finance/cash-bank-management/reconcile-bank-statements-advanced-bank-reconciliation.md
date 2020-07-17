@@ -3,7 +3,7 @@ title: Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköisiä tiliotteita ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä aiheessa käsitellään täsmäytysprosessia.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37cf8d83c7134ae65da6a885bffeb01d16f9f06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177558"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497142"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
@@ -41,9 +41,9 @@ Voit ladata yhden tilin tai useiden tilien tietoja sisältävän tiliotteen. Jos
 -   Jos haluat tuoda yhden tilin tiliotetiedoston, valitse ensin **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Ei** ja valitse sitten tiliotteeseen liitetty pankkitili. Valitse liitetty tiliotetiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**.
 -   Jos haluat tuoda yhden, useita tilejä sisältävän tiliotetiedoston, valitse **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Kyllä**. Valitse liitetty tiliotetiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**.
 
-Jos mitään sähköisen tiedoston tiliotetta ei voida liittää pankkitiliin käyttämällä tunnistekenttiä, niitä ei tuoda. Muita tiedoston tiliotteita voidaan silti tuoda. Käyttäjä saa tällöin viestin, jossa ilmoitetaan, että tiliotteiden tuonti ei onnistunut määritetylle pankkitilille. Huomaa, että käyttäjällä, joka tuo tiliotetiedoston, täytyy olla yrityksen käyttöoikeudet, jotta hän voi tuoda tiliotteita yrityksen pankkitileiltä. 
+Jos mitään sähköisen tiedoston tiliotetta ei voida liittää pankkitiliin tai jos se on liitetty useisiin pankkitileihin käyttämällä tunnistekenttiä, niitä ei tuoda. Muita tiedoston tiliotteita voidaan silti tuoda. Käyttäjä saa tällöin viestin, jossa ilmoitetaan, että tiliotteiden tuonti ei onnistunut määritetylle pankkitilille. Huomaa, että käyttäjällä, joka tuo tiliotetiedoston, täytyy olla yrityksen käyttöoikeudet, jotta hän voi tuoda tiliotteita yrityksen pankkitileiltä. 
 
-Voit myös ladata useita tiliotetiedostoja Financeen yhdellä kertaa käyttämällä zip-tiedostoa. Jos haluat tuoda useita tilejä sisältäviä useita tiliotetiedostoja, lisää kaikki tiliotetiedostot yhteen zip-tiedostoon. Valitse **Tuo tiliotteet** -valintaikkunassa **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Kyllä**. Valitse tiliotetiedostot sisältävä zip-tiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**. Tuontiprosessin tunnistaa zip-tiedoston ja lataa kaikki siihen sisältyvät tiliotteet, riippumatta pankkitilin omistavasta yrityksestä. 
+Voit myös ladata useita tiliotetiedostoja Financeen yhdellä kertaa käyttämällä zip-tiedostoa. Jos haluat tuoda useita tilejä sisältäviä useita tiliotetiedostoja, lisää kaikki tiliotetiedostot yhteen zip-tiedostoon. Valitse **Tuo tiliotteet** -valintaikkunassa **Tuo useiden pankkitilien tiliote kaikista yrityksistä** -asetukseksi **Kyllä**. Valitse tiliotetiedostot sisältävä zip-tiedosto valitsemalla **Selaa** ja valitse sitten **Lataa palvelimeen**. Tuontiprosessin tunnistaa zip-tiedoston ja lataa kaikki siihen sisältyvät tiliotteet, riippumatta pankkitilin omistavasta yrityksestä.
 
 Valittavana on **Täsmäytä tuonnin jälkeen** -asetus. Kun tässä asetuksessa on valittu **Kyllä**, järjestelmä tarkistaa automaattisesti tiliotteen, luo uuden pankkitilin täsmäytyksen ja laskentataulukon sekä suorittaa oletusarvoisen täsmäytyksen sääntöjoukon, kun tiliote ladataan palvelimeen. Tämä toiminto automatisoi siihen pisteeseen, jossa tapahtumat on täsmäytettävä manuaalisesti.
 

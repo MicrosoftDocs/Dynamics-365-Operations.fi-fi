@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c773b5e1013bbd58f48cd345f50a342175ed0c98
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: fd64a4ea53976293a6ff484a370d7804bf6c724f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413890"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530141"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.12. (elokuu 2020)
 
@@ -40,13 +40,12 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Salli työkortin kosketusnäytön lukitseminen desinfiointia varten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) -lisätietoja on kohdassa [laitteiden työkortin määrittäminen](../production-control/config-job-card-device.md).
-- [Sieppaa tuotevariantit ja seuraa dimensioita varastosovelluksessa kuormituksen kohteen vastaanoton aikana](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) -lisätietoja on kohdassa [matkaviestinlaitteiden määrittäminen varastotyötä varten](../warehousing/configure-mobile-devices-warehouse.md).
+- [Sieppaa tuotevariantit ja seuraa dimensioita varastosovelluksessa kuormituksen kohteen vastaanoton aikana](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) -lisätietoja on kohdassa [mobiililaitteiden määrittäminen varastotyötä varten](../warehousing/configure-mobile-devices-warehouse.md).
 - Kustannusten laskentataso (uusi tuoterakennetaso) - lisätietoja on kohdassa [kustannuslaskentojen taso](../cost-management/cost-calculation-level.md).
 - [Asiakasportaali Dynamics 365 Supply Chain Managementille](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) -lisätietoja on kohdassa [asiakasportaali Dynamics 365 Supply Chain Managementille](../sales-marketing/customer-portal-overview.md).
-- [Käytettävissä oleva varastopalvelu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
 - [IoT Intelligence -perusoivalluksia](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights)  -lisätietoja on kohdassa [IoT Intelligence -kotisivu](../iot/iot-intelligence-home-page.md).
-- [Rekisterikilpi, joka vastaanottaa lisätietoja varastomobiilisovelluksesta (jatkuu)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - Lisätietoa on kohdassa [varastointisovelluksen kautta tapahtuvan rekisterikilven vastaanottaminen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Fyysisen varastoinnin mobiilisovelluksen laajamittainen käyttöönotto](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – lisätietoja on kohdassa [varastointisovelluksen yhteenvedon asentaminen ja määrittäminen](../warehousing/install-configure-warehousing-app.md).
+- [Rekisterikilpi, joka vastaanottaa lisätietoja varastosovelluksesta (jatkuu)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - Lisätietoa on kohdassa [varastosovelluksen kautta tapahtuvan rekisterikilven vastaanottaminen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Warehouse mobile appin laajamittainen käyttöönotto](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) – lisätietoja on kohdassa [varastosovelluksen yhteenvedon asentaminen ja määrittäminen](../warehousing/install-configure-warehousing-app.md).
 - [Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyön enimmäissuoritusaika](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) -lisätietoja on kohdassa [varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö](../warehousing/onhand-cleanup.md).
 - [Suunnittelun optimoinnin tukiosto kauppasopimuksille](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) -lisätietoja on kohdassa [Pääsuunnittelu ja ostokauppasopimukset](../master-planning/planning-optimization/purchase-trade-agreement.md).
 

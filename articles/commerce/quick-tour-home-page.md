@@ -3,7 +3,7 @@ title: Aloitussivun yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025968"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527578"
 ---
-# <a name="overview-of-the-home-page"></a>Aloitussivun yleiskatsaus
-
+# <a name="home-page-overview"></a>Aloitussivun yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
@@ -68,8 +67,6 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 > Kaikkia tässä olevia moduuleja voi käyttää millä tahansa sivuston sivulla. Niiden sijoittelu aloitussivulla on tärkeää, koska se on sivuston sivu, jolle asiakas siirtyy ensimmäisenä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-
-[Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
 
 [Tuotetietosivujen yleiskatsaus](quick-tour-pdp.md)
 

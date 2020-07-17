@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: e396d2f2731d3600ee9e83e419d1038571e7bd85
-ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
+ms.openlocfilehash: 0d5265079dd96b272d13b30436b83b94bdb7297f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3413027"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530279"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Dynamics 365 Supply Chain Management 10.0.11:n uudet ja muuttuneet ominaisuudet (Heinäkuu 2020)
 
@@ -39,7 +39,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Käytettävissä olevan varaston raporttitallennus](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Rekisterikilpi, joka vastaanottaa lisätietoja varastomobiilisovelluksesta](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) - Lisätietoa on kohdassa [varastointisovelluksen kautta tapahtuvan rekisterikilven vastaanottaminen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Rekisterikilpi, joka vastaanottaa lisätietoja varastosovelluksesta](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) - Lisätietoa on kohdassa [varastosovelluksen kautta tapahtuvan rekisterikilven vastaanottaminen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 - [Rivivarausten parannukset eränumeron varauslomakkeelle](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - Lisätietoja on kohdassa [Saman erän varaaminen myyntitilausta varten](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Tuotantoalueen uudet tietoyksiköt](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Kuormamäärien ylikuittaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - Lisätietoja on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](../warehousing/inbound-load-handling.md).

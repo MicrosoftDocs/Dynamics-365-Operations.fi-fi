@@ -1,6 +1,6 @@
 ---
-title: Rekisterikilven vastaanotto varastointisovelluksen kautta
-description: Tässä ohjeaiheessa selitetään, kuinka varastointisovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+title: Rekisterikilven vastaanotto varastosovelluksen avulla
+description: Tässä ohjeaiheessa selitetään, kuinka varastosovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 author: perlynne
 manager: tfehr
 ms.date: 04/29/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 5330981bde98b80e81076a9b1416473135ebdac6
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410882"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530187"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-app"></a>Rekisterikilven vastaanotto varastointisovelluksen kautta
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Rekisterikilven vastaanotto varastosovelluksen avulla
 
-Tässä ohjeaiheessa selitetään, kuinka varastointisovellus määritetään niin, että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+Tässä ohjeaiheessa selitetään, kuinka varastosovellus määritetään niin, että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 
 Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
 
@@ -39,7 +39,7 @@ Kun työntekijä tarkistaa saapuvan rekisterikilven tunnuksen, järjestelmä alu
 
 ## <a name="work-policies"></a>Työkäytännöt
 
-Kuten (esimerkiksi) *Ilmoita valmiiksi* -matkaviestimen valikkovaihtoehtoprosessi, rekisterikilven vastaanottoprosessi tukee useita työnkulkuja määritettyjen asetusten perusteella.
+Kuten (esimerkiksi) *Ilmoita valmiiksi* -mobiililaitteen valikkovaihtoehtoprosessi, rekisterikilven vastaanottoprosessi tukee useita työnkulkuja määritettyjen asetusten perusteella.
 
 ### <a name="work-policies-with-work-creation"></a>Työkäytännöt ja työn luominen
 
@@ -64,7 +64,7 @@ On mahdollista käyttää varastopaikkaa, joka on määritetty sijaintiprofiilii
 
 ## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Mobiililaitteen valikkovaihtoehtojen lisääminen kuhunkin vastaanottosijaintiin varastossa
 
-*Rekisterikilven vastaanottoparannukset* -toiminnon avulla voit vastaanottaa tietoja missä tahansa varastossa lisäämällä sijaintikohtaiset rekisterikilven vastaanotto- (ja hyllytys)-valikkokohteet varastointimobiilisovellukseen. Aiemmin järjestelmä tuki vain kullekin varastolle määritettyä oletussijaintia. Kuitenkin, kun tämä toiminto on käytössä, kannettavan laitteen valikkovaihtoehdot rekisterikilven vastaanottamiseen (ja hyllyttämiseen) tarjoavat nyt **Käytä oletustietoja** -vaihtoehdon, jonka avulla voit valita kullekin valikkokohteelle mukautetun sijainnin. (Tämä vaihtoehto on jo käytettävissä joidenkin muun tyyppisten valikkovaihtoehtojen yhteydessä.)
+*Rekisterikilven vastaanottoparannukset* -toiminnon avulla voit vastaanottaa tietoja missä tahansa varastossa lisäämällä sijaintikohtaiset rekisterikilven vastaanotto- (ja hyllytys)-valikkokohteet varastointimobiilisovellukseen. Aiemmin järjestelmä tuki vain kullekin varastolle määritettyä oletussijaintia. Kuitenkin, kun tämä toiminto on käytössä, mobiililaitteen valikkovaihtoehdot rekisterikilven vastaanottamiseen (ja hyllyttämiseen) tarjoavat nyt **Käytä oletustietoja** -vaihtoehdon, jonka avulla voit valita kullekin valikkokohteelle mukautetun sijainnin. (Tämä vaihtoehto on jo käytettävissä joidenkin muun tyyppisten valikkovaihtoehtojen yhteydessä.)
 
 Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *rekisterikilven vastaanottolaajennukset*-ominaisuus [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -72,7 +72,7 @@ Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otett
 
 Voit käyttää *ohjausobjektia, näytetäänkö vastaanottavan yhteenvetosivun mobiililaitteissa* -ominaisuutta, jotta saat lisätietoja fyysisen varastoinnin sovelluskulusta osana rekisterikilven vastaanottoprosessia.
 
-Kun tämä toiminto on otettu käyttöön, kannettavien laitteiden valikkokohteet, jotka koskevat rekisteritietoja tai rekisterikilven vastaanottoa ja hyllytystä, sisältävät **näytön vastaanottamisen yhteenvetosivu** -asetuksen. Tällä asetuksella on seuraavat vaihtoehdot:
+Kun tämä toiminto on otettu käyttöön, mobiililaitteiden valikkokohteet, jotka koskevat rekisteritietoja tai rekisterikilven vastaanottoa ja hyllytystä, sisältävät **näytön vastaanottamisen yhteenvetosivu** -asetuksen. Tällä asetuksella on seuraavat vaihtoehdot:
 
 - **Näytä yksityiskohtainen yhteenveto** – Rekisterikilven vastaanottamisen aikana työntekijät näkevät ylimääräisen sivun, jossa näkyvät kaikki ASN-tiedot.
 - **Ohita yhteenveto** – Työntekijät eivät näe kaikkia ASN-tietoja. Varastotyöntekijät eivät voi määrittää käsittelykoodia tai lisätä poikkeuksia vastaanottoprosessin aikana.

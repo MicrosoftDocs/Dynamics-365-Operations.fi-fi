@@ -1,6 +1,6 @@
 ---
-title: Warehousing-sovelluksen kenttien nimien määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten varastointisovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa.
+title: Varastosovelluksen kenttien nimien määrittäminen
+description: Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 7a4cfe62aa50c423adfd116a81d7962c30b25fcf
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346396"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530486"
 ---
-# <a name="configure-app-field-names-in-warehousing-app"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
+# <a name="configure-app-field-names-in-the-warehouse-app"></a>Varastosovelluksen kenttien nimien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten varastointisovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa. 
+Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa. 
 
 > [!NOTE]
-> Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Varastointi on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä ohjeaiheessa kerrotaan, miten nämä varastointisovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa. Lisätietoja yhteyden määrittämisestä varastointisovellukseen on oppaassa [Varastointisovelluksen asennuksen ja määrityksen yleiskatsaus](install-configure-warehousing-app.md).
+> Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Varastointi on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä ohjeaiheessa kerrotaan, miten nämä varastosovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa. Lisätietoja yhteyden määrittämisestä varastosovellukseen on oppaassa [Varastosovelluksen asennuksen ja määrityksen yleiskatsaus](install-configure-warehousing-app.md).
 
-## <a name="configure-warehousing-app-field-names"></a>Varastointisovelluksen kenttien nimien määrittäminen
+## <a name="configure-warehouse-app-field-names"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
 
 Jos käytät varastointisovellusta mobiililaitteessa, voit määrittää **Varastointisovelluksen kenttien nimet** -sivulla, miten metatiedot näytetään laitteessa. Luo kaikkien varastoinnin mobiililaitteen työnkulussa käytettävien kenttien nimet valitsemalla uudessa yrityksessä **Luo oletusasetukset**, ja määritä sitten niihin ensisijainen syötetila ja syötteen tyyppi. Kun kaikkien kenttien nimet on luotu, voit valita syötteen seuraavista vaihtoehdoista.
 
@@ -68,7 +68,7 @@ Jos käytät varastointisovellusta mobiililaitteessa, voit määrittää **Varas
 </tbody>
 </table>
 
-## <a name="configure-warehousing-app-field-priority"></a>Varastointisovelluksen kenttäprioriteettien määrittäminen
+## <a name="configure-warehouse-app-field-priority"></a>Warehousing-sovelluksen kenttäprioriteetin määrittäminen
 
 **Varastosovelluksen kenttäprioriteetti** -sivulla voit määrittää kenttänimet eri prioriteettiryhmiin. Näin voit päättää, mitä tietoja näytetään sivulla päätehtäväsivulla silloin, kun fyysisen varastoinnin työntekijät suorittavat tehtäviä sovelluksen avulla. Jos valitset **Luo oletusasetukset**, järjestelmä luo oletusarvoiset prioriteettiryhmät. On mahdollista luoda niin monta prioriteettiryhmiä kuin on tarpeen, mutta tehtäväsivulla näytetään vain kolme prioriteettiryhmää. Kun järjestelmä lähettää metatietoja sovellukseen, se määrittää kunkin kentän suhteellisen prioriteetin sen prioriteettiryhmän mukaan, ja sovellus näyttää ensimmäiset kolme metatietojen sisältämää prioriteettiryhmää. Loput metatiedot näytetään toissijaisten tietojen sivulla. Seuraavassa taulukossa on esimerkit viidestä prioriteettiryhmästä.
 
@@ -132,7 +132,7 @@ Esimerkiksi kun varastotyöntekijä suorittaa tehtävän mobiililaitteella ja jo
 -   Nimikkeen kuvaus
 -   Koko ja sijainti
 
-Yllä olevassa taulukossa määritettyjen varastointisovelluksen kenttäprioriteettien perusteella seuraavat 3 tietoriviä näytetään tehtäväsivulla:
+Yllä olevassa taulukossa määritettyjen varastosovelluksen kenttäprioriteettien perusteella seuraavat 3 tietoriviä näytetään tehtäväsivulla:
 
 -   Rivi 1: Nimike, Määrä, Mittayksikkö
 -   Rivi 2: Nimikkeen kuvaus
@@ -143,4 +143,4 @@ Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mu
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Varastointisovelluksen asentaminen ja määrittäminen – yleiskatsaus](install-configure-warehousing-app.md)
+[Varastosovelluksen asentamisen ja määrittämisen yleiskatsaus](install-configure-warehousing-app.md)

@@ -3,7 +3,7 @@ title: Ominaisuuksien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456594"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499616"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -140,6 +140,10 @@ Seuraavissa esimerkeissä kuvataan, mitä tapahtuu, kun tietojen tuomiseen käyt
 ## <a name="feature-management-and-flighting"></a>Ominaisuuksien hallinta ja väliversiotestaus
 
 Ominaisuuksien hallinnan avulla voit hallita kuhunkin julkaisuun toimitettuja ominaisuuksia. Väliversiotestaus-toiminnon avulla Microsoft Teamsit voivat vapauttaa toimintoja rajoitetulle määrälle asiakkaita, jotta näitä ominaisuuksia voidaan testata ja vahvistaa ilman, että se vaikuttaa kaikkiin asiakkaisiin. Ominaisuuksien hallinta ei hallitse minkään ominaisuuden väliversiotestaus-ominaisuutta.
+
+## <a name="new-features-are-optional-for-12-months"></a>Uudet ominaisuudet ovat valinnaisia 12 kuukauden ajan
+
+Jos uusi ei-kriittinen ominaisuus asennetaan, se on valinnainen 12 kuukauden ajan. Tämän ansiosta sinä ja organisaatiosi voitte suunnitella etukäteen, milloin ominaisuus kannattaa ottaa käyttöön, ja testata sitä päivittäisissä toiminnoissanne. Lisätietoa on kohdassa [Yhden version palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>ISV-ominaisuuksien tai mukautettujen ominaisuuksien ottaminen käyttöön ominaisuuksien hallinnan avulla
 

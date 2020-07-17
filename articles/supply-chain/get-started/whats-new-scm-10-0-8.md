@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 40d1090d18857c6978ce42a34d6d67241f9df18f
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 83a27620a7bdd8624770442aa271a6dac6b5b04e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346326"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530371"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.8 (helmikuu 2020)
 
@@ -51,7 +51,7 @@ Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lis
 - [Kysynnän täydennystyön jakaminen keräilytyövaiheen luomisesta](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
 - [Jaa työ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
 - [Järjestelmän ohjaama klusterin keräily](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) - Lisätietoja on kohdassa [Järjestelmän ohjaama klusterin keräily](../warehousing/system-directed-cluster-pick.md).
-- [Varastointisovelluksen tehtävän tarkistaminen RSAT:n avulla](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
+- [varastosovelluksen tehtävän tarkistaminen RSAT:n avulla](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Varastoon vapautuksen sääntö](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Aallon tilan visualisoiminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
 - [Aallon mallipohjan ryhmittely](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
