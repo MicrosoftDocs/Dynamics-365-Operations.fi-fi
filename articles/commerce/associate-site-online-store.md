@@ -3,7 +3,7 @@ title: Sähköisen kaupankäynnin sivuston liittäminen verkkokanavaan
 description: Tässä ohjeaiheessa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -sivusto sidotaan yhteen tai useaan verkkomyymälään.
 author: stuharg
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,46 +18,44 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 30a992ae5cc68173b830224ae88ac3770b414b7a
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: af63fc8e32d82cff9e46510da9b30110ac8f0f2c
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096698"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533364"
 ---
-# <a name="associate-an-e-commerce-site-with-an-online-channel"></a><span data-ttu-id="af4d8-103">Sähköisen kaupankäynnin sivuston liittäminen verkkokanavaan</span><span class="sxs-lookup"><span data-stu-id="af4d8-103">Associate an e-Commerce site with an online channel</span></span>
+# <a name="associate-an-e-commerce-site-with-an-online-channel"></a><span data-ttu-id="22e31-103">Sähköisen kaupankäynnin sivuston liittäminen verkkokanavaan</span><span class="sxs-lookup"><span data-stu-id="22e31-103">Associate an e-Commerce site with an online channel</span></span>
 
 [!include [banner](includes/banner.md)]
 
 
-<span data-ttu-id="af4d8-104">Tässä ohjeaiheessa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -sivusto sidotaan yhteen tai useaan verkkomyymälään.</span><span class="sxs-lookup"><span data-stu-id="af4d8-104">This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.</span></span> 
+<span data-ttu-id="22e31-104">Tässä ohjeaiheessa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -sivusto sidotaan yhteen tai useaan verkkomyymälään.</span><span class="sxs-lookup"><span data-stu-id="22e31-104">This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.</span></span> 
 
-<span data-ttu-id="af4d8-105">Kun olet valmistellut sähköisen kaupankäynnin Microsoft Dynamics Lifecycle Services (LCS) -portaalin avulla, olet valmis muodostamaan ensimmäisen sähköisen kaupankäynnin sivuston.</span><span class="sxs-lookup"><span data-stu-id="af4d8-105">After you've provisioned e-Commerce by using the Microsoft Dynamics Lifecycle Services (LCS) portal, you're ready to establish your first e-Commerce website.</span></span> <span data-ttu-id="af4d8-106">Liitä sivusto ensimmäisen sivuston luonnin osana verkkomyymälään, joka luotiin aiemmin.</span><span class="sxs-lookup"><span data-stu-id="af4d8-106">As part of the initial site creation, you associate the site with an online store that was previously created.</span></span> <span data-ttu-id="af4d8-107">Tämä vaihe sitoo sivuston verkkokanavaan ja antaa sivuston näyttää siirtymishierarkian, tuotteet, luokat, hinnat, toimitusvaihtoehdot ja kaiken muun verkkomyymälässä määritetyn tiedon.</span><span class="sxs-lookup"><span data-stu-id="af4d8-107">This step binds the site to an online channel and lets the site show the navigation hierarchy, products, categories, prices, shipping options, and everything else that you defined in the online store.</span></span>
+<span data-ttu-id="22e31-105">Kun olet valmistellut sähköisen kaupankäynnin Microsoft Dynamics Lifecycle Services (LCS) -portaalin avulla, olet valmis muodostamaan ensimmäisen sähköisen kaupankäynnin sivuston.</span><span class="sxs-lookup"><span data-stu-id="22e31-105">After you've provisioned e-Commerce by using the Microsoft Dynamics Lifecycle Services (LCS) portal, you're ready to establish your first e-Commerce website.</span></span> <span data-ttu-id="22e31-106">Liitä sivusto ensimmäisen sivuston luonnin osana verkkomyymälään, joka luotiin aiemmin.</span><span class="sxs-lookup"><span data-stu-id="22e31-106">As part of the initial site creation, you associate the site with an online store that was previously created.</span></span> <span data-ttu-id="22e31-107">Tämä vaihe sitoo sivuston verkkokanavaan ja antaa sivuston näyttää siirtymishierarkian, tuotteet, luokat, hinnat, toimitusvaihtoehdot ja kaiken muun verkkomyymälässä määritetyn tiedon.</span><span class="sxs-lookup"><span data-stu-id="22e31-107">This step binds the site to an online channel and lets the site show the navigation hierarchy, products, categories, prices, shipping options, and everything else that you defined in the online store.</span></span>
 
-<span data-ttu-id="af4d8-108">Jos haluat luoda uuden sivuston ja liittää siihen verkkomyymälän, valitse LCS:ssä sivuston muokkausympäristön linkki.</span><span class="sxs-lookup"><span data-stu-id="af4d8-108">To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment.</span></span> <span data-ttu-id="af4d8-109">Valitse sitten sivuston muokkausympäristön aloitussivulla **Uusi sivusto**.</span><span class="sxs-lookup"><span data-stu-id="af4d8-109">Then, on the page for the site authoring environment, select **New site**.</span></span> <span data-ttu-id="af4d8-110">Anna **Uusi sivusto** -valintaikkunassa joitakin perustietoja sivustosta.</span><span class="sxs-lookup"><span data-stu-id="af4d8-110">In the **New site** dialog box, you must provide some basic information about your site.</span></span> <span data-ttu-id="af4d8-111">Lisätietoja annettavista tiedoista on kohdassa [Uuden sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md).</span><span class="sxs-lookup"><span data-stu-id="af4d8-111">For a complete explanation of the information that you must provide, see [Create a new e-Commerce site](create-ecommerce-site.md).</span></span>
+<span data-ttu-id="22e31-108">Jos haluat luoda uuden sivuston ja liittää siihen verkkomyymälän, valitse LCS:ssä sivuston muokkausympäristön linkki.</span><span class="sxs-lookup"><span data-stu-id="22e31-108">To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment.</span></span> <span data-ttu-id="22e31-109">Valitse sitten sivuston muokkausympäristön aloitussivulla **Uusi sivusto**.</span><span class="sxs-lookup"><span data-stu-id="22e31-109">Then, on the page for the site authoring environment, select **New site**.</span></span> <span data-ttu-id="22e31-110">Anna **Uusi sivusto** -valintaikkunassa joitakin perustietoja sivustosta.</span><span class="sxs-lookup"><span data-stu-id="22e31-110">In the **New site** dialog box, you must provide some basic information about your site.</span></span> <span data-ttu-id="22e31-111">Lisätietoja annettavista tiedoista on kohdassa [Uuden sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md).</span><span class="sxs-lookup"><span data-stu-id="22e31-111">For a complete explanation of the information that you must provide, see [Create a new e-Commerce site](create-ecommerce-site.md).</span></span>
 
-<span data-ttu-id="af4d8-112">Kun sivusto on luotu, voit varmistaa, että se on liitetty verkkomyymälään, valitsemalla **Tuotteet**-välilehden. Näkyvissä on tuotevalikoima, joka on määritetty verkkomyymälälle.</span><span class="sxs-lookup"><span data-stu-id="af4d8-112">After your site is created, you can verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store.</span></span> <span data-ttu-id="af4d8-113">Voit käyttää avattavaa kenttää sivun vasemmassa yläosassa, jos haluat käyttää tuotteita luokan mukaan.</span><span class="sxs-lookup"><span data-stu-id="af4d8-113">You can also use the drop-down field in the upper left of the page to access the products by category.</span></span>
+<span data-ttu-id="22e31-112">Kun sivusto on luotu, voit varmistaa, että se on liitetty verkkomyymälään, valitsemalla **Tuotteet**-välilehden. Näkyvissä on tuotevalikoima, joka on määritetty verkkomyymälälle.</span><span class="sxs-lookup"><span data-stu-id="22e31-112">After your site is created, you can verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store.</span></span> <span data-ttu-id="22e31-113">Voit käyttää avattavaa kenttää sivun vasemmassa yläosassa, jos haluat käyttää tuotteita luokan mukaan.</span><span class="sxs-lookup"><span data-stu-id="22e31-113">You can also use the drop-down field in the upper left of the page to access the products by category.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="af4d8-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="af4d8-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="22e31-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="22e31-114">Additional resources</span></span>
 
-[<span data-ttu-id="af4d8-115">Toimialueen nimen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="af4d8-115">Configure your domain name</span></span>](configure-your-domain-name.md)
+[<span data-ttu-id="22e31-115">Toimialueen nimen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="22e31-115">Configure your domain name</span></span>](configure-your-domain-name.md)
 
-[<span data-ttu-id="af4d8-116">Uuden sähköisen kaupankäynnin sivuston käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="af4d8-116">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
+[<span data-ttu-id="22e31-116">Uuden sähköisen kaupankäynnin sivuston käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="22e31-116">Deploy a new e-Commerce site</span></span>](deploy-ecommerce-site.md)
 
-[<span data-ttu-id="af4d8-117">Määritä verkkokauppakanava</span><span class="sxs-lookup"><span data-stu-id="af4d8-117">Set up an online store channel</span></span>](online-stores.md)
+[<span data-ttu-id="22e31-117">Sähköisen kaupankäynnin sivuston luominen</span><span class="sxs-lookup"><span data-stu-id="22e31-117">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
 
-[<span data-ttu-id="af4d8-118">Sähköisen kaupankäynnin sivuston luominen</span><span class="sxs-lookup"><span data-stu-id="af4d8-118">Create an e-Commerce site</span></span>](create-ecommerce-site.md)
+[<span data-ttu-id="22e31-118">Robots.txt-tiedostojen hallinta</span><span class="sxs-lookup"><span data-stu-id="22e31-118">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
 
-[<span data-ttu-id="af4d8-119">Robots.txt-tiedostojen hallinta</span><span class="sxs-lookup"><span data-stu-id="af4d8-119">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
+[<span data-ttu-id="22e31-119">URL-uudelleenohjausten joukkolataus palveluun</span><span class="sxs-lookup"><span data-stu-id="22e31-119">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
 
-[<span data-ttu-id="af4d8-120">URL-osoitteen uudelleenohjausten lataaminen joukkona</span><span class="sxs-lookup"><span data-stu-id="af4d8-120">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
+[<span data-ttu-id="22e31-120">B2C-vuokraajan määrittäminen Commercessa</span><span class="sxs-lookup"><span data-stu-id="22e31-120">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
 
-[<span data-ttu-id="af4d8-121">B2C-vuokraajan määrittäminen Commercessa</span><span class="sxs-lookup"><span data-stu-id="af4d8-121">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
+[<span data-ttu-id="22e31-121">Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten</span><span class="sxs-lookup"><span data-stu-id="22e31-121">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
 
-[<span data-ttu-id="af4d8-122">Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten</span><span class="sxs-lookup"><span data-stu-id="af4d8-122">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
+[<span data-ttu-id="22e31-122">Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä</span><span class="sxs-lookup"><span data-stu-id="22e31-122">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
 
-[<span data-ttu-id="af4d8-123">Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä</span><span class="sxs-lookup"><span data-stu-id="af4d8-123">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
+[<span data-ttu-id="22e31-123">Sisältöverkon (CDN) tuen lisääminen</span><span class="sxs-lookup"><span data-stu-id="22e31-123">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
 
-[<span data-ttu-id="af4d8-124">Sisältöverkon (CDN) tuen lisääminen</span><span class="sxs-lookup"><span data-stu-id="af4d8-124">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
-
-[<span data-ttu-id="af4d8-125">Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="af4d8-125">Enable location-based store detection</span></span>](enable-store-detection.md)
+[<span data-ttu-id="22e31-124">Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="22e31-124">Enable location-based store detection</span></span>](enable-store-detection.md)
