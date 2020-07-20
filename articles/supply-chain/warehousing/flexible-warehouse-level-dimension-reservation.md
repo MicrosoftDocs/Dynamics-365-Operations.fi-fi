@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346465"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530302"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Joustava varastotason dimensionvarauskäytäntö
 
@@ -118,7 +118,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
 
     | Varasto | Eränumero | Toimipaikka | Rekisterikilpi | Määrä |
     |-----------|--------------|----------|---------------|----------|
-    | 24        | B11          | BULK-001 | Ei ole          | 10       |
+    | 24        | B11          | BULKKI-001 | Ei ole          | 10       |
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
@@ -158,7 +158,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
 8. Tarkista nimikkeen varastotapahtumat, jotka liittyvät myyntitilausrivin varaukseen.
 
     - Tapahtuma, jossa **Viite**-kentän arvona on **Myyntitilaus** ja **Varasto-otto**-kentän arvona **Varattu fyysinen**, edustaa varausrivin varausta **Sijainti**-tason yläpuolella olevien dimension osalta. Nimikkeen varastonvaraushierarkian mukaan nämä dimensiot ovat toimipaikka, varasto ja varastotila.
-    - Tapahtuma, jossa **Viite**-kentän arvona on **Tilaussidonnainen varaus** ja **Varasto-otto**-kentän arvona **Varattu fyysinen**, edustaa varausrivin varausta määritetyn erän ja kaikkien sen yläpuolella olevien dimensioiden osalta. Nimikkeen varastonvaraushierarkian mukaan nämä dimensiot ovat eränumero ja sijainti. Tässä esimerkissä sijainti on **Bulk-001**.
+    - Tapahtuma, jossa **Viite**-kentän arvona on **Tilaussidonnainen varaus** ja **Varasto-otto**-kentän arvona **Varattu fyysinen**, edustaa varausrivin varausta määritetyn erän ja kaikkien sen yläpuolella olevien dimensioiden osalta. Nimikkeen varastonvaraushierarkian mukaan nämä dimensiot ovat eränumero ja sijainti. Tässä esimerkissä sijainti on **Bulkki-001**.
 
 9. Valitse myyntitilauksen otsikossa **Varasto** \> **Toiminnot** \> **Vapauta varastoon**. Tilausrivi on nyt aallotettu, ja kuormitus ja työ luodaan.
 
@@ -186,7 +186,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
 
     Eränumeroa **B11** on nyt kerätty määrä **10** myyntitilausriviä varten ja siirretty sijaintiin **Lastauspaikan ovi**. Tässä vaiheessa se on valmis lastattavaksi kuorma-autoon ja lähetettäväksi asiakkaan osoitteeseen.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>Niiden varastotöiden poikkeustenkäsittely, joilla on tilaussidonnaiset eränumerot
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Niiden varastotöiden poikkeustenkäsittely, joilla on tilaussidonnaiset eränumerot
 
 Tilaussidonnaisten eränumeroiden keräilyn varastotyöhön sovelletaan samoja varaston poikkeustenkäsittelyä ja -toimintoja kuin tavanomaiseen työhön. Yleisesi ottaen avoin työ tai työrivi voidaan peruuttaa, se voidaan keskeyttää, koska käyttäjän sijainti on täynnä, siihen voidaan soveltaa lyhyttä keräilyä ja sitä voidaan päivittää siirron vuoksi. Samoin jo valmiiksi saatua keräiltyä työmäärää voidaan vähentää tai työ voidaan palauttaa.
 

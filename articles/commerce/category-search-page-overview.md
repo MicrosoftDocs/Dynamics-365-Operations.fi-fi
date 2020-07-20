@@ -1,9 +1,9 @@
 ---
-title: Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
+title: Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus
 description: Tässä ohjeaiheessa on luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus Dynamics 365 Commerce -sovelluksessa.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002493"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527465"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
@@ -96,7 +95,13 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 - **Sivutuksen** avulla sivuston vierailijat voivat siirtyä yhdeltä luokitellun tuotteen sivulta toiselle.
 - **Kokonaismäärä** määrittää luokkaan määritettyjen ja hakuehtoja vastaavien tuotteiden kokonaismäärän.
 
+>[!NOTE]
+>Nämä pilvipohjaiset hakutoiminnot ovat saatavilla versiosta 10.0.8 alkaen. Varmista, että valikossa **Kaupan parametrit > Määrityksen parametrit** on merkintä ProductSearch.UseAzureSearch set to 'true'. 
+![Määrityksen parametrit pilvipohjaiselle haulle](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Lisäresurssit
+
+[Pilvipohjaisen haun yleiskatsaus](cloud-powered-search-overview.md)
 
 [Aloitussivun yleiskatsaus](quick-tour-home-page.md)
 

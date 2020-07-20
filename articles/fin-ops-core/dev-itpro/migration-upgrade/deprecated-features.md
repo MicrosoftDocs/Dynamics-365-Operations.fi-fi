@@ -3,7 +3,7 @@ title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 description: Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations -sovelluksesta ja tuotteen aiemmista versioista.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284011"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500409"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -588,7 +588,7 @@ eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Mess
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tätä maksumuotoa ei enää käytetä.                                                     |
-| **Onko toinen ominaisuus korvannut?**   | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, ISO20022 Camt.054 -ilmoituksen tuonti. |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra                                                                       |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.                            |
 
@@ -621,7 +621,7 @@ Voit valita Suomen maksujen tuontimuodon asiakasmaksutapahtumien tuomiselle pank
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tätä maksumuotoa ei enää käytetä.                                                     |
-| **Onko toinen ominaisuus korvannut?**   | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, ISO20022 Camt.054 -ilmoituksen tuonti. |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra                                                                       |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.                            |
 
@@ -632,7 +632,7 @@ Suomen erityismuotoa käytetään kirjanpidon tapahtumien tuomiseksi kirjanpitoo
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tätä maksumuotoa ei enää käytetä.                                                     |
-| **Onko toinen ominaisuus korvannut?**   | Nro Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, ISO20022 Camt.053 -tiliotteen tuonti käyttämällä pankkitilin täsmäytyksen lisätoimintoja. |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra                                                                       |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.                            |
 
@@ -698,7 +698,7 @@ Pankin maksun tuonnissa käytetään Telehansa- ja TeleTeenus-muotoja.
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Maksumuotoja ei enää käytetä.                                                    |
-| **Onko toinen ominaisuus korvannut?**   | Nro Muodot korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, ISO20022 Camt.054 -pankki-ilmoituksen tuonti. |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra                                                                        |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.                             |
 
@@ -784,7 +784,7 @@ Telepay-maksumuodot sisältävät toimittajan maksun viennin (tilisiirrolla) ja 
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Maksumuotoja ei enää käytetä.                                                        |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä, Norjan ISO20022-tilisiirron maksumuoto ja asiakkaan maksun AvtaleGiro-muoto |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, ISO20022 -saldosiirron maksumuoto ja AvtaleGiro-asiakasmaksumuoto Norjalle sekä pain.002- ja camt.054-pankki-ilmoituksen paluutiedostojen tuonti. |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra, ostoreskontra                                                          |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.                                 |
 
@@ -844,7 +844,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- ja AxBC-integraatiot
 
-Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd\<asiakirja\>**-luokkia.
+Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd \<Document\>** -luokkia.
 
 |   |  |
 |------------|--------------------|
@@ -1125,13 +1125,13 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit  |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
-### <a name="german-dtazv-payment-format"></a>Saksan DTAZV-maksumuoto
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Saksalainen DTAZV-maksumuoto kotimaan valuutassa
 
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Muotoa ei enää käytetä Saksassa, sillä SEPA-toiminto on korvannut sen. |
 | **Onko toinen ominaisuus korvannut?**   | SEPA-maksujen vienti    |
-| **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit   |
+| **Tuotealueet, joihin vaikutetaan**         | Ostoreskontra   |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.    |
 
 ### <a name="german-mt940-import"></a>Saksassa tuominen MT940-muodossa

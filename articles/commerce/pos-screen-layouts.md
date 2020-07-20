@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261464"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505631"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 
@@ -101,7 +101,7 @@ Käynnistettäessä POS-sovellus valitsee automaattisesti lähimmän laitteeseen
 > [!TIP]
 > Löydät vaaditun asettelun koon, jota POS-näytön tarkkuus vaatii tarkastelemalla resoluutiota sovelluksessa. Käynnistä Myyntipiste ja siirry **Asetukset \> Istuntotietoja**. POS näyttää tällä hetkellä ladatun näyttöasettelun, asettelun koon ja sovellusikkunan resoluution.
 
-![Myyntipisteen asettelukoot](../commerce/media/POS-Session-Information.png)
+![POS-istunnon tietosivu, joka näyttää tällä hetkellä ladatun näytön asettelun, asettelun koon ja sovellusikkunan resoluution](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Painikeruudukot
 

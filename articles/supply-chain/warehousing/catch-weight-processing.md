@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5a751b360b2da8f786dd7b8d139e1a0a44052894
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211971"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530532"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -107,7 +107,7 @@ Kun nimikettä seurataan tunnisteella, käytössä on lisäksi **Lähtevän pain
 **Kun todellisen painon tunnisteseurantaa käytetään**, jokaiselle vastaanotetulle todellisen painon yksikölle on luotava tunniste ja jokaiseen tunnisteeseen on aina liitettävä paino.
 
 Esimerkki: Todellisen painon yksikkö on **laatikko** ja vastaanotetulla kuormalavalla on kahdeksan laatikkoa. Tässä tapauksessa on luotava kahdeksan yksilöivää todellisen painon tunnistetta ja kuhunkin tunnisteeseen on liitettävä paino. Saapuvan todellisen painon tunnisteen mukaan taltioidaan joko kaikkien kahdeksan laatikon paino, jonka jälkeen keskimääräinen paino jaetaan kullekin laatikolle. Vaihtoehtoisesti kullekin laatikolle voidaan taltioida yksilöivä paino.
-Kun käytät **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita** -toimintoa ja prosessi on otettu käyttöön mobiililaitteen valikkonimikkeen kautta, varasto päivittyy olemassa olevan todellisen painon tunnisteen tiedoilla. Tämän vuoksi varastointisovellus ei pyydä tallentamaan todellisen painon tunnisteen tietoja osana tuotantoraporttia valmiina työvaiheena.
+Kun käytät **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita** -toimintoa ja prosessi on otettu käyttöön mobiililaitteen valikkonimikkeen kautta, varasto päivittyy olemassa olevan todellisen painon tunnisteen tiedoilla. Tämän vuoksi varastosovellus ei pyydä tallentamaan todellisen painon tunnisteen tietoja osana tuotantoraporttia, kun työvaihe on valmis.
 
 **Jos todellisen painon seurantaa ei käytetä**, paino voidaan taltioida kullekin dimensioyhdistelmälle (kuten kullekin rekisterikilvelle ja seurantadimensiolle). Vaihtoehtoisesti paino voidaan taltioida koontitason perusteella, kuten viitenä rekisterikilpenä (kuormalavana).
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175151"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505608"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanavan automaattiset etukäteisveloitukset
 
@@ -52,7 +52,7 @@ Kun edistyneet automaattiset kulut on otettu käyttöön, käyttäjiä ei enää
 
 Kun edistyneet automaattiset kulut on otettu käyttöön, aiemmin luotuja **kuljetusmaksukoodin** ja **palautettavien toimitusmaksujen** **Commercen parametreja** ei enää käytetä. Näitä parametreja käytetään vain, jos **Käytä edistyneitä automaattisia kuluja** -parametrin asetuksena on **Ei**.
 
-Varmista ennen tämän ominaisuuden käyttöönottoa, että olet testannut toimintoa ja kouluttanut työntekijät, sillä ominaisuus muuttaa liiketoimintaprosessia, jolla toimituskulut ja muut kulut lasketaan ja lisätään myyntipisteen myyntitilauksiin. Varmista, että tiedät, miten prosessi vaikuttaa tapahtumien luontiin myyntipisteestä. Edistyneiden automaattisten kulujen käyttöönottaminen ei juurikaan vaikuta puhelinkeskuksen ja sähköisen kaupankäynnin tilauksiin. Puhelinkeskuksen ja sähköisen kaupankäynnin sovellukset toimivat samalla tavalla kuin aiemminkin, kun kyse on tilauksen lisämaksujen laskemisesta automaattisen kulutaulukoiden avulla. Puhelinkeskuskanavan käyttäjät voivat jatkossakin muokata manuaalisesti mitä tahansa järjestelmän laskemaa automaattista kulua otsikko- tai rivitasolla tai lisätä manuaalisesti muita kuluja otsikko- ja rivitasolla.
+Varmista ennen tämän ominaisuuden käyttöönottoa, että olet testannut toimintoa ja kouluttanut työntekijät, sillä käyttöön otettu ominaisuus muuttaa liiketoimintaprosessia, jolla toimituskulut ja muut kulut lasketaan ja lisätään myyntipisteen myyntitilauksiin. Varmista, että tiedät, miten prosessi vaikuttaa tapahtumien luontiin myyntipisteestä. Edistyneiden automaattisten kulujen käyttöönottaminen ei juurikaan vaikuta puhelinkeskuksen ja sähköisen kaupankäynnin tilauksiin. Puhelinkeskuksen ja sähköisen kaupankäynnin sovellukset toimivat samalla tavalla kuin aiemminkin, kun kyse on tilauksen lisämaksujen laskemisesta automaattisen kulutaulukoiden avulla. Puhelinkeskuskanavan käyttäjät voivat jatkossakin muokata manuaalisesti mitä tahansa järjestelmän laskemaa automaattista kulua otsikko- tai rivitasolla tai lisätä manuaalisesti muita kuluja otsikko- ja rivitasolla.
 
 ## <a name="additional-pos-operations"></a>Myyntipisteen lisätyövaiheet
 
@@ -89,7 +89,7 @@ Määritä kaksi erilaista otsikkotason automaattista kulua. Määritä toinen m
 
 Määritä maakuljetuksen toimituskuluiksi **Automaattiset kulut** -sivun riviosassa kulu, jota käytetään, kun tilauksen arvo on 0,01–100 dollaria. Tässä tapauksessa toimituskuluksi määritetään 10,00 dollaria. Luo toinen kulurivi ilmaisemaan, että tilauksilla, joiden arvo on yli 100,01 dollaria, ei ole kuluja.
 
-![Esimerkki automaattisista kuluista](media/headerchargesexample.png)
+![Esimerkki kahdesta automaattisesta veloitustaulukosta](media/headerchargesexample.png)
 
 Määritä lentorahdin toimituskuluiksi automaattisten kulujen lomakkeessa 20 dollaria. Tätä kulua käytetään kaikissa tilauksissa (joiden arvo 0,01–9 999 999 dollaria).
 
@@ -119,7 +119,7 @@ Valitse **Myyntireskontra \> Kulujen määritys \> Automaattiset kulut**.
 
 Valitse avattavassa **Taso**-valikossa **Rivi** ja uusi automaattisten kulujen tietue, joka koskee kaikkia asiakkaita sekä tiettyä tuotetta tai tuoteryhmää, jossa asennusmaksut veloitetaan.
 
-![Esimerkki automaattisista kuluista](media/linechargesexample.png)
+![Esimerkki yhden rivitason automaattisesta kulut-taulusta](media/linechargesexample.png)
 
 Lähetä veloitukset Commercen asteikkoyksikköön/kanavatietokantaan, jotta myyntipiste voi käyttää niitä suorittamalla **1040 jakeluaikataulu** -työn.
 
@@ -173,7 +173,7 @@ Lähetä veloitukset Commercen asteikkoyksikköön/kanavatietokantaan, jotta myy
 
 Skenaarion suorittaminen myyntipistesovelluksessa edellyttää, että myyntipisteen käyttäjä luo myyntitapahtuman tavalliseen tapan lisäämällä tuotteet ja mahdolliset muut määritykset myyntiin. Käyttäjän on valittava ennen maksun keräämistä myyntipisteen nimikeluettelonäytössä rivi, johon maksu kohdistetaan, ja suoritettava **Lisää rivin kulu** -työvaihe. Käyttäjää pyydetään valitsemaan kulukoodi ja antamaan kulujen arvo. Kun käyttäjä on suorittanut prosessin loppuun, kulu linkitetään riviin ja lisätään tilauksen kokonaissummaan rivitason kuluna. Käyttäjä voi tarvittaessa toistaa rivin lisäkulujen lisäämisen muille tapahtuman nimikeriveille.
 
-Samaa prosessia voidaan käyttää puhelinkeskuksessa käyttämällä kulujen ylläpito-ominaisuutta, joka sijaitsee **Myyntitilaus**-sivun **Myyntitilauksen rivit** -osan avattavassa **Myyntitiedot**-valikossa. Käyttäjä voi lisätä uuden rivikohtaisen kulun tapahtumaan avautuvassa **Ylläpidä kuluja** -sivulla.
+Samaa prosessia voidaan käyttää puhelinkeskuksessa käyttämällä kulujen ylläpito-ominaisuutta, joka sijaitsee **Myyntitilaus**-sivun **Myyntitilauksen rivit** -osan avattavassa **Myyntitiedot**-valikossa. Valitsemalla tämän vaihtoehdon voidaan lisätä uuden rivikohtaisen kulun tapahtumaan avautuvassa **Ylläpidä kuluja** -sivulla.
 
 ## <a name="additional-features"></a>Lisätoiminnot
 

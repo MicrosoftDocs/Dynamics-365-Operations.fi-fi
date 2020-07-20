@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278977"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502110"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>Käyttöönoton projektipäällikön oppimisresurssit
 
@@ -29,7 +29,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö | kuvaus  | Muoto  | Pituus    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku   | 7 tuntia   |
-| [Dynamics 365 ja Power Platformin perusteet](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/ | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku   | 5.5 tuntia |
+| [Dynamics 365:n ja Power Platformin perusteet](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku   | 5.5 tuntia |
 | [Finance and Operations -sovellusten käytön aloittaminen](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku   | 2 tuntia   |
 | [Ennen ostamista](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Voit käyttää vaihe vaiheelta -opasta silloin, kun arvioit Finance and Operations -sovellusta tai kun olet valmis hankkimaan sen.| Dokumentaatio  |           |
 | [Julkaisusuunnitelma](https://docs.microsoft.com/dynamics365/release-plans/)  | Lisätietoja Dynamics 365 -järjestelmän uusimmista ominaisuuksista ja parannuksista  | Dokumentaatio  |           |

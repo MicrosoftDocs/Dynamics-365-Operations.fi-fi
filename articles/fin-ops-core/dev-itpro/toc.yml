@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform update -päivitykset 10.0.11 (heinäkuu 2020)
                   href: get-started/whats-new-platform-update-35.md
-                - name: Platform update -päivitykset 10.0.10 (toukokuu 2020)
-                  href: get-started/whats-new-platform-update-34.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
@@ -713,9 +711,29 @@
                         - name: Tapahtumat
                           href: dev-ref/xpp-events.md
                     - name: X++-tietojen valinta ja käsittely
-                      href: dev-ref/xpp-data-query.md
-                    - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
-                      href: dev-ref/sysda.md
+                      items:
+                        - name: X++-tietojen valinnan ja käsittelyn yleiskatsaus
+                          href: dev-ref/xpp-data/xpp-data-home-page.md
+                        - name: Select-lauseke
+                          href: dev-ref/xpp-data/xpp-select-statement.md
+                        - name: Valitse tiedot
+                          href: dev-ref/xpp-data/xpp-select.md
+                        - name: Lisää tiedot
+                          href: dev-ref/xpp-data/xpp-insert.md
+                        - name: Päivitä tiedot
+                          href: dev-ref/xpp-data/xpp-update.md
+                        - name: Poista tiedot
+                          href: dev-ref/xpp-data/xpp-delete.md
+                        - name: While select -lauseke
+                          href: dev-ref/xpp-data/xpp-while-select.md
+                        - name: Select-lausekkeen kirjoittaminen
+                          href: dev-ref/xpp-data/xpp-select-expression.md
+                        - name: Tapahtumien eheys
+                          href: dev-ref/xpp-data/xpp-transaction.md
+                        - name: Toimintojen muuntaminen joukkopohjaisista tietuekohtaisiksi
+                          href: dev-ref/xpp-data/xpp-data-perf.md
+                        - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
+                          href: dev-ref/sysda.md
                     - name: X++-makrot
                       href: dev-ref/xpp-macros.md
                     - name: X++-määriteluokat
@@ -750,80 +768,62 @@
                       href: dev-ref/xpp-session-run-time-functions.md
                     - name: Suorituksenaikaiset X++-merkkijonofunktiot
                       href: dev-ref/xpp-string-run-time-functions.md
-                - name: Järjestelmätaulut
+                - name: Järjestelmätaulukot
                   href: dev-ref/system-tables.md
                 - name: Järjestelmäluokat
                   items:
-                    - name: A-luokat
-                      href: dev-ref/a-classes.md
-                    - name: B-luokat
-                      href: dev-ref/b-classes.md
-                    - name: C-luokat
-                      href: dev-ref/c-classes.md
-                    - name: D-luokat
-                      href: dev-ref/d-classes.md
-                    - name: E-luokat
-                      href: dev-ref/e-classes.md
-                    - name: F-luokat (FieldBinding–FormBuildAnimateControl)
-                      href: dev-ref/fieldbinding-classes.md
-                    - name: F-luokat (FormBuildButtonControl–FormBuildFastTabSummarySeparator)
-                      href: dev-ref/formbuildbuttoncontrol-classes.md
-                    - name: F-luokat (FormBuildFilterPaneControl–FormBuildRealControl)
-                      href: dev-ref/formbuildfilterpanecontrol-classes.md
-                    - name: F-luokat (FormBuildReferenceControl–FormButtonSeparatorControl)
-                      href: dev-ref/formbuildreferencecontrol-classes.md
-                    - name: F-luokat (FormChangeTracker to FormControlEventArgs)
-                      href: dev-ref/formchangetracker-classes.md
-                    - name: F-luokat (FormDataObject–FormFastTabHeaderControl)
-                      href: dev-ref/formdataobject-classes.md
-                    - name: F-luokat (FormFastTabSummarySeparator–FormGridControl)
-                      href: dev-ref/formfasttabsummaryseparator-classes.md
-                    - name: F-luokat (FormGroupControl–FormIntControl)
-                      href: dev-ref/formgroupcontrol-classes.md
-                    - name: F-luokat (FormListBoxControl–FormNotifyEventArgs)
-                      href: dev-ref/formlistboxcontrol-classes.md
-                    - name: F-luokat (FormObject–FormRealControl)
-                      href: dev-ref/formobject-classes.md
-                    - name: F-luokat (FormReferenceControl–FormStringControl)
-                      href: dev-ref/formreferencecontrol-classes.md
-                    - name: F-luokat (FormTabControl–FormWindowControl)
-                      href: dev-ref/formtabcontrol-classes.md
-                    - name: G-luokat
-                      href: dev-ref/g-classes.md
-                    - name: H-luokat
-                      href: dev-ref/h-classes.md
-                    - name: I-luokat
-                      href: dev-ref/i-classes.md
-                    - name: J-luokat
-                      href: dev-ref/j-classes.md
-                    - name: K-luokat
-                      href: dev-ref/k-classes.md
-                    - name: L-luokat
-                      href: dev-ref/l-classes.md
-                    - name: M-luokat
-                      href: dev-ref/m-classes.md
-                    - name: N-luokat
-                      href: dev-ref/n-classes.md
-                    - name: O-luokat
-                      href: dev-ref/o-classes.md
-                    - name: P-luokat
-                      href: dev-ref/p-classes.md
-                    - name: Q-luokat
-                      href: dev-ref/q-classes.md
-                    - name: R-luokat
-                      href: dev-ref/r-classes.md
-                    - name: S-luokat
-                      href: dev-ref/s-classes.md
-                    - name: T-luokat
-                      href: dev-ref/t-classes.md
-                    - name: U-luokat
-                      href: dev-ref/u-classes.md
-                    - name: V-luokat
-                      href: dev-ref/v-classes.md
-                    - name: W-luokat
-                      href: dev-ref/w-classes.md
-                    - name: X-luokat
-                      href: dev-ref/x-classes.md
+                    - name: Järjestelmäluokkien luettelo
+                      href: dev-ref/system-classes/toc.yml
+                    - name: Järjestelmäluokat aakkosjärjestyksessä
+                      items:
+                        - name: A-luokat
+                          href: dev-ref/a-classes.md
+                        - name: B-luokat
+                          href: dev-ref/b-classes.md
+                        - name: C-luokat
+                          href: dev-ref/c-classes.md
+                        - name: D-luokat
+                          href: dev-ref/d-classes.md
+                        - name: E-luokat
+                          href: dev-ref/e-classes.md
+                        - name: F-luokat
+                          href: dev-ref/f-classes.md
+                        - name: G-luokat
+                          href: dev-ref/g-classes.md
+                        - name: H-luokat
+                          href: dev-ref/h-classes.md
+                        - name: I-luokat
+                          href: dev-ref/i-classes.md
+                        - name: J-luokat
+                          href: dev-ref/j-classes.md
+                        - name: K-luokat
+                          href: dev-ref/k-classes.md
+                        - name: L-luokat
+                          href: dev-ref/l-classes.md
+                        - name: M-luokat
+                          href: dev-ref/m-classes.md
+                        - name: N-luokat
+                          href: dev-ref/n-classes.md
+                        - name: O-luokat
+                          href: dev-ref/o-classes.md
+                        - name: P-luokat
+                          href: dev-ref/p-classes.md
+                        - name: Q-luokat
+                          href: dev-ref/q-classes.md
+                        - name: R-luokat
+                          href: dev-ref/r-classes.md
+                        - name: S-luokat
+                          href: dev-ref/s-classes.md
+                        - name: T-luokat
+                          href: dev-ref/t-classes.md
+                        - name: U-luokat
+                          href: dev-ref/u-classes.md
+                        - name: V-luokat
+                          href: dev-ref/v-classes.md
+                        - name: W-luokat
+                          href: dev-ref/w-classes.md
+                        - name: X-luokat
+                          href: dev-ref/x-classes.md
             - name: Laajennettavuus
               items:
                 - name: Laajennettavuuden kotisivu
@@ -964,15 +964,15 @@
               items:
                 - name: Jäljittäminen jäljityksen jäsentimen avulla
                   href: perf-test/trace-trace-tutorial.md
-                - name: 'Yhden käyttäjän testaus tehtävien tallennustoiminnon ja suorituskyvyn SDK:n avulla'
+                - name: 'Yhden käyttäjän testaus tehtävien tallennustoiminnon ja Performance SDK:n avulla'
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja paikallisen testauksen valvojan avulla'
+                - name: 'Usean käyttäjän testaus Performance SDK:n ja paikallisen testauksen valvojan avulla'
                   href: perf-test/multi-user-testing-local-test-controller.md
-                - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja Azure DevOps -palvelun avulla'
+                - name: 'Usean käyttäjän testaus Performance SDK:n ja Azure DevOps -palvelun avulla'
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: 'Vianmäärityksen opas yhden tai usean käyttäjän testausta varten suorituskyvyn SDK:n avulla'
+                - name: 'Vianmäärityksen opas yhden tai usean käyttäjän testausta varten Performance SDK:n avulla'
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
-                - name: Suorituskyvyn SDK ja usean käyttäjän testaus paikallisissa ympäristöissä
+                - name: Performance SDK ja usean käyttäjän testaus paikallisissa ympäristöissä
                   href: perf-test/perfsdk-tutorial-lbd.md
                 - name: Ongelmien vianmääritys ja suorituskyvyn analysointi Trace parser
                   href: perf-test/trace-parser.md
@@ -1434,6 +1434,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: 'Vie B2B-käyttäjät Azure AD:hen'
               href: sysadmin/implement-b2b.md
+            - name: Prosessien automatisointi
+              href: sysadmin/process-automation.md
             - name: Suojaus
               items:
                 - name: Rooliperustainen suojaus
@@ -1458,6 +1460,8 @@
                   href: sysadmin/tasks/assign-users-security-roles.md
                 - name: Tehtävätallenteiden suojausdiagnostiikka
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+            - name: Prosessien automatisointi
+              href: /sysadmin/process-automation.md
             - name: Eräkäsittely
               items:
                 - name: Eräkäsittelyn yleiskatsaus
@@ -1518,6 +1522,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä
                   href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012 -päivitys – paikalliset ympäristöt
+                  href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012 -päivitys – valmistelusiirron testaaminen
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 -päivitys – päivityksen jälkeiset tehtävät
