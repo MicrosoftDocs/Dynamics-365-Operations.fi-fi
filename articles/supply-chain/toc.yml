@@ -10,11 +10,11 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
             - name: Kokeiluversioiden tilaaminen
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Yhden version palvelupäivitykset
+            - name: One Version -palvelupäivitykset
               items:
-                - name: Yhden version palvelupäivitykset – yleiskatsaus
+                - name: One Version -palvelupäivitykset – yleiskatsaus
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Yhden version palvelupäivitysten usein kysytyt kysymykset
+                - name: One Version -palvelupäivitysten usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ohjelmiston elinkaarikäytäntö - pilvi
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tietotehtävän automaatio
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Riippumattomien ohjelmistotoimittajien ratkaisujen toimittaminen yhtä versiota käyttäen
+                - name: Riippumattomien ohjelmistotoimittajien ratkaisujen toimittaminen One Versionin avulla
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Käyttäjän hyväksymistestien luominen ja automatisointi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
@@ -74,6 +74,8 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (heinäkuu 2020)
                       href: get-started/whats-new-scm-10-0-11.md
+                    - name: Supply Chain Management 10.0.10 (toukokuu 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -1355,6 +1357,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Suunnittelutyön peruuttaminen
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Suunnittelun optimoinnin laajennettavuus
+                  href: master-planning/planning-optimization/extensibility.md
                 - name: Suunnittelun optimoinnin vianmääritys
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Pääsuunnitelmat
@@ -1511,6 +1515,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Numerosarjojen määrittäminen ohjatulla toiminnolla
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Varastotyönkulkujen numerosarjojen määrittäminen
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
             - name: Organisaatiot ja organisaatiohierarkiat
               items:
                 - name: Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
@@ -1817,7 +1823,11 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Tuotteiden poistaminen pääsuunnittelusta
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Viivakoodin luonti tuotteelle
+                - name: Kaksikäyttötuotteet
+                  href: pim/dual-use.md
+                - name: Alkuperämaa
+                  href: pim/country-of-origin.md
+                - name: Tuotteen viivakoodin luonti
                   href: pim/tasks/create-bar-code-product.md
                 - name: Kirjoita tuotteen GTIN-koodi
                   href: pim/tasks/enter-gtin-code-product.md
@@ -2561,26 +2571,24 @@
               href: transportation/tasks/set-up-transportation-constraints-item.md
         - name: Varastonhallinta
           items:
-            - name: Varastonhallinnan yleiskatsaus
+            - name: Varastohallinnan yleiskatsaus
               href: warehousing/warehouse-management-overview.md
             - name: Saapuvien varaston työvaiheet
               items:
-                - name: Rekisteröintien ja poispanojen vastaanotot
-                  items:
-                    - name: Ostotilausten saapuvien kuormien varastokäsittely
-                      href: warehousing/inbound-load-handling.md
-                    - name: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
-                      href: warehousing/tasks/register-items-advanced-warehousing.md
-                    - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
-                      href: warehousing/tasks/register-items-basic-warehousing.md
-                    - name: Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin
-                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                    - name: Sijaintidirektiivin määrittäminen ostotilauksen poispanolle
-                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                    - name: Työmallin määrittäminen ostotilauksia varten
-                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
-                    - name: Tuotedimensioiden yhdistäminen sijainnissa
-                      href: warehousing/location-product-dimension-mixing.md
+                - name: Ostotilausten saapuvien kuormien varastokäsittely
+                  href: warehousing/inbound-load-handling.md
+                - name: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Sijaintidirektiivin määrittäminen ostotilauksen poispanolle
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Työmallin määrittäminen ostotilauksia varten
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: Tuotedimensioiden yhdistäminen sijainnissa
+                  href: warehousing/location-product-dimension-mixing.md
             - name: Lähtevien varaston työvaiheet
               items:
                 - name: Varaukset varastonhallinnassa
@@ -2597,14 +2605,14 @@
                   items:
                     - name: Määritä klusterikeräily
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Järjestelmäohjattu klusterikeräily
+                      href: warehousing/system-directed-cluster-pick.md
                     - name: Määritä konttiinpakkaus
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Erän ja rekisterikilven tiedot
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Rekisterikilven etiketin tulostuksen ottaminen käyttöön
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Kappaleen keräilyvahvistus
                       href: warehousing/piece-picking-confirmation.md
                     - name: Pakkausmateriaalit ja maksut
@@ -2615,14 +2623,18 @@
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
                       href: warehousing/cancel-warehouse-work.md
-                    - name: Järjestelmäohjattu klusterikeräily
-                      href: warehousing/system-directed-cluster-pick.md
                     - name: Järjestelmäohjattu työjärjestys
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Keräilyrivin ryhmittely
                       href: warehousing/pick-line-grouping.md
                     - name: Varastopaikoitus
                       href: warehousing/warehouse-slotting.md
+                    - name: Sijaintidirektiivin varastonkeräilyn erääntyminen
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Lähtevä lajittelu
+                      href: warehousing/outbound-sorting.md
+                    - name: Asettaminen seinälle – asettaminen myymälään
+                      href: warehousing/put-to-wall-put-to-store.md
                 - name: Täydennys
                   items:
                     - name: Täydennyksen yleiskatsaus
@@ -2645,6 +2657,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Aallon mallipohjan ryhmittely
                       href: warehousing/wave-template-grouping.md
+                    - name: Aallon etikettien tulostaminen uudelleen ja mitätöinti
+                      href: warehousing/reprint-and-void-wave-labels.md
                 - name: Lähetyksen konsolidoinnin käytännöt
                   items:
                     - name: Lähetyksen konsolidoinnin käytännöt
@@ -2715,6 +2729,10 @@
                       href: warehousing/work-line-details.md
                     - name: Toimipaikan rekisterikilpien paikannus
                       href: warehousing/location-license-plate-positioning.md
+                    - name: Vaihda työpoolia työssä
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: Nimikkeen konsolidointi – toimipaikan käyttöaste
+                      href: warehousing/item-consolidation-location-utilization.md
             - name: Varaston asetukset
               items:
                 - name: Varaston konfigurointi
@@ -2729,6 +2747,8 @@
                       href: warehousing/wave-step-codes.md
                     - name: Aaltokäsittelyn määritys
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Aallon etikettitulostuksen määrittäminen ja käyttäminen
+                      href: warehousing/configure-wave-label-printing.md
                     - name: Lähetysten automaattinen päivitys
                       href: warehousing/auto-update-shipment.md
                     - name: Toimipaikkaprofiilin luonti
@@ -2753,8 +2773,6 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Mobiililaitteiden viivakoodituki
                       href: warehousing/mobile-barcode-support.md
                     - name: Siirtotilausten varaston määrittäminen
@@ -2767,6 +2785,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Varastotyön mobiililaitteiden määrittäminen
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Viivakoodien lukeminen kameran avulla varastosovelluksessa
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Rekisterikilven vastaanotto varastosovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten

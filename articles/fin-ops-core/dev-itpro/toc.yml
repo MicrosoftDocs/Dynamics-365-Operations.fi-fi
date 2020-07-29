@@ -842,7 +842,7 @@
                       href: extensibility/customize-model-elements-extensions.md
                     - name: Mukauttaminen laajennuksella ja lisäyksillä
                       href: extensibility/customization-overlayering-extensions.md
-                - name: Uutta
+                - name: Uudet ominaisuudet
                   items:
                     - name: Laajennettavuuden uudet ja muuttuneet ominaisuudet
                       href: extensibility/extensibility-new.md
@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: 'Vie B2B-käyttäjät Azure AD:hen'
               href: sysadmin/implement-b2b.md
-            - name: Prosessien automatisointi
-              href: sysadmin/process-automation.md
             - name: Suojaus
               items:
                 - name: Rooliperustainen suojaus
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Käyttäjien liittäminen käyttöoikeusrooleihin
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Mukautetun suojausmäärityksen tuonti tai vienti tiedonhallinnan avulla
+                  href: sysadmin/import-export-customized-security.md
                 - name: Tehtävätallenteiden suojausdiagnostiikka
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Laajennettavat tietojen suojauskäytännöt
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Suojauskäytännön luominen
+                  href: sysadmin/create-simple-security-policy.md
             - name: Prosessien automatisointi
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Eräkäsittely
               items:
                 - name: Eräkäsittelyn yleiskatsaus
@@ -1582,7 +1586,7 @@
               items:
                 - name: Uusimpaan päivitykseen siirtyminen
                   href: migration-upgrade/upgrade-latest-update.md
-                - name: Polut yhteen versioon
+                - name: Polut One Versioniin
                   items:
                     - name: Itsepalvelupäivitys uusimpaan versioon
                       href: migration-upgrade/self-service-upgrade.md
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Suodatusasetukset
                   href: user-interface/filtering.md
-                - name: PowerApps-isännän ohjausobjekti
+                - name: Power Apps-isännän ohjausobjekti
                   href: user-interface/powerapps-host-control.md
             - name: Ikkunoiden hallinta
               items:
