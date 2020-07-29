@@ -41,7 +41,7 @@ Yhdessä Microsoft Dynamics365 -integrointien tyypillisessä liiketoimintaskenaa
 Tässä oppaassa käytetään seuraavia teknologioita:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Vietävien työntekijöiden päätietolähde.
-- **[Azure-logiikkasovellukset](https://azure.microsoft.com/services/logic-apps/)** – Teknologia, joka vastaa toistuvan viennin järjestelyistä ja ajoituksesta.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – Teknologia, joka vastaa toistuvan viennin järjestelyistä ja ajoituksesta.
 
     - **[Yhdistimet](https://docs.microsoft.com/azure/connectors/apis-list)** – Teknologia, jota käytetään logiikkasovelluksen yhdistämiseen tarvittaviin päätepisteisiin.
 
@@ -83,7 +83,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
 
     ![Logiikkasovelluksen luontisivu](media/integration-logic-app-creation-1.png)
 
-2. Aloita logiikkasovelluksen suunnitteluohjelmassa tyhjällä logiikkasovelluksella.
+2. Aloita Logic Apps Designer tyhjällä logiikkasovelluksella.
 3. Lisää [Toistuvan aikataulun käynnistin](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) suorittamaan sovellus 24 tunnin välein (tai valitsemasi aikataulun mukaan).
 
     ![Toistuvuuden valintaikkuna](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Testaa logiikkasovelluksesi valitsemalla suunnitteluohjelman **Suorita**-painike
 
 Jos jossakin vaiheessa ilmenee virhe, valitse kyseinen vaihe suunnitteluohjelmassa ja tutki sen kentät **Syötteet** ja **Tuotokset**. Korjaa virheet ja muuta vaihetta tarpeen mukaan virheiden korjaamiseksi.
 
-Seuraavassa kuvassa näytetään, miltä logiikkasovellusten suunnitteluohjelma näyttää, kun kaikki logiikkasovelluksen vaiheet suoritetaan onnistuneesti.
+Seuraavassa kuvassa näytetään, miltä Logic Apps Designer näyttää, kun kaikki logiikkasovelluksen vaiheet suoritetaan onnistuneesti.
 
 ![Onnistunut logiikkasovelluksen suoritus](media/integration-logic-app-successful-run.png)
 
