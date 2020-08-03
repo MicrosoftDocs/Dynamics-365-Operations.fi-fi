@@ -3,7 +3,7 @@ title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 description: Tässä ohjeaiheessa keskitytään aiheisiin, joissa käsitellään Dynamics 365 Supply Chain Managementin kunkin version uusia ja muutettuja toimintoja.
 author: kamaybac
 manager: tfehr
-ms.date: 06/01/2020
+ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,16 +15,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-02-13
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f6824e4c8e0e6d3071973dc92d2ff90d78f4dde5
-ms.sourcegitcommit: d64a07748bdd7c85877cfe0343bee952f235f38e
+ms.search.validFrom: 2020-07-08
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: a3e55d891bb029fa363a52191ae5c425de18899c
+ms.sourcegitcommit: 9c28aca7fc99e38139b7935bcdb6132cba2c81b2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457190"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "3545685"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,17 +36,17 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Dynamics 3
 |---|---|---|---|
 | 10.0.11 | 10.0.464 | Heinäkuu 2020 | [Dynamics 365 Supply Chain Managementin version 10.0.11 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | Toukokuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.10 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-10.md) |
+| 10.0.9  | 10.0.383   | Huhtikuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.9 uudet ja muutetut toiminnot](whats-new-scm-10-0-9.md) |
+| 10.0.8  | 10.0.319   | Helmikuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.8 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-8.md) |
+| 10.0.7  | 10.0.283   | 2020. tammikuuta | [Dynamics 365 Supply Chain Managementin version 10.0.7 uudet ja muutetut toiminnot](whats-new-scm-10-0-7.md) |
+| 10.0.6 |   10.0.234   | marraskuu 2019  | [Dynamics 365 Supply Chain Managementin version 10.0.6 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-6.md) |
 
-## <a name="releases-before-march-2020"></a>Julkaisut ennen maaliskuuta 2020
+## <a name="releases-before-november-2019"></a>Julkaisut ennen marraskuuta 2019
 
 Seuraavissa ohjeaiheissa on tietoja ennen marraskuuta 2019 julkaistujen versioiden uusista ja muuttuneista ominaisuuksista.
 
-| Julkaisu | Versio | Koontiversion numero | Saatavuus | Lisätietoja |
+| Versio | Versio | Koontiversion numero | Saatavuus | Lisätietoja |
 |---|---|---|---|---|
-| Dynamics 365 Supply Chain Management | 10.0.9  | 10.0.383   | Huhtikuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.9 uudet ja muutetut toiminnot](whats-new-scm-10-0-9.md) |
-| Dynamics 365 Supply Chain Management | 10.0.8  | 10.0.319   | Helmikuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.8 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-8.md) |
-| Dynamics 365 Supply Chain Management | 10.0.7  | 10.0.283   | 2020. tammikuuta | [Dynamics 365 Supply Chain Managementin version 10.0.7 uudet ja muutetut toiminnot](whats-new-scm-10-0-7.md) |
-| Dynamics 365 Supply Chain Management | 10.0.6 |   10.0.234   | marraskuu 2019  | [Dynamics 365 Supply Chain Managementin version 10.0.6 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-6.md) |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.5      | 10.0.197         | 2019. lokakuuta     | [Dynamics 365 for Finance and Operationsin version 10.0.5 uudet ja muuttuneet ominaisuudet (lokakuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md)                 |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.4      | 10.0.136         | Heinäkuu 2019        | [Dynamics 365 for Finance and Operationsin version 10.0.4 uudet tai muuttuneet ominaisuudet (heinäkuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md)                    |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | 2019. kesäkuuta        | [Dynamics 365 for Finance and Operationsin version 10.0.3 uudet tai muuttuneet ominaisuudet (kesäkuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |

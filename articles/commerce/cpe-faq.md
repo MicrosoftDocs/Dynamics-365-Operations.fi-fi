@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset
-description: Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen esikatseluympäristöä koskeviin usein kysyttyihin kysymyksiin.
+title: Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset
+description: Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen arviointiympäristön usein kysyttyihin kysymyksiin.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254721"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599754"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen esikatseluympäristöä koskeviin usein kysyttyihin kysymyksiin.
+Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen arviointiympäristön usein kysyttyihin kysymyksiin.
 
-**Voinko siirtää Commercen esikatseluympäristöä koskevan kutsuni toiselle vuokralaiselle?**
+**Voiko Commercen arviointiympäristöä käyttää sähköisen kaupankäynnin kaupassa asiakkaille, jotka tällä hetkellä käyttävät Retailia?**
 
-Kyllä. Voit käyttää kutsun siirtoon [Commercen esikatselun siirtolomaketta](https://aka.ms/Dynamics365CommercePreviewTransferForm).
+Nro Commercen arviointiympäristö on tarkoitettu vain arviointiin. Jos tarvitset ympäristöä asiakkaalle, joka toteuttaa vähittäismyynnin, ota yhteyttä Microsoftiin.
 
-**Kuinka kauan kutsun siirtäminen kestää?**
+**Voiko Commercen arviointiympäristöä käyttää sähköisen kaupankäynnin ominaisuuksien valmisteluun nykyisen Retailin toteutuksessa käytetyn sovelluksen tai ympäristön ohella?**
 
-Siirto kestää keskimäärin noin kolmesta viiteen arkipäivää. Poikkeuksia voidaan kuitenkin soveltaa.
+Ei (yleensä). Commercen arviointiosat ovat saatavana vain ympäristöissä, jotka vastaavat edellytyksissä ja valmisteluoppaassa mainittuja määrityksiä. Lisäksi vaadittuja perusesittelytietoja ei ole ympäristöissä, jotka otettiin käyttöön alkuperäisessä julkaisussa, joka on aikaisempi kuin versio 10.0.8. 
 
-**Toimiiko Commercen esikatseluympäristö Dynamics 365 Financen tai 365 Supply Chain -projektien kanssa?**
+**Mitä kustannuksia liittyy Commercen arviointiympäristön käyttöönottoon Microsoft Azuressa Microsoft Dynamics Lifecycle Servicesin (LCS) kautta?**
 
-Nro Commercen esikatseluympäristö toimii vain Dynamics 365 Retail -projektien kanssa.
+Perinteistä Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin ja Dynamics 365 Commercen pääkonttorin esittely-ympäristöä (virtuaalikone \[VM\]) isännöidään Azure-tilauksessa. Voit käyttää [Azure hinnoittelulaskuria](https://azure.microsoft.com/pricing/calculator/) tämän kustannuksen arvioimiseen.
 
-**Voiko Commercen esikatseluympäristöä käyttää sähköisen kaupankäynnin kaupassa asiakkaille, jotka tällä hetkellä toteuttavat vähittäismyyntiä?**
+Muut osat, kuten Commerce Scale Unit, Commercen sivustonmuodostin ja sähköinen kaupankäyntisivusto, ovat saatavana Microsoftin isännöimänä ohjelmisto palveluna (SaaS) -vaihtoehtona.
 
-Nro Commercen esikatseluympäristö on vain arviointiympäristö. Jos tarvitset ympäristöä asiakkaalle, joka toteuttaa vähittäismyynnin, ota yhteyttä Microsoftiin.
+**Mitkä Azure-maita tuetaan tällä hetkellä Commercen arviointiympäristössä?**
 
-**Voiko Commercen esikatseluympäristöä käyttää verkkokaupan ominaisuuksien tarjoamiseen olemassa olevan sovelluksen/ympäristön päälle, joka toteuttaa vähittäismyyntiä?**
-
-Nro Commercen esikatseluympäristö on tällä hetkellä käytettävissä vain uusissa ympäristöissä, jotka otettiin käyttöön Retailin varastointiyksikkö (SKU) -projekteissa, joissa on demotietoja versiosta 10.0.6.
-
-**Mitä kustannuksia liittyy Commercen esikatseluympäristön käyttöönottoon Microsoft Azuressa Microsoft Dynamics Lifecycle Servicesin (LCS) kautta?**
-
-Retail on ainoa komponentti, jota isännöidään tilauksestasi. Muita komponentteja, kuten Retail Cloud Scale Unitia (RCSU) ja sähköistä kaupan käyntiä, isännöidään Microsoft-tilauksissa. Voit käyttää [Azure hinnoittelulaskuria](https://azure.microsoft.com/pricing/calculator/) tämän kustannuksen arvioimiseen.
-
-**Mitkä Azure-maat ovat tällä hetkellä tuettuja Commercen esikatseluympäristössä?**
-
-Commercen esikatseluympäristö voidaan ottaa käyttöön vain Pohjois-Amerikan maantieteellisellä alueella.
+Commercen arviointiympäristö voidaan ottaa käyttöön vain Pohjois-Amerikan maantieteellisellä alueella.
 
 **Onko olemassa ladattava virtuaalinen kovalevy (VHD), jolla on täydellinen OneBox Virtual Machinen (VM) vaihtoehto?**
 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) ja verkkokauppa ovat täysin ohjelmistoja palveluna (SaaS), ja niiden on oltava pilvipohjaisia.
+Dynamics 365 Commerce ja Commerce Scale Unit ovat saatavana pilvessä käytettävänä ohjelmisto palveluna (SaaS) -versiona.
 
-**Kuinka kauan Commerce esikatseluympäristöä voi käyttää?**
+**Kuinka kauan Commerce arviointiympäristöä voi käyttää?**
 
-Commercen esikatseluympäristössä on 30 päivän aikaraja käyttöönottopäivästä, jolloin sähköinen kaupankäynti on valmisteltu.
+Commerce arviointiympäristöllä on 30 päivän aikaraja siitä päivästä, jolloin SaaS-osat, kuten Commerce Scale Unit, Commercen sivustonmuodostin ja oma sähköinen kaupankäyntisivusto, on valmisteltu.
 
-**Voinko pidentää Commercen esikatseluympäristöni aikarajaa?**
+**Voinko pidentää Commercen arviointiympäristön aikarajaa?**
 
-Kyllä. Voit ottaa yhteyttä tukitiimiin käyttämällä [Commercen esikatselulaajennus lomaketta](https://aka.ms/Dynamics365CommercePreviewExtensionForm).
-
-**Voiko Commercen esikatseluympäristöön tehdä useita pyyntöjä?**
-
-Myönnämme yhden Commercen esikatseluympäristön kiintiön jokaista hyväksyttyä pyyntöä varten. Jos tarvitset useamman kuin yhden esikatseluympäristön, ota yhteyttä Microsoftiin. Katso yhteystiedot seuraavasta osasta.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Dynamics 365 Commerce -esikatseluympäristön yhteystiedot
-
-Jos haluat ottaa yhteyttä Microsoftiin, ja sinulla on Commerce esikatseluympäristöön liittyviä kysymyksiä tai pyyntöjä, tutustu [Microsoft Dynamics 365 Commerce -esikatselun Yammer-ryhmään](https://aka.ms/Dynamics365CommercePreviewYammer).
+Aikarajan pidennys on poikkeus, jota harkitaan tapauskohtaisesti. Ota tässä tapauksessa yhteys Microsoft-kumppaniin.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commerce -arviointiympäristön yleiskuvaus](cpe-overview.md)
 
-[Dynamics 365 Commercen esiversioympäristön valmistelu](provisioning-guide.md)
+[Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md)
 
-[Dynamics 365 Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
+[Dynamics 365 Commerce -arviointiympäristön määritykset](cpe-post-provisioning.md)
 
-[Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten](cpe-optional-features.md)
+[BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](cpe-bopis.md)
+
+[Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)

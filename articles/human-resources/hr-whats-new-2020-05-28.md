@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 7664afbd0b1fd4e2c9686053fa102d85809c0411
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443461"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555312"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (28. toukokuuta 2020)
 
@@ -103,3 +103,10 @@ Tässä julkaisussa HR voi luoda säännön, joka keskeyttää työntekijöiden 
 ## <a name="dmf-entity-available-for-accrual-suspensions-june-1"></a>DMF-yksikkö käytettävissä suoriteperusteisia keskeytyksiä varten (Kesäkuun 1.)
 
 DMF-yksikkö on nyt käytettävissä suoriteperusteisia keskeytyksiä varten.
+
+## <a name="see-also"></a>Lisätietoja
+
+[Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Päivitysprosessi](hr-admin-setup-update-process.md)</br>
+[Hallitse ominaisuuksia](hr-admin-manage-features.md)

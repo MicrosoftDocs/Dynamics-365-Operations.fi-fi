@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94163cb37635097d36ec12d2060eebcf9ae604f5
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: 418ac9cf680f3a3f6316888c62f02b4dc86030c9
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500386"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555360"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
 
@@ -41,6 +41,7 @@ Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuk
 
 Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua joka toinen viikko ilmestyvässä Human Resources -julkaisussa on.
 
+[8. heinäkuuta 2020](hr-whats-new-2020-07-08.md)</br>
 [23. kesäkuuta 2020](hr-whats-new-2020-06-23.md)</br>
 [11. kesäkuuta 2020](hr-whats-new-2020-06-11.md)</br>
 [28. toukokuuta 2020](hr-whats-new-2020-05-28.md)</br>

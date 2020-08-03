@@ -3,7 +3,7 @@ title: Myyntipisteen lähtevä varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen lähtevä varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384126"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551622"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -58,6 +58,9 @@ Voit määrittää asynkronisen asiakirjakehyksen suorittamalla seuraavat toimin
 7. Määritä **Yleistä**-pikavälilehden **Asetukset**-osassa **Jatkuva**-asetuksen arvoksi **Ei**, jos haluat varmistaa, että suorituskykyongelmia ei ole.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Tehtäviä käsittelevän ja valvovan asiakirjan kahden erätyön luominen ja aikatauluttaminen
+
+> [!NOTE]
+> Commercen versiossa 10.0.13 ja sitä uudemmassa versiossa erätöitä ei tarvitse määrittää erätyökehikossa. Eräprosessit voidaan määrittää **Retail ja Commerce > Retail ja Commerce IT** -valikossa. Määritä erätyöt **Vähittäismyynnin asiakirjatoiminnon seuranta**- ja **Vähittäismyynnin asiakirjatoiminnon käsittely** -valikkovaihtoehdoissa.
 
 Luotuja erätöitä käytetään epäonnistuneiden tai aikakatkaistujen asiakirjojen käsittelyssä. Niitä käytetään myös silloin, kun myyntipisteessä käsiteltävien aktiivisten varastoasiakirjojen määrä ylittää järjestelmän määrittämän arvon.
 

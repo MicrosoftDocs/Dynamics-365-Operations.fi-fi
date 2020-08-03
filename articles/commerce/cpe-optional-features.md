@@ -1,9 +1,9 @@
 ---
-title: Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää valinnaisia ominaisuuksia Microsoft Dynamics 365 Commercen esikatseluympäristössä.
+title: Valinnaisten toimintojen määrittäminen Dynamics 365 Commerce -arviointiympäristöä varten
+description: Tässä ohjeaiheessa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057737"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599817"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Valinnaisten toimintojen määrittäminen Dynamics 365 Commerce -arviointiympäristöä varten
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää valinnaisia ominaisuuksia Microsoft Dynamics 365 Commercen esikatseluympäristössä.
+Tässä ohjeaiheessa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
 Jos haluat arvioida tapahtuman sähköpostiominaisuuksia, seuraavat edellytykset on täytettävä:
 
-- Käytettävissä on sähköpostipalvelin (Simple Mail Transfer Protocol \[SMTP\]-palvelin), jota voi käyttää sen Microsoft Azure -tilauksen kanssa, jossa esiversioympäristö valmisteltiin.
+- Käytettävissä on sähköpostipalvelin (Simple Mail Transfer Protocol \[SMTP\]-palvelin), jota voi käyttää sen Microsoft Azure -tilauksen kanssa, jossa arviointiympäristö valmisteltiin.
 - Sinulla on käytettävissä palvelimen täydellinen nimi (FQDN)/IP-osoite, SMTP-portin numero ja todennustiedot.
-
-Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämällä uusia monikanavakuvia, sinulla on oltava käytettävissä sisällönhallintajärjestelmän (CMS) vuokraajan nimi. Tämän nimen löytämistä koskevat ohjeet annetaan myöhemmin tässä ohjeaiheessa. >>> (Q: missä ohjeet ovat?)
 
 ## <a name="configure-the-image-back-end"></a>Kuvan taustan määrittäminen
 
@@ -47,9 +44,9 @@ Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämäll
 > [!NOTE]
 > Ennen kuin voit suorittaa nämä toimet, sinun on suoritettava [sivuston määrittäminen Commercessa](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Kirjaudu Commercen sivustonhallintatyökaluun käyttämällä URL-osoitetta, johon olet tehnyt huomautuksen verkkokaupan valmistelusta valmistelun aikana (katso [verkkokaupan alustaminen](provisioning-guide.md#initialize-e-commerce)).
+1. Kirjaudu Commercen sivustonmuodostimeen käyttämällä URL-osoitetta, johon olet tehnyt huomautuksen verkkokaupan valmistelusta valmistelun aikana (katso [verkkokaupan alustaminen](provisioning-guide.md#initialize-e-commerce)).
 1. Avaa **Fabrikam**-sivusto.
-1. Valitse vasemmalla olevasta valikosta **Resurssit**.
+1. Valitse vasemmalla olevasta valikosta **Mediakirjasto**.
 1. Valitse jokin yksittäinen kuvaresurssi.
 1. Etsi oikealta puolelta ominaisuuksien tarkistamisen **Julkinen URL** -ominaisuus. Arvo on URL-osoite. Tässä on esimerkki:
 
@@ -63,22 +60,22 @@ Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämäll
 
 ### <a name="update-the-media-base-url"></a>Median URL-perusosoitteen päivittäminen
 
-1. Kirjaudu sisään Dynamics 365 Commerce -järjestelmään.
+1. Kirjaudu sisään Commercen pääkonttoriversioon.
 1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kanavaprofiilit**.
 1. Valitse **Muokkaa**.
 1. Mene **Profiilin ominaisuudet** -kohdan alle, korvaa **Mediapalvelimen URL-perusosoite** -ominaisuus aiemmin luodulla Median URL-perusosoite -arvolla.
-1. Valitse toinen kanava vasemmalla olevasta luettelosta **Oletuskanava**-kohdassa.
+1. Valitse kanava, jonka nimi on **scXXXXXXXXX**.
 1. Valitse **Profiilin ominaisuudet** -kohdassa **Lisää**.
 1. Valitse lisättyjen ominaisuuksien kohdalla **Mediapalvelimen perus-URL-osoite** ominaisuusavaimeksi. Kirjoita ominaisuuden arvoksi aiemmin luomasi median perus-URL-osoitteen URL-osoite.
 1. Valitse **Tallenna**.
 
-## <a name="configure-the-email-server"></a>Sähköpostipalvelimen määrittäminen
+## <a name="configure-and-test-the-email-server"></a>Sähköpostipalvelimen määrittäminen ja testaaminen
 
 > [!NOTE]
 > Tähän syötettävän SMTP-palvelimen tai sähköpostipalvelun on oltava käytettävissä ympäristössä käytettävän Azure-tilauksen avulla.
 
-1. Kirjaudu sisään Commerce-sovellukseen.
-1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Hallinta \> Asetukset \> Sähköposti \> Sähköpostiparametrit**.
+1. Kirjaudu sisään Commercen pääkonttoriversioon.
+1. Valitse vasemman valikon avulla **Moduulit \> Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Sähköpostiparametrit**.
 1. Kirjoita **SMTP-asetukset**-välilehden **Lähtevän postin palvelin** -kenttään SMTP-palvelimen tai sähköpostipalvelun FQDN-tai IP-osoite.
 1. Kirjoita **SMTP-porttinumero**-kenttään porttinumero. (Jos et käytä Secure Sockets Layer \[SSL\]-suojausta, oletusportin numero on **25**.)
 1. Jos todennus on pakollinen, kirjoita arvot **Käyttäjänimi**- ja **Salasana**-kenttiin.
@@ -92,8 +89,8 @@ Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämäll
 
 Jokaista tapahtumaa kohti, josta haluat lähettää sähköposteja, on päivitettävä sähköpostimalli, jossa on sallittu lähettäjän sähköpostiosoite.
 
-1. Kirjaudu sisään Commerce-sovellukseen.
-1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Organisaation hallinta \> Asetukset \> Organisaation sähköpostimallit**.
+1. Kirjaudu sisään Commercen pääkonttoriversioon.
+1. Valitse vasemman valikon avulla **Moduulit \> Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Organisaation sähköpostimallit**.
 1. Valitse **Näytä luettelo**.
 1. Luo kukin luettelossa oleva malli seuraavasti:
 
@@ -104,9 +101,9 @@ Jokaista tapahtumaa kohti, josta haluat lähettää sähköposteja, on päivitet
 
 ## <a name="customize-email-templates"></a>Mukauta sähköpostimalleja
 
-Haluat ehkä mukauttaa sähköpostimalleja niin, että ne käyttävät eri kuvia. Tai haluat ehkä päivittää mallien linkit niin, että ne menevät esikatseluympäristöön. Tässä menettelyssä kerrotaan, miten oletusmallit ladataan ja mukautetaan ja miten järjestelmän mallit päivitetään.
+Haluat ehkä mukauttaa sähköpostimalleja niin, että ne käyttävät eri kuvia. Tai haluat ehkä päivittää mallien linkit niin, että ne menevät arviointiympäristöön. Tässä menettelyssä kerrotaan, miten oletusmallit ladataan ja mukautetaan ja miten järjestelmän mallit päivitetään.
 
-1. Lataa selaimessa [Microsoft Dynamics 365 Commerce -esikatselusovelluksen oletussähköpostimallien zip-tiedosto](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) paikallista tietokonetta varten. Tämä tiedosto sisältää seuraavat HTML-asiakirjat:
+1. Lataa selaimessa [Microsoft Dynamics 365 Commerce -arviointisovelluksen oletussähköpostimallien zip-tiedosto](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) paikalliseen tietokoneeseen. Tämä tiedosto sisältää seuraavat HTML-asiakirjat:
 
     - Tilauksen vahvistuksen malli
     - Lahjakorttimallin lähettäminen
@@ -161,7 +158,7 @@ Seuraavat tunnukset korvataan arvoilla jokaisessa tuotteessa tilauksessa.
 | Tuoteluettelo - alku   | \<!--%tablebegin.salesline% --\> |
 | Tuoteluettelo - loppu     | \<!--%tableend.salesline%--\> |
 | Tuotteen nimi           | %lineproductname% |
-| Kuvaus            | %lineproductdescription% |
+| kuvaus            | %lineproductdescription% |
 | Määrä               | %linequantity% |
 | Rivin yksikköhinta        | %lineprice% (verify) |
 | rivinimikkeen kokonaissumma        | %linenetamount% |
@@ -173,13 +170,15 @@ Seuraavat tunnukset korvataan arvoilla jokaisessa tuotteessa tilauksessa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commerce -arviointiympäristön yleiskuvaus](cpe-overview.md)
 
-[Dynamics 365 Commercen esiversioympäristön valmistelu](provisioning-guide.md)
+[Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md)
 
-[Dynamics 365 Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
+[Dynamics 365 Commerce -arviointiympäristön määritykset](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
+[BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](cpe-bopis.md)
+
+[Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commercen esikatseluympäristön määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen esikatseluympäristön, kun se on valmisteltu.
+title: Dynamics 365 Commerce -arviointiympäristön määritykset
+description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
 author: psimolin
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,25 +17,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ad05996eaabd3965308370649a27b8bc3080c7ce
-ms.sourcegitcommit: f72e90dccc80718e99cab2752eaf8931dcbb915e
+ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3534064"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599721"
 ---
-# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commercen esikatseluympäristön määrittäminen
-
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön määritykset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen esikatseluympäristön, kun se on valmisteltu.
+Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
-Suorita tämän ohjeaiheen toimet vasta, kun Commercen esikatseluympäristö on valmisteltu. Katso lisätietoja Commercen esikatseluympäristön valmistelusta kohdasta [Commercen esikatseluympäristön valmisteleminen](provisioning-guide.md).
+Suorita tämän ohjeaiheen toimet vasta, kun Commercen arviointiympäristö on valmisteltu. Lisätietoja Commercen arviointiympäristön valmistelusta on kohdasta [Commercen arviointiympäristön valmisteleminen](provisioning-guide.md).
 
-Kun Commercen esikatseluympäristö on valmisteltu loppuun, lisävalmistelun jälkeiset määritysvaiheet on suoritettava, ennen kuin voit aloittaa ympäristön arvioinnin. Näiden vaiheiden suorittaminen edellyttää, että käytössä ovat Microsoft Dynamics Lifecycle Services (LCS) ja Dynamics 365 Commerce.
+Kun Commercen arviointiympäristö on valmisteltu kokonaisuudessaan, valmistelun jälkeiset lisämääritysvaiheet on suoritettava, ennen kuin voit aloittaa ympäristön arvioinnin. Näiden vaiheiden suorittaminen edellyttää, että käytössä ovat Microsoft Dynamics Lifecycle Services (LCS) ja Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Ennen aloittamista
 
@@ -43,19 +42,20 @@ Kun Commercen esikatseluympäristö on valmisteltu loppuun, lisävalmistelun jä
 1. Siirry projektiisi.
 1. Valitse päävalikosta **Pilvipalveluympäristöt**.
 1. Valitse ympäristö luettelosta.
-1. Valitse oikealla olevista ympäristön tiedoista **Täydet tiedot**.
-1. Valitse **Kirjaudu sisään** avataksesi valikon ja valitse sitten **Kirjaudu ympäristöön**.
+1. Valitse oikealla ympäristön tiedoista **Kirjaudu ympäristöön**. Siirryt Commercen pääkonttorisovellukseen.
 1. Varmista, että valittuna on **USRT**-yritys oikealla yläkulmassa.
 
-## <a name="configure-the-point-of-sale-in-lcs"></a>Määritä myyntipiste LCS:ssä
+Varmista Commercen pääkonttorissa tehtävien valmistelun jälkeisten toimintojen aikana, että **USRT**-yritys on koko ajan valittuna.
+
+## <a name="configure-the-point-of-sale"></a>Myyntipisteen määrittäminen
 
 ### <a name="associate-a-worker-with-your-identity"></a>Työntekijän liittäminen tunnukseen
 
-Voit liittää työntekijän identiteettisi LCS:iin noudattamalla seuraavia ohjeita.
+Voit liittää työntekijän käyttäjätietoihin seuraavien ohjeiden avulla Commercen pääkonttorissa.
 
 1. Valitse vasemmalla olevasta valikosta **Moduulit \> Vähittäismyynti ja kauppa \> Työntekijät \> Työntekijät**.
 1. Etsi ja valitse luettelosta seuraava tietue: **000713 - Andrew Collette**.
-1. Valitse toimintoruudussa **Vähittäismyynti**.
+1. Valitse toimintoruudussa **Commerce**.
 1. Valitse **Liitä aiemmin luotu tunnus**.
 1. Syötä **Sähköposti**-kenttään **Hae sähköpostiosoitteen avulla** -kohdan oikealla puolelle sähköpostiosoite.
 1. Valitse **Haku**.
@@ -69,21 +69,20 @@ Jos haluat aktivoida pilvimyyntipisteen LCS:ssä, toimi seuraavasti.
 
 1. Valitse päävalikosta **Pilvipalveluympäristöt**.
 1. Valitse ympäristö luettelosta.
-1. Valitse oikealla olevista ympäristön tiedoista **Täydet tiedot**.
-1. Avaa valikko valitsemalla **Kirjaudu** ja avaa sitten myyntipiste (POS) valitsemalla **Kirjaudu pilvimyyntipisteeseen**.
-1. Valitse **Seuraava**.
+1. Valitse oikealla ympäristön tiedoista **Kirjaudu pilvimyyntipisteeseen**.
+1. Avaa **Ennen aloittamista** -valintaikkunassa **Seuraava**.
+1. Älä tee muutoksia **Palvelimen URL-osoite** -kenttään. Valitse **Seuraava**.
 1. Kirjaudu sisään käyttämällä Microsoft Azure Active Directory (Azure AD) -tiliäsi.
-1. Valitse **Myymälän nimi** -kohdassa **San Francisco**.
-1. Valitse **Seuraava**.
+1. Valitse **Myymälän nimi** -kentässä **San Francisco** ja valitse sitten **Seuraava**.
 1. Valitse **Kassakone ja laite** -kohdassa **SANFRAN-1**.
 1. Valitse **Aktivoi**. Olet kirjautunut ulos ja sinut on ohjattu POS-kirjautumissivulle.
 1. Voit nyt kirjautua pilvimyyntipistekokemukseen käyttämällä operaattorin tunnusta **000713** ja salasanaa **123**.
 
 ## <a name="set-up-your-site-in-commerce"></a>Urasivuston määrittäminen Commercessa
 
-Voit aloittaa esikatseluruudun määrittämisen Commerce-sivustossa noudattamalla seuraavia ohjeita.
+Voit aloittaa arviointisivuston määrittämisen Commercessa noudattamalla seuraavia ohjeita.
 
-1. Kirjaudu sivustonhallintatyökaluun käyttämällä URL-osoitetta, johon olet tehnyt huomautuksen verkkokaupan valmistelusta valmistelun aikana (katso [verkkokaupan alustaminen](provisioning-guide.md#initialize-e-commerce)).
+1. Kirjaudu sivustonmuodostimeen käyttämällä URL-osoitetta, josta kirjoitit muistiin sähköisen kaupankäyntiä alustettaessa valmistelun aikana (katso [Sähköisen kaupankäynnin alustaminen](provisioning-guide.md#initialize-e-commerce)).
 1. Avaa sivuston asetusvalintaikkuna valitsemalla **Fabrikam**-sivusto.
 1. Valitse verkkotunnus, jonka syötit sähköistä kaupankäyntiä alustettaessa.
 1. Valitse **Fabrikamin laajennettu verkkokauppa** oletuskanavaksi. (Huomautus: Varmista, että valitset **laajennetun** verkkokaupan.)
@@ -106,18 +105,24 @@ Voit ottaa käyttöön työt Commercessa seuraavien vaiheiden avulla.
     * Synkronoi tilaukset -työ
 
 1. Hae työ pikasuodattimen avulla nimen perusteella.
-1. Jos työn tila on **Pidätä**, seuraa näitä vaiheita:
+1. Jos työn tila on **Suoritetaan**, toimi seuraavasti:
 
     1. Valitse tietue.
     1. Valitse toimintoruudussa **Erätyö**-välilehdellä **Muuta tila**.
-    1. Valitse **Odottaa** ja valitse sitten **OK**.
+    1. Valitse ensin **Peruuttaminen** ja sitten **OK**.
+
+Vaihtoehtoisesti voit määrittää toistuvuusvälin yhteen (1) minuuttiin seuraavissa töissä:
+
+* Vähittäismyyntitilauksen sähköposti-ilmoitustyön käsittely
+* P-0001 työ
+* Synkronoi tilaukset -työ
 
 ### <a name="run-full-data-synchronization"></a>Suorita täydellinen tietojen synkronointi
 
-Jos haluat suorittaa täyden tietojen synkronoinnin Commercessa, toimi seuraavasti.
+Suorita täydellinen tietojen synkronointi Commercessa, toimi seuraavasti Commercen pääkonttorissa.
 
 1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Headquarters-asetukset \> Commerce-ajastus \> Kanavan tietokanta**.
-1. Vasemmalla olevasta luettelosta valitaan **oletuskanava**. Valitse toinen käytettävissä oleva kanava. Tämä kanava on nimeltään **scXXXXXXXXX**.
+1. Valitse kanava, jonka nimi on **scXXXXXXXXX**.
 1. Valitse toimintoruudusta **Tietojen täydellinen synkronointi**.
 1. Syötä jakeluaikatauluksi **9999**.
 1. Valitse **OK**.
@@ -136,19 +141,21 @@ Voit käyttää seuraavia luottokortin testitietoja sivuston testitapahtumien su
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Kun valmistelu- ja konfigurointivaiheet on suoritettu, olet valmis arvioimaan esikatseluympäristön. Siirry sisällönluontikokemukseen Commercen sivustonhallintatyökalun URL-osoitteen avulla. Siirry Retail-asiakassivustokokemukseen Commercen sivuston URL-osoitteen avulla.
+Kun valmistelu- ja määritysvaiheet on suoritettu, voit aloittaa arviointiympäristön käytön. Siirry sisällönluontikokemukseen Commercen sivustonmuodostimen URL-osoitteen avulla. Siirry vähittäismyynnin asiakassivustokokemukseen Commercen sivuston URL-osoitteen avulla.
 
-Jos haluat määrittää valinnaiset ominaisuudet Commercen esikatseluympäristöön, katso [Lisäominaisuuksien määrittäminen Commercen esikatseluympäristöä varten](cpe-optional-features.md).
+Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määrittämisestä on kohdassa [Commercen arviointiympäristön valinnaisten ominaisuuksien määrittäminen](cpe-optional-features.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commerce -arviointiympäristön yleiskuvaus](cpe-overview.md)
 
-[Dynamics 365 Commercen esiversioympäristön valmistelu](provisioning-guide.md)
+[Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md)
 
-[Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten](cpe-optional-features.md)
+[Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)
 
-[Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
+[BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](cpe-bopis.md)
+
+[Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
