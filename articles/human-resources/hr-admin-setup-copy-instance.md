@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8385b7dfcd1d7294542c7f54f609b26b7988ac4
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431242"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554322"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
@@ -68,7 +68,7 @@ Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sit
 
 4. Valitse korvattava esiintymä **Kopioi esiintymä** -tehtäväruudusta ja valitse sitten **Kopioi**. Odota, että **Kopioi tila** -kentän arvoksi päivittyy **Valmis**.
 
-   ![[Valitse esiintymä, joka korvataan](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Valitse korvattava esiintymä](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Valitse **Power Platform** ja kirjaudu Microsoft Power Platform -hallintakeskukseen.
 
@@ -108,6 +108,6 @@ Lisäksi seuraavat tilat muuttuvat, kun esiintymä kopioidaan:
 
 ## <a name="environment-admin"></a>Ympäristön järjestelmänvalvoja
 
-Kaikki eristetyn kohdeympäristön käyttäjät, myös järjestelmänvalvojat, korvataan lähdeympäristön käyttäjillä. Varmista ennen esiintymän kopioimista, että olet kohdeympäristön järjestelmänvalvoja. Jos et ole, et voi kirjautua eristettyyn kohdeympäristöön, kun kopiointi on valmis.
+Kaikki eristetyn kohdeympäristön käyttäjät, myös järjestelmänvalvojat, korvataan lähdeympäristön käyttäjillä. Varmista ennen esiintymän kopioimista, että olet lähdeympäristön järjestelmänvalvoja. Jos et ole, et voi kirjautua eristettyyn kohdeympäristöön, kun kopiointi on valmis.
 
 Kaikki muut kuin järjestelmänvalvojakäyttäjät poistetaan käytöstä eristetyssä kohdeympäristössä, jotta estetään ei-toivotut kirjautumiset siihen. Järjestelmänvalvojat voivat tarvittaessa ottaa käyttäjiä uudelleen käyttöön.

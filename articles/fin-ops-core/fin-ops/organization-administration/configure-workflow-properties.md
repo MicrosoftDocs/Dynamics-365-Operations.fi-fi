@@ -3,7 +3,7 @@ title: Työnkulkuominaisuuksien asetusten määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten työnkulun eri ominaisuudet määritetään.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199433"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541106"
 ---
 # <a name="configure-workflow-properties"></a>Työnkulkuominaisuuksien asetusten määrittäminen
 
@@ -91,12 +91,7 @@ Määritä seuraavien ohjeiden avulla, milloin konfiguroitavaa työnkulkua tulee
 3. Valitse **Lisää ehto**.
 4. Määritä ehto.
 5. Kirjoita kaikki muut tarvittavat ehdot.
-6. Voit tarkistaa, onko ehdot määritetty oikein seuraavien ohjeiden avulla:
-
-    1. Valitse **Testi**.
-    2. Valitse tietue **Testaa työnkulun ehto** -sivun **Tarkista ehto** -alueella.
-    3. Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot. Jos esimerkiksi olet luomassa Espanjan ostoehdotusten työnkulkua, sivun **Tarkista ehto** -alueella näytetään luettelo ostoehdotuksista. Kun valitset **Testi**, järjestelmä arvioi valitun ostoehdotuksen ja määrittää, onko maa/alue ES.
-    4. Palaa **Ominaisuudet**-sivulle valitsemalla **OK** tai **Peruuta**.
+6. Suorittamalla työnkulun joillakin kohdetietueilla voit varmistaa, että ehto sisällyttää ja jättää tietueita pois oikein.
 
 ## <a name="specify-when-notifications-are-sent"></a>Määritä, milloin ilmoitukset lähetetään
 

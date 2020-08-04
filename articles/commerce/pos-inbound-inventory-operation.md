@@ -3,7 +3,7 @@ title: Myyntipisteen saapuva varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen saapuva varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 03/12/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: b212906dcf037171af264c60720f361215eed599
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123896"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551598"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -57,6 +57,9 @@ Voit määrittää asynkronisen asiakirjakehyksen suorittamalla seuraavat toimin
 5. Määritä **Yleistä**-pikavälilehden **Asetukset**-osassa **Jatkuva**-asetuksen arvoksi **Ei**, jos haluat varmistaa, että suorituskykyongelmia ei ole.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Tehtäviä käsittelevän ja valvovan asiakirjan kahden erätyön luominen ja aikatauluttaminen
+
+> [!NOTE]
+> Commercen versiossa 10.0.13 ja sitä uudemmassa versiossa näitä erätöitä ei tarvitse määrittää erätyökehikossa. Eräprosessit voidaan määrittää **Retail ja Commerce > Retail ja Commerce IT** -valikossa. Määritä erätyöt **Vähittäismyynnin asiakirjatoiminnon seuranta**- ja **Vähittäismyynnin asiakirjatoiminnon käsittely** -valikkovaihtoehdoissa.
 
 Luotuja erätöitä käytetään epäonnistuneiden tai aikakatkaistujen asiakirjojen käsittelyssä. Niitä käytetään myös silloin, kun myyntipisteessä käsiteltävien aktiivisten varastoasiakirjojen määrä ylittää järjestelmän määrittämän arvon.
 

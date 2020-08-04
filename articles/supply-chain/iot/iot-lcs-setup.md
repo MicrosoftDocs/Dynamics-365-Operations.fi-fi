@@ -2,8 +2,8 @@
 title: IoT-analytiikkalisäosan asentaminen LCS:ssä
 description: Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS).
 author: robinarh
-manager: AnnBe
-ms.date: 08/16/2019
+manager: tfehr
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: ''
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 04333b3659f090b15cc0d0ee216f14dabc588883
-ms.sourcegitcommit: 261b70ea358b2c231e20f320ed8bd6adc1e7d715
+ms.openlocfilehash: d2bcbf69362e4ca3a156d1d404e15489ddb3f0d0
+ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386509"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3597213"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-analytiikkalisäosan asentaminen LCS:ssä
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS). Ennen lisäosan asentamista on [luotava Azure-resurssit](iot-azure-setup.md).
+Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS). Huomaa, että lisäosia ei voi asentaa esittely- tai kokeiluympäristöön. Ennen lisäosan asentamista on [luotava Azure-resurssit](iot-azure-setup.md).
 
 ## <a name="set-up-the-lcs-environment"></a>LCS-ympäristön määrittäminen
 

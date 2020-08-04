@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c1a9f10a434343e4c9c8a42ec5c0b7a1a18ad36
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 1843095c41428d377341154c9f2140085831e770
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3124013"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555247"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (10. maaliskuuta 2020)
 
@@ -97,3 +97,10 @@ Seuraavat esikatseluominaisuudet ovat käytettävissä 3. helmikuuta 2020:
 - Suositeltavat kentät - Käyttäjien on usein lisättävä kenttiä ruudukkoon tai sivulle. Tämä voi olla vaikeaa, jos kenttiä on paljon. Tämän toiminnon avulla järjestelmä voi hakea suositeltujen kenttien joukon sen sijaan, että käyttäjän olisi selattava pitkää luetteloa. Järjestelmä määrittää kentät sen perusteella, mitä käyttäjä useimmiten lisäävät samanlaisiin skenaarioihin.
 
 - Lukitut oletustoiminnot ruudukoissa - Tämä toiminto varmistaa, että ruudukon oletustoiminto linkitetään tiettyyn sarakkeeseen ruudukossa siitä huolimatta, onko saraketta siirretty vai onko se piilotettu.
+
+## <a name="see-also"></a>Lisätietoja
+
+[Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Päivitysprosessi](hr-admin-setup-update-process.md)</br>
+[Hallitse ominaisuuksia](hr-admin-manage-features.md)

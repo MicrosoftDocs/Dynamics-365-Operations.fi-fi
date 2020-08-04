@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 89c38b354bbca022e80ace4aa8d0b947cfe67f3e
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812085"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598178"
 ---
 # <a name="globalization-resources"></a>Maailmanlaajuisen käytön resurssit
 
 ## <a name="local-and-regional-deployments"></a>Paikalliset ja alueelliset käyttöönotot
 Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yrityksellesi tärkeitä tietoja:
 
-[Microsoft Dynamics 365 Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance and Operations -sovelluksissa on toimintoja, jotka ovat käytössä [tuotteen saatavuusoppaassa](https://aka.ms/dynamics_365_international_availability_deck) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
+Finance and Operations -sovelluksissa on toimintoja, jotka ovat käytössä [tuotteen saatavuusoppaassa](https://aka.ms/dynamics_365_international_availability_deck) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
 
 Tämä ohjeen aihe sisältää luettelon resursseista, joiden avulla voit tehdä seuraavaa: 
 - saada lisätietoja kehitysmaiden maa-/aluekohtaisista ratkaisuista
@@ -64,10 +64,10 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 -   [Hälytyksien lähettäminen maa- tai aluekohtaisista säädöstenmukaisista ominaisuuksista](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365:n julkaisusuunnitelmat
-[Dynamics 365:n julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/) kuvataan Dynamics 365 -liiketoimintasovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
+[Dynamics 365:n julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations -sovellusten uudet ominaisuudet
-[Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on lueteltu ominaisuudet, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
+[Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on luettelo ominaisuuksista, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
 
 ### <a name="electronic-reporting"></a>Sähköinen raportointi
 Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisen raportoinnin ansiosta näitä muotoja voi hallita koko niiden elinkaaren ajan. Lisätietoja on seuraavissa aiheissa:

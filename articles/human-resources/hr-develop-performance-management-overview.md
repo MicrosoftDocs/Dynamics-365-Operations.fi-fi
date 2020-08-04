@@ -3,7 +3,7 @@ title: Suorituksen hallinta
 description: Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6147b5d92381d76c572f8a10e52c9ed00225e7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
+ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430437"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3609769"
 ---
 # <a name="performance-management"></a>Suorituksen hallinta
 
@@ -145,7 +145,7 @@ Mittaukset-sivun avulla voit luoda **Suoritustasotavoitteet**- ja **Arvioinnit**
 
 ### <a name="performance-journal-source-types"></a>Suoritustason kirjauskansion lähdetyypit
 
-Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioiden alkuperää. Näet, onko kirjauskansiokohde oletusarvoisesti vain esimiehen tai työntekijän tarkasteltavissa, vai voivatko molemmat tarkastella sitä. Voit myös ottaa käyttöön Lähetä kehu -toiminnon tai poistaa sen käytöstä muuttamalla kehun lähdetyyppiä. Et voi poistaa muita lähdetyyppejä tällä hetkellä.
+Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioiden alkuperää. Näet, onko kirjauskansiokohde oletusarvoisesti vain esimiehen tai työntekijän tarkasteltavissa, vai voivatko molemmat tarkastella sitä. Muita lähdetyyppejä ei voi poistaa tällä hetkellä.
 
 ### <a name="review-types"></a>Arviointityypit
 

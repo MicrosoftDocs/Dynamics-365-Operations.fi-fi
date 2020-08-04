@@ -3,7 +3,7 @@ title: Taloushallinnon raportoinnin yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
+ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262646"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3609586"
 ---
 # <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin ja miten käyt
 <a name="accessing-financial-reporting"></a>Taloushallinnon raportoinnin käyttäminen
 -----------------------------
 
-**Talousraportointi**-valikko sijaitsee seuraavissa paikoissa:
+**Talousraportointi**-valikko sijaitsee seuraavissa sijainneissa:
 
 -   **Kirjanpito** &gt; **Kyselyt ja raportit**
 -   **Budjetointi** &gt; **Kyselyt ja raportit** &gt; **Perusbudjetointi**
@@ -45,10 +45,11 @@ Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin ja miten käyt
 Yrityksen talousraporttien luontia ja muodostamista varten kyseiselle yrityksen on määritettävä seuraavat tiedot:
 
 -   Kirjanpidon vuosikalenteri
--   Kirjanpito
+-   Ledger
 -   Tilikartta
 -   Valuutta
 
+## <a name="granting-security-access-to-financial-reporting"></a>Financial Reporting -käyttöoikeuksien myöntäminen
 Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöoikeusroolin kautta, voivat käyttää talousraportointitoimintoja. Seuraavissa osissa käsitellään nämä oikeudet ja tehtävät sekä niihin liitetyt roolit.
 
 ### <a name="duties"></a>Velvollisuudet
@@ -78,15 +79,26 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 | Luo raportit            | Luo raportit            | Toimitusjohtaja, Talousjohtaja, Kirjanpitäjä                                                            |
 | Näytä raportit                | Arvioi taloudellista suorituskykyä          | Ei määritetty                                                                   |
 
-Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla käyttäjän käytettävissä muutamassa minuutissa. **Huomautus:** järjestelmänvalvojan rooli lisätään kaikkiin rooleihin taloudellisessa raportoinnissa.
+Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla käyttäjän käytettävissä muutamassa minuutissa. 
+
+> [!NOTE]
+> Järjestelmänvalvojan rooli lisätään kaikkiin rooleihin taloudellisessa raportoinnissa.
 
 ## <a name="report-deletions-and-expirations"></a>Raportin poistot ja päättymiset
 Raportteja luovat käyttäjät voivat poistaa omia raporttejaan. Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat poistaa muiden raportteja. 
 
-Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki**-sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
+Vanhentumispäivien käsite on otettu käyttöön versiosta 10.0.7 alkaen. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuden hallinnan työtilassa. Tämä ominaisuus sisältää seuraavat muutokset:
+
+* Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu.
+* Kaikki olemassa olevat raportit, jotka on luotu ennen kuin ominaisuus asennettiin, saavat 90 päivän vanhentumisajan. Päivämäärä voi näkyä tyhjänä lyhyen ajan, kunnes taloushallinnon raportointipalvelu on käynnissä, raportti luodaan ja palvelu suorittaa päivityksen aiemmin luotuihin raportteihin, joiden vanhentumispäivämäärä on tyhjä. 
+* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa:
+   * Vanhentuminen 90 päivää
+   * Asetus, joka määrittää, että raportti ei vanhene
+
+Kun on valittu vanhentumisaika, kuten 90 päivää, on valittu, sitä käytetään 90 päivää kuluvasta päivästä, joka on erilainen kuin 90 päivää alkuperäisestä luontipäivämäärästä raportin luonnin aikana. Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki**-sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
 * Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu
 * Kaikki olemassa olevat raportit, jotka on luotu ennen kuin ominaisuus asennettiin, saavat 90 päivän vanhentumisajan. Päivämäärä voi näkyä tyhjänä lyhyen ajan, kunnes taloushallinnon raportointipalvelu on käynnissä, raportti luodaan ja palvelu suorittaa päivityksen aiemmin luotuihin raportteihin, joiden vanhentumispäivämäärä on tyhjä. 
-* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa. 
+* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa: 
   * Vanhentuminen 90 päivää.
   * Asetus, joka määrittää, että raportti ei vanhene.
   
@@ -125,16 +137,36 @@ Talousraportointi sisältää 22 oletusraporttia. Jokaisessa raportissa käytet�
 | Käytettävissä olevat budjettivarat -oletus                         | Tarkastele tarkistetun budjetin, toteutuneiden menojen, budjettivarausten ja käytettävissä olevien budjettivarojen yksityiskohtaista vertailua.                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Talousraporttien avaaminen
-Kun napsautat **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2016, raportti luodaan päivämäärälle 31.7.2016. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
+Kun valitset **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2019, raportti luotiin päivämäärälle 31.7.2019. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Talousraporttien luominen ja muokkaaminen
-Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Financessa käytössä olevalle yritykselle. 
+Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Dynamics 365 Financessa käytössä olevalle yritykselle. 
 
-> [!NOTE] 
-> Tietokoneelle, jolle ladataan raportin suunnitteluohjelman asiakasohjelma, on oltava asennettuna Microsoft .NET Frameworkin versio 4.6.2. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345). Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Voit myös muokata talousraporttiluettelossa näkyvää raporttia. Raporttia ympäröivä alue on valittu, valitse toimintoruudussa **Muokkaa**. Raportin suunnitteluohjelma käynnistyy.
+## <a name="troubleshooting-issues-opening-report-designer"></a>Report Designerin avaamisongelmien vianmääritys
+Tietyt yleiset ongelmat voivat aiheuttaa hankaluuksia, kun Report Designer avataan. Seuraavaksi käsitellään näitä ongelmia ja niiden ratkaisuja.
+
+Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
+
+* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse **Suojaus**-välilehdessä ensin Luotettavat sivuston ja sitten **Sivustot**. Anna **Lisää tämä sivusto vyöhykkeeseen** -kohdassa \*\.dynamics.com ja valitse sitten **Lisää**. 
+* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus**-välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
+* Poista ponnahdusikkunoiden esto käytöstä selaimessa.
+* Työasemien on asennettava Visual Studio .NET 4.6.2 tai uudempi versio.
+
+Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345).
+* Jos käytössä on Chrome-selain, Report Designer -asiakasohjelman lataamista varten on asennettava ClickOnce-laajennus. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Jos kirjautuminen ei onnistu Chrome-selaimella kokeile ongelmassa 1 kuvattuja Internet Explorerin tai Edgen asennusvaiheita. 
+
+Ongelma 2: Käyttäjälle ei ole määritetty Financial Reportingin käyttöön tarvittavia oikeuksia. 
+
+* Voit tarkistaa, onko käyttäjällä oikeuksia valitsemalla **Kyllä** seuraavan virheen yhteydessä: Yhteyden muodostaminen Financial Reporting -palvelimeen ei onnistu. Valitse Kyllä, jos haluat jatkaa, ja määritä toinen palvelimen osoite. Valitse sitten **Testaa yhteys**. Jos oikeuksia ei ole, seuraava sanoma avautuu: Yhteyden muodostaminen epäonnistui. Käyttäjällä ei ole palvelinyhteyttä varten tarvittavia käyttöoikeuksia. Ota yhteyttä järjestelmänvalvojaan.
+* Tarvittavien oikeuksien luettelo on kohdassa [Financial Reporting -käyttöoikeuksien myöntäminen](#granting-security-access-to-financial-reporting). Financial Reportingin suojaus perustuu näihin oikeuksiin. Käyttö ei ole mahdollista ellei näitä oikeuksia (tai muuta nämä oikeudet sisältävää käyttöoikeusroolia) ole määritetty. 
+* **Yrityskäyttäjäpalvelu yritykseen** -integrointitehtävä (joka vastaa käyttäjäintegraatiota ja tiedetään sellaiseksi) suoritetaan 5 minuutin välein. Oikeusmuutosten voimaantulo Financial Reportingissa voi kestää 10 minuuttia. 
+  Jos toinen käyttäjä voi avata Report Designerin, valitse ensin **Työkalut** ja sitten **Integroinnin tila**. Varmista, että integrointimääritys Yrityksen käyttäjäpalvelu yritykseen on suoritettu, koska sinulle on määritetty oikeus käyttää Financial Reportingia. 
+* On mahdollista, että jokin muu virhe on estänyt **Dynamics-käyttäjästä Financial Reporting -käyttäjään integroinnin** valmistumisen. On myös mahdollista, että datamart-nollaus on käynnistetty muttei vielä päättynyt tai että tapahtui toinen järjestelmävirhe. Yritä suorittaa prosessi uudelleen myöhemmin. Jos ongelma jatkuu, ota yhteys järjestelmänvalvojaan.
+
+Ongelma 3: ClickOnce Report Designerin kirjautumissivulta päästään etenemään mutta kirjautuminen Report Designeriin ei onnistu. 
+
+* Paikallisessa tietokoneessa olevan ajan kirjautumistietoja annettaessa on oltava viiden minuutin sisällä Financial Reporting -palvelimen ajasta. Jos ero on yli viisi minuuttia, järjestelmä ei salli kirjautumista. 
+* Tässä tapauksessa kannattaa ottaa käyttöön Windows-asetus, joka määrittää tietokoneen ajan automattisesti. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
-- [Raporttien näyttäminen](view-financial-reports.md)
-
-
-
+- [Näytä raportit](view-financial-reports.md)

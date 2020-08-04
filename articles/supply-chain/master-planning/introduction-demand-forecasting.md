@@ -3,7 +3,7 @@ title: Kysynnän ennustepalveluiden yleiskatsaus
 description: Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Tarkennetut ennustevähennyssäännöt tarjoavat ihanteellisen ratkaisun joukkomukauttamiseen.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213880"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550037"
 ---
 # <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
@@ -48,7 +48,7 @@ Tässä on muutamia kysynnän ennusteiden pääominaisuuksia:
 Kysynnän ennusteissa käytetään kolmea pääteemaa:
 
 -   **Modulaarisuus** – Kysynnän ennusteet ovat modulaarisia ja helposti määritettäviä. Voit ottaa toiminnon käyttöön ja poistaa sen käytöstä muuttamalla konfigurointiavain kohdassa **Kauppa** &gt; **Varastoennuste** &gt; **Kysynnän ennuste**.
--   **Microsoft-pinon uudelleenkäyttö** – Microsoft toi markkinoille automaattianalyysialustan helmikuussa 2015. Automaattianalyysipalvelu, joka on nyt osa Cortana Analytics Suite -ohjelmistoa, tarjoaa mahdollisuuden luoda nopeasti ja helposti ennustavia analyysikokeiluja kuten kysynnän arviokokeiluja, käyttämällä algoritmeja R tai Python-ohjelmointikieltä ja yksinkertaista vedä-ja-pudota käyttöliittymää.
+-   **Microsoft Stackin uudelleenkäyttö** – Automaattianalyysipalvelu, joka on osa Microsoft Cortana Analytics Suite -ohjelmistoa, tarjoaa mahdollisuuden luoda nopeasti ja helposti ennustavia analyysikokeiluja, kuten kysynnän arviokokeiluja, käyttämällä algoritmeja R tai Python-ohjelmointikieltä sekä yksinkertaista vedä-ja-pudota-käyttöliittymää.
     -   Voit ladata kysynnän ennusteen kokeilut, muuttaa niitä niin, että ne vastaavat liiketoimintasi tarpeita, julkaista ne verkkopalvelussa Azuressa ja käyttää niitä kysynnän ennusteiden luomiseen. Kokeilut ovat ladattavissa, jos olet ostanut tuotannon suunnittelutoiminnon Supply Chain Management -tilauksen yritystason käyttäjänä.
     -   Voit ladata minkä tahansa saatavilla olevan kysynnän ennustekokeilun kohdasta [Cortana Analytics -galleria](https://gallery.cortanaanalytics.com/). Kysynnän ennusteen kokeilut integroidaan automaattisesti Supply Chain Managementiin, mutta asiakkaiden ja kumppanien on käsiteltävä niiden kokeilujen integraatiot, jotka he lataavat [Cortana Analytics -galleriasta](https://gallery.cortanaanalytics.com/). Näin ollen [Cortana Analytics -gallerian](https://gallery.cortanaanalytics.com/) kokeilujen käyttö ei ole yhtä suoraviivaista kuin Finance and Operationsin kysynnän ennusteen kokeilujen käyttö. Sinun on muokattava kokeilujen koodia niin, että ne käyttävät Finance and Operationsin ohjelmointirajapintaa (API:tä).
     -   Voit luoda omat kokeilusi Microsoft Azuren automaattianalyysipalvelussa (perinteinen), julkaista ne Azuren palveluissa ja käyttää niitä kysynnän ennusteiden luomiseen.
@@ -70,6 +70,16 @@ Voit käyttää Supply Chain Managementia perusennusteiden visualisointiin ja mu
 
 ## <a name="limitations"></a>Rajoitukset
 Kysynnän ennusteet on työkalu, joka auttaa teollisuuden alan asiakkaita luomaan ennusteprosesseja. Se tarjoaa kysynnän ennusteen ratkaisun perustoiminnot ja on suunniteltu helposti laajennettavaksi. Kysynnän ennusteet eivät ehkä sovellu parhaiten kaupan, tukkukaupan, varastoinnin, kuljetus- tai muulla palvelualalla oleville asiakkaille.
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>Kysynnän ennusteen varianttimuunnoksen rajoitus
+
+Varianttimuuntokohtaista mittayksikköä ei tueta täysin kysynnän ennustetta luotaessa, jos varaston mittayksikkö ei ole sama kuin kysynnän ennusteen mittayksikkö.
+
+Ennusteen luonti (**Varaston mittayksikkö > Kysynnän ennusteen mittayksikkö**) käyttää tuotteen mittayksikön muunnosta. Kun kysynnän ennusteen luonnin historiallisia tietoja ladataan, tuotetason mittayksikön muuntamista käytetään aina muunnettaessa varaston mittayksikköä kysynnän ennusteen mittayksikköön, vaikka muunnoksia olisi määritetty varianttitasolla:
+
+Ennusteen valtuuttamisen ensimmäinen osa (**Kysynnän ennusteen mittayksikö > varaston mittayksikkö**) käyttää tuotannon mittayksikön muuntoa. Ennusteen valtuuttamisen toinen osa (**Varaston mittayksikkö > myynnin mittayksikkö**) käyttää variantin mittayksikön muuntoa. Kun luotu kysynnän ennuste valtuutetaan, muunto varaston mittayksikköön kysynnän ennusteen mittayksiköstä tehdään käyttämällä tuotetason mittayksikön muuntoa. Samanaikaiset varastoyksikön ja myynnin mittayksikön välinen muunto noudattaa varianttitason määrittämiä muuntoja.
+
+Huomaa, että kysynnän ennusteen mittayksiköllä ei tarvitse tiettyä merkitystä. Se voidaan määrittää kysynnän ennusten yksiköksi. Kunkin tuotteen muuntosuhteeksi voidaan määrittää 1:1 varaston mittayksiköllä.
 
 <a name="additional-resources"></a>Lisäresurssit
 --------

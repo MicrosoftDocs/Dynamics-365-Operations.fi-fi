@@ -3,7 +3,7 @@ title: Etujen hallinnan yleiskatsaus
 description: Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskuvaus. Tarjoa työntekijöillesi laajennetut etuvaihtoehdot helppokäyttöisellä verkkokokemuksella.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4157cb1f83d686d435f3d04e47c578df455376c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429255"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599377"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskuvaus
 
@@ -59,6 +59,8 @@ Tässä artikkeleissa esitellään, miten ominaisuudet otetaan käyttöön Human
 ## <a name="configure-employee-information"></a>Työntekijätietojen määrittäminen
 
 Ennen kuin voit rekisteröidä työntekijöitä etuuksiin, sinun on annettava tarvittavat tiedot. Työntekijä on rekisteröitävä **Kiinteässä kompensaatiosuunnitelmassa** aloituspäivämääränä, ja **Työntekijä**-lomakkeen **Työsuhteen tiedot** on valittava **Etuuden maksutiheydestä**.
+
+Jos sinulla on työntekijä, joka saa lisäkompensaation, kuten provisioita, voit lisätä **Etuuksien vuosipalkka** -summan työntekijätietueesta. Human Resources käyttää **Etuuksien vuosipalkka** -summaa määrittämään katetut summat kiinteän vuosittaisen kompensaatiosumman sijaan. **Etuuksien vuosipalkan** on oltava voimassa työntekijän alkamispäivästä tai etuuskauden alusta sen mukaan, kumpi on uudempi. Jos työntekijälle kirjataan sekä kiinteän kompensaation että etuuksien vuosipalkan summa, etuuksien vuosipalkkaa käytetään katettavien summien määrittämiseen.
 
 Kun luot etuussuunnitelman, joka käyttää sukupuoleen tai ikään perustuvia kursseja, sinun on syötettävä työntekijän syntymäpäivämäärä ja sukupuoli, jotta voit laskea etuuskustannuksen.
 

@@ -3,7 +3,7 @@ title: Aseta etujenhallinnan parametrit
 description: Määritä etujen hallinnan parametrit Microsoft Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3e001c08751ea9c8bcab0e11a04b6cf639e51d1d
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429981"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599353"
 ---
 # <a name="set-benefits-management-parameters"></a>Etujen hallinnan parametrien määrittäminen
 
@@ -31,7 +31,7 @@ Ennen kuin voit määrittää lomasuunnitelmia Microsoft Dynamics 365 Human Reso
 
 ## <a name="configure-general-parameters"></a>Konfiguroi yleiset parametrit
 
-1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Parametrit**.
+1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdassa **Henkilöstöhallinnon jaetut parametrit**.
 
 2. Määritä **Yleiset**-välilehdelle seuraavien kenttien arvot:
 
@@ -43,8 +43,10 @@ Ennen kuin voit määrittää lomasuunnitelmia Microsoft Dynamics 365 Human Reso
    | **Uudelleenavauksen syykoodi** | Syykoodi, jota käytetään, kun työsuhde-etuussuunnitelma avataan uudelleen. Se näkyy valintaikkunassa peruutusprosessin aikana. Käyttäjät voivat tarvittaessa muuttaa **uudelleen avaamisen syykoodia**. | 
    | **Elinkaaritapahtuman syykoodi** | Tapahtuma, jota käytetään elinkaaritapahtuman tapahtuessa. |
    | **Asteen muutoksen syykoodi** | Syykoodi, jota käytetään, kun työsuhde-etuussuunnitelma peruutetaan ja avataan uudelleen hinnan muutoksen päivitysprosessin aikana. Se ilmaisee, mitä tietuetta hinnan muutoksen päivitysprosessi on muuttanut. |
+   | **Vuosittainen etupalkka** | Antaa mahdollisuuden määrittää työntekijän **Etuuksien vuosipalkka** -summan. Human Resources käyttää **Etuuksien vuosipalkka** -summaa määrittämään katetut summat kiinteän vuosittaisen kompensaatiosumman sijaan. |
    | **Uusi työntekijä on sallittu** | Määrittää, ovatko uudet työntekijät kelvollisia. |
-   | **Uuden työntekijän rekisteröintikausi** | Ajanjakso, jolloin uusi osamaksu on sallittu.</br></br>**Huomautus**: Tämä asetus ohittaa uuden suunnitelman oikeutussääntöön määrittämäsi työhönottoajan jakson. | 
+   | **Uuden työntekijän rekisteröintikausi** | Ajanjakso, jolloin uusi osamaksu on sallittu.</br></br>**Huomautus**: Tämä asetus ohittaa uuden suunnitelman oikeutussääntöön määrittämäsi työhönottoajan jakson. |
+   | **Oletusmaksutiheys** | Oletusmaksuväli, jota käytetään, kun uusia työntekijöitä lisätään. |
    | **Elinkaaritapahtumat ovat käytössä** | Mahdollistaa elinkaaritapahtumat. |
    | **Piilota vanhat etulomakkeet** | Sallii vanhojen etuuslomakkeiden piilottamisen. |
 
@@ -52,7 +54,7 @@ Ennen kuin voit määrittää lomasuunnitelmia Microsoft Dynamics 365 Human Reso
 
 ## <a name="configure-employee-self-service-parameters"></a>Määritä työntekijän itsepalveluparametrit
 
-1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Parametrit**.
+1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdassa **Henkilöstöhallinnon parametrit**.
 
 2. Määritä **Työntekijän itsepalvelu**-välilehdelle seuraavien kenttien arvot:
 

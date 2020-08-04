@@ -1,9 +1,9 @@
 ---
-title: BOPIS:n määrittäminen Dynamics 365 Commerce -ympäristössä
-description: Tässä ohjeaiheessa selitetään, miten osta verkosta, nouda myymälästä (BOPIS) määritetään Microsoft Dynamics 365 Commerce -ympäristössä, kun se on valmisteltu.
+title: BOPIS:n määrittäminen Dynamics 365 Commerce -arviointiympäristössä
+description: Tässä ohjeaiheessa selitetään, miten BOPIS (osta verkosta, nouda myymälästä) määritetään Microsoft Dynamics 365 Commerce -arviointiympäristössä, kun se on valmisteltu.
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 956d66d09885d4d54655ce25b3aa7ba6a9c34cf4
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282793"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599793"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-environment"></a>BOPIS:n määrittäminen Dynamics 365 Commerce -ympäristössä
-
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS:n määrittäminen Dynamics 365 Commerce -arviointiympäristössä
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten osta verkosta, nouda myymälästä (BOPIS) määritetään Microsoft Dynamics 365 Commerce -ympäristössä, kun ympäristö on valmisteltu.
+Tässä ohjeaiheessa selitetään, miten BOPIS (osta verkosta, nouda myymälästä) määritetään Microsoft Dynamics 365 Commerce -arviointiympäristössä, kun ympäristö on valmisteltu.
 
 ## <a name="prerequisite"></a>Edellytys
 
-Suorita tämän ohjeaiheen toimet vasta, kun Commercen esikatseluympäristö on valmisteltu ja määritetty. Katso lisätietoja Commercen esikatseluympäristön valmistelusta ja määrittelystä kohdasta [Dynamics 365 Commerce -esikatseluympäristön valmisteleminen](provisioning-guide.md) ja [Dynamics 365 Commerce -esikatseluympäristön määrittäminen](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Suorita tämän ohjeaiheen toimet vasta, kun Commercen arviointiympäristö on valmisteltu ja määritetty. Lisätietoja ympäristön valmistelusta ja määrittämisestä on kohdissa [Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md) ja [Dynamics 365 Commerce -arviointiympäristön määrittäminen](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
 Kun Commerce-ympäristö on valmisteltu ja määritetty päättyneeksi, voit ottaa käyttöön BOPIS-skenaariot tämän ohjeaiheen avulla.
 
@@ -71,7 +70,7 @@ BOPIS-skenaariot, joihin liittyy luottokorttimaksu, edellyttävät laitteistoase
 5. Näyttöön tulee todennusvalintaikkuna. Valitse tili, joka käyttää sähköpostiosoitetta, joka yhdistettiin aiemmin työntekijään **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Jos et ole vielä liittänyt työntekijää henkilöllisyytesi, aktivointi epäonnistuu. Noudata tässä tapauksessa Liitä työntekijä henkilöllisyyteesi -kohdan ohjeita [Määritä Dynamics 365 Commerce -esikatseluympäristö](cpe-post-provisioning.md#associate-a-worker-with-your-identity) -ohjeaiheessa.
+    > Jos et ole vielä liittänyt työntekijää henkilöllisyytesi, aktivointi epäonnistuu. Noudata tässä tapauksessa Liitä työntekijä henkilöllisyyteesi -kohdan ohjeita ohjeaiheessa [Määritä Dynamics 365 Commerce -arviointiympäristö](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Kun sinua kehotetaan antamaan organisaatiosi hallita laitetta, valitse **Vain tämä sovellus**.
 7. Kun aktivointi on tehty, valitse **Aloita**.
@@ -144,13 +143,13 @@ Kaikkien yleisten ongelmien varalta kannattaa aina tutustua Modern POS- tai Inte
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commerce -arviointiympäristön yleiskuvaus](cpe-overview.md)
 
-[Dynamics 365 Commercen esiversioympäristön valmistelu](provisioning-guide.md)
+[Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md)
 
-[Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten](cpe-optional-features.md)
+[Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)
 
-[Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
+[Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
