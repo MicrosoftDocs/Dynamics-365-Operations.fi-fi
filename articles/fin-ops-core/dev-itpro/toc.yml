@@ -14,6 +14,8 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
+                - name: Platform update -päivitykset 10.0.13 (lokakuu 2020)
+                  href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platform update -päivitykset 10.0.12 (elokuu 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform update -päivitykset 10.0.11 (heinäkuu 2020)
@@ -82,9 +84,11 @@
           items:
             - name: Tietojen integrointistrategian (tuonti/vienti) valitseminen
               href: data-entities/integration-overview.md
+            - name: Prioriteettipohjainen rajoittaminen
+              hreF: data-entities/priority-based-throttling.md
             - name: Tietojen integroinnin ohjelmointirajapinnat
               items:
-                - name: Tietojen hallintapaketin REST-ohjelmointirajapinta
+                - name: Tietojen hallintapaketin REST API
                   href: data-entities/data-management-api.md
                 - name: Palvelun päätepisteet
                   items:
@@ -152,6 +156,8 @@
                           items:
                             - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Yrityksen muokkaaminen kaksoiskirjoituksen käyttöönoton jälkeen
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: Virheiden hallinta ja hälytysilmoitukset
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: Sovellusten elinkaaren hallinta

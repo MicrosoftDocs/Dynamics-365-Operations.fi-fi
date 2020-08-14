@@ -90,6 +90,8 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (lokakuu 2020)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (elokuu 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (heinäkuu 2020)
@@ -127,23 +129,23 @@
             - name: Oppimisluettelo
               items:
                 - name: Oppimisluettelon kotisivu
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Yrityksen päätöksentekijät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Yrityksen käyttäjät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Käyttöönottoprojektin vastuuhenkilöt
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Järjestelmänvalvojat
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Kehittäjät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Kumppanimyynti ja -markkinointi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Toimintokonsultit
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Ratkaisuarkkitehdit
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Käyttöliittymään tutustuminen
               items:
                 - name: Käyttöliittymäelementit
@@ -310,6 +312,8 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Verovapauden laskenta
+                          href: tax-exempt-price-inclusive.md
                     - name: Sähköposti-ilmoitusprofiilin määrittäminen
                       href: email-notification-profiles.md
                     - name: Numerosarjat
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Myyntipisteen oheislaitteiden ja palvelujen kuntotarkastus
                           href: pos-healthcheck.md
+                        - name: Verkon oheislaitteiden tuki
+                          href: dev-itpro/network-peripherals.md
                     - name: Näyttöasettelut
                       items:
                         - name: MPOS- ja CPOS-myyntipisteiden demotietojen näyttöasettelut
@@ -946,6 +952,8 @@
                       href: add-accordion.md
                     - name: Välilehtimoduuli
                       href: add-tab.md
+                    - name: iFrame-moduuli
+                      href: iframe-module.md
                 - name: Markkinointimoduulit
                   items:
                     - name: Promopalkkimoduuli
@@ -968,6 +976,8 @@
                   items:
                     - name: Ostoruutumoduuli
                       href: add-buy-box.md
+                    - name: Mediavalikoimamoduuli
+                      href: media-gallery-module.md
                     - name: Luokitusten ja arvosteluiden moduulit
                       href: ratings-reviews-modules.md
                 - name: Ostomoduulit
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Tilauksen tiedot -moduuli
                       href: order-confirmation-module.md
-                    - name: Myymälän valitsinmoduuli
-                      href: store-selector.md
                     - name: Lahjakorttimoduuli
                       href: add-giftcard.md
+                - name: Myymälän etsintämoduulit
+                  items:
+                    - name: Karttamoduuli
+                      href: map-module.md
+                    - name: Myymälän valitsinmoduuli
+                      href: store-selector.md
                 - name: Tilin hallintamoduulit
                   items:
                     - name: Tilin hallintasivut ja -moduulit
@@ -1938,7 +1952,7 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Moduulien esikatselu ja virheenkorjaus
                       href: e-commerce-extensibility/test-module.md
-                    - name: Moduulien testaaminen vedosten avulla
+                    - name: Moduulivedoksia sisältävät testimoduulit
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Moduulien testaaminen sivuvedosten avulla
                       href: e-commerce-extensibility/test-page-mock.md
