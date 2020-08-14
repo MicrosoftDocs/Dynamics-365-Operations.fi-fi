@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.13 (lokakuu 2020)
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (elokuu 2020)
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (heinäkuu 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (toukokuu 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -109,23 +109,23 @@
             - name: Oppimisluettelo
               items:
                 - name: Oppimisluettelon kotisivu
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Yrityksen päätöksentekijät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Yrityksen käyttäjät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Käyttöönottoprojektin vastuuhenkilöt
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Järjestelmänvalvojat
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Kehittäjät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Kumppanimyynti ja -markkinointi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Toimintokonsultit
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Ratkaisuarkkitehdit
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Käyttöliittymään tutustuminen
               items:
                 - name: Käyttöliittymäelementit
@@ -1251,23 +1251,27 @@
                   href: inventory/tasks/inspect-quality-goods.md
                 - name: Varastoesto
                   href: inventory/inventory-blocking.md
-                - name: Luo ja ylläpidä varastoesto
+                - name: Varastoeston luonti ja ylläpito
                   href: inventory/tasks/create-maintain-inventory-blocking.md
             - name: Varastotoiminnot
               items:
                 - name: Varastokirjauskansiot
                   href: inventory/inventory-journals.md
+                - name: Varastokirjauskansion hyväksyntätyönkulut
+                  href: inventory/inventory-journal-workflow.md
                 - name: Varastosijainnit
                   href: inventory/inventory-locations.md
                 - name: Varaston tilat
                   href: inventory/inventory-statuses.md
-                - name: Luo uusi varastoasettelu
+                - name: Uuden varastoasettelun luonti
                   href: inventory/tasks/create-new-warehouse-layout.md
-                - name: Ylläpidä viivakoodityyppejä
+                - name: Viivakoodityyppien ylläpito
                   href: inventory/tasks/maintain-barcode-types.md
                 - name: Varastosaatavuuden tarkistus
                   href: inventory/tasks/check-availability-stock.md
-                - name: Alusta varaston varastotasoja
+                - name: Käytettävissä olevan varaston luettelo
+                  href: inventory/inventory-on-hand-list.md
+                - name: Varaston varastotasojen alustaminen
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Fyysisen varaston siirtäminen varastossa
                   href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
@@ -1945,15 +1949,15 @@
                       href: production-control/operations-resources.md
                     - name: Luo operatiivinen resurssi
                       href: production-control/tasks/create-operations-resource.md
-                    - name: Resurssien ominaisuudet
+                    - name: Resurssin ominaisuudet
                       href: production-control/resource-capabilities.md
-                    - name: Määritä resurssin ominaisuudet
+                    - name: Resurssin ominaisuuksien määrittäminen
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: Reitit ja työvaiheet
                       href: production-control/routes-operations.md
-                    - name: Varaston työkäytännöt
+                    - name: Työkäytännöt
                       href: warehousing/warehouse-work-policies.md
-                    - name: Luo työaikojen ajoitusominaisuudet
+                    - name: Työaikojen ajoitusominaisuuksien luominen
                       href: production-control/tasks/create-working-time-scheduling-properties.md
                     - name: Työaikamallien luominen
                       href: production-control/tasks/create-working-time-templates.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Tuotedimensioiden yhdistäminen sijainnissa
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Laaduntarkistus
+                  href: warehousing/quality-check.md
             - name: Lähtevien varaston työvaiheet
               items:
                 - name: Varaukset varastonhallinnassa
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Vyöhykkeen rajatäydennys
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Täydennys yli sijainnin kapasiteetin
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: Kuormituksen luonti ja lähetykset
                   items:
-                    - name: Vahvista ja siirrä
+                    - name: Vahvistaminen ja siirtäminen
                       href: warehousing/confirm-and-transfer.md
+                    - name: Lähtevien lähetysten vahvistaminen erätöistä
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Kuormituksen lisäluonti aallon aikana
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Vapauta varastoon -sääntö
@@ -2679,10 +2689,8 @@
               items:
                 - name: Varaston työkäytännöt
                   items:
-                    - name: Varaston työkäytännöt – yleiskatsaus
+                    - name: Työkäytännöt
                       href: warehousing/warehouse-work-policies.md
-                    - name: Määritä varaston työkäytännöt
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
                     - name: Työhön liitetyn varaston siirtäminen varastonhallinnassa
                       href: warehousing/move-inventory-associated-work.md
                     - name: Työluokan luominen
@@ -2715,7 +2723,7 @@
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
                     - name: Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
                       href: warehousing/onhand-cleanup.md
-                    - name: Varastokirjauskansio
+                    - name: Varastokirjauskansiot
                       href: inventory/inventory-journals.md
                     - name: Varastosijainti
                       href: inventory/inventory-locations.md
