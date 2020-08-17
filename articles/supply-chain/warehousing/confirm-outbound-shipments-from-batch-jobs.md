@@ -1,0 +1,56 @@
+---
+title: Vahvista lähtevät lähetykset erätöistä
+description: Tässä ohjeaiheessa on ohjeita erätyön määrittämiseksi. Erätyö vahvistaa automaattisesti lähtevät siirtotilauslähetykset lähetysvalmiille kuormille.
+author: perlynne
+manager: tfehr
+ms.date: 07/31/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: perlynne
+ms.search.validFrom: 2020-07-31
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 41dbfb90b7b19c964e725ee0a4c769402414fb17
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652229"
+---
+# <a name="confirm-outbound-shipments-from-batch-jobs"></a><span data-ttu-id="14913-103">Vahvista lähtevät lähetykset erätöistä</span><span class="sxs-lookup"><span data-stu-id="14913-103">Confirm outbound shipments from batch jobs</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="14913-104">Tässä ohjeaiheessa on ohjeita erätyön määrittämiseksi. Erätyö vahvistaa automaattisesti lähtevät siirtotilauslähetykset lähetysvalmiille kuormille.</span><span class="sxs-lookup"><span data-stu-id="14913-104">This topic describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads.</span></span> <span data-ttu-id="14913-105">Tässä kuvattu erätyö koskee vain siirtotilauslähetyksiä, ei myyntitilauksia.</span><span class="sxs-lookup"><span data-stu-id="14913-105">The batch job described here only applies to transfer order shipments, not to sales orders.</span></span>
+
+## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a><span data-ttu-id="14913-106">Lähtevien lähetysten vahvistaminen erätöistä -ominaisuuden käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="14913-106">Enable the Confirm outbound shipments from batch jobs feature</span></span>
+
+<span data-ttu-id="14913-107">Ennen kuin käytät tätä toimintoa, se on otettava käyttöön järjestelmässä.</span><span class="sxs-lookup"><span data-stu-id="14913-107">Before you can use this feature, it must be enabled on your system.</span></span> <span data-ttu-id="14913-108">Järjestelmänvalvojat voivat käyttää [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="14913-108">Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed.</span></span> <span data-ttu-id="14913-109">Ominaisuus näkyy seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="14913-109">The feature is listed as:</span></span>
+
+- <span data-ttu-id="14913-110">**Moduuli** - *Varastonhallinta*</span><span class="sxs-lookup"><span data-stu-id="14913-110">**Module** - *Warehouse management*</span></span>
+- <span data-ttu-id="14913-111">**Ominaisuuden nimi** - *Lähtevien lähetysten vahvistaminen erätöistä*</span><span class="sxs-lookup"><span data-stu-id="14913-111">**Feature name** - *Confirm outbound shipments from batch jobs*</span></span>
+
+## <a name="process-outbound-shipments"></a><span data-ttu-id="14913-112">Käsittele lähtevät lähetykset</span><span class="sxs-lookup"><span data-stu-id="14913-112">Process outbound shipments</span></span>
+
+<span data-ttu-id="14913-113">Voit määrittää ajoitetun erätyön, joka suorittaa lähtevän lähetyksen vahvistuksen kuormille, jotka ovat valmiita lähetettäviksi seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="14913-113">To set up a scheduled batch job to run the outbound shipment confirmation for loads that are ready to ship:</span></span>
+
+1. <span data-ttu-id="14913-114">Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Käsittele lähtevät lähetykset**.</span><span class="sxs-lookup"><span data-stu-id="14913-114">Go to **Warehouse management \> Periodic tasks \> Process outbound shipments**.</span></span>
+1. <span data-ttu-id="14913-115">**Vahvista lähetys** -valintaikkuna aukeaa.</span><span class="sxs-lookup"><span data-stu-id="14913-115">The **Confirm shipment** dialog box opens.</span></span> <span data-ttu-id="14913-116">Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.</span><span class="sxs-lookup"><span data-stu-id="14913-116">On the **Records to include** FastTab, select **Filter**.</span></span>
+1. <span data-ttu-id="14913-117">Kyselyeditorin valintaikkuna avautuu.</span><span class="sxs-lookup"><span data-stu-id="14913-117">The query editor dialog box opens.</span></span> <span data-ttu-id="14913-118">Valitse **Alue**-välilehdessä rivi, jolla on seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="14913-118">On the **Range** tab, add a row with the following values:</span></span>
+    - <span data-ttu-id="14913-119">**Taulu** - *Kuormat*</span><span class="sxs-lookup"><span data-stu-id="14913-119">**Table** - *Loads*</span></span>
+    - <span data-ttu-id="14913-120">**Johdettu taulu** - *Kuormat*</span><span class="sxs-lookup"><span data-stu-id="14913-120">**Derived table** - *Loads*</span></span>
+    - <span data-ttu-id="14913-121">**Kenttä** - *Kuorman tila*</span><span class="sxs-lookup"><span data-stu-id="14913-121">**Field** - *Load status*</span></span>
+    - <span data-ttu-id="14913-122">**Ehdot** - *Lastattu*</span><span class="sxs-lookup"><span data-stu-id="14913-122">**Criteria** - *Loaded*</span></span>
+1. <span data-ttu-id="14913-123">Valitse **OK**, jos haluat palata **Vahvista lähetys** -valintaikkunaan.</span><span class="sxs-lookup"><span data-stu-id="14913-123">Select **OK** to return to the **Confirm shipment** dialog box.</span></span>
+1. <span data-ttu-id="14913-124">Määritä **Suorita taustalla** -pikavälilehdessä **Erän käsittely** -kohdan arvoksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="14913-124">On the **Run in the background** FastTab, set **Batch processing** to **Yes**.</span></span>
+1. <span data-ttu-id="14913-125">Valitse **Suorita taustalla** -pikavälilehdessä **Toistuminen**.</span><span class="sxs-lookup"><span data-stu-id="14913-125">On the **Run in the background** FastTab, select **Recurrence**.</span></span>
+1. <span data-ttu-id="14913-126">**Määritä toistuminen** -valintaikkuna aukeaa.</span><span class="sxs-lookup"><span data-stu-id="14913-126">The **Define recurrence** dialog box opens.</span></span> <span data-ttu-id="14913-127">Määritä yritykselle ajon aikataulu tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="14913-127">Set the run schedule as needed for your business.</span></span>
+1. <span data-ttu-id="14913-128">Valitse **OK**, jos haluat palata **Vahvista lähetys** -valintaikkunaan.</span><span class="sxs-lookup"><span data-stu-id="14913-128">Select **OK** to return to the **Confirm shipment** dialog box.</span></span>
+1. <span data-ttu-id="14913-129">Valitse **OK** **Vahvista lähetys** -valintaikkunassa, jos haluat lisätä erätyön eräjonoon.</span><span class="sxs-lookup"><span data-stu-id="14913-129">Select **OK** on the **Confirm shipment** dialog box to add the batch job to the batch queue.</span></span>
+
+<span data-ttu-id="14913-130">Lisätietoja on kohdassa [Eräkäsittelyn yleiskatsaus](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).</span><span class="sxs-lookup"><span data-stu-id="14913-130">For more information, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).</span></span>
