@@ -3,7 +3,7 @@ title: Kanta-asiakkuuden yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022428"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613200"
 ---
 # <a name="loyalty-overview"></a>Kanta-asiakkuuden yleiskatsaus
 
@@ -55,7 +55,7 @@ Seuraavassa taulukossa on kuvattu jokainen komponentti ja sen käyttöpaikka kan
 | Määritä alennukset (edellytys)                  | Määritä alennukset, jotka tarjoat kanta-asiakkaille. Voit tarjota esimerkiksi 5 prosentin alennuksen kaikista asusteista. | Alennukset on lisättävä hintaryhmiin, jotta ne voidaan sisällyttää kanta-asiakasohjelmaan. Hintaryhmät liitetään kanta-asiakasohjelmiin ja kanta-asiakastasoihin. |
 | Määritä hinta- ja alennusryhmät (edellytys)               | Hintaryhmiä voidaan käyttää tuotteiden hintojen ja alennusten luomiseen ja hallintaan. Määritä hintaryhmät, jotka sisältävät alennukset, jotka koskevat kanta-asiakasohjelmaa. | Hintaryhmät liitetään kanta-asiakasohjelmiisi ja kanta-asiakasohjelman tasoihin. |
 | Määritä kanavat (edellytys)                   | Commercen kanavat ovat myymälöitä, jotka osallistuvat kanta-asiakasohjelmiisi, kuten vähittäismyymälöitä, verkkokauppoja tai puhelinkeskuksia. Sinun on asetettava kanavat ennen kuin määrität niihin kanta-asiakasohjelmia. | Määrität kanavat kanta-asiakasohjelmaan, jos kanava osallistuu kanta-asiakasohjelmaan. |
-| Määritä kanta-asiakkaan maksutapa (edellytys) | Sinun on määritettävä maksutapa ennen kuin kanta-asiakaskorttia voidaan käyttää kassakoneessa ja kanta-asiakaspisteitä voidaan lunastaa osana kanta-asiakkuusohjelmaa. Sinun on myös lisättävä asiakkaille kanta-asiakkaan maksutapa kanavaan, jotta asiakkaat voivat lunastaa tuotteita kanta-asiakkuuspisteillään. | Määritä kanta-asiakkuustyypin maksutapa ja liitä sitten kanta-asiakkuuden maksutapa kanaviin niiden osalta, jotka osallistuvat kanta-asiakasohjelmaan. |
+| Määritä kanta-asiakkaan maksutapa (edellytys) | Jos haluat varmistaa, että kanta-asiakkuuspisteet voidaan lunastaa missä tahansa kanavassa, kuten kivijalkaliikkeissä, verkkokaupoissa tai puhelinkeskuksissa, määritä kanta-asiakaskorteille lokeroalue **Korttinumerot**-sivulla. | Määritä kanta-asiakkuustyypin maksutapa ja liitä sitten kanta-asiakkuuden maksutapa kanaviin niiden osalta, jotka osallistuvat kanta-asiakasohjelmaan. |
 | Määritä päivämäärävälit                            | Päivämäärävälit tarjoavat joustavan tavan kanta-asiakkuustasoja koskevan ajanjakson asettamiseksi. Päivämäärävälien avulla voit määrittää, kuinka kauan asiakas pysyy tietyllä tasolla tai kuinka monta kertaa tietty tehtävä pitää suorittaa, jotta asiakas saavuttaa tietyn tason. | Päivämäärävälit ovat voimassa vain, jos käytät tasoja kanta-asiakasohjelmissasi. Valitset päivämääräväli, joka koskee ohjelmatasoihin ja päivämäärävälin, joka koskee ohjelmatason sääntöjä. |
 | Määritä palkintopisteet                             | Palkintopisteet ovat palkintotyyppejä, joita voit tarjota asiakkaillesi. Palkintopisteet voivat olla takaisin ostettavia tai ei-hyvitettäviä. Lunastettavia palkintopisteitä voidaan vaihtaa tuotteisiin. Ei lunastettavia palkkiopisteitä käytetään seurantaan tai asiakkaan siirtämiseksi seuraavalle tasolle kanta-asiakasohjelmassa. | Palkintopisteisiin viitataan tason säännöissä ja niitä käytetään oikeuttamaan tietyn asiakkaan taso. Kanta-asiakkuuspisteisiin viitataan myös kanta-asiakasmallin ansainta- ja lunastussäännöissä. Ansaitsemissäännöissä määrität palkkiot, jotka asiakas voi ansaita tietyst' tehtävästä. Lunastussäännöissä voit määrittää palkinnot, jotka asiakas voi lunastaa. |
 | Kanta-asiakkuusohjelmien asetukset                          | Kanta-asiakasohjelmat ovat kanta-asiakkuuden ydinyksikkö. Jokaiseen kanta-asiakasohjelmaan voidaan määrittää myös kanta-asiakkuustasoja. Alennukset ja hintaryhmät määritetään kanta-asiakasohjelmiin joko ohjelman tasolla tai kanta-asiakkuustasolla. | Luot kanta-asiakkuusmalleja kanta-asiakasohjelmillesi. Kanta-asiakaskortit liitetään kanta-asiakasohjelmiin ja kanta-asiakaskortit voidaan määrittää asiakkaalle. Kanavat osallistuvat kanta-asiakkuusohjelmiin, jotka liittyvät kanta-asiakkuusmalleihin. Kuka tahansa kanta-asiakaskortin omistava asiakas voit osallistua kanta-asiakasohjelmiin, jotka on määritetty kortille. |

@@ -1,9 +1,9 @@
 ---
-title: Projektiin laskutus
-description: Tämä artikkeli sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista.
-author: ShylaThompson
+title: Projektin laskutus
+description: Tämä ohjeaihe sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista.
+author: TaylorVH
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
-ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
+ms.search.validFrom: 2020-07-06
+ms.dyn365.ops.version: AX 10.0.13
+ms.openlocfilehash: eab7523296996709dfe7407c582e61e28b7d4f23
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331369"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651589"
 ---
-# <a name="project-invoicing"></a>Projektiin laskutus
+# <a name="project-invoicing"></a>Projektin laskutus
 
 [!include [banner](../includes/banner.md)]
 
-Tämä artikkeli sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista.
+Tämä ohjeaihe sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista.
 
 Projektityyppi määrittää, mitä laskutusmenettelyä käytetään. Vain kahta ulkoista projektityyppiä, aika- ja materiaaliprojektit sekä kiinteähintaiset projektit, voidaan laskuttaa. Aika- ja materiaaliprojektit sekä kiinteähintaiset projektit liittyvät aina projektisopimukseen.
 
@@ -47,7 +47,7 @@ Ennen kuin luot projektin myyntilaskun, voit luoda alustavan laskun tai laskuehd
 
 ### <a name="creating-invoice-proposals"></a>Laskuehdotusten luominen
 
-Voit luoda laskuehdotuksia manuaalisesti valitsemalla määritetyn projektin tapahtumien luettelosta. Voit määrittää laskutuksen säännöt, jotka määrittävät milloin laskuehdotus luodaan automaattisesti. Voit esimerkiksi luoda laskutussäännön laskuehdotuksen luomiseksi, kun projektin työstä on suoritettu 25 %, 50 %, 75 % ja 100 %. 
+Voit luoda laskuehdotuksia manuaalisesti valitsemalla tapahtuma määritetyn projektin käytettävissä olevien tapahtumien luettelosta. Voit määrittää laskutuksen säännöt, jotka määrittävät milloin laskuehdotus luodaan automaattisesti. Voit esimerkiksi luoda laskutussäännön laskuehdotuksen luomiseksi, kun projektin työstä on suoritettu 25, 50, 75 ja 100 prosenttia. 
 
 Voit luoda laskuehdotukset seuraaville tapahtumille:
 
@@ -57,7 +57,7 @@ Voit luoda laskuehdotukset seuraaville tapahtumille:
 -   Summat, jotka asiakas on maksanut ennen projektin alkamista
 
 > [!NOTE]
-> **Ota resurssin mukainen lajittelu käyttöön projektilaskuehdotuksen luomisessa** -toiminnon avulla projektin kirjapitäjä voi lajitella laskutettavissa olevat projektitapahtumat resurssin mukaan luodessaan uuden projektilaskuehdotuksen. Laskutettavissa olevat projektitapahtumat sisältävässä ruudukossa on erilliset kentät resurssitunnukselle ja resurssille, minkä ansiosta käyttäjä voi käyttää resurssin nimeä suodatus- ja lajitteluperusteena. Tämä toiminto on oletusarvoisesti pois käytöstä ja voidaan ottaa käyttöön kohdassa **Työtilat > Toimintojen hallinta**. Ota yhteyttä järjestelmänvalvojaasi, jos haluat ottaa tämän toiminnon käyttöön.
+> **Ota resurssin mukainen lajittelu käyttöön projektilaskuehdotuksen luomisessa** -toiminnon avulla projektin kirjapitäjä voi lajitella laskutettavissa olevat projektitapahtumat resurssin mukaan luodessaan uuden projektilaskuehdotuksen. Käytettävissä olevat projektitapahtumat näyttävässä ruudukossa on erilliset kentät **resurssitunnukselle** ja **resurssille**. Näiden kenttien avulla voit suodattaa ja lajitella resurssin nimen. Oletusarvon mukaan tämä asetus on pois käytöstä. Se voidaan ottaa käyttöön **Ominaisuuksien hallinta** -sivun avulla (**Työtilat > Ominaisuuksien hallinta**). Ota yhteyttä järjestelmänvalvojaan, jos tarvitset apua tämän ominaisuuden käyttöönotossa.
 
 Voit luoda laskuehdotuksen maksutapahtumat. Voit myös muokata myyntihintaa tunti-, nimike- ja maksutapahtumissa. Jos kirjaat laskuehdotuksen, päivitetyt hinnat ja tapahtumat lisätään projektiraportteihin ja tapahtumien historiatietoihin. 
 
@@ -69,22 +69,25 @@ Jos projektilla on enemmän kuin yksi rahoituslähde, voit luoda kullekin rahoit
 
 Kun olet luonut ja kirjannut laskuehdotuksen, laskuehdotukseen sisältyville tapahtumille luodaan automaattisesti myyntilasku. 
 
-Voit lisätä tapahtumia laskuehdotukseen tai poistaa niitä laskuehdotuksesta ennen laskuehdotuksen kirjaamista. Voit esimerkiksi poistaa kulutapahtumat, jotka kirjattiin projektiin mutta joita ei voi laskuttaa asiakkaalta. 
+Voit lisätä tapahtumia laskuehdotukseen tai poistaa niitä laskuehdotuksesta ennen laskuehdotuksen kirjaamista. Voit esimerkiksi poistaa kulutapahtumat, jotka kirjattiin projektiin, mutta joita ei voi laskuttaa asiakkaalta. 
 
 Jos organisaatio edellyttää laskuehdotuksien tarkistamista ennen niiden kirjaamista, laskuehdotus saattaa edellyttää hyväksymistä projektin laskuehdotuksen tarkistuksen työnkulun kautta, ennen kuin se kirjataan.
+
+### <a name="view-grant-information-on-project-invoice-list-pages"></a>Määrärahatietojen tarkasteleminen projektilaskuluettelosivuilla
+
+Julkisen sektorin käyttäjät voivat lisätä **määrärahan tunnuksen** ja **määrärahan nimen** **Projektilaskuehdotukset**- ja **Projektilaskut**-luettelosivuille. Nämä sarakkeet otetaan käyttöön **Lisää määrärahan tiedot projektilaskuluettelosivuille** -ominaisuuden avulla. Tämä ominaisuus on oletusarvoisesti pois käytöstä. Se voidaan ottaa käyttöön kohdassa **Työtilat > Ominaisuuksien hallinta**. Ota yhteyttä järjestelmänvalvojaan, jos tarvitset apua tämän ominaisuuden käyttöönotossa.
 
 ## <a name="on-account-invoicing"></a>Ennakkolaskutus
 Summa, jonka kirjaat projektin ennakkolaskulle, perustuu ajoitukseen, valmistumisprosenttiin ja muihin laskutusehtoihin, jotka on määritetty liittyvässä projektisopimuksessa. Summaa ei lasketa projektiin kirjattujen tuntien, nimikkeiden, kulujen tai maksujen perusteella. 
 
-Sinun on luotava ennakkomaksutapahtuma kiinteähintaiselle projektille tai aika ja materiaali -projektille ennen kyseisen ennakkomaksutapahtuman lisäämistä projektilaskuun. Kirjoita ennakkolaskutustapahtumaan asiakkaalta laskutettava summa. Jos haluat luoda projektilaskun, luo alustava lasku (laskuehdotus). Valitse ennakkotapahtuma laskuehdotuksessa. Voit tarkastaa ennakkolaskun tiedot laskuehdotuksesta, ennen kuin luot projektilaskun siitä.
+Sinun on luotava ennakkomaksutapahtuma kiinteähintaiselle projektille tai aika ja materiaali -projektille ennen kyseisen ennakkomaksutapahtuman lisäämistä projektilaskuun. Kirjoita ennakkolaskutustapahtumaan asiakkaalta laskutettava summa. Jos haluat luoda projektilaskun, luo alustava lasku (laskuehdotus). Valitse ennakkotapahtuma laskuehdotuksessa. Voit tarkastaa ennakkolaskun tiedot laskuehdotuksesta, ennen kuin luot projektilaskun siitä. 
 
 ### <a name="fixed-price-projects"></a>Kiinteähintaiset projektit
-
 Kiinteähintaisissa projekteissa ennakkolaskutapahtumat perustuvat sovittuun välitavoitteeseen, toimitusyksikköön tai projektin sopimuksessa määritettyyn edistymiseen perustuvaan laskutusjärjestelyyn. Ohjelma luo rivin jokaiselle maksulle, joka tullaan vastaanottamaan projektiasiakkaalta. Vähennyksiä ei edellytetä.
 
 ### <a name="time-and-material-projects"></a>Aika- ja materiaaliprojektit
 
-Aika-ja materiaaliprojekteissa voit laskuttaa asiakasta tai toista rahoituslähdettä ennakkomaksun määrän käyttämällä ennakkolaskulaskuehdotusta. Kirjoita ennakkolaskutapahtumat yhdellä rivillä Voit halutessasi lisätä lisärivejä vähennyksinä vastakirjataksesi kaikki ennakkomaksut, jotka asiakas on tehnyt. Voit luoda vähennysrivit lisäämällä niiden eteen miinusmerkin.
+Aika-ja materiaaliprojekteissa voit laskuttaa asiakasta tai toista rahoituslähdettä ennakkomaksun määrän käyttämällä ennakkolaskulaskuehdotusta. Kirjoita ennakkolaskutapahtumat yhdellä rivillä Voit halutessasi lisätä lisärivejä vähennyksinä vastakirjataksesi kaikki ennakkomaksut, jotka asiakas on tehnyt. Voit luoda vähennysrivit lisäämällä miinusmerkin summan eteen.
 
 ## <a name="invoice-control"></a>Laskutuksen hallinta
 Voit seurata laskun hallinnalla sekä laskutettuja että laskuttamattomia tapahtumia ja analysoida kyseisiä tapahtumia vertaamalla niitä tarjouksiin. Saat tällä tavoin kattavan näkemyksen projekteista tarjousvaiheesta valmistumiseen. Näet, mitkä tapahtumat on veloitettu tietylle projektille ja mitkä rivit on laskutettu. Voit tarkastella myös yksittäisiä tapahtumia, joten voit oikaista niitä kirjaamisen jälkeen.
@@ -108,10 +111,10 @@ Voit esimerkiksi määrittää seuraavan laskutusaikataulun:
 Kun välitavoitemaksut ovat valmiita laskutettaviksi, käytetään ennakkosummien laskutustapaa.
 
 ## <a name="vendor-invoicing"></a>Toimittajan laskutus
-Kun tilaat nimikkeen toimittajalta ja määrität nimikkeen projektiin, kyseisen nimikkeen ostotilausriville valittu riviominaisuus määrittää, laskutetaanko ostettu nimike asiakkaalle. Jos määrität oletusriviominaisuudet, ne näytetään nimikkeelle ostotilausrivillä (Rivin erittely &gt; Projekti &gt; Rivin ominaisuus). Riviominaisuutta voi muokata kahdella tavalla:
+Kun tilaat nimikkeen toimittajalta ja määrität nimikkeen projektiin, kyseisen nimikkeen ostotilausriville valittu riviominaisuus määrittää, laskutetaanko ostettu nimike asiakkaalle. Jos määrität oletusriviominaisuudet, ne näytetään nimikkeelle ostotilausrivillä (**Rivin tiedot > Projekti > Rivin ominaisuuden summat**). Riviominaisuutta voi muokata kahdella tavalla:
 
--   Projektin asiakasta laskutetaan nimikkeestä: määritä nimikkeen riviominaisuus veloitettavalle arvolle ostotilauksessa ja laskuta sitten asiakasta oikealla projektilaskutustavalla.
--   Projektin asiakasta ei laskuteta nimikkeestä: Älä valitse nimikkeen ostotilausrivin **Veloitettava**-riviominaisuutta. Voit sitten laskuttaa ostotilauksen eikä muita toimintoja tarvita.
+-   Laskuta nimike projektin asiakkaalta. Voit tehdä tämän määrittämällä nimikkeen riviominaisuuden veloitettavalle arvolle ostotilauksessa ja laskuta sitten asiakasta oikealla projektilaskutustavalla.
+-   Älä laskuta nimikettä projektin asiakkaalta. Voit tehdä tämän, jos et valitse **Laskutettavissa**-riviominaisuutta nimikkeen ostotilausrivillä. Voit sitten laskuttaa ostotilauksen eikä muita toimintoja tarvita.
 
 > [!NOTE] 
 > Vapautuksen säilytysrivit eivät oletusarvoisesti ole veloitettavissa. Tämä tarkoittaa, että vapautetun säilytyksen laskuehdotuksen luontimahdollisuus ei ole käytössä.
@@ -119,7 +122,7 @@ Kun tilaat nimikkeen toimittajalta ja määrität nimikkeen projektiin, kyseisen
 ## <a name="credit-notes"></a>Hyvityslaskut
 Kun myyntilaskun summana on negatiivinen arvo, lasku luokitellaan hyvityslaskuksi. Kun asiakirja tulostetaan, sen otsikkona on Hyvityslasku. 
 
-Kun luot hyvityslaskun aiemmin laskutetun summan hyvittämistä varten, laskutettu summa on ensin valittava hyvittämistä varten. Voit sitten luoda hyvityslaskun samalla tavalla kuin loisit tavallinen myyntilaskun. Valitset siis tapahtumat, jotka kirjattiin aiemmin myyntilaskulle, ja luot ja kirjaat sitten hyvityslaskuehdotuksen. 
+Kun luot hyvityslaskun aiemmin laskutetun summan hyvittämistä varten, laskutettu summa on ensin valittava hyvittämistä varten. Voit sitten luoda hyvityslaskun samalla tavalla kuin tavallisen myyntilaskun luomisessa. Valitse tapahtumat, jotka kirjattiin aiemmin myyntilaskulle. Luo ja kirjaa sitten hyvityslaskuehdotus. 
 
 Sama asiakirja voi sisältää tapahtumat, jotka on valittu hyvitettäviksi, hyvitystapahtumia ja tapahtumia, jotka on kirjattu. Asiakirja luokitellaan joko laskuksi tai hyvityslaskuksi sen mukaan, onko kokonaissumma positiivinen vai negatiivinen luku. 
 

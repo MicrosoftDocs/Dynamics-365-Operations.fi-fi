@@ -3,7 +3,7 @@ title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 description: Tässä ohjeaiheessa keskitytään aiheisiin, joissa käsitellään Dynamics 365 Supply Chain Managementin kunkin version uusia ja muutettuja toimintoja.
 author: kamaybac
 manager: tfehr
-ms.date: 07/08/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a3e55d891bb029fa363a52191ae5c425de18899c
-ms.sourcegitcommit: 9c28aca7fc99e38139b7935bcdb6132cba2c81b2
+ms.openlocfilehash: 31ba00e3956614f57b55efc45e45ebe0dbd089eb
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3545685"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640420"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 
@@ -34,6 +34,7 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Dynamics 3
 
 | Versio | Koontiversion numero | Automaattisten päivitysten saatavuus | Lisätietoja |
 |---|---|---|---|
+| 10.0.12 | 10.0.507 | Elokuu 2020 | [Dynamics 365 Supply Chain Managementin version 10.0.12 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-12.md) |
 | 10.0.11 | 10.0.464 | Heinäkuu 2020 | [Dynamics 365 Supply Chain Managementin version 10.0.11 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | Toukokuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.10 uudet ja muutetut ominaisuudet](whats-new-scm-10-0-10.md) |
 | 10.0.9  | 10.0.383   | Huhtikuun 2020. | [Dynamics 365 Supply Chain Managementin version 10.0.9 uudet ja muutetut toiminnot](whats-new-scm-10-0-9.md) |

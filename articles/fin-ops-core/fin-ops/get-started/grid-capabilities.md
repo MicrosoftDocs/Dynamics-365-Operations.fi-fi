@@ -3,7 +3,7 @@ title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uudella ruudukkotoiminnolla on oltava käyttöoikeus näihin ominaisuuksiin.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431357"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651687"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -128,20 +128,47 @@ Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsu
 
 Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on käytössä.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
+Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
+
+        this.forceLegacyGrid();
+
+Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Ilmoita Microsoftille mahdolliset ongelmat, jotka edellyttävät tämän ohjelmointirajapinnan käyttämistä. 
+
 ## <a name="known-issues"></a>Tunnetut ongelmat
 Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuista ongelmista, kun ominaisuus on esikatselutilassa.  
 
 ### <a name="open-issues"></a>Avoimet asiat
+-  Kun **Uusi ruudukon ohjausobjekti** -toiminto on otettu käyttöön, jotkin sivut jatkavat olemassa olevan ruudukon ohjausobjektin käyttämistä. Näin tapahtuu seuraavissa tilanteissa:  
+    -  Sivulla on korttiluettelo, joka hahmonnetaan käyttämällä useaa saraketta.
+    -  Sivulla on ryhmitelty korttiluettelo.
+    -  Ruudukkosarake, jolla on ei-reaktiivinen laajennettava ohjausobjekti.
 
-- Useita sarakkeita käyttävät korttiluettelot muodostetaan nyt yhtenä sarakkeena.
-- Ryhmiteltyjä luetteloita ei muodosteta ryhminä tai erillisinä sarakkeina.
+    Kun käyttäjä havaitsee jonkin näistä tilanteista, näyttöön tulee sivun päivityksestä kertova sanoma. Kun tämä sanoma tulee näyttöön, sivu jatkaa aiemmin luodun ruudukon käyttämistä kaikille käyttäjille seuraavaan tuoteversiopäivitykseen asti. Näiden skenaarioiden parempi käsittely ja uuden ruudukon käyttäminen otetaan huomioon seuraavassa päivityksessä.     
 
 ### <a name="fixed-as-part-of-10013"></a>Määrätty osana versiota 10.0.13
 
-> [!NOTE]
-> Seuraavat tiedot annetaan, jotta voit tehdä suunnitelman sen mukaisesti. Lisätietoja kohdistetuista version 10.0.13 julkaisuaikatauluista on kohdassa [Palvelupäivitysten saatavuus](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Kuvia ei näytetä työkaluvihjeissä.
+-  [Virhe 470173] Ei-aktiivisten rivien valintaruutuja vaihdetaan, kun solun tyhjää tilaa napsautetaan
+-  [Virhe 474848] Ruudukkojen laajennetut esikatselut eivät näy
+-  [Virhe 474851] Viiteryhmän ohjausobjektien hyperlinkit eivät toimi 
+-  [Virhe 471777] Ruudukon kenttiä ei voi valita mobiilisovelluksen muokkaamista tai luomista varten
+-  [KB 4569441] Ongelmia hahmonnettaessa useiden sarakkeiden korttiluetteloita, kuvien työkaluvihjeitä ja joidenkin kenttien näyttöasetuksia
+-  [KB 4575279] Kaikkia merkittyjä rivejä ei poisteta yleisestä kirjauskansiosta
+-  [KB 4575233] Näyttöasetuksia ei ole palautettu toiseen riviin siirtämisen jälkeen
+-  [KB 4571095] Tuotteen vastaanoton kirjaus tapahtuu, kun Enter-painiketta painetaan vahingossa (sivun oletustoiminnon oikea käsittely)
+-  [KB 4575437] Haut ja muokattavissa olevat ohjausobjektit, jotka suljetaan odottamatta
+-  [KB 4569418] Kaksi samaa luotua riviä toimitusaikataululomakkeessa
+-  [KB 4575435] Parannettu esikatselu jatkuu joskus myös silloin, kun hiiren osoitin ei ole lähellä kenttää
+-  [KB 4575434] Haku ei suodatu, jos kenttää on muokattu
+-  [KB 4575430] Salasanakenttien arvoja ei peitetä ruudukossa
+-  [KB 4569438] "Käsittely on pysäytetty vahvistusongelman vuoksi" näkyy merkittyjen rivien jälkeen, kun toimittajan tapahtumia selvitetään
+-  [KB 4569434] Yritysten lomakkeen päivityksen tuloksena on vähemmän tietueita
+-  [KB 4575297] Kohdistus siirtyy tehtävien tallennustoiminnon ruutuun ruudukon muokkaamisen ja sarkaimella siirtymisen yhteydessä
+-  [KB 4566773] Korjaustapahtumat eivät näy negatiivisina tositetapahtumien kyselyssä 
+-  [KB 4575288] Kohdistus palautuu aktiiviseen riviin, kun yksinkertaisen luettelon rivien välinen reunus valitaan
+-  [KB 4575287] Kohdistus ei palaa ensimmäiseen sarakkeeseen, kun käytetään alanuolta uuden rivin luomisessa kirjauskansioissa
+-  [KB 4564819] Rivejä ei voi poistaa vapaatekstilaskussa (koska tietolähde ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Kuvien työkaluvihjeitä / parannettuja esikatseluita ei näytetä
 
 ### <a name="fixed-as-part-of-10012"></a>Määrätty osana versiota 10.0.12
 
@@ -158,6 +185,7 @@ Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuis
 - [KB 4562647] Kohdistus palautetaan **Julkaise**-valintaikkunan ensimmäiseen ohjausobjektin tilaan, kun uusi rivi lisätään käyttöoikeusroolien ruudukkoon.
 - [KB 4563310] Parannettu esikatselu ei ole suljettu, kun rivi on vaihdettu.
 - [KB 4563313] Odottamaton asiakasvirhe tapahtuu Internet Explorerissa, kun arvo valitaan haussa.
+- [KB 4564557] Haut ja avattavat valikot eivät avaudu Internet Explorerissa
 - [KB 4563324] Navigointi ei toimi, kun **henkilöstöhallinnon** työtila on avattu.
 
 ### <a name="fixed-as-part-of-10011"></a>Määrätty osana versiota 10.0.11

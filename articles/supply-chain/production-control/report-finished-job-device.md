@@ -3,7 +3,7 @@ title: Ilmoita valmiiksi työkorttilaitteesta
 description: Tässä aiheessa kuvataan, miten järjestelmä konfiguroidaan niin, että työkorttilaitteen käyttäjät voivat raportoida valmiit tuotteet tuotantotilauksesta varastoon.
 author: johanhoffmann
 manager: tfehr
-ms.date: 05/18/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,24 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f5d34893ddc8adc3785ec50dbd72438cf8f68c5d
-ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403259"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651613"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
 [!include [banner](../includes/banner.md)]
 
-Työntekijät käyttävät työkorttilaitteen **Raportin edistyminen** -sivua tuotantotyötä varten valmistuneiden määrien raportoinnissa.
+Työntekijät käyttävät työkorttilaitteen **Raportin edistyminen** -sivua tuotantotyötä varten valmistuneiden määrien raportoinnissa. Tässä ohjeaiheessa kuvataan, miten määritetään erilaisia asetuksia, jotka määrittävät, miten työntekijät voivat tehdä ilmoituksen valmistumisesta tämän sivun avulla. Ohjeaihe sisältää myös tietoja seuraavista toiminnoista. Vaihtoehtoja ovat:
+
+- Määrittää, lisätäänkö valmiiksi ilmoitetut määrät varastoon ja miten ne lisätään.
+- Määrittää, luodaanko eränumerot, niiden luontitavan sekä määrittää, käytetäänkö niitä valmiiksi-ilmoittamisen yhteydessä.
+- Määrittää, luodaanko sarjanumerot, niiden luontitavan sekä määrittää, käytetäänkö niitä valmiiksi-ilmoittamisen yhteydessä.
+- Määrittää, ilmoitetaanko valmistuneeksi rekisterikilpeen ja miten se tehdään.
 
 ## <a name="control-whether-quantities-that-are-reported-as-finished-are-added-to-inventory"></a>Määrittää, lisätäänkö valmiiksi ilmoitetut määrät varastoon
 
@@ -42,7 +47,7 @@ Seuraavien vaiheiden avulla voit määrittää, lisätäänkö viimeisen työvai
     - **Tila** – Vain tuotantotilauksen tila muuttuu. Varastoon ei lisätä määrää, kun viimeisestä työvaiheesta raportoidaan määriä.
 
 > [!NOTE]
-> Määriä ei seurata varastossa, jos ne työvaiheet, jotka ne on ilmoitettu valmiiksi, eivät ole määritelleet viimeistä työvaihetta. Näitä määriä voidaan kuitenkin käyttää edistymisen tarkastelemiseen. Ne voidaan myös sisällyttää sääntöihin, joissa määritetään, voivatko työntekijät aloittaa seuraavan työvaiheen, ennen kuin edellisessä työvaiheessa määritetty ilmoitettu määräraja saavutetaan. Voit määrittää nämä säännöt **Tuotantotilauksen oletukset** -sivun **Määrän oikeellisuustarkistus** -välilehdessä.
+> Määriä ei seurata varastossa, jos ne työvaiheet, jotka ne on ilmoitettu valmiiksi, eivät ole määritelleet viimeistä työvaihetta. Näitä määriä voidaan kuitenkin käyttää edistymisen tarkastelemiseen. Ne voidaan myös sisällyttää sääntöihin, joissa määritetään, voivatko työntekijät aloittaa seuraavan työvaiheen, ennen kuin edellisessä työvaiheessa määritetty ilmoitettu määräraja saavutetaan. Voit määrittää nämä säännöt **Tuotantotilauksen oletusarvot** -sivun **Määrän oikeellisuustarkistus** -välilehdessä.
 
 Lisätietoja **Tuotantotilauksen oletukset** -sivun käyttämisestä on kohdassa [Tuotantoparametrit tuotannon suorituksessa](production-parameters-manufacturing-execution.md).
 
@@ -50,11 +55,21 @@ Lisätietoja **Tuotantotilauksen oletukset** -sivun käyttämisestä on kohdassa
 
 Työkorttilaite tukee kolmea eränimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, jotka on otettu käyttöön lisävarastoprosesseja varten, että nimikkeitä, jotka eivät ole käytössä lisävarastoprosesseissa.
 
-- **Manuaalisesti määritellyt eränumerot:** Työntekijät voivat määrittää mukautetun eränumeron. Tämä eränumero voi olla peräisin ulkoisesta lähteestä, jota järjestelmä ei tunne.
-- **Ennalta määritetyt eränumerot:** Työntekijät valitsevat eränumeron niiden eränumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
-- **Kiinteät eränumerot:** Työntekijät eivät voi syöttää tai valita eränumeroa. Sen sijaan järjestelmä liittää tuotantotilaukseen automaattisesti eränumeron ennen kuin se on vapautettu.
+- **Manuaalisesti määritellyt eränumerot** - Työntekijät voivat määrittää mukautetun eränumeron. Tämä eränumero voi olla peräisin ulkoisesta lähteestä, jota järjestelmä ei tunne.
+- **Ennalta määritetyt eränumerot** - Työntekijät valitsevat eränumeron niiden eränumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
+- **Kiinteät eränumerot** - Työntekijät eivät voi syöttää tai valita eränumeroa. Sen sijaan järjestelmä liittää tuotantotilaukseen automaattisesti eränumeron ennen kuin se on vapautettu.
 
-Kukin skenaario otetaan käyttöön seuraavasti.
+
+### <a name="enable-the-feature-on-your-system"></a>Ominaisuuden ottaminen käyttöön järjestelmässä
+
+Jos haluat, että työkorttilaitteet hyväksyvät eränumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat ominaisuudet käyttöön (tässä järjestyksessä) [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
+
+1. Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa
+1. Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta (esiversio)
+
+### <a name="configure-products-that-require-batch-number-reporting"></a>Niiden tuotteiden määrittäminen, jotka edellyttävät eränumeroraportointia
+
+Jos haluat, että tuote tukee jotain käytettävissä olevaa eräseurannassa olevaa skenaariota, tee näin:
 
 1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
 1. Valitse määritettävä tuote.
@@ -63,14 +78,7 @@ Kukin skenaario otetaan käyttöön seuraavasti.
 > [!NOTE]
 > Jos eräohjattavia tuotteita varten ei ole määritetty eränumeroryhmää, työkorttilaite antaa eränumerolle manuaalisen merkinnän valmiiksi ilmoittamisen aikana.
 
-Seuraavissa jaksoissa kuvataan, miten seurantanumeroryhmiä määritetään tukemaan kolmea eränimikkeiden raportointiskenaariota.
-
-### <a name="enable-batch-number-reporting-on-the-job-card-device"></a>Ota eränumeroiden raportointi käyttöön työkorttilaitteessa
-
-Jos haluat, että työkorttilaitteet hyväksyvät eränumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat ominaisuudet käyttöön (tässä järjestyksessä) [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
-
-1. Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa
-1. Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta (esiversio)
+Seuraavissa osissa kuvataan, miten seurantanumeroryhmiä määritetään tukemaan kolmea eränimikkeiden raportointiskenaariota.
 
 ### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-batch-number"></a>Määritä seurantanumeroryhmä, jonka avulla työntekijät määrittävät eränumeron manuaalisesti
 
@@ -80,7 +88,7 @@ Voit sallia manuaalisesti määritetyt eränumerot asettamalla seuraavien vaihei
 1. Luo tai valitse määritettävä seurantanumeroryhmä.
 1. Määritä **Yleinen**-pikavälilehden **Manuaalinen**-asetukseksi **Kyllä**.
 
-    ![Seurantanumeroryhmät -sivu](media/tracking-number-group-manual.png "Seurantanumeroryhmät -sivu")
+    ![Manuaalisten eränumeroiden seurantanumeroryhmä](media/tracking-number-group-manual.png "Manuaalisten eränumeroiden seurantanumeroryhmä")
 
 1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden eränumeroksi, jota varten haluat käyttää tätä skenaariota.
 
@@ -95,9 +103,9 @@ Voit tarjota luettelon esimääritetyistä eränumeroista asettamalla seuraavien
 1. Siirry kohtaan **Varaston hallinta \> Asetukset > Dimensiot \> Seurantanumeroryhmät**.
 1. Luo tai valitse määritettävä seurantanumeroryhmä.
 1. Määritä **Yleinen**-pikavälilehden **Vain varastotransaktioille** -asetukseksi **Kyllä**.
-1. Käytä **per määrä** -kenttää, kun haluat jakaa eränumerot määrää kohden määrittämäsi arvon perusteella. Esimerkiksi tuotantotilaus on kymmenen kappaletta ja **per määrä** -kentän arvoksi on määritetty *2*. Tässä tapauksessa tuotantotilaukseen liitetään viisi eränumeroa, kun se luodaan.
+1. Käytä **Per määrä** -kenttää, kun haluat jakaa eränumerot määrää kohden määrittämäsi arvon perusteella. Esimerkiksi tuotantotilaus on kymmenen kappaletta ja **Per määrä** -kentän arvoksi on määritetty *2*. Tässä tapauksessa tuotantotilaukseen liitetään viisi eränumeroa, kun se luodaan.
 
-    ![Seurantanumeroryhmät -sivu](media/tracking-number-group-predefined.png "Seurantanumeroryhmät -sivu")
+    ![Ennalta määritettyjen eränumeroiden seurantanumeroryhmä](media/tracking-number-group-predefined.png "Ennalta määritettyjen eränumeroiden seurantanumeroryhmä")
 
 1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden eränumeroksi, jota varten haluat käyttää tätä skenaariota.
 
@@ -114,13 +122,96 @@ Jos eränumerot määritetään automaattisesti ilman työntekijän syöttöä, 
 1. Määritä **Yleinen**-pikavälilehden **Vain varastotransaktioille** -asetukseksi **Ei**.
 1. Määritä kohdan **Manuaalinen** asetukseksi **Ei**.
 
-    ![Seurantanumeroryhmät -sivu](media/tracking-number-group-fixed.png "Seurantanumeroryhmät -sivu")
+    ![Kiinteiden eränumeroiden seurantanumeroryhmä](media/tracking-number-group-fixed.png "Kiinteiden eränumeroiden seurantanumeroryhmä")
 
 1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden eränumeroksi, jota varten haluat käyttää tätä skenaariota.
 
 Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Eränumero**-kenttä näyttää arvon, mutta työntekijät eivät voi muokata sitä.
 
 ![Raportin edistymissivu, jossa on kiinteä eränumero](media/job-card-device-batch-fixed.png "Raportin edistymissivu, jossa on kiinteä eränumero")
+
+## <a name="report-serial-controlled-items-as-finished"></a>Sarjaohjattujen nimikkeiden ilmoittaminen valmiiksi
+
+Työkorttilaite tukee kolmea sarjaohjattujen nimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, jotka on otettu käyttöön lisävarastoprosesseja varten, että nimikkeitä, jotka eivät ole käytössä lisävarastoprosesseissa.
+
+- **Manuaalisesti määritellyt sarjanumerot** - Työntekijät voivat määrittää mukautetun sarjanumeron. Tämä sarjanumero voi olla peräisin ulkoisesta lähteestä, jota järjestelmä ei tunne.
+- **Ennalta määritetyt sarjanumerot** - Työntekijät valitsevat sarjanumerot niiden sarjanumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
+- **Kiinteät sarjanumerot** - Työntekijät eivät voi syöttää tai valita sarjanumeroa. Sen sijaan järjestelmä liittää tuotantotilaukseen automaattisesti sarjanumeron ennen kuin se on vapautettu.
+
+### <a name="enable-the-feature-on-your-system"></a>Ominaisuuden ottaminen käyttöön järjestelmässä
+
+Jos haluat, että työkorttilaitteet hyväksyvät sarjanumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat ominaisuudet käyttöön (tässä järjestyksessä) [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
+
+1. Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa
+1. Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta (esiversio)
+
+### <a name="configure-products-that-require-serial-number-reporting"></a>Niiden tuotteiden määrittäminen, jotka edellyttävät sarjanumeroraportointia
+
+Jos haluat, että tuote tukee jotain käytettävissä olevaa sarjanumeroseurannassa olevaa skenaariota, tee näin:
+
+Kukin skenaario otetaan käyttöön seuraavasti.
+
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Valitse määritettävä tuote.
+1. Valitse **Hallitse varastoa** -pikavälilehden **Sarjanumeroryhmä**-kentässä skenaarion tueksi määritetty seurantanumeroryhmä.
+
+> [!NOTE]
+> Jos sarjaohjattavia tuotteita varten ei ole määritetty sarjanumeroryhmää, työkorttilaite antaa sarjanumerolle manuaalisen merkinnän valmiiksi ilmoittamisen aikana.
+
+Seuraavissa osissa kuvataan, miten seurantanumeroryhmiä määritetään tukemaan kolmea sarjaseurantanimikkeiden raportointiskenaariota.
+
+### <a name="set-up-a-tracking-number-group-that-lets-workers-manually-assign-a-serial-number"></a>Määritä seurantanumeroryhmä, jonka avulla työntekijät määrittävät sarjanumeron manuaalisesti
+
+Voit sallia manuaalisesti määritetyt sarjanumerot asettamalla seuraavien vaiheiden ryhmän seuraavien ohjeiden mukaisesti.
+
+1. Siirry kohtaan **Varaston hallinta \> Asetukset \> Dimensiot \> Seurantanumeroryhmät**.
+1. Luo tai valitse määritettävä seurantanumeroryhmä.
+1. Määritä **Yleinen**-pikavälilehden **Manuaalinen**-asetukseksi **Kyllä**.
+
+    ![Seurantanumeroryhmät-sivu, sarjanumerot](media/tracking-number-group-manual-serial.png "Seurantanumeroryhmät-sivu, sarjanumerot")
+
+1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden sarjanumeroksi, jota varten haluat käyttää tätä skenaariota.
+
+Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Sarjanumero**-kenttä on tekstiruutu, jossa työntekijät voivat syöttää minkä tahansa sarjanumeron arvon. Arvon syöttämisen yhteydessä se lisätään sarjanumeroluetteloon. Tässä luettelossa työntekijät voivat tehdä seuraavia toimintoja:
+
+- Jos haluat merkitä sarjanumeron hävikiksi, valitse **Hävikki**-painike soveltuvalla rivillä. Työntekijää pyydetään antamaan **virheen syy**.
+- Jos haluat poistaa sarjanumeron, valitse **PÅoista**-painike soveltuvalla rivillä.
+
+![Raportin edistymissivu, jossa on kenttä manuaalisia sarjanumeroita varten](media/job-card-device-serial-manual.png "Raportin edistymissivu, jossa on kenttä manuaalisia sarjanumeroita varten")
+
+### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Määritä seurantanumeroryhmä, joka sisältää luettelon esimääritetyistä sarjanumeroista
+
+Voit tarjota luettelon esimääritetyistä sarjanumeroista asettamalla seuraavien vaiheiden ryhmän seuraavien ohjeiden mukaisesti.
+
+1. Siirry kohtaan **Varaston hallinta \> Asetukset \> Dimensiot \> Seurantanumeroryhmät**.
+1. Luo tai valitse määritettävä seurantanumeroryhmä.
+1. Määritä **Yleinen**-pikavälilehden **Vain varastotransaktioille** -asetukseksi **Kyllä**.
+1. Käytä **Per määrä** -kenttää, kun haluat jakaa sarjanumerot määrälle, joka on yksi.
+
+    ![Ennalta määritettyjen sarjanumeroiden seurantanumeroryhmä](media/tracking-number-group-predefined-sn.png "Ennalta määritettyjen sarjanumeroiden seurantanumeroryhmä")
+
+1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden sarjanumeroksi, jota varten haluat käyttää tätä skenaariota.
+
+Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Sarjanumero**-kenttä on pudotusvalikko, josta työntekijöiden tulee valita esimääritetty arvo.
+
+![Raportin edistymissivu, jossa on luettelo esimääritettyjä sarjanumeroita varten](media/job-card-device-serial-predefined.png "Raportin edistymissivu, jossa on luettelo esimääritettyjä sarjanumeroita varten")
+
+### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Määritä seurantanumeroryhmä, joka automaattisesti määrittää sarjanumerot
+
+Jos sarjanumerot määritetään automaattisesti ilman työntekijän syöttöä, määritä seurantanumeroryhmä noudattamalla näitä ohjeita.
+
+1. Siirry kohtaan **Varaston hallinta \> Asetukset \> Dimensiot \> Seurantanumeroryhmät**.
+1. Luo tai valitse määritettävä seurantanumeroryhmä.
+1. Määritä **Yleinen**-pikavälilehden **Vain varastotransaktioille** -asetukseksi **Ei**.
+1. Määritä kohdan **Manuaalinen** asetukseksi **Ei**.
+
+    ![Kiinteiden sarjanumeroiden seurantanumeroryhmä](media/tracking-number-group-fixed-sn.png "Kiinteiden sarjanumeroiden seurantanumeroryhmä")
+
+1. Määritä muut arvot tarpeen mukaan ja valitse sitten tämä seurantanumeroryhmä vapautettujen tuotteiden sarjanumeroksi, jota varten haluat käyttää tätä skenaariota.
+
+Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -sivun **Sarjanumero**-kenttä näyttää arvon, mutta työntekijät eivät voi muokata sitä. Tämä skenaario on tarpeellinen vain, jos tuotantotilaus luodaan yhden kappaleen määrälle sarjanumeroseurannassa olevia nimikkeitä.
+
+![Raportin edistymissivu, jossa on kiinteä sarjanumero](media/job-card-device-serial-fixed.png "Raportin edistymissivu, jossa on kiinteät sarjanumerot")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Ilmoita valmistuneeksi rekisterikilpeen
 

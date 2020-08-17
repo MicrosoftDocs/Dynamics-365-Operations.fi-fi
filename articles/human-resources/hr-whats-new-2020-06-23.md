@@ -3,7 +3,7 @@ title: Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (25. kes�
 description: T채ss채 ohjeaiheessa k채sitell채채n Microsoft Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/25/2020
+ms.date: 06/25/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d83268292ac65d62cbe8fa9a4c146bf4af36b50
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: fa02cf10b2b4fe08440d3641472e83dfe58169c9
+ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555024"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3614383"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (23. kes채kuuta 2020)
 

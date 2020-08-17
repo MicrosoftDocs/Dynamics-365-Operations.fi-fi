@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173197"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621325"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -86,7 +86,7 @@ Tässä mallissa tuotetta vastaa kahden Common Data Servicen yksikön yhdistelm�
 Koska tuote ilmaista varastointiyksikkönä, käsitteet erilliset tuotteet, päätuotteet ja tuotevariantit voidaan tallentaa Common Data Serviceen seuraavasti:
 
 - **Tuotteet, joissa on alatyypin tuote** ovat itsensä määrittäviä tuotteita. Dimensioita ei tarvitse määrittää. Tällainen tuote on esimerkiksi tietty kirja. Näille tuotteille luodaan yksi tietue **Tuote**-yksikössä ja yksi tietue **msdyn\_sharedproductdetails**-yksikössä. Tuoteperhetietuetta ei luoda.
-- **Päätuotteita** käytetään yleisinä tuotteina, joissa olevat säännöt ja määritelmä määrittävät liiketoimintaprosessien toiminnan. Näiden määritelmien perusteella voidaan luoda tuotevarianteiksi kutsuttuja erillisiä tuotteita. Esimerkiksi t-paita on päätuote, jonka dimensioita väri ja koko voivat olla. Julkaistavissa varianteissa voi olla erilaisia dimensioyhdistelmiä, kuten s-kokoinen sininen t-paita tai m-kokoinen vihreä t-paita. Integroinnissa tuotetauluun luodaan kullekin variantille yksi tietue. Tämä tietue sisältää varianttikohtaiset tiedot, kuten eri dimensiot. Tuotteen yleiset tiedot tallennetaan **msdyn\_sharedproductdetails**-yksikköön. (Näitä yleisiä tietoja säilytetään päätuotteessa.) Lisäksi kullekin päätuotteelle luodaan lisäksi yksi tuoteperhetietue. Päätuotteen tiedot synkronoidaan Common Data Serviceen heti, kun vapautettu päätuote luodaan (mutta ennen varianttien vapauttamista).
+- **Päätuotteita** käytetään yleisinä tuotteina, joissa olevat säännöt ja määritelmä määrittävät liiketoimintaprosessien toiminnan. Näiden määritelmien perusteella voidaan luoda tuotevarianteiksi kutsuttuja erillisiä tuotteita. Esimerkiksi t-paita on päätuote, jonka dimensioita väri ja koko voivat olla. Julkaistavissa varianteissa voi olla erilaisia dimensioyhdistelmiä, kuten s-kokoinen sininen t-paita tai m-kokoinen vihreä t-paita. Integroinnissa tuotetauluun luodaan kullekin variantille yksi tietue. Tämä tietue sisältää varianttikohtaiset tiedot, kuten eri dimensiot. Tuotteen yleiset tiedot tallennetaan **msdyn\_sharedproductdetails**-yksikköön. (Nämä yleiset tiedot on tallennettu päätuotteeseen.) Päätuotteen tiedot synkronoidaan Common Data Serviceen heti, kun vapautettu päätuote luodaan (mutta ennen varianttien vapauttamista).
 - **Erillisillä tuotteilla** tarkoitetaan kaikkia tuotteiden alatyypin tuotteita ja kaikkia tuotevariantteja. 
 
 ![Tuotteiden tietomalli](media/dual-write-product.png)

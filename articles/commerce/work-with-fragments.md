@@ -3,7 +3,7 @@ title: Katkelmien käyttäminen
 description: Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124356"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645988"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
@@ -62,9 +62,10 @@ Voit luoda uuden osan tai tallentaa olemassa olevan osan määrityksen osana.
 Voit muuntaa aiemmin määritetyn moduulin uudelleenkäytettäväksi osaksi seuraavasti.
 
 1. Avaa sivu tai malli, joka sisältää osaksi muunnettavan moduulin.
-1. Valitse vasemmalla olevasta jäsennysruudusta painike, jossa on kolme pistettä (**...**) moduulin nimen vieressä. 
-1. Valitse **Jaa fragmenttina**. 
-1. Näyttöön tulee valintaikkuna. Anna osan nimi ja metatiedot.
+1. Valitse vasemmalla olevassa jäsennysruudussa aiemmin määritetty moduuli tai valitse se suoraan pääalustassa.
+1. Valitse kolme pistettä (**...**) moduulin nimen vierestä joko jäsennysruudusta tai valitun moduulin työkaluriviltä alustassa. 
+1. Valitse **Jaa sivun osana**. 
+1. Anna **Tallenna sivun osana** -valintaikkunassa osan nimi.
 1. Valitse **OK**, jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
 
 Seuraavassa kuvassa näkyy, miten moduulin konfiguraatio tallennetaan fragmenttina.
@@ -94,15 +95,16 @@ Seuraavissa ohjeissa kuvataan, miten osia lisätään, poistetaan ja muokataan.
 
 Voit lisätä osan sivulle seuraavasti.
 
-1. Valitse vasemmalla olevasta jäsennysruudusta säilö tai paikka, johon alimoduulit voidaan lisätä.
-1. Valitse säilön tai paikan vieressä oleva kolmen pisteen painike ja valitse sitten **Lisää osa**. Näyttöön tulee valintaikkuna.
+1. Valitse vasemmalla olevasta jäsennysruudusta tai suoraan pääalustalla säilö tai paikka, johon alimoduulit voidaan lisätä.
+1. Valitse online-ruudussa kolme pistettä (**...**) säilön tai paikan nimen vieressä.  Vaihtoehtoisesti voit valita plusmerkin (**+**), jos käytössä on pääalusta.  
+1. Valitse **Lisää osa**.
 
     ![Näyttökaappaus siitä, miten olemassa oleva fragmentti lisätään paikkaan tai säilöön](./media/add-fragment.png)
  
     > [!NOTE]
     > Jos säilö tai paikka ei tue uusia alimoduuleja, **Lisää osa** -vaihtoehto ei ole käytettävissä.
     
-1. Hae valintaikkunassa lisättävä osa ja valitse se. Jos käytettävissä olevia osia ei ole näkyvissä, sinun on ehkä ensin luotava osa moduulityypistä, jota valittu säilö tai paikka tukee.
+1. Hae **Lisää osa** -valintaikkunassa lisättävä osa ja valitse se. Jos käytettävissä olevia osia ei ole näkyvissä, sinun on ehkä ensin luotava osa moduulityypistä, jota valittu säilö tai paikka tukee.
 1. Valitse haluamasi fragmentti lisätäksesi sen sivullasi olevaan säilöön tai paikkaan.
 
     ![Näyttökaappaus fragmenttivalitsimen modaalisesta ikkunasta](./media/fragment-picker.png)
@@ -114,7 +116,7 @@ Voit lisätä osan sivulle seuraavasti.
 
 Voit poistaa sivun osan paikasta tai säilöstä seuraavasti.
 
-1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan osan nimen vieressä oleva kolmen pisteen painike ja valitse sitten roskakoripainike.
+1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan osan nimen vieressä oleva kolmen pisteen painike (**...**) ja valitse sitten roskakorisymboli.  Vaihtoehtoisesti voit valita osan alustassa ja valita roskakorisymbolin osan työkalurivillä.
 1. Kun sinua pyydetään vahvistamaan osan poistaminen, valitse **OK**.
 
 > [!NOTE]

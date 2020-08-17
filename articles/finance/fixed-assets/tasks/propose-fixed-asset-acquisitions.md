@@ -3,7 +3,7 @@ title: Ehdota käyttöomaisuuden hankintaa
 description: Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla.
 author: saraschi2
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 07/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e08177aad2db2438c2d5d4ddd294c1056b88167c
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142728"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628882"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Ehdota käyttöomaisuuden hankintaa
 
 [!include [banner](../../includes/banner.md)]
 
-Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
+Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja. Jos aiot hankkia käyttöomaisuuden käyttöomaisuuden ehdotuskirjauskansion avulla, ensin on luotava käyttöomaisuustietue ja sitten määritettävä hankintahinta käyttöomaisuuskirjassa.
 
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Käyttöomaisuuserät > Kirjauskansioviennit > Käyttöomaisuuden kirjauskansio**.
 2. Valitse **Uusi**.
@@ -43,4 +43,3 @@ Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirja
 - Hankintaehdotukseen sisällytetään vain se käyttöomaisuuserä, jonka hankintapäivämäärä ja -hinta on määritetty kirjassa.  
 11. Valitse sivulla **Kirjat**-välilehti.
 12. Valitse **Kirjaa**.
-

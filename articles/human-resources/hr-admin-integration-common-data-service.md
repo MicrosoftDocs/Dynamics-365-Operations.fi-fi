@@ -3,7 +3,7 @@ title: Määritä Common Data Service -integraatio
 description: Voit ottaa integroinnin Common Data Servicen ja Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431311"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621301"
 ---
 # <a name="configure-common-data-service-integration"></a>Määritä Common Data Service -integraatio
 
@@ -66,6 +66,9 @@ Integrointi voi kannattaa poistaa käytöstä seuraavissa tilanteissa:
 - Voit poistaa integroinnin käytöstä määrittämällä asetukseksi **Ei**.
 
 [![Common Data Service -integroinnin käyttöönotto tai käytöstä poisto](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> On suositeltavaa, että Common Data Service -integrointi poistetaan käytöstä, kun tiedonsiirtotehtäviä suoritetaan. Suurten tietomäärien lataaminen voi vaikuttaa suorituskykyyn paljon. Esimerkiksi 2 000 työntekijän tietojen lataaminen voi kestää useita tunteja, jos integrointi on käytössä. Jos se ei ole käytössä, aikaa voi kulua alle tunti. Tässä esimerkissä annetut numerot ovat vain esittelytarkoituksia varten. Tietojen tuomiseen kuluvat tarkka aikamäärä voi vaihdella paljon. Se riippuu useista tekijöistä.
 
 ## <a name="view-data-integration-details"></a>Integrointitietojen tarkastelu
 

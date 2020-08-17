@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606819"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651663"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -38,8 +38,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.13
 
 > [!NOTE]
-> Versiota 10.0.13 ei ole vielä julkaistu. Nämä tiedot on annettu suunnittelua varten. Version 10.0.13 sisältö ja toiminnot voivat muuttua. Lisätietoja versioista on kohdassa [Palvelupäivitysten saatavuus](../../fin-ops/get-started/public-preview-releases.md).
-
+> Versio 10.0.13 on esikatseluversio. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Kolmen jQuery-osakirjaston päivitys 
 
@@ -50,6 +49,27 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Tuotealueet, joihin vaikutetaan**         | Laajennettavat ohjausobjektit, etenkin vanhentuneita tai poistettuja ohjelmointirajapintoja käyttävä mukautettu JavaScript-koodi |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Versiossa 10.0.13 / Platform update 37:ssä asiakkailla on mahdollisuus siirtyä uusimpiin kirjastoihin ottamalla Kolmen jQuery-osakirjaston päivitys -toiminto käyttöön. Uusiin kirjastoihin siirtyminen tulee pakolliseksi huhtikuun 2021 -version myötä, jotta kyseisten ohjelmointirajapintojen siirtoon jää aikaa.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>Olemassa oleva ruudukon ohjausobjekti / forceLegacyGrid()-ohjelmistorajapinta
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Uusi ruudukon ohjausobjekti korvaa aiemmin luodun ruudukon ohjausobjektin. |
+| **Onko toinen ominaisuus korvannut?**   | [Uusi ruudukon ohjausobjekti](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Versiossa 10.0.13 uusi ruudukon ohjausobjekti on yleisesti saatavilla. Asiakkaat voivat halutessaan ottaa ominaisuuden käyttöön. Uusi ruudukon ohjausobjekti on pakollinen lokakuun 2021 julkaisussa. Kun uusi ruudukon ohjausobjekti on pakollinen, **forceLegacyGrid()**-ohjelmointirajapintaa ei enää käytetä. |
+
+### <a name="personalization-without-saved-views"></a>Mukauttaminen ilman tallennettuja näkymiä 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Mukautuksen alijärjestelmä on uudistettu. Se sisältää tallennettujen näkymien ominaisuuden, joten suorituskyky on parempi ja se sisältää uusia ominaisuuksia. |
+| **Onko toinen ominaisuus korvannut?**   | Tallennetut näkymät |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Versiossa 10.0.13 / Platform update 37 tallennettujen näkymien ominaisuus on yleisesti käytettävissä. Asiakkaat voivat halutessaan ottaa tämän ominaisuuden käyttöön. Tallennettujen näkymien ominaisuus on pakollinen lokakuun 2021 julkaisussa. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.12
 

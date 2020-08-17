@@ -3,7 +3,7 @@ title: Myyntipisteen saapuva varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen saapuva varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551598"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627535"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551598"
 Microsoft Dynamics 365 Commercen versiossa 10.0.10 ja myöhemmissä versioissa myyntipisteen saapuvat ja lähtevät toiminnot korvaavat keräys- ja vastaanottotoiminnon.
 
 > [!NOTE]
-> Versiossa 10.0.10 ja myöhemmissä versioissa kaikki myyntipistesovelluksen uudet myymälän varaston vastaanoton ja osto- ja siirtotilausten ominaisuudet lisätään **saapuva toiminnon** myyntipistetoimintoon. Jos käytät tällä hetkellä myyntipisteen keräily- ja vastaanottotoimintoa, on suositeltavaa kehittää strategia, jonka avulla siirrytään kyseisen toiminnon käyttämisestä uuden saapuvien ja lähtevien toimintojen käyttämiseen. Vaikka keräily- ja vastaanottotoimintoa ei poisteta tuotteesta, sitä ei enää kehitetä toiminnallisesti eikä suorituskyvyn osalta version 10.0.9 jälkeen.
+> Commercen versiossa 10.0.10 ja myöhemmissä versioissa kaikki myyntipistesovelluksen uudet myymälän varaston vastaanoton ja osto- ja siirtotilausten ominaisuudet lisätään **saapuva toiminnon** myyntipistetoimintoon. Jos käytät tällä hetkellä myyntipisteen keräily- ja vastaanottotoimintoa, on suositeltavaa kehittää strategia, jonka avulla siirrytään kyseisen toiminnon käyttämisestä uuden saapuvien ja lähtevien toimintojen käyttämiseen. Vaikka keräily- ja vastaanottotoimintoa ei poisteta tuotteesta, sitä ei enää kehitetä toiminnallisesti eikä suorituskyvyn osalta version 10.0.9 jälkeen.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Edellytys: Asynkronisen asiakirjakehyksen määrittäminen
 
@@ -153,6 +153,20 @@ Käytä **Peruuta vastaanotto** -toiminto sovelluspalkissa vain, jos haluat peru
 Jos olet vastaanottamassa varastoa, voit käyttää **Keskeytä vastaanotto** -toimintoa ja keskeyttää vastaanottoprosessin. Voit esimerkiksi haluta suorittaa myyntipisteessä toisen toiminnon, kuten soittaa asiakasmyyntiin, tai tehdä vastaanoton kirjauksen myöhemmin.
 
 Kun valitset **Keskeytä vastaanotto** -vaihtoehdon, asiakirjan tilaksi muutetaan **Keskeytetty**. Näin käyttäjät tietävät, mitä tietoja asiakirjaan on syötetty ja että asiakirjaa ei ole vielä vahvistettu. Kun olet valmis jatkamaan vastaanottoprosessia, valitse keskeytetty asiakirja ja valitse sitten **Tilauksen tiedot**. Kaikki aiemmin tallennetut **Vastaanotto nyt** -määrät säilytetään. Ne näkyvät **Täydellinen tilausluettelo** -näkymässä.
+
+### <a name="review"></a>Tarkista
+
+Ennen lopullista sitoutumista Commercen pääkonttorisovellukseen vastaanotosta, voit käyttää Tarkista-toimintoa ja vahvistaa saapuvan asiakirjan. Tarkistustoiminto kertoo mahdollisista puuttuvista tai virheellisistä tiedoista, jotka saattavat aiheuttaa käsittelyvirheen, sekä antaa mahdollisuuden korjata ongelmia ennen vastaanottopyynnön lähettämistä. Jos haluat ottaa käyttöön **Tarkista**-toiminnon sovelluspalkissa, ota käyttöön **Ota käyttöön vahvistus myyntipisteen saapuvissa ja lähtevissä varastotoiminnoissa** -ominaisuus **Ominaisuuksien hallinta** -työtilassa Commercen pääkonttorisovelluksessa.
+
+**Tarkista**-toiminto vahvistaa seuraavat ongelmat saapuvassa asiakirjassa:
+
+- **Ylivastaanotto** - vastaanoton määrä on suurempi kuin tilattu määrä. Commercen pääkonttorisovelluksen ylitoimituksen määritys määrittää tämän ongelman vakavuuden.
+- **Elivastaanotto** - vastaanoton määrä on pienempi kuin tilattu määrä. Commercen pääkonttorisovelluksen alitoimituksen määritys määrittää tämän ongelman vakavuuden.
+- **Sarjanumero** – sarjanumeroa ei ole annettu tai sitä ei ole vahvistettu sarjoitetulle nimikkeelle, joka vaatii sarjanumeron rekisteröimisen varastossa.
+- **Sijaintia ei ole määritetty** – sijaintia ei ole määritetty sijaintiohjatulle nimikkeelle, jossa sijainti ei saa olla tyhjä.
+- **Poistetut rivit** – Commercen pääkonttorisovelluksen käyttäjä, joka myyntipistesovellus ei tunne, on poistanut tilauksen rivejä.
+
+Määritä **Ota käyttöön automaattinen vahvistus** -parametrin arvoksi **Kyllä** kohdassa **Commerce-parametrit** > **Varasto** > **Myymälän varasto**, jos haluat, että vahvistus tehdään automaattisesti, kun **Lopeta vastaanotto** on valittuna.
 
 ### <a name="finish-receiving"></a>Viimeistele vastaanotto
 

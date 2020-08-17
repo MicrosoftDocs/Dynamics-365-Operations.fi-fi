@@ -3,7 +3,7 @@ title: Luotonhallinnan parametrien määrittäminen
 description: Tässä ohjeaiheessa käsitellään asetuksia, joilla luotonhallinta voidaan määrittää vastaamaan yrityksen tarpeita.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154525"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651902"
 ---
 # <a name="credit-management-parameters-setup"></a>Luotonhallinnan parametrien määrittäminen
 
@@ -34,7 +34,7 @@ Luotonhallintaa ohjaavia parametreja voi muuttaa **Luotto**-osan neljässä pika
 
 ### <a name="credit-holds"></a>Luoton pidot
 
-- Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Kyllä**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on muuttunut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta. .
+- Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Ei**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on noussut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta. .
 - Valitse **Peruutettujen tilausten syyt** -kentässä vapautuksen syy, jotka käytetään oletusarvoisesti, kun luotonhallinnan pidossa ollut myyntitilaus peruutettiin.
 - Jos **Tarkista asiakkaan luottoryhmän luottoraja** -asetuksena on **Kyllä**, asiakkaan luottoryhmän luottoraja tarkistetaan, kun myyntitilauksen asiakas kuuluu asiakkaan luottoryhmään. Ryhmän luottoraja tarkistetaan, minkä jälkeen tarkistetaan asiakkaan luottoraja, jos ryhmän luottoraja on riittävä.
 - Jos **Tarkista luottoraja, kun maksuehtoja suurennetaan** -asetuksena on **Kyllä**, maksuehtojen sijoitus tarkistetaan ja sen perusteella määritetään, onko asiakkaan oletusmaksuehdoissa eroja. Jos uusien maksuehtojen sijoitus on korkeampi kuin alkuperäisten maksuehtojen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.

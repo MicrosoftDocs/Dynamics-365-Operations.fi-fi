@@ -3,7 +3,7 @@ title: Kassavirtaennusteet
 description: Tässä ohjeaiheessa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188415"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653773"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
@@ -104,6 +104,13 @@ Laske kassavirtaennuste **Laske kassavirtaennusteet** -sivulla. Voit laskea koko
 
 Voit käyttää kassavirtaennusteen laatimiseen myös eräkäsittelyä. Voit varmistaa, että ennusteanalytiikka päivitetään säännöllisesti määrittämällä kassavirtaennusteen laskennalle toistuvan eräkäsittelyn.
 
+Versiossa 10.0.13 vapautettiin laskentaprosessin parannus. Se käyttää prosessin automatisoinnin kehystä ja ajoittaa kassavirran laskentatyön. Tämä otetaan käyttöön **Kassavirran ennusteen automatisointi** -ominaisuuden avulla **Ominaisuuksien hallinta** -työtilassa. Kun tämä on käytössä, valitse **Kassavirran ennusteen automatisointi** -linkki, jos haluat näyttää uuden automatisointisivun. Sivulla voi ajoittaa kassavirran laskentaprosessin. Voit luoda uuden kassavirran ennusteajoituksen valitsemalla **Luo uusi prosessin automatisointi** ja valitse sitten **Kassavirran ennusteen automatisointi** avattavasta **Ajoituksen tyyppi** -valikosta. Määritä aikataulu jokaiselle yritykselle, jonka kassavirran ennustetiedot päivitetään.  Tällä sivulla määritetään myös, mitkä kassavirran ennusteen automatisoinnin työt odottavat ja milloin edellinen työ on tehty valmiiksi.  
+
+> [!NOTE] 
+> Jos aiemmin luodut erätyöt on jo ajoitettu kassavirran ennusteisiin, näyttöön tulee virhesanoma, etkä voi ottaa tätä ominaisuutta käyttöön. Aiemmin luodut erätyöt on tyhjennettävä, ennen kuin voit ottaa tämän ominaisuuden käyttöön. 
+
+Lisätietoja on kohdassa [Prosessin automatisointi](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
 ### <a name="reporting"></a>Raportointi
 
 Analyyttinen raportointi edellyttää, että liitetyt yksikkötiedot on päivitettävä kassavirtaennusteen laskemisen jälkeen. Valitse **Yksikkösäilö**-säilö sivulla **LedgerCovLiquidityMeasurement-kooste**-mitta ja valitse sitten **Päivitä**.
@@ -128,7 +135,7 @@ Nykyisen yrityksen työntilan käyttöä hallitaan **Näytä kassavirta – nyky
 
 **Kassayhteenveto – nykyinen yrityksen** työtilassa kassavirtaennusteen analytiikka näkyy yrityksen määrittämänä kirjanpitovaluuttana. Analytiikassa käytettävä kirjanpitovaluutta määritetään **Kirjanpito**-sivulla. Työtilassa on nykyisen yrityksen kassavirtaennusteiden ja pankkitilin saldojen yhteenveto. Tilikartan saapuvat ja lähtevät kassavirrat on yhteenveto käteisvarojen tulevista siirroista ja saldoista kirjanpitovaluuttana. Siinä on myös tarkkoja tietoja ennakoiduista tapahtumista. Näkyvissä on myös valuuttasaldojen ennuste.
 
-Lisätietoja kassavirtaennusteiden analytiikasta on ohjeaiheessa Kassayhteenveto – Power BI -sisältö.
+Lisätietoja kassavirtaennusteiden analytiikasta on kohdassa [Käteisvarojen yleiskatsaus - Power BI -sisältö](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
 
 Voit tarkastella myös tiettyjen tilien, tilausten ja nimikkeiden kassavirtaennustetietoja seuraavilla sivuilla:
 

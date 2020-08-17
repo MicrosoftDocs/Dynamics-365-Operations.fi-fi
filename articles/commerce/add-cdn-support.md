@@ -3,7 +3,7 @@ title: Sisältöverkon (CDN) tuen lisääminen
 description: Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533341"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646036"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisältöverkon (CDN) tuen lisääminen
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft
 
 Kun määrität Dynamics 365 Commerce -sovelluksessa sähköisen kaupankäynnin ympäristön, voit määrittää sen käyttämään CDN-palvelua. 
 
-Mukautettu toimialue voi olla käytössä sähköisen kaupankäynnin ympäristön valmisteluprosessin aikana. Vaihtoehtoisesti voit käyttää palvelupyyntöä määrittämiseen valmisteluprosessin päätyttyä. Sähköisen kaupankäynnin ympäristön valmisteluprosessi luo isäntänimen, joka liittyy ympäristöön. Tällä isäntänimellä on seuraava muoto, jossa *e-commerce-tenant-name* on ympäristön nimi.
+Mukautettu toimialue voi olla käytössä sähköisen kaupankäynnin ympäristön valmisteluprosessin aikana. Vaihtoehtoisesti voit käyttää palvelupyyntöä määrittämiseen valmisteluprosessin päätyttyä. Sähköisen kaupankäynnin ympäristön valmisteluprosessi luo isäntänimen, joka liittyy ympäristöön. Tällä isäntänimellä on seuraava muoto, jossa \<*e-commerce-tenant-name*\> on ympäristön nimi.
 
 &lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
@@ -74,18 +74,20 @@ Mitä tahansa CDN-palvelua voi käyttää. Tämän ohjeaiheen esimerkissä käyt
 
 Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Pika-aloitus: Luo Front Door erittäin käytettävissä olevalle yleiselle verkkosovellukselle](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Azure Front Door Service -palvelun taustapooli
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Azure Front Door Service -palvelun taustapooli
 
 Voit määrittää Azure Front Door Service -palvelun taustapoolin seuraavasti.
 
 1. Lisää **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** taustapooliin mukautettuna isäntänä, jolla on tyhjä taustan isännän otsikko.
-1. Syötä **Kuntotutkimukset**-kohdan **Polku**-kenttään **/keepalive**.
-1. Kirjoita **Aikavälit (sekunteina)** -kenttään **255**.
 1. Jätä **Kuormituksen tasaus** -kohtaan oletusarvot.
 
-Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa.
+Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa sekä annettu taustan isäntänimi.
 
 ![Taustapooli-valintaikkunan lisääminen](./media/CDN_BackendPool.png)
+
+Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa sekä kuormituksen tasauksen oletusarvot.
+
+![Taustapooli-valintaikkunan lisääminen, jatkuu](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Sääntöjen määrittäminen Azure Front Door Service -palvelussa
 
@@ -121,20 +123,22 @@ Seuraavassa kuvassa näkyy **Lisää sääntö** -valintaikkuna Azure Front Door
 
 ![Lisää sääntö -valintaikkuna](./media/CDN_CachingRule.png)
 
-Kun tämä ensimmäinen määritys on otettu käyttöön, lisää mukautettu toimialue Azure Front Door Service -palvelun määritykseen. Jos haluat lisätä mukautetun toimialueen (esimerkiksi `www.fabrikam.com`), määritä toimialueelle kanoninen nimi (CNAME).
+> [!WARNING]
+> Jos käytettävä toimialue on jo aktiivinen ja julkaistu, luo tukipalvelupyyntö **Tuki**-ruudussa [Microsoft Dynamics Lifecycle Services -sovelluksessa](https://lcs.dynamics.com/). Näin saat apua seuraavissa vaiheissa. Lisätietoja on kohdassa [Tuen pyytäminen Finance and Operations -sovelluksia tai Lifecycle Services (LCS) -sovellusta varten](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+Jos toimialueesi on uusi, eikä se ole aiemmin määritetty julkaistu toimialue, voit lisätä mukautetun toimialueen määritykseen Azure Front Door Service -palvelussa. Tämän jälkeen verkkoliikenne voi ohjata sivuston Azure Front Door -ilmentymän kautta. Jos haluat lisätä mukautetun toimialueen (esimerkiksi `www.fabrikam.com`), määritä toimialueelle kanoninen nimi (CNAME).
 
 Seuraavassa kuvassa näkyy **CNAME-määritys**-valintaikkuna Azure Front Door Service -palvelussa.
 
 ![CNAME-määritys-valintaikkuna](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Jos käyttämäsi toimialue on jo aktiivinen ja julkaistu, ota yhteyttä tukeen, jotta tämä toimialue otetaan käyttöön Azure Front Door Service -palvelun kanssa testin määrittämistä varten.
 
 Voit käyttää Azure Front Door Service -palvelua varmenteen hallinnassa tai voit käyttää omaa varmennetta mukautetussa toimialueessa.
 
 Seuraavassa kuvassa näkyy **Mukautetun toimialueen HTTPS**-valintaikkuna Azure Front Door Service -palvelussa.
 
 ![Mukautetun toimialueen HTTPS -valintaikkuna](./media/Custom_Domain_HTTPS.png)
+
+Lisätietoja mukautetun toimialueen lisäämisestä Azure Front Door -palveluun on kohdassa [Mukautetun toimialueen lisääminen Front Door -palveluun](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-sivuston kanssa.
 
