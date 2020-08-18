@@ -3,7 +3,7 @@ title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 description: Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations -sovelluksesta ja tuotteen aiemmista versioista.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500409"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645386"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -62,7 +62,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan**         | Hakemus |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Kehittäjien on käytettävä uutta ohjelmointirajapintaa 1.4.2020 mennessä. |
+| **Tila**                         | Vanhentunut: 1. huhtikuuta 2020 mennessä kehittäjien on käytettävä luokasta **HasFunction** löytyneitä ympäristön ohjelmistorajapintoja. |
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(merkkijonoviesti)
 
@@ -72,7 +72,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan**         | Ympäristö |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Kehittäjien on käytettävä uutta ohjelmointirajapintaa 1.4.2020 mennessä. |
+| **Tila**                         | Vanhentunut: 1. huhtikuuta 2020 mennessä kehittäjien on käytettävä luokasta **HasFunction** löytyneitä ympäristön ohjelmistorajapintoja. |
 
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()

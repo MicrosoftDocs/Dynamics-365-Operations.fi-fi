@@ -3,7 +3,7 @@ title: Monikanavaisten maksujen yleiskatsaus
 description: Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commerceissa.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022452"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613174"
 ---
 # <a name="omni-channel-payments-overview"></a>Omnikanavan maksujen yleiskatsaus
 
@@ -68,11 +68,13 @@ Seuraavat komponentit ja asetusvaiheet ovat pakollisia:
 
 - **eCommerce-integrointi**: Kauppaintegroinnin on tuettava tilanteita, joissa tilauksen lähtöpaikka on online-myymälä. Lisätietoja Retail e-Commerce SDK:sta on kohdassa [Sähköisen kaupankäynnin Platform Software Development Kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). Demo-ympäristössä viitemyymälä tukee Omni-Channel-maksuskenaarioita. 
 - **Online-maksun määritys**: Online-kanavan asetusten on sisällettävä maksuyhteys, joka on päivitetty tukemaan Omni-Channel-maksuja. Vaihtoehtoisesti voidaan käyttää käyttövalmista maksuyhdistintä. Lisätietoja Adyen-maksuyhdistimestä verkkokauppojen konfiguroinnissa on kohdassa [Adyen-maksuyhdistin](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Tässä ohjeaiheessa kuvattujen verkkokaupan määritysvaiheiden lisäksi **Salli säästö tiedot e-Commerce** -parametrin asetuksen arvoksi on määritettävä **Tosi** Adyen-liittimen asetuksissa. 
-- **Omni-Channel-maksujen konfiguraatio**: Siirry taustajärjestelmäsovelluksessa kohtaan **Vähittäismyynti ja kauppa \> Headquarters-sovelluksen asetus \> Parametrit \> Kaupan jaetut parametrit**. Aseta sitten **Omni-Channel-maksujen** -välilehdessä **Käytä Omni-Channel-maksuja** -asetukseksi **Kyllä**.
+- **Omni-Channel-maksujen konfiguraatio**: Siirry taustajärjestelmäsovelluksessa kohtaan **Vähittäismyynti ja kauppa \> Headquarters-sovelluksen asetus \> Parametrit \> Kaupan jaetut parametrit**. Aseta sitten **Omni-Channel-maksujen** -välilehdessä **Käytä Omni-Channel-maksuja** -asetukseksi **Kyllä**. Commercen versiossa 10.0.12 ja uudemmissa versioissa tämä asetus on **Ominaisuuksien hallinta** -työtilassa. Valitse **Monikanavan maksut** -ominaisuus ja valitse sitten **Ota käyttöön nyt**. 
 - **Maksupalvelut:** Call center käyttää **Maksupalvelut**-sivun oletusmaksuyhdistintä maksujen käsittelemiseen. Jos haluat tukea skenaarioita, kuten Osta call centeristä, poimi myymälästä, tämän oletusmaksuyhdistimen on oltava Adyen-maksuyhdistin tai maksuyhdistin, joka täyttää Omni-Channel-maksuissa käytettävät toteutusvaatimukset.
 - **EFT-palvelu**: Maksupäätteen kautta suoritettavat maksut on määritettävä laitteistoprofiilin **EFT-palvelu**-pikavälilehdessä. Adyen-yhdistin tukee käyttövalmiita Omni-Channel-maksuskenaarioita. Myös muita **iNamedRequestHandler**-maksuyhdistimiä voidaan käyttää, jos ne tukevat Omni-Channel-maksuja.
 - **Maksuyhteyden käytettävyys:** Kun tilaus palautetaan, maksuvälineriveihin, jotka palautetaan yhteen tilauksen kanssa, kuuluu sen maksuyhteyden nimi, jota käytettiin tähän tilaukseen liittyvien lupien luomisessa. Kun tilaus on täytetty, maksun SDK yrittää käyttää samaa yhdistintä, jota käytettiin alkuperäisen valtuutuksen luomisessa. Näin ollen on oltava käytettävissä kaappaamiseen myös sellainen maksuyhdistin, jolla on samat kauppiasominaisuudet. 
 - **Korttityypit:** Jotta Omni-Channel-skenaariot toimivat oikein, kullakin kanavalla on oltava samat maksuvälinetyyppien määritykset, joita voidaan käyttää Omni-kanavalla. Tämä asetus sisältää maksutapatunnukset ja korttityypin tunnukset. Jos esimerkiksi **Kortti**-maksuvälinetyypin tunnus on **2** Internet-kaupan määrityksissä, sen tunnuksen tulee olla sama kuin vähittäiskaupan määrityksissä. Sama vaatimus koskee korttien tyyppitunnuksia. Jos kortin numero **12** arvoksi on asetettu verkkokaupassa **VISA**, sama tunnus on määritettävä vähittäismyymälälle. 
+- Retail Modern POS for Windows tai Android ja sisäänrakennettu laiteasema tai
+- Modern POS for iOS tai Cloud POS ja yhdistetty, jaettu laiteasema. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>Omni-Channel-maksuja tukeva perusperiaate
 
@@ -100,8 +102,10 @@ Seuraavissa osissa kuvataan kunkin skenaarion vaiheet ja näytetään, miten ske
 Varmista ennen alkamista, että seuraavat edellytykset ovat olemassa:
 
 - Sinulla on viitemyymälä, jossa Adyen-yhdistin on määritetty.
-- **Commercen jaetut parametrit** -sivun **Omni-Channel-maksun** vaihtoehdoksi on asetettu **Tosi**.
+- **Commercen jaetut parametrit** -sivun **Omni-Channel-maksun** vaihtoehdoksi on asetettu **Tosi**. Myöhemmissä versioissa tämä asetus siirretään **Ominaisuuksien hallinta** -työtilaan. Siellä voit valita **Monikanavan maksut** -toiminnon ja valita **Ota käyttöön nyt**. 
 - Adyen-maksuyhdistin on määritetty Houston POS -rekisteriin.
+- Retail Modern POS for Windows tai Android ja sisäänrakennettu laiteasema tai
+- Modern POS for iOS tai Cloud POS ja yhdistetty, jaettu laiteasema. 
 
 Noudata seuraavia vaiheita, jos haluat suorittaa skenaarion:
 
@@ -228,4 +232,6 @@ Kun tilaus, jolla on useita tarjouksia ja useita rivejä, on noudettavissa, kass
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 - [Maksut – usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 -maksujen yhdistäjä Adyenia varten](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Dynamics 365 -maksuyhdistin Adyenia varten](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

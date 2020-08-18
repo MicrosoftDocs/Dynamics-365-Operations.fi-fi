@@ -1,9 +1,9 @@
 ---
 title: Joustava varastotason dimensionvarauskäytäntö
 description: Tässä ohjeaiheessa kuvataan varaston varauskäytäntö, joka mahdollistaa eräseurattuja tuotteita myyville ja niiden logistiikan varastonhallintajärjestelmän toiminnoilla toteuttaville yrityksille tiettyjen erien varaamisen asiakkaiden myyntitilauksille, vaikka tuotteiden varaushierarkia ei salli tiettyjen erien varausta.
-author: omulvad
+author: perlynne
 manager: tfehr
-ms.date: 02/07/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,25 +13,29 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: perlynne
 ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530302"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652176"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Joustava varastotason dimensionvarauskäytäntö
 
 [!include [banner](../includes/banner.md)]
 
-Kun Erä alla\[sijainti\]-tyyppinen varastonvaraushierarkia yhdistetään tuotteisiin, eräseurattuja tuotteita myyvät ja niiden logistiikan Microsoft Dynamics 365 -varastonhallintajärjestelmävalmiilla (WMS) toiminnoilla toteuttavat yritykset eivät voi varata tiettyjä kyseisten tuotteiden eriä asiakkaiden myyntitilauksille. Tässä ohjeaiheessa kuvataan varastonvarauskäytäntö, jonka avulla nämä yritykset varaavat tiettyjä eriä, vaikka tuotteet on yhdistetty Erä alla\[sijainti\]-varaushierarkiaan.
+Kun Erä alla\[sijainti\]-tyyppinen varastonvaraushierarkia yhdistetään tuotteisiin, eräseurattuja tuotteita myyvät ja niiden logistiikan Microsoft Dynamics 365 -varastonhallintajärjestelmävalmiilla (WMS) toiminnoilla toteuttavat yritykset eivät voi varata tiettyjä kyseisten tuotteiden eriä asiakkaiden myyntitilauksille.
+
+Samalla tavalla tiettyjä rekisterikilpiä ei voi varata myyntitilausten tuotteille, kun nämä tuotteet on liitetty oletusvaraushierarkiaan.
+
+Tässä ohjeaiheessa kuvataan varastonvarauskäytäntö, jonka avulla nämä yritykset varaavat tiettyjä eriä tai rekisterikilpiä, vaikka tuotteet on yhdistetty Erä alla\[sijainti\]-varaushierarkiaan.
 
 ## <a name="inventory-reservation-hierarchy"></a>Varastovaraushierarkia
 
-Tässä osassa on yhteenveto olemassa olevasta varastonvaraushierarkiasta. Se keskittyy tapaan, jolla erä- ja sarjaseurattuja kohteita käsitellään.
+Tässä osassa on yhteenveto olemassa olevasta varastonvaraushierarkiasta.
 
 Varastonvaraushierarkia määrää, että varastodimensioiden osalta kysyntätilaus sisältää pakolliset dimensiot toimipaikka, varasto ja varastotila. Varastologiikka taas vastaa sijainnin osoittamisesta pyydetyille määrille ja kyseisen sijainnin varaamisesta. Toisin sanoen kysyntätilauksen ja varastotoimintojen välisissä vuorovaikutuksissa kysyntätilauksen oletetaan ilmaisevan, mistä tilaus on lähetettävä (eli mistä toimipaikasta ja varastosta). Tämän jälkeen varasto tukeutuu logiikkaan löytääkseen vaaditun määrän varastotilasta.
 
@@ -64,7 +68,7 @@ Kun hierarkian **Eränumero**-taso on valittuna, kaikki kyseisen tason yläpuole
 > [!NOTE]
 > **Salli varaus kysyntätilauksessa** -valintaruutu pätee vain varaushierarkiatasoille, jotka ovat varastosijainnin dimension alapuolella.
 >
-> **Eränumero** on hierarkian ainoa taso, johon joustavaa varauskäytäntöä voi soveltaa. Toisin sanoen et voi valita **Salli varaus kysyntätilauksessa** -valintaruutua tasoille **Sijainti**, **Rekisterikilpi** tai **Sarjanumero**.
+> **Eränumero** ja **rekisterikilpi** ovat hierarkian ainoat tasot, joihin joustavaa varauskäytäntöä voi soveltaa. Toisin sanoen et voi valita **Salli varaus kysyntätilauksessa** -valintaruutua **Sijainti**- tai **Sarjanumero**-tasolle.
 >
 > Jos varaushierarkia sisältää sarjanumerodimension (jonka on aina oltava **Eränumero**-tason alapuolella) ja jos olet ottanut eräkohtaisen varauksen käyttöön eränumerolle, järjestelmä jatkaa sarjanumeroiden varaus- ja keräilytoimintojen käsittelyä niiden sääntöjen perusteella, jotka pätevät Sarja alla\[sijainti\] -varauskäytäntöön.
 
@@ -90,11 +94,11 @@ Seuraavat säännöt ovat voimassa, kun käsitellään määriä ja tietylle til
 
 Seuraavassa esimerkissä työnkulku näkyy kokonaisuudessaan.
 
-## <a name="example-scenario"></a>Esimerkkiskenaario
+## <a name="example-scenario-batch-number-allocation"></a>Esimerkkiskenaario: Eränumeron kohdistus
 
 Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on käytettävä esittelytietojen **USMF**-yritystä.
 
-### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a>Varastonvaraushierarkian määrittäminen sallimaan eräkohtainen varaus
+### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Varastonvaraushierarkian määrittäminen sallimaan eräkohtainen varaus
 
 1. Siirry kohtaan **Varastonhallinta** \> **Määritys** \> **Varasto \> Varaushierarkia**.
 2. Valitse **Uusi**.
@@ -122,7 +126,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
-### <a name="enter-sales-order-details"></a>Syötä myyntitilaustiedot
+### <a name="enter-sales-order-details"></a><a name="sales-order-details"></a>Syötä myyntitilaustiedot
 
 1. Siirry kohtaan **Myynti ja markkinointi** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**.
 2. Valitse **Uusi**.
@@ -186,6 +190,176 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
 
     Eränumeroa **B11** on nyt kerätty määrä **10** myyntitilausriviä varten ja siirretty sijaintiin **Lastauspaikan ovi**. Tässä vaiheessa se on valmis lastattavaksi kuorma-autoon ja lähetettäväksi asiakkaan osoitteeseen.
 
+## <a name="flexible-license-plate-reservation"></a>Joustava rekisterikilven varaus
+
+### <a name="business-scenario"></a>Liiketoimintaskenaario
+
+Tässä skenaariossa yritys käyttää varastonhallintaa ja töiden käsittelyä ja käsittelee kuormituksen suunnittelun yksittäisten kuormalavojen/konttien tasolla Supply Chain Management -sovelluksen ulkopuolella ennen työn luomista. Rekisterikilvet edustavat näitä kontteja varastodimensioissa. Tämän vuoksi tietyt rekisterikilvet on määritettävä ennalta myyntitilausriveille ennen keräilytyön tekemistä. Yritys toivoo joustavuutta rekisterikilpien varaussääntöjen käsittelyssä, jotta seuraava toiminta olisi mahdollista:
+
+- Rekisterikilpi voidaan kirjata ja varata, kun myynninkäsittelijä vastaanottaa tarjouksen, eikä sitä voi osoittaa muille kysynnöille. Tämä auttaa takaamaan, että suunniteltu rekisterikilpi toimitetaan asiakkaalle.
+- Jos rekisterikilpeä ei ole vielä määritetty myyntitilausriville, varaston henkilöstö voi valita rekisterikilven keräilyn aikana, kun myyntitilauksen rekisteröinti ja varaus on tehty.
+
+### <a name="turn-on-flexible-license-plate-reservation"></a>Joustavan rekisterikilven varauksen ottaminen käyttöön
+
+Ennen kuin voit käyttää joustavaa rekisterikilpien varausta, kaksi ominaisuutta on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat tarkistaa näiden toimintojen tilan ja ottaa ne tarvittaessa käyttöön [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksissa. Ominaisuudet on otettava käyttöön seuraavassa järjestyksessä:
+
+1. **Ominaisuuden nimi:** *Joustava varastotason dimensioiden varauskäytäntö*
+1. **Ominaisuuden nimi:** *Joustava tilaussidonnainen rekisterikilven varaus*
+
+### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Tietyn rekisterikilven varaus myyntitilauksessa
+
+Jos haluat ottaa käyttöön rekisterikilven varauksen tilauksessa, valitse **Salli varaus kysyntätilauksessa** -valintaruutu **Rekisterikilpi**-tasolla **Varaston varaushierarkiat** -sivulla hierarkialle, joka on liitetty tiettyyn nimikkeeseen.
+
+![Joustavan rekisterikilven varaushierarkian Varaston varaushierarkiat -sivu](media/Flexible-LP-reservation-hierarchy.png)
+
+Voit ottaa rekisterikilven varauksen käyttöön tilauksessa missä tahansa käyttöönoton vaiheessa. Tämä muutos ei vaikuta varauksiin tai avoimiin varastotöihin, jotka on luotu ennen muutosta. **Salli varaus kysyntätilauksessa** -valintaruutua ei kuitenkaan voi tyhjentää, jos avointen lähtevien varastotapahtumien varasto-ottotyyppi on *Tilauksessa*, *Varattu tilattu* tai *Varattu fyysinen* on olemassa vähintään yhteen kyseessä olevaan varaushierarkiaan liittyvän nimikkeen osalta.
+
+Vaikka **Salli varaus kysyntätilauksessa** -valintaruutu olisi valittu **Rekisterikilpi**-tasolla, tilauksen tietyn rekisterikilven varaaminen *ei* silti ole mahdollista. Tässä tapauksessa käytetään varaushierarkian oletusvarastotoimintojen logiikkaa.
+
+Jos haluat varata tietyn rekisterikilven, sinun on käytettävä [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) -protokollaa. Sovelluksessa tämä varaus tehdään suoraan myyntitilauksesta käyttämällä **Tilaussidonnaisia varauksia rekisterikilpeä kohti** -asetusta **Avaa Excelissä** -komennolla. Excel-lisäosassa avattaviin entiteettitietoihin on annettava seuraavat varaukseen liittyvät tiedot ja valittava sitten **Julkaise**, jotta tiedot lähetetään takaisin Supply Chain Management -sovellukseen:
+
+- Viite (vain *Myyntitilaus*-arvoa tuetaan).
+- Tilausnumero (arvo voidaan johtaa erästä).
+- Erätunnus
+- Rekisterikilpi
+- Määrä
+
+Jos sinun on varattava tietty eräseuratun nimikkeen rekisterikilpi, käytä **Erän varaus** -sivua, kuten [Anna myyntitilauksen tiedot](#sales-order-details) -osassa on kuvattu.
+
+Kun varaston toiminnot ovat käsitelleet tilaussidonnaista rekisterikilven varausta käyttävän myyntitilausrivin, sijaintidirektiivejä ei käytetä.
+
+Jos varaston työnimike sisältää rivejä, jotka vastaavat kokonaista lavaa ja joilla on rekisterikilpisidonnaisia määriä, voit optimoida keräysprosessin käyttämällä mobiililaitteen valikon vaihtoehtoa, jossa **Käsittele rekisterikilven mukaan** -vaihtoehdon arvoksi on määritetyt *Kyllä*. Varastotyöntekijä voi sitten skannata rekisterikilven ja viimeistellä keräilyn sen sijaan, että työn nimikkeet skannattaisiin yksitellen.
+
+![Mobiililaitteen valikon vaihtoehto, jossa Käsittele rekisterikilven mukaan -asetuksen arvoksi on määritetty Kyllä](media/Handle-by-LP-menu-item.png)
+
+Koska **Käsittele rekisterikilven mukaan** -toiminto ei tue työtä, joka koskee useita lavoja, eri rekisterikilville on paras olla erilliset työnimikkeet. Jos haluat käyttää tätä menetelmää, lisää **Tilaussidonnaisen rekisterikilven tunnus** -kenttää työn otsikon katkaisuna **Työmalli**-sivulla.
+
+## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Esimerkkiskenaario: Tilaussidonnaisen rekisterikilven varauksen määrittäminen ja käsitteleminen
+
+Tässä skenaariossa esitetään, miten tilaussidonnaisen rekisterikilven varaus määritetään ja käsitellään.
+
+### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
+
+Tässä skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Supply Chain Management -sovelluksen vakiodemotietoihin. Jos siis haluat käsitellä tätä skenaariota käyttämällä tässä annettuja arvoja, varmista, että käytät ympäristöä, johon on asennettu esittelytiedot. Sinun on myös määritettävä yritykseksi **USMF**, ennen kuin aloitat.
+
+### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Luo varaston varaushierarkia, joka mahdollistaa rekisterikilven varauksen
+
+1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varasto \> Varaushierarkia**.
+1. Valitse **Uusi**.
+1. Anna nimi **Nimi**-kenttään arvo (esimerkiksi *JoustavaRK*).
+1. Anna kuvaus **Kuvaus**-kenttään arvo (esim. *Joustavan RK:n varaus*).
+1. Valitse **Valittu**-luettelossa **Eränumero**, **Sarjanumero** ja **Omistaja**.
+1. Valitse **Poista**-painike ![taaksepäin osoittava nuoli](media/backward-button.png), jos haluat siirtää valitut tietueet **käytettävissä olevien** luetteloon.
+1. Valitse **OK**.
+1. Valitse **Rekisterikilpi**-dimension tasolla valintaruutu **Salli varaus kysyntätilauksessa**. **Sijainti**-taso valitaan automaattisesti, etkä voi tyhjentää sen valintaruutua.
+1. Valitse **Tallenna**.
+
+### <a name="create-two-released-products"></a>Kahden vapautetun tuotteen luominen
+
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Aseta **Uusi vapautettu tuote** -valintaikkunassa seuraavat arvot:
+
+    - **Tuotenumero:** *Nimike1*
+    - **Nimiketunnus:** *Nimike1*
+    - **Nimikemalliryhmä:** *FIFO*
+    - **Nimikeryhmä:** *Ääni*
+    - **Varastodimensioryhmä:** *Kauppatavara*
+    - **Seurantadimensioryhmä:** *Ei mitään*
+    - **Varaushierarkia:** *JoustavaRK*
+
+1. Valitse **OK** luodaksesi tuotteen. Sulje valintaikkuna.
+1. Uusi tuote avataan. Määritä **Varasto**-pikavälilehden **Yksikön sarjaryhmän tunnus** -kenttään *kpl*.
+1. Toista edelliset vaiheet ja luo toinen tuote, jolla on samat asetukset. Määritä kuitenkin **Tuotenumero**- ja **Nimiketunnus**-kenttien arvoksi *Nimike2*.
+1. Valitse toimintoruudun **Varastonhallinta**-välilehden **Näytä**-ryhmässä **Käytettävissä oleva varasto**. Valitse sitten **Määrän oikaisu**.
+1. Oikaise uusien nimikkeiden käytettävissä olevaa varastoa seuravan taulukon mukaan.
+
+    | Kohde  | Varasto | Toimipaikka | Rekisterikilpi | Määrä |
+    |-------|-----------|----------|---------------|----------|
+    | Nimike1 | 24        | FL-010   | RK01          | 10       |
+    | Nimike1 | 24        | FL-011   | RK02          | 10       |
+    | Nimike2 | 24        | FL-010   | RK01          | 5        |
+    | Nimike2 | 24        | FL-011   | RK02          | 5        |
+
+    > [!NOTE]
+    > Sinun on luotava kaksi rekisterikilpeä ja käytettävä sijainteja, joissa sallitaan yhdistetyt nimikkeet, kuten *FL-010* ja *FL-011*.
+
+### <a name="create-a-sales-order-and-reserve-a-specific-license-plate"></a>Myyntitilauksen luominen ja tietyn rekisterikilven varaaminen
+
+1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
+1. Valitse **Uusi**.
+1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
+
+    - **Asiakastili:** *US-001*
+    - **Varasto**: *24*
+
+1. Valitse **OK** ja sulje **Luo myyntitilaus** -valintaikkuna. Avaa sitten uusi myyntitilaus.
+1. Lisää **Myyntitilausrivit**-pikavälilehdessä rivi, jossa on seuraavat asetukset:
+
+    - **Nimiketunnus:** *Nimike1*
+    - **Määrä** *10*
+
+1. Lisää toinen myyntitilausrivi, jossa on seuraavat asetukset:
+
+    - **Nimiketunnus:** *Nimike2*
+    - **Määrä** *5*
+
+1. Valitse **Tallenna**.
+1. Anna **Rivin tiedot** -pikavälilehdessä **Asetukset**-välilehdessä **Erätunnus**-arvo jokaiselle riville. Nämä arvot ovat pakollisia tiettyjen rekisterikilpien varauksen yhteydessä.
+
+    > [!NOTE]
+    > Jos haluat varata tietyn rekisterikilven, sinun on käytettävä **tilaussidonnaisia varauksia rekisterikilpeä kohti** -tietoyksikköä. Jos sinun on varattava tietyn rekisterikilven eräseurattu nimike, voit käyttää myös **Erän varaus** -sivua, kuten [Anna myyntitilauksen tiedot](#sales-order-details) -osassa on kuvattu.
+    >
+    > Jos annat rekisterikilven suoraan myyntitilausriville ja vahvistat sen järjestelmässä, rivillä ei käytetä varastonhallinnan käsittelyä.
+
+1. Valitse **Avaa Microsoft Officessa**, valitse **Tilaussidonnaiset varaukset rekisterikilpeä kohti** ja lataa tiedosto.
+1. Avaa ladattu tiedosto Excelissä ja valitse **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan.
+1. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
+1. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut Supply Chain Management -sovellukseen.
+1. Jos haluat varata nimikkeen tietystä rekisterikilvestä, valitse Excelin lisäosassa **Uusi** ja lisää varausrivi. Määritä sitten seuraavat arvot:
+
+    - **Erätunnus:** Anna **Erätunnus**-arvo, joka on myyntitilausrivillä *Nimike1*-kohdassa.
+    - **Rekisterikilpi:** *RK02*
+    - **ReservedInventoryQuantity:** *10*
+
+1. Lisää toinen varausrivi valitsemalla **Uusi** ja määritä sille seuraavat arvot:
+
+    - **Erätunnus:** Anna **Erätunnus**-arvo, joka on myyntitilausrivillä *Nimike2*-kohdassa.
+    - **Rekisterikilpi:** *RK02*
+    - **ReservedInventoryQuantity:** *5*
+
+1. Valitse Excelin lisäosassa **Julkaise** ja lähetä tiedot takaisin Supply Chain Management -sovellukseen.
+
+    > [!NOTE]
+    > Varausrivi tulee näkyviin järjestelmään vain, jos julkaisemisessa ei ole tehty virheitä.
+
+1. Siirry takaisin Supply Chain Management -sovellukseen. 
+1. Voit tarkistaa nimikkeen varauksen **Myyntitilausrivit**-pikavälilehden **Varasto**-valikossa valitsemalla **Ylläpidä \> Varaus**. Ota huomioon, että *Nimike1* -kohdan myyntitilausrivillä varataan varastoa *10* ja *Nimike2*-kohdan myyntitilausrivillä varataan varastoa *5*.
+1. Voit tarkastella varastotapahtumia, jotka liittyvät myyntitilausrivin varaukseen, **Myyntitilausrivit**-pikavälilehden **Varasto**-valikossa valitsemalla **Näytä \> Tapahtumat**. Huomaa, että varaukseen liittyy kaksi tapahtumaa. Toisen **Viite**-kentän arvoksi on määritetty *Myyntitilaus* ja toisen **Viite**-kentän arvoksi on määritetty *Tilaussidonnainen varaus*.
+
+    > [!NOTE]
+    > Tapahtuma, jossa **Viite**-kentän arvoksi on määritetty *Myyntitilaus*, edustaa tilausrivin varausta varastodimensioissa, jotka ovat yli **Sijainti**-tason (toimipaikka, varasto ja varaston tila). Tapahtuma, jonka **Viite**-kentän arvoksi on määritetty *Tilaussidonnainen varaus*, vastaa tietyn rekisterikilven ja sijainnin tilausrivin varausta.
+
+1. Jos haluat vapauttaa myyntitilauksen, valitse toimintoruudun **Varasto**-välilehden **Toiminnot**-ryhmässä **Vapauta varastoon**.
+
+### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Varaston työn tarkistaminen ja käsitteleminen määritettyjen tilaussidonnaisten rekisterikilpien avulla
+
+1. Valitse **Myyntitilausrivit**-pikavälilehdellä **Varasto**-valikosta **Työn tiedot**.
+
+    Kun varaus on tehty tietylle erälle, järjestelmä ei käytä sijaintidirektiivejä, kun rekisterikilven varausta käyttävälle myyntitilaukselle luodaan työ. Koska tilaussidonnainen varaus määrittää kaikki varastodimensiot, mukaan lukien sijainnin, sijaintidirektiivejä ei tarvitse käyttää, koska nämä varastodimensiot on juuri syötetty työhön. Ne näkyvät **Varastodimensioista**-osassa **Työn varastotapahtumat**-sivulla.
+
+    > [!NOTE]
+    > Kun työ on luotu, nimikkeen varastotapahtuma, jossa **Viite**-kentän arvona on *Tilaussidonnainen varaus*, poistetaan. Varastotapahtuma, jossa **Viite**-kentän arvona on *Työ*, sisältää nyt kaikkien määrän varastodimensioiden fyysisen varauksen.
+
+1. Tee työn keräily ja hyllytys valmiiksi mobiililaitteessa käyttämällä valikon vaihtoehtoa, jossa **Käsittele rekisterikilven mukaan** -valintaruutu on valittuna.
+
+    > [!NOTE]
+    > **Käsittele rekisterikilven mukaan** -toiminto auttaa koko rekisterikilven käsittelemisessä. Jos sinun on käsiteltävä rekisterikilven osa, et voi käyttää tätä toimintoa.
+    >
+    > On suositeltavaa, että kustakin rekisterikilvestä luodaan erilliset työt. Voit saavuttaa tämän tuloksen käyttämällä **Työn otsikoiden katkaisut** -ominaisuutta **Työmalli**-sivulla.
+
+    Rekisterikilpi *RK02* on nyt kerätty myyntitilausriveille ja hyllytetty *Lastausovi*-sijaintiin. Tässä vaiheessa se on valmis lastattavaksi ja lähetettäväksi asiakkaalle.
+
 ## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Niiden varastotöiden poikkeustenkäsittely, joilla on tilaussidonnaiset eränumerot
 
 Tilaussidonnaisten eränumeroiden keräilyn varastotyöhön sovelletaan samoja varaston poikkeustenkäsittelyä ja -toimintoja kuin tavanomaiseen työhön. Yleisesi ottaen avoin työ tai työrivi voidaan peruuttaa, se voidaan keskeyttää, koska käyttäjän sijainti on täynnä, siihen voidaan soveltaa lyhyttä keräilyä ja sitä voidaan päivittää siirron vuoksi. Samoin jo valmiiksi saatua keräiltyä työmäärää voidaan vähentää tai työ voidaan palauttaa.
@@ -194,7 +368,7 @@ Kaikkiin näihin poikkeusten käsittelyn toimintoihin sovelletaan seuraavaa kesk
 
 ### <a name="example-scenario"></a>Esimerkkiskenaario
 
-Esimerkki tästä skenaariosta on tilanne, jossa aiemmin valmistuneiden töiden keräily perutaan **Vähennä keräiltyä määrää** -toimintoa. Tämä esimerkki jatkaa tämän aiheen edellistä esimerkkiä.
+Esimerkki tästä skenaariosta on tilanne, jossa aiemmin valmistuneiden töiden keräily perutaan **Vähennä keräiltyä määrää** -toimintoa. Tässä esimerkissä oletetaan, että olet jo tehnyt [Esimerkkiskenaario: Eränumeron kohdistus](#Example-batch-allocation) -kohdassa kerrotut vaiheet. Se jatkuu kyseisestä esimerkistä.
 
 1. Siirry kohtaan **Varastonhallinta** \> **Kuormat** \> **Aktiiviset kuormat**.
 2. Valitse kuorma, joka on luotu myyntitilauksen lähetyksen yhteydessä.

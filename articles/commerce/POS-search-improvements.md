@@ -3,7 +3,7 @@ title: Ttuote- ja asiakashaku myyntipisteessä (POS)
 description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Commercein tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022336"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628906"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -95,6 +95,9 @@ Asiakkaan etähauissa ei näytetä muiden yritysten asiakkaiden asiakastunnusta,
 
 Puhelinnumeroon perustuvia hakuja on yksinkertaistettu. Nämä haut ohittavat nyt erikoismerkit, kuten välilyönnit, tavuviivat ja sulkeet, jotka on mahdollisesti lisätty asiakasta luotaessa. Kassan ei tämän vuoksi tarvitse välittää puhelinnumeron muodosta hakujen yhteydessä. Asiakkaita voi hakea myös kirjoittamalla osittaisen puhelinnumeron. Jos puhelinnumerossa on erikoismerkkejä, se voidaan etsiä myös hakemalla erikoismerkin jälkeen tulevia numeroita. Jos esimerkiksi asiakkaan puhelinnumeroksi on tallennettu **123-456-7890**, kassa voi etsiä asiakkaan kirjoittamalla **123**, **456**, **7890** tai **1234567890**. Haun voi tehdä myös kirjoittamalla puhelinnumeron muutaman ensimmäisen numeron.
 
+> [!NOTE]
+> Asiakkaalla voi olla useita puhelinnumeroita ja sähköpostiosoitteita. Asiakkaan hakualgoritmi hakee myös näiden toissijaisten sähköpostiosoitteiden ja puhelinnumeroista. Asiakkaan hakutulossivulla näytetään kuitenkin vain ensisijainen sähköpostiosoite ja puhelinnumero. Tämä saattaa aiheuttaa sekaannusta, koska palautetut asiakkaan tulokset eivät näytä haettua sähköpostiosoitetta tai puhelinnumeroa. Tulevissa julkaisuissa aiomme parantaa asiakkaan hakutulosnäyttöä näiden tietojen saamiseksi.
+
 Perinteinen asiakashaku voi kestää kauan, koska haku kohdistuu useisiin kenttiin. Kassat voivat sen sijaan tehdä haun asiakkaan yhden ominaisuuden perusteella käyttämällä esimerkiksi nimeä, sähköpostiosoitetta tai puhelinnumeroa. Asiakkaan hakualgoritmin käyttämiä ominaisuuksia kutsutaan *asiakashaun ehdoiksi*. Järjestelmänvalvoja voi määrittää kätevästi vähintään yhden hakuehdon myyntipisteessä näkyväksi pikavalinnaksi. Koska haussa käytetään vain yhtä ehtoa, vain hakua vastaavat tulokset näytetään. Tämän vuoksi haku on tehokkaampi kuin tavallinen asiakashaku. Seuraavassa kuvassa on myyntipisteen asiakashaun pikavalinnat.
 
 ![Asiakashaun pikakuvakkeet](./media/SearchShortcutsPOS.png "Asiakashaun pikakuvakkeet")
@@ -114,3 +117,4 @@ Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **Co
 Commercen tulevassa versiossa jälleenmyyjät voivat määrittää myyntipisteessä oletushakutilaksi **Hae kaikista myymälöistä**. Tämä määritys voi olla hyödyllinen tilanteissa, joissa myyntipisteen ulkopuolella luotuja asiakkaita on haettava heti (esimerkiksi ennen jakelutyön ajamista). Uusi **Asiakkaan oletushakutila** -vaihtoehto on käytettävissä myyntipisteen toimintoprofiilissa. Jos sen arvoksi on määritetty **Käytössä**, oletushakutilana on **Hae kaikista myymälöistä**. Jokainen asiakashakuyritys tekee sitten reaaliaikaisen kutsun pääkonttoriin.
 
 Odottamattomat suorituskykyongelmien estämiseksi tämä määritys on piilotettu versioversiotestaukseen nimeltä **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Tämän vuoksi **Asiakkaan oletushakutila** -asetuksen näyttäminen käyttöliittymässä edellyttää, että jälleenmyyjä luo tukipalvelupyynnön käyttäjän hyväksyntätestaus- ja tuotantoympäristöjä varten. Kun pyyntö on vastaanotettu, kehitysryhmä varmistaa yhteistyössä vähittäismyyjän kanssa, että tämän testaus tapahtuu muussa kuin tuotantoympäristössä, sillä tällä tavoin voidaan arvioida suorituskyly ja ottaa käyttöön mahdollisesti tarvittavat optimoinnit.
+

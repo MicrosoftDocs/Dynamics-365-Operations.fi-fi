@@ -70,6 +70,8 @@
                   items:
                     - name: Financen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.13 (lokakuu 2020)
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (elokuu 2020)
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (heinäkuu 2020)
@@ -107,23 +109,23 @@
             - name: Oppimisluettelo
               items:
                 - name: Oppimisluettelon kotisivu
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Yrityksen päätöksentekijät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Yrityksen käyttäjät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Käyttöönottoprojektin vastuuhenkilöt
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Järjestelmänvalvojat
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Kehittäjät
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Kumppanimyynti ja -markkinointi
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Toimintokonsultit
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Ratkaisuarkkitehdit
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Käyttöliittymään tutustuminen
               items:
                 - name: Käyttöliittymäelementit
@@ -846,6 +848,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Kohdistusten käsittely
                   href: general-ledger/process-allocations.md
+                - name: Kohdistusehdot
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Taloushallinnon dimensiot
                   href: general-ledger/financial-dimensions.md
                 - name: Konsolidointitiliryhmät ja lisäkonsolidointitilit
@@ -1122,6 +1126,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Julkisen sektorin lisäkirjanpitoviennin luominen
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Pääkirja ja tapahtumatietoraportti
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Käteisvarojen hallinnan rajojen käyttäminen
                   href: public-sector/cash-control.md
                 - name: Julkisen sektorin tilinpäätöksen käsittely
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Varmennetyypin lisääminen julkisen sektorin toimittajalle
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Kanadan harmonisoidun arvonlisäveron laskeminen
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Taloushallinnon raportointi
           items:
             - name: Taloushallinnon raportoinnin yleiskatsaus
@@ -1846,9 +1854,11 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Version 10.0.11 uudet ja muuttuneet ominaisuudet
                           href: localizations/apac-ind-news-letter-10-0-11.md
+                        - name: Version 10.0.12 uudet ja muuttuneet ominaisuudet
+                          href: localizations/apac-ind-news-letter-10-0-12.md
                     - name: Intian GST-veron viiteryhmät
                       href: localizations/apac-ind-gst-reference-groups.md
-                    - name: Kassakoneiden GST-veron integrointi
+                    - name: Kassapäätteiden GST-veron integrointi
                       href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
                     - name: Päätietojen määrittäminen
                       items:
@@ -2632,10 +2642,14 @@
                   href: localizations/emea-esp-promissory-note-options.md
                 - name: Raportti 340
                   href: localizations/emea-esp-report-340.md
+                - name: Ilmoituksen 347 raportti
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Osto- ja myyntisyklit
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Erikoisviennit ja avaavat taseet
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: 'ALV:tä koskevien tietojen välitön toimittaminen'
+                  href: localizations/emea-esp-sii.md
             - name: Ruotsi
               items:
                 - name: Ruotsi – yleiskatsaus

@@ -3,7 +3,7 @@ title: Suorituksen hallinta
 description: Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
-ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
+ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "3609769"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628450"
 ---
 # <a name="performance-management"></a>Suorituksen hallinta
 
@@ -37,6 +37,7 @@ Prosessin hallinta sisältää seuraavan kaavion osoittamat kolme sivua:
 Seuraavassa kaaviossa on kuvattu, miten suoritustason hallinnan ensisijaiset osat liittyvät toisiinsa. [![Suoritustasoprosessin yleiskuvaus](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Suoritustason kirjauskansio
+
 Ennen työntekijän suorittamaa tarkastusta kerätään usein tietoja tehtävistä ja tapahtumista, jotka ovat vaikuttaneet onnistumiseen tarkastelukauden aikana. Nämä tehtävät ja tapahtumat voidaan dokumentoida suoritustason kirjauskansioon. Lisäksi voidaan luoda tulevia tehtäviä, jotka on suoritettava tavoitteen saavuttamiseksi tai kehityssuunnitelman vaatimusten tai suoritustasoon sitoutumisen täyttämiseksi. Suoritustason kirjauskansiot eivät ole pakollisia tavoitteiden ja suoritustasoarviointien luomisessa. 
 
 Suoritustason kirjauskansiosta on kaksi eri versiota: työntekijän versio, jota käytetään **Työntekijän itsepalvelu** -työtilan (**ESS**) kautta ja esimiehen versio, jota käytetään **Esimiehen itsepalvelu** -työtilan (**MSS**) kautta. Työntekijät voivat luoda itselleen kirjauskansioita ja jakaa niitä esimiesten kanssa. Esimiehet voivat luoda ryhmälleen kirjauskansioita ja jakaa niitä työntekijöiden kanssa. 
@@ -58,6 +59,7 @@ Voit myös linkittää suoritustason kirjauskansion ulkoiseen verkkosivustoon ta
 Suoritustason kirjauskansio sisältää lisätoiminnon, jonka nimi on Palaute. Kun valitset **Lähetä palaute**, voit valita työntekijän ja antaa tälle palautetta sähköpostitse. Viesti lähetetään palautteen saavalle työntekijälle, työntekijän esimiehelle, palautteen lähettävälle työntekijälle ja tämän työntekijän esimiehelle. Suoritustason kirjauskansiovienti luodaan jokaiselle palauteviestin vastaanottavalle henkilölle.
 
 ## <a name="goals"></a>Tavoitteet
+
 **Suoritustasotavoitteet**-sivu auttaa sinun ja esimiehesi luomien tavoitteiden seuraamisessa. Voit luoda haluamasi määrän tavoitteita. Tavoitteiden ei tarvitse olla samalla kaudella tai samoissa suoritustasoarvioinneissa. Voit luoda myös yksinkertaisia tai monitasoisia tavoitteita sen mukaan, miten paljon tavoitetta koskevia tietoja haluat syöttää. Suoritustasoarvioinnit eivät edellytä tavoitteiden asettamista. 
 
 Perustavoitteelle on annettava seuraavat tiedot:
@@ -80,6 +82,7 @@ Jos haluat liittää tavoitteeseen asiakirjan, kuten suoritustodistuksen, voit l
 Voit luoda tavoitteesta mallin ja luoda mallin avulla uusia kyseiseen malliin perustuvia tavoitteita. Kuvaus, ohjeaihe ja tavoitemittaukset tallennetaan, kun luot tavoitteesta mallin. Kaikki todelliset mittaukset, valmistumispäivämäärät ja ohjeaiheiden kommentit kuitenkin poistetaan.
 
 ## <a name="performance-reviews"></a>Suoritustasoarvioinnit
+
 Suoritustasoarviointeja kutsutaan virallisesti keskusteluiksi. Ne ovat nyt riittävän joustavia ja tukevat jatkuvaa palautetta, kehityssuunnitelmia ja virallisempia arviointeja. Voit luoda nopeasti kahdelle ihmiselle pieniä tapaamisia, kuten kahdenkeskisiä tapaamisia, tai monitasoisemman yrityksen arviointiprosessia vastaavan arvioinnin. 
 
 Tapaaminen, kuten kahdenkeskinen tapaaminen, on yksinkertainen arviointi. Sitä varten tarvitsee antaa lyhyt nimi, pidempi kuvaus tapaamisen sisällöstä ja tapaamisen päivämäärä. Yksinkertainen arviointi sisältää samat tiedot sekä kyseisen arvioinnin kauden. Esimiehet näkevät myös sen henkilön nimen, jolle arviointi on luotu. 
@@ -92,7 +95,11 @@ Voit luoda uusia arvioijia luomasi mallin perusteella. Sinulla voi olla malli es
 
 Tulosta arvostelut valitsemalla **Tulosta arvostelu** -painike. Jos et näe painiketta **Arvostelu**-sivulla, varmista, että olet ottanut ominaisuuden käyttöön **Ominaisuuden hallinta** -työtilassa. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
+> [!NOTE]
+> Suorituskykytarkistusten tulostusmahdollisuus on käytettävissä vain Human Resources -sovelluksessa. Ne eivät ole käytettävissä Dynamics 365 Finance -sovelluksessa.
+
 ## <a name="components-you-can-include-in-performance-reviews"></a>Suoritustasoarviointeihin lisättävissä olevat osat
+
 Suoritustasoarviointeihin voi lisätä erityyppisiä tietoja. Tietoja ovat esimerkiksi arvioinnin tiedot, mittaukset, tehtävät, luokitukset, kuittaukset ja liitteet.
 
 ### <a name="review-detail"></a>Arvioinnin tiedot
@@ -119,24 +126,30 @@ Työntekijä ja/tai esimies listataan arviointiin määrittämiesi arviointipara
 
 Voit liittää arviointiin asiakirjan **Arvioinnit**-sivun **Liitteet**-osassa. Asiakirjojen katseluohjelman avulla voi tarkastella nopeasti minkä tahansa liitetyn asiakirjan sisältöä.
 
-### 
-
 ## <a name="workflow-for-performance-management"></a>Suoritustason hallinnan työnkulku
+
 Työntekijän arvioinnin työnkulun avulla voit hallita arvioinnin hyväksyntää. Voit myös ohittaa automaattisen työnkulun ja muuttaa arvioinnin tilan manuaalisesti. Näin voit luoda yksinkertaisempia asiakirjoja, kuten kahden henkilön käytössä olevia asiakirjoja, ilman työnkulkuprosessia. Arvioinnin tila ohjaa arvioinnin käyttöä.
 
 1.  Kun arviointi luodaan, sen tilaksi määritetään **Ei aloitettu**. Kuka tahansa voi muokata arviointia.
+
 2.  Kun työntekijä painaa **Aloita arviointi** -painiketta, arvioinnin tilaksi määritetään **Käsittelyssä**. Tämän jälkeen työntekijä alkaa lisätä sisältöä. Tässä vaiheessa esimies ei enää voi tarkastella arviointiasiakirjaa.
+
 3.  Työntekijä muuttaa tilaksi **Valmis arvioitavaksi**.
+
 4.  Esimies voi lisätä kommentteja ja luokituksia. Tässä vaiheessa vain esimies näkee arvioinnin.
+
 5.  Esimies muuttaa tilaksi **Lopullinen arviointi**. Tällöin sekä esimies että työntekijä näkevät arvioinnin, ja he voivat keskustella siitä. Voit määrittää parametrien avulla, voiko arviointia muokata tässä vaiheessa. Tämä vaihe on myös valinnainen, jos esimies haluaa yksinkertaisesti jakaa arvioinnin työntekijän kanssa ja merkitä sen tilaksi **Valmis**, kun toimenpiteet on tehty.
+
 6.  Kun kuittaukset on tehty, tilaksi muutetaan **Valmis**. Tässä vaiheessa arviointia ei voi enää muuttaa.
 
 Työntekijän arvioinnin työnkulku koostuu kahdesta seuraavasta elementistä:
 
 1.  Hyväksy arviointi. Lisää tämä elementti, kun haluat hallita tilan muuttamista **Keskeneräinen**-tilasta **Valmis arvioitavaksi** -tilaan. Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1.
+
 2.  Lopullinen arviointi. Lisää tämä elementti, kun haluat hallita tilan muuttamista **Valmis arvioitavaksi**-tilasta **Lopullinen arviointi** -tilaan. Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1, kun haluat esimiehen hyväksyvän lopullisen arvioinnin. Muuta määritykseksi Työnkulun käyttäjä, jos haluat, että työntekijä hyväksyy arvioinnin. Jos haluat, että sekä esimies että työntekijä hyväksyvät arvioinnin, lisää työnkulkuun kaksi vaihetta ja tee jokaiselle vaiheelle tarvittava määritys siinä järjestyksessä, jossa hyväksynnät tulee tehdä.
 
 ## <a name="setup"></a>Luo perustiedot
+
 Voit määrittää suoritustasoprosessin suorittamisessa vaadittavat tiedot seuraavien kolmen sivun avulla: **Mittaukset**-sivu, **Suoritustason kirjauskansion lähdetyypit** -sivu ja **Arviointityypit**-sivu.
 
 ### <a name="measurements"></a>Mittaukset
@@ -150,6 +163,3 @@ Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioid
 ### <a name="review-types"></a>Arviointityypit
 
 Suoritustason arviointityyppien avulla voit hallita arvioinnin toimintaa. Voit ottaa käyttöön arvioinnin työnkulun tai poistaa sen käytöstä. Jos arvioinnissa ei käytetä työnkulkua, voit määrittää arvioinnin luomisen yhteydessä käytettävän oletustilan. Voit myös määrittää, vaaditaanko arvioinnissa työntekijän, esimiehen vai molempien kuittaus.
-
-
-

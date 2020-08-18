@@ -3,7 +3,7 @@ title: Moduulien käyttäminen
 description: Tässä ohjeaiheessa kuvataan, miten ja milloin moduuleja käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,19 +17,19 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: da430857801d8007244c04aadd325e99c0b882c5
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025876"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646012"
 ---
 # <a name="work-with-modules"></a>Moduulien käyttäminen
 
-Tässä ohjeaiheessa kuvataan, miten ja milloin moduuleja käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
-
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+Tässä ohjeaiheessa kuvataan, miten ja milloin moduuleja käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
 ## <a name="overview"></a>Yleiskatsaus
 
@@ -42,8 +42,10 @@ Dynamics 365 Commerce -sivusto sisältää oletusarvoisesti aloituspakkausmoduul
 Kuten aiemmin mainittiin, jotkin moduulit on suunniteltu alimoduulien säilytystä varten. Näitä moduuleja kutsutaan *säilöiksi*. Ne mahdollistavat sisäkkäisten moduulien hierarkian muodostamisen. Konttimoduuleissa on *paikkoja*. Paikkojen avulla käsitellään säilön alimoduulien asettelua ja tarkoitusta. Seuraavassa on esimerkki perussivun säilömoduulista (ylimmän tason moduulista millä tahansa sivulla), joka määrittää useita tärkeitä paikkoja:
 
 - Ylätunnistepaikka
-- Tekstiosapaikka
+- Aliylätunnistepaikka
+- Pääpaikka
 - Alatunnistepaikka
+- Alialatunnistepaikka
 
 Moduulin kehittäjä määrittää nämä paikat. Hän määrittää myös, mitkä alimoduulit ja miten monta alimoduulia voidaan laittaa suoraan paikan sisään. Esimerkiksi ylätunnistepaikka voi tukea vain yhtä **ylätunnistemoduuli**-tyyppiä, kun taas tekstiosapaikka voi tukea rajoittamatonta määrää moduulityyppejä (ei kutienkaan muita sivun säilömoduuleja).
 
@@ -51,7 +53,7 @@ Sivun tekijöiden ei tarvitse tietää etukäteen muokkaustyökaluissa, mitkä m
 
 ## <a name="content-modules"></a>Sisältömoduulit
 
-Sisältömoduulit sisältävät sisältö- ja mediaelementtejä, kuten tekstiä (esimerkiksi otsikoita, kappaleita ja linkkejä) tai resurssiviitteitä (esimerkiksi kuvia, videota ja PDF-tiedostoja). Esimerkkejä yleisistä sisältömoduulityypeistä ovat **Hero**, **Ominaisuus** ja **Ilmoituspalkki**. Nämä kolme moduulityyppiä voivat sisältää tekstiä tai mediaa. Ne eivät tarvitse alimoduuleja voidakseen näyttää sivulla asioita.
+Sisältömoduulit sisältävät sisältö- ja mediaelementtejä, kuten tekstiä (esimerkiksi otsikoita, kappaleita ja linkkejä) tai resurssiviitteitä (esimerkiksi kuvia, videota ja PDF-tiedostoja). Tyypillisiä sisältömoduulin tyyppejä ovat sisältölohko-, tekstilohko- ja kampanjabannerimoduulit. Nämä kolme moduulityyppiä voivat sisältää tekstiä tai mediaa. Ne eivät tarvitse alimoduuleja voidakseen näyttää sivulla asioita.
 
 Suurin osa yleisistä päivittäisistä sivun- ja sisällöntuottamisaktiviteeteista liittyy sisältömoduuleihin. Tämä pääasiassa sen vuoksi, että nämä moduulit määrittävät pääsäilömoduuleissa hahmonnetun todellisen sisällön. Käytettävissä on useita sisältömoduuleja. Nämä moduulit ovat yleensä viimeisiä sisäkkäisten moduulien sivuhierarkiaan lisättäviä osia.
 
@@ -67,20 +69,20 @@ Seuraavissa ohjeissa kuvataan, miten moduuleja lisätään ja poistetaan.
 
 Voit lisätä sivun moduulin paikkaan tai säilöön seuraavasti.
 
-1. Valitse vasemmalla olevasta jäsennysruudusta säilö tai paikka, johon alimoduuli voidaan lisätä.
+1. Valitse vasemmalla olevasta jäsennysruudusta tai suoraan pääalustalla säilö tai paikka, johon alimoduuli voidaan lisätä.
 
     > [!NOTE]
-    > Moduulin suunnittelija määrittää moduulityyppien luettelon, joka voidaan lisätä tiettyyn moduulipaikkaan. Mallien tekijät voivat tämän jälkeen tarkentaa sallittuja moduulivaihtoehtoja. Tämän avulla varmistetaan yhdenmukainen hakukoneoptimointi ja luotitehokkuus kaikilla sivuilla, jotka on luotu tietyn mallin avulla.
+    > Moduulin suunnittelija määrittää moduulityyppien luettelon, joka voidaan lisätä tiettyyn moduulipaikkaan. Mallien tekijät voivat tämän jälkeen tarkentaa sallittuja moduulivaihtoehtoja. Tämän avulla varmistetaan yhdenmukainen hakukoneoptimointi ja luotitehokkuus kaikilla sivuilla, jotka on luotu tietyn mallin avulla. Kun moduulia lisätään paikkaan, **Lisää moduuli** -valintaikkuna suodatetaan automaattisesti siten, että siinä näkyvät vain ne moduulit, joita valittu säilö tai paikka tukee. Tämä sallittujen moduulien luettelo määräytyy sivun mallin tai säilömoduulin määrityksen mukaan.
 
-1. Valitse moduulin kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**. **Lisää moduuli** -valintaikkuna tulee näkyviin. Tämä valintaikkuna suodatetaan automaattisesti siten, että siinä näkyvät vain ne moduulit, joita valittu säilö tai paikka tukee. Moduuliluettelo määräytyy sivun mallin tai säilömoduulin määrityksen mukaan.
+1. Jos käytössä on jäsennysruutu, valitse kolme pistettä (**...**) moduulin nimen vierestä ja valitse sitten **Lisää moduuli**. Jos käytät ohjausobjekteja suoraan alustassa, valitse plusmerkki (**+**) tyhjässä paikassa tai parhaillaan valittuna olevan moduulin vieressä. Valitse sitten **Lisää moduuli**.
 
     > [!NOTE]
     > Jos säilö tai paikka ei tue uusia alimoduuleja, **Lisää moduuli** -vaihtoehto ei ole käytettävissä.
 
-1. Hae valintaikkunassa sivulle lisättävä moduuli ja valitse se.
+1. Valitse **Lisää moduuli** -valintaikkunassa sivulle lisättävä moduuli.
 
     > [!TIP]
-    > Aloittelijan kannattaa käsitellä ensin **Ominaisuus**- ja **Hero**-moduulityyppejä.
+    > Aloittelijan kannattaa käyttää **Sisältölohko**-moduulityyppiä.
 
 1. Valitse **OK**, jos haluat lisätä valitun moduulin sivun valittuun säilöön tai paikkaan.
 
@@ -88,8 +90,35 @@ Voit lisätä sivun moduulin paikkaan tai säilöön seuraavasti.
 
 Voit poistaa sivun moduulin paikasta tai säilöstä seuraavasti.
 
-1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan moduulin nimen vieressä oleva kolmen pisteen painike ja valitse sitten roskakoripainike.
+1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan moduulin nimen vieressä oleva kolmen pisteen painike (**...**) ja valitse sitten roskakorisymboli. Vaihtoehtoisesti voit valita pääalustalle valitun moduulin työkalurivin roskakorisymbolin.
 1. Kun sinua pyydetään vahvistamaan moduulin poistaminen, valitse **OK**.
+
+## <a name="move-a-module-to-a-new-position"></a>Moduulin siirtäminen uuteen kohtaan
+
+Voit siirtää moduulin uuteen kohtaan sivulla jollakin seuraavista tavoista.
+
+### <a name="move-a-module-using-the-outline-pane"></a>Moduulin siirtäminen jäsennysruudun avulla
+
+Voit siirtää moduulin jäsennysruudun avulla noudattamalla seuraavia ohjeita.
+
+1. Valitse ja pidä painettuna siirrettävää moduulia jäsennysruudussa. Vedä sitten moduuli uuteen kohtaan jäsennyksessä. Jäsennyksen ja alustan sininen viiva ilmaisee, mihin moduuli voidaan sijoittaa.
+1. Vapauta moduuli ja pudota se uuteen kohtaan.
+
+### <a name="move-a-module-directly-within-the-canvas"></a>Moduulin siirtäminen suoraan alustaan
+
+Voit siirtää moduulin suoraan alustassa noudattamalla seuraavia ohjeita.
+
+1. Valitse alustassa siirrettävä moduuli. 
+1. Valitse joko ylös- tai alaspäin osoittava nuolisymboli moduulin työkalurivillä. Vedä nuolta uuteen kohtaan sivulla. Jäsennyksen ja kaavan sininen viiva ilmaisee, mihin moduuli voidaan sijoittaa. Jos moduulia ei voi siirtää ylös tai alas, nuolisymboli näkyy harmaana. 
+1. Vapauta moduuli ja pudota se uuteen kohtaan.
+
+### <a name="move-a-module-using-the-ellipsis-menu"></a>Moduulin siirtäminen kolmen pisteen valikon avulla
+
+Voit siirtää moduulin kolmen pisteen valikon avulla noudattamalla seuraavia ohjeita.
+
+1. Valitse moduuli jäsennyksestä tai alustasta.
+1. Valitse kolme pistettä (**...**) moduulin nimen vierestä jäsennysruudusta tai moduulin työkaluriviltä.
+1. Jos moduulia voi siirtää ylös ja alas säilössä tai paikassa, näkyvissä ovat **Siirrä ylös**- tai **Siirrä alas** -vaihtoehdot. Valitse haluttu siirtovaihtoehto, kun haluat siirtää moduulia ylös tai alas suhteessa sen sisaruksiin.
 
 ## <a name="configure-modules"></a>Moduulien määrittäminen
 
@@ -99,10 +128,28 @@ Seuraavissa ohjeissa kuvataan, miten sisältö ja säilömoduulit määritetää
 
 Voit määrittää sivun sisältömoduulin seuraavasti.
 
-1. Laajenna puuta vasemmalla olevassa kehysikkunassa ja valitse mikä tahansa sisältömoduuli (esimerkiksi **Ominaisuus**, **Hero** tai **Ilmoituspalkki**).
-1. Etsi oikealla olevasta ominaisuudet-ruudusta moduulin sisältö- ja asetukset-ohjausobjektit.
-1. Määritä haluamasi moduuliohjausobjektien ominaisuudet.
-1. Valitse **Tallenna** komentopalkin yläosassa. Tämä päivittää myös esikatselualustan.
+1. Laajenna puuta vasemmalla olevassa jäsennysruudussa ja valitse mikä tahansa sisältömoduuli (esimerkiksi **Sisältölohko**). Vaihtoehtoisesti voit valita moduulin pääalustassa.
+1. Anna haluttujen moduulin ohjausobjektien ominaisuudet oikealla olevaan moduulin ominaisuuksien ruutuun.
+1. Valitse **Tallenna** komentopalkissa. Tämä päivittää myös esikatselualustan.
+
+### <a name="edit-module-text-properties"></a>Moduulin tekstiominaisuuksien muokkaaminen
+
+Moduulin tekstiominaisuuksia, jotka eivät ole vain luku -tilassa, voi muokata suoraan alustassa.
+
+Voit muokata moduulin tekstiominaisuuksia noudattamalla seuraavia ohjeita.
+
+1. Valitse alustan tekstin ohjausobjekti ja sijoita kohdistin kohtaan, jossa haluat muokata tekstiä.
+1. Anna tekstisisältö.
+1. Jatka muiden sisältöjen muokkaamista valitsemalla kohta tekstisisällön ulkopuolelta.
+
+### <a name="inline-image-selection"></a>Sisäisen kuvan valitseminen
+
+Moduulin kuvia, jotka eivät ole vain luku -tilassa, voi muuttaa suoraan alustassa.
+
+Voit valita sisältömoduulin uuden kuvan seuraavasti.
+
+1. Kaksoisnapsauta kuvaa alustassa. Näkyviin tulee mediavalitsimen ikkuna.
+1. Etsi ja valitse uusi kuva, jota haluat käyttää, ja valitse sitten **OK**. Uusi kuva hahmonnetaan nyt alustassa.
 
 ### <a name="configure-a-container-module"></a>Konttimoduulin määrittäminen
 

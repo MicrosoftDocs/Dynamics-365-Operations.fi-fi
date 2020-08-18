@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 83a27620a7bdd8624770442aa271a6dac6b5b04e
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530371"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651954"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.8 (helmikuu 2020)
 
@@ -39,23 +39,23 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet*-ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Sijainnin lisävyöhyke](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
-- [Liiketoiminta-asiakirjojen hallinta](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) - Lisätietoja on kohdassa [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](../asset-management/index.md).
-- [Työn peruuttaminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) - Lisätietoja on kohdassa [Varastotyön peruuttaminen poikkeuksen käsittelyä varten](../warehousing/cancel-warehouse-work.md).
+- [Resurssien hallinta](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Lisätietoja on kohdassa [Resurssien hallinnan yleiskatsaus](../asset-management/index.md).
+- [Peruuta työ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Lisätietoja on kohdassa [Varastotyön peruuttaminen poikkeuksen käsittelyä varten](../warehousing/cancel-warehouse-work.md).
 - [Vaihda työpoolia työssä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Klusterisijainti täynnä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
 - [Vahvista ja siirrä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
 - [Sijaintidirektiivin varastonkeräilyn erääntyminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
 - [Sijainnin tila](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
-- [Keräilyrivin ryhmitteleminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping) - Lisätietoja on kohdassa [Keräilyrivin ryhmitteleminen](../warehousing/pick-line-grouping.md).
-- [Lähetyksen automaattinen päivitys](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update) - Lisätietoja on kohdassa [Lähetyksen automaattiset päivitykset](../warehousing/auto-update-shipment.md).
+- [Keräilyrivin ryhmittely](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Lisätietoja on kohdassa [Keräilyrivin ryhmittely](../warehousing/pick-line-grouping.md).
+- [Lähetyksen automaattinen päivitys](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Lisätietoja on kohdassa [Lähetyksen automaattiset päivitykset](../warehousing/auto-update-shipment.md).
 - [Kysynnän täydennystyön jakaminen keräilytyövaiheen luomisesta](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
 - [Jaa työ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
-- [Järjestelmän ohjaama klusterin keräily](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) - Lisätietoja on kohdassa [Järjestelmän ohjaama klusterin keräily](../warehousing/system-directed-cluster-pick.md).
-- [varastosovelluksen tehtävän tarkistaminen RSAT:n avulla](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
+- [Järjestelmäohjattu klusterikeräily](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)<br> - Lisätietoja on kohdassa [Järjestelmäohjattu klusterikeräily](../warehousing/system-directed-cluster-pick.md).
+- [Varastosovelluksen tehtävän tarkistaminen RSAT:n avulla](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Varastoon vapautuksen sääntö](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Aallon tilan visualisoiminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
 - [Aallon mallipohjan ryhmittely](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Työrivin tiedot](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details) - Lisätietoja on videossa [Työrivin tiedot](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
+- [Työrivin tiedot](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Lisätietoja on videossa [Työrivin tiedot](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
 - [Vyöhykkeen rajatäydennys](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
 
 ## <a name="additional-resources"></a>Lisäresurssit

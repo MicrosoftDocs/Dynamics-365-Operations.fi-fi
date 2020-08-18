@@ -3,7 +3,7 @@ title: Asiakasportaalin käyttäjien luominen ja hallinta
 description: Tässä ohjeaiheessa selitetään, miten voit luoda asiakasportaalin käyttäjätilejä ja määrittää niiden käyttöoikeuksia.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413959"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645310"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Asiakasportaalin käyttäjien luominen ja hallinta
 
@@ -30,11 +30,16 @@ Ennen kuin käyttäjä voi käyttää verkkosivustoa, kyseiselle käyttäjälle 
 
 Kun käyttäjät rekisteröivät itsensä, niiden yhteystiedot luodaan automaattisesti. Tämän vuoksi et voi varmistaa, että käyttäjä valitsee oikean asiakastilin ja yrityksen. Toisaalta kutsuprosessin avulla järjestelmänvalvoja voi määrittää yhteyshenkilölle oikean asiakastilin ja yrityksen, ennen kuin kutsu lähetetään. Jos olet aikeissa mukauttaa ratkaisua niin, että käyttäjät voivat itse rekisteröityä, muista huomioida mahdolliset seuraukset.
 
+## <a name="video"></a>Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+[Asiakkaiden kutsuminen rekisteröitymään ja käyttämään asiakasportaalia](https://youtu.be/drGUYHX9QIQ) -video (alla) sisältyy [Finance and Operations -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on YouTubessa.
+
 ## <a name="prerequisite-setup"></a>Vaadittavat asetukset
 
 Power Apps -portaalien yhteyshenkilöt tallennetaan **yhteyshenkilöt** -yksikön tietueiksi Common Data Serviceen. Kaksoiskirjoitus synkronoi sitten nämä tiedot Microsoft Dynamics 365 Supply Chain Managementille tarpeen mukaan.
 
-![![Asiakasportaalin yhteyshenkilöiden järjestelmäkaavio](media/customer-portal-contacts.png "Asiakasportaalin yhteyshenkilöiden järjestelmäkaavio")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Asiakasportaalin yhteyshenkilöiden järjestelmäkaavio](media/customer-portal-contacts.png "Asiakasportaalin yhteyshenkilöiden järjestelmäkaavio")
 
 Ennen kuin aloitat uusien asiakkaiden kutsumisesta, varmista, että **Yhteyshenkilö**-yksikön yhdistämismääritys on otettu käyttöön kaksoiskirjoituksessa.
 

@@ -3,7 +3,7 @@ title: Myymälän valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,54 +18,113 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 460d05ca29d5b8da70a971a649d9edd786f7260d
-ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
+ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378205"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646132"
 ---
 # <a name="store-selector-module"></a>Myymälän valitsinmoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Myymälän valitsinmoduulia käytetään "Osta verkosta, nouto myymälässä" (BOPIS) -asiakasskenaariossa. Se näyttää luettelon myymälöistä, joissa tuote on noudettavissa, sekä myymälän aukioloajat ja tuotteen varastosaldon kullekin myymälälle.
+Asiakkaat voivat käyttää myymälän valitsinmoduulia ja noutaa tuotteen valitusta myymälästä verkko-oston jälkeen. Commerce-versiossa 10.0.13 myymälän valitsinmoduuli sisältää myös lisäominaisuuksia, jotka voivat esitellä lähistöllä olevat myymälät näyttävän **Etsi myymälä** -sivun.
 
-Myymälän valitsinmoduuli vaatii tuotteen kontekstin ja hakusijainnin myymälöiden löytämiseksi. Jos hakusijaintia ei ole, oletusarvona käytetään asiakkaan selaimen sijaintia edellyttäen, että asiakas antaa suostumuksensa. Moduulissa on syöttöruutu, jonka avulla asiakas voi kirjoittaa sijainnin (postinumeron tai kaupungin ja osavaltion) lähellä olevien myymälöiden löytämiseksi.
+Myymälän valitsinmoduulin avulla käyttäjät voivat syöttää sijainnin (kaupunki, osavaltio, osoite jne.) ja etsiä myymälöitä hakusäteen avulla. Kun moduuli avataan ensimmäisen kerran, se käyttää asiakkaan selaimen sijaintia myymälöiden etsimiseen (jos suostumus on annettu).
 
-Myymälän valitsinmoduuli on integroitu Bing Maps -geokoodauksen ohjelmointirajapintaan, jota käytetään muuntamaan sijainti leveys- ja pituusasteiksi. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä kaupankäynnin yhteiset parametrit -sivulla Dynamics 365 Commercessa.
+## <a name="store-selector-module-usage-in-e-commerce"></a>Myymälän valitsinmoduulin käyttö sähköisessä kaupankäynnissä
 
-Myymälän valitsinmoduuli voidaan lisätä tuotteen tietosivun (PDP) ostolaatikkomoduuliin, jossa näkyvät myymälät, joissa tuote on noudettavissa. Se voidaan lisätä myös ostoskoriin. Kun tuote lisätään ostoskorimoduuliin, myymälän valitsinmoduuli näyttää kunkin ostoskorin rivinimikkeen noutovaihtoehdot. Lisäksi mukautetulla koodauksella tämä moduuli voidaan lisätä muille sivuille tai moduuleihin laajennusten ja mukautuksien kautta.
+- Myymälän valitsinmoduulia voidaan käyttää tuotetietosivulla (PDP), kun halutaan valita noutopaikka.
+- Myymälän valitsinmoduulia voidaan käyttää ostoskorisivulla, kun halutaan valita noutopaikka.
+- Myymälän valitsinmoduulia voidaan käyttää erillisenä sivuna, jolla näytetään kaikki käytettävissä olevat myymälät.
 
-Jotta BOPIS-skenaario toimisi, tuotteet on konfiguroitava Asiakasnouto-toimitustilaan. Muussa tapauksessa moduulia ei näytetä vastaavilla sivuilla. Lisätietoja toimitustilan konfiguroinnista on kohdassa [Toimitustapojen määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+## <a name="bing-maps-integration"></a>Bing Maps -integrointi
+
+Myymälän valitsinmoduuli on integroitu [Bing Maps REST -sovelluksen ohjelmointirajapintoihin](https://docs.microsoft.com/bingmaps/rest-services/). Niitä käytetään Bingin geokoodauksen ja automaattisten ehdotusten ominaisuuksien kanssa. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä Commercen pääkonttorisovelluksen jaettuihin parametreihin. Geokoodauksen ohjelmointirajapintaa käytetään sijainnin muuntamisessa leveys- ja pituusarvoiksi. Integrointia automaattisen ehdotuksen ohjelmointirajapinnan kanssa käytetään näytettäessä hakuehdotukset, kun käyttäjä syöttää sijainnit hakukenttään.
+
+Automaattisen ehdotuksen REST-ohjelmointirajapintaa varten on varmistettava, että seuraavat URL-osoitteet ovat sallittuja (niin kutsuttu sallittujen osoitteiden luettelo) sivuston sisällön suojauskäytännön (CSP) perusteella. Tämä asetus tehdään Commercen sivustonmuodostimessa lisäämällä sallitut URL-osoitteet eri CSP-direktiiveihin sivustolle (esimerkiksi **img-src**). Lisätietoja on kohdassa [Sisällön suojauskäytäntö](manage-csp.md). 
+
+- Lisää **connect-src**-direktiiviin **&#42;.bing.com**.
+- Lisää **img-src**-direktiiviin **&#42;.virtualearth.net**.
+- Lisää **script-src**-direktiiviin **&#42;.bing.com, &#42;.virtualearth.net**.
+- Lisää **skriptin style-src** -direktiiviin **&#42;.bing.com**.
+ 
+## <a name="pickup-in-store-mode"></a>Nouto myymälästä -tila
+
+Myymälän valitsinmoduuli tukee **Nouto myymälästä** -tilaa. Se näyttää niiden myymälöiden luettelon, joissa tuotetta on noudettavana. Se näyttää myös kunkin luettelossa olevan myymälän aukioloajat ja tuotevaraston. Myymälän valitsinmoduuli edellyttää tuotteen kontekstin, jotta tuotteen saatavuus voidaan hahmontaa ja antaa käyttäjälle mahdollisuus lisätä tuote ostoskoriin, jos tuotteen toimitustavaksi on määritetty **nouto** valitusta myymälästä. Lisätietoja on kohdassa [Varastoasetukset](inventory-settings.md). 
+
+Myymälän valitsinmoduuli voidaan lisätä ostoruutumoduuliin PDP:ssä. Näin näytetään myymälät, joissa tuote on noudettavissa. Se voidaan lisätä myös ostoskoriin. Tässä tapauksessa myymälän valitsinmoduuli näyttää noutovaihtoehdot kullekin ostoskorin rivinimikkeelle. Myymälän valitsinmoduuli voidaan myös lisätä muille sivuille tai moduuleihin laajennusten ja mukautuksien kautta.
+
+Jotta tämä skenaario toimisi, tuotteet on konfiguroitava niin, että käytössä on **nouto**-toimitustapa. Muussa tapauksessa moduulia ei näytetä tuotesivuilla. Lisätietoja toimitustilan konfiguroinnista on kohdassa [Toimitustapojen määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Seuraavassa kuvassa on esimerkki PDP:n käytössä olevasta myymälän valitsinmoduulista.
 
 ![Esimerkki myymälän valitsinmoduulista](./media/BOPIS.PNG)
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Myymälän valitsinmoduulin käyttö sähköisessä kaupankäynnissä
+## <a name="find-stores-mode"></a>Etsi myymälät -tila
 
-- Myymälän valitsinmoduulia voidaan käyttää tuotteen tietosivulla (PDP), etsimään lähimyymälöitä, joissa tuote on noudettavissa.
-- Myymälän valitsinmoduulia voidaan käyttää ostoskorisivulla, etsimään lähimyymälöitä, joissa korissa oleva tuote on noudettavissa.
+Myymälän valitsinmoduuli tukee myös **Etsi myymälät** -tilaa. Tämän tilan avulla voidaan luoda myymälän sijaintien sivu, jolla näkyvät käytettävissä olevat myymälät ja niiden tiedot. Tässä tilassa myymälän valitsinmoduuli toimii ilman tuotekontekstia. Sitä voi käyttää erillisenä moduulina millä tahansa sivuston sivulla. Jos lisäksi tarvittavat asetukset ovat käytössä moduulissa, käyttäjät voivat valita myymälän ensisijaiseksi myymäläksi. Kun myymälä valitaan käyttäjän ensisijaiseksi myymäläksi, myymälän tunnusta ylläpidetään selaimen evästeessä. Tämän vuoksi käyttäjän on hyväksyttävä evästeiden käyttöön suostumuksen antava sanoma.
+
+Seuraavassa kuvassa on esimerkki myymälän valitsinmoduulista, jota käytetään yhdessä myymälän sijaintien sivun karttamoduulin kanssa.
+
+![Esimerkki myymälän valitsinmoduulista](./media/ecommerce-Storelocator.PNG)
+
+## <a name="render-a-map"></a>Kartan hahmontaminen
+
+Myymälä valitsinmoduulia voidaan käyttää yhdessä karttamoduulin kanssa, kun halutaan näyttää myymälöiden sijainnit kartalla. Lisätietoja karttamoduulista on kohdassa [Karttamoduuli](map-module.md)
 
 ## <a name="store-selector-module-properties"></a>Myymälän valitsinmoduulin ominaisuudet
 
-| Ominaisuuden nimi             | Arvo                 | kuvaus |
-|---------------------------|-----------------------|-------------|
-| Hakusäde | Numero | Määrittää myymälöiden hakusäteen maileina. Jos arvoa ei määritetä, käytössä on oletushakusäde 50 mailia.|
-|Palveluehdot | URL-osoite    |  Palveluehtojen URL-osoite, joka on pakollinen Bing Maps -palvelussa. |
+| Ominaisuuden nimi | Arvo | kuvaus |
+|---------------|-------|-------------|
+| Otsikko | Teksti | Moduulin otsikko. |
+| Menetelmä | **Etsi myymälät** tai **Nouto myymälästä** | **Etsi myymälät** -tilassa näkyvät käytettävissä olevat myymälät. **Nouto myymälästä** -tilassa käyttäjät voivat valita myymälän, jossa nouto tapahtuu. |
+| Tyyli | **Valintaikkuna** tai **Sisäinen** | Moduuli voidaan hahmontaa sisäisenä tai valintaikkunassa. |
+| Määritä ensisijaiseksi myymäläksi | **Tosi** vai **Epätosi** | Kun tämän ominaisuuden arvo on **Tosi**, käyttäjät voivat määrittää ensisijaisen myymälän. Tämän ominaisuuden käyttäminen edellyttää, että käyttäjät hyväksyvät evästeiden käyttöön suostumuksen antavan sanoman. |
+| Näytä kaikki myymälät | **Tosi** vai **Epätosi** | Kun tämän ominaisuuden arvo on **Tosi**, käyttäjät voivat ohittaa **Hakusäde**-ominaisuuden ja tarkastella kaikkia myymälöitä. |
+| Automaattisen ehdotuksen asetukset: Tulosten enimmäismäärä | Numero | Tämä ominaisuus määrittää automaattisten ehdotusten tulosten enimmäismäärän, jotka näytetään Bingin automaattisten ehdotusten ohjelmointirajapinnan kautta. |
+| Hakusäde | Numero | Tämä ominaisuus määrittää myymälöiden hakusäteen maileina. Jos arvoa ei määritetä, käytössä on oletushakusäde 50 mailia. |
+| Palvelun käyttöehdot | URL-osoite |  Tämä ominaisuus määrittää Bing Maps -palvelun käyttämiseen vaadittavien palvelun käyttöehtojen URL-osoitteen. |
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Myymälän valitsinmoduulin lisääminen sivulle
 
-Myymälän valitsinmoduuli tarvitsee tuotteen kontekstin, joten sitä voi käyttää vain osto- ja ostoskorimoduuleissa. Myymälän valitsinmoduulit eivät toimi näiden moduulien ulkopuolella.
+**Nouto myymälästä** -tilassa moduulia voi käyttää vain PDP:n ja ostoskorisivun avulla. Määritä tilaksi **Nouto myymälästä** moduulin ominaisuusruudussa.
 
 - Lisätietoja myymälän valitsinmoduulin lisäämisestä ostomoduuliin on kohdassa [Ostomoduuli](add-buy-box.md). 
 - Lisätietoja myymälän valitsinmoduulin lisäämisestä ostoskorimoduuliin on kohdassa [Ostoskorimoduuli](add-cart-module.md)
 
+Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän ohjeaiheen kuvassa osoitetulla tavalla. Tämän jälkeen myymälöiden sijaintien sivulla näkyvät käytettävissä olevat myymälät.
+
+1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Markkinointimalli** ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunassa **Markkinointimalli**-malli. Kirjoita **Sivun nimi** -kohtaan **Myymälöiden sijainnit** ja valitse sitten **OK**.
+1. Valitse uudella sivulla **Pää**-paikka. Valitse kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti ja 2 saraketta** -moduuli ja valitse sitten **OK**.
+1. Määritä moduulin ominaisuusruudussa **Leveys**-kohdan arvoksi **Täytä kontti**.
+1. Määritä **Erittäin pienen näkymäportin sarakkeen määritys** -kohdan arvoksi **100 %**.
+1. Määritä **Pienen näkymäportin sarakkeen määritys** -kohdan arvoksi **100 %**.
+1. Määritä **Keskikokoisen näkymäportin sarakkeen määritys** -kohdan arvoksi **33 % 67 %**.
+1. Määritä **Suuren näkymäportin sarakkeen määritys** -kohdan arvoksi **33 % 67 %**.
+1. Valitse **Kontti ja 2 saraketta** -paikassa kolme pistettä (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
+1. Määritä moduulin ominaisuusruudussa **Tila**-kohdan arvoksi **Etsi myymälät**.
+1. Määritä **Hakusäde**-arvo maileina.
+1. Määritä halutessasi muita ominaisuuksia, kuten **Määritä ensisijaiseksi myymäläksi**, **Näytä kaikki myymälät** ja **Ota käyttöön automaattiset ehdotukset**.
+1. Valitse **Kontti ja 2 saraketta** -paikassa kolme pistettä (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kartta**-moduuli ja valitse sitten **OK**.
+1. Määritä moduulin ominaisuusruudussa haluamiasi lisäominaisuuksia.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
+ 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
@@ -80,4 +139,8 @@ Myymälän valitsinmoduuli tarvitsee tuotteen kontekstin, joten sitä voi käytt
 
 [Määritä toimitustavat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Organisaationi Bing Mapsin hallinta](dev-itpro/manage-bing-maps.md)
+[Bing Maps -karttapalvelun hallinta organisaatiossa](dev-itpro/manage-bing-maps.md)
+
+[Bing Maps REST -ohjelmointirajapinta](https://docs.microsoft.com/bingmaps/rest-services/)
+
+[Kartat-moduuli](map-module.md)

@@ -3,7 +3,7 @@ title: Myyntipisteen lähtevä varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen lähtevä varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551622"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646156"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -38,9 +38,9 @@ Microsoft Dynamics 365 Commercen versiossa 10.0.10 ja myöhemmissä versioissa m
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Edellytys: Asynkronisen asiakirjakehyksen määrittäminen
 
-Lähtevä toiminto sisältää suorituskyvyn parantamisen. Näin varmistetaan, että suuria määriä vastaanottokirjauksia käyttävät käyttäjät eri myymälöissä tai yrityksissä ja suurissa varastoasiakirjoissa voivat käsitellä näitä asiakirjoja Commerce Headquarters -sovelluksessa ilman aikakatkaisuja ja virheitä. Nämä parannukset edellyttävät asynkronisen asiakirjakehyksen käyttämistä.
+Lähtevä toiminto sisältää suorituskyvyn parantamisen. Näin varmistetaan, että suuria määriä vastaanottokirjauksia käyttävät käyttäjät eri myymälöissä tai yrityksissä ja suurissa varastoasiakirjoissa voivat käsitellä näitä asiakirjoja Commercen pääkonttorisovelluksessa ilman aikakatkaisuja ja virheitä. Nämä parannukset edellyttävät asynkronisen asiakirjakehyksen käyttämistä.
 
-Kun käytössä on asynkroninen asiakirjakehys, myyntipisteestä lähtevän asiakirjan muutokset voidaan ottaa käyttöön Commerce Headquarters -sovelluksessa ja siirtää sitten muille tehtäville samalla, kun Commerce Headquarters -käsittelyä tehdään taustalla. Voit tarkistaa asiakirjan tilan **Lähtevä toiminto** -asiakirjaluettelosivun avulla myyntipisteessä. Näin voit varmistaa, että kirjaus onnistui. Myyntipistesovelluksessa voidaan käyttää myös lähtevän toiminnon aktiivista asiakirjaluetteloa. Näin nähdään asiakirjat, joita ei voi kirjata Commerce Headquarters -sovellukseen. Jos asiakirja epäonnistuu, myyntipisteen käyttäjät voivat tehdä korjauksia siihen ja yrittää sen käsittelyä uudelleen Commerce Headquarters -sovelluksessa.
+Kun käytössä on asynkroninen asiakirjakehys, myyntipisteestä lähtevän asiakirjan muutokset voidaan ottaa käyttöön Commercen pääkonttorisovelluksessa ja siirtää sitten muille tehtäville samalla, kun Commercen pääkonttorisovellus on taustalla. Voit tarkistaa asiakirjan tilan **Lähtevä toiminto** -asiakirjaluettelosivun avulla myyntipisteessä. Näin voit varmistaa, että kirjaus onnistui. Myyntipistesovelluksessa voidaan käyttää myös lähtevän toiminnon aktiivista asiakirjaluetteloa. Näin nähdään asiakirjat, joita ei voi kirjata Commercen pääkonttorisovellukseen. Jos asiakirja epäonnistuu, myyntipisteen käyttäjät voivat tehdä korjauksia siihen ja yrittää sen käsittelyä uudelleen Commercen pääkonttorisovelluksessa.
 
 > [!IMPORTANT]
 > Asynkroninen asiakirjakehys on määritettävä ennen kuin yritys yrittää käyttää lähtevää toimintoa myyntipisteessä.
@@ -88,22 +88,22 @@ Kun lähtevä toiminto käynnistetään myyntipistesovelluksesta, näkyviin tule
 
 Lähtevien varastoasiakirjojen luettelossa on kolme välilehteä.
 
-- **Aktiivinen** – Tässä välilehdessä ovat siirtotilaukset, joiden tila on **Pyydetty** tai **Osittain lähetetty**. Tilaukset sisältävät rivejä tai rivien määriä, jotka käyttäjän nykyisen myymälän on lähetettävä. Tämä välilehti sisältää myös tilaukset, joiden tila on **Käsitellään HQ:ssa** (eli ne odottavat onnistuneen kirjauksen vahvistusta Commerce Headquarters -sovelluksesta) tai **Käsittely epäonnistui** (eli kirjaaminen Commerce Headquarters -sovellukseen ei onnistunut, joten käyttäjän on korjattava tiedot ja yritettävä lähettää tilaukset uudelleen).
-- **Luonnos** – Tässä välilehdessä ovat käyttäjän luomat uudet lähtevät siirtotilauspyynnöt. Asiakirjat on kuitenkin tallennettu vain paikallisesti. Niitä ei ole vielä lähetetty Commerce Headquarters -sovellukseen käsittelyä varten.
+- **Aktiivinen** – Tässä välilehdessä ovat siirtotilaukset, joiden tila on **Pyydetty** tai **Osittain lähetetty**. Tilaukset sisältävät rivejä tai rivien määriä, jotka käyttäjän nykyisen myymälän on lähetettävä. Tämä välilehti sisältää myös tilaukset, joiden tila on **Käsitellään HQ:ssa** (eli ne odottavat onnistuneen kirjauksen vahvistusta Commercen pääkonttorisovelluksesta) tai **Käsittely epäonnistui** (eli kirjaaminen Commercen pääkonttorisovellukseen ei onnistunut, joten käyttäjän on korjattava tiedot ja yritettävä lähettää tilaukset uudelleen).
+- **Luonnos** – Tässä välilehdessä ovat käyttäjän luomat uudet lähtevät siirtotilauspyynnöt. Asiakirjat on kuitenkin tallennettu vain paikallisesti. Niitä ei ole vielä lähetetty Commercen pääkonttorisovellukseen käsittelyä varten.
 - **Valmis** – Tässä välilehdessä on niiden siirtotilausasiakirjojen luettelo, jotka on lähetetty kokonaan edellisten seitsemän päivän aikana. Tämä välilehti on tarkoitettu vain tiedoksi. Kaikki asiakirjoja koskevat tiedot ovat vain lukumuodossa myymälää varten.
 
 Kun tarkastelet asiakirjoja muilla välilehdillä, **Tila**-kentän avulla saat tietoja asiakirjan vaiheesta.
 
-- **Luonnos** – Siirtotilausasiakirja on tallennettu vain paikallisesti myymälän kanavan tietokantaan. Siirtotilauspyyntöä koskevia tietoja ei ole vielä lähetetty Commerce Headquarters -sovellukseen.
-- **Pyydetty** – Ostotilaus tai siirtotilaus on luotu Commerce Headquarters -sovelluksessa ja se on täysin avoinna. Käyttäjän nykyinen myymälä ei ole vielä käsitellyt asiakirjojen lähetyksiä.
+- **Luonnos** – Siirtotilausasiakirja on tallennettu vain paikallisesti myymälän kanavan tietokantaan. Siirtotilauspyyntöä koskevia tietoja ei ole vielä lähetetty Commercen pääkonttorisovellukseen.
+- **Pyydetty** – Ostotilaus tai siirtotilaus on luotu Commercen pääkonttorisovellukseen ja se on täysin avoinna. Käyttäjän nykyinen myymälä ei ole vielä käsitellyt asiakirjojen lähetyksiä.
 - **Osittain lähetetty** – Siirtotilausasiakirjassa on yksi rivi tai useita rivejä tai osittaisia rivimääriä, jotka on kirjattu lähtevän varaston lähettämiksi. Nämä lähetetyt rivit ovat vastaanotettavissa saapuvan toiminnon kautta.
 - **Kokonaan lähetetty** – Siirtotilauksen kaikki rivit ja kaikki rivimäärät on kirjattu lähtevän varaston lähettämiksi.
 - **Käsittelyssä** – Tämän tilan avulla ilmoitetaan laitteen käyttäjille, että toinen käyttäjä käsittelee asiakirjaa parhaillaan.
 - **Keskeytetty** – Tämä tila näkyy sen jälkeen, kun **Keskeytä vastaanotto** on valittu ja vastaanottoprosessi on pysäytetty väliaikaisesti.
-- **Käsitellään HQ:ssa** – Asiakirja on lähetetty Commerce Headquarters -sovellukseen myyntipistesovelluksesta, mutta sen kirjaaminen Commerce Headquarters -sovellukseen ei onnistunut. Asiakirjaa käsitellään asynkronisen asiakirjan kirjausprosessissa. Kun asiakirjan kirjaaminen Commerce Headquarters -sovellukseen onnistuu, sen tilaksi päivitetään **Kokonaan vastaanotettu** tai **Osittain vastaanotettu**.
-- **Käsittely epäonnistui** – Asiakirja kirjattiin Commerce Headquarters -sovellukseen ja hylättiin. **Tiedot**-ruudussa näkyy kirjaamisen epäonnistumisen syy. Asiakirjaa on muokattava, jotta tietojen virheet voidaan korjata. Tämän jälkeen se lähetetään uudelleen Commerce Headquarters -sovellukseen käsittelyä varten.
+- **Käsitellään HQ:ssa** – Asiakirja on lähetetty Commercen pääkonttorisovellukseen myyntipistesovelluksesta, mutta sen kirjaaminen Commercen pääkonttorisovellukseen ei onnistunut. Asiakirjaa käsitellään asynkronisen asiakirjan kirjausprosessissa. Kun asiakirjan kirjaaminen Commercen pääkonttorisovellukseen onnistuu, sen tilaksi päivitetään **Kokonaan vastaanotettu** tai **Osittain vastaanotettu**.
+- **Käsittely epäonnistui** – Asiakirja kirjattiin Commercen pääkonttorisovellukseen ja hylättiin. **Tiedot**-ruudussa näkyy kirjaamisen epäonnistumisen syy. Asiakirjaa on muokattava, jotta tietojen virheet voidaan korjata. Tämän jälkeen se lähetetään uudelleen Commercen pääkonttorisovellukseen käsittelyä varten.
 
-Kun valitset asiakirjarivin luettelosta, näkyviin tulee **Tiedot**-ruutu. Tässä ruudussa näkyvät asiakirjaa koskevat lisätiedot, kuten lähetys- ja päivämäärätiedot. Tilanneilmaisin osoittaa, miten monta nimikettä on vielä käsiteltävä. Jos asiakirjan käsitteleminen Commerce Headquarters -sovelluksessa ei onnistunut, **Tiedot**-ruudussa näkyy myös virheeseen liittyvät virhesanomat.
+Kun valitset asiakirjarivin luettelosta, näkyviin tulee **Tiedot**-ruutu. Tässä ruudussa näkyvät asiakirjaa koskevat lisätiedot, kuten lähetys- ja päivämäärätiedot. Tilanneilmaisin osoittaa, miten monta nimikettä on vielä käsiteltävä. Jos asiakirjan käsitteleminen Commercen pääkonttorisovelluksessa ei onnistunut, **Tiedot**-ruudussa näkyy myös virheeseen liittyvät virhesanomat.
 
 Asiakirjaluettelosivun näkymässä voit valita sovelluspalkissa **Tilauksen tiedot**, jos haluat tarkastella asiakirjan tietoja. Voit myös aktivoida vastaanottokäsittelyn sallituilla asiakirjariveillä.
 
@@ -125,13 +125,13 @@ Tarkistukset tapahtuvat asiakirjarivien vastaanottoprosessin aikana. Ne sisält�
 
 Commerce-versioon 10.0.12 lisättiin toimintoja, joilla myyntipisteen käyttäjät voivat sulkea tai peruuttaa jäljellä olevat määrät lähtevän tilauksen lähetyksessä, jos lähtevä varasto määrittää, ettei se voi lähettää koko pyydettyä määrää. Määrät voidaan sulkea tai peruuttaa myös myöhemmin. Tämän ominaisuuden käyttäminen edellyttää, että yritys on määritettävä sallimaan siirtotilausten alitoimitus. Lisäksi siirtotilausriville on määritettävä alitoimitusprosentti.
 
-Yritys voidaan määrittää sallimaan siirtotilausten alitoimitus valitsemalla Commerce Headquartersissa **Varastonhallinta \> Asetukset \> Varasto ja varastonhallinnan parametrit**. Ota **Varasto ja varastonhallinnan parametrit** -sivun **Siirtotilaukset**-välilehdessä käyttöön **Hyväksy alitoimitus** -parametri. Synkronoi sitten parametrimuutokset myymäläkanavaa suorittamalla jakelun ajastustyö **1070**.
+Yritys voidaan määrittää sallimaan siirtotilausten alitoimitus valitsemalla Commercen pääkonttorisovelluksessa **Varastonhallinta \> Asetukset \> Varasto ja varastonhallinnan parametrit**. Ota **Varasto ja varastonhallinnan parametrit** -sivun **Siirtotilaukset**-välilehdessä käyttöön **Hyväksy alitoimitus** -parametri. Synkronoi sitten parametrimuutokset myymäläkanavaa suorittamalla jakelun ajastustyö **1070**.
 
-Siirtotilausrivin alitoimitusprosentti voidaan määrittää tuotteissa ennalta tuotteen määrityksen osana Commerce Headquartersissa. Vaihtoehtoisesti ne voidaan määrittää tai korvata tietyllä siirtotilausrivillä Commerce Headquartersissa.
+Siirtotilausrivin alitoimitusprosentti voidaan määrittää tuotteissa ennalta tuotteen määrityksen osana Commerce Headquartersissa. Vaihtoehtoisesti ne voidaan määrittää tai korvata tietyllä siirtotilausrivillä Commercen pääkonttorisovelluksessa.
 
-Kun organisaatio on määrittänyt siirtotilauksen alitoimituksen, käyttäjät näkevät **Sulje jäljellä oleva määrä** -vaihtoehdon **Tiedot**-ruudussa, kun he valitsevat lähtevän siirtotilausrivin myyntipisteen **Lähtevä toiminto** -toiminnon. Kun käyttäjät sitten viimeistelevät lähetyksen **Viimeistele täyttäminen** -toiminnon, he voivat sitten lähettää Commerce Headquartersiin jäljellä olevan lähettämättömän määrän peruutuspyynnön. Jos käyttää valitsee jäljellä olevan määrän sulkemisen, Commerce varmistaa tarkistamalla, että peruutettava määrä on siirtotilausrivillä määritetyn alitoimitusprosentin toleranssin mukainen. Jos alitoimituksen toleranssi ylittyy, käyttäjä saa virhesanoman eikä voi sulkea jäljellä olevaa määrää, ennen kuin aiemmin lähetetty ja nyt lähetettävä määrä on alitoimituksen toleranssin mukainen tai sitä suurempi.
+Kun organisaatio on määrittänyt siirtotilauksen alitoimituksen, myyntipisteen käyttäjät näkevät **Sulje jäljellä oleva määrä** -vaihtoehdon **Tiedot**-ruudussa, kun he valitsevat lähtevän siirtotilausrivin **Lähtevä toiminto** -toiminnon. Kun käyttäjä viimeistee lähetyksen **Viimeistele täyttäminen** -toiminnon, he voivat sitten lähettää Commercen pääkonttorisovellukseen jäljellä olevan lähettämättömän määrän peruutuspyynnön. Jos käyttäjä sulkee jäljellä olevan määrän, Commerce suorittaa vahvistuksen ja tarkistaa, että peruutettava määrä on siirtotilausrivillä määritetyn alitoimitusprosentin toleranssin mukainen. Jos alitoimituksen toleranssi ylittyy, käyttäjä saa virhesanoman eikä voi sulkea jäljellä olevaa määrää, ennen kuin aiemmin lähetetty ja nyt lähetettävä määrä on alitoimituksen toleranssin mukainen tai sitä suurempi.
 
-Kun lähetys on synkronoitu Commerce Headquartersiin, myyntipisteessä siirtotilausrivin **Lähetä nyt** -kentässä määritetyt määrät päivitetään Commerce Headquartersissa lähetettyyn tilaan. Kaikkia lähettämättömiä määriä, joita olisi aiemmin pidetty lähetettävänä jäljellä olevana määränä (eli myöhemmin lähetettävänä määränä), pidetään sen sijaan peruutettuina määrinä. Siirtotilausrivin lähetettävän jäljellä olevan määrän arvo on **0** (nolla), ja rivi katsotaan kokonaisuudessaan lähetetyksi.
+Kun lähetys on synkronoitu Commercen pääkonttorisovellukseen, myyntipisteessä siirtotilausrivin **Lähetä nyt** -kentässä määritetyt määrät päivitetään Commercen pääkonttorisovelluksessa lähetettyyn tilaan. Kaikkia lähettämättömiä määriä, joita olisi aiemmin pidetty lähetettävänä jäljellä olevana määränä (eli myöhemmin lähetettävänä määränä), pidetään sen sijaan peruutettuina määrinä. Siirtotilausrivin lähetettävän jäljellä olevan määrän arvo on **0** (nolla), ja rivi katsotaan kokonaisuudessaan lähetetyksi.
 
 ### <a name="shipping-location-controlled-items"></a>Lähetyksen sijaintiohjatut nimikkeet
 
@@ -149,9 +149,22 @@ Käytä **Peruuta täyttäminen** -toiminto sovelluspalkissa vain, jos haluat pe
 
 ### <a name="pause-fulfillment"></a>Keskeytä toimitus
 
-Jos olet täyttämässä siirtotilausta, voit käyttää **Keskeytä täyttäminen** -toimintoa ja keskeyttää prosessin. Voit esimerkiksi haluta suorittaa myyntipisteessä toisen toiminnon, kuten soittaa asiakasmyyntiin, tai tehdä lähetyksen kirjauksen Commerce Headquarters -sovellukseen myöhemmin.
+Jos olet täyttämässä siirtotilausta, voit käyttää **Keskeytä täyttäminen** -toimintoa ja keskeyttää prosessin. Voit esimerkiksi haluta suorittaa myyntipisteessä toisen toiminnon, kuten soittaa asiakasmyyntiin, tai tehdä lähetyksen kirjauksen Commercen pääkonttorisovellukseen myöhemmin.
 
 Kun valitset **Keskeytä täyttäminen** -vaihtoehdon, asiakirjan tilaksi muutetaan **Keskeytetty**. Näin käyttäjä tietää, mitä tietoja asiakirjaan on syötetty ja että asiakirjaa ei ole vielä vahvistettu. Kun olet valmis jatkamaan täyttämisprosessia, valitse keskeytetty asiakirja ja valitse sitten **Tilauksen tiedot**. Kaikki aiemmin tallennetut **Lähetys nyt** -määrät säilytetään. Ne näkyvät **Täydellinen tilausluettelo** -näkymässä.
+
+### <a name="review"></a>Tarkista
+
+Ennen lopullista sitoutumista Commercen pääkonttorisovellukseen toimituksesta, voit käyttää **Tarkista**-toimintoa ja vahvistaa lähtevän asiakirjan. Tämä toiminto kertoo mahdollisista puuttuvista tai virheellisistä tiedoista, jotka saattavat aiheuttaa käsittelyvirheen, sekä antaa mahdollisuuden korjata ongelmia ennen täydennyspyynnön lähettämistä. Jos haluat ottaa käyttöön **Tarkista**-toiminnon sovelluspalkissa, ota käyttöön **Ota käyttöön vahvistus myyntipisteen saapuvissa ja lähtevissä varastotoiminnoissa** -ominaisuus ominaisuuksien hallinnassa Commercen pääkonttorisovelluksessa.
+
+**Tarkista**-toiminto vahvistaa seuraavat ongelmat lähtevässä asiakirjassa:
+- **Ylilähetys** - lähetyksen määrä on suurempi kuin tilattu määrä. Commercen pääkonttorisovelluksen ylitoimituksen määritys määrittää tämän ongelman vakavuuden.
+- **Alilähetys** - lähetyksen määrä on pienempi kuin tilattu määrä. Commercen pääkonttorisovelluksen alitoimituksen määritys määrittää tämän ongelman vakavuuden.
+- **Sarjanumero** – sarjanumeroa ei ole annettu tai se ei ole käytettävissä sarjoitetulle nimikkeelle, joka vaatii sarjanumeron rekisteröimisen varastossa.
+- **Sijaintia ei ole määritetty** – sijaintia ei ole määritetty sijaintiohjatulle nimikkeelle, jossa sijainti ei saa olla tyhjä.
+- **Poistetut rivit** – Commercen pääkonttorisovelluksen käyttäjä, joka myyntipistesovellus ei tunne, on poistanut tilauksen rivejä.
+
+Jos määrität **Ota käyttöön automaattinen vahvistus** -parametrin arvoksi **Kyllä** kohdassa **Commerce-parametrit** > **Varasto** > **Myymälän varasto**, vahvistus tehdään automaattisesti, kun valitset **Viimeistele toimitus** -toiminnon.
 
 ### <a name="finish-fulfillment"></a>Viimeistele toimitus
 
@@ -163,15 +176,15 @@ Kun käytetään asynkronista asiakirjojen käsittelyä, kuitti lähetetään as
 
 Käyttäjät voivat luoda myyntipisteessä uusia siirtotilausasiakirjoja. Aloita prosessi valitsemalla **Uusi** sovelluspalkissa, kun olet **Lähtevä toiminto** -pääasiakirjaluettelossa. Tämän jälkeen sinua pyydetään valitsemaan **Siirron kohde** -varasto, tai myymälä, johon nykyinen myymälä lähettää varaston. Mahdollisia arvoja ovat myymälän täyttämisryhmän kokoonpanossa määritetyt arvot. Nykyinen myymälä on aina lähtevän siirtopyynnön **Siirron lähde** -varasto siirtotilauksessa. Arvoa ei voi muuttaa.
 
-Voit syöttää arvot **Lähetyspäivä**-, **Vastaanottopäivä**- ja **Toimitustapa** -kenttiin haluamallasi tavalla. Voit myös lisätä muistiinpanon, joka tallennetaan yhdessä siirtotilauksen otsikon kanssa liitteenä asiakirjaan Commerce Headquarters -sovelluksessa.
+Voit syöttää arvot **Lähetyspäivä**-, **Vastaanottopäivä**- ja **Toimitustapa** -kenttiin haluamallasi tavalla. Voit myös lisätä muistiinpanon, joka tallennetaan yhdessä siirtotilauksen otsikon kanssa liitteenä asiakirjaan Commercen pääkonttorisovelluksessa.
 
 Kun otsikon tiedot on luotu, voit lisätä siirtotilaukseen tuotteita. Aloita nimikkeiden ja pyydettyjen määrien lisääminen skannaamalla viivakoodit tai valitsemalla **Lisää tuote**.
 
-Kun lähtevän siirtotilauksen rivit on syötetty, valitse **Tallenna** ja tallenna asiakirjan muutokset paikallisesti tai valitse **Lähetä pyyntö** ja lähetä tilauksen tiedot Commerce Headquarters -sovellukseen lisäkäsittelyä varten. Jos valitset **Tallenna**, oletusasiakirja tallennetaan kanavan tietokantaan. Lähtevä varasto voi suorittaa asiakirjan vasta, kun se on käsitelty onnistuneesti **Lähetä pyyntö** -kohdassa. Valitse **Tallenna** vain, jos et ole valmis vahvistamaan pyyntöä Commerce Headquarters -sovelluksessa käsittelyä varten.
+Kun lähtevän siirtotilauksen rivit on syötetty, valitse **Tallenna** ja tallenna asiakirjan muutokset paikallisesti tai valitse **Lähetä pyyntö** ja lähetä tilauksen tiedot Commercen pääkonttorisovellukseen lisäkäsittelyä varten. Jos valitset **Tallenna**, oletusasiakirja tallennetaan kanavan tietokantaan. Lähtevä varasto voi suorittaa asiakirjan vasta, kun se on käsitelty onnistuneesti **Lähetä pyyntö** -kohdassa. Valitse **Tallenna** vain, jos et ole valmis vahvistamaan pyyntöä Commercen pääkonttorisovelluksessa käsittelyä varten.
 
 Jos asiakirja tallennetaan paikallisesti, se löytyy **Luonnokset**-välilehdestä **Saapuva toiminto** -asiakirjaluettelosta. Kun asiakirjan tila on **Luonnos**, voit muokata sitä valitsemalla **Muokkaa**. Voit päivittää, lisätä tai poistaa rivejä tarvittaessa. Voit myös poistaa koko asiakirjan, kun sen tila on **Luonnos**, valitsemalla **Poista** **Luonnokset**-välilehdessä.
 
-Kun luonnosasiakirjan lähettäminen Commerce Headquarters -sovellukseen onnistuu, se näkyy **Aktiivinen**-välilehdessä ja sen tila on **Pyydetty**. Tässä vaiheessa vain lähtevän varaston käyttäjät voivat muokata asiakirjaa valitsemalla myyntipisteessä **Lähtevä toiminto** -kohdan. Saapuvan varaston käyttäjät voivat tarkastella siirtotilausta **Aktiivinen**-välilehdessä **Saapuva toiminto** -asiakirjaluettelossa, mutta he eivät voi muokata tai poistaa sitä. Muokkauksen lukituksen avulla voidaan välttää ristiriidat, koska saapuva pyytäjä muuttaa siirtotilausta samalla kuin lähtevien huolitsija keräilee ja lähettää tilausta aktiivisesti. Jos saapuvasta myymälästä tai varastosta on saatava muutoksia siirtotilauksen lähettämisen jälkeen, lähtevien huolitsijaan on otettava yhteyttä ja pyydettävä muutosten käyttöönottoa.
+Kun luonnosasiakirjan lähettäminen Commercen pääkonttorisovellukseen onnistuu, se näkyy **Aktiivinen**-välilehdessä ja sen tila on **Pyydetty**. Tässä vaiheessa vain lähtevän varaston käyttäjät voivat muokata asiakirjaa valitsemalla myyntipisteessä **Lähtevä toiminto** -kohdan. Saapuvan varaston käyttäjät voivat tarkastella siirtotilausta **Aktiivinen**-välilehdessä **Saapuva toiminto** -asiakirjaluettelossa, mutta he eivät voi muokata tai poistaa sitä. Muokkauksen lukituksen avulla voidaan välttää ristiriidat, koska saapuva pyytäjä muuttaa siirtotilausta samalla kuin lähtevien huolitsija keräilee ja lähettää tilausta aktiivisesti. Jos saapuvasta myymälästä tai varastosta on saatava muutoksia siirtotilauksen lähettämisen jälkeen, lähtevien huolitsijaan on otettava yhteyttä ja pyydettävä muutosten käyttöönottoa.
 
 Kun asiakirjan tila on **Pyydetty**, se on valmis lähtevän varaston täyttämiskäsittelyä varten. Kun lähetystä käsitellään käyttämällä lähtevää toimintoa, siirtotilausasiakirjojen tila päivitetään **Pyydetty**-tilasta **Kokonaan lähetetty**- tai **Osittain lähetetty** -tilaksi. Kun asiakirjojen tila on **Kokonaan lähetetty** tai **Osittain lähetetty**, saapuva myymälä tai varasto voi kirjata vastanotot niiden avulla käyttämällä saapuvan toiminnon vastaanottoprosessia.
 
