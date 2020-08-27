@@ -2751,6 +2751,8 @@
                       href: inventory/warehouse-template.md
                     - name: Työnhallinta työmallien ja sijaintidirektiivien avulla
                       href: warehousing/control-warehouse-location-directives.md
+                    - name: Toimipaikkadirektiivien luominen
+                      href: warehousing/create-location-directive.md
                     - name: Aallon vaihekoodit
                       href: warehousing/wave-step-codes.md
                     - name: Aaltokäsittelyn määritys
@@ -2821,6 +2823,8 @@
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
             - name: Uuden kuljetuksenhallintamoduulin luominen
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Käytettävissä olevan varaston tietoyksiköiden laajentaminen
+              href: inventory/extend-on-hand-entities.md
     - name: Finance and Operations -sovellusten kehitys ja hallinnointi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

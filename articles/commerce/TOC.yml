@@ -408,12 +408,6 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Asiakasohjelman tallennekuvat myyntipisteessä
                           href: pos-image.md
-                    - name: Asiakastilaukset
-                      items:
-                        - name: 'MPOS:n asiakastilaukset'
-                          href: customer-orders-overview.md
-                        - name: Asiakkaiden yhdistelmätilaukset
-                          href: hybrid-customer-orders.md
                     - name: Myyjät
                       items:
                         - name: Provisioiden seuranta myyntipisteessä myyntiryhmien avulla
@@ -630,6 +624,8 @@
                       href: personalized-recommendations.md
                     - name: Kohdennetuista tuotesuosituksista kieltäytyminen
                       href: personalization-gdpr.md
+                - name: Vastaavien tuotteiden ostosuositusten ottaminen käyttöön
+                  href: shop-similar-looks.md
                 - name: Myyntipistekokemukset
                   items:
                     - name: Tuotesuositusten lisääminen myyntipisteessä
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Tilausten hallinta
           items:
+            - name: Asiakastilaukset
+              items:
+                - name: 'MPOS:n asiakastilaukset'
+                  href: customer-orders-overview.md
+                - name: Asiakkaiden yhdistelmätilaukset
+                  href: hybrid-customer-orders.md
             - name: Myyntitilaukset
               items:
                 - name: Puhelinkeskustilauksen luominen
@@ -988,6 +990,12 @@
                       href: cart-icon-module.md
                     - name: Kassamoduuli
                       href: add-checkout-module.md
+                    - name: Maksumoduuli
+                      href: payment-module.md
+                    - name: Toimitusosoitemoduuli
+                      href: ship-address-module.md
+                    - name: Toimitusvaihtoehtomoduuli
+                      href: delivery-options-module.md
                     - name: Tilauksen tiedot -moduuli
                       href: order-confirmation-module.md
                     - name: Lahjakorttimoduuli
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Evästeen ohjelmointirajapinnan yleiskatsaus
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Vuorovaikutteisten osien yleiskatsaus
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Moduulien globalisoiminen CultureInfoFormatter-luokan avulla
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Tietotoimintojen kehittäminen
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Komentosarjan lisäystoiminnot
                       href: e-commerce-extensibility/script-injector.md
+                - name: Yhdistimet
+                  items:
+                    - name: Yhdistimien määrittäminen ja ottaminen käyttöön
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetria ja analytiikka
                   items:
                     - name: Telemetrian kirjaustoiminto
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: 'Retail SDK:n tulevat muutokset'
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Tärkeät kehitys- ja ALM-muutokset versioissa 10.0.10–10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Commerce- ja Finance and Operations -koontijärjestelmien yhdistäminen
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: 'Retail SDK:n siirtäminen Visual Studio 2015:stä Visual Studio 2017:ään'
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Serverin laajennettavuus
               items:
-                - name: Commerce Scale Unitin OData-ohjaimen laajentaminen
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Commerce Scale Unitin asiakas- ja kuluttajaohjelmointirajapinnat
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Commerce Scale Unitin metatietojen ohjaimen laajentaminen
-                  href: dev-itpro/extend-metadata.md
-                - name: CRT-palvelun kutsuminen offline-tilassa
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Uuden Retail Server -laajennuksen luominen
+                - name: Uuden Retail Server -ohjelmointirajapintalaajennuksen luominen (Retail SDK -versio 10.0.11 ja uudemmat)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: Uuden Retail Server -ohjelmointirajapintalaajennuksen luominen (Retail SDK -versio 10.0.11 ja aiemmat)
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript ja C# proxy
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: 'CRT:n ja Retail Serverin laajennettavuus'
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Asiakkaan valintatietojen lisääminen kanavatietokantoihin
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Vähittäismyyntikanavien salaisuuksien hallinta
                   href: dev-itpro/manage-secrets.md
                 - name: 'CRT:n laajennettavuus ja käynnistimet'
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Tapahtumien estäminen käynnistimien avulla
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Palautuskäytännön toteuttaminen käynnistimien avulla
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Kanta-asiakaslaajennus
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Pakkausluetteloiden laajennuspisteet

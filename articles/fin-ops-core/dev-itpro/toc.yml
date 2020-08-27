@@ -156,6 +156,8 @@
                           items:
                             - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Useiden entiteettikarttojen käsitteleminen
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Yrityksen muokkaaminen kaksoiskirjoituksen käyttöönoton jälkeen
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Virheiden hallinta ja hälytysilmoitukset
