@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fabf08e8dde1b9b6d27af3e42d3aaff904b467b0
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 7afe9225b8fc966ca154a5eb7421e8d4cc7c3023
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454530"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664831"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Tuotesuositusten lisääminen myyntipisteessä
 
@@ -80,6 +80,8 @@ Voit määrittää tuotesuositukset noudattamalla seuraavia ohjeita:
 [Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
+
+["Osta samankaltaisia tyylejä" -suositusten käyttöönotto](shop-similar-looks.md)
 
 [Suositusten lisääminen tapahtumanäyttöön](add-recommendations-control-pos-screen.md)
 

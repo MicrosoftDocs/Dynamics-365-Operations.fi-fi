@@ -3,7 +3,7 @@ title: Prosessien automatisointi
 description: Tässä ohjeaiheessa on tietoja siitä, miten prosessien automatisointi mahdollistaa eräpalvelimen käyttämien prosessien yksinkertaisen aikatauluttamisen.
 author: RyanCCarlson2
 manager: tonyafehr
-ms.date: 06/24/2020
+ms.date: 08/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: 2ab4e7510ff98b9fbf0223096b905e9de47f52e1
-ms.sourcegitcommit: 1833c1e07a32c8ad41e4a1516e78100ae04a2156
+ms.openlocfilehash: 320e18f7fc61300ed2966afef530907fc9fc5ca5
+ms.sourcegitcommit: e2a47d31175bbd60acfd7a23ffea70c669358572
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3508182"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "3690043"
 ---
 # <a name="process-automation"></a>Prosessien automatisointi
 
@@ -32,6 +32,8 @@ Prosessien automatisointi mahdollistaa eräpalvelimen käyttämien prosessien yk
 ## <a name="administration"></a>Hallinto
 
 Kaikkien prosessien automatisointien keskitetty hallintasivu löytyy **Asetukset**-valikon Järjestelmänhallinta-moduulista. Tällä sivulla luetellaan kaikki järjestelmään määritetyt automaattiset prosessit (sarjat). Sen avulla voit myös lisätä uusia prosessiautomaatioita suoraan tältä sivulta. Kun sarja on määritetty, voit hallita kutakin sarjaa tästä luettelosta. Voit halutessasi muokata koko sarjaa, poistaa sen, tarkastella kaikkia luettelonäkymän esiintymiä tai poistaa sarjan käytöstä, jos haluat keskeyttää ajoitetun työn tietyn ajanjakson ajaksi. 
+
+Kaikki ominaisuuksien hallinnassa käytöstä poistetut prosessit eivät näy, kun toiminto on poistettu käytöstä. Lisäksi prosessiautomaation ajoitusmoduuli ei ajoita esiintymiä tai taustaprosesseja käytöstä poistetun ominaisuuden osalta. Kun ominaisuus otetaan uudelleen käyttöön, kaikki ajoitetut esiintymät tai taustaprosessit suoritetaan heti.
 
 ## <a name="calendar-view"></a>Kalenterinäkymä 
 Yksi prosessin automaation tärkeimmistä eduista on mahdollisuus tarkastella ajoitettua työtä yksinkertaisessa kalenterinäkymässä.  Tämän näkymän avulla voit tarkastella töitä viikon kerrallaan. Tämä näkymä näkyy **Prosessin automatisointi** -sivun oikealla puolella. Valitun sarjan ajoitettu työmäärä täytetään. 

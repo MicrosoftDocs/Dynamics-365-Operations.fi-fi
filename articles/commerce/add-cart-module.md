@@ -3,7 +3,7 @@ title: Ostoskorimoduuli
 description: Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f21268ed4cffed1d5c789f722796cdf05e965819
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621033"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686763"
 ---
 # <a name="cart-module"></a>Ostoskorimoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
@@ -42,9 +43,17 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta.
 
 ![Esimerkki ostoskärrymoduulista](./media/cart2.PNG)
 
+Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta. Tässä esimerkissä rivinimikkeelle on käsittelymaksu.
+
+![Esimerkki ostoskärrymoduulista](./media/ecommerce-handling-fee.png)
+
 ## <a name="cart-module-properties-and-slots"></a>Ostoskorimoduulin ominaisuudet ja paikat
 
-Ostoskorimoduulissa on **Otsikko**-ominaisuus, jonka arvoiksi voidaan määrittää esimerkiksi **Ostoskassi** ja **Ostoskorin nimikkeet**. 
+| Ominaisuus | Arvot | kuvaus |
+|----------------|--------|-------------|
+| Otsikko | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Otsikko ostoskorille, kuten Ostoskassi tai Ostoskorin nimikkeet. |
+| Näytä Loppunut varastosta -virheet | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, ostoskori-sivulla näkyvät varastoon liittyvät virheet. On suositeltavaa määrittää tämän ominaisuuden arvoksi **Tosi**, jos varastotarkistuksia käytetään toimipaikassa. |
+| Näytä rivinimikkeiden kuljetusmaksut | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, ostoskorin rivinimikkeissä näkyy kuljetusmaksut, jos nämä tiedot ovat käytettävissä. Tämä toiminto ei ole tuettu Fabrikam-teemassa, koska käyttäjät valitsevat lähetyksen vain kassavirrasta. Tämä toiminto voidaan kuitenkin ottaa käyttöön muissa työnkuluissa, jos se on sovellettavissa. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduulit, joita voidaan käyttää ostoskorimoduulissa
 
@@ -67,7 +76,7 @@ Ostoskorimoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 
 Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi uuden osan.
+1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
 1. Valitse **Uusi sivun osa** -valintaikkunassa **Ostoskori**-moduuli.
 1. Kirjoita **Sivun osan nimi** -kohtaan **Ostoskorin osa** ja valitse sitten **OK**.
 1. Valitse **Ostoskori**-paikka.
@@ -77,7 +86,7 @@ Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset omin
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan mallin nimi.
-1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää sivun osa**.
 1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoskorin osa** ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
@@ -87,22 +96,18 @@ Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset omin
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
-
-[Konttimoduuli](add-container-module.md)
-
-[Myymälän valitsinmoduuli](store-selector.md)
-
-[Ostoruutumoduuli](add-buy-box.md)
-
 [Ostoskorikuvakemoduuli](cart-icon-module.md)
 
 [Kassamoduuli](add-checkout-module.md)
 
-[Tilauksen vahvistusmoduuli](order-confirmation-module.md)
+[Maksumoduuli](payment-module.md)
 
-[Ylätunnistemoduuli](author-header-module.md)
+[Toimitusosoitemoduuli](ship-address-module.md)
 
-[Alatunnistemoduuli](author-footer-module.md)
+[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+
+[Tilauksen tiedot -moduuli](order-confirmation-module.md)
+
+[Lahjakorttimoduuli](add-giftcard.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)

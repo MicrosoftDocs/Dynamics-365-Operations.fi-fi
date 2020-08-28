@@ -19,15 +19,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025689"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686643"
 ---
 # <a name="add-a-logo"></a>Logon lisääminen
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,7 +50,7 @@ Ennen kuin voit lisätä logon sivustosi kaikille sivuille, sinun on suoritettav
 
 Jos haluat lisätä logon sivustosi otsikko-osaan, toimi seuraavasti.
 
-1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivut osat**.
+1. Valitse vasemmanpuoleisessa siirtymisruudussa **Osat**.
 1. Valitse aiemmin luomasi otsikon osa ja valitse sitten **Muokkaa**.
 1. Laajenna otsikkomoduuli.
 1. Anna logon kuva ja linkki otsikkomoduulin ominaisuusruudussa. 

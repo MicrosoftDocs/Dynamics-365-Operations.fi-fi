@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464927"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661169"
 ---
 # <a name="order-details-module"></a>Tilauksen tiedot -moduuli
-
 
 [!include [banner](includes/banner.md)]
 
@@ -72,16 +71,16 @@ Voit lisätä tilaustietomoduulin uudelle sivulle ja määrittää pakolliset om
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
-
-[Konttimoduuli](add-container-module.md)
-
-[Ostoruutumoduuli](add-buy-box.md)
-
 [Ostoskorimoduuli](add-cart-module.md)
+
+[Ostoskorikuvakemoduuli](cart-icon-module.md)
 
 [Kassamoduuli](add-checkout-module.md)
 
-[Ylätunnistemoduuli](author-header-module.md)
+[Maksumoduuli](payment-module.md)
 
-[Alatunnistemoduuli](author-footer-module.md)
+[Toimitusosoitemoduuli](ship-address-module.md)
+
+[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+
+[Lahjakorttimoduuli](add-giftcard.md)

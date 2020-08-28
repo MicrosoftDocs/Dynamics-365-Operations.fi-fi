@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645336"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686667"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
@@ -61,7 +61,7 @@ Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen oh
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduulit, joita voidaan käyttää ostoruutumoduulissa
 
-- **Mediavalikoima** – Tämän moduulin avulla esitellään tuotteen kuvat tuotetietosivulla. Lisätietoja tästä moduulista on kohdassa [Mediavalikoimamoduuli](mediagallery-module.md).
+- **Mediavalikoima** – Tämän moduulin avulla esitellään tuotteen kuvat tuotetietosivulla. Lisätietoja tästä moduulista on kohdassa [Mediavalikoimamoduuli](media-gallery-module.md).
 - **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Lisätietoja tästä moduulista on kohdassa [Myymälävalitsinmoduuli](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ostoruutumoduulin asetukset
@@ -84,7 +84,7 @@ Ostoruutumoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 
 Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi uuden osan.
+1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
 1. Valitse **Uusi sivun osa** -valintaikkunassa **Ostoruutu**-moduuli.
 1. Kirjoita **Sivun osan nimi** -kohtaan **Ostoruudun osa** ja valitse sitten **OK**.
 1. Valitse ostoruutumoduulissa **Mediavalikoima**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.

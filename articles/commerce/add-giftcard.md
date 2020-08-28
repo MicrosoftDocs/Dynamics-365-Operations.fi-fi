@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411109"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661239"
 ---
 # <a name="gift-card-module"></a>Lahjakorttimoduuli
 
@@ -63,8 +63,18 @@ Lisätietoja lahjakorttimoduulin lisäämisestä kassasivulle ja tarvittavien om
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+[Ostoskorimoduuli](add-cart-module.md)
+
+[Ostoskorikuvakemoduuli](cart-icon-module.md)
 
 [Kassamoduuli](add-checkout-module.md)
+
+[Maksumoduuli](payment-module.md)
+
+[Toimitusosoitemoduuli](ship-address-module.md)
+
+[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+
+[Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Ulkoisten lahjakorttien tuki](./dev-itpro/gift-card.md)

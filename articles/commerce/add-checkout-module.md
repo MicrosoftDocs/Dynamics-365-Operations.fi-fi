@@ -3,7 +3,7 @@ title: Kassamoduuli
 description: Tässä ohjeaiheessa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bd1d66fc39872019fc38dbbfb56dc3015d57d0dd
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411181"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686739"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 
@@ -45,43 +45,58 @@ Seuraavassa kuvassa on esimerkki Fabrikam-kassamoduulista maksusivulla.
 
 Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittavat toiminnot. Kaikkien tilauksen tekemiseen tarvittavien asiakastietojen keräämistä varten kassamoduuliin on lisättävä lisämoduuleja. Niinpä vähittäismyyjät voivat lisätä mukautettuja moduuleja kassatyönkulkuun tai jättää niitä pois omien tarpeiden mukaan.
 
-### <a name="modules-that-can-be-used-in-the-checkout-module"></a>Moduulit, joita voidaan käyttää kassamoduulissa
+| Ominaisuuden nimi | Arvot | kuvaus |
+|----------------|--------|-------------|
+| Kassalle-osan otsikko | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Kassamoduuliin otsikko. |
+| Tilauksen yhteenvedon otsikko | Otsikon teksti | Moduulin tilausyhteenveto-osan otsikko. |
+| Ostoskorin rivinimikkeiden otsikko | Otsikon teksti | Kassalle-moduulissa näkyvien ostoskorien rivinimikkeiden otsikko. |
+| Näytä online-nimikkeen lähetyskulut | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, rivinimikkeisiin sovellettavat toimituskulut näytetään ostoskoririveillä. Jos **otsikkomaksu, jossa ei ole suhteellinen jako** -ominaisuutta, on käytössä Commerce Headquarters -sovelluksessa, toimituskuluja käytetään otsikkotasolla, ei rivitasolla. Tämä ominaisuus lisättiin Commercen versioon 10.0.13. |
 
-- **Toimitusosoite** – Tämän moduulin avulla asiakas voi lisätä tai valita tilauksen toimitusosoitteen. Jos asiakas on kirjautunut sisään, kaikki kyseiselle asiakkaalle aiemmin tallennetut osoitteet näytetään. Asiakas voi valita näistä osoitteista. Asiakas voi myös lisätä uuden osoitteen. Toimitusosoitetta käytetään kaikissa tilauksen nimikkeissä, jotka edellyttävät toimitusta. Sitä ei voi mukauttaa yksittäisille rivinimikkeille. Toimitusosoitteen muodot määritetään kullekin maalle tai alueelle. Maa-/aluekohtaiset säännöt tulevat voimaan tässä moduulissa. Vaikka tämä moduuli ei sisällä osoitteen vahvistusta, osoitteen tarkistus voidaan toteuttaa mukautuksen avulla. Jos tilauksessa on vain myymälästä noudettavia nimikkeitä, tämä moduuli piilotetaan automaattisesti.
+## <a name="modules-that-can-be-used-in-the-checkout-module"></a>Moduulit, joita voidaan käyttää kassamoduulissa
+
+- **Toimitusosoite** – Tämän moduulin avulla asiakas voi lisätä tai valita tilauksen toimitusosoitteen. Lisätietoja tästä moduulista on kohdassa [Toimitusosoitemoduuli](ship-address-module.md).
 
     Seuraavassa kuvassa on esimerkki toimitusosoitemoduulista maksusivulla.
 
     ![Esimerkki toimitusosoitemoduulista](./media/ecommerce-shippingaddress.PNG)
 
-- **Toimitusvaihtoehdot** – Tämän moduulin avulla asiakas voi valita tilauksen toimitusvaihtoehdon. Toimitusvaihtoehdot perustuvat toimitusosoitteeseen. Jos toimitusosoitetta muutetaan, toimitusvaihtoehdot on noudettava uudelleen. Jos tilauksessa on vain myymälästä noudettavia nimikkeitä, tämä moduuli piilotetaan automaattisesti.
+- **Toimitusvaihtoehdot** – Tämän moduulin avulla asiakas voi valita tilauksen toimituksen tilan. Lisätietoja tästä moduulista on kohdassa [Toimitusvaihtoehdot -moduuli](delivery-options-module.md).
 
     Seuraavassa kuvassa on esimerkki toimitusvaihtoehdot-moduulista maksusivulla.
-
+ 
     ![Esimerkki toimitusvaihtoehdot-moduulista](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kassa-osan säilö** – Tämä moduuli on säilö, jonka sisään asetetaan useita moduuleja. Ne luovat osan kassatyönkulun sisälle. Tähän säilöön voi asettaa esimerkiksi kaikki maksuun liittyvät moduulit, jolloin ne näkyvät yhtenä osana. Tämä moduuli vaikuttaa vain työnkulun asetteluun.
-- **Lahjakortti** – Tämän moduulin avulla asiakas voi maksaa tilauksen käyttämällä lahjakorttia. Tämä tukee vain Microsoft Dynamics 365 Commercen lahjakortteja. Tilaukseen voi käyttää yhtä tai useaa lahjakorttia. Jos lahjakortin saldo ei kata ostoskorin summaa, lahjakortti voidaan yhdistää toiseen maksutapaan. Lahjakortteja voi lunastaa vain, jos asiakas on kirjautunut sisään.
+
+- **Lahjakortti** – Tämän moduulin avulla asiakas voi maksaa tilauksen käyttämällä lahjakorttia. Lisätietoja tästä moduulista on kohdassa [Lahjakorttimoduuli](add-giftcard.md).
+
 - **Kanta-asiakkuuspisteet** – Tämän moduulin avulla asiakas voi maksaa tilauksen käyttämällä kanta-asiakkuuspisteitä. Se sisältää yhteenvedon käytettävissä olevista ja vanhenevista pisteistä. Sen avulla asiakas voi valita lunastettavien pisteiden määrän. Jos asiakas ei ole kirjautunut sisään tai ei ole kanta-asiakasohjelman jäsen tai jos ostoskorin kokonaissumma on 0 (nolla), tämä moduuli piilotetaan automaattisesti.
-- **Maksu** – Tämän moduulin avulla asiakas voi maksaa tilauksen käyttämällä luottokorttia. Jos ostoskorin kokonaissumma katetaan kanta-asiakkuuspisteillä tai lahjakortilla tai jos summa on 0 (nolla), tämä moduuli piilotetaan automaattisesti. Luottokortin integroinnin tässä moduulissa tarjoaa Adyen-maksuyhdistin. Lisätietoja tämän yhdistimen käyttämisestä on kohdassa [Dynamics 365:n Adyen-maksuyhdistin](dev-itpro/adyen-connector.md).
-- **Laskutusosoite** – Tämän moduulin avulla asiakas voi antaa laskutustiedot. Adyen käsittelee nämä tiedot yhdessä luottokorttitietojen kanssa. Tämä moduuli sisältää vaihtoehdon, jonka avulla asiakkaat voivat käyttää laskutusosoitetta toimitusosoitteena.
 
-    Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksu- ja laskutusosoitemoduuleista maksusivulla.
+- **Maksu** – Tämän moduulin avulla asiakas voi maksaa tilauksen käyttämällä luotto- tai maksukorttia. Asiakkaat voivat myös määrittää laskutusosoitteen valitsemalleen maksutavalle. Lisätietoja tästä moduulista on kohdassa [Maksumoduuli](payment-module.md).
 
-    ![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksu- ja laskutusosoitemoduulista](./media/ecommerce-payments.PNG)
+    Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla.
+
+    ![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla](./media/ecommerce-payments.PNG)
 
 - **Yhteystiedot** – Tämän moduulin avulla asiakas voi lisätä tai muuttaa tilauksen yhteystietoja (sähköpostiosoitetta).
 
 - **Tekstilohko** – Tämä moduuli sisältää kaiken viestinnän, jota sisällönhallintajärjestelmä (CMS) ohjaa. Viestintää voi olla esimerkiksi seuraava viesti: Jos tilaamisessa on ongelmia, soita numeroon 1-800-Fabrikam. 
 
+- **Kassan käyttöehdot** – Tässä moduulissa näkyy RTF-teksti, joka sisältää käyttöehdot sekä asiakkaan syötön valintaruudun. Valintaruutu on valinnainen ja konfiguroitavissa. Moduuli ottaa syötteen talteen, ja sitä voidaan käyttää tarkistuksena ennen tilauksen tekemistä, mutta se ei sisälly tilauksen yhteenvetotietoihin. Tämä moduuli voidaan lisätä kassalaatikkoon, kassaosastolaatikkoon tai käyttöehdot-kohtaan liiketoiminnan tarpeiden mukaan. Jos se lisätään kassalaatikkoon tai kassaosastolaatikkopaikkaan, se näkyy vaiheena kassalle mentäessä. Jos se lisätään käyttöehdot-paikkaan, se näkyy tilauksen teko -painikkeen lähellä.
+
+    Seuraavassa kuvassa on esimerkki käyttöehdoista maksusivulla.
+
+    ![Esimerkki käyttöehdoista kassalla](./media/ecommerce-checkout-terms.PNG)
+
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
-Useimmat kassatiedot, kuten toimitusosoite ja toimitustapa, tallennetaan ostoskoriin. Niitä käsitellään tilauksen osana. Ainoa poikkeus on luottokorttitiedot. Nämä tiedot käsitellään suoraan Adyen-maksuyhdistimen avulla. Maksu on vahvistettu, mutta sitä ei ole veloitettu.
+Useimmat kassatiedot, kuten toimitusosoite ja toimitustapa, tallennetaan ostoskoriin. Niitä käsitellään tilauksen osana. Ainoa poikkeus on luottokorttitiedot. Nämä tiedot käsitellään suoraan Adyen-maksuyhdistimen avulla. Maksu on valtuutettu, mutta sitä ei veloiteta, ennen kuin tilaus on täytetty.
 
 ## <a name="add-a-checkout-module-to-a-page-and-set-the-required-properties"></a>Lisää kassamoduuli sivulle ja määritä pakolliset ominaisuudet
 
 Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi uuden osan.
+1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
 1. Valitse **Uusi sivun osa** -valintaikkunassa **Kassa**-moduuli.
 1. Kirjoita **Sivun osan nimi** -kohtaan **Kassaosa** ja valitse sitten **OK**.
 1. Valitse **Kassamoduuli**-paikka.
@@ -90,6 +105,7 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 1. Valitse **Lisää moduuli** -valintaikkunassa **Toimitusosoite**, **Toimitusasetukset**, **Kassaosiokontti** ja **Yhteystieto**-moduulit ja valitse sitten **OK**.
 1. Valitse **Kassaosiokontti**-moduulissa kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunan **Lahjakortti**-, **Kanta-asiakkuus**- ja **Maksu**-moduulit ja valitse sitten **OK**. Tällä tavoin varmistat, että kaikki maksutavat näkyvät yhdessä osassa.
+1. Lisää **Käyttöehdot**-moduuliin **Kassan käyttöehdot** -moduuli, jos se on tarpeen. Määritä moduulin ominaisuudet -ruudussa käyttöehtojen teksti tarpeen mukaan.
 1. Valitse **Tallenna**ja esikatsele sitten osaa valitsemalla **Esikatselu**. Joitakin moduuleista ei ehkä hahmonneta esikatselussa, koska niissä ei ole ostoskorikontekstia.
 1. Valitse **Lopeta muokkaus** tallentaaksesi osan ja valitse sitten **Julkaise** julkaistaksesi sen.
 1. Luo malli, joka käyttää uutta kassaosaa.
@@ -97,16 +113,16 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
-
-[Konttimoduuli](add-container-module.md)
-
-[Ostoruutumoduuli](add-buy-box.md)
-
 [Ostoskorimoduuli](add-cart-module.md)
 
-[Tilauksen vahvistusmoduuli](order-confirmation-module.md)
+[Ostoskorikuvakemoduuli](cart-icon-module.md)
 
-[Ylätunnistemoduuli](author-header-module.md)
+[Maksumoduuli](payment-module.md)
 
-[Alatunnistemoduuli](author-footer-module.md)
+[Toimitusosoitemoduuli](ship-address-module.md)
+
+[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+
+[Tilauksen tiedot -moduuli](order-confirmation-module.md)
+
+[Lahjakorttimoduuli](add-giftcard.md)

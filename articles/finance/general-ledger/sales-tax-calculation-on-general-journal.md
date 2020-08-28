@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570191"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665839"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ Seuraava kaavio kuvaa säännön graafisesti.
 
 Jos tositteessa on kirjauskansiorivi, jossa tilin tyyppinä on **Toimittaja**, kaikki tositteen kirjauskansiorivit käyttävät samaa veron suuntaa. Seuraavissa kohdissa näytetään mahdolliset verojen suunnat toimittajatileille. 
 
-•   Jos arvonlisäverokoodi on verovapaus, arvonlisäveron suunta on Verovapaa osto.
-
-•   Jos arvonlisäverokoodi on EU:n sisäinen ALV, arvonlisäveron suunta on Saatava arvonlisävero.
-
-•   Jos arvonlisävero on käänteinen veloitus, arvonlisäveron suunta on Saatava arvonlisävero.
-
-
-Muussa tapauksessa arvonlisäveron suunta on Maksettava arvonlisävero.
-
-Seuraava kaavio kuvaa säännön graafisesti.
-
-![Verojen mahdolliset suunnat toimittajatileille](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Tilin tyyppi on Asiakas
-
-Jos tositteessa on kirjauskansiorivi, jossa tilin tyyppinä on **Asiakas**, kaikki tositteen kirjauskansiorivit käyttävät samaa veron suuntaa. Seuraavissa kohdissa näytetään mahdolliset verojen suunnat asiakastileille.
-
 •   Jos arvonlisäverokoodi on käyttövero, arvonlisäveron suunta on Käyttövero.
 
 •   Jos arvonlisäverokoodi on verovapaus, arvonlisäveron suunta on Verovapaa osto.
@@ -90,6 +73,22 @@ Jos tositteessa on kirjauskansiorivi, jossa tilin tyyppinä on **Asiakas**, kaik
 •   Jos arvonlisäverokoodi on käänteinen veloitus, arvonlisäveron suunta on Maksettava arvonlisävero.
 
 Muussa tapauksessa arvonlisäveron suunta on Saatava arvonlisävero.
+
+Seuraava kaavio kuvaa säännön graafisesti.
+
+![Verojen mahdolliset suunnat toimittajatileille](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Tilin tyyppi on Asiakas
+
+Jos tositteessa on kirjauskansiorivi, jossa tilin tyyppinä on **Asiakas**, kaikki tositteen kirjauskansiorivit käyttävät samaa veron suuntaa. Seuraavissa kohdissa näytetään mahdolliset verojen suunnat asiakastileille.
+
+•   Jos arvonlisäverokoodi on verovapaus, arvonlisäveron suunta on Verovapaa osto.
+
+•   Jos arvonlisäverokoodi on EU:n sisäinen ALV, arvonlisäveron suunta on Saatava arvonlisävero.
+
+•   Jos arvonlisävero on käänteinen veloitus, arvonlisäveron suunta on Saatava arvonlisävero.
+
+Muussa tapauksessa arvonlisäveron suunta on Maksettava arvonlisävero.
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
