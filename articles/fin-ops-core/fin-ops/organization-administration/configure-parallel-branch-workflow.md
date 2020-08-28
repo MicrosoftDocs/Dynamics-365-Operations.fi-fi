@@ -1,7 +1,7 @@
 ---
 title: Määritä rinnakkaiset haarat työnkulussa
 description: Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,40 +14,40 @@ ms.search.scope: Core, Operations
 ms.custom: 196043
 ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 ms.search.region: Global
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c64c0fab6a020684e768cf2720af27cdb89c1e44
+ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811354"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "3698166"
 ---
-# <a name="configure-parallel-branches-in-a-workflow"></a><span data-ttu-id="ecccb-103">Määritä rinnakkaiset haarat työnkulussa</span><span class="sxs-lookup"><span data-stu-id="ecccb-103">Configure parallel branches in a workflow</span></span>
+# <a name="configure-parallel-branches-in-a-workflow"></a><span data-ttu-id="0de9d-103">Määritä rinnakkaiset haarat työnkulussa</span><span class="sxs-lookup"><span data-stu-id="0de9d-103">Configure parallel branches in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ecccb-104">Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .</span><span class="sxs-lookup"><span data-stu-id="ecccb-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
+<span data-ttu-id="0de9d-104">Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .</span><span class="sxs-lookup"><span data-stu-id="0de9d-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
 
-<span data-ttu-id="ecccb-105">Rinnakkainen haara on käytännössä työnkulku, joka suoritetaan ylätason työnkulun kontekstissa.</span><span class="sxs-lookup"><span data-stu-id="ecccb-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
+<span data-ttu-id="0de9d-105">Rinnakkainen haara on käytännössä työnkulku, joka suoritetaan ylätason työnkulun kontekstissa.</span><span class="sxs-lookup"><span data-stu-id="0de9d-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
 
-## <a name="name-a-branch"></a><span data-ttu-id="ecccb-106">Nimeä haara</span><span class="sxs-lookup"><span data-stu-id="ecccb-106">Name a branch</span></span>
+## <a name="name-a-branch"></a><span data-ttu-id="0de9d-106">Nimeä haara</span><span class="sxs-lookup"><span data-stu-id="0de9d-106">Name a branch</span></span>
 
-<span data-ttu-id="ecccb-107">Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle haaralle.</span><span class="sxs-lookup"><span data-stu-id="ecccb-107">Follow these steps to enter a name for a parallel branch.</span></span>
+<span data-ttu-id="0de9d-107">Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle haaralle.</span><span class="sxs-lookup"><span data-stu-id="0de9d-107">Follow these steps to enter a name for a parallel branch.</span></span>
 
-1. <span data-ttu-id="ecccb-108">Napsauta rinnakkaista haaraa hiiren kakkospainikkeella ja valitse **Ominaisuudet**.</span><span class="sxs-lookup"><span data-stu-id="ecccb-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="ecccb-109">**Ominaisuudet**-lomake tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="ecccb-109">The **Properties** form is displayed.</span></span>
-2. <span data-ttu-id="ecccb-110">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="ecccb-110">In the left pane, click **Basic Settings**.</span></span>
-3. <span data-ttu-id="ecccb-111">Kirjoita rinnakkaisen haaran yksilöivä nimi **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ecccb-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
-4. <span data-ttu-id="ecccb-112">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="ecccb-112">Click **Close**.</span></span>
+1. <span data-ttu-id="0de9d-108">Napsauta rinnakkaista haaraa hiiren kakkospainikkeella ja valitse **Ominaisuudet**.</span><span class="sxs-lookup"><span data-stu-id="0de9d-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="0de9d-109">**Ominaisuudet**-lomake tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="0de9d-109">The **Properties** form is displayed.</span></span>
+2. <span data-ttu-id="0de9d-110">Napsauta vasemmassa ruudussa **Perusasetukset**.</span><span class="sxs-lookup"><span data-stu-id="0de9d-110">In the left pane, click **Basic Settings**.</span></span>
+3. <span data-ttu-id="0de9d-111">Kirjoita rinnakkaisen haaran yksilöivä nimi **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0de9d-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
+4. <span data-ttu-id="0de9d-112">Valitse **Sulje**.</span><span class="sxs-lookup"><span data-stu-id="0de9d-112">Click **Close**.</span></span>
 
-## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="ecccb-113">Suunnittele ja konfiguroi haaran elementit</span><span class="sxs-lookup"><span data-stu-id="ecccb-113">Design and configure the elements of a branch</span></span>
+## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="0de9d-113">Suunnittele ja konfiguroi haaran elementit</span><span class="sxs-lookup"><span data-stu-id="0de9d-113">Design and configure the elements of a branch</span></span>
 
-<span data-ttu-id="ecccb-114">Voit suunnitella ja konfiguroida rinnakkaisen haaran elementtejä seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="ecccb-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
+<span data-ttu-id="0de9d-114">Voit suunnitella ja konfiguroida rinnakkaisen haaran elementtejä seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="0de9d-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
 
-1. <span data-ttu-id="ecccb-115">Kaksoisnapsauta rinnakkaisia haaraa.</span><span class="sxs-lookup"><span data-stu-id="ecccb-115">Double-click the parallel branch.</span></span>
-2. <span data-ttu-id="ecccb-116">Vedä työnkulkuelementit alustalle ja määritä elementit samoin kuin luotaessa muita työnkulkuja.</span><span class="sxs-lookup"><span data-stu-id="ecccb-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="ecccb-117">Lisätietoja on kohdassa [Työnkulujen luonnin yleiskatsaus](create-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="ecccb-117">For more information, see [Create workflows overview](create-workflow.md).</span></span>
+1. <span data-ttu-id="0de9d-115">Kaksoisnapsauta rinnakkaisia haaraa.</span><span class="sxs-lookup"><span data-stu-id="0de9d-115">Double-click the parallel branch.</span></span>
+2. <span data-ttu-id="0de9d-116">Vedä työnkulkuelementit alustalle ja määritä elementit samoin kuin luotaessa muita työnkulkuja.</span><span class="sxs-lookup"><span data-stu-id="0de9d-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="0de9d-117">Lisätietoja on kohdassa [Työnkulujen luonnin yleiskatsaus](create-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="0de9d-117">For more information, see [Create workflows overview](create-workflow.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ecccb-118">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="ecccb-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0de9d-118">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="0de9d-118">Additional resources</span></span>
 
-[<span data-ttu-id="ecccb-119">Työnkulkujen luonnin yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="ecccb-119">Create workflows overview</span></span>](create-workflow.md)
+[<span data-ttu-id="0de9d-119">Työnkulkujen luonnin yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="0de9d-119">Create workflows overview</span></span>](create-workflow.md)
