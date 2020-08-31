@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ab0c66ad0536b20b1ab23e9498ca3cb56b98ccf5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
+ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530256"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696127"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Managementin aloitussivu
 
@@ -61,7 +61,7 @@ Lisätietoja Dynamics 365 Financesta on [Financen aloitussivulla](../finance/ind
 
 Tässä lyhyessä videossa on tiivistelmä uusista Supply Chain Management -toiminnoista, jotka on lisätty Microsoft Dynamics 365 for Finance and Operationsin versioon 8.0 (huhtikuu 2018).
 
-- [Työtilauksen synkronointi Field Servicen ja Finance and Operations välillä](https://youtu.be/hAB4TDVMjxU)
+- [Työtilauksen synkronointi Field Servicen ja Finance and Operationsin välillä](https://youtu.be/hAB4TDVMjxU)
 
 Näissä lyhyissä videoissa on tiivistelmä uusista Supply Chain Management -toiminnoista, jotka on lisätty Microsoft Dynamics 365 for Finance and Operationsin Enterprise edition 7.3 -versioon (joulukuu 2017).
 
@@ -89,8 +89,6 @@ Seuraavat Tech Conference -tallenteet käsittelevät Supply Chain Managementin t
   - [Tuotekonfigurointi Microsoft Dynamics AX-ohjelmassa](https://youtu.be/zotrj3SbCl4)
 - **Varastonhallinta:**
   - [Hyödynnä varastonhallintajärjestelmää täysimääräisesti](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
-  - [Edistynyt R3-varastonhallinta – saapuvien käsittely ja min/max-täydennys](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
-  - [Edistynyt R3-varastonhallinta – lähtevien käsittely sekä täydennys kysynnän mukaan](https://youtu.be/Og0gLlVp7jA)
   - [Merkinnät uudessa Microsoft Dynamics AX 2012 R3 Varastonhallinta -ohjelmassa](https://youtu.be/5w1MngVchBA)
   - [Dynamics AX 2012 R3: Edistynyt varastonhallinta - Prosessituotanto](https://www.youtube.com/embed/QUxXUrN-7n4)
 - **Tuotannonhallinnan videot:**

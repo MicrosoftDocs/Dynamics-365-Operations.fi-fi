@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Taloushallinnon raportointi
           items:
-            - name: Taloushallinnon raportoinnin yleiskatsaus
+            - name: Taloushallinnon raportoinnin aloittaminen
               href: general-ledger/financial-reporting-getting-started.md
             - name: Taloushallinnon raportoinnin yleiskatsaus
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Lykkäysten raportointi
                       href: localizations/rus-reporting-deferrals.md
+                - name: Verotuksen kirjanpito
+                  items:
+                    - name: Kulu- ja tulokoodit
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Omaisuusverorekisterit
+                      href: localizations/rus-assets-tax-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Saudi-Arabia – yleiskatsaus
@@ -3126,6 +3132,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
                         - name: Luettelo
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3413,7 +3421,9 @@
             - name: Pika-aloitusoppaat
               items:
                 - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Uuden ER-ratkaisun suunnitteleminen mukautetun raportin tulostamista varten
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Oppaat
               items:
                 - name: Tietolähteiden käyttäminen

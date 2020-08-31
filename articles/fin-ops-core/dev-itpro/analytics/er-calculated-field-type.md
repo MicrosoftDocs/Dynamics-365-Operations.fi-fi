@@ -3,7 +3,7 @@ title: Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsuje
 description: Tässä ohjeaiheessa käsitellään ER-tietolähteiden Laskettu kenttä -tyypin käyttöä.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771326"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665607"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 
@@ -45,14 +45,14 @@ Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksi
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-Lataa [Microsoft Download Centerissä](https://go.microsoft.com/fwlink/?linkid=874684) pakattu zip-tiedosto **Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki**. Se sisältää seuraavat ER-kokoonpanot, jotka on purettava ja tallennettava paikallisesti.
+Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti.
 
 | **Sisältö**                           | **Tiedostonimi**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Esimerkin ER-tietomallin konfigurointi    | Model to learn parameterized calls.version.1.xml     |
-| Esimerkin ER-metadatan konfigurointi      | Metadata to learn parameterized calls.version.1.xml  |
-| Esimerkin ER-mallikartoituksen konfigurointi | Mapping to learn parameterized calls.version.1.1.xml |
-| Esimerkin ER-format-konfigurointi        | Format to learn parameterized calls.version.1.1.xml  |
+| Esimerkin ER-tietomallin konfigurointi    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Esimerkin ER-metadatan konfigurointi      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Esimerkin ER-mallikartoituksen konfigurointi | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Esimerkin ER-format-konfigurointi        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Kirjautuminen RCS-esiintymään
 Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi on kuitenkin suoritettava RCS:ssä [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.

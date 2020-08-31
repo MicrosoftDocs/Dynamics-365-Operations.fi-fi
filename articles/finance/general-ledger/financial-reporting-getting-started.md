@@ -1,9 +1,9 @@
 ---
 title: Taloushallinnon raportoinnin yleiskatsaus
-description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
+description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618035"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696685"
 ---
-# <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
+# <a name="get-started-with-financial-reporting"></a>Financial reportingin aloittaminen 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla kä
 Raportteja luovat käyttäjät voivat poistaa omia raporttejaan. Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat poistaa muiden raportteja. 
 
 Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki**-sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
-* Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu
+* Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu.
 * Kaikki olemassa olevat raportit, jotka on luotu ennen kuin ominaisuus asennettiin, saavat 90 päivän vanhentumisajan. Päivämäärä voi näkyä tyhjänä lyhyen ajan, kunnes taloushallinnon raportointipalvelu on käynnissä, raportti luodaan ja palvelu suorittaa päivityksen aiemmin luotuihin raportteihin, joiden vanhentumispäivämäärä on tyhjä. 
 * Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa: 
   * Vanhentuminen 90 päivää.
@@ -134,6 +134,12 @@ Kun valitset **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen o
 ## <a name="creating-and-modifying-financial-reports"></a>Talousraporttien luominen ja muokkaaminen
 Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Dynamics 365 Financessa käytössä olevalle yritykselle. 
 
+## <a name="reporting-tree-definitions"></a>Raportointipuiden määritykset 
+Yksi komponentti, jota käytetään talousraporttien muodostamiseen, on raportointipuun määritys. Raportointipuun määritys auttaa määrittämään organisaation rakenteen ja hierarkian. Se on dimensiot ylittävä hierarkkinen rakenne, joka perustuu taloushallinnon tietojen dimensioiden suhteisiin. Sen avulla saadaan tietoja raportointiyksikkötasolla ja kaikkien puun yksiköiden yhteenvetotasolla.
+
+Luotavien raportointipuiden määrälle ei ole asetettu ylärajaa. Eri puiden avulla organisaation tietoja voi tarkastella eri tavoin. Kukin raportointipuu voi sisältää minkä tahansa osastojen ja yhteenvetoyksiköiden yhdistelmän, mutta raporttimääritys voi linkittää vain yhteen raportointipuuhun kerrallaan. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Report Designerin avaamisongelmien vianmääritys
 Tietyt yleiset ongelmat voivat aiheuttaa hankaluuksia, kun Report Designer avataan. Seuraavaksi käsitellään näitä ongelmia ja niiden ratkaisuja.
 
@@ -162,3 +168,4 @@ Ongelma 3: ClickOnce Report Designerin kirjautumissivulta päästään etenemä�
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Näytä raportit](view-financial-reports.md)
+- [Talousraporttien raportointipuiden määritykset](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

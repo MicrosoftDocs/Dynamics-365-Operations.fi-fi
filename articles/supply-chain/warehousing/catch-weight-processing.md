@@ -3,7 +3,7 @@ title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
 manager: tfehr
-ms.date: 03/03/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
+ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530532"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3693276"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -168,7 +168,7 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 
 - Klusterikeräilyä ei tueta todellisen painon tuotteissa.
 - Keräilyn ja pakkauksen varastokäsittelyä ei tueta todellisen painon tuotteissa.
-- Todellisen painon tuotteiden työmallissa määritetty työ voidaan suorittaa automaattisesti.
+- Todellisen painon tuotteiden työmallissa määritettyä työtä ei voida suorittaa automaattisesti.
 - Järjestelmä ei tue todellisen painon tuotteissa sellaista manuaalista pakkausasemakäsittelyä, jossa pakatun kontin keräilytyö on luotu konttien sulkemisen jälkeen.
 - Kappalekohtaista lukutoimintoa ei tueta todellisen painon tuotteissa.
 

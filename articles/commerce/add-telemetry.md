@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154083"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686811"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
 
@@ -45,7 +45,7 @@ Sivun osan avulla voit käyttää uudelleen sisäistä tai ulkoista komentosarja
 
 Voit luoda uudelleenkäytettävän sivun osan sisäistä komentosarjakoodia varten sivustonmuodostimessa seuraavasti:
 
-1. Siirry kohtaan **Sivun osat** ja **Uusi**.
+1. Siirry kohtaan **Fragmentit** ja valitse sitten **Uusi**.
 1. Valitse **Uusi sivun osa** -valintaikkunassa **Sisäinen komentosarja**.
 1. Kirjoita **Sivun osan nimi** -kohtaan osan nimi ja valitse sitten **OK**.
 1. Valitse luomasi sivun osan **Oletusarvoinen sisäinen komentosarja** -moduuli.
@@ -57,7 +57,7 @@ Voit luoda uudelleenkäytettävän sivun osan sisäistä komentosarjakoodia vart
 
 Voit luoda uudelleenkäytettävän sivun osan ulkoista komentosarjakoodia varten sivustonmuodostimessa seuraavasti:
 
-1. Siirry kohtaan **Sivun osat** ja **Uusi**.
+1. Siirry kohtaan **Fragmentit** ja valitse sitten **Uusi**.
 1. Valitse **Uusi sivun osa** -valintaikkunassa **Ulkoinen komentosarja**.
 1. Kirjoita **Sivun osan nimi** -kohtaan osan nimi ja valitse sitten **OK**.
 1. Valitse luomasi sivun osan **Oletusarvoinen ulkoinen komentosarja** -moduuli.

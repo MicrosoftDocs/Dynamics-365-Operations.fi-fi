@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497165"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677901"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -77,7 +77,7 @@ Kun B2C-vuokraaja on luotu, voit luoda B2C-sovelluksen vuokraajassa ja käyttä�
 
 Luo B2C-sovellus seuraavasti.
 
-1. Valitse Azure-portaalissa **Sovellukset** ja valitse sitten **Lisää**.
+1. Valitse Azure-portaalissa **Sovellukset(Vanha)** ja valitse sitten **Lisää**.
 1. Anna **Nimi**-kohtaan halutun AAD B2C -sovelluksen nimi.
 1. Valitse **Verkkosovellus / verkon ohjelmointirajapinta** -kohdassa **Sisällytä verkkosovellus / verkon ohjelmointirajapinta** -kohdan arvoksi **Kyllä**.
 1. Valitse **Salli implisiittinen työnkulku** -kohdan arvoksi **Kyllä** (oletusarvo).

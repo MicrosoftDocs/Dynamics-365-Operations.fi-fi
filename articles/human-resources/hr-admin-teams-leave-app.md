@@ -3,7 +3,7 @@ title: Teamsin Human Resources -sovellus
 description: Tässä ohjeaiheessa käsitellään Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovellusta.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431127"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666357"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
@@ -43,12 +43,12 @@ Lisätietoja sovellusten käyttöoikeuksien hallinnasta Teamsissa on kohdassa [S
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 
-| Otto | Tila |
+| Varasto-otto | Tila |
 | --- | --- |
+| Vaakasuuntainen vieritys ei toimi Android-puhelimissa | Vaakasuuntainen vieritys ei ole ongelma iOS- tai työpöytälaitteissa. Pyrimme korjaamaan asian Androidille. |
 | Virhe: ongelma etsittäessä ympäristöä, johon muodostetaan yhteyttä. | Tämä virhe saattaa tulla näyttöön, vaikka olisit varmistanut, että käyttäjä voi käyttää yhtä tai useampaa henkilöstöresurssiympäristöä. Lisäksi et ehkä näe kaikkia odottamiasi ympäristöjä. Ennen kuin korjaat tämän ongelman, poista käyttäjä ja tuo ne sitten uudelleen, jotta ongelma voidaan ratkaista. |
 | Saldo on virheellinen, kun lähetetään tulevaisuudessa olevaa päivämäärää koskeva poissaolo. | Ennakointi ei ole vielä käytettävissä. Saldo näkyy kuluvalta päivältä. |
 | Kun aiemmin luodussa pyynnössä olevien tuntien määrää vähennetään, **Jäljellä jäävä saldo** pienenee eikä suurene. | Tämä tunnettu ongelma otetaan huomioon tulevaisuudessa. Näyttö on virheellinen, mutta summat oikaistaan lähetyksen yhteydessä. |
-| Samoille päivämäärille näkyy kaksi **Tuleva poissaolo** -korttia. | Kortit ilmaisevat yksittäiset lähetykset. Palautetta otetaan edelleen vastaan ja muutoksia tehdään. |
 | **Tarkistuksessa**-tilassa olevaa pyyntöä ei voi peruuttaa. | Tätä toimintoa ei tällä hetkellä tueta ja se lisätään tulevaan julkaisuun. |
 | Saldotiedot lasketaan kuluvasta päivästä alkaen. | Järjestelmä ei tällä hetkellä näytä jaksotuskauden saldoa, vaikka se on määritetty loma- ja poissaoloparametreissa. |
 

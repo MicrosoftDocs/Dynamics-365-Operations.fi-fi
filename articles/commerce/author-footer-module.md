@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411197"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686715"
 ---
 # <a name="footer-module"></a>Alatunnistemoduuli  
 
@@ -50,7 +50,7 @@ Useimpien säilöjen tapaan alatunnistemoduuli tukee otsikon ja leveyden ominais
 
 ## <a name="create-a-footer-module"></a>Alatunnistemoduulin lisääminen
 
-1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi uuden osan.
+1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
 1. Valitse **Uusi sivun osa** -valintaikkunassa **Kontti**-moduuli. Syötä sivun osan nimi ja valitse **OK**.
 1. Valitse kolme pistettä (**...**) **Oletuskontti**-paikassa ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Alatunnisteluokka**-moduuli ja valitse sitten **OK**.

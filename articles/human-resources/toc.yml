@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 6. elokuuta 2020
+          href: hr-whats-new-2020-08-06.md
         - name: 23. heinäkuuta 2020
           href: hr-whats-new-2020-07-23.md
         - name: 8. heinäkuuta 2020
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: 3. huhtikuuta 2020
           href: hr-whats-new-2020-04-03.md
-        - name: 24. maaliskuuta 2020
-          href: hr-whats-new-2020-03-24.md
-        - name: 19. maaliskuuta 2020
-          href: hr-whats-new-2020-03-19.md
-        - name: 10. maaliskuuta 2020
-          href: hr-whats-new-2020-03-10.md
-        - name: 3. maaliskuuta 2020
-          href: hr-whats-new-2020-03-03.md
         - name: Uudet ominaisuudet -arkisto 2020
           items:
+            - name: 24. maaliskuuta 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. maaliskuuta 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. maaliskuuta 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. maaliskuuta 2020
+              href: hr-whats-new-2020-03-03.md
             - name: 25. helmikuuta 2020
               href: hr-whats-new-2020-02-25.md
             - name: 18. helmikuuta 2020
@@ -221,12 +223,10 @@
           href: hr-hrpro-overview.md
         - name: Määritä henkilöstöhallinto
           items:
-            - name: Määritä henkilöstöhallinnon parametrit
+            - name: Määritä Human Resourcesin parametrit
               href: hr-setup-parameters.md
-            - name: Määritä jaetut henkilöstöhallinnon parametrit
+            - name: Määritä Human Resourcesin jaetut parametrit
               href: hr-setup-shared-parameters.md
-            - name: Määritä henkilöstöhallinnon työnkulut
-              href: hr-setup-workflows.md
             - name: Ymmärrä päivämäärä- ja kellonaikakenttiä
               href: hr-setup-date-time-fields.md
         - name: Määritä organisaation asetukset
@@ -383,6 +383,8 @@
               href: hr-personnel-actions-faq.md
             - name: Työntekijätietojen hallinta työnkulkujen avulla
               href: hr-workflow-manage-employee-information.md
+            - name: Osoitemuutosten tarkasteleminen ja hallinta
+              href: hr-personnel-view-address-changes.md
             - name: Muokkaa toimen raportointisuhteita
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Työntekijän tietojen syöttäminen
@@ -395,8 +397,6 @@
               href: hr-personnel-loan-items.md
             - name: Seuraajasuunnitelman kehittäminen
               href: hr-personnel-develop-succession-plan.md
-            - name: Projektin työaikaraporttien syöttäminen
-              href: hr-personnel-enter-project-timesheets.md
             - name: Joukkotyöhönottoprojektit
               href: hr-personnel-mass-hire-projects.md
             - name: Joukkotyöhönottoprojektin luominen

@@ -3,7 +3,7 @@ title: Varaston saatavuuden laskeminen vähittäismyyntikanaville
 description: Tässä ohjeaiheessa kerrotaan vaihtoehdot, jotka ovat valittavissa käytettävissä olevan varaston näyttämiseksi myymälä- ja online-kanavissa.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379233"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694919"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Varaston saatavuuden laskeminen vähittäismyyntikanaville
 
@@ -40,7 +40,7 @@ Tässä ohjeaiheessa kerrotaan tietojen synkronointiprosesseista. Niitä voidaan
 
 Voit käyttää seuraavia ohjelmointirajapintoja, jos haluat näyttää tuotteen varaston saatavuuden asiakkaiden ollessa ostoksilla sähköisen kaupankäynnin sivustossa.
 
-- **GetEstimatedAvailabilty** – Käytä tätä ohjelmointirajapintaa, jos haluat hakea varaston saatavuuden nimikkeelle sähköisen kaupankäynnin kanavan varastossa tai kaikissa varastoissa, jotka on linkitetty sähköisen kaupankäynnin täyttämisryhmän kokoonpanoon. Tätä ohjelmointirajapintaa voi käyttää myös tietyn hakualueen tai -säteen varastoissa pituus- tai leveysastetietojen perusteella.
+- **GetEstimatedAvailability** – Käytä tätä ohjelmointirajapintaa, jos haluat hakea varaston saatavuuden nimikkeelle sähköisen kaupankäynnin kanavan varastossa tai kaikissa varastoissa, jotka on linkitetty sähköisen kaupankäynnin täyttämisryhmän kokoonpanoon. Tätä ohjelmointirajapintaa voi käyttää myös tietyn hakualueen tai -säteen varastoissa pituus- tai leveysastetietojen perusteella.
 - **GetEstimatedProductWarehouseAvailability** – Käytä tätä ohjelmointirajapintaa, jos haluat pyytää nimikkeen varastoa tietystä varastosta. Voit käyttää sitä esimerkiksi näyttämään varaston saatavuuden skenaarioissa, joissa käytetään tilauksen noutoa.
 
 > [!NOTE]
@@ -66,7 +66,7 @@ Kun **Tuotteen saatavuus** -työ on päättynyt, kerätyt tiedot on siirrettäv�
 1. Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.
 1. Suorita **1130** (**Tuotteen saatavuus**) -työ, jolloin **Tuotteen saatavuus** -työn luomat tilannevedoksen tiedot synkronoidaan Commerce Headquarters -sovelluksesta omiin kanavan tietokantoihin.
 
-Kun **GetEstimatedAvailabilty**- tai **ProductWarehouseInventoryAvailabilities**-ohjelmointirajapinnalta pyydetään varaston saatavuutta, suoritetaan laskelma, joka antaa parhaan mahdollisen tuotteen varaston arvion. Laskelma viittaa kaikkiin sähköisen kaupankäynnin asiakastilauksiin, jotka ovat kanavan tietokannassa, mutta joita ei ole sisällytetty 1130-työn antamiin tilannevedoksen tietoihin. Tämä logiikka suoritetaan seuraamalla viimeksi käsiteltyä varastotapahtumaa Commerce Headquarters -sovelluksesta ja vertaamalla sitä kanavan tietokannan tapahtumiin. Se määrittää kanavan peruslaskentalogiikan, jolloin asiakastilauksen myyntitapahtumien varaston lisäsiirrot sähköisen kaupankäynnin kanavan tietokannassa voidaan kohdistaa ohjelmointirajapinnan tarjoamaan arvioituun varastoarvoon.
+Kun **GetEstimatedAvailability**- tai **GetEstimatedProductWarehouseAvailability**-ohjelmointirajapinnalta pyydetään varaston saatavuutta, suoritetaan laskelma, joka antaa parhaan mahdollisen tuotteen varaston arvion. Laskelma viittaa kaikkiin sähköisen kaupankäynnin asiakastilauksiin, jotka ovat kanavan tietokannassa, mutta joita ei ole sisällytetty 1130-työn antamiin tilannevedoksen tietoihin. Tämä logiikka suoritetaan seuraamalla viimeksi käsiteltyä varastotapahtumaa Commerce Headquarters -sovelluksesta ja vertaamalla sitä kanavan tietokannan tapahtumiin. Se määrittää kanavan peruslaskentalogiikan, jolloin asiakastilauksen myyntitapahtumien varaston lisäsiirrot sähköisen kaupankäynnin kanavan tietokannassa voidaan kohdistaa ohjelmointirajapinnan tarjoamaan arvioituun varastoarvoon.
 
 Kanavan laskentalogiikka palauttaa arvioidun fyysisen varaston arvon ja saatavissa olevan varaston kokonaisarvon pyydetylle tuotteelle ja varastolle. Arvot voidaan näyttää tarvittaessa sähköisen kaupankäynnin sivustossa tai niitä voi käyttää muun liiketoimintalogiikan käynnistämisessä sähköisen kaupankäynnin sivustossa. Ohjelmointirajapinnan välittämän toteutuneen käytettävissä olevan varastomäärän sijaan voidaan näyttää ei varastossa -sanomaa.
 
@@ -107,6 +107,8 @@ Voit varmistaa varaston parhaan mahdollisen arvion saamisen, jos käytät seuraa
 - **Kirjaa tapahtumaraportit eräajona** – Tämä työ on myös pakollinen vähittäin suoritettavassa kirjauksessa. Se seuraa **Laske tapahtumaraportit eräajona** -työtä. Tämä työ kirjaa lasketut laskelmat järjestelmällisesti niin, että noutotukkumyynnin myyntitilaukset luodaan Commerce Headquarters -sovelluksessa. Näin Commerce Headquarters vastaa aiempaa tarkemmin myymälän varastoa.
 - **Tuotteen saatavuus** – Tämä työ luo tilannevedoksen Commerce Headquarters -sovelluksen varastosta.
 - **1130 (Tuotteen saatavuus)** – Tämä työ löytyy **Jakeluaikataulut**-sivulta. Se tulee suorittaa heti **Tuotteen saatavuus** -työn jälkeen. Tämä työ siirtää varaston tilannevedoksen tiedot Commerce Headquarters -sovelluksesta kanavan tietokantoihin.
+
+On suositeltavaa ettet suorita näitä erätöitä liian usein (muutaman minuutin välein). Säännölliset ajot ylikuormittavat Commerce Headquarters -sovelluksen (HQ) ja tämä saattaa vaikuttaa suorituskykyyn. Yleisesti ottaen on hyvä käyttää tuotteiden saatavuutta ja 1130-töitä tuntitasolla ja ajoittaa P-työtä, synkronoida tilauksia ja määrittää, että yhtä usein tai tiheämmin toistuviin töihin kirjataan liittyviä töitä.
 
 > [!NOTE]
 > Kun kanavan varaston saatavuuden laskelmia käytetään varaston saatavuuspyynnön luomisessa sähköisen kaupankäynnin ohjelmointirajapintaa tai uutta myyntipisteen kanavan varastointilogiikkaa, suorituskyvyn varmistamiseksi laskelma käyttää välimuistia ja määrittää sen avulla, onko laskentalogiikan suorittamisesta kulunut riittävästi aikaa, jotta sen suorittaminen uudelleen on perusteltua. Välimuistin oletusarvoksi on määritetty 60 sekuntia. Tässä esimerkissä otetaan käyttöön kanavan laskennan myymälässä ja tarkastellaan tuotteen käytettävissä olevaa varastoa **Varastohaku**-sivulla. Jos tuotetta tämän jälkeen myydään yksi yksikkö, **Varastohaku**-sivulla ei näy vähennetty varasto ennen välimuistin tyhjentämistä. Käyttäjien kirjattua tapahtumia myyntipisteeseen, heidän tulee odottaa 60 sekuntia. Tämän jälkeen he voivat tarkistaa, onko käytettävissä olevaa varastoa vähennetty tapahtuman mukaan.

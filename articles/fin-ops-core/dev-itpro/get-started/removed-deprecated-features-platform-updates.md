@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
 manager: AnnBe
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
+ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651663"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3678219"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -39,6 +39,16 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 
 > [!NOTE]
 > Versio 10.0.13 on esikatseluversio. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="custom-code-defined-in-ssrs-report-properties"></a>SSRS-raportin ominaisuuksissa määritetty mukautettu koodi 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Yleensä mukautettu koodi tarjoaa rajoitettuja etuja samaan aikaan ja edellyttää huomattavaa resursointi- ja käsittelytukea. Mukautettua koodia käytetään ensisijaisesti raportin laatijoiden kutsussa julkisiin menetelmiin mukautetusta koodikokoonpanosta. Pilvipohjainen palvelu ei kuitenkaan tue SSRS-raporttien mukautettujen kokoonpanojen viittauksia. |
+| **Onko toinen ominaisuus korvannut?**   | Raporttien laatijat voivat halutessaan jatkaa julkisten .NET-API-liittymien vertailemista mistä tahansa tekstiruudun lausekkeesta. Lisätietoja on kohdassa [Koodin lisääminen raporttiin (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Tuotealueet, joihin vaikutetaan**         | RDL:ssä määritetyn sovellusraporttimallin alijoukko, joka sisältää mukautettua koodia. |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Versiolla 10.0.13, kääntäjä alkaa antaa varoituksen tapauksissa, joissa mukautettua koodia havaitaan SSRS-raportti määritelmässä. Voit korjata ongelman avaamalla raportin rakennemäärityksen ja poistamalla kaikki mukautetut koodiartefaktit. Tämä varoitus korvataan kääntäjän virheellä tulevassa päivityksessä.   |
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Kolmen jQuery-osakirjaston päivitys 
 
