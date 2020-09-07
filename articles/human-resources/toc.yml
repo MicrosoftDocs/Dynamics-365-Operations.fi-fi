@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 20. elokuuta 2020
+          href: hr-whats-new-2020-08-20.md
         - name: 6. elokuuta 2020
           href: hr-whats-new-2020-08-06.md
         - name: 23. heinäkuuta 2020
@@ -78,13 +80,91 @@
             - name: Luo integraatio Officen kanssa
               items:
                 - name: Office-integraation opetusohjelma
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Yksikkötietojen päivittäminen Excelissä
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: Avaa Excelissä -kokemusten luominen
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Office-integraation vianmääritys
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Tiedonhallinnan määrittäminen
+          items:
+            - name: Tietojen hallintakehyksen yleiskatsaus
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietoyksiköt
+              items:
+                - name: Tietoyksiköiden yleiskatsaus
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietoprojektit
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
+                  items:
+                    - name: Konfigurointitietojen kopiointi – yleiskatsaus
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurointitietopaketit
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietomallit
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Muutosten seuranta yksikköön
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tietojen etsiminen vakiotietoyksiköistä
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Useita laskentataulukoita sisältävät tietomallit
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Muutosten seurannan ottaminen käyttöön yksiköille
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointiavaimet ja tietoyksiköt
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietopaketit
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojen tuonti- ja vientityöt
+              items:
+                - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietoyksiköiden kehittäminen
+              items:
+                - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Uusien tietoyksiköiden luominen
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tietoyksiköiden ominaisuudet
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yritystenvälinen toiminta
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Maa-/aluekoodien käsitteleminen
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Periytyvyysmallit
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ohjatun tietoyksikkötoiminnon säännöt
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metatietojen ominaisuudet
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Tarkistukset, oletukset ja yhdistämättömät kentät'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Suojaus ja tietoyksiköt
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tuo oma tietokantasi
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: BYOD-erätöiden optimointi
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Yksikkösäilön automaattinen päivitys
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietotehtävän automaatio
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojen tarkistuksen tarkistusluettelon työtila
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojenhallintavirheiden kuvaukset
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: Ominaisuuksien hallinta
           href: hr-admin-manage-features.md
         - name: Tietokannan lokikirjauksen määrittäminen ja hallinta
@@ -539,7 +619,9 @@
               href: hr-employee-self-service-calendar.md
             - name: Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
-            - name: Vaihda lomaa rahaksi tai lomapalkka vapaaksi
+            - name: Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen
+              href: hr-leave-and-absence-buy-sell-workflow.md
+            - name: Loman rahaksi tai lomapalkan vapaaksi vaihtaminen
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Lomapyyntöjen hallinta Teamsissa
           href: hr-teams-leave-app.md
