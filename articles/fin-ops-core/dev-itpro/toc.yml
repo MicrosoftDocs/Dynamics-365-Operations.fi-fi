@@ -130,6 +130,8 @@
                       items:
                         - name: Kaksoiskirjoituksen aloitussivu
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Kaksoiskirjoituksen uudet ja muuttuneet ominaisuudet
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Kaksoiskirjoituksen yleiskatsaus
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Kaksoiskirjoituksen asetukset
@@ -1472,6 +1474,8 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Suojauskäytännön luominen
                   href: sysadmin/create-simple-security-policy.md
+            - name: Käyttäjän käyttöoikeusvaatimusten vaatimustenmukaisuuden noudattaminen
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Prosessien automatisointi
               href: sysadmin/process-automation.md
             - name: Eräkäsittely

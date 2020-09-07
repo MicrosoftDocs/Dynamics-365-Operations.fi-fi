@@ -68,6 +68,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance + Operations (on-premises) -version ostaminen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Data Exchangen käyttöönotto-ohje
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations -sovellukset Ranskassa
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Mukautettujen kenttien luominen ja käsitteleminen
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerApps-sovellusten upottaminen
+                - name: Microsoft Power Appsin upottaminen
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Tietojen etsiminen hakujen avulla
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -200,10 +202,16 @@
                   href: arch-component-versioning.md
                 - name: Commerce Scale Unit -arkkitehtuuri
                   href: dev-itpro/retail-server-architecture.md
-                - name: Valitse myymälän topologia
+                - name: Myymälän topologian valitseminen
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchangen ja Commerce-kanavan tietoliikenne
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Commerce Data Exchangen parhaat käytännöt
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Commerce Data Exchangen ja Commerce-kanavan tietoliikenne
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Commerce Data Exchangen vianmääritys
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS -arkkitehtuuri
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Verkkokaupan julkaisuarkkitehtuuri
@@ -514,8 +522,10 @@
                       href: payinvoice.md
                     - name: Maksujen kaksoiskappaleiden estäminen
                       href: duplicate-payment-protection.md
-                    - name: Monikanavamaksut – yleiskatsaus
+                    - name: Monikanavamaksujen yleiskatsaus
                       href: omni-channel-payments.md
+                    - name: Monikanavaisten Commerce-tilausten maksut
+                      href: dev-itpro/commerce-payments.md
                     - name: Maksut – usein kysytyt kysymykset
                       href: dev-itpro/payments-retail.md
                 - name: Bing Maps -karttapalvelun hallinta organisaatiossa
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Vähittäismyyntitapahtumien muokkaaminen ja valvominen
               href: edit-audit-retail-transactions.md
-            - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: Vähittäismyyntitapahtumien syötteisiin perustuvien tilausten vähittäinen luominen
               href: trickle-feed.md
             - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Tietojen käyttö ja raportointi
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: PowerBI.com-sivuston mukauttamisasetukset
+            - name: 'Power BI:n mukauttamisasetukset'
               items:
-                - name: PowerBI.com-sivuston integroinnin kautta käytettävissä olevat toiminnot
+                - name: 'Power BI:n integroinnin kautta käytettävissä olevat toiminnot'
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerBI.com-sivuston sisällön kiinnittäminen
+                - name: Power BI -sisällön kiinnittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Analyysityötilojen valitseminen PowerBI.com-sivustosta
+                - name: 'Analyysityötilojen valitseminen Power BI:stä'
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Power BI -sisältö
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Yksikkösäilön ylläpidon jälkeisten ongelmien ratkaiseminen
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: PowerBI.com-sivuston integroinnin määrittäminen
+                - name: Power BI -integraation määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Tuo oma tietokantasi
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Määritysten paketointi ja käyttöönotto verkkoympäristössä
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: 'SDK:n ja peruskirjaston päivitykset'
+                    - name: 'SDK:n ja myymälän aloituspaketin päivitykset'
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail SDK
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Maksuyhdistimien käyttöönotto
                   href: dev-itpro/deploy-payment-connector.md
+                - name: Taustalaskutuksen lisäysperusteinen tietojen tallennus
+                  href: dev-itpro/incremental-capture.md
                 - name: Mukautettujen lokalisoitujen virhesanomien luominen maksupäätteiden laajennuksille
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Windows-asennusohjelmien luominen maksuyhdistimille

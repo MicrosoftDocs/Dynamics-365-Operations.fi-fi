@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mukautettujen kenttien luominen ja käsitteleminen
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerApps-sovellusten upottaminen
+                - name: Microsoft Power Appsin upottaminen
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tietojen etsiminen hakujen avulla
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tietojen käyttö ja raportointi
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: PowerBI.com-sivuston mukauttamisasetukset
+            - name: 'Power BI:n mukauttamisasetukset'
               items:
-                - name: PowerBI.com-sivuston integroinnin kautta käytettävissä olevat toiminnot
+                - name: 'Power BI:n integroinnin kautta käytettävissä olevat toiminnot'
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerBI.com-sivuston sisällön kiinnittäminen
+                - name: Power BI -sisällön kiinnittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Analyysityötilojen valitseminen PowerBI.com-sivustosta
+                - name: 'Analyysityötilojen valitseminen Power BI:stä'
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI -sisältö
               items:
@@ -1827,18 +1827,28 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Tuotteiden poistaminen pääsuunnittelusta
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Kaksikäyttötuotteet
-                  href: pim/dual-use.md
-                - name: Alkuperämaa
-                  href: pim/country-of-origin.md
-                - name: Tuotteen viivakoodin luonti
+                - name: Viivakoodin luonti tuotteelle
                   href: pim/tasks/create-bar-code-product.md
                 - name: Kirjoita tuotteen GTIN-koodi
                   href: pim/tasks/enter-gtin-code-product.md
-                - name: Luo tuotteen erämääritteet
+                - name: Tuotteen erämääritteiden luominen
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Kuvan lisääminen tuotteelle
                   href: pim/tasks/add-image-product.md
+                - name: Alkuperämaa
+                  href: pim/country-of-origin.md
+                - name: Kaksikäyttötuotteet
+                  href: pim/dual-use.md
+                - name: Vaaralliset materiaalit
+                  items:
+                    - name: Vaarallisten materiaalien yleiskatsaus
+                      href: pim/hazmat-overview.md
+                    - name: Vaarallisten materiaalien määrittäminen
+                      href: pim/hazmat-setup.md
+                    - name: 'Tuotteiden, tilausten, lähetysten ja kuormien vaaralliset materiaalit'
+                      href: pim/hazmat-items.md
+                    - name: Vaarallisten materiaalien kyselyt ja raportit
+                      href: pim/hazmat-reports.md
                 - name: Tuotetietojen käännösten usein kysytyt kysymykset
                   href: pim/translations-product-related-information.md
                 - name: Tuotehaku tilaustenkäsittelyn aikana
