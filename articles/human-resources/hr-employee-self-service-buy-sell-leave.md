@@ -1,9 +1,9 @@
 ---
 title: Osta ja myy lomaa
-description: Voit jättää loman osto- ja myyntipyynnöt.
+description: Voit lähettää Dynamics 365 Human Resourcesissa loman rahaksi tai lomapalkan vapaaksi vaihtamispyyntöjä yrityksen määrittämien loman rahaksi tai lomapalkan vapaaksi vaihtamiskäytäntöjen perusteella.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b765544dcca02ff629e4cc88e3b34d1d3b3e85dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429678"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711815"
 ---
 # <a name="buy-and-sell-leave"></a>Osta ja myy lomaa
 
-[!include [banner](includes/preview-feature.md)]
-
-Voit jättää loman ostopyynnöt.  
+Voit lähettää Dynamics 365 Human Resourcesissa loman rahaksi tai lomapalkan vapaaksi vaihtamispyyntöjä yrityksen määrittämien loman rahaksi tai lomapalkan vapaaksi vaihtamiskäytäntöjen perusteella.  
 
 ## <a name="request-to-buy-leave"></a>Pyyntö ostaa loma
 
@@ -39,7 +37,17 @@ Voit jättää loman ostopyynnöt.
 
 3. Valitse **Lähetä**, kun olet valmis lähettämään pyyntösi. 
 
-Kun pyyntö on lähetetty, saldojasi päivitetään automaattisesti sen mukaan, kuinka suuri lomaosto on pyydetty. 
+Saldo päivitetään joko automaattisesti tai se siirtyy hyväksyntäprosessiin ennen päivittämistä. Toimintatapa määräytyy loman rahaksi vaihtamiskäytännön määrityksen mukaan.
+
+## <a name="request-to-sell-leave"></a>Lomapalkan vapaaksi vaihtamispyyntö
+
+1. Valitse **Työntekijän itsepalvelu** -työtilassa **Lomapalkan vapaaksi vaihtamispyyntö** **Vapaasaldot**-ruudussa. 
+
+2. Lisää **Lomatyyppi** ja kirjoita vapaaksi vaihdettavan lomapalkan **Määrä**. 
+
+3. Valitse **Lähetä**, kun olet valmis lähettämään pyyntösi.
+
+Saldo päivitetään joko automaattisesti tai se siirtyy hyväksyntäprosessiin ennen päivittämistä. Toimintatapa määräytyy loman rahaksi vaihtamiskäytännön määrityksen mukaan.
 
 ## <a name="see-also"></a>Lisätietoja
 

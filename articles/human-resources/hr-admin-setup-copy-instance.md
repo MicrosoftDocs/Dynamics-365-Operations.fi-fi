@@ -3,7 +3,7 @@ title: Kopioi esiintymä
 description: Microsoft Dynamics 365 Human Resources -tietokannan voi kopioida eristysympäristöön Microsoft Dynamics Lifecycle Servicesin (LCS) avulla.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554322"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706225"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
 Microsoft Dynamics 365 Human Resources -tietokannan voi kopioida eristysympäristöön Microsoft Dynamics Lifecycle Servicesin (LCS) avulla. Jos käytössä on toinen eristysympäristö, voit kopioida myös tietokannan siitä kohde-eristysympäristöön.
 
-Jos haluat kopioida esiintymän, sinun on varmistettava seuraavat asiat:
+Esiintymää kopioitaessa kannattaa muistaa seuraavat vinkit:
 
 - Korvattavan Human Resources -esiintymän on oltava eristysympäristö.
 
@@ -37,7 +37,9 @@ Jos haluat kopioida esiintymän, sinun on varmistettava seuraavat asiat:
 
 - Sinun on oltava kohdeympäristön järjestelmänvalvoja, jotta voit kirjautua siihen, kun olet kopioinut esiintymän.
 
-- Kun kopioit Human Resourcesin tietokannan, et kopioi elementtejä (sovelluksia tai tietoja), jotka sisältyvät Microsoft PowerApps -ympäristöön. Lisätietoja elementtien kopioinnista PowerApps-ympäristössä on kohdassa [Ympäristön kopioiminen](https://docs.microsoft.com/power-platform/admin/copy-environment). Korvattavan PowerApps-ympäristön on oltava eristysympäristö. Sinun on oltava yleinen vuokraajan järjestelmänvalvoja, jotta voit muuttaa PowerApps-tuotantoympäristön eristysympäristöksi. Lisä tietoja PowerApps-ympäristön muuttamisesta on kohdassa [Esiintymän vaihtaminen](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- Kun kopioit Human Resourcesin tietokannan, et kopioi elementtejä (sovelluksia tai tietoja), jotka sisältyvät Microsoft Power Apps -ympäristöön. Lisätietoja elementtien kopioinnista Power Apps-ympäristössä on kohdassa [Ympäristön kopioiminen](https://docs.microsoft.com/power-platform/admin/copy-environment). Korvattavan Power Apps-ympäristön on oltava eristysympäristö. Sinun on oltava yleinen vuokraajan järjestelmänvalvoja, jotta voit muuttaa Power Apps-tuotantoympäristön eristysympäristöksi. Lisä tietoja Power Apps-ympäristön muuttamisesta on kohdassa [Esiintymän vaihtaminen](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- Jos kopioit esiintymään eristysympäristöön ja haluat integroida eristysympäristön Common Data Servicen kanssa, mukautetut kentät on otettava uudelleen Common Data Service -entiteeteissä. Lisätietoja on kohdassa [Mukautettujen kenttien käyttäminen Common Data Servicessä](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Human Resources -tietokannan kopioinnin vaikutukset
 
@@ -47,15 +49,15 @@ Human Resources -tietokannan kopioinnin yhteydessä tapahtuu seuraavaa:
 
 - Kohdeympäristö ei ole käytettävissä, ennen kuin kopiointiprosessi on valmis.
 
-- Microsoft Azure Blob -tallennustilassa olevia asiakirjoja ei kopioida ympäristöstä toiseen. Siksi liitettyjä asiakirjoja ja malleja ei kopioida, ja ne jäävät lähdeympäristöön.
+- Microsoft Azure Blob -tallennustilassa olevia asiakirjoja ei kopioida ympäristöstä toiseen. Tämän vuoksi liitettyjä asiakirjoja ja malleja ei kopioida, ja ne jäävät lähdeympäristöön.
 
-- Mitkään käyttäjät, paitsi järjestelmänvalvojakäyttäjä ja muut sisäisen palvelun käyttäjätilit eivät ole käytettävissä. Siten järjestelmänvalvojakäyttäjä voi poistaa tietoja tai piilottaa niitä näkyvistä, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
+- Mitkään käyttäjät, paitsi järjestelmänvalvojakäyttäjä ja muut sisäisen palvelun käyttäjätilit eivät ole käytettävissä. Järjestelmänvalvojakäyttäjä voi poistaa tietoja tai piilottaa niitä näkyvistä, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
 
 - Järjestelmänvalvojakäyttäjän on suoritettava vaadittavat muutokset määrityksiin, kuten yhdistettävä integroinnin päätepisteet uudelleen tiettyihin palveluihin tai URL-osoitteisiin.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources -tietokannan kopiointi
 
-Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sitten Microsoft Power Platform -hallintakeskukseen ja kopioi PowerApps-ympäristösi.
+Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sitten Microsoft Power Platform -hallintakeskukseen ja kopioi Power Apps-ympäristösi.
 
 > [!WARNING]
 > Kun kopioit esiintymän, tietokanta poistetaan kohde-esiintymästä. Kohde-esiintymä ei ole käytettävissä tämän prosessin aikana.
@@ -74,7 +76,7 @@ Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sit
 
    ![[Valitse Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. Valitse kopioitava PowerApps-ympäristö ja sitten **Kopioi**.
+6. Valitse kopioitava Power Apps-ympäristö ja sitten **Kopioi**.
 
 7. Kun kopiointiprosessi on valmis, kirjaudu kohde-esiintymään ja ota Common Data Service -integrointi käyttöön. Lisätietoja ja -ohjeita on kohdassa [Common Data Service -integroinnin määrittäminen](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
@@ -98,9 +100,15 @@ Seuraavia tietoelementtejä ei kopioida, kun kopioit Human Resources -esiintymä
 
 - Yhteysmerkkijono taulukossa **PersonnelIntegrationConfiguration**
 
-Osaa näistä elementeistä ei kopioida, koska ne ovat ympäristökohtaisia. Esimerkkejä tästä ovat tietueet **BatchServerConfig** ja **SysCorpNetPrinters**. Toisia elementtejä ei kopioida palvelupyyntöjen suuren määrän vuoksi. Esimerkiksi sähköpostien kaksoiskappaleita saatetaan lähettää, koska SMTP on edelleen käytössä käyttäjän hyväksyntätestauksen ympäristössä (eristys), virheellisiä integrointisanomia saatetaan lähettää, koska erätyöt ovat yhä käytössä ja käyttäjät saattavat olla käytössä, ennen kuin järjestelmänvalvojat voivat suorittaa päivityksen jälkeiset puhdistustoiminnot.
+Osaa näistä elementeistä ei kopioida, koska ne ovat ympäristökohtaisia. Esimerkkejä tästä ovat tietueet **BatchServerConfig** ja **SysCorpNetPrinters**. Toisia elementtejä ei kopioida palvelupyyntöjen suuren määrän vuoksi. Esimerkki:
 
-Lisäksi seuraavat tilat muuttuvat, kun esiintymä kopioidaan:
+- Sähköpostien kaksoiskappaleita saatetaan lähettää, koska SMTP on edelleen käytössä käyttäjän hyväksyntätestauksen ympäristössä (eristys).
+
+- Virheellisiä integrointisanomia saatetaan lähettää, koska erätyöt ovat yhä käytössä.
+
+- Käyttäjät saattavat olla käytössä, ennen kuin järjestelmänvalvojat voivat suorittaa päivityksen jälkeiset puhdistustoiminnot.
+
+Myös seuraavat tilat muuttuvat, kun esiintymä kopioidaan:
 
 - Kaikkien käyttäjien tilaksi järjestelmänvalvojaa lukuun ottamatta asetetaan **Pois käytöstä**.
 
@@ -111,3 +119,32 @@ Lisäksi seuraavat tilat muuttuvat, kun esiintymä kopioidaan:
 Kaikki eristetyn kohdeympäristön käyttäjät, myös järjestelmänvalvojat, korvataan lähdeympäristön käyttäjillä. Varmista ennen esiintymän kopioimista, että olet lähdeympäristön järjestelmänvalvoja. Jos et ole, et voi kirjautua eristettyyn kohdeympäristöön, kun kopiointi on valmis.
 
 Kaikki muut kuin järjestelmänvalvojakäyttäjät poistetaan käytöstä eristetyssä kohdeympäristössä, jotta estetään ei-toivotut kirjautumiset siihen. Järjestelmänvalvojat voivat tarvittaessa ottaa käyttäjiä uudelleen käyttöön.
+
+## <a name="apply-custom-fields-to-common-data-service"></a>Mukautettujen kenttien käyttäminen Common Data Servicessä
+
+Jos kopioit esiintymään eristysympäristöön ja haluat integroida eristysympäristön Common Data Servicen kanssa, mukautetut kentät on otettava uudelleen Common Data Service -entiteeteissä.
+
+Tee seuraavat jokaisen Common Data Servicessä näkyvän mukautetun kentän kohdalla:
+
+1. Siirry mukautettuun kenttään ja valitse **Muokkaa**.
+
+2. Poista kunkin sellaisen cdm_*-entiteetin **Käytössä**-kentän valinta, jossa mukautettu kenttä on otettu käyttöön.
+
+3. Valitse **Ota muutokset käyttöön**.
+
+4. Valitse **Muokkaa** uudelleen.
+
+5. Valitse kunkin sellaisen cdm_*-entiteetin **Käytössä**-kenttä, jossa mukautettu kenttä on otettu käyttöön.
+
+6. Valitse **Ota muutokset käyttöön** uudelleen.
+
+Valinnan poistamisprosessi, muutosten käyttöönottaminen, uudelleen valitseminen ja muutosten ottaminen uudelleen käyttöön saa rakenteen päivittämään Common Data Servicen sisällyttämään mukautetut kentät.
+
+Lisätietoja mukautetuista kentistä on kohdassa [Mukautettujen kenttien luonti ja käyttö](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## <a name="see-also"></a>Lisätietoja
+
+[Valmistele Human Resources](hr-admin-setup-provision.md)</br>
+[Poista esiintymä](hr-admin-setup-remove-instance.md)</br>
+[Päivitysprosessi](hr-admin-setup-update-process.md)
+

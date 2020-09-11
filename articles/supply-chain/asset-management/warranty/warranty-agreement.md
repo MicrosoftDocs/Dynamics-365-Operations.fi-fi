@@ -3,7 +3,7 @@ title: Takuusopimukset
 description: Tässä ohjeaiheessa kerrotaan takuusopimuksista resurssien hallinnassa.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215375"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719235"
 ---
 # <a name="warranty-agreements"></a>Takuusopimukset
 
@@ -42,12 +42,12 @@ Takuusopimukseen voi kuulua useita sopimusrivejä, jotka kattavat työajan, kulu
 
 1. Valitse **Resurssien hallinta** \> **Asetukset** \> **Resurssit** \> **Takuu**.
 2. Luo tuote valitsemalla **Uusi**.
-3. Syötä **Takuu** -kenttään takuun tunnus.
+3. Syötä **Takuu** -kenttään takuun tunnus. 
 4. Anna kuvaus **nimi**-kenttään.
 
     **Tiedot**-pikavälilehden **Resurssit**-kentässä näkyy takuusopimusta käyttävien aktiivisten resurssien määrä.
 
-5. Tee **Tuntitakuu**- ja **Nimiketakuu**-pikavälilehdissä seuraavat vaiheet, kun haluat lisätä rivejä tunteja tai nimikkeitä koskevaan takuusopimukseen:
+5. Lisää takuusopimukseen sisällytettävät rivit **Takuurivit**-pikavälilehdessä seuraavasti:
 
     1. Voit lisätä uuden ehdon takuuseen valitsemalla **Lisää rivi**. **Rivi**-kenttään syötetään automaattisesti rivin järjestysnumero.
     2. Valitse **Kausi**-kentässä takuukauden tyyppi.

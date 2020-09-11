@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443892"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719261"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
@@ -79,7 +79,7 @@ Jos käytät myös Field Service -ratkaisua, muista ottaa **Tarjousrivin pikakä
 
 Myyntitilaukset luodaan Salesissa tai Supply Chain Managementissa. Jos luot myyntitilauksen Salesissa, se synkronoidaan Supply Chain Managementiin reaaliajassa. Samoin jos luot myyntitilauksen Supply Chain Managementissa, se synkronoidaan Salesiin reaaliajassa. Huomaa seuraavat seikat:
 
-+ Voit aktivoida ja synkronoida tilauksia Salesista vain, jos kaikki tilauksen tuotteet ovat peräisin Finance and Operations -sovelluksista. Tämän vuoksi käsin lisättyjä tuotteita ei voi olla.
++ Dynamics 365 Salesin kirjoitettavat tuotteet näkyvät tuoteluokkina Dynamics 365 Supply Chain Managementissa.
 + Alennuksen laskeminen ja pyöristäminen:
 
     - Salesin alennuksen laskentamalli on erilainen kuin Supply Chain Managementin alennuksen laskentamalli. Supply Chain Managementissa myyntirivin lopullinen alennussumma voi olla alennussummien ja alennusprosenttien yhdistelmän tulos. Jos tämä lopullinen alennussumma jaetaan rivin määrällä, tulos saatetaan pyöristää. Pyöristystä ei kuitenkaan tehdä, jos pyöristetty yksikkökohtainen alennussumma synkronoidaan Salesiin. Voit varmistaa, että Supply Chain Management -myyntirivin koko alennussumma synkronoidaan oikein Salesiin, kun koko summa synkronoidaan ilman, että sitä jaetaan rivimäärällä. Tämän vuoksi Salesin Alennuksen laskutapa -kohdan arvoksi on määritettävä **Rivinimike**.

@@ -3,7 +3,7 @@ title: Ota tuotesuositukset käyttöön
 description: Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2dacd4a94f706be5aa65947c0b6a92e281733ca
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665023"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700839"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -65,11 +65,13 @@ Tallenna ja sulje sivu.
 
 Voit ottaa tuotesuositukset käyttöön noudattamalla seuraavia ohjeita.
 
-1. Siirry kohtaan **Retail ja Commerce &gt; Tuotesuositukset &gt; Suositusparametrit**.
-1. Valitse jaettujen parametrien luettelossa **Suositusluettelot**.
-1. Määritä **Ota suositukset käyttöön** -asetukseksi **Kyllä**.
+1. Hae **Ominaisuuksien hallinta** Commercen pääkonttoriversiossa.
+1. Avaa käytettävissä olevien ominaisuuksien luettelo valitsemalla **Kaikki**. 
+1. Kirjoita hakuruutuun **Suositukset**.
+1. Valitse **Tuotesuositukset** -ominaisuus.
+1. Valitse **Tuotesuositukset** -ominaisuusruudussa **Ota käyttöön nyt**.
 
-![Suositusten ottaminen käyttöön](./media/enablepersonalization.png)
+![Suositusten ottaminen käyttöön](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > Tämä menettely käynnistää tuotesuositusluetteloiden luontiprosessin. Luetteloiden luominen, niiden saaminen käyttöön ja näkyminen myyntipisteessä tai Dynamics 365 Commerce -sovelluksessa voi kestää useita tunteja.
