@@ -3,7 +3,7 @@ title: Kaksoiskirjoituksen asetusten tuetut skenaariot
 description: Tässä ohjeaiheessa kuvataan skenaariot, joita tuetaan kaksoiskirjoituksen asetuksia varten.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d7ff514768ee8e4797b591da89e190a855385885
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172851"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706249"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>Kaksoiskirjoituksen asetusten tuetut skenaariot
 
@@ -34,8 +34,11 @@ ms.locfileid: "3172851"
 
 Voit määrittää kaksoiskirjoitusyhteyden Finance and Operations -ympäristön ja Common Data Service -ympäristön välille.
 
-+ **Finance and Operations -ympäristö** tarjoaa **Finance and Operations -sovelluksille** (esimerkiksi Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Retail ja Dynamics 365 Human Resources) taustaympäristön.
++ **Finance and Operations -ympäristö** muodostaa **Finance and Operations -sovellusten** (kuten Microsoft Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin ja Dynamics 365 Retailin) taustaympäristön.
 + **Common Data Service -ympäristö** tarjoaa **Dynamics 365:n mallipohjaisille sovelluksille** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing ja Dynamics 365 Project Service Automation) taustaympäristön.
+
+>[!IMPORTANT]
+>Finance and Operationsin Human Resources tukee kaksoiskirjoitusyhteyksiä, mutta Dynamics 365 Human Resources -sovellus ei.
 
 Asennusmekanismi vaihtelee tilauksen ja ympäristön mukaan.
 

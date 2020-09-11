@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429056"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712158"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Jaksota loma- ja poissaolosuunnitelmat
 
@@ -37,7 +37,9 @@ Voit jaksottaa lomaa ja poissaoloa Dynamics 365 Human Resourcesissa useille työ
 
 3. **Kertyneiden lomien ja poissaolojen suunnitelmat** -valintaikkuna tulee näyttöön. Valitse **Kertymä**-kohdasta joko **Kuluvan päivän päivämäärä** tai valitse **Mukautettu päivämäärä** ja syötä mukautettu päivämäärä.
 
-4. Jos haluat suorittaa jaksotusprosessin taustalla, valitse **Suorita taustalla** ja tee seuraavat tehtävät:
+4. Jos haluat suorittaa jaksotukset kaikissa yrityksissä, valitse **Kaikki yritykset**. Jos haluat käsitellä yhden lomasuunnitelman jaksotukset, valitse **Kaikki suunnitelmat** -asetukseksi **Ei** ja valitse sitten **Lomasuunnitelma**. Jos valitset kaikki yritykset, et voi valita yksittäistä lomasuunnitelmaa. 
+
+5. Jos haluat suorittaa jaksotusprosessin taustalla, valitse **Suorita taustalla** ja tee seuraavat tehtävät:
 
    1. Määritä jaksotusprosessin tiedot.
 
@@ -55,7 +57,9 @@ Voit jaksottaa lomaa ja poissaoloa Dynamics 365 Human Resourcesissa useille työ
 
 3. **Kertyneiden lomien ja poissaolojen suunnitelmat** -valintaikkuna tulee näyttöön. Valitse **Kertymä**-kohdasta joko **Kuluvan päivän päivämäärä** tai valitse **Mukautettu päivämäärä** ja syötä mukautettu päivämäärä.
 
-4. Jos haluat suorittaa jaksotusprosessin taustalla, valitse **Suorita taustalla** ja tee seuraavat tehtävät:
+4. Jos haluat suorittaa jaksotukset kaikissa yrityksissä, valitse **Kaikki yritykset**. Jos haluat käsitellä yhden lomasuunnitelman jaksotukset, valitse **Kaikki suunnitelmat** -asetukseksi **Ei** ja valitse sitten **Lomasuunnitelma**. Jos valitset kaikki yritykset, et voi valita yksittäistä lomasuunnitelmaa. 
+
+5. Jos haluat suorittaa jaksotusprosessin taustalla, valitse **Suorita taustalla** ja tee seuraavat tehtävät:
 
    1. Määritä jaksotusprosessin tiedot.
 
@@ -102,18 +106,6 @@ Poista tietyn suunnitelman ja päivämäärävälin jaksotustiedot. Jaksotuspäi
 1. Valitse **Lomat ja poissaolot** -sivulla **Linkit**-välilehti.
 
 2. Valitse **Hallitse lomia** -kohdassa **Poista lomakertymien valvonta**.
-
-## <a name="configure-preview-features"></a>Esikatseluominaisuuksien määrittäminen
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Jos olet ottanut käyttöön loman ja poissaolon esikatseluominaisuudet, sinun on määritettävä myös niiden asetukset.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Loman jaksottaminen yrityksen tai lomasuunnitelman mukaan
-
-Kun loma- ja poissaolosuunnitelmat kertyvät, voit määrittää, että kaikki yritykset jaksotetaan. Jos valitset kaikki yritykset, et voi valita yksittäistä lomasuunnitelmaa. Jos valitset, että kaikkia yrityksiä ei kerrytetä, voit jaksottaa tietyn lomasuunnitelman. 
-
-Nämä vaihtoehdot ovat käytettävissä, kun ne kertyvät kaikille työntekijöille tai yksittäisille työntekijöille. 
 
 ## <a name="see-also"></a>Lisätietoja
 

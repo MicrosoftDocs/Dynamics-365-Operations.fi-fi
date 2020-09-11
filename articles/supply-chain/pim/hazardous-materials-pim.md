@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208457"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699533"
 ---
 # <a name="hazardous-materials"></a>Vaaralliset materiaalit
 
@@ -35,7 +35,7 @@ Vaarallisia aineita koskevat tiedot määritetään tuotetietojen hallinnassa. T
 Kun lähetät aineita, jotka luokitellaan vaaralliseksi tavaraksi, lähetysten mukana on toimitettava ylimääräistä paperityötä. Vaarallisten aineiden toiminnon avulla asiakkaat voivat tallentaa luokittelutietoja ja liittää sen vapautettaviin nimikkeisiin. Näitä tietoja voidaan sitten käyttää lähetysdokumentaation valmisteluun.
 
 > [!IMPORTANT]
-> Vaarallisten tavaroiden lähetysten hallintaa varten Microsoft Dynamics 365 Supply Chain Management antaa sinun määrittää tuotteisiin liittyviä ylimääräisiä viitetietoja. Voit myös määrittää ylimääräisiä toimitusasiakirjoja. Järjestelmä ei kuitenkaan ole automaattisesti maan tai alueen säädösten mukainen. Sen sijaan se on työkalu, joka voi auttaa ohjelmaa yleisellä tasolla.
+> Microsoft Dynamics 365 Supply Chain Managementin vaarallisten aineiden toiminnot muodostavat hyödyllisten tuotetietokenttien ja liittyvien toimintojen kokoelman, joka auttaa kirjaamaan vaarallisiin tuotteisiin liittyviä tietoja ja viittaamaan niihin. Nämä toiminnot auttavat myös suunnittelemaan ja tulostamaan lähetysasiakirjoja, joissa on joitakin samoja tietoja lähetettävistä vaarallisista aineista. Järjestelmä ei kuitenkaan automaattisesti takaa, että maan tai alueen kaikkia soveltuvia säädöksiä noudatetaan. Vaikka nämä työkalut on tarkoitettu auttamaan yleisten määräysten noudattamisessa, ne eivät yksin riitä eikä ole takeita, että määräyksiä noudatetaan niiden avulla. Organisaatio vastaa siitä, että se on tietoinen kaikissa käytössä olevista säädöksistä ja että se tekee tarvittavan niiden noudattamiseksi.
 
 Ennen tämän toiminnon käyttöä on tehtävä seuraavat määritykset:
 

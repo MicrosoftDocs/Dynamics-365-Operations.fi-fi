@@ -3,7 +3,7 @@ title: Kalenterit ja pääsuunnittelu
 description: Tässä ohjeaiheessa on yleiskatsaus toimitusketjujen kalentereista ja niiden vaikutuksesta pääsuunnitteluun.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213489"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710330"
 ---
 # <a name="calendars-and-master-planning"></a>Kalenterit ja pääsuunnittelu
 
@@ -105,28 +105,28 @@ Suunnitellun ostotilauksen tilauspäivämäärä ilmaisee päivämäärän, joll
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Suunnitellun ostotilauksen toimituspäivämäärä
 Oston vastaanottopäivämäärä ilmaisee päivämäärän, jolloin vastaanotot tavarat. Se on kalenterin avoin päivämäärä. Seuraavat kalenterit otetaan huomioon, kun ilmaistaan, minä päivinä ostotilaukset voidaan vastaanottaa. Kalenterit on järjestetty prioriteetiltaan suurimmasta pienimpään. 
-    1. Toimittajan kalenteri
-    2. Kattavuusryhmän kalenteri
-    3. Vastaanottovaraston varaston kalenteri
+1. Toimittajan kalenteri
+1. Kattavuusryhmän kalenteri
+1. Vastaanottovaraston varaston kalenteri
 
 Huomaa, että kattavuusryhmän kalenteri voidaan määrittää eri sivuilla, joiden prioriteettijärjestys on seuraava:
-    1. Nimikkeen kattavuusryhmä **Julkaistujen tuotteiden tiedot** -sivu
-    2. Nimikkeen kattavuusryhmä **Nimikkeen kattavuus** -sivulla
-    3. Nimikkeen oletuskattavuusryhmä **Pääsuunnittelun parametrit**
+1. Nimikkeen kattavuusryhmä **Nimikkeen kattavuus** -sivulla
+1. Nimikkeen kattavuusryhmä **Julkaistujen tuotteiden tiedot** -sivu
+1. Nimikkeen oletuskattavuusryhmä **Pääsuunnittelun parametrit**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Suunnitellun ostotilauksen lähetyspäivämäärä
 Kun kahden varaston välille luodaan siirtotilaus, lähetys- ja vastaanottopäivämäärä sisältyvät siirtotilauksen otsikkoon, jossa on myös lähettävä ja vastaanottava varasto. Näiden kahden päivämäärän välinen ero on odotettu kuljetusaika (päivinä) varastojen välillä.
 
 Suunnitellun siirtotilauksen lähetyspäivämäärä ilmaisee päivämäärän, jolloin tavarat lähetetään varastosta. Käytettävissä olevan lähetyspäivämäärän määrittämisessä käytetyt kalenterit prioriteetin mukaisessa järjestyksessä: 
-    1. Lähettävän varaston varastokalenterin
-    2. Kattavuusryhmän kalenteri (katso edellä tämän kalenterin varmistustilaus) Jos varastokalenteri on määritetty, lähetyspäivämäärä on avoin päivämäärä kalenterissa. Jos varastokalenteria ei ole määritetty, käytössä on kattavuusryhmän kalenteri. 
+1. Lähettävän varaston varastokalenterin
+1. Kattavuusryhmän kalenteri (katso edellä tämän kalenterin varmistustilaus) Jos varastokalenteri on määritetty, lähetyspäivämäärä on avoin päivämäärä kalenterissa. Jos varastokalenteria ei ole määritetty, käytössä on kattavuusryhmän kalenteri. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Suunnitellun ostotilauksen vastaanottopäivämäärä
 Siirtotilauksen vastaanottopäivämäärä ilmaisee päivämäärän, jolloin tavarat vastaanotetaan varastoon.
 
 Vastaanottopäivämäärän määrittämisessä käytetyt kalenterit prioriteetin mukaisessa järjestyksessä: 
-    1. Kattavuusryhmän kalenteri 
-    2. Vastaanottavan varaston varastokalenteri Jos kattavuuskalenteri on määritetty, vastaanottopäivämäärä on avoin päivämäärä kalenterissa. Jos kattavuusryhmän kalenteria ei ole määritetty, käytössä on varastokalenteri. 
+1. Kattavuusryhmän kalenteri 
+1. Vastaanottavan varaston varastokalenteri Jos kattavuuskalenteri on määritetty, vastaanottopäivämäärä on avoin päivämäärä kalenterissa. Jos kattavuusryhmän kalenteria ei ole määritetty, käytössä on varastokalenteri. 
 
 Kun suunnitellun siirron lähetys- ja vastaanottopäivämääriä etsitään, huomioon otetaan myös käyttäjän lähettämiselle ja vastaanottamiselle määrittämät marginaalit. 
 

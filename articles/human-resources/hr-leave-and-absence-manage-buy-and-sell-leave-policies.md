@@ -3,7 +3,7 @@ title: Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtam
 description: Voit antaa työntekijöille oikeuden ostaa ja myydä lomaa Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429010"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712108"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi
 
-[!include [banner](includes/preview-feature.md)]
-
-Voit antaa työntekijöille oikeuden ostaa lomaa luomalla ostolomakäytännön.  
+Voit antaa työntekijöille oikeuden ostaa ja myydä lomia luomalla lomien osto- ja myyntikäytännön. Voit määrittää nämä käytännöt käyttämään hyväksyntätyökulkua, määrittää enimmäismäärät ja -hinnat sekä määrittää osto- ja myyntihinnat. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Anna työntekijöille mahdollisuus ostaa ja myydä lomaa
 
-1. Valitse **Loma- ja poissaoloparametrit** -sivulla **Kyllä**, jotta **Työntekijät voivat ostaa loman**. 
+1. Valitse **Loma- ja poissaoloparametrit** -sivun**Työntekijät voivat ostaa lomaa**- ja **Salli työntekijöiden myydä lomaa** -vaihtoehdoissa **Kyllä**.
 
-## <a name="create-a-buy-leave-policy"></a>Luo loman ostokäytäntö
+## <a name="create-a-buy-and-sell-leave-policy"></a>Loman rahaksi tai lomapalkan vapaaksi vaihtamiskäytäntöjen luominen
 
 1. Valitse **Lomat ja poissaolot** -sivulla **Linkit**-välilehti. 
 
@@ -51,19 +49,23 @@ Voit antaa työntekijöille oikeuden ostaa lomaa luomalla ostolomakäytännön.
 
 6. Valitse käytännön **Alkamispäivämäärä** ja **Päättymispäivämäärä**. Osto- tai myyntipyynnöt ovat käytettävissä vain tämän aikajakson aikana. 
 
-7. Valitse **Ostokäytäntö**-kohdasta **Koko ajan vastaavuus** (FTE), jos haluat määrittää enimmäisarvon työntekijän toimessa määritetyn FTE-arvon perusteella. Jos käytäntötyyppi on **Määrä**, määritä **Enimmäismäärä**. 
+7. Valitse käytännön **Työnkulkutunnus**. Kaikki osto-ja myyntipyynnöt arvioidaan ja hyväksytään tämän työnkulun avulla. 
 
-8. Valitse **Lisää**, kun haluat lisätä lomatyypit työntekijöille, jotka ostavat lomaa. Voit lisätä käytäntöön useita lomatyyppejä. 
+8. Valitse **Ostokäytäntö**-kohdasta **Koko ajan vastaavuus** (FTE), jos haluat määrittää enimmäisarvon työntekijän toimessa määritetyn FTE-arvon perusteella. Jos käytäntötyyppi on **Määrä**, määritä **Enimmäismäärä**. 
 
-9. Syötä lomatyypin **palvelukuukaudet**, jotta eri kuukaudet voivat määrittää työntekijän ostaman enimmäishinnan. 
+9. Valitse **Lisää**, kun haluat lisätä lomatyypit työntekijöille, jotka ostavat lomaa. Voit lisätä käytäntöön useita lomatyyppejä. 
 
-10. Kirjoita lomatyypin **enimmäismäärä**. 
+10. Syötä lomatyypin **palvelukuukaudet**, jotta eri kuukaudet voivat määrittää työntekijän ostaman enimmäishinnan. 
 
-11. Kirjoita **taksa**, jolla työntekijä ostaa loman. 
+11. Kirjoita lomatyypin **enimmäismäärä**. 
 
-12. Vaihtoehtoisesti voit antaa **ansaintakoodin**, jota käytetään loman ostamiseen. 
+12. Kirjoita **taksa**, jolla työntekijä ostaa loman. 
 
-13. Voit myös määrittää, käytetäänkö FTE-tyyppiä, kun haluat määrittää lomatyypin enimmäismäärän. 
+13. Vaihtoehtoisesti voit antaa **ansaintakoodin**, jota käytetään loman ostamiseen. 
+
+14. Voit myös määrittää, käytetäänkö FTE-tyyppiä, kun haluat määrittää lomatyypin enimmäismäärän. 
+
+15. Luo ostokäytäntö **Ostokäytäntö**-kohdan vaiheiden 8–14 mukaisesti. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>Loman osto- ja myyntikäytännön lisääminen loma- ja poissaolosuunnitelmaan
 

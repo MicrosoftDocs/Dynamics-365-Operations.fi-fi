@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699366"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710256"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Modernin myyntipisteen (MPOS) asiakastilaukset
 
@@ -54,7 +54,10 @@ Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Commercen parametri
     - Kulut otetaan käyttöön myyntitilauksen otsikon tasolla ja kun tuotelinjan jokin määrä palautetaan, suurinta tuotteille ja määrälle sallittua toimitusmaksun palautusta ei voi määrittää tavalla, joka toimii kaikille asiakkaille.
     - Kuljetusmaksut syntyvät toimituksen kaikissa esiintymissä. Jos asiakas palauttaa tuotteet useita kertoja ja jälleenmyyjän käytäntö määrittää, että vähittäismyyjä vasta toimituskustannuksista, palautettavat kuljetusmaksut ovat enemmän kuin todelliset kuljetusmaksut.
     
-- **Verojen laskentatapa** - **Laske uudelleen** on oletusarvon mukainen ja perinteinen asetus, jonka mukaan verot lasketaan uudelleen, kun tilaus tuodaan taustajärjestelmään. **Älä Laske uudelleen** estää veron uudelleenlaskennan, kunnes tai ellei tilausta muokata taustaohjelmassa, kun uudelleenlaskenta käynnistetään. 
+
+## <a name="disable-option-to-pay-later"></a>Myöhemmin tapahtuvan maksamisen poistaminen käytöstä
+
+Commercen versiosta 10.0.12 alkaen kauppiaat voivat poistaa mahdollisuuden maksaa myöhemmin, kun asiakastilaus luodaan myyntipisteessä. Voit poistaa vaihtoehdon käytöstä avaamalla sen kanavan **toimintoprofiilin**, jossa myöhemmin maksamista ei sallita, ja valitsemalla sitten **Muokkaa**. Valitse **Yleiset**-välilehdessä avattavat **Täyttäminen edellyttää maksua**. Jos myöhemmin maksamista ei sallita myyntipisteessä, valitse ensin **Edellyttää korttia** ja sitten **Tallenna**. Synkronoi muutos kanavaan suorittamalla **1070**-jakeluaikataulu. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien työnkulku
 

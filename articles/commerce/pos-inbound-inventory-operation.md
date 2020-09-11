@@ -3,7 +3,7 @@ title: Myyntipisteen saapuva varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen saapuva varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627535"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710306"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -143,6 +143,20 @@ Toiminto noudattaa **Tyhjä vastaanotto sallitaan** -määritystä **sijainnin**
 ### <a name="receive-all"></a>Vastaanota kaikki
 
 Voit halutessasi valita **Vastaanota kaikki** sovelluspalkissa ja päivittää kaikkien asiakirjarivien **Vastaanotto nyt** -määrän nopeasti enimmäisarvoksi, joka on vastaanotettavissa näille riveille.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Suunnittelemattomien nimikkeiden vastaanotto ostotilauksissa
+
+Käyttäjät voivat vastaanottaa Commercessa versiosta 10.0.14 alkaen tuotteen, jota ei ollut alun perin ostotilauksessa. Tämä toiminto otetaan käyttöön ottamalla **Lisää rivejä ostotilaukseen myyntipisteen vastaanoton aikana**.  
+
+Tämä toiminto toimii vain ostotilauksen vastaanottamisessa. Nimikkeitä ei voi vastaanottaa siirtotilausten perusteella, jos nimikkeitä ei ole tilattu aiemmin ja lähetetty lähtevästä varastosta.
+
+Käyttäjät eivät voi lisätä uusia tuotteita ostotilaukseen myyntipisteen vastaanoton aikana, jos ostotilauksen [muutosten hallinnan työnkulku](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) on otettu käyttöön Commercen pääkonttoriversiossa (HQ). Muutosten hallinnan käyttöönotto edellyttää, että kaikki ostotilauksen muutokset on hyväksyttävä, ennen kuin vastaanotto sallitaan. Koska vastaanottaja voi tämän prosessin myötä lisätä uusia rivejä ostotilaukseen, vastaanotto epäonnistuu, jos muutosten hallinnan työnkulku on otettu käyttöön. Jos muutosten hallinta on otettu käyttöön kaikissa ostotilauksissa tai toimittaja on linkitetty ostotilaukseen, jota vastaanotetaan aktiivisesti myyntipisteessä, käyttäjä ei voi lisätä myyntipisteessä uusia tuotteita ostotilaukseen vastaanoton aikana.
+
+Rivien lisäämisen mahdollistavaa toimintoa ei voi käyttää keinona vastaanottaa lisää ostotilauksessa jo olevia tuotteita. Ylivastaanottoa hallitaan ostotilauksen tuoterivin [ylivastaanoton](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) vakioasetuksilla.
+
+Jos **Lisää rivejä ostotilaukseen myyntipisteen vastaanoton aikana** on otettu käyttöön ja käyttäjä käyttää myyntipisteessä vastaanottoon **saapuvaa toimintoa** ja jos käyttäjä lukee tai näppäilee tuotteen viivakoodin tai tuotenumeron, jota ei tunnisteta nykyisen ostotilauksen nimikkeeksi mutta joka tunnistetaan kelvolliseksi nimikkeeksi, käyttäjä vastaanottaa ilmoituksen nimikkeen lisäämisestä ostotilaukseen. Jos käyttäjä lisää nimikkeen ostotilaukseen, **Vastaanotto nyt** -kohdassa annettua arvoa pidetään ostotilausrivin tilattuna määränä.
+
+Kun ostotilaus on vastaanotettu ja lähetetty käsiteltäväksi pääkonttoriversioon, lisätyt rivit luodaan ostotilauksen pääasiakirjaan. Pääkonttoriversion ostotilausrivillä on **Myyntipiste lisännyt** -merkintä ostotilausrivin **Yleiset**-välilehdessä. **Myyntipiste lisännyt** -merkintä ilmaisee, että myyntipisteen vastaanottoprosessi lisäsi ostotilausrivin ja että rivi ei ollut ostotilauksessa ennen vastaanottoa.
 
 ### <a name="cancel-receiving"></a>Peruuta vastaanotto
 

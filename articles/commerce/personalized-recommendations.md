@@ -3,7 +3,7 @@ title: Ota käyttöön kohdennetut tuotesuositukset
 description: Tässä ohjeaiheessa kuvataan, miten mukautettuja tuotesuosituksia voidaan käyttää Microsoft Dynamics 365 Commerce -asiakkaille.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664855"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700863"
 ---
 # <a name="enable-personalized-recommendations"></a>Ota käyttöön kohdennetut tuotesuositukset
 
@@ -49,11 +49,13 @@ Lisätietoja tuotesuosituksista on kohdassa [Tuotesuositusten yleiskatsaus](prod
 
 Mukautukset otetaan käyttöön seuraavasti.
 
-1. Siirry kohtaan **Retail and commerce \> Tuotesuositukset \> Suositusparametrit**.
-1. Valitse Retailin jaettujen parametrien luettelossa **Suositusluettelot**.
-1. Määritä **Ota käyttöön profiilin mukautus** -asetukseksi **Kyllä**.
+1. Hae **Ominaisuuksien hallinta** Commercen pääkonttoriversiossa.
+1. Avaa käytettävissä olevien ominaisuuksien luettelo valitsemalla **Kaikki**. 
+1. Kirjoita hakuruutuun **Suositukset**.
+1. Valitse **Kohdennetut tuotesuositukset** -ominaisuus.
+1. Valitse **Kohdennetut tuotesuositukset** -ominaisuusruudussa **Ota käyttöön nyt**.
 
-![Mukautusten ottaminen käyttöön](./media/enablepersonalization.png)
+![Mukautusten ottaminen käyttöön](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Kun mukautus otetaan käyttöön, mukautettujen tuotesuositusluetteloiden luontiprosessi aloitetaan. Enintään yksi päivä saattaa olla tarpeen, ennen kuin nämä luettelot ovat käytettävissä ja näkyvissä verkossa ja POS-sovelluksessa.

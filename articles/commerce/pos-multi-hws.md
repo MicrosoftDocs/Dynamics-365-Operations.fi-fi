@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658355"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719211"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Erilliset maksupäätteet ja kehotteet tulostinta ja käteislaatikkoa varten
 
@@ -78,8 +78,8 @@ Voit määrittää rekisteriin määritetyn laitteistoprofiilin noudattamalla se
 
     | Laite | Laji | Laitteen nimi | Lisätiedot |
     |---|---|---|---|
-    | Tulostin | Varaversio | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. **Kuittiprofiilin tunnuksen** tulee olla sama kuin sen **kuittiprofiilin tunnus**, joka on liitetty verkkotulostimeen, joka on määritetty laiteprofiilissa kanavatasolla määritettynä. |
-    | Kassa | Varaversio | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. Valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
+    | Tulostin | Varaversio | *Mikä tahansa* | Laitteistonimen kirjankoolla on merkitystä. **Kuittiprofiilin tunnuksen** tulee olla sama kuin sen **kuittiprofiilin tunnus**, joka on liitetty verkkotulostimeen, joka on määritetty laiteprofiilissa kanavatasolla määritettynä. |
+    | Kassa | Varaversio | *Mikä tahansa* | Laitteistonimen kirjankoolla on merkitystä. Valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
     | EFT-palvelu | Adyen | Ei käytettävissä | Lisätietoja valmiin Adyen-maksuyhdistimen asentamisesta on kohdassa [Dynamics 365 -maksuyhdistin Adyenille](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Muita maksuliittimiä voidaan tukea [Commerce Software Development Kitin (SDK)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) kautta. |
     | PIN-näppäimistö | Verkko | **MicrosoftAdyenDeviceV001** | Ei mitään. |
 
@@ -103,7 +103,7 @@ Voit määrittää verkon kuittitulostimen ja kassalaatikon ryhmittelemiseen kä
     | Laite | Laji | kuvaus | Lisätiedot |
     |---|---|---|---|
     | Tulostin | Verkko | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. **Kuittiprofiilin tunnuksen** tulee olla sama kuin sen **kuittiprofiilin tunnus**, joka on liitetty tulostimeen, joka on määritetty rekisteriin. |
-    | Kassa | Varaversio | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
+    | Kassa | Verkko | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
 
 5. Valitse **Tallenna**.
 
