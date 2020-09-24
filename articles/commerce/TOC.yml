@@ -92,6 +92,8 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (marraskuu 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (lokakuu 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (elokuu 2020)
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Itsepalvelukomponenttien joukkokäyttöönotto
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat
+                - name: Commerce-komponenttien diagnostiikka- ja vianmääritystapahtumat
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Käyttöönotettavan paketin käyttäminen
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -526,6 +528,8 @@
                       href: omni-channel-payments.md
                     - name: Monikanavaisten Commerce-tilausten maksut
                       href: dev-itpro/commerce-payments.md
+                    - name: Luottokorttien käsitteleminen ilman laiteasemaa
+                      href: dev-itpro/cnp-pos.md
                     - name: Maksut – usein kysytyt kysymykset
                       href: dev-itpro/payments-retail.md
                 - name: Bing Maps -karttapalvelun hallinta organisaatiossa
@@ -700,7 +704,7 @@
           items:
             - name: Asiakastilaukset
               items:
-                - name: 'MPOS:n asiakastilaukset'
+                - name: Asiakastilaukset myyntipisteessä
                   href: customer-orders-overview.md
                 - name: Asiakkaiden yhdistelmätilaukset
                   href: hybrid-customer-orders.md
@@ -736,7 +740,7 @@
                   href: orderexchanges.md
                 - name: Maksutapojen rajoittaminen kuitittomille palautuksille
                   href: payment-methods-restrictions.md
-                - name: Palauta nimikkeitä useista eri asiakkaan ostotilauksista ja laskuista
+                - name: Nimikkeiden palauttaminen useista eri asiakkaan ostotilauksista ja laskuista
                   href: multireturn.md
                 - name: Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
                   href: refund_policy_returns.md
@@ -826,7 +830,9 @@
                   href: custom-pages-user-logins.md
                 - name: Useiden kuluttajakaupan vuokraajien määrittäminen Commerce-ympäristössä
                   href: configure-multi-B2C-tenants.md
-                - name: Sisältöverkon (CDN) tuen lisääminen
+                - name: Toimialueet Dynamics 365 Commercessa
+                  href: domains-commerce.md
+                - name: Sisällön toimitusverkoston (CDN) tuen lisääminen
                   href: add-cdn-support.md
                 - name: Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto
                   href: enable-store-detection.md
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Luokitusten ja arvosteluiden moduulit
                       href: ratings-reviews-modules.md
+                    - name: Yhteisöpalvelujakamisen moduuli
+                      href: social-share-module.md
                 - name: Ostomoduulit
                   items:
                     - name: Ostoskorimoduuli
@@ -1026,6 +1034,12 @@
                   items:
                     - name: Navigointipolkumoduuli
                       href: add-breadcrumb.md
+                    - name: Siirtymisvalikkomoduulit
+                      href: nav-menu-module.md
+                - name: Vaatimustenmukaisuusmoduulit
+                  items:
+                    - name: Evästeiden hyväksynnän moduuli
+                      href: cookie-consent-module.md
             - name: Haku
               items:
                 - name: Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
@@ -1172,9 +1186,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: 'SSRS:n määrittäminen paikallisia käyttöönottoja varten'
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Tulostetaan
+                - name: Tulostaminen
                   items:
-                    - name: Asiakirjojen tulostuksen yleiskatsaus
+                    - name: Asiakirjojen tulostamisen yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Sähköisen raportoinnin muodon elementtien suorituksen lykkääminen
                   items:
-                    - name: Sekvenssielementin suorituksen lykkääminen
+                    - name: Sähköisen raportoinnin muotojen sarjaelementtien suorittamisen lykkääminen
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: XML-elementin suorituksen lykkääminen
+                    - name: Sähköisen raportoinnin muotojen XML-elementtien suorittamisen lykkääminen
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operationsissa
               items:
