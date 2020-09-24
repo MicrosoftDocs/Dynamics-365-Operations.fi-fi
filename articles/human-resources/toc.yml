@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 3. syyskuuta 2020
+          href: hr-whats-new-2020-09-03.md
         - name: 20. elokuuta 2020
           href: hr-whats-new-2020-08-20.md
         - name: 6. elokuuta 2020
@@ -23,12 +25,12 @@
           href: hr-whats-new-2020-05-14.md
         - name: 1. toukokuuta 2020
           href: hr-whats-new-2020-05-01.md
-        - name: 13. huhtikuuta 2020
-          href: hr-whats-new-2020-04-13.md
-        - name: 3. huhtikuuta 2020
-          href: hr-whats-new-2020-04-03.md
         - name: Uudet ominaisuudet -arkisto 2020
           items:
+            - name: 13. huhtikuuta 2020
+              href: hr-whats-new-2020-04-13.md
+            - name: 3. huhtikuuta 2020
+              href: hr-whats-new-2020-04-03.md
             - name: 24. maaliskuuta 2020
               href: hr-whats-new-2020-03-24.md
             - name: 19. maaliskuuta 2020
@@ -301,7 +303,7 @@
       items:
         - name: Yleiskatsaus
           href: hr-hrpro-overview.md
-        - name: Määritä henkilöstöhallinto
+        - name: Human Resources -asetukset
           items:
             - name: Määritä Human Resourcesin parametrit
               href: hr-setup-parameters.md

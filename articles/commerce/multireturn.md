@@ -1,9 +1,9 @@
 ---
-title: Palauta nimikkeitä useista eri asiakkaan ostotilauksista ja laskuista
+title: Nimikkeiden palauttaminen useista eri asiakkaan ostotilauksista ja laskuista
 description: Tässä aiheessa kuvataan Dynamics 365 Commercen toiminnallisuus, joka mahdollistaa palautukset useista eri asiakkaan ostotilauksista ja laskuista.
 author: josaw1
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 08/27/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,27 +18,40 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c5f17424f0837344030f9ce2d2d037cde08c4e49
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e95f06ffaaf2d250b02a8458faa2d9e0b5ef5631
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004455"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760247"
 ---
-# <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Palauta nimikkeitä useista eri asiakkaan ostotilauksista ja laskuista
+# <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Nimikkeiden palauttaminen useista eri asiakkaan ostotilauksista ja laskuista
 
 [!include [banner](includes/banner.md)]
 
 
-Palautuksia voidaan tehdä useista eri asiakkaan ostotilauksista ja laskuista. 
+Tässä artikkelissa kuvataan kaksi ominaisuutta, jotka optimoivat asiakastilausten palautukset useista laskuista. 
 
-## <a name="configure-commerce-to-support-returns-across-multiple-customer-order-and-invoices"></a>Määritä Commerce tukemaan palautuksia useista asiakkaan ostotilauksista ja laskuista.
+## <a name="enable-refunds-over-multiple-captures"></a>Salli palautukset useista tietojen tallennuksista
 
-1. Siirry kohtaan **Kaupan parametrit \> Asiakastilaukset**.
-1. Ota käyttöön **Mahdollista palautukset useille ostotilauksille** -parametri. 
+Tämän ominaisuuden avulla samasta asiakastilauksesta voi tehdä useita linkitettyjä palautuksia. 
+
+1. Siirry **Ominaisuuksien hallinta** -työtilaan ja tee haku hakusanoilla **Salli palautukset useista tietojen tallennuksista**.
+2. Valitse **Ota käyttöön palautukset useista tilauksista** ja valitse sitten **Ota käyttöön**. 
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille
+
+Tämä ominaisuus varmistaa, että kun tilaus palautetaan käyttäen useaa laskua, verot täsmäävät alun perin veloitetun verosumman kanssa. 
+
+1. Siirry **Ominaisuuksien hallinta** -työtilaan ja tee haku hakusanoilla **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille**.
+2. Valitse **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille** ja valitse sitten **Ota käyttöön**. 
+
 
 ## <a name="process-returns"></a>Palautusten käsittely
 
-Sen jälkeen, kun parametri on käytössä ja muutokset on synkronoitu myymälöihin, myymälän kassanhoitaja voi valita useita asiakkaan myyntitilauksia palautusta varten.
+Kun nämä ominaisuudet on otettu käyttöön ja muutokset on synkronoitu myymälöihin, myymälän kassanhoitaja voi valita useita asiakkaan myyntitilauksia palautusta varten.
 
 Kun tilaukset on valittu, näytetään lista kaikista palautuskelpoisista tuotteista kaikilta laskuilta. Kassanhoitaja voi tällöin valita palautettavat tuotteet. Kaikille valituille tuotteille luodaan yksi yhteinen palautustilaus.
+
+Jos tilaus palautetaan kokonaan, asiakkaalle palautettujen verojen summa on sama kuin alun perin veloitettu verosumma.
+

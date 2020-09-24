@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (marraskuu 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (lokakuu 2020)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (elokuu 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (heinäkuu 2020)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -333,7 +333,7 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Ylläpidon tarkistuslistat
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Ylläpidon käyttökatko
+                - name: Työtilauksia koskeva ylläpidon käyttökatko
                   href: asset-management/work-orders/maintenance-downtime.md
                 - name: Vian lisääminen työtilaukseen
                   href: asset-management/work-orders/add-fault-to-work-order.md
@@ -367,7 +367,7 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: Luo työtilauksia
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Ylläpidon käyttökatko
+                - name: Ylläpidon käyttökatkon tehtävät
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Kapasiteettisuunnittelu
               items:
@@ -671,9 +671,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'SSRS:n määrittäminen paikallisia käyttöönottoja varten'
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tulostetaan
+                - name: Tulostaminen
                   items:
-                    - name: Asiakirjojen tulostuksen yleiskatsaus
+                    - name: Asiakirjojen tulostamisen yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
@@ -1343,10 +1343,8 @@
               href: master-planning/master-planning-home-page.md
             - name: Suunnittelun optimointi
               items:
-                - name: Suunnittelun optimoinnin yleiskatsaus
+                - name: Suunnittelun optimoinnin yleiskuvaus
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Suunnittelun optimoinnin aloittaminen
                   href: master-planning/planning-optimization/get-started.md
                 - name: Suunnittelun optimoinnin sopivuusanalyysi
@@ -1355,16 +1353,22 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Pääsuunnittelu ja ostokauppasopimukset
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Varmuusmarginaalit
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Suunniteltujen tilausten hyväksyminen
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automaattinen vahvistus ja suunnittelun optimointi
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Suunnittelutyön peruuttaminen
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Suunnittelun optimoinnin laajennettavuus
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Suunnittelun optimoinnin vianmääritys
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Suunnittelun optimoinnin laajennettavuus
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Pääsuunnitelmat
               items:
                 - name: Pääsuunnitelmien yleiskatsaus
@@ -2619,11 +2623,13 @@
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
                 - name: Keräys ja pakkaus
                   items:
-                    - name: Määritä klusterikeräily
+                    - name: Klusterikeräilyn määrittäminen
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Klusterisijainti täynnä
+                      href: warehousing/cluster-position-full.md
                     - name: Järjestelmäohjattu klusterikeräily
                       href: warehousing/system-directed-cluster-pick.md
-                    - name: Määritä konttiinpakkaus
+                    - name: Konttiinpakkauksen määrittäminen
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Erän ja rekisterikilven tiedot
                       href: warehousing/batch-and-license-plate-confirmation.md
