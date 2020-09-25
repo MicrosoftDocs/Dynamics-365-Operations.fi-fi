@@ -10,55 +10,55 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: ''
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: ''
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05aee9865dc90c97e026d5c05fa2032fc0625f7a
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 15021281b9ec33cd0552bca16e3054d0d3cdd589
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597405"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803062"
 ---
-# <a name="monitor-and-manage-iot-intelligence"></a><span data-ttu-id="6c9f8-103">IoT-analytiikan seuranta ja hallinta</span><span class="sxs-lookup"><span data-stu-id="6c9f8-103">Monitor and manage IoT Intelligence</span></span>
+# <a name="monitor-and-manage-iot-intelligence"></a><span data-ttu-id="81966-103">IoT-analytiikan seuranta ja hallinta</span><span class="sxs-lookup"><span data-stu-id="81966-103">Monitor and manage IoT Intelligence</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6c9f8-104">Tässä ohjeaiheessa käsitellään IoT-analytiikan seurantaa ja hallintaa.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-104">This topic explains how to monitor and manage IoT Intelligence.</span></span>
+<span data-ttu-id="81966-104">Tässä ohjeaiheessa käsitellään IoT-analytiikan seurantaa ja hallintaa.</span><span class="sxs-lookup"><span data-stu-id="81966-104">This topic explains how to monitor and manage IoT Intelligence.</span></span>
 
-## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a><span data-ttu-id="6c9f8-105">Microsoft Dynamics 365 Supply Chain Managementin valvontaskenaariot</span><span class="sxs-lookup"><span data-stu-id="6c9f8-105">Monitor scenarios in Microsoft Dynamics 365 Supply Chain Management</span></span>
+## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a><span data-ttu-id="81966-105">Microsoft Dynamics 365 Supply Chain Managementin valvontaskenaariot</span><span class="sxs-lookup"><span data-stu-id="81966-105">Monitor scenarios in Microsoft Dynamics 365 Supply Chain Management</span></span>
 
-<span data-ttu-id="6c9f8-106">IoT-analytiikan käsittelyä voi seurata monessa paikassa:</span><span class="sxs-lookup"><span data-stu-id="6c9f8-106">You can monitor IoT Intelligence processing from several places:</span></span>
+<span data-ttu-id="81966-106">IoT-analytiikan käsittelyä voi seurata monessa paikassa:</span><span class="sxs-lookup"><span data-stu-id="81966-106">You can monitor IoT Intelligence processing from several places:</span></span>
 
-+ <span data-ttu-id="6c9f8-107">**Moduulit \> Tuotannonhallinta \> Kyselyt ja raportit \> IoT-analytiikka \> Ilmoitukset** – ratkaisemattomia ilmoituksia sisältävän luettelon tarkasteleminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-107">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications** – View the list of unresolved notifications.</span></span>
-+ <span data-ttu-id="6c9f8-108">**Moduulit \> Tuotannonhallinta \> Kyselyt ja raportit \> IoT-analytiikka \> Suljetut ilmoitukset** – ratkaistut tai hylätyt ilmoitukset sisältävän luettelon tarkasteleminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-108">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications** – View the list of notifications that have been resolved or dismissed.</span></span>
-+ <span data-ttu-id="6c9f8-109">**Moduulit \> Tuotannonhallinta \> Kyselyt ja raportit \> IoT-analytiikka \> Arvoavaimet** – **Resurssin tila** -aikasarjakaavioiden arvojen näyttäminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-109">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the **Resource Status** times series charts.</span></span>
-+ <span data-ttu-id="6c9f8-110">**Moduulit \> Tuotannonhallinta \> Tuotannonohjaus \> Resurssin tila** – tiettyjen mittarien seuranta **Määritä**-valintaikkunan avulla.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-110">**Modules \> Production control \> Manufacturing execution \> Resource status** – Track specific metrics by using the **Configure** dialog box.</span></span> <span data-ttu-id="6c9f8-111">Jos skenaario havaitsee poikkeuksen, ilmoitus näyttää poikkeuksen tiedot.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-111">If a scenario detects an exception, a notification shows the details of the exception.</span></span>
-+ <span data-ttu-id="6c9f8-112">**Työtilat \> Tuotannon hallinta \> Ilmoitukset** – ratkaisemattomien ilmoitusten luettelon tarkasteleminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-112">**Workspaces \> Production floor management \> Notifications** – View the list of unresolved notifications.</span></span>
++ <span data-ttu-id="81966-107">**Moduulit \> Tuotannonhallinta \> Kyselyt ja raportit \> IoT-analytiikka \> Ilmoitukset** – ratkaisemattomia ilmoituksia sisältävän luettelon tarkasteleminen.</span><span class="sxs-lookup"><span data-stu-id="81966-107">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications** – View the list of unresolved notifications.</span></span>
++ <span data-ttu-id="81966-108">**Moduulit \> Tuotannonhallinta \> Kyselyt ja raportit \> IoT-analytiikka \> Suljetut ilmoitukset** – ratkaistut tai hylätyt ilmoitukset sisältävän luettelon tarkasteleminen.</span><span class="sxs-lookup"><span data-stu-id="81966-108">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications** – View the list of notifications that have been resolved or dismissed.</span></span>
++ <span data-ttu-id="81966-109">**Moduulit \> Tuotannonhallinta \> Kyselyt ja raportit \> IoT-analytiikka \> Arvoavaimet** – **Resurssin tila** -aikasarjakaavioiden arvojen näyttäminen.</span><span class="sxs-lookup"><span data-stu-id="81966-109">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the **Resource Status** times series charts.</span></span>
++ <span data-ttu-id="81966-110">**Moduulit \> Tuotannonhallinta \> Tuotannonohjaus \> Resurssin tila** – tiettyjen mittarien seuranta **Määritä**-valintaikkunan avulla.</span><span class="sxs-lookup"><span data-stu-id="81966-110">**Modules \> Production control \> Manufacturing execution \> Resource status** – Track specific metrics by using the **Configure** dialog box.</span></span> <span data-ttu-id="81966-111">Jos skenaario havaitsee poikkeuksen, ilmoitus näyttää poikkeuksen tiedot.</span><span class="sxs-lookup"><span data-stu-id="81966-111">If a scenario detects an exception, a notification shows the details of the exception.</span></span>
++ <span data-ttu-id="81966-112">**Työtilat \> Tuotannon hallinta \> Ilmoitukset** – ratkaisemattomien ilmoitusten luettelon tarkasteleminen.</span><span class="sxs-lookup"><span data-stu-id="81966-112">**Workspaces \> Production floor management \> Notifications** – View the list of unresolved notifications.</span></span>
 
-## <a name="modify-a-running-iot-intelligence-scenario"></a><span data-ttu-id="6c9f8-113">Meneillään olevan IoT-analytiikkaskenaarion muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="6c9f8-113">Modify a running IoT Intelligence scenario</span></span>
+## <a name="modify-a-running-iot-intelligence-scenario"></a><span data-ttu-id="81966-113">Meneillään olevan IoT-analytiikkaskenaarion muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="81966-113">Modify a running IoT Intelligence scenario</span></span>
 
-<span data-ttu-id="6c9f8-114">Meneillään olevaan skenaarioon voi tehdä seuraavat muutokset:</span><span class="sxs-lookup"><span data-stu-id="6c9f8-114">When a scenario is running, you can make these changes:</span></span>
+<span data-ttu-id="81966-114">Meneillään olevaan skenaarioon voi tehdä seuraavat muutokset:</span><span class="sxs-lookup"><span data-stu-id="81966-114">When a scenario is running, you can make these changes:</span></span>
 
-+ <span data-ttu-id="6c9f8-115">Uuden anturin rakennemäärityksen lisääminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-115">Add new sensor schema definitions.</span></span>
-+ <span data-ttu-id="6c9f8-116">Uusien signaalin tietoarvojen valitseminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-116">Select new signal data values.</span></span>
-+ <span data-ttu-id="6c9f8-117">Aiemmin luotujen signaalin tietoarvojen peruuttaminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-117">Cancel the selection of existing signal data values.</span></span>
-+ <span data-ttu-id="6c9f8-118">Uuden signaalin tietoarvojen lisääminen ja yhdistäminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-118">Add and map new signal data values.</span></span>
-+ <span data-ttu-id="6c9f8-119">Raja-arvojen päivittäminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-119">Update threshold values.</span></span>
++ <span data-ttu-id="81966-115">Uuden anturin rakennemäärityksen lisääminen.</span><span class="sxs-lookup"><span data-stu-id="81966-115">Add new sensor schema definitions.</span></span>
++ <span data-ttu-id="81966-116">Uusien signaalin tietoarvojen valitseminen.</span><span class="sxs-lookup"><span data-stu-id="81966-116">Select new signal data values.</span></span>
++ <span data-ttu-id="81966-117">Aiemmin luotujen signaalin tietoarvojen peruuttaminen.</span><span class="sxs-lookup"><span data-stu-id="81966-117">Cancel the selection of existing signal data values.</span></span>
++ <span data-ttu-id="81966-118">Uuden signaalin tietoarvojen lisääminen ja yhdistäminen.</span><span class="sxs-lookup"><span data-stu-id="81966-118">Add and map new signal data values.</span></span>
++ <span data-ttu-id="81966-119">Raja-arvojen päivittäminen.</span><span class="sxs-lookup"><span data-stu-id="81966-119">Update threshold values.</span></span>
 
-<span data-ttu-id="6c9f8-120">Seuraavat muutokset meneillään olevaan skenaarioon on kielletty:</span><span class="sxs-lookup"><span data-stu-id="6c9f8-120">When a scenario is running, these changes are prohibited:</span></span>
+<span data-ttu-id="81966-120">Seuraavat muutokset meneillään olevaan skenaarioon on kielletty:</span><span class="sxs-lookup"><span data-stu-id="81966-120">When a scenario is running, these changes are prohibited:</span></span>
 
-+ <span data-ttu-id="6c9f8-121">Käyttöönotetun skenaarion parhaillaan käyttämien rakennemääritysten poistaminen tai muokkaaminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-121">Delete or modify any schema definitions that are currently consumed by an enabled scenario.</span></span>
-+ <span data-ttu-id="6c9f8-122">Käyttöönotetun skenaarion rakennepolkujen muuttaminen.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-122">Change the enabled scenario's selected schema paths.</span></span>
++ <span data-ttu-id="81966-121">Käyttöönotetun skenaarion parhaillaan käyttämien rakennemääritysten poistaminen tai muokkaaminen.</span><span class="sxs-lookup"><span data-stu-id="81966-121">Delete or modify any schema definitions that are currently consumed by an enabled scenario.</span></span>
++ <span data-ttu-id="81966-122">Käyttöönotetun skenaarion rakennepolkujen muuttaminen.</span><span class="sxs-lookup"><span data-stu-id="81966-122">Change the enabled scenario's selected schema paths.</span></span>
 
-## <a name="simulation-options"></a><span data-ttu-id="6c9f8-123">Simulointiasetukset</span><span class="sxs-lookup"><span data-stu-id="6c9f8-123">Simulation options</span></span>
+## <a name="simulation-options"></a><span data-ttu-id="81966-123">Simulointiasetukset</span><span class="sxs-lookup"><span data-stu-id="81966-123">Simulation options</span></span>
 
-<span data-ttu-id="6c9f8-124">Tehtaan laitteen signaaleja voi simuloida.</span><span class="sxs-lookup"><span data-stu-id="6c9f8-124">You can simulate factory machine signals.</span></span> <span data-ttu-id="6c9f8-125">Lisätietoja on seuraavissa aiheissa:</span><span class="sxs-lookup"><span data-stu-id="6c9f8-125">For more information, see these topics:</span></span>
+<span data-ttu-id="81966-124">Tehtaan laitteen signaaleja voi simuloida.</span><span class="sxs-lookup"><span data-stu-id="81966-124">You can simulate factory machine signals.</span></span> <span data-ttu-id="81966-125">Lisätietoja on seuraavissa aiheissa:</span><span class="sxs-lookup"><span data-stu-id="81966-125">For more information, see these topics:</span></span>
 
-+ [<span data-ttu-id="6c9f8-126">IoT DevKit AZ3166:n yhdistäminen Azuren IoT-keskittimeen</span><span class="sxs-lookup"><span data-stu-id="6c9f8-126">Connect IoT DevKit AZ3166 to Azure IoT Hub</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
-+ [<span data-ttu-id="6c9f8-127">Raspberry Pi -verkkosimulaattorin yhdistäminen Azuren IoT-keskittimeen (Node.js)</span><span class="sxs-lookup"><span data-stu-id="6c9f8-127">Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [<span data-ttu-id="6c9f8-128">Laitesimulaatioratkaisun apuohjelman yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="6c9f8-128">Device Simulation solution accelerator overview</span></span>](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
++ [<span data-ttu-id="81966-126">IoT DevKit AZ3166:n yhdistäminen Azuren IoT-keskittimeen</span><span class="sxs-lookup"><span data-stu-id="81966-126">Connect IoT DevKit AZ3166 to Azure IoT Hub</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
++ [<span data-ttu-id="81966-127">Raspberry Pi -verkkosimulaattorin yhdistäminen Azuren IoT-keskittimeen (Node.js)</span><span class="sxs-lookup"><span data-stu-id="81966-127">Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [<span data-ttu-id="81966-128">Laitesimulaatioratkaisun apuohjelman yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="81966-128">Device Simulation solution accelerator overview</span></span>](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)

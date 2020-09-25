@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CAMCostBehaviorRule
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Operations
@@ -15,73 +16,73 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e923bd4e8f89aa9398b6327fe28998f845218d4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 3f52133df2d374d6dc0f1efb33ffc85eb7d11fa9
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144401"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759229"
 ---
-# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="7be8f-103">Luo ja määritä kustannustoimintakäytäntö kustannusten hallinnan yksikköön</span><span class="sxs-lookup"><span data-stu-id="7be8f-103">Create and assign a cost behavior policy to a cost control unit</span></span>
+# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="82b4f-103">Luo ja määritä kustannustoimintakäytäntö kustannusten hallinnan yksikköön</span><span class="sxs-lookup"><span data-stu-id="82b4f-103">Create and assign a cost behavior policy to a cost control unit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7be8f-104">Kustannustoiminta on sekä kiinteiden että muuttuvien kustannusten luokittelu.</span><span class="sxs-lookup"><span data-stu-id="7be8f-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="7be8f-105">Käytäntö ja vastaavat säännöt on delegoitava kustannusseurantayksikköön, jotta käytäntö astuu voimaan.</span><span class="sxs-lookup"><span data-stu-id="7be8f-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="7be8f-106">Tämän menettelyn avulla luodaan käytäntö ja delegoidaan se sitten kustannusseurantayksikköön.</span><span class="sxs-lookup"><span data-stu-id="7be8f-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
+<span data-ttu-id="82b4f-104">Kustannustoiminta on sekä kiinteiden että muuttuvien kustannusten luokittelu.</span><span class="sxs-lookup"><span data-stu-id="82b4f-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="82b4f-105">Käytäntö ja vastaavat säännöt on delegoitava kustannusseurantayksikköön, jotta käytäntö astuu voimaan.</span><span class="sxs-lookup"><span data-stu-id="82b4f-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="82b4f-106">Tämän menettelyn avulla luodaan käytäntö ja delegoidaan se sitten kustannusseurantayksikköön.</span><span class="sxs-lookup"><span data-stu-id="82b4f-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
 
 
-## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="7be8f-107">Kustannustoiminnan hierarkian luominen</span><span class="sxs-lookup"><span data-stu-id="7be8f-107">Create a cost behavior hierarchy</span></span>
-1. <span data-ttu-id="7be8f-108">Valitse Kustannuslaskenta > Dimensiot > Dimensiohierarkiat.</span><span class="sxs-lookup"><span data-stu-id="7be8f-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="7be8f-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-109">Click New.</span></span>
-3. <span data-ttu-id="7be8f-110">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="7be8f-110">Click Create.</span></span>
-4. <span data-ttu-id="7be8f-111">Kirjoita Dimensiohierarkian nimi -kenttään Kustannustoiminnan hierarkia.</span><span class="sxs-lookup"><span data-stu-id="7be8f-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
-5. <span data-ttu-id="7be8f-112">Syötä tai valitse arvo Dimensio-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-112">In the Dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-113">Valitse Kustannustasot.</span><span class="sxs-lookup"><span data-stu-id="7be8f-113">Select Cost elements.</span></span>  
-6. <span data-ttu-id="7be8f-114">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7be8f-114">Click Save.</span></span>
-7. <span data-ttu-id="7be8f-115">Valitse Näytä hierarkia.</span><span class="sxs-lookup"><span data-stu-id="7be8f-115">Click View hierarchy.</span></span>
-8. <span data-ttu-id="7be8f-116">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-116">Click New.</span></span>
-9. <span data-ttu-id="7be8f-117">Kirjoita arvo Solmun nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-117">In the Node name field, type a value.</span></span>
-    * <span data-ttu-id="7be8f-118">Syötä Kiinteä kustannus.</span><span class="sxs-lookup"><span data-stu-id="7be8f-118">Enter Fixed cost.</span></span>  
-10. <span data-ttu-id="7be8f-119">Valitse puussa Cost behavior hierarchy.</span><span class="sxs-lookup"><span data-stu-id="7be8f-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
-11. <span data-ttu-id="7be8f-120">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-120">Click New.</span></span>
-12. <span data-ttu-id="7be8f-121">Kirjoita arvo Solmun nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-121">In the Node name field, type a value.</span></span>
-    * <span data-ttu-id="7be8f-122">Syötä Muuttuva kustannus.</span><span class="sxs-lookup"><span data-stu-id="7be8f-122">Enter Variable cost.</span></span>  
-13. <span data-ttu-id="7be8f-123">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7be8f-123">Click Save.</span></span>
-14. <span data-ttu-id="7be8f-124">Valitse puussa Cost behavior hierarchy\Fixed cost.</span><span class="sxs-lookup"><span data-stu-id="7be8f-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
-15. <span data-ttu-id="7be8f-125">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-125">Click New.</span></span>
-16. <span data-ttu-id="7be8f-126">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7be8f-126">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="7be8f-127">Syötä tai valitse arvo Lähtödimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-127">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-128">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="7be8f-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-18. <span data-ttu-id="7be8f-129">Syötä tai valitse arvo Kohdedimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-129">In the To dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-130">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="7be8f-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-19. <span data-ttu-id="7be8f-131">Valitse puussa Cost behavior hierarchy\Variable cost.</span><span class="sxs-lookup"><span data-stu-id="7be8f-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
-20. <span data-ttu-id="7be8f-132">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-132">Click New.</span></span>
-21. <span data-ttu-id="7be8f-133">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7be8f-133">In the list, mark the selected row.</span></span>
-22. <span data-ttu-id="7be8f-134">Syötä tai valitse arvo Lähtödimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-134">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-135">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="7be8f-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-23. <span data-ttu-id="7be8f-136">Syötä tai valitse arvo Kohdedimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-136">In the To dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-137">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="7be8f-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
-24. <span data-ttu-id="7be8f-138">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7be8f-138">Click Save.</span></span>
+## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="82b4f-107">Kustannustoiminnan hierarkian luominen</span><span class="sxs-lookup"><span data-stu-id="82b4f-107">Create a cost behavior hierarchy</span></span>
+1. <span data-ttu-id="82b4f-108">Valitse Kustannuslaskenta > Dimensiot > Dimensiohierarkiat.</span><span class="sxs-lookup"><span data-stu-id="82b4f-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="82b4f-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-109">Click New.</span></span>
+3. <span data-ttu-id="82b4f-110">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="82b4f-110">Click Create.</span></span>
+4. <span data-ttu-id="82b4f-111">Kirjoita Dimensiohierarkian nimi -kenttään Kustannustoiminnan hierarkia.</span><span class="sxs-lookup"><span data-stu-id="82b4f-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
+5. <span data-ttu-id="82b4f-112">Syötä tai valitse arvo Dimensio-kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-112">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-113">Valitse Kustannustasot.</span><span class="sxs-lookup"><span data-stu-id="82b4f-113">Select Cost elements.</span></span>  
+6. <span data-ttu-id="82b4f-114">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="82b4f-114">Click Save.</span></span>
+7. <span data-ttu-id="82b4f-115">Valitse Näytä hierarkia.</span><span class="sxs-lookup"><span data-stu-id="82b4f-115">Click View hierarchy.</span></span>
+8. <span data-ttu-id="82b4f-116">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-116">Click New.</span></span>
+9. <span data-ttu-id="82b4f-117">Kirjoita arvo Solmun nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-117">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="82b4f-118">Syötä Kiinteä kustannus.</span><span class="sxs-lookup"><span data-stu-id="82b4f-118">Enter Fixed cost.</span></span>  
+10. <span data-ttu-id="82b4f-119">Valitse puussa Cost behavior hierarchy.</span><span class="sxs-lookup"><span data-stu-id="82b4f-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
+11. <span data-ttu-id="82b4f-120">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-120">Click New.</span></span>
+12. <span data-ttu-id="82b4f-121">Kirjoita arvo Solmun nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-121">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="82b4f-122">Syötä Muuttuva kustannus.</span><span class="sxs-lookup"><span data-stu-id="82b4f-122">Enter Variable cost.</span></span>  
+13. <span data-ttu-id="82b4f-123">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="82b4f-123">Click Save.</span></span>
+14. <span data-ttu-id="82b4f-124">Valitse puussa Cost behavior hierarchy\Fixed cost.</span><span class="sxs-lookup"><span data-stu-id="82b4f-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
+15. <span data-ttu-id="82b4f-125">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-125">Click New.</span></span>
+16. <span data-ttu-id="82b4f-126">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="82b4f-126">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="82b4f-127">Syötä tai valitse arvo Lähtödimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-127">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-128">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="82b4f-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+18. <span data-ttu-id="82b4f-129">Syötä tai valitse arvo Kohdedimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-129">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-130">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="82b4f-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+19. <span data-ttu-id="82b4f-131">Valitse puussa Cost behavior hierarchy\Variable cost.</span><span class="sxs-lookup"><span data-stu-id="82b4f-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
+20. <span data-ttu-id="82b4f-132">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-132">Click New.</span></span>
+21. <span data-ttu-id="82b4f-133">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="82b4f-133">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="82b4f-134">Syötä tai valitse arvo Lähtödimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-134">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-135">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="82b4f-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+23. <span data-ttu-id="82b4f-136">Syötä tai valitse arvo Kohdedimension jäsen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-136">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-137">Dimension jäsenten alue voi sisältää aukkoja, mutta jäsenet eivät voi olla päällekkäisiä.</span><span class="sxs-lookup"><span data-stu-id="82b4f-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+24. <span data-ttu-id="82b4f-138">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="82b4f-138">Click Save.</span></span>
 
-## <a name="create-the-policy-and-rules"></a><span data-ttu-id="7be8f-139">Käytännön ja sääntöjen luominen</span><span class="sxs-lookup"><span data-stu-id="7be8f-139">Create the policy and rules</span></span>
-1. <span data-ttu-id="7be8f-140">Valitse Kustannuslaskenta > Käytännöt > Kustannustoiminnan käytännöt.</span><span class="sxs-lookup"><span data-stu-id="7be8f-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
-2. <span data-ttu-id="7be8f-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-141">Click New.</span></span>
-3. <span data-ttu-id="7be8f-142">Kirjoita arvo Käytännön nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-142">In the Policy name field, type a value.</span></span>
-4. <span data-ttu-id="7be8f-143">Syötä tai valitse arvo Kustannustason dimensiohierarkia -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-144">Valitse äsken luotu käytäntöhierarkia.</span><span class="sxs-lookup"><span data-stu-id="7be8f-144">Select the policy hierarchy that you just created.</span></span>  
-5. <span data-ttu-id="7be8f-145">Syötä tai valitse arvo Kustannusobjektin dimensiohierarkia -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-146">Valitse Organisaatio.</span><span class="sxs-lookup"><span data-stu-id="7be8f-146">Select Organization.</span></span>  
-6. <span data-ttu-id="7be8f-147">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7be8f-147">Click Save.</span></span>
-7. <span data-ttu-id="7be8f-148">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-148">Click New.</span></span>
-8. <span data-ttu-id="7be8f-149">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7be8f-149">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="7be8f-150">Syötä tai valitse arvo Kustannustason dimensiohierarkiasolmu -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-151">Laajenna hierarkia ja valitse Muuttuva kustannus.</span><span class="sxs-lookup"><span data-stu-id="7be8f-151">Expand the hierarchy to select Variable cost.</span></span>  
-10. <span data-ttu-id="7be8f-152">Syötä tai valitse arvo Kustannusobjektin dimensiohierarkiasolmu -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
-    * <span data-ttu-id="7be8f-153">Oletusarvoisesti muuttuva prosenttiosuus on 100.</span><span class="sxs-lookup"><span data-stu-id="7be8f-153">By default, the variable percentage is 100 percent.</span></span>  
-11. <span data-ttu-id="7be8f-154">Valitse Kustannusseurantayksikön käytännön määritykset.</span><span class="sxs-lookup"><span data-stu-id="7be8f-154">Click Policy assignments for cost control unit.</span></span>
-12. <span data-ttu-id="7be8f-155">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7be8f-155">Click New.</span></span>
-13. <span data-ttu-id="7be8f-156">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7be8f-156">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="7be8f-157">Syötä päivämäärä Voimassa kirjanpitopäivästä alkaen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-157">In the Valid from accounting date field, enter a date.</span></span>
-    * <span data-ttu-id="7be8f-158">Säännöillä on voimaantulopäivämäärä. Käyttäjä tai järjestelmä voi määrittää säännön vanhentuneeksi, jos säännöstä luodaan uusi versio.</span><span class="sxs-lookup"><span data-stu-id="7be8f-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
-15. <span data-ttu-id="7be8f-159">Anna tai valitse arvo Kustannusseurantayksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7be8f-159">In the Cost control unit field, enter or select a value.</span></span>
-16. <span data-ttu-id="7be8f-160">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7be8f-160">Click Save.</span></span>
+## <a name="create-the-policy-and-rules"></a><span data-ttu-id="82b4f-139">Käytännön ja sääntöjen luominen</span><span class="sxs-lookup"><span data-stu-id="82b4f-139">Create the policy and rules</span></span>
+1. <span data-ttu-id="82b4f-140">Valitse Kustannuslaskenta > Käytännöt > Kustannustoiminnan käytännöt.</span><span class="sxs-lookup"><span data-stu-id="82b4f-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
+2. <span data-ttu-id="82b4f-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-141">Click New.</span></span>
+3. <span data-ttu-id="82b4f-142">Kirjoita arvo Käytännön nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-142">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="82b4f-143">Syötä tai valitse arvo Kustannustason dimensiohierarkia -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-144">Valitse äsken luotu käytäntöhierarkia.</span><span class="sxs-lookup"><span data-stu-id="82b4f-144">Select the policy hierarchy that you just created.</span></span>  
+5. <span data-ttu-id="82b4f-145">Syötä tai valitse arvo Kustannusobjektin dimensiohierarkia -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-146">Valitse Organisaatio.</span><span class="sxs-lookup"><span data-stu-id="82b4f-146">Select Organization.</span></span>  
+6. <span data-ttu-id="82b4f-147">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="82b4f-147">Click Save.</span></span>
+7. <span data-ttu-id="82b4f-148">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-148">Click New.</span></span>
+8. <span data-ttu-id="82b4f-149">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="82b4f-149">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="82b4f-150">Syötä tai valitse arvo Kustannustason dimensiohierarkiasolmu -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-151">Laajenna hierarkia ja valitse Muuttuva kustannus.</span><span class="sxs-lookup"><span data-stu-id="82b4f-151">Expand the hierarchy to select Variable cost.</span></span>  
+10. <span data-ttu-id="82b4f-152">Syötä tai valitse arvo Kustannusobjektin dimensiohierarkiasolmu -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="82b4f-153">Oletusarvoisesti muuttuva prosenttiosuus on 100.</span><span class="sxs-lookup"><span data-stu-id="82b4f-153">By default, the variable percentage is 100 percent.</span></span>  
+11. <span data-ttu-id="82b4f-154">Valitse Kustannusseurantayksikön käytännön määritykset.</span><span class="sxs-lookup"><span data-stu-id="82b4f-154">Click Policy assignments for cost control unit.</span></span>
+12. <span data-ttu-id="82b4f-155">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="82b4f-155">Click New.</span></span>
+13. <span data-ttu-id="82b4f-156">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="82b4f-156">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="82b4f-157">Syötä päivämäärä Voimassa kirjanpitopäivästä alkaen -kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-157">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="82b4f-158">Säännöillä on voimaantulopäivämäärä. Käyttäjä tai järjestelmä voi määrittää säännön vanhentuneeksi, jos säännöstä luodaan uusi versio.</span><span class="sxs-lookup"><span data-stu-id="82b4f-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
+15. <span data-ttu-id="82b4f-159">Anna tai valitse arvo Kustannusseurantayksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="82b4f-159">In the Cost control unit field, enter or select a value.</span></span>
+16. <span data-ttu-id="82b4f-160">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="82b4f-160">Click Save.</span></span>
 
