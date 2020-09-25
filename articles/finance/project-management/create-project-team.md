@@ -1,0 +1,64 @@
+---
+title: Projektiryhmän luominen
+description: Tämä ohjeaihe sisältää projektin ryhmien luomista ja hallintaa käsitteleviä tietoja.
+author: Yowelle
+manager: AnnBe
+ms.date: 09/01/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ProjProjectsListPage
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: 82022
+ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
+ms.search.region: Global
+ms.author: knelson
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 834a6c0a4fcc32a955c1feddf0a6cbbb1f16b869
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760534"
+---
+# <a name="create-a-project-team"></a><span data-ttu-id="a960b-103">Projektiryhmän luominen</span><span class="sxs-lookup"><span data-stu-id="a960b-103">Create a project team</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a960b-104">Projektipäällikön täytyy liittää projektin yhteydessä aiemmin määritetyt roolit projektiin, jotta hän voi käyttää niitä.</span><span class="sxs-lookup"><span data-stu-id="a960b-104">To use the roles that were previously set up in a project, a project manager must associate the roles with the project.</span></span> <span data-ttu-id="a960b-105">Projektille voidaan määrittää useita rooleja.</span><span class="sxs-lookup"><span data-stu-id="a960b-105">Multiple roles can be assigned for a project.</span></span> <span data-ttu-id="a960b-106">Nämä roolit nimetään automaattisesti varauksen aikana sekaannusten välttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="a960b-106">To prevent confusion, these roles are automatically labeled during reservation.</span></span> <span data-ttu-id="a960b-107">Jos projektipäällikkö tarvitsee esimerkiksi kolme ohjelmistosuunnittelijaa, luodaan automaattisesti kolme ohjelmistosuunnittelijan roolia, joiden nimikkeinä on **ohjelmistosuunnittelija 1**, **ohjelmistosuunnittelija 2** ja **ohjelmistosuunnittelija 3**.</span><span class="sxs-lookup"><span data-stu-id="a960b-107">For example, if the project manager requires three software engineers, three Software engineer roles that have **software engineer 1**, **software engineer 2**, and **software engineer 3** as their labels are automatically generated.</span></span> <span data-ttu-id="a960b-108">Jos roolille on määritetty ominaisuudet jo aiemmin, niitä käytetään suodattimina resurssia haettaessa.</span><span class="sxs-lookup"><span data-stu-id="a960b-108">If role characteristics were previously set for the role, they are applied as a filter during searches for a resource.</span></span> <span data-ttu-id="a960b-109">Hakua voi tarkentaa lisäämällä muitakin ominaisuuksia tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="a960b-109">Additional characteristics can be added as required to further refine the search.</span></span>
+
+<span data-ttu-id="a960b-110">Myös näyttöasetukset voidaan mukauttaa, jotta resurssien käytettävyys saadaan paremmin näkyviin.</span><span class="sxs-lookup"><span data-stu-id="a960b-110">View settings can also be customized to give a better view of resource availability.</span></span> <span data-ttu-id="a960b-111">Näyttöperusteeksi voi valita käytettävyyden tunnin, päivän, viikon, kuukauden, vuosineljänneksen tai vuoden perusteella.</span><span class="sxs-lookup"><span data-stu-id="a960b-111">There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability.</span></span> <span data-ttu-id="a960b-112">Myös resurssien käytettävissä ja jäljellä olevan kapasiteetin voi suodattaa näkyviin.</span><span class="sxs-lookup"><span data-stu-id="a960b-112">There is also an option to show available and remaining capacity on resources.</span></span> <span data-ttu-id="a960b-113">Tämä vaihtoehto on hyödyllinen ajanhallinnassa, kun arvioit tehtäviin käytettävissä olevaa aikaa tai resurssien käytettävyyttä.</span><span class="sxs-lookup"><span data-stu-id="a960b-113">This option is useful for time management, when you're estimating available time for activities or resource availability.</span></span>
+
+<span data-ttu-id="a960b-114">Projektipäällikkö voi valita sivulta haluamansa roolin. Jos vaatimuksia vastaava resurssi on käytettävissä, projektipäällikkö voi valintansa mukaan varata resurssin rooliin.</span><span class="sxs-lookup"><span data-stu-id="a960b-114">The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role.</span></span> <span data-ttu-id="a960b-115">Huomaa, että resursseja ei tarvitse varata tässä suunnitteluvaiheessa.</span><span class="sxs-lookup"><span data-stu-id="a960b-115">Note that the resources don't have to be reserved at this point in the planning stage.</span></span> <span data-ttu-id="a960b-116">Työrakennetta luodessasi voit korvata roolit projektin henkilöstöllisillä resursseilla.</span><span class="sxs-lookup"><span data-stu-id="a960b-116">When you create a WBS, you can replace roles with staffed resources for the project.</span></span> <span data-ttu-id="a960b-117">Jos roolit korvataan työrakenteessa henkilöstöllisillä resursseilla, resurssiasetukset päivittävät projektiryhmän luettelon ja aikataulun automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="a960b-117">If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling.</span></span>
+
+<span data-ttu-id="a960b-118">[![Projektiryhmän luettelo, joka sisältää sekä roolit todellinen resurssit](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span><span class="sxs-lookup"><span data-stu-id="a960b-118">[![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span></span> 
+
+<span data-ttu-id="a960b-119">Projektipäällikkö voi varata resurssin projektiin eri tavoilla, esimerkiksi valitsemalla **Jäljellä oleva kapasiteetti**, **Koko kapasiteetti**, **Kapasiteettiprosentti** ja **Määritä tunnit**.</span><span class="sxs-lookup"><span data-stu-id="a960b-119">The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**.</span></span> <span data-ttu-id="a960b-120">Nämä varausasetukset voi peruuttaa milloin tahansa, jos resurssimääritykset muuttuvat.</span><span class="sxs-lookup"><span data-stu-id="a960b-120">These booking options can be canceled at any time if resource assignments change.</span></span> <span data-ttu-id="a960b-121">Kahta varaustyyppiä tuetaan:</span><span class="sxs-lookup"><span data-stu-id="a960b-121">Two types of booking are supported:</span></span>
+
+- <span data-ttu-id="a960b-122">**Kiinteä varaus** – Resurssivaraus on hyväksytty ja resurssin työskentely sitoumuksessa on vahvistettu tietyksi ajaksi.</span><span class="sxs-lookup"><span data-stu-id="a960b-122">**Hard Book** – The resource reservation was approved and confirmed to work on the engagement for the specified duration.</span></span>
+- <span data-ttu-id="a960b-123">**Alustava varaus** – Resurssivaraus on alustavasti määritetty työskentelemään sitoumuksessa tietyllä ajalla.</span><span class="sxs-lookup"><span data-stu-id="a960b-123">**Soft book** – The resource reservations was tentatively set to work on the engagement for the specified duration.</span></span>
+
+<span data-ttu-id="a960b-124">Seuraavissa vaiheissa on selostettu, miten projektiryhmä luodaan.</span><span class="sxs-lookup"><span data-stu-id="a960b-124">The following procedure explains how to create a project team.</span></span>
+
+## <a name="create-a-project-team"></a><span data-ttu-id="a960b-125">Projektiryhmän luominen</span><span class="sxs-lookup"><span data-stu-id="a960b-125">Create a project team</span></span>
+
+1. <span data-ttu-id="a960b-126">Valitse **Kaikki projektit** -luettelosivulta haluamasi projekti ja valitse sitten **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="a960b-126">On the **All projects** list page, select a project, and then select **Edit**.</span></span>
+2. <span data-ttu-id="a960b-127">Syötä **Projektiryhmän ja ajoitus** -välilehdessä **Ajoita päättymispäivä** -kenttään aikataulun alkamispäivä plus yksi kuukausi.</span><span class="sxs-lookup"><span data-stu-id="a960b-127">On the **Project team and scheduling** tab, in the **Schedule end date** field, enter the schedule start date plus one month.</span></span> <span data-ttu-id="a960b-128">Jos aikataulun alkamispäivä on esimerkiksi 24. kesäkuuta 2017 (24/06/2017), syötä **24/07/2017**.</span><span class="sxs-lookup"><span data-stu-id="a960b-128">For example, if the schedule start date is June 24, 2017 (24/06/2017), enter **24/07/2017**.</span></span>
+3. <span data-ttu-id="a960b-129">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="a960b-129">Select **Add**.</span></span>
+4. <span data-ttu-id="a960b-130">Valitse **Lisää roolit projektiin** -ruudun **Rooli**-kentästä **Vastaava projektipäällikkö**.</span><span class="sxs-lookup"><span data-stu-id="a960b-130">In the **Add roles to the project** pane, in the **Role** field, select **Senior Project Manager**.</span></span>
+5. <span data-ttu-id="a960b-131">Valitse **Vaaditut osaamisalueet**.</span><span class="sxs-lookup"><span data-stu-id="a960b-131">Select **Required competencies**.</span></span>
+6. <span data-ttu-id="a960b-132">Aiemmin vastaavan projektipäällikön roolille määrittämäsi ominaisuudet tulevat oletusarvoisesti valituiksi **Valitse ominaisuudet** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="a960b-132">On the **Choose characteristics** page, the characteristics that you previously set for the Senior project manager role are selected by default.</span></span> <span data-ttu-id="a960b-133">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="a960b-133">Select **OK**.</span></span>
+7. <span data-ttu-id="a960b-134">Syötä **Lisää roolit projektiin** -sivulla **Resurssien määrä** -kenttään arvoksi **1**.</span><span class="sxs-lookup"><span data-stu-id="a960b-134">On the **Add roles to project** page, in the **Number of resources** field, enter **1**.</span></span>
+8. <span data-ttu-id="a960b-135">Hakutoiminto näyttää **Resurssi**-kentässä kaikki resurssit, joilla on tarvittavat osaamistiedot.</span><span class="sxs-lookup"><span data-stu-id="a960b-135">In the **Resource** field, the lookup shows all resources that have the required competencies.</span></span> <span data-ttu-id="a960b-136">Valitse **Daniel Goldschmidt** ja sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="a960b-136">Select **Daniel Goldschmidt**, and then select **Create**.</span></span>
+9. <span data-ttu-id="a960b-137">Valitse **Projekti**-sivulla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="a960b-137">On the **Project** page, select **Add**.</span></span>
+10. <span data-ttu-id="a960b-138">Valitse **Lisää roolit projektiin** -ruudun **Rooli**-kentästä **Ryhmän jäsen**.</span><span class="sxs-lookup"><span data-stu-id="a960b-138">In the **Add roles to the project** pane, in the **Role** field, select **Team member**.</span></span> <span data-ttu-id="a960b-139">Syötä **Resurssien määrä** -kenttään arvoksi **5**.</span><span class="sxs-lookup"><span data-stu-id="a960b-139">In the **Number of resources** field, enter **5**.</span></span>
+11. <span data-ttu-id="a960b-140">Valitse **Luo**.</span><span class="sxs-lookup"><span data-stu-id="a960b-140">Select **Create**.</span></span>
+12. <span data-ttu-id="a960b-141">Valitse **Projektit**-sivulla **Toteuta resurssi**.</span><span class="sxs-lookup"><span data-stu-id="a960b-141">On the **Projects** page, select **Fulfill resource**.</span></span>
+
+## <a name="monitor-project-teams"></a><span data-ttu-id="a960b-142">Projektiryhmien seuranta</span><span class="sxs-lookup"><span data-stu-id="a960b-142">Monitor project teams</span></span>
+1. <span data-ttu-id="a960b-143">Valitse **Kaikki projektit** -sivulla **XYZ-päivitysvaihe 2** -projektin **Projektitunnus**-linkki.</span><span class="sxs-lookup"><span data-stu-id="a960b-143">On the **All projects** page, select the **Project ID** link for the **XYZ Upgrade Phase 2** project.</span></span>
+2. <span data-ttu-id="a960b-144">Tarkista **Projektiryhmä ja ajoitus** -pikavälilehdessä, että luettelossa näkyvät projektiresurssit ovat oikein.</span><span class="sxs-lookup"><span data-stu-id="a960b-144">On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.</span></span>

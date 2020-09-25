@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45e95751e3adfe6aa208daaba774a349216e1f1f
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 051e22daa3fe2d6c328e36403201d940f724bd29
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042064"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745174"
 ---
-# <span data-ttu-id="224b9-103"><a name="INDEX">INDEX ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="224b9-103"><a name="INDEX">INDEX ER function</a></span></span>
+# <a name="index-er-function"></a><span data-ttu-id="5e69f-103">INDEX ER-funktio</span><span class="sxs-lookup"><span data-stu-id="5e69f-103">INDEX ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="224b9-104">`INDEX`-funktio palauttaa *Säilö (tietue)*-arvon, joka on valittu määritetyn numeroindeksin avulla määritetyssä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="224b9-104">The `INDEX` function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list.</span></span> <span data-ttu-id="224b9-105">Jos indeksi on määritellyn luettelon tietueiden ulkopuolella, poikkeus heitetään.</span><span class="sxs-lookup"><span data-stu-id="224b9-105">If the index is out of range for the records in the specified list, an exception is thrown.</span></span>
+<span data-ttu-id="5e69f-104">`INDEX`-funktio palauttaa *Säilö (tietue)*-arvon, joka on valittu määritetyn numeroindeksin avulla määritetyssä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="5e69f-104">The `INDEX` function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list.</span></span> <span data-ttu-id="5e69f-105">Jos indeksi on määritellyn luettelon tietueiden ulkopuolella, poikkeus heitetään.</span><span class="sxs-lookup"><span data-stu-id="5e69f-105">If the index is out of range for the records in the specified list, an exception is thrown.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="224b9-106">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="224b9-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5e69f-106">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="5e69f-106">Syntax</span></span>
 
 ```vb
 INDEX (list, index)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="224b9-107">Argumentit</span><span class="sxs-lookup"><span data-stu-id="224b9-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="5e69f-107">Argumentit</span><span class="sxs-lookup"><span data-stu-id="5e69f-107">Arguments</span></span>
 
-<span data-ttu-id="224b9-108">`list`: *Tietueluettelo*</span><span class="sxs-lookup"><span data-stu-id="224b9-108">`list`: *Record list*</span></span>
+<span data-ttu-id="5e69f-108">`list`: *Tietueluettelo*</span><span class="sxs-lookup"><span data-stu-id="5e69f-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="224b9-109">*Tietueluettelo*-tietotyypin tietolähteen kelvollinen polku.</span><span class="sxs-lookup"><span data-stu-id="224b9-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="5e69f-109">*Tietueluettelo*-tietotyypin tietolähteen kelvollinen polku.</span><span class="sxs-lookup"><span data-stu-id="5e69f-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="224b9-110">`index`: *Kokonaisluku*</span><span class="sxs-lookup"><span data-stu-id="224b9-110">`index`: *Integer*</span></span>
+<span data-ttu-id="5e69f-110">`index`: *Kokonaisluku*</span><span class="sxs-lookup"><span data-stu-id="5e69f-110">`index`: *Integer*</span></span>
 
-<span data-ttu-id="224b9-111">Numeerinen indeksi, joka ilmaisee halutun tietueen sijainnin määritetyssä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="224b9-111">A numeric index that indicates the position of the desired record in the specified list.</span></span>
+<span data-ttu-id="5e69f-111">Numeerinen indeksi, joka ilmaisee halutun tietueen sijainnin määritetyssä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="5e69f-111">A numeric index that indicates the position of the desired record in the specified list.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="224b9-112">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="224b9-112">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="5e69f-112">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="5e69f-112">Return values</span></span>
 
-<span data-ttu-id="224b9-113">*Kontti (tietue)*</span><span class="sxs-lookup"><span data-stu-id="224b9-113">*Container (record)*</span></span>
+<span data-ttu-id="5e69f-113">*Kontti (tietue)*</span><span class="sxs-lookup"><span data-stu-id="5e69f-113">*Container (record)*</span></span>
 
-<span data-ttu-id="224b9-114">Tuloksena oleva tietueen arvo.</span><span class="sxs-lookup"><span data-stu-id="224b9-114">The resulting record value.</span></span>
+<span data-ttu-id="5e69f-114">Tuloksena oleva tietueen arvo.</span><span class="sxs-lookup"><span data-stu-id="5e69f-114">The resulting record value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="224b9-115">Esimerkki 1</span><span class="sxs-lookup"><span data-stu-id="224b9-115">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="5e69f-115">Esimerkki 1</span><span class="sxs-lookup"><span data-stu-id="5e69f-115">Example 1</span></span>
 
-<span data-ttu-id="224b9-116">Jos syötät tietolähteen **DS** *laskettuun kenttätyyppiin* ja se sisältää lausekkeen `SPLIT ("A|B|C", "|")`, lauseke `DS.Value`, palauttaa tekstiarvon **B** tämän tietueluettelon toiselle tietueelle.</span><span class="sxs-lookup"><span data-stu-id="224b9-116">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `DS.Value` returns the text value **"B"** for the second record of this record list.</span></span> <span data-ttu-id="224b9-117">Lauseke `INDEX (SPLIT ("A|B|C", "|"), 2).Value` palauttaa myös tekstiarvon **B**.</span><span class="sxs-lookup"><span data-stu-id="224b9-117">The expression `INDEX (SPLIT ("A|B|C", "|"), 2).Value` also returns the text value **"B"**.</span></span>
+<span data-ttu-id="5e69f-116">Jos syötät tietolähteen **DS** *laskettuun kenttätyyppiin* ja se sisältää lausekkeen `SPLIT ("A|B|C", "|")`, lauseke `DS.Value`, palauttaa tekstiarvon **B** tämän tietueluettelon toiselle tietueelle.</span><span class="sxs-lookup"><span data-stu-id="5e69f-116">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `DS.Value` returns the text value **"B"** for the second record of this record list.</span></span> <span data-ttu-id="5e69f-117">Lauseke `INDEX (SPLIT ("A|B|C", "|"), 2).Value` palauttaa myös tekstiarvon **B**.</span><span class="sxs-lookup"><span data-stu-id="5e69f-117">The expression `INDEX (SPLIT ("A|B|C", "|"), 2).Value` also returns the text value **"B"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="224b9-118">Esimerkki 2</span><span class="sxs-lookup"><span data-stu-id="224b9-118">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="5e69f-118">Esimerkki 2</span><span class="sxs-lookup"><span data-stu-id="5e69f-118">Example 2</span></span>
 
-<span data-ttu-id="224b9-119">Jos syötät *Lasketun kenttä* -tyypin **DS**-tietolähteen, ja se sisältää lausekkeen `SPLIT ("A|B|C", "|")`, lauseke `INDEX (SPLIT ("A|B|C", "|"), 4).Value` heittää poikkeuksen suorituksen aikana.</span><span class="sxs-lookup"><span data-stu-id="224b9-119">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `INDEX (SPLIT ("A|B|C", "|"), 4).Value` throws an exception at runtime.</span></span>
+<span data-ttu-id="5e69f-119">Jos syötät *Lasketun kenttä* -tyypin **DS**-tietolähteen, ja se sisältää lausekkeen `SPLIT ("A|B|C", "|")`, lauseke `INDEX (SPLIT ("A|B|C", "|"), 4).Value` heittää poikkeuksen suorituksen aikana.</span><span class="sxs-lookup"><span data-stu-id="5e69f-119">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `INDEX (SPLIT ("A|B|C", "|"), 4).Value` throws an exception at runtime.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="224b9-120">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="224b9-120">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="5e69f-120">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="5e69f-120">Additional resources</span></span>
 
-[<span data-ttu-id="224b9-121">Luettelotoiminnot</span><span class="sxs-lookup"><span data-stu-id="224b9-121">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="5e69f-121">Luettelotoiminnot</span><span class="sxs-lookup"><span data-stu-id="5e69f-121">List functions</span></span>](er-functions-category-list.md)

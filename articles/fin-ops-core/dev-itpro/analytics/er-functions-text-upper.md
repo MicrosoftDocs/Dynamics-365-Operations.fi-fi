@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77854d645ba5b65a2819437af510fcd67be6d99d
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 672abf4938df7d96c0190bfd5325689b381e2764
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040937"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744332"
 ---
-# <span data-ttu-id="4be76-103"><a name="UPPER">UPPER ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="4be76-103"><a name="UPPER">UPPER ER function</a></span></span>
+# <a name="upper-er-function"></a><span data-ttu-id="d7d4b-103">UPPER ER-funktio</span><span class="sxs-lookup"><span data-stu-id="d7d4b-103">UPPER ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4be76-104">`UPPER`-funktio palauttaa määritetyn tekstimerkkijonon *Merkkijono*-arvona sen jälkeen, kun se on muunnettu isoiksi kirjaimiksi.</span><span class="sxs-lookup"><span data-stu-id="4be76-104">The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.</span></span>
+<span data-ttu-id="d7d4b-104">`UPPER`-funktio palauttaa määritetyn tekstimerkkijonon *Merkkijono*-arvona sen jälkeen, kun se on muunnettu isoiksi kirjaimiksi.</span><span class="sxs-lookup"><span data-stu-id="d7d4b-104">The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4be76-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="4be76-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d7d4b-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="d7d4b-105">Syntax</span></span>
 
 ```vb
 UPPER (text )
 ```
 
-## <a name="arguments"></a><span data-ttu-id="4be76-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="4be76-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="d7d4b-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="d7d4b-106">Arguments</span></span>
 
-<span data-ttu-id="4be76-107">`text`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="4be76-107">`text`: *String*</span></span>
+<span data-ttu-id="d7d4b-107">`text`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="d7d4b-107">`text`: *String*</span></span>
 
-<span data-ttu-id="4be76-108">*Merkkijono*-tietotyypin tietolähteen kelvollinen polku.</span><span class="sxs-lookup"><span data-stu-id="4be76-108">The valid path of a data source of the *String* type.</span></span>
+<span data-ttu-id="d7d4b-108">*Merkkijono*-tietotyypin tietolähteen kelvollinen polku.</span><span class="sxs-lookup"><span data-stu-id="d7d4b-108">The valid path of a data source of the *String* type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="4be76-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="4be76-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="d7d4b-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="d7d4b-109">Return values</span></span>
 
-<span data-ttu-id="4be76-110">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="4be76-110">*String*</span></span>
+<span data-ttu-id="d7d4b-110">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="d7d4b-110">*String*</span></span>
 
-<span data-ttu-id="4be76-111">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="4be76-111">The resulting text value.</span></span>
+<span data-ttu-id="d7d4b-111">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="d7d4b-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4be76-112">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="4be76-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d7d4b-112">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="d7d4b-112">Example</span></span>
 
-<span data-ttu-id="4be76-113">`UPPER ("Sample")` palauttaa arvon **MALLI**.</span><span class="sxs-lookup"><span data-stu-id="4be76-113">`UPPER ("Sample")` returns **"SAMPLE"**.</span></span>
+<span data-ttu-id="d7d4b-113">`UPPER ("Sample")` palauttaa arvon **MALLI**.</span><span class="sxs-lookup"><span data-stu-id="d7d4b-113">`UPPER ("Sample")` returns **"SAMPLE"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4be76-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="4be76-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="d7d4b-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="d7d4b-114">Additional resources</span></span>
 
-[<span data-ttu-id="4be76-115">Tekstitoiminnot</span><span class="sxs-lookup"><span data-stu-id="4be76-115">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="d7d4b-115">Tekstitoiminnot</span><span class="sxs-lookup"><span data-stu-id="d7d4b-115">Text functions</span></span>](er-functions-category-text.md)

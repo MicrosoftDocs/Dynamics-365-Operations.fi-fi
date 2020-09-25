@@ -18,46 +18,46 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a02cdd085a236065bb3622b36f7d3284144d96e5
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e46fcef3d53483b782ac39a0661fc0edc8d861c
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041275"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3743947"
 ---
-# <span data-ttu-id="0a15b-103"><a name="EMPTYRECORD">EMPTYRECORD ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="0a15b-103"><a name="EMPTYRECORD">EMPTYRECORD ER function</a></span></span>
+# <a name="emptyrecord-er-function"></a><span data-ttu-id="b995a-103">EMPTYRECORD ER-funktio</span><span class="sxs-lookup"><span data-stu-id="b995a-103">EMPTYRECORD ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0a15b-104">`EMPTYRECORD`-funktio palauttaa tyhjäarvo-*säilön (tietueen)* arvon, jolla on sama rakenne kuin määritetyllä tietueluettelolla tai tietueella.</span><span class="sxs-lookup"><span data-stu-id="0a15b-104">The `EMPTYRECORD` function returns a null *Container (record)* value that has the same structure as the specified record list or record.</span></span>
+<span data-ttu-id="b995a-104">`EMPTYRECORD`-funktio palauttaa tyhjäarvo-*säilön (tietueen)* arvon, jolla on sama rakenne kuin määritetyllä tietueluettelolla tai tietueella.</span><span class="sxs-lookup"><span data-stu-id="b995a-104">The `EMPTYRECORD` function returns a null *Container (record)* value that has the same structure as the specified record list or record.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0a15b-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="0a15b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b995a-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="b995a-105">Syntax</span></span>
 
 ```vb
 EMPTYRECORD (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0a15b-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="0a15b-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="b995a-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="b995a-106">Arguments</span></span>
 
-<span data-ttu-id="0a15b-107">`list`: *Tietueluettelo* tai *Säilö (tietue)*</span><span class="sxs-lookup"><span data-stu-id="0a15b-107">`list`: *Record list* or *Container (record)*</span></span>
+<span data-ttu-id="b995a-107">`list`: *Tietueluettelo* tai *Säilö (tietue)*</span><span class="sxs-lookup"><span data-stu-id="b995a-107">`list`: *Record list* or *Container (record)*</span></span>
 
-<span data-ttu-id="0a15b-108">Tietolähteen kelvollinen polku on joko *Tietueluettelo* tai *Säilö (tietue)*-tyyppi.</span><span class="sxs-lookup"><span data-stu-id="0a15b-108">The valid path of a data source of either the *Record list* or *Container (record)* type.</span></span>
+<span data-ttu-id="b995a-108">Tietolähteen kelvollinen polku on joko *Tietueluettelo* tai *Säilö (tietue)*-tyyppi.</span><span class="sxs-lookup"><span data-stu-id="b995a-108">The valid path of a data source of either the *Record list* or *Container (record)* type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0a15b-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="0a15b-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="b995a-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="b995a-109">Return values</span></span>
 
-<span data-ttu-id="0a15b-110">*Kontti (tietue)*</span><span class="sxs-lookup"><span data-stu-id="0a15b-110">*Container (record)*</span></span>
+<span data-ttu-id="b995a-110">*Kontti (tietue)*</span><span class="sxs-lookup"><span data-stu-id="b995a-110">*Container (record)*</span></span>
 
-<span data-ttu-id="0a15b-111">Tuloksena oleva tietueen arvo.</span><span class="sxs-lookup"><span data-stu-id="0a15b-111">The resulting record value.</span></span>
+<span data-ttu-id="b995a-111">Tuloksena oleva tietueen arvo.</span><span class="sxs-lookup"><span data-stu-id="b995a-111">The resulting record value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="0a15b-112">Käyttöhuomautukset</span><span class="sxs-lookup"><span data-stu-id="0a15b-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="b995a-112">Käyttöhuomautukset</span><span class="sxs-lookup"><span data-stu-id="b995a-112">Usage notes</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="0a15b-113">Tyhjä-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo.</span><span class="sxs-lookup"><span data-stu-id="0a15b-113">A null record is a record where all fields have an empty value.</span></span> <span data-ttu-id="0a15b-114">Tyhjä arvo numeroilla **0** (nolla), merkkijonoilla tyhjä merkkijono jne.</span><span class="sxs-lookup"><span data-stu-id="0a15b-114">An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</span></span>
+> <span data-ttu-id="b995a-113">Tyhjä-tietue on tietue, jossa kaikissa kentissä on tyhjä arvo.</span><span class="sxs-lookup"><span data-stu-id="b995a-113">A null record is a record where all fields have an empty value.</span></span> <span data-ttu-id="b995a-114">Tyhjä arvo numeroilla **0** (nolla), merkkijonoilla tyhjä merkkijono jne.</span><span class="sxs-lookup"><span data-stu-id="b995a-114">An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0a15b-115">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="0a15b-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b995a-115">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="b995a-115">Example</span></span>
 
-<span data-ttu-id="0a15b-116">`EMPTYRECORD (SPLIT ("abc", 1))` palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin `SPLIT`-toiminnon palauttamalla luettelolla.</span><span class="sxs-lookup"><span data-stu-id="0a15b-116">`EMPTYRECORD (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the `SPLIT` function.</span></span> <span data-ttu-id="0a15b-117">Lisätietoja on kohdassa [SPLIT](er-functions-list-split.md).</span><span class="sxs-lookup"><span data-stu-id="0a15b-117">For more information, see [SPLIT](er-functions-list-split.md).</span></span>
+<span data-ttu-id="b995a-116">`EMPTYRECORD (SPLIT ("abc", 1))` palauttaa uuden tyhjän tietueen, jonka rakenne on sama kuin `SPLIT`-toiminnon palauttamalla luettelolla.</span><span class="sxs-lookup"><span data-stu-id="b995a-116">`EMPTYRECORD (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the `SPLIT` function.</span></span> <span data-ttu-id="b995a-117">Lisätietoja on kohdassa [SPLIT](er-functions-list-split.md).</span><span class="sxs-lookup"><span data-stu-id="b995a-117">For more information, see [SPLIT](er-functions-list-split.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0a15b-118">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="0a15b-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b995a-118">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="b995a-118">Additional resources</span></span>
 
-[<span data-ttu-id="0a15b-119">Tallennustoiminnot</span><span class="sxs-lookup"><span data-stu-id="0a15b-119">Record functions</span></span>](er-functions-category-record.md)
+[<span data-ttu-id="b995a-119">Tallennustoiminnot</span><span class="sxs-lookup"><span data-stu-id="b995a-119">Record functions</span></span>](er-functions-category-record.md)

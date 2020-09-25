@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
-ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
+ms.openlocfilehash: 174ac28ee2b726ec7fb2ff6d3dda45906c56af65
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "3290197"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745606"
 ---
-# <a name=""></a><span data-ttu-id="0a325-103"><a name="SUMIF">SUMIF ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="0a325-103"><a name="SUMIF">SUMIF ER function</a></span></span>
+# <a name="sumif-er-function"></a><span data-ttu-id="5d1b1-103">SUMIF ER-funktio</span><span class="sxs-lookup"><span data-stu-id="5d1b1-103">SUMIF ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0a325-104">`SUMIF`-funktio palauttaa *Todellisen* arvon, joka on niiden arvojen summa, jotka palautettiin muotoiluelementtien sitomisella ja, jotka kerättiin, kun muotoelementtejä käytettiin lähtevän asiakirjan luomiseen muotoajon aikana ja joka täyttää määritetyn ehdon.</span><span class="sxs-lookup"><span data-stu-id="0a325-104">The `SUMIF` function returns a *Real* value that represents the sum of values that were returned by bindings of format elements and collected when the format elements were used to generate an outbound document during the format run, and that satisfies the specified condition.</span></span> <span data-ttu-id="0a325-105">Ehto muodostuu avainalueesta ja avainarvosta.</span><span class="sxs-lookup"><span data-stu-id="0a325-105">The condition consists of a key range and a key value.</span></span>
+<span data-ttu-id="5d1b1-104">`SUMIF`-funktio palauttaa *Todellisen* arvon, joka on niiden arvojen summa, jotka palautettiin muotoiluelementtien sitomisella ja, jotka kerättiin, kun muotoelementtejä käytettiin lähtevän asiakirjan luomiseen muotoajon aikana ja joka täyttää määritetyn ehdon.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-104">The `SUMIF` function returns a *Real* value that represents the sum of values that were returned by bindings of format elements and collected when the format elements were used to generate an outbound document during the format run, and that satisfies the specified condition.</span></span> <span data-ttu-id="5d1b1-105">Ehto muodostuu avainalueesta ja avainarvosta.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-105">The condition consists of a key range and a key value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0a325-106">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="0a325-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5d1b1-106">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="5d1b1-106">Syntax</span></span>
 
 ```vb
 SUMIF (key name for summing, condition range, condition value)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0a325-107">Argumentit</span><span class="sxs-lookup"><span data-stu-id="0a325-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="5d1b1-107">Argumentit</span><span class="sxs-lookup"><span data-stu-id="5d1b1-107">Arguments</span></span>
 
-<span data-ttu-id="0a325-108">`key name for summing`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="0a325-108">`key name for summing`: *String*</span></span>
+<span data-ttu-id="5d1b1-108">`key name for summing`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="5d1b1-108">`key name for summing`: *String*</span></span>
 
-<span data-ttu-id="0a325-109">Arvo, joka palautetaan lausekkeella, joka on määritetty sähköisen raportoinnin (ER) muoto-osan **kerätyn tietoavaimen nimi** -ominaisarvoon, jolle sidonnan arvoa on käytettävä summaustarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="0a325-109">A value that is returned by the expression that has been configured in the **Collected data key name** property of the Electronic reporting (ER) format component for which the value of the binding must be used for summing purposes.</span></span>
+<span data-ttu-id="5d1b1-109">Arvo, joka palautetaan lausekkeella, joka on määritetty sähköisen raportoinnin (ER) muoto-osan **kerätyn tietoavaimen nimi** -ominaisarvoon, jolle sidonnan arvoa on käytettävä summaustarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-109">A value that is returned by the expression that has been configured in the **Collected data key name** property of the Electronic reporting (ER) format component for which the value of the binding must be used for summing purposes.</span></span>
 
-<span data-ttu-id="0a325-110">**Kerättyjen tietoavainten nimi** -ominaisuus voidaan määrittää joko **sarja**-komponentille tai ER-muodon **XML-elementti**-komponentille, joka sijaitsee **yhteinen\\tiedosto**-komponentissa, jossa **Kerää tuotostiedot** -asetus on käytössä.</span><span class="sxs-lookup"><span data-stu-id="0a325-110">The **Collected data key value** property can be configured for either a **Sequence** component or an **XML Element** component of an ER format that resides under the **Common\\File** component where the **Collect output details** option is turned on.</span></span>
+<span data-ttu-id="5d1b1-110">**Kerättyjen tietoavainten nimi** -ominaisuus voidaan määrittää joko **sarja**-komponentille tai ER-muodon **XML-elementti**-komponentille, joka sijaitsee **yhteinen\\tiedosto**-komponentissa, jossa **Kerää tuotostiedot** -asetus on käytössä.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-110">The **Collected data key value** property can be configured for either a **Sequence** component or an **XML Element** component of an ER format that resides under the **Common\\File** component where the **Collect output details** option is turned on.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0a325-111">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="0a325-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="5d1b1-111">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="5d1b1-111">Return values</span></span>
 
-<span data-ttu-id="0a325-112">*Reaaliluku*</span><span class="sxs-lookup"><span data-stu-id="0a325-112">*Real*</span></span>
+<span data-ttu-id="5d1b1-112">*Reaaliluku*</span><span class="sxs-lookup"><span data-stu-id="5d1b1-112">*Real*</span></span>
 
-<span data-ttu-id="0a325-113">Tuloksena oleva numeroarvo.</span><span class="sxs-lookup"><span data-stu-id="0a325-113">The resulting numeric value.</span></span>
+<span data-ttu-id="5d1b1-113">Tuloksena oleva numeroarvo.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-113">The resulting numeric value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="0a325-114">Käyttöhuomautukset</span><span class="sxs-lookup"><span data-stu-id="0a325-114">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="5d1b1-114">Käyttöhuomautukset</span><span class="sxs-lookup"><span data-stu-id="5d1b1-114">Usage notes</span></span>
 
-<span data-ttu-id="0a325-115">Tämä funktio palauttaa **0** (nolla)-arvon, kun **Kerää tuotos tiedot** -vaihtoehto on poistettu käytöstä nykyisessä **Yleinen\\Tiedosto**-komponentissa.</span><span class="sxs-lookup"><span data-stu-id="0a325-115">This function returns a **0** (zero) value when the **Collect output details** option of the current **Common\\File** component is turned off.</span></span>
+<span data-ttu-id="5d1b1-115">Tämä funktio palauttaa **0** (nolla)-arvon, kun **Kerää tuotos tiedot** -vaihtoehto on poistettu käytöstä nykyisessä **Yleinen\\Tiedosto**-komponentissa.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-115">This function returns a **0** (zero) value when the **Collect output details** option of the current **Common\\File** component is turned off.</span></span>
 
-<span data-ttu-id="0a325-116">`condition range`-argumentessa yleismerkkiä **"\*"** voidaan käyttää kuvaamaan mitä tahansa useita merkkejä.</span><span class="sxs-lookup"><span data-stu-id="0a325-116">In the `condition range` argument, the wildcard character **"\*"** can be used to represent any multiple characters.</span></span>
+<span data-ttu-id="5d1b1-116">`condition range`-argumentessa yleismerkkiä **"\*"** voidaan käyttää kuvaamaan mitä tahansa useita merkkejä.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-116">In the `condition range` argument, the wildcard character **"\*"** can be used to represent any multiple characters.</span></span>
 
-<span data-ttu-id="0a325-117">`condition value`-argumentessa yleismerkkiä **"\*"** voidaan käyttää kuvaamaan mitä tahansa useita merkkejä.</span><span class="sxs-lookup"><span data-stu-id="0a325-117">In the `condition value` argument, the wildcard character **"\*"** can be used to represent any multiple characters.</span></span>
+<span data-ttu-id="5d1b1-117">`condition value`-argumentessa yleismerkkiä **"\*"** voidaan käyttää kuvaamaan mitä tahansa useita merkkejä.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-117">In the `condition value` argument, the wildcard character **"\*"** can be used to represent any multiple characters.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0a325-118">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="0a325-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5d1b1-118">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="5d1b1-118">Example</span></span>
 
-<span data-ttu-id="0a325-119">Lisätietoja tämän toiminnon käytöstä on tehtäväoppaassa [ER Käytä tulostusmuotoa laskennassa ja summauksessa](tasks/er-format-counting-summing-1.md), joka on osa **IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen** -liiketoimintaprosessia.</span><span class="sxs-lookup"><span data-stu-id="0a325-119">For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.</span></span>
+<span data-ttu-id="5d1b1-119">Lisätietoja tämän toiminnon käytöstä on tehtäväoppaassa [ER Käytä tulostusmuotoa laskennassa ja summauksessa](tasks/er-format-counting-summing-1.md), joka on osa **IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen** -liiketoimintaprosessia.</span><span class="sxs-lookup"><span data-stu-id="5d1b1-119">For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.</span></span>
 
-<span data-ttu-id="0a325-120">Lisätietoja ja esimerkkejä tämän toiminnon käyttämisestä on kohdassa [Sekvenssielementtien suorituksen lykkääminen ER-muodoissa](er-defer-sequence-element.md#Example) sekä [XML-elementtien suorituksen siirtäminen ER-muodoissa](er-defer-xml-element.md#Example).</span><span class="sxs-lookup"><span data-stu-id="0a325-120">For more information and examples about using this function, see [Defer the execution of sequence elements in ER formats](er-defer-sequence-element.md#Example) and [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example).</span></span>
+<span data-ttu-id="5d1b1-120">Lisätietoja ja esimerkkejä tämän toiminnon käyttämisestä on kohdassa [Sekvenssielementtien suorituksen lykkääminen ER-muodoissa](er-defer-sequence-element.md#Example) sekä [XML-elementtien suorituksen siirtäminen ER-muodoissa](er-defer-xml-element.md#Example).</span><span class="sxs-lookup"><span data-stu-id="5d1b1-120">For more information and examples about using this function, see [Defer the execution of sequence elements in ER formats](er-defer-sequence-element.md#Example) and [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0a325-121">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="0a325-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="5d1b1-121">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="5d1b1-121">Additional resources</span></span>
 
-[<span data-ttu-id="0a325-122">Tietojen keruutoiminnot</span><span class="sxs-lookup"><span data-stu-id="0a325-122">Data collection functions</span></span>](er-functions-category-data-collection.md)
+[<span data-ttu-id="5d1b1-122">Tietojen keruutoiminnot</span><span class="sxs-lookup"><span data-stu-id="5d1b1-122">Data collection functions</span></span>](er-functions-category-data-collection.md)
