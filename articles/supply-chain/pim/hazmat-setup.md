@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: aaf66b98717c72b4260e0a482400bdb29bbd9ecb
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699611"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803210"
 ---
 # <a name="set-up-hazardous-materials"></a>Vaarallisten aineiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Vaaralliset aineet -toiminnon käyttäminen edellyttää, että ensimmäiseksi määritetään tiedot, joilla nimikkeet luokitellaan vaarallisiksi aineiksi. Kun sitten luot myyntitilauksen, joka sisältää vaaralliseksi aineeksi luokitellun nimikkeen, järjestelmä luo kyseiselle myyntitilaukselle vaarallisen aineen ohjeet toimituksen yhteydessä.
 

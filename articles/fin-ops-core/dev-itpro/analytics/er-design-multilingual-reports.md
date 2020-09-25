@@ -3,7 +3,7 @@ title: Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) selitteiden käyttöä monikielisten raporttien suunnittelussa ja luonnissa.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65efb8dbec925b5238acaa5d6769f3085e9715b9
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3444618"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810664"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 
@@ -33,7 +33,7 @@ ms.locfileid: "3444618"
 
 Yrityskäyttäjänä voit käyttää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehystä määrittämään lähtevien sähköisten asiakirjojen muodot, jotka on luotava eri maiden ja alueiden lakisääteisten vaatimusten mukaan. Kun nämä vaatimukset edellyttävät, että lähtevät asiakirjat luodaan eri kielellä eri maissa tai eri alueilla, voit määrittää yhden ER-[muodon](general-electronic-reporting.md#FormatComponentOutbound), jotka sisältää kieliriippuvaiset resurssit. Tällä tavoin luoda eri kielten tai alueiden lähteviä asiakirjoja käyttämällä muotoa uudelleen. Lisäksi yhdellä ER-muodolla on mahdollista luoda lähtevä asiakirja eri kielellä asiakkaille, toimittajille, tytäryhtiöille tai muille osapuolille.
 
-ER-tietomallit ja mallimääritykset voidaan määrittää määritettyjen ER-muotojen tietolähteiksi. Tällä tavoin voidaan määrittää tietovirrat, joilla määritetään luotuihin asiakirjoihin sijoitettavat sovelluksen tiedot. ER-konfiguraation [lähteenä](general-electronic-reporting.md#Provider) voit [julkaista](tasks/er-upload-configuration-into-lifecycle-services.md#upload-configuration-into-lcs) määritettyjä [tietomalleja](general-electronic-reporting.md#data-model-and-model-mapping-components), [mallimäärityksiä](general-electronic-reporting.md#data-model-and-model-mapping-components) ja [muotoja](general-electronic-reporting.md#FormatComponentOutbound) ER-ratkaisun osina, joita käytetään tiettyjen lähtevien asiakirjojen luontiin. Voit myös antaa asiakkaille mahdollisuuden [ladata](general-electronic-reporting-manage-configuration-lifecycle.md) julkaistun ER-ratkaisun, jolloin sitä voidaan käyttää ja mukauttaa. Jos oletat, että asiakkaat puhuvat muita kieliä, voit määrittää ER-osat siten, että niissä on kieliriippuvaisia resursseja. Tällä tavoin muokattavan ER-osan sisältö voidaan ilmaista asiakkaan käyttäjän valitsemalla kielellä suunnitteluvaiheessa.
+ER-tietomallit ja mallimääritykset voidaan määrittää määritettyjen ER-muotojen tietolähteiksi. Tällä tavoin voidaan määrittää tietovirrat, joilla määritetään luotuihin asiakirjoihin sijoitettavat sovelluksen tiedot. ER-konfiguraation [lähteenä](general-electronic-reporting.md#Provider) voit [julkaista](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) määritettyjä [tietomalleja](general-electronic-reporting.md#data-model-and-model-mapping-components), [mallimäärityksiä](general-electronic-reporting.md#data-model-and-model-mapping-components) ja [muotoja](general-electronic-reporting.md#FormatComponentOutbound) ER-ratkaisun osina, joita käytetään tiettyjen lähtevien asiakirjojen luontiin. Voit myös antaa asiakkaille mahdollisuuden [ladata](general-electronic-reporting-manage-configuration-lifecycle.md) julkaistun ER-ratkaisun, jolloin sitä voidaan käyttää ja mukauttaa. Jos oletat, että asiakkaat puhuvat muita kieliä, voit määrittää ER-osat siten, että niissä on kieliriippuvaisia resursseja. Tällä tavoin muokattavan ER-osan sisältö voidaan ilmaista asiakkaan käyttäjän valitsemalla kielellä suunnitteluvaiheessa.
 
 Kieliriippuvaiset resurssit voidaan määrittää ER-selitteinä. ER-osat voidaan sitten määrittää kyseisten selitteiden avulla seuraavia tarkoituksia varten:
 

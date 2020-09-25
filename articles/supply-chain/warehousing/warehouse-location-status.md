@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 128083b22bb14d9b445863a0ba1217f723727ee4
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597503"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775171"
 ---
 # <a name="warehouse-location-status"></a>Varastosijainnin tila
 
@@ -76,6 +76,9 @@ Esimerkkiskenaario edellyttää kahden sijaintiprofiilin valmistelemista.
     Nämä asetukset määrittävät, ovatko sijainnin viitekentät aktiivisia.
 
 1. Toista vaiheet 3-4 **POIMINTA-06**-profiilissa.
+
+> [!NOTE]
+> Kun sijaintiprofiilin (**Ota nimike käyttöön sijainnissa**, **Ota käyttöön sijaintitehtävä**, **Ota käyttöön sijainnin tila**) parametrien arvoksi on määritetty *Kyllä*, järjestelmä päivittää heti vastaavat sijainnit suorittamalla *Varastosijainnin tilan yhdenmukaisuustarkistus* -työn.
 
 ### <a name="scenario"></a>Skenaario
 

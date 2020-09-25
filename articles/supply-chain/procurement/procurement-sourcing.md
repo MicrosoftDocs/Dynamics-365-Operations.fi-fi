@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209211"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813831"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
@@ -55,7 +55,7 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
 -   [Toimittajayhteistyön määrittäminen ja hallinta](set-up-maintain-vendor-collaboration.md)
--   [Microsoft Dynamics 365 for Finance and Operationsin saapuvan tavaralähetyksen esittelykomentosarja](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(tiedote)
+-   [Microsoft Dynamics 365 for Finance and Operationsin saapuvan tavaralähetyksen esittelykomentosarja](https://www.microsoft.com/download/details.aspx?id=101945)(tiedote)
 -   [Tavaralähetysvaraston valvonta toimittajayhteistyön avulla](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain helmikuun ja toukokuun 2016 Dynamics AX -versiot)
 -   [Toimittajaportaalin käyttäjäsuojaus](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)
@@ -98,7 +98,7 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Hankinnan työnkulut](procurement-sourcing-workflows.md)
 -   [Ostotilauksen tuotteiden vastaanoton kirjaaminen](tasks/record-receipt-goods-purchase-order.md)
 -   [Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
--   [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
+-   [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://www.microsoft.com/download/details.aspx?id=101821) (raportti)
 -   [Ostokäytäntöjen yleiskatsaus](purchase-policies.md)
 -   [Luo ostokäytännöt](tasks/create-purchasing-policies.md)
 
