@@ -3,7 +3,7 @@ title: Evästeen yhteensopivuus
 description: Tässä ohjeaiheessa käsitellään evästeiden yhteensopivuuden ja Microsoft Dynamics 365 Commercen oletuskäytäntöjen huomioitavia seikkoja.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446910"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761318"
 ---
 # <a name="cookie-compliance"></a>Evästeen yhteensopivuus
 
@@ -56,6 +56,10 @@ Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Käytetään kertakirjautumisistunnon ylläpitämiseen.                        |
 | x-ms-cpim-trans                             | Käytetään tapahtumien seurantaan (kuluttajakauppasivustossa todennettavien avoimien välilehtien määrä), mikä sisältää myös nykyisen tapahtuman. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Sivuston käyttäjän evästeiden hyväksyntä sähköisen kaupankäynnin sivustossa 
+
+Jos sähköisen kaupankäynnin sivuston ominaisuus tai moduuli käyttää ei-olennaista evästettä, sivuston käyttäjän hyväksyntä on saatava ennen evästeen seuraamista. Jotta sivuston käyttäjät voivat antaa evästeiden hyväksynnän sähköisen kaupankäynnin sivustossa, sivuston tekijän on lisättävä ja konfiguroitava evästeiden hyväksyntämoduuli sivun otsikkomoduulissa. Näin varmistetaan, että hyväksyntä pyydetään ja vastaanotetaan. Sivuston käyttäjän hyväksyntä on saatava, ennen kuin ei-olennaista evästettä käyttävä toiminto tai moduuli voidaan hahmontaa sivuston sivulla.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Helppokäyttöisyyden toiminnot ja ominaisuudet](accessibility.md)
@@ -65,3 +69,7 @@ Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce
 [Lisää tietosuojakäytäntösivu](add-privacy-page.md)
 
 [Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen](replace-IDs-tracked-changes.md)
+
+[Evästeen hyväksyntämoduuli](cookie-consent-module.md) 
+ 
+[Ylätunnistemoduuli](author-header-module.md)

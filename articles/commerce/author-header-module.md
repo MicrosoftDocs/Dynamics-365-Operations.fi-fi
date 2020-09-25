@@ -3,7 +3,7 @@ title: Ylätunnistemoduuli
 description: Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,24 +17,25 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: eb440a8fb67888c9411ad5998fead4d00982b436
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686619"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761221"
 ---
 # <a name="header-module"></a>Ylätunnistemoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
-Dynamics 365 Commercessa sivun ylätunniste koostuu useita moduuleista, kuten ylätunniste-, siirtymisvalikko-, haku-, mainosbanneri- ja evästehyväksyntämoduuleista. 
+Dynamics 365 Commercen sivun otsikko on määritetty sivun osaksi, joka sisältää otsikon, kampanjabannerin ja evästeiden hyväksyntämoduulit. 
 
-Ylätunnistemoduuli sisältää sivuston logon, linkit siirtymishierarkiaan, linkit muille sivuston sivuille, ostoskorisymbolin, toivelistasymbolin, kirjautumisvaihtoehdot ja hakupalkin. Ylätunnistemoduuli optimoidaan automaattisesti sitä laitetta varten, jolla sivustoa tarkastellaan (eli pöytätietokonetta tai mobiililaitetta varten). Esimerkiksi mobiililaitteessa siirtymispalkki tiivistetään **Valikko**-painikkeeksi (jossa on useita *viivoja*).
+Ylätunnistemoduuli sisältää sivuston logon, linkit siirtymishierarkiaan, linkit muille sivuston sivuille, ostoskorim kuvakkeen moduulin, toivelistasymbolin, kirjautumisvaihtoehdot ja hakupalkin. Ylätunnistemoduuli optimoidaan automaattisesti sitä laitetta varten, jolla sivustoa tarkastellaan (eli pöytätietokonetta tai mobiililaitetta varten). Esimerkiksi mobiililaitteessa siirtymispalkki tiivistetään **Valikko**-painikkeeksi (jossa on useita *viivoja*).
 
 Seuraavassa kuvassa on esimerkki otsikkomoduulista kotisivulla.
 
@@ -48,33 +49,36 @@ Ylätunnistemoduuli tukee **Logon kuva**-, **Logon linkki**- ja **Oman tilin lin
 
 **Oman tilin linkit** -ominaisuudella voidaan määrittää ne tilisivut, joiden pikalinkit sivuston omistaja haluaa näyttää ylätunnisteessa.
 
-## <a name="modules-that-are-available-in-a-header-module"></a>Ylätunnistemoduulin käytettävissä olevat moduulit
+## <a name="modules-that-are-available-within-a-header-module"></a>Ylätunnistemoduulin käytettävissä olevat moduulit
 
 Seuraavia moduuleja voi käyttää ylätunnistemoduulissa:
 
-- **Siirtymisvalikko** – Siirtymisvalikko edustaa kanavan siirtymishierarkiaa ja muita staattisia siirtymislinkkejä. Kanavan siirtymishierarkia voidaan määrittää Dynamics 365 Commerce -sovelluksessa. Siirtymisvalikossa on **Siirtymisen lähde** -ominaisuus, jolla määritetään Retail Serverin siirtymisvalikon vaihtoehdot ja staattiset valikkovaihtoehdot lähteeksi. Jos staattiset valikkovaihtoehdot määritetään lähteeksi, sivuston muille sivulle voidaan antaa suhteelliset linkit. Määritetyt nimikkeet näkyvät tämän jälkeen ylätunnisteen siirtymistoiminnossa. 
+- **Siirtymisvalikko** – Siirtymisvalikko edustaa kanavan siirtymishierarkiaa ja muita staattisia siirtymislinkkejä. Lisätietoja on kohdassa [Siirtymisvalikkomoduuli](nav-menu-module.md).
 
 - **Haku** – Hakumoduulin avulla käyttäjät voivat etsiä tuotteita hakusanojen avulla. Oletushakusivun URL-osoite ja hakukyselyn parametrit on annettava valitsemalla **Sivuston asetukset \> Laajennukset**. Hakumoduulissa on ominaisuuksia, joiden avulla voit estää hakupainikkeen tai -selitteen tarvittaessa. Hakumoduuli tukee myös automaattisia ehdotuksia, kuten tuotteen, avainsanan ja luokan hakutuloksia.
 
 - **Ostoskorikuvake** – Ostoskorikuvakemoduuli edustaa ostoskorin symbolia, joka ilmaisee, kuinka monta nimikettä ostoskorissa on tiettynä ajankohtana. Lisätietoja on kohdassa [Ostoskorikuvakemoduuli](cart-icon-module.md).
 
-## <a name="create-a-header-module-for-a-page"></a>Sivun ylätunnistemoduulin luominen
+## <a name="create-a-header-fragment-for-a-page"></a>Sivun otsikko-osan luominen
 
-Voit luoda ylätunnistemoduulin seuraavasti.
+Voit luoda otsikko-osan seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi sivun osa** -valintaikkunassa **Kontti**-moduuli. Syötä sivun osan nimi ja valitse **OK**.
-1. Valitse **Oletussäilö**-paikka ja määritä sitten Ominaisuudet-ruudussa oikealla puolella oleva **Leveys**-ominaisuuden arvoksi **Täytä säilö**.
+1. Valitse **Uusi osa** -valintaikkunassa **Kontti**-moduuli. Syötä osan nimi ja valitse **OK**.
+1. Valitse **Oletussäilö**-paikka ja määritä sitten Ominaisuudet-ruudussa oikealla puolella oleva **Leveys**-ominaisuuden arvoksi **Täytä näyttö**.
 1. Valitse kolme pistettä (**...**) **Oletuskontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunan **Kampanjabanneri**- ja **Hyväksy evästeet** -moduulit ja valitse sitten **OK**.
-1. Valitse kolme pistettä (**...**) **Oletuskontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
-1. Valitse **Säilö**-paikka ja määritä sitten Ominaisuudet-ruudussa oikealla puolella oleva **Leveys**-ominaisuuden arvoksi **Täytä säilö**.
-1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Otsikko**-moduuli ja valitse sitten **OK**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Evästeiden hyväksyntä**-, **Otsikko**- ja **Kampanjabanneri**-moduulit ja valitse sitten **OK**.
+1. Valitse **Kampanjabanneri**-moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
+1. Lisää **Sanoma**-valintaruutuun teksti ja linkit mainossisältöä varten ja valitse **OK**.
+1. Lisää **evästeiden hyväksyntämoduulin** ominaisuusruudussa teksti ja muokkaa sitä. Linkitä teksti sivuston tietosuojakäytännön sivulle.
 1. Valitse otsikkomoduulissa **Siirtymisvalikko**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Siirtymisvalikko**-moduuli ja valitse sitten **OK**.
-1. Määritä siirtymisvalikkomoduulin tarvittavat ominaisuudet ominaisuusruudussa.
+1. Valitse siirtymisvalikkomoduulin ominaisuusruudun **Siirtymisvalikon lähde** -kohdassa **Retail Server**.
+1. Valitse siirtymisvalikkomoduulin ominaisuusruudun **Staattiset valikon vaihtoehdot** -kohdassa **Lisää valikon vaihtoehto** ja valitse sitten **Valikon vaihtoehto**. 
+1. Syötä **Valikon vaihtoehto** -valintaruudun **Valikon vaihtoehdon teksti** -kohtaan Yhteyshenkilö.
+1. Valitse **Valikon vaihtoehto** -valintaruudun **Valikon vaihtoehdon linkin kohde** -kohdassa **Lisää linkki**.
+1. Valitse **Lisää linkki** -valintaikkunassa sivuston yhteyshenkilösivun URL-osoite ja valitse sitten **OK**.  
+1. Valitse **Valikon vaihtoehto** -valintaikkunassa **OK**.
 1. Valitse otsikkomoduulissa **Haku**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Haku**-moduuli ja valitse sitten **OK**.
 1. Määritä hakumoduulin tarvittavat ominaisuudet ominaisuusruudussa.
@@ -94,16 +98,12 @@ Voit varmistaa, että ylätunniste näkyy jokaisella sivulla, noudattamalla näi
 
 [Konttimoduuli](add-container-module.md)
 
-[Ostoruutumoduuli](add-buy-box.md)
-
-[Ostoskorimoduuli](add-cart-module.md)
-
 [Ostoskorikuvakemoduuli](cart-icon-module.md)
 
-[Kassamoduuli](add-checkout-module.md)
+[Promopalkkimoduuli](add-alert.md)
 
-[Tilauksen vahvistusmoduuli](order-confirmation-module.md)
+[Siirtymisvalikkomoduuli](nav-menu-module.md) 
 
-[Ylätunnistemoduuli](author-header-module.md)
+[Evästeiden hyväksyntä](cookie-consent-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)

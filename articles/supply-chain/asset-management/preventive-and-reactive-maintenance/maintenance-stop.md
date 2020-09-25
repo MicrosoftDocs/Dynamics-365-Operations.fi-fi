@@ -1,6 +1,6 @@
 ---
-title: Ylläpidon käyttökatko
-description: Tässä ohjeaiheessa kerrotaan ylläpidon käyttökatkosta resurssien hallinnassa.
+title: Ylläpidon käyttökatkon tehtävät
+description: Tässä aiheessa on tietoja ylläpidon käyttökatkon käyttämisestä kapasiteetin yleiskuvan saamiseksi. Se tarvitaan tietyjen käyttöomaisuuksien kunnossapitotöiden suorittamiseen tiettynä ajanjaksona.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383524"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802818"
 ---
-# <a name="maintenance-downtime"></a>Ylläpidon käyttökatko
+# <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Huoltoseisokkien avulla saadaan yleiskuva kapasiteetista, joka tarvitaan tietyjen käyttöomaisuuksien kunnossapitotöiden suorittamiseen tiettynä ajanjaksona. Voit esimerkiksi luoda tuotantolinjalla 10 huoltoseisokkimerkinnän tuotantohallissa nro 29-A (tuotantotoimipaikka 02). Huoltoseisokkien rekisteröinnillä on alkamis- ja päättymisaika, joka ilmaisee ajanjakson, jolloin kunnossapitoon liittyvä käyttöomaisuuserä ei ole käytettävissä tuotannossa.
 

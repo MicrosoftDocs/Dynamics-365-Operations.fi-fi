@@ -3,7 +3,7 @@ title: Päivitysprosessi
 description: Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS), joka tarjoaa jatkuvia ja kosketusvapaita palvelupäivityksiä sovellus- ja ympäristömuutoksille.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431173"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759956"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS),
 
 Päivitykset julkaistaan säännöllisesti kaikkiin ympäristöihin. Human Resourcesia tuetaan [Microsoftin elinkaarikäytännön](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy) mukaisesti. Se tarjoaa johdonmukaisia ja ennakoitavia ohjeita tuen saatavuudesta.
 
-## <a name="release-cadence"></a>Päivitysväli
+## <a name="release-cadence"></a>Päivitysväli 
 
 Human Resources -päivitykset tehdään kaikissa ympäristöissä automaattisesti. Human Resourcesiin liittyy kahdenlaisia julkaisuja:
 
@@ -56,14 +56,12 @@ Julkaisut tarkistetaan, testataan ja vahvistetaan sisäisessä ympäristössä. 
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Vapauta tahtipoikkeukset vuonna 2020
 
-Seuraavat päivämäärät ovat poikkeuksia vakiojulkaisuaikataulusta:
+Lomien vuoksi vuoden 2020 marraskuun ja joulukuun julkaisuaikataulu on seuraava:
 
-| Päivämäärä | kuvaus |
-| --- | --- |
-| Marraskuun 23. päivän viikko | Ei päivityksiä |
-| Joulukuun 14. päivän viikko | Vain vähäisiä päivityksiä |
-| Joulukuun 21. päivän viikko | Ei päivityksiä |
-| Joulukuun 28. päivän viikko | Ei päivityksiä |
+- Marraskuun julkaisu: 2.11.–13.11.
+- Joulukuun julkaisu: 30.11.–11.12.
+ 
+Kahden viikon julkaisuväli jatkuu tavalliseen tapaan 11.1.2021.
 
 ## <a name="communications"></a>Viestintä
 

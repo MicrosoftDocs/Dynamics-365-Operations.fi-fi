@@ -3,7 +3,7 @@ title: Käänteinen verovelvollisuus
 description: Tässä ohjeaiheessa kerrotaan, miten käänteinen arvonlisävero määritetään Euroopan maissa, Saudi-Arabiassa ja Singaporessa.
 author: epodkolz
 manager: AnnBe
-ms.date: 07/16/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,24 +11,25 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183623"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760230"
 ---
 # <a name="reverse-charge-vat"></a>Käänteinen verovelvollisuus
 
-
 [!include [banner](../includes/banner.md)]
 
+Tässä ohjeaiheessa kerrotaan yleisesti EU:n ja GCC-maiden sekä Singaporen käänteisen arvonlisäveron määrittämisestä.
 
-Tässä ohjeaiheessa kerrotaan yleisesti eurooppalaisten maiden, Saudi-Arabian ja Singaporen käänteisen arvonlisäveron määrittämisestä.
+> [!NOTE]                                                                                  
+> **Käänteisen veromallin saatavuus muissa maissa** -ominaisuus on otettava käyttöön **Ominaisuuksien hallinta** -työtilassa Bahrainille, Kuwaitille, Omanille ja Quatarille. 
 
 Käänteinen vero on veromalli, jossa ALV:n kirjanpito- ja raportointivastuu siirtyy myyjältä tavaran ja/tai palvelun ostajalle. Tämän vuoksi tavaroiden ja/tai palvelujen vastaanottaja ilmoitta ALV-ilmoituksessa sekä maksettavan veron (myyjän roolissa) että vähennettävän veron (ostajan roolissa)
 
@@ -85,7 +86,7 @@ Voit määrittää **Käänteisen veloituksen nimikeryhmät** -sivulla (**Verot*
 Voit määrittää **Käänteinen veloituksen säännöt** -sivulla (**Verot** &gt; **Asetukset** &gt; **Arvonlisävero** &gt; **Käänteisen veloituksen säännöt**) soveltuvuussäännöt ostoja ja myyntiä varten. Voit määrittää käänteisen verotuksen soveltuvuussääntöjoukon. Määritä kullekin säännölle seuraavat kentät:
 
 - **Tiedostotyyppi** – valitse **Ostotilaus**, **Toimittajan laskun kirjauskansio**, **Myyntitilaus**, **Vapaatekstilasku**, **Myyntilaskukirjauskansio** ja/tai **Toimittajan lasku**.
-- **Kumppanin maan/alueen tyyppi** – Valitse **kotimaa**, **EU** tai **Ulkomainen**. Jos sääntöä voi vaihtoehtoisesti käyttää kaikissa kauppakumppaneissa osoitteen maasta tai alueesta riippumatta, valitse **Kaikki**.
+- **Kumppanin maan/alueen tyyppi** – Valitse **Kotimaa**, **EU**, **GCC** tai **Ulkomaa**. Jos sääntöä voi vaihtoehtoisesti käyttää kaikissa kauppakumppaneissa osoitteen maasta tai alueesta riippumatta, valitse **Kaikki**.
 - **Kotimaantoimituksen osoite** – Kun tämä valintaruutu valitaan, sääntöä käytetään samassa maassa tai samalla alueella tehtäviin toimituksiin. Tätä valintaruutua ei voi valita, jos asiakirjan tyyppi on **Toimittajan laskun kirjauskansio** ja **Myyntilaskukirjauskansio**.
 - **Käänteisen veloituksen nimikeryhmä** – valitse ryhmä, jossa sääntöä voidaan käyttää.
 - **Raja-arvo** – Käänteistä veromallia käytetään laskussa vain, jos käänteisen verotuksen nimekeryhmään sisältyvien nimikkeiden ja/tai palvelujen arvo ylittää tässä määritetyn raja-arvon.
@@ -98,13 +99,16 @@ Voit lisäksi määrittää, näkyvätkö ilmoitukset ja päivitetäänkö asiak
 - **Kehote** – avautuva ilmoitus pyytää vahvistamaan, että käänteistä vero saa käyttää.
 - **Määritä** – asiakirjarivi päivitetään ilman lisäilmoituksia.
 
+## <a name="set-up-countryregion-properties"></a>Maan/alueen ominaisuuksien määrittäminen
+Määritä **Ulkomaankaupan parametrit** -sivun (**Vero** &gt; **Asetukset** &gt; **Arvonlisävero** &gt; **Ulkomaankauppa** &gt; **Ulkomaankaupan parametrit**) **Maan/alueen ominaisuudet** -välilehdessä nykyisen yrityksen maaksi/alueeksi *Kotimaa*. Määritä yrityksen kanssa EU-kauppaan osallistuvien EU-maiden-/alueiden **maan/alueen tyypiksi** *EU*. Määritä yrityksen kanssa GCC-kauppaan osallistuvien GCC-maiden/-alueiden **maan/alueen tyypiksi** *GCC*.
+
 ## <a name="set-up-default-parameters"></a>Oletusparametrien määrittäminen
 Voit ottaa käänteisen verovelvollisuuden toiminnon käyttöön valitsemalla **Kirjanpitoparametrit**-sivun **Käänteinen veloitus**-välilehdessä **Ota käänteinen veloitus käyttöön** -asetukseksi **Kyllä**. Valitse **Ostotilauksen arvonlisäveroryhmä**- ja **Myyntitilauksen arvonlisäveroryhmä** -kentissä oletusarvoiset arvonlisäveroryhmät. Kun käänteisen veron soveltuvuusehto täyttyy, myynti- tai ostotilausrivi päivitetään näillä arvonlisäveroryhmillä.
 
 ## <a name="reverse-charge-on-a-sales-invoice"></a>Myyntilaskun käänteinen vero
 Käänteisen veromallin alaisessa myynnissä myyjä ei voita arvolisäveroa. Laskussa ilmoitetaan sen sijaan sekä käänteisen verovelvollisuuden alaiset nimikkeet että käänteisen verovelvollisuuden kokonaissumma.
 
-Kun kirjattavassa myyntilaskussa on käänteistä veroa, arvolisäverotapahtumissa on verosuuntana **Maksettava arvonlisävero**, arvonlisävero on nolla ja **Käänteinen veloitus** -valintaruutu on valittu.
+Kun kirjattavassa myyntilaskussa on käänteistä veroa, arvolisäverotapahtumissa on verosuuntana **Maksettava arvonlisävero**, arvonlisävero on nolla ja **Käänteinen veloitus**- ja **Vapautus**-valintaruudut on valittu.
 
 ## <a name="reverse-charge-on-a-purchase-invoice"></a>Ostolaskun käänteinen vero
 Käänteiseen veromalliin kuuluvissa ostoissa käänteisen veron sisältävän laskun vastaanottava ostaja toimii ostajana ja myyjänä arvonlisäveron kirjanpitoa varten.

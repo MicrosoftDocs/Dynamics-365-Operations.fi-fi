@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628906"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759932"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -93,7 +93,7 @@ Asiakkaan etähauissa ei näytetä muiden yritysten asiakkaiden asiakastunnusta,
 
 ### <a name="enhancements-to-local-customer-search"></a>Paikallisten asiakashakujen parannukset
 
-Puhelinnumeroon perustuvia hakuja on yksinkertaistettu. Nämä haut ohittavat nyt erikoismerkit, kuten välilyönnit, tavuviivat ja sulkeet, jotka on mahdollisesti lisätty asiakasta luotaessa. Kassan ei tämän vuoksi tarvitse välittää puhelinnumeron muodosta hakujen yhteydessä. Asiakkaita voi hakea myös kirjoittamalla osittaisen puhelinnumeron. Jos puhelinnumerossa on erikoismerkkejä, se voidaan etsiä myös hakemalla erikoismerkin jälkeen tulevia numeroita. Jos esimerkiksi asiakkaan puhelinnumeroksi on tallennettu **123-456-7890**, kassa voi etsiä asiakkaan kirjoittamalla **123**, **456**, **7890** tai **1234567890**. Haun voi tehdä myös kirjoittamalla puhelinnumeron muutaman ensimmäisen numeron.
+Puhelinnumeroon perustuvia hakuja on yksinkertaistettu. Nämä haut ohittavat nyt erikoismerkit, kuten välilyönnit, tavuviivat ja sulkeet, jotka on mahdollisesti lisätty asiakasta luotaessa. Kassan ei tämän vuoksi tarvitse välittää puhelinnumeron muodosta hakujen yhteydessä. Jos esimerkiksi asiakkaan puhelinnumeroksi on tallennettu **123-456-7890**, kassa voi etsiä asiakkaan kirjoittamalla **1234567890**. Haun voi tehdä myös kirjoittamalla puhelinnumeron muutaman ensimmäisen numeron.
 
 > [!NOTE]
 > Asiakkaalla voi olla useita puhelinnumeroita ja sähköpostiosoitteita. Asiakkaan hakualgoritmi hakee myös näiden toissijaisten sähköpostiosoitteiden ja puhelinnumeroista. Asiakkaan hakutulossivulla näytetään kuitenkin vain ensisijainen sähköpostiosoite ja puhelinnumero. Tämä saattaa aiheuttaa sekaannusta, koska palautetut asiakkaan tulokset eivät näytä haettua sähköpostiosoitetta tai puhelinnumeroa. Tulevissa julkaisuissa aiomme parantaa asiakkaan hakutulosnäyttöä näiden tietojen saamiseksi.

@@ -3,7 +3,7 @@ title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686667"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761294"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
@@ -59,10 +59,13 @@ Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen oh
 
 - **Otsikon tunniste** – Tämä ominaisuus määrittää tuoteotsikon otsikon tunnisteen. Jos ostoruutu on sivun yläosassa, helppokäyttöisyysstandardit täyttyvät, kun tämän ominaisuuden arvona on **h1**. 
 
+- **Vastaavien tuotteiden ostosuositusten ottaminen käyttöön** - Tämän ominaisuuden avulla ostoruudussa voidaan näyttää linkkejä tuotteisiin, jotka ovat vastaavia kuin tällä hetkellä esillä oleva nimike. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.13 ja uudemmissa versioissa.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduulit, joita voidaan käyttää ostoruutumoduulissa
 
 - **Mediavalikoima** – Tämän moduulin avulla esitellään tuotteen kuvat tuotetietosivulla. Lisätietoja tästä moduulista on kohdassa [Mediavalikoimamoduuli](media-gallery-module.md).
 - **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Lisätietoja tästä moduulista on kohdassa [Myymälävalitsinmoduuli](store-selector.md).
+- **Jako yhteisöpalveluissa** - Jos tämä moduuli lisätään ostoruutuun, käyttäjät voivat jakaa tuotetietoja yhteisöpalveluissa. Lisätietoja on kohdassa [Jako yhteisöpalveluissa -moduuli](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Ostoruutumoduulin asetukset
 
@@ -85,8 +88,8 @@ Ostoruutumoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi sivun osa** -valintaikkunassa **Ostoruutu**-moduuli.
-1. Kirjoita **Sivun osan nimi** -kohtaan **Ostoruudun osa** ja valitse sitten **OK**.
+1. Valitse **Uusi osa** -valintaikkunassa **Ostoruutu**-moduuli.
+1. Kirjoita **Osan nimi** -kohtaan **Ostoruudun osa** ja valitse sitten **OK**.
 1. Valitse ostoruutumoduulissa **Mediavalikoima**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Mediavalikoima**-moduuli ja valitse sitten **OK**.
 1. Valitse ostoruutumoduulissa **Myymälävalitsin**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
@@ -96,13 +99,13 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **PDP-malli** ja valitse sitten **OK**.
 1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
-1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää sivun osa**.
-1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoruutuosa**, jonka loit aiemmin ja valitse sitten **OK**.
+1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse **Valitse osa** -valintaikkunassa aiemmin luotu **Ostoruutuosa** ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
 1. Valitse **Valitse malli** -valintaikkunassa **PDP-malli**-pohja. Kirjoita **Sivun nimi** -kohtaan **PDP-sivu** ja valitse sitten **OK**.
-1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää sivun osa**.
-1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoruutuosa**, jonka loit aiemmin ja valitse sitten **OK**.
+1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse **Valitse osa** -valintaikkunassa aiemmin luotu **Ostoruutuosa** ja valitse sitten **OK**.
 1. Tallenna ja esikatsele sivu. Lisää **?productid=&lt;tuotteen tunnus&gt;** -kyselymerkkijonoparametri esikatselusivun URL-osoitteeseen. Näin tuotekontekstia käytetään esikatselusivun lataamiseen ja käsittelemiseen.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**. Tuotetietosivulla näkyy ostoruutu.
 
@@ -118,8 +121,6 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 
 [Ostoskorimoduuli](add-cart-module.md)
 
-[Ostoskorikuvakemoduuli](cart-icon-module.md)
-
 [Kassamoduuli](add-checkout-module.md)
 
 [Tilauksen vahvistusmoduuli](order-confirmation-module.md)
@@ -127,5 +128,7 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+[Jako yhteisöpalveluissa -moduuli](social-share-module.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)

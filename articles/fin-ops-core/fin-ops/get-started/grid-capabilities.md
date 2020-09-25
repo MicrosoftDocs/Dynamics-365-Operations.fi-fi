@@ -3,7 +3,7 @@ title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uudella ruudukkotoiminnolla on oltava käyttöoikeus näihin ominaisuuksiin.
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651687"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760396"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Uusi ruudukon ohjausobjekti tarjoaa useita hyödyllisiä ja tehokkaita ominaisuuksia, joilla voidaan parantaa käyttäjien tuottavuutta, kehittää mielenkiintoisempia näkymiä tiedoillesi ja hankkia merkityksellisiä tietoja datastasi. Tämä artikkeli käsittelee seuraavia ominaisuuksia: 
 
 -  Lasketaan kokonaissummia
--  Tietojen ryhmitteleminen
 -  Järjestelmän ennakoiva kirjoitus
 -  Matemaattisten lausekkeiden arviointi 
+-  Taulukkomuotoisten tietojen ryhmittely (käytössä erikseen **(Esiversio) Ryhmittely ruudukoissa** -toiminnossa)
 
 ## <a name="calculating-totals"></a>Lasketaan kokonaissummia
 Finance and Operations -sovelluksissa käyttäjät voivat tarkastella summia ruudukkojen numeeristen sarakkeiden alla. Nämä summat näkyvät alatunnisteosassa ruudukon alla. 
@@ -71,21 +70,6 @@ Jos laskeminen kestää liian kauan, voit peruuttaa toiminnon valitsemalla **Per
 
 Kokonaissummat päivittyvät automaattisesti, kun päivität, poistat tai luot rivejä tietojoukossa.  
 
-## <a name="grouping-data"></a>Tietojen ryhmitteleminen
-Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, käyttäjät voivat taulukkoruudukkojen **Ryhmittely**-ominaisuuksilla järjestää tietonsa mielenkiintoisilla tavoilla Finance and Operations -sovelluksia käyttäen. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
-
-Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella saraketta, jota haluat käyttää ryhmittelyperusteena ja valitse **Ryhmittele tämän sarakkeen perusteella**. Tämä toiminto lajittelee tiedot valitun sarakkeen mukaan, lisää uuden ryhmittelyperustesarakkeen ruudukon alkuun ja lisää otsikkorivit kunkin ryhmän alkuun. Nämä otsikkorivit sisältävät seuraavat tiedot kustakin ryhmästä: 
--  Ryhmän tietojen arvo 
--  Sarakeotsikko (nämä tiedot ovat erityisen hyödyllisiä silloin, kun tuetaan useita ryhmittelytasoja.)
--  Tämän ryhmän tietorivien määrä
--  Kaikkien summattavaksi määritettyjen sarakkeiden välisummat
-
-Kun [Tallennetut näkymät](saved-views.md) ovat käytössä, tämä ryhmittely voidaan tallentaa mukautuksen mukaan osana nopean käytön näkymää seuraavaa sivuvierailua varten.  
-
-Jos valitset **Ryhmittele tämän sarakkeen perusteella** jossakin muussa sarakkeessa, alkuperäinen ryhmittely korvataan, koska versiossa 10.0.9 ja Platform updatessa 33 tuetaan vain yhtä ryhmittelytasoa.
-
-Voit kumota ruudukon ryhmittelyn napsauttamalla ryhmittelysaraketta hiiren kakkospainikkeella ja valitsemalla **Pura ryhmittely**.  
-
 ## <a name="typing-ahead-of-the-system"></a>Järjestelmän ennakoiva kirjoitus
 Monissa liiketoimintaskenaarioissa tietojen nopea syöttäminen järjestelmään on erittäin tärkeää. Aiemmin käyttäjät voivat muuttaa tietoja vain nykyisellä rivillä, ennen kuin uusi ruudukko-ohjausobjekti otettiin käyttöön. Ennen kuin he voivat luoda uuden rivin tai vaihtaa toiselle riville, heidän oli pakko odottaa, että järjestelmä tarkisti mahdolliset muutokset onnistuneesti. Kun yritetään lyhentää aikaa, jonka käyttäjät odottavat näiden vahvistusten valmistumista, ja parantaa käyttäjien tuottavuutta, uusi ruudukko säätää nämä vahvistukset niin, että ne ovat asynkronisia. Tämän vuoksi käyttäjä voi siirtyä muihin riveihin ja tehdä muutoksia, kun edellisen rivin oikeellisuustarkistus odottaa. 
 
@@ -109,6 +93,32 @@ Tuottavuutta tehostaakseen käyttäjät voivat antaa matemaattisia kaavoja ruudu
 
 Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsuuruusmerkillä (**=**). Lisätietoja tuetuista operaattoreista ja syntaksista on kohdassa [Tuetut matemaattiset symbolit](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## <a name="grouping-tabular-data"></a>Taulukkomuotoisten tietojen ryhmittely
+[!include [preview banner](../includes/preview-banner.md)]
+
+Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **(Esiversio) Ryhmittely ruudukoissa** -toimintoa (joka on erillinen uuden ruudukon ohjausominaisuus), käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla Finance and Operations -sovelluksia käyttäen. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
+
+Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella saraketta, jota haluat käyttää ryhmittelyperusteena ja valitse **Ryhmittele tämän sarakkeen perusteella**. Tämä toiminto lajittelee tiedot valitun sarakkeen mukaan, lisää uuden **ryhmittelyperustesarakkeen** ruudukon alkuun ja lisää otsikkorivit kunkin ryhmän alkuun. Nämä otsikkorivit sisältävät seuraavat tiedot kustakin ryhmästä: 
+-  Ryhmän tietojen arvo 
+-  Sarakkeen nimi (nämä tiedot ovat erityisen hyödyllisiä silloin, kun tuetaan useita ryhmittelytasoja).  
+-  Tämän ryhmän tietorivien määrä
+-  Kaikkien summattavaksi määritettyjen sarakkeiden välisummat
+
+Kun [Tallennetut näkymät](saved-views.md) ovat käytössä, tämä ryhmittely voidaan tallentaa mukautuksen mukaan osana nopean käytön näkymää seuraavaa sivuvierailua varten.  
+
+Jos valitset **Ryhmittele tämän sarakkeen perusteella** jossakin muussa sarakkeessa, alkuperäinen ryhmittely korvataan, koska versiossa 10.0.9 ja Platform updatessa 33 tuetaan vain yhtä ryhmittelytasoa.
+
+Voit kumota ruudukon ryhmittelyn napsauttamalla ryhmittelysaraketta hiiren kakkospainikkeella ja valitsemalla **Pura ryhmittely**.  
+
+### <a name="expanding-and-collapsing-groups"></a>Ryhmien laajentaminen ja kutistaminen
+Tietojen alkuperäisessä ryhmittelyssä ryhmät ovat laajennettuina. Voit luoda tiedoista yhteenvetonäkymiä kutistamalla yksittäisiä ryhmiä. Vaihtoehtoisesti voit käyttää ryhmän laajentamista ja kutistamista, jos haluat auttaa tiedoissa siirtymisessä. Jos haluat laajentaa tai kutistaa ryhmän, valitse vastaavan ryhmän otsikkorivin kaksoisnuolikuvakkeen (>) painike. Huomaa, että eri ryhmien laajennus- tai kutistustilaa **ei** tallenneta mukautuksessa.
+
+### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Rivien valitseminen ja valinnan poistaminen ryhmätasolla
+Voit valita nopeasti ryhmän kaikki rivit tai poistaa niiden valinnan valitsemalla vastaavan ryhmän otsikkorivin valintaruudun. Tämä on samanlainen toiminto kuin rivien valitseminen (tai valinnan poistaminen) ruudukossa. Ryhmän otsikkorivin valintaruutu vaikuttaa aina nykyisen valinnan tilaan kyseisen ryhmän riveillä. Näin siitä huolimatta, onko valittuna kaikki rivit, osa riveistä tai ei yhtään riviä.
+
+### <a name="hiding-column-names"></a>Sarakkeiden nimien piilottaminen
+Kun ryhmittelet tietoja, oletusarvo on sarakkeen nimen näkyminen ryhmän otsikkorivillä. Versiosta 10.0.14 ja Platform-päivityksestä 38 alkaen voit valita, haluatko supistaa sarakkeen nimen ryhmän otsikkorivillä valitsemalla **Ruudukkovalinnat** > **Piilota ryhmän sarakkeen nimi**.
+
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Miten otan uuden ruudukonhallinnan käyttöön omassa ympäristössäni? 
 
@@ -131,7 +141,7 @@ Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on kä
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
 Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
 
-        this.forceLegacyGrid();
+ ```this.forceLegacyGrid();```
 
 Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Ilmoita Microsoftille mahdolliset ongelmat, jotka edellyttävät tämän ohjelmointirajapinnan käyttämistä. 
 

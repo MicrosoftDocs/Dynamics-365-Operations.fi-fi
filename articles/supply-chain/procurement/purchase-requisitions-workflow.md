@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
-ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
+ms.openlocfilehash: 7a9dceb3f9e71163dcaf8b8763317110ef019844
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3281506"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813885"
 ---
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
@@ -113,7 +113,7 @@ Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistaj
 
 [Luo kulutusehdotus](tasks/create-requisition-consumption.md)
 
-[Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen (raportti)](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+[Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen (raportti)](https://www.microsoft.com/download/details.aspx?id=101821)
 
 [Hankinnan työnkulut](procurement-sourcing-workflows.md)
 

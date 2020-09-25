@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208014"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803160"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka velvoittaa organisaation ostamaan tietyn määrän tai tietyllä summalla, käyttämällä useita ostotilauksia jonkin ajanjakson aikana. Vastineeksi tästä sitoumuksesta, ostaja saa erityiset hinnat ja alennukset. 
 
@@ -42,8 +41,13 @@ Voit estää ostosopimuksen käytön ja vahvistamisen merkitsemällä sopimuksen
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Ostosopimuksista vastaavat työntekijät
 
-Voit määrittää ensisijaisen vastuullisen työntekijän ja toissijaisen vastuullisen työntekijän ostosopimuksen luokittelussa. Nämä arvot periytyvät tuloksena olevasta ostosopimuksesta. Sinun ei tarvitse lisätä vastuullisia työntekijöitä ostosopimukseen, ja niitä voidaan muokata suoraan tapauskohtaisesti ostosopimuksen perusteella. Et voi määrittää toissijaista vastuutyöntekijää ilman ensisijaista vastuullista työntekijää, vaikka sinulla ei ole toissijaista vastuutyöntekijää. Et voi määrittää samaa työntekijää sekä ensisijaiseksi että toissijaiseksi vastuulliseksi työntekijäksi. 
+Voit määrittää ensisijaisen vastuullisen työntekijän ja toissijaisen vastuullisen työntekijän ostosopimuksen luokittelussa. Nämä arvot periytyvät tuloksena olevasta ostosopimuksesta. Sinun ei tarvitse lisätä vastuullisia työntekijöitä ostosopimukseen, ja niitä voidaan muokata suoraan tapauskohtaisesti ostosopimuksen perusteella. Et voi määrittää toissijaista vastuutyöntekijää ilman ensisijaista vastuullista työntekijää, vaikka sinulla ei ole toissijaista vastuutyöntekijää. Et voi määrittää samaa työntekijää sekä ensisijaiseksi että toissijaiseksi vastuulliseksi työntekijäksi.
 
+> [!IMPORTANT]
+> Ennen kuin käytät vastuullinen osapuoli -toimintoa, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+> 
+> - **Moduuli:** *Hankinnan tehtävät*
+> - **Ominaisuuden nimi:** *Ostosopimuksen vastuullinen osapuoli*
 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen rivi ostosopimuksessa velvoittaa ostamaan jotakin. Voit täyttää sitoumuksen käyttämällä useiden ostotilausten rivejä. On neljänlaisia sitoumuksia:
