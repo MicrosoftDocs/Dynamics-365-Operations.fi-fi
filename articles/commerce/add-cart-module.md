@@ -3,7 +3,7 @@ title: Ostoskorimoduuli
 description: Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686763"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761126"
 ---
 # <a name="cart-module"></a>Ostoskorimoduuli
 
@@ -77,8 +77,8 @@ Ostoskorimoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi sivun osa** -valintaikkunassa **Ostoskori**-moduuli.
-1. Kirjoita **Sivun osan nimi** -kohtaan **Ostoskorin osa** ja valitse sitten **OK**.
+1. Valitse **Uusi osa** -valintaikkunassa **Ostoskori**-moduuli.
+1. Kirjoita **Osan nimi** -kohtaan **Ostoskorin osa** ja valitse sitten **OK**.
 1. Valitse **Ostoskori**-paikka.
 1. Valitse oikealla olevassa ominaisuudet-ruudussa kynäsymboli, kirjoita otsikko tekstikenttään ja valitse sitten valintamerkkisymboli.
 1. Valitse kolme pistettä (**...**) **Ostoskori**-paikassa ja valitse sitten **Lisää moduuli**.
@@ -86,8 +86,8 @@ Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset omin
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan mallin nimi.
-1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää sivun osa**.
-1. Valitse **Valitse sivun osa** -valintaikkunassa **Ostoskorin osa** ja valitse sitten **OK**.
+1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse **Valitse osa** -valintaikkunassa **Ostoskorin osa** ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
 1. Valitse **Valitse malli** -valintaikkunassa malli, jonka loit aiemmin, lisää sivun nimi ja valitse sitten **OK**.

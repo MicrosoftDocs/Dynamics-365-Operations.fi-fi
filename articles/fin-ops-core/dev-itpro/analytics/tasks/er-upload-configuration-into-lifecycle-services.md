@@ -1,9 +1,9 @@
 ---
-title: ER Lataa kokoonpano Lifecycle Services -palveluun
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköisen raportoinnin (ER) konfiguraation ja ladata sen Microsoft Lifecycle Services -palveluun (LCS).
+title: Konfiguraation lataaminen Lifecycle Services -palveluun
+description: Tässä ohjeaiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli voi luoda uuden sähköisen raportoinnin konfiguraation ja ladata sen Microsoft Dynamics Lifecycle Services (LCS) -sovellukseen.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143280"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810688"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a>ER Lataa kokoonpano Lifecycle Services -palveluun
+# <a name="upload-a-configuration-into-lifecycle-services"></a>Konfiguraation lataaminen Lifecycle Services -palveluun
 
 [!include [banner](../../includes/banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköisen raportoinnin (ER) konfiguraation ja ladata sen Microsoft Lifecycle Services -palveluun (LCS).
+Tässä ohjeaiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli voi luoda uuden [sähköisen raportoinnin konfiguraation](../general-electronic-reporting.md#Configuration) ja ladata sen [projektitason resurssikirjastoon](../../lifecycle-services/asset-library.md) Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.
 
-Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. ja ladataan sen LCS-palveluun. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska kaikki yritykset jakavat ER-konfiguraatiot. Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Näiden vaiheiden suorittamiseen tarvitaan myös LCS:n käyttöoikeudet.
+Tässä esimerkissä luodaan konfiguraatio malliyritykselle nimeltä Litware, Inc. ja ladataan sen LCS-palveluun. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska kaikki yritykset jakavat sähköisen raportoinnin konfiguraatiot. Näitä vaiheita varten on ensin suoritettava kohdassa [Konfiguroinnin tarjoajien luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. LCS:n käyttöoikeus vaaditaan myös.
 
-1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-2. Valitse Litware, inc. ja määritä aktiiviseksi.
-3. Valitse Konfiguraatiot.
+1. Kirjaudu sovellukseen yhdellä seuraavista rooleista:
+
+    - Sähköisen raportoinnin kehittäjä
+    - Järjestelmänvalvoja
+
+2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+3. Valitse **Litware, Inc.** ja merkitse se **aktiiviseksi**.
+4. Valitse **Konfiguraatiot**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Varmista, että nykyinen Dynamics 365 Finance -käyttäjä on sellaisen LCS-projektin jäsen, joka sisältää sähköisen raportoinnin konfiguraatioiden tuomisessa käytettävän[resurssikirjaston](../../lifecycle-services/asset-library.md#asset-library-support).
+>
+> LCS-projektia ei voi käyttää sähköisen raportoinnin säilöstä, jos se on eri toimialueella kuin Financen käyttämä toimialue. Jos yrität tehdä niin, näkyviin tulee LCS-projektien tyhjä luettelo. Et voi tuoda sähköisen raportoinnin konfiguraatioita proektitason resurssikirjastosta LCS:ään. Jos haluat käyttää projektitason resurssikirjastoja sähköisen raportoinnin säilöstä, jota käytetään sähköisen raportoinnin konfiguraatioiden tuomiseen, kirjaudu sisään sen Finance-esiintymän vuokraajaan (toimialue) kuuluvan käyttäjän valtuustiedoilla, joka on valmisteltu.
 
 ## <a name="create-a-new-data-model-configuration"></a>Uuden tietomallin konfiguraation luominen
-1. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
-    * Luodaan konfiguraatio, joka sisältää tietomalliesimerkin sähköisiä asiakirjoja varten. Tämä tietomallin konfiguraatio ladataan LCS:ään myöhemmin.  
-2. Syötä Nimi-kenttään Mallikonfiguraation esimerkki.
-    * Mallikonfiguraation esimerkki  
-3. Syötä Kuvaus-kenttään Mallikonfiguraation esimerkki.
-    * Mallikonfiguraation esimerkki  
-4. Valitse Luo konfiguraatio.
-5. Valitse Mallin suunnittelu.
-6. Valitse Uusi.
-7. Syötä Nimi-kenttään Tulopaikka.
-    * Tulopaikka  
-8. ValitseLisää.
-9. Valitse Tallenna.
-10. Sulje sivu.
-11. Voit muuttaa tilaa valitsemalla Muuta.
-12. Valitse Valmis.
-13. Valitse OK.
 
-## <a name="register-a-new--repository"></a>Rekisteröi uusi säilö
-1. Sulje sivu.
-2. Valitse Säilöt.
-    * Tämän avulla voit avata Litware, Inc. -konfiguraatiolähteen säilöluettelon.  
-3. Avaa valintaikkuna valitsemalla Lisää.
-    * Näin voit lisätä uuden säilön.  
-4. Kirjoita Konfiguraatiosäilön tyyppi -kentän arvoksi LCS.
-5. Valitse Luo säilö.
-6. Anna tai valitse Projekti-kentässä arvo.
-    * Valitse haluamasi LCS-projekti. Sinulla on oltava käyttöoikeus projektiin.  
-7. Valitse OK.
-    * Luo uusi säilön merkintä.  
-8. Merkitse valittu rivi luettelossa.
-    * Valitse LCS-säilön tietue.  
-    * Huomaa, että rekisteröity säilö on nykyisen lähteen merkitsemä, eli ainoastaan kyseisen lähteen omistamia konfiguraatioita voidaan sijoittaa tähän säilöön ja sen mukaisesti ladata valittuun LCS-projektiin.  
-9. Valitse Avaa.
-    * Avaa säilö, jotta voit tarkastella ER-konfiguraatioiden luetteloa. Se on tyhjä, jos projektia ei ole vielä käytetty ER-konfiguraatioiden jakamiseen.  
-10. Sulje sivu.
+1. Siirry kohtaan **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraatiot**.
+2. Valitse **Konfiguraatiot**-sivulla **Luo konfiguraatio** ja avaa avattava valintaikkuna.
+
+    Tässä esimerkissä luodaan konfiguraatio, joka sisältää tietomalliesimerkin sähköisiä asiakirjoja varten. Tämä tietomallin konfiguraatio ladataan LCS:ään myöhemmin.
+
+3. Syötä **Nimi**-kenttään **Näytemallikonfiguraatio**.
+4. Syötä **Kuvaus**-kenttään **Näytemallikonfiguraatio**.
+5. Valitse **Luo konfiguraatio**.
+6. Valitse **Mallin suunnittelutoiminto**.
+7. Valitse **Uusi**.
+8. Kirjoita **Nimi**-kenttään **Aloituspiste**.
+9. Valitse **Lisää**.
+10. Valitse **Tallenna**.
 11. Sulje sivu.
+12. Valitse **Muutoksen tila**.
+13. Valitse **Valmis**.
+14. Valitse **OK**.
+15. Sulje sivu.
 
-## <a name="upload-configuration-into-lcs"></a>Lataa konfiguraatio LCS:ään
-1. Valitse Konfiguraatiot.
-2. Valitse puussa solmu Mallikonfiguraation esimerkki.
-    * Valitse luotu konfiguraatio, joka on jo valmis.  
+## <a name="register-a-new-repository"></a>Rekisteröi uusi säilö
+
+1. Siirry kohtaan **Organisaation hallinto \> Työtilat \> Sähköinen raportointi**.
+
+2. Valitse **Konfiguraation lähteet** -osassa **Litware, Inc.** -ruutu.
+
+3. Valitse **Litware, Inc.** -ruudusta **Säilöt**.
+
+    Nyt voit avata Litware, Inc. -konfiguraatiolähteen säilöluettelon.
+
+4. Avaa avattava valintaikkuna valitsemalla **Lisää**.
+
+    Nyt voit lisätä uuden säilön.
+
+5. Valitse **Konfiguraatiosäilön syöttö** -kentässä **LCS**.
+6. Valitse **Luo säilö**.
+7. Syötä arvo **Projekti**-kenttään tai valitse kentässä arvo.
+
+    Tässä esimerkissä valitaan haluttu LCS-projekti. Sinulla on oltava projektin [käyttöoikeus](#accessconditions).
+
+8. Valitse **OK**.
+
+    Luo uusi säilön merkintä.
+
+9. Merkitse valittu rivi luettelossa.
+
+    Valitse tässä esimerkissä **LCS**-säilötietue.
+
+    Huomaa, että rekisteröity säilö on merkitty nykyisellä palveluntarjoalla. Toisin sanoen vain kyseisen palveluntarjoajan omistamat konfiguraatiot voidaan sijoittaa tähän säilöön. Tämän vuoksi ne ladataan valittuun LCS-projektiin.
+
+10. Valitse **Avaa**.
+
+    Avaa säilö, jotta voit tarkastella sähköisen raportoinnin konfiguraatioiden luetteloa. Jos valittua projektia ei ole vielä käytetty sähköisen raportoinnin konfiguraatioiden jakamiseen, luettelo on tyhjä.
+
+11. Sulje sivu.
+12. Sulje sivu.
+
+## <a name="upload-a-configuration-into-lcs"></a>Lataa konfiguraatio LCS-järjestelmään
+
+1. Siirry kohtaan **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraatiot**.
+2. Valitse **Konfiguraatiot**-sivun konfiguraatiopuussa **Näytemallikonfiguraatio**.
+
+    Valitse luotu konfiguraatio, joka on jo valmis.
+
 3. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse kyseisen konfiguraation versio, joka "Valmis"-tilassa.  
-4. Voit muuttaa tilaa valitsemalla Muuta.
-5. Valitse Jaa.
-    * Konfiguraation tila muutetaan valmiista jaetuksi, kun se julkaistaan LCS:ssä.  
-6. Valitse OK.
-7. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse konfiguraation versio, jonka tila on "Jaettu".  
-    * Huomaa, että valitun version on tila on muuttunut valmiista jaetuksi.  
-8. Sulje sivu.
-9. Valitse Säilöt.
-    * Tämän avulla voit avata Litware, Inc. -konfiguraatiolähteen säilöluettelon.  
-10. Valitse Avaa.
-    * Valitse LCS-säilö ja avaa se.  
-    * Huomaa, että valittu konfiguraatio näytetään resurssina valitussa LCS-projektissa.  
-    * Avaa LCS käyttämällä https://lcs.dynamics.com. Avaa aiemmin säilön rekisteröintiin käytetty projekti ja avaa projektin "Omaisuuskirjasto" ja laajenna GER-konfiguraatio -omaisuustyypin sisältö – ladattu ER-konfiguraatio on käytettävissä täällä. Huomaa, että ladattu LCS-konfiguraatio voidaan tuoda toiseen esiintymään, jos tarjoajilla on käyttöoikeus tähän LCS-projektiin.  
 
+    Valitse tässä esimerkissä valitun konfiguraation versio, jonka tila on **Valmis**.
+
+4. Valitse **Muutoksen tila**.
+5. Valitse **Jaa**.
+
+    Konfiguraation tila muutetaan **Valmis**-tilasta **Jaettu**-tilaksi, kun konfiguraatio julkaistaan LCS:ssä.
+
+6. Valitse **OK**.
+7. Etsi haluamasi tietue luettelosta ja valitse se.
+
+    Valitse tässä esimerkissä konfiguraation versio, jonka tila on **Jaettu**.
+
+    Huomaa, että valitun version on tila on muutetaan **Valmis**-tilasta **Jaettu**-tilaan.
+
+8. Sulje sivu.
+9. Valitse **Säilöt**.
+
+    Nyt voit avata Litware, Inc. -konfiguraatiolähteen säilöluettelon.
+
+10. Valitse **Avaa**.
+
+    Valitse tässä esimerkissä **LCS**-säilötietue ja avaa se.«»
+
+    Huomaa, että valittu konfiguraatio näytetään resurssina valitussa LCS-projektissa.
+
+11. Avaa LCS siirtymällä osoitteeseen <https://lcs.dynamics.com>.
+12. Avaa projekti, jota käytettiin aiemmin säilön rekisteröinnissä.
+13. Avaa projektin resurssikirjasto.
+14. Valitse **GER-konfiguraatio**-resurssityyppi.
+
+    Ladattu sähköisen raportoinnin konfiguraatio näkyy luettelossa.
+
+    Huomaa, että ladattu LCS-konfiguraatio voidaan tuoda toiseen esiintymään, jos tarjoajilla on käyttöoikeus tähän LCS-projektiin.

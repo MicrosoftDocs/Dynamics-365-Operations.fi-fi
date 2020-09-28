@@ -1,12 +1,12 @@
 ---
-title: Modernin myyntipisteen (MPOS) asiakastilaukset
-description: Tässä ohjeaiheessa on tietoja asiakkaiden tilauksista Modern POS (MPOS) -laitteissa. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
+title: Myyntipisteen asiakastilaukset
+description: Tässä ohjeaiheessa on tietoja myyntipisteen asiakkaan työnkulusta. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 author: josaw1
 manager: AnnBe
-ms.date: 08/17/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,90 +18,154 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.dyn365.ops.version: Release 10.0.14
+ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
+ms.sourcegitcommit: 30e4dc0a45f7de5f0a7178b1e88f7c3d61a7395e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710256"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763698"
 ---
-# <a name="customer-orders-in-modern-pos-mpos"></a>Modernin myyntipisteen (MPOS) asiakastilaukset
+# <a name="customer-orders-in-point-of-sale-pos"></a>Myyntipisteen asiakastilaukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja asiakkaiden tilauksista Modern POS (MPOS) -laitteissa. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
+Tässä ohjeaiheessa on tietoja myyntipisteen asiakkaan työnkulun luomisesta ja hallinnoimisesta. Asiakastilauksia voi käyttää myynnin tallentamisessa silloin, kun ostajat haluavat noutaa tuotteet myöhemmin, noutaa ne eri sijainnista tai valita nimikkeiden toimituksen. 
 
 Monikanavaisessa kaupan maailmassa monet vähittäiskauppiaat tarjoavat asiakastilausten eli erikoistilausten mahdollisuuden täyttääkseen erilaisia eri tuote- ja palveluvaatimuksia. Seuraavassa on joitakin tyypillisiä skenaarioita:
 
 - Asiakas haluaa, että tuotteet toimitetaan tiettynä päivänä tiettyyn osoitteeseen.
 - Asiakas haluaa noutaa tuotteet myymälästä tai sijainnista, joka on eri kuin myymälä tai sijainti, josta asiakas osti nämä tuotteet.
-- Asiakas haluaa jonkun toisen noutavan ostamansa tuotteet.
+- Myymälässä oleva asiakas haluaa tilata tuotteet tänään ja noutaa ne samasta myymälästä myöhemmin.
 
-Vähittäiskauppiaat käyttävät asiakastilauksia myös pienentääkseen menetettyä myyntiä, jota varaston tyhjeneminen voi muuten aiheuttaa, koska kauppatavara voidaan toimittaa tai kerätä eri aikaan tai eri paikasta.
+Vähittäiskauppiaat voivat käyttää asiakastilauksia myös pienentääkseen menetettyä myyntiä, jota varaston tyhjeneminen voi muuten aiheuttaa, koska kauppatavara voidaan toimittaa tai kerätä eri aikaan tai eri paikasta.
 
 ## <a name="set-up-customer-orders"></a>Määritä asiakastilaukset
+Ennen kuin yrität käyttää asiakastilaustoimintoja myyntipisteessä, varmista, että kaikki pakolliset määritykset on tehty Commerce Headquarters -sovelluksessa.
 
-Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Commercen parametrit** -sivulla määrittääksesi, miten asiakkaiden tilaukset suoritetaan:
+### <a name="configure-modes-of-delivery"></a>Toimitustapojen määrittäminen
 
-- **Oletuskäsirahaprosentti** – määritä summa, joka asiakkaan on maksettava talletuksena ennen tilauksen vahvistamista. Oletuskäsirahaprosentti lasketaan prosenttiosuutena tilauksen arvosta. Oikeuksista riippuen myymälän johtaja saattaa pysytä ohittamaan summan käyttämällä asetusta **Talletuksen ohitus**.
+Jos haluat käyttää asiakastilauksia, sinun on määritettävä toimitustavat myymäläkanavan käyttöä varten. Sinun on määritettävä vähintään yksi toimitustapa, jota käytetään toimitettaessa tilausrivit myymälästä asiakkaalle. Sinun on määritettävä myös vähintään yksi noudon toimitustapa, jota käytetään, kun tilausrivit ovat noudettavissa myymälästä. Toimitustavat määritetään Commerce Headquarters -sovelluksen **Toimitustavat**-sivulla. Lisätietoja toimitustilan määrittämisestä Commerce-kanaville on kohdassa [Toimitustapojen määrittäminen](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+
+![Toimitustavat-sivu](media/customer-order-modes-of-delivery.png)
+
+
+### <a name="set-up-fulfillment-groups"></a>Täytäntöönpanoryhmien määrittäminen
+
+Jotkin myymälät tai varastosijainnit eivät ehkä pysty täyttämään asiakastilauksia. Määrittämällä täytäntöönpanoryhmät organisaatio voi määrittää myyntipisteessa asiakastilauksia luoville käyttäjille vaihtoehtoina näytettävät myymälät ja varastosijainnit. Täytäntöönpanoryhmät määritetään **Täytäntöönpanoryhmät**-sivulla. Organisaatiot voivat luoda tarvittavan määrän täytäntöönpanoryhmiä. Kun täytäntöönpanoryhmä on määritetty, se linkitetään myymälään käyttämällä toimintoruudun **Määritys**-välilehden **Myymälät**-sivua.
+
+Commercen versiossa 10.0.12 ja uudemmissa versioissa organisaatiot voivat määrittää, käytetäänkö täytäntöönpanoryhmissä määritettyä varastoa tai varaston ja myymälän yhdistelmää toimituksessa, noudossa tai sekä toimituksessa että noudossa. Näin myymälä voi käyttää niille käyttäjille näytettäviä varaston ja myymälän vaihtoehtoja, jotka luovat tilauksen noudolle tai toimitukselle. Jos haluat käyttää näitä määritysvaihtoehtoja, ota käyttöön **Mahdollisuus määrittää sijainniksi Toimitus tai Nouto on otettu käyttöön täytäntöönpanoryhmissä** -ominaisuus. Jos myymälässä ei ole täytäntöönpanoryhmään linkitettyä varastoa, se voidaan määrittää vain toimitussijainniksi. Sitä ei voi käyttää, kun noudon tilaukset on määritetty myyntipisteessä.
+
+![Täytäntöönpanoryhmät-sivu](media/customer-order-fulfillment-group.png)
+
+### <a name="configure-channel-settings"></a>Kanavan asetusten määrittäminen
+
+Jotkin myyntikanavan asetukset on tarkistettava, kun asiakastilauksia käsitellään myyntipisteessä. Nämä asetukset ovat Commerce Headquarters -sovelluksen **Myymälät**-sivulla.
+
+- **Varasto** – Tämä kenttä osoittaa varaston, jota käytetään myymälässä määritettyjen toimitusten täyttämisessä.
+- **Täytäntöönpanoryhmän määritys** – Valitse tämä painike (toimintoruudun **Määritys**-välilehdessä), jos haluat linkittää noutosijaintien tai toimitusten alkuperäisten sijaintien näyttövaihtoehtoihin viittaavat täytäntöönpanoryhmät, kun asiakastilaukset luodaan myyntipisteessä.
+- **Käytä kohteeseen perustuvaa veroa** – Tämä vaihtoehto osoittaa, käytetäänkö toimitusosoitetta sen veroryhmän määrittämisessä, joka kohdistetaan asiakkaan osoitteeseen toimitettaviin tilausriveihin.
+- **Käytä asiakkaaseen perustuvaa veroa** – Tämä vaihtoehto osoittaa, käytetäänkö asiakkaan toimitusosoitteelle määritettyä veroryhmää myyntipisteessä luoduissa asiakkaan kotiin toimitettavien asiakastilausten verotuksessa.
+
+![Myymälän kanavan asetukset Myymälät-sivulla](media/customer-order-all-stores.png)
+
+### <a name="set-up-customer-order-parameters"></a>Asiakastilausten parametrien määrittäminen
+
+Ennen kuin yrität luoda asiakastilauksia myyntipisteessä, määritä soveltuvat parametrit Commerce Headquarters -sovelluksessa. Nämä parametrit ovat **Asiakastilaukset**-välilehdessä **Kaupan parametrit** -sivulla.
+
+- **Oletustilaustyyppi** – Voit määrittää tilaustyypin, joka määritetään oletusarvoisesti myyntipisteessä luotuihin asiakastilauksiin. Nämä asiakastilaukset voivat olla myynti- tai tarjoustilauksia. Oletustilaustyypistä riippumatta käyttäjät voivat yhä luoda sekä myynti- että asiakastilauksia myyntipisteessä.
+- **Oletuskäsirahaprosentti** – Määritä se tilauksen kokonaissumman prosenttiosuus, joka asiakkaan on maksettava talletuksena ennen tilauksen vahvistamista. Myymälän myyjät voivat käyttöoikeuksista riippuen ohittaa summan käyttämällä myyntipisteen **Talletuksen ohitus** -toimintoa, jos tämä toiminto on määritetty tapahtumanäytön asetuksissa.
+- **Nouto-toimitustapa** – Määritä toimitustapa, jota käytetään myyntipisteessä noudettaviksi määritetyissä myyntitilausriveissä.
+- **Nouto liikkeestä -toimitustapa** – Määritä toimitustapa, jota käytetään nouto liikkeestä -tilausriveiksi määritetyissä myyntitilausriveissä, kun on luotu yhdistetty ostoskori ja ostoskorin riveistä osa noudetaan tai toimitetaan ja asiakas noutaa osan heti liikkeestä.
 - **Peruutusmaksuprosentti** – Jos asiakkaan tilauksen peruuttamisesta perittään maksu, määritä kyseisen maksun määrä.
-- **Peruutusmaksun koodi** – Jos asiakkaan tilauksen peruuttamisesta perittään maksu, kyseinen maksu näkyy myyntitilauksessa maksukoodina. Tämän parametrin avulla voit määrittää peruutusmaksun koodin.
-- **Toimitusmaksun koodi** – Vähittäiskauppiaat voivat veloittaa ylimääräisen lisämaksun tavaran lähettämisestä asiakkaalle. Tämän toimitusmaksu näkyy maksukoodina myyntitilauksessa. Tämän parametrin avulla voit yhdistää toimitusmaksun koodia toimitusmaksuihin asiakastilauksessa.
-- **Palauta toimitusmaksut** – Määritä, ovatko asiakastilaukseen liittyvät toimitusmaksut palautettavia.
-- **Enimmäissumma ilman hyväksyntää** – Jos kuljetusmaksut ovat palautettavia, määritä palautustilausten toimitusmaksujen palautusten enimmäismäärä. Jos tämä määrä ylittyy, toiminnon jatkaminen edellyttää esimiehen hyväksyntää. Sopeutuakseen seuraaviin skenaarioihin, toimitusmaksujen palautus voi ylittää alunperin maksetun summan:
+- **Peruutusmaksun koodi** – Määritä myyntireskontran kulukoodi, jota käytetään kohdistettaessa peruutusmaksu peruutettuihin asiakastilauksiin myyntipisteen kautta. Kulukoodi määrittää peruutusmaksun taloushallinnon kirjauslogiikan.
+- **Toimitusmaksun koodi** – Jos **Käytä automaattisia lisäveloituksia** -asetukseksi on määritetty **Kyllä**, tämän parametrin asetuksella ei ole vaikutusta. Jos tämän asetuksen arvoksi on määritetty **Ei**, käyttäjiä pyydetään syöttämään toimituskulu manuaalisesti, kun he luovat asiakastilauksia myyntipisteessä. Tämän parametrin avulla voit määrittää tilausten myyntireskontran kulukoodin. Sitä käytetään, kun käyttäjä syöttää toimitusmaksun. Kulukoodi määrittää toimitusmaksun taloushallinnon kirjauslogiikan.
+- **Käytä automaattisia lisäveloituksia** – Määritä asetukseksi **Kyllä**, jos haluat käyttää järjestelmän laskemiasi automaattisia veloituksia, kun asiakastilaukset luodaan myyntipisteessä. Näitä automaattisia veloituksia voidaan käyttää toimituskulujen tai muiden tilaukseen tai nimikkeeseen liittyvien kulujen maksamisessa. Lisätietoja automaattisten lisäveloitusten määrittämisestä ja käyttämisestä on kohdassa [Monikanavaiset edistyneet automaattiset veloitukset](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
 
-    - Kulut otetaan käyttöön myyntitilauksen otsikon tasolla ja kun tuotelinjan jokin määrä palautetaan, suurinta tuotteille ja määrälle sallittua toimitusmaksun palautusta ei voi määrittää tavalla, joka toimii kaikille asiakkaille.
-    - Kuljetusmaksut syntyvät toimituksen kaikissa esiintymissä. Jos asiakas palauttaa tuotteet useita kertoja ja jälleenmyyjän käytäntö määrittää, että vähittäismyyjä vasta toimituskustannuksista, palautettavat kuljetusmaksut ovat enemmän kuin todelliset kuljetusmaksut.
-    
+![Asiakastilaukset-välilehti kaupan parametrien sivulla](media/customer-order-parameters.png)
 
-## <a name="disable-option-to-pay-later"></a>Myöhemmin tapahtuvan maksamisen poistaminen käytöstä
+### <a name="update-transaction-screen-layouts-in-pos"></a>Tapahtumanäytön asetteluiden päivittäminen myyntipisteessä
 
-Commercen versiosta 10.0.12 alkaen kauppiaat voivat poistaa mahdollisuuden maksaa myöhemmin, kun asiakastilaus luodaan myyntipisteessä. Voit poistaa vaihtoehdon käytöstä avaamalla sen kanavan **toimintoprofiilin**, jossa myöhemmin maksamista ei sallita, ja valitsemalla sitten **Muokkaa**. Valitse **Yleiset**-välilehdessä avattavat **Täyttäminen edellyttää maksua**. Jos myöhemmin maksamista ei sallita myyntipisteessä, valitse ensin **Edellyttää korttia** ja sitten **Tallenna**. Synkronoi muutos kanavaan suorittamalla **1070**-jakeluaikataulu. 
+Varmista, että myyntipiste [näyttöasettelu](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) on määritetty tukemaan asiakastilausten luomista ja hallintaa ja että kaikki vaaditut myyntipisteen toiminnot on määritetty. Seuraavaksi esitellään joitakin myyntipisteen toimintoja, joiden tulee tukea asiakastilausten luomista ja hallintaa oikealla tavalla:
+- **Lähetä kaikki tuotteet** – Tätä toimintoa käytetään määritettäessä, että kaikki tapahtuman ostoskorin rivit lähetetään kohteeseen.
+- **Lähetä valitut tuotteet** – Tätä toimintoa käytetään määritettäessä, että valitut tapahtuman ostoskorin rivit lähetetään kohteeseen.
+- **Nouda kaikki tuotteet** – Tätä toimintoa käytetään määritettäessä, että kaikki tapahtuman ostoskorin rivit noudetaan valitusta myymäläsijainnista.
+- **Nouda valitut tuotteet** – Tätä toimintoa käytetään määritettäessä, että valitut tapahtuman ostoskorin rivit noudetaan valitusta myymäläsijainnista.
+- **Asiakas kuljettaa kaikki tuotteet** – Tätä toimintoa käytetään määritettäessä, että asiakas kuljettaa kaikki tapahtuman ostoskorin rivit. Jos tätä toimintoa käytetään myyntipisteessä, asiakastilaus muunnetaan itsepalvelutukkutapahtumaksi.
+- **Asiakas kuljettaa valitut tuotteet** – Tätä toimintoa käytetään määritettäessä, että asiakas kuljettaa valitut tapahtuman ostoskorin rivit ostotapahtuman yhteydessä. Tämä toiminto on hyödyllinen vain [hybriditilausten](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders) skenaariossa.
+- **Jatka tilausta** – Tätä toimintoa käytetään haettaessa ja noudettaessa asiakastilauksia niin, että myyntipisteen käyttäjät voivat muokata, peruuttaa ja suorittaa täytäntöön liittyviä toimintoja tarvittaessa.
+- **Muuta toimitustapaa** – Tämän toiminnon avulla voi muuttaa toimitusta varten määritettyjen rivien toimitustavan nopeasti. Käyttäjän ei tarvitse palata Lähetä kaikki tuotteet- tai Lähetä valitut tuotteet -toimintoon.
+- **Talletuksen ohitus** – Tämän toiminnon avulla voi muuttaa asiakkaan valitusta asiakastilauksesta maksaman talletussumman.
 
-## <a name="transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien työnkulku
+![Myyntipisteen tapahtumanäytön toiminnot](media/customer-order-screen-layout.png)
 
-### <a name="create-a-customer-order-in-modern-pos"></a>Asiakastilauksen luonti Modern POS:ssa
+## <a name="working-with-customer-orders-in-pos"></a>Asiakastilausten käsitteleminen myyntipisteessä
 
-1. Lisää asiakas tapahtumaan.
+### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Asiakastilauksen luominen tuotteille, jotka lähetetään asiakkaalle
+
+1. Lisää myyntipisteen tapahtumanäytössä tapahtumalle asiakas.
 2. Lisää tuotteet ostoskoriin.
-3. Valitse **Luo asiakastilaus** ja valitse sitten tilauksen tyyppi. Tilauksen tyyppi voi olla joko **Asiakastilaus** tai **Tarjous**.
-4. Valitse **Lähetä valitut** tai **Lähetä kaikki** toimittaaksesi tuotteet asiakastilin osoitteeseen. Määritä pyydetty lähetyspäivä ja kuljetusmaksut.
-5. Valitse **Kerää valitut** tai **Kerää kaikki** valitaksesi tuotteet, jotka kerätään nykyisestä myymälästä tai eri myymälästä tiettynä päivänä.
-6. Veloita talletussumma, jos seitä vaaditaan.
+3. Valitse **Lähetä valitut** tai **Lähetä kaikki**, jos haluat lähettää tuotteet asiakastilin osoitteeseen.
+4. Valitse vaihtoehto asiakastilauksen luomista varten.
+5. Vahvista tai muuta lähetyssijainti, vahvista tai muuta lähetysosoite ja valitse lähetystapa.
+6. Anna asiakkaan toivoma tilauksen lähetyspäivä.
+7. Käytä erääntyneiden laskettujen summien maksamisessa maksutoimintoja tai muuta erääntyviä summia **Talletuksen ohitus** -toiminnon avulla ja kohdista maksu.
+8. Jos tilauksen kokonaissummaa ei ole maksettu, anna erääntyvää saldoa varten luottokortin tiedot. Niitä käytetään tilauksen laskuttamisen yhteydessä.
+
+### <a name="create-a-customer-order-for-products-that-the-customer-will-pick-up"></a>Asiakastilauksen luominen tuotteille, jotka asiakas noutaa
+
+1. Lisää myyntipisteen tapahtumanäytössä tapahtumalle asiakas.
+2. Lisää tuotteet ostoskoriin.
+3. Valitse **Nouda valitut** tai **Nouda kaikki**, jos haluat käynnistää tilauksen noudon määrityksen.
+4. Valitse myymäläsijainti, josta asiakas noutaa valitut tuotteet.
+5. Valitse noutopäivämäärä.
+6. Käytä erääntyneiden laskettujen summien maksamisessa maksutoimintoja tai muuta erääntyviä summia **Talletuksen ohitus** -toiminnon avulla ja kohdista maksu.
+7. Jos tilauksen kokonaissummaa ei ole maksettu, määritä, maksaako asiakas myöhemmin (noudettaessa) vai tallennetaanko luottokortin tiedot nyt myöhempää noudon yhteydessä tapahtuvaa käyttöä varten.
 
 ### <a name="edit-an-existing-customer-order"></a>Olemassa olevan asiakkaan tilauksen muokkaaminen
 
-1. Valitse kotisivulla **Etsi tilaus**.
-2. Etsi ja valitse muokattava tilaus. Valitse sivun alareunassa **Muokkaa**.
+Vähittäismyyntitilaukset, jotka luodaan online- tai myymäläkanavassa, voidaan peruuttaa myyntipisteessä tarvittaessa. Tämän jälkeen niitä voi muokata.
 
-### <a name="pick-up-an-order"></a>Kerää tilaus
+> [!IMPORTANT]
+> Puhelinkeskuskanavassa luotuja tilauksia ei voi muokata myyntipisteessä, jos [Ota käyttöön tilausten viimeistely](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) -asetus on otettu käyttöön puhelinkeskuskanavassa. Voit varmistaa oikean maksuprosessin puhelinkeskuskanavan tilauksille, joissa on käytössä Ota käyttöön tilausten viimeistely -toiminto, muokkaamalla niitä puhelinkeskussovelluksessa Commerce Headquarters -sovelluksessa.
 
-1. Valitse kotisivulla **Etsi tilaus**.
-2. Valitse kerättävä tilaus. Valitse sivun alareunassa **Keräys ja pakkaus**.
-3. Valitse **Kerää**.
+Commercen versiossa 10.0.13 ja uudemmissa versioissa käyttäjät voivat muokata tuettuja asiakastilauksia myyntipisteessä vain, jos tilaukset ovat kokonaan avoimia. Jos tilauksen rivejä on jo käsitelty täyttämistä (esimerkiksi keräily ja pakkaus) varten, tilausta ei voi enää muokata myyntipisteessä.
 
-### <a name="cancel-an-order"></a>Tilauksen peruuttaminen
+> [!NOTE]
+> Commercen versiossa 10.0.14 [julkiseen esiversioon](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) vapautettu toiminto antaa myyntipisteen käyttäjille mahdollisuuden muokata asiakastilauksia myyntipisteessä, vaikka osa tilauksesta olisi jo toimitettu. Kokonaan laskutettuja tilauksia ei kuitenkaan vielä voi muokata myyntipisteessä. Jos haluat testata tätä esikatselutoimintoa ja antaa palautetta, ota käyttöön **(Esiversio) Ota käyttöön osittain täytettyjen tilausten muokkaaminen myyntipisteessä** -toiminto käyttöön **Ominaisuuksien hallinta** -työtilassa. Puhelinkeskuskanavan asiakastilauksia, joissa on käytössä Ota käyttöön tilausten viimeistely -toiminto, ei voi muokata, vaikka tämä toiminto olisi käytössä.
 
-1. Valitse kotisivulla **Etsi tilaus**.
-2. Valitse peruutettava tilaus. Valitse sivun alareunassa **Peruuta**.
+1. Valitse **Peruuta tilaus**.
+2. Syötä suodattimet ja etsi tilaus **Hae**-kohdan avulla. Valitse sitten **Käytä**.
+3. Valitse tilaus tulosluettelosta ja valitse sitten **Muokkaa**. Jos **Muokkaa**-painike ei ole käytettävissä, tilaus on tilassa, jossa sitä ei voi muokata.
+4. Tee asiakastilaukseen tarvittavat muutokset tapahtuman ostoskorissa. Jotkin muutokset voivat olla kiellettyjä muokkauksen aikana.
+5. Viimeistele muokkausprosessi valitsemalla maksutapahtuma.
+6. Jos haluat poistua muokkausprosessista tallentamatta muutoksia, voit käyttää **Mitätöi tapahtuma** -toimintoa.
 
-### <a name="create-a-return-order"></a>Palautustilauksen luominen
 
-1. Valitse kotisivulla **Etsi tilaus**.
-2. Valitse palautettava tilaus, valitse tilauksen lasku ja sitten tuotelinja, johon kauppatavara palautetaan.
-3. Valitse sivun alareunassa **Palautustilaus**.
+
+### <a name="cancel-a-customer-order"></a>Asiakastilauksen peruuttaminen
+
+1. Valitse **Peruuta tilaus**.
+2. Syötä suodattimet ja etsi tilaus **Hae**-kohdan avulla. Valitse sitten **Käytä**.
+3. Valitse tilaus tulosluettelosta ja valitse sitten **Peruuta**. Jos **Peruuta**-painike ei ole käytettävissä, tilaus on tilassa, jossa sitä ei voi enää peruuttaa.
+4. Jos peruutusmaksut on määritetty, vahvista ne. Voit oikaista peruutusmaksuja ennen niiden vahvistamista tarpeen mukaan. 
+5. Viimeistele peruutusprosessi tapahtuman ostoskorissa valitsemalla maksutoiminto. Jos maksetut talletukset ylittävät peruutusmaksun, saatetaan joutua maksamaan hyvitysmaksuja.
+6. Jos haluat poistua peruutusprosessista tallentamatta muutoksia, voit käyttää **Mitätöi tapahtuma** -toimintoa.
+
+## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Asiakastilauksen lähetyksen tai noudon viimeisteleminen myyntipisteessä
+
+Kun tilaus on luotu, asiakas noutaa nimikkeet myymäläsijainnista tai ne lähetetään tilauksen määrityksestä riippuen. Lisätietoja prosessista on [myymälän tilauksen täyttämisen](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview) dokumentaatiossa.
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien asynkroninen työnkulku
 
-Asiakastilauksia voi luoda myyntipisteen (POS) asiakasohjelmassa joko synkronoidussa tai asynkronisessa tilassa.
+Asiakastilauksia voi luoda myyntipisteessä joko synkronoidussa tai asynkronisessa tilassa. Jos asiakastilausten luomisen yhteydessä myyntipisteessä on suorituskykyonhgelmia tai käyttäjän viivettä, voit ottaa käyttöön asynkronisen tilauksen luomisen.
 
 ### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Ota käyttöön asiakastilausten luonti asynkronisessa tilassa
 
-1. Valitse **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **POS-profiili** &gt; **Toimintoprofiilit**.
+1. Valitse Commerce Headquarters -sovelluksen **Toimintoprofiilit**-sivulla määritettävää myymälää vastaava toimintoprofiili.
 2. **Yleiset**-pikavälilehdessä määritä **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvoksi **Kyllä**.
 
-Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, asiakastilaukset luodaan aina asynkronisessa tilassa, vaikka Retail Transaction Service (RTS) -palvelu on käytettävissä. Jos määrität tämän asetuksen arvoksi **Ei**, asiakkaan tilaukset luodaan aina synkronoidussa tilassa RTS:n avulla. Kun asiakastilaukset on luotu asynkronisessa tilassa, ne ovat vedetään ja lisätään Commerceen Pull (P) -töitä käyttämällä. Vastaavat myyntitilaukset luodaan, kun **Synkronoi tilaukset** suoritetaan joko manuaalisesti tai eräprosessina.
+Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, asiakastilaukset luodaan aina asynkronisessa tilassa, vaikka Retail Transaction Service (RTS) -palvelu on käytettävissä. Jos määrität tämän asetuksen arvoksi **Ei**, asiakkaan tilaukset luodaan aina synkronoidussa tilassa RTS:n avulla. Kun asiakastilaukset luodaan asynkronisessa tilassa, ne noudetaan ja luodaan vähittäismyyntitapahtumina Commerce Headquarters -sovelluksessa kaupan noutotöinä. Vähittäismyyntitapahtumille luodaan vastaavat myyntitilaukset, kun **Synkronoi tilaukset** suoritetaan joko manuaalisesti tai eräprosessina.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

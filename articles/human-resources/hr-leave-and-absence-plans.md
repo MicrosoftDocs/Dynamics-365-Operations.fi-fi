@@ -3,7 +3,7 @@ title: Loma- ja poissaolosuunnitelman luominen
 description: Luo lomasuunnitelmat erilaisille lomatyypeille Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428706"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796494"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Loma- ja poissaolosuunnitelman luominen
 
@@ -43,7 +43,15 @@ Voit myös luoda sijaintiin perustuvia lomaetuja, kuten vain johdon etuuden tunn
 
 2. Kirjoita **Tiedot**-kohtaan suunnitelman **Nimi**, **Alkamispäivämäärä**, **Kuvaus** ja **Loman tyyppi**.
 
-Jos toiminto **Määrittää useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle**, lomatyypit määritetään **Kertymäaikataulussa** **Yksityiskohtien**sijaan. Voit määrittää kullekin jaksotusaikataulutaulukon tietueelle lomatyypin.
+Jos toiminto **Määrittää useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle**, lomatyypit määritetään **Kertymäaikataulussa** **Yksityiskohtien**sijaan. Voit määrittää kullekin jaksotusaikataulutaulukon tietueelle lomatyypin. Kun tämä toiminto on käytössä, sinun on käytettävä uusia tietoentiteettejä integroinnissa ja muissa tilanteissa, joissa tarvitaan entiteettejä. 
+
+Uudet entiteetit ovat seuraavat:
+
+- Loma- ja poissaolopankin tapahtuma V2
+- Loman ja poissaolon rekisteröinti V2
+- Loma- ja poissaolosuunnitelman taso V2
+- Loma- ja poissaolosuunnitelma V2
+- Lomapoissaolopyyntö V2
 
  > [!IMPORTANT]
    > Kun olet ottanut tämän ominaisuuden käyttöön, sitä ei voi poistaa käytöstä.

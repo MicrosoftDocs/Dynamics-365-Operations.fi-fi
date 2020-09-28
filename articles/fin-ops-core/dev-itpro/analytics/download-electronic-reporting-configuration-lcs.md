@@ -3,7 +3,7 @@ title: Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelus
 description: Tässä aiheessa neuvotaan, miten sähköisen raportoinnin (ER) konfiguraatiot ladataan Microsoft Dynamics Lifecycle Services -palvelusta (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934651"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810616"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa neuvotaan, miten sähköisen raportoinnin (ER) konfiguraatiot ladataan Microsoft Dynamics Lifecycle Services -palvelusta (LCS).
-
-Tässä oppaassa kuvataan uusimpien sähköisten raportoinnin (ER) konfiguraatioiden lataaminen Microsoft Dynamics Lifecycle Services -palvelusta (LCS).
+Tässä aiheessa kerrotaan, miten [sähköisen raportoinnin konfiguraatioiden](general-electronic-reporting.md#Configuration) uusin versio ladataan [jaetusta resurssikirjastosta](../lifecycle-services/asset-library.md) Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.
 
 1. Kirjaudu sovellukseen yhdellä seuraavista rooleista:
 
@@ -41,36 +39,41 @@ Tässä oppaassa kuvataan uusimpien sähköisten raportoinnin (ER) konfiguraatio
 
 2. Valitse **Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköinen raportointi**.
 3. Valitse **Konfiguraation lähteet** -osassa **Microsoft**-ruutu.
-4. Napsauta **Microsoft**-ruudussa **Säilöt**-linkkiä.
+4. Valitse **Microsoft**-ruudusta **Säilöt**.
 
-    [![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft-ruutu lokalisointien konfiguraatioiden sivulla](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. Valitse **Konfiguraatiosäilöt**-sivun ruudukossa oleva säilö, jonka tyyppi on **LCS**. Jos säilöä ei ole ruudukossa, noudata seuraavia ohjeita:
 
-    1. Lisää uusi säilö napsauttamalla **Lisää**-linkkiä.
+    1. Valitse säilö valitsemalla **Lisää**.
     2. Valitse säilön tyypiksi **LCS**.
     3. Valitse **Luo säilö**.
-    4. Noudata luvananto-ohjeita tarvittaessa.
+    4. Jos järjestelmä pyytää lupaa, noudata näyttöön tulevia ohjeita.
     5. Kirjoita säilön nimi ja kuvaus.
-    6. Valitse **OK**, niin vahvistat uuden säilön luonnin.
+    6. Valitse **OK**, jos haluat vahvistaa uuden säilön luonnin.
     7. Valitse ruudukossa uusi **LCS**-tyypin säilö.
 
 6. Valitsemalla **Avaa** voit tarkastella valitun säilön ER-konfiguraatioita.
 
-    [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Konfiguraatiosäilöjen sivu](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 
-7. Valitse vasemman ruudun konfiguraatioiden puurakenteessa tarvitsemasi ER-konfiguraatio.
+    > [!TIP]
+    > Jos et voi käyttää LCS-säilöä ja ladata konfiguraatioita LCS:n jaetusta resurssikirjastosta, voit ladata ne sen sijaan [yleisestä säilöstä](er-download-configurations-global-repo.md).
+
+7. Valitse vasemman ruudun konfiguraatioiden puurakenteessa vaadittu sähköisen raportoinnin konfiguraatio.
 8. Valitse **Versiot**-pikavälilehdellä valitun ER-konfiguraation tarvittava versio.
-9. Valitse **Tuo** ladataksesi valitun version LCS-palvelusta nykyiseen esiintymään.
+9. Valitse **Tuo** ja lataa valittu versio LCS-palvelusta nykyiseen esiintymään.
 
     > [!NOTE]
     > **Tuo**-painike ei ole käytettävissä ER-määritysversioille, jotka on jo ladattu nykyiseen esiintymään.
 
-    [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Konfiguraatiosäilön sivu](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
-> ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Kyseiset ongelmat on ratkaistava, ennen kuin voit käyttää tuotua konfiguraatioversiota. Lisätietoja saat tähän aiheeseen liittyvistä artikkeleista.
+> ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Kyseiset ongelmat on ratkaistava, ennen kuin voit käyttää tuotua konfiguraatioversiota. Lisätietoja saat tähän aiheeseen liittyvistä aiheista.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+
+[Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)

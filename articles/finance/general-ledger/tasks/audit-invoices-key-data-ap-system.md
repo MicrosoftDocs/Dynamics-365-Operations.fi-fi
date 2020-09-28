@@ -1,6 +1,6 @@
 ---
-title: Laskujen ja avaintietojen tarkistaminen ostoreskontrajärjestelmässä
-description: Kun vastaanotat toimittajalta ostotilaukseen perustuvan laskun toimitetuista tavaroista tai palveluista, liiketoimintaprosessit voivat edellyttää, että tavarat tai palvelut on vastaanotettu ennen laskun hyväkymistä maksettavaksi.
+title: Laskujen ja avaintietojen tarkistaminen ostoreskontrassa
+description: Tässä aiheessa näytetään, miten ostoreskontran laskut ja keskeiset tiedot voidaan tarkistaa.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e1af0dac107be6009eb3ca576c49ac5abbd9848
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139937"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761546"
 ---
-# <a name="audit-invoices-and-key-data-in-ap-system"></a>Laskujen ja avaintietojen tarkistaminen ostoreskontrajärjestelmässä
+# <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Laskujen ja avaintietojen tarkistaminen ostoreskontrassa
 
 [!include [banner](../../includes/banner.md)]
 
 Kun vastaanotat toimittajalta ostotilaukseen perustuvan laskun toimitetuista tavaroista tai palveluista, liiketoimintaprosessit voivat edellyttää, että tavarat tai palvelut on vastaanotettu ennen laskun hyväkymistä maksettavaksi. Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna. 
 
-Varmista Ostoreskontran parametrit -sivulla, että Ota käyttöön laskujen täsmäytyksen vahvistus -asetus on valittu, Kirjaa lasku, jossa on ristiriitoja -kentän arvoksi on määritetty Edellytä hyväksyntä ja Rivien vastaavuuskäytäntö -kentän arvoksi on määritetty Kolmisuuntainen vastaavuus.
+Varmista **Ostoreskontran parametrit** -sivulla, että Ota käyttöön laskujen täsmäytyksen vahvistus -asetus on valittu, **Kirjaa lasku, jossa on ristiriitoja** -kentän arvoksi on määritetty **Edellytä hyväksyntä** ja **Rivien vastaavuuskäytäntö** -kentän arvoksi on määritetty **Kolmisuuntainen vastaavuus**.
 
 Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli.
 

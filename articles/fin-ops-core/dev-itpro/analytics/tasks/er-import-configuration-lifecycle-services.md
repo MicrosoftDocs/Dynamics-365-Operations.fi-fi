@@ -1,14 +1,14 @@
 ---
-title: ER Tuo kokoonpano Lifecycle Services -palvelusta
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi tuoda uuden sähköisen raportoinnin (ER) konfiguraation version Microsoft Lifecycle Services (LCS) -palvelusta.
+title: Konfiguraation tuominen Lifecycle Services -palvelusta
+description: Tässä ohjeaiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli voi tuoda uuden sähköisen raportoinnin konfiguraation version Microsoft Dynamics Lifecycle Services (LCS) -sovelluksesta.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142383"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810640"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a>ER Tuo kokoonpano Lifecycle Services -palvelusta
+# <a name="import-a-configuration-from-lifecycle-services"></a>Konfiguraation tuominen Lifecycle Services -palvelusta
 
 [!include [banner](../../includes/banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi tuoda uuden sähköisen raportoinnin (ER) konfiguraation version Microsoft Lifecycle Services (LCS) -palvelusta.
+Tässä ohjeaiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli voi tuoda uuden [sähköisen raportoinnin konfiguraation](../general-electronic-reporting.md#Configuration) version ja ladata sen [projektitason resurssikirjastosta](../../lifecycle-services/asset-library.md) Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.
 
-Tässä esimerkissä valitaan sopiva ER-konfiguraatio ja tuodaan se malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska kaikki yritykset jakavat ER-konfiguraatiot. Lataa ER-kokoonpano Lifecycle Services -palveluun -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Näiden vaiheiden suorittamiseen tarvitaan myös LCS:n käyttöoikeudet.
+Tässä esimerkissä valitaan sopiva ER-konfiguraatio ja tuodaan se malliyritykselle nimeltä Litware, Inc. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska kaikki yritykset jakavat sähköisen raportoinnin konfiguraatiot. Jos haluat tehdä nämä vaiheet, tee ensin vaiheet kohdassa [Konfiguraation lataaminen Lifecycle Services -palveluun](er-upload-configuration-into-lifecycle-services.md). LCS:n käyttöoikeus vaaditaan myös.
 
-1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-2. Valitse Konfiguraatiot.
+1. Kirjaudu sovellukseen yhdellä seuraavista rooleista:
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a>Poista tietomallin konfiguraation jaettu versio
-1. Valitse puussa solmu Mallikonfiguraation esimerkki.
-    * Ensimmäinen mallikonfiguraation esimerkkiversio on luotu ja julkaistu LCS:ään "Lataa ER-kokoonpano Lifecycle Services -palveluun" -menettelyn aikana. Tässä menettelyssä poistetaan kyseinen ER-konfiguraation versio. Tämä tietomallin konfiguraation esimerkkiversio tuodaan LCS:stä myöhemmin.  
+    - Sähköisen raportoinnin kehittäjä
+    - Järjestelmänvalvoja
+
+2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+3. Valitse **Konfiguraatiot**.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Varmista, että nykyinen Dynamics 365 Finance -käyttäjä on sellaisen LCS-projektin jäsen, joka sisältää sen resurssikirjaston, jonka [käyttöoikeuden](../../lifecycle-services/asset-library.md#asset-library-support) käyttäjä haluaa sähköisen raportoinnin konfiguraatioiden tuomista varten.
+>
+> LCS-projektia ei voi käyttää sähköisen raportoinnin säilöstä, jos se on eri toimialueella kuin Financen käyttämä toimialue. Jos yrität tehdä niin, näkyviin tulee LCS-projektien tyhjä luettelo. Et voi tuoda sähköisen raportoinnin konfiguraatioita proektitason resurssikirjastosta LCS:ään. Jos haluat käyttää projektitason resurssikirjastoja sähköisen raportoinnin säilöstä, jota käytetään sähköisen raportoinnin konfiguraatioiden tuomiseen, kirjaudu sisään sen Finance-esiintymän vuokraajaan (toimialue) kuuluvan käyttäjän valtuustiedoilla, joka on valmisteltu.
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a>Poista tietomallin konfiguraation jaettu versio
+
+1. Valitse **Konfiguraatiot**-sivun konfiguraatiopuussa **Näytemallikonfiguraatio**.
+
+    Ensimmäinen näytetietomallin konfiguraatio luotiin ja julkaistiin LCS:ään, kun kohdan [Konfiguraation lataaminen Lifecycle Services -palveluun](er-upload-configuration-into-lifecycle-services.md) vaiheet suoritettiin. Tässä menettelyssä poistetaan kyseinen ER-konfiguraation versio. Tämän jälkeen voit tuoda version LCS:stä myöhemmin tähän aiheeseen.
+
 2. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse tämän konfiguraation versio, jonka tila on "Jaettu". Tämä tila ilmaisee, että konfiguraatio on julkaistu LCS:ään.  
-3. Voit muuttaa tilaa valitsemalla Muuta.
-4. Napsauta Lopeta.
-    * Muuta valitun version tila jaetusta lopetetuksi, jotta se on poistettavissa.  
-5. Valitse OK.
+
+    Valitse tässä esimerkissä konfiguraation versio, jonka tila on **Jaettu**. Tämä tila ilmaisee, että konfiguraatio on julkaistu LCS:ään.
+
+3. Valitse **Muutoksen tila**.
+4. Valitse **Keskeytä**.
+
+    Jos muutat valitun version tilan **Jaettu**-tilasta **Keskeytetty**-tilaksi, versio voidaan poistaa.
+
+5. Valitse **OK**.
 6. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse tämän konfiguraation versio, jonka tila on "Lopetettu".  
-7. Valitse Poista.
-8. Valitse Kyllä.
-    * Huomaa, että vain valitun tietomallin konfiguraation luonnosversio 2 on käytettävissä.  
+
+    Valitse tässä esimerkissä konfiguraation versio, jonka tila on **Keskeytetty**.
+
+7. Valitse **Poista**.
+8. Valitse **Kyllä**.
+
+    Huomaa, että vain valitun tietomallin konfiguraation luonnosversio 2 on nyt käytettävissä.
+
 9. Sulje sivu.
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Tuo tietomallin konfiguraation jaettu versio LCS:stä
-1. Merkitse valittu rivi luettelossa.
-    * Avaa Litware, Inc:n säilöluettelo. -konfiguraation lähteestä.  
-2. Valitse Säilöt.
-3. Valitse Avaa.
-    * Valitse LCS-säilö ja avaa se.  
-4. Merkitse valittu rivi luettelossa.
-    * Valitse versioluettelosta ensimmäinen mallikonfiguraation esimerkkiversio.  
-5. Valitse Tuo.
-6. Valitse Kyllä.
-    * Vahvista valitun version tuonti LCS:stä.  
-    * Huomaa, että valitun version tuonnin onnistuminen ilmaistaan tiedotuksella (lomakkeen yllä).  
-7. Sulje sivu.
-8. Sulje sivu.
-9. Valitse Konfiguraatiot.
-10. Valitse puussa solmu Mallikonfiguraation esimerkki.
-11. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Valitse tämän konfiguraation versio, jonka tila on "Jaettu".  
-    * Huomaa, että valitun tietomallin konfiguraation jaettu versio 1 on nyt myös käytettävissä.  
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a>Tuo tietomallin konfiguraation jaettu versio LCS:stä
 
+1. Siirry kohtaan **Organisaation hallinto \> Työtilat \> Sähköinen raportointi**.
+
+2. Valitse **Konfiguraation lähteet** -osassa **Litware, Inc.** -ruutu.
+
+3. Valitse **Litware, Inc.** -ruudusta **Säilöt**.
+
+    Nyt voit avata Litware, Inc. -konfiguraatiolähteen säilöluettelon.
+
+4. Valitse **Avaa**.
+
+    Valitse tässä esimerkissä **LCS**-säilötietue ja avaa se.«» Sinulla on oltava [käyttöoikeus](#accessconditions) LCS-projektiin ja resurssikirjastoon, jota valittu sähköisen raportoinnin säilö käyttää.
+
+5. Merkitse valittu rivi luettelossa.
+
+    Valitse tässä esimerkissä versioluettelosta ensimmäinen **näytemallikonfiguraatio**.
+
+6. Valitse **Tuo**.
+7. Vahvista valitun version tuonti LCS:stä valitsemalla **Kyllä**.
+
+    Tietosanoma vahvistaa, että valittu versio on tuotu.
+
+8. Sulje sivu.
+9. Sulje sivu.
+10. Valitse **Konfiguraatiot**.
+11. Valitse puussa **Näytemallikonfiguraatio**.
+12. Etsi haluamasi tietue luettelosta ja valitse se.
+
+    Valitse tässä esimerkissä konfiguraation versio, jonka tila on **Jaettu**.
+
+    Huomaa, että valitun tietomallin konfiguraation jaettu versio 1 on nyt myös käytettävissä.

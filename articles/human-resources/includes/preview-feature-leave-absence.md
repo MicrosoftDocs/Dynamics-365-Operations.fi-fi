@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Nämä toiminnot ovat käytettävissä yleisessä esikatselussa missä tahansa Sandbox- tai kokeiluversioympäristössä. Ne eivät ole käytettävissä tuotantoympäristöissä. Sisältö ja toiminnot voivat muuttua. Lisätietoja esiversiotoiminnoista on kohdassa [Ominaisuuksien hallinta](../hr-admin-manage-features.md).
+> Kaikki nämä toiminnot tai jotkin niistä ovat käytettävissä julkisena esiversiona missä tahansa eristys- tai kokeiluversioympäristössä. Ne eivät ole käytettävissä tuotantoympäristöissä. Sisältö ja toiminnot voivat muuttua. Lisätietoja esiversiotoiminnoista on kohdassa [Ominaisuuksien hallinta](../hr-admin-manage-features.md).

@@ -3,7 +3,7 @@ title: Alatunnistemoduuli
 description: Tässä ohjeaiheessa on tietoja alatunnistemoduuleista ja niiden muokkaamisesta Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6dd9f214fbeeeaabadac4853916363c20a3288ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686715"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761198"
 ---
 # <a name="footer-module"></a>Alatunnistemoduuli  
 
@@ -51,7 +51,7 @@ Useimpien säilöjen tapaan alatunnistemoduuli tukee otsikon ja leveyden ominais
 ## <a name="create-a-footer-module"></a>Alatunnistemoduulin lisääminen
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi sivun osa** -valintaikkunassa **Kontti**-moduuli. Syötä sivun osan nimi ja valitse **OK**.
+1. Valitse **Uusi osa** -valintaikkunassa **Kontti**-moduuli. Syötä osan nimi ja valitse **OK**.
 1. Valitse kolme pistettä (**...**) **Oletuskontti**-paikassa ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Alatunnisteluokka**-moduuli ja valitse sitten **OK**.
 1. Valitse kolme pistettä (**...**) **Alatunnisteluokka**-paikassa ja valitse sitten **Lisää moduuli**.
@@ -68,7 +68,7 @@ Voit varmistaa, että ylätunniste näkyy jokaisella sivulla, noudattamalla näi
 1. Lisää **Alatunniste**-moduulin **Otsikko**-paikkaan alatunnistemoduulissa luomasi alatunnisteosa.
 1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen.
 
-Kun lisäät sivumalleihin sivun osan, voit varmistaa, että alatunniste hahmonnetaan jokaiselle sivulle.
+Kun lisäät sivumalleihin osan, voit varmistaa, että alatunniste hahmonnetaan jokaiselle sivulle.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

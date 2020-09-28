@@ -3,7 +3,7 @@ title: Loma- ja poissaolopyyntöjen hallinta Teamsissa
 description: Tässä ohjeaiheessa käsitellään poissaolopyyntöjä Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b3daa76385518ad4c7150fa93ce33be0351bfd57
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428825"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766757"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Loma- ja poissaolopyyntöjen hallinta Teamsissa
 
@@ -82,11 +82,11 @@ Botilta voi pyytää seuraavia:
 
    ![Human Resources Teamsin lomasovelluksen lomapyyntö](./media/hr-teams-leave-app-bot-request.png)
  
-Kun lomapyyntö on käynnistetty, päiviä voi muuttaa kortissa. Pyyntöön voi lisätä lisätietoja valitsemalla **Muokkaa tietoja**.
+Kun olet jättänyt lomapyynnön, voit muuttaa päiviä kortin sisällä.
 
 ![Human Resources Teamsin lomasovelluksen muokkauspyyntö](./media/hr-teams-leave-app-bot-edit.png)
  
-Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi kirjoittamalla **Lähetä**. Jos haluat palata pyyntöön, voit kirjoittaa **Tallenna luonnoksena**.
+Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi valitsemalla **Lähetä**. Voit palata pyyntöön, jos valitset **Tallenna luonnoksena**.
 
 ![Human Resources Teamsin lomasovelluksen pyynnön lähetys](./media/hr-teams-leave-app-bot-submit.png)
 
@@ -130,15 +130,43 @@ Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi kirjoittamalla **Läh
 
    ![Human Resources Teamsin lomasovelluksen luonnoksen muokkaus](./media/hr-teams-leave-app-drafts-edit.png)
    
+### <a name="teams-notifications"></a>Teams-ilmoitukset
+
+Kun lomapyyntöjen lähetysten hyväksyjänä olet sinä tai vaihtoehtoisesti työntekijä, saat ilmoituksen Teamsin Human Resources -sovellukseen. Voit tarkastella ilmoitusta valitsemalla sen. Ilmoitukset näkyvät myös **Keskustelu**-alueella.
+
+Jos olet hyväksyjä, voit valita ilmoituksessa **Hyväksy** tai **Hylkää**. Voit myös määrittää valinnaisen sanoman.
+
+![Human Resourcesin Teams-sovelluksen lomapyynnön ilmoitus](./media/hr-teams-leave-app-notification.png)
+
+## <a name="view-your-teams-leave-calendar"></a>Ryhmän lomakalenterin tarkasteleminen
+
+Jos olet esimies, jolla on suoria alaisia, voit tarkastella ryhmän hyväksyttyä ja hyväksyntää odottavia poissaoloja.
+
+1. Valitse Teamsin Human Resources -sovelluksessa **Poissaolo**.
+
+2. Valitse **Ryhmän kalenteri**.
+
+   ![Human Resourcesin Teams-sovelluksen tarkasteleminen](./media/hr-teams-leave-app-view-calendar.png)
+
+Kalenterissa näkyvät suorien alaisten hyväksytyt ja hyväksyntää odottavat poissaolot.
+
+![Human Resourcesin Teams-sovelluksen poissaolokalenteri](./media/hr-teams-leave-app-calendar.png)
+
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 
-Microsoft Teamsin Dynamics 365 Human Resources -botin avulla käyttäjän tekstinsyöttö analysoidaan, jotta taustalla oleva kysely tai tarkoitus saataisiin selville. Käyttäjän teksti, kuten Hae tili Contoso, reititetään yhteen Microsoftin kognitiiviseen palveluun, jonka nimi on Language Understanding Intelligent Service (LUIS). Lisätietoja LUIS-palvelusta on  [täällä](https://www.luis.ai/). LUIS-palvelu tulkitsee tai selvittää käyttäjän syötteen tarkoituksen (tässä tapauksessa tarkoituksena on etsiä tietoja) ja kohde-entiteetin (tässä tapauksessa tarkoitettu entiteetti on Contoso-niminen tili). Nämä tiedot välitetään sitten Microsoftin [Azure-bottikehykseen](https://azure.microsoft.com/services/bot-service/) , joka käyttää Dynamics 365 Human Resourcesin tietoja ja noutaa käyttäjän kyselyn haluamat tiedot. 
+### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoftin Language Understanding Intelligent Service (LUIS)
+
+Microsoft Teamsin Dynamics 365 Human Resources -botin avulla käyttäjän tekstinsyöttö analysoidaan, jotta taustalla oleva kysely tai tarkoitus saataisiin selville. Käyttäjän teksti, kuten Hae tili Contoso, reititetään yhteen Microsoftin kognitiiviseen palveluun, jonka nimi on Language Understanding Intelligent Service (LUIS). Lisätietoja LUIS-palvelusta on  [täällä](https://www.luis.ai/). LUIS-palvelu tulkitsee tai selvittää käyttäjän syötteen tarkoituksen (tässä tapauksessa tarkoituksena on etsiä tietoja) ja kohde-entiteetin (tässä tapauksessa tarkoitettu entiteetti on Contoso-niminen tili). Nämä tiedot välitetään sitten Microsoftin  [Azure-bottikehykseen](https://azure.microsoft.com/services/bot-service/), joka käyttää Dynamics 365 Human Resourcesin tietoja ja noutaa käyttäjän kyselyn haluamat tiedot. 
 
 Asentamalla botin ja sallimalla sen käytön hyväksyt sen, että LUIS-palvelu ja Azure-bottikehys käsittelevät syötteen varsinaisen tarkoituksen, mikä parantaa käyttäjän keskustelukokemusta. LUIS-palvelun ja Azure-bottikehyksen vaatimustenmukaisuustasot voivat vaihdella Dynamics 365 Human Resourcesiin verrattuna. Vaikka LUIS-palvelu voi käyttää vain käyttäjäkyselyitä eikä sitä ole suunniteltu muodostamaan yhteyttä käyttäjän Dynamics 365 Human Resources -tietoihin tai -tiliin, Dynamics 365 Human Resources -botin käyttäjä voi vapaaehtoisesti tehdä kyselyn, joka sisältää asiakastietoja, henkilökohtaisia tietoja tai muita vastaavia tietoja ja kyseinen kysely voi tulla lähetetyksi LUIS-palveluun ja Azure-bottikehykseen. 
 
 Käyttäjän kyselyjen ja viestien sisältöä säilytetään LUIS-järjestelmässä enintään 30 päivää. Nämä tiedot salataan eikä niitä käytetä koulutuksen tai palvelun parantamiseen. Lisätietoja kognitiivisista palveluista on  [täällä](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-Microsoft Teamsin sovellusten järjestelmänvalvojan asetuksia hallitaan [Microsoft Teams -hallintakeskuksessa](https://admin.teams.microsoft.com/). 
+Microsoft Teamsin sovellusten järjestelmänvalvojan asetuksia hallitaan [Microsoft Teams -hallintakeskuksessa](https://admin.teams.microsoft.com/).
+
+### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azuren tapahtumaruudukko ja Microsoft Teams
+
+Kun Dynamics 365 Human Resources -sovelluksen ilmoitusominaisuus on käytössä Teamsissa, tietyt asiakastiedot siirtyvät sen maantieellisen alueen ulkopuolelle, jossa vuokraajan Human Resources -palvelua käytetään. Dynamics 365 Human Resources lähettää työntekijän lomapyynnön ja työnkulun tehtävän tiedot Microsoft Azuren tapahtumaruudukkoon ja Microsoft Teamsille. Näitä tietoja voidaan tallentaa enintään 24 tunnin ajan. Tiedot käsitellä Yhdysvalloissa ja ne salataan siirron ja tallennuksen aikana. Microsoft tai sen alihankkijat eivät käytä tietoja koulutuksessa tai palvelun parantamisessa.
 
 ## <a name="see-also"></a>Lisätietoja
 

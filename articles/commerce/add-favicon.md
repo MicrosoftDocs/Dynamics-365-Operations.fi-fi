@@ -3,7 +3,7 @@ title: Favicon-kuvakkeen lisääminen
 description: Tässä ohjeaiheessa kerrotaan, kuinka favicon-kuvake lisätään sivustoon.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686787"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761150"
 ---
 # <a name="add-a-favicon"></a>Favicon-kuvakkeen lisääminen
 
@@ -58,30 +58,30 @@ Jos haluat luoda favicon-tiedostolle HTML-koodia, käytä seuraavaa HTML-merkkij
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Luo sivufragmentti, joka sisältää metatunnisteen omalle faviconillesi
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Luo osa, joka sisältää metatunnisteen omalle faviconillesi
 
-Seuraa näitä ohjeita luodaksesi sivufragmentin, joka sisältää metatunnisteen omalle faviconillesi.
+Seuraa näitä ohjeita luodaksesi osan, joka sisältää metatunnisteen omalle faviconillesi.
 
 1. Siirry kohtaan **Osat** ja valitse **Uusi**.
-1. Valitse **Uusi sivun osa** -valintaikkunan **Metatunnisteet** moduulina, johon sivun osa perustuu.
-1. Kirjoita sivufragmentin nimi ja valitse **OK**.
+1. Valitse **Uusi osa** -valintaikkunan **Metatunnisteet** moduulina, johon osa perustuu.
+1. Kirjoita osan nimi ja valitse **OK**.
 1. Valitse fragmentti hierarkiapuussa **Oletusmetatunnisteet**-alikohde.
 1. Valitse oikeanpuoleisessa ruudussa **Metatunnisteet**-kohdasta **Lisää** ja kirjoita sitten aiemmin luomasi favicon-HTML-merkkijono. 
-1. Valitse **Lopeta muokkaus** ja valitse sitten **Julkaise** julkaistaksesi sivufragmentin.
+1. Valitse **Lopeta muokkaus** ja valitse sitten **Julkaise** julkaistaksesi osan.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Lisää metatunnistesivufragmentti sivujesi HTML-pääosaan
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Lisää metatunnisteen osa sivujesi HTML-pääosaan
 
-Seuraa näitä ohjeita lisätäksesi metatunnistesivufragmentti sivujesi HTML-**pää**-osaan.
+Seuraa näitä ohjeita lisätäksesi metatunnisteen osa sivujesi HTML-**pää**-osaan.
 
 1. Siirry **Mallit**-kohtaan ja avaa niiden sivujen malli, joihin haluat lisätä faviconisi ja valitse sitten **Muokkaa**.
-1. Valitse mallihierarkiapuussa **HTML-pää**-säilön oikealla puolella oleva ellipsi- ( **...**)-painike ja valitse sitten **Lisää sivufragmentti**.
-1. Valitse **Uusi sivun osa** -valintaikkunassa metatunnistesivukatkelma, jonka loit aiemmin ja valitse sitten **OK**.
+1. Valitse mallihierarkiapuussa **HTML-pääsäilön** oikealla puolella oleva ellipsi- ( **...**)-painike ja valitse sitten **Lisää osa**.
+1. Valitse **Uusi osa** -valintaikkunassa metatunnistesivukatkelma, jonka loit aiemmin ja valitse sitten **OK**.
 1. Valitse **Lopeta muokkaus** ja valitse sitten **Julkaise** julkaistaksesi mallin.
 
 > [!NOTE]
-> Jos sivustossa käytetään useampaa kuin yhtä mallia, sinun on lisättävä metatunnistesivufragmentti kaikkiin.
+> Jos sivustossa käytetään useampaa kuin yhtä mallia, sinun on lisättävä metatunnisteen osa kaikkiin.
 
-Kun esikatselet sivuja, jotka perustuvat malliin, johon lisäsit metatunnistesivufragmentin, sinun pitäisi nyt nähdä favicon selaimen välilehdessä.
+Kun esikatselet sivuja, jotka perustuvat malliin, johon lisäsit metatunnisteen osan, sinun pitäisi nyt nähdä favicon selaimen välilehdessä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

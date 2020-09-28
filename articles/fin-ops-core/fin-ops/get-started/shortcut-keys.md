@@ -1,6 +1,6 @@
 ---
 title: Pikanäppäimet
-description: Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti.
+description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet Finance and Operations -sovelluksia.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811552"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761618"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
 [!include [banner](../includes/banner.md)]
 
-Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti.
+Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti Finance and Operations -sovelluksissa.
 
 > [!NOTE]
 > Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
@@ -236,6 +236,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirrä hakutuloksissa riviä ylös/alas                                                                                        | Ylänuoli/alanuoli            |
 | Siirrä hakutuloksissa sivua ylös/alas                                                                                       | Page Up / Page Down              |
 | Siirry haun ylä-/alareunaan                                                                                    | Home / End                       |
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)

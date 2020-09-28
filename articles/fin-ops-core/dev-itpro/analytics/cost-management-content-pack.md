@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771514"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759253"
 ---
 # <a name="cost-management-power-bi-content"></a>Kustannushallinnan Power BI -sisältöpaketti
 
@@ -193,10 +193,10 @@ Seuraavassa taulukossa on Power BI -sisällön tärkeimmät lasketut mitat.
 | Loppusaldon määrä                | Loppusaldon määrä = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Nettomuutos                         | Nettomuutos = SUM(\[AMOUNT\]) |
 | Nettomuutoksen määrä                    | Nettomuutoksen määrä = SUM(\[QTY\]) |
-| Varaston kiertonopeus summan mukaan | Varaston kiertonopeus summan mukaan = if(OR(\[Varaston keskimäärinen saldo\] \< = 0, \[Varaston myydyt tai kulutetut ongelmat\] \> = 0), 0, ABS(\[Varaston myydyt tai kulutetut ongelmat\])/\[Varaston keskimääräinen saldo\]) |
+| Varaston kiertonopeus summan mukaan | Varaston kiertonopeus summan mukaan = if(OR(\[Varaston keskimäärinen saldo\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Varaston myydyt tai kulutetut ongelmat\])/\[Varaston keskimääräinen saldo\]) |
 | Varaston keskimääräinen saldo          | Varaston keskimäärinen saldo = ((\[Loppusaldo\] +  \[Alkusaldo\]) / 2) |
 | Varastopäiviä käytettävissä             | Päivän käsillä oleva varasto = 365 / CostObjectStatementEntries\[Varaston kiertonopeus summan mukaan\] |
-| Varaston tarkkuus                 | Varaston tarkkuus summan mukaan = IF(\[Loppusaldo\] \<= 0, IF(OR(\[Varaston laskettu määrä\] \<\> 0, \[Loppusaldo\] \< 0), 0, 1), MAX(0, (\[Loppusaldo\] - ABS(\[Varaston laskettu määrä\]))/\[Loppusaldo\])) |
+| Varaston tarkkuus                 | Varaston tarkkuus määrän mukaan = IF (\[Loppusaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[loppusaldo\] \< 0), 0,1), MAX(0, (\[loppu saldo\] - ABS (\[Varaston laskettu summa\]))/\[Loppusaldo\])) |
 
 Seuraavia avaindimensioita käytetään suodattimina koostemittojen osittamisessa. Tällä tavoin saavutetaan suurempi rakeisuus ja saadaan tarkempia analyysitietoja.
 

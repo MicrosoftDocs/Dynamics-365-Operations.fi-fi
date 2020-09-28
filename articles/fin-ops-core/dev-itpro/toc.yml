@@ -14,12 +14,12 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
+                - name: Platform update -päivitykset 10.0.14 (marraskuu 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platform update -päivitykset 10.0.13 (lokakuu 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platform update -päivitykset 10.0.12 (elokuu 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Platform update -päivitykset 10.0.11 (heinäkuu 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: X++-malliversiointi Azure Pipelinesissa
                   href: dev-tools/pipeline-model-version.md
+                - name: Resurssien lataaminen palvelusta Azure Pipelinesin avulla
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Resurssien lataaminen palveluun Azure Pipelinesin avulla
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Resurssien käyttöönotto Azure Pipelinesin avulla
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Lifecycle Services (LCS) -yhteyden luominen Azure Pipelinesiin
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Kuljetuskaluston hallinnan esimerkkisovellus
               items:
                 - name: Kuljetuskaluston hallinnan esimerkkisovelluksen kattava skenaario

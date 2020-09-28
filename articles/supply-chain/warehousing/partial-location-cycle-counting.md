@@ -3,7 +3,7 @@ title: Sijainnin osittainen inventointi
 description: Inventointisuunnitelmat ohjaavat varsinaista inventointia. Voit pyytää vain tiettyjen tuotteiden tai tuotevarianttien inventointia sen sijaan, että toimipaikan koko käytettävissä oleva varasto inventoitaisiin.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215674"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760004"
 ---
 # <a name="partial-location-cycle-counting"></a>Sijainnin osittainen inventointi
 
@@ -45,7 +45,7 @@ Jos liität inventointisuunnitelmat työmalleihin **Työrivin tauot** -asetuksel
 
 Ennen osittaisen inventointityön käsittelyä mobiililaitteen valikosta on valittava ainakin **Näytä nimiketunnus** inventointiasetusten osana. Varastotyöntekijää pyydetään kirjaamaan vain inventointiriveihin liittyvät inventointitiedot (nimiketunnukset ja tuotedimensiot). Muu käytettävissä oleva varasto ohitetaan tässä inventointiprosessissa. 
 
-Osittaisessa inventointiprosessissa sijainnin **Edellinen inventointi** -asetuksen päivämäärää ja kellonaikaa ei päivitetä,
+Osittaisessa inventointiprosessissa **edellisen inventoinnin** päivämäärää/aikaa ei päivitetä sijainnille, vaikka kaikki tietyssä sijainnissa olevat nimikkeet inventoidaan. Osittaisessa inventoinnissa ei oteta huomioon **Inventoinnin välissä olevat päivät** -arvoa **Inventointisuunnitelmat**-sivulla. Osittainan inventointi ei tue samanaikaista useiden nimikkeiden inventointia samassa sijainnissa. Osittainen inventointitoiminto voi aiheuttaa nimikkeen inventoinnin suorittamisen useita kertoja samassa sijainnissa, jos **Prosessin inventointisuunnitelma** suoritetaan. Voit välttää tämän määrittämällä suodattimet **Valitse sijainnit** -kentässä.
 
 ## <a name="example"></a>Esimerkki
 Tässä esimerkissä vain nimiketunnus A0001 on inventoitava varastossa 61.

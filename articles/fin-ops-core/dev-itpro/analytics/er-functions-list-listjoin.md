@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7f78b687865e63e658c1c1c4f148b50595bf063
-ms.sourcegitcommit: 54bdcf8e9b6d1b1aae2a244f7a82754879d12053
+ms.openlocfilehash: 035bf720a892e987ff9fc073ab8ed6f6cc6ea18e
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "3740660"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745102"
 ---
-# <a name=""></a><a name="LISTJOIN">LISTJOIN ER-funktio</a>
+# <a name="listjoin-er-function"></a>LISTJOIN ER-funktio
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,11 +73,11 @@ Syötä sitten `Container`-tyypin **Tietue 2**:n tietolähde. Tämä tietolähde
 
 Tässä tapauksessa lauseke `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` palauttaa uuden luettelon, joka sisältää kaksi tietuetta.
 
-![ER-mallimäärityksen suunnittelun sivu](./media/er-functions-list-listjoin-image2.gif)
+![Sähköisen raportoinnin mallivastaavuusmäärityksen suunnittelun sivu ja kaksi tietuetta](./media/er-functions-list-listjoin-image2.gif)
 
 Tämän luettelon rakenne koostuu `Real`-tyypistä, joka on yksittäisessä **Summa**-kentässä, koska tämä kenttä on ainoa kenttä, joka esitetään kutsutun funktion jokaisessa argumentissa.
 
-![ER-mallimäärityksen suunnittelun sivu](./media/er-functions-list-listjoin-image3.gif)
+![Sähköisen raportoinnin malliyhdistämismäärityksen suunnittelun sivun summakenttä](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

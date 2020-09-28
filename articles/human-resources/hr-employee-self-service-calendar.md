@@ -3,7 +3,7 @@ title: Ryhmän kalenterin luominen
 description: Tarkastele ja luo ryhmän kalentereita Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712205"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796466"
 ---
 # <a name="view-team-and-company-calendars"></a>Ryhmä- ja yrityskalenterien tarkasteleminen
 
@@ -50,6 +50,22 @@ Henkilöstöhallinnan roolien henkilöt voivat tarkastella yrityksen kalentereit
 2. Valitse **Loma- ja poissaolokalenteri**.
 
 Henkilöstöhallinnon roolit voivat myös käyttää yrityksen kalenteria **Loma- ja poissaolopyynnöistä**, **Hyväksytyistä poissaoloista** ja **Poissaolopyynnöistä**. 
+
+[!include [banner](includes/preview-feature.md)]
+
+Kalenterit sisältävät nyt lisäsuodattimia ja -asetuksia. Kaikkiin kalentereihin sisältyvät seuraavat näkymävaihtoehdot:
+
+- Hyväksytyt pyynnöt
+- Odottavat pyynnöt
+- Työntekijät, joilla on lomapyyntöjä
+- Työntekijät, joilla ei ole lomapyyntöjä
+- Työntekijöiden syntymäpäivät
+- Poissaolopyynnöt 
+- Virkavapaapyynnöt
+
+Loma- ja poissaoloparametrien kalenterimääritykset määrittävät käytettävissä olevat näkymäasetukset.
+
+Voit myös suodattaa kalentereita esimiehen tai osaston mukaan. Ensisijainen toimen määritys määrittää näytettävät työntekijät, kun nämä suodattimet on määritetty. 
 
 Lisätietoja kalenteriasetuksista on ohjeaiheessa [Kalenteriparametrien määrittäminen](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

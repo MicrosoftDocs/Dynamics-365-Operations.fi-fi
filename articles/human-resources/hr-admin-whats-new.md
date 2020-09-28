@@ -1,9 +1,9 @@
 ---
 title: Human Resourcesin uudet ja muuttuneet ominaisuudet
-description: Tarjoamme joka viikko uuden Microsoft Dynamics 365 Human Resources -julkaisun. Artikkeleissa luetellaan kunkin viikon muutokset.
+description: Tarjoamme joka viikko uuden Microsoft Dynamics 365 Human Resources -julkaisun. Aiheissa luetellaan kunkin viikon muutokset.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,29 +18,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34e80ace6a0676e5702f633554a5f241cc8b00a7
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f814395405003464e9f101fb0f46b64e64971b68
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712167"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760298"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
 
-Tarjoamme kahden viikon välein uuden Microsoft Dynamics 365 Human Resources -julkaisun. Tämän osan artikkeleissa eritellään kunkin julkaisun tuomat muutokset.
+Tarjoamme kahden viikon välein uuden Microsoft Dynamics 365 Human Resources -julkaisun. Aiheissa luetellaan kunkin julkaisun muutokset.
 
-Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuksista tai päivitysprosessista:
+>[!NOTE]
+>Lomien vuoksi vuoden 2020 marraskuun ja joulukuun julkaisuaikataulu on seuraava:
+>
+>- Marraskuun julkaisu: 2.11.–13.11.
+>- Joulukuun julkaisu: 30.11.–11.12.
+> 
+>Kahden viikon julkaisuväli jatkuu tavalliseen tapaan 11.1.2021.
+
+Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuksista tai päivitysprosessista: 
 
 - [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
 - [Päivitysprosessi](hr-admin-setup-update-process.md)
 
-- [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+- [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
 ## <a name="human-resources-weekly-releases"></a>Viikoittaiset Human Resources -julkaisut
 
 Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua joka toinen viikko ilmestyvässä Human Resources -julkaisussa on.
 
+[3. syyskuuta 2020](hr-whats-new-2020-09-03.md)</br>
 [20. elokuuta 2020](hr-whats-new-2020-08-20.md)</br>
 [6. elokuuta 2020](hr-whats-new-2020-08-06.md)</br>
 [23. heinäkuuta 2020](hr-whats-new-2020-07-23.md)</br>
