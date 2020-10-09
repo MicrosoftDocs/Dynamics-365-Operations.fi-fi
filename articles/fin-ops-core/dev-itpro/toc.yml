@@ -86,9 +86,11 @@
               href: data-entities/integration-overview.md
             - name: Prioriteettipohjainen rajoittaminen
               hreF: data-entities/priority-based-throttling.md
+            - name: Prioriteettipohjaisen rajoittamisen usein kysytyt kysymykset
+              href: data-entities/throttling-faq.md
             - name: Tietojen integroinnin ohjelmointirajapinnat
               items:
-                - name: Tietojen hallintapaketin REST API
+                - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
                   href: data-entities/data-management-api.md
                 - name: Palvelun päätepisteet
                   items:
@@ -150,10 +152,12 @@
                                   href: data-entities/dual-write/requirements-and-prerequisites.md
                                 - name: Ympäristöjen linkittäminen kaksoiskirjoituksen ohjatun toiminnon avulla
                                   href: data-entities/dual-write/link-your-environment.md
-                                - name: Ota käyttöön kaksoiskirjoituksen entiteettien yhdistämismääritys
+                                - name: Kaksoiskirjoituksen entiteettien yhdistämismäärityksen ottaminen käyttöön
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Valuuttatietotyyppien siirto kaksoiskirjoitusta varten
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Myyntitilauksen tilakenttien määrityksen ottaminen käyttöön
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Kaksoiskirjoituksen hallinta
                           items:
                             - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Paikallinen edustaja
                   items:
-                    - name: AD FS Office 365 -yhteensopivuus
+                    - name: AD FS Microsoft 365 -yhteensopivuus
                       href: deployment/onprem-adfscompatibility.md
                     - name: Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,9 +631,7 @@
                 - name: Kehitystyökalujen opetusohjelma
                   href: dev-tools/introduction-visual-studio.md
                 - name: Sovelluksen tarkistustyökalu
-                  items:
-                    - name: 'BaseX:n asentaminen sovelluksen tarkistustyökalua varten'
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Sovellusten hallinta
                   href: dev-tools/application-explorer.md
                 - name: Projektien muodostaminen ja virheenkorjaus
@@ -1368,6 +1370,24 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: ValueMetadata-tyyppi
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Prosessien automaatiokehys
+          items:
+            - name: Prosessien automaatiokehyksen kehittäminen
+              href: process-automation/process-automation-framework.md
+            - name: Tyypin rekisteröinti
+              href: process-automation/type-registration.md
+            - name: Sarjan rekisteröinti
+              href: process-automation/series-registration.md
+            - name: Prosessin parametrit
+              href: process-automation/process-parameters.md
+            - name: Käyttäjän määritettävissä olevat kyselyt
+              href: process-automation/user-queries.md
+            - name: Prosessin suorittaminen
+              href: process-automation/run-process.md
+            - name: Lokitulokset ja sanomat
+              href: process-automation/log-results.md
+            - name: Käyttöliittymän mukauttaminen
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Regression Suite Automation Tool – yleiskatsaus
@@ -1395,7 +1415,7 @@
             - name: Kehittäminen ja vapauttaminen
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Väliaikainen tallennus ja julkaiseminen
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Metodologioiden lisääminen
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Liiketoimintaprosessien mallintajakirjastojen määrittäminen

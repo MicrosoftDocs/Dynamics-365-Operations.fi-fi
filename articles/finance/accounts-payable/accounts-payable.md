@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b663f63552f9de4dbafc0cb71b4381db6d8dc99a
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772234"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888153"
 ---
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
@@ -129,7 +129,7 @@ Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com
 
 [Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [taloushallinnon Microsoft Dynamics 365 Finance -blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) esitetään ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
-[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
+[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365 -sovelluksen uutuuksista ja suosituista aiheista.
 
 #### <a name="community-blogs"></a>Yhteisöblogit
 

@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 16. syyskuuta 2020
+          href: hr-whats-new-2020-09-16.md
         - name: 3. syyskuuta 2020
           href: hr-whats-new-2020-09-03.md
         - name: 20. elokuuta 2020
@@ -201,7 +203,7 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: Mukautettujen kenttien luominen ja käsitteleminen
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: PowerApps-sovellusten upottaminen
+            - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Tietojen etsiminen hakujen avulla
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
