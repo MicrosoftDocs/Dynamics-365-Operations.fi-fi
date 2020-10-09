@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mukautettujen kenttien luominen ja käsitteleminen
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft Power Appsin upottaminen
+                - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tietojen etsiminen hakujen avulla
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1655,11 +1655,13 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Hankinnan työnkulku
               href: procurement/procurement-sourcing-workflows.md
+            - name: Hankinnan työnkulkujen vianmääritys
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Hankintaluettelot
               items:
                 - name: Hankintaluettelojen yleiskatsaus
                   href: procurement/procurement-catalogs.md
-                - name: Luo tuotteiden hankintaluettelo
+                - name: Tuotteiden hankintaluettelon luominen
                   href: procurement/tasks/create-procurement-catalog.md
                 - name: Määritä hankintaluokkahierarkia
                   href: procurement/tasks/set-up-procurement-category-hierarchy.md
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Ostotilauksen tuotteiden vastaanoton kirjaaminen
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Ostotilauksiin liittyvien ongelmien vianmääritys
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Ostotilauksen luonti
               items:
                 - name: Ostotilausten manuaalinen luonti
@@ -1721,10 +1725,12 @@
               items:
                 - name: Ostosopimukset
                   href: procurement/purchase-agreements.md
-                - name: Luo ostosopimus
+                - name: Ostosopimuksen luominen
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Toimittajan ostohyvitykset
                   href: procurement/vendor-rebates.md
+                - name: 'Hintoihin, alennuksiin, sopimuksiin ja ostohyvityksiin liittyvien ongelmien vianmääritys'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Ostokäytännöt
               items:
                 - name: Ostokäytäntöjen yleiskatsaus
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Toimittajan laskujen yleiskatsaus
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tuotteiden vastaanottoihin ja laskutukseen liittyvien ongelmien vianmääritys
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Toimittajien hallinta ja toimittajayhteistyö
               items:
                 - name: Toimittajayhteistyön määrittäminen ja hallinta
@@ -1761,10 +1769,12 @@
                   href: procurement/vendor-collaboration-work-external-vendors.md
                 - name: Toimittajayhteistyö asiakkaiden kanssa
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
-                - name: Toimittajan tuoteluetteloiden tuonti
+                - name: Toimittajan tuoteluetteloiden tuominen
                   href: procurement/vendor-catalogs-import.md
                 - name: Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen
                   href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Ostojen cXML-parannukset
+                  href: procurement/purchasing-cxml-enhancements.md
                 - name: Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Toimittajayhteistyön mobiilityötila
@@ -2259,8 +2269,10 @@
                   href: sales-marketing/tasks/create-sales-orders.md
                 - name: Tilausten pidon hallinta
                   href: sales-marketing/tasks/manage-order-holds.md
-                - name: Vahvista myyntitilaukset
+                - name: Myyntitilausten vahvistaminen
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Myyntitilauksiin liittyvien ongelmien vianmääritys
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Myyntisopimukset
               items:
                 - name: Myyntisopimusten yleiskatsaus
@@ -2279,10 +2291,12 @@
               items:
                 - name: Hintasimulointi
                   href: sales-marketing/price-simulation.md
-                - name: Myyntitarjousten joukkoluonti
+                - name: Useiden myyntitarjousten luominen
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Myyntitarjousten luonti ja muokkaus
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: Myyntitarjouksiin liittyvien ongelmien vianmääritys
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Palautukset
               items:
                 - name: Myyntipalautukset
@@ -2807,19 +2821,21 @@
                   items:
                     - name: Varastosovelluksen asentaminen ja yhdistäminen
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Viivakoodien lukeminen kameran avulla varastosovelluksessa
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Kenttien nimien määrittäminen varastosovelluksessa
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Varastotyön mobiililaitteiden määrittäminen
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Viivakoodien lukeminen kameran avulla varastosovelluksessa
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Rekisterikilven vastaanotto varastosovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
                       href: warehousing/tasks/set-up-mobile-device-menu.md
                     - name: Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Luo valikkokohde mobiililaitteelle rekisterikilven konsolidointia varten
+                    - name: Valikkokohteen määrittäminen mobiililaitteelle keräilyrivin yleiskatsausta varten
+                      href: warehousing/pick-line-overview.md
+                    - name: Valikkokohteen luominen mobiililaitteelle rekisterikilven konsolidointia varten
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Yhdistetyn rekisterikilven vastaanotto mobiililaitteella
                       href: warehousing/mixed-license-plate-receiving.md
