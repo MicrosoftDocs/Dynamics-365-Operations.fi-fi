@@ -3,7 +3,7 @@ title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761294"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817082"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
@@ -75,9 +75,12 @@ Seuraavat ostoruutumoduuliasetukset voidaan määrittää valitsemalla **Sivusto
 - **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
 - **Lisää ostoskoriin** - Tämän ominaisuuden avulla määritetään, mitä tapahtuu, kun nimike on lisätty ostoskoriin. Mahdolliset arvot ovat **Siirry ostoskoriin**, **Älä siirry ostoskoriin** ja **Näytä ilmoitukset**. Kun arvoksi on määritetty **Siirry ostoskoriin**, käyttäjät lähetetään ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Älä siirry ostoskoriin**, käyttäjiä ei lähetetä ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Näytä ilmoitukset**, käyttäjille näytetään vahvistusilmoitus ja he voivat jatkaa selaamista tuotteen tiedot -sivulla. 
 
-    Seuraavassa kuvassa on esimerkki Siirretty ostoskoriin -vahvistusilmoituksesta Fabrikam-sivustolla.
+> [!IMPORTANT]
+> **Lisää ostoskoriin** -sivuton asetukset ovat käytettävissä Dynamics 365 Commercen versiossa 10.0.11. Jos päivität vanhemmasta Dynamics 365 Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeet appsettings.json-tiedoston päivittämiseen: [SDK:n ja moduuliskirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Esimerkki ilmoitusmoduulista](./media/ecommerce-addtocart-notifications.PNG)
+Seuraavassa kuvassa on esimerkki Siirretty ostoskoriin -vahvistusilmoituksesta Fabrikam-sivustolla.
+
+![Esimerkki ilmoitusmoduulista](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
@@ -111,7 +114,7 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+[Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Myymälän valitsinmoduuli](store-selector.md)
 
@@ -129,6 +132,8 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 
 [Alatunnistemoduuli](author-footer-module.md)
 
-[Jako yhteisöpalveluissa -moduuli](social-share-module.md)
+[Yhteisöpalvelujakamisen moduuli](social-share-module.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
+
+[SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md)

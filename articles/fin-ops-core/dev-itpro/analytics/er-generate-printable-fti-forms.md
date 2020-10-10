@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771280"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893360"
 ---
 # <a name="generate-printable-fti-forms"></a>Tulostettavien FTI-lomakkeiden luominen
 
@@ -111,7 +111,7 @@ Voit myös luoda FTI-lomakkeita, kun lähetät FTI:n, laittamalla valinnan **Tul
 ER-kehys tukee tällä hetkellä seuraavia kohteita tuotetuille asiakirjoille:
 
 - **Ladattu tiedosto** – Luodut lomakkeet ovat käytettävissä myös kuin ladattavat tiedostot tallennetaan selaimella.
-- **Näyttö** – Microsoft Office 365 Exceliä käytetään FTI-lomakkeiden esikatseluun Excel-muodossa.
+- **Näyttö** – Microsoft 365 Exceliä käytetään FTI-lomakkeiden esikatseluun Excel-muodossa.
 - **SharePoint-kansio** – Luodut lomakkeet tallennetaan asiakirjojen hallintajärjestelmän asetusten perusteella.
 - **Sovellusarkisto** – Luodut lomakkeet tallennetaan liitteinä suorituslokin tietueina Microsoft Azure -varastoon.
 - **Sähköposti** – Luodut lomakkeet lähetetään sähköpostiliitteinä.

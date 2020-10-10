@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5bc0776174960af6cb8a62f00e3fd7d56b1676
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793608"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893074"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Laajentaminen Power Appsin ja Power Automaten avulla
 
@@ -37,13 +37,13 @@ Tässä artikkelissa käsitellään Microsoft Power Appsia ja Microsoft Power Au
 - Pakettien tuontia varten käyttäjät tarvitsevat **Ympäristön tekijä** -käyttöoikeuden.
 - Sovellusten vientiä ja tuontia varten käyttäjillä on oltava Power Apps-palvelupaketin 2 käyttöoikeus tai Power Apps -palvelupaketin 2 kokeiluversion käyttöoikeus.
 
-## <a name="integration-with-office-365-power-automate"></a>Integrointi Office 365:n, Power Automaten kanssa
+## <a name="integration-with-microsoft-365-power-automate"></a>Microsoft 365 -integrointi, Power Automate
 
-**Office 365 -integrointi** -sovelluksella voi purkaa kirjautuneiden käyttäjien tiimitiedot Microsoft Office 365:stä. Siinä viitataan henkilöstöhallinnon työntekijöihin, jotta työntekijöiden tunnistetyypit voidaan poimia. Esimiehet voivat tarkistaa työntekijän tunnustyyppien vanhentumispäivämäärät. He voivat myös lähettää sähköpostimuistutuksen, jos työntekijätunnuksen tyyppi on umpeutumassa. Power Automate integroituu Power Appsin kanssa tämän muistutuksen lähettämiseen. Vahvistus lähetetään takaisin Power Appsiin Power Automatesta, kun muistutus lähetetään. Tunnustyyppejä ovat ajokortti, passi ja muut hyväksyttävät henkilöllisyystodistusmuodot.
+**Microsoft 365 -integrointi** -sovelluksella voi purkaa kirjautuneiden käyttäjien tiimitiedot Microsoft 365:stä. Siinä viitataan henkilöstöhallinnon työntekijöihin, jotta työntekijöiden tunnistetyypit voidaan poimia. Esimiehet voivat tarkistaa työntekijän tunnustyyppien vanhentumispäivämäärät. He voivat myös lähettää sähköpostimuistutuksen, jos työntekijätunnuksen tyyppi on umpeutumassa. Power Automate integroituu Power Appsin kanssa tämän muistutuksen lähettämiseen. Vahvistus lähetetään takaisin Power Appsiin Power Automatesta, kun muistutus lähetetään. Tunnustyyppejä ovat ajokortti, passi ja muut hyväksyttävät henkilöllisyystodistusmuodot.
 
 Voit laajentaa tätä sovellusta muihin tilanteisiin. Voit käyttää sitä esimerkiksi näyttämään ryhmän lomatiedot, kalenteritapahtumat ja kaikki ryhmäkohtaiset tapahtumat.
 
-Voit ladata **Office 365 -integroinnin Power Automate** -sovelluksen kohdassa [Office 365 -integrointi](https://go.microsoft.com/fwlink/?linkid=2081787).
+Voit ladata **Microsoft 365 -integrointi, Power Automate** -sovelluksen Microsoft Download Centerin kohdasta [Microsoft 365 -integrointi](https://go.microsoft.com/fwlink/?linkid=2081787).
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – SQL-yhteys ja toteutus
 

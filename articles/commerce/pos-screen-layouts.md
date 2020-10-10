@@ -3,7 +3,7 @@ title: Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 description: Tässä aiheessa on tietoja Dynamics 365 Commerce POS -käyttöliittymistä.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505631"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834206"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 
@@ -62,7 +62,9 @@ Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään mä�
 > [!NOTE]
 > **Oikea** asettelu ja päivämäärän/ajan näyttö eivät koske kirjautumisnäyttöä suppeassa näkymässä.
 
-## <a name="screen-layouts"></a>Näyttöasettelut
+Sinun on suoritettava jakelun aikataulutustehtävä **1090** ( **Rekisterit**), jotta voit synkronoida uusimmat visuaalisen profiilin määritykset kanava tietokantaan.
+
+## <a name="screen-layouts"></a>Näytön asettelut
 
 Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen **Tervetuloa**-näytössä ja **Tapahtuma**-näytössä.
 
@@ -81,6 +83,8 @@ Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien t
 ### <a name="assignment"></a>Liitos
 
 Näytön asettelut voidaan määrittää myymälän, kassakoneen tai käyttäjän tasolla. Käyttäjän määritys korvaa kassakoneen ja myymälän määritykset, ja kassakoneen määritys korvaa myymälän määrityksen. Yksinkertaisessa tilanteessa, jossa kaikki käyttäjät käyttävät samaa asettelua riippumatta kassakoneesta tai roolista, näytön asettelu voidaan määrittää vain myymälätasolla. Skenaarioissa, jossa tietyt kassakoneet tai käyttäjät vaativat erityisiä asetteluita, nuo asettelut voidaan määritellä asianmukaisesti.
+
+Riippuen siitä, millä tasolla näytön asettelut on määritetty, sinun on suoritettava jakelun aikataulutustehtävä **1070** (**Kanavan määritys**), **1090** (**Rekisterit**) ja/tai **1060** ( **Henkilöstö**) synkronoidaksesi viimeisimmät ruudun asettelumääritykset kanavan tietokantaan.
 
 ### <a name="layout-sizes"></a>Asettelukoot
 

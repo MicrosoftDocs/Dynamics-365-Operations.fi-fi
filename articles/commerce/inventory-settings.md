@@ -3,7 +3,7 @@ title: Varastoasetusten käyttäminen
 description: Tässä ohjeaiheessa käsitellään varastoasetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621218"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817606"
 ---
 # <a name="apply-inventory-settings"></a>Varastoasetusten käyttäminen
 
@@ -38,6 +38,9 @@ Varastoasetukset määrittävät, tuleeko varasto tarkistaa, ennen kuin tuotteet
 Dynamics 365 Commerce sisältää arviot tuotteiden käytettävissä olevasta saatavuudesta. Lisätietoja arvioidun käytettävissä olevan käytettävyyden laskemisesta on kohdassa [Jälleenmyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md).
 
 Commercen sivustotyökalussa voidaan määrittää tuotteen tai luokan varastorajat ja -alueet. Ne määräävät, voidaanko varaston arvoksi luokitella varastossa, vähissä vai loppunut. Katso lisätietoja kohdasta [Varastopuskureiden ja varastotasojen konfiguroiminen](inventory-buffers-levels.md)
+
+> [!NOTE]
+> Varaston raja-arvojen ja alueiden tuki on käytettävissä Dynamics 365 Commercen versiossa 10.0.12.
 
 ## <a name="inventory-settings"></a>Varastoasetukset
 
@@ -55,6 +58,9 @@ Commercessa varastoasetukset määritetään sivustotyökalussa kohdassa **Sivus
     - Kun **Loppunut varastosta** on valittu, vain "loppunut varastosta" -sanoma tulee näkyviin.
 
 - **Loppunut varastosta** – Tämä vanha numeerinen asetus tulee voimaan vain, jos **Loppunut varastosta** arvoksi on valittu **Varaston vähimmäisarvo** -asetuksen perusteella.
+
+> [!IMPORTANT] 
+> Nämä asetukset ovat käytettävissä Dynamics 365 Commercen versiossa 10.0.12. Jos päivität vanhemmasta Dynamics 365 Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeet appsettings.json-tiedoston päivittämiseen: [SDK:n ja moduuliskirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="modules-that-use-inventory-settings"></a>Varastoasetuksia käyttävät moduulit
 
@@ -74,7 +80,7 @@ Seuraavassa kuvassa on esimerkki ostoskorista, jossa näkyy Varastossa (Käytett
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+[Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Varastopuskureiden ja varastotasojen konfiguroiminen](inventory-buffers-levels.md)
 
@@ -85,3 +91,5 @@ Seuraavassa kuvassa on esimerkki ostoskorista, jossa näkyy Varastossa (Käytett
 [Tilin hallintasivut ja -moduulit](account-management.md)
 
 [Myymälän valitsinmoduuli](store-selector.md)
+
+[SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md)

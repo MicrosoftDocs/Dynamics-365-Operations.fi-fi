@@ -3,7 +3,7 @@ title: GETENUMVALUEBYNAME ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) GETENUMVALUEBYNAME-funktiota käytetään.
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ccf358dc5355cd00d5ff41ebd8148a334cba38
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743852"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885224"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-funktio
 
@@ -61,11 +61,11 @@ Tulokseksi saatava luettelointiarvo.
 
 Poikkeusta ei heitetä, jos *Enum*-arvoa ei löydy *merkkijono*-arvona määritetyn luettelointiarvon nimen avulla.
 
-## <a name="example"></a>Esimerkki
+## <a name="example-1"></a>Esimerkki 1
 
 Seuraavassa kuvassa on tietomallin **ReportDirection**-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.
 
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for a data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Tieto mallin luetteloinnissa käytettävissä olevat arvot](./media/ER-data-model-enumeration-values.PNG)
 
 Seuraavassa kuvassa on nämä tiedot:
 
@@ -73,8 +73,48 @@ Seuraavassa kuvassa on nämä tiedot:
 - `$IsArrivals`-lauseke on suunniteltu käyttämään mallin luettelointiin perustuvaa **$Direction**-tietolähdettä tämän toiminnon parametrina.
 - Tämän vertailulausekkeen arvo on **TOSI**.
 
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Esimerkki tietomallin luetteloinnista](./media/ER-data-model-enumeration-usage.PNG)
+
+## <a name="example-2"></a>Esimerkki 2
+
+Funktioiden `GETENUMVALUEBYNAME` ja [`LISTOFFIELDS`](er-functions-list-listoffields.md) avulla voit tuettujen luettelointien arvoja ja otsikoita tekstiarvoina. (Tuettuja luettelointeja ovat sovellusluetteloinnit, tietomalliluetteloinnit ja muotoluetteloinnit.)
+
+Seuraavassa kuvassa **TransType**-tietolähde lisätään mallin yhdistämismääritykseen. Tämä tietolähde viittaa **LedgerTransType**-sovellusluettelointiin.
+
+![Mallin yhdistämismäärityksen tietolähde, joka viittaa sovellusluettelointiin](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+
+Seuraavassa kuvassa on **TransTypeList**-tietolähde, joka määritetään mallin yhdistämismäärityksessä. Tämä tietolähde määritetään **TransType**-sovellusluetteloinnin perusteella. `LISTOFFIELDS`-funktion avulla palautetaan kaikki luettelointiarvot kenttiä sisältävien tietueiden luettelona. Näin jokaisen luettelointiarvon tiedot tulevat näkyviin.
+
+> [!NOTE]
+> **EnumValue**-kenttä määritetään **TransTypeList**-tietolähdettä varten käyttämällä lauseketta `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. Tämä kenttä palauttaa luettelointiarvon jokaiselle tämän luettelon tietueelle.
+
+![Valitun luetteloinnin kaikki luettelointiarvot tietueluettelona palauttavan mallin yhdistämismäärityksen tietolähde](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+
+Seuraavassa kuvassa on **VendTrans**-tietolähde, joka määritetään mallin yhdistämismäärityksessä. Tämä tietolähde palauttaa toimittajan tapahtumatietueita **VendTrans**-sovellustaulukosta. Kunkin tapahtuman kirjanpitotyyppi määräytyy **TransType**-kentän arvon mukaan.
+
+> [!NOTE]
+> **TransTypeTitle**-kenttä määritetään **VendTrans**-tietolähdettä varten käyttämällä lauseketta `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label`. Tämä kenttä palauttaa nykyisen tapahtuman luettelointiarvon otsikon tekstinä, jos tämä luettelointiarvo on käytettävissä. Muussa tapauksessa se palauttaa tyhjän merkkijonoarvon.
+>
+> **TransTypeTitle**-kenttä on sidottu sellaisen tietomallin **LedgerType**-kenttään, joka mahdollistaa näiden tietojen käytön kaikissa ER-muodoissa, joissa tätä tietomallia käytetään tietolähteenä.
+
+![Toimittajatapahtumia palauttavan mallin yhdistämismäärityksen tietolähde](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+
+Seuraavassa kuvassa näkyy, miten voit käyttää [tietolähteen virheenkorjausta](er-debug-data-sources.md) määritetyn mallin yhdistämismäärityksen testaamiseen.
+
+![Määritetyn mallin yhdistämismärityksen testaaminen tietolähteen virheenkorjauksen avulla](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+
+Tietomallin **LedgerType**näyttää tapahtumatyyppien otsikkoja odotetulla tavalla.
+
+Jos aiot käyttää tätä menetelmää suureen määrään tapahtumatietoja, sinun on otettava huomioon suorituksen suorituskyky. Lisätietoja: [Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+[Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md)
+
+[LISTOFFIELDS ER-funktio](er-functions-list-listoffields.md)
+
+[FIRSTORNULL ER-funktio](er-functions-list-firstornull.md)
+
+[WHERE ER-funktio](er-functions-list-where.md)

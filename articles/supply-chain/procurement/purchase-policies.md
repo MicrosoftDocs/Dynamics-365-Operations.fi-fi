@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207899"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830746"
 ---
 # <a name="purchasing-policies-overview"></a>Ostokäytännöt – yleiskatsaus
 
@@ -102,9 +102,9 @@ Ostoehdotuksen tarjouspyyntösääntö määrittää ostoehdotusriville ehdot ta
 
 ### <a name="purchase-requisition-control-rule"></a>Ostoehdotuksen ohjaussääntö
 
-Ostoehdotuksen hallintasääntö on valinnainen sääntö. Tämänkaltaisia sääntöjä luodessa voit määrittää asetuksia useilla välilehdillä:
+Tyypin **Kulutus** ehdotusten ostoehdotusten ohjausobjektisääntö on valinnainen sääntö. Tämänkaltaisia sääntöjä luodessa voit määrittää asetuksia useilla välilehdillä:
 
--   **Työnkulun lähetys** -välilehdessä voit määrittää kentät, jotka on täytettävä hyväksyttäväksi lähetettävän ehdotuksen riveille silloin, kun ehdotuksen tarkoitus on **Kulutus**.
+-   **Työnkulun lähetys** -välilehdessä voit määrittää kentät, jotka on täytettävä hyväksyttäväksi lähetettävän ehdotuksen riveille.
 -   **Tilausmäärät**-välilehdessä voit määrittää kentät, jotka ovat pakollisia ostoehdotuksessa tiettyjen ehtojen täyttyessä. Voit myös pakottaa tietyn tilausmäärän.
 -   **Päivämäärät**-välilehdessä voit määrittää onko kirjauspäivä sama, kuin pyydetty päivä
 -   **Osoite**-välilehdessä voit määrittää käyttäjän oikeuden luoda uusia osoitteita järjestelmään, jotka koskevat ostoehdotusta.

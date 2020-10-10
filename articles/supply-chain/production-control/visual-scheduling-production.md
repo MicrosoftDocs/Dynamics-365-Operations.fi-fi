@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210154"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887237"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Töiden ajoittamisen Gantt-kaavio
 
@@ -38,7 +38,7 @@ Gantt-kaavio on määritetylle ajanjaksolle ajoitettujen tehtävien visuaalinen 
 -   Työt suunnitelluista tuotantotilauksista.
 -   Tuntiennuste-tyyppiset työn mukaan ajoitetut projektitehtävät.
 
-Gantt-kaavion voit avata kahdessa näkymässä, jotka ovat **tilausnäkymä** ja **resurssinäkymä**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). **Tilausnäkymässä** aktiviteetit on ryhmitelty tuotantotilausten mukaan. Tästä voi olla hyötyä esimerkiksi, jos haluat säilyttää kaikkien samoihin tilauksiin kuuluvien töiden yhteenvedon. **Resurssinäkymässä** kaikki työt on ryhmitelty yksittäisten resurssien mukaan. Tästä näkymästä voi olla hyötyä suunnitelman optimoinnissa resurssitasolla, esimerkiksi laitteen tai laiteryhmän tasolla. Seuraavissa kuvissa esitetyissä Gantt-kaavioissa **Tilausnäkymä** ja **Resurssinäkymä**, on nämä pääelementit:
+Gantt-kaavion voit avata kahdessa näkymässä, jotka ovat **Tilausnäkymä** ja **Resurssinäkymä**. **Tilausnäkymässä** aktiviteetit on ryhmitelty tuotantotilausten mukaan. Tästä voi olla hyötyä esimerkiksi, jos haluat säilyttää kaikkien samoihin tilauksiin kuuluvien töiden yhteenvedon. **Resurssinäkymässä** kaikki työt on ryhmitelty yksittäisten resurssien mukaan. Tästä näkymästä voi olla hyötyä suunnitelman optimoinnissa resurssitasolla, esimerkiksi laitteen tai laiteryhmän tasolla. Seuraavissa kuvissa esitetyissä Gantt-kaavioissa **Tilausnäkymä** ja **Resurssinäkymä**, on nämä pääelementit:
 
 1.  Gantt-kaavion tehtävä
 2.  Materiaalipuute-kuvake

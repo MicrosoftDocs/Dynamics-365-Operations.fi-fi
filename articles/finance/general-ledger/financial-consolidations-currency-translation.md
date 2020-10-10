@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823452"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -103,6 +103,7 @@ Konsolidoinnin tarkasteluvaihtoehtoja on useita:
     ![Konsolidointitapahtumat Konsolidoinnit-sivulla](./media/managing-consolidation-transactions.png "Konsolidointitapahtumat Konsolidoinnit-sivulla")
 
 Voit suorittaa konsolidoinnin uudelleen käsittelemällä sen. Vaihtoehtoisesti voit valita ensin **Poista tapahtumat** **Konsolidoinnit**-sivulla.
+Jos konsolidointitilin saldot eivät ole oikein, nämä saldot voidaan korjata käyttämällä **Lopetuskauden oikaisut** -sivua.
 
 ## <a name="consolidate-with-import"></a>Konsolidoi tuonnin kanssa
 Konsolidoi tuonnin kanssa -toiminto toimii Konsolidoi verkossa -toiminnon tavoin. Kun valitse yrityksiä, siirryt tiedot sisältävään lähdetiedostoon.
@@ -156,6 +157,7 @@ Lisätietoja valuutan uudelleenarvostuksesta **Kirjanpito**-moduulissa on kohdas
 - Eliminointikirjauskansiot voidaan kirjata vain valitulle tasolle.
 - Vain operatiiviset saldot konsolidoidaan. Niinpä alkusaldon näkemistä varten on suoritettava tilikauden lopetus konsolidointiyrityksessä.
 - Voit kirjata päivittäisiin kirjauskansioihin eliminointiyrityksessä muttet konsolidointiryrityksessä.
+- Konsolidointiyrityksen saldoja voi oikaista vain **Lopetuskauden oikaisut** -sivun avulla. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Taloushallinnon raportoinnin käytön edut taloushallinnon konsolidoinneissa ja valuutan muunnossa tai verkossa tapahtuvan konsolidoinnin täydentämisessä konsolidoidussa raportoinnissa
 Asiakkaat, jotka käyttävät taloushallinnon raportointia taloushallinnon konsolidoinneissa ja valuutan muunnossa tai verkossa tapahtuvan konsolidoinnin täydentämisessä konsolidoidussa raportoinnissa, saavat erilaisia etuja:

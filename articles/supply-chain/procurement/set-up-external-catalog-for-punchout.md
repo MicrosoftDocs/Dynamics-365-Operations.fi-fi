@@ -1,6 +1,6 @@
 ---
-title: Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
-description: Tässä ohjeaiheessa kuvataan ulkoisen luettelon tai siirtymisluettelon käyttöä tarjouspyynnön tietojen keräämisessä toimittajalta ja sen lisäämistä varasto-ottoehdotukseen.
+title: Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen
+description: Tässä ohjeaiheessa kuvataan ulkoisen luettelon tai PunchOut-luettelon käyttöä tarjouspyynnön tietojen keräämisessä toimittajalta ja sen lisäämistä varasto-ottoehdotukseen.
 author: mkirknel
 manager: tfehr
 ms.date: 11/02/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207804"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826825"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,12 +81,13 @@ Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
 |< Header >< Sender >< Credential >< Identity >< /Identity> | Ostajan yrityksen tunnus.|
 |< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Ostajan yrityksen jaettu salainen koodi.|
 |< Request deploymentMode=”” >|Testaus tai tuotannon käyttöönotto.|
-|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Toimittajan yrityksen siirtymispäätepisteen URL-osoite.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Toimittajan yrityksen PunchOut-päätepisteen URL-osoite.|
 
 ### <a name="extrinsic-elements"></a>Ulkoiset elementit
 
-Ulkoinen elementti on lisätieto, kuten käyttäjätunnus, joka perustuu käyttäjä, jolle siirto suoritetaan. Ulkoinen elementti määritetään, kun siirto tapahtuu ja se voidaan lähettää viestin pyynnön asetussanomassa.
-Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määrityspyynnössä. Tällöin kannattaa lisätä ulkoinen elementti ulkoisten elementtien luetteloon **Viestimuoto**-osassa **Ulkoinen luettelo** -sivulla. Määritä ulkoisen elementin nimi, jonka toimittaja voi tunnistaa, ja liitä se arvoon. Arvojen vaihtoehdot ovat: käyttäjänimi, sähköposti tai satunnainen arvo.
+Ulkoinen elementti on lisätieto, kuten käyttäjätunnus, joka perustuu käyttäjä, jolle siirto suoritetaan. Ulkoinen elementti määritetään, kun PunchOut tapahtuu ja se voidaan lähettää viestin pyynnön asetussanomassa.
+Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määrityspyynnössä. Tällöin kannattaa lisätä ulkoinen elementti ulkoisten elementtien luetteloon **Viestimuoto**-osassa **Ulkoinen luettelo** -sivulla.
+Määritä ulkoisen elementin nimi, jonka toimittaja voi tunnistaa, ja liitä se arvoon. Arvojen vaihtoehdot ovat: käyttäjänimi, sähköposti tai satunnainen arvo.
 Saat lisätietoja cXML-protokollasta kohdasta [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Takaisinlähetysviesti
@@ -109,3 +110,7 @@ Poista ulkoinen luettelo sivulla olevalla Poista-toiminnolla.
 
 Ulkoista toimittajan tuoteluetteloa ei voi poistaa, jos tuotetta on pyydetty ulkoisesta toimittajan tuoteluettelosta. Sen sijaan ulkoisen toimittajan tuoteluettelon tilaksi määritetään ei-aktiiviseksi. Jos haluat poistaa ulkoisten toimittajien luettelon sivuston käyttöoikeudet mutta et poistaa niitä, muuta ulkoisen tuoteluettelon tilaksi ei-aktiivinen.
 
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Ostojen cXML-parannukset](purchasing-cxml-enhancements.md)
+- [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](use-external-catalogs-for-punchout.md)

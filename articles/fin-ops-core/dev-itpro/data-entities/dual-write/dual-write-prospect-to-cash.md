@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
-ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
+ms.openlocfilehash: 6fe42f43277448dc5918597ed8bb1b68f2266b6a
+ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "3719261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3829209"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
@@ -99,29 +99,7 @@ Jos synkronoit Supply Chain Managementista Salesiin, saat seuraavan tuloksen:
 
 ## <a name="dual-write-solution-for-sales"></a>Kaksoiskirjoitusratkaisu Salesia varten
 
-**Tilaus**-yksikköön on lisätty uusia kenttiä, jotka näkyvät sivulla. Useimmat näistä kentistä näkyvät Salesin **Integrointi**-välilehdessä. Muutamia erityisiä kenttiä:
-
-+ **Käsittelytila**-kenttä näyttää tilauksen käsittelyn tilan Supply Chain Managementissa. Tämä kenttä on lukittu, ja se näyttää vain Supply Chain Managementin tilauksen tilan. Käytettävissä ovat seuraavat arvot:
-
-    + **Aktiivinen** – tila sen jälkeen, kun tilaus on aktivoitu Salesissa **Aktivoi**-painikkeen avulla.
-    + **Vahvistettu**
-    + **Toimitettu**
-    + **Laskutettu**
-    + **Osittain toimitettu**
-    + **Osittain laskutettu**
-    + **Keräilty**
-    + **Peruutettu**
-
-    Seuraavasta taulukosta ilmenee, miten käsittelyn tila yhdistetään **CRM:n tilakoodi** -arvoon.
-
-    | Käsittelytila           | CRM:n tilakoodi    |
-    |-----------------------------|--------------------|
-    | Aktiiviset                      | Uusi/Odottava/Pidossa |
-    | Vahvistettu/Kerätty            | Käsittelyssä        |
-    | Osittain toimitettu         | Osittainen            |
-    | Toimitettu                   | Päätetty           |
-    | Laskutettu / Osittain laskutettu | Laskutettu           |
-    | Peruutettu                    | Ei rahaa           |
+**Tilaus**-yksikköön on lisätty uusia kenttiä, jotka näkyvät sivulla. Useimmat näistä kentistä näkyvät Salesin **Integrointi**-välilehdessä. Lisätietoja tilakenttien yhdistämismääriyksistä on dokumentaatioaiheessa [Myyntitilausten tilakenttien yhdistämismäärityksen määrittäminen](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
 
 + **Luo lasku**- ja **Peruuta tilaus** -painikkeet piilotetaan Salesin **Myyntitilaus**-sivulla.
 + **Myyntitilauksen tila** -arvo pysyy **aktiivisena**, jotta muutokset Supply Chain Managementista siirtyvät Salesin myyntitilaukseen. Voit ohjata tätä toimintaa määrittämällä **Tilakoodi \[Tila\]** -arvoksi **Aktiivinen**.

@@ -3,7 +3,7 @@ title: Tilinhallinnan sivut ja moduulit
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
 author: v-chgri
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025678"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817155"
 ---
 # <a name="account-management-pages-and-modules"></a>Tilinhallinnan sivut ja moduulit
-
 
 [!include [banner](includes/banner.md)]
 
@@ -75,7 +74,7 @@ Kanta-asiakasohjelmaan liittymistä varten voidaan luoda markkinointisivu, jossa
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+[Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Konttimoduuli](add-container-module.md)
 

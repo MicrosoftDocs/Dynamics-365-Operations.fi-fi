@@ -3,7 +3,7 @@ title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uudella ruudukkotoiminnolla on oltava käyttöoikeus näihin ominaisuuksiin.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760396"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835083"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -33,6 +33,7 @@ Uusi ruudukon ohjausobjekti tarjoaa useita hyödyllisiä ja tehokkaita ominaisuu
 -  Järjestelmän ennakoiva kirjoitus
 -  Matemaattisten lausekkeiden arviointi 
 -  Taulukkomuotoisten tietojen ryhmittely (käytössä erikseen **(Esiversio) Ryhmittely ruudukoissa** -toiminnossa)
+-  Kiinnitetyt järjestelmäsarakkeet
 
 ## <a name="calculating-totals"></a>Lasketaan kokonaissummia
 Finance and Operations -sovelluksissa käyttäjät voivat tarkastella summia ruudukkojen numeeristen sarakkeiden alla. Nämä summat näkyvät alatunnisteosassa ruudukon alla. 
@@ -119,12 +120,19 @@ Voit valita nopeasti ryhmän kaikki rivit tai poistaa niiden valinnan valitsemal
 ### <a name="hiding-column-names"></a>Sarakkeiden nimien piilottaminen
 Kun ryhmittelet tietoja, oletusarvo on sarakkeen nimen näkyminen ryhmän otsikkorivillä. Versiosta 10.0.14 ja Platform-päivityksestä 38 alkaen voit valita, haluatko supistaa sarakkeen nimen ryhmän otsikkorivillä valitsemalla **Ruudukkovalinnat** > **Piilota ryhmän sarakkeen nimi**.
 
+## <a name="pinned-system-columns"></a>Kiinnitetyt järjestelmäsarakkeet
+Uuden ruudukon rivinvalintasarake ja rivitilasarake ovat kiinnitettynä tai lukittuna ruudukon vasempaan reunaan. Tämä tarkoittaa, että nämä sarakkeet ovat aina näkyvissä käyttäjälle, kun ne lisätään ruudukkoon, riippumatta vaakasuuntaisesta vierityssijainnista ruudukossa.   
+
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Miten otan uuden ruudukonhallinnan käyttöön omassa ympäristössäni? 
 
-**10.0.9/Platform-päivitys 33 ja** uudemmat **Uusi ruudukonhallinta** -toiminto on käytettävissä suoraan ominaisuuksienhallinnassa missä tahansa ympäristössä. Kuten muutkin julkiset esikatseluominaisuudet, tämän toiminnon ottaminen käyttöön tuotannossa edellyttää [Lisäkäyttöehdot-sopimusta](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9 / Platform update 33 ja uudemmat**
 
-**10.0.8/Platform-päivitys 32 ja 10.0.7/Platform-päivitys 31** aiemmat **Uusi ruudukonhallinta** -ominaisuus voidaan ottaa käyttöön Tier 1 (Dev/Test)- ja Tier 2 (eristysympäristö) -ympäristöissä, jotta voit tarjota lisätestejä ja rakennemuutoksia noudattamalla seuraavia ohjeita.
+**Uusi ruudukon ohjausobjekti** -toiminto on käytettävissä suoraan ominaisuuksien hallinnassa missä tahansa ympäristössä. Kuten muutkin julkiset esikatseluominaisuudet, tämän toiminnon ottaminen käyttöön tuotannossa edellyttää [Lisäkäyttöehdot-sopimusta](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform update 32 ja 10.0.7 / Platform update 31**
+
+**Uusi ruudukon ohjausobjekti** -toiminto voidaan ottaa käyttöön Taso 1 (kehitys/testaus)- ja Taso 2 (eristys) -ympäristöissä, jotta voit tarjota lisätestejä ja rakennemuutoksia noudattamalla seuraavia ohjeita.
 
 1.  **Ota pikapäivitys käyttöön**: Suorita seuraava SQL-lause: 
 
@@ -139,11 +147,14 @@ Kun ryhmittelet tietoja, oletusarvo on sarakkeen nimen näkyminen ryhmän otsikk
 Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on käytössä.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
-Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
+Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, versiosta 10.0.13 / Platform updatesta 37 alkaen ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
 
  ```this.forceLegacyGrid();```
 
-Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Ilmoita Microsoftille mahdolliset ongelmat, jotka edellyttävät tämän ohjelmointirajapinnan käyttämistä. 
+Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Jos jokin ongelma edellyttää tämän ohjelmointirajapinnan käyttöä, ilmoita siitä Microsoftille.
+
+## <a name="developer-size-to-available-width-columns"></a>[Kehittäjä] Size-to-available-width -sarakkeet
+Jos sovellu kehittäjä määrittää **widthmode**-ominaisuuden arvoksi **SizeToAvailable** uudessa ruudukossa oleville sarakkeille, näillä sarakkeilla on aluksi sama leveys kuin niillä olisi, jos ominaisuuden arvona olisi **SizeToContent**. Ne kuitenkin venyvät käyttämään kaiken ruudukon sisällä olevan leveyden. Jos useiden sarakkeiden ominaisuuden arvoksi on määritetty **SizeToAvailable**, kyseiset sarakkeet jakavat ruudukossa käytettävissä olevan tilan. Jos käyttäjä kuitenkin muuttaa jonkin tällaisen sarakkeen kokoa manuaalisesti, sarake muuttuu staattiseksi. Se pysyy samanlevyisenä eikä enää laajene käyttämään ruudukossa olevaa ylimäärästä leveyttä.  
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuista ongelmista, kun ominaisuus on esikatselutilassa.  

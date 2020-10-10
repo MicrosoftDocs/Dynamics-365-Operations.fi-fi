@@ -3,7 +3,7 @@ title: Luokitusten ja arvosteluiden moduulit
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla käytettäviä luokitus- ja arviointimoduuleja.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 02/17/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: ee2a2a781537b592fb5f80ce424a7331c4e21d41
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071857"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817727"
 ---
 # <a name="ratings-and-reviews-modules"></a>Luokitusten ja arvosteluiden moduulit
 
@@ -87,7 +87,7 @@ Tuotearvosteluluettelomoduuli sisältää paikan, jossa voit lisätä luokituste
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+[Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Konttimoduuli](add-container-module.md)
 

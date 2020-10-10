@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761126"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818272"
 ---
 # <a name="cart-module"></a>Ostoskorimoduuli
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
@@ -41,11 +40,11 @@ Ostoskorimoduuli esittää tiedot ostoskorin tunnuksen mukaan, joka on koko sivu
 
 Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta.
 
-![Esimerkki ostoskärrymoduulista](./media/cart2.PNG)
+![Esimerkki ostoskorimoduulista Fabrikam-sivustolla](./media/cart2.PNG)
 
 Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta. Tässä esimerkissä rivinimikkeelle on käsittelymaksu.
 
-![Esimerkki ostoskärrymoduulista](./media/ecommerce-handling-fee.png)
+![Esimerkki ostoskorimoduulista, jossa on käsittelymaksu rivinimikkeelle](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Ostoskorimoduulin ominaisuudet ja paikat
 

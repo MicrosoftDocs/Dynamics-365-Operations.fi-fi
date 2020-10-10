@@ -3,7 +3,7 @@ title: Myymälän valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646132"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818247"
 ---
 # <a name="store-selector-module"></a>Myymälän valitsinmoduuli
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
@@ -65,7 +64,7 @@ Jotta tämä skenaario toimisi, tuotteet on konfiguroitava niin, että käytöss
 
 Seuraavassa kuvassa on esimerkki PDP:n käytössä olevasta myymälän valitsinmoduulista.
 
-![Esimerkki myymälän valitsinmoduulista](./media/BOPIS.PNG)
+![Esimerkki PDP:ssä käytetystä myymälän valitsinmoduulista](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Etsi myymälät -tila
 
@@ -73,7 +72,7 @@ Myymälän valitsinmoduuli tukee myös **Etsi myymälät** -tilaa. Tämän tilan
 
 Seuraavassa kuvassa on esimerkki myymälän valitsinmoduulista, jota käytetään yhdessä myymälän sijaintien sivun karttamoduulin kanssa.
 
-![Esimerkki myymälän valitsinmoduulista](./media/ecommerce-Storelocator.PNG)
+![Esimerkki myymälän valitsinmoduulista ja karttamoduulista kaupan sijaintisivulla](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Kartan hahmontaminen
 
@@ -127,7 +126,7 @@ Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän ohjeaiheen kuv
  
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+[Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Ostoruutumoduuli](add-buy-box.md)
 

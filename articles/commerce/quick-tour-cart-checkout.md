@@ -3,7 +3,7 @@ title: Ostoskorin ja maksusivun yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527559"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817775"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Ostoskorin ja maksusivun yleiskatsaus
 
@@ -40,7 +40,7 @@ Sähköisen kaupankäynnin sivuston kassasivulla on vaiheittainen työnkulku, jo
 
 Ostoskorisivu toimii ostoskassina. Se sisältää kaikki ostoskoriin lisätyt nimikkeet.
 
-Seuraavassa kuvassa on esimerkki ostoskorisivusta, joka on luotu verkon aloituspaketin ja Fabrikam-teeman avulla.
+Seuraavassa kuvassa on esimerkki ostoskorisivusta, joka on luotu verkon moduulikirjaston ja Fabrikam-teeman avulla.
 
 ![Esimerkki ostoskorisivusta](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Lisätietoja ostoskorisivun muokkaamisesta on kohdassa [Ostoskorimoduulin lisä�
 
 Kassasivulla asiakkaat syöttävät tilauksen tekemisessä vaadittavat tiedot.
 
-Seuraavassa kuvassa on esimerkki kassasivusta, joka on luotu verkon aloituspaketin avulla.
+Seuraavassa kuvassa on esimerkki kassasivusta, joka on luotu moduulikirjaston avulla.
 
 ![Esimerkki kassasivusta](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Kassasivun päätekstiosa kerää tilauksen tiedot. Näitä tietoja ovat toimitu
 
 Toimitusosoite on pakollinen, jos nimikkeet on toimitettava. Kunkin alueen toimitusosoitteiden muoto voidaan määrittää Dynamics 365 Commerce -sovelluksessa. Jos nimikkeet toimitetaan esimerkiksi Yhdysvaltoihin, toimitusosoitteessa on oltava katuosoite, osavaltio ja postinumero. Toimitusosoitekentille tehdään joitakin perussyötteiden tarkistuksia, kuten aakkosnumeeristen merkkien, enimmäispituuden ja numeroiden tarkistus. Vaikka osoitteen oikeellisuutta ei sinänsä tarkisteta, tämä tarkistus voidaan tehdä käyttämällä mukautettuja kolmannen osapuolen palveluita.
 
-Toimitusosoitetta käytetään kaikissa ostoskorin nimikkeissä, joille on valittu toimitusvaihtoehto. Jos käytössä on kassatyönkulku, joka sisältyy verkossa olevaan aloituspakettiin, yksittäisiä ostoskorin nimikkeitä ei voi toimittaa eri osoitteisiin. Jos tarvitset tätä ominaisuutta, se voidaan ottaa käyttöön kassamoduulien mukauttamisen avulla.
+Toimitusosoitetta käytetään kaikissa ostoskorin nimikkeissä, joille on valittu toimitusvaihtoehto. Jos käytössä on kassatyönkulku, joka sisältyy moduulikirjastoon, yksittäisiä ostoskorin nimikkeitä ei voi toimittaa eri osoitteisiin. Jos tarvitset tätä ominaisuutta, se voidaan ottaa käyttöön kassamoduulien mukauttamisen avulla.
 
 Kun toimitusosoite on annettu, Dynamics 365 Commerce -verkkokaupassa käytettävissä olevat toimitustavat ovat näkyvissä. Toimitustavat ja niitä tukevat osoitteet voidaan määrittää Commerce-sovelluksessa.
 
@@ -80,7 +80,7 @@ Kassatyönkulun aikana asiakas, joka on kanta-asiakkuusohjelman jäsen ja joka o
 
 #### <a name="gift-cards"></a>Lahjakortit
 
-Verkon aloituspaketin avulla voi lunastaa sisäiset lahjakortit tilausta varten. Asiakkaan on kirjauduttava sisään, jotta hän voi käyttää sisäistä lahjakorttia. Lisäsuojausta varten on suositeltavaa mukauttaa työnkulku käyttämällä sisäisissä lahjakorteissa henkilökohtaista tunnuslukua (PIN).
+Moduulikirjaston avulla voi lunastaa sisäiset lahjakortit tilausta varten. Asiakkaan on kirjauduttava sisään, jotta hän voi käyttää sisäistä lahjakorttia. Lisäsuojausta varten on suositeltavaa mukauttaa työnkulku käyttämällä sisäisissä lahjakorteissa henkilökohtaista tunnuslukua (PIN).
 
 ### <a name="signed-in-and-guest-users"></a>Kirjautuneet käyttäjät ja vierailijat
 

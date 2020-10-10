@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141519"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899346"
 ---
 # <a name="base-price-and-trade-agreements"></a>Perushinta ja kauppasopimukset
 
@@ -58,7 +58,7 @@ Tässä menettelyssä esitellään kanavakohtaisen myyntihinnan kauppasopimusten
 26. Avaa haku valitsemalla **Nimi**-kentässä avattavan valikon painike.
 27. Valitse luettelossa **Commerce**. Esittelytiedoissa **Commerce**-kirjauskansion nimi on **Hinta (myynti)** -suhteen oletusarvo. Tämä tarkoittaa sitä, että kaikkien uusien rivien oletusarvoina käytetään myyntihinnan kauppasopimuksia.  
 28. Valitse **toimintoruudussa** **Rivit**.
-29. Valitse **Tilikoodi**-kentässä Ryhmä.
+29. Valitse **Osapuolen koodityyppi** -kentässä Ryhmä.
 30. Avaa haku napsauttamalla **Tilin valinta** -kentässä avattavan valikon painiketta.
 31. Etsi haluamasi tietue luettelosta ja valitse se. Tämä viimeistelee linkin kanavan, hintaryhmän ja kauppasopimuksen välillä.  
 32. Syötä **Nimikkeen suhde** -kenttään arvo.

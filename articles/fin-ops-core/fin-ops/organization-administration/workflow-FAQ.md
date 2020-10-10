@@ -3,7 +3,7 @@ title: Työnkulun usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076083"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826187"
 ---
 # <a name="workflow-faq"></a>Työnkulun usein kysytyt kysymykset
 
@@ -58,3 +58,5 @@ Kun Active Directory -liittämispalvelut (AD FS) suoritetaan päivitetyssä ymp�
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Miksi SQL lukkiutuu työnkulun käsittelyn aikana? 
 **Työnkulun nimikkeiden määrä erää kohti** -kentän oletusarvo on **Työnkulun parametrit** -sivulla on 0. Arvo 0 aiheuttaa sen, että oletusarvoksi muuttuu 20 nimikettä erää kohden. Ole varovainen tätä arvoa muuttaessasi, koska nimikkeiden suuri määrä erää kohti (> 40) voi aiheuttaa SQL-lukituksia.
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>Mikä työnkulun parannettu virhetoiminto on?
+Version 10.0.13 työnkulun parannettu virhetoiminto lisää virhekoodit erojen tekemiseksi työnkulun virheiden luokkien välillä. Ilmoitetut virhesanomat ovat enimmäkseen samoja, mutta pienin selkeyttävin eroin.

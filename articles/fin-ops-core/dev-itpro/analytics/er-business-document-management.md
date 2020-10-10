@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258554"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893132"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258554"
 
 Yrityskäyttäjät käyttävät [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehystä määrittääkseen lähtevien sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Käyttäjät voivat myös määrittää tietovirran määrittääkseen, mitkä sovellustiedot sijoitetaan luotuihin tiedostoihin. ER-kehys luo lähteviä tiedostoja Microsoft Office -muodoissa (Excel-työkirjoissa tai Word-asiakirjoissa) ennalta määritettyjen mallien avulla. Mallit täytetään tarvittavilla tiedoilla määritetyn tietovirran mukaisesti, kun vaadittavat tiedostot luodaan. Kukin konfiguroitu muoto voidaan julkaista osana ER-ratkaisua tiettyjen lähtevien tiedostojen luomista varten. Tätä kuvaa ER-muotoonfiguraatio, joka voi sisältää malleja, joiden avulla voit luoda erilaisia lähteviä asiakirjoja. Yrityskäyttäjät voivat hallita tarvittavia liikeasiakirjoja tämän kehyksen avulla.
 
-**Liiketoiminta-asiakirjojen hallinta** perustuu ER-kehykseen, ja sen avulla yrityskäyttäjät voivat muokata liiketoiminta-asiakirjamalleja Microsoft Office 365 -palvelun tai asianmukaisen Microsoft Office -työpöytäsovelluksen avulla. Asiakirjoihin tehdyt muokkaukset voivat olla liiketoiminnan asiakirjamallien muuttamista ja lisätietojen paikkamerkkien lisäämistä ilman lähdekoodin muutoksia ja uusia käyttöönottoja. Yritysasiakirjojen mallien päivittämiseksi ei tarvita tietoja ER-kehyksestä.
+**Liiketoiminta-asiakirjojen hallinta** perustuu ER-kehykseen, ja sen avulla yrityskäyttäjät voivat muokata liiketoiminta-asiakirjamalleja Microsoft 365 -palvelun tai asianmukaisen Microsoft Office -työpöytäsovelluksen avulla. Asiakirjoihin tehdyt muokkaukset voivat olla liiketoiminnan asiakirjamallien muuttamista ja lisätietojen paikkamerkkien lisäämistä ilman lähdekoodin muutoksia ja uusia käyttöönottoja. Yritysasiakirjojen mallien päivittämiseksi ei tarvita tietoja ER-kehyksestä.
 
 > [!NOTE]
 > Huomaa, että yritystiedostojen hallinnan avulla voit muokata malleja, joita käytetään liiketoiminnan asiakirjojen, kuten tilausten, laskujen jne. tuottamiseen. Kun mallia on muokattu ja sen uusi versio on julkaistu, tätä versiota käytetään tarvittavien liikeasiakirjojen luomiseen. Yritysasiakirjan hallintaa ei voi käyttää aiemmin luotujen liikeasiakirjojen muokkaamiseen.
@@ -170,7 +170,7 @@ Seuraavien ohjeiden avulla voit määrittää perusparametrit kaikille yrityksil
 Valittu tiedostotyyppi on yrityskohtainen, ja sitä käytetään, kun käyttäjä käyttää liiketoiminnan tiedostojen hallintaa yrityksessä, jolle valittu tiedostotyyppi on määritetty. Kun käyttäjä käyttää liiketoiminnan tiedostojen hallintaa toisessa yrityksessä, käytetään samaa valittua tiedostotyyppiä, jos sellaista ei ole määritetty tälle yritykselle. Kun tiedostotyyppi on konfiguroitu, sitä käytetään **SharePoint-tiedostotyyppi** -kentässä valitun asemesta.
 
 > [!NOTE]
-> **SharePoint -asiakirjatyyppi** -parametri määrittä SharePoint -kansion väliaikaiseksi tallennuspaikaksi malleille, joita voidaan muokata Microsoft Excelillä tai Wordilla. Tämä parametri on määritettävä, jos aiot käyttää näitä Office-työpöytäsovelluksia mallien muokkaamiseen. Lisätietoja on kohdassa [Mallin muokkaaminen Office-työpöytäsovelluksessa](#EditInOfficeDesktopApp). Voit pitää tämän parametrin tyhjänä, jos aiot muokata mallia vain käyttämällä toimintoa Office 365:ssä. Lisätietoja on kohdassa [Mallin muokkaaminen Office 365:ssä](#EditInOffice365).
+> **SharePoint -asiakirjatyyppi** -parametri määrittä SharePoint -kansion väliaikaiseksi tallennuspaikaksi malleille, joita voidaan muokata Microsoft Excelillä tai Wordilla. Tämä parametri on määritettävä, jos aiot käyttää näitä Office-työpöytäsovelluksia mallien muokkaamiseen. Lisätietoja on kohdassa [Mallin muokkaaminen Office-työpöytäsovelluksessa](#EditInOfficeDesktopApp). Voit pitää tämän parametrin tyhjänä, jos aiot muokata mallia vain käyttämällä toimintoa Microsoft 365:ssä. Lisätietoja on kohdassa [Mallin muokkaaminen Microsoft 365:ssä](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Käyttöoikeuksien määrittäminen
 
@@ -295,13 +295,13 @@ Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, v
 
 5. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
-**BDM-mallieditori**-sivu avautuu. Valittu malli on käytettävissä online-muokkausta varten käyttämällä Office 365:tä.
+**BDM-mallieditori**-sivu avautuu. Valittu malli on käytettävissä online-muokkausta varten käyttämällä Microsoft 365:ttä.
 
 ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Mallin muokkaaminen Office 365:ssä</a>
+### <a name=""></a><a name="EditInOffice365">Mallin muokkaaminen Microsoft 365:ssä</a>
 
-Voit muokkaa mallia Office 365:ssä. Esimerkiksi Office Onlinessa voit muuttaa mallin otsikossa olevien kenttä kehotteiden fonttia arvosta **Normaali** arvoon **Lihavoitu**. Nämä muutokset tallentuvat automaattisesti muokattavaan malliin, joka on tallennettu ensisijaisen perusmallin tallennustilaan (oletusarvona on Azuren blob-säilö). Tämä on määritetty ER-kehykselle.
+Voit muokata mallia Microsoft 365:n avulla. Esimerkiksi Office Onlinessa voit muuttaa mallin otsikossa olevien kenttä kehotteiden fonttia arvosta **Normaali** arvoon **Lihavoitu**. Nämä muutokset tallentuvat automaattisesti muokattavaan malliin, joka on tallennettu ensisijaisen perusmallin tallennustilaan (oletusarvona on Azuren blob-säilö). Tämä on määritetty ER-kehykselle.
 
 ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Kun muokkaat mallia nykyisen aktiivisen palveluntarjoajan omistamasta ER-muodost
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Valitsin **Muokkaa tiedostoa**, mutta sen sijaan että avautuisi Finance and Operationsin **BDM-mallieditori** -sivu, minut on siirretty Office 365 -verkkosivulle.
-Tämä on tunnettu Office 365:n uudelleenohjauksen ongelma. Näin tapahtuu, kun kirjaudut Office 365:een ensimmäisen kerran. Voit välttää tämän ongelman valitsemalla selaimesi **Takaisin**-painikkeen ja siirtymällä takaisin.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Valitsin **Muokkaa tiedostoa**, mutta sen sijaan että avautuisi in **BDM-mallieditori** -sivu Finance and Operationsissa, minut on siirretty Microsoft 365 -verkkosivulle.
+Tämä on tunnettu Microsoft 365:n uudelleenohjauksen ongelma. Näin tapahtuu, kun kirjaudut Microsoft 365:een ensimmäisen kerran. Voit välttää tämän ongelman valitsemalla selaimesi **Takaisin**-painikkeen ja siirtymällä takaisin.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ymmärrän, miten voit muokata mallia käyttämällä Office 365:tä ensimmäisessä sovellusistunnossa ja miten mallia käytetään toisessa sovellusistunnossa mallin säätämiseen, jotta näen, miten muutokset vaikuttavat luotuun liiketoimintaasiakirjaan. Voinko tehdä tämän Office-työpöytäsovelluksen avulla?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ymmärrän, miten voit muokata mallia käyttämällä Microsoft 365:ttä ensimmäisessä sovellusistunnossa ja miten mallia käytetään toisessa sovellusistunnossa mallin säätämiseen, jotta näen, miten muutokset vaikuttavat luotuun liiketoiminta-asiakirjaan. Voinko tehdä tämän Office-työpöytäsovelluksen avulla?
 Kyllä voit. Valitse ensimmäisessä sovellusistunnossa **Avaa työpöytäsovelluksessa**. Malli tallennetaan väliaikaiseen tiedostovarastoon ja avataan Office-työpöytäsovelluksessa. Tee seuraavaksi seuraavat vaiheet, kun haluat esikatsella mallin muutoksia luodussa yritysasiakirjassa:
 
 1. Tee muutoksia malliin käyttämällä Office-työpöytäsovellusta.

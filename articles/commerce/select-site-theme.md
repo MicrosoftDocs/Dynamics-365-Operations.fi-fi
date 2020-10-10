@@ -3,7 +3,7 @@ title: Sivuston teeman valitseminen
 description: Tässä ohjeaiheessa kuvataan, miten sivuston teema määritetään tai miten sitä muutetaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45184c7b0e29d1258b26368fbc7221df91013cc3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002748"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817703"
 ---
 # <a name="select-a-site-theme"></a>Sivuston teeman valitseminen
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ Tässä ohjeaiheessa kuvataan, miten sivuston teema määritetään tai miten si
 
 Sivuston asettelu ja tyyli (esimerkiksi fontit, koot ja värit) määritetään valitsemasi teeman mukaan ja otetaan käyttöön sivustossa. Yrityksen kehittäjä luo ja ottaa käyttöön teeman. Yleiskatsaus teemoista on kohdassa [Teemojen yleiskatsaus](http://). Lisätietoja teemojen luomisesta ja käyttöönotosta on kohdassa [Uuden teeman luominen](http://).
 
-Kun luot sivuston ensimmäisen kerran, se käyttää teemaa, jonka nimi on **Fabrikam**. Tämä oletusteema on osa aloituspakkausta. Kun olet ottanut käyttöön muita teemoja sivustossa, voit määrittää sivuston siten, että se käyttää yhtä niistä.
+Kun luot sivuston ensimmäisen kerran, se käyttää teemaa, jonka nimi on **Fabrikam**. Tämä oletusteema on osa Commercen moduulikirjastoa. Kun olet ottanut käyttöön muita teemoja sivustossa, voit määrittää sivuston siten, että se käyttää yhtä niistä.
 
 ## <a name="select-the-site-theme"></a>Sivuston teeman valitseminen
 
