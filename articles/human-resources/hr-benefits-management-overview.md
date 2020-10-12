@@ -3,7 +3,7 @@ title: Etujen hallinnan yleiskatsaus
 description: Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskuvaus. Tarjoa työntekijöillesi laajennetut etuvaihtoehdot helppokäyttöisellä verkkokokemuksella.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599377"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819762"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskuvaus
 
@@ -41,15 +41,9 @@ Pysyäksesi kilpailukykyisenä sinun on tarjottava laaja etuvalikoima. Näin hou
 
 Jos haluat käyttää demotietoja, sinun on otettava eristysympäristösi uudelleen käyttöön.
 
-## <a name="benefits-management-known-issues"></a>Etujen hallinnan tunnetut ongelmat
-
-### <a name="flex-credit-programs"></a>Bonushyvitysohjelmat
-
-Joustoluotto-ohjelmalle määritetty kokonaisluottoarvo ei näy **Työntekijän etujen suunnitelmat** -lomakkeessa. Jos määrität joustoluotto-ohjelman arvoksi **Ei mitään**, saat virheilmoituksen **Työntekijän etuussuunnitelma** -lomakkeesta, kun valitset ja vahvistat suunnitelmat.
-
 ## <a name="enable-benefits-management"></a>Etujen hallinnan käyttöönotto
 
-Tässä artikkeleissa esitellään, miten ominaisuudet otetaan käyttöön Human Resourcesissa. Siinä kerrotaan myös, mitkä Human Resourcesin olemassa olevat ominaisuudet etujen hallinta korvaa ja mitkä ominaisuudet poistetaan käytöstä, kun etujen hallinta otetaan käyttöön.
+Tässä aiheessa esitellään, miten ominaisuudet otetaan käyttöön Human Resourcesissa. Siinä kerrotaan myös, mitkä Human Resourcesin olemassa olevat ominaisuudet etujen hallinta korvaa ja mitkä ominaisuudet poistetaan käytöstä, kun etujen hallinta otetaan käyttöön.
 
 > [!IMPORTANT]
 > Kun etujenhallinta on otettu käyttöön **Tuotanto**-ympäristössä, sitä ei voi poistaa käytöstä. On suositeltavaa ottaa käyttöön ja testata etujenhallinta **Eristys**-ympäristössä, ennen kuin otat sen käyttöön **Tuotanto** -ympäristössä. Vanhojen etutoimintojen ja uusien etujen hallintatoimintojen välillä on huomattavia eroja, jotka edellyttävät lisäasetuksia ja jotka on testattava ennen niiden asettamista tuotantoon.

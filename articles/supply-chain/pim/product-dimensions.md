@@ -1,14 +1,14 @@
 ---
 title: Tuotedimensiot
 description: 'Tuotedimensioita on neljä: väri, konfigurointi, koko, tyyli ja versio. Tuotedimensiot yhdistetään dimensioryhmiksi ja dimensioryhmät liitetään päätuotteisiin. Tuotedimensioiden yhdistelmät määrittävät sen, kuinka tuotevariantit määritetään.'
-author: cvocph
+author: t-benebo
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,15 +16,15 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657313"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895446"
 ---
 # <a name="product-dimensions"></a>Tuotedimensiot
 
@@ -107,7 +107,7 @@ Kun testaat ratkaisujasi, jotka ovat yhteensopivia versiodimension kanssa, etsi 
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Kartat:** Jos kaikki kartat käyttävät varastodimensioita, näiden karttojen vastaava suhdemääritys on päivitettävä, jotta ne sisällyttävät version dimension. Etsi laajennetusta mallista tai taulukkolaajennuksista tauluja, joiden kentissä on varastodimensioita.
-1. **Microsoft Dynamics 365 Commerce -toiminnot:** Kun se on otettu käyttöön, versiodimensio tulee näkyviin koko Commerce-kohtaisen koodin sisään Dynamics 365 Supply Chain Managementissa. Versiodimensiota ei kuitenkaan vielä tueta Commerce-kanavatietokannassa tai myyntipisteen (POS) sovelluksissa. Tämä toiminta muistuttaa config-dimension nykyistä toimintaa kautta koko Commercen.
+1. **Microsoft Dynamics 365 Commerce -toiminnot:** Kun se on otettu käyttöön, versiodimensio tulee näkyviin koko Commerce-kohtaisen koodin sisään Dynamics 365 Supply Chain Managementissa. Versiodimensiota ei kuitenkaan vielä tueta Commerce-kanavatietokannassa tai myyntipisteen (POS) tai sähköisen kaupankäynnin sovelluksissa. Nämä Commerce-kohtaiset sovellukset eivät tue käyttäjiä, jotka myyvät/lähettävät tai palauttavat/vastaanottavat varastoa versiodimension perusteella. Varaston saatavuushakufunktiot eivät erota varastoa Commerce-sovellusten versiodimensioiden perusteella. Tämä toiminta muistuttaa config-dimension nykyistä toimintaa kautta koko Commercen.
 
 #### <a name="turn-on-the-version-dimension"></a>Ota käyttöön version tuotedimensio
 

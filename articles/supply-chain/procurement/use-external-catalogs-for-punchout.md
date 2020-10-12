@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f7a784e6a66c0c2df9043468e9878de161c3be0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: adeffa101aa5a17543ca531aacde2130a07086e9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207413"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826801"
 ---
-# <a name="use-external-catalogs-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla
+# <a name="use-external-catalogs-for-punchout-e-procurement"></a>Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,3 +50,8 @@ Jos hankintaluokille on useita eri vaihtoehtoja, valitse oikea hankintaluokka en
 Kun rivit on lisätty varasto-ottoehdotukseen, voit lisätä lisää rivejä käyttämättä ulkoisia luetteloita. Vaihtoehtoisesti voit edelleen lisätä rivejä ulkoisten luetteloiden avulla.
 
 Kun varasto-ottoehdotus on valmis, käytä **Työnkulku** > **Lähetä** -toimintoa ja lähetä se hyväksyttäväksi.
+
+### <a name="additional-resources"></a>Lisäresurssit
+
+- [Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen](set-up-external-catalog-for-punchout.md)
+- [Ostojen cXML-parannukset](purchasing-cxml-enhancements.md)

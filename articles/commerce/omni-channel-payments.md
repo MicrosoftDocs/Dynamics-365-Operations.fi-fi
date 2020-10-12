@@ -3,7 +3,7 @@ title: Monikanavaisten maksujen yleiskatsaus
 description: Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commerceissa.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613174"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819810"
 ---
 # <a name="omni-channel-payments-overview"></a>Omnikanavan maksujen yleiskatsaus
 
@@ -92,6 +92,9 @@ Seuraavia Omni-Channel-tukiskenaarioita tuetaan:
 - Osta puhelinkeskuksesta, nouda myymälästä
 - Osta myymälästä A, nouda myymälästä B
 - Osta myymälästä A, toimita asiakkaalle
+
+    > [!NOTE]
+    > Puhelinkeskuksessa suoritetut maksut, jotka yhdistyvät Normaali-maksutoimintoon, on merkittävä muotoon **Ennakkomaksu** = **Kyllä**, jotta ne otetaan huomioon veloitettavassa summassa, kun tilaus kumotaan myyntipisteessä. Normaali-tyypin muita kuin ennakkomaksuja ei tunnisteta, kun tilaus kumotaan myyntipisteessä. 
 
 Näiden skenaarioiden muunnelmia tuetaan myös. Esimerkiksi online-tilauksessa voi olla sekä rivejä, jotka lähetetään asiakkaalle, että rivejä, jotka noudetaan myymälästä. Kaikkia tilauksen toteutusvaihtoehtoja tuetaan Omni-Channel-maksuissa. 
 
@@ -190,8 +193,8 @@ Noudata seuraavia vaiheita, jos haluat suorittaa skenaarion:
 2. Lisää **Tapahtuma**-sivulla Karen Berg tapahtumaan ja kirjoita **2001** käyttämällä numeronäppäimistöä.
 3. Lisää tapahtumaan vähintään yksi rivi.
 4. Valitse **Tilaukset**, jos haluat nähdä tilausvaihtoehdot.
-5. Valitse **Nouda kaikki** ja valitse sitten pyydettäessä **Asiakastilaus**.
-6. Kirjoita hakupalkkiin **Seattle** ja valitse sitten noutopaikaksi **Seattle**-myymälä. 
+5. Valitse **Lähetä kaikki** ja valitse sitten pyydettäessä **Asiakastilaus**.
+6. Valitse lähetystapasivulla **Vakio yön yli** ja hyväksy sitten kuluva päivämäärä lähetyspäiväksi valitsemalla **OK**. 
 7. Valitse **OK**, jos haluat hyväksyä kuluvan päivän noutopäiväksi.
 8. Valitse **Maksa kortilla** jos haluat aloittaa maksun.
 9. Tarjoa korttimaksu määrästä, joka on maksettava talletuksesta. 
@@ -233,5 +236,5 @@ Kun tilaus, jolla on useita tarjouksia ja useita rivejä, on noudettavissa, kass
 
 - [Maksut – usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 -maksuyhdistin Adyenia varten](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203444"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834257"
 ---
 # <a name="vendor-rebates"></a>Toimittajan ostohyvitykset
+
 [!include [banner](../includes/banner.md)]
 
 Toimittajan ostohyvitysten avulla yritykset voivat hallita toimittajan ostohyvitysohjelmiaan paremmin automatisoimalla tehtäviä, joilla hallitaan, seurataan ja haetaan ansaittuja ostohyvityksiä.
@@ -50,6 +51,7 @@ Näitä tehtäviä toteuttavat henkilöt haluavat saavuttaa useita tavoitteita. 
 - Käyttää arvotettua perustetta nykyisille ja tuleville toimittajaneuvotteluille ostohyvityksiin liittyen.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Toimittajan ostohyvityssopimuksen tietojen tarkastelu
+
 Toimittajan ostohyvityssopimus on sopimustietue, joka määrittää toimittajan kanssa sovitut ehdot, joiden perusteella yritys on oikeutettu rahapalkkioon saavuttaessaan määrättyjä ostotavoitteita. Toimittajan ostohyvityssopimukset kirjataan **Ostohyvityssopimukset**-sivulla.
 
 Avaa **Toimittajan ostohyvityssopimukset** -sivu ja valitse **Hankinta** &gt; **Toimittajan ostohyvitykset** &gt; **Ostohyvityssopimukset**.
@@ -60,7 +62,9 @@ Avaa **Toimittajan ostohyvityssopimukset** -sivu ja valitse **Hankinta** &gt; **
 
 Sopimuksen otsikossa määritetään yleiset ehdot, jotka oikeuttavat yrityksen ostohyvitykseen. Käytännössä otsikkotiedot määrittävät, että toimittaja antaa ostohyvityksen, kun tiettyä tuotetta ostetaan tietty määrä. Otsikossa määritetään myös ostohyvityksen mittayksikkö ja päivämäärän laskentatyyppi.
 
-- Voit määrittää **Yleiset**-välilehden **Ostohyvitysvaihtoehdon mittayksikkö** -kenttään, voiko ostotilausrivillä käyttää hyvitysehtona mittayksikköä. 
+- Jos sinulla on **Yhteenveto**-välilehdessä rivejä, joiden **Nimikekoodi** on määritetty muotoon *taulukko* nimikkeen määrittämistä varten, sopimus koskee kyseistä nimikettä. Jos sinulla on rivejä, joiden **Nimikekoodi** on määritetty muotoon *Ryhmä* tai *Kaikki* nimikkeiden määrittämistä varten, toimittajan ostohyvityssopimus käsitellään yksittäin jokaisen nimikekoodia vastaavan nimikkeen osalta eikä kaikkien nimikekoodia vastaavien nimikkeiden osalta.
+
+- Voit määrittää **Yleiset**-välilehden **Ostohyvitysvaihtoehdon mittayksikkö** -kenttään, voiko ostotilausrivillä käyttää hyvitysehtona mittayksikköä.
 
     - **Muunna** – ostotilausrivi on oikeutettu toimittajan ostohyvitykseen sopimuksen mukaisesti. Ostohyvitys myönnetään rivillä käytetystä mittayksiköstä huolimatta.
     - **Täsmälleen** – ostohyvityksellä on oltava sopimuksessa määritetty mittayksikkö, jotta ostohyvitys voidaan myöntää.
@@ -97,6 +101,7 @@ Voit määrittää sopimusriveillä toimittajan ostohyvityssopimukselle tarkempi
 Kun ostotilaukset sijoitetaan toimittajalle, jolla on ostohyvityssopimus yrityksen kanssa, ohjelma tunnistaa kaikki tulevat toimittajan hyvitysmaksut. Jos ostotilauksille voidaan myöntää hyvitys, kullekin tilausriville luodaan hyvitysvaatimus heti, kun ostolasku kirjataan. Prosessi on automaattinen. Voit myöhemmin tarkastella odotettuja ostohyvityksiä ja nähdä hyvitysten vaikutuksen tuotteen kustannuksiin ja katetuottoon.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Tarkastele tietoja hyvityksistä, joita on käytetty ostotilausriville toimittajan ostohyvityssopimuksen mukaisesti
+
 1. Valitse **Ostotilaukset**-sivulla tilausrivi ja sitten **Ostotilausrivi** &gt; **Näytä** &gt; **Hintatiedot**.
 2. Valitse **Hintatiedot**-sivulta **Ostohyvitykset**-pikavälilehti.
 
@@ -106,15 +111,18 @@ Ostohyvityksen tiedot näkyvät myös **Toimittajan ostohyvitys** -kentässä **
 > Varmista **Hankintaparametrit**-sivun **Hinnat**-välilehdellä, että **Ota käyttöön hintatiedot** -asetukseksi on määritetty **Kyllä**. Jos tämä asetus on **Ei**, et voi tarkastella ostohyvityksiä.
 
 ## <a name="review-and-approve-claims"></a>Tarkista ja hyväksy vaatimuksia
+
 Luodut ostohyvitysvaatimukset vastaavat toimittajalta odotettavia, tulevia maksuja. Ennen hyvityslaskun lähettämistä toimittajalle, sopimuksen omistaja haluaa yleensä tarkistaa vaatimukset ja hyväksiä ne. Huomaa kuitenkin, että vaatimuksen tila määrittää, onko vaatimus valmis hyväksyttäväksi.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Vaatimusten tilat ja niiden vaikutus hyväksyntäprosessiin
+
 Kun vaatimus on luotu, sen tilaksi tulee **Lasketaan**, jos ostohyvitys myönnetään kumulatiivisena tai **Laskettu**, jos hyvitys myönnetään laskukohtaisesti. Jos vaatimuksen tila on **Lasketaan**, sen on käytävä läpi laskentaprosessi, josta vastaa Kumuloi-toiminto. Vain vaatimukset, joiden tila on **Laskettu** voidaan sisällyttää hyväksyntäprosessin.
 
 > [!NOTE]
 > Jos **Vaatii hyväksynnän** -asetus toimittajan ostohyvityssopimuksella on **Ei**, kaikkien luotujen vaatimusten tila on **Hyväksytty**. Hyväksyntä on pakollinen vaatimuksille, jotka myönnetään kumulatiivisesti.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Hyväksy vaatimuksia sekä tarkastele kirjauksia ja laskutietoja
+
 Kun saatavat on hyväksytty, ne voidaan käsitellä ostoreskontrassa (A/P). Hyvityslasku (toimittajalasku) luodaan automaattisesti hyvityksen vaatimussummalle. Hyvityksen voi sitten lisätä toimittajan saldoon, ja ostoreskontraryhmä voi sisällyttää sen säännölliseen selvitysprosessiin.
 
 1. Valitse **Hankinta** &gt; **Toimittajan ostohyvitykset** &gt; **Hyvitysvaatimukset** avataksesi hyvitysvaatimuksen.
@@ -153,6 +161,7 @@ Kun saatavat on hyväksytty, ne voidaan käsitellä ostoreskontrassa (A/P). Hyvi
 9. Valitse **Kaikki toimittajat** -sivulla toimittaja, jolta ostohyvitys vastaanotetaan, ja valitse sitten toimintoruudusta **Tapahtumat**. Etsi laskun rivi. Ostohyvityksen summa on lisätty toimittajan saldoon.
 
 ## <a name="summary"></a>Yhteenveto
+
 Toimittajan ostohyvitysten käsittelyyn käytettävä prosessi sisältää useita, manuaalisia seurantatehtäviä, jotka ovat usein pitkäveteisiä. Näiden tehtävien automatisointi toimittajan ostohyvitysten hallintatoiminnon avulla voi helpottaa seuraavien prosessien käsittelyä:
 
 - Tarkkojen ostohyvitysvaatimusten muodostaminen

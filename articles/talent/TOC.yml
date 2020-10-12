@@ -150,7 +150,7 @@
           href: modular-app-tech-faq.md
         - name: Tietojen vieminen Attractista ja Onboardista
           href: attract-onboard-export-data.md
-        - name: Microsoft Power Appsin upottaminen
+        - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Talent-tuen hankkiminen
           href: talent-support.md
@@ -250,5 +250,7 @@
           href: attract-troubleshoot-linkedin.md
         - name: 'Käyttäjä voi käyttää Human Resources -sovellusta, mutta ei Onboard- tai Attract-sovellusta'
           href: user-access-core-hr.md
-        - name: Azure Active Directory -käyttäjiä ei löydy People Pickerissä
+        - name: Azure Active Directory -käyttäjiä ei löydy henkilöiden valitsimessa
           href: people-picker-user-not-found.md
+        - name: Attract-käyttäjät eivät voi hakea töitä uraportaalista
+          href: attract-troubleshoot-career-portal.md

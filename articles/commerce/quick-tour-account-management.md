@@ -3,7 +3,7 @@ title: Tilinhallintasivujen yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: d0e066428e8c4717b5a50144f63e59b87089d286
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527605"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817799"
 ---
 # <a name="account-management-pages-overview"></a>Tilinhallintasivujen yleiskatsaus
 
@@ -46,7 +46,7 @@ Seuraavassa kuvassa on esimerkki tilinhallinnan saapumissivusta.
 
 **Oma profiili** -sivulla on asiakkaan tilitiedot, kuten nimi ja puhelinnumero. Asiakas voi päivittää profiilitietojaan tällä sivulla. Tätä sivua voidaan mukauttaa siten, että se sisältää asiakkaan tilin lisämäärityksiä, kuten markkinointisähköpostiviestien hyväksyntävaihtoehdon.
 
-Seuraavassa kuvassa on esimerkki **Oma profiili** -sivusta, joka on luotu aloituspaketin avulla.
+Seuraavassa kuvassa on esimerkki **Oma profiili** -sivusta, joka on luotu moduulikirjaston avulla.
 
 ![Esimerkki Oma profiili -sivusta](./media/Account-Management-MyProfile.PNG)
 
