@@ -70,6 +70,8 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (tammikuu 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (marraskuu 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (lokakuu 2020)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: LCS-käyttöönottoprojektien siirtäminen eri Azure AD -vuokraajille
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: LCS-toteutusprojektien siirtäminen paikallisesta versiosta pilvipalveluun
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Ostoreskontra
@@ -226,6 +230,16 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Ostoreskontran laskujen täsmäytyksen vahvistuksen asetukset
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Toimittajan laskun automatisointi
+              items:
+                - name: Automaattisten toimittajan laskutusprosessien yleiskuvaus
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Toimittajan laskutusautomaation asetusvaihtoehdot
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Laskujen lähettäminen työnkulkujärjestelmään ja tuotteen vastaanottorivien täsmäyttäminen
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Toimittajan laskujen automaatiotulosten tarkasteleminen
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Laskun täsmäytys ja konsernin sisäiset ostot
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: Toimittajayhteistyön laskutustyötila
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Toimittajan laskuautomaatio
+            - name: Skannattujen tiedostojen laskujen automatisointi
               href: accounts-payable/vendor-invoice-automation.md
             - name: Välittäjäsopimuksen hallinta
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Määritä ja luo myyntireskontran erääntymistiedot
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Myyntireskontran erääntymisraportti
+              href: accounts-receivable/customer-aging.md
             - name: Poiskirjauksen kirjauskansion luominen asiakkaalle
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Lisähuomautusten hallinta
@@ -792,6 +808,10 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Käyttöikään perustuva tasapoisto
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Resurssin vuokraus
+          items:
+            - name: Resurssien vuokrauksen aloitusopas
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Kirjanpito
           items:
             - name: Kirjanpidon yleiskatsaus
@@ -1884,7 +1904,7 @@
                   items:
                     - name: Intian GST-veron yleiskatsaus
                       href: localizations/apac-ind-gst.md
-                    - name: APAC-alueen ja Intian GST-veron lokalisointiin liittyvät uudet tai muuttuneet ominaisuudet
+                    - name: Intian GST-veron lokalisointiin liittyvät uudet tai muuttuneet ominaisuudet
                       items:
                         - name: Version 10.0.0 uudet ja muuttuneet ominaisuudet
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,9 +1932,11 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Version 10.0.12 uudet ja muuttuneet ominaisuudet
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: Version 10.0.13 uudet ja muuttuneet ominaisuudet
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: Intian GST-veron viiteryhmät
                       href: localizations/apac-ind-gst-reference-groups.md
-                    - name: Kassapäätteiden GST-veron integrointi
+                    - name: Kassakoneiden GST-veron integrointi
                       href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
                     - name: Päätietojen määrittäminen
                       items:
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Varastotapahtuma
                       items:
+                        - name: Varastosiirtotilaukset
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: 'Varaston siirtotilaukset, joiden siirron hintaan sisältyy vero'
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Asiakasmaksutapahtuma
@@ -2076,8 +2100,6 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Veron raja-arvojen usein kysytyt kysymykset
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Varastosiirrot
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Italia
               items:
                 - name: Italia – yleiskatsaus
