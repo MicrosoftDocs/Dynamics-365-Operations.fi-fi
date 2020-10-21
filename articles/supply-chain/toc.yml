@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.15 (joulukuu 2020)
+                      href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (marraskuu 2020)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (lokakuu 2020)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Supply Chain Management 10.0.12 (elokuu 2020)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -194,6 +194,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
                 - name: LCS-käyttöönottoprojektien siirtäminen eri Azure AD -vuokraajille
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: LCS-toteutusprojektien siirtäminen paikallisesta versiosta pilvipalveluun
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Maailmanlaajuinen toiminta
@@ -202,6 +204,10 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
             - name: Pakolliset päivitykset
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Intia
+              items:
+                - name: Varastosiirtotilaukset
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Venäjä
               items:
                 - name: Venäjä – yleiskatsaus
@@ -1407,6 +1413,8 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: Pääsuunnittelun suorituskyvyn parantaminen
                   href: master-planning/master-planning-performance.md
+                - name: Aikataulutusmoduulin suorituskyvyn parantaminen
+                  href: master-planning/scheduling-engine-performance.md
                 - name: Pääsuunnitelmat ja multisite-toiminnot
                   items:
                     - name: Pääsuunnittelu ja multisite-toiminnot – yleiskatsaus
@@ -1939,6 +1947,8 @@
                       href: pim/tasks/maintain-bom-product-configuration-model.md
                     - name: Ylläpidä tuotemallin reititystä
                       href: pim/tasks/maintain-route-product-model.md
+                    - name: Määriteperusteiset myyntihinnat rajoiteperusteiselle tuotekonfiguraatiolle
+                      href: pim/attribute-based-product-configurator.md
                     - name: Tuotteen määritysmallin hyväksyminen
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Tietojen siirtäminen tuotemalleja varten
@@ -2035,6 +2045,8 @@
                       href: production-control/config-job-card-device.md
                     - name: Ilmoita valmiiksi työkorttilaitteesta
                       href: production-control/report-finished-job-device.md
+                    - name: Tarjoa yhdistetyn todellisuuden oppaita tuotannon työntekijöiden käyttöön
+                      href: production-control/instruction-guides-in-production-overview.md
                     - name: Tuotantotilauksen tilan palauttaminen
                       href: production-control/reverse-production-order-status.md
                     - name: Materiaalipoikkeusten näkyvyys
@@ -2649,6 +2661,10 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Rekisterikilven etiketin tulostuksen ottaminen käyttöön
                       href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Siirtotilausten luominen varastosovelluksesta
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: Varastosovelluksen tapahtumakäsittely
+                      href: warehousing/warehouse-app-events.md
                     - name: Kappaleen keräilyvahvistus
                       href: warehousing/piece-picking-confirmation.md
                     - name: Pakkausmateriaalit ja maksut
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Prosessioppaan kehys
                       href: warehousing/process-guide-framework.md
+                    - name: Varastosovelluksen yhteysongelmien vianmääritys
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Päivitys ja siirto
                   items:
                     - name: Päivitä varastonhallintaprosessit Microsoft Dynamics AX 2012 -versiosta Finance and Operationsiin

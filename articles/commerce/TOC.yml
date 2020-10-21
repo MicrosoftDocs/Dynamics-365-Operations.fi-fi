@@ -74,8 +74,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations -sovellukset Ranskassa
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Dynamics 365 Commerce -tuen hankkiminen
-              href: retail-support.md
+            - name: Hanki tukea
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Päivitys ja N-1-tuki
               items:
                 - name: Commercen päivitys ja N-1-tuki
@@ -92,6 +92,8 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.15 (tammikuu 2021)
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (marraskuu 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (lokakuu 2020)
@@ -274,6 +276,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
                 - name: LCS-käyttöönottoprojektien siirtäminen eri Azure AD -vuokraajille
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS-toteutusprojektien siirtäminen paikallisesta versiosta pilvipalveluun
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
                 - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations Commerce -projektien toteuttaminen
@@ -706,6 +710,8 @@
                   href: customer-orders-overview.md
                 - name: Asiakkaiden yhdistelmätilaukset
                   href: hybrid-customer-orders.md
+                - name: Myyntipisteen Peruuta tilaus -toiminto
+                  href: enhancedorderrecall.md
             - name: Myyntitilaukset
               items:
                 - name: Puhelinkeskustilauksen luominen
@@ -780,8 +786,6 @@
               href: statement-posting-eod.md
             - name: Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
               href: batch.md
-            - name: Laskelmiin vaikuttavien Commerce-parametrien määrittäminen
-              href: tasks/parameter-configurations-retail-statements.md
             - name: Vähittäismyyntilaskelmiin vaikuttavien maksutapa-asetusten määrittäminen
               href: tasks/payment-configurations-retail-statements.md
             - name: Laskentatyön määrittäminen ja suorittaminen
@@ -866,8 +870,10 @@
                   href: page-elements-overview.md
                 - name: Asiakirjan tilat ja elinkaari
                   href: document-states-overview.md
-                - name: Julkaisuryhmien kanssa työskenteleminen
+                - name: Julkaisuryhmien käsittely
                   href: publish-groups.md
+                - name: Kanavien välisen jakamisen ottaminen käyttöön ja käyttäminen
+                  href: cross-channel-sharing.md
                 - name: Sivuston brändäys ja kaupan tietojen lisääminen
                   items:
                     - name: Logon lisääminen
@@ -1048,6 +1054,24 @@
               items:
                 - name: Verkkokanavaraporttien luominen
                   href: generate-reports.md
+            - name: Kokeilu
+              items:
+                - name: Kokeilut Dynamics 365 Commercessa
+                  href: experimentation-overview.md
+                - name: Kokeilun hypoteesin ja mittarien määrittäminen
+                  href: experimentation-identify.md
+                - name: Kokeilun määrittäminen
+                  href: experimentation-setup.md
+                - name: Kokeilun yhdistäminen ja muokkaaminen
+                  href: experimentation-connect-edit.md
+                - name: Kokeilun esikatselu ja julkaisu
+                  href: experimentation-preview-publish.md
+                - name: Kokeilun suoritus ja seuranta
+                  href: experimentation-run-monitor.md
+                - name: Muunnelman määrittäminen ja kokeilun viimeistely
+                  href: experimentation-review-complete.md
+                - name: Kokeilun tilan tarkistaminen
+                  href: experimentation-status.md
             - name: Virheen käsittely
               items:
                 - name: Mukautettujen vastaussivujen luominen 4xx-/5xx-tilakoodien virheille
@@ -1076,10 +1100,16 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Commerce-kanavan kirjanpidon integroinnin määrittäminen
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Itävalta
               items:
                 - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brasilia
+              items:
+                - name: Commercen lokalisointi – Brasilia
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Itä-Eurooppa
               items:
                 - name: Yleinen
@@ -2052,6 +2082,8 @@
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Teeman laajentaminen perusteemasta
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Mukautettujen resurssien lisääminen mukautuskoodiin
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Komentosarjan lisääminen
                   items:
                     - name: Komentosarjan lisäystoiminnot
@@ -2162,8 +2194,10 @@
                   href: dev-itpro/retail-server-icontroller-extension.md
                 - name: Uuden Retail Server -ohjelmointirajapintalaajennuksen luominen (Retail SDK -versio 10.0.11 ja aiemmat)
                   href: dev-itpro/retail-server-extension.md
-                - name: Retail Typescript ja C# proxy
+                - name: Retailin Typescript- ja C#-välityspalvelimet
                   href: dev-itpro/typescript-proxy-retail-pos.md
+                - name: Käytä Retail Serverin ohjelmointirajapintoja ulkoisissa sovelluksissa
+                  href: dev-itpro/consume-retail-server-api
             - name: Commerce Runtime (CRT) -ratkaisun laajennettavuus
               items:
                 - name: 'CRT:n arkkitehtuuri ja määrittäminen'
