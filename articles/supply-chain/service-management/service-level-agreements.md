@@ -15,68 +15,68 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30b06e537b010b6b32799f76964cb85af892bc3f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 01cdfe519e55ca2a9aa17f4ac181ee675b2793cf
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216134"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982352"
 ---
-# <a name="service-level-agreements-overview"></a><span data-ttu-id="72872-103">Palvelutasosopimukset – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="72872-103">Service level agreements overview</span></span>       
+# <a name="service-level-agreements-overview"></a><span data-ttu-id="16d43-103">Palvelutasosopimukset – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="16d43-103">Service level agreements overview</span></span>       
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="72872-104">Palvelutasosopimus on huoltoyhtiön ja huoltoasiakkaan välinen sopimus.</span><span class="sxs-lookup"><span data-stu-id="72872-104">A service level agreement (SLA) is an agreement between a service company and a service customer.</span></span> <span data-ttu-id="72872-105">Palvelutasosopimuksessa asiakas hyväksyy huoltoyrityksen ongelman vastaanottamiseen ja ongelman ratkaisuun perustuvan vähimmäisvasteajan.</span><span class="sxs-lookup"><span data-stu-id="72872-105">In a SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.</span></span>
+<span data-ttu-id="16d43-104">Palvelutasosopimus on huoltoyhtiön ja huoltoasiakkaan välinen sopimus.</span><span class="sxs-lookup"><span data-stu-id="16d43-104">A service level agreement (SLA) is an agreement between a service company and a service customer.</span></span> <span data-ttu-id="16d43-105">Palvelutasosopimuksessa asiakas hyväksyy huoltoyrityksen ongelman vastaanottamiseen ja ongelman ratkaisuun perustuvan vähimmäisvasteajan.</span><span class="sxs-lookup"><span data-stu-id="16d43-105">In a SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.</span></span>
 
-<span data-ttu-id="72872-106">Palvelutasosopimus määrittää asiakkaille tarjottavan vakiopalveluntason. Sopimus myös ilmaisee huoltoyritykselle selkeästi huoltotyön valmistumisajankohdan.</span><span class="sxs-lookup"><span data-stu-id="72872-106">A SLA enforces a standard level of service that is offered to customers, and also makes it transparent to a service company when a service job should be completed.</span></span>
+<span data-ttu-id="16d43-106">Palvelutasosopimus määrittää asiakkaille tarjottavan vakiopalveluntason. Sopimus myös ilmaisee huoltoyritykselle selkeästi huoltotyön valmistumisajankohdan.</span><span class="sxs-lookup"><span data-stu-id="16d43-106">A SLA enforces a standard level of service that is offered to customers, and also makes it transparent to a service company when a service job should be completed.</span></span>
 
-<span data-ttu-id="72872-107">Palvelusopimuksia voidaan tehdä haluttu määrä, jotta huoltoasiakkaille voidaan tarjota eri tasoisia palveluita.</span><span class="sxs-lookup"><span data-stu-id="72872-107">Any number of SLAs can be created to offer service customers different levels of service.</span></span>
+<span data-ttu-id="16d43-107">Palvelusopimuksia voidaan tehdä haluttu määrä, jotta huoltoasiakkaille voidaan tarjota eri tasoisia palveluita.</span><span class="sxs-lookup"><span data-stu-id="16d43-107">Any number of SLAs can be created to offer service customers different levels of service.</span></span>
 
-## <a name="create-a-service-level-agreement"></a><span data-ttu-id="72872-108">Palvelutasosopimuksen luominen</span><span class="sxs-lookup"><span data-stu-id="72872-108">Create a service level agreement</span></span>
+## <a name="create-a-service-level-agreement"></a><span data-ttu-id="16d43-108">Palvelutasosopimuksen luominen</span><span class="sxs-lookup"><span data-stu-id="16d43-108">Create a service level agreement</span></span>
 
-1.  <span data-ttu-id="72872-109">Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltosopimukset** \> **Palvelutasosopimukset**.</span><span class="sxs-lookup"><span data-stu-id="72872-109">Click **Service management** \> **Setup** \> **Service agreements** \> **Service level agreements**.</span></span>
+1.  <span data-ttu-id="16d43-109">Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltosopimukset** \> **Palvelutasosopimukset**.</span><span class="sxs-lookup"><span data-stu-id="16d43-109">Click **Service management** \> **Setup** \> **Service agreements** \> **Service level agreements**.</span></span>
 
-2.  <span data-ttu-id="72872-110">Kirjoita palvelutasosopimuksen nimi **Palvelutasosopimus**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="72872-110">Type a name for the service level agreement in the **Service level agreement** field.</span></span>
+2.  <span data-ttu-id="16d43-110">Kirjoita palvelutasosopimuksen nimi **Palvelutasosopimus**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="16d43-110">Type a name for the service level agreement in the **Service level agreement** field.</span></span>
 
-3.  <span data-ttu-id="72872-111">Kirjoita aika, jonka haluat sallia huoltopyynnöille, jotka liittyvät palvelutasosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="72872-111">Type the time that you want to allow for completion of service calls that are attached to the service level agreement.</span></span> <span data-ttu-id="72872-112">Valitse sitten kalenteri, jos haluat palvelutasosopimuksen perustuvan tiettyyn kalenteriin.</span><span class="sxs-lookup"><span data-stu-id="72872-112">Then select a calendar if you want to base the service level agreement on a specific calendar.</span></span>
+3.  <span data-ttu-id="16d43-111">Kirjoita aika, jonka haluat sallia huoltopyynnöille, jotka liittyvät palvelutasosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="16d43-111">Type the time that you want to allow for completion of service calls that are attached to the service level agreement.</span></span> <span data-ttu-id="16d43-112">Valitse sitten kalenteri, jos haluat palvelutasosopimuksen perustuvan tiettyyn kalenteriin.</span><span class="sxs-lookup"><span data-stu-id="16d43-112">Then select a calendar if you want to base the service level agreement on a specific calendar.</span></span>
 
-## <a name="apply-a-service-level-agreement"></a><span data-ttu-id="72872-113">Palvelutasosopimuksen kohdistaminen</span><span class="sxs-lookup"><span data-stu-id="72872-113">Apply a service level agreement</span></span>
+## <a name="apply-a-service-level-agreement"></a><span data-ttu-id="16d43-113">Palvelutasosopimuksen kohdistaminen</span><span class="sxs-lookup"><span data-stu-id="16d43-113">Apply a service level agreement</span></span>
 
-<span data-ttu-id="72872-114">Palvelutasosopimus kohdistetaan suoraan huoltosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="72872-114">The SLA is applied directly to a service agreement.</span></span>
+<span data-ttu-id="16d43-114">Palvelutasosopimus kohdistetaan suoraan huoltosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="16d43-114">The SLA is applied directly to a service agreement.</span></span>
 
-<span data-ttu-id="72872-115">Manuaalisesti luotavat ja huoltosopimukseen palvelutasosopimuksen avulla liitettävät huoltotilaukset arvioidaan kyseisen palvelutasosopimuksen avulla.</span><span class="sxs-lookup"><span data-stu-id="72872-115">Service orders that you create manually and attach to a service agreement that has an SLA are measured against that SLA.</span></span>
+<span data-ttu-id="16d43-115">Manuaalisesti luotavat ja huoltosopimukseen palvelutasosopimuksen avulla liitettävät huoltotilaukset arvioidaan kyseisen palvelutasosopimuksen avulla.</span><span class="sxs-lookup"><span data-stu-id="16d43-115">Service orders that you create manually and attach to a service agreement that has an SLA are measured against that SLA.</span></span>
 
-<span data-ttu-id="72872-116">Automaattisesti luotavia huoltotilauksia ei liitetä palvelutasosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="72872-116">Service orders that you create automatically are not attached to an SLA.</span></span>
+<span data-ttu-id="16d43-116">Automaattisesti luotavia huoltotilauksia ei liitetä palvelutasosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="16d43-116">Service orders that you create automatically are not attached to an SLA.</span></span>
 
-## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a><span data-ttu-id="72872-117">Palvelutasosopimuksen kohdistaminen huoltosopimukseen</span><span class="sxs-lookup"><span data-stu-id="72872-117">Apply the service level agreement to the service agreement</span></span>
+## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a><span data-ttu-id="16d43-117">Palvelutasosopimuksen kohdistaminen huoltosopimukseen</span><span class="sxs-lookup"><span data-stu-id="16d43-117">Apply the service level agreement to the service agreement</span></span>
 
-1.  <span data-ttu-id="72872-118">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="72872-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="72872-119">Valitse huoltosopimus, jota haluat käyttää palvelutasosopimuksessa, ja valitse sitten **Muokkaa** **toimintoruudussa**.</span><span class="sxs-lookup"><span data-stu-id="72872-119">Select the service agreement that you want to apply the SLA to, and then click **Edit** on the **Action Pane**.</span></span>
+1.  <span data-ttu-id="16d43-118">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="16d43-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="16d43-119">Valitse huoltosopimus, jota haluat käyttää palvelutasosopimuksessa, ja valitse sitten **Muokkaa** **toimintoruudussa**.</span><span class="sxs-lookup"><span data-stu-id="16d43-119">Select the service agreement that you want to apply the SLA to, and then click **Edit** on the **Action Pane**.</span></span>
 
-2.  <span data-ttu-id="72872-120">Valitse **Palvelutasosopimus**-kentässä palvelutasosopimus, joka liitetään.</span><span class="sxs-lookup"><span data-stu-id="72872-120">In the **Service level agreement** field, select the SLA that you want to assign.</span></span>
+2.  <span data-ttu-id="16d43-120">Valitse **Palvelutasosopimus**-kentässä palvelutasosopimus, joka liitetään.</span><span class="sxs-lookup"><span data-stu-id="16d43-120">In the **Service level agreement** field, select the SLA that you want to assign.</span></span>
 
-## <a name="apply-the-service-level-agreement-to-the-service-agreement-group"></a><span data-ttu-id="72872-121">Palvelutasosopimuksen kohdistaminen huoltosopimusryhmään</span><span class="sxs-lookup"><span data-stu-id="72872-121">Apply the service level agreement to the service agreement group</span></span>
+## <a name="apply-the-service-level-agreement-to-the-service-agreement-group"></a><span data-ttu-id="16d43-121">Palvelutasosopimuksen kohdistaminen huoltosopimusryhmään</span><span class="sxs-lookup"><span data-stu-id="16d43-121">Apply the service level agreement to the service agreement group</span></span>
 
-1.  <span data-ttu-id="72872-122">Valitse **Palvelunhallinta** \> **Asetukset** \> **Huoltosopimukset** \> **Huoltosopimusryhmät**.</span><span class="sxs-lookup"><span data-stu-id="72872-122">Click **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.</span></span>
+1.  <span data-ttu-id="16d43-122">Valitse **Palvelunhallinta** \> **Asetukset** \> **Huoltosopimukset** \> **Huoltosopimusryhmät**.</span><span class="sxs-lookup"><span data-stu-id="16d43-122">Click **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.</span></span>
 
-2.  <span data-ttu-id="72872-123">Valitse **Palvelutasosopimus**-kentässä palvelutasosopimus, joka liitetään.</span><span class="sxs-lookup"><span data-stu-id="72872-123">In the **Service level agreement** field, select the SLA that you want to assign.</span></span>
+2.  <span data-ttu-id="16d43-123">Valitse **Palvelutasosopimus**-kentässä palvelutasosopimus, joka liitetään.</span><span class="sxs-lookup"><span data-stu-id="16d43-123">In the **Service level agreement** field, select the SLA that you want to assign.</span></span>
 
-## <a name="track-time-on-a-service-order-against-an-sla"></a><span data-ttu-id="72872-124">Huoltotilaukseen kuluvan ajan seuraaminen palvelutasosopimuksen mukaan</span><span class="sxs-lookup"><span data-stu-id="72872-124">Track time on a service order against an SLA</span></span>
+## <a name="track-time-on-a-service-order-against-an-sla"></a><span data-ttu-id="16d43-124">Huoltotilaukseen kuluvan ajan seuraaminen palvelutasosopimuksen mukaan</span><span class="sxs-lookup"><span data-stu-id="16d43-124">Track time on a service order against an SLA</span></span>
 
-<span data-ttu-id="72872-125">Luodessasi uuden huoltotilauksen huoltosopimukseen, johon palvelutasosopimus on liitetty, huollon toimituksen aikaväli alkaa ja järjestelmä alkaa seurata toimitusaikaa.</span><span class="sxs-lookup"><span data-stu-id="72872-125">When you create a new service order for a service agreement that an SLA is assigned to, the time interval for the delivery of the service is initiated, and the system starts to track the delivery time.</span></span> <span data-ttu-id="72872-126">Lisäksi voit määrittää seuraavat asetukset:</span><span class="sxs-lookup"><span data-stu-id="72872-126">Additionally, you can set the following options:</span></span>
+<span data-ttu-id="16d43-125">Luodessasi uuden huoltotilauksen huoltosopimukseen, johon palvelutasosopimus on liitetty, huollon toimituksen aikaväli alkaa ja järjestelmä alkaa seurata toimitusaikaa.</span><span class="sxs-lookup"><span data-stu-id="16d43-125">When you create a new service order for a service agreement that an SLA is assigned to, the time interval for the delivery of the service is initiated, and the system starts to track the delivery time.</span></span> <span data-ttu-id="16d43-126">Lisäksi voit määrittää seuraavat asetukset:</span><span class="sxs-lookup"><span data-stu-id="16d43-126">Additionally, you can set the following options:</span></span>
 
-  - <span data-ttu-id="72872-127">Voit käynnistää ja pysäyttää huoltotilauksen ajanoton, kun haluat rekisteröidä huoltotilauksiin kuluneen kokonaisajan.</span><span class="sxs-lookup"><span data-stu-id="72872-127">You can start and stop time recording on the service order to register the total amount of time that is spent on service orders.</span></span>
+  - <span data-ttu-id="16d43-127">Voit käynnistää ja pysäyttää huoltotilauksen ajanoton, kun haluat rekisteröidä huoltotilauksiin kuluneen kokonaisajan.</span><span class="sxs-lookup"><span data-stu-id="16d43-127">You can start and stop time recording on the service order to register the total amount of time that is spent on service orders.</span></span>
 
-  - <span data-ttu-id="72872-128">Voit seurata yhteensopivuutta palvelutasosopimuksessa määritetyllä aikavälillä.</span><span class="sxs-lookup"><span data-stu-id="72872-128">You can monitor compliance with the time interval that is set in the service level agreement.</span></span>
+  - <span data-ttu-id="16d43-128">Voit seurata yhteensopivuutta palvelutasosopimuksessa määritetyllä aikavälillä.</span><span class="sxs-lookup"><span data-stu-id="16d43-128">You can monitor compliance with the time interval that is set in the service level agreement.</span></span>
 
-  - <span data-ttu-id="72872-129">Voit määrittää syykoodit, jotka on määritettävä, jos palvelutasosopimuksen aikaväli ylitetään.</span><span class="sxs-lookup"><span data-stu-id="72872-129">You can define reason codes that must be set if the time interval of the service level agreement is exceeded.</span></span>
+  - <span data-ttu-id="16d43-129">Voit määrittää syykoodit, jotka on määritettävä, jos palvelutasosopimuksen aikaväli ylitetään.</span><span class="sxs-lookup"><span data-stu-id="16d43-129">You can define reason codes that must be set if the time interval of the service level agreement is exceeded.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="72872-130">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="72872-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="16d43-130">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="16d43-130">See also</span></span>
 
-[<span data-ttu-id="72872-131">Palvelutasosopimusten yhteensopivuuden tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="72872-131">View compliance with service level agreements</span></span>](view-compliance-with-service-level-agreements.md)
+[<span data-ttu-id="16d43-131">Palvelutasosopimusten yhteensopivuuden tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="16d43-131">View compliance with service level agreements</span></span>](view-compliance-with-service-level-agreements.md)
 
   
 

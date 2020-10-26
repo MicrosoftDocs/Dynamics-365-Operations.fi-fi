@@ -13,50 +13,50 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bdc4b5c31d9a478a5226ae6b5e8c776de3b661dd
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 11e006e41f467a594521dfc601f46b4d1b492ce5
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144832"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982955"
 ---
-# <a name="create-sales-tax-transactions-on-documents"></a><span data-ttu-id="eb6ad-103">Luo arvonlisäverotapahtumia asiakirjoihin</span><span class="sxs-lookup"><span data-stu-id="eb6ad-103">Create sales tax transactions on documents</span></span>
+# <a name="create-sales-tax-transactions-on-documents"></a><span data-ttu-id="23b44-103">Luo arvonlisäverotapahtumia asiakirjoihin</span><span class="sxs-lookup"><span data-stu-id="23b44-103">Create sales tax transactions on documents</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="eb6ad-104">Asiakirjojen arvonlisävero lasketaan määrittämällä arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä asiakirjariveille.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-104">Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines.</span></span> <span data-ttu-id="eb6ad-105">Näiden oletusarvot saadaan päätiedoista, mutta arvoja voi muuttaa manuaalisesti tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-105">These default from master data but can be changed manually if necessary.</span></span> <span data-ttu-id="eb6ad-106">Laskettu arvonlisävero voidaan tarkistaa rivi- ja asiakirjatasolla.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-106">The calculated sales tax can be checked on a line and document level.</span></span> <span data-ttu-id="eb6ad-107">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-107">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="23b44-104">Asiakirjojen arvonlisävero lasketaan määrittämällä arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä asiakirjariveille.</span><span class="sxs-lookup"><span data-stu-id="23b44-104">Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines.</span></span> <span data-ttu-id="23b44-105">Näiden oletusarvot saadaan päätiedoista, mutta arvoja voi muuttaa manuaalisesti tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="23b44-105">These default from master data but can be changed manually if necessary.</span></span> <span data-ttu-id="23b44-106">Laskettu arvonlisävero voidaan tarkistaa rivi- ja asiakirjatasolla.</span><span class="sxs-lookup"><span data-stu-id="23b44-106">The calculated sales tax can be checked on a line and document level.</span></span> <span data-ttu-id="23b44-107">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="23b44-107">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="eb6ad-108">Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-108">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="eb6ad-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-109">Click New.</span></span>
-3. <span data-ttu-id="eb6ad-110">Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-110">In the Customer account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="eb6ad-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-111">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="eb6ad-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-112">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="eb6ad-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-113">Click OK.</span></span>
-7. <span data-ttu-id="eb6ad-114">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-114">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="eb6ad-115">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-115">In the Item number field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="eb6ad-116">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-116">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="eb6ad-117">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-117">In the Unit price field, enter a number.</span></span>
-11. <span data-ttu-id="eb6ad-118">Laajenna tai tiivistä Rivitiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-118">Expand or collapse the Line details section.</span></span>
-12. <span data-ttu-id="eb6ad-119">Valitse Asetukset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-119">Click the Setup tab.</span></span>
-13. <span data-ttu-id="eb6ad-120">Avaa haku valitsemalla Nimikkeen arvonlisäveroryhmä -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-120">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="eb6ad-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-121">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="eb6ad-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-122">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="eb6ad-123">Valitse Myyntitiedot.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-123">Click Financials.</span></span>
-17. <span data-ttu-id="eb6ad-124">Valitse Arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-124">Click Sales tax.</span></span>
-18. <span data-ttu-id="eb6ad-125">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-125">Click OK.</span></span>
-19. <span data-ttu-id="eb6ad-126">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-126">Click Add line.</span></span>
-20. <span data-ttu-id="eb6ad-127">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-127">In the list, mark the selected row.</span></span>
-21. <span data-ttu-id="eb6ad-128">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-128">In the Item number field, click the drop-down button to open the lookup.</span></span>
-22. <span data-ttu-id="eb6ad-129">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-129">In the list, find and select the desired record.</span></span>
-23. <span data-ttu-id="eb6ad-130">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-130">In the list, click the link in the selected row.</span></span>
-24. <span data-ttu-id="eb6ad-131">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-131">In the Unit price field, enter a number.</span></span>
-25. <span data-ttu-id="eb6ad-132">Avaa haku valitsemalla Nimikkeen arvonlisäveroryhmä -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-132">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
-26. <span data-ttu-id="eb6ad-133">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-133">In the list, find and select the desired record.</span></span>
-27. <span data-ttu-id="eb6ad-134">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-134">In the list, click the link in the selected row.</span></span>
-28. <span data-ttu-id="eb6ad-135">Valitse toimintoruudussa Myynti.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-135">On the Action Pane, click Sell.</span></span>
-29. <span data-ttu-id="eb6ad-136">Valitse Arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-136">Click Sales tax.</span></span>
-30. <span data-ttu-id="eb6ad-137">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="eb6ad-137">Click OK.</span></span>
+1. <span data-ttu-id="23b44-108">Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.</span><span class="sxs-lookup"><span data-stu-id="23b44-108">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="23b44-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="23b44-109">Click New.</span></span>
+3. <span data-ttu-id="23b44-110">Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="23b44-110">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="23b44-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="23b44-111">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="23b44-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="23b44-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="23b44-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="23b44-113">Click OK.</span></span>
+7. <span data-ttu-id="23b44-114">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="23b44-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="23b44-115">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="23b44-115">In the Item number field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="23b44-116">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="23b44-116">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="23b44-117">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="23b44-117">In the Unit price field, enter a number.</span></span>
+11. <span data-ttu-id="23b44-118">Laajenna tai tiivistä Rivitiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="23b44-118">Expand or collapse the Line details section.</span></span>
+12. <span data-ttu-id="23b44-119">Valitse Asetukset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="23b44-119">Click the Setup tab.</span></span>
+13. <span data-ttu-id="23b44-120">Avaa haku valitsemalla Nimikkeen arvonlisäveroryhmä -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="23b44-120">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="23b44-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="23b44-121">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="23b44-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="23b44-122">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="23b44-123">Valitse Myyntitiedot.</span><span class="sxs-lookup"><span data-stu-id="23b44-123">Click Financials.</span></span>
+17. <span data-ttu-id="23b44-124">Valitse Arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="23b44-124">Click Sales tax.</span></span>
+18. <span data-ttu-id="23b44-125">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="23b44-125">Click OK.</span></span>
+19. <span data-ttu-id="23b44-126">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="23b44-126">Click Add line.</span></span>
+20. <span data-ttu-id="23b44-127">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="23b44-127">In the list, mark the selected row.</span></span>
+21. <span data-ttu-id="23b44-128">Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="23b44-128">In the Item number field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="23b44-129">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="23b44-129">In the list, find and select the desired record.</span></span>
+23. <span data-ttu-id="23b44-130">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="23b44-130">In the list, click the link in the selected row.</span></span>
+24. <span data-ttu-id="23b44-131">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="23b44-131">In the Unit price field, enter a number.</span></span>
+25. <span data-ttu-id="23b44-132">Avaa haku valitsemalla Nimikkeen arvonlisäveroryhmä -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="23b44-132">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+26. <span data-ttu-id="23b44-133">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="23b44-133">In the list, find and select the desired record.</span></span>
+27. <span data-ttu-id="23b44-134">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="23b44-134">In the list, click the link in the selected row.</span></span>
+28. <span data-ttu-id="23b44-135">Valitse toimintoruudussa Myynti.</span><span class="sxs-lookup"><span data-stu-id="23b44-135">On the Action Pane, click Sell.</span></span>
+29. <span data-ttu-id="23b44-136">Valitse Arvonlisävero.</span><span class="sxs-lookup"><span data-stu-id="23b44-136">Click Sales tax.</span></span>
+30. <span data-ttu-id="23b44-137">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="23b44-137">Click OK.</span></span>
 
