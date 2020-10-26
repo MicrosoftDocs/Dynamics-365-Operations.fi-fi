@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895374"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989238"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -37,10 +37,10 @@ Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reitit
 
 Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Supply Chain Managementin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 
--   **Reititys** – Reititys määrittää tuotantoprosessin rakenteen. Toisin sanoen se määrittää työvaiheiden järjestyksen.
--   **Työvaihe** – Työvaihe tunnistaa reitissä nimetyn vaiheen, kuten **kokoonpanon**. Sama työvaihe voi esiintyä useissa reitityksissä ja sillä voi olla useita työvaihenumeroita.
--   **Työvaihesuhde** – Työvaihesuhde määrittää työvaiheen operatiiviset ominaisuudet, kuten asetus- ja ajoajan, kustannusluokat, kulutuksen parametrit ja resurssivaatimukset. Työvaihesuhteen vuoksi työvaiheen operationaaliset ominaisuudet voivat vaihdella sen mukaan, missä reitityksessä työvaihetta käytetään tai valmistettavien tuotteiden mukaan.
--   **Reititysversio** – Reititysversio määrittää reitityksen, jota käytetään tuotteen tai tuotevariantin tuottamisessa. Reititysversio mahdollistaa reititysten käyttämisen uudelleen tuotteissa tai reitityksen muuttamisen ajan kuluessa. Reititysversiot mahdollistavat myös eri reititysten käyttämisen saman tuotteen tuottamisessa. Tällöin käytettävä reititys riippuu eri tekijöistä, kuten sijainnista ja tuotettavasta määrästä.
+- **Reititys** – Reititys määrittää tuotantoprosessin rakenteen. Toisin sanoen se määrittää työvaiheiden järjestyksen.
+- **Työvaihe** – Työvaihe tunnistaa reitissä nimetyn vaiheen, kuten **kokoonpanon**. Sama työvaihe voi esiintyä useissa reitityksissä ja sillä voi olla useita työvaihenumeroita.
+- **Työvaihesuhde** – Työvaihesuhde määrittää työvaiheen operatiiviset ominaisuudet, kuten asetus- ja ajoajan, kustannusluokat, kulutuksen parametrit ja resurssivaatimukset. Työvaihesuhteen vuoksi työvaiheen operationaaliset ominaisuudet voivat vaihdella sen mukaan, missä reitityksessä työvaihetta käytetään tai valmistettavien tuotteiden mukaan.
+- **Reititysversio** – Reititysversio määrittää reitityksen, jota käytetään tuotteen tai tuotevariantin tuottamisessa. Reititysversio mahdollistaa reititysten käyttämisen uudelleen tuotteissa tai reitityksen muuttamisen ajan kuluessa. Reititysversiot mahdollistavat myös eri reititysten käyttämisen saman tuotteen tuottamisessa. Tällöin käytettävä reititys riippuu eri tekijöistä, kuten sijainnista ja tuotettavasta määrästä.
 
 ## <a name="routes"></a>Reititykset
 Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työvaiheiden järjestyksen. Jokaiselle työvaiheelle määritetään työvaihenumero ja seuraava työvaihe. Työvaiheiden järjestys muodostaa reittiverkoston, joka voidaan esittää suunnatussa kaaviossa, jolla on vähintään yksi aloituspiste ja yksi päätepiste. Supply Chain Managementissa reititykset erotetaan toisistaan rakennetyypin perusteella. Reititystyypit ovat yksinkertainen reititys ja reittiverkosto. Tuotannonohjauksen parametrien avulla voi määrittää, ovatko käytössä ainoastaan yksinkertaiset reititykset vai myös monimutkaisemmat reittiverkostot.
@@ -60,9 +60,9 @@ Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reitti
 [![Reittiverkosto](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
-> -   Vaikka useilla työvaiheilla olisi sama seuraava työvaihe (esimerkiksi työvaiheet 30 ja 40 edellä olleessa kuvassa), niitä ei voida taata, että ne suoritettaisiin rinnakkain. Resurssien saatavuus ja kapasiteetti saattaa rajoittaa tapaa, joilla työvaiheet ajoitetaan.
-> -   Työvaihenumerona ei voi käyttää nollaa (0). Kyseinen numero on varattu. Sitä käytetään määritettäessä tilanne, jossa reitityksen viimeisellä työvaiheella ei ole seuraavaa työvaihetta.
+> - Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
+> - Vaikka useilla työvaiheilla olisi sama seuraava työvaihe (esimerkiksi työvaiheet 30 ja 40 edellä olleessa kuvassa), niitä ei voida taata, että ne suoritettaisiin rinnakkain. Resurssien saatavuus ja kapasiteetti saattaa rajoittaa tapaa, joilla työvaiheet ajoitetaan.
+> - Työvaihenumerona ei voi käyttää nollaa (0). Kyseinen numero on varattu. Sitä käytetään määritettäessä tilanne, jossa reitityksen viimeisellä työvaiheella ei ole seuraavaa työvaihetta.
 
 ### <a name="parallel-operations"></a>Rinnakkaiset työvaiheet
 
@@ -99,12 +99,12 @@ Työvaihesuhde määrittää työvaiheen operatiiviset ominaisuudet, kuten asetu
 ## <a name="operation-relations"></a>Työvaihesuhteet
 Työvaiheen seuraavia operationaalisia ominaisuuksia ylläpidetään työvaihesuhteessa:
 
--   Kustannusluokat
--   Kulutuksen parametrit
--   Käsittelyajat
--   Käsiteltävät määrät
--   Resurssivaatimukset
--   Huomautukset ja ohjeet
+- Kustannusluokat
+- Kulutuksen parametrit
+- Käsittelyajat
+- Käsiteltävät määrät
+- Resurssivaatimukset
+- Huomautukset ja ohjeet
 
 Voit määrittää useita työvaihesuhteita samalle työvaiheelle. Kukin työvaihesuhde koskee kuitenkin yhtä tiettyä työvaihetta. Se tallentaa nimikeryhmään liittyvän reitityksen, vapautetun tuotteen tai vapautettujen tuotteiden joukon ominaisuudet. Tämän vuoksi samaa työvaihetta voidaan käyttää useissa reitityksissä, joilla on erilaiset operationaaliset ominaisuudet. Lisäksi päätietojen ylläpitäminen on helpompaa, jos käytössä on vakiotyövaiheet, joilla on samat operationaaliset ominaisuudet riippumatta käytettävästä reitityksestä ja valmistettavasta tuotteesta. Työvaihesuhteen vaikutusalue määritetään **Nimikekoodi**, **Nimikesuhde**-, **Reitityskoodi**- ja **Reitityssuhde**-ominaisuuksien avulla seuraavassa taulukossa esitetyllä tavalla.
 
@@ -166,12 +166,13 @@ Kun Supply Chain Management hakee vapautetulle tuotteelle soveltuvinta työvaihe
 Tämän vuoksi työvaihetta tulisi käyttää vain kerran kussakin reitityksessä. Jos työvaihe esiintyy samassa reitityksessä useita kertoja, kaikilla työvaiheen esiintymillä on sama työvaihesuhde. Esiintymillä ei voi olla erilaisia ominaisuudet (esimerkiksi ajoaika).
 
 ## <a name="route-versions"></a>Reititysversiot
+
 Reititysversioita käytetään tuotteiden tuotannossa esiintyvien vaihtelujen huomioonottamiseen tai tuotantoprosessin tarkempaan hallintaan. Ne määrittävät, mitä reititystä käytetään, kun tietty vapautettu tuote tai vapautettu tuotevariantti valmistetaan. Seuraavien rajoitusten avulla voit määrittää, mitä reitityksiä vapautetussa tuotteessa käytetään:
 
--   Tuotedimensiot (koko, väri, tyyli tai kokoonpano)
--   Tuotantomäärä
--   Tuotantopaikka
--   Tuotantopäivämäärä
+- Tuotedimensiot (koko, väri, tyyli tai kokoonpano)
+- Tuotantomäärä
+- Tuotantopaikka
+- Tuotantopäivämäärä
 
 Kun tuotetta valmistetaan tietyssä toimipaikassa, tietty määrä tai tiettynä ajankohtana, voit määrittää oletusreititysversioksi tietyn reititysversion. Huomaa kuitenkin, että annetulle vapautetulle tuotteelle ja annettujen rajoitusten joukolle sallitaan vain yksi aktiivinen reititys.  
 
@@ -194,6 +195,7 @@ Jos ylläpidät lokia, johon tallennetaan kunkin reititysversion hyväksyjä ja 
 Uusien tai muuttuneiden reititysten ja reititysversioiden hyväksymisen ja aktivoimisen tuotemallitapaus tarjoaa helpon tavan nähdä reititysversion rajoitukset kokonaisuudessaan. Voit hyväksyä ja aktivoida myös kaikki reititykset, jotka liittyvät tiettyyn yhden työvaiheen muutokseen. Tämän jälkeen voit tallentaa tulokset tuotemuutostapaukseen.
 
 ## <a name="maintaining-routes"></a>Reititysten ylläpitäminen
+
 Liiketoimintatarpeiden perusteella voit mahdollisesti vähentää työtä, joka vaaditaan prosessimääritysten ylläpitämiseen.
 
 ### <a name="making-routes-independent-of-resources"></a>Reittien määrittäminen resursseista riippumattomiksi
@@ -224,10 +226,10 @@ Tällöin **Työvaihesuhteet**-sivusta tulee ensisijainen kohde, kun ylläpidät
 
 Jos et määritä operatiivista resurssia tai resurssiryhmää osaksi työvaiheen resurssivaatimuksia, käytettävissä olevat resurssit saattavat toimia eri nopeuksilla. Tämän vuoksi työvaiheen käsittelyyn kuluva aika saattaa vaihdella. Voit ratkaista tämän ongelman määrittämällä työvaihesuhteen **Kaava**-kenttään prosessiajan laskentatavan. Valittavissa ovat seuraavat vaihtoehdot:
 
--   **Vakio** – (oletusvalinta) Laskelmassa käytetään vain työvaihesuhteen kenttiä. Määritetty ajoaika kerrotaan tilausmäärällä.
--   **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. **Käsittelyaika** lasketaan **kapasiteetilla** jaetulla **tilausmäärällä**.
--   **Erä** – Erän kapasiteetti lasketaan työvaihesuhteen tietojen avulla. Erien määrä ja prosessiaika voidaan laskea tilausmäärän perusteella.
--   **Resurssierä** – Tämä vaihtoehto on periaatteessa sama kuin **Erä**-vaihtoehto. Laskenta sisältää kuitenkin operatiivisen resurssin **Eräkapasiteetti**-kentän. Aika siis riippuu resurssista.
+- **Vakio** – (oletusvalinta) Laskelmassa käytetään vain työvaihesuhteen kenttiä. Määritetty ajoaika kerrotaan tilausmäärällä.
+- **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. **Käsittelyaika** lasketaan **kapasiteetilla** jaetulla **tilausmäärällä**.
+- **Erä** – Erän kapasiteetti lasketaan työvaihesuhteen tietojen avulla. Erien määrä ja prosessiaika voidaan laskea tilausmäärän perusteella.
+- **Resurssierä** – Tämä vaihtoehto on periaatteessa sama kuin **Erä**-vaihtoehto. Laskenta sisältää kuitenkin operatiivisen resurssin **Eräkapasiteetti**-kentän. Aika siis riippuu resurssista.
 
 ### <a name="set-up-route-groups"></a>Määritä reititysryhmät
 
