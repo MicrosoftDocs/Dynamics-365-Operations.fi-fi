@@ -16,29 +16,29 @@ ms.custom: 2534
 ms.assetid: a5b64301-a011-4469-afaf-e4c9164ef9c6
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc980e3a3dfff6d163812396613a1493f4428a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 766c857cca603f84bb7fcef2c7eea3bc76620c19
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213788"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3976889"
 ---
-# <a name="determine-the-bom-version"></a><span data-ttu-id="be9b5-103">Määritä tuoterakenneversio</span><span class="sxs-lookup"><span data-stu-id="be9b5-103">Determine the BOM version</span></span>
+# <a name="determine-the-bom-version"></a><span data-ttu-id="86c31-103">Määritä tuoterakenneversio</span><span class="sxs-lookup"><span data-stu-id="86c31-103">Determine the BOM version</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="be9b5-104">Jos nimikkeen suunniteltuna oletustilaustyyppinä on kysynnän hajottamisen aikana Tuotanto, suunnitteluohjelma etsii kelvollisen tuoterakenneversion toimipaikan perusteella.</span><span class="sxs-lookup"><span data-stu-id="be9b5-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
+<span data-ttu-id="86c31-104">Jos nimikkeen suunniteltuna oletustilaustyyppinä on kysynnän hajottamisen aikana Tuotanto, suunnitteluohjelma etsii kelvollisen tuoterakenneversion toimipaikan perusteella.</span><span class="sxs-lookup"><span data-stu-id="86c31-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
 
-<span data-ttu-id="be9b5-105">Toimipaikan dimensio on aina tiedossa. Se ilmoitetaan kysyntätapahtumassa.</span><span class="sxs-lookup"><span data-stu-id="be9b5-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="be9b5-106">Seuraavan prosessin avulla määritetään käytettävä tuoterakenneversio:</span><span class="sxs-lookup"><span data-stu-id="be9b5-106">The following process is used to determine the BOM version to use:</span></span>
+<span data-ttu-id="86c31-105">Toimipaikan dimensio on aina tiedossa. Se ilmoitetaan kysyntätapahtumassa.</span><span class="sxs-lookup"><span data-stu-id="86c31-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="86c31-106">Seuraavan prosessin avulla määritetään käytettävä tuoterakenneversio:</span><span class="sxs-lookup"><span data-stu-id="86c31-106">The following process is used to determine the BOM version to use:</span></span>
 
--   <span data-ttu-id="be9b5-107">Jos nimikkeelle on määritetty tuoterakenneversio kysynnän toimipaikassa, käytössä on toimipaikkakohtainen tuoterakenne.</span><span class="sxs-lookup"><span data-stu-id="be9b5-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
--   <span data-ttu-id="be9b5-108">Jos nimikkeelle ei ole määritetty toimipaikkakohtaista tuoterakenneversiota kysynnän toimipaikassa, käytössä on yleinen tuoterakenne.</span><span class="sxs-lookup"><span data-stu-id="be9b5-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="be9b5-109">Yleinen tuoterakenne ei ilmaise toimipaikkaa, ja sitä voi käyttää useissa toimipaikoissa.</span><span class="sxs-lookup"><span data-stu-id="be9b5-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="be9b5-110">Jos yleinen tuoterakenne on käytettävissä, ohjelma käyttää sitä.</span><span class="sxs-lookup"><span data-stu-id="be9b5-110">If there is a general BOM, it is used.</span></span>
--   <span data-ttu-id="be9b5-111">Jos käytettävissä ei ole yleistä tuoterakenneversiota, kysynnän hajottaminen keskeytyy.</span><span class="sxs-lookup"><span data-stu-id="be9b5-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
+-   <span data-ttu-id="86c31-107">Jos nimikkeelle on määritetty tuoterakenneversio kysynnän toimipaikassa, käytössä on toimipaikkakohtainen tuoterakenne.</span><span class="sxs-lookup"><span data-stu-id="86c31-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
+-   <span data-ttu-id="86c31-108">Jos nimikkeelle ei ole määritetty toimipaikkakohtaista tuoterakenneversiota kysynnän toimipaikassa, käytössä on yleinen tuoterakenne.</span><span class="sxs-lookup"><span data-stu-id="86c31-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="86c31-109">Yleinen tuoterakenne ei ilmaise toimipaikkaa, ja sitä voi käyttää useissa toimipaikoissa.</span><span class="sxs-lookup"><span data-stu-id="86c31-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="86c31-110">Jos yleinen tuoterakenne on käytettävissä, ohjelma käyttää sitä.</span><span class="sxs-lookup"><span data-stu-id="86c31-110">If there is a general BOM, it is used.</span></span>
+-   <span data-ttu-id="86c31-111">Jos käytettävissä ei ole yleistä tuoterakenneversiota, kysynnän hajottaminen keskeytyy.</span><span class="sxs-lookup"><span data-stu-id="86c31-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
 
-<span data-ttu-id="be9b5-112">Kaikkien kelvollisten toimipaikkakohtaisten tai yleisten tuoterakenneversioiden on täytettävä tarvittavat päivämäärä- ja määräehdot.</span><span class="sxs-lookup"><span data-stu-id="be9b5-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
+<span data-ttu-id="86c31-112">Kaikkien kelvollisten toimipaikkakohtaisten tai yleisten tuoterakenneversioiden on täytettävä tarvittavat päivämäärä- ja määräehdot.</span><span class="sxs-lookup"><span data-stu-id="86c31-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
 
 
 
