@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Finland
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: a3407bf7c93a2bafa41566994f93ffeb2bc59973
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: 449f960e2075b0d97aacda33622ec228b6c052b7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161842"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983038"
 ---
 # <a name="finland-overview"></a>Suomi – yleiskatsaus
 
