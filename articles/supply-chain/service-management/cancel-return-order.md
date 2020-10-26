@@ -15,37 +15,37 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 904d0e026cf05ab70a245546e41977de0a42a721
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 496608dc0175dd9f396b6b135cc8f7d692b4d6c7
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202994"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978056"
 ---
-# <a name="cancel-a-return-order"></a><span data-ttu-id="c7e03-103">Palautustilauksen peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="c7e03-103">Cancel a return order</span></span> 
+# <a name="cancel-a-return-order"></a><span data-ttu-id="4f061-103">Palautustilauksen peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="4f061-103">Cancel a return order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="c7e03-104">Poistamisen sijaan voit peruuttaa palautustilauksen, kun haluat tallentaa tiedot suunnitellusta palautuksesta.</span><span class="sxs-lookup"><span data-stu-id="c7e03-104">You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.</span></span>
+<span data-ttu-id="4f061-104">Poistamisen sijaan voit peruuttaa palautustilauksen, kun haluat tallentaa tiedot suunnitellusta palautuksesta.</span><span class="sxs-lookup"><span data-stu-id="4f061-104">You can cancel a return order, instead of deleting it, when you want to save a record of the planned return.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="c7e03-105">Vain palautustilaukset, joiden tilana on <STRONG>Luotu</STRONG>, voidaan peruuttaa.</span><span class="sxs-lookup"><span data-stu-id="c7e03-105">Only return orders that have a <STRONG>Created</STRONG> status can be canceled.</span></span> <span data-ttu-id="c7e03-106">Palautustilauksia, joiden tilana on <STRONG>Avoin</STRONG> tai <STRONG>Suljettu</STRONG>, ei voi peruuttaa.</span><span class="sxs-lookup"><span data-stu-id="c7e03-106">Return orders with an <STRONG>Open</STRONG> or <STRONG>Closed</STRONG> status cannot be canceled.</span></span></P>
+> <P><span data-ttu-id="4f061-105">Vain palautustilaukset, joiden tilana on <STRONG>Luotu</STRONG>, voidaan peruuttaa.</span><span class="sxs-lookup"><span data-stu-id="4f061-105">Only return orders that have a <STRONG>Created</STRONG> status can be canceled.</span></span> <span data-ttu-id="4f061-106">Palautustilauksia, joiden tilana on <STRONG>Avoin</STRONG> tai <STRONG>Suljettu</STRONG>, ei voi peruuttaa.</span><span class="sxs-lookup"><span data-stu-id="4f061-106">Return orders with an <STRONG>Open</STRONG> or <STRONG>Closed</STRONG> status cannot be canceled.</span></span></P>
 
 
-1.  <span data-ttu-id="c7e03-107">Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Palautustilaukset** \> **Kaikki palautustilaukset**.</span><span class="sxs-lookup"><span data-stu-id="c7e03-107">Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.</span></span>
+1.  <span data-ttu-id="4f061-107">Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Palautustilaukset** \> **Kaikki palautustilaukset**.</span><span class="sxs-lookup"><span data-stu-id="4f061-107">Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.</span></span>
     
-    <span data-ttu-id="c7e03-108">–TAI–</span><span class="sxs-lookup"><span data-stu-id="c7e03-108">–or–</span></span>
+    <span data-ttu-id="4f061-108">–TAI–</span><span class="sxs-lookup"><span data-stu-id="4f061-108">–or–</span></span>
     
-    <span data-ttu-id="c7e03-109">Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Palautustilaukset** \> **Luodut palautustilaukset**.</span><span class="sxs-lookup"><span data-stu-id="c7e03-109">Click **Sales and marketing** \> **Common** \> **Return orders** \> **Created return orders**.</span></span>
+    <span data-ttu-id="4f061-109">Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Palautustilaukset** \> **Luodut palautustilaukset**.</span><span class="sxs-lookup"><span data-stu-id="4f061-109">Click **Sales and marketing** \> **Common** \> **Return orders** \> **Created return orders**.</span></span>
 
-2.  <span data-ttu-id="c7e03-110">Valitse peruutettava tilaus.</span><span class="sxs-lookup"><span data-stu-id="c7e03-110">Select the return order to cancel.</span></span>
+2.  <span data-ttu-id="4f061-110">Valitse peruutettava tilaus.</span><span class="sxs-lookup"><span data-stu-id="4f061-110">Select the return order to cancel.</span></span>
 
-3.  <span data-ttu-id="c7e03-111">Valitse **Peruuta tilaus**.</span><span class="sxs-lookup"><span data-stu-id="c7e03-111">Click **Cancel order**.</span></span>
+3.  <span data-ttu-id="4f061-111">Valitse **Peruuta tilaus**.</span><span class="sxs-lookup"><span data-stu-id="4f061-111">Click **Cancel order**.</span></span>
 
 
 

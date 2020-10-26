@@ -13,62 +13,62 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6009f6de76155ea7c2982b28fe4505232447c9c8
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 6fa9c6d4862a49bbf0b5ecbb8c0c3d573e0f49e6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895302"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3986140"
 ---
-# <a name="create-predefined-product-variants"></a><span data-ttu-id="dc8d9-103">Luo ennalta määritetyt tuotevariantit</span><span class="sxs-lookup"><span data-stu-id="dc8d9-103">Create predefined product variants</span></span>
+# <a name="create-predefined-product-variants"></a><span data-ttu-id="15fff-103">Luo ennalta määritetyt tuotevariantit</span><span class="sxs-lookup"><span data-stu-id="15fff-103">Create predefined product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="dc8d9-104">Tässä menettelyssä selvitetään tuotevariantien luonti päätuotteelle käyttämällä tuotedimensioiden yhdistelmiä.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-104">This procedure walks through creating product variants for a product master using the combinations of product dimensions.</span></span> <span data-ttu-id="dc8d9-105">Tämän menettelyn luomiseen on käytetty USMF-demoyritystä.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-105">The demo company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="15fff-104">Tässä menettelyssä selvitetään tuotevariantien luonti päätuotteelle käyttämällä tuotedimensioiden yhdistelmiä.</span><span class="sxs-lookup"><span data-stu-id="15fff-104">This procedure walks through creating product variants for a product master using the combinations of product dimensions.</span></span> <span data-ttu-id="15fff-105">Tämän menettelyn luomiseen on käytetty USMF-demoyritystä.</span><span class="sxs-lookup"><span data-stu-id="15fff-105">The demo company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-product-master"></a><span data-ttu-id="dc8d9-106">Luo päätuote</span><span class="sxs-lookup"><span data-stu-id="dc8d9-106">Create a product master</span></span>
-1. <span data-ttu-id="dc8d9-107">Siirry kohtaan Tuotetietojen hallinta > Tuotteet > Päätuotteet.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-107">Go to Product information management > Products > Product masters.</span></span>
-2. <span data-ttu-id="dc8d9-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-108">Click New.</span></span>
-3. <span data-ttu-id="dc8d9-109">Kirjoita arvo Tuotenumero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-109">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="dc8d9-110">Tuotetunnuksen antaminen manuaalisesti on pakollista vain, jos tuotetunnuskenttään ei ole määritetty numerosarjaa.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-110">Entering a product number manually is only required if no number sequence has been set for the product number field.</span></span> <span data-ttu-id="dc8d9-111">Toisin sanoen, tämän vaiheen voi ohittaa, jos kentälle on määritetty numerosarja.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-111">In other words, skip the step if number sequence has been set for the field.</span></span>  
-4. <span data-ttu-id="dc8d9-112">Kirjoita arvo Tuotteen nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-112">In the Product name field, type a value.</span></span>
-5. <span data-ttu-id="dc8d9-113">Syötä tai valitse arvo Tuotedimension ryhmä -kentässä.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-113">In the Product dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="dc8d9-114">Valitse tuotedimensioryhmäksi SizeCol (koko ja väri).</span><span class="sxs-lookup"><span data-stu-id="dc8d9-114">Select the product dimension group SizeCol (Size and Color).</span></span>  
-6. <span data-ttu-id="dc8d9-115">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-115">Click OK.</span></span>
+## <a name="create-a-product-master"></a><span data-ttu-id="15fff-106">Luo päätuote</span><span class="sxs-lookup"><span data-stu-id="15fff-106">Create a product master</span></span>
+1. <span data-ttu-id="15fff-107">Siirry kohtaan Tuotetietojen hallinta > Tuotteet > Päätuotteet.</span><span class="sxs-lookup"><span data-stu-id="15fff-107">Go to Product information management > Products > Product masters.</span></span>
+2. <span data-ttu-id="15fff-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="15fff-108">Click New.</span></span>
+3. <span data-ttu-id="15fff-109">Kirjoita arvo Tuotenumero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-109">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="15fff-110">Tuotetunnuksen antaminen manuaalisesti on pakollista vain, jos tuotetunnuskenttään ei ole määritetty numerosarjaa.</span><span class="sxs-lookup"><span data-stu-id="15fff-110">Entering a product number manually is only required if no number sequence has been set for the product number field.</span></span> <span data-ttu-id="15fff-111">Toisin sanoen, tämän vaiheen voi ohittaa, jos kentälle on määritetty numerosarja.</span><span class="sxs-lookup"><span data-stu-id="15fff-111">In other words, skip the step if number sequence has been set for the field.</span></span>  
+4. <span data-ttu-id="15fff-112">Kirjoita arvo Tuotteen nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-112">In the Product name field, type a value.</span></span>
+5. <span data-ttu-id="15fff-113">Syötä tai valitse arvo Tuotedimension ryhmä -kentässä.</span><span class="sxs-lookup"><span data-stu-id="15fff-113">In the Product dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="15fff-114">Valitse tuotedimensioryhmäksi SizeCol (koko ja väri).</span><span class="sxs-lookup"><span data-stu-id="15fff-114">Select the product dimension group SizeCol (Size and Color).</span></span>  
+6. <span data-ttu-id="15fff-115">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="15fff-115">Click OK.</span></span>
 
-## <a name="add-product-dimensions"></a><span data-ttu-id="dc8d9-116">Lisää tuotedimensiot</span><span class="sxs-lookup"><span data-stu-id="dc8d9-116">Add product dimensions</span></span>
-1. <span data-ttu-id="dc8d9-117">Valitse Tuotedimensiot.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-117">Click Product dimensions.</span></span>
-    * <span data-ttu-id="dc8d9-118">Tässä esimerkissä havainnollistetaan, kuinka tuotedimensiot voi antaa käsin.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="dc8d9-119">Voit myös valita koko-, väri- tai tyyliryhmän, joka sisältää haluamasi tuotedimension arvot.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-119">You can also choose to select a size, color or style group that includes the product dimension values you want to use.</span></span>  
-2. <span data-ttu-id="dc8d9-120">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-120">Click New.</span></span>
-3. <span data-ttu-id="dc8d9-121">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="dc8d9-122">Syötä tai valitse arvo Koko-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-122">In the Size field, enter or select a value.</span></span>
-5. <span data-ttu-id="dc8d9-123">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-123">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="dc8d9-124">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-124">Click New.</span></span>
-7. <span data-ttu-id="dc8d9-125">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-125">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="dc8d9-126">Syötä tai valitse arvo Koko-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-126">In the Size field, enter or select a value.</span></span>
-9. <span data-ttu-id="dc8d9-127">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-127">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="dc8d9-128">Valitse Värit-välilehti.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-128">Click the Colors tab.</span></span>
-11. <span data-ttu-id="dc8d9-129">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-129">Click New.</span></span>
-12. <span data-ttu-id="dc8d9-130">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-130">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="dc8d9-131">Syötä tai valitse Väri-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-131">In the Color field, enter or select a value.</span></span>
-14. <span data-ttu-id="dc8d9-132">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-132">In the Name field, type a value.</span></span>
-15. <span data-ttu-id="dc8d9-133">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-133">Click New.</span></span>
-16. <span data-ttu-id="dc8d9-134">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-134">In the list, mark the selected row.</span></span>
-17. <span data-ttu-id="dc8d9-135">Syötä tai valitse Väri-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-135">In the Color field, enter or select a value.</span></span>
-18. <span data-ttu-id="dc8d9-136">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-136">In the Name field, type a value.</span></span>
-19. <span data-ttu-id="dc8d9-137">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-137">Click Save.</span></span>
-20. <span data-ttu-id="dc8d9-138">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-138">Close the page.</span></span>
+## <a name="add-product-dimensions"></a><span data-ttu-id="15fff-116">Lisää tuotedimensiot</span><span class="sxs-lookup"><span data-stu-id="15fff-116">Add product dimensions</span></span>
+1. <span data-ttu-id="15fff-117">Valitse Tuotedimensiot.</span><span class="sxs-lookup"><span data-stu-id="15fff-117">Click Product dimensions.</span></span>
+    * <span data-ttu-id="15fff-118">Tässä esimerkissä havainnollistetaan, kuinka tuotedimensiot voi antaa käsin.</span><span class="sxs-lookup"><span data-stu-id="15fff-118">This example shows how to manually enter product dimensions.</span></span> <span data-ttu-id="15fff-119">Voit myös valita koko-, väri- tai tyyliryhmän, joka sisältää haluamasi tuotedimension arvot.</span><span class="sxs-lookup"><span data-stu-id="15fff-119">You can also choose to select a size, color or style group that includes the product dimension values you want to use.</span></span>  
+2. <span data-ttu-id="15fff-120">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="15fff-120">Click New.</span></span>
+3. <span data-ttu-id="15fff-121">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="15fff-121">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="15fff-122">Syötä tai valitse arvo Koko-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-122">In the Size field, enter or select a value.</span></span>
+5. <span data-ttu-id="15fff-123">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-123">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="15fff-124">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="15fff-124">Click New.</span></span>
+7. <span data-ttu-id="15fff-125">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="15fff-125">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="15fff-126">Syötä tai valitse arvo Koko-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-126">In the Size field, enter or select a value.</span></span>
+9. <span data-ttu-id="15fff-127">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-127">In the Name field, type a value.</span></span>
+10. <span data-ttu-id="15fff-128">Valitse Värit-välilehti.</span><span class="sxs-lookup"><span data-stu-id="15fff-128">Click the Colors tab.</span></span>
+11. <span data-ttu-id="15fff-129">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="15fff-129">Click New.</span></span>
+12. <span data-ttu-id="15fff-130">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="15fff-130">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="15fff-131">Syötä tai valitse Väri-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="15fff-131">In the Color field, enter or select a value.</span></span>
+14. <span data-ttu-id="15fff-132">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-132">In the Name field, type a value.</span></span>
+15. <span data-ttu-id="15fff-133">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="15fff-133">Click New.</span></span>
+16. <span data-ttu-id="15fff-134">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="15fff-134">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="15fff-135">Syötä tai valitse Väri-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="15fff-135">In the Color field, enter or select a value.</span></span>
+18. <span data-ttu-id="15fff-136">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="15fff-136">In the Name field, type a value.</span></span>
+19. <span data-ttu-id="15fff-137">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="15fff-137">Click Save.</span></span>
+20. <span data-ttu-id="15fff-138">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="15fff-138">Close the page.</span></span>
 
-## <a name="generate-product-variants"></a><span data-ttu-id="dc8d9-139">Luo tuotevariantit</span><span class="sxs-lookup"><span data-stu-id="dc8d9-139">Generate product variants</span></span>
-1. <span data-ttu-id="dc8d9-140">Valitse Tuotevariantin koot.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-140">Click Product variants.</span></span>
-2. <span data-ttu-id="dc8d9-141">Valitse Muuttujaehdotukset.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-141">Click Variant suggestions.</span></span>
-3. <span data-ttu-id="dc8d9-142">Valitse Valitse kaikki.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-142">Click Select all.</span></span>
-    * <span data-ttu-id="dc8d9-143">Tässä esimerkissä kaikki mahdolliset muuttujat on valittu.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-143">In this example, all possible variants are selected.</span></span> <span data-ttu-id="dc8d9-144">Jos ainoastaan saatavilla olevien tuotedimensioyhdistelmien alijoukkoa käytetään varianttien luomiseen, voit valita yksittäisiä merkintöjä.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-144">If only a subset of the possible product dimension combinations will be used to create variants, you can select the individual entries.</span></span>  
-4. <span data-ttu-id="dc8d9-145">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-145">Click Create.</span></span>
-    * <span data-ttu-id="dc8d9-146">Voit luoda kuvaukset kaikille varianteille tuotedimensioarvojen yhdistelmien perusteella.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-146">You can generate descriptions for all your variants based on the combination of product dimension values.</span></span> <span data-ttu-id="dc8d9-147">Kuvaukset ovat valinnaisia.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-147">The descriptions are optional.</span></span>  
-5. <span data-ttu-id="dc8d9-148">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="dc8d9-148">Click Save.</span></span>
+## <a name="generate-product-variants"></a><span data-ttu-id="15fff-139">Luo tuotevariantit</span><span class="sxs-lookup"><span data-stu-id="15fff-139">Generate product variants</span></span>
+1. <span data-ttu-id="15fff-140">Valitse Tuotevariantin koot.</span><span class="sxs-lookup"><span data-stu-id="15fff-140">Click Product variants.</span></span>
+2. <span data-ttu-id="15fff-141">Valitse Muuttujaehdotukset.</span><span class="sxs-lookup"><span data-stu-id="15fff-141">Click Variant suggestions.</span></span>
+3. <span data-ttu-id="15fff-142">Valitse Valitse kaikki.</span><span class="sxs-lookup"><span data-stu-id="15fff-142">Click Select all.</span></span>
+    * <span data-ttu-id="15fff-143">Tässä esimerkissä kaikki mahdolliset muuttujat on valittu.</span><span class="sxs-lookup"><span data-stu-id="15fff-143">In this example, all possible variants are selected.</span></span> <span data-ttu-id="15fff-144">Jos ainoastaan saatavilla olevien tuotedimensioyhdistelmien alijoukkoa käytetään varianttien luomiseen, voit valita yksittäisiä merkintöjä.</span><span class="sxs-lookup"><span data-stu-id="15fff-144">If only a subset of the possible product dimension combinations will be used to create variants, you can select the individual entries.</span></span>  
+4. <span data-ttu-id="15fff-145">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="15fff-145">Click Create.</span></span>
+    * <span data-ttu-id="15fff-146">Voit luoda kuvaukset kaikille varianteille tuotedimensioarvojen yhdistelmien perusteella.</span><span class="sxs-lookup"><span data-stu-id="15fff-146">You can generate descriptions for all your variants based on the combination of product dimension values.</span></span> <span data-ttu-id="15fff-147">Kuvaukset ovat valinnaisia.</span><span class="sxs-lookup"><span data-stu-id="15fff-147">The descriptions are optional.</span></span>  
+5. <span data-ttu-id="15fff-148">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="15fff-148">Click Save.</span></span>
 
