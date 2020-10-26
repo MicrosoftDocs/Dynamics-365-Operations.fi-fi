@@ -3,7 +3,7 @@ title: Teamsin Human Resources -sovellus
 description: Tässä ohjeaiheessa käsitellään Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovellusta.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/01/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828911"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3930014"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
 [!include [banner](includes/preview-feature.md)]
 
-Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksen avulla työntekijät voivat tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldonsa tietoja Microsoft Teamsissa. Työntekijät voivat pyytää tietoja botin avustuksella. **Poissaoloaika**-välilehdessä on tarkempia tietoja. Lisäksi he voivat lähettää ihmisille tietoja tulevista poissaoloista ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
+Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksen avulla työntekijät voivat tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldonsa tietoja Microsoft Teamsissa. Työntekijät voivat pyytää tietoja botin avustuksella. **Poissaolo**-välilehdessä on lisätietoja. Lisäksi lähettää tietoja tulevista poissaoloista voidaan lähettää ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
 
 ![Human Resources Teamsin lomasovelluksen botti](./media/hr-admin-teams-leave-app-bot.png)
 
@@ -90,6 +90,22 @@ Kun olet ottanut ilmoitukset käyttöön Human Resourcesin Teams-sovelluksessa, 
 | Saldo on virheellinen, kun lähetetään tulevaisuudessa olevaa päivämäärää koskeva poissaolo. | Ennakointi ei ole vielä käytettävissä. Saldo näkyy kuluvalta päivältä. |
 | **Tarkistuksessa**-tilassa olevaa pyyntöä ei voi peruuttaa. | Tätä toimintoa ei tällä hetkellä tueta ja se lisätään tulevaan julkaisuun. |
 | Saldotiedot lasketaan kuluvasta päivästä alkaen. | Järjestelmä ei tällä hetkellä näytä jaksotuskauden saldoa, vaikka se on määritetty loma- ja poissaoloparametreissa. |
+
+## <a name="troubleshooting"></a>Vianmääritys
+
+Jos käyttäjällä on vaikeuksia Human Resources Teams -sovellukseen kirjautumisessa tai sen käyttämisessä, seuraavat vianmääritysohjeet voivat olla hyödyllisiä. Jos ongelmat jatkuvat vianmäärityksen jälkeen, ota yhteys tukeen. Lisätietoja on kohdassa [Pyydä tukea](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kirjautuminen Human Resources -sovelluksen ei onnistu Teamsissa
+
+Jos käyttäjä ottaa yhteyttä, koska ei pysty kirjautumaan sovellukseen, tarkista, että käyttäjään on liitettyä työntekijätietue Human Resourcesissa.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Virhe hyväksyttäessä lomapyyntöjä Human Resources -sovelluksessa Teamsissa
+
+Jos käyttäjä saa virheilmoituksen yrittäessään hyväksyä lomapyyntöjä Teams-sovelluksessa, tee seuraava vianmääritys:
+
+1. Tarkista, että käyttäjän Teams-tili on sama tili, jolla käyttäjä käyttää Human Resourcesiin.
+
+2. Tarkista myös, että käyttäjä saa hyväksyä pyynnön. Voit tehdä tämän loman hyväksymistyönkulun asetuksissa. Lisätietoja lomapyyntöjen työnkulusta on kohdassa [Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 

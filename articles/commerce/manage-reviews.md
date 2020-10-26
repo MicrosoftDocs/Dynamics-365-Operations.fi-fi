@@ -1,9 +1,9 @@
 ---
 title: Hallitse luokituksia ja arvosteluja
-description: Tässä ohjeaiheessa kerrotaan, miten luokituksia ja arvosteluita hallitaan Microsoft Dynamics 365 Commercen luokitusten ja arvostelujen valvontatyökalun avulla.
+description: Tässä ohjeaiheessa käsitellään luokitusten ja arvostelujen hallintaa Microsoft Dynamics 365 Commerce -sivustonmuodostimessa.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 01/30/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,38 +18,30 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
-ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027239"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974003"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hallitse luokituksia ja arvosteluja
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten luokituksia ja arvosteluita hallitaan Microsoft Dynamics 365 Commercen luokitusten ja arvostelujen valvontatyökalun avulla.
+Tässä ohjeaiheessa käsitellään luokitusten ja arvostelujen hallintaa Microsoft Dynamics 365 Commerce -sivustonmuodostimessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
-Dynamics 365 Commerce käyttää Microsoft Azure Cognitive Service -palvelua arvostelun tekstin automaattisessa valvonnassa havaitsemalla sopimattomat sanat. Lisäksi valvojat voivat käyttää luokitusten ja arvostelujen valvontatyökalua seuraavissa manuaalisissa tehtävissä:
+Dynamics 365 Commerce käyttää Microsoft Azure Cognitive Service -palvelua arvostelun tekstin automaattisessa valvonnassa havaitsemalla sopimattomat sanat. Valvojat voivat toteuttaa myös seuraavat manuaaliset tehtävät Dynamics 365 Commerce -sivustonmuodostimessa.
 
 - Arvostelujen valvominen vastaamalla niihin tai poistamalla ne.
 - Asiakkaan arvostelujen poistaminen asiakkaan pyynnöstä.
 - Joukkotuonnin luokitusten ja arvostelujen tiedot kaikille tuotteille Microsoft Power BI -mallissa niin, että luokitusten ja arvostelujen trendit voidaan analysoida.
 
-## <a name="access-ratings-and-reviews-moderation-features"></a>Käyttöoikeuksien luokitusten ja arviointien valvontatoiminnot
-
-Voit käyttää verkkokauppasivuston hallintatyökalun luokituksia ja arviointien valvontatoimintoja noudattamalla seuraavia ohjeita.
-
-1. Kirjaudu [Microsoft Lifecycle Servicesiin (LCS)](https://lcs.dynamics.com).
-1. Avaa projekti, joka sisältää sen ympäristön, jossa haluat alustaa sähköisen kaupankäynnin.
-1. Valitse **Ympäristöt**-osassa ympäristö.
-1. Valitse **Ympäristön ominaisuudet** -kohdassa **Vähittäiskaupan hallinta**.
-1. Valitse **Verkkokauppa**-välilehden **Linkit**-kohdassa **Verkkokauppasivuston hallintatyökalu**.
-
 ## <a name="read-a-review"></a>Arvostelun lukeminen 
+
+Commerce-sivustonmuodostimessa voi lukea arvostelun seuraavasti.
 
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Valvonta**.
 1. Suodata tuotteen arvostelut tuotteen tunnuksen, tuotteen nimen tai arvostelun tekstin mukaan sivun oikeassa yläkulmassa olevan hakukentän avulla.
@@ -62,7 +54,7 @@ Lisäsuodattimien avulla voit rajoittaa arvosteluita kauden, arvioinnin, kanavan
 
 Joskus tuotteen ostaneet asiakkaat ilmaisevat tyytyväisyyttä tai tyytymättömyyttä tai he eivät tiedä, miten tuotetta käytetään. Valvoja voi vastata arvosteluun. Tämä vastaus näkyy yhdessä arvostelun kanssa sivustossa. 
 
-Voit vastata arvosteluun seuraavasti.
+Commerce-sivustonmuodostimessa voi vastata arvostelun seuraavasti.
 
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Valvonta**.
 1. Etsi ja valitse arvostelu, johon haluat vastata.
@@ -76,20 +68,20 @@ Voit vastata arvosteluun seuraavasti.
 
 Joskus valvojien kannattaa poistaa asiakkaiden arvosteluita liiketoiminnallisista syistä. 
 
-Voit poistaa arvostelun seuraavasti.
+Commerce-sivustonmuodostimessa voi poistaa arvostelun seuraavasti.
 
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Valvonta**.
 1. Etsi ja valitse arvostelu, jonka haluat poistaa.
-1. Valitse oikeanpuoleisessa ominaisuusruudussa poiston syy ja valitse sitten **Poista**.
+1. Valitse oikeassa ominaisuusruudussa poiston syy **Poista arvostelu** -kohdassa ja valitse sitten **Poista**.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Asiakkaan arvostelujen poistaminen asiakkaan pyynnöstä 
 
 Joskus asiakkaat haluavat, että luokitukset ja arvostelut poistetaan pysyvästi sähköisen kaupankäynnin sivustosta. Valvoja, joka vastaanottaa poistopyynnön asiakkaalta, voi poistaa asiakkaan tiedot käyttämällä arvostelun poistotoimintoa. Valvoja tarvitsee asiakkaan sen sähköpostiosoitteen, jota on käytetty sisäänkirjauksessa ja arvostelujen antamisessa, jotta hän voi etsiä ja poistaa asiakkaan tiedot. 
 
-Voit etsiä ja poistaa asiakkaan tietoja seuraavasti.
+Commerce-sivustonmuodostimessa voi etsiä asiakkaan tietoja ja poistaa niitä seuraavasti.
 
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Poista**.
-1. Syötä **Hae käyttäjiä sähköpostiosoitteen avulla** -kenttään asiakkaan sähköpostiosoite ja valitse sitten **Hae**.
+1. Anna **Hae käyttäjiä sähköpostiosoitteen avulla** -ruutuun asiakkaan sähköpostiosoite ja valitse sitten **Hae**.
 1. Jos asiakkaalla on arvosteluaktiviteetteja (esimerkiksi arvostelun lähetyksiä, äänestyksiä toisen asiakkaan arvosteluista tai kommentteja toisen asiakkaan arvostelusta), näkyvissä on tuloksia. Jokaisen nimikkeen kohdalla on **Poista**-painike.
 1. Valitse jokaisen poistettavan nimikkeen kohdalla **Poista**. Kun sinulta kysytään vahvistusta, valitse **Kyllä**. 
     
@@ -101,18 +93,18 @@ Voit etsiä ja poistaa asiakkaan tietoja seuraavasti.
 
 ## <a name="download-ratings-and-reviews-data"></a>Luokitusten ja arvostelujen tietojen lataaminen
 
-Luokitusten ja arvostelujen valvontatyökalun avulla valvojat voivat tuoda luokitusten ja arvostelujen tiedot joukkona ja analysoida trendejä. Perusmittarit sisältävä Power BI -malli on käytettävissä. Tämän mallin avulla valvojat voivat yhdistää joukkona tuodut tiedot ja tarkastella koontinäyttöä. Heidän ei tarvitse luoda mukautettua koontinäyttöä. Valvojat voivat myös mukauttaa Power BI -mallin vastaamaan erityistarpeita. 
+Commerce-sivustonmuodostimessa avulla valvojat voivat tuoda luokitusten ja arvostelujen tiedot joukkona ja analysoida trendejä. Perusmittarit sisältävä Power BI -malli on käytettävissä. Tämän mallin avulla valvojat voivat yhdistää joukkona tuodut tiedot ja tarkastella koontinäyttöä. Heidän ei tarvitse luoda mukautettua koontinäyttöä. Valvojat voivat myös mukauttaa Power BI -mallin vastaamaan erityistarpeita. 
 
-Voit ladata luokitusten ja arvostelujen tiedot seuraavasti.
+Commerce-sivustonmuodostimessa voi ladata luokituksia ja arvosteluja seuraavasti.
 
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Raportointi**.
-1. Valitse **Lataa arvostelujen tiedot**, jos haluat ladata luokitusten ja arvostelujen tiedot joukkona CSV-muodossa.
+1. Valitse **Lataa arvostelun tiedot**, jos haluat ladata luokitusten ja arvostelujen tiedot joukkona CSV-muodossa.
 
 ## <a name="view-ratings-and-reviews-trends"></a>Luokitusten ja arvostelujen trendien tarkasteleminen
 
 Valvojat voivat ladata Power BI -mallin niin, että he voivat tarkastella trendejä koontinäytössä.
 
-Voit tarkastella luokitusten ja arvostelujen tietoja seuraavasti.
+Commerce-sivustonmuodostimessa voi tarkastella luokitus- ja arvostelutrendejä seuraavasti.
 
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Raportointi**.
 1. Lataa malli valitsemalla **PowerBI-malli**.

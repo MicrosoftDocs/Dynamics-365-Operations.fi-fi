@@ -3,7 +3,7 @@ title: Sähköisen laskutuksen lisäosan käytön aloittaminen
 description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen lisäosan käytön Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 61933bb846383932d7dd73e9c4d3c2db7a515a98
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835948"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971469"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Sähköisen laskutuksen lisäosan käytön aloittaminen
 
@@ -62,7 +62,7 @@ Voit käyttää sähköisen laskutuksen lisäosaa nykyisellä lisenssilläsi. Pa
 Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on toteuduttava:
 
 - Pääsy LCS-tiliisi.
-- LCS-käyttöönottoprojekti, joka sisältää Financen tai Supply Chain Managementin version 10.0.12 tai sitä uudemman.
+- LCS-käyttöönottoprojekti, joka sisältää Financen tai Supply Chain Managementin version 10.0.13 tai sitä uudemman.
 - Pääsy RCS-tiliisi.
 - RCS-tilin globalisointiominaisuuden käyttöönotto **Toiminnonhallinta**-moduulin kautta. Lisätietoja [Regulatory Configuration Services (RCS) – globalisointitoiminnot](rcs-globalization-feature.md)
 - Luo avainsäilöresurssi ja tallennustili Azuressa. Lisätietoja [Azure-tallennustilin ja -avainsäilön luominen](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -85,16 +85,18 @@ Seuraavassa kuvassa esitetään viisi päävaihetta, jotka suoritat tässä aihe
 ## <a name="lcs-setup"></a>LCS-asetukset
 
 1. Kirjaudu LCS-tilille.
-2. Valitse LCS-käyttöönottoprojekti. Ennen kuin voit valita projektin, sen on oltava käynnissä.
-3. Valitse **Ympäristöapuohjelmat**-pikavälilehdessä **Asenna uusi apuohjelma**.
-4. Valitse **Liikeasiakirjojen lähetys**.
-5. Syötä **Apuohjelman määritys**-valintaikkunan **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä arvo on kiinteä arvo.
-6. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi tunnus.
+2. Valitse **Esiversiotoiminnon hallinta** -ruutu ja valitse sitten **Julkisen esiversion toiminnot** -kenttäryhmässä **BusinessDocumentSubmission**.
+3. Merkitse **Esiversiotoiminto käytössä** -kenttä.
+4. Valitse LCS-käyttöönottoprojekti. Ennen kuin voit valita projektin, sen on oltava käynnissä.
+5. Valitse **Ympäristöapuohjelmat**-pikavälilehdessä **Asenna uusi apuohjelma**.
+6. Valitse **Liikeasiakirjojen lähetys**.
+7. Syötä **Apuohjelman määritys**-valintaikkunan **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä arvo on kiinteä arvo.
+8. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi tunnus.
 
     ![Apuohjelman valintaikkunan määrittäminen LCS:ssä](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Hyväksy ehdot valitsemalla valintaruutu.
-8. Valitse **Asenna**.
+9. Hyväksy ehdot valitsemalla valintaruutu.
+10. Valitse **Asenna**.
 
 ## <a name="rcs-setup"></a>RCS-asetukset
 
@@ -124,7 +126,7 @@ RCS:n määrityksen aikana suoritat seuraavat tehtävät:
 
     ![Avainsäilön URI -kenttä](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. Valitse **Varmenne**-pikavälilehdessä **Lisää** ja syötä digitaalisten tunnisteiden nimet ja avainsäilöjen salasanat. Molemmat arvojoukot määritetään Azuren avainsäilöresurssissa.
+7. Valitsemalla **Varmenteet**-pikavälilehdessä **Lisää** voit antaa kaikki digitaaliset varmennenimet ja avainsäilön salaisuudet, joita tarvitaan luotettavien yhteyksien muodostamiseen. Voit määrittää **Tyyppi**-sarakkeessa, onko se varmenne vai salainen koodi. Molemmat arvojoukot määritetään Azuren avainsäilöresurssissa.
 
     ![Varmenteiden lisääminen](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -132,9 +134,9 @@ RCS:n määrityksen aikana suoritat seuraavat tehtävät:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Määritä RCS-integrointi sähköisen laskutuksen lisäosapalvelimeen
 
-1. Valitse **Globalisaatiotoiminnot**-työtilan **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit** -linkki.
+1. Valitse **Globalisaatiotoiminnot**-työtilan **Liittyvät asetukset** -osassa **Sähköisen raportoinnin parametrit** -linkki.
 2. Valitse **Yhdistä elinkaaripalveluun napsauttamalla tästä**. Jos et halua yhdistää LCS:ään, valitse **Peruuta**.
-3. Syötä **Järjestelmän päätepisteen URI** -kentän **Sähköisen laskutuksen lisäosa** -välilehteen `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
+3. Anna **Sähköiset laskutuspalvelut** -välilehden **Järjestelmän päätepisteen URI** -kentässä arvo seuraavien käytettävissä olevien maantieteellisten alueiden mukaan: `https://businessdocumentsubmission.us.operations365.dynamics.com/` tai `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. Varmista, että tunnus **0cdb527f-a8d1-4bf8-9436-b352c68682b2** näkyy **Sovellustunnus**-kentässä. Tämä arvo on kiinteä arvo.
 5. Syötä **LCS-ympäristötunnus**-kenttään LCS-tilaustilisi tunnus.
 

@@ -3,7 +3,7 @@ title: Ominaisuuksien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
-ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
+ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3499616"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967331"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -179,3 +179,24 @@ Toiminnon väliversiotestaukset on reaaliaikaisia Microsoftin hallitsemia pääl
 
 ### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Otetaanko toimintoja koskaan pois väliversiotestauksesta siten, että asiakas ei tiedä siitä? 
 Kyllä, jos toiminto vaikuttaa ympäristön toimintaan silloin, kun niillä ei ole toiminnallista vaikutusta, jolloin ne voidaan ottaa oletusarvoisesti käyttöön.
+
+### <a name="how-can-feature-enablement-be-checked-in-code"></a>Miten ominaisuuden käyttöönotto tarkistetaan koodissa?
+Käytä **FeatureStateProvider**-luokassa **isFeatureEnabled**-menetelmää siirtämään siihen ominaisuusluokan esiintymä. Esimerkki: 
+
+    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+
+### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Miten ominaisuuden käyttöönotto tarkistetaan metatiedoissa?
+**FeatureClass**-ominaisuudella voidaan ilmaista, että ominaisuuteen on liitetty metatietoja. Ominaisuudelle on käytettävä luokan nimeä, kuten **BatchContentionPreventionFeature**. Nämä metatiedot näkyvät vain kyseisessä ominaisuudessa, **FeatureClass**-ominaisuus on käytettävissä valikoissa, valikkovaihtoehdoissa, valintalistan arvoissa sekä taulukko- ja näkymäkentissä.
+
+### <a name="what-is-a-feature-class"></a>Mikä on ominaisuusluokka?
+Ominaisuuksien hallinnan ominaisuudet on määritetty *ominaisuusluokiksi*. Ominaisuusluokka **toteuttaa IFeatureMetadata-ominaisuuden** ja käyttää luokkamääritettä määrittämään itsensä Ominaisuuksien hallinta -työtilassa. Käytettävissä on useita ominaisuusluokkaesimerkkejä, joiden käyttöönotto koodissa voidaan tarkistaa **FeatureStateProvider**-ohjelmointirajapinnan avulla ja metatiedoissa **FeatureClass**-ominaisuuden avulla. Esimerkki: 
+
+    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+    
+### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Mikä on joissakin ominaisuus luokissa käyttöönotettu IFeatureLifecycle?
+IFeatureLifecycle on Microsoftin sisäinen mekanismi, joka ilmaisee ominaisuuden elinkaaren vaiheen. Mahdolliset ominaisuudet:
+- PrivatePreview – näkymistä varten tarvitaan väliversio:
+- PublicPreview – näytetään oletusarvoisesti, mutta mukana on varoitus siitä, ominaisuus on esiversio.
+- Julkaistu – julkaistu kokonaisuudessaan.
+

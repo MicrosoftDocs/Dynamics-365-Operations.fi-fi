@@ -3,7 +3,7 @@ title: Myyntipisteen saapuva varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen saapuva varastotoiminto.
 author: hhaines
 manager: annbe
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710306"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971494"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -133,6 +133,18 @@ Vaikka **Vastaanotto nyt** -näkymä on optimoitu viivakoodin skannaamista varte
 Tarkistukset tapahtuvat asiakirjarivien vastaanottoprosessin aikana. Ne sisältävät ylitoimituksen tarkistukset. Jos käyttäjä yrittää vastaanottaa enemmän varastoa kuin ostotilauksen mukaan on tilattu, mutta ylitoimitusta ei ole määritetty tai vastaanotettu summa ylittää ostotilausrivillä määritetyn ylitoimitustoleranssin, käyttäjä vastaanottaa virheen, koska ylimääräistä määrää ei voi vastaanottaa.
 
 Ylivastaanotto ei ole sallittu siirtotilausasiakirjoille Käyttäjät vastaanottavat aina virheitä, jos he vastaanottavat enemmän kuin siirtotilausrivin mukaan on lähetetty.
+
+### <a name="close-purchase-order-lines"></a>Ostotilausrivien sulkeminen
+
+Voit sulkea saapuvan ostotilauksen jäljellä olevan määrän vastaanottoprosessin aikana, jos lähettäjä on vahvistanut, etteivät he lähetä koko pyydettyä määrää. Sitä varten yritys on määritettävä sallimaan ostotilausten alitoimitus. Lisäksi ostotilausriville on määritettävä alitoimituksen toleranssiprosentti.
+
+Yritys määritetään sallimaan ostotilausten alitoimitus valitsemalla Commerce Headquartersissa **Hankinta** > **Asetukset** > **Hankintaparametrit**. Ota **Hyväksy alitoimitus** -parametri käyttöön **Toimitus**-välilehdessä. Synkronoi asetuksen muutokset kanaviin suorittamalla **1070** (**Kananvan määritys**) -jakelun ajoitustehtävä.
+
+Ostotilausrivin alitoimituksen toleranssiprosentti voidaan määrittää tuotteissa ennalta tuotteen määritysten osana Commerce Headquartersissa. Vaihtoehtoisesti ne voidaan määrittää tai korvata tietyllä ostotilauksella Commerce Headquartersissa.
+
+Kun organisaatio on määrittänyt ostotilauksen alitoimituksen, myyntipisteen käyttäjät näkevät **Sulje jäljellä oleva määrä** -vaihtoehdon **Tiedot**-ruudussa, kun saapuva ostotilausrivi valitaan **Saapuva varasto** -toiminnossa. Jos käyttäjä sulkee jäljellä olevan määrän, myyntipiste vahvistaa, onko suljettava määrä ostotilausrivillä määritetyn alitoimituksen toleranssiprosentin mukainen. Jos alitoimitustoleranssi ylittyy, virhesanoma avautuu eikä käyttäjä voi sulkea jäljillä olevaa määrää, ennen kuin aiemmin vastaanotettu määrä ja siihen lisätty **Vastaanotto nyt** -määrä vastaavat tai ylittävät vastaanotettavan alitoimituksen toleranssiprosenttiin perustuvan vähimmäismäärän. 
+
+Kun **Sulje jäljellä oleva määrä** -vaihtoehto on otettu käyttöön ostotilausrivillä ja käyttäjä suorittaa vastaanoton loppuun **Viimeistele vastaanotto** -toiminnon, sulkemispyyntö lähetetään myös Commerce Headquartersiin ja tämän tilauksen vielä vastaanottamaton määrä peruutetaan. Tässä vaiheessa rivi katsotaan täysin vastaanotetuksi. 
 
 ### <a name="receiving-location-controlled-items"></a>Vastaanoton sijaintiohjatut nimikkeet
 

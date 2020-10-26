@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819886"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971442"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -34,6 +34,22 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.15
+
+> [!NOTE]
+> Versio 10.0.15 on esikatseluversio. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Yhden version palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio -apuohjelma metatietojen hotfix-korjausten käyttämiseen
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Metatietojen hotfix-korjauksia ei enää tueta [One Version](../../fin-ops/get-started/one-version.md) -palvelupäivityksissä, jotka otettiin käyttöön heinäkuussa 2018 versiossa 8.1. |
+| **Onko toinen ominaisuus korvannut?**   | Yksittäiset metatietojen hotfix-korjaukset eivät ole saatavana tuettuihin versioihin. Sen sijaan käytetään kumulatiivisia laatupäivityksiä. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -apuohjelmat |
+| **Käytön asetukset**              | Kehityksen virtuaalikoneet |
+| **Tila**                         | Versiossa 10.0.15 myötä apuohjelma ei enää sisälly Visual Studio Toolsiin. |
+
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.14
 
@@ -50,6 +66,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Tuotealueet, joihin vaikutetaan**         | Järjestelmän hallinta |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Tämä lomake poistetaan lokakuuhun 2021 mennessä.   |
+
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.13
 
