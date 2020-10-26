@@ -3,7 +3,7 @@ title: Videot
 description: Tällä sivulla on Microsoftin luomia toimintaohjeita ja Finance and Operations -sovelluksiin liittyviä teknisiä keskusteluja sisältäviä videoita, joita voi katsoa YouTubessa ja muissa sivustoissa.
 author: sericks007
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: c620e5e75ba1c547f0a1ee6830a5cf1b7fa58377
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: f61872e25cd2e91724d4918b8f974ee913913d37
+ms.sourcegitcommit: 47166b3e10097cc2754e0c8459f62dcdeef27053
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645362"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3991449"
 ---
 # <a name="videos"></a>Videot 
 
@@ -82,6 +82,7 @@ ms.locfileid: "3645362"
 - [Tehtävien tallennustoiminnon käyttö Regression Suite Automation Tool (RSAT) -työkalun testitapauksen luonnissa](https://youtu.be/bBr4BXAxTNI)
 - [Regression Suite Automation Tool (RSAT) -työkalun kanssa käytettävän testisuunnitelman luonti Azure DevOpsissa](https://youtu.be/3jIuBleAnQk) 
 - [Regression Suite Automation Tool (RSAT) -työkalun käyttäminen](https://youtu.be/uhN9JItzGAk)
+- [Parannettu Excel-kokemus Regression Suite Automation Toolissa (RSAT) 2.0](https://youtu.be/fcEkSIVQ1Bg)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Financea koskevat videot

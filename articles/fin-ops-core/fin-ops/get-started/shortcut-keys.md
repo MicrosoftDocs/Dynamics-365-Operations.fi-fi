@@ -3,7 +3,7 @@ title: Pikanäppäimet
 description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet Finance and Operations -sovelluksia.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761618"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962517"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
@@ -32,6 +32,8 @@ Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja
 
 > [!NOTE]
 > Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
+
+Osa tämän sivun pikanäppäimistä on *peräkkäin painettavia näppäimiä* eli niissä tarvitaan kaksi peräkkäistä (pilkulla eroteltua) näppäinyhdistelmää, joita on painettava erikseen, ennen kuin toiminto käynnistyy. Esimerkiksi pikavalinta Alt+M,A edellyttää, että käyttäjä painaa ensin näppäinyhdistelmää Alt+M, vapauttaa näppäimet ja painaa sitten A-näppäintä. 
 
 ## <a name="finding-a-shortcut"></a>Pikanäppäimen löytäminen
 
@@ -193,7 +195,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirry pääsivun sisältöön (kun kohdistus on toisessa ruudussa)                    | Alt+M,M                    |
 | Siirry tietoruutuun (voi sisältää ruudun avaamisen)                       | ALT + M,B tai Ctrl + F2         |
 
-## <a name="personalization-shortcuts"></a>Mukauttamisen pikanäppäimet
+## <a name="personalization-shortcuts"></a>[Mukauttamisen](personalize-user-experience.md) pikanäppäimet 
 
 | Toiminto                                                                                                             | Näppäinyhdistelmä                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirrä hakutuloksissa sivua ylös/alas                                                                                       | Page Up / Page Down              |
 | Siirry haun ylä-/alareunaan                                                                                    | Home / End                       |
 
+## <a name="task-recordershortcuts"></a>[Tehtävien tallennustoiminnon](../../dev-itpro/user-interface/task-recorder.md) pikanäppäimet 
+
+| Toiminto                                                                    | Paina                       |
+|-------------------------------------------------------------------------------|----------------------------|
+| Pysäytä tallennus (tallennuksen aikana)                                          | Alt+R,S                    |
+| Tehtävien tallennustoiminnon näkyvyyden vaihtelu (tallennuksen aikana)             | Alt+R,T                    |
+| Kiskot-tilan vaihtelu (tehtäväopasta toistettaessa)                                | Alt+R,L                    |
+| Siirry edelliseen vaiheeseen (tehtäväopasta toistettaessa)                          | Alt+R,P                    |
+| Siirry seuraavaan vaiheeseen (tehtäväopasta toistettaessa)                              | Alt+R,N                    |
+| Vaihda kohdistusta sivun ja animoidun ponnahduskehotteen välillä (tehtäväopasta toistettaessa) | Alt+R,F               |
+| Laajenna tai tiivistä animoitu ponnahduskehote (tehtäväopasta toistettaessa)              | Alt+R,C                    |
+| Näytä enemmän tai vähemmän tietoja animoidussa ponnahduskehotteessa (tehtäväopasta toistettaessa) | Alt+R,M                    |
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

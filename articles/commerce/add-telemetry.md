@@ -3,7 +3,7 @@ title: Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
 description: Tässä ohjeaiheessa kerrotaan, miten asiakaspuolen komentosarjakoodi lisätään sivustosivuille tukemaan asiakaspuolen telemetriatietojen keräämistä.
 author: bicyclingfool
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a88f4f920154aafaa15a48af67365152e21111f7
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
+ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761246"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3901493"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
 
@@ -64,6 +64,9 @@ Voit luoda uudelleenkäytettävän osan ulkoista komentosarjakoodia varten sivus
 1. Lisää ulkoisen komentosarjalähteen ulkoinen tai suhteellinen URL-osoite **Komentosarjan lähde** -kohdan oikealla puolella olevaan ominaisuusruutuun. Määritä sitten muut asetukset tarpeen mukaan.
 1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
 1. Valitse **Julkaise**.
+
+> [!NOTE]
+> Jos sisällön suojauskäytäntö (CSP) on otettu sivustossa käyttöön, varmista, että ulkoiset URL-osoitteet on lisätty **script-src**-CSP-direktiiviin Commercen sivustonmuodostimessa. Lisätietoja on kohdassa [Sisällön suojauskäytännön hallinta](manage-csp.md).
 
 ## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Komentosarjakoodia sisältävän osan lisääminen malliin
 
