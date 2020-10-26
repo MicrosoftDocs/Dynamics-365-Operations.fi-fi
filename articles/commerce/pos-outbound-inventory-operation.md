@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646156"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971542"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -164,7 +164,7 @@ Ennen lopullista sitoutumista Commercen pääkonttorisovellukseen toimituksesta,
 - **Sijaintia ei ole määritetty** – sijaintia ei ole määritetty sijaintiohjatulle nimikkeelle, jossa sijainti ei saa olla tyhjä.
 - **Poistetut rivit** – Commercen pääkonttorisovelluksen käyttäjä, joka myyntipistesovellus ei tunne, on poistanut tilauksen rivejä.
 
-Jos määrität **Ota käyttöön automaattinen vahvistus** -parametrin arvoksi **Kyllä** kohdassa **Commerce-parametrit** > **Varasto** > **Myymälän varasto**, vahvistus tehdään automaattisesti, kun valitset **Viimeistele toimitus** -toiminnon.
+Jos määrität **Ota käyttöön automaattinen vahvistus** -parametrin arvoksi **Kyllä** kohdassa **Commerce-parametrit** > **Varasto** > **Myymälän varastotoiminnot**, vahvistus tehdään automaattisesti, kun valitset **Viimeistele toimitus** -toiminnon.
 
 ### <a name="finish-fulfillment"></a>Viimeistele toimitus
 

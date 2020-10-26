@@ -3,7 +3,7 @@ title: Tarjouspyynnöt – yleiskatsaus
 description: Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta.
 author: mkirknel
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eedf6b08ef9a4b7f164db60433dd16922a8ec807
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895617"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973497"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Tarjouspyynnöt – yleiskatsaus
 
@@ -34,23 +34,21 @@ Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunn
 
 Tarjouspyyntöprosessi muodostuu seuraavista tehtävistä:
 
-1.  Tarjouspyynnön luominen ja lähettäminen vähintään yhdelle toimittajalle.
-
-2.  Tarjousten (tarjouspyyntövastausten) vastaanottaminen ja rekisteröiminen.
-
-3.  Hyväksyttyjen tarjousten siirtäminen ostotilaukseen, ostosopimukseen tai ostoehdotukseen.
+1. Tarjouspyynnön luominen ja lähettäminen vähintään yhdelle toimittajalle.
+1. Tarjousten (tarjouspyyntövastausten) vastaanottaminen ja rekisteröiminen.
+1. Hyväksyttyjen tarjousten siirtäminen ostotilaukseen, ostosopimukseen tai ostoehdotukseen.
 
 Seuraavassa kuvassa on yhteenveto tarjouspyyntöprosessista.
 
 [![Tarjouspyyntöprosessi](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
-Voit luoda tarjouspyyntötapauksen suunnitelluista tilauksista, ostoehdotuksesta tai manuaalisesta kirjauksesta. Tarjouspyyntötapaus on perusasiakirja, jonka perusteella tarjouspyyntö tehdään kullekin toimittajalle.+
+Voit luoda tarjouspyyntötapauksen suunnitelluista tilauksista, ostoehdotuksesta tai manuaalisesta kirjauksesta. Tarjouspyyntötapaus on perusasiakirja, jonka perusteella tarjouspyyntö tehdään kullekin toimittajalle.
 
 Kun olet valmistellut tarjouspyyntötapauksen ja lisännyt toimittajat, valitse tarjouspyyntötapauksessa **Lähetä** (**Lähetä ja julkaise** julkisella sektorilla). Tarjouspyynnön kirjauskansio luodaan jokaiselle toimittajalle, jolle lähetät tarjouspyynnön. Voit määrittää Lähetä-toiminnon tulostusasetukset joko tulostamaan raportin jokaisesta toimittajasta arkistoon vai lähettämään raportin kunkin toimittajan sähköpostiosoitteeseen. Voit lisäksi luoda kunkin toimittajan tarjouspyynnön kirjauskansiossa raportin, jonka voit lähettää toimittajalle tai lähettää sen myöhemmin uudelleen. Voit myös määrittää Lähetä-toiminnon luomaan vastauslomakkeen, jonka toimittaja voi täyttää.
 
 Tässä aiheessa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Supply Chain Managementissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
-Jos tarjouspyyntöä on muutettava lähettämisen jälkeen, voit lähettää tarjouspyynnön uudelleen toimittajille, kun olet käyttänyt kahta muutostoimintoa: luontia ja viimeistelyä.+
+Jos tarjouspyyntöä on muutettava lähettämisen jälkeen, voit lähettää tarjouspyynnön uudelleen toimittajille, kun olet käyttänyt kahta muutostoimintoa: luontia ja viimeistelyä.
 
 Sähköpostitse vastaanotettavat tarjoukset voidaan käsitellä **Tarjouspyynnöt**-sivulla.
 
@@ -68,15 +66,10 @@ Näitä tiloja käsitellään tarkemmin jäljempänä tässä aiheessa.
 
 Ennen tarjouspyyntötapauksen luomista sinun täytyy määrittää tarjouspyynnön tiedot **Hankintaparametrit**-sivulla. Tarjouspyyntötapausta luodessasi voit määrittää oletusarvot, jotka kopioidaan tarjouspyyntöön. Voit määrittää seuraavat oletusarvot:
 
--   Uusien tarjouspyyntöjen ostotyyppi: **Ostotilaus** tai **Ostosopimus**
-
--   Vanhentumispäivä ja siirtymäaika tarjouspyynnön luontipäivästä
-
--   Pyyntötyyppi, joka voi liittää tietyn oletuspisteytysmenetelmän tarjouspyyntötapahtumaan
-
--   Toimitustiedot ja maksuehdot
-
--   Tarjoukseen sisällytettävät kentät
+- Uusien tarjouspyyntöjen ostotyyppi: **Ostotilaus** tai **Ostosopimus**
+- Vanhentumispäivä ja siirtymäaika tarjouspyynnön luontipäivästä.
+- Pyyntötyyppi, joka voi liittää tietyn oletuspisteytysmenetelmän tarjouspyyntötapahtumaan.
+- Toimitustiedot ja maksuehdot.
 
 Nämä arvot voi ohittaa tietyissä tarjouspyyntötapauksissa.
 
@@ -84,37 +77,25 @@ Myös muutosprosessi täytyy määrittää. Tämän määrityksen yhteydessä vo
 
 Valitse **Hankintaparametrit**-sivulla toimittajille lähetettävän sähköposti-ilmoituksen malli. Kun malli luodaan **sähköpostimalleissa**, se voi sisältää seuraavia korvaavia tunnisteita:
 
--   %Tarjouspyyntötapaus%
-
--   %Tarjouksen palautuksen syy%
-
--   %Muutoksen syy%
-
--   %Muutoksen valmistelija%
-
--   %Yritys%
-
--   %Tarjouspyyntötapauksen nimi%
-
--   %Ajon vanhenemispäivä%
-
--   %Päivämäärä%
+- %Tarjouspyyntötapaus%
+- %Tarjouksen palautuksen syy%
+- %Muutoksen syy%
+- %Muutoksen valmistelija%
+- %Yritys%
+- %Tarjouspyyntötapauksen nimi%
+- %Ajon vanhenemispäivä%
+- %Päivämäärä%
 
 %Tarjouksen palautuksen syy%- ja %Muutoksen syy% -tunnisteet korvataan tekstillä, jonka hankinta-asiantuntija voi täyttää viimeistellessään muutoksia ohjatussa **Muutos**-toiminnossa. %Muutoksen valmistelija%- ja %Yritys%-tunnisteet korvataan automaattisesti tarjouspyynnön tiedoilla. %Päivämäärä%-tunniste korvataan nykyisellä päivämäärällä.
 
 Jos haluat peruuttaa tarjouspyynnön lähettämisen jälkeen, se voidaan tehdä tarjouspyyntötapauksessa. Peruutusta varten tarvitaan sähköpostimalli lähettämään peruutusilmoitus toimittajan yhteyshenkilöille. Malli on oltava valittuna **Hankintaparametrit**-sivulla. Luotava malli voi sisältää seuraavat korvattavat tunnisteet:
 
--   %Peruutuksen syy%
-
--   %Tarjouspyyntötapaus%
-
--   %Tarjouspyynnön peruuttaja%
-
--   %Yritys%
-
--   %Tarjouspyyntötapauksen nimi%
-
--   %Päivämäärä%
+- %Peruutuksen syy%
+- %Tarjouspyyntötapaus%
+- %Tarjouspyynnön peruuttaja%
+- %Yritys%
+- %Tarjouspyyntötapauksen nimi%
+- %Päivämäärä%
 
 %Peruutuksen syy% -tunniste korvataan tekstillä, jonka hankinta-asiantuntija voi antaa ohjatussa **Peruutus**-toiminnossa. %Päivämäärä%-tunniste korvataan nykyisellä päivämäärällä.
 
@@ -130,6 +111,19 @@ Kun luot ostotilaustyyppisen tarjouspyyntötapauksen ja lisäät tarjouspyyntö�
 
 Ostopäällikkö tai edustaja voi luoda ja ylläpitää pyyntötyyppejä, jotka vastaavat organisaation hankintavaatimuksia. Kukin pyyntötyyppi voidaan liittää pisteytystapaan. Pisteytysmenetelmät koostuvat ehdoista, joita voi käyttää tarjouksia pisteytettäessä. Pyyntötyypit, pisteytysmenetelmät ja pisteytysehdot määritellään **Pyyntötyyppi**- ja **Pisteytystapa**-sivuilla.
 
+## <a name="choose-default-fields-to-include-in-vendor-rfq-reply-forms"></a><a name="default-reply-fields"></a>Toimittajan tarjouspyynnön vastauslomakkeisiin sisällytettävät oletuskentät
+
+Voit määrittää toimittajilta tarjouspyyntöjen vastauksissa (tarjouksissa) saatavien tietojen tyypin. Oletuksiksi määritetyt kentät sisällytetään toimittajan yhteistyötä varten annettuun verkkolomakkeeseen. Määritä asetukset seuraavasti:
+
+1. Jos et ole vielä tehnyt niin, ota *Valitse toimittajan tarjouspyynnön vastauslomakkeisiin sisällytettävät tarjouspyyntökentät* -ominaisuus käyttöön [Ominaisuuden hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa.
+1. Valitse **Hankinta > Asetukset > Hankintaparametrit**.
+1. Avaa **Tarjouspyyntö**-välilehti.
+1. Valitse **Oletustarjouspyyntö**-vastauskentän linkki **Tarjouspyyntöjen oletusarvojen määrittäminen** -otsikon alta.
+1. **Oletustarjouspyynnön vastauskentät** -valintaikkuna avautuu.
+1. **Toimittajan tarjouspyynnön vastauslomakkeisiin sisällytettävät tarjouspyyntölomakkeet** -osassa jokaisen tarjouspyynnön vastauslomakkeessa käytettävissä olevan kentän kohdalla on liukusäädin. Ne kentät, joiden asetuksena tässä osassa on *Kyllä*, sisällytetään (arvoineen) tarjouspyynnön vastauslomakkeissa. Määritä liukusäädin *Ei*-asentoon kunkin sellainen kentän osalta, joita et halua toimittajien näkevän töitä tarkasteltaessa. Tällä tavoin tarjouspyyntötapahtuman aikana voidaan antaa arvioituja tai odotettavia arvoja sisäistä käyttöä varten ilman, että toimittaja näkee, mitä on annettu.
+
+Voit ohittaa nämä asetukset tarvittaessa yksittäisten tarjouspyyntötapahtumien kohdalla.
+
 ## <a name="creating-and-sending-an-rfq"></a>Tarjouspyynnön luominen ja lähettäminen
 
 Voit luoda tarjouspyyntötapauksen ja valita toimittajat, joiden haluat lähettävän tarjouksia, ja lähettää sitten tarjouspyynnöt toimittajille. Voit lähettää tarjouspyyntöraportin ja vastauslomakeraportit tulostusasetusten avulla ensisijaiseen sijaintiisi.
@@ -138,15 +132,13 @@ Voit luoda tarjouspyyntötapauksen manuaalisesti joko **Ostotilaus**- tai **Osto
 
 Jos tarjouspyyntötapauksen tyyppi on **Ostotilaus**, toiminta eroaa seuraavasti muista tarjouspyyntötapausten tyypeistä:
 
--   Kun tarjouspyyntötapauksen rivejä luodaan, järjestelmä luo varastotapahtumia, joiden vastaanottotila on **Tarjouksen vastaanotto**.
-
--   Kun hyväksyt tarjouksen, ostotilaus luodaan.
+- Kun tarjouspyyntötapauksen rivejä luodaan, järjestelmä luo varastotapahtumia, joiden vastaanottotila on **Tarjouksen vastaanotto**.
+- Kun hyväksyt tarjouksen, ostotilaus luodaan.
 
 Jos tarjouspyynnön tyyppi on **Ostosopimus**, toiminta eroaa seuraavasti muista tarjouspyyntötapauksista:
 
--   Tarjouspyyntötapausta käytetään sopimuksessa, kun tuotetta halutaan ostaa tietty määrä tai arvo tiettynä aikana. Valitse tällöin ostosopimusta koskeva päivämääräalue ja ostosopimusta hallinnoivan henkilön nimi.
-
--   Kun hyväksyt tarjouksen, ostosopimus luodaan.
+- Tarjouspyyntötapausta käytetään sopimuksessa, kun tuotetta halutaan ostaa tietty määrä tai arvo tiettynä aikana. Valitse tällöin ostosopimusta koskeva päivämääräalue ja ostosopimusta hallinnoivan henkilön nimi.
+- Kun hyväksyt tarjouksen, ostosopimus luodaan.
 
 Jos tarjouspyyntötapahtuma luodaan ostoehdotuksesta, **Ostoehdotus**-tyyppi määritetään automaattisesti. Tarjouspyyntötapausta, jonka tyyppi on **Ostoehdotus**, ei voi luoda manuaalisesti.
 
@@ -156,6 +148,7 @@ Kun luot tarjouspyyntötapauksen, voit valita pyyntötyypin. Pyyntötyyppi mää
 
 Voit lisätä tarjouspyyntötapaukseen kyselylomakkeen. Kyselylomake näkyy tämän jälkeen kaikissa tarjouspyynnön vastauksissa, kun tarjouspyyntö on lähetetty. Kyselylomakkeen täyttäminen on pakollinen ennen tarjouksen lähettämistä tehtävä tehtävä.
 
+Vaikka oletusarvot annetaan, voit muuttaa tarvittaessa **Toimittajan tarjouspyynnön vastauslomakkeisiin sisällytettävät tarjouspyyntölomakkeet** -asetuksia yksittäisen tarjouspyyntötapahtuman osalta. Sen voi tehdä luomalla tai avaamalla tarjouspyyntötapahtuman. Avaa sitten toimintoruudussa **Tarjous**-välilehti ja valitse **Vastaukset**-osassa **Määritä tarjouspyynnön vastauksen oletusarvot**. **Oletustarjouspyynnön vastauskentät** -valintaikkuna avautuu. Se toimii samalla tavoin kuin määritettäessä toimittajan tarjouspyynnön vastauslomakkeiden oletusarvoja, joskin tässä tehdyt muutokset vaikuttavat vain nykyiseen tarjouspyyntötapaukseen. Lisätietoja tämän toiminnon käyttöönottamisesta ja sen käyttämisestä on kohdassa [Toimittajan tarjouspyynnön vastauslomakkeisiin sisällytettävät oletuskentät](#default-reply-fields).
 
 Tarjouspyyntötapahtumaan lisättäviä toimittajia voi valita kolmella tavalla:
 
@@ -166,7 +159,6 @@ Tarjouspyyntötapahtumaan lisättäviä toimittajia voi valita kolmella tavalla:
 Kun tarjouspyyntötapaus on valmis, valitse **Lähetä**. Lähetystoiminto luo kirjauskansiot ja raportit, jotka tulostetaan, arkistoidaan ja lähetetään tulostusasetusten mukaisesti.
 
 Jos valitset **Käytä toimittajaa hintojen uudelleenlaskemiseen**- ja **Käytä toimittajakohtaisia nimiketietoja** -asetukseksi **Kyllä** **Lähetetään tarjouspyyntöä** -sivulla, kun lähetät tarjouspyynnön toimittajalle, jotkin toimittajakohtaiset tiedot täytetään automaattisesti kyseisen toimittajan tarjouspyynnössä.
-
 
 ## <a name="amending-an-rfq-case"></a>Tarjouspyyntötapahtuman muuttaminen
 
@@ -179,7 +171,6 @@ Jos määrität joustavan muutosprosessin, sinun ei tarvitse valita **Luo** enne
 Jos toimittajat kirjaavat tarjoukset toimittajayhteistyöliittymässä, sinun on ilmoitettava tarjouspyyntötapauksen muutokset käyttämällä muutosprosessia. Tämä prosessi auttaa estämään tilanteen, jossa toimittajat tekevät tarjouksen vanhentuneesta tarjouspyynnöstä, kun heidän tarjouksensa on kesken. Lisätietoja siitä toimittajayhteistyöstä on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Jos haluat kutsua tarjouksia muilta toimittajilta eikä tarjouspyyntötapaukseen ole tehty muutoksia, voit käyttää **Lähetä**-painiketta. Lisäämäsi toimittajat näkyvät **Lähetä**-sivulla, ja he vastaanottavat sähköpostikutsun.
-
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Tarjouspyyntövastausten vastaanottaminen ja rekisteröiminen
 
@@ -208,29 +199,20 @@ Voit lisätä vastaukseen syykoodin, joka selittää, miksi tarjous on hyväksyt
 
 Kun hyväksyt **Ostoehdotus**-tyyppisen tarjouksen, ostoehdotusrivit päivitetään seuraavilla, hyväksytyn tarjouksen tietoja vastaavilla tiedoilla:
 
--   Yksikköhinta
-
--   Alennusprosentti
-
--   Alennuksen suuruus
-
--   Oston kulut
-
--   Rivin kulut
-
--   Toimittaja
-
--  ulkoinen tunnus
-
--   Ulkoinen kuvaus
-
+- Yksikköhinta
+- Alennusprosentti
+- Alennuksen suuruus
+- Oston kulut
+- Rivin kulut
+- Toimittaja
+- ulkoinen tunnus
+- Ulkoinen kuvaus
 
 Seuraavassa taulukossa näkyy, miten tarjouspyynnön tila muuttuu, kun hyväksyt ja hylkäät toimittajien tarjouksia.
 
-<a name="statuses--highest-and-lowest"></a>Tilat – ylin ja alin
------------------------------
+## <a name="statuses--highest-and-lowest"></a>Tilat – ylin ja alin
 
-Tarjouspyyntötapauksen Toimittaja-välilehdessä on rivejä, joilla on tietyn toimittajan ylin ja alin tila. Kun toimittaja on lisätty eikä yhtään riviä on vielä lähetetty, sekä alin että ylin tila on <strong>Luotu.</strong> Kun toimittajalle lähetetään kaikki rivit sisältävä tarjouspyyntö, kahden rivin tilaksi tulee <strong>Lähetetty</strong>. Jos jotkin toimittajan tarjouksen rivit hyväksytään ja toiset hylätään, hylätyillä riveillä on alin tila eli <strong>Hylätty</strong>, kun taas hyväksytyillä riveillä on ylin tila eli <strong>Hyväksytty</strong>.
+Tarjouspyyntötapauksen Toimittaja-välilehdessä on rivejä, joilla on tietyn toimittajan ylin ja alin tila. Jos toimittajaa lisättäessä ei ole vielä lähetetty rivejä, sekä ylin että alin tila on <strong>Luotu</strong>. Kun toimittajalle lähetettävässä tarjouspyynnössä on kaikki rivit, kahden rivin tilin on <strong>Lähetetty</strong>. Jos jotkin toimittajan tarjouksen rivit hyväksytään ja toiset hylätään, hylätyillä riveillä on alin tila eli <strong>Hylätty</strong>, kun taas hyväksytyillä riveillä on ylin tila eli <strong>Hyväksytty</strong>.
 
 Tarjouspyyntötapauksen riveillä näkyy kaikkien toimittajien rivikohtainen ylin ja alin tila. Jos olet lähettänyt rivin kaikille tarjouspyyntötapauksen toimittajille eikä kukaan ole vielä vastannut, sekä alin että ylin tila on **Lähetetty.** Kun vähintään yksi toimittaja vastaa, ylimmäksi tilaksi tulee **Vastaanotettu**. Jos lisäät uuden toimittajan tapaukseen, alimmaksi tilaksi tulee **Luotu**.
 

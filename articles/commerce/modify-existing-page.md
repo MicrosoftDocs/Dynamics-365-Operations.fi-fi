@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270001"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961631"
 ---
 # <a name="modify-an-existing-site-page"></a>Aiemmin luodun sivuston sivun muokkaaminen
 
@@ -47,7 +47,7 @@ Seuraava vaihe on todellisten muutosten tekeminen. Sivun vasemmalla puolella ole
 Muutos voi kuitenkin joskus vaatia mallien tai osien lisäämisen tai poistamisen. Voit lisätä osan tai moduulin sivun jäsennyspuun avulla. Etsi paikka, johon moduuli tai osa lisätään, ja valitse sitten kyseisen paikan kolmen pisteen painike (**...**). Näyttöön tulee valikko, joka sisältää moduulin tai osan lisäämisessä käytettävät komennot. Voit poistaa moduulin tai osan etsimällä sen sivun jäsennyspuusta ja valitsemalla sen. Valitse kolmen pisteen painike ja valitse sitten moduulin tai osan poistamisen komento.
 
 > [!TIP]
-> Voit myös tarkastella minkä tahansa sellaisen moduulin ominaisuuksia ja muokata niitä, joka näkyy WYSIWYG-esikatselussa. Tällöin voit valita moduulin suoraan.
+> Voit myös tarkastella minkä tahansa sellaisen moduulin ominaisuuksia, joka näkyy visuaalisessa sivunmuodostimen esikatselussa, ja muokata niitä. Tällöin voit valita moduulin suoraan.
 
 Kun muutokset on tehty ja niiden vaikutusta esikatseltu, kuittaa sivu sisään valitsemalla **Lopeta muokkaus** komentopalkissa. 
 
