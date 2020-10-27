@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
+ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428590"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3969019"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
 
@@ -56,7 +56,9 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 
 8. Valitse **Rajoita käyttöoikeuksia valittuihin rooleihin** -kohdassa, haluatko rajoittaa käyttöä. Valitse sitten käyttöoikeusroolit **Tämän lomatyypin käyttöoikeusroolit** -kohdasta. Käyttöoikeusroolit määritetään työnkulussa, jonka valitsit **Työnkulun tunnus** -kohdasta aiemmin tässä toimintosarjassa.
 
-9. Valitse **Keskeytyssuhteet**-kohdassa haluatko, että tämä lomatyyppi keskeyttää toisen lomatyypin tai tulee toisen lomatyypin keskeyttämäksi. Kun poissaoloa koskeva poissaolopyyntö jätetään, keskeytetyn loman tyypiksi luodaan automaattisesti loman keskeytys. 
+9. Valitse **Kalenterin väri** -kohdassa, mikä väri näytetään tämän lomatyypin loma- ja poissaolokalentereissa. 
+
+10. Valitse **Keskeytyssuhteet**-kohdassa haluatko, että tämä lomatyyppi keskeyttää toisen lomatyypin tai tulee toisen lomatyypin keskeyttämäksi. Kun poissaoloa koskeva poissaolopyyntö jätetään, keskeytetyn loman tyypiksi luodaan automaattisesti loman keskeytys. 
 
 10. Valitse **Tallenna**.
 

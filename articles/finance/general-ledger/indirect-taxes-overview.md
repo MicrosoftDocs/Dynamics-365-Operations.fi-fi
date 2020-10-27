@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e827ede0508d07b6800ecdc4cc99cb2b6a0bcc78
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124494"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975024"
 ---
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskatsaus
 
@@ -48,7 +48,7 @@ Jokainen arvonlisäverokoodi on linkitettävä myös kirjanpidon kirjausryhmää
 
 Lisäksi voidaan määrittää valinnaisia arvonlisäveroilmoituksen koodeja. Ne voidaan määrittää arvonlisäverokoodille, jotka on laskettu erilaisten summatyyppien arvonlisäverokoodeille. **Arvonlisäveromaksu koodeittain** -rapotti sisältää annetun arvolisäveron tilityskauden ja välin arvonlisäveroilmoituksen koodikohtaiset kokonaissummat. 
 
-Jokaisella tapahtumalla, jolle on laskettava arvonlisävero ja joka on kirjattava, on oltava arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä. Arvonlisäveroryhmät liittyvät tapahtuman osapuoleen (kuten asiakkaaseen tai toimittajaan, kun taas nimikkeen arvonlisäveroryhmät liittyvät tapahtuman resurssiin (kuten nimikkeeseen tai hankintaluokkaan). Veroryhmät sisältävät verokoodiluettelon. Tapahtumassa käytetään verokoodeja, joka sisältyvät sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään. 
+Jokaisella tapahtumalla, jolle on laskettava arvonlisävero ja joka on kirjattava, on oltava arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä. Arvonlisäveroryhmät liittyvät tapahtuman osapuoleen (kuten asiakkaaseen tai toimittajaan), kun taas nimikkeen arvonlisäveroryhmät liittyvät tapahtuman resurssiin (kuten nimikkeeseen tai hankintaluokkaan). Veroryhmät sisältävät verokoodiluettelon. Tapahtumassa käytetään verokoodeja, joka sisältyvät sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään. 
 
 Seuraavassa taulussa käsitellään yksiköitä ja veroasetusten järjestystä.
 

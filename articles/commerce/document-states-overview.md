@@ -3,7 +3,7 @@ title: Asiakirjan tilat ja elinkaari
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien eri asiakirjatiloista.
 author: phinneyridge
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 8aad7ef8425e46182c669686710dfc178abc418f
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261510"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974027"
 ---
 # <a name="document-states-and-lifecycle"></a>Asiakirjan tilat ja elinkaari
-
 
 [!include [banner](includes/banner.md)]
 
@@ -52,6 +51,8 @@ Seuraavassa taulukossa esitetään sivuelementtien mahdolliset asiakirjojen tila
 [Sivumallisanasto](page-elements-overview.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
+
+[Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen](cross-channel-sharing.md)
 
 [Moduulien käyttäminen](work-with-modules.md)
 

@@ -14,6 +14,8 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
+                - name: Platform update -päivitykset 10.0.15 (tammikuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platform update -päivitykset 10.0.14 (marraskuu 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platform update -päivitykset 10.0.13 (lokakuu 2020)
@@ -236,6 +238,8 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Yleinen vianmääritys
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Kaksoiskirjoituksen usein kysytyt kysymykset
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Power Platform -integraatio
                       items:
                         - name: Prospekteista käteiseksi -skenaarion määrittäminen
@@ -386,13 +390,15 @@
           items:
             - name: Yleiskatsaus
               href: database/dbmovement-operations.md
+            - name: Tietokannan siirtotyökalu
+              href: database/database-movement-toolkit.md
             - name: Pika-aloitusoppaat
               items:
-                - name: Tietokannan päivittäminen
+                - name: Päivitä tietokanta
                   href: database/database-refresh.md
-                - name: Tietokannan vieminen
+                - name: Tietokannan vienti
                   href: database/export-database.md
-                - name: Tietokannan tuominen
+                - name: Tietokannan tuonti
                   href: database/import-database.md
                 - name: Tietokannan tietyn ajankohdan palautus
                   href: database/database-point-in-time-restore.md
@@ -1446,7 +1452,7 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Tuki
           items:
-            - name: Tuen saaminen Finance and Operationsia ja Lifecycle Servicesiä varten
+            - name: Hanki tukea Finance and Operationsia ja Lifecycle Servicesiä varten
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 -päivitys – päivitystä edeltävä tarkistusluettelo tietojen päivitystä varten
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä dacpac-prosessin avulla
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012 -päivitys – paikalliset ympäristöt

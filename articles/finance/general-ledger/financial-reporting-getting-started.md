@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835107"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967255"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial reportingin aloittaminen 
 
@@ -149,7 +149,12 @@ Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
 * Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus**-välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
 * Poista ponnahdusikkunoiden esto käytöstä selaimessa.
 * Työasemien on asennettava Microsoft .NET -kehys 4.6.2 tai uudempi versio. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345).
-* Jos käytössä on Chrome-selain, Report Designer -asiakasohjelman lataamista varten on asennettava ClickOnce-laajennus. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Jos kirjautuminen ei onnistu Chrome-selaimella kokeile ongelmassa 1 kuvattuja Internet Explorerin tai Edgen asennusvaiheita. 
+* Jos käytössä on Microsoft Edge ja Chrome-selain, Report Designer -asiakasohjelman lataamista varten on asennettava ClickOnce-laajennus. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. 
+     1. Avaa uusi selain Microsoft Edgessä.
+     2. Anna **edge://flags** ja paina **Enter**-näppäintä.
+     3. Valitse **ClickOnce-tuki**-vaihtoehto tai käytä tätä suoraa linkkiä: **edge://flags/#edge-click-once**.
+     4. Määritä avattavan valikon vaihtoehdon asetukseksi **Käytössä**.
+     5. Valitse **Käynnistä selain uudelleen**.
 
 Ongelma 2: Käyttäjälle ei ole määritetty Financial Reportingin käyttöön tarvittavia oikeuksia. 
 

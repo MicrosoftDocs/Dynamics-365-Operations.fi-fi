@@ -3,7 +3,7 @@ title: Hälytyssääntöjen luominen
 description: Tässä ohjeaiheessa on tietoja hälytyksistä. Siinä myös selitetään, miten luodaan sellainen hälytyssääntö, joka ilmoittaa tapahtumista, kuten saapuvasta päivämäärästä tai tapahtuvasta muutoksesta.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075921"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970676"
 ---
 # <a name="create-alert-rules"></a>Hälytyssääntöjen luominen
 
@@ -92,3 +92,14 @@ Hälytyksiä voidaan lähettää ulkoisesti liiketoimintatapahtuman kehyksen avu
 7. Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe. Tekstiä käytetään otsikkona sähköpostiviestissä jonka saat, kun hälytys laukaistaan. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, määritä **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**.
 8. Valitse **Sanoma**-kentässä valinnainen sanoma. Tämä teksti on sanoma, jonka saat, kun hälytys laukaistaan.
 9. Tallenna asetukset ja luo hälytyssääntö valitsemalla **OK**.
+
+## <a name="limitations-and-workarounds"></a>Rajoitukset ja ratkaisuehdotukset
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Ratkaisuehdotus lomakkeen toissijaisten tietolähteiden hälytysten luontia varten
+Hälytyksiä ei voi luoda lomakkeissa joillekin toissijaisille tietolähteille. Kun esimerkiksi asiakkaan tai toimittajan kirjausprofiililomakkeessa luodaan hälytyksiä, käytettävissä on vain otsikon (CustLedger tai VendLedger) kentät eikä dimensiotilit. Tämän rajoituksen ratkaisuehdotus on avata kyseinen taulukko ensisijaisena tietolähteenä käyttämällä **SysTableBrowser**-lomaketta. 
+1. Avaa taulukko **SysTableBrowser**-lomakkeessa.
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Luo hälytys SysTableBrowser-lomakkeesta.
+

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818347"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961655"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
@@ -61,8 +61,8 @@ Voit luoda uuden osan tai tallentaa olemassa olevan osan määrityksen osana.
 Voit muuntaa aiemmin määritetyn moduulin uudelleenkäytettäväksi osaksi seuraavasti.
 
 1. Avaa sivu tai malli, joka sisältää osaksi muunnettavan moduulin.
-1. Valitse vasemmalla olevassa jäsennysruudussa aiemmin määritetty moduuli tai valitse se suoraan pääalustassa.
-1. Valitse kolme pistettä (**...**) moduulin nimen vierestä joko jäsennysruudusta tai valitun moduulin työkaluriviltä alustassa. 
+1. Valitse vasemmalla jäsennysruudussa aiemmin määritetty moduuli tai valitse se suoraan visuaalisessa sivunmuodostimessa.
+1. Valitse kolme pistettä (**...**) moduulin nimen vieressä joko jäsennysruudusta tai valitun moduulin työkaluriviltä visuaalisessa sivunmuodostimessa. 
 1. Valitse **Jaa sivun osana**. 
 1. Anna **Tallenna sivun osana** -valintaikkunassa osan nimi.
 1. Valitse **OK**, jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
@@ -94,8 +94,8 @@ Seuraavissa ohjeissa kuvataan, miten osia lisätään, poistetaan ja muokataan.
 
 Voit lisätä osan sivulle seuraavasti.
 
-1. Valitse vasemmalla olevasta jäsennysruudusta tai suoraan pääalustalla säilö tai paikka, johon alimoduulit voidaan lisätä.
-1. Valitse online-ruudussa kolme pistettä (**...**) säilön tai paikan nimen vieressä.  Vaihtoehtoisesti voit valita plusmerkin (**+**), jos käytössä on pääalusta.  
+1. Valitse vasemmassa jäsennysruudussa tai suoraan visuaalisessa sivunmuodostimessa säilö tai paikka, johon alimoduulit voidaan lisätä.
+1. Valitse online-ruudussa kolme pistettä (**...**) säilön tai paikan nimen vieressä.  Vaihtoehtoisesti voit valita plusmerkin (**+**), jos visuaalinen sivunmuodostin on käytössä.  
 1. Valitse **Lisää osa**.
 
     ![Näyttökaappaus siitä, miten olemassa oleva fragmentti lisätään paikkaan tai säilöön](./media/add-fragment.png)
@@ -115,7 +115,7 @@ Voit lisätä osan sivulle seuraavasti.
 
 Voit poistaa sivun osan paikasta tai säilöstä seuraavasti.
 
-1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan osan nimen vieressä oleva kolmen pisteen painike (**...**) ja valitse sitten roskakorisymboli.  Vaihtoehtoisesti voit valita osan alustassa ja valita roskakorisymbolin osan työkalurivillä.
+1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan osan nimen vieressä oleva kolmen pisteen painike (**...**) ja valitse sitten roskakorisymboli.  Vaihtoehtoisesti voit valita osan visuaalisessa sivunmuodostimessa ja valita roskakorisymbolin osan työkalurivillä.
 1. Kun sinua pyydetään vahvistamaan osan poistaminen, valitse **OK**.
 
 > [!NOTE]

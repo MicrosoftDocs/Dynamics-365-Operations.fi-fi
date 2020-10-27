@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269978"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961607"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Sivun tallentaminen, esikatseleminen ja julkaiseminen
 
@@ -38,9 +38,9 @@ Kun tallennat sivun, muutokset näkyvät vain sinulle. Tallennustoiminto on tark
 
 ## <a name="preview-a-page"></a>Sivun esikatseleminen
 
-Muokkaustyökalussa on seuraavat kaksi erilaista esikatselutoimintoa: WYSIWYG (what you see is what you get) -esikatseluruutu sivueditorissa ja erillinen esikatseluikkuna.
+Muokkaustyökalussa on seuraavat kaksi esikatselutoimintoa: visuaalinen sivustonmuodostin, joka on WYSIWYG-esikatseluruutu sivueditorissa, ja erillinen esikatseluikkuna.
 
-Kun käytät sivueditoria, keskiruudussa näkyy WYSIWYG-esikatselu. Tämä esikatselu päivitetään automaattisesti aina sivun tallentamisen yhteydessä. Voit päivittää sen myös manuaalisesti valitsemalla komentopalkissa **Päivitä**. WYSIWYG-esikatselu hahmontaa sivun samanlaiseksi kuin käyttäjän näkymä. Sen päällä näkyvät kuitenkin muokkausavustajat.
+Kun käytät sivueditoria, keskiruudussa näkyy WYSIWYG-esikatselu. Tämä esikatselu päivitetään automaattisesti aina sivun tallentamisen yhteydessä. Voit päivittää sen myös manuaalisesti valitsemalla komentopalkissa **Päivitä**. Esikatselu hahmontaa sivun samanlaiseksi kuin käyttäjän näkymä. Sen päällä näkyvät kuitenkin muokkausavustajat.
 
 Kun sivun muokkaaminen on tehty, haluat ehkä esikatsella sen ja nähdä, millaiselta se näyttää asiakkaille. Voit esikatsella sivua valitsemalla komentopalkissa **Esikatsele**. Esikatselu näkyy erillisessä selainikkunassa. Esikatseluikkunan sivu hahmonnetaan sellaiseksi, jona käyttäjä näkee sen. Voit muuttaa ikkunan kokoa ja varmistaa, että responsiiviset moduulit on hahmonnettu oikein kaikissa näkymäporteissa.
 
