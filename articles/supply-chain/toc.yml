@@ -180,9 +180,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Työympäristön suunnittelu
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Käyttöönoton valmistelu
+                - name: Julkistamisen valmistelu
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Käyttöönoton usein kysytyt kysymykset
+                - name: Julkistamisen usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Palvelupyynnön lähettäminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -1503,7 +1503,7 @@
           items:
             - name: Office-integraation yleiskatsaus
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Office-integraation opetusohjelma
+            - name: Office-integraation opasohjelma
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
@@ -1735,6 +1735,8 @@
                   href: procurement/purchase-agreements.md
                 - name: Ostosopimuksen luominen
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Kulujen automaattinen kohdistaminen
+                  href: procurement/automatic-charges-allocation.md
                 - name: Toimittajan ostohyvitykset
                   href: procurement/vendor-rebates.md
                 - name: 'Hintoihin, alennuksiin, sopimuksiin ja ostohyvityksiin liittyvien ongelmien vianmääritys'
@@ -2041,9 +2043,17 @@
                       href: production-control/release-production-orders.md
                     - name: Tuotantotilausten ilmoittaminen valmistuneiksi
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfiguroi työkortti laitteita varten
+                    - name: Tuotannon käyttöliittymän määrittäminen ja käyttäminen
+                      items:
+                        - name: Tuotannon käyttöliittymän määrittäminen
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
+                          href: production-control/production-floor-execution-use.md
+                    - name: Laitteiden työnkortin määrittäminen
                       href: production-control/config-job-card-device.md
-                    - name: Ilmoita valmiiksi työkorttilaitteesta
+                    - name: Ilmoittaminen valmiiksi työkorttilaitteesta
                       href: production-control/report-finished-job-device.md
                     - name: Tarjoa yhdistetyn todellisuuden oppaita tuotannon työntekijöiden käyttöön
                       href: production-control/instruction-guides-in-production-overview.md
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Myyntitilausten lähettäminen ilman varastointia
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Kulujen automaattinen kohdistaminen
+                  href: procurement/automatic-charges-allocation.md
                 - name: Ostotilauksen luominen myyntitilauksesta
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Myyntitilausten luominen
@@ -2663,13 +2675,11 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Siirtotilausten luominen varastosovelluksesta
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Varastosovelluksen tapahtumakäsittely
-                      href: warehousing/warehouse-app-events.md
                     - name: Kappaleen keräilyvahvistus
                       href: warehousing/piece-picking-confirmation.md
                     - name: Pakkausmateriaalit ja maksut
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: Määritä manuaalinen pakkaus (vain helmikuu ja toukokuu 2016)
+                    - name: Manuaalisen pakkaamisen määrittäminen (vain helmikuu ja toukokuu 2016)
                       href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                     - name: Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
@@ -2843,7 +2853,9 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Varastotyön mobiililaitteiden määrittäminen
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Rekisterikilven vastaanotto varastosovelluksella
+                    - name: Varastosovelluksen tapahtumakäsittely
+                      href: warehousing/warehouse-app-events.md
+                    - name: Rekisterikilven vastaanottaminen varastosovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
                       href: warehousing/tasks/set-up-mobile-device-menu.md

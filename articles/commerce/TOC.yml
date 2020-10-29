@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (lokakuu 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: Commerce 10.0.12 (elokuu 2020)
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
@@ -262,9 +260,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
                 - name: Työympäristön suunnittelu
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Käyttöönoton valmistelu
+                - name: Julkistamisen valmistelu
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Käyttöönoton usein kysytyt kysymykset
+                - name: Julkistamisen usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Palvelupyynnön lähettäminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -1040,6 +1038,8 @@
                       href: add-breadcrumb.md
                     - name: Siirtymisvalikkomoduulit
                       href: nav-menu-module.md
+                    - name: Toimipaikan valitsinmoduuli
+                      href: site-selector.md
                 - name: Vaatimustenmukaisuusmoduulit
                   items:
                     - name: Evästeiden hyväksynnän moduuli
@@ -1802,7 +1802,7 @@
           items:
             - name: Office-integraation yleiskatsaus
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
-            - name: Office-integraation opetusohjelma
+            - name: Office-integraation opasohjelma
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
@@ -1986,6 +1986,8 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Moduulin rakenne
                   items:
+                    - name: Moduulien yleiskatsaus
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Moduulin määritystiedosto
                       href: e-commerce-extensibility/module-definition-file.md
                     - name: Moduulin React-komponenttitiedosto
@@ -2034,12 +2036,18 @@
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Vuorovaikutteisten osien yleiskatsaus
                       href: e-commerce-extensibility/interactive-components.md
+                    - name: Kirjautumistilan testaaminen paikallisen kehityksen aikana
+                      href: e-commerce-extensibility/mock-sign-in.md
                     - name: Moduulien globalisoiminen CultureInfoFormatter-luokan avulla
                       href: e-commerce-extensibility/globalize-modules.md
+                    - name: Azure Key Vaultin määrittäminen turvallista avaintenhallintaa varten
+                      href: e-commerce-extensibility/set-up-key-vault.md
                 - name: Tietotoimintojen kehittäminen
                   items:
                     - name: Tietotoimintojen yleiskatsaus
                       href: e-commerce-extensibility/data-actions.md
+                    - name: Tietotoiminnon välimuistiasetukset
+                      href: e-commerce-extensibility/data-action-cache.md
                     - name: Tietotoimintojen testaaminen vedosten avulla
                       href: e-commerce-extensibility/test-data-action-mocks.md
                     - name: Sivun latauksen tietotoiminnot
@@ -2080,6 +2088,8 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: Teeman laajentaminen moduulilaajennuksien lisäämistä varten
                       href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Moduulin kirjasto-osan ohittaminen teemassa
+                      href: e-commerce-extensibility/override-theme-component.md
                     - name: Teeman laajentaminen perusteemasta
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Mukautettujen resurssien lisääminen mukautuskoodiin
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: 'SDK:n ja moduulikirjaston päivitykset'
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Parhaat käytännöt
+                  items:
+                    - name: Dynamics 365 Commerce -kehityksen parhaat käytännöt
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: Retail SDK
               items:
                 - name: Retail SDK -arkkitehtuuri
@@ -2197,7 +2211,7 @@
                 - name: Retailin Typescript- ja C#-välityspalvelimet
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Käytä Retail Serverin ohjelmointirajapintoja ulkoisissa sovelluksissa
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: Commerce Runtime (CRT) -ratkaisun laajennettavuus
               items:
                 - name: 'CRT:n arkkitehtuuri ja määrittäminen'
