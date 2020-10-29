@@ -5,6 +5,12 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 22. lokakuuta 2002
+          href: hr-whats-new-2020-10-22.md
+        - name: 6. lokakuuta 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26. syyskuuta 2020
+          href: hr-whats-new-2020-09-26.md
         - name: 16. syyskuuta 2020
           href: hr-whats-new-2020-09-16.md
         - name: 3. syyskuuta 2020
@@ -81,11 +87,13 @@
               href: hr-admin-integration-finance.md
             - name: Integraation määrittäminen Dayforcen kanssa
               href: hr-admin-integration-dayforce.md
-            - name: Luo toistuvan tietojen viennin sovellus
+            - name: Toistuvan tietojen viennin sovelluksen luominen
               href: hr-admin-integration-recurring-data-export.md
-            - name: Luo integraatio Officen kanssa
+            - name: LinkedIn Talent Hub -integrointi
+              href: hr-admin-integration-linkedin.md
+            - name: Office-integraatio
               items:
-                - name: Office-integraation opetusohjelma
+                - name: Office-integraation opasohjelma
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Yksikkötietojen päivittäminen Excelissä
                   href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
@@ -217,6 +225,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Teamsin Human Resources -sovellus
           href: hr-admin-teams-leave-app.md
+        - name: Julkistamisen valmistelu
+          href: hr-admin-go-live-prepare.md
+        - name: Julkistamisen usein kysytyt kysymykset
+          href: hr-admin-go-live-faq.md
         - name: Dokumentaatioresurssit
           items:
             - name: Ohjejärjestelmä
@@ -279,11 +291,11 @@
               href: hr-admin-integration-finance.md
             - name: Integraation määrittäminen Dayforcen kanssa
               href: hr-admin-integration-dayforce.md
-            - name: Luo toistuvan tietojen viennin sovellus
+            - name: Toistuvan tietojen viennin sovelluksen luominen
               href: hr-admin-integration-recurring-data-export.md
-            - name: Luo integraatio Officen kanssa
+            - name: Office-integraatio
               items:
-                - name: Office-integraation opetusohjelma
+                - name: Office-integraation opasohjelma
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Yksikkötietojen päivittäminen Excelissä
                   href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
@@ -669,6 +681,8 @@
           items:
             - name: Työntekijän ja esimiehen itsepalvelun yleiskatsaus
               href: hr-employee-manager-self-service-overview.md
+            - name: Mukautettujen linkkien luominen esimiehen itsepalvelussa
+              href: hr-employee-manager-self-service-custom-links.md
             - name: Työntekijän itsepalvelutyötilan nimen muuttaminen
               href: hr-employee-self-service-workspace-name.md
             - name: Muokkaa henkilökohtaisia tietoja
