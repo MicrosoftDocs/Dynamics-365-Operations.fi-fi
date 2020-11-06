@@ -17,42 +17,42 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ec10e0f79e4eca7f51ba48c679dcf6fe745eb29
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141427"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107349"
 ---
-# <a name="create-call-center-orders"></a><span data-ttu-id="d31c1-103">Luo puhelinkeskustilauksia</span><span class="sxs-lookup"><span data-stu-id="d31c1-103">Create call center orders</span></span>
+# <a name="create-call-center-orders"></a><span data-ttu-id="b485c-103">Luo puhelinkeskustilauksia</span><span class="sxs-lookup"><span data-stu-id="b485c-103">Create call center orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d31c1-104">Tässä menettelyssä esitellään asiakkaan etsiminen, uuden tilauksen luominen, tuotteen hakeminen ja maksun periminen asiakkaalta.</span><span class="sxs-lookup"><span data-stu-id="d31c1-104">This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer.</span></span> <span data-ttu-id="d31c1-105">Tässä menettelyssä käytetään esittely-yritystä USRT. Tämä on tarkoitettu myyntitilauksia käsittelevälle assistentille.</span><span class="sxs-lookup"><span data-stu-id="d31c1-105">This procedure uses demo data company USRT and is intended for the Sales Order Clerk.</span></span> <span data-ttu-id="d31c1-106">Edellytykset: Menettelyn suorittava käyttäjä on määritetty puhelinkeskuksen käyttäjiksi. Julkaistussa Fabrikamin puolivuosittaisessa luettelossa on vähintään yksi lähdekoodi.</span><span class="sxs-lookup"><span data-stu-id="d31c1-106">Pre-requisites:  The user who completes the procedure is set up as a Call center user and the Fabrikam Semi-Annual Catalog is published with at least one Source code on it.</span></span>
+<span data-ttu-id="b485c-104">Tässä menettelyssä esitellään asiakkaan etsiminen, uuden tilauksen luominen, tuotteen hakeminen ja maksun periminen asiakkaalta.</span><span class="sxs-lookup"><span data-stu-id="b485c-104">This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer.</span></span> <span data-ttu-id="b485c-105">Tässä menettelyssä käytetään esittely-yritystä USRT. Tämä on tarkoitettu myyntitilauksia käsittelevälle assistentille.</span><span class="sxs-lookup"><span data-stu-id="b485c-105">This procedure uses demo data company USRT and is intended for the Sales Order Clerk.</span></span> <span data-ttu-id="b485c-106">Edellytykset: Menettelyn suorittava käyttäjä on määritetty puhelinkeskuksen käyttäjiksi. Julkaistussa Fabrikamin puolivuosittaisessa luettelossa on vähintään yksi lähdekoodi.</span><span class="sxs-lookup"><span data-stu-id="b485c-106">Pre-requisites:  The user who completes the procedure is set up as a Call center user and the Fabrikam Semi-Annual Catalog is published with at least one Source code on it.</span></span>
 
-1. <span data-ttu-id="d31c1-107">Valitse Retail ja Commerce > Asiakkaat > Asiakaspalvelu.</span><span class="sxs-lookup"><span data-stu-id="d31c1-107">Go to Retail and Commerce > Customers > Customer service.</span></span>
-2. <span data-ttu-id="d31c1-108">Syötä SearchText-kenttään hakuehdot, joilla etsit asiakasta.</span><span class="sxs-lookup"><span data-stu-id="d31c1-108">In the SearchText field, enter the search criteria to look up the customer.</span></span>
-    * <span data-ttu-id="d31c1-109">Valitse tässä esimerkissä menettelytyypiksi Nieminen ja paina sarkainnäppäintä.</span><span class="sxs-lookup"><span data-stu-id="d31c1-109">For this example procedure type in 'karen' and press tab.</span></span>  
-3. <span data-ttu-id="d31c1-110">Valitse Haku.</span><span class="sxs-lookup"><span data-stu-id="d31c1-110">Click Search.</span></span>
-    * <span data-ttu-id="d31c1-111">Koska esittelytiedoissa on vain yksi asiakas nimeltä Nieminen, hänet valitaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="d31c1-111">Since there is only one customer named Karen in demo data they will be automatically selected.</span></span>  
-4. <span data-ttu-id="d31c1-112">Valitse Uusi myyntitilaus.</span><span class="sxs-lookup"><span data-stu-id="d31c1-112">Click New sales order.</span></span>
-5. <span data-ttu-id="d31c1-113">Laajenna tai tiivistä Myyntitilauksen otsikko -osa.</span><span class="sxs-lookup"><span data-stu-id="d31c1-113">Expand or collapse the Sales order header section.</span></span>
-6. <span data-ttu-id="d31c1-114">Valitse luettelon lähdekoodi.</span><span class="sxs-lookup"><span data-stu-id="d31c1-114">Select the source code for the catalog.</span></span>
-    * <span data-ttu-id="d31c1-115">Jos aktiivisia lähdekoodeja ei ole, voit sulkea Lähde-kentän ja ohittaa tämän vaiheen.</span><span class="sxs-lookup"><span data-stu-id="d31c1-115">If there are no active Source codes you can close the Source field and skip this step.</span></span>  
-7. <span data-ttu-id="d31c1-116">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="d31c1-116">Click Add line.</span></span>
-8. <span data-ttu-id="d31c1-117">Syötä Nimiketunnus-kenttään nimikkeen hakuehto.</span><span class="sxs-lookup"><span data-stu-id="d31c1-117">In the Item number field, enter the item search term.</span></span>
-    * <span data-ttu-id="d31c1-118">Syötä tässä mallimenettelyssä osittainen nimikenumero 8111 ja paina sarkainnäppäintä. Nimike tulee esille hakuikkunaan.</span><span class="sxs-lookup"><span data-stu-id="d31c1-118">For this sample procedure enter a partial item number of '8111' and press tab. This will pop up the item search window.</span></span>  
-9. <span data-ttu-id="d31c1-119">Myyntitilaukseen lisättävän tuotteen valitseminen</span><span class="sxs-lookup"><span data-stu-id="d31c1-119">Select the product to add to the sales order</span></span>
-10. <span data-ttu-id="d31c1-120">Syötä myyntimäärä.</span><span class="sxs-lookup"><span data-stu-id="d31c1-120">Enter the sales quantity.</span></span>
-11. <span data-ttu-id="d31c1-121">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="d31c1-121">Click Create.</span></span>
-12. <span data-ttu-id="d31c1-122">Valitse Valmis, kun haluat tarkistaa asiakkaan maksun.</span><span class="sxs-lookup"><span data-stu-id="d31c1-122">Click Complete to capture the customer payment.</span></span>
-13. <span data-ttu-id="d31c1-123">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="d31c1-123">Click Add.</span></span>
-    * <span data-ttu-id="d31c1-124">Lisää-linkki löytyy Maksut-välilehdestä. Laajenna Maksut-välilehti, jos se on tiivistetty.</span><span class="sxs-lookup"><span data-stu-id="d31c1-124">The Add link is in the Payments tab. Expand the Payments tab if it is collapsed.</span></span>  
-14. <span data-ttu-id="d31c1-125">Valitse maksutapa.</span><span class="sxs-lookup"><span data-stu-id="d31c1-125">Select the payment method.</span></span>
-    * <span data-ttu-id="d31c1-126">Valitse tässä menettelyssä käteismaksutapa.</span><span class="sxs-lookup"><span data-stu-id="d31c1-126">For this procedure, select the cash payment method.</span></span>  
-15. <span data-ttu-id="d31c1-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d31c1-127">Close the page.</span></span>
-16. <span data-ttu-id="d31c1-128">Anna määrä.</span><span class="sxs-lookup"><span data-stu-id="d31c1-128">Enter the amount.</span></span>
-    * <span data-ttu-id="d31c1-129">Syötä tässä menettelyssä tilaussummaksi summa, joka löytyy Myyntitilauksen yhteenveto -sivun summakentän vasemmalta puolelta.</span><span class="sxs-lookup"><span data-stu-id="d31c1-129">For this procedure enter an amount equal to the order balance which can be seen in the Sales order summary page to the left of the amount field.</span></span> <span data-ttu-id="d31c1-130">Näin voit määrittää tilauksen kokonaan maksetuksi.</span><span class="sxs-lookup"><span data-stu-id="d31c1-130">This will allow you to complete the order as fully paid.</span></span>  
-17. <span data-ttu-id="d31c1-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d31c1-131">Click OK.</span></span>
-18. <span data-ttu-id="d31c1-132">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="d31c1-132">Click Submit.</span></span>
+1. <span data-ttu-id="b485c-107">Valitse **Retail ja Commerce \> Asiakkaat \> Asiakaspalvelu**.</span><span class="sxs-lookup"><span data-stu-id="b485c-107">Go to **Retail and Commerce \> Customers \> Customer service**.</span></span>
+2. <span data-ttu-id="b485c-108">Anna **SearchText** -kenttään hakuehdot, joilla etsit asiakasta.</span><span class="sxs-lookup"><span data-stu-id="b485c-108">For **SearchText** , enter the search criteria to look up the customer.</span></span>
+    * <span data-ttu-id="b485c-109">Valitse tässä esimerkissä menettelytyypiksi Nieminen ja valitse **sarkainnäppäin**.</span><span class="sxs-lookup"><span data-stu-id="b485c-109">For this example procedure, enter "Karen" and select **Tab**.</span></span>  
+3. <span data-ttu-id="b485c-110">Valitse Haku.</span><span class="sxs-lookup"><span data-stu-id="b485c-110">Select Search.</span></span>
+    * <span data-ttu-id="b485c-111">Koska esittelytiedoissa on vain yksi asiakas nimeltä Nieminen, hänet valitaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="b485c-111">Since there is only one customer named "Karen" in demo data, the result will be automatically selected.</span></span>  
+4. <span data-ttu-id="b485c-112">Valitse **Uusi myyntitilaus**.</span><span class="sxs-lookup"><span data-stu-id="b485c-112">Select **New sales order**.</span></span>
+5. <span data-ttu-id="b485c-113">Laajenna tai tiivistä **myyntitilauksen** otsikko-osa.</span><span class="sxs-lookup"><span data-stu-id="b485c-113">Expand or collapse the **Sales order** header section.</span></span>
+6. <span data-ttu-id="b485c-114">Valitse luettelon lähdekoodi.</span><span class="sxs-lookup"><span data-stu-id="b485c-114">Select the source code for the catalog.</span></span>
+    * <span data-ttu-id="b485c-115">Jos aktiivisia lähdekoodeja ei ole, voit ohittaa tämän vaiheen.</span><span class="sxs-lookup"><span data-stu-id="b485c-115">If there are no active source codes you can skip this step.</span></span>  
+7. <span data-ttu-id="b485c-116">Valitse **Lisää rivi**.</span><span class="sxs-lookup"><span data-stu-id="b485c-116">Select **Add line**.</span></span>
+8. <span data-ttu-id="b485c-117">Anna **Nimiketunnus** -kenttään nimikkeen hakuehto.</span><span class="sxs-lookup"><span data-stu-id="b485c-117">For **Item number** , enter the item search term.</span></span>
+    * <span data-ttu-id="b485c-118">Anna tässä mallimenettelyssä osittainen nimikenumero 8111 ja paina sarkainnäppäintä. Toiminto avaa nimikkeen hakuikkunan.</span><span class="sxs-lookup"><span data-stu-id="b485c-118">For this sample procedure, enter a partial item number of '8111' and press tab. This action will bring up the item search window.</span></span>  
+9. <span data-ttu-id="b485c-119">Valitse myyntitilaukseen lisättävä tuote.</span><span class="sxs-lookup"><span data-stu-id="b485c-119">Select the product to add to the sales order.</span></span>
+10. <span data-ttu-id="b485c-120">Syötä myyntimäärä.</span><span class="sxs-lookup"><span data-stu-id="b485c-120">Enter the sales quantity.</span></span>
+11. <span data-ttu-id="b485c-121">Valitse **Luo**.</span><span class="sxs-lookup"><span data-stu-id="b485c-121">Select **Create**.</span></span>
+12. <span data-ttu-id="b485c-122">Valitse **Valmis** , kun haluat tarkistaa asiakkaan maksun.</span><span class="sxs-lookup"><span data-stu-id="b485c-122">Select **Complete** to capture the customer payment.</span></span>
+13. <span data-ttu-id="b485c-123">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="b485c-123">Select **Add**.</span></span>
+    * <span data-ttu-id="b485c-124">Lisää-linkki löytyy Maksut-välilehdestä. Laajenna Maksut-välilehti, jos se on tiivistetty.</span><span class="sxs-lookup"><span data-stu-id="b485c-124">The Add link is in the Payments tab. Expand the Payments tab if it is collapsed.</span></span>  
+14. <span data-ttu-id="b485c-125">Valitse maksutapa.</span><span class="sxs-lookup"><span data-stu-id="b485c-125">Select the payment method.</span></span>
+    * <span data-ttu-id="b485c-126">Valitse tässä menettelyssä käteismaksutapa.</span><span class="sxs-lookup"><span data-stu-id="b485c-126">For this procedure, select the cash payment method.</span></span>  
+15. <span data-ttu-id="b485c-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b485c-127">Close the page.</span></span>
+16. <span data-ttu-id="b485c-128">Anna määrä.</span><span class="sxs-lookup"><span data-stu-id="b485c-128">Enter the amount.</span></span>
+    * <span data-ttu-id="b485c-129">Anna tässä menettelyssä tilaussummaksi summa, joka löytyy Myyntitilauksen yhteenveto -sivun summakentän vasemmalta puolelta.</span><span class="sxs-lookup"><span data-stu-id="b485c-129">For this procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field.</span></span> <span data-ttu-id="b485c-130">Tällä toiminnolla voi määrittää tilauksen kokonaan maksetuksi.</span><span class="sxs-lookup"><span data-stu-id="b485c-130">This action will allow you to complete the order as fully paid.</span></span>  
+17. <span data-ttu-id="b485c-131">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b485c-131">Select **OK**.</span></span>
+18. <span data-ttu-id="b485c-132">Valitse **Lähetä**.</span><span class="sxs-lookup"><span data-stu-id="b485c-132">Select **Submit**.</span></span>
 

@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: RetailBuyersPushPerPackage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,35 +17,35 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f17585359d93030d7830eb60ce07af7c48f5d49f
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 033d4f72b626130c144faff30fe0d35349b26c6d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979572"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015869"
 ---
-# <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a><span data-ttu-id="26de6-103">Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin</span><span class="sxs-lookup"><span data-stu-id="26de6-103">Cross-dock products from receiving warehouse to stores</span></span>
+# <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a><span data-ttu-id="68357-103">Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin</span><span class="sxs-lookup"><span data-stu-id="68357-103">Cross-dock products from receiving warehouse to stores</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="26de6-104">Tässä menettelyssä esitellään, miten cross docking luodaan ja miten sitä käsitellään jaettaessa tuotteita ostotilauksen vastaanottosijainnista yhteen tai useaan myymälään.</span><span class="sxs-lookup"><span data-stu-id="26de6-104">This procedure walks through the steps to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores.</span></span> <span data-ttu-id="26de6-105">Käyttäjä voi määrittää useita konfiguraatioita. Järjestelmä voi ehdottaa, miten tuotteet jaellaan, tai käyttäjä voi syöttää manuaalisesti, minne tuotteet jaellaan ja miten paljon kuhunkin myymälään tuotteita siirtyy.</span><span class="sxs-lookup"><span data-stu-id="26de6-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="26de6-106">Menettely ei sisällä tietojen asetuksia, joita cross dockingissa voi käyttää, kuten täydennyssääntöjä, organisaatiohierarkioita ja myymälän painoja.</span><span class="sxs-lookup"><span data-stu-id="26de6-106">The procedure doesn't include setup of data that can be used in the Cross-dock, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="26de6-107">Menettelyssä käytetään esittely-yritystä USRT.</span><span class="sxs-lookup"><span data-stu-id="26de6-107">The procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="68357-104">Tässä menettelyssä esitellään, miten cross docking luodaan ja miten sitä käsitellään jaettaessa tuotteita ostotilauksen vastaanottosijainnista yhteen tai useaan myymälään.</span><span class="sxs-lookup"><span data-stu-id="68357-104">This procedure walks through the steps to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores.</span></span> <span data-ttu-id="68357-105">Käyttäjä voi määrittää useita konfiguraatioita. Järjestelmä voi ehdottaa, miten tuotteet jaellaan, tai käyttäjä voi syöttää manuaalisesti, minne tuotteet jaellaan ja miten paljon kuhunkin myymälään tuotteita siirtyy.</span><span class="sxs-lookup"><span data-stu-id="68357-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="68357-106">Menettely ei sisällä tietojen asetuksia, joita cross dockingissa voi käyttää, kuten täydennyssääntöjä, organisaatiohierarkioita ja myymälän painoja.</span><span class="sxs-lookup"><span data-stu-id="68357-106">The procedure doesn't include setup of data that can be used in the Cross-dock, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="68357-107">Menettelyssä käytetään esittely-yritystä USRT.</span><span class="sxs-lookup"><span data-stu-id="68357-107">The procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="26de6-108">Siirry Kaikki ostotilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="26de6-108">Go to All purchase orders.</span></span>
-2. <span data-ttu-id="26de6-109">Valitse luettelosta ostotilaus ja avaa sitten tilaus valitsemalla linkki.</span><span class="sxs-lookup"><span data-stu-id="26de6-109">Select a purchase order in the list and click the link to open the order.</span></span>
-3. <span data-ttu-id="26de6-110">Valitse toimintoruudussa Retail ja Commerce.</span><span class="sxs-lookup"><span data-stu-id="26de6-110">On the Action Pane, click Retail and Commerce.</span></span>
-4. <span data-ttu-id="26de6-111">Valitse Cross docking.</span><span class="sxs-lookup"><span data-stu-id="26de6-111">Click Cross docking.</span></span>
-5. <span data-ttu-id="26de6-112">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="26de6-112">Click Edit.</span></span>
-    * <span data-ttu-id="26de6-113">Luokkaa voidaan käyttää Rivit-osan nimikkeiden suodattamisessa.</span><span class="sxs-lookup"><span data-stu-id="26de6-113">The category can be used to filter the items in the Lines section.</span></span>  
-6. <span data-ttu-id="26de6-114">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="26de6-114">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="26de6-115">Syötä Cross docking -määrä -kenttään arvo, joka määrittää, miten suuri osa valitun tuotteen ostetusta määrästä jaellaan.</span><span class="sxs-lookup"><span data-stu-id="26de6-115">In the Cross docking quantity field, type a value to specify how much of the quantity being purchased of the selected product should be distributed.</span></span>
-8. <span data-ttu-id="26de6-116">Syötä Cross docking -lisämäärä -kenttään arvo, joka määrittää käytettävissä olevien ostettavien tuotteiden jaettavan määrän</span><span class="sxs-lookup"><span data-stu-id="26de6-116">In the Additional cross docking quantity field, enter a value to specify the quantities to distribute for the available products being purchased</span></span>
-9. <span data-ttu-id="26de6-117">Syötä Jakelu-kenttään Sijaintipaino.</span><span class="sxs-lookup"><span data-stu-id="26de6-117">In the Distribution field, enter 'Location weight'.</span></span>
-    * <span data-ttu-id="26de6-118">Voit valita muita tyyppejä jakelun eri säännöille.</span><span class="sxs-lookup"><span data-stu-id="26de6-118">You can select the other types to use different rules for the distribution.</span></span>  
-10. <span data-ttu-id="26de6-119">Syötä tai valitse arvo Täydennyshierarkia-kentässä.</span><span class="sxs-lookup"><span data-stu-id="26de6-119">In the Replenishment hierarchy field, select a value.</span></span>
-11. <span data-ttu-id="26de6-120">Valitse Ota valikoimat huomioon -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="26de6-120">Select Yes in the Respect assortments field.</span></span>
-12. <span data-ttu-id="26de6-121">Valitse Laske määrät.</span><span class="sxs-lookup"><span data-stu-id="26de6-121">Click Calculate quantities.</span></span>
-13. <span data-ttu-id="26de6-122">Valitse Luo tilaus.</span><span class="sxs-lookup"><span data-stu-id="26de6-122">Click Create order.</span></span>
-14. <span data-ttu-id="26de6-123">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="26de6-123">Click Yes.</span></span>
-15. <span data-ttu-id="26de6-124">Etsi ja valitse luettelosta tuotteet vastaanottava varasto</span><span class="sxs-lookup"><span data-stu-id="26de6-124">In the list, find and select a warehouse that received products</span></span>
-16. <span data-ttu-id="26de6-125">Valitse Tilaus, kun haluat tarkastella valitussa varastossa luotuja tilauksia</span><span class="sxs-lookup"><span data-stu-id="26de6-125">Click Order to view the orders that got created for the selected warehouse</span></span>
+1. <span data-ttu-id="68357-108">Siirry Kaikki ostotilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="68357-108">Go to All purchase orders.</span></span>
+2. <span data-ttu-id="68357-109">Valitse luettelosta ostotilaus ja avaa sitten tilaus valitsemalla linkki.</span><span class="sxs-lookup"><span data-stu-id="68357-109">Select a purchase order in the list and click the link to open the order.</span></span>
+3. <span data-ttu-id="68357-110">Valitse toimintoruudussa Retail ja Commerce.</span><span class="sxs-lookup"><span data-stu-id="68357-110">On the Action Pane, click Retail and Commerce.</span></span>
+4. <span data-ttu-id="68357-111">Valitse Cross docking.</span><span class="sxs-lookup"><span data-stu-id="68357-111">Click Cross docking.</span></span>
+5. <span data-ttu-id="68357-112">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="68357-112">Click Edit.</span></span>
+    * <span data-ttu-id="68357-113">Luokkaa voidaan käyttää Rivit-osan nimikkeiden suodattamisessa.</span><span class="sxs-lookup"><span data-stu-id="68357-113">The category can be used to filter the items in the Lines section.</span></span>  
+6. <span data-ttu-id="68357-114">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="68357-114">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="68357-115">Syötä Cross docking -määrä -kenttään arvo, joka määrittää, miten suuri osa valitun tuotteen ostetusta määrästä jaellaan.</span><span class="sxs-lookup"><span data-stu-id="68357-115">In the Cross docking quantity field, type a value to specify how much of the quantity being purchased of the selected product should be distributed.</span></span>
+8. <span data-ttu-id="68357-116">Syötä Cross docking -lisämäärä -kenttään arvo, joka määrittää käytettävissä olevien ostettavien tuotteiden jaettavan määrän</span><span class="sxs-lookup"><span data-stu-id="68357-116">In the Additional cross docking quantity field, enter a value to specify the quantities to distribute for the available products being purchased</span></span>
+9. <span data-ttu-id="68357-117">Syötä Jakelu-kenttään Sijaintipaino.</span><span class="sxs-lookup"><span data-stu-id="68357-117">In the Distribution field, enter 'Location weight'.</span></span>
+    * <span data-ttu-id="68357-118">Voit valita muita tyyppejä jakelun eri säännöille.</span><span class="sxs-lookup"><span data-stu-id="68357-118">You can select the other types to use different rules for the distribution.</span></span>  
+10. <span data-ttu-id="68357-119">Syötä tai valitse arvo Täydennyshierarkia-kentässä.</span><span class="sxs-lookup"><span data-stu-id="68357-119">In the Replenishment hierarchy field, select a value.</span></span>
+11. <span data-ttu-id="68357-120">Valitse Ota valikoimat huomioon -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="68357-120">Select Yes in the Respect assortments field.</span></span>
+12. <span data-ttu-id="68357-121">Valitse Laske määrät.</span><span class="sxs-lookup"><span data-stu-id="68357-121">Click Calculate quantities.</span></span>
+13. <span data-ttu-id="68357-122">Valitse Luo tilaus.</span><span class="sxs-lookup"><span data-stu-id="68357-122">Click Create order.</span></span>
+14. <span data-ttu-id="68357-123">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="68357-123">Click Yes.</span></span>
+15. <span data-ttu-id="68357-124">Etsi ja valitse luettelosta tuotteet vastaanottava varasto</span><span class="sxs-lookup"><span data-stu-id="68357-124">In the list, find and select a warehouse that received products</span></span>
+16. <span data-ttu-id="68357-125">Valitse Tilaus, kun haluat tarkastella valitussa varastossa luotuja tilauksia</span><span class="sxs-lookup"><span data-stu-id="68357-125">Click Order to view the orders that got created for the selected warehouse</span></span>
 
