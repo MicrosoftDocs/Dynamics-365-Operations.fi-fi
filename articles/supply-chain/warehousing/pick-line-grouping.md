@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 4b9cd7dac680c1691fb4c6dd4078f109254be784
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b3497d43a500898207ed5154721ee0e3a327fb93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215592"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017733"
 ---
 # <a name="pick-line-grouping"></a>Keräilyrivin ryhmittely
 
@@ -40,20 +40,20 @@ Keräilyrivin ryhmittelyssä useita työrivejä, joilla on sama nimike ja sijain
 
     - Valitse **Valikkovaihtoehdon nimi** -kenttä ja syötä **Myynnin poiminta - ryhmän rivi**.
     - Valitse **Otsikko** -kenttä ja syötä **Myynnin keräily - ryhmän rivi**.
-    - Valitse **Tila**-kentässä **Työ**.
+    - Valitse **Tila** -kentässä **Työ**.
     - Valitse **Käytä nykyistä työtä** -asetukseksi **Kyllä**.
 
-3. **Yleiset**-pikavälilehdessä voit määrittää seuraavat arvot:
+3. **Yleiset** -pikavälilehdessä voit määrittää seuraavat arvot:
 
-    - Valitse **Ohjaaja**-kentässä **Järjestelmäohjattu**.
+    - Valitse **Ohjaaja** -kentässä **Järjestelmäohjattu**.
     - Määritä **Luo rekisterikilpi** -valinnan asetukseksi **Kyllä**.
     - Määritä **Ryhmäkeräily** -asetukseksi **Kyllä**.
 
-4. Määritä **Työluokat**-pikavälilehdessä mobiililaitteen valikkokohteelle kelvolliset työluokat noudattamalla näitä vaiheita:
+4. Määritä **Työluokat** -pikavälilehdessä mobiililaitteen valikkokohteelle kelvolliset työluokat noudattamalla näitä vaiheita:
 
     1. Valitse **Uusi**.
-    2. Valitse **Työluokan tunnus** -kentässä**Myynti** tai **Tilauksen keräily** sen mukaan, mitä varastoa käytät.
-    3. Valitse **Työtilaustyyppi**-kentässä **Myyntitilaukset**.
+    2. Valitse **Työluokan tunnus** -kentässä **Myynti** tai **Tilauksen keräily** sen mukaan, mitä varastoa käytät.
+    3. Valitse **Työtilaustyyppi** -kentässä **Myyntitilaukset**.
 
 ### <a name="set-up-a-mobile-device-menu"></a>Määritä varaston mobiililaitteen valikko
 
@@ -65,12 +65,12 @@ Keräilyrivin ryhmittelyssä useita työrivejä, joilla on sama nimike ja sijain
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Työ \> Työmallit**.
 1. Etsi työmalli, jota käytetään tämän funktion kanssa. Tässä esimerkissä valitaan **Standard 51-poiminta** vaiheeseen Contoso-työmalli.
 1. Valitse valikosta **Muokkaa kyselyä**.
-1. Valitse **Lajittelu**-välilehdestä **Lisää** ja määritä sitten seuraavat arvot:
+1. Valitse **Lajittelu** -välilehdestä **Lisää** ja määritä sitten seuraavat arvot:
 
-    - Valitse **Taulu**-kentästä **Väliaikaiset työtapahtumat**.
-    - Valitse **Johdettu taulu**-kentästä **Väliaikaiset työtapahtumat**.
+    - Valitse **Taulu** -kentästä **Väliaikaiset työtapahtumat**.
+    - Valitse **Johdettu taulu** -kentästä **Väliaikaiset työtapahtumat**.
     - Valitse **Kenttä** -kentässä **Nimikkeen numero**.
-    - Valitse **Hakusuunta**-kentässä **Laskeva**.
+    - Valitse **Hakusuunta** -kentässä **Laskeva**.
 
 > [!NOTE]
 > Jotta poimintarivin ryhmittelytoiminto toimisi, työrivit on lajiteltava nimiketunnuksen mukaan. Jos rivejä, joilla on samat nimikkeet, ei ole järjestetty yksitellen, niitä ei ryhmitellä.
@@ -83,16 +83,16 @@ Ennen kuin voit määrittää keräilyrivin ryhmittelyn, sinun on luotava joitak
 
 1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
 2. Luo uusi myyntitilaus valitsemalla **Uusi**. 
-3. Valitse **Asiakastili**-kentässä mikä tahansa asiakas. 
-4. Valitse **Yleinen**-pikavälilehden **Varasto**-kentässä **51**. Valitse sitten **OK**.
-5. Lisää seuraavat kuusi riviä **myyntitilausriveille**:
+3. Valitse **Asiakastili** -kentässä mikä tahansa asiakas. 
+4. Valitse **Yleinen** -pikavälilehden **Varasto** -kentässä **51**. Valitse sitten **OK**.
+5. Lisää seuraavat kuusi riviä **myyntitilausriveille** :
 
-    - Valitse **Rivi 1:** **Nimikkeen numero** -kentässä **M9200**. Kirjoita **Määrä**-kenttään **3**.
-    - Valitse **Rivi 2:** **Nimikkeen numero** -kentässä **M9201**. Kirjoita **Määrä**-kenttään **3**. 
-    - Valitse **Rivi 3:** **Nimikkeen numero** -kentässä **M9202**. Kirjoita **Määrä**-kenttään **2**. 
-    - Valitse **Rivi 4:** **Nimikkeen numero** -kentässä **M9200**. Kirjoita **Määrä**-kenttään **1**. 
-    - Valitse **Rivi 5:** **Nimikkeen numero** -kentässä **M9200**. Kirjoita **Määrä**-kenttään **3**.
-    - Valitse **Rivi 6:** **Nimikkeen numero** -kentässä **M9202**. Kirjoita **Määrä**-kenttään **7**. 
+    - Valitse **Rivi 1:** **Nimikkeen numero** -kentässä **M9200**. Kirjoita **Määrä** -kenttään **3**.
+    - Valitse **Rivi 2:** **Nimikkeen numero** -kentässä **M9201**. Kirjoita **Määrä** -kenttään **3**. 
+    - Valitse **Rivi 3:** **Nimikkeen numero** -kentässä **M9202**. Kirjoita **Määrä** -kenttään **2**. 
+    - Valitse **Rivi 4:** **Nimikkeen numero** -kentässä **M9200**. Kirjoita **Määrä** -kenttään **1**. 
+    - Valitse **Rivi 5:** **Nimikkeen numero** -kentässä **M9200**. Kirjoita **Määrä** -kenttään **3**.
+    - Valitse **Rivi 6:** **Nimikkeen numero** -kentässä **M9202**. Kirjoita **Määrä** -kenttään **7**. 
 
     Tässä on yhteenveto kunkin nimikkeen kokonaismääristä:
 
@@ -130,3 +130,4 @@ Ennen kuin voit määrittää keräilyrivin ryhmittelyn, sinun on luotava joitak
 >    - Kappaleen keräily.
 >    - Työrivit, joilla on keskeneräinen täydennystyö.
 >    - Ylikeräily.
+>    - Nimikkeen uudelleenkohdistaminen lyhyen keräilyn avulla

@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835947"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039889"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Sähköisen laskutuksen lisäosan määrittäminen
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Sähköisen laskutuksen lisäosatoiminnon määritys on prosessi, jossa luodaan tarvittavat määritykset RCS (Regulatory Configuration Services) -ympäristön kautta ja julkaistaan tämä määritys sähköisen laskutuksen lisäosapalvelimelle. Määrityksessä voit luoda määritettävissä olevia sääntöjä, joiden avulla sähköisen laskutuksen lisäosa voi käyttää suojattua protokollaa internetissä viestiäkseen ja vaihtaakseen tietoja kolmannen osapuolen yksikön kanssa verkkopaovelujen kautta.
 
@@ -49,7 +49,7 @@ Laskumuotojen ja toimintokulkujen vaihtelun vuoksi toiminnon määritys voi vaih
 Määritysprosessi on suoritettava RCS-ympäristössä. Voit luoda uuden sähköisen laskutuksen lisäosatoiminnon noudattamalla seuraavia ohjeita.
 
 1. Kirjaudu RCS-ympäristöön.
-2. Valitse **Globalisaatio-ominaisuukset**-työtilan **Toiminnot**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
+2. Valitse **Globalisaatio-ominaisuukset** -työtilan **Toiminnot** -osassa **Sähköisen laskutuksen lisäosa** -ruutu.
 3. Valitse **Sähköisen laskutuksen lisäosatoiminnot** sivulla **Tuo** tuodaksesi ER-tietomallin määrityksen yleisestä säilöstä.
 4. Valitse **Lisää** luodaksesi sähköisen laskutuksen lisäosatoiminnon. Voit joko luoda toiminnon tyhjästä tai johtaa sen aiemmin luodusta sähköisen laskutuksen lisäosatoiminnosta.
 
@@ -64,7 +64,7 @@ Määritykset sisältävät ER-muodon määritykset, jotka tarvitaan muunnoksiin
 
 Voit lisätä ER-muotoja sähköisen laskutuksen lisäosatoimintoon noudattamalla seuraavia ohjeita.
 
-1. Valitse **Sähköisen laskutuksen lisäosatoiminnot**-sivun **Määritykset**-välilehdessä **Lisää** lisätäksesi ER-tiedostomuotomäärityksiä sähköisen laskutuksen lisäosatoimintoa varten.
+1. Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun **Määritykset** -välilehdessä **Lisää** lisätäksesi ER-tiedostomuotomäärityksiä sähköisen laskutuksen lisäosatoimintoa varten.
 
     ![Sähköisen laskutuksen lisäosatoiminnon määritysten lisääminen](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
@@ -88,7 +88,7 @@ Toimintojen määritykset sisältävät kolmannen osapuolen verkkopalvelun kanss
 
 Voit lisätä toimintomääritykset laskutuksen lisäosatoimintoon noudattamalla seuraavia ohjeita.
 
-1. Valitse **Sähköisen laskutuksen lisäosatoiminnot**-sivun **Määritykset**-välilehdessä **Lisää** lisätäksesi toimintomäärityksiä sähköisen laskutuksen lisäosatoimintoa varten.
+1. Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun **Määritykset** -välilehdessä **Lisää** lisätäksesi toimintomäärityksiä sähköisen laskutuksen lisäosatoimintoa varten.
 
     ![Sähköisen laskutuksen lisäosatoiminnon määritysten lisääminen](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
@@ -111,14 +111,14 @@ Kukin toimi sisältää ennalta määritetyn luettelon parametreista, joita tarv
 
 #### <a name="actions-fasttab"></a>Toimien pikavälilehti
 
-Noudata toista sivun **Toimintoversioiden määritys** -sivun **Toimet**-välilehden **Toimet**-pikavälilehden ohjetta tai niitä molempia:
+Noudata toista sivun **Toimintoversioiden määritys** -sivun **Toimet** -välilehden **Toimet** -pikavälilehden ohjetta tai niitä molempia:
 
-- Valitse **Uusi** tai **Poista**, jos haluat lisätä uusia toimia tai poistaa aiemmin luotuja toimia.
+- Valitse **Uusi** tai **Poista** , jos haluat lisätä uusia toimia tai poistaa aiemmin luotuja toimia.
 - Valitsemalla **Ylös** tai **Alas** voit siirtää valittuja toimia ylös- tai alaspäin ruudukossa ja siten muuttaa niiden suoritusjärjestystä. Toimet suoritetaan siinä järjestyksessä, jossa ne ovat ruudukossa alhaalta ylöspäin.
 
 ![Toimien hallinta](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
-Seuraavassa taulukossa käsitellään **Toimet**-pikavälilehdessä valittavina olevat kentät.
+Seuraavassa taulukossa käsitellään **Toimet** -pikavälilehdessä valittavina olevat kentät.
 
 | Kenttä        | kuvaus |
 |--------------|-------------|
@@ -126,15 +126,15 @@ Seuraavassa taulukossa käsitellään **Toimet**-pikavälilehdessä valittavina 
 | Toiminnon nimi  | Toimen nimi ja suoritusjärjestys. |
 | kuvaus  | Toimen kuvaus. |
 | Ota uudelleenyritys käyttöön | Valittu valintaruutu ilmaisee, että toimea voidaan yrittää uudelleen, jos edellinen yritys epäonnistuu. |
-| Yritä toimintoa uudelleen | Uuden yrityksen yhteydessä se toiminta, josta uusi yritys aloitetaan. Uusi yritys päättyy sitten nykyiseen toimeen (uudelleenyritys mukaan luettuna). Jos uudelleenyrityksiä sisältävillä toimilla on parametrit **Lopetuksen minimi** ja **Lopetuksen maksimi**, määritä uusien yritysten enimmäis- ja vähimmäismäärä. |
+| Yritä toimintoa uudelleen | Uuden yrityksen yhteydessä se toiminta, josta uusi yritys aloitetaan. Uusi yritys päättyy sitten nykyiseen toimeen (uudelleenyritys mukaan luettuna). Jos uudelleenyrityksiä sisältävillä toimilla on parametrit **Lopetuksen minimi** ja **Lopetuksen maksimi** , määritä uusien yritysten enimmäis- ja vähimmäismäärä. |
 
 #### <a name="parameters-fasttab"></a>Parametrien pikavälilehti
 
-**Parametrit**-pikavälilehdessä on luettelo sen toimen parametreista, joka on valittuna **Toimet**-pikavälilehdessä.
+**Parametrit** -pikavälilehdessä on luettelo sen toimen parametreista, joka on valittuna **Toimet** -pikavälilehdessä.
 
 ![Parametrien pikavälilehti](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
-Seuraavassa taulukossa käsitellään **Parametrit**-pikavälilehdessä valittavina olevat kentät.
+Seuraavassa taulukossa käsitellään **Parametrit** -pikavälilehdessä valittavina olevat kentät.
 
 | Kenttä       | kuvaus |
 |-------------|-------------|
@@ -144,7 +144,7 @@ Seuraavassa taulukossa käsitellään **Parametrit**-pikavälilehdessä valittav
 
 #### <a name="list-of-parameters-by-action"></a>Toimikohtainen parametriluettelo
 
-Käytettävissä olevat parametrit vaihtelevat **Toimet**-pikavälilehdessä valitun toimen mukaan.
+Käytettävissä olevat parametrit vaihtelevat **Toimet** -pikavälilehdessä valitun toimen mukaan.
 
 ###### <a name="action-sign-document"></a>Toimi: Allekirjoita tiedosto
 
@@ -194,13 +194,13 @@ Käytettävissä olevat parametrit vaihtelevat **Toimet**-pikavälilehdessä val
 |-----------------------------|-------------|
 | Internet-palvelun URL             | URL-osoite, johon pyynnöt lähetetään. |
 | Verkkopyynnön aikakatkaisu         | Enimmäisaika (millisekunteina), joka odotetaan verkkopalvelun vastausta. |
-| Pyyntötoiminnon tyyppi      | HTTP-pyyntötoiminnon tyyppi (kuten **HAE**, **KIRJAA** tai **POISTA**). |
+| Pyyntötoiminnon tyyppi      | HTTP-pyyntötoiminnon tyyppi (kuten **HAE** , **KIRJAA** tai **POISTA** ). |
 | Sertifikaattien nimet           | Sertifikaattien nimet. |
 | Vastaustekstin koodaus      | HTTP-vastaustekstin odotettu koodaus, jotta sen koodaus voidaan purkaa oikein. |
 | HTTP-pyynnön sisältötyyppi   | HTTP-pyynnön sisältötyypin otsikkosyöte. |
 | HTTP-pyynnön sisältöteksti   | HTTP-pyynnön teksti. (Teksti voi olla tyhjä.) |
 | HTTP-parametrikyselyn arvot | Parametrikyselyn arvoit, joita käytetään URL-osoitteen täyttämiseen muuttuvilla parametreilla. |
-| Pyydä reititys               | HTTP-pyynnön reitityspolku. Muuttuvat parametrit voi kirjoittaa **\{paramName\}**-merkintään. Esimerkki: **"api/{id}/submit"**. |
+| Pyydä reititys               | HTTP-pyynnön reitityspolku. Muuttuvat parametrit voi kirjoittaa **\{paramName\}** -merkintään. Esimerkki: **"api/{id}/submit"**. |
 | Reititysparametriluettelo        | Muuttujien reititykseen lisäämiseen käytettävät reititysparametrit avainarvomerkintänä. |
 | Mukautetut HTTP-otsikot         | Mukautetut HTTP-otsikot, jotka lisätään pyyntöön. |
 | HTTP-pyynnön evästeet        | Luettelo avainarvomerkinnän muotoisista evästeitä, jotka lisätään HTTP-evästeiden otsikkopyyntöön. |
@@ -260,7 +260,7 @@ Soveltuvuussääntöjen avulla voit luoda loogisia sääntöjä, jotka määrä�
 
 #### <a name="set-up-applicability-rules"></a>Soveltuvuussääntöjen määrittäminen
 
-1. Valitse **Toimintoversion määritys** -sivun **Soveltuvuussäännöt**-välilehdessä **Uusi** lisätäksesi soveltuvuussäännön.
+1. Valitse **Toimintoversion määritys** -sivun **Soveltuvuussäännöt** -välilehdessä **Uusi** lisätäksesi soveltuvuussäännön.
 
     ![Soveltuvuussääntöjen hallinta](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
@@ -280,7 +280,7 @@ Voit purkaa lausekkeiden ryhmittelyn valitsemalla halutut lausekkeet ja valitsem
 > [!NOTE]
 > Kun purat lausekkeen ryhmittelyn, aloita aina sisimmästä ryhmittelytasosta.
 
-Seuraavassa taulukossa käsitellään **Soveltuvuussäännöt**-välilehdessä valittavina olevat kentät.
+Seuraavassa taulukossa käsitellään **Soveltuvuussäännöt** -välilehdessä valittavina olevat kentät.
 
 | Kenttä         | kuvaus |
 |---------------|-------------|
@@ -295,11 +295,11 @@ Voit luoda muuttujia ja käyttää niitä tietyn toimen parametrin syötearvona.
 
 #### <a name="set-up-variables"></a>Määritä muuttujat
 
-- Voit hallita muuttujia valitsemalla **Toimintoversion määritys** -sivun **Muuttujat**-välilehdessä **Uusi** tai **Poista**.
+- Voit hallita muuttujia valitsemalla **Toimintoversion määritys** -sivun **Muuttujat** -välilehdessä **Uusi** tai **Poista**.
 
     ![Muuttujien hallinta](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
-Seuraavassa taulukossa käsitellään **Muuttujat**-välilehdessä valittavina olevat kentät.
+Seuraavassa taulukossa käsitellään **Muuttujat** -välilehdessä valittavina olevat kentät.
 
 | Kenttä       | kuvaus |
 |-------------|-------------|
@@ -323,8 +323,8 @@ Sähköisen laskutuksen lisäosaympäristö on liitettävä sähköisen laskutuk
 
 Näiden ohjeiden avulla voit ottaa käyttöön sähköisen laskutuksen lisäosaympäristön sähköisen laskutuksen lisäosatoimintoa varten.
 
-1. Valitse **Sähköisen laskutuksen lisäosatoiminnot**-sivun **Ympäristöt**-välilehdessä **Ota käyttöön** lisätäksesi sähköisen laskutuksen lisäosaympäristön.
-2. Syötä **Voimaantulo**-kenttään päivämäärä, jona uusi ympäristö otetaan käyttöön.
+1. Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun **Ympäristöt** -välilehdessä **Ota käyttöön** lisätäksesi sähköisen laskutuksen lisäosaympäristön.
+2. Syötä **Voimaantulo** -kenttään päivämäärä, jona uusi ympäristö otetaan käyttöön.
 
 ![Sähköisen laskutuksen lisäosaympäristön käyttöönotto](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
@@ -332,7 +332,7 @@ Näiden ohjeiden avulla voit ottaa käyttöön sähköisen laskutuksen lisäosay
 
 Sähköinen lisäosatoiminto voidaan jakaa useille organisaatioille.
 
-- Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun **Organisaatiot**-välilehdellä **Jaa seuraavan kanssa** lisätäksesi organisaation, jolle haluat jakaa sähköisen laskutuksen lisäosatoiminnon.
+- Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun **Organisaatiot** -välilehdellä **Jaa seuraavan kanssa** lisätäksesi organisaation, jolle haluat jakaa sähköisen laskutuksen lisäosatoiminnon.
 
 Voit lopettaa sähköisen laskutuksen lisäosatoiminnon jakamisen organisaatiolle valitsemalla **Lopeta jakaminen**.
 
@@ -342,22 +342,22 @@ Versiot auttavat sähköisen laskutuksen lisäosatoiminnon elinkaaren hallinnass
 
 ### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Luo uusi versio olemassa olevasta sähköisen laskutuksen lisäosatoiminnosta
 
-1. Valitse **Sähköisen laskutuksen lisäosatoiminnot**-sivun vasemmassa ruudukossa Sähköisen laskutuksen lisäosatoiminto.
-2. Valitse **Versiot**-välilehdessä **Uusi** lisätäksesi uuden version sähköisen laskutuksen lisäosatoiminnosta.
+1. Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun vasemmassa ruudukossa Sähköisen laskutuksen lisäosatoiminto.
+2. Valitse **Versiot** -välilehdessä **Uusi** lisätäksesi uuden version sähköisen laskutuksen lisäosatoiminnosta.
 
 ### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Sähköisen laskutuksen lisäosatoiminnon tilan muuttaminen
 
 Voit hallita laskutuksen lisäosatoimintoa noudattamalla seuraavia ohjeita.
 
-1. Valitse **Sähköisen laskutuksen lisäosatoiminnot**-sivun vasemmassa ruudukossa Sähköisen laskutuksen lisäosatoiminto.
-2. Valitse **Versiot**-välilehdessä **Muuta tilaa** ja muuta tilan **Luonnos** tilalle tila **Valmis**.
+1. Valitse **Sähköisen laskutuksen lisäosatoiminnot** -sivun vasemmassa ruudukossa Sähköisen laskutuksen lisäosatoiminto.
+2. Valitse **Versiot** -välilehdessä **Muuta tilaa** ja muuta tilan **Luonnos** tilalle tila **Valmis**.
 3. Järjestelmä pyytää vahvistamaan, että haluat viimeistellä sähköisen laskutuksen lisäosatoiminnon ja kaikki sen komponentit. Vahvista toimi valitsemalla **Kyllä** tai peru se valitsemalla **Ei**.
 
     > [!NOTE]
-    > Kun valitset **Kyllä**, sähköisen laskutuksen lisäosatoiminnon komponentteja olevien määritysversioiden tila muuttuu automaattisesti arvosta **Luonnos** arvoksi **Valmis**.
+    > Kun valitset **Kyllä** , sähköisen laskutuksen lisäosatoiminnon komponentteja olevien määritysversioiden tila muuttuu automaattisesti arvosta **Luonnos** arvoksi **Valmis**.
 
 4. Valitse **Muuta tilaa** ja muuta tila sitten tilasta **Valmis** tilaan **Julkaise**.
 5. Järjestelmä pyytää vahvistamaan, että haluat julkaista sähköisen laskutuksen lisäosatoiminnon ja kaikki sen komponentit yleiseen säilöön. Vahvista toimi valitsemalla **Kyllä** tai peru se valitsemalla **Ei**.
 
     > [!NOTE]
-    > Kun valitset **Kyllä**, määritysversioiden tila muutetaan automaattisesti tilasta **Valmis** tilaan **Jaettu**.
+    > Kun valitset **Kyllä** , määritysversioiden tila muutetaan automaattisesti tilasta **Valmis** tilaan **Jaettu**.

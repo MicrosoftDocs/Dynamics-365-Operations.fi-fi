@@ -3,7 +3,7 @@ title: Linkkipolkumoduuli
 description: Tässä ohjeaiheessa on tietoja linkkipolkumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7c6f215c3a7539cc16b0d72594702e6bdde7c58e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817107"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055401"
 ---
 # <a name="breadcrumb-module"></a>Linkkipolkumoduuli
 
@@ -46,7 +46,7 @@ Seuraavassa kuvassa on esimerkki linkkipolkumoduulista, jossa näkyy PDP:n luokk
 
 ## <a name="breadcrumb-module-settings"></a>Linkkipolkumoduulin asetukset
 
-Linkkipolkumoduuli käyttää **linkkipolun näyttötyyppiä PDP**-asetuksessa, joka määritetään kohdassa **Sivuston asetukset \> Laajennukset** sivustomuodostustyökalussa. Tällä asetuksella on kolme mahdollista arvoa:
+Linkkipolkumoduuli käyttää **linkkipolun näyttötyyppiä PDP** -asetuksessa, joka määritetään kohdassa **Sivuston asetukset \> Laajennukset** sivustomuodostustyökalussa. Tällä asetuksella on kolme mahdollista arvoa:
 
 - **Näytä luokkahierarkia** – Kun tämä arvo on valittuna, linkkipolkumoduulissa näkyy PDP:n tarkasteltavissa olevan tuotteen koko luokkahierarkia.
 - **Näytä takaisin tuloksiin** – Kun tämä arvo on valittu, linkkipolkumoduulissa näkyy PDP:n takaisin tuloksiin -linkki, jos käyttäjä avaa PDP:n moduulista, joka sallii takaisin tuloksiin -linkin. Tämä toiminto on käytettävissä, kun käyttäjät siirtyvät luokka-, haku-, luettelo- ja suositusluettelot -sivuista. Tämän toiminnon tukemiseksi tuotekokoelma- ja hakutulosmoduuleissa on ominaisuus, jonka nimi on **Salli takaisin PDP:n tuloksiin**. Tämän ominaisuuden avulla voit joustavasti määrittää, mitkä moduulit tukevat takaisin tuloksiin -linkkitoimintoa PDP:n yhteydessä. Jos esimerkiksi **Näytä takaisin tuloksiin** -asetus on valittuna **linkkipolkunäyttötyyppi PDP:ssä** -linkkipolkumoduulille, ja **Salli takaisin tulokset PDP:ssä** valitaan hakusivun hakutulokset-moduulille, näkyviin tulee takaisin tuloksiin -linkki, kun käyttäjät siirtyvät hakusivulta PDP:n kautta.
@@ -66,23 +66,27 @@ Linkkipolkumoduuli käyttää **linkkipolun näyttötyyppiä PDP**-asetuksessa, 
 
 Voit lisätä linkkipolkumoduulin PDP:hen ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Siirry kohtaan **Sivuston asetukset /> Laajennukset** ja valitse sitten **Linkkipolun näyttötyyppi PDP**-asetuksessa **Näytä luokkahierarkia**.
+1. Siirry kohtaan **Sivuston asetukset /> Laajennukset** ja valitse sitten **Linkkipolun näyttötyyppi PDP** -asetuksessa **Näytä luokkahierarkia**.
 1. Siirry kohtaan **Mallit** ja valitse PDP-malli.
-1. Valitse **Kontti**-paikka, joka sisältää ostoruutumoduulin. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku**-moduuli ja valitse sitten **OK**.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Kontti** -paikka, joka sisältää ostoruutumoduulin. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku** -moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja avaa PDP, joka käyttää PDP-mallia. Jos PDP:tä ei vielä ole olemassa, luo sellainen.
-1. Valitse **Kontti**-paikka, joka sisältää ostoruutumoduulin. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku**-moduuli ja valitse sitten **OK**.
-1. Valitse **Linkkipolku**-paikan ominaisuudet-ruudun **Pääkansio**-kohdasta **Linkitä teksti**.
+1. Valitse **Kontti** -paikka, joka sisältää ostoruutumoduulin. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku** -moduuli ja valitse sitten **OK**.
+1. Valitse **Linkkipolku** -paikan ominaisuudet-ruudun **Pääkansio** -kohdasta **Linkitä teksti**.
 1. Kirjoita **Linkin teksti** -valintaikkunaan **Koti** ja valitse sitten **Linkin kohde** -kohdasta **Lisää linkki**.
 1. Valitse **Lisää linkki** -valintaikkunassa linkkipolkupääkansion linkki ja valitse sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
+
+[Siirtymisvalikkomoduulit](nav-menu-module.md)
+
+[Toimipaikan valitsinmoduuli](site-selector.md)
 
 [Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
 

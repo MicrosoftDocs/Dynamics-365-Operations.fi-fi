@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597455"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017411"
 ---
 # <a name="warehouse-slotting"></a>Varastopaikoitus
 
 [!include [banner](../includes/banner.md)]
 
-Varastopaikoituksen avulla voit konsolidoida kysynnän nimikkeen ja mittayksikön mukaan tilauksista, joiden tila on *tilattu*, *varattu* tai *vapautettu*. Luotua kysyntää voidaan sitten käyttää poimintaan käytettäviin paikkoihin määrän, yksikön, fyysisten dimensioiden, pysyvien sijaintien ja muiden perusteella. Kun poistosuunnitelma on luotu, voidaan luoda täydennystöitä, jotka tuovat sopivan määrän varastoa kuhunkin sijaintiin.
+Varastopaikoituksen avulla voit konsolidoida kysynnän nimikkeen ja mittayksikön mukaan tilauksista, joiden tila on *tilattu* , *varattu* tai *vapautettu*. Luotua kysyntää voidaan sitten käyttää poimintaan käytettäviin paikkoihin määrän, yksikön, fyysisten dimensioiden, pysyvien sijaintien ja muiden perusteella. Kun poistosuunnitelma on luotu, voidaan luoda täydennystöitä, jotka tuovat sopivan määrän varastoa kuhunkin sijaintiin.
 
 Tämän toiminnon avulla varastopäälliköt voivat suunnitella poimintasijainnit älykkäästi, ennen kuin ne vapauttavat tilauksia varastoon ja luovat poimintatöitä.
 
@@ -53,7 +54,7 @@ Mittayksikön yksiköt mahdollistavat useiden mittayksiköiden ryhmittelyn paiko
     - **Kuvaus:** *Jokainen laatikkokuormalava*
 
 1. Valitse **Tallenna**.
-1. Lisää uusi rivi ruudukkoon **Mittayksiköt**-pikavälilehdessä **Uusi**.
+1. Lisää uusi rivi ruudukkoon **Mittayksiköt** -pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Yksikkö:** *Laatikko*
@@ -82,7 +83,7 @@ Sinun on valittava malliin liitettävä direktiivikoodi.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Direktiivikoodit**.
 1. Valitse toimintoruudussa **Uusi**.
-1. Syötä **Direktiivikoodi**-kenttään koodi *Paikoitus*.
+1. Syötä **Direktiivikoodi** -kenttään koodi *Paikoitus*.
 1. Syötä **Direktiivin kuvaus** -kenttään koodi *Paikoitus*.
 
 ### <a name="set-up-slotting-templates"></a>Paikoituksen mallien käyttöönotto
@@ -111,7 +112,7 @@ Seuraavaksi on määritettävä mallin ylätunniste, paikoitusmäärittelyt ja p
         - **Tilattu** – Myyntitilauksen koko tilatun määrän pitää olla tarpeen.
         - **Varattu** – Ainoastaan ne myyntitilausrivin määrät, jotka on varattu (fyysinen ja tilattu), pitää vaatia.
 
-    - **Varasto**: _61_
+    - **Varasto** : _61_
     - **Salli aaltokysynnän käyttää varauksettoman määrän:** _Kyllä_
 
 Voit myös määrittää kyselyn, joka rajaa arvioitavan kysynnän laajuuden.
@@ -158,7 +159,7 @@ Voit lisätä kullekin luotavalle mallille rivin kutakin paikoitusmääritystä 
 
     - **Salli päästää ylös:** _Kyllä_
 
-        Kun tämän vaihtoehdon arvoksi on asetettu *Kyllä*, jos mitään kysyntää ei voi paikoittaa, siirtotyöt luodaan, jotta voidaan ottaa varasto pois sijainneista, joissa on varasto, mutta joissa mitään ei paikoitettu. Malli suoritetaan sitten uudelleen. Tällä kertaa se ohittaa sijaintien varaston. Tämä toiminto toimii parhaiten, kun **Määritä lähtöpaikkakriteerit** -kentän arvoksi on määritetty _Harkitse määrä_.
+        Kun tämän vaihtoehdon arvoksi on asetettu *Kyllä* , jos mitään kysyntää ei voi paikoittaa, siirtotyöt luodaan, jotta voidaan ottaa varasto pois sijainneista, joissa on varasto, mutta joissa mitään ei paikoitettu. Malli suoritetaan sitten uudelleen. Tällä kertaa se ohittaa sijaintien varaston. Tämä toiminto toimii parhaiten, kun **Määritä lähtöpaikkakriteerit** -kentän arvoksi on määritetty _Harkitse määrä_.
 
     - **Kiinteän sijainnin käyttö:** _Vain tuotteen kiinteät sijainnit_
 
@@ -186,9 +187,9 @@ Voit lisätä kullekin luotavalle mallille rivin kutakin paikoitusmääritystä 
 
     Toisen rivin kyselyssä määritetään nyt ehdot, joiden perusteella voidaan määrittää, mihin sijainteihin kyseisen rivin kysyntä voidaan paikoittaa.
 
-1. Valitse rivi, jonka **Järjestys**-kentän arvoksi on määritetty *2*.
+1. Valitse rivi, jonka **Järjestys** -kentän arvoksi on määritetty *2*.
 1. Valitse **Muokkaa kyselyä**.
-1. Valitse **Alue**-välilehdessä **Lisää**, jos haluat lisätä uuden rivin ruudukkoon.
+1. Valitse **Alue** -välilehdessä **Lisää** , jos haluat lisätä uuden rivin ruudukkoon.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Taulu:** *Sijainnit*
@@ -203,30 +204,30 @@ Voit lisätä kullekin luotavalle mallille rivin kutakin paikoitusmääritystä 
 On määritettävä vähintään yksi sijaintidirektiivi, joka tukee paikoituksen poimintoja. Tässä osassa olevien ohjeiden avulla voit määrittää uuden *Varastopoimintojen täydennyssijaintidirektiivin*.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
-1. Valitse vasemman ruudun **Työtilaustyyppi**-kentässä *Täydennys*.
+1. Valitse vasemman ruudun **Työtilaustyyppi** -kentässä *Täydennys*.
 1. Valitse toimintoruudussa **Uusi**.
-1. Kirjoita uuden sijaintidirektiivin otsikkoon **Nimi**-kenttään *61 paikoituspoiminta*.
+1. Kirjoita uuden sijaintidirektiivin otsikkoon **Nimi** -kenttään *61 paikoituspoiminta*.
 
 ##### <a name="configure-the-location-directives-fasttab"></a>Määritä Sijaintidirektiivit-pikavälilehti
 
-1. Määritä **Sijaintidirektiivit**-pikavälilehdessä seuraavat arvot. Hyväksy oletusarvot kaikille muille kentille.
+1. Määritä **Sijaintidirektiivit** -pikavälilehdessä seuraavat arvot. Hyväksy oletusarvot kaikille muille kentille.
 
     - **Työtyyppi:** _Poiminta_
     - **Toimipaikka:** _6_
-    - **Varasto**: _61_
+    - **Varasto** : _61_
     - **Direktiivikoodi:** _Paikoitus_
 
-1. Valitse **Tallenna**, jos haluat, että **Rivit**-pikavälilehti on käytettävissä.
+1. Valitse **Tallenna** , jos haluat, että **Rivit** -pikavälilehti on käytettävissä.
 
 ##### <a name="configure-the-lines-fasttab"></a>Määritä Rivit-pikavälilehti
 
-1. Luo uusi rivi valitsemalla **Rivit**-pikavälilehdellä **Uusi**.
+1. Luo uusi rivi valitsemalla **Rivit** -pikavälilehdellä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot. Hyväksy oletusarvot kaikille muille kentille.
 
     - **Määrästä:** _0_
     - **Määrälle:** _1000000_
 
-1. Valitse **Tallenna**, jos haluat, että **Paikkadirektiivitoimenpiteet**-pikavälilehti on käytettävissä.
+1. Valitse **Tallenna** , jos haluat, että **Paikkadirektiivitoimenpiteet** -pikavälilehti on käytettävissä.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Määritä Direktiivitoiminnot-pikavälilehti
 
@@ -236,12 +237,12 @@ On määritettävä vähintään yksi sijaintidirektiivi, joka tukee paikoitukse
     - **Nimi:** _Bulkki_
     - **Strategia:** _Ei mitään_
 
-1. Valitse **Tallenna**, jos haluat, että **Muokkaa kyselyä** -painike on käytettävissä.
+1. Valitse **Tallenna** , jos haluat, että **Muokkaa kyselyä** -painike on käytettävissä.
 
 ##### <a name="edit-the-query"></a>Muokkaa kyselyä
 
-1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Muokkaa kyselyä**.
-1. Valitse **Alue**-välilehdessä **Lisää**, jos haluat lisätä uuden rivin ruudukkoon.
+1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
+1. Valitse **Alue** -välilehdessä **Lisää** , jos haluat lisätä uuden rivin ruudukkoon.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Taulu:** *Sijainnit*
@@ -259,7 +260,7 @@ Tässä skenaariossa voit käyttää valmiita mallitietoja ja luoda tässä osas
 
 #### <a name="use-the-usmf-sample-data"></a>Käytä USMF-mallitietoja
 
-Tämän skenaarion käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen kuin aloitat.
+Tämän skenaarion käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF** -yritys ennen kuin aloitat.
 
 #### <a name="create-demand"></a>Luo kysyntää
 
@@ -267,10 +268,10 @@ Noudattamalla näitä ohjeita voit luoda kysynnän, johon paikoitus kohdistetaan
 
 1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
 1. Luo uusi myyntitilaus valitsemalla **Uusi**.
-1. Valitse **Luo myyntitilaus** -valintaikkunan **Asiakastili**-kentässä _US-007_.
-1. Valitse **Varasto**-kentässä _61_.
+1. Valitse **Luo myyntitilaus** -valintaikkunan **Asiakastili** -kentässä _US-007_.
+1. Valitse **Varasto** -kentässä _61_.
 1. Valitse **OK**.
-1. Uusi myyntitilaus avataan. **Myyntitilausrivit**-pikavälilehti sisältää tyhjän rivin. Määritä tälle riville seuraavat arvot:
+1. Uusi myyntitilaus avataan. **Myyntitilausrivit** -pikavälilehti sisältää tyhjän rivin. Määritä tälle riville seuraavat arvot:
 
     - **Nimike:** _L0101_
     - **Määrä** _20_
@@ -282,9 +283,9 @@ Noudattamalla näitä ohjeita voit luoda kysynnän, johon paikoitus kohdistetaan
 
 1. Valitse **Tallenna**.
 1. Luo toinen myyntitilaus valitsemalla **Uusi**.
-1. Valitse **Luo myyntitilaus** -valintaikkunan **Asiakastili**-kentässä _US-008_.
-1. Valitse **Varasto**-kentässä _61_.
-1. Uusi myyntitilaus avataan. **Myyntitilausrivit**-pikavälilehti sisältää tyhjän rivin. Määritä tälle riville seuraavat arvot:
+1. Valitse **Luo myyntitilaus** -valintaikkunan **Asiakastili** -kentässä _US-008_.
+1. Valitse **Varasto** -kentässä _61_.
+1. Uusi myyntitilaus avataan. **Myyntitilausrivit** -pikavälilehti sisältää tyhjän rivin. Määritä tälle riville seuraavat arvot:
 
     - **Nimike:** _T0100_
     - **Määrä** _1_
@@ -343,7 +344,7 @@ Kun kaikki vaaditut elementit ovat paikoillaan, voit määrittää tilauksen suo
     - Luo täydennystyö
 
     > [!NOTE]
-    > Paikoitusvaiheet ovat edistyksellisiä. Jos haluat valita *Paikanna kysyntä*, sinun on ensin valittava *Luo kysyntää*.
+    > Paikoitusvaiheet ovat edistyksellisiä. Jos haluat valita *Paikanna kysyntä* , sinun on ensin valittava *Luo kysyntää*.
 
 1. Määritä käytettävä paikoitusmalli.
 1. Voit halutessasi määrittää toistuvan ajon automaattisesti.

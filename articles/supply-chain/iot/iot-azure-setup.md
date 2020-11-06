@@ -1,7 +1,7 @@
 ---
 title: IoT-analytiikan Azure-resurssien määrittäminen
 description: Tässä ohjeaiheessa käsitellään IoT-analytiikkaa varten tarvittavien Microsoft Azure -resurssien luontia ja määrittämistä.
-author: ''
+author: robinarh
 manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bbac1676d28c7285c19ed48f77426a37ce123a29
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982891"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014909"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>IoT-analytiikan Azure-resurssien määrittäminen
 
@@ -61,7 +61,7 @@ Voit luoda avainsäilöresurssin seuraavien ohjeiden avulla.
 
 1. Luo resurssiryhmä Azure-portaalissa tai siirry siihen.
 2. Valitse **Lisää**.
-3. Kirjoita **Uusi**-sivun hakukenttään **Avainsäilö**. Valitse sitten **Luo**.
+3. Kirjoita **Uusi** -sivun hakukenttään **Avainsäilö**. Valitse sitten **Luo**.
 4. Anna nimi **Luo avainsäilö** -sivun **Avainsäilön nimi** -kentässä.
 5. Tarkista oletusarvot ja valitse sitten **Tarkista ja luo**.
 6. Valitse **Luo**.
@@ -74,8 +74,8 @@ Voit luoda IoT-keskitinresurssin seuraavien ohjeiden avulla.
 
 1. Luo resurssiryhmä tai siirry siihen.
 2. Valitse **Lisää**.
-3. Kirjoita **Uusi**-sivun hakukenttään **IoT-keskitin**. Valitse sitten **Luo**.
-4. Anna **IoT-keskittimen nimi**-kenttään nimi.
+3. Kirjoita **Uusi** -sivun hakukenttään **IoT-keskitin**. Valitse sitten **Luo**.
+4. Anna **IoT-keskittimen nimi** -kenttään nimi.
 5. Tarkista oletusarvot ja valitse sitten **Tarkista ja luo**.
 6. Valitse **Luo**.
 
@@ -90,8 +90,8 @@ Voit luoda Redis-välimuistiresurssin seuraavien ohjeiden avulla.
 
 1. Luo resurssiryhmä tai siirry siihen.
 2. Valitse **Lisää**.
-3. Kirjoita **Uusi**-sivun hakukenttään **Azuren Redis-välimuisti**. Valitse sitten **Luo**.
-4. Anna nimi **DNS-nimi**-kenttään.
+3. Kirjoita **Uusi** -sivun hakukenttään **Azuren Redis-välimuisti**. Valitse sitten **Luo**.
+4. Anna nimi **DNS-nimi** -kenttään.
 5. Tarkista oletusarvot ja valitse sitten **Luo**.
 
 Redis-välimuisti luodaan taustalla.
@@ -109,7 +109,7 @@ IoT-keskitin määritetään seuraavasti:
 
 1. Valitse resursseissa IoT-keskitinresurssi.
 2. Valitse vasemmassa siirtymisruudussa **Sisäiset päätepisteet**.
-3. Liitä seuraavat kuluttajaryhmät **Kuluttajaryhmät**-kohdassa. Nämä kuluttajaryhmät vastaavat heti käytettävissä olevia skenaarioita.
+3. Liitä seuraavat kuluttajaryhmät **Kuluttajaryhmät** -kohdassa. Nämä kuluttajaryhmät vastaavat heti käytettävissä olevia skenaarioita.
 
     + microsoft.dynamics.iotintelligence-1
     + microsoft.dynamics.iotintelligence-2
@@ -124,7 +124,7 @@ Avainsäilö määritetään seuraavasti:
 3. Valitse **Lisää käyttöoikeuskäytäntö**.
 4. Valitse **Lisää käyttöoikeuskäytäntö** -sivun **Salauskoodin käyttöoikeudet** -kentässä **Hae** ja **Luettelo**.
 5. Valitse **Valitse päänimi**.
-6. Hae ja valitse **Päänimi**-valintaikkunassa **Microsoft Dynamics ERP Microservices**. Valitse sitten **Valitse**.
+6. Hae ja valitse **Päänimi** -valintaikkunassa **Microsoft Dynamics ERP Microservices**. Valitse sitten **Valitse**.
 7. Valitse **Lisää**.
 8. Valitse **Tallenna**.
 
@@ -140,8 +140,8 @@ IoT-keskittimen yhteysmerkkijonon salauskoodi tallennetaan seuraavasti:
 4. Siirry avainsäilöresurssiin.
 5. Valitse vasemmassa siirtymisruudussa **Salauskoodit**.
 6. Valitse **Luo tai tuo**.
-7. Anna nimi **Nimi**-kenttään.
-8. Liitä **Arvo**-kenttään aiemmin kopioitu päätepisteen arvo.
+7. Anna nimi **Nimi** -kenttään.
+8. Liitä **Arvo** -kenttään aiemmin kopioitu päätepisteen arvo.
 9. Valitse **Luo**.
 
 ### <a name="save-the-redis-cache-connection-string-secret"></a>Redis-välimuistin yhteysmerkkijonon salauskoodin tallentaminen
@@ -154,8 +154,8 @@ Redis-välimuistin yhteysmerkkijonon salauskoodi tallennetaan seuraavasti:
 4. Siirry avainsäilöresurssiin.
 5. Valitse vasemmassa siirtymisruudussa **Salauskoodit**.
 6. Valitse **Luo tai tuo**.
-7. Anna nimi **Nimi**-kenttään.
-8. Liitä **Arvo**-kenttään aiemmin kopioitu yhteysmerkkijono.
+7. Anna nimi **Nimi** -kenttään.
+8. Liitä **Arvo** -kenttään aiemmin kopioitu yhteysmerkkijono.
 9. Valitse **Luo**.
 
 > [!NOTE]

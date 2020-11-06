@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae6b36c40d2f2f9e5266dfb3e2d1cbbb57755222
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ad8b33633646f27bc368dc4bbedc1eb64c150a9f
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803088"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014932"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-analytiikkalisäosan asentaminen LCS:ssä
 
@@ -34,14 +34,14 @@ Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microso
 
 1. Avaa LCS ja siirry Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
 2. Vieritä **Ympäristön lisäosat** -osaan.
-3. Valitse **Asenna uusi lisäosa**, jolloin näkyviin tulee luettelo ympäristössä käyttöönotetuista lisäosista.
+3. Valitse **Asenna uusi lisäosa** , jolloin näkyviin tulee luettelo ympäristössä käyttöönotetuista lisäosista.
 4. Valitse **Valitse asennettava lisäosa** -valintaikkunassa **IoT-analytiikka**.
 5. Anna **Määritä lisäosa** -valintaikkunassa IoT-keskittimen ja Redis-välimuistin tiedot. Tarvittavat arvot sijaitsevat avainsäilössä, joka luotiin kohdassa [Azure-resurssien luonti](iot-azure-setup.md).
 
-    + **Vuokraajan tunnus** – Siirry Azure-portaalissa avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **Hakemistotunnus**-arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
-    + **IoT-tapahtuman keskittimen kanssa yhteensopiva päätepisteen avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi**-arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
+    + **Vuokraajan tunnus** – Siirry Azure-portaalissa avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **Hakemistotunnus** -arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
+    + **IoT-tapahtuman keskittimen kanssa yhteensopiva päätepisteen avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi** -arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
     + **IoT-tapahtuman keskittimen kanssa yhteensopivan päätepisteen salaisuuden nimi** – Siirry avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Salaisuudet** ja kopioi salaisuuden nimi sinne, mihin IoT-keskittimen tapahtuman keskittimen yhteysmerkkijono on tallennettu. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
-    + **Redis-välimuistin avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi**-arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
+    + **Redis-välimuistin avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi** -arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
     + **Redis-välimuistin päätepisteen salaisuuden nimi** – Siirry avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Salaisuudet** ja kopioi salaisuuden nimi sinne, mihin Redis-välimuistin yhteysmerkkijono on tallennettu. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
 
 6. Hyväksy ehdot valitsemalla valintaruutu.
@@ -52,7 +52,7 @@ LCS-määritys on nyt valmis. Seuraavaksi [määritetään skenaariot](iot-scena
 
 ## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>Lisäosan asennuksen poistaminen
 
-1. [Poista skenaariot käytöstä](iot-scenario-setup.md#how-to-disable-a-scenario) Supply Chain Managementissa.
+1. [Poista skenaariot käytöstä](iot-scenario-setup.md#disable-a-scenario) Supply Chain Managementissa.
 2. Siirry LCS:ssä Supply Chain Management -ympäristön tietoihin.
 3. Vieritä **Ympäristön lisäosat** -osaan.
 4. Valitse IoT-analytiikkalisäosan osalta **Poista asennus**.

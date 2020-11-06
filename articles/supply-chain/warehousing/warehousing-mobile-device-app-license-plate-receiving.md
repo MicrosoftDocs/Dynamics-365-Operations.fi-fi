@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 60e69fd62d6d15a1fcb17644ef4710b8764ce924
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651711"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016559"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Rekisterikilven vastaanotto varastosovelluksen avulla
 
@@ -30,7 +31,7 @@ Tässä ohjeaiheessa selitetään, kuinka varastosovellus määritetään niin, 
 
 Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
 
-ASN-tiedot linkitetään kuormiin ja lähetyksiin *pakkausrakenteiden*kautta, joissa kuormalavat (päärekisterikilvet) voivat sisältää palvelupyyntöjä (sisäkkäisiä rekisterikilpiä).
+ASN-tiedot linkitetään kuormiin ja lähetyksiin *pakkausrakenteiden* kautta, joissa kuormalavat (päärekisterikilvet) voivat sisältää palvelupyyntöjä (sisäkkäisiä rekisterikilpiä).
 
 > [!NOTE]
 > Kun käytetään sisäkkäisten rekisterikilpien pakkausrakenteita, järjestelmä tallentaa varastotapahtumien määrän pääkäyttöoikeusrekisterikilpeen. Jos haluat käynnistää fyysisen käytettävissä olevan varaston siirtämisen pääkäyttöoikeusrekisterikilvestä sisäkkäisiin rekisteritietoihin perustuen, mobiililaitteen on määritettävä pakkausrakenteen tietojen perusteella valikkovaihtoehto, joka perustuu *pakkauksen sisäkkäinen rekisterikilpi* -töiden luomisprosessiin.
@@ -55,10 +56,10 @@ Voit käyttää rekisterikilven vastaanottoprosessia luomatta työtä. Jos mää
 - *Rekisterikilven vastaanotto ja poispano*
 
 > [!NOTE]
-> - Työkäytännölle on määritettävä vähintään yksi sijainti **Varastopaikat**-osassa. Et voi määrittää samaa sijaintia useille työkäytännöille.
+> - Työkäytännölle on määritettävä vähintään yksi sijainti **Varastopaikat** -osassa. Et voi määrittää samaa sijaintia useille työkäytännöille.
 > - Varastointilaitteen valikkovaihtoehtojen **Tulosta tarra** -asetus ei tulosta rekisterikilven otsikkoa ilman työn luontia.
 
-Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *rekisterikilven vastaanottolaajennukset*-ominaisuus [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *rekisterikilven vastaanottolaajennukset* -ominaisuus [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="receive-inventory-on-a-location-that-doesnt-track-license-plates"></a>Vastaanota varastosijaintiin, joka ei seuraa rekisterikilpiä
 
@@ -68,7 +69,7 @@ On mahdollista käyttää varastopaikkaa, joka on määritetty sijaintiprofiilii
 
 *Rekisterikilven vastaanottoparannukset* -toiminnon avulla voit vastaanottaa tietoja missä tahansa varastossa lisäämällä sijaintikohtaiset rekisterikilven vastaanotto- (ja hyllytys)-valikkokohteet varastointimobiilisovellukseen. Aiemmin järjestelmä tuki vain kullekin varastolle määritettyä oletussijaintia. Kuitenkin, kun tämä toiminto on käytössä, mobiililaitteen valikkovaihtoehdot rekisterikilven vastaanottamiseen (ja hyllyttämiseen) tarjoavat nyt **Käytä oletustietoja** -vaihtoehdon, jonka avulla voit valita kullekin valikkokohteelle mukautetun sijainnin. (Tämä vaihtoehto on jo käytettävissä joidenkin muun tyyppisten valikkovaihtoehtojen yhteydessä.)
 
-Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *rekisterikilven vastaanottolaajennukset*-ominaisuus [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *rekisterikilven vastaanottolaajennukset* -ominaisuus [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Vastaanottavan yhteenvetosivun näyttäminen tai ohittaminen
 
@@ -92,7 +93,7 @@ Jotta tämä toiminto olisi käytettävissä järjestelmässä, sinun on otettav
 Voit hallita toimintoja, kun tämä toiminto on käytettävissä, noudattamalla seuraavia ohjeita.
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**.
-1. Määritä **Yleinen**-välilehden **Rekisterikilvet**-pikavälilehdessä, että **Kuljetusvaraston rekisterikilpikäytäntö** -kenttä on jokin seuraavista arvoista:
+1. Määritä **Yleinen** -välilehden **Rekisterikilvet** -pikavälilehdessä, että **Kuljetusvaraston rekisterikilpikäytäntö** -kenttä on jokin seuraavista arvoista:
 
     - **Salli ei-seurattujen rekisterikilpien uudelleenkäyttö** – Järjestelmä toimii samalla tavalla kuin se toimii, kun *Estä siirtotilauksen toimittamien rekisterikilpien käyttö muissa varastoissa kuin kohdevarasto* -toiminto ei ole käytössä. Tämä arvo on oletusasetus, kun aktivoit ominaisuuden ensimmäisen kerran.
     - **Ei-seuratun rekisterikilven uudelleenkäytön estäminen** – Kohdevarastossa sallitaan vain käytettävissä olevat päivitykset, jotka liittyvät toimitettuun rekisterikilpeen, kunnes siirtotilaus on vastaanotettu.

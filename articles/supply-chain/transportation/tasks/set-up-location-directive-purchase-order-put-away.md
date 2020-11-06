@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c14fb92103fdd3c32ebc287a74a5dc4f4882b0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981942"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016490"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Määritä sijaintidirektiivi ostotilauksen poispanolle
 
@@ -30,16 +31,16 @@ ms.locfileid: "3981942"
 Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijaintidirektiivi. Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään. Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja. Edellytykset: Sinun on luotava käsittelykoodi. Tässä menettelyssä käytetään Relabel-käsittelykoodia. Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallinnan lisäasetusten on oltava määritettynä varastolle ja nimikkeille. Tämä menettely on tarkoitettu varastopäällikölle.
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Sijaintidirektiivit**.
-2. Valitse **Työtilaustyyppi**-kentässä **Ostotilaukset**.
+2. Valitse **Työtilaustyyppi** -kentässä **Ostotilaukset**.
 
 ## <a name="create-a-location-directive-header"></a>Luo sijaintidirektiivin otsikko
 1. Valitse **Uusi**.
-2. Syötä **Järjestysnumero**-kenttään numero. Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivi käsitellään. Voit myös tarvittaessa muokata järjestystä.  
-3. Kirjoita arvo **Nimi**-kenttään. Tämä on direktiivin yksilöivä tunniste.  
-4. Valitse **Työtyyppi**-kentässä **Määritä**. Valitse suoritettavan työn tyyppi Jos työtilauksen tyyppinä on ostotilaus, direktiivissä tuetaan vain arvoa **Määritä**.  
-5. Kirjoita arvo **Toimipaikka**-kenttään.
-6. Kirjoita arvo **Varasto**-kenttään. Jätä direktiivikoodi tyhjäksi.  Direktiivikoodeilla Määritä-tyypin työtilaustyypit linkitetään tiettyyn direktiiviin. Ostotilauksissa viimeisen Määritä-tyyppisen työtilausrivin sijainti ratkaistaan ennen työmallin määrittämistä. Työmallin viimeistä riviä ei voi tämän vuoksi yhdistää tiettyyn direktiiviin.   
-7. Kirjoita arvo **Käsittelykoodi**-kenttään. Käsittelykoodi rajoittaa sijaintidirektiivin käyttöä, joten sijaintidirektiiviä käytetään vain siinä tapauksessa, että varastotyöntekijä antaa tämän arvon rekisteröidessään nimikettä mobiililaitteella.  
+2. Syötä **Järjestysnumero** -kenttään numero. Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivi käsitellään. Voit myös tarvittaessa muokata järjestystä.  
+3. Kirjoita arvo **Nimi** -kenttään. Tämä on direktiivin yksilöivä tunniste.  
+4. Valitse **Työtyyppi** -kentässä **Määritä**. Valitse suoritettavan työn tyyppi Jos työtilauksen tyyppinä on ostotilaus, direktiivissä tuetaan vain arvoa **Määritä**.  
+5. Kirjoita arvo **Toimipaikka** -kenttään.
+6. Kirjoita arvo **Varasto** -kenttään. Jätä direktiivikoodi tyhjäksi.  Direktiivikoodeilla Määritä-tyypin työtilaustyypit linkitetään tiettyyn direktiiviin. Ostotilauksissa viimeisen Määritä-tyyppisen työtilausrivin sijainti ratkaistaan ennen työmallin määrittämistä. Työmallin viimeistä riviä ei voi tämän vuoksi yhdistää tiettyyn direktiiviin.   
+7. Kirjoita arvo **Käsittelykoodi** -kenttään. Käsittelykoodi rajoittaa sijaintidirektiivin käyttöä, joten sijaintidirektiiviä käytetään vain siinä tapauksessa, että varastotyöntekijä antaa tämän arvon rekisteröidessään nimikettä mobiililaitteella.  
 8. Valitse **Tallenna**.
 
 ## <a name="edit-the-query-for-directive"></a>Muokkaa direktiivin kyselyä
@@ -48,9 +49,9 @@ Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijai
 
 ## <a name="add-directive-lines"></a>Lisää direktiivirivit
 1. Valitse **Uusi**. Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivin rivit käsitellään. Voit myös tarvittaessa muokata järjestystä.  
-2. Lisää **Määrästä**-kenttään numero. Tämä on vähimmäismäärä, jolla tämä direktiivirivi on voimassa.  
-3. Lisää **Määrään**-kenttään numero.
-4. Kirjoita arvo **Yksikkö**-kenttään. Yksikkö, jolla Määrästä ja Määrälle ilmoitetaan. Jos kenttä jätetään tyhjäksi, nimikkeen varastoyksikkö käytetään.  
+2. Lisää **Määrästä** -kenttään numero. Tämä on vähimmäismäärä, jolla tämä direktiivirivi on voimassa.  
+3. Lisää **Määrään** -kenttään numero.
+4. Kirjoita arvo **Yksikkö** -kenttään. Yksikkö, jolla Määrästä ja Määrälle ilmoitetaan. Jos kenttä jätetään tyhjäksi, nimikkeen varastoyksikkö käytetään.  
 5. Valitse **Etsi määrä** -kentässä vaihtoehto.
     - Ei mitään tai rekisterikilpien määrä: kullekin rekisterikilvelle rekisteröity määrä.  
     - - Määrä, jolle määrätty yksikkö: koko rekisteröity määrä.  
@@ -62,17 +63,17 @@ Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijai
 
 ## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Rajoita direktiivirivi tiettyyn yksikköön
 1. Valitse **Rajoita yksikön mukaan**. Tämä painike on käytettävissä vain, kun **Tallenna** valitaan **Rajoita yksikön mukaan** -valintaruudun valinnan jälkeen.  
-2. Kirjoita arvo **Yksikkö**-kenttään.
+2. Kirjoita arvo **Yksikkö** -kenttään.
 3. Sulje sivu.
 
 ## <a name="add-a-location-directive-action-line"></a>Lisää sijaintidirektiivin toimintorivi
 1. Valitse **Uusi**. Tämä on järjestys, jonka perusteella valitun työtyypin sijaintidirektiivin toimintorivit käsitellään. Voit myös tarvittaessa muokata järjestystä.  
-2. Kirjoita arvo **Nimi**-kenttään. Tämä on direktiivin toiminnon yksilöivä tunniste.  
+2. Kirjoita arvo **Nimi** -kenttään. Tämä on direktiivin toiminnon yksilöivä tunniste.  
 3. Valitse **Kiinteän sijainnin käyttö** -kentässä vaihtoehto.
     - Kiinteät ja ei-kiinteät sijainnit: kaikki ei-kiinteät sijainnit ovat kelvollisia samoin kuin tuotteen oma kiinteä kyselyn määrittämissä rajoissa.  
     - Tuotteelle vain kiinteitä sijainteja: tuotteen kiinteät sijainnit ovat kelvollisia ja tuotevariantit jakavat saman kiinteiden sijaintien joukon.  
     - Tuotevariantille vain kiinteitä sijainteja: vain kullekin tuotevariantille määritetyt kiinteät sijainnit ovat kelvollisia.  
-4. Valitse **Strategia**-kentässä vaihtoehto. Ostotilaustyyppiset työtilaukset tukevat seuraavia strategioita: 
+4. Valitse **Strategia** -kentässä vaihtoehto. Ostotilaustyyppiset työtilaukset tukevat seuraavia strategioita: 
     - Ei mitään: nimike sijoitetaan ensimmäiseen sijaintiin, joka löytyy.  
     - Konsolidoi: nimike sijoitetaan sijaintiin, jossa on jo vastaavia kohteita.  
     - Tyhjä sijainti ilman saapuvia töitä: Nimike sijoitetaan ensimmäiseen löytyvään tyhjään sijaintiin. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa eikä odotettuja saapuvia töitä.  
@@ -81,7 +82,7 @@ Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijai
 ## <a name="edit-the-query-for-directive-action-line"></a>Muokkaa direktiivin toimintorivin kyselyä
 1. Valitse **Muokkaa kyselyä**.
 2. Valitse **Lisää**.
-3. Kirjoita **Kenttä**-kenttään `location profile ID`. Tässä esimerkissä mahdollisia sijainteja rajoitetaan sijaintiprofiilin tunnuksen avulla.  
-4. Kirjoita arvo **Ehdot**-kenttään.
+3. Kirjoita **Kenttä** -kenttään `location profile ID`. Tässä esimerkissä mahdollisia sijainteja rajoitetaan sijaintiprofiilin tunnuksen avulla.  
+4. Kirjoita arvo **Ehdot** -kenttään.
 5. Valitse **OK**. Voit jatkaa direktiivirivien ja -toimintojen lisäämistä, kunnes varaston kaikki mahdolliset skenaariot on otettu huomioon.  
 

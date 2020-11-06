@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8352df2de5daf994895eb7ef40866490a7619652
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830497"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015984"
 ---
 # <a name="cycle-counting"></a>Inventointi
 
@@ -33,7 +33,7 @@ Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinn
 
 Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien varastonimikkeiden tarkastamiseen. Inventointiprosessia voidaan kuvata kolmessa vaiheessa:
 
-1.  **Inventointityön luonti** – inventointityö voidaan luoda automaattisesti nimikkeiden raja-arvoparametrien perusteella tai käyttämällä inventointisuunnitelmaa. Voit myös luoda inventointityön manuaalisesti nimikkeen tai varaston parametrien avulla **Inventointityö nimikkeen mukaan**-sivulla tai **Inventointityö sijainnin mukaan** -sivulla.
+1.  **Inventointityön luonti** – inventointityö voidaan luoda automaattisesti nimikkeiden raja-arvoparametrien perusteella tai käyttämällä inventointisuunnitelmaa. Voit myös luoda inventointityön manuaalisesti nimikkeen tai varaston parametrien avulla **Inventointityö nimikkeen mukaan** -sivulla tai **Inventointityö sijainnin mukaan** -sivulla.
 2.  **Inventoinnin käsittely** – kun inventointityö on luotu, voit suorittaa sen laskemalla varastosijainnin nimikkeet ja kirjaamalla tuloksen Dynamics 365 Supply Chain Managementiin mobiililaitteella. Vaihtoehtoisesti voit laskea varastosijainnin nimikkeet inventointityötä luomatta. Tätä prosessia kutsutaan nimellä *spot-inventointi*.
 3.  **Lasketussa arvossa ilmenevien erojen selvittäminen** – inventoinnin jälkeen nimikkeillä, joiden lasketussa arvossa on eroja, työn tilana on **Odottaa tarkistusta** **Kaikki työ** -sivulla. Voit selvittää erot **Tarkistusta odottava inventointityö** -sivulla.
 
@@ -110,12 +110,12 @@ Inventointityö voidaan luoda, kun sijainnin nimikkeiden määrä alittaa tietyn
 Voit ajoittaa inventointisuunnitelmat luomaan inventointityön heti tai säännöllisesti. Määrittämällä inventointisuunnitelmia voit ohjata työpoolia, jolle inventointityö luodaan, eri sijainnissa oleville nimikkeille luotavien inventointien enimmäismäärää sekä sitä, miten monen päivän kuluttua varastosijainti inventoidaan uudelleen. Esimerkki: Nimike on käytettävissä kolmessa varastosijainnissa, ja inventointien enimmäismääräksi on määritetty **2**. Kun suoritat inventointisuunnitelman, se luo kaksi inventointia kahteen sijaintiin, joissa nimike on käytettävissä. Toisessa esimerkissä inventointien väliseksi päivien määräksi määritetään **5**. Tällöin inventointityö luodaan viiden päivän välein. Jos inventointityö kuitenkin käsitellään kolmantena päivänä, seuraava inventointityö luodaan viiden päivän jälkeen edellisen inventoinnin käsittelystä, 8. päiväksi.
 
 ## <a name="create-cycle-counting-work-manually"></a>Luo inventointityö manuaalisesti
-Jos haluat luoda inventointityön manuaalisesti, voit käyttää **Inventointityö nimikkeen mukaan**- tai **Inventointityö sijainnin mukaan** -sivua. Voit määrittää luotavien inventointien enimmäismäärän. Jos esimerkiksi varastopäällikkö määrittää arvoksi **5**, inventointityö luodaan viidelle sijainnille, vaikka nimikettä on 10 eri sijainnissa. Voit myös valita työpoolin tunnuksen, johon liitetään luotavien inventointitöiden tunnukset. Kun työpoolin tunnusta käsitellään inventoinnissa, tähän työpooliin liitettyjä inventointityön tunnuksia käsitellään ryhmänä.
+Jos haluat luoda inventointityön manuaalisesti, voit käyttää **Inventointityö nimikkeen mukaan** - tai **Inventointityö sijainnin mukaan** -sivua. Voit määrittää luotavien inventointien enimmäismäärän. Jos esimerkiksi varastopäällikkö määrittää arvoksi **5** , inventointityö luodaan viidelle sijainnille, vaikka nimikettä on 10 eri sijainnissa. Voit myös valita työpoolin tunnuksen, johon liitetään luotavien inventointitöiden tunnukset. Kun työpoolin tunnusta käsitellään inventoinnissa, tähän työpooliin liitettyjä inventointityön tunnuksia käsitellään ryhmänä.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Inventoinnin suorittaminen mobiililaitteella
 Inventointityöt voidaan käsitellä useilla menetelmillä käyttämällä Supply Chain Managementia mobiililaitteessa:
 
--   **Käyttäjän ohjaama** – Työntekijä voi määrittää inventointityön tunnuksen, joka on **Avoin**-tilassa.
+-   **Käyttäjän ohjaama** – Työntekijä voi määrittää inventointityön tunnuksen, joka on **Avoin** -tilassa.
 -   **Järjestelmän ohjaama** – Supply Chain Management määrittää työntekijälle inventointityön tunnuksen.
 -   **Inventoinnin ryhmittely** – Työntekijä voi ryhmitellä inventointitöiden tunnukset, jotka liittyvät tiettyyn sijaintiin, vyöhykkeeseen tai työpooliin.
 -   **Pistoinventointi** – Työntekijä voi laskea varastosijainnin nimikkeet milloin tahansa inventointityötä luomatta. Työntekijä suorittaa pistoinvestoinnin sijainnissa syöttämällä sijainnin tunnuksen.
@@ -124,13 +124,13 @@ Seuraava esimerkki osoittaa, miten voit suorittaa pisteinventoinnin mobiililaitt
 
 1.  Valitse mobiililaitteella valikkokohta inventointiyön havaitsemisen käsittelemiseksi.
 2.  Rekisteröi sijainti, jolle pistoinventointi tehdään.
-3.  Rekisteröi ja vahvista nimikkeen numero sekä laskettu nimikemäärä. **Huomautus:** Inventointityön tilaksi päivittyy **Odottaa tarkistusta** tai **Suljettu** **Kaikki työ** -sivulla **Työntekijä**-sivulla määritettyjen parametrien mukaan.
+3.  Rekisteröi ja vahvista nimikkeen numero sekä laskettu nimikemäärä. **Huomautus:** Inventointityön tilaksi päivittyy **Odottaa tarkistusta** tai **Suljettu** **Kaikki työ** -sivulla **Työntekijä** -sivulla määritettyjen parametrien mukaan.
 4.  Valinnainen: Toista vaihe 3 sijainnissa jäljellä oleville nimikkeille ja vahvista, ettei muita inventoitavia nimikkeitä ole käytettävissä.
 
 ## <a name="resolve-cycle-counting-differences"></a>Inventointierojen selvittäminen
-Inventointiero ilmenee seuraavissa skenaarioissa, jos **On inventoinnin valvoja** -vaihtoehdon asetukseksi työn käyttäjätunnukselle on valittu **Ei**:
+Inventointiero ilmenee seuraavissa skenaarioissa, jos **On inventoinnin valvoja** -vaihtoehdon asetukseksi työn käyttäjätunnukselle on valittu **Ei** :
 
--   Inventoitu arvo ei ole **Työn käyttäjät** -lomakkeen **Prosenttiosuuden enimmäisraja**- tai **Määrän enimmäisraja** -kentissä määritettyjen poikkeamarajojen sisällä. Esimerkiksi sijainnin käytettävissä oleva varastomäärä on 50 ja työn käyttäjän poikkeaman raja on 10. Jos työn käyttäjä kirjoittaa arvon, joka ei ole välillä 40–60, ero esiintyy.
+-   Inventoitu arvo ei ole **Työn käyttäjät** -lomakkeen **Prosenttiosuuden enimmäisraja** - tai **Määrän enimmäisraja** -kentissä määritettyjen poikkeamarajojen sisällä. Esimerkiksi sijainnin käytettävissä oleva varastomäärä on 50 ja työn käyttäjän poikkeaman raja on 10. Jos työn käyttäjä kirjoittaa arvon, joka ei ole välillä 40–60, ero esiintyy.
 -   Inventointiarvo poikkeaa käytettävissä olevan varaston määrästä, eikä poikkeamarajoja aseteta.
 
 Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventointi odottaa tarkistusta** -sivulla. Voit tarkistaa nimikemäärän muunnetun määrän **Varastosaldon sijainnin mukaan** -sivulla. Inventoitu arvo hylätään, jos eroa ei voida hyväksyä.

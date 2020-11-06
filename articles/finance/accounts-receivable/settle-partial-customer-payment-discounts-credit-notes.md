@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1a37b7c5aea22711938133d43b552eec9260f0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188967"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015004"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen
 
@@ -34,7 +34,7 @@ Tässä artikkelissa käydään läpi skenaario, jossa käteisalennus tehdään 
 Fabrikam myöntää asiakkaille käteisalennuksia osamaksuista ja hyvityslaskuista. Käteisalennus voidaan tehdä hyvityslaskulla, kun hyvityslasku tehdään laskusta, josta asiakas on saanut käteisalennuksen. Sen sijaan, että antaisit hyvityksen koko summasta, voit hyvittää asiakkaan saldoa summalla, joka ei sisällä asiakkaan saamaa käteisalennuksen osuutta. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoice-and-credit-note"></a>Lasku ja hyvityslasku
-Asiakkaalla 4035 on lasku, jonka arvo on 1 000,00, ja hyvityslasku, jonka arvo on 100,00. Kumpaankin saa 1 prosentin alennuksen, jos se maksetaan 14 päivän kuluessa. Arnie voi tarkastella tietoja **Asiakastapahtumat**-sivulla.
+Asiakkaalla 4035 on lasku, jonka arvo on 1 000,00, ja hyvityslasku, jonka arvo on 100,00. Kumpaankin saa 1 prosentin alennuksen, jos se maksetaan 14 päivän kuluessa. Arnie voi tarkastella tietoja **Asiakastapahtumat** -sivulla.
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku  | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo  | Valuutta |
 |------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|
@@ -42,7 +42,7 @@ Asiakkaalla 4035 on lasku, jonka arvo on 1 000,00, ja hyvityslasku, jonka arvo o
 | CCRN-10050 | Hyvityslasku      | 28.6.2015 | KR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Hyvityslaskun tilittäminen laskun kanssa
-Arnie avaa **Asiakastapahtumat**-sivulla **Selvitä tapahtumat** -sivun. Hän voi tilittää laskun ja hyvityslaskun **Selvitä tapahtumat** -sivulla. Hän tarkistaa tilityksen yhteydessä käteisalennuksen päivämäärät ja summat. Hän merkitsee asiakirjat ja tilittää sitten tapahtumat napsauttamalla **Kirjaa**. Hyvityslaskuun sisältyy alennus -1,00, koska Fabrikam myöntää alennuksia hyvityslaskuista.
+Arnie avaa **Asiakastapahtumat** -sivulla **Selvitä tapahtumat** -sivun. Hän voi tilittää laskun ja hyvityslaskun **Selvitä tapahtumat** -sivulla. Hän tarkistaa tilityksen yhteydessä käteisalennuksen päivämäärät ja summat. Hän merkitsee asiakirjat ja tilittää sitten tapahtumat napsauttamalla **Kirjaa**. Hyvityslaskuun sisältyy alennus -1,00, koska Fabrikam myöntää alennuksia hyvityslaskuista.
 
 | Merkitse     | Käytä käteisalennusta | Tosite    | Tili | Päivämäärä      | Eräpäivä  | Lasku  | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
@@ -51,13 +51,11 @@ Arnie avaa **Asiakastapahtumat**-sivulla **Selvitä tapahtumat** -sivun. Hän vo
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa.
 
-|                              |           |
-|------------------------------|-----------|
-| Käteisalennuksen päivämäärä           | 12.7.2015 |
-| Käteisalennussumma         | -1,00     |
-| Käytä käteisalennusta            | Normaali    |
-| Käytetty käteisalennus          | 0,00      |
-| Käytettävä käteisalennussumma | -1,00     |
+- **Käteisalennuksen päivämäärä** : 12.7.2015 
+- **Käteisalennussumma** : -1,00     
+- **Käytä käteisalennusta** : normaali    
+- **Käytetty käteisalennus** : 0,00      
+- **Käytettävä käteisalennussumma** : -1,00     
 
 Tilitys on 100,00, ja siihen sisältyy maksusuoritus 99,00 ja alennus 1,00.
 

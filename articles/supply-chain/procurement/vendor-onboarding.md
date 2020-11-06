@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203408"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018649"
 ---
 # <a name="onboard-vendors"></a>Toimittajien aktivointi
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -103,7 +104,7 @@ Lisätietoja toimittajapyynnön määrityksestä on aiheessa [Toimittajayhteisty
 | Yhteyshenkilön tiedot | Tällä sivulla on yhteyshenkilön nimi, joka lisätään automaattisesti alkuperäisestä mahdollisen toimittajan rekisteröintipyynnöstä. Siinä on myös yhteyshenkilön puhelinnumero ja sähköpostiosoite sekä yhteyshenkilön osoitteita eri tarkoituksia varten. |
 | Liiketoimintatiedot       | Tällä sivulla verorekisteröintinumeroita (eri maita ja alueita varten) ja työntekijöiden määrä. Siinä ilmoitetaan myös, onko yritys vähemmistöön kuuluvan henkilön omistuksessa. |
 | Hankintaluokat     | Tällä sivulla on tietoja hankintaluokista, joiden hyväksyntää toimittaja pyytää. Käyttäjä voi valita hankintaluokkahierarkian luokkia. Voit määrittää näytettävien hierarkiatasojen määrän valitsemalla **Hankintaparametrit** &gt; **Toimittajayhteistyö** kohdassa **Hankinta** &gt; **Asetukset**. |
-| Kyselylomakkeet             | Ohjatussa toiminnossa voi olla toimittajalle suunnattuja kyselylomakkeita. Ohjatussa toiminnossa näkyvät kyselylomakkeet on määritetty joko toimittajapyynnössä tai hankintaluokittain. Jos kyselylomake on määritetty hankintaluokittain, hankintaluokat, joiden hyväksymistä toimittaja pyytää, määrittävät ohjatussa toiminnossa näkyvät kyselylomakkeet. Voit lisätä **Hankintaluokat**-sivulla kyselylomakkeen sopivaan luokkaan ja määrittää tehtävätyypiksi **Toimittajan aktivointi**. |
+| Kyselylomakkeet             | Ohjatussa toiminnossa voi olla toimittajalle suunnattuja kyselylomakkeita. Ohjatussa toiminnossa näkyvät kyselylomakkeet on määritetty joko toimittajapyynnössä tai hankintaluokittain. Jos kyselylomake on määritetty hankintaluokittain, hankintaluokat, joiden hyväksymistä toimittaja pyytää, määrittävät ohjatussa toiminnossa näkyvät kyselylomakkeet. Voit lisätä **Hankintaluokat** -sivulla kyselylomakkeen sopivaan luokkaan ja määrittää tehtävätyypiksi **Toimittajan aktivointi**. |
 
 Toimittajapyyntö luodaan, kun mahdollisen toimittajan käyttäjä on suorittanut ohjatun toimittajan rekisteröintitoiminnon.
 
@@ -111,7 +112,7 @@ Toimittajapyyntö luodaan, kun mahdollisen toimittajan käyttäjä on suorittanu
 
 Toimittajapyyntö voidaan luoda luonnoksena ja lähettää manuaalisesti työnkulkuun. Toimittajapyyntö voidaan vaihtoehtoisesti lähettää automaattisesti työnkulkuun, kun ohjattu toimittajan rekisteröintitoiminto on suoritettu loppuun. Pyyntö voidaan lähettää manuaalisesti, jos hankinta-asiantuntija haluaa esimerkiksi arvioida, onko pyyntö reititettävä hyväksyntäprosessin kautta ennen työnkulkuun lähettämistä.
 
-- Valitse ensin **Hankintaparametrit** &gt; **Toimittajayhteistyö** ja sitten **Lähetä mahdollisen toimittajan rekisteröinti työnkulkuun automaattisesti**, jos haluat määrittää toimittajapyynnön, joka lähetetään automaattisesti työnkulkuun, kun ohjattu toimittajan rekisteröintitoiminto on suoritettu.
+- Valitse ensin **Hankintaparametrit** &gt; **Toimittajayhteistyö** ja sitten **Lähetä mahdollisen toimittajan rekisteröinti työnkulkuun automaattisesti** , jos haluat määrittää toimittajapyynnön, joka lähetetään automaattisesti työnkulkuun, kun ohjattu toimittajan rekisteröintitoiminto on suoritettu.
 
 ## <a name="vendor-requests"></a>Toimittajapyynnöt
 
@@ -139,11 +140,11 @@ Seuraavassa taulukossa on tilat, joita toimittajapyynnöillä voi olla.
 
 Toimittajapyynnön hyväksymisen jälkeen luodaan toimittajatili. Alkuperäisen mahdollisen toimittajan rekisteröintipyynnön ja toimittajapyynnön tilana on **Hyväksytty**.
 
-Valitse toimittajaryhmä ennen toimittajapyynnön hyväksymistä valitsemalla **Uusi toimittaja** -sivun **Yleiset**-pikavälilehdessä **Toimittajaryhmä**.
+Valitse toimittajaryhmä ennen toimittajapyynnön hyväksymistä valitsemalla **Uusi toimittaja** -sivun **Yleiset** -pikavälilehdessä **Toimittajaryhmä**.
 
 Jos mahdollisella toimittajakäyttäjällä on oltava Supply Chain Managementin käyttöoikeus toimittajaa edustavana toimittajayhteistyökäyttäjänä, määritä toimittajayhteistyön käyttöoikeudeksi **Kyllä**. Jos haluat poistaa käytöstä käyttäjätilin, jolla mahdollinen toimittaja rekisteröityi, määritä käyttöoikeusasetukseksi **Ei**.
 
-Jos toimittajayhteistyön käyttöoikeudeksi on määritetty **Kyllä** toimittajapyyntöä hyväksyttäessä, lähetetään pyyntö käyttäjän roolien muokkaamisesta vastaamaan **Ulkoiset roolit** -kohdan **Toimittaja**-tyypille määritettyjä rooleja. Jos käyttöoikeudeksi on valittu tässä kohdassa **Ei**, käyttäjän poistamista käytöstä pyydetään, kun toimittajapyyntö hyväksytään. Siinä tapauksessa on määritettävä käyttäjän käytöstäpoistamisen työnkulku.
+Jos toimittajayhteistyön käyttöoikeudeksi on määritetty **Kyllä** toimittajapyyntöä hyväksyttäessä, lähetetään pyyntö käyttäjän roolien muokkaamisesta vastaamaan **Ulkoiset roolit** -kohdan **Toimittaja** -tyypille määritettyjä rooleja. Jos käyttöoikeudeksi on valittu tässä kohdassa **Ei** , käyttäjän poistamista käytöstä pyydetään, kun toimittajapyyntö hyväksytään. Siinä tapauksessa on määritettävä käyttäjän käytöstäpoistamisen työnkulku.
 
 Jotta toimittajatili voitaisiin luoda toimittajapyynnön hyväksymisen yhteydessä, toimittajapyynnöistä luotavien toimittajien numerojärjestyksen asetukseksi on määritettävä **Automaattinen**.
 
@@ -161,7 +162,7 @@ Toimittajapyynnön hylkäämisen alkuperäisen mahdollisen toimittajan rekister�
 
 Mahdollisen toimittajan rekisteröintipyynnön eri tilat luovat yleiskuvan pyynnön etenemisestä.
 
-**Poista**-toiminnon käyttö mahdollisen toimittajan rekisteröintipyynnössä puhdistaa ja poistaa luodun tietueketjun. Voit myös poistaa käyttäjätilin käytöstä. **Poista**-toiminnon seuraukset vaihtelevat mahdollisen toimittajan rekisteröintipyynnön mukaan seuraavan taulukon mukaisesti.
+**Poista** -toiminnon käyttö mahdollisen toimittajan rekisteröintipyynnössä puhdistaa ja poistaa luodun tietueketjun. Voit myös poistaa käyttäjätilin käytöstä. **Poista** -toiminnon seuraukset vaihtelevat mahdollisen toimittajan rekisteröintipyynnön mukaan seuraavan taulukon mukaisesti.
 
 
 |          Tila          |                                                                                     Tilan kuvaus                                                                                      |                                                                                                                                                            Poista-toiminnon tulos                                                                                                                                                             |

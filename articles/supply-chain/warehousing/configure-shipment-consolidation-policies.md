@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4df62d7b2c8b0463ca6e9564e167f9060e811a24
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975413"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016214"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -59,25 +59,25 @@ Kun tämä menettely aloitetaan, *Lähetyksen konsolidointikäytännöt* -toimin
 Oletusarvoiset lähetyksen konsolidointikäytännöt määritetään seuraavien ohjeiden avulla ympäristössä, joissa tilausten välinen konsolidointi on jo määritetty varastoissa.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
-1. Etsi ja avaa luettelossa sopiva varastotietue (kuten varasto *24* **USMF**-demotiedoissa).
+1. Etsi ja avaa luettelossa sopiva varastotietue (kuten varasto *24* **USMF** -demotiedoissa).
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Valitse **Varasto**-pikavälilehdessä **Konsolidoi lähetys varastoon vapautettaessa** -asetukseksi *Kyllä*.
+1. Valitse **Varasto** -pikavälilehdessä **Konsolidoi lähetys varastoon vapautettaessa** -asetukseksi *Kyllä*.
 1. Toista vaiheet 2–4 kaikissa varastoissa, joissa on tehtävä konsolidointi.
 1. Sulje sivu.
 1. Ota *Lähetyksen konsolidointikäytännöt* -toiminto käyttöön [toiminnon hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). **Toiminnon hallinta** -työtilassa toiminnon nimi on *Lähetyksen konsolidointi*.
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**. Selain on ehkä päivitettävä, ennen kuin uusi **Lähetyksen konsolidointikäytännöt** -valikkovaihtoehto näkyy toiminnon käyttöönottamisen jälkeen.
-1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset**:
+1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset** :
 
-    - *Myyntitilaukset*-käytäntötyypin **Tilaustenvälinen**-käytäntö (mikäli vähintään yksi varasto on määritetty käyttämään aiempaa konsolidointitoimintoa)
-    - *Myyntitilaukset*-käytäntötyypin **Oletus**-käytäntö
-    - *Siirtovarasto-otto*-käytäntötyypin **Oletus**-käytäntö
-    - *Siirtovarasto-otto*-käytäntötyypin **Tilaustenvälinen**-käytäntö (mikäli vähintään yksi varasto on määritetty käyttämään aiempaa konsolidointitoimintoa)
+    - *Myyntitilaukset* -käytäntötyypin **Tilaustenvälinen** -käytäntö (mikäli vähintään yksi varasto on määritetty käyttämään aiempaa konsolidointitoimintoa)
+    - *Myyntitilaukset* -käytäntötyypin **Oletus** -käytäntö
+    - *Siirtovarasto-otto* -käytäntötyypin **Oletus** -käytäntö
+    - *Siirtovarasto-otto* -käytäntötyypin **Tilaustenvälinen** -käytäntö (mikäli vähintään yksi varasto on määritetty käyttämään aiempaa konsolidointitoimintoa)
 
     > [!NOTE]
-    > - Molemmissa **Tilaustenvälinen**-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää lukuun ottamatta. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
-    > - Molemmissa **Oletus**-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää mukaan lukien. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
+    > - Molemmissa **Tilaustenvälinen** -käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää lukuun ottamatta. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
+    > - Molemmissa **Oletus** -käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää mukaan lukien. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
 
-1. Valitse *Myyntitilaukset*-käytäntötyypiksi **Tilaustenvälinen**-käytäntö ja valitse sitten toimintoruudussa **Muokkaa kyselyä**.
+1. Valitse *Myyntitilaukset* -käytäntötyypiksi **Tilaustenvälinen** -käytäntö ja valitse sitten toimintoruudussa **Muokkaa kyselyä**.
 1. Kiinnitä huomiota kyselyeditorin valintaikkunassa on luettelo, jossa varastojen **Konsolidoi lähetys varastoon vapautettaessa** -asetukseksi on määritetty *Kyllä*. Tämän vuoksi ne sisältyvät kyselyyn.
 
 ### <a name="create-default-policies-for-a-new-environment"></a>Uuden ympäristön oletuskäytäntöjen luominen
@@ -86,13 +86,13 @@ Määritä lähetyksen oletusarvoiset konsolidointikäytännöt seuraavien ohjei
 
 1. Ota *Lähetyksen konsolidointikäytännöt* -toiminto käyttöön [toiminnon hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), jos toimintoa ei ole vielä otettu käyttöön. **Toiminnon hallinta** -työtilassa toiminnon nimi on *Lähetyksen konsolidointi*.
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
-1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset**:
+1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset** :
 
-    - *Myyntitilaukset*-käytäntötyypin **Oletus**-käytäntö
-    - *Siirtovarasto-otto*-käytäntötyypin **Oletus**-käytäntö
+    - *Myyntitilaukset* -käytäntötyypin **Oletus** -käytäntö
+    - *Siirtovarasto-otto* -käytäntötyypin **Oletus** -käytäntö
 
     > [!NOTE]
-    > Molemmissa **Oletus**-käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää mukaan lukien. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
+    > Molemmissa **Oletus** -käytännöissä otetaan huomioon samat kenttäjoukot kuin aiemmassa logiikassa tilausnumerokenttää mukaan lukien. (Kyseisellä kentällä konsolidoidaan rivit lähetyksiksi esimerkiksi tilausnumero, varaston, toimituksen kuljetustavan ja osoitteen perusteella.)
 
 ## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Skenaario 2: Lähetyksen mukautettujen konsolidointikäytäntöjen määrittäminen
 
@@ -121,11 +121,11 @@ Ota toiminto käyttöön toimintojen hallinnassa, jos sitä ei ole vielä otettu
         - **Suodattimen otsikko:** *Koodi 4*
 
 1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
-1. Avaa tuote, jonka nimiketunnus on *M9200*. (Valitussa tuotteessa on oltava käytössä edistykselliset varastonhallintaprosessit \[WMS\] ja WMS-prosessit on otettu valmiiksi käyttöön tässä tuotteessa **USMF**-demotiedoissa.)
-1. Valitse **Varasto**-pikavälilehdessä **Koodi 4** -kentän asetukseksi *Tulenarka*.
+1. Avaa tuote, jonka nimiketunnus on *M9200*. (Valitussa tuotteessa on oltava käytössä edistykselliset varastonhallintaprosessit \[WMS\] ja WMS-prosessit on otettu valmiiksi käyttöön tässä tuotteessa **USMF** -demotiedoissa.)
+1. Valitse **Varasto** -pikavälilehdessä **Koodi 4** -kentän asetukseksi *Tulenarka*.
 1. Sulje sivu.
-1. Avaa tuote, jonka nimiketunnus on *M9201*. (Myös tämän tuotteen WMS-prosessit on otettu valmiiksi käyttöön **USMF**-demotiedoissa.)
-1. Valitse **Varasto**-pikavälilehdessä **Koodi 4** -kentän asetukseksi *Räjähdysherkkä*.
+1. Avaa tuote, jonka nimiketunnus on *M9201*. (Myös tämän tuotteen WMS-prosessit on otettu valmiiksi käyttöön **USMF** -demotiedoissa.)
+1. Valitse **Varasto** -pikavälilehdessä **Koodi 4** -kentän asetukseksi *Räjähdysherkkä*.
 1. Sulje sivu.
 
 #### <a name="create-a-new-transportation-mode-of-delivery"></a>Toimituksen uuden kuljetustavan luonti
@@ -139,7 +139,7 @@ Ota toiminto käyttöön toimintojen hallinnassa, jos sitä ei ole vielä otettu
     - **Nimi:** *Lento*
     - **Tila:** *Lento*
 
-1. Lisää uuden rahdinkuljettaja **Palvelut**-pikavälilehteen rivi, jossa on seuraavat asetukset:
+1. Lisää uuden rahdinkuljettaja **Palvelut** -pikavälilehteen rivi, jossa on seuraavat asetukset:
 
     - **Rahdinkuljetuspalvelu:** *Ilma*
     - **Kuljetusmenetelmä:** *Ilma*
@@ -147,7 +147,7 @@ Ota toiminto käyttöön toimintojen hallinnassa, jos sitä ei ole vielä otettu
 1. Valitse toimintoruudussa **Tallenna**.
 
     > [!NOTE]
-    > Kun tallennat uuden rahdinkuljettajan, **Palvelut**-ruudukon uuden rivin **Toimitustapa**-kentän asetuksena on automaattisesti *Lento-Ilma*. Kun myyntitilauksen *Lento-Ilma*-toimitustapaa käytetään, *Lento*-kuljetustapaa käytetään liittyvissä lähetyksissä.
+    > Kun tallennat uuden rahdinkuljettajan, **Palvelut** -ruudukon uuden rivin **Toimitustapa** -kentän asetuksena on automaattisesti *Lento-Ilma*. Kun myyntitilauksen *Lento-Ilma* -toimitustapaa käytetään, *Lento* -kuljetustapaa käytetään liittyvissä lähetyksissä.
 
 #### <a name="create-an-order-pool"></a>Tilauspoolin luominen
 
@@ -159,14 +159,14 @@ Ota toiminto käyttöön toimintojen hallinnassa, jos sitä ei ole vielä otettu
 
 1. Valitse **Myynti ja markkinointi \> Asiakkaat \> Kaikki asiakkaat**.
 1. Avaa asiakas, jonka asiakasnumero on *US-003*.
-1. Valitse **Oletusmyyntitilaukset**-pikavälilehden **Myyntitilauspooli**-kentän asetukseksi juuri luotu tilauspooli.
+1. Valitse **Oletusmyyntitilaukset** -pikavälilehden **Myyntitilauspooli** -kentän asetukseksi juuri luotu tilauspooli.
 1. Sulje sivu ja toista sitten vaiheet 4 ja 5 asiakkaalle, jonka asiakasnumero on *US-004*.
 
 ### <a name="create-example-policy-1"></a>Esimerkkikäytännön 1 luominen
 
-Tässä esimerkissä luodaan *Asiakas+tila*-käytäntö, jota käytetään seuraavassa liiketoimintatapauksessa:
+Tässä esimerkissä luodaan *Asiakas+tila* -käytäntö, jota käytetään seuraavassa liiketoimintatapauksessa:
 
-- Käytäntö tekee tietyn asiakastilin (*US-001*) ja tietyn toimitustavan (*Lento-Ilma*) kyselyn.
+- Käytäntö tekee tietyn asiakastilin ( *US-001* ) ja tietyn toimitustavan ( *Lento-Ilma* ) kyselyn.
 - Avoimien lähetysten konsolidointi on poistettu käytöstä.
 - Konsolidointi tehdään tilauksentunnuksittain. (Toisin sanoen esimerkiksi tilaus- ja varastokohtaiset lähetykset ovat erillisiä.)
 
@@ -174,18 +174,18 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
-1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi**:
+1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi** :
 
     - **Käytännön nimi:** *CustomerMode*
     - **Käytännön kuvaus:** *Asiakastili ja toimitustapa*
 
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Konsolidointikentät** -pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää** -painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Etsi kyselyeditorin valintaikkunan ruudukon **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Asiakastili*, ja määritä kyseisen rivin **Ehdot**-kentän aseetukseksi *US-001*.
-1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Lisää**:
+1. Etsi kyselyeditorin valintaikkunan ruudukon **Alue** -välilehdessä rivi, jossa **Kenttä** -kentän asetuksena on *Asiakastili* , ja määritä kyseisen rivin **Ehdot** -kentän aseetukseksi *US-001*.
+1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Lisää** :
 
     - **Taulu:** *Tilausrivit*
     - **Johdettu taulu:** *Tilausrivit*
@@ -195,13 +195,13 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Sulje valintaikkuna valitsemalla **OK**.
 
 > [!NOTE]
-> Tässä liiketoimintatapauksessa asiakkaan *US-001* *Lento-Ilma*-toimitustapaa käyttäviä tilausrivejä ei konsolidoida tilausten välillä. Tämä käytäntö on tarkoitettu käytettäväksi ensimmäisenä tapauksissa, joissa kyseisen asiakkaan kaikkien muiden toimitustapojen lähetykset konsolidoidaan.
+> Tässä liiketoimintatapauksessa asiakkaan *US-001* *Lento-Ilma* -toimitustapaa käyttäviä tilausrivejä ei konsolidoida tilausten välillä. Tämä käytäntö on tarkoitettu käytettäväksi ensimmäisenä tapauksissa, joissa kyseisen asiakkaan kaikkien muiden toimitustapojen lähetykset konsolidoidaan.
 
 ### <a name="create-example-policy-2"></a>Esimerkkikäytännön 2 luominen
 
 Tässä esimerkissä luodaan *Vaaralliset tuotteet* -käytäntö, jota käytetään seuraavassa liiketoimintatapauksessa:
 
-- Käytäntö tekee tietyn suodatinkoodin (*vaarallinen*) ja tietyn toimitustavan (*Lento-Ilma*) kyselyn.
+- Käytäntö tekee tietyn suodatinkoodin ( *vaarallinen* ) ja tietyn toimitustavan ( *Lento-Ilma* ) kyselyn.
 - Avoimien lähetysten konsolidointi on otettu käyttöön.
 - Konsolidointi tehdään tilausten välillä. (Toisin sanoen esimerkiksi asiakas- ja varastokohtaiset lähetykset ovat erillisiä mutta vain kyselyssä määritetyssä nimikeryhmässä.)
 
@@ -209,20 +209,20 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
-1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi**:
+1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi** :
 
     - **Käytännön nimi:** *Nimiketyyppi*
     - **Käytännön kuvaus:** *Saman nimiketyypin konsolidointi tilausten välillä*
 
 1. Määritä **Avoimien lähetysten konsolidointi** -asetukseksi *Kyllä*.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Konsolidointikentät** -pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää** -painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Laajenna ja valitse kyselyeditorin valintaruudun **Liitokset**-välilehdessä **Taulut \> Kuorman tiedot**.
+1. Laajenna ja valitse kyselyeditorin valintaruudun **Liitokset** -välilehdessä **Taulut \> Kuorman tiedot**.
 1. Valitse **Lisää taulun liitos**.
-1. Etsi ja valitse avautuvassa suhderuudukossa rivi, jossa **Suhde**-kentän asetuksena on *Varastonimikkeen tunnus (nimiketunnus)*, ja valitse sitten **Valitse**. 
-1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue**-välilehdessä **Lisää**:
+1. Etsi ja valitse avautuvassa suhderuudukossa rivi, jossa **Suhde** -kentän asetuksena on *Varastonimikkeen tunnus (nimiketunnus)* , ja valitse sitten **Valitse**. 
+1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue** -välilehdessä **Lisää** :
 
     - **Taulu:** *Varastonimikkeen tunnus*
     - **Johdettu taulu:** *Varastonimikkeen tunnus*
@@ -232,7 +232,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Sulje valintaikkuna valitsemalla **OK**.
 
 > [!NOTE]
-> Tässä liiketoimintatapauksessa kaikki tilausrivit, jossa nimikkeillä on tietty suodatinkoodi (eli suodatinkoodi, jossa **Koodi 4** -kentän asetuksena on *Tulenarka*) konsolidoidaan muiden saman tyyppisten nimikkeiden kanssa tilausten välillä. Jos samalla tilillä, varastolla ja nimikeryhmällä on avoin lähetys, uudet rivit lisätään siihen.
+> Tässä liiketoimintatapauksessa kaikki tilausrivit, jossa nimikkeillä on tietty suodatinkoodi (eli suodatinkoodi, jossa **Koodi 4** -kentän asetuksena on *Tulenarka* ) konsolidoidaan muiden saman tyyppisten nimikkeiden kanssa tilausten välillä. Jos samalla tilillä, varastolla ja nimikeryhmällä on avoin lähetys, uudet rivit lisätään siihen.
 
 ### <a name="create-example-policy-3"></a>Esimerkkikäytännön 3 luominen
 
@@ -246,19 +246,19 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
-1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi**:
+1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi** :
 
     - **Käytännön nimi:** *CustomerOrderNo*
     - **Käytännön kuvaus:** *asiakkaan ostotilauksen rivien konsolidointi*
 
 1. Määritä **Avoimien lähetysten konsolidointi** -asetukseksi *Kyllä*.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena on *Asiakkaan tilaus*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Konsolidointikentät** -pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena on *Asiakkaan tilaus*.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää** -painike ![oikea nuoli](media/forward-button.png).
 1. Valitse **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää** -painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Asiakastili*, ja määritä kyseisen rivin **Ehdot**-kentän asetukseksi *US-001*.
+1. Etsi kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jossa **Kenttä** -kentän asetuksena on *Asiakastili* , ja määritä kyseisen rivin **Ehdot** -kentän asetukseksi *US-001*.
 1. Sulje valintaikkuna valitsemalla **OK**.
 
 > [!NOTE]
@@ -270,7 +270,7 @@ Tässä esimerkissä luodaan *Asiakkaat sallivat konsolidoinnin* -käytäntö, j
 
 - Käytäntö tekee kyselyn tietyssä tilauspoolissa lähetysten konsolidoinnin sallivien asiakkaiden tunnistamiseksi.
 - Avoimien lähetysten konsolidointi on poistettu käytöstä.
-- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon**-valintaruutu).
+- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon** -valintaruutu).
 
 - Voit ohittaa myyntitilauksen säännön valitsemalla toisen tilauspoolin.
 
@@ -278,17 +278,17 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
-1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi**:
+1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi** :
 
     - **Käytännön nimi:** *Tilauspooli*
     - **Käytännön kuvaus:** *Tilauspooliin perustuva tilausten välinen konsolidointi*
 
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Konsolidointikentät** -pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää** -painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditoriin valintaikkunassa seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue**-välilehdessä **Lisää**:
+1. Lisää kyselyeditoriin valintaikkunassa seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue** -välilehdessä **Lisää** :
 
     - **Taulu:** *Myyntitilaukset*
     - **Johdettu taulu:** *Myyntitilaukset*
@@ -306,23 +306,23 @@ Tässä esimerkissä luodaan *Varastot sallivat konsolidoinnin* -käytäntö, jo
 
 - Käytäntö tekee kyselyn tietyssä tilauspoolissa lähetyksiä konsolidoivien varastojen tunnistamiseksi.
 - Avoimien lähetysten konsolidointi on poistettu käytöstä.
-- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon**-valintaruutu).
+- Konsolidointi tehdään asetusten välillä käyttämällä Tilaustenvälinen-oletuskäytännön valitsemia kenttiä (jolla toisinnetaan aiempi **Konsolidoi lähetys luovutettaessa varastoon** -valintaruutu).
 
 Yleensä tämä liiketoimintatapaus otetaan huomioon käyttämällä [skenaariossa 1](#scenario-1) luotoja oletuskäytäntöjä. Samanlaisia käytäntöjä voi kuitenkin luoda myös seuraavien ohjeiden mukaisesti:
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
-1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi**:
+1. Luo uusi käytäntö, jossa on seuraavat asetukset valitsemalla toimintoruudussa **Uusi** :
 
     - **Käytännön nimi:** *Tilaustenvälinen*
     - **Käytännön kuvaus:** *tiettyjen varastojen tilausten välinen konsolidointi*
 
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -kentässä rivi, jossa **Kentän nimi** -kentän asetuksena on *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Konsolidointikentät** -pikavälilehden **Jäljellä olevat kentät** -kentässä rivi, jossa **Kentän nimi** -kentän asetuksena on *Toimitustapa*.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää** -painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Varasto*, ja määritä kyseisen rivin **Ehdot**-kentän asetukseksi *61, 63*.
+1. Etsi kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jossa **Kenttä** -kentän asetuksena on *Varasto* , ja määritä kyseisen rivin **Ehdot** -kentän asetukseksi *61, 63*.
 1. Sulje valintaikkuna valitsemalla **OK**.
 
 ### <a name="set-the-order"></a>Järjestyksen määrittäminen
@@ -331,7 +331,7 @@ Nyt kun kaikki käytännöt on luotu, niiden käyttöjärjestys on määritettä
 
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Määritä **Käytännön tyyppi** -kentän asetukseksi *Myyntitilaukset*.
-1. Valitse kukin vasemmassa sarakkeessa oleva käytäntö ja järjestä käytännöt sitten seuraavaan järjestykseen toimintoruudun **Siirrä ylös**- ja **Siirrä alas** -painikkeita.
+1. Valitse kukin vasemmassa sarakkeessa oleva käytäntö ja järjestä käytännöt sitten seuraavaan järjestykseen toimintoruudun **Siirrä ylös** - ja **Siirrä alas** -painikkeita.
 
     1. CustomerMode
     1. Nimiketyyppi

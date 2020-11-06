@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c78752aa1544b12f61071fa06617af4ac2809233
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998105"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kaksoiskirjoituksen asetukset Lifecycle Services -sovelluksessa
 
@@ -56,7 +55,7 @@ Näiden ohjeiden avulla voit määrittää kaksoiskirjoitusyhteyden.
 
         1. Määritä **Määritä Common Data Service** -asetuksen arvoksi **Kyllä**.
         2. Valitse **Käytettävissä olevat ympäristöt** -kentässä Finance and Operations -tietojen kanssa integroitava ympäristö. Luettelo sisältää kaikki ympäristöt, joiden järjestelmänvalvojan oikeudet sinulla on.
-        3. Valitse **Hyväksyn**-valintaruutu, jolloin hyväksyt ehdot.
+        3. Valitse **Hyväksyn** -valintaruutu, jolloin hyväksyt ehdot.
 
         ![Common Data Service -välilehti, kun Common Data Service -ympäristö on jo valmisteltu vuokraajaa varten](../dual-write/media/lcs_setup_1.png)
 
@@ -70,16 +69,16 @@ Näiden ohjeiden avulla voit määrittää kaksoiskirjoitusyhteyden.
             > [!NOTE]
             > Et voi muuttaa kieltä ja valuuttaa myöhemmin.
 
-        5. Valitse **Hyväksyn**-valintaruutu, jolloin hyväksyt ehdot.
+        5. Valitse **Hyväksyn** -valintaruutu, jolloin hyväksyt ehdot.
 
         ![Common Data Service -välilehti, kun vuokraajalla ei ole Common Data Service -ympäristöä](../dual-write/media/lcs_setup_2.png)
 
 7. Suorita jäljellä olevat vaiheet ohjatussa **Käyttöönoton asetukset** -toiminnossa.
-8. Kun ympäristön tila on **Otettu käyttöön**, avaa ympäristön tietojen sivu. **Common Data Service -ympäristön tiedot** -osassa on linkitettyjen Finance and Operations- ja Common Data Service -ympäristöjen nimet.
+8. Kun ympäristön tila on **Otettu käyttöön** , avaa ympäristön tietojen sivu. **Common Data Service -ympäristön tiedot** -osassa on linkitettyjen Finance and Operations- ja Common Data Service -ympäristöjen nimet.
 
     ![Common Data Service -ympäristön tietojen osa](../dual-write/media/lcs_setup_3.png)
 
-9. Finance and Operations -ympäristön järjestelmänvalvojan on kirjauduttava sisään LCS-sovellukseen ja valittava **Linkitä CDS for Apps -sovellukseen**, jotta linkitys on valmis. Ympäristön tietojen sivulla näkyvät järjestelmänvalvojan yhteystiedot.
+9. Finance and Operations -ympäristön järjestelmänvalvojan on kirjauduttava sisään LCS-sovellukseen ja valittava **Linkitä CDS for Apps -sovellukseen** , jotta linkitys on valmis. Ympäristön tietojen sivulla näkyvät järjestelmänvalvojan yhteystiedot.
 
     Kun linkki on valmis, tilaksi päivitetään **Ympäristön linkitys on suoritettu onnistuneesti**.
 

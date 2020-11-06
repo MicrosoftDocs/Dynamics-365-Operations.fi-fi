@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207344"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018149"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
@@ -34,7 +34,7 @@ Tässä aiheessa kuvataan, miten voit käyttää toimittajayhteistyötä työske
 - **Ostotilauksen vahvistus** – ostotilausten seuranta ja niihin vastaaminen.
 - **Toimittajan tarjoukset** – tarjouspyyntöjen tarkastelu ja niihin vastaaminen tekemällä tarjouksia.
 - **Toimittajatiedot** – toimittajan päätietojen tarkastelu ja päivittäminen.
-- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus** -työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Toimittajat voivat seurata myös tavaralähetysvaraston tietoja.
 
@@ -59,13 +59,13 @@ Voit käsitellä ostotilauksia seuraavilla sivuilla:
 
 Asiakkaan sinulle tarkastettaviksi lähettämät ostotilaukset näkyvät **Ostotilauksen vahvistus** -työtilassa ja **Tarkistettavat ostotilaukset** -sivulla. Kun olet avannut ostotilauksen, voit hyväksyä, hylätä tai hyväksyä ostotilauksen muutosten kera. Ostotilauksen otsikossa tai yksittäisillä riveillä voi olla liitteitä. Voit lisäksi liittää vastaukseesi tietoja ostotilauksen otsikkoon tai yksittäisille riveille. Voit esimerkiksi ehdottaa korvaavaa nimikettä yhdelle riville.
 
-Voit esikatsella ja tulostaa ostotilauksen PDF-muodossa **Esikatselu/tulostus** -asetuksella. Voit piilottaa tai näyttää seuraavat dimensiosarakkeet **Näytä dimensiot** -toiminnolla: **Toimipaikka**, **Varasto**, **Väri**, **Koko**, **Tyyli** ja **Konfiguraatio**. 
+Voit esikatsella ja tulostaa ostotilauksen PDF-muodossa **Esikatselu/tulostus** -asetuksella. Voit piilottaa tai näyttää seuraavat dimensiosarakkeet **Näytä dimensiot** -toiminnolla: **Toimipaikka** , **Varasto** , **Väri** , **Koko** , **Tyyli** ja **Konfiguraatio**. 
 
 Käytettäessä **Hyväksy muutosten kera** -vaihtoehtoa, voit hyväksyä tai hylätä yksittäisiä rivejä. Voit tehdä seuraavia muutoksia riveille:
 
 - Päivämäärien tai määrien muuttaminen. Voit päivittää vahvistetun toimituspäivän kaikilla riveillä valitsemalla **Päivitä toimituspäivä** -asetuksen ostotilauksen otsikossa.
 - Jaa rivit eri toimituspäivämäärille tai määrille.
-- Korvaa nimike. Anna nimikkeen kuvaus ja nimiketunnus **Ulkoinen**-kentän **Rivin tiedot** -osassa.
+- Korvaa nimike. Anna nimikkeen kuvaus ja nimiketunnus **Ulkoinen** -kentän **Rivin tiedot** -osassa.
 
 Et voi muuttaa hinnoittelutietoja etkä maksuja, mutta voi tehdä niihin muutosehdotuksia käyttämällä huomautuksia.
 
@@ -89,12 +89,12 @@ Työtilassa on myös kaikki hävityt ja voitetut tarjouspyynnöt. Jos järjestel
 
 Saat käyttöösi seuraavat tiedot avaamalla **Toimittajan tarjoukset** -työtilan:
 
-- Kun valitset **Uudet tarjouskutsut**, näet tarjouspyynnöt, joihin yritys on kutsuttu vastaamaan. Voit tarkastella tarjouspyyntöä täällä ja aloittaa tarjousprosessin. Näet myös muunnetut tarjouspyynnöt, joihin on lähetettävä uusi tarjous.
-- Kun valitset **Palautetut tarjoukset**, näet tarjouspyynnöt, jotka asiakas on palauttanut lisätietoja tai tarjouksen päivittämistä varten.
-- Kun valitset **Käsittelyssä olevat tarjoukset**, näet tarjouspyynnöt, joita sinä tai yritystä edustava yhteyshenkilö on käsitellyt mutta jota ei ole vielä lähetetty.
-- Kun valitset **Myönnetyt tarjoukset**, näet milloin asiakas on myöntänyt vähintään yhden tarjouksen rivinimikkeen.
-- Kun valitset **Hävityt tarjoukset**, näet tarjoukset, jonka kaikki rivit on hylätty.
-- Kun valitset **Tarjouspyynnöt**-linkit, näet luettelon kaikista toimittajan tarjouspyyntökutsuista ja lähetetyistä tarjouksista. **Tarjouspyynnöt**-sivulla on luettelo kaikista tarjouspyynnöistä, joissa toimittaja on ollut mukana. Voit tehdä haun tilan perusteella.
+- Kun valitset **Uudet tarjouskutsut** , näet tarjouspyynnöt, joihin yritys on kutsuttu vastaamaan. Voit tarkastella tarjouspyyntöä täällä ja aloittaa tarjousprosessin. Näet myös muunnetut tarjouspyynnöt, joihin on lähetettävä uusi tarjous.
+- Kun valitset **Palautetut tarjoukset** , näet tarjouspyynnöt, jotka asiakas on palauttanut lisätietoja tai tarjouksen päivittämistä varten.
+- Kun valitset **Käsittelyssä olevat tarjoukset** , näet tarjouspyynnöt, joita sinä tai yritystä edustava yhteyshenkilö on käsitellyt mutta jota ei ole vielä lähetetty.
+- Kun valitset **Myönnetyt tarjoukset** , näet milloin asiakas on myöntänyt vähintään yhden tarjouksen rivinimikkeen.
+- Kun valitset **Hävityt tarjoukset** , näet tarjoukset, jonka kaikki rivit on hylätty.
+- Kun valitset **Tarjouspyynnöt** -linkit, näet luettelon kaikista toimittajan tarjouspyyntökutsuista ja lähetetyistä tarjouksista. **Tarjouspyynnöt** -sivulla on luettelo kaikista tarjouspyynnöistä, joissa toimittaja on ollut mukana. Voit tehdä haun tilan perusteella.
 - Kun valitset **Hylätyt tarjoukset** -linkin, näet luettelon kaikista tarjouspyynnöistä, joissa toimittajan yhteyshenkilö on hylännyt tarjouksen tekemisen.
 
 ### <a name="working-with-rfqs-that-are-publicly-available"></a>Julkisesti käytettävissä olevien tarjouspyyntöjen käsitteleminen
@@ -124,15 +124,15 @@ Julkisella sektorilla työskentelevät henkilöt näkevät julkisiksi tehdyt avo
 - Voit nollata tarjoukseen annetut tiedot ja palauttaa sen alkuperäiseksi tarjouspyynnöksi valitsemalla **Nollaa arvot tarjouspyynnöstä**. Voit nollata otsikon tai rivin arvot.
 - Voit käsitellä vaihtoehtoisia arvoja valitsemalla riviruudukossa **Lisää vaihtoehto** tai **Poista vaihtoehto**.
 
-    Jotkin tarjouspyynnöt sallivat vaihtoehtoiset tarjoukset. Voit määrittää vaihtoehtotarjoukset **Luokka**-tyypin riveille, koska yksittäisiä nimikkeitä ei voi lisätä vaihtoehtoina. 
+    Jotkin tarjouspyynnöt sallivat vaihtoehtoiset tarjoukset. Voit määrittää vaihtoehtotarjoukset **Luokka** -tyypin riveille, koska yksittäisiä nimikkeitä ei voi lisätä vaihtoehtoina. 
 
 - Voit avata asiakkaan tarjouspyyntöön lisäämän liitteen valitsemalla **Tarjouspyynnön liite** tai **Tarjouspyynnön rivien liite**. Voit ladata liitteet yhdessä tarjouksen kanssa valitsemalla **Tarjouksen liitteet** tai **Tarjousrivin liitteet**.
 
     On mahdollista, että sinun on vastattava kyselylomakkeeseen, ennen kuin voit lähettää tarjouksen.
 
-- Valitse **Hylkää**, jos et halua tehdä tarjousta. Kun olet valinnut **Hylkää**, ei voi peruuttaa toimintoa etkä tehdä tarjousta.
+- Valitse **Hylkää** , jos et halua tehdä tarjousta. Kun olet valinnut **Hylkää** , ei voi peruuttaa toimintoa etkä tehdä tarjousta.
 
-Jos tarjouspyyntöä muutetaan, sinun on tehtävä uusi tarjous. Lisätietoja muutoksesta on tarjouspyyntösivun **Muutokset**-välilehdessä. Muutettu tarjouspyyntö näkyy **Uudet tarjouskutsut** -sivulla.
+Jos tarjouspyyntöä muutetaan, sinun on tehtävä uusi tarjous. Lisätietoja muutoksesta on tarjouspyyntösivun **Muutokset** -välilehdessä. Muutettu tarjouspyyntö näkyy **Uudet tarjouskutsut** -sivulla.
 
 ## <a name="accessing-vendor-master-data-in-the-vendor-information-workspace"></a>Toimittajan päätietojen käyttäminen Toimittajantiedot-työtilassa
 

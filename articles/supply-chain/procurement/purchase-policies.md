@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
+ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
-ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
+ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830746"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018718"
 ---
 # <a name="purchasing-policies-overview"></a>Ostokäytännöt – yleiskatsaus
 
@@ -105,9 +105,9 @@ Ostoehdotuksen tarjouspyyntösääntö määrittää ostoehdotusriville ehdot ta
 Tyypin **Kulutus** ehdotusten ostoehdotusten ohjausobjektisääntö on valinnainen sääntö. Tämänkaltaisia sääntöjä luodessa voit määrittää asetuksia useilla välilehdillä:
 
 -   **Työnkulun lähetys** -välilehdessä voit määrittää kentät, jotka on täytettävä hyväksyttäväksi lähetettävän ehdotuksen riveille.
--   **Tilausmäärät**-välilehdessä voit määrittää kentät, jotka ovat pakollisia ostoehdotuksessa tiettyjen ehtojen täyttyessä. Voit myös pakottaa tietyn tilausmäärän.
--   **Päivämäärät**-välilehdessä voit määrittää onko kirjauspäivä sama, kuin pyydetty päivä
--   **Osoite**-välilehdessä voit määrittää käyttäjän oikeuden luoda uusia osoitteita järjestelmään, jotka koskevat ostoehdotusta.
+-   **Tilausmäärät** -välilehdessä voit määrittää kentät, jotka ovat pakollisia ostoehdotuksessa tiettyjen ehtojen täyttyessä. Voit myös pakottaa tietyn tilausmäärän.
+-   **Päivämäärät** -välilehdessä voit määrittää onko kirjauspäivä sama, kuin pyydetty päivä
+-   **Osoite** -välilehdessä voit määrittää käyttäjän oikeuden luoda uusia osoitteita järjestelmään, jotka koskevat ostoehdotusta.
 
 ### <a name="requisition-purpose-rule"></a>Ehdotuksen tarkoitussääntö
 
@@ -130,9 +130,9 @@ Ostotilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käyt�
     -   **Vain, jos kauppasopimusta ei ole** – hinnat ja alennukset siirretään ostoehdotuksesta vain, jos sovellettavaa kauppasopimusta tai perushintaa ei ole olemassa. Jos nimikkeelle tai toimittajalle on olemassa perushinta, hinnat ja alennukset lasketaan uudelleen kauppasopimuksen tai perushinnan perusteella ja niitä sovelletaan ostotilaukseen. Jollei toisin määritetä, tämä on oletusasetus.
     -   **Aina** – hinnat ja alennukset siirretään aina ostoehdotuksesta.
 
-    Voit myös sallia, että pyynnön lähettäjä saa muuttaa yksittäisten ostoehdotusrivien hinnan ja alennuksen siirtotapaa määritetystä hinnan tai alennuksen siirtosäännöstä riippumatta. Valitse **Salli manuaalinen ohitus ostoehdotuksen rivin osalta**-asetus, ottaaksesi tämän ominaisuuden käyttöön.
+    Voit myös sallia, että pyynnön lähettäjä saa muuttaa yksittäisten ostoehdotusrivien hinnan ja alennuksen siirtotapaa määritetystä hinnan tai alennuksen siirtosäännöstä riippumatta. Valitse **Salli manuaalinen ohitus ostoehdotuksen rivin osalta** -asetus, ottaaksesi tämän ominaisuuden käyttöön.
 -   **Nimikkeen kuvauksen siirto** -välilehdellä voit siirtää nimikkeen kuvauksen ehdotuksesta silloin, kun ehdotuksen lähde on tarjouspyyntö.
--   **Hintatoleranssi**-välilehdellä voit määrittää hintatoleranssin säännöt, joiden avulla hyväksytyt ostoehdotukset reititetään takaisin tarkastusprosessiin, kun tuotteiden hankintaluettelon nimikkeen hinta kasvaa. Aseta enimmäissumma, jonka ostoehdotuksen rivinimikkeen nettosumma voi kasvaa ostoehdotuksen hyväksynnän ja ostotilauksen luonnin välillä. Nettosumma lasketaan seuraavalla kaavalla: (\[Määrä × (Yksikköhinta - Alennus) ÷ Hintayksikkö\] + Muut ostokulut) × (100 - Alennusprosentti) ÷ 100 Ostoehdotusrivit, jotka ylittävät asettamasi hintatoleranssin asetetaan pitoon ja siirretään manuaaliseen käsittelyyn. Säännöt, jotka voit määrittää **Virheiden käsittely** -välilehdellä määrittävät kuinka ostoehdotusrivit käsitellään.
+-   **Hintatoleranssi** -välilehdellä voit määrittää hintatoleranssin säännöt, joiden avulla hyväksytyt ostoehdotukset reititetään takaisin tarkastusprosessiin, kun tuotteiden hankintaluettelon nimikkeen hinta kasvaa. Aseta enimmäissumma, jonka ostoehdotuksen rivinimikkeen nettosumma voi kasvaa ostoehdotuksen hyväksynnän ja ostotilauksen luonnin välillä. Nettosumma lasketaan seuraavalla kaavalla: (\[Määrä × (Yksikköhinta - Alennus) ÷ Hintayksikkö\] + Muut ostokulut) × (100 - Alennusprosentti) ÷ 100 Ostoehdotusrivit, jotka ylittävät asettamasi hintatoleranssin asetetaan pitoon ja siirretään manuaaliseen käsittelyyn. Säännöt, jotka voit määrittää **Virheiden käsittely** -välilehdellä määrittävät kuinka ostoehdotusrivit käsitellään.
 -   **Virheiden käsittely** -välilehdellä voit määrittää ostoehdotukseen sovellettavan käsittelysäännön, jos sen vahvistaminen epäonnistuu ostotilauksen luonnin yhteydessä toimittajan virheen tai hintatoleranssivirheen vuoksi. Valitse jompikumpi seuraavista vaihtoehdoista:
     -   **Ei toimintoa** – Ostoehdotusrivit jätetään **Vapauta hyväksytyt ostoehdotukset** -sivulle. Ostoehdotusrivien tilana säilyy **Hyväksytty**. Virheet on kuitenkin korjattava ennen ostotilauksen luomista ostoehdotusriveille.
     -   **Peruuta ostoehdotusrivi** – Ostoehdotusrivit peruutetaan. Pyynnön lähettäjä voi luoda peruutetuille riveille uuden ostoehdotuksen, jos hän haluaa edelleen pyytää rivinimikkeitä.
@@ -146,7 +146,7 @@ Ostotilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käyt�
 -   **Kysynnän konsolidointi** -välilehdellä voit asettaa parametrit, jotka määrittävät, voidaanko manuaalisesti käsiteltäviä ostoehdotuksia harkita ostoehdotuksen konsolidointia varten. Parametreja voidaan soveltaa sisäisiin luettelonimikkeisiin, ulkoisiin luettelonimikkeisiin tai luettelon ulkopuolisiin nimikkeisiin. Valitse jompikumpi seuraavista vaihtoehdoista:
     -   **Älä salli tarpeiden yhdistämistä** – Mitään hyväksyttyjä ostoehdotusrivien tarpeita ei yhdistetä. Tämä asetus on oletusarvon mukaan valittuna ja koskee vain niitä ostoehdotusrivejä, jotka edellyttävät manuaalista ostotilauksen luontia.
     -   **Salli aina tarpeiden yhdistäminen** – Kaikki hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. **Huomautus:** Jos valitset **Salli aina tarpeiden yhdistäminen** -asetuksen **Kysynnän konsolidointi** -välilehdeltä, mutta valitset **Luo ostotilaukset automaattisesti** -asetuksen **Manuaalinen ostotilausten luonti** -välilehdellä, järjestelmä asettaa kaikki ostoehdotukset manuaaliseen käsittelyyn.
-    -   **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä** – Määritä ehdot, joiden perusteella hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. Voit määrittää kullekin ostoehdotusrivin tyypille ehdot hankintaluokan ja toimittajan mukaan. Jos valitset **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä**, voit määrittää kullekin ostoehdotusrivin tyypille ehdon hankintaluokan ja toimittajan mukaan. Kun valitset hankintaluokan, myös kaikki tämän hankintaluokan alaluokat valitaan. Jos valitset **Kaikki**-vaihtoehdon tietylle rivityypille, kaikki tämän rivityypin ostoehdotusrivit ovat oikeutettuja kysynnän konsolidointiin.
+    -   **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä** – Määritä ehdot, joiden perusteella hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. Voit määrittää kullekin ostoehdotusrivin tyypille ehdot hankintaluokan ja toimittajan mukaan. Jos valitset **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä** , voit määrittää kullekin ostoehdotusrivin tyypille ehdon hankintaluokan ja toimittajan mukaan. Kun valitset hankintaluokan, myös kaikki tämän hankintaluokan alaluokat valitaan. Jos valitset **Kaikki** -vaihtoehdon tietylle rivityypille, kaikki tämän rivityypin ostoehdotusrivit ovat oikeutettuja kysynnän konsolidointiin.
 
 
 

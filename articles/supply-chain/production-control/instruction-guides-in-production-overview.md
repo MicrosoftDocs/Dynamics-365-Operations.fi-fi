@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: d8c2da17d4e3df37c55844f0aad00f883725f741
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
+ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989270"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000975"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Yhdistetyn todellisuuden oppaiden tuottaminen tuotannon työntekijöille
 
@@ -124,7 +124,7 @@ Määritä tapa, jolla oppat näkyvät tuotannossa, valitsemalla **Yhdistetty to
 
 Määritä seuraavat kentät:
 
-- **CDS-ympäristön alitoimialue** – Tässä kentässä on oltava aina arvo. Tämä kenttä sisältää sen Common Data Service -ympäristön alitoimialueen, jossa oppaat luodaan. Alitoimialue on URL-osoitteen ensimmäinen osa, joka yleensä nimetään organisaation mukaan. Jos esimerkiksi Common Data Servicen URL-osoite on contoso.crm4.dynamics.com, annan tässä kohdassa *contoso*. Tätä arvoa käytetään oppaisen osoitteiden laatimiseen, ja se koodataan QR-koodeihin.
+- **Common Data Service -alitoimialue** – Tässä kentässä on oltava aina arvo. Tämä kenttä sisältää sen Common Data Service -ympäristön alitoimialueen, jossa oppaat luodaan. Alitoimialue on URL-osoitteen ensimmäinen osa, joka yleensä nimetään organisaation mukaan. Jos esimerkiksi Common Data Servicen URL-osoite on contoso.crm4.dynamics.com, annan tässä kohdassa *contoso*. Tätä arvoa käytetään oppaisen osoitteiden laatimiseen, ja se koodataan QR-koodeihin.
 - **QR-koodin koko** – Määritä hahmonnetun QR-koodin koko. Järkevintä on valita koko, joka täyttää suurimman osan näytöstä mutta ei enemmän. *15* on yleensä hyvä arvo.
 - **QR-koodin virheen korjaustaso** – Määritä QR-koodin tarkkuus. Mitä tarkempi koodi on, sitä luotettavampi se on. **QR-koodin koon** on kuitenkin oltava riittävän suuri, jotta se tukee valitun korjaustason mukaista tietojen tasoa.
 
@@ -158,7 +158,7 @@ Oppaan liittäminen resurssiin:
 1. Valitse luetteloruudussa resurssi, johon haluat määrittää oppaan.
 1. Laajenna **Liitetyt oppaat** -pikavälilehti.
 1. Valitse **Lisää** **Liittyvät oppaat** -työkalurivillä. Uusi rivi lisätään ruudukkoon.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa. Jos oppaita on paljon, oikean oppaan voi etsiä luetteloa suodattamalla.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa. Jos oppaita on paljon, oikean oppaan voi etsiä luetteloa suodattamalla.
     ![Oppaiden hallinta](media/instruction-guides-allguides.png "Oppaiden hallinta")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Oppaan liittäminen resurssiryhmään
@@ -179,7 +179,7 @@ Oppaan liittäminen resurssiryhmään:
 1. Valitse luetteloruudussa resurssiryhmä, johon haluat määrittää oppaan.
 1. Laajenna **Liitetyt oppaat** -pikavälilehti.
 1. Valitse **Lisää** **Liittyvät oppaat** -työkalurivillä. Uusi rivi lisätään ruudukkoon.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa. Jos oppaita on paljon, oikean oppaan voi etsiä luetteloa suodattamalla.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa. Jos oppaita on paljon, oikean oppaan voi etsiä luetteloa suodattamalla.
     ![Oppaan lisääminen resurssiryhmään](media/instruction-guides-resourcegroup.png "Oppaan lisääminen resurssiryhmään")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Oppaan liittäminen vapautettuun tuotteeseen
@@ -196,10 +196,10 @@ Oppaan lisääminen vapautettuun tuotteeseen:
 
 1. Mene **Tuotantotietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
 1. Avaa tuote, jolle opas määritetään.
-1. Avaa toimintoruudussa **Suunnittele**-välilehti ja valitse **Näytä**-ryhmässä **Liitetyt oppaat**.
+1. Avaa toimintoruudussa **Suunnittele** -välilehti ja valitse **Näytä** -ryhmässä **Liitetyt oppaat**.
 1. Valitun tuotteen **Liitetyt oppaat** -sivu avautuu.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Lisää**. 
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen vapautettuun tuotteeseen](media/instruction-guides-ReleasedProduct-AddGuides.png "Oppaan lisääminen vapautettuun tuotteeseen")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Oppaan liittäminen kaavaan
@@ -221,10 +221,10 @@ Oppaan lisääminen kaavaan:
 
 1. Valitse **Tuotantotietojen hallinta \> Tuoterakenteet ja kaavat \> Kaavat**.
 1. Avaa kaava, jolle opas määritetään.
-1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko**-välilehti.
+1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko** -välilehti.
 1. Laajenna **Liitetyt oppaat** -pikavälilehti.
 1. Valitse **Lisää** **Liittyvät oppaat** -työkalurivillä. Uusi rivi lisätään ruudukkoon.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen kaavaan](media/instruction-guides-Formula.png "Oppaan lisääminen kaavaan")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Oppaan liittäminen kaavaversioon
@@ -247,13 +247,13 @@ Oppaan lisääminen kaavaversioon:
 
 1. Valitse **Tuotantotietojen hallinta \> Tuoterakenteet ja kaavat \> Kaavat**.
 1. Avaa sen version sisältävä kaava, jolle opas määritetään.
-1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko**-välilehti.
-1. Valitse **Kaavaversiot**-pikavälilehdessä versio, jolla opas määritetään.
-1. Valitse **Kaavaversiot**-työkalurivillä **Liitetyt oppaat**.
+1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko** -välilehti.
+1. Valitse **Kaavaversiot** -pikavälilehdessä versio, jolla opas määritetään.
+1. Valitse **Kaavaversiot** -työkalurivillä **Liitetyt oppaat**.
     ![Valittuun kaavaversioon liittyvien oppaiden avaaminen](media/instruction-guides-FormulaVersion.png "Valittuun kaavaversioon liittyvien oppaiden avaaminen")
 1. Kaavaversion **Liitetyt oppaat** -sivu avautuu.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Lisää**. 
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen kaavaversioon](media/instruction-guides-FormulaVersionAddGuide.png "Oppaan lisääminen kaavaversioon")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Oppaan liittäminen tuoterakenteeseen
@@ -273,10 +273,10 @@ Oppaan lisääminen tuoterakenteeseen:
 
 1. Valitse **Tuotantotietojen hallinta \> Tuoterakenteet ja kaavat \> Tuoterakenteet**.
 1. Avaa tuoterakenne, jolle opas määritetään.
-1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko**-välilehti.
+1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko** -välilehti.
 1. Laajenna **Liitetyt oppaat** -pikavälilehti.
 1. Valitse **Lisää** **Liittyvät oppaat** -työkalurivillä. Uusi rivi lisätään ruudukkoon.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen tuoterakenteeseen](media/instruction-guides-BOM.png "Oppaan lisääminen tuoterakenteeseen")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Oppaan liittäminen tuoterakenteen versioon
@@ -296,13 +296,13 @@ Oppaan lisääminen tuoterakenteen versioon:
 
 1. Valitse **Tuotantotietojen hallinta \> Tuoterakenteet ja kaavat \> Tuoterakenteet**.
 1. Avaa sen version sisältävä tuoterakenne, jolle opas määritetään.
-1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko**-välilehti.
-1. Valitse **Tuoterakenteen versiot**-pikavälilehdessä versio, jolla opas määritetään.
-1. Valitse **Tuoterakenteen versiot**-työkalurivillä **Liitetyt oppaat**.
+1. Avaa ylemmän pikavälilehden yläpuolella oleva **Otsikko** -välilehti.
+1. Valitse **Tuoterakenteen versiot** -pikavälilehdessä versio, jolla opas määritetään.
+1. Valitse **Tuoterakenteen versiot** -työkalurivillä **Liitetyt oppaat**.
     ![Valittuun tuoterakenteen versioon liittyvien oppaiden avaaminen](media/instruction-guides-BOMVersion.png "Valittuun tuoterakenteen versioon liittyvien oppaiden avaaminen")
 1. Tuoterakenteen version **Liitetyt oppaat** -sivu avautuu.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Lisää**.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen tuoterakenteen versioon](media/instruction-guides-BOMVersionAddGuide.png "Oppaan lisääminen tuoterakenteen versioon")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Oppaan liittäminen reittiin
@@ -323,7 +323,7 @@ Oppaan lisääminen reittiin:
 1. Avaa reitti, jolle opas määritetään.
 1. Laajenna **Liitetyt oppaat** -pikavälilehti.
 1. Valitse **Lisää** **Liittyvät oppaat** -työkalurivillä. Uusi rivi lisätään ruudukkoon.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen reittiin](media/instruction-guides-Route.png "Oppaan lisääminen reittiin")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Oppaan liittäminen reitin versioon
@@ -340,12 +340,12 @@ Oppaan lisääminen reitin versioon:
 
 1. Valitse **Tuotannonhallinta \> Kaikki reitit**.
 1. Avaa reitti, jolle opas määritetään.
-1. Valitse **Versiot**-pikavälilehdessä versio, jolle opas määritetään.
-1. Valitse **Versiot**-työkalurivillä **Liitetyt oppaat**.
+1. Valitse **Versiot** -pikavälilehdessä versio, jolle opas määritetään.
+1. Valitse **Versiot** -työkalurivillä **Liitetyt oppaat**.
     ![Valittuun reitin versioon liittyvien oppaiden avaaminen](media/instruction-guides-RouteVersion.png "Valittuun reitin versioon liittyvien oppaiden avaaminen")
 1. Tuoterakenteen version **Liitetyt oppaat** -sivu avautuu.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Lisää**.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa.
     ![Oppaan lisääminen reitin versioon](media/instruction-guides-RouteVersionAddGuide.png "Oppaan lisääminen reitin versioon")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Oppaan liittäminen reitin työvaihesuhteeseen
@@ -365,21 +365,21 @@ Oppaan lisääminen reitin työvaihesuhteeseen:
 
 1. Valitse **Tuotannonhallinta \> Kaikki reitit**.
 1. Avaa reitti, jolle opas määritetään.
-1. Avaa toimintoruudussa **Reitti**-välilehti ja valitse **Ylläpito** -ryhmässä **Reititystiedot**.
-1. Valitun reitin **Reititystiedot**-sivu avautuu.
+1. Avaa toimintoruudussa **Reitti** -välilehti ja valitse **Ylläpito** -ryhmässä **Reititystiedot**.
+1. Valitun reitin **Reititystiedot** -sivu avautuu.
 1. Valitse yläruudukosta työvaihe, jolle ohjeet annetaan.
-1. Valitse alaruudukossa tietty suhde (tai yleinen **Kaikki**-suhde).
+1. Valitse alaruudukossa tietty suhde (tai yleinen **Kaikki** -suhde).
     ![Työvaiheen ja sen jälkeen suhteen valitseminen](media/instruction-guides-RouteOperationRelation.png "Työvaiheen ja sen jälkeen suhteen valitseminen")
 1. Avaa alaruudukon yläpuolella **Liitetyt oppaat** -välilehti. ![Liitetyt oppaat -välilehti](media/instruction-guides-RouteOperationRelation-AddGuide.png "Liitetyt oppaat -välilehti")
 1. Lisää ruudukkoon uusi rivi valitsemalla alaruudukon yläosan työkalurivillä **Lisää**.
-1. Valitse uudelle riville määritettävä opas **Nimi**-sarakkeen avattavassa luettelossa. Valitse rivin muilta osin valintaruutu jokaiselle tilanteelle, jossa valittu opas on oltava käytettävissä.
+1. Valitse uudelle riville määritettävä opas **Nimi** -sarakkeen avattavassa luettelossa. Valitse rivin muilta osin valintaruutu jokaiselle tilanteelle, jossa valittu opas on oltava käytettävissä.
 
 > [!NOTE]
 > Kunkin työvaiheen kuhunkin osavaiheeseen voi lisätä useita oppaita.
 
 ## <a name="select-guides-from-the-shop-floor-execution-interface"></a>Oppaiden valitseminen tuotannon käyttöliittymässä
 
-Kun työntekijä avaa työluettelon tuotannon käyttöliittymässä, Supply Chain Management etsii näkyvissä olevia töitä koskevat oppaat. Voit tarkastella liittyviä oppaita **Oppaat**-painikkeella.
+Kun työntekijä avaa työluettelon tuotannon käyttöliittymässä, Supply Chain Management etsii näkyvissä olevia töitä koskevat oppaat. Voit tarkastella liittyviä oppaita **Oppaat** -painikkeella.
 
 ![Oppaat-painike tuotannon käyttöliittymässä](media/instruction-guides-Shopfloor1.png "Oppaat-painike tuotannon käyttöliittymässä")
 
@@ -406,6 +406,6 @@ Kun Supply Chain Management luo tuotannon töitä, se kerää liittyvät oppaat 
 
 - Jos liität tuoterakenteen tai kaavan version reittiin tai tuotantotilaukseen, niin kyseiseen versioon ja myös sen päätuoterakenteeseen tai -kaavaan liitetyt oppaat näytetään työssä.
 - Jos liität reitin version tuotantotilaukseen, niin kyseiseen versioon ja myös sen pääreittiin liitetyt oppaat näytetään työssä.
-- Jos määrität useita reitityksen työvaiheita, jotka sisältävät *Kaikki*-suhteen, ja määrität niille oppaita, vain tarkimman suhteen oppaat näytetään työssä.  
+- Jos määrität useita reitityksen työvaiheita, jotka sisältävät *Kaikki* -suhteen, ja määrität niille oppaita, vain tarkimman suhteen oppaat näytetään työssä.  
 
 ![Kaavio oppaiden soveltuvuuden ratkaisemisesta](media/instruction-guides-Resolve.png "Kaavio oppaiden soveltuvuuden ratkaisemisesta")

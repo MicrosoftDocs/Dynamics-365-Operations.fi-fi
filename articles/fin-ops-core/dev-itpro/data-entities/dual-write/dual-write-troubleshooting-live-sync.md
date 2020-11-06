@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275414"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997299"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-synkronoinnin ongelmien vianmääritys
 
@@ -58,7 +57,7 @@ Voit korjata ongelman varmistamalla, että sekä Finance and Operations -sovellu
 Jos molemmilla puolilla on tietoja ja olet vahvistanut, että ongelma ei liity tietoihin, toimi seuraavasti.
 
 1. Pysäytä liittyvä yksikkö.
-2. Kirjaudu sisään Finance and Operations -sovellukseen ja varmista, että epäonnistuneen yksikön tietueita on olemassa DualWriteProjectConfiguration- ja DualWriteProjectFieldConfiguration-taulukoissa. Kysely näyttää esimerkiksi siltä, että **Asiakkaat**-yksikkö epäonnistuu.
+2. Kirjaudu sisään Finance and Operations -sovellukseen ja varmista, että epäonnistuneen yksikön tietueita on olemassa DualWriteProjectConfiguration- ja DualWriteProjectFieldConfiguration-taulukoissa. Kysely näyttää esimerkiksi siltä, että **Asiakkaat** -yksikkö epäonnistuu.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -67,7 +66,7 @@ Jos molemmilla puolilla on tietoja ja olet vahvistanut, että ongelma ei liity t
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Jos epäonnistuneen yksikön tietueissa on tietoja myös sen jälkeen, kun olet estänyt kohteen yhdistämismäärityksen, poista epäonnistuvaan yksikköön liittyvät tiedot. Kirjoita **projectname**-sarakkeesta kommentti DualWriteProjectConfiguration-taulussa ja nouda tietue DualWriteProjectFieldConfiguration-taulusta käyttämällä projektin nimeä tietueen poistamiseen.
+3. Jos epäonnistuneen yksikön tietueissa on tietoja myös sen jälkeen, kun olet estänyt kohteen yhdistämismäärityksen, poista epäonnistuvaan yksikköön liittyvät tiedot. Kirjoita **projectname** -sarakkeesta kommentti DualWriteProjectConfiguration-taulussa ja nouda tietue DualWriteProjectFieldConfiguration-taulusta käyttämällä projektin nimeä tietueen poistamiseen.
 4. Aloita entiteetin yhdistämismääritys. Tarkista, synkronoitiinko tiedot ilman ongelmia.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Luku- tai kirjoitusoikeusvirheiden käsitteleminen Finance and Operations -sovelluksen tietojen luonnin yhteydessä
@@ -98,7 +97,7 @@ Ongelman korjaaminen edellyttää, että määrität oikean käyttöoikeusroolin
 
 Näyttöön saattaa tulla seuraava virhesanoma, kun luot tietoa Finance and Operations -sovelluksessa:
 
-*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Hyötykuormaa ei voida luoda yksikölle CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Hyötykuorman luonti epäonnistui, väärä URI: URI on tyhjä."}\],"isErrorCountUpdated":true}*
+*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":" **Hyötykuormaa ei voida luoda yksikölle CustCustomerV3Entity** ","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Hyötykuorman luonti epäonnistui, väärä URI: URI on tyhjä."}\],"isErrorCountUpdated":true}*
 
 Tässä on virhe, joka näyttää Dynamics 365:n mallipohjaisen sovelluksen.
 
@@ -124,5 +123,5 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
     where projectname = <project name from previous query>
     ```
 
-3. Varmista, että **externalenvironmentURL**-sarakkeessa on oikea Common Data Service- tai sovelluksen URL-osoite. Poista kaikki tietueiden kaksoiskappaleet, jotka viittaavat väärään Common Data Service -URL-osoitteeseen. Poista vastaavat tiedot DUALWRITEPROJECTFIELDCONFIGURATION- ja DUALWRITEPROJECTCONFIGURATION-tauluista.
+3. Varmista, että **externalenvironmentURL** -sarakkeessa on oikea Common Data Service- tai sovelluksen URL-osoite. Poista kaikki tietueiden kaksoiskappaleet, jotka viittaavat väärään Common Data Service -URL-osoitteeseen. Poista vastaavat tiedot DUALWRITEPROJECTFIELDCONFIGURATION- ja DUALWRITEPROJECTCONFIGURATION-tauluista.
 4. Pysäytä yksikön yhdistämismääritys ja käynnistä se sitten uudelleen

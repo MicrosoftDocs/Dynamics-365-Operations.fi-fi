@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, PurchCopying
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b478e4cd5cf1eb88517bb923c377c6121d92fd0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204766"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018026"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Toistuvan ostotilauksen luonti
 
@@ -37,21 +37,21 @@ Tässä aiheessa kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla r
 4. Valitse **OK**.
 5. Valitse toimintoruudussa **Ostotilaus**.
 6. Valitse **Kaikista**. Tältä sivulta voit kopioida tietoja olemassa olevista tilauksesta omaan tilaukseesi. Rivien kopiointiin on erilaisia vaihtoehtoja, ja kopioinnin lähdeasiakirjoja on myös erilaisia. Tarkastelemme rivien kopiointitapojen vaihtoehtoja ensin. 
-7. Laajenna **Parametrit**-osa.
+7. Laajenna **Parametrit** -osa.
 
-    - **Määräkerroin**-kenttä on hyödyllinen, jos sinun on käytettävä määrää, joka poikkeaa kopioinnin lähteenä olevan tilauksen määrästä. Jos esimerkiksi haluat tilata kaksinkertaisen määrän kopioinnin lähteenä oleviin riveihin verrattuna, kirjoita tähän kenttään "2" ja järjestelmä lisää rivit, joissa alkuperäinen määrä on kaksinkertainen.  
+    - **Määräkerroin** -kenttä on hyödyllinen, jos sinun on käytettävä määrää, joka poikkeaa kopioinnin lähteenä olevan tilauksen määrästä. Jos esimerkiksi haluat tilata kaksinkertaisen määrän kopioinnin lähteenä oleviin riveihin verrattuna, kirjoita tähän kenttään "2" ja järjestelmä lisää rivit, joissa alkuperäinen määrä on kaksinkertainen.  
     - Myös **Vaihda etumerkki** -kenttä tukee tilatun määrän muuttamista vaihtamalla lisättyjen tilausrivien määrän etumerkin. Voi olla hyötyä, jos sinun on peruutettava tapahtuma luomalla tilausrivejä, jotka kumoavat tapahtuman. Tämä vaihtoehto valitaan automaattisesti, kun sivu avataan **Luo hyvityslasku** -toiminnolla.  
     - **Kopioi kulut** -vaihtoehdon avulla voit kopioida kulut uuteen tilaukseen tilausrivien lähteenä olevasta asiakirjasta.  
     - **Laske hinnat uudelleen** -vaihtoehto käyttää nykyisiä hintoja ja alennuksia sen sijaan, että ne kopioitaisiin asiakirjasta, jota käytät lähteenä muille tiedoille.  
     - **Kopioi täsmällisesti** -vaihtoehto luo tarkan kopion tilausasiakirjan otsikon ja rivien kaikkien kenttien arvoista. Jos tämä vaihtoehto ei ole valittuna, monessa toimittajaan ja tuotteisiin liittyvissä kentässä käytetään oletusarvoja, aivan kuin loisit uutta tilausta manuaalisesti. Jos esimerkiksi tilauksessa, josta kopioit ohitettiin toimittajan oletuslaskutustili, kyseinen laskutustili kopioidaan tilaukseesi. Jos et ole valinnut **Kopioi täsmällisesti** -vaihtoehtoa, toimittajan oletuslaskutustiliä käytetään tilauksessasi sen sijaan.  
     - **Poista ostorivit** -vaihtoehto poistaa kaikki ostotilausrivit, jotka ovat jo kopioinnin kohteena olevalla ostotilauksella, ennen uusien rivien lisäämistä. Käytä tätä vaihtoehtoa varoen, koska se poistaa kaikki aiemmin luodut rivit ilman varoitusta.  
     - Jos käytät **Kopioi tilausotsikko** -vaihtoehtoa, uuteen tilaukseen ei tarvitse luoda otsikkotietoja manuaalisesti. Huomaa, että tämän asetuksen kanssa käytetään oletusarvoja toimittajaan liittyvissä kentissä. Jos lähdeasiakirjassa on ei-oletusarvoja, jotka haluat myös kopioida, käytä lisäksi **Kopioi täsmällisesti** -vaihtoehtoa.   
-    - Kopioinnissa käytettäviä asiakirjalähteitä on erilaisia, ja jokaisella on oma osansa tällä sivulla. Esimerkiksi **Ostotilaukset**-osassa voit kopioida olemassa olevista ostotilauksista.  
+    - Kopioinnissa käytettäviä asiakirjalähteitä on erilaisia, ja jokaisella on oma osansa tällä sivulla. Esimerkiksi **Ostotilaukset** -osassa voit kopioida olemassa olevista ostotilauksista.  
 
-8. Valitse **Ostotilaukset**-osassa rivit, jotka haluat kopioida leikepöydälle. Voit valita lisää ostotilausrivejä muista ostotilauksista ja kopioida myös ne tilaukseesi. On myös mahdollista lisätä rivejä muista ostoasiakirjoista. Seuraavissa vaiheissa tarkastellaan näitä vaihtoehtoja.  
-9. Laajenna **Vahvistus**-osa. Tässä voit valita kopioinnin lähteeksi ostotilauksen vahvistuksen. Ostotilauksen vahvistuksen tunnistat liittyvästä ostokirjauskansion tunnuksesta tai ostotilauksen tunnuksesta.  
+8. Valitse **Ostotilaukset** -osassa rivit, jotka haluat kopioida leikepöydälle. Voit valita lisää ostotilausrivejä muista ostotilauksista ja kopioida myös ne tilaukseesi. On myös mahdollista lisätä rivejä muista ostoasiakirjoista. Seuraavissa vaiheissa tarkastellaan näitä vaihtoehtoja.  
+9. Laajenna **Vahvistus** -osa. Tässä voit valita kopioinnin lähteeksi ostotilauksen vahvistuksen. Ostotilauksen vahvistuksen tunnistat liittyvästä ostokirjauskansion tunnuksesta tai ostotilauksen tunnuksesta.  
 10. Laajenna **Tuotteiden vastaanotot** -osa. Tässä voit valita kopioinnin lähteeksi tuotteen vastaanottokirjauksen. Tuotteen vastaanottokirjaukset tunnistat tuotteen vastaanottotositteesta tai ostotilauksen tunnuksesta.   
-11. Laajenna **Laskut**-osa. Tässä voit valita kopioinnin lähteeksi toimittajan laskun. Laskut tunnistat laskutustositteesta tai ostotilauksen tunnuksesta.   
+11. Laajenna **Laskut** -osa. Tässä voit valita kopioinnin lähteeksi toimittajan laskun. Laskut tunnistat laskutustositteesta tai ostotilauksen tunnuksesta.   
 12. Laajenna **Kopioitavat valitut rivit tai kopioitava otsikko** -osa. Tämä näkymä sisältää yhteenvedon kaikista asiakirjoista ja riveistä, jotka on valittu kopioitavaksi uuteen tilaukseen.   
 13. Valitse **OK**. Valitsemasi rivit on nyt kopioitu uuteen ostotilaukseen.   
 
@@ -61,7 +61,7 @@ Sen sijaan, että kopioisit kokonaisen tilauksen, on tavallisempaa luoda uusi os
 
 1. Valitse **Ostotilausrivi**.
 2. Valitse **Kaikista**. Aukeava sivu on samanlainen kuin aiemmin näytetty, mutta tilausrivinäkymästä avattaessa siihen valitaan eri vaihtoehdot. Tarkastellaan parametreja tarkemmin.   
-3. Laajenna **Parametrit**-osa.
+3. Laajenna **Parametrit** -osa.
 
     - **Poista ostorivit** -vaihtoehto ei ole valittuna. Tämä tarkoittaa sitä, että voit kopioida uusia rivejä tilaukseen poistamatta olemassa olevia rivejä.   
     - **Kopioi otsikon tilaus** -vaihtoehto ei myöskään ole valittuna, koska lisäämme vain rivejä tilaukseen.   

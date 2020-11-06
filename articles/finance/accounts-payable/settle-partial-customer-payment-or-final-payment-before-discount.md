@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c378a424d89a884d1f3f0f14e1d544b3af178b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177603"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006112"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Asiakkaan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
 
@@ -34,13 +34,13 @@ Tässä artikkelissa on skenaarioita, jotka kuvaavat osittaisten maksujen kirjaa
 Fabrikam myy tavaroita asiakkaalle 4028. Fabrikam tarjoaa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="customer-invoice"></a>Myyntilasku
-Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4028, jonka arvo on 1.000,00. Arnie voi tarkastella tapahtumaa **Asiakastapahtumat**-sivulla.
+Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4028, jonka arvo on 1.000,00. Arnie voi tarkastella tapahtumaa **Asiakastapahtumat** -sivulla.
 
 | Tosite   | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo  | Valuutta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
 | FTI-10010 | Lasku          | 25.6.2015 | 10010   | 1 000,00                             |                                       | 1 000,00 | USD      |
 
-Arnie avaa **Selvitä tapahtumat** -sivun **Asiakas**- tai **Asiakastapahtumat**-sivulta tarkastellakseen päivämääriä sekä laskulle saatavilla olevia käteisalennuksia. Eräpäivä on 25. heinäkuuta ja 10,00:n arvoinen käteisalennus on käytettävissä, jos lasku maksetaan viimeistään 9. heinäkuuta.
+Arnie avaa **Selvitä tapahtumat** -sivun **Asiakas** - tai **Asiakastapahtumat** -sivulta tarkastellakseen päivämääriä sekä laskulle saatavilla olevia käteisalennuksia. Eräpäivä on 25. heinäkuuta ja 10,00:n arvoinen käteisalennus on käytettävissä, jos lasku maksetaan viimeistään 9. heinäkuuta.
 
 | Merkitse     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -48,7 +48,7 @@ Arnie avaa **Selvitä tapahtumat** -sivun **Asiakas**- tai **Asiakastapahtumat**
 
 Hyvityslaskun alennustiedot näkyvät merkityn laskun **Selvitä tapahtumat** -sivun alaosassa.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 10,00     |
@@ -56,7 +56,7 @@ Hyvityslaskun alennustiedot näkyvät merkityn laskun **Selvitä tapahtumat** -s
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | 10,00     |
 
-Arnie napsauttaa **Käteisalennus**-välilehteä tarkastellakseen alennussummaa.
+Arnie napsauttaa **Käteisalennus** -välilehteä tarkastellakseen alennussummaa.
 
 | Käteisalennuksen päivämäärä | Käteisalennussumma | Summa tapahtuman valuuttana |
 |--------------------|----------------------|--------------------------------|
@@ -64,7 +64,7 @@ Arnie napsauttaa **Käteisalennus**-välilehteä tarkastellakseen alennussummaa.
 | 25.7.2015          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Osamaksu Lisää asiakkaan maksuja -sivun avulla
-Asiakas 4028 lähettää 500,00 arvoisen maksun 1. heinäkuuta. Erik ei napsauta **Rivit**-kohtaa kirjatakseen tämän maksun. Sen sijaan, hän kirjaa maksun luomalla uuden maksukirjauskansion ja avaamalla sitten **Lisää asiakkaan maksuja** -sivun. Hän syöttää maksutiedot ja merkitsee kirjaamansa laskun. Kun Arnie kirjaa summaksi **500,00**, hän kirjoittaa myös **500,00** ruudukon **Maksettava summa** -kenttään. Koska Fabrikam voi antaa käteisalennuksen osamaksuille, hän huomaa, että maksulle käytetään myös osittaista, 5,05:n arvoista käteisalennusta. Tämä alennus lasketaan seuraavasti: 500,00 / 0,99 × 0,01 = 5,05. (Tässä laskutoimituksessa 500,00 jaetaan 0,99:llä, koska alennus on 1 prosentti. Tällöin asiakas maksaa laskusta 99 prosenttia. Tulos kerrotaan sitten alennusprosentilla eli 1 prosentilla – 0,01. Jos asiakkaalle käytetään 10,00:n arvoista alennusta kokonaisuudessaan, selvitettävä summa olisi 990,00.) Alennustiedot tulevat **Lisää asiakkaan maksuja** -sivun alalaidan ruudukkoon.
+Asiakas 4028 lähettää 500,00 arvoisen maksun 1. heinäkuuta. Erik ei napsauta **Rivit** -kohtaa kirjatakseen tämän maksun. Sen sijaan, hän kirjaa maksun luomalla uuden maksukirjauskansion ja avaamalla sitten **Lisää asiakkaan maksuja** -sivun. Hän syöttää maksutiedot ja merkitsee kirjaamansa laskun. Kun Arnie kirjaa summaksi **500,00** , hän kirjoittaa myös **500,00** ruudukon **Maksettava summa** -kenttään. Koska Fabrikam voi antaa käteisalennuksen osamaksuille, hän huomaa, että maksulle käytetään myös osittaista, 5,05:n arvoista käteisalennusta. Tämä alennus lasketaan seuraavasti: 500,00 / 0,99 × 0,01 = 5,05. (Tässä laskutoimituksessa 500,00 jaetaan 0,99:llä, koska alennus on 1 prosentti. Tällöin asiakas maksaa laskusta 99 prosenttia. Tulos kerrotaan sitten alennusprosentilla eli 1 prosentilla – 0,01. Jos asiakkaalle käytetään 10,00:n arvoista alennusta kokonaisuudessaan, selvitettävä summa olisi 990,00.) Alennustiedot tulevat **Lisää asiakkaan maksuja** -sivun alalaidan ruudukkoon.
 
 | Käytettävä käteisalennussumma | Käytetty käteisalennus | Maksettava summa |
 |------------------------------|---------------------|---------------|
@@ -79,7 +79,7 @@ Asiakas 4028 lähettää 500,00 arvoisen maksun 1. heinäkuuta. Erik ei napsauta
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 10,00     |
@@ -95,7 +95,7 @@ Jos asiakas haluaa selvittää tasan puolet laskusta, asiakkaan on suoritettava 
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 10,00     |
@@ -103,7 +103,7 @@ Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | 5,00      |
 
-Arnie sulkee **Selvitä tapahtumat** -sivun. Kirjauskansioon luodaan maksurivi summalle 495,00, jonka jälkeen Arnie kirjaa kirjauskansion. Hän voi tarkastella asiakastapahtumia **Asiakastapahtumat**-sivulla. Tällä sivulla Arnie näkee, että laskun saldo on 500,00. Näkyvillä ovat myös maksu (495,00) ja käteisalennus (5,00).
+Arnie sulkee **Selvitä tapahtumat** -sivun. Kirjauskansioon luodaan maksurivi summalle 495,00, jonka jälkeen Arnie kirjaa kirjauskansion. Hän voi tarkastella asiakastapahtumia **Asiakastapahtumat** -sivulla. Tällä sivulla Arnie näkee, että laskun saldo on 500,00. Näkyvillä ovat myös maksu (495,00) ja käteisalennus (5,00).
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo | Valuutta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -112,9 +112,9 @@ Arnie sulkee **Selvitä tapahtumat** -sivun. Kirjauskansioon luodaan maksurivi s
 | ALE-10010 |  Käteisalennus   | 7.1.2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Jäljellä olevan määrän maksaminen
-Asiakas 4028 maksaa jäljellä olevan summan, 495,00 8. heinäkuuta, joka on käteisalennuskaudella. Arnie luo maksukirjauskansion 8. heinäkuuta ja merkitsee tapahtuman selvitettäväksi. Hän näkee, että selvitettävä summa on 495,00. **Arvioitu käteisalennus** -kentän arvo on **5,00**, koska alennuksesta on jo aiemmin käytetty 5,00.
+Asiakas 4028 maksaa jäljellä olevan summan, 495,00 8. heinäkuuta, joka on käteisalennuskaudella. Arnie luo maksukirjauskansion 8. heinäkuuta ja merkitsee tapahtuman selvitettäväksi. Hän näkee, että selvitettävä summa on 495,00. **Arvioitu käteisalennus** -kentän arvo on **5,00** , koska alennuksesta on jo aiemmin käytetty 5,00.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Merkitty kokonaissumma            | 495,00 |
 | Arvioitu käteisalennus | 5,00   |
@@ -127,7 +127,7 @@ Valittua tapahtumaa koskevat tiedot näkyvät **Tilitä avoimet tapahtumat** -si
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 10,00     |
@@ -135,7 +135,7 @@ Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 | Käytetty käteisalennus          | 5,00      |
 | Käytettävä käteisalennussumma | 5,00      |
 
-Arnie kirjaa maksukirjauskansion ja tarkistaa asiakkaan tapahtumat **Asiakastapahtumat**-sivulta. Laskun saldo on nyt 0,00, ja Arnie näkee kaksi maksua ja kaksi käteisalennusta.
+Arnie kirjaa maksukirjauskansion ja tarkistaa asiakkaan tapahtumat **Asiakastapahtumat** -sivulta. Laskun saldo on nyt 0,00, ja Arnie näkee kaksi maksua ja kaksi käteisalennusta.
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo | Valuutta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

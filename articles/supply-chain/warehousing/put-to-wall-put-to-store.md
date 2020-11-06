@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 10eb32f75ccfe1521af9ebfe1e73ef08ea4238f7
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597537"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017825"
 ---
 # <a name="put-to-wall---put-to-store"></a>Asettaminen seinälle – asettaminen myymälään
 
@@ -62,7 +63,7 @@ Tässä esittelyssä käytetään Contoso-vakiotietoja ja varastoa *62*. Lisäks
 ### <a name="warehouse-management-parameters"></a>Varastonhallinnan parametrit
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**.
-1. Anna **Yleiset**-välilehden **Sijaintityypit**-pikavälilehden **Lajittelun sijaintityyppi** -kentän arvoksi *LAJITTELU*.
+1. Anna **Yleiset** -välilehden **Sijaintityypit** -pikavälilehden **Lajittelun sijaintityyppi** -kentän arvoksi *LAJITTELU*.
 1. Valitse **Tallenna**.
 
 ### <a name="location-profile"></a>Sijaintiprofiili
@@ -74,7 +75,7 @@ Tässä esittelyssä käytetään Contoso-vakiotietoja ja varastoa *62*. Lisäks
     - **Sijaintiprofiilin tunnus:** *Lajittelu*
     - **Nimi:** *Lajittelu*
 
-1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
 
     - **Sijainnin muoto:** *PAKKAUS*
     - **Sijaintityyppi:** *LAJITTELU*
@@ -90,7 +91,7 @@ Tässä esittelyssä käytetään Contoso-vakiotietoja ja varastoa *62*. Lisäks
 1. Poista **Luo tarkistusnumeroita sijaintiin** -valintaruudun valinta.
 1. Valitse toimintoruudussa **Uusi** ja määritä sitten seuraavat arvot:
 
-    - **Varasto**: *62*
+    - **Varasto** : *62*
     - **Sijainti:** *Lajittelu*
     - **Sijaintiprofiilin tunnus:** *Lajittelu*
 
@@ -140,10 +141,10 @@ Lajittelumalli määrittää, luodaanko lajittelupaikat, mitä ehtoja käytetä�
         - **Aallon kysyntä** – Lajittelumallia käytetään *Asettaminen seinälle* -prosessissa. Tätä mallityyppiä käytetään ohittamaan pakkausasema ja käsittelemään varastoa suoraan aallosta. Tätä tyyppiä voi käyttää vain, jos **lajittelu** sisältyy aallon käsittelymenetelmänä aaltomalliin.
         - **Kontti** – Tätä lajittelumallia käytetään *Kuormalavan luonti pakkauksen jälkeen* -prosessissa. Tätä mallityyppiä käytetään pakkausasemalla suljettujen ja kuormalavoille lajiteltavien konttien käsittelyyn.
 
-    - **Varasto**: *62*
+    - **Varasto** : *62*
     - **Sijainti:** *Lajittelu*
 
-1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
 
     - **Lajittelun tarkistus:** *Sijainnin tarkistus*.
 
@@ -155,7 +156,7 @@ Lajittelumalli määrittää, luodaanko lajittelupaikat, mitä ehtoja käytetä�
 
     - **Luo työ paikkaan suljettaessa:** *Kyllä*
 
-        Jos tämän vaihtoehdon arvona on *Kyllä*, kun paikka luodaan, työ luodaan siirtämään varasto lopulliseen lähetyssijaintiin. Jos vaihtoehdon arvona on *Ei*, varasto kerätään tilaukseen heti, kun paikka suljetaan.
+        Jos tämän vaihtoehdon arvona on *Kyllä* , kun paikka luodaan, työ luodaan siirtämään varasto lopulliseen lähetyssijaintiin. Jos vaihtoehdon arvona on *Ei* , varasto kerätään tilaukseen heti, kun paikka suljetaan.
 
     - **Paikan määritys:** *Manuaalinen*
 
@@ -173,11 +174,11 @@ Lajittelumalli määrittää, luodaanko lajittelupaikat, mitä ehtoja käytetä�
 
     - **Aallon vaihekoodi:** *Lajittelu*
 
-        Jos *Organisaationlaajuinen aallon vaihekoodi* -toiminto on otettu käyttöön, myös *Lajittelu*-aallon vaihekoodi on määritettävä aallon vaihekoodeissa.
+        Jos *Organisaationlaajuinen aallon vaihekoodi* -toiminto on otettu käyttöön, myös *Lajittelu* -aallon vaihekoodi on määritettävä aallon vaihekoodeissa.
 
     - **Sulje lajittelupaikka automaattisesti:** *Kyllä*
 
-        Jos tässä vaihtoehdossa on valittu *Kyllä*, lajittelupaikka suljetaan automaattisesti, kun kaikki sijaintiin tulevat työt on suoritettu.
+        Jos tässä vaihtoehdossa on valittu *Kyllä* , lajittelupaikka suljetaan automaattisesti, kun kaikki sijaintiin tulevat työt on suoritettu.
 
     - **Lajittelusijaintien määrä:** *3*
 
@@ -189,14 +190,14 @@ Lajittelumalli määrittää, luodaanko lajittelupaikat, mitä ehtoja käytetä�
 
     - **Pakkaa lajittelupaikka automaattisesti:** *Kyllä*
 
-        Jos tämä vaihtoehto on *Kyllä*, lajittelupaikan varasto pakataan konttiin, kun paikka suljetaan.
+        Jos tämä vaihtoehto on *Kyllä* , lajittelupaikan varasto pakataan konttiin, kun paikka suljetaan.
 
     - **Pakkausprofiilin tunnus:** *Lajitteli*
 
         Tämä kenttä määrittää pakkausprofiilin, jota käytetään, kun lajittelupaikka pakataan konttiin.
 
 1. Määritä tässä lajittelumallissa käytettävät ehdot valitsemalla toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää rivi valitsemalla kyselyn valintaikkunan **Lajittelu**-välilehdessä **Uusi** ja määritä sitten seuraavat arvot:
+1. Lisää rivi valitsemalla kyselyn valintaikkunan **Lajittelu** -välilehdessä **Uusi** ja määritä sitten seuraavat arvot:
 
     - **Taulukko:** *Kuorman tiedot*
     - **Johdettu taulukko:** *Kuorman tiedot*
@@ -220,7 +221,7 @@ Lajittelumalli määrittää, luodaanko lajittelupaikat, mitä ehtoja käytetä�
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
 1. Valitse toimintoruudussa **Luo menetelmät uudelleen**.
 
-    **Lajittelumenetelmä** lisätään käytettävissä olevien menetelmien luetteloon ja sille valitaan *Lähetys*-aallon mallityyppi.
+    **Lajittelumenetelmä** lisätään käytettävissä olevien menetelmien luetteloon ja sille valitaan *Lähetys* -aallon mallityyppi.
 
 ### <a name="wave-templates"></a>Aaltomallit
 
@@ -230,15 +231,15 @@ Muokkaa aallon kysynnän lajittelussa käytettävää aaltomallia.
 1. Valitse **Aaltomallin tyyppi** -kentässä *Lähetys*.
 1. Valitse aiemmin luotu **62 Lähetysoletus** -malli.
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Tee **Yleiset**-pikavälilehdessä seuraavat muutokset:
+1. Tee **Yleiset** -pikavälilehdessä seuraavat muutokset:
 
     - Määritä **Käsittele aalto, kun se vapautetaan varastoon** -asetuksen arvoksi *Ei*.
     - Määritä **Määritä avoimiin aaltoihin** -vaihtoehdon arvoksi *Kyllä*.
 
-1. Määritä **Lajittelu**-menetelmä **Menetelmät**-pikavälilehdessä:
+1. Määritä **Lajittelu** -menetelmä **Menetelmät** -pikavälilehdessä:
 
     1. Valitse **Jäljellä olevat menetelmät** -ruudukossa **lajittelu**.
-    2. Siirrä **lajittelu**-menetelmä **Valitut menetelmät** -ruudukkoon oikealla nuolipainikkeella.
+    2. Siirrä **lajittelu** -menetelmä **Valitut menetelmät** -ruudukkoon oikealla nuolipainikkeella.
     3. Valitse **Valitut menetelmät** -ruudukossa **lajittelu**.
     4. Määritä **Aallon vaihekoodi** -kentän arvoksi *Lajittelu*.
 
@@ -255,7 +256,7 @@ Muokkaa aallon kysynnän lajittelussa käytettävää aaltomallia.
     - **Tila:** *Epäsuora*
     - **Käytä aiemmin luotua työtä:** *Ei*
 
-1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
 
     - **Tehtäväkoodi:** *Lähtevä lajittelu*
     - **Käytä prosessiopasta:** *Kyllä* (oletusarvo)
@@ -268,8 +269,8 @@ Muokkaa aallon kysynnän lajittelussa käytettävää aaltomallia.
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Mobiililaite \> Mobiililaitteen valikko**.
 1. Valitse valikkoluettelosta **Lähtevä**.
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Etsi ja valitse **Käytettävissä olevat valikot ja valikkovaihtoehdot** -ruudukossa juuri luotu **Lajittelu**-valikkovaihtoehto.
-1. Siirrä **Lajittelu**oikealla nuolipainikkeella **Valikon rakenne** -ruudukkoon. Voit lisätä tällä tavoin valikkovaihtoehdon **Lähtevä**-valikkoon.
+1. Etsi ja valitse **Käytettävissä olevat valikot ja valikkovaihtoehdot** -ruudukossa juuri luotu **Lajittelu** -valikkovaihtoehto.
+1. Siirrä **Lajittelu** oikealla nuolipainikkeella **Valikon rakenne** -ruudukkoon. Voit lisätä tällä tavoin valikkovaihtoehdon **Lähtevä** -valikkoon.
 1. Valitse **Tallenna**.
 
 ### <a name="location-directives"></a>Sijaintidirektiivit
@@ -277,37 +278,37 @@ Muokkaa aallon kysynnän lajittelussa käytettävää aaltomallia.
 Sijaintidirektiivejä on luotava ohjaamaan lajittelun valmistelun jälkeen luotua työtä.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
-1. Valitse **Työtilaustyyppi**-kentässä *Lajiteltu varastokeräily*.
+1. Valitse **Työtilaustyyppi** -kentässä *Lajiteltu varastokeräily*.
 1. Valitse toimintoruudussa **Uusi**.
 1. Aseta otsikkorivillä seuraavat arvot:
 
     - **Järjestys:** *1*
     - **Nimi:** *Aseta lastausovelle*
 
-1. Määritä **Sijaintidirektiivit**-pikavälilehdessä seuraavat arvot:
+1. Määritä **Sijaintidirektiivit** -pikavälilehdessä seuraavat arvot:
 
     - **Työtyyppi:** *Aseta*
     - **Toimipaikka:** *6*
-    - **Varasto**: *62*
+    - **Varasto** : *62*
     - **Direktiivikoodi:** Jätä tämä kenttä tyhjäksi.
     - **Useita varastointiyksiköitä:** *Ei*
 
-1. Valitse **Tallenna**, jos haluat, että **Rivit**-pikavälilehti on käytettävissä.
-1. Valitse **Rivit**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Valitse **Tallenna** , jos haluat, että **Rivit** -pikavälilehti on käytettävissä.
+1. Valitse **Rivit** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Järjestysnumero:** *1*
     - **Määrästä:** *0*
     - **Määrälle:** *1000000*
 
-1. Valitse **Tallenna**, jos haluat, että **Paikkadirektiivitoimenpiteet**-pikavälilehti on käytettävissä.
-1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Valitse **Tallenna** , jos haluat, että **Paikkadirektiivitoimenpiteet** -pikavälilehti on käytettävissä.
+1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Järjestysnumero:** *1*
     - **Nimi:** *Baydoor*
 
-1. Valitse **Tallenna**, jos haluat, että **Sijaintidirektiivin toiminnot** -pikavälilehden **Muokkaa kyselyä** -painike on käytettävissä.
-1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Muokkaa kyselyä**.
-1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jonka **Kenttä**-kentän asetuksena on *Sijainti*. Määritä tämän rivin **Ehdot**-kentän arvoksi *Lastauspaikan ovi*.
+1. Valitse **Tallenna** , jos haluat, että **Sijaintidirektiivin toiminnot** -pikavälilehden **Muokkaa kyselyä** -painike on käytettävissä.
+1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
+1. Etsi kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jonka **Kenttä** -kentän asetuksena on *Sijainti*. Määritä tämän rivin **Ehdot** -kentän arvoksi *Lastauspaikan ovi*.
 1. Vahvista muokkaus valitsemalla **OK**.
 
 ### <a name="work-classes"></a>Työluokat
@@ -325,30 +326,30 @@ Sijaintidirektiivejä on luotava ohjaamaan lajittelun valmistelun jälkeen luotu
 ### <a name="work-templates"></a>Työmallit
 
 1. Valitse **Varastonhallinta \> Työ \> Työmallit**.
-1. Valitse **Työtilaustyyppi**-kentässä *Myyntitilaukset*.
+1. Valitse **Työtilaustyyppi** -kentässä *Myyntitilaukset*.
 1. Valitse ruudukossa **62 Kerää pakettiin** -työmalli.
 1. Valitse toimintoruudussa **Työn otsikoiden katkaisut**.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Poista **Ryhmittele tämän kentän mukaan** -valintaruudun valinta sillä rivillä, jossa **Kentän nimi** -kentän asetuksena *Lähetyksen tunnus*.
 1. Valitse **Tallenna** ja sulje sitten **Työn otsikoiden katkaisut** -valintaikkuna.
-1. Valitse **Työtilaustyyppi**-kentässä *Lajiteltu varastokeräily*.
+1. Valitse **Työtilaustyyppi** -kentässä *Lajiteltu varastokeräily*.
 1. Luo työmalli valitsemalla **Uusi**.
-1. Määritä **Yleiset**-osassa seuraavat arvot. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Määritä **Yleiset** -osassa seuraavat arvot. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Työmalli:** *Lajiteltu keräily*
     - **Työmallin kuvaus:** *Lajiteltu keräily*
 
-1. Valitse **Tallenna**, jos haluat, että **Työmallin tiedot** -osa on käytettävissä.
+1. Valitse **Tallenna** , jos haluat, että **Työmallin tiedot** -osa on käytettävissä.
 1. **Työmallin tiedot** -osassa luodaan kaksi riviä. Valitse **Uusi** ja määritä sitten seuraavat arvot riville 1:
 
     - **Työtyyppi:** *Poiminta*
-    - **Pakollinen:** valittu (= *Kyllä*)
+    - **Pakollinen:** valittu (= *Kyllä* )
     - **Työluokan tunnus:** *Lajittelu*
 
 1. Valitse **Uusi** uudelleen ja määritä sitten seuraavat arvot riville 2:
 
     - **Työtyyppi:** *Aseta*
-    - **Pakollinen:** valittu (= *Kyllä*)
+    - **Pakollinen:** valittu (= *Kyllä* )
     - **Työluokan tunnus:** *Lajittelu*
 
 1. Valitse **Tallenna**.
@@ -370,10 +371,10 @@ Varmista ennen myyntitilausten ja lähetysten luontia, että keräilysijaintien 
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakas:** *US-001*
-    - **Varasto**: *62*
+    - **Varasto** : *62*
 
 1. Valitse **OK**.
-1. **Myyntitilausrivit**-pikavälilehdelle lisätään uusi rivi. Määritä seuraavat arvot:
+1. **Myyntitilausrivit** -pikavälilehdelle lisätään uusi rivi. Määritä seuraavat arvot:
 
     - **Nimiketunnus:** *A0001*
     - **Määrä** *5*
@@ -385,18 +386,18 @@ Varmista ennen myyntitilausten ja lähetysten luontia, että keräilysijaintien 
 
 1. Varaa varastoa toistamalla seuraavat vaiheet tilauksen kunkin tilausrivin osalta:
 
-    1. Valitse **Myyntitilausrivit**-pikavälilehdellä **Varasto**-valikosta **Varaus**.
-    1. Valitse **Varaus**-sivulla **Varaa erä** ja sulje sitten sivu.
+    1. Valitse **Myyntitilausrivit** -pikavälilehdellä **Varasto** -valikosta **Varaus**.
+    1. Valitse **Varaus** -sivulla **Varaa erä** ja sulje sitten sivu.
     1. Valitse **Tallenna**.
 
 1. Luo tilauksen 2 myyntitilaus valitsemalla **Uusi**.
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakas:** *US-004*
-    - **Varasto**: *62*
+    - **Varasto** : *62*
 
 1. Valitse **OK**.
-1. **Myyntitilausrivit**-pikavälilehdelle lisätään uusi rivi. Määritä seuraavat arvot:
+1. **Myyntitilausrivit** -pikavälilehdelle lisätään uusi rivi. Määritä seuraavat arvot:
 
     - **Nimiketunnus:** *A0001*
     - **Määrä** *7*
@@ -408,39 +409,39 @@ Varmista ennen myyntitilausten ja lähetysten luontia, että keräilysijaintien 
 
 1. Varaa varastoa toistamalla seuraavat vaiheet tilauksen kunkin tilausrivin osalta:
 
-    1. Valitse **Myyntitilausrivit**-pikavälilehdellä **Varasto**-valikosta **Varaus**.
-    1. Valitse **Varaus**-sivulla **Varaa erä** ja sulje sitten sivu.
+    1. Valitse **Myyntitilausrivit** -pikavälilehdellä **Varasto** -valikosta **Varaus**.
+    1. Valitse **Varaus** -sivulla **Varaa erä** ja sulje sitten sivu.
     1. Valitse **Tallenna**.
 
 1. Luo tilauksen 3 myyntitilaus valitsemalla **Uusi**.
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakas:** *US-007*
-    - **Varasto**: *62*
+    - **Varasto** : *62*
 
 1. Valitse **OK**.
-1. **Myyntitilausrivit**-pikavälilehdelle lisätään uusi rivi. Määritä seuraavat arvot:
+1. **Myyntitilausrivit** -pikavälilehdelle lisätään uusi rivi. Määritä seuraavat arvot:
 
     - **Nimiketunnus:** *A0001*
     - **Määrä** *8*
 
 1. Varaa myyntirivin mukainen varasto seuraavasti:
 
-    1. Valitse **Myyntitilausrivit**-pikavälilehdellä **Varasto**-valikosta **Varaus**.
-    1. Valitse **Varaus**-sivulla **Varaa erä** ja sulje sitten sivu.
+    1. Valitse **Myyntitilausrivit** -pikavälilehdellä **Varasto** -valikosta **Varaus**.
+    1. Valitse **Varaus** -sivulla **Varaa erä** ja sulje sitten sivu.
     1. Valitse **Tallenna**.
 
 Vapauta kukin myyntitilaus varastoon seuraavien ohjeiden mukaan. Erillisiä lähetyksiä luodaan kolme. Kaikki kolme lähetystä lisätään sitten yhteen uuteen aaltoon.
 
 1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
 1. Valitse ruudukossa ensimmäinen luotu myyntitilaus.
-1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**.
+1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**.
 
     Näyttöön tulevat tietosanomat ilmaisevat luodun aallon tunnuksen ja lähetyksen tunnuksen.
 
 1. Vapauta myyntilaukset 2 ja 3 varastoon toistamalla edelliset vaiheet. Huomaa, että saamasi tietosanoma ilmaisee, aaltoon on lisätty lähetys, joka luotiin, kun myyntitilaus 1 vapautettiin.
 1. Valitse **Varastonhallinta \> Lähtevät aallot \> Lähetysaallot \> Kaikki aallot**.
-1. Avaa **Aallot**-sivu valitsemalla aallon tunnus, joka luotiin myyntitilausten vapauttamisesta. Aallon tiedot ovat tällä sivulla. Luodut lähetykset näkyvät **Aallon rivit** -pikavälilehdessä.
+1. Avaa **Aallot** -sivu valitsemalla aallon tunnus, joka luotiin myyntitilausten vapauttamisesta. Aallon tiedot ovat tällä sivulla. Luodut lähetykset näkyvät **Aallon rivit** -pikavälilehdessä.
 
     Nyt on luotava työ, jolla nimikkeet tuodaan keräilysijainneista lajittelusijaintiin.
 
@@ -448,7 +449,7 @@ Vapauta kukin myyntitilaus varastoon seuraavien ohjeiden mukaan. Erillisiä läh
 
     Lajittelumenetelmä määrittää aallon käsittelyn aikana varaston lajittelupaikkoihin lajittelumallien avulla. Kun aalto on käsitelty, avautuva tietosanoma ilmoittaa, että aalto on kirjattu ja työ on luotu.
 
-1. Voit tarkastella luotua työtä valitsemalla toimintoruudun **Aalto**-välilehden **Liittyvät tiedot** -ryhmässä **Työ**. Kirjoita työn tunnus muistiin.
+1. Voit tarkastella luotua työtä valitsemalla toimintoruudun **Aalto** -välilehden **Liittyvät tiedot** -ryhmässä **Työ**. Kirjoita työn tunnus muistiin.
 1. Valitse **Varastohallinta \> Pakkaus ja konttiinpakkaus \> Lähtevän lajittelupaikan määritykset**.
 1. Vasemmassa sarakkeessa voi tarkastella kullekin lähetykselle luotua lähtevää lajittelupaikkaa.
 1. Voit tarkastella **Lajittelupaikan ehdot** -pikavälilehdessä kyseisen paikan lähetystunnusta.
@@ -459,19 +460,19 @@ Yksi työtunnus on luotu tuomaan varasto keräilysijainneista lajittelusijaintii
 
 1. Kirjaudu mobiilisovellukseen työntekijänä varastossa *62*.
 1. Valitse päävalikossa **Lähtevä**.
-1. Valitse **Lähtevä**-valikossa **Myynnin keräily**.
-1. Valitse **Tunnus**-kenttä ja anna sitten aallon käsittelystä saatu työtunnus.
+1. Valitse **Lähtevä** -valikossa **Myynnin keräily**.
+1. Valitse **Tunnus** -kenttä ja anna sitten aallon käsittelystä saatu työtunnus.
 1. Vahvista kirjaus.
 
     Seuraavaksi sinua pyydetään antamaan kohderekisterikilpi (RK). Huomaa, että myyntilauksen 1 rivi 1 ilmaisee, mitä on kerättävä ja lisättävä kohderekisterikilpeen. Näkyvissä on nimiketunnus, määrä, nimikkeen kuvaus ja keräilysijainti.
 
-1. Anna kohderekisterikilpi **Kohde-RK**-kenttään.
+1. Anna kohderekisterikilpi **Kohde-RK** -kenttään.
 
     Voit kerätä kaikki käsitellystä aallosta luodut rivit samaan kohderekisterikilpeen.
 
 1. Vahvista kirjaus.
 
-    Mobiilisovelluksessa on nyt sarja **Keräily**-sivuja, jotka ohjaavat keräilysijaintiin sekä kerättävään nimikkeeseen ja keräysmäärään. Kun kerätty nimike on rekisterikilpeen, keräilytyö vahvistetaan. Viimeinen sivu on työ, jolla kerätyt nimikkeet asetetaan lajittelusijaintiin.
+    Mobiilisovelluksessa on nyt sarja **Keräily** -sivuja, jotka ohjaavat keräilysijaintiin sekä kerättävään nimikkeeseen ja keräysmäärään. Kun kerätty nimike on rekisterikilpeen, keräilytyö vahvistetaan. Viimeinen sivu on työ, jolla kerätyt nimikkeet asetetaan lajittelusijaintiin.
 
 1. Vahvista ensimmäinen keräilytyö.
 1. Seuraava keräilytyö näytetään. Vahvista keräily.
@@ -488,12 +489,12 @@ Nyt kun varasto on asetettu lajittelusijaintiin, se on lajiteltava oikeaan lajit
 
 1. Kirjaudu mobiilisovellukseen.
 1. Valitse päävalikossa **Lähtevä**.
-1. Aloita nimikkeiden lajittelu valitsemalla **Lähtevät**-valikossa **Lajittelu**.
-1. Anna **Rekisterikilpi/kontti**-kentässä valitun myyntitilaustyön kohderekisterikilpi.
+1. Aloita nimikkeiden lajittelu valitsemalla **Lähtevät** -valikossa **Lajittelu**.
+1. Anna **Rekisterikilpi/kontti** -kentässä valitun myyntitilaustyön kohderekisterikilpi.
 1. Vahvista kirjaus.
 1. Anna ensimmäinen lajiteltava nimiketunnus.
 1. Järjestelmä määrittää ensimmäisen näytettävän lajittelupaikan. Vahvista lajittelupaikka.
-1. Sinua pyydetään määrittämään rekisterikilpi lajittelupaikkaan. Valitse **Rekisterikilpi**-kenttä, anna rekisterinumero ja vahvista merkintä sitten.
+1. Sinua pyydetään määrittämään rekisterikilpi lajittelupaikkaan. Valitse **Rekisterikilpi** -kenttä, anna rekisterinumero ja vahvista merkintä sitten.
 
     Koska lajittelupaikka liittyy lähetyksen tunnukseen, kerätyt nimikkeet lajitellaan lähtevää lähetystä ja myyntitilausta koskevaan rekisterikilpeen.
 
@@ -513,12 +514,12 @@ Nyt kun varasto on asetettu lajittelusijaintiin, se on lajiteltava oikeaan lajit
     - Jos paikat on suljettu automaattisesti, tuo suljetut paikat näkyviin valitsemalla **Näytä suljetut**.
     - Huomaa, että lajittelupaikkatapahtumat ovat näkyvissä. Paikassa käsitelty nimi ja määrä näytetään.
 
-    Kun määrität lähtevien lajittelumallin, **Sulje lajittelupaikka automaattisesti** -asetukseksi valitaan *Kyllä*. Tämän vuoksi paikka suljetaan automaattisesti, kun viimeinen odotettu varasto on asetettu siihen. Lajittelupaikkojen tila on **Suljettu** ja työ on luotu siirtämään lajiteltu varasto *Lastausovi*-sijaintiin.
+    Kun määrität lähtevien lajittelumallin, **Sulje lajittelupaikka automaattisesti** -asetukseksi valitaan *Kyllä*. Tämän vuoksi paikka suljetaan automaattisesti, kun viimeinen odotettu varasto on asetettu siihen. Lajittelupaikkojen tila on **Suljettu** ja työ on luotu siirtämään lajiteltu varasto *Lastausovi* -sijaintiin.
 
 1. Viimeistely lajiteltu varaston keräilytyö siirtämällä varasto lähetyssijaintiin. Kun varasto on valmis, tee sen lähetysvahvistus.
 
 > [!NOTE]
-> Lajitellun varaston keräilytyön käsittelemisen onnistuminen edellyttää, että mobiililaitteen valikkovaihtoehtoa, jossa työn luokkatunnuksen **Työtilauksen tyyppi** -kentäksi on valittu *Lajiteltu varaston keräily*, käytetään varastonsiirto- ja lastausprosessissa.
+> Lajitellun varaston keräilytyön käsittelemisen onnistuminen edellyttää, että mobiililaitteen valikkovaihtoehtoa, jossa työn luokkatunnuksen **Työtilauksen tyyppi** -kentäksi on valittu *Lajiteltu varaston keräily* , käytetään varastonsiirto- ja lastausprosessissa.
 
 ### <a name="manually-close-a-position-optional"></a>Paikan sulkeminen manuaalisesti (valinnainen)
 

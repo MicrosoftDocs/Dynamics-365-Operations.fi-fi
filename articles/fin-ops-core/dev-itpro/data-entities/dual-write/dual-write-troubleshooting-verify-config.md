@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2f2ba2564ad3e8e444e27fcc0c586ddf252afabd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 2ddac76871a3ac574a1edcb5446be6c64e5e4682
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172642"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997227"
 ---
 # <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-common-data-service"></a>Varmista, että kaksoiskirjoitus on määritetty Finance and Operations -sovelluksissa ja Common Data Servicessä
 
@@ -38,11 +37,11 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 
 Jos haluat määrittää, näytetäänkö kaksoiskirjoitusvirheet, kun yrität tallentaa tietoja päivitystä varten, varmista ensin, että kaksoiskirjoitus on määritetty.
 
-+ Jos sinulla on Finance and Operations -sovelluksen järjestelmänvalvojan oikeudet, siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus**-ruutu. Jos linkitettyjen ympäristöjen tiedot ja käytössä olevan yksikkökarttojen luettelo näytetään, kaksoiskirjoitus määritetään.
++ Jos sinulla on Finance and Operations -sovelluksen järjestelmänvalvojan oikeudet, siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus** -ruutu. Jos linkitettyjen ympäristöjen tiedot ja käytössä olevan yksikkökarttojen luettelo näytetään, kaksoiskirjoitus määritetään.
 
     ![Finance and Operations -sovellusyhteyden tarkistaminen, kun sinulla on järjestelmänvalvojan oikeudet](media/verify_fin_ops_1.png)
 
-+ Jos sinulla ei ole järjestelmänvalvojan oikeuksia, näyttöön tulee virhesanoma *Tietoja ei voi kirjoittaa yksikköön \<yksikön nimi\>*. Seuraavassa esimerkissä asiakastietuetta ei voi luoda Finance and Operations -sovelluksessa, koska kaksoiskirjoitus on määritetty, mutta asiakasryhmä- ja maksujen viitetietoja ei ole Common Data Service -järjestelmässä.
++ Jos sinulla ei ole järjestelmänvalvojan oikeuksia, näyttöön avautuu virhesanoma *Tietoja ei voi kirjoittaa yksikköön \<entity name\>*. Seuraavassa esimerkissä asiakastietuetta ei voi luoda Finance and Operations -sovelluksessa, koska kaksoiskirjoitus on määritetty, mutta asiakasryhmä- ja maksujen viitetietoja ei ole Common Data Service -järjestelmässä.
 
     ![Finance and Operations -sovellusyhteyden tarkistaminen, kun sinulla ei ole järjestelmänvalvojan oikeuksia](media/verify_fin_ops_2.png)
 
@@ -50,7 +49,7 @@ Lisätietoja ongelmien korjaamisesta, kun tietoja luodaan Finance and Operations
 
 ## <a name="verify-that-dual-write-is-configured-in-common-data-service"></a>Varmista, että kaksoiskirjoitus on määritetty Common Data Service -sovelluksissa
 
-Kun luot tietoja, voit määrittää kaksoiskirjoituksen, jos Common Data Service -lomakkeen sivulla näkyy **Yritys**-kenttä.
+Kun luot tietoja, voit määrittää kaksoiskirjoituksen, jos Common Data Service -lomakkeen sivulla näkyy **Yritys** -kenttä.
 
 ![Common Data Service -yhteyden tarkistaminen](media/verify_cds.png)
 

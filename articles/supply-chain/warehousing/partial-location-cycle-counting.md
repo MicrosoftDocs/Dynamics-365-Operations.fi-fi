@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 5d69b1e9444785058a2b3e62b9a76cb6e70abf03
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760004"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017595"
 ---
 # <a name="partial-location-cycle-counting"></a>Sijainnin osittainen inventointi
 
@@ -45,13 +45,13 @@ Jos liität inventointisuunnitelmat työmalleihin **Työrivin tauot** -asetuksel
 
 Ennen osittaisen inventointityön käsittelyä mobiililaitteen valikosta on valittava ainakin **Näytä nimiketunnus** inventointiasetusten osana. Varastotyöntekijää pyydetään kirjaamaan vain inventointiriveihin liittyvät inventointitiedot (nimiketunnukset ja tuotedimensiot). Muu käytettävissä oleva varasto ohitetaan tässä inventointiprosessissa. 
 
-Osittaisessa inventointiprosessissa **edellisen inventoinnin** päivämäärää/aikaa ei päivitetä sijainnille, vaikka kaikki tietyssä sijainnissa olevat nimikkeet inventoidaan. Osittaisessa inventoinnissa ei oteta huomioon **Inventoinnin välissä olevat päivät** -arvoa **Inventointisuunnitelmat**-sivulla. Osittainan inventointi ei tue samanaikaista useiden nimikkeiden inventointia samassa sijainnissa. Osittainen inventointitoiminto voi aiheuttaa nimikkeen inventoinnin suorittamisen useita kertoja samassa sijainnissa, jos **Prosessin inventointisuunnitelma** suoritetaan. Voit välttää tämän määrittämällä suodattimet **Valitse sijainnit** -kentässä.
+Osittaisessa inventointiprosessissa **edellisen inventoinnin** päivämäärää/aikaa ei päivitetä sijainnille, vaikka kaikki tietyssä sijainnissa olevat nimikkeet inventoidaan. Osittaisessa inventoinnissa ei oteta huomioon **Inventoinnin välissä olevat päivät** -arvoa **Inventointisuunnitelmat** -sivulla. Osittainan inventointi ei tue samanaikaista useiden nimikkeiden inventointia samassa sijainnissa. Osittainen inventointitoiminto voi aiheuttaa nimikkeen inventoinnin suorittamisen useita kertoja samassa sijainnissa, jos **Prosessin inventointisuunnitelma** suoritetaan. Voit välttää tämän määrittämällä suodattimet **Valitse sijainnit** -kentässä.
 
 ## <a name="example"></a>Esimerkki
 Tässä esimerkissä vain nimiketunnus A0001 on inventoitava varastossa 61.
 
 1.  Inventoinnille luodaan uusi työmalli. **Työrivin tauot** -asetus ryhmittelee inventointityörivit nimiketunnuksen mukaan. Tämän vuoksi luodussa inventointityössä on nimiketunnuskohtaiset rivit. Voit ryhmittää rivit myös tuotevarianttitunnuksen mukaan.
-2.  Luodaan uusi inventointisuunnitelma, joka viittaa juuri luotuun työmalliin. Inventointisuunnitelma sisältää kaikki varaston 61 sijainnit (**Valitse sijainnit** -kysely), joissa on varastossa nimiketunnusta A0001. Tiettyjen tuotteiden valinta on määritetty **Inventoinnin tuotevalinnat** -osassa.
+2.  Luodaan uusi inventointisuunnitelma, joka viittaa juuri luotuun työmalliin. Inventointisuunnitelma sisältää kaikki varaston 61 sijainnit ( **Valitse sijainnit** -kysely), joissa on varastossa nimiketunnusta A0001. Tiettyjen tuotteiden valinta on määritetty **Inventoinnin tuotevalinnat** -osassa.
 3.  Voit valita inventointisuunnitelman tuotteet valitsemalla **Tyhjät sijainnit** -kentän arvoksi **Älä sisällytä tyhjiä**. Kun inventointisuunnitelma käsitellään, luodaan nimiketunnuksen A0001 osittainen inventointityö. Varsinainen inventointiprosessi voidaan suorittaa käyttämällä ohjatun inventoinnin mobiililaitteen valikkovaihtoehtoa.
 
 

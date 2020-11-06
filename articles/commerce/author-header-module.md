@@ -3,7 +3,7 @@ title: Ylätunnistemoduuli
 description: Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 99457b2c98eae0ddd898f852630d690140a5a4c5
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817007"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055447"
 ---
 # <a name="header-module"></a>Ylätunnistemoduuli
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 
@@ -35,7 +34,7 @@ Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnistei
 
 Dynamics 365 Commercen sivun otsikko on määritetty sivun osaksi, joka sisältää otsikon, kampanjabannerin ja evästeiden hyväksyntämoduulit. 
 
-Ylätunnistemoduuli sisältää sivuston logon, linkit siirtymishierarkiaan, linkit muille sivuston sivuille, ostoskorim kuvakkeen moduulin, toivelistasymbolin, kirjautumisvaihtoehdot ja hakupalkin. Ylätunnistemoduuli optimoidaan automaattisesti sitä laitetta varten, jolla sivustoa tarkastellaan (eli pöytätietokonetta tai mobiililaitetta varten). Esimerkiksi mobiililaitteessa siirtymispalkki tiivistetään **Valikko**-painikkeeksi (jossa on useita *viivoja*).
+Ylätunnistemoduuli sisältää sivuston logon, linkit siirtymishierarkiaan, linkit muille sivuston sivuille, ostoskorim kuvakkeen moduulin, toivelistasymbolin, kirjautumisvaihtoehdot ja hakupalkin. Ylätunnistemoduuli optimoidaan automaattisesti sitä laitetta varten, jolla sivustoa tarkastellaan (eli pöytätietokonetta tai mobiililaitetta varten). Esimerkiksi mobiililaitteessa siirtymispalkki tiivistetään **Valikko** -painikkeeksi (jossa on useita *viivoja* ).
 
 Seuraavassa kuvassa on esimerkki otsikkomoduulista kotisivulla.
 
@@ -43,9 +42,9 @@ Seuraavassa kuvassa on esimerkki otsikkomoduulista kotisivulla.
 
 ## <a name="properties-of-a-header-module"></a>Ylätunnistemoduulin ominaisuudet
 
-Ylätunnistemoduuli tukee **Logon kuva**-, **Logon linkki**- ja **Oman tilin linkit** -ominaisuuksia. 
+Ylätunnistemoduuli tukee **Logon kuva** -, **Logon linkki** - ja **Oman tilin linkit** -ominaisuuksia. 
 
-**Logon kuva**- ja **Logon linkki** -ominaisuuksilla määritetään sivulla oleva logo. Lisätietoja on kohdassa [Logon lisääminen](add-logo.md). 
+**Logon kuva** - ja **Logon linkki** -ominaisuuksilla määritetään sivulla oleva logo. Lisätietoja on kohdassa [Logon lisääminen](add-logo.md). 
 
 **Oman tilin linkit** -ominaisuudella voidaan määrittää ne tilisivut, joiden pikalinkit sivuston omistaja haluaa näyttää ylätunnisteessa.
 
@@ -59,38 +58,47 @@ Seuraavia moduuleja voi käyttää ylätunnistemoduulissa:
 
 - **Ostoskorikuvake** – Ostoskorikuvakemoduuli edustaa ostoskorin symbolia, joka ilmaisee, kuinka monta nimikettä ostoskorissa on tiettynä ajankohtana. Lisätietoja on kohdassa [Ostoskorikuvakemoduuli](cart-icon-module.md).
 
+- **Toimipaikan valitsin** – Toimipaikan valitsinmoduulissa käyttäjät voivat selata esimääritettyjä toimipaikkoja markkina-alueen, alueiden ja kielialueiden perusteella. Lisätietoja on kohdassa [Toimipaikan valitsinmoduuli](site-selector.md).
+
+- **Myymälän valitsin** – Myymälän valitsinmoduuli voidaan sisällyttää otsikon myymälän valitsinpaikkaan. Sen avulla käyttäjät voivat selata ja etsiä lähellä olevia myymälöitä. Käyttäjät voivat määrittää myös ensisijaisen myymälän. Kyseinen myymälä näytetään sitten otsikossa. Jos myymälän valitsinmoduuli sisältyy otsikkomoduuliin, sen **Tila** -ominaisuudeksi on määritettävä **Etsi myymälät**. Lisätietoja on kohdassa [Myymälän valitsinmoduuli](store-selector.md).
+
+> [!NOTE]
+> - Otsikkomoduulien kortin kuvakemoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.11.
+> - Otsikkomoduulien toimipaikan valitsinmoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.14.
+> - Otsikkomoduulien myymälän valitsinmoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.15.
+
 ## <a name="create-a-header-fragment-for-a-page"></a>Sivun otsikko-osan luominen
 
 Voit luoda otsikko-osan seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi osa** -valintaikkunassa **Kontti**-moduuli. Syötä osan nimi ja valitse **OK**.
-1. Valitse **Oletussäilö**-paikka ja määritä sitten Ominaisuudet-ruudussa oikealla puolella oleva **Leveys**-ominaisuuden arvoksi **Täytä näyttö**.
-1. Valitse kolme pistettä (**...**) **Oletuskontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Evästeiden hyväksyntä**-, **Otsikko**- ja **Kampanjabanneri**-moduulit ja valitse sitten **OK**.
-1. Valitse **Kampanjabanneri**-moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
-1. Lisää **Sanoma**-valintaruutuun teksti ja linkit mainossisältöä varten ja valitse **OK**.
+1. Valitse **Uusi osa** -valintaikkunassa **Kontti** -moduuli. Syötä osan nimi ja valitse **OK**.
+1. Valitse **Oletussäilö** -paikka ja määritä sitten Ominaisuudet-ruudussa oikealla puolella oleva **Leveys** -ominaisuuden arvoksi **Täytä näyttö**.
+1. Valitse kolme pistettä ( **...** ) **Oletuskontti** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Evästeiden hyväksyntä** -, **Otsikko** - ja **Kampanjabanneri** -moduulit ja valitse sitten **OK**.
+1. Valitse **Kampanjabanneri** -moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
+1. Lisää **Sanoma** -valintaruutuun teksti ja linkit mainossisältöä varten ja valitse **OK**.
 1. Lisää **evästeiden hyväksyntämoduulin** ominaisuusruudussa teksti ja muokkaa sitä. Linkitä teksti sivuston tietosuojakäytännön sivulle.
-1. Valitse otsikkomoduulissa **Siirtymisvalikko**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Siirtymisvalikko**-moduuli ja valitse sitten **OK**.
+1. Valitse otsikkomoduulissa **Siirtymisvalikko** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Siirtymisvalikko** -moduuli ja valitse sitten **OK**.
 1. Valitse siirtymisvalikkomoduulin ominaisuusruudun **Siirtymisvalikon lähde** -kohdassa **Retail Server**.
 1. Valitse siirtymisvalikkomoduulin ominaisuusruudun **Staattiset valikon vaihtoehdot** -kohdassa **Lisää valikon vaihtoehto** ja valitse sitten **Valikon vaihtoehto**. 
 1. Syötä **Valikon vaihtoehto** -valintaruudun **Valikon vaihtoehdon teksti** -kohtaan Yhteyshenkilö.
 1. Valitse **Valikon vaihtoehto** -valintaruudun **Valikon vaihtoehdon linkin kohde** -kohdassa **Lisää linkki**.
 1. Valitse **Lisää linkki** -valintaikkunassa sivuston yhteyshenkilösivun URL-osoite ja valitse sitten **OK**.  
 1. Valitse **Valikon vaihtoehto** -valintaikkunassa **OK**.
-1. Valitse otsikkomoduulissa **Haku**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Haku**-moduuli ja valitse sitten **OK**.
+1. Valitse otsikkomoduulissa **Haku** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Haku** -moduuli ja valitse sitten **OK**.
 1. Määritä hakumoduulin tarvittavat ominaisuudet ominaisuusruudussa.
-1. Valitse otsikkomoduulissa **Ostoskorikuvake**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Ostoskorikuvake**-moduuli ja valitse sitten **OK**.
+1. Valitse otsikkomoduulissa **Ostoskorikuvake** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Ostoskorikuvake** -moduuli ja valitse sitten **OK**.
 1. Määritä ostoskorikuvakemoduulin tarvittavat ominaisuudet ominaisuusruudussa. Jos haluat, että ostoskorikuvake näyttää ostoskorin yhteenvedon (joka tunnetaan myös nimellä pienoiskärry), kun käyttäjä vie osoittimen sen päälle, valitse **Näytä pienoiskärry**.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 
 Voit varmistaa, että ylätunniste näkyy jokaisella sivulla, noudattamalla näitä ohjeita jokaisen sivustolle luodun sivumallin kohdalla.
 
-1. Lisää **Oletussivu**-moduulin **Otsikko**-paikkaan alatunnistemoduulissa luomasi alatunnisteosa.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Lisää **Oletussivu** -moduulin **Otsikko** -paikkaan alatunnistemoduulissa luomasi alatunnisteosa.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -107,3 +115,7 @@ Voit varmistaa, että ylätunniste näkyy jokaisella sivulla, noudattamalla näi
 [Evästeiden hyväksyntä](cookie-consent-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+[Toimipaikan valitsinmoduuli](site-selector.md)
+
+[Myymälän valitsinmoduuli](store-selector.md)

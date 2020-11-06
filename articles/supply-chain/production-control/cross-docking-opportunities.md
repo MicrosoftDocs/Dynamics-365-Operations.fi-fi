@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCrossDockOpportunityPolicy
+ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c47cb24e8fb14a46ee663ab9cf75679acdb6384
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211560"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016836"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking tuotantotilauksista lähtevien laituriin
 
@@ -90,22 +90,22 @@ Cross docking -käytäntö määrittää myös siirtotilauksen kysynnän prioris
 
 ### <a name="cross-docking-demand-requires-location"></a>Cross docking -tarve vaatii sijainnin
 
-Voit määrittää cross docking -käytännössä ehdon, jonka mukaan siirtotilauksiin on määritettävä sijainti, jota ilman sitä ei voi ottaa mukaan cross docking -prosessiin. Tämä ehto määritetään **Cross docking -tarve vaatii sijainnin** -kentässä. Kuormaan liitettyä ajoitetun tapaamisen sijaintia käytetään niiden tavaroiden lopullisena sijaintia, joissa käytetään cross dockingia. **Määritä**-työtilaustyypin **siirtovarasto-oton** sijaintidirektiivi määrittää niiden tavaroiden lopulllisen sijainnin, joissa käytetään cross dockingia. **Cross docking -tarve vaatii sijainnin** -kentän määrittäminen voi olla hyödyllistä skenaariossa, jossa valmiissa tavaroissa käytetään cross dockingia vain, jossa perävaunu on määritetty lastausovelle. Tässä skenaariossa tavarat siirretään suoraan tuotantolinjalta perävaunuun. Kun perävaunu on määritetty lastausovelle, käyttäjä määrittää sijainnin ajoitettuun tapaamiseen, jolloin sijainti tulee myös käytettäväksi cross dockingissa. Seuraavissa osissa käsitellään kaksi esimerkkiä.
+Voit määrittää cross docking -käytännössä ehdon, jonka mukaan siirtotilauksiin on määritettävä sijainti, jota ilman sitä ei voi ottaa mukaan cross docking -prosessiin. Tämä ehto määritetään **Cross docking -tarve vaatii sijainnin** -kentässä. Kuormaan liitettyä ajoitetun tapaamisen sijaintia käytetään niiden tavaroiden lopullisena sijaintia, joissa käytetään cross dockingia. **Määritä** -työtilaustyypin **siirtovarasto-oton** sijaintidirektiivi määrittää niiden tavaroiden lopulllisen sijainnin, joissa käytetään cross dockingia. **Cross docking -tarve vaatii sijainnin** -kentän määrittäminen voi olla hyödyllistä skenaariossa, jossa valmiissa tavaroissa käytetään cross dockingia vain, jossa perävaunu on määritetty lastausovelle. Tässä skenaariossa tavarat siirretään suoraan tuotantolinjalta perävaunuun. Kun perävaunu on määritetty lastausovelle, käyttäjä määrittää sijainnin ajoitettuun tapaamiseen, jolloin sijainti tulee myös käytettäväksi cross dockingissa. Seuraavissa osissa käsitellään kaksi esimerkkiä.
 
 #### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>Skenaario 1 – Cross docking tuotannosta siirtotilauksiin
 
 Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisijaintiin, jossa se lastataan kuorma-autoon ja siirretään jakelukeskukseen. Käytä yrityksen USMF:ää.
 
-1.  Ota käyttöön uusi cross docking -numerosarja. Siirry **Numerosarjat**-sivulle ja valitse **Luo**-painike. Ohjattu toiminto opastaa prosessin vaiheissa.
+1.  Ota käyttöön uusi cross docking -numerosarja. Siirry **Numerosarjat** -sivulle ja valitse **Luo** -painike. Ohjattu toiminto opastaa prosessin vaiheissa.
 2.  Luo cross docking -käytäntö. Siirry **Cross docking -käytäntö** -sivulle ja luo uusi **Cross docking siirtotilaukseen** -niminen käytäntö. Huomaa, että ainoa valittava työtilaustyyppi on **Siirtovarasto-otto** ja että ainoa käytettävissä oleva cross docking -strategia on **Päivämäärä ja kellonaika**.
-3.  Luo työkäytäntö. Siirry **Työkäytännöt**-sivulle ja luo uusi **Cross dock L0101** -niminen työkäytäntö.
+3.  Luo työkäytäntö. Siirry **Työkäytännöt** -sivulle ja luo uusi **Cross dock L0101** -niminen työkäytäntö.
 4.  Määritä kuormat siten, että ne luodaan siirtotilauksille automaattisesti. Määritä varastoparametreissa kuormat siten, että ne luodaan automaattisesti siirtotilauksia luotaessa. Kuorma on välttämätön, jotta cross dockingia voidan käyttää siirtotilauksessa.
-5.  Määritä nimikkeiden kuormamääritys. Siirry **Nimikkeiden kuormamääritys** -sivulle ja määritä **CarAudio**-nimikeryhmälle vakiokuormamalli. Tämä yhdistämismääritys lisätään automaattisesti kuorman kuormamalliin siirtotilausta luotaessa.
+5.  Määritä nimikkeiden kuormamääritys. Siirry **Nimikkeiden kuormamääritys** -sivulle ja määritä **CarAudio** -nimikeryhmälle vakiokuormamalli. Tämä yhdistämismääritys lisätään automaattisesti kuorman kuormamalliin siirtotilausta luotaessa.
 6.  Luo siirtotilaus. Luo nimiketunnuksen L0101 siirtotilaus. Määrä = 20.
-7.  Vapauta siirtotilaus kuormasuunnittelun työtilassa. Valitse **Lähetys**-välilehdessä kuormasuunnittelun työtilan valikkovaihtoehto. Valitse sitten kuormarivin **Vapauta**-valikossa **Vapauta varastoon**. Siirtotilauksessa on nyt tyypin **Siirtovarasto-otto** avoin aaltorivi.
-8.  Luo tuotantotilaus. Siirry **Tuotantotilaus**-luettelosivulle ja luo tuotteen L0101 tuotantotilaus. Määrä = 20. Arvioi ja aloita tuotantotilaus. Huomaa, että **Kirjaa keräysluettelo nyt** -kentän arvo on edelleen **Ei**.
-9.  Ilmoita valmiiksi mobiililaitteessa. Siirry mobiililaiteportaaliin ja valitse valikossa **Ilmoita valmiiksi ja pane pois**. Ilmoita nyt L0101 valmiiksi kämmenlaitteessa. Määrä = 10. Huomaa, että laittosijainti on **LASTAUSOVI**. Tämä sijainti löytyy **Määritä**-työtilaustyypin **Siirtovarasto-otto**-sijaintidirektiivistä. Huomaa myös, että **Siirtovarasto-otto**-tyypin työ on luotu ja valmis. Tarkista työ siirtymällä siirtotilaustyön tietoihin.
-10. Raportoi nyt vielä 10 kappaletta mobiililaitteesta. Huomaa, että asetettu sijainti on jälleen **LASTAUSOVI**. Huomaa myös, että 10 kappaleen uusi **Siirtovarasto-otto**-tyyppinen työ on luotu.
+7.  Vapauta siirtotilaus kuormasuunnittelun työtilassa. Valitse **Lähetys** -välilehdessä kuormasuunnittelun työtilan valikkovaihtoehto. Valitse sitten kuormarivin **Vapauta** -valikossa **Vapauta varastoon**. Siirtotilauksessa on nyt tyypin **Siirtovarasto-otto** avoin aaltorivi.
+8.  Luo tuotantotilaus. Siirry **Tuotantotilaus** -luettelosivulle ja luo tuotteen L0101 tuotantotilaus. Määrä = 20. Arvioi ja aloita tuotantotilaus. Huomaa, että **Kirjaa keräysluettelo nyt** -kentän arvo on edelleen **Ei**.
+9.  Ilmoita valmiiksi mobiililaitteessa. Siirry mobiililaiteportaaliin ja valitse valikossa **Ilmoita valmiiksi ja pane pois**. Ilmoita nyt L0101 valmiiksi kämmenlaitteessa. Määrä = 10. Huomaa, että laittosijainti on **LASTAUSOVI**. Tämä sijainti löytyy **Määritä** -työtilaustyypin **Siirtovarasto-otto** -sijaintidirektiivistä. Huomaa myös, että **Siirtovarasto-otto** -tyypin työ on luotu ja valmis. Tarkista työ siirtymällä siirtotilaustyön tietoihin.
+10. Raportoi nyt vielä 10 kappaletta mobiililaitteesta. Huomaa, että asetettu sijainti on jälleen **LASTAUSOVI**. Huomaa myös, että 10 kappaleen uusi **Siirtovarasto-otto** -tyyppinen työ on luotu.
 11. Yritä nyt aloittaa vielä 20 kappaletta tuotantotilauksessa ja yritä sitten raportoida 20 kappaletta valmiiksi kämmenlaitteessa. Tällä kertaa sijaintia **LP-001** ehdotetaan poispanosijainniksi. Tämä sijainti löytyy **Valmiiden tuotteiden poispano** -sijaintidirektiivistä. Tätä sijaintidirektiiviä käytetään, koska cross docking -mahdollisuutta ei ole. Kaksi cross docking -tehtävää toteutti LP-001-siirtotilauksen kokonaisuudessaan vaiheessa 9 ja 10. Huomaa, että **Valmiiden tuotteiden poispano** -tyyppinen työ luotiin ja käsiteltiin.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Skenaario 2 – Cross docking tuotannosta siirtotuotantotilaukseen sekä ajoitettu tapaaminen
@@ -115,7 +115,7 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 1.  Muuta cross docking -käytäntöä. Muuta skenaariossa 1 luomaasi cross docking -käytäntöä valitsemalla **Cross docking -tarve vaatii sijainnin** -valintaruudun.
 2.  Uuden uusi siirtotilaus.
 3.  Avaa **Kuormasuunnittelun työtila**.
-4.  Siirry kuormasuunnittelun työtilassa **Kuormat**-osioon ja luo uusi ajoitettu tapaaminen valitsemalla **Kuljetus**-valikossa **Ajoita tapaaminen**. Huomaa, että ajoitettu tapaaminen viittaa **Tilausnumero**-kentän siirtotilaukseen. Voit määrittää tapaamisen päivämäärän ja ajan **Suunniteltu aloituspäivä- ja aika sijainnissa** -kentässä. Päivämäärää ja aikaa käytetään, kun cross docking -tarve priorisoidaan cross docking -prosessissa. Tässä kentässä määritetty päivämäärä ja aika päivittää vastaavan kuorman **Kuorman ajoitettu lähetyspäivä ja -aika** -kentän. **Lähetyksen erittely**-pikavälilehdellä oleva sijainti määrittää sijainnin, johon siirtotilaus lähetetään.
+4.  Siirry kuormasuunnittelun työtilassa **Kuormat** -osioon ja luo uusi ajoitettu tapaaminen valitsemalla **Kuljetus** -valikossa **Ajoita tapaaminen**. Huomaa, että ajoitettu tapaaminen viittaa **Tilausnumero** -kentän siirtotilaukseen. Voit määrittää tapaamisen päivämäärän ja ajan **Suunniteltu aloituspäivä- ja aika sijainnissa** -kentässä. Päivämäärää ja aikaa käytetään, kun cross docking -tarve priorisoidaan cross docking -prosessissa. Tässä kentässä määritetty päivämäärä ja aika päivittää vastaavan kuorman **Kuorman ajoitettu lähetyspäivä ja -aika** -kentän. **Lähetyksen erittely** -pikavälilehdellä oleva sijainti määrittää sijainnin, johon siirtotilaus lähetetään.
 5.  Tee vapautus varastoon **Kuormasuunnittelun työtila** -kohdassa.
 6.  Luo tuotantotilaus nimiketunnukselle **L0101**. Määritä sen tilaksi **Aloitettu** ja määräksi 20.
 7.  Ilmoita valmiiksi mobiililaitteessa.

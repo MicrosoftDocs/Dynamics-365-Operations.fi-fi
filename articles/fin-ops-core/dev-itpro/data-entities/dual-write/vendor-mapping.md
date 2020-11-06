@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173105"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997644"
 ---
 # <a name="integrated-vendor-master"></a>Integroidut toimittajan päätiedot
 
@@ -32,17 +31,17 @@ ms.locfileid: "3173105"
 
 
 
-Termi *toimittaja* viittaa toimittajaorganisaatioon tai elinkeinonharjoittajaan, joka toimittaa tavaroita tai palveluja yrityksille. Vaikka *toimittaja* on vakiintunut käsite Microsoft Dynamics 365 Supply Chain Management -sovelluksessa, toimittajan konseptia ei ole muissa mallipohjaisissa sovelluksissa Dynamics 365:ssa. Voit kuitenkin ylikuormittaa **Tili/yhteyshenkilö**-kohteen toimittajatietojen tallentamista varten. Integroitu toimittajan perustyyli sisältää eksplisiittisen toimittajan konseptin Dynamics 365 -malleissa, joissa käytetään mallipohjaisia sovelluksia. Voit käyttää uuden toimittajan rakennetta tai tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-yksikköön. Kaksoiskirjoitus tukee molempia lähestymistapoja.
+Termi *toimittaja* viittaa toimittajaorganisaatioon tai elinkeinonharjoittajaan, joka toimittaa tavaroita tai palveluja yrityksille. Vaikka *toimittaja* on vakiintunut käsite Microsoft Dynamics 365 Supply Chain Management -sovelluksessa, toimittajan konseptia ei ole muissa mallipohjaisissa sovelluksissa Dynamics 365:ssa. Voit kuitenkin ylikuormittaa **Tili/yhteyshenkilö** -kohteen toimittajatietojen tallentamista varten. Integroitu toimittajan perustyyli sisältää eksplisiittisen toimittajan konseptin Dynamics 365 -malleissa, joissa käytetään mallipohjaisia sovelluksia. Voit käyttää uuden toimittajan rakennetta tai tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö** -yksikköön. Kaksoiskirjoitus tukee molempia lähestymistapoja.
 
 Molemmissa tapauksessa toimittajatiedot on integroitu Dynamics 365 Supply Chain Managementiin, Dynamics 365 Salesiin, Dynamics 365 Field Serviceen ja Power Apps -portaaliin. Toimitusketjun hallinnassa tiedot ovat käytettävissä työnkuluissa, kuten ostoehdotuksissa ja ostotilauksissa.
 
 ## <a name="vendor-data-flow"></a>Toimittajatietojen virta
 
-Jos et halua tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-yksikköön Common Data Servicessä, voit käyttää uuden toimittajan rakennetta.
+Jos et halua tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö** -yksikköön Common Data Servicessä, voit käyttää uuden toimittajan rakennetta.
 
 ![Toimittajatietojen virta](media/dual-write-vendor-data-flow.png)
 
-Jos haluat edelleen tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-yksikköön, voit käyttää laajennettua toimittajan rakennetta. Jos haluat käyttää laajennettua toimittajan rakennetta, sinun on konfiguroitava toimittajan työnkulut kaksoiskirjoituksen ratkaisupaketissa. Lisätietoja on kohdassa [Toimittajan mallien välillä siirtyminen](vendor-switch.md).
+Jos haluat edelleen tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö** -yksikköön, voit käyttää laajennettua toimittajan rakennetta. Jos haluat käyttää laajennettua toimittajan rakennetta, sinun on konfiguroitava toimittajan työnkulut kaksoiskirjoituksen ratkaisupaketissa. Lisätietoja on kohdassa [Toimittajan mallien välillä siirtyminen](vendor-switch.md).
 
 ![Laajennettu toimittajatietojen virta](media/dual-write-vendor-detail.jpg)
 

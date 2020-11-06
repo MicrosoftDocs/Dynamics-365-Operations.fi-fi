@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4afa037ce9e446402128e4908a61ed32a30ebd59
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f2e1bcd220f0cd94fb1515e42fd3f8250c1c621
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986947"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016352"
 ---
 # <a name="shipment-consolidation-policies"></a>Lähetyksen konsolidoinnin käytännöt
 
@@ -33,13 +33,13 @@ Lähetyksen konsolidointikäytäntöjä käytetään seuraavissa toiminnoissa:
 - Myynti- tai siirtotilauksen **Vapauta varastoon** -komento
 - Oma **Vapauta varastoon** -sivu
 - **Vapauta varastoon** -komento **Kuormasuunnittelun työtila** -sivulla
-- Lähetysten manuaalinen konsolidointi **Konsolidoi lähetykset**- ja **Lähetyksen konsolidoinnin työtila** -sivuilla
+- Lähetysten manuaalinen konsolidointi **Konsolidoi lähetykset** - ja **Lähetyksen konsolidoinnin työtila** -sivuilla
 
 Ennen lähetyksen konsolidointikäytäntöjen käyttöönottoa konsolisointitoiminto oli varastotason asetus. Kaikkien saman varaston asiakkaiden kaikilla tilauksilla katsottiin olevan samat konsolidointitarpeet. Lähetyksen konsolidointikäytännöillä lisätään sellaisten skenaarioiden tuki, joissa eri organisaatioilla on erilaiset lähetyksen konsolidointitarpeet.
 
 Käytettävä lähetyksen konsolidointikäytäntö määritetään kyselyjen avulla, minkä jälkeen muokattavalla kenttäjoukolla määritetään kuormarivien määritys lähetystasolla. (Tämä malli muistuttaa aaltomallien käyttämää mallia.) Jokaiseen käytäntöön on lisäksi lisätty **Konsolidoi aiemmin luotujen lähetysten kanssa** -vaihtoehto. Kun tämä vaihtoehto on valittu, *Vapauta varastoon* -menettely etsii konsolidoitavat lähetykset tekemällä haun niissä aiemmin luoduissa lähetyksissä, jotka perustuvat samaan konsolidointikäytäntöön. Tässä tapauksessa järjestelmä valitsee aiemmin luodun lähetyksen tai kuorman sen sijaan, että se loisi uuden. Järjestelmä kuitenkin konsolidoi vain sellaiset aiemmin luodut lähetykset, joiden tila on *Avoin*. Konsolidointikohteina ei pidetä lähetyksiä, jotka kuuluvat aaltojulkaisuun ja joiden tila on vähintään *Vapautettu*.
 
-Kun lähetyksen konsolidointikäytännöt saadaan käyttöön, aiemmin **Varastot**-asetussivulla ollut **Konsolidoi lähetys varastoon vapautettaessa** -asetus piilotetaan. Uuteen lähetyksen konsolidointitoimintoon siirtymistä helpottaa **Lähetyksen konsolidointikäytännöt** -sivulla oleva toiminto, jonka luoma oletuskäytäntö sisältää automaattisesti nykyisten varastojen vanhan asetuksen. Kun tämä oletuskäytäntö on luotu, **Varastot**-asetussivun **Konsolidoi lähetys varastoon vapautettaessa** -asetusta ei oteta enää huomioon.
+Kun lähetyksen konsolidointikäytännöt saadaan käyttöön, aiemmin **Varastot** -asetussivulla ollut **Konsolidoi lähetys varastoon vapautettaessa** -asetus piilotetaan. Uuteen lähetyksen konsolidointitoimintoon siirtymistä helpottaa **Lähetyksen konsolidointikäytännöt** -sivulla oleva toiminto, jonka luoma oletuskäytäntö sisältää automaattisesti nykyisten varastojen vanhan asetuksen. Kun tämä oletuskäytäntö on luotu, **Varastot** -asetussivun **Konsolidoi lähetys varastoon vapautettaessa** -asetusta ei oteta enää huomioon.
 
 Voit korvata käytettävän konsolidointikäytännön manuaalisesti **Vapauta varastoon** -sivulla samalla tavoin kuin täyttämiskäytännöt korvataan.
 
@@ -55,11 +55,11 @@ Tässä osassa käsitellään sivuja, komentoja ja toimintoja, jotka ovat muuttu
 
 ### <a name="shipment-consolidation-policies-page"></a>Lähetyksen konsolidointikäytännöt -sivu
 
-Käytännöt erotellaan työtilauksen tyypin mukaan. **Myyntitilaukset**-tyyppi vastaa _Myyntitilaus_-lähetyksiä ja **Siirtotilaukset**-tyyppi vastaa _Siirtovarasto-otto_-lähetyksiä.
+Käytännöt erotellaan työtilauksen tyypin mukaan. **Myyntitilaukset** -tyyppi vastaa _Myyntitilaus_ -lähetyksiä ja **Siirtotilaukset** -tyyppi vastaa _Siirtovarasto-otto_ -lähetyksiä.
 
 Jokaisessa lähetyksen konsolidointikäytännössä on kysely, joka määrittää, miten sitä käytetään, ja järjestysnumero, joka määrittää suoritusjärjestyksen. Konsolidointia käytetään jokaisessa valittujen kenttien yksilöllisessä yhdistelmässä. Annettua lisäparametria käytetään konsolidointiin aiemmin luotujen (avoimien) lähetysten kanssa. Käytännöt arvioidaan ja niitä käytetään aina, kun uusi lähetys luodaan (ennen aallon käsittelyä).
 
-Jos pakollisia kenttiä puuttuu käytännöstä tai jos siinä on kiellettyjä kenttiä, käytäntö merkitään ei-kelpaavaksi **Valitut**-osassa. Pakollisten ja kiellettyjen kenttien luettelot ovat kiinteästi koodattuja, ja niitä voi laajentaa.
+Jos pakollisia kenttiä puuttuu käytännöstä tai jos siinä on kiellettyjä kenttiä, käytäntö merkitään ei-kelpaavaksi **Valitut** -osassa. Pakollisten ja kiellettyjen kenttien luettelot ovat kiinteästi koodattuja, ja niitä voi laajentaa.
 
 Seuraava luettelo sisältää pakolliset kentät. Koska lähetykset jaetaan aina näitten kenttien perusteella, sellaisia lähetyksiä ei voi ryhmittää, joissa näiden kenttien arvot poikkeavat toisistaan.
 
@@ -130,7 +130,7 @@ Seuraavassa taulukossa on yhteenveto siitä, miten lähetyksen konsolidointi toi
 | **Kuormasuunnittelun työtila** -sivun *Kuormien vapautus varastoon* -menettely käyttää oma erillistä koodia lähetysten ja aaltojen luontiin. | Lähetyksen konsolidointikäytäntöjä käytetään määrittämään, mitkä kentät on arvioitava konsolidointia varten. Lähetykset konsolidoidaan vain yhden kuorman sisällä. |
 | **Kaikki lähetykset** -sivulla voi valita ensin manuaalisesti **Konsolidoi lähetykset** ja sitten peruslähetyskohteen. Suodatin ehdottaa aiemmin luotuja lähetyksiä, joiden useiden avainkenttiä arvot ovat samat. | **Kaikki lähetykset** -sivulla voi valita ensin manuaalisesti **Konsolidoi lähetykset** ja sitten peruslähetyskohteen. Järjestelmä ehdottaa muita aiemmin luotuja lähetyksiä vertaamalla useiden sellaisten avainkenttien arvoja, jotka on määritetty soveltuville lähetyksen konsolidointikäytännöille. |
 | **Kaikki lähetykset** -sivun **Konsolidoi lähetykset** -komentoa voi käyttää vain samassa lähetyksessä. | **Lähetyksen konsolidoinnin työtila** -sivun avulla voi etsiä lähetyksiä, joiden tilana ei ole vielä lähetetty. Nämä lähetykset analysoidaan useiden lähetyksen konsolidointikäytännöissä määritettyjen avainkenttien perusteella. Kaikkia lähetyksiä, joissa on vastaavat arvot kyseisissä kentissä, ehdotetaan konsolidoitaviksi.<p>Konsolidointia voi ylläpitää manuaalisesti poistamalla lähetyksiä ehdotetuista konsolidoinneista ja/tai lisäämällä lähetyksiä niihin. Vaikka erilaisia virheitä voi esiintyä, jotkin niistä voidaan ohittaa.</p> |
-| **Rakennetta koskeva huomautus:** *Myyntilausten automaattinen vapautus varastoon* -menettely jakaa rivit ryhmiin. Kussakin ryhmässä on oma yksilöivä **ReleaseToWarehouseId**-arvo, ja *Vapauta varastoon* -menettely käsittelee sen erikseen. Tämä menettely luo uuden työn työn katkoasetuksista riippumatta. | **Rakennetta koskeva huomautus:** *Myyntitilausten automaattinen vapautus varastoon* -menettely määrittää saman **ReleaseToWarehouseId**-arvon kaikille käsiteltäville myyntiriveille. *Vapauta varastoon* -menettely käsittelee kaikki myyntirivit samanaikaisesti. Aiemman toiminnan voi varmistaa määrittämällä työn katkon lähetyksen tunnuksen mukaan. |
+| **Rakennetta koskeva huomautus:** *Myyntilausten automaattinen vapautus varastoon* -menettely jakaa rivit ryhmiin. Kussakin ryhmässä on oma yksilöivä **ReleaseToWarehouseId** -arvo, ja *Vapauta varastoon* -menettely käsittelee sen erikseen. Tämä menettely luo uuden työn työn katkoasetuksista riippumatta. | **Rakennetta koskeva huomautus:** *Myyntitilausten automaattinen vapautus varastoon* -menettely määrittää saman **ReleaseToWarehouseId** -arvon kaikille käsiteltäville myyntiriveille. *Vapauta varastoon* -menettely käsittelee kaikki myyntirivit samanaikaisesti. Aiemman toiminnan voi varmistaa määrittämällä työn katkon lähetyksen tunnuksen mukaan. |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

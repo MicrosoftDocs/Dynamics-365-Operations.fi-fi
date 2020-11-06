@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: aa5786df72f87da992f1020bbaaa1c2185adf043
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216709"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017480"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Siirtotilausten varastojen määrittäminen 
 
@@ -32,9 +33,9 @@ Varastotasoja käyttämällä voidaan luoda hierarkia, joka tukee varastojen vä
 
 2.  Valitse varasto, jota haluat täydentää.
 
-3.  Valitse **Pääsuunnittelu**-pikavälilehdessä **Uudelleentäyttö**-valintaruutu.
+3.  Valitse **Pääsuunnittelu** -pikavälilehdessä **Uudelleentäyttö** -valintaruutu.
 
-4.  Valitse **Päävarasto**-kentässä varasto, jota haluat käyttää täydennysvarastona. Pääajoitus laskee valittua varastoa koskevan siirtovaatimuksen ja luo suunnitellun siirtotilauksen, jonka mukaan siirto tapahtuu määritetystä **päävarastosta**.
+4.  Valitse **Päävarasto** -kentässä varasto, jota haluat käyttää täydennysvarastona. Pääajoitus laskee valittua varastoa koskevan siirtovaatimuksen ja luo suunnitellun siirtotilauksen, jonka mukaan siirto tapahtuu määritetystä **päävarastosta**.
    
     > [!NOTE]
     > <P>Jos tyhjennät <STRONG>Uudelleentäyttö</STRONG>-valintaruudun, valitulle varastolle määritetään <STRONG>päävarastoa</STRONG> koskeva varastotaso, mutta <STRONG>päävarastoa</STRONG> ei määritetä täydennysvarastoksi.</P>
@@ -47,8 +48,8 @@ Varastotasoja käyttämällä voidaan luoda hierarkia, joka tukee varastojen vä
 
 ## <a name="set-up-transport-lead-time"></a>Kuljetusajan määrittäminen
 
-Määritä myös varastojen välinen kuljetusaika **Kuljetusvuorokaudet**-sivulla. 
+Määritä myös varastojen välinen kuljetusaika **Kuljetusvuorokaudet** -sivulla. 
 1. Valitse **Inventoinnin- ja varastonhallinta > Asetukset > Toimitus > Kuljetusvuorokaudet**.
-2. Valitse **Vastaanottopiste**-kentässä **varasto**.
-3. Valitse **Lähetysvarasto**, **Vastaanottovarasto** ja **Kuljetusvuorokaudet**. 
+2. Valitse **Vastaanottopiste** -kentässä **varasto**.
+3. Valitse **Lähetysvarasto** , **Vastaanottovarasto** ja **Kuljetusvuorokaudet**. 
 4. (Valinnainen) Voit määrittää myös kuljetusajan toimitustavan mukaan **Kuljetuspäivät toimitustavan mukaan** -välilehdessä.

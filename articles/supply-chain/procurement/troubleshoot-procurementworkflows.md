@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 940a6c39ac83e7388d4e1a08b656b75df81ed801
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834348"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018534"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>Ostojen ja hankintojen työnkulkujen vianmääritys
 
@@ -32,7 +32,7 @@ Tässä ohjeaiheessa käsitellään sellaisten ongelmien korjaamista, joita voi 
 
 ## <a name="error-when-re-submitting-a-purchase-order-to-the-workflow-after-a-change-changes-to-purchase-order-x-are-allowed-only-in-a-draft-state-when-change-management-is-activated"></a>Virhe lähetettäessä ostotilausta uudelleen työnkulkuun muutoksen jälkeen: "Muutokset ostotilaukseen X ovat sallittuja vain Luonnos-tilassa, kun muutoksenhallinta on käytössä"
 
-Tämä ongelma ilmenee vain, jos ostotilaus oli tilassa *Vahvistettu*, ennen kuin muutoksia pyydettiin. Jos pyydät muutoksia ostotilauksen ollessa tilassa *Hyväksytty*, työnkulku voidaan käsitellä onnistuneesti.
+Tämä ongelma ilmenee vain, jos ostotilaus oli tilassa *Vahvistettu* , ennen kuin muutoksia pyydettiin. Jos pyydät muutoksia ostotilauksen ollessa tilassa *Hyväksytty* , työnkulku voidaan käsitellä onnistuneesti.
 
 ### <a name="error-description"></a>Virheen kuvaus
 
@@ -62,7 +62,7 @@ Voit poistaa tämän ongelman eston ja palauttaa ostotilauksen *Luonnos* siirtym
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
-Kun kyseessä on ostotilaus, johon sovelletaan muutoksenhallintaa ja ainoana muutoksena on jäännösmäärän peruuttaminen vähintään yhdellä rivillä, ostotilaus siirtyy suoraan *Vahvistettu*-tilaan, kun se hyväksytään, eikä kirjauskansiota luoda.
+Kun kyseessä on ostotilaus, johon sovelletaan muutoksenhallintaa ja ainoana muutoksena on jäännösmäärän peruuttaminen vähintään yhdellä rivillä, ostotilaus siirtyy suoraan *Vahvistettu* -tilaan, kun se hyväksytään, eikä kirjauskansiota luoda.
 
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
@@ -74,9 +74,9 @@ Jos tämän pitäisi näkyä ostotilausvahvistuksessa, määrää pitäisi muoka
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
-Kun olet peruuttanut *Vahvistettu*-tilassa olleita ostotilauksia, peruutetut ostotilaukset näkyvät edelleen ostotilausluonnosten luettelossa **Ostotilausten valmistelu** -työtilassa.
+Kun olet peruuttanut *Vahvistettu* -tilassa olleita ostotilauksia, peruutetut ostotilaukset näkyvät edelleen ostotilausluonnosten luettelossa **Ostotilausten valmistelu** -työtilassa.
 
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
-Tämä ongelma ilmenee vain sellaisten ostotilausten osalta, joihin sovelletaan muutoksenhallintaa. Se johtuu siitä, että peruutus tulkitaan muutokseksi, joka on hyväksyttävä. Järjestelmä voi suorittaa hyväksynnän automaattisesti. siksi prosessina on peruutetun ostotilauksen lähettäminen hyväksymisen työnkulkuun, jotta se voi siirtyä *Hyväksytty*-tilaan. Tässä vaiheessa ostotilaus ei enää näy **Ostotilausten valmistelu** -työtilan ostotilausluonnosten luettelossa.
+Tämä ongelma ilmenee vain sellaisten ostotilausten osalta, joihin sovelletaan muutoksenhallintaa. Se johtuu siitä, että peruutus tulkitaan muutokseksi, joka on hyväksyttävä. Järjestelmä voi suorittaa hyväksynnän automaattisesti. siksi prosessina on peruutetun ostotilauksen lähettäminen hyväksymisen työnkulkuun, jotta se voi siirtyä *Hyväksytty* -tilaan. Tässä vaiheessa ostotilaus ei enää näy **Ostotilausten valmistelu** -työtilan ostotilausluonnosten luettelossa.
 

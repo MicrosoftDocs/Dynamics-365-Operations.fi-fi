@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367404"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017572"
 ---
 # <a name="set-up-cluster-picking"></a>Määritä klusterikeräily
 
@@ -60,16 +60,16 @@ Määritä klusteriprofiili noudattamalla seuraavia ohjeita:
 
 1. Määritä klusterin lajitteluperuste valitsemalla ensin **Luo klusteri** ja sitten **Klusterin lajittelu** -kohdassa **Uusi**. Lajitteluehto hallitsee järjestystä, jonka perusteella työntekijä suorittaa keräilytyön. Voit luoda tarvitsemasi määrän kriteereitä.
 
-1. Anna **Järjestysnumero**-kentässä numero, joka määrittää lajitteluehtojen käsittelyjärjestyksen.
+1. Anna **Järjestysnumero** -kentässä numero, joka määrittää lajitteluehtojen käsittelyjärjestyksen.
 
-1. Valitse **Kentän nimi** -kentässä kenttä, joka määrittää lajitteluun. Esimerkiksi jos valitset **WMSLocationId**-kentän, työ lajitellaan sijainnin mukaan.
+1. Valitse **Kentän nimi** -kentässä kenttä, joka määrittää lajitteluun. Esimerkiksi jos valitset **WMSLocationId** -kentän, työ lajitellaan sijainnin mukaan.
 
-1. Valitse **Lajittelu**-kentässä jokin seuraavista vaihtoehdoista.
+1. Valitse **Lajittelu** -kentässä jokin seuraavista vaihtoehdoista.
 
 | **Vaihtoehto**     | **Kuvaus**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nouseva**  | Keräystyö järjestetään nousevassa järjestyksessä lajitteluehtojen perusteella. Jos käytät **WMSLocationId**-kenttää lajitteluehtona ja sijaintitunnuksesi ovat 1, 2, 3 ja 4, keräät sijainnista 4 ensin. |
-| **Laskeva** | Keräystyö järjestetään laskevassa järjestyksessä lajitteluehtojen perusteella. Jos käytät **WMSLocationId**-kenttää lajitteluehtona ja sijaintitunnuksesi ovat 1, 2, 3 ja 4, keräät sijainnista 1 ensin. |
+| **Nouseva**  | Keräystyö järjestetään nousevassa järjestyksessä lajitteluehtojen perusteella. Jos käytät **WMSLocationId** -kenttää lajitteluehtona ja sijaintitunnuksesi ovat 1, 2, 3 ja 4, keräät sijainnista 4 ensin. |
+| **Laskeva** | Keräystyö järjestetään laskevassa järjestyksessä lajitteluehtojen perusteella. Jos käytät **WMSLocationId** -kenttää lajitteluehtona ja sijaintitunnuksesi ovat 1, 2, 3 ja 4, keräät sijainnista 1 ensin. |
 
 ## <a name="item-confirmation"></a>Nimikkeen vahvistus
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
-ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
+ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3962517"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013177"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
@@ -239,7 +239,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirrä hakutuloksissa sivua ylös/alas                                                                                       | Page Up / Page Down              |
 | Siirry haun ylä-/alareunaan                                                                                    | Home / End                       |
 
-## <a name="task-recordershortcuts"></a>[Tehtävien tallennustoiminnon](../../dev-itpro/user-interface/task-recorder.md) pikanäppäimet 
+## <a name="task-recorder-shortcuts"></a>[Tehtävien tallennustoiminnon](../../dev-itpro/user-interface/task-recorder.md) pikanäppäimet 
 
 | Toiminto                                                                    | Paina                       |
 |-------------------------------------------------------------------------------|----------------------------|

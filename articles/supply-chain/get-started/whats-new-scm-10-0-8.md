@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3801455"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012318"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.8 (helmikuu 2020)
 
@@ -36,13 +36,14 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet*-ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet* -ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Sijainnin lisävyöhyke](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+
 - [Resurssien hallinta](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Lisätietoja on kohdassa [Resurssien hallinnan yleiskatsaus](../asset-management/index.md).
 - [Peruuta työ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Lisätietoja on kohdassa [Varastotyön peruuttaminen poikkeuksen käsittelyä varten](../warehousing/cancel-warehouse-work.md).
 - [Vaihda työpoolia työssä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Lisätietoja on kohdassa [Työpoolin vaihtaminen työssä](../warehousing/change-work-pool-on-work.md).
-- [Klusterisijainti täynnä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) - Lisätietoja on kohdassa [Klusterisijainti täynnä](../warehousing/cluster-position-full.md).
+- [Klusterisijainti täynnä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Lisätietoja on kohdassa [Klusterisijainti täynnä](../warehousing/cluster-position-full.md).
 - [Vahvista ja siirrä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Lisätietoja on kohdassa [Vahvistaminen ja siirtäminen](../warehousing/confirm-and-transfer.md).
 - [Sijaintidirektiivin varastonkeräilyn erääntyminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Lisätietoja on kohdassa [Sijaintidirektiivin varastokeräilyn erääntyminen](../warehousing/location-directive-inventory-picking-aging.md).
 - [Sijainnin tila](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
