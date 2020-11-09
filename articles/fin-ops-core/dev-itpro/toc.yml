@@ -142,13 +142,15 @@
                           items:
                             - name: Kaksoiskirjoituksen järjestelmävaatimukset
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Kaksoiskirjoituksen asetusten tuetut skenaariot
+                            - name: Kaksoiskirjoituksen määrittämisen ohjeet
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Alustavaa synkronointia koskevia huomautuksia
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Ota kaksoiskirjoitus käyttöön nykyisissä Finance and Operations -sovelluksissa
+                            - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
                               items:
-                                - name: Ota kaksoiskirjoitus käyttöön nykyisissä Finance and Operations -sovelluksissa
+                                - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
                                   href: data-entities/dual-write/enable-dual-write.md
                                 - name: Järjestelmävaatimukset ja edellytykset
                                   href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -404,11 +406,13 @@
                   href: database/database-point-in-time-restore.md
                 - name: Tuotantotietokannan ajankohdan palautus eristysympäristöön
                   href: database/database-pitr-prod-sandbox.md
+                - name: Just-in-time-tietokannan ottaminen käyttöön
+                  href: database/database-just-in-time-jit-access.md
             - name: Oppaat
               items:
-                - name: Koulutustarkoitusten päivittäminen
+                - name: Päivittäminen koulutusta varten
                   href: database/dbmovement-scenario-general-refresh.md
-                - name: Virheenkorjaus tuotantotietokannan kopion perusteella
+                - name: Tuotantotietokannan kopion virheenkorjaus
                   href: database/dbmovement-scenario-debugdiag.md
                 - name: Vie kopio vakiokäyttäjän hyväksyntätestin (UAT) tietokannasta
                   href: database/dbmovement-scenario-exportuat.md
@@ -476,10 +480,12 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Päivitysten käyttöönotto pilviympäristöissä
                   href: deployment/apply-deployable-package-system.md
-                - name: Päivitysten ja laajennuksien kohdistaminen Commerce Scale Unitiin (pilvi)
+                - name: Päivitysten ja laajennuksien käyttäminen Commerce Scale Unitissa (pilvi)
                   href: deployment/Update-retail-channel.md
-                - name: Alusta Commerce Scale Unit (pilvi)
+                - name: Commerce Scale Unitin alustaminen (pilvi)
                   href: deployment/Initialize-Retail-Channels.md
+                - name: Kanavien siirtäminen toiseen Commerce Scale Unitiin
+                  href: deployment/Reassign-CSU.md
                 - name: Retail-tietojen sijainti
                   href: deployment/retail-data-residency.md
             - name: Paikallinen käyttöönotto
@@ -1452,15 +1458,15 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Tuki
           items:
-            - name: Hanki tukea Finance and Operationsia ja Lifecycle Servicesiä varten
+            - name: Tuen hankkiminen Finance and Operationsille ja Lifecycle Servicesille
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: 'Hanki tukea Finance and Operationsille, jota ylläpitää 21Vianet Kiinassa'
+            - name: Tuen hankkiminen Kiinassa 21Vianetin ylläpitämälle Finance and Operations
               href: lifecycle-services/21vianet-support.md
-            - name: Teknisen tuen määrittäminen Finance and Operationsille
+            - name: Finance and Operations -sovellusten teknisen tuen määrittäminen
               href: lifecycle-services/support-experience.md
-            - name: Finance and Operationsin tukikokemusten hallinta
+            - name: Finance and Operations -sovellusten tukikokemusten hallinta
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Järjestelmän hallinta
           items:
@@ -1582,7 +1588,7 @@
                   href: migration-upgrade/app-validation-process.md
                 - name: AX 2012 -päivitys – toimintotestauksen suorittaminen hyväksytysti
                   href: migration-upgrade/upgrade-functional-validation.md
-                - name: AX 2012 -päivitys – käyttöönoton valmistelu
+                - name: AX 2012 -päivitys – julkistamisen valmistelu
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012 -päivitys – käyttöönotto
                   href: migration-upgrade/2012-upgrade-cutover.md

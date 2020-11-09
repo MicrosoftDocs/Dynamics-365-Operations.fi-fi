@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLocationBuild
+ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c0bed8c95760b3dee350048c5f824f974b784f26
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658331"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016303"
 ---
 # <a name="additional-location-zones"></a>Sijainnin lisävyöhykkeet
 
@@ -45,15 +45,15 @@ Ennen kuin voit käyttää *Sijainnin lisävyöhyke* -toimintoa, sen pitää oll
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varasto \> Ohjattu sijaintien asetustoiminto**.
 2. Määritä seuraavat arvot:
 
-    - Valitse **Varasto**-kentässä _62_.
-    - Valitse **Vyöhyketunnus**-kentässä _KERROS_.
+    - Valitse **Varasto** -kentässä _62_.
+    - Valitse **Vyöhyketunnus** -kentässä _KERROS_.
     - Valitse **Lisävyöhyke 1** -kentässä _VALITSEVYÖHYKE1_.
     - Valitse **Lisävyöhyke 2** -kentässä _VERKKOKAUPPA1_.
     - Valitse **Sijainnin profiilitunnus** -kentässä _KERROS_.
 
-3. Valitse **Kerros**-niminen rivi.
+3. Valitse **Kerros** -niminen rivi.
 4. Syötä **Ensimmäinen numero** -kenttään arvo _1_. Syötä **Viimeinen numero** -kenttään arvo _3_.
-5. Valitse **Käytävä**-niminen rivi.
+5. Valitse **Käytävä** -niminen rivi.
 6. Syötä **Ensimmäinen numero** -kenttään arvo _1_. Syötä **Viimeinen numero** -kenttään arvo _5_.
 7. Valitse **Luo**.
 8. Näyttöön tulee sanomia, joissa todetaan, että uusia sijainteja on lisätty. Valitse **Näytä sanomat** -painike, jos haluat nähdä sanomat.

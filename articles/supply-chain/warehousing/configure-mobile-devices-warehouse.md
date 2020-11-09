@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12f1c405566561661fe7c13db5bfca70114b1618
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988343"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016191"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
@@ -38,13 +38,13 @@ Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteel
 - Luo työ, joka suoritetaan toisen prosessin kautta. Esimerkiksi nimikkeen vastaanotto ostotilaukselle saattaa luoda hyllytystyön toiselle työntekijälle.
 - Suorita toisen prosessin (nykyisen työn) edellyttämä työ, kuten hyllytystyö, joka luotiin, kun ostotilaukselle vastaanotettiin nimike.
 
-Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen **Tila** arvoksi **Epäsuora**. Luettelo **Toimintokoodi**-asetuksista tulee saataville siten, että voit valita kyselyn tai toiminnon tyypin, jota varten valikkokohde on. Voit luoda valikkovaihtoehdon fyysisen varastoinnin työn luomiseen, määritä **Tila**-kentän arvoksi **Työ**. Näkyviin tulee luettelo **Työn luontiprosessi** -vaihtoehdoista. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. 
+Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen **Tila** arvoksi **Epäsuora**. Luettelo **Toimintokoodi** -asetuksista tulee saataville siten, että voit valita kyselyn tai toiminnon tyypin, jota varten valikkokohde on. Voit luoda valikkovaihtoehdon fyysisen varastoinnin työn luomiseen, määritä **Tila** -kentän arvoksi **Työ**. Näkyviin tulee luettelo **Työn luontiprosessi** -vaihtoehdoista. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. 
 
 > [!NOTE]
 > Valikkovaihtoehdolle on käytettävissä lisäkenttiä sille valitun tilan mukaan ja sen mukaan, käytetäänkö valikkovaihtoehtoa suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on jäljempänä tässä ohjeaiheessa kohdassa Lisävalikkovaihtoehdot.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
-Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, voit luoda valikkovaihtoehdon suorittamaan yleisen tehtävän tai kyselyn, joka ei luo työtä. Tällaisia tehtäviä ovat esimerkiksi rekisterikilpien uudelleentulostus tai toimipaikan nimikkeiden sijaintia koskeva kysely. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
+Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora** , voit luoda valikkovaihtoehdon suorittamaan yleisen tehtävän tai kyselyn, joka ei luo työtä. Tällaisia tehtäviä ovat esimerkiksi rekisterikilpien uudelleentulostus tai toimipaikan nimikkeiden sijaintia koskeva kysely. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 | Vaihtoehto | Kuvaus |
 |---|---|
@@ -55,7 +55,7 @@ Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, v
 | Rekisterikilpikysely | Näytä rekisterikilven nimikkeiden määrä ja rekisterikilven sijainti. |
 | Käynnistä tuotantotilaus | Käynnistä tuotantotilaus. |
 | Tuotannon hävikki | Syötä tuotannon aikana jokaiselle tuoterakenteen riville syntyneen hävikin määrä. |
-| Tuotannon viimeinen kuormalava | Määritä, että viimeinen nimikkeiden kuormalava on tuotettu tuotantotilaukselle ja että tuotantotilauksen tilaksi on päivitettävä **Ilmoitettu valmiiksi**. Niiden raaka-ainemateriaalien tila, joita ei kulutettu tuotannon aikana, palautetaan arvosta **Keräilty** arvoon **Tilauksessa**, ja nimikkeet voidaan palauttaa varastoon. |
+| Tuotannon viimeinen kuormalava | Määritä, että viimeinen nimikkeiden kuormalava on tuotettu tuotantotilaukselle ja että tuotantotilauksen tilaksi on päivitettävä **Ilmoitettu valmiiksi**. Niiden raaka-ainemateriaalien tila, joita ei kulutettu tuotannon aikana, palautetaan arvosta **Keräilty** arvoon **Tilauksessa** , ja nimikkeet voidaan palauttaa varastoon. |
 | Nimikekysely | Skannaa nimike määrittääksesi, missä se on varastossa. Kysely palauttaa kaikki skannatunnimikkeen sijainnit ja määrät. |
 | Tulosta etiketti uudelleen | Tulosta rekisterikilven etiketti uudelleen. |
 | Rekisterikilpikoonti | Luo ylätason rekisterikilpi yhdistämällä useita saman toimipaikan rekisterikilpiä. Tästä vaihtoehdosta on hyötyä, jos siirrät useita rekisterikilpiä samanaikaisesti. Kun päärekisterikilpi on siirretty, sinun on suoritettava rekisterikilven tauko, ennen kuin voit poimia nimikkeitä kustakin rekisterikilvestä. <p></p>**Vihje:** Jos haluat siirtää päärekisterikilven, sinun on käytettävä mobiililaitetta, joka on määritetty luomaan töitä siirroille. |
@@ -64,12 +64,12 @@ Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, v
 | Kuljettajan uloskuittaus | Rekisteröi, että kuljettaja on suorittanut tapaamisensa. |
 | Tyhjennä numerosarjojen välimuisti | Poista numerosarjan numerot numerosarjan välimuistista. Järjestelmänvalvoja suorittaa tavallisesti tämän toiminnon välimuistiin liittyvien ongelmien ratkaisemiseksi, kun käyttö tapahtuu mobiililaitteelta. |
 | Muuta eräkäsittelyä | Anna työntekijän määrittää erän käsittelykoodi nimikkeelle ja erälle. Tämä vaihtoehto päivittää eräkohtaisen käsittelykoodin. |
-| Näytä avoin työluettelo | Näyttää käyttäjäkohtaisen saatavilla olevien töiden luettelon. Käyttäjä voi valita suoritettavan työn, joka kohdistetaan hänelle. Luettelo on tarkoitettu katseltavaksi tablettilaitteissa, joiden näytön koko on 7 tuumaa tai enemmän. Kun valitset tämän vaihtoehdon, **Muokkaa kyselyä**- ja **Kenttäluettelo**-valikkovaihtoehdot ovat käytettävissä. **Muokkaa kyselyä** -sivulla voit määrittää ehtoja luettelossa näkyville töille. **Kenttäluettelo**-sivulla voit valita työluettelossa näkyvät kentät. Voit esimerkiksi rajoittaa näkyvissä olevien kenttien määrää, jotta käyttäjän on helpompi valita oikea työnimike. Voit myös valita **Yleiset**-välilehdessä **Tietueita sivulla** -kentässä, miten monta työtietuetta kullakin sivulla näytetään. Jos **Salli käyttäjien suodattaa työtä tapahtumatyypeittäin** -vaihtoehto on valittuna, työluettelossa on **Työn suodatus** -ohjausobjekti, jolla käyttäjä voi suodattaa luettelon tapahtumatyypin mukaan. Käyttäjä näkee työluettelossa vain työt, joiden käyttöoikeus hänellä on. Varmista, että käyttäjillä on oikeudet yhteen tai useampaan käyttäjäohjattuun valikkovaihtoehtoon, jotka tukevat tiettyä työluokkatyyppiä, jota heidän tulisi pystyä käyttämään. Käyttöoikeudet tarkistetaan myös, kun käyttäjä yrittää suorittaa työn luettelosta.|
-| Luo siirtotilaus rekisterikilvistä | Varastotyöntekijät voivat luoda ja käsitellä tällä ominaisuudessa siirtotilauksia suoraan varastosovelluksessa. Varastotyöntekijät aloittavat valitsemalla kohdevaraston, jonka jälkeen he voivat lukea vähintään yhden rekisterikilven sovelluksella. Kun varastotyöntekijä valitsee **Suorita tilaus**, erätyö luo tarvittavan siirtotilauksen ja tarvittavat tilausrivit kyseisille rekisterikilville rekisteröidyn käytettävissä olevan varaston perusteella. Lisätietoja on kohdassa [Siirtotilausten luonnin ottaminen käyttöön varastosovelluksessa](create-transfer-order-from-warehouse-app.md)
+| Näytä avoin työluettelo | Näyttää käyttäjäkohtaisen saatavilla olevien töiden luettelon. Käyttäjä voi valita suoritettavan työn, joka kohdistetaan hänelle. Luettelo on tarkoitettu katseltavaksi tablettilaitteissa, joiden näytön koko on 7 tuumaa tai enemmän. Kun valitset tämän vaihtoehdon, **Muokkaa kyselyä** - ja **Kenttäluettelo** -valikkovaihtoehdot ovat käytettävissä. **Muokkaa kyselyä** -sivulla voit määrittää ehtoja luettelossa näkyville töille. **Kenttäluettelo** -sivulla voit valita työluettelossa näkyvät kentät. Voit esimerkiksi rajoittaa näkyvissä olevien kenttien määrää, jotta käyttäjän on helpompi valita oikea työnimike. Voit myös valita **Yleiset** -välilehdessä **Tietueita sivulla** -kentässä, miten monta työtietuetta kullakin sivulla näytetään. Jos **Salli käyttäjien suodattaa työtä tapahtumatyypeittäin** -vaihtoehto on valittuna, työluettelossa on **Työn suodatus** -ohjausobjekti, jolla käyttäjä voi suodattaa luettelon tapahtumatyypin mukaan. Käyttäjä näkee työluettelossa vain työt, joiden käyttöoikeus hänellä on. Varmista, että käyttäjillä on oikeudet yhteen tai useampaan käyttäjäohjattuun valikkovaihtoehtoon, jotka tukevat tiettyä työluokkatyyppiä, jota heidän tulisi pystyä käyttämään. Käyttöoikeudet tarkistetaan myös, kun käyttäjä yrittää suorittaa työn luettelosta.|
+| Luo siirtotilaus rekisterikilvistä | Varastotyöntekijät voivat luoda ja käsitellä tällä ominaisuudessa siirtotilauksia suoraan varastosovelluksessa. Varastotyöntekijät aloittavat valitsemalla kohdevaraston, jonka jälkeen he voivat lukea vähintään yhden rekisterikilven sovelluksella. Kun varastotyöntekijä valitsee **Suorita tilaus** , erätyö luo tarvittavan siirtotilauksen ja tarvittavat tilausrivit kyseisille rekisterikilville rekisteröidyn käytettävissä olevan varaston perusteella. Lisätietoja on kohdassa [Siirtotilausten luonnin ottaminen käyttöön varastosovelluksessa](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Valikkovaihtoehtojen määrittäminen työn luomiseksi toiselle työntekijälle tai prosessille
-Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, kun alustava toiminto on suoritettu mobiililaitteella. Jos esimerkiksi yksi työntekijä käyttää mobiililaitetta nimikkeen vastaanottamiseen, hyllytystyö luodaan toiselle työntekijälle. Määritä työn luova valikkovaihtoehto valitsemalla **Mobiililaitteen valikkovaihtoehdot** -sivulla **Tila**-kentässä **Työ**. Seuraavassa taulukossa **Työn luontiprosessi** -kentän vaihtoehdot on järjestetty tilaustyypin mukaan.
+Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, kun alustava toiminto on suoritettu mobiililaitteella. Jos esimerkiksi yksi työntekijä käyttää mobiililaitetta nimikkeen vastaanottamiseen, hyllytystyö luodaan toiselle työntekijälle. Määritä työn luova valikkovaihtoehto valitsemalla **Mobiililaitteen valikkovaihtoehdot** -sivulla **Tila** -kentässä **Työ**. Seuraavassa taulukossa **Työn luontiprosessi** -kentän vaihtoehdot on järjestetty tilaustyypin mukaan.
 
 
 <table>
@@ -207,7 +207,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Valikkovaihtoehdon määrittäminen käsittelemään olemassa olevat työt
-Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila**-kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. **Yleiset**-välilehteen tulee saataville joitakin lisävaihtoehtoja. Voit valvoa valikkovaihtoehdon käyttöä määrittämällä yhden tai useamman työluokan **Työluokka**-pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot. Vaihtoehto voidaan valita **Ohjaaja**-kentässä **Mobiililaitteen valikkovaihtoehdot** -sivulla. 
+Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkovaihtoehdot käsittelemään työt, jotka on luotu aiemmin. Määritä **Tila** -kentän arvoksi **Työ** ja valitse **Käytä nykyistä työtä** -vaihtoehto. **Yleiset** -välilehteen tulee saataville joitakin lisävaihtoehtoja. Voit valvoa valikkovaihtoehdon käyttöä määrittämällä yhden tai useamman työluokan **Työluokka** -pikavälilehdessä. Työluokat määrittävät työn, jota valikkovaihtoehdolla voi käsitellä. Työluokan kautta voidaan myös myöntää käyttöoikeus tiettyihin käyttäjärooleihin tai erityyppisten työvaiheiden erilliskäsittelyyn. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot. Vaihtoehto voidaan valita **Ohjaaja** -kentässä **Mobiililaitteen valikkovaihtoehdot** -sivulla. 
 
 <table>
 

@@ -3,7 +3,7 @@ title: Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commerce -sivustonmuodostimen kanavienvälisen jakamistoiminnon ottamista käyttöön ja sen käyttämistä.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5dad866250bc57a9b158ee73948da509ecccd52c
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974076"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019515"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen
 
@@ -51,15 +51,15 @@ Kanavienvälinen jakaminen otetaan käyttöön sivustotasolla. Tämä toiminto o
 Kanavienvälinen jakaminen otetaan käyttöön Commercen sivustonmuodostimessa seuraavasti:
 
 1. Valitse **Sivuston asetukset \> Ominaisuudet**.
-1. Määritä **Kanavienvälinen**-ominaisuuden asetukseksi **Käytössä**.
+1. Määritä **Kanavienvälinen** -ominaisuuden asetukseksi **Käytössä**.
 
     ![Kanavienvälinen-asetuksena Käytössä Commerce-sivustonmuodostimessa](./media/enabling-cross-channel-sharing.png)
 
-Kun kanavienvälinen jakaminen on otettu käyttöön, kanavienväliset tiedot näkyvät **Kanavat**-osan kohdassa **Sivuston asetukset \> Ominaisuudet**, kuten seuraavassa kuvassa.
+Kun kanavienvälinen jakaminen on otettu käyttöön, kanavienväliset tiedot näkyvät **Kanavat** -osan kohdassa **Sivuston asetukset \> Ominaisuudet** , kuten seuraavassa kuvassa.
 
 ![Kanavat tiedot näkyvissä kanavienvälisen jakamisen käyttöönoton jälkeen](./media/channels-cross-channel.png)
 
-Lisäksi sen jälkeen kun kanavienvälinen jakaminen on otettu käyttöön, **Kanava**-kenttä Commerce-sivustonmuodostimen oikeassa yläkulmassa sisältää **Kanavienvälinen verkkokauppa** vaihtoehdon, jolla voi hallita kanavienvälistä sisältöä seuraavassa kuvassa näytetyllä tavalla.
+Lisäksi sen jälkeen kun kanavienvälinen jakaminen on otettu käyttöön, **Kanava** -kenttä Commerce-sivustonmuodostimen oikeassa yläkulmassa sisältää **Kanavienvälinen verkkokauppa** vaihtoehdon, jolla voi hallita kanavienvälistä sisältöä seuraavassa kuvassa näytetyllä tavalla.
 
 ![Kanavienvälinen verkkokauppa -vaihtoehto Kanavat-kentässä kanavienvälisen jakamisen käyttöönoton jälkeen](./media/cross-channel-dropdown.png)
 
@@ -72,26 +72,26 @@ Voit luoda ja käyttää kanavienvälistä sisältöä monilla tavoilla. Voit es
 Luo kanavienvälinen osa Commercen sivustonmuodostimessa seuraavasti:
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi sivuosa** -valintaikkunassa **Kampanjapalkki**-moduuli ja anna sitten **Sivuosan nimi** -kohdassa nimi (kuten **Kanavienvälinen palkki**). Valitse sitten **OK**.
-1. Valitse **Kampanjapalkki**-moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
-1. Lisää **Sanoma**-valintaikkunan **Teksti**-kohtaan **Kanavienvälinen** ja valitse sitten **OK**. 
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Uusi osa** -valintaikkunassa **Kampanjapalkki** -moduuli ja anna sitten **Osan nimi** -kohdassa nimi (kuten **Kanavienvälinen palkki** ). Valitse sitten **OK**.
+1. Valitse **Kampanjapalkki** -moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
+1. Lisää **Sanoma** -valintaikkunan **Teksti** -kohtaan **Kanavienvälinen** ja valitse sitten **OK**. 
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 
 Tätä kanavienvälistä osaa voidaan käyttää kanavienvälisillä ja kanavakohtaisilla sivuilla, jotka on luotu jossain sivustokanavassa.
 
 ### <a name="create-a-cross-channel-page-that-uses-cross-channel-content"></a>Kanavienvälistä sisältöä käyttävän kanavienvälisen sivun luominen
 
-Kanavienvälisiä sivuja voidaan käyttää missä tahansa sivuston kanavassa. Tämän vuoksi voit luoda jaetun sisältösivun kerran ja tehdä päivitykset jatkossa yhdessä paikassa. Esimerkiksi kanavienvälinen **Käyttöehdot**-sivu, jonka URL-osoite on `/toc`, voidaan jakaa kaikkien sivuston kanavien kanssa. Jos sivustokanavien URL-perusosoitteet ovat `www.fabrikam.com/brand1` ja `www.fabrikam.com/brand2`, sama kanavienvälinen jaettu **Käyttöehdot**-sivu on saatavana molemmissa sivustokanavan URL-osoitteissa (`www.fabrikam.com/brand1/toc` ja `www.fabrikam.com/brand2/toc`). Jos **Käyttöehdot**-sivu on päivitettävä myöhemmin, vain yksi jaettu sivu on päivitettävä.
+Kanavienvälisiä sivuja voidaan käyttää missä tahansa sivuston kanavassa. Tämän vuoksi voit luoda jaetun sisältösivun kerran ja tehdä päivitykset jatkossa yhdessä paikassa. Esimerkiksi kanavienvälinen **Käyttöehdot** -sivu, jonka URL-osoite on `/toc`, voidaan jakaa kaikkien sivuston kanavien kanssa. Jos sivustokanavien URL-perusosoitteet ovat `www.fabrikam.com/brand1` ja `www.fabrikam.com/brand2`, sama kanavienvälinen jaettu **Käyttöehdot** -sivu on saatavana molemmissa sivustokanavan URL-osoitteissa (`www.fabrikam.com/brand1/toc` ja `www.fabrikam.com/brand2/toc`). Jos **Käyttöehdot** -sivu on päivitettävä myöhemmin, vain yksi jaettu sivu on päivitettävä.
 
 Voit luoda Commerce-sivustonmuodostimessa kanavienvälistä sisältöä käyttävän kanavienvälisen sivun seuraavasti:
 
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
 1. Valitse **Valitse malli** -valintaikkunassa malli, kuten **Markkinointi**.
-1. Anna **Sivun nimi** -kenttään sivun nimi (kuten **Kanavienvälinen sivu**).
-1. Anna **Sivun URL-osoite** -kenttään sivun URL-osoite (kuten **examplepage**) ja valitse sitten **OK**.
-1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää osa**.
+1. Anna **Sivun nimi** -kenttään sivun nimi (kuten **Kanavienvälinen sivu** ).
+1. Anna **Sivun URL-osoite** -kenttään sivun URL-osoite (kuten **examplepage** ) ja valitse sitten **OK**.
+1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää osa**.
 1. Valitse **Lisää osa** -valintaikkunassa aiemmin luotu kanavienvälinen osa, jossa on kampanjapalkki, ja valitse sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä pitäisi olla kampanjapalkki, jossa on teksti Kanavienvälinen.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä pitäisi olla kampanjapalkki, jossa on teksti Kanavienvälinen.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ### <a name="create-a-channel-specific-page-that-uses-cross-channel-content"></a>Kanavienvälistä sisältöä käyttävän kanavakohtaisen sivun luominen
@@ -100,13 +100,13 @@ Käyttämällä kanavienvälistä sisältöä kanavakohtaisilla sivuilla voit lu
 
 Voit luoda Commerce-sivustonmuodostimessa kanavienvälistä sisältöä käyttävän kanavakohtaisen sivun seuraavasti:
 
-1. Valitse tietyssä kanavassa, kuten **Laajennettu Fabrikam-verkkokauppa**, **Sivut** ja luo sitten uusi sivu valitsemalla **Uusi**.
+1. Valitse tietyssä kanavassa, kuten **Laajennettu Fabrikam-verkkokauppa** , **Sivut** ja luo sitten uusi sivu valitsemalla **Uusi**.
 1. Valitse **Valitse malli** -valintaikkunassa malli, kuten **Markkinointi**.
-1. Anna **Sivun nimi** -kenttään sivun nimi (kuten **Kanavakohtainen sivu**).
-1. Anna **Sivun URL-osoite** -kenttään sivun URL-osoite (kuten **channelspecificpage**) ja valitse sitten **OK**.
-1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää osa**.
-1. Valitse **Lisää osa** -valintaikkunan **Kanava**-kohdassa **Kanavienvälinen verkkokauppa**. Aiemmin luodun kanavienvälisen osan pitäisi näkyä luettelossa. Valitse ensin se ja sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä pitäisi olla kampanjapalkki, jossa on teksti Kanavienvälinen.
+1. Anna **Sivun nimi** -kenttään sivun nimi (kuten **Kanavakohtainen sivu** ).
+1. Anna **Sivun URL-osoite** -kenttään sivun URL-osoite (kuten **channelspecificpage** ) ja valitse sitten **OK**.
+1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää osa**.
+1. Valitse **Lisää osa** -valintaikkunan **Kanava** -kohdassa **Kanavienvälinen verkkokauppa**. Aiemmin luodun kanavienvälisen osan pitäisi näkyä luettelossa. Valitse ensin se ja sitten **OK**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä pitäisi olla kampanjapalkki, jossa on teksti Kanavienvälinen.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ### <a name="create-a-channel-specific-version-of-a-cross-channel-page"></a>Kanavienvälisen sivun kanavakohtaisen version luominen
@@ -115,15 +115,15 @@ Kanavienvälinen jakaminen tukee kanavienvälisen sisällön ohittamista Esimerk
 
 Voit luoda Commerce-sivustonmuodostimessa kanavienvälisen sivun kanavakohtaisen version seuraavasti:
 
-1. Valitse **Kanava**-kentässä oikeassa yläkulmassa **Kanavienvälinen verkkokauppa**.
+1. Valitse **Kanava** -kentässä oikeassa yläkulmassa **Kanavienvälinen verkkokauppa**.
 1. Avaa aiemmin luotu kanavienvälinen sivu.
-1. Valitse **Kanava**-kentässä oikeassa yläkulmassa kanava, jolla on oltava oma sisältö. Sivueditorissa näkyy sanoma, joka pyytää luomaan uusi sivuvariantti.
+1. Valitse **Kanava** -kentässä oikeassa yläkulmassa kanava, jolla on oltava oma sisältö. Sivueditorissa näkyy sanoma, joka pyytää luomaan uusi sivuvariantti.
 1. Valitse **Luo sivuvariantti**.
-1. Valitse sivuvariantin **pääpaikassa** kolme pistettä (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kampanjapalkki**-moduuli ja valitse sitten **OK**.
-1. Valitse **Kampanjapalkki**-moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
-1. Lisää **Sanoma**-valintaikkunan **Teksti**-kohtaan **Kanavakohtainen** ja valitse sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä pitäisi olla kampanjapalkki, jossa on teksti Kanavakohtainen.
+1. Valitse sivuvariantin **pääpaikassa** kolme pistettä ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kampanjapalkki** -moduuli ja valitse sitten **OK**.
+1. Valitse **Kampanjapalkki** -moduulin ominaisuusruudussa **Lisää sanoma** ja valitse sitten **Sanoma**.
+1. Lisää **Sanoma** -valintaikkunan **Teksti** -kohtaan **Kanavakohtainen** ja valitse sitten **OK**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä pitäisi olla kampanjapalkki, jossa on teksti Kanavakohtainen.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 Jos nyt käytät kanavan URL-perusosoitetta ja siirryt kyseisen sivuston kanavienvälisen sivun URL-osoitteeseen, näkyvissä on kanavakohtaista sisältöä eikä kanavienvälistä sisältöä.

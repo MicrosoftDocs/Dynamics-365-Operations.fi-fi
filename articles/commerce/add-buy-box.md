@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817082"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022026"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
@@ -69,11 +68,11 @@ Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen oh
 
 ## <a name="buy-box-module-settings"></a>Ostoruutumoduulin asetukset
 
-Seuraavat ostoruutumoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
+Seuraavat ostoruutumoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset** :
 
 - **Ostoskorin rivien maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
 - **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
-- **Lisää ostoskoriin** - Tämän ominaisuuden avulla määritetään, mitä tapahtuu, kun nimike on lisätty ostoskoriin. Mahdolliset arvot ovat **Siirry ostoskoriin**, **Älä siirry ostoskoriin** ja **Näytä ilmoitukset**. Kun arvoksi on määritetty **Siirry ostoskoriin**, käyttäjät lähetetään ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Älä siirry ostoskoriin**, käyttäjiä ei lähetetä ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Näytä ilmoitukset**, käyttäjille näytetään vahvistusilmoitus ja he voivat jatkaa selaamista tuotteen tiedot -sivulla. 
+- **Lisää ostoskoriin** - Tämän ominaisuuden avulla määritetään, mitä tapahtuu, kun nimike on lisätty ostoskoriin. Mahdolliset arvot ovat **Siirry ostoskoriin** , **Älä siirry ostoskoriin** ja **Näytä ilmoitukset**. Kun arvoksi on määritetty **Siirry ostoskoriin** , käyttäjät lähetetään ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Älä siirry ostoskoriin** , käyttäjiä ei lähetetä ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Näytä ilmoitukset** , käyttäjille näytetään vahvistusilmoitus ja he voivat jatkaa selaamista tuotteen tiedot -sivulla. 
 
 > [!IMPORTANT]
 > **Lisää ostoskoriin** -sivuton asetukset ovat käytettävissä Dynamics 365 Commercen versiossa 10.0.11. Jos päivität vanhemmasta Dynamics 365 Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeet appsettings.json-tiedoston päivittämiseen: [SDK:n ja moduuliskirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
@@ -91,26 +90,26 @@ Ostoruutumoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi osa** -valintaikkunassa **Ostoruutu**-moduuli.
+1. Valitse **Uusi osa** -valintaikkunassa **Ostoruutu** -moduuli.
 1. Kirjoita **Osan nimi** -kohtaan **Ostoruudun osa** ja valitse sitten **OK**.
-1. Valitse ostoruutumoduulissa **Mediavalikoima**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Mediavalikoima**-moduuli ja valitse sitten **OK**.
-1. Valitse ostoruutumoduulissa **Myymälävalitsin**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse ostoruutumoduulissa **Mediavalikoima** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Mediavalikoima** -moduuli ja valitse sitten **OK**.
+1. Valitse ostoruutumoduulissa **Myymälävalitsin** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin** -moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **PDP-malli** ja valitse sitten **OK**.
-1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
-1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse kolme pistettä ( **...** ) **Tekstiosa** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu** -moduuli ja valitse sitten **OK**.
+1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää osa**.
 1. Valitse **Valitse osa** -valintaikkunassa aiemmin luotu **Ostoruutuosa** ja valitse sitten **OK**.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
-1. Valitse **Valitse malli** -valintaikkunassa **PDP-malli**-pohja. Kirjoita **Sivun nimi** -kohtaan **PDP-sivu** ja valitse sitten **OK**.
-1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse **Valitse malli** -valintaikkunassa **PDP-malli** -pohja. Kirjoita **Sivun nimi** -kohtaan **PDP-sivu** ja valitse sitten **OK**.
+1. Valitse uudella sivulla **pääpaikka**. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää osa**.
 1. Valitse **Valitse osa** -valintaikkunassa aiemmin luotu **Ostoruutuosa** ja valitse sitten **OK**.
 1. Tallenna ja esikatsele sivu. Lisää **?productid=&lt;tuotteen tunnus&gt;** -kyselymerkkijonoparametri esikatselusivun URL-osoitteeseen. Näin tuotekontekstia käytetään esikatselusivun lataamiseen ja käsittelemiseen.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**. Tuotetietosivulla näkyy ostoruutu.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**. Tuotetietosivulla näkyy ostoruutu.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

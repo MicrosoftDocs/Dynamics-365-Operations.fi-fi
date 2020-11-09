@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: ae805d9aac790a1a58478cf54d033ce758c5eca3
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530095"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017756"
 ---
 # <a name="planned-cross-docking"></a>Suunniteltu cross-docking
 
@@ -70,9 +71,9 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
     - **Cross-docking-mallipohjan tunnus:** *51*
     - **Kuvaus:** *Varasto 51*
     - **Kysynnänvapautuskäytäntö:** *Ennen toimitusvastaanottoa*
-    - **Varasto**: *51*
+    - **Varasto** : *51*
 
-1. **Suunnittelu**-pikavälilehden määritys ohjaa mallin toimintaa. Määritä seuraavat arvot:
+1. **Suunnittelu** -pikavälilehden määritys ohjaa mallin toimintaa. Määritä seuraavat arvot:
 
     - **Tarvevaatimukset:** *Ei mitään*
 
@@ -88,11 +89,11 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 
     - **Tarkista uudelleen toimituskuitissa:** *Ei*
 
-        Tämä vaihtoehto määrittää, tuleeko toimitus vahvistaa uudelleen vastaanoton aikana. Jos tämän asetuksen arvoksi on määritetty *Kyllä*, sekä enimmäisaikaikkuna että vanhenemispäivien alue tarkistetaan.
+        Tämä vaihtoehto määrittää, tuleeko toimitus vahvistaa uudelleen vastaanoton aikana. Jos tämän asetuksen arvoksi on määritetty *Kyllä* , sekä enimmäisaikaikkuna että vanhenemispäivien alue tarkistetaan.
 
     - **Vahvista aikaikkuna:** *Kyllä*
 
-        Tämä vaihtoehto määrittää, arvioidaanko enimmäisaikaikkuna, kun toimituslähde valitaan. Jos tämän asetuksen arvoksi on määritetty *Kyllä*, järjestelmän enimmäis- ja vähimmäisaikakenttiin liittyvät kentät ovat käytettävissä.
+        Tämä vaihtoehto määrittää, arvioidaanko enimmäisaikaikkuna, kun toimituslähde valitaan. Jos tämän asetuksen arvoksi on määritetty *Kyllä* , järjestelmän enimmäis- ja vähimmäisaikakenttiin liittyvät kentät ovat käytettävissä.
 
     - **Enimmäisaikaikkuna** *5*
 
@@ -108,7 +109,7 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 
         *Ensimmäinen päättymispäivä (FEFO) -ehto:* Tässä kentässä määritetään varastossa tällä hetkellä olevan ensimmäisen vanhentumiserän vanhentumispäivämäärän ja vastaanotetun erän välinen päivien enimmäismäärä.
 
-1. **Toimituslähteet**-pikavälilehdessä voit määrittää tämän mallin käytettävissä olevat toimituslajit. Valitse **Uusi** ja määritä sitten seuraavat arvot:
+1. **Toimituslähteet** -pikavälilehdessä voit määrittää tämän mallin käytettävissä olevat toimituslajit. Valitse **Uusi** ja määritä sitten seuraavat arvot:
 
     - **Järjestysnumero:** *1*
     - **Toimituslähde:** *Ostotilaus*
@@ -126,15 +127,15 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 ### <a name="create-a-work-template"></a>Luo työmalli
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Työ \> Työmallit**.
-1. Aseta **Työtilaustyyppi**-kentän arvoksi *Cross-docking*.
-1. Lisää **Yleiskuvaus**-välilehdelle uusi rivi valitsemalla toimintoruudussa **Uusi**.
+1. Aseta **Työtilaustyyppi** -kentän arvoksi *Cross-docking*.
+1. Lisää **Yleiskuvaus** -välilehdelle uusi rivi valitsemalla toimintoruudussa **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** *1*
     - **Työmalli:** *51 Cross Dock*
     - **Työmallin kuvaus:** *51 Cross Dock*
 
-1. Valitse **Tallenna**, jos haluat, että **Työmallin tiedot** -pikavälilehti on käytettävissä.
+1. Valitse **Tallenna** , jos haluat, että **Työmallin tiedot** -pikavälilehti on käytettävissä.
 1. Lisää uusi rivi ruudukkoon **Työmallin tiedot** -pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
@@ -146,38 +147,38 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
     - **Työtyyppi:** *Aseta*
     - **Työluokan tunnus:** *CrossDock*
 
-1. Valitse **Tallenna** ja vahvista, että *51 Cross Dock* -mallille on valittu **Kelvollinen**-valintaruutu .
+1. Valitse **Tallenna** ja vahvista, että *51 Cross Dock* -mallille on valittu **Kelvollinen** -valintaruutu .
 
 > [!NOTE]
-> *Poiminta*- ja *Hhyllytys*-työtyyppien työluokkien tunnusten on oltava samat.
+> *Poiminta* - ja *Hhyllytys* -työtyyppien työluokkien tunnusten on oltava samat.
 
 ### <a name="create-location-directives"></a>Luo toimipaikkadirektiivit
 
 1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
-1. Aseta vasemmassa ruudussa **Työtilaustyyppi**-kentän arvoksi *Cross-docking*.
+1. Aseta vasemmassa ruudussa **Työtilaustyyppi** -kentän arvoksi *Cross-docking*.
 1. Valitse toimintoruudussa **Uusi** ja määritä seuraavat arvot:
 
     - **Järjestysnumero:** *1*
     - **Nimi:** *51 Cross Dock Put*
     - **Työtyyppi:** *Aseta*
     - **Toimipaikka:** *5*
-    - **Varasto**: *51*
+    - **Varasto** : *51*
 
-1. Valitse **Tallenna**, jos haluat, että **Rivit**-pikavälilehti on käytettävissä.
-1. Lisää uusi rivi ruudukkoon **Rivit**-pikavälilehdessä **Uusi**.
+1. Valitse **Tallenna** , jos haluat, että **Rivit** -pikavälilehti on käytettävissä.
+1. Lisää uusi rivi ruudukkoon **Rivit** -pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Määrästä:** *1*
     - **Määrälle:** *1000000*
 
-1. Valitse **Tallenna**, jos haluat, että **Paikkadirektiivitoimenpiteet**-pikavälilehti on käytettävissä.
-1. Lisää uusi rivi ruudukkoon**Sijaintidirektiivin toiminnot** -pikavälilehdessä **Uusi**.
+1. Valitse **Tallenna** , jos haluat, että **Paikkadirektiivitoimenpiteet** -pikavälilehti on käytettävissä.
+1. Lisää uusi rivi ruudukkoon **Sijaintidirektiivin toiminnot** -pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Nimi:** *Baydoor*
     - **Kiinteän sijainnin käyttö:** *Kiinteät ja muut kuin kiinteät sijainnit*
 
-1. Valitse **Tallenna**, jos haluat, että **Sijaintidirektiivin toiminnot** -työkalurivin **Muokkaa kyselyä** -painike on käytettävissä.
+1. Valitse **Tallenna** , jos haluat, että **Sijaintidirektiivin toiminnot** -työkalurivin **Muokkaa kyselyä** -painike on käytettävissä.
 1. Avaa kyselyeditori valitsemalla **Muokkaa kyselyä**.
 1. Varmista **Alue** -välilehdessä, että seuraavat kaksi riviä on konfiguroitu:
 
@@ -202,7 +203,7 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Mobiililaite \> Mobiililaitteen valikkovaihtoehdot**.
 1. Valitse vasemmanpuoleisen ruudun valikkovaihtoehtojen luettelosta **Oston hyllytys**.
 1. Valitse **Muokkaa**.
-1. Lisää uusi rivi ruudukkoon **Työlajit**-pikavälilehdessä **Uusi**.
+1. Lisää uusi rivi ruudukkoon **Työlajit** -pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Työluokan tunnus:** *CrossDock*
@@ -221,10 +222,10 @@ Noudattamalla näitä ohjeita voit luoda ostotilauksen toimituslähteeksi.
 1. Aseta **Luo ostotilaus** -valintaikkunassa seuraavat arvot:
 
     - **Toimittajan tili:** *104*
-    - **Varasto**: *51*
+    - **Varasto** : *51*
 
 1. Valitse **OK** ja kirjoita tilausnumero muistiin.
-1. **Ostotilausrivit**-pikavälilehdelle lisätään uusi rivi. Määritä tälle riville seuraavat arvot:
+1. **Ostotilausrivit** -pikavälilehdelle lisätään uusi rivi. Määritä tälle riville seuraavat arvot:
 
     - **Nimiketunnus:** *A0001*
     - **Määrä** *5*
@@ -238,10 +239,10 @@ Noudattamalla näitä ohjeita voit luoda myyntitilauksen kysynnän lähteeksi.
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakastili:** *US-002*
-    - **Varasto**: *51*
+    - **Varasto** : *51*
 
 1. Valitse **OK**.
-1. **Myyntitilausrivit**-pikavälilehdelle lisätään uusi rivi. Määritä tälle riville seuraavat arvot:
+1. **Myyntitilausrivit** -pikavälilehdelle lisätään uusi rivi. Määritä tälle riville seuraavat arvot:
 
     - **Nimiketunnus:** *A0001*
     - **Määrä** *3*
@@ -250,13 +251,13 @@ Noudattamalla näitä ohjeita voit luoda myyntitilauksen kysynnän lähteeksi.
 
 Seuraavien vaiheiden avulla voit luoda suunnitellun cross-dockingin myyntitilauksesta.
 
-1. Valitse juuri luomasi myynti tilauksen **Myyntitilaustiedot** -sivulta toimenpideruudun **Varasto**-välilehden **Toiminnot**-ryhmästä **Vapauta varastoon**.
+1. Valitse juuri luomasi myynti tilauksen **Myyntitilaustiedot** -sivulta toimenpideruudun **Varasto** -välilehden **Toiminnot** -ryhmästä **Vapauta varastoon**.
 
     Vapauta varastoon -toiminto luo myyntitilausriville lähetys- ja kuormitusrivin sekä yrittää kohdistaa varaston.
     
     Näyttöön avautuu tietosanoma. Näyttöön tulee myös seuraava varoitussanoma: "Aallolle XXXX ei luotu työtä. Lisätietoja on työn luonnin historialokissa." Tämä toiminta on odotettavissa, koska varastossa ei ole varastoa.
 
-1. Valitse **Myyntitilausrivit**-pikavälilehdellä **Varasto**-valikosta **Lähetyksen tiedot**.
+1. Valitse **Myyntitilausrivit** -pikavälilehdellä **Varasto** -valikosta **Lähetyksen tiedot**.
 
     Näkyviin tulee **Lähetyksen tiedot** -sivu, jossa näkyy myyntitilaukselle luotu lähetys.
 
@@ -275,33 +276,33 @@ Toisen luotavan työtunnuksen **Työtilaustyypin** arvo on *Ostotilaukset* ja se
 
 1. Kirjaudu kannettavaan laitteeseen käyttäjänä varastossa *51*.
 1. Siirry kohtaan **Saapuva \> Oston vastaanotto**.
-1. Syötä **PONum**-kenttään ostotilauksen numero.
-1. Kirjoita **Määrä**-kenttään *5*.
+1. Syötä **PONum** -kenttään ostotilauksen numero.
+1. Kirjoita **Määrä** -kenttään *5*.
 1. Valitse **OK**.
-1. Määritä seuraavalla sivulla **Nimike**-kentän arvoksi *A0001*.
+1. Määritä seuraavalla sivulla **Nimike** -kentän arvoksi *A0001*.
 1. Valitse **OK**.
-1. Vahvista seuraavalla sivulla **PONum**-, **Nimike**- ja **Määrä**-arvot valitsemalla **OK**.
+1. Vahvista seuraavalla sivulla **PONum** -, **Nimike** - ja **Määrä** -arvot valitsemalla **OK**.
 
     Näyttöön tulee Työ valmis -sanoma.
 
-1. Valitse **Peruuta**, jos haluat poistua.
+1. Valitse **Peruuta** , jos haluat poistua.
 
 ### <a name="put-away-to-cross-docking-and-bulk"></a>Hyllytys cross-dockingiin ja irtotavaraan
 
-Tällä hetkellä molemmilla työtunnuksilla on sama kohderekisterikilpi. Jotta voit suorittaa seuraavat vaiheet, sinun on saatava työtunnus ja kohderekisterikilpitunnus. Voit saada nämä tiedot ostotilausrivin ja myyntitilausrivin työtiedoista. Vaihtoehtoisesti voit siirtyä kohtaan **Varastonhallinta \> Työ \> Työtiedot** ja suodattaa työt, joissa **Varasto**-arvo on *51*.
+Tällä hetkellä molemmilla työtunnuksilla on sama kohderekisterikilpi. Jotta voit suorittaa seuraavat vaiheet, sinun on saatava työtunnus ja kohderekisterikilpitunnus. Voit saada nämä tiedot ostotilausrivin ja myyntitilausrivin työtiedoista. Vaihtoehtoisesti voit siirtyä kohtaan **Varastonhallinta \> Työ \> Työtiedot** ja suodattaa työt, joissa **Varasto** -arvo on *51*.
 
-1. Siirry mobiililaitteen **Saapuva \> Ostohyllytys**-kohtaan ja kirjoita työn kohderekisterikilpi.
-1. Kirjoita **Tunnus**-kenttään työtietojen kohderekisteritunnus.
+1. Siirry mobiililaitteen **Saapuva \> Ostohyllytys** -kohtaan ja kirjoita työn kohderekisterikilpi.
+1. Kirjoita **Tunnus** -kenttään työtietojen kohderekisteritunnus.
 
-    Cross-docking-keräyssivulla näkyy keräilysijainti (*RECV*), kohderekisterikilpi (*rekisterikilpi*), nimike (*A0001*) ja määrä (*3*).
+    Cross-docking-keräyssivulla näkyy keräilysijainti ( *RECV* ), kohderekisterikilpi ( *rekisterikilpi* ), nimike ( *A0001* ) ja määrä ( *3* ).
 
 1. Valitse **OK**.
-1. Kirjoita **Kohde-RK**-kenttään sen rekisterikilven tunnus, joka on tarkoitus sijoittaa (cross-dockata) lähetyssijaintiin. Voit valita haluamasi rekisterikilven tunnuksen.
+1. Kirjoita **Kohde-RK** -kenttään sen rekisterikilven tunnus, joka on tarkoitus sijoittaa (cross-dockata) lähetyssijaintiin. Voit valita haluamasi rekisterikilven tunnuksen.
 1. Valitse **OK**.
-1. Kirjoita seuraavalla sivulla **Tunnus**-kenttään kohderekisteritunnus.
+1. Kirjoita seuraavalla sivulla **Tunnus** -kenttään kohderekisteritunnus.
 1. Valitse **OK**.
 1. Vahvista jäljellä olevan määrän 2 poimintatyö ja valitse **OK**.
-1. Valitse seuraavalla sivulla **Valmis**, kun haluat lopettaa poimintaprosessin ja aloittaa hyllytysprosessin.
+1. Valitse seuraavalla sivulla **Valmis** , kun haluat lopettaa poimintaprosessin ja aloittaa hyllytysprosessin.
 
     Mobiilisovellus esittää sinulle sijainnin ja rekisterikilven, johon kohde sijoitetaan.
 
@@ -310,7 +311,7 @@ Tällä hetkellä molemmilla työtunnuksilla on sama kohderekisterikilpi. Jotta 
 
     Näyttöön tulee Työ valmis -sanoma.
 
-1. Valitse **Peruuta**, jos haluat poistua.
+1. Valitse **Peruuta** , jos haluat poistua.
 
 Seuraavassa kuvassa näkyy, miten tehty cross-docking-työ saattaa näkyä Microsoft Dynamics 365 Supply Chain Managementissa.
 

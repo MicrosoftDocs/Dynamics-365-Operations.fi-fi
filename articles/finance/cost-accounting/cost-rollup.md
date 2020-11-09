@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976376"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006163"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
@@ -76,7 +76,7 @@ Organisaation raportointivaatimukset täyttävä dimension hierarkia voidaan mä
 
 **Dimensiohierarkia**
 
-|              | Dimension jäsenalueet |                     |
+|    &nbsp;    | Dimension jäsenalueet | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Solmukohdat**        | **Lähtödimension jäsen**   | **Kohdedimension jäsen** |
 | Organisaatio |                         |                     |
@@ -97,7 +97,7 @@ Käytännön vaatimukset täyttävä dimension hierarkia voidaan määrittää s
 
 **Dimensiohierarkia**
 
-|                         | Dimension jäsenalueet |                     |
+|      &nbsp;             | Dimension jäsenalueet |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Solmukohdat                   | Lähtödimension jäsen   | Kohdedimension jäsen |
 | Tuloslaskelma |                         |                     |
@@ -105,7 +105,7 @@ Käytännön vaatimukset täyttävä dimension hierarkia voidaan määrittää s
 
 Kustannusobjektin mukainen kustannusmerkinnän saldo näyttää seuraavalta kirjanpidon merkintöjen käsittelyn jälkeen.
 
-|                      | **Kustannusobjekti** |           |           |           | **Yhteensä**     |
+|      &nbsp;          | **Kustannusobjekti** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Yhteensä**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Kustannustaso**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Sähkö** | 100,00          | 200 000    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -155,11 +155,11 @@ Kustannusten kohdistussäännöt voidaan määrittää seuraavasti.
 <a name="brhow-cost-flows-between-cost-centers"></a><br>Kustannuspaikkojen välinen kustannusvirta 
 ---------------------------------------------------
 
-Jos haluat tietää minkälainen on organisaation kustannuspaikkojen välinen kustannusvirta, voit luoda kullekin kustannuspaikalle **Toissijainen**-tyypin kustannustasoja. Näitä kustannustasoja voi sitten käyttää siirtämään saldoja kustannuspaikkojen välillä yleiskustannuslaskennan aikana.
+Jos haluat tietää minkälainen on organisaation kustannuspaikkojen välinen kustannusvirta, voit luoda kullekin kustannuspaikalle **Toissijainen** -tyypin kustannustasoja. Näitä kustannustasoja voi sitten käyttää siirtämään saldoja kustannuspaikkojen välillä yleiskustannuslaskennan aikana.
 
 Kustannustason dimension jäsenet voidaan määrittää seuraavasti.
 
-| Kustannustasot | Laji          |               |
+| Kustannustasot | Laji          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Sähkö   | Ensisijainen       |
 | 1002          | Palkat      | Ensisijainen       |
@@ -169,7 +169,7 @@ Kustannustason dimension jäsenet voidaan määrittää seuraavasti.
 | **SC-CC003**  | **Kokoonpano**  | **Toissijainen** |
 | **SC-CC004**  | **Pakkaus** | **Toissijainen** |
 
-**Tuloslaskelma**-dimensiohierarkia on päivitettävä uuden dimension jäsenillä, jotta dimension hierarkia sisältää oikeat raportoinnin ja käytäntöjen määrittämisessä käytettävät tiedot.
+**Tuloslaskelma** -dimensiohierarkia on päivitettävä uuden dimension jäsenillä, jotta dimension hierarkia sisältää oikeat raportoinnin ja käytäntöjen määrittämisessä käytettävät tiedot.
 
 **Dimension hierarkiatiedot**
 
@@ -179,14 +179,14 @@ Kustannustason dimension jäsenet voidaan määrittää seuraavasti.
 
 **Dimensiohierarkia**
 
-|                         | Dimension jäsenalueet |                     |
+|      &nbsp;             | Dimension jäsenalueet |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Solmukohdat                   | Lähtödimension jäsen   | Kohdedimension jäsen |
 | Tuloslaskelma |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Ensisijainen kustannus                        | 10 001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Toissijainen kustannus                         | **SC-CC001**            | **SC-CC004**        |
 
-Luo **kustannusten koontikäytäntö**, jossa kukin kustannuspaikka on yhdistetty vastaavaan tyypin **Toissijainen** kustannustasoon.
+Luo **kustannusten koontikäytäntö** , jossa kukin kustannuspaikka on yhdistetty vastaavaan tyypin **Toissijainen** kustannustasoon.
 
 **Kustannusten koontikäytännöt**
 
@@ -211,7 +211,7 @@ Luo **kustannusten koontikäytäntö**, jossa kukin kustannuspaikka on yhdistett
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Kustannusten kohdistuskirjauskansio | Tilivuosi                 | 2017    | Kausi 1 | Yleiskustannusten laskenta / 01-02-2017 23:51:00 / Kirjanpito /2017 / Kausi 1 |
 
-Järjestelmä käyttää nyt **kustannusten koontikäytäntöä**, kun se luo **kustannusobjektin saldon kirjauskansioviennit**.
+Järjestelmä käyttää nyt **kustannusten koontikäytäntöä** , kun se luo **kustannusobjektin saldon kirjauskansioviennit**.
 
 **Kustannusobjektin saldon kirjauskansioviennit**
 
@@ -258,7 +258,7 @@ Voit tarkastella tietoja dimensiohierarkioiden ansiosta eri koostetasoilla.
 
 Tässä on esimerkki Excelin Power Pivot -raportoinnista.
 
-| **Tuloslaskelma** | **Kustannusobjekti** |                |               |               |  **Yhteensä**    |
+| **Tuloslaskelma** | **Kustannusobjekti** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Yhteensä**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Ensisijainen kustannus**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -276,7 +276,7 @@ Tässä on esimerkki Excelin Power Pivot -raportoinnista.
 
 Jos sama esimerkki on suoritettu **kustannuksen koontikäytäntöä** luomatta, raportoinnin tulos olisi sama kuin alla oleva. Kustannusvirta on oikein mutta kustannuspaikkojen välinen kustannusvirtojen jäljitettävyys ja yksityiskohdat menetetään.
 
-| **Tuloslaskelma** | **Kustannusobjekti** |           |               |               |          **Yhteensä**  |
+| **Tuloslaskelma** | **Kustannusobjekti** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Yhteensä**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Ensisijainen kustannus**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

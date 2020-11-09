@@ -3,7 +3,7 @@ title: Kokeen yhdistäminen ja variaatioiden muokkaaminen
 description: Tässä ohjeaiheessa käsitellään kolmannen osapuolen palvelussa olevan kokeen yhdistämistä Dynamics 365 Commerceen ja kokeen variaatioiden muokkaamista.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,16 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ea1da0a7dc90b7197f3ee532bccc55d2ddbe4ddd
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930190"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4096964"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Kokeen yhdistäminen ja variaatioiden muokkaaminen
 
-Tässä ohjeaiheessa käsitellään kokeen yhdistämistä Commercessa ja muutosten tekemistä variaatioihin siten, että ne vastaavat hypoteesia. Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä ohjeaiheissa.
+Tässä ohjeaiheessa käsitellään kokeen yhdistämistä Commercessa ja muutosten tekemistä variaatioihin siten, että ne vastaavat hypoteesia. 
+
+Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä ohjeaiheissa.
 
 [ ![Kokeilun käyttäjän siirtymä – yhdistäminen ja muokkaaminen](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
@@ -38,9 +40,9 @@ Sen jälkeen kun [koe on määritetty](experimentation-setup.md) kolmannen osapu
 Ennen kuin koe yhdistetään Commercessa, sinun tehtävä päätöksiä, jotka vaikuttavat Commercen tapaan hallita sisältöä.
 
 ### <a name="determine-the-scope-of-your-experiment"></a>Kokeen laajuuden määrittäminen
-Koetta yhdistettäessä sinua pyydetään määrittämään kokeen laajuus. Kokeen laajuudeksi määritetään **osittainen**tai **kokonaan**.
-- Valitse **osittainen**, jos haluat suorittaa kokeen tietyssä sivun osassa. Jos valitset tämän vaihtoehdon, sinun on määritettävä, mikä moduuleista sisältyy kokeeseen. Oletussivun osiin tai osiin, jotka eivät liity kokeen, tehdyt muutokset synkronoidaan automaattisesti variaatioiden välillä.
-- Valitse **kokonaan**, jos haluat suorittaa kokeen koko sivulla tai osassa. Oletussivusta tai osasta luodaan erilliset kopiot. Kokeeseen sisältyviä moduuleja ei tarvitse valita, sillä koko muokkausalaa voidaan muuttaa. Voit tarpeen mukaan lisätä, poistaa ja järjestää moduuleja uudelleen. Jos muutokset kuitenkin tehdään oletussivulle tai osalle, johon koe on liitetty, kyseiset muutokset on synkronoitava manuaalisesti eri variaatioihin.
+Koetta yhdistettäessä sinua pyydetään määrittämään kokeen laajuus. Kokeen laajuudeksi määritetään **osittainen** tai **kokonaan**.
+- Valitse **osittainen** , jos haluat suorittaa kokeen tietyssä sivun osassa. Jos valitset tämän vaihtoehdon, sinun on määritettävä, mikä moduuleista sisältyy kokeeseen. Oletussivun osiin tai osiin, jotka eivät liity kokeen, tehdyt muutokset synkronoidaan automaattisesti variaatioiden välillä.
+- Valitse **kokonaan** , jos haluat suorittaa kokeen koko sivulla tai osassa. Oletussivusta tai osasta luodaan erilliset kopiot. Kokeeseen sisältyviä moduuleja ei tarvitse valita, sillä koko muokkausalaa voidaan muuttaa. Voit tarpeen mukaan lisätä, poistaa tai järjestää moduuleja uudelleen. Jos muutokset kuitenkin tehdään oletussivulle tai osalle, johon koe on liitetty, kyseiset muutokset on synkronoitava manuaalisesti eri variaatioihin.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 
@@ -56,10 +58,12 @@ Lisätietoja julkaisuryhmistä on kohdassa [Julkaisuryhmien kanssa työskentelem
 ## <a name="connect-your-experiment"></a>Kokeen yhdistäminen
 Yhdistä koe käynnistämällä ohjattu **Yhdistä koe** -toiminto. Ohjattu toiminto opastaa kokeen yhdistämisvaiheissa. Kun ohjattu toiminto on suoritettu, koe on yhdistetty sekä variaatiot luotu ja valmiita muokattaviksi.
 
-1. Käynnistä ohjattu toiminto valitsemalla **Kokeet**-välilehti sivustonmuodostimessa ja valitse sitten **Yhdistä**. Ohjattua toimintoa voidaan käyttää myös sivu- tai osaeditorista. Valitse muokkaustilan komentopalkissa **Yhdistä koe**.
+Kokeen yhdistäminen Commercen sivustonmuodostimeen aloitetaan seuraavasti:
 
-> [!NOTE]
-> Sivu voidaan yhdistää kerrallaan vain yhteen kokeeseen. Voit yhdistää sivun toiseen kokeeseen poistamalla ensin kokeen sivulta, johon se on nyt yhdistetty.
+1. Käynnistä ohjattu **Yhdistä koe** -toiminto valitsemalla vasemmassa siirtymisruudussa **Kokeet** ja valitsemalla sitten **Yhdistä**. Vaihtoehtoisesti voit käyttää ohjattua toimintoa sivu- tai osaeditorista muokkaamalla sitä tai valitsemalla komentopalkissa **Yhdistä koe**.
+
+    > [!NOTE]
+    > Sivu voidaan yhdistää kerrallaan vain yhteen kokeeseen. Voit yhdistää sivun toiseen kokeeseen poistamalla ensin kokeen sivulta, johon se on nyt yhdistetty.
 
 1. Valitse sivu tai osa, jossa haluat suorittaa kokeilun.
 1. Määritä kokeilun laajuudeksi **osittainen** tai **kokonaan** sen mukaan, mitä valittiin edellä olevassa kohdassa [Kokeen laajuuden määrittäminen](#determine-the-scope-of-your-experiment).

@@ -3,7 +3,7 @@ title: Maksumoduuli
 description: Tässä ohjeaiheessa on tietoja maksumoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818323"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055378"
 ---
 # <a name="payment-module"></a>Maksumoduuli
 
@@ -42,6 +42,9 @@ Maksumoduuli kattaa kaikki tilauskulut, jotka eivät kuulu kanta-asiakkuuspistei
 
 Adyen-yhdistin tukee myös asiakkaan vahvaa todennusta (SCA). Osa Euroopan unionin (EU) maksupalveludirektiivistä 2.0 (PSD2.0) edellyttää, että online-ostajat todennetaan verkko-ostoskokemuksensa ulkopuolella, kun he käyttävät sähköistä maksutapaa. Kassatyönkulun aikana asiakkaat ohjataan pankkisivustolle. Sitten todennuksen jälkeen ne ohjataan takaisin Commerce Checkout -työnkulkuun. Tämän uudelleenohjauksen aikana asiakkaan kassatyönkulkuun syötetyt tiedot (esimerkiksi toimitusosoite, toimitusvaihtoehdot, lahjakorttitiedot ja kanta-asiakastiedot) säilyvät ennallaan. Ennen kuin voit ottaa tämän toiminnon käyttöön, maksuyhteys on konfiguroitava SCA:lle Commerce Headquarters -sovelluksessa. Lisätietoja on kohdassa [vahva asiakastodennus käyttäen Adyen-sovellusta](adyen_redirect.md).
 
+> [!NOTE]
+> Adyen-maksuyhdistimessä maksumoduulin iframe-moduuli voidaan hahmontaa vain, jos Adyenin URL-osoite lisätään sivuston sallittujen luetteloon. Viimeistele tämä vaihe lisäämällä **\*.adyen.com** sivuston sisällön suojauskäytännön direktiiveihin **child-src** , **connect-src** , **img-src** , **script-src** ja **style-src**. Lisätietoja on kohdassa [Sisällön suojauskäytännön hallinta](manage-csp.md). 
+
 Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuudesta ja maksumoduuleista maksusivulla.
 
 ![Esimerkki lahjakortista, kanta-asiakkuudesta ja maksumoduuleista maksusivulla](./media/ecommerce-payments.PNG)
@@ -52,12 +55,12 @@ Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuudesta ja maksumodu
 |---------------|--------|-------------|
 | Otsikko | Otsikon teksti | Maksumoduulin valinnainen otsikko. |
 | Iframen korkeus | Pikseliä | Iframe-kentän korkeus kuvapisteinä. Korkeutta voi muuttaa tarvittaessa. |
-| Näytä laskutusosoite | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, laskutusosoite näytetään Adyen-maksumoduulin iframe-ohjelman sisällä. Jos arvo on **Epätosi**, laskutusosoitetta ei näytetä Adyenissa, ja Commerce-käyttäjän on konfiguroitava moduuli näyttämään laskutusosoite kassasivulla. |
+| Näytä laskutusosoite | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi** , laskutusosoite näytetään Adyen-maksumoduulin iframe-ohjelman sisällä. Jos arvo on **Epätosi** , laskutusosoitetta ei näytetä Adyenissa, ja Commerce-käyttäjän on konfiguroitava moduuli näyttämään laskutusosoite kassasivulla. |
 | Maksun tyylin ohitus | CSS-tyylisivut (CSS) -koodi | Koska maksumoduulia isännöidään iframe-ohjelmassa, muotoiluominaisuus on rajallinen. Voit saavuttaa joitakin muotoiluja käyttämällä tätä ominaisuutta. Sivuston tyylien ohittaminen edellyttää, että liität CSS-koodin tämän ominaisuuden arvoksi. Sivuston muodostimen CSS-ohitukset ja tyylit eivät koske tätä moduulia. |
 
 ## <a name="billing-address"></a>Laskutusosoite
 
-Maksumoduulin avulla asiakkaat voivat antaa laskutusosoitteen maksutiedoille. Sen avulla he voivat myös käyttää toimitusosoitetta laskutusosoitteena, jotta kassatyönkulku sujuisi helpommin ja nopeammin. Jos **Näytä laskutusosoite** -ominaisuuden arvo on **Epätosi**, maksumoduuli tulee määrittää kassalle-sivulla.
+Maksumoduulin avulla asiakkaat voivat antaa laskutusosoitteen maksutiedoille. Sen avulla he voivat myös käyttää toimitusosoitetta laskutusosoitteena, jotta kassatyönkulku sujuisi helpommin ja nopeammin. Jos **Näytä laskutusosoite** -ominaisuuden arvo on **Epätosi** , maksumoduuli tulee määrittää kassalle-sivulla.
 
 ## <a name="add-a-payment-module-to-a-checkout-page-and-set-the-required-properties"></a>Lisää maksumoduuli kassasivulle ja määritä pakolliset ominaisuudet
 

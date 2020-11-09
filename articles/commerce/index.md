@@ -19,15 +19,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024657"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107158"
 ---
 # <a name="commerce-home-page"></a>Kaupan aloitussivu
-
 
 [!include [banner](includes/banner.md)]
 
@@ -50,9 +49,9 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 - [Commercen esikatseluympäristön määrittäminen](provisioning-guide.md)
 - [Kaupan arkkitehtuuri](retail-components.md)
 - [Kanaviesi määrittäminen](channels-overview.md)
-- [Tuotteittesi ja palvelujesi kauppa](set-up-retail-products.md)
+- [Tuotteiden ja palveluiden myynninedistäminen](set-up-retail-products.md)
 - [Tilausten hallinta](Order-fulfillment-overview.md)
-- [Hallitse asiakkaitasi](set-up-customer-loyalty-program.md)
+- [Asiakkaiden hallinta](set-up-customer-loyalty-program.md)
 - [Myyntitietojesi hallinta](retail-statements.md)
 - [Verkkokauppasivustosi hallinta](online-store-overview.md)
 - [Petosten torjunta](dev-itpro/DFP.md)

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173151"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000731"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisaatiohierarkia Common Data Servicessa
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Koska Dynamics 365 Finance on talousjärjestelmä, *organisaatio* on keskeinen käsite ja järjestelmän asennusohjelma alkaa organisaatiohierarkian konfiguraatiosta. Yrityksen taloustietoja voidaan sitten seurata organisaatiotasolla ja millä tahansa organisaatiohierarkian tasolla.
 
@@ -41,8 +38,6 @@ Vaikka Common Data Servicessa ei ole käsitettä organisaatiohierarkia, siinä o
 Liiketoiminnan ekosysteemillä, joka koostuu Finance and Operations -sovelluksesta ja Common Data Servicesta, on jatkossakin organisaatiohierarkia. Tämä organisaatiohierarkia perustuu Finance and Operations -sovelluksiin, mutta se näkyy Common Data Servicessä tiedon jakamista ja laajennettavuutta varten. Seuraavassa kuvassa näkyy organisaatiohierarkian tiedot, jotka näkyvät Common Data Servicessä yksisuuntaisena tiedonkulkuna Finance and Operations -sovelluksista Common Data Serviceen.
 
 ![Arkkitehtuurikuva](media/dual-write-data-flow.png)
-
-## <a name="templates"></a>Mallit
 
 Organisaatiohierarkian entiteettien yhdistämismääritykset ovat käytettävissä yksisuuntaiseen tietojen synkronointiin Finance and Operations -sovelluksista Common Data Serviceen.
 
@@ -55,10 +50,9 @@ Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset | kuvaus
 Organisaatiohierarkian tarkoitukset | msdyn_internalorganizationhierarchypurposes | Tässä mallissa on yksisuuntainen Organisaatiohierarkian tarkoitus -yksikön synkronointi.
 Organisaatiohierarkian tyyppi | msdyn_internalorganizationhierarchytypes | Tässä mallissa on yksisuuntainen Organisaatiohierarkiatyyppi-yksikön synkronointi.
 Organisaatiohierarkia – julkaistu | msdyn_internalorganizationhierarchies | Tässä mallissa on yksisuuntainen Organisaatiohierarkia julkaistu -yksikön synkronointi.
-Toimintayksikkö | msdyn_internalorganizations | 
-Oikeushenkilöt | msdyn_internalorganizations | 
+Toimintayksikkö | msdyn_internalorganizations |
+Oikeushenkilöt | msdyn_internalorganizations |
 Oikeushenkilöt | cdm_companies | Sisältää yrityksen (yhtiön) kaksisuuntaisen synkronoinnin.
-
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
@@ -77,4 +71,3 @@ Sisäisen organisaation tiedot ovat Common Data Servicessa peräisin kahdesta yk
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-

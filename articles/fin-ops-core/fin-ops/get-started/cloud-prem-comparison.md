@@ -3,7 +3,7 @@ title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 description: Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100279"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040096"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
@@ -58,10 +58,10 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |                                      | ER: Integrointi LCS:n kanssa                                                                  | Kyllä       | Ei              |
 |                                      | ER: Integrointi SharePointin kanssa                                                           | Kyllä       | Ei              |
 |                                      | ER: Integrointi Regulatory Configuration Services (RCS) -palvelun kanssa                              | Kyllä       | Ei              |
-|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Ei        | Kyllä             |
-|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Ei              |
-|                                      | Integrointi PowerBI Desktop:n kanssa                                                          | Ei        | Kyllä             |
-|                                      | Analyysityötilat                                                                     | Kyllä       | Ei              |
+|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Nro        | Kyllä             |
+|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Nro              |
+|                                      | PowerBI Desktop -integrointi                                                          | Nro        | Kyllä             |
+|                                      | Analyysityötilat                                                                     | Kyllä       | Nro              |
 |                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Nro              |
 |                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Nro              |
 |                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | Ei              |
@@ -87,6 +87,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 
 | **Alue**                | **Ominaisuus**             | **Pilvi** | **Paikallinen** |
 |-------------------------|-------------------|-----------|-----------------|
+| Resurssien hallinta                     |                                                                                           | Kyllä       | Nro |
 | Yhteensopivuus ja sertifiointi        |                                                                                           | Kyllä       | Kyllä             |
 |                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Nro              |
 | Kustannuslaskenta                      |                                                                                           | Kyllä       | Kyllä             |
@@ -106,10 +107,10 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |                                      | ER: Integrointi LCS:n kanssa                                                                  | Kyllä       | Ei              |
 |                                      | ER: Integrointi SharePointin kanssa                                                           | Kyllä       | Ei              |
 |                                      | ER: Integrointi Regulatory Configuration Services (RCS) -palvelun kanssa                              | Kyllä       | Ei              |
-|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Ei        | Kyllä             |
-|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Ei              |
-|                                      | Integrointi PowerBI Desktop:n kanssa                                                          | Ei        | Kyllä             |
-|                                      | Analyysityötilat                                                                     | Kyllä       | Ei              |
+|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Nro        | Kyllä             |
+|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Nro              |
+|                                      | PowerBI Desktop -integrointi                                                          | Nro        | Kyllä             |
+|                                      | Analyysityötilat                                                                     | Kyllä       | Nro              |
 |                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Nro              |
 |                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Nro              |
 |                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | En              |

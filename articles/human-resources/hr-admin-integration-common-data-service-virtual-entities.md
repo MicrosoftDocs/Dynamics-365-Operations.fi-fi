@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0848b7556100fba38fcab0aa2a1a109e2e055fc9
-ms.sourcegitcommit: b89baab13e530b5b1f079231619c628309a4742d
+ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
+ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959572"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058151"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Common Data Service -virtuaaliyksiköiden määrittäminen
 
@@ -62,13 +62,13 @@ Sovellus on rekisteröitävä ensin Azure-portaalissa, jotta Microsoftin käytt�
 
 3. Valitse **Uusi rekisteröinti**.
 
-4. Kirjoita **Nimi**-kenttään sovellusta kuvaava nimi. Esimerkki: **Dynamics 365 Human Resourcesin virtuaaliyksiköt**.
+4. Kirjoita **Nimi** -kenttään sovellusta kuvaava nimi. Esimerkki: **Dynamics 365 Human Resourcesin virtuaaliyksiköt**.
 
 5. Anna **Uudelleenohjauksen URI** -kenttään Human Resources -esiintymän nimitilan URL-osoite.
 
 6. Valitse **Rekisteröi**.
 
-7. Kun rekisteröinti valmistuu, Azure-portaali näyttää sovelluksen rekisteröinnin **Yleiskatsaus**-ruudussa, joka sisältää myös sen **sovelluksen (asiakasohjelman) tunnuksen**. Kirjoita muistiin tämä **sovelluksen (asiakasohjelman) tunnus**. Nämä tiedot annetaan, kun [määrität virtuaaliyksikön tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. Kun rekisteröinti valmistuu, Azure-portaali näyttää sovelluksen rekisteröinnin **Yleiskatsaus** -ruudussa, joka sisältää myös sen **sovelluksen (asiakasohjelman) tunnuksen**. Kirjoita muistiin tämä **sovelluksen (asiakasohjelman) tunnus**. Nämä tiedot annetaan, kun [määrität virtuaaliyksikön tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
 
 8. Valitse vasemmassa siirtymisruudussa **Varmenteet ja salaiset koodit**.
 
@@ -87,9 +87,9 @@ Asenna Dynamics 365 HR Virtual Entity -sovellus Power Apps -ympäristöön ottam
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
-2. Valitse **Ympäristöt**-luettelossa Human Resources -esiintymään liitetty Power Apps -ympäristö.
+2. Valitse **Ympäristöt** -luettelossa Human Resources -esiintymään liitetty Power Apps -ympäristö.
 
-3. Valitse sivun **Resurssit**-osassa **Dynamics 365 -sovellukset**.
+3. Valitse sivun **Resurssit** -osassa **Dynamics 365 -sovellukset**.
 
 4. Valitse **Asenna sovellus** -toiminto.
 
@@ -109,13 +109,13 @@ Seuraavaksi määritetään virtuaaliyksikön tietolähde Power Apps -ympärist�
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
-2. Valitse **Ympäristöt**-luettelossa Human Resources -esiintymään liitetty Power Apps -ympäristö.
+2. Valitse **Ympäristöt** -luettelossa Human Resources -esiintymään liitetty Power Apps -ympäristö.
 
-3. Valitse **Ympäristön URL-osoite** sivun **Tiedot**-osassa.
+3. Valitse **Ympäristön URL-osoite** sivun **Tiedot** -osassa.
 
-4. Valitse **Ratkaisun kunnon keskus** -kohdassa **Erikoishaku**-kuvake sovellussivun oikeassa yläkulmassa.
+4. Valitse **Ratkaisun kunnon keskus** -kohdassa **Erikoishaku** -kuvake sovellussivun oikeassa yläkulmassa.
 
-5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Finance and Operations -virtuaalitietolähteen määritykset**.
+5. Valitse **Erikoishaku** -sivun avattavassa **Etsi** -luettelossa **Finance and Operations -virtuaalitietolähteen määritykset**.
 
 6. Valitse **Tulokset**.
 
@@ -123,10 +123,10 @@ Seuraavaksi määritetään virtuaaliyksikön tietolähde Power Apps -ympärist�
 
 8. Anna tietolähteen määrityksessä tarvittavat tiedot.
 
-   - **Kohde-URL**: Human Resources -nimitilan URL-osoite.
-   - **Vuokraajan tunnus**: Azure Active Directory (Azure AD) -vuokraajan tunnus.
-   - **AAD-sovelluksen tunnus**: Microsoft Azure -portaalissa rekisteröidylle sovellukselle luotu sovelluksen (asiakaspalvelijan) tunnus. Saint nämä tiedot aiemman [Sovelluksen rekisteröinti Microsoft Azuressa](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) -vaiheen aikana.
-   - **AAD-sovelluksen salainen koodi**: Microsoft Azure -portaalissa rekisteröidylle sovellukselle luotu asiakasohjelman salasana. Saint nämä tiedot aiemman [Sovelluksen rekisteröinti Microsoft Azuressa](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) -vaiheen aikana.
+   - **Kohde-URL** : Human Resources -nimitilan URL-osoite.
+   - **Vuokraajan tunnus** : Azure Active Directory (Azure AD) -vuokraajan tunnus.
+   - **AAD-sovelluksen tunnus** : Microsoft Azure -portaalissa rekisteröidylle sovellukselle luotu sovelluksen (asiakaspalvelijan) tunnus. Saint nämä tiedot aiemman [Sovelluksen rekisteröinti Microsoft Azuressa](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) -vaiheen aikana.
+   - **AAD-sovelluksen salainen koodi** : Microsoft Azure -portaalissa rekisteröidylle sovellukselle luotu asiakasohjelman salasana. Saint nämä tiedot aiemman [Sovelluksen rekisteröinti Microsoft Azuressa](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) -vaiheen aikana.
 
 9. Valitse **Tallenna ja sulje**.
 
@@ -143,45 +143,46 @@ Myönnä kahden Azure AD -sovelluksen oikeudet Human Resourcesissa:
 
 2. Luo uusi sovellustietue valitsemalla **Uusi**.
 
-    - Anna **Asiakastunnus**-kentässä Microsoft Azure -portaalissa rekisteröidyn sovelluksen asiakastunnus.
-    - Anna **Nimi**-kentässä Microsoft Azure -portaalissa rekisteröidyn sovelluksen nimi.
-    - Valitse **Käyttäjätunnus**-kentässä sellaisen käyttäjän käyttäjätunnus, jolla on Human Resources- ja Power Apps -ympäristön järjestelmänvalvojan käyttöoikeudet.
+    - Anna **Asiakastunnus** -kentässä Microsoft Azure -portaalissa rekisteröidyn sovelluksen asiakastunnus.
+    - Anna **Nimi** -kentässä Microsoft Azure -portaalissa rekisteröidyn sovelluksen nimi.
+    - Valitse **Käyttäjätunnus** -kentässä sellaisen käyttäjän käyttäjätunnus, jolla on Human Resources- ja Power Apps -ympäristön järjestelmänvalvojan käyttöoikeudet.
 
 3. Luo toinen sovellustietue valitsemalla **Uusi**.
 
-    - **Asiakastunnus**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Nimi**: Dynamics 365 HR Virtual Entity
-    - Valitse **Käyttäjätunnus**-kentässä sellaisen käyttäjän käyttäjätunnus, jolla on Human Resources- ja Power Apps -ympäristön järjestelmänvalvojan käyttöoikeudet.
+    - **Asiakastunnus** : f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Nimi** : Dynamics 365 HR Virtual Entity
+    - Valitse **Käyttäjätunnus** -kentässä sellaisen käyttäjän käyttäjätunnus, jolla on Human Resources- ja Power Apps -ympäristön järjestelmänvalvojan käyttöoikeudet.
 
 ## <a name="generate-virtual-entities"></a>Virtuaaliyksiköiden luominen
 
 Voit valita asennuksen valmistumisen jälkeen virtuaaliyksiköt, jotka haluat luoda ja ottaa käyttöön Common Data Service -esiintymässä.
 
-1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
+1. Avaa Human Resourcesissa **Common Data Service (CDS) -integraatio** -sivu.
 
-2. Valitse **Ympäristöt**-luettelossa Human Resources -esiintymään liitetty Power Apps -ympäristö.
-
-3. Valitse **Ympäristön URL-osoite** sivun **Tiedot**-osassa.
-
-4. Valitse **Ratkaisun kunnon keskus** -kohdassa **Erikoishaku**-kuvake sivun oikeassa yläkulmassa.
-
-5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Käytettävissä olevat HR-yksiköt**.
-
-6. Etsi käyttöönotettavat yksiköt suodatinasetuksilla.
-
-7. Valitse yksikkö luettelossa.
-
-8. Muuta yksikkösivulla yksikön **On luotu** -ominaisuudeksi **Kyllä**.
-
-9. Tallenna ja sulje yksikkösivu.
+2. Valitse **Virtuaaliyksiköt** -välilehti.
 
 > [!NOTE]
-> Voit luoda useita virtuaaliyksikköjä samanaikaisesti **Muuta useita tietueita** -sivulla. Valitse sivulla ensin useita tietueita ja valitse sitten valintanauhassa **Muokkaa**. Voit sitten muuttaa kaikkien valittujen tietueiden **On luotu** -ominaisuuden.
+> **Ota virtuaaliyksikkö käyttöön** -tilanvaihtopainike on automaattisesti **Kyllä** -asennossa, kun kaikki tarvittavat määritykset on tehty. Jos tilanvaihtopainike on **Ei** -asennossa, tarkista tämä asiakirjan edellisten osien vaiheet ja varmista, että kaikki edellytettävät asetukset on määritetty.
 
-![Käytettävissä olevat HR-yksiköt](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Valitse Common Data Servicessa luotavat yksiköt.
 
-> [!NOTE]
-> Virtuaaliyksiköiden luontiprosessia yksinkertaistetaan tulevissa versioissa siten, että prosessi tapahtuu Human Resourcesin sivulla.
+4. Valitse **Luo/päivitä**.
+
+![Common Data Service -integraatio](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## <a name="check-entity-generation-status"></a>Yksikön luontitilan tarkistaminen
+
+Virtuaaliyksiköt luodaan Common Data Servicessa asynkronisena taustaprosessina. Prosessin päivitykset näkyvät toimintokeskuksessa. Prosessin tiedot, kuten virhelokit, näkyvät **Prosessin automatisoinnit** -sivulla.
+
+1. Avaa Human Resourcesissa **Prosessin automatisoinnit** -sivu.
+
+2. Valitse **Taustaprosessit** -välilehti.
+
+3. Valitse **Virtuaaliyksikön kyselyn asynkroninen toiminnon taustaprosessi**.
+
+4. Valitse **Näytä viimeisimmät tulokset**.
+
+Esiin tulevassa ruudussa näkyy prosessin viimeksi suoritetut tulokset. Voit tarkastella prosessin lokia, mukaan lukien mahdollisia Common Data Servicen palauttamia virheitä.
 
 ## <a name="see-also"></a>Lisätietoja
 

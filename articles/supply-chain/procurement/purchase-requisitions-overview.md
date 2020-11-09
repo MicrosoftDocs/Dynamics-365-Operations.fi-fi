@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
+ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e09c4ebd3ee978076ac4f1d0b71041e7c1e954be
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: a14ae2771890085308b560cea59240556c6a55a3
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826897"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018672"
 ---
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
@@ -38,7 +38,7 @@ Kun ostoehdotus on hyväksytty, sitä voidaan käyttää ostotilauksen luomiseen
 ## <a name="creating-purchase-requisitions"></a>Ostoehdotuksien luominen
 Voit luoda ostoehdotuksen **Omat ostoehdotukset** -sivulla ja valita tarvitsemasi nimikkeet ja palvelut. Voit valita nimikkeet tuotteiden hankintaluettelosta, jonka organisaatiosi on luonut, tai voit pyytää nimikkeet, joita ei löydy luettelosta, valitsemalla hankintaluokan ja kirjoittamalla tuotteen tiedot.  
 
-Ennen kuin ostoehdotus voidaan lähettää tarkistettavaksi, työnkulut on määritettävä. Työnkulun avulla voit siirtää ostoehdotuksen tarkistusprosessin läpi alkuperäisestä **Luonnos**-tilasta lopulliseen **Hyväksytty**-tilaan.
+Ennen kuin ostoehdotus voidaan lähettää tarkistettavaksi, työnkulut on määritettävä. Työnkulun avulla voit siirtää ostoehdotuksen tarkistusprosessin läpi alkuperäisestä **Luonnos** -tilasta lopulliseen **Hyväksytty** -tilaan.
 
 ### <a name="purchase-requisition-statuses"></a>Ostoehdotusten tilat
 
@@ -154,7 +154,7 @@ Käyttääksesi ostoehdotuksia, joiden tarkoitus on täydennys, pääajoitus on 
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Ostoehdotukset ja tarjouspyynnöt
 Joissain tapauksissa on aloitettava tarjouspyyntöprosessi, jonka kautta tunnistat toimittajan ja ostoehdotuksessa pyydettyjen tuotteiden hinnan. Tarjouspyynnön voi luoda ostoehdotuksen ollessa tarkistettavana. Kun hyväksyt tarjouksen, tiedot toimittajasta, hinnasta ja niin edelleen siirretään ehdotukseen.  
 
-Voit laittaa ostoehdotuksen pitoon valitsemalla **Pidossa**-valintaruudun **Ostoehdotuksen tiedot** -sivulla. Ostoehdotuksen käsittely voi jatkua vasta, kun poistat eston poistamalla tämän valintaruudun.  
+Voit laittaa ostoehdotuksen pitoon valitsemalla **Pidossa** -valintaruudun **Ostoehdotuksen tiedot** -sivulla. Ostoehdotuksen käsittely voi jatkua vasta, kun poistat eston poistamalla tämän valintaruudun.  
 
 > [!NOTE]
 > Sähköisessä hankinnassa ostoehdotuksesi tarjouspyyntö voi antaa toimittajien lisätä vaihtoehtoisia rivejä. Tässä tapauksessa hyväksytyt vaihtoehdot näkyvät ostoehdotuksessa.

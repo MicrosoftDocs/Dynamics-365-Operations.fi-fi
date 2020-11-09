@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989269"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015064"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Ajoitusmoduulin suorituskyvyn parantaminen
 
@@ -216,7 +216,7 @@ Jos aikataulutus suoritetaan osana pääsuunnittelua, jossa käytetään apuosia
 
 Tarvesuunnittelussa kaikki tietyn tuoterakennetason tuotantotilaukset aikataulutetaan tarvepäiväjaksossa, joten tilaukset, joilla on aikaisin tarvepäivä, on aikataulutettava ensimmäisenä. Niinpä ne myös todennäköisimmin saavat käytettävissä olevan resurssin kapasiteetin. Jos useat moduulit kuitenkin tekevät poimintoja aikatauluttamattomien tilausten luettelosta, järjestys ei ole enää varma, sillä tilaukset voivat valmistua eri aikaan.
 
-Jos aikataulutukseen käytetään lisäksi rajallista kapasiteettia ja useat moduuliesiintymät yrittävät aikatauluttaa tilauksia, jotka mahdollisesti käyttävät samoja resursseja samalla aikavälillä, seurauksena voi olla kilpailutilanne. Kyseisten kilpailutilanteiden määrä kirjataan **Aikatauluristiriidat**-kenttään pääsuunnitelmien historiasivulla. Ristiriitojen ratkaisulla on seuraava logiikka:
+Jos aikataulutukseen käytetään lisäksi rajallista kapasiteettia ja useat moduuliesiintymät yrittävät aikatauluttaa tilauksia, jotka mahdollisesti käyttävät samoja resursseja samalla aikavälillä, seurauksena voi olla kilpailutilanne. Kyseisten kilpailutilanteiden määrä kirjataan **Aikatauluristiriidat** -kenttään pääsuunnitelmien historiasivulla. Ristiriitojen ratkaisulla on seuraava logiikka:
 
 - Ajoita tilaus (lukitsematta) ja hae kapasiteetin varaukset.
 - Tee lukitus.
@@ -238,13 +238,9 @@ Jos esimerkiksi resurssiryhmän työaika tiettynä päivänä on 8.00–16.00, y
 
 Kaikkien resurssiryhmään kuuluvien resurssien työn aikataulutuksen kuormitus tiettynä päivänä otetaan huomioon, kun resurssiryhmän käytettävissä olevaa kapasiteettia lasketaan kyseiselle päivälle. Laskenta tehdään seuraavasti kunkin päivän osalta:
 
-> Käytettävissä oleva resurssiryhmän kapasiteetti =  
-> (ryhmän resurssien kapasiteetti kalenterien perusteella) -  
-> (työn aikataulutettu kuormitus ryhmän resursseissa) -  
-> (työvaiheiden aikataulutettu kuormitus ryhmän resursseissa) -  
-> (työvaiheiden aikataulutettu kuormitus resurssiryhmässä) -
+*Käytettävissä oleva resurssiryhmän kapasiteetti = ryhmän resurssien kapasiteetti resurssien kalentereiden perusteella &ndash; ryhmän resursseille aikataulutettu työmäärä &ndash; toimintojen ryhmän resursseille aikataulutettu määrä &ndash; toimintojen resurssiryhmälle aikataulutettu määrä*
 
-Resurssitarpeet voidaan määrittää reittityövaiheen **Resurssitarpeet**-välilehdessä käyttämällä joko tiettyä resurssia (jolloin työvaihe aikataulutetaan kyseisellä resurssilla) resurssiryhmässä tai resurssityypissä tai vähintään yhteä ominaisuutta, taitoa, kurssia tai sertifikaattia. Vaikka kaikkien näiden vaihtoehtojen käyttäminen tuo valtavasti joustavuutta reittisuunnitteluun, se myös monimutkaistaa moduulin aikatauluttamista, sillä kapasiteetti on otettava huomioon ominaisuuskohtaisesti. (Ominaisuus on abstrakti nimi, jolla moduuli viittaa esimerkiksi toimintoon tai taitoihin.)
+Resurssitarpeet voidaan määrittää reittityövaiheen **Resurssitarpeet** -välilehdessä käyttämällä joko tiettyä resurssia (jolloin työvaihe aikataulutetaan kyseisellä resurssilla) resurssiryhmässä tai resurssityypissä tai vähintään yhteä ominaisuutta, taitoa, kurssia tai sertifikaattia. Vaikka kaikkien näiden vaihtoehtojen käyttäminen tuo valtavasti joustavuutta reittisuunnitteluun, se myös monimutkaistaa moduulin aikatauluttamista, sillä kapasiteetti on otettava huomioon ominaisuuskohtaisesti. (Ominaisuus on abstrakti nimi, jolla moduuli viittaa esimerkiksi toimintoon tai taitoihin.)
 
 Ominaisuus resurssiryhmän kapasiteetti on kaikkien niiden resurssiryhmän resurssien kapasiteetin summa, joilla on kyseinen ominaisuus. Jos ryhmän resurssilla on ominaisuus, se otetaan huomioon riippumatta siitä, mikä kapasiteettitaso tarvitaan.
 
@@ -252,11 +248,7 @@ Työvaiheiden aikataulutuksessa resurssiryhmän tietyn ominaisuuden käytettävi
 
 Kunkin päivän osalta tarvitaan seuraava laskenta:
 
-> Käytettävissä oleva ominaisuuden kapasiteetti =  
-> (ominaisuuden kapasiteetti) -  
-> (työn aikataulutettu kuormitus resursseille, joilla tietty ominaisuus ja jotka sisältyvät resurssiryhmään) -  
-> (työvaiheiden aikataulutettu kuormitus resursseille, joilla tietty ominaisuus ja jotka sisältyvät resurssiryhmään) -  
-> (työvaiheiden aikataulutettu kuormitus resurssiryhmässä, jossa tiettyä ominaisuutta tarvitaan)
+*Ominaisuuden käytettävissä oleva kapasiteetti = ominaisuuden kapasiteetti &ndash; työn aikataulutettu määrä resurssiryhmään sisältyvälle resurssille, jolla on tietty ominaisuus &ndash; toimintojen aikataulutettu määrä resurssiryhmään sisältyvälle resurssille, jolla on tietty ominaisuus &ndash; toimintojen aikataulutettu kuorma resurssiryhmälle, joka edellyttää tiettyä ominaisuutta*
 
 Niinpä jos tiettyä resurssia on kuormitettu, kuormitus on otetaan huomioon resurssiryhmän ominaisuuskohtaisessa käytettävissä olevan kapasiteetin laskennassa, koska tietyn resurssin kuormitus vähentää resurssiryhmän kapasiteetin osuutta ominaisuudessa riippumatta siitä, koskeeko tietyn resurssin kuormitus kyseistä ominaisuutta. Jos kuormitus on resurssiryhmätasolla, se otetaan huomioon resurssiryhmän käytettävissä olevan ominaisuuskohtaisen kapasiteetin laskennassa vain, jos kuormitus koskee työvaihetta, joka edellyttää tiettyä ominaisuutta.
 
@@ -313,7 +305,7 @@ Rajallisen kapasiteetin käyttö edellyttää, että moottori lataa kapasiteetti
 
 ### <a name="setting-hard-links"></a>Kiinteiden linkkien määrittäminen
 
-Reitin vakiolinkkityyppi on *symbolinen*, jolloin yhden työvaiheen valmistumisajan ja seuraavan alkamisajan välillä voi olla aikaväli. Valitettavasti tämän salliminen aiheuttaa sen, että jos yhdelle työvaiheelle ei ole käytettävissä materiaaleja tai kapasiteettia erittäin pitkään aikaan, tuotanto voi joutua odottamaan pitkäänkin, mikä puolestaan voi lisätä keskeneräisiä töitä. Kiinteitä linkkejä käytettäessä näin ei tapahdu, sillä päättymisen ja alkamisen on vastattava toisiaan täydellisesti. Kiinteiden linkkien määrittäminen kuitenkin hankaloittaa aikataulutusongelmaa entisestään, koska työajan ja kapasiteetin leikkaukset on laskettava työvaiheiden kahdelle resurssille. Jos mukana on myös samanaikaisia työvaiheita, laskennallinen aika lisääntyy merkittävästi. Jos kahden työvaiheen resursseilla on eri kalenterit, joilla ei ole lainkaan päällekkäisyyksiä, ongelmaa ei voida ratkaista.
+Reitin vakiolinkkityyppi on *symbolinen* , jolloin yhden työvaiheen valmistumisajan ja seuraavan alkamisajan välillä voi olla aikaväli. Valitettavasti tämän salliminen aiheuttaa sen, että jos yhdelle työvaiheelle ei ole käytettävissä materiaaleja tai kapasiteettia erittäin pitkään aikaan, tuotanto voi joutua odottamaan pitkäänkin, mikä puolestaan voi lisätä keskeneräisiä töitä. Kiinteitä linkkejä käytettäessä näin ei tapahdu, sillä päättymisen ja alkamisen on vastattava toisiaan täydellisesti. Kiinteiden linkkien määrittäminen kuitenkin hankaloittaa aikataulutusongelmaa entisestään, koska työajan ja kapasiteetin leikkaukset on laskettava työvaiheiden kahdelle resurssille. Jos mukana on myös samanaikaisia työvaiheita, laskennallinen aika lisääntyy merkittävästi. Jos kahden työvaiheen resursseilla on eri kalenterit, joilla ei ole lainkaan päällekkäisyyksiä, ongelmaa ei voida ratkaista.
 
 Kiinteitä linkkejä kannattaakin käyttää vain silloin, kun ne ovat ehdottoman välttämättömiä, minkä lisäksi on pohdittava huolellisesti tarvitaanko niitä reitin jokaisessa työvaiheessa.
 
@@ -329,7 +321,7 @@ Koska moduuli etsii kapasiteettia tarkastelemalla ajankohtia yksi kerrallaan, ka
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Aikataulutuksen pitkät (tai puuttuvat) aikakatkaisut
 
-Ajoitusmoduulin suorituskyky voidaan optimoida käyttämällä **Ajoitusparametrit**-sivulla olevia parametreja. **Aikataulutuksen aikakatkaisu käytössä**- ja **Aikataulutuksen optimoinnin aikakatkaisu käytössä** -asetuksena on aina oltava **Kyllä**. Jos asetuksena on **Ei**, aikataulutus voi periaatteessa jatkua vaikka kuinka kauan, jos luotu reitti ei ole käyttökelpoinen ja siinä on paljon vaihtoehtoja.
+Ajoitusmoduulin suorituskyky voidaan optimoida käyttämällä **Ajoitusparametrit** -sivulla olevia parametreja. **Aikataulutuksen aikakatkaisu käytössä** - ja **Aikataulutuksen optimoinnin aikakatkaisu käytössä** -asetuksena on aina oltava **Kyllä**. Jos asetuksena on **Ei** , aikataulutus voi periaatteessa jatkua vaikka kuinka kauan, jos luotu reitti ei ole käyttökelpoinen ja siinä on paljon vaihtoehtoja.
 
 **Sarjakohtainen enimmäisajoitusaika** -asetuksen arvo määrittää, kuinka monta sekuntia voidaan enintään yrittää löytää ratkaisu yhdelle jaksolle (useimmissa tapauksissa jakso vastaa yhtä tilausta). Tässä käytettävä arvo määräytyy ennen kaikkea reitin monimutkaisuuden ja asetusten, rajallinen kapasiteetti, mukaan. Yleensä enintään 30 sekuntia on hyvä lähtökohta.
 

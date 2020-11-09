@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 251e9982451c888424589e0f0d6fce48aab42df1
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323574"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017802"
 ---
 # <a name="wave-step-codes"></a>Aallon vaihekoodit
 
@@ -40,7 +40,7 @@ Tietyn aallon vaihetyypin aallon vaihekoodit määritetään erillisellä sivull
 
 ## <a name="setup-demo"></a>Asennuksen esittely 
 
-Esittelytietojen on oltava asennettuna tätä esittelyä varten, ja sinun on käytettävä esittelytietojen **USMF**-yritystä.
+Esittelytietojen on oltava asennettuna tätä esittelyä varten, ja sinun on käytettävä esittelytietojen **USMF** -yritystä.
 
 ### <a name="enable-wave-step-codes"></a>Ota käyttöön aallon vaihekoodit
 
@@ -59,7 +59,7 @@ Käyttöönoton aikana validoinnit tehdään tietojen päivityksen aikana. Jos p
 
 Kun olet ratkaissut vahvistusten aikana havaitut ristiriidat, voit yrittää ottaa ominaisuuden uudelleen käyttöön.
 
-Kun ominaisuus on otettu onnistuneesti käyttöön, **Aallon vaihekoodit** -sivu (**Varastonhallinta \> Asetukset \> Aallot \> Aallon vaihekoodit**) tulee saataville. Tällä sivulla on luettelo aallon vaihekoodeista, jotka päivitettiin, kun organisaationlaajuinen aallon vaihekoodi -ominaisuus otettiin käyttöön.
+Kun ominaisuus on otettu onnistuneesti käyttöön, **Aallon vaihekoodit** -sivu ( **Varastonhallinta \> Asetukset \> Aallot \> Aallon vaihekoodit** ) tulee saataville. Tällä sivulla on luettelo aallon vaihekoodeista, jotka päivitettiin, kun organisaationlaajuinen aallon vaihekoodi -ominaisuus otettiin käyttöön.
 
 ### <a name="create-new-wave-step-codes"></a>Uusien aallon vaihekoodien luominen
 
@@ -85,11 +85,11 @@ Tässä luettelossa olevia malleja käytetään, kun niihin viitataan aaltomalli
 
 Seuraava toimenpide auttaa varmistamaan, että luomasi täydennysmalli otetaan käyttöön aaltomallille.
 
-1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Aallot \> Aallon vaihekoodit** ja luo aiheen vaihekoodi **Täydennys**-tyypille.
+1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Aallot \> Aallon vaihekoodit** ja luo aiheen vaihekoodi **Täydennys** -tyypille.
 2. Siirry kohtaan **Varastonhallinta \> Asetukset \> Täydennys \> Täydennysmallit** ja luo täydennysmalli.
-3. Valitse täydennysmallista aallon vaihekoodi, jonka loit **Täydennys**-tyypille.
+3. Valitse täydennysmallista aallon vaihekoodi, jonka loit **Täydennys** -tyypille.
 4. Siirry kohtaan **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit** ja valitse aaltomalli, jota haluat käyttää.
-5. Valitse mallin **Menetelmät**-pikavälilehdestä **Täydennys**-menetelmä.
+5. Valitse mallin **Menetelmät** -pikavälilehdestä **Täydennys** -menetelmä.
 6. Valitse **Aallon vaihekoodi** -kentästä aallon vaihekoodi, jonka valitsit täydennysmallille.
 
 Nämä vaiheet suoritetaan kullekin yritykselle.

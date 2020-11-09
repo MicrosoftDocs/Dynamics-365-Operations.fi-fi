@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchRFQTable
+ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b83490acdc58c9ee0ffae9480f69a99477913843
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: b4349eeba285492202b5df8481b277a06708a4c8
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834351"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018210"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Hintojen, alennusten, sopimusten ja ostohyvitysten vianmääritys
 
@@ -48,7 +48,7 @@ Sanoma on kauppasopimuksen arviointi (TAE) -kehote. Täydellinen kuvaus [Kauppas
 
 Seuraavassa esitetään yksi tapa ongelman toistamiseen.
 
-1. Varmista **Osto- ja hankintaparametrit** -sivun **Toimitus**-välilehdessä, että **Luo maksuja tuotteen vastaanottamisen yhteyteen** -asetuksen arvona on *Kyllä*.
+1. Varmista **Osto- ja hankintaparametrit** -sivun **Toimitus** -välilehdessä, että **Luo maksuja tuotteen vastaanottamisen yhteyteen** -asetuksen arvona on *Kyllä*.
 1. Luo ostotilaus, joka sisältää maksuja.
 1. Vahvista ostotilaus.
 1. Vastaanota ostotilaus.
@@ -109,7 +109,7 @@ Kauppasopimusten hintoja ei lasketa uudelleen valuutan mukaan, kun valuutta on o
 
 ## <a name="when-i-open-the-purchase-agreement-page-in-a-line-view-mode-i-cant-personalize-the-page-by-adding-the-price-unit-field-in-the-overview-of-the-line"></a>Kun avaan ostosopimussivun rivinäkymätilassa, en voi mukauttaa sivua lisäämällä hintayksikön kenttää rivin yhteenvetoon.
 
-Osaa sopimuskehyksen yhteisiä kenttiä ei voi sisällyttää yksilöinteihin. Tämä rajoitus ilmenee käytettävän tietomallin vuoksi. Siksi et voi mukauttaa **Hintayksikkö**-kenttää.
+Osaa sopimuskehyksen yhteisiä kenttiä ei voi sisällyttää yksilöinteihin. Tämä rajoitus ilmenee käytettävän tietomallin vuoksi. Siksi et voi mukauttaa **Hintayksikkö** -kenttää.
 
 ## <a name="the-maximum-limit-from-a-purchase-agreement-isnt-effective-on-a-purchase-requisition"></a>Ostosopimuksen yläraja ei ole päde ostoehdotukseen.
 

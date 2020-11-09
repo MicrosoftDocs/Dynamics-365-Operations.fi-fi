@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
-ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
+ms.openlocfilehash: 46a6ed9763781de8e05cff7adadf75fe2a931fdc
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3728410"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997523"
 ---
 # <a name="company-concept-in-common-data-service"></a>Yrityksen käsite Common Data Servicessa
 
@@ -33,7 +32,7 @@ ms.locfileid: "3728410"
 
 Finance and Operationsissa käsite *Yritys* on sekä oikeudellinen että liiketoiminnallinen yksikkö. Se on myös tietojen suojauksen ja näkyvyyden raja. Käyttäjät työskentelevät aina yksittäisen yrityksen kontekstissa, ja suurin osa tiedoista on yrityksen omistamia.
 
-Common Data Servicessa ei ole vastaavaa käsitettä. Lähin käsite on *liiketoimintayksikkö*, joka on ensisijaisesti tietoturvan ja näkyvyyden raja käyttäjätiedoille. Tällä käsitteellä ei ole sama oikeudellisia tai liiketoiminnan vaikutuksia kuin yrityksen käsitteellä.
+Common Data Servicessa ei ole vastaavaa käsitettä. Lähin käsite on *liiketoimintayksikkö* , joka on ensisijaisesti tietoturvan ja näkyvyyden raja käyttäjätiedoille. Tällä käsitteellä ei ole sama oikeudellisia tai liiketoiminnan vaikutuksia kuin yrityksen käsitteellä.
 
 Koska liiketoimintayksikkö ja yritys eivät ole vastaavia käsitteitä, ei ole mahdollista pakottaa yksi-yhteen (1:1)-vastaavuutta niiden välillä Common Data Service -integrointia varten. Koska käyttäjien on kuitenkin oletusarvoisesti pystyttävä näkemään samat tietueet sovelluksessa ja Common Data Servicessa, Microsoft on ottanut käyttöön uuden entiteetin Common Data Servicessa, jonka nimi on cdm\_Company. Tämä entiteetti vastaa sovelluksen Yritys-yksikköä. Jos haluat varmistaa, että tietueiden näkyvyys vastaa toisiaan sovelluksen ja Common Data Servicen välillä heti käyttöönotettaessa, suosittelemme seuraavaa tietojen määritystä Common Data Servicessa:
 
@@ -57,7 +56,7 @@ Tämän määrityksen vuoksi kaikki USMF-yritykseen liittyvät tietueet omistaa 
 
 Kuten edellä olevassa kuvassa näkyy, tämä 1:1-yhteys liiketoimintayksikön, yrityksen ja tiimin välillä on vain lähtökohta. Tässä esimerkissä uusi Europe-liiketoimintayksikkö luodaan manuaalisesti Common Data Servicessa sekä DEMF:n että ESMF:n ylätasona. Tämä uusi pääliiketoimintayksikkö ei liity kaksoiskirjoittamiseen. Sen avulla voidaan kuitenkin antaa "EUR Sales"-tiimin jäsenille pääsy tilitietoihin sekä DEMF:ssä että ESMF:ssä asettamalla tietojen näkyvyydeksi **Ylätaso/aliliiketoimintayksikkö** liittyvässä käyttöoikeusroolissa.
 
-Viimeinen aihe, josta keskustellaan, on se, miten kaksoiskirjoitus määrittää, mihin omistajaryhmään sen tulisi liittää tietueita. Tätä toimintaa ohjaa cdm\_Company-tietueen **Oletusomistajaryhmä**-kenttä. Kun cdm\_Company-tietueelle on otettu käyttöön kaksoiskirjoitus, laajennus luo automaattisesti liittyvän liiketoimintayksikön ja omistajaryhmän (jos sitä ei vielä ole) ja määrittää **Oletusomistajaryhmä**-kentän. Järjestelmänvalvoja voi muuttaa kentän arvoksi eri arvon. Järjestelmänvalvoja ei kuitenkaan voi tyhjentää kenttää niin kauan kuin entiteetti on kaksoiskirjoitustilassa.
+Viimeinen aihe, josta keskustellaan, on se, miten kaksoiskirjoitus määrittää, mihin omistajaryhmään sen tulisi liittää tietueita. Tätä toimintaa ohjaa cdm\_Company-tietueen **Oletusomistajaryhmä** -kenttä. Kun cdm\_Company-tietueelle on otettu käyttöön kaksoiskirjoitus, laajennus luo automaattisesti liittyvän liiketoimintayksikön ja omistajaryhmän (jos sitä ei vielä ole) ja määrittää **Oletusomistajaryhmä** -kentän. Järjestelmänvalvoja voi muuttaa kentän arvoksi eri arvon. Järjestelmänvalvoja ei kuitenkaan voi tyhjentää kenttää niin kauan kuin entiteetti on kaksoiskirjoitustilassa.
 
 > [!div class="mx-imgBorder"]
 ![Oletusomistajaryhmä-kenttä](media/dual-write-default-owning-team.jpg)
@@ -78,26 +77,26 @@ Common Data Service -integrointi tuo yrityksen pariteetin käyttämällä yritys
 
 Yrityksen nimi voidaan täyttää automaattisesti usealla eri tavalla asiakkaiden aktivointisovelluksissa.
 
-+ Järjestelmänvalvoja voi määrittää oletusyrityksen valitsemalla **Lisäasetukset > Järjestelmä > Suojaus > Käyttäjät**. Avaa **Käyttäjä**-lomake ja määritä sitten **Organisaation tiedot** -osassa **Yrityksen oletusarvo lomakkeissa** -arvo.
++ Järjestelmänvalvoja voi määrittää oletusyrityksen valitsemalla **Lisäasetukset > Järjestelmä > Suojaus > Käyttäjät**. Avaa **Käyttäjä** -lomake ja määritä sitten **Organisaation tiedot** -osassa **Yrityksen oletusarvo lomakkeissa** -arvo.
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Oletusyrityksen määrittäminen Organisaation tiedot -osassa":::
 
-+ Jos sinulla on **Järjestelmäkäyttäjä**-entiteetin **Kirjoitus**-käyttöoikeus **Liiketoimintayksikkö**-tasolla, voit muuttaa oletusyrityksen missä tahansa lomakkeessa valitsemalla yrityksen avattavasta **Yritys**-luettelosta.
++ Jos sinulla on **Järjestelmäkäyttäjä** -entiteetin **Kirjoitus** -käyttöoikeus **Liiketoimintayksikkö** -tasolla, voit muuttaa oletusyrityksen missä tahansa lomakkeessa valitsemalla yrityksen avattavasta **Yritys** -luettelosta.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Yrityksen nimen muuttaminen uudessa tilissä":::
 
-+ Jos sinulla on useamman kuin yhden yrityksen **Kirjoitus**-käyttöoikeus, voit vaihtaa oletusyrityksen valitsemalla toiselle yritykselle kuuluvan tietueen.
++ Jos sinulla on useamman kuin yhden yrityksen **Kirjoitus** -käyttöoikeus, voit vaihtaa oletusyrityksen valitsemalla toiselle yritykselle kuuluvan tietueen.
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Tietueen valitseminen vaihtaa oletusyrityksen":::
 
-+ Jos olet järjestelmän määrittäjä tai järjestelmänvalvoja ja haluat täyttää yrityksen tiedot automaattisesti mukautetussa lomakkeessa, voit käyttää [lomaketapahtumia](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Lisää JavaScript-viittaus kohteeseen **msdyn_/DefaultCompany.js** ja käytä seuraavia tapahtumia. Voit käyttää mitä tahansa valmista lomaketta, kuten **Tili**-lomaketta.
++ Jos olet järjestelmän määrittäjä tai järjestelmänvalvoja ja haluat täyttää yrityksen tiedot automaattisesti mukautetussa lomakkeessa, voit käyttää [lomaketapahtumia](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Lisää JavaScript-viittaus kohteeseen **msdyn_/DefaultCompany.js** ja käytä seuraavia tapahtumia. Voit käyttää mitä tahansa valmista lomaketta, kuten **Tili** -lomaketta.
 
-    + Lomakkeen **OnLoad**-tapahtuma: määritä **defaultCompany**-kenttä.
-    + **Yritys**-kentän **OnChange**-tapahtuma: määritä **updateDefaultCompany**-kenttä.
+    + Lomakkeen **OnLoad** -tapahtuma: määritä **defaultCompany** -kenttä.
+    + **Yritys** -kentän **OnChange** -tapahtuma: määritä **updateDefaultCompany** -kenttä.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Suodatuksen käyttäminen yrityskontekstin perusteella
 
-Voit käyttää mukautettujen lomakkeiden yrityskontekstiin tai vakiolomakkeisiin lisättyihin mukautettuihin valintakenttiin perustuvaa suodatusta avaamalla lomakkeen ja ottamalla yrityssuodatuksen käyttöön **Liittyvien tietueiden suodatus** -osassa. Tämä asetus on määritettävä jokaiselle valintakentälle, joka suodatetaan tietyn tietueen taustalla olevan yrityksen perusteella. Seuraavassa kuvassa on tämä asetus **Tili**-lomakkeessa.
+Voit käyttää mukautettujen lomakkeiden yrityskontekstiin tai vakiolomakkeisiin lisättyihin mukautettuihin valintakenttiin perustuvaa suodatusta avaamalla lomakkeen ja ottamalla yrityssuodatuksen käyttöön **Liittyvien tietueiden suodatus** -osassa. Tämä asetus on määritettävä jokaiselle valintakentälle, joka suodatetaan tietyn tietueen taustalla olevan yrityksen perusteella. Seuraavassa kuvassa on tämä asetus **Tili** -lomakkeessa.
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Yrityskontekstin käyttäminen":::
 

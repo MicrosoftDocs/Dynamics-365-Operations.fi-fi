@@ -3,7 +3,7 @@ title: Ostoskorimoduuli
 description: Tässä ohjeaiheessa on tietoja ostoskorimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818272"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055424"
 ---
 # <a name="cart-module"></a>Ostoskorimoduuli
 
@@ -50,9 +50,9 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta. Tässä e
 
 | Ominaisuus | Arvot | kuvaus |
 |----------------|--------|-------------|
-| Otsikko | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Otsikko ostoskorille, kuten Ostoskassi tai Ostoskorin nimikkeet. |
-| Näytä Loppunut varastosta -virheet | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, ostoskori-sivulla näkyvät varastoon liittyvät virheet. On suositeltavaa määrittää tämän ominaisuuden arvoksi **Tosi**, jos varastotarkistuksia käytetään toimipaikassa. |
-| Näytä rivinimikkeiden kuljetusmaksut | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, ostoskorin rivinimikkeissä näkyy kuljetusmaksut, jos nämä tiedot ovat käytettävissä. Tämä toiminto ei ole tuettu Fabrikam-teemassa, koska käyttäjät valitsevat lähetyksen vain kassavirrasta. Tämä toiminto voidaan kuitenkin ottaa käyttöön muissa työnkuluissa, jos se on sovellettavissa. |
+| Otsikko | Otsikkoteksti ja -tunnus ( **H1** , **H2** , **H3** , **H4** , **H5** tai **H6** ) | Otsikko ostoskorille, kuten Ostoskassi tai Ostoskorin nimikkeet. |
+| Näytä Loppunut varastosta -virheet | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi** , ostoskori-sivulla näkyvät varastoon liittyvät virheet. On suositeltavaa määrittää tämän ominaisuuden arvoksi **Tosi** , jos varastotarkistuksia käytetään toimipaikassa. |
+| Näytä rivinimikkeiden kuljetusmaksut | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi** , ostoskorin rivinimikkeissä näkyy kuljetusmaksut, jos nämä tiedot ovat käytettävissä. Tämä toiminto ei ole tuettu Fabrikam-teemassa, koska käyttäjät valitsevat lähetyksen vain kassavirrasta. Tämä toiminto voidaan kuitenkin ottaa käyttöön muissa työnkuluissa, jos se on sovellettavissa. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduulit, joita voidaan käyttää ostoskorimoduulissa
 
@@ -61,11 +61,14 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta. Tässä e
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
-Seuraavat ostoskorimoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
+Seuraavat ostoskorimoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset** :
 
 - **Maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
 - **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
 - **Jatka ostoksia** – Tällä ominaisuudella määritetään **Jatka ostoksia** -linkin reitti. Reitti voidaan konfiguroida sivuston tasolla, jolloin jälleenmyyjät voivat ohjata asiakkaan takaisin kotisivulle tai mille tahansa muulle sivuston sivulle.
+
+> [!IMPORTANT]
+> Dynamics 365 Commerce versiossa 10.0.14 ja sitä uudemmissa versioissa nimikkeet kerätään ostoskoriin Commercen pääkonttoriversion verkkokaupan verkkotoimintoprofiilissa määritettyjen asetusten perusteella. Lisätietoja verkkotoimintoprofiilin luomisesta ja koostamiseen tarvittavien ominaisuuksien määrittämisestä on kohdassa [Verkkotoimintoprofiilin luominen](online-functionality-profile.md).
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
@@ -76,21 +79,21 @@ Ostoskorimoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi osa** -valintaikkunassa **Ostoskori**-moduuli.
+1. Valitse **Uusi osa** -valintaikkunassa **Ostoskori** -moduuli.
 1. Kirjoita **Osan nimi** -kohtaan **Ostoskorin osa** ja valitse sitten **OK**.
-1. Valitse **Ostoskori**-paikka.
+1. Valitse **Ostoskori** -paikka.
 1. Valitse oikealla olevassa ominaisuudet-ruudussa kynäsymboli, kirjoita otsikko tekstikenttään ja valitse sitten valintamerkkisymboli.
-1. Valitse kolme pistettä (**...**) **Ostoskori**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse kolme pistettä ( **...** ) **Ostoskori** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin** -moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan mallin nimi.
-1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää osa**.
+1. Valitse jäsennyspuussa **Tekstiosa** -paikka. Valitse kolme pistettä ( **...** ) ja valitse sitten **Lisää osa**.
 1. Valitse **Valitse osa** -valintaikkunassa **Ostoskorin osa** ja valitse sitten **OK**.
-1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
 1. Valitse **Valitse malli** -valintaikkunassa malli, jonka loit aiemmin, lisää sivun nimi ja valitse sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
@@ -110,3 +113,5 @@ Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset omin
 [Lahjakorttimoduuli](add-giftcard.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
+
+[Luo online-toimintoprofiili](online-functionality-profile.md)

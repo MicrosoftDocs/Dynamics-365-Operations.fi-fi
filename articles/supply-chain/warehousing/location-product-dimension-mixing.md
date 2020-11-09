@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 968777b918d59b810a189139fbf4d6fee1b5d3f5
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3529980"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017158"
 ---
 # <a name="location-product-dimension-mixing"></a>Tuotedimensioiden yhdistäminen sijainnissa
 
@@ -44,12 +45,12 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varasto \> Sijaintiprofiilit**.
 1. Valitse sijaintiprofiilien luettelosta **BULKKI**.
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Määritä **Yleinen**-pikavälilehdessä **Ota käyttöön tuotedimensioiden yhdistäminen sijainnissa** -asetukseksi *Kyllä*.
+1. Määritä **Yleinen** -pikavälilehdessä **Ota käyttöön tuotedimensioiden yhdistäminen sijainnissa** -asetukseksi *Kyllä*.
 
     > [!NOTE]
     > Voit määrittää tämän asetuksen arvoksi *Kyllä* vain, jos **Salli yhdistetyt nimikkeet** -asetuksen arvoksi on määritetty *Ei*.
 
-1. Määritä **Sallitut tuotedimensioiden yhdistämiset** -pikavälilehdessä asetuksen **Koko** arvoksi *Kyllä*. Tässä ohjeaiheessa kuvatussa skenaariossa voidaan yhdistää vain tuotteita, joiden **Koko**-dimensiot eroavat toisistaan. Myös muita asetuksia on käytettävissä.
+1. Määritä **Sallitut tuotedimensioiden yhdistämiset** -pikavälilehdessä asetuksen **Koko** arvoksi *Kyllä*. Tässä ohjeaiheessa kuvatussa skenaariossa voidaan yhdistää vain tuotteita, joiden **Koko** -dimensiot eroavat toisistaan. Myös muita asetuksia on käytettävissä.
 1. Valitse **Tallenna**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Luo uusi päätuote ja tuotevariantit
@@ -66,14 +67,14 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
     - **Määritysmenetelmä:** *Ennalta määritetty variantti*
 
 1. Valitse **OK**.
-1. Määritä **Tuotteen tiedot** -sivun **Yleinen**-pikavälilehdessä seuraavat arvot:
+1. Määritä **Tuotteen tiedot** -sivun **Yleinen** -pikavälilehdessä seuraavat arvot:
 
     - **Luo variantit automaattisesti:** *Kyllä*
     - **Kokoryhmä:** *CASUALDHIR*
 
 1. Voit tarkastella ennalta määritettyjä variantteja valitsemalla toimintoruudussa **Tuotevariantit**.
 
-    Näkyviin tulee **Tuotevariantit**-sivu, jossa näkyy luettelo kokoryhmälle määritetyistä varianteista.
+    Näkyviin tulee **Tuotevariantit** -sivu, jossa näkyy luettelo kokoryhmälle määritetyistä varianteista.
 
 ### <a name="release-products-to-the-usmf-company"></a>Vapauta tuotteet USMF-yritykselle
 
@@ -87,38 +88,38 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
 
 ### <a name="update-a-released-product-in-the-usmf-company"></a>Vapautetun tuotteen päivittäminen USMF-yrityksessä
 
-1. Varmista, että olet kirjautunut **USMF**-yritykseen.
+1. Varmista, että olet kirjautunut **USMF** -yritykseen.
 1. Viimeistele vapautetun tuotteen luominen valitsemalla **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
-1. Etsi ja valitse nimikenumero *B0001*, joka avaa **Vapautetun tuotteen tiedot** -sivun.
+1. Etsi ja valitse nimikenumero *B0001* , joka avaa **Vapautetun tuotteen tiedot** -sivun.
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Varmista **Yleinen**-pikavälilehdessä, että **Nimikemalliryhmä**-kentän arvoksi on määritetty *FIFO*.
-1. Valitse toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Dimensioryhmät**.
+1. Varmista **Yleinen** -pikavälilehdessä, että **Nimikemalliryhmä** -kentän arvoksi on määritetty *FIFO*.
+1. Valitse toimintoruudun **Tuote** -välilehden **Asetukset** -ryhmässä **Dimensioryhmät**.
 1. Määritä seuraavat arvot:
 
     - **Varastodimensioryhmä:** *Kauppatavara*
     - **Seurantadimensioryhmä:** *Ei mitään*
 
 1. Valitse **OK**.
-1. Valitse toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Varaushierarkia**.
-1. Määritä **Varaushierarkia**-kentän arvoksi *Oletus* ja valitse sitten **OK**.
-1. Tarkista, että valintasi ovat päivittyneet **Yleinen**-pikavälilehden **Hallinta**-osaan.
-1. Kirjoita **Osto**-pikavälilehden **Hinta** -kenttään *10*.
-1. Kirjoita **Kustannusten hallinta** -pikavälilehden **Nimikeryhmä**-kenttään *Audio*.
-1. Kirjoita **Osto**-pikavälilehden **Hinta** -kenttään *10*.
-1. Kirjoita **Varasto**-pikavälilehden **Yksikön sarjaryhmän tunnus** -kenttään *ea*.
+1. Valitse toimintoruudun **Tuote** -välilehden **Asetukset** -ryhmässä **Varaushierarkia**.
+1. Määritä **Varaushierarkia** -kentän arvoksi *Oletus* ja valitse sitten **OK**.
+1. Tarkista, että valintasi ovat päivittyneet **Yleinen** -pikavälilehden **Hallinta** -osaan.
+1. Kirjoita **Osto** -pikavälilehden **Hinta** -kenttään *10*.
+1. Kirjoita **Kustannusten hallinta** -pikavälilehden **Nimikeryhmä** -kenttään *Audio*.
+1. Kirjoita **Osto** -pikavälilehden **Hinta** -kenttään *10*.
+1. Kirjoita **Varasto** -pikavälilehden **Yksikön sarjaryhmän tunnus** -kenttään *ea*.
 1. Valitse **Tallenna**.
 
 ### <a name="create-a-location-directive"></a>Luo toimipaikkadirektiivi
 
 1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
-1. Valitse vasemman ruudun **Työtilaustyyppi**-kentässä *Ostotilaukset*.
+1. Valitse vasemman ruudun **Työtilaustyyppi** -kentässä *Ostotilaukset*.
 1. Valitse luettelosta sijaintidirektiivi, jonka nimi on *24 PO Direct*.
-1. Lisää uusi rivi ruudukkoon**Sijaintidirektiivin toiminnot** -pikavälilehdessä **Uusi**.
+1. Lisää uusi rivi ruudukkoon **Sijaintidirektiivin toiminnot** -pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** *1*
 
-        Uuden rivin on oltava aiemmin luodun rivin edessä. Voit tehdä muutoksen käyttämällä työkalurivin **Siirry ylös** - ja **Siirry alas** -painikkeita tai muuttamalla aiemmin luodun rivin **Järjestysnumero**-kentän arvoksi *2*.
+        Uuden rivin on oltava aiemmin luodun rivin edessä. Voit tehdä muutoksen käyttämällä työkalurivin **Siirry ylös** - ja **Siirry alas** -painikkeita tai muuttamalla aiemmin luodun rivin **Järjestysnumero** -kentän arvoksi *2*.
 
     - **Nimi:** *Siirrä BULKKI-sijaintiprofiiliin*
     - **Kiinteän sijainnin käyttö:** *Kiinteät ja muut kuin kiinteät sijainnit*
@@ -127,7 +128,7 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
     - **Strategia:** *Ei mitään*
 
 1. Kun uusi rivi on vielä valittuna, valitse ruudukon yläpuolelle **Muokkaa kyselyä**.
-1. Lisää ruudukkoon rivi valitsemalla kyselyn valintaruudun **Alue**-välilehdessä **Lisää**.
+1. Lisää ruudukkoon rivi valitsemalla kyselyn valintaruudun **Alue** -välilehdessä **Lisää**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Taulu:** *Sijainnit*
@@ -136,10 +137,10 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
     - **Kriteerit:** *BULKKI*
 
 1. Valitse **OK**.
-1. Valitse **Sijaintidirektiivit**-sivun toimintoruudussa **Tallenna**.
+1. Valitse **Sijaintidirektiivit** -sivun toimintoruudussa **Tallenna**.
 
 > [!NOTE]
-> Jos käytät **Sijaintidirektiivin toiminnot** -pikavälilehden **Strategia**-kentässä asetusta *Konsolidoi*, **Sallitut tuotedimensioiden yhdistämiset** -välilehden **Sijaintiprofiilit**-asetus ohitetaan ja nimikkeet sijoitetaan samaan sijaintiin, vaikka tätä ei ole sallittu asetuksissa.
+> Jos käytät **Sijaintidirektiivin toiminnot** -pikavälilehden **Strategia** -kentässä asetusta *Konsolidoi* , **Sallitut tuotedimensioiden yhdistämiset** -välilehden **Sijaintiprofiilit** -asetus ohitetaan ja nimikkeet sijoitetaan samaan sijaintiin, vaikka tätä ei ole sallittu asetuksissa.
 
 ### <a name="create-a-mobile-device-menu-item"></a>Luo mobiililaitteen valikkovaihtoehto
 
@@ -152,7 +153,7 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
     - **Tila:** *Työ*
     - **Käytä aiemmin luotua työtä:** *Ei*
 
-1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
 
     - **Työn luomisprosessi:** *Ostotilausrivien vastaanotto ja hyllytys*
     - **Luo rekisterikilpi:** *Kyllä*
@@ -170,23 +171,23 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
 
 ## <a name="scenario"></a>Skenaario
 
-Tässä esimerkkiskenaariossa esitellään, kuinka kaksi eri tuotevarianttia voidaan sijoittaa samaan sijaintiin, vaikka sijaintiprofiili ei salli yhdistettyjä nimikkeitä, mutta *Tuotedimensioiden yhdistäminen sijainnissa* -toiminto on käytössä. Tässä tapauksessa ehtona käytetään **Koko**-varianttia.
+Tässä esimerkkiskenaariossa esitellään, kuinka kaksi eri tuotevarianttia voidaan sijoittaa samaan sijaintiin, vaikka sijaintiprofiili ei salli yhdistettyjä nimikkeitä, mutta *Tuotedimensioiden yhdistäminen sijainnissa* -toiminto on käytössä. Tässä tapauksessa ehtona käytetään **Koko** -varianttia.
 
-Varmista ennen aloittamista, että varastossa *24* on tyhjiä sijainteja, joissa käytetään *BULKKI*-sijaintiprofiilia.
+Varmista ennen aloittamista, että varastossa *24* on tyhjiä sijainteja, joissa käytetään *BULKKI* -sijaintiprofiilia.
 
 ### <a name="create-a-purchase-order"></a>Ostotilauksen luominen
 
-Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, mutta eri **Koko**-varianteille, ja kolmas rivi eri tuotteelle, jolla ei ole variantteja.
+Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, mutta eri **Koko** -varianteille, ja kolmas rivi eri tuotteelle, jolla ei ole variantteja.
 
 1. Valitse **Ostoreskontra \> Ostotilaukset \> Kaikki ostotilaukset**.
 1. Valitse toimintoruudussa **Uusi**.
 1. Aseta **Luo ostotilaus** -valintaikkunassa seuraavat arvot:
 
     - **Toimittajan tili:** *1001*
-    - **Varasto**: *24*
+    - **Varasto** : *24*
 
 1. Valitse **OK**.
-1. Ostotilaus luodaan ja uusi rivi lisätään **Ostotilausrivit**-pikavälilehteen. Kirjoita ostotilauksen numero muistiin.
+1. Ostotilaus luodaan ja uusi rivi lisätään **Ostotilausrivit** -pikavälilehteen. Kirjoita ostotilauksen numero muistiin.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Nimiketunnus:** *B0001*
@@ -209,13 +210,13 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 ### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Ostotilausrivien vastaanottaminen varasto-sovelluksessa
 
 1. Kirjaudu varastosovellukseen käyttäjänä, joka on otettu käyttöön varastossa *24*.
-1. Valitse **Saapuvat**-valikko.
+1. Valitse **Saapuvat** -valikko.
 1. Valitse **Ostotilausrivien vastaanotto**.
-1. Valitse **PUNUM**-kenttä ja syötä ostotilauksen numero.
+1. Valitse **PUNUM** -kenttä ja syötä ostotilauksen numero.
 1. Vahvista kirjaus valitsemalla Vahvista-painike (✔) sivun alareunasta.
-1. Syötä vastaanotettavan ostotilauksen rivinumero. Valitse **LINENUM**-kenttä ja syötä numero näppäimistön avulla *1*.
+1. Syötä vastaanotettavan ostotilauksen rivinumero. Valitse **LINENUM** -kenttä ja syötä numero näppäimistön avulla *1*.
 1. Vahvista kirjaus.
-1. Syötä vastaanotettava määrä. Paina plusmerkki ( **+**) -painiketta kaksi kertaa, jos haluat suurentaa **Määrä**-kentän arvon arvoon *2*.
+1. Syötä vastaanotettava määrä. Paina plusmerkki ( **+** ) -painiketta kaksi kertaa, jos haluat suurentaa **Määrä** -kentän arvon arvoon *2*.
 1. Rekisteröi merkintäsi valitsemalla sivun alareunasta (✔) -painike ja vahvista sitten kirjaus valitsemalla painike (✔) uudelleen.
 1. Tarkastele tietoja **Ostotilaukset: hyllytys** -sivulla. Tällä sivulla näkyvät hyllytystä varten luodut työt (työ 1).
 
@@ -228,7 +229,7 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 
 1. Toista vaiheet 4–11 uudelleen ostotilausriville 2. Määritä vaiheessa 8 jäljellä olevaksi määräksi *1*.
 
-    Uusi hyllytystyö (työ 3) luodaan samalle sijainnille kuin työ 1 ja työ 2. Tämä aiheutuu siitä, että sijaintidirektiivin strategiaksi on asetettu *Konsolidoi* ja **Sallitut tuotedimensioiden yhdistämiset** -pikavälilehden *Bulkki* **Sijaintiprofiilit** -asetus mahdollistaa eri **Koko**-variantin nimikkeiden varastoimisen tähän sijaintiin.
+    Uusi hyllytystyö (työ 3) luodaan samalle sijainnille kuin työ 1 ja työ 2. Tämä aiheutuu siitä, että sijaintidirektiivin strategiaksi on asetettu *Konsolidoi* ja **Sallitut tuotedimensioiden yhdistämiset** -pikavälilehden *Bulkki* **Sijaintiprofiilit** -asetus mahdollistaa eri **Koko** -variantin nimikkeiden varastoimisen tähän sijaintiin.
 
 1. Toista vaiheet 4–11 ostotilausriville 3. Määritä vaiheessa 8 nimikenumeron *A0001* määräksi *1*.
 
@@ -237,4 +238,4 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 1. Valitse sivun yläreunassa oleva valikkopainike (jota kutsutaan joskus nimellä hampurilainen tai Hamburger-painike) ja poistu **Ostotilausrivin vastaanotto** -tilasta valitsemalla **Peruuta**.
 
 > [!TIP]
-> Voit toistaa tämän skenaarion, mutta tällä kertaa määritä **Koko**-kentän arvoksi  - *Ei* **Salli tuotedimensioiden yhdistäminen**-pikavälilehden kohdassa *BULKKI* **Sijaintiprofiilit**, jolloin mitään tuotedimensioita ei voi varastoida samaan sijaintiin. Tällöin kun vastaanotat ostotilauksen, jokainen tuotevariantti sijoitetaan uuteen sijaintiin.
+> Voit toistaa tämän skenaarion, mutta tällä kertaa määritä **Koko** -kentän arvoksi  - *Ei* **Salli tuotedimensioiden yhdistäminen** -pikavälilehden kohdassa *BULKKI* **Sijaintiprofiilit** , jolloin mitään tuotedimensioita ei voi varastoida samaan sijaintiin. Tällöin kun vastaanotat ostotilauksen, jokainen tuotevariantti sijoitetaan uuteen sijaintiin.

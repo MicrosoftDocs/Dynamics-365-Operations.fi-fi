@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 336fb51dc5fb66dfbe14091d121e0a4471b9662b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978890"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006256"
 ---
 # <a name="price-simulation"></a>Hintasimulointi
 
@@ -74,7 +74,7 @@ Luot tarjouksen, jossa on seuraavat rivit:
 
 Tarjousrivit näkyvät seuraavassa taulukossa.
 
-|                            | Laskenta                          | Tulos   |
+|    &nbsp;                  | Laskenta                          | Tulos   |
 |----------------------------|--------------------------------------|----------|
 | Myyntimäärä             | 10 yksikköä + 12 yksikköä                  | 22 yksikköä |
 | Myyntiarvo Yhdysvaltain dollareina         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
@@ -84,7 +84,7 @@ Tarjousrivit näkyvät seuraavassa taulukossa.
 
 Suoritat hintasimuloinnin ja sovellat 15 prosentin kokonaisalennusta koko tarjoukseen tai tarjouksen otsikkoon. Seuraavassa taulukossa on esitetty tarjouksen uudet kokonaissummat hintasimuloinnin suorittamisen jälkeen.
 
-|                                                      | Laskenta                               | Tulos   |
+|     &nbsp;                                           | Laskenta                               | Tulos   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | Myyntimäärä                                       | 10 yksikköä + 12 yksikköä                       | 22 yksikköä |
 | Vanha myyntiarvo Yhdysvaltain dollareina                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
@@ -105,7 +105,7 @@ Luot tarjouksen, jossa on seuraavat rivit:
 
 Tarjousrivit näkyvät seuraavassa taulukossa.
 
-|                                      | Laskenta                          | Tulos   |
+|      &nbsp;                          | Laskenta                          | Tulos   |
 |--------------------------------------|--------------------------------------|----------|
 | Myyntimäärä                       | 10 yksikköä + 12 yksikköä                  | 22 yksikköä |
 | BR-12:n myyntiarvo Yhdysvaltain dollareina         | 10 × 15,32                           | 153,20   |
@@ -123,7 +123,7 @@ Tarjousrivit näkyvät seuraavassa taulukossa.
 
 Suoritat hintasimuloinnin ja sovellat 10 prosentin kokonaisalennusta BR-12-yksikköihin. Seuraavassa taulukossa on esitetty tarjouksen uudet kokonaissummat, kun hintasimulointi on suoritettu yhdelle rivinimikkeelle.
 
-|                                                   | Laskenta                             | Tulos   |
+|    &nbsp;                                         | Laskenta                             | Tulos   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | Myyntimäärä                                    | 10 yksikköä + 12 yksikköä                     | 22 yksikköä |
 | BR-12:n vanha myyntiarvo Yhdysvaltain dollareina                  | 10 × 15,32                              | 153,20   |

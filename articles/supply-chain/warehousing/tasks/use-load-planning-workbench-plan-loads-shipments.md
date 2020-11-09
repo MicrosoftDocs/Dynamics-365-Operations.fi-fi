@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7966c6e445e0e44cd4ff8518926aa6b410502e13
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c37a98a3728cb1233a6e1207975a6b8f23f8120d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980432"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015915"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Kuormien ja lähetysten suunnittelu kuormasuunnittelun työtilassa
 
@@ -33,20 +34,20 @@ Tässä aiheessa kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnit
 ## <a name="create-a-sales-order"></a>Luo myyntitilaus
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
 2. Valitse **Uusi**.
-3. Avaa haku valitsemalla **Asiakastili**-kentässä avattavan valikon painike.
+3. Avaa haku valitsemalla **Asiakastili** -kentässä avattavan valikon painike.
 4. Valitse tili **US-004**.
 5. Valitse **OK**.
-6. Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.
+6. Avaa haku valitsemalla **Nimiketunnus** -kentässä avattavan valikon painike.
 7. Valitse nimike **A0001**. **A0001** on kuljetustenhallinnan käytössä.  
-8. Avaa haku valitsemalla **Toimipaikka**-kentässä avattavan valikon painike ja valitse nimike.
-9. Anna **Määrä**-kentässä numero.
-10. Kirjoita tässä esimerkissä **Varasto**-kenttään 24. Kuljetuksenhallinta ja varastonhallinnan lisätoiminnot ovat tässä varastossa käytössä.  
+8. Avaa haku valitsemalla **Toimipaikka** -kentässä avattavan valikon painike ja valitse nimike.
+9. Anna **Määrä** -kentässä numero.
+10. Kirjoita tässä esimerkissä **Varasto** -kenttään 24. Kuljetuksenhallinta ja varastonhallinnan lisätoiminnot ovat tässä varastossa käytössä.  
 11. Valitse **Tallenna**.
 12. Sulje sivu.
 
 ## <a name="create-a-new-load"></a>Uuden kuorman luominen
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila**.
-2. Valitse **Myyntirivit**-välilehti. Muodostetaan nyt juuri luodulle myyntitilaukselle kuorma. Kuormat voidaan muodostaa tarjonnan ja kysynnän perusteella ostotilauksista, siirtotilauksista ja myyntitilauksista.  
+2. Valitse **Myyntirivit** -välilehti. Muodostetaan nyt juuri luodulle myyntitilaukselle kuorma. Kuormat voidaan muodostaa tarjonnan ja kysynnän perusteella ostotilauksista, siirtotilauksista ja myyntitilauksista.  
 3. Valitse toimintoruudussa **Tarjonta ja kysyntä**.
 4. Valitse **Uuteen kuormaan**.
 5. Avaa haku valitsemalla **Kuorman mallitunnus** -kentässä avattavan valikon painike. Kuormamalli määrittää koko kuorman painon ja tilavuuden enimmäismitat. Kuormamalli voi esittää esimerkiksi kontin tai kuorma-auton koon. Valitse nimike.

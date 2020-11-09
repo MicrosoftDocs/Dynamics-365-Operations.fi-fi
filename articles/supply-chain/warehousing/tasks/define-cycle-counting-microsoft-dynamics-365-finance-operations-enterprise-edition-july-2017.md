@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383018"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016145"
 ---
 # <a name="define-cycle-counting"></a>Inventoinnin määrittäminen 
 
@@ -31,7 +32,7 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 
 ## <a name="set-the-priority-of-counting-work"></a>Määritä inventointityön prioriteetti
 1. Siirry kohtaan **Siirtymisruutu >** **Moduulit > Varastonhallinta > Asetukset > Varastonhallinnan parametrit**.
-2. Valitse **Inventointi**-välilehti.
+2. Valitse **Inventointi** -välilehti.
 3. Lisää **Inventointityön oletusprioriteetti** -kenttään luku. Tämä vaihe muuttaa inventointityön prioriteettia verrattuna varaston muihin työtyyppeihin. Kun syötät luvun, joka on alhaisempi kuin muiden työtyyppien luku, inventointityön prioriteetti nousee.  
 4. Valitse **Tallenna**.
 5. Sulje sivu.
@@ -40,11 +41,11 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 1. Siirry **siirtymisruudussa** kohtaan **Moduulit > Varastonhallinta > Asetukset > mobiililaite > Mobiililaitteen valikkovaihtoehdot**.
 2. Valitse **Uusi**.
 3. Kirjoita arvo **Valikkovaihtoehdon nimi** -kenttään.
-4. Kirjoita **Otsikko**-kenttään arvo.
-5. Valitse **Tila**-kentässä Työ.
+4. Kirjoita **Otsikko** -kenttään arvo.
+5. Valitse **Tila** -kentässä Työ.
 6. Valitse **Käytä nykyistä työtä** -vaihtoehdossa Kyllä. Kun määrität tämän vaihtoehdon arvoksi Kyllä, järjestelmä etsii aiemmin luotua työtä, kun mobiililaitteen valikkovaihtoehtoa käytetään.  
-7. Valitse **Ohjaaja**-kentässä Järjestelmäohjattu. Jos valitaan Järjestelmäohjattu, varastotyöntekijä ohjataan määritetyissä luokissa olevaan avoimeen työhön. (Nämä työluokat luodaan seuraavaksi.)  
-8. Laajenna **Työluokat**-pikavälilehti. Seuraavaksi luodaan kaksi työluokkaa, joita käytetään mobiililaitteen valikkovaihtoehdon kanssa. Kun valikkovaihtoehtoa käytetään, näissä työluokissa voidaan tehdä kyselyjä ja käyttäjälle näytetään työ, jolla on suurin prioriteetti.  
+7. Valitse **Ohjaaja** -kentässä Järjestelmäohjattu. Jos valitaan Järjestelmäohjattu, varastotyöntekijä ohjataan määritetyissä luokissa olevaan avoimeen työhön. (Nämä työluokat luodaan seuraavaksi.)  
+8. Laajenna **Työluokat** -pikavälilehti. Seuraavaksi luodaan kaksi työluokkaa, joita käytetään mobiililaitteen valikkovaihtoehdon kanssa. Kun valikkovaihtoehtoa käytetään, näissä työluokissa voidaan tehdä kyselyjä ja käyttäjälle näytetään työ, jolla on suurin prioriteetti.  
 9. Valitse **Uusi**.
 10. Valitse **Työluokan tunnus** -kentässä arvo.
 11. Valitse **Uusi**.
@@ -63,11 +64,11 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 2. Valitse **Uusi**.
 3. Kirjoita **Inventointirajan tunnus** -kenttään arvo.
 4. Valitse **Käsittele inventointi heti** -asetukseksi Kyllä.
-5. Kirjoita **Kuvaus**-kenttään arvo.
+5. Kirjoita **Kuvaus** -kenttään arvo.
 6. Valitse **Tallenna**.
 7. Valitse **Valitse sijainnit**.
 8. Merkitse valittu rivi luettelossa.
-9. Valitse **Ehdot**-kentässä arvo.
+9. Valitse **Ehdot** -kentässä arvo.
 10. Valitse **OK**.
 11. Sulje sivu.
 
@@ -75,23 +76,23 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 1. Siirry **siirtymisruudussa** kohtaan **Moduulit > Varastonhallinta > Asetukset > Inventointi > Inventointisuunnitelmat**.
 2. Valitse **Uusi**.
 3. Kirjoita **Inventointisuunnitelman tunnus** -kenttään arvo.
-4. Kirjoita **Kuvaus**-kenttään arvo.
+4. Kirjoita **Kuvaus** -kenttään arvo.
 5. Lisää **Inventointien enimmäismäärä** -kenttään luku.
 6. Valitse **Tallenna**.
 7. Valitse **Valitse sijainnit**.
 8. Merkitse valittu rivi luettelossa.
-9. Valitse **Ehdot**-kentässä arvo.
+9. Valitse **Ehdot** -kentässä arvo.
 10. Valitse **OK**.
 11. Lisää **Inventointien välissä olevat päivät** -kenttään luku. Jos esimerkiksi jos **Inventointien välissä olevat päivät** -kentän arvoksi määritetään 5, inventointityö luodaan viiden päivän välein. Jos inventointityöt käsitellään kolmantena päivänä, seuraava inventointityö luodaan viiden päivän jälkeen viimeisestä inventoinnista eli kahdeksantena päivänä.  
 12. Valitse **Tallenna**.
 13. Valitse **Uusi**.
-14. Syötä **Järjestysnumero**-kenttään numero. Lajittelujärjestys on pienimmästä numerosta suurimpaan. Arvon on oltava suurempi kuin 0 (nolla).  
+14. Syötä **Järjestysnumero** -kenttään numero. Lajittelujärjestys on pienimmästä numerosta suurimpaan. Arvon on oltava suurempi kuin 0 (nolla).  
 15. Merkitse valittu rivi luettelossa.
-16. Kirjoita **Kuvaus**-kenttään arvo.
+16. Kirjoita **Kuvaus** -kenttään arvo.
 17. Valitse **Tallenna**.
 18. Valitse **Määritä tuotekysely**.
 19. Merkitse valittu rivi luettelossa.
-20. Anna tai valitse arvo **Ehdot**-kentässä.
+20. Anna tai valitse arvo **Ehdot** -kentässä.
 21. Valitse **OK**.
 22. Sulje sivu.
 

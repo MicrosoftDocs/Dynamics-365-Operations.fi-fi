@@ -182,9 +182,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: Työympäristön suunnittelu
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Käyttöönoton valmistelu
+                - name: Julkistamisen valmistelu
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Käyttöönoton usein kysytyt kysymykset
+                - name: Julkistamisen usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Palvelupyynnön lähettäminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
@@ -240,6 +240,8 @@
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Toimittajan laskujen automaatiotulosten tarkasteleminen
                   href: accounts-payable/view-automated-vendor-invoice.md
+                - name: Toimittajan laskun syötön työtila
+                  href: accounts-payable/vendor-invoices-workspace.md
             - name: Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Laskun täsmäytys ja konsernin sisäiset ostot
@@ -922,7 +924,9 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Kirjauskansiovientien ja tapahtumien näyttäminen
                   href: general-ledger/view-journal-entries-transactions.md
-                - name: Kirjaa kirjatut kirjauskansioviennit
+                - name: Pääkirja ja tapahtumatietoraportti
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
+                - name: Kirjattujen kirjauskansiovientien kirjaaminen
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Valuutan uudelleenarvostus konsolidointiyrityksessä
                   href: general-ledger/currency-revaluation-consolidation-company.md
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Julkisen sektorin lisäkirjanpitoviennin luominen
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Pääkirja ja tapahtumatietoraportti
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Käteisvarojen hallinnan rajojen käyttäminen
                   href: public-sector/cash-control.md
                 - name: Julkisen sektorin tilinpäätöksen käsittely
@@ -1396,8 +1398,10 @@
                       href: localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                     - name: Sähköpostiviestien luonti hyväksytyille NF-e-kohteille ja DANFE PDF- ja NF-e XML -tiedostojen liittäminen viesteihin
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
-                    - name: NF-e-sertifikaatit
+                    - name: NF-e-varmenteet
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: Mukautetun NF-e-varmenteen vahvistus
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'NF-e XML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: Liittovaltion NF-e-parametrien määrittäminen
@@ -2080,11 +2084,13 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Verotiedustelu
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: TaxDocumentJSON-taulun tyhjentäminen
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Veromoduuli
                   items:
                     - name: Veromoduulin yleiskatsaus
                       href: general-ledger/tax-engine.md
-                    - name: Tuonnin konfiguraatio
+                    - name: Tuontimääritys
                       href: general-ledger/tax-engine-import-configuration.md
                     - name: Edistynyt kaavojen suunnittelutoiminto
                       href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
@@ -2651,7 +2657,7 @@
                         - name: Varastoprofiilin yleiskatsaus
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Varastoprofiilin määrittäminen
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Varastoprofiilin käyttäminen asiakirjoissa ja kyselyissä
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Raportointi
@@ -3714,7 +3720,7 @@
           items:
             - name: Office-integraation yleiskatsaus
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/finance/toc.json
-            - name: Office-integraation opetusohjelma
+            - name: Office-integraation opasohjelma
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json

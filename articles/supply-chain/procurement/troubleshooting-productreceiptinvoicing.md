@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d86fa3df1de13cc0e0fb94449207a326069da25b
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834352"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018626"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Tuotteiden vastaanottojen ja laskutuksen vianmääritys
 
@@ -58,7 +58,7 @@ Jos tuotteen vastaanotto peruutetaan, järjestelmä sallii tapahtumien kirjaamis
 
 Seuraavassa esitetään yksi tapa ongelman toistamiseen.
 
-1. Varmista **Ostoreskontran parametrit** -sivun **Yleiset**-välilehdessä, että **Kirjaa vastaanotto kirjanpitoon** -asetuksen arvona on *Kyllä*.
+1. Varmista **Ostoreskontran parametrit** -sivun **Yleiset** -välilehdessä, että **Kirjaa vastaanotto kirjanpitoon** -asetuksen arvona on *Kyllä*.
 1. Luo ostotilaus ja lisää tilausrivi, jossa tietyn tuotteen määrä on *1 000*.
 1. Vahvista ostotilaus.
 1. Kirjaa tuotteen vastaanotto ja tarkista tositteet.
@@ -74,36 +74,36 @@ Tapahtumat voidaan kirjata keskeytetyille kirjanpitotileille, kun tuotteiden vas
 
 Jos **Jaksota ostovelka tuotteen vastaanotossa** -asetuksen arvoksi on määritetty *Ei* nimikemalliryhmän osalta, kirjanpitoon ei tehdä kirjauksia. Fyysinen tapahtuma kirjataan kuitenkin kirjanpitotarkoituksia varten alikirjanpitoon, ja tapahtuma vaatii tositenumeron. Tämä tositenumero on se tositenumero, johon viitataan varastotapahtumissa.
 
-On suositeltavaa määrittää **Jaksota ostovelka tuotteen vastaanotossa** -asetuksen arvoksi *Kyllä*, kuten seuraavassa blogikirjoituksessa kuvataan: [Muiden kulujen kirjaaminen tuotteen vastaanoton hetkellä](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
+On suositeltavaa määrittää **Jaksota ostovelka tuotteen vastaanotossa** -asetuksen arvoksi *Kyllä* , kuten seuraavassa blogikirjoituksessa kuvataan: [Muiden kulujen kirjaaminen tuotteen vastaanoton hetkellä](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
 
 ## <a name="the-post-to-charge-account-in-ledger-setting-isnt-turned-on"></a>Kirjaa kirjanpidon veloitustilille -asetus ei ole käytössä.
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
-Tämä ongelma ilmenee, kun ostotilaus laskutetaan ja **Kirjaa kirjanpidon veloitustilille** -asetuksen arvona on *Kyllä* **Ostoreskontran parametrit** -sivun **Lasku**-välilehdessä.
+Tämä ongelma ilmenee, kun ostotilaus laskutetaan ja **Kirjaa kirjanpidon veloitustilille** -asetuksen arvona on *Kyllä* **Ostoreskontran parametrit** -sivun **Lasku** -välilehdessä.
 
 ### <a name="reproduce-the-issue"></a>Ongelman toistaminen
 
 Seuraavassa esitetään yksi tapa ongelman toistamiseen.
 
 1. Valitse **Ostoreskontra \> Asetukset \> Ostoreskontran parametrit**.
-1. Määritä **Lasku**-välilehden **Kirjaa kirjanpidon veloitustilille** -asetukseksi *Kyllä*.
+1. Määritä **Lasku** -välilehden **Kirjaa kirjanpidon veloitustilille** -asetukseksi *Kyllä*.
 1. Siirry kohtaan **Varastonhallinta \> Määritys \> Kirjaus \> Kirjaus**.
-1. Varmista **Ostotilaus**-välilehdellä, että olet poistanut kaikki tuotteen ostomenojen rivit.
+1. Varmista **Ostotilaus** -välilehdellä, että olet poistanut kaikki tuotteen ostomenojen rivit.
 1. Valitse **Ostoreskontra \> Ostotilaukset \> Kaikki ostotilaukset**.
-1. Luo ostotilaus. Valitse **Toimittajatili**-kentässä *1001 Acme-toimistotarviketta*.
+1. Luo ostotilaus. Valitse **Toimittajatili** -kentässä *1001 Acme-toimistotarviketta*.
 1. Lisää ostotilausrivi, jossa on seuraavat asetukset:
 
     - **Nimikenumero:** *D0011 Laserprojektori*
     - **Toimipaikka:** *1*
-    - **Varasto**: *11*
+    - **Varasto** : *11*
     - **Määrä** *4*
 
-1. Valitse toimintoruudun **osta**-välilehden **Toimi**-ryhmässä **Vahvista**.
-1. Valitse toimintoruudun **Vastaanota**-välilehden **Luo**-ryhmässä **Tuotteen vastaanotto**.
+1. Valitse toimintoruudun **osta** -välilehden **Toimi** -ryhmässä **Vahvista**.
+1. Valitse toimintoruudun **Vastaanota** -välilehden **Luo** -ryhmässä **Tuotteen vastaanotto**.
 1. Syötä **Tuotteen vastaanottokirjaus** -valintaikkunan **Tuotteen vastaanotto** -kenttään satunnainen numero ja valitse **OK**.
-1. Valitse Toimintoruudun **Laskutus**-välilehden **Luo**-ryhmässä **Lasku**.
-1. Syötä **Numero**-kenttään satunnainen numero laskunumeroksi.
+1. Valitse Toimintoruudun **Laskutus** -välilehden **Luo** -ryhmässä **Lasku**.
+1. Syötä **Numero** -kenttään satunnainen numero laskunumeroksi.
 1. Päivitä täsmäytyksen tila ja kirjaa.
 1. Huomaa, näkyviin tulee nyt seuraava virhe, kun luot laskun ostotilauksesta: "Tuotteen ostomenot -tapahtumatyypin tilinumeroa ei ole olemassa".
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275438"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997347"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
@@ -41,7 +40,7 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 
 **Kaksoiskirjoituksen asettamiseen vaadittava rooli:** Järjestelmän ylläpitäjä Finance and Operations -sovelluksissa ja Common Data Servicessä.
 
-**Asennuslinkki Common Data Serviceen** -sivulla olevat virheet johtuvat yleensä puutteellisista määritys- tai käyttöoikeusongelmista. Varmista, että koko terveystarkistus siirtyy **Asennuslinkillä Common Data Serviceen**, kuten seuraavasta kuvasta käy ilmi. Kaksoiskirjoittamista ei voi linkittää, ellei koko terveystarkistus ole ohi.
+**Asennuslinkki Common Data Serviceen** -sivulla olevat virheet johtuvat yleensä puutteellisista määritys- tai käyttöoikeusongelmista. Varmista, että koko terveystarkistus siirtyy **Asennuslinkillä Common Data Serviceen** , kuten seuraavasta kuvasta käy ilmi. Kaksoiskirjoittamista ei voi linkittää, ellei koko terveystarkistus ole ohi.
 
 ![Onnistunut kuntotarkistus](media/health_check.png)
 
@@ -55,7 +54,7 @@ Näyttöön saattaa tulla seuraava virhesanoma, kun avaat **Linkin Common Data S
 
 *Vastauksen tilakoodi ei tarkoita onnistumista: 404 (Ei löydetty).*
 
-Tämä virhe ilmenee, kun suostumusvaihetta ei ole suoritettu. Voit tarkistaa, onko suostumus vaihesuoritettu, kirjautumalla kohteeseen portal.Azure.com käyttämällä Azure AD -vuokralaisen järjestelmänvalvojan tiliä ja katsomalla, näkyykö kolmannen osapuolen sovellusta, jonka tunnus **33976c19-1db5-4c02-810e-c243db79efde** Azure AD:ssa, **Yrityssovellukset**-luettelossa. Jos näin ei ole, sinun on annettava sovelluksen suostumus.
+Tämä virhe ilmenee, kun suostumusvaihetta ei ole suoritettu. Voit tarkistaa, onko suostumus vaihesuoritettu, kirjautumalla kohteeseen portal.Azure.com käyttämällä Azure AD -vuokralaisen järjestelmänvalvojan tiliä ja katsomalla, näkyykö kolmannen osapuolen sovellusta, jonka tunnus **33976c19-1db5-4c02-810e-c243db79efde** Azure AD:ssa, **Yrityssovellukset** -luettelossa. Jos näin ei ole, sinun on annettava sovelluksen suostumus.
 
 Voit antaa sovelluksen suostumuksen noudattamalla seuraavia ohjeita.
 
@@ -63,14 +62,14 @@ Voit antaa sovelluksen suostumuksen noudattamalla seuraavia ohjeita.
 
     <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
 
-2. Valitse **Hyväksy**, jos haluat ilmaista suostumuksesi siihen, että asennat sovelluksen, jonka tunnus **33976c19-1db5-4c02-810e-c243db79efde** on vuokralaisella.
+2. Valitse **Hyväksy** , jos haluat ilmaista suostumuksesi siihen, että asennat sovelluksen, jonka tunnus **33976c19-1db5-4c02-810e-c243db79efde** on vuokralaisella.
 
     > [!TIP]
     > Tämä sovellus edellyttää Common Data Servicen ja Finance and Operations -sovellusten linkittämistä. Jos tässä vaiheessa ilmenee ongelmia, avaa selain incognito-tilassa (Google Chromessa) tai InPrivate-tilassa (Microsoft Edgessä).
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Varmista, että yrityksen tiedot ja kaksoiskirjoitusryhmät on määritetty oikein linkittämisen aikana
 
-Jos haluat varmistaa, että kaksoiskirjoitus toimii oikein, konfiguroinnin aikana valitsemasi yritykset luodaan Common Data Service -ympäristöön. Oletusarvon mukaan nämä yritykset ovat vain luku -tilassa ja **IsDualWriteEnable**-ominaisuuden arvo on **True**. Lisäksi luodaan oletusarvon mukainen liiketoimintayksiköiden omistaja ja ryhmä ja lisätään yrityksen nimi. Ennen kuin otat kartat käyttöön, varmista, että ryhmän oletusomistaja on määritetty. Voit etsiä **Yritykset (CDM\_Yritys)** -kohteen seuraavasti.
+Jos haluat varmistaa, että kaksoiskirjoitus toimii oikein, konfiguroinnin aikana valitsemasi yritykset luodaan Common Data Service -ympäristöön. Oletusarvon mukaan nämä yritykset ovat vain luku -tilassa ja **IsDualWriteEnable** -ominaisuuden arvo on **True**. Lisäksi luodaan oletusarvon mukainen liiketoimintayksiköiden omistaja ja ryhmä ja lisätään yrityksen nimi. Ennen kuin otat kartat käyttöön, varmista, että ryhmän oletusomistaja on määritetty. Voit etsiä **Yritykset (CDM\_Yritys)** -kohteen seuraavasti.
 
 1. Valitse Dynamics 365:n mallipohjaisen sovelluksen oikeasta yläkulmasta suodatin.
 2. Valitse avattavasta luettelosta **Yritys**.

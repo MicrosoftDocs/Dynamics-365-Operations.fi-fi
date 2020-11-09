@@ -6,7 +6,7 @@ manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: reprint-and-void-wave-labels
 ms.service: dynamics-ax-applications
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 0b831361631aa66712813706eaa4ff3339683868
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986644"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016651"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Aallon etikettien uudelleentulostus ja mitätöinti
 
@@ -42,7 +42,7 @@ Tämä ohjeaihe sisältää skenaariokokoelman, jotka näyttävät esimerkkien a
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Skenaario 1: Etikettien uudelleentulostus verkkoasiakasohjelmasta
 
-Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta sivuilta. Valitse kunkin sivun toimintoruudun **Lähetykset**-välilehden **Aiheeseen liittyvät tiedot**-ryhmässä **Aallon etiketit**.
+Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta sivuilta. Valitse kunkin sivun toimintoruudun **Lähetykset** -välilehden **Aiheeseen liittyvät tiedot** -ryhmässä **Aallon etiketit**.
 
 - Kaikki lähetykset \> Lähetyksen tiedot
 - Kaikki kuormat \> Kuorman tiedot
@@ -54,7 +54,7 @@ Aallon etiketti tulostetaan verkkoasiakasohjelmasta seuraavasti:
 
 1. Valitse **Varastonhallinta \> Lähtevät aallot \> Lähetysaallot \> Kaikki aallot**.
 1. Valitse aalto, jonka etiketit tulostetaan uudelleen.
-1. Valitse toimintoruudun **Aalto**-välilehden **Tulosta**-ryhmässä **Aallon etiketit**.
+1. Valitse toimintoruudun **Aalto** -välilehden **Tulosta** -ryhmässä **Aallon etiketit**.
 1. Tee sitten jompikumpi tai molemmat seuraavista:
 
     - Tulosta etiketti uudelleen valitsemalla tulostin **Tulostimen nimi** -kentässä. (Jätä tämä kenttä tyhjäksi, jos haluat vain päivittää aallon etikettitiedot muttet tulostaa etikettiä uudelleen.)
@@ -118,7 +118,7 @@ Luo varastointisovelluksesta uudelleentulostettavien etikettien uusi valikkovaih
     - **Järjestelmän ryhmittelykentän etiketti:** *Lähetystunnus*
     - **Tulostustila:** *Luettelointi*
 
-1. Valitse toimintoruudussa **Kenttäluettelo**. Valitse sitten avattavissa luetteloissa kentät, joiden avulla työntekijät tunnistavat oikean etikettirullan (esimerkiksi *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* ja *NumberOfLabels*).
+1. Valitse toimintoruudussa **Kenttäluettelo**. Valitse sitten avattavissa luetteloissa kentät, joiden avulla työntekijät tunnistavat oikean etikettirullan (esimerkiksi *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* ja *NumberOfLabels* ).
 1. Sulje sivu.
 1. Luo neljäs valikkovaihtoehto ja määritä sille seuraavat arvot:
 
@@ -131,7 +131,7 @@ Luo varastointisovelluksesta uudelleentulostettavien etikettien uusi valikkovaih
     - **Järjestelmän ryhmittelykentän etiketti:** *Lähetystunnus*
     - **Tulostustila:** *Viimeisen hyväksyttävän aallon etiketin tunnus*
 
-1. Valitse toimintoruudussa **Kenttäluettelo**. Valitse sitten avattavissa luetteloissa kentät, joiden avulla työntekijät tunnistavat oikean etikettirullan (esimerkiksi *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* ja *NumberOfLabels*).
+1. Valitse toimintoruudussa **Kenttäluettelo**. Valitse sitten avattavissa luetteloissa kentät, joiden avulla työntekijät tunnistavat oikean etikettirullan (esimerkiksi *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* ja *NumberOfLabels* ).
 1. Sulje sivu.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Mobiililaitteen valikon määrittäminen
@@ -139,7 +139,7 @@ Luo varastointisovelluksesta uudelleentulostettavien etikettien uusi valikkovaih
 Lisää uudet valikkovaihtoehdot varastointisovelluksen valikkoon seuraavasti:
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Mobiililaite \> Mobiililaitteen valikko**.
-1. Valitse aiemmin luotu **Lähtevät**-valikko.
+1. Valitse aiemmin luotu **Lähtevät** -valikko.
 1. Etsi vasemmasta luettelosta juuri luodut uudelleentulostuksen valikkovaihtoehdot ja lisää ne oikealla olevaan luetteloon oikealla nuolipainikkeella.
 1. Sulje sivu.
 
@@ -149,7 +149,7 @@ Annetut käyttötapaukset ovat esimerkkejä, jotka osoittavat, miten työntekij�
 
 Varmista ennen käyttötapauksiin siirtymistä, että seuraavat edellytykset täyttyvät:
 
-- Esittelytiedot on asennettu ja **USMF**-yritys on valittu.
+- Esittelytiedot on asennettu ja **USMF** -yritys on valittu.
 - Aallon etikettitulostus on määritetty ja etikettejä on luotu kohdassa [Aallon etikettitulostuksen määrittäminen](../warehousing/configure-wave-label-printing.md) kuvatulla tavalla.
 
 #### <a name="use-case-21-a-single-wave-label-is-scratched-and-must-be-reprinted"></a>Käyttötapaus 2.1: Yksi aallon etiketti on repaleinen ja tulostettava uudelleen.
@@ -197,7 +197,7 @@ Varmista ennen käyttötapauksiin siirtymistä, että seuraavat edellytykset tä
 
 Varmista ennen tähän skenaarioon siirtymistä, että seuraavat edellytykset täyttyvät:
 
-- Esittelytiedot on asennettu ja **USMF**-yritys on valittu.
+- Esittelytiedot on asennettu ja **USMF** -yritys on valittu.
 - Aallon etikettitulostus on määritetty ja etikettejä on luotu kohdassa [Aallon etikettitulostuksen määrittäminen](../warehousing/configure-wave-label-printing.md) kuvatulla tavalla.
 
 ### <a name="set-up-work-exceptions"></a>Määritä työn poikkeukset

@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1aa4043aca2e53eae32256a98d556c25b4ec1957
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: bd8ca2cbd24f326c4eaf9cd39e32de0eca81149d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454784"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018603"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Ostotilauksen tuotteiden vastaanoton kirjaaminen
 
@@ -35,17 +35,17 @@ Tässä aiheessa kuvataan, miten kirjaat tavaroiden vastaanoton suoraan ostotila
 2. Valitse **Uusi**.
 3. Kirjoita **Toimittajan tili** -kenttään arvoksi `US-101`.
 4. Valitse **OK**.
-5. Kirjoita **Nimiketunnus**-kenttään arvo `M0001`.
-6. Kirjoita **Määrä**-kenttään `5`.
+5. Kirjoita **Nimiketunnus** -kenttään arvo `M0001`.
+6. Kirjoita **Määrä** -kenttään `5`.
 7. Valitse toimintoruudussa **Osto**.
 8. Valitse **Vahvista**.
 
 ## <a name="record-receipt-of-goods"></a>Tavaran vastaanoton kirjaaminen
 1. Valitse toimintoruudussa **Vastaanota**.
-2. Valitse **Tuotteen vastaanotto**. **Määrä**-kentän avulla voit valita haluamasi vastaanotettavan määrän. Jos määrä on esimerkiksi jo rekisteröity varastossa, voit valita **Rekisteröity määrä**. Tässä esimerkissä käytetään arvoa **Tilattu määrä**
-3. Laajenna **Yleiskatsaus**-osa.
+2. Valitse **Tuotteen vastaanotto**. **Määrä** -kentän avulla voit valita haluamasi vastaanotettavan määrän. Jos määrä on esimerkiksi jo rekisteröity varastossa, voit valita **Rekisteröity määrä**. Tässä esimerkissä käytetään arvoa **Tilattu määrä**
+3. Laajenna **Yleiskatsaus** -osa.
 4. Kirjoita mikä tahansa arvo **Tuotteen vastaanotto** -kenttään. Tätä kenttää käytetään syöttämään viite, jota käytetään tositteena tuotteen vastaanoton kirjauskansiossa.  
-5. Laajenna **Rivit**-osa.
+5. Laajenna **Rivit** -osa.
 6. Valitse **määräksi** 4. Tähän pystyt määrittämään manuaalisesti vastaanotettavan määrän kullekin tilauksen riville.  
 7. Valitse **OK**. Tavarat nyt tallennettuja vastaanotetuiksi ostotilauksella, ja sitä vastaava tuotteen vastaanoton kirjauskansioasiakirja on luotu. Voit käyttää Tuotteen vastaanotto -toimintoa ostotilauksesta luotujen kirjauskansioiden tarkasteluun selvittääksesi mitä on vastaanotettu ja milloin.  
 

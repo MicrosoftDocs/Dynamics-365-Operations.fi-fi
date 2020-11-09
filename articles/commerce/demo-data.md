@@ -1,7 +1,7 @@
 ---
 title: Modern POS:n (MPOS:n) ja pilvimyyntipisteen esittelytietojen näyttöasettelut
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commerce -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
-author: zlinster
+author: josaw1
 manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: zlinster
+ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 7956eece1a77951795a3f5f66067a2ecfacf3450
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022345"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014883"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS:n) ja pilvimyyntipisteen esittelytietojen näyttöasettelut
 
@@ -107,7 +107,7 @@ Seuraavassa taulukossa ovat tavallisissa näyttöjen resoluutioissa käytettävi
 \* Nämä asettelujen lisäkoot ovat käytettävissä vain Adventure Works- ja Fabrikam-asetteluissa.
 
 > [!TIP]
-> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
+> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset** -sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
 
 ![Näyttöasettelut ja asettelun resoluutiot/koot Commerce-ohjelmassa ja myyntipisteessä](../commerce/media/demo-screen-layouts-fig-3-1.png)
 

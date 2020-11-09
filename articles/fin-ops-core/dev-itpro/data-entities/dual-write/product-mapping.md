@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835851"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000761"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Jos liiketoiminnan ekosysteemi muodostuu Dynamics 365 -sovelluksista, kuten Financesta, Supply Chain Managementista ja Salesista, yritykset käyttävät usein näitä sovelluksia tuotetietojen lähteenä. Tämä johtuu siitä, nämä sovellukset muodostavat toimivan tuoteinfrastruktuurin, jota kehittyneet hinnoittelukäsitteet ja tarkat käytettävissä olevan varaston tiedot täydentävät. Jos yritykset käyttävät ulkoista tuotteen elinkaaren hallinta- eli PLM-järjestelmää tuotetietojen lähteenä, he voivat kanavoida tuotteita Finance and Operations -sovelluksista muihin Dynamics 365 -sovelluksiin. Integroitu tuotetietomalli voidaan tuoda yhtenäisen tuotekokemuksen avulla Common Data Serviceen, jolloin kaikki sovelluksen käyttäjät, myös Power Platform -käyttäjät, voivat hyödyntää Finance and Operations -sovelluksista saatavia monipuolisia tuotetietoja.
 
@@ -54,8 +51,8 @@ Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen mää
 
 Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset | kuvaus
 -----------------------|--------------------------------|---
-Vapautetut tuotteet V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails**-yksikkö sisältää ne Finance and Operations -sovellusten kentät, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot. 
-Common Data Servicen vapautetut erilliset tuotteet | Tuote | **Tuote**-yksikön kentät määrittävät tuotteen. Se sisältää yksittäisiä tuotteita (tuotteita, joissa on alatyypin tuote) ja tuotevariantteja. Yhdistämismääritykset ovat seuraavassa taulukossa.
+Vapautetut tuotteet V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails** -yksikkö sisältää ne Finance and Operations -sovellusten kentät, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot. 
+Common Data Servicen vapautetut erilliset tuotteet | Tuote | **Tuote** -yksikön kentät määrittävät tuotteen. Se sisältää yksittäisiä tuotteita (tuotteita, joissa on alatyypin tuote) ja tuotevariantteja. Yhdistämismääritykset ovat seuraavassa taulukossa.
 Tuotenumeron viivakoodi | msdyn\_productbarcodes | Tuotteen viivakoodeja käytetään tuotteiden yksilöimiseen.
 Tilauksen oletusasetukset | msdyn\_productdefaultordersettings
 Tuotekohtaiset oletustilausasetukset | msdyn_productdefaultordersettings
@@ -85,15 +82,15 @@ Tässä mallissa tuotetta vastaa kahden Common Data Servicen yksikön yhdistelm�
 
 Koska tuote ilmaista varastointiyksikkönä, käsitteet erilliset tuotteet, päätuotteet ja tuotevariantit voidaan tallentaa Common Data Serviceen seuraavasti:
 
-- **Tuotteet, joissa on alatyypin tuote** ovat itsensä määrittäviä tuotteita. Dimensioita ei tarvitse määrittää. Tällainen tuote on esimerkiksi tietty kirja. Näille tuotteille luodaan yksi tietue **Tuote**-yksikössä ja yksi tietue **msdyn\_sharedproductdetails**-yksikössä. Tuoteperhetietuetta ei luoda.
-- **Päätuotteita** käytetään yleisinä tuotteina, joissa olevat säännöt ja määritelmä määrittävät liiketoimintaprosessien toiminnan. Näiden määritelmien perusteella voidaan luoda tuotevarianteiksi kutsuttuja erillisiä tuotteita. Esimerkiksi t-paita on päätuote, jonka dimensioita väri ja koko voivat olla. Julkaistavissa varianteissa voi olla erilaisia dimensioyhdistelmiä, kuten s-kokoinen sininen t-paita tai m-kokoinen vihreä t-paita. Integroinnissa tuotetauluun luodaan kullekin variantille yksi tietue. Tämä tietue sisältää varianttikohtaiset tiedot, kuten eri dimensiot. Tuotteen yleiset tiedot tallennetaan **msdyn\_sharedproductdetails**-yksikköön. (Nämä yleiset tiedot on tallennettu päätuotteeseen.) Päätuotteen tiedot synkronoidaan Common Data Serviceen heti, kun vapautettu päätuote luodaan (mutta ennen varianttien vapauttamista).
+- **Tuotteet, joissa on alatyypin tuote** ovat itsensä määrittäviä tuotteita. Dimensioita ei tarvitse määrittää. Tällainen tuote on esimerkiksi tietty kirja. Näille tuotteille luodaan yksi tietue **Tuote** -yksikössä ja yksi tietue **msdyn\_sharedproductdetails** -yksikössä. Tuoteperhetietuetta ei luoda.
+- **Päätuotteita** käytetään yleisinä tuotteina, joissa olevat säännöt ja määritelmä määrittävät liiketoimintaprosessien toiminnan. Näiden määritelmien perusteella voidaan luoda tuotevarianteiksi kutsuttuja erillisiä tuotteita. Esimerkiksi t-paita on päätuote, jonka dimensioita väri ja koko voivat olla. Julkaistavissa varianteissa voi olla erilaisia dimensioyhdistelmiä, kuten s-kokoinen sininen t-paita tai m-kokoinen vihreä t-paita. Integroinnissa tuotetauluun luodaan kullekin variantille yksi tietue. Tämä tietue sisältää varianttikohtaiset tiedot, kuten eri dimensiot. Tuotteen yleiset tiedot tallennetaan **msdyn\_sharedproductdetails** -yksikköön. (Nämä yleiset tiedot on tallennettu päätuotteeseen.) Päätuotteen tiedot synkronoidaan Common Data Serviceen heti, kun vapautettu päätuote luodaan (mutta ennen varianttien vapauttamista).
 - **Erillisillä tuotteilla** tarkoitetaan kaikkia tuotteiden alatyypin tuotteita ja kaikkia tuotevariantteja. 
 
 ![Tuotteiden tietomalli](media/dual-write-product.png)
 
-Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon, jossa on sama valuutta. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. 
+Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos** -tilassa. Ne lisätään ensimmäiseen hinnastoon, jossa on sama valuutta. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. 
 
-Finance and Operations -sovellusten oletustuotteet synkronoidaan muihin Dynamics 365 -sovelluksiin **Luonnos**-tilassa. Jos haluat synkronoida **Aktiivinen**-tilassa olevan tuotteen, jotta sitä voi käyttää esimerkiksi suoraan myyntitilauksen tarjouksissa, seuraavat asetukset on valittava: valitse ensin **Järjestelmä> Hallinto > Järjestelmän hallinta > Järjestelmäasetukset > Sales**-välilehti ja sitten **Luo tuotteet aktiivisessa tilassa = kyllä**. 
+Finance and Operations -sovellusten oletustuotteet synkronoidaan muihin Dynamics 365 -sovelluksiin **Luonnos** -tilassa. Jos haluat synkronoida **Aktiivinen** -tilassa olevan tuotteen, jotta sitä voi käyttää esimerkiksi suoraan myyntitilauksen tarjouksissa, seuraavat asetukset on valittava: valitse ensin **Järjestelmä> Hallinto > Järjestelmän hallinta > Järjestelmäasetukset > Sales** -välilehti ja sitten **Luo tuotteet aktiivisessa tilassa = kyllä**. 
 
 Huomaa, että tuotteet synkronoidaan Finance and Operations -sovelluksista Common Data Serviceen. Tämän vuoksi tuoteyksikkökenttien arvot voidaan muuttaa Common Data Servicessa, mutta kun synkronointi käynnistyy (tuotekenttää muokataan Finance and Operations -sovelluksessa), se korvaa Common Data Servicen arvot. 
 
@@ -109,7 +106,7 @@ Huomaa, että tuotteet synkronoidaan Finance and Operations -sovelluksista Commo
 
 Tuotedimensiot ovat ominaisuuksia, joilla voidaan tuotevariantti tunnistetaan. Neljä tuotedimensiota (väri, koko, tyyli ja konfiguraatio) yhdistetään myös Common Data Serviceen määrittämää tuotevariantteja. Seuraavassa kuvassa on Väri-tuotedimension tietomalli. Samaa mallia käytetään myös kokojen, tyylien ja konfiguraatioiden osalta. 
 
-![Tuotteiden tietomalli](media/dual-write-product-two.png)
+![Tuotedimensioiden tietomalli](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +142,7 @@ Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikke
 
 Mittayksikkö ja sen muunnos ovat käytettävissä Common Data Servicessa seuraavassa kuvassa olevan tietomallin mukaisesti.
 
-![Tuotteiden tietomalli](media/dual-write-product-three.png)
+![Mittayksikön tietomalli](media/dual-write-product-three.png)
 
 Mittayksikkökäsite on integroitu Finance and Operations- ja muiden Dynamics 365 -sovellusten välillä. Kullekin Finance and Operations -sovelluksen yksikköluokalle luodaan Dynamics 365 -sovelluksessa yksikköryhmä, joka sisältää yksikköluokkaan kuuluvat yksiköt. Jokaiselle yksikköryhmälle luodaan myös oletusarvoinen perusyksikkö. 
 
@@ -205,7 +202,7 @@ Dynamics 365 for Finance and Operationsin ja Common Data Servicen väliseen tuot
 
 Muiden Dynamics 365 -sovellusten käyttäjät tunnistavat tuotteen käyttöliittymässä kentän **msdyn_productnumber** mukaan. (Huomaa, että kentän otsikko on **Tuotenumero**.) Tuotelomakkeessa näkyy sekä yritys että msydn_productnumber. (productnumber)-kenttää eli tuotteen yksilöivää avainta ei kuitenkaan näytetä. 
 
-Jos muodostat sovelluksia Common Data Servicessä, kiinnitä huomiota **productnumber**-kohdan (tuotteen yksilöivä tunnus) käyttämiseen integrointiavaimena. Älä käytä **msdyn_productnumber**-arvoa, koska se ei ole yksilöllinen. 
+Jos muodostat sovelluksia Common Data Servicessä, kiinnitä huomiota **productnumber** -kohdan (tuotteen yksilöivä tunnus) käyttämiseen integrointiavaimena. Älä käytä **msdyn_productnumber** -arvoa, koska se ei ole yksilöllinen. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Tuotteiden ensimmäinen synkronointi ja tietojen siirtäminen Common Data Servicesta Finance and Operationsiin
 

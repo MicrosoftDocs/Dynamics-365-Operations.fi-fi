@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ab0a6e7de02b4b69d3f7a129392a1057482f0c26
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826332"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017227"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 
@@ -46,7 +46,7 @@ Seuraavassa lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja rese
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Tuoterakenne- ja reseptirivien vapauttaminen erätyön avulla
 
-**Tuoterakenne- ja reseptirivien automaattinen vapautus** -erätyö käsittelee valitut tuoterakenne- ja reseptirivit, joiden jäljellä olevan määrän voi vapauttaa. Työ ottaa huomioon vain tilaukset, joiden tila on **Vapautettu**, **Aloitettu** tai **Ilmoitettu valmiiksi**. Jos tuoterakenne- tai reseptirivillä on jäljellä vapautettavaa, työ vapauttaa enintään määrän, jonka jo fyysisesti varattu määrä ja fyysisesti saatavana oleva määrä kattaa.
+**Tuoterakenne- ja reseptirivien automaattinen vapautus** -erätyö käsittelee valitut tuoterakenne- ja reseptirivit, joiden jäljellä olevan määrän voi vapauttaa. Työ ottaa huomioon vain tilaukset, joiden tila on **Vapautettu** , **Aloitettu** tai **Ilmoitettu valmiiksi**. Jos tuoterakenne- tai reseptirivillä on jäljellä vapautettavaa, työ vapauttaa enintään määrän, jonka jo fyysisesti varattu määrä ja fyysisesti saatavana oleva määrä kattaa.
 
 ### <a name="example-of-a-batch-job-release"></a>Erätyön vapautusesimerkki
 
@@ -60,9 +60,9 @@ Seuraavassa lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja rese
 
 ### <a name="batch-job-setup"></a>Erätyön asetukset
 
-Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön kyselyssä suodatusehdot määrittämään, kuinka monta päivää eteenpäin työn on haettava rivejä, joilla on vapauttamattomia määriä. Käytä työn kyselyssä suodatusehtona **Raaka-aineen päivämäärä** -kentässä **(LessThanDate())**-funktiota.
+Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön kyselyssä suodatusehdot määrittämään, kuinka monta päivää eteenpäin työn on haettava rivejä, joilla on vapauttamattomia määriä. Käytä työn kyselyssä suodatusehtona **Raaka-aineen päivämäärä** -kentässä **(LessThanDate())** -funktiota.
 
-Seuraavan kuvan tuotantotilauksessa on kaksi työtä, 10 ja 20, jotka kattavat tuotantotilauksen kokoonpanon ja pakkauksen. Kumpikin työ on määritetty kuluttamaan tietty määrä materiaalia. Tässä kuvassa vapautuksen aikarajan ilmaiseva aikajanan alla oleva vihreä nuoli on sama **(LessThanDate())**-ehdoissa määritetty päivien määrä. Esimerkiksi **(LessThanDate(2))** ilmaisee, että työn on haettava vapauttamattomia määriä vain kahden päivän aikarajan ajalta.
+Seuraavan kuvan tuotantotilauksessa on kaksi työtä, 10 ja 20, jotka kattavat tuotantotilauksen kokoonpanon ja pakkauksen. Kumpikin työ on määritetty kuluttamaan tietty määrä materiaalia. Tässä kuvassa vapautuksen aikarajan ilmaiseva aikajanan alla oleva vihreä nuoli on sama **(LessThanDate())** -ehdoissa määritetty päivien määrä. Esimerkiksi **(LessThanDate(2))** ilmaisee, että työn on haettava vapauttamattomia määriä vain kahden päivän aikarajan ajalta.
 
 ![Esimerkki kaksi erätyötä sisältävästä tuotantotilauksesta](media/bach-job-setup.PNG)
 
@@ -77,7 +77,7 @@ Jos vapautat materiaaleja **Tuotantotilauksen vapauttamisen yhteydessä** -param
 
 Voit hallita työvaiheita, joihin materiaali on vapautettava, **Vapauta varastoon** -sivulla.
 
-- Valitse ensin **Tuotannonhallinta** \> **Tuotantotilaukset** \> **Kaikki tuotantotilaukset**, sitten tuotantotilaus ja lopuksi **Varasto**-välilehdessä **Vapauta varastoon**. Määritä sen jälkeen **Työvaihenumerosta**- **Työvaihenumeroon**-kentissä työvaihenumeroalue.
+- Valitse ensin **Tuotannonhallinta** \> **Tuotantotilaukset** \> **Kaikki tuotantotilaukset** , sitten tuotantotilaus ja lopuksi **Varasto** -välilehdessä **Vapauta varastoon**. Määritä sen jälkeen **Työvaihenumerosta** - **Työvaihenumeroon** -kentissä työvaihenumeroalue.
 
 Seuraavan kuvan tuotantotilauksessa on kaksi työvaihetta, 10 ja 20. Jos rajoitat tässä esimerkissä vapautuksen työvaiheeseen 10, vain materiaali M9203 vapautetaan.
 
@@ -89,12 +89,12 @@ Jos haluat nähdä, miten voit vapauttaa materiaalia suhteessa valmiiden tuottei
 
 Voit vapauttaa raaka-aineen osittaista valmiiden tavaroiden määrää varten tai tiettynä yksikkönä.
 
-- Voit vapauttaa raaka-aineen osittaista valmiiden tavaroiden määrää varten valitsemalla ensin **Tuotannonhallinta** \> **Tuotantotilaukset** \> **Kaikki tuotantotilaukset**, sitten tuotantotilaus ja lopuksi **Varasto**-välilehdessä **Vapauta varastoon**. Anna sitten määrä **Määrä**-kenttään.
+- Voit vapauttaa raaka-aineen osittaista valmiiden tavaroiden määrää varten valitsemalla ensin **Tuotannonhallinta** \> **Tuotantotilaukset** \> **Kaikki tuotantotilaukset** , sitten tuotantotilaus ja lopuksi **Varasto** -välilehdessä **Vapauta varastoon**. Anna sitten määrä **Määrä** -kenttään.
 
-    Esimerkki: 1 000 kappaleen (kpl) tuotantotilaus luodaan ja ajoitetaan. Tuotannon valvoja suunnittelee 100 kpl:n tuotannon. seuraavalle vuorolle ja haluaa vapauttaa materiaalit vain kyseiselle vuorolle. Tässä tapauksessa valvoja voi käyttää **Määrä**-kenttää vapauttamaan materiaalit niille 100 kappaleelle, jotka on suunniteltu seuraavaa vuoroa varten.
+    Esimerkki: 1 000 kappaleen (kpl) tuotantotilaus luodaan ja ajoitetaan. Tuotannon valvoja suunnittelee 100 kpl:n tuotannon. seuraavalle vuorolle ja haluaa vapauttaa materiaalit vain kyseiselle vuorolle. Tässä tapauksessa valvoja voi käyttää **Määrä** -kenttää vapauttamaan materiaalit niille 100 kappaleelle, jotka on suunniteltu seuraavaa vuoroa varten.
 
-- Voit vapauttaa raaka-aineen tietyn yksikön valitsemalla ensin **Tuotannonhallinta** \> **Tuotantotilaukset** \> **Kaikki tuotantotilaukset**, sitten tuotantotilaus ja lopuksi **Varasto**-välilehdessä **Vapauta varastoon**. Valitse sitten **Yksikkö**-kentässä valmiin tavaran yksikkö, jolle materiaali vapautetaan.
+- Voit vapauttaa raaka-aineen tietyn yksikön valitsemalla ensin **Tuotannonhallinta** \> **Tuotantotilaukset** \> **Kaikki tuotantotilaukset** , sitten tuotantotilaus ja lopuksi **Varasto** -välilehdessä **Vapauta varastoon**. Valitse sitten **Yksikkö** -kentässä valmiin tavaran yksikkö, jolle materiaali vapautetaan.
 
     Käytettävissä olevat yksiköt määritetään valmiin tuotteen yksikön sarjaryhmässä.
 
-    Esimerkki: valmiin tavaran yksikön muunto kilogrammojen (kg) ja kuormalavojen (KL) välillä on 1 KL = 100 kg. Jos haluat luoda tuotantotilauksen 10 000 kg:lle valmista tavaraa, voit vapauttaa raaka-aineet sille kuormalavamäärälle, jonka aiot tuottaa. Valitse ensin yksiköksi **KL** ja sitten vastaava luku **Määrä**-kentässä.
+    Esimerkki: valmiin tavaran yksikön muunto kilogrammojen (kg) ja kuormalavojen (KL) välillä on 1 KL = 100 kg. Jos haluat luoda tuotantotilauksen 10 000 kg:lle valmista tavaraa, voit vapauttaa raaka-aineet sille kuormalavamäärälle, jonka aiot tuottaa. Valitse ensin yksiköksi **KL** ja sitten vastaava luku **Määrä** -kentässä.

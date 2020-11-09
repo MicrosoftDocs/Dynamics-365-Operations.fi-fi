@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96ed6d01e22ee2cbc5b3b2be8168fbb43904c89
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 07426eee2a79f21d7e91a82a1832cfdb35fd8683
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212707"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017341"
 ---
 # <a name="inventory-statuses"></a>Varaston tilat
 
@@ -42,10 +42,10 @@ Seuraavassa on esimerkkejä tavoista, joilla voit käyttää varaston tiloja:
 
 Varaston tila on yksi varastodimensioryhmän dimensioista. Varaston tiloja voidaan luokitella käytettävissä oleviin ja ei-käytettävissä oleviin ja voit käyttää **Varaston esto** -parametria estämään nimikkeet, joilla on ei-käytettävissä oleva varaston tila. Toimituskiellossa olevien nimikkeiden katsotaan olevan osa fyysistä varastoa, eikä niitä vodai käyttää tuotantotilauksessa, myyntitilauksessa, siirtotilauksessa tai lähtevässä tapahtumassa.
 
-Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet**-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos luet vioittuneet nimikkeet mobiililaitteella, Supply Chain Management voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa.
+Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis** , ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet** -ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos luet vioittuneet nimikkeet mobiililaitteella, Supply Chain Management voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa.
 
 Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on **Rikkoutunut** ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti.
 
-Kun olet määrittänyt varaston tilat, voit määrittää varaston oletustilan toimipaikalle, nimikkeelle ja varastolle. Voit myös määrittää oletustilan myyntiin, siirtoon ja ostotilauksiin. Myyntitilausten ja lähtevien siirtotilausten oletustilassa **Varastonesto**-asetus ei voi olla asennossa **Kyllä**. Varaston tila, joka periytyy toimipaikan, varaston, nimikkeen, ostotilauksen, siirtotilauksen tai myyntitilauksen oletusarvoasetuksista, voidaan muuttaa käyttämällä mobiililaitetta tai ostotilauksessa, myyntitilauksessa tai siirtotilausrivillä.
+Kun olet määrittänyt varaston tilat, voit määrittää varaston oletustilan toimipaikalle, nimikkeelle ja varastolle. Voit myös määrittää oletustilan myyntiin, siirtoon ja ostotilauksiin. Myyntitilausten ja lähtevien siirtotilausten oletustilassa **Varastonesto** -asetus ei voi olla asennossa **Kyllä**. Varaston tila, joka periytyy toimipaikan, varaston, nimikkeen, ostotilauksen, siirtotilauksen tai myyntitilauksen oletusarvoasetuksista, voidaan muuttaa käyttämällä mobiililaitetta tai ostotilauksessa, myyntitilauksessa tai siirtotilausrivillä.
 
-Suunnitellaksesi kattavuusryhmän nimikkeille, joiden varastotila on käytettävissä oleva, valitse **Kattavuussuunnitelma dimension mukaan** -vaihtoehto varastodimensiolle **Varastodimensioryhmät** -sivulla. Avatessasi **Nimikkeen kattavuus**-ohjatun toiminnon, nimikkeet, joilla on käytettävissä oleva tila, näkyvät **Tila**-sivulla. Luo näille nimikkeille kattavuusasetukset valitsemalla saatavilla oleville varastotiloille varastotilatunnus. Kattavuusasetusten perusteella voit laskea nimikevaatimukset sekä käytettävissä olevien nimikkeiden tarjonnan ja kysynnän ennusteen pääsuunnittelun aikana. Et voi luoda nimikkeen kattavuusasetusta, jolla on toimituskiellossa oleva varastotila. Vaihtoehtoisesti, voit käyttää **Nimikekattavuus** -sivua nimikkeen kattavuusparametrien luomiseen tai muokkaamiseen.
+Suunnitellaksesi kattavuusryhmän nimikkeille, joiden varastotila on käytettävissä oleva, valitse **Kattavuussuunnitelma dimension mukaan** -vaihtoehto varastodimensiolle **Varastodimensioryhmät** -sivulla. Avatessasi **Nimikkeen kattavuus** -ohjatun toiminnon, nimikkeet, joilla on käytettävissä oleva tila, näkyvät **Tila** -sivulla. Luo näille nimikkeille kattavuusasetukset valitsemalla saatavilla oleville varastotiloille varastotilatunnus. Kattavuusasetusten perusteella voit laskea nimikevaatimukset sekä käytettävissä olevien nimikkeiden tarjonnan ja kysynnän ennusteen pääsuunnittelun aikana. Et voi luoda nimikkeen kattavuusasetusta, jolla on toimituskiellossa oleva varastotila. Vaihtoehtoisesti, voit käyttää **Nimikekattavuus** -sivua nimikkeen kattavuusparametrien luomiseen tai muokkaamiseen.

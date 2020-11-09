@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829282"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997671"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Myyntitilauksen tilakenttien yhdistämismäärityksen määrittäminen
 
@@ -36,16 +35,16 @@ Ostotilauksen tilan ilmoittavilla kentillä on erilaiset luettelointiarvot Micro
 
 Supply Chain Managementissa myyntitilauksen tilaan liittyy kaksi kenttää. Kentät, joille on suoritettava yhdistämismääritys ovat **Tila** ja **Asiakirjan tila**.
 
-**Tila**-luettelointi määrittää tilauksen yleisen tilan. Tämä tila näkyy tilauksen otsikossa.
+**Tila** -luettelointi määrittää tilauksen yleisen tilan. Tämä tila näkyy tilauksen otsikossa.
 
-**Tila**-luetteloinnilla on seuraavat arvot:
+**Tila** -luetteloinnilla on seuraavat arvot:
 
 - Avoin tilaus
 - Toimitettu
 - Laskutettu
 - Peruutettu
 
-**Asiakirjan tila** -luettelointi määrittää viimeisimmän tilaukselle luodun asiakirjan. Jos tilaus on esimerkiksi vahvistettu, tämä asiakirja on myyntitilauksen vahvistus. Jos myynti tilaus on laskutettu osittain ja jäännösrivi vahvistetaan, asiakirjan tilana pysyy **Lasku**, koska lasku luodaan myöhemmin prosessissa.
+**Asiakirjan tila** -luettelointi määrittää viimeisimmän tilaukselle luodun asiakirjan. Jos tilaus on esimerkiksi vahvistettu, tämä asiakirja on myyntitilauksen vahvistus. Jos myynti tilaus on laskutettu osittain ja jäännösrivi vahvistetaan, asiakirjan tilana pysyy **Lasku** , koska lasku luodaan myöhemmin prosessissa.
 
 **Asiakirjan tila** -luetteloinnilla on seuraavat arvot:
 
@@ -58,7 +57,7 @@ Supply Chain Managementissa myyntitilauksen tilaan liittyy kaksi kenttää. Kent
 
 Salesissa myyntitilauksen tilaan liittyy kaksi kenttää. Kentät, joille on suoritettava yhdistämismääritys ovat **Tila** ja **Käsittelytila**.
 
-**Tila**-luettelointi määrittää tilauksen yleisen tilan. Sillä on seuraavat arvot:
+**Tila** -luettelointi määrittää tilauksen yleisen tilan. Sillä on seuraavat arvot:
 
 - Aktiiviset
 - Lähetetty
@@ -66,9 +65,9 @@ Salesissa myyntitilauksen tilaan liittyy kaksi kenttää. Kentät, joille on suo
 - Laskutettu
 - Peruutettu
 
-**Käsittelytila**-luettelointi otettiin käyttöön, jotta tilalle voidaan suorittaa tarkempi yhdistämismääritys Supply Chain Managementin kanssa.
+**Käsittelytila** -luettelointi otettiin käyttöön, jotta tilalle voidaan suorittaa tarkempi yhdistämismääritys Supply Chain Managementin kanssa.
 
-Seuraavassa taulukossa esitetään **Käsittelytila**-arvon yhdistämismääritys Supply Chain Managementissa.
+Seuraavassa taulukossa esitetään **Käsittelytila** -arvon yhdistämismääritys Supply Chain Managementissa.
 
 | Käsittelyn tila   | Tila Supply Chain Managementissa | Asiakirjan tila Supply Chain Managementissa |
 |---------------------|-----------------------------------|--------------------------------------------|
@@ -81,7 +80,7 @@ Seuraavassa taulukossa esitetään **Käsittelytila**-arvon yhdistämismäärity
 | Laskutettu            | Laskutettu                          | Lasku                                    |
 | Peruutettu           | Peruutettu                         | Ei käytettävissä                             |
 
-Seuraavassa taulukossa esitetään **Käsittelytila**-arvon yhdistämismääritys Salesin ja Supply Chain Managementin välillä.
+Seuraavassa taulukossa esitetään **Käsittelytila** -arvon yhdistämismääritys Salesin ja Supply Chain Managementin välillä.
 
 | Käsittelyn tila   | Tila Salesissa | Tila Supply Chain Managementissa |
 |---------------------|-----------------|-----------------------------------|
@@ -98,14 +97,14 @@ Seuraavassa taulukossa esitetään **Käsittelytila**-arvon yhdistämismäärity
 
 Voit määrittää myyntitilauskenttien yhdistämismäärityksen ottamalla käyttöön määritteet **IsSOPIntegrationEnabled** ja **isIntegrationUser**.
 
-Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
+Voit ottaa **IsSOPIntegrationEnabled** -määritteen käyttöön seuraavasti.
 
 1. Siirry selaimessa osoitteeseen `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Korvaa **\<test-name\>** yrityksesi Sales-linkillä.
 2. Etsi avatulla sivulla **organizationid** ja kirjoita arvo muistiin.
 
     ![organizationid-arvon etsiminen](media/sales-map-orgid.png)
 
-3. Avaa selainkonsoli Salesissa ja suorita seuraava komentosarja. Käytä vaiheen 2 **organizationid**-arvoa.
+3. Avaa selainkonsoli Salesissa ja suorita seuraava komentosarja. Käytä vaiheen 2 **organizationid** -arvoa.
 
     ```javascript
     Xrm.WebApi.updateRecord("organization",
@@ -124,13 +123,13 @@ Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
 
     ![JavaScript-koodi selainkonsolissa](media/sales-map-script.png)
 
-4. Varmista, että **IsSOPIntegrationEnabled**-arvona on **tosi**. Tarkista arvo vaiheen 1 URL-osoitteen avulla.
+4. Varmista, että **IsSOPIntegrationEnabled** -arvona on **tosi**. Tarkista arvo vaiheen 1 URL-osoitteen avulla.
 
     ![IsSOPIntegrationEnabled-arvona on tosi](media/sales-map-integration-enabled.png)
 
-Voit ottaa **isIntegrationUser**-määritteen käyttöön seuraavasti.
+Voit ottaa **isIntegrationUser** -määritteen käyttöön seuraavasti.
 
-1. Siirry Salesissa kohtaan **Asetus \> Mukauttaminen \> Järjestelmän mukauttaminen**, valitse **Käyttäjäyksikkö** ja avaa sitten**Lomake \> Käyttäjä**.
+1. Siirry Salesissa kohtaan **Asetus \> Mukauttaminen \> Järjestelmän mukauttaminen** , valitse **Käyttäjäyksikkö** ja avaa sitten **Lomake \> Käyttäjä**.
 
     ![Käyttäjälomakkeen avaaminen](media/sales-map-user.png)
 

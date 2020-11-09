@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456811"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997475"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
@@ -77,11 +76,11 @@ Tämän muutoksen tekeminen edellyttää, että seuraavat Power Appsin asetukset
 Rajoituksia:
 
 + Valuuttakenttää ei voi määrittää entiteetissä.
-+ Yli neljä desimaalia voidaan määrittää vain **Hinnoittelu**- ja **Tapahtumavaluutta**-tasoilla.
++ Yli neljä desimaalia voidaan määrittää vain **Hinnoittelu** - ja **Tapahtumavaluutta** -tasoilla.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Järjestelmäasetukset: valuutan tarkkuus hinnoittelussa
 
-Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset**-välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -kentässä, kuten seuraavassa kuvassa.
+Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset** -välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -kentässä, kuten seuraavassa kuvassa.
 
 ![Valuutan järjestelmäasetukset](media/currency-system-settings.png)
 

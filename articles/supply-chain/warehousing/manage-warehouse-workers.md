@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
+ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530026"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017080"
 ---
 # <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
@@ -31,9 +31,9 @@ ms.locfileid: "3530026"
 
 Tässä artikkelissa kuvataan, miten voit hyödyntää varastosovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 
-Jos käytät tätä toimintoa varastonhallinnassa, kaikkiin varastotyöntekijöiden toimintoihin viitataan *työnä*. Työ, kuten käsillä olevan varaston keräily, siirtäminen ja laskeminen tallennetaan mobiililaitteiden avulla. Ennen kuin varastotyöntekijä voi suorittaa työn, hänen on oltava liitettynä työntekijään Henkilöstöhallinnossa. Jokaiseen **Työntekijä**-tiliin voi olla liitettynä useita varastotyökäyttäjiä. Nämä työn käyttäjät voivat työskennellä eri varastoissa ja heillä voi olla eritasoinen pääsy erilaisiin mobiililaitteen valikkoihin. Voit ajatella varastotyön käyttäjiä useina valitun työntekijän kirjautumisina. Kullakin työntekijällä on oletusvarasto, ja määrätyt työnkulut näkyvät kyseiselle työn käyttäjälle saatavilla olevien valikkovaihtoehtojen kautta. 
+Jos käytät tätä toimintoa varastonhallinnassa, kaikkiin varastotyöntekijöiden toimintoihin viitataan *työnä*. Työ, kuten käsillä olevan varaston keräily, siirtäminen ja laskeminen tallennetaan mobiililaitteiden avulla. Ennen kuin varastotyöntekijä voi suorittaa työn, hänen on oltava liitettynä työntekijään Henkilöstöhallinnossa. Jokaiseen **Työntekijä** -tiliin voi olla liitettynä useita varastotyökäyttäjiä. Nämä työn käyttäjät voivat työskennellä eri varastoissa ja heillä voi olla eritasoinen pääsy erilaisiin mobiililaitteen valikkoihin. Voit ajatella varastotyön käyttäjiä useina valitun työntekijän kirjautumisina. Kullakin työntekijällä on oletusvarasto, ja määrätyt työnkulut näkyvät kyseiselle työn käyttäjälle saatavilla olevien valikkovaihtoehtojen kautta. 
 
-Luo uusi työn käyttäjä **Työntekijät**-sivulla **Yleinen**-välilehden **Varastot**-osiossa valitsemalla **Työntekijä**. Sinun on määritettävä käyttäjätunnus, käyttäjänimi, oletusvarasto ja valikon nimi. Tämä valikko latautuu, kun käyttäjä kirjautuu Varaston mobiililaiteportaaliin ja antaa sinun määritellä, mihin valikkovaihtoehtoihin kyseisellä käyttäjällä on pääsy. 
+Luo uusi työn käyttäjä **Työntekijät** -sivulla **Yleinen** -välilehden **Varastot** -osiossa valitsemalla **Työntekijä**. Sinun on määritettävä käyttäjätunnus, käyttäjänimi, oletusvarasto ja valikon nimi. Tämä valikko latautuu, kun käyttäjä kirjautuu Varaston mobiililaiteportaaliin ja antaa sinun määritellä, mihin valikkovaihtoehtoihin kyseisellä käyttäjällä on pääsy. 
 
 Osana kunkin työn käyttäjän asetusten määrittämistä voit myös määrittää tietyt prosessin työnkulut. Voit esimerkiksi käyttää **On inventoinnin valvoja** -kenttää määrittääksesi, voiko käyttäjä käsitellä inventoinnin ristiriitoihin tehtäviä oikaisuja inventoinnin aikana vai tuleeko toisen henkilön ensin tarkastaa nämä oikaisut.
 
@@ -43,7 +43,7 @@ Osana kunkin työn käyttäjän asetusten määrittämistä voit myös määritt
 Ota määrittämäsi työn standardit käyttöön valitsemalla **Salli työn standardit** -vaihtoehto kullekin varastolle, missä työn standardeja tullaan käyttämään.
 
 ## <a name="monitoring-and-controlling-warehouse-work"></a>Varastotyön valvonta ja ohjaus
-**Kaikki työ**-sivulla voit valvoa ja ylläpitää kaikkea suunniteltua, meneillään olevaa ja valmistunutta työtä. Tältä sivulta voit päivittää erilaisia prosesseja, kuten varastotyön käyttäjien määritykset ja työn prioriteetti. Voit myös porautua työn otsikkoon ja työn riveihin liittyviin yksityiskohtiin saadaksesi kuvan odotetuista tai valmistuneista työprosesseista. 
+**Kaikki työ** -sivulla voit valvoa ja ylläpitää kaikkea suunniteltua, meneillään olevaa ja valmistunutta työtä. Tältä sivulta voit päivittää erilaisia prosesseja, kuten varastotyön käyttäjien määritykset ja työn prioriteetti. Voit myös porautua työn otsikkoon ja työn riveihin liittyviin yksityiskohtiin saadaksesi kuvan odotetuista tai valmistuneista työprosesseista. 
 
 Jos otat käyttöön **Työn standardit** -vaihtoehdon, näet lasketun arvioidun ajan työlle. Kun työ sitten on käsittelyssä, näytetään toteutunut aika kullekin työtoiminnolle. Tällä tavoin voit verrata arvioituja aikalaskelmia toteutuneeseen aikaan. 
 

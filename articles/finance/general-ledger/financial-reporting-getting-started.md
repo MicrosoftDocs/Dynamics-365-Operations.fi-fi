@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
+ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967255"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3999546"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial reportingin aloittaminen 
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin ja miten käyt
 <a name="accessing-financial-reporting"></a>Taloushallinnon raportoinnin käyttäminen
 -----------------------------
 
-**Talousraportointi**-valikko sijaitsee seuraavissa sijainneissa:
+**Talousraportointi** -valikko sijaitsee seuraavissa sijainneissa:
 
 -   **Kirjanpito** &gt; **Kyselyt ja raportit**
 -   **Budjetointi** &gt; **Kyselyt ja raportit** &gt; **Perusbudjetointi**
@@ -87,16 +87,16 @@ Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla kä
 ## <a name="report-deletions-and-expirations"></a>Raportin poistot ja päättymiset
 Raportteja luovat käyttäjät voivat poistaa omia raporttejaan. Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat poistaa muiden raportteja. 
 
-Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki**-sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
+Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki** -sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
 * Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu.
 * Kaikki olemassa olevat raportit, jotka on luotu ennen kuin ominaisuus asennettiin, saavat 90 päivän vanhentumisajan. Päivämäärä voi näkyä tyhjänä lyhyen ajan, kunnes taloushallinnon raportointipalvelu on käynnissä, raportti luodaan ja palvelu suorittaa päivityksen aiemmin luotuihin raportteihin, joiden vanhentumispäivämäärä on tyhjä. 
-* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa: 
+* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia** , voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa: 
   * Vanhentuminen 90 päivää.
   * Asetus, joka määrittää, että raportti ei vanhene.
   
 Kun vanhenemisaika, kuten 90 päivää, on valittuna, sitä käytetään 90 päivän aikana tästä päivästä lähtien. Tämä on eri toiminta kuin 90 päivää alkuperäisen luontipäivämäärän määrityksestä, kun raportti luotiin. 
   
-Lisäasetukset otetaan huomioon tulevissa toiminnoissa. Oletusarvo on 90 päivää, ja käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat ohittaa **Talousraportit**-luettelosivun oletusarvon.    
+Lisäasetukset otetaan huomioon tulevissa toiminnoissa. Oletusarvo on 90 päivää, ja käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat ohittaa **Talousraportit** -luettelosivun oletusarvon.    
 
 ## <a name="default-reports"></a>Oletusraportit
 Talousraportointi sisältää 22 oletusraporttia. Jokaisessa raportissa käytetään oletuspäätililuokkia. Voit käyttää näitä raportteja sellaisenaan tai omien talousraportointitarpeiden lähtökohtana. Perinteisten raporttien, kuten tuloslaskelma tai tase, lisäksi nämä oletusraportit sisältävät raportteja, jotka näyttävät millaisia raportteja voidaan luoda. 
@@ -129,7 +129,7 @@ Talousraportointi sisältää 22 oletusraporttia. Jokaisessa raportissa käytet�
 | Käytettävissä olevat budjettivarat -oletus                         | Tarkastele tarkistetun budjetin, toteutuneiden menojen, budjettivarausten ja käytettävissä olevien budjettivarojen yksityiskohtaista vertailua.                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Talousraporttien avaaminen
-Kun valitset **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2019, raportti luotiin päivämäärälle 31.7.2019. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
+Kun valitset **Talousraportointi** -valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2019, raportti luotiin päivämäärälle 31.7.2019. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Talousraporttien luominen ja muokkaaminen
 Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Dynamics 365 Financessa käytössä olevalle yritykselle. 
@@ -145,14 +145,14 @@ Tietyt yleiset ongelmat voivat aiheuttaa hankaluuksia, kun Report Designer avata
 
 Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
 
-* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse **Suojaus**-välilehdessä ensin Luotettavat sivuston ja sitten **Sivustot**. Anna **Lisää tämä sivusto vyöhykkeeseen** -kohdassa \*\.dynamics.com ja valitse sitten **Lisää**. 
-* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus**-välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
+* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse **Suojaus** -välilehdessä ensin Luotettavat sivuston ja sitten **Sivustot**. Anna **Lisää tämä sivusto vyöhykkeeseen** -kohdassa \*\.dynamics.com ja valitse sitten **Lisää**. 
+* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus** -välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
 * Poista ponnahdusikkunoiden esto käytöstä selaimessa.
 * Työasemien on asennettava Microsoft .NET -kehys 4.6.2 tai uudempi versio. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345).
 * Jos käytössä on Microsoft Edge ja Chrome-selain, Report Designer -asiakasohjelman lataamista varten on asennettava ClickOnce-laajennus. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. 
      1. Avaa uusi selain Microsoft Edgessä.
-     2. Anna **edge://flags** ja paina **Enter**-näppäintä.
-     3. Valitse **ClickOnce-tuki**-vaihtoehto tai käytä tätä suoraa linkkiä: **edge://flags/#edge-click-once**.
+     2. Anna **edge://flags** ja paina **Enter** -näppäintä.
+     3. Valitse **ClickOnce-tuki** -vaihtoehto tai käytä tätä suoraa linkkiä: **edge://flags/#edge-click-once**.
      4. Määritä avattavan valikon vaihtoehdon asetukseksi **Käytössä**.
      5. Valitse **Käynnistä selain uudelleen**.
 

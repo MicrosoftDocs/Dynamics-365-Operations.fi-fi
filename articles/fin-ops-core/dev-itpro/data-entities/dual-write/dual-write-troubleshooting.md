@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
-ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
+ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340927"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997251"
 ---
 # <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
@@ -51,8 +50,8 @@ Kun olet asentanut paketin käyttöönottajatyökalun, asenna ratkaisupaketti no
 
     ![Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438-kansion sisältö](media/extract_package.png)
 
-3. Liitä kaikki kopioidut tiedostot paketin käyttöönottajan **Työkalu**-kansioon. 
-4. Valitse Common Data Service -ympäristö ja asenna ratkaisut suorittamalla **PackageDeployer.exe**-asiakirja.
+3. Liitä kaikki kopioidut tiedostot paketin käyttöönottajan **Työkalu** -kansioon. 
+4. Valitse Common Data Service -ympäristö ja asenna ratkaisut suorittamalla **PackageDeployer.exe** -asiakirja.
 
     ![Työkalut-kansion sisältö](media/paste_copied_files.png)
 
@@ -62,27 +61,27 @@ Kun olet asentanut paketin käyttöönottajatyökalun, asenna ratkaisupaketti no
 
 Jäljitysloki otetaan käyttöön seuraavasti.
 
-1. Kirjaudu mallipohjaiseen sovellukseen Dynamics 365:ssa, avaa **Asetukset**-sivu ja valitse sitten **Järjestelmä**-kohdasta **Hallinta**.
-2. Valitse **Hallinta**-sivulla **Järjestelmäasetukset**.
-3. Ota laajennuksen jäljitysloki käyttöön valitsemalla **Mukauttaminen**-välilehden **Laajennuksen ja mukautetun työnkulun tehtävän jäljitys**-kentästä **Kaikki**. Jos haluat kirjata jäljityslokit vain, kun poikkeuksia ilmenee, voit valita kohdan **Poikkeus** sen sijaan.
+1. Kirjaudu mallipohjaiseen sovellukseen Dynamics 365:ssa, avaa **Asetukset** -sivu ja valitse sitten **Järjestelmä** -kohdasta **Hallinta**.
+2. Valitse **Hallinta** -sivulla **Järjestelmäasetukset**.
+3. Ota laajennuksen jäljitysloki käyttöön valitsemalla **Mukauttaminen** -välilehden **Laajennuksen ja mukautetun työnkulun tehtävän jäljitys** -kentästä **Kaikki**. Jos haluat kirjata jäljityslokit vain, kun poikkeuksia ilmenee, voit valita kohdan **Poikkeus** sen sijaan.
 
 
 Jäljitysloki näytetään seuraavasti.
 
-1. Kirjaudu mallipohjaiseen sovellukseen Dynamics 365:ssa, avaa **Asetukset**-sivu ja valitse sitten **Mukautus**-kohdasta **Laajennuksen jäljitysloki**.
-2. Etsi jäljityslokit, joiden **Tyyppinimi**-kentän arvoksi on määritetty **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
-3. Voit tarkastella koko lokia kaksoisnapsauttamalla kohdetta ja tarkistaa sitten **Suoritus**-pikavälilehdessä **Sanomalohko**-tekstin.
+1. Kirjaudu mallipohjaiseen sovellukseen Dynamics 365:ssa, avaa **Asetukset** -sivu ja valitse sitten **Mukautus** -kohdasta **Laajennuksen jäljitysloki**.
+2. Etsi jäljityslokit, joiden **Tyyppinimi** -kentän arvoksi on määritetty **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+3. Voit tarkastella koko lokia kaksoisnapsauttamalla kohdetta ja tarkistaa sitten **Suoritus** -pikavälilehdessä **Sanomalohko** -tekstin.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Virheenkorjaustilan käyttöönotto Finance and Operations -sovellusten live-synkronointiongelmien vianmäärityksessä
 
 **Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvojan kaksoiskirjoitusvirheet, jotka ovat peräisin Common Data Servicestä voivat näkyä Finance and Operations -sovelluksessa. Joissakin tapauksissa virhesanoman koko teksti ei ole käytettävissä, koska sanoma on liian pitkä tai sisältää henkilökohtaisia tunnistetietoja (PII). Noudattamalla seuraavia ohjeita voit ottaa käyttöön sanallisen kirjaamisen.
 
-1. Kaikilla Finance and Operations -sovellusten projektikokoonpanoilla on **IsDebugMode**-ominaisuus **DualWriteProjectConfiguration**-yksikössä. Avaa **DualWriteProjectConfiguration**-yksikkö käyttämällä Excel-lisäosaa.
+1. Kaikilla Finance and Operations -sovellusten projektikokoonpanoilla on **IsDebugMode** -ominaisuus **DualWriteProjectConfiguration** -yksikössä. Avaa **DualWriteProjectConfiguration** -yksikkö käyttämällä Excel-lisäosaa.
 
     > [!TIP]
-    > Helppo tapa avata yksikkö on ottaa **Suunnittelu**-tila käyttöön Excel-lisäosalla ja lisätä sitten taulukkoon **DualWriteProjectConfigurationEntity**. Lisätietoja kohdassa [Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa](../../office-integration/use-excel-add-in.md).
+    > Helppo tapa avata yksikkö on ottaa **Suunnittelu** -tila käyttöön Excel-lisäosalla ja lisätä sitten taulukkoon **DualWriteProjectConfigurationEntity**. Lisätietoja kohdassa [Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa](../../office-integration/use-excel-add-in.md).
 
-2. Aseta **sDebugMode**-ominaisuuden arvoksi projektille **Kyllä**.
+2. Aseta **sDebugMode** -ominaisuuden arvoksi projektille **Kyllä**.
 3. Suorita virheitä tuottava skenaario.
 4. Sanalliset lokit ovat käytettävissä DualWriteErrorLog-taulussa. Voit etsiä tietoja taulukkoselaimesta käyttämällä seuraavaa URL-osoitetta (korvaa **XXX** tarvittaessa):
 
@@ -94,7 +93,7 @@ Jäljitysloki näytetään seuraavasti.
 
 1. Kirjaudu Microsoft Dynamics Lifecycle Servicesiin (LCS).
 2. Avaa LCS-projekti, jonka valitsit kaksoiskirjoitustestauksen suorittamista varten.
-3. Valitse **Pilvipalveluympäristöt**-ruutu.
+3. Valitse **Pilvipalveluympäristöt** -ruutu.
 4. Voit kirjautua Finance and Operations -sovelluksen virtuaalikoneeseen (VM) etätyöpöydän avulla. Käytä LCS:ssä näkyvää paikallista tiliä.
 5. Avaa tapahtumien katseluohjelma.
 6. Valitse **Sovellusten ja palveluiden lokit \> Microsoft \> Dynamics \> AX -DualWriteSync \> Toiminnassa**.
@@ -105,7 +104,7 @@ Jäljitysloki näytetään seuraavasti.
 **Ympäristön linkityksen poistamiseen vaadittu rooli:** Joko Finance and Operations -sovelluksen tai Common Data Service -ohjelman järjestelmänvalvoja.
 
 1. Kirjautuminen Finance and Operations -sovellukseen.
-2. Siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus**-ruutu.
+2. Siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus** -ruutu.
 3. Valitse kaikki käynnissä olevat yhdistämismääritykset ja valitse sitten **Pysäytä**.
 4. Valitse **Poista ympäristön linkitys**.
 5. Vahvista toiminto valitsemalla **Kyllä**.
@@ -114,10 +113,10 @@ Nyt voit linkittää uuden ympäristön.
 
 ## <a name="unable-to-view-the-sales-order-line-information-form"></a>Myyntitilausrivin tietolomaketta ei voi tarkastella 
 
-Kun luot myyntitilauksen Dynamics 365 Salesissa, **+ Lisää tuotteet** -vaihtoehdon napsauttaminen saattaa ohjata sinut Dynamics 365 Project Operationsin tilausrivilomakkeeseen. Kyseisessä lomakkeessa ei ole mitään tapaa tarkastella myyntitilausrivin **Tieto**-lomaketta. **Tietoja**-vaihtoehto ei näy **Uuden tilausrivin** alla olevassa avattavassa valikossa. Näin tapahtuu, koska Project Operations on asennettu ympäristöösi.
+Kun luot myyntitilauksen Dynamics 365 Salesissa, **+ Lisää tuotteet** -vaihtoehdon napsauttaminen saattaa ohjata sinut Dynamics 365 Project Operationsin tilausrivilomakkeeseen. Kyseisessä lomakkeessa ei ole mitään tapaa tarkastella myyntitilausrivin **Tieto** -lomaketta. **Tietoja** -vaihtoehto ei näy **Uuden tilausrivin** alla olevassa avattavassa valikossa. Näin tapahtuu, koska Project Operations on asennettu ympäristöösi.
 
-Voit ottaa **Tieto**-lomakevaihtoehdon uudelleen käyttöön seuraavasti:
-1. Siirry **Tilausrivi**-yksikköön.
-2. Etsi **Tieto**-lomake lomakkeet-solmussa. 
-3. Valitse **Tieto**-lomake ja valitse **Ota käyttöön käyttöoikeusroolit**. 
+Voit ottaa **Tieto** -lomakevaihtoehdon uudelleen käyttöön seuraavasti:
+1. Siirry **Tilausrivi** -yksikköön.
+2. Etsi **Tieto** -lomake lomakkeet-solmussa. 
+3. Valitse **Tieto** -lomake ja valitse **Ota käyttöön käyttöoikeusroolit**. 
 4. Muuta suojausasetukseksi **Näytä kaikille**.

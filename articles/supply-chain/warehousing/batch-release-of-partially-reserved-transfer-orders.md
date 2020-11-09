@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLoadPlanningWorkbench
+ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0707731caaf9b4852e3c19be899ad92f5b84e29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201292"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016284"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Osittain varattujen siirtotilauserien vapautus
 
@@ -47,7 +47,7 @@ Siirto- ja myyntitilausten täyttämiskäytännöt määritetään yrityksen tas
 
 -   Siirto- ja myyntitilauksille luodaan täyttämiskäytäntöjä valitsemalla **Varastonhallinta** \> **Asetukset** \> **Varastoon vapauttaminen** \> **Täyttämiskäytäntö** ja kirjoittamalla sitten käytännölle nimi ja kuvaus.
 
--   Voit määrittää täytäntöönpanoasteen, arvotyypin ja viestin, joka näytetään, jos käytäntöä rikotaan valitsemalla **Varastonhallinta** \> **Asetukset** \> **Vapauta varastoon** \> **Täyttämiskäytäntö**, ja määritä sitten **Täytäntöönpanoaste**, **Arvotyyppi**, ja **Viesti täytäntöönpanon rikkomuksista** -kentät.
+-   Voit määrittää täytäntöönpanoasteen, arvotyypin ja viestin, joka näytetään, jos käytäntöä rikotaan valitsemalla **Varastonhallinta** \> **Asetukset** \> **Vapauta varastoon** \> **Täyttämiskäytäntö** , ja määritä sitten **Täytäntöönpanoaste** , **Arvotyyppi** , ja **Viesti täytäntöönpanon rikkomuksista** -kentät.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Määritä myyntitilausten ja siirtotilausten täyttämiskäytännöt
 
@@ -59,8 +59,8 @@ Siirto- ja myyntitilausten täyttämiskäytännöt määritetään yrityksen tas
 
 Tilaukset vapautetaan varastoon erässä erätyön avulla. Erätyössä ajettavien tilausten tunnistamiseen käytettävät parametrit asetetaan erätyössä itsessään.
 
-**Määrä**-parametri määrää, vapautetaanko erässä koko määrä vai fyysisesti varattu määrä. **Salli osittain vapautettujen tilausten vapautus** -parametri määrää, hyväksytäänkö vai hylätäänkö erässä olevat tilaukset, jos ne on vapautettu osittain aiemmin.
+**Määrä** -parametri määrää, vapautetaanko erässä koko määrä vai fyysisesti varattu määrä. **Salli osittain vapautettujen tilausten vapautus** -parametri määrää, hyväksytäänkö vai hylätäänkö erässä olevat tilaukset, jos ne on vapautettu osittain aiemmin.
 
--   Voit määrittää **Määrä**- ja **Salli osittain vapautettujen tilausten vapautus** -parametrit siirtotilauksille kohdassa **Varastonhallinta** \> **Vapauta varastoon** \> **Siirtotilauksien automaattinen vapauttaminen**.
+-   Voit määrittää **Määrä** - ja **Salli osittain vapautettujen tilausten vapautus** -parametrit siirtotilauksille kohdassa **Varastonhallinta** \> **Vapauta varastoon** \> **Siirtotilauksien automaattinen vapauttaminen**.
 
--   Voit määrittää **Määrä**- ja **Salli osittain vapautettujen tilausten vapautus** -parametrit myyntitilauksille kohdassa **Varastonhallinta** \> **Vapauta varastoon** \> **Myyntitilauksien automaattinen vapauttaminen**.
+-   Voit määrittää **Määrä** - ja **Salli osittain vapautettujen tilausten vapautus** -parametrit myyntitilauksille kohdassa **Varastonhallinta** \> **Vapauta varastoon** \> **Myyntitilauksien automaattinen vapauttaminen**.

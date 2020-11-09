@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383248"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018233"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Luo ostotilaus, jolla on toimitusaikataulu
 
@@ -34,19 +34,19 @@ Tässä ohjeessa esitellään, miten ostotilaukselle luodaan toimitusaikataulu. 
 2. Valitse toimintoruudussa **Uusi**.
 3. Kirjoita **Toimittajan tili** -kenttään arvoksi `US-101`.
 4. Valitse **OK**.
-5. Kirjoita **Nimiketunnus**-kenttään arvo `M0001`.
-6. Kirjoita **Määrä**-kenttään `10`.
+5. Kirjoita **Nimiketunnus** -kenttään arvo `M0001`.
+6. Kirjoita **Määrä** -kenttään `10`.
 7. Valitse **Ostotilausrivi**.
 8. Myynnin **Toimitusaikataulu**.
-- **Toimitusaikataulu**-sivulla voi määrittää toimittajalta saatavan tilausrivin kokonaismäärän lähetysten määrän.  
+- **Toimitusaikataulu** -sivulla voi määrittää toimittajalta saatavan tilausrivin kokonaismäärän lähetysten määrän.  
 - Oletusarvon mukaan järjestelmä kopioi ensimmäiselle toimituksen aikatauluriville kokonaismäärän ja muita alkuperäisen ostorivin toimitustietoja. Tässä esimerkissä luodaan aikataulu kahdelle lähetykselle siten, että toisen lähetyksen päivämäärä poikkeaa viikolla ensimmäisestä lähetyspäivästä.  
-9. Muuta **Määrä**-kentän arvoksi `4`.
+9. Muuta **Määrä** -kentän arvoksi `4`.
 10. Valitse **Uusi**.
-11. Syötä jäljellä olevaksi määräksi **Määrä**-kenttään `6`.
+11. Syötä jäljellä olevaksi määräksi **Määrä** -kenttään `6`.
 - Valitse toimituspäivä-kenttään päivämäärä, joka on viikon ensimmäisen toimitusrivin päivämäärän jälkeen.  
-- Voit seurata toimitusaikatauluriveille kohdistettua kokonaismäärää **Summa**- ja **Jäljellä**-kentän avulla. Kun jäljellä oleva summa on nolla, alkuperäisen rivin kokonaismäärä on kohdistettu aikatauluun.  
+- Voit seurata toimitusaikatauluriveille kohdistettua kokonaismäärää **Summa** - ja **Jäljellä** -kentän avulla. Kun jäljellä oleva summa on nolla, alkuperäisen rivin kokonaismäärä on kohdistettu aikatauluun.  
 12. Laajenna **Kulujen muunto** -osa.
-- Vaihtoehtojen avulla voit määrittää, kuinka kulut jaetaan toimitusaikataulun rivien kesken. Jos valitset **Kopioi bruttosummat**, jokaiselle riville kopioidaan alkuperäisen tilausrivin kulusumma. **Kohdista toimitusriveille** -vaihtoehto jakaa alkuperäisen rivin kulut kunkin toimitusrivin määrän mukaan.  
+- Vaihtoehtojen avulla voit määrittää, kuinka kulut jaetaan toimitusaikataulun rivien kesken. Jos valitset **Kopioi bruttosummat** , jokaiselle riville kopioidaan alkuperäisen tilausrivin kulusumma. **Kohdista toimitusriveille** -vaihtoehto jakaa alkuperäisen rivin kulut kunkin toimitusrivin määrän mukaan.  
 13. Tiivistä **Kulujen muunto** -osa.
 14. Valitse **OK**.
 - Toimitusaikataulu on nyt otettu käyttöön tilauksessa.  
@@ -56,7 +56,7 @@ Tässä ohjeessa esitellään, miten ostotilaukselle luodaan toimitusaikataulu. 
 
 ## <a name="change-the-delivery-schedule"></a>Muuta toimitusaikataulu
 Toimitusrivien määrää voi muuttaa. Jos muutat sitä, kaupallinen rivi päivitetään automaattisesi toimitusrivien kokonaismäärän mukaiseksi.  
-1. Muuta ensimmäisen toimitusrivin **Määrä**-kentän arvoksi `4`:n sijaan `5`.
+1. Muuta ensimmäisen toimitusrivin **Määrä** -kentän arvoksi `4`:n sijaan `5`.
 2. Valitse ensimmäinen tilausrivi (kaupallinen rivi).  
 - Kaupallisen rivin määräksi on muutettu 11.  
 
@@ -67,10 +67,10 @@ Ostotilaus on vahvistettava ennen tuotteen vastaanoton käsittelyä. Tässä esi
 3. Valitse toimintoruudussa **Vastaanota**.
 4. Valitse **Tuotteen vastaanotto**. Kirjoita mikä tahansa arvo **Tuotteen vastaanotto** -kenttään.
 - Tätä kenttää käytetään syöttämään viite, jota käytetään tositteena tuotteen vastaanoton kirjauskansiossa.  
-- Valitse **Määrä**-kentässä **Tilattu määrä**. Tämä vaihtoehto tarkoittaa, että vastaanotto käsitellään sen määrän mukaiseksi, jolla tilausrivit on luotu.  
+- Valitse **Määrä** -kentässä **Tilattu määrä**. Tämä vaihtoehto tarkoittaa, että vastaanotto käsitellään sen määrän mukaiseksi, jolla tilausrivit on luotu.  
 - Varmista, että **Tulosta tuotteen vastaanotto** -kentän arvo on **Ei**. Tässä esimerkissä ei tarvita tulostamista.  
-5. Laajenna **Rivit**-osa.
+5. Laajenna **Rivit** -osa.
 - Huomaa, miten tuotteen vastaanotto luodaan toimitusriveille alkuperäisen tilausrivin sijaan. Jos vastaanotto olisi kirjattu varastossa, se olisi myös kirjattu toimitusaikataulun riveille.  
-6. Tiivistä **Rivit**-osa.
+6. Tiivistä **Rivit** -osa.
 7. Kirjaa vastaanotto valitsemalla **OK**.
 

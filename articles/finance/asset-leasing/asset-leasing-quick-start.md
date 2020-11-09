@@ -3,7 +3,7 @@ title: Omaisuuden leasingin aloittaminen
 description: Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970005"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022564"
 ---
 # <a name="asset-leasing-get-started"></a>Omaisuuden leasingin aloittaminen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä. Ohjeaiheessa myös määritellään käyttöliittymässä ja ohjeissa käytetyt termit. Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen. Omaisuuden leasing integroituu saumattomasti Dynamics 365 Financen komponentteihin, mukaan lukien käyttöomaisuuseriin, ostoreskontraan ja kirjanpitoon.
 
@@ -209,8 +208,8 @@ Tämä ilmaisee käyttöoikeusomaisuuserän merkitsee saldon pienentämisen siir
 ## <a name="create-an-asset-lease"></a>Omaisuuden vuokrasopimuksen luominen
 Luo uusi vuokrasopimus seuraavien ohjeiden mukaan. 
 
-1. **Omaisuuuden leasing** -ominaisuuden käyttö edellyttää, että se otetaan käyttöön **Ominaisuuden hallinta** -työtilassa. Valitse **Ominaisuuden hallinta** -työtilassa **Kaikki**, jolloin kaikki ominaisuudet mainitaan sivulla. Valitse ensin **Omaisuuden leasing** ja sitten **Ota käyttöön nyt**.
-2. Valitse **Omaisuuden leasing > Yleinen > Vuokrasopimuksen yhteenveto**. Anna pakollisten kenttien tiedot **Yleiset**-pikavälilehdessä. 
+1. **Omaisuuuden leasing** -ominaisuuden käyttö edellyttää, että se otetaan käyttöön **Ominaisuuden hallinta** -työtilassa. Valitse **Ominaisuuden hallinta** -työtilassa **Kaikki** , jolloin kaikki ominaisuudet mainitaan sivulla. Valitse ensin **Omaisuuden leasing** ja sitten **Ota käyttöön nyt**.
+2. Valitse **Omaisuuden leasing > Yleinen > Vuokrasopimuksen yhteenveto**. Anna pakollisten kenttien tiedot **Yleiset** -pikavälilehdessä. 
    - **Vuokran tiedot**
    - **Resurssin käyttöikä (kuukautta)**
    - **Vuokraryhmä**
@@ -224,15 +223,15 @@ Luo uusi vuokrasopimus seuraavien ohjeiden mukaan.
 
 4. Valitse **Kirjat**. 
 
-5. Siirry **Yleiset**-pikavälilehteen. **Ensimmäinen käyttöoikeusomaisuuserä** ja **vuokravelka** lasketaan. 
+5. Siirry **Yleiset** -pikavälilehteen. **Ensimmäinen käyttöoikeusomaisuuserä** ja **vuokravelka** lasketaan. 
 
-6. Siirry **Vuokrasopimuksen luokittelutesti** -pikavälilehti ja tarkista **Vuokrasopimustyyppi**-kentän arvo. 
+6. Siirry **Vuokrasopimuksen luokittelutesti** -pikavälilehti ja tarkista **Vuokrasopimustyyppi** -kentän arvo. 
 
-   **Vuokrasopimuksen tyyppi** -luokitellaan automaattisesti **Kirjat**-sivulla määritettyjen ehtojen perusteella.
+   **Vuokrasopimuksen tyyppi** -luokitellaan automaattisesti **Kirjat** -sivulla määritettyjen ehtojen perusteella.
 
-7.  Valitse **Maksusuunnitelma** **Toiminto**-osassa.  
+7.  Valitse **Maksusuunnitelma** **Toiminto** -osassa.  
 
-   **Maksusuunnitelma**-sivulla on vuokrasopimuksen tunnuksen mukainen luettelo tulevista maksusuunnitelmista. Valitsemalla **Vahvista aikataulu** voit kirjata **Alkuperäinen kirjaus** -tapahtumat. 
+   **Maksusuunnitelma** -sivulla on vuokrasopimuksen tunnuksen mukainen luettelo tulevista maksusuunnitelmista. Valitsemalla **Vahvista aikataulu** voit kirjata **Alkuperäinen kirjaus** -tapahtumat. 
 
 [![Alkuperäinen kirjaus -toiminto](./media/overview-13.png)](./media/overview-13.png)
 

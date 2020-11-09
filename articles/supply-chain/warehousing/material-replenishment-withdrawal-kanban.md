@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d712cc3ebdc959d1fee4a2a79e3283b84f0b901a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205549"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017068"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Täydennys ja otto-kanbanit
 
@@ -54,11 +54,11 @@ Tässä skenaariossa valmistusprosessi (4) kuluttaa materiaalia tuotannon varast
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Otto-kanbanin kanban-keräilyn varastotyön määrittäminen
 
-Voit ottaa otto-kanbanin raaka-aineen keräilyn käyttöön määrittämällä **Kanban-keräilyn** työtilaustyypin aaltomallit, työmallit ja sijaintidirektiivit. Tämä työtilaustyyppi ei tue vain otto-kanbanin keräilyprosessia. Se tukee myös valmistus-kanbanin keräilyprosessia. Voit kuitenkin määrittää kummallekin kanban-tyypille erillisen keräilyprosessin erottamalla aaltomallit, työmallit ja sijaintidirektiivit. Voit erottaa aaltomallit, työmallit ja sijaintidirektiivit määrittämällä ehdot kyseisten yksikköjen kyselyjen tehtävätyypissä (**Prosessi** tai **Siirto**).
+Voit ottaa otto-kanbanin raaka-aineen keräilyn käyttöön määrittämällä **Kanban-keräilyn** työtilaustyypin aaltomallit, työmallit ja sijaintidirektiivit. Tämä työtilaustyyppi ei tue vain otto-kanbanin keräilyprosessia. Se tukee myös valmistus-kanbanin keräilyprosessia. Voit kuitenkin määrittää kummallekin kanban-tyypille erillisen keräilyprosessin erottamalla aaltomallit, työmallit ja sijaintidirektiivit. Voit erottaa aaltomallit, työmallit ja sijaintidirektiivit määrittämällä ehdot kyseisten yksikköjen kyselyjen tehtävätyypissä ( **Prosessi** tai **Siirto** ).
 
 ## <a name="configure-the-withdrawal-kanban"></a>Otto-kanbanin määrittäminen
 
-Otto-kanbanissa käytettävä siirtotehtävä määritetään aktivoidun tehtäväsuunnitelman osana Lean-tuotantovirrassa. Siirtotehtävän määrityksen osana määritetään myös siirron lähtö- ja kohdesijainnit. Kun siirtotehtävä on määritetty, voit määrittää sille **Otto**-tyypin kanban-säännön. Kanban-sääntö määrittää otto-kanbanin käytännöt ja määritykset. Kanbanin määrä määrittää, kuinka monta materiaalin käsittely-yksikön yksikköä kanban siirtää siirtoprosessin aikana. Kiinteää kanban-määrää käytetään, kun valittuna on kiinteä täydennysstrategia. Määrä määrittää, kuinka monta kanbania tarvitaan, jotta varasto ei lopu kysynnän lähteessä. Kiinteä määrä voidaan laskea todellisen kysynnän, historiallisen kysynnän ja palvelutasojen perusteella. Kahdessa seuraavassa skenaariossa kerrotaan, miten voit hallita otto-kanbania käyttävää materiaalitäydennystä.
+Otto-kanbanissa käytettävä siirtotehtävä määritetään aktivoidun tehtäväsuunnitelman osana Lean-tuotantovirrassa. Siirtotehtävän määrityksen osana määritetään myös siirron lähtö- ja kohdesijainnit. Kun siirtotehtävä on määritetty, voit määrittää sille **Otto** -tyypin kanban-säännön. Kanban-sääntö määrittää otto-kanbanin käytännöt ja määritykset. Kanbanin määrä määrittää, kuinka monta materiaalin käsittely-yksikön yksikköä kanban siirtää siirtoprosessin aikana. Kiinteää kanban-määrää käytetään, kun valittuna on kiinteä täydennysstrategia. Määrä määrittää, kuinka monta kanbania tarvitaan, jotta varasto ei lopu kysynnän lähteessä. Kiinteä määrä voidaan laskea todellisen kysynnän, historiallisen kysynnän ja palvelutasojen perusteella. Kahdessa seuraavassa skenaariossa kerrotaan, miten voit hallita otto-kanbania käyttävää materiaalitäydennystä.
 
 ## <a name="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban"></a>Skenaario 1: Tuotannon varastointisijainnin täydentäminen kiinteän otto-kanbanin avulla
 

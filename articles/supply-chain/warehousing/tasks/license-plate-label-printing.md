@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable
+ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 43dc913e84fa53179855d7ab8dbbf4d179e2cc63
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9e548e5e5528733412d47478dd740b87217cdac2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383041"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016099"
 ---
 # <a name="enable-license-plate-label-printing"></a>Rekisterikilven etiketin tulostuksen ottaminen käyttöön
 
@@ -39,12 +39,12 @@ Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti
 
 ## <a name="setup-the-sscc-license-plate-number-sequence"></a>SSCC-rekisterinumeron järjestyksen määrittäminen
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Organisaation hallinta > Numerosarjat > Numerosarjat**.
-2. Valitse **Alue**-kentässä vaihtoehto.
-3. Valitse **Viite**-kentässä vaihtoehto.
-4. Kirjoita arvo **Yritys**-kenttään.
-5. Laajenna **Segmentit**-osa.
+2. Valitse **Alue** -kentässä vaihtoehto.
+3. Valitse **Viite** -kentässä vaihtoehto.
+4. Kirjoita arvo **Yritys** -kenttään.
+5. Laajenna **Segmentit** -osa.
 6. Valitse **Muokkaa**.
-7. Valitse **Segmentit**-taulukon ensimmäinen rivi.
+7. Valitse **Segmentit** -taulukon ensimmäinen rivi.
 8. Valitse **Poista**.
 9. Valitse **Poista**.
 10. Valitse **Tallenna**.
@@ -54,7 +54,7 @@ Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti
 1. Valitse **Siirtymisruutu > Moduulit > Varastonhallinta >> Asetukset > Asiakirjan reititys > Asiakirjan reititysasettelut**. Ota SSCC-asettelu käyttöön.  
 2. Valitse **Uusi**.
 3. Kirjoita **Asettelun tunnus** -kenttään arvo.
-4. Kirjoita **Kuvaus**-kenttään arvo.
+4. Kirjoita **Kuvaus** -kenttään arvo.
 5. Valitse **Lisää tekstin loppuun**.
 6. Valitse **Tallenna**.
 7. Sulje sivu.
@@ -63,11 +63,11 @@ Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti
 1. Valitse **Siirtymisruutu > Moduulit > Varastonhallinta >> Asetukset > Asiakirjan reititys > Asiakirjan reititys**.
 2. Valitse **Työtilauksen tyyppi** -kentässä vaihtoehto.
 3. Valitse **Uusi**.
-4. Kirjoita arvo **Varasto**-kenttään.
-5. Kirjoita arvo **Nimi**-kenttään.
+4. Kirjoita arvo **Varasto** -kenttään.
+5. Kirjoita arvo **Nimi** -kenttään.
 6. Valitse **Uusi**.
 7. Syötä tai valitse arvo **Asettelun tunnus** -kenttään.
-8. Valitse **Nimi**-kentästä tulostin, jota haluat käyttää.
+8. Valitse **Nimi** -kentästä tulostin, jota haluat käyttää.
 9. Valitse **Tallenna**.
 10. Sulje sivu.
 
@@ -75,11 +75,11 @@ Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Varastonhallinta > Asetukset > mobiililaite > Mobiililaitteen valikkovaihtoehdot**.
 2. Valitse **Uusi**.
 3. Kirjoita arvo **Valikkovaihtoehdon nimi** -kenttään.
-4. Kirjoita **Otsikko**-kenttään arvo.
-5. Valitse **Tapa**-kentässä vaihtoehto.
+4. Kirjoita **Otsikko** -kenttään arvo.
+5. Valitse **Tapa** -kentässä vaihtoehto.
 6. Valitse **Käytä nykyistä työtä** -kentässä **Kyllä**.
 7. Valitse **Muodosta rekisterikilpi** -kentässä **Kyllä**.
-8. Laajenna **Työluokat**-osa.
+8. Laajenna **Työluokat** -osa.
 9. Valitse **Uusi**.
 10. Kirjoita **Työluokan tunnus** -kenttään arvo.
 11. Valitse **Tallenna**.
@@ -95,7 +95,7 @@ Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Työ > Työmallit**.
 2. Valitse **Muokkaa**.
 3. Valitse **Uusi**.
-4. Valitse **Työtyyppi**-kentässä **Tulosta**.
+4. Valitse **Työtyyppi** -kentässä **Tulosta**.
 5. Syötä tai valitse arvo **Työluokan tunnus** -kenttään.
 6. Valitse **Siirrä ylös**.
 7. Valitse **Tallenna**.

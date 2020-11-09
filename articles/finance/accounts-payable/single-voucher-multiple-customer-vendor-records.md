@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bd741cdf86ef73742a75bac910d7560cb380cfb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189542"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006233"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
@@ -48,11 +48,10 @@ Kun kirjaat tositteen, jossa on useita asiakas- tai toimittajatietueita, kun yks
 
 ### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus käteisalennuksen kirjanpitoon
 
-Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio**-sivulla. Nämä laskut jakautuvat useille tilin dimensioille.
+Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio** -sivulla. Nämä laskut jakautuvat useille tilin dimensioille.
 
-|             |                  |              |                 |           |            |
+| Tosite | Tilityyppi | Tili  | kuvaus | Veloitus | Luotto |
 |-------------|------------------|--------------|-----------------|-----------|------------|
-| **Tosite** | **Tilityyppi** | **Tili**  | **Kuvaus** | **Veloitus** | **Hyvitys** |
 | GNJL001     | Toimittaja           | 1001         | INV1            |           | 100,00     |
 | GNJL001     | Toimittaja           | 1001         | INV2            |           | 200,00     |
 | GNJL001     | Toimittaja           | 1001         | INV3            |           | 300,00     |
@@ -63,9 +62,8 @@ Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdell
 
 Kirjauksen jälkeen luodaan yksi tosite.
 
-|             |              |                  |                                    |
+| Tosite | Tili  | Kirjaustyyppi | Summa tapahtuman valuuttana |
 |-------------|--------------|------------------|------------------------------------|
-| **Tosite** | **Tili**  | **Kirjaustyyppi** | **Summa tapahtuman valuuttana** |
 | GNJL001     | 606300-001-- | Kirjanpidon kirjauskansio   | 50,00                              |
 | GNJL001     | 606300-002-- | Kirjanpidon kirjauskansio   | 50,00                              |
 | GNJL001     | 606300-003-- | Kirjanpidon kirjauskansio   | 200,00                             |
@@ -78,9 +76,8 @@ Huomaa, että tosite sisältää toimittajasaldon kirjaustapaa varten kolme merk
 
 Tämän esimerkin avulla voimme analysoida vaikutusta, joka yhden tositteen käytöllä on alempaan tilityksen laskentaan. Oletetaan, että maksat 200,00 laskusta 197,00 ottaen 3,00:n käteisalennuksen. Huomaa, että käteisalennuksen tiliarvo kohdistetaan kaikkiin dimensioihin laskutositteen kulutileistä. Tämä johtuu siitä, että yhtä tositetta käytettiin edellä olevan laskun kirjaamiseen ilman merkintää, miten käyttäjä tarkoitti kulujakaumat vastaamaan toimittajan saldoa yhdessä tositteessa.
 
-|             |              |                      |           |            |
+| Tosite | Tili  | Kirjaustyyppi     | Veloitus | Luotto |
 |-------------|--------------|----------------------|-----------|------------|
-| **Tosite** | **Tili**  | **Kirjaustyyppi**     | **Veloitus** | **Hyvitys** |
 | APPAYM001   | 200110-001-  | Toimittajan saldo       | 197.00    |            |
 | APPAYM001   | 110110-001-  | Pankki                 |           | 197.00     |
 | 14000056    | 520200-001-- | Toimittajan käteisalennus |           | 0.25       |
@@ -91,9 +88,8 @@ Tämän esimerkin avulla voimme analysoida vaikutusta, joka yhden tositteen käy
 
 Jos käyttäjä on tyytymätön käteisalennuksen jakamiseen kulujakaumiin alkuperäisestä laskusta, pitää käyttää useita tositteita laskujen kirjaamiseen yhden tositteen asemesta. Seuraavassa on esimerkki useiden tositteiden kirjaamiseen kirjanpitoon yhden tositteen sijaan, alussa olevan esimerkin mukaisesti.
 
-|             |                  |              |                 |           |            |                 |                    |
+| Tosite | Tilityyppi | Tili  | kuvaus | Veloitus | Luotto | Vastatilin tyyppi | Vastatili |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili**  | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | GNJL001     | Toimittaja           | 1001         | INV1            |           | 100,00     | Kirjanpito          | &lt;tyhjä&gt;      |
 | GNJL001     | Kirjanpito           | 606300-001-- | INV1            |   50,00   |            | Kirjanpito          | &lt;tyhjä&gt;      |
 | GNJL001     | Kirjanpito           | 606300-002-- | INV1            |   50,00   |            | Kirjanpito          | &lt;tyhjä&gt;      |
@@ -102,9 +98,8 @@ Jos käyttäjä on tyytymätön käteisalennuksen jakamiseen kulujakaumiin alkup
 
 Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että käteisalennuksen taloushallinnon dimensiot noudattavat liittyvien kulujen taloushallinnon dimensioita.
 
-|             |              |                      |           |            |
+| Tosite | Tili  | Kirjaustyyppi     | Veloitus | Luotto |
 |-------------|--------------|----------------------|-----------|------------|
-| **Tosite** | **Tili**  | **Kirjaustyyppi**     | **Veloitus** | **Hyvitys** |
 | APPAYM001   | 200110-001-  | Toimittajan saldo       | 197.00    |            |
 | APPAYM001   | 110110-001-  | Pankki                 |           | 197.00     |
 | 14000056    | 520200-003-- | Toimittajan käteisalennus |           | 3,00       |
@@ -112,17 +107,15 @@ Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että käteisalennuk
 
 ### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus toteutuneeseen voiton/tappion kirjanpitoon
 
-|             |                  |             |                 |           |            |                  |              |
+| Tosite | Tilityyppi | Tili | kuvaus | Veloitus | Luotto | Tilityyppi | Tili  |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
-| **Tosite** | **Tilityyppi** | **Tili** | **Kuvaus** | **Veloitus** | **Hyvitys** | **Tilityyppi** | **Tili**  |
 | GNJL001     | Toimittaja           | 1001        | INV1            |           | 100,00     | Kirjanpito           | 606300-001-- |
 | GNJL001     | Toimittaja           | 1001        | INV2            |           | 200,00     | Kirjanpito           | 606300-002-- |
 
-Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio**-sivulla. Nämä laskut jakautuvat useille tilin dimensioille. Kirjauksen jälkeen luodaan yksi tosite.
+Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio** -sivulla. Nämä laskut jakautuvat useille tilin dimensioille. Kirjauksen jälkeen luodaan yksi tosite.
 
-|             |              |                  |                                          |                                         |
+| Tosite | Tili  | Kirjaustyyppi | Summa tapahtumavaluuttana (EUR) | Summa kirjanpitovaluuttana (USD) |
 |-------------|--------------|------------------|------------------------------------------|-----------------------------------------|
-| **Tosite** | **Tili**  | **Kirjaustyyppi** | **Summa tapahtumavaluuttana (EUR)** | **Summa kirjanpitovaluuttana (USD)** |
 | GNJL001     | 606300-001-- | Kirjanpidon kirjauskansio   | 100,00                                   | 114.00                                  |
 | GNJL001     | 606300-002-- | Kirjanpidon kirjauskansio   | 200,00                                   | 228.00                                  |
 | GNJL001     | 200110-001-  | Toimittajan saldo   | -100,00                                  | -114,00                                 |
@@ -132,9 +125,8 @@ Huomaa, että tosite sisältää toimittajasaldon kirjaustapaa varten kaksi merk
 
 Tämän esimerkin avulla voimme analysoida vaikutusta, joka yhden tositteen käytöllä on alempaan tilityksen laskentaan. Oletetaan, että kirjanpitovaluutta on USD ja edelliset tapahtumat on kirjattu tapahtumavaluuttana EUR. Oletetaan, että maksat 200,00 EUR laskun kokonaan, mutta ilmenee toteutunut tappio oman laskun kirjaamisen ja maksun välisen vaihtokurssin eron vuoksi. Huomaa, että toteutuneen tappion tiliarvo kohdistetaan kaikkiin dimensioihin laskutositteen kulutileistä. Tässä tapauksessa sekä dimension 001 ja 002 on kohdistettu, vaikka käyttäjästä voi vaikuttaa, että ainoastaan 002 kuuluu kulutiliin maksettavalta laskulta. Tämä johtuu siitä, että yhtä tositetta käytettiin edellä olevan laskun kirjaamiseen ilman merkintätapaa, miten käyttäjä tarkoitti kulujakaumat vastaamaan toimittajan saldoa yhdessä tositteessa.
 
-|             |             |                    |                                          |                                         |
+| Tosite | Tili | Kirjaustyyppi   | Summa tapahtumavaluuttana (EUR) | Summa kirjanpitovaluuttana (USD) |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
-| **Tosite** | **Tili** | **Kirjaustyyppi**   | **Summa tapahtumavaluuttana (EUR)** | **Summa kirjanpitovaluuttana (USD)** |
 | APPAYM001   | 200110-001- | Toimittajan saldo     | 200,00                                   | 230.00                                  |
 | APPAYM001   | 110110-001- | Pankki               | -200,00                                  | -230,00                                 |
 | 14000056    | 801300-001- | Vaihtokurssitappio | 0,00                                     | 0.67                                    |
@@ -143,17 +135,15 @@ Tämän esimerkin avulla voimme analysoida vaikutusta, joka yhden tositteen käy
 
 Jos käyttäjä on tyytymätön vaihtokurssin tappion jakamiseen kulujakaumiin alkuperäisestä laskusta, pitää käyttää useita tositteita laskujen kirjaamiseen yhden tositteen asemesta. Seuraavassa on esimerkki useiden tositteiden kirjaamiseen kirjanpitoon yhden tositteen sijaan, alussa olevan esimerkin mukaisesti.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Tosite | Tilityyppi | Tili | kuvaus | Veloitus | Luotto | Vastatilin tyyppi | Vastatili |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili** | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | GNJL002     | Toimittaja           | 1001        | INV1            |           | 100,00     | Kirjanpito          | 606300-001--       |
 | GNJL003     | Toimittaja           | 1001        | INV2            |           | 200,00     | Kirjanpito          | 606300-002--       |
 
 Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että vaihtokurssitappion taloushallinnon dimensiot noudattavat liittyvien kulujen taloushallinnon dimensioita.
 
-|             |             |                    |                                          |                                         |
+| Tosite | Tili | Kirjaustyyppi   | Summa tapahtumavaluuttana (EUR) | Summa kirjanpitovaluuttana (USD) |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
-| **Tosite** | **Tili** | **Kirjaustyyppi**   | **Summa tapahtumavaluuttana (EUR)** | **Summa kirjanpitovaluuttana (USD)** |
 | APPAYM001   | 200110-001- | Toimittajan saldo     | 200,00                                   | 230.00                                  |
 | APPAYM001   | 110110-001- | Pankki               | -200,00                                  | -230,00                                 |
 | 14000056    | 801300-002- | Vaihtokurssitappio | 0,00                                     | 2,00                                    |
@@ -168,64 +158,56 @@ Tässä esimerkissä oletetaan myynti, jossa asiakas on oikeutettu käteisalennu
 
 Esimerkin vuoksi oletetaan, että seuraava myynti on tehty asiakkaan ACMEsta. Seuraavat kirjanpitokirjaukset edustavat myyntiä.
 
-|                    |                  |           |            |
+| Kirjanpitotili | Kirjaustyyppi | Veloitus | Luotto |
 |--------------------|------------------|-----------|------------|
-| **Kirjanpitotili** | **Kirjaustyyppi** | **Veloitus** | **Hyvitys** |
 | 401100-002-023-    | Myyntituotto          |           | 100        |
 | 130100-002-        | Asiakkaan saldo | 100       |            |
 
 Seuraavaksi käyttäjä siirtää ACME:sta maksamattoman saldon vakuutusyhtiölle yhdessä myyntireskontran maksukirjauskansion tositteessa. Vakuutusyhtiö on määritetty Vakuutus-asiakkaaksi.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Tosite | Tilityyppi | Tili | kuvaus | Veloitus | Luotto | Vastatilin tyyppi | Vastatili |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili** | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | ARPAYM001   | Asiakas         | ACME        | Tapahtumien siirto        |           | 100,00     | Asiakas        | Vakuutus          |
 
 Huomaa, että edellinne tapahtuma sisältyy yhteen tositteeseen. Tämä tosite sisältää kaksi asiakastietueita. Seuraava tosite luodaan, kun edellä oleva kirjanpidon tapahtuma kirjataan.
 
-|             |             |                  |                                    |
+| Tosite | Tili | Kirjaustyyppi | Summa tapahtuman valuuttana |
 |-------------|-------------|------------------|------------------------------------|
-| **Tosite** | **Tili** | **Kirjaustyyppi** | **Summa tapahtuman valuuttana** |
 | ARPAYM001   | 130100-002- | Asiakkaan saldo | 100,00                             |
 | ARPAYM001   | 130100-002- | Asiakkaan saldo | -100,00                            |
 
 Seuraavaksi oletetaan, että saat vakuutus-asiakkaalta maksun 98,00 ja päätät tilittää maksun laskulla, joka on luotu saldosiirrolla. Tämä aiheuttaa seuraavan tositteen kirjaamisen. Odotuksena voi olla, että tilitys käyttää kirjanpitodimensioita alkuperäisestä laskusta, mutta se ei ole mahdollista, koska vakuutus-asiakkaalle ei ole laskuasiakirjaa. Huomaa, että oletusarvoisesti käteisalennuksen jakeludimensio on peräisin siirrosta luodusta asiakassiirrosta, ei alkuperäisen laskun tuottotilistä. Oletusarvoisesti tämä on tulosta yhden tositteen käyttämisestä saldojen siirtoon.
 
-|             |             |                  |           |            |
+| Tosite | Tili | Kirjaustyyppi | Veloitus | Luotto |
 |-------------|-------------|------------------|-----------|------------|
-| **Tosite** | **Tili** | **Kirjaustyyppi** | **Veloitus** | **Hyvitys** |
 | ARPAYM002   | 110110-002- | Pankki             | 98.00     |            |
 | ARPAYM002   | 130100-002- | Asiakkaan saldo |           | 98.00      |
 
 Käteisalennukseen liittyvässä tositteessa taloushallinnon dimension oletusarvo tulee siirrosta luodusta asiakastapahtumasta, koska siirrolla on useampia kuin yksi asiakas.
 
-|             |             |                        |           |            |
+| Tosite | Tili | Kirjaustyyppi       | Veloitus | Luotto |
 |-------------|-------------|------------------------|-----------|------------|
-| **Tosite** | **Tili** | **Kirjaustyyppi**       | **Veloitus** | **Hyvitys** |
 | ARP-00001   | 403300-002- | Asiakkaan käteisalennus | 2,00      |            |
 | ARP-00001   | 130100-002- | Asiakkaan saldo       |           | 2,00       |
 
 Jos käyttäjä on tyytymätön käteisalennuksen taloushallinnon dimension oletusarvoon, yhden tositteen sijaan pitää saldon siirron kirjaamiseen käyttää useita tositteita. Tämä skenaario tulee suorittaa luomalla hyvityslasku asiakkaalle, JOLTA saldo on siirretty, ja veloituslasku tai lasku asiakkaalle, JOLLE saldo siirretään. Seuraavassa esimerkissä esitetään miten useat tositteet voidaan kirjoittaa myyntireskontran maksukirjauskansioon saldon siirtämiseksi sen sijaan, että käytetään yhtä tositetta tämän esimerkin mukaisesti.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Tosite | Tilityyppi | Tili | kuvaus | Veloitus | Luotto | Vastatilin tyyppi | Vastatili |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili** | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | ARPAYM001   | Asiakas         | ACME        |                 |           | 100,00     | Kirjanpito          | 401100-002-023-    |
 | ARPAYM002   | Asiakas         | Vakuutus   |                 | 100,00    |            | Kirjanpito          | 401100-002-023-    |
 
 Tämä tarkoittaa sitä, että kun vakuutus-asiakas maksaa tositteella ARPAYM02 98,00, tositteen ARPAYM002 kirjanpidon tiliviennin oikeita taloushallinnon dimensioita käytetään.
 
-|             |             |                  |           |            |
+| Tosite | Tili | Kirjaustyyppi | Veloitus | Luotto |
 |-------------|-------------|------------------|-----------|------------|
-| **Tosite** | **Tili** | **Kirjaustyyppi** | **Veloitus** | **Hyvitys** |
 | ARPAYM003   | 110110-002- | Pankki             | 98.00     |            |
 | ARPAYM003   | 130100-002  | Asiakkaan saldo |           | 98.00      |
 
 Käteisalennukseen liittyvän tositteen taloushallinnon dimensioita käytetään vastakirjauksen tuottotililtä, joka näkyy ARPAYM002-tilin tositteessa.
 
-|             |                 |                        |           |            |
+| Tosite | Tili     | Kirjaustyyppi       | Veloitus | Luotto |
 |-------------|-----------------|------------------------|-----------|------------|
-| **Tosite** | **Tili**     | **Kirjaustyyppi**       | **Veloitus** | **Hyvitys** |
 | ARP-00001   | 403300-002-023- | Asiakkaan käteisalennus | 2,00      |            |
 | ARP-00001   | 130100-002-     | Asiakkaan saldo       |           | 2,00       |
 
@@ -236,16 +218,14 @@ Nettoutus voi olla hyödyllinen, kun organisaatio ostaa tai myy samalle yritykse
 
 Oletetaan esimerkiksi, että toimittaja 1001 ja asiakas US-008 ovat sama yksikkö, joten organisaatiosi haluaa nettouttaa osto- ja myyntisaldot ennen maksua / jäljellä olevan saldon vastaanottoa. Oletetaan, että asiakastietue on velkaa 75,00 EUR ja toimittajatietue on velkaa 100,00 EUR, mikä tarkoittaa sitä, että haluat nettouttaa saldot ja maksaa toimittajalle vain 25,00 EUR. Lisäksi oletetaan että kirjanpitovaluutta on USD. Tässä tapauksessa nettoutustapahtuma kirjataan yhtenä tositteena tilin ostoreskontran maksukirjauskansioon.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Tosite | Tilityyppi | Tili | kuvaus | Veloitus | Luotto | Vastatilin tyyppi | Vastatili |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili** | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | APPAYM001   | Toimittaja           | 1001        | Nettoutus         |  75,00    |            | Asiakas        | US-008             |
 
 Ei-toivottujen ongelmien välttämiseksi tämän tapahtuman tulevissa kirjauksissa yhden tositteen käytön sijaan pitää merkitä useita tositteita kirjauskansioon nettoutustapahtuman tallentamiseksi. Huomaa, että asiakkaan ja toimittajan saldot vastakirjataan yhdelle selvitystilille, jotta vältetään yhden tositteen käyttö, joka sisältää useita asiakkaan ja toimittajan saldoja.
 
-|             |                  |             |                 |           |            |                 |                    |
+| Tosite | Tilityyppi | Tili | kuvaus | Veloitus | Luotto | Vastatilin tyyppi | Vastatili |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Tosite** | **Tilityyppi** | **Tili** | **Kuvaus** | **Veloitus** | **Hyvitys** | **Vastatilin tyyppi** | **Vastatili** |
 | 001         | Asiakas         | US-008      |                 |           |  75,00     | Kirjanpito          | 999999---          |
 | 002         | Toimittaja           | 1001        |                 |  75,00    |            | Kirjanpito          | 999999---          |
 

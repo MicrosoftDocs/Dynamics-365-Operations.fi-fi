@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e55974f65577170880e60095f1ba74ea7366e592
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834350"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018557"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Ostotilausten vianmääritys
 
@@ -80,7 +80,7 @@ Tämä toiminto ei ole tällä hetkellä käytettävissä.
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
-Vaikka nimikkeitä olisi ostotilauksessa *Rekisteröity*-tilassa, voit kuitenkin varata varastoa. Toisin sanoen voit luoda tapahtumia rekisteröidyn varaston perusteella.
+Vaikka nimikkeitä olisi ostotilauksessa *Rekisteröity* -tilassa, voit kuitenkin varata varastoa. Toisin sanoen voit luoda tapahtumia rekisteröidyn varaston perusteella.
 
 ### <a name="reproduce-the-issue"></a>Ongelman toistaminen
 
@@ -107,7 +107,7 @@ Seuraavassa esitetään yksi tapa ongelman toistamiseen.
 1. Määritä järjestelmän kieleksi *EN-US* (Yhdysvaltojen englanti).
 1. Varmista, että käytettävissä tuote, jossa kielet *EN-US* ja *DE* (saksa) ovat käytössä tuotenimen käännöksiä varten.
 1. Muuta yrityksen kieleksi *DE*.
-1. Luo siinä yrityksessä, jossa kieleksi on määritetty *DE*, tuotteen sisältävä ostotilaus.
+1. Luo siinä yrityksessä, jossa kieleksi on määritetty *DE* , tuotteen sisältävä ostotilaus.
 1. Huomaa, että tuotteen nimi näkyy edelleen kielellä Yhdysvaltojen englanti (järjestelmän kieli).
 
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
@@ -118,7 +118,7 @@ Tämä on suunniteltu ominaisuus. Ostotilauksissa tuote näkyy aina järjestelm�
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
-Tuotteella on hyväksytty toimittaja, jonka voimaantulopäivä on esimerkiksi 11. tammikuuta 2018 (*01/11/2018*) ja vanhentumispäivä on *Ei koskaan*. Jos yrität muuttaa voimaantulopäivän muotoon 10. tammikuuta 2018 (*01/10/2018*) tai 12. tammikuuta 2018 (*01/12/2018*), näyttöön tulee seuraava virhesanoma:
+Tuotteella on hyväksytty toimittaja, jonka voimaantulopäivä on esimerkiksi 11. tammikuuta 2018 ( *01/11/2018* ) ja vanhentumispäivä on *Ei koskaan*. Jos yrität muuttaa voimaantulopäivän muotoon 10. tammikuuta 2018 ( *01/10/2018* ) tai 12. tammikuuta 2018 ( *01/12/2018* ), näyttöön tulee seuraava virhesanoma:
 
 > Tietuetta ei voi luoda hyväksyttyjen toimittajien luetteloon (PdsApproveVendorList). Vanhentumispäivän arvon on oltava sama tai suurempi kuin voimaantulopäivän arvo.
 
@@ -128,9 +128,9 @@ Voit pidentää vain sitä jaksoa, jolle toimittaja on hyväksytty. Seuraavat s�
 
 - Jos haluat muuttaa voimaantulopäivää siten, että se nimikkeen toimittajan olemassa olevia tietueita (jaksoja) aiemmin, uuden jakson vanhanemispäivän on oltava ennen kaikkia olemassa olevien tietueiden vanhenemispäivää.
 - Jos haluat muuttaa vanhenemispäivää siten, että se on myöhempi kuin jokin olemassa oleva jakso, voimaantulopäivämäärän ei saa olla ennen olemassa olevan tietueen vanhenemispäivää.
-- Jos haluat pienentää kokonaisaikaa, jolle toimittaja on hyväksytty, sinun on poistettava tai muokattava olemassa olevia tietueia. Vaihtoehtoisesti voit käyttää **katkaisu**-valitsinta tuonnin aikana. Tämä valitsin poistaa kaikki olemassa olevat tietueet nimikekohteisten hyväksyttyjen toimittajien taulukosta.
+- Jos haluat pienentää kokonaisaikaa, jolle toimittaja on hyväksytty, sinun on poistettava tai muokattava olemassa olevia tietueia. Vaihtoehtoisesti voit käyttää **katkaisu** -valitsinta tuonnin aikana. Tämä valitsin poistaa kaikki olemassa olevat tietueet nimikekohteisten hyväksyttyjen toimittajien taulukosta.
 
-Esimerkiksi ongelmankuvauksessa kuvattu skenaario, jossa tietueen voimaantulopäivä on *01/11/2018* ja vanhenemispäivä *Ei koskaan*, y voit tuoda uuden tiedoston, jonka voimaantulopäivänä on *01/10/2018* vanhenemispäivänä *Ei koskaan*. Et kuitenkaan voi lyhentää ajanjaksoa niin, että voimaantulopäiväksi päivittyy tiedonhallinnan kautta *01/12/2018*. Tämä muutos on tehtävä käyttöliittymässä.
+Esimerkiksi ongelmankuvauksessa kuvattu skenaario, jossa tietueen voimaantulopäivä on *01/11/2018* ja vanhenemispäivä *Ei koskaan* , y voit tuoda uuden tiedoston, jonka voimaantulopäivänä on *01/10/2018* vanhenemispäivänä *Ei koskaan*. Et kuitenkaan voi lyhentää ajanjaksoa niin, että voimaantulopäiväksi päivittyy tiedonhallinnan kautta *01/12/2018*. Tämä muutos on tehtävä käyttöliittymässä.
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Kun muutan ostotilauksen otsikon toimitusosoitetta, toimituksen nimeä ei synkronoida.
 

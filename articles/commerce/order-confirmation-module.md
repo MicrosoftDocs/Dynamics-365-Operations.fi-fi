@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661169"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015177"
 ---
 # <a name="order-details-module"></a>Tilauksen tiedot -moduuli
 
@@ -38,7 +38,7 @@ Tilaustiedot-moduulia käytetään näyttämään tilausvahvistuksen yksityiskoh
 
 | Ominaisuuden nimi  | Arvot | kuvaus |
 |----------------|--------|-------------|
-| Otsikko        | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Tilauksen tietomoduulilla voi olla otsikko. Oletusarvoisesti otsikossa käytetään **H2**-otsikkotunnusta. Tunnuksen voi kuitenkin muuttaa, jotta helppokäyttötoimintojen vaatimukset täyttyvät. |
+| Otsikko        | Otsikkoteksti ja -tunnus ( **H1** , **H2** , **H3** , **H4** , **H5** tai **H6** ) | Tilauksen tietomoduulilla voi olla otsikko. Oletusarvoisesti otsikossa käytetään **H2** -otsikkotunnusta. Tunnuksen voi kuitenkin muuttaa, jotta helppokäyttötoimintojen vaatimukset täyttyvät. |
 | Yhteyshenkilön puhelinnumero | Text | Tilaukseen liittyviin kysymyksiin voidaan antaa yhteyshenkilön numero. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduulit, joita voidaan käyttää tilaustietosivulla
@@ -53,20 +53,20 @@ Kun luot tilaustiedot-sivun, voit lisätä muita asiaankuuluvia moduuleja tilaus
 Voit lisätä tilaustietomoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
-1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi**-kohtaan nimi **Tilauksen tietomalli** ja valitse sitten **OK**.
-1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
-1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan nimi **Tilauksen tietomalli** ja valitse sitten **OK**.
+1. Valitse kolme pistettä ( **...** ) **Tekstiosa** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu** -moduuli ja valitse sitten **OK**.
+1. Valitse **Oletussivu** -moduulin **Pää** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Tilauksen tiedot** -moduuli ja valitse sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten mallia valitsemalla **Esikatselu**. Tilauksen tietomoduulia ei tule hahmontaa, koska se vaatii tilauksen vahvistusnumeron.
+1. Valitse **Tallenna** ja esikatsele sitten mallia valitsemalla **Esikatselu**. Tilauksen tietomoduulia ei tule hahmontaa, koska se vaatii tilauksen vahvistusnumeron.
 1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
 1. Valitse **Valitse malli** -valintaikkunassa **Tilauksen tietomalli**. Kirjoita **Sivun nimi** -kohtaan **Tilauksen tietosivu** ja valitse sitten **OK**.
-1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Oletussivu** -moduulin **Pää** -paikka. Valitse kolmen pisteen painike ( **...** ) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Tilauksen tiedot** -moduuli ja valitse sitten **OK**.
 1. Valitse tilauksen tietomoduulin ominaisuusruudun kynäsymbolin vieressä **Otsikko**.
-1. Anna **Otsikko**-valintaikkunan **Otsikon teksti** -kentästä otsikon tekstiksi **Tilauksen tiedot** ja valitse sitten **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Anna **Otsikko** -valintaikkunan **Otsikon teksti** -kentästä otsikon tekstiksi **Tilauksen tiedot** ja valitse sitten **OK**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit

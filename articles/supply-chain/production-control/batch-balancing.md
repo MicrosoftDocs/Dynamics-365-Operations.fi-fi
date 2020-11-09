@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: BOMTable
+ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 555c76651609718aeed11230b4de4fec3bb39ce9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203339"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016882"
 ---
 # <a name="batch-balancing"></a>Erän tasaus
 
@@ -52,7 +52,7 @@ Perusmääritteen liittämiseen tuotteeseen tarvitaan seuraava asetus:
 
 -   Ainesosatasot ilmaiseva määrite on oltava määritetty tuotteen tuotekohtaiseksi erämääritteeksi.
 
-Voit etsiä erän vaikuttavan ainesosan todellisen arvon ja muokata sitä **Varastoerämääritteet**-sivulla. 
+Voit etsiä erän vaikuttavan ainesosan todellisen arvon ja muokata sitä **Varastoerämääritteet** -sivulla. 
 
 -  Valitse **Varastonhallinta** \> **Kyselyt ja raportit** \> **Seurantadimensiot** \> **Erät** \> **Varastoerämääritteet**.
 
@@ -97,7 +97,7 @@ Ainesosassa B on perusmäärite X ja sen tavoitetaso on 30. Se sisältyy resepti
 
 ### <a name="none"></a>None
 
-Kun käytät erän tasausprosessi ainesosatyypin ollessa **Ei mitään**, arvioitu määrä ja erätilauksen reseptirivin täsmäytetty määrä on sama.
+Kun käytät erän tasausprosessi ainesosatyypin ollessa **Ei mitään** , arvioitu määrä ja erätilauksen reseptirivin täsmäytetty määrä on sama.
 
 **Esimerkki**
 
@@ -111,11 +111,11 @@ Kompensoiva ainesosa voi joko siirtää tai täydentää tuotteen vaikuttavan ai
 
 -   **Täydentävä vaikutus** – jos vaikuttavan ainesosan määrä on odotettua pienempi, kompensoivaa ainesosaa on lisättävä enemmän.
 
-Vaikuttavan ainesosan ja kompensoivan ainesosan suhde määritetään **Kompensaatioperiaate**-sivulla.
+Vaikuttavan ainesosan ja kompensoivan ainesosan suhde määritetään **Kompensaatioperiaate** -sivulla.
 
 Määritä ainesosien välinen suhde seuraavasti:
 
-1.  Valitse **Tuotetietojen hallinta** \> **Tuoterakenteet ja kaavat** \> **Reseptit**, avaa reseptirivi ja avaa sitten **Kompensaatioperiaate**-sivu valitsemalla **Ainesosat**.
+1.  Valitse **Tuotetietojen hallinta** \> **Tuoterakenteet ja kaavat** \> **Reseptit** , avaa reseptirivi ja avaa sitten **Kompensaatioperiaate** -sivu valitsemalla **Ainesosat**.
 
 2.  Valitse ensin kompensaatioperiaatetta vastaava rivi ja sitten kompensoitava vaikuttava ainesosa.
 
@@ -147,7 +147,7 @@ Koska 1,10 on positiivinen kompensaatiokerron, kompensaatioperiaatteen vaikutus 
 
 **Esimerkki**
 
-Olet luonut reseptin tuotteelle, joka sisältää ainesosat A, B, C ja D. Reseptin koko on 100 litraa. Olet laskenut **Täyteaine**-ainesosatyyppiä lukuun ottamatta kaikkien yhdellä rivillä käytettävien ainesosatyyppien täsmäytetyn määrän.
+Olet luonut reseptin tuotteelle, joka sisältää ainesosat A, B, C ja D. Reseptin koko on 100 litraa. Olet laskenut **Täyteaine** -ainesosatyyppiä lukuun ottamatta kaikkien yhdellä rivillä käytettävien ainesosatyyppien täsmäytetyn määrän.
 Täyteainesosan täsmäytetty määrä lasketaan 100 litran eräkoon ja ainesosien A, B ja C summan välisenä erotuksena.
 
 100–(20+25,71+14,72) = 39,57
@@ -156,7 +156,7 @@ Täyteainesosan täsmäytetty määrä lasketaan 100 litran eräkoon ja ainesosi
 ---------------------------
 
 Erän tasausprosessi suoritetaan **Erän tasaus** -sivulla.
-Valitse ensin **Kustannushintojen hallinta** \> **Erätilaukset** ja sitten **Prosessi**-välilehdessä **Erän tasaus**. Erän tasaus on käytettävissä erätilauksissa, joiden tila on **Aloitettu**.
+Valitse ensin **Kustannushintojen hallinta** \> **Erätilaukset** ja sitten **Prosessi** -välilehdessä **Erän tasaus**. Erän tasaus on käytettävissä erätilauksissa, joiden tila on **Aloitettu**.
 
 Erän tasausta voidaan yleensä käyttää erätilauksissa, jos reseptissä on ainakin yksi reseptirivi, jonka ainesosatyyppi on **Aktiivinen**. (Tämän säännön poikkeusta käsitellään jäljempänä tässä ohjeaiheessa kohdassa Erätilaukset, joissa ei voi käyttää erän tasausta.)
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172920"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997573"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Usein kysytyt kysymykset käynnistyksestä yritystietoja käyttäen
  
@@ -37,11 +36,11 @@ Sinulla on ehkä aiemmin luotu Common Data Servicen tai muunDynamics 365 -sovell
 ## <a name="when-should-i-use-bootstrapping"></a>Milloin tällaista käynnistystä kannattaa käyttää? 
 Käynnistystä yritystietoja käyttäen kannattaa käyttää ennen entiteettikarttojen kaksoiskirjoituksen käyttöönottoa (vaiheessa 5).  
 1. Määritä Finance and Operations -sovelluksen ja Common Data Servicen tai muun Dynamics 365 -sovelluksen esiintymien välinen kaksoiskirjoitusyhteys kirjautumalla Finance and Operations -sovellukseen järjestelmänvalvojana. 
-2. Siirry **Tietojen hallinta** -moduuliin napsauta **Kaksoiskirjoitus**-painiketta. **Tietojen integrointiohjelma** käynnistyy. 
+2. Siirry **Tietojen hallinta** -moduuliin napsauta **Kaksoiskirjoitus** -painiketta. **Tietojen integrointiohjelma** käynnistyy. 
 3. Luo kaksoiskirjoitusyhteys vähintään yhdelle yritykselle.  
     > [!div class="mx-imgBorder"]
     > ![Kaksoiskirjoitusyhteyden luonti](media/dual-write-boot-1.png)
-4. Ota **Cdm_companies**-entiteettikartta käyttöön. Näin Finance and Operations -sovelluksen yritykset synkronoidaan Common Data Serviceen.  
+4. Ota **Cdm_companies** -entiteettikartta käyttöön. Näin Finance and Operations -sovelluksen yritykset synkronoidaan Common Data Serviceen.  
     > [!div class="mx-imgBorder"]
     > ![Entiteettikartan ottaminen käyttöön](media/dual-write-boot-2.png)
 5. Suorita käynnistyksen näytekoodi Common Data Servicen tai muun Dynamics 365 -sovelluksen esiintymässä.  
@@ -54,14 +53,14 @@ Näytekoodi on C#-sovellus, jonka voi ladata Visual Studiossa. Se käyttää NuG
 
 Kun ratkaisu on purettu ja avattu Visual Studiossa ja NuGet-paketit on palautettu, etsi koodista merkkijono **TODO**. **TODO** kirjaa jokaisen päätöksen, jonka teet käynnistämisestä yritystietoja käyttäen, ja käytössä on näytekoodia kanonista toteutusta varten. 
 
-Näytekoodi näyttää vain yhden monista tavoista, jolla voit luokitella entiteettitietueita yrityksen mukaan. **TODO**-osien logiikkaa muuttamalla voit luoda mukautetun luokittelun. 
+Näytekoodi näyttää vain yhden monista tavoista, jolla voit luokitella entiteettitietueita yrityksen mukaan. **TODO** -osien logiikkaa muuttamalla voit luoda mukautetun luokittelun. 
  
 ## <a name="what-should-i-expect"></a>Mitä on odotettavissa?
-Oletusarvoisesti näytesovellus antaa toimittaa liiketoimintayksiköstä yritykseen tapahtuvien koodien yhdistämismääritysten hakemiston. Kaikki entiteetit, jotka käynnistetään käyttäen **OwningBusinessUnit**-kenttää, määritetään automaattisesti käyttämään määritettyä yritystä. Kaikki entiteetit, joissa ei ole **OwningBusinessUnit**-kenttää, kuten tuote, määrittää yrityksen yhdistämismäärityksen perusteella käyttäen tyhjää liiketoimintayksikön arvoa.
+Oletusarvoisesti näytesovellus antaa toimittaa liiketoimintayksiköstä yritykseen tapahtuvien koodien yhdistämismääritysten hakemiston. Kaikki entiteetit, jotka käynnistetään käyttäen **OwningBusinessUnit** -kenttää, määritetään automaattisesti käyttämään määritettyä yritystä. Kaikki entiteetit, joissa ei ole **OwningBusinessUnit** -kenttää, kuten tuote, määrittää yrityksen yhdistämismäärityksen perusteella käyttäen tyhjää liiketoimintayksikön arvoa.
 
-Konsolisovellus odottaa yhtä parametria, joka on joko **–simulate** tai **–apply**. Jos käytät **–simulate** komentoriviparametria, tietoja ei päivitetä. Vain **simulation_<entityname>.csv**-tiedostot luodaan samassa hakemistossa kuin työkalu. Näitä tietoja on yksi kullekin entiteetille, joka olisi päivitetty. Voit tarkistaa nämä tiedostot iteratiivisesti käsittelyn aikana ja varmistaa, että koodi päivittää yrityksen arvot odotetusti. 
+Konsolisovellus odottaa yhtä parametria, joka on joko **–simulate** tai **–apply**. Jos käytät **–simulate** komentoriviparametria, tietoja ei päivitetä. Vain **simulation_<entityname>.csv** -tiedostot luodaan samassa hakemistossa kuin työkalu. Näitä tietoja on yksi kullekin entiteetille, joka olisi päivitetty. Voit tarkistaa nämä tiedostot iteratiivisesti käsittelyn aikana ja varmistaa, että koodi päivittää yrityksen arvot odotetusti. 
 
-Kun simuloidut päivitykset ovat valmiit, käytä **–apply**-parametria. Se päivittää 1 000 tietueen erissä (oletusarvo) kaikki tietueet, joissa on tällä hetkellä virheellinen yrityksen arvo. Koodi on ainutkertainen sellaisenaan eli se voidaan suorittaa uudelleen ja vain virheellisesti määritetyt yritykset päivitetään. Kun **–apply** suoritetaan, koodi tuottaa muutokset sisältäviä CSV-tiedostoja, joiden nimenä on **applied_<entityname>.csv**. 
+Kun simuloidut päivitykset ovat valmiit, käytä **–apply** -parametria. Se päivittää 1 000 tietueen erissä (oletusarvo) kaikki tietueet, joissa on tällä hetkellä virheellinen yrityksen arvo. Koodi on ainutkertainen sellaisenaan eli se voidaan suorittaa uudelleen ja vain virheellisesti määritetyt yritykset päivitetään. Kun **–apply** suoritetaan, koodi tuottaa muutokset sisältäviä CSV-tiedostoja, joiden nimenä on **applied_<entityname>.csv**. 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;

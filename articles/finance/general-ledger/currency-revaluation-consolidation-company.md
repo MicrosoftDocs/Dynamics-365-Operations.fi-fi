@@ -1,7 +1,7 @@
 ---
 title: Valuutan uudelleenarvostus konsolidointiyrityksessä
 description: Tässä aiheessa käsitellään valuutan uudelleenarvostus konsolidointiyrityksessä.
-author: ShylaThompson
+author: roschlom
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ms.search.region: Global
-ms.author: hminzner
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b7f0a18910cbaed382971e47eb688c075e7e6a5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177499"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014980"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valuutan uudelleenarvostus konsolidointiyrityksessä
 
@@ -34,7 +34,7 @@ Kun konsolidoit tietoja yhdestä kirjanpitovaluutasta toiseen, sinun on silti aj
 ## <a name="company-setup"></a>Yrityksen asetukset
 -   **Lähde/toimintaa harjoittava yritys (USMF)** – Yhdysvaltain dollareita (USD) käytetään kirjanpito- ja raportointivaluuttana.
 -   **Konsolidointiyritys (CON)** – Euroja (EUR) käytetään kirjanpito- ja raportointivaluuttana.
-    -   **Toteutunut voitto**– Kirjanpitotili 801500
+    -   **Toteutunut voitto** – Kirjanpitotili 801500
     -   **Toteutunut tappio** – Kirjanpitotili 801600
     -   **Toteutumaton voitto** – Kirjanpitotili 801600
     -   **Toteutumaton tappio** – Kirjanpitotili 801400
