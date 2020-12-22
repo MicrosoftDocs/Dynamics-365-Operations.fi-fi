@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458911"
+---
 Kun kopioit tietokantaa ympäristöstä toiseen, sinun on varmistettava kaikkien Commerce-komponenttien ajantasaisuus suorittamalla ympäristön uudelleenvalmistelutyökalu, jotta kopioitu tietokanta toimisi oikein.
 
 > [!IMPORTANT]

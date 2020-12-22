@@ -5,7 +5,9 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
-        - name: 22. lokakuuta 2002
+        - name: 2. joulukuuta 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. lokakuuta 2020
           href: hr-whats-new-2020-10-22.md
         - name: 6. lokakuuta 2020
           href: hr-whats-new-2020-10-06.md
@@ -477,6 +479,8 @@
               href: hr-personnel-define-jobs.md
             - name: Työaikakalenterin luominen
               href: hr-personnel-create-working-time-calendar.md
+            - name: Ehdokkaiden työhönotto
+              href: hr-personnel-recruit.md
             - name: Henkilöstötoiminnot – usein kysytyt kysymykset
               href: hr-personnel-actions-faq.md
             - name: Työntekijätietojen hallinta työnkulkujen avulla
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: Etujen hallinnan määrittäminen
                   items:
-                    - name: Etujen hallinnan parametrien määrittäminen
+                    - name: Etujen hallinnan parametrien määrittäminen yritystä kohti
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Etujen hallinnan ja työntekijän itsepalvelun parametrien määrittäminen kaikille yrityksille
                       href: hr-benefits-setup-parameters.md
                     - name: Oikeutussääntöjen ja -asetusten määrittäminen
                       href: hr-benefits-setup-eligibility-rules.md

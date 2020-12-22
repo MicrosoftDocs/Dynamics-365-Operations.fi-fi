@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975265"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528542"
 ---
 # <a name="budgeting-home-page"></a>Budjetoinnin aloitussivu
 
@@ -64,7 +64,7 @@ Lisätietoja suunnittelutietojen tuomisesta muista moduuleista budjettisuunnitel
 ## <a name="user-interface-and-reporting-capabilities"></a>Käyttöliittymä ja raportointiominaisuudet
 Käyttäjät voivat luoda budjettisuunnitelmia joko suoraan asiakasohjelmassa (käyttämällä määritettävää budjettisuunnitelman asiakirjan sivua) tai Excelin kautta. Excelissä on käytössä useita lisäominaisuuksia. Voit esimerkiksi käyttää ulkoisia tietoja budjettisuunnitelman lähteenä, suorittaa mukautettuja laskutoimituksia sekä käyttää Microsoft Pivot-taulukkoa ja kaavioita. Useimmat budjettisuunnitteluprosessin muuttajat voidaan määrittää. 
 
-Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja miltä prosessi näyttää. Vaikka voit käyttää Exceliä budjetin suunnitteluun, sovellus pidetään ainoana tietolähteenä. Tämä ehkäisee budjetin hallintaan liittyviä ongelmia. Budjetoinnin alkutietoja voidaan tuoda budjettisuunnitelmaan kausittaisilla prosesseilla. Sovellus sisältää useita vakiokyselysivuja, joiden avulla voit tarkastella ja analysoida budjetointitietoja raportointia varten. Budjettisuunnitelman tietoja voidaan käyttää Management Reporterin kautta, ja erilliset budjettisuunnitelmaskenaariot voidaan näyttää Management Reporter -raportin sarakkeina.
+Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja miltä prosessi näyttää. Vaikka voit käyttää Exceliä budjetin suunnitteluun, sovellus pidetään ainoana tietolähteenä. Tämä ehkäisee budjetin hallintaan liittyviä ongelmia. Budjetoinnin alkutietoja voidaan tuoda budjettisuunnitelmaan kausittaisilla prosesseilla. Sovellus sisältää useita vakiokyselysivuja, joiden avulla voit tarkastella ja analysoida budjetointitietoja raportointia varten. Budjettisuunnitelman tietoja voidaan käyttää [Taloushallinnon raportointi](../general-ledger/financial-reporting-getting-started.md) kautta. Erilliset budjettiskenaariot voidaan näyttää erillisinä sarakkeina taloushallinnon raportissa.
 
 
 

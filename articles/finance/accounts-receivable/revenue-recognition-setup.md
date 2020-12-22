@@ -17,11 +17,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570330"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458917"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
@@ -165,11 +165,11 @@ Kolme muuta kirjaustyyppiä tukee mahdollisuutta siirtää tuottoa. Nämä kirja
 
 ### <a name="bundles"></a>Niput
 
-Nippunimikkeet ovat ainutkertaisia vapautettuja tuotteita, jotka on määritetty sisältämään komponentteja. Tämä määritys suoritetaan käyttämällä tuoterakennenimiketoimintoa (BOM-toimintoa). Kun nippunimike lisätään myyntitilaukseen, yksittäisiä komponentteja käytetään tuottohintojen ja tuottoaikataulujen määritykseen. Nippunimike kuitenkin näkyy asiakkaalle tulostettavissa asiakirjoissa, kuten myyntitilauksessa ja laskussa.
+Nippunimikkeet ovat ainutkertaisia vapautettuja tuotteita, jotka on määritetty sisältämään komponentteja. Tämä määritys suoritetaan käyttämällä tuoterakennenimiketoimintoa. Kun nippunimike lisätään myyntitilaukseen, yksittäisiä komponentteja käytetään tuottohintojen ja tuottoaikataulujen määritykseen. Nippunimike kuitenkin näkyy asiakkaalle tulostettavissa asiakirjoissa, kuten myyntitilauksessa ja laskussa.
 
 #### <a name="bundle-components"></a>Nippukomponentit
 
-Nippuun sisältyvät komponentit on määritettävä **Vapautetut tuotteet** -sivulla (**Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet**). Nämä komponentit ovat vapautettuja tuotteita ja ne on määritettävä samalla tavalla kuin tuoterakennenimikkeeseen sisältyvät tuotteet. Vapautettu tuote voi esimerkiksi olla joko **Esine**-tyypin tai **Palvelu**-tyypin nimike, mutta se on yhdistettävä nimikemalliryhmään, jossa **Varastotuote**-asetuksen arvoksi on määritetty **Kyllä**. Lisätietoja esitetään BOM-nimikkeiden määritysasiakirjoissa.
+Nippuun sisältyvät komponentit on määritettävä **Vapautetut tuotteet** -sivulla (**Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet**). Nämä komponentit ovat vapautettuja tuotteita ja ne on määritettävä samalla tavalla kuin tuoterakennenimikkeeseen sisältyvät tuotteet. Vapautettu tuote voi esimerkiksi olla joko **Esine**-tyypin tai **Palvelu**-tyypin nimike, mutta se on yhdistettävä nimikemalliryhmään, jossa **Varastotuote**-asetuksen arvoksi on määritetty **Kyllä**. Lisätietoja esitetään tuoterakenteen nimikkeiden määritysasiakirjoissa.
 
 Komponentit on määritettävä myös tuottokirjausta varten aivan kuin myyntitilauksessa yksittäin myytävät tuotteet. On esimerkiksi varmistettava, että kullekin komponentille on määritetty oikea tuottohinta ja että sopimuksenjälkeisen tuen nimikkeille on määritetty hintaperuste.
 
@@ -177,12 +177,12 @@ Komponentit on määritettävä myös tuottokirjausta varten aivan kuin myyntiti
 
 Nippunimikettä määritettäessä on määritettävä kaksi **Vapautetut tuotteet** -sivun (**Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet**):
 
-- Nimike on määritettävä BOM-nimikkeeksi **Tuotantotyyppi**-kentän **Kehittäjä**-pikavälilehdessä.
+- Nimike on määritettävä tuoterakenteen nimikkeeksi **Tuotantotyyppi**-kentän **Kehittäjä**-pikavälilehdessä.
 - **Nippu**-kentän **Yleistä**-pikavälilehdessä nimike on merkittävä nippunimikkeeksi.
 
-Sen jälkeen komponentit on kohdistettava nipun/BOM:n päänimikkeelle **BOM-versiot**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet** ja valitse sitten **BOM-versiot** **BOM**-ryhmän **Kehittäjä**-välilehden toimintoruudussa). Lisätietoja esitetään BOM-nimikkeiden määritysasiakirjoissa.
+Sen jälkeen komponentit on kohdistettava nipun/tuoterakenteen päänimikkeelle **Tuoterakenteen versiot**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet** ja valitse sitten **Tuoterakenteen versiot** **Tuoterakenne**-ryhmän **Kehittäjä**-välilehden toimintoruudussa). Lisätietoja esitetään tuoterakenteen nimikkeiden määritysasiakirjoissa.
 
-[![Vapautetut tuotteet, BOM-aikataulut](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Vapautetut tuotteet, tuoterakenteen aikataulut](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Jos nipun päänimikkeet ja nipun komponentit on asetettu kohdistukselle, nipun tuottohinta jaetaan komponenteille niiden tuottoprosenttiosuuksien perusteella.
 

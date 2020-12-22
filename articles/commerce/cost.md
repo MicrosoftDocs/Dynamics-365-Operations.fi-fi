@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 7644cb9800a418fd123b32a0257b787277fcb19f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004225"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458893"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Jaetun tilausten hallinnan (JTH) kustannusten määrittäminen
 
@@ -75,11 +75,11 @@ Molemmat kustannuskomponentin tyypit tukevat useita laskentaperusteita seuraavas
 
 ### <a name="shipping-cost-component-type"></a>Lähetyskustannuskomponentin tyyppi
 
-Tässä osassa kerrotaan, miten kunkin **lähetys**kustannuskomponentin tyypin ja lähetyskustannusten laskentaperusteen yhdistelmä määritetään. Osassa kerrotaan myös, miten JTH:n selvitystoiminto käyttää kutakin yhdistelmää.
+Tässä osassa kerrotaan, miten kunkin **lähetys** kustannuskomponentin tyypin ja lähetyskustannusten laskentaperusteen yhdistelmä määritetään. Osassa kerrotaan myös, miten JTH:n selvitystoiminto käyttää kutakin yhdistelmää.
 
 #### <a name="cost-component-type--shipping-and-calculation-basis--simple"></a>Kustannuskomponentin tyyppi = lähetys ja laskentaperuste = yksinkertainen
 
-Jos käytetään **lähetys**kustannuksen tyyppiä ja **yksinkertaista** laskentaperustetta, toimitustavan lähetyskustannukset perustuvat kiinteään kustannukseen tai etäisyyteen.
+Jos käytetään **lähetys** kustannuksen tyyppiä ja **yksinkertaista** laskentaperustetta, toimitustavan lähetyskustannukset perustuvat kiinteään kustannukseen tai etäisyyteen.
 
 Tälle yhdistelmälle on määritettävä seuraavat kentät:
 
@@ -98,7 +98,7 @@ Tälle yhdistelmälle on määritettävä seuraavat kentät:
 
 #### <a name="cost-component-type--shipping-and-calculation-basis--tiered"></a>Kustannuskomponentin tyyppi = lähetys ja laskentaperuste = porrastettu
 
-Jos käytetään **lähetys**kustannuksen tyyppiä ja **porrastettua** laskentaperustetta, toimitustavan lähetyskustannukset perustuvat kiinteään kustannukseen tai etäisyyteen. Tässä yhdistelmässä etäisyys perustuu kuitenkin etäisyyksien porrastettuun väliin.
+Jos käytetään **lähetys** kustannuksen tyyppiä ja **porrastettua** laskentaperustetta, toimitustavan lähetyskustannukset perustuvat kiinteään kustannukseen tai etäisyyteen. Tässä yhdistelmässä etäisyys perustuu kuitenkin etäisyyksien porrastettuun väliin.
 
 Tälle yhdistelmälle on määritettävä seuraavat kentät:
 

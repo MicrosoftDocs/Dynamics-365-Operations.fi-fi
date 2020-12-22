@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 91f7568ea8364f97de7e514fb207191ee00041a5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977860"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458891"
 ---
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
 
@@ -39,7 +39,7 @@ Asiakkaita voidaan kopioida yritysten välillä myös käytettäessä manuaalisi
 
 ## <a name="copy-a-customer"></a>Asiakkaan kopioiminen
 
-Asiakas kopioidaan valitsemalla**Kaikki asiakkaat** -luettelosivulla **Uusi**. **Luo asiakas** -valintaikkuna avautuu. Uutta asiakastunnusta ei määritetä heti. Tämä toiminnallisuus eroaa aiempien versioiden toiminnallisuuksista. Asiakasryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa. Se ei voi myöskään määrittää, halutaanko luoda uusi asiakas vai kopioida asiakas. Siksi asiakastunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon valintaikkunan alareunassa.
+Asiakas kopioidaan valitsemalla **Kaikki asiakkaat** -luettelosivulla **Uusi**. **Luo asiakas** -valintaikkuna avautuu. Uutta asiakastunnusta ei määritetä heti. Tämä toiminnallisuus eroaa aiempien versioiden toiminnallisuuksista. Asiakasryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa. Se ei voi myöskään määrittää, halutaanko luoda uusi asiakas vai kopioida asiakas. Siksi asiakastunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon valintaikkunan alareunassa.
 
 Jos luot uutta asiakasta, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan. Kun olet valmis ja valitset **Tallenna**, huomaat, että asiakastunnus määritettiin automaattisesti. Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista asiakastunnusta.
 

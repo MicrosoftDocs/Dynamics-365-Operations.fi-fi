@@ -14,14 +14,12 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
+                - name: Platform update -päivitykset 10.0.16 (helmikuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Platform update -päivitykset 10.0.15 (tammikuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platform update -päivitykset 10.0.14 (marraskuu 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: Platform update -päivitykset 10.0.13 (lokakuu 2020)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Platform update -päivitykset 10.0.12 (elokuu 2020)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'AX 2012 -ominaisuudet, joita on lykätty'
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'Microsoft Dynamics AX 2009:n ja 2012:n yleisen tuen päättyminen'
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Liiketoimintatapahtumat
@@ -162,6 +158,8 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                             - name: Myyntitilauksen tilakenttien määrityksen ottaminen käyttöön
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: Konsernin sisäisten tilausten suodattaminen tilausten ja tilausrivien synkronoinnin välttämiseksi
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: Kaksoiskirjoituksen hallinta
                           items:
                             - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
@@ -208,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integroidut verojen päätiedot
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Synkronointi Dynamics 365 Supply Chain Management -hinnoittelumoduulin kanssa tarvittaessa
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Prospektista käteiseksi kaksoiskirjoituksessa
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synkronointi Dynamics 365 Supply Chain Management -hinnoittelumoduulin kanssa tarvittaessa
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Dynamics 365 Commercen hinnoittelumoduulin käyttäminen Dynamics 365 Salesin kanssa
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: Sisäiset resurssit huoltoa varten
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integroitu työntekijä, työ ja sijainti'
@@ -500,13 +500,15 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: Laitteiston kokovaatimukset
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Dynamics 365 Finance + Operations (on-premises) – todennus
+                      href: deployment/authentication-onprem.md
                 - name: Paikallisten ympäristöjen asennus ja käyttöönotto
                   items:
                     - name: 'Paikallisten projektien määrittäminen LCS:ssä'
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
                     - name: Paikallisten ympäristöjen asennus ja käyttöönotto
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä
+                    - name: Retail-kanavan komponenttien asennusohjeet paikallisessa ympäristössä
                       href: deployment/deploy-retail-onprem.md
                     - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
                       href: deployment/develop-deploy-custom-models-on-premises.md
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Lifecycle Services (LCS) -yhteyden luominen Azure Pipelinesiin
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Vanhan pipelinen päivittäminen Azure Pipelines -ratkaisussa
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: Kuljetuskaluston hallinnan esimerkkisovellus
               items:
                 - name: Kuljetuskaluston hallinnan esimerkkisovelluksen kattava skenaario
@@ -766,6 +770,8 @@
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
                           href: dev-ref/sysda.md
+                        - name: SQL-komentoja lisäävän hyökkäyksen riskin lieventäminen
+                          href: dev-ref/query-with-parameters.md
                     - name: X++-makrot
                       href: dev-ref/xpp-macros.md
                     - name: X++-määriteluokat
@@ -1462,7 +1468,7 @@
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: Tuen hankkiminen Kiinassa 21Vianetin ylläpitämälle Finance and Operations
+            - name: Tuen hankkiminen Kiinassa 21Vianetin ylläpitämälle Finance and Operationsille
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations -sovellusten teknisen tuen määrittäminen
               href: lifecycle-services/support-experience.md
@@ -1492,12 +1498,14 @@
                   href: sysadmin/security-architecture.md
                 - name: Salaus Finance and Operations -sovelluksissa
                   href: sysadmin/encryption.md
-                - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
+                - name: Passiivisen istunnon aikakatkaisun määrittäminen
                   href: sysadmin/session-idle-timeout.md
                 - name: Valmiit suojausraportit
                   href: sysadmin/security-reports.md
                 - name: Uusien käyttäjien luominen
                   href: sysadmin/tasks/create-new-users.md
+                - name: Käyttäjäistuntojen hallinta
+                  href: sysadmin/user-session-management.md
                 - name: Käyttäjien joukkotuonti
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Tehtävien eriyttämisen määrittäminen
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Azure Key Vault -asiakassovelluksen määrittäminen
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Puhdistusrutiinit
+              href: sysadmin/cleanuproutines.md
         - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset'
           items:
             - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset – resurssit'
@@ -1690,13 +1700,13 @@
               href: user-interface/user-interface-development-home-page.md
             - name: Oppaat
               items:
-                - name: Vuokrauksen maksutyyppilomakkeen muodostaminen
+                - name: Vuokrauksen veloitustyypin lomakkeen muodostaminen
                   href: user-interface/build-rental-charge-type-form.md
                 - name: Asiakaslomakkeen muodostaminen
                   href: user-interface/build-customer-form.md
                 - name: Siirtymisen muodostaminen
                   href: user-interface/build-navigation.md
-                - name: Työtilojen muodostaminen
+                - name: Työtilan muokkaaminen
                   href: user-interface/build-workspace.md
             - name: Lomakkeet
               items:

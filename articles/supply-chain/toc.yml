@@ -16,6 +16,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: One Version -palvelupäivitysten usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Päivitysten ja mukautetun koodin elinkaaren hallinta, Dynamics 365 Commerce mukaan lukien'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ohjelmiston elinkaarikäytäntö - pilvi
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ohjelmiston elinkaarikäytäntö - paikalliset versiot
@@ -58,7 +60,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Varastoinnin määrittäminen paikallisille ympäristöille
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
+                - name: 21Vianet vastaa Finance and Operations -sovelluksista Kiinassa
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and Operations -sovellukset Ranskassa
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
@@ -70,12 +72,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.15 (joulukuu 2020)
+                    - name: Supply Chain Management 10.0.16 (helmikuu 2021)
+                      href: get-started/whats-new-scm-10-0-16.md
+                    - name: Supply Chain Management 10.0.15 (tammikuu 2021)
                       href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (marraskuu 2020)
                       href: get-started/whats-new-scm-10-0-14.md
-                    - name: Supply Chain Management 10.0.13 (lokakuu 2020)
-                      href: get-started/whats-new-scm-10-0-13.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -84,8 +86,6 @@
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'AX 2012 -ominaisuudet, joita on lykätty'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Microsoft Dynamics AX 2009:n ja 2012:n yleisen tuen päättyminen'
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentaatioresurssit
@@ -216,6 +216,14 @@
                   items:
                     - name: Toimittajalta matkalla olevat tavarat
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Pilvi ja reuna
+          items:
+            - name: Pilven ja reunan asteikon yksiköt valmistuksen ja varaston hallinnan kuormituksia varten
+              href: cloud-edge/cloud-edge-landing-page.md
+            - name: Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten
+              href: cloud-edge/cloud-edge-workload-manufacturing.md
+            - name: Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
+              href: cloud-edge/cloud-edge-workload-warehousing.md
         - name: Resurssien hallinta
           items:
             - name: Resurssien hallinnan yleiskatsaus
@@ -230,9 +238,9 @@
                 - name: Toiminnallisen sijainnin elinkaaren tilat
                   href: asset-management/setup-for-functional-locations/functional-location-stages.md
                 - name: Ylläpidon määritetyypit
-                  href: asset-management/setup-for-functional-locations/functional-location-types.md
-                - name: Toiminnalliset sijaintityypit
                   href: asset-management/setup-for-functional-locations/specification-types.md
+                - name: Toiminnalliset sijaintityypit
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
             - name: Toiminnalliset sijainnit
               items:
                 - name: Toiminnallisten sijaintien esittely
@@ -633,6 +641,8 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: Kustannusten hallinnan Power BI -sisältöpaketti
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kustannusten hallinnan vianmääritys
+              href: cost-management/troubleshoot-costmanagement.md
         - name: Raportointi ja Power BI -integroinnit
           items:
             - name: 'Raportointi ja analysointi Power BI:n avulla'
@@ -1327,6 +1337,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Varaston näkyvyyden apuohjelma
+              href: inventory/inventory-visibility.md
         - name: IoT-analyysi
           items:
             - name: IoT-analyysi – aloitussivu
@@ -1347,9 +1359,11 @@
           items:
             - name: Pääsuunnittelun aloitussivu
               href: master-planning/master-planning-home-page.md
+            - name: Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
+              href: master-planning/new-master-planning-engine.md
             - name: Suunnittelun optimointi
               items:
-                - name: Suunnittelun optimoinnin yleiskuvaus
+                - name: Suunnittelun optimoinnin yleiskatsaus
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Suunnittelun optimoinnin aloittaminen
                   href: master-planning/planning-optimization/get-started.md
@@ -1357,10 +1371,18 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Suodattimien käyttäminen suunnitelmaan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Pääsuunnittelu ja kysynnän ennuste
+                  href: master-planning/planning-optimization/demand-forecast.md
                 - name: Pääsuunnittelu ja ostokauppasopimukset
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Varmuusmarginaalit
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Varastomerkintä suunnittelun optimoinnissa
+                  href: master-planning/planning-optimization/marking.md
+                - name: Konsernin sisäinen suunnittelu
+                  href: master-planning/planning-optimization/Intercompany-planning.md
+                - name: Tuotteiden sulkeminen pois tietyistä tuotteen elinkaaren tiloista
+                  href: master-planning/planning-optimization/product-lifecycle-state.md
                 - name: Suunniteltujen tilausten hyväksyminen
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automaattinen vahvistus ja suunnittelun optimointi
@@ -1461,8 +1483,10 @@
                   href: master-planning/reduction-keys.md
                 - name: Perusennusteen luominen
                   href: master-planning/tasks/create-baseline-forecast.md
-                - name: Kysynnän ennusteen manuaalinen muokkaaminen
+                - name: Kysynnän ennusteen muokkaaminen manuaalisesti
                   href: master-planning/tasks/modify-demand-forecast-manually.md
+            - name: Pääsuunnittelun vianmääritys
+              href: master-planning/troubleshoot-masterplanning.md
         - name: Mobiilisovellus
           items:
             - name: Mobiilisovelluksen aloitussivu
@@ -1895,6 +1919,8 @@
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: Tuoterakennelaskelmat
                   href: cost-management/bom-calculations.md
+                - name: Tuotetietojen vianmääritys
+                  href: pim/troubleshooting-productinformation.md
             - name: Tuotekonfiguraatio
               items:
                 - name: Tuotemäärityksen yleiskatsaus
@@ -1955,6 +1981,34 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Tietojen siirtäminen tuotemalleja varten
                       href: pim/tasks/transfer-data-product-models.md
+                - name: Tuotekonfiguraattorin vianmääritys
+                  href: pim/troubleshooting-productconfigurator.md
+        - name: Suunnittelun muutosten hallinta
+          items:
+            - name: Suunnittelun muutostenhallinnan yleiskuvaus
+              href: engineering-change-management/product-engineering-overview.md
+            - name: Suunnittelun muutostenhallinnan ominaisuuksien esittely
+              href: engineering-change-management/engineering-scenarios.md
+            - name: Suunnittelun muutosten hallinnan parametrit
+              href: engineering-change-management/engineering-parameters.md
+            - name: Suunnittelun muutostenhallinnan yhteisten arvojen luominen
+              href: engineering-change-management/engineering-change-management-setup.md
+            - name: Suunnitteluorganisaatiot ja tietojen omistuksen säännöt
+              href: engineering-change-management/engineering-org-data-ownership-rules.md
+            - name: Tuotteen omistaja
+              href: engineering-change-management/product-owner.md
+            - name: Suunnittelumääritteet ja suunnittelumääritteen haku
+              href: engineering-change-management/engineering-attributes-and-search.md
+            - name: Suunnitteluversiot ja suunnittelun tuoteluokat
+              href: engineering-change-management/engineering-versions-product-category.md
+            - name: Tuotteen elinkaaren tila ja tapahtumat
+              href: engineering-change-management/product-lifecycle-state-transactions.md
+            - name: Suunnittelutuotteiden muutosten hallinta
+              href: engineering-change-management/engineering-change-management.md
+            - name: Tuotteen valmius
+              href: engineering-change-management/product-readiness.md
+            - name: Vapauta tuoterakenne
+              href: engineering-change-management/release-product-structure.md
         - name: Tuotannonhallinta
           items:
             - name: Tuotantoprosessin yleiskatsaus
@@ -2047,6 +2101,8 @@
                       items:
                         - name: Tuotannon käyttöliittymän määrittäminen
                           href: production-control/production-floor-execution-configure.md
+                        - name: Tuotannon käyttöliittymän suunnitteleminen
+                          href: production-control/production-floor-execution-tabs.md
                         - name: Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
                           href: production-control/production-floor-execution-setup.md
                         - name: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
@@ -2105,6 +2161,8 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: Liukumaryhmät
                       href: production-control/time-attendance-flex-groups.md
+                - name: Erillisen valmistuksen vianmääritys
+                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: Lean-valmistus
               items:
                 - name: Lean-valmistuksen yleiskatsaus
@@ -2257,6 +2315,8 @@
                       href: production-control/consumption.md
                     - name: Tuotannon kirjaus
                       href: cost-management/production-posting.md
+                - name: Prosessivalmistuksen vianmääritys
+                  href: production-control/troubleshoot-processmanufacturing.md
         - name: Myynti ja markkinointi
           items:
             - name: Myynnin ja markkinoinnin yleiskatsaus
@@ -2589,6 +2649,8 @@
               href: transportation/create-new-transportation-management-engine.md
             - name: Polttoaineindeksin liittäminen rahdinkuljettajaan lisämaksuna
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: Alkuperäin USMCA-sertifiointi
+              href: transportation/usmca-certification-of-origin.md
             - name: Rahtikirjan luominen
               href: transportation/create-bill-of-lading.md
             - name: Rahdin kuljetusreittien suunnittelu
@@ -2607,6 +2669,26 @@
               href: transportation/reconcile-freight-transportation-management.md
             - name: Kuljettajan sisäänkuittauksen ja tapaamiseen lähtemisen rekisteröinti
               href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Alennukset
+              href: transportation/transportation-management-discount.md
+            - name: Muut kulut
+              href: transportation/transportation-management-misc-charge.md
+            - name: Tilat ja menetelmät
+              href: transportation/transportation-management-modes-methods.md
+            - name: Numerosarjat
+              href: transportation/transportation-management-number-sequence.md
+            - name: Tila
+              href: transportation/transportation-management-status.md
+            - name: Vyöhykkeen päätiedot
+              href: transportation/transportation-management-zone-master.md
+            - name: Rahdinkuljettajaryhmät
+              href: transportation/tasks/carrier-groups.md
+            - name: Kuormituksen luonnin työtila
+              href: transportation/tasks/load-building-workbench.md
+            - name: Kuormitusmallit
+              href: transportation/tasks/load-template.md
+            - name: Hinnoitteluprofiilit
+              href: transportation/tasks/setup-a-rating-profile.md
             - name: Rahdinkuljettajan polttoaineindeksin määrittäminen
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Määritä kuljetuksen maksuväline
@@ -2645,20 +2727,28 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Tuotedimensioiden yhdistäminen sijainnissa
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Hyllytyksen klusterit
+                  href: warehousing/putaway-clusters.md
                 - name: Laaduntarkistus
                   href: warehousing/quality-check.md
+                - name: Saapuvien varaston työvaiheiden vianmääritys
+                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Lähtevien varaston työvaiheet
               items:
                 - name: Varaukset varastonhallinnassa
                   items:
                     - name: Joustava varastotason dimensioiden varauskäytäntö
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: Varastonhallinnan varausten vianmääritys
+                      href: warehousing/troubleshoot-warehouse-reservations.md
                 - name: Osittainen vapautus ja osalähetys
                   items:
                     - name: Kuljetuskuorman osalähetys
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Osittain varattujen siirtotilauserien vapautus
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: Osittaisten vapautusten ja osalähetysten vianmääritys
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: Keräys ja pakkaus
                   items:
                     - name: Klusterikeräilyn määrittäminen
@@ -2693,10 +2783,14 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Sijaintidirektiivin varastonkeräilyn erääntyminen
                       href: warehousing/location-directive-inventory-picking-aging.md
-                    - name: Lähtevä lajittelu
+                    - name: Lähtevien lajittelu
                       href: warehousing/outbound-sorting.md
                     - name: Asettaminen seinälle – asettaminen myymälään
                       href: warehousing/put-to-wall-put-to-store.md
+                    - name: Lähtevän kuormituksen visualisointi
+                      href: warehousing/outbound-workload-visualization.md
+                    - name: Keräyksen ja pakkauksen vianmääritys
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
                 - name: Täydennys
                   items:
                     - name: Täydennyksen yleiskatsaus
@@ -2709,11 +2803,15 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Vyöhykkeen rajatäydennys
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Täydennysstrategiat
+                      href: warehousing/replenishment-strategies.md
                     - name: Täydennys yli sijainnin kapasiteetin
                       href: warehousing/replenishment-over-location-capacity.md
+                    - name: Varaston täydennyksen vianmääritys
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
                 - name: Kuormituksen luonti ja lähetykset
                   items:
-                    - name: Vahvistaminen ja siirtäminen
+                    - name: Vahvistus ja siirtäminen
                       href: warehousing/confirm-and-transfer.md
                     - name: Lähtevien lähetysten vahvistaminen erätöistä
                       href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
@@ -2725,6 +2823,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: Aallon etikettien tulostaminen uudelleen ja mitätöinti
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Kuormituksen luomisen ja lähetysten vianmääritys
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Lähetyksen konsolidoinnin käytännöt
                   items:
                     - name: Lähetyksen konsolidoinnin käytännöt
@@ -2741,6 +2841,8 @@
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: Skenaario 5 – Lähetysten konsolidointi manuaalisesti käyttämällä Lähetysten konsolidointi -sivua
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Lähtevien varaston työvaiheiden vianmääritys
+                  href: warehousing/troubleshoot-warehouse-outbound.md
             - name: Koko varaston toiminnot
               items:
                 - name: Varaston työkäytännöt
@@ -2793,10 +2895,14 @@
                       href: warehousing/work-line-details.md
                     - name: Toimipaikan rekisterikilpien paikannus
                       href: warehousing/location-license-plate-positioning.md
-                    - name: Vaihda työpoolia työssä
+                    - name: Työpoolin vaihtaminen työssä
                       href: warehousing/change-work-pool-on-work.md
                     - name: Nimikkeen konsolidointi – toimipaikan käyttöaste
                       href: warehousing/item-consolidation-location-utilization.md
+                    - name: Varastotyön vianmääritys
+                      href: warehousing/troubleshoot-warehouse-work.md
+                    - name: Työn jako
+                      href: warehousing/work-split.md
             - name: Varaston asetukset
               items:
                 - name: Varaston konfigurointi
@@ -2807,11 +2913,13 @@
                       href: inventory/warehouse-template.md
                     - name: Työnhallinta työmallien ja sijaintidirektiivien avulla
                       href: warehousing/control-warehouse-location-directives.md
-                    - name: Toimipaikkadirektiivien luominen
+                    - name: Sijaintidirektiivien käsitteleminen
                       href: warehousing/create-location-directive.md
+                    - name: Sijainnin varastointirajoitukset
+                      href: warehousing/location-stocking-limits.md
                     - name: Aallon vaihekoodit
                       href: warehousing/wave-step-codes.md
-                    - name: Aaltokäsittelyn määritys
+                    - name: Aaltokäsittelyn määrittäminen
                       href: warehousing/tasks/configure-wave-processing.md
                     - name: Aallon etikettitulostuksen määrittäminen ja käyttäminen
                       href: warehousing/configure-wave-label-printing.md
@@ -2843,6 +2951,8 @@
                       href: warehousing/mobile-barcode-support.md
                     - name: Siirtotilausten varaston määrittäminen
                       href: warehousing/transfer-orders-warehouse.md
+                    - name: Varaston määrityksen vianmääritys
+                      href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Varastosovelluksen asentaminen ja määrittäminen
                   items:
                     - name: Varastosovelluksen asentaminen ja yhdistäminen
@@ -2877,8 +2987,12 @@
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Päivitys ja siirto
                   items:
-                    - name: Päivitä varastonhallintaprosessit Microsoft Dynamics AX 2012 -versiosta Finance and Operationsiin
+                    - name: Varaston hallintaprosessien päivittäminen Microsoft Dynamics AX 2012 -sovelluksesta Finance and Operations -sovellukseksi
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+                    - name: Päivityksen vianmääritys ja siirto edistyneeseen varastonhallintaan
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: Varaston asetusten vianmääritys
+                  href: warehousing/troubleshoot-warehouse-setup.md
         - name: Supply Chain Managementin kehittäminen
           items:
             - name: Gantt-ohjausobjektin kehitysopas
