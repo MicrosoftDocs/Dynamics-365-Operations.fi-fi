@@ -17,11 +17,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: 0097d1849965d97a8444ec0f65f69cee70fb7f0b
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015029"
+ms.locfileid: "4407894"
 ---
 # <a name="finland-overview"></a>Suomi – yleiskatsaus
 

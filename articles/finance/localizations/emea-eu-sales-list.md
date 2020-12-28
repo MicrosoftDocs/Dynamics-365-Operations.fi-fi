@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183625"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407883"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
@@ -121,7 +121,7 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 <li><strong>Maan/alueen parametrit</strong> -välilehti: EU:n jäsenvaltioiden tunnistaminen. Luo sivulle kutakin jäsenvaltiota kohti tietue ja määritä seuraavat tiedot:
 <ul>
 <li><strong>Maa/alue</strong> – Valitse maa/alue.</li>
-<li><strong>Maa-/aluetyyppi</strong> – Jos <strong>Maa-/alue</strong>-arvo on se maa tai alue, jossa yrityksesi on rekisteröity, valitse <strong>Kotimaa</strong>. Jos <strong>Maa/alue</strong> -arvo on muu jäsenvaltio kuin maa tai alue, jossa yrityksesi on rekisteröity, valitse <strong>EU</strong>. Jos <strong>Maa/alue</strong>-arvo ei ole EU:n jäsenvaltio, valitse <strong>Kolmas maa/alue</strong>.</li>
+<li><strong>Maa-/aluetyyppi</strong> – Jos <strong>Maa-/alue</strong>-arvo on se maa tai alue, jossa yrityksesi on rekisteröity, valitse <strong>Kotimaa</strong>. Jos <strong>Maa/alue</strong> -arvo on muu jäsenvaltio kuin maa tai alue, jossa yrityksesi on rekisteröity, valitse <strong>EU</strong>. Jos <strong>Maa/alue</strong>-arvo ei ole&#39; EU:n jäsenvaltio, valitse <strong>Kolmas maa/alue</strong>.</li>
 </ul></li>
 <li><strong>Numerosarjat</strong>-välilehti: Rivillä, jolla <strong>Viite</strong>-arvo on <strong>EU-myyntiluettelo</strong>, valitse numerosarjan koodi.</li>
 </ul></td>

@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: a70108696d6187126c23eca1779553210cd4a9d6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175744"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407891"
 ---
 # <a name="intrastat-overview"></a>Intrastat – yleiskatsaus
 
@@ -140,7 +140,7 @@ Seuraavissa osissa käsitellään pakollisia Intrastat-raportoinnin asetuksia.
 </tr>
 <tr class="even">
 <td>Tapahtumakoodit</td>
-<td>Määritä tapahtuman luonne maan tai alueen vaatimusten mukaisesti. Kullekin määritetylle tapahtumakoodille on määritettävä säännöt laskusummien sekä siirtotilausten ja myynti- ja ostotilausten tilastosummien laskemiseen.
+<td>Määritä tapahtuman luonne maan&#39; tai alueen&#39; vaatimusten mukaisesti. Kullekin määritetylle tapahtumakoodille on määritettävä säännöt laskusummien sekä siirtotilausten ja myynti- ja ostotilausten tilastosummien laskemiseen.
 <ul>
 <li>Siirtotilauksille määritetään jokin seuraavista laskusummien ja tilastosummien laskusäännöistä:
 <ul>
@@ -159,7 +159,7 @@ Seuraavissa osissa käsitellään pakollisia Intrastat-raportoinnin asetuksia.
 </tr>
 <tr class="odd">
 <td>Välitystavat</td>
-<td>Määritä kuljetustapa maan tai alueen vaatimusten mukaisesti. Voit kullekin toimitustavalla oletuskuljetustavan <strong>Ulkomaankauppa</strong>-välilehdessä.</td>
+<td>Määritä kuljetustapa maan&#39;s tai alueen&#39;; vaatimusten mukaisesti. Voit kullekin toimitustavalla oletuskuljetustavan <strong>Ulkomaankauppa</strong>-välilehdessä.</td>
 </tr>
 <tr class="even">
 <td>Satamat</td>
@@ -207,7 +207,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </ul></li>
 <li><strong>Siirrä</strong> – Määritä ehdot, joilla tapahtumat siirretään Intrastat-kirjauskansioon. Voit määrittää, että tapahtumat siirretään vasta, kun nimikkeissä toteutuu yksi seuraavista ehdoista tai kaikki ehdot toteutuvat:
 <ul>
-<li>Nimikkeet eivät ole palvelunimikkeitä.</li>
+<li>Nimikkeet eivät&#39; ole palvelunimikkeitä.</li>
 <li>Nimillä on kauppatavarakoodi.</li>
 <li>Nimikkeillä on paino.</li>
 <li>Nimikkeillä on lisäyksiköitä.</li>
@@ -227,7 +227,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </tr>
 <tr class="even">
 <td>Edustajan yhteystiedot</td>
-<td>Määritä edustajan nimi, osoite, ALV-tunnus, puhelinnumero ja faksinumero.</td>
+<td>Määritä edustajan&#39; nimi, osoite, ALV-tunnus, puhelinnumero ja faksinumero.</td>
 </tr>
 <tr class="odd">
 <td>Maan tai alueen ominaisuudet</td>

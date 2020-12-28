@@ -1,9 +1,9 @@
 ---
-title: Käänteinen verovelvollisuus
+title: ALV-/GST-mallin käänteinen veloitusmekanismi
 description: Tässä ohjeaiheessa kerrotaan, miten käänteinen arvonlisävero määritetään Euroopan maissa, Saudi-Arabiassa ja Singaporessa.
 author: epodkolz
 manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,21 +15,28 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760230"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515048"
 ---
-# <a name="reverse-charge-vat"></a>Käänteinen verovelvollisuus
+# <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>ALV-/GST-mallin käänteinen veloitusmekanismi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan yleisesti EU:n ja GCC-maiden sekä Singaporen käänteisen arvonlisäveron määrittämisestä.
+Tässä aiheessa kuvataan yleinen tapa määrittää käänteisen veloituksen toiminto maissa/alueilla, jotka käyttävät ALV-tai GST-malleja.
+                                                                                 
+Toiminnon saatavuutta maassa/alueella hallitaan seuraavilla **Ominaisuuksien hallinta** -työtilan ominaisuuksilla.
 
-> [!NOTE]                                                                                  
-> **Käänteisen veromallin saatavuus muissa maissa** -ominaisuus on otettava käyttöön **Ominaisuuksien hallinta** -työtilassa Bahrainille, Kuwaitille, Omanille ja Quatarille. 
+| Ominaisuus                                              | Maa tai alue                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ei   erityistä ominaisuutta                                | Itävalta </br>Belgia </br>Bulgaria </br>Kroatia </br>Kypros </br>Tšekin tasavalta </br>Tanska  </br>Viro  </br>Suomi  </br>Ranska  </br>Saksa  </br>Unkari  </br>Islanti  </br>Irlanti  </br>Italia  </br>Latvia  </br>Liechtenstein  </br>Liettua  </br>Luxemburg  </br>Alankomaat  </br>Norja Puola </br>Portugali </br>Romania  </br>Saudi-Arabia </br>Singapore  </br>Slovakia  </br>Slovenia  </br>Espanja  </br>Ruotsi  </br>Sveitsi  </br>Iso-Britannia  </br>Yhdistyneet arabiemiirikunnat |
+| Muiden maiden käänteinen   veloitus            | Bahrain  </br>Kuwait  </br>Oman  </br>Qatar                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Ota ALV/GST-veromallin käänteisen verovelvollisuuden mekanismi   käyttöön | Kaikki muut maat/alueet   lukuun ottamatta seuraavia:  </br>Brasilia  </br>Intia  </br>Venäjä                                                                                                                                                                                                                                                                                                                                                                                         |
+ 
+ Lisätietoja on tämän aiheen kohdassa [ALV-/GST-malliominaisuuden käänteisen veloitusmekanismin ottaminen käyttöön](#enable-reverse-charge).
 
 Käänteinen vero on veromalli, jossa ALV:n kirjanpito- ja raportointivastuu siirtyy myyjältä tavaran ja/tai palvelun ostajalle. Tämän vuoksi tavaroiden ja/tai palvelujen vastaanottaja ilmoitta ALV-ilmoituksessa sekä maksettavan veron (myyjän roolissa) että vähennettävän veron (ostajan roolissa)
 
@@ -61,7 +68,7 @@ Tämä negatiivinen arvonlisäverokoodi on määritettävä ensin nimikkeen arvo
 </tbody>
 </table>
 
-## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
+## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
 Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäveroryhmiä.
 
 <table>
@@ -79,10 +86,10 @@ Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäveroryhmi�
 </tr>
 </table>
 
-## <a name="set-up-reverse-charge-groups"></a>Käänteisten veroryhmien määrittäminen
+## <a name="set-up-reverse-charge-item-groups"></a><a name="reverse-charge-item-group"></a>Määritä käänteisen veloituksen nimikeryhmät
 Voit määrittää **Käänteisen veloituksen nimikeryhmät** -sivulla (**Verot** &gt; **Asetukset** &gt; **Arvonlisävero** &gt; **Käänteisen veloituksen nimikeryhmät**) tuote- tai palveluryhmät tai yksittäiset tuotteet tai palvelut, joissa voidaan käyttää käänteistä arvonlisäveroa. Määritä kullekin käänteisen veron nimikeryhmälle myynnin ja/tai ostojen nimike-, nimikeryhmä- tai luokkaluettelo.
 
-## <a name="set-up-reverse-charge-rules"></a>Käänteisen verotuksen sääntöjen määrittäminen
+## <a name="set-up-reverse-charge-rules"></a><a name="reverse-charge-rules"></a>Käänteisen verotuksen sääntöjen määrittäminen
 Voit määrittää **Käänteinen veloituksen säännöt** -sivulla (**Verot** &gt; **Asetukset** &gt; **Arvonlisävero** &gt; **Käänteisen veloituksen säännöt**) soveltuvuussäännöt ostoja ja myyntiä varten. Voit määrittää käänteisen verotuksen soveltuvuussääntöjoukon. Määritä kullekin säännölle seuraavat kentät:
 
 - **Tiedostotyyppi** – valitse **Ostotilaus**, **Toimittajan laskun kirjauskansio**, **Myyntitilaus**, **Vapaatekstilasku**, **Myyntilaskukirjauskansio** ja/tai **Toimittajan lasku**.
@@ -99,18 +106,18 @@ Voit lisäksi määrittää, näkyvätkö ilmoitukset ja päivitetäänkö asiak
 - **Kehote** – avautuva ilmoitus pyytää vahvistamaan, että käänteistä vero saa käyttää.
 - **Määritä** – asiakirjarivi päivitetään ilman lisäilmoituksia.
 
-## <a name="set-up-countryregion-properties"></a>Maan/alueen ominaisuuksien määrittäminen
+## <a name="set-up-countryregion-properties"></a><a name="Set-up-Country/region-properties"></a>Maan/alueen ominaisuuksien määrittäminen
 Määritä **Ulkomaankaupan parametrit** -sivun (**Vero** &gt; **Asetukset** &gt; **Arvonlisävero** &gt; **Ulkomaankauppa** &gt; **Ulkomaankaupan parametrit**) **Maan/alueen ominaisuudet** -välilehdessä nykyisen yrityksen maaksi/alueeksi *Kotimaa*. Määritä yrityksen kanssa EU-kauppaan osallistuvien EU-maiden-/alueiden **maan/alueen tyypiksi** *EU*. Määritä yrityksen kanssa GCC-kauppaan osallistuvien GCC-maiden/-alueiden **maan/alueen tyypiksi** *GCC*.
 
 ## <a name="set-up-default-parameters"></a>Oletusparametrien määrittäminen
 Voit ottaa käänteisen verovelvollisuuden toiminnon käyttöön valitsemalla **Kirjanpitoparametrit**-sivun **Käänteinen veloitus**-välilehdessä **Ota käänteinen veloitus käyttöön** -asetukseksi **Kyllä**. Valitse **Ostotilauksen arvonlisäveroryhmä**- ja **Myyntitilauksen arvonlisäveroryhmä** -kentissä oletusarvoiset arvonlisäveroryhmät. Kun käänteisen veron soveltuvuusehto täyttyy, myynti- tai ostotilausrivi päivitetään näillä arvonlisäveroryhmillä.
 
-## <a name="reverse-charge-on-a-sales-invoice"></a>Myyntilaskun käänteinen vero
+## <a name="reverse-charge-on-a-sales-invoice"></a><a name="reverse-charge-sale"></a>Myyntilaskun käänteinen vero
 Käänteisen veromallin alaisessa myynnissä myyjä ei voita arvolisäveroa. Laskussa ilmoitetaan sen sijaan sekä käänteisen verovelvollisuuden alaiset nimikkeet että käänteisen verovelvollisuuden kokonaissumma.
 
 Kun kirjattavassa myyntilaskussa on käänteistä veroa, arvolisäverotapahtumissa on verosuuntana **Maksettava arvonlisävero**, arvonlisävero on nolla ja **Käänteinen veloitus**- ja **Vapautus**-valintaruudut on valittu.
 
-## <a name="reverse-charge-on-a-purchase-invoice"></a>Ostolaskun käänteinen vero
+## <a name="reverse-charge-on-a-purchase-invoice"></a><a name="reverse-charge-purchase"></a>Ostolaskun käänteinen vero
 Käänteiseen veromalliin kuuluvissa ostoissa käänteisen veron sisältävän laskun vastaanottava ostaja toimii ostajana ja myyjänä arvonlisäveron kirjanpitoa varten.
 
 Kun käänteisen veron sisältävä ostolasku kirjataan, kirjanpitoon luodaan kaksi arvonlisäverotapahtumaa. Toisen tapahtuman verosuunta on **Saatava arvonlisävero**. Toisessa tapahtumassa verosuunta on **Maksettava arvonlisävero** ja **Käänteinen veloitus** -valintaruutu on valittu.
@@ -118,3 +125,15 @@ Kun käänteisen veron sisältävä ostolasku kirjataan, kirjanpitoon luodaan ka
 Seuraavassa näyttökuvassa yhdessä tapahtumassa suuntana on **Saatava arvonlisävero** ja toisessa **Maksettava arvonlisävero**. 
 
 ![Kirjattu arvonlisävero](media/apac-sau-posted-sales-tax.png)
+
+## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Ota ALV/GST-veromalliominaisuuden käänteisen verovelvollisuuden mekanismi käyttöön
+Hae ominaisuus **Ominaisuuksien hallinta** -työtilassa ja valitse **Ota käyttöön**.
+
+Kun toiminto on otettu käyttöön, **Käänteinen veloitus** -välilehti on käytettävissä kaikissa yrityksissä. Ota Käänteinen veloitus -toiminnallisuus käyttöön yritykselle määrittämällä **Ota Käänteinen veloitus käyttöön** -valinnaksi **Kyllä**.
+
+Seuraavat ominaisuusasetuksiin liittyvät sivut ja valikkovaihtoehdot ovat käytettävissä:
+ - **Käänteisen veloituksen nimikeryhmät** (**Vero** > **Asetus** > **Arvonlisävero** > **Käänteisen veloituksen nimikeryhmät**). Lisätietoja on osassa [Määritä käänteisen veloituksen nimikeryhmät- ](#reverse-charge-item-group).
+ - **Käänteisen veloituksen säännöt**  (**Vero** > **Asetukset** > **Arvonlisävero** > **Käänteisen veloituksen säännöt**). Katso [Käänteisen verotuksen sääntöjen määrittäminen](#reverse-charge-rules).
+ - **Ulkomaankauppaparametrit** (**Vero** > **Asetus** > **Arvonlisävero** > **Ulkomaankauppa** > **Ulkomaankauppaparametrit**). Katso [Maan/alueen ominaisuuksien määrittäminen](#Set-up-Country/region-properties).
+
+**Käänteinen veloitus** -valintaruutu on käytettävissä **Arvonlisäveroryhmä** ja **Kirjattu arvonlisävero** -sivuilla. Lisätietoja on kohdissa [Arvonlisäveroryhmien ja nimikkeen arvonlisäveroryhmien määrittäminen](#sales-tax-item-sales-tax-groups), [Myyntilaskun käänteinen veloitus](#reverse-charge-sale) ja [Ostolaskun käänteinen veloitus](#reverse-charge-purchase).
