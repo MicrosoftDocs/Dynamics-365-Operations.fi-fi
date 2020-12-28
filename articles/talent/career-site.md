@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: d4a1e7c19ccec6ae32e46ec7d58604b162418953
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832951"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461007"
 ---
 # <a name="set-up-your-career-site-in-attract"></a>Urasivuston määrittäminen Attractissa
 
@@ -62,7 +62,7 @@ Seuraavassa luettelossa on yleisesti käytettyjen urasivustojen URL-osoitteita j
 
 -   **Urasivuston aloitussivun URL-osoite** – voit tarkastella urasivuston aloitussivun URL-osoitetta kirjautumalla Attractiin järjestelmänvalvojana, valitsemalla **Hallintakeskus** **Asetukset**-valikossa ja valitsemalla sitten **Urasivuston hallinta** -välilehden.
 
--   **Yksittäisen työpaikkailmoituksen käyttämisen URL-osoite** – Kun [teet ulkoisen työpaikkailmoituksen](Creating-jobs-Attract.md#postings) ensimmäisen kerran, voit kopioida **Käytä**-linkin Attractista. Tämän linkin URL-osoitteen muoto on seuraavanlainen: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Yksittäisen työpaikkailmoituksen käyttämisen URL-osoite** – Kun [teet ulkoisen työpaikkailmoituksen](Creating-jobs-Attract.md#postings) ensimmäisen kerran, voit kopioida **Käytä**-linkin Attractista. Tämän linkin URL-osoite on seuraavassa muodossa: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **Yksittäisen työpaikkailmoituksen URL-osoite** – Työpaikkailmoituksen URL-osoite on käytön URL-osoitteen alimerkkijono. Se sisältää työnumerosta oikealle kaikki merkkijonon tiedot. Niinpä edellisessä Käytä-linkin URL-osoitteessa työpaikkailmoituksen URL-osoite on [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e).
 

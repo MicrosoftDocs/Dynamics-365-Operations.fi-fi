@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41944fb7819b5527f6bc023a60acd9450d9e43c2
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974835"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665295"
 ---
 # <a name="recall-order-operation-in-pos"></a>Myyntipisteen Peruuta tilaus -toiminto
 
 [!include [banner](includes/banner.md)]
 
-Commercen myyntipisteen Peruuta tilaus -toiminnossa on päivitetyt tilauksen haku- ja suodatusominaisuudet ja tilauskohtaiset tiedot. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.15 ja sitä uudemmissa versioissa.
+Commercen myyntipisteen **Peruuta tilaus** -toiminnossa on päivitetyt tilauksen haku- ja suodatusominaisuudet ja tilauskohtaiset tiedot. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.15 ja sitä uudemmissa versioissa.
 
 Ota tämä toiminto käyttöön ottamalla **Parannettu tilauksen peruutustoiminto myyntipisteessä** -ominaisuus käyttöön Commercen pääkonttorin **Ominaisuuksien hallinta** -työtilassa. Kun ominaisuus on otettu käyttöön, harkitse myyntipisteen [näytön asettelujen](pos-screen-layouts.md) päivittämistä, jotta voit käyttää muutettuja ominaisuuksia.
 

@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022212"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529825"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (6. lokakuuta 2020)
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttaneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
 Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -55,13 +57,13 @@ Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 | 448806 | **Oletustunnuksen tyyppi** viedään muodossa **RecID** HCM-parametreissa | Tämä Human Resourcesin parametriyksikön muutos lisää lisäsarakkeen, jossa näkyy **Oletustunnuksen tyyppi**. |
 | 492923 | Tehtävätallenteet eivät tallennu Lifecycle Servicesissa (LCS) | Tehtävätallenteet voidaan nyt tallentaa LCS:ssa. |
 | 429950 | Kiinteä kompensaatio ei pääty oikein työtehtävää vaihdettaessa | Kun työntekijän työtehtävää vaihdetaan **Siirrä työntekijä** -sivulla, kompensaation päättymispäiväksi oli määritetty yksi päivä työtehtävän päättymisen jälkeen. Kompensaation päättymispäivä on nyt sama kuin työtehtävän päättymispäivä. |
-| 467214 | **Kuukausipalkka-analyysi** näkyy vain, jos **Palkkion muunnoksen nimi** -asetuksena on **Vuosittainen** | .Jos kuukausipalkan nimi on jokin muu kuin **Vuosittainen** , se ei näkynyt kompensaatioanalyysissa. Tämän päivityksen myötä kompensaatioanalyysi käyttää nyt kaikkia palkkion muunnoksia. Jos raportin suoritusperusteena on **Tunti** tai **Palkka** , kaikki jotakin muuta kuin tuntia jaksona käyttävä palkkion muunnos sisältyy **Palkka** -suodattimeen. **Tunneittain** -suodatin sisältää vain **Tunti** -jakson palkkiot. |
-| 482464 | Kun **arvosteluja** tarkastellaan, **Tiedot** -näkymä ei vaihdu ruudukkonäkymäksi suodattimen käytön jälkeen. | Kun suodatinta on käytetty, arvosteluruudukko näkyy odotetusti. |
+| 467214 | **Kuukausipalkka-analyysi** näkyy vain, jos **Palkkion muunnoksen nimi** -asetuksena on **Vuosittainen** | .Jos kuukausipalkan nimi on jokin muu kuin **Vuosittainen**, se ei näkynyt kompensaatioanalyysissa. Tämän päivityksen myötä kompensaatioanalyysi käyttää nyt kaikkia palkkion muunnoksia. Jos raportin suoritusperusteena on **Tunti** tai **Palkka**, kaikki jotakin muuta kuin tuntia jaksona käyttävä palkkion muunnos sisältyy **Palkka**-suodattimeen. **Tunneittain**-suodatin sisältää vain **Tunti**-jakson palkkiot. |
+| 482464 | Kun **arvosteluja** tarkastellaan, **Tiedot**-näkymä ei vaihdu ruudukkonäkymäksi suodattimen käytön jälkeen. | Kun suodatinta on käytetty, arvosteluruudukko näkyy odotetusti. |
 | 483184 | Human Resources ei luo lomakertymiä, kun **Tasoperuste** valitaan **Muutettu aloituspäivämäärä** -asetuksena **Loman rekisteröinti** -tietueessa |**Muutettu aloituspäivämäärä** täytetään ja sitä käytetään lomakertymiä luotaessa.  |
 | 509731 | Sellaisen työntekijän poissaolopyyntö, jonka työsuhde päättyy tulevaisuudessa, jos työntekijä teki poissaolopyynnön ajankohta on työsuhteen päättymispäivän jälkeen | Poissaolopyyntöjä voidaan nyt lähettää työtekijöille, joiden työsuhde päättyy tulevaisuudessa, kunhan pyyntö koskee aikaa ennen työsuhteen päättymispäivää. |
 | 510716 | Kompensaatioanalyysi sisältää sekä mies- että naistyöntekijät **Miesten keskituntipalkka** -kohdassa | Kompensaatioanalyysin **Kompensaation demografiatietojen analyysi** -kohdan **Miesten keskituntipalkka** sisälsi naisten keskipalkan. Se sisältää nyt vain miesten tiedot. |
-| 511348 | Etujen itsepalvelussa pitäisi näkyvä vain kuluvasta päivästä etujakson loppuun voimassa olevat etuussuunnitelmat | Työntekijät näkivät vanhentuneet etuussuunnitelmat **Eturekisteröinti** -sivulla. Tämä korjaus poistaa kyseiset suunnitelmat. |
-| 512706 | Seuraavat kentät määritetään vain luku -muotoisiksi:<ul><li>BenefitPlanEmployeeEntity</li><li>EnrollmentConfirmed</li><li>EnrollmentConfirmedBy</li><li>EnrollmentConfirmedDateTime | Dimensiotietojen **Lisää** - ja **Poista** -painikkeet otettiin virheellisesti käyttöön toiminnon valmistumisen jälkeen. Tämän **Toimen toimintojen tiedot** -sivun päivitysten jälkeen, kenttiä ei voi muokata toiminnon valmistumisen jälkeen. |
+| 511348 | Etujen itsepalvelussa pitäisi näkyvä vain kuluvasta päivästä etujakson loppuun voimassa olevat etuussuunnitelmat | Työntekijät näkivät vanhentuneet etuussuunnitelmat **Eturekisteröinti**-sivulla. Tämä korjaus poistaa kyseiset suunnitelmat. |
+| 512706 | Seuraavat kentät määritetään vain luku -muotoisiksi:<ul><li>BenefitPlanEmployeeEntity</li><li>EnrollmentConfirmed</li><li>EnrollmentConfirmedBy</li><li>EnrollmentConfirmedDateTime | Dimensiotietojen **Lisää**- ja **Poista**-painikkeet otettiin virheellisesti käyttöön toiminnon valmistumisen jälkeen. Tämän **Toimen toimintojen tiedot** -sivun päivitysten jälkeen, kenttiä ei voi muokata toiminnon valmistumisen jälkeen. |
 
 ## <a name="in-preview"></a>Esiversiossa
 
@@ -77,11 +79,11 @@ Seuraavat uudet ominaisuudet ovat esiversioita. Lisätietoja ominaisuuksien otta
 
 Seuraavat uudet ominaisuudet on aikataulutettu tukeviin julkaisuihin:
 
-- **Common Data Serviceen sisällytetty tarkistusluetteloyksiköt** : käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluetteloyksiköt ovat pian saatavilla Common Data Servicessa.
+- **Common Data Serviceen sisällytetty tarkistusluetteloyksiköt**: käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluetteloyksiköt ovat pian saatavilla Common Data Servicessa.
 
-- **Etujen hallinnan syykoodit** : Etujen hallinnan syykoodit yhdistetään pian olemassa oleviin syykoodeihin Human Resourcesissa. Jos olet määrittänyt etujen hallinnassa syykoodeja, joiden pituus on yli 15 merkkiä, syykoodin nimeä on muutettava etujen hallinnan **Syykoodit** -lomakkeessa niin, että pituus on enintään 15 merkkiä. Kun olet päivittänyt nimen, syykoodi näkyy olemassa olevan syykoodilomakkeen henkilöstön hallinnassa. Tämä muutos on käytettävissä tulevaisuudessa. Se ei vaikuta olemassa oleviin toimintoihin.
+- **Etujen hallinnan syykoodit**: Etujen hallinnan syykoodit yhdistetään pian olemassa oleviin syykoodeihin Human Resourcesissa. Jos olet määrittänyt etujen hallinnassa syykoodeja, joiden pituus on yli 15 merkkiä, syykoodin nimeä on muutettava etujen hallinnan **Syykoodit**-lomakkeessa niin, että pituus on enintään 15 merkkiä. Kun olet päivittänyt nimen, syykoodi näkyy olemassa olevan syykoodilomakkeen henkilöstön hallinnassa. Tämä muutos on käytettävissä tulevaisuudessa. Se ei vaikuta olemassa oleviin toimintoihin.
 
-- **Esimiehen itsepalvelun mukautetut linkit** : Esimiehen itsepalvelun ominaisuuksia laajennetaan esimiesten tueksi. Lisättävän on ominaisuus, jolla lisätään mukautettuja linkkejä **Oma ryhmä** -välilehdessä. Tämä ominaisuus muistuttaa mukautettuja linkkejä työntekijän itsepalvelun **Omat tiedot -välilehdessä**. Lisätietoja on kohdassa [Esimiehen itsepalvelun mukautetut linkit](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Esimiehen itsepalvelun mukautetut linkit**: Esimiehen itsepalvelun ominaisuuksia laajennetaan esimiesten tueksi. Lisättävän on ominaisuus, jolla lisätään mukautettuja linkkejä **Oma ryhmä** -välilehdessä. Tämä ominaisuus muistuttaa mukautettuja linkkejä työntekijän itsepalvelun **Omat tiedot -välilehdessä**. Lisätietoja on kohdassa [Esimiehen itsepalvelun linkkien mukauttaminen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuista julkaisuista on kohdassa [Dynamics 365 Human Resourcesin vuoden 2019 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

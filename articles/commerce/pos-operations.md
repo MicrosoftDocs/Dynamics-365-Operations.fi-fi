@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081336"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594110"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -197,6 +197,8 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 500 | Mitätöi tapahtuma | Mitätöi nykyinen tapahtuma. | Kyllä | Kyllä | En | Kyllä | En |
 | 916 | Windows-työnkulun perusta | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 924 | Pankkikorttien X-raportti | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Kyllä |
+| 311 | Poista järjestelmäalennukset tapahtumasta | Poista kaikki järjestelmän käyttämät alennukset, mukaan lukien kuponkialennukset, tapahtumasta. Tämä ei poista manuaalisia alennuksia. | Kyllä | Kyllä | Kyllä | Kyllä | Nro |
+| 312 | Käytä järjestelmäalennuksia uudelleen | Käytä tapahtuman järjestelmäalennuksia uudelleen, jos ne on poistettu **Poista järjestelmäalennukset tapahtumasta** -toiminnolla. | Kyllä | Kyllä | Kyllä | Kyllä | Nro |
 
 \* Toiminto on käytettävissä offline-tilassa vain, kun asiakastilausta tai myyntitilausta luodaan ja kun näiden tilausten offiline-tilassa tapahtuva luominen on määritetty myyntipisteen toimintoprofiilissa. Toimintoa ei voi suorittaa, kun tilaukset luodaan Real-time Service -palvelun avulla tai kun tilauksia jatketaan tai muokataan.
 

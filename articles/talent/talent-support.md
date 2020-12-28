@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
 ms.openlocfilehash: 33e0183109bc0bf8c825e3d5a51dcc36dbf58fc1
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006098"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461028"
 ---
 # <a name="get-support-for-microsoft-dynamics-365-talent"></a>Microsoft Dynamics 365 Talentin tuki
 
@@ -33,7 +33,7 @@ Voit saada Talent-tukea käyttämällä seuraavan taulukon resursseja. Nämä re
 | Tehtävä | Lisätietoja |
 |------|------------------|
 | Kysy yhteisöltä. | Siirry [Dynamics 365 Talent Community](https://community.dynamics.com/365/talent) -sivulle ja pyydä apua kysymyksiisi. Voit etsiä vastauksia kirjoittamalla kysymyksen **Minulla on kysymys**-kohdan viereiseen hakukenttään. Jos haluat esittää kysymyksen, valitse **Kysy kysymys**. |
-| Pilvipohjaisen tukityökalun käyttäminen. | Siirry [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) -sivulla elinkaaripalvelut -kohdassa projektiin ja valitse**Tuki**-ruutu. Voit täältä lähettää ongelmia kahdella tavalla:<ul><li>Valitse **Aktiiviset ongelmat** -välilehdestä kysymys, jonka haluat lähettää, ja valitse sitten **Lähetä Microsoftille**.</li><li>Lähetä uusi ongelma valitsemalla **Lähetetty Microsoftille** -välilehdessä **Lähetä uusi tapaus**.</li></ul> |
+| Pilvipohjaisen tukityökalun käyttäminen. | Siirry [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) -sivulla elinkaaripalvelut -kohdassa projektiin ja valitse **Tuki**-ruutu. Voit täältä lähettää ongelmia kahdella tavalla:<ul><li>Valitse **Aktiiviset ongelmat** -välilehdestä kysymys, jonka haluat lähettää, ja valitse sitten **Lähetä Microsoftille**.</li><li>Lähetä uusi ongelma valitsemalla **Lähetetty Microsoftille** -välilehdessä **Lähetä uusi tapaus**.</li></ul> |
 | Hanki sovelluksen tuki. | Valitse **Ohje** -painike (**?**) sivun oikeasta yläkulmasta. Valitse **Ilmoita ongelmasta**. Ongelmat raportoidaan LCS:n **Aktiiviset ongelmat** -välilehdessä, jossa järjestelmänvalvoja voi määrittää, tarjotaanko talon sisäinen tuki vai lähetetäänkö ongelmat Microsoftille. (Jos sinulla on erillinen versio Onboardista, ongelmat lähetetään suoraan Microsoftille.) |
 | Vastauksia kysymyksiin Talent-lisensoinnista. | Ota yhteyttä kumppaniin tai Microsoftin myyntiedustajan. |
 | Uusien ominaisuuksien ja toimintojen pyytäminen Talentissa. | Valitse Talent-sivulta **Ohje**-painike (**?**) ja valitse sitten **Ideat**. [Dynamics 365 -sovellusideat](https://experience.dynamics.com/ideas/) -sovelluksessa voit myös tarkastella, etsiä ja äänestää aiemmin luotuja tai lisätä uusia ideoita. |

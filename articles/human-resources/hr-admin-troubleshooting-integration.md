@@ -17,16 +17,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a3389d6ce5f1985f7515e777a2bafae4eae5f0c
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6a94c1269cd81ecdcbdff018ec4a8f90be36f0f3
+ms.sourcegitcommit: 6aa8d6aa8276611967fb6fab44715950de49f6af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431104"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4589060"
 ---
 # <a name="integration-with-finance-faq"></a>Financeen integroinnin usein kysytyt kysymykset
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Tässä ohjeaiheessa vastaan yleisiin kysymyksiin, jotka koskevat Dynamics 365 Human Resourcesista synkronoitavia tietoja, kun Talent integroidaan Dynamics 365 Financein kanssa.
+
+## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Voinko muokata Dynamics 365 Talent -sovelluksen käyttäjää Power Appsissa?
+
+Nro Jos muokkaat Talentin sovelluskäyttäjää, Human Resourcesin ja Common Data Servicen välinen integrointi voi epäonnistua. Seuraavassa taulukossa näkyvät Talentin sovelluskäyttäjän oletusasetukset.
+
+| Koko nimi | Sovelluksen tunnus | Azure AD -objektin tunnus | Sovelluksen tunnuksen URI |
+| --- | --- | --- | --- |
+| Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
+
+![Talentin sovelluskäyttäjän oletusasetukset](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkronoidaanko kaikki tiedot vai vain tietyt tietoyksiköt?
 

@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814717"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461089"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Työntekijöiden perehdyttämisen ja tehtävien tilan näyttäminen
 
@@ -33,12 +33,12 @@ Microsoft Dynamics 365 Talent: Onboardin avulla voit tarkastella, miten uudet ty
 
 1. Valitse vasemmassa valikossa **Oppaat**. Näet yleiskatsauksen kaikissa lähettämissäsi perehdytysoppaissa tapahtuneesta etenemisestä.
 
-    ![[Perehdytysoppaiden tilan näyttäminen](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Perehdytysoppaiden tilan tarkasteleminen](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Voit porautua tietoihin valitsemalla tarkasteltavan oppaan.
 3. Näet uuden työntekijät suorittavat tehtävät valitsemalla **Tehtävät**.
 
-    ![[Uuden työntekijän suorittamien tehtävien näyttäminen](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Uuden työntekijän suorittamien tehtävien tarkasteleminen](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Itselle määritettyjen perehdytystehtävien tarkasteleminen
 

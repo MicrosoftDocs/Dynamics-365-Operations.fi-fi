@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897669"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529135"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (27. helmikuuta 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -75,9 +77,9 @@ Tämä julkaisu sisältää muita vähäisiä ohjelmavirhekorjauksia.
 
 Monissa yrityksissä etuuspäälliköillä on ehkä vain tiettyjen kompensaatiotietueiden käyttöoikeus. Ne voivat olla johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta henkilöstöhallinto voi hallita ja ylläpitää organisaatio erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Kiinteille ja muuttuville suunnitelmille määritettävät käyttöoikeusroolit määrittävät kyseisten suunnitelmien ja niihin liittyvien työntekijätietojen (kuten palkkatietojen ja bonustietueiden) käyttöoikeuden. Vain roolit, joilla on määritetty käyttöoikeus, voivat käsitellä kyseisten työntekijöiden kompensaatiota.
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Ympäristön päivitys 24 Finance and Operationsille
 
-Lisätietoja Microsoft Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 24:stä (maaliskuu 2019) on kohdassa [Finance and Operations -käyttöympäristöpäivityksen 24:n esikatselutoiminnot (maaliskuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Lisätietoja Microsoft Dynamics 365 Finance and Operationsin Platform update 24 -päivityksestä (maaliskuu 2019) on kohdassa [Finance and Operationsin Platform update 24 -päivityksen esiversio-ominaisuudet (maaliskuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Työntekijän kiinteään kompensaation antaminen tulevien toimimääritysten käyttöön
 
@@ -102,7 +104,7 @@ Voit päivittää aiemmin luodun mallin seuraavasti.
 
         [![Toimet perustoimeen -määritys](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Toimet toimeen -tiedot:** Lisää uusi määritys **toimien** Common Data Service -yksiköstä **toimen tietojen** Finance and Operations -yksikköön. Siirrä se järjestyksen kohtaan 8.
+    - **Toimet toimen tietoihin:** Lisää uusi määritys **toimien** Common Data Service -yksiköstä **toimen tietojen** Finance and Operations -yksikköön. Siirrä se järjestyksen kohtaan 8.
 
         [![Toimet toimen tietoihin -määritys](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
@@ -110,7 +112,7 @@ Voit päivittää aiemmin luodun mallin seuraavasti.
 
         [![Toimet toimen kestoihin -määritys](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Toimet positiohierarkioihin:** Lisää uusi määritys **toimien** Common Data Service -yksiköstä **positiohierarkioiden** Finance and Operations -yksikköön. Valitse **Lisäkysely**, jolla lisäkysely saadaan käyttöön projektissa.
+    - **Toimet toimen hierarkioihin:** Lisää uusi määritys **toimien** Common Data Service -yksiköstä **toimen hierarkioiden** Finance and Operations -yksikköön. Valitse **Lisäkysely**, jolla lisäkysely saadaan käyttöön projektissa.
 
        [![Lisäkyselypainike](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Voit päivittää aiemmin luodun mallin seuraavasti.
         [![Lisää ehtosarake -komento](./media/Add-column.png)](./media/Add-column.png)
 
     6. Anna **Lisää ehtosarake** -valintaikkunassa **HIERARCHYTYPENAME** uuden sarakkeen nimeksi.
-    7. Valitse ehdon **Jos**-osassa jokin kenttä, käytä suhteena **yhtä suuri kuin** ja anna jokin arvo. Määritä ehdon ***Sitten**- ja **Muuten**-osissa oletusarvo. Anna tässä tapauksessa kummassakin osassa **Rivi**.
+    7. Valitse ehdon **Jos**-osassa jokin kenttä, käytä suhteena **yhtä suuri kuin** ja anna jokin arvo. Määritä ehdon **Sitten**- ja **Muussa tapauksessa** -osissa oletusarvo. Anna tässä tapauksessa kummassakin osassa **Rivi**.
 
         [![Lisää ehtosarake -valintaikkuna](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

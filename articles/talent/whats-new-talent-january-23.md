@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: f97462f088fc1a3cb94f2a34204fc09f1cd66fb0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899125"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4460991"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-january-23-2019"></a>Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (23. tammikuuta 2019)
 
@@ -51,5 +51,5 @@ Kun toimen työtä muutetaan, työkentät palautuvat toimeen. Avautuva ilmoitus 
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Koeaikaa ja kalenteria ei näytetä tulevaisuudessa palkatuille työntekijöille.
 Tällä muutoksella **Koeaika**- ja **Kalenteri**-kentät on lisätty **Muutosten hallinta** -sivulla, mikä mahdollistaa tietojen antamisen tuleville ja entisille työntekijöille.
 
-### <a name="platform-update-23-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 23
-Finance and Operationsin käyttöympäristöpäivitys 23 sisältää pieniä ohjelmavirhekorjauksia. Lisätietoja on kohdassa [Dynamics 365 Finance and Operations platform update 23:n uudet tai muuttuneet ominaisuudet (tammikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### <a name="platform-update-23-for-finance-and-operations"></a>Ympäristön päivitys 23 Finance and Operationsille
+Finance and Operationsin Platform update 23 -päivitykseen on sisällytetty vähäisiä ohjelmakorjauksia. Lisätietoja on kohdassa [Dynamics 365 Finance and Operations platform update 23:n uudet tai muuttuneet ominaisuudet (tammikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

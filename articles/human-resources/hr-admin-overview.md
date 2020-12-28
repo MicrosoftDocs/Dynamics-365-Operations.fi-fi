@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443415"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527858"
 ---
 # <a name="overview"></a>Yleiskatsaus
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynamics 365 Human Resourcesia ja tehdä sille vianmäärityksiä.
 
@@ -42,14 +44,14 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
   - [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
   - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
   - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
-  - [Luo toistuvan tietojen viennin sovellus](hr-admin-integration-recurring-data-export.md)
-  - Luo integraatio Officen kanssa
-    - [Office-integraation opetusohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+  - [Toistuvan tietojen viennin sovelluksen luominen](hr-admin-integration-recurring-data-export.md)
+  - Office-integraatio
+    - [Office-integraation opasohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Yksikkötietojen päivittäminen Excelissä](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Avaa Excelissä -kokemusten luominen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Office-integraation vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
-- [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+- [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
 - [Tietokannan lokikirjauksen määrittäminen ja hallinta](hr-admin-database-logging.md)
 

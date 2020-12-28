@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d27104a08cdc899f12942d80e693f3495d90a6ec
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040073"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527407"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 26. syyskuuta 2020
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -39,7 +41,7 @@ Tämä julkaisu sisältää seuraavat uudet ominaisuudet ja ohjelmakorjaukset. M
 
 Seuraava ominaisuus on yleisesti saatavana tässä julkaisussa:
 
-- **Platform update 10.0.13 on nyt saatavana** : lisätietoja päivityksestä on kohdassa [Finance and Operations -sovellusten version 10.0.13 Platform update -päivitykset (lokakuu 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+- **Platform update 10.0.13 on nyt saatavana**: lisätietoja päivityksestä on kohdassa [Finance and Operations -sovellusten version 10.0.13 Platform update -päivitykset (lokakuu 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -54,9 +56,9 @@ Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 | 474887 | Lomapyynnön työnimike avaa väärän linkin manuaalisessa päätöksessä | Jos työnkulkumääritys sisältää manuaalisen päätöksen, siirtyminen lomapyyntöön **Minulle määritetyt työnimikkeet** -kohdasta avaa väärän linkin, jolloin avautuu joko tyhjä lomake tai nykyisen käyttäjän luoma lomapyyntö eikä manuaalista päätöstä varten määritetty pyyntö. |
 | 474962 | Loma- ja poissaoloparametrien entiteetissä on kenttiä, jossa on moniselitteisiä selitteinä | Loma- ja poissaoloparametrien entiteetin selitteet on päivitetty entistä selkeämmiksi. |
 | 481401 | Jaksotuksen käsittely jumiutuu, kun jaksotuksen päivämääräperuste on jaksotuksen alkamispäivän jälkeen kuun lopussa. | Jaksotuksen käsittely on päivitetty siten, että siinä ei ole viivettä, kun jaksotuksen päivämääräperuste on jaksotuksen alkamispäivän jälkeen kuun lopussa |
-| 447167 | Vanhentuvien tietueiden luettelossa on ei-aktiivisia työntekijöitä | **Henkilöstöhallinto** -kohdan **Vanhentuvat tietueet** -välilehti sisälsi ei-aktiivisia työntekijöitä. Nyt se sisältää vain aktiiviset työntekijät. |
+| 447167 | Vanhentuvien tietueiden luettelossa on ei-aktiivisia työntekijöitä | **Henkilöstöhallinto**-kohdan **Vanhentuvat tietueet** -välilehti sisälsi ei-aktiivisia työntekijöitä. Nyt se sisältää vain aktiiviset työntekijät. |
 | 486840 | **Minulle määritetyt työnimikkeet** -kohdasta avautuu väärä poissaolopyyntö. | Poissaolopyynnön valitseminen **Minulle määritetyt työnimikkeet** -kohdassa ei enää avaa uusinta nykyiselle käyttäjälle määritettyä poissaolopyyntöä. |
-| 506868 | Common Data Servicen **Otsikko** -kenttä ei ole määritetty **Tehtävänimike** -entiteetille | **Työ** - ja **Tehtävänimike** -entiteettien **Otsikko** -kenttä näkyi määrittämättömänä. **Otsikko** -kenttä näkyy nyt. |
+| 506868 | Common Data Servicen **Otsikko**-kenttä ei ole määritetty **Tehtävänimike**-entiteetille | **Työ**- ja **Tehtävänimike**-entiteettien **Otsikko**-kenttä näkyi määrittämättömänä. **Otsikko**-kenttä näkyy nyt. |
 | 430359 | Käytöstäpoiston tarkistusluettelon tehtäviä ei voi käyttää määritetyillä esimiehen ja työntekijän rooleilla | Työntekijät, joiden työsuhteen päättymispäivä on tulevaisuudessa, eivät voineet käyttää tarkistusluettelon tehtäviä, jos heillä oli vain työntekijän tai esimiehen rooli. Nyt käyttäjät, joilla on vain työntekijän tai esimiehen rooli, voivat käyttää käytöstäpoistotehtäviä, joiden työsuhteen päättymispäivä on tulevaisuudessa. |
 | 458102 | Uusi työntekijä ei näy luotaessa **Työntekijän palkanlaskentatiedot** -entiteetissä. | Uudet työntekijät sisältyvät työntekijän palkanlaskenta tietojen entiteettiin ilman, että työntekijän palkanlaskentatiedot olisi avattava ennen entiteetin vientiä. |
 

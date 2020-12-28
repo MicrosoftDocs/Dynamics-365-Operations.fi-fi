@@ -1,6 +1,6 @@
 ---
 title: Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
-description: Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin vuokraaja otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
+description: Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin Dynamics 365 Commerce -sivusto otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533272"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517279"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin sivusto otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
+Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin Dynamics 365 Commerce -sivusto otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Microsoft Dynamics Lifecycle Services (LCS) on pilvipohjainen yhteinen työtila, jossa kumppanit ja asiakkaat voivat hallita projekteja ja ympäristöjä, katsella uusimpia tietoja Microsoft Dynamics -tuotteista ja -toiminnoista sekä luoda, seurata ja selata tukitapauksia. Sähköisen kaupankäynnin hallintatoiminnot integroidaan LCS:n kanssa.
 
@@ -82,9 +82,9 @@ Kun olet kerännyt tarvittavat tiedot, alusta sähköinen kaupankäynti seuraava
     
 Kun sähköinen kaupankäynti alustetaan LCS:stä, järjestelmä valmistelee useita osia, jotka ovat pakollisia sähköisessä kaupankäynnissä, ja liittää ne ympäristöön. Kun valmistelu on tehty, **Sähköinen kaupankäynti** -välilehti **Retail-hallinta**-sivulla päivitetään vastaamaan valmistelua. Sivulla näkyvät viimeisimmät mukautuksen käyttöönotot ja muiden käynnissä olevien käyttöönottojen tila. Se sisältää myös linkit sähköisen kaupankäynnin sivustoon ja sähköisen kaupankäynnin sivustomuodostinsivulle, jolla sivut luodaan.
 
-## <a name="access-site-builder"></a>Sivustonmuodostimen käyttö
+## <a name="access-commerce-site-builder"></a>Commerce-sivuston muodostimen käyttö
 
-Kun haluat käyttää sivustonmuodostinta, siirry **Sähköinen kaupankäynti**-välilehteen LCS:n **Vähittäismyynnin hallinta** -sivu ja valitse **Sähköisen kaupankäynnin hallintatyökalu** -linkki. Sivustonmuodostimen aloitussivulla näkyy vuokraajatason näkymä. Tällä sivulla voit:
+Kun haluat käyttää Commerce-sivuston muodostinta, siirry **Sähköinen kaupankäynti**-välilehteen LCS:n **Vähittäismyynnin hallinta** -sivu ja valitse **Sähköisen kaupankäynnin hallintatyökalu** -linkki. Sivustonmuodostimen aloitussivulla näkyy vuokraajatason näkymä. Tällä sivulla voit:
 
 - Muokata vuokraajatason asetuksia.
 - Siirry mille tahansa luomallesi sivustolle katseluoikeuksilla. 
@@ -97,11 +97,11 @@ Kun haluat käyttää sivustonmuodostinta, siirry **Sähköinen kaupankäynti**-
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
-[Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+[Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+[URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
 
 [B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
 

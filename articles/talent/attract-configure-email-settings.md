@@ -20,11 +20,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: e641e3f0d1873d91be1a1dc9bc22eb734a2b21d5
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124724"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461013"
 ---
 # <a name="configure-email-settings-in-attract"></a>Sähköpostiasetusten määrittäminen Attractissa
 
@@ -34,7 +34,7 @@ Brändisi kasvattaa luottamusta ja auttaa luomaan suhteen ehdokkaisiin, ennen ku
 
 Attractin avulla voi tehdä seuraavat toimet:
 
-- Sähköpostiasetusten määrittäminen käyttämään yrityksen Microsoft Exchange -sähköpostipalvelun tiliä. Tällä tavoin hakijat tietävät, että heidän sähköpostinsa ovat yrityksen lähettämiä. Voit määrittää asetukset esimerkiksi siten, että hakijat saavat sähköpostia osoitteesta `recruiting@contoso.com` eikä `contoso@microsoft.com`.
+- Määritä sähköpostiosoitteet niin, että yrityksen Microsoft Exchange -sähköpostipalvelutili on käytössä. Tällä tavoin hakijat tietävät, että heidän sähköpostinsa ovat yrityksen lähettämiä. Voit määrittää asetukset esimerkiksi siten, että hakijat saavat sähköpostia osoitteesta `recruiting@contoso.com` eikä `contoso@microsoft.com`.
 - Yhtenäisen brändin luominen kaikelle sähköpostiviestinnälle määrittämällä yleinen ylä- ja alatunniste kaikkiin sähköpostimalleihin. 
 
 > [!NOTE]

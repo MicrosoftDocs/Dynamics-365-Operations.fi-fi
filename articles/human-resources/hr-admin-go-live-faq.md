@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64a85840be328702a06779390fe383fd1896fd04
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011414"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668942"
 ---
 # <a name="go-live-faq"></a>Käyttöönoton usein kysytyt kysymykset 
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä Dynamics 365 Human Resourcesin toteutusprojektin käyttöönotosta 
 
@@ -76,7 +78,7 @@ Tietokannat suojataan automaattisilla varmuuskopioilla, jotka tehdään seuraava
 | Differentiaalisen tietokannan varmuuskopio | 12–24 tunnin välein |
 | Tapahtumalokin varmuuskopio | 5–10 minuutin välein |
 
-Microsoftilla on riittävästi varmuuskopioita, jotta tiettyyn ajankohtaan palauttaminen onnistuu seitsemän päivän ajalta. 
+Microsoft säilyttää riittävät varmuuskopiot, jotta tiettyyn ajankohtaan palauttaminen onnistuu 14 päivän ajalta. 
 
 Lisätietoja on kohdassa  [Tietoja SQL-tietokannan automaattisista varmuuskopioinneista](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

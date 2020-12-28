@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0b14e0c662af74464768b66c1c86d03d2944014
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976013"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517117"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä
 
@@ -114,15 +114,15 @@ Uusi Azure AD B2C -vuokraaja näkyy nyt luettelossa **Hallitse B2C-sovelluksia**
 
 [Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
-[Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
+[Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
-[Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+[Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+[URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
 
 [B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
 

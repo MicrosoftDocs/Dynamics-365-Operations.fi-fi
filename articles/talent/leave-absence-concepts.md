@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 03e2557e29194f17a9a586470ced5b352408b07c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898639"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461071"
 ---
 # <a name="leave-and-absence-concepts"></a>Loman ja poissaolon käsitteet
 
@@ -260,7 +260,7 @@ Ennustettu saldo (30) = kertynyt määrä (10 × 1) + nykyinen saldo (40) – si
 
 **Tulokset**
 
-| Työntekijä             | Työkuukaudet | Rekisteröintipäivä | Aloituspäivämäärä | Jaksotussumma | Kertymän käsittely | Tase |
+| Työntekijä            | Työkuukaudet | Rekisteröintipäivä | Aloituspäivämäärä | Jaksotussumma | Kertymän käsittely | Tase |
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3,00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1,00           | 9/1/2018        | 2,53    |
@@ -275,7 +275,7 @@ Ennustettu saldo (30) = kertynyt määrä (10 × 1) + nykyinen saldo (40) – si
 
 **Tulokset**
 
-| Työntekijä             | Työkuukaudet | Rekisteröintipäivä | Aloituspäivämäärä | Jaksotussumma | Kertymän käsittely | Tase |
+| Työntekijä            | Työkuukaudet | Rekisteröintipäivä | Aloituspäivämäärä | Jaksotussumma | Kertymän käsittely | Tase |
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3,00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1,00           | 9/1/2018        | 3,00    |
@@ -290,7 +290,7 @@ Ennustettu saldo (30) = kertynyt määrä (10 × 1) + nykyinen saldo (40) – si
 
 **Tulokset**
 
-| Työntekijä             | Työkuukaudet | Rekisteröintipäivä | Aloituspäivämäärä | Jaksotussumma | Kertymän käsittely | Tase |
+| Työntekijä            | Työkuukaudet | Rekisteröintipäivä | Aloituspäivämäärä | Jaksotussumma | Kertymän käsittely | Tase |
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3,00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1,00           | 9/1/2018        | 2,00    |

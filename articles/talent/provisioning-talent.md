@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 5bcdb50475fb341a538211cb122eb7c13067d86a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124701"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527215"
 ---
 # <a name="provision-talent"></a>Talentin valmistelu
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Dynamics 365 Talentin uuden tuotantoympäristön valmisteluprosessista. Ohjeaiheessa oletetaan, että olet ostanut Talent-sovelluksen pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Talent-palvelusopimuksen, etkä pysty suorittamaan tämän ohjeaiheen vaiheita, ota yhteys tukeen.
 
@@ -86,7 +88,7 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Talent 
 
 2. Yksittäinen Talent-ympäristö yhdistetään yksittäiseen Power Apps-ympäristöön.
 
-3. Power Apps-ympäristö sisältää Talent-sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Common Data Service -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Talent-ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto**ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
+3. Power Apps-ympäristö sisältää Talent-sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Common Data Service -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Talent-ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto** ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
 
 4. Tietojen integrointi- ja testausstrategiat kannattaa ottaa huomioon, esimerkiksi Sandbox, hyväksyntätestaus ja tuotanto. On suositeltavaa pohtia, mitä vaikutuksia käyttöönotolla on, koska myöhemmin on hankala muuttaa Power Apps-ympäristöön yhdistettyä Talent-ympäristöä.
 
@@ -96,7 +98,7 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Talent 
    
     - **Kokeiluympäristöt** – Näitä ympäristöjä luotaessa määritetään voimassaolon päättymispäivämäärä. Tämän jälkeen ympäristö vanhenee ja kaikki ympäristön Talent-esiintymät poistetaan automaattisesti.
    
-    - **Alueet, joita ei tueta** – Tällä hetkellä Talentia tuetaan vain seuraavilla alueilla: Yhdysvallat, Eurooppa, Iso-Britannia, Australia, Kanada ja Aasia.
+    - **Alueet, joita ei tueta** – Tällä hetkellä Talentia tuetaan vain seuraavilla alueilla: Yhdysvallat, Eurooppa, Yhdistynyt kuningaskunta, Australia, Kanada ja Aasia.
   
 6. Kun olet määrittänyt oikean ympäristön, voit jatkaa valmisteluprosessia. 
  

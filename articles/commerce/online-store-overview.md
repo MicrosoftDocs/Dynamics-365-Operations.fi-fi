@@ -1,9 +1,9 @@
 ---
-title: Verkkokaupan yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään verkkokauppoja Dynamics 365 Commercessa.
+title: Sähköisen kaupankäynnin sivuston yleiskuvaus
+description: Tässä aiheessa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,24 +19,92 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: da73ca07426aa072b8dfd33cd63d3138930000ec
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
+ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984295"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4512914"
 ---
-# <a name="online-store-overview"></a>Verkkokaupan yleiskatsaus
+# <a name="e-commerce-site-overview"></a>Sähköisen kaupankäynnin sivuston yleiskuvaus
+
 [!include [banner](includes/banner.md)]
 
+Tässä aiheessa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa. Se sisältää tietoja siitä, miten sähköisen kaupan verkkokaupat alustetaan ja hallitaan Dynamics 365 Commercessa. Se tarjoaa myös linkkejä lisätietoihin verkkokaupoista ja tietoja sähköisen kaupankäynnin sivuston asentamisesta määrittämisestä. Vaikka tämä ohje aihe kattaa monet perusasiat, se ei kata kaikkea, mikä on tarpeen sähköisen kaupankäynnin tuotantosivuston määrittämistä varten. Edistyneitä aiheita on Dynamics 365 Commercen dokumentaatiossa.
 
-Tässä ohjeaiheessa esitellään verkkokaupan käsite ja kerrotaan, miten Microsoft Dynamics 365 Commerce käyttää verkkokauppoja. Se tarjoaa myös linkin lisätietoihin verkkokaupoista ja tietoja verkkokaupan määrittämisestä.
+## <a name="online-store-channel"></a>Verkkokauppakanava
 
-Ennen kuin voit rakentaa uuden sivuston Dynamics 365 Commerce -sovellukseen on perustettava vähintään yksi verkkokauppa. Dynamics 365 Commercessa voit käyttää online-säilöä tuotteiden, hinnoittelun, kielten, maksutapojen, toimitustapojen, toteutuspaikkojen ja muiden asiakkaiden käytettävissä olevien verkkokokemuksen osa-alueiden määrittämiseksi.
+Ennen kuin voit rakentaa uuden sivuston Dynamics 365 Commerce -sovellukseen on perustettava vähintään yksi verkkokauppakanava. Lisätietoja on ohjeaiheessa [online-kanavan määrittäminen](channel-setup-online.md). 
 
-Vain yksi verkkokauppa on määritettävä, ennen kuin voit aloittaa Dynamics 365 Commercen käytön. Yksittäinen Dynamics 365 Commerce -sivusto voi kuitenkin tarjota verkkokokemusta useissa verkkokaupoissa. Jos esimerkiksi useita verkkokauppoja on määritetty tukemaan eri maantieteellisiä alueita, kunkin myymälän määrittämien yksilöllisten kokemusten tarjoamiseen voidaan käyttää yhtä sivujoukkoa. Lisätietoja sivuston määrittämisestä tukemaan useita verkkokauppoja on kohdassa [Online-sivuston liittäminen kanavaan](associate-site-online-store.md).
+Dynamics 365 Commercessa voit käyttää verkkokauppakanavaa tuotteiden, hinnoittelun, kielten, maksutapojen, toimitustapojen, toteutuspaikkojen ja muiden asiakkaiden käytettävissä olevien verkkokokemuksen osa-alueiden määrittämiseksi.
+
+Vain yksi verkkokauppakanava on määritettävä, ennen kuin voit aloittaa Dynamics 365 Commercen käytön. Yksittäinen sähköisen kaupankäynnin sivusto voi kuitenkin tarjota verkkokokemusta useissa verkkokaupoissa. Jos esimerkiksi useita verkkokauppoja on määritetty tukemaan eri maantieteellisiä alueita, kunkin myymälän määrittämien yksilöllisten kokemusten tarjoamiseen voidaan käyttää yhtä sähköisen kaupankäynnin sivujoukkoa. Lisätietoja sivuston määrittämisestä tukemaan useita verkkokauppoja on kohdassa [Online-sivuston liittäminen kanavaan](associate-site-online-store.md).
 
 Kun verkkokauppa on määritetty, se voidaan liittää Dynamics 365 Commerce -sivustoon, joka toimii verkkokaupalla. Lisätietoja verkkokaupoista ja niiden määrittämisestä on kohdassa [Verkkokauppojen määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+
+## <a name="deploy-a-new-e-commerce-tenant"></a>Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
+
+Sähköisen kaupankäynnin sivuston alustuksen aikana sinulta kysytään toimialueen nimeä. Lisätietoja Commerce-toimialueista on kohdassa [Toimialueen nimen määrittäminen](configure-your-domain-name.md) ja [Toimialueet Dynamics 365 Commercessa](domains-commerce.md). Jos haluat ottaa käyttöön uuden sähköisen kaupankäynnin vuokraajan käyttämällä [Microsoft Dynamics Lifecycle Servicesiä (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), noudata kohdan [Uuden sähköisen kaupan vuokraajan käyttöönotto](deploy-ecommerce-site.md) ohjeita. Kun sähköisen kaupankäynnin vuokraaja on määritetty LCS:iin, se tarjoaa linkin Commercen sivuston muodostimeen. Tämän jälkeen voit käyttää Commercen sivuston muodostinta sähköisen kaupankäynnin sivustojen alustamiseen ja konfiguroimiseen.
+
+## <a name="initialize-your-e-commerce-site"></a>Sähköisen kaupankäynnin sivuston alustaminen
+
+Kun käynnistät Commerce sivuston muodostimen LCS:ista, **Sivustot**-sivu tulee näkyviin. Tämä sivu sisältää kaksi esimääritettyä sivustoja, **oletus** ja **fabrikam**, kuten seuraavassa kuvassa on esitetty.
+
+![Sivustot-sivu Commercen sivuston muodostimessa](media/e-commerce-site-01.png)
+
+Kun valitset jommankumman näistä sivustoista, sinua kehotetaan valitsemaan toimialueen nimi, oletusverkkokauppakanava, tuettu kieli valitulle kanavalle ja polku. Jos käytössä on vain yksi kanava, voit jättää polun tyhjäksi. Lisää verkkokauppakanavia tai kieliä voi määrittää myöhemmin Commercen sivuston muodostimessa. Jokainen lisäkanava tai -kieli edellyttää yksilöllistä polkua. Sinulla on esimerkiksi kaksi verkkokanavaa, jotka liittyvät yhteen sivustoon, ja sivuston toimilueen nimi on `www.fabrikam.com`. Tässä tapauksessa yhden kanavan polku voi olla oletusarvo, jolla ei ole polkua ( `https://www.fabrikam.com`), ja toinen kanava voidaan määrittää uudelle polulle, kuten **site2**, jolla on URL-osoite `https://www.fabrikam.com/site2`. Seuraavassa kuvassa näkyy esimerkki sivuston alustuksen valintaikkunasta Commercen sivuston muodostimessa.
+
+![Sivuston alustaminen -valintaikkuna Commercen sivuston muodostimessa](media/e-commerce-site-02.png)
+
+**Sivustot**-sivulla on myös **Uusi sivusto** -painike. Valintaikkuna, joka tulee näkyviin, kun valitset tämän painikkeen, muistuttaa sivuston alustaminen -valinta ikkunaa, mutta sen avulla luodaan uusi sivusto. Uudet sivustot ovat tyhjiä. Ne eivät sisällä samoja oletusmalleja, katkelmia, sivuja ja kuvia, jotka ovat **oletus**- ja **fabrikam**-sivustojen mukana. Voit kuitenkin halutessasi avata tukipyynnön ja pyytää, että oletussisällön kopio lisätään uuteen tyhjään sivustoon. Katso lisätietoja kohdasta [Luo sähköisen kaupankäynnin sivusto](create-ecommerce-site.md).
+
+Kun uusi sivusto on alustettu, Commercen sivuston muodostimen **Aloitus**-sivu tulee näkyviin. Tämä sivu sisältää linkkejä yleisiin toimiin ja ohjesisältöön, kuten seuraavassa kuvassa on esitetty.
+
+![Commercen sivuston muodostimen Aloitus-sivun linkit](media/e-commerce-site-03.png)
+
+## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Verkkokauppakanavien muokkaaminen tai verkkokauppakanavien lisääminen sähköisen kaupankäynnin sivustoon
+
+Kun olet luonut sähköisen kaupankäynnin sivuston, voit vaihtaa kanavan, johon se liittyy, noudattamalla ohjeita kohdassa [Sähköisen kaupankäynnin sivuston liittäminen online-kanavaan](associate-site-online-store.md). Seuraavan kuvan esimerkissä näkyy, miten kanavan toimintayksikön numeroa (OUN) voidaan muuttaa **Kanavat**-sivulla (**Sivuston asetukset \> Kanavat**). Kun olet tehnyt muutoksen, muista valita **Tallenna ja julkaise**. Näin varmistat, että muutos julkaistaan.
+
+![Kanavat-sivu Commercen sivuston muodostimessa](media/e-commerce-site-04.png)
+
+Voit lisätä uusia kanavia valitsemalla **Lisää kanava**. Jos haluat lisätä kanavalle uusia kieliä, valitse kanava ja valitse sitten **Lisää kielialue** näkyviin tulevassa Kanava-valintaikkunassa. Ennen kuin kielialaueita voi näkyä valintaikkunassa, ne pitää esimäärittää Internet-kauppakanavalle Commerce Headquarters -sovelluksessa.
+
+![Kanava-valintaikkuna Commercen sivuston muodostimessa](media/e-commerce-site-05.png)
+
+## <a name="set-up-an-azure-b2c-tenant"></a>Azure B2C -vuokraajan määrittäminen
+
+Dynamics 365 Commerce käyttää Azure Active Directory (Azure AD) B2C -ratkaisua käyttäjän tunnistetietojen ja todennuksen työnkulkujen tukemisessa. Lisätietoja Azure B2C -vuokraajan määrittämisestä on ohjeaiheissa [B2C-vuokraajan määrittäminen Commercessa](set-up-b2c-tenant.md), [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisille](custom-pages-user-logins.md) sekä [Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-b2c-tenants.md).
+
+## <a name="overview-of-the-default-site-pages"></a>Oletussivuston sivujen yleiskatsaus
+
+**Oletus**- ja **fabrikam**-sivustoissa on valmiiksi määritettyjä malleja, katkelmia ja sivuja, joiden avulla pääset alkuun. Lisätietoja on seuraavissa aiheissa:
+
+- [Aloitussivun yleiskatsaus](quick-tour-home-page.md)
+- [Tuotetietosivun yleiskatsaus](quick-tour-pdp.md)
+- [Ostoskorin ja maksusivun yleiskatsaus](quick-tour-cart-checkout.md)
+- [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
+
+## <a name="manage-site-settings"></a>Sivuston asetusten hallinta
+
+Lisätietoja asetusten hallinnasta on seuraavissa ohjeaiheissa:
+
+- [Sähköisen kaupankäynnin käyttäjien ja roolien hallinta](manage-ecommerce-users-roles.md)
+- [Sivuston hakukoneoptimointia (SEO) koskevia tietoja](/search-engine-optimization-considerations.md)
+- [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+- [Sivuston teeman valitseminen](select-site-theme.md)
+
+## <a name="manage-site-content"></a>Sivuston sisällön hallinta
+
+Lisätietoja sisällön hallinnasta on seuraavissa ohjeaiheissa:
+
+- [Sivumallisanasto](page-elements-overview.md)
+- [Asiakirjan tilat ja elinkaari](document-states-overview.md)
+- [Mallit ja asettelu](templates-layouts-overview.md)
+- [Katkelmien käyttäminen](work-with-fragments.md)
+- [Moduulien käyttäminen](work-with-modules.md)
+- [Digitaalisten resurssien hallinnan yleiskatsaus](dam-overview.md)
+- [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

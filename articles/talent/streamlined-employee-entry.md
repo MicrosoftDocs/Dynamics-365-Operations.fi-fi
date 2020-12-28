@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b73b420c2eb75077814fbfeb6cd17404c7efc11e
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915198"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4461104"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Yksinkertaistettu työntekijöiden lisääminen ja navigointi
 
@@ -68,14 +68,14 @@ Työntekijäsivun toimintoruutu on järjestetty uudelleen ja siinä on vähemmä
 
 - Työ
 - Henkilö
-- Poistu
+- Loma
 - Kompensaatio
 - Edut
 - Yhteensopivuus
 
-Lisäksi työntekijän pääsivulla on uusi **Linkit**-välilehti, jossa käyttäjät voivat keskitetysti käyttää kaikkia työntekijään liittyviä tietoja.
+Lisäksi työntekijän pääsivun uuden **Linkit**-välilehden avulla käyttäjät voivat käyttää keskitetysti työntekijän kaikkia liittyviä tietoja.
 
-Näiden muutosten vuoksi tiedot näkyvät nyt eri paikassa kuin aiemmin. Esimerkiksi aiemmin työntekijälomakkeessa näkyneet palkanlaskentatiedot näkyvät nyt toimintoruudussa kohdassa**Kompensaatio > Palkanlaskenta**, ja **Henkilökohtaiset tiedot** -välilehdessä on nyt **Lisätietoja**-painike, jolla voi piilottaa harvoin käytetyt kentät.
+Näiden muutosten vuoksi tiedot näkyvät nyt eri paikassa kuin aiemmin. Esimerkiksi aiemmin työntekijälomakkeessa näkyneet palkanlaskentatiedot näkyvät nyt toimintoruudussa kohdassa **Kompensaatio > Palkanlaskenta**, ja **Henkilökohtaiset tiedot** -välilehdessä on nyt **Lisätietoja**-painike, jolla voi piilottaa harvoin käytetyt kentät.
 
 [![Banneri](./media/Banner.png)](./media/Banner.png)
 

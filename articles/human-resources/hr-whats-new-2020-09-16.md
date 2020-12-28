@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad8513477c7f9243fa3ee5d99569c048ffada97d
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823719"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (16. syyskuuta 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3557. Joidenkin toimintojen vieressä suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
 
@@ -37,7 +39,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muu
 
 - Jos määrität kohdan **Rajoita työntekijätietojen käyttöoikeuksien** arvoksi kyllä **Jaetut henkilöstöhallinnon parametrit** -kohdan kohdassa **Lisäkäyttöoikeudet**, lomakkeissa näkyvät nyt vain sopivat työntekijät (393384).
 
-- Uusia kalenterinluontiasetuksia **WorkCalendar**-yksikössä (477055):<br>- Oletusarvoinen päättymisaika<br>-    Oletusarvoinen alkamisaika<br>-  Perjantai työpäivä?<br>-  Maanantai työpäivä?<br>-  Lauantai työpäivä?<br>-  Sunnuntai työpäivä?<br>-  Torstai työpäivä?<br>-  Tiistai työpäivä?<br>-  Keskiviikko työpäivä?<br>- Työkalenterin lomatunnus
+- Uuden kalenterin luontivaihtoehdot **WorkCalendar**-yksikössä (477055):<br>- Oletusarvoinen päättymisaika<br>-    Oletusarvoinen alkamisaika<br>-  Perjantai työpäivä?<br>-  Maanantai työpäivä?<br>-  Lauantai työpäivä?<br>-  Sunnuntai työpäivä?<br>-  Torstai työpäivä?<br>-  Tiistai työpäivä?<br>-  Keskiviikko työpäivä?<br>- Työkalenterin lomatunnus
 
 - **LeaveBankTransactionV1**-yksikkö sisältää nyt syykoodin (477823).
 

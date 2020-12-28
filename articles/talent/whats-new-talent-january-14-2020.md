@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c885602f99995d536d8ff3be43e67578abcda3fc
-ms.sourcegitcommit: a2f9dce06322dada6b5f1c82051ef2359f8c0f12
+ms.openlocfilehash: 865ddbc6749d3ea29a258f4c772044307c41bf35
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "3081815"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529111"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-january-14-2020"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (14. tammikuuta 2020)
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä artikkelissa käsitellään Dynamics 365 Talentin uusia tai muuttuneita toimintoja.
 
@@ -56,6 +58,6 @@ Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 | **Työn/toimen** yksikön muutokset | <ul><li>**Kompensaatioalue** lisätty</li><li>**Taloushallinnon dimensiot** lisätty</li></ul> |
 | **Työntekijä**-yksikön muutokset | <ul><li>**Nimien järjestys** lisätty</li><li>**Työskentelee kotoa** lisätty</li><li>**Kieliä** lisätty</li><li>**Ikälisäpäivä** lisätty</li><li>**Vuosipäivän päivämäärä** lisätty</li><li>**Alkuperäinen työsuhteen alkamispäivämäärä** lisätty</li></ul> |
 | **Työsuhde**-yksikön muutokset | <ul><li>**Taloushallinnon dimensiot** lisätty</li><li>**Irtisanomisen syy** lisätty</li><li>**Päättymispäivämäärä** nimettiin uudelleen **Siirtymäpäivästä**</li><li>**Koeajan päivämäärä** lisätty</li></ul> |
-| **Työntekijän osoite**-yksikön muutokset | <ul><li>**Katuosoite** lisätty</li><li>**Osoiterivi 1**, **Osoiterivi 2**ja **Osoiterivi 3**, jotka on merkitty poistettaviksi</li></ul> |
+| **Työntekijän osoite**-yksikön muutokset | <ul><li>**Katuosoite** lisätty</li><li>**Osoiterivi 1**, **Osoiterivi 2** ja **Osoiterivi 3**, jotka on merkitty poistettaviksi</li></ul> |
 | Uudet muuttuvat kompensaatioasetusten entiteetit | <ul><li>**Muuttuvan kompensaatiosuunnitelman tyyppi**</li><li>**Muuttuva kompensaatiosuunnitelma**</li><li>**Hyvityssäännöt**</li><li>**Muuttuvan kompensaatiosuunnitelman taso**</li></ul> |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | <ul><li>**Työkalenteriyksikkö** lisätty</li></ul> |
