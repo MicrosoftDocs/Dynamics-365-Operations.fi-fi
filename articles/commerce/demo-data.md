@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014883"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4412127"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS:n) ja pilvimyyntipisteen esittelytietojen näyttöasettelut
 
@@ -64,6 +64,7 @@ Näyttöasetteluiden tunnuksissa voi olla enintään 10 merkkiä. Tunnus on merk
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | Perusversio, joka tukee eri laitteiden ja kuvasuhteiden useita näyttökokoja |
 | 3.1            | Perusversio, jolla on **Suositellut tuotteet** -ruudun lisätuki        |
+| 4              | Päivitetyn laajennetun Fabrikam-asettelun laajennettu versio                                  |
 
 ### <a name="persona"></a>Henkilötyyppi
 
@@ -75,9 +76,9 @@ Näyttöasetteluiden tunnuksissa voi olla enintään 10 merkkiä. Tunnus on merk
 
 ### <a name="example-layout"></a>Esimerkkiasettelu
 
-Tässä on esimerkki Fabrikam-yrityksen asettelun versio 3 näyttöasettelun tunnuksesta sekä myymäläpäällikön henkilötyyppi:
+Tässä on esimerkki Fabrikam-yrityksen asettelun versio 4 näyttöasettelun tunnuksesta sekä myymäläpäällikön henkilötyyppi:
 
-F3MGR
+F4MGR
 
 Seuraavassa kuvassa on esimerkki Fabrikamin myymäläpäällikön aloitusnäytöstä.
 
@@ -103,11 +104,12 @@ Seuraavassa taulukossa ovat tavallisissa näyttöjen resoluutioissa käytettävi
 | Täysi\*      | 1 280 × 720 | 16:9         | Tabletit                 |
 | Täysi        | 1 366 × 768 | 16:9         | Tabletit, suuret näytöt |
 | Täysi        | 1 440 × 960 | 3:2          | Tabletit, suuret näytöt |
+| Täysi\*      | 1536 × 864 | 16:9         | Tabletit, suuret näytöt |
 
 \* Nämä asettelujen lisäkoot ovat käytettävissä vain Adventure Works- ja Fabrikam-asetteluissa.
 
 > [!TIP]
-> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset** -sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
+> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
 
 ![Näyttöasettelut ja asettelun resoluutiot/koot Commerce-ohjelmassa ja myyntipisteessä](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
@@ -120,7 +122,7 @@ Jokainen kuvitteellinen yritys on luotu eri vähittäismyyntisegmenttiä varten.
 | Yritys          | Toimipaikka | Segmentti        | Korostus | Teema |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Urheilutarvikkeet | Sininen   | Tumma  |
-| Fabrikam:        | Houston  | Muoti        | Vihreä  | Vaalea |
+| Fabrikam        | San Francisco  | Muoti        | Vihreä  | Vaalea |
 | Contoso         | Boston   | Elektroniikka    | Punainen    | Tumma  |
 
 > [!NOTE]
@@ -153,9 +155,9 @@ Käyttäjien käytettävissä on erilaisia näyttöasetteluita. Näytöt voi ott
 | Adventure Works | A3MGR            | Myymäläpäällikkö | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Kassa       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Varastonhoitaja   | 000155, 000181, 000152 |
-| Fabrikam:        | F3MGR            | Myymäläpäällikkö | 000160, 000168, 000163 |
-| Fabrikam:        | F3CSH            | Kassa       | 000161, 000113, 000114 |
-| Fabrikam:        | F3STK            | Varastonhoitaja   | 000164, 000112, 000123 |
+| Fabrikam        | F4MGR            | Myymäläpäällikkö | 000160, 000713         |
+| Fabrikam        | F3CSH            | Kassa       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Varastonhoitaja   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Myymäläpäällikkö | 000100, 000111         |
 | Contoso         | C3CSH            | Kassa       | 000110, 000120         |
 | Contoso         | Ei käytettävissä   | Varastonhoitaja   | Ei käytettävissä         |

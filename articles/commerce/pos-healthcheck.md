@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013201"
+ms.locfileid: "4412095"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Myyntipisteen oheislaitteiden ja palveluiden kuntotarkistus
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commercen versio 10.0.10 ja uudemmat versiot sisältävä
 
 ## <a name="health-check-operation"></a>Kuntotarkistustoiminto
 
-Kuntotarkistustoiminto on toiminto 717 **Myyntipistetoiminnot** -sivulla Commerce Headquarters -sovelluksessa. Sitä voidaan käyttää, kun myyntipisteen tila on muu kuin kassa. Laiteaseman on kuitenkin oltava aktiivinen.
+Kuntotarkistustoiminto on toiminto 717 **Myyntipistetoiminnot**-sivulla Commerce Headquarters -sovelluksessa. Sitä voidaan käyttää, kun myyntipisteen tila on muu kuin kassa. Laiteaseman on kuitenkin oltava aktiivinen.
 
 Oletusarvon mukaan kuntotarkistus testaa vain laitteet, jotka on määritetty rekisterissä olevan laiteaseman laitteistoprofiilissa. Jos kassa käyttää useita laiteasemia päivän aikana, voit tehdä kaikille kuntotarkistuksen, jos yhteys muodostetaan yhteen laiteasemaan kerralla. Varastotason kuntotarkistusta ei ole. On kuitenkin mahdollista, että tämäntyyppinen tarkistus voidaan tehdä Commerce Server -laajennettavuuden kautta.
 
@@ -66,7 +66,7 @@ Oletusarvon mukaan kuntotarkistus testaa vain laitteet, jotka on määritetty re
 
 ### <a name="using-the-health-check-operation-in-the-pos"></a>Kuntotarkistustoiminnon käyttäminen myyntipisteessä
 
-Kun kuntotarkistustoiminto käynnistetään myyntipisteessä, oikeanpuoleinen ruutu sisältää määritettyjen laitteiden luettelon ja kunkin laitteen tilan. Jos haluat tehdä yksittäisen laitteen kuntotarkistuksen, valitse laite ja valitse sitten **Testaa valittu**. Jos haluat tehdä kuntotarkastuksen kaikille laitteille, valitse **Testaa kaikki**. **Testaa kaikki** -toiminto testaa kaikki laitteet yksi kerralla ja päivittää kunkin laitteen tilan **Tila** -sarakkeeseen.
+Kun kuntotarkistustoiminto käynnistetään myyntipisteessä, oikeanpuoleinen ruutu sisältää määritettyjen laitteiden luettelon ja kunkin laitteen tilan. Jos haluat tehdä yksittäisen laitteen kuntotarkistuksen, valitse laite ja valitse sitten **Testaa valittu**. Jos haluat tehdä kuntotarkastuksen kaikille laitteille, valitse **Testaa kaikki**. **Testaa kaikki** -toiminto testaa kaikki laitteet yksi kerralla ja päivittää kunkin laitteen tilan **Tila**-sarakkeeseen.
 
 **Viimeinen tarkistus** -sarakkeessa on tieto kunkin laitteen edellisestä kuntotarkistuksesta.
 

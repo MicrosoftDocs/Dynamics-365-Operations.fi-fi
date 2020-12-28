@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4096964"
+ms.locfileid: "4412111"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Kokeen yhdistäminen ja variaatioiden muokkaaminen
 
@@ -41,8 +41,8 @@ Ennen kuin koe yhdistetään Commercessa, sinun tehtävä päätöksiä, jotka v
 
 ### <a name="determine-the-scope-of-your-experiment"></a>Kokeen laajuuden määrittäminen
 Koetta yhdistettäessä sinua pyydetään määrittämään kokeen laajuus. Kokeen laajuudeksi määritetään **osittainen** tai **kokonaan**.
-- Valitse **osittainen** , jos haluat suorittaa kokeen tietyssä sivun osassa. Jos valitset tämän vaihtoehdon, sinun on määritettävä, mikä moduuleista sisältyy kokeeseen. Oletussivun osiin tai osiin, jotka eivät liity kokeen, tehdyt muutokset synkronoidaan automaattisesti variaatioiden välillä.
-- Valitse **kokonaan** , jos haluat suorittaa kokeen koko sivulla tai osassa. Oletussivusta tai osasta luodaan erilliset kopiot. Kokeeseen sisältyviä moduuleja ei tarvitse valita, sillä koko muokkausalaa voidaan muuttaa. Voit tarpeen mukaan lisätä, poistaa tai järjestää moduuleja uudelleen. Jos muutokset kuitenkin tehdään oletussivulle tai osalle, johon koe on liitetty, kyseiset muutokset on synkronoitava manuaalisesti eri variaatioihin.
+- Valitse **osittainen**, jos haluat suorittaa kokeen tietyssä sivun osassa. Jos valitset tämän vaihtoehdon, sinun on määritettävä, mikä moduuleista sisältyy kokeeseen. Oletussivun osiin tai osiin, jotka eivät liity kokeen, tehdyt muutokset synkronoidaan automaattisesti variaatioiden välillä.
+- Valitse **kokonaan**, jos haluat suorittaa kokeen koko sivulla tai osassa. Oletussivusta tai osasta luodaan erilliset kopiot. Kokeeseen sisältyviä moduuleja ei tarvitse valita, sillä koko muokkausalaa voidaan muuttaa. Voit tarpeen mukaan lisätä, poistaa tai järjestää moduuleja uudelleen. Jos muutokset kuitenkin tehdään oletussivulle tai osalle, johon koe on liitetty, kyseiset muutokset on synkronoitava manuaalisesti eri variaatioihin.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 

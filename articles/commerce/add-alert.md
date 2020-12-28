@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817251"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411886"
 ---
 # <a name="promo-banner-module"></a>Kampanjabannerimoduuli
 
@@ -78,7 +78,7 @@ Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominai
 1. Määritä oikeassa ruudussa **Leveys**-arvoksi **Täytä säilö**.
 1. Lisää kampanjabannerimoduuli säilömoduuliin **Sivun jäsennys** -kohdassa.
 1. Lisää vähintään yksi bannerisanoma bannerimoduulin asetuksissa. Kussakin sanomassa voi olla tekstiä ja linkki. Voit mukauttaa moduulia entisestään muokkaamalla muita ominaisuuksia.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivun yläosassa pitäisi nyt olla hälytys, joka näyttää lisäämäsi tekstin.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivun yläosassa pitäisi nyt olla hälytys, joka näyttää lisäämäsi tekstin.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 > [!NOTE]

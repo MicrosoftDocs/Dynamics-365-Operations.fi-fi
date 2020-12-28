@@ -18,11 +18,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
 ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817727"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412072"
 ---
 # <a name="ratings-and-reviews-modules"></a>Luokitusten ja arvosteluiden moduulit
 
@@ -36,7 +36,7 @@ Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakka
 
 Luokitukset näkyvät tuoteluettelo-, luokkaluettelo- ja hakutulossivuilla sekä muilla sivuston sivuilla. 
 
-Luokitusten histogrammit ja tuotearvostelut näytetään PDP-sivuilla. l**Kirjoita arvostelu** -painikkeen avulla asiakkaat voivat lähettää tuotetta koskevia luokituksia ja arvosteluja. Näitä PDP-toimintoja hallitsevat luokitus- ja tarkistusmoduulit.
+Luokitusten histogrammit ja tuotearvostelut näytetään PDP-sivuilla. l **Kirjoita arvostelu** -painikkeen avulla asiakkaat voivat lähettää tuotetta koskevia luokituksia ja arvosteluja. Näitä PDP-toimintoja hallitsevat luokitus- ja tarkistusmoduulit.
 
 ## <a name="ratings-and-reviews-modules-on-pdps"></a>Luokitusten ja arvosteluiden moduulit PDP-sivuilla 
 

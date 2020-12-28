@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
-ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497353"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418352"
 ---
 # <a name="configure-rates"></a>Hintojen määrittäminen
 
@@ -57,7 +57,7 @@ Käytä useisiin tekijöihin perustuvia hintoja määrittämään, kuinka paljon
    | **Muutoksen voimaantulopäivämäärä** | Päivämäärä, jolloin edun hintamuutos tulee voimaan. Järjestelmä muuttaa automaattisesti etuuskurssia ja päivittää kaikki tähän kurssiin liittyvät etuussuunnitelmat, kunhan suoritat kurssimuutoksen päivityskäsittelyn. Älä määritä tätä päivää, ellet halua, että järjestelmä päivittää työntekijän etuussuunnitelmat automaattisesti tämän taksan perusteella. Tämä on tavallisesti varattu automaattiseen tulevaan kurssimuutosten käsittelyyn. Muutoksen voimaantulopäivämäärän on oltava voimaantulo ja voimassaolon päättymispäivien sisällä. |
    | **Asteen muutos on valmis** | **Kurssimuutos suoritettu** -valintaruutu valitaan automaattisesti sen jälkeen, kun edun hinnanmuutokset on tehty hinnanmuutoksen päivityksen käsittelyn jälkeen. |
 
-4. Voit seurata ja ylläpitää etuuskurssimäärityksen muutoksia valitsemalla **Toiminnot**ja sitten **Versioiden ylläpito**.
+4. Voit seurata ja ylläpitää etuuskurssimäärityksen muutoksia valitsemalla **Toiminnot** ja sitten **Versioiden ylläpito**.
 
 5. Valitse **Tallenna**. 
 

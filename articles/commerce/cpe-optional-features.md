@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599817"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411866"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Valinnaisten toimintojen määrittäminen Dynamics 365 Commerce -arviointiympäristöä varten
 
@@ -81,7 +81,7 @@ Jos haluat arvioida tapahtuman sähköpostiominaisuuksia, seuraavat edellytykset
 1. Jos todennus on pakollinen, kirjoita arvot **Käyttäjänimi**- ja **Salasana**-kenttiin.
 1. Valitse **Tallenna**.
 1. Valitse **Päivitä**.
-1. Valitse **Testaa sähköposti** -välilehdellä**Sähköpostipalvelu**-kentässä **SMTP**.
+1. Valitse **Testaa sähköposti** -välilehdellä **Sähköpostipalvelu**-kentässä **SMTP**.
 1. Kirjoita **Lähetä**-kenttään sähköpostiosoite, johon testisähköpostiviesti tulee toimittaa.
 1. Valitse **Lähetä testisähköpostiviesti**.
 

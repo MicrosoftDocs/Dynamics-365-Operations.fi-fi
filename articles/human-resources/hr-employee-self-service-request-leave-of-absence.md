@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 1f50e45a9acaf5295b40648ea5701885ae0ea844
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429632"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418401"
 ---
 # <a name="request-a-leave-of-absence"></a>Virkavapaan pyytäminen
 
@@ -31,7 +31,7 @@ Voit lähettää poissaoloja koskevan pyynnön ja tarkastella lomapyyntöjen til
 
 ## <a name="request-a-leave-of-absence"></a>Virkavapaan pyytäminen
 
-1. Valitse **työntekijän itsepalvelu** -työtilassa**Lisää** (…) **Vapaasaldot**-ruudusta.
+1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
 2. Jos haluat lähettää virkavapaapyynnön, valitse **Pyydä virkavapaata**.
 
@@ -46,7 +46,7 @@ Voit lähettää poissaoloja koskevan pyynnön ja tarkastella lomapyyntöjen til
 
 ## <a name="view-leave-of-absence-request-status"></a>Tarkastele virkavapaapyynnön tilaa
 
-1. Valitse **työntekijän itsepalvelu** -työtilassa**Lisää** (…) **Vapaasaldot**-ruudusta.
+1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
 2. Jos haluat tarkastella virkavapaapyyntöjäsi, valitse **Näytä virkavapaapyyntö**.
 

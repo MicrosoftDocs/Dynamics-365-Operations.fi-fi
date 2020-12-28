@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022073"
+ms.locfileid: "4412101"
 ---
 # <a name="social-share-module"></a>Jako yhteisöpalveluissa -moduuli
 
@@ -53,25 +53,25 @@ Seuraavassa kuvassa on esimerkki tuotetietosivulla käytetystä Jako yhteisöpal
 ## <a name="social-share-item-module-properties"></a>Jako yhteisöpalveluissa -nimikkeen moduulin ominaisuudet
 | Ominaisuuden nimi             | Arvo                 | kuvaus |
 |---------------------------|-----------------------|-------------|
-| Yhteisöpalvelut              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **sähköposti** | Avattava valikko, jossa on luettelo yhteisöpalvelun ympäristöistä. |
+| Yhteisöpalvelut              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **sähköposti** | Avattava valikko, jossa on luettelo yhteisöpalvelun ympäristöistä. |
 | Kuvake |Kuva    | Tässä on kuva, joka näkyy vastaava yhteisöpalvelu. Tietoja kunkin ympäristön kuvan käyttämisen parhaasta käytännöstä on yhteisöpalvelun ympäristön SDK:ssa. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Jako yhteisöpalveluissa -moduulin lisääminen ostoruutumoduuliin
 
 Jos haluat lisätä Jako yhteisöpalveluissa -moduulin ostoruutumoduuliin, tee seuraavat toiminnot.
 
-1. Valitse Fabrikam-sivustossa **Sivut** ja valitse sitten **DefaultPDP** -sivu. Avaa tuotetietosivu. 
-1. Valitse kolme pistettä ( **...** ) **Ostoruutu (pakollinen)** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse Fabrikam-sivustossa **Sivut** ja valitse sitten **DefaultPDP**-sivu. Avaa tuotetietosivu. 
+1. Valitse kolme pistettä (**...**) **Ostoruutu (pakollinen)** -paikassa ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Jako yhteisöpalvelussa** -moduuli ja valitse sitten **OK**.
-1. Valitse kolme pistettä ( **...** ) **Jako yhteisöpalveluissa** -paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **SocialShare** -moduuli ja valitse sitten **OK**.
-1. Valitse **SocialShare** -moduulin ominaisuusikkunan **Suunta** -kohdassa **Vaaka**. Lisää kuvateksti tarpeen mukaan.
-1. Valitse kolme pistettä ( **...** ) **SocialShare** -paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **SocialShareItem** -moduuli ja valitse sitten **OK**.
-1. Valitse **SocialShareItem** -moduulin ominaisuusikkunan **Yhteisöpalvelut** -kohdassa **Facebook**.
-1. Valitse **SocialShareItem** -moduulin ominaisuusikkunan **Kuvake** -kohdassa **+ Lisää kuva**.
+1. Valitse kolme pistettä (**...**) **Jako yhteisöpalveluissa** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **SocialShare**-moduuli ja valitse sitten **OK**.
+1. Valitse **SocialShare**-moduulin ominaisuusikkunan **Suunta**-kohdassa **Vaaka**. Lisää kuvateksti tarpeen mukaan.
+1. Valitse kolme pistettä (**...**) **SocialShare**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **SocialShareItem**-moduuli ja valitse sitten **OK**.
+1. Valitse **SocialShareItem**-moduulin ominaisuusikkunan **Yhteisöpalvelut**-kohdassa **Facebook**.
+1. Valitse **SocialShareItem**-moduulin ominaisuusikkunan **Kuvake**-kohdassa **+ Lisää kuva**.
 1. Valitse **Mediasisällön valitsin** -valintaruudussa Facebook-logokuva ja valitse sitten **OK**. Jos Facebook-logokuvaa ei ole valittavissa, valitse **Lataa uusi medianimike** ja lataa logokuva.
-1. Lisää **SocialShareItem** -moduuleja ja määritä niitä lisää tarvittaessa.
+1. Lisää **SocialShareItem**-moduuleja ja määritä niitä lisää tarvittaessa.
 1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivulla näkyy Jako yhteisöpalveluissa -moduuli.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 

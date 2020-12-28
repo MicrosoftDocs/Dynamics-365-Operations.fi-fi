@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270047"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411953"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metatietojen hallinta
 
@@ -74,7 +74,7 @@ Voit muokata sivun metatietoja seuraavasti.
 1. Valitse aloitussivu, joka avataan sivueditorissa.
 1. Valitse komentopalkissa **Muokkaa**.
 1. Laajenna oikeanpuoleisessa ominaisuusruudussa **Oletusmetatunnukset**-kohta.
-1. Jos haluat lisätä uuden metatunnuksen, valitse **Lisää**ja kirjoita sitten tunnus kenttään. Jos haluat poistaa olemassa olevan metatunnuksen, valitse sen oikealla puolella oleva roskakorisymboli.
+1. Jos haluat lisätä uuden metatunnuksen, valitse **Lisää** ja kirjoita sitten tunnus kenttään. Jos haluat poistaa olemassa olevan metatunnuksen, valitse sen oikealla puolella oleva roskakorisymboli.
 1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
 1. Syötä **Kommentit**-kenttään **Päivitetyt metatunnukset** ja valitse **OK**.
 1. Esikatsele sivua valitsemalla **Esikatsele**. Kun olet valmis, palaa muokkaustyökaluun sulkemalla Esikatselu-välilehti.

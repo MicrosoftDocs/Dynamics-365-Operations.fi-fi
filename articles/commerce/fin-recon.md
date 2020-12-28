@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 5d0520f35391f76b52fd8a333033b0d7ba4f7fe1
-ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3498010"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411860"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Taloushallinnon täsmäytys vähittäismyymälöissä
 
@@ -47,7 +47,7 @@ Noudata näitä ohjeita taloushallinnon täsmäytystoiminnon käytössä.
 
 ## <a name="more-information-about-financial-reconciliation"></a>Lisätietoa taloushallinnon täsmäytyksestä
 
-Kun taloushallinnon täsmäytystoiminto otetaan käyttöön, jotkin parametreista, jotka määritetään**Laskelma/sulkeminen**-pikavälilehdessä **Vähittäismyymälät**-sivulla Commerce-pääkonttorissa, synkronoidaan kanavatietokantaan. Samaa laskelmakriteerien joukkoa ja määrärajoja, joita käytetään vähittäismyyntilaskelmiin, käytetään.
+Kun taloushallinnon täsmäytystoiminto otetaan käyttöön, jotkin parametreista, jotka määritetään **Laskelma/sulkeminen**-pikavälilehdessä **Vähittäismyymälät**-sivulla Commerce-pääkonttorissa, synkronoidaan kanavatietokantaan. Samaa laskelmakriteerien joukkoa ja määrärajoja, joita käytetään vähittäismyyntilaskelmiin, käytetään.
 
 Kun **Sulje vuoro** -toimenpiteeseen ryhdytään, järjestelmä vahvistaa, että järjestelmän laskemat määrät ja ilmoitetut määrät vastaavat toisiaan. Jos ne eroavat toisistaan ja ero ylittää määritetyt rajat, käyttäjä saa kehotuksen ja voi tehdä tarvittavat oikaisut.
 

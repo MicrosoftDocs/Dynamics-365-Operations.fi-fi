@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429563"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418391"
 ---
 # <a name="design-questionnaires"></a>Kyselylomakkeiden suunnitteleminen
 
@@ -91,7 +91,7 @@ Numerosarjan koodeja käytetään kysymysten ja vastausten järjestämisessä. A
 Kaikki parametrit tulee määritettävä, ennen kuin tietoja aletaan luoda. Voit muokata kyselylomakeparametrien asetuksia milloin tahansa.
 
 ## <a name="questionnaire-components"></a>Kyselylomakkeen osat
-Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta. Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
+Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta.  Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 

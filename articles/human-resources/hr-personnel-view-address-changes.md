@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 288df4fe766536e51ca9b5306c5bb948b7772ac5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "3688318"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418272"
 ---
 # <a name="view-and-manage-address-changes"></a>Osoitemuutosten tarkasteleminen ja hallinta
 
@@ -64,7 +64,7 @@ Työntekijät voivat päivittää osoitteensa **työntekijän itsepalvelu** -ty�
 
 8. Kirjoita **katuosoite**.
 
-9. Kirjoita **paikkakunta**, **osavaltio**ja **alue**. Yleensä nämä kentät määritetään automaattisesti **Postinumero**-kentän perusteella.
+9. Kirjoita **paikkakunta**, **osavaltio** ja **alue**. Yleensä nämä kentät määritetään automaattisesti **Postinumero**-kentän perusteella.
 
 10. Vaihtoehtoisesti voit valita ensisijaisen osoitteen **ensisijaiselle** kentälle. Vain yksi osoite voidaan merkitä ensisijaiseksi. Jos toinen osoite on jo merkitty ensisijaiseksi osoitteeksi, sinun on vahvistettava, että haluat käyttää tätä osoitetta ensisijaisena.
 
@@ -92,7 +92,7 @@ Voit päivittää osoitteen **henkilöstöhallinnan** työtilassa. Noudata seura
 
 8. Kirjoita **katuosoite**.
 
-9. Kirjoita **paikkakunta**, **osavaltio**ja **alue**. Yleensä nämä kentät määritetään automaattisesti **Postinumero**-kentän perusteella.
+9. Kirjoita **paikkakunta**, **osavaltio** ja **alue**. Yleensä nämä kentät määritetään automaattisesti **Postinumero**-kentän perusteella.
 
 10. Vaihtoehtoisesti voit valita ensisijaisen osoitteen **ensisijaiselle** kentälle. Vain yksi osoite voidaan merkitä ensisijaiseksi. Jos toinen osoite on jo merkitty ensisijaiseksi osoitteeksi, sinun on vahvistettava, että haluat käyttää tätä osoitetta ensisijaisena.
 

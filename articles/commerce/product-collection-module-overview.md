@@ -18,11 +18,11 @@ ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817570"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411842"
 ---
 # <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
 
@@ -81,7 +81,7 @@ Lisää tuotekokoelmamoduuli luokkasivulle seuraavasti.
 1. Valitse tuotekokoelmamoduulin ominaisuusruudussa **Lisää tuoteluetteloon**.
 1. Valitse **Valitse tuoteluettelon määritys** -valintaikkunassa luettelon tyyppi, luettelolähde ja anna nimikkeiden määrä. Määritä muut vaihtoehdot, joita voi käyttää luettelotyypissä. Lisätietoja tämän tyyppisistä luettelotyypeistä on seuraavassa taulukossa. 
 1. Valitse **OK**.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuoteluettelon määritys** -valintaikkunassa.

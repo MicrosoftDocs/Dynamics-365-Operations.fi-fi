@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7233b23020e6c82f39981d530095642902461807
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818395"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412132"
 ---
 # <a name="shipping-address-module"></a>Toimitusosoitemoduuli
 
@@ -65,7 +65,9 @@ Toimitusosoitemoduuli voidaan lisätä vain kassalle-moduuliin. Lisätietoja toi
 
 [Maksumoduuli](payment-module.md)
 
-[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+[Toimitusvaihtoehtomoduuli](delivery-options-module.md)
+
+[Noudon tiedot -moduuli](pickup-info-module.md)
 
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 

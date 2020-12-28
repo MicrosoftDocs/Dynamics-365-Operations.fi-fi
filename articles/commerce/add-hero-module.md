@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817351"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411909"
 ---
 # <a name="content-block-module"></a>Sisältölohkomoduuli
 
@@ -79,7 +79,7 @@ Seuraavassa kuvassa on esimerkki ominaisuusasettelua käyttävästä sisältölo
 
 Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Valitse **Mallit**ja luo sivumalli, jonka nimi on **Sisältölohkomalli**.
+1. Valitse **Mallit** ja luo sivumalli, jonka nimi on **Sisältölohkomalli**.
 1. Lisää hero-moduuli oletussivun **pääpaikkaan**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Luo **Sisältölohkosivu**-niminen sivu käyttämällä juuri luotua hero-mallia.
@@ -93,7 +93,7 @@ Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisu
 1. Valitse **Lisää linkki**.
 1. Lisää **Linkki**-valintaikkunaan linkin teksti, linkin URL-osoite ja linkin ARIA-otsikko. Valitse sitten **OK**.
 1. Valitse **Hero**-asettelu.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen. 
 
 ## <a name="additional-resources"></a>Lisäresurssit

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3796494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418379"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Loma- ja poissaolosuunnitelman luominen
 
@@ -43,7 +43,7 @@ Voit myös luoda sijaintiin perustuvia lomaetuja, kuten vain johdon etuuden tunn
 
 2. Kirjoita **Tiedot**-kohtaan suunnitelman **Nimi**, **Alkamispäivämäärä**, **Kuvaus** ja **Loman tyyppi**.
 
-Jos toiminto **Määrittää useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle**, lomatyypit määritetään **Kertymäaikataulussa** **Yksityiskohtien**sijaan. Voit määrittää kullekin jaksotusaikataulutaulukon tietueelle lomatyypin. Kun tämä toiminto on käytössä, sinun on käytettävä uusia tietoentiteettejä integroinnissa ja muissa tilanteissa, joissa tarvitaan entiteettejä. 
+Jos toiminto **Määrittää useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle**, lomatyypit määritetään **Kertymäaikataulussa** **Yksityiskohtien** sijaan. Voit määrittää kullekin jaksotusaikataulutaulukon tietueelle lomatyypin. Kun tämä toiminto on käytössä, sinun on käytettävä uusia tietoentiteettejä integroinnissa ja muissa tilanteissa, joissa tarvitaan entiteettejä. 
 
 Uudet entiteetit ovat seuraavat:
 

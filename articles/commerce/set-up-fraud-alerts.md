@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057206"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412050"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen
 
@@ -58,7 +58,7 @@ Järjestelmä käyttää kahta petosehtotyyppiä määrittämään, on tilaus as
 - **Petossäännöt** koostuvat käyttäjän määrittämistä muuttujista ja kyseissä muuttujissa määritetyistä ehdoista. Voit luoda sääntöjä valitsemalla **Retail ja Commerce** \> **Kananvan asetukset** \> **Puhelinkeskuksen asetukset** \> **Petos** \> **Säännöt**. Petossääntöjen avulla yritys voi määrittää useiden ehtojen arviointia varten monimutkaisen sääntöjoukon. Tämä on sääntöjoukko on monimutkaisempi kuin mitä saadaan aikaan **JA**- tai **TAI**-lausekkeita käyttämällä. Esimerkki: Käyttäjä haluaa, että petostarkistusta varten kaikki sellaisten asiakkaiden tilaukset asetetaan pitoon, jotka kuuluvat tiettyyn asiakasryhmään tai jotka tilaavat tietyn tuotteen. Tässä tapauksessa asiakkaan ja tuotteet tarkistavat ehdot määritetään **Säännöt**-sivulla JA-ehtoa käyttämällä. Tilaus asetetaan sitten pitoon vain, jos kumpikin ehto on tosi ja jos kyseiselle säännölle määritetty pisteytysarvo ja tilauksen muiden mahdollisten sääntöjen pisteytysarvo aiheuttavat sen, että tilauksen petoksen kokonaispistemäärä ylittää **Puhelinkeskuksen parametrit** -sivulla määritetyn **Vähimmäispisteytys**-arvon.
 
 > [!NOTE]
-> Useiden sääntöjen tai liian monimutkaisten sääntöjen käyttäminen heikentää järjestelmän toimintaa, kun myyntitilauksia lähetetään. Petostarkistustoimintoa ei ole optimoitu käsittelemään staattisten petostietojen tapahtumien suurta määrää eikä useita aktiivisia sääntöjä. Muista, että jokainen sääntö arvioidaan, kun puhelinkeskuksen käyttäjä valitsee **Lähetä**myyntitilausten käsittelyn aikana. Sääntöjä käytetään myyntitilauksen otsikon ja kaikkien tilausrivien arvioinnissa. Mitä enemmän sääntöjä on paljon ja mitä monimutkaisempia ne ovat, sitä enemmän aikaa niiden käsittelyyn tarvitaan. Jos tilauksessa on paljon rivinimikkeitä ja jos aktiivisia sääntöjä ja staattisten tietojen kirjauksia on paljon, kaikkien tietojen automaattinen tarkistus- ja vahvistuskäsittely sekä petospisteiden laskeminen voi vaikuttaa suorituskykyyn huomattavasti. Tätä toimintoa käyttävien organisaatioiden kannattaa aina testata tilausten lähetysten käsittelyyn kuluva aika ja vahvistaa, että tämä aika voidaan hyväksyä, ennen kuin sääntöjen tai staattisten petosehtojen muutokset otetaan käyttöön tuotantoympäristössä.
+> Useiden sääntöjen tai liian monimutkaisten sääntöjen käyttäminen heikentää järjestelmän toimintaa, kun myyntitilauksia lähetetään. Petostarkistustoimintoa ei ole optimoitu käsittelemään staattisten petostietojen tapahtumien suurta määrää eikä useita aktiivisia sääntöjä. Muista, että jokainen sääntö arvioidaan, kun puhelinkeskuksen käyttäjä valitsee **Lähetä** myyntitilausten käsittelyn aikana. Sääntöjä käytetään myyntitilauksen otsikon ja kaikkien tilausrivien arvioinnissa. Mitä enemmän sääntöjä on paljon ja mitä monimutkaisempia ne ovat, sitä enemmän aikaa niiden käsittelyyn tarvitaan. Jos tilauksessa on paljon rivinimikkeitä ja jos aktiivisia sääntöjä ja staattisten tietojen kirjauksia on paljon, kaikkien tietojen automaattinen tarkistus- ja vahvistuskäsittely sekä petospisteiden laskeminen voi vaikuttaa suorituskykyyn huomattavasti. Tätä toimintoa käyttävien organisaatioiden kannattaa aina testata tilausten lähetysten käsittelyyn kuluva aika ja vahvistaa, että tämä aika voidaan hyväksyä, ennen kuin sääntöjen tai staattisten petosehtojen muutokset otetaan käyttöön tuotantoympäristössä.
 
 ## <a name="identifying-orders-that-are-on-hold-for-fraud-review"></a>Petosten tarkistusta varten pitoon asetettujen tilausten tunnistaminen
 

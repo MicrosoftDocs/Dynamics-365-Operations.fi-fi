@@ -2,8 +2,8 @@
 title: Ryhmän kalenterin luominen
 description: Tarkastele ja luo ryhmän kalentereita Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: AnnBe
-ms.date: 10/7/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd9a2a928e1f528065a00fecfb19a08edef86bf8
-ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
+ms.openlocfilehash: 2ec767a868d5c76b57465c451b8cc893b8b0a56b
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3968995"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418415"
 ---
 # <a name="view-team-and-company-calendars"></a>Ryhmä- ja yrityskalenterien tarkasteleminen
 
@@ -64,6 +64,11 @@ Kalenterit sisältävät nyt lisäsuodattimia ja -asetuksia. Kaikkiin kalenterei
 Loma- ja poissaoloparametrien kalenterimääritykset määrittävät käytettävissä olevat näkymäasetukset.
 
 Voit myös suodattaa kalentereita esimiehen tai osaston mukaan. Ensisijainen toimen määritys määrittää näytettävät työntekijät, kun nämä suodattimet on määritetty. 
+
+>[!IMPORTANT]
+>Loman ja poissaolon tarkasteleminen yrityksissä tapahtuu nyt esikatselussa. Se on otettava käyttöön **eristysympäristössä**. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br><br>
+>Tämän jälkeen ominaisuus on otettava käyttöön **Human Resourcesin jaetut parametrit** -kohdassa, jos haluat näyttää yrityksen suodattimen kalentereissa. Lisätietoja on kohdassa [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md).<br><br>
+>Voit suodattaa kalenterin yrityksen mukaan. Jos haluat nähdä kaikki työntekijät riippumatta yrityksestä, yyhjennä suodatinruutu ja valitse Enter-näppäin. 
 
 Lisätietoja kalenteriasetuksista on ohjeaiheessa [Kalenteriparametrien määrittäminen](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

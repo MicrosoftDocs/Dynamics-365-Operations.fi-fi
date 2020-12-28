@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019561"
+ms.locfileid: "4412099"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
@@ -62,10 +62,10 @@ Voit muuntaa aiemmin määritetyn moduulin uudelleenkäytettäväksi osaksi seur
 
 1. Avaa sivu tai malli, joka sisältää osaksi muunnettavan moduulin.
 1. Valitse vasemmalla jäsennysruudussa aiemmin määritetty moduuli tai valitse se suoraan visuaalisessa sivunmuodostimessa.
-1. Valitse kolme pistettä ( **...** ) moduulin nimen vieressä joko jäsennysruudusta tai valitun moduulin työkaluriviltä visuaalisessa sivunmuodostimessa. 
+1. Valitse kolme pistettä (**...**) moduulin nimen vieressä joko jäsennysruudusta tai valitun moduulin työkaluriviltä visuaalisessa sivunmuodostimessa. 
 1. Valitse **Jaa osana**. 
 1. Anna **Tallenna osana** -valintaikkunassa osan nimi.
-1. Valitse **OK** , jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
+1. Valitse **OK**, jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
 <!-- The following image shows how to save a module configuration as a fragment.-->
 <!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
@@ -91,7 +91,7 @@ Seuraavissa ohjeissa kuvataan, miten osia lisätään, poistetaan ja muokataan.
 Osa lisätään sivulle Commercen sivustonmuodostimessa seuraavasti:
 
 1. Valitse vasemmassa jäsennysruudussa tai suoraan visuaalisessa sivunmuodostimessa säilö tai paikka, johon alimoduulit voidaan lisätä.
-1. Valitse kolme pistettä ( **...** ) säilön tai paikan nimen vieressä.  Vaihtoehtoisesti voit valita plusmerkin ( **+** ), jos visuaalinen sivunmuodostin on käytössä.  
+1. Valitse kolme pistettä (**...**) säilön tai paikan nimen vieressä.  Vaihtoehtoisesti voit valita plusmerkin (**+**), jos visuaalinen sivunmuodostin on käytössä.  
 1. Valitse **Lisää osa**.
     <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
@@ -109,7 +109,7 @@ Osa lisätään sivulle Commercen sivustonmuodostimessa seuraavasti:
 
 Osa poistetaan Commercen sivustonmuodostimessa sivulla olevasta paikasta tai säilöstä seuraavasti:
 
-1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan osan nimen vieressä oleva kolmen pisteen painike ( **...** ) ja valitse sitten roskakorisymboli.  Vaihtoehtoisesti voit valita osan visuaalisessa sivunmuodostimessa ja valita roskakorisymbolin osan työkalurivillä.
+1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan osan nimen vieressä oleva kolmen pisteen painike (**...**) ja valitse sitten roskakorisymboli.  Vaihtoehtoisesti voit valita osan visuaalisessa sivunmuodostimessa ja valita roskakorisymbolin osan työkalurivillä.
 1. Kun sinua pyydetään vahvistamaan osan poistaminen, valitse **OK**.
 
 > [!NOTE]
@@ -122,7 +122,7 @@ Jos haluat muokata osia, sinun on käytettävä osan muokkausohjelman käyttöli
 Osaa muokataan Commercen sivustonmuodostimessa seuraavasti:
 
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Osat**.
-1. Valitse **Osat** -kohdassa muokattava osa.
+1. Valitse **Osat**-kohdassa muokattava osa.
 1. Muokkaa osan moduulin ominaisuuksia ja rakennetta tarpeen mukaan. Prosessi muistuttaa moduulien muokkausprosessia, jossa moduuleja muokataan sivueditorinäkymässä.
 
 Voit muokata osaa myös valitsemalla sen sivulla, mallissa tai pääosassa ja valitsemalla sitten **Muokkaa osaa** -kohdan oikeanpuoleisessa ominaisuusruudussa.

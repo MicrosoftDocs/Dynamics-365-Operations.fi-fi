@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107181"
+ms.locfileid: "4412123"
 ---
 # <a name="set-up-a-call-center-channel"></a>Puhelinkeskuskanavan määrittäminen
 
@@ -44,14 +44,14 @@ Voit luoda ja määrittää uuden puhelinkeskuskanavan seuraavasti.
 
 1. Siirry navigointiruudussa kohtaan **Vähittäismyynti ja kauppa \> Kanavat \> Puhelinkeskukset \> Kaikki puhelinkeskukset**.
 1. Valitse toimintoruudussa **Uusi**.
-1. Kirjoita **Nimi** -kenttään uuden kanavan nimi.
+1. Kirjoita **Nimi**-kenttään uuden kanavan nimi.
 1. Valitse avattavasta luettelosta sopiva **Yritys**.
-1. Valitse avattavasta luettelosta sopiva **Varasto** -sijainti. Tätä sijaintia käytetään tälle puhelinkeskuskanavalle luotujen myyntitilausten oletusarvona, jos muita oletusarvoja ei ole määritetty asiakas- tai nimiketasolla.
-1. Anna kelvollinen oletusasiakas **Oletusasiakas** -kentässä. Näitä tietoja käytetään automaattisen täytön oletusarvoissa, kun luodaan uusia asiakastietueita. Kun luodaan puhelinkeskuksen tilauksia, ei kannata luoda tilauksia oletusasiakkaalle.
-1. Anna kelvollinen sähköpostin ilmoitusprofiili **Sähköposti-ilmoitusprofiili** -kentässä. Puhelinkeskustilausten luomisessa ja käsittelyssä käytetään sähköposti-ilmoituksen profiilia automaattisten sähköposti-ilmoitusten käynnistämisessä. Ne ilmoittavat asiakkaille tilauksen tilan.
+1. Valitse avattavasta luettelosta sopiva **Varasto**-sijainti. Tätä sijaintia käytetään tälle puhelinkeskuskanavalle luotujen myyntitilausten oletusarvona, jos muita oletusarvoja ei ole määritetty asiakas- tai nimiketasolla.
+1. Anna kelvollinen oletusasiakas **Oletusasiakas**-kentässä. Näitä tietoja käytetään automaattisen täytön oletusarvoissa, kun luodaan uusia asiakastietueita. Kun luodaan puhelinkeskuksen tilauksia, ei kannata luoda tilauksia oletusasiakkaalle.
+1. Anna kelvollinen sähköpostin ilmoitusprofiili **Sähköposti-ilmoitusprofiili**-kentässä. Puhelinkeskustilausten luomisessa ja käsittelyssä käytetään sähköposti-ilmoituksen profiilia automaattisten sähköposti-ilmoitusten käynnistämisessä. Ne ilmoittavat asiakkaille tilauksen tilan.
 1. Anna **Hinnan ohitus** -tietokoodi. Tämä tietokoodi on ehkä luotava ensin. Tämä tietokoodi sisältää niiden syykoodien joukon, joiden avulla käyttäjää pyydetään määrittämään hinnan ohituksen toiminto puhelinkeskustilauksessa.
-1. Anna **Pitokoodi** -tietokoodi. Tämä tietokoodi on ehkä luotava ensin. Tämä tietokoodi sisältää niiden valinnaisten syykoodien joukon, joiden avulla käyttäjää pyydetään määrittämään tilauksen pitoon asettaminen.
-1. Anna **Luotto** -tietokoodi. Tämä tietokoodi on ehkä luotava ensin. Tämä tietokoodi sisältää niiden syykoodien joukon, joiden avulla käyttäjä voi valita tilauksen kredit-toiminnon puhelinkeskuksesta muiden kuin hyvitysten antamiseksi asiakkaalle asiakaspalvelullisista syistä.
+1. Anna **Pitokoodi**-tietokoodi. Tämä tietokoodi on ehkä luotava ensin. Tämä tietokoodi sisältää niiden valinnaisten syykoodien joukon, joiden avulla käyttäjää pyydetään määrittämään tilauksen pitoon asettaminen.
+1. Anna **Luotto**-tietokoodi. Tämä tietokoodi on ehkä luotava ensin. Tämä tietokoodi sisältää niiden syykoodien joukon, joiden avulla käyttäjä voi valita tilauksen kredit-toiminnon puhelinkeskuksesta muiden kuin hyvitysten antamiseksi asiakkaalle asiakaspalvelullisista syistä.
 1. Valinnainen: Määritä taloushallinnon dimensiot **Taloushallinnon dimensiot** -pikavälilehdessä. Tässä annetut dimensiot ovat oletusarvoja kaikissa tässä puhelinkeskuskanavassa luoduissa myyntitilauksissa.
 1. Valitse **Tallenna**.
 
@@ -67,7 +67,7 @@ Seuraavassa kuvassa on esimerkki puhelinkeskuskanavasta.
 
 Puhelinkeskuskanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen ja toimitustapojen määrittäminen.
 
-Seuraavassa kuvassa on **Asetukset** -välilehden **Toimitustavat** - ja **Maksutavat** -asetusvaihtoehdot.
+Seuraavassa kuvassa on **Asetukset**-välilehden **Toimitustavat**- ja **Maksutavat**-asetusvaihtoehdot.
 
 ![Puhelinkeskuskanavan lisämääritykset](media/channel-setup-callcenter-3.png)
 
@@ -75,11 +75,11 @@ Seuraavassa kuvassa on **Asetukset** -välilehden **Toimitustavat** - ja **Maksu
 
 Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille seuraavien ohjeiden mukaisesti. Käyttäjien on valittava ennalta määritetyistä maksutavoista. Maksutapa linkitetään heille puhelinkeskuskanavassa. Ennen kuin määrität puhelinkeskuksen maksutavat, määritä päämaksutapa kohdassa **Vähittäismyynti ja kauppa \> Kanavan asetukset \> Maksutavat \> Maksutavat**.
 
-1. Valitse toimintoruudussa ensin **Asetukset** -välilehti ja sitten **Maksutavat**.
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Maksutavat**.
 1. Valitse toimintoruudussa **Uusi**.
 1. Valitse siirtymisruudussa maksutapa käytettävissä olevista ennalta määritetyistä maksuista.
 1. Määritä tarvittaessa maksutyypin mahdolliset lisäasetukset. Luottokorteille, lahjakorteille ja kanta-asiakkuuskorteille vaaditaan lisäasetukset. Valitse **Kortin asetukset** -toiminto. 
-1. Määritä soveltuvat kirjaustilit maksutyypille **Kirjaus** -osassa.
+1. Määritä soveltuvat kirjaustilit maksutyypille **Kirjaus**-osassa.
 1. Valitse toimintoruudussa **Tallenna**.
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
@@ -88,14 +88,14 @@ Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
-Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** **toimintoruudun** **Asetukset** -välilehdessä.  
+Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** **toimintoruudun** **Asetukset**-välilehdessä.  
 
 Voit muuttaa toimitustapaa tai lisätä sen ja liittää puhelinkeskuskanavaan seuraavasti.
 
 1. Valitse puhelinkeskuksen toimitustapojen lomakkeessa **Hallitse toimitustapoja**
 1. Luo uusi toimitustapa valitsemalla toimintoruudussa **Uusi** tai valitse aiemmin luotu tapa.
-1. Lisää puhelinkeskuskanava valitsemalla **Vähittäismyyntikanava** -osassa **Lisää rivi**. Kanavien lisäämistä voi yksinkertaistaa käyttämällä organisaatiosolmua sen sijaan, että kukin kanava lisättäisiin erikseen.
-1. Varmista, että toimitustapa on määritetty **Tuotteet** -pikavälilehden ja **Osoitteet** -pikavälilehden tietojen avulla. Jos tuotteet tai toimitusosoitteet eivät ole sallittuja toimitustavalle, sen valitseminen tilauksen syöttämisen aikana päättyy virheeseen.
+1. Lisää puhelinkeskuskanava valitsemalla **Vähittäismyyntikanava**-osassa **Lisää rivi**. Kanavien lisäämistä voi yksinkertaistaa käyttämällä organisaatiosolmua sen sijaan, että kukin kanava lisättäisiin erikseen.
+1. Varmista, että toimitustapa on määritetty **Tuotteet**-pikavälilehden ja **Osoitteet**-pikavälilehden tietojen avulla. Jos tuotteet tai toimitusosoitteet eivät ole sallittuja toimitustavalle, sen valitseminen tilauksen syöttämisen aikana päättyy virheeseen.
 1. Kun muutokset puhelikeskuksen toimitustilan määrityksiin on tehty muutokset, **Käsittele toimitustilat** -työ on suoritettava muutosmatriisi hajoittamiseksi. Tämä työ löytyy siirtymällä kohtaan **Vähittäismyynti ja kauppa \> Vähittäismyynnin ja kaupan IT \> Käsittele toimitustilat**.
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
@@ -106,7 +106,7 @@ Seuraavassa kuvassa on esimerkki toimitustavasta.
 
 Voit luoda myyntitilauksen, joka on linkitetty puhelinkeskuskanavaan Commerce Headquarters -sovelluksesta, jos myyntitilauksen luonut käyttäjä on linkitetty puhelinkeskuskanavaan. Käyttäjä ei voi linkittää Commerce Headquarters -sovelluksessa luotua myyntitilausta manuaalisesti puhelinkeskuskanavaan. Linkki on systemaattinen. Se perustuu käyttäjään ja käyttäjän sekä puhelinkeskuskanavan suhteeseen. Käyttäjä voidaan linkittää vain yhteen puhelinkeskuskanavaan.
 
-1. Valitse toimintoruudussa ensin **Kanava** -välilehti ja sitten **Kanavan käyttäjät**.
+1. Valitse toimintoruudussa ensin **Kanava**-välilehti ja sitten **Kanavan käyttäjät**.
 1. Valitse toimintoruudussa **Uusi**.
 1. Valitse olemassa oleva **Käyttäjän tunnus** avattavasta valintaluettelosta ja linkitä tämä käyttäjä puhelinkeskuskanavaan
 
@@ -119,7 +119,7 @@ Hintaryhmät ovat valinnaisia. Jos niitä käytetään, voidaan hallinnoida asia
 
 Voit määrittää hintaryhmän seuraavasti.
 
-1. Valitse toimintoruudussa ensin **Kanava** -välilehti ja sitten **Hintaryhmät**.
+1. Valitse toimintoruudussa ensin **Kanava**-välilehti ja sitten **Hintaryhmät**.
 1. Napsauta Toimintoruudussa **Uusi**.
 1. Valitse **Vähittäismyynnin hintaryhmä** avattavasta valintaluettelosta.
 

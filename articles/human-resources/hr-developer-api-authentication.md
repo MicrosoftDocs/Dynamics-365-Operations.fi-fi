@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092103"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418260"
 ---
 # <a name="authentication"></a>Todennus
 
@@ -84,7 +84,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
         Lisätietoja Internet-sovelluksista ja alkuperäisistä sovelluksista on [Microsoftin käyttäjätietoympäristössä (aiemmin Azure Active Directory sovelluskehittäjille)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
-5. Valitse **API-käyttöoikeudet**-kohdasta**Lisää käyttöoikeus**. Valitse sitten **API-liittymät, joita oma organisaationi käyttää** -välilehti, etsi **Dynamics 365 Human Resources** ja lisää **käyttäjä\_tekeytyminen**-oikeus sovellukseen. Henkilöstöhallinnon sovellustunnus on f9be0c49-aa22-4ec6-911a-c5da515226ff. Tämän tunnuksen avulla voit varmistaa, että olet valinnut oikean sovelluksen.
+5. Valitse **API-käyttöoikeudet**-kohdasta **Lisää käyttöoikeus**. Valitse sitten **API-liittymät, joita oma organisaationi käyttää** -välilehti, etsi **Dynamics 365 Human Resources** ja lisää **käyttäjä\_tekeytyminen**-oikeus sovellukseen. Henkilöstöhallinnon sovellustunnus on f9be0c49-aa22-4ec6-911a-c5da515226ff. Tämän tunnuksen avulla voit varmistaa, että olet valinnut oikean sovelluksen.
 
 6. Valitse **Rekisteröi**.
 
