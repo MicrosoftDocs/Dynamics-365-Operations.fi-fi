@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056094"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527882"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn Talent Hub -integrointi
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) on ATS (hakijoiden seurantajärjestelmä) -ympäristö. Sen avulla voit hakea, hallita ja palkata työntekijöitä samassa paikassa. Kun Microsoft Dynamics 365 Human Resources integroidaan LinkedIn Talent Hubiin, Human Resourcesissa on helppo luoda työntekijätietueita toimeen palkatuille hakijoille.
 
@@ -41,7 +43,7 @@ Järjestelmänvalvojan on tehtävä määritykset, joita tarvitaan LinkedIn Tale
 
 2. Valitse käyttäjän avattavassa valikossa **Tuotteen asetukset**.
 
-3. Valitse vasemman siirtymisruudun **Lisäasetukset** -osassa **Integroinnit**.
+3. Valitse vasemman siirtymisruudun **Lisäasetukset**-osassa **Integroinnit**.
 
 4. Valitse Microsoft Dynamics 365 Human Resources -integroinnin osalta **Valtuuta**.
 
@@ -56,17 +58,17 @@ Järjestelmänvalvojan on tehtävä määritykset, joita tarvitaan LinkedIn Tale
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
-2. Valitse **Ympäristöt** -luettelossa ympäristö, joka on liitetty siihen Human Resources -ympäristöön, johon haluat linkittää LinkedIn Talent Hub -esiintymän.
+2. Valitse **Ympäristöt**-luettelossa ympäristö, joka on liitetty siihen Human Resources -ympäristöön, johon haluat linkittää LinkedIn Talent Hub -esiintymän.
 
 3. Valitse **Asetukset**.
 
 4. Laajenna **Käyttäjät ja käyttöoikeudet** -solmu ja valitse **Käyttöoikeusroolit**.
 
-5. Valitse **Käyttöoikeusroolit** -sivun työkalurivillä **Uusi rooli**.
+5. Valitse **Käyttöoikeusroolit**-sivun työkalurivillä **Uusi rooli**.
 
-6. Anna roolille nimi **Tiedot** -välilehdessä. Se voi olla vaikkapa **LinkedIn Talent Hub HRIS integraatio**.
+6. Anna roolille nimi **Tiedot**-välilehdessä. Se voi olla vaikkapa **LinkedIn Talent Hub HRIS integraatio**.
 
-7. Valitsee **Mukauttaminen** -välilehdessä organisaatiotason **Luku** -oikeudet seuraaville entiteeteille:
+7. Valitsee **Mukauttaminen**-välilehdessä organisaatiotason **Luku**-oikeudet seuraaville entiteeteille:
 
     - Kokonaisuus
     - Kenttä
@@ -80,7 +82,7 @@ LinkedIn Talent Hub -sovittimeen on luotava sovelluskäyttäjä, jotta sovittime
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
-2. Valitse **Ympäristöt** -luettelossa ympäristö, joka on liitetty siihen Human Resources -ympäristöön, johon haluat linkittää LinkedIn Talent Hub -esiintymän.
+2. Valitse **Ympäristöt**-luettelossa ympäristö, joka on liitetty siihen Human Resources -ympäristöön, johon haluat linkittää LinkedIn Talent Hub -esiintymän.
 
 3. Valitse **Asetukset**.
 
@@ -88,7 +90,7 @@ LinkedIn Talent Hub -sovittimeen on luotava sovelluskäyttäjä, jotta sovittime
 
 5. Valitse **Käyttäjien hallinta Dynamics 365:ssä**.
 
-6. Voit vaihtaa luettelon yläpuolella olevassa avattavassa valikossa **Aktivoidut käyttäjät** -oletusnäkymän **Sovelluskäyttäjät** -näkymään.
+6. Voit vaihtaa luettelon yläpuolella olevassa avattavassa valikossa **Aktivoidut käyttäjät** -oletusnäkymän **Sovelluskäyttäjät**-näkymään.
 
     ![Sovelluskäyttäjät-näkymä](./media/hr-admin-integration-power-apps-application-users.jpg)
 
@@ -96,17 +98,17 @@ LinkedIn Talent Hub -sovittimeen on luotava sovelluskäyttäjä, jotta sovittime
 
 8. Toimi seuraavasti **Uusi käyttäjä** -sivulla:
 
-    1. Vaihda **Käyttäjätyyppi** -kentän arvoksi **Sovelluskäyttäjä**.
-    2. Määritä **Käyttäjänimi** -kentän arvoksi **Dynamics365 HR LinkedIn HRIS -integraatio**.
-    3. Määritä **Sovellustunnus** -kentän arvoksi **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    4. Anna **Etunimi** -, **Sukunimi** - ja **Ensisijainen sähköposti** -kenttiin jokin arvo.
+    1. Vaihda **Käyttäjätyyppi**-kentän arvoksi **Sovelluskäyttäjä**.
+    2. Määritä **Käyttäjänimi**-kentän arvoksi **Dynamics365 HR LinkedIn HRIS -integraatio**.
+    3. Määritä **Sovellustunnus**-kentän arvoksi **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
+    4. Anna **Etunimi**-, **Sukunimi**- ja **Ensisijainen sähköposti** -kenttiin jokin arvo.
     5. Valitse työkalurivillä **Tallenna ja sulje**.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Käyttöoikeusroolin määrittäminen uudelle käyttäjälle
 
-Kun uusi sovelluskäyttäjä on tallennettu ja suljettu edellisessä osassa, olet takaisin **Käyttäjäluettelo** -sivulla.
+Kun uusi sovelluskäyttäjä on tallennettu ja suljettu edellisessä osassa, olet takaisin **Käyttäjäluettelo**-sivulla.
 
-1. Vaihda **Käyttäjäluettelo** -sivulla **Sovelluskäyttäjät** -näkymään.
+1. Vaihda **Käyttäjäluettelo**-sivulla **Sovelluskäyttäjät**-näkymään.
 
 2. Valitse edellisessä osassa luotu sovelluskäyttäjä.
 
@@ -121,9 +123,9 @@ Kun uusi sovelluskäyttäjä on tallennettu ja suljettu edellisessä osassa, ole
 1. Avaa Dynamics 365 Human Resourcesissa **Azure Active Directory -sovellukset** -sivu.
 2. Lisää uusi tietue luetteloon ja määritä seuraavat kentät:
 
-    - **Asiakastunnus** : anna **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    - **Nimi** : anna aiemmin luodun Power Appsin käyttöoikeusroolin nimi, kuten **LinkedIn Talent Hub HRIS integraatio**.
-    - **Käyttäjätunnus** : valitse käyttäjä, jolla on tietojen kirjoitusoikeudet henkilöstöhallinnossa.
+    - **Asiakastunnus**: anna **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
+    - **Nimi**: anna aiemmin luodun Power Appsin käyttöoikeusroolin nimi, kuten **LinkedIn Talent Hub HRIS integraatio**.
+    - **Käyttäjätunnus**: valitse käyttäjä, jolla on tietojen kirjoitusoikeudet henkilöstöhallinnossa.
 
 ### <a name="create-the-entity-in-common-data-service"></a>Yksikön luominen Common Data Servicessa
 
@@ -132,7 +134,7 @@ Kun uusi sovelluskäyttäjä on tallennettu ja suljettu edellisessä osassa, ole
 
 1. Avaa Human Resourcesissa **Common Data Service (CDS) -integraatio** -sivu.
 
-2. Valitse **Virtuaaliyksiköt** -välilehti.
+2. Valitse **Virtuaaliyksiköt**-välilehti.
 
 3. Etsi **LinkedInin viety ehdokas** suodattamalla yksikköluetteloa yksikön otsikon perusteella.
 
@@ -152,23 +154,23 @@ Kun hakija on siirtynyt työhönottoprosessin läpi ja hänet on palkattu, hakij
 
 3. Valitse **Muuta tilaa** ja valitse sitten **Otettu työhön**.
 
-4. Valitse hakijan kolmen pisteen valikossa ( **...** ) **Vie HRIS-järjestelmään**.
+4. Valitse hakijan kolmen pisteen valikossa (**...**) **Vie HRIS-järjestelmään**.
 
 5. Anna **Vie HRIS-järjestelmään** -ruudussa tiedot, jotka on vietävä:
 
-    - Valitse **HRIS-palvelu** -kentässä **Microsoft Dynamics 365 Human Resources**.
-    - Valitse **Alkamispäivä** -kentässä arvo uudelle työntekijälle.
-    - Anna **Työnimike** -kentässä uuden työntekijän toimen työnimike.
-    - Anna **Sijainti** -kentässä sijainti, joka on työntekijän ensisijainen työpaikka.
+    - Valitse **HRIS-palvelu**-kentässä **Microsoft Dynamics 365 Human Resources**.
+    - Valitse **Alkamispäivä**-kentässä arvo uudelle työntekijälle.
+    - Anna **Työnimike**-kentässä uuden työntekijän toimen työnimike.
+    - Anna **Sijainti**-kentässä sijainti, joka on työntekijän ensisijainen työpaikka.
     - Anna tai tarkista työntekijän sähköpostiosoite.
 
 ![Vie HRIS-järjestelmään -ruutu LinkedIn Talent Hubissa](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Käyttöönoton päättäminen Human Resourcesissa
 
-LinkedIn Talent Hubista Human Resourcesiin vietävät hakijatietueet näkyvät **Henkilöstöhallinto** -sivun **Työhönotettavat hakijat** -osassa.
+LinkedIn Talent Hubista Human Resourcesiin vietävät hakijatietueet näkyvät **Henkilöstöhallinto**-sivun **Työhönotettavat hakijat** -osassa.
 
-1. Avaa Human Resourcesissa **Henkilöstöhallinto** -sivu.
+1. Avaa Human Resourcesissa **Henkilöstöhallinto**-sivu.
 
 2. Valitse **Työhön otettavat hakijat** -osassa **Työhönotto** valitun hakijan kohdalla.
 

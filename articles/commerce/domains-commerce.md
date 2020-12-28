@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3764998"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517352"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commercen toimialueet
 
@@ -47,7 +47,7 @@ Voit luoda palvelupyynnön lisätoimialueiden lisäämiseksi ympäristöön, jos
 
 ## <a name="commerce-generated-urls"></a>Commercen luomat URL-osoitteet
 
-Sähköisen kaupankäynnin ympäristön valmistelun yhteydessä Commerce luo URL-osoitteen, joka on ympäristön työosoite. Tähän URL-osoitteeseen viitataan sähköisen kaupankäynnin sivuston linkissä, joka näkyy LCS:ssä ympäristön valmistelun jälkeen. Commercen luoman URL-osoitteen muoto on `https://<e-Commerce tenant name>.commerce.dynamics.com`, jossa sähköisen kaupankäynnin vuokraajan nimi on Commercen ympäristöön LCS:lle syötetty nimi.
+Sähköisen kaupankäynnin Dynamics 365 Commerce -ympäristön valmistelun yhteydessä Commerce luo URL-osoitteen, joka on ympäristön työosoite. Tähän URL-osoitteeseen viitataan sähköisen kaupankäynnin sivuston linkissä, joka näkyy LCS:ssä ympäristön valmistelun jälkeen. Commercen luoman URL-osoitteen muoto on `https://<e-commerce tenant name>.commerce.dynamics.com`, jossa sähköisen kaupankäynnin vuokraajan nimi on Commercen ympäristöön LCS:lle syötetty nimi.
 
 Voit käyttää tuotantosivuston isäntänimiä myös eristysympäristössä. Tämä vaihtoehto on ihanteellinen, kun kopioit sivuston eristysympäristöstä tuotantoon.
 
@@ -102,9 +102,9 @@ Kun toimialueen kyselymerkkijonoa ei anneta ympäristössä, jossa on useita toi
 
 ## <a name="traffic-forwarding-in-production"></a>Liikenteen välittäminen tuotannossa
 
-Voit simuloida useita toimialueita käyttämällä toimialueen kyselymerkkijonon parametreja itse commerce.dynamics.com-päätepisteessä. Kun haluat julkaista tuotannon, sinun on välitettävä liikenne muokattuun toimialueeseen `<e-Commerce tenant name>.commerce.dynamics.com`-päätepisteessä.
+Voit simuloida useita toimialueita käyttämällä toimialueen kyselymerkkijonon parametreja itse commerce.dynamics.com-päätepisteessä. Kun haluat julkaista tuotannon, sinun on välitettävä liikenne muokattuun toimialueeseen `<e-commerce tenant name>.commerce.dynamics.com`-päätepisteessä.
 
-`<e-Commerce tenant name>.commerce.dynamics.com`-päätepiste ei tue mukautetun toimialueen SSL (Secure Sockets Layer) -salausta. Määritä siis mukautetut toimialueet käyttämällä Front Door Service -palvelua tai sisällön toimitusverkostoa. 
+`<e-commerce tenant name>.commerce.dynamics.com`-päätepiste ei tue mukautetun toimialueen SSL (Secure Sockets Layer) -salausta. Määritä siis mukautetut toimialueet käyttämällä Front Door Service -palvelua tai sisällön toimitusverkostoa. 
 
 Jos haluat määrittää mukautettuja toimialueita Front Door Service -palvelun tai sisällön toimitusverkoston (CDN) avulla, käytettävissä on seuraavat kaksi vaihtoehtoa:
 
@@ -152,17 +152,17 @@ Commercen toimittama Azure Front Door -esiintymä ei tue apex-toimialueita (juur
 
   ## <a name="additional-resources"></a>Lisäresurssit
 
-  [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
+  [Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
 
   [Määritä verkkokauppakanava](online-stores.md)
 
   [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
-  [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+  [Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
 
   [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-  [URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+  [URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
 
   [B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
 

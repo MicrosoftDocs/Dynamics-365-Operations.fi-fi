@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646036"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517205"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisältöverkon (CDN) tuen lisääminen
 
@@ -31,9 +31,9 @@ ms.locfileid: "3646036"
 
 Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
-Kun määrität Dynamics 365 Commerce -sovelluksessa sähköisen kaupankäynnin ympäristön, voit määrittää sen käyttämään CDN-palvelua. 
+Kun määrität Dynamics 365 Commerce -sovelluksessa sähköisen kaupankäynnin ympäristöä, voit määrittää sen käyttämään CDN-palvelua. 
 
 Mukautettu toimialue voi olla käytössä sähköisen kaupankäynnin ympäristön valmisteluprosessin aikana. Vaihtoehtoisesti voit käyttää palvelupyyntöä määrittämiseen valmisteluprosessin päätyttyä. Sähköisen kaupankäynnin ympäristön valmisteluprosessi luo isäntänimen, joka liittyy ympäristöön. Tällä isäntänimellä on seuraava muoto, jossa \<*e-commerce-tenant-name*\> on ympäristön nimi.
 
@@ -97,8 +97,8 @@ Määritä reitityssääntö Azure Front Door Service -palvelussa seuraavasti.
 1. Kirjoita **Nimi**-kenttään **oletus**.
 1. Valitse **Hyväksytty protokolla** -kentässä **HTTP ja HTTPS**.
 1. Syötä **Edustaisännät**-kenttään **dynamics-ecom-tenant-name.azurefd.net**.
-1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\***.
-1. Määritä **Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
+1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\** _.
+1. Määritä _*Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
 1. Valitse **Taustapooli**-kentässä **ecom-backend**.
 1. Valitse **Välitysprotokolla**-kenttäryhmässä **Pyynnön vastaavuus** -vaihtoehto. 
 1. Määritä **URL-osoitteen uudelleenkirjoitus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
@@ -110,8 +110,8 @@ Määritä välimuistiin tallennuksen sääntö Azure Front Door Service -palvel
 1. Kirjoita **Nimi**-kenttään **tilastot**.
 1. Valitse **Hyväksytty protokolla** -kentässä **HTTP ja HTTPS**.
 1. Syötä **Edustaisännät**-kenttään **dynamics-ecom-tenant-name.azurefd.net**.
-1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\_msdyn365/\_scnr/\***.
-1. Määritä **Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
+1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\_msdyn365/\_scnr/\** _.
+1. Määritä _*Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
 1. Valitse **Taustapooli**-kentässä **ecom-backend**.
 1. Valitse **Välitysprotokolla**-kenttäryhmässä **Pyynnön vastaavuus** -vaihtoehto.
 1. Määritä **URL-osoitteen uudelleenkirjoitus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
@@ -146,15 +146,15 @@ CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-siv
 
 [Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
-[Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
+[Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
-[Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+[Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+[URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
 
 [B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
 

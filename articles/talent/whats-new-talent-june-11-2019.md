@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f2ee23733d686480cd4323cab952ae12eceaf142
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20dc0768463d9a5d6762cb062deb0bdbe4d53fe3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897577"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528666"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (11.6.2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -54,9 +56,9 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauk
 
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2337.
 
-### <a name="platform-update-27-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 27
+### <a name="platform-update-27-for-finance-and-operations"></a>Ympäristön päivitys 27 Finance and Operationsille
 
-Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 27:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 27:n esikatselutoiminnot (kesäkuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Lisätietoja Finance and Operationsin Platform update 27 -päivityksestä on kohdassa [Dynamics 365 Finance and Operationsin Platform update 27 -päivityksen esiversio-ominaisuudet (kesäkuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Ominaisuushallinnan työtila Talentissa
 

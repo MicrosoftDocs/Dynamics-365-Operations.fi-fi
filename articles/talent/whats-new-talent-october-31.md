@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 4851c62a19bb562c7f5f578aecbae99cfcdb982f
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897370"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461057"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-october-31-2018"></a>Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (31. lokakuuta 2018)
 
@@ -59,7 +59,7 @@ Jokaiseen luotavaan linkkiin on määritettävä seuraavat tiedot.
 
 - Käytä käyttäjän nykyistä yritystä – Valitse **Kyllä**, jos haluat käyttää käyttäjän nykyistä yrityskontekstia Financeen siirryttäessä. Jos valitset **Ei**, voit valita käytettävän yrityksen.
 
-- Kohdevalikkovaihtoehto – Anna Financen valikkovaihtoehto, jota linkin on käytettävä siirryttäessä. Käytettävissä on ne valikkotoiminnot, joihin voi siirtyä suoraan. Voit etsiä tarvittavan valikkotoiminnon avaamalla ensin Financen ja sitten sivun, johon siirrytään. Kopioi valikkotoiminto URL-osoitteesta. Jos esimerkiksi haluat, että linkki vie Finance and Operationsin työntekijäluetteloon, anna arvo, joka URL-osoitteessa &mi-kohdan jälkeen. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Tässä esimerkissä valikkotoiminto, johon työntekijäluettelosivulla siirrytään on HcmWorkerListPage_Employees.
+- Kohdevalikkovaihtoehto – Anna Financen valikkovaihtoehto, jota linkin on käytettävä siirryttäessä. Käytettävissä on ne valikkotoiminnot, joihin voi siirtyä suoraan. Voit etsiä tarvittavan valikkotoiminnon avaamalla ensin Financen ja sitten sivun, johon siirrytään. Kopioi valikkotoiminto URL-osoitteesta. Jos haluat linkin vievän esimerkiksi Finance and Operationsin työntekijäluetteloon, syötä URL-osoitteen &mi-merkkien jälkeen näkyvä arvo. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Tässä esimerkissä valikkotoiminto, johon työntekijäluettelosivulla siirrytään on HcmWorkerListPage_Employees.
 
 - Linkki tietolähteeseen – Valitse tietolähde, johon linkki viittaa. Käytettävissä on tavallisimmat lähteet, kuten **Työntekijä** ja **Toimi**.
 

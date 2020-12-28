@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2020-01-07
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: e227c614fdbfe6f3dd410f1a533c593979abf1ec
-ms.sourcegitcommit: 615ed3e4260192ba36826e128f1afa1588e94845
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "2974427"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4461050"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-january-7-2020"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (7. tammikuuta 2020)
 
@@ -47,7 +47,7 @@ Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2697. Joissakin ots
 Tämä muutos lisää poistovaihtoehdon **Työntekijät, joilla ei ole työtä**-muotoa. Työntekijät näkyvät tässä lomakkeessa, kun työntekijälle ei ole tulevia, aktiivisia tai historiallisia työtehtäviä. Tässä versiossa Delete-toiminto on käytössä vain järjestelmänvalvojille. Ensi viikon versiossa suojaus päivitetään kuitenkin siten, että kaikki käyttäjät, joilla on HR-assistenttirooli, voivat poistaa työntekijöitä ilman työtehtävää. Voit tehdä nämä muutokset myös manuaalisesti noudattamalla seuraavia ohjeita.
 
 1. Mene kohtaan **Suojauskonfiguraatio**.
-2. Suodata**Oikeudet**-välilehdessä **Oikeudet**-luettelo ja **Ylläpidä työntekijöitä**.
+2. Suodata **Oikeudet**-välilehdessä **Oikeudet**-luettelo ja **Ylläpidä työntekijöitä**.
 3. Valitse **viitteet**-sarakkeesta **Näytä valikon vaihtoehdot**.
 4. Valitse **Näytä valikon vaihtoehdot**-sarakkeesta **HcmWOrkersWithoutEmployment**.
 5. Määritä **Poisto**-oikeuden myöntäminen.

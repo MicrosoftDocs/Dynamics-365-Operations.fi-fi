@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 11a1f166080b96760cb10f4d0cdc627979c2709e
-ms.sourcegitcommit: e0bf7a81ead351f5b109061c401589295058f808
+ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "3726304"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527478"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3478. Joissakin otsikoissa suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
 

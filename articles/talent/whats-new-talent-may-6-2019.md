@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f06d989ea4e927111729dfbd4bb7700745a16a54
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c04af27bcc446b516f14125e71fb707bfd1d7708
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897508"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529705"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (6. toukokuuta 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -43,9 +45,9 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauk
 
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2282. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.
 
-### <a name="platform-update-26-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 26
+### <a name="platform-update-26-for-finance-and-operations"></a>Ympäristön päivitys 26 Finance and Operationsille
 
-Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 26:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 26:n esikatselutoiminnot (toukokuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Lisätietoja Finance and Operationsin Platform update 26 -päivityksestä on kohdassa [Dynamics 365 Finance and Operationsin Platform update 26 -päivityksen esiversio-ominaisuudet (toukokuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service mukautettujen kenttien yksikkötuki
 

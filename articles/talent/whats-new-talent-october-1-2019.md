@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6bfe8a60b8c7eb9b7542a6ef3be6094144b06b3c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 69c0a805027f215b2a2a42d826ee7a346cfdd511
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897416"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529657"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-1-2019"></a>Dynamics 365 Talent:n uudet tai muuttuneet ominaisuudet (1. lokakuuta 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 

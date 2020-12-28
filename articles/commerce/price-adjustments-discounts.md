@@ -3,7 +3,7 @@ title: Hinnanoikaisut ja alennukset
 description: Tässä artikkelissa on tietoja Dynamics 365 Commercein hinnanoikaisuista ja alennuksista.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022438"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584312"
 ---
 # <a name="price-adjustments-and-discounts"></a>Hinnanoikaisut ja alennukset
 
@@ -41,11 +41,13 @@ Hinnanoikaisuja ja alennuksia voidaan käyttää tuotteissa, varianteissa tai ka
 
 ## <a name="types-of-discounts"></a>Alennusten tyypit
 
-Alennuksia on neljää tyyppiä:
+Alennuksia on useita tyyppejä:
 
 - **Yksinkertainen alennus** – Yksi prosenttiosuus tai määrä.
 - **Määräalennus** – alennus, jota käytetään, kun tuotteita ostetaan vähintään kaksi.
 - **Yhdistelmäalennus** – alennus, jota käytetään, kun ostetaan tietty tuoteyhdistelmä.
 - **Raja-arvon alennus** – alennus, jota käytetään, kun tapahtuman kokonaissumma ylittää tietyn summan.
+- **Maksuvälinepohjainen alennus** – Alennus, jota käytetään, kun tapahtuman kokonaissumma on määritettyä summaa suurempi ja tiettyä maksutyyppiä (esimerkiksi käteinen, luottokortti tai pankkikortti) on käytetty maksussa.
+- **Lähetysalennus** – Alennus, jota käytetään, kun tapahtuman kokonaissumma on enemmän kuin määritetty summa ja jos tilauksessa on käytössä tietty toimitustapa (esimerkiksi kahden päivän toimitus tai toimitus yön aikana).
 
 Sekä hinnanoikaisut että alennukset voidaan yhdistää hintaryhmiin. Hintaryhmät voidaan tämän jälkeen liittää kanaviin, luetteloihin, liitoksiin ja kanta-asiakasohjelmiin.

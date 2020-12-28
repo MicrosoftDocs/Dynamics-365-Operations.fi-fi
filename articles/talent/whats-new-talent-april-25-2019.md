@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cbafea9063844dd3f19e5828ab37632e04591f18
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 53faf972759c8f770017fcd3a87920410988e626
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897887"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527177"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 23, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -77,4 +79,4 @@ Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila
 ## <a name="known-issues"></a>Tunnetut ongelmat
 
 ### <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
-Finance and Operations -käyttöympäristöpäivitys 26:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköposti-ilmoituksia yhteyshenkilöille, kun tapahtuma käynnistyy.
+Finance and Operationsin Platform update 26:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy.

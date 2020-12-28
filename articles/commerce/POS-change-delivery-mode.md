@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 1e9f8d202fa81546a9f84af62824e6d8f620cf35
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: eaffe7821b60dd787a7d8b7533c1b8599033ba68
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975094"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594134"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Toimitustavan muuttaminen myyntipisteessä
 
@@ -40,4 +40,10 @@ Kun tämä toiminto on määritetty myyntipisteessä ja valitset **Muuta toimitu
 
 Kun olet valinnut muutettavan rivin, valitse **Muuta toimitustilaa**. Tällöin sinua pyydetään valitsemaan toimitustilavaihtoehdot. Jos valitsit useita muutettavia rivejä, myyntipiste näyttää vain toimitustilat, jotka on määritetty sallituksi kaikille valituille tuotteille. Toimitustilat voidaan määrittää tukemaan tiettyjä tuotteita ja toimitusosoitteita. Jos olemassa on toimitustila, joka on sallittu yhdelle tuotteen ja osoitteen yhdistelmälle, mutta ei toiselle valitun tuotteen ja osoitteen yhdistelmälle, toimitustila ei ole käytettävissä. Sinun on ehkä valittava rivit yksitellen ja muutettava toimitustila jokaiselle riville erikseen, jos haluat valita toimitustilan yhdelle tuotteelle, jota toinen tuote ei tue.  
 
-Kun olet valinnut uuden toimitustilan, näkyviin tulee tapahtumasivu. Voit tarkistaa uudet toimitustilavalinnat valitsemalla tapahtumaluettelosta **Toimitus**-välilehden.   
+Kun olet valinnut uuden toimitustilan, näkyviin tulee tapahtumasivu. Voit tarkistaa uudet toimitustilavalinnat valitsemalla tapahtumaluettelosta **Toimitus**-välilehden.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Puhelinkeskustilausten luominen](tasks/create-call-center-orders.md)
+
+[Tapahtumasähköpostien mukauttaminen toimitustilan mukaan](customize-email-delivery-mode.md)

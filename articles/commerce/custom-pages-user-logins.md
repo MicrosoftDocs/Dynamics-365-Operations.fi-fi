@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817303"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517229"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
 
@@ -197,15 +197,15 @@ Kun olet päivittänyt global.json-tiedoston ja julkaissut muutokset, uusi linkk
 
 [Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
-[Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
+[Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
-[Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+[Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+[URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
 
 [B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
 

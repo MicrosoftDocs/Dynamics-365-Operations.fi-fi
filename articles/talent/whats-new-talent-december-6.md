@@ -18,21 +18,23 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897692"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529159"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Koontiversio 8.1.2071**
 
 Tässä ohjeaiheessa käsitellään Core HR -ohjelman uusia tai muuttuneita ominaisuuksia.
 
 
-## <a name="platform-update-22-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 22
+## <a name="platform-update-22-for-finance-and-operations"></a>Ympäristön päivitys 22 Finance and Operationsille
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Enintään 1 miljoonan rivin vienti Exceliin
 
@@ -40,7 +42,7 @@ Vie Exceliin -toiminto voidaan nyt määrittää siten, että käyttäjät saava
 
 ### <a name="restyled-personalization-toolbar"></a>Uudelleenmuotoiltu mukauttamisen työkalurivi
 
-Mukauttamisen työkalurivi on muotoiltu uudelleen Finance and Operationsin käyttöympäristöpäivityksessä 22, mikä auttaa käyttäjiä mukauttamaan omaa Talent-kokemustaan. Seuraavat muutokset on tehty: 
+Finance and Operationsin Platform update 22 -päivityksen mukautustyökalupalkki on muotoiltu uudelleen. Näin käyttäjät voivat helpommin räätälöidä omat kokemuksensa Talentissa. Seuraavat muutokset on tehty: 
 
 -  Kunkin mukauttamistyökalun nimi ja kuvake on nyt näkyvissä, joten käyttäjien on helpompi ja nopeasti tunnistaa työkalu, jota he haluavat käyttää.
 -  Myös nykyisen työkalun käytön ohjeet ovat nyt näkyvissä, mikä auttaa käyttäjiä ymmärtämään tehtäviä mukauttamisia.  
@@ -48,13 +50,13 @@ Mukauttamisen työkalurivi on muotoiltu uudelleen Finance and Operationsin käyt
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>On yksi seuraavista: -suodattimen käytön optimointi
 
-On yksi seuraavista: -suodatinoperaattoria voi käyttää useimmissa kentissä suodatinruutua ja ruudukon otsikon avattavia luetteloita käytettäessä. Tämän operaattorin avulla käyttäjä voi suodattaa kenttää useiden arvojen perusteella. "On yksi seuraavista:" -operaattorin uusi parannettu käyttökokemus on käytettävissä Finance and Operationsin käyttöympäristöpäivityksessä 22. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+On yksi seuraavista: -suodatinoperaattoria voi käyttää useimmissa kentissä suodatinruutua ja ruudukon otsikon avattavia luetteloita käytettäessä. Tämän operaattorin avulla käyttäjä voi suodattaa kenttää useiden arvojen perusteella. On yksi seuraavista: -operaattorin uusi parannettu käyttökokemus on saatavana Finance and Operationsin Platform Update 22 -päivityksessä. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Excelin luetteloiden liittäminen suodatinkenttään on yksi seuraavista: -operaattorilla
 
 Käyttäjillä voi olla joissakin tehtävissä Excelissä arvoluettelo, jota he haluavat käyttää tietojen suodattamiseen Talentissa. Henkilöstöhallinnon käyttäjä on ehkä voinut tunnistaa raportissa työntekijäjoukon, johon on tutustuttava tarkemmin järjestelmässä. Niinpä olisi kätevää, jos kyseinen käyttäjä voisi kopioida luettelon suoraan Excelistä Talentin suodatinkenttään.
 
-Finance and Operations -käyttöympäristöpäivityksestä 22 lähtien suodatinruudun ja ruudukon sarakkeen suodatuksen "on yksi seuraavista:" -operaattori tunnistaa nyt Excelistä kopioidut luettelot, joten ne voidaan liittää suoraan suodatinkenttään. Tähän sisältyy kokoelma arvo, jotka on kopioitu Excelin eri riveiltä ja sarakkeilta. Lisätietoja tästä toiminnosta on kohdassa [Excelin luetteloiden liittäminen suodatinkenttään on yksi seuraavista: -operaattorilla](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Finance and Operationsin Platform Update 22 -päivityksestä lähtien suodatinruudun ja ruudukon sarakkeen suodatuksen on yksi seuraavista: -operaattori tunnistaa nyt Excelistä kopioidut luettelot, joten ne voidaan liittää suoraan suodatinkenttään. Tähän sisältyy kokoelma arvo, jotka on kopioitu Excelin eri riveiltä ja sarakkeilta. Lisätietoja tästä toiminnosta on kohdassa [Excelin luetteloiden liittäminen suodatinkenttään on yksi seuraavista: -operaattorilla](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Esiversiossa
 
@@ -133,7 +135,7 @@ Työntekijät työhön -tehtävän seuraavat yhdistämismääritykset on päivit
 
 Myös Sukupuoli-kentän muutos on päivitettävä. Valitse sukupuolelle **fn** (toiminto) -määritystyyppi ja päivitä seuraavat arvon yhdistämismääritykset.
 
-| Common Data Service Arvo   | Finance and Operations -arvo | | ------------|------------------ -----------| | 75440000    | Mies                         | | 75440001    | Nainen                       | | 75440002    | Ei mitään                        | | 75440003    | Yksilöimätön                  |
+| Common Data Service -arvo   | Finance and Operations -arvo | | ------------|------------------ -----------| | 75440000    | Mies                         | | 75440001    | Nainen                       | | 75440002    | Ei mitään                         | | 75440003    | Yksilöimätön                  |
 
 Päivitettyjen yhdistämismääritysten pitäisi olla seuraavanlaiset.
 

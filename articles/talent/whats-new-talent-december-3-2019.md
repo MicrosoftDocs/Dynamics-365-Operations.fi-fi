@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-12-03
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b1ed998302762203bad736161a27a48152de65f7
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: bf1ad4ca2e0ab18aaa35a7410d80a54e7a2160ce
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897715"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528690"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-december-3-2019"></a>Dynamics 365 Talent:n uudet tai muuttuneet ominaisuudet (3. joulukuuta 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä artikkelissa käsitellään Dynamics 365 Talentin uusia tai muuttuneita toimintoja.
 
@@ -77,7 +79,7 @@ Tällä muutoksella et voi antaa samana päivän kahta lomapyyntöä.
 
 ### <a name="address-changes-list-should-be-sorted-by-effective-date-352798"></a>Osoitteiden muutosluettelo tulee lajitella voimaantulopäivämäärän mukaan (352798)
 
-Tämän muutoksen myötä osoitteenmuutosluettelo lajitellaan nyt **voimaantulopäivämäärän**mukaan.
+Tämän muutoksen myötä osoitteenmuutosluettelo lajitellaan nyt **voimaantulopäivämäärän** mukaan.
 
 ### <a name="leave-requests-should-allow-deletes-from-common-data-service-to-talent-376999"></a>Lomapyyntöjen pitäisi sallia poistot Common Data Servicestä Talentiin (376999)
 
@@ -173,7 +175,7 @@ Seuraavat mukautetut Common Data Service -yksiköt tukevat mukautettuja kenttiä
 
 ## <a name="in-preview"></a>Esiversiossa
 
-Esiversiotoiminnot ovat käytettävissä vain **eritys**ympäristöissä.
+Esiversiotoiminnot ovat käytettävissä vain **eritys** ympäristöissä.
 
 ### <a name="print-performance-reviews"></a>Kehityskeskustelujen tulostaminen
 

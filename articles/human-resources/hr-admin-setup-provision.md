@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e37777b8000fb3afbc72ff9c61347085816e36c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527787"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä artikkelissa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. Artikkelissa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Human Resourcesin palvelusopimuksen, etkä pysty suorittamaan tämän artikkelin vaiheita, ota yhteys tukeen.
 
@@ -86,7 +88,7 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
 
 2. Yksittäinen Human Resources -ympäristö yhdistetään yksittäiseen Power Apps-ympäristöön.
 
-3. Power Apps-ympäristö sisältää Human Resources -sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Common Data Service -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Human Resources -ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto**ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
+3. Power Apps-ympäristö sisältää Human Resources -sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Common Data Service -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Human Resources -ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto** ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
 
 4. Tietojen integrointi- ja testausstrategiat kannattaa ottaa huomioon, esimerkiksi Sandbox, hyväksyntätestaus ja tuotanto. On suositeltavaa pohtia, mitä vaikutuksia käyttöönotolla on, koska on hankala muuttaa Power Apps-ympäristöön yhdistettyä Human Resources -ympäristöä.
 
@@ -96,7 +98,7 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
    
     - **Kokeiluympäristöt** - Näille ympäristöille luodaan vanhentumispäivä. Kun voimassaolo päättyy, ympäristösi ja sen sisältämät henkilöstöresurssien esiintymät poistetaan automaattisesti.
    
-    - **Alueet, joita ei tueta** – Tällä hetkellä Human Resourcesia tuetaan vain seuraavilla alueilla: Yhdysvallat, Eurooppa, Iso-Britannia, Australia, Kanada ja Aasia.
+    - **Alueet, joita ei tueta** – Tällä hetkellä Human Resourcesia tuetaan vain seuraavilla alueilla: Yhdysvallat, Eurooppa, Yhdistynyt kuningaskunta, Australia, Kanada ja Aasia.
 
     > [!NOTE]
     > Human Resources -ympäristö valmistellaan samalla alueella, jolla Power Apps -ympäristö on valmisteltu. Human Resources -ympäristön siirtämistä toiselle alueelle ei tueta.

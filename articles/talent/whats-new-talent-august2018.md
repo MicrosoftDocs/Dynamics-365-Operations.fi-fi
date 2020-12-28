@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (elokuu 2018)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Core HR:n uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
+description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Talent - Core HR:n uusista ja muuttuneista ominaisuuksista.
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 4f6d0a32807397d5f2c0892061e54c2fed24610b
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 30646de08bd5ea4b2da05bfc38da7edc320a3331
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897761"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690097"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-august-2018"></a>Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (elokuu 2018)
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Talent: Core HRin uusia tai muu
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Vanhentuvien tietueiden näyttäminen esimiehen itsepalvelussa
 
-Voit nyt tarkastella vanhentuvia tietueita esimiehen itsepalvelussa. Voit määrittää uusilla asetuksilla, mitä tietoja esimiehet voivat tarkastella. Näitä kenttiä ovat seuraavat:
+Voit nyt tarkastella vanhentuvia tietueita esimiehen itsepalvelussa. Voit määrittää uusilla asetuksilla, mitä tietoja esimiehet voivat tarkastella. Vaihtoehtoja ovat esimerkiksi seuraavat:
 
 -   Todistukset
 
@@ -51,7 +51,7 @@ Voit määrittää tällä ominaisuudella päivämääräalueen, josta vanhenevi
 
 Voit määrittää rooliin asetuksilla, jotka tulevat käytettäviksi siirtopyynnön antamisen aikana. Tämä ominaisuus lisää joustavuutta organisaation rooleihin.
 
-Työntekijöiden siirtoa pyytäneet esimiehillä ei esimerkiksi ehkä ole kompensaatiosummien ehdotus- tai antamisoikeutta tai he eivät voi valita tehtäväluetteloita, jotka liitetään siirtopyyntöön. Esimiehet ovat tässä tapauksessa voineet luoda ja lähettää siirtopyyntöjä, mutta eivät ole voineet antaa kompensaatiota tai tehtäväluettelomäärityksiä. Henkilöstöhallinto voi tässä määrityksessä määrittää sekä uudet kompensaatioarvot että mahdolliset lisätarkistusluettelot, jotka on täytettävä siirron valmistuttua.
+Työntekijöiden siirtoa pyytäneet esimiehillä ei esimerkiksi ehkä ole kompensaatiosummien ehdotus- tai antamisoikeutta tai he eivät voi valita tehtäväluetteloita, jotka liitetään siirtopyyntöön. Esimiehet voivat luoda ja lähettää siirtopyyntöjä, mutta eivät voi syöttää kompensaatiota tai tehtäväluettelomäärityksiä. Henkilöstöhallinto voi tässä määrityksessä määrittää uudet kompensaatioarvot ja mahdolliset lisätarkistusluettelot, jotka on täytettävä siirron valmistuttua.
 
 Uudet määritysasetukset on oletusarvoisesti määritetty olemaan muuttamatta ominaisuuksia ennen tätä päivitystä.
 
@@ -59,7 +59,7 @@ Uudet määritysasetukset on oletusarvoisesti määritetty olemaan muuttamatta o
 
 Loma ja poissaolo -kohdassa on lisää päivämääräkenttiä.
 
-Voit määrittää tällä ominaisuudella jaksotuskausiperustan käyttämään suunnitelmatasolla tiettyjä työntekijäpäivämääriä. Tällä tavoin muita päivämääriä kuin suunnitelman aloituspäivä käytettäväksi loman jaksotusprosessissa. Työntekijäkohtaisissa päivämääräasetuksissa on seuraavat arvot:
+Voit määrittää tällä ominaisuudella jaksotuskausiperustan käyttämään suunnitelmatasolla tiettyjä työntekijäpäivämääriä. Loman jaksotusprosessissa voidaan käyttää kaikkia päivämääriä suunnitelman aloituspäivämäärää lukuun ottamatta. Työntekijäkohtaisissa päivämääräasetuksissa on seuraavat arvot:
 
 -   Mukautettu (käytössä ennen tätä päivitystä)
 

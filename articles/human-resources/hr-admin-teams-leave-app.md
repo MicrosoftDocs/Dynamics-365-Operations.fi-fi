@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
+ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930014"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4476074"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
@@ -86,7 +86,6 @@ Kun olet ottanut ilmoitukset käyttöön Human Resourcesin Teams-sovelluksessa, 
 
 | Varasto-otto | Tila |
 | --- | --- |
-| Vaakasuuntainen vieritys ei toimi Android-puhelimissa | Vaakasuuntainen vieritys ei ole ongelma iOS- tai työpöytälaitteissa. Pyrimme korjaamaan asian Androidille. |
 | Saldo on virheellinen, kun lähetetään tulevaisuudessa olevaa päivämäärää koskeva poissaolo. | Ennakointi ei ole vielä käytettävissä. Saldo näkyy kuluvalta päivältä. |
 | **Tarkistuksessa**-tilassa olevaa pyyntöä ei voi peruuttaa. | Tätä toimintoa ei tällä hetkellä tueta ja se lisätään tulevaan julkaisuun. |
 | Saldotiedot lasketaan kuluvasta päivästä alkaen. | Järjestelmä ei tällä hetkellä näytä jaksotuskauden saldoa, vaikka se on määritetty loma- ja poissaoloparametreissa. |

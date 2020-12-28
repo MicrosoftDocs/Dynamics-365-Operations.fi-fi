@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 855eafaca88d180997cf5a68c7f0fe975c177f88
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 115d7cd3d71eaddce2434cb1939c503d36bccdf8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898916"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527287"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (5. maaliskuuta 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -76,5 +78,5 @@ Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Kompensaation lisäsuojaus (kiinteä ja muuttuva)
 Monissa organisaatioissa etuuspäälliköt voivat käyttää vain tiettyjä kompensaatiotietueita, kuten johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta voit hallita ja ylläpitää organisaation erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Kiinteille ja muuttuville suunnitelmille voidaan määrittää käyttöoikeusrooleja, jotka määrittävät kyseisten suunnitelmien ja niihin liittyvien työntekijätietojen, kuten palkkatietojen tai bonustietueiden, käyttöoikeuden. Vain roolit, joilla on tietty käyttöoikeus, voivat käsitellä kyseisten työntekijöiden kompensaatiota.
 
-###  <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 24
-Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 24:stä on kohdassa [Finance and Operations -käyttöympäristöpäivitys 24:n uudet ja muuttuneet ominaisuudet (maaliskuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Ympäristön päivitys 24 Finance and Operationsille
+Lisätietoja Finance and Operationsin Platform update 24:stä on kohdassa [Finance and Operations Platform update 24:n (maaliskuu 2019) uudet ja muuttuneet ominaisuudet](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

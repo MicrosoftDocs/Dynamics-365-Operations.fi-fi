@@ -3,7 +3,7 @@ title: Ehdokkaiden rekrytointi LinkedIn Recruiterilla Attractissa
 description: Rekrytoi ehdokkaita työpaikkaan LinkedIn Recruiterin avulla käyttämällä Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraatiota.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 96e4660c4958bf5f2a0910bfad770e1e713f800f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833043"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528266"
 ---
 # <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Ehdokkaiden rekrytointi LinkedIn Recruiterilla Attractissa
 
@@ -34,6 +34,9 @@ LinkedIn on maailman suurin verkossa toimiva asiantuntijaverkosto, jonka avulla 
 
 Jos tämä toiminto ei näytä olevan käytössä, ota yhteys järjestelmänvalvojaan. Ennen kuin LinkedIn Recruiteria voi käyttää Attractista, järjestelmänvalvojan on [LinkedIn-integraatio](./attract-admin-linkedin.md). Voit sitten määrittää LinkedIn Recruiter -yhteyden ja aloittaa ehdokkaiden etsimisen.
 
+>[!IMPORTANT]
+>1. heinäkuuta 2020 alkaen LinkedInissä ei enää ole Internet Explorer 11 -tukea. Käyttäjät voivat yhä käyttää LinkedInia Internet Explorer 11:n avulla, mutta heitä kehotetaan päivittämään selain tai käyttämään toista selainta. Lisätietoja on kohdassa [LinkedInin tuetut internet-selaimet](https://www.linkedin.com/help/linkedin/answer/4135/supported-internet-browsers-for-linkedin).
+
 ## <a name="set-up-your-connection-with-linkedin-recruiter"></a>LinkedIn Recruiter -yhteyden määrittäminen
 
 LinkedIn Recruiter -yhteys on määritettävä, ennen kuin voit aloittaa LinkedIn Recruiterin käytön Attractissa. Tarvitset tässä vaiheessa LinkedIn Recruiter -tunnistetiedot.
@@ -42,19 +45,35 @@ LinkedIn Recruiter -yhteys on määritettävä, ennen kuin voit aloittaa LinkedI
 2. Valitse **Käyttäjäasetukset**.
 3. Valitse **Yhteydet**-välilehdessä **Yhdistä**-asetus **LinkedIn**-kohdan vieressä. Noudata LinkedInin antamia ohjeita.
 
-    ![[LinkedIn Recruiter -yhteyden muodostaminen Attractista](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
+    ![[LinkedIn Recruiterin yhteyden määrittäminen Attractista](./media/attract-set-up-linkedin-recruiter-connection.png)](./media/attract-set-up-linkedin-recruiter-connection.png)
 
 ## <a name="view-linkedin-candidates-in-attract"></a>LinkedIn-ehdokkaiden näyttäminen Attractissa
 
 Kun olet muodostanut LinkedIn Recruiter -yhteyden, voit tarkastella ehdokkaiden LinkedIn-profiileja Attractissa.
 
+>[!NOTE]
+>Jos sinulle on määritetty työhönottajan rooli, näet ehdokkaiden kaikki tiedot.<br><br>
+>Jos sinulla on työhön ottavan esimiehen rooli tai jos sinulle ei ole määritetty roolia, muista kirjautua ulos LinkedInista tai LinkedIn Recruiterista ennen kuin siirryt Attractissa ehdokkaan LinkedIn-välilehteen. Näkyvissä ovat ehdokkaan julkisen profiilin perustiedot, kuten etu- ja sukunimi.
+
 1. Valitse Attractissa vasemmalla **Työt** tai **Kykypoolit** ja valitse sitten hakija.
 
     ![[LinkedIn-ehdokkaiden näyttäminen Attractissa](./media/attract-view-linkedin-candidates.png)](./media/attract-view-linkedin-candidates.png)
 
-2. Valitse ehdokkaan profiilissa **LinkedIn**-välilehti. Voit tarkastella ehdokkaan profiilia sekä InMail-historiatietoja ja LinkedInin huomautusten historiatietoja.
+2. Valitse ehdokkaan profiilissa **LinkedIn**-välilehti. Voit tarkastella ehdokkaan profiilia ja InMail-historiatietoja.
 
-Voit tallentaa ehdokkaan täällä LinkedIn Recruiter -projektiin, lähettää inMail-viestejä tai määrittää LinkedIn Recruiter -hälytyksen päivitystoiminnolla.
+   ![Ehdokkaan LinkedIn-tietojen tarkasteleminen](./media/attract-candidate-linkedin-tab.png)
+
+Tässä voit myös tehdä seuraavia toimenpiteitä:
+
+- Valitse **Rekrytointitehtävät**-välilehti, jos haluat tarkastella seuraavia tietoja:
+   
+   - Työhönottajan huomautukset (sekä julkiset että yksityiset). Oletusarvoisest huomautukset ovat yksityisiä. Ne näkyvät vain huomautusten omistajille.
+   - InMail-aktiviteetti (mutta ei InMail-sisältö). Siirry sivun alaosaan, jos haluat tarkastella InMail-siirtoa ja prospektia sekä organisaation muita käyttäjiä, jotka ovat yhteydessä prospektin kanssa.
+   - Ehdokkaan hylkäystehtävä
+
+- Valitse **Lähetä InMail**, jos haluat lähettää InMailin poistumatta Attractista.
+
+- Valitse **Tallenna työhön**, jos haluat tallentaa työn poistumatta Attractista.
 
 > [!NOTE]
 > Ehdokkaan LinkedIn-profiili näytetään Attractissa, kun ehdokkaan Attract-tiedot vastaavat LinkedIn-tietoja. Käytettävät vastaavuussäännöt:
@@ -87,7 +106,7 @@ Voit seurata LinkedIn Recruiterissa, onko ehdokas hakenut organisaatiossa muita 
     - **Haastattelun palaute** – katso, mitä palautetta haastattelijat ovat lähettäneet Attractissa.
     - **Huomautukset** – katso, mitä tätä ehdokasta koskevia huomautuksia on annettu Attractissa.
 
-    ![[Attract-tietojen näyttäminen LinkedIn Recruiterissa](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
+    ![[Attract-tietojen tarkastelemien LinkedIn Recruiterissa](./media/attract-view-information-from-linkedin-recruiter.png)](./media/attract-view-information-from-linkedin-recruiter.png)
 
 > [!NOTE]
 > Ehdokkaan ja hakemuksen tietoja ei synkronoida LinkedIn Recruiterin kanssa, jos ehdokas ei ole siirtynyt prospektivaiheesta eteenpäin.

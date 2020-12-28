@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896923"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528216"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 2, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -54,8 +56,8 @@ Attractissa ja Onboardissa loppukäyttäjien kirjaamat ongelmat Ilmoita ongelmas
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2216.
 
-### <a name="platform-update-25-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 25
-Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 25:stä on artikkelissa [Dynamics 365 for Finance and Operations -käyttöympäristöpäivitys 25:n esikatselutoiminnot (huhtikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Ympäristön päivitys 25 Finance and Operationsille
+Lisätietoja Finance and Operationsin Platform update 25 -päivityksestä on kohdassa [Dynamics 365 for Finance and Operationsin Platform update 25 -päivityksen esiversio-ominaisuudet (huhtikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Kompensaation lisäsuojaus (kiinteä ja muuttuva)
 Monissa yrityksissä etuuspäälliköillä on ehkä vain määrättyjen kompensaatiotietueiden käyttöoikeus. Ne voivat olla johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta henkilöstöhallinto voi hallita ja ylläpitää organisaation erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Voit määrittää käyttöoikeusrooleja kiinteille ja muuttuville suunnitelmille. Nämä käyttöoikeusroolit määrittävät käyttöoikeudet suunnitelmiin ja liittyviin työntekijätietoihin, kuten palkan tai bonuksen tietueisiin, jotta vain nämä roolit voivat käsitellä työntekijäryhmien kompensaatioita.
@@ -77,4 +79,4 @@ Organisaatiot saattavat vaatia syykoodien asettamista tietylle lomalajeille, kun
 Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila näyttää löytyneiden kopioiden määrän. Voit valita uuden sivun sisältävän linkin arvioidaksesi, käytetäänkö tunnistettua vastausta. Tietojen syöttämisen keskeyttämisen välttämiseksi kaksoiskappale ei avaudu automaattisesti.
 
 ###  <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
-Finance and Operations -käyttöympäristöpäivitys 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköposti-ilmoituksia yhteyshenkilöille, kun tapahtuma käynnistyy. 
+Finance and Operationsin Platform update 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy. 

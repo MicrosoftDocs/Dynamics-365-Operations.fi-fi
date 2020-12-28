@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078040"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527690"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Hanki osaajia kykypoolien avulla Attractissa
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Rekrytoijat ja työhönottopäälliköt voivat järjestää hakijat Attractin kykypoolitoiminnolla. Kykypoolien avulla voi seurata kaikkia hakijoita, jotka hakevat työpaikkaa yrityksessä, sekä viestiä heidän kanssaan.
 
@@ -113,7 +115,7 @@ Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. **Profiili**-välileh
 
 - **Asiakirjat**-välilehdessä näkyy kaikki asiakirjat, jotka hakija on lisännyt profiilistaan tai työnhakuprosessien aikana. Voit hallita tässä välilehdessä esimerkiksi hakijan ansioluetteloita, saatekirjeitä ja portfoliotöitä. Tässä välilehdessä voi myös lisätä asiakirjoja.
 
-    Valitse tarkastelevan asiakirjan nimi asiakirjaluettelossa. Voit tarkastella Microsoft Word -asiakirjoja sovelluksessa Microsoft Office 365:n avulla. Voit myös ladata asiakirjat paikalliseen tietokoneeseen käyttämällä kussakin asiakirjassa olevaa **Lataa**-asetusta.
+    Valitse tarkastelevan asiakirjan nimi asiakirjaluettelossa. Voit tarkastella Microsoft Word -asiakirjoja sovelluksessa Microsoft 365:n avulla. Voit myös ladata asiakirjat paikalliseen tietokoneeseen käyttämällä kussakin asiakirjassa olevaa **Lataa**-asetusta.
 
 - Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa](./attract-linkedin-recruiter.md).
 

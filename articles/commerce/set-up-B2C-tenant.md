@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1910563865a21dab3345a82711ead9b9e57b92fa
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980961"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517377"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -345,19 +345,19 @@ Valinnainen toissijainen järjestelmänvalvojatili voidaan lisätä B2C-vuokraaj
 
 [Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
-[Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
+[Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
-[Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+[Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+[Lataa URL-uudelleenohjaukset joukkotoimintona](upload-bulk-redirects.md)Liitä Dynamics 365 Commerce -sivusto online-kanavaan
 
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
 
-[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
+[Useiden kuluttajakaupan vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
