@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712349"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418398"
 ---
 # <a name="request-time-off"></a>Pyydä poissaoloaikaa
 
@@ -31,9 +31,9 @@ Voit lähettää aikaa koskevia pyyntöjä, tarkastella lomaa ja jättää saldo
 
 ## <a name="request-time-off"></a>Pyydä poissaoloaikaa
 
-1. Valitse **työntekijän itsepalvelu** -työtilassa**vapaa-aikapyyntö** **Vapaasaldot**-ruudusta.
+1. Valitse **työntekijän itsepalvelu** -työtilassa **vapaa-aikapyyntö** **Vapaasaldot**-ruudusta.
 
-2. Kirjoita **lomatyypin**, **syykoodin**, **aloituspäivämäärän**ja **päättymispäivämäärän** tiedot.
+2. Kirjoita **lomatyypin**, **syykoodin**, **aloituspäivämäärän** ja **päättymispäivämäärän** tiedot.
 
 3. Valitse **Päivämäärät**-kohdasta lomapyyntösi päivämäärät.
 
@@ -49,13 +49,13 @@ Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös 
 
 ## <a name="view-leave-balances"></a>Näytä poissaolosaldot
 
-1. Valitse **työntekijän itsepalvelu** -työtilassa**Lisää** (…) **Vapaasaldot**-ruudusta.
+1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
 2. Valitse **Saldot**.
 
 ## <a name="view-leave-request-status"></a>Näytä lomapyynnön tila
 
-1. Valitse **työntekijän itsepalvelu** -työtilassa**Lisää** (…) **Vapaasaldot**-ruudusta.
+1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
 2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty loma-aika**. Voit tarkastella odottavia lomapyyntöjä valitsemalla **Loma-aika pyynnöt**.
 

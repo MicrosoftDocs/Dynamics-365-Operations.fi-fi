@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817179"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412067"
 ---
 # <a name="media-gallery-module"></a>Mediavalikoimamoduuli
 
@@ -90,7 +90,7 @@ Voit lisätä mediavalikoimamoduulin markkinointisivulle seuraavasti.
 1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Mediavalikoima**-moduuli ja valitse sitten **OK**.
 1. Valitse mediavalikoimamoduulin ominaisuusruudun **Kuvalähde**-kohdassa **Tuotetunnus**. Anna sitten **Tuotetunnus**-kenttään tuotetunnus.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Nyt tuotteen kuvien tulisi näkyä valikoimanäkymässä.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Nyt tuotteen kuvien tulisi näkyä valikoimanäkymässä.
 1. Jos haluat käyttää vain kuratoituja kuvia, valitse ominaisuusruudun **Kuvalähde**-kohdassa **Tuotetunnus**. Valitse sitten **Kuvat**-kohdassa **Lisää kuva** niin monta kertaa kuin vaaditaan kuvien lisäämiseksi mediakirjastoon.
 1. Määritä haluamasi lisäominaisuudet, kuten **Kuvan zoomaus**, **Zoomauskerroin** ja **Pikkukuvien suuntaus**.
 1. Kun olet valmis, valitse **Tallenna**. Valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.

@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830120"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411987"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Puhelinkeskustilauksen pidon määrittäminen ja käyttäminen
 
@@ -36,7 +36,7 @@ Tässä ohjeaiheessa käsitellään puhelinkeskuksen tilauksissa käytettäviä 
 
 Puhelinkeskuksen tilauspitotoimintojen käyttöä varten on ensin määritettävä pitokoodit. Voit luoda yrityksen tarpeiden perusteella käyttäjän määrittämän pitokoodijoukon valitsemalla **Myynti ja markkinointi** \> **Määritys** \> **Myyntitilaukset** \> **Tilauksen pitokoodit**. Voit halutessasi merkintä jonkin pitokoodeista oletuspitokoodiksi valitsemalla kyseisen koodin **Myyntitilauksen oletusarvo** -asetuksiksi **Kyllä**. Tätä pitokoodia käytetään aina, kun pitokoodi asetetaan pitoon. Jos myyntilauksella on varattua varastoa ja varaukset on automaattisesti poistettava, jos tilaus asetetaan tietystä syytä pitoon, valitse syykoodien **Poista varastovarauksia** -asetukseksi **Kyllä**.
 
-Voit määrittää minkä tyyppinen huomautus siepataan, kun myyntitilauksen pitoon asettavat käyttäjät lisäävät lisähuomautuksia, valitsemalla ensin **Myyntireskontra** \> **Määritys** \> **Myyntireskontran parametrit** ja määrittämällä sitten **Myynnin asetukset** -pikavälilehden **Yleiset**-välilehdessä **Huomautustyyppi**-kentän. Voit määrittää**Pidossa olevan myyntitilauksen tila** -kentässä millä värillä pidossa olevat myyntitilauksen korostetaan, kun näitä tilauksia katsotaan **Asiakaspalvelu**-sivulla.
+Voit määrittää minkä tyyppinen huomautus siepataan, kun myyntitilauksen pitoon asettavat käyttäjät lisäävät lisähuomautuksia, valitsemalla ensin **Myyntireskontra** \> **Määritys** \> **Myyntireskontran parametrit** ja määrittämällä sitten **Myynnin asetukset** -pikavälilehden **Yleiset**-välilehdessä **Huomautustyyppi**-kentän. Voit määrittää **Pidossa olevan myyntitilauksen tila** -kentässä millä värillä pidossa olevat myyntitilauksen korostetaan, kun näitä tilauksia katsotaan **Asiakaspalvelu**-sivulla.
 
 Voit luoda valinnaisen pidon syykoodijoukon valitsemalla **Retail ja Commerce** \> **Kanavan asetukset** \> **Tietokoodit**. Näitä tietokoodeja voi käyttää toissijaisina syykoodeina, jotka tarkentavat pääpitokoodin määritystä. Voit luoda uuden syykoodijoukon valitsemalla **Uusi** ja määrittää sitten lisäsyiden luettelon valitsemalla **Alikoodit**. Voit linkittää minkä tahansa määrittämäsi tietokoodin puhelinkeskuskanavaan valitsemalla **Retail ja Commerce** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelunkeskukset**. Määritä **Yleiset**-pikavälilehdessä **Pitokoodi**-kenttä.
 

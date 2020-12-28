@@ -19,18 +19,18 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: eea67ddc1718902198b74614ee1a910fc6e29c1d
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097067"
+ms.locfileid: "4412112"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Kokeen tilan tarkistaminen
 Kokeen määrittäminen ja suorittaminen Dynamics 365 Commercessa on monivaiheinen prosessi. Lisätietoja kokeilun elinkaaresta on kohdassa [Kokeilut Dynamics 365 Commercessa](experimentation-overview.md).
 
-Kokeen elinkaaren vaiheen voi tarkistaa Commercen sivustonmuodostimen vasemman siirtymisruudun **Kokeet** -kohdassa. Näkyvissä on koeluettelo sekä kunkin kokeen tila sekä Commercessa että siinä kolmannen osapuolen palvelussa, jossa kokeet luodaan, variaatiot määritetään ja tiedot analysoidaan.
+Kokeen elinkaaren vaiheen voi tarkistaa Commercen sivustonmuodostimen vasemman siirtymisruudun **Kokeet**-kohdassa. Näkyvissä on koeluettelo sekä kunkin kokeen tila sekä Commercessa että siinä kolmannen osapuolen palvelussa, jossa kokeet luodaan, variaatiot määritetään ja tiedot analysoidaan.
 
-**Commerce-tila** -sarakkeessa on jokin seuraavista arvoista: 
+**Commerce-tila**-sarakkeessa on jokin seuraavista arvoista: 
 - **Luonnos** – koe on yhdistetty sivuun tai osaan Commercessa ja sitä muokataan.
 - **Julkaistu** – Kokeen variaatiot ovat valmiita näytettäviksi sivustossa. Jos koe suoritetaan kolmannen osapuolen palvelussa, sivuston käyttäjät näkevät kolmannen osapuolen palvelun valitseman sivu- tai osavariaation.
 - **Julkaisu peruutettu** – Koe ei ole enää käytettävissä sivustossa. Sivuston käyttäjät näkevät vain sivun tai osan oletusversion, vaikka suoritus olisi käynnissä kolmannen osapuolen palvelussa.

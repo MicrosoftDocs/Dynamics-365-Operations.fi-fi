@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39e597b88afcca69623b1a23acc95e4da3873082
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818296"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412137"
 ---
 # <a name="delivery-options-module"></a>Toimitusvaihtoehdot -moduuli
 
@@ -69,6 +69,8 @@ Toimitusvaihtoehdot-moduuli voidaan lisätä vain kassalle-moduuliin. Lisätieto
 [Maksumoduuli](payment-module.md)
 
 [Toimitusosoitemoduuli](ship-address-module.md)
+
+[Noudon tiedot -moduuli](pickup-info-module.md)
 
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 

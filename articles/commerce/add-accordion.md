@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817131"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411889"
 ---
 # <a name="accordion-module"></a>Haitarimoduuli
 
@@ -75,7 +75,7 @@ Voit lisätä haitarimoduulin Usein kysyttyjä kysymyksiä -sivulle ja määritt
 1. Valitse **Lisää moduuli** -valintaikkunassa **Tekstilohko**-moduuli ja valitse sitten **OK**.
 1. Kirjoita tekstilohkomoduulin ominaisuusruutuun tekstikappale (esimerkiksi **Palautus on käsiteltävä Call Centerin kautta. Ota yhteyttä 1-800-FABRIKAM palautuksiin liittyen. Tuotteilla on 30 päivän palautuskäytäntö. Palautus on aloitettava tämän aikavälin sisällä.**).
 1. Lisää **Haitari**-paikassa muutama haitarinimikemoduuli. Lisää kuhunkin haitarinimikemoduuliin tekstilohkomoduuli, jossa on sisältöä.
-1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivulla näkyy haitarimoduuli, jossa on lisäämäsi sisältö.
+1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivulla näkyy haitarimoduuli, jossa on lisäämäsi sisältö.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit

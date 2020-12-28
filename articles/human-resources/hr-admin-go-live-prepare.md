@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011413"
+ms.locfileid: "4418403"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resourcesin julkistamisen valmistelu
 
@@ -57,7 +57,7 @@ Jokaisen käyttöönottoprojektin tärkeä välitavoite on valmistelusiirto tuot
 
 Microsoft valmistelee tuotantoesiintymän vasta, kun toteuttaminen on lähellä **käytön** vaihetta. Se tehdään sen jälkeen, kun LCS-menetelmän pakolliset aktiviteetit on suoritettu. Tällä tavoin varmistetaan, että tuotantoympäristöä käytetään live-toimintoihin. Lisätietoja tilauksessa olevista ympäristöistä on  [Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Asiakkaiden on suoritettava LCS-menetelmän **Analyysi** -, **Suunnittelu ja kehitys** sekä **Testi** -vaiheet, ennen kuin tuotantoympäristön pyytämiseen tarkoitettu  **Määritys** -painike on käytettävissä. LCS-vaiheen päättäminen edellyttää, että kyseisen vaiheen jokainen osavaihe on suoritettu. Kun kaikki vaiheen osavaiheet on suoritettu, koko vaihe voidaan päättää. Vaiheen voi aina avata myöhemmin uudelleen, jos muutoksia on tehtävä. Lisätietoja on kohdassa  [Finance and Operations -sovellusten asiakkaiden Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
+Asiakkaiden on suoritettava LCS-menetelmän **Analyysi**-, **Suunnittelu ja kehitys** sekä **Testi**-vaiheet, ennen kuin tuotantoympäristön pyytämiseen tarkoitettu  **Määritys**-painike on käytettävissä. LCS-vaiheen päättäminen edellyttää, että kyseisen vaiheen jokainen osavaihe on suoritettu. Kun kaikki vaiheen osavaiheet on suoritettu, koko vaihe voidaan päättää. Vaiheen voi aina avata myöhemmin uudelleen, jos muutoksia on tehtävä. Lisätietoja on kohdassa  [Finance and Operations -sovellusten asiakkaiden Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 Osavaiheen päättämisprosessissa on kaksi osaa: 
 

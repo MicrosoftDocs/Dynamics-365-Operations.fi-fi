@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428659"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418347"
 ---
 # <a name="define-new-jobs"></a>Määritä uudet työt
 
@@ -57,7 +57,7 @@ Tässä tehtävässä keskitytään uuden työn luomiseen. Se tehdään mallitoi
 21. Etsi haluamasi tietue luettelosta ja valitse se.
 22. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 23. Ota käyttöön Osaamisalueet-osan laajennus.
-    * Huomaa, että Osaamisalue-, Koulutus- ja Todistukset-pikavälilehden kentät ovat tyhjiä. Kun tiedot on kopioitu työmalliin, näiden kenttien tiedot syötetään yhdessä vaiheessa.   
+    * Huomaa, että Osaamisalue-, Koulutus- ja Todistukset-pikavälilehden kentät ovat tyhjiä. Kun tiedot on kopioitu työmalliin, näiden kenttien tiedot syötetään yhdessä vaiheessa.   
 24. Valitse Tallenna.
 25. Valitse Kopiointikohde.
 26. Valitse Kopioi mallista.

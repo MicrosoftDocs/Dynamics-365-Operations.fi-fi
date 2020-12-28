@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055734"
+ms.locfileid: "4412107"
 ---
 # <a name="navigation-menu-module"></a>Siirtymisvalikkomoduuli
 
@@ -44,12 +44,12 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston siirtymisvalikosta, jossa on 
 
 | Ominaisuuden nimi             | Arvo                 | kuvaus |
 |---------------------------|-----------------------|-------------|
-| Lähde                  | **Vähittäismyynti** , **Manuaalinen luominen** , **Vähittäismyynti ja manuaalinen luominen** | **Vähittäismyynti** -arvon ansiosta Commerce Headquarters -sovelluksen kanavan siirtymishierarkia voidaan näyttää siirtymisvalikossa. **Manuaalisen luominen** -arvo sallii staattisten valikon vaihtoehtojen kuratoinnin. **Vähittäismyynti ja manuaalinen luominen** -arvo sallii näiden yhdistämisen. |
+| Lähde                  | **Vähittäismyynti**, **Manuaalinen luominen**, **Vähittäismyynti ja manuaalinen luominen** | **Vähittäismyynti**-arvon ansiosta Commerce Headquarters -sovelluksen kanavan siirtymishierarkia voidaan näyttää siirtymisvalikossa. **Manuaalisen luominen** -arvo sallii staattisten valikon vaihtoehtojen kuratoinnin. **Vähittäismyynti ja manuaalinen luominen** -arvo sallii näiden yhdistämisen. |
 | Näytä luokan kuvat | **Tosi** vai **Epätosi**    | Kun tämä ominaisuus on käytössä, tämä ominaisuus näyttää siirtymisvalikon luokan kuvat Commerce Headquarters -sovelluksessa määritetyllä tavalla. Lisätty Commercen versioon 10.0.14. |
 | Ota monitasoinen siirtymisvalikko käyttöön | **Tosi** vai **Epätosi** | Jos tämä ominaisuus on otettu käyttöön, siirtymisvalikossa näkyy monta siirtymishierarkian tasoa. Tämä ominaisuus on saatavana Dynamics 365 Commercen versiossa 10.0.15. |
 | Tasojen määrä | kokonaisluku | Tämä ominaisuus määrittää, kuinka monta tasoa voidaan näyttää, jos **Ota monitasoinen siirtymisvalikko käyttöön** -ominaisuuden arvoksi on määritetty **Tosi**. |
 | Staattinen valikon vaihtoehto| Arvomatriisi| Staattisia valikon vaihtoehtoha, jotka liittävät valikon vaihtoehdon nimen ja linkin staattisen sivuston sivuun. Voit luoda valikon vaihtoehtoja muiden valikon vaihtoehtojen alle. Oletusarvoisesti staattinen valikko näkyy juuri tasolla. Se liitetään kanavan siirtymishierarkiaan, jos se on olemassa. |
-| Näytä päävalikko | **Tosi** vai **Epätosi** | Jos tämä ominaisuus on otettu käyttöön, siirtymisvalikko voidaan määrittää mukautetussa juuressa (kuten **Osta nyt** ). Tämä ominaisuus on saatavana Dynamics 365 Commercen versiossa 10.0.15. |
+| Näytä päävalikko | **Tosi** vai **Epätosi** | Jos tämä ominaisuus on otettu käyttöön, siirtymisvalikko voidaan määrittää mukautetussa juuressa (kuten **Osta nyt**). Tämä ominaisuus on saatavana Dynamics 365 Commercen versiossa 10.0.15. |
 | Päävalikko | merkkijono | Tällä ominaisuudella voi määrittää mukautetun juuren teksti, jos **Näytä päävalikko** -ominaisuudeksi on määritetty **Tosi**. |
 
 Seuraavassa kuvassa näkyy esimerkki Fabrikam-sivuston siirtymisvalikossa näkyvästä luokan kuvasta.

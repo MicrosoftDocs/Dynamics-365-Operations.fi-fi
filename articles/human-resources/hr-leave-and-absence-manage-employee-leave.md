@@ -1,9 +1,9 @@
 ---
 title: Työntekijän loman hallinta
-description: Määritä henkilöstöhallinnon parametrit lomaa ja poissaoloa varten Dynamics 365 Human Resourcesissa.
+description: Hallinnoi työntekijän lomia Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/30/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c45d2c57d89929ac9c423ab58aee4cbfa213509
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712124"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418416"
 ---
 # <a name="manage-employee-leave"></a>Työntekijän loman hallinta
 
@@ -44,6 +44,13 @@ Voit hallita työntekijän lomaa lomatyypin mukaan. Tämä koskee vanhentuvia lo
 6. Vaihtoehtoisesti voit valita **Päivämäärän**. 
 
 Voit sisällyttää syykoodin ja kommentin, kun säädät työntekijän lomasaldoa. 
+
+>[!IMPORTANT]
+>Lomasaldojen lisätietojen tarkasteleminen esikatselussa. Se on otettava käyttöön **eristysympäristössä**. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br>
+>Kun mikä tahansa lomasaldo valitaan osoittamalla, näkyvissä ovat nyt seuraavat tiedot:<br>
+>- **Saatavilla**: Yhteensä tänä vuonna - Otto tänä vuonna
+>- **Yhteensä tänä vuonna**: Kaikki tämän vuoden kertymät, oikaisut ja siirtokirjaukset
+>- **Otetut tänä vuonna**: Hyväksytyt poissaolot yhteensä
 
 ## <a name="see-also"></a>Lisätietoja
 

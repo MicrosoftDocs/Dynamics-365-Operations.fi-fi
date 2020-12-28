@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008840"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418368"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Toistuvien tietovientien sovelluksen luomisen
 
@@ -104,7 +104,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
     3. Määritä HTTP:n **KIRJAA**-pyyntö kutsuaksesi DMF REST API:n **ExportToPackage**.
 
         - **Menetelmä:** KIRJAA
-        - **Pyynnön URL-osoite:** https://\<isäntänimi\>/nimitilat/\<nimitila\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
+        - **Pyynnön URL-osoite:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
         - **Pyynnön teksti:**
 
             ```JSON
@@ -141,7 +141,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
         > Tässä esimerkissä ei suoriteta virheiden tarkistusta. Ohjelmointirajapinta **GetExecutionSummaryStatus** voi palauttaa epäonnistuneita päätetiloja (eli muita tiloja kuin **Onnistui**). Lisätietoja on kohdassa [API-dokumentaatio](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Menetelmä:** KIRJAA
-        - **Pyynnön URL-osoite:** https://\<isäntänimi\>/nimitilat/\<nimitila\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
+        - **Pyynnön URL-osoite:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
         - **Pyynnön teksti** body('Invoke\_an\_HTTP\_request')?['value']
 
             > [!NOTE]
@@ -159,7 +159,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
     - Lisää **Aktivoi HTTP-pyyntö** -toiminto kutsuaksesi DMF REST-API:n [getexportdpackageurl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST-API-liittymään.
 
         - **Menetelmä:** KIRJAA
-        - **Pyynnön URL-osoite:** https://\<isäntänimi\>/nimitilat/\<nimitila\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
+        - **Pyynnön URL-osoite:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Pyynnön teksti:** {"executionId": body('GetExportedPackageURL')?['value']}
 
         ![GetExportedPackageURL-toiminto](media/integration-logic-app-get-exported-package-step.png)

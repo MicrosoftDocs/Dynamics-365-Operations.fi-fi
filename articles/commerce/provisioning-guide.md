@@ -3,7 +3,7 @@ title: Dynamics 365 Commerce -arviointiympäristön valmisteleminen
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit valmistella Microsoft Dynamics 365 Commercen arviointiympäristön.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599847"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4412126"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön valmisteleminen
 
@@ -48,6 +48,7 @@ Lisätietoja Commercen arviointiympäristön määrittämistä valmistelun jälk
 
 Seuraavien edellytysten on oltava käytössä, ennen kuin voit määrittää Commercen arviointiympäristön:
 
+- Sinut on otettu mukaan arviointiohjelmaan ja sinulle on annettu kapsiteettia arviointiympäristöä varten.
 - Sinulla on Microsoft Dynamics Lifecycle Services -portaalin (LCS) käyttöoikeus
 - Olet aiemmin luotu Microsoft Dynamics 365 -kumppani tai -asiakas ja pystyt luomaan Dynamics 365 Commerce -projektin.
 - Sinulla on Microsoft Azure -tilauksen järjestelmänvalvojan käyttöoikeus tai olet yhteydessä tilauksen järjestelmänvalvojaan, joka voi avustaa tarvittaessa.
@@ -91,7 +92,7 @@ Määritä ympäristö näiden ohjeiden avulla.
 
 1. Valitse päävalikosta **Pilvipalveluympäristöt**.
 1. Valitse **+ Lisää** lisätäksesi ympäristön.
-1. Valitse **Sovelluksen versio** -kentässä uusin versio. Jos sinulla on erityinen tarve valita jokin muu sovellusversio kuin uusin versio, älä valitse vanhempaa versiota kuin **10.0.8.**
+1. Valitse **Sovelluksen versio** -kentässä uusin versio. Jos sinulla on erityinen tarve valita jokin muu sovellusversio kuin uusin versio, älä valitse vanhempaa versiota kuin **10.0.14.**
 1. Käytä **Käyttöympäristön versio** -kentässä käyttöympäristö versiota, joka valitaan automaattisesti valitsemaasi sovellusversioon. 
 
     ![Sovelluksen ja ympäristön versioiden valitseminen](./media/project1.png)

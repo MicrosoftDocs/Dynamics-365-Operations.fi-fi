@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015100"
+ms.locfileid: "4412097"
 ---
 # <a name="verify-page-content-accessibility"></a>Sivun sisällön helppokäyttöisyyden tarkistaminen
 
@@ -53,7 +53,7 @@ Voit ottaa [Microsoft helppokäyttöisyystietojen](https://accessibilityinsights
 
 Voit ottaa [Microsoft helppokäyttöisyystietojen](https://accessibilityinsights.io/) -integroinnin käyttöön yhdessä Commerce-sivustossa noudattamalla seuraavia ohjeita.
 
-1. Valitse **Sivustot** -kohdassa **Fabrikam** (tai sivuston nimi).
+1. Valitse **Sivustot**-kohdassa **Fabrikam** (tai sivuston nimi).
 1. Laajenna se valitsemalla vasemmasta siirtymisruudusta **Sivuston asetukset**.
 1. Valitse **Sivuston asetukset** -kohdasta **Ominaisuudet**.
 1. Määritä **Helppokäyttötoiminnon tarkistus** -asetukseksi **Käytössä**.
@@ -62,7 +62,7 @@ Voit ottaa [Microsoft helppokäyttöisyystietojen](https://accessibilityinsights
 
 Jos haluat käyttää integroitua [Microsoft helppokäyttöisyystiedot](https://accessibilityinsights.io/) -palvelua kotisivusi sisällön skannaukseen ja vahvistamiseen kaupankäynnin aikana, toimi seuraavasti.
 
-1. Valitse **Sivustot** -kohdassa **Fabrikam** (tai sivuston nimi).
+1. Valitse **Sivustot**-kohdassa **Fabrikam** (tai sivuston nimi).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivut**.
 1. Etsi ja valitse aloitussivu, joka avataan sivueditorissa.
 1. Valitse komentopalkissa **Tarkista helppokäyttöisyys**. **Tarkista helppokäyttöisyys** -sivu tulee näkyviin.

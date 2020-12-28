@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8439b88ccda3f72e5a9b918c6c89bd406599b516
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818223"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412129"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
@@ -105,7 +105,7 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 1. Valitse **Kassaosiokontti**-moduulissa kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunan **Lahjakortti**-, **Kanta-asiakkuus**- ja **Maksu**-moduulit ja valitse sitten **OK**. Tällä tavoin varmistat, että kaikki maksutavat näkyvät yhdessä osassa.
 1. Lisää **Käyttöehdot**-moduuliin **Kassan käyttöehdot** -moduuli, jos se on tarpeen. Määritä moduulin ominaisuudet -ruudussa käyttöehtojen teksti tarpeen mukaan.
-1. Valitse **Tallenna**ja esikatsele sitten osaa valitsemalla **Esikatselu**. Joitakin moduuleista ei ehkä hahmonneta esikatselussa, koska niissä ei ole ostoskorikontekstia.
+1. Valitse **Tallenna** ja esikatsele sitten osaa valitsemalla **Esikatselu**. Joitakin moduuleista ei ehkä hahmonneta esikatselussa, koska niissä ei ole ostoskorikontekstia.
 1. Valitse **Lopeta muokkaus** tallentaaksesi osan ja valitse sitten **Julkaise** julkaistaksesi sen.
 1. Luo malli, joka käyttää uutta kassaosaa.
 1. Luo kassasivu, joka käyttää uutta mallia.
@@ -120,7 +120,9 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 
 [Toimitusosoitemoduuli](ship-address-module.md)
 
-[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+[Toimitusvaihtoehtomoduuli](delivery-options-module.md)
+
+[Noudon tiedot -moduuli](pickup-info-module.md)
 
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 

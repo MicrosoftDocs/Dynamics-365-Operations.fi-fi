@@ -2,8 +2,8 @@
 title: Loma- ja poissaoloparametrien määrittäminen
 description: Määritä henkilöstöhallinnon parametrit lomaa ja poissaoloa varten Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712373"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4418417"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Loma- ja poissaoloparametrien määrittäminen
 
@@ -47,6 +47,19 @@ Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourc
 5. Määritä **Työntekijän itsepalvelu** -välilehdessä, voivatko esimiehet kirjoittaa loma- ja poissaolopyyntöjä työntekijöidensä puolesta.
 
 7. Valitse **Tallenna**.
+
+>[!IMPORTANT]
+>Loman ja poissaolon tarkasteleminen yrityksissä tapahtuu nyt esikatselussa. Se on otettava käyttöön **eristysympäristössä**, jotta loma- ja poissaolovaihtoehto otetaan käyttöön. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>Human Resourcesin jaettujen parametrien tarkastelemien ja muuttaminen
+
+1. Valitse **Henkilöstön hallinta** -sivulla **Linkit**-välilehti.
+
+2. Valitse **Määritys**-kohdasta **Human resourcesin jaetut parametrit**.
+
+3. Valitse **Laajennetut käyttöoikeudet** -välilehdessä **Kyllä** **Ota käyttöön yritystenvälinen lomanäkymä** -kohdassa, jos haluat loman olevan tarkasteltavissa eri yrityksissä.
+
+4. Valitse **Tallenna**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Loma- ja poissaoloparametrien tarkasteleminen ja muuttaminen
 

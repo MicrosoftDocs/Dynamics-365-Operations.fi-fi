@@ -3,7 +3,7 @@ title: Loma- ja poissaolopyyntöjen hallinta Teamsissa
 description: Tässä ohjeaiheessa käsitellään poissaolopyyntöjä Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3929990"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4418414"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Loma- ja poissaolopyyntöjen hallinta Teamsissa
 
 [!include [banner](includes/preview-feature.md)]
 
-Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksessa voi tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldon tietoja Microsoft Teamsissa. Voit käyttää bottia pyytääksesi tietoja ja aloittaaksesi lomapyynnön. **Poissaolo**-välilehdessä on lisätietoja. Lisäksi voit lähettää ihmisille tietoja tulevista poissaoloista ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
+Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksessa voi tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldon tietoja Microsoft Teamsissa. Voit käyttää bottia pyytääksesi tietoja ja aloittaaksesi lomapyynnön. **Poissaolo**-välilehdessä on lisätietoja. Voit myös lähettää ihmisille tietoja tulevista poissaoloista ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
 
 ## <a name="install-the-app"></a>Sovelluksen asentaminen
 
@@ -182,11 +182,25 @@ Jos et voi kirjautua sovellukseen, Microsoft Teamsiin kirjautumiseen käytettyä
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Virhe hyväksyttäessä lomapyyntöjä Human Resources -sovelluksessa Teamsissa
 
-Jos saat virheilmoituksen, kun yrität hyväksyä lomapyyntöjä Teams-sovelluksessa, tee seuraava vianmääritys:
+Jos saat virheilmoituksen, kun yrität hyväksyä lomapyyntöjä Teams-sovelluksessa, yritä tehdä seuraava vianmääritys:
 
 1. Tarkista, että tili, jolla kirjaudut Microsoft Teamsiin, on sama kuin se, jolla käytät Dynamics 365 Human Resourcesia.
 
 2. Tarkista myös, että saat hyväksyä pyynnön. Voit tehdä tämän loman hyväksymistyönkulun asetuksissa. Lisätietoja lomapyyntöjen työnkulusta on kohdassa [Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md).
+
+## <a name="known-accessibility-issues"></a>Tunnetut helppokäyttöisyyteen liittyvät ongelmat
+
+Teamsin Human Resources -sovellus sisältää seuraavat käytettävyysongelmat. Ne pyritään korjaamaan tulevissa versioissa.
+
+| Varasto-otto | Ratkaisuehdotus tai selitys |
+| --- | --- |
+| Työpöydän suurentaminen käyttämällä 400 %:n zoomausta piilottaa jotkin näkymän toimintopainikkeet. | Suosittelemme suurennuslasin käyttöä siihen asti, kunnes tämän zoomaustason tuki on käytettävissä. |
+| **Poissaolo**-välilehdessä VoiceOver-toiminto ilmoittaa painiketoiminnosta, kun poissaoloruudukon otsikkoa luetaan. | Ruudukon otsikko ja elementit ryhmitellään vuoden mukaan. Ne voidaan tiivistää. VoiceOver tulkitsee tämän toiminnalliseksi nimikkeeksi, vaikka näin ei ole. |
+| Jos sipaiset ponnahdusikkunan tai valikon ollessa avoinna, VoiceOver ohittaa ponnahdusikkunan tai valikon sisällön lukemisen. | Tutki sisältöä sormen avulla tapahtuvalla skannauksella. |
+| **Poissaolo**-välilehdessä on ylimääräinen sipaisuele siirryttäessä uuden pyynnön **Syykoodi**-kohtaan. | Piilotettua ohjausobjektia, jota sipaisulla siirtyminen yrittää käyttää, ei ole. |
+| Jos sipaiset **Poissaolo**-välilehdessä kalenterin ollessa auki, näkymä siirtyy ohjausobjektin ulkopuolelle uuden pyynnön yläosan tai pyynnön muokkauksen sijaan. | Kun käyttäjä on kohdassa **Siirry tähän päivään**, tätä pidetään ohjausobjektin päättymisenä. Näkymä siirtyy takaisin yläosaan sipaisemalla vastakkaiseen suuntaan. |
+| VoiceOver ei lue päivämäärien selitteitä. | Pareittain olevat päivämäärät ovat aina **alkamis**- ja **päättymispäivämäärä**. |
+| **Keskustelu**-välilehdessä kohdistus siirtyy takaisin alkuun, jossa syötettiin päivämäärä käyttöä helpottavan työkalun tai näppäimistön siirtymistoiminnon avulla. | Siirry käyttämällä sarkainta, kunnes olet jälleen syöttöalueella. |
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 

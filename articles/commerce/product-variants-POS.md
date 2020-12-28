@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.openlocfilehash: 1d6133d80d7674a1d896bc19a743a6bd4d0fb40f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022434"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412082"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Varastohaku myyntipisteessä (POS)
 
@@ -44,8 +44,8 @@ Voit antaa tuotteen numeron **Varastohaku**-sivulla numeronäppäimistöllä. Vo
 
 Kullekin sijainnille näytetään myös **Varattu**- ja **Tilattu**-määrät.
 
-- **Varattu** – tämä määrä viittaa sijainnissa tietyn tuotenumeron taustatoimintojen**Fyysiset varatut** -arvoon.
-- **Tilattu** – tämä määrä viittaa sijainnissa tietyn tuotenumeron taustatoimintojen**Tilattu yhteensä** -arvoon.
+- **Varattu** – tämä määrä viittaa sijainnissa tietyn tuotenumeron taustatoimintojen **Fyysiset varatut** -arvoon.
+- **Tilattu** – tämä määrä viittaa sijainnissa tietyn tuotenumeron taustatoimintojen **Tilattu yhteensä** -arvoon.
 
 ## <a name="locations-that-inventory-availability-information-is-shown-for"></a>Sijainnit, joiden varastosaatavuustiedot näytetään
 

@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 29c21ceb4c259f463f4a039942e51141201a9809
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097044"
+ms.locfileid: "4412113"
 ---
 # <a name="set-up-an-experiment"></a>Kokeen määrittäminen
 
@@ -42,7 +42,7 @@ Kaikki kokeet tarvitsevat mittarin, jolla mitataan variaatioiden vaikutusta ja v
 
 Onnistumismittarit määritetään seuraavasti:
 
-1. Valitse Commercen sivustonmuodostimen vasemmassa siirtymisruudussa **Sivut** -välilehti ja valitse sitten sivu, josta haluat kerätä mittaustietoja. 
+1. Valitse Commercen sivustonmuodostimen vasemmassa siirtymisruudussa **Sivut**-välilehti ja valitse sitten sivu, josta haluat kerätä mittaustietoja. 
 1. Siirry **Seurattava tapahtumatunnukset** -osaan seurattavan sivun tai moduulin oikeassa ominaisuusruudussa.
 1. Valitse **Näytä**. Näkyvissä on kaikki tapahtumatunnukset sisältävä luettelo. Kopioi seurattava tapahtuma ja liitä tapahtuma-avain sille varattuun sijaintiin kolmannen osapuolen palvelussa. Jos tarvitset useita tapahtumia, kopioi avaimet yksi kerrallaan. 
     - Lisätietoja kaikkien käytettävissä olevien tapahtumien ja määritteiden, myös sivunäkymien ja tuoton seuraamisen, näyttämisestä on kohdassa [Commerce-komponenttien diagnostiikka- ja vianmääritystapahtumat](dev-itpro/retail-component-events-diagnostics-troubleshooting.md).

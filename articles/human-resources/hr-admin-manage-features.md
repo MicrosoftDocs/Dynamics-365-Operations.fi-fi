@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "3230197"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418367"
 ---
 # <a name="manage-features"></a>Hallitse ominaisuuksia
 
@@ -42,7 +42,7 @@ Kun toiminto on yleisesti saatavana, se voidaan ottaa käyttöön tai poistaa k�
 Jos haluat käyttää esikatselutoimintoja, sinun on ensin otettava ne käyttöön omassa ympäristössäsi. Esiversio-ominaisuuksien käyttöönotto on ympäristökohtainen.
 
 > [!IMPORTANT]
-> Esiversiotoiminnot ovat käytettävissä vain **eritys**ympäristöissä. Kun otat esikatseluominaisuuden käyttöön, sallit esikastseluominaisuudet organisaation kaikille käyttäjille kyseisessä ympäristössä. Kun poistat esikatseluominaisuuden käytöstä, esikatseluominaisuudet eivät ole käyttäjien käytettävissä. Esiversio-ominaisuuksilla on Human Resourcesissa rajoitettu tuki. Niissä voi olla tavallista vähemmän tietosuoja- ja suojausominaisuuksia, eivätkä ne sisälly Human Resourcesin palvelutasosopimukseen (SLA). Älä käytä esiversio-ominaisuuksia henkilötietojen (eli henkilökohtaisesti tunnistettavien tietojen) käsittelyyn tai muiden sellaisten tietojen käsittelyyn, jotka edellyttävät lain- tai säädöstenmukaista suojelua.
+> Esiversiotoiminnot ovat käytettävissä vain **eritys** ympäristöissä. Kun otat esikatseluominaisuuden käyttöön, sallit esikastseluominaisuudet organisaation kaikille käyttäjille kyseisessä ympäristössä. Kun poistat esikatseluominaisuuden käytöstä, esikatseluominaisuudet eivät ole käyttäjien käytettävissä. Esiversio-ominaisuuksilla on Human Resourcesissa rajoitettu tuki. Niissä voi olla tavallista vähemmän tietosuoja- ja suojausominaisuuksia, eivätkä ne sisälly Human Resourcesin palvelutasosopimukseen (SLA). Älä käytä esiversio-ominaisuuksia henkilötietojen (eli henkilökohtaisesti tunnistettavien tietojen) käsittelyyn tai muiden sellaisten tietojen käsittelyyn, jotka edellyttävät lain- tai säädöstenmukaista suojelua.
 
 1. Valitse Human Resourcesissa **Järjestelmän hallinta**.
 

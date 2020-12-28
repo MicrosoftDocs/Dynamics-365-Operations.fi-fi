@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055424"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412128"
 ---
 # <a name="cart-module"></a>Ostoskorimoduuli
 
@@ -50,9 +50,9 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta. Tässä e
 
 | Ominaisuus | Arvot | kuvaus |
 |----------------|--------|-------------|
-| Otsikko | Otsikkoteksti ja -tunnus ( **H1** , **H2** , **H3** , **H4** , **H5** tai **H6** ) | Otsikko ostoskorille, kuten Ostoskassi tai Ostoskorin nimikkeet. |
-| Näytä Loppunut varastosta -virheet | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi** , ostoskori-sivulla näkyvät varastoon liittyvät virheet. On suositeltavaa määrittää tämän ominaisuuden arvoksi **Tosi** , jos varastotarkistuksia käytetään toimipaikassa. |
-| Näytä rivinimikkeiden kuljetusmaksut | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi** , ostoskorin rivinimikkeissä näkyy kuljetusmaksut, jos nämä tiedot ovat käytettävissä. Tämä toiminto ei ole tuettu Fabrikam-teemassa, koska käyttäjät valitsevat lähetyksen vain kassavirrasta. Tämä toiminto voidaan kuitenkin ottaa käyttöön muissa työnkuluissa, jos se on sovellettavissa. |
+| Otsikko | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Otsikko ostoskorille, kuten Ostoskassi tai Ostoskorin nimikkeet. |
+| Näytä Loppunut varastosta -virheet | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, ostoskori-sivulla näkyvät varastoon liittyvät virheet. On suositeltavaa määrittää tämän ominaisuuden arvoksi **Tosi**, jos varastotarkistuksia käytetään toimipaikassa. |
+| Näytä rivinimikkeiden kuljetusmaksut | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvo on **Tosi**, ostoskorin rivinimikkeissä näkyy kuljetusmaksut, jos nämä tiedot ovat käytettävissä. Tämä toiminto ei ole tuettu Fabrikam-teemassa, koska käyttäjät valitsevat lähetyksen vain kassavirrasta. Tämä toiminto voidaan kuitenkin ottaa käyttöön muissa työnkuluissa, jos se on sovellettavissa. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduulit, joita voidaan käyttää ostoskorimoduulissa
 
@@ -61,7 +61,7 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston ostoskärrysivusta. Tässä e
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
-Seuraavat ostoskorimoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset** :
+Seuraavat ostoskorimoduuliasetukset voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
 
 - **Maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
 - **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
@@ -79,18 +79,18 @@ Ostoskorimoduuli hakee tuotetiedot Commerce Scale Unitin ohjelmistorajapintojen 
 Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi osa** -valintaikkunassa **Ostoskori** -moduuli.
+1. Valitse **Uusi osa** -valintaikkunassa **Ostoskori**-moduuli.
 1. Kirjoita **Osan nimi** -kohtaan **Ostoskorin osa** ja valitse sitten **OK**.
-1. Valitse **Ostoskori** -paikka.
+1. Valitse **Ostoskori**-paikka.
 1. Valitse oikealla olevassa ominaisuudet-ruudussa kynäsymboli, kirjoita otsikko tekstikenttään ja valitse sitten valintamerkkisymboli.
-1. Valitse kolme pistettä ( **...** ) **Ostoskori** -paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin** -moduuli ja valitse sitten **OK**.
-1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse kolme pistettä (**...**) **Ostoskori**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan mallin nimi.
-1. Valitse jäsennyspuussa **Tekstiosa** -paikka. Valitse kolme pistettä ( **...** ) ja valitse sitten **Lisää osa**.
+1. Valitse jäsennyspuussa **Tekstiosa**-paikka. Valitse kolme pistettä (**...**) ja valitse sitten **Lisää osa**.
 1. Valitse **Valitse osa** -valintaikkunassa **Ostoskorin osa** ja valitse sitten **OK**.
-1. Valitse **Tallenna** , valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
 1. Valitse **Valitse malli** -valintaikkunassa malli, jonka loit aiemmin, lisää sivun nimi ja valitse sitten **OK**.
 1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**.
@@ -106,7 +106,9 @@ Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset omin
 
 [Toimitusosoitemoduuli](ship-address-module.md)
 
-[Toimitusvaihtoehdot -moduuli](delivery-options-module.md)
+[Toimitusvaihtoehtomoduuli](delivery-options-module.md)
+
+[Noudon tiedot -moduuli](pickup-info-module.md)
 
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 

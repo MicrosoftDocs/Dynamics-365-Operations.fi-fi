@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107204"
+ms.locfileid: "4412120"
 ---
 # <a name="store-order-fulfillment"></a>Myymälän tilauksen täyttäminen
 
@@ -54,17 +54,17 @@ Tilauksen täyttämistoiminto näyttää vain ne tilaukset, jotka joko noudetaan
 
 ## <a name="line-selection"></a>Rivin valinta
 
-Rivit voidaan valita toimintoruudun **Valitse** -toiminnolla. Kun **Valitse** on otettu käyttöön, käsiteltäväksi voidaan valita useita rivejä. Voit poistaa valitut rivit napsauttamalla samaa riviä uudelleen.
+Rivit voidaan valita toimintoruudun **Valitse**-toiminnolla. Kun **Valitse** on otettu käyttöön, käsiteltäväksi voidaan valita useita rivejä. Voit poistaa valitut rivit napsauttamalla samaa riviä uudelleen.
 
 ## <a name="line-details"></a>Rivin erittely
 
-Rivin tiedot voidaan näyttää käyttämällä rivitietojen lisätietoikkunaa. Avattuna tässä ikkunassa on kolme välilehteä, jossa on lisätietoja valitusta rivistä. Ensimmäisessä **Rivin erittely** -välilehdessä on tietoja itse rivistä sekä tilatusta ja jäljellä olevasta määrästä. Näkyvissä on myös muita tietoja, kuten noudettu, pakattu ja laskutettu määrä sekä toimitustapa ja toimitusosoite. **Tilauksen tiedot** -välilehdessä on tilauksen otsikon tiedot, kuten asiakas, asiakastunnus, tilausnumero, tilauksen kokonaissumma ja saldo. **Varasto** -välilehdessä on tietoja valitun rivin fyysisesti saatavilla olevasta varastosta, varatusta varastosta ja tilatusta varastosta.
+Rivin tiedot voidaan näyttää käyttämällä rivitietojen lisätietoikkunaa. Avattuna tässä ikkunassa on kolme välilehteä, jossa on lisätietoja valitusta rivistä. Ensimmäisessä **Rivin erittely** -välilehdessä on tietoja itse rivistä sekä tilatusta ja jäljellä olevasta määrästä. Näkyvissä on myös muita tietoja, kuten noudettu, pakattu ja laskutettu määrä sekä toimitustapa ja toimitusosoite. **Tilauksen tiedot** -välilehdessä on tilauksen otsikon tiedot, kuten asiakas, asiakastunnus, tilausnumero, tilauksen kokonaissumma ja saldo. **Varasto**-välilehdessä on tietoja valitun rivin fyysisesti saatavilla olevasta varastosta, varatusta varastosta ja tilatusta varastosta.
 
 Jos valittuna on useita rivejä, tilauksen rivitietojen lisätietoikkuna ilmaisee vain, että useita rivejä on valittu. Jos haluat näyttää yhden rivin tiedot, poista rivejä, kunnes jäljellä on vain yksi rivi.
 
 ## <a name="pending-order-lines"></a>Odottavat tilausrivit
 
-Yhdistetty tilauksen täyttäminen sisältää mahdollisuuden hyväksyä tilauksia manuaalisesti. Oletusarvosti myymälässä täytettävät tilaukset on jo hyväksytty. Jos liiketoimintaprosessit kuitenkin edellyttävät, että myymälätason työntekijä hyväksyy tilaukset, manuaalinen hyväksyntä voidaan ottaa käyttöön vähittäismyymälätasolla. Ota tilauksen hyväksyntä käyttöön valitsemalla **Retail ja Commerce** \> **Kanavat** \> **Myymälät** \> **Kaikki myymälät**. Avaa myymälä ja etsi sitten **Yleiset** -välilehdessä **Tilauksen täyttäminen** -alaotsikko. Tässä kohdassa on **Manuaalinen hyväksyminen** -asetus, jossa on oletusarvoisesti valittu **Ei**. Kun valitset asetukseksi **Kyllä** ja synkronoit muutokset kanavan tietokantaan, tilausrivit voidaan nyt käsitellä hyväksymisprosessin mukaisesti.
+Yhdistetty tilauksen täyttäminen sisältää mahdollisuuden hyväksyä tilauksia manuaalisesti. Oletusarvosti myymälässä täytettävät tilaukset on jo hyväksytty. Jos liiketoimintaprosessit kuitenkin edellyttävät, että myymälätason työntekijä hyväksyy tilaukset, manuaalinen hyväksyntä voidaan ottaa käyttöön vähittäismyymälätasolla. Ota tilauksen hyväksyntä käyttöön valitsemalla **Retail ja Commerce** \> **Kanavat** \> **Myymälät** \> **Kaikki myymälät**. Avaa myymälä ja etsi sitten **Yleiset**-välilehdessä **Tilauksen täyttäminen** -alaotsikko. Tässä kohdassa on **Manuaalinen hyväksyminen** -asetus, jossa on oletusarvoisesti valittu **Ei**. Kun valitset asetukseksi **Kyllä** ja synkronoit muutokset kanavan tietokantaan, tilausrivit voidaan nyt käsitellä hyväksymisprosessin mukaisesti.
 
 Työntekijät, joilla on **Salli tilauksen hyväksyminen** -käyttöoikeus, voivat avata tilauksen täyttämisen ja valita hyväksyttävät rivit. Kun rivit on hyväksytty, niiden tila ei ole enää **Odottaa** vaan **Hyväksytty** ja tilauksen hyväksymisprosessia voidaan jatkaa. Kun **Manuaalinen hyväksyminen** on otettu käyttöön, tilauksia ei käsitellä, ennen kuin ne on hyväksytty.
 
@@ -72,7 +72,7 @@ Myymälästä noudettavien tilausten tila ei ole koskaan **Odottaa**. Tällä ta
 
 ## <a name="accepted-order-lines"></a>Hyväksytyt tilausrivit
 
-Tilausten, joiden rivin tila on **Hyväksytty** , loput tilauksen täyttämiseen liittyvät vaiheet voidaan käsitellä myyntipisteessä. Kun tilaus on hyväksytty, tilausriville voidaan tehdä kaikki jäljellä olevat toiminnot.
+Tilausten, joiden rivin tila on **Hyväksytty**, loput tilauksen täyttämiseen liittyvät vaiheet voidaan käsitellä myyntipisteessä. Kun tilaus on hyväksytty, tilausriville voidaan tehdä kaikki jäljellä olevat toiminnot.
 
 Hyväksytty tilausrivi voidaan esimerkiksi valita ja sitten noutaa suoraan ilman keräys- ja pakkausvaiheita.
 
@@ -80,19 +80,19 @@ Hyväksytty tilausrivi voidaan esimerkiksi valita ja sitten noutaa suoraan ilman
 
 ### <a name="pick"></a>Keräilyt
 
-**Keräile** -luokan toiminnot on tarkoitettu auttamaan tilausrivien keräilyä hyllyiltä. Keräystoiminto voidaan suorittaa vain tilausriveillä, jotka on hyväksytty aiemmin.
+**Keräile**-luokan toiminnot on tarkoitettu auttamaan tilausrivien keräilyä hyllyiltä. Keräystoiminto voidaan suorittaa vain tilausriveillä, jotka on hyväksytty aiemmin.
 
 **Toiminto: keräys**
 
-- **Tuloksena oleva myyntipisteen tila** : keräys
-- **Tuloksena oleva taustajärjestelmän tila** : ei muutosta
+- **Tuloksena oleva myyntipisteen tila**: keräys
+- **Tuloksena oleva taustajärjestelmän tila**: ei muutosta
 
-Kun tilaus on hyväksytty, rivit voidaan valita ja niiden tilaksi voidaan merkitä **Keräys**. Kun rivin merkintä on **Keräys** , se ilmaisee, että rivin keräys on jo suoritettu. Tällä tavoin estetään se, että kaksi työntekijää yrittäisi kerätä saman tilausrivin samanaikaisesti.
+Kun tilaus on hyväksytty, rivit voidaan valita ja niiden tilaksi voidaan merkitä **Keräys**. Kun rivin merkintä on **Keräys**, se ilmaisee, että rivin keräys on jo suoritettu. Tällä tavoin estetään se, että kaksi työntekijää yrittäisi kerätä saman tilausrivin samanaikaisesti.
 
 **Toiminto: keräysluettelon tulostaminen**
 
-- **Tuloksena oleva tila** : keräys
-- **Tuloksena oleva taustajärjestelmän tila** : ei muutosta
+- **Tuloksena oleva tila**: keräys
+- **Tuloksena oleva taustajärjestelmän tila**: ei muutosta
 
 Keräysluettelot voidaan tulostaa myyntipisteessä, mikä auttaa työntekijöitä keräysprosessissa. Keräystä suorittava työntekijä voi kuljettaa tulostettua keräysluetteloa mukanaan, ja hän voi merkitä keräysluettelon tuotteet manuaalisesti kerätyiksi tuotteiden keräyksen yhteydessä.
 
@@ -102,16 +102,16 @@ Jos rivejä on valittu ja kyseisten rivien keräysluettelo on tulostettu, niiden
 
 **Toiminto: merkitty kerätyksi**
 
-- **Tuloksena oleva tila** : keräilty tai osittain keräilty
-- **Tuloksena oleva taustajärjestelmän tila** : keräilty tai osittain keräilty
+- **Tuloksena oleva tila**: keräilty tai osittain keräilty
+- **Tuloksena oleva taustajärjestelmän tila**: keräilty tai osittain keräilty
 
-Kun fyysiseen keräily on tehty, rivin tilaksi voidaan merkitä **Keräilty**. Kun rivi valitaan ja sen tilaksi merkitään **Keräilty** , tapahtuu reaaliaikainen kutsu päivittää tilausrivi. Kun rivin tilaksi on merkitty myyntipisteessä **Keräilty** , myös taustajärjestelmän tilaksi päivitetään **Keräilty** ja varastotapahtumat osoittavat, että tietty määrä on vähennetty.
+Kun fyysiseen keräily on tehty, rivin tilaksi voidaan merkitä **Keräilty**. Kun rivi valitaan ja sen tilaksi merkitään **Keräilty**, tapahtuu reaaliaikainen kutsu päivittää tilausrivi. Kun rivin tilaksi on merkitty myyntipisteessä **Keräilty**, myös taustajärjestelmän tilaksi päivitetään **Keräilty** ja varastotapahtumat osoittavat, että tietty määrä on vähennetty.
 
 Kun tilauksia käsitellään ajan mittaan, tietyllä rivillä voidaan käsitellä osittainen määrä. Jos rivi on valittu ja tehdään toiminto **Merkitty kerätyksi** ja jos määrä on suurempi kuin yksi, käyttäjää pyydetään ilmoittamaan määrä. Jäljellä oleva kerättävä määrä täytetään automaattisesti. Jos määritetty määrä on pienempi kuin jäljellä oleva määrä, rivin tilaksi tulee **Osittain kerätty**. Kun tilausrivi päivitetään taustajärjestelmässä, myös se ilmaisee osittain kerättyä tilaa ja varastopäivityksessä käytettyä käyttäjän antamaa määrää.
 
 Jos tilausrivi kerätään vahingossa, tilausrivin keräys on kumottava taustajärjestelmässä. Myyntipisteessä ei tueta tällä hetkellä mitään keräyksen kumoustoimintoa.
 
-Eri tilauksista voi valita tilausrivejä ja niiden tilaksi voidaan merkitä **Keräys** , ne voidaan tulostaa samaan keräysluettelon tai niiden tilaksi voi merkitä **Keräilty**.
+Eri tilauksista voi valita tilausrivejä ja niiden tilaksi voidaan merkitä **Keräys**, ne voidaan tulostaa samaan keräysluettelon tai niiden tilaksi voi merkitä **Keräilty**.
 
 ### <a name="pack"></a>Pakkaus
 
@@ -119,15 +119,15 @@ Tilausrivit voidaan pakata koska tahansa sen jälkeen, kun tilausrivi on hyväks
 
 **Toiminto: tulosta pakkausluettelo**
 
-- **Tuloksena oleva tila** : pakattu tai osittain pakattu
-- **Tuloksena oleva taustajärjestelmän tila** : toimitettu tai osittain toimitettu
+- **Tuloksena oleva tila**: pakattu tai osittain pakattu
+- **Tuloksena oleva taustajärjestelmän tila**: toimitettu tai osittain toimitettu
 
 Tämä toiminto merkitsee rivit pakatuiksi tai osittain pakatuiksi ja tulostaa pakkausluettelon. Pakkausluettelo voidaan tulostaa ja sen avulla voidaan tarkistaa yhdessä pakatut tuotteet. Pakkausluettelon muoto määritetään Commercessa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Toiminto: merkitse pakatuksi**
 
-- **Tuloksena oleva tila** : pakattu tai osittain pakattu
-- **Tuloksena oleva taustajärjestelmän tila** : toimitettu tai osittain toimitettu
+- **Tuloksena oleva tila**: pakattu tai osittain pakattu
+- **Tuloksena oleva taustajärjestelmän tila**: toimitettu tai osittain toimitettu
 
 **Merkitse pakatuksi** -toiminnolla voidaan ilmaista, että rivit on pakattu ilman pakkausluettelon tulostamista. Sekä **Tulosta pakkausluettelo** että **Merkitse pakatuksi** aiheuttavat varastotapahtumia taustajärjestelmässä. Myyntipisteen pakkausrivit aiheuttavat pakkausluettelon kirjauskansioiden luonnin taustajärjestelmässä.
 
@@ -135,7 +135,7 @@ Jos tilausrivi on pakattu vahingossa, pakkausluettelon kirjauskansio on korjatta
 
 Samanaikaisesti voidaan pakata vain saman tilauksen rivejä, joilla on sama toimitustapa.
 
-Tällä hetkellä asetus, jolla myymälän noutorivien tilaksi merkitään **Pakattu** , on poistettu käytöstä. Tämä ominaisuus lisätään tulevissa versioissa. Pakkausluettelon luontiprosessi laajennetaan tukemaan kolmannen osapuolen lähetystietojen lisäämistä pakkausluetteloprosessiin.
+Tällä hetkellä asetus, jolla myymälän noutorivien tilaksi merkitään **Pakattu**, on poistettu käytöstä. Tämä ominaisuus lisätään tulevissa versioissa. Pakkausluettelon luontiprosessi laajennetaan tukemaan kolmannen osapuolen lähetystietojen lisäämistä pakkausluetteloprosessiin.
 
 ### <a name="pick-up"></a>Keräile
 
@@ -143,8 +143,8 @@ Myymälästä noudettavat tilaukset voidaan noutaa suoraan, kun ne on noudettu m
 
 **Toiminto: nouto**
 
-- **Tuloksena oleva tila** : laskutettu tai osittain laskutettu
-- **Tuloksena oleva taustajärjestelmän tila** : laskutettu tai osittain laskutettu
+- **Tuloksena oleva tila**: laskutettu tai osittain laskutettu
+- **Tuloksena oleva taustajärjestelmän tila**: laskutettu tai osittain laskutettu
 
 Jos yhdistetystä tilauksen täyttämisestä on valittu rivi noudettava, koko tilaus ladataan myyntipisteeseen ja valitun rivin koko määrä merkitään. Myös muut tilauksen rivit ladataan myyntipisteen tapahtumanäkymään, mutta niiden määräksi on merkitty nolla.
 
@@ -158,12 +158,12 @@ Samanaikaisesti voidaan noutaa vain saman tilauksen rivejä, joilla on sama toim
 
 ### <a name="shipping"></a>Lähetys
 
-Myymälästä lähetettävät tilausrivit voidaan käsitellä yhdistetyssä tilauksen täyttämisessä **Lähetys** -toiminnolla. Jos manuaalinen tilausrivin hyväksyntä on määritetty kanavatasolla, tilaukset on hyväksyttävä ennen lähetystä. Tilaus voidaan lähettää, kun tilaus on hyväksytty ja sen tilana on **Odottaa** tai jokin muu tila.
+Myymälästä lähetettävät tilausrivit voidaan käsitellä yhdistetyssä tilauksen täyttämisessä **Lähetys**-toiminnolla. Jos manuaalinen tilausrivin hyväksyntä on määritetty kanavatasolla, tilaukset on hyväksyttävä ennen lähetystä. Tilaus voidaan lähettää, kun tilaus on hyväksytty ja sen tilana on **Odottaa** tai jokin muu tila.
 
 **Toiminto: lähetys**
 
-- **Tuloksena oleva tila** : laskutettu tai osittain laskutettu
-- **Tuloksena oleva taustajärjestelmän tila** : laskutettu tai osittain laskutettu
+- **Tuloksena oleva tila**: laskutettu tai osittain laskutettu
+- **Tuloksena oleva taustajärjestelmän tila**: laskutettu tai osittain laskutettu
 
 Yhdistetystä tilauksen täyttämisestä lähetetyt rivit laskutetaan taustajärjestelmästä samalla tavoin kuin jos tilaus laskutettaisiin suoraan taustajärjestelmästä. Yhdistetystä tilauksen täyttämisestä lähetettäviä rivejä ei ladata tapahtumanäkymään eikä veloitusta suoriteta rivien lähetysajankohtana.
 
@@ -177,10 +177,10 @@ Rivit tai osittaiset rivit voidaan hylätä. Niinpä ne voidaan määrittää ta
 
 **Toiminto: hylkää**
 
-- **Tuloksena oleva tila** : hylätty
-- **Tuloksena oleva taustajärjestelmän tila** : ei muutosta
+- **Tuloksena oleva tila**: hylätty
+- **Tuloksena oleva taustajärjestelmän tila**: ei muutosta
 
-Hylättyjä tilausrivejä voi tarkastella **Myyntitilausten käsittely ja kysely** -työtilassa. Voit tarkastella kaikki myymälöiden hylättyjä tilausrivejä tyhjentämällä työtilan henkilösuodattimen. Tilausrivin tiedot näkyvät **Tilaukset ja suosikit** -osan **Hylätyt tilausrivit** -välilehdessä. Käyttäjät voivat siirtyä myyntitilausnäkymässä myös napsauttamalla **Hylätyt tilausrivit** -painiketta **Yhteenveto** -osassa. Näkyviin tulee kaikki myyntitilaukset, joissa on vähintään yksi hylätty tilausrivi. Jos jaettu tilaustenhallinta (DOM) on otettu käyttöön, nämä hylätyt tilaukset määritetään täyttämistä varten automaattisesti uudelleen sopiviin myymälöihin. Nämä tilausrivit voidaan kuitenkin määrittää uudelleen myös manuaalisesti. Voit tehdä sen valitsemalla rivin, joka **Toteutumisen tila** on **Hylätty** , muuttamalla sitten toimipistettä tai varastoa. Napsauta avattavaa **Päivitä rivi** -valikkoa ja valitse **Palauta täytäntöönpanon tila**. Täyttämisen tila **Hylätty** vaihtuu nyt tilauksen täyttämismääritysten mukaan tilaksi **Hyväksytty** tai **Odottaa**. Kun täyttämisen tila on palautettu, myymälän työntekijät voivat tarkastella tilausrivejä myyntipisteessä.
+Hylättyjä tilausrivejä voi tarkastella **Myyntitilausten käsittely ja kysely** -työtilassa. Voit tarkastella kaikki myymälöiden hylättyjä tilausrivejä tyhjentämällä työtilan henkilösuodattimen. Tilausrivin tiedot näkyvät **Tilaukset ja suosikit** -osan **Hylätyt tilausrivit** -välilehdessä. Käyttäjät voivat siirtyä myyntitilausnäkymässä myös napsauttamalla **Hylätyt tilausrivit** -painiketta **Yhteenveto**-osassa. Näkyviin tulee kaikki myyntitilaukset, joissa on vähintään yksi hylätty tilausrivi. Jos jaettu tilaustenhallinta (DOM) on otettu käyttöön, nämä hylätyt tilaukset määritetään täyttämistä varten automaattisesti uudelleen sopiviin myymälöihin. Nämä tilausrivit voidaan kuitenkin määrittää uudelleen myös manuaalisesti. Voit tehdä sen valitsemalla rivin, joka **Toteutumisen tila** on **Hylätty**, muuttamalla sitten toimipistettä tai varastoa. Napsauta avattavaa **Päivitä rivi** -valikkoa ja valitse **Palauta täytäntöönpanon tila**. Täyttämisen tila **Hylätty** vaihtuu nyt tilauksen täyttämismääritysten mukaan tilaksi **Hyväksytty** tai **Odottaa**. Kun täyttämisen tila on palautettu, myymälän työntekijät voivat tarkastella tilausrivejä myyntipisteessä.
 
 ## <a name="line-quantity-tracking"></a>Rivin määrän seuranta
 
@@ -192,10 +192,10 @@ Käytetään edelleen samaa esimerkkiä. Jos valitaan pakatuiksi ja lähetetyiks
 
 ## <a name="line-statuses"></a>Rivin tilat
 
-Myyntipisteen tilausriveillä on useita tiloja ilmaisemaan tilausrivin tilaa. Myyntipisteen ja taustajärjestelmän tilat eivät aina vastaa toisiaan. Tilausrivin tilaa voi tarkastella myyntipisteessä tilauksen täyttämistoimintojen avulla. Taustajärjestelmässä tilausrivejä tarkastellaan tilauksen tietojen kautta. Tilauksen tietoihin pääsee valitsemalla **Retail ja Commerce** \> **Asiakkaat** \> **Kaikki asiakastilaukset**. Voit tarkastella tilauksen tietoja valitsemalla **Tilauksen tunnus**. Valitse tilauksen tiedoissa ensin **Myyntitilaus** -välilehti ja sitten **Näytä** -alakohdassa **Tilan tiedot**.
+Myyntipisteen tilausriveillä on useita tiloja ilmaisemaan tilausrivin tilaa. Myyntipisteen ja taustajärjestelmän tilat eivät aina vastaa toisiaan. Tilausrivin tilaa voi tarkastella myyntipisteessä tilauksen täyttämistoimintojen avulla. Taustajärjestelmässä tilausrivejä tarkastellaan tilauksen tietojen kautta. Tilauksen tietoihin pääsee valitsemalla **Retail ja Commerce** \> **Asiakkaat** \> **Kaikki asiakastilaukset**. Voit tarkastella tilauksen tietoja valitsemalla **Tilauksen tunnus**. Valitse tilauksen tiedoissa ensin **Myyntitilaus**-välilehti ja sitten **Näytä**-alakohdassa **Tilan tiedot**.
 
-- **Odottaa** – Myymälään määritettyjen tilausrivien, joita ei ole vielä hyväksytty, tila on **Odottaa** , kun niitä tarkastellaan myyntipisteessä. Myyntipisteessä hyväksyntää odottavina näkyvien rivien tila on taustajärjestelmässä **Tilausta käsitellään**.
-- **Hyväksytty** – Manuaalisesti tai automaattisesti hyväksyttyjen tilausrivien tila on **Hyväksytty** , kun niitä tarkastellaan myyntipisteessä. Rivien, joiden tila on **Hyväksytty** , tila on taustajärjestelmässä **Tilausta käsitellään**.
+- **Odottaa** – Myymälään määritettyjen tilausrivien, joita ei ole vielä hyväksytty, tila on **Odottaa**, kun niitä tarkastellaan myyntipisteessä. Myyntipisteessä hyväksyntää odottavina näkyvien rivien tila on taustajärjestelmässä **Tilausta käsitellään**.
+- **Hyväksytty** – Manuaalisesti tai automaattisesti hyväksyttyjen tilausrivien tila on **Hyväksytty**, kun niitä tarkastellaan myyntipisteessä. Rivien, joiden tila on **Hyväksytty**, tila on taustajärjestelmässä **Tilausta käsitellään**.
 - **Keräily** – Myymälätasolla kerättävien rivien tila on **Keräily**. Samojen rivien tila on taustajärjestelmässä tarkasteltaessa **Tilausten käsitteleminen**.
 - **Keräilty** ja **Osittain keräilty** – Keräiltyjen tai osittain keräiltyjen rivien tila on myyntipisteessä **Keräilty** tai **Osittain keräilty**. Samojen rivien tila on myös taustajärjestelmässä **Keräilty** tai **Osittain keräilty**.
 - **Pakattu** ja **Osittain pakattu** – Pakattujen tai osittain pakattujen rivien tila on myyntipisteessä **Pakattu** tai **Osittain pakattu**. Samojen rivien tila on taustajärjestelmässä **Toimitettu** tai **Osittain toimitettu**.
@@ -204,7 +204,7 @@ Myyntipisteen tilausriveillä on useita tiloja ilmaisemaan tilausrivin tilaa. My
 
 ## <a name="order-fulfillment-filtering"></a>Tilauksen täyttämisen suodatus
 
-Tilauksen täyttäminen myyntipisteessä sisältää suodatuksen, jonka avulla käyttäjien on helppo näyttää tarvitsemansa. Suodattimia voi muuttaa **Myyntipiste** -näytön alareunan toimintoruudussa. Oletusarvoisesti käytössä on **Toimitustyyppi** -suodatin sen mukaan, miten toiminto on määritetty. Jos toiminto on määritetty **Kaikki tilaukset** -parametrilla, tätä suodatinta käytetään tilauksen täyttämistä käytettäessä. Samaa koskee **Nouto myymälästä** - ja **Myymälästä lähetys** -parametria. Muita tilauksen täyttämisen kanssa käytettäviä suodattimia:
+Tilauksen täyttäminen myyntipisteessä sisältää suodatuksen, jonka avulla käyttäjien on helppo näyttää tarvitsemansa. Suodattimia voi muuttaa **Myyntipiste**-näytön alareunan toimintoruudussa. Oletusarvoisesti käytössä on **Toimitustyyppi**-suodatin sen mukaan, miten toiminto on määritetty. Jos toiminto on määritetty **Kaikki tilaukset** -parametrilla, tätä suodatinta käytetään tilauksen täyttämistä käytettäessä. Samaa koskee **Nouto myymälästä**- ja **Myymälästä lähetys** -parametria. Muita tilauksen täyttämisen kanssa käytettäviä suodattimia:
 
 - Asiakasnumero
 - Asiakkaan nimi

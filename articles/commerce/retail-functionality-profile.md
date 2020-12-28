@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057345"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411841"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Vähittäismyynnin toimintoprofiilin luominen
 
@@ -43,7 +43,7 @@ Luo uusi toimintoprofiili seuraavien ohjeiden avulla:
 1. Valitse toimintoruudussa **Uusi**.
 1. **Kirjoita profiili** -kenttään profiilin tunnus ("FN006" alla olevaan esimerkkikuvaan).
 1. Kirjoita **Kuvaus**-kenttään arvo (Adventure Works -profiili alla olevaan esimerkkikuvaan).
-1. Valitse **Yleiset**-osassa maa **ISO**-kielelle.
+1. Valitse **Yleiset**-osassa maa/alue **ISO**-kielelle.
 1. Muokkaa **Yleiset**-osassa muita asetuksia tarpeen mukaan.
 1. Valitse **Yleiset**-osassa **Kuittiprofiilin tunnus** sähköpostin vastaanottajille.
 1. Muokkaa **Toiminnot**-osassa asetuksia tarpeen mukaan.
