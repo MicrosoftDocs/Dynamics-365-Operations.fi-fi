@@ -1,0 +1,80 @@
+---
+title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (23.7.2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
+author: Darinkramer
+manager: AnnBe
+ms.date: 07/23/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Talent
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2019-07-23
+ms.dyn365.ops.version: Talent
+ms.openlocfilehash: 360574d3c8e0b349119e0987f2453a5d5be21e90
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528144"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-23-2019"></a><span data-ttu-id="acb30-103">Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (23.7.2019)</span><span class="sxs-lookup"><span data-stu-id="acb30-103">What's new or changed in Dynamics 365 Talent (July 23, 2019)</span></span>
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+<span data-ttu-id="acb30-104">Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="acb30-104">This topic describes features that are either new or changed in Dynamics 365 Talent.</span></span>
+
+## <a name="changes-in-attract"></a><span data-ttu-id="acb30-105">Attractin muutokset</span><span class="sxs-lookup"><span data-stu-id="acb30-105">Changes in Attract</span></span>
+
+### <a name="pdf-renderer-for-candidate-documents"></a><span data-ttu-id="acb30-106">Ehdokkaan asiakirjojen PDF-hahmonnin</span><span class="sxs-lookup"><span data-stu-id="acb30-106">PDF renderer for candidate documents</span></span>
+
+<span data-ttu-id="acb30-107">Attractin käyttäjät voivat nyt tarkastella ehdokkaiden PDF-liitteitä asiakirjojen katseluohjelmassa sen sijaan, että liitteet olisi ladattava.</span><span class="sxs-lookup"><span data-stu-id="acb30-107">Attract users can now view PDF attachments for candidates in the document viewer instead of downloading the attachments.</span></span>
+
+### <a name="signing-up-for-attract-user-research-group"></a><span data-ttu-id="acb30-108">Rekisteröityminen Attract-käyttäjätutkimusryhmään</span><span class="sxs-lookup"><span data-stu-id="acb30-108">Signing up for Attract user research group</span></span> 
+
+<span data-ttu-id="acb30-109">Kun uusia tuoteominaisuuksia suunnitellaan tai esiversion toimintoja lähetetään, pyydämme käyttäjiltä tietoja siitä, mihin suuntaan meidän kannattaa jatkaa.</span><span class="sxs-lookup"><span data-stu-id="acb30-109">As we plan new product capabilities or ship preview features, we are looking for our users to help inform our direction.</span></span> <span data-ttu-id="acb30-110">Kiinnostuneet käyttäjät voivat nyt rekisteröityä käyttäjätutkimusryhmään käyttämällä sovelluksen rekisteröitymislinkkiä.</span><span class="sxs-lookup"><span data-stu-id="acb30-110">Interested users can now sign up to be part of our user research group by using the sign-up link in our app.</span></span>
+
+### <a name="job-approvals-appear-on-the-home-page"></a><span data-ttu-id="acb30-111">Työn hyväksynnät näkyvät aloitussivulla</span><span class="sxs-lookup"><span data-stu-id="acb30-111">Job approvals appear on the home page</span></span>
+
+<span data-ttu-id="acb30-112">Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa.</span><span class="sxs-lookup"><span data-stu-id="acb30-112">Approvals appear in an **Approvals** section on the dashboard.</span></span> <span data-ttu-id="acb30-113">Hyväksyjät voivat tarkistaa **Vastuualueensa** hyväksynnät, jolloin työn tunnus, otsikko, muut hyväksyjät ja määritetty päivämäärä näkyvät.</span><span class="sxs-lookup"><span data-stu-id="acb30-113">Approvers can review their approvals under **Assigned to you**, which shows the job ID, the job title, other approvers, and the date when the job was assigned.</span></span> <span data-ttu-id="acb30-114">Käyttäjät, jotka lähettävät työn hyväksyttäväksi, voivat tarkastella töitään kohdassa **Mitä olet pyytänyt**, joka näyttää hyväksyjät, joiden on vielä hyväksyttävä lähetetty työ.</span><span class="sxs-lookup"><span data-stu-id="acb30-114">Users who submit a job for approval can review their jobs under **Requested by you**, which shows the approvers who must still approve the submitted job.</span></span>
+
+## <a name="changes-in-onboard"></a><span data-ttu-id="acb30-115">Onboardin muutokset</span><span class="sxs-lookup"><span data-stu-id="acb30-115">Changes in Onboard</span></span>
+<span data-ttu-id="acb30-116">Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.</span><span class="sxs-lookup"><span data-stu-id="acb30-116">This release includes minor bug fixes for Dynamics 365 Talent: Onboard.</span></span>
+
+## <a name="changes-in-core-hr"></a><span data-ttu-id="acb30-117">Core HR:n muutokset</span><span class="sxs-lookup"><span data-stu-id="acb30-117">Changes in Core HR</span></span>
+<span data-ttu-id="acb30-118">Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2394.</span><span class="sxs-lookup"><span data-stu-id="acb30-118">Changes described in this section apply to build number 8.1.2394.</span></span>
+
+### <a name="entity-support-for-custom-fields-in-common-data-service"></a><span data-ttu-id="acb30-119">Common Data Servicen mukautettujen kenttien yksikkötuki</span><span class="sxs-lookup"><span data-stu-id="acb30-119">Entity support for custom fields in Common Data Service</span></span> 
+
+<span data-ttu-id="acb30-120">Tämän julkaisun myötä **Työkalenteri** ja **Työkalenterin päivä** tukevat nyt Common Data Servicen mukautettuja kenttiä.</span><span class="sxs-lookup"><span data-stu-id="acb30-120">With this release, **Work calendar** and **Work calendar** day now support custom fields in Common Data Service.</span></span>
+
+### <a name="restrict-leave-types-in-time-off-requests"></a><span data-ttu-id="acb30-121">Poissaolopyyntöjen lomatyyppien rajoittaminen</span><span class="sxs-lookup"><span data-stu-id="acb30-121">Restrict leave types in time-off requests</span></span>
+
+<span data-ttu-id="acb30-122">Organisaatiot voivat tarjota työntekijöille useita erilaisia vapaatyyppejä.</span><span class="sxs-lookup"><span data-stu-id="acb30-122">Organizations can offer many different types of leave to employees.</span></span> <span data-ttu-id="acb30-123">Työntekijät eivät kuitenkaan ehkä voi lähettää joidenkin lomatyyppien poissaolopyyntöjä.</span><span class="sxs-lookup"><span data-stu-id="acb30-123">However, it might not be appropriate for employees to submit time-off requests for some leave types.</span></span> <span data-ttu-id="acb30-124">Kyseisiä lomatyyppejä hallitaan sen sijaan henkilöstöhallinnossa.</span><span class="sxs-lookup"><span data-stu-id="acb30-124">Those leave types might be managed by HR instead.</span></span> <span data-ttu-id="acb30-125">Tässä versiossa voit määrittää, mitä lomatyyppejä varten työntekijät voivat lähettää pyyntöjä.</span><span class="sxs-lookup"><span data-stu-id="acb30-125">In this release, you can configure which leave types employees can submit time-off requests for.</span></span> 
+
+## <a name="in-preview"></a><span data-ttu-id="acb30-126">Esiversiossa</span><span class="sxs-lookup"><span data-stu-id="acb30-126">In preview</span></span>
+
+### <a name="preview-features-are-enabled-only-in-sandbox-instances"></a><span data-ttu-id="acb30-127">Esiversiotoiminnot on otettu käyttöön vain eristysympäristöissä</span><span class="sxs-lookup"><span data-stu-id="acb30-127">Preview features are enabled only in sandbox instances</span></span>
+
+<span data-ttu-id="acb30-128">Voit määrittää Talentin uutta esiintymää valmisteltaessa, onko esiintymän tyyppi **Tuotanto** vai **Eristys**.</span><span class="sxs-lookup"><span data-stu-id="acb30-128">When you provision a new instance of Talent, you can specify whether the instance type is **Production** or **Sandbox**.</span></span> <span data-ttu-id="acb30-129">**Eristys**-tyypin esiintymissä uusia toimintoja voi testata varhaisessa vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="acb30-129">Instances of the **Sandbox** type allow for early testing of new features.</span></span> <span data-ttu-id="acb30-130">Kaikki aiemmin luodut Talent-esiintymät päivitetään **Tuotanto**-esiintymän tyyppiin.</span><span class="sxs-lookup"><span data-stu-id="acb30-130">All existing Talent instances will be updated to the **Production** instance type.</span></span> <span data-ttu-id="acb30-131">Jos haluat, että jokin aiemmin luoduista esiintymistä päivitetään **Eristys**-esiintymätyypiksi, ota yhteyttä [tukeen](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) ja tee muutospyyntö.</span><span class="sxs-lookup"><span data-stu-id="acb30-131">If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.</span></span>
+
+<span data-ttu-id="acb30-132">Lisätietoja muutosten julkaisemisesta on kohdassa [Talentin valmistelu](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="acb30-132">For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
+
+### <a name="view-extended-information-for-performance-in-manager-self-service"></a><span data-ttu-id="acb30-133">Laajennettujen suorituskykytietojen näyttäminen esimiehen itsepalvelutoiminnossa</span><span class="sxs-lookup"><span data-stu-id="acb30-133">View extended information for performance in manager self-service</span></span>
+
+<span data-ttu-id="acb30-134">Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuorien alaisten suoriutumista.</span><span class="sxs-lookup"><span data-stu-id="acb30-134">A new option will let managers view the performance of both their direct reports and their extended reports.</span></span> <span data-ttu-id="acb30-135">Tällä hetkellä linjapäälliköt voivat määrittää ja päivittää suorituskykytavoitteita ja antaa uusia arvioita, joita he voivat sitten hallita yhdessä työntekijöiden kanssa.</span><span class="sxs-lookup"><span data-stu-id="acb30-135">Currently, line managers can assign and update performance goals and issue new reviews, which their employees co-manage.</span></span> <span data-ttu-id="acb30-136">Lisäksi suorat esimiehet ja heidän alaisensa voivat ylläpitää ja päivittää suoritustason kirjauskansioita. Tämä auttaa varmistamaan, että kehityskeskusteluprosessi toimii sujuvasti.</span><span class="sxs-lookup"><span data-stu-id="acb30-136">In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly.</span></span> <span data-ttu-id="acb30-137">Kun tämä muutos otetaan käyttöön, esimiehet voivat tarkastella ja ylläpitää epäsuorien alaisten suoritustasotietoja suorien alaisten tietojen lisäksi.</span><span class="sxs-lookup"><span data-stu-id="acb30-137">When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.</span></span> 
+
+## <a name="coming-soon"></a><span data-ttu-id="acb30-138">Tulossa pian</span><span class="sxs-lookup"><span data-stu-id="acb30-138">Coming soon</span></span>
+
+### <a name="region-support-for-canada-and-southeast-asia"></a><span data-ttu-id="acb30-139">Kanadan ja Kaakkois-Aasian alueellinen tuki</span><span class="sxs-lookup"><span data-stu-id="acb30-139">Region support for Canada and Southeast Asia</span></span>
+
+<span data-ttu-id="acb30-140">Voimme ylpeänä ilmoittaa, että Kanadan ja Kaakkois-Aasian alueet ovat käytettävissä Talentissa 1. elokuuta 2019.</span><span class="sxs-lookup"><span data-stu-id="acb30-140">We are pleased to announce that Canada and Southeast Asia regions will be available for Talent on August 1, 2019.</span></span> <span data-ttu-id="acb30-141">Tämän muutoksen myötä voi luoda ympäristöjä Kanadan ja Aasian alueilla, ja kaikkia Talent-tietoja säilytetään yksinomaan näillä alueilla.</span><span class="sxs-lookup"><span data-stu-id="acb30-141">With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations.</span></span> <span data-ttu-id="acb30-142">Voit luoda ympäristön näillä uusilla alueilla valitsemalla sijainnin Uusi ympäristö -valintaikkunassa ja käyttämällä tätä ympäristöä Talentin valmisteluun LCS:ssä, kuten on kuvattu kohdassa [Talentin valmistelu](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="acb30-142">You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
+
+<span data-ttu-id="acb30-143">Tietojen siirto muiden alueiden aiemmin luoduista projekteista Kanadan ja Aasian alueille ei tueta.</span><span class="sxs-lookup"><span data-stu-id="acb30-143">Data migration of existing projects from other regions to the Canadian and Asian regions is not supported.</span></span> <span data-ttu-id="acb30-144">Vain uusia projekteja voi valmistella näillä uusilla tuetuilla alueilla.</span><span class="sxs-lookup"><span data-stu-id="acb30-144">Only new projects can be provisioned to the these new supported regions.</span></span>
