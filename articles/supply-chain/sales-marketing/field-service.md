@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 041044cf6b5a5de2091a4b61d98b7d07445e43ef
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 18eef310470cafd9d59bb1c848bbaeb8bf5b9fa1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209119"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528896"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Integraatio Microsoft Dynamics 365 Field Servicen kanssa – yleiskatsaus
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Supply Chain Management mahdollistaa liiketoimintaprosessien synkronoinnin Dynamics 365 Supply Chain Managementin ja Dynamics 365 Field Servicen välillä Integrointiskenaariot määritetään käyttämällä laajennettavia tietojen integrointitoiminnon malleja ja Common Data Service -palvelua. Niiden avulla liiketoimintaprosessien synkronointi voidaan ottaa käyttöön.
 Mukautettujen integrointiprojektien luontiin voidaan käyttää vakiomalleja. Näissä projekteissa lisävakiokenttiä ja mukautettuja kenttiä sekä yksiköitä yhdistämällä voidaan muokata integrointi liiketoimintatarpeita vastaavaksi. 
@@ -62,12 +64,12 @@ Tämä toisen vaiheen lisätoiminto keskittyi antamaan kenttätyöntekijöille k
 ![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Field Servicen ja Supply Chain Managementin toisen vaiheen integrointi mahdollistaa seuraavien mallien synkronoinnin:
-- Varastot (Supply Chain Managementista Field Serviceen) - varastot Supply Chain Managementista Field Serviceen [edistynyt kysely] 
-- Tuotevarasto (Supply Chain Managementista Field Serviceen) - varastosaldotiedot Supply Chain Managementista Field Serviceen [edistynyt kysely] 
-- Varastomuutos (Field Servicesta Supply Chain Managementiin) - Varaston muutokset Field Servicesta Supply Chain Managementiin [edistynyt kysely] 
-- Varastosiirrot (Field Servicesta Supply Chain Managementiin) - Varaston siirrot Field Servicesta Supply Chain Managementiin [edistynyt kysely] 
+- Varastot (Supply Chain Managementista Field Serviceen) - varastot Supply Chain Managementista Field Serviceen [Tarkennettu kysely] 
+- Tuotevarasto (Supply Chain Managementista Field Serviceen) - varastosaldotiedot Supply Chain Managementista Field Serviceen [Tarkennettu kysely] 
+- Varastomuutos (Field Servicesta Supply Chain Managementiin) - varaston muutokset Field Servicesta Supply Chain Managementiin [Tarkennettu kysely] 
+- Varastosiirrot (Field Servicesta Supply Chain Managementiin) - varaston siirrot Field Servicesta Supply Chain Managementiin [Tarkennettu kysely] 
 - Projektit (Supply Chain Managementista Field Serviceen) - projektiluettelo Supply Chain Managementista Field Serviceen 
-- Projektin työtilaukset (Field Servicestä Supply Chain Managementiin) – Field Servicen työtilaukset Supply Chain Managementin myyntilauksiin ja projektituki [Lisäkysely] 
+- Projektin työtilaukset (Field Servicestä Supply Chain Managementiin) – Field Servicen työtilaukset Supply Chain Managementin myyntilauksiin ja projektituki [Tarkennettu kysely] 
 - Field Servicen tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin) – Supply Chain Managementin Myytävät vapautetut tuotteet Salesin Field Serviceen tuotteisiin, joissa varastoyksiköt 
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset

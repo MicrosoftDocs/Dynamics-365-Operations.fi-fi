@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383685"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594523"
 ---
-# <a name="auto-firming-with-planning-optimization"></a>Automaattinen vahvistus ja suunnittelun optimointi
+# <a name="autofirming-with-planning-optimization"></a>Automaattinen vahvistus ja suunnittelun optimointi
 
 [!include [banner](../../includes/banner.md)]
 
@@ -35,7 +35,7 @@ Automaattisen vahvistuksen avulla voit vahvistaa (eli vapauttaa) suunnitellut ti
 > [!NOTE]
 > Suunnitellut ostotilauksen automaattinen vahvistus on mahdollista vain, jos nimike on liitetty toimittajaan.
 
-## <a name="turn-on-auto-firming"></a>Automaattisen vahvistuksen ottaminen käyttöön
+## <a name="turn-on-autofirming"></a>Automaattisen vahvistuksen ottaminen käyttöön
 
 Automaattinen vahvistus otetaan käyttöön seuraavasti:
 
@@ -48,7 +48,7 @@ Vahvistuksen aikaraja lasketaan eteenpäin pääsuunnittelun ajopäivämääräs
 
 - Voit määrittää kattavuusryhmän vahvistuksen oletusaikarajan valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Kattavuus** \> **Kattavuusryhmät** ja valitsemalla sitten kattavuusryhmän. Anna sitten päivien määrä **Muu**-pikavälilehden **Automaattisen vahvistuksen aikaraja (päivää)** -kentässä.
 - Voit ohittaa tietyn nimikkeen kattavuusryhmälle määritetyn vahvistuksen aikarajan valitsemalla ensin **Tuotetietojen hallinta** \> **Vapautetut tuotteet**, sitten toimintoruudussa **Suunnitelma** ja lopuksi **Nimikkeen kattavuus**. Valitse tämän jälkeen **Yleiset**-välilehdessä **Ohita aikarajat** ja anna päivien määrä **Automaattisen vahvistuksen aikaraja (päivää)** -kentässä.
-- Voit ohittaa tietylle kattavuusryhmälle määritetyn aikarajan ja tietyn pääsuunnitelman nimikkeen kattavuuden valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Pääsuunnitelmat** ja valitsemalla sitten pääsuunnitelman. Anna sitten päivien määrä valitsemalla **Aikarajat päivinä** -pikavälilehdessä **Lukitus**-asetukseksi **Kyllä**.
+- Voit ohittaa tietylle kattavuusryhmälle määritetyn aikarajan ja tietyn pääsuunnitelman nimikkeen kattavuuden valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Pääsuunnitelmat** ja valitsemalla sitten pääsuunnitelman. Anna sitten päivien määrä valitsemalla **Aikarajat päivinä** -pikavälilehdessä **Vahvistus**-asetukseksi **Kyllä**.
 
 Jos automaattinen vahvistus on otettu käyttöön suunnittelun optimointia käyttävässä pääsuunnitteluajossa, automaattinen vahvistusprosessi tehdään automaattisten vahvistusasetusten mukaisesti. Jos automaattinen vahvistusta ei ole otettu käyttöön tai jos suunnittelu käynnistetään **Nettotarpeet**-sivulta, automaattinen vahvistusprosessi ohitetaan.
 

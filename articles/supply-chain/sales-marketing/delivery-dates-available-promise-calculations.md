@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979424"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666767"
 ---
 # <a name="order-promising"></a>Luvatut tilaukset
 
@@ -37,6 +37,12 @@ Luvatuissa tilauksissa lasketaan, mikä on aikaisin lähetys- ja vastaanottopäi
 -   **Luvattavissa oleva määrä (ATP)** – ATP on nimikkeen käytettävissä oleva määrä, joka voidaan luvata asiakkaalle tiettynä päivänä. ATP-laskelmaan sisältyy varaamaton varasto, läpimenoajat, suunnitellut vastaanotot ja varasto-otot.
 -   **ATP + toimitusmarginaali** – Lähetyspäivämäärä vastaa ATP-päivämäärää sekä nimikkeen toimitusmarginaalia. Toimitusmarginaali on lähetettävien nimikkeiden valmisteluun kuluva aika.
 -   **Saatavuus (CTP)**– Saatavuus lasketaan hajotuksen avulla.
+
+> [!NOTE]
+> Kun myyntitilausta päivitetään, toimituksen lupaamistiedot päivitetään vain, jos aiempaa toimituksen lupaamispäivämäärää ei voida toteuttaa, kuten seuraavissa esimerkeissä:
+> 
+> - **Esimerkki 1**: Toimituksen nykyinen lupaamispäivä on 20. heinäkuuta, mutta kasvaneen määrän vuoksi toimitus on mahdollista vasta 25. heinäkuuta. Koska nykyistä päivämäärää ei enää pystytä toteuttamaan, toimituksen lupaaminen käynnistyy.
+> -  **Esimerkki 2**: Nykyisen toimituksen lupaamisen päivämäärä on 20. heinäkuuta 20, mutta vähentyneen määrän vuoksi, toimitus on nyt mahdollista tehdä 15. heinäkuuta. Koska nykyinen päivämäärä on edelleen toteutettavissa, toimituksen lupaamista ei käynnistetä ja 20. heinäkuuta jää toimituksen lupaamispäiväksi.
 
 ## <a name="atp-calculations"></a>ATP-laskelmat
 ATP-määrä lasketaan "ennakoivan kumulatiivisen ATP-määrän" avulla. Tämän ATP-laskentamenetelmän pääasiallinen etu on mahdollisuus käsitellä myös tilanteet, joissa vastaanottojen välisten varasto-ottojen summa on suurempi kuin uusin vastaanotto (esim. kun tarpeen täyttäminen edellyttää aiemman vastaanoton määrän käyttämistä). Ennakoiva kumulatiivinen ATP -laskentatapa sisällyttää kaikki varasto-otot, kunnes vastaanotettavien kumulatiivinen määrä ylittää otettavien kumulatiivisen määrän. Niinpä tämä ATP-laskentatapa arvioi, voidaanko osaa aiemman kauden määrästä käyttää myöhemmällä kaudella.  

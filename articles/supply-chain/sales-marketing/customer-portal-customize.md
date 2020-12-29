@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413960"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527360"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Asiakasportaalin mukauttaminen ja käyttäminen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä ohjeaiheessa esitellään eri sivut, jotka ovat valmiina käytettävissä asiakasportaalissa. Siinä selitetään, mitä sivut tekevät ja miten niitä voi mukauttaa.
 
 Asiakasportaali tarjoaa joitakin valmiita verkkosivuja ja toimintoja. Seuraavassa sivustokartassa on yleiskatsaus kyseisistä verkkosivuista ja toiminnoista sekä tehtävistä, jotka voivat suorittaa toimenpiteet.
 
-![![Asiakkaan portaalisivuston sivustokartta](media/customer-portal-site-map.png "Asiakkaan portaalisivuston sivustokartta")](media/customer-portal-site-map.png "Customer portal site map")
+![Asiakkaan portaalisivuston sivustokartta](media/customer-portal-site-map.png "Asiakkaan portaalisivuston sivustokartta")
 
 ## <a name="typical-customizations"></a>Tyypilliset mukautukset
 
@@ -62,12 +64,12 @@ Tässä ovat vakiovaiheet tilauksen lähettämiselle asiakasportaalista.
     - **Hankintanumero** – Syötä tilauksen tilausnumero. Tämä kenttä ei ole pakollinen.
     - **Toimita maahan/alueelle** – Määritä maa tai alue, johon nimikkeet toimitetaan. Tämä kenttä määritetään automaattisesti muille kuin järjestelmänvalvoja-käyttäjille.
 
-    ![![Tilauksen tiedot -sivu](media/customer-portal-order-information.png "Tilauksen tiedot -sivu")](media/customer-portal-order-information.png "Order Information page")
+    ![Tilauksen tiedot -sivu](media/customer-portal-order-information.png "Tilauksen tiedot -sivu")
 
 1. Valitse **Seuraava**.
 1. Valitse **Nimikkeet**-sivulla **Lisää nimike**.
 
-    ![![Tuotesivu](media/customer-portal-items.png "Tuotesivu")](media/customer-portal-items.png "Items page")
+    ![Tuotesivu](media/customer-portal-items.png "Tuotesivu")
 
 1. **Tuotetieto**-valintaikkunassa kuvaillaan seuraavat kentät:
 
@@ -76,14 +78,14 @@ Tässä ovat vakiovaiheet tilauksen lähettämiselle asiakasportaalista.
     - **Yksikkö** – Määritä mittayksikkö (esimerkiksi **kpl**, **kg** tai **laatikko**).
     - **Arvioitu nettosumma** – Arvo lasketaan nimikkeen arvioituna hintana valitun yksikkömäärän mukaan.
 
-    ![![Tuotetieto-valintaikkuna](media/customer-portal-item-information.png "Tuotetieto-valintaikkuna")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Tuotetieto-valintaikkuna](media/customer-portal-item-information.png "Tuotetieto-valintaikkuna")
 
 1. Lisää nimike tilaukseen valitsemalla **Lähetä**.
 1. Toista vaiheet 4 - 6, kunnes olet lisännyt kaikki tilattavat nimikkeet.
 1. Kun olet lisännyt haluamasi nimikkeet, valitse **Nimikkeet**-sivulta **Seuraava**.
 1. **Tilauksen tiedot** -sivulla on tilauksen yhteenveto. Tarkista tilauksen sisältö ja toimitustiedot. Jos kaikki näyttää oikealta, lähetä tilaus valitsemalla **Lähetä**.
 
-    ![![Tilauksen tiedot -sivu](media/customer-portal-order-submit.png "Tilauksen tiedot -sivu")](media/customer-portal-order-submit.png "Order Information page")
+    ![Tilauksen tiedot -sivu](media/customer-portal-order-submit.png "Tilauksen tiedot -sivu")
 
 ### <a name="standard-data-setup"></a>Tietojen vakioasetus
 
@@ -148,19 +150,19 @@ Kaikki asiakasportaalin ohjausobjektit ovat sisäänrakennettuja Power Apps -por
 
 Vain asiakasportaalin mallipohjaan sisältyvää mukautettua ohjausobjektia käytetään luotaessa ruutuja kotisivulle.
 
-![![Kotisivun ruudut](media/customer-portal-home-page-tiles.png "Kotisivun ruudut")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![Kotisivun ruudut](media/customer-portal-home-page-tiles.png "Kotisivun ruudut")
 
 Voit muokata ruutuja seuraavasti.
 
 1. Avaa [Portaalin hallintasovellus](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivumallit**.
 
-    ![![Portaalinhallinnan siirtymisruutu](media/customer-portal-nav.png "Portaalinhallinnan siirtymisruutu")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![Portaalinhallinnan siirtymisruutu](media/customer-portal-nav.png "Portaalinhallinnan siirtymisruutu")
 
 1. Valitse sivupohja, jonka nimi on **Koti**.
 1. Avaa sivun lähdekoodi valitsemalla **Verkkomalli**-kentässä **Koti**-linkki.
 
-    ![![Verkkomallin kenttä](media/customer-portal-web-template.png "Verkkomallin kenttä")](media/customer-portal-web-template.png "Web Template field")
+    ![Verkkomallin kenttä](media/customer-portal-web-template.png "Verkkomallin kenttä")
 
 1. Sinun pitäisi nyt nähdä koko kotisivun lähdekoodi ja voi muokata sitä kuin tarvitset.
 

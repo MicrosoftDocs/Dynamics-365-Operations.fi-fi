@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e13b5fd895fca7f8fe77809348d63ed8867dea9e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6f4ddd03ec16ac43b007b904eb688563735e0941
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017319"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654169"
 ---
 # <a name="zone-threshold-replenishment"></a>Vyöhykkeen rajatäydennys
 
@@ -62,7 +62,7 @@ Jos haluat tarkastella tai muokata direktiivikoodeja, siirry kohtaan **Varaston 
 
 Tässä esimerkissä kuvataan, miten direktiivikoodi valmistellaan. Jos aiot käsitellä tämän ohjeaiheen lopussa olevaa skenaariota, käytä tässä annettuja demoarvoja. Muussa tapauksessa käytä omia arvoja.
 
-1. Valitse **USMF** -yritys, joka käyttää demotietoja.
+1. Valitse **USMF**-yritys, joka käyttää demotietoja.
 1. Valitse **Varastonhallinta \> Asetukset \> Direktiivikoodit**.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi**.
 1. Aseta uudelle riville seuraavat arvot:
@@ -84,10 +84,10 @@ Täydennysmalli on sääntöjoukko, joka määrittää, milloin ja miten sijaint
 
 Tässä esimerkissä kuvataan, miten täydennysmalli valmistellaan. Jos aiot käsitellä tämän ohjeaiheen lopussa olevaa skenaariota, käytä tässä annettuja demoarvoja. Muussa tapauksessa käytä omia arvoja.
 
-1. Valitse **USMF** -yritys, joka käyttää demotietoja.
+1. Valitse **USMF**-yritys, joka käyttää demotietoja.
 1. Valitse **Varastonhallinta \> Asetukset \> Täydennys \> Täydennysmallit**.
-1. Valitse **Muokkaa** , jotta saat sivun muokkaustilaan.
-1. Lisää **Yleiskatsaus** -ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi**.
+1. Valitse **Muokkaa**, jotta saat sivun muokkaustilaan.
+1. Lisää **Yleiskatsaus**-ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi**.
 1. Aseta uudelle riville seuraavat arvot. Hyväksy oletusarvot kaikille muille kentille.
 
     - **Täydennysmalli:** _Vyöhyke min./max. täyd_
@@ -95,14 +95,14 @@ Tässä esimerkissä kuvataan, miten täydennysmalli valmistellaan. Jos aiot kä
     - **Täydennystyyppi:** _Vähimmäis- tai enimmäisarvo_
 
 1. Valitse **Tallenna**.
-1. Kun uusi rivi on yhä valittuna **Yhteenveto** -ruudukossa, lisää juuri luomaasi *Vyöhyke min.-/max. täyd.* -täydennysmalli valitsemalla **Täydennysmallin tiedot** -ruudukon yläpuolella oleva **Uusi** -valintaruutu.
+1. Kun uusi rivi on yhä valittuna **Yhteenveto**-ruudukossa, lisää juuri luomaasi *Vyöhyke min.-/max. täyd.*-täydennysmalli valitsemalla **Täydennysmallin tiedot**-ruudukon yläpuolella oleva **Uusi**-valintaruutu.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** Syötä _1_.
     - **Kuvaus:** Syötä _Poimintavyöhykkeen täydennys_.
     - **Täydennysyksikkö:** Valitse _kpl_.
     - **Pyyntötyyppi:** Jätä tämä kenttä tyhjäksi.
-    - **Direktiivikoodi:** Tämä kenttä linkittää täydennysmallin sijaintidirektiiviin. Valitse aiemmin luomasi demotietodirektiivin koodi ( _Vyöhyketäyd._ ).
+    - **Direktiivikoodi:** Tämä kenttä linkittää täydennysmallin sijaintidirektiiviin. Valitse aiemmin luomasi demotietodirektiivin koodi (_Vyöhyketäyd._).
     - **Työmalli:** Jätä tämä kenttä tyhjäksi.
     - **Minimimäärä:** Tämä kenttä määrittää määrän, jonka täydennys käynnistyy. Syötä _50_.
     - **Enimmäismäärä:** Tämä kenttä määrittää nimikkeen enimmäismäärän, joka voidaan esittää vyöhykkeessä. Luotu täydennystyö lisää varaston määrää tähän määrään. Syötä _150_.
@@ -115,7 +115,7 @@ Tässä esimerkissä kuvataan, miten täydennysmalli valmistellaan. Jos aiot kä
     - **Varasto:** Valitse _61_.
 
 1. Valitse **Täydennysmallin tiedot** -ruudukon yläpuolelta **Valitse tuotteet**.
-1. Lisää ruudukkoon rivi valitsemalla **Tuotekysely** -valintaruudun **Alue** -välilehdessä **Lisää**.
+1. Lisää ruudukkoon rivi valitsemalla **Tuotekysely**-valintaruudun **Alue**-välilehdessä **Lisää**.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Taulukko:** _Nimikkeet_
@@ -125,7 +125,7 @@ Tässä esimerkissä kuvataan, miten täydennysmalli valmistellaan. Jos aiot kä
 
 1. Tallenna kysely ja sulje valintaikkuna valitsemalla **OK**.
 1. Valitse **Täydennysmallin tiedot** -ruudukon yläpuolelta **Valitse täydennettävät vyöhykkeet**.
-1. Lisää ruudukkoon rivi **Vyöhykekysely** -valintaruudun **Alue** -välilehdessä.
+1. Lisää ruudukkoon rivi **Vyöhykekysely** -valintaruudun **Alue**-välilehdessä.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Taulu:** _Varastovyöhyke_
@@ -151,9 +151,9 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Luo täydennyspoimintadirektiivi
 
-1. Valitse **USMF** -yritys, joka käyttää demotietoja.
+1. Valitse **USMF**-yritys, joka käyttää demotietoja.
 1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
-1. Aseta vasemmassa ruudussa **Työtilaustyyppi** -kentän arvoksi _Täydennys_.
+1. Aseta vasemmassa ruudussa **Työtilaustyyppi**-kentän arvoksi _Täydennys_.
 1. Valitse toimintoruudussa **Uusi** luodaksesi uuden direktiivin.
 1. Määritä seuraavat arvot:
 
@@ -165,8 +165,8 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
     - **Direktiivikoodi:** Jätä tämä kenttä tyhjäksi.
     - **Useita varastointiyksiköitä:** Määritä tämän vaihtoehdon arvoksi _Ei_.
 
-1. Valitse **Tallenna** , jos haluat luoda direktiivin, jossa on tähän mennessä määritetyt asetukset.
-1. Lisää uusi rivi ruudukkoon **Rivit** -pikavälilehdessä **Uusi**.
+1. Valitse **Tallenna**, jos haluat luoda direktiivin, jossa on tähän mennessä määritetyt asetukset.
+1. Lisää uusi rivi ruudukkoon **Rivit**-pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** Syötä _1_.
@@ -180,7 +180,7 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
     - **Salli jakaminen:** Valitse tämä valintaruutu.
 
 1. Tallenna uusi rivi valitsemalla **Tallenna**.
-1. Kun uusi rivi on edelleen valittuna **Rivit** -ruudukossa, lisää rivi ruudukkoon valitsemalla **Sijaintidirektiivin toimenpiteet** -pikavälilehdessä **Uusi**.
+1. Kun uusi rivi on edelleen valittuna **Rivit**-ruudukossa, lisää rivi ruudukkoon valitsemalla **Sijaintidirektiivin toimenpiteet** -pikavälilehdessä **Uusi**.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** Syötä _1_.
@@ -192,7 +192,7 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
 
 1. Tallenna uusi toiminto valitsemalla **Tallenna**.
 1. Kun uusi toiminto on edelleen valittuna, valitse **Sijaintidirektiivin toiminnot** -ruudukon yläpuolella oleva **Muokkaa kyselyä**.
-1. Näyttöön tulee kyselyvalintaikkuna, jossa voit valita varastopaikat, joita haluat täydentää. Valitse **Alue** -välilehdessä **Lisää** , jos haluat lisätä uuden rivin ruudukkoon.
+1. Näyttöön tulee kyselyvalintaikkuna, jossa voit valita varastopaikat, joita haluat täydentää. Valitse **Alue**-välilehdessä **Lisää**, jos haluat lisätä uuden rivin ruudukkoon.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Taulu:** _Sijainnit_
@@ -205,7 +205,7 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
 
 ##### <a name="create-a-replenishment-put-directive"></a>Luo täydennyshyllytysdirektiivi
 
-1. Varmista **Sijaintidirektiivit** -sivun vasemmasta ruudusta, että **Työtilauksen tyyppi** -kentän arvoksi on edelleen määritetty _Täydennys_.
+1. Varmista **Sijaintidirektiivit**-sivun vasemmasta ruudusta, että **Työtilauksen tyyppi** -kentän arvoksi on edelleen määritetty _Täydennys_.
 1. Valitse toimintoruudussa **Uusi** luodaksesi toisen uuden direktiivin.
 1. Määritä seuraavat arvot:
 
@@ -214,11 +214,11 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
     - **Työtilauksen tyyppi:** Valitse _Hyllytys_.
     - **Toimipaikka:** Valitse _6_.
     - **Varasto:** Valitse _61_.
-    - **Direktiivin koodi:** Valitse _Vyöhykkeen täyd_ , jos haluat linkittää tämän sijaintidirektiivin aiemmin luomaasi täydennysmalliin käyttämällä aiemmin luomaasi koodia.
+    - **Direktiivin koodi:** Valitse _Vyöhykkeen täyd_, jos haluat linkittää tämän sijaintidirektiivin aiemmin luomaasi täydennysmalliin käyttämällä aiemmin luomaasi koodia.
     - **Useita varastointiyksiköitä:** Määritä tämän vaihtoehdon arvoksi _Ei_.
 
-1. Valitse **Tallenna** , jos haluat luoda direktiivin, jossa on tähän mennessä määritetyt asetukset.
-1. Lisää uusi rivi ruudukkoon **Rivit** -pikavälilehdessä **Uusi**.
+1. Valitse **Tallenna**, jos haluat luoda direktiivin, jossa on tähän mennessä määritetyt asetukset.
+1. Lisää uusi rivi ruudukkoon **Rivit**-pikavälilehdessä **Uusi**.
 1. Määritä uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** Syötä _1_.
@@ -232,7 +232,7 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
     - **Salli jakaminen:** Valitse tämä valintaruutu.
 
 1. Tallenna uusi rivi valitsemalla **Tallenna**.
-1. Kun uusi rivi on edelleen valittuna **Rivit** -ruudukossa, lisää rivi ruudukkoon valitsemalla **Sijaintidirektiivin toimenpiteet** -pikavälilehdessä **Uusi**.
+1. Kun uusi rivi on edelleen valittuna **Rivit**-ruudukossa, lisää rivi ruudukkoon valitsemalla **Sijaintidirektiivin toimenpiteet** -pikavälilehdessä **Uusi**.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Järjestysnumero:** Syötä _1_.
@@ -244,7 +244,7 @@ Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjea
 
 1. Tallenna uusi toiminto valitsemalla **Tallenna**.
 1. Kun uusi toiminto on edelleen valittuna, valitse **Sijaintidirektiivin toiminnot** -ruudukon yläpuolella oleva **Muokkaa kyselyä**.
-1. Näyttöön tulee kyselyvalintaikkuna, jossa voit valita vyöhykkeet, joita haluat täydentää. Tämän vyöhykkeen tulee olla sama alue, joka on määritetty täydennysmallissa. Valitse **Alue** -välilehdessä **Lisää** , jos haluat lisätä uuden rivin ruudukkoon.
+1. Näyttöön tulee kyselyvalintaikkuna, jossa voit valita vyöhykkeet, joita haluat täydentää. Tämän vyöhykkeen tulee olla sama alue, joka on määritetty täydennysmallissa. Valitse **Alue**-välilehdessä **Lisää**, jos haluat lisätä uuden rivin ruudukkoon.
 1. Aseta uudelle riville seuraavat arvot:
 
     - **Taulu:** _Sijainnit_
@@ -265,31 +265,31 @@ Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja m
 
 #### <a name="use-the-usmf-legal-entity"></a>Käytä USFM-yritystä
 
-Tämän skenaarion käyttäminen määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF** -yritys ennen kuin aloitat.
+Tämän skenaarion käyttäminen määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen kuin aloitat.
 
 #### <a name="prepare-additional-sample-data"></a>Lisä mallitietojen valmisteleminen
 
-Kun olet valinnut **USMF** -yrityksen, lisää tarvittavat näytetiedot, jotka on kuvattu aiemmin tämän ohjeaiheen kohdassa [Määritä vyöhykkeeseen perustuva täydennys](#setup) -osa.
+Kun olet valinnut **USMF**-yrityksen, lisää tarvittavat näytetiedot, jotka on kuvattu aiemmin tämän ohjeaiheen kohdassa [Määritä vyöhykkeeseen perustuva täydennys](#setup) -osa.
 
 #### <a name="check-your-on-hand-inventory"></a>Tarkista käytettävissä olevat varastosi
 
 Seuraavien vaiheiden avulla voit varmistaa, että järjestelmä sisältää riittävän varaston, joka tukee esimerkkiskenaariota.
 
-1. Varmista, että nimike *A0001* on käytettävissä oleva varasto kahdessa eri paikassa täydennysmallissa määritetyssä poimintavyöhykkeessä ( *LATTIA* ). Kokonaisvaraston on kuitenkin oltava pienempi kuin vaadittu vähimmäismäärä ( *50* ), joka on määritetty täydennysmallissa. Näin voit simuloida, miten laskeminen tapahtuu koko vyöhykkeelle yhden ainoan sijainnin asemesta. **Voit muuttaa varastoa tarpeen mukaan käyttämällä mitä tahansa varastoprosessia.**
-1. Varmista, että nimikkeelle *A0001* on riittävästi varastoa varastopaikan keräilysijaintidirektiivissä määritetyssä bulkkisijainnissa, jossa täydennystyön tulisi poimia nimikkeet vyöhykkeen tunnuksesta *BULKKI*. Kokonaisvaraston on oltava suurempi kuin vaadittu enimmäismäärä ( *150* ), joka on määritetty täydennysmallissa.
+1. Varmista, että nimike *A0001* on käytettävissä oleva varasto kahdessa eri paikassa täydennysmallissa määritetyssä poimintavyöhykkeessä (*LATTIA*). Kokonaisvaraston on kuitenkin oltava pienempi kuin vaadittu vähimmäismäärä (*50*), joka on määritetty täydennysmallissa. Näin voit simuloida, miten laskeminen tapahtuu koko vyöhykkeelle yhden ainoan sijainnin asemesta. **Voit muuttaa varastoa tarpeen mukaan käyttämällä mitä tahansa varastoprosessia.**
+1. Varmista, että nimikkeelle *A0001* on riittävästi varastoa varastopaikan keräilysijaintidirektiivissä määritetyssä bulkkisijainnissa, jossa täydennystyön tulisi poimia nimikkeet vyöhykkeen tunnuksesta *BULKKI*. Kokonaisvaraston on oltava suurempi kuin vaadittu enimmäismäärä (*150*), joka on määritetty täydennysmallissa.
 1. Valinnainen mutta suositeltava: Luo varaston oikaisukirjauskansio noudattamalla seuraavia ohjeita:
 
     1. Valitse **Varastonhallinta \> Kirjauskansioviennit \> Nimikkeet \> Varaston oikaisu**.
     1. Valitse **Uusi**.
-    1. Valitse **Luo varastokirjauskansio** -valintaikkunan **Varasto** -kentässä *61*.
+    1. Valitse **Luo varastokirjauskansio** -valintaikkunan **Varasto**-kentässä *61*.
     1. Valitse **OK**.
-    1. Lisää ruudukkoon kolme riviä käyttämällä **Uusi** -painiketta **Kirjauskansion rivit** -pikavälilehdessä ja määritä seuraavat arvot. Kun olet määrittänyt jokaisen rivin, valitse **Tallenna**.
+    1. Lisää ruudukkoon kolme riviä käyttämällä **Uusi**-painiketta **Kirjauskansion rivit**-pikavälilehdessä ja määritä seuraavat arvot. Kun olet määrittänyt jokaisen rivin, valitse **Tallenna**.
 
         - **Rivi 1:**
 
             - **Nimiketunnus:** *A0001*
             - **Toimipaikka:** *6*
-            - **Varasto** : *61*
+            - **Varasto**: *61*
             - **Sijainti:** *02A01R1S1B*
             - **Rekisterikilpi:** Valitse luettelosta aiemmin luotu rekisterikilpi tai luo uusi rekisterikilpi.
             - **Määrä** *1000*
@@ -298,7 +298,7 @@ Seuraavien vaiheiden avulla voit varmistaa, että järjestelmä sisältää riit
 
             - **Nimiketunnus:** *A0001*
             - **Toimipaikka:** *6*
-            - **Varasto** : *61*
+            - **Varasto**: *61*
             - **Sijainti:** *07A01R2S1B*
             - **Rekisterikilpi:** Valitse luettelosta aiemmin luotu rekisterikilpi tai luo uusi rekisterikilpi.
             - **Määrä** *15*
@@ -307,7 +307,7 @@ Seuraavien vaiheiden avulla voit varmistaa, että järjestelmä sisältää riit
 
             - **Nimiketunnus:** *A0001*
             - **Toimipaikka:** *6*
-            - **Varasto** : *61*
+            - **Varasto**: *61*
             - **Sijainti:** *07A01R1S1B*
             - **Rekisterikilpi:** Valitse luettelosta aiemmin luotu rekisterikilpi tai luo uusi rekisterikilpi.
             - **Määrä** *10*
@@ -320,18 +320,18 @@ Seuraavien vaiheiden avulla voit varmistaa, että järjestelmä sisältää riit
 Kun kaikki vaaditut mallitiedot on luotu, voit käynnistää täydennyksen noudattamalla näitä ohjeita.
 
 1. Valitse **Varastonhallinta \> Täydennys \> Täydennykset**.
-1. Avaa **Täydennys** -valintaikkuna valitsemalla **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
-1. Muokkaa oletustaulukon riviä **Kysely** -valintaikkunan **Alue** -välilehdessä seuraavalla tavalla:
+1. Avaa **Täydennys**-valintaikkuna valitsemalla **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
+1. Muokkaa oletustaulukon riviä **Kysely**-valintaikkunan **Alue**-välilehdessä seuraavalla tavalla:
 
     - **Taulu:** Valitse _Täydennysmallit_.
     - **Johdettu taulu:** Valitse _Täydennysmallit_.
     - **Kenttä:** Valitse _Täydennysmalli_.
     - **Ehdot:** Valitse _Vyöhykkeen min./max. täyd_. Tämä täydennysmalli on täydennysmalli, jonka loit tämän skenaarion demotietojen valmistelun aikana.
 
-1. Tallenna kysely ja palaa **Täydennys** -valintaikkunaan valitsemalla **OK**.
+1. Tallenna kysely ja palaa **Täydennys**-valintaikkunaan valitsemalla **OK**.
 1. Suorita täydennysmalli valitsemalla **OK**.
 
-Täydennystyöt luodaan nyt, kun varasto kerätään *BULKKI* -vyöhykkeestä ja se lisätään *LATTIA* -vyöhykkeeseen.
+Täydennystyöt luodaan nyt, kun varasto kerätään *BULKKI*-vyöhykkeestä ja se lisätään *LATTIA*-vyöhykkeeseen.
 
 ## <a name="notes-and-tips"></a>Huomautuksia ja vihjeitä
 
@@ -342,5 +342,5 @@ Seuraavassa on muutamia huomautuksia ja vihjeitä toiminnon käyttämisestä:
     - Muokkaa sijaintidirektiivin otsikkokyselyä ja suodata valittuja täydennysmallin rivejä.
     - Käytä täydennysmallirivillä direktiivikoodia ja vastaa sitä hyllytyssijaintidirektiiviin.
 
-- Jos käytät dynaamisia sijainteja, täydennystyöt luodaan joko ensimmäiselle käytettävissä olevalle sijainnille tai sijainnille, joissa on jo varasto, jos sijaintidirektiivitoimenpide on määritetty käyttämään **Konsolidoi** -strategiaa.
+- Jos käytät dynaamisia sijainteja, täydennystyöt luodaan joko ensimmäiselle käytettävissä olevalle sijainnille tai sijainnille, joissa on jo varasto, jos sijaintidirektiivitoimenpide on määritetty käyttämään **Konsolidoi**-strategiaa.
 - Jos käytät paikkoja, joissa käytetään vyöhykkeitä, käytä [normaalia min.-/max.-täydennystä](tasks/set-up-min-max-replenishment-process.md).

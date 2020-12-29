@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 741c8af7eaabe23c03546daddd0a9a422146f575
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793560"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668978"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementn käyttäjien oppimisluettelo
 
@@ -50,6 +50,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Tuotteiden ja varaston konfiguroiminen ja hallinta Dynamics 365 Supply Chain Managementissa](https://docs.microsoft.com/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Tuotetiedot ovat keskeinen osa toimitusketju- ja vähittäismyyntisovelluksia toimialasta riippumatta. Liiketoimintaratkaisun eri moduuleissa tarvitaan tuotekohtaisia tietoja ja määrityksiä, jotta tiettyihin tuotteisiin, tuoteperheisiin, tuoterakenteisiin tai tuoteluokkiin liittyviä liiketoimintaprosesseja voidaan hallita. Varastoraporteissa näkyy useilla eri tavoilla, kuinka paljon varastoa on, ja selittää, miten on tehokkaampaa tehdä invesointeja varastointiin. Pääsuunnittelu tehostaa suunnittelua, joka perustuu ennalta määriteltyihin tekijöihin, jotta voi tehokkaasti suunnitella, mitä materiaaleja ostetaan, siirretään tai valmistetaan. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 14 tuntia |
 | [Hankinnan ja toimittajien konfiguroiminen ja hallinta Dynamics 365 Supply Chain Managementissa](https://docs.microsoft.com/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Toimittajien etsiminen ja käsitteleminen, tuotteiden ostaminen sekä tavaroiden ja palveluiden laadun varmistaminen ovat tärkeitä tekijöitä, jotka vaikuttavat yrityksen maineeseen ja menestykseen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 14 tuntia |
 | [Myynnin ja asiakkaiden konfiguroiminen ja hallinta Dynamics 365 Supply Chain Managementissa](https://docs.microsoft.com/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | Prosessi, jossa työskentelet asiakkaiden kanssa, myyntiprosessin elinkaaren ymmärtäminen ja myyntisopimusten määrittäminen ovat tärkeitä tekijöitä, jotka vaikuttavat yrityksen menestykseen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
+| [Pääsuunnittelu Dynamics 365 Supply Chain Managementissa](https://docs.microsoft.com/learn/paths/master-planning-supply-chain-management/) | Pääsuunnittelun avulla yritykset voivat määrittää ja tasapainottaa tulevia tavoitteiden saavuttamiseen tarvittavat raaka-aineet ja kapasiteetin. Pääsuunnittelu arvioi, mitä raaka-aineita ja kapasiteetteja on tällä hetkellä käytettävissä sekä mitä raaka-aineita ja kapasiteetteja tarvitaan tuotannon valmistumiseen. Se esimerkiksi määrittää, mitä on valmistettava, ostettava, siirrettävä tai asetettava varmuusvarastoon, ennen kuin tuotanto saadaan valmiiksi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5 tuntia |
 | [Varastonhallinnan konfiguroiminen ja käsitteleminen Dynamics 365 for Finance and Operationsissa](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Varastonhallinta Dynamics 365 Supply Chain Managementissa auttaa optimoimaan ja virtaviivaistamaan varastoprosessit yksilöllisten tarpeiden mukaan ja antaa käsityksen varastostasi ja työkaluista, jotka auttavat lisäämään asiakastyytyväisyyttä ja vähentämään kustannuksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 8.5 tuntia |
 | [Kuljetustenhallinnan konfiguroiminen ja käsitteleminen Dynamics 365 Supply Chain Managementissa](https://docs.microsoft.com/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Kuljetuksenhallintamoduuli Dynamics 365 Supply Chain Managementissa auttaa sinua löytämään mahdollisimman tehokkaan tavan toimittaa tuotteita asiakkaillesi. Kuljetustenhallinta laskee edullisimman ja nopeimman tavaran toimitustavan ja antaa sinun tunnistaa saapuvien ja lähtevien tilausten toimittaja- ja reititysratkaisut. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 3 tuntia |
 | [Resurssinhallinnan käyttäminen Dynamics 365 Supply Chain Managementissa](https://docs.microsoft.com/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Resurssinhallinta on Dynamics 365 Supply Chain Managementin apuohjelma, jonka avulla hallitaan yrityksen päivittäisessä toiminnassa käytettäviä käyttöomaisuuseriä. Esimerkkejä tällaisista käyttöomaisuustyypeistä ovat koneet, tuotantolaitteet ja haarukkahissit. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12.5 tuntia |

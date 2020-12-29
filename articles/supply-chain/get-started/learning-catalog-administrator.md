@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0c8a265971c4a3f0b83ac1d6404b7d4aa82660
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793800"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516616"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Dynamics 365 Supply Chain Managementn järjestelmänvalvojien oppimisluettelo
 
@@ -46,7 +46,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Hallitse käyttöönottoprojektin vastuuhenkilöitä Finance and Operationsissa](https://docs.microsoft.com/learn/paths/implement-finance-operations/) | Opi tärkeimmät elementit ja parhaat käytännöt onnistuneen Finance and Operations -käyttöönottoprojektin hallintaa varten. Ensimmäisestä askeleesta, jossa suunnittelet ja muotoilet projektin metodologiaa, FastTrack-palveluiden käyttöä, kehitysstrategiaa, tiedonhallintaa ja muita toimintoja, parhaisiin tapoihin ylläpitää ja seurata toimintojasi julkaisun jälkeen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 11.5 tuntia |
 | [Järjestelmän hallinnan aloitussivu](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Tämä ohje aihe viittaa Microsoft Dynamics 365 for Finance and Operations -järjestelmän järjestelmänvalvojien sisältöön. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi. | Dokumentaatio | |
 | [Finance and Operations: Dynamics 365:n perehdytys (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FasTrack tarjoaa perehdytyspalvelun jokaiseen Dynamics 365 for Finance and Operations -projektiin. Tässä TechTalkissa kerromme perehdytysprosessista, esittelemme sisältöä perehdytysistunnosta ja paljastamme, miten teemme perehdytyksistä tehokkaampia ja kätevämpiä lähitulevaisuudessa. Tämä istunto on erityisen merkityksellinen kaikille asiakkaille, jotka työskentelevät projektin alkuvaiheissa, lisenssisopimuksen tekemisen ja toteutusprojektin aloittamisen välillä. | Verkkokokouksen maksuton tallenne | 62 minuuttia |
-| [Paikallinen (paikalliset liiketoimintatiedot) käyttöönotto (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Liity tähän tekniseen keskusteluun ja tutustu Dynamics 365 for Finance and Operations, Enterprise Editionin paikalliseen käyttöönotto-vaihtoehtoon. Tässä istunnossa tarkastelemme paikallisen käyttöönoton sovellusarkkitehtuuria, ALM-näkökohtia, järjestelmävaatimuksia ja Life Cycle Services -projektin valmistelua. | Verkkokokouksen maksuton tallenne | 48 minuuttia |
+| [Paikallinen (paikalliset liiketoimintatiedot) käyttöönotto (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Liity tähän tekniseen keskusteluun ja tutustu Dynamics 365 for Finance and Operations, Enterprise Editionin paikalliseen käyttöönottovaihtoehtoon. Tässä istunnossa tarkastellaan paikallisen käyttöönoton sovellusarkkitehtuuria, ALM-näkökohtia, järjestelmävaatimuksia ja elinkaaripalvelujen projektin valmistelua. | Verkkokokouksen maksuton tallenne | 48 minuuttia |
 | [Kopiointi yritykseen (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | Tässä istunnossa keskustelemme uudesta ominaisuudesta tietojen hallinnan kehyksessä, Kopiointi yritykseen. Katsomme ensin lyhyesti tietojen hallinnan kehykseen lisätyt uudet ominaisuudet platform 8:ssä – työtilat, mallit ja tietoprojektit. Sitteen keskustelemme sitten lisätystä lisätoiminnoista nimeltään Kopiointi yritykseen. | Verkkokokouksen maksuton tallenne | 54 minuuttia |
 
 ## <a name="core-development"></a>Peruskehitys<a name="core-development"></a>
