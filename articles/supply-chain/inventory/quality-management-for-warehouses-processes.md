@@ -16,11 +16,11 @@ ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763476"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427349"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Laadunhallinta varastoprosesseja varten
 
@@ -107,7 +107,7 @@ Kun _varastoprosessien laadunhallinta_ on käytössä, sovellettava varastotyypp
 | Hakuryhmä | kuvaus |
 |---|---|
 | Ryhmä 1 | Tarkista kunkin laatuliitoksen **viitetyyppi**-, **tapahtumatyyppi**- ja **suorituksen täsmäytys** -arvot suhteessa nimikkeeseen. Jos lähdeasiakirjan riviä vasten on vastineita, siirry ryhmään 2. |
-| Ryhmä 2 | Tarkista kunkin laatuliitoksen **Nimikekoodin** arvo (_taulu_, _ryhmä_tai _kaikki_) nimikettä vasten. _Taulu_ on tarkempi kuin _ryhmä_, ja _ryhmä_ on tarkempi kuin _kaikki_. Jos _taulussa_ (tietty nimike) on vastineita, siirry ryhmään 3. Jos _taululle_ ei ole vastinetta, etsi vastinetta _ryhmää_ varten. Jos _ryhmälle_ ei ole vastinetta, _kaikki_ on voimassa. Jos kyseessä on vastine, siirry ryhmään 3. |
+| Ryhmä 2 | Tarkista kunkin laatuliitoksen **Nimikekoodin** arvo (_taulu_, _ryhmä_ tai _kaikki_) nimikettä vasten. _Taulu_ on tarkempi kuin _ryhmä_, ja _ryhmä_ on tarkempi kuin _kaikki_. Jos _taulussa_ (tietty nimike) on vastineita, siirry ryhmään 3. Jos _taululle_ ei ole vastinetta, etsi vastinetta _ryhmää_ varten. Jos _ryhmälle_ ei ole vastinetta, _kaikki_ on voimassa. Jos kyseessä on vastine, siirry ryhmään 3. |
 | Ryhmä 3 | Tarkista kullekin laatuliitokselle **tilikoodin** ja **resurssikoodin** arvot nimikettä vasten. Käytettävä logiikka muistuttaa **nimikekoodi** -arvolle sovellettavaa logiikkaa. |
 | Ryhmä 4 | Tarkista kunkin laatuliitoksen osalta **sovellettava varastotyypin** arvo (_vain varastoprosessien laadunhallinta_ tai _kaikki_) nimikettä vasten. Jos **ota laatutilaus käyttöön varastoprosesseissa** -asetuksen arvoksi on määritetty lähdeasiakirjan varastoasetuksessa _Kyllä_ ja lähdeasiakirjan rivillä olevan nimikkeen määrite on _käytä varastonhallintaprosesseja_, molemmat liitokset, joissa on _vain varastoprosessien laadunhallinnan vastineita_, ja liitokset, joissa on vastine _kaikille_, ovat käytettävissä rinnakkain, jos molemmat ovat olemassa. Jos **Ota käyttöön laatutilaus varastoprosesseja varten** -asetukseksi on valittu _Ei_ lähdeasiakirjan varastolle ja lähdeasiakirjarivillä on asetettu _Käytä varastohallintaprosesseja_, vain laadunhallintaa sovelletaan. |
 

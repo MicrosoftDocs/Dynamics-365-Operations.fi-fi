@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017503"
+ms.locfileid: "4427465"
 ---
 # <a name="immediate-replenishment"></a>Välitön täydennys
 
@@ -47,7 +47,7 @@ Välitöntä täydennystä käytetään aallon suorituksen aikana, jos kohdistus
 
 ## <a name="set-up-immediate-replenishment"></a>Välittömän täydennyksen määrittäminen
 
-- Valitse ensin **Varastonhallinta** \> **Asetukset** \> **Sijaintidirektiivit** ja sitten **Rivit** -välilehden **Välittömän täydennyksen malli** -luettelossa aaltokysynnän täydennysmalli.
+- Valitse ensin **Varastonhallinta** \> **Asetukset** \> **Sijaintidirektiivit** ja sitten **Rivit**-välilehden **Välittömän täydennyksen malli** -luettelossa aaltokysynnän täydennysmalli.
 
 Täydennysmallia käytetään, jos sijaintidirektiivin rivi ei käytä kohdistettua mittayksikköä.
 
@@ -55,5 +55,5 @@ Täydennysmallia käytetään, jos sijaintidirektiivin rivi ei käytä kohdistet
 
 Jos sijaintidirektiiviriville valitaan välitön kohdistus mutta mitään täydennystyötä ei luoda, kun käytät kyseisen sijaintidirektiivirivin kysynnän täydennyksen malleja, syy on todennäköisesti jompikumpi seuraavista:
 
-- Varmista, että käytetty kysynnän täydennyksen malli on määritetty käyttämään oikeita **Täydennys** -tyypin sijainti- ja työmalleja.
+- Varmista, että käytetty kysynnän täydennyksen malli on määritetty käyttämään oikeita **Täydennys**-tyypin sijainti- ja työmalleja.
 - Varmista, käytettävissä olevaa varastoa on riittävästi niissä sijainneissa, joissa kysynnän täydennyksen malli hakee käytettävissä olevaa varastoa täydennystä varten.

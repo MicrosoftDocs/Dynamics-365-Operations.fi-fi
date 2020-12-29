@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 64c7c2787e2ac996e3016f5b23fc48582f5533ad
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018902"
+ms.locfileid: "4427402"
 ---
 # <a name="procurement-catalogs-overview"></a>Hankintaluettelojen yleiskatsaus
 
@@ -54,7 +54,7 @@ Seuraavassa taulukossa kuvataan tehtävät, jotka on suoritettava ennen kuin ost
 ## <a name="setting-up-a-catalog"></a>Luettelon määrittäminen
 Kun edellytykset täyttyvät, voit määrittää luettelot. Voit luoda joko yhden luettelon koko organisaation käyttöön tai useita luetteloita organisaation eri osastojen käyttöön. Jos luot yhden luettelon koko organisaation käyttöön, luettelon käyttöoikeudet määräytyvät hankintojen käytäntösäännön mukaan.  
 
-Luettelo määrittää, mitä tuotteita on käytettävissä ostoehdotusten luonnin yhteydessä, mutta lisärajoituksia voi ottaa käyttöön luokan käyttöoikeuksia koskevien käytäntösääntöjen avulla. Koska luettelon solmut ovat hankintaluokkia, ne voidaan estää luokan käyttöoikeuksia koskevalla käytäntösäännöllä. Tässä tapauksessa luokan tuotteet eivät ole työntekijöiden käytettävissä ostoehdotuksissa. Voit määrittää luokkien käyttöoikeuksien käytäntösääntöjä **Ostokäytännöt** -sivulla. Seuraavassa taulukossa kuvataan tehtävät, jotka on suoritettava luettelon määrittämiseksi.
+Luettelo määrittää, mitä tuotteita on käytettävissä ostoehdotusten luonnin yhteydessä, mutta lisärajoituksia voi ottaa käyttöön luokan käyttöoikeuksia koskevien käytäntösääntöjen avulla. Koska luettelon solmut ovat hankintaluokkia, ne voidaan estää luokan käyttöoikeuksia koskevalla käytäntösäännöllä. Tässä tapauksessa luokan tuotteet eivät ole työntekijöiden käytettävissä ostoehdotuksissa. Voit määrittää luokkien käyttöoikeuksien käytäntösääntöjä **Ostokäytännöt**-sivulla. Seuraavassa taulukossa kuvataan tehtävät, jotka on suoritettava luettelon määrittämiseksi.
 
 | Tehtävä                                                   | Rooli             | Kuvaus                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,11 +62,11 @@ Luettelo määrittää, mitä tuotteita on käytettävissä ostoehdotusten luonn
 | Määritä, ovatko tuotteet käytettävissä luettelossa. | Hankintaostaja | Koska tuotteet periytyvät hankintaluokista, ne näkyvät kaikki asianmukaisissa luettelosolmuissa. Voit määrittää, piilotetaanko vai näytetäänkö kaikki solmun tuotteet, kun luetteloa käytetään ostoehdotuksessa. Voit myös määrittää, piilotetaanko vai näytetäänkö yksittäisiä solmuun sisältyviä tuotteita. |
 | Julkaise luettelo.                                   | Hankintaostaja | Ennen kuin työntekijät voivat käyttää luetteloa ostoehdotuksessa, sinun täytyy määrittää luettelolle käytäntösääntö, asettaa luettelon tilaksi **Aktiivinen** ja julkaista luettelo. Voit myös poistaa käytöstä luetteloita, joiden et halua enää olevan käytettävissä.                                              |
 
-Päivitykset julkaistaan automaattisesti tai manuaalisesti riippuen asetuksesta, jonka valitset luettelolle **Luettelot** -sivun **Oletuspäivitystyyppi** -kentästä. Luetteloille on valittavana seuraavat oletuspäivitystyypit:
+Päivitykset julkaistaan automaattisesti tai manuaalisesti riippuen asetuksesta, jonka valitset luettelolle **Luettelot**-sivun **Oletuspäivitystyyppi**-kentästä. Luetteloille on valittavana seuraavat oletuspäivitystyypit:
 
 -   **Dynaaminen** – luettelo päivittyy automaattisesti aina, kun tiedot muuttuvat.
 -   **Staattinen** – luettelot on päivitettävä manuaalisesti.
--   **Molemmat** – jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **staattinen** , se on päivitettävä manuaalisesti luokkien päivityksen yhteydessä. Jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **Dynaaminen** , se päivitetään automaattisesti, kun tiedot muuttuvat.
+-   **Molemmat** – jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **staattinen**, se on päivitettävä manuaalisesti luokkien päivityksen yhteydessä. Jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **Dynaaminen**, se päivitetään automaattisesti, kun tiedot muuttuvat.
 
 
 <a name="additional-resources"></a>Lisäresurssit

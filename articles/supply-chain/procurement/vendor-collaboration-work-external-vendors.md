@@ -19,22 +19,22 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018741"
+ms.locfileid: "4427475"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Toimittajayhteistyö ulkoisten toimittajien kanssa
 
 [!include [banner](../includes/banner.md)]
 
-**Toimittajayhteistyö** -moduuli on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics 365 Supply Chain Management -integrointia. Toimittajat voivat käsitellä siinä ostotilauksia, laskuja, tavaralähetysvaraston tietoja ja tarjouspyyntöjä. Lisäksi he voivat käyttää joitakin osia toimittajan päätiedoista. Tässä aiheessa selitetään, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa, jotka käsittelevät toimittajayhteistyöliittymässä ostotilauksia, tarjouspyyntöjä ja tavaralähetysvarastoja. Siinä selitetään myös, miten toimittajayhteistyö voidaan ottaa käyttöön tietylle toimittajalle ja miten kaikkien määritetään tiedot, jotka kaikki toimittajat näkevät, kun he vastaavat ostotilaukseen.
+**Toimittajayhteistyö**-moduuli on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics 365 Supply Chain Management -integrointia. Toimittajat voivat käsitellä siinä ostotilauksia, laskuja, tavaralähetysvaraston tietoja ja tarjouspyyntöjä. Lisäksi he voivat käyttää joitakin osia toimittajan päätiedoista. Tässä aiheessa selitetään, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa, jotka käsittelevät toimittajayhteistyöliittymässä ostotilauksia, tarjouspyyntöjä ja tavaralähetysvarastoja. Siinä selitetään myös, miten toimittajayhteistyö voidaan ottaa käyttöön tietylle toimittajalle ja miten kaikkien määritetään tiedot, jotka kaikki toimittajat näkevät, kun he vastaavat ostotilaukseen.
 
 Lisätietoja siitä, mitä ulkoiset toimittajat voivat tehdä toimittajan toimittajayhteistyöliittymällä, on kohdassa [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Tämän ohjeaiheen toimittajayhteistyön tiedot koskevat vain Supply Chain Managementin nykyistä versiota. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali** -moduulissa. Lisätietoja **Toimittajaportaali** -moduulista on kohdassa [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md).
+> Tämän ohjeaiheen toimittajayhteistyön tiedot koskevat vain Supply Chain Managementin nykyistä versiota. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali**-moduulissa. Lisätietoja **Toimittajaportaali**-moduulista on kohdassa [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md).
 
 Lisätietoja siitä, kuinka toimittajat voivat käyttää toimittajayhteistyötä laskutusprosesseissa, on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Tietoja siitä, miten uusia toimittajayhteistyön käyttäjiä voidaan valmistella, on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md).
 
@@ -45,7 +45,7 @@ Kun toimittajat vastaavat lähettämääsi ostotilaukseen, he näkevät jonkin k
 Ostotilauksen vastauksessa näkyvän tekstin määritysvaiheet
 
 1. Valitse **Ostotilauksiin vastaaville toimittajille tarkoitetut tiedot** -sivulla ensin vastauksen tyyppi ja sitten **Muokkaa**.
-2. Anna **Tietosanoma** -ruudussa sanomaruudussa toimittajille näytettävät tiedot.
+2. Anna **Tietosanoma**-ruudussa sanomaruudussa toimittajille näytettävät tiedot.
 
 Jos sanomat on lisättävä useammalla kielellä, luo erilliset sanomat ja määritä kullekin tarvittava kielikoodi. Viesti näytetään kullekin toimittajalle tämän käyttämällä kielellä.
 
@@ -58,20 +58,20 @@ Järjestelmänvalvoja määrittää toimittajayhteistyön yleiset asetukset, kut
 
 ### <a name="enabling-vendor-collaboration"></a>Toimittajayhteistyön ottaminen käyttöön
 
-Ennen käyttäjätilien luontia ulkoiselle toimittajalle on määritettävä toimittajatili, jotta toimittaja voi käyttää toimittajayhteistyötä. Määritä **Toimittajat** -sivun **Yleinen** -välilehdessä **Yhteistyön aktivointi** -kenttä. Käytettävissä ovat seuraavat asetukset:
+Ennen käyttäjätilien luontia ulkoiselle toimittajalle on määritettävä toimittajatili, jotta toimittaja voi käyttää toimittajayhteistyötä. Määritä **Toimittajat**-sivun **Yleinen**-välilehdessä **Yhteistyön aktivointi**-kenttä. Käytettävissä ovat seuraavat asetukset:
 
-- **Aktiivinen (ostotilaus vahvistetaan automaattisesti)** – ostotilaukset vahvistetaan automaattisesti, jos toimittaja hyväksyy sen ilman muutoksia.
-- **Aktiivinen (ostotilausta ei vahvisteta automaattisesti)** – organisaation on vahvistettava ostotilaukset manuaalisesti, kun toimittaja on hyväksynyt ne.
+- **Aktiivinen (ostotilaus vahvistetaan automaattisesti)**– ostotilaukset vahvistetaan automaattisesti, jos toimittaja hyväksyy sen ilman muutoksia.
+- **Aktiivinen (ostotilausta ei vahvisteta automaattisesti)**– organisaation on vahvistettava ostotilaukset manuaalisesti, kun toimittaja on hyväksynyt ne.
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Hintatietojen näkyvyyden määrittäminen toimittajille
 
-Voit jakaa ostotilausten hintatiedot toimittajayhteistyöliittymässä valitsemalla **Ostotilauksen hinnat/summa** -asetukseksi **Kyllä** toimittajatilin **Oletusostotilaukset** -välilehdessä. Nämä hintatiedot sisältävät yksikköhinnan, alennukset ja kulut.
+Voit jakaa ostotilausten hintatiedot toimittajayhteistyöliittymässä valitsemalla **Ostotilauksen hinnat/summa** -asetukseksi **Kyllä** toimittajatilin **Oletusostotilaukset**-välilehdessä. Nämä hintatiedot sisältävät yksikköhinnan, alennukset ja kulut.
 
 ## <a name="working-with-pos-when-vendor-collaboration-is-used"></a>Ostotilausten käsitteleminen toimittajayhteistyön ollessa käytössä
 
 ### <a name="sending-a-po-to-a-vendor"></a>Ostotilauksen lähettäminen toimittajalle
 
-Ostotilaukset laaditaan Supply Chain Managementissa. Kun ostotilauksen tilana on **Hyväksytty** , se lähetetään toimittajalle valitsemalla **Ostotilaus** -sivulla **Lähetä vahvistettavaksi**. Ostotilauksen tila tulee sitten **Ulkoisessa tarkistuksessa**. Kun ostotilaus on lähetetty, toimittaja näkee sen **Tarkistettavat ostotilaukset** -sivulla toimittajayhteistyöliittymässä. Toimittaja voi hyväksyä ostotilauksen, hylätä sen tai ehdottaa siihen muutoksia. Toimittaja voi myös lisätä esimerkiksi ostotilaukseen tehtäviä muutoksia koskevia kommentteja. Jos haluat kiinnittää toimittajan huomion uuteen ostotilaukseen, voit myös lähettää ostotilauksen sähköpostitse tulostuksenhallintajärjestelmässä.
+Ostotilaukset laaditaan Supply Chain Managementissa. Kun ostotilauksen tilana on **Hyväksytty**, se lähetetään toimittajalle valitsemalla **Ostotilaus**-sivulla **Lähetä vahvistettavaksi**. Ostotilauksen tila tulee sitten **Ulkoisessa tarkistuksessa**. Kun ostotilaus on lähetetty, toimittaja näkee sen **Tarkistettavat ostotilaukset** -sivulla toimittajayhteistyöliittymässä. Toimittaja voi hyväksyä ostotilauksen, hylätä sen tai ehdottaa siihen muutoksia. Toimittaja voi myös lisätä esimerkiksi ostotilaukseen tehtäviä muutoksia koskevia kommentteja. Jos haluat kiinnittää toimittajan huomion uuteen ostotilaukseen, voit myös lähettää ostotilauksen sähköpostitse tulostuksenhallintajärjestelmässä.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Toimittajan tekemä ostotilauksen hyväksyntä ja vahvistaminen
 
@@ -131,11 +131,11 @@ Jos muutat ostotilausta, johon toimittaja on jo vastannut, toimittajalle on läh
 
 ### <a name="canceling-a-po"></a>Ostotilauksen peruuttaminen
 
-Kun peruutat ostotilauksen, tilaksi vaihtuu **Hyväksytty**. Sinun on lähetettävä ostotilaus takaisin toimittajalle, jotta he voivat vahvistaa tai hylätä peruutuksen. Peruutuksen vahvistuksen jälkeen ostotilaus näkyy toimittajan vahvistettujen ostotilausten luettelossa **Peruutettu** -tilassa.
+Kun peruutat ostotilauksen, tilaksi vaihtuu **Hyväksytty**. Sinun on lähetettävä ostotilaus takaisin toimittajalle, jotta he voivat vahvistaa tai hylätä peruutuksen. Peruutuksen vahvistuksen jälkeen ostotilaus näkyy toimittajan vahvistettujen ostotilausten luettelossa **Peruutettu**-tilassa.
 
 ### <a name="adding-attachments-to-a-po"></a>Liitteiden lisääminen ostotilaukseen
 
-Voit lisätä liitteitä, esimerkiksi tiedostoja, kuvia ja huomautuksia ostotilaukseen käyttämällä tiedostojen hallintajärjestelmää. **Ulkoinen** -tyyppiset liitteet näytetään toimittajalle, kun lähetät ostotilauksen hänelle.
+Voit lisätä liitteitä, esimerkiksi tiedostoja, kuvia ja huomautuksia ostotilaukseen käyttämällä tiedostojen hallintajärjestelmää. **Ulkoinen**-tyyppiset liitteet näytetään toimittajalle, kun lähetät ostotilauksen hänelle.
 
 ## <a name="updating-a-po-when-a-vendor-suggests-changes"></a>Ostotilauksen päivittäminen toimittajan ehdottaessa muutoksia
 
@@ -168,7 +168,7 @@ Voit päivittää ostotilauksen valitsemalla vastauksessa **Käsittele ostotilau
 
 Kaikkia ehdotettuja muutoksia ei voida päivittää ostotilaukseen. Vain ostotilauksen otsikon ja päivämäärien päivitykset ja rivien määrät voidaan päivittää automaattisesti. Muut muutokset täytyy päivittää manuaalisesti ostotilaukseen. Tässä tapauksessa **Onko ostotilauksen päivitys käsitelty?** -kentän arvo on **Manuaalinen päivitys**. Jos toimittaja esimerkiksi ehdottaa rivin jakamista aikatauluksi, muutos on tehtävä manuaalisesti.
 
-Jos rivin tila **Hyväksytty** , sillä on oltava vahvistettu toimituspäivämäärä. Kun suoritat **Käsittele ostotilauksen päivitys** -toiminnon, tämä päivämäärä päivitetään ostotilaukseen. Huomautuksia ja liitteitä ei siirretä automaattisesti nykyiseen ostotilaukseen. Myöskään kauppasopimuksia ei arvioida ostotilauksen riveillä uudelleen, että kun päivität nykyisen ostotilauksen **Käsittele ostotilauksen päivitys** -toiminnolla.
+Jos rivin tila **Hyväksytty**, sillä on oltava vahvistettu toimituspäivämäärä. Kun suoritat **Käsittele ostotilauksen päivitys** -toiminnon, tämä päivämäärä päivitetään ostotilaukseen. Huomautuksia ja liitteitä ei siirretä automaattisesti nykyiseen ostotilaukseen. Myöskään kauppasopimuksia ei arvioida ostotilauksen riveillä uudelleen, että kun päivität nykyisen ostotilauksen **Käsittele ostotilauksen päivitys** -toiminnolla.
 
 ## <a name="po-statuses-and-versions"></a>Ostotilauksen tilat ja versiot
 
@@ -185,7 +185,7 @@ Alla olevassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotila
 | Toimittaja lähettää **Hyväksytään muutosten kera** -vastauksen. | Tilana on edelleen **Ulkoisessa tarkistuksessa**. |
 | Teet joitakin toimittajan pyytämiä muutoksia. | Tilaksi muuttuu **Hyväksytty**. |
 | Lähetät ostotilauksen uuden version toimittajalle. | Uusi versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
-| Toimittaja hyväksyy ostotilauksen uuden version. | Tila on edelleen **Ulkoisessa tarkistuksessa** , ellei toimittajatiliä ei ole määritetty siirtämään ostotilauksia automaattisesti **Vahvistettu** -tilaan, kun toimittaja hyväksyy ne. |
+| Toimittaja hyväksyy ostotilauksen uuden version. | Tila on edelleen **Ulkoisessa tarkistuksessa**, ellei toimittajatiliä ei ole määritetty siirtämään ostotilauksia automaattisesti **Vahvistettu**-tilaan, kun toimittaja hyväksyy ne. |
 
 Toimittajien ei tarvitse vahvistaa ostotilausta toimittajayhteistyöliittymässä. He voivat lähettää myös sähköpostiviestin tai ilmoittaa ostotilauksen hyväksymisestä muiden kanavien kautta. Voit sitten vahvistaa tilauksen manuaalisesti. Saat siinä tapauksessa varoituksen, joka ilmoittaa, että tilauta vahvistetaan, vaikka toimittaja ei ole vastannut siihen. Ostotilaus näkyy tämän jälkeen vahvistushistoriassa avoimena vahvistettuna tilauksena, johon ei ole vastattu. Toimittaja ei voi enää vahvistaa tai hylätä ostotilausta.
 
@@ -194,17 +194,17 @@ Toimittajien ei tarvitse vahvistaa ostotilausta toimittajayhteistyöliittymäss�
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Versiot ja tilat, jos muutostenhallintaa käytetään
 
-Jos ostotilauksen muutoksenhallinta on otettu käyttöön, ostotilaukset siirtyvät **Hyväksytty** -tilaan hyväksyntätyönkulun mukaisesti. Tätä prosessia ei näy toimittajalle.
+Jos ostotilauksen muutoksenhallinta on otettu käyttöön, ostotilaukset siirtyvät **Hyväksytty**-tilaan hyväksyntätyönkulun mukaisesti. Tätä prosessia ei näy toimittajalle.
 
 Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus saattaa käydä läpi muutostenhallinnan ollessa käytössä. Versio rekisteröidään ostotilauksen hyväksymisen yhteydessä eikä silloin, kun ostotilaus lähetetään toimittajalle tai vahvistetaan.
 
 | Toimenpide | Tila ja versio |
 |--------|--------------------|
 | Ensimmäinen ostotilauksen versio luodaan Supply Chain Managementissa. | Tilana on **Luonnos**. |
-| Ostotilaus lähetetään hyväksyntäprosessiin. (Hyväksyntäprosessi on sisäinen prosessi, johon toimittaja ei osallistu.) | Tila vaihtuu **Luonnos** -tilasta **Tarkistuksessa** -tilan kautta **Hyväksyminen** -tilaan, jos ostotilausta ei hylätä hyväksymisprosessin aikana. Hyväksytty ostotilaus rekisteröidään versiona. | 
+| Ostotilaus lähetetään hyväksyntäprosessiin. (Hyväksyntäprosessi on sisäinen prosessi, johon toimittaja ei osallistu.) | Tila vaihtuu **Luonnos**-tilasta **Tarkistuksessa**-tilan kautta **Hyväksyminen**-tilaan, jos ostotilausta ei hylätä hyväksymisprosessin aikana. Hyväksytty ostotilaus rekisteröidään versiona. | 
 | Ostotilaus lähetetään toimittajalle. | Versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
 | Ostotilaus päivitetään tekemällä joitakin toimittajan pyytämiä muutoksia vastauksessa manuaalisesti tai **Käsittele ostotilauksen päivitys** -toiminnolla. | Tilaksi palautuu **Luonnos**. |
-| Ostotilaus lähetetään uudelleen hyväksyntäprosessiin. | Tila vaihtuu **Luonnos** -tilasta **Tarkistuksessa** -tilan kautta **Hyväksyminen** -tilaan, jos ostotilausta ei hylätä hyväksymisprosessin aikana. Järjestelmä voidaan vaihtoehtoisesti määrittää siten, että tiettyihin kenttiin tehdyt muutokset eivät vaadi uudelleenhyväksyntää. Tässä tapauksessa tilaksi vaihtuu ensin **Luonnos** , minkä jälkeen se päivittyy automaattisesti **Hyväksytty** -tilaksi. Hyväksytty ostotilaus rekisteröidään uutena versiona. |
+| Ostotilaus lähetetään uudelleen hyväksyntäprosessiin. | Tila vaihtuu **Luonnos**-tilasta **Tarkistuksessa**-tilan kautta **Hyväksyminen**-tilaan, jos ostotilausta ei hylätä hyväksymisprosessin aikana. Järjestelmä voidaan vaihtoehtoisesti määrittää siten, että tiettyihin kenttiin tehdyt muutokset eivät vaadi uudelleenhyväksyntää. Tässä tapauksessa tilaksi vaihtuu ensin **Luonnos**, minkä jälkeen se päivittyy automaattisesti **Hyväksytty**-tilaksi. Hyväksytty ostotilaus rekisteröidään uutena versiona. |
 | Lähetät ostotilauksen uuden version toimittajalle. | Uusi versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
 | Toimittaja hyväksyy ostotilauksen uuden version. | Tilaksi vaihtuu **Vahvistettu** joko automaattisesti tai kun saat vastauksen toimittajalta ja vahvistat sitten ostotilauksen. |
 
@@ -212,7 +212,7 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 
 Jos käytät tavaralähetysvarastoa, toimittajat voivat tarkastella seuraavien sivujen tietoja toimittajayhteistyöliittymässä:
 
-- **Tavaralähetysvarastoa pienentävät ostotilaukset** – Tavaralähetysvaraston ostotilaukset luodaan, kun varaston omistajuus vaihtuu toimittajalta yrityksellesi. Tuotteen vastaanotto kirjataan samaan aikaan. Nämä tavaralähetyksen ostotilaukset näytetään vain **Tavaralähetysvarastoa vähentävät ostotilaukset** -sivulla. Niitä ei ole **Toimittajayhteistyö** -moduulin **Kaikki vahvistetut ostotilaukset** -sivulla.
+- **Tavaralähetysvarastoa pienentävät ostotilaukset** – Tavaralähetysvaraston ostotilaukset luodaan, kun varaston omistajuus vaihtuu toimittajalta yrityksellesi. Tuotteen vastaanotto kirjataan samaan aikaan. Nämä tavaralähetyksen ostotilaukset näytetään vain **Tavaralähetysvarastoa vähentävät ostotilaukset** -sivulla. Niitä ei ole **Toimittajayhteistyö**-moduulin **Kaikki vahvistetut ostotilaukset** -sivulla.
 - **Tavaralähetysvarastosta vastaanotetut tuotteet** – Tällä sivulla on luettelo kaikista tapahtumista, joissa tuotteiden omistajuus on siirretty toimittajalta yrityksellesi. Näiden tietojen avulla toimittajat voivat laskuttaa asiakasta.
 - **Käytettävissä oleva tavaralähetysvarasto** – Tällä sivulla näytetään toimittajan omistama käytettävissä oleva tavaralähetysvarasto, joka on vastaanotettu varastoosi.
 
@@ -231,7 +231,7 @@ Tässä osassa käsitellään asiakkaiden ja toimittajien välistä viestintää
 
 - **Muutokset** – Kun muutos on valmis, aiemmin luodut tarjouksen vastaukset poistetaan, jotta ne voidaan korvat päivitetyillä arvoilla. Tietoja, kuten edellisten tarjouksen vastausten rivihintaa ja määrää, voidaan tarkastella tarjouspyyntötapauksen kirjauskansioiden avulla.
 
-    Voit pakottaa muutosten käsittelemisen valitsemalla **Hankintaparametrit** -sivun **Tarjouspyynnöt** -pikavälilehden **Lukitse tarjouspyynnöt, kun ne on lähetetty** -asetukseksi **Kyllä**. (Tämän vaihtoehto on määritetty ja pakollinen julkisella sektorilla.)
+    Voit pakottaa muutosten käsittelemisen valitsemalla **Hankintaparametrit**-sivun **Tarjouspyynnöt**-pikavälilehden **Lukitse tarjouspyynnöt, kun ne on lähetetty** -asetukseksi **Kyllä**. (Tämän vaihtoehto on määritetty ja pakollinen julkisella sektorilla.)
 
 - **Palautukset** – Jos toimittaja on lähettänyt tarjouksen mutta tarjouspyyntötapaus edellyttää lisätietoja tai tietojen muokkausta, asiakas voi palauttaa tarjouksen toimittajalle. Aiemmin lähetetyn tarjouksen tiedot säilytetään ja toimittaja voi tehdä pyydetyt muutokset ilman, että tarjousprosessi olisi aloitettava alusta.
 

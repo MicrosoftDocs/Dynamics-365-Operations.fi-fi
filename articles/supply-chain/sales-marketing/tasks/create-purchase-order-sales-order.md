@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018695"
+ms.locfileid: "4427472"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Ostotilauksen luominen myyntitilauksesta
 
@@ -33,23 +33,23 @@ Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilau
 ## <a name="create-a-purchase-order-from-a-sales-order"></a>Ostotilauksen luominen myyntitilauksesta
 1. Valitse **Siirtymisruutu > Moduulit > Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset**.
 2. Valitse **Uusi**.
-3. Avaa haku valitsemalla **Asiakastili** -kentässä avattavan valikon painike.
+3. Avaa haku valitsemalla **Asiakastili**-kentässä avattavan valikon painike.
 4. Etsi haluamasi tietue luettelosta ja valitse se.
 5. Valitse **OK**.
-6. Avaa haku valitsemalla **Nimiketunnus** -kentässä avattavan valikon painike.
+6. Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.
 7. Etsi haluamasi tietue luettelosta ja valitse se. Jos käytössä on USMF, voit valita D0001.  
-8. Anna **Määrä** -kentässä numero.
+8. Anna **Määrä**-kentässä numero.
 9. Valitse **Lisää rivi**.
-10. Avaa haku valitsemalla **Nimiketunnus** -kentässä avattavan valikon painike.
+10. Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.
 11. Etsi haluamasi tietue luettelosta ja valitse se. Jos käytössä on USMF, voit valita T0020.  
 12. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-13. Anna **Määrä** -kentässä numero.
+13. Anna **Määrä**-kentässä numero.
 14. Valitse **Tallenna**.
 15. Valitse **toimintoruudussa** **Myyntitilaus**.
 16. Valitse **Ostotilaus**. **Luo ostotilaus** -sivulla on luettelo kaikista myyntitilauksesta kopioiduista avoimista myyntitilausriveistä. Voit tarkastella tilauksen tietoja ja tarvittaessa muokata valittuja tietoja, kuten määrää ja hinnoitteluehtoja, ennen ostojen luontia. 
 17. Valitse **Sisällytä kaikki** -vaihtoehto.
     - Jos haluat muodostaa ostotilauksen vain myyntitilausrivien alijoukolle, valitse ne yksitellen.  
-    - **Toimittajatili** -kenttään on ehkä jo lisätty toimittajanumero. Jos tuotteelle on määritetty oletustoimittaja (liitetyssä nimikekattavuudessa), kyseinen toimittaja kopioidaan riville. Muussa tapauksessa toimittaja on annettava manuaalisesti.  Tämän opastuksen seuraavissa vaiheissa pyydetään valitsemaan uusi toimittaja, joka on jokaiselle riville eri. Näin toimitaan riippumatta siitä, onko **Toimittajatili** -kentässä arvo vai ei.  
+    - **Toimittajatili**-kenttään on ehkä jo lisätty toimittajanumero. Jos tuotteelle on määritetty oletustoimittaja (liitetyssä nimikekattavuudessa), kyseinen toimittaja kopioidaan riville. Muussa tapauksessa toimittaja on annettava manuaalisesti.  Tämän opastuksen seuraavissa vaiheissa pyydetään valitsemaan uusi toimittaja, joka on jokaiselle riville eri. Näin toimitaan riippumatta siitä, onko **Toimittajatili**-kentässä arvo vai ei.  
 18. Avaa haku valitsemalla **Toimittajan tili** -kentässä avattavan valikon painike.
 19. Etsi haluamasi tietue luettelosta ja valitse se.
 20. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
@@ -63,9 +63,9 @@ Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilau
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Tarkastele myyntitilauksista luotuja ostotilauksista.
 1. Valitse **toimintoruudussa** **Yleiset**.
 2. Valitse **Liittyvät tilaukset**. **Liittyvät tilaukset** -sivulla on luettelo kaikista myyntitilauksesta luoduista tilauksista. Tässä esimerkissä on muodostettu kaksi ostotilausta kahdelle eri toimittajalle. 
-3. Avaa **Ostotilaus** -kentän linkki napsauttamalla. Jokainen ostotilausrivi on liitetty ostoon johtaneeseen myyntitilausriviin. Suhde myyntitilaukseen on ilmaistu **Tuote** -välilehden **Rivin erittely** -pikavälilehden **Viitetyyppi** -, **Viitenumero** - ja **Viite-erä** -kentissä.  
-4. Laajenna tai tiivistä **Rivitiedot** -osa.
-5. Valitse **Tuote** -välilehti.
+3. Avaa **Ostotilaus**-kentän linkki napsauttamalla. Jokainen ostotilausrivi on liitetty ostoon johtaneeseen myyntitilausriviin. Suhde myyntitilaukseen on ilmaistu **Tuote**-välilehden **Rivin erittely** -pikavälilehden **Viitetyyppi**-, **Viitenumero**- ja **Viite-erä**-kentissä.  
+4. Laajenna tai tiivistä **Rivitiedot**-osa.
+5. Valitse **Tuote**-välilehti.
     - **Viite-erä** varmistaa, että oston kustannukset veloitetaan siihen liitetyssä myyntitilauksessa.  
-    - Voit siirtyä alkuperäiseen myyntitilaukseen avaamalla linkin **Viitenumero** -kentässä.  
+    - Voit siirtyä alkuperäiseen myyntitilaukseen avaamalla linkin **Viitenumero**-kentässä.  
 

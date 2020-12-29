@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016030"
+ms.locfileid: "4427464"
 ---
 # <a name="system-directed-cluster-picking"></a>Järjestelmäohjattu klusterikeräily
 
@@ -40,7 +40,7 @@ Järjestelmäohjattu klusteripoiminta tarjoaa vaihtoehdon manuaaliseen klusterir
 - **Luo klusterin tunnus** määrittää, luodaanko klusterin tunnus järjestelmässä vai tuleeko käyttäjän syöttää se.
 - **Lajittelu tarkistustyyppi** määrittää, tarvitaanko toimen vahvistusta.
 
-Uutta mobiililaitteen valikkokohdetta käytetään järjestelmäohjatun klusterin poimintaan. Valitussa **Kohdistettava** -vaihtoehdossa on määritettävä **Klusteriprofiilin tunnus**. Lisäksi järjestelmän ohjaamat työjärjestyskyselyt voivat ryhmitellä tilauksia yrityskohtaisten kriteerien perusteella. Tämän vuoksi voit edelleen optimoida työtilausten määrityksen määrittämällä mukautetut lajittelukriteerit, jotka käyttävät järjestelmäohjattua työjärjestyskyselyä.
+Uutta mobiililaitteen valikkokohdetta käytetään järjestelmäohjatun klusterin poimintaan. Valitussa **Kohdistettava**-vaihtoehdossa on määritettävä **Klusteriprofiilin tunnus**. Lisäksi järjestelmän ohjaamat työjärjestyskyselyt voivat ryhmitellä tilauksia yrityskohtaisten kriteerien perusteella. Tämän vuoksi voit edelleen optimoida työtilausten määrityksen määrittämällä mukautetut lajittelukriteerit, jotka käyttävät järjestelmäohjattua työjärjestyskyselyä.
 
 Kun järjestelmäohjattu klusterin poiminta on otettu käyttöön, varastotyöntekijöille esitetään klusteri, jossa keräilytilaukset on ennalta määritetty klusteripositioihin. Tämän vuoksi työntekijät voivat aloittaa kohteen poiminnan useille työtilauksille valitsemalla keräilysijainnissa vain yhden kerran. Järjestelmän ohjaama klusterin keräilyprosessi on sama kuin käyttäjän ohjaama klusterikeräilyprosessi.
 
@@ -65,13 +65,13 @@ Klusteriprofiilit ohjaavat sitä, miten järjestelmä luo kunkin klusterin. Jos 
 1. Valitse **Varastonhallinta \> Asetukset \> Mobiililaite \> Klusteriprofiilit**.
 2. Valitse **Uusi**.
 3. Syötä **Klusteriprofiilin tunnus** -kenttään **2-sijainti**.
-4. Kirjoita **Nimi** -kenttään **Sijainti 2**.
-5. Kirjoita **Yleinen** -pikavälilehdelle seuraavat tiedot:
+4. Kirjoita **Nimi**-kenttään **Sijainti 2**.
+5. Kirjoita **Yleinen**-pikavälilehdelle seuraavat tiedot:
 
     - **Luo klusteritunnus** - Valitse **Kyllä**. Tämä asetus määrittää, luodaanko klusterin tunnus automaattisesti järjestelmässä vai onko käyttäjä luonut sen keräilyn alussa. 
-    - **Aktivoi toimet** - Valitse **Kyllä**. Tämä asetus määrittää, luodaanko toimen nimet automaattisesti toimen nimi -asetusten perusteella. Jos tämän vaihtoehdon arvoksi on asetettu **Ei** , käytetään rekisterikilven tunnusta.
+    - **Aktivoi toimet** - Valitse **Kyllä**. Tämä asetus määrittää, luodaanko toimen nimet automaattisesti toimen nimi -asetusten perusteella. Jos tämän vaihtoehdon arvoksi on asetettu **Ei**, käytetään rekisterikilven tunnusta.
     - **Toimien enimmäismäärä** - Valitse **2**. Tämä kenttä määrittää klusterin toimien enimmäismäärän (eli ruutujen enimmäismäärän, yhteenlaskut, jne.).
-    - **Toimen nimi** - Valitse **numeerinen** , jotta sijainnit on nimetty jatkuvien numeroiden avulla. Jos valitset **aakkosjärjestyksessä** , sijainnit on nimetty aakkosjärjestykseen.
+    - **Toimen nimi** - Valitse **numeerinen**, jotta sijainnit on nimetty jatkuvien numeroiden avulla. Jos valitset **aakkosjärjestyksessä**, sijainnit on nimetty aakkosjärjestykseen.
     - **Hajota klusteri** - Valitse **Määritä**. Tämä kenttä määrittää, milloin klusteri on rikki. 
     - **Lajittelutarkistustyyppi** - Valitse **sijainnin tarkistus**. Tämä kenttä määrittää, onko hyllytyksen vaihe vahvistettu.
         
@@ -93,12 +93,12 @@ Jos haluat luoda uuden mobiililaitteen valikkovaihtoehdon järjestelmän ohjauks
     - **Tila** - Työ
     - **Käytä aiemmin luotua työtä** - Kyllä
 
-1. Kirjoita **Yleinen** -pikavälilehdelle seuraavat tiedot:
+1. Kirjoita **Yleinen**-pikavälilehdelle seuraavat tiedot:
     - **Ohjattu** - Järjestelmäohjattu klusterikeräily
     - **Luo rekisterikilpi** - Kyllä
     - **Klusteriprofiilin tunnus** - 2-sijainti.
 
-1. Määritä **työluokat** -pikavälilehdessä tämän mobiililaitteen valikkovaihtoehdon kelvollinen työluokka määrittämällä seuraavat kentät:
+1. Määritä **työluokat**-pikavälilehdessä tämän mobiililaitteen valikkovaihtoehdon kelvollinen työluokka määrittämällä seuraavat kentät:
     - **Työluokan tunnus** - Myynti
     - **Työtilauksen tyyppi** - myyntitilaukset
 
@@ -108,7 +108,7 @@ Jos haluat luoda uuden mobiililaitteen valikkovaihtoehdon järjestelmän ohjauks
     - **Kuvaus** - Työn prioriteetti – työtunnus
 
 1. Valitse toimintoruudussa **Muokkaa kyselyä**
-1. Valitse **Lajittelu** -välilehti
+1. Valitse **Lajittelu**-välilehti
 1. Lisää uusi rivi valitsemalla **Lisää** ja syötä sitten seuraavat:
     - **Taulu** - työ
     - **Johdettu taulu** - Työ
@@ -125,13 +125,13 @@ Jos haluat luoda uuden mobiililaitteen valikkovaihtoehdon järjestelmän ohjauks
 ### <a name="set-up-a-mobile-device-menu"></a>Määritä varaston mobiililaitteen valikko
 
 1. Valitse **Varastonhallinta > Asetukset > Mobiililaite > Mobiililaitteen valikko**.
-1. Lisää **SD-klusteri** -valikkovaihtoehto, jonka juuri loit mobiililaitteen valikkoon.
-1. Valitse **Lähtevä** -valikko.
+1. Lisää **SD-klusteri**-valikkovaihtoehto, jonka juuri loit mobiililaitteen valikkoon.
+1. Valitse **Lähtevä**-valikko.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Vieritä, kunnes löydät **SD-klusterin**.
-1. Valitse **SD-klusteri** , **valikkorakenne** -luetteloon osoittava nuoli otetaan käyttöön.
-1. Siirrä **SD-klusterin** valikkokohde **Lähtevän** valikon rakenteeseen valitsemalla **nuoli** -painike.
-1. Valitse **Valikkorakenne** -luettelosta **SD-klusteri** ja siirrä valikkokohde haluamaasi kohtaan mobiililaitteen valikossa valitsemalla **ylös** tai **alas** osoittavia nuolia.
+1. Valitse **SD-klusteri**, **valikkorakenne** -luetteloon osoittava nuoli otetaan käyttöön.
+1. Siirrä **SD-klusterin** valikkokohde **Lähtevän** valikon rakenteeseen valitsemalla **nuoli**-painike.
+1. Valitse **Valikkorakenne**-luettelosta **SD-klusteri** ja siirrä valikkokohde haluamaasi kohtaan mobiililaitteen valikossa valitsemalla **ylös** tai **alas** osoittavia nuolia.
 
 ## <a name="scenario"></a>Skenaario
 
@@ -142,10 +142,10 @@ Ennen kuin voit määrittää järjestelmäohjatun klusterikeräilyn, sinun on l
 1. Siirry kohtaan **Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset**.
 1. Valitse **Uusi** toimintoruudussa, luodaksesi ensimmäisen myyntitilauksen.
     - **Luo myyntitilaus** -valikko avautuu, lisää seuraavat tiedot:
-        - Määritä **asiakas** -pikavälilehdessä **Asiakastili** - **US-004**.
-        - Kirjoita **Yleinen** -pikavälilehdelle **Varasto** - **62**.
+        - Määritä **asiakas**-pikavälilehdessä **Asiakastili** - **US-004**.
+        - Kirjoita **Yleinen**-pikavälilehdelle **Varasto** - **62**.
         - Valitse **OK** sulkeaksesi valikon ja luodaksesi myyntitilauksen.
-    - **Valitse myyntitilausrivit** -pikavälilehdessä **Lisää rivi** , jos uutta riviä ei lisätä automaattisesti, ja kirjoita seuraavat kohdat:
+    - **Valitse myyntitilausrivit** -pikavälilehdessä **Lisää rivi**, jos uutta riviä ei lisätä automaattisesti, ja kirjoita seuraavat kohdat:
         - **Nimiketunnus** - A0001
         - **Määrä** - 1
         - Lisää toinen rivi valitsemalla **Lisää rivi**.
@@ -154,15 +154,15 @@ Ennen kuin voit määrittää järjestelmäohjatun klusterikeräilyn, sinun on l
     - Varaa varasto molempia juuri luomiasi rivejä varten.
         - Valitse **Rivi 1**.
         - Valitse **myyntitilauksen rivien** toimintaruudusta **Varasto** ja valitse sitten luettelosta **Varaus**.
-        - Valitse **Varaus** -lomakkeessa **Varaa erä** voidaksesi tehdä varauksia varastosta.
+        - Valitse **Varaus**-lomakkeessa **Varaa erä** voidaksesi tehdä varauksia varastosta.
         - Kun **Varaus** on tehty, suljetaan varauslomake.
         - Toista nämä vaiheet, kun varaat **rivin 2** varaston.
 1. Valitse **Uusi** toimintoruudussa, luodaksesi toisen myyntitilauksen
     - **Luo myyntitilaus** -valikko avautuu, lisää seuraavat tiedot:
-        - Määritä **asiakas** -pikavälilehdessä **Asiakastili** - **US-005**.
-        - Kirjoita **Yleinen** -pikavälilehdelle **Varasto** - **62**.
+        - Määritä **asiakas**-pikavälilehdessä **Asiakastili** - **US-005**.
+        - Kirjoita **Yleinen**-pikavälilehdelle **Varasto** - **62**.
         - Valitse **OK** sulkeaksesi valikon ja luodaksesi myyntitilauksen
-    - **Valitse myyntitilausrivit** -pikavälilehdessä **Lisää rivi** , jos uutta riviä ei lisätä automaattisesti, ja kirjoita seuraavat tiedot:
+    - **Valitse myyntitilausrivit** -pikavälilehdessä **Lisää rivi**, jos uutta riviä ei lisätä automaattisesti, ja kirjoita seuraavat tiedot:
         - **Nimiketunnus** - A0001
         - **Määrä** - 4
         - Lisää toinen rivi valitsemalla **Lisää rivi**.
@@ -171,28 +171,28 @@ Ennen kuin voit määrittää järjestelmäohjatun klusterikeräilyn, sinun on l
     - Varaa varasto molempia juuri luomiasi rivejä varten.
         - Valitse **Rivi 1**.
         - Valitse **myyntitilauksen rivien** toimintaruudusta **Varasto** ja valitse sitten luettelosta **Varaus**.
-        - Valitse **Varaus** -lomakkeessa **Varaa erä** voidaksesi tehdä varauksia varastosta.
+        - Valitse **Varaus**-lomakkeessa **Varaa erä** voidaksesi tehdä varauksia varastosta.
         - Kun **Varaus** on tehty, suljetaan varauslomake.
         - Toista nämä vaiheet, kun varaat **rivin 2** varaston.
     - Sulje myyntitilaus ja palaa **Kaikki myyntitilaukset** -luettelosivulle.
 1. Etsi juuri luomasi kaksi myyntitilausta (sivu on ehkä päivitettävä). Valitse taulusta molemmat myyntitilaukset käyttämällä osan valintamerkkiä.
-    - Valitse **Kaikki myyntitilaukset** -toimintoruudusta **Varasto** -välilehti.
-    - Vapauta molemmat myyntitilaukset varastoon valitsemalla **toimenpiteet** -ryhmästä **vapauta varastoon**.
+    - Valitse **Kaikki myyntitilaukset** -toimintoruudusta **Varasto**-välilehti.
+    - Vapauta molemmat myyntitilaukset varastoon valitsemalla **toimenpiteet**-ryhmästä **vapauta varastoon**.
 1. Kun vapautus varastoon -prosessi on päättynyt, näkyviin tulee tiedottava sanoma.
     - Kullekin myyntitilaukselle luodaan lähetykset.
     - Aalto luodaan ja molemmat lähetykset liitetään aaltokohteeseen. Kirjoita **aallon tunnus** muistiin.
 1. Valitse **Varastonhallinta > Lähtevät aallot > Lähetysaallot > Kaikki aallot**.
     - Valitse **Kaikki aallot** -luettelosta edellisessä vaiheessa luomasi **aallon tunnus**.
-    - Valitse Toimintoruudun **Aalto** -välilehdellä,
-    - Valitse **Aalto** -ryhmästä **prosessi** , jossa käsitellään ja luodaan **Työ**.
+    - Valitse Toimintoruudun **Aalto**-välilehdellä,
+    - Valitse **Aalto**-ryhmästä **prosessi**, jossa käsitellään ja luodaan **Työ**.
     - Tiedottavat sanomat luodaan, kun käsittely on suoritettu, mikä ilmaisee, että työ on luotu ja aalto kirjattu.
-1. **Valinnainen** : voit tarkastella luotua työtä valitsemalla **varaston hallinta > työ > työn tiedot**. Luodaan kaksi erilaista työtunnusta. Jokaisella työtunnuksella on kaksi poimintariviä.
+1. **Valinnainen**: voit tarkastella luotua työtä valitsemalla **varaston hallinta > työ > työn tiedot**. Luodaan kaksi erilaista työtunnusta. Jokaisella työtunnuksella on kaksi poimintariviä.
 
 ### <a name="run-the-mobile-device-flow"></a>Suorita mobiililaitteen virtaus
 
 1. Kirjaudu kannettavaan laitteeseen käyttäjälle varastossa **62**.
 1. Valitse **päävalikosta** **Lähtevä**.
-1. Valitse **Lähtevä** -valikossa **SD-klusteri** -valikkokohde aloittaaksesi poiminnan.
+1. Valitse **Lähtevä**-valikossa **SD-klusteri**-valikkokohde aloittaaksesi poiminnan.
     - Klusteri luodaan, ja siihen on liitetty kaksi aiemmin luomaasi työtunnusta. Jos olet luonut useamman kuin kaksi työtunnusta, vain kaksi ensimmäistä lisätään klusteriin. Huomaa, että työtunnukset lisätään klusteriin nousevassa järjestyksessä, kuten kyselyasetuksissa on määritetty.
 
     > [!NOTE]

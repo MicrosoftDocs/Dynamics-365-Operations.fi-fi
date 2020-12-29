@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016444"
+ms.locfileid: "4427443"
 ---
 # <a name="set-up-shipping-carriers"></a>Lähetyksen rahdinkuljettajien määrittäminen
 
@@ -35,41 +35,41 @@ Tässä aiheessa kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittä�
 1. Valitse **Siirtymisruutu > Moduulit > Kuljetustenhallinta > Asetukset > Rahdinkuljettajat > Lähetyksen rahdinkuljettajat**.
 2. Valitse toimintoruudussa **Uusi**.
 3. Syötä **Lähetyksen rahdinkuljettaja** -kenttään arvo.
-4. Kirjoita arvo **Nimi** -kenttään.
-5. Valitse **Tila** -kentästä vaihtoehto avattavasta valikosta.
+4. Kirjoita arvo **Nimi**-kenttään.
+5. Valitse **Tila**-kentästä vaihtoehto avattavasta valikosta.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan yleistietojen täyttäminen
-1. Ota käyttöön **Yleiskuvaus** -osan laajennus.
+1. Ota käyttöön **Yleiskuvaus**-osan laajennus.
 2. Valitse **Aktivoi lähetyksen rahdinkuljettaja** -valintaruutu tai poista sen valinta.
-3. Valitse **Toimittajan tili** -kentästä vaihtoehto avattavasta valikosta. Valitse toimittajan tili, johon lähetyksen rahdinkuljettaja liitetään.  
-4. Valitse vaihtoehto **Kuljetuksen maksuvälineen tyyppi** -kentässä. Valitse **Manuaalinen** käyttääksesi Kuljetuksen maksuväline -sivua tai valitse **EDI** , kun haluat päivittää maksuvälineen sähköistä tiedonsiirtoa (EDI = Electronic Data Interchange) käyttäen.  
+3. Valitse **Toimittajan tili**-kentästä vaihtoehto avattavasta valikosta. Valitse toimittajan tili, johon lähetyksen rahdinkuljettaja liitetään.  
+4. Valitse vaihtoehto **Kuljetuksen maksuvälineen tyyppi** -kentässä. Valitse **Manuaalinen** käyttääksesi Kuljetuksen maksuväline -sivua tai valitse **EDI**, kun haluat päivittää maksuvälineen sähköistä tiedonsiirtoa (EDI = Electronic Data Interchange) käyttäen.  
 5. Valitse **Aktivoi rahdinkuljettajan luokitus** -valintaruutu tai poista sen valinta.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan tarvitsemien palveluiden luominen
-1. Ota käyttöön **Palvelut** -osan laajennus.
+1. Ota käyttöön **Palvelut**-osan laajennus.
 2. Valitse **Uusi**.
 3. Syötä **Rahdinkuljettajan palvelu** -kenttään arvo.
-4. Kirjoita arvo **Nimi** -kenttään.
-5. Valitse **Kuljetusmenetelmä** -kentästä vaihtoehto avattavasta valikosta.
+4. Kirjoita arvo **Nimi**-kenttään.
+5. Valitse **Kuljetusmenetelmä**-kentästä vaihtoehto avattavasta valikosta.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Rahdinkuljettajan osoitteen määrittäminen (valinnainen)
-1. Ota käyttöön **Osoitteet** -osan laajennus.
+1. Ota käyttöön **Osoitteet**-osan laajennus.
 2. Valitse **Uusi**.
 3. Kirjoita **Nimi tai kuvaus** -kenttään arvo.
-4. Valitse **Maa/alue** -kentästä vaihtoehto avattavasta valikosta.
-5. Valitse **Postinumero** -kentästä vaihtoehto avattavasta valikosta.
-6. Kirjoita arvo **Katuosoite** -kenttään.
+4. Valitse **Maa/alue**-kentästä vaihtoehto avattavasta valikosta.
+5. Valitse **Postinumero**-kentästä vaihtoehto avattavasta valikosta.
+6. Kirjoita arvo **Katuosoite**-kenttään.
 7. Valitse **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan luokituksen profiilin määrittäminen
 1. Ota **Luokituksen profiilit** -osan laajennus käyttöön.
 2. Valitse **Uusi**.
 3. Syötä **Luokituksen profiili** -kenttään arvo.
-4. Kirjoita arvo **Nimi** -kenttään.
-5. Valitse **Toimipaikka** -kentästä vaihtoehto avattavasta valikosta.
-6. Valitse **Varasto** -kentästä vaihtoehto avattavasta valikosta.
-7. Valitse **Hinnan laskenta** -kentästä vaihtoehto avattavasta valikosta. Valitse hinnan laskenta rahdinkuljettajan yhteystietojen perusteella.  
-8. Valitse **Hinnan päätiedot** -kentästä vaihtoehto avattavasta valikosta.
-9. Valitse **Siirtoajan laskenta** -kentästä vaihtoehto avattavasta valikosta.
+4. Kirjoita arvo **Nimi**-kenttään.
+5. Valitse **Toimipaikka**-kentästä vaihtoehto avattavasta valikosta.
+6. Valitse **Varasto**-kentästä vaihtoehto avattavasta valikosta.
+7. Valitse **Hinnan laskenta**-kentästä vaihtoehto avattavasta valikosta. Valitse hinnan laskenta rahdinkuljettajan yhteystietojen perusteella.  
+8. Valitse **Hinnan päätiedot**-kentästä vaihtoehto avattavasta valikosta.
+9. Valitse **Siirtoajan laskenta**-kentästä vaihtoehto avattavasta valikosta.
 10. Valitse **Tallenna**.
 

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017687"
+ms.locfileid: "4427493"
 ---
 # <a name="outbound-sorting"></a>Lähtevä lajittelu
 
@@ -40,7 +40,7 @@ Ennen kuin käytät toimintoa, se on otettava käyttöön järjestelmässä. Jä
 
 ## <a name="setup"></a>Määritys
 
-Tässä skenaariossa on käytettävä **USMF** -vakioesittelytietoja ja varastoa *62*. Lisäksi on suoritettava seuraavissa alaosioissa käsitellyt määritykset.
+Tässä skenaariossa on käytettävä **USMF**-vakioesittelytietoja ja varastoa *62*. Lisäksi on suoritettava seuraavissa alaosioissa käsitellyt määritykset.
 
 ### <a name="set-up-a-wave-template"></a>Aaltomallin asetuksien määrittäminen
 
@@ -48,7 +48,7 @@ Tämä määritys käsittelee automaattisesti aallon ja luoda työn, kun rivi va
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Valitse malliluettelossa **Varasto 62**.
-1. Varmista **Yleiset** -pikavälilehdessä, että **Käsittele aalto, kun se vapautetaan varastoon** -vaihtoehtona on *Kyllä*.
+1. Varmista **Yleiset**-pikavälilehdessä, että **Käsittele aalto, kun se vapautetaan varastoon** -vaihtoehtona on *Kyllä*.
 
 ### <a name="set-up-a-worker"></a>Työntekijän määrittäminen
 
@@ -59,10 +59,10 @@ Pakkausasemaa pidetään sijaintina. Pakkausasemaan kirjautuvat varastotyönteki
 
 1. Valitse **Varastonhallinta \> Asetukset \> Työntekijä**.
 1. Valitse **Uusi**.
-1. Valitse **Työntekijä** -kentässä kohdekäyttäjä työntekijäluettelossa.
+1. Valitse **Työntekijä**-kentässä kohdekäyttäjä työntekijäluettelossa.
 1. Valitse **Valitse**.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Luo mobiililaitetili valitsemalla **Käyttäjät** -pikavälilehdessä **Uusi** ja määritä sille seuraavat arvot:
+1. Luo mobiililaitetili valitsemalla **Käyttäjät**-pikavälilehdessä **Uusi** ja määritä sille seuraavat arvot:
 
     - **Käyttäjätunnus:** anna yksilöivä tunnus.
     - **Käyttäjänimi:** anna tunnukselle nimi.
@@ -92,7 +92,7 @@ Pakkausasemaa pidetään sijaintina. Pakkausasemaan kirjautuvat varastotyönteki
 ### <a name="set-up-warehouse-management-parameters"></a>Varastonhallinnan parametrien määrittäminen
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**.
-1. Valitse **Yleiset** -välilehden **Sijaintityypit** -pikavälilehden **Lajittelun sijaintityyppi** -kentän arvoksi *LAJITTELU*.
+1. Valitse **Yleiset**-välilehden **Sijaintityypit**-pikavälilehden **Lajittelun sijaintityyppi** -kentän arvoksi *LAJITTELU*.
 1. Valitse toimintoruudussa **Tallenna**.
 
 ### <a name="set-up-a-location-profile"></a>Sijaintiprofiilin määrittäminen
@@ -104,12 +104,12 @@ Pakkausasemaa pidetään sijaintina. Pakkausasemaan kirjautuvat varastotyönteki
     - **Sijaintiprofiilin tunnus:** *Lajittelu*
     - **Nimi:** *Lajittelu*
 
-1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
     - **Sijainnin muoto:** *ASRB* (käytävä-teline-hylly-lokero)
     - **Sijaintityyppi:** *LAJITTELU*
     - **Käytä rekisterikilven seurantaa:** *Kyllä*
-    - **Salli yhdistetyt nimikkeet:** *Kyllä* (Kun arvoksi valitaan *Kyllä* , **Salli yhdistetyt varastoerät** -asetukseksi määritetään automaattisesti *Kyllä* eikä tätä asetusta voi muuttaa erikseen.)
+    - **Salli yhdistetyt nimikkeet:** *Kyllä* (Kun arvoksi valitaan *Kyllä*, **Salli yhdistetyt varastoerät** -asetukseksi määritetään automaattisesti *Kyllä* eikä tätä asetusta voi muuttaa erikseen.)
 
 1. Valitse **Tallenna**.
 
@@ -119,7 +119,7 @@ Pakkausasemaa pidetään sijaintina. Pakkausasemaan kirjautuvat varastotyönteki
 1. Poista ylätunnisteessa **Luo tarkistusnumeroita sijaintiin** -valintaruudun valinta.
 1. Luo sijainti valitsemalla toimintoruudussa **Uusi** ja määritä sille seuraavat arvot:
 
-    - **Varasto** : *62*
+    - **Varasto**: *62*
     - **Sijainti:** *SORT*
     - **Sijaintiprofiilin tunnus:** *LAJITTELU*
 
@@ -138,23 +138,23 @@ Tässä skenaariossa luodaan lähtevä lajittelumalli luomaan kuormalavat pakkau
     - **Lähtevän lajittelumallin tunnus:** *AutoWork*
     - **Kuvaus:** *Automaattisen työn luonti*
     - **Lähtevän lajittelumallin tyyppi:** *Kontti*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
     - **Sijainti:** *SORT*
 
-1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
     - **Lajittelun tarkistus:** *Sijainnin tarkistus*.
     - **Luo työ paikkaan suljettaessa:** *Kyllä*
 
-        Jos tämän vaihtoehdon arvona on *Kyllä* , kun paikka luodaan, työ luodaan siirtämään varasto lopulliseen lähetyssijaintiin. Jos vaihtoehdon arvona on *Ei* , varasto kerätään tilaukseen heti, kun paikka suljetaan.
+        Jos tämän vaihtoehdon arvona on *Kyllä*, kun paikka luodaan, työ luodaan siirtämään varasto lopulliseen lähetyssijaintiin. Jos vaihtoehdon arvona on *Ei*, varasto kerätään tilaukseen heti, kun paikka suljetaan.
 
     - **Paikan määritys:** *Automaattinen*
 
-        Jos kentässä on valittu *Manuaalinen* , käyttäjän on aina ilmaistava, mihin paikkaan varasto lajitellaan. Jos kentässä on valittu *Automaattinen* , järjestelmä ohjaa mahdollisuuksien mukaan varaston automaattisesti sijaintiin lajittelumallin taukojen perusteella.
+        Jos kentässä on valittu *Manuaalinen*, käyttäjän on aina ilmaistava, mihin paikkaan varasto lajitellaan. Jos kentässä on valittu *Automaattinen*, järjestelmä ohjaa mahdollisuuksien mukaan varaston automaattisesti sijaintiin lajittelumallin taukojen perusteella.
 
-1. Valitse **Tallenna** , jolloin **Muokkaa kyselyä** -painike tulee näkyviin toimintoruudussa.
+1. Valitse **Tallenna**, jolloin **Muokkaa kyselyä** -painike tulee näkyviin toimintoruudussa.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin **Lajittelu** -välilehdessä rivi, jolla on seuraavat arvot:
+1. Lisää kyselyeditorin **Lajittelu**-välilehdessä rivi, jolla on seuraavat arvot:
 
     - **Taulukko:** *Lähetykset*
     - **Johdettu taulu:** *Lähetykset*
@@ -187,9 +187,9 @@ Tässä skenaariossa luodaan lähtevä lajittelumalli luomaan kuormalavat pakkau
     - **Kontin pakkauskäytäntö:** *Lajittelu*
     - **Kuvaus:** *Lajittelu*
 
-1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
-    - **Varasto** : *62*
+    - **Varasto**: *62*
     - **Lajittelun oletussijainti:** *LAJITTELU*
     - **Painoyksikkö:** *kg*
     - **Kontin sulkemiskäytäntö:** *Automaattinen vapautus*
@@ -209,7 +209,7 @@ Luo uusi lajittelutoiminnon kanssa yhdessä käytettävä pakkausprofiili.
     - **Kontin pakkauskäytäntö:** *Lajittelu*
     - **Konttitunnuksen tila:** *Automaattinen*
     - **Kontin tyyppi:** *Laatikko-suuri*
-    - **Luo kontti automaattisesti, kun kontti suljetaan:** Tyhjennetty (= *Ei* )
+    - **Luo kontti automaattisesti, kun kontti suljetaan:** Tyhjennetty (= *Ei*)
 
 1. Valitse **Tallenna**.
 
@@ -241,15 +241,15 @@ Luo mobiililaitteen valikkovaihtoehto lajittelun aikana tapahtuvalla kuormalavoj
     - **Tila:** *Epäsuora*
     - **Käytä aiemmin luotua työtä:** *Ei*
 
-1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
     - **Tehtäväkoodi:** *Lähtevä lajittelu*
 
-        Kun tämän kentän asetuksena on *Lähtevä lajittelu* , **Lähtevän lajittelumallin tunnus** -kenttä on näkyvissä.
+        Kun tämän kentän asetuksena on *Lähtevä lajittelu*, **Lähtevän lajittelumallin tunnus** -kenttä on näkyvissä.
 
     - **Käytä prosessiopasta:** *Kyllä*
 
-        Kun **Tehtäväkoodi** -kentän asetuksena *Lähtevä lajittelu* , tämän asetuksen määrityksenä on automaattisesti *Kyllä*.
+        Kun **Tehtäväkoodi**-kentän asetuksena *Lähtevä lajittelu*, tämän asetuksen määrityksenä on automaattisesti *Kyllä*.
 
     - **Lähtevän lajittelumallin tunnus:** *AutoWork*
 
@@ -268,8 +268,8 @@ Luo seuraavaksi valikkovaihtoehto, jolla käyttäjät voivat siirtää lajitellu
     - **Tila:** *Työ*
     - **Käytä aiemmin luotua työtä:** *Kyllä*
 
-1. Määritä **Yleinen** -pikavälilehden **Ohjaus** -kentän arvoksi *Käyttäjäohjattu*.
-1. Valitse **Työluokat** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot:
+1. Määritä **Yleinen**-pikavälilehden **Ohjaus**-kentän arvoksi *Käyttäjäohjattu*.
+1. Valitse **Työluokat**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot:
 
     - **Työluokan tunnus:** *LAJITTELU*
     - **Työtilauksen tyyppi:** *Lajiteltu varastokeräily*
@@ -281,13 +281,13 @@ Luo seuraavaksi valikkovaihtoehto, jolla käyttäjät voivat siirtää lajitellu
 Uudet valikkovaihtoehdot on nyt lisättävä mobiililaitteen valikkoon.
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Mobiililaite \> Mobiililaitteen valikko**.
-1. Valitse **Lähtevä** -valikko.
+1. Valitse **Lähtevä**-valikko.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Etsi ja valitse **Kuormalavan luonti** **Käytettävissä olevat valikot ja valikkovaihtoehdot** -sarakkeessa.
 1. Siirrä **Kuormalavan luonti** oikealla nuolipainikkeella **Valikon rakenne** -sarakkeeseen.
 1. Siirrä **Kuormalavan luonti** -valikkovaihtoehto ylä- ja alanuolipainikkeilla sopivaan paikkaan mobiililaitteen valikossa.
 1. Valitse **Tallenna**.
-1. Lisää **Kuormaus lajittelusta** -valikkovaihtoehto **Lähtevät** -valikkoon vastaavasti.
+1. Lisää **Kuormaus lajittelusta** -valikkovaihtoehto **Lähtevät**-valikkoon vastaavasti.
 
 ### <a name="set-up-location-directives"></a>Määritä sijaintidirektiivit
 
@@ -303,29 +303,29 @@ Uudet valikkovaihtoehdot on nyt lisättävä mobiililaitteen valikkoon.
     - **Järjestys:** *1*
     - **Nimi:** *Baydoor*
 
-1. Määritä **Sijaintidirektiivit** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Sijaintidirektiivit**-pikavälilehdessä seuraavat arvot:
 
     - **Työtyyppi:** *Aseta*
     - **Toimipaikka:** *6*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
     - **Useita varastointiyksiköitä:** *Ei*
 
-1. Valitsemalla **Tallenna** voit ottaa **Rivit** -pikavälilehden työkalurivin käyttöön.
-1. Valitse **Rivit** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Valitsemalla **Tallenna** voit ottaa **Rivit**-pikavälilehden työkalurivin käyttöön.
+1. Valitse **Rivit**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Järjestys:** *1*
     - **Alku:** *0*
     - **Loppu:** *1 000 000*
 
-1. Valitsemalla **Tallenna** voit ottaa **Sijaintidirektiivitoiminnot** -pikavälilehden työkalurivin käyttöön.
-1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Valitsemalla **Tallenna** voit ottaa **Sijaintidirektiivitoiminnot**-pikavälilehden työkalurivin käyttöön.
+1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Järjestys:** *1*
     - **Nimi:** *Baydoor*
 
 1. Valitse **Tallenna**.
-1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
-1. Etsi kyselyeditoriin **Alue** -välilehdessä rivi, jonka **Kenttä** -kentän asetuksena on *Sijainti*. Määritä tämän rivin **Ehdot** -kentän arvoksi *Lastauspaikan ovi*.
+1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Muokkaa kyselyä**.
+1. Etsi kyselyeditoriin **Alue**-välilehdessä rivi, jonka **Kenttä**-kentän asetuksena on *Sijainti*. Määritä tämän rivin **Ehdot**-kentän arvoksi *Lastauspaikan ovi*.
 1. Tallenna asetukset valitsemalla **OK** ja sulje kyselyeditori.
 
 #### <a name="set-up-a-multiple-sku-directive"></a>Usean varastointiyksikön direktiivin määrittäminen
@@ -338,29 +338,29 @@ Uudet valikkovaihtoehdot on nyt lisättävä mobiililaitteen valikkoon.
     - **Järjestys:** *2*
     - **Nimi:** *Monta lastausovea*
 
-1. Määritä **Sijaintidirektiivit** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Sijaintidirektiivit**-pikavälilehdessä seuraavat arvot:
 
     - **Työtyyppi:** *Aseta*
     - **Toimipaikka:** *6*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
     - **Useita varastointiyksiköitä:** *Kyllä*
 
-1. Valitsemalla **Tallenna** voit ottaa **Rivit** -pikavälilehden työkalurivin käyttöön.
-1. Valitse **Rivit** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Valitsemalla **Tallenna** voit ottaa **Rivit**-pikavälilehden työkalurivin käyttöön.
+1. Valitse **Rivit**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Järjestys:** *1*
     - **Alku:** *0*
     - **Loppu:** *1 000 000*
 
-1. Valitsemalla **Tallenna** voit ottaa **Sijaintidirektiivitoiminnot** -pikavälilehden työkalurivin käyttöön.
-1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
+1. Valitsemalla **Tallenna** voit ottaa **Sijaintidirektiivitoiminnot**-pikavälilehden työkalurivin käyttöön.
+1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot uudella rivillä. Hyväksy kaikkien muiden kenttien oletusarvot.
 
     - **Järjestys:** *1*
     - **Nimi:** *Monta lastausovea*
 
 1. Valitse **Tallenna**.
-1. Valitse **Sijaintidirektiivitoiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
-1. Etsi kyselyeditoriin **Alue** -välilehdessä rivi, jonka **Kenttä** -kentän asetuksena on *Sijainti*. Määritä tämän rivin **Ehdot** -kentän arvoksi *Lastauspaikan ovi*.
+1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehdessä **Muokkaa kyselyä**.
+1. Etsi kyselyeditoriin **Alue**-välilehdessä rivi, jonka **Kenttä**-kentän asetuksena on *Sijainti*. Määritä tämän rivin **Ehdot**-kentän arvoksi *Lastauspaikan ovi*.
 1. Tallenna asetukset valitsemalla **OK** ja sulje kyselyeditori.
 
 ### <a name="set-up-work-templates"></a>Määritä työmallit
@@ -368,13 +368,13 @@ Uudet valikkovaihtoehdot on nyt lisättävä mobiililaitteen valikkoon.
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Työ \> Työmallit**.
 1. Muuta **Työtilauksen tyyppi** -kentän arvoksi *Lajiteltu varastokeräily*.
 1. Valitse toimintoruudussa **Uusi** ja luo työmalli.
-1. Määritä **Yleiskatsaus** -välilehdessä seuraavat arvot:
+1. Määritä **Yleiskatsaus**-välilehdessä seuraavat arvot:
 
     - **Järjestys:** *1*
     - **Työmalli:** *Lajittelu*
     - **Työmallin kuvaus:** *Lajittelu*
 
-1. Valitse **Tallenna** , jos haluat, että **Työmallin tiedot** -pikavälilehti on käytettävissä.
+1. Valitse **Tallenna**, jos haluat, että **Työmallin tiedot** -pikavälilehti on käytettävissä.
 1. Lisää rivi valitsemalla **Työmallin tiedot** -pikavälilehdessä **Uusi** ja määritä sitten seuraavat arvot:
 
     - **Työtyyppi:** *Poiminta*
@@ -400,29 +400,29 @@ Tämä skenaario simuloi tilannetta, jossa pakatut kontit on lajiteltava pakkaus
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakastili:** *US-005*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
 1. Sulje valintaikkuna valitsemalla **OK**.
 
     Uusi myyntitilaus avataan.
 
-1. Vaihda **Otsikko** -näkymään.
-1. Määritä **Toimitus** -pikavälilehden **Kuljetus** -osassa seuraavat arvot:
+1. Vaihda **Otsikko**-näkymään.
+1. Määritä **Toimitus**-pikavälilehden **Kuljetus**-osassa seuraavat arvot:
 
     - **Rahdinkuljettaja:** *Lentorahti*
     - **Rahdinkuljetuspalvelu:** *Ilma*
 
-1. Siirry **Rivit** -näkymään.
-1. Jos uutta tyhjää riviä ei lisätä automaattisesti ruudukkoon, lisää se valitsemalla **Myyntitilausrivit** -pikavälilehdessä **Lisää rivi**.
+1. Siirry **Rivit**-näkymään.
+1. Jos uutta tyhjää riviä ei lisätä automaattisesti ruudukkoon, lisää se valitsemalla **Myyntitilausrivit**-pikavälilehdessä **Lisää rivi**.
 1. Määritä seuraavat arvot uudella tilausrivillä:
 
     - **Nimiketunnus:** *A0001*
     - **Määrä** *2*
 
-1. Kun uusi rivi on edelleen valittuna **Myyntitilausrivit** -pikavälilehdessä, valitse ruudukon yläpuolella olevassa **Varasto** -valikossa **Varaus**.
-1. Valitse **Varaus** -sivulla **Varaa erä** , jos haluat varata valitun rivin koko määrän varastossa.
-1. Palaa myyntitilaukseen sulkemalla **Varaus** -sivun.
-1. Valitse toimintoruudussa **Varasto** -välilehden **Toiminnot** -ryhmässä **Vapauta varastoon**.
+1. Kun uusi rivi on edelleen valittuna **Myyntitilausrivit**-pikavälilehdessä, valitse ruudukon yläpuolella olevassa **Varasto**-valikossa **Varaus**.
+1. Valitse **Varaus**-sivulla **Varaa erä**, jos haluat varata valitun rivin koko määrän varastossa.
+1. Palaa myyntitilaukseen sulkemalla **Varaus**-sivun.
+1. Valitse toimintoruudussa **Varasto**-välilehden **Toiminnot**-ryhmässä **Vapauta varastoon**.
 1. Näyttöön tulee tietosanoma, jossa näkyy tämän tilauksen lähetys ja aalto. Kirjoita muistiin aallon ja lähetyksen tunnusnumerot.
 
 #### <a name="sales-order-2"></a>Myyntitilaus 2
@@ -432,28 +432,28 @@ Tämä skenaario simuloi tilannetta, jossa pakatut kontit on lajiteltava pakkaus
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakastili:** *US-006*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
 1. Sulje valintaikkuna valitsemalla **OK**.
-1. Uusi myyntitilaus avataan. **Myyntitilausrivit** -pikavälilehden ruudukossa pitäisi olla uusi tyhjä rivi. Määritä seuraavat arvot kyseisellä tilausrivillä:
+1. Uusi myyntitilaus avataan. **Myyntitilausrivit**-pikavälilehden ruudukossa pitäisi olla uusi tyhjä rivi. Määritä seuraavat arvot kyseisellä tilausrivillä:
 
     - **Nimike:** *A0001*
     - **Määrä** *1*
 
-1. Määritä **Rivitiedot** -pikavälilehden **Toimitus** -välilehden **Toimitustapa** -kentän arvoksi *Flowe-STD*.
-1. Valitse **Myyntitilausrivit** -pikavälilehdessä **Lisää rivi** ja määritä sitten seuraavat arvot toisella tilausrivillä:
+1. Määritä **Rivitiedot**-pikavälilehden **Toimitus**-välilehden **Toimitustapa**-kentän arvoksi *Flowe-STD*.
+1. Valitse **Myyntitilausrivit**-pikavälilehdessä **Lisää rivi** ja määritä sitten seuraavat arvot toisella tilausrivillä:
 
     - **Nimike:** *A0002*
     - **Määrä** *1*
 
-1. Vaihda **Rivitiedot** -pikavälilehden **Toimitus** -välilehden **Toimitustapa** -kentän arvoksi *Air C-Air*.
-1. Valitse ensimmäinen tilausrivi **Myyntitilausrivit** -pikavälilehdessä. Valitse sitten ruudukon yläpuolella olevassa **Varasto** -valikossa **Varaus**.
-1. Valitse **Varaus** -sivulla **Varaa erä** , jos haluat varata valitun rivin koko määrän varastossa.
-1. Palaa myyntitilaukseen sulkemalla **Varaus** -sivun.
-1. Valitse toinen tilausrivi **Myyntitilausrivit** -pikavälilehdessä. Valitse sitten ruudukon yläpuolella olevassa **Varasto** -valikossa **Varaus**.
-1. Valitse **Varaus** -sivulla **Varaa erä** , jos haluat varata valitun rivin koko määrän varastossa.
-1. Palaa myyntitilaukseen sulkemalla **Varaus** -sivun.
-1. Valitse toimintoruudussa **Varasto** -välilehden **Toiminnot** -ryhmässä **Vapauta varastoon**.
+1. Vaihda **Rivitiedot**-pikavälilehden **Toimitus**-välilehden **Toimitustapa**-kentän arvoksi *Air C-Air*.
+1. Valitse ensimmäinen tilausrivi **Myyntitilausrivit**-pikavälilehdessä. Valitse sitten ruudukon yläpuolella olevassa **Varasto**-valikossa **Varaus**.
+1. Valitse **Varaus**-sivulla **Varaa erä**, jos haluat varata valitun rivin koko määrän varastossa.
+1. Palaa myyntitilaukseen sulkemalla **Varaus**-sivun.
+1. Valitse toinen tilausrivi **Myyntitilausrivit**-pikavälilehdessä. Valitse sitten ruudukon yläpuolella olevassa **Varasto**-valikossa **Varaus**.
+1. Valitse **Varaus**-sivulla **Varaa erä**, jos haluat varata valitun rivin koko määrän varastossa.
+1. Palaa myyntitilaukseen sulkemalla **Varaus**-sivun.
+1. Valitse toimintoruudussa **Varasto**-välilehden **Toiminnot**-ryhmässä **Vapauta varastoon**.
 1. Näyttöön tulee tietosanoma, jossa näkyy tämän tilauksen lähetys ja aalto. Näet, että kaksi aallon tunnuslukua ja kaksi lähetyksen tunnuslukua on luotu; yksi kummallekin myyntitilausrivien toimitustavalle.
 
 #### <a name="get-the-work-ids-from-the-work-details"></a>Työtunnusten hakeminen työn tiedoista
@@ -467,32 +467,32 @@ Tee luotu työ loppuun siirtämällä nimikkeet pakkausasemalle mobiililaitteen 
 
 1. Kirjaudu mobiililaitteella varastoon *62* käyttämällä käyttäjätunnusta, jonka loit tätä skenaariota varten, (tai aiemmin luodun esittelytietojen käyttäjän käyttäjätunnusta).
 1. Valitse päävalikossa **Lähtevä**.
-1. Valitse **Lähtevä** -valikossa **Myynnin keräily**.
-1. Anna **Tunnus** -kenttään myyntitilaukselle 1 luotu työtunnus.
+1. Valitse **Lähtevä**-valikossa **Myynnin keräily**.
+1. Anna **Tunnus**-kenttään myyntitilaukselle 1 luotu työtunnus.
 1. Valitse **OK**.
-1. Anna **Myyntitilaukset – keräily** -sivulla myyntitilaukselle 1 luotu kohderekisterikilpi. Huomaa, että keräilysijainti ( *joukko-001* ), nimike ( *A0001* ) ja määrä ( *2 kpl* ) ovat näkyvissä.
+1. Anna **Myyntitilaukset – keräily** -sivulla myyntitilaukselle 1 luotu kohderekisterikilpi. Huomaa, että keräilysijainti (*joukko-001*), nimike (*A0001*) ja määrä (*2 kpl*) ovat näkyvissä.
 1. Valitse **OK**.
-1. Tarkista **Myyntitilaukset – poispano** -sivulla olevat tiedot. **Sijainti** -kentän pitäisi ilmaista, että kerätyt nimikkeet ovat menossa *Pakkaus* -sijaintiin.
+1. Tarkista **Myyntitilaukset – poispano** -sivulla olevat tiedot. **Sijainti**-kentän pitäisi ilmaista, että kerätyt nimikkeet ovat menossa *Pakkaus*-sijaintiin.
 1. Valitse **OK**.
 
     **Skannaa työn tunnus tai rekisterikilven tunnus** -sivulla on Työ valmis -sanoma, joka ilmaisee, myyntitilauksen 1 työtunnus on valmistunut.
 
     Seuraavaksi kerätään myyntitilaus 2.
 
-1. Anna **Tunnus** -kenttään työtunnus, joka luotiin myyntitilaukselle 2 ja jossa rivillä 1 on nimike *A0001*.
+1. Anna **Tunnus**-kenttään työtunnus, joka luotiin myyntitilaukselle 2 ja jossa rivillä 1 on nimike *A0001*.
 1. Valitse **OK**.
-1. Anna **Myyntilaukset – keräily** -sivulla kohderekisterikilpi. Huomaa, että keräilysijainti ( *joukko-001* ), nimike ( *A0001* ) ja määrä ( *1 kpl* ) ovat näkyvissä.
+1. Anna **Myyntilaukset – keräily** -sivulla kohderekisterikilpi. Huomaa, että keräilysijainti (*joukko-001*), nimike (*A0001*) ja määrä (*1 kpl*) ovat näkyvissä.
 1. Valitse **OK**.
-1. Tarkista **Myyntitilaukset – poispano** -sivulla olevat tiedot. **Sijainti** -kentän pitäisi ilmaista, että kerätyt nimikkeet ovat menossa *Pakkaus* -sijaintiin.
+1. Tarkista **Myyntitilaukset – poispano** -sivulla olevat tiedot. **Sijainti**-kentän pitäisi ilmaista, että kerätyt nimikkeet ovat menossa *Pakkaus*-sijaintiin.
 1. Valitse **OK**.
 
     **Skannaa työn tunnus tai rekisterikilven tunnus** -sivulla on Työ valmis -sanoma. Sanoma ilmaisee, että myyntilauksen 2 rivin 1 työtunnus on valmis.
 
-1. Anna **Tunnus** -kenttään työtunnus, joka luotiin myyntitilaukselle 2 ja jossa rivillä 2 on nimike *A0002*.
+1. Anna **Tunnus**-kenttään työtunnus, joka luotiin myyntitilaukselle 2 ja jossa rivillä 2 on nimike *A0002*.
 1. Valitse **OK**.
-1. Anna **Myyntilaukset – keräily** -sivulla kohderekisterikilpi. Huomaa, että keräilysijainti ( *joukko-002* ), nimike ( *A0001* ) ja määrä ( *1 kpl* ) ovat näkyvissä.
+1. Anna **Myyntilaukset – keräily** -sivulla kohderekisterikilpi. Huomaa, että keräilysijainti (*joukko-002*), nimike (*A0001*) ja määrä (*1 kpl*) ovat näkyvissä.
 1. Valitse **OK**.
-1. Tarkista **Myyntitilaukset – poispano** -sivulla olevat tiedot. **Sijainti** -kentän pitäisi ilmaista, että kerätyt nimikkeet ovat menossa *Pakkaus* -sijaintiin.
+1. Tarkista **Myyntitilaukset – poispano** -sivulla olevat tiedot. **Sijainti**-kentän pitäisi ilmaista, että kerätyt nimikkeet ovat menossa *Pakkaus*-sijaintiin.
 1. Valitse **OK**.
 
     **Skannaa työn tunnus tai rekisterikilven tunnus** -sivulla on Työ valmis -sanoma. Sanoma ilmaisee, että myyntilauksen 2 rivin 2 työtunnus on valmis.
@@ -503,17 +503,17 @@ Tee luotu työ loppuun siirtämällä nimikkeet pakkausasemalle mobiililaitteen 
 
 1. Valitse **Varastoinhallinta \> Pakkaus ja konttiinpakkaus \> Pakkaus**.
 
-    **Valitse pakkausasema** -valintaikkuna avautuu. **Työntekijä** -kentässä pitäisi oletusarvoisesti olla aiemmin määritetyn työntekijän nimi.
+    **Valitse pakkausasema** -valintaikkuna avautuu. **Työntekijä**-kentässä pitäisi oletusarvoisesti olla aiemmin määritetyn työntekijän nimi.
 
 1. Määritä seuraavat arvot tiettyyn pakkaussijaintiin suunniteltujen lähetysten ja konttien tarkastelua ja käsittelyä varten:
 
     - **Toimipaikka:** *6*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
     - **Sijainti:** *Pakkaus*
     - **Pakkausprofiilin tunnus:** *Lajitteli*
 
 1. Sulje valintaikkuna valitsemalla **OK**.
-1. Anna **Pakkaus** -sivun **Rekisterikilpi tai lähetys** -kenttään myyntitilauksen 1 kohderekisterikilpi. Siirry sitten kentästä pois painamalla **Sarkain** - tai **Enter** -näppäintä.
+1. Anna **Pakkaus**-sivun **Rekisterikilpi tai lähetys**-kenttään myyntitilauksen 1 kohderekisterikilpi. Siirry sitten kentästä pois painamalla **Sarkain**- tai **Enter**-näppäintä.
 1. Valitse toimintoruudussa **Uusi kontti**.
 1. Hyväksy kaikki oletusasetukset ja valitse **OK**. Kirjoita kontin tunnus muistiin.
 1. Määritä **Nimikkeen pakkaus** -pikavälilehdessä seuraavat arvot:
@@ -522,8 +522,8 @@ Tee luotu työ loppuun siirtämällä nimikkeet pakkausasemalle mobiililaitteen 
     - **Tunniste:** nimike *A0001*
 
 1. Valitse toimintoruudussa **Sulje kontti**.
-1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino** , jolloin järjestelmä päivittää **Bruttopaino** -kentän.
-1. Valitse **OK**. Kontti siirretään *LAJITTELU* -sijaintiin ja on valmis lajiteltavaksi.
+1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino**, jolloin järjestelmä päivittää **Bruttopaino**-kentän.
+1. Valitse **OK**. Kontti siirretään *LAJITTELU*-sijaintiin ja on valmis lajiteltavaksi.
 1. Lisää toinen myyntilauksen 1 rekisterikilven nimike uuteen konttiin luomalla toinen kontti.
 1. Valitse toimintoruudussa **Uusi kontti**.
 1. Hyväksy kaikki oletusasetukset ja valitse **OK**. Kirjoita kontin tunnus muistiin.
@@ -533,12 +533,12 @@ Tee luotu työ loppuun siirtämällä nimikkeet pakkausasemalle mobiililaitteen 
     - **Tunniste:** nimike *A0001*
 
 1. Valitse toimintoruudussa **Sulje kontti**.
-1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino** , jolloin järjestelmä päivittää **Bruttopaino** -kentän.
-1. Valitse **OK**. Kontti siirretään *LAJITTELU* -sijaintiin ja on valmis lajiteltavaksi.
+1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino**, jolloin järjestelmä päivittää **Bruttopaino**-kentän.
+1. Valitse **OK**. Kontti siirretään *LAJITTELU*-sijaintiin ja on valmis lajiteltavaksi.
 
 #### <a name="pack-sales-order-2-into-containers"></a>Myyntitilauksen 2 pakkaaminen kontteihin
 
-1. Anna **Pakkaus** -sivun **Rekisterikilpi tai lähetys** -kenttään myyntitilauksen 2 rivin 1 kohderekisterikilpi. Siirry sitten kentästä pois painamalla **Sarkain** - tai **Enter** -näppäintä.
+1. Anna **Pakkaus**-sivun **Rekisterikilpi tai lähetys**-kenttään myyntitilauksen 2 rivin 1 kohderekisterikilpi. Siirry sitten kentästä pois painamalla **Sarkain**- tai **Enter**-näppäintä.
 1. Valitse toimintoruudussa **Uusi kontti**.
 1. Hyväksy kaikki oletusasetukset ja valitse **OK**. Kirjoita kontin tunnus muistiin.
 1. Määritä **Nimikkeen pakkaus** -pikavälilehdessä seuraavat arvot:
@@ -547,9 +547,9 @@ Tee luotu työ loppuun siirtämällä nimikkeet pakkausasemalle mobiililaitteen 
     - **Tunniste:** nimike *A0001*
 
 1. Valitse toimintoruudussa **Sulje kontti**.
-1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino** , jolloin järjestelmä päivittää **Bruttopaino** -kentän.
-1. Valitse **OK**. Kontti siirretään *LAJITTELU* -sijaintiin ja on valmis lajiteltavaksi.
-1. **Rekisterikilpi tai lähetys** -kenttään myyntitilauksen 2 rivin 2 kohderekisterikilpi. Siirry sitten kentästä pois painamalla **Sarkain** - tai **Enter** -näppäintä.
+1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino**, jolloin järjestelmä päivittää **Bruttopaino**-kentän.
+1. Valitse **OK**. Kontti siirretään *LAJITTELU*-sijaintiin ja on valmis lajiteltavaksi.
+1. **Rekisterikilpi tai lähetys** -kenttään myyntitilauksen 2 rivin 2 kohderekisterikilpi. Siirry sitten kentästä pois painamalla **Sarkain**- tai **Enter**-näppäintä.
 1. Valitse toimintoruudussa **Uusi kontti**.
 1. Hyväksy kaikki oletusasetukset ja valitse **OK**. Kirjoita kontin tunnus muistiin.
 1. Määritä **Nimikkeen pakkaus** -pikavälilehdessä seuraavat arvot:
@@ -558,27 +558,27 @@ Tee luotu työ loppuun siirtämällä nimikkeet pakkausasemalle mobiililaitteen 
     - **Tunnistekenttä:** nimike *A0002*
 
 1. Valitse toimintoruudussa **Sulje kontti**.
-1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino** , jolloin järjestelmä päivittää **Bruttopaino** -kentän.
-1. Valitse **OK**. Kontti siirretään *LAJITTELU* -sijaintiin ja on valmis lajiteltavaksi.
+1. Valitse **Sulje kontti** -valintaikkunassa **Hae järjestelmän paino**, jolloin järjestelmä päivittää **Bruttopaino**-kentän.
+1. Valitse **OK**. Kontti siirretään *LAJITTELU*-sijaintiin ja on valmis lajiteltavaksi.
 
 Voit tarkastella kontin tietoja valitsemalla **Varastonhallinta \> Pakkaus ja konttiinpakkaus \> Kontit** ja hakemalla pakkauksen aikana luodut konttitunnukset.
 
 ### <a name="sort-the-containers"></a>Konttien lajittelu
 
 > [!IMPORTANT]
-> Kun teet lähtevän lajittelun käyttämällä **Kuormalavan luonti** -valikkovaihtoehtoa mobiilisovelluksessa, näkyviin tulee **Täysi** -painike. *Älä käytä **Täysi** -painiketta lajittelun tai paikan sulkemiseen.*
+> Kun teet lähtevän lajittelun käyttämällä **Kuormalavan luonti** -valikkovaihtoehtoa mobiilisovelluksessa, näkyviin tulee **Täysi**-painike. *Älä käytä **Täysi**-painiketta lajittelun tai paikan sulkemiseen.*
 >
-> **Täysi** -painike on oletusarvo eikä sitä voi poistaa käytöstä tai poistaa sivulta. Sitä ei käytetä *Lähtevä lajittelu* -toiminnossa.
+> **Täysi**-painike on oletusarvo eikä sitä voi poistaa käytöstä tai poistaa sivulta. Sitä ei käytetä *Lähtevä lajittelu* -toiminnossa.
 
 #### <a name="sort-the-first-container"></a>Ensimmäisen kontin lajittelu
 
 1. Kirjaudu mobiililaitteella varastoon *62* käyttämällä käyttäjätunnusta, jonka loit tätä skenaariota varten, (tai aiemmin luodun esittelytietojen käyttäjän käyttäjätunnusta).
 1. Valitse päävalikossa **Lähtevä**.
-1. Valitse **Lähtevä** -valikossa **Kuormalavan luonti**.
-1. Anna **Rekisterikilpi/kontti** -kenttään myyntilaukseen 1 liitetyn ensimmäisen kontin tunnus.
+1. Valitse **Lähtevä**-valikossa **Kuormalavan luonti**.
+1. Anna **Rekisterikilpi/kontti**-kenttään myyntilaukseen 1 liitetyn ensimmäisen kontin tunnus.
 1. Valitse **OK**.
 1. Koska lajittelua ei tällä hetkellä ole, sellainen on määritettävä. Anna **Lajittelupaikan tunnus** -kenttään *SP01*.
-1. Koska lajittelupaikkaan *SP01* ei ole tällä hetkellä liitetty rekisterikilpeä, se on määritettävä. Anna **RK** -kentässä *PLP01*.
+1. Koska lajittelupaikkaan *SP01* ei ole tällä hetkellä liitetty rekisterikilpeä, se on määritettävä. Anna **RK**-kentässä *PLP01*.
 1. Valitse **OK**.
 1. Koska lajittelupaikan vahvistus on otettu käyttöön, lajittelupaikan tunnus on annettava uudelleen. Anna **Lajittelupaikan tunnus** -kenttään *SP01*.
 1. Valitse **OK**.
@@ -594,8 +594,8 @@ Voit tarkastella kontin tietoja valitsemalla **Varastonhallinta \> Pakkaus ja ko
 
 1. Kirjaudu mobiililaitteella varastoon *62* käyttämällä käyttäjätunnusta, jonka loit tätä skenaariota varten, (tai aiemmin luodun esittelytietojen käyttäjän käyttäjätunnusta).
 1. Valitse päävalikossa **Lähtevä**.
-1. Valitse **Lähtevä** -valikossa **Kuormalavan luonti**.
-1. Anna **Rekisterikilpi/kontti** -kenttään myyntilaukseen 1 liitetyn toisen kontin tunnus.
+1. Valitse **Lähtevä**-valikossa **Kuormalavan luonti**.
+1. Anna **Rekisterikilpi/kontti**-kenttään myyntilaukseen 1 liitetyn toisen kontin tunnus.
 1. Valitse **OK**. Koska lajittelumalli on määritetty tekemään lajittelu automaattisesti ja olemassa on ehdot täyttävä lajittelupaikka, ohjaus oikeaan lajittelupaikkaan tehdään automaattisesti.
 1. Valitse **OK**.
 1. Lajittelupaikan tunnuksen vahvistaminen osoittaa, että varasto on oikeassa paikassa. Anna **Lajittelupaikan tunnus** -kenttään *SP01*.
@@ -603,14 +603,14 @@ Voit tarkastella kontin tietoja valitsemalla **Varastonhallinta \> Pakkaus ja ko
 
     Myyntitilauksen 1 toisen kontin työ on valmis. Seuraavaksi lajitellaan myyntitilauksen 2 jäljellä olevat kontit.
 
-1. Anna **Rekisterikilpi/kontti** -kentässä sen myyntitilauksen 2 kontin konttitunnus, jossa nimike *A0001* on. Koska rahdinkuljettaja ei ole sama, sinua pyydetään antamaan uusi lajittelupaikka ja määrittämään rekisterikilpi kyseiseen paikkaan. Käytä lajittelupaikkaa *SP02* ja rekisterikilpeä *PLP02*.
+1. Anna **Rekisterikilpi/kontti**-kentässä sen myyntitilauksen 2 kontin konttitunnus, jossa nimike *A0001* on. Koska rahdinkuljettaja ei ole sama, sinua pyydetään antamaan uusi lajittelupaikka ja määrittämään rekisterikilpi kyseiseen paikkaan. Käytä lajittelupaikkaa *SP02* ja rekisterikilpeä *PLP02*.
 1. Valitse **OK**.
 1. Vahvista lajittelupaikka antamalla *SP02* **Lajittelupaikan tunnus** -kentässä.
 1. Valitse **OK**.
 
     Kontin työ on valmis.
 
-1. Anna **Rekisterikilpi/kontti** -kentässä sen myyntitilauksen 2 jäljellä olevan kontin konttitunnus, jossa nimike *A0002* on. Koska rahdinkuljettaja on sama kuin myyntitilauksen 1 rahdinkuljettaja, järjestelmä näyttää aiemmin luodun ehdot täyttävän lajittelupaikan.
+1. Anna **Rekisterikilpi/kontti**-kentässä sen myyntitilauksen 2 jäljellä olevan kontin konttitunnus, jossa nimike *A0002* on. Koska rahdinkuljettaja on sama kuin myyntitilauksen 1 rahdinkuljettaja, järjestelmä näyttää aiemmin luodun ehdot täyttävän lajittelupaikan.
 1. Valitse **OK**.
 1. Vahvista lajittelupaikka antamalla *SP01* **Lajittelupaikan tunnus** -kentässä.
 1. Valitse **OK**.
@@ -625,8 +625,8 @@ Kun koko varasto on lajiteltu, työtä ei voi luoda, ennen kuin paikka on suljet
 
 1. Kirjaudu mobiililaitteella varastoon *62* käyttämällä käyttäjätunnusta, jonka loit tätä skenaariota varten, (tai aiemmin luodun esittelytietojen käyttäjän käyttäjätunnusta).
 1. Valitse päävalikossa **Lähtevä**.
-1. Valitse **Lähtevä** -valikossa **Kuormalavan luonti**.
-1. Anna **Rekisterikilpi/kontti** -kentässä sen kontin tunnus, joka lajiteltiin lajittelupaikkaan *SP01*.
+1. Valitse **Lähtevä**-valikossa **Kuormalavan luonti**.
+1. Anna **Rekisterikilpi/kontti**-kentässä sen kontin tunnus, joka lajiteltiin lajittelupaikkaan *SP01*.
 1. Valitse **OK**.
 1. Näyttöön avautuvan sanoman mukaan kontti on jo lajiteltu paikkaan SP01. Suljetaanko sijainti? Valitse **Sulje**.
 
@@ -647,21 +647,21 @@ Lajitellun varaston keräilytyö on suoritettava loppuun. Kun se on valmis, vara
 
 1. Kirjaudu mobiililaitteella varastoon *62* käyttämällä käyttäjätunnusta, jonka loit tätä skenaariota varten, (tai aiemmin luodun esittelytietojen käyttäjän käyttäjätunnusta).
 1. Valitse päävalikossa **Lähtevä**.
-1. Valitse **Lähtevä** -valikossa **Kuormaus lajitellusta**.
-1. Anna kohderekisterikilven tunnus ensimmäisestä lajittelusijainnista *SP01*. Määritä **Tunnus** -kentän arvoksi *PLP01*.
+1. Valitse **Lähtevä**-valikossa **Kuormaus lajitellusta**.
+1. Anna kohderekisterikilven tunnus ensimmäisestä lajittelusijainnista *SP01*. Määritä **Tunnus**-kentän arvoksi *PLP01*.
 1. Valitse **OK**.
-1. **Lajitellun varaston keräily: keräys** -sivulla näkyy tehtävä keräilytyö. Tee keräys *LAJITTELU* -sijainnista ja kohderekisterikilvestä *PLP01* , jossa on useita nimikkeitä ja jonka määrä on *3*.
+1. **Lajitellun varaston keräily: keräys** -sivulla näkyy tehtävä keräilytyö. Tee keräys *LAJITTELU*-sijainnista ja kohderekisterikilvestä *PLP01*, jossa on useita nimikkeitä ja jonka määrä on *3*.
 1. Valitse **OK**.
-1. **Lajitellun varaston keräily: poispano** -sivulla näkyy tehtävä poispanotyö. Tee poispano *Lastausovi* -sijaintiin ja kohderekisterikilpeen *PLP01* , jossa on useita nimikkeitä ja jonka määrä on *3*.
+1. **Lajitellun varaston keräily: poispano** -sivulla näkyy tehtävä poispanotyö. Tee poispano *Lastausovi*-sijaintiin ja kohderekisterikilpeen *PLP01*, jossa on useita nimikkeitä ja jonka määrä on *3*.
 1. Valitse **OK**.
 
     Työ on valmis.
 
-1. Anna kohderekisterikilven tunnus toisesta lajittelusijainnista *SP02*. Määritä **Tunnus** -kentän arvoksi *PLP02*.
+1. Anna kohderekisterikilven tunnus toisesta lajittelusijainnista *SP02*. Määritä **Tunnus**-kentän arvoksi *PLP02*.
 1. Valitse **OK**.
-1. **Lajitellun varaston keräily: keräys** -sivulla näkyy tehtävä keräilytyö. Tee keräys *LAJITTELU* -sijainnista ja kohderekisterikilvestä *PLP02* , jossa on useita nimikkeitä ja jonka määrä on *1*.
+1. **Lajitellun varaston keräily: keräys** -sivulla näkyy tehtävä keräilytyö. Tee keräys *LAJITTELU*-sijainnista ja kohderekisterikilvestä *PLP02*, jossa on useita nimikkeitä ja jonka määrä on *1*.
 1. Valitse **OK**.
-1. **Lajitellun varaston keräily: poispano** -sivulla näkyy tehtävä poispanotyö. Tee poispano *Lastausovi* -sijaintiin ja kohderekisterikilpeen *PLP02* , jossa on useita nimikkeitä ja jonka määrä on *1*.
+1. **Lajitellun varaston keräily: poispano** -sivulla näkyy tehtävä poispanotyö. Tee poispano *Lastausovi*-sijaintiin ja kohderekisterikilpeen *PLP02*, jossa on useita nimikkeitä ja jonka määrä on *1*.
 1. Valitse **OK**.
 
     Työ on valmis.

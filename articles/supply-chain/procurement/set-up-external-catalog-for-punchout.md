@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018256"
+ms.locfileid: "4427450"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen
 
@@ -56,7 +56,7 @@ Tämä osa sisältää lisätietoja vaiheesta 4 edellä olevassa osassa.
 1. Kirjoita toimittajan ulkoisen luettelon nimi ja kuvaus. Antamasi nimi näkyy ostokorissa, joka edustaa ulkoista luetteloa, joka näkyy työntekijöille, jotka luovat varasto-ottoehdotuksen. Työntekijät voivat avata toimittajan ulkoisen tuoteluettelosivuston napsauttamalla ostoskoria.
 2. Lisätä kuva  **Ulkoisen luettelon kuva** -toiminnolla. Antamasi kuva näkyy ostokorissa, joka edustaa ulkoista luetteloa, joka näkyy työntekijöille, jotka luovat varasto-ottoehdotuksen. Huomaa, että kuvan leveys ja korkeus on oltava samat. Muussa tapauksessa kuva ei näy oikein.
 3. Valitse, näytetäänkö toimittajan tuoteluettelosivuston saman selaimen ikkunassa jossa työntekijän loi varasto-ottoehdotuksen, vai pitäisikö sen avautua uudessa ikkunassa.
-4. Valitse luettelon toimittaja. **Yritykset** -luettelossa on rivi jokaiselle yritykselle, johon toimittaja on määritetty. Jotta käyttäjät voivat pyytää suoraan joidenkin yritysten toimittajan luettelon tuotteita, voit määrittää luettelon käytettävyyden **Estä käyttö** tai **Salli käyttö** -painikkeilla.
+4. Valitse luettelon toimittaja. **Yritykset**-luettelossa on rivi jokaiselle yritykselle, johon toimittaja on määritetty. Jotta käyttäjät voivat pyytää suoraan joidenkin yritysten toimittajan luettelon tuotteita, voit määrittää luettelon käytettävyyden **Estä käyttö** tai **Salli käyttö** -painikkeilla.
 5. Kirjoita **Oletusarvoinen vanhentuminen (päivinä)** -kenttään, montako päivää ulkoisesta luettelosta vastaanotettu tarjous on voimassa ja kuinka kauan sitä voidaan käyttää ulkoiselta toimittajalta suoritettaviin ostoihin. Kun tarjous luodaan ja noudetaan toimittajan ulkoiselta luettelosivustolta, tarjous on voimassa nykyisestä järjestelmän päivämäärästä alkaen ja voimassa tähän kenttään kirjoittamasi päivien ajan.
 6. Käynnistä hankintaluokkien määritys ulkoiseen luetteloon napauttamalla **Lisää** -painiketta. Valitse sitten Luokka-nimiluettelosta luokka. Luokkaluettelo on hankintaluokkien ylijoukko, johon toimittaja on määritetty kaikissa yrityksissä, jotka on määritetty toimittajalle.
 
@@ -86,7 +86,7 @@ Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
 ### <a name="extrinsic-elements"></a>Ulkoiset elementit
 
 Ulkoinen elementti on lisätieto, kuten käyttäjätunnus, joka perustuu käyttäjä, jolle siirto suoritetaan. Ulkoinen elementti määritetään, kun PunchOut tapahtuu ja se voidaan lähettää viestin pyynnön asetussanomassa.
-Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määrityspyynnössä. Tällöin kannattaa lisätä ulkoinen elementti ulkoisten elementtien luetteloon **Viestimuoto** -osassa **Ulkoinen luettelo** -sivulla.
+Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määrityspyynnössä. Tällöin kannattaa lisätä ulkoinen elementti ulkoisten elementtien luetteloon **Viestimuoto**-osassa **Ulkoinen luettelo** -sivulla.
 Määritä ulkoisen elementin nimi, jonka toimittaja voi tunnistaa, ja liitä se arvoon. Arvojen vaihtoehdot ovat: käyttäjänimi, sähköposti tai satunnainen arvo.
 Saat lisätietoja cXML-protokollasta kohdasta [cXML.org website](http://cxml.org/).
 

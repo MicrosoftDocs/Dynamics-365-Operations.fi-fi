@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016303"
+ms.locfileid: "4427439"
 ---
 # <a name="additional-location-zones"></a>Sijainnin lisävyöhykkeet
 
@@ -45,15 +45,15 @@ Ennen kuin voit käyttää *Sijainnin lisävyöhyke* -toimintoa, sen pitää oll
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varasto \> Ohjattu sijaintien asetustoiminto**.
 2. Määritä seuraavat arvot:
 
-    - Valitse **Varasto** -kentässä _62_.
-    - Valitse **Vyöhyketunnus** -kentässä _KERROS_.
+    - Valitse **Varasto**-kentässä _62_.
+    - Valitse **Vyöhyketunnus**-kentässä _KERROS_.
     - Valitse **Lisävyöhyke 1** -kentässä _VALITSEVYÖHYKE1_.
     - Valitse **Lisävyöhyke 2** -kentässä _VERKKOKAUPPA1_.
     - Valitse **Sijainnin profiilitunnus** -kentässä _KERROS_.
 
-3. Valitse **Kerros** -niminen rivi.
+3. Valitse **Kerros**-niminen rivi.
 4. Syötä **Ensimmäinen numero** -kenttään arvo _1_. Syötä **Viimeinen numero** -kenttään arvo _3_.
-5. Valitse **Käytävä** -niminen rivi.
+5. Valitse **Käytävä**-niminen rivi.
 6. Syötä **Ensimmäinen numero** -kenttään arvo _1_. Syötä **Viimeinen numero** -kenttään arvo _5_.
 7. Valitse **Luo**.
 8. Näyttöön tulee sanomia, joissa todetaan, että uusia sijainteja on lisätty. Valitse **Näytä sanomat** -painike, jos haluat nähdä sanomat.

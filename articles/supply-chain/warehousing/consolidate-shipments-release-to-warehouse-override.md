@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016790"
+ms.locfileid: "4427414"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Lähetysten konsolidointi, kun lähetyksen konsolidointikäytäntö korvataan Vapauta varastoon -sivulta
 
@@ -60,18 +60,18 @@ Korvaa lähetyksen konsolidointikäytäntö varastoon vapautuksen aikana seuraav
 1. Valitse yläruudussa ensimmäinen tähän skenaarioon luotu myyntitilaus.
 1. Lisää rivi varastoon vapautukseen valitsemalla **Lisää**. Huomaa, että *oletusarvoinen* lähetyksen konsolidointikäytäntöä käytetään alaruudussa.
 1. Valitse alaruudussa **Valitse uusi lähetyksen konsolidointikäytäntö**.
-1. Valitse käytäntö, joka sallii konsolidoinnin muiden samaa käytäntöä käyttävien avoimien lähetysten konsolidoinnin. Valitse esimerkiksi *CustomerOrderNo* -käytäntö.
+1. Valitse käytäntö, joka sallii konsolidoinnin muiden samaa käytäntöä käyttävien avoimien lähetysten konsolidoinnin. Valitse esimerkiksi *CustomerOrderNo*-käytäntö.
 1. Valitse **Vapauta varastoon**.
 1. Valitse toinen ja kolmas tähän skenaarioon luotu myyntitilaus.
 1. Lisää rivit varastoon vapautukseen valitsemalla **Lisää**. Huomaa, että *oletusarvoista* käytäntöä käytetään alaruudussa.
-1. Valitse ensin toinen rivi ja valitse sitten **Valitse uusi lähetyksen konsolidointikäytäntö** -kentässä *CustomerOrderNo* -käytäntö.
+1. Valitse ensin toinen rivi ja valitse sitten **Valitse uusi lähetyksen konsolidointikäytäntö** -kentässä *CustomerOrderNo*-käytäntö.
 1. Valitse kummallakin rivillä **Vapauta varastoon**.
 
 ## <a name="verify-the-shipments"></a>Lähetysten tarkistaminen
 
 Luotuja lähetyksiä on oltava kaksi:
 
-- Ensimmäisessä lähetyksessä on kaksi riviä, ja se luotiin käyttämällä lähetysten *CustomerOrderNo* -konsolidointikäytäntöä.
+- Ensimmäisessä lähetyksessä on kaksi riviä, ja se luotiin käyttämällä lähetysten *CustomerOrderNo*-konsolidointikäytäntöä.
 - Toisessa lähetyksessä on yksi rivi, ja se luotiin käyttämällä *oletusarvoista* lähetysten konsolidointikäytäntöä.
 
 Tarkista luodut lähetykset seuraavien ohjeiden avulla:

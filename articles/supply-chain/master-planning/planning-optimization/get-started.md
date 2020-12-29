@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973473"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4427519"
 ---
 # <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
 
@@ -67,6 +67,8 @@ Suunnittelun optimoinnin käyttöä varten on asennettava Dynamics 365 Supply Ch
 1. **Ympäristön lisäosat** -pikavälilehdessä pitäisi näkyä, että suunnittelun optimointia asennetaan.
 1. Muutaman minuutin kuluttua arvon **Asennettaan** pitäisi muuttua arvoksi **Asennettu** (voi vaatia sivun päivityksen). Kun asennus on valmis, voit aktivoida suunnittelun optimoinnin Dynamics 365 Supply Chain Managementissa.
 
+Suunnittelun optimoinnin apuohjelman asennuksen päätarkoitus on yhdistää palvelu ja ympäristö. Tämän vuoksi apuohjelma on asennettava erikseen jokaiseen ympäristöön, jossa suunnittelun optimointia käytetään, riippumatta ympäristöjen välillä siirrettävästä koodista riippumatta.
+
 ### <a name="planning-optimization-integration"></a>Suunnittelun optimoinnin integrointi
 
 Voit määrittää, käytetäänkö suunnittelun optimoinnin lisää pääsuunnittelussa valitsemalla **Pääsuunnittelu** \> **Asetukset** \> **Suunnittelun optimoinnin parametrit**.
@@ -95,7 +97,7 @@ Yhteyden tila ilmaisee Supply Chain Managementin ja suunnittelun optimointipalve
 
 ### <a name="integration-with-the-setup"></a>Integrointi määrityksiin
 
-Jos suunnittelun optimoinnin esiversio on otettu käyttöön, suunnittelun optimoinnin lisäosaa käytetään pääsuunnittelussa. Tällä on vaikutusta pääsuunnittelun tuloksiin ja toimintoihin.
+Jos suunnittelun optimointi on otettu käyttöön, suunnittelun optimoinnin apuohjelmaa käytetään pääsuunnittelussa. Tällä on vaikutusta pääsuunnittelun tuloksiin ja toimintoihin.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

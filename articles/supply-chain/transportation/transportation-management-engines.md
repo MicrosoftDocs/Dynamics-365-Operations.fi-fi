@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016398"
+ms.locfileid: "4427442"
 ---
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
@@ -57,7 +57,7 @@ Kuljetuksen hallintamoduuli edellyttää, että määrität alustustiedot tietyn
 -   Viitteitä .NET-tyyppeihin, joita käytetään kuljetuksen hallintamoduulissa.
 -   Yksinkertaiset konfigurointitiedot.
 
-Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit** -painikkeen kuljetuksen hallintamoduulin asetuslomakkeissa. **Esimerkki kilometrien laskentaan viittaavan hinnan laskennan määrityksestä** Seuraavassa esimerkissä kuvataan asetus, joka vaaditaan hinnan laskennalle, joka perustuu .NET-moduulin tyyppiin Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine ja viittaa kilometrien laskentaan.
+Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit**-painikkeen kuljetuksen hallintamoduulin asetuslomakkeissa. **Esimerkki kilometrien laskentaan viittaavan hinnan laskennan määrityksestä** Seuraavassa esimerkissä kuvataan asetus, joka vaaditaan hinnan laskennalle, joka perustuu .NET-moduulin tyyppiin Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine ja viittaa kilometrien laskentaan.
 
 |          Parametri           |                                                                                  Kuvaus                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 
 | Kuljetuksenhallinnan moduuli               | Metatietojen konfigurointi                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Hinnan laskenta**                                | Edellyttää **hintaperusteen tyyppiä**. Hintaperusteen tyyppi sisältää metatietoja hintaperusteen tiedoille ja hintaperusteen määritystiedoille. Hintaperusteen metatietojen rakenne määritetään hinnan laskennan tyypin perusteella. Hintaperusteen määrityksen metatietojen rakenne määritetään hinnan laskentaan liitetyn hintaperusteen määrittäjän tyypillä. Voit määrittää hinnan laskennassa käytettävän hintaperusteen tyypin **Hinnan laskenta** - ja **Hinnan päätiedot** -sivuilla. |
+| **Hinnan laskenta**                                | Edellyttää **hintaperusteen tyyppiä**. Hintaperusteen tyyppi sisältää metatietoja hintaperusteen tiedoille ja hintaperusteen määritystiedoille. Hintaperusteen metatietojen rakenne määritetään hinnan laskennan tyypin perusteella. Hintaperusteen määrityksen metatietojen rakenne määritetään hinnan laskentaan liitetyn hintaperusteen määrittäjän tyypillä. Voit määrittää hinnan laskennassa käytettävän hintaperusteen tyypin **Hinnan laskenta**- ja **Hinnan päätiedot** -sivuilla. |
 | **Vyöhykkeen laskenta**                                | Edellyttää, että metatiedot voidaan määrittää suoraan vyöhykkeessä.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Siirtoajan laskenta** ja **Kilometrien laskenta** | Hakee metatietoja suoraan kilometrikorvausmoduulin konfigurointiasetuslomakkeesta.                                                                                                                                                                                                                                                                                                                                                                                  |
 

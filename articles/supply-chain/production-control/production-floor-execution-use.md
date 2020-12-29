@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012470"
+ms.locfileid: "4427383"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -41,7 +41,7 @@ Tämän ohjeaiheen muissa osissa käsitellään tapoja, joilla työntekijät kä
 
 ## <a name="all-jobs-tab"></a>Kaikki työt -välilehti
 
-**Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu* , *Pysäytetty* tai *Aloitettu*.
+**Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu*, *Pysäytetty* tai *Aloitettu*.
 
 ![Kaikki työt -välilehti](media/pfei-all-jobs-tab.png "Kaikki työt -välilehti")
 
@@ -79,25 +79,25 @@ Työntekijä aloittaa tuotantotyön valitsemalla työn **Kaikki työt** -välile
 
 ![Aloita työ -valintaikkuna](media/pfei-start-job-dialog.png "Aloita työ -valintaikkuna")
 
-Työntekijät vahvistavat **Aloita työ** -valintaikkunassa tuotannon määrän ja aloittavat sitten työn. Työntekijät voivat säätää määrää valitsemalla **Määrä** -kentän ja käyttämällä avautuvaa numeronäppäimistöä. Työntekijät aloittavat sitten työn tekemisen valitsemalla **Aloita**. **Aloita työ** -valintaikkuna suljetaan ja työ lisätään **Aktiiviset työt** -välilehteen.
+Työntekijät vahvistavat **Aloita työ** -valintaikkunassa tuotannon määrän ja aloittavat sitten työn. Työntekijät voivat säätää määrää valitsemalla **Määrä**-kentän ja käyttämällä avautuvaa numeronäppäimistöä. Työntekijät aloittavat sitten työn tekemisen valitsemalla **Aloita**. **Aloita työ** -valintaikkuna suljetaan ja työ lisätään **Aktiiviset työt** -välilehteen.
 
-Työntekijät voivat aloittaa työn riippumatta siitä, mikä sen tila on. Jos työntekijä aloittaa työn, jonka tila on *Ei aloitettu* , **Aloita työ** -valintaikkunan **Määrä** -kentässä on aluksi koko määrä. Jos työntekijä aloittaa työn, jonka tila on *Aloitettu* tai *Pysäytetty* , **Määrä** -kentässä on aluksi jäljellä oleva määrä.
+Työntekijät voivat aloittaa työn riippumatta siitä, mikä sen tila on. Jos työntekijä aloittaa työn, jonka tila on *Ei aloitettu*, **Aloita työ** -valintaikkunan **Määrä**-kentässä on aluksi koko määrä. Jos työntekijä aloittaa työn, jonka tila on *Aloitettu* tai *Pysäytetty*, **Määrä**-kentässä on aluksi jäljellä oleva määrä.
 
 ## <a name="reporting-good-quantities"></a>Hyväksyttyjen määrän ilmoittaminen
 
-Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida tuotetut hyväksyttävät määrät valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Raportointi on meneillään**. Tämän jälkeen työntekijä antaa **Raportointi on meneillään** -valintaikkunassa hyväksyttyjen määrän numeronäppäimistössä. Määrä on oletusarvoisesti tyhjä. Työntekijä voi määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä* , *Pysäytetty* tai *Valmis*.
+Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida tuotetut hyväksyttävät määrät valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Raportointi on meneillään**. Tämän jälkeen työntekijä antaa **Raportointi on meneillään** -valintaikkunassa hyväksyttyjen määrän numeronäppäimistössä. Määrä on oletusarvoisesti tyhjä. Työntekijä voi määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä*, *Pysäytetty* tai *Valmis*.
 
 ![Raportointi on meneillään -valintaikkuna](media/pfei-report-progress-dialog.png "Raportointi on meneillään -valintaikkuna")
 
 ## <a name="reporting-scrap"></a>Hävikin raportointi
 
-Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida hävikin valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Hävikin raportointi**. Tämän jälkeen työntekijä antaa **Hävikin raportointi** -valintaikkunassa hävikin määrän numeronäppäimistöllä. Työntekijä valitsee myös syyn ( *Ei yhtään* , *Kone* , *Käyttäjä* tai *Materiaali* ).
+Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida hävikin valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Hävikin raportointi**. Tämän jälkeen työntekijä antaa **Hävikin raportointi** -valintaikkunassa hävikin määrän numeronäppäimistöllä. Työntekijä valitsee myös syyn (*Ei yhtään*, *Kone*, *Käyttäjä* tai *Materiaali*).
 
 ![Hävikin raportointi -valintaikkuna](media/pfei-report-scrap-dialog.png "Hävikin raportointi -valintaikkuna")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Työn valmistuminen ja uuden työn aloittaminen
 
-Työntekijät päättävät työn yleensä valitsemalla ainakin yhden meneillään olevan työn **Aktiiviset työt** välilehdessä ja valitsemalla sitten **Raportointi on meneillään**. Seuraavaksi he antavat tuotetun määrän (hyväksyttyjen määrä) ja määrittävät tilaksi *Valmis*. Jos valittuna oli useita töitä, työntekijä siirtyy sitten työstä toiseen **Edellinen** - ja **Seuraava** -painikkeilla. Työntekijä aloittaa uuden työn valitsemalla ensin **Kaikki työt** -välilehden ja sitten **Aloita työ**.
+Työntekijät päättävät työn yleensä valitsemalla ainakin yhden meneillään olevan työn **Aktiiviset työt** välilehdessä ja valitsemalla sitten **Raportointi on meneillään**. Seuraavaksi he antavat tuotetun määrän (hyväksyttyjen määrä) ja määrittävät tilaksi *Valmis*. Jos valittuna oli useita töitä, työntekijä siirtyy sitten työstä toiseen **Edellinen**- ja **Seuraava**-painikkeilla. Työntekijä aloittaa uuden työn valitsemalla ensin **Kaikki työt** -välilehden ja sitten **Aloita työ**.
 
 Työntekijä voi aloittaa uuden työn, vaikka edellinen työ olisi edelleen avoinna. Työntekijä valitsee taas uuden työn **Kaikki työt** -välilehdessä ja valitsee sitten **Aloita työ**. Tässä tapauksessa **Aloita työ** -valintaikkuna kuitenkin ilmaisee työntekijälle, että he tekevät jo työtä ja että heidän on sen vuoksi joko pysäytettävä tai päätettävä kyseinen työ ennen uuden työn aloittamista.
 
@@ -111,7 +111,7 @@ Työntekijä valitsee kaksi työtä **Kaikki työt** -välilehdessä ja valitsee
 
 ### <a name="scenario-2-a-worker-who-has-two-active-jobs-that-are-in-progress-wants-to-start-a-third-job-and-work-on-it-in-parallel-with-the-other-two"></a>Skenaario 2: työntekijä, jolla on kaksi keskeneräistä aktiivista työtä, haluaa aloittaa kolmannen työn ja tehdä sitä rinnakkain kahden muun työn kanssa
 
-Työntekijä valitsee kolmannen työn **Kaikki työt** -välilehdessä ja valitsee sitten **Nippu**. Työntekijä voi aloittaa muuttamalla määrää **Nippu** -valintaikkunassa. Työntekijä vahvistaa sitten valintaikkunan valitsemalla **Nippu**.
+Työntekijä valitsee kolmannen työn **Kaikki työt** -välilehdessä ja valitsee sitten **Nippu**. Työntekijä voi aloittaa muuttamalla määrää **Nippu**-valintaikkunassa. Työntekijä vahvistaa sitten valintaikkunan valitsemalla **Nippu**.
 
 ## <a name="working-on-indirect-activities"></a>Epäsuorien tehtävien tekeminen
 
@@ -119,8 +119,8 @@ Epäsuorat tehtävät ovat tehtäviä, jotka eivät liity suoraan tuotantotilauk
 
 Shannon, joka on Contoson tuotannon työntekijä, haluaa esimerkiksi osallistua yrityksen kokoukseen, ja kokouksia pidetään epäsuorina tehtävinä. Jompikumpi seuraavista skenaarioista on käytössä:
 
-- **Shannon tekee vähintään yhtä aktiivista työtä.** Shannon valitsee **Tehtävä** -kohdan, määrittää tehtävän (kokous) ja vahvistaa valinnan. Avautuva sanoma ilmoittaa, että hänellä on keskeneräisiä töitä. Shannon voi valita sanomassa tekemiensä töiden päättämisen tai pysäyttämisen ennen kokoukseen lähtemistä.
-- **Shannonilla ei ole aktiivisia töitä.** Shannon valitsee **Tehtävä** -kohdan, määrittää tehtävän (kokous) ja vahvistaa valinnan. Hänet on kirjattu kokouksessa olevaksi.
+- **Shannon tekee vähintään yhtä aktiivista työtä.** Shannon valitsee **Tehtävä**-kohdan, määrittää tehtävän (kokous) ja vahvistaa valinnan. Avautuva sanoma ilmoittaa, että hänellä on keskeneräisiä töitä. Shannon voi valita sanomassa tekemiensä töiden päättämisen tai pysäyttämisen ennen kokoukseen lähtemistä.
+- **Shannonilla ei ole aktiivisia töitä.** Shannon valitsee **Tehtävä**-kohdan, määrittää tehtävän (kokous) ja vahvistaa valinnan. Hänet on kirjattu kokouksessa olevaksi.
 
 Kun Shannon on vahvistanut valintansa kummassakin skenaariossa, hän siirtyy joko kirjautumissivulle tai sivulle, joka odottaa hänen vahvistavan paluun epäsuorasta tehtävästä. Avautuva sivu määräytyy tuotannon käyttöliittymän määritysten mukaan. (Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).)
 
@@ -128,11 +128,11 @@ Kun Shannon on vahvistanut valintansa kummassakin skenaariossa, hän siirtyy jok
 
 Työntekijät voivat kirjata taukoja. Tauot voidaan määrittää joustavasti, kuten on kuvattu kohdassa [Rekisteröinteihin perustuva palkka](pay-based-on-registrations.md).
 
-Työntekijä kirjaa tauon valitsemalla **Tauko** -vaihtoehdon ja valitsemalla sitten tauon tyyppiä vastaavan kortin (kuten lounaan). Kun työntekijä on vahvistanut valinnan, laitteeseen avautuu joko kirjautumissivu tai sivu, joka odottaa työntekijän vahvistavan tauolta palaamisen. Avautuva sivu määräytyy tuotannon käyttöliittymän määritysten mukaan. (Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).)
+Työntekijä kirjaa tauon valitsemalla **Tauko**-vaihtoehdon ja valitsemalla sitten tauon tyyppiä vastaavan kortin (kuten lounaan). Kun työntekijä on vahvistanut valinnan, laitteeseen avautuu joko kirjautumissivu tai sivu, joka odottaa työntekijän vahvistavan tauolta palaamisen. Avautuva sivu määräytyy tuotannon käyttöliittymän määritysten mukaan. (Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).)
 
 ## <a name="opening-instructions"></a>Ohjeiden avaaminen
 
-Työntekijät voivat avata työhön liitetyn asiakirjan valitsemalla **Ohjeet**. **Ohjeet** -painike on käytettävissä vain, jos asiakirja on liitetty työhän päätiedoissa. Työntekijät voivat avata tuotteeseen esimerkiksi Supply Chain Managementin **Vapautetut tuotteet** -sivulla liitetyn asiakirjan tuotannon käyttöliittymässä.
+Työntekijät voivat avata työhön liitetyn asiakirjan valitsemalla **Ohjeet**. **Ohjeet**-painike on käytettävissä vain, jos asiakirja on liitetty työhän päätiedoissa. Työntekijät voivat avata tuotteeseen esimerkiksi Supply Chain Managementin **Vapautetut tuotteet** -sivulla liitetyn asiakirjan tuotannon käyttöliittymässä.
 
 ## <a name="opening-mixed-reality-guides-for-hololens"></a>HoloLensin yhdistetyn todellisuuden oppaiden avaaminen
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018764"
+ms.locfileid: "4427508"
 ---
 # <a name="purchase-order-overview"></a>Ostotilausten yleiskatsaus
 
@@ -33,11 +33,11 @@ Tässä artikkelissa on yleisiä tietoja ostotilauksista ja linkkejä muita osto
 
 Ostotilaus on asiakirja, joka ilmaisee toimittajan kanssa tehdyn sopimuksen hyödykkeiden tai palvelujen ostamisesta. Asiakirjan avulla voi myös seurata tilausten mukaisia tuotteen vastaanottoja ja myöhemmin toimittajan tilauksen mukaan laskuttamien laskujen kirjanpitoa.  
 
-**Ostotilaukset** -sivulla on yleiskatsaus käytettävissä olevista tilauksista. Voit myös muokata sivulla kyseisiä tilauksia. Kun avaat ostotilauksen, voit valita **Otsikko** -näkymän, jossa on vain kerran kuhunkin ostotilaukseen määritettäviä tietoja, kuten toimittajan tiedot. Vaihtoehtoisesti voit valita **Rivit** -näkymän, jossa voi muokata tilausrivejä. Yleensä ostotilausta muokatessa vaihdellaan näiden näkymien välillä. Muutosluetteloa ei ole suoraan **Ostotilaukset** -sivulla, vaan niitä käytetään tilausotsikon ja -rivien valikoista.  
+**Ostotilaukset**-sivulla on yleiskatsaus käytettävissä olevista tilauksista. Voit myös muokata sivulla kyseisiä tilauksia. Kun avaat ostotilauksen, voit valita **Otsikko**-näkymän, jossa on vain kerran kuhunkin ostotilaukseen määritettäviä tietoja, kuten toimittajan tiedot. Vaihtoehtoisesti voit valita **Rivit** -näkymän, jossa voi muokata tilausrivejä. Yleensä ostotilausta muokatessa vaihdellaan näiden näkymien välillä. Muutosluetteloa ei ole suoraan **Ostotilaukset**-sivulla, vaan niitä käytetään tilausotsikon ja -rivien valikoista.  
 
-Ostotilauksia, tuotteen vastaanottoja ja toimittajan laskuja koskevia tietoja voi tarkastella useissa raporteissa. Nämä raportit sijaitsevat **Hankinta** - ja **Ostoreskontra** -moduuleissa.  
+Ostotilauksia, tuotteen vastaanottoja ja toimittajan laskuja koskevia tietoja voi tarkastella useissa raporteissa. Nämä raportit sijaitsevat **Hankinta**- ja **Ostoreskontra**-moduuleissa.  
 
-Voit tarkastella luetteloita ostotilausten eri vaiheissa **Ostotilauksen valmistelu** - ja **Ostotilauksen vastaanotto ja seuranta** -työtiloissa. Niissä on myös yhteenveto tehtävistä toimista. **Ostotilauksen valmistelu** -työtila keskittyy ostotilauksen luontiin ja tarkasteluun, tilauksen käsittelyyn hyväksynnän läpi ja toimittajan vahvistukseen. **Ostotilauksen vastaanotto ja seuranta** -työtila keskittyy ostotilausten mukaisten hyödykkeiden tai palvelujen vastaanottoon. Siinä on luetteloita, joissa on tietoja myöhästyneistä vastaanotoista tai vastaanotoista, jotka toimittaja on pian toimittamassa. Näissä työtiloissa ei tehdä liittyviä vastaanottotoimintoja, jotka tehdään varastossa. Kyseiset tehtävät tehdään käyttämällä **Inventoinnin- ja varastonhallinta** - ja **Varastonhallinta** -moduulien sivuilla. Toimittajan laskut käsitellään **Toimittajan laskun syöttö** -työtilassa ja maksut tehdään **Toimittajan maksut** -työtilassa.  
+Voit tarkastella luetteloita ostotilausten eri vaiheissa **Ostotilauksen valmistelu**- ja **Ostotilauksen vastaanotto ja seuranta** -työtiloissa. Niissä on myös yhteenveto tehtävistä toimista. **Ostotilauksen valmistelu** -työtila keskittyy ostotilauksen luontiin ja tarkasteluun, tilauksen käsittelyyn hyväksynnän läpi ja toimittajan vahvistukseen. **Ostotilauksen vastaanotto ja seuranta** -työtila keskittyy ostotilausten mukaisten hyödykkeiden tai palvelujen vastaanottoon. Siinä on luetteloita, joissa on tietoja myöhästyneistä vastaanotoista tai vastaanotoista, jotka toimittaja on pian toimittamassa. Näissä työtiloissa ei tehdä liittyviä vastaanottotoimintoja, jotka tehdään varastossa. Kyseiset tehtävät tehdään käyttämällä **Inventoinnin- ja varastonhallinta**- ja **Varastonhallinta**-moduulien sivuilla. Toimittajan laskut käsitellään **Toimittajan laskun syöttö** -työtilassa ja maksut tehdään **Toimittajan maksut** -työtilassa.  
 
 Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 
@@ -47,20 +47,20 @@ Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 -   [Toimittajan laskujen yleiskatsaus](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Ostotilaustyypit
-Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen yhteydessä. Voit määrittää uusien tilausten oletustilaustyypin **Hankintaparametrit** -sivulla.
+Ostotilaustyyppejä on kolme. Tyyppi on määritettävä ostotilauksen luomisen yhteydessä. Voit määrittää uusien tilausten oletustilaustyypin **Hankintaparametrit**-sivulla.
 
 | Ostotilaustyyppi        | Kuvaus                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kirjauskansio        | Käytä tätä tyyppi oletustilauksen luontiin. Tämä tyyppi ei vaikuta varastomääriin eikä luo varastotapahtumia. Ostotilauskirjauskansion rivit eivät sisälly pääajoitukseen.                                                                                                       |
 | Ostotilaus | Käytä tätä tyyppi ostotilauksen luontiin, kun tilaukset vahvistetaan toimittajalle ja kun tilauksia käsitellään vastaanotossa ja laskutuksessa ennen toimittajalle maksamista. Tämä on yleisin ostotilaustyyppi.                                                                          |
-| Palautettu tilaus | Käytä tyyppiä, kun palautat tavaroita toimittajalle. Tämä tilaustyyppi edellyttää, että määrität toimittajan antaman palautusnumeron. Palautusnumero määritetään ostotilauksen **Yleiset** -välilehdessä. Tilausrivien määrien on oltava negatiivisia. |
+| Palautettu tilaus | Käytä tyyppiä, kun palautat tavaroita toimittajalle. Tämä tilaustyyppi edellyttää, että määrität toimittajan antaman palautusnumeron. Palautusnumero määritetään ostotilauksen **Yleiset**-välilehdessä. Tilausrivien määrien on oltava negatiivisia. |
 
 ## <a name="purchase-order-statuses"></a>Ostotilauksen tilat
-Ostotilauksessa on useita tilauksen etenemistä ilmaisevia tilakenttiä. Nämä kentät näkyvät tilauksen **Otsikko** -kentässä ja muutamat näkyvät myös kaikkien tilausten ruudukkoyhteenvedossa. **Tila** -kenttä näyttää tilausmäärien tilan. Käytettävissä ovat seuraavat arvot:
+Ostotilauksessa on useita tilauksen etenemistä ilmaisevia tilakenttiä. Nämä kentät näkyvät tilauksen **Otsikko**-kentässä ja muutamat näkyvät myös kaikkien tilausten ruudukkoyhteenvedossa. **Tila**-kenttä näyttää tilausmäärien tilan. Käytettävissä ovat seuraavat arvot:
 
 -   **Avoin tilaus** – tilaukset on luotu ja määrät on tilattu.
 -   **Vastaanotettu** – osa määristä on vastaanotettu, mutta niitä ei ole vielä laskutettu.
--   **Laskutettu** – tilauksen koko määrä on laskutettu. **Huomautus:** Jos tilaus on laskutettu *osittain* , **Vastaanotettu** - eikä **Laskutettu** -tila ei ole sopiva vaihtoehto. Niinpä tilauksen tila on edelleen **Avoin tilaus**.
+-   **Laskutettu** – tilauksen koko määrä on laskutettu. **Huomautus:** Jos tilaus on laskutettu *osittain*, **Vastaanotettu**- eikä **Laskutettu**-tila ei ole sopiva vaihtoehto. Niinpä tilauksen tila on edelleen **Avoin tilaus**.
 -   **Peruutettu** – Tilaus vahvistettiin mutta peruutettiin myöhemmin. Tämän vuoksi tämä tila ilmaisee, että tilauksessa ei ole enää avoimia määriä.
 
 Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen käsiteltävien asiakirjojen perusteella. Se ilmaiseen tilauksen viimeisimmän valmiin asiakirjan tilan. Käytettävissä ovat seuraavat arvot:
@@ -73,9 +73,9 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 
 **Hyväksynnän tila** -kenttää käytetään, kun ostotilauksen arviointiprosessin tai työnkulun aikana. Käytettävissä ovat seuraavat arvot:
 
--   **Luonnos** , **Tarkistuksessa** ja **Hylätty** – näitä tiloja käytetään vain, kun hyväksyntätyönkulku on käytössä ostotilauksessa.
+-   **Luonnos**, **Tarkistuksessa** ja **Hylätty** – näitä tiloja käytetään vain, kun hyväksyntätyönkulku on käytössä ostotilauksessa.
 -   **Hyväksytty** – Tämä tila määritetään tilauksille, joiden hyväksyntätyönkulku on valmis. Jos tilauksessa ei käytetä hyväksyntätyönkulkua, tilauksen tilaksi tulee heti **Hyväksytty**.
--   **Ulkoisessa tarkastelussa** – Tätä tilaa käytetään skenaarioissa, joissa ostokysely lähetetään toimittajalle, jotta toimittaja voi vahvistaa ostotilauksen ehdot. Tätä tilaa käytetään myös prosesseissa, jotka **Vahvistuspyyntö** -toiminto on käynnistänyt. Tässä prosessissa toimittajaa pyydetään vahvistamaan ostotilauksen ehdot muodostamalla yhteyden järjestelmään ja rekisteröimällä, hyväksyykö vai hylkääkö se tilauksen.
+-   **Ulkoisessa tarkastelussa** – Tätä tilaa käytetään skenaarioissa, joissa ostokysely lähetetään toimittajalle, jotta toimittaja voi vahvistaa ostotilauksen ehdot. Tätä tilaa käytetään myös prosesseissa, jotka **Vahvistuspyyntö**-toiminto on käynnistänyt. Tässä prosessissa toimittajaa pyydetään vahvistamaan ostotilauksen ehdot muodostamalla yhteyden järjestelmään ja rekisteröimällä, hyväksyykö vai hylkääkö se tilauksen.
 -   **Vahvistettu** – Tämä tila määritetään sen jälkeen, kun tilaus on vahvistettu. Yleensä tämä on viimeinen tilaukselle määritetty hyväksymistila.
 
 

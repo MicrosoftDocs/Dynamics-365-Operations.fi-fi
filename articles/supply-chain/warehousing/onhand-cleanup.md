@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015938"
+ms.locfileid: "4427458"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
 
@@ -31,7 +31,7 @@ Tässä aiheessa kuvataan käytettävissä olevien tapahtumien tyhjennystyö, jo
 
 ## <a name="what-the-cleanup-job-does"></a>Mitä puhdistustyö tekee
 
-Käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki WHSInventReserve- ja InventSum-taulujen tietueet, joissa kentän arvot ovat *0* (nolla). Nämä tiedot voidaan poistaa, koska ne eivät vaikuta käytettävissä oleviin tietoihin. Työtehtävä poistaa vain ne tiedot, jotka ovat **Sijainti** -tason alapuolella.
+Käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki WHSInventReserve- ja InventSum-taulujen tietueet, joissa kentän arvot ovat *0* (nolla). Nämä tiedot voidaan poistaa, koska ne eivät vaikuta käytettävissä oleviin tietoihin. Työtehtävä poistaa vain ne tiedot, jotka ovat **Sijainti**-tason alapuolella.
 
 Jos negatiivinen fyysinen varasto on sallittu, tyhjennystyö ei ehkä voi poistaa kaikkia asiaankuuluvia merkintöjä. Tämän rajoituksen syy on se, että työn on sallittava tietty tilanne, jossa rekisterikilvessä on useita sarjanumeroita ja jokin näistä sarjanumeroista on muuttunut negatiiviseksi. Esimerkiksi järjestelmä on nolla, joka on käytettävissä rekisterikilven tasolla, kun rekisterikilvessä on +1 kpl sarjanumero 1:tä ja –1 kpl sarjanumero 2:ta. Tässä erityisessä skenaariossa työ tekee leveää ensimmäistä poistoa, jossa se yrittää poistaa ensin alemmasta tasosta.
 
@@ -50,7 +50,7 @@ Kun työ suoritetaan, sen toteutuskoko on 100. Toisin sanoen, se yrittää sitou
 
 ## <a name="possible-user-impact"></a>Mahdollinen käyttäjän vaikutus
 
-Käyttäjät saattavat vaikuttaa, jos käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki tietyn tason tietueet (kuten rekisterikilven tason). Tässä tapauksessa toiminto, jonka mukaan varasto on aiemmin käytettävissä käyttöoikeuskilvessä, ei ehkä toimi odotetulla tavalla, koska tarvittavat käytettävissä olevat tiedot eivät ole enää saatavilla. (Tämä toiminto tarkistaa ehdon **Määrä \<\> 0** **dimension näyttöasetuksissa** , kun käyttäjät näkevät käytettävissä olevan tiedon.) Kuitenkin puhdistustyön tarjoaman suorituskyvyn parantamisen pitäisi korvata tämä pieni toiminnallisuuden menetys..
+Käyttäjät saattavat vaikuttaa, jos käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki tietyn tason tietueet (kuten rekisterikilven tason). Tässä tapauksessa toiminto, jonka mukaan varasto on aiemmin käytettävissä käyttöoikeuskilvessä, ei ehkä toimi odotetulla tavalla, koska tarvittavat käytettävissä olevat tiedot eivät ole enää saatavilla. (Tämä toiminto tarkistaa ehdon **Määrä \<\> 0** **dimension näyttöasetuksissa**, kun käyttäjät näkevät käytettävissä olevan tiedon.) Kuitenkin puhdistustyön tarjoaman suorituskyvyn parantamisen pitäisi korvata tämä pieni toiminnallisuuden menetys..
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Parhaan suoritusajan määrittäminen käyttöön
 

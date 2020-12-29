@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016698"
+ms.locfileid: "4427411"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Varastotyön lykätty käsittely
 
@@ -44,7 +44,7 @@ Käytännöt määritetään **Työn käsittelykäytännöt** -sivulla. Seuraava
 | Työn prosessoinnin käytännön nimi     | Työn käsittelykäytännön nimi. |
 | Työtilaustyyppi                 | Työtilaustyyppi, johon käytäntöä sovelletaan. |
 | Toiminto                       | Käytännön avulla käsiteltävä työvaihe. |
-| Työn käsittelymetodi          | Menetelmä, jota käytetään työrivin käsittelyyn. Jos menetelmän arvoksi on määritetty **Välitön** , käyttäytyminen muistuttaa toimintaa, jolloin rivin käsittelyyn ei käytetä työn käsittelykäytäntöjä. Jos menetelmän arvoksi on määritetty **Lykätty** , käytetään eräkehystä käyttävää lykättyä käsittelyä. |
+| Työn käsittelymetodi          | Menetelmä, jota käytetään työrivin käsittelyyn. Jos menetelmän arvoksi on määritetty **Välitön**, käyttäytyminen muistuttaa toimintaa, jolloin rivin käsittelyyn ei käytetä työn käsittelykäytäntöjä. Jos menetelmän arvoksi on määritetty **Lykätty**, käytetään eräkehystä käyttävää lykättyä käsittelyä. |
 | Lykätty käsittelykynnys   | Arvo **0** (nolla) tarkoittaa, että raja-arvoa ei ole. Tässä tapauksessa käytetään lykättyä käsittelyä, jos sitä voidaan käyttää. Jos tietyn raja-arvon laskenta on kynnysarvon alapuolella, käytetään Välitön-menetelmää. Muussa tapauksessa käytetään Lykätty-menetelmää, jos sitä voidaan käyttää. Myyntiin ja siirtoon liittyvän työn osalta kynnys lasketaan työhön liittyvien lähdekuormitusrivien määrän mukaan. Täydennystyötä varten raja-arvo lasketaan työrivien määräksi, joita työ täydentää. Jos määrität raja-arvoksi esimerkiksi **5** myynnille, pienemmät työt, joissa on vähemmän kuin viisi alkuperäistä lähdekuormitusriviä, eivät käytä lykättyä käsittelyä, mutta suuremmissa töissä sitä käytetään. Kynnys vaikuttaa vain, jos työn käsittelymenetelmä on **Lykätty**. |
 | Lykätty käsittelyn eräryhmä |Eräryhmä, jota käytetään käsittelyyn. |
 
@@ -58,7 +58,7 @@ Työn luontikäytäntö voidaan määrittää varastonhallinnan parametreissa. S
 
 Voit tarkastella lykättyjä hyllytyksen tehtäviä **Lykätyt hyllytyksen käsittelytehtävät** -sivulla.
 
-Oletusarvon mukaan **Valmis** -tehtävät näytetään.
+Oletusarvon mukaan **Valmis**-tehtävät näytetään.
 
 | Kenttä            | Kuvaus |
 |------------------|-------------|
@@ -105,7 +105,7 @@ On olemassa useita skenaarioita, joissa lykättyä hyllytystä ei käytetä, vai
 **Lähtevän työn valvonta** -työtilassa on kaksi ruutua, joiden avulla voit valvoa lykättyjen käsittelytehtävien suorittamista:
 
 - **Epäonnistuneet lykätyt hyllytyksen käsittelytehtävät** – tässä ruudussa näkyy epäonnistuneiden tehtävien määrä. Jos päonnistuneita tehtäviä ei ole, varastopäällikön on joko käsiteltävä ne uudelleen tai peruutettava ne, koska niitä ei käsitellä automaattisesti uudelleen.
-- **Odottaa lykättyjä hyllytyksen käsittelytehtäviä** – tässä ruudussa näkyy niiden tehtävien määrä, jotka ovat olleet **Odottaa** -tilassa yli 10 minuutin ajan. Jos ruudussa näkyy numero, se saattaa ilmaista, että eräkäsittelyn aikana ilmeni ongelma. **Odottaa** -tehtävät voidaan käsitellä manuaalisesti. Jos tehtävän erätyö käsitellään myöhemmin, se epäonnistuu, koska se on jo käsitelty. Ei tule mitään vaikutusta.
+- **Odottaa lykättyjä hyllytyksen käsittelytehtäviä** – tässä ruudussa näkyy niiden tehtävien määrä, jotka ovat olleet **Odottaa**-tilassa yli 10 minuutin ajan. Jos ruudussa näkyy numero, se saattaa ilmaista, että eräkäsittelyn aikana ilmeni ongelma. **Odottaa**-tehtävät voidaan käsitellä manuaalisesti. Jos tehtävän erätyö käsitellään myöhemmin, se epäonnistuu, koska se on jo käsitelty. Ei tule mitään vaikutusta.
 
 ## <a name="deleting-completed-tasks"></a>Poista suoritetut tehtävät
 

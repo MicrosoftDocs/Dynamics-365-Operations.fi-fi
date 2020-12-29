@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018072"
+ms.locfileid: "4427449"
 ---
 # <a name="set-up-vendor-accounts"></a>Toimittajatilien asettaminen
 
@@ -42,7 +42,7 @@ Luodessasi toimittajatilin, syötetään toimittajan tiedot. Näitä tietoja kä
 -   Määritä arvonlisävero, toimitus, lasku ja toimittajan maksutiedot. Oletusarvon mukaan nämä asetukset kopioidaan uusiin toimittajalle luomiisi asiakirjoihin.
 -   Määritä oletusarvoiset taloushallinnon dimensiot, joita käytetään kirjaamaan tapahtumia kirjanpitotileihin automaattisesti toimittajan kanssa.
 
-Toimittajatilien luomisprosessia voi nopeuttaa luomalla malleja. Mallit luodaan **Toimittaja** -sivulta napsauttamalla toimintoruudussa **Asetukset** &gt; **Tietueen tiedot**. Valitse sitten **Yrityksen tilien malli**. Yrityksen tilien mallit jaetaan muille käyttäjille.  
+Toimittajatilien luomisprosessia voi nopeuttaa luomalla malleja. Mallit luodaan **Toimittaja**-sivulta napsauttamalla toimintoruudussa **Asetukset** &gt; **Tietueen tiedot**. Valitse sitten **Yrityksen tilien malli**. Yrityksen tilien mallit jaetaan muille käyttäjille.  
 
 Voit myös luoda käyttäjän mallin omaan käyttöösi. Et voi poistaa toimittajaa, joka liittyy muihin tietueisiin, kuten tuotteisiin tai yhteyshenkilöihin.
 
@@ -58,7 +58,7 @@ Jokaiselle toimittajalle voidaan määrittää useita osoitteita, joita käytet�
 ## <a name="vendor-contacts"></a>Toimittajan yhteyshenkilöt
 Voit tallentaa toimittajalle yhteyshenkilöitä. Yhteyshenkilöitä voidaan sitten käyttää asiakirjoissa, kuten ostotilauksissa tai tarjouspyynnöissä.  
 
-Toimittajan yhteyshenkilöitä voit lisätä **Kaikki toimittajat** -sivulla, napsauttamalla **Toimittaja** -välilehden **Asetukset** -ryhmässä **Yhteyshenkilöt** &gt; **Lisää yhteyshenkilöitä**.  
+Toimittajan yhteyshenkilöitä voit lisätä **Kaikki toimittajat** -sivulla, napsauttamalla **Toimittaja**-välilehden **Asetukset**-ryhmässä **Yhteyshenkilöt** &gt; **Lisää yhteyshenkilöitä**.  
 
 Voit luoda uuden toimittajan alusta alkaen. Vaihtoehtoisesti, voit kopioida tiedot toisesta henkilöstä, joka on jo rekisteröity Supply Chain Managementiin, ja muokata tietoja tarvittaessa.  
 
@@ -79,13 +79,13 @@ Voit yhdistää osapuolten tunnukset seuraavien ohjeiden mukaisesti.
 2.  Valitse Toimintoruudussa **Yhdistä tietueet**.
 
 ## <a name="agreements"></a>Sopimukset
-Kun määrität toimittajatilin, voi myös olla hyvä rekisteröidä toimittajan kanssa solmitut sopimukset. Toimittajatietueen toimintojen avulla voit määrittää hinta- ja alennussopimukset. Voit myös määrittää ostosopimuksen **Ostosopimukset** -sivulla.
+Kun määrität toimittajatilin, voi myös olla hyvä rekisteröidä toimittajan kanssa solmitut sopimukset. Toimittajatietueen toimintojen avulla voit määrittää hinta- ja alennussopimukset. Voit myös määrittää ostosopimuksen **Ostosopimukset**-sivulla.
 
 ## <a name="putting-a-vendor-on-hold"></a>Toimittajan asettaminen pitoon
 Voit asettaa toimittajan pitoon eri tapahtumatyyppien kohdalla. Valittavissa ovat seuraavat vaihtoehdot:
 
 -   **Ei** – Toimittaja ei ole pidossa.
--   **Lasku** – Laskuja ei voi luoda tai kirjata toimittajalle.
+-   **Lasku**– Laskuja ei voi luoda tai kirjata toimittajalle.
 -   **Kaikki** - Toimittajan kaikki tapahtumatyypit ovat pidossa. Tapahtumatyypit sisältävät ostoehdotukset, laskut ja maksut.
 -   **Maksu** – Maksuja ei voi luoda toimittajalle.
 -   **Ehdotus** – Ostoehdotuksia ei voi luoda toimittajalle, ja hankintarivejä, jotka on jo luotu ennen toimittajan estossa-asetusten muuttamista, ei voi muuntaa ostotilaukseksi. Toimittajan ehdotusrivit peruutetaan, jos käytäntö on määritetty luomaan ostotilaukset automaattisesti.
@@ -97,7 +97,7 @@ Voit joukkopäivittää toimittajan pidossa-tilan tilaan **Kaikki** **Toimittaja
 
 Seuraavilla ehdoilla sisällytetään toimittajat, jotka ovat olleet kaudella passiivisia, sisällyttää tai sulkea pois toimittajat, jotka ovat työntekijöitä, ja sulkea pois toimittajat, joilla on lisäaikaa ennen seuraavaa pitoa.
 
-- Sovellus laskee **Toimittajan inaktivointi** -sivun **Pitojakso** -kenttään annettujen päivien perusteella viimeisen päivän, jolloin toimittajalla voi olla tehtäviä, jotta toimittaa ei pidettäisiä aktiivisena. Toisin sanoa kuluva päivä, josta on vähennetty annettujen päivien määrä. Jos toimittajalla on ainakin yksi lasku, jossa päivämäärä laskettua viimeisintä päivämäärää myöhäisempi, toimittaja jätetään pois inaktivoinnista. Tämä tarkistetaan myös, jos toimittajalla on maksuja kyseisen päivämäärän jälkeen, avoimia ostoehdotuksia, avoimia ostotilauksia, tarjouspyyntöjä tai vastauksia.
+- Sovellus laskee **Toimittajan inaktivointi** -sivun **Pitojakso**-kenttään annettujen päivien perusteella viimeisen päivän, jolloin toimittajalla voi olla tehtäviä, jotta toimittaa ei pidettäisiä aktiivisena. Toisin sanoa kuluva päivä, josta on vähennetty annettujen päivien määrä. Jos toimittajalla on ainakin yksi lasku, jossa päivämäärä laskettua viimeisintä päivämäärää myöhäisempi, toimittaja jätetään pois inaktivoinnista. Tämä tarkistetaan myös, jos toimittajalla on maksuja kyseisen päivämäärän jälkeen, avoimia ostoehdotuksia, avoimia ostotilauksia, tarjouspyyntöjä tai vastauksia.
 - **Lisäaika ennen seuraavaa pitoa** -kentässä olevaa päivien määrää käytetään laskemaan lisäajan viimeinen päivä. Toisin sanoa kuluva päivä, josta on vähennetty antamasi päivät. Tämä koskee vain toimittajia, jotka on inaktivoitu aiemmin. Jos kyse on aiemmasta inaktivoinnista, sovellus varmistaa, onko toimittajalla muita inaktivointeja, ja tarkistaa, tapahtuiko viimeisin inaktivointi ennen lisäajan viimeistä päivää. Jos näin on, toimittaja sisällytetään inaktivointiprosessiin.
 - Parametri **Sisältää työntekijät** viittaa työntekijään linkitettyihin toimittajiin. Voit määrittää sen, jos haluat sisällyttää kyseiset työntekijät.
 
@@ -109,12 +109,12 @@ Tarkistukset läpäisevät toimittajat asetetaan pitoon, jolloin **Toimittajan p
 Jos usealla toimittajalla on sama laskutusosoite tai jos toimittajaa laskutetaan kolmannen osapuolen kautta, voit määrittää toimittajatietueelle erillisen laskutustilin. Laskutustili on tili, jota hyvitetään laskun summalla, kun toimittajalasku luodaan ostotilauksesta. Jos laskutustiliä ei luoda toimittajan tietueelle, laskutustilinä käytetään toimittajatiliä.
 
 ## <a name="vendor-bank-accounts"></a>Toimittajan pankkitilit
-Jos suoritat maksuja toimittajan pankkitilille, voit syöttää toimittajan pankki- ja pankkitilitiedot **Toimittajan pankkitilit** -sivulla. Voit myös kirjoittaa valitun pankkitilin oikeellisuustarkistus- ja maksutiedot. Voit esimerkiksi lisätä esilaskuja toimittajan pankkitileille. Näitä esilaskuja voi käyttää tilitietojen, kuten reititysnumeroiden ja tilinumeroiden, oikeellisuuden tarkastamiseen. Toimittajalle on määritettävä oletusmaksutili. Varsinaista maksua suoritettaessa tämän tilin voi muuttaa joksikin toiseksi toimittajan tiliksi.
+Jos suoritat maksuja toimittajan pankkitilille, voit syöttää toimittajan pankki- ja pankkitilitiedot **Toimittajan pankkitilit**-sivulla. Voit myös kirjoittaa valitun pankkitilin oikeellisuustarkistus- ja maksutiedot. Voit esimerkiksi lisätä esilaskuja toimittajan pankkitileille. Näitä esilaskuja voi käyttää tilitietojen, kuten reititysnumeroiden ja tilinumeroiden, oikeellisuuden tarkastamiseen. Toimittajalle on määritettävä oletusmaksutili. Varsinaista maksua suoritettaessa tämän tilin voi muuttaa joksikin toiseksi toimittajan tiliksi.
 
 ## <a name="ledger-accounts"></a>Kirjanpitotilit
-Voit määrittää oletustilit, jotka näkyvät automaattisesti toimittajan laskujen kirjauskansioissa määritetyn toimittajan osalta. Tämä toiminnallisuus voi olla hyödyllinen, jos yleensä maksat samantyyppisistä nimikkeistä tai palveluista samoille toimittajille ajan kuluessa. Kun määrität oletustilin, voit nopeasti ja tehokkaasti määrittää kirjauskansiomerkinnät laskukirjauskansioon. Määritettäviä oletustilejä ei käytetä ostotilauksille tai toimittajalaskuille, jotka on kirjataan **Toimittajalasku** -sivulla.  
+Voit määrittää oletustilit, jotka näkyvät automaattisesti toimittajan laskujen kirjauskansioissa määritetyn toimittajan osalta. Tämä toiminnallisuus voi olla hyödyllinen, jos yleensä maksat samantyyppisistä nimikkeistä tai palveluista samoille toimittajille ajan kuluessa. Kun määrität oletustilin, voit nopeasti ja tehokkaasti määrittää kirjauskansiomerkinnät laskukirjauskansioon. Määritettäviä oletustilejä ei käytetä ostotilauksille tai toimittajalaskuille, jotka on kirjataan **Toimittajalasku**-sivulla.  
 
-Oletustilit valitaan **Oletustilin määritys** -sivulla, jonka voit avata toimittajatietueen **Lasku** -välilehdeltä. Tässä valitut tilit näkyvät suodatetussa toimittajatilien luettelossa, kun kirjaat kirjauskansioviennin. Yhden tileistä voi määrittää oletustiliksi.
+Oletustilit valitaan **Oletustilin määritys** -sivulla, jonka voit avata toimittajatietueen **Lasku**-välilehdeltä. Tässä valitut tilit näkyvät suodatetussa toimittajatilien luettelossa, kun kirjaat kirjauskansioviennin. Yhden tileistä voi määrittää oletustiliksi.
 
 
 

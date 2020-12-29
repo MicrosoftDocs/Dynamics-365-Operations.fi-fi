@@ -17,11 +17,11 @@ ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017388"
+ms.locfileid: "4427489"
 ---
 # <a name="inventory-on-hand-list"></a>Käytettävissä olevan varaston luettelo
 
@@ -38,8 +38,8 @@ Jos haluat tarkistaa varaston käytettävyyden, siirry kohtaan **Varastonhallint
 Seuraavien työkalujen avulla voit etsiä haluamaasi tuotejoukkoa:
 
 - Valitse toimintoruudussa [**Dimensiot**](#dimensions), jos haluat avata valintaikkunan, jossa voit lisätä tai poistaa **Käytettävissä oleva** -ruudukon sarakkeita.
-- Anna [**Suodattimet** -ruudussa](#filters-pane) tiettyjen kenttien arvot, jotta näkyviin tulevat vain näitä arvoja vastaavat tietueet. Huomaa, että tässä määrittämäsi suodattimet koskevat lähdetaulukoita, jotka voidaan koota myöhemmin uudelleen näytettäväksi valittujen dimensioiden mukaan. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
-- Valitse **Suodattimet** -ruudussa **Käytä** , jos haluat luoda luettelon käytettävissä olevasta varastosta **Käytettävissä oleva** -ruudukossa.
+- Anna [**Suodattimet**-ruudussa](#filters-pane) tiettyjen kenttien arvot, jotta näkyviin tulevat vain näitä arvoja vastaavat tietueet. Huomaa, että tässä määrittämäsi suodattimet koskevat lähdetaulukoita, jotka voidaan koota myöhemmin uudelleen näytettäväksi valittujen dimensioiden mukaan. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+- Valitse **Suodattimet**-ruudussa **Käytä**, jos haluat luoda luettelon käytettävissä olevasta varastosta **Käytettävissä oleva** -ruudukossa.
 - Valitse **Käytettävissä oleva** -ruudukossa mikä tahansa sarakeotsikko, jota käytetään lajittelussa tai suodatuksessa arvojen mukaan. Ruudukon yläosassa oleva pikasuodatin sisältää lisäsuodatusmahdollisuuksia. Nämä suodattimet koskevat tuloksia, eivät lähdetaulukoita. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
 
 **Käytettävissä oleva** -ruudukko sisältää jokaisen vastaavan nimikkeen varaston tietojen seuraavat sarakkeet.
@@ -54,27 +54,27 @@ Seuraavien työkalujen avulla voit etsiä haluamaasi tuotejoukkoa:
 | Tilauksessa | Kokonaismäärä, joka sisältyy lähteviin tilauksiin tai jolla on negatiivinen määrä eri varastokirjauskansioissa. |
 | Tilatut varatut | Tilattuihin vastaanottoihin varattu kokonaismäärä. Tämän kentän arvo vastaa niiden lähtevien tapahtumien nimikkeiden kokonaismäärää, joiden tila on _Tilattu varattu_. Tilattuina varatut nimikkeet eivät ole fyysisesti käytettävissä varastossa. Siksi niitä ei voi suoraan kerätä ja toimittaa. |
 | Varattavissa | Käytettävissä olevan varaston kokonaismäärä, joka voidaan varata.<p>**Huomautus:** Jos **Varaa tilatut nimikkeet** -valintaruutu on valittu **Varastonhallinnan parametrit** -sivulla, tämän kentän arvo sisältää odotetut vastaanotot. Jos valintaruutua ei ole valittu, arvo ei sisällä odotettuja vastaanottoja.</p> |
-| Yhteensä käytettävissä | Käytettävissä oleva kokonaismäärä.<p>**Käytettävissä oleva kokonaismäärä** on laskettu kenttä. Arvo on sama kuin **Käytettävissä oleva fyysinen** -arvo sekä **Tilattu kokonaisarvo** vähennettynä **Tilauksessa** -arvolla.</p> |
+| Yhteensä käytettävissä | Käytettävissä oleva kokonaismäärä.<p>**Käytettävissä oleva kokonaismäärä** on laskettu kenttä. Arvo on sama kuin **Käytettävissä oleva fyysinen** -arvo sekä **Tilattu kokonaisarvo** vähennettynä **Tilauksessa**-arvolla.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Suodattimien kohdistaminen ja haluttujen tietueiden etsiminen
 
-**Suodattimet** -ruudun avulla voit suodattaa käytettävissä olevan varaston luettelon siten, että se sisältää vain ne tietueet, joiden kenttien arvot vastaavat suodatusehtoja. Voit määrittää suodattimen alla olevien vaiheiden avulla.
+**Suodattimet**-ruudun avulla voit suodattaa käytettävissä olevan varaston luettelon siten, että se sisältää vain ne tietueet, joiden kenttien arvot vastaavat suodatusehtoja. Voit määrittää suodattimen alla olevien vaiheiden avulla.
 
-1. Etsi **Suodattimet** -ruudussa kenttä, jonka mukaan haluat tehdä suodatuksen.
-2. Valitse kohdekentän nimen alla olevassa kentässä looginen operaattori (esimerkiksi *alkaa* , *yhtä suuri kuin* tai *suurempi kuin* ).
+1. Etsi **Suodattimet**-ruudussa kenttä, jonka mukaan haluat tehdä suodatuksen.
+2. Valitse kohdekentän nimen alla olevassa kentässä looginen operaattori (esimerkiksi *alkaa*, *yhtä suuri kuin* tai *suurempi kuin*).
 3. Anna tai valitse etsittävä arvo.
 
 > [!IMPORTANT]
 > **Käytettävissä olevien luettelo** -sivu kootaan yksityiskohtaisesta käytettävissä olevan varaston taulukosta, joka sisältää kaikki käytettävissä olevat dimensiot. Tämän sivun luettelo on kuitenkin yhteenveto. Näin ollen se saattaa yhdistää rivit lähdetaulukosta koostamalla arvot näytettävän dimension mukaan.
 >
-> **Suodattimet** -ruudussa määritettyjä suodattimia käytetään lähdetaulukossa, ei kootussa luettelossa. Tämä toiminta voi joskus aiheuttaa odottamattomia tuloksia. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+> **Suodattimet**-ruudussa määritettyjä suodattimia käytetään lähdetaulukossa, ei kootussa luettelossa. Tämä toiminta voi joskus aiheuttaa odottamattomia tuloksia. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
 > 
 > Kuitenkin [ruudukossa olevat suodattimet](#grid-filters) *kohdistetaan* koottuun luetteloon. Nämä suodattimet sisältävät sekä pikasuodattimen ruudukon yläosassa että kunkin sarakeotsikon suodattimen.
 
-Voit muokata **Suodattimet** -ruudun suodatinjoukkoa alla olevien vaiheiden avulla.
+Voit muokata **Suodattimet**-ruudun suodatinjoukkoa alla olevien vaiheiden avulla.
 
-- Jos haluat poistaa suodattimen ruudukosta, valitse sen **Sulje** -painike ( **X** ).
-- Jos haluat lisätä suodattimen, valitse **Lisää** **Suodattimet** -ruudun yläosassa. Näkyviin tulevassa **Lisää suodatinkenttiä** -valintaikkunassa on käytettävissä olevien kenttien luettelo. Siinä näkyvät myös kunkin kentän tietotyypin ja taulukon tiedot. Sarakeotsikoiden avulla voit suodattaa ja lajitella luettelon haluamallasi tavalla. Sitten voit valita kunkin sellaisen kentän valintaikkunan, jonka haluat lisätä **Suodatin** -ruutuun. Kun olet valmis, valitse **Lisää** ja ota muutokset käyttöön.
+- Jos haluat poistaa suodattimen ruudukosta, valitse sen **Sulje**-painike (**X**).
+- Jos haluat lisätä suodattimen, valitse **Lisää** **Suodattimet**-ruudun yläosassa. Näkyviin tulevassa **Lisää suodatinkenttiä** -valintaikkunassa on käytettävissä olevien kenttien luettelo. Siinä näkyvät myös kunkin kentän tietotyypin ja taulukon tiedot. Sarakeotsikoiden avulla voit suodattaa ja lajitella luettelon haluamallasi tavalla. Sitten voit valita kunkin sellaisen kentän valintaikkunan, jonka haluat lisätä **Suodatin**-ruutuun. Kun olet valmis, valitse **Lisää** ja ota muutokset käyttöön.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Näytettävien dimensioiden valitseminen
 
@@ -87,7 +87,7 @@ Jos haluat mukauttaa näkyvissä olevien varastodimensioiden valintaa, noudata n
     Näkyviin tulevassa **Dimension näyttö** -valintaikkunassa ovat kaikki dimensiot.
 
 2. Valitse jokaisen ruudukkoon sisällytettävän dimension valintaruutu.
-3. Jos haluat, että valintaa käytetään oletusarvoisesti seuraavalla kerralla, kun **Käytettävissä olevien luettelo** -sivu avataan, määritä **Tallenna asetukset** -asetuksen arvoksi **Kyllä**. Jos määrität asetukseksi **Ei** , valintaa käytetään vain nykyisen istunnon aikana. Tämän vuoksi seuraavalla sivun avauskerralla käytetään nykyistä oletusvalintaa.
+3. Jos haluat, että valintaa käytetään oletusarvoisesti seuraavalla kerralla, kun **Käytettävissä olevien luettelo** -sivu avataan, määritä **Tallenna asetukset** -asetuksen arvoksi **Kyllä**. Jos määrität asetukseksi **Ei**, valintaa käytetään vain nykyisen istunnon aikana. Tämän vuoksi seuraavalla sivun avauskerralla käytetään nykyistä oletusvalintaa.
 4. Ota muutokset käyttöön ja sulje valintaikkuna valitsemalla **OK**.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Varaston käytettävissä olevien luettelon tuloksen suodattaminen
@@ -95,7 +95,7 @@ Jos haluat mukauttaa näkyvissä olevien varastodimensioiden valintaa, noudata n
 Valitse **Käytettävissä oleva** -ruudukossa mikä tahansa sarakeotsikko, jota käytetään lajittelussa tai suodatuksessa arvojen mukaan. Ruudukon yläosassa oleva pikasuodatin sisältää lisäsuodatusmahdollisuuksia. Nämä suodattimet koskevat tuloksia, eivät lähdetaulukoita. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
 
 > [!NOTE]
-> Kaikkia sarakkeita ei voi suodattaa ja lajitella. Suurin osa määräsarakkeista ei sisällä lajittelu- ja suodatusohjausobjekteja, koska ne ovat laskettuja kenttiä. **Tilauksessa** -sarake on poikkeus.
+> Kaikkia sarakkeita ei voi suodattaa ja lajitella. Suurin osa määräsarakkeista ei sisällä lajittelu- ja suodatusohjausobjekteja, koska ne ovat laskettuja kenttiä. **Tilauksessa**-sarake on poikkeus.
 
 ## <a name="examples"></a><a name="examples"></a>Esimerkkejä
 
@@ -115,7 +115,7 @@ Järjestelmä sisältää yksityiskohtaisen (ei kootun) varastotaulukon, joka si
 - Sivusto
 - Varasto
 
-**Suodattimet** -ruudussa määritetään seuraavat suodatusehdot:
+**Suodattimet**-ruudussa määritetään seuraavat suodatusehdot:
 
 - **Nimiketunnus** \| **on täsmälleen** \| _IA0001_
 - **Käytettävissä oleva fyysinen** \| **pienempi tai yhtä suuri kuin** \| _1_
@@ -134,7 +134,7 @@ Tässä on tuloksena saatu tuotos.
 - Nimiketunnus
 - Sivusto
 
-**Suodattimet** -ruudussa määritetään seuraavat suodatusehdot:
+**Suodattimet**-ruudussa määritetään seuraavat suodatusehdot:
 
 - **Nimiketunnus** \| **on täsmälleen** \| _IA0001_
 - **Käytettävissä oleva fyysinen** \| **pienempi tai yhtä suuri kuin** \| _1_
@@ -145,4 +145,4 @@ Tässä on tuloksena saatu tuotos.
 |---|---|---|---|
 | IA0001 | 1 | 2 | 2 |
 
-Huomaa, että **Suodattimet** -ruudun asetukset koskevat eriteltyä (ei koostettua) varastotaulukkoa, joka näkyy tämän osan alussa. Tämän vuoksi ehto **Käytettävissä oleva fyysinen** \| **pienempi tai yhtä suuri kuin** \| _1_ etsii kaksi riviä taulukosta (ensimmäinen ja kolmas rivi, jossa kussakin näkyy **Käytettävissä oleva fyysinen** -arvo _1_ ). Tässä skenaariossa **Käytettävissä olevien luettelo** -sivua ei kuitenkaan ole määritetty näyttämään **Varasto** -dimensiota. Näin ollen se koostaa kaksi alkuperäistä riviä yhdeksi tulosriviksi, koska molemmilla riveillä on samanlaiset arvot kaikissa näkyvissä olevissa dimensioissa. Tämä rivi rikkoo suodatusehtoa, koska **Käytettävissä oleva fyysinen** -arvona on _2_. Tulos on kuitenkin oikein, koska **Suodattimet** -ruudun asetukset kohdistetaan lähdetaulukkoon, ei **Käytettävissä olevien luettelo** -sivun koostetaulukkoon.
+Huomaa, että **Suodattimet**-ruudun asetukset koskevat eriteltyä (ei koostettua) varastotaulukkoa, joka näkyy tämän osan alussa. Tämän vuoksi ehto **Käytettävissä oleva fyysinen** \| **pienempi tai yhtä suuri kuin** \| _1_ etsii kaksi riviä taulukosta (ensimmäinen ja kolmas rivi, jossa kussakin näkyy **Käytettävissä oleva fyysinen** -arvo _1_). Tässä skenaariossa **Käytettävissä olevien luettelo** -sivua ei kuitenkaan ole määritetty näyttämään **Varasto**-dimensiota. Näin ollen se koostaa kaksi alkuperäistä riviä yhdeksi tulosriviksi, koska molemmilla riveillä on samanlaiset arvot kaikissa näkyvissä olevissa dimensioissa. Tämä rivi rikkoo suodatusehtoa, koska **Käytettävissä oleva fyysinen** -arvona on _2_. Tulos on kuitenkin oikein, koska **Suodattimet**-ruudun asetukset kohdistetaan lähdetaulukkoon, ei **Käytettävissä olevien luettelo** -sivun koostetaulukkoon.

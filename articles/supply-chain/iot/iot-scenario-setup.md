@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: d1deaa2130b63272da39a42315c6a1bc4b7ccb8a
-ms.sourcegitcommit: 8adc65e26d78e229271eb427659a87ee5f371319
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "3814056"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427323"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>IoT-analytiikkaskenaarion määrittäminen
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa määritetään **Laiteseisokki**-skenaario siten, että Su
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>Laiteseisokki-skenaarion määrittäminen Supply Chain Managementissa
 
-**Laiteseisokki**-skenaariossa **PartOut**-signaali yhdistetään koneen hälytysrajaan. Konetta valvotaan vain silloin, kun se on valittu skenaarioon ja määritetty **Käynnissä**-tilaan Supply Chain Managementissa. Jos koneen viimeisestä koneelta vastaanotetusta **PartOut** -signaalista kulunut aika on suurempi kuin hälytysraja, **Kone sammunut** -ilmoitus käynnistetään. Jos kone on edelleen käynnissä, **Kone käynnissä** -ilmoitus luodaan, kun seuraava**PartOut**-signaali vastaanotetaan. Jos kone pysyy sammuneena 30 minuuttia, luodaan uusi **Kone sammunut** -ilmoitus.
+**Laiteseisokki**-skenaariossa **PartOut**-signaali yhdistetään koneen hälytysrajaan. Konetta valvotaan vain silloin, kun se on valittu skenaarioon ja määritetty **Käynnissä**-tilaan Supply Chain Managementissa. Jos koneen viimeisestä koneelta vastaanotetusta **PartOut** -signaalista kulunut aika on suurempi kuin hälytysraja, **Kone sammunut** -ilmoitus käynnistetään. Jos kone on edelleen käynnissä, **Kone käynnissä** -ilmoitus luodaan, kun seuraava **PartOut**-signaali vastaanotetaan. Jos kone pysyy sammuneena 30 minuuttia, luodaan uusi **Kone sammunut** -ilmoitus.
 
 **Laiteseisokki**-skenaariossa on seuraavat riippuvuudet:
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ce6b76d92526b9a353bda2524bdfd0f7f4a5f68e
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018833"
+ms.locfileid: "4427391"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
@@ -33,7 +33,7 @@ Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka v
 
 Ostosopimukset voivat koskea tiettyä määrää tuotetta, tietyn tuotteen valuuttasummaa tai tiettyjen tuotteiden valuuttasummaa hankintaluokassa. Ostosopimuksen hinnat ja alennukset ohittavat muut hinnat ja alennukset, jotka on määritelty missään kauppasopimuksissa, jotka ovat jo olemassa.  
 
-Voit luoda, hakea ja seurata **Ostosopimukset** -sivulla ostosopimuksia, jotka ovat voimassa oman organisaatiosi ja toimittajien välillä. Esimerkiksi, kun olet luonut ostosopimuksen, voit tilata suoraan siitä. Kaikilla ostosopimuksilla on voimassaoloaika, jonka määrää se henkilö, joka luo ostosopimuksen. Hankinnan toimitusajan on sijoituttava tämän voimassaoloajan päivämäärävälille.  
+Voit luoda, hakea ja seurata **Ostosopimukset**-sivulla ostosopimuksia, jotka ovat voimassa oman organisaatiosi ja toimittajien välillä. Esimerkiksi, kun olet luonut ostosopimuksen, voit tilata suoraan siitä. Kaikilla ostosopimuksilla on voimassaoloaika, jonka määrää se henkilö, joka luo ostosopimuksen. Hankinnan toimitusajan on sijoituttava tämän voimassaoloajan päivämäärävälille.  
 
 Kun olet luonut ostosopimuksen, se tulee voimaan vasta, kun se on aktivoitu. Aktivoi ostosopimus valitsemalla **Merkitse sopimus voimassa olevaksi** -asetukseksi **Kyllä**. 
 
@@ -75,11 +75,11 @@ Seuraavat käytännöt vaikuttavat siihen, miten ostosopimussitoumuksen ja sitä
 -   **Vapautuksen vähimmäissumma ja Vapautuksen enimmäissumma** – Jos summa on määritetty, saat ilmoituksen, jos yrität tehdä tilausriviin muutoksia, joiden seurauksena tilausrivi poikkeaa siihen liittyvästä sitoumuksesta.
 
 ## <a name="fulfillment-calculations-for-purchase-agreements"></a>Ostosopimusten toteutumisen laskelmoinnit
-**Ostosopimukset** -sivun **Rivin tiedot** -pikavälilehdessä olevassa **Täytäntöönpano** -välilehdessä näkyvät täytäntöönpanon määrät ja summat.  
+**Ostosopimukset**-sivun **Rivin tiedot** -pikavälilehdessä olevassa **Täytäntöönpano**-välilehdessä näkyvät täytäntöönpanon määrät ja summat.  
 
-Sitoumuksen täytäntöönpanoon tarvittavat jäljellä oleva summa tai määrä näkyy **Täytäntöönpano** -alueella.  
+Sitoumuksen täytäntöönpanoon tarvittavat jäljellä oleva summa tai määrä näkyy **Täytäntöönpano**-alueella.  
 
-**Sopimus** -alueella näkyy kokonaismäärä tai kokonaissumma, jolla myyntisopimusrivi on voimassa.  
+**Sopimus**-alueella näkyy kokonaismäärä tai kokonaissumma, jolla myyntisopimusrivi on voimassa.  
 
 Voit käyttää täytäntöönpanon laskentaan vaikuttavia ostotilausrivejä ja laskurivejä valitsemalla **Liittyvät tiedot** -toiminnon ostosopimuksen riveillä tai otsikossa.
 
@@ -93,7 +93,7 @@ Voit valita ostosopimuksen vain, kun olet luomassa ostotilausta. Et voi valita o
 Joissakin tilanteissa, joissa ostotilaukset luodaan epäsuorasti, voit määrittää, hakeeko Supply Chain Management automaattisesti käytettävää ostosopimusta. Voit esimerkiksi toimia näin, kun vahvistat automaattisesti suunniteltuja ostotilauksia tai luot ostotilauksia, jotka perustuvat myyntitilauksiin.
 
 ## <a name="matching-policy-on-purchase-agreements"></a>Ostosopimusten vastaavuuskäytäntö
-Voit määrittää rivin vastaavuuskäytännön ostosopimuksen otsikossa. Tämä rivin vastaavuuskäytäntö noudattaa ostoreskontran parametrien rivin vastaavuuskäytäntöä, kun **Ostoreskontran parametrit** -sivun ( **Hinnan ja määrän täsmäytys** -pikavälilehden) **Salli vastaavuuskäytännön ohitus** -kentän asetuksena on **Yrityksen käytäntöä suurempi**. Ostosopimukseen viittaavat asiakirjat käyttävät ostosopimuksen otsikossa määritettyä vastaavuuskäytäntöä, ellei vastaavassa nimikkeessä, nimikkeessä ja toimittajassa tai luokan ostokäytännössä ole määritetty jotain muuta.
+Voit määrittää rivin vastaavuuskäytännön ostosopimuksen otsikossa. Tämä rivin vastaavuuskäytäntö noudattaa ostoreskontran parametrien rivin vastaavuuskäytäntöä, kun **Ostoreskontran parametrit** -sivun (**Hinnan ja määrän täsmäytys** -pikavälilehden) **Salli vastaavuuskäytännön ohitus** -kentän asetuksena on **Yrityksen käytäntöä suurempi**. Ostosopimukseen viittaavat asiakirjat käyttävät ostosopimuksen otsikossa määritettyä vastaavuuskäytäntöä, ellei vastaavassa nimikkeessä, nimikkeessä ja toimittajassa tai luokan ostokäytännössä ole määritetty jotain muuta.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Ostosopimukset ja konsernin sisäinen kauppa
 Yhtiöiden väliset jäljityssuhteet voidaan luoda toimittajan tilien ja asiakkaan tilien välille, kun ne ovat eri oikeushenkilöitä. Kun myyntitilaus tai ostotilaus luodaan yhdelle osapuolelle, luodaan myös konsernin sisäinen tilausketju. Tilausketjussa myyntitilaus ja ostotilaus on luotu soveltuville yrityksille.  

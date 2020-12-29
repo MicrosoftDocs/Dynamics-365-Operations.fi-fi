@@ -4,7 +4,7 @@ description: Tässä ohjeaiheessa käsitellään aallon etikettitulostusta ja se
 author: GarmMSFT
 manager: PJacobse
 ms.date: 05/01/2020
-ms.topic: configure-wave-label-printing
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016951"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4427514"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Aallon etikettitulostuksen määrittäminen ja käyttäminen
 
@@ -69,7 +69,7 @@ Tämä skenaario sisältää työnkulun alusta loppuun.
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja että **USMF** -yritys on valittu.
+Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja että **USMF**-yritys on valittu.
 
 ### <a name="make-sure-that-the-wave-label-method-is-available"></a>Aallon etikettimenetelmän saatavuuden varmistaminen
 
@@ -84,7 +84,7 @@ Aaltomallin avulla tietyt aaltomenetelmien esiintymät voidaan linkittää vasta
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Valitse malli, kuten **62 Lähetyksen oletus**.
-1. Siirrä **Aallon etiketin tulostus** -menetelmä **Menetelmät** -pikavälilehdessä **Valitut menetelmät** -sarakkeeseen.
+1. Siirrä **Aallon etiketin tulostus** -menetelmä **Menetelmät**-pikavälilehdessä **Valitut menetelmät** -sarakkeeseen.
 1. Valitse **Valitut menetelmät** -sarakkeessa **Aallon etiketin tulostus** -menetelmä ja valitsen sen **Aallon vaihekoodi** -kentässä *PrintLabel*. Lisätietoja aallon vaihekoodeista on kohdassa [Aallon vaihekoodit](wave-step-codes.md).
 
 ### <a name="create-a-wave-label-layout"></a>Aallon etikettiasettelun luominen
@@ -123,7 +123,7 @@ Etiketin asettelu määrittää, mitä tietoja etikettiin tulostetaan ja miten n
 
 1. Sulje sivu.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
@@ -132,9 +132,9 @@ Etiketin asettelu määrittää, mitä tietoja etikettiin tulostetaan ja miten n
 
     Tämä kysely varmistaa, että etikettiin tulostetaan vain keräilytyyppiset työrivit, eikä siis poispanotyyppisiä työrivejä.
 
-1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset** -välilehdessä **Työrivit** -taulu ja liitä **Lähetykset** -taulu siihen.
+1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset**-välilehdessä **Työrivit**-taulu ja liitä **Lähetykset**-taulu siihen.
 1. Sulkee kyselyeditorin valintaikkuna.
-1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio** , **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
+1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio**, **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -200,7 +200,7 @@ Etiketin asettelu määrittää, mitä tietoja etikettiin tulostetaan ja miten n
     ```
 
     > [!NOTE]
-    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn** -osan **n** -arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
+    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn**-osan **n**-arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
 
 Etiketti on nyt käyttövalmis.
 
@@ -220,7 +220,7 @@ Seuraavaksi määritetään aallon etikettityypin yksikön sarjaryhmä.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Yksikön sarjaryhmät**.
 1. Valitse **Kpl laatikko KL** -ryhmä.
-1. Määritä **Laatikko** -rivin **Aallon tasotyyppi** -kentän arvoksi *Pakkaus*.
+1. Määritä **Laatikko**-rivin **Aallon tasotyyppi** -kentän arvoksi *Pakkaus*.
 
 ### <a name="create-a-wave-label-template"></a>Aallon etikettimallin luominen
 
@@ -232,9 +232,9 @@ Seuraavaksi luodaan aallon etikettityypin aallon etikettimalli.
     - **Etikettimallin nimi:** *Pakkausetiketit*
     - **Kuvaus:** *Pakkausetiketit*
     - **Aallon vaihekoodi:** *PrintLabel*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
-1. Määritä **Yleiset** -pikavälilehden **Aallon etikettityyppi** -kentän arvoksi *Pakkaus*.
+1. Määritä **Yleiset**-pikavälilehden **Aallon etikettityyppi** -kentän arvoksi *Pakkaus*.
 1. Lisää **Aallon etikettimallin tiedot** -pikavälilehdessä uusi rivi, jolla on seuraavat asetukset:
 
     - **Etiketin asettelutunnus:** *Pakkaus*
@@ -242,7 +242,7 @@ Seuraavaksi luodaan aallon etikettityypin aallon etikettimalli.
     - **Suorita kysely:** *Kyllä* (Tämä asetus on valinnainen, mutta sen käyttöä suositellaan suorituskyvyn optimoinnin vuoksi.)
 
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulukko:** *Lähetykset*
     - **Johdettu taulu:** *Lähetykset*
@@ -252,7 +252,7 @@ Seuraavaksi luodaan aallon etikettityypin aallon etikettimalli.
     Kun olet valmis, sulje kyselyeditorin valintaikkuna valitsemalla **OK**.
 
 1. Avaa koko etikettimallin kyselyeditorin valintaikkuna valitsemalla toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Lajittelu** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Lajittelu**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
@@ -277,7 +277,7 @@ Numerosarjalaajennuksilla hallitaan tiettyjen numerosarjojen GS1-vaatimustenmuka
 1. Luo myyntitilaus, jossa on seuraavat asetukset:
 
     - **Asiakastili:** *US-001*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
 1. Lisää kaksi myyntitilausriviä, joilla on seuraavat asetukset:
 
@@ -296,18 +296,18 @@ Numerosarjalaajennuksilla hallitaan tiettyjen numerosarjojen GS1-vaatimustenmuka
     > [!NOTE]
     > Nämä nimikkeet ja määrät ovat vain esimerkkejä. Niiden on käytettävä aiemmin määritettyä yksikön sarjaryhmää, niille on määritettävä soveltuva yksikkömuunnos *kappaleesta* *laatikkoon* ja edelleen *kuormalavaksi* ja niiden varaston on oltava varastossa *62*. Lisätietoja on kohdassa [Mittayksikkö ja varastointikäytännöt](unit-measure-stocking-policies.md).
 
-1. Valitse tilausrivi 1. Valitse sitten **Myyntitilausrivi** -osan **Varasto** -valikossa **Varaukset**.
-1. Valitse **Varaus** -sivun toimintoruudussa **Varaa erä** ja sulje sitten sivu.
+1. Valitse tilausrivi 1. Valitse sitten **Myyntitilausrivi**-osan **Varasto**-valikossa **Varaukset**.
+1. Valitse **Varaus**-sivun toimintoruudussa **Varaa erä** ja sulje sitten sivu.
 1. Toista vaiheet 4 ja 5 myyntitilausriville 2.
-1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**.
+1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**.
 
     Seuraavat tapahtumat:
 
     - Järjestelmä käsittelee luodun lähetyksen käyttämällä etiketin tulostusvaiheen sisältävää mallia. Etiketin asettelun avulla määritetään etiketin muoto, ja näin saatu etiketti tulostetaan etikettimallissa valitulla tulostimella.
     - Aallon etiketit luodaan ja tulostetaan. Etikettien ja pakkausten määrä on sama (tässä esimerkiksi rivillä 1 on 376 laatikkoetikettiä ja rivillä 2 niitä on 322).
-    - Lähetyksille luodaan uusi rahtikirjan tunnus. Jos numerosarjalaajennukset määritettiin, aallon etikettitunnus noudattaa **SSCC-18** -lukumuotoilua. 
+    - Lähetyksille luodaan uusi rahtikirjan tunnus. Jos numerosarjalaajennukset määritettiin, aallon etikettitunnus noudattaa **SSCC-18**-lukumuotoilua. 
 
-Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta sivuilta. Valitse kunkin sivun toimintoruudun **Lähetykset** -välilehden **Aiheeseen liittyvät tiedot** -ryhmässä **Aallon etiketit**.
+Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta sivuilta. Valitse kunkin sivun toimintoruudun **Lähetykset**-välilehden **Aiheeseen liittyvät tiedot**-ryhmässä **Aallon etiketit**.
 
 - Kaikki lähetykset \> Lähetyksen tiedot
 - Kaikki kuormat \> Kuorman tiedot
@@ -322,7 +322,7 @@ Tässä skenaariossa tulostetaan aallon etikettejä konttipakkausta käytettäes
 Tämä skenaarion ja skenaarion 1 tärkeimmät erot:
 
 - **Aallon etikettimallit:** Aallon etikettityyppiä ei valita aallon etikettimallissa eikä etiketin luontiryhmittelyä tarvita. Muutoin aallon etikettimalli määritetään ja linkitys aaltomalliin tehdään skenaariossa 1 kuvatulla tavalla. Aallon etikettityyppi on jätettävä tyhjäksi, sillä se estää aallon etikettien luonnin.
-- **Aallon etiketin asettelut:** Aallon etikettiasettelun riviasettelut tehdään työriveillä eikä aallon etikettitietueille. Etikettiasettelun riviasetus on määritettävä käyttämällä **WHSWorkLine** -taulua eikä **WHSWaveLabel** -taulua. **Riviä sivua kohden** -asetus määrittää, kuinka monta riviä tekstiosassa on. 
+- **Aallon etiketin asettelut:** Aallon etikettiasettelun riviasettelut tehdään työriveillä eikä aallon etikettitietueille. Etikettiasettelun riviasetus on määritettävä käyttämällä **WHSWorkLine**-taulua eikä **WHSWaveLabel**-taulua. **Riviä sivua kohden** -asetus määrittää, kuinka monta riviä tekstiosassa on. 
 
 Tämä määritys sopii myös liiketoimintaskenaarioihin, joissa useita eri nimikkeitä pakataan yhteen etiketilliseen laatikkoon tai kuormalavalle, ja tämä pakkausprosessi voidaan määrittää työn luonnilla (kuten lähetyksen mukaan ryhmitetty työ).
 
@@ -330,7 +330,7 @@ Tämä skenaario sisältää työnkulun alusta loppuun.
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja että **USMF** -yritys on valittu.
+Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja että **USMF**-yritys on valittu.
 
 ### <a name="make-sure-that-the-wave-label-method-is-available"></a>Aallon etikettimenetelmän saatavuuden varmistaminen
 
@@ -345,7 +345,7 @@ Aaltomallin avulla tietyt aaltomenetelmien esiintymät voidaan linkittää vasta
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Valitse malli, kuten **63 Konttiinpakkaus**.
-1. Siirrä **Aallon etiketin tulostus** -menetelmä **Menetelmät** -pikavälilehdessä **Valitut menetelmät** -sarakkeeseen.
+1. Siirrä **Aallon etiketin tulostus** -menetelmä **Menetelmät**-pikavälilehdessä **Valitut menetelmät** -sarakkeeseen.
 1. Valitse **Valitut menetelmät** -sarakkeessa **Aallon etiketin tulostus** -menetelmä ja valitsen sen **Aallon vaihekoodi** -kentässä *PrintLabel*. Lisätietoja aallon vaihekoodeista on kohdassa [Aallon vaihekoodit](wave-step-codes.md).
 
 ### <a name="create-a-wave-label-layout"></a>Aallon etikettiasettelun luominen
@@ -382,16 +382,16 @@ Aaltomallin avulla tietyt aaltomenetelmien esiintymät voidaan linkittää vasta
 
 1. Sulje sivu.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
     - **Kenttä:** *Työtyyppi*
     - **Ehdot:** *Keräily*
 
-1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset** -välilehdessä **Työrivit** -taulu ja liitä **Lähetykset** -taulu siihen.
+1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset**-välilehdessä **Työrivit**-taulu ja liitä **Lähetykset**-taulu siihen.
 1. Sulkee kyselyeditorin valintaikkuna.
-1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio** , **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
+1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio**, **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -423,7 +423,7 @@ Aaltomallin avulla tietyt aaltomenetelmien esiintymät voidaan linkittää vasta
     ```
 
     > [!NOTE]
-    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn** -osan **n** -arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
+    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn**-osan **n**-arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
 
 Etiketti on nyt käyttövalmis.
 
@@ -435,7 +435,7 @@ Etiketti on nyt käyttövalmis.
     - **Etikettimallin nimi:** *Konttietiketit*
     - **Kuvaus:** *Konttietiketit*
     - **Aallon vaihekoodi:** *PrintLabel*
-    - **Varasto** : *63*
+    - **Varasto**: *63*
 
 1. Lisää **Aallon etikettimallin tiedot** -pikavälilehdessä rivi, jolla on seuraavat asetukset:
 
@@ -444,7 +444,7 @@ Etiketti on nyt käyttövalmis.
     - **Suorita kysely:** *Kyllä* (Tämä asetus on valinnainen, mutta sen käyttöä suositellaan suorituskyvyn optimoinnin vuoksi.)
 
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulukko:** *Lähetykset*
     - **Johdettu taulu:** *Lähetykset*
@@ -463,7 +463,7 @@ Numerosarjalaajennuksilla hallitaan tiettyjen numerosarjojen GS1-vaatimustenmuka
 1. Luo myyntitilaus, jossa on seuraavat asetukset:
 
     - **Asiakastili:** *US-001*
-    - **Varasto** : *63*
+    - **Varasto**: *63*
 
 1. Lisää viisi myyntitilausriviä:
 
@@ -495,15 +495,15 @@ Numerosarjalaajennuksilla hallitaan tiettyjen numerosarjojen GS1-vaatimustenmuka
     > [!NOTE]
     > Nämä nimikkeet ja määrät ovat vain esimerkkejä. Niiden on oltava varastossa määritetyssä varastossa.
 
-1. Valitse tilausrivi 1. Valitse sitten **Myyntitilausrivi** -osan **Varasto** -valikossa **Varaukset**.
-1. Valitse **Varaus** -sivun toimintoruudussa **Varaa erä** ja sulje sitten sivu.
+1. Valitse tilausrivi 1. Valitse sitten **Myyntitilausrivi**-osan **Varasto**-valikossa **Varaukset**.
+1. Valitse **Varaus**-sivun toimintoruudussa **Varaa erä** ja sulje sitten sivu.
 1. Toista vaiheet 4 ja 5 kullekin lisätylle myyntitilausriville.
-1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**.
+1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**.
 
     Seuraavat tapahtumat:
 
     - Järjestelmä käsittelee luodun lähetyksen käyttämällä etiketin tulostusvaiheen sisältävää mallia. Etiketin asettelun avulla määritetään etiketin muoto, ja näin saadussa etiketissä on viisi riviä ja se tulostetaan etikettimallissa valitulla tulostimella.
-    - Lähetyksille luodaan uusi rahtikirjan tunnus. Jos numerosarjalaajennukset määritettiin, aallon etikettitunnus noudattaa **SSCC-18** -lukumuotoilua. 
+    - Lähetyksille luodaan uusi rahtikirjan tunnus. Jos numerosarjalaajennukset määritettiin, aallon etikettitunnus noudattaa **SSCC-18**-lukumuotoilua. 
 
 Voit tulostaa nämä aallon etiketit uudelleen valitsemalla **Varastonhallinta \> Kyselyt ja raportit \> Aallon etiketin historia**.
 
@@ -521,22 +521,22 @@ Tämä skenaario sisältää työnkulun alusta loppuun.
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja että **USMF** -yritys on valittu.
+Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja että **USMF**-yritys on valittu.
 
 ### <a name="set-up-a-wave-process-method"></a>Aallon käsittelymenetelmän määrittäminen
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
 1. Varmista, että **waveLabelPrinting** on luettelossa. Jos se ei ole luettelossa, lisää se valitsemalla toimintoruudussa **Luo menetelmät uudelleen**.
-1. Valitse **waveLabelPrinting** -menetelmässä **Tee menetelmästä toistettava** -valintaruutu.
+1. Valitse **waveLabelPrinting**-menetelmässä **Tee menetelmästä toistettava** -valintaruutu.
 
 ### <a name="set-up-a-wave-template"></a>Aaltomallin asetuksien määrittäminen
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 2. Valitse malli, kuten **62 Lähetyksen oletus**.
-3. Siirrä **Aallon etiketin tulostus** -menetelmä **Menetelmät** -pikavälilehdessä **Valitut menetelmät** -sarakkeeseen.
-4. Määritä **Valitut menetelmät** -sarakkeessa **Aallon vaihekoodi** -arvo, kuten *Pakkaus* , **Aallon etiketin tulostus** -menetelmään. Lisätietoja aallon vaihekoodeista on kohdassa [Aallon vaihekoodit](wave-step-codes.md).
+3. Siirrä **Aallon etiketin tulostus** -menetelmä **Menetelmät**-pikavälilehdessä **Valitut menetelmät** -sarakkeeseen.
+4. Määritä **Valitut menetelmät** -sarakkeessa **Aallon vaihekoodi** -arvo, kuten *Pakkaus*, **Aallon etiketin tulostus** -menetelmään. Lisätietoja aallon vaihekoodeista on kohdassa [Aallon vaihekoodit](wave-step-codes.md).
 5. Siirrä **Aallon etiketin tulostus** -menetelmä **Valitut menetelmät** -sarakkeeseen toisen kerran.
-6. Määritä **Valitut menetelmät** -sarakkeessa toinen **Aallon vaihekoodi** -arvo, kuten *Kuormalava* , toiseen **Aallon etiketin tulostus** -menetelmään. Lisätietoja aallon vaihekoodeista on kohdassa [Aallon vaihekoodit](wave-step-codes.md).
+6. Määritä **Valitut menetelmät** -sarakkeessa toinen **Aallon vaihekoodi** -arvo, kuten *Kuormalava*, toiseen **Aallon etiketin tulostus** -menetelmään. Lisätietoja aallon vaihekoodeista on kohdassa [Aallon vaihekoodit](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Kolmen aallon etikettiasettelun luominen
 
@@ -572,7 +572,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 
 1. Sulje sivu.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
@@ -581,9 +581,9 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 
     Tämä kysely varmistaa, että etikettiin tulostetaan vain keräilytyyppiset työrivit, eikä siis poispanotyyppisiä työrivejä.
 
-1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset** -välilehdessä **Työrivit** -taulu ja liitä **Lähetykset** -taulu siihen. 
+1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset**-välilehdessä **Työrivit**-taulu ja liitä **Lähetykset**-taulu siihen. 
 1. Sulkee kyselyeditorin valintaikkuna.
-1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio** , **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
+1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio**, **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
 
 
     ```plaintext
@@ -650,7 +650,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     ```
 
     > [!NOTE]
-    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn** -osan **n** -arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
+    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn**-osan **n**-arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
 
 1. Ensimmäinen etiketti on nyt käyttövalmis.
 1. Luo toinen asettelutietue, jossa on seuraavat asetukset:
@@ -684,7 +684,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 
 1. Sulje sivu.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
@@ -693,9 +693,9 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 
     Tämä kysely varmistaa, että etikettiin tulostetaan vain keräilytyyppiset työrivit, eikä siis poispanotyyppisiä työrivejä.
 
-1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset** -välilehdessä **Työrivit** -taulu ja liitä **Lähetykset** -taulu siihen.
+1. Jos haluat tulostaa rahtikirjan tunnuksen valitse **Liitokset**-välilehdessä **Työrivit**-taulu ja liitä **Lähetykset**-taulu siihen.
 1. Sulkee kyselyeditorin valintaikkuna.
-1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio** , **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
+1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio**, **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen koodi. Jos käytössä on esimerkiksi Zebra-tulostimet voit käyttää seuraavaa koodia.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -724,7 +724,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     ```
 
     > [!NOTE]
-    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn** -osan **n** -arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
+    > Tämä asetus tulostaa yhden kopion kustakin etiketistä. Jos kopioita tarvitaan enemmän (esimerkiksi yksi kuormalavan kummallekin puolelle), määritä alatunnisteen **\^PQn**-osan **n**-arvoksi tarvittava määrä kopioita. Jos kutakin etikettiä halutaan tulostaa neljä kappaletta, käytä määritystä **\^PQ4**.
 
 1. Toinen etiketti on nyt käyttövalmis.
 1. Luo kolmas asettelutietue, jossa on seuraavat asetukset:
@@ -733,7 +733,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     - **Kuvaus:** *Keskeytysetiketti*
 
 1. Valitse toimintoruudussa **Tallenna**.
-1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio** , **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen ZPL-koodi. Esimerkki:
+1. **Tulostimen tekstiasettelu** -pikavälilehdessä on kolme osaa, johon voi kirjoittaa tulostinkoodin: **ylätunnisteosio**, **tekstiosio** ja **alatunnisteosio**. Anna **ylätunnisteosion** **Etiketin ylätunniste** -kenttään vaadittavan ylätunnisteen ZPL-koodi. Esimerkki:
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -770,8 +770,8 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Yksikön sarjaryhmät**.
 1. Valitse tai luo **Kpl laatikko KL** -ryhmä.
-1. Määritä **Laatikko** -rivin **Aallon tasotyyppi** -kentän arvoksi *Pakkaus*.
-1. Määritä **Kuormalava** -rivin **Aallon tasotyyppi** -kentän arvoksi *Kuormalava*.
+1. Määritä **Laatikko**-rivin **Aallon tasotyyppi** -kentän arvoksi *Pakkaus*.
+1. Määritä **Kuormalava**-rivin **Aallon tasotyyppi** -kentän arvoksi *Kuormalava*.
 
 ### <a name="create-wave-label-templates"></a>Aallon etikettimallien luominen
 
@@ -781,9 +781,9 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     - **Etikettimallin nimi:** *Pakkausetiketit*
     - **Kuvaus:** *Pakkausetiketit*
     - **Aallon vaihekoodi:** *Pakkaus*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
-1. Valitse **Yleinen** -pikavälilehden **Aallon etikettityyppi** -kentässä arvo, kuten *Pakkaus*.
+1. Valitse **Yleinen**-pikavälilehden **Aallon etikettityyppi**-kentässä arvo, kuten *Pakkaus*.
 1. Lisää **Aallon etikettimallin tiedot** -pikavälilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Etiketin asettelutunnus:** *Pakkaus*
@@ -791,7 +791,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     - **Suorita kysely:** *Kyllä* (Tämä asetus on valinnainen, mutta sen käyttöä suositellaan suorituskyvyn optimoinnin vuoksi.)
 
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulukko:** *Lähetykset*
     - **Johdettu taulu:** *Lähetykset*
@@ -801,7 +801,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     Kun olet valmis, sulje kyselyeditorin valintaikkuna valitsemalla **OK**.
 
 1. Avaa koko etikettimallin kyselyeditorin valintaikkuna valitsemalla toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Lajittelu** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Lajittelu**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
@@ -818,13 +818,13 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 1. Sulje kyselyeditorin valintaikkuna valitsemalla **OK**.
 1. Avautuva sanomaruutu pyytää vahvistamaan ryhmittelyn nollaustoiminnon. Jatka valitsemalla **Kyllä**.
 1. Valitse Toimintoruudussa **Aallon etiketin malliryhmä**.
-1. Määritä **Aalloin etiketin malliryhmä** -valintaikkunassa seuraavat arvot sille riville, jonka **Viitekentän nimi** -kentän asetuksena on *Lähetyksen tunnus* :
+1. Määritä **Aalloin etiketin malliryhmä** -valintaikkunassa seuraavat arvot sille riville, jonka **Viitekentän nimi** -kentän asetuksena on *Lähetyksen tunnus*:
 
     - **Tulosta keskeytysetiketti:** valitse tämä valintaruutu.
-    - **Etiketin asettelutunnus:** Valitse keskeytysetiketti. (Valitse esimerkiksi aiemmin tässä skenaariossa luotu *Keskeytys* -etiketti.)
+    - **Etiketin asettelutunnus:** Valitse keskeytysetiketti. (Valitse esimerkiksi aiemmin tässä skenaariossa luotu *Keskeytys*-etiketti.)
     - **Tulostiminen nimi:** Valitse keskeytysetiketin tulostin. (Yleensä etikettirullien jakamista varten on syytä valita sama tulostin, joka valittiin **Aallon etikettimallin tiedot** -pikavälilehdessä. Muutkin skenaariot ovat kuitenkin mahdollisia.)
 
-1. Valitse rivillä, jonka **Viitekentän nimi** -kentän asetuksena on *Viittauksen kuormarivin tunnus* , **Etiketin luontitunnus** -valintaruutu.
+1. Valitse rivillä, jonka **Viitekentän nimi** -kentän asetuksena on *Viittauksen kuormarivin tunnus*, **Etiketin luontitunnus** -valintaruutu.
 
     > [!NOTE]
     > Tämä asetus luo kullekin kuormariville yhden etikettisarjan (Pakkaus 1/X) koko aallon osalta työn ryhmittelyasetuksesta riippumatta. Tämä etikettisarja voidaan tulostaa etikettiasetteluun. Lisäksi eri lähetysten etiketit erotetaan valitulla keskeytysetiketillä.
@@ -835,9 +835,9 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     - **Etikettimallin nimi:** *Kuormalavaetiketit*
     - **Kuvaus:** *Kuormalavaetiketit*
     - **Aallon vaihekoodi:** *Kuormalava*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
-1. Valitse **Yleinen** -pikavälilehden **Aallon etikettityyppi** -kentässä arvo, kuten *Kuormalava*.
+1. Valitse **Yleinen**-pikavälilehden **Aallon etikettityyppi**-kentässä arvo, kuten *Kuormalava*.
 1. Lisää **Aallon etikettimallin tiedot** -pikavälilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Etiketin asettelutunnus:** *Kuormalava*
@@ -845,7 +845,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     - **Suorita kysely:** *Kyllä* (Tämä asetus on valinnainen, mutta sen käyttöä suositellaan suorituskyvyn optimoinnin vuoksi.)
 
 1. Valitse toimintoruudussa **Tallenna**.
-1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Valinnainen: Jos asiakaskohtainen etikettirakenne määritetään, asiakastilin etsimistä varten on luotava kysely. Valitse **Aallon etikettimallin tiedot** -pikavälilehdessä **Muokkaa kyselyä**. Lisää sitten kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulukko:** *Lähetykset*
     - **Johdettu taulu:** *Lähetykset*
@@ -855,7 +855,7 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
     Kun olet valmis, sulje kyselyeditorin valintaikkuna valitsemalla **OK**. 
 
 1. Avaa koko etikettimallin kyselyeditorin valintaikkuna valitsemalla toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditorin valintaikkunan **Lajittelu** -välilehdessä rivi, jolla on seuraavat asetukset:
+1. Lisää kyselyeditorin valintaikkunan **Lajittelu**-välilehdessä rivi, jolla on seuraavat asetukset:
 
     - **Taulu:** *Työrivit*
     - **Johdettu taulu:** *Työrivit*
@@ -872,13 +872,13 @@ Tämän skenaarion käyttäminen edellyttää, että demotiedot on asennettu ja 
 1. Sulje kyselyeditorin valintaikkuna valitsemalla **OK**.
 1. Avautuva sanomaruutu pyytää vahvistamaan ryhmittelyn nollaustoiminnon. Jatka valitsemalla **Kyllä**.
 1. Valitse Toimintoruudussa **Aallon etiketin malliryhmä**.
-1. Määritä **Aalloin etiketin malliryhmä** -valintaikkunassa seuraavat arvot sille riville, jonka **Viitekentän nimi** -kentän asetuksena on *Lähetyksen tunnus* :
+1. Määritä **Aalloin etiketin malliryhmä** -valintaikkunassa seuraavat arvot sille riville, jonka **Viitekentän nimi** -kentän asetuksena on *Lähetyksen tunnus*:
 
     - **Tulosta keskeytysetiketti:** valitse tämä valintaruutu.
-    - **Etiketin asettelutunnus:** Valitse keskeytysetiketti. (Valitse esimerkiksi aiemmin tässä skenaariossa luotu *Keskeytys* -etiketti.)
+    - **Etiketin asettelutunnus:** Valitse keskeytysetiketti. (Valitse esimerkiksi aiemmin tässä skenaariossa luotu *Keskeytys*-etiketti.)
     - **Tulostiminen nimi:** Valitse keskeytysetiketin tulostin. (Yleensä etikettirullien jakamista varten on syytä valita sama tulostin, joka valittiin **Aallon etikettimallin tiedot** -pikavälilehdessä. Muutkin skenaariot ovat kuitenkin mahdollisia.)
 
-1. Valitse rivillä, jonka **Viitekentän nimi** -kentän asetuksena on *Viittauksen kuormarivin tunnus* , **Etiketin luontitunnus** -valintaruutu.
+1. Valitse rivillä, jonka **Viitekentän nimi** -kentän asetuksena on *Viittauksen kuormarivin tunnus*, **Etiketin luontitunnus** -valintaruutu.
 
     > [!NOTE]
     > Tämä asetus luo kullekin kuormariville yhden etikettisarjan (Pakkaus 1/X) koko aallon osalta työn ryhmittelyasetuksesta riippumatta. Tämä etikettisarja voidaan tulostaa etikettiasetteluun. Lisäksi eri lähetysten etiketit erotetaan valitulla keskeytysetiketillä.
@@ -893,7 +893,7 @@ Numerosarjalaajennuksilla hallitaan tiettyjen numerosarjojen GS1-vaatimustenmuka
 1. Luo myyntitilaus, jossa on seuraavat asetukset:
 
     - **Asiakastili:** *US-001*
-    - **Varasto** : *62*
+    - **Varasto**: *62*
 
 1. Lisää kaksi myyntitilausriviä:
 
@@ -912,16 +912,16 @@ Numerosarjalaajennuksilla hallitaan tiettyjen numerosarjojen GS1-vaatimustenmuka
     > [!NOTE]
     > Nämä nimikkeet ja määrät ovat vain esimerkkejä. Niiden on käytettävä aiemmin määritettyä yksikön sarjaryhmää, niille on määritettävä soveltuva yksikkömuunnos *kappaleesta* *laatikkoon* ja edelleen *kuormalavaksi* ja niiden varaston on oltava varastossa *62*. Lisätietoja on kohdassa [Mittayksikkö ja varastointikäytännöt](unit-measure-stocking-policies.md).
 
-1. Valitse tilausrivi 1. Valitse sitten **Myyntitilausrivi** -osan **Varasto** -valikossa **Varaukset**.
-1. Valitse **Varaus** -sivun toimintoruudussa **Varaa erä** ja sulje sitten sivu.
+1. Valitse tilausrivi 1. Valitse sitten **Myyntitilausrivi**-osan **Varasto**-valikossa **Varaukset**.
+1. Valitse **Varaus**-sivun toimintoruudussa **Varaa erä** ja sulje sitten sivu.
 1. Toista vaiheet 4 ja 5 myyntitilausriville 2.
-1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**.
+1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**.
 
     Seuraavat tapahtumat: 
 
     - Järjestelmä käsittelee luodun lähetyksen käyttämällä etiketin tulostusvaiheen sisältävää mallia. Etiketin asettelun avulla määritetään etiketin muoto, ja näin saatu etiketti tulostetaan etikettimallissa valitulla tulostimella.
     - Aallon etiketit luodaan ja tulostetaan. Etikettien määrä on sama kuin pakkausten määrä. (Tässä esimerkissä rivillä 1 on 376 laatikkoetikettiä ja rivillä 2 on 322 laatikkoetikettiä; rivillä 1 on 47 kuormalavaetikettiä ja rivillä 2 on 47 kuormalavaetikettiä, minkä lisäksi kahdessa keskeytysetiketissä on lähetyksen tunnus.)
-    - Lähetyksille luodaan uusi rahtikirjan tunnus. Jos numerosarjalaajennukset määritettiin, aallon etikettitunnus noudattaa **SSCC-18** -lukumuotoilua. 
+    - Lähetyksille luodaan uusi rahtikirjan tunnus. Jos numerosarjalaajennukset määritettiin, aallon etikettitunnus noudattaa **SSCC-18**-lukumuotoilua. 
 
 Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta sivuilta:
 
@@ -931,4 +931,4 @@ Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta siv
 - Aalto-otsikot
 - Aallon etikettihistoria
 
-Useimmilla näistä sivuista sopiva toiminto löytyy valitsemalla **Aallon etiketit** toimintoruudun **Lähetykset** -välilehden **Liittyvät tiedot** -ryhmässä.
+Useimmilla näistä sivuista sopiva toiminto löytyy valitsemalla **Aallon etiketit** toimintoruudun **Lähetykset**-välilehden **Liittyvät tiedot** -ryhmässä.

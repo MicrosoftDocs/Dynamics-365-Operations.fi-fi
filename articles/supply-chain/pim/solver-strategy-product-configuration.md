@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986548"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427304"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Tuotekonfiguraation Solver-strategia
 
@@ -45,7 +45,7 @@ Solver-strategian käsite sisältää nyt seuraavat strategiat:
 
 [Rajoitetyytyväisyysongelmana (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) muotoiltu tuotekonfigurointimalli. Microsoft Solver Foundationilla (MSF) on kahdenlaisia tuotekonfigurointimalleista käytettäviä Solver-strategioita CSP-ongelmien ratkaisemiseen. Nämä Solver-strategiat perustuvat [heuristiikkaan](https://techterms.com/definition/heuristic) ja niiden avulla määritetään järjestys, jossa CSP-ongelmien muuttujat käsitellään ongelmaa ratkaistaessa. Heuristiikkaa voi vaikuttaa suorituskykyyn huomattavasti ongelmaa tai ongelmaluokkaa ratkaistaessa.
 
-Tuotekonfiguraatiomallien Solver-strategia määrittää, mitä selvitystä heuristiikan kanssa käytetään. **Oletus**-, **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat käyttävät kahta MSF:n selvitystä, kun taas**Z3**-strategia käyttää Z3-selvitystä. 
+Tuotekonfiguraatiomallien Solver-strategia määrittää, mitä selvitystä heuristiikan kanssa käytetään. **Oletus**-, **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat käyttävät kahta MSF:n selvitystä, kun taas **Z3**-strategia käyttää Z3-selvitystä. 
 
 Todellisia asiakastoteutuksia koskevat tutkimukset ovat osoittaneet, että tuotekonfiguraatiomallin Solver-strategian vaihtaminen voi lyhentää vasteajan minuuteista millisekunteihin. Niinpä erilaisia Solver-strategioita kannattaa kokeilla, jotta tuotekonfiguraatiomallin kannalta tehokkain Solver-strategia löytyisi.
 

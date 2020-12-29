@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: ad8b33633646f27bc368dc4bbedc1eb64c150a9f
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014932"
+ms.locfileid: "4427385"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-analytiikkalisäosan asentaminen LCS:ssä
 
@@ -34,14 +34,14 @@ Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microso
 
 1. Avaa LCS ja siirry Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
 2. Vieritä **Ympäristön lisäosat** -osaan.
-3. Valitse **Asenna uusi lisäosa** , jolloin näkyviin tulee luettelo ympäristössä käyttöönotetuista lisäosista.
+3. Valitse **Asenna uusi lisäosa**, jolloin näkyviin tulee luettelo ympäristössä käyttöönotetuista lisäosista.
 4. Valitse **Valitse asennettava lisäosa** -valintaikkunassa **IoT-analytiikka**.
 5. Anna **Määritä lisäosa** -valintaikkunassa IoT-keskittimen ja Redis-välimuistin tiedot. Tarvittavat arvot sijaitsevat avainsäilössä, joka luotiin kohdassa [Azure-resurssien luonti](iot-azure-setup.md).
 
-    + **Vuokraajan tunnus** – Siirry Azure-portaalissa avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **Hakemistotunnus** -arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
-    + **IoT-tapahtuman keskittimen kanssa yhteensopiva päätepisteen avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi** -arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
+    + **Vuokraajan tunnus** – Siirry Azure-portaalissa avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **Hakemistotunnus**-arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
+    + **IoT-tapahtuman keskittimen kanssa yhteensopiva päätepisteen avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi**-arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
     + **IoT-tapahtuman keskittimen kanssa yhteensopivan päätepisteen salaisuuden nimi** – Siirry avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Salaisuudet** ja kopioi salaisuuden nimi sinne, mihin IoT-keskittimen tapahtuman keskittimen yhteysmerkkijono on tallennettu. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
-    + **Redis-välimuistin avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi** -arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
+    + **Redis-välimuistin avainsäilön URI** – Siirry avainsäilöön, valitse vasemmassa siirtymisruudussa **Yleiskatsaus** ja kopioi **DNS-nimi**-arvo. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
     + **Redis-välimuistin päätepisteen salaisuuden nimi** – Siirry avainsäilöön ja valitse sitten vasemmassa siirtymisruudussa **Salaisuudet** ja kopioi salaisuuden nimi sinne, mihin Redis-välimuistin yhteysmerkkijono on tallennettu. Liitä tämä arvo **Määritä lisäosa** -valintaikkunaan.
 
 6. Hyväksy ehdot valitsemalla valintaruutu.

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015892"
+ms.locfileid: "4427451"
 ---
 # <a name="work-line-details"></a>Työrivin tiedot
 
@@ -40,12 +40,12 @@ Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäs
 
 Jos haluat tarkastella työrivin tietojen luetteloa, siirry kohtaan **Varastonhallinta \> Työ \> Työrivin tiedot**. Tässä voit myös tehdä seuraavia toimenpiteitä:
 
-- **Suodatin** -kentän avulla voit etsiä rivejä, joilla on tietty arvo mille tahansa käytettävissä olevalle parametrille. (Käytettävissä olevat parametrit sisältävät useita parametreja, joita ei näytetä ruudukon sarakkeina.)
+- **Suodatin**-kentän avulla voit etsiä rivejä, joilla on tietty arvo mille tahansa käytettävissä olevalle parametrille. (Käytettävissä olevat parametrit sisältävät useita parametreja, joita ei näytetä ruudukon sarakkeina.)
 - **Näytä suljettu** -valintaruudun avulla voit näyttää tai piilottaa suljetut rivit.
 - Valitsemalla **Näytä dimensiot** voit avata **Dimensioiden näyttö** -valintaikkunan, jossa voit halutessasi näyttää tai piilottaa ruudukon eri dimensiosarakkeet.
 - Valitse mikä tahansa sarakeotsikko, jos haluat avata valikon, jossa voit lajitella tai suodattaa luettelon kyseisen sarakkeen arvojen mukaan.
 - Valitse työrivi ja avaa sitten valintaikkuna, jossa voit muuttaa kyseisen työrivin sijaintia, valitsemalla **Vaihda sijainti**. Määrittämäsi sijainti korvaa sijaintidirektiivin määritykset.
-- Valitse työrivi ja valitse sitten **Peruuta työrivi** , niin näyttöön tulee valintaikkuna, jossa voit vähentää kyseisen työrivin määrää osittain tai kokonaan.
+- Valitse työrivi ja valitse sitten **Peruuta työrivi**, niin näyttöön tulee valintaikkuna, jossa voit vähentää kyseisen työrivin määrää osittain tai kokonaan.
 - Oikaise määrät.
 - Näytä minkä tahansa työrivin takana olevat tapahtumat.
 
@@ -55,13 +55,13 @@ Tässä osassa on kolmiosainen esittely, jossa kerrotaan, miten työrivin tietoj
 
 ### <a name="make-sample-data-available"></a>Ota mallitiedot käyttöön
 
-Tämän demon käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF** -yritys ennen kuin aloitat.
+Tämän demon käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen kuin aloitat.
 
 Voit hyödyntää tätä esittelyä myös ohjeena, kun työskentelet tuotantojärjestelmän parissa. Sinun on kuitenkin korvattava omat arvosi, ja sinulta saattaa puuttua joitakin pakollisia tietoja, joita vakiodemotiedot sisältävät.
 
 ### <a name="verify-that-the-scenario-setup-includes-enough-available-inventory"></a>Vahvista, että tilanteen määrittämiseen on riittävästi käytettävissä olevaa varastoa
 
-Jos käytät **USMF** -esittelytietoja, sinun tulisi ensin varmistaa järjestelmäsi asetukset ja se, että kaikissa oleellisissa poimintasijanneissa on saatavilla tarpeeksi varastoa. Tätä esittelyä varten seuraavan varastomäärän on oltava sinulla vapaana varastossa:
+Jos käytät **USMF**-esittelytietoja, sinun tulisi ensin varmistaa järjestelmäsi asetukset ja se, että kaikissa oleellisissa poimintasijanneissa on saatavilla tarpeeksi varastoa. Tätä esittelyä varten seuraavan varastomäärän on oltava sinulla vapaana varastossa:
 
 - **Nimike M9200:** 45 kpl. (tai enemmän)
 - **Nimike M9202:** 10 kpl. (tai enemmän)
@@ -79,27 +79,27 @@ Ennen kuin aloitat töiden luomisen, varmista, että varastosi on määritetty v
 Seuraa seuraavia ohjeita luodaksesi poimintatyön.
 
 1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
-1. Valitse **Uusi** ja avaa **Luo myyntitilaus** -valintaikkuna.
+1. Valitse **Uusi** ja avaa **Luo myyntitilaus**-valintaikkuna.
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
-    - Aseta **Asiakas** -pikavälilehdessä **Asiakastili** -kentän arvoksi _US-001_.
-    - Aseta **Yleinen** -pikavälilehden **Varasto** -kentässä arvoksi _51_.
+    - Aseta **Asiakas**-pikavälilehdessä **Asiakastili**-kentän arvoksi _US-001_.
+    - Aseta **Yleinen**-pikavälilehden **Varasto**-kentässä arvoksi _51_.
 
 1. Valitse **OK** luodaksesi ostotilauksen ja sulje valintaikkuna.
-1. Uusi myyntitilauksesi avataan. **Myyntitilausrivit** -ruudukko sisältää uuden, tyhjän rivin. Määritä seuraavat arvot tällä tilausrivillä:
+1. Uusi myyntitilauksesi avataan. **Myyntitilausrivit**-ruudukko sisältää uuden, tyhjän rivin. Määritä seuraavat arvot tällä tilausrivillä:
 
     - **Nimiketunnus:** _M9200_
     - **Määrä** _20_
     - **Yksikkö:** _ea_
 
-1. Valitse uusi tilausrivi ja valitse sitten ruudukon yläpuolella olevasta **Varasto** -valikosta **Varaus** avataksesi **Varaus** -sivun.
-1. Valitse **Varaus** -sivulla **Varaa erä** , jos haluat varata koko valitun rivin määrän varastosta.
-1. Palaa myyntitilaukseen sulkemalla **Varaus** -sivun.
-1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**. Järjestelmä luo lähetyksen, lisää sen uuteen kuormitukseen ja luo tarvittavat työt.
+1. Valitse uusi tilausrivi ja valitse sitten ruudukon yläpuolella olevasta **Varasto**-valikosta **Varaus** avataksesi **Varaus**-sivun.
+1. Valitse **Varaus**-sivulla **Varaa erä**, jos haluat varata koko valitun rivin määrän varastosta.
+1. Palaa myyntitilaukseen sulkemalla **Varaus**-sivun.
+1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**. Järjestelmä luo lähetyksen, lisää sen uuteen kuormitukseen ja luo tarvittavat työt.
 1. Luo toinen myyntitilaus samalle asiakastilille ja varastolle, jota käytettiin ensimmäisessä tilauksessa. Lisää seuraavat kaksi tilausriviä tälle tilaukselle:
 
-    - **Rivi 1:** Aseta **Nimiketunnus** -kentän arvoksi _M9200_ , **Määrä** -kentän arvoksi _25_ ja **Yksikkö** -kentän arvoksi _kpl_.
-    - **Rivi 2:** Aseta **Nimiketunnus** -kentän arvoksi _M9202_ , **Määrä** -kentän arvoksi _10_ ja **Yksikkö** -kentän arvoksi _kpl_.
+    - **Rivi 1:** Aseta **Nimiketunnus**-kentän arvoksi _M9200_, **Määrä**-kentän arvoksi _25_ ja **Yksikkö**-kentän arvoksi _kpl_.
+    - **Rivi 2:** Aseta **Nimiketunnus**-kentän arvoksi _M9202_, **Määrä**-kentän arvoksi _10_ ja **Yksikkö**-kentän arvoksi _kpl_.
 
 1. Toista vaiheet 6-8, kun haluat varata varaston kullekin tilausriville (yksi kerrallaan) ja vapauttaa sitten tilauksen varastoon toistamalla vaiheen 9.
 
@@ -108,7 +108,7 @@ Seuraa seuraavia ohjeita luodaksesi poimintatyön.
 1. Valitse **Varastonhallinta \> Työ \> Työrivin tiedot**.
 1. Etsi ja valitse jokin tälle demokohteelle luoduista työriveistä.
 1. Avaa **Valitse uusi sijainti** -valintaikkuna valitsemalla **Vaihda sijainti**.
-1. Valitse **Uuden sijainnin valitseminen** -valintaikkunan **Sijainti** -kentästä työriville uusi sijainti.
+1. Valitse **Uuden sijainnin valitseminen** -valintaikkunan **Sijainti**-kentästä työriville uusi sijainti.
 1. Ota muutokset käyttöön valitsemalla **OK** ja sulje valintaikkuna.
 
 > [!IMPORTANT]
@@ -119,10 +119,10 @@ Seuraa seuraavia ohjeita luodaksesi poimintatyön.
 1. Valitse **Varastonhallinta \> Työ \> Työrivin tiedot**.
 1. Etsi ja valitse jokin tälle demokohteelle luoduista työriveistä. Huomaa, että voit peruuttaa tai muuttaa määriä vain työriveille, joilla työtyyppi on _poiminta_.
 1. Avaa **Peruutettava määrä** -valintaikkuna valitsemalla **Peruuta työrivi**.
-1. Muuta **Peruutettava määrä** -valintaikkunassa **Määrä** -kentän arvoa ja määritä määrä, joka *vähennetään* riville määritettynä määränä. Oletusarvon mukaan **Määrä** -kentässä näkyy koko määrä.
+1. Muuta **Peruutettava määrä** -valintaikkunassa **Määrä**-kentän arvoa ja määritä määrä, joka *vähennetään* riville määritettynä määränä. Oletusarvon mukaan **Määrä**-kentässä näkyy koko määrä.
 
-    - Jos peruutat koko määrän, **Työtilan** arvoksi tulee _peruutettu_ , mutta **Työmäärä** -kentässä näkyy edelleen alkuperäinen arvo.
-    - Jos peruutat vain osan määrästä, **Työmäärä** -kenttä päivitetään uuden arvon näyttämiseksi, mutta **työn tila** -arvo ei muutu.
+    - Jos peruutat koko määrän, **Työtilan** arvoksi tulee _peruutettu_, mutta **Työmäärä**-kentässä näkyy edelleen alkuperäinen arvo.
+    - Jos peruutat vain osan määrästä, **Työmäärä**-kenttä päivitetään uuden arvon näyttämiseksi, mutta **työn tila** -arvo ei muutu.
 
 1. Ota muutokset käyttöön valitsemalla **OK** ja sulje valintaikkuna.
 

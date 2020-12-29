@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 163c2e00bd0363303596a48199a833369e51b232
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012341"
+ms.locfileid: "4427381"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.9 (huhtikuu 2020)
 
@@ -36,7 +36,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet* -ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet*-ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Kuormituksen lisäluonti aallon aikana](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Lisätietoja on kohdassa [Kuormituksen lisäluonti allon aikana](../warehousing/advanced-load-building-during-wave.md).
 

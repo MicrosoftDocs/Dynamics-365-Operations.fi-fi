@@ -17,17 +17,17 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ae7c43516fc90224439f6f7cfd5fd0a6058e8b39
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018419"
+ms.locfileid: "4427502"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan tarjouspyynnön vastauksien kirjoittaminen, tarjousten pisteytys ja vertailu, sekä sopimuksen antaminen yhdelle toimittajista. Voit käyttää tätä menettelyä **USMF** :n esittely-yrityksessä.
+Tässä aiheessa kuvataan tarjouspyynnön vastauksien kirjoittaminen, tarjousten pisteytys ja vertailu, sekä sopimuksen antaminen yhdelle toimittajista. Voit käyttää tätä menettelyä **USMF**:n esittely-yrityksessä.
 
 Ennen kuin aloitat tämän menettelyn, varmista, että sinulla on tarjouspyyntö, joka sisältää kaksi riviä ja joka on lähetetty vähintään kahdelle toimittajalle. Voit luoda tämän tarjouspyynnön suorittamalla [tarjouspyyntömenettelyn luomisen](create-request-quotation.md). Pisteytysehdot on määritettävä ennen kuin tämä menettely voidaan suorittaa loppuun.
 
@@ -42,12 +42,12 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 5. Syötä otsikon ja rivien arvot hintatarjousvastauksesta.
 6. Jos tarjoukseen on lisättävä liitteitä, valitse **Hintatarjousliitteet.**
 7. Valitsemalla **Tarjouksen ohjaavat nimikkeet** -pikavälilehden voit tarkastella, tarvitaanko asiakirjoja.
-8. Valitsemalla **Muutokset** -pikavälilehden voit tarkastella, onko tarjouspyyntöä muutettu.
-9. Valitse **Kysely** -pikavälilehti. Kaikkiin tässä näkyviin kyselyihin on vastattava.
+8. Valitsemalla **Muutokset**-pikavälilehden voit tarkastella, onko tarjouspyyntöä muutettu.
+9. Valitse **Kysely**-pikavälilehti. Kaikkiin tässä näkyviin kyselyihin on vastattava.
 10. Valitsemalla **Rivin tiedot** -pikavälilehden voit tarkastella rivin laajennettuja tietoja.
 11. Valitse **Nollaa tarjouspyynnöstä** vain, jos alkuperäiset tarjouspyyntöarvoihin kirjoitetut arvot on nollattava.
 12. Voit tallentaa tarjouksen milloin tahansa ja käsitellä sitä myöhemmin lisää edellyttäen, että vanhentumispäivä ja -aika eivät ole kuluneet umpeen. Tässä tapauksessa **Keskeneräiset hintatarjoukset** -luettelo löytyy **Toimittajan hinnoittelu** -työtilasta.
-13. Kun tarjous on valmis lähetettäväksi, valitse **Lähetä**. Valitse **Hylkää** , jos et halua tehdä tarjousta. Lähetetyt tarjoukset ovat käytettävissä **Lähetetyt tarjoukset** -luettelossa **Toimittajan hinnoittelu** -työtilassa.  
+13. Kun tarjous on valmis lähetettäväksi, valitse **Lähetä**. Valitse **Hylkää**, jos et halua tehdä tarjousta. Lähetetyt tarjoukset ovat käytettävissä **Lähetetyt tarjoukset** -luettelossa **Toimittajan hinnoittelu** -työtilassa.  
 14. Kun tarjous on lähetetty, voit peruuttaa sen milloin tahansa ennen vanhentumispäivää ja -aikaa. Huomaa, että kun tarjous palautetaan, sitä ei käsitellä lähetettynä. Kun hankintayksikkö hyväksyy tai hylkää tarjouksen, se näkyy joko **Myyjän tarjous** -työtilan **Palkitut tarjoukset** tai **Kadonneet tarjoukset** -luettelossa.  
 
 ## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Toimittajan vastauksen lisääminen hankinta-asiantuntijana
@@ -65,30 +65,30 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 1. Valitse **Kaikki tarjouspyynnöt** -sivulla tarjouspyyntötapaus, jolle haluat määrittää vastaukset.
 2. Valitse **Vastausten hallinta**.
 3. Valitse vastauksen tulos.
-4. Valitse **Ylätunniste** , jotta voit tarkastella tarjouksen pisteytystä.
+4. Valitse **Ylätunniste**, jotta voit tarkastella tarjouksen pisteytystä.
 5. Kirjoita **Tulosten pisteytys** -pikavälilehdellä **Tulos** -kenttään jokin pisteytysehdon numero. Jos pidät kohdistinta pisteytysperusteiden yllä, työkaluvihje näyttää alueen, jonka sisällä pisteytyksen on oltava. Tässä demossa voit syöttää numeron väliltä 1-5 mihin tahansa pisteytysperusteeseen.  
 6. Toista vaihe 5 toisen pisteytyskriteerin osalta.
-7. Jos tarjouspyynnön tapauksessa on kyselylomake, joka on lähetetty toimittajille, voit kirjoittaa toimittajien vastaukset **Kyselylomakkeet** -pikavälilehdelle.
+7. Jos tarjouspyynnön tapauksessa on kyselylomake, joka on lähetetty toimittajille, voit kirjoittaa toimittajien vastaukset **Kyselylomakkeet**-pikavälilehdelle.
 8. Sulje sivu.
 9. Toista vaiheet 1-8 kaikkien muiden tarjousten kohdalla.
 
 ## <a name="compare-the-replies"></a>Vertaa vastauksia
 
-1. Valitse toimintoruudun **Yleiset** -välilehdessä **Vertaa vastauksia**.
-2. Kirjoita **Sijoitus** -kenttään numero.  
+1. Valitse toimintoruudun **Yleiset**-välilehdessä **Vertaa vastauksia**.
+2. Kirjoita **Sijoitus**-kenttään numero.  
     - Tällä sivulla näytetään tarjoukset yhdessä otsikko- ja rivitietojen kanssa ja myös kokonaispistemäärä otsikon tasolla. Voit verrata rivejä lajittelemalla ruudukon siten, että vertailtavat rivit ovat vierekkäin. Tämä sisältää myös seuraavat tiedot:
     - **Määrä** – Toimittajan tarjoama määrä. Tämä määrä ei ehkä vastaa tarjouspyynnössä määritettyä määrää.
     - **Nettosumma** – Toimittajan tarjouksen hinta rivin nimikkeistä alennusten vähentämisen jälkeen.
     - **Poikkeama** – Päivien määrä, jonka verran tarjouksen otsikon tai rivin toimituspäivämäärä eroaa tarjouspyynnön otsikon tai tarjouspyynnön rivin pyydetystä toimituspäivämäärästä. Voit määrittää kullekin tarjoukselle sijoituksen.  
 3. Valitse sijoitettavan tarjouksen otsikkorivi.
-4. Kirjoita **Sijoitus** -kenttään numero.
+4. Kirjoita **Sijoitus**-kenttään numero.
 5. Valitse **Tallenna**.
 
 ## <a name="reject-a-bid"></a>Hylkää tarjous
 
 1. Valitse hylättävän tarjouksen otsikkorivi. Voit hyväksyä, hylätä tai palauttaa vain yhden tarjouksen tai yhden tarjouksen rivejä kerralla.
-2. Valitse **Merkitse** -valintaruutu.  
-    - Jos valitset **Merkitse** -valintaruudun tarjouksen otsikossa, kaikki tarjouksen rivit merkitään lisäksi. Jos haluat hylätä tai hyväksyä vain osan tarjouksen riveistä, voit merkitä vain nämä rivit. Lisäksi voit hyväksyä yhden toimittajan tarjouksen tarjouspyynnön joillakin riveillä ja sitten antaa muut tarjouspyynnön rivit eri toimittajalle. Sinun on kuitenkin tehtävä yksi tarjous kerrallaan.  
+2. Valitse **Merkitse**-valintaruutu.  
+    - Jos valitset **Merkitse**-valintaruudun tarjouksen otsikossa, kaikki tarjouksen rivit merkitään lisäksi. Jos haluat hylätä tai hyväksyä vain osan tarjouksen riveistä, voit merkitä vain nämä rivit. Lisäksi voit hyväksyä yhden toimittajan tarjouksen tarjouspyynnön joillakin riveillä ja sitten antaa muut tarjouspyynnön rivit eri toimittajalle. Sinun on kuitenkin tehtävä yksi tarjous kerrallaan.  
     - Jos on olemassa vaihtoehtoisia rivejä, voit hyväksyä joko alkuperäisen tarjousrivin tai sen vaihtoehdon, mutta et molempia.  
 3. Valitse **Hylkää**.
 4. Valitse **Parametrit** ja sitten lisää tai valitse **Hylkäyksen syy** -kenttään hintatarjouksen hylkäämisen syy. Syy on tallennettu vastaukseen.  
@@ -102,8 +102,8 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 3. Valitse **Hyväksy**. Jos merkitsit vain tietyt rivit, Hyväksy-toiminto sisällyttää vain nämä rivit. Voit hyväksyä kaikki tarjouksen rivit merkitsemättä niitä.  
 4. Valitse **Parametrit** ja sitten lisää tai valitse **Hyväksymisen syy** -kenttään hintatarjouksen hyväksymisen syy. Syy on tallennettu tarjoukseen.  
 5. Valitse **OK**.
-6. Valitse **OK**. Kun valitset **OK** , järjestelmä luo ostotilauksen tarjouspyynnössä hyväksyttyjen rivien perusteella. Jos tarjouspyynnöllä on muita tarjouksia, joita ei ole käsitelty (hyväksytty, hylätty tai palautettu), järjestelmä kehottaa hylkäämään jäljellä olevat tarjoukset.  
+6. Valitse **OK**. Kun valitset **OK**, järjestelmä luo ostotilauksen tarjouspyynnössä hyväksyttyjen rivien perusteella. Jos tarjouspyynnöllä on muita tarjouksia, joita ei ole käsitelty (hyväksytty, hylätty tai palautettu), järjestelmä kehottaa hylkäämään jäljellä olevat tarjoukset.  
 
 ## <a name="view-the-purchase-order-that-is-generated"></a>Näytä luotava ostotilaus
 
-Valitse toimintoruudun **Yleiset** -välilehdessä **Ostotilaus**. Näkyvä sivu näyttää ostotilauksen, joka luotiin, kun hyväksyit tarjouksen.
+Valitse toimintoruudun **Yleiset**-välilehdessä **Ostotilaus**. Näkyvä sivu näyttää ostotilauksen, joka luotiin, kun hyväksyit tarjouksen.

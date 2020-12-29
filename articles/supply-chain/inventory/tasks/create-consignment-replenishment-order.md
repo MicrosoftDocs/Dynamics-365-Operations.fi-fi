@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018350"
+ms.locfileid: "4427479"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Luo tavaralähetyksen täydennystilaus
 
@@ -33,27 +33,27 @@ Tässä aiheessa kuvataan, miten luot tavaralähetyksen täydennystilauksen, jos
 ## <a name="create-a-consignment-replenishment-order"></a>Luo tavaralähetyksen täydennystilaus
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Hankinta > Tavaralähetys > Tavaralähetyksen täydennystilaukset**.
 2. Valitse **Uusi**.
-3. Valitse **Toimittajatili** -kentässä toimittaja **US-104** (sinun on valittava toimittaja, joka on rekisteröity omistajaksi **varaston omistajat** -sivulla). 
+3. Valitse **Toimittajatili**-kentässä toimittaja **US-104** (sinun on valittava toimittaja, joka on rekisteröity omistajaksi **varaston omistajat** -sivulla). 
 4. Valitse **OK**.
 5. Valitse **Lisää rivi**.
-6. Kirjoita **Nimiketunnus** -kenttään `M9211CI` (sinun on valittava nimike, joka on määritetty lähetysvarastoa varten).
-7. Anna **Määrä** -kentässä numero.
+6. Kirjoita **Nimiketunnus**-kenttään `M9211CI` (sinun on valittava nimike, joka on määritetty lähetysvarastoa varten).
+7. Anna **Määrä**-kentässä numero.
 8. Kirjoita päivämäärä **Pyydetty toimituspäivämäärä** -kenttään. MRP-moduuli käyttää pyydettyä ja vahvistettua päivämäärää tavaroiden saapumisen arviointiin.  
 9. Kirjoita päivämäärä **Vahvistettu toimituspäivämäärä** -kenttään.
 10. Laajenna **Rivin erittely** -osa.
-11. Valitse **Varastodimensiot** -välilehti.
+11. Valitse **Varastodimensiot**-välilehti.
 12. Saat omistajan näkyviin **Varastodimensioiden omistaja** -kenttään päivittämällä sivun. Toimittaja US-104 on nyt merkitty omistaja.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Tarkista varastotapahtuman tila
 1. Valitse **Varasto**.
 2. Valitse **Tapahtumat**.
-3. Huomaa halutulla rivillä, että **Vastaanotto** -kentän arvo on **Tilattu**.  
+3. Huomaa halutulla rivillä, että **Vastaanotto**-kentän arvo on **Tilattu**.  
 4. Sulje sivu.
 
 ## <a name="receive-items"></a>Vastaanota nimikkeet
 1. Valitse **Tuotteen vastaanotto**.
 2. Kirjoita arvo **Ulkoisen tuotteen vastaanotto** -kenttään.
-3. Syötä **Määrä** -kenttään numero, joka on pienempi kuin numero, joka siinä on. 
+3. Syötä **Määrä**-kenttään numero, joka on pienempi kuin numero, joka siinä on. 
 4. Valitse **OK**.
 
 ## <a name="check-the-on-hand-inventory"></a>Tarkista käytettävissä oleva varasto.

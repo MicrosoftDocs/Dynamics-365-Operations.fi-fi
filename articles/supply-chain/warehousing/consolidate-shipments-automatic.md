@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016859"
+ms.locfileid: "4427416"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Lähetysten konsolidointi, kun ne vapautetaan varastoon myyntitilausten automaattisella vapauttamisella
 
@@ -99,12 +99,12 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
 
-    - **Nimiketunnus:** *M9200* (nimike, jonka **Koodi 4** -suodattimen arvo on *Tulenarka* )
+    - **Nimiketunnus:** *M9200* (nimike, jonka **Koodi 4** -suodattimen arvo on *Tulenarka*)
     - **Määrä** *1.00*
 
 1. Lisää toinen tilausrivi, jossa on seuraavat asetukset:
 
-    - **Nimiketunnus:** *M9201* (nimike, jonka **Koodi 4** -suodattimen arvo on *Räjähdysherkkä* )
+    - **Nimiketunnus:** *M9201* (nimike, jonka **Koodi 4** -suodattimen arvo on *Räjähdysherkkä*)
     - **Määrä** *1.00*
     - **Toimitustapa:** *Lento-Ilma*
 
@@ -118,12 +118,12 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
 
-    - **Nimiketunnus:** *M9200* (nimike, jonka **Koodi 4** -suodattimen arvo on *Tulenarka* )
+    - **Nimiketunnus:** *M9200* (nimike, jonka **Koodi 4** -suodattimen arvo on *Tulenarka*)
     - **Määrä** *1.00*
 
 1. Lisää toinen tilausrivi, jossa on seuraavat asetukset:
 
-    - **Nimiketunnus:** *M9201* (nimike, jonka **Koodi 4** -suodattimen arvo on *Räjähdysherkkä* )
+    - **Nimiketunnus:** *M9201* (nimike, jonka **Koodi 4** -suodattimen arvo on *Räjähdysherkkä*)
     - **Määrä** *1.00*
     - **Toimitustapa:** *Lento-Ilma*
 
@@ -202,7 +202,7 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
     - **Asiakastili:** *US-007*
     - **Toimipaikka:** *6*
-    - **Varasto** : *61*
+    - **Varasto**: *61*
     - **Pooli:** *ShipCons*
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
@@ -216,7 +216,7 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
     - **Asiakastili:** *US-007*
     - **Toimipaikka:** *6*
-    - **Varasto** : *61*
+    - **Varasto**: *61*
     - **Pooli:** jätä tämä kenttä tyhjäksi.
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
@@ -236,7 +236,7 @@ Kunkin aiemmin luodun myyntitilausjoukon osalta suoritetaan kolme menettelyä, j
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Määritä **Aaltomallin tyyppi** -kentän arvoksi *Lähetys*.
-1. Etsi ja valitse siihen varastoon liitetty aaltomalli, jota käytit tätä skenaariota varten luoduissa tilausjoukoissa. Jos esimerkiksi käytit varastoa *24* , valitse **24 Lähetysoletus** -aaltomalli. Jos käytit varastoa *61* , valitse **61 Lähetys** -aaltomalli.
+1. Etsi ja valitse siihen varastoon liitetty aaltomalli, jota käytit tätä skenaariota varten luoduissa tilausjoukoissa. Jos esimerkiksi käytit varastoa *24*, valitse **24 Lähetysoletus** -aaltomalli. Jos käytit varastoa *61*, valitse **61 Lähetys**-aaltomalli.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Määritä **Käsittele aalto, kun se vapautetaan varastoon** -asetuksen arvoksi *Ei*.
 
@@ -245,7 +245,7 @@ Kunkin aiemmin luodun myyntitilausjoukon osalta suoritetaan kolme menettelyä, j
 1. Valitse **Varastonhallinta \> Vapauta varastoon \> Myyntitilausten automaattinen vapautus**.
 1. Määritä **Vapautettava määrä** -kentän arvoksi *Kaikki*.
 1. Avaa kyselyvalintaikkuna valitsemalla **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
-1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue** -välilehdessä **Lisää** :
+1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue**-välilehdessä **Lisää**:
 
     - **Taulu:** *Myyntitilaus*
     - **Johdettu taulu:** *Myyntitilaus*
@@ -267,8 +267,8 @@ Vapauta myyntitilaukset tilausjoukosta 1 [varastoon vapauttamisen perusmenettely
 
 Lopuksi näkyvissä pitäisi olla kaksi luotua lähetystä:
 
-- Ensimmäisessä lähetyksessä on kolme riviä, ja se luotiin käyttämällä lähetysten *CustomerMode* -konsolidointikäytäntöä.
-- Toinen lähetys luotiin käyttämällä lähetyksen *CustomerOrderNo* -konsolidointikäytäntöä, ja siinä kuljetuksen toimitustapana ei ole *Lento*.
+- Ensimmäisessä lähetyksessä on kolme riviä, ja se luotiin käyttämällä lähetysten *CustomerMode*-konsolidointikäytäntöä.
+- Toinen lähetys luotiin käyttämällä lähetyksen *CustomerOrderNo*-konsolidointikäytäntöä, ja siinä kuljetuksen toimitustapana ei ole *Lento*.
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Myyntitilausten vapauttaminen tilausjoukosta 2
 
@@ -276,8 +276,8 @@ Vapauta myyntitilaukset tilausjoukosta 2 [varastoon vapauttamisen perusmenettely
 
 Lopuksi näkyvissä pitäisi olla kolme luotua lähetystä:
 
-- Ensimmäinen lähetys sisältää *Tulenarka* -nimikkeitä.
-- Kummassakin lähetyksessä on yksi rivi, jolla on *Räjähdysherkkä* -nimike.
+- Ensimmäinen lähetys sisältää *Tulenarka*-nimikkeitä.
+- Kummassakin lähetyksessä on yksi rivi, jolla on *Räjähdysherkkä*-nimike.
 
 ### <a name="release-sales-orders-from-order-set-3"></a>Myyntitilausten vapauttaminen tilausjoukosta 3
 
@@ -285,14 +285,14 @@ Vapauta myyntitilaukset tilausjoukosta 3 [varastoon vapauttamisen perusmenettely
 
 Lopputuloksena pitäisi näkyvä seuraavat tapahtuneet toiminnot:
 
-- Yksi aiemmin luotu lähetys (lähetys, joka luotiin vapauttamalla tilausjoukko 2 varastoon) päivitettiin. Yhdelle riville on lisätty *Tulenarka* -nimike.
-- Luotiin yksi uusi lähetys, joka sisältää *Räjähdysherkkä* -nimikkeen.
+- Yksi aiemmin luotu lähetys (lähetys, joka luotiin vapauttamalla tilausjoukko 2 varastoon) päivitettiin. Yhdelle riville on lisätty *Tulenarka*-nimike.
+- Luotiin yksi uusi lähetys, joka sisältää *Räjähdysherkkä*-nimikkeen.
 
 ### <a name="release-sales-orders-from-order-set-4"></a>Myyntitilausten vapauttaminen tilausjoukosta 4
 
 Vapauta myyntitilaukset tilausjoukosta 4 [varastoon vapauttamisen perusmenettelyn](#release-procedure) mukaisesti.
 
-Lopputuloksena pitäisi näkyä, että yksi aiemmin luotu lähetys (jossa **Asiakkaan ehdotus** -kentän arvoksi on määritetty *1* ) päivitettiin. Siihen lisättiin yksi uusi rivi.
+Lopputuloksena pitäisi näkyä, että yksi aiemmin luotu lähetys (jossa **Asiakkaan ehdotus** -kentän arvoksi on määritetty *1*) päivitettiin. Siihen lisättiin yksi uusi rivi.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Myyntitilausten vapauttaminen tilausjoukosta 5
 
@@ -300,7 +300,7 @@ Vapauta myyntitilaukset tilausjoukosta 5 [varastoon vapauttamisen perusmenettely
 
 Lopputuloksena pitäisi näkyvä seuraavat tapahtuneet toiminnot:
 
-- Yksi aiemmin luotu lähetys (jossa **Asiakkaan ehdotus** -kentän arvoksi on määritetty *1* ) päivitettiin. Siihen lisättiin myyntitilauksen 5-3 rivi (jossa **Asiakkaan ehdotus** -kentän arvoksi on määritetty *1* ).
+- Yksi aiemmin luotu lähetys (jossa **Asiakkaan ehdotus** -kentän arvoksi on määritetty *1*) päivitettiin. Siihen lisättiin myyntitilauksen 5-3 rivi (jossa **Asiakkaan ehdotus** -kentän arvoksi on määritetty *1*).
 - Luotiin yksi uusi lähetys, jossa myyntitilausten 5-1 ja 5-2 rivit ryhmitettiin yhdeksi lähetykseksi.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Myyntitilausten vapauttaminen tilausjoukosta 6
@@ -309,10 +309,10 @@ Vapauta myyntitilaukset tilausjoukosta 6 [varastoon vapauttamisen perusmenettely
 
 Lopputuloksena pitäisi näkyä neljä luotua lähetystä:
 
-- Tilin *US-003* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli* -konsolidointikäytäntöä.
-- Tilin *US-004* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli* -konsolidointikäytäntöä.
-- Tilin *US-007* myyntitilausten 6–5 ja 6–6 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli* -konsolidointikäytäntöä.
-- Tilin *US-007* myyntitilausten 6–7 ja 6–8 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *CrossOrder* -konsolidointikäytäntöä.
+- Tilin *US-003* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli*-konsolidointikäytäntöä.
+- Tilin *US-004* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli*-konsolidointikäytäntöä.
+- Tilin *US-007* myyntitilausten 6–5 ja 6–6 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli*-konsolidointikäytäntöä.
+- Tilin *US-007* myyntitilausten 6–7 ja 6–8 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *CrossOrder*-konsolidointikäytäntöä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

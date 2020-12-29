@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018879"
+ms.locfileid: "4427400"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Yleiskatsaus hankintaan
 
@@ -41,9 +41,9 @@ Tuotteiden ja palveluiden tarve voi syntyä *hankintaehdotuksista* esimerkiksi, 
 
 Hankintaosasto määrittää tarvittavien tuotteiden ja palveluiden toimittajat. Tähän voi liittyä *tarjouspyyntöjen* lähettäminen useille mahdollisille toimittajille. On mahdollista jakaa pyydetyn tuotteen määritykset niin, että mahdolliset toimittajat voivat tarkastella näitä ja tarkistaa, pystyvätkö he toimittamaan määrityksiä vastaavan tuotteen. Toimittajat palauttavat tarjouksensa, jotka hankintaosasto tarkistaa ennen sen toimittajan valintaa, jolta hankinta halutaan tehdä.  
 
-Ostotilaukset sisältävät mahdollisuuden lähettää *ostotiedustelu* toimittajalle vaihtoehtona kattavammalle tarjouspyyntöprosessille. Ostotiedustelua voidaan käyttää tilausta koskevien tietojen, kuten hintojen, alennusten ja toimituspäivän selvittämiseen. Jos toimittajat on määritetty käyttämään **Toimittajaportaalia** , ostotiedustelutoiminto ei ole käytössä. Tilaus jaetaan sen sijaan **Toimittaja** portaalissa, ja kun *vahvistuspyyntö* lähetetään, toimittaja voi vahvistaa sen suoraan.  
+Ostotilaukset sisältävät mahdollisuuden lähettää *ostotiedustelu* toimittajalle vaihtoehtona kattavammalle tarjouspyyntöprosessille. Ostotiedustelua voidaan käyttää tilausta koskevien tietojen, kuten hintojen, alennusten ja toimituspäivän selvittämiseen. Jos toimittajat on määritetty käyttämään **Toimittajaportaalia**, ostotiedustelutoiminto ei ole käytössä. Tilaus jaetaan sen sijaan **Toimittaja** portaalissa, ja kun *vahvistuspyyntö* lähetetään, toimittaja voi vahvistaa sen suoraan.  
 
-*Toimittajan tuoteluetteloita* voidaan käyttää toimittajan tarjoamaa tuotevalikoimaa koskevien tietojen keräämiseen. Toimittajat voivat julkaista oman tuoteluettelonsa, joten sitä on helpompi pitää ajan tasalla. Tuotteeseen voidaan liittää *hyväksyttyjen toimittajien luettelo* , joka ohjaa toimittajan valintaa uusia ostotilauksia avattaessa ja estää ei-tarkoitettujen toimittajien käytön.
+*Toimittajan tuoteluetteloita* voidaan käyttää toimittajan tarjoamaa tuotevalikoimaa koskevien tietojen keräämiseen. Toimittajat voivat julkaista oman tuoteluettelonsa, joten sitä on helpompi pitää ajan tasalla. Tuotteeseen voidaan liittää *hyväksyttyjen toimittajien luettelo*, joka ohjaa toimittajan valintaa uusia ostotilauksia avattaessa ja estää ei-tarkoitettujen toimittajien käytön.
 
 ## <a name="procurement"></a>Hankinta
 
@@ -54,15 +54,15 @@ Ostotilaukset sisältävät mahdollisuuden lähettää *ostotiedustelu* toimitta
 - Ostosopimusten käsittelyn kautta, jossa ostotilaukset luodaan vapautettuina tilauksina sopimusten perusteella. Tätä käytetään usein, kun ostosopimuksia käytetään yleistilauksia varten.
 - Manuaalisesti, kun luotu ostotilaus ei perustu toiseen asiakirjaan.
 
-Ostotilaukset, jotka määritetään *ostojen hyväksyntätyönkulussa* , tarvitsevat hyväksynnän ennen kuin ne kirjataan hyväksytyiksi, ja tämä vaaditaan ennen tilauksen jatkokäsittelyä.
+Ostotilaukset, jotka määritetään *ostojen hyväksyntätyönkulussa*, tarvitsevat hyväksynnän ennen kuin ne kirjataan hyväksytyiksi, ja tämä vaaditaan ennen tilauksen jatkokäsittelyä.
 
 Ostotilaukset *vahvistetaan* osoituksena siitä, että toimittajan kanssa on solmittu sopimus. Ostotilaus etenee sitten vähitellen eri tilojen kautta, kunnes se lopulta laskutetaan tai perutaan.  
 
-Ostotilausta luodessasi useisiin kenttiin on täytetty valmiiksi oletusmuotoisia toimittajaa koskevia tietoja, jotka on tallennettu **Toimittajat** -sivulle. Tämä tarkoittaa, että sinun tarvitsee täyttää vain rajoitettu määrä ostotilauksen kentistä. Voit kuitenkin halutessasi ohittaa nämä oletusarvot.
+Ostotilausta luodessasi useisiin kenttiin on täytetty valmiiksi oletusmuotoisia toimittajaa koskevia tietoja, jotka on tallennettu **Toimittajat**-sivulle. Tämä tarkoittaa, että sinun tarvitsee täyttää vain rajoitettu määrä ostotilauksen kentistä. Voit kuitenkin halutessasi ohittaa nämä oletusarvot.
 
 ### <a name="prices-and-discounts"></a>Hinnat ja alennukset
 
-Hinnat ja alennukset -kohta sisältää tietoja toimittajan tarjoamista hinnoista, alennuksista ja ostohyvitysehdoista. Hinnat ja sopimukset voidaan ilmaista *kauppasopimuksina*. Kauppasopimukset sisältävät toimittajien hinnastot sisältäen hinnat tai alennukset, ja niillä on tietyt päivämäärävälit, jolloin sopimus on voimassa. Hinnat ja alennukset voidaan neuvotella ja ne voidaan esitellä *ostosopimusten kautta* , mukaan lukien ehdot kuten sitoumus ostaa tietty määrä tai tietystä rahallisesta arvosta neuvoteltujen ehtojen edellytyksenä. *Ostohyvityssopimuksia* voidaan solmia toimittajien kanssa, kun määrättyjen tuotteiden tai tuoreryhmien ostaminen saattaa aiheuttaa toimittajan myöntämän hyvityksen ostojen summasta tai volyymistä riippuen.
+Hinnat ja alennukset -kohta sisältää tietoja toimittajan tarjoamista hinnoista, alennuksista ja ostohyvitysehdoista. Hinnat ja sopimukset voidaan ilmaista *kauppasopimuksina*. Kauppasopimukset sisältävät toimittajien hinnastot sisältäen hinnat tai alennukset, ja niillä on tietyt päivämäärävälit, jolloin sopimus on voimassa. Hinnat ja alennukset voidaan neuvotella ja ne voidaan esitellä *ostosopimusten kautta*, mukaan lukien ehdot kuten sitoumus ostaa tietty määrä tai tietystä rahallisesta arvosta neuvoteltujen ehtojen edellytyksenä. *Ostohyvityssopimuksia* voidaan solmia toimittajien kanssa, kun määrättyjen tuotteiden tai tuoreryhmien ostaminen saattaa aiheuttaa toimittajan myöntämän hyvityksen ostojen summasta tai volyymistä riippuen.
 
 ### <a name="delivery-options"></a>Toimitusvaihtoehdot
 
@@ -92,4 +92,4 @@ Laskutetut ostotilaukset tallentavat velan toimittajan tilille ostoreskontraan, 
 
 ## <a name="vendor-performance"></a>Toimittajan suoritustaso
 
-Ostotoimintojen suorituskykyä ja arviointia tuetaan *hankinnan ja ostoreskontran raporttien kautta* , mikä sisältää varojen käytön analyysin ja toimittajan suoritusten analyysin.
+Ostotoimintojen suorituskykyä ja arviointia tuetaan *hankinnan ja ostoreskontran raporttien kautta*, mikä sisältää varojen käytön analyysin ja toimittajan suoritusten analyysin.

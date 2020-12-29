@@ -16,11 +16,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998873"
+ms.locfileid: "4427373"
 ---
 # <a name="automatic-allocation-of-charges"></a>Kulujen automaattinen kohdistaminen
 
@@ -45,16 +45,16 @@ Kulujen kohdistamista varten on ensin määritettävä kulujen koodit.
     - **Kulujen koodi** – anna kulujen koodi.
     - **Kuvaus** – anna kulujen kuvaus.
     - **Nimikkeen arvonlisäveroryhmä** – valitse tarvittaessa nimikkeen arvonlisäveroryhmä.
-    - **Jaa suhteellisesti** – Määritä asetukseksi *Kyllä* , jos haluat jakaa kulut suhteellisesti. Tämä vaihtoehto on käytettävissä vain myyntitilauksissa.
+    - **Jaa suhteellisesti** – Määritä asetukseksi *Kyllä*, jos haluat jakaa kulut suhteellisesti. Tämä vaihtoehto on käytettävissä vain myyntitilauksissa.
     - **Enimmäissumma** – Anna suurin kulujen koodille sallittu summa. Tämän kentän avulla vahvistetaan toimittajan laskujen kulut. Se on käytettävissä vain ostotilauksissa.
 
         > [!NOTE]
         > Ostotilausten kulujen vahvistamistoiminto otetaan käyttöön valitsemalla **Ostoreskontra \> Määritykset \> Ostoreskontran parametrit**. Määritä **Laskun oikeellisuustarkistus** -pikavälilehden **Laskun oikeellisuustarkistus** -osan **Ota käyttöön laskujen täsmäytyksen vahvistus** -vaihtoehdoksi *Kyllä*.
 
-1. **Kirjaus** -pikavälilehdessä on **Debet** - ja **Kredit** -osat. Määritä seuraavat kentät sen perusteella, mihin kirjanpitoon kulut halutaan kirjata:
+1. **Kirjaus**-pikavälilehdessä on **Debet**- ja **Kredit**-osat. Määritä seuraavat kentät sen perusteella, mihin kirjanpitoon kulut halutaan kirjata:
 
-    - **Tyyppi** – valitse sen tilin tyyppi, johon kirjaus tehdään ( *Kirjanpito* , *Asiakas* tai *Nimike* ).
-    - **Kirjaus** – valitse luotavan kirjauksen tyyppi (kuten *Välittäjän maksu* tai *Asiakastilitys* ).
+    - **Tyyppi** – valitse sen tilin tyyppi, johon kirjaus tehdään (*Kirjanpito*, *Asiakas* tai *Nimike*).
+    - **Kirjaus** – valitse luotavan kirjauksen tyyppi (kuten *Välittäjän maksu* tai *Asiakastilitys*).
     - **Tili** – valitse tili, johon kulu kirjataan.
 
 1. Valitse toimintoruudussa **Tallenna**.
@@ -75,7 +75,7 @@ Ostotilausten kuluryhmiä luodaan seuraavasti:
 
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Ostoreskontra \> Toimittajat \> Kaikki toimittajat** ja avaa joko aiemmin luotu toimittaja tai luo uusi toimittaja.
-1. Valitse **Oletusostotilaukset** -pikavälilehden **Ostotilaukset** -osan **Kuluryhmä** -kenttään juuri luotu kuluryhmä.
+1. Valitse **Oletusostotilaukset**-pikavälilehden **Ostotilaukset**-osan **Kuluryhmä**-kenttään juuri luotu kuluryhmä.
 
 ### <a name="charge-groups-for-sales-orders"></a>Myyntitilausten kuluryhmät
 
@@ -89,7 +89,7 @@ Myyntitilausten kuluryhmiä luodaan seuraavasti:
 
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat** ja avaa joko aiemmin luotu asiakas tai luo uusi asiakas.
-1. Valitse **Oletusostotilaukset** -pikavälilehden **Myyntitilaus** -osan **Kuluryhmä** -kenttään juuri luotu kuluryhmä.
+1. Valitse **Oletusostotilaukset**-pikavälilehden **Myyntitilaus**-osan **Kuluryhmä**-kenttään juuri luotu kuluryhmä.
 
 ## <a name="define-auto-charges"></a>Automaattisten kulujen määrittäminen
 
@@ -100,34 +100,34 @@ Kun kulujen koodit on määritetty, määritä automaattiset kulut seuraavien oh
     - Ostotilaukset: Valitse **Hankinta \> Määritys \> Kulut \> Automaattiset kulut**.
     - Myyntitilaukset: valitse **Myyntireskontra** \> Määritys \> Kulujen määritys \> Automaattiset kulut.
 
-1. Valitse luetteloruudun **Taso** -kentässä taso, jossa automaattista kulua käytetään:
+1. Valitse luetteloruudun **Taso**-kentässä taso, jossa automaattista kulua käytetään:
 
     - *Pää* – lisää kulut tilauksen otsikkoon.
     - *Rivi* – lisää kuluja tilausriveille.
 
 1. Valitse aiemmin luotu automaattinen kulu muokattavaksi tai määritä uusi automaattinen kulu valitsemalla **Uusi**.
-1. Määritä tilialue, joita asetus koskee, valitsemalla **Tilikoodi** -luettelossa jokin seuraavista arvoista.
+1. Määritä tilialue, joita asetus koskee, valitsemalla **Tilikoodi**-luettelossa jokin seuraavista arvoista.
 
     - *Taulu* – määritä kulut tietylle asiakkaalle tai toimittajalle.
     - *Ryhmä* – määritä kulut muiden kulujen ryhmään.
     - *Kaikki* – määritä kulut kaikille asiakkaille tai toimittajille.
 
-1. Valitse tietty asiakas tai toimittaja **Asiakassuhde** - tai **Toimittajasuhde** -kentässä, jos **Tilikoodi** -kentässä määritetään asetukseksi *Taulu*. Jos **Tilikoodi** -kentän asetukseksi määritetään *Ryhmä* , valitse asiakkaan tai toimittajan kuluryhmä.
-1. Määritä nimikkeet, joita asetus koskee, valitsemalla **Nimikekoodi** -kentässä jokin seuraavista arvoista. Voit valita nimikekoodin vain, jos automaattiset kulut määritetään rivitasolla.
+1. Valitse tietty asiakas tai toimittaja **Asiakassuhde**- tai **Toimittajasuhde**-kentässä, jos **Tilikoodi**-kentässä määritetään asetukseksi *Taulu*. Jos **Tilikoodi**-kentän asetukseksi määritetään *Ryhmä*, valitse asiakkaan tai toimittajan kuluryhmä.
+1. Määritä nimikkeet, joita asetus koskee, valitsemalla **Nimikekoodi**-kentässä jokin seuraavista arvoista. Voit valita nimikekoodin vain, jos automaattiset kulut määritetään rivitasolla.
 
     - *Taulu* – määritä kulut tietylle nimikkeelle.
     - *Ryhmä* – määritä kulut nimikkeen kuluryhmään.
     - *Kaikki* – määritä kulut kaikille nimikkeille.
 
-1. Valitse **Nimikesuhde** -kentässä tietty nimike, jos määrität **Nimikekoodi** -kentässä asetukseksi *Taulu*. Jos määrität **Nimikekoodi** -kentän asetukseksi *Ryhmä* , valitse nimikkeen kuluryhmä.
-1. **Vain myyntitilaukset:** määritä toimitustavat, joita asetus koskee, valitsemalla **Toimitustapakoodi** -kentässä jokin seuraavista arvoista:
+1. Valitse **Nimikesuhde**-kentässä tietty nimike, jos määrität **Nimikekoodi**-kentässä asetukseksi *Taulu*. Jos määrität **Nimikekoodi**-kentän asetukseksi *Ryhmä*, valitse nimikkeen kuluryhmä.
+1. **Vain myyntitilaukset:** määritä toimitustavat, joita asetus koskee, valitsemalla **Toimitustapakoodi**-kentässä jokin seuraavista arvoista:
 
     - *Taulu* – määritä kulut tietylle toimitustavalle.
     - *Ryhmä* – määritä kulut tietylle toimitustaparyhmälle.
     - *Kaikki* – määritä kulut kaikille toimitustavoille.
 
-1. **Vain myyntitilaukset:** Vallitse **Toimitustapasuhde** -kentässä tietty toimitustapa, jos **Toimitustapakoodi** -kentässä määritettiin asetukseksi *Taulu*. Jos määritit **Toimitustapakoodi** -kentän asetukseksi *Ryhmä* , valitse toimitustaparyhmä.
-1. Määritä **Rivit** -pikavälilehdessä kulut ja kulujen prosentit, joita käytetään nykyistä automaattista kulua käytettäessä. Voit lisätä tarvittavan määrän rivejä käyttämällä tämän pikavälilehden työkaluriviä. Määritä kullekin riville seuraavat kentät:
+1. **Vain myyntitilaukset:** Vallitse **Toimitustapasuhde**-kentässä tietty toimitustapa, jos **Toimitustapakoodi**-kentässä määritettiin asetukseksi *Taulu*. Jos määritit **Toimitustapakoodi**-kentän asetukseksi *Ryhmä*, valitse toimitustaparyhmä.
+1. Määritä **Rivit**-pikavälilehdessä kulut ja kulujen prosentit, joita käytetään nykyistä automaattista kulua käytettäessä. Voit lisätä tarvittavan määrän rivejä käyttämällä tämän pikavälilehden työkaluriviä. Määritä kullekin riville seuraavat kentät:
 
     - **Valuutta** – valitse kulujen laskemiseen käytettävä valuutta.
     - **Kulujen koodi** – valitse kulun koodi.
@@ -140,7 +140,7 @@ Kun kulujen koodit on määritetty, määritä automaattiset kulut seuraavien oh
         - *Ulkoinen* – kulu lasketaan vähintään yhteen rahdinkuljettajaan liitetyn kolmannen osapuolen palvelun mukaan.
 
     - **Kulujen arvo** – anna kulun arvo valitun luokan perusteella.
-    - **Kulujen valuuttakoodi** – Määritä kulun valuutta, jos haluat käyttää jotain muuta kuin **Valuutta** -kentässä määritettyä valuuttaa. Voit käyttää eri valuttaa vain, jos valitun kulujen koodin **Debet-tyyppi** - tai **Kredit-tyyppi** -kentän asetuksena on *Kirjanpitotili* tai *Nimike*.
+    - **Kulujen valuuttakoodi** – Määritä kulun valuutta, jos haluat käyttää jotain muuta kuin **Valuutta**-kentässä määritettyä valuuttaa. Voit käyttää eri valuttaa vain, jos valitun kulujen koodin **Debet-tyyppi**- tai **Kredit-tyyppi**-kentän asetuksena on *Kirjanpitotili* tai *Nimike*.
     - **Summasta** – Määritä aloitussumma, johon automaattinen kulu kohdistetaan. Tässä yhteydessä summa viittaa tilauksen kokonaissummaan.
     - **Summaan** – Määritä lopetussumma, johon automaattinen kulu kohdistetaan. Tässä yhteydessä summa viittaa tilauksen kokonaissummaan.
     - **Arvonlisäveroryhmä** – määritä arvolisäveroryhmä.
@@ -156,8 +156,8 @@ Seuraava menettely näyttää, miten otsikkotason kulut kohdistetaan riville. En
 1. Avaa ostotilaus tai kulutilaus.
 1. Toimi toimintoruudussa jollakin seuraavista tavoista:
 
-    - Ostotilaukset: valitse **Ostot** -välilehden **Kulut** -ryhmässä **Kohdista kulut**.
-    - Myyntitilaukset: valitse **Myynti** -välilehden **Kulut** -ryhmässä **Kohdista kulut**.
+    - Ostotilaukset: valitse **Ostot**-välilehden **Kulut**-ryhmässä **Kohdista kulut**.
+    - Myyntitilaukset: valitse **Myynti**-välilehden **Kulut**-ryhmässä **Kohdista kulut**.
 
 1. Määritä **Kohdista kulut tilausriveille** -valintaikkunassa seuraavat kentät:
 
@@ -171,9 +171,9 @@ Seuraava menettely näyttää, miten otsikkotason kulut kohdistetaan riville. En
     - **Kohdista kaikki** – valitse tämä valintaruutu, jos haluat kohdistaa kulut ostotilauksen riveille myös silloin, kulujen koodin debet-tyyppi on muu kuin *Nimike*.
     - **Vastaanotettu** – valitse tämä valintaruutu, jos haluat kohdistaa kulut vain vastaanotetuille tilausriveille.
     - **Varastoitava** – valitse tämä valintaruutu, jos haluat kohdistaa kulut vain varastoiduille tilausriveille.
-    - **Näytä valinnat ja tyhjennä määritetyt rivit** – Valitse tämä valintaruutu, jos haluat jättää tiettyjä rivejä pois tästä kohdistuksesta. Jos valitset tämän valintaruudun, **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukko avautuu. Tässä ruudukossa on vain **Kohdista kulut riveille** - ja **Varastoitava** -kenttien määrittäviä ehtoja vastaavat rivit. Jos esimerkiksi määrität **Kohdista kulut riveille** -kentän asetukseksi *Positiiviset rivit* ja valitset **Varastoitava** -valintaruudun, ruudukossa näytetään vain rivit, jotka ovat sekä positiivisia että varastoitavia. Lisäksi ruudukko suodattaa automaattisesti pois kaikki rivit, joiden koko määrä on jo vastaanotettu. Poista avatussa ruudukossa **Sisällytä** -valintaruudun valinta niiltä riveiltä, joita ei sisällytetä kohdistukseen. 
+    - **Näytä valinnat ja tyhjennä määritetyt rivit** – Valitse tämä valintaruutu, jos haluat jättää tiettyjä rivejä pois tästä kohdistuksesta. Jos valitset tämän valintaruudun, **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukko avautuu. Tässä ruudukossa on vain **Kohdista kulut riveille**- ja **Varastoitava**-kenttien määrittäviä ehtoja vastaavat rivit. Jos esimerkiksi määrität **Kohdista kulut riveille** -kentän asetukseksi *Positiiviset rivit* ja valitset **Varastoitava**-valintaruudun, ruudukossa näytetään vain rivit, jotka ovat sekä positiivisia että varastoitavia. Lisäksi ruudukko suodattaa automaattisesti pois kaikki rivit, joiden koko määrä on jo vastaanotettu. Poista avatussa ruudukossa **Sisällytä**-valintaruudun valinta niiltä riveiltä, joita ei sisällytetä kohdistukseen. 
 
         > [!IMPORTANT]
-        > Varmista **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukkoa käytettäessä, että ruudukko on avoinna siihen saakka, että valitset **Kohdista**. Jos suljet ruudukon ennen **Kohdista** -vaihtoehdon valintaa, ruudukossa tehdyt asetukset menetetään. Siinä tapauksessa kulut kohdistetaan aiemmin määritettyjen ehtojen perusteella.
+        > Varmista **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukkoa käytettäessä, että ruudukko on avoinna siihen saakka, että valitset **Kohdista**. Jos suljet ruudukon ennen **Kohdista**-vaihtoehdon valintaa, ruudukossa tehdyt asetukset menetetään. Siinä tapauksessa kulut kohdistetaan aiemmin määritettyjen ehtojen perusteella.
 
 1. Ota asetukset käyttöön valitsemalla **Kohdista** ja sulje kyselyn valintaikkuna.

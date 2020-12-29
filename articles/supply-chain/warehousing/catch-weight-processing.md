@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016259"
+ms.locfileid: "4427434"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -30,7 +30,7 @@ ms.locfileid: "4016259"
 
 ## <a name="feature-exposure"></a>Ominaisuuden näyttäminen
 
-Jos haluat, että varastonhallinta käsittelee todellisen painon tuotteita, voit ottaa toiminnon käyttöön käyttöoikeuden määritysavaimen avulla. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**. Laajenna sitten **Konfigurointiavaimet** -välilehdessä **Kauppa \> Varaston ja kuljetusten hallinta** ja valitse **Todellinen paino varastoa varten** -valintaruutu.
+Jos haluat, että varastonhallinta käsittelee todellisen painon tuotteita, voit ottaa toiminnon käyttöön käyttöoikeuden määritysavaimen avulla. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**. Laajenna sitten **Konfigurointiavaimet**-välilehdessä **Kauppa \> Varaston ja kuljetusten hallinta** ja valitse **Todellinen paino varastoa varten** -valintaruutu.
 
 > [!NOTE]
 > Myös kohtien **Varaston ja kuljetusten hallinta** ja **Prosessijako \> Todellinen paino** käyttöoikeuksien määritysavaimien on oltava käytössä. Todellisen painon määritysavaimien määrittämistä varten myös toiminto on otettava käyttöön **Toimintojen hallinta** -työtilassa. Tärkein käyttöön otettava toiminto on **Todellisen painon tuotteen käsittely varastonhallinnan avulla**. Kaksi liittyvää, mutta valinnaista toimintoa, jotka voit ottaa käyttöön, ovat **Todellisen painon tuotteiden varaston tilamuutokset** ja **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita**.
@@ -67,7 +67,7 @@ Tuotteen määritelmässä tuotteen vähimmäispainoksi määritetään 8 kg ja 
 
 Sinulla on kaksi tuotelaatikkoa, joiden rekisteröity paino on 16 kg. Jos varastotyöntekijä kerää ja punnitsee toisen laatikoista ja painoksi taltioidaan 9 kg, jäljellä olevan laatikon paino on 7 kg. Koska 7 kg kuitenkin aloittaa minimipainon, järjestelmä tekee automaattisen oikaisun ja nostaa käytettävissä olevan varaston painoa 1 kilogrammalla.
 
-Voit määrittää tilit, joihin nämä oikaisut kirjataan, valitsemalla **Kustannusten hallinta \> Kirjanpidon integrointikäytäntöjen määrittäminen \> Kirjaus**. Määritä sitten **Varasto** -välilehdessä seuraavat tilit:
+Voit määrittää tilit, joihin nämä oikaisut kirjataan, valitsemalla **Kustannusten hallinta \> Kirjanpidon integrointikäytäntöjen määrittäminen \> Kirjaus**. Määritä sitten **Varasto**-välilehdessä seuraavat tilit:
 
 - Todellisen painon tappiotili
 - Todellisen painon voittotili
@@ -84,7 +84,7 @@ Voit määrittää, milloin paino taltioidaan myynti- ja siirtotilauksen käsitt
 Jos todellinen paino kirjataan pakkausasemalla kontin pakkausprosessien aikana, varastotyöntekijöitä ei pyydetä taltioimaan painoa keräilytyön aikana. Pakkausalueelle siirtyvän kerätyn varaston painona käytetään sen sijaan fyysisen varaston keskimääräistä painoa. Tämä käsite koskee myös tunnisteilla seurattavia todellisen painon nimikkeitä. Nämä parametrit määrittävät tunnisteilla määritetyissä nimikkeissä, milloin tunniste taltioituu. Tunniste taltioidaan joko keräilyaikana käyttämällä mobiililaitetta tai manuaalisen pakkauksen aikana.
 
 > [!NOTE]
-> Koska **Pakkaus** -asetus aiheuttaa varaston päivittämisen keskimääräisellä keräillyllä paino, se voi käynnistää ristiriidan, joka voi aiheuttaa todellisen painon voiton/tappion oikaisun ja/tai eron varaston todellisen painon ja todellisen painon tunnisteen painon välillä.
+> Koska **Pakkaus**-asetus aiheuttaa varaston päivittämisen keskimääräisellä keräillyllä paino, se voi käynnistää ristiriidan, joka voi aiheuttaa todellisen painon voiton/tappion oikaisun ja/tai eron varaston todellisen painon ja todellisen painon tunnisteen painon välillä.
 
 Sisäisissä varastonhallintaprosesseissa, kuten inventoinnin ja oikaisun korjauksissa, voidaan määrittää, taltioidaanko paino. Jos sitä ei taltioida, käytetään nimellispainoa. Muilla vaihtoehdoilla voi taltioida painon todellisen painoyksikön mukaan ja laskentamäärän mukaan.
 
@@ -97,19 +97,19 @@ Todellisen painon tunnisteiden seurantaprosessia voidaan käyttää nimikkeille,
 
 Toinen todellisen painon tunnisteiden käsittelyyn liittyvä toinen tärkeä parametri on **Todellisen painon tunnistedimension seurantamenetelmä**. Tunnisteita voidaan seurata joko osittain tai kokonaan. Jos tunnistetta seurataan osittain, se seuraa tuotedimensioita, seurantadimensioita ja varaston tilaa. Jos tunnistetta seurataan kokonaisuudessaan, se seuraa tuotedimensioita, seurantadimensioita ja **kaikkia** varastodimensioita.
 
-Kun nimikettä seurataan tunnisteella, käytössä on lisäksi **Lähtevän painon taltiointimenetelmä** -parametri. Voit määrittää tämän parametrin siten, että sinulta kysytään tunniste lähtevien tapahtumien yhteydessä mobiililaitetta käytettäessä. Vaihtoehtoisesti voit määrittää parametrin siten, että tunnisteita pyydetään vain silloin, kun niitä tarvitaan. Tietyssä varaston rekisterikilvessä on esimerkiksi viisi todellisen painon tunnistetta, ja olet ilmoittanut, että haluat kerätä kaikki viisi tunnistetta rekisterikilvestä. Jos tässä tapauksessa **Lähtevän painon taltiointimenetelmä** -parametriksi on määritetty **Pyydä tunnistetta vain tarvittaessa** , viisi tunnistetta kerätään automaattisesti. Yksittäisiä tunnisteita ei siis tarvitse skannata. Jos parametriksi on määritetty **Pyydä tunniste aina** , jokainen tunniste on skannattava, vaikka kaikki viisi tunnistetta kerätään.
+Kun nimikettä seurataan tunnisteella, käytössä on lisäksi **Lähtevän painon taltiointimenetelmä** -parametri. Voit määrittää tämän parametrin siten, että sinulta kysytään tunniste lähtevien tapahtumien yhteydessä mobiililaitetta käytettäessä. Vaihtoehtoisesti voit määrittää parametrin siten, että tunnisteita pyydetään vain silloin, kun niitä tarvitaan. Tietyssä varaston rekisterikilvessä on esimerkiksi viisi todellisen painon tunnistetta, ja olet ilmoittanut, että haluat kerätä kaikki viisi tunnistetta rekisterikilvestä. Jos tässä tapauksessa **Lähtevän painon taltiointimenetelmä** -parametriksi on määritetty **Pyydä tunnistetta vain tarvittaessa**, viisi tunnistetta kerätään automaattisesti. Yksittäisiä tunnisteita ei siis tarvitse skannata. Jos parametriksi on määritetty **Pyydä tunniste aina**, jokainen tunniste on skannattava, vaikka kaikki viisi tunnistetta kerätään.
 
 > [!NOTE]
 > Tunnisteet taltioidaan ja päivitetään pääsääntöisesti vain mobiililaitteen valikon vaihtoehdoista. Muutamissa skenaariossa tunnisteet kuitenkin taltioidaan muualla (esimerkiksi manuaalisella pakkausasemalla). Yleensä mobiililaitteen valikon vaihtoehtoja pitäisi kuitenkin käyttää kaikissa varastotehtävissä tunnisteita käytettäessä.
 
 ### <a name="how-to-capture-catch-weight"></a>Todellisen painon taltiointi
 
-**Kun todellisen painon tunnisteseurantaa käytetään** , jokaiselle vastaanotetulle todellisen painon yksikölle on luotava tunniste ja jokaiseen tunnisteeseen on aina liitettävä paino.
+**Kun todellisen painon tunnisteseurantaa käytetään**, jokaiselle vastaanotetulle todellisen painon yksikölle on luotava tunniste ja jokaiseen tunnisteeseen on aina liitettävä paino.
 
 Esimerkki: Todellisen painon yksikkö on **laatikko** ja vastaanotetulla kuormalavalla on kahdeksan laatikkoa. Tässä tapauksessa on luotava kahdeksan yksilöivää todellisen painon tunnistetta ja kuhunkin tunnisteeseen on liitettävä paino. Saapuvan todellisen painon tunnisteen mukaan taltioidaan joko kaikkien kahdeksan laatikon paino, jonka jälkeen keskimääräinen paino jaetaan kullekin laatikolle. Vaihtoehtoisesti kullekin laatikolle voidaan taltioida yksilöivä paino.
 Kun käytät **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita** -toimintoa ja prosessi on otettu käyttöön mobiililaitteen valikkonimikkeen kautta, varasto päivittyy olemassa olevan todellisen painon tunnisteen tiedoilla. Tämän vuoksi varastosovellus ei pyydä tallentamaan todellisen painon tunnisteen tietoja osana tuotantoraporttia, kun työvaihe on valmis.
 
-**Jos todellisen painon seurantaa ei käytetä** , paino voidaan taltioida kullekin dimensioyhdistelmälle (kuten kullekin rekisterikilvelle ja seurantadimensiolle). Vaihtoehtoisesti paino voidaan taltioida koontitason perusteella, kuten viitenä rekisterikilpenä (kuormalavana).
+**Jos todellisen painon seurantaa ei käytetä**, paino voidaan taltioida kullekin dimensioyhdistelmälle (kuten kullekin rekisterikilvelle ja seurantadimensiolle). Vaihtoehtoisesti paino voidaan taltioida koontitason perusteella, kuten viitenä rekisterikilpenä (kuormalavana).
 
 Lähtevän painon taltiointimenetelmistä **Todellisen painon yksikköä kohti** -asetuksella voi määrittää, että punnitus on tehtävä kullekin todellisen painon yksikölle (esimerkiksi laatikon mukaan). **Keräily-yksikkö kohti** -asetuksella voi määrittää taltioitavan painon kerättävän painon perusteella (esimerkiksi kolme laatikkoa). Huomaa, että tuotantolinjan keräysprosessissa ja sisäisissä siirtoprosesseissa käytetään keskimääräistä painoa, jos **Ei taltioitu** -asetus on käytössä.
 

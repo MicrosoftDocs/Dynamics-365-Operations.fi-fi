@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 370893e415a79091404f1c4eb0404ba8fd5b9ff2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017525"
+ms.locfileid: "4427423"
 ---
 # <a name="batch-attributes"></a>Erämääritteet
 
@@ -46,7 +46,7 @@ Erämääritteet liitetään yksittäisiin tuotteisiin, joita pidetään varasto
 -   Toleranssitoiminnot määritteelle, jonka tyyppi on **Kokonaisluku** tai **Nimellinen**. Jos määritteen arvo on minimi- ja maksimialueen ulkopuolella, toimenpide voi olla varoitus- tai virheilmoitus.
 -   Määritteen kohdearvo. Arvo on määritteen optimaalinen arvo, joka koskee kaikkia määritetyyppejä.
 
-Voit käyttää **Vapautetut tuotteet** -sivulla valittujen tuotteiden sivuja Tuotetietojen hallinnassa. Kun olet liittänyt erämääritteet tuotteeseen, voit lisätä määritteille arvoja **Varastoerämääritteet** -sivulla.
+Voit käyttää **Vapautetut tuotteet** -sivulla valittujen tuotteiden sivuja Tuotetietojen hallinnassa. Kun olet liittänyt erämääritteet tuotteeseen, voit lisätä määritteille arvoja **Varastoerämääritteet**-sivulla.
 
 ## <a name="reserve-batches"></a>Erien varaaminen
 Voit hakea erämääritteitä tehdessäsi erävarauksia myyntitilaukselle asiakkaan tilauksen täyttämiseksi tai keräillessäsi ja varatessasi eriä tuotantotilaukselle. Haun avulla voit etsiä varastoerää, joka sisältää tuotteen, jolla on haluamasi erämäärite. Kun olet paikantanut erän tai erät, voit varata tuotteen lähdevaraston tapahtumariville.

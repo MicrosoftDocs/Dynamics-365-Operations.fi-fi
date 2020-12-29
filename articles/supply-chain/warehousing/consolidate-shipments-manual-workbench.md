@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016813"
+ms.locfileid: "4427415"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
 
@@ -100,13 +100,13 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
 
-    - **Nimiketunnus:** *M9200* (nimike, jonka **Koodi 4** -suodattimen arvo on *Tulenarka* )
+    - **Nimiketunnus:** *M9200* (nimike, jonka **Koodi 4** -suodattimen arvo on *Tulenarka*)
     - **Määrä** *1.00*
 
 1. Valitse ensin **Varasto \> Varaus** ja varaa sitten tilausrivi valitsemalla toimintoruudussa **Varaa erä**.
 1. Lisää toinen tilausrivi, jossa on seuraavat asetukset:
 
-    - **Nimiketunnus:** *M9201* (nimike, jonka **Koodi 4** -suodattimen arvo on *Räjähdysherkkä* )
+    - **Nimiketunnus:** *M9201* (nimike, jonka **Koodi 4** -suodattimen arvo on *Räjähdysherkkä*)
     - **Määrä** *1.00*
     - **Toimitustapa:** *Lento-Ilma*
 
@@ -176,7 +176,7 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
     - **Asiakastili:** *US-007*
     - **Toimipaikka:** *6*
-    - **Varasto** : *61*
+    - **Varasto**: *61*
     - **Pooli:** *ShipCons*
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
@@ -192,7 +192,7 @@ Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset** ja luo myynti
 
     - **Asiakastili:** *US-007*
     - **Toimipaikka:** *6*
-    - **Varasto** : *61*
+    - **Varasto**: *61*
     - **Pooli:** jätä tämä kenttä tyhjäksi.
 
 1. Lisää tilausrivi, jossa on seuraavat asetukset:
@@ -208,14 +208,14 @@ Vapauta jokainen tähän skenaarioon luotu myyntitilaus varastoon seuraavien ohj
 
 1. Valitse **Myyntireskontra \> Tilaukset \> Kaikki myyntitilaukset**.
 1. Etsi ja valitse vapautettava myyntitilaus.
-1. Vapauta valittu myyntitilaus valitsemalla toimintoruudun **Varasto** -välilehdessä **Toiminnot \> Vapauta varastoon**.
+1. Vapauta valittu myyntitilaus valitsemalla toimintoruudun **Varasto**-välilehdessä **Toiminnot \> Vapauta varastoon**.
 1. Toista tämä menettely jokaisen tähän skenaarioon luodun myyntitilauksen osalta.
 
 ## <a name="consolidate-the-shipments-by-using-the-shipment-consolidation-workbench"></a>Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
 
 1. Valitse **Varastonhallinta \> Vapauta varastoon \> Lähetyksen konsolidoinnin työtila**.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
-1. Lisää kyselyeditoriin valintaikkunassa seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue** -välilehdessä **Lisää** :
+1. Lisää kyselyeditoriin valintaikkunassa seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue**-välilehdessä **Lisää**:
 
     - **Taulu:** *Myyntitilaukset*
     - **Kenttä:** *Myyntitilaus*
@@ -237,15 +237,15 @@ Seuraavan menettelyn avulla voi tarkistaa lähetykset, jotka on luotu tai päivi
 
 Luotuja lähetyksiä on oltava kaksi:
 
-- Ensimmäisessä lähetyksessä on kolme riviä, ja se luotiin käyttämällä lähetysten *CustomerMode* -konsolidointikäytäntöä.
-- Toinen lähetys luotiin käyttämällä lähetyksen *CustomerOrderNo* -konsolidointikäytäntöä, ja siinä kuljetuksen toimitustapana ei ole *Lento*.
+- Ensimmäisessä lähetyksessä on kolme riviä, ja se luotiin käyttämällä lähetysten *CustomerMode*-konsolidointikäytäntöä.
+- Toinen lähetys luotiin käyttämällä lähetyksen *CustomerOrderNo*-konsolidointikäytäntöä, ja siinä kuljetuksen toimitustapana ei ole *Lento*.
 
 ### <a name="related-shipments-for-order-set-2"></a>Tilausjoukkoon 2 liittyvät lähetykset
 
 Luotuja lähetyksiä on oltava kolme:
 
-- Ensimmäinen lähetys sisältää *Tulenarka* -nimikkeitä.
-- Kummassakin lähetyksessä on yksi rivi, jolla on *Räjähdysherkkä* -nimike.
+- Ensimmäinen lähetys sisältää *Tulenarka*-nimikkeitä.
+- Kummassakin lähetyksessä on yksi rivi, jolla on *Räjähdysherkkä*-nimike.
 
 ### <a name="related-shipments-for-order-set-3"></a>Tilausjoukkoon 3 liittyvät lähetykset
 
@@ -258,10 +258,10 @@ Luotuja lähetyksiä on oltava kaksi:
 
 Luotuja lähetyksiä on oltava neljä:
 
-- Tilin *US-003* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli* -konsolidointikäytäntöä.
-- Tilin *US-004* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli* -konsolidointikäytäntöä.
-- Tilin *US-007* myyntitilausten 4–5 ja 4–6 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli* -konsolidointikäytäntöä.
-- Tilin *US-007* myyntitilausten 4–7 ja 4–8 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *CrossOrder* -konsolidointikäytäntöä.
+- Tilin *US-003* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli*-konsolidointikäytäntöä.
+- Tilin *US-004* kahden tilauksen rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli*-konsolidointikäytäntöä.
+- Tilin *US-007* myyntitilausten 4–5 ja 4–6 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *Tilauspooli*-konsolidointikäytäntöä.
+- Tilin *US-007* myyntitilausten 4–7 ja 4–8 rivit ryhmitettiin yhdeksi lähetykseksi käyttämällä lähetyksen *CrossOrder*-konsolidointikäytäntöä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018373"
+ms.locfileid: "4427426"
 ---
 # <a name="set-up-consignment"></a>Tavaralähetyksen määrittäminen
 
@@ -40,12 +40,12 @@ Tässä esimerkissä USMF-yrityksellä on tavaralähetyksiä koskeva sopimus toi
 2.  Toimittaja saa tiedon odotetusta toimituksesta. Tämä voi tapahtua kolmella eri tavalla:
     -   USMF:n työntekijä lähettää tilaustiedon toimittajalle.
     -   Toimittaja voi valvoa asiakkaan toimipaikalla käytettävissä olevaa odotettua varastoa toimittajayhteistyöliittymällä.
-    -   USMF:n työntekijä suodattaa tiedot **Käytettävissä oleva varasto** -sivulla nähdäkseen ainoastaan toimittajan US-104 tietueet, joiden vastaanottotila on **Tilattu** , ja lähettää tiedon toimittajalle.
+    -   USMF:n työntekijä suodattaa tiedot **Käytettävissä oleva varasto** -sivulla nähdäkseen ainoastaan toimittajan US-104 tietueet, joiden vastaanottotila on **Tilattu**, ja lähettää tiedon toimittajalle.
 3.  US-104 toimittaa varaston USMF:lle.
 4.  Kun materiaali saapuu USMF:lle, tavaralähetyksen täydennystilaus päivitetään tuotteen vastaanottotiedolla. Ainoastaan toimittajan omistaman varaston fyysiset määrät kirjataan. Kirjanpidon tapahtumia ei luoda, koska toimittaja omistaa edelleen varaston.
 5.  Toimittaja valvoo fyysisen käytettävissä olevan varaston päivityksiä **Käytettävissä oleva tavaralähetysvarasto** -sivulla.
 6.  Kun fyysinen varasto on käytettävissä, tuotantoprosessin varaa toimittajan omistaman varaston ja aloittaa tuotantotilauksen mukaisten tavaroiden valmistamisen, joka kuluttaa raaka-ainetta M9211CI.
-7.  Kuluvan päivän tuotannossa käytettäväksi varatun raaka-aineen omistaja vaihtuu US-104:stä USMF:ksi. Tämä tehdään käyttämällä varaston omistajuuden muutoksen kirjauskansiota. Tämä prosessi luo ostotilaukset, joissa **Alkuperä** -kentän arvoksi tulee **Tavaralähetys**.
+7.  Kuluvan päivän tuotannossa käytettäväksi varatun raaka-aineen omistaja vaihtuu US-104:stä USMF:ksi. Tämä tehdään käyttämällä varaston omistajuuden muutoksen kirjauskansiota. Tämä prosessi luo ostotilaukset, joissa **Alkuperä**-kentän arvoksi tulee **Tavaralähetys**.
 8.  Toimittaja valvoo kulutusta (omistajuuden muutosta) **Tavaralähetysvarastosta vastaanotetut tuotteet** -sivulla ja lähettää laskun kahden yrityksen välillä tehtyjen sopimusten perusteella.
 9.  Tuotantoprosessin raaka-aineen käyttö toteutuu tuotannon keräysluettelon kautta. Fyysinen varaus päivittyy automaattisesti osoittaen, että USMF omistaa käytettävissä olevan varaston.
 10. US-104 lähettämää laskua käsitellään vertaamalla sitä varaston omistajuuden muutoksen kirjauskansioiden käsittelyssä automaattisesti luotuihin ostotilauksiin. Maksu kulutetusta varastosta suoritetaan toimittajalle US-104.
@@ -53,22 +53,22 @@ Tässä esimerkissä USMF-yrityksellä on tavaralähetyksiä koskeva sopimus toi
 USMF suorittaa kausittaisia lisäprosesseja:
 
 -   Toimittajan omistaman varaston fyysistä siirtymistä varastosta toiseen käsitellään siirron kirjauskansiossa.
--   Käytettävissä oleva fyysinen varasto päivitetään käyttämällä **Inventointi** -kirjauskansiota. Toimittaja voi myös käyttää inventointia ja päivittää käytettävissä olevan varaston, jos hänellä on tarvittava käyttöoikeus.
+-   Käytettävissä oleva fyysinen varasto päivitetään käyttämällä **Inventointi**-kirjauskansiota. Toimittaja voi myös käyttää inventointia ja päivittää käytettävissä olevan varaston, jos hänellä on tarvittava käyttöoikeus.
 
 Toimittaja US-104 voi valvoa päivityksiä käyttämällä **Käytettävissä oleva tavaralähetysvarasto** -sivua.
 
 ## <a name="consignment-replenishment-orders"></a>Tavaralähetyksen täydennystilaukset
 Tavaralähetyksen täydennystilaus -asiakirjalla voidaan pyytää ja jäljittää tuotteiden varastomääriä, jotka toimittaja aikoo toimittaa tietyllä aikavälillä luomalla tilatut varastotapahtumat. Yleensä tämä perustuu tietyn tuotteen ennakoituun ja todelliseen kysyntään. Varasto, joka vastaanotetaan tavaralähetyksen täydennystilauksen perusteella, on edelleen toimittajan omistuksessa. Ainoastaan fyysisen varastovastaanoton päivitykseen liittyvien tuotteiden omistajuus kirjataan, minkä vuoksi kirjanpitotapahtumia ei päivitetä. 
 
-**Omistaja** -dimension avulla erotetaan toisistaan toimittajan omistaman varaston tiedot ja vastaanottavan yrityksen omistaman varaston tiedot. Tavaralähetyksen täydennyksen tilausriveillä on **Avoin tilaus** -tila niin pitkään kuin rivien koko määrää ei ole vastaanotettu tai peruutettu. Kun koko määrä on vastaanotettu tai peruutettu, tilaksi muutetaan **Valmis**. Fyysinen käytettävissä oleva varasto, joka liittyy tavaralähetyksen täydennystilaukseen, voidaan kirjata rekisteröintiprosessin tai tuotteen vastaanoton päivitysprosessin avulla. Kirjaus voidaan tehdä osana nimikkeen saapumisen kirjausprosessia tai päivittämällä tilausrivit manuaalisesti. Kun käytetään tuotteen vastaanoton päivitysprosessia, kirjaus tehdään tuotteen vastaanoton kirjauskansioon, jota voidaan käyttää tavaran vastaanoton kuittaamiseen toimittajille.
+**Omistaja**-dimension avulla erotetaan toisistaan toimittajan omistaman varaston tiedot ja vastaanottavan yrityksen omistaman varaston tiedot. Tavaralähetyksen täydennyksen tilausriveillä on **Avoin tilaus** -tila niin pitkään kuin rivien koko määrää ei ole vastaanotettu tai peruutettu. Kun koko määrä on vastaanotettu tai peruutettu, tilaksi muutetaan **Valmis**. Fyysinen käytettävissä oleva varasto, joka liittyy tavaralähetyksen täydennystilaukseen, voidaan kirjata rekisteröintiprosessin tai tuotteen vastaanoton päivitysprosessin avulla. Kirjaus voidaan tehdä osana nimikkeen saapumisen kirjausprosessia tai päivittämällä tilausrivit manuaalisesti. Kun käytetään tuotteen vastaanoton päivitysprosessia, kirjaus tehdään tuotteen vastaanoton kirjauskansioon, jota voidaan käyttää tavaran vastaanoton kuittaamiseen toimittajille.
 
 [![consignment-replenishment-order](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Varaston omistajuuden muutoksen kirjauskansio
 Varaston omistajuuden muutoksen kirjauskansiota käytetään muutettaessa lähetysvaraston omistajuus toimittajalta vastaanottavalle yritykselle. Odotettuja varastotapahtumia ei luoda kirjaan. Vain ne varastotapahtumat luodaan, jotka liittyvät kirjattuun kirjauskansioon. Kun kirjauskansio on kirjattu:
 
--   Toimittajan omistama varasto vapautetaan **Omistuksen muutos** -viittauksen ja **Myyty** -tilan avulla.
--   Oikeushenkilö vastaanottaa varaston käytettäväksi varastotapahtumalla, johon päivitetään ostotilauksen tuotteen vastaanotto. Tämä määrittää tilauksen tilaksi **vastaanotettu**. Tavaralähetyksen ostotilausten **Alkuperä** -kentän tilaksi muuttuu **Tavaralähetys**.
+-   Toimittajan omistama varasto vapautetaan **Omistuksen muutos** -viittauksen ja **Myyty**-tilan avulla.
+-   Oikeushenkilö vastaanottaa varaston käytettäväksi varastotapahtumalla, johon päivitetään ostotilauksen tuotteen vastaanotto. Tämä määrittää tilauksen tilaksi **vastaanotettu**. Tavaralähetyksen ostotilausten **Alkuperä**-kentän tilaksi muuttuu **Tavaralähetys**.
 
 Tavaralähetyksen ostotilausten tuoterivien määrää ei voida päivittää tilauksen luonnin jälkeen.
 
@@ -77,12 +77,12 @@ Tavaralähetyksen ostotilausten tuoterivien määrää ei voida päivittää til
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Toimittajayhteistyö tavaralähetysprosesseissa
 Toimittajayhteistyöliittymässä on kolme saapuvaan tavaralähetysprosessiin liittyvää sivua:
 
--   **Ostotilaukset** , **jotka käyttävät tavaralähetysvarastoa** : näyttää ostotilauksen yksityiskohtaiset tiedot, jotka liittyvät tavaralähetysprosessin aiheuttamaan omistajuuden muutokseen.
--   **Tavaralähetysvarastosta vastaanotetut tuotteet** : näyttää tiedot nimikkeistä ja määristä, jotka on päivitetty pakkausluetteloihin omistajan muutosprosessin aikana.
--   **Käytettävissä oleva tavaralähetysvarasto** : näyttää tiedot lähetyksen nimikkeistä, jotka on tarkoitus toimittaa ja nimikkeet, jotka ovat jo fyysisesti saatavilla asiakkaan toimipaikassa.
+-   **Ostotilaukset**, **jotka käyttävät tavaralähetysvarastoa** : näyttää ostotilauksen yksityiskohtaiset tiedot, jotka liittyvät tavaralähetysprosessin aiheuttamaan omistajuuden muutokseen.
+-   **Tavaralähetysvarastosta vastaanotetut tuotteet**: näyttää tiedot nimikkeistä ja määristä, jotka on päivitetty pakkausluetteloihin omistajan muutosprosessin aikana.
+-   **Käytettävissä oleva tavaralähetysvarasto**: näyttää tiedot lähetyksen nimikkeistä, jotka on tarkoitus toimittaa ja nimikkeet, jotka ovat jo fyysisesti saatavilla asiakkaan toimipaikassa.
 
 ## <a name="inventory-owners"></a>Varaston omistajat
-Saapuvien lähetyksen fyysisen varaston kirjaamiseksi täytyy määrittää toimittajan omistaja. Tämä tehdään **varaston omistaja** -sivulla. Kun valitset **toimittajatili** tämä luo oletusarvot **nimi** ja **omistaja** -kenttiin. Arvo **omistaja** -kentässä näytetään toimittajalle, joten voit halutessasi muuttaa sitä, jos ulkoisten käyttäjien ei ole helppoa tunnistaa toimittajan tilin nimiä. Voit muokata **omistaja** -kenttää ainoastaan siihen asti, kun olet tallentanut **varaston omistaja** -tietueen. **Nimi** -kenttä täytetään sen osapuolen tiedoilla, joihin toimittajatili liittyy, eikä sitä voi muuttaa.
+Saapuvien lähetyksen fyysisen varaston kirjaamiseksi täytyy määrittää toimittajan omistaja. Tämä tehdään **varaston omistaja** -sivulla. Kun valitset **toimittajatili** tämä luo oletusarvot **nimi** ja **omistaja** -kenttiin. Arvo **omistaja**-kentässä näytetään toimittajalle, joten voit halutessasi muuttaa sitä, jos ulkoisten käyttäjien ei ole helppoa tunnistaa toimittajan tilin nimiä. Voit muokata **omistaja** -kenttää ainoastaan siihen asti, kun olet tallentanut **varaston omistaja** -tietueen. **Nimi**-kenttä täytetään sen osapuolen tiedoilla, joihin toimittajatili liittyy, eikä sitä voi muuttaa.
 
 [![inventory-owners](./media/inventory-owners.png)](./media/inventory-owners.png)
 

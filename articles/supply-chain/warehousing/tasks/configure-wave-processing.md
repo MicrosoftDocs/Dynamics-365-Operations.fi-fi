@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017250"
+ms.locfileid: "4427461"
 ---
 # <a name="configure-wave-processing"></a>Aallon käsittelyn kokoonpano
 
@@ -34,15 +34,15 @@ Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn
 2. Valitse **Uusi**.
 3. Syötä **Aaltomallin nimi** -kenttään arvo. Aaltomallia määrittäessäsi voit määrittää järjestyksen, jossa mallit sovitetaan vapautettuihin myyntitilausten, tuotantotilausten tai kanbanien riveihin. Kun rivi on vapautettu varastoon tai tuotantoon, siinä käytetään ensimmäistä ehtoja vastaavaa aaltomallia. Suosittelemme, että sijoitat tarkimmin määritellyt kriteerit sisältävän mallit luettelon alkuun. Mitä laajempi ehto on, sitä todennäköisemmin rivi täyttää ehdon, ja tämä saattaa johtaa rivien määrittämisen väärään aaltoon.  
 4. Kirjoita **Aaltomallin kuvaus** -kenttään arvo.
-5. Syötä tai valitse arvo **Toimipaikka** -kenttään. Jos käytössä on USMF, valitse toimipaikka 2.  
-6. Anna tai valitse **Varasto** -kentässä arvo. Jos käytössä on USMF, voit valita varaston 24.  
+5. Syötä tai valitse arvo **Toimipaikka**-kenttään. Jos käytössä on USMF, valitse toimipaikka 2.  
+6. Anna tai valitse **Varasto**-kentässä arvo. Jos käytössä on USMF, voit valita varaston 24.  
 7. Aseta **Automatisoi aallon luonti** -kentän arvoksi **Kyllä**. Valitse tämä vaihtoehto, jos haluat luoda aallon automaattisesti, kun myyntitilaus, tuotantotilaus tai kanban vapautetaan varastoon.  
 8. Aseta **Käsittele aalto, kun se vapautetaan varastoon** -asetuksen arvoksi **Kyllä**. Valitse tämä vaihtoehto, jos haluat käsitellä automaattisesti aallon ja luoda työn, kun rivi vapautetaan varastoon.  
 9. Aseta **Automatisoi aallon vapautus** -asetuksen arvoksi **Kyllä**. Valitse tämä vaihtoehto, kun haluat vapauttaa aallon automaattisesti. Keräilytyö luodaan ja määritetään mobiililaitteiden käytettäväksi.  
 10. Aseta **Määritä avoimiin aaltoihin** -asetuksen arvoksi **Kyllä**. Rivit määritetään aaltoihin aaltomallin kyselysuodattimen perusteella.  
 11. Aseta **Käsittele aalto automaattisesti raja-arvossa** -asetuksen arvoksi **Kyllä**. Valitse tämä vaihtoehto, jos haluat käsitellä aallon automaattisesti, kun sen arvot saavuttavat Aallon raja-arvot -kenttäryhmässä painolle, lähetykselle ja riville määritetyt raja-arvot. Tämä vaihtoehto on käytettävissä vain, jos Aaltomallin tyyppi -kentässä on valittu Lähetys.  
 12. Aseta **Automatisoi täydennystyön vapautus** -asetuksen arvoksi **Kyllä**. Valitsemalla tämän vaihtoehdon voit luoda täydennystyön tarpeen mukaan ja vapauttaa sen automaattisesti. Sinun on lisättävä täydennyksen aaltomenetelmä aaltomalliin ja luotava täydennysmalli, jonka tyyppi on Aallon kysyntä.  
-13. Laajenna **Menetelmät** -osa.
+13. Laajenna **Menetelmät**-osa.
 
     - Aaltomallimenetelmien avulla voit ohjata tehtäväsarjaa, jonka kukin aalto käy läpi käsittelyn aikana. Sinulla voi esimerkiksi olla menetelmä aallon täydentämiseen. Kun lisäät menetelmän, se tulee näkyviin automaattisesti tarvittavissa kohteissa vaiheketjussa. Jos olet asettanut Automatisoi täydennystyön vapautus -asetuksen arvoksi Kyllä, täydennysmenetelmä on lisättävä tähän.  
     - Aaltomääritteet toimivat suodattimina rajoittaen aaltoa käyttäviä nimikkeitä. Voit esimerkiksi määrittää nimikeryhmän.  

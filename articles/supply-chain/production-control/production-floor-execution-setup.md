@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012472"
+ms.locfileid: "4427382"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
 
@@ -31,7 +31,7 @@ Tuotannon käyttöliittymä määritetään jokaiselle tuotannon laitteelle. Yri
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Tietyn laitteen määritysten ja suodattimen määrittäminen
 
-Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotantoliittymä** -sivulle sillä tilillä, jonka käyttöoikeusrooli sisältää *Ajanseurannan työnjohto* -tehtävän. (Heti käytettävistä käyttöoikeusrooleista vain *tuotannon työnjohtajalla* on tämä tehtävä.) Toimi sitten seuraavasti:
+Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotantoliittymä**-sivulle sillä tilillä, jonka käyttöoikeusrooli sisältää *Ajanseurannan työnjohto* -tehtävän. (Heti käytettävistä käyttöoikeusrooleista vain *tuotannon työnjohtajalla* on tämä tehtävä.) Toimi sitten seuraavasti:
 
 1. Siirry määritettävään laitteeseen ja kirjaudu Microsoft Dynamics 365 Supply Chain Managementiin tuotannon työnjohtajana. (Käytä tiliä, jossa on *Ajanseurannan työjohto* -tehtävä.)
 1. Varmista, että määritys on käytettävissä siinä laitteessa, jota ollaan määrittämässä. Jos määritystä ei vielä ole, käytettävissä on oletusmääritys. Lisätietoja laitteen määrityksen määrittämisestä on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).
@@ -45,15 +45,15 @@ Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotan
 1. Valitse vähintään yksi suodatin käytettäväksi nykyisessä laitteessa. Näiden suodattimien avulla voidaan varmistaa, että tarpeelliset työt näytetään laitteessa. Määritä suodatin valitsemalla arvoluettelon avaava suodatintyyppi ja valitse sitten suodatusperusteena käytettävä arvo. Seuraavat suodattimet ovat käytettävissä:
 
     - **Tuotantoyksikkö** – Tämä suodatin on ylimmän tason suodatin. Sillä viitataan yleensä suureen työalueeseen, jossa on useita resurssiryhmiä ja yksittäisiä resursseja.
-    - **Resurssiryhmä** – Tämä on keskitason suodatin. Se viittaa yleensä liittyvien resurssien kokoelmaan rajoitetulla työtilan alueella. Jos valitset ensin **Tuotantoyksikkö** -suodattimen, resurssiryhmäluettelossa on vain kyseisen yksikön ryhmiä. Muussa tapauksessa luettelossa on kaikki käytettävissä olevat resurssiryhmät.
-    - **Resurssi** – Tämä on yksityiskohtaisin suodatin. Se viittaa yleensä tiettyyn laitteeseen tai muuhun yksittäiseen resurssiin. Jos valitset ensin **Resurssiryhmä** - ja/tai **Tuotantoyksikkö** -suodattimen, resurssiluettelossa on vain kyseisen ryhmän ja/tai yksikön resursseja. Muussa tapauksessa luettelossa on kaikki käytettävissä resurssit.
+    - **Resurssiryhmä** – Tämä on keskitason suodatin. Se viittaa yleensä liittyvien resurssien kokoelmaan rajoitetulla työtilan alueella. Jos valitset ensin **Tuotantoyksikkö**-suodattimen, resurssiryhmäluettelossa on vain kyseisen yksikön ryhmiä. Muussa tapauksessa luettelossa on kaikki käytettävissä olevat resurssiryhmät.
+    - **Resurssi** – Tämä on yksityiskohtaisin suodatin. Se viittaa yleensä tiettyyn laitteeseen tai muuhun yksittäiseen resurssiin. Jos valitset ensin **Resurssiryhmä**- ja/tai **Tuotantoyksikkö**-suodattimen, resurssiluettelossa on vain kyseisen ryhmän ja/tai yksikön resursseja. Muussa tapauksessa luettelossa on kaikki käytettävissä resurssit.
 
 1. Valitse **OK**.
 1. Kirjautumissivu avautuu ja laite on käyttövalmis.
 
 ## <a name="allow-a-worker-to-override-the-default-filters"></a>Oletussuodattimien ohitusmahdollisuuden antaminen työntekijälle
 
-Voit antaa tietyille työntekijöille oikeuden muuttaa suodatinasetuksia missä tahansa heidän käytössään olevassa luettelossa. Jos työntekijällä on tämä oikeus, tuotannon käyttöliittymässä on **Suodatin** -painike **Kaikki työt** - ja **Aktiivinen työ** sivuilla.
+Voit antaa tietyille työntekijöille oikeuden muuttaa suodatinasetuksia missä tahansa heidän käytössään olevassa luettelossa. Jos työntekijällä on tämä oikeus, tuotannon käyttöliittymässä on **Suodatin**-painike **Kaikki työt**- ja **Aktiivinen työ** sivuilla.
 
 > [!NOTE]
 > Jos työntekijä vaihtaa suodattimen, uusi suodatin on kaikkien laitteeseen kirjautuvien käyttäjien käytössä siitä lähtien.
@@ -62,7 +62,7 @@ Voit antaa työntekijän ohittaa laitteelle määritetyt työn oletussuodattimet
 
 1. Valitse **Työajan seuranta \> Määritys \> Aikarekisteröinnin työntekijät**.
 1. Avaa työntekijän **Aikarekisteröinnin työntekijät** -sivu.
-1. Määritä **Aikarekisteröinti** -välilehdessä **Määritä suodattimet** -asetukseksi *Kyllä*.
+1. Määritä **Aikarekisteröinti**-välilehdessä **Määritä suodattimet** -asetukseksi *Kyllä*.
 
 ## <a name="run-the-interface-in-full-screen-mode"></a>Käyttöliittymän suorittaminen koko näytön tilassa
 

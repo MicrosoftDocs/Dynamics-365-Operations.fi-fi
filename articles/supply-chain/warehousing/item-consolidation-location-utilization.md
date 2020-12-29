@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017181"
+ms.locfileid: "4427398"
 ---
 # <a name="item-consolidation---location-utilization"></a>Nimikkeen konsolidointi – sijainnin käyttöaste
 
@@ -31,14 +31,14 @@ Tässä aiheessa käsitellään toimintoja, joiden avulla varastopäälliköiden
 
 ## <a name="turn-on-the-features"></a>Toimintojen ottaminen käyttöön
 
-Ennen tässä aiheessa käsiteltyjen toimintojen käyttöä ne on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat tarkistaa näiden toimintojen tilan ja ottaa ne tarvittaessa käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Ota seuraavat toiminnot käyttöön ilmoitetussa järjestyksessä. (Molemmat toiminnot ovat **Varastonhallinta** -moduulissa.)
+Ennen tässä aiheessa käsiteltyjen toimintojen käyttöä ne on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat tarkistaa näiden toimintojen tilan ja ottaa ne tarvittaessa käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Ota seuraavat toiminnot käyttöön ilmoitetussa järjestyksessä. (Molemmat toiminnot ovat **Varastonhallinta**-moduulissa.)
 
 1. Varastosijainnin tila
 2. Nimikkeen konsolidointisijainnin käyttöaste
 
 ## <a name="warehouse-location-status"></a>Varastosijainnin tila
 
-*Varastosijainnin tila* -toiminto lisää **Sijainnit** -sivulle neljä uutta kenttää, joilla voi seurata lisätietoja sijainnin nykyisestä tilasta:
+*Varastosijainnin tila* -toiminto lisää **Sijainnit**-sivulle neljä uutta kenttää, joilla voi seurata lisätietoja sijainnin nykyisestä tilasta:
 
 - **Nimiketunnus** – Nimike, joka on tällä hetkellä sijainnissa. Jos sijainnissa on useita nimikkeitä, tämä kenttä on tyhjä.
 - **Viimeinen tehtävän päivämäärä ja kellonaika** – Viimeistä varastopaikkaa vasten suoritetun fyysisen varastoinnin tapahtuman aikaleima.
@@ -54,18 +54,18 @@ Näiden kenttien avulla varastopäälliköt saavat paremman yleiskuvan varaston 
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Nimikkeen konsolidointi ja sijainnin käyttöasteen määrittäminen
 
-Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimikkeen konsolidointia ja sijainnin käyttöastetta. Menettelyssä käytetään vakioesittelytietojen näytearvoja. Jos aiot käyttää myöhemmin tässä ohjeaiheessa käsiteltyä esimerkkiskenaariota, valitse **USMF** -yritys (joka sisältää vakioesittelytiedot) ja luo jokainen tässä osassa kuvattu tietue. Jos et aio käyttää esimerkkiskenaariota, tässä annettuja arvoja voi pitää esimerkkeinä asetustyypeistä, jotka on tehtävä toimintojen käyttöä varten.
+Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimikkeen konsolidointia ja sijainnin käyttöastetta. Menettelyssä käytetään vakioesittelytietojen näytearvoja. Jos aiot käyttää myöhemmin tässä ohjeaiheessa käsiteltyä esimerkkiskenaariota, valitse **USMF**-yritys (joka sisältää vakioesittelytiedot) ja luo jokainen tässä osassa kuvattu tietue. Jos et aio käyttää esimerkkiskenaariota, tässä annettuja arvoja voi pitää esimerkkeinä asetustyypeistä, jotka on tehtävä toimintojen käyttöä varten.
 
 ### <a name="released-product"></a>Vapautettu tuote
 
 1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
-1. Valitse **Nimiketunnus** -kentässä *M9201* ja avaa tietosivu.
-1. Valitse toimintoruudun **Varastonhallinta** -välilehden **Varasto** -ryhmässä **Fyysiset mitat**.
+1. Valitse **Nimiketunnus**-kentässä *M9201* ja avaa tietosivu.
+1. Valitse toimintoruudun **Varastonhallinta**-välilehden **Varasto**-ryhmässä **Fyysiset mitat**.
 1. Valitse **Fyysiset mitat** -sivun toimintoruudussa **Uusi**.
 
-    Uusi rivi lisätään ruudukkoon. **Nimiketunnus** -kenttä on määritetty valmiiksi.
+    Uusi rivi lisätään ruudukkoon. **Nimiketunnus**-kenttä on määritetty valmiiksi.
 
-1. Valitse **Yksikkö** -kentässä *kpl*. Muut rivin kentät määritetään automaattisesti.
+1. Valitse **Yksikkö**-kentässä *kpl*. Muut rivin kentät määritetään automaattisesti.
 1. Valitse **Tallenna** ja sulje sivu.
 
 ### <a name="location-profile"></a>Sijaintiprofiili
@@ -73,7 +73,7 @@ Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimi
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varasto \> Sijaintiprofiilit**.
 1. Valitse sijaintiprofiililuettelossa **KERROS-05**.
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Varmista **Yleiset** -pikavälilehdessä seuraavissa asetuksissa on valittu *Kyllä* :
+1. Varmista **Yleiset**-pikavälilehdessä seuraavissa asetuksissa on valittu *Kyllä*:
 
     - Ota käyttöön nimike sijainnissa
     - Ota käyttöön sijaintitila
@@ -81,10 +81,10 @@ Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimi
 1. Valitse **Tallenna**.
 
     > [!IMPORTANT]
-    > Jos **Ota nimike sijainnissa käyttöön** - ja **Ota käyttöön sijaintitila** -asetusten arvo on jo *Kyllä* , siirry vaiheeseen 10, jossa on **Dimensiot** -pikavälilehden määritysohjeet. Jos asetusten arvona ei ole vielä *Kyllä* , tee **Varastonhallinta** -moduulin yhdenmukaisuustarkistus sen jälkeen, kun asetukset on määritetty manuaalisesti. Jatka siinä tapauksessa Jatka seuraavaan vaiheeseen.
+    > Jos **Ota nimike sijainnissa käyttöön**- ja **Ota käyttöön sijaintitila** -asetusten arvo on jo *Kyllä*, siirry vaiheeseen 10, jossa on **Dimensiot**-pikavälilehden määritysohjeet. Jos asetusten arvona ei ole vielä *Kyllä*, tee **Varastonhallinta**-moduulin yhdenmukaisuustarkistus sen jälkeen, kun asetukset on määritetty manuaalisesti. Jatka siinä tapauksessa Jatka seuraavaan vaiheeseen.
 
 1. Suorita yhdenmukaisuustarkistus valitsemalla **Järjestelmän hallinta \> Kausittaiset tehtävät \> Tietokanta \> Yhdenmukaisuustarkistus**.
-1. Määritä seuraavat arvot **Yhdenmukaisuustarkistus** -valintaikkunassa:
+1. Määritä seuraavat arvot **Yhdenmukaisuustarkistus**-valintaikkunassa:
 
     - **Moduuli:** *Varastonhallinta*
     - **Tarkista/korjaa:** *Tarkista*
@@ -96,10 +96,10 @@ Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimi
     > [!TIP]
     > Saat ilmoituksen, kun yhdenmukaisuustarkistus on valmis. Voit lukea viestin avaamalla [toimintokeskuksen](../../fin-ops-core/fin-ops/get-started/user-interface-elements.md#notifications). Voit katsoa tiedot valitsemalla **Sanoman tiedot**.
     >
-    > Jos yhdenmukaisuustarkistuksen sanoma on Virheelliset sijaintitilatiedot löydetty sijainnille XXXX varastossa XX, yhdenmukaisuustarkistus on suoritettava uudelleen. Valitse tällä kertaa **Tarkista/korjaa** -kentässä *Korjaa virhe*. Tarkista sanomista, että virheitä ei löytynyt.
+    > Jos yhdenmukaisuustarkistuksen sanoma on Virheelliset sijaintitilatiedot löydetty sijainnille XXXX varastossa XX, yhdenmukaisuustarkistus on suoritettava uudelleen. Valitse tällä kertaa **Tarkista/korjaa**-kentässä *Korjaa virhe*. Tarkista sanomista, että virheitä ei löytynyt.
 
-1. Viimeistele sijaintiprofiilin määritykset. Valitse taas **Varastonhallinta \> Asetukset \> Varasto \> Sijaintiprofiilit** , valitse sitten sijaintiprofiili **KERROS-05** ja valitse lopuksi toimintoruudussa **Muokkaa**.
-1. Määritä **Dimensiot** -pikavälilehdessä seuraavat arvot:
+1. Viimeistele sijaintiprofiilin määritykset. Valitse taas **Varastonhallinta \> Asetukset \> Varasto \> Sijaintiprofiilit**, valitse sitten sijaintiprofiili **KERROS-05** ja valitse lopuksi toimintoruudussa **Muokkaa**.
+1. Määritä **Dimensiot**-pikavälilehdessä seuraavat arvot:
 
     - **Tilavuuden käyttöasteprosentti:** *100*
     - **Varastosijainnissa käytettävä tilavuuden mittausmenetelmä:** *Käytä sijainnin tilavuutta*
@@ -121,7 +121,7 @@ Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimi
     - **Tila:** *Työ*
     - **Käytä aiemmin luotua työtä:** *Ei*
 
-1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
     - **Työn luontiprosessi:** *Oikaisu sisään*
     - **Varasto-oikaisutyypit:** *Oikaisu sisään*
@@ -159,24 +159,24 @@ Seuraavassa skenaariossa käytetään varastosovellusta mobiililaitteessa tekem�
 
     Anna nyt ensimmäinen varaston oikaisu.
 
-1. Valitse **Oikaisu sisään** -tehtävässä sijainti, jonka varastoa oikaistaan. Valitse **SIJAINTI** -kentässä *RK-001*.
+1. Valitse **Oikaisu sisään** -tehtävässä sijainti, jonka varastoa oikaistaan. Valitse **SIJAINTI**-kentässä *RK-001*.
 1. Vahvista sijainti.
-1. Luo sijaintiin lisättävälle nimikkeelle rekisterikilpitunnus. Anna **RK** -kentässä *RK00101*.
+1. Luo sijaintiin lisättävälle nimikkeelle rekisterikilpitunnus. Anna **RK**-kentässä *RK00101*.
 1. Vahvista rekisterikilpi.
-1. Kirjoita rekisterikilpeen lisättävä nimike. Kirjoita **ITEM** -kenttään *M9201*.
+1. Kirjoita rekisterikilpeen lisättävä nimike. Kirjoita **ITEM**-kenttään *M9201*.
 1. Vahvista nimike.
-1. Anna lisättävän nimikkeen määrä. Anna **MÄÄRÄ** -kentässä *10*.
+1. Anna lisättävän nimikkeen määrä. Anna **MÄÄRÄ**-kentässä *10*.
 1. Vahvista määrä.
 
     Näyttöön tulee Työ valmis -sanoma. Anna nyt toinen varaston oikaisu.
 
-1. Valitse **Oikaisu sisään** -tehtävässä sijainti, jonka varastoa oikaistaan. Valitse **SIJAINTI** -kentässä *RK-002*.
+1. Valitse **Oikaisu sisään** -tehtävässä sijainti, jonka varastoa oikaistaan. Valitse **SIJAINTI**-kentässä *RK-002*.
 1. Vahvista sijainti.
-1. Luo sijaintiin lisättävälle nimikkeelle rekisterikilpitunnus. Anna **RK** -kentässä *LP00201*.
+1. Luo sijaintiin lisättävälle nimikkeelle rekisterikilpitunnus. Anna **RK**-kentässä *LP00201*.
 1. Vahvista rekisterikilpi.
-1. Kirjoita rekisterikilpeen lisättävä nimike. Kirjoita **ITEM** -kenttään *M9201*.
+1. Kirjoita rekisterikilpeen lisättävä nimike. Kirjoita **ITEM**-kenttään *M9201*.
 1. Vahvista nimike.
-1. Anna lisättävän nimikkeen määrä. Anna **MÄÄRÄ** -kentässä *15*.
+1. Anna lisättävän nimikkeen määrä. Anna **MÄÄRÄ**-kentässä *15*.
 1. Vahvista määrä.
 
     Näyttöön tulee Työ valmis -sanoma.
@@ -186,9 +186,9 @@ Seuraavassa skenaariossa käytetään varastosovellusta mobiililaitteessa tekem�
 ### <a name="consolidate-locations"></a>Sijaintien konsolidointi
 
 1. Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Nimikkeen konsolidointi**.
-1. Valitse ylätunnisteessa konsolidoitava varasto. Anna **Varasto** -kentässä *51*.
+1. Valitse ylätunnisteessa konsolidoitava varasto. Anna **Varasto**-kentässä *51*.
 
-    Tietue näytetään jokaiselle sijainnille, jossa nimikettä *M9201* säädettiin. **Käyttöasteprosentti** -sarake näyttää kunkin sijainnin tilavuusperusteisen käyttöasteen.
+    Tietue näytetään jokaiselle sijainnille, jossa nimikettä *M9201* säädettiin. **Käyttöasteprosentti**-sarake näyttää kunkin sijainnin tilavuusperusteisen käyttöasteen.
 
 1. Varasto konsolidoidaan valitsemalla kaikki konsolidoitavat sijainnit ja valitsemalla sitten toimintoruudussa **Konsolidoi varasto**.
 1. Määritä **Konsolidoi varasto** -valintaikkunassa sijainti ja siirtotapahtuman tyyppi, joiden avulla varaston siirtotapahtuman työ on luotava. Määritä seuraavat arvot:

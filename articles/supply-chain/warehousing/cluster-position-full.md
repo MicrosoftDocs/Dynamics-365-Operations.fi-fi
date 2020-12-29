@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016168"
+ms.locfileid: "4427433"
 ---
 # <a name="cluster-position-full"></a>Klusterisijainti täynnä
 
@@ -29,7 +29,7 @@ ms.locfileid: "4016168"
 
 *Klusterisijainti täynnä* -ominaisuus on vaihtoehto tiukalle työkatkosääntöjen valvonnalle, kun käytössä on klusterikeräily. Tämä johtuu siitä, että ominaisuus mahdollistaa konttien ja kassien tilavuusrajoitteiden aiempaa suuremman virhemarginaalin. Yleissä skenaariossa kaikki työtilauksen nimikkeet eivät mahdu valittuun konttiin. Klusterikeräilyä suorittavilla varastotyöntekijöillä on muutama vaihtoehto tässä skenaariossa. He voivat muuttaa suuremman kontin kokoa tai kehittää esimehen kanssa toisenlaisen ratkaisun.
 
-Tämä ominaisuus sisältää mahdollisuuden käyttää **Täysi** -painiketta klusterin yhdessä työyksikössä. Vanhemmissa versioissa tämä vaihtoehto oli käytettävissä vain tavallisissa tilauskeräilyssä, ei klusterikeräilyssä. Tämä ominaisuus eroaa kuitenkin normaalista **Täysi** -painikkeesta siten, että se peruuttaa jäljellä olevan työn. Se ei ehdota käyttäjälle toisen lokeron lisäämistä samaan klusteriin eikä luo automaattisesti uutta työtä.
+Tämä ominaisuus sisältää mahdollisuuden käyttää **Täysi**-painiketta klusterin yhdessä työyksikössä. Vanhemmissa versioissa tämä vaihtoehto oli käytettävissä vain tavallisissa tilauskeräilyssä, ei klusterikeräilyssä. Tämä ominaisuus eroaa kuitenkin normaalista **Täysi**-painikkeesta siten, että se peruuttaa jäljellä olevan työn. Se ei ehdota käyttäjälle toisen lokeron lisäämistä samaan klusteriin eikä luo automaattisesti uutta työtä.
 
 ## <a name="turn-on-the-cluster-position-full-feature"></a>Klusterisijainti täynnä -ominaisuuden ottaminen käyttöön
 
@@ -44,7 +44,7 @@ Tässä osassa on ohjeita *Klusterisijainti täynnä* -ominaisuuden määrittäm
 
 ### <a name="make-sample-data-available"></a>Ota mallitiedot käyttöön
 
-[Esimerkkiskenaarion](#example-scenario) käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon [vakiodemotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF** -yritys ennen kuin aloitat.
+[Esimerkkiskenaarion](#example-scenario) käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon [vakiodemotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen kuin aloitat.
 
 Voit hyödyntää esimerkkiskenaariota myös ohjeena, kun käytät tätä ominaisuutta tuotantojärjestelmässä. Siinä tapauksessa tässä kuvattujen asetusten omat arvot on korvattava.
 
@@ -54,7 +54,7 @@ Määritä, milloin klustereiden tunnukset luodaan automaattisesti, miten monta 
 
 1. Valitse **Varastonhallinta \> Asetukset \> Mobiililaite \> Klusteriprofiilit**.
 1. Valitse luetteloruudusta **Luo klusteri** -tietue.
-1. Tarkista **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Tarkista **Yleiset**-pikavälilehdessä seuraavat arvot:
 
     - **Luo klusterin tunnus:** *Kyllä*
     - **Aktivoi sijainnit:** *Kyllä*
@@ -81,7 +81,7 @@ Määritä, miten keräilytyö luodaan klusterin keräilyä varten.
 Sinun on määritettävä, mistä nimikkeet kerätään ja mihin ne sijoitetaan.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
-1. Määritä luettelon otsikossa **Työtilaustyyppi** -kentän arvoksi *Myyntitilaukset*.
+1. Määritä luettelon otsikossa **Työtilaustyyppi**-kentän arvoksi *Myyntitilaukset*.
 1. Varmista, että seuraavat esittelytietojen myyntitilausdirektiivit on luetteloitu. Jos ne eivät ole käytettävissä, et voi suorittaa skenaariota loppuun.
 
     - 61 Klusterin keräily
@@ -94,7 +94,7 @@ Määritä mobiililaitteen valikkovaihtoehto käyttämään klusterikeräilyn oh
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Mobiililaite \> Mobiililaitteen valikkovaihtoehdot**.
 1. Valitse luetteloruudusta **Klusterikeräilyn luominen** -tietue.
 1. Valitse toimintoruudussa **Muokkaa**.
-1. Määritä **Yleiset** -pikavälilehdessä seuraavat arvot:
+1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
     - **Ohjaaja:** *Klusterikeräily*
     - **Luo rekisterikilpi:** *Kyllä*
@@ -103,7 +103,7 @@ Määritä mobiililaitteen valikkovaihtoehto käyttämään klusterikeräilyn oh
 
     Hyväksy oletusarvot kaikille muille kentille.
 
-1. Lisää **Työluokat** -pikavälilehdessä seuraavat kaksi riviä tarvittaessa:
+1. Lisää **Työluokat**-pikavälilehdessä seuraavat kaksi riviä tarvittaessa:
 
     - Rivi 1 (yleensä ovat esittelytiedoissa):
 
@@ -134,29 +134,29 @@ Ennen kuin voit aloittaa klusterikeräilyn, sinun on luotava lähtevä työ. Aie
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakastili:** *US-010*
-    - **Varasto** : *61*
+    - **Varasto**: *61*
 
 1. Valitse **OK**.
-1. Uusi myyntitilaus avataan. Lisää **Myyntitilausrivit** -pikavälilehdessä rivi, jossa on seuraavat asetukset:
+1. Uusi myyntitilaus avataan. Lisää **Myyntitilausrivit**-pikavälilehdessä rivi, jossa on seuraavat asetukset:
 
     - **Nimiketunnus:** *T0100*
     - **Määrä** *5*
 
-1. Anna **Toimitus** -välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
-1. Lisää **Myyntitilausrivit** -pikavälilehdessä toinen rivi, jonka asetukset ovat seuraavat:
+1. Anna **Toimitus**-välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
+1. Lisää **Myyntitilausrivit**-pikavälilehdessä toinen rivi, jonka asetukset ovat seuraavat:
 
     - **Nimiketunnus:** *L0101*
     - **Määrä** *20*
 
-1. Anna **Toimitus** -välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
+1. Anna **Toimitus**-välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
 1. Varaa varastoa jokaiselle lisätylle riville seuraavasti:
 
     1. Valitse varattava rivi.
-    2. Valitse **Myyntitilausrivit** -pikavälilehdessä **Varasto \> Varaus**.
-    3. Varaa varasto **Varaus** -sivun toimintoruudussa valitsemalla **Varaa erä**.
-    4. Sulje **Varaus** -sivu.
+    2. Valitse **Myyntitilausrivit**-pikavälilehdessä **Varasto \> Varaus**.
+    3. Varaa varasto **Varaus**-sivun toimintoruudussa valitsemalla **Varaa erä**.
+    4. Sulje **Varaus**-sivu.
 
-1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**.
+1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**.
 
     Kun vapautus on tehty, näkyviin tulee tietosanomia, jotka sisältävät luodun aallon ja luodut kuormatunnukset.
 
@@ -167,29 +167,29 @@ Ennen kuin voit aloittaa klusterikeräilyn, sinun on luotava lähtevä työ. Aie
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
 
     - **Asiakastili:** *US-011*
-    - **Varasto** : *61*
+    - **Varasto**: *61*
 
 1. Valitse **OK**.
-1. Uusi myyntitilaus avataan. Lisää **Myyntitilausrivit** -pikavälilehdessä rivi, jossa on seuraavat asetukset:
+1. Uusi myyntitilaus avataan. Lisää **Myyntitilausrivit**-pikavälilehdessä rivi, jossa on seuraavat asetukset:
 
     - **Nimiketunnus:** *L0101*
     - **Määrä** *20*
 
-1. Anna **Toimitus** -välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
-1. Lisää **Myyntitilausrivit** -pikavälilehdessä toinen rivi, jonka asetukset ovat seuraavat:
+1. Anna **Toimitus**-välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
+1. Lisää **Myyntitilausrivit**-pikavälilehdessä toinen rivi, jonka asetukset ovat seuraavat:
 
     - **Nimiketunnus:** *T0100*
     - **Määrä** *2*
 
-1. Anna **Toimitus** -välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
+1. Anna **Toimitus**-välilehden **Rivin tiedot** -pikavälilehden **Vahvistettu lähetyspäivämäärä** -kenttään kuluvan päivän päivämäärä.
 1. Varaa varastoa jokaiselle lisätylle riville seuraavasti:
 
     1. Valitse varattava rivi.
-    2. Valitse **Myyntitilausrivit** -pikavälilehdessä **Varasto \> Varaus**.
-    3. Varaa varasto **Varaus** -sivun toimintoruudussa valitsemalla **Varaa erä**.
-    4. Sulje **Varaus** -sivu.
+    2. Valitse **Myyntitilausrivit**-pikavälilehdessä **Varasto \> Varaus**.
+    3. Varaa varasto **Varaus**-sivun toimintoruudussa valitsemalla **Varaa erä**.
+    4. Sulje **Varaus**-sivu.
 
-1. Valitse toimintoruudussa **Varasto** -välilehdellä **Vapauta varastoon**.
+1. Valitse toimintoruudussa **Varasto**-välilehdellä **Vapauta varastoon**.
 
     Kun vapautus on tehty, näkyviin tulee tietosanomia, jotka sisältävät luodun aallon ja luodut kuormatunnukset.
 
@@ -198,12 +198,12 @@ Ennen kuin voit aloittaa klusterikeräilyn, sinun on luotava lähtevä työ. Aie
 Luotuna on nyt kaksi työtunnusta. Molemmilla tunnuksilla on kaksi keräilyriviä. Etsi työtunnukset ja rekisterikilpien toimeksiannot alla olevien ohjeiden avulla.
 
 1. Valitse **Varastonhallinta \> Työ \> Työn tiedot**.
-1. Hae **Yleiskatsaus** -ruudukosta kahden juuri luodun myyntitilauksen **Tilausnumero** -sarake. Merkitse muistiin kunkin myyntitilauksen vastaava työtunnus.
-1. Valitse kunkin myyntitilauksen rivi, jos haluat nähdä **Rivit** -ruudukon liittyvät tiedot. Merkitse muistiin kunkin nimikkeen keräyssijainti.
+1. Hae **Yleiskatsaus**-ruudukosta kahden juuri luodun myyntitilauksen **Tilausnumero**-sarake. Merkitse muistiin kunkin myyntitilauksen vastaava työtunnus.
+1. Valitse kunkin myyntitilauksen rivi, jos haluat nähdä **Rivit**-ruudukon liittyvät tiedot. Merkitse muistiin kunkin nimikkeen keräyssijainti.
 1. Siirry kohtaan **Varastonhallinta \> Kyselyt ja raportit \> Käytettävissä olevien luettelo**.
-1. Valitse toimintoruudussa **Dimensiot** ja avaa **Dimension näyttö** -valintaikkuna.
-1. Varmista, että **Rekisterikilpi** -, **Varasto** - ja **Nimikenumero** -valintaruudut on valittu. Valitse sitten **OK**.
-1. Määritä **Suodatin** -ruudussa seuraavat suodattimet:
+1. Valitse toimintoruudussa **Dimensiot** ja avaa **Dimension näyttö**-valintaikkuna.
+1. Varmista, että **Rekisterikilpi**-, **Varasto**- ja **Nimikenumero**-valintaruudut on valittu. Valitse sitten **OK**.
+1. Määritä **Suodatin**-ruudussa seuraavat suodattimet:
 
     - **Nimiketunnus** – **on** *L0101* tai *T100*
     - **Varasto** – **alkaa numerolla** - *61*
@@ -228,19 +228,19 @@ Luotuna on nyt kaksi työtunnusta. Molemmilla tunnuksilla on kaksi keräilyrivi�
 
 Koska klusteriprofiili määrittää sijaintien numeroksi 2, järjestelmä ohjaa käyttäjän automaattisesti ensimmäiseen konsolidoituun keräilyyn. Se on nimikkeen *L0101* kaksi kuormalavaa.
 
-Kun noudatat seuraavia ohjeita, voit missä tahansa vaiheessa valita **Tiedot** -välilehden ja katsoa tehtävän lisätietoja, kuten keräilysijainnin.
+Kun noudatat seuraavia ohjeita, voit missä tahansa vaiheessa valita **Tiedot**-välilehden ja katsoa tehtävän lisätietoja, kuten keräilysijainnin.
 
-1. Määritä **NIMIKE** -kentän arvoksi *L0101*. Tämä vahvistaa nimikenumeron, joka vaaditaan tälle valikon vaihtoehdolle (se määritettiin aiemmin valitsemalla **Työn vahvistuksen määritys** **Mobiililaitteen valikon vaihtoehto** -sivulla tämän valikon vaihtoehdon luomisen yhteydessä).
+1. Määritä **NIMIKE**-kentän arvoksi *L0101*. Tämä vahvistaa nimikenumeron, joka vaaditaan tälle valikon vaihtoehdolle (se määritettiin aiemmin valitsemalla **Työn vahvistuksen määritys** **Mobiililaitteen valikon vaihtoehto** -sivulla tämän valikon vaihtoehdon luomisen yhteydessä).
 1. Anna rekisterikilpinumero, joka liittyy keräiltävässä sijainnissa olevaan nimikkeeseen. Keräile kaksi kuormalavaa.
-1. Määritä **RK** -kentän arvoksi *LP\_PICK\_01*.
+1. Määritä **RK**-kentän arvoksi *LP\_PICK\_01*.
 1. Valitse **OK** (valintamerkkisymboli).
 
     **TEHTÄVÄ: Lajittelu: Klusterikeräilyn luominen** -sivu avautuu. Tässä voit lajitella kaksi keräiltyä kuormalavaa keräilysijaintiin. Tämä sijainti voi olla kassi tai kontti, jota käytetään keräillyn varaston erottelussa myyntitilauksen mukaan.
 
-1. Tarkastele nimikkeelle ( *L0101* ) ja määrälle ( *20* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin (myyntitilaukselle 1).
+1. Tarkastele nimikkeelle (*L0101*) ja määrälle (*20* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin (myyntitilaukselle 1).
 1. Määritä **SIJAINTI NA** -kentän arvoksi *1*.
 1. Valitse **OK** (valintamerkkisymboli).
-1. Tarkastele nimikkeelle ( *L0101* ) ja määrälle ( *20* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin 2 (myyntitilaukselle 2).
+1. Tarkastele nimikkeelle (*L0101*) ja määrälle (*20* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin 2 (myyntitilaukselle 2).
 1. Määritä **SIJAINTI NA** -kentän arvoksi *2*.
 1. Valitse **OK** (valintamerkkisymboli).
 
@@ -255,14 +255,14 @@ Tässä skenaariossa sijainti 1 ei voi hyväksyä myyntitilauksen 1 täyttämise
 1. Syötä *2*.
 1. Valitse **OK** (valintamerkkisymboli).
 1. Vahvista nimiketunnus, jotta jäljellä olevan nimikkeen keräily voidaan viimeistellä sijaintiin 2.
-1. Määritä **NIMIKE** -kentän arvoksi *T0100*.
+1. Määritä **NIMIKE**-kentän arvoksi *T0100*.
 1. Valitse **OK** (valintamerkkisymboli).
-1. Anna rekisterikilpi, josta nimike keräillään, määrittämällä **RK** -kentän arvoksi *LPREPL04*.
+1. Anna rekisterikilpi, josta nimike keräillään, määrittämällä **RK**-kentän arvoksi *LPREPL04*.
 1. Valitse **OK** (valintamerkkisymboli).
-1. Tarkastele nimikkeelle ( *T0100* ) ja määrälle ( *2* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin 2 (myyntitilaukselle 2).
+1. Tarkastele nimikkeelle (*T0100*) ja määrälle (*2* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin 2 (myyntitilaukselle 2).
 1. Määritä **SIJAINTI NA** -kentän arvoksi *2*.
 1. Valitse **OK** (valintamerkkisymboli).
-1. Tarkastele nimikkeelle ( *T0100* ) ja määrälle ( *2* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin 1 (myyntitilaukselle 1).
+1. Tarkastele nimikkeelle (*T0100*) ja määrälle (*2* kpl) näytettäviä tietoja. Ne lajitellaan sijaintiin 1 (myyntitilaukselle 1).
 1. Määritä **SIJAINTI NA** -kentän arvoksi *1*.
 1. Valitse **OK** (valintamerkkisymboli).
 

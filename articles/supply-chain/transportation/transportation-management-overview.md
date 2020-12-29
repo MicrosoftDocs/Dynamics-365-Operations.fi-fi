@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4affc5846ee329a4571d6fb3e0c42873387241ad
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016375"
+ms.locfileid: "4427441"
 ---
 # <a name="transportation-management-overview"></a>Kuljetustenhallinnan yleiskatsaus
 
@@ -83,7 +83,7 @@ Voit suunnitella ja käsitellä lähtevän kuorman tiettyjen nimikkeiden toimitt
 ![Lähtevien kuormien suunnittelu ja käsittely](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Kuormituksen luonti
-Supply Chain Management sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset** -pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
+Supply Chain Management sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset**-pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
 
 
 

@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017710"
+ms.locfileid: "4427410"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rekisterikilven otsikoiden asiakirjareitityksen asettelu
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Selitys tästä muodosta:
 
-- `FieldName` on tietokentän nimi (esimerkiksi **Määrä** ).
+- `FieldName` on tietokentän nimi (esimerkiksi **Määrä**).
 - `FormatString` määrittää, miten tiedot on tarkoitus tulostaa.
 
-Seuraavissa esimerkeissä näytetään, miten työmäärä- ( **Määrä** )-kenttää voi mukauttaa:
+Seuraavissa esimerkeissä näytetään, miten työmäärä- (**Määrä**)-kenttää voi mukauttaa:
 
 - Jos haluat näyttää aina neljä numeroa (käyttämällä paikkamerkkeinä nollia), käytä `$Qty:0000$`-toimintoa. Jos määrä on esimerkiksi 10, otsikossa näkyy teksti "0010".
 - Jos haluat näyttää aina kaksi desimaalia, käytä `$Qty:0.00$`-kenttää. Jos määrä on esimerkiksi 10, otsikossa näkyy teksti "10.00".
