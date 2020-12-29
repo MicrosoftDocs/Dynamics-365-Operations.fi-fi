@@ -1,0 +1,75 @@
+---
+title: Tuotekonfiguraation Solver-strategia
+description: Tässä ohjeaiheessa käsitellään tuotekonfiguraation tehostamista Solver-strategian avulla.
+author: cvocph
+manager: tfehr
+ms.date: 02/19/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: ''
+ms.author: kamaybac
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427304"
+---
+# <a name="solver-strategy-for-product-configuration"></a><span data-ttu-id="3cb4d-103">Tuotekonfiguraation Solver-strategia</span><span class="sxs-lookup"><span data-stu-id="3cb4d-103">Solver strategy for product configuration</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="3cb4d-104">Tässä ohjeaiheessa käsitellään tuotekonfiguraation tehostamista Solver-strategian avulla.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-104">This topic describes how you can use the solver strategy to improve the performance of product configuration.</span></span>
+
+<span data-ttu-id="3cb4d-105">Solver-strategian käsite esiteltiin ensimmäisen kerran Microsoft Dynamics AX 2012 R2:n kumulatiivisessa päivityksessä 7 (CU7).</span><span class="sxs-lookup"><span data-stu-id="3cb4d-105">The concept of solver strategies was first introduced in Cumulative update 7 (CU7) for Microsoft Dynamics AX 2012 R2.</span></span> <span data-ttu-id="3cb4d-106">Sitä laajennettiin Microsoft Dynamics AX 2012 R3:n kumulatiivisessa päivityksessä 8 (CU8) ja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3:ssa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-106">It was extended in Cumulative update 8 (CU8) for Microsoft Dynamics AX 2012 R3 and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</span></span>
+
+<span data-ttu-id="3cb4d-107">Solver-strategian käsite sisältää nyt seuraavat strategiat:</span><span class="sxs-lookup"><span data-stu-id="3cb4d-107">The solver strategy concept now consists of the following strategies:</span></span>
+
+- <span data-ttu-id="3cb4d-108">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="3cb4d-108">Default</span></span>
+- <span data-ttu-id="3cb4d-109">Minimitoimialueet ensin</span><span class="sxs-lookup"><span data-stu-id="3cb4d-109">Minimal domains first</span></span>
+- <span data-ttu-id="3cb4d-110">Ylhäältä alas</span><span class="sxs-lookup"><span data-stu-id="3cb4d-110">Top-down</span></span>
+- <span data-ttu-id="3cb4d-111">Z3</span><span class="sxs-lookup"><span data-stu-id="3cb4d-111">Z3</span></span>
+
+## <a name="solver-strategy"></a><span data-ttu-id="3cb4d-112">Solver-strategia</span><span class="sxs-lookup"><span data-stu-id="3cb4d-112">Solver strategy</span></span> 
+
+<span data-ttu-id="3cb4d-113">[Rajoitetyytyväisyysongelmana (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) muotoiltu tuotekonfigurointimalli.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-113">A product configuration model can be formulated as a [constraint satisfaction problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf).</span></span> <span data-ttu-id="3cb4d-114">Microsoft Solver Foundationilla (MSF) on kahdenlaisia tuotekonfigurointimalleista käytettäviä Solver-strategioita CSP-ongelmien ratkaisemiseen.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-114">Microsoft Solver Foundation (MSF) provides two types of solver strategies to solve the CSPs that can be used from product configuration models.</span></span> <span data-ttu-id="3cb4d-115">Nämä Solver-strategiat perustuvat [heuristiikkaan](https://techterms.com/definition/heuristic) ja niiden avulla määritetään järjestys, jossa CSP-ongelmien muuttujat käsitellään ongelmaa ratkaistaessa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-115">These solver strategies rely on [heuristics](https://techterms.com/definition/heuristic), which are used to determine the order that the variables of the CSPs are considered in when the problem is being solved.</span></span> <span data-ttu-id="3cb4d-116">Heuristiikkaa voi vaikuttaa suorituskykyyn huomattavasti ongelmaa tai ongelmaluokkaa ratkaistaessa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-116">Heuristics can significantly affect performance when a problem or class of problems is being solved.</span></span>
+
+<span data-ttu-id="3cb4d-117">Tuotekonfiguraatiomallien Solver-strategia määrittää, mitä selvitystä heuristiikan kanssa käytetään.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-117">The solver strategy for product configuration models determines which solver is used with heuristics.</span></span> <span data-ttu-id="3cb4d-118">**Oletus**-, **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat käyttävät kahta MSF:n selvitystä, kun taas **Z3**-strategia käyttää Z3-selvitystä.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-118">The **Default**, **Minimal domains first**, and **Top-down** strategies use the two solvers from MSF, whereas the **Z3** strategy uses the Z3 solver.</span></span> 
+
+<span data-ttu-id="3cb4d-119">Todellisia asiakastoteutuksia koskevat tutkimukset ovat osoittaneet, että tuotekonfiguraatiomallin Solver-strategian vaihtaminen voi lyhentää vasteajan minuuteista millisekunteihin.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-119">Real customer implementation studies have shown that a change in the solver strategy for a product configuration model can reduce the response time from minutes to milliseconds.</span></span> <span data-ttu-id="3cb4d-120">Niinpä erilaisia Solver-strategioita kannattaa kokeilla, jotta tuotekonfiguraatiomallin kannalta tehokkain Solver-strategia löytyisi.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-120">Therefore, it's worth the effort to try different solver strategies to find the most efficient strategy for your product configuration model.</span></span>
+
+## <a name="change-the-settings-for-the-solver-strategy"></a><span data-ttu-id="3cb4d-121">Solver-strategian asetusten muuttaminen</span><span class="sxs-lookup"><span data-stu-id="3cb4d-121">Change the settings for the solver strategy</span></span>
+
+<span data-ttu-id="3cb4d-122">Voit vaihtaa Solver-strategian valitsemalla **Tuotekonfiguraation mallit** -sivun toimintoruudussa **Mallin ominaisuudet**.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-122">To change the solver strategy, on the **Product configuration models** page, on the Action Pane, select **Model properties**.</span></span> <span data-ttu-id="3cb4d-123">Valitse sitten **Muokkaa mallin tietoja** -valintaikkunassa Solver-strategia.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-123">Then, in the **Edit the model details** dialog box, select a solver strategy.</span></span>
+
+<span data-ttu-id="3cb4d-124">[![Solver-strategian vaihtaminen](./media/solver-strategy.png)](./media/solver-strategy.png)</span><span class="sxs-lookup"><span data-stu-id="3cb4d-124">[![Changing the solver strategy](./media/solver-strategy.png)](./media/solver-strategy.png)</span></span>
+
+<span data-ttu-id="3cb4d-125">Tällä hetkellä mikään logiikka ei tunnista automaattisesti, mikä on tehokkain poissulkevan tuotekonfiguraation Solver-strategia.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-125">Currently, there is no logic that automatically detects which solver strategy will be the most efficient strategy for constraint-based product configuration.</span></span> <span data-ttu-id="3cb4d-126">Tämän vuoksi Solver-strategioita on kokeiltava yksi kerrallaan.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-126">Therefore, you must try the solver strategies one by one.</span></span>
+
+<span data-ttu-id="3cb4d-127">Seuraavassa taulukossa on suosituksia eri tilanteissa käytettävistä Solver-strategioista.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-127">The following table provides recommendations about the solver strategy to use in various scenarios.</span></span>
+
+| <span data-ttu-id="3cb4d-128">Solver-strategia</span><span class="sxs-lookup"><span data-stu-id="3cb4d-128">Solver strategy</span></span>      | <span data-ttu-id="3cb4d-129">Strategian käyttöskenaario</span><span class="sxs-lookup"><span data-stu-id="3cb4d-129">Use the strategy in this scenario</span></span> |
+|----------------------|-----------------------------------|
+| <span data-ttu-id="3cb4d-130">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="3cb4d-130">Default</span></span>              | <span data-ttu-id="3cb4d-131">**Oletus**-strategia on optimoitu selvittämään taulurajoitteisiin luottavia malleja.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-131">The **Default** strategy has been optimized to solve models that rely on table constraints.</span></span> <span data-ttu-id="3cb4d-132">Asiakastoteutuksia koskevat tutkimukset ovat osoittaneet, että tämä strategia on tehokkain tilanteissa, joissa taulurajoitteita käytetään runsaasti.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-132">Customer implementation studies have shown that this strategy is the most efficient strategy in scenarios where table constraints are used extensively.</span></span> |
+| <span data-ttu-id="3cb4d-133">Minimitoimialueet ensin</span><span class="sxs-lookup"><span data-stu-id="3cb4d-133">Minimal domains first</span></span> | <span data-ttu-id="3cb4d-134">**Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat liittyvät läheisesti toisiinsa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-134">The **Minimal domains first** and **Top-down** strategies are closely related.</span></span> <span data-ttu-id="3cb4d-135">Asiakastoteutustutkimukset ovat osoittaneet, että **Ylhäältä alas** -strategia toimii paremmin kuin **Minimitoimialueet ensin** -strategia.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-135">Customer implementation studies have shown that the **Top-down** strategy, outperforms the **Minimal domains first** strategy.</span></span> <span data-ttu-id="3cb4d-136">**Minimitoimialueet ensin** -strategia on kuitenkin säilytetty tuotteessa, jotta yhteensopivuus aikaisempien versioiden kanssa säilyy.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-136">However, the **Minimal domains first** strategy is kept in the product for backward compatibility.</span></span> <span data-ttu-id="3cb4d-137">Kummankin Solver-strategian on osoitettu selvittävän tehokkaasti malleja, joissa on useita aritmeettisia lausekkeita eikä taulurajoituksia käytetä.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-137">Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used.</span></span> <span data-ttu-id="3cb4d-138">Joissakin tilanteissa **Oletus**-strategia on näitä kahta strategiaa tehokkaampi.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-138">However, in some cases, the **Default** strategy outperforms these two strategies.</span></span> <span data-ttu-id="3cb4d-139">Muista tämän vuoksi kokeile jokaista strategiaa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-139">Therefore, remember to try each strategy.</span></span> |
+| <span data-ttu-id="3cb4d-140">Ylhäältä alas</span><span class="sxs-lookup"><span data-stu-id="3cb4d-140">Top-down</span></span>             | <span data-ttu-id="3cb4d-141">**Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat liittyvät läheisesti toisiinsa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-141">The **Minimal domains first** and **Top-down** strategies are closely related.</span></span> <span data-ttu-id="3cb4d-142">Asiakastoteutustutkimukset ovat osoittaneet, että **Ylhäältä alas** -strategia toimii paremmin kuin **Minimitoimialueet ensin** -strategia.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-142">Customer implementation studies have shown that the **Top-down** strategy, outperforms the **Minimal domains first** strategy.</span></span> <span data-ttu-id="3cb4d-143">**Minimitoimialueet ensin** -strategia on kuitenkin säilytetty tuotteessa, jotta yhteensopivuus aikaisempien versioiden kanssa säilyy.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-143">However, the **Minimal domains first** strategy is kept in the product for backward compatibility.</span></span> <span data-ttu-id="3cb4d-144">Kummankin Solver-strategian on osoitettu selvittävän tehokkaasti malleja, joissa on useita aritmeettisia lausekkeita eikä taulurajoituksia käytetä.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-144">Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used.</span></span> <span data-ttu-id="3cb4d-145">Joissakin tilanteissa **Oletus**-strategia on näitä kahta strategiaa tehokkaampi.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-145">However, in some cases, the **Default** strategy outperforms these two strategies.</span></span> <span data-ttu-id="3cb4d-146">Muista tämän vuoksi kokeile jokaista strategiaa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-146">Therefore, remember to try each strategy.</span></span> |
+| <span data-ttu-id="3cb4d-147">Z3</span><span class="sxs-lookup"><span data-stu-id="3cb4d-147">Z3</span></span>                   | <span data-ttu-id="3cb4d-148">**Z3**-strategian käyttö Solver-oletusstrategiana on suositeltavaa.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-148">We recommend that you use the **Z3** strategy as the default solver strategy.</span></span> <span data-ttu-id="3cb4d-149">Jos olet huolestunut suorituskyvystä ja skaalautuvuudesta, voit arvioida muut strategiat.</span><span class="sxs-lookup"><span data-stu-id="3cb4d-149">If you're concerned about performance and scalability, you can evaluate the other strategies.</span></span> |
+
+## <a name="additional-resources"></a><span data-ttu-id="3cb4d-150">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="3cb4d-150">Additional resources</span></span>
+
+[<span data-ttu-id="3cb4d-151">Tuotemäärityksen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="3cb4d-151">Product configuration overview</span></span>](build-product-configuration-model.md)
+
+[<span data-ttu-id="3cb4d-152">Heuristiikka</span><span class="sxs-lookup"><span data-stu-id="3cb4d-152">Heuristics</span></span>](https://techterms.com/definition/heuristic)
+
+[<span data-ttu-id="3cb4d-153">Rajoitustyytyväisyysongelma</span><span class="sxs-lookup"><span data-stu-id="3cb4d-153">Constraint Satisfaction Problem</span></span>](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
