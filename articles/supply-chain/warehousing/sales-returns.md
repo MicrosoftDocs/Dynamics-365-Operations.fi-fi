@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987411"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426865"
 ---
 # <a name="sales-returns"></a>Myyntipalautukset
 
@@ -257,7 +257,7 @@ Vaikka **Palautustilaus**-sivu sisältääkin tietoja ja toimintoja, joita tarvi
 ### <a name="credit-correction"></a>Hyvityksen oikaisu
 
 Varmista, osana laskutusprosessia, että muut kulut ovat oikein. Jotta kirjauskansion kirjaukset tehdään korjauksina (Storno), harkitse käyttäväsi **Hyvityksen oikaisu** -asetusta **Laskun kirjaus** -sivun **Muu**-välilehdellä kun kirjaat laskun/hyvityslaskun. 
->[Huomautus!] Oletusarvon mukaan **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
+>[Huomautus!] Oletusarvoisesti **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
 
 ## <a name="create-intercompany-return-orders"></a>Luo konsernin sisäiset palautustilaukset
 Palautustilauksia voi suorittaa kahden organisaatiosi sisäisen yrityksen välillä. Seuraavia tilanteita tuetaan:

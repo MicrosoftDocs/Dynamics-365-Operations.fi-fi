@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 5a5db915c94cf9a454dc39e9174b3282a3f6bb75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889478"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426980"
 ---
 # <a name="asset-types"></a>Resurssityypit
 
@@ -82,7 +82,7 @@ Yleensä manuaalisesti luodut työtilaukset liittyvät korjaavaan kunnossapitoon
 5. Jos resurssityyppiin liittyy takuusopimus, valitse sopimus **Toimittajan takuu** -ja **Asiakkaan takuu** -kentissä. 
 6. Valitse **Varaosat** -pikavälilehdellä **Lisää** lisätäksesi varaosia valittuun resurssityypin asetuksiin.
 7. Voit hyväksyä varaosan valitsemalla varaosarivin ja valitsemalla sitten **Hyväksy**. Voit valita useita rivejä hyväksyttäväksi.
-8. Jos haluat nähdä, käytetäänkö varaosaa jossakin muualla resurssien hallinnassa (esimerkiksi suhteessa resursseihin ja työtilauksiin), valitse varaosarivi ja valitse sitten **Nimike, missä käytetty** avataksesi**Nimike, missä käytetty** -sivun. Jos haluat nähdä luettelon kaikista aktiiviset varaosista, valitse **Aktiivinen** -valintaruutu. Jos haluat nähdä vain hyväksytyt varasat, valitse **Hyväksytty**-valintaruutu.
+8. Jos haluat nähdä, käytetäänkö varaosaa jossakin muualla resurssien hallinnassa (esimerkiksi suhteessa resursseihin ja työtilauksiin), valitse varaosarivi ja valitse sitten **Nimike, missä käytetty** avataksesi **Nimike, missä käytetty** -sivun. Jos haluat nähdä luettelon kaikista aktiiviset varaosista, valitse **Aktiivinen** -valintaruutu. Jos haluat nähdä vain hyväksytyt varasat, valitse **Hyväksytty**-valintaruutu.
 9. Valitse **Ylläpitosuunnitelmat**-pikavälilehdellä **Lisää** lisätäksesi ylläpitosuunnitelmia valittuun resurssityypin asetuksiin.
 10. Jos haluat kopioida resurssityypin asetukset toiseen asetukseen, voit käyttää Kopioi-toimintoa. Valitse kopioitavat resurssityypin asetukset, valitse **Kopioi asetukset** ja valitse resurssityypin asetukset, josta asetukset kopioidaan. Eri asetusten asetukset määrittävät, kuinka paljon tietoa on mukana. Kun olet valmis, kopioi asetukset valitsemalla **OK**.
 
@@ -95,5 +95,5 @@ Kuten kohdassa "Luo resurssityypin asetusrivit" on kuvattu, varaosat määritet�
 
 **Varaosat**-sivulla voit myös luoda uusia varaosia resurssityypin, resurssin valmistajan ja resurssimallin olemassa oleville yhdistelmille. Voit päättää, haluatko luoda varaosatietueita **Resurssityypin asetukset**- vai **Varasat**-sivulla. **Resurssityypin asetukset** -sivulla on yhteenveto valitun resurssityypin, resurssin valmistajan ja resurssimallin yhdistelmästä, kun taas **Varaosat**-sivulla on kattava yhteenveto kaikista resurssityypin asetusriveistä. Jos **Varaosat**-sivu sisältää useita tietueita, **Resurssityypin asetukset** -sivu saattaa antaa sinulle paremman yleiskuvan.
 
-Jos haluat nähdä, käytetäänkö valitun rivin varaosaa jossakin muualla resurssien hallinnassa (esimerkiksi suhteessa resursseihin ja työtilauksiin), valitse varaosarivi ja valitse sitten **Nimike, missä käytetty** avataksesi**Nimike, missä käytetty** -sivun. 
+Jos haluat nähdä, käytetäänkö valitun rivin varaosaa jossakin muualla resurssien hallinnassa (esimerkiksi suhteessa resursseihin ja työtilauksiin), valitse varaosarivi ja valitse sitten **Nimike, missä käytetty** avataksesi **Nimike, missä käytetty** -sivun. 
 

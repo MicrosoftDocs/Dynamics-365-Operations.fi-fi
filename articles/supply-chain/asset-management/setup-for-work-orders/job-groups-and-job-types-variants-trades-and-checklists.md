@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889072"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427055"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Ylläpitotöiden tyyppiluokat ja ylläpitotöiden tyypit, ylläpitotöiden tyyppien variantit, ylläpitotöiden toimialat ja ylläpidon tarkistuslistat
 
@@ -67,7 +67,7 @@ Ensin määrität tarvittavat ylläpitotöiden tyyppiluokat, ylläpitotöiden ty
 2. Valitse **Uusi**.
 3. Kirjoita **Ylläpitotyön tyypin variantti** -kenttään ylläpitotyön tyypin variantin tunnus.
 4. Syötä **Kuvaus**-kenttään kuvaus.
-5. Lisää kunnossapitotyön tyyppi valitsemalla**Ylläpitotöiden tyypit** -pikavälilehdessä **Lisää**.
+5. Lisää kunnossapitotyön tyyppi valitsemalla **Ylläpitotöiden tyypit** -pikavälilehdessä **Lisää**.
 6. Valitse kunnossapitotyön tyyppi **Ylläpitotyön tyyppi** -kentässä.
 7. Toista vaiheet 5-6, jos haluat lisätä kunnossapitotöiden tyyppejä kunnossapitotöiden tyyppivarianttiin.
 
@@ -264,6 +264,6 @@ Kun olet luonut tarvittavat ylläpitotyötyypin oletusyhdistelmät, voit käytt�
 Käyttöomaisuuden hallinnassa voit päivittää automaattisesti ylläpitotyön tyypin ennusteiden muutokset, jotka koskevat tuntikustannuksia, nimikekustannuksia ja kuluja, jotka on päivitetty muissa moduuleissa. Näin taataan, että kunnossapitotöiden tyypin ennusteissa käytetään aina uusimpia kustannushintoja.
 
 1. Valitse **Resurssien hallinta** \> **Kausittainen** \> **Ennuste** \> **Päivitä ylläpitotyön tyypin ennuste**.
-2. Voit lisätä tiettyjen kunnossapitotöiden tyyppien valintoja tarpeen mukaan käyttämällä **Päivitä ylläpitotyön tyypin ennuste** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehteä. Valitse **Suodatin**ja tee sitten valinnat valitsemalla **Valitse**.
+2. Voit lisätä tiettyjen kunnossapitotöiden tyyppien valintoja tarpeen mukaan käyttämällä **Päivitä ylläpitotyön tyypin ennuste** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehteä. Valitse **Suodatin** ja tee sitten valinnat valitsemalla **Valitse**.
 3. **Suorita taustalla** -pikavälilehdessä voit määrittää automaattisen päivityksen erätyönä tarpeen mukaan.
 4. Käynnistä ennusteen päivitys valitsemalla **OK**.

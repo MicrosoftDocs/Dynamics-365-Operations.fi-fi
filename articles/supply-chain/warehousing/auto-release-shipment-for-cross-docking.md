@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983976"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426872"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Lähetyksen automaattinen vapautus cross-dockingia varten
 
@@ -111,9 +111,9 @@ Voit rajoittaa cross-dockingin kohteena olevien valmiiden tavaroiden sijoituspai
 5. Syötä **Työmalli** -kenttään nimi, kuten **CrossDock\_51**.
 6. Valitse **Tallenna**.
 7. Valitse **Työmallin tiedot** -osiosta **Uusi**.
-8. Valitse **Työtyyppi**-kentän uudelle riville arvoksi **Keräily**. Valitse **Työluokan tunnus** -kentässä arvo**CrossDock**.
+8. Valitse **Työtyyppi**-kentän uudelle riville arvoksi **Keräily**. Valitse **Työluokan tunnus** -kentässä arvo **CrossDock**.
 9. Valitse **Uusi**.
-10. Valitse **Työtyyppi**-kentän uudelle riville arvoksi **Asetus**. Valitse **Työluokan tunnus** -kentässä arvo**CrossDock**.
+10. Valitse **Työtyyppi**-kentän uudelle riville arvoksi **Asetus**. Valitse **Työluokan tunnus** -kentässä arvo **CrossDock**.
 
 #### <a name="location-directives"></a>Sijaintidirektiivit
 

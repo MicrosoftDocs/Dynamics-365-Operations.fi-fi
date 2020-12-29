@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ada42a98a8a87e377f939d063b17f9904f6b3408
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978231"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427239"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Määritä työssä mobiililaitetta käyttävä työntekijä
 
@@ -44,7 +44,7 @@ Tässä esimerkissä tarkistetaan, että käyttäjälle "SHANNON" on määritett
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Henkilöstöhallinto > Työntekijät > Työntekijät**.
 2. Etsi käyttäjä pikasuodattimesta. Syötä tässä esimerkissä arvoksi `shannon`.
 3. Valitse näyttöön tulevassa käyttäjätilissä **Nimi**-sarakkeessa oleva linkki.
-4. Valitse**Aikarekisteröinti**-välilehti.
+4. Valitse **Aikarekisteröinti**-välilehti.
 5. Valitse **Aktivoi rekisteröintipäätteissä**.
 6. Valitse tai kirjoita arvot seuraaviin kenttiin:  
 

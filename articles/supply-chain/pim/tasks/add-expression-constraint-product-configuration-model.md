@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986476"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427087"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Lisää rajoituslauseke tuotemääritysmalliin
 
@@ -44,7 +44,7 @@ Tässä menettelyssä käsitellään, miten uusi rajoituslauseke lisätään tuo
 ## <a name="enter-expression"></a>Anna lauseke
 1. Valitse Muokkaa lauseketta.
     * Jos vapautat käyttöliittymän tehtävätallenteen tässä vaiheessa, voit muodostaa rajoituslausekkeen IntelliSensen ja symboliluettelon avulla.  
-2. Lisää ConstraintBody-kenttään Implies[FrontGrill=="Metal", CornerProtection].
+2. Anna ConstraintBody-kenttään 'Implies[FrontGrill=="Metal", CornerProtection] '.
     * Tämän lausekkeen logiikka ilmaisee, että jos etusäleikkö on metallia, sitten kulmasuojausvaihtoehto on valittava.  
 3. Valitse Vahvista.
     * Vahvistustoiminto suoritetaan rajoitelausekkeessa, jossa se tarkistaa syntaksivirheet.  

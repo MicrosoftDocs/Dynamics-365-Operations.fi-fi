@@ -18,11 +18,11 @@ ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983913"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427096"
 ---
 # <a name="calendars-and-master-planning"></a>Kalenterit ja pääsuunnittelu
 
@@ -49,7 +49,7 @@ Kattavuusryhmä ilmaisee tiettyyn kattavuusryhmään kuuluvien nimikkeiden täyt
 Lisää kattavuusryhmän kalenteri valitsemalla **Pääsuunnittelu > Asetukset > Kattavuus > Kattavuusryhmät**. Etsi kattavuusryhmä, johon haluat määrittää kalenterin, ja valitse se **Kalenteri**-kentässä.
 
 Kattavuusryhmä voidaan määrittää eri sivuilla: 
-    - Nimikkeen **Vapautetun tuotteen tiedot** -sivu. Jos haluat nähdä nimikkeen kattavuusryhmän valitse **Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet** ja siirry sitten**Vapautettujen tuotteiden tiedot** -sivulle valitsemalla nimike. Nimikkeen kattavuusryhmä näkyy **Suunnitelma**-pikavälilehdessä.
+    - Nimikkeen **Vapautetun tuotteen tiedot** -sivu. Jos haluat nähdä nimikkeen kattavuusryhmän valitse **Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet** ja siirry sitten **Vapautettujen tuotteiden tiedot** -sivulle valitsemalla nimike. Nimikkeen kattavuusryhmä näkyy **Suunnitelma**-pikavälilehdessä.
     - **Nimikkeen kattavuus** -sivulla. Siirry nimikkeen kattavuussivulle valitsemalla vapautettujen tuotteiden tietosivulla **Nimikkeen kattavuus**. Yhteenvetovälilehdessä on erilaisia täydennysparametreja, jotka määräytyvät toimipaikan, varaston ja tuotedimensioiden mukaan. Kunkin nimikkeen kattavuusryhmä peritään **Vapautetun tuotteen tiedot** -sivun kattavuusryhmästä. Se voidaan ohittaa valitsemalla **Yleiset**-välilehdessä **Käytä erityisasetuksia** tai **Korvaa ryhmän asetukset**.
     - **Pääsuunnittelun parametrit** -sivulla. Jos nimikkeelle ei ole määritetty kattavuusryhmää edellisillä sivuilla, pääsuunnittelu käyttää pääsuunnittelun parametreissa määritettyä yleistä kattavuusryhmää. Se määritetään valitsemalla **Pääsuunnittelu > Asetukset > Pääsuunnittelun parametrit** **Yleinen kattavuusryhmä** -kentässä. 
 

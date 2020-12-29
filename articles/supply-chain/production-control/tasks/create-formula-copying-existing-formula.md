@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3a553add531da9a8117af0830efb2d1b68e9b2e3
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983419"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426799"
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Luo kaava kopioimalla aiemmin luotu kaava
 

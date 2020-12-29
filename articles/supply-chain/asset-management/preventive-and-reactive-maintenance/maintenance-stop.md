@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889982"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427105"
 ---
 # <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
@@ -94,6 +94,6 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 ![Kuva 4](media/22-preventive-maintenance.png)
 
-- Voit kopioida käyttökohteita yhdestä huoltoseisokkitehtävästä toiseen. Valitse**Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Kopioi ylläpidon käyttökatkojen toiminnot** -painike ja tee valinnat **Ylläpidon käyttökatkojen toiminnoista**- ja **Ylläpidon käyttökatkojen toimintoihin** -kentissä ja valitse **OK**.
+- Voit kopioida käyttökohteita yhdestä huoltoseisokkitehtävästä toiseen. Valitse **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Kopioi ylläpidon käyttökatkojen toiminnot** -painike ja tee valinnat **Ylläpidon käyttökatkojen toiminnoista**- ja **Ylläpidon käyttökatkojen toimintoihin** -kentissä ja valitse **OK**.
 - Napsauta **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Ylläpitoaikataulun rivit**- tai **Aktiiviset työtilaukset**-painike ja avaa liittyvät luettelot ja tarkastele valittuun kunnossapitoseisokin toimintoon liittyviä rivejä.
 

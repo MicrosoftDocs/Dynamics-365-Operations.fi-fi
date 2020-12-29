@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981423"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426945"
 ---
 # <a name="forecast-reduction-keys"></a>Ennusteen vähennysavaimet
 
@@ -218,7 +218,7 @@ Ennusteen vähennysavain on määritettävä nimikkeen kattavuusryhmään. Mää
     - Pääsuunnittelu \> Määritys \> Suunnitelmat \> Ennustesuunnitelmat
     - Pääsuunnittelu \> Asetukset \> Suunnitelmat \> Pääsuunnitelmat
 
-4. Kun olet **Ennustesuunnitelmat** tai **Pääsuunnitelmat**-sivulla, valitse edelleen **Yleiset**-pikavälilehden **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Prosentti - vähennysavain**tai **Tapahtumat - vähennysavain**.
+4. Kun olet **Ennustesuunnitelmat** tai **Pääsuunnitelmat**-sivulla, valitse edelleen **Yleiset**-pikavälilehden **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Prosentti - vähennysavain** tai **Tapahtumat - vähennysavain**.
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Vähennä ennustetta tapahtumien mukaan
 

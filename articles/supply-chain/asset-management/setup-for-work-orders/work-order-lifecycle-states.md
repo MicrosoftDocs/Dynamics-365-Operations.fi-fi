@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: b6e96f2f6b324ffe44e8684d9bd2a42fb52d0aed
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889262"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427128"
 ---
 # <a name="work-order-lifecycle-states"></a>Työtilauksen elinkaaren tilat
 
@@ -32,7 +32,7 @@ ms.locfileid: "3889262"
 
  
 
-Työtilauksen elinkaaritilat määrittävät tilat, joita työtilaus voi käydä läpi. Esimerkkejä ovat **Luotu**, **Ajoitettu**, **Käsittelyssä**ja **Päättynyt**. Työtilauksen elinkaaritilat voidaan päivittää manuaalisesti työtilaukseen tai ne voidaan päivittää automaattisesti (esimerkiksi työtilausten ajoituksessa).
+Työtilauksen elinkaaritilat määrittävät tilat, joita työtilaus voi käydä läpi. Esimerkkejä ovat **Luotu**, **Ajoitettu**, **Käsittelyssä** ja **Päättynyt**. Työtilauksen elinkaaritilat voidaan päivittää manuaalisesti työtilaukseen tai ne voidaan päivittää automaattisesti (esimerkiksi työtilausten ajoituksessa).
 
 Työtilausten vaatimat elinkaaritilat on liitettävä vastaviin projektivaiheisiin **Projektinhallinnan ja kirjanpidon parametrit** -sivulla (**Projektinhallinta ja kirjanpito** \> **Projektinhallinnan ja kirjanpidon parametrit**). Ensin määritetään projektin vaiheet kohdassa Projektinhallinta ja kirjanpito. Tämän jälkeen määrität työtilausten elinkaaritilat ja työtilausten elinkaarimallit käyttöomaisuuden hallinnassa.
 
@@ -99,7 +99,7 @@ Seuraavassa taulukossa on kuvattu vaihtoehdot **Työtilaus**- ja **Ajoita**-osis
     ![Eri projektityyppien projektivaiheiden määrityssivu](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
-> Jos työtilauksen elinkaaritila johon päivitetään on ei-aktiivinen, työtilaukseen liittyvät kirjauskansiot, joita ei vielä ole kirjattu, poistetaan automaattisesti. Tämä toiminto auttaa takaamaan käyttämättömien tietojen automaattisen tyhjennyksen. (Elinkaari tila ei ole käytössä, **Aktiivinen**-asetukseksi on määritetty **Ei** **Yleiset**pikavälilehdessä **Työtilauksen elinkaaren tila** -sivulla.)
+> Jos työtilauksen elinkaaritila johon päivitetään on ei-aktiivinen, työtilaukseen liittyvät kirjauskansiot, joita ei vielä ole kirjattu, poistetaan automaattisesti. Tämä toiminto auttaa takaamaan käyttämättömien tietojen automaattisen tyhjennyksen. (Elinkaari tila ei ole käytössä, **Aktiivinen**-asetukseksi on määritetty **Ei** **Yleiset** pikavälilehdessä **Työtilauksen elinkaaren tila** -sivulla.)
 >
 > Jos kuitenkin määrität työtilauksen manuaalisesti ei-aktiiviseksi, työtilaukseen liittyvät kirjauskansioita, joita ei vielä ole kirjattu, **ei** poisteta automaattisesti. (Jos haluat työtilauksen ei-aktiivinen-tilaan manuaalisesti, valitse **Resurssien hallinta** \> **Yhteiset** \> **Työtilaukset** \> **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**. Avaa työtilaus ja siirry **Otsikko**-näkymään. Valitse **Yleiset**-pikavälilehdessä **Muokkaa** ja määritä sitten **Aktiivinen**-asetukseksi **Ei**.)
 

@@ -1,6 +1,6 @@
 ---
 title: Tuotevariantin numeroiden ja nimien nimikkeistö
-description: Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli].
+description: Tässä aiheessa käsitellään tuotenumeroiden nimikkeistön määrittämistä korvaamaan kiinteä muoto [Päätuotteen numero - määritys - koko - väri - malli].
 author: roxanadiaconu
 manager: tfehr
 ms.date: 11/03/2017
@@ -20,17 +20,17 @@ ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 90c01e4281246d890ef888c56ca137f83e83741c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980480"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426843"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Tuotevariantin numeroiden ja nimien nimikkeistö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään korvaamaan kiinteän muodon [päätuotteen numero - konfiguraatio - koko - väri - malli]. Uusi nimikkeistö sisältää kohdennetun muodon, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Myös tuotenimille voi luoda nimikkeistön. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä.
+Tässä aiheessa käsitellään tuotenumeroiden nimikkeistön määrittämistä korvaamaan kiinteä muoto [Päätuotteen numero - määritys - koko - väri - malli]. Uusi nimikkeistö sisältää kohdennetun muodon, joka sisältää päätuotteen numeron, aktiiviset tuotedimensiot ja haluamasi tekstierottimet. Myös tuotenimille voi luoda nimikkeistön. Voit myös luoda nimikkeistön konfiguraatioiden tunnistamiseksi, jotka on luotu poissulkevan tuotekonfiguraattorin avulla. Nämä nimikkeistöt voivat sisältää valitsemiasi määritteitä.
 
 Tuotevariantin numeroiden ja nimien uusien nimikkeistöjen avulla voi sisällyttää segmenttejä tuotevarianttien tunnuksiin. Nämä segmentit voivat sisältää päätuotenumeron ja nimen, tuotedimensioiden tunnukset ja nimet, numerosarjat, tekstivakioita ja määritteitä. Kun luot myyntitilauksen tai ostotilauksen, löydät nopeasti tietyt tuotevariantit tämän toiminnon avulla. Sekä tuotevariantin numeroille että nimille voi luoda nimikkeistöjä **Tuotenimikkeistö**-sivulla. Avaa tämä sivu valitsemalla **Tuotetietojen hallinta** &gt; **Asetukset**.
 

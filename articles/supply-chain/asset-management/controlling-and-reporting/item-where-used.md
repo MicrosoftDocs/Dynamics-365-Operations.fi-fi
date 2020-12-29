@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: bc78568e314c7cf83848ed2c39f9613d6ed638ba
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889622"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426970"
 ---
 # <a name="item-where-used"></a>Nimike, missä käytetty
 
@@ -47,7 +47,7 @@ Voit tehdä tietyn nimikkeen laskennan saadaksesi yhteenvedon siitä, missä nim
 
 ## <a name="make-an-item-where-used-calculation"></a>Nimike, missä käytetty -laskelman suorittaminen.
 
-1. Valitse **Resurssien hallinta** > **Kyselyt** > **Nimike, missä käytetty**tai valitse **Nimike, missä käytetty** -painike on jollakin edellä mainituista sivuista.
+1. Valitse **Resurssien hallinta** > **Kyselyt** > **Nimike, missä käytetty** tai valitse **Nimike, missä käytetty** -painike on jollakin edellä mainituista sivuista.
 
 2. Valitse **Nimike, missä käytetty** -valintaikkunassa nimike, jolle haluat tehdä laskun **Nimiketunnus**-kentässä.
 
@@ -63,7 +63,7 @@ Voit tehdä tietyn nimikkeen laskennan saadaksesi yhteenvedon siitä, missä nim
 
 6. Valitse **Nimike, missä käytetty** -välilehden asiaankuuluvat **Ryhmittely ...**-painikkeet tuodaksesi näkyviin laskun vaaditun yksityiskohtaisuuden tason. Valitut **Ryhmittely...**-painikkeet on korostettu. Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.
 
-7. Jos haluat näyttää nimikkeeseen liittyvät dimensiot, valitse **Näytä dimensiot**ja valitse näytettävät dimensiot.
+7. Jos haluat näyttää nimikkeeseen liittyvät dimensiot, valitse **Näytä dimensiot** ja valitse näytettävät dimensiot.
 
 ## <a name="example"></a>Esimerkki
 

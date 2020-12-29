@@ -16,11 +16,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ee0c40dfc3c820343c7054238cc2da47e8203d59
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204811"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427014"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Vapautustilauksen luominen ostosopimuksesta
 
@@ -30,7 +30,7 @@ Tässä menettelyssä selvitetään, miten ostosopimusta voi käyttää ostotila
 
 
 ## <a name="create-a-purchase-order"></a>Ostotilauksen luominen
-1. Siirry **siirtymisruudussa**kohtaan **Työtilat > Ostotilauksen valmistelu.** 
+1. Siirry **siirtymisruudussa** kohtaan **Työtilat > Ostotilauksen valmistelu.** 
 2. Valitse **Uusi ostotilaus**.
 3. Avaa haku valitsemalla **Toimittajan tili** -kentässä avattavan valikon painike.
 4. Etsi haluamasi tietue luettelosta ja valitse se.

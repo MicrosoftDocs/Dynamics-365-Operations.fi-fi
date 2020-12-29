@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888902"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427176"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
@@ -61,7 +61,7 @@ Voidaan ajoittaa vain työtilaukset, joissa on työtilauksen elinkaaritila, joka
 
 ![Kuva 1](media/03-work-order-scheduling.png)
 
-Työtilauksiin liittyvä työtilaustyyppi voi määrittää yhden kunnossapitotyöntekijän ajoituksen (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Työtilaustyypit** > **Yksi ylläpitotyöntekijä** -valintanäppäimeksi määritetty "Kyllä"). Tämä tarkoittaa, että jos työtilaustyyppiä käytetään työtilauksessa, **Yksi ylläpitotyöntekijä** -vaihtopainikkeen arvoksi tulee automaattisesti "Kyllä" **Kaikki työtilaukset** -tietosivun **Otsikko**-näkymän **Ajoita**-pikavälilehdessä. Työtilauksen ajoituksen aikana kaikki työtilaukseen luodut työtilaustyöt ajoitetaan myöhemmin samalle kunnossapitotyöntekijälle. Voit tarvittaessa muokata **Yksi ylläpitotyöntekijä** -valintaa**Kaikki työtilaukset** -kohdassa, jolloin useiden työntekijöiden tai yhden työntekijän työtilaustöiden ajoittaminen sallitaan.
+Työtilauksiin liittyvä työtilaustyyppi voi määrittää yhden kunnossapitotyöntekijän ajoituksen (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Työtilaustyypit** > **Yksi ylläpitotyöntekijä** -valintanäppäimeksi määritetty "Kyllä"). Tämä tarkoittaa, että jos työtilaustyyppiä käytetään työtilauksessa, **Yksi ylläpitotyöntekijä** -vaihtopainikkeen arvoksi tulee automaattisesti "Kyllä" **Kaikki työtilaukset** -tietosivun **Otsikko**-näkymän **Ajoita**-pikavälilehdessä. Työtilauksen ajoituksen aikana kaikki työtilaukseen luodut työtilaustyöt ajoitetaan myöhemmin samalle kunnossapitotyöntekijälle. Voit tarvittaessa muokata **Yksi ylläpitotyöntekijä** -valintaa **Kaikki työtilaukset** -kohdassa, jolloin useiden työntekijöiden tai yhden työntekijän työtilaustöiden ajoittaminen sallitaan.
 
 Käyttöomaisuuden hallinnan ajoittaminen sisältää useita tekijöitä aikataulutuksen laskennassa:
 
@@ -88,7 +88,7 @@ Alla olevissa esimerkeissä kriittisyyspisteet ovat "2" ja palvelutason tulokset
 | WO-00010817   | Kaksi päivää tästä eteenpäin   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | Kaksi päivää tästä eteenpäin   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-Työtilaukset ajoitetaan seuraavassa järjestyksessä: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+Työtilaukset ajoitetaan seuraavassa järjestyksessä: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **Esimerkki 2:**
 
@@ -98,7 +98,7 @@ Työtilaukset ajoitetaan seuraavassa järjestyksessä: WO-000108**16**, WO-00010
 | WO-00010817   | Kaksi päivää tästä eteenpäin   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | Kaksi päivää tästä eteenpäin   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Jos palvelutason pisteet nostetaan lukuun 100 5:n sijasta, ajoitusjärjestys on: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Jos palvelutason pisteet nostetaan lukuun 100 5:n sijasta, ajoitusjärjestys on: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 Työtilausten työntekijöiden laskennassa käytettävät luokituspisteet määritetään luvuiksi, jotka lisätään kuhunkin huoltotyön tekijän laskentaan työtilauksen ajoituksessa. Työtilauksessa valitaan huoltotyöntekijä, jolla on korkein pistemäärä. Seuraavassa on lyhyt kuvaus kunnossapitotyöntekijän tuloksista:
 

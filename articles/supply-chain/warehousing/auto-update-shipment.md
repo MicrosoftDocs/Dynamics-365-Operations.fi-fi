@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
-ms.sourcegitcommit: 2bc8e760c7a82572c7eafd51f2e57ef11b4ca98b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3900983"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426871"
 ---
 # <a name="shipment-auto-updates"></a>Lähetyksen automaattiset päivitykset
 
@@ -94,7 +94,7 @@ Voit vähentää myyntitilausrivillä olevaa määrää seuraavien ohjeiden muka
 
 1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
 2. Valitse juuri varastoon vapautettu myyntitilaus.
-3. Valitse myyntitilausrivi. Muuta **Määrä**-kentän arvo**10** arvoksi **8**.
+3. Valitse myyntitilausrivi. Muuta **Määrä**-kentän arvo **10** arvoksi **8**.
 4. Valitse myyntitilausrivillä **Varasto \> Lähetyksen tiedot**. **Lähetyksen tiedot** -sivun **Kuormitusrivit**-pikavälilehdessä oleva määrä vastaa myyntitilausriville tehtyä muutosta.
 
 ### <a name="increase-the-quantity-on-a-sales-order-line"></a>Myyntitilausrivin määrän suurentaminen

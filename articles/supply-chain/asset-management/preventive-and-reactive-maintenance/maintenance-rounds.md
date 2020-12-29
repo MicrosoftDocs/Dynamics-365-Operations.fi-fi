@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 63cb2614b2037fac1129c7d2f82a26dac41a3490
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889958"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427107"
 ---
 # <a name="maintenance-rounds"></a>Ylläpitokierrokset
 
@@ -74,7 +74,7 @@ ms.locfileid: "3889958"
 
 18. Lisää toiminnallinen sijainti ylläpitokirrokseen valitsemalla **Toiminnallisen sijainnin rivit**-pikavälilehdessä **Lisää**. Lisätietoja on yllä olevien liittyvien kenttien kuvauksessa. Samat kentät ovat käytettävissä käyttöomaisuusrivin luomisessa, mutta voit tarvittaessa myös valita **valmistajan**- ja **mallin** toiminnalliselle sijainnille. Jos valitset vain rivin toiminnallisen sijainnin, mutta et tee valintoja **Resurssityyppi**, **Valmistaja**, **Malli**, **Ylläpitotyön tyyppi**, **Ylläpitotyön tyypin variantti** ja **Kauppa** -kohdissa, kaikki kyseiseen toiminnalliseen sijaintiin liittyvät käyttökohteet huoltoaikataulutuksen yhteydessä sisällytetään huoltokierrokseen.
 
-19. Valitse huoltokierrokseen sisällytettävä työtilauspooli valitsemalla**Poolit**-pikavälilehdessä **Lisää**. Useita työtilauspooleja voidaan liittää yhteen huoltokierrokseen.
+19. Valitse huoltokierrokseen sisällytettävä työtilauspooli valitsemalla **Poolit**-pikavälilehdessä **Lisää**. Useita työtilauspooleja voidaan liittää yhteen huoltokierrokseen.
 
 20. Tallenna asetukset.
 
@@ -101,7 +101,7 @@ Kun olet määrittänyt kunnossapitokierroksen, voit ajoittaa kaikki huoltokierr
 >[!NOTE]
 >Jos tämän vaihtopainikkeen arvoksi on määritetty "kyllä" ja **Luo automaattisesti** -vaihtopainikkeessa on Kyllä valittuna **Ylläpitokierrokset** -lomakkeessa, työtilaukset luodaan huoltokierrosrivien perusteella ja myös ylläpitosuunnitelmarivit, joiden tila on "Työtilaus luotu", luodaan. Jos vain yksi **Luo automaattisesti** -vaihtopainikkeista on määritetty Kyllä-arvoon, tässä avattavassa valikossa tai **Ylläpitokierrokset** -kohdassa luodaan vain huoltoaikataulurivit tilassa Luotu. Tässä tapauksessa työtilauksia ei luoda.
 
-5. Voit tarvittaessa valita aikataulun työlle tietyt kierrokset tai toisen alkamispäivämäärän. Valitse **Suodata**ja lisää sisällytettävät kierrokset.
+5. Voit tarvittaessa valita aikataulun työlle tietyt kierrokset tai toisen alkamispäivämäärän. Valitse **Suodata** ja lisää sisällytettävät kierrokset.
 
 6. Valitse **OK**.
 

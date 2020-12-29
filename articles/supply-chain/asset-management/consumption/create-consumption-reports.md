@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: d28acbccc35b3f59f9cca7236dd721a1d9bdead8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216433"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427189"
 ---
 # <a name="create-consumption-reports"></a>Kulutusraporttien luominen
 
@@ -53,7 +53,7 @@ Kun työtilausten kulutus on kirjattu, voit tulostaa käyttöomaisuuden kulutusr
 
 4. Valitse **Kohde-** pikavälilehdessä, jos haluat näyttää raportin näytössä, tulostaa sen tai tallentaa sen tiedostona tai sähköpostina.
 
-5. Voit tarvittaessa valita tietyt raportissa näytettävät käyttöomaisuudet. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatin**ja lisää käyttöomaisuudet, jotka haluat sisällyttää raporttiin.
+5. Voit tarvittaessa valita tietyt raportissa näytettävät käyttöomaisuudet. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatin** ja lisää käyttöomaisuudet, jotka haluat sisällyttää raporttiin.
 
 6. Luo raportti valitsemalla **OK**.
 
@@ -70,7 +70,7 @@ Kun työtilausten kulutus on kirjattu, voit tulostaa työtilauksen kulutusraport
 
 4. Valitse **Kohde-** pikavälilehdessä, jos haluat näyttää raportin näytössä, tulostaa sen tai tallentaa sen tiedostona tai sähköpostina.
 
-5. Voit tarvittaessa valita tietyt raportissa näytettävät työtilaukset. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatin**ja lisää työtilaukset, jotka haluat sisällyttää raporttiin.
+5. Voit tarvittaessa valita tietyt raportissa näytettävät työtilaukset. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatin** ja lisää työtilaukset, jotka haluat sisällyttää raporttiin.
 
 6. Luo raportti valitsemalla **OK**.
 

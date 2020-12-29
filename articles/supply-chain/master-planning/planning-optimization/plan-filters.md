@@ -20,17 +20,17 @@ ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 9ddf9934965bd06ec805731a1cc1a667846fa180
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323413"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427043"
 ---
 # <a name="apply-filters-to-a-plan"></a>Suodattimien käyttäminen suunnitelmaan
 
 [!include [banner](../../includes/banner.md)]
 
-Kun suunnittelun optimointitoimintoa käytetään, voit käyttää suunnitelmassa suodatinta. **Suunnitelma**n suodatinta käytetään aina pääsuunnitteluajon aikana. **Suunnitelman suodattimella** voi rajoittaa suunnitelman kätevästi tiettyyn nimikeryhmään ja varmistaa, ettei muita nimikkeitä sisällytetä tuloksena olevaan pääsuunnitteluun.
+Kun suunnittelun optimointitoimintoa käytetään, voit käyttää suunnitelmassa suodatinta. **Suunnitelma** n suodatinta käytetään aina pääsuunnitteluajon aikana. **Suunnitelman suodattimella** voi rajoittaa suunnitelman kätevästi tiettyyn nimikeryhmään ja varmistaa, ettei muita nimikkeitä sisällytetä tuloksena olevaan pääsuunnitteluun.
 
 Jos **suunnitelman suodatinta** käytetään ja jos pääsuunnitteluajon aikana käytetään myös suorituksenaikaista suodatinta, suunnitteluajossa otetaan huomioon vain kahden suodattimen leikkauskohta.
 

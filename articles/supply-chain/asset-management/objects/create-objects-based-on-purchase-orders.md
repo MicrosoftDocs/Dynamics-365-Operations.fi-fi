@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 54c129d93e13e032cc5526a91c73d3363ed183db
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427020"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Luo ostotilauksiin perustuvia resursseja
 
@@ -66,7 +66,7 @@ Ensin määritetään nimikkeet, joita käytetään resurssien luomiseen ostotil
 Voit tarkistaa odottavat resurssit suorittamalla **Odottavien resurssien määrä** -toiminnon. Tätä toimintoa voidaan käyttää esimerkiksi ilmoituksen vastaanottamiseen aina, kun odottava resurssi on valmis luotavaksi resurssina.
 
 1. Valitse **resurssien hallinta** > **Kausittainen** > **resurssit** > **Odottavien resurssien määrä**.
-2. Suorita työ valitsemalla **OK**ja luettelo päivittyy kohdassa **Odottavat resurssit**.
+2. Suorita työ valitsemalla **OK** ja luettelo päivittyy kohdassa **Odottavat resurssit**.
 3. Voit määrittää tämän työn suoritettavaksi erätyönä, esimerkiksi kerran päivässä.
 
 **Varoitus:** jos tietoja muutetaan ostotilauksessa *sen jälkeen*, resurssi on luotu nimikkeeseen perustuen, kyseiset muutokset eivät vaikuta resurssiin.

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 774c788959c5ebea69b4d22c886ac673f50b97f5
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889790"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427182"
 ---
 # <a name="condition-assessment"></a>Kunnon arviointi
 
@@ -60,7 +60,7 @@ Kunnon arvioinnit luodaan resursseille. Voit määrittää kuunon arviointimalli
 8. Valitse kunnon arvioinnin malli **Malli**-kentässä. Mallin nimi lisätään automaattisesti **nimi**-kenttään, ja siihen liittyvät rekisteröintirivit lisätään **Kunnon arviointirivit** -pikavälilehteen.
 9. Voit lisätä valittuun kunnon arviointiin liittyviä muistiinpanoja **Huomautukset**-pikavälilehdessä.
 10. Lisää jokaiselle kunnon arviointiriville mittaustiedot **Arvo**-kenttään.
-11. Voit lisätä valittuun rekisteröintiriviin liittyvän kommentin **Kunnon arviointirivit** -pikavälilehden**Kommentit**-kenttään. Jos lisäät riville kommentin, **Kommentti**-valintaruutu valitaan automaattisesti.
+11. Voit lisätä valittuun rekisteröintiriviin liittyvän kommentin **Kunnon arviointirivit** -pikavälilehden **Kommentit**-kenttään. Jos lisäät riville kommentin, **Kommentti**-valintaruutu valitaan automaattisesti.
 
 Kun olet tehnyt kunnon arvioinnin rekisteröinnin resurssille, voit tulostaa kunnon arviointiraportin.
 

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 57e3b95cb1f4a13b49ddcd336efaeabb12e5defc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979523"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426900"
 ---
 # <a name="register-sales-commissions"></a>Myyntiprovisioiden rekisteröinti
 
@@ -59,7 +59,7 @@ Kirjaa muistiin asiakasnumerot ja nimiketunnukset, jotka olevat valinnut provisi
 17. Laajenna **Parametrit**-osa.
 18. Valitse **Määrä**-kentässä **Kaikki**.
 19. Valitse **Kirjaus**-kentässä **Kyllä**.
-20. Valitse **OK**ja valitse sitten seuraavassa ruudussa **OK**. Tapahtuman kirjaaminen kestää noin minuutin. Anna käsittelyn valmistua äläkä sulje sivua.  
+20. Valitse **OK** ja valitse sitten seuraavassa ruudussa **OK**. Tapahtuman kirjaaminen kestää noin minuutin. Anna käsittelyn valmistua äläkä sulje sivua.  
 
 ## <a name="review-the-registered-sales-commissions"></a>Tarkastele rekisteröityjä myyntiprovisioita
 1. Valitse toimintoruudussa **Lasku**, ja valitse sitten jälleen **Lasku**.

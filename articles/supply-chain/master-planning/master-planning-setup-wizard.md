@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213581"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427203"
 ---
 # <a name="master-planning-setup-wizard"></a>Pääsuunnittelun asetusten ohjattu toiminto
 
@@ -114,7 +114,7 @@ Pääsuunnittelun asetukset päivitetään vastausten perusteella saman skeeman 
 - **Kyllä, kuten määritetty tässä pääsuunnitelmassa** – **Aikaraja** -asetukseksi määritetään **Kyllä**. Päivien määrä, jonka syötät, käytetään ja se ohittaa arvot, jotka on määritetty kattavuusryhmissä.
 - **Kyllä, kuten määritetty kattavuusryhmässä** – **Aikaraja**-asetukseksi määritetään **Ei**.
 
-Lasketuissa viiveissä vastaukset ohjatun toiminnon kysymyksiin päivittävät vastaavat parametrit**Pääsuunnitelmat** -sivun **Lasketut viiveet** -välilehdessä.
+Lasketuissa viiveissä vastaukset ohjatun toiminnon kysymyksiin päivittävät vastaavat parametrit **Pääsuunnitelmat** -sivun **Lasketut viiveet** -välilehdessä.
 
 ## <a name="summary-of-your-changes"></a>Yhteenveto tekemistäsi muutoksista
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 85b9f473cc725896a00501510eea02d7cfb21782
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888868"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426965"
 ---
 # <a name="install-assets-on-functional-locations"></a>Asenna toiminnallisten sijaintien resurssit
 
@@ -64,7 +64,7 @@ Kun olet asentanut resursseja toiminnalliseen sijaintiin, voit korvata pääresu
     > Voit muuttaa resurssin asennusta asentamalla sen uuteen toiminnalliseen sijaintiin noudattamalla tämän toimenpiteen vaiheita 1–6. Kun asennat resurssin uuteen toiminnalliseen sijaintiin, resurssi poistetaan automaattisesti edellisestä toiminnallisesta sijainnista. Kaikki aktiiviset ylläpitopyynnöt tai työtilaukset, jotka on luotu resurssille ennen sen asentamista uuteen toiminnalliseen sijaintiin, **eivät** siirry automaattisesti uuteen toiminnalliseen sijaintiin. Jos resurssin ylläpitopyynnöt ja työtilaukset ovat edelleen pakollisia, ne on luotava manuaalisesti uudelleen sen jälkeen, kun resurssi on asennettu uuteen sijaintiin.
 
 7. Jos haluat tarkastella kaikkien toiminnalliseen sijaintiin asennettuja resursseja (ml. aliresurssit) valitse toiminnallinen sijainti **Kaikki toiminnalliset sijainnit** -sivulla ja valitse sitten **Resurssit**.
-8. Nähdäksesi luettelon aktiivisista ylläpitopyynnöistä, aktiivisista työtilauksista tai vikarekisteröinneistä, jotka liittyvät toiminnalliseen sijaintiin asennettuihin resursseihin, valitse toiminnallinen sijainti **Kaikki toiminnalliset sijainnit** -sivulla ja valitse **Pyynnöt**, **Työtilaukset**tai **Viat**.
+8. Nähdäksesi luettelon aktiivisista ylläpitopyynnöistä, aktiivisista työtilauksista tai vikarekisteröinneistä, jotka liittyvät toiminnalliseen sijaintiin asennettuihin resursseihin, valitse toiminnallinen sijainti **Kaikki toiminnalliset sijainnit** -sivulla ja valitse **Pyynnöt**, **Työtilaukset** tai **Viat**.
 
 > [!NOTE]
 > Kun resurssiin liittyviä tietoja muutetaan, se päivitetään automaattisesti toiminnalliseen sijaintiin, johon resurssi on asennettu. Tämä automaattinen päivitys koskee kunnossapitopyyntöjen, työtilausten, resurssin vikarekisteröintien, kunnossapitokatkoksien rekisteröintien ja resurssien mittausrekisteröintien muutoksia.
@@ -82,4 +82,4 @@ Kun asetustiedot ovat käytettävissä, olet valmis luomaan resurssin.
 
 1. Varmista **Kaikki toiminnalliset sijainnit** -sivulla, että toiminnallinen sijainti, johon haluat luoda automaattisesti resurssin, käyttää tätä tarkoitusta varten luomaasi toiminnallisen sijainnin tyyppiä.
 2. Valitse luettelosta toiminnallinen sijainti.
-3. Valitse **Päivitä toiminnallisen sijainnin tila**ja valitse sitten sen elinkaaren tila, jonka loit tätä tarkoitusta varten. Yksi resurssi asennetaan nyt automaattisesti toiminnalliseen sijaintiiin. Resurssi saa saman tunnuksen ja nimen kuin toiminnallinen sijainti.
+3. Valitse **Päivitä toiminnallisen sijainnin tila** ja valitse sitten sen elinkaaren tila, jonka loit tätä tarkoitusta varten. Yksi resurssi asennetaan nyt automaattisesti toiminnalliseen sijaintiiin. Resurssi saa saman tunnuksen ja nimen kuin toiminnallinen sijainti.

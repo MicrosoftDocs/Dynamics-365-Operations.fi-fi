@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: d3719a533ef9861514f71ce98d5a9f080c29fb17
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206055"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427283"
 ---
 # <a name="work-order-report"></a>Työtilausraportti
 
@@ -37,7 +37,7 @@ Voit luoda työtilausraportin, jossa näkyy yksityiskohtaisia tietoja yhdestä t
 2. Valitse vaihtopainikkeissa "kyllä"/"ei" tarpeen mukaan määrittääksesi raporttiin sisällytettävät tiedot.  
     - Voit valita **Tulostusasetukset**-osassa, haluatko sisällyttää tulostukseen liitteet liittyvän ylläpitotöiden tyypin määrityksestä.
 
-3. Voit suodattaa raportin sisällön**Työtilaus**-kentän mukaan **Sisällytettävät tietueet** -pikavälilehdessä.
+3. Voit suodattaa raportin sisällön **Työtilaus**-kentän mukaan **Sisällytettävät tietueet** -pikavälilehdessä.
 
 4. **Suorita taustalla** -pikavälilehdessä voit määrittää työtilausraportin luonnin erätyönä tarpeen mukaan.
 

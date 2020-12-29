@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889838"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427180"
 ---
 # <a name="asset-management-parameters"></a>Resurssienhallinnan parametrit
 
@@ -52,10 +52,10 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
 
 - **Työtilauksen oletustyyppi** määrittää vakioasetukset työtilausta luotaessa.  
 - **Ennaltaehkäisevän työtilauksen tyyppi** määrittää työtilaustyypin, jota käytetään luotaessa työtilauksia ylläpitosuunnitelmista. Jos tämä kenttä jätetään tyhjäksi, työtilauksen tyypiksi käytetään **Työtilauksen oletustyyppi** -kenttän arvoa.  
-- **Liittyvän työtilauksen peite** -kenttään määritetään työtilausten enimmäismäärä, joka voidaan liittää työtilaukseen. Esimerkki: ## sallii enintään 99 liittyvää työtilausta. Jos määrität peitettä tässä kuvatulla tavalla, siihen liittyvät työtilaukset numeroidaan [työtilauksen tunnus työtilaukselle, johon työtilaus liittyy]-01, -02, -03 ja niin edelleen. Jos tähän kenttään ei määritetä peitettä, liittyvä työtilaus saa seuraavan peräkkäisen työtilauksen tunnuksen.  
+- **Liittyvän työtilauksen peite** -kenttään määritetään työtilausten enimmäismäärä, joka voidaan liittää työtilaukseen. Esimerkki: ## sallii enintään 99 liittyvää työtilausta. Jos määrität peitteen tässä kuvatulla tavalla, siihen liittyvät työtilaukset numeroidaan sen [työtilauksen tunnukselle, johon työtilaus liittyy] -01, -02, -03 ja niin edelleen. Jos tähän kenttään ei määritetä peitettä, liittyvä työtilaus saa seuraavan peräkkäisen työtilauksen tunnuksen.  
 - Valitse **Kyllä** **Kopioi viat** -kohdassa, jos haluat kopioida työtilauksiin rekisteröidyt viat automaattisesti liittyviin ylläpitopyyntöihin. 
 - **Taso**-kentässä määritetään toiminnallinen sijaintitaso, joka lisätään työtilaukseen automaattisesti, jos kaikki liittyvät työtilaustyöt viittaavat samaan toiminnalliseen sijaintiin. Jos työtilauksen työt eivät kaikki liity määritettyyn tasoon samassa toiminnallisessa sijainnissa, työtilauksen **Toiminnallinen sijainti** -kenttä jätetään tyhjäksi. Jos lisäät tähän kenttään esimerkiksi numeron 1, käytetään toiminnallisen sijainnin rakenteen ylintä tasoa. Jos lisäät tähän kenttään numeron "0", et ole määrittänyt tiettyä toiminnallista sijaintitasoa, vain, että työtilauksen kaikkien työtilaustöiden on oltava yhteydessä samaan toiminnalliseen sijaintiin, jolle kyseinen toiminnallinen sijainti lisätään työtilaukseen.  
-- Työtilauksen kulutuksen kirjaamisen yhteydessä käytettävät kirjauskansiot voidaan valita**Yleiset**-pikavälilehden **Tunti**-, **Nimike**- ja **Kulu**-kentissä.  
+- Työtilauksen kulutuksen kirjaamisen yhteydessä käytettävät kirjauskansiot voidaan valita **Yleiset**-pikavälilehden **Tunti**-, **Nimike**- ja **Kulu**-kentissä.  
 - Valitse **Tuotteen kielen lähde** -kentässä, mitä kieltä käytetään resurssien hallinnan raporttien tuotenimissä. Voit valita yrityksen tilille määritetyn kielen tai tällä hetkellä kirjautuneena olevalle käyttäjälle määritetyn kielen.  
 - Valitse **Kyllä** **Reaaliaikainen päivitys** -kohdassa, jos haluat päivittää automaattisesti muutokset työtyypin oletusarvoihin, ylläpitosuunnitelmiin ja ylläpitokierroksiin.
   - Jos valitset **Ei**, muutoksia työtyypin oletuksiin, ylläpitosuunnitelmiin ja ylläpitokierroksiin ei päivitetä automaattisesti resurssien hallinnassa.

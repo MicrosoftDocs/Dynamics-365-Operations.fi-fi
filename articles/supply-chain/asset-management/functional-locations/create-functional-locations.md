@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 37da9d59e4e9cf84238f6798a1aa7de72ff91f02
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888825"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426966"
 ---
 # <a name="create-functional-locations"></a>Luo toiminnalliset sijainnit
 
@@ -80,7 +80,7 @@ Lisätietoja resurssien asentamisesta on kohdassa [Asenna toiminnallisten sijain
 
 ## <a name="asset-attribute-requirements"></a>Resurssien määritteiden vaatimukset
 
-Tässä pikavälilehdessä voidaan lisätä tiettyjä määritevaatimuksia resursseille, jotka asennetaan toiminnalliseen sijaintiin. Nämä vaatimukset ovat vain tiedoksi. Ne eivät estä sinua asentamasta resursseja muiden määritevaatimusten kanssa. Valitse **Lisää rivi** ja valitse määritetyyppi. Lisää sitten asiaankuuluva**Arvo**, valitse kynnys **Raja-arvon ehto** -kentässä ja tallenna tietue.
+Tässä pikavälilehdessä voidaan lisätä tiettyjä määritevaatimuksia resursseille, jotka asennetaan toiminnalliseen sijaintiin. Nämä vaatimukset ovat vain tiedoksi. Ne eivät estä sinua asentamasta resursseja muiden määritevaatimusten kanssa. Valitse **Lisää rivi** ja valitse määritetyyppi. Lisää sitten asiaankuuluva **Arvo**, valitse kynnys **Raja-arvon ehto** -kentässä ja tallenna tietue.
 
 ## <a name="maintenance-plans-and-maintenance-rounds"></a>Huoltosuunnitelmat ja huoltokierrokset
 

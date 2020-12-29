@@ -16,11 +16,11 @@ ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 3a2c8a69a2c64214a38a654042ea2f62575e7f52
-ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3837309"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426954"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Mobiililaitteen valikkovaihtoehdon määrittäminen tuottamaan keräilyrivin yhteenvedon
 
