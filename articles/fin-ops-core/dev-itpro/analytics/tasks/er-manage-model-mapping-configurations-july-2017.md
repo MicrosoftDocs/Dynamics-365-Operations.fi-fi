@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143050"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684424"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Hallitse ER-mallien kartoitusta erillisissä ER-konfiguraatioissa
 
@@ -31,7 +30,7 @@ Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvo
 Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla, koska yritykset jakavat ER-konfiguraatiot. Tässä oppaassa tehtävä toiminto on käytettävissä, jos olet asentanut jonkin seuraavista hotfix-korjauksista: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 Dynamics AX 7.0 -versiolle tai https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 Dynamics 365 for Operations -versiolle.
 
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja onko se merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet.   
+    * Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja onko se merkitty aktiiviseksi. Jos tämän määrityksen tarjoajaa ei ole näkyvissä, tehtäväoppaan vaiheet on suoritettava ensin, Määrityksen tarjoaja on luotava ja se on merkittävä aktiiviseksi.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Uuden ER-mallimäärityksen lisääminen
 1. Valitse Raportointikonfiguraatiot.
@@ -59,16 +58,16 @@ Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla,
 18. Valitse Valmis.
 19. Valitse OK.
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Uuden ER-mallin yhdistämismäärityksen konfiguraation lisääminen
+## <a name="add-a-new-er-model-mapping-configuration"></a>Uuden ER-mallin yhdistämismääritysmäärityksen lisääminen
 1. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
 2. Anna Uusi-kenttään Mallin yhdistämismääritys perustuu tietomalliin Tietomallin esimerkki.
 3. Syötä Nimi-kenttään Esimerkkiyhdistämismääritys.
     * Esimerkkiyhdistämismääritys  
 4. Valitse Luo konfiguraatio.
 5. Laajenna Edellytykset-osa.
-    * Huomaa, että toteutusten edellytysten ryhmä on lisätty automaattisesti. Ryhmä sisältää edellytetyn komponentin, joka viittaa päätietomallin konfiguraatioon ja jossa käytetään Toteutus-merkintää. Merkintä tarkoittaa, että Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraatiota pidetään Esimerkki-tietomallin toteutuksena. Tämä vuoksi tämä komponentti pakottaa sähköisen raportoinnin lataamaan mallin yhdistämismäärityksen konfiguraation (Esimerkkiyhdistämismääritys) sähköisen raportoinnin säilöstä, kun mallin konfiguraatio, Esimerkkitietomalli, ladataan.   
+    * Toteutusten edellytysten ryhmä on lisätty automaattisesti. Ryhmä sisältää edellytetyn komponentin, joka viittaa päätietomallin konfiguraatioon ja jossa käytetään Toteutus-merkintää. Tämä tarkoittaa, että Esimerkkiyhdistämismääritys-yhdistämismäärityksen konfiguraatiota pidetään Esimerkki-tietomallin toteutuksena. Tämä vuoksi tämä komponentti pakottaa sähköisen raportoinnin lataamaan mallin yhdistämismäärityksen määrityksen (Esimerkkiyhdistämismääritys) sähköisen raportoinnin säilöstä, kun mallin määritys, Esimerkkitietomalli, ladataan.   
 6. Valitse Suunnittelutoiminto.
-    * Ota huomioon, että luotu mallin yhdistämismäärityksen kokoonpano sisältää uuden tyhjän yhdistämismäärityksen, jolla on sama nimi kuin luodulla konfiguraatiolla. Huomioi, että kun valittu päämallin konfiguraatio sisältää mallin yhdistämismäärityksiä, ne kopioidaan uuteen mallin yhdistämismäärityksen konfiguraatioon.   
+    * Luotu mallin yhdistämismäärityksen kokoonpano sisältää uuden tyhjän yhdistämismäärityksen, jolla on sama nimi kuin luodulla määrityksellä. Kun valittu päämallin määritys sisältää mallin yhdistämismäärityksiä, ne kopioidaan uuteen mallin yhdistämismäärityksen määritykseen.   
 7. Valitse Suunnittelutoiminto.
 8. Valitse puussa Dynamics 365 for Operations\Table.
 9. Valitse Lisää juuri.
@@ -112,9 +111,9 @@ Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla,
 16. Valitse Suorita.
     * Valitse Versiot-pikavälilehdessä Suorita.  
 17. Valitse OK.
-    * Tarkista tulos, joka sisältää sen yrityksen nimen, johon tämän muotokonfiguraation suorittava käyttäjä on kirjautunut. Ota huomioon, että tämä muotokonfiguraatio käyttää tätä mallin yhdistämismäärityksen konfiguraatiota, koska vaaditut mallin yhdistämismääritykset sisältäviä konfiguraatioita on vain yksi.   
+    * Tarkista tulos, joka sisältää sen yrityksen nimen, johon tämän muotokonfiguraation suorittava käyttäjä on kirjautunut. Luotu muotomääritys käyttää tätä mallin yhdistämismäärityksen määritystä, koska vaaditut mallin yhdistämismääritykset sisältäviä määrityksiä on vain yksi.   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Vaihtoehtoisen ER-mallin yhdistämismäärityksen konfiguraation lisääminen
+## <a name="add-alternative-er-model-mapping-configuration"></a>Vaihtoehtoisen ER-mallin yhdistämismäärityksen määrityksen lisääminen
 1. Valitse puussa Sample data model.
 2. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
 3. Anna Uusi-kenttään Mallin yhdistämismääritys perustuu tietomalliin Tietomallin esimerkki.
@@ -150,15 +149,15 @@ Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla,
 28. Sulje sivu.
 29. Valitse Suorita luonnos -kentässä Kyllä.
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Aiemmin määritetyn ER-mallin yhdistämismäärityksen konfiguraation käyttäminen
+## <a name="use-an-existing-er-model-mapping-configuration"></a>Aiemmin määritetyn ER-mallin yhdistämismäärityksen määrityksen käyttäminen
 1. Valitse puussa Sample data model\Sample format.
 2. Valitse Suorita.
-    * Ota huomioon, että ER-muotokonfiguraation luonnosversiota ei voi suorittaa, koska suoritettavan ER-muodon tietolähteeksi valitulla määrittämättömällä tietomallilla on käytettävissä useita mallin yhdistämismäärityksen konfiguraatioita.   
-    * Seuraavaksi määritetään vaihtoehtoinen mallin yhdistämismäärityksen konfiguraatio, josta mallin yhdistämismäärityksiä käytetään tietolähteinä ER-muodon suorituksessa.   
+    * Valittua ER-muotokonfiguraation luonnosversiota ei voi suorittaa, koska suoritettavan ER-muodon tietolähteeksi valitulla määrittämättömällä tietomallilla on käytettävissä useita mallin yhdistämismäärityksen määrityksiä.   
+    * Seuraavaksi määritetään vaihtoehtoinen mallin yhdistämismäärityksen määritys, josta mallin yhdistämismäärityksiä käytetään tietolähteinä ER-muodon suorituksessa.   
 3. Valitse puussa Sample data model\Sample mapping (alternative).
 4. Valitse Mallin määrityksen oletusarvo -kentässä Kyllä.
 5. Valitse puussa Sample data model\Sample format.
 6. Valitse Suorita.
 7. Valitse OK.
-    * Ota huomioon, että tämä muotokonfiguraatio käyttää mallin yhdistämismäärityksen oletuskonfiguraatiota sähköisen asiakirjan (luotu tuloste sisältää yrityskoodin) luomiseen.  
+    * Tämä mallin yhdistämismäärityksen määritys käyttää mallin yhdistämismäärityksen oletusmääritystä sähköisen asiakirjan (luotu tuloste sisältää yrityskoodin) luomiseen.  
 

@@ -18,33 +18,35 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997475"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683726"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Valuutta-arvoissa tuettujen desimaalien määrän voi kasvattaa enintään kymmeneen. Oletusraja on neljä desimaalia. Desimaalien määrää lisäämällä voi estää tietojen menettämisen, kun tietojen synkronointiin käytetään kaksoiskirjoitusta. Desimaalien määrän lisääminen on muutos, joka on hyväksyttävä. Muutoksen tekemiseen tarvitaan Microsoftin apua.
 
 Desimaalien määrään muuttamisessa on kaksi vaihetta:
 
 1. Siirtoa pyydetään Microsoftilta.
-2. Desimaalien määrää muutetaan Common Data Servicessa.
+2. Desimaalien määrää muutetaan Dataversessa.
 
-Finance and Operations -sovelluksen ja Common Data Servicen on tuettava samaa valuutta-arvojen desimaalimäärää. Muussa tapauksessa tietoja menetetään, kun tietoja synkronoidaan sovellusten välillä. Vaikka siirtoprosessi määrittää uudelleen tavan, jolla valuutta- ja vaihtokurssiarvot tallennetaan, itse tiedot eivät muutu. Kun siirto on valmis, desimaalien määrää voi lisätä valuuttakoodeissa ja hinnoittelussa, minkä lisäksi käyttäjien antamien ja tarkastelemien tietojen desimaalitarkkuus voi parantua.
+Finance and Operations -sovelluksen ja Dataversen on tuettava samaa valuutta-arvojen desimaalimäärää. Muussa tapauksessa tietoja menetetään, kun tietoja synkronoidaan sovellusten välillä. Vaikka siirtoprosessi määrittää uudelleen tavan, jolla valuutta- ja vaihtokurssiarvot tallennetaan, itse tiedot eivät muutu. Kun siirto on valmis, desimaalien määrää voi lisätä valuuttakoodeissa ja hinnoittelussa, minkä lisäksi käyttäjien antamien ja tarkastelemien tietojen desimaalitarkkuus voi parantua.
 
 Siirto on valinnainen toiminto. Jos desimaalien lisäämisestä saattaa olla hyötyä, siirtoa kannattaa harkita. Organisaatioiden, jotka eivät tarvitse yli neljän desimaalin arvoja, ei tarvitse siirtyä.
 
 ## <a name="requesting-migration-from-microsoft"></a>Siirron pyytäminen Microsoftilta
 
-Common Data Servicen nykyisten valuuttakenttien tallennustila hyväksyy enintään neljä desimaalia. Tämän vuoksi valuutta-arvot kopioidaan siirtoprosessin aikana tietokannan uusiin, sisäisiin kenttiin. Tämä prosessi jatkuu siihen saakka, että kaikki tiedot on siirretty. Vaikka siirron päätyttyä uudet tallennustilatyypit korvaavat sisäisesti vanhat tallennustilat, tietoarvot eivät ole muuttuneet. Valuuttakentät voivat tämän jälkeen tukea enintään 10 desimaalia. Common Data Servicen käyttöä voi jatkaa siirtoprosessin aikana ilman keskeytyksiä.
+Dataversen nykyisten valuuttakenttien tallennustila hyväksyy enintään neljä desimaalia. Tämän vuoksi valuutta-arvot kopioidaan siirtoprosessin aikana tietokannan uusiin, sisäisiin kenttiin. Tämä prosessi jatkuu siihen saakka, että kaikki tiedot on siirretty. Vaikka siirron päätyttyä uudet tallennustilatyypit korvaavat sisäisesti vanhat tallennustilat, tietoarvot eivät ole muuttuneet. Valuuttakentät voivat tämän jälkeen tukea enintään 10 desimaalia. Dataversen käyttöä voi jatkaa siirtoprosessin aikana ilman keskeytyksiä.
 
-Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama Finance and Operations -sovelluksessa ja Common Data Servicessa.
+Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama Finance and Operations -sovelluksessa ja Dataversessa.
 
 Siirto ei muuta tietoja millään tavalla. Kun valuutta- ja vaihtokurssikentät on muunnettu, järjestelmänvalvojat voivat määrittää järjestelmän käyttämään valuuttakentissä 10 desimaalia. Se tehdään määrittämällä kunkin tapahtuman valuutan ja hinnoittelun desimaalien määrä.
 
@@ -61,12 +63,12 @@ Kun pyydät siirtoa, seuraavat tiedot on hyvä tiedostaa ja ne on otettava huomi
 
 + Tietojen siirtämiseen tarvittava aika määräytyy järjestelmässä olevien tietojen mukaan. Suurten tietokantojen siirtäminen voi kestää useita päiviä.
 + Tietokannan koko suurenee tilapäisesti siirron aikana, koska indeksejä varten tarvitaan tilaa. Suurin osa tästä tilasta vapautuu, kun siirto on valmis.
-+ Jos siirtoprosessin aikana tapahtuu virhe, joka estää siirron valmistumisen, järjestelmää ilmoittaa siitä Microsoft-tuelle, jotta tukihenkilöstö voi ratkaista ongelma. Common Data Service on kuitenkin koko käytettävissä tavalliseen tapaa, vaikka siirron aikana esiintyisi virheitä.
++ Jos siirtoprosessin aikana tapahtuu virhe, joka estää siirron valmistumisen, järjestelmää ilmoittaa siitä Microsoft-tuelle, jotta tukihenkilöstö voi ratkaista ongelma. Dataverse on kuitenkin koko käytettävissä tavalliseen tapaa, vaikka siirron aikana esiintyisi virheitä.
 + Siirtoprosessia ei voi peruuttaa.
 
 ## <a name="changing-the-number-of-decimal-places"></a>Desimaalien määrän muuttaminen
 
-Kun siirto on valmis, Common Data Service voi tallentaa lukuja, joissa on enemmän desimaaleja. Järjestelmänvalvojat voivat valita, kuinka monta desimaalia tietyissä valuuttakoodeissa ja hinnoittelussa on. Microsoft Power Appsin, Power BI:n ja Power Automaten käyttäjät voivat sitten tarkastella ja käyttää lukuja, joissa on enemmän desimaaleja.
+Kun siirto on valmis, Dataverse voi tallentaa lukuja, joissa on enemmän desimaaleja. Järjestelmänvalvojat voivat valita, kuinka monta desimaalia tietyissä valuuttakoodeissa ja hinnoittelussa on. Microsoft Power Appsin, Power BI:n ja Power Automaten käyttäjät voivat sitten tarkastella ja käyttää lukuja, joissa on enemmän desimaaleja.
 
 Tämän muutoksen tekeminen edellyttää, että seuraavat Power Appsin asetukset päivitetään:
 
@@ -76,11 +78,11 @@ Tämän muutoksen tekeminen edellyttää, että seuraavat Power Appsin asetukset
 Rajoituksia:
 
 + Valuuttakenttää ei voi määrittää entiteetissä.
-+ Yli neljä desimaalia voidaan määrittää vain **Hinnoittelu** - ja **Tapahtumavaluutta** -tasoilla.
++ Yli neljä desimaalia voidaan määrittää vain **Hinnoittelu**- ja **Tapahtumavaluutta**-tasoilla.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Järjestelmäasetukset: valuutan tarkkuus hinnoittelussa
 
-Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset** -välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -kentässä, kuten seuraavassa kuvassa.
+Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset**-välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -kentässä, kuten seuraavassa kuvassa.
 
 ![Valuutan järjestelmäasetukset](media/currency-system-settings.png)
 
@@ -90,6 +92,6 @@ Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tar
 
 ![Tietyn alueen valuutta-asetukset](media/specific-currency.png)
 
-### <a name="entities-currency-field"></a>Entiteetit: Valuutta-kenttä
+### <a name="tables-currency-field"></a>taulut: Valuutta-kenttä
 
 Tiettyihin valuuttakenttiin määritettävien desimaalien määrä on rajoitettu neljään.

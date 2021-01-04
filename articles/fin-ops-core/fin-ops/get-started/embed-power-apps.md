@@ -3,7 +3,7 @@ title: Power Appsin kaavasovellusten upottaminen
 description: Tässä ohjeaiheessa käsitellään Microsoft Power Appsin kaaviosovellusten upottamista asiakasohjelmaan laajentamaan tuotteen toimintoja.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: ba3b736aeae8540349309ddd82bd431720b9701c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893104"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693480"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Appsin kaavasovellusten upottaminen
 
@@ -57,7 +56,7 @@ Seuraavassa menettelyssä esitetään, miten Power Apps -kaaviosovellus upotetaa
 3. Määritä upotettu sovellus seuraavasti:
 
     - **Nimi**-kentässä on sen painikkeen tai välilehden teksti, joka sisältää upotetun sovelluksen. Sovelluksen nimi on usein toistettava tässä kentässä.
-    - **Sovellustunnus**-kenttä ilmaisee upotettavan kaaviosovelluksen GUID-tunnuksen. Voit noutaa tämän arvon etsimällä sovelluksen sivustossa [web.powerapps.com](https://web.powerapps.com) ja siirtymällä sitten **Sovelluksen tunnus** -kenttään **Tiedot**-kohdassa.
+    - **Sovellustunnus**-kenttä ilmaisee upotettavan kaaviosovelluksen GUID-tunnuksen. Voit noutaa tämän arvon etsimällä sovelluksen sivustossa [make.powerapps.com](https://make.powerapps.com) ja siirtymällä sitten **Sovelluksen tunnus** -kenttään **Tiedot**-kohdassa.
     - Voit vaihtoehtoisesti valita **Lisää sovellukselle konteksti** -kohdassa kentän, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla sovellus voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovelluksista lähetettyjä tietoja hyödyntävien sovellusten kehittäminen](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
     - Valitse upotettavan sovelluksen tyyppiä vastaava **sovelluksen koko**. Jos sovellus luodaan mobiililaitteille, valitse **Ohut**. Jos se luodaan tableteille, valitse **Leveä**. Tämä varmistaa, että upotetulle sovellukselle on varattu riittävästi tilaa.
     - **Yritykset**-pikavälilehdessä voi valita, mitkä yritykset voivat käyttää sovellusta. Oletusarvona on sovelluksen antaminen käyttöön kaikille yrityksille. Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä. 

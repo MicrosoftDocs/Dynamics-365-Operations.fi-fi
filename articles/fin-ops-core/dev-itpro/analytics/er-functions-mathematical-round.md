@@ -3,7 +3,7 @@ title: ROUND ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) ROUND-funktiota käytetään.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12af71a024a76fca98fc2e876da9b59e5762cf07
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 83fb5c04938e0aba1277f2d6017d4b66208a8858
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3744548"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683253"
 ---
 # <a name="round-er-function"></a>ROUND ER-funktio
 
@@ -57,7 +56,7 @@ Tuloksena oleva numeroarvo.
 
 Jos `decimals`-argumentin arvo on yli 0 (nolla), numero pyöristetään kyseiseen määrään desimaaleja.
 
-Jos `decimals`-argumentin arvo on **0** (nolla), numero pyöristetään lähimpään kokonaislukuun.
+Jos `decimals`-argumentin arvo on **0** (nolla), numero pyöristetään lähimpään parilliseen kokonaislukuun.
 
 Jos `decimals`-argumentin arvo on vähemmän kuin 0 (nolla), numero pyöristetään desimaalipilkusta vasemmalle.
 
@@ -68,6 +67,10 @@ Jos `decimals`-argumentin arvo on vähemmän kuin 0 (nolla), numero pyöristetä
 ## <a name="example-2"></a>Esimerkki 2
 
 `ROUND (1200.767, -3)` pyöristää lähimpään tuhanteen ja palauttaa arvon **1000**.
+
+## <a name="example-3"></a>Esimerkki 3
+
+`ROUND (1200.5, 0)` pyöristää lähimpään parilliseen kokonaislukuun ja palauttaa arvon **1200**, mutta `ROUND (1201.5, 0)` tekee saman ja palauttaa arvon **1202**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

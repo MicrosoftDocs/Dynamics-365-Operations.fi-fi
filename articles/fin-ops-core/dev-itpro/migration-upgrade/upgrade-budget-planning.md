@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5ba9b8a041f9eef8142cb56d7c764a5faf6071f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191497"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680995"
 ---
 # <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
 
@@ -33,7 +32,7 @@ Microsoft Dynamics AX 2012:n ja Dynamics 365 Financein budjettisuunnittelutoimin
 Financen budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Dynamics AX 2012:ssa. Tässä ohjeaiheessa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä ohjeaiheessa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
 
 ## <a name="overview-of-changes"></a>Muutosten yleiskatsaus
-Dynamics 365 for Finance and Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Financesta:
+Finance and Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Financesta:
 
 -   Budjettisuunnitelman mallit (budjettisuunnittelun konfigurointi)
 -   Budjettisuunnitelman kansiot (budjettisuunnittelun konfigurointi)
@@ -72,7 +71,7 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
    -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
    -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
 
-   Finance and Operationsissa luodaan seuraavat sarakkeet:
+   Seuraavat sarakkeet luodaan Finance and Operationsissa:
 
    | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
    |----------------|----------------------|--------------------|-------------|

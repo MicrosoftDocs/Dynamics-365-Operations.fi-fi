@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893132"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681301"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -250,14 +249,14 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 
 Kun työasiakirjan hallintatoiminnon **Yrityksen asiakirjanhallinnan Officen kaltainen käyttökokemus** on poistettu käytöstä **Ominaisuuksien hallinta** -työtilassa, **Yrityksen asiakirjanhallinnan** työtilan pääruudukkona näkyvät seuraavat mallit:
 
-- Mallit, joiden omistaja on ER-määrityksen toimittaja (eli toimittaja, joka on tällä hetkellä merkitty aktiiviseksi **Sähköinen raportointi** -työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla**Muokkaa mallia**.
+- Mallit, joiden omistaja on ER-määrityksen toimittaja (eli toimittaja, joka on tällä hetkellä merkitty aktiiviseksi **Sähköinen raportointi** -työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla **Muokkaa mallia**.
 - Muiden ER-määritysten toimittajien omistamat mallit. Kun olet valinnut jonkin näistä malleista, voit valita **Uuden tiedoston** ja luoda siitä kopion, jonka omistaa ER-määrityspalvelu, ja aloittaa sitten kopion muokkaamisen.
 
 ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate1.png)
 
 **Malli** -välilehdessä näkyy valitun mallin sisältö. Valitse **Tiedot**-välilehti, jossa voit tarkastella valitun mallin tietoja sekä sen ER-muotokonfiguraation tietoja, jossa tämä malli sijaitsee. Huomaa, että kaikkien mallien tila on **Julkaistu**, eivätkä ne sisällä tietoja **Tarkistusversio**-sarakkeessa. Tämä tarkoittaa, että näitä malleja ei tällä hetkellä muokata.
 
-Kun **Työasiakirjan hallinta -toiminnon toimiston kaltainen käyttöliittymä** on otettu käyttöön **Ominaisuuksien hallinta** -työtilassa, **yrityksen asiakirjanhallinnan** työtilan pääruudukko näyttää ne mallit, jotka ovat ER-määrityksen toimittajan omistamia (eli palvelu, joka on tällä hetkellä merkitty aktiiviseksi **sähköisen raportoinnin** työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla**Muokkaa mallia**.
+Kun **Työasiakirjan hallinta -toiminnon toimiston kaltainen käyttöliittymä** on otettu käyttöön **Ominaisuuksien hallinta** -työtilassa, **yrityksen asiakirjanhallinnan** työtilan pääruudukko näyttää ne mallit, jotka ovat ER-määrityksen toimittajan omistamia (eli palvelu, joka on tällä hetkellä merkitty aktiiviseksi **sähköisen raportoinnin** työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla **Muokkaa mallia**.
 
 Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, valitse **Uusi asiakirja** luodaksesi kopion ER-toimittajan omistamasta mallista. Voit sitten aloittaa kopion muokkaamisen. Katso lisätietoja kohdasta [Uuden asiakirjan käyttöliittymä liiketoiminta-asiakirjan hallinnassa](er-business-document-management-new-template-ui.md).
 
@@ -276,7 +275,7 @@ Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, v
 
 ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Valitse **Uusi asiakirja**ja muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
+3. Valitse **Uusi asiakirja** ja muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
 4. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
 5. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin kommentti.
 6. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
@@ -406,7 +405,7 @@ Kyllä voit. Valitse ensimmäisessä sovellusistunnossa **Avaa työpöytäsovell
 
 1. Tee muutoksia malliin käyttämällä Office-työpöytäsovellusta.
 2. Valitse Office-työpöytäsovelluksessa **Tallenna**.
-3. Valitse ensimmäisen sovellusistunnon **BDM-mallieditorin**sivulla **Synkronoi tallennettu kopio**.
+3. Valitse ensimmäisen sovellusistunnon **BDM-mallieditorin** sivulla **Synkronoi tallennettu kopio**.
 4. Suorita tämä mallin ER-muoto toisessa sovellusistunnossa.
 
 #### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Näyttöön tulee virhe "Arvo ei voi olla nolla. Parametrin nimi: : externalId’, kun valitsen **Avaa työpöytäsovelluksessa**. Kuinka voin välttää tämän? 

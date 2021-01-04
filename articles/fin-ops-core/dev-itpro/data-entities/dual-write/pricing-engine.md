@@ -19,11 +19,11 @@ ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
 ms.openlocfilehash: 740ae20704abd9c59f64c2c7622fa96d65dccb1d
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997143"
+ms.locfileid: "4452219"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Synkronointi Dynamics 365 Supply Chain Management -hinnoittelumoduulin kanssa tarvittaessa
 
@@ -53,12 +53,12 @@ Microsoft Dynamics 365 Supply Chain Management sisältää hinnoittelumoduulin, 
 5. Sen varmistamiseksi, että järjestelmä ottaa huomioon kauppa- ja myyntisopimukset hinnan laskennassa:
     1. Siirry Supply Chain Management -ympäristöön.
     2. Siirry kohtaan **Myyntireskontra \> Asetukset \> Myyntireskontran parametrit**.
-    3. Valitse sivunavigointipalkista **Hinnat** -välilehti.
+    3. Valitse sivunavigointipalkista **Hinnat**-välilehti.
     4. Poista **kauppasopimuksen arviointi** -pikavälilehdestä **manuaalinen syöttö** -valinta.
 
 ## <a name="how-it-works"></a>Näin se toimii
 
-Kun valitset **Hintatilauksen** Salesissa, **Yhteensä** -toiminto **Myyntitilaus \>Näkymä** -välilehden Supply Chain Managementissa on nimeltään liittyvä myyntitilaus. Myynnin tilauksen kokonaissumman arvoja käytetään toimitusketjun hallinnan vastaavien kenttien täyttämiseen.
+Kun valitset **Hintatilauksen** Salesissa, **Yhteensä**-toiminto **Myyntitilaus \>Näkymä** -välilehden Supply Chain Managementissa on nimeltään liittyvä myyntitilaus. Myynnin tilauksen kokonaissumman arvoja käytetään toimitusketjun hallinnan vastaavien kenttien täyttämiseen.
 
 Kun myyntitilauksen kokonaissumma lasketaan Supply Chain Managementissa, laskelma laskee asiakkaan ja myyntitilauksessa lueteltujen tuotteiden olemassa olevat kauppasopimukset ja myyntisopimukset. Näitä tietoja käytetään summien laskemiseen. Kun **Hintatilaus** valitaan, Sales vastaa automaattisesti kaikkia Supply Chain Managementin asetuksia.
 
@@ -67,5 +67,5 @@ Kun myyntitilauksen kokonaissumma lasketaan Supply Chain Managementissa, laskelm
 Kun Salesin kentät on täytetty, seuraavat rajoitukset ovat voimassa:
 
 + Supply Chain Managementin kuluja ja kulujen kohdistuksia ei replikoida Salesiin.
-+ Hinnoittelu ei ota huomioon erikoisvähittäismyyntihinnoittelua, joka on määritetty **Vähittäismyyntikanava** -kentässä myyntitilausrivisivulla Supply Chain Managementissa.
++ Hinnoittelu ei ota huomioon erikoisvähittäismyyntihinnoittelua, joka on määritetty **Vähittäismyyntikanava**-kentässä myyntitilausrivisivulla Supply Chain Managementissa.
 + Supply Chain Managementin **Myynninedistämispalkkioiden hallinta** -osassa määritettyjä alennuksia ei oteta huomioon.

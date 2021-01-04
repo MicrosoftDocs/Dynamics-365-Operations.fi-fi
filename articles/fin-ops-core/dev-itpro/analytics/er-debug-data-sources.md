@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 5b51c4beac0ddf1e2b53fe300e10c0f608e5d1e1
-ms.sourcegitcommit: 153bb33722c02501bf7bcfd56ac887602d5dfbd3
+ms.openlocfilehash: 3a486800f37dda7829aeeaa56a30285a92a61b9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3318663"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680779"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Suoritettavan ER-muodon tietolähteiden vianmääritys tiedonkulun ja muunnoksen analysointia varten
 
@@ -129,7 +128,7 @@ Seuraavat ER-muotojen asetukset eivät ole käytettävissä tietolähteen virhee
 3. Laajenna **\$PaymentByDebtor**.
 4. Laajenna **\$PaymentByDebtor.Lines** ja valitse sitten **Lue kaikki tietueet**.
 5. Laajenna **\$PaymentByDebtor.Lines.CreditorAccount**.
-6. Laajenna **\$PaymentByDebtor.Lines.CreditorAccount.Identification**ja valitse sitten **\$PaymentByDebtor.Lines.CreditorAccount.Identification.IBAN**.
+6. Laajenna **\$PaymentByDebtor.Lines.CreditorAccount.Identification** ja valitse sitten **\$PaymentByDebtor.Lines.CreditorAccount.Identification.IBAN**.
 7. Valitse **Hae arvo**.
 8. Valitse **Laajenna kaikki**.
 

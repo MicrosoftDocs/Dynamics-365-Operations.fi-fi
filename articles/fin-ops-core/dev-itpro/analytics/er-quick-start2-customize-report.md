@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67763b29744c4262249ef1ec04e7df490b31fe5b
-ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
+ms.openlocfilehash: 20e7a32ac5f6ab21f89ed3c11c64458286864c9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3498091"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680167"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 
@@ -310,7 +309,7 @@ Sinun on määritettävä mukautettu muoto, jotta se täyttää pankkikohtaiset 
     > **vendBankSWIFT**-elementtiä käytetään toimittajapankin SWIFT-koodin syöttämiseen luotuihin tiedostoihin.
 
 9. Valitse muotorakennepuussa **vendBankSWIFT**.
-10. Siirrä valittu muotoelementti yhden tason verran ylöspäin valitsemalla **Siirrä ylös**. Toista tätä vaihetta, kunnes **vendBankSWIFT**-elementti on <a id="PositionSWIFTCode"></a>ensimmäinen elementti pää**tapahtuma**elementin alla.
+10. Siirrä valittu muotoelementti yhden tason verran ylöspäin valitsemalla **Siirrä ylös**. Toista tätä vaihetta, kunnes **vendBankSWIFT**-elementti on <a id="PositionSWIFTCode"></a>ensimmäinen elementti pää **tapahtuma** elementin alla.
 
     ![VendBankSWIFT ensimmäisenä elementtinä tapahtuman alla ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-derived-format1.png)
 
@@ -325,7 +324,7 @@ Sinun on määritettävä mukautettu muoto, jotta se täyttää pankkikohtaiset 
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Merkitse mukautettu muoto suoritettavaksi
 
-Nyt kun mukautetun muotosi ensimmäinen versio on luotu, ja sen tila on**Luonnos**, voit suorittaa sen testaustarkoituksia varten. Raportin suorittamista varten sinun on käsiteltävä toimittajamaksu käyttämällä maksutapaa, joka viittaa mukautettuun ER-muotoosi. Oletuksena kun kutsut ER-muodon sovelluksesta, vain versiot, joiden tila on **Valmis** tai **Jaettu**, otetaan [huomioon](general-electronic-reporting.md#component-versioning). Tämä käytös auttaa estämään sellaisten ER-muotojen käyttöä, joiden mallit eivät ole valmiit. Testiajoissasi voit kuitenkin pakottaa sovelluksen käyttämään ER-muotosi versiota, jonka tila on **Luonnos**. Tällä tavoin voit säätää nykyistä muotoversiota, jos muokkauksia tarvitaan. Lisätietoja on kohdassa [Soveltuvuus](electronic-reporting-destinations.md#applicability).
+Nyt kun mukautetun muotosi ensimmäinen versio on luotu, ja sen tila on **Luonnos**, voit suorittaa sen testaustarkoituksia varten. Raportin suorittamista varten sinun on käsiteltävä toimittajamaksu käyttämällä maksutapaa, joka viittaa mukautettuun ER-muotoosi. Oletuksena kun kutsut ER-muodon sovelluksesta, vain versiot, joiden tila on **Valmis** tai **Jaettu**, otetaan [huomioon](general-electronic-reporting.md#component-versioning). Tämä käytös auttaa estämään sellaisten ER-muotojen käyttöä, joiden mallit eivät ole valmiit. Testiajoissasi voit kuitenkin pakottaa sovelluksen käyttämään ER-muotosi versiota, jonka tila on **Luonnos**. Tällä tavoin voit säätää nykyistä muotoversiota, jos muokkauksia tarvitaan. Lisätietoja on kohdassa [Soveltuvuus](electronic-reporting-destinations.md#applicability).
 
 Käyttääksesi ER-muodon luonnosversiota sinun on merkittävä ER-muoto selkeästi.
 

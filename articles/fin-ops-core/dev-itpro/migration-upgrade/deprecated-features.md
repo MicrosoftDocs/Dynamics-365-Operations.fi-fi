@@ -10,23 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040119"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679953"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > Tätä ohjeaihetta ei enää päivitetä. Jos haluat nähdä Finance and Operations -sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
@@ -79,11 +80,11 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | **setUtcString()** -menetelmä poistetaan, koska käytettävissä on parempi korvausmenetelmä. |
+| **Poiston tai vanhentumisen syy** | **setUtcString()**-menetelmä poistetaan, koska käytettävissä on parempi korvausmenetelmä. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan**         | Ympäristö |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: **setUtcString()** -menetelmää ei ole enää tarkoitus tukea 1.10.2020 jälkeen. Kehittäjien on käytettävä sen sijaan **setUtcDateTime()** -menetelmää. |
+| **Tila**                         | Vanhentunut: **setUtcString()**-menetelmää ei ole enää tarkoitus tukea 1.10.2020 jälkeen. Kehittäjien on käytettävä sen sijaan **setUtcDateTime()**-menetelmää. |
 
 ### <a name="blacklist-report-it--feature-reference-it-00001"></a>Mustan listan raportti (IT) – toimintoviite IT-00001
 
@@ -185,7 +186,7 @@ Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella 
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminnot otetaan aina käyttöön parametrin poistamisen jälkeen. |
 | **Onko toinen ominaisuus korvannut?**   | Nro Niiden projektiin perustuvien myyntitilausten tuen toiminnot, joilla on useita rahoituslähteitä, ovat aina käytössä.   |
-| **Tuotealueet, joihin vaikutetaan**         |**Salli myyntitilaukset projekteissa, joissa on useita rahoituslähteitä** -parametri poistetaan. Seuraavia menetelmiä muokataan, kun parametri poistetaan: **ctrlSalesOrderTable** -menetelmä **ProjStatusType** -luokassa, **validate** -menetelmä **ProjId** -kentässä ja **run** -menetelmä **SalescreateOrder** -lomakkeessa. Seuraavat menetelmät vanhentuvat, kun parametri poistetaan: **IsSalesOrderAllowedForMultipleFundingSources** **ProjTable** -taulukkotiedostossa, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** -menetelmä **ProjTable** -taulukkotiedostossa, **AllowSalesOrdersForMultipleFundingSources** -tietokenttä **ProjParameters** -lomakkeessa ja **ProjParameterEntity** -tiedostoissa sekä yksityinen **IsAssociatedToMultipleFundingSourcesContract** -menetelmä **ProjTable** -taulukkotiedostossa. |
+| **Tuotealueet, joihin vaikutetaan**         |**Salli myyntitilaukset projekteissa, joissa on useita rahoituslähteitä** -parametri poistetaan. Seuraavia menetelmiä muokataan, kun parametri poistetaan: **ctrlSalesOrderTable**-menetelmä **ProjStatusType**-luokassa, **validate**-menetelmä **ProjId**-kentässä ja **run**-menetelmä **SalescreateOrder**-lomakkeessa. Seuraavat menetelmät vanhentuvat, kun parametri poistetaan: **IsSalesOrderAllowedForMultipleFundingSources** **ProjTable**-taulukkotiedostossa, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled**-menetelmä **ProjTable**-taulukkotiedostossa, **AllowSalesOrdersForMultipleFundingSources**-tietokenttä **ProjParameters**-lomakkeessa ja **ProjParameterEntity**-tiedostoissa sekä yksityinen **IsAssociatedToMultipleFundingSourcesContract**-menetelmä **ProjTable**-taulukkotiedostossa. |
 | **Käytön asetukset**              | Kaikki  |
 | **Tila**                         | Toiminnon suunniteltu vanhenemisajankohta on vuoden 2020 huhtikuun julkaisuaallon yhteydessä. |
 
@@ -266,7 +267,7 @@ Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäytt�
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä. Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS). Tämä ongelma on luokiteltu tällä hetkellä *kääntäjän varoitukseksi* eikä *virheeksi* , minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta. Ongelman korjaaminen:<br><br>1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.<br><br>2. Käännä uudelleen.<br><br>3. Varmista, että kaikki varoitukset tai virheet käsitellään. |
+| **Poiston tai vanhentumisen syy** | Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä. Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS). Tämä ongelma on luokiteltu tällä hetkellä *kääntäjän varoitukseksi* eikä *virheeksi*, minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta. Ongelman korjaaminen:<br><br>1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.<br><br>2. Käännä uudelleen.<br><br>3. Varmista, että kaikki varoitukset tai virheet käsitellään. |
 | **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
@@ -356,7 +357,7 @@ Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Koodin sulkemisaloite  |
-| **Onko toinen ominaisuus korvannut?**   | Ei mitään. Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.<br><br>ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä. Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan **Sovellus\luokka** -tyypin lisätyn ER-tietolähteen ominaisuutena.  |
+| **Onko toinen ominaisuus korvannut?**   | Ei mitään. Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.<br><br>ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä. Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan **Sovellus\luokka**-tyypin lisätyn ER-tietolähteen ominaisuutena.  |
 | **Tuotealueet, joihin vaikutetaan**         | Sähköisen raportoinnin kehikko                                                      |
 | **Käytön asetukset**              | Kaikki                                                                                      |
 | **Tila**                         | Poistettu versiosta Finance and Operations, Enterprise edition 7.3 alkaen.    |
@@ -374,12 +375,12 @@ Finance and Operations ei enää tue raporttia. Asiakaskokemusta voi sen sijaan 
 | **Tila**                       | Vanhentunut: kahden raportin valikkovaihtoehdot on poistettu versiossa 7.3. Raporttien koodi on kuitenkin edelleen tuotteessa. Koodi on tarkoitus poistaa tulevissa versioissa. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI -sisältöpaketit ovat saatavilla AppSourcessa
-**Kustannushintojen hallinta** -, **Taloudellinen suorituskyky** - ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [Microsoft AppSource](https://appsource.microsoft.com) -sivustossa, ovat vanhentuneet Microsoft Power BI:n tuotepäivitysten vuoksi. Myös järjestelmän hallintalomakkeet, joilla nämä sisältöpaketit otetaan käyttöön Pack PowerBI.comissa, ovat vanhentumassa Finance and Operationsissa.
+**Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [Microsoft AppSource](https://appsource.microsoft.com) -sivustossa, ovat vanhentuneet Microsoft Power BI:n tuotepäivitysten vuoksi. Myös järjestelmän hallintalomakkeet, joilla nämä sisältöpaketit otetaan käyttöön Pack PowerBI.comissa, ovat vanhentumassa Finance and Operationsissa.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Microsoft Power BI:n tuotepäivitykset. |
-| **Onko toinen ominaisuus korvannut?**   | **Kustannushintojen hallinta** -, **Taloudellinen suorituskyky** - ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [AppSource](https://appsource.microsoft.com)-sivustossa, korvataan analyysisovelluksilla, jotka mahdollistavat ratkaisujen integraation tietokantatasolla. Lisätietoja analyysisovelluksista on kohdassa [Embedded Power BI työtiloissa](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Onko toinen ominaisuus korvannut?**   | **Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [AppSource](https://appsource.microsoft.com)-sivustossa, korvataan analyysisovelluksilla, jotka mahdollistavat ratkaisujen integraation tietokantatasolla. Lisätietoja analyysisovelluksista on kohdassa [Embedded Power BI työtiloissa](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Tuotealueet, joihin vaikutetaan**         | Kustannushintojen hallinta, myyntitiedot ja vähittäismyynti                                                                                               |
 | **Käytön asetukset**              | Vain pilvipalvelut (PowerBI.com-integraatiota ei tueta paikallisissa käyttöönotoissa).                                                                                                            |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2018 2. vuosineljännes.    |
@@ -712,7 +713,7 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Palkanlaskennan ja Henkilöstöhallinnan perussivut ovat korvanneet tämän ominaisuuden.  |
-| **Onko toinen ominaisuus korvannut?**   | **Edut** , **Ansiot** ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä. Toimintoa käytetään valitsemalla **Henkilöstöhallinta 1** \> **Palkanlaskenta** -määritysavain. |
+| **Onko toinen ominaisuus korvannut?**   | **Edut**, **Ansiot** ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä. Toimintoa käytetään valitsemalla **Henkilöstöhallinta 1** \> **Palkanlaskenta**-määritysavain. |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilöstöhallinto, palkanlaskenta   |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.    |
 
@@ -806,8 +807,8 @@ Kaksi eri muotoa maksujen vientiä varten käytettävissä Suomessa. LM02 (FI) k
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | **Inventoinnin- ja varastonhallinta** -moduuliin sisältynyt Varastonhallinta II -ratkaisu (WMS II) oli Dynamics AX 2012 R3:ssa julkaistun **Varastonhallinta** -moduulin toiminnon kaksoiskappale.                                                                         |
-| **Onko toinen ominaisuus korvannut?**   | AX 2012 R3:ssa, Dynamics AX 2012 R3 CU8:ssa ja Dynamics AX 2012 R3 CU9:ssa julkaistu **Varastonhallinta** -moduuli korvaa Varastonhallinta II:n ominaisuudet. Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa. |
+| **Poiston tai vanhentumisen syy** | **Inventoinnin- ja varastonhallinta** -moduuliin sisältynyt Varastonhallinta II -ratkaisu (WMS II) oli Dynamics AX 2012 R3:ssa julkaistun **Varastonhallinta**-moduulin toiminnon kaksoiskappale.                                                                         |
+| **Onko toinen ominaisuus korvannut?**   | AX 2012 R3:ssa, Dynamics AX 2012 R3 CU8:ssa ja Dynamics AX 2012 R3 CU9:ssa julkaistu **Varastonhallinta**-moduuli korvaa Varastonhallinta II:n ominaisuudet. Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa. |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, myynti ja markkinointi, hankinta   |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.    |
 
@@ -847,7 +848,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- ja AxBC-integraatiot
 
-Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma* , joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd \<Document\>** -luokkia.
+Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd \<Document\>** -luokkia.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -869,7 +870,7 @@ Laskutuksen komentosarjoja käytetään laskutuskoodin laskutushintojen laskemis
 
 ### <a name="boms-without-bom-versions"></a>Tuoterakenteet ilman tuoterakenneversioita
 
-Kun **Tuoterakenneversiot** -määritysavain poistettiin käytöstä, tuoterakenneversiot piilotettiin kaikissa lomakkeissa ja järjestelmä pakotti 1:1-suhteen vapautettujen tuotteiden ja tuoterakenteiden välille. **Tuoterakenneversiot** -määritysavainta ei voi poistaa Dynamics AX:n nykyisessä versiossa.
+Kun **Tuoterakenneversiot**-määritysavain poistettiin käytöstä, tuoterakenneversiot piilotettiin kaikissa lomakkeissa ja järjestelmä pakotti 1:1-suhteen vapautettujen tuotteiden ja tuoterakenteiden välille. **Tuoterakenneversiot**-määritysavainta ei voi poistaa Dynamics AX:n nykyisessä versiossa.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1157,12 +1158,12 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 
 ### <a name="gl-ssrs-reports"></a>Kirjanpidon SSRS-raportit
 
-Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: **Pääkirjan yhteenveto** , **Yksityiskohtainen pääkirja** , **Tilikartta** , **Kirjausketju** , **Saldot** ja **Saldoluettelo**.
+Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: **Pääkirjan yhteenveto**, **Yksityiskohtainen pääkirja**, **Tilikartta**, **Kirjausketju**, **Saldot** ja **Saldoluettelo**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Microsoft SQL Server Reporting Services (SSRS) -raportit on korvattu Management Reporter -toiminnoilla ja oletusraporteilla. |
-| **Onko toinen ominaisuus korvannut?**   | Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on **Talousraportointi** )    |
+| **Onko toinen ominaisuus korvannut?**   | Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on **Talousraportointi**)    |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito   |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.   |
 
@@ -1181,8 +1182,8 @@ Luettelo yrityksen tileistä ja niihin liittyvät saldotiedot
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Saldotiedot ovat saatavilla tilin ja dimension mukaisella **Pääkirja** -luettelosivulla.  |
-| **Onko toinen ominaisuus korvannut?**   | **Päätilit** sisältää saman tililuettelon kuin **Päätili** -luettelosivu. **Päätilit** -ruudukkonäkymä näyttää myös pienemmän ruudukkomaisen näkymän. |
+| **Poiston tai vanhentumisen syy** | Saldotiedot ovat saatavilla tilin ja dimension mukaisella **Pääkirja**-luettelosivulla.  |
+| **Onko toinen ominaisuus korvannut?**   | **Päätilit** sisältää saman tililuettelon kuin **Päätili**-luettelosivu. **Päätilit**-ruudukkonäkymä näyttää myös pienemmän ruudukkomaisen näkymän. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito      |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.    |
 
@@ -1359,7 +1360,7 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö |
-| **Onko toinen ominaisuus korvannut?**   | Ei, mutta **Profiilirelaatio** -sivu, joka avautuu **Profiiliryhmät** -sivulta, tukee samoja liiketoimintaskenaarioita mitä vanhentuneella **Työn suunnittelu** -sivulla käytettiin. |
+| **Onko toinen ominaisuus korvannut?**   | Ei, mutta **Profiilirelaatio**-sivu, joka avautuu **Profiiliryhmät**-sivulta, tukee samoja liiketoimintaskenaarioita mitä vanhentuneella **Työn suunnittelu**-sivulla käytettiin. |
 | **Tuotealueet, joihin vaikutetaan**         | Työajan seuranta     |
 | **Tila**                         | Koodia ei ole poistettu. Lomaketta, JmgWorkPlanner, ei kuitenkaan siirretty.    |
 

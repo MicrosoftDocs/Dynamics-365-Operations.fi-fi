@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea2bfd2514be666d05165410ca27041a86464715
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: b591df3d384e8dc59646ebb9d0205001db040a55
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143220"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684184"
 ---
 # <a name="er-import-configurations-from-rcs"></a>(ER) Konfiguraatioiden tuonti RCS:stä
 
@@ -45,13 +44,13 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 5. Syötä Konfiguraatiosäilön tyyppi -kentän arvoksi RCS. 
 6. Valitse Luo säilö. 
 7. Anna tai valitse arvo RCS-ympäristön näyttönimen kentässä. 
-8. Valitse haluamasi RCS-esiintymä. Huomaa, että niitä voi olla useita. 
+8. Valitse haluamasi RCS-esiintymä. Niitä voi olla useita. 
 9. Valitse OK. 
 
 ## <a name="import-er-configurations-from-rcs-based-repository"></a>ER-konfiguraatioiden tuominen RCS-pohjaisesta säiliöstä
 1. Valitse **Näytä suodattimet**. 
 2. Anna **Nimi**-kenttään suodatusarvoksi RCS käyttämällä **sisältää**-suodatinoperaattoria. 
-3. Kun avaat valitun säilön, valitse **Yhdistä Regulatory Configuration Servicesiin** -sivulla **Muodosta yhteys Regulatory Configuration Servicesiin napsauttamalla tästä** -linkki. 
+3. Kun avaat valitun säilön, valitse **Yhdistä Regulatory Configuration Servicesiin** -sivulla **Muodosta yhteys Regulatory Configuration Servicesiin valitsemalla tämä** -linkki. 
 4. Valitse **Avaa**. 
 5. Valitse **Sulje**. 
 6. Valitse sopiva ER-konfiguraation versio ja tuo se nykyiseen esiintymään valitsemalla **Tuo**.

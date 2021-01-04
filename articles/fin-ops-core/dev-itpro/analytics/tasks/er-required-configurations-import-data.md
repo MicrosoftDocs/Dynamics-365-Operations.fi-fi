@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143312"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684279"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 
@@ -98,11 +97,11 @@ Tämä alitehtävän ohjeiden avulla osaat luoda uuden muotomäärityksen, jolla
 
     Huomaa, että suunniteltu muoto esitellään tässä tietolähdeosana.  
 
-6. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietue.
-7. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo.
-8. Laajenna puussa muoto: Tietue\*1tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\*toimittaja: XML-elementti 1..1 (toimittaja): Tietue.
-9. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\maa: XML-elementti 0..1 (maa): Tietue.
-10. Valitse puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\*toimittaja: XML-elementti 1..1 (toimittaja): Tietue.
+6. Laajenna puussa kohde `format: Record\*settlement: XML Element 1..1 (settlement): Record`.
+7. Laajenna puussa kohde `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list`.
+8. Laajenna puussa kohde `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
+9. Laajenna puussa kohde `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record`.
+10. Valitse puussa `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
 
     Huomaa, että pakollisten ja valinnaisten muotoelementtien esittely on erilainen ennalta määritetyssä muodon tietolähdeosassa.  
 11. Laajenna puussa Tapahtumat: Tietueluettelo= format.settlement.'$enumerated'.
@@ -237,7 +236,7 @@ Testaa muodon yhdistämismääritys suorittamalla se. Käytä aiemmin ladattua 1
 19. Sulje sivu.
 20. Valitse Muokkaa.
 
-    Jos olet asentanut hotfix-korjauksen KB 4012871 GER-mallien yhdistämismääritysten tuki erillisinä määrityksenä sekä mahdollisuus määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 Financen eri versioissa (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), suorita annetulle muotomääritykselle seuraava vaihe Mallin määrityksen oletusarvo -merkinnän ottaminen käyttöön. Ohita seuraava vaihe muussa tapauksessa.  
+    Jos olet asentanut hotfix-korjauksen KB 4012871 GER-mallien yhdistämismääritysten tuki erillisinä määrityksenä sekä mahdollisuus määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 Financen eri versioissa ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), suorita annetulle muotomääritykselle seuraava vaihe, Mallin määrityksen oletusarvo -merkinnän ottaminen käyttöön. Ohita seuraava vaihe muussa tapauksessa.  
 
 21. Valitse Mallin määrityksen oletusarvo -kentässä Kyllä.
 22. Valitse puussa 1099-maksumalli.
@@ -245,7 +244,7 @@ Testaa muodon yhdistämismääritys suorittamalla se. Käytä aiemmin ladattua 1
 24. Valitse Yhdistä malli tietolähteeseen.
 25. Valitse Suorita.
 
-    Jos olet asentanut hotfix-korjauksen KB 4012871, GER-mallien yhdistämismääritysten tuki, erillisinä määrityksinä ja valmiudella määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi eri versioissa (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), valitse hakukentästä ensisijainen mallin yhdistämismääritys. Jos et ole vielä asentanut hotfix-korjausta, ohita seuraava vaihe, sillä oletusmuotomäärityksen määritelmä on jo valinnut yhdistämismäärityksen.  
+    Jos olet asentanut hotfix-korjauksen KB 4012871, GER-mallien yhdistämismääritysten tuki, erillisinä määrityksinä ja valmiudella määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi eri versioissa ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), valitse hakukentästä ensisijainen mallin yhdistämismääritys. Jos et ole vielä asentanut hotfix-korjausta, ohita seuraava vaihe, sillä oletusmuotomäärityksen määritelmä on jo valinnut yhdistämismäärityksen.  
     
     Jos et ole vielä asentanut hotfix-korjausta KB 4012871, huomaa, että valintaikkunassa mallin yhdistämismääritystä koskeva lisäkysymys, jonka avulla tuotava tiedosto jäsennetään. Tiedot siirretään sitten valintaikkunasta tietomalliin. Käytettävä muodon yhdistämismääritys voidaan tällä hetkellä valita sen mukaan, minkä tyyppinen tiedosto aiotaan tuoda.  
     

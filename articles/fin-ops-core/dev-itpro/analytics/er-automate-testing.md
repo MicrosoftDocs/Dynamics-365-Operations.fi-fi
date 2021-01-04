@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771441"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681445"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Testauksen automatisointi sähköisen raportoinnin avulla
 
@@ -48,7 +47,7 @@ Tehotoimintokäyttäjät voivat laatia käyttäjän hyväksyntä- ja integrointi
 - Ryhmitä tarvittavien testiskenaarioiden testitapaukset. Lisätietoja kohdassa [Käyttäjän hyväksymistestien luominen ja automatisointi](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Muodosta käyttäjän hyväksyntätestien kirjastoja LCS:n liiketoimintaprosessien mallintajalla (BPM).
-    - Luo Microsoft Azure DevOps Servicesissä (Azure DevOps) testisuunnitelma ja testisarjoja BPM-testikirjastojen avulla.
+    - Luo Microsoft Azure DevOps Services (Azure DevOps)issa testisuunnitelma ja testisarjoja BPM-testikirjastojen avulla.
 
 Tehotoimintakäyttäjät voivat suorittaa käyttäjän hyväksyntä- ja integrointitestejä.
 
@@ -60,7 +59,7 @@ Tehotoimintakäyttäjät voivat suorittaa käyttäjän hyväksyntä- ja integroi
 Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten on toteuduttava:
 
 - Ota käyttöön testauksen automatisointia tukeva topologia. Sinulla on oltava tämän topologiaesiintymän **Järjestelmänvalvoja**-rooli. Topologian on sisällettävä tässä esimerkissä käytettävät demotiedot. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto ja käyttäminen](../perf-test/continuous-build-test-automation.md).
-- Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT-työkalun asentamisesta ja sen määrittämisestä Finance and Operations -sovelluksissa ja Azure DevOpsissa käytettäväksi on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
+- Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT:in asentamisesta ja määrittämisestä toimimaan Finance and Operations -sovellusten ja Azure DevOpsin kanssa on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
 
     ![RSAT-asetukset](media/GER-Configure.png "Näyttökuva RSAT-asetukset-valintaikkunasta")
 
@@ -105,7 +104,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
 
         ![Maksukirjauskansio-sivu](media/GER-APJournal.png "Näyttökuva Maksukirjauskansio-sivusta")
 
-    3. Valitse **Rivit**ja lisää rivi, jossa on seuraavat tiedot.
+    3. Valitse **Rivit** ja lisää rivi, jossa on seuraavat tiedot.
 
         | Kenttä               | Esimerkkiarvo   |
         |---------------------|-----------------|
@@ -169,14 +168,14 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
 6. Lisää uusi toimittajan maksutiedoston perusrivi:
 
     1. Valitse **Uusi**.
-    2. Tallenna perusrivin tiedot valitsemalla **Tyyppi**-kentässä se**Tiedosto**-DM-asiakirjatyyppi, jonka määritit ER-parametreissa.
+    2. Tallenna perusrivin tiedot valitsemalla **Tyyppi**-kentässä se **Tiedosto**-DM-asiakirjatyyppi, jonka määritit ER-parametreissa.
     3. Siirry valitsemaan paikallisesti tallennettu tekstimuotoinen **Tiedosto**-maksutiedosto.
     4. Kirjoita **Kuvaus**-kenttään **Maksun TXT-tiedosto**.
 
 7. Lisää toimittajan maksujen seurantaraportin uusi perusrivi:
 
     1. Valitse **Uusi**.
-    2. Tallenna perusrivin tiedot valitsemalla **Tyyppi**-kentässä se**Tiedosto**-DM-asiakirjatyyppi, jonka määritit ER-parametreissa.
+    2. Tallenna perusrivin tiedot valitsemalla **Tyyppi**-kentässä se **Tiedosto**-DM-asiakirjatyyppi, jonka määritit ER-parametreissa.
     3. Siirry valitsemaan paikallisesti tallennettu XLSX-muotoinen **ERVendOutPaymControlReport**-seurantatiedosto.
     4. Kirjoita **Kuvaus**-kenttään **Maksun XLSX-seurantaraportti**.
 
@@ -346,7 +345,7 @@ Tämän testisarjan on epäonnistuttava, kun ainakin yksi luoduista tuloksista e
 1. Avaa sovellus ja valitse **Ostoreskontra \> Maksut \> Maksukirjauskansio**.
 2. Valitse **Rivit**.
 3. Valitse ensin maksurivi ja sitten **Maksun tila \> Ei mitään**.
-4. Muuta **Veloitus**-kentän arvo**1 000,00** arvoksi **2 000,00**.
+4. Muuta **Veloitus**-kentän arvo **1 000,00** arvoksi **2 000,00**.
 5. Tallenna muutokset valitsemalla **Tallenna**.
 
 ### <a name="run-the-tests-in-rsat"></a>Testien suorittaminen RSAT-työkalussa

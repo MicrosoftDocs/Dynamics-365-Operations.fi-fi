@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771303"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688122"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
@@ -175,7 +174,7 @@ Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
     - Jos kyseessä on päivitetty PDF-mallin uusi kenttä, uudet muotoelementit luodaan muokattua sähköisen raportoinnin muotoa varten.
     - Jos päivitetty PDF-malli ei enää sisällä kenttiä, jotka vastaavat muokattua sähköisen raportoinnin aiemmin luotuja muotoelementtejä, nämä muotoelementit poistetaan sähköisen raportoinnin muodosta.
 
-18. Valitse **Muoto **-välilehdestä**Liitteet**.
+18. Valitse **Muoto **-välilehdestä** Liitteet**.
 
     Huomaa, että tuotu PDF-tiedosto on liitetty muokattuun sähköisen raportoinnin muotoon.
 

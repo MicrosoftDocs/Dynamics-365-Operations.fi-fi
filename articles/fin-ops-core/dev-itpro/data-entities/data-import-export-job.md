@@ -3,24 +3,23 @@ title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278895"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684057"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -130,7 +129,7 @@ Työ voidaan suojata samaan aikaan rooli-, käyttäjä- ja yritysperusteisesti.
 Voit suorittaa työn kerran valitsemalla **Tuo**- tai **Vie**-painikkeen, kun olet määrittänyt työn. Voit määrittää toistuvan työn valitsemalla **Luo toistuva tietotyö**.
 
 > [!NOTE]
-> Tuonti- tai vientityö voidaan suorittaa asynkronisesti valitsemalla **Tuo**- tai **Vie**-painike. Asynkroninen suorittaminen käyttää asynkronista kehystä, joka eroaa eräkehyksestä. Eräkehyksen tavoin asynkronisessa kehyksessä voi kuitenkin esiintyä rajoituksia, minkä vuoksi työtä ei ehkä suoriteta heti. Työt voidaan suorittaa myös synkronisesti valitsemalla **Tuo nyt** tai **Vie nyt**. Työ käynnistetään nyt automaattisesti, mikä on kätevää, jos asynkronointi tai erä ei käynnisty rajoittamisen vuoksi. Työt voidaan suorittaa myös eräajona valitsemalla **Suorita eräajona** -asetus. Rajoitus koskee eräresursseja, joten eräajo ei välttämättä käynnisty heti. Asynkroninen asetus on kätevä, kun käyttäjät käyttävät käyttöliittymää suoraan eivätkä ole eräaikataulutusta ymmärtäviä tehokäyttäjiä. Eräajon käyttäminen on toinen vaihtoehto, jos tuotava tai vietävä määrä on suuri. Eräajot voidaan aikatauluttaa suoritettavaksi tiettyinä eräryhminä, mikä parantaa kuormituksen hallintaa. Jos asynkronista käsittelyä ja eräajoa rajoitetaan järjestelmän suuren resurssien käyttöasteen vuoksi, ongelman voi ratkaista heti käyttämällä tuonnin tai vienti synkronista versiota. Synkroninen vaihtoehto käynnistyy heti, ja se estää käyttöliittymän käytön, sillä suoritus tapahtuu synkronisesti. Selainikkunan on pysyttävä avoimena synkronisen toiminnon ollessa kesken.
+> Tuonti- tai vientityö voidaan suorittaa valitsemalla **Tuo**- tai **Vie**-painike. Tällöin erätyö ajoitetaan suoritettavaksi vain kerran. Työtä ei ehkä suoriteta heti, jos eräpalvelua on rajoitettu kuormituksesta johtuen. Työt voidaan suorittaa myös synkronisesti valitsemalla **Tuo nyt** tai **Vie nyt**. Työ käynnistetään nyt automaattisesti, mikä on kätevää, jos erä ei käynnisty rajoittamisen vuoksi. Työt voidaan myös ajoittaa suoritettaviksi myöhemmin. Tämä voidaan tehdä valitsemalla **Suorita erätyönä-** -vaihtoehto. Rajoitus koskee eräresursseja, joten eräajo ei välttämättä käynnisty heti. Erän käyttäminen on suositeltava vaihtoehto, sillä se auttaa myös suurien tietomäärien tuomisessa tai viennissä. Eräajot voidaan aikatauluttaa suoritettavaksi tiettyinä eräryhminä, mikä parantaa kuormituksen hallintaa.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Vahvista, että työ suoritettiin odotetulla tavalla
 Työhistoria on käytettävissä tuonti- ja vientitöiden ongelmanratkaisuun ja tutkintaan. Historian työt on järjestetty aikajaksoille.
@@ -195,7 +194,7 @@ Tietojen hallinnan työhistorian puhdistustoimintoa on käytettävä suoritushis
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Toiminnon on oltava käytössä ominaisuuksien hallinnassa, ja sen jälkeen sitä voi käyttää kohdassa **Tietojen hallinta \> Työhistorian tyhjennys**.
+**Suoritushistorian tyhjennys** -toiminnon on oltava käytössä ominaisuuksien hallinnassa, ja sen jälkeen sitä voi käyttää kohdassa **Tietojen hallinta\> Työhistorian tyhjennys**.
 
 ### <a name="scheduling-parameters"></a>Ajoitusparametrit
 
@@ -211,3 +210,36 @@ Kun ajoitat puhdistusprosessia, seuraavat parametrit on määritettävä, jotta 
 
 > [!NOTE]
 > Jos väliaikaisen tallennuksen tauluja ei ole puhdistettu kokonaan, varmista, että puhdistustyö ajoitetaan suoritettavaksi toistuvana. Kuten edellä on kerrottu, kunkin puhdistuksen suorituksen yhteydessä työ puhdistaa niin monta suorituksen tunnusta kuin mahdollista annetun ajan puitteissa. Jotta puhdistusta voidaan jatkaa jäljellä olevissa väliaikaisen tallennuksen tietueissa, työ on ajoitettava suoritettavaksi säännöllisesti.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Työhistorian tyhjennys ja arkistointi (käytössä esiversiona alustapäivityksessä 39 tai versiossa 10.0.15)
+Työhistorian tyhjennys ja arkistointi -toiminnallisuus korvaa aiemmat siivoustoiminnon versiot. Tämä osio kertoo näistä uusista ominaisuuksista.
+
+Yksi puhdistustoiminnon tärkeimmistä muutoksista on järjestelmän erätyön käyttö historiatietojen poistamiseen. Järjestelmän erätyön käyttö sallii Finance and Operations -sovellusten ajoittaa siivouserätyön automaattisesti ja suorittaa sen, kun järjestelmä on valmis. Erätyötä ei enää tarvitse ajoittaa manuaalisesti. Tässä oletussuoritustilassa erätyö suoritetaan tunnin välein alkaen kello 12 puolilta öin, ja se säilyttää viimeisimmän 7 päivän suoritushistorian. Tyhjennetty historia arkistoidaan tulevaa noutamista varten.
+
+> [!NOTE]
+> Koska tämä toiminto on esikatselussa, järjestelmän erätyö ei poista suoritushistoriaa, ennen kuin se on otettu käyttöön työn DMFEnableExecutionHistoryCleanupSystemJob kautta. Kun ominaisuus on yleisesti saatavilla tulevassa versiossa, tätä ei vaadita, ja järjestelmän erätyö alkaa tyhjentää ja arkistoida sen jälkeen, kun järjestelmä on valmis perustuen määritettyyn aikatauluun edellä kuvatulla tavalla. 
+
+> [!NOTE]
+> Tulevassa versiossa puhdistus toimintojen aiemmat versiot poistetaan Finance and Operations -sovelluksista.
+
+Toinen puhdistusprosessin muutos on tyhjennetyn suoritushistorian arkistointi. Puhdistustyö arkistoi poistetut tietueet blob-tallennustilaan, jota DIXF käyttää säännölliseen kanssakäymiseen. Arkistoitu tiedosto on DIXF-pakettimuodossa, ja se on käytettävissä 7 päivän ajan blob-objektissa, jolloin se voidaan ladata. Oletusarvon mukainen arkistoidun tiedoston 7 päivän säilytysaika voidaan muuttaa enintään 90 päiväksi parametreissä.
+
+### <a name="changing-the-default-settings"></a>Oletusasetusten muuttaminen
+Tämä toiminto on tällä hetkellä esikatselussa, ja se on otettava eksplisiittisesti käyttöön ottamalla käyttöön DMFEnableExecutionHistoryCleanupSystemJob. Väliaikaisen siivouksen toiminnon on oltava käytössä myös ominaisuuksien hallinnassa.
+
+Jos haluat muuttaa arkistoidun tiedoston säilytyksen oletusasetusta, siirry tietojen hallinnan työtilaan ja valitse **Työhistorian puhdistus**. Määritä **Paketin säilyttämispäivät blob-objektissa** arvoksi 7-90 (mukaan lukien). Tämä tulee voimaan tämän muutoksen tekemisen jälkeen luoduissa arkistoissa.
+
+### <a name="downloading-the-archived-package"></a>Arkistoidun paketin lataaminen
+Tämä toiminto on tällä hetkellä esikatselussa, ja se on otettava eksplisiittisesti käyttöön ottamalla käyttöön DMFEnableExecutionHistoryCleanupSystemJob. Väliaikaisen siivouksen toiminnon on oltava käytössä myös ominaisuuksien hallinnassa.
+
+Voit ladata arkistoidun suoritushistorian siirtymällä tietojen hallinnan työtilaan ja valitsemalla **Työhistorian puhdistus**. Valitse **Paketin varmuuskopiohistoria** avataksesi historialomakkeen. Tässä lomakkeessa näkyy luettelo kaikista arkistoiduista paketeista. Arkiston voi valita ja ladata valitsemalla **Lataa paketti**. Ladattu paketti on DIXF-pakettimuodossa ja sisältää seuraavat tiedostot:
+
+-   Entiteetin väliaikainen taulutiedosto
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

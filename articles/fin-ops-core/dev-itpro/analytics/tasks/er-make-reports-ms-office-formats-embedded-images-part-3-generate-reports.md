@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143096"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684376"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Upotettuja kuvia sisältävien Office-muotoisten raporttien luominen
 
@@ -40,14 +39,14 @@ Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc. 
     * Suorita muoto testausta varten.  
 6. Valitse Siirtokelpoisen sekin muoto -kentässä Kyllä.
 7. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että raportissa esitetään sekä yrityksen logo että valtuutetun henkilön allekirjoitus. Allekirjoituskuva saadaan valittuun pankkitiliin liitetyn sekin asettelutietueen säilön tietotyypin kentästä.  
+    * Tarkista luotu tuotos. Raportissa esitetään sekä yrityksen logo että valtuutetun henkilön allekirjoitus. Allekirjoituskuva saadaan valittuun pankkitiliin liitetyn sekin asettelutietueen säilön tietotyypin kentästä.  
 8. Laajenna Kopiot-osa.
 9. Valitse Muokkaa.
 10. Syötä Vesileima-kenttään Tulosta vesileimaksi mitätöity.
     * Muuta vesileiman asettelun asetusta niin, että vesileiman teksti näkyy luotavan Excel-muotoisen elementin asiakirjassa.  
 11. Valitse Tulosta testi.
 12. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että vesileima näytetään luodussa raportissa valinnan asetuksen mukaisesti.  
+    * Tarkista luotu tuotos. Vesileima näytetään luodussa raportissa valinnan asetuksen mukaisesti.  
 13. Sulje sivu.
 14. Valitse toimintoruudussa Maksujen hallinta.
 15. Valitse Sekit.
@@ -56,7 +55,7 @@ Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc. 
 18. Merkitse luettelossa kaikki rivit.
 19. Valitse Tulosta sekin kopio.
     * Suorita muoto valittujen sekkien uudelleentulostusta varten.  
-    * Tarkista luotu tuotos. Ota huomioon, että valitut sekit on tulostettu uudelleen. Yrityksen logoa ja nimiöitä ei tulosteta, koska näkyvät esitäytetyssä lomakkeessa.  
+    * Tarkista luotu tuotos. Valitut sekit on tulostettu uudelleen. Yrityksen logoa ja nimiöitä ei tulosteta, koska näkyvät esitäytetyssä lomakkeessa.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Tuodun tietomallin yhdistämismäärityksen muokkaaminen
 1. Sulje sivu.
@@ -91,7 +90,7 @@ Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc. 
 4. Valitse Tarkista.
 5. Valitse Tulosta testi.
 6. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että tiedostojen hallinnan liitteen kuva näkyy valtuutetun henkilön allekirjoituksena.  
+    * Tarkista luotu tuotos. Tiedostojen hallinnan liitteen kuva näkyy valtuutetun henkilön allekirjoituksena.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>MS Word -asiakirjan käyttäminen mallina tuodussa muodossa
 1. Sulje sivu.
@@ -118,5 +117,5 @@ Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc. 
 21. Valitse Tarkista.
 22. Valitse Tulosta testi.
 23. Valitse OK.
-    * Tarkista luotu tuotos. Ota huomioon, että tuloste on luotu MS Word -asiakirjana, joka sisältää yrityksen logoa esittävät upotetut kuvat, valtuutetun henkilön allekirjoituksen ja vesileiman valitun tekstin.  
+    * Tarkista luotu tuotos. Tuloste on luotu Word -asiakirjana, joka sisältää yrityksen logoa esittävät upotetut kuvat, valtuutetun henkilön allekirjoituksen ja vesileiman valitun tekstin.  
 

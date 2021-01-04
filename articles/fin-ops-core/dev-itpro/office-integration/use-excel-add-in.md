@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 210231bb442928674b490d83f50bf787d7bfa60c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181010"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688464"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa
 
@@ -33,19 +32,19 @@ Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Exceliss�
 Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tietoja Excel-lisäosalla. Tähän lisäosaan tarvitaan Microsoft Excel 2016.
 
 > [!NOTE]
-> Jos Microsoft Azure Active Directory (Azure AD) -vuokraaja on määritetty käyttämään Active Directoryn liittoutumispalveluita (AD FS), varmista, että Officen toukokuun 2016 päivitys on asennettu, jotta Excel-lisäosa pystyy kirjaamaan sinut sisään.
+> Jos Microsoft Azure Active Directory (Azure AD) -vuokraaja on määritetty käyttämään Active Directory Federation Servicesiä (AD FS), varmista, että Officen toukokuun 2016 päivitys on asennettu, jotta Excel-lisäosa pystyy kirjaamaan sinut sisään.
 
 Lisätietoja Excel-lisätietoja on lyhyessä videossa [Excel-mallin luominen otsikolle ja rivimalleille Dynamics 365 for Finance and Operationsissa](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Yksikkötietojen avaaminen Excelissä Finance and Operationsista käsin
-1. Valitse Finance and Operations -sivulla **Avaa Microsoft Officessa**.
+## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Avaa yksikön tiedot Excelissä, kun aloitat Finance and Operationsista
+1. Valitse Finance and Operationsin sivulla **Avaa kohteessa Microsoft Office**.
 
     Jos sivun juuritietolähde (taulukko) on sama kuin minkä tahansa yksikön juuritietolähde, sivulle muodostetaan oletusasetuksena **Avaa Excelissä**. **Avaa Excelissä** -vaihtoehto löytyy usein käytetyillä sivuilla, kuten **Kaikki toimittajat** ja **Kaikki asiakkaat**.
  
 2. Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3. Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
-5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut Finance and Operationsiin. Excel-lisäosa käyttää aiempaa sisäänkirjautumista Internet Explorerista ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. Varmista tämän vuoksi Excel-lisäosan oikeassa yläkulmassa näkyvä käyttäjänimi.
+5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** ja kirjaudu sitten sisään samoilla tunnuksilla, joilla kirjaudut Finance and Operationsiin. Excel-lisäosa käyttää aiempaa sisäänkirjautumista Internet Explorerista ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. Varmista tämän vuoksi Excel-lisäosan oikeassa yläkulmassa näkyvä käyttäjänimi.
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 
@@ -54,7 +53,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 2. Etsi Office-kaupasta avainsanalla **Dynamics** ja valitse **Lisää** **Microsoft Dynamics Office -lisäosa** -kohdan vieressä (Excel-lisäosa).
 3. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan** voidaksesi käyttää sitä. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Avaa **Asetukset**-ruutu valitsemalla **Lisää palvelimen tiedot** -painike.
-5. Kopioi kohteena olevan Finance and Operations -esiintymän URL-osoite selaimessa, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
+5. Kopioi kohteena olevan t Finance and Operations -esiintymän URL-osoite selaimessa, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
 
     Jos URL-osoite on esimerkiksi `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, poista kaikki kaikki muut tiedot paitsi `https://xxx.dynamics.com`.
 

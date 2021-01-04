@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b5534c9ed0ad6cab0bc827ff626bf65a34f9df08
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: 9aa019e20b218fdaad4659fa65d9df629069204b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138943"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680731"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>ER-muotoisten sarjaelementtien suorittamisen lykkäys
 
@@ -96,7 +95,7 @@ Ennen kuin aloitat, sinun on myös ladattava ja tallennettava seuraavat esimerkk
 ### <a name="activate-a-configurations-provider"></a>Aktivoi konfiguraatiolähde
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Tarkista**Lokalisointikonfiguroinnit**-sivun **Konfiguraation lähteet** -osassa, että näyteyrityksen Litware, Inc. [konfiguraation lähde on luettelossa ja että sen tila on](general-electronic-reporting.md#Provider) aktiivinen (`http://www.litware.com`). Jos tämä määrityspalvelu ei ole luettelossa tai jos se ei ole merkittynä aktiiviseksi, noudata ohjeaiheen [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](./tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheita.
+2. Tarkista **Lokalisointikonfiguroinnit**-sivun **Konfiguraation lähteet** -osassa, että näyteyrityksen Litware, Inc. [konfiguraation lähde on luettelossa ja että sen tila on](general-electronic-reporting.md#Provider) aktiivinen (`http://www.litware.com`). Jos tämä määrityspalvelu ei ole luettelossa tai jos se ei ole merkittynä aktiiviseksi, noudata ohjeaiheen [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](./tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheita.
 
     ![Lokalisointimääritykset-sivun esimerkkiyritys Litware, Inc.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 

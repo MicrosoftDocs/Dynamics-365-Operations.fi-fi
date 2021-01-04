@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678245"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680239"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
 
@@ -142,10 +141,10 @@ Sähköisen raportoinnin toiminnallisen kehittäjän roolissa olevan käyttäjä
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Konfiguroi ER-parametrit
 
-1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Sähköinen raportointi**  -työtilasta **Sähköisen raportoinnin parametrit**.
-3. Määritä **Sähköisen raportoinnin parametrit**  -sivun **Yleinen** -välilehdessä **Ota käyttöön suunnittelutila** -asetukseksi **Kyllä**.
-4. Määritä **Liitteet** -välilehdessä seuraavat parametrit:
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+2. Valitse **Sähköinen raportointi** -työtilasta **Sähköisen raportoinnin parametrit**.
+3. Määritä **Sähköisen raportoinnin parametrit** -sivun **Yleinen**-välilehdessä **Ota käyttöön suunnittelutila** -asetukseksi **Kyllä**.
+4. Määritä **Liitteet**-välilehdessä seuraavat parametrit:
 
     - Määritä **Konfiguraatiot**-kenttä **Tiedostoon** **USMF**-yritykselle.
     - Määritä **Työarkisto**-, **Väliaikainen**-, **Perusrivi**- ja **Muut**-kentissä **Tiedostoon**.
@@ -161,28 +160,28 @@ Jokainen ER-konfiguraatio merkitään ER-konfiguraation lähteen omistamaksi. Si
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Tarkista ER-konfiguraation lähteiden luettelo
 
-1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Valitse **Sähköisen raportointi** -työtilan **Liittyvät linkit** -osassa **Konfiguraation lähteet**.
 3. **Konfiguraation lähteet** -sivulla jokaisen konfiguraation lähteen tietueella on yksilöllinen nimi ja URL-osoite. Tarkista tämän sivun sisältö. Jos **Litware, Inc.** (`https://www.litware.com`) -tietue on jo olemassa, ohita seuraava menettely, [Lisää uusi ER-konfiguraation lähde](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Lisää uusi ER-konfiguraation lähde
 
 1. Valitse **Konfiguraation lähteet**-sivulla **Uusi**.
-2. Kirjoita **Nimi**-kenttään **Litware, Inc.**
-3. Kirjoita **Internetosoite**-kenttään  `https://www.litware.com`.
-4. Valitse **Tallenna**.
+2. Kirjoita **Nimi**-kenttään **Litware, Inc.**
+3. Kirjoita **Internetosoite**-kenttään `https://www.litware.com`.
+4. Valitse **Tallenna**.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktivoi ER-konfiguraation lähde
 
-1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Valitse **Sähköinen raportointi** -työtilassa **Litware, Inc**-määrityspalvelu.
-3. Valitse **Määritä aktiivinen**.
+3. Valitse **Määritä aktiivinen**.
 
 Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteiden luonti ja merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Toimialuekohtaisen tietomallin suunnitteleminen
 
-Sinun on luotava uusi ER-konfiguraatio, joka sisältää [tietomalli](general-electronic-reporting.md#data-model-and-model-mapping-components) -komponentin **kyselylomakkeen** liiketoimialueelle. Tätä tietomallia käytetään myöhemmin tietolähteenä suunniteltaessa ER-muotoa **kyselylomake**-raportin luomiseksi.
+Sinun on luotava uusi ER-konfiguraatio, joka sisältää [tietomalli](general-electronic-reporting.md#data-model-and-model-mapping-components)-komponentin **Kyselyn** liiketoimialueelle. Tätä tietomallia käytetään myöhemmin tietolähteenä suunniteltaessa ER-muotoa **kyselylomake**-raportin luomiseksi.
 
 Kun [tuot uuden tietomallin määritys](#ImportDataModel) -osan vaiheet, voit tuoda vaaditun tietomallin mukana olevasta XML-tiedostosta. Voit myös suorittaa [uuden tietomallin määrityksen luomisen](#DesignDataModel) vaiheet ja suunnitella tämän tietomallin alusta alkaen.
 
@@ -811,7 +810,7 @@ Tämän konfiguraation version 1.1 tila muutetaan **luonnoksesta** **valmiiksi**
 
 Järjestelmänvalvojan roolin käyttäjänä sinun on kehitettävä uusi logiikka niin, että konfiguroitu ER-muoto voidaan kutsua sovelluksen käyttöliittymästä (UI) mukautetun raportin luomista varten. Tällä hetkellä ER ei tarjoa mitään ominaisuuksia tämäntyyppisen logiikan määrittämiseen. Siksi tarvitaan joitakin teknisiä töitä. 
 
-Uuden logiikan luontia varten käyttöön on otettava jatkuvaa koontia tukeva topologia. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](../perf-test/continuous-build-test-automation.md). Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden. Lisätietoja saatavilla olevista ER-ohjelmointirajapinnoista on kohdassa [ER-kehys-API](er-apis-app73.md).
+Uuden logiikan luontia varten käyttöön on otettava jatkuvaa koontia tukeva topologia. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](../perf-test/continuous-build-test-automation.md). Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden. Lisätietoja saatavilla olevista ER-ohjelmointirajapinnoista on kohdassa [ER-kehys-API](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Lähdekoodin muokkaaminen
 
@@ -1060,9 +1059,9 @@ Luo projekti, jotta uusi valikkovaihtoehto on käyttäjien käytettävissä.
 5. Vahvista suodatusvaihtoehto valitsemalla **OK**.
 6. Suorita raportti valitsemalla **OK**.
 
-    ![Sähköinen raportti -valintaikkunan valintaehtojen määrittäminen](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Sähköinen raportti -dialogi-ikkunan valintaehtojen määrittäminen](./media/er-quick-start1-report-run-dialog-page.png)
 
-7. Tarkista aikaansaatu raportti.
+7. Tarkista aikaansaatu raportti.
 
 ## <a name="tune-a-designed-er-solution"></a><a name="TuneSolution"></a>Suunnitellun ER-ratkaisun säätäminen
 

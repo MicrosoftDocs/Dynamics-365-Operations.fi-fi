@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8cc7de1473ed6ec9b93bd880b47b0c25ec5a7262
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 214a36a1284756e47aa1d28af99234657f1861c0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185195"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688280"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Talousraporttien suunnittelutoiminnon rivimääritykset
 
@@ -161,7 +160,7 @@ Rivin määrityksessä määritetty muotoilu korvaa sarakkeen ja raportin määr
 
 1. Avaa raporttien suunnitteluohjelmassa rivimääritys, jota haluat muokata.
 2. Valitse muokattavat solut. Voit valita useita soluja pitämällä Ctrl-näppäintä alhaalla valinnan aikana.
-3. Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse ensin rivi ja sitten työkalurivin **Kasvata sisennystä** ![Kasvata sisennystä](media/indent.gif "Kasvata sisennystä").
+3. Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse rivi ja valitse sitten työkalurivin **Kasvata sisennystä** -kohta ![Kasvata sisennystä](media/indent.gif "Kasvata sisennystä").
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Sarakkeiden oikaisu raporttien suunnittelun yhteydessä
 
@@ -187,4 +186,4 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Talousraportointi](financial-reporting-intro.md)
+[Taloushallinnon raportointi](financial-reporting-intro.md)

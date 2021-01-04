@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142452"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684544"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Sovellustietoja sisältävien asiakirjojen luominen muokkaamalla muotoa
 
@@ -80,8 +79,8 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 38. Valitse OK.
 39. Valitse puussa File\Declaration\Data\Item.
 40. Valitse Lisää nimike.
-41. Kirjoita Nimi-kenttään Kauppatavaratietueen tunnus.
-    * Kauppatavaratietueen tunnus  
+41. Kirjoita Nimi-kenttään Commodity rec ID.
+    * Commodity rec ID  
 42. Valitse Tietotyyppi-kentässä Int64.
 43. Valitse OK.
 44. Valitse Yhdistämismääritys-välilehti.
@@ -89,22 +88,23 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 46. Valitse Sido.
 47. Laajenna puussa solmu model.
 48. Laajenna puussa model\Transactions.
-49. Valitse puussa File\Declaration\Data\Item = model.Transactions\Commodity rec id.
-50. Valitse puussa model\Transactions\Commodity rec id.
+49. Valitse puussa File\Declaration\Data\Item = model.Transactions\Commodity rec ID.
+50. Valitse puussa model\Transactions\Commodity rec ID.
 51. Valitse Sido.
 52. Valitse Tallenna.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Muodon muokkaaminen raportoinnin tietojen tallentamista varten
+
 1. Valitse Yhdistä muoto malliin.
 2. Valitse Uusi.
 3. Syötä tai valitse Määritelmä-kenttään Sovellustietojen päivitystä varten -juurinimike.
-    * Sovellustietojen päivitystä varten  
+    * Sovellustietojen päivitystä varten.
 4. Kirjoita Nimi-kenttään Yhdistämismääritys tietojen päivitystä varten.
     * Yhdistämismääritys tietojen päivitystä varten  
 5. Valitse Tallenna.
-    * Tämä yhdistämismääritys määrittää, miten Intrastat-raportin tiedot kerätään tietomalliin ja valitun Sovellustietojen päivitystä varten -juurinimikkeen määrittämän rakenteen. Näitä tietoja, saman Sovellustietojen päivitystä varten -juurinimikkeen mallin yhdistämismääritystä ja Kohteeseen -suuntaa käytetään sovellustietojen päivityksessä. Sovellustietojen päivitys alkaa heti, kun lähtevä Intrastat-raportti on luotu. Ota huomioon, että sovellustietojen päivitys voidaan ohittaa suorituksen aikana, mutta tietomallin on oltava tyhjä (sisältää tyhjän tietueluettelon).   
+    * Tämä yhdistämismääritys määrittää, miten Intrastat-raportin tiedot kerätään tietomalliin ja valitun Sovellustietojen päivitystä varten -juurinimikkeen määrittämän rakenteen. Näitä tietoja, saman Sovellustietojen päivitystä varten -juurinimikkeen mallin yhdistämismääritystä ja Kohteeseen -suuntaa käytetään sovellustietojen päivityksessä. Sovellustietojen päivitys alkaa heti, kun lähtevä Intrastat-raportti on luotu. Sovellustietojen päivitys voidaan ohittaa suorituksen aikana, mutta tietomallin on oltava tyhjä (sisältää tyhjän tietueluettelon).
 6. Valitse Suunnittelutoiminto.
-    * Ota huomioon, että lähtevän Intrastat-raportin muoto lisätään oletusarvoisesti tämän mallin yhdistämismäärityksen tietolähteeksi.  
+    * Lähtevän Intrastat-raportin muoto lisätään oletusarvoisesti tämän mallin yhdistämismäärityksen tietolähteeksi.  
     * Sido määritetyn raportin (esitetään tietolähteenä) elementit sen tietomallin elementteihin, joka on suodatettu valitun mallin juurinimikkeen perusteella.  
 7. Laajenna puussa Archive header.
 8. Laajenna puussa Archive header\Archive lines.
@@ -120,8 +120,8 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 18. Valitse Lisää toiminto.
 19. Laajenna puussa format.
 20. Laajenna puussa format\Declaration: XML Element(Declaration).
-21. Laajenna puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).
-22. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item).
+21. Laajenna puussa kohde `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
+22. Valitse puussa `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 23. Valitse Lisää tietolähde.
 24. Syötä Kaava-kenttään COUNT(format.Declaration.Data.Item).
     * COUNT(format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 27. Valitse puussa Archive header\File name.
 28. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name).
 29. Valitse Sido.
-30. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number).
+30. Valitse puussa `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)`.
 31. Valitse puussa Archive header\Archive lines\Item number.
 32. Valitse Sido.
-33. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value).
+33. Valitse puussa `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)`.
 34. Valitse puussa Archive header\Archive lines\Amount.
 35. Valitse Sido.
-36. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id).
-37. Valitse puussa Archive header\Archive lines\Commodity rec id.
+36. Valitse puussa `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)`.
+37. Valitse puussa Archive header\Archive lines\Commodity rec ID.
 38. Valitse Sido.
 39. Valitse puussa Archive header\Archive lines.
-40. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item).
+40. Valitse puussa `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 41. Valitse Sido.
 42. Valitse puussa Archive header.
-43. Valitse puussa format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).
+43. Valitse puussa `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
 44. Valitse Sido.
 45. Valitse Tallenna.
 46. Sulje sivu.
 47. Sulje sivu.
 48. Sulje sivu.
-

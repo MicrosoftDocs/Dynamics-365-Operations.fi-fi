@@ -3,7 +3,7 @@ title: Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 description: Tässä ohjeaiheessa on tietoja Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelemisesta ja lähtevien Excel-muotoisten tiedostojen luonnista.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e889b08f10c5d0c95fed7c9e422340706bdd154a
-ms.sourcegitcommit: 67ce81c57194afb26a04ae4c0b7509e0efa32afc
+ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3375810"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686535"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -165,6 +164,17 @@ Muokattavaa ER-muotoa vahvistettaessa tehdään yhdenmukaisuustarkistus, jolla v
 
 ![Vahvistusvirhesanoma](./media/er-excel-format-validate.png)
 
+## <a name="control-the-calculation-of-excel-formulas"></a>Excel-kaavojen laskemisen hallinta
+
+Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin tämän asiakirjan solut voivat sisältää Excel-kaavoja. Kun **Ota käyttöön EPPlus-kirjaston sähköinen raportointijärjestelmä** -toiminto on käytössä, voit määrittää, milloin kaavat lasketaan, muuttamalla **Laskentavalinnat**-[parametrin](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) arvoa käytetyssä Excel-mallissa:
+
+- Valitse **Automaattinen**, jos haluat laskea kaikki riippuvaiset kaavat uudelleen aina, kun luotu tiedosto liitetään uusilla alueilla, soluissa jne.
+    >[!NOTE]
+    > Tämä saattaa aiheuttaa suorituskykyongelman niille Excel-malleille, jotka sisältävät useita toisiinsa liittyviä kaavoja.
+- Valitse **Manuaalinen**, jos haluat välttää kaavojen uudelleenlaskennan, kun asiakirja luodaan.
+    >[!NOTE]
+    > Kaavan uudelleenlaskenta pakotetaan manuaalisesti, kun luotu asiakirja avataan esikatselua varten Excelissä.
+    > Älä käytä tätä vaihtoehtoa, jos määrität ER-kohteen, joka olettaa, että luotu tiedosto on käytössä ilman sen esikatselua Excelissä (PDF-muunnos, sähköpostin lähetys jne.) koska luotu tiedosto ei ehkä sisällä kaavoja sisältävien solujen arvoja.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

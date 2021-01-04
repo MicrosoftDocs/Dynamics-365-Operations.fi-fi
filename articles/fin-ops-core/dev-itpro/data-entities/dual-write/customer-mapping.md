@@ -1,6 +1,6 @@
 ---
 title: Integroidut asiakkaiden päätiedot
-description: Tässä aiheessa kuvataan asiakastietojen integraatiota Finance and Operationsin ja Common Data Servicen välillä.
+description: Tässä aiheessa kuvataan asiakastietojen integraatiota Finance and Operationsin ja Dataversen välillä.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,19 +18,21 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 36716c302d86bc5715798bf4cf4899f666d0872c
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 801538e320ca78b0cc55bb4e4b8a80d38b9b48d6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997451"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685636"
 ---
 # <a name="integrated-customer-master"></a>Integroidut asiakkaan päätiedot
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovelluksessa. Esimerkiksi asiakastietue voi olla peräisin myyntitehtävästä Dynamics 365 Salesissa (mallivetoinen sovellus Dynamics 365:ssa) tai tietue voi olla peräisin Dynamics 365 Commercen (Finance and Operations -sovelluksen) Retail-toiminnosta. Riippumatta siitä, mistä asiakastiedot ovat peräisin, ne integroidaan näkymän taakse. Integroidut asiakkaan päätiedot antavat sinulle joustavuutta hallita asiakastietoja missä tahansa Dynamics 365-sovelluksessa ja tarjoaa kattavan näkymän asiakkaasta kautta koko Dynamics 365 -sovelluspaketin.
+
+Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovelluksessa. Esimerkiksi asiakasrivi voi olla peräisin myyntitehtävästä Dynamics 365 Salesissa (mallivetoinen sovellus Dynamics 365:ssa) tai rivi voi olla peräisin Dynamics 365 Commercen (Finance and Operations -sovelluksen) vähittäismyynnistä. Riippumatta siitä, mistä asiakastiedot ovat peräisin, ne integroidaan näkymän taakse. Integroidut asiakkaan päätiedot antavat sinulle joustavuutta hallita asiakastietoja missä tahansa Dynamics 365-sovelluksessa ja tarjoaa kattavan näkymän asiakkaasta kautta koko Dynamics 365 -sovelluspaketin.
 
 ## <a name="customer-data-flow"></a>Asiakastietojen virta
 
@@ -38,17 +40,17 @@ Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovellukse
 
 ![Asiakastietojen virta](media/dual-write-customer-data-flow.png)
 
-Asiakkaat voidaan luokitella laajasti kahteen eri luokkaan: kaupalliset/organisaation asiakkaat ja kuluttajat/loppukäyttäjät. Nämä kaksiasiakas tyyppiä tallennetaan ja käsitellään eri tavalla Finance and Operationsissa ja Common Data Servicessä.
+Asiakkaat voidaan luokitella laajasti kahteen eri luokkaan: kaupalliset/organisaation asiakkaat ja kuluttajat/loppukäyttäjät. Nämä kaksiasiakas tyyppiä tallennetaan ja käsitellään eri tavalla Finance and Operationsissa ja Dataversessä.
 
-Finance and Operationsissa sekä kaupalliset/organisaation asiakkaat että kuluttajat/loppukäyttäjät hallittaan yhdessä taulukossa, jonka nimi on **CustTable** (CustCustomerV3Entity), ja ne luokitellaan **Tyyppi** -määritteen avulla. (Jos **tyypiksi** on määritetty **Organisaatio** , asiakas on kaupallinen/organisaation asiakas ja jos **tyypiksi** on määritetty **Henkilö** , asiakas on kuluttaja/loppukäyttäjä.) Ensisijaisen yhteyshenkilön tietoja käsitellään SMMContactPersonEntity-entiteetissä.
+Finance and Operationsissa sekä kaupalliset/organisaation asiakkaat että kuluttajat/loppukäyttäjät hallittaan yhdessä taulukossa, jonka nimi on **CustTable** (CustCustomerV3Entity), ja ne luokitellaan **Tyyppi**-määritteen avulla. (Jos **tyypiksi** on määritetty **Organisaatio**, asiakas on kaupallinen/organisaation asiakas ja jos **tyypiksi** on määritetty **Henkilö**, asiakas on kuluttaja/loppukäyttäjä.) Ensisijaisen yhteyshenkilön tietoja käsitellään SMMContactPersonEntity-entiteetissä.
 
-Common Data Servicessa kaupalliset/organisatoriset asiakkaat ovat masteroitu Asiakas-entiteetissä ja tunnistetaan asiakkaiksi , kun **RelationshipType** -määritteeksi onmääritetty **Asiakas**. Yhteyshenkilö-entiteetti edustaa sekä kuluttajia/loppukäyttäjiä että yhteyshenkilöitä. Jotta kuluttajan/loppukäyttäjän ja yhteyshenkilön välillä olisi selvä ero **Yhteysenkilö** -entiteetissä on Boolean-merkintä nimeltään **Myytävissä**. Kun **Myytävissä** -arvo on **Tosi** , kontakti on kuluttaja/loppukäyttäjä ja tarjouksia ja tilauksia voidaan luoda kyseiselle kontaktille. Kun **Myytävissä** -arvo **Epätosi** , kontakti on vain asiakkaan ensisijainen yhteyshenkilö.
+Dataversessa kaupalliset/organisatoriset asiakkaat ovat masteroitu Asiakas-entiteetissä ja tunnistetaan asiakkaiksi , kun **RelationshipType** -määritteeksi onmääritetty **Asiakas**. Yhteyshenkilö-entiteetti edustaa sekä kuluttajia/loppukäyttäjiä että yhteyshenkilöitä. Jotta kuluttajan/loppukäyttäjän ja yhteyshenkilön välillä olisi selvä ero **Yhteysenkilö**-entiteetissä on Boolean-merkintä nimeltään **Myytävissä**. Kun **Myytävissä**-arvo on **Tosi**, kontakti on kuluttaja/loppukäyttäjä ja tarjouksia ja tilauksia voidaan luoda kyseiselle kontaktille. Kun **Myytävissä**-arvo **Epätosi**, kontakti on vain asiakkaan ensisijainen yhteyshenkilö.
 
-Kun ei-Myytävissä oleva kontakti osallistuu tarjous- tai tilausprosessiin, **Myytävissä** -arvoksi annetaan **Tosi** , jotta merkitään kontakti myytävissä olevaksi kontaktiksi. Kontakti, josta on tullut Myytävissä oleva kontakti, on edelleen Myytävissä oleva kontakti.
+Kun ei-Myytävissä oleva kontakti osallistuu tarjous- tai tilausprosessiin, **Myytävissä**-arvoksi annetaan **Tosi**, jotta merkitään kontakti myytävissä olevaksi kontaktiksi. Kontakti, josta on tullut Myytävissä oleva kontakti, on edelleen Myytävissä oleva kontakti.
 
 ## <a name="templates"></a>Mallit
 
-Asiakkaan tiedot sisältävät kaikki asiakkaan tiedot, kuten asiakasryhmän, osoitteet, yhteystiedot, maksuprofiilin, laskutusprofiilin ja kanta-asiakkuuden tilan. Entiteettikarttojen kokoelma toimii yhdessä asiakastietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
+Asiakkaan tiedot sisältävät kaikki asiakkaan tiedot, kuten asiakasryhmän, osoitteet, yhteystiedot, maksuprofiilin, laskutusprofiilin ja kanta-asiakkuuden tilan. Taulukarttojen kokoelma toimii yhdessä asiakastietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
 Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset         | Kuvaus
 ----------------------------|---------------------------------|------------

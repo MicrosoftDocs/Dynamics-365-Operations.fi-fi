@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002540"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686242"
 ---
 # <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele talousraportteja
 
@@ -164,7 +163,7 @@ Tässä harjoituksessa muokkaat nykyistä oletusraporttia. Tulet lisäämään o
 14. Sulje **Konsolidoitu tase ja tuloslaskelma rinnakkain**.
 15. Sulje **Raportin suunnittelija**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Harjoitus 5: Luo rinnakkainen osastojen raportti
+## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Harjoitus 5: Luo rinnakkainen osastojen raportti
 Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen tuloslaskelmaan. Käytät aiemmin luotua rivimääritystä, mutta luo uusi raporttimääritys ja uusi sarakemääritys, joka käyttää dimensiosuodattimia. Aloitamme talousraporttiluettelosta.
 
 1. Siirry **tilinpäätöksiin** "Kyselyt ja raportit" -kohdassa kirjanpidossa.
@@ -193,8 +192,8 @@ Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen t
 18. **Tallenna** muutokset ja **luo**. Kun raportti on luotu ja avautuu, voit tutkia raporttia.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-[Talousraportointi](../../../finance/general-ledger/financial-reporting-getting-started.md)
+[Taloushallinnon raportointi](../../../finance/general-ledger/financial-reporting-getting-started.md)
 
-[Raporttien näyttäminen](../../../finance/general-ledger/view-financial-reports.md)
+[Näytä raportit](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamicsin talousraportointi -blogi](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics 365 Finance -Blogi](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

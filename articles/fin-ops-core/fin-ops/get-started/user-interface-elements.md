@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 37c5a6c20a6e77a50ece01046ee28074c927bd76
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 0c58ac63a4eae61c9a1cc6134bd0857394895e30
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091820"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693590"
 ---
 # <a name="user-interface-elements"></a>Käyttöliittymäelementit
 
@@ -43,7 +42,7 @@ Tässä ohjeaiheessa kuvataan sovelluksessa käytetyt käyttöliittymäelementit
 
 ## <a name="tabs-fields-and-sections"></a>Välilehdet, kentät ja osat
 
-*Välilehti* on sivulla tehty valinta, joka avaa tietueen eri osan samalla sivulla. Usein sen avulla voit muuttaa tiettyjä *kenttiä*tai käyttöliittymän elementtejä, jotka sallivat kirjoitetun syötteen. 
+*Välilehti* on sivulla tehty valinta, joka avaa tietueen eri osan samalla sivulla. Usein sen avulla voit muuttaa tiettyjä *kenttiä* tai käyttöliittymän elementtejä, jotka sallivat kirjoitetun syötteen. 
 
 *Pikavälilehti* on välilehti, jonka lisäetuna on, että useat välilehdet näkyvät yhtä aikaa. Voit laajentaa pikavälilehden valitsemalla alaspäin osoittavan nuolen sen oikeasta reunasta.
 

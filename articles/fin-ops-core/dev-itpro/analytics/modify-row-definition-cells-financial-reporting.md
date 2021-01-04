@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182988"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685856"
 ---
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
@@ -107,7 +106,7 @@ Kuvauksen solu sisältää raportin rivillä taloushallinnon tietojen kuvauksen,
     |-------------------------------|-----------------------------------|--------|
     | (Ei mitään)                        |                                   | Tyhjentää **Muotoilukoodi**-solun. |
     | TOT                           | Yhteensä                             | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Yhteensä-koodi sisältää yksinkertaisia operaattoreita, kuten **+** ja **-**. |
-    | CAL                           | Laskelma                       | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Laskelmat sisältävät monimutkaisia operaattoreita, kuten **+**, **-**, **\***, **/** ja **IF/THEN/ELSE** -lausekkeet. |
+    | CAL                           | Laskelma                       | Määrittää rivin, joka käyttää **Liittyvät kaavat/rivit/yksiköt** -sarakkeessa matemaattisia operaattoreita. Laskelmat sisältävät monimutkaisia operaattoreita, kuten **+**, **-**, **\**_, _*/** ja **IF/THEN/ELSE** -lausekkeita. |
     | DES                           | kuvaus                       | Määrittää raportin otsikkorivin tai tyhjän rivin. |
     | LFT RGT CEN                   | Vasen, Oikea, Keskitys                 | Tasaa rivin kuvaustekstin raporttisivulla tekstin sarakkeen määrityksessä olevasta sijoittelusta huolimatta. |
     | CBR                           | Vaihda perusrivi                   | Määrittää rivin, joka määrittää sarakkeiden laskelmien perusrivin. |
@@ -175,7 +174,7 @@ Rivin määrityksen **Muotoilukoodi**-sarakkeessa muotoilukoodit **DES**-, **LFT
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Esimerkki rivien tulostamisen estämisestä
 
-Seuraavassa esimerkissä Paula haluaa estää raportin **Käteinen yhteensä** -rivin otsikon ja alleviivausten tulostamisen, koska kummallakaan käteistilillä ei ole ollut toimintaa. Tämän vuoksi Paula syöttää rivin 220 (joka on muotoilurivi, kuten muotoilukoodi **---** osoittaa) **Liittyvät kaavat/rivit/yksiköt** -soluun **250**, joka on sen summarivin koodi, jonka hän haluaa piilottaa.
+Seuraavassa esimerkissä käyttäjä haluaa estää raportin **Käteinen yhteensä** -rivin otsikon ja alleviivausten tulostamisen, koska kummallakaan käteistilillä ei ole ollut toimintaa. Tämän vuoksi käyttäjä syöttää rivin 220 (joka on muotoilurivi, kuten muotoilukoodi **---** osoittaa) **Liittyvät kaavat/rivit/yksiköt** -soluun **250**, joka on sen summarivin koodi, jonka hän haluaa piilottaa.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -402,7 +401,7 @@ Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja t
 2. Kaksoisnapsauta **Linkki taloushallinnon dimensioihin** -sarakkeen solua.
 3. Kaksoisnapsauta **Dimensiot**-valintaikkunassa dimension nimen alapuolella olevaa solua.
 4. Valitse dimension valintaikkunassa **Yksittäinen tai alue**.
-5. Syötä **Mistä**-kenttään aloittava dimensio tai hae käytettävissä olevat dimensiot valitsemalla ![Selaa](media/browse.gif "Selaa"). Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
+5. Syötä **Alku**-kenttään aloitusdimensio tai napauta ![Browse](media/browse.gif "Selaa") etsiäksesi käytettävissä olevia dimensioita. Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
 6. Sulje dimension valintaikkuna valitsemalla **OK**. **Dimensiont**-valintaikkunassa näkyy päivitetty dimensio tai alue.
 7. Sulje **Dimensiot**-valintaikkuna valitsemalla **OK**.
 
@@ -416,7 +415,7 @@ Oletusarvoisesti Report Designer ei tulosta rivejä, joilla ei ole vastaavaa sal
 3. Tallenna muutokset valitsemalla **Tiedosto**-valikosta **Tallenna**.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Yleismerkkien ja alueiden käyttäminen rivin määrityksessä
-Jos haluat syöttää luonnollisen segmentin arvon **Dimensiot**-valintaikkunaan, voit syöttää mihin tahansa segmentin kohtaan yleismerkin (? tai \*). Raportin suunnitteluohjelma poimii määritettyjen sijaintien arvot, eikä ota yleismerkkejä huomioon. Tässä esimerkissä rivin määritys sisältää vain luonnollisen segmentin arvoja. Luonnollisilla segmenteillä on neljä merkkiä. Jos annat arvoksi **6???** Report Designer ottaa huomioon kaikki tilit, joiden luonnollisen segmentin arvo alkaa numerolla 6. Jos annat arvoksi **6\***, palautettavat tulokset ovat samat, mutta tulokset voivat sisältää myös muun pituisia arvoja, kuten **60** ja **600000** Report Designer korvaa kunkin yleismerkin (?) arvoilla, jotka voivat sisältää sekä kirjaimia että erikoismerkkejä. Jos alueeksi määritetään **12?0**–**12?4**, **12?0**-arvon yleismerkki korvataan merkistön alimmalla arvolla ja **12?4**-arvon yleismerkki merkistön korkeimmalla arvolla.
+Jos haluat syöttää luonnollisen segmentin arvon **Dimensiot**-valintaikkunaan, voit syöttää mihin tahansa segmentin kohtaan yleismerkin (? tai \*). Raportin suunnitteluohjelma poimii määritettyjen sijaintien arvot, eikä ota yleismerkkejä huomioon. Tässä esimerkissä rivin määritys sisältää vain luonnollisen segmentin arvoja. Luonnollisilla segmenteillä on neljä merkkiä. Jos annat arvoksi **6???** Report Designer ottaa huomioon kaikki tilit, joiden luonnollisen segmentin arvo alkaa numerolla 6. Jos annat arvoksi **6\**_, palautettavat tulokset ovat samat, mutta tulokset voivat sisältää myös muun pituisia arvoja, kuten _* 60** ja **600000** Report Designer korvaa kunkin yleismerkin (?) arvoilla, jotka voivat sisältää sekä kirjaimia että erikoismerkkejä. Jos alueeksi määritetään **12?0**–**12?4**, **12?0**-arvon yleismerkki korvataan merkistön alimmalla arvolla ja **12?4**-arvon yleismerkki merkistön korkeimmalla arvolla.
 
 > [!NOTE]
 > Vältä yleismerkkien käyttämistä alueiden aloitus- ja lopetustileissä. Jos aloitus- tai lopetustilissä käytetään yleismerkkiä, tulokset voivat olla odottamattomia.
@@ -479,7 +478,7 @@ Seuraavassa taulukossa esitellään **Dimensiot**-valintaikkunan kentät.
 
 | Nimike                | Kuvaus |
 |---------------------|-------------|
-| Yksittäinen tai alue | Syötä **Mistä**-kenttään tilin nimi tai etsi tili valitsemalla **Selaa**-painike ![Selaa](media/browse.gif "Selaa"). Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä. |
+| Yksittäinen tai alue | Syötä tilin nimi kenttään **Alku** tai napauta **Selaa**-painiketta ![Selaa](media/browse.gif "Selaa") etsiäksesi tilin selaamalla. Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä. |
 | Dimensioarvoyhdistelmä | Syötä **Nimi**-kenttään dimensioarvoyhdistelmän nimi. Voit luoda, muokata, kopioida tai poistaa yhdistelmän valitsemalla **Dimensioarvoyhdistelmien hallinta**. Rivin määrityksen tämän dimensioarvoyhdistelmän **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 | Summatilit   | Syötä **Nimi**-kenttään summatilien dimensio tai etsi se kentässä. Raportin määrityksen summatilin **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 
@@ -529,4 +528,4 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Talousraportointi](financial-reporting-intro.md)
+[Taloushallinnon raportointi](financial-reporting-intro.md)

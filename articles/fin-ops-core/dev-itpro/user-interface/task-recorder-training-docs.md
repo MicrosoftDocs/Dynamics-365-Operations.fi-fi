@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1498c09160acea2799a90e36c155523635895e5f
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: b92ef15fc9f3f6a5ebb6ba4ea4eae1a0f7488995
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329849"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687789"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 
@@ -39,10 +38,10 @@ Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväo
 
 Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöliittymässä suoritetut toiminnot. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
 
--   **Tehtävätallenteiden toistaminen tehtävän ohjauksina.** Tehtäväoppaat ovat keskeinen osa ohjeita. Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti liiketoimintaprosessin eri vaiheet. Käyttäjää ohjataan kunkin vaiheen suorittamisessa ponnahduskehotteen (eli kuplan) avulla. Se esiintyy kaikkialla käyttöliittymässä ja osoittaa käyttöliittymäelementin, johon käyttäjän tulee reagoida. Kupla sisältää myös tietoja siitä, miten elementtiä käytetään, kuten Napsauta tätä tai Kirjoita tähän kenttään arvo. Tehtäväopas toimii käyttäjän nykyisen tietojoukon kanssa, ja syötetyt tiedot tallennetaan käyttäjän ympäristöön.
+-   **Tehtävätallenteiden toistaminen tehtävän ohjauksina.** Tehtäväoppaat ovat keskeinen osa ohjeita. Tehtäväoppaassa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti liiketoimintaprosessin eri vaiheet. Käyttäjää ohjataan kunkin vaiheen suorittamisessa ponnahduskehotteen (eli kuplan) avulla. Se esiintyy kaikkialla käyttöliittymässä ja osoittaa käyttöliittymäelementin, johon käyttäjän tulee reagoida. "Kupla" sisältää myös tietoja siitä, miten elementtiä käytetään, kuten Napsauta tätä tai Kirjoita tähän kenttään arvo. Tehtäväopas toimii käyttäjän nykyisen tietojoukon kanssa, ja syötetyt tiedot tallennetaan käyttäjän ympäristöön.
 -   **Tehtävätallenteet voidaan tallentaa Word-asiakirjoina.** Tämä mahdollistaa tulostettavien koulutusohjeiden luomisen.
 
-Voit luoda omia tehtävätallenteita, toistaa Microsoftin tehtävätallenteita tai muokata Microsoftin toimittamia tehtävätallenteita omaa konfiguraatiota vastaaviksi. Lisätietoja tehtävien tallennustoiminnosta on kohdassa [Tehtävien tallennustoiminto](task-recorder.md).
+Voit luoda omia tehtävätallenteita, toistaa Microsoftin tehtävätallenteita tai muokata Microsoftin toimittamia tehtävätallenteita omaa konfiguraatiota vastaaviksi. Lisätietoja tehtävien tallennustoiminnosta on kohdassa [Tehtävien tallennustoiminto](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Tehtävätallenteen suunnitteleminen
 Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta tai muokkaamassa Microsoftin tehtävätallennetta.
@@ -58,11 +57,11 @@ Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta
 **Kirjoita kuvaus ja huomautukset etukäteen**
 
 -   Kunkin tehtävätallenteen alussa on kuvauskenttä, johon voi syöttää tallenteen kuvauksen. Kannattaa kirjoittaa ja tallentaa kuvaus etukäteen erilliseen asiakirjaan, jotta voit kopioida ja liittää sen tehtävätallenteeseen tallennuksen aikana. Näin voit hioa tekstiä ennen tallennusprosessia. Tallennusprosessista tulee nopeampi ja sujuvampi leikkaamisen ja liittämisen ansiosta.
--   Voit luoda huomautuksia missä tahansa tehtävätallenteen vaiheessa. Tehtävän ohjauksen toiston aikana huomautukset näkyvät kuplassa huomautuksina vaiheen tekstin ylä- tai alapuolella. Kun tekstiä tarkastellaan ohjeruudussa, huomautukset näkyvät vaiheessa tekstiin sidottuina. Huomautukset kannattaa kuvauksen tavoin kirjoittaa ja tallentaa erilliseen asiakirjaan. Kun olet tallentamassa tehtävätallennetta, voit leikata ja liittää huomautukset asiakirjan vaatimassa muodossa.
+-   Voit luoda huomautuksia missä tahansa tehtävätallenteen vaiheessa. Tehtäväoppaan toiston aikana huomautukset näkyvät "kuplassa" huomautuksina vaiheen tekstin ylä- tai alapuolella. Kun tekstiä tarkastellaan ohjeruudussa, huomautukset näkyvät vaiheessa tekstiin sidottuina. Huomautukset kannattaa kuvauksen tavoin kirjoittaa ja tallentaa erilliseen asiakirjaan. Kun olet tallentamassa tehtävätallennetta, voit leikata ja liittää huomautukset asiakirjan vaatimassa muodossa.
 
 **Tietoja huomautustyypeistä** Kaikki huomautukset ovat valinnaisia. Lisää huomautuksia vain silloin, kun ne sisältävät käyttäjälle hyödyllisiä tietoja.
 
--   **Otsikko**: otsikon huomautus tulee näkyviin ennen tehtävän tallennustoiminnon automaattisesti luomaa vaihetekstiä. Otsikon huomautus näytetään tehtäväoppaassa automaattisesti luodun tekstin yläpuolella. Tämän tyyppisen huomautuksen avulla voit selittää, miksi käyttäjä suorittaa vaihetta. Voit myös antaa lisätietoja kontekstista.
+-   **Otsikko**: otsikon huomautus tulee näkyviin ennen tehtävän tallennustoiminnon automaattisesti luomaa vaihetekstiä. Otsikon huomautus näytetään tehtäväoppaassa automaattisesti luodun tekstin yläpuolella. Tämän tyyppisen huomautuksen avulla voit selittää, miksi käyttäjä suorittaa vaihetta. Voit myös antaa lisätietoja kontekstista.
 
 Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomisen yhteydessä. Syötä otsikkohuomautus **Otsikko**-ruutuun. 
 
@@ -82,7 +81,7 @@ Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 
 [![Ilmoitushuomautuksen ulkoasu tehtäväoppaassa](./media/screen4.png)](./media/screen4.png)
 
--   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää Tiedot-vaihe**. Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, sovelluksen ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
+-   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää tiedot -vaihe**. Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, sovelluksen ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
 
 **Määritä, miten pitkä tallenteesta tulee**
 
@@ -92,7 +91,7 @@ Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 -   Jos prosessi käsittää useita tehtäviä, jotka henkilö luultavasti tekee kerralla, voit sisällyttää ne yhteen tallenteeseen. Tällainen tallenne voi olla esimerkiksi Toiminnallisuusprofiilien määrittäminen ja liittäminen.
 -   Jos käyttäjä suorittaa jonkin tehtävän kerralla (kuten konfiguroiminen) ja heti tämän jälkeen toisen itsenäisen tehtävän, joka saatetaan toistaa, jaa tehtävät kahteen erilliseen tallenteeseen.
 
-**Päätä, missä kohtaa käyttöliittymää tallentaminen alkaa** Sivu, jolla olet tehtävätallenteen tallentamisen alkaessa, vaikuttaa siihen, millä sivulla tehtävän ohjaus näytetään. Jos haluat tehtävätallenteen olevan esimerkiksi ohjeruudussa, kun käyttäjä valitsee Kirjanpitoparametrit-sivun, sinun on aloitettava tallentaminen Kirjanpitoparametrit-sivulta. **Tallenna tallenteet .axtr-tiedostoina** Kun olet luonut tehtävätallenteen tai muokannut sitä, näkyviin tulee useita tallenteen lataus- tai tallennusvaihtoehtoja. Voit ladata tiedoston tehtävätallenteen pakettina (.axtr) tai käsittelemättömänä tallennetiedostona (.xml) tai Word-asiakirjana tai tallentaa tiedoston LCS-kirjastoon. Tehtävätallenne kannattaa aina tallentaa tehtävätallenteen pakettitiedostona (.axtr). Se helpottaa tiedoston ylläpitoa, jos menettelyitä tai huomautuksia on muutettava myöhemmin. Jos haluat noutaa tiedoston Word-asiakirjana, tallenna se myös silloin tehtävätallenteen pakettitiedostona.
+**Päätä, missä kohtaa käyttöliittymää tallentaminen alkaa** Sivu, jolla olet tehtävätallenteen tallentamisen alkaessa, vaikuttaa siihen, millä sivulla tehtävän ohjaus näytetään. Jos haluat tehtävätallenteen olevan saatavilla esimerkiksi ohjeruudussa, kun käyttäjä valitsee Kirjanpitoparametrit-sivun, sinun on aloitettava tallentaminen Kirjanpitoparametrit-sivulta. **Tallenna tallenteet .axtr-tiedostoina** Kun olet luonut tehtävätallenteen tai muokannut sitä, näkyviin tulee useita tallenteen lataus- tai tallennusvaihtoehtoja. Voit ladata tiedoston tehtävätallenteen pakettina (.axtr) tai käsittelemättömänä tallennetiedostona (.xml) tai Word-asiakirjana tai tallentaa tiedoston LCS-kirjastoon. Tehtävätallenne kannattaa aina tallentaa tehtävätallenteen pakettitiedostona (.axtr). Se helpottaa tiedoston ylläpitoa, jos menettelyitä tai huomautuksia on muutettava myöhemmin. Jos haluat ladata tiedoston Word-asiakirjana, tallenna se myös silloin tehtävätallenteen pakettitiedostona.
 
 ## <a name="create-your-task-recording"></a>Tehtävätallenteen luominen
 Yksityiskohtaiset vaiheet ovat kohdassa [Tehtävien tallennustoiminnon resurssit](task-recorder.md).
@@ -108,7 +107,7 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 6.  Valitse puussa se liiketoimintaprosessin solmu, johon tehtävätallenne on liitetty.
 7.  Napsauta **OK**.
 8.  Valitse **Käynnistä**.
-9.  Käy tässä vaiheessa tallenne läpi ja muuta vaiheita uudelleentallennuksen yhteydessä. **Huomautus**: Jos haluat muuttaa vain tallenteen tekstiä, voit avata tallenteen **Muokkaa tallenteen huomautuksia** -tilassa ja tallentaa sen uudelleen.
+9.  Käy tässä vaiheessa tallenne läpi ja muuta vaiheita uudelleentallennuksen yhteydessä. **Huomautus**: jos haluat muuttaa vain tallenteen tekstiä, voit avata tallenteen **Muokkaa tallenteen huomautuksia** -tilassa ja tallentaa sen uudelleen.
 10. Kun olet päässyt tallenteen toistossa loppuun, valitse näytön yläosassa olevan tehtävän tallennustoiminnon palkissa **Pysäytä**.
 11. Määritä tehtävätallenteen tallennustapa.
 

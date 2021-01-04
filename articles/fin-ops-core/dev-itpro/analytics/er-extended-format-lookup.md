@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138857"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679483"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Salli käyttäjien määrittää ER-muotoviittaus, jolla kysytään muotoa yleisestä tietovarastosta
 
 [!include [banner](../includes/banner.md)]
 
-Voit käyttää [Sähköisen raportoinnin](general-electronic-reporting.md) (ER) kehystä määrittääksesi [muotoja](general-electronic-reporting.md#FormatComponentOutbound) lähteville asiakirjoille eri maiden ja alueiden lakisääteisten vaatimusten mukaan. Voit käyttää ER-kehystä myös [muotojen](general-electronic-reporting.md#FormatComponentInbound) määrittämiseen saapuvien asiakirjojen jäsentämistä ja kyseisten asiakirjojen tietojen sovellustietoihin liittämistä tai sovellustietojen päivittämistä varten. Kaikkia näitä muotoja voi käyttää Dynamics 365 Finance -esiintymässä saapuvien tai lähtevien liiketoiminta-asiakirjojen käsittelyyn osana tiettyjä liiketoimintaprosesseja. 
+Voit käyttää [Sähköisen raportoinnin](general-electronic-reporting.md) (ER) kehystä määrittääksesi [muotoja](general-electronic-reporting.md#FormatComponentOutbound) lähteville asiakirjoille eri maiden ja alueiden lakisääteisten vaatimusten mukaan. Voit käyttää ER-kehystä myös [muotojen](general-electronic-reporting.md#FormatComponentInbound) määrittämiseen saapuvien asiakirjojen jäsentämistä ja kyseisten asiakirjojen tietojen sovellustietoihin liittämistä tai sovellustietojen päivittämistä varten. Kaikkia näitä muotoja voidaan käyttää Dynamics 365 Finance -esiintymässä saapuvien tai lähtevien liiketoiminta-asiakirjojen käsittelyyn osana tiettyjä liiketoimintaprosesseja.
 
 Tavallisesti sinun on määritettävä, mitä ER-muotoa on käytettävä tietyssä liiketoimintaprosessissa. Valitse tätä varten yksittäinen ER-muoto hakukentässä, joka on määritetty osana liiketoimintaprosessikohtaisia parametreja. Näitä hakukenttiä käytetään useimmiten asianmukaisen ER-kehyksen ohjelmointirajapinnan avulla. Lisätietoja on kohdassa [ER-kehyksen ohjelmointirajapinta – koodi muodon yhdistämismäärityksen haun näyttämistä varten](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
@@ -45,23 +44,23 @@ Jos kulloinenkin Finance-esiintymä sisältää Intrastat-liiketoimintaprosessii
 
 Tämä haku tarjoaa vain ne ER-muodot, jotka on jo tuotu kulloiseenkin Finance-esiintymään. [Tuodaksesi](./tasks/er-import-configuration-lifecycle-services.md) ER-ratkaisuja kulloiseenkin Finance-esiintymään sinulla on oltava käyttöoikeudet suorittaa asianmukainen ER-kehyksen toiminto, joka tukee ER-muotoja sisältävien ER-ratkaisujen [elinkaarta](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-Alkaen Financen versiosta 10.0.9 (huhtikuun 2020 julkaisu) ER-muodon haun käyttöliittymää, jota käytetään ER-kehyksen ohjelmointirajapinnan avulla, on laajennettu. Voit edelleen valita olemassa olevia ER-muotoja, jotka löydät **Valitse muotomääritys** -pikavälilehdestä. Tämän lisäksi laajennettu haku tarjoaa uuden mahdollisuuden etsi tiettyjä ER-muotoja yleisestä tietovarastosta. Kaikki yleisen tietovaraston ER-muodot esitetään **tuo yleisestä tietovarastosta** -pikavalikossa.
+Alkaen Financen versiosta 10.0.9 (huhtikuun 2020 julkaisu) ER-muodon haun käyttöliittymää, jota käytetään ER-kehyksen ohjelmointirajapinnan avulla, on laajennettu. Voit edelleen valita olemassa olevia ER-muotoja, jotka löydät **Valitse muotomääritys** -pikavälilehdestä. Tämän lisäksi laajennettu haku tarjoaa uuden mahdollisuuden etsi tiettyjä ER-muotoja Yleisestä tietovarastosta (GR). Kaikki yleisen tietovaraston ER-muodot esitetään **tuo yleisestä tietovarastosta** -pikavalikossa.
 
 [![Ulkomaankaupan parametrisivu](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
-Samankaltaisesti kuin**Valitse muodon määritys** -pikavälilehti myös **Tuo yleisestä tietovarastosta**-pikavälilehdessä näkyvät vain sille liiketoimintaprosessille sopivat ER-muodot, jolle on valittu ER-muoto tässä hakukentässä. Tässä esimerkissä luodaan Intrastat-ilmoitus. ER-muoto on sovellettavissa sille yritykselle, johon käyttäjä on tällä hetkellä kirjautunut yrityksen maakontekstista riippuen.
+Samankaltaisesti kuin **Valitse muodon määritys** -pikavälilehti myös **Tuo yleisestä tietovarastosta**-pikavälilehdessä näkyvät vain sille liiketoimintaprosessille sopivat ER-muodot, jolle on valittu ER-muoto tässä hakukentässä. Tässä esimerkissä luodaan Intrastat-ilmoitus. ER-muoto on sovellettavissa sille yritykselle, johon käyttäjä on tällä hetkellä kirjautunut yrityksen maakontekstista riippuen.
 
 Kun valitset **Tuo yleisestä tietovarastosta** -pikavälilehdestä ER-muodon, valitun ER-muodon [määritys](general-electronic-reporting.md#Configuration) tuodaan yleisestä tietovarastosta kulloiseenkin Finance-esiintymään.
 
 [![Ulkomaankaupan parametrisivu](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Jos tuonti sitten saadaan suoritettua loppuun onnistuneesti, viite tuotuun ER-muotoon tallennettaan tähän hakukenttään. Huomaa, että kun käytät yleistä tietovarastoa ensimmäisen kerran, sinun on seurattava annettua linkkiä ja rekisteröidyttävä [Regulatory Configuration Serviceen](https://aka.ms/rcs) (RCS), jota käytetään yleisen tietovaraston käyttöoikeuksien hallintaan.
+Jos tuonti sitten saadaan suoritettua loppuun onnistuneesti, viite tuotuun ER-muotoon tallennettaan tähän hakukenttään. Kun käytät yleistä tietovarastoa ensimmäisen kerran, sinun on seurattava annettua linkkiä ja rekisteröidyttävä [Regulatory Configuration Serviceen](https://aka.ms/rcs) (RCS), jota käytetään yleisen tietovaraston käyttöoikeuksien hallintaan.
 
 [![Ulkomaankaupan parametrisivu](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Oletusarvoisesti **Tuo yleisesti** -pikavälilehdessä näkyy yleisen tietovaraston sisällön perusteella suorituskykyparannuksia varten automaattisesti luotavan väliaikaisen tallennustilan ER-muotojen luettelo. Tämä tapahtuu, kun **Tuo yleisestä tietovarastosta** -pikavälilehti avataan ensimmäistä kertaa, mikä saattaa kestää useita sekunteja.
 
-Jos et näe tarvittavaa ER-muotoa **Tuo yleisestä tietovarastosta** -pikavälilehdessä, mutta olet varma, että kyseinen ER-muoto on tallennettu yleiseen tietovarastoon, valitse vaihtoehto **Synkronoi**. Tämä päivittää väliaikaisen tallennustilan ja synkronoi yleisen tietovaraston kulloisenkin sisällön kanssa.
+Jos et näe tarvittavaa ER-muotoa **Tuo yleisestä tietovarastosta** -pikavälilehdessä, mutta olet varma, että kyseinen ER-muoto on tallennettu yleiseen tietovarastoon, valitse vaihtoehto **Synkronoi**. Tämä valinta päivittää väliaikaisen tallennustilan ja synkronoi sen yleisen tietovaraston kulloisenkin sisällön kanssa.
 
 ## <a name="feature-activation"></a>Ominaisuuden aktivointi
 

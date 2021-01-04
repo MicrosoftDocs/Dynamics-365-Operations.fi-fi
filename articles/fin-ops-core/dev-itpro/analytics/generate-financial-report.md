@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181838"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688314"
 ---
 # <a name="generate-financial-reports"></a>Luo raportit
 
@@ -98,7 +97,7 @@ Sinun on oltava raporttiaikataulun omistaja tai sinulla on oltava järjestelmän
 
 Jos et syötä tarvittavia tunnistetietoja kaikille raportteihin sisältyville yhtiöille, saat seuraavan sanoman tallentaessasi raporttiaikataulun: Sinun on syötettävä tunnistetietosi raporttiaikatauluun sisältyville yhtiöille. Määritä tunnistetiedot valitsemalla Käyttöoikeudet-painike.
 
-Esimerkissä Phyllis kirjautuu yritykseen A käyttämällä käyttäjänimeään ja salasanaansa. Hän luo aikataulun raportille, joka käyttää raportointipuun määrityksiä tietojen keräämiseen useista yrityksistä. Kun raporttiaikataulu tallennetaan, näyttöön tulee kehote, jossa Phyllisiä pyydetään antamaan raporttipuumäärityksessä määritettyjen yritysten tunnistetiedot. Kun tunnistetietojesi voimassaolo päättyy, raporttiaikataulun raportteja ei luoda, kunnes tunnistetiedot on päivitetty. Raporttijonoon tulee sanoma ilmaisemaan, että käyttöoikeudet on päivitettävä. Raporttiaikataulu epäonnistuu, jos mikään seuraavista skenaarioista tapahtuu (koska ne vaativat tunnistetietoja):
+Esimerkissä käyttäjä kirjautuu yritykseen A käyttämällä käyttäjänimeä ja salasanaa. Käyttäjä luo aikataulun raportille, joka käyttää raportointipuun määrityksiä tietojen keräämiseen useista yrityksistä. Kun raporttiaikataulu tallennetaan, näyttöön tulee kehote, jossa käyttäjää pyydetään antamaan raporttipuumäärityksessä määritettyjen yritysten tunnistetiedot. Kun tunnistetietojesi voimassaolo päättyy, raporttiaikataulun raportteja ei luoda, kunnes tunnistetiedot on päivitetty. Raporttijonoon tulee sanoma ilmaisemaan, että käyttöoikeudet on päivitettävä. Raporttiaikataulu epäonnistuu, jos mikään seuraavista skenaarioista tapahtuu (koska ne vaativat tunnistetietoja):
 
 - Uusi yritys on lisätty raportointipuun yksittäiseen raporttiin.
 - Raporttiryhmän raporttia on muokattu.

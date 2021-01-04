@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
-ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
+ms.openlocfilehash: 29d7ec6498090ea47259303237c5a64a26e4926b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3885224"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685928"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-funktio
 
@@ -103,7 +102,7 @@ Seuraavassa kuvassa näkyy, miten voit käyttää [tietolähteen virheenkorjaust
 
 ![Määritetyn mallin yhdistämismärityksen testaaminen tietolähteen virheenkorjauksen avulla](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
-Tietomallin **LedgerType**näyttää tapahtumatyyppien otsikkoja odotetulla tavalla.
+Tietomallin **LedgerType** näyttää tapahtumatyyppien otsikkoja odotetulla tavalla.
 
 Jos aiot käyttää tätä menetelmää suureen määrään tapahtumatietoja, sinun on otettava huomioon suorituksen suorituskyky. Lisätietoja: [Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md).
 

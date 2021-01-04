@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0dc71f819f132b91fe153f83089eab24fa33173a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 661617ea7e51ac5cacdd5a08ee52f6a6e43b44be
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772485"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686683"
 ---
 # <a name="production-performance-power-bi-content"></a>Tuotannon suorituskyvyn Power BI -sisältö
 
@@ -52,7 +51,7 @@ Seuraavassa taulukossa on sisältyvien visualisointien yhteenveto.
 
 | Raporttisivu                                | Kaaviot | Ruudut |
 |--------------------------------------------|--------|-------|
-| Tuotannon suorituskyky                     | <ul><li>Tuotannon määrä päivämäärän mukaan</li><li>Tuotantojen määrä tuote-ja nimikeryhmän mukaan</li><li>Suunniteltujen tuotantojen määrä päivämäärän mukaan</li><li>10 alinta tuotetta ajallaan olon ja kokonaisuuden mukaan</li></ul> | <ul><li>Tilauksia yhteensä</li><li>Ajallaan ja kokonaisuudessaan</li><li>Kesken – %</li><li>Etuajassa – %</li><li>Myöhässä – %</li></ul> |
+| Tuotannon suorituskyky                     | <ul><li>Tuotannon määrä päivämäärän mukaan</li><li>Tuotantojen määrä tuote-ja nimikeryhmän mukaan</li><li>Suunniteltujen tuotantojen määrä päivämäärän mukaan</li><li>10 alinta tuotetta ajallaan olon &amp; kokonaisuuden mukaan</li></ul> | <ul><li>Tilauksia yhteensä</li><li>Ajallaan &amp; kokonaisuudessaan</li><li>Kesken – %</li><li>Etuajassa – %</li><li>Myöhässä – %</li></ul> |
 | Viat tuotteen mukaan                         | <ul><li>Virheellisten osuus (ppm) päivämäärän mukaan</li><li>Virheellisten osuus (ppm) tuote- ja nimikeryhmän mukaan</li><li>Tuotettu määrä päivämäärän mukaan</li><li>10 merkittävintä tuotetta virheellisten osuuden mukaan</li></ul> | <ul><li>Virheellisten osuus (ppm)</li><li>Virheellisten määrä</li><li>Kokonaismäärä</li></ul> |
 | Viallisten trendi tuotteen mukaan                   | Viallisten osuus (ppm) tuotetun määrän mukaan | Viallisten osuus (ppm) |
 | Vialliset resurssien mukaan                        | <ul><li>Viallisten osuus (ppm) päivämäärän mukaan</li><li>Viallisten osuus (ppm) resurssin ja toimipaikan mukaan</li><li>Viallisten osuus (ppm) toimenpiteen mukaan</li><li>10 merkittävintä resurssia viallisten osuuden mukaan</li></ul> | Virheellisten määrä |

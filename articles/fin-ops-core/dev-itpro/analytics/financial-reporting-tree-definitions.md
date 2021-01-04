@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564164"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682670"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Talousraporttien raportointipuiden määritykset
 
@@ -76,7 +75,7 @@ Voit luoda raportointipuun määrityksen seuraavien vaiheiden avulla.
     | Sisällytä / merkin sijainti       | Tässä osassa on luettelo taloushallinnon tiedoissa määritetyt dimensiot ja näyttää kunkin dimension pisimmän määritetyn arvon merkkien määrän. Valitse raportointipuuhierarkian dimensioon sisällytettävän dimension valintaruutu. |
     | Segmenttihierarkia ja -alueet     | Tämä osa näyttää dimensiohierarkian. Voit siirtää luettelon dimensioita, jos haluat muuttaa raportointijärjestystä. Voit määrittää kunkin dimension arvoalue **Dimensiosta**- ja **Dimensioon**-kentissä. Jos et määritä aluetta, kaikki dimension arvot lisätään raportointipuuhun.<blockquote>[!NOTE] Jos käytät useampaa kuin yhtä dimensiota, hauissa palautetaan vain ne dimensioyhdistelmät, joihin on kirjattu.</blockquote> |
 
-    Jos haluat nähdä näyttökuvan, jossa on esimerkki **Lisää raportointiyksiköt dimensioista** -valintaikkunasta, katso tässä artikkelissa jäljempänä olevaa osaa Esimerkki Lisää raportointiyksiköt dimensioista -valintaruudusta.
+    Jos haluat nähdä näyttökuvan, jossa on esimerkki **Lisää raportointiyksiköt dimensioista** -valintaikkunasta, katso tässä artikkelissa jäljempänä olevaa osaa Esimerkki lisää raportointiyksiköt dimensioista -valintaruudusta.
 
 5. Voit luoda lisäsegmenttejä (esimerkiksi jakaa yhden segmentin kahdeksi lyhyemmäksi segmentiksi) valitsemalla oikean kohdan **Merkin sijainti** -kentässä ja valitsemalla sitten **Jaa segmentit**.
 6. Voit yhdistää kaksi segmenttiä yhdeksi segmentiksi valitsemalla jommankumman segmenttiruudun ja valitsemalla sitten **Yhdistä segmentit**.
@@ -106,7 +105,7 @@ Raportointipuuta käytettäessä aliraportointiyksiköiden summat kerätään p�
     > Jos määrität sekä ali- että pääyksiköiden dimensiot, raporttiin voi syntyä päällekkäisiä tietoja.
 
 - Raportointiyksiköt, jotka sisältävät raportointipuun dimensioita, vastaavat dimensioita, joita käytetään rivien ja sarakkeiden määrityksissä. Dimensioyhdistelmä määrittää kyseiseen yksikköön palautettavat summat. Esimerkiksi tässä artikkelissa on myöhemmin esimerkki 2, jonka rivit 6 ja 7 palauttavat vain osastot 00 ja 01.
-- Pääraportointiyksiköiden summat, jotka eivät sisällä raportointipuun dimensioita, määritetään aliyksikön raportista. Niille kootaan määritetyn pääyksikön summat. Jos esimerkiksi pääyksiköllä (katso esimerkin 2 Contoso USA tietojen koontiesimerkeissä) on kaksi aliyksikköä (022 ja 023) eikä se sisällä dimensioita, raportti luodaan jokaiselle ali- ja pääyksikölle. Päätason kokonaissumma on kahden alatason summan yhteismäärä.
+- Pääraportointiyksiköiden summat, jotka eivät sisällä raportointipuun dimensioita, määritetään aliyksikön raportista. Niille kootaan määritetyn pääyksikön summat. Jos esimerkiksi pääyksiköllä (katso Contoso USA tietojen koontiesimerkissä 2) on kaksi aliyksikköä (022 ja 023) eikä se sisällä dimensioita, raportti luodaan jokaiselle ali- ja pääyksikölle. Päätason kokonaissumma on kahden alatason summan yhteismäärä.
 
 ### <a name="manage-reporting-units"></a>Raportointiyksiköiden hallinta
 
@@ -165,9 +164,9 @@ Voit estää tiettyjen käyttäjien ja ryhmien käyttämästä raportointiyksikk
 3. Valitse **Yksikön suojaus** -valintaikkunassa nimi ja valitse sitten **Poista**.
 4. Napsauta **OK**.
 
-### <a name="link-toreports"></a>Raporttien linkki
+### <a name="link-to-reports"></a>Raporttien linkittäminen
 
-Kun rivin määrityksen  **raportti**-sarake on luotu ja raporttiin sisällytettävä raportti on määritetty, raportointipuu on päivitettävä linkitetyn sarakkeen ja raportin tiedoilla. Raportti voidaan tuoda mihin tahansa raportointipuun yksikköön.
+Kun rivin määrityksen **raportti**-sarake on luotu ja raporttiin sisällytettävä raportti on määritetty, raportointipuu on päivitettävä linkitetyn sarakkeen ja raportin tiedoilla. Raportti voidaan tuoda mihin tahansa raportointipuun yksikköön.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Raportin tunnistaminen raportointipuussa
 
