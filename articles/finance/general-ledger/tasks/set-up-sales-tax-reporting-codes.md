@@ -1,6 +1,6 @@
 ---
 title: Määritä arvonlisäveroilmoituksen koodit
-description: Arvonlisäveroraportin koodit viittaavat arvonlisäveroraportin kenttänumeroon.
+description: Arvonlisäveron raportointikoodit viittaavat arvonlisäveroraportin kenttänumeroon.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/08/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c18f4fb0db31a959647bb10d2b99d940646676e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 362d30e56fe35b85d50bfa2df57364733b366fef
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976790"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646178"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Määritä arvonlisäveroilmoituksen koodit
 
 [!include [banner](../../includes/banner.md)]
 
-Arvonlisäveroraportin koodit viittaavat arvonlisäveroraportin kenttänumeroon. Niitä käytetään maakohtaisten raporttien asetteluissa ja arvonlisäveromaksu koodeittain -raportissa, kun arvonlisäverosummat tulostetaan tilityskaudella raportointikoodin mukaisena yhteenvetona. Kun olet luonut arvonlisäveroraportin koodit, voit viitata niihin Arvonlisäverokoodi-sivun Raportin asetukset -pikavälilehdessä. 
+Arvonlisäveron raportointikoodit viittaavat arvonlisäveroraportin kenttänumeroon. Niitä käytetään maakohtaisissa raportin asetteluissa. Niitä käytetään myös arvonlisäveromaksu koodeittain -raportissa. Raportissa näkyvät kunkin raportointikoodin tilityskauden yhteenlasketut arvonlisäverosummat. Kun olet luonut arvonlisäveroraportin koodit, voit viitata niihin **Arvonlisäverokoodi**-sivun Raportin asetukset -pikavälilehdessä. 
 
 Tässä tallenteessa käytetään esittely-yritystä DEMF.
 
