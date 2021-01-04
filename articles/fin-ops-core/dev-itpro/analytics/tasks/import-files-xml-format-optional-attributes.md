@@ -1,0 +1,125 @@
+---
+title: (RCS) Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä
+description: Tässä ohjeaiheessa on tietoja tavalla, jolla käyttäjä voi suunnitella ER-muodon määrityksen tuomaan tiedostoja valinnaisia määritteitä sisältävän XML-muodon.
+author: NickSelin
+manager: AnnBe
+ms.date: 07/01/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: kfend
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2019-07-28
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d1d4c8c1d81faa60193d2339fd6541e752c2e2f9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684135"
+---
+# <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a><span data-ttu-id="ebbc2-103">(RCS) Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä</span><span class="sxs-lookup"><span data-stu-id="ebbc2-103">(RCS) Import files in XML format with optional attributes</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="ebbc2-104">Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella ER-muotomäärityksen tuomaan valinnaisia määritteitä sisältävän XML-muotoisia tiedostoja.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can design ER format configuration to import files in XML format containing optional attributes.</span></span> <span data-ttu-id="ebbc2-105">Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-105">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span> <span data-ttu-id="ebbc2-106">Ennen kuin aloitat, lataa ja tallenna IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-tiedosto paikallisesti [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684).</span><span class="sxs-lookup"><span data-stu-id="ebbc2-106">Before you begin, download and save locally the IncomingDocumentToLearnHowToHandleOptionalAttributes.xml file from [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).</span></span>
+
+1.    <span data-ttu-id="ebbc2-107">Valitse **Kaikki työtilat** > **Sähköinen raportointi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-107">Go to **All workspaces** > **Electronic reporting**.</span></span>
+2.    <span data-ttu-id="ebbc2-108">Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-108">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**.</span></span> <span data-ttu-id="ebbc2-109">Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-109">If you don't see this configuration provider, complete the steps in the procedure [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).</span></span>
+3.    <span data-ttu-id="ebbc2-110">Valitse **Raportointikonfiguraatiot**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-110">Click **Reporting configurations**.</span></span>
+
+## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="ebbc2-111">Uuden tietomallin konfiguraation luominen</span><span class="sxs-lookup"><span data-stu-id="ebbc2-111">Create a new data model configuration</span></span>
+1.    <span data-ttu-id="ebbc2-112">Avaa valintaikkuna valitsemalla **Luo konfigurointi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-112">Click **Create configuration** to open the drop dialog.</span></span>
+2.    <span data-ttu-id="ebbc2-113">Kirjoita **Nimi**-kenttään Xml-tiedoston tuontimalli.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-113">In the **Name** field, type 'Model to import xml file'.</span></span>
+3.    <span data-ttu-id="ebbc2-114">Valitse **Luo konfiguraatio**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-114">Click **Create configuration**.</span></span>
+4.    <span data-ttu-id="ebbc2-115">Valitse **Suunnittelutoiminto**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-115">Click **Designer**.</span></span>
+5.    <span data-ttu-id="ebbc2-116">Avaa valintaikkuna valitsemalla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-116">Click **New** to open the drop dialog.</span></span>
+6.    <span data-ttu-id="ebbc2-117">Kirjoita **Nimi**-kenttään Juuri.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-117">In the **Name** field, type 'Root'.</span></span>
+7.    <span data-ttu-id="ebbc2-118">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-118">Click **Add**.</span></span>
+8.    <span data-ttu-id="ebbc2-119">Avaa valintaikkuna valitsemalla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-119">Click **New** to open the drop dialog.</span></span>
+9.    <span data-ttu-id="ebbc2-120">Kirjoita **Nimi**-kenttään Luettelo.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-120">In the **Name** field, type 'List'.</span></span>
+10.    <span data-ttu-id="ebbc2-121">Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-121">In the **Item type** field, select **Record list**.</span></span>
+11.    <span data-ttu-id="ebbc2-122">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-122">Click **Add**.</span></span>
+12.    <span data-ttu-id="ebbc2-123">Avaa valintaikkuna valitsemalla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-123">Click **New** to open the drop dialog.</span></span>
+13.    <span data-ttu-id="ebbc2-124">Kirjoita **Nimi**-kenttään Koodi.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-124">In the **Name** field, type 'Code'.</span></span>
+14.    <span data-ttu-id="ebbc2-125">Valitse **Nimiketyyppi**-kentässä **Merkkijono**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-125">In the **Item type** field, select **String**.</span></span>
+15.    <span data-ttu-id="ebbc2-126">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-126">Click **Add**.</span></span>
+16.    <span data-ttu-id="ebbc2-127">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-127">Click **Save**.</span></span>
+17.    <span data-ttu-id="ebbc2-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-128">Close the page.</span></span>
+18.    <span data-ttu-id="ebbc2-129">Valitse **Muuta tila**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-129">Click **Change status**.</span></span>
+19.    <span data-ttu-id="ebbc2-130">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-130">Click **Complete**.</span></span>
+20.    <span data-ttu-id="ebbc2-131">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-131">Click **OK**.</span></span>
+
+## <a name="create-a-format-for-data-import"></a><span data-ttu-id="ebbc2-132">Tietojen tuontimuodon luominen</span><span class="sxs-lookup"><span data-stu-id="ebbc2-132">Create a format for data import</span></span>
+1.    <span data-ttu-id="ebbc2-133">Avaa valintaikkuna valitsemalla **Luo konfigurointi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-133">Click **Create configuration** to open the drop dialog.</span></span>
+2.    <span data-ttu-id="ebbc2-134">Kirjoita **Uusi**-kenttään Muoto perustuu tietomalliin Xml-tiedoston tuontimalli.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-134">In the **New** field, enter 'Format based on data model Model to import xml file'.</span></span>
+3.    <span data-ttu-id="ebbc2-135">Kirjoita **Nimi**-kenttään Xml-tiedoston tuontimuoto.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-135">In the **Name** field, type 'Format to import xml file'.</span></span>
+4.    <span data-ttu-id="ebbc2-136">Valitse **Tukee tietojen tuontia** -kentässä **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-136">Select **Yes** in the **Supports data import** field.</span></span>
+5.    <span data-ttu-id="ebbc2-137">Valitse **Luo konfiguraatio**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-137">Click **Create configuration**.</span></span>
+
+## <a name="design-a-format-to-parse-incoming-file-in-xml-format"></a><span data-ttu-id="ebbc2-138">Muodon suunnitteleminen jäsentämään saapuvan tiedosto xml-muodossa</span><span class="sxs-lookup"><span data-stu-id="ebbc2-138">Design a format to parse incoming file in xml format</span></span>
+1.    <span data-ttu-id="ebbc2-139">Valitse **Suunnittelutoiminto**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-139">Click **Designer**.</span></span>
+2.    <span data-ttu-id="ebbc2-140">Avaa valintaikkuna valitsemalla **Lisää juuri**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-140">Click **Add root** to open the drop dialog.</span></span>
+3.    <span data-ttu-id="ebbc2-141">Valitse puussa **XML\Elementti**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-141">In the tree, select **XML\Element**.</span></span>
+4.    <span data-ttu-id="ebbc2-142">Kirjoita **Nimi**-kenttään root.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-142">In the **Name** field, type 'root'.</span></span>
+5.    <span data-ttu-id="ebbc2-143">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-143">Click **OK**.</span></span>
+6.    <span data-ttu-id="ebbc2-144">Avaa valintaikkuna valitsemalla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-144">Click **Add** to open the drop dialog.</span></span>
+7.    <span data-ttu-id="ebbc2-145">Valitse puussa **XML\Elementti**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-145">In the tree, select **XML\Element**.</span></span>
+8.    <span data-ttu-id="ebbc2-146">Kirjoita **Nimi**-kenttään document.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-146">In the **Name** field, type 'document'.</span></span>
+9.    <span data-ttu-id="ebbc2-147">Valitse **Monimuotoisuus**-kentässä **Yksi tai useita**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-147">In the **Multiplicity** field, select **One many**.</span></span>
+10.    <span data-ttu-id="ebbc2-148">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-148">Click **OK**.</span></span>
+11.    <span data-ttu-id="ebbc2-149">Valitse puussa **root\document**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-149">In the tree, select **root\document**.</span></span>
+12.    <span data-ttu-id="ebbc2-150">Avaa valintaikkuna valitsemalla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-150">Click **Add** to open the drop dialog.</span></span>
+13.    <span data-ttu-id="ebbc2-151">Valitse puussa **XML\Määrite**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-151">In the tree, select **XML\Attribute**.</span></span>
+14.    <span data-ttu-id="ebbc2-152">Kirjoita **Nimi**-kenttään ID.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-152">In the **Name** field, type 'ID'.</span></span>
+15.    <span data-ttu-id="ebbc2-153">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-153">Click **OK**.</span></span>
+16.    <span data-ttu-id="ebbc2-154">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-154">Click **Save**.</span></span>
+
+## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a><span data-ttu-id="ebbc2-155">Muodon yhdistämisen suunnitteleminen tallentamaan jäsennetty tieto tietomalliin</span><span class="sxs-lookup"><span data-stu-id="ebbc2-155">Design a format mapping to save parsed information to data model</span></span>
+1. <span data-ttu-id="ebbc2-156">Valitse **Yhdistä muoto malliin**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-156">Click **Map format to model**.</span></span>
+2. <span data-ttu-id="ebbc2-157">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-157">Click **New**.</span></span>
+3. <span data-ttu-id="ebbc2-158">Anna tai valitse **Määritys**-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-158">In the **Definition** field, enter or select a value.</span></span>
+4. <span data-ttu-id="ebbc2-159">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-159">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="ebbc2-160">Kirjoita **Nimi**-kenttään Yhdistäminen.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-160">In the **Name** field, type 'Mapping'.</span></span>
+6. <span data-ttu-id="ebbc2-161">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-161">Click **Save**.</span></span>
+7. <span data-ttu-id="ebbc2-162">Valitse **Suunnittelutoiminto**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-162">Click **Designer**.</span></span>
+8. <span data-ttu-id="ebbc2-163">Laajenna puussa **format**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-163">In the tree, expand **format**.</span></span>
+9. <span data-ttu-id="ebbc2-164">Laajenna puussa **format\root: XML Element(root)**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-164">In the tree, expand **format\root: XML Element(root)**.</span></span>
+10.    <span data-ttu-id="ebbc2-165">Valitse puussa \**format\root: XML Element(root)\document: XML Element 1..*</span><span class="sxs-lookup"><span data-stu-id="ebbc2-165">In the tree, select \**format\root: XML Element(root)\document: XML Element 1..*</span></span> <span data-ttu-id="ebbc2-166">(tiedosto)\*\*.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-166">(document)\*\*.</span></span>
+11.    <span data-ttu-id="ebbc2-167">Valitse **Sido**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-167">Click **Bind**.</span></span>
+12.    <span data-ttu-id="ebbc2-168">Laajenna puussa \**format\root: XML Element(root)\document: XML Element 1..*</span><span class="sxs-lookup"><span data-stu-id="ebbc2-168">In the tree, expand \**format\root: XML Element(root)\document: XML Element 1..*</span></span> <span data-ttu-id="ebbc2-169">(tiedosto)\*\*.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-169">(document)\*\*.</span></span>
+13.    <span data-ttu-id="ebbc2-170">Valitse puussa \**format\root: XML Element(root)\document: XML Element 1..*</span><span class="sxs-lookup"><span data-stu-id="ebbc2-170">In the tree, select \**format\root: XML Element(root)\document: XML Element 1..*</span></span> <span data-ttu-id="ebbc2-171">(tiedosto)\id\*\*.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-171">(document)\id\*\*.</span></span>
+14.    <span data-ttu-id="ebbc2-172">Laajenna puussa **List = format.root.document**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-172">In the tree, expand **List = format.root.document**.</span></span>
+15.    <span data-ttu-id="ebbc2-173">Valitse puussa **List = format.root.document\Code**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-173">In the tree, select **List = format.root.document\Code**.</span></span>
+16.    <span data-ttu-id="ebbc2-174">Valitse **Sido**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-174">Click **Bind**.</span></span>
+17.    <span data-ttu-id="ebbc2-175">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-175">Click **Save**.</span></span>
+18.    <span data-ttu-id="ebbc2-176">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-176">Close the page.</span></span>
+ 
+## <a name="run-format-mapping"></a><span data-ttu-id="ebbc2-177">Muodon yhdistämisen suorittaminen</span><span class="sxs-lookup"><span data-stu-id="ebbc2-177">Run format mapping</span></span>
+1. <span data-ttu-id="ebbc2-178">Valitse **Suorita**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-178">Click **Run**.</span></span>
+2. <span data-ttu-id="ebbc2-179">Valitse ensin **Selaa** ja sitten **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-179">Click **Browse** and select **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.</span></span>
+3. <span data-ttu-id="ebbc2-180">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-180">Click **OK**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="ebbc2-181">Valittua tiedostoa ei ole tuotu, sillä muodon rakenne olettaa, että document-elementissä on id-määrite mutta tuodussa tiedostossa tätä määritettä ei ole.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-181">The selected file has not been imported as the format design assumes the existence of 'id' attribute for the 'document' element, but the imported file contains no such attribute.</span></span>
+
+## <a name="modify-format-structure-to-handle-xml-attribute-as-optional"></a><span data-ttu-id="ebbc2-182">Muodon rakenteen muokkaaminen käsittelemään xml-määritettä valinnaisena</span><span class="sxs-lookup"><span data-stu-id="ebbc2-182">Modify format structure to handle xml attribute as optional</span></span>
+1. <span data-ttu-id="ebbc2-183">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-183">Close the page.</span></span>
+2. <span data-ttu-id="ebbc2-184">Laajenna puussa **root\document**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-184">In the tree, expand **root\document**.</span></span>
+3. <span data-ttu-id="ebbc2-185">Valitse puussa **root\document\id**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-185">In the tree, select **root\document\id**.</span></span>
+4. <span data-ttu-id="ebbc2-186">Valitse **Puuttuvan määritteen tyhjä merkkijono** -kentässä **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-186">Select **Yes** in the **Empty string for missing attribute** field.</span></span>
+5. <span data-ttu-id="ebbc2-187">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-187">Click **Save**.</span></span>
+ 
+## <a name="run-format-mapping-to-test-changes"></a><span data-ttu-id="ebbc2-188">Muutosten testaaminen suorittamalla muodon yhdistäminen</span><span class="sxs-lookup"><span data-stu-id="ebbc2-188">Run format mapping to test changes</span></span>
+1. <span data-ttu-id="ebbc2-189">Valitse **Yhdistä muoto malliin**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-189">Click **Map format to model**.</span></span>
+2. <span data-ttu-id="ebbc2-190">Valitse **Suorita**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-190">Click **Run**.</span></span>
+3. <span data-ttu-id="ebbc2-191">Valitse ensin **Selaa** ja sitten **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-191">Click **Browse** and select the **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml** file.</span></span>
+4. <span data-ttu-id="ebbc2-192">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-192">Click **OK**.</span></span>
+5. <span data-ttu-id="ebbc2-193">Tarkista luotu tiedosto.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-193">Review the generated file.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="ebbc2-194">Sama tiedosto on tuotu, sillä muodon rakenne käsittelee document-elementit id-määritettä nyt valinnaisena.</span><span class="sxs-lookup"><span data-stu-id="ebbc2-194">The same file has been imported as the format design now consider the 'id' attribute for the 'document' element as optional.</span></span>
