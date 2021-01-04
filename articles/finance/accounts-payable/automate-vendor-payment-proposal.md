@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: a1e3305bff99fa39240176ac9fc7aaee84b98e6c
-ms.sourcegitcommit: be51e892003778e71b67fb409a8e16965c89b5ac
+ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618408"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4442990"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Toimittajan maksatusehdotusten automatisointi
 
@@ -128,7 +128,7 @@ Kun olet poistanut laskun, laskut avataan uudelleen maksulle. Tämän jälkeen v
 
 ## <a name="edit-a-vendor-payment-proposal-automation"></a>Toimittajan maksatusehdotuksen automatisoinnin muokkaus
 
-Prosessiautomaatiojärjestelmän avulla voit muokata maksuja, sarjoja ja tapahtumia, jotka luodaan maksuehdotukselle. Sarjaa voi muokata joko **prosessin automatisointi** -sivulta tai prosessiautomaation viikkonäkymästä. Jos ostoreskontran esimies esimerkiksi päättää luoda kaikkien kotimaisten toimittajien sekit keskiviikkona maanantain asemesta, hän voi löytää esiintymän viikkonäkymästä ja valita **Näytä/Muokkaa – sarjat**. Jos muokkaat sarjaa, järjestelmä kehottaa sinua määrittämään, tuleeko muutos tehdä kaikkiin aiemmin luotuihin esiintymiin vai vain uusiin esiintymiin. Historialliset esiintymät, joiden tila on jo **Päättynyt** tai jotka ovat päättyneet **Virhe**-tilaan, eivät muutu.
+Prosessiautomaatiojärjestelmän avulla voit muokata maksuja, sarjoja ja tapahtumia, jotka luodaan maksuehdotukselle. Sarjaa voi muokata joko **prosessin automatisointi** -sivulta tai prosessiautomaation viikkonäkymästä. Jos ostoreskontran esimies esimerkiksi päättää luoda kaikkien kotimaisten toimittajien sekit keskiviikkona maanantain asemesta, tämä voi löytää esiintymän viikkonäkymästä ja valita **Näytä/Muokkaa – sarjat**. Jos muokkaat sarjaa, järjestelmä kehottaa sinua määrittämään, tuleeko muutos tehdä kaikkiin aiemmin luotuihin esiintymiin vai vain uusiin esiintymiin. Historialliset esiintymät, joiden tila on jo **Päättynyt** tai jotka ovat päättyneet **Virhe**-tilaan, eivät muutu.
 
 Voit myös lisätä uuden esiintymän tai muuttaa aiemmin luotua esiintymää. Esimerkiksi seuraava maksuehdotusesiintymä ajoitetaan suoritettavaksi keskiviikkona 1. tammikuuta, mutta päivämäärä on vapaapäivä. Voit muuttaa tapahtumaa joko prosessiautomaation viikoittaisesta näkymästä tai **Prosessin automatisointi** -sivulta. Näkyviin tulee sivu, jossa näkyvät aikataulutiedot ja maksuehdotusehdot. Tässä voit muokata ajoitettua kellonaikaa ja päivämäärää. Voit myös muokata maksuehdotuksen ehtoja, jos muutokset ovat pakollisia. Jos esimerkiksi muutat tapahtuman ajoitettua päivämäärää 1:stä tammikuuta - 2:seen tammikuuta, haluat ehkä muuttaa myös määräpäivämäärän suhteelliset päivämäärät.
 

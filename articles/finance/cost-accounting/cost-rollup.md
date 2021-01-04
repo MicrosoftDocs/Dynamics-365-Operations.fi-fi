@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006163"
+ms.locfileid: "4442933"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
@@ -155,7 +155,7 @@ Kustannusten kohdistussäännöt voidaan määrittää seuraavasti.
 <a name="brhow-cost-flows-between-cost-centers"></a><br>Kustannuspaikkojen välinen kustannusvirta 
 ---------------------------------------------------
 
-Jos haluat tietää minkälainen on organisaation kustannuspaikkojen välinen kustannusvirta, voit luoda kullekin kustannuspaikalle **Toissijainen** -tyypin kustannustasoja. Näitä kustannustasoja voi sitten käyttää siirtämään saldoja kustannuspaikkojen välillä yleiskustannuslaskennan aikana.
+Jos haluat tietää minkälainen on organisaation kustannuspaikkojen välinen kustannusvirta, voit luoda kullekin kustannuspaikalle **Toissijainen**-tyypin kustannustasoja. Näitä kustannustasoja voi sitten käyttää siirtämään saldoja kustannuspaikkojen välillä yleiskustannuslaskennan aikana.
 
 Kustannustason dimension jäsenet voidaan määrittää seuraavasti.
 
@@ -169,7 +169,7 @@ Kustannustason dimension jäsenet voidaan määrittää seuraavasti.
 | **SC-CC003**  | **Kokoonpano**  | **Toissijainen** |
 | **SC-CC004**  | **Pakkaus** | **Toissijainen** |
 
-**Tuloslaskelma** -dimensiohierarkia on päivitettävä uuden dimension jäsenillä, jotta dimension hierarkia sisältää oikeat raportoinnin ja käytäntöjen määrittämisessä käytettävät tiedot.
+**Tuloslaskelma**-dimensiohierarkia on päivitettävä uuden dimension jäsenillä, jotta dimension hierarkia sisältää oikeat raportoinnin ja käytäntöjen määrittämisessä käytettävät tiedot.
 
 **Dimension hierarkiatiedot**
 
@@ -186,7 +186,7 @@ Kustannustason dimension jäsenet voidaan määrittää seuraavasti.
 | &nbsp;&nbsp;&nbsp;&nbsp;Ensisijainen kustannus                        | 10 001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Toissijainen kustannus                         | **SC-CC001**            | **SC-CC004**        |
 
-Luo **kustannusten koontikäytäntö** , jossa kukin kustannuspaikka on yhdistetty vastaavaan tyypin **Toissijainen** kustannustasoon.
+Luo **kustannusten koontikäytäntö**, jossa kukin kustannuspaikka on yhdistetty vastaavaan tyypin **Toissijainen** kustannustasoon.
 
 **Kustannusten koontikäytännöt**
 
@@ -211,7 +211,7 @@ Luo **kustannusten koontikäytäntö** , jossa kukin kustannuspaikka on yhdistet
 |---------|-------------------------|------------------------|------|--------|---------------|
 | 00002   | Kustannusten kohdistuskirjauskansio | Tilivuosi                 | 2017    | Kausi 1 | Yleiskustannusten laskenta / 01-02-2017 23:51:00 / Kirjanpito /2017 / Kausi 1 |
 
-Järjestelmä käyttää nyt **kustannusten koontikäytäntöä** , kun se luo **kustannusobjektin saldon kirjauskansioviennit**.
+Järjestelmä käyttää nyt **kustannusten koontikäytäntöä**, kun se luo **kustannusobjektin saldon kirjauskansioviennit**.
 
 **Kustannusobjektin saldon kirjauskansioviennit**
 

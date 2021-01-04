@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Financesta.
 author: roschlom
 manager: AnnBe
-ms.date: 03/13/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175105"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689491"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -35,6 +35,40 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Financen version 10.0.16 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>Belgian kirjanpidon tapahtumien vientimuoto (BE), sähköisen raportoinnin muoto ja vastaava kirjanpidon tapahtumien vienti -malli
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvattu uudella sähköisen raportoinnin muodolla SAF-T (Standard Audit File) -mallissa.  |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 1.12.2021 jälkeen Belgian kirjanpidon tapahtumien vientimuoto (BE), sähköisen raportoinnin muoto ja vastaava kirjanpidon tapahtumien vienti -mallia ei enää tueta. SAF-T-mallissa esitellään uusi Kirjanpidon tietojen vienti (BE) -muoto yhdessä Kirjanpidon tietomallin yhdistämismääritys -muodon kanssa. |
+
+### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>Yhdistyneen kuningaskunnan ALV 100 -raoprtti on SSRS-muodossa
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvattu uudella sähköisen raportoinnin muodolla - ALV-ilmoituksen Excel (UK) -muoto Veroilmoitusmalli-kohdassa.  |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 1.12.2021 alkaen ALV-100-raporttia ei enää tueta SSRS-muodossa. Uusi ALV-ilmoituksen Excel (UK) -muoto Veroilmoitusmalli-kohdassa esiteltiin [MTD ALV -toiminto](../localizations/emea-gbr-mtd-vat-integration.md) -kohdassa. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10015-release"></a>Financen version 10.0.15 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11:n Dynamics 365 -tuki on vanhentunut
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Joulukuusta 2020 alkaen kaikkien Dynamics 365 -tuotteiden Microsoft Internet Explorer 11 -tuki vanhenee eikä Internet Explorer 11:tä tueta elokuun 2021 jälkeen.<br><br>Tämä vaikuttaa sellaisiin Dynamics 365 -tuotteita käyttäviin asiakkaisiin, jotka on suunniteltu käytettäviksi Internet Explorer 11 -liittymässä. Elokuun 2021 jälkeen Internet Explorer 11:tä ei tueta kyseisissä Dynamics 365 -tuotteissa. |
+| **Onko toinen ominaisuus korvannut?**   | Asiakkaiden kannattaa siirtyä Microsoft Edgeen.|
+| **Tuotealueet, joihin vaikutetaan**         | Kaikki Dynamics 365 -tuotteet |
+| **Käytön asetukset**              | Kaikki|
+| **Tila**                         | Vanhentunut. Internet Explorer 11:tä ei tueta elokuun 2021 jälkeen.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Financen version 10.0.12 poistetut tai vanhentuneet ominaisuudet
 

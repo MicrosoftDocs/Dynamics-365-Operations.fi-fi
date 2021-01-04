@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899370"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442709"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Laajennettu pankkitäsmäytys MT940 tuonti - yhdistelmätietoyksikkö päivitys
 
@@ -55,7 +55,7 @@ Seuraavien vaiheiden avulla voit lisätä tiliotteen tuonnin entiteetin tukemaan
             3.  Lataa datatiedosto = SampleBankCompositeEntity.xml uusi versio.
             4.  Korvaa aiemmin luotu tiedosto napsauttamalla **Kyllä**.
             5.  Valitse **Kyllä** jolloin luodaan uusi yhdistämismääritys.
-            6.  Varmista, että S**equenceNumber** on yhdistetty.
+            6.  Varmista, että S **equenceNumber** on yhdistetty.
                 -   Valitse **Näytä yhdistämismääritykset** tiliote-yksikössä.
                 -   Varmista, että **SequenceNumber** liitetään lähteestä väliaikaiseen alueeseen.
 

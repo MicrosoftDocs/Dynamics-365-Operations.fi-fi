@@ -1,6 +1,6 @@
 ---
 title: Asiakasmaksujen tiedot (esiversio)
-description: Tässä ohjeaiheessa käsitellään maksutieto-ominaisuutta, jolla saadaan parempi käsitys yksittäisen asiakkaan tyyppilistä maksukäytännöistä ja voidaan tunnistaa tilanteet, joiden perusteella perintäprosessit voi käynnistää tavallista aikaisemmin.
+description: Täsäs ohjeaiheessa kerrotaan maksun tietojen ominaisuudesta. Sen avulla saadaan lisätietoja yksittäisten asiakkaiden tyypillistä maksukäytännöistä. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit voidaan aloittaa tapauksissa, joissa muuten et niin tekisi.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773946"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644630"
 ---
 # <a name="customer-payment-insights-preview"></a>Asiakasmaksujen tiedot (esiversio)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään maksutieto-ominaisuutta, jolla saadaan parempi käsitys yksittäisen asiakkaan tyyppilistä maksukäytännöistä ja voidaan tunnistaa tilanteet, joiden perusteella perintäprosessit voi käynnistää tavallista aikaisemmin. 
+Täsäs ohjeaiheessa kerrotaan maksun tietojen ominaisuudesta. Sen avulla saadaan lisätietoja yksittäisten asiakkaiden tyypillistä maksukäytännöistä. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit voidaan aloittaa tapauksissa, joissa muuten et niin tekisi. 
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
-Organisaatiot pitävät usein haastavana ennustaa milloin asiakkaat maksavat laskut. Tämän tiedon puute heikentää kassavirtaennusteiden tarkkuutta sekä johtaa liian myöhään käynnistyviin perintäprosesseihin ja tilausten vapauttamiseen asiakkaille, jotka voivat jättää laskut maksamatta. Asiakasmaksujen tiedot (esiversio) auttaa organisaatioita ennakoimaan, milloin asiakaslasku maksetaan, mikä puolestaan auttaa organisaatiota luomaan perintästrategioita, jotka parantavat maksujen ajallaan maksamisen todennäköisyyttä. 
+Joskus voi olla haastavaa ennustaa, milloin asiakkaat maksavat laskut. Tämän tiedon puute heikentää kassavirtaennusteiden tarkkuutta sekä johtaa liian myöhään käynnistyviin perintäprosesseihin ja tilausten vapauttamiseen asiakkaille, jotka voivat jättää laskut maksamatta. Asiakkaan maksujen tiedot (esiversio) auttaa organisaatioita ennustamaan, milloin myyntilasku maksetaan. Näiden tietojen avulla organisaatiot voivat luoda perintästrategioita, jotka parantavat ajoissa maksettavan maksun todennäköisyyttä. 
 
 ## <a name="predictions"></a>Ennusteet
 
@@ -42,13 +42,13 @@ Maksuennusteiden avulla organisaatiot voivat parantaa liiketoimintaprosesseja, s
 
 Asiakasmaksujen tiedot (esiversio) käyttää historiallisia laskuja, maksuja ja asiakastietoja hyödyntävää koneoppimismallia, mikä tarkentaa sen ennustamista, milloin asiakas maksaa jäljellä olevan laskun.
 
-Asiakkaan maksutavat (esiversio) ennustaa kolme maksun todennäköisyyttä kullekin avoimelle laskulle:
+Asiakkaan maksutavat (esiversio) voi ennustaa kolme maksun todennäköisyyttä kullekin avoimelle laskulle:
 
 -   Todennäköisyys sille, että maksu suoritetaan ajoissa 
 -   Todennäköisyys sille, että maksu suoritetaan myöhässä
 -   Todennäköisyys sille, että maksu suoritetaan erittäin paljon myöhässä
 
-Organisaatiot saavat paremman käsityksen siitä maksun kokonaissummasta, jonka ne voivat odottaa asiakkaan maksavan, sen perusteella, mihin jaksoon asiakas sijoittuu (ajoissa, myöhässä ja erittäin paljon myöhässä). Asiakasmaksujen tiedot (esiversio) -toiminnossa on myös koostenäkymä odotetuista maksuista.
+Asiakasmaksujen tiedot (esiversio) -toiminnossa on myös koostenäkymä odotetuista maksuista. Sen avulla organisaatiot saavat paremman käsityksen siitä maksun kokonaissummasta, jonka ne voivat odottaa asiakkaan maksavan, sen perusteella, mihin jaksoon asiakas sijoittuu (ajoissa, myöhässä ja erittäin paljon myöhässä).
 
 [![Maksuennusteiden koostenäkymä](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -62,11 +62,11 @@ Asiakasmaksujen tiedot (esiversio) antaa organisaatioille mahdollisuuden toimia 
 
 ## <a name="methodology"></a>Metodologia
 
-Tekoälyratkaisun kehittäminen ja käyttöönotto on vaikeaa. Sitä varten tarvitaan tiimi, jossa on datatieteilijöitä, aihealueen asiantuntijoita ja teknikoita, jotka käyttävät paljon aikaa käyttökelpoisen tekoälyratkaisun muotoiluun, kehittämiseen, käyttöönottamiseen ja ylläpitoon. Tekoälyratkaisujen käyttöönottaminen ja käyttö Financessa on kuitenkin helppoa. Finance sisältää valmiiksi pakattuja tekoälyratkaisuja, jotka on muodostettu Microsoft AI Builderin pohjalta. Loppukäyttäjä voi ottaa yhdellä napsautuksella käyttöön tekoälyratkaisun ja aloittaa älykkäistä ennusteista saatavien etujen hyödyntämisen. Jos organisaatio ei ole tyytyväinen ennusteiden tarkkuuteen, tehokäyttäjä voi lisätä taas yhdellä napsautuksella AI Builderin laajennuskokemuksen ja sitten valita ennusteiden muodostamiseen käytettäviä kenttiä tai poistaa niiden valinnan. Kun muutokset on tehty, muutokset voidaan kouluttaa ja julkaista, minkä jälkeen uusi koulutettu malli valitaan Financessa automaattisesti ennusteisiin.
+Tekoälyratkaisun kehittäminen ja käyttöönotto on vaikeaa. Sitä varten tarvitaan ryhmä, jossa on datatieteilijöitä, aihealueen asiantuntijoita ja teknikoita, jotka käyttävät paljon aikaa käyttökelpoisen tekoälyratkaisun muotoiluun, kehittämiseen, käyttöönottamiseen ja ylläpitoon. Tekoälyratkaisujen käyttöönottaminen ja käyttö Financessa on kuitenkin helppoa. Finance sisältää valmiiksi pakattuja tekoälyratkaisuja, jotka on muodostettu Microsoft AI Builderin pohjalta. Loppukäyttäjä voi ottaa yhdellä napsautuksella käyttöön tekoälyratkaisun ja aloittaa älykkäistä ennusteista saatavien etujen hyödyntämisen. Jos organisaatio ei ole tyytyväinen ennusteiden tarkkuuteen, tehokäyttäjä voi lisätä taas yhdellä napsautuksella AI Builderin laajennuskokemuksen ja sitten valita ennusteiden muodostamiseen käytettäviä kenttiä tai poistaa niiden valinnan. Kun muutokset on tehty, muutokset voidaan kouluttaa ja julkaista, minkä jälkeen uusi koulutettu malli valitaan Financessa automaattisesti ennusteisiin.
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>Asiakasmaksujen tiedot (esiversio) -toiminnon hankkiminen
 
-Jos olet kiinnostunut kokeilemaan Asiakasmaksujen tiedot (esiversio) -toimintoa, lähetä sähköpostia osoitteeseen [Asiakasmaksujen tiedot (esiversio)](mailto:fiap@microsoft.com).
+Lähetä sähköpostia osoitteeseen [Asiakasmaksujen tiedot (esiversio)](mailto:fiap@microsoft.com), jos haluat kokeilla Asiakasmaksun tiedot (esiversio) -sovellusta.
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 

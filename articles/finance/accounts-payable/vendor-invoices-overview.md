@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb797af1ae14ebbb420a1b4a1591202c42bd8824
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249115"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701673"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
@@ -112,9 +112,12 @@ Saat käyttöösi **Palauttaa toimittajalaskut** -sivun vain, jos **Palauta käy
 
 ## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Työn kulun tilan nollaaminen toimittajan laskuja varten laskusta, jota ei voi palauttaa luonnokseksi
 
-Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun tila on **peruuttamaton**. Kun toimittajan laskun työnkulun tila on **Peruuttamaton**, voit palauttaa sen **Luonnos**-tilaan valitsemalla **Peruuta**. Voit sitten muokata toimittajan laskua. Tämä toiminto on käytettävissä, jos **ominaisuuden hallinta** -sivun **toimittajan laskun työnkulun parametrin palautusluonnos** on päällä.
+Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun tila on **peruuttamaton**. Kun toimittajan laskun työnkulun tila on **Peruuttamaton**, voit palauttaa sen **Luonnos**-tilaan valitsemalla **Peruuta**. Voit sitten muokata toimittajan laskua. Tämä toiminto on käytettävissä, jos **Työnkulun tilan nollaaminen toimittajan laskuja varten laskusta, jota ei voi palauttaa luonnokseksi** -parametri **Toimintojen hallinta** -sivulla on käytössä.
 
-Voit palauttaa työnkulun tilaksi **Luonnos** käyttämällä **Työnkulkuhistoria**-sivua. Voit avata tämän sivun **Toimittajan lasku** -kohdasta tai kohdasta **Yhteiset > Kyselee** > Työnkulku. Voit nollata työn kulun tilaksi **Luonnos**valitsemalla **Peruuta**. Voit myös nollata työn kulun tilaksi Luonnos valitsemalla **Peruuta**-toiminnon **Toimittajan lasku**- tai **Odottavat toimittajan laskut** -sivulla. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **toimittajan lasku** -sivulla.
+Voit palauttaa työnkulun tilaksi **Luonnos** käyttämällä **Työnkulkuhistoria**-sivua. Voit avata tämän sivun **Toimittajan lasku** -kohdasta tai kohdasta **Yhteiset > Kyselee** > Työnkulku. Voit nollata työn kulun tilaksi **Luonnos** valitsemalla **Peruuta**. Voit myös nollata työn kulun tilaksi Luonnos valitsemalla **Peruuta**-toiminnon **Toimittajan lasku**- tai **Odottavat toimittajan laskut** -sivulla. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **toimittajan lasku** -sivulla.
+
+## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Odottavat toimittajan laskut -sivun laskun kokonaissumman tarkasteleminen
+Voit tarkastella laskujen kokonaismäärää **Odottavat toimittajan laskut** -sivulla ottamalla käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** -parametrin **Ostoreskontran parametrit** -sivulla. 
 
 
 

@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771917"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442921"
 ---
 # <a name="set-up-fixed-assets"></a>Käyttöomaisuuserien määrittäminen
 
@@ -77,7 +77,7 @@ Viimeinen vaihe on käyttöomaisuusparametrien päivittäminen.
 
 Tärkeä vaihtoehto on **Luo poisto-oikaisusummat automaattisesti käytöstä poistamisten kanssa**. Jos määrität tämän asetuksen arvoksi **Kyllä**, toiminto oikaisee käyttöomaisuuserän poiston automaattisesti käyttöomaisuuden poiston aikaisten poistoasetusten perusteella. Myös käteisalennukset voidaan vähentää hankintasummasta käyttöomaisuuserien hankinnan yhteydessä toimittajan laskun avulla.
 
-**Ostotilaukset**-pikavälilehdessä voidaan määrittää, miten käyttöomaisuuserät luodaan ostoprosessin osana. Ensimmäinen vaihtoehto on **Salli käyttöomaisuuden hankinta ostosta**. Jos määrität tämän asetuksen arvoksi **Kyllä**hankinta kirjataan käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Jos määrität tämän asetuksen arvoksi **ei**, käyttöomaisuus voidaan silti asettaa ostotilaukseen ja laskuun, mutta hankintaa ei kirjata. Se tehdään erillisessä vaiheessa käyttöomaisuuden kirjauskansiosta. **Luo käyttöomaisuus tuotteen vastaanoton tai laskun kirjaamisen aikana** -vaihtoehdolla voi luoda uusia varoja kirjauksen aikana. Tämän vuoksi varoja ei tarvitse määrittää käyttöomaisuudeksi ennen tapahtumaa. Viimeinen vaihtoehto **Tarkista käyttöomaisuuden luonti rivimäärityksen aikana** -asetus on käytettävissä vain ostoehdotuksissa.
+**Ostotilaukset**-pikavälilehdessä voidaan määrittää, miten käyttöomaisuuserät luodaan ostoprosessin osana. Ensimmäinen vaihtoehto on **Salli käyttöomaisuuden hankinta ostosta**. Jos määrität tämän asetuksen arvoksi **Kyllä** hankinta kirjataan käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Jos määrität tämän asetuksen arvoksi **ei**, käyttöomaisuus voidaan silti asettaa ostotilaukseen ja laskuun, mutta hankintaa ei kirjata. Se tehdään erillisessä vaiheessa käyttöomaisuuden kirjauskansiosta. **Luo käyttöomaisuus tuotteen vastaanoton tai laskun kirjaamisen aikana** -vaihtoehdolla voi luoda uusia varoja kirjauksen aikana. Tämän vuoksi varoja ei tarvitse määrittää käyttöomaisuudeksi ennen tapahtumaa. Viimeinen vaihtoehto **Tarkista käyttöomaisuuden luonti rivimäärityksen aikana** -asetus on käytettävissä vain ostoehdotuksissa.
 
 Syykoodit voidaan konfiguroida niin, että ne ovat pakollisia käyttöomaisuuden muutoksissa tai tietyissä käyttöomaisuustapahtumissa.
 

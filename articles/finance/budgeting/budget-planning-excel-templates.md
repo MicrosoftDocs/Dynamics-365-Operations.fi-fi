@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772096"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442895"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Excelin budjettisuunnittelumallit
 
@@ -67,7 +67,7 @@ Valitse **Rakenne**-välilehdessä, **Lisää kenttiä** ja sitten **BudgetPlanH
 
 Siirrä kohdistin Excel-tiedostossa haluamaasi paikkaan. Valitse **Lisää otsikko** lisätäksesi kentän otsikon valittuun sijaintiin. Valitse **Lisää arvo** lisätäksesi arvokentän valittuun paikkaan. Valitse **Valmis** sulkeaksesi suunnitteluohjelman.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Valitse Lisää arvo](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Valitse Lisää arvo](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Lasketun sarakkeen lisääminen budjettisuunnitelman asiakirjamallin taulukkoon
 --------------------------------------------------------------
@@ -83,7 +83,7 @@ Valittu kenttäryhmää näyttää mallissa käytettävissä olevat sarakkeet. V
 [![Sarakkeen lisääminen](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Luo kaava laskentataulukossa ja kopioi se **Rakenne**-ikkunaan määrittääksesi kaavan. Finance and Operationsin sidottu taulukko nimeksi annetaan yleensä AXTable1. Jos esimerkiksi haluat summata laskentataulukossa sarakkeet Request Q1 – Request Q4, kaava on: AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> Luo kaava laskentataulukossa ja kopioi se **Rakenne**-ikkunaan määrittääksesi kaavan. Finance and Operationsin sidottu taulukko on yleensä nimeltään AXTable1. Jos esimerkiksi haluat summata laskentataulukossa sarakkeet Request Q1 – Request Q4, kaava on: AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Toista nämä vaiheet lisätäksesi **Oikaisu**-sarakkeen. Käytä tälle sarakkeelle kaavaa = AxTable1\[Total request\]\*$I$1. Tämä ottaa solun I1 arvon ja kertoo **Total request** -sarakkeen laskeakseen oikaisusummat.
 
@@ -120,7 +120,7 @@ Suosittelemme, että haluat estää käyttäjiä sulkemasta mallin lukitsemalla 
 
 Klikkaamalla nuolta näet lisävalikon. Valitse **Lukitse**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Lukituksen valinta](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Lukituksen valinta](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>voinko käyttää muita Excelin ominaisuuksia, kuten solun muotoilua, värejä, ehdollista muotoilua ja kaavioita omissa budjettisuunnitelmamalleissani?
 

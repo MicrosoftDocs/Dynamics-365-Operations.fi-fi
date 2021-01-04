@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 17b4b2f487fdeb9f1aa7d77bf87197885ba60e47
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977932"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442732"
 ---
 # <a name="periodic-credit-management-tasks"></a>Säännölliset luotonhallintatehtävät
 
@@ -41,6 +41,6 @@ Kun yritykset kehittyvät ja olosuhteet muuttuvat, myös tietyn asiakkaan luotto
 
 ## <a name="update-customer-balance-statistics"></a>Asiakkaan saldotilastojen päivittäminen
 
-Voit suorittaa**Päivitä asiakkaan saldotilastot** -prosessin, joka päivittää **Saldotilastokysely**-sivulla näkyvän saldotilastolaskelman. Näitä tietoja käytetään riskipisteiden laskemiseen, ja nämä arvot näkyvät **Asiakas**-sivun luottotilastojen tietoruuduissa.
+Voit suorittaa **Päivitä asiakkaan saldotilastot** -prosessin, joka päivittää **Saldotilastokysely**-sivulla näkyvän saldotilastolaskelman. Näitä tietoja käytetään riskipisteiden laskemiseen, ja nämä arvot näkyvät **Asiakas**-sivun luottotilastojen tietoruuduissa.
 
 Kun prosessi suoritetaan, se päivittää yhden asiakkaan saldotilaston. Jos haluat määrittää erätyön suorittamaan prosessin useiden asiakkaiden osalta, voit käyttää **Laske saldotilastot** -sivua (**Luotonhallinta \> Kausittaiset tehtävät \> Laske saldotilastot**).

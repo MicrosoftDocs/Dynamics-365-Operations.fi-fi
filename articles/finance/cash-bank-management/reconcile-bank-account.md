@@ -18,11 +18,11 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899322"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442842"
 ---
 # <a name="reconcile-a-bank-account"></a>Pankkitilin täsmäyttäminen
 
@@ -70,4 +70,4 @@ Peruuta tiliotteen täsmäytys -toiminnon avulla voit peruuttaa tiliotteen täsm
  
 Tiliotteen täsmäytykset voidaan peruuttaa vain siinä aikajärjestyksessä, jossa ne on syötetty. Kun tiliotteen täsmäytys peruutetaan, uudet tapahtumat ja korjaukset peruutetaan ja kaikki muut tapahtumat merkitään täsmäyttämättömiksi.
  
-Jos haluat peruuttaa tiliotteen täsmäytyksen, valitse tiliote ja valitse sitten **Tiliote > Peruuta pankkitilin täsmäytys**. Anna **Peruuta pankkitilin täsmäytys** -sivulla **Syykoodi**, **Syyn kommentti**ja **Peruutuspäivämäärä**. Aloita peruutus valitsemalla **OK**. Huomautus: tiliotteen peruutus päivämäärän on oltava tiliotteen päivämääränä tai sen jälkeen. Kun tiliotteen täsmäytys on peruutettu, tiliotteen **Peruutuspäivämäärä** -kenttään päivitetään annettu **Peruutuspäivämäärä**. Valitse **Tapahtumat**-painike, jos haluat tarkastella tapahtumia, joiden täsmäytys peruutettiin.
+Jos haluat peruuttaa tiliotteen täsmäytyksen, valitse tiliote ja valitse sitten **Tiliote > Peruuta pankkitilin täsmäytys**. Anna **Peruuta pankkitilin täsmäytys** -sivulla **Syykoodi**, **Syyn kommentti** ja **Peruutuspäivämäärä**. Aloita peruutus valitsemalla **OK**. Huomautus: tiliotteen peruutus päivämäärän on oltava tiliotteen päivämääränä tai sen jälkeen. Kun tiliotteen täsmäytys on peruutettu, tiliotteen **Peruutuspäivämäärä** -kenttään päivitetään annettu **Peruutuspäivämäärä**. Valitse **Tapahtumat**-painike, jos haluat tarkastella tapahtumia, joiden täsmäytys peruutettiin.

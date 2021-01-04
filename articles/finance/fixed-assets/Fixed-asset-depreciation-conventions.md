@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4315f70e7959e2576e9b87dfb3898318f47aa46d
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000266"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4442929"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Käyttöomaisuuden poistomenetelmät
 
@@ -31,7 +31,7 @@ ms.locfileid: "4000266"
 
 Tässä ohjeaiheessa käsitellään käyttöomaisuuden poistomenetelmiä. Poistomenetelmien avulla määritetään miten ja milloin poisto lasketaan sekä vuodelle, jolloin käyttöomaisuus hankitaan, että vuodelle, jolloin käyttöomaisuus poistetaan käytöstä.
 
-Poistomenetelmät voidaan määrittää käyttöomaisuusryhmän kirjan asetuksiin. Voit tarkastella poistomenetelmää tai määrittää sen valitsemalla käyttöomaisuuden määritysalueella **Käyttöomaisuus** -ryhmät. Valitse **Kirjat** -painike. Tässä tapauksessa määritettyjä poistomenetelmiä käytetään oletusarvoina käyttöomaisuuskirjoja luotaessa. Poistomenetelmät voidaan määrittää myös yksittäiseen käyttöomaisuuskirjaan. Tee se valitsemalla käyttöomaisuuden määritysalueella ensin **Kirjat** ja sitten **Käyttöomaisuusryhmät**.
+Poistomenetelmät voidaan määrittää käyttöomaisuusryhmän kirjan asetuksiin. Voit tarkastella poistomenetelmää tai määrittää sen valitsemalla käyttöomaisuuden määritysalueella **Käyttöomaisuus**-ryhmät. Valitse **Kirjat**-painike. Tässä tapauksessa määritettyjä poistomenetelmiä käytetään oletusarvoina käyttöomaisuuskirjoja luotaessa. Poistomenetelmät voidaan määrittää myös yksittäiseen käyttöomaisuuskirjaan. Tee se valitsemalla käyttöomaisuuden määritysalueella ensin **Kirjat** ja sitten **Käyttöomaisuusryhmät**.
 
 | Poistomenetelmä   | Kuvaus |
 |---------------------------|-------------|

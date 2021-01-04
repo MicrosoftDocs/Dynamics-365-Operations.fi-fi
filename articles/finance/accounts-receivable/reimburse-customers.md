@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bceeaf99437f6ef66bd3b4e1710b469c262e693e
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 65ee884fb22c1a38e2d3022085fed7e3e6077d1f
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022540"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644534"
 ---
 # <a name="reimburse-customers"></a>Asiakkaiden hyvittäminen
 
@@ -33,22 +33,19 @@ Tässä artikkelissa kerrotaan, miten hyvitystapahtumat luodaan asiakasryhmälle
 
 Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen aloittamista.
 
-| Edellytys                                                            | Kuvaus                                                                                                                                                                                 |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Määritä vähimmäishyvityksen määrä yritykselle.          | **Myyntireskontran parametrit** -sivulla **Yleiset** -alueella **Vähimmäissumma** -kentässä, syötä vähimmäissumma, joka voidaan korvata asiakkaan liikamaksuista. |
-| Valinnainen: Lisää toimittajatili jokaiselle asiakkaalle, jolle voidaan hyvittää. | **Asiakkaiden** sivulla **Muut tiedot** -pikavälilehdessä **Toimittajatili** -kentässä, valitse toimittajatili asiakkaalle.                                           |
+| Edellytys                                                            | Kuvaus |
+|-------------------------------------------------------------------------|-------------|
+| Määritä vähimmäishyvityksen määrä yritykselle.          | **Myyntireskontran parametrit** -sivulla **Yleiset**-alueella **Vähimmäissumma**-kentässä, syötä vähimmäissumma, joka voidaan korvata asiakkaan liikamaksuista. |
+| Valinnainen: Lisää toimittajatili jokaiselle asiakkaalle, jolle voidaan hyvittää. | **Asiakkaiden** sivulla **Muut tiedot** -pikavälilehdessä **Toimittajatili**-kentässä, valitse toimittajatili asiakkaalle. |
 
 Luodessasi hyvitystapahtumia toimittajalasku luodaan maksettavan saldon määrälle. Takaisinmaksuprosessi poistaa asiakastilin luottosaldon ja luo toimittajatilille erääntyvän saldon, joka vastaa asiakasta.
 
-1.  Myyntireskontrassa suorita **Hyvitys** -prosessi.
-2.  Noudata seuraavia ohjeita:
-    -   Jos haluat hyvittää tiettyjä asiakasnumeroita, klikkaa **Valitse**  ja määritä kyselyn asiakastilit.
-    -   Voit hyvittää kaikkia asiakasnumeroita valitsemalla **OK**.
+1. Suorita myyntireskontrassa **Hyvitys**-prosessi (**Myyntireskontra \> Kausittaiset tehtävät \> Hyvitys**).
+2. Jos haluat ryhmitellä kaikki tapahtumat kirjauskansion dimensioista huolimatta, määritä **Asiakasyhteenveto**-vaihtoehdon arvoksi **Kyllä**. Voit ryhmitellä vain sellaisia tapahtumia, joilla on samanlaiset kirjanpitodimensiot, määrittämällä arvoksi **Ei**.
+3. Valitse **Sisällytä asiakkaat, joilla on avoimia veloitustapahtumia**, jos haluat valita asiakkaat, joilla on selvittämättömiä veloitussummia.
+4. Jos haluat hyvittää tiettyjä asiakastilejä, valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** ja määritä sitten asiakastilit kyselyssä.
 
     Hyvityssummat siirretään asiakkaiden toimittajanumeroille. Ne käsitellään tavallisina maksuina. Jos asiakkaalla ei ole toimittajatiliä, ohjelma luo asiakkaalle automaattisesti kertatoimittajatilin.
-3.  Tarkastellaksesi luotuja hyvitystapahtumia, käytä **Hyvitys** -sivua.
-4.  Ostoreskontrassa, luo maksu toimittajan laskuille, jotka luotiin hyvitysprosessiin maksun luomisessa.
 
-
-
-
+5. Voit tarkastella luotuja hyvitystapahtumia käyttämällä **Hyvitys**-raporttia (**Myyntireskontra \> Kyselyt ja raportit \> Hyvitys-raportti**).
+6. Ostoreskontrassa, luo maksu toimittajan laskuille, jotka luotiin hyvitysprosessiin maksun luomisessa. Lisätietoja toimittajille maksamisesta on kohdassa [Toimittajan maksun yhteenveto](../accounts-payable/Vendor-payments-workspace.md).

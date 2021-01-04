@@ -3,7 +3,7 @@ title: Taloushallinnon raportoinnin yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
-ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
+ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
+ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3999546"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672441"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial reportingin aloittaminen 
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin ja miten käyt
 <a name="accessing-financial-reporting"></a>Taloushallinnon raportoinnin käyttäminen
 -----------------------------
 
-**Talousraportointi** -valikko sijaitsee seuraavissa sijainneissa:
+**Talousraportointi**-valikko sijaitsee seuraavissa sijainneissa:
 
 -   **Kirjanpito** &gt; **Kyselyt ja raportit**
 -   **Budjetointi** &gt; **Kyselyt ja raportit** &gt; **Perusbudjetointi**
@@ -87,16 +87,16 @@ Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla kä
 ## <a name="report-deletions-and-expirations"></a>Raportin poistot ja päättymiset
 Raportteja luovat käyttäjät voivat poistaa omia raporttejaan. Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat poistaa muiden raportteja. 
 
-Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki** -sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
+Versiossa 10.0.8 on otettu käyttöön vanhentumispäivien käsite. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuksien hallinnan työtilan **Kaikki**-sivulla. **Taloudellisten raporttien säilytyskäytännöt** -toiminto sisältää seuraavat muutokset:
 * Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu.
 * Kaikki olemassa olevat raportit, jotka on luotu ennen kuin ominaisuus asennettiin, saavat 90 päivän vanhentumisajan. Päivämäärä voi näkyä tyhjänä lyhyen ajan, kunnes taloushallinnon raportointipalvelu on käynnissä, raportti luodaan ja palvelu suorittaa päivityksen aiemmin luotuihin raportteihin, joiden vanhentumispäivämäärä on tyhjä. 
-* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia** , voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa: 
+* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa: 
   * Vanhentuminen 90 päivää.
   * Asetus, joka määrittää, että raportti ei vanhene.
   
 Kun vanhenemisaika, kuten 90 päivää, on valittuna, sitä käytetään 90 päivän aikana tästä päivästä lähtien. Tämä on eri toiminta kuin 90 päivää alkuperäisen luontipäivämäärän määrityksestä, kun raportti luotiin. 
   
-Lisäasetukset otetaan huomioon tulevissa toiminnoissa. Oletusarvo on 90 päivää, ja käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat ohittaa **Talousraportit** -luettelosivun oletusarvon.    
+Lisäasetukset otetaan huomioon tulevissa toiminnoissa. Oletusarvo on 90 päivää, ja käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat ohittaa **Talousraportit**-luettelosivun oletusarvon.    
 
 ## <a name="default-reports"></a>Oletusraportit
 Talousraportointi sisältää 22 oletusraporttia. Jokaisessa raportissa käytetään oletuspäätililuokkia. Voit käyttää näitä raportteja sellaisenaan tai omien talousraportointitarpeiden lähtökohtana. Perinteisten raporttien, kuten tuloslaskelma tai tase, lisäksi nämä oletusraportit sisältävät raportteja, jotka näyttävät millaisia raportteja voidaan luoda. 
@@ -114,22 +114,22 @@ Talousraportointi sisältää 22 oletusraporttia. Jokaisessa raportissa käytet�
 | Tase ja tuloslaskelma rinnakkain – oletus | Näyttää organisaation vuoden rahoitusaseman ja kannattavuuden rinnakkain.                                                                                                                                                                                                                              |
 | Kassavirta – oletus                                       | Antaa tietoja organisaation rahaliikenteestä.                                                                                                                                                                                                                                   |
 | Tarkka JE- ja TB-arviointi – oletus                      | Näyttää kaikkien tilien alkusaldon ja tehtävän tiedot.                                                                                                                                                                                                                                                      |
-| Yksityiskohtainen pääkirja – oletus                         | Näyttää kaikkien niiden tilien saldotiedot, joilla saatavien ja maksettavien saldot, ja näiden nettosaldot sekä tapahtumapäivämäärän, tositteen ja kirjauskansion kuvauksen.                                                                                                                                  |
+| [Yksityiskohtainen pääkirja – oletus](trial-balance-financial-reports.md)| Näyttää kaikkien niiden tilien saldotiedot, joilla saatavien ja maksettavien saldot, ja näiden nettosaldot sekä tapahtumapäivämäärän, tositteen ja kirjauskansion kuvauksen.                                                                                                                                  |
 | Kulujen kolmen vuoden vuosineljänneksen trendi – oletus             | Antaa lisätietoja kuluneiden 12 vuosineljänneksen kuluista kolmen viime vuoden ajalta.                                                                                                                                                                                                                                   |
 | Taloudellisten otsikoinen JE- ja TB-arviointi – oletus            | Näyttää yhteenvedon saldoista ja taloudellisten otsikoiden (varat, velka, omistajan oma pääoma, tuotto, kulu, voitto tai tappio) tehtävä.                                                                                                                                                                           |
-| Tuloslaskelma – oletus                                | Näyttää organisaation tuottavuusnäkymän kuluvalle kaudelle sekä vuoden alusta tähän asti.                                                                                                                                                                                                                                   |
+| [Tuloslaskelma – oletus](income-statement-financial-report.md)| Näyttää organisaation tuottavuusnäkymän kuluvalle kaudelle sekä vuoden alusta tähän asti.                                                                                                                                                                                                                                   |
 | Kirjanpidon tapahtumaluettelo – oletus                        | Näyttää kaikkien tilien tarkat saldotiedot. Tämä raportti näyttää saapuvien ja maksettavien saldot sekä muita tapahtumatietoja, kuten tapahtumapäivän, kirjauskansion numeron, tositteen, kirjaustyypin ja jäljitysnumeron.                                                                            |
 | Tunnusluvut – oletus                                          | Näyttää organisaation vakavaraisuusasteen, kannattavuuden ja tehokkuusasteen.                                                                                                                                                                                                                           |
 | Juokseva 12 kuukauden kulut – oletus                       | Antaa lisätietoja kunkin kuluneen 12 kuukauden kuluista. Näiden 12 kuukauden ei tarvitse olla yhtenä tilikautena.                                                                                                                                                                                                       |
 | Juokseva vuosineljänneksen tuloslaskelma – oletus               | Näyttää organisaation kannattavuuden neljännesvuosittain edelliseltä vuodelta ja vuoden alusta.                                                                                                                                                                                                                   |
 | Tase rinnakkain – oletus                      | Näyttää organisaation vuoden rahoitusaseman. Tämä raportti näyttää varat ja velat sekä osakkeenomistajien oman pääoman rinnakkain.                                                                                                                                                                                |
-| Pääkirjan yhteenveto – oletus                          | Näyttää kaikkien niiden tilien saldotiedot, joilla on alku- ja loppusaldot ja saatavien ja maksettavien saldot sekä niiden nettoeron.                                                                                                                                                                  |
-| Pääkirjan yhteenveto vuosittain – oletus           | Näyttää kaikkien tilien niiden saldotiedot, joilla on alku- ja loppusaldot, ja saatavien ja maksettavien saldot sekä niiden kuluvan vuoden ja edellisen vuoden nettoeron.                                                                                                                           |
+| [Pääkirjan yhteenveto – oletus](trial-balance-financial-reports.md)| Näyttää kaikkien niiden tilien saldotiedot, joilla on alku- ja loppusaldot ja saatavien ja maksettavien saldot sekä niiden nettoeron.                                                                                                                                                                  |
+| [Pääkirjan yhteenveto vuosittain – oletus](trial-balance-financial-reports.md)| Näyttää kaikkien tilien niiden saldotiedot, joilla on alku- ja loppusaldot, ja saatavien ja maksettavien saldot sekä niiden kuluvan vuoden ja edellisen vuoden nettoeron.                                                                                                                           |
 | Viikoittainen myynti ja alennukset – oletus                     | Antaa lisätietoja kuukauden jokaisen viikon myynnistä ja alennuksista. Tämä raportti sisältää neljän viikon yhteisarvon.                                                                                                                                                                                                              |
 | Käytettävissä olevat budjettivarat -oletus                         | Tarkastele tarkistetun budjetin, toteutuneiden menojen, budjettivarausten ja käytettävissä olevien budjettivarojen yksityiskohtaista vertailua.                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Talousraporttien avaaminen
-Kun valitset **Talousraportointi** -valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2019, raportti luotiin päivämäärälle 31.7.2019. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
+Kun valitset **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen oletusraportteja. Voit sitten avata raportin tai muokata sitä. Avaa jokin oletusraportti valitsemalla sen nimi. Kun raportti avataan ensimmäisen kerran, se luodaan automaattisesti edelliselle kuukaudelle. Jos esimerkiksi avaat raportin ensimmäisen kerran elokuussa 2019, raportti luotiin päivämäärälle 31.7.2019. Kun raportti on avattu, voit aloittaa siihen perehtymisen porautumalla tiettyyn tietoon ja muuttamalla raporttiasetuksia.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Talousraporttien luominen ja muokkaaminen
 Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Dynamics 365 Financessa käytössä olevalle yritykselle. 
@@ -145,14 +145,15 @@ Tietyt yleiset ongelmat voivat aiheuttaa hankaluuksia, kun Report Designer avata
 
 Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
 
-* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse **Suojaus** -välilehdessä ensin Luotettavat sivuston ja sitten **Sivustot**. Anna **Lisää tämä sivusto vyöhykkeeseen** -kohdassa \*\.dynamics.com ja valitse sitten **Lisää**. 
-* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus** -välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
+* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse **Suojaus**-välilehdessä ensin Luotettavat sivuston ja sitten **Sivustot**. Anna **Lisää tämä sivusto vyöhykkeeseen** -kohdassa \*\.dynamics.com ja valitse sitten **Lisää**. 
+* Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus**-välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
 * Poista ponnahdusikkunoiden esto käytöstä selaimessa.
 * Työasemien on asennettava Microsoft .NET -kehys 4.6.2 tai uudempi versio. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345).
-* Jos käytössä on Microsoft Edge ja Chrome-selain, Report Designer -asiakasohjelman lataamista varten on asennettava ClickOnce-laajennus. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. 
+* Jos käytössäsi on Chrome-selain, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät Chromea incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Lisätietoja Chrome ClickOnce -laajennuksesta on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Jos käytät Microsoft Edgea Chrome-selaimen kanssa, sinun ei tarvitse asentaa ClickOnce-laajennusta Edge Chromiumiin. Voit kuitenkin ottaa käyttöön ClickOnce-asetuksen, jotta voit ladata raporttien suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa.
      1. Avaa uusi selain Microsoft Edgessä.
-     2. Anna **edge://flags** ja paina **Enter** -näppäintä.
-     3. Valitse **ClickOnce-tuki** -vaihtoehto tai käytä tätä suoraa linkkiä: **edge://flags/#edge-click-once**.
+     2. Anna **edge://flags** ja paina **Enter**-näppäintä.
+     3. Valitse **ClickOnce-tuki**-vaihtoehto tai käytä tätä suoraa linkkiä: **edge://flags/#edge-click-once**.
      4. Määritä avattavan valikon vaihtoehdon asetukseksi **Käytössä**.
      5. Valitse **Käynnistä selain uudelleen**.
 

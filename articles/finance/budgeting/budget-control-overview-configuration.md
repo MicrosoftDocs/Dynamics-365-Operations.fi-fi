@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464fd211eb5417265f8c737b23456769137a7c13
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 670e6be595fb891408b1b0804c68a41650b0da0b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772671"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4442987"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -126,4 +126,4 @@ Kun budjetin hallinta on otettu käyttöön, käyttäjät vastaanottavat niiden 
 
 Tältä sivulta käyttäjät voivat porautua **Budjetin hallinnan tilasto kausittain** -sivulle ja tarkastella budjetin käytettävyystietoja ja varauksia tietyn budjetin ohjausdimensioyhdistelmän osalta. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot**-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
 
-Jos budjetin hallinta on otettu käyttöön ostotilauksille, budjettipäällikkö voi tarkastella **Kirjanpitobudjetit ja ennusteet** -työtilan avulla kaikkien niiden vahvistamattomien ostotilausten jonoa, joilla on budjetin tarkistuksen varoituksia ja virheitä. Jos budjettipäällikölle on konfiguroitu budjetin ylitysoikeudet, hän voi vahvistaa ostotilaukset suoraan työtilassa.    
+Jos budjetin hallinta on otettu käyttöön ostotilauksille, budjettipäällikkö voi tarkastella **Kirjanpitobudjetit ja ennusteet** -työtilan avulla kaikkien niiden vahvistamattomien ostotilausten jonoa, joilla on budjetin tarkistuksen varoituksia ja virheitä. Jos budjettipäällikölle on konfiguroitu budjetin ylitysoikeudet, ostotilaukset voidaan vahvistaa suoraan työtilassa.    

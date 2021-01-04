@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014980"
+ms.locfileid: "4442937"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valuutan uudelleenarvostus konsolidointiyrityksessä
 
@@ -34,7 +34,7 @@ Kun konsolidoit tietoja yhdestä kirjanpitovaluutasta toiseen, sinun on silti aj
 ## <a name="company-setup"></a>Yrityksen asetukset
 -   **Lähde/toimintaa harjoittava yritys (USMF)** – Yhdysvaltain dollareita (USD) käytetään kirjanpito- ja raportointivaluuttana.
 -   **Konsolidointiyritys (CON)** – Euroja (EUR) käytetään kirjanpito- ja raportointivaluuttana.
-    -   **Toteutunut voitto** – Kirjanpitotili 801500
+    -   **Toteutunut voitto**– Kirjanpitotili 801500
     -   **Toteutunut tappio** – Kirjanpitotili 801600
     -   **Toteutumaton voitto** – Kirjanpitotili 801600
     -   **Toteutumaton tappio** – Kirjanpitotili 801400

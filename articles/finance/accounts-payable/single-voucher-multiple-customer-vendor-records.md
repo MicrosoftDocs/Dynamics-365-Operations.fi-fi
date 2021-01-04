@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006233"
+ms.locfileid: "4442932"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
@@ -48,7 +48,7 @@ Kun kirjaat tositteen, jossa on useita asiakas- tai toimittajatietueita, kun yks
 
 ### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>Usean toimittajan yhteinen tosite ja vaikutus käteisalennuksen kirjanpitoon
 
-Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio** -sivulla. Nämä laskut jakautuvat useille tilin dimensioille.
+Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio**-sivulla. Nämä laskut jakautuvat useille tilin dimensioille.
 
 | Tosite | Tilityyppi | Tili  | kuvaus | Veloitus | Luotto |
 |-------------|------------------|--------------|-----------------|-----------|------------|
@@ -112,7 +112,7 @@ Kun INV2 on maksettu, tehdään seuraava merkintä. Huomaa, että käteisalennuk
 | GNJL001     | Toimittaja           | 1001        | INV1            |           | 100,00     | Kirjanpito           | 606300-001-- |
 | GNJL001     | Toimittaja           | 1001        | INV2            |           | 200,00     | Kirjanpito           | 606300-002-- |
 
-Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio** -sivulla. Nämä laskut jakautuvat useille tilin dimensioille. Kirjauksen jälkeen luodaan yksi tosite.
+Seuraavassa esimerkissä useita toimittajalaskuja kirjataan kirjanpidossa yhdelle tositteelle **Kirjauskansio**-sivulla. Nämä laskut jakautuvat useille tilin dimensioille. Kirjauksen jälkeen luodaan yksi tosite.
 
 | Tosite | Tili  | Kirjaustyyppi | Summa tapahtumavaluuttana (EUR) | Summa kirjanpitovaluuttana (USD) |
 |-------------|--------------|------------------|------------------------------------------|-----------------------------------------|

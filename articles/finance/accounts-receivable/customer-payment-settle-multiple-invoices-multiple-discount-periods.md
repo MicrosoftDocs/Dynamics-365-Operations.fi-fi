@@ -1,6 +1,6 @@
 ---
 title: Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
-description: Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan.
+description: Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c592034ca9c777bbc600c040c61937ad71b4e36d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177590"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4442993"
 ---
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan.
+Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 
 Fabrikam myy tavaroita asiakkaalle 4032. Fabrikam tarjoaa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 

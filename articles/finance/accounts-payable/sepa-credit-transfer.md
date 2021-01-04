@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177605"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442718"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA-tilisiirron yleiskatsaus
 
@@ -48,7 +48,7 @@ Eurooppalaisista pankeista muodostuva EPC kehittää SEPA-maksuvälineiden kaupa
 -   Kortit
 
 ## <a name="what-is-a-sepa-credit-transfer"></a>Mikä SEPA-tilisiirto on?
-SEPA-tilisiirto on toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama maksu. Maksujen on oltava euromääräisiä ja niissä on oltava kummankin osapuolen kansainvälinen tilinumero (IBAN) ja BIC (Bank Identifier Code) -koodi. (BIC-koodi tunnetaan myös nimellä \[SWIFT\] (Society for Worldwide Interbank Financial Telecommunication) -koodi. Lisäksi osapuolien on jaettava tapahtumakustannukset. Osapuolten välisissä tilisiirroissa on käytettävä EPC:n määritysten mukaisia XML-tiedostoja, jotka vastaavat ISO 20022 -maksukäsittelystandardeja ja XML-muotoa.
+SEPA-tilisiirto on toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama maksu. Maksujen on oltava euromääräisiä ja niissä on oltava kummankin osapuolen kansainvälinen tilinumero (IBAN) ja BIC (Bank Identifier Code) -koodi. (BIC-koodi tunnetaan myös nimellä \[SWIFT\] Society for Worldwide Interbank Financial Telecommunication) -koodi. Lisäksi osapuolien on jaettava tapahtumakustannukset. Osapuolten välisissä tilisiirroissa on käytettävä EPC:n määritysten mukaisia XML-tiedostoja, jotka vastaavat ISO 20022 -maksukäsittelystandardeja ja XML-muotoa.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Miten tilisiirto tehdään?
 SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsoft Dynamics 365 Financen sähköistä raportointia (ER) ja maksutapatoimintoa. Muilla alueilla käytetään edelleen joitakin tilisiirron muotoja, jotka käyttävät vanhaa maksukehystä. Muiden muotojen lisäksi saatavilla on kaksitoista ISO 20022 -tilisiirron tiedostomuotoa. Nämä vientimuodot ovat SEPA ISO 20022 XML -standardin mukaisia. Niiden avulla muodostetaan ei-euromääräiset maksun siirrot maille/alueille, joissa niitä käytetään sekä euromääräiset maksut sen mukaisesti, mitä EPC:n SEPA-tilisiirtojen sääntökirjan versiossa 8.2 määritetään. Ennen tilisiirtojen käyttöönottoa omasta pankista on pyydettävä ohjelmisto, joka tarvitaan sähköisten pankkitiedostojen lataamiseen. Maksutoimeksiannot sisältävät XML-tiedostot siirretään tällä ohjelmistolla pankkiin.

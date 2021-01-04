@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 28669014b4998de6ae13ec7dbc4c704a14aff6e2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 948f83d56e560cc21205294c15de4b2097d2ad2e
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975337"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4442988"
 ---
 # <a name="customer-transactions-list-page"></a>Näytä avoimien asiakastapahtumien listaussivu
 
@@ -39,7 +39,7 @@ Toimintoruudun **Näytä tilitykset** -painikkeen avulla voit käyttää nopeast
 
 4. Voit valintaikkunassa tehdä erilaisia tehtäviä. Valitse vähintään yksi tosite ja sitten jokin seuraavista painikkeista:
 
-    - **Näytä asiaan liittyvät** – Näytä kaikki asiakkaan maksukirjauskansion ja yleisen kirjauskansion tapahtumat, jotka luotiin niissä kirjauskansioissa, joissa luettelossa näkyvät asiakirjat luotiin. Jos esimerkiksi maksu näytetään, silloin näytetään myös kaikki sen maksukirjauskansion maksut, jossa se luotiin. Jos lasku tai maksu näytetään ja jos se oli luotu yleisessä kirjauskansiossa, sitten kaikki sen yleisen kirjauskansion asiakirjat näytetään, jos se luotiin. Lisäksi näytetään kaikki kyseiseen asiakirjaluetteloon liittyvät tilitykset. Kun tarkastelet liittyviä maksuja, tämän painikkeen otsikko muuttuu muotoon **Näytä tilitykset**. Valitse **Näytä tilitykset**, jos haluat näyttää vain tapahtumat, jotka näytettiin, kun avasit **Näytä tilitykset** -valintaikkunan ensimmäisen kerran.
+    - **Näytä liittyvät** – Näytä kaikki asiakkaan maksukirjauskansion ja yleisen kirjauskansion tapahtumat, jotka luotiin niissä kirjauskansioissa, joissa luettelossa näkyvät asiakirjat luotiin. Jos esimerkiksi maksu näytetään, silloin näytetään myös kaikki sen maksukirjauskansion maksut, jossa se luotiin. Jos lasku tai maksu näytetään ja jos se oli luotu yleisessä kirjauskansiossa, sitten kaikki sen yleisen kirjauskansion asiakirjat näytetään, jos se luotiin. Lisäksi näytetään kaikki kyseiseen asiakirjaluetteloon liittyvät tilitykset. Kun tarkastelet liittyviä maksuja, tämän painikkeen otsikko muuttuu muotoon **Näytä tilitykset**. Valitse **Näytä tilitykset**, jos haluat näyttää vain tapahtumat, jotka näytettiin, kun avasit **Näytä tilitykset** -valintaikkunan ensimmäisen kerran.
     - **Näytä historia** – Näytä tositteiden tilityshistoria. Sulje valintaikkuna valitsemalla **Sulje**.
     - **Näytä kirjanpito** – Näytä valittuihin asiakirjoihin liittyvät kaikki tositteet. Sulje valintaikkuna valitsemalla **Sulje**.
     - **Vie** – vie valitus tositteet Microsoft Exceliin.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653773"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645766"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
@@ -92,6 +92,11 @@ Budjettimalleista luodut budjetit voidaan sisällyttää kassavirtaennusteisiin.
 ### <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
 
 Varaston kysynnän ja tarjonnan ennusteet voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Inventoinnin- ja varastonhallinta**-välilehdessä kassavirtaennusteeseen sisällytettävät ennustemallit. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisillä kysynnän ja tarjonnan ennusteriveillä.
+
+### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Kassavirran ennustamisen dimensioiden määrittäminen
+**Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Kassavirtaennusteet-toiminto on käytössä. 
+
+Valitse **Dimensiot**-välilehdessä suodatuksessa käytettävät dimensiot luettelosta ja siirrä ne oikeanpuoleiseen sarakkeeseen nuolinäppäinten avulla. Kassavirtaennustetietojen suodattamiseen voidaan valita vain kaksi dimensiota. 
 
 ### <a name="calculation"></a>Laskelma
 

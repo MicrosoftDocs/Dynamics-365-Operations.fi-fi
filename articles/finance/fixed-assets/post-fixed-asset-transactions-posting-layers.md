@@ -1,7 +1,7 @@
 ---
 title: Käyttöomaisuustapahtumien kirjaaminen kirjanpitotasoihin
 description: Tässä artikkelissa on yleiskuvaus käyttöomaisuustapahtumien kirjanpitotason toiminnosta.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770709"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493669"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Käyttöomaisuustapahtumien kirjaaminen kirjanpitotasoihin
 
@@ -39,8 +39,11 @@ Käyttöomaisuuden kirjauskansiot määritetään Kirjauskansionimet sivulla koh
 
 Voit määrittää kirjanpitotilejä käyttöomaisuustapahtumille Käyttöomaisuuserän kirjausprofiili -sivulla. Valitse kullekin kirjausprofiilille asianmukainen tapahtumatyyppi ja kirja ja määritä sitten kirjanpitotilit. Määritä kirjausprofiilin tietue erikseen jokaiselle kirjalle, joka kirjataan kirjanpitoon.
 
+Käyttöomaisuus voidaan syöttää vain asiakirjoihin, jotka tukevat **Nykyinen**-kirjaustasoa, kuten **ostotilaus**, **odottava toimittajan lasku**, **myyntitilaus** tai **vapaatekstilasku**. Kun käyttöomaisuuserän tunnus valitaan jossakin näistä asiakirjoista, käyttöomaisuuskirja suodatetaan kirjassa **Nykyinen**-kirjaustason mukaan. Se täytetään automaattisesti kirjauksen aikana, kun järjestelmä tarkistaa, että käyttöomaisuuden kirjaustaso on **Nykyinen**. Jos tätä vahvistusta ei voi suorittaa, kirjausprosessi pysäytetään. 
+
 > [!NOTE] 
-> Käyttämällä johdettuja arvomalleja voit kirjata tapahtumia eri kirjaustasoille samalla kertaa. Ensisijaisen kirjan tapahtumat luodaan kirjauskansioon, jonka kirjaustaso vastaa kirjan kirjaustasoa. Kirjauksen aikana johdetun kirjan tapahtumat kirjataan asianmukaisille kirjaustasoille.
+> Käyttämällä johdettuja arvomalleja voit kirjata tapahtumia eri kirjaustasoille samalla kertaa. Ensisijaisen kirjan tapahtumat luodaan kirjauskansioon tai lähdeasiakirjaan, jonka kirjaustaso vastaa kirjan kirjaustasoa. Kirjauksen aikana johdetun kirjan tapahtumat kirjataan asianmukaisille kirjaustasoille. 
+
 
 Lisätietoja on kohdassa [Johdetut kirjat](derived-books.md) ja [Kirjaaminen johdettujen kirjojen avulla](post-derived-value-models.md).
 

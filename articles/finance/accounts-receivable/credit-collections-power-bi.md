@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040050"
+ms.locfileid: "4442952"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinnan Power BI-sisältö
 
@@ -40,7 +40,7 @@ Tässä Power BI -sisällössä on 10 raporttisivua:
 
 Kaikki summat näytetään järjestelmän valuuttana. Järjestelmän valuutta määritetään **Järjestelmän parametrit** -sivulla.
 
-Oletusarvoisesti näytetään nykyisen yrityksen luotonvalvonnan tiedot. Voit tarkastella kaikkien yritysten tietoja määrittämällä roolille **CustCollectionsBICrossCompany** -tehtävän.
+Oletusarvoisesti näytetään nykyisen yrityksen luotonvalvonnan tiedot. Voit tarkastella kaikkien yritysten tietoja määrittämällä roolille **CustCollectionsBICrossCompany**-tehtävän.
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Power BI -sisällön tarkastelemiseen tarvittavat asetukset
 
@@ -50,7 +50,7 @@ Seuraavat asetukset on tehtävä, jotta tiedot näkyisivät Power BI -visualisoi
 2. Tarkista aktiiviselle ajanjaksolle määritetty kirjanpidon kalenteripäivämäärät valitsemalla **Kirjanpito > Kalenterit > Kirjanpidon kalenterit**.
 3. Määritä **Kirjanpitovaluutta** ja **Vaihtokurssin tyyppi** valitsemalla **Kirjanpito > Asetukset > Kirjanpito**.
 4. Määritä vaihtokurssit tapahtuma- ja kirjanpitovaluuttojen sekä kirjanpito- ja järjestelmävaluutan välillä. Tee se valitsemalla **Kirjanpito > Valuutat > Valuutan vaihtokurssit**.
-5. Päivitä **CustCollectionsBIMeasurementsV2** -koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
+5. Päivitä **CustCollectionsBIMeasurementsV2**-koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
 
 >[!NOTE] 
 > Power BI -sisällän perääntymistiedot otetaan käyttöön määrittämällä erääntymiskausien määritykset valitsemalla **Myyntireskontran parametrit > Perinnät > Perinnän oletukset**.

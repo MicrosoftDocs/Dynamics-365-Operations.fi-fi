@@ -16,11 +16,11 @@ ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8bee320beb411a5ee0829a0e3170de0c7f293172
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124228"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442735"
 ---
 # <a name="collections-management-key-concepts"></a>Perinnän hallinnan keskeiset käsitteet
 
@@ -49,7 +49,7 @@ Erääntymistilannevedoksen otsikko sisältää asiakkaan tilillä erääntyneen
 
 Erääntymistilannevedoksen erittelytietue luodaan jokaiselle erääntymiskauden määrittelyyn sisältyvälle erääntymiskaudelle. Kukin erittelytietue sisältää erääntymiskauden tunnuksen sekä tapahtumien kokonaissumman erääntymiskauden päivämääriltä. Tapahtumat määritetään erääntymiskaudelle, kuten 30 päivää myöhässä. Päivämäärä on suhteessa **Erääntyy**-päivämäärään, joka määritetään erääntymistilannevedosta luotaessa. Nämä tiedot näytetään **Erääntyneet saldot** -luettelosivulla sekä **Perintä**-sivun **Erääntyneet saldot** -tietoruudussa.
 
-## <a name="collections-customer-pools"></a> Perinnän asiakaspoolit 
+## <a name="collections-customer-pools"></a>Perinnän asiakaspoolit
 
 Asiakaspoolit ovat kyselyjä, jotka määrittävät asiakastietueryhmän. Näiden ryhmitettyjen tietueiden avulla voi tarkastella sisältyvien asiakastilien tietoja sekä hallita niiden perintä- tai erääntymisprosesseja. Voit suodattaa perinnän luettelosivujen tietoja asiakaspoolien avulla. Voit käyttää niitä suodattamaan myös erääntymistilannevedoksen luontiin sisältyneitä asiakastilejä.
 

@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771819"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442882"
 ---
 # <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
 
@@ -104,4 +104,4 @@ Kirjauskansiosivulla on painike, jonka avulla voit vapauttaa kirjauskansion, jon
 Mahdollisuus palauttaa kirjauskansio työn kulussa, jonka tila on "peruuttamaton", on käytössä käyttämällä kirjauskansion ja **Työnkulkuhistoria** -sivun **Työnkulku**-painiketta. Tämän toiminnon ottaa käyttöön ominaisuus nimeltä **Kirjauskansion työnlun tilan palautus** **Ominaisuuksien hallinta** -sivulla.
 
 ## <a name="delete-journal-lines"></a>Poista kirjauskansion rivit
-Mahdollisuus poistaa kaikki kirjauskansion rivit nopeasti on otettu käyttöön kirjauskansion kohdassa **Toiminnot** > **Poista kirjauskansion rivit**. Voit ottaa tämän toiminnon käyttöön valitsemalla**Ominaisuuksien hallinta** -sivulla **Poista kirjauskansion suorituskyvyn optimoinnit**.
+Mahdollisuus poistaa kaikki kirjauskansion rivit nopeasti on otettu käyttöön kirjauskansion kohdassa **Toiminnot** > **Poista kirjauskansion rivit**. Voit ottaa tämän toiminnon käyttöön valitsemalla **Ominaisuuksien hallinta** -sivulla **Poista kirjauskansion suorituskyvyn optimoinnit**.

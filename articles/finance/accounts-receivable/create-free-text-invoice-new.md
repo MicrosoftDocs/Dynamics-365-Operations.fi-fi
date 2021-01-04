@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976520"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442636"
 ---
 # <a name="create-a-free-text-invoice"></a>Luo tekstimuotoinen lasku
 

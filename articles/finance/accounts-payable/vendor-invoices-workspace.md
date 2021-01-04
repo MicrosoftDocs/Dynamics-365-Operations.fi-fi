@@ -18,11 +18,11 @@ ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000792"
+ms.locfileid: "4442928"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Toimittajan laskun syötön työtila
 
@@ -46,8 +46,8 @@ Nämä määritykset on tehtävä, ennen kuin tietoja voidaan näyttää Power B
 6. Määritä **Tuotujen laskujen lähettäminen automaattisesti työnkulkujärjestelmään** -asetukseksi **Kyllä**.
 7. Jos tuotteen vastaanotot täsmäytetään automaattisesti, määritä **Täsmäytä tuotteen vastaanotot automaattisesti laskuriveihin** -asetukseksi **Kyllä**.
 8. Tarkista loput valinnaiset asetukset ja määritä ne organisaation tarpeiden mukaan.
-9. Valitse **Järjestelmän hallinta \> Määritys \> Järjestelmän parametrit** ja määritä **Järjestelmän valuutta** - ja **Järjestelmän vaihtokurssi** -kentät.
-10. Määritä **Kirjanpitovaluutta** - ja **Vaihtokurssin tyyppi** -kentät valitsemalla **Kirjanpito \> Määritys \> Kirjanpito**.
+9. Valitse **Järjestelmän hallinta \> Määritys \> Järjestelmän parametrit** ja määritä **Järjestelmän valuutta**- ja **Järjestelmän vaihtokurssi** -kentät.
+10. Määritä **Kirjanpitovaluutta**- ja **Vaihtokurssin tyyppi** -kentät valitsemalla **Kirjanpito \> Määritys \> Kirjanpito**.
 11. Valitse **Kirjanpito \> Valuutat \> Valuutan vaihtokurssit**. Anna sitten tapahtumavaluutan ja kirjanpitovaluutan sekä kirjanpitovaluutan ja järjestelmän valuutan väliset vaihtokurssit.
 12. Valitse **Järjestelmän hallinta \> Määritys \> Yksikkösäilö** ja etsi **Toimittajan laskun automatisointimitta**. Valitse **Päivitä**.
 
@@ -57,7 +57,7 @@ Työtilassa olevien tietojen tarkastelemiseen tarvitaan ostoreskontrapäällikö
 
 ### <a name="company-selection"></a>Yrityksen valinta
 
-Kun **Automatisoi toimittajan laskut** -toiminto on otettu käyttöön, **Yritys** -kenttä näkyy työtilan yläosassa. **Yritys** -kentässä oleva valinta vaikuttaa kaikkiin työtilassa näkyviin tietoihin. Oletusarvoisesti näkyvissä on sen yrityksen tiedot, johon olet kirjautunut. Jos valitset **Yritys** -kentässä jonkin muun yrityksen, kyseisen yrityksen tiedot näytetään työtilassa. Voit sitten valita työtilassa ruudun ja siirtyä siihen liittyvälle sivulle valitussa yrityksessä.
+Kun **Automatisoi toimittajan laskut** -toiminto on otettu käyttöön, **Yritys**-kenttä näkyy työtilan yläosassa. **Yritys**-kentässä oleva valinta vaikuttaa kaikkiin työtilassa näkyviin tietoihin. Oletusarvoisesti näkyvissä on sen yrityksen tiedot, johon olet kirjautunut. Jos valitset **Yritys**-kentässä jonkin muun yrityksen, kyseisen yrityksen tiedot näytetään työtilassa. Voit sitten valita työtilassa ruudun ja siirtyä siihen liittyvälle sivulle valitussa yrityksessä.
 
 ### <a name="summary-tiles"></a>Yhteenvetoruudut
 
@@ -70,9 +70,9 @@ Kun **Automatisoi toimittajan laskut** -toiminto on otettu käyttöön, **Yritys
 
 (Nämä ruudut ovat näkyvissä, jos toimittajan laskujen automatisointitoiminto on otettu käyttöön ominaisuuksien hallinnassa.)
 
-**Palauta toimittajan laskut** -ruudun käyttö edellyttää, että toiminto on otettu käyttöön ostoreskontran parametreissa. Valitse ensin **Ostoreskontra \> Ostoreskontran parametrit** ja määritä sitten **Lasku** -välilehden **Salli toimittajan laskun palautu** -asetukseksi **Kyllä**.
+**Palauta toimittajan laskut** -ruudun käyttö edellyttää, että toiminto on otettu käyttöön ostoreskontran parametreissa. Valitse ensin **Ostoreskontra \> Ostoreskontran parametrit** ja määritä sitten **Lasku**-välilehden **Salli toimittajan laskun palautu** -asetukseksi **Kyllä**.
 
-Kun toiminto on otettu käyttöön, työtilan **Kirjauskansiot** -osassa on lisäksi kolme yhteen ryhmiteltyä ruutua. Näiden ruutujen nimet ovat **Kirjauskansiot** , **Kirjauskansiota – minulle määritetyt** ja **Laskupooli**. 
+Kun toiminto on otettu käyttöön, työtilan **Kirjauskansiot**-osassa on lisäksi kolme yhteen ryhmiteltyä ruutua. Näiden ruutujen nimet ovat **Kirjauskansiot**, **Kirjauskansiota – minulle määritetyt** ja **Laskupooli**. 
 
 **Odottavien laskujen yhteenveto** -osan tiedot koskevat yritystä, johon määritysten mukaan oletusarvoisesti kirjaudutaan.
 
@@ -86,7 +86,7 @@ Luo uusi laskutietue valitsemalla ensin **Uusi** ja sitten luettelosta jokin seu
 - Laskurekisteri
 - Laskun hyväksyntä
 
-Huomaa, että luotu tietue perustuu yrityssuodatukseen eikä yritykseen, johon on kirjauduttu. Olet esimerkiksi kirjautunut **UMSF** -yritykseen, mutta yrityssuodatuksena on **GBSI**. Kun tässä tilanteessa valitse ensin **Uusi** ja sitten tietuetyypin luettelosta, tietue luodaan GBSI-yritykseen.
+Huomaa, että luotu tietue perustuu yrityssuodatukseen eikä yritykseen, johon on kirjauduttu. Olet esimerkiksi kirjautunut **UMSF**-yritykseen, mutta yrityssuodatuksena on **GBSI**. Kun tässä tilanteessa valitse ensin **Uusi** ja sitten tietuetyypin luettelosta, tietue luodaan GBSI-yritykseen.
 
 ### <a name="documents-not-invoiced-grids"></a>Laskuttamattomien asiakirjojen ruudukot
 
@@ -96,13 +96,13 @@ Huomaa, että luotu tietue perustuu yrityssuodatukseen eikä yritykseen, johon o
 
 **Tuotteiden vastaanotot** -ruudukossa on oston vastaanottotapahtumat, joita ei ole vielä laskutettu kokonaan. Voit luoda ostotilaukselle toimittajan laskun **Lasku nyt** -painikkeella.
 
-**Odottavat toimittajan laskut** -ruudukossa on kaikki toimittajan laskut, joita ei ole lähetetty työnkulkujärjestelmään. Tiettyä toimittajan laskua voi hakea käyttämällä **Haku** -kenttää ja/tai yrityssuodatuksella. Ruudukossa näkyvää tapahtumaa voi muokata **Muokkaa** -painikkeella.
+**Odottavat toimittajan laskut** -ruudukossa on kaikki toimittajan laskut, joita ei ole lähetetty työnkulkujärjestelmään. Tiettyä toimittajan laskua voi hakea käyttämällä **Haku**-kenttää ja/tai yrityssuodatuksella. Ruudukossa näkyvää tapahtumaa voi muokata **Muokkaa**-painikkeella.
 
-Tiettyä ostotilausta voi hakea **Etsi ostotilaus** -ruudukossa **Haku** -kentän avulla.
+Tiettyä ostotilausta voi hakea **Etsi ostotilaus** -ruudukossa **Haku**-kentän avulla.
 
 ### <a name="related-information"></a>Aiheeseen liittyviä tietoja
 
-Voit tarkastella kirjattujen laskujen tietoja käyttämällä työtilan oikealla puolella olevia linkkejä. Näitä linkkejä ovat esimerkiksi **Avoimet toimittajan laskut** , **Laskukirjauskansiot** ja **Laskuhistoria ja täsmäytystiedot**. **Toimittajat** -osassa voi käyttää suodatettua luetteloa, jossa on kaikki pidossa olevat toimittajat. Vaihtoehtoisesti voit käyttää **Kaikki toimittajat** -linkkiä. Myös **Kaikki ostotilaukset** - ja **Avoimet ennakkomaksut** -linkit ovat käytettävissä.
+Voit tarkastella kirjattujen laskujen tietoja käyttämällä työtilan oikealla puolella olevia linkkejä. Näitä linkkejä ovat esimerkiksi **Avoimet toimittajan laskut**, **Laskukirjauskansiot** ja **Laskuhistoria ja täsmäytystiedot**. **Toimittajat**-osassa voi käyttää suodatettua luetteloa, jossa on kaikki pidossa olevat toimittajat. Vaihtoehtoisesti voit käyttää **Kaikki toimittajat** -linkkiä. Myös **Kaikki ostotilaukset**- ja **Avoimet ennakkomaksut** -linkit ovat käytettävissä.
 
 ### <a name="analytics--all-companies-page"></a>Analytiikka – kaikki yritykset -sivu
 

@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3058014"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442824"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
@@ -84,7 +84,7 @@ Asiakaspalautteen perusteella Microsoft on kääntänyt seuraavat skenaariot, jo
 Seuraavat skenaariot voidaan toteuttaa vain käyttämällä yhden tositteen toiminnolla. Jos organisaatiossa on jokin näistä skenaariosta, tositteessa on otettava käyttöön useiden tapahtumien kirjaaminen muuttamalla **Salli useita tapahtumia yhdessä tositteessa** -parametrin asetusta **Kirjanpitoparametrit**-sivulla. Nämä toiminnalliset aukot täytetään muilla toiminnoilla myöhemmissä versioissa.
 
 > [!Note]
-> [Kussakin seuraavassa skenaariossa **Salli useita tapahtumia yhdessä tositteessa** -kentän asetuksiksi on valittava Kyllä **Kirjanpidon parametrit** -sivun **Yleiset**-pikavälilehdessä.]
+> [Kunkin seuraavan skenaarion **Salli useita tapahtumia yhdessä tositteessa** -kentän arvoksi on määritettävä Kyllä **Yleistietoja**-pikavälilehdessä **Kirjanpidon parametrit** -sivulla.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Kirjaa yhteenvetolomakkeen toimittaja- tai asiakasmaksut pankkitilille
 

@@ -19,11 +19,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014956"
+ms.locfileid: "4442938"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Arvonlisäveromaksut ja pyöristyssäännöt
 
@@ -44,17 +44,17 @@ Kauden arvonlisävero näyttää hyvityssaldoksi -98 765,43. Yritys on perinyt a
 Yritys haluaa käyttää pyöristysmenetelmää, joka pyöristää saldon lähimpään 1,00 euroon. Alv-kirjanpidosta vastaava käyttäjä tekee seuraavat toimet:
 
 1. Valitse **Vero** > **Välilliset verot** > **Arvonlisävero** > **Alv-viranomaiset**.
-2. Valitse **Yleinen** -pikavälilehdessä **Pyöristystapa** -kentästä **Normaali**.
-3. Syötä **Pyöristys** -kenttään arvoksi 1,00.
+2. Valitse **Yleinen**-pikavälilehdessä **Pyöristystapa**-kentästä **Normaali**.
+3. Syötä **Pyöristys**-kenttään arvoksi 1,00.
 4. Kun arvonlisävero täytyy maksaa veroviranomaisille, avaa **Verot** > **Ilmoitukset** > **arvonlisävero** > **Vahvista ja kirjaa arvonlisävero**. Voit nähdä, että arvonlisäveron maksutilillä oleva alv-velka **98 765,43** pyöristetään arvoon **98 765**.
 
-Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään käyttämällä kutakin **Alv-viranomaiset** -sivulla **Pyöristystapa** -kentästä valittavissa olevaa pyöristysmenetelmää.
+Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään käyttämällä kutakin **Alv-viranomaiset**-sivulla **Pyöristystapa**-kentästä valittavissa olevaa pyöristysmenetelmää.
 
 > [!NOTE]                                                                                  
 > Jos pyöristysarvo on määritetty arvoon 0,00, toimi seuraavasti:
 >
 > - Pyöristyksessä pyöristyskäyttäytyminen on sama kuin **pyöristyksessä = 0,01**.
-> - **Pyöristyslomakkeen vaihtoehdot** , **alaspäin** , **pyöristäminen** ja **oma etu** , käyttäytyvät samoin kuin **pyöristys = 1,00**.
+> - **Pyöristyslomakkeen vaihtoehdot**, **alaspäin**, **pyöristäminen** ja **oma etu**, käyttäytyvät samoin kuin **pyöristys = 1,00**.
 
 | Pyöristystapavaihtoehto                | Pyöristysarvo = 0,01 | Pyöristysarvo = 0,10 | Pyöristysarvo = 1,00 | Pyöristysarvo = 100,00 | Pyöristysarvo = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

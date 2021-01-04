@@ -3,7 +3,7 @@ title: Automaattisten toimittajan laskutusprosessien yleiskuvaus
 description: Tässä ohjeaiheessa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja.
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022493"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665319"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automaattisten toimittajan laskutusprosessien yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja. Tässä ominaisuudessa on toimintoja, jotka otetaan käyttöön ominaisuuksien hallinnassa. Nämä toiminnot koskevat vain toimittajan laskuja; ne eivät siis koske laskuja, jotka käsitellään **Laskukirjauskansio** - tai **Laskurekisterikirjauskansio** -sivulla.
+Tässä ohjeaiheessa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja. Tässä ominaisuudessa on toimintoja, jotka otetaan käyttöön ominaisuuksien hallinnassa. Nämä toiminnot koskevat vain toimittajan laskuja; ne eivät siis koske laskuja, jotka käsitellään **Laskukirjauskansio**- tai **Laskurekisterikirjauskansio**-sivulla.
 
 Organisaatiot käyttävät usein kolmansia osapuolia paperilaskujen käsittelyssä hyödyntämällä OCR-tekstintunnistuspalvelua. Tällainen palvelu palauttaa koneellisesti luettavat laskun metatiedot. Ostoreskontran automaatiotoiminnot edistävät automatisointia, sillä näitä artefakteja voidaan käyttää ostoreskontrasta.
 
@@ -41,6 +41,7 @@ Automatisoiduilla prosesseilla voidaan suorittaa seuraavia tehtäviä:
 - Kirjauksen simuloiminen ennen toimittajan laskun kirjaamista.
 - Työnkulkuhistorian näyttäminen nopeasti ja tehokkaasti.
 - Toimittajan laskun käsittelyn automatisoinnin tulosten näyttäminen ja analysoiminen.
+- Jatka useiden laskujen automaattista käsittelyä.
 
 ## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Toimittajan laskun automatisointi – tuotujen toimittajan laskujen lähettäminen työnkulkujärjestelmään.
 
@@ -58,10 +59,13 @@ Järjestelmä voi automaattisesti täsmäyttää kirjatut tuotteen vastaanotot l
 
 Kirjauksen simulointi suorittaa toimittajan laskujen kirjausprosessin aikana tehtävät vahvistusvaiheet, mutta mitään tilejä ei päivitetä. Prosessi suoritetaan valitsemalla joko yksi lasku tai useita laskuja **Odottavat toimittajan laskut** -sivulla.
 
-## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Toimittajan laskun automatisointi – parannettu toimittajan laskujen työnkulun historiatietojen katselukokemus
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Toimittajan laskun automatisointi – parannettu toimittajan laskujen työnkulun ja automaatiohistoriatietojen katselukokemus
 
-Käytettävissä on helppolukuinen toimittajan laskun työnkulkuhistorianäkymä. Toimittajan laskun työnkulkuhistoriaan voidaan siirtyä suoraan toimittajan laskusta. Näiden tietojen saamiseen tarvitaan siis vähemmän napsautuksia.
+Käytettävissä on helppolukuinen toimittajan laskun työnkulkuhistorianäkymä. Toimittajan laskun työnkulkuhistoriaan voidaan siirtyä suoraan toimittajan laskusta. Näiden tietojen saamiseen tarvitaan siis vähemmän napsautuksia. Jos organisaatiosi on mahdollistanut tuotujen toimittajan laskujen automaattisen lähettämisen työnkulkuun, tuotujen laskujen automaatiohistoria on käytettävissä. Automaatiohistorian avulla voit tunnistaa nykyisen prosessivaiheen sekä vaiheet, jotka on jo suoritettu. Kun vaihe epäonnistuu, järjestelmä antaa yksityiskohtaisia tietoja virheen syystä.
 
 ## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Toimittajan laskun automatisointi – analytiikka ja mittarit
 
 **Toimittajan laskutapahtuma** -työtilassa voi keskittyä toimittajan laskuihin, joita ei voitu käsitellä automatisoidussa prosessissa. Työtilan ruuduissa on tietoja toimittajan laskuista, joiden lähettäminen työnkulkujärjestelmään, tuominen tai täsmäyttäminen tuotteen vastaanottoihin ei onnistunut. Ostoreskontran esimiehet puolestaan saavat Microsoft Power BI -mittareiden avulla merkityksellistä tietoa toimittajan laskun automatisoinnin tehokkuudesta.
+
+## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Toimittajan laskun automaatio - useiden laskujen automaattisen käsittelyn jatkaminen
+Kun tuodun laskun lähettäminen ei onnistu työnkulkuun automatisoidun prosessin kautta, järjestelmä poistaa sen automaattisesta käsittelystä. Ostoreskontran käsittelijä voi tarkastella ja muokata laskua, ennen kuin automaattinen prosessi lähettää sen uudelleen työnkulkuun. Vian syy voidaan ratkaista saman korjauksen avulla useita laskuja varten. Voit käynnistää automaattisen prosessin uudelleen **Jatka automaattista laskujen käsittelyä** -sivulla. 

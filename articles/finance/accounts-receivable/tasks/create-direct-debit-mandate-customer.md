@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 86d29782f616219b5d84e3567910cb28c60b65ae
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140303"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442662"
 ---
 # <a name="create-a-direct-debit-mandate-for-a-customer"></a>Luo suoraveloitusvaltakirja asiakkaalle
 
@@ -42,7 +42,7 @@ Tässä tehtävän ohjauksessa kerrotaan, miten suoraveloitusvaltakirja luodaan 
 9. Kirjoita arvo **Valuutta**-kenttään.
 10. Valitse **Tallenna**.
 11. Sulje sivu.
-12. Siirry **siirtymisruudussa**kohtaan **Moduulit > Maksuliikenteen hallinta > pankkitilit > pankkitilit.**
+12. Siirry **siirtymisruudussa** kohtaan **Moduulit > Maksuliikenteen hallinta > pankkitilit > pankkitilit.**
 13. Etsi haluamasi tietue luettelosta ja valitse se.
 14. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 15. Valitse **Muokkaa**.

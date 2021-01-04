@@ -3,7 +3,7 @@ title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4fd099116a342780961079c600368d81b30ec4c5
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985940"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517497"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on luettelo pakollisista päivityksistä, jotka on suunniteltu ja julkaistu Dynamics 365 Financen tukemissa lokalisaatioissa. Toimitusajankohdat voivat muuttua ja ennakoidut toiminnot voivat olla erilaisia tai niitä ei ehkä julkaista. [Microsoftin käytännössä](https://go.microsoft.com/fwlink/p/?linkid=2007332) on lisätietoja. 
+Tässä ohjeaiheessa on luettelo pakollisista päivityksistä, jotka on suunniteltu ja julkaistu Dynamics 365 Financen tukemissa lokalisaatioissa. Toimitusajankohdat voivat muuttua ja ennakoidut toiminnot voivat olla erilaisia tai niitä ei ehkä julkaista. Lisätietoja on kohdassa [Microsoftin käytäntö](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
 Pakolliset päivitykset ovat toimintoja, jotka tukevat uudet tai muuttuneet maakohtaiset lainsäädännöt. Lisätietoja muista suunnitelluista tai julkaistuista maakohtaisista ominaisuuksista on [Dynamics 365:n ja Power Platformin julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/index).
 
@@ -40,52 +40,46 @@ Pakolliset päivitykset, jotka julkaistaan osana kuukausittaista päivitystä, o
 
 Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.   
 
-|Maa tai alue|Suunniteltu julkaisupäivämäärä|Julkaisuversio|Pakollinen päivitys|
+|Maa tai alue|Vapautuspäivä|Julkaisuversio|Pakollinen päivitys|
 |--------------------|---------------|-------|-------|
 |      Itävalta         |   2020. syyskuuta      | 10.0.15      |   ALV-ilmoituksen muoto U30 on päivitetty vuoden 2020 raportointia varten   |
-|      Bahrain         |   Heinäkuu 2020      | 10.0.12      |   Käänteinen veloitus   |
-|      Bahrain         |   Heinäkuu 2020      | 10.0.12      |   Laskun kirjoittamisen takaraja (GCC)   |
-|      Bahrain         |   Heinäkuu 2020      | 10.0.12      |   Bahrainin ALV-ilmoitus   |
-|      Bahrain         |   Heinäkuu 2020      | 10.0.12      |   Bahrainin myyntilaskut   |
-|      Brasilia         |   Elokuu 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST-ilmoituksen PR   |
-|      Brasilia         |   Maaliskuun 2020.      | 10.0.11      |   SPED ECD -asettelu 8   |
-|      Brasilia         |   Huhtikuun 2020.      | 10.0.11      |   Tekninen huomautus NT2019.001 v1.40   |
-|      Brasilia         |   Toukokuun 2020.      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST-lauseke Parana-tilan osalta   |
-|      Brasilia         |   Heinäkuu 2020 - toukokuu 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF -asettelu 6   |
-|      Brasilia         |   Heinäkuu 2020      | 10.0.13, 10.0.12HF      |   SPED-verotus – tietue C176 – RS-tila   |
+|      Bahrain         |   2020. kesäkuuta      | 10.0.13      |   Laskun kirjoittamisen takaraja (GCC)   |
+|      Bahrain         |   2020. syyskuuta      | 10.0.13      |   Bahrainin projektilasku   |
+|      Bahrain         |   2020. kesäkuuta      | 10.0.13      |   Bahrainin ALV-ilmoitus - ota käyttöön tapahtuman kuvaus   |   
+|      Brasilia         |   Elokuu 2020      | 10.0.14, 10.0.13      |   ADRCST-ilmoituksen PR   |
+|      Brasilia         |   Toukokuun 2020.      | 10.0.13      |   SPED ECF -asettelu 6   |
+|      Brasilia         |   Heinäkuu 2020      | 10.0.13      |   SPED-verotus – tietue C176 – RS-tila   |
+|      Brasilia         |   2020. lokakuuta      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v1.51 - Tarkistussääntöjen käyttöönotto etukoodin yhteydessä Distrito Federalin mukaan   |
+|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   SPED-verotus - asettelu 015   |
+|      Brasilia         |   marraskuu 2020      | 10.0.15HF      |   SPED-verotus, ICMS/IPI-tietue, C176-päivitys RS-tilalle   |
+|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   DRCST-ilmoituksen SC - SEF 262/2020   |
+|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   SPED-verotus, ICMS/IPI-tietue, C176   |
 |      Tšekin tasavalta      |   Heinäkuu 2020      | 10.0.13      |   ALV-valvontailmoituksen muutokset XML-rakenteessa (laskulistaus)   |
 |      Tšekin tasavalta         |   Heinäkuu 2020      | 10.0.13      |   ALV-ilmoitus XML-muodossa, ALV-ilmoituksen esikatselu Excelissä ja ALV-valvontailmoituksen XML-muodot veroilmoitusmalliin perustuvana   |
-|      Viro         |   Toukokuun 2020.       | 10.0.11      |   Sähköinen laskutus Virossa: Asiakkaan laskujen vienti Viron erityismuodossa versio 1.2.  |
 |      Eurooppa        |   Elokuu 2020       | 10.0.14      |   Siirrä kumppanin ALV-tunnus Intrastatiin  |
 |      Suomi         |   Heinäkuu 2020       | 10.0.13      |   Suomen sähköisten laskujen tuki  |
-|      Saksa         |   Toukokuun 2020.       | 10.0.12      |   Saksa - Retail - kassakoneen vaatimukset    |
-|      Unkari         |   Maaliskuun 2020.       | 10.0.11     |   Verkkolaskutusjärjestelmä v.2.0 Finance and Operationsissa    |
-|      Intia         |   Elokuu 2020, heinäkuu 2020      | 10.0.3, 10.0.12HF      |   Myytyjen tuotteiden TCS osaa kohti 206C (1H) - raja kertyneiden tapahtumien PAN-kohtainen raja.  |
-|      Intia         |   Elokuu 2020, kesäkuu 2020      | 10.0.13, 10.0.12HF      |   Hyvitys-/veloituslasku vientilaskulle  |
-|      Intia         |   Elokuu 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Sähköinen lasku, GST-vero  |
-|      Intia         |   Toukokuun 2020.      | 10.0.13, 10.0.12      |   Uusi GSTR-1 ja GSTR-2, palautusmuoto  |
+|      Intia         |   Heinäkuu 2020      | 10.0.13      |   Myytyjen tuotteiden TCS osaa kohti 206C (1H) - raja kertyneiden tapahtumien PAN-kohtainen raja.  |
+|      Intia         |   Elokuu 2020, kesäkuu 2020      | 10.0.13      |   Hyvitys-/veloituslasku vientilaskulle  |
+|      Intia         |   Elokuu 2020      | 10.0.13      |   Sähköinen lasku, GST-vero  |
 |      Intia         |   Heinäkuu 2020      | 10.0.13      |   Uusi GSTR (ANX-1 ja ANX-2), offline-työkalu (beetaversio)  |
-|      Intia         |   Toukokuun 2020.      | 10.0.12      |   Varastosiirto tilausten yksikköhinnan ja kustannushinnan käsittelyn parannukset  |
-|      Intia         |   Toukokuun 2020.      | 10.0.12      |   Varaston siirron saman veroprosentin käytettävyys lähetyksen ja vastaanoton aikana (myös osittain vastaanotto)  |
-|      Italia         |   Toukokuun 2020.      | 10.0.12, 10.0.11      |   Modello 770/2019 -muodon muutos |
-|      Italia         |   Heinäkuu 2020      | 10.0.13, 10.0.12HF      |   Muutokset Italian sähköisten laskujen, FatturaPA, muodossa |
-|      Kuwait         |   Heinäkuu 2020      | 10.0.12      |   Käänteinen veloitus |
+|      Intia         |   2020. lokakuuta      | 10.0.14HF, 10.0.13HF      |   Intian varaston siirtotilauksen GST:n sähköinen lasku|
+|      Intia         |   2020. lokakuuta      | 10.0.14HF, 10.0.13HF      |   Intian GST:n sähköinen lasku ja useita GSTIN-rekisteröintejä|
+|      Intia         |   2020. syyskuuta      | 10.0.13HF      |   Ennakonpidätyksen määrä 3/5 desimaalina|
+|      Intia         |   2020. syyskuuta      | 10.0.14HF      |   Numerosarjaryhmä GSTNSG, tapahtumatyyppi GST-lasku määritetään verotietojen 0073 GST-viitenumerojärjestysryhmälle|
+|      Italia         |   Heinäkuu 2020      | 10.0.13      |   Muutokset Italian sähköisten laskujen, FatturaPA, muodossa |
 |      Malesia         |   Heinäkuu 2020      | 10.0.13      |   SST-raportti |
-|      Meksiko         |   2020. syyskuuta      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   CFDI URL -rakenne, joka perustuu Anexo 20 -asiakirjaan |
-|      Norja          |   Toukokuun 2020.   | 10.0.12     |   SAF-T-raportin uudelleensuunnittelu: alkusaldojen käyttötapahtumatyyppi ja verotiedot verokoodin valuuttana rahoituksessa (versio 10) |
-|      Norja          |   Toukokuun 2020.   | 10.0.12     |   SAF-T-raporttivalintaikkunamuutos: antaa mahdollisuuden valita yhteyshenkilö eri yrityksissä |
-|      Norja          |   Toukokuun 2020.   | 10.0.12     |   SAF-T:n nimi-tila-ilmoitukset kullakin rivillä vain otsikon asemesta |
-|      Oman         |   Heinäkuu 2020      | 10.0.12H      |   Käänteinen veloitus |
+|      Meksiko         |   2020. syyskuuta      | 10.0.13HF      |   CFDI URL -rakenne, joka perustuu Anexo 20 -asiakirjaan |
+|      Alankomaat         |   2020. lokakuuta      | 10.0.16     |   Intrastat-muoto päivitetään alkaen 2021 |
+|      Norja         |   Elokuu 2020      | 10.0.14     |   SAF-T - Tosite-arvon mukasen ryhmittelytason tapahtumat on raportoitava Tapahtuma-elementtitasolla Kirjauskansio-tason sijaan |
 |      Puola          |   2020. syyskuuta     | 10.0.14     |   Puola: JPK-V7M (VDEK), Excel-muoto - korvaa SSRS-raportin  |
-|      Puola          |   Toukokuun 2020.     | 10.0.11     |   Jaa AP/AR toteutunut kurssierotussumma laskun nettoarvon ja ALV-määrän kurssierotuksena  |
-|      Puola          |   Toukokuun 2020.     | 10.0.11     |   SAF kirjanpitokirjat - Kerrosten suodatusparannusten lähettäminen |
-|      Puola          |   Maaliskuun 2020.     | 10.0.11     |   JPK_VDEK täydennetty pakkaus I |
-|      Puola          |   Toukokuun 2020.     | 10.0.12     |   JPK_VDEK täydennetty pakkaus II |
-|      Puola          |   Maaliskuun 2020.     | 10.0.11     |   Ennakkolaskun sisältävä myyntitilauksen osittainen hyvityslasku |
-|      Puola          |   Heinäkuu 2020     | 10.0.13     |   Pakollisen jaetun maksun parannukset |
-|      Qatar         |   Heinäkuu 2020      | 10.0.12H      |   Käänteinen veloitus |
+|      Puola          |   Heinäkuu 2020     | 10.0.15, 10.0.14HF, 10.0.13     |   Vapaaehtoisen jaetun maksun parannukset |
+|      Puola          |   2020. lokakuuta     | 10.0.13HF     |   Pakollisen jaetun maksun parannukset |
+|      Puola          |   marraskuu 2020     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) - Myyntiasiakirjan tyyppi FP ja RO vähittäismyyntitapahtumia varten |
+|      Puola          |   2020. syyskuuta     | 10.0.15     |   Puola: JPK-V7M (VDEK) - poista lukitus mahdollisuudesta suorittaa raportin luominen osien mukaan |
+|      Puola          |   2020. lokakuuta     | 10.0.16     |   JPK-V7M (VDEK) -raportti - Vapaaehtoinen jaettu maksu -parametrin käyttö |
 |      Venäjä          |   Elokuu 2020     | 10.0.14    |   Kirjanpidon raportoinnin muoto muuttuu vuodesta 2020 alkaen  |
 |      Venäjä          |   Heinäkuu 2020     | 10.0.13    |   Poistojen laskenta hankintakustannuksen perusteella ja merkittävät korjaukset käytettäessä poistobonusta verokirjanpidossa  |
+|      Venäjä          |   marraskuu 2020     | 10.0.16    |   ALV-ilmoituksen muoto päivitetään versioon 5.07 alkaen vuoden 2020 neljännen neljännesvuoden raportoinnista|
 
 
 
