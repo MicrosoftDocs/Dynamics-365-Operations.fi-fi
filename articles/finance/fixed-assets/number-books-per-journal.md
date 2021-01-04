@@ -1,0 +1,49 @@
+---
+title: Kirjojen määrä kirjauskansiota kohti
+description: Tässä ohjeaiheessa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta. Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän.
+author: moaamer
+manager: Ann Beebe
+ms.date: 11/19/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
+ms.custom: 4464
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
+ms.search.region: Global
+ms.author: moaamer
+ms.search.validFrom: 2020-11-19
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
+ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4650658"
+---
+# <a name="number-of-books-per-journal"></a><span data-ttu-id="17aff-104">Kirjojen määrä kirjauskansiota kohti</span><span class="sxs-lookup"><span data-stu-id="17aff-104">Number of books per journal</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="17aff-105">Tässä ohjeaiheessa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta.</span><span class="sxs-lookup"><span data-stu-id="17aff-105">This topic describes the relationship between journals and asset books when you create a fixed asset acquisition or depreciation proposal through a batch job.</span></span> <span data-ttu-id="17aff-106">Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän käyttämällä **Kirjojen määrä kirjauskansion mukaan** -osan **Yleistiedot**-välilehden **Käyttöomaisuusparametrit**-sivun kenttiä (**Käyttöomaisuus \> Asetukset \> Käyttöomaisuusparametrit**).</span><span class="sxs-lookup"><span data-stu-id="17aff-106">You can define the maximum number of books that are included for each acquisition and for depreciation by using the fields in the **Number of books per journal** section on the **General** tab of the **Fixed assets parameters** page (**Fixed assets \> Setup \> Fixed assets parameters**).</span></span> <span data-ttu-id="17aff-107">Näiden kenttien avulla voit jakaa käyttöomaisuuskirjojen määrän hankintakirjauskansiota ja poistokirjauskansiota kohden.</span><span class="sxs-lookup"><span data-stu-id="17aff-107">These fields let you distribute the number of asset books per acquisition journal and depreciation journal.</span></span>
+
+<span data-ttu-id="17aff-108">Hankintaehdotuksen oletusarvo on vähintään 10 000 kirjaa.</span><span class="sxs-lookup"><span data-stu-id="17aff-108">For an acquisition proposal, the default value is at least 10,000 books.</span></span> <span data-ttu-id="17aff-109">Poistoehdotuksen oletusarvo on vähintään 2 000 kirjaa.</span><span class="sxs-lookup"><span data-stu-id="17aff-109">For a depreciation proposal, the default value is at least 2,000 books.</span></span>
+
+<span data-ttu-id="17aff-110">Jos käyttöomaisuuseriä on esimerkiksi 4 000, kuhunkin erään liitetään kaksi kirjaa. Yksi kirja kirjataan nykyiselle tasolle ja toinen verotasolle.</span><span class="sxs-lookup"><span data-stu-id="17aff-110">For example, if there are 4,000 fixed assets, and two books are associated with each asset, one book will be posted to the current layer, and the other book will be posted to the tax layer.</span></span> <span data-ttu-id="17aff-111">Jos hankit 4 000 käyttöomaisuuserää eräkäsittelyn avulla, erätyö, joka luo yhden käyttöomaisuuserän hankintakirjauskansion, sisältää 4 000 käyttöomaisuuskirjaa.</span><span class="sxs-lookup"><span data-stu-id="17aff-111">If you acquire 4,000 fixed assets through batch processing, the batch job that creates one fixed asset acquisition journal will contain 4,000 asset books.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="17aff-112">Luotua kirjauskansiota käytetään edelleen, kunnes erätyö on päättynyt.</span><span class="sxs-lookup"><span data-stu-id="17aff-112">The journal that is created will continue to be used until the batch job is completed.</span></span>
+>
+> <span data-ttu-id="17aff-113">Johdetut kirjat eivät sisälly kirjauskansion kirjauskansiokohtaiseen enimmäismäärään.</span><span class="sxs-lookup"><span data-stu-id="17aff-113">The derived books aren't included in the maximum number of books per journal.</span></span>
+
+<span data-ttu-id="17aff-114">Eräkäsittelyn avulla voidaan suorittaa poistot samasta hankittujen käyttöomaisuuserien joukosta.</span><span class="sxs-lookup"><span data-stu-id="17aff-114">You can use  batch processing to run depreciation for the same set of acquired assets.</span></span> <span data-ttu-id="17aff-115">Erätyö luo esimerkiksi kaksi poistokirjauskansiota, joista jokainen sisältää 2 000 käyttöomaisuuskirjaa.</span><span class="sxs-lookup"><span data-stu-id="17aff-115">For example, a batch job creates two depreciation journals, each of which consists of 2,000 asset books.</span></span> <span data-ttu-id="17aff-116">Ensimmäinen kirjauskansio sisältää kirjoja, jotka on liitetty käyttöomaisuuseriksi, joiden numero on 1-2 000.</span><span class="sxs-lookup"><span data-stu-id="17aff-116">The first journal will contain books that are associated with the fixed assets that are numbered 1 through 2,000.</span></span> <span data-ttu-id="17aff-117">Toinen kirjauskansio sisältää kirjoja, jotka on liitetty käyttöomaisuuseriksi, joiden numero on 2 001–4 000.</span><span class="sxs-lookup"><span data-stu-id="17aff-117">The second journal will then contain books that are associated with the fixed assets that are numbered 2,001 through 4,000.</span></span>
+
+<span data-ttu-id="17aff-118">Eräkäsittelytyö sulkee pois suljetut kirjat.</span><span class="sxs-lookup"><span data-stu-id="17aff-118">The batch processing job excludes closed books.</span></span> <span data-ttu-id="17aff-119">Esimerkiksi poistojen eräajossa 10 ensimmäistä kirjaa 2 000 kirjasta on suljettu.</span><span class="sxs-lookup"><span data-stu-id="17aff-119">For example, in a batch job for depreciation, 10 of the first 2,000 books are closed.</span></span> <span data-ttu-id="17aff-120">Tässä tapauksessa ensimmäinen kirjauskansio sisältää kirjoja, jotka on liitetty käyttöomaisuuseriksi, joiden numero on 1-2 011.</span><span class="sxs-lookup"><span data-stu-id="17aff-120">In this case, the first journal will contain books that are associated with the fixed assets that are numbered 1 through 2,011.</span></span> <span data-ttu-id="17aff-121">Toinen kirjauskansio sisältää kirjoja, jotka on liitetty käyttöomaisuuseriksi, joiden numero on 2 012–4 000.</span><span class="sxs-lookup"><span data-stu-id="17aff-121">The second journal will then contain books that are associated with the fixed assets that are numbered 2,012 through 4,000.</span></span>
+
+<span data-ttu-id="17aff-122">Kirjojen määrää rajoitetaan, jos samassa kirjauskansiossa ei ole päällekkäisiä käyttöomaisuuerien tunnuksia.</span><span class="sxs-lookup"><span data-stu-id="17aff-122">The limit on the number of books is applied if duplicate asset IDs don't exist in the same journal.</span></span> <span data-ttu-id="17aff-123">Jos käyttöomaisuuserän tunnus on kuitenkin sama kuin kirjan tunnus, kirjauskansion kirjojen määrä voidaan ylittää, jotta käyttöomaisuustunnus säilyy samassa kirjauskansiossa.</span><span class="sxs-lookup"><span data-stu-id="17aff-123">However, if the asset ID is the same as the book ID, the number of books per journal can be exceeded to keep the asset ID in the same journal.</span></span>
+
+<span data-ttu-id="17aff-124">Jos esimerkiksi käyttöomaisuustunnuksia on 5 001, kuhunkin käyttöomaisuustunnukseen liitetään kolme kirjaa ja kukin käyttöomaisuuskirja kirjataan samalle kirjaustasolle.</span><span class="sxs-lookup"><span data-stu-id="17aff-124">For example, there are 5,001 fixed asset IDs, three books are associated with each fixed asset ID, and each asset book is posted to the same posting layer.</span></span> <span data-ttu-id="17aff-125">Poisto suoritetaan kolmen peräkkäisen kuukauden ajan ilman yhteenvetoa.</span><span class="sxs-lookup"><span data-stu-id="17aff-125">You run depreciation for three consecutive months, without summarization.</span></span> <span data-ttu-id="17aff-126">Poistokirjauskansio luodaan erätyönä, ja järjestelmä luo seitsemän kirjauskansiota, joissa on 667 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden.</span><span class="sxs-lookup"><span data-stu-id="17aff-126">The depreciation journal will be created through a batch job, and the system will create seven journals that have 667 fixed asset IDs and three books for each fixed asset ID.</span></span> <span data-ttu-id="17aff-127">Tuloksena on 2 001 kirjaa.</span><span class="sxs-lookup"><span data-stu-id="17aff-127">The result will be 2,001 books.</span></span> <span data-ttu-id="17aff-128">Tämän vuoksi kolmen kuukauden aikana on 6 003 kirjauskansioriviä ylläpitävät samoja käyttöomaisuustunnuksia samassa kirjauskansiossa.</span><span class="sxs-lookup"><span data-stu-id="17aff-128">Therefore, in three months, there will be 6,003 journal lines to maintain the same asset IDs in the same journal.</span></span> <span data-ttu-id="17aff-129">Järjestelmä luo myös yhden kirjauskansion, jossa on 332 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden.</span><span class="sxs-lookup"><span data-stu-id="17aff-129">The system will also create one journal that has 332 fixed asset IDs and three books for each fixed asset ID.</span></span> <span data-ttu-id="17aff-130">Kolmessa kuukaudessa saadaan 2 988 riviä.</span><span class="sxs-lookup"><span data-stu-id="17aff-130">In three months, there will be 2,988 lines.</span></span>

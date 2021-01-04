@@ -1,0 +1,98 @@
+---
+title: Resurssin vuokrauksen aloitussivu
+description: Tässä ohjeaiheessa on yleiskatsaus resurssin vuokrauksen dokumentaatiosta ja linkit tiettyihin ohjeaiheisiin.
+author: moaamer
+manager: Ann Beebe
+ms.date: 10/27/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
+ms.custom: 4464
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
+ms.search.region: Global
+ms.author: moaamer
+ms.search.validFrom: 2020-10-27
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
+ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "4442985"
+---
+# <a name="asset-leasing-home-page"></a><span data-ttu-id="f0817-103">Resurssin vuokrauksen aloitussivu</span><span class="sxs-lookup"><span data-stu-id="f0817-103">Asset leasing home page</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="f0817-104">Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen ohjeaiheet ja linkit tiettyihin ohjeaiheisiin.</span><span class="sxs-lookup"><span data-stu-id="f0817-104">This topic lists the help topics that are available for Asset leasing, and includes links to specific topics.</span></span> 
+
+<span data-ttu-id="f0817-105">Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Dynamics 365 Financessa.</span><span class="sxs-lookup"><span data-stu-id="f0817-105">Asset leasing is an advanced capability for managing, tracking, and automating financial transactions for leased assets in Microsoft Dynamics 365 Finance.</span></span> <span data-ttu-id="f0817-106">Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842).</span><span class="sxs-lookup"><span data-stu-id="f0817-106">Asset leasing complies with International accounting standards (IFRS 16) and US GAAP standards (ASC 842).</span></span> <span data-ttu-id="f0817-107">Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen.</span><span class="sxs-lookup"><span data-stu-id="f0817-107">Asset leasing captures and processes information about the leases and helps generate journal entries throughout the lifecycle of the lease, from initial recognition, monthly journal entries, to impairment and termination of the lease.</span></span>  
+
+## <a name="asset-leasing-topics"></a><span data-ttu-id="f0817-108">Resurssin vuokrauksen ohjeaiheet</span><span class="sxs-lookup"><span data-stu-id="f0817-108">Asset leasing topics</span></span>
+<span data-ttu-id="f0817-109">Seuraava ohjeaihe auttaa resurssin vuokrauksen määrittämisessä ja käyttämisessä.</span><span class="sxs-lookup"><span data-stu-id="f0817-109">The following topic is available to help configure and use Asset leasing.</span></span> 
+
+ - <span data-ttu-id="f0817-110">[Resurssin vuokrauksen aloittaminen](asset-leasing-quick-start.md) – Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen yleisiä ominaisuuksia. Se sisältää myös ohjelmiston ja dokumentaation termit ja kertoo niistä.</span><span class="sxs-lookup"><span data-stu-id="f0817-110">[Asset leasing get started](asset-leasing-quick-start.md) - This topic describes the general capabilities of Asset leasing, and lists and defines the terms used in the software and in the documentation.</span></span>
+ 
+ ### <a name="set-up-asset-leasing"></a><span data-ttu-id="f0817-111">Resurssin vuokrauksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-111">Set up Asset leasing</span></span>
+ <span data-ttu-id="f0817-112">Tämän ohjeaiheiden ryhmän avulla voit määrittää resurssin vuokrauksen tavalla, joka on optimaalinen organisaation liiketoimintatilanteen kannalta.</span><span class="sxs-lookup"><span data-stu-id="f0817-112">This group of topics can help you configure Asset leasing in a manner that's optimal for your organizations' business situation.</span></span>  
+  
+  - [<span data-ttu-id="f0817-113">Vuokrasopimuksen parametrien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-113">Configure lease parameters</span></span>](config-lease-parameters.md) 
+  - [<span data-ttu-id="f0817-114">Vuokrasopimuskirjan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-114">Set up lease books</span></span>](set-up-lease-books.md)
+  - [<span data-ttu-id="f0817-115">Vuokraryhmän luominen</span><span class="sxs-lookup"><span data-stu-id="f0817-115">Create a lease group</span></span>](create-lease-group.md)
+  - [<span data-ttu-id="f0817-116">Indeksin hintojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-116">Set up index rates</span></span>](set-up-index-rate-types.md)
+  - [<span data-ttu-id="f0817-117">Kulutyyppien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-117">Set up expense types</span></span>](set-up-expense-types.md)
+  - [<span data-ttu-id="f0817-118">Vuokrakirjauskansioiden nimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-118">Set up lease journal names</span></span>](set-up-lease-journal-names.md)
+  - [<span data-ttu-id="f0817-119">Vuokrauksen kirjaustilien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-119">Set up lease posting accounts</span></span>](set-up-lease-posting-accts.md)
+  - [<span data-ttu-id="f0817-120">Numerosarjojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-120">Assign number sequences</span></span>](leasing-number-sequences.md)
+  - [<span data-ttu-id="f0817-121">Määritä käyttäjärooleja</span><span class="sxs-lookup"><span data-stu-id="f0817-121">Assign user roles</span></span>](lease-user-roles.md)
+
+### <a name="manage-asset-leases"></a><span data-ttu-id="f0817-122">Käyttöomaisuuden vuokrasopimusten hallinta</span><span class="sxs-lookup"><span data-stu-id="f0817-122">Manage asset leases</span></span>
+<span data-ttu-id="f0817-123">Tämä ohjeaiheen ryhmä kuvaa vuokrasopimusten lisäämisen, maksujen luomisen, vuokrasopimusten muokkaamisen, vuokrasopimuksen tietojen tuomisen ja käyttöoikeusomaisuuserän arvonalenemisen.</span><span class="sxs-lookup"><span data-stu-id="f0817-123">This group of topics describes the process for adding leases, creating payment invoices, adjusting leases, importing lease information, and impairing a right-of-use asset.</span></span> 
+
+ - [<span data-ttu-id="f0817-124">Vuokrasopimuksen lisääminen tai kopioiminen</span><span class="sxs-lookup"><span data-stu-id="f0817-124">Add or copy a lease</span></span>](add-lease.md)
+ - [<span data-ttu-id="f0817-125">Maksulaskun luominen</span><span class="sxs-lookup"><span data-stu-id="f0817-125">Create a payment invoice</span></span>](create-payment-invoice.md)
+ - [<span data-ttu-id="f0817-126">Käyttöoikeusomaisuuserän poiston tallentaminen</span><span class="sxs-lookup"><span data-stu-id="f0817-126">Record right-of-use asset depreciation</span></span>](record-rou-asset-depreciation.md)
+ - [<span data-ttu-id="f0817-127">Kirjattujen vuokratapahtumien palauttaminen</span><span class="sxs-lookup"><span data-stu-id="f0817-127">Reverse posted lease transactions</span></span>](reverse-posted-lease-trans.md)
+ - [<span data-ttu-id="f0817-128">Vuokrauksen muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="f0817-128">Adjust a lease</span></span>](adjust-lease.md)
+ - [<span data-ttu-id="f0817-129">Käyttöoikeusomaisuuserän arvon alentaminen</span><span class="sxs-lookup"><span data-stu-id="f0817-129">Impair a right-of use asset</span></span>](impair-rou-asset.md)
+ - [<span data-ttu-id="f0817-130">Kirjattujen vuokratapahtumien palauttaminen</span><span class="sxs-lookup"><span data-stu-id="f0817-130">Reverse posted lease transactions</span></span>](reverse-posted-lease-trans.md)
+ - [<span data-ttu-id="f0817-131">Käyttöoikeusomaisuuserän arvon alentaminen</span><span class="sxs-lookup"><span data-stu-id="f0817-131">Impair a right-of-use asset</span></span>](impair-rou-asset.md)
+ - [<span data-ttu-id="f0817-132">Vuokrauksen yhdistäminen käyttöomaisuuserään</span><span class="sxs-lookup"><span data-stu-id="f0817-132">Associate a lease with a fixed asset</span></span>](associate-lease-with-fixed-asset.md)
+ - [<span data-ttu-id="f0817-133">Vuokrausten tallentaminen ulkomaan valuuttana</span><span class="sxs-lookup"><span data-stu-id="f0817-133">Record leases in foreign currencies</span></span>](record-leases-foreign-currency.md)
+ - [<span data-ttu-id="f0817-134">Indeksikorkoon sidottujen vuokrauksen maksujen uudelleenarvostus</span><span class="sxs-lookup"><span data-stu-id="f0817-134">Revalue lease payments tied to an index rate</span></span>](revalue-payments-tied-2-index-rate.md)
+ - [<span data-ttu-id="f0817-135">Lyhytaikaisen vuokrasopimusvelan osan uudelleenluokitteleminen</span><span class="sxs-lookup"><span data-stu-id="f0817-135">Reclassify short-term portion of lease liability</span></span>](reclassify-st-lease-liability.md)
+ - [<span data-ttu-id="f0817-136">Velka-, resurssi- ja kulutapahtumien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="f0817-136">View liability, asset, and expense transactions</span></span>](view-asset-transactions.md)
+ - [<span data-ttu-id="f0817-137">Yhdistämisvälin toiminto</span><span class="sxs-lookup"><span data-stu-id="f0817-137">Compound interval functionality</span></span>](compound-interval-functionality.md)
+ - [<span data-ttu-id="f0817-138">Kuukausittaisten kirjauskansiovientien vahvistaminen erätoimintona</span><span class="sxs-lookup"><span data-stu-id="f0817-138">Confirm monthly journal entries in a batch</span></span>](confirm-payment-schedules-in-batch.md)
+ - [<span data-ttu-id="f0817-139">Kuukausittaisten kirjauskansiovientien luominen erätoimintona</span><span class="sxs-lookup"><span data-stu-id="f0817-139">Create monthly journal entries in a batch</span></span>](create-monthly-journals-batch.md)
+ - [<span data-ttu-id="f0817-140">Kaksoisraportointi</span><span class="sxs-lookup"><span data-stu-id="f0817-140">Dual reporting</span></span>](dual-reporting.md)
+ - [<span data-ttu-id="f0817-141">Vuokrauksen työnkulun määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-141">Set up a lease workflow</span></span>](set-up-lease-wrkflw.md)
+ - [<span data-ttu-id="f0817-142">Vuokrauksen hyväksyntätyönkulkujen käyttäminen</span><span class="sxs-lookup"><span data-stu-id="f0817-142">Use lease approval workflows</span></span>](use-create-lease-wrkflw.md)
+ - [<span data-ttu-id="f0817-143">Vuokrauksen hallinta vuokrauksen tuonnin kehyksen kautta</span><span class="sxs-lookup"><span data-stu-id="f0817-143">Manage lease through the Lease import framework</span></span>](manage-leases-thru-imprt-framewrk.md)
+ 
+### <a name="asset-leasing-reporting"></a><span data-ttu-id="f0817-144">Resurssin vuokrauksen raportoiminen</span><span class="sxs-lookup"><span data-stu-id="f0817-144">Asset leasing reporting</span></span>
+<span data-ttu-id="f0817-145">Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen käytettävissä olevat raportit.</span><span class="sxs-lookup"><span data-stu-id="f0817-145">This topic describes the reports that are available for asset leases.</span></span> 
+
+ - [<span data-ttu-id="f0817-146">Resurssin vuokrauksen raportit</span><span class="sxs-lookup"><span data-stu-id="f0817-146">Asset leasing reports</span></span>](asset-leasing-rprts.md)
+ 
+
+## <a name="additional-resources"></a><span data-ttu-id="f0817-147">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="f0817-147">Additional resources</span></span>
+
+### <a name="whats-new-and-in-development"></a><span data-ttu-id="f0817-148">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="f0817-148">What's new and in development</span></span>
+
+<span data-ttu-id="f0817-149">Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="f0817-149">Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned.</span></span> 
+
+### <a name="blogs"></a><span data-ttu-id="f0817-150">Blogit</span><span class="sxs-lookup"><span data-stu-id="f0817-150">Blogs</span></span>
+
+<span data-ttu-id="f0817-151">[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on paljon ajatuksia, uutisia ja muita tietoja.</span><span class="sxs-lookup"><span data-stu-id="f0817-151">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+
+<span data-ttu-id="f0817-152">[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365:n uutuuksista ja suosituista aiheista.</span><span class="sxs-lookup"><span data-stu-id="f0817-152">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
+
+### <a name="videos"></a><span data-ttu-id="f0817-153">Videot</span><span class="sxs-lookup"><span data-stu-id="f0817-153">Videos</span></span>
+
+<span data-ttu-id="f0817-154">Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.</span><span class="sxs-lookup"><span data-stu-id="f0817-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span> 
