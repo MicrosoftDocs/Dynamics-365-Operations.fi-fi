@@ -3,7 +3,7 @@ title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uudella ruudukkotoiminnolla on oltava käyttöoikeus näihin ominaisuuksiin.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835083"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693771"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Uusi ruudukon ohjausobjekti tarjoaa useita hyödyllisiä ja tehokkaita ominaisuuksia, joilla voidaan parantaa käyttäjien tuottavuutta, kehittää mielenkiintoisempia näkymiä tiedoillesi ja hankkia merkityksellisiä tietoja datastasi. Tämä artikkeli käsittelee seuraavia ominaisuuksia: 
 
@@ -95,21 +95,23 @@ Tuottavuutta tehostaakseen käyttäjät voivat antaa matemaattisia kaavoja ruudu
 Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsuuruusmerkillä (**=**). Lisätietoja tuetuista operaattoreista ja syntaksista on kohdassa [Tuetut matemaattiset symbolit](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Taulukkomuotoisten tietojen ryhmittely
-[!include [preview banner](../includes/preview-banner.md)]
+Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **Ryhmittely ruudukoissa** -toiminto, joka on yleisesti saatavilla versiossa 10.0.16/Alustapäivitys 40 ja riippuvainen uudesta ruudukonhallintaominaisuudesta, käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla Finance and Operations -sovelluksissa. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
 
-Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **(Esiversio) Ryhmittely ruudukoissa** -toimintoa (joka on erillinen uuden ruudukon ohjausominaisuus), käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla Finance and Operations -sovelluksia käyttäen. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
-
-Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella saraketta, jota haluat käyttää ryhmittelyperusteena ja valitse **Ryhmittele tämän sarakkeen perusteella**. Tämä toiminto lajittelee tiedot valitun sarakkeen mukaan, lisää uuden **ryhmittelyperustesarakkeen** ruudukon alkuun ja lisää otsikkorivit kunkin ryhmän alkuun. Nämä otsikkorivit sisältävät seuraavat tiedot kustakin ryhmästä: 
+Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella saraketta, jota haluat käyttää ryhmittelyperusteena ja valitse **Ryhmittele tämän sarakkeen perusteella**. Tämä toiminto lajittelee tiedot valitun sarakkeen mukaan, lisää uuden **Ryhmittelyperuste**-sarakkeen ruudukon alkuun ja lisää otsikkorivit kunkin ryhmän alkuun. Nämä otsikkorivit sisältävät seuraavat tiedot kustakin ryhmästä: 
 -  Ryhmän tietojen arvo 
--  Sarakkeen nimi (nämä tiedot ovat erityisen hyödyllisiä silloin, kun tuetaan useita ryhmittelytasoja).  
+-  Sarakkeen nimi (nämä tiedot ovat erityisen hyödyllisiä silloin, kun käytössä on useita ryhmittelytasoja)  
 -  Tämän ryhmän tietorivien määrä
 -  Kaikkien summattavaksi määritettyjen sarakkeiden välisummat
 
 Kun [Tallennetut näkymät](saved-views.md) ovat käytössä, tämä ryhmittely voidaan tallentaa mukautuksen mukaan osana nopean käytön näkymää seuraavaa sivuvierailua varten.  
 
-Jos valitset **Ryhmittele tämän sarakkeen perusteella** jossakin muussa sarakkeessa, alkuperäinen ryhmittely korvataan, koska versiossa 10.0.9 ja Platform updatessa 33 tuetaan vain yhtä ryhmittelytasoa.
+### <a name="multiple-levels-of-grouping"></a>Useita ryhmittelytasoja
+Kun olet ryhmitellyt tiedot yhden sarakkeen mukaan, voit ryhmitellä tiedot eri sarakkeen mukaan valitsemalla **Ryhmittele tämän sarakkeen mukaan** halutussa sarakkeessa. Tämä prosessi voidaan toistaa, kunnes ryhmittelyssä on viisi sisäkkäistä tasoa, mikä on suurin tuettu syvyys. Tässä vaiheessa et voi enää ryhmitellä lisäsarakkeiden mukaan.  
 
-Voit kumota ruudukon ryhmittelyn napsauttamalla ryhmittelysaraketta hiiren kakkospainikkeella ja valitsemalla **Pura ryhmittely**.  
+Voit milloin tahansa poistaa ryhmittelyn mistä tahansa sarakkeesta napsauttamalla saraketta hiiren kakkospainikkeella ja valitsemalla **Pura ryhmittely**. Voit myös poistaa ryhmittelyn kaikista sarakkeista valitsemalla **Ruudukon asetukset** ja sitten **Pura kaikki ryhmittelyt**.   
+
+Huomautus, ennen versiota 10.0.16/Alustapäivitys 40 tuetaan vain yhtä ryhmittelytasoa. Jos tiedot on ryhmitelty näissä versioissa ja valitset **Ryhmittele tämän sarakkeen mukaan** -ryhmityksen eri saraketta varten, alkuperäinen ryhmittely korvataan.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Ryhmien laajentaminen ja kutistaminen
 Tietojen alkuperäisessä ryhmittelyssä ryhmät ovat laajennettuina. Voit luoda tiedoista yhteenvetonäkymiä kutistamalla yksittäisiä ryhmiä. Vaihtoehtoisesti voit käyttää ryhmän laajentamista ja kutistamista, jos haluat auttaa tiedoissa siirtymisessä. Jos haluat laajentaa tai kutistaa ryhmän, valitse vastaavan ryhmän otsikkorivin kaksoisnuolikuvakkeen (>) painike. Huomaa, että eri ryhmien laajennus- tai kutistustilaa **ei** tallenneta mukautuksessa.
@@ -146,14 +148,14 @@ Uuden ruudukon rivinvalintasarake ja rivitilasarake ovat kiinnitettynä tai luki
 
 Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on käytössä.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Yksittäisten sivujen poistaminen uuden ruudukon avulla 
 Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, versiosta 10.0.13 / Platform updatesta 37 alkaen ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
 
  ```this.forceLegacyGrid();```
 
 Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Jos jokin ongelma edellyttää tämän ohjelmointirajapinnan käyttöä, ilmoita siitä Microsoftille.
 
-## <a name="developer-size-to-available-width-columns"></a>[Kehittäjä] Size-to-available-width -sarakkeet
+## <a name="developer-size-to-available-width-columns"></a>[Kehittäjä] Koko-käytettävissä-olevan-leveyden-mukaan-sarakkeet
 Jos sovellu kehittäjä määrittää **widthmode**-ominaisuuden arvoksi **SizeToAvailable** uudessa ruudukossa oleville sarakkeille, näillä sarakkeilla on aluksi sama leveys kuin niillä olisi, jos ominaisuuden arvona olisi **SizeToContent**. Ne kuitenkin venyvät käyttämään kaiken ruudukon sisällä olevan leveyden. Jos useiden sarakkeiden ominaisuuden arvoksi on määritetty **SizeToAvailable**, kyseiset sarakkeet jakavat ruudukossa käytettävissä olevan tilan. Jos käyttäjä kuitenkin muuttaa jonkin tällaisen sarakkeen kokoa manuaalisesti, sarake muuttuu staattiseksi. Se pysyy samanlevyisenä eikä enää laajene käyttämään ruudukossa olevaa ylimäärästä leveyttä.  
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
@@ -165,29 +167,46 @@ Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuis
     -  Sivulla on ryhmitelty korttiluettelo.
     -  Ruudukkosarake, jolla on ei-reaktiivinen laajennettava ohjausobjekti.
 
-    Kun käyttäjä havaitsee jonkin näistä tilanteista, näyttöön tulee sivun päivityksestä kertova sanoma. Kun tämä sanoma tulee näyttöön, sivu jatkaa aiemmin luodun ruudukon käyttämistä kaikille käyttäjille seuraavaan tuoteversiopäivitykseen asti. Näiden skenaarioiden parempi käsittely ja uuden ruudukon käyttäminen otetaan huomioon seuraavassa päivityksessä.     
+    Kun käyttäjä havaitsee jonkin näistä tilanteista, näyttöön tulee sivun päivityksestä kertova sanoma. Kun tämä sanoma tulee näyttöön, sivu jatkaa aiemmin luodun ruudukon käyttämistä kaikille käyttäjille seuraavaan tuoteversiopäivitykseen asti. Näiden skenaarioiden parempi käsittely ja uuden ruudukon käyttäminen otetaan huomioon seuraavassa päivityksessä.    
+    
+-  [KB 4582758] Tietueet ovat epätarkkoja, kun zoomausta muutetaan arvosta 100 mihin tahansa muuhun prosenttiarvoon
+    
+### <a name="fixed-as-part-of-10015"></a>Määrätty osana versiota 10.0.15    
+
+-  [KB 4582723] Näyttöasetukset eivät näy, kun ne tehdään myöhemmin lomakkeen elinkaaren aikana
+
+### <a name="fixed-as-part-of-10014"></a>Määrätty osana versiota 10.0.14
+
+-  (Laatupäivitys) [KB 4584752] Odottamaton asiakasvirhe Projektin laskuehdotusten sivulla
 
 ### <a name="fixed-as-part-of-10013"></a>Määrätty osana versiota 10.0.13
 
+-  (Laatupäivitys) [KB 4583880] Regression Suite Automation Tool (RSAT)-testit eivät ole käytössä OpenLookup-toiminnossa "Ei voi lukea ominaisuutta RowIndex of undefined"
+-  (Laatupäivitys) [KB 4583847] Odottamaton asiakasvirhe selattaessa hakuja 
+-  (Laatupäivitys ) [Virhe 471777] Ruudukon kenttiä ei voi valita mobiilisovelluksen muokkaamista tai luomista varten
+-  [Virhe 474851] Viiteryhmän ohjausobjektien hyperlinkit eivät toimi 
+-  [Virhe 474848] Ruudukkojen laajennetut esikatselut eivät näy
+-  [KB 4582726] RotateSign-ominaisuutta ei noudateta  
 -  [Virhe 470173] Ei-aktiivisten rivien valintaruutuja vaihdetaan, kun solun tyhjää tilaa napsautetaan
 -  [Virhe 474848] Ruudukkojen laajennetut esikatselut eivät näy
 -  [Virhe 474851] Viiteryhmän ohjausobjektien hyperlinkit eivät toimi 
 -  [Virhe 471777] Ruudukon kenttiä ei voi valita mobiilisovelluksen muokkaamista tai luomista varten
 -  [KB 4569441] Ongelmia hahmonnettaessa useiden sarakkeiden korttiluetteloita, kuvien työkaluvihjeitä ja joidenkin kenttien näyttöasetuksia
 -  [KB 4575279] Kaikkia merkittyjä rivejä ei poisteta yleisestä kirjauskansiosta
--  [KB 4575233] Näyttöasetuksia ei ole palautettu toiseen riviin siirtämisen jälkeen
+-  [KB 4575233] Näyttöasetuksia ei ole palautettu toiseen riviin siirtymisen jälkeen
+-  [Bug 477884] Haut palauttavat väärän arvon/tietueen, jos uusi ruudukko-ohjausobjekti on aktivoitu
 -  [KB 4571095] Tuotteen vastaanoton kirjaus tapahtuu, kun Enter-painiketta painetaan vahingossa (sivun oletustoiminnon oikea käsittely)
--  [KB 4575437] Haut ja muokattavissa olevat ohjausobjektit, jotka suljetaan odottamatta
+-  [KB 4575437] Haut ja muokattavissa olevat ohjausobjektit sulkeutuvat odottamatta
 -  [KB 4569418] Kaksi samaa luotua riviä toimitusaikataululomakkeessa
 -  [KB 4575435] Parannettu esikatselu jatkuu joskus myös silloin, kun hiiren osoitin ei ole lähellä kenttää
 -  [KB 4575434] Haku ei suodatu, jos kenttää on muokattu
 -  [KB 4575430] Salasanakenttien arvoja ei peitetä ruudukossa
--  [KB 4569438] "Käsittely on pysäytetty vahvistusongelman vuoksi" näkyy merkittyjen rivien jälkeen, kun toimittajan tapahtumia selvitetään
+-  [KB 4569438] "Käsittely on pysäytetty oikeellisuustarkistusongelman vuoksi" näkyy rivien merkitsemisen jälkeen, kun toimittajan tapahtumia selvitetään
 -  [KB 4569434] Yritysten lomakkeen päivityksen tuloksena on vähemmän tietueita
 -  [KB 4575297] Kohdistus siirtyy tehtävien tallennustoiminnon ruutuun ruudukon muokkaamisen ja sarkaimella siirtymisen yhteydessä
 -  [KB 4566773] Korjaustapahtumat eivät näy negatiivisina tositetapahtumien kyselyssä 
 -  [KB 4575288] Kohdistus palautuu aktiiviseen riviin, kun yksinkertaisen luettelon rivien välinen reunus valitaan
--  [KB 4575287] Kohdistus ei palaa ensimmäiseen sarakkeeseen, kun käytetään alanuolta uuden rivin luomisessa kirjauskansioissa
+-  [KB 4575287] Kohdistus ei palaa ensimmäiseen sarakkeeseen, kun käytetään alanuolta uuden rivin luomiseen kirjauskansioissa
 -  [KB 4564819] Rivejä ei voi poistaa vapaatekstilaskussa (koska tietolähde ChangeGroupMode=ImplicitInnerOuter)
 -  [KB 4563317] Kuvien työkaluvihjeitä / parannettuja esikatseluita ei näytetä
 
@@ -200,14 +219,14 @@ Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuis
 - [KB 4558584] Negatiivisia lukuja ei hahmonneta oikein.
 - [KB 4560726] "Odottamaton asiakasvirhe" tapahtuu sen jälkeen, kun luetteloiden vaihto on suoritettu luettelonäkymä-ohjaimella.
 - [KB 4562141] Ruudukkoindeksit eivät ole käytössä, kun uusi tietue on lisätty.
-- [KB 4562151] **Vahvista**- ja **Kopioi**- tehtävän tallennusasetukset eivät ole käytettävissä päivämäärä- ja numero-ohjausobjekteissa. 
-- [KB 4562153] Monivalinta-valintaruudut eivät näy luettelo- tai korttiruudukoissa.
+- [KB 4562151] **Vahvista**- ja **Kopioi**- tehtäväntallentimen asetukset eivät ole käytettävissä päivämäärä/numero-ohjausobjekteissa. 
+- [KB 4562153] Monivalinta-valintaruudut eivät näy luettelo-/korttiruudukoissa.
 - [KB 4562646] Joskus et voi napsauttaa ruudukon ulkopuolella, kun olet valinnut useita rivejä ruudukossa.
-- [KB 4562647] Kohdistus palautetaan **Julkaise**-valintaikkunan ensimmäiseen ohjausobjektin tilaan, kun uusi rivi lisätään käyttöoikeusroolien ruudukkoon.
-- [KB 4563310] Parannettu esikatselu ei ole suljettu, kun rivi on vaihdettu.
+- [KB 4562647] Kohdistus palautetaan **Julkaise**-valintaikkunan ensimmäiseen ohjausobjektiin, kun uusi rivi lisätään käyttöoikeusroolien ruudukkoon.
+- [KB 4563310] Parannettua esikatselua ei ole suljeta, kun riviä on muutettu.
 - [KB 4563313] Odottamaton asiakasvirhe tapahtuu Internet Explorerissa, kun arvo valitaan haussa.
 - [KB 4564557] Haut ja avattavat valikot eivät avaudu Internet Explorerissa
-- [KB 4563324] Navigointi ei toimi, kun **henkilöstöhallinnon** työtila on avattu.
+- [KB 4563324] Navigointi ei toimi, kun **Henkilöstöhallinnon** työtila on avattu.
 
 ### <a name="fixed-as-part-of-10011"></a>Määrätty osana versiota 10.0.11
 
@@ -216,16 +235,16 @@ Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuis
 - [KB 4558374] Polymorfisen valitsimen valintaikkunaa edellyttäviä tietoja ei voi luoda.
 - [KB 4558375] Ohjeteksti ei näy uuden ruudukon sarakkeissa.
 - [KB 4558376] Luetteloruudun ruudukoita ei hahmonneta oikeassa korkeudessa Internet Explorerissa.
-- [KB 4558377] Yhdistelmäruudun sarakkeita, joiden käytettävissä olevaa leveyttä **SizeToAvailable** ei hahmonneta joillakin sivuilla.
+- [KB 4558377] Yhdistelmäruudun sarakkeita, joilla on **SizeToAvailable**-leveys ei hahmonneta joillakin sivuilla.
 - [KB 4558378] Porautuminen avaa joskus väärän tietueen.
-- [KB 4558379] Tapahtuu virhe, kun haut avataan, kun **ReplaceOnLookup**=**Ei**.
+- [KB 4558379] Tapahtuu virhe, kun haut avataan, kun **ReplaceOnLookup**=**No**.
 - [KB 4558380] Ruudukon käytettävissä oleva tila ei ole täytetty heti, kun osa sivusta on kutistettu.
 - [KB 4558381] Negatiiviset luvut eivät näy oikein/käyttäjät ovat joskus jumiutuneet oikeellisuustarkistusongelmien jälkeen.
 - [KB 4558382] Odottamattomia asiakasvirheitä ilmenee.
 - [KB 4558383] Ruudukon ulkopuoliset ohjausobjektit eivät päivity viimeisen tietueen poistamisen jälkeen.
 - [KB 4558587] Viiteryhmät, joissa on yhdistelmäruutuja korvaaville kentille, eivät näytä arvoja.
 - [KB 4562143] Kenttiä ei päivitetä, kun rivin muutos tai ruudukon käsittely jumiutuu rivin poiston jälkeen.
-- [KB 4562645] Poikkeus ilmenee, kun haku avataan, kun etäpalvelimen hallintatyökalut (RSAT)-testit ovat meneillään.
+- [KB 4562645] Poikkeus ilmenee, kun haku avataan, kun Regression Suite Automation Tool (RSAT) -testit ovat meneillään.
 
 ### <a name="fixed-as-part-of-10010"></a>Määrätty osana versiota 10.0.10
 

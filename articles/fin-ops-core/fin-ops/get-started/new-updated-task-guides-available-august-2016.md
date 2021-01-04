@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fb43be5e57758664c5e17e48db5b9c38630b2ded
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812529"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694986"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)
 
@@ -32,7 +31,7 @@ Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotk
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)
 
-(Elokuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Finance and Operations -aloitussivun uudet ja muuttuneet toiminnot](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
+(Elokuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet Finance and Operationsin kotisivulla](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
 
 ### <a name="data-access"></a>Tietoyhteys
 

@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248710"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695112"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -oppaan määrittäminen ja asentaminen
 Tämä opas auttaa RSAT-työkalun asennuksessa sekä RSAT-työkalun ja sen käyttöön liittyvien työkalujen käytön aloittamisessa. 
@@ -387,7 +386,7 @@ Todenteen käyttöönottaminen edellyttää, että varmenne luodaan ja asennetaa
 
     ![AOSService sivustoluettelossa](./media/setup_rsa_tool_49.png)
 
-3. Avaa **\<Asema\>: \\AosService\\WebRoot**-kansio valitsemalla hiiren kakkospainikkeella **Selaa**. Etsi **wif.config**-tiedosto.
+3. Napauta oikealla hiiren painikkeella **Selaa** avataksesi kansion **\<Drive\>: \\AosService\\WebRoot**. Etsi **wif.config**-tiedosto.
 
     ![Wif.config-tiedosto WebRoot-kansiossa](./media/setup_rsa_tool_50.png)
 
@@ -501,7 +500,7 @@ RSAT-työkalun vanhoissa versioissa oli asennettava Selenium ja selaimen ohjaime
     - **Käyttöoikeustunnus** – Anna käyttöoikeustunnus, jonka avulla työkalu voi muodostaa yhteyden Azure DevOpsiin. Käytä aiemmin tässä oppaassa luotua henkilökohtaista käyttöoikeustunnusta. Lisätietoja on kohdassa [Käytön todentaminen henkilökohtaisilla käyttöoikeustunnuksilla](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
     - **Projektin nimi** – valitse Azure DevOps -projektin nimi.
     - **Testisuunnitelma** – Valitse testitapaukset sisältävä Azure DevOps -testisuunnitelma. Lisätietoja on kohdassa [Testisuunnitelmien ja -sarjojen luominen](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). Kun olet valinnut testisuunnitelman, testaa Azure DevOps -yhteys valitsemalla **Testaa yhteyttä**.
-    - **Isäntänimi** – Anna testiympäristön isäntänimi, kuten **\<myaos\>.cloudax.dynamics.com**. Älä käytä **https://**- tai **http://**-etuliitettä.
+    - **Isäntänimi** – Syötä kokeiluympäristön isäntänimi, esimerkiksi **\<myaos\>.cloudax.dynamics.com**. Älä käytä **https://**- tai **http://**-etuliitettä.
     - **SOAP-isäntänimi** – Anna testiympäristön SOAP-isäntänimi. SOAP-isäntänimi on yleensä sama kuin isäntänimi, mutta siinä on **soap**-pääte. Esimerkki: **\<myaos\>soap.cloudax.dynamics.com**. Älä käytä **https://**- tai **http://**-etuliitettä.
 
         > [!NOTE]
@@ -563,7 +562,7 @@ RSAT-työkalun vanhoissa versioissa oli asennettava Selenium ja selaimen ohjaime
 
     ![Työpöydän tarkkuudeksi on määritetty 100 %](./media/setup_rsa_tool_68.png)
 
-6. Jos selainohjaimia ei ole asennettu järjestelmään, näyttöön avautuva varoitussanoma ilmoittaa, että toiminto edellyttää selaimen \<selaimen nimi\> ohjainta ja kysyy haluatko ladata ja asentaa sen nyt automaattisesti. Valitse **Kyllä**.
+6. Jos selainohjaimia ei ole asennettu järjestelmään, näyttöön avautuva varoitussanoma ilmoittaa, että toiminto edellyttää \<browser name\> -ohjainta. haluatko ladata ja asentaa sen nyt automaattisesti. Valitse **Kyllä**.
 
     ![Internet Explorerin varoitussanoma](./media/setup_rsa_tool_69.png)
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177624"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694686"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Organisaatiohierarkian suunnitteleminen
 
@@ -45,7 +44,7 @@ Kun suunnittelet hierarkiat, on myös tärkeää ottaa huomioon suhde organisaat
 
 Sinulla on oltava vähintään yksi yritys yrityksellesi. Yritys voi solmia lainmukaisia sopimuksia ja jolta edellytetään suorituskykyä kuvaavien raporttien laatimista.
 
-Yrityksiä voidaan käyttää tapahtumasidonnaiseen liiketoimintaan tai konsolidointia varten. Tämä tarkoittaa, että Finance and Operationsissa oleva yritys ei välttämättä vastaa todellista yksikköä yrityksessäsi. Esimerkiksi tapahtumiin osallistuva yritys voi omistaa tytäryhtiöitä. Tässä skenaariossa tapahtumat vaativat yrityksen ja tytäryhtiöiden saldojen ja tulosten konsolidointiin vaaditaan virtuaaliyritys.
+Yrityksiä voidaan käyttää tapahtumasidonnaiseen liiketoimintaan tai konsolidointia varten. Tämä tarkoittaa, että Finance and Operationsissa oleva yksikkö ei välttämättä vastaa todellista yksikköä yrityksessäsi. Esimerkiksi tapahtumiin osallistuva yritys voi omistaa tytäryhtiöitä. Tässä skenaariossa tapahtumat vaativat yrityksen ja tytäryhtiöiden saldojen ja tulosten konsolidointiin vaaditaan virtuaaliyritys.
 
 Liiketoimintasi sisäiset organisaatiot, kuten aluekohtaiset toimistot, voidaan kuvata lisäyrityksinä tai pääyrityksen toimintayksiköinä. Toimintayksikön ei tarvitse olla oikeudellisesti määritetty organisaatio. Toimintayksiköitä käytetään hallitsemaan liiketoiminnan taloudellisia resursseja ja operatiivisia prosesseja. Esimerkiksi osastot ja kustannuspaikat ovat toimintayksiköitä.
 

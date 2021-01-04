@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367335"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695136"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -49,7 +48,7 @@ Docs.microsoft.com -sivusto ([docs.microsoft.com/dynamics365/](https://docs.micr
 
 Docs.microsoft.com-sivuston sisältöä voi etsiä millä tahansa hakukoneella. Parhaat tulokset saa käyttämällä sivustohaku, kuten **site:docs.microsoft.com dynamics 365 "hakusana"**.
 
-### <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
 
 Saat kaikki docs.microsoft.com-sivuston sisällön päivitykset tilaamalla RSS (Really Simple Syndication) -syötteen. Tee tilaus avaamalla seuraava linkki:
 
@@ -68,7 +67,7 @@ Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 > [!NOTE]
 > Jos haluat lähettää palautetta dokumentaatiosta, käytä kirjautumiseen GitHub-tiliä. Lisätietoja on kohdassa [GitHub-profiilin määritys ja hallinta](https://help.github.com/github/setting-up-and-managing-your-github-profile).
 
-### <a name="contribute-to-the-documentation"></a>Dokumentaatioon osallistuminen
+## <a name="contribute-to-the-documentation"></a>Dokumentaatioon osallistuminen
 
 Voit osallistua dokumentaation tekemiseen ja muokkaukseen. Aloita valitsemalla aiheen **Muokkaa**-painike (kynäkuvake). Seuraavassa videossa osoitetaan, miten voit osallistua dokumentaation tekemiseen.
 
