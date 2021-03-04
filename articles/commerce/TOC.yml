@@ -94,12 +94,12 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.17 (huhtikuu 2021)
+                      href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (helmikuu 2021)
                       href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (tammikuu 2021)
                       href: get-started/whats-new-commerce-10-0-15.md
-                    - name: Commerce 10.0.14 (marraskuu 2020)
-                      href: get-started/whats-new-commerce-10-0-14.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
@@ -190,6 +190,44 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: Tietoja Lifecycle Services -palveluista
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+            - name: Käyttöönoton elinkaaren hallinta
+              items:
+                - name: Käyttöönoton elinkaaren hallinnan aloitussivu
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations -sovellusten arkkitehtuuri
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                - name: Käyttöönottoprojektiin tutustuminen
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Työympäristön suunnittelu
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Julkistamisen valmistelu
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Julkistamisen usein kysytyt kysymykset
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Palvelupyynnön lähettäminen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Tilausten, LCS-projektien ja Azure AD -vuokraajien usein kysytyt kysymykset'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Ympäristöjen siirtäminen palvelinkeskusten välillä
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Lisenssien siirtäminen sopimustyyppien välillä
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS-käyttöönottoprojektien siirtäminen eri Azure AD -vuokraajille
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: LCS-toteutusprojektien siirtäminen paikallisesta versiosta pilvipalveluun
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations Commerce -projektien toteuttaminen
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Uusien ympäristöjen, Azure DevOps -palvelun ja haarojen määrittäminen projekteille'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Commerce-projektien koodin ja ympäristöjen päivittäminen
+                  href: dev-itpro/updating-environments.md
+                - name: Testaus ja suorituskykyongelmat
+                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Arkkitehtuurin yleiskatsaus
           items:
             - name: Arkkitehtuuri
@@ -248,44 +286,6 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Alkutietojen alustaminen uusissa Commerce-ympäristöissä
                   href: enable-configure-retail-functionality.md
-            - name: Käyttöönoton elinkaaren hallinta
-              items:
-                - name: Käyttöönoton elinkaaren hallinnan aloitussivu
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations -sovellusten arkkitehtuuri
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Käyttöönottoprojektiin tutustuminen
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-                - name: Työympäristön suunnittelu
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Julkistamisen valmistelu
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Julkistamisen usein kysytyt kysymykset
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Palvelupyynnön lähettäminen
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Tilausten, LCS-projektien ja Azure AD -vuokraajien usein kysytyt kysymykset'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Ympäristöjen siirtäminen palvelinkeskusten välillä
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Lisenssien siirtäminen sopimustyyppien välillä
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: LCS-käyttöönottoprojektien siirtäminen eri Azure AD -vuokraajille
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: LCS-toteutusprojektien siirtäminen paikallisesta versiosta pilvipalveluun
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations Commerce -projektien toteuttaminen
-                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-                - name: 'Uusien ympäristöjen, Azure DevOps -palvelun ja haarojen määrittäminen Commerce-projekteille'
-                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-                - name: Commerce-projektien koodin ja ympäristöjen päivittäminen
-                  href: dev-itpro/updating-environments.md
-                - name: Testaus ja suorituskykyongelmat
-                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Kanaviesi määrittäminen
           items:
             - name: Kanavien yleiskatsaus
@@ -504,7 +504,9 @@
                       href: payment-methods.md
                     - name: Puhelinkeskusten maksutavat
                       href: work-with-payments.md
-                    - name: 'Luottokorttien määritys, varmennus ja tietojen tarkistus'
+                    - name: Palautusmaksujen käsittelyn palautus puhelinkeskuksissa
+                      href: call-center-refund-payments.md
+                    - name: 'Luottokorttien määrittäminen, varmennus ja tietojen tarkistus'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Myyntipisteen käteisvarojen arvojen määritys
                       href: cash-denominations.md
@@ -648,6 +650,8 @@
                       href: personalization-gdpr.md
                 - name: Vastaavien tuotteiden ostosuositusten ottaminen käyttöön
                   href: shop-similar-looks.md
+                - name: Vastaavien tuotteiden kuvaukseen perustuvien suositusten ottaminen käyttöön
+                  href: shop-similar-description.md
                 - name: Myyntipistekokemukset
                   items:
                     - name: Tuotesuositusten lisääminen myyntipisteessä
@@ -720,6 +724,8 @@
                   href: enhancedorderrecall.md
                 - name: Useiden noudon toimitustilojen käyttöönotto
                   href: multiple-pickup-modes.md
+                - name: Asiakkaan tilauksen noudon käsitteleminen myyntipisteessä
+                  href: process-order-pickup-POS.md
             - name: Myyntitilaukset
               items:
                 - name: Puhelinkeskustilausten luominen
@@ -858,6 +864,10 @@
                   href: add-cdn-support.md
                 - name: Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto
                   href: enable-store-detection.md
+                - name: Sähköisen kaupankäynnin digitaaliset lahjakortit
+                  href: digital-gift-cards.md
+                - name: Dynamics 365 Commerce ‑sivustojen selainvaatimukset
+                  href: browser-requirements.md
             - name: Esimerkkisivuston yleiskatsaus
               items:
                 - name: Aloitussivun yleiskatsaus
@@ -948,6 +958,8 @@
                       href: enrich-category-page.md
                     - name: Sivun sisällön helppokäyttöisyyden tarkistaminen
                       href: verify-accessibility.md
+                    - name: Dynaamisten sähköisen kaupankäynnin sivujen luominen URL-parametrien perusteella
+                      href: create-dynamic-pages.md
                 - name: Sivuston selaus
                   items:
                     - name: Sivuston selauksen mukauttaminen
@@ -1058,6 +1070,8 @@
                   items:
                     - name: Tuotekokoelmamoduulit
                       href: product-collection-module-overview.md
+                    - name: Pikanäkymämoduuli
+                      href: quick-view-module.md
                 - name: Siirtymismoduulit
                   items:
                     - name: Navigointipolkumoduuli
@@ -1066,6 +1080,10 @@
                       href: nav-menu-module.md
                     - name: Toimipaikan valitsinmoduuli
                       href: site-selector.md
+                - name: Hakumoduulit
+                  items:
+                    - name: Hakutulosmoduuli
+                      href: search-result-module.md
                 - name: Vaatimustenmukaisuusmoduulit
                   items:
                     - name: Evästeiden hyväksynnän moduuli
@@ -1102,10 +1120,22 @@
               items:
                 - name: Mukautettujen vastaussivujen luominen 4xx-/5xx-tilakoodien virheille
                   href: build-pages-400-500-errors.md
-        - name: Petosten torjunta
+        - name: Fraud Protection
           items:
             - name: Dynamics 365 Fraud Protection- ja Dynamics 365 Commerce -integraatio
               href: dev-itpro/DFP.md
+        - name: Yritystenvälisen yhteistyön sähköinen kaupankäynti
+          items:
+            - name: Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen
+              href: b2b/set-up-b2b-site.md
+            - name: Organisaatioiden mallinnushierarkioiden luominen yritystenvälisen yhteistyön organisaatioille
+              href: b2b/org-model.md
+            - name: Liikekumppanikäyttäjien hallinta yritystenvälisen yhteistyön sähköisen kaupankäynnin sivustoissa
+              href: b2b/manage-b2b-users.md
+            - name: Asiakastilin maksutavan määrittäminen yritystenvälisen yhteistyön sähköisen kaupankäynnin sivustoissa
+              href: b2b/payment-method.md
+            - name: Tuotemäärän rajojen asettaminen yritystenvälisen yhteistyön sähköisen kaupankäynnin sivustoissa
+              href: b2b/quantity-limits.md
         - name: Seuranta ja analysointi
           items:
             - name: Myynnin ja katteen kehittymisen seuranta
@@ -1264,7 +1294,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Yksikkösäilön ylläpidon jälkeisten ongelmien ratkaiseminen
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Power BI -integraation määrittäminen
+                - name: Power BI -Integroinnin määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Tuo oma tietokantasi
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1342,7 +1372,7 @@
               items:
                 - name: Kaavan kieli
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
-                - name: Toiminnot
+                - name: Funktiot
                   items:
                     - name: Päivämäärä ja aika
                       items:
@@ -2066,6 +2096,8 @@
                       href: e-commerce-extensibility/interactive-components.md
                     - name: Kirjautumistilan testaaminen paikallisen kehityksen aikana
                       href: e-commerce-extensibility/mock-sign-in.md
+                    - name: Moduulin ominaisuuksien näyttämisen määrittäminen kontekstin perusteella
+                      href: e-commerce-extensibility/configure-properties-context.md
                     - name: Moduulien globalisoiminen CultureInfoFormatter-luokan avulla
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Azure Key Vaultin määrittäminen turvallista avaintenhallintaa varten
@@ -2152,7 +2184,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: 'Retail SDK:n tulevat muutokset'
                   href: dev-itpro/UpcomingSDKChanges.md
-                - name: Tärkeät kehitys- ja ALM-muutokset versioissa 10.0.10–10.0.13
+                - name: Kehitys- ja ALM-muutokset versioissa 10.0.10–10.0.13
                   href: dev-itpro/dev-changes-10-13.md
                 - name: Commerce- ja Finance and Operations -koontijärjestelmien yhdistäminen
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2162,7 +2194,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Käyttöönotettavien pakettien luominen
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Kehittäminen pilvi-isännöidyissä kehitysympäristöissä ilman järjestelmänvalvojan oikeuksia
+                - name: Kehittäminen pilvipalveluympäristöissä ilman järjestelmänvalvojan oikeuksia
                   href: dev-itpro/cloud-dev-box.md
                 - name: Commerce SDK -koontijakson määrittäminen
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2238,7 +2270,7 @@
               items:
                 - name: Commerce Scale Unitin asiakas- ja kuluttajaohjelmointirajapinnat
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Uuden Retail Server -ohjelmointirajapintalaajennuksen luominen (Retail SDK -versio 10.0.11 ja uudemmat)
+                - name: Retail Server -ohjelmointirajapintalaajennuksen luominen (Retail SDK -versio 10.0.11 ja uudemmat)
                   href: dev-itpro/retail-server-icontroller-extension.md
                 - name: Uuden Retail Server -ohjelmointirajapintalaajennuksen luominen (Retail SDK -versio 10.0.11 ja aiemmat)
                   href: dev-itpro/retail-server-extension.md
@@ -2300,11 +2332,11 @@
                   href: payment-connector-data-fields.md
                 - name: Kaksoismaksuilta suojauksen kytkeminen päälle maksujen yhdistäjässä
                   href: dev-itpro/duplicate-payments-protection.md
-                - name: Maksun pakkauksen luominen Service Fabric -käyttöönottojen sovellusten hallintaa varten
+                - name: Commercen maksupaketin luominen Finance and Operationsin käyttöönottoa varten
                   href: dev-itpro/payment-connector-package.md
             - name: Kolmannen osapuolen sähköisen kaupankäynnin laajennettavuus
               items:
-                - name: Verkkokauppojen määrittäminen
+                - name: Online-myymälöiden määrittäminen
                   href: dev-itpro/configure-online-store.md
                 - name: Todennuspalvelujen määrittäminen
                   href: dev-itpro/configure-authentication-providers.md
