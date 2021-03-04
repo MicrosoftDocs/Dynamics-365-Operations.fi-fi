@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e70f2e6b3694002a11a831ac14039ccbee273a51
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458932"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115917"
 ---
 # <a name="recognize-deferred-revenue"></a>Siirretyn tuoton kirjaus
 
@@ -39,7 +38,7 @@ Tuottokirjausaikataulun tietoja voidaan tarkastella kahdella tavalla.
 - Voit avata tuottokirjausaikataulun suoraan laskutetusta myyntitilauksesta. Tällöin tuottoaikataulun tiedot suodatetaan näyttämään vain valitun myyntitilauksen tiedot. Tämä on hyödyllistä myyntitilauksen aikataulutietojen tarkistamisessa.
 - Tuottokirjausaikataulu voidaan avata **Tuottokirjaus \> Kausittaiset tehtävät** -sivulta. Tätä toimintatapaa käytetään usein, kun tuotto kirjataan kauden lopussa. Kun sivu avataan ensimmäistä kertaa, tietoja ei ole näkyvissä. Ruudukon yläpuolella olevilla suodattimilla voidaan määrittää perusteet näytettäville aikataulutiedoille. Laskutuspäivämääriä voidaan suodattaa määrittämällä päivämääräväli, myyntitilaus, asiakas, projektitunnus tai tila.
 
-[![Tuottoaikataulujen sivu](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Kuva Tuottoaikataulut-sivusta](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 **Taloushallinnon dimensio** -pikavälilehti ruudukon alla avaa myyntitilausrivin taloushallinnon dimensiot. Nämä dimensiot otettiin huomioon kirjauksessa siirrettyyn tuottoon. Ne otetaan huomioon myös tuoton kirjauksessa. Käytettävät dimensioarvot määräytyvät tuotolle määritetyn tilirakenteen ja siirretyn tuoton päätilien mukaan.
 

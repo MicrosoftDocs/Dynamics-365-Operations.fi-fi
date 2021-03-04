@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: rhaertle
 ms.custom: 62303
 ms.search.region: Global
-ms.author: margoc
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 413bdd2e7a817185829eb551380caf71d87af9b7
+ms.sourcegitcommit: 36d256bf5a832d2d70014d64044026f732b77831
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694382"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5073104"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusdokumentaatio
 
@@ -136,7 +136,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 
 <h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
 <p><a href="../../human-resources/hr-admin-overview.md">Järjestelmänvalvojan opas</a></p>
-<p><a href="../../human-resources/hr-developer-overview.md">Kehittäjäopas</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Kehittäjän opas</a></p>
 <p><a href="../../human-resources/hr-hrpro-overview.md">Käyttöopas</a></p>
 
 

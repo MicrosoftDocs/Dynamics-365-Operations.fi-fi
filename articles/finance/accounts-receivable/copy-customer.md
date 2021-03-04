@@ -1,5 +1,5 @@
 ---
-title: Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
+title: Asiakkaiden kopioiminen käyttämällä jaettuja numerosarjoja
 description: Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla asiakas kopioidaan toiseen yritykseen pitäen asiakastunnus ennallaan.
 author: mikefalkner
 manager: aolson
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 91f7568ea8364f97de7e514fb207191ee00041a5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab2beb9ca1b7cd8a4bdbb84c46ed223f58ce377d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458891"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991139"
 ---
-# <a name="copy-customers-by-using-shared-number-sequences"></a>Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
+# <a name="copy-customers-by-using-shared-number-sequences"></a>Asiakkaiden kopioiminen käyttämällä jaettuja numerosarjoja
 
 [!include [banner](../includes/banner.md)]
 

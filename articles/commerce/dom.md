@@ -3,14 +3,13 @@ title: Jaettu tilausten hallinta (JTH)
 description: Tässä aiheessa kuvataan Dynamics 365 Commerce -ohjelman jaetun tilausten hallinnan (JTH) toimintoja.
 author: josaw1
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4458955"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982588"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (JTH)
 
@@ -49,10 +48,14 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
     - **Ota jaettu tilausten hallinta käyttöön** – Määritä tähän arvoksi **Kyllä**.
     - **Vahvista Bing Maps -palvelun käyttö JTH:ssa** – Määritä tähän arvoksi **Kyllä**.
 
+
         > [!NOTE]
         > Voit määrittää tähän arvoksi **Kyllä** vain, jos **Ota Bing Maps käyttöön** -asetuksen arvo **Bing Maps** -välilehdessä **Commercen yhteiset parametrit** -sivulla (**Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen yhteiset parametrit**) on myös **Kyllä** ja jos **Bing Maps -avain** -kenttään annetaan kelvollinen avain.
+        >
+        > [Bing Mapsin kehityskeskusportaalin](https://www.bingmapsportal.com/) avulla voit rajoittaa Bing Mapsin ‑ohjelmointirajapinnan avaimia niin, että ne ovat käytettävissä vain määrittämiltäsi toimialueilta. Tämän ominaisuuden avulla asiakkaat voivat määrittää tiukat viittaaja-arvot tai IP-osoitealueet, joiden mukaan avain vahvistetaan. Sallittujen IP-osoitteiden luettelosta peräisin olevat pyynnöt käsitellään normaalisti, kun taas luettelon ulkopuolelta tulevat pyynnöt palauttavat Käyttö estetty ‑vastausten. Toimialueen suojauksen lisääminen API-avaimeen on valinnaista, ja entiselleen jätetyt avaimet toimivat edelleen. Avaimen sallittujen IP-osoitteiden luettelo ei ole riippuvainen muista avaimistasi, joten voit määrittää erilliset säännöt kullekin avaimellesi. Jaettu tilausten hallinta ei tue toimialueella viitattujen ominaisuuksien määrittämistä.
 
-    - **Pidätyskausi päivinä** – Määritä, kauanko JTH-ajojen luomia täyttämistilauksia säilytetään järjestelmässä. **JTH-täyttämistietojen poistotyön asetukset** -eräyö poistaa kaikki täyttämissuunnitelmat, jotka ovat tässä määritettyä päivien määrää vanhempia.
+
+    - **Pidätyskausi päivinä** – määritä, kauanko JTH-ajojen luomia täyttämistilauksia säilytetään järjestelmässä. **JTH-täyttämistietojen poistotyön asetukset** -erätyö poistaa kaikki täyttämissuunnitelmat, jotka ovat tässä määritettyä päivien määrää vanhempia.
     - **Hylkäämiskausi (päivinä)** – Määritä, kuinka paljon aikaa pitää kulua, ennen kuin hylätty tilausrivi voidaan määrittää samaan sijaintiin.
 
 5. Määritä **Selvitys**-välilehdessä seuraavat arvot:
@@ -62,14 +65,15 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
     - **Selvityksen tyyppi** – Valitse arvo. Commercessa vapautetaan kaksi selvityksen tyyppiä: **Tuotannon selvitys** ja **Yksinkertaistettu selvitys**. Kaikille koneille, jotka suorittavat JTH:n (siis kaikki palvelimet, jotka kuuluvat DOMBatch-ryhmään), on valittava **Tuotannon selvitys**. Tuotannon selvitys edellyttää erityisen lisenssiavaimen, joka oletusarvoisesti lisensoidaan ja otetaan käyttöön tuotantoympäristöissä. Muille kuin tuotantoympäristöille tämä lisenssiavain on otettava käyttöön manuaalisesti. Voit ottaa lisenssiavaimen käyttöön manuaalisesti toimimalla seuraavasti:
 
         1. Avaa Microsoft Dynamics Lifecycle Servicesissa jaettu omaisuuskirjasto, valitse omaisuustyypiksi **Malli**, ja lataa **JTH-license**-tiedosto.
-        2. Käynnistä Microsoft IIS -palveluiden hallinta, valitse hiiren kakkospainikkeella **AOSService-verkkosivusto** ja valitse sitten **Selaa**. Windowsin resurssienhallintaikkuna avautuu kansiossa **\<AOS service root\>\\webroot**. Kirjoita muistiin hakemiston \<AOS Service root\> polku, sillä sitä käytetään seuraavassa vaiheessa.
-        3. Kopioi määritystiedosto hakemistoon **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Siirry Headquarters-asiakasohjelmaan ja avaa **DOM-parametrit**-sivu. Valitse **Selvitys**-välilehden **Selvityksen tyyppi** -kentässä **Tuotannon selvitys** ja varmista, ettei virhesanomia ole näkyvissä.
+        1. Käynnistä Microsoft IIS -palveluiden hallinta, valitse hiiren kakkospainikkeella **AOSService-verkkosivusto** ja valitse sitten **Selaa**. Windowsin resurssienhallintaikkuna avautuu kansiossa **\<AOS service root\>\\webroot**. Kirjoita muistiin hakemiston \<AOS Service root\> polku, sillä sitä käytetään seuraavassa vaiheessa.
+        1. Kopioi määritystiedosto hakemistoon **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        1. Siirry Headquarters-asiakasohjelmaan ja avaa **DOM-parametrit**-sivu. Valitse **Selvitys**-välilehden **Selvityksen tyyppi** -kentässä **Tuotannon selvitys** ja varmista, ettei virhesanomia ole näkyvissä.
+
 
         > [!NOTE]
         > Yksinkertaistettu selvitys on vaihtoehto silloin, kun vähittäismyyjä haluaa kokeilla JTH-ominaisuutta ottamatta käyttöön erityistä lisenssiä. Organisaatioiden ei tulisi käyttää yksinkertaistettua selvitystä tuotantoympäristöissä.
         >
-        > Vaikka yksinkertaistettu selvitys sisältää samat toiminnot kuin tuotannon selvitys, siinä on rajoituksia suorituskyvyn suhteen (tilauksien ja tilausrivien määrä, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämisen suhteen (tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa).
+        > Tuotannon selvitys parantaa suorituskykyä (kuten tilauksien ja tilausrivien määrää, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämistä (koska tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa). Jotkin säännöt, kuten **Osittaistilaukset**-sääntö ja **Sijaintien enimmäismäärä** -sääntö, edellyttävät tuotannon selvitystä.
      
 6. Siirry takaisin kohtaan **Retail ja Commerce \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.
 7. Määritä **Numerosarjat**-välilehdessä tarvittavat numerosarjat eri JTH-yksiköille.
@@ -121,9 +125,9 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
         \* Jos **Täytä osittaistilaukset** -asetukseksi määritetään **Ei**, **Täytä osittaiset rivit** -asetuksen arvona on aina arvo **Ei** riippumatta siitä, mikä arvo asetukseen on määritetty.
 
         > [!NOTE]
-        > Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -parametrin arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voisi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen.
+        > Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -parametrin arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voisi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen. Tämä sääntö toimii vain tuotannon selvityksen kanssa. 
 
-   - **Offline-täyttämisen sijaintisääntö** – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai DOM:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi näistä sijainneista.
+   - **Offline-täyttämisen sijaintisääntö** – tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai DOM:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi näistä sijainneista.
     - **Hylkäysten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää hylkäyksille raja-arvon. Kun raja-arvo saavutetaan, JTH-käsittelijä merkitsee tilauksen vai tilausrivin poikkeukseksi ja jättää sen jatkokäsittelyn ulkopuolelle.
 
         Sen jälkeen, kun tilausrivit on määritetty sijaintiin, sijainti voi hylätä määritetyn tilausrivin, koska se ei jostakin syystä pysty täyttämään tilausriviä. Hylätyt rivit merkitään poikkeukseksi ja palautetaan takaisin pooliin seuraavaa suorituskertaa varten. Seuraavan ajon aikana JTH yrittää määrittää hylätyn rivin toiseen sijaintiin. Myös uusi sijainti voi hylätä määritetyn tilausrivin. Tämä määrittämisen ja hylkäämisen sykli voi tapahtua useita kertoja. Kun hylkäysten määrä ylittää määritetyn raja-arvon, JTH merkitsee tilausrivin pysyväksi poikkeukseksi eikä enää ota kyseistä tilausriviä määritettäväksi. JTH ottaa tilausrivin uudelleen määritettäväksi vain, jos käyttäjä nollaa tilausrivin tilan manuaalisesti.

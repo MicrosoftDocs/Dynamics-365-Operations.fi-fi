@@ -72,12 +72,12 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.17 (maaliskuu 2021)
+                      href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (helmikuu 2021)
                       href: get-started/whats-new-changed-10-0-16.md
                     - name: Finance 10.0.15 (tammikuu 2021)
                       href: get-started/whats-new-changed-10-0-15.md
-                    - name: Finance 10.0.14 (marraskuu 2020)
-                      href: get-started/whats-new-changed-10-0-14.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
@@ -175,7 +175,7 @@
                 - name: Finance and Operations -sovellusten arkkitehtuuri
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/fasttrack/index
                 - name: Käyttöönottoprojektiin tutustuminen
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: Työympäristön suunnittelu
@@ -278,7 +278,7 @@
               href: accounts-payable/broker-contract.md
             - name: Provisiosopimusten hallinta
               href: accounts-payable/royalty-contract.md
-            - name: Maksut ja tilitykset
+            - name: Maksut ja selvitykset
               items:
                 - name: Ostoreskontran keskitetyt maksut
                   href: accounts-payable/centralized-payments-accounts-payable.md
@@ -340,14 +340,6 @@
               href: accounts-receivable/copy-customer.md
             - name: Asiakkaan työnkulku
               href: accounts-receivable/customer-workflow.md
-            - name: Tuottokirjausten yleiskatsaus
-              href: accounts-receivable/revenue-recognition-overview.md
-            - name: Tuottokirjauksen määritys
-              href: accounts-receivable/revenue-recognition-setup.md
-            - name: Siirretyn tuoton kirjaus
-              href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
-            - name: Tuottokirjaus myyntitilauksiin
-              href: accounts-receivable/revenue-recognition-so-basics.md
             - name: Toistuvien laskujen määrittäminen ja käsittely
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
@@ -358,7 +350,7 @@
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: SEPA (Single Euro Payments Area) -suoraveloitusvaltakirjan asetukset
               href: accounts-receivable/sepa-direct-debit-mandate.md
-            - name: 'Luottokorttien määritys, varmennus ja tietojen tarkistus'
+            - name: 'Luottokorttien määrittäminen, varmennus ja tietojen tarkistus'
               href: accounts-receivable/credit-card-authorizations.md
             - name: Luo tekstimuotoinen lasku
               href: accounts-receivable/create-free-text-invoice-new.md
@@ -384,10 +376,30 @@
               href: accounts-receivable/set-up-bills-exchange.md
             - name: Myyntireskontran sulkeminen
               href: accounts-receivable/close-accounts-receivable.md
-            - name: Maksut ja tilitykset
+            - name: Tuoton kirjaus
               items:
                 - name: Tuottokirjausten yleiskatsaus
                   href: accounts-receivable/revenue-recognition-overview.md
+                - name: Tuottokirjauksen määritys
+                  href: accounts-receivable/revenue-recognition-setup.md
+                - name: Siirretyn tuoton kirjaus
+                  href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
+                - name: Tuottokirjaus myyntitilauksiin
+                  href: accounts-receivable/revenue-recognition-so-basics.md
+                - name: Tuottokirjauksen myyntirakenteet
+                  href: accounts-receivable/rev-rec-bundles.md
+                - name: Tuottokirjauksen uudelleenkohdistus
+                  href: accounts-receivable/rev-rec-reallocation.md
+                - name: Tuottokirjauksen uudelleenkohdistus – skenaario 1
+                  href: accounts-receivable/rev-rec-reallocation-scenario-1.md
+                - name: Tuottokirjauksen uudelleenkohdistus – skenaario 2
+                  href: accounts-receivable/rev-rec-reallocation-scenario-2.md
+                - name: Tuottokirjauksen uudelleenkohdistus – skenaario 3
+                  href: accounts-receivable/rev-rec-reallocation-scenario-3.md
+                - name: Tuottokirjauksen uudelleenkohdistus – skenaario 4
+                  href: accounts-receivable/rev-rec-reallocation-scenario-4.md
+            - name: Maksut ja selvitykset
+              items:
                 - name: Asiakkaan maksun yhteenveto
                   href: cash-bank-management/tasks/customer-payment-overview.md
                 - name: Myyntireskontran keskitetyt maksut
@@ -470,6 +482,10 @@
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Lisähuomautusten hallinta
               href: localizations/emea-ita-exil-structured-notes.md
+            - name: Viittaukset alkuperäisiin laskuihin hyvityslaskuissa
+              href: accounts-receivable/original-invoice-numbers-credit-notes.md
+            - name: Asiakirjojen ja tositteiden numeroiminen aikajärjestyksessä
+              href: accounts-receivable/chrono-numbers.md
         - name: Budjetointi
           items:
             - name: Budjetoinnin aloitussivu
@@ -504,6 +520,8 @@
               href: cash-bank-management/cash-bank-management.md
             - name: Kassavirtaennusteet
               href: cash-bank-management/cash-flow-forecasting.md
+            - name: Kassavirtaennusteiden asetusten vianmääritys
+              href: cash-bank-management/cash-flow-forecasting-tsg.md
             - name: Maksuliikenteen työtila
               href: cash-bank-management/Bank-management-workspace.md
             - name: Pankin ulkomaanvaluutan uudelleenarvostus
@@ -848,11 +866,15 @@
                   href: asset-leasing/record-rou-asset-depreciation.md
                 - name: Kirjattujen vuokratapahtumien palauttaminen
                   href: asset-leasing/reverse-posted-lease-trans.md
-                - name: Vuokrauksen muokkaaminen
+                - name: Resurssien vuokrauskäytännöt
+                  href: asset-leasing/asset-leasing-convention.md
+                - name: Vuokran muokkaaminen
                   href: asset-leasing/adjust-lease.md
                 - name: Käyttöoikeusomaisuuserän arvon alentaminen
                   href: asset-leasing/impair-rou-asset.md
-                - name: Vuokrauksen yhdistäminen käyttöomaisuuserään
+                - name: Vuokran päättymisen ehdottaminen
+                  href: asset-leasing/lease-termination.md
+                - name: Vuokran yhdistäminen käyttöomaisuuserään
                   href: asset-leasing/associate-lease-with-fixed-asset.md
                 - name: Vuokrausten tallentaminen ulkomaan valuuttana
                   href: asset-leasing/record-leases-foreign-currency.md
@@ -916,11 +938,21 @@
                   items:
                     - name: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
                       href: general-ledger/financial-consolidations-currency-translation.md
-                    - name: Konsolidoi verkossa
+                    - name: Konsolidointi verkossa
                       href: general-ledger/consolidate-online.md
                     - name: Konsolidoitujen raporttien laatiminen
                       href: general-ledger/generating-consolidated-financial-statements.md
-                - name: Luo konsolidointiryhmät ja lisäkonsolidointitili
+                    - name: Tytäryhtiöiden tietojen tuominen tiedostoista
+                      href: general-ledger/import-subsidiary-data-from-files.md
+                    - name: Tytäryhtiön tietojen vieminen tiedostoon
+                      href: general-ledger/export-subsidiary-data-to-file.md
+                    - name: Konsolidointi tuonnin kanssa – muoto
+                      href: general-ledger/consolidate-with-import-format.md
+                    - name: Yrityksen valmisteleminen käytettäväksi konsolidoinnissa
+                      href: general-ledger/prepare-company-for-consolidation.md
+                    - name: Tytäryhtiön määrittäminen konsolidointia varten
+                      href: general-ledger/set-up-subsidiary-company-for-consolidation.md
+                - name: Konsolidointiryhmien luominen ja lisäkonsolidointitili
                   href: general-ledger/tasks/create-consolidation-groups.md
                 - name: Päätilin tyypit
                   href: general-ledger/main-account-types.md
@@ -1000,11 +1032,13 @@
                   href: general-ledger/currency-revaluation-consolidation-company.md
                 - name: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Vaihtokurssien tuonti
+                - name: Valuutanvaihtokurssien tuonti
                   href: general-ledger/import-currency-exchange-rates.md
                 - name: Yksi tosite
                   href: general-ledger/one-voucher.md
-                - name: Tapahtuman selvitykset
+                - name: Yksi tosite – usein kysytyt kysymykset
+                  href: general-ledger/one-voucher-faq.md
+                - name: Kirjanpidon selvitykset
                   href: general-ledger/ledger-settlements.md
             - name: Kauden sulkeminen
               items:
@@ -1012,12 +1046,14 @@
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Tilikauden sulkemisen työtila
                   href: general-ledger/financial-period-close-workspace.md
-                - name: Tilikauden lopetus
+                - name: Tilinpäätös
                   href: general-ledger/year-end-close.md
                 - name: Tilikauden sulkeminen
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Tilikauden joukkosulkeminen
                   href: general-ledger/tasks/mass-financial-period-close.md
+                - name: Tilinpäätöstehtävien usein kysytyt kysymykset
+                  href: general-ledger/faq-year-end-activities.md
             - name: Arvonlisävero
               items:
                 - name: Arvonlisäveron yleiskatsaus
@@ -1056,12 +1092,26 @@
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                 - name: Määritä arvonlisäveron tilityskaudet
                   href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Määritä ennakonpidätys
-                  href: general-ledger/tasks/set-up-withholding-tax.md
                 - name: Näytä kirjatut arvonlisäverotapahtumat
                   href: general-ledger/tasks/view-posted-sales-tax-transactions.md
                 - name: Arvonlisäveromaksun tulostaminen koodeittain -raportti
                   href: general-ledger/print-sales-tax-payment-by-code-report.md
+            - name: Ennakonpidätys
+              items:
+                - name: Määritä ennakonpidätys
+                  href: general-ledger/tasks/set-up-withholding-tax.md
+                - name: Yleinen ennakonpidätys
+                  items:
+                    - name: Yleisen ennakonpidätyksen yleiskatsaus
+                      href: general-ledger/global-withholding-tax-overview.md
+                    - name: Määritä yleinen ennakonpidätys
+                      href: general-ledger/set-up-global-withholding-tax.md
+                    - name: Ennakonpidätys ostotapahtumissa
+                      href: general-ledger/withholding-tax-in-purchase-transactions.md
+                    - name: Ennakonpidätys myyntitapahtumissa
+                      href: general-ledger/withholding-tax-in-sales-transactions.md
+                    - name: Ennakonpidätysmaksun luominen
+                      href: general-ledger/create-a-withholding-tax-payment.md
             - name: Tarkastustyötila
               items:
                 - name: Tarkistuskäytäntösäännöt
@@ -1070,6 +1120,52 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Taloushallinnon raportointi
+          items:
+            - name: Taloushallinnon raportoinnin aloittaminen
+              href: general-ledger/financial-reporting-getting-started.md
+            - name: Taloushallinnon raportoinnin yleiskatsaus
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
+            - name: Taloushallinnon raportin komponentit
+              href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Taloushallinnon raportoinnin valuutta-ominaisuudet
+              href: general-ledger/financial-reporting-currency-capability.md
+            - name: Taseraportit
+              href: general-ledger/balance-sheet-financial-reports.md
+            - name: Taloushallinnon raporttien luonti
+              href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
+            - name: Tuloslaskelman raportti
+              href: general-ledger/income-statement-financial-report.md
+            - name: Pääkirjan raportit
+              href: general-ledger/trial-balance-financial-reports.md
+            - name: Raporttien tarkasteleminen
+              href: general-ledger/view-financial-reports.md
+            - name: Raporttien suunnitteluohjelman käyttöliittymä
+              href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
+            - name: Raporttien suunnitteluohjelman pikanäppäimet
+              href: general-ledger/financial-reporting-keyboard-shortcuts.md
+            - name: Raporttien suunnitteluohjelman käyttäjäasetukset
+              href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
+            - name: Muotoilun lisäasetukset
+              href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Raporttien suunnitteluohjelman raporttikomponenttien järjestäminen
+              href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
+            - name: Raportin määritykset
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
+            - name: Rivimääritykset
+              href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Sarakemääritykset
+              href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Talousraporttien raportointipuiden määritykset
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
+            - name: Rivin määrityksen solujen muokkaaminen
+              href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Talousraportoinnin tietovaraston osajoukon palauttaminen
+              href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
+            - name: Milloin tietovaraston osajoukko kannattaa palauttaa
+              href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
+            - name: Taloushallinnon raportoinnin usein kysytyt kysymykset
+              href: general-ledger/financial-reporting-faq.md
         - name: Taloushallinnon tiedot
           items:
             - name: Taloushallinnon tietojen aloitussivu
@@ -1306,48 +1402,6 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: Kanadan harmonisoidun arvonlisäveron laskeminen
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Taloushallinnon raportointi
-          items:
-            - name: Taloushallinnon raportoinnin aloittaminen
-              href: general-ledger/financial-reporting-getting-started.md
-            - name: Taloushallinnon raportoinnin yleiskatsaus
-              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
-            - name: Taloushallinnon raportin komponentit
-              href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
-            - name: Taloushallinnon raportoinnin valuutta-ominaisuudet
-              href: general-ledger/financial-reporting-currency-capability.md
-            - name: Taseraportit
-              href: general-ledger/balance-sheet-financial-reports.md
-            - name: Taloushallinnon raporttien luonti
-              href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
-            - name: Tuloslaskelman raportti
-              href: general-ledger/income-statement-financial-report.md
-            - name: Pääkirjan raportit
-              href: general-ledger/trial-balance-financial-reports.md
-            - name: Raporttien tarkasteleminen
-              href: general-ledger/view-financial-reports.md
-            - name: Raporttien suunnitteluohjelman käyttöliittymä
-              href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
-            - name: Raporttien suunnitteluohjelman pikanäppäimet
-              href: general-ledger/financial-reporting-keyboard-shortcuts.md
-            - name: Raporttien suunnitteluohjelman käyttäjäasetukset
-              href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
-            - name: Muotoilun lisäasetukset
-              href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Raporttien suunnitteluohjelman raporttikomponenttien järjestäminen
-              href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
-            - name: Raportin määritykset
-              href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
-            - name: Rivimääritykset
-              href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Sarakemääritykset
-              href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Talousraporttien raportointipuiden määritykset
-              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
-            - name: Rivin määrityksen solujen muokkaaminen
-              href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Talousraportoinnin tietovaraston osajoukon palauttaminen
-              href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
         - name: Maailmanlaajuinen toiminta
           items:
             - name: Maailmanlaajuisen käytön resurssit
@@ -1358,18 +1412,30 @@
               items:
                 - name: Sähköisen laskutuksen lisäosan yleiskatsaus
                   href: localizations/e-invoicing-service-overview.md
+                - name: Sähköisen laskutuksen lisäosan hallintakomponentit
+                  href: localizations/e-invoicing-service-administration.md
+                - name: Sähköisen laskutuksen lisäosan määrittäminen Regulatory Configuration Services (RCS) -palvelussa
+                  href: localizations/e-invoicing-configuration-rcs.md
+                - name: Sähköisten laskujen luominen Financessa ja Supply Chain Managementissa
+                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
                 - name: Azuren tallennustilin ja Key Vaultin luominen
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Sähköisen laskutuksen lisäosan käytön aloittaminen
-                  href: localizations/e-invoicing-get-started.md
-                - name: Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen
-                  href: localizations/e-invoicing-bra-get-started.md
-                - name: Italian sähköisen laskutuksen lisäosan käytön aloittaminen
-                  href: localizations/e-invoicing-ita-get-started.md
-                - name: Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
-                  href: localizations/e-invoicing-mex-get-started.md
-                - name: Sähköisen laskutuksen lisäosan määrittäminen
-                  href: localizations/e-invoicing-setup.md
+                - name: Aloittaminen
+                  items:
+                    - name: Sähköisen laskutuksen lisäosan palvelun hallinnan aloittaminen
+                      href: localizations/e-invoicing-get-started-service-administration.md
+                    - name: Sähköisen laskutuksen lisäosan käytön aloittaminen
+                      href: localizations/e-invoicing-get-started.md
+                    - name: Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen
+                      href: localizations/e-invoicing-bra-get-started.md
+                    - name: Asiakkaiden sähköiset laskut Egyptissä
+                      href: localizations/emea-egy-e-invoices.md
+                    - name: Italian sähköisen laskutuksen lisäosan käytön aloittaminen
+                      href: localizations/e-invoicing-ita-get-started.md
+                    - name: Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
+                      href: localizations/e-invoicing-mex-get-started.md
+                    - name: Sähköisen laskutuksen lisäosan määrittäminen
+                      href: localizations/e-invoicing-setup.md
             - name: Australia
               items:
                 - name: Australia – yleiskatsaus
@@ -1682,7 +1748,7 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: ALV-ilmoitus (Tšekin tasavalta)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
-                - name: Tilikauden lopetus
+                - name: Tilinpäätös
                   href: localizations/emea-cze-hun-year-end.md
             - name: Tanska
               items:
@@ -1710,6 +1776,14 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Määritä maksutositteen muoto
                   href: localizations/tasks/set-up-payment-slip-format.md
+            - name: Egypti
+              items:
+                - name: Egypti – yleiskatsaus
+                  href: localizations/egypt.md
+                - name: Egyptin rekisteröintinumeroiden määrittäminen
+                  href: localizations/emea-egy-reg-numbers.md
+                - name: Egyptin laskuasettelun määrittäminen
+                  href: localizations/emea-egy-invoice-layout.md
             - name: Viro
               items:
                 - name: Viro – yleiskatsaus
@@ -1800,6 +1874,8 @@
                   href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
                 - name: Tuetut sähköisen laskutuksen standardit
                   href: localizations/emea-oioubl-standards-electronic-invoicing.md
+                - name: Pakotettu sähköisten laskujen luominen
+                  href: localizations/emea-eur-forced-einvoices.md
                 - name: Alkuperäinen laskuviite (Itä-Eurooppa)
                   href: localizations/tasks/ee-00004-original-invoice-reference.md
                 - name: Osapuolen haku ALV-tunnuksen avulla
@@ -1964,10 +2040,12 @@
                   href: localizations/emea-hun-fixed-asset-to-inventory.md
                 - name: Verohyvityksen asiakirjat
                   href: localizations/emea-hun-tax-reimbursement-docs.md
-                - name: Tilikauden lopetus
+                - name: Tilinpäätös
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Verkkolaskutusjärjestelmä
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Unkarin arvonlisäveroraportit
+                  href: localizations/emea-hun-sales-tax-reports.md
                 - name: Lykätyn arvonlisäveron laskelmat
                   href: localizations/emea-hun-deferred-vat.md
             - name: Islanti
@@ -2222,8 +2300,10 @@
               items:
                 - name: Italia – yleiskatsaus
                   href: localizations/italy.md
-                - name: ALV-laskelmien tiedot
+                - name: ALV-ilmoitusten tiedot
                   href: localizations/emea-ita-vat-statements-details.md
+                - name: Neljännesvuosittainen ALV-viestintäraportti
+                  href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Mustan listan raportti
                   href: localizations/emea-ita-black-list-report.md
                 - name: Ennakonpidätyspäivämäärä
@@ -2278,6 +2358,10 @@
                   href: localizations/emea-ita-e-invoices.md
                 - name: Vuosittainen veroviestintä
                   href: localizations/emea-ita-yearly-tax-communication.md
+                - name: Maksun jäljitettävyys
+                  href: localizations/emea-ita-payment-traceability.md
+                - name: Yhdistetty kirjauspäivämäärän hallinta
+                  href: localizations/emea-ita-post-date-control.md
             - name: Japani
               items:
                 - name: Japani – yleiskatsaus
@@ -2826,6 +2910,10 @@
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Omaisuusverorekisterit
                       href: localizations/rus-assets-tax-registers.md
+                    - name: Lykkäysten verorekisteri
+                      href: localizations/rus-deferred-expenses-register.md
+                    - name: Kassavirran verorekisterit
+                      href: localizations/rus-cash-flow-tax-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Saudi-Arabia – yleiskatsaus
@@ -2906,6 +2994,10 @@
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Toteutumaton ALV
                   href: localizations/apac-tha-unrealized-vat.md
+                - name: Verollisen sivuliikkeen dimensiot
+                  href: localizations/apac-tha-tax-branch-dimensions.md
+                - name: Myynnin ALV-raportti
+                  href: localizations/apac-tha-sales-vat-report.md
                 - name: Ennakonpidätys
                   href: localizations/apac-tha-withholding-tax.md
             - name: Yhdistyneet arabiemiirikunnat
@@ -2952,7 +3044,7 @@
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
             - name: Human Resources -asetukset
               items:
-                - name: Määritä henkilöstöhallinnon parametrit
+                - name: Määritä Human Resourcesin parametrit
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Määritä jaetut henkilöstöhallinnon parametrit
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
@@ -2991,7 +3083,7 @@
                 - name: Seuraajasuunnitelman kehittäminen
                   href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
                 - name: Projektin työaikaraporttien syöttäminen
-                  href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
                 - name: Joukkotyöhönottoprojektit
                   href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
                 - name: Joukkotyöhönottoprojektin luominen
@@ -3225,7 +3317,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
                 - name: Yksikkösäilön ylläpidon jälkeisten ongelmien ratkaiseminen
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Power BI -integraation määrittäminen
+                - name: Power BI -Integroinnin määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
                 - name: Tuo oma tietokantasi
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
@@ -3305,8 +3397,14 @@
               items:
                 - name: Kaavan kieli
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
-                - name: Toiminnot
+                - name: Funktiot
                   items:
+                    - name: Säilö
+                      items:
+                        - name: Säilöfunktiot
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
                     - name: Päivämäärä ja aika
                       items:
                         - name: Päivämäärä- ja aikatoiminnot
@@ -3529,6 +3627,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
                         - name: 'Tyyppi: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Säilö: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
                         - name: 'Päivämäärä ja aika: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
                         - name: 'Päivämäärä ja aika: DateToDateTime'
@@ -3570,7 +3670,11 @@
                         - name: Sarakkeiden lisääminen dynaamisesti Excel-raportteihin muotoja suorittamalla
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguraatioiden suunnitteleminen raporttien luontiin Word-muodossa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                  items:
+                    - name: Uuden ER-konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
+                    - name: Raporttien luominen Word-muodossa käyttämällä ER-konfiguraatioita uudelleen Excel-mallien avulla
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguraatioiden suunnitteleminen PDF-mallien täyttämiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Kuvien ja muotojen upottaminen
@@ -3587,6 +3691,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
+                - name: Tuoterakenteen merkkien estäminen luoduissa tiedostoissa
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
             - name: Sovellustietojen päivittäminen sähköisen raportoinnin avulla
               items:
                 - name: Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen
@@ -3646,7 +3752,7 @@
                         - name: 'Konfiguraatioiden tuonti GR:stä'
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Lataa konfiguraatiot GR-järjestelmään
@@ -3710,38 +3816,40 @@
                         - name: Muotojen muokkaaminen ja suorittaminen asiakirjojen hallintatiedostojen käyttöä varten
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                     - name: Tietolähteiden vianmääritys
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: VIIVAKOODIN käyttäminen viivakoodikuvien luontiin
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Mallimääritysten määrittäminen
                   items:
                     - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-                - name: Muotojen konfigurointi
+                    - name: Useiden johdettujen yhdistämismääritysten hallinta yksittäiselle mallin juurelle
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/finance/toc.json
+                - name: Muotojen määrittäminen
                   items:
                     - name: Mallin määritysten valitseminen luotaessa muotoja
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muodon parametrien määrittäminen yrityskohtaisesti
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muodon elementtien suorituksen lykkääminen
                       items:
                         - name: Sekvenssielementin suorituksen lykkääminen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/finance/toc.json
                         - name: XML-elementin suorituksen lykkääminen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/finance/toc.json
                     - name: Monikielisten raporttien suunnitteleminen
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                     - name: Suurten lähtevien tiedostojen pakkaaminen
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
                 - name: Määritettyjen ER-komponenttien tarkastaminen
-                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Suhteellinen polku tietojen sidonnoissa
-                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
-            - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operationsissa
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+            - name: ER-ratkaisujen käyttäminen Financessa
               items:
                 - name: Kehyksen määrittäminen
                   items:
@@ -3775,6 +3883,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
                     - name: Kohteiden määrittäminen
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Toimintosidonnaisten kohteiden määrittäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
                 - name: Sähköisen raportoinnin muodon viitteen määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Luotujen raporttien vahvistaminen automaattisesti
@@ -3815,6 +3925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
                     - name: Application Update 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Application Update 10.0.17
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä

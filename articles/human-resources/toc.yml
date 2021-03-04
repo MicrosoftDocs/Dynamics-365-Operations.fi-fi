@@ -5,6 +5,10 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 28. tammikuuta 2021
+          href: hr-whats-new-2021-01-28.md
+        - name: 21. tammikuuta 2021
+          href: hr-whats-new-2021-01-21.md
         - name: 2. joulukuuta 2020
           href: hr-whats-new-2020-12-02.md
         - name: 22. lokakuuta 2020
@@ -75,19 +79,23 @@
               href: hr-admin-setup-remove-instance.md
             - name: Päivitysprosessi
               href: hr-admin-setup-update-process.md
-        - name: Määritä tietojen integraatio
+        - name: Määritä tietojen integrointi
           items:
-            - name: Valitse tietojen integraatioteknologia
+            - name: Valitse tietojen integrointiteknologia
               href: hr-admin-integration-choose-technology.md
-            - name: Määritä Common Data Service -integraatio
+            - name: Rajoittamisen usein kysytyt kysymykset
+              href: hr-admin-integration-throttling-faq.md
+            - name: Määritä Dataverse-integrointi
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service -yksiköt
+            - name: Dataverse-taulut
               href: hr-developer-entities.md
-            - name: Määritä Common Data Service -virtuaaliyksiköt
+            - name: Määritä Dataverse -virtuaaliyksiköt
               href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Integraation määrittäminen Financen kanssa
+            - name: Human Resources -virtuaaliyksiköiden usein kysytyt kysymykset
+              href: hr-admin-virtual-entity-faq.md
+            - name: Integroinnin määrittäminen Financen kanssa
               href: hr-admin-integration-finance.md
-            - name: Integraation määrittäminen Dayforcen kanssa
+            - name: Integroinnin määrittäminen Dayforcen kanssa
               href: hr-admin-integration-dayforce.md
             - name: Toistuvan tietojen viennin sovelluksen luominen
               href: hr-admin-integration-recurring-data-export.md
@@ -271,27 +279,27 @@
               href: hr-admin-troubleshooting-not-in-apps.md
             - name: Raportointivaihtoehdot
               href: hr-admin-troubleshooting-reporting.md
-            - name: Integraatioiden usein kysytyt kysymykset
+            - name: Integroinnin usein kysytyt kysymykset
               href: hr-admin-troubleshooting-integration.md
-    - name: Kehittäjäopas
+    - name: Kehittäjän opas
       items:
         - name: Yleiskatsaus
           href: hr-developer-overview.md
         - name: Laajentaminen Power Appsin ja Power Automaten avulla
           href: hr-developer-power-apps.md
-        - name: Common Data Service -yksiköt
+        - name: Dataverse-taulut
           href: hr-developer-entities.md
         - name: Mukautetut kentät
           href: hr-developer-custom-fields.md
-        - name: Määritä tietojen integraatio
+        - name: Määritä tietojen integrointi
           items:
-            - name: Valitse tietojen integraatioteknologia
+            - name: Valitse tietojen integrointiteknologia
               href: hr-admin-integration-choose-technology.md
-            - name: Määritä Common Data Service -integraatio
+            - name: Määritä Dataverse-integrointi
               href: hr-admin-integration-common-data-service.md
-            - name: Integraation määrittäminen Financen kanssa
+            - name: Integroinnin määrittäminen Financen kanssa
               href: hr-admin-integration-finance.md
-            - name: Integraation määrittäminen Dayforcen kanssa
+            - name: Integroinnin määrittäminen Dayforcen kanssa
               href: hr-admin-integration-dayforce.md
             - name: Toistuvan tietojen viennin sovelluksen luominen
               href: hr-admin-integration-recurring-data-export.md
@@ -317,6 +325,92 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: Lähetä lomapyyntö työnkulkuun
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: ATS-integroinnin ohjelmointirajapinta
+          items:
+            - name: Johdanto
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Työhönottopyyntö ja siihen liittyvät yksiköt
+              items:
+                - name: Työhönottopyyntö
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Työhönottopyynnön koulutus
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Työhönottopyynnön sijainti
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Työhönottopyynnön toimi
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Työhönottopyynnön taito
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Esimerkkikysely työhönottopyyntöä varten
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Työhönottopyynnön asetusjoukot
+              items:
+                - name: Työn vapautustila
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Työhönottopyynnön toimen tila
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Työhönottopyynnön tila
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Säännösten mukainen työluokka
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Palkattava hakija ja liittyvät yksiköt
+              items:
+                - name: Palkattava hakija
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Todistuksen tyyppi
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Osapuolen yhteyshenkilö
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Henkilö
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Henkilön osoite
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Henkilön todistus
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Henkilön koulutus
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: Henkilön henkilötunnus
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Henkilön ammattikokemus
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Henkilön seulonta
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Henkilön taito
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Luokitustaso
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Seulontatyypit
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Esimerkkikysely palkattavaa hakijaa varten
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Hakijan asetusjoukot
+              items:
+                - name: Hakijatoimintojen integroinnin tulos
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Tyhjä Kyllä Ei
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Valmistumisen tila
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Yhteyshenkilötyyppi
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Koulutuksen hyvitysperuste
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Sukupuoli
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Siviilisääty
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Vuoden kuukaudet
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Ei Kyllä
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Kausiyksikkö
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Seulontatiheys
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Seulontatiheyden luontilomake
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Taitotason tyyppi
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Käyttöopas
       items:
         - name: Yleiskatsaus
@@ -439,12 +533,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Asiakasohjelman hälytysilmoitukset sähköpostitse
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Sähköiset allekirjoitukset
-              items:
-                - name: Sähköisten allekirjoitusten yleiskatsaus
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Sähköisten allekirjoitusten määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Palvelupyyntöjen hallinta
               items:
                 - name: Palvelupyynnön hallinnan yleiskatsaus
@@ -591,6 +679,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Hintamuutosten käsittely
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA-raportointi
+                  href: hr-benefits-management-aca-reports.md
             - name: Etuohjelman määrittäminen ja hallinta
               href: hr-benefits-manage-program.md
             - name: Etukelpoisuuden käytännöt
