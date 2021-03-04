@@ -91,3 +91,6 @@ Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmä
     * Jotkin esitäytetyn sekin lomakkeessa olevat nimiöt sisällytetään raporttiin, kun se luodaan testausta varten. Näitä nimiöitä ei kuitenkaan tulosteta todellisen tulostuksen aikana, koska ne ovat jo esitäytetyssä lomakkeessa.  
 15. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

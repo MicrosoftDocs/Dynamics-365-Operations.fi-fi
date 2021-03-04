@@ -62,3 +62,6 @@ Osaamisaluekartoitusprofiilien avulla voit etsiä nykyisiä työntekijöitä tai
 Luomalla osaamisprofiilianalyysin voit tarkastella luetteloa työntekijän, hakijan tai yhteyshenkilön osaamisalueista tiettynä päivänä. Voit luoda osaamisalueaukkoanalyysi, jotta voit verrata henkilön taitoja työhön vaadittaviin taitoihin  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

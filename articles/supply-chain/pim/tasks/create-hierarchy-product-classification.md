@@ -67,3 +67,6 @@ T채ss채 menettelyss채 selvitet채채n, miten uusi luokkahierarkia luodaan, ja m채�
 8. Napsauta luettelossa valitulla rivill채 olevaa linkki채.
 9. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

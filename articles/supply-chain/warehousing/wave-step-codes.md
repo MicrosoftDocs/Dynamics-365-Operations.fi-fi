@@ -93,3 +93,6 @@ Seuraava toimenpide auttaa varmistamaan, että luomasi täydennysmalli otetaan k
 6. Valitse **Aallon vaihekoodi** -kentästä aallon vaihekoodi, jonka valitsit täydennysmallille.
 
 Nämä vaiheet suoritetaan kullekin yritykselle.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

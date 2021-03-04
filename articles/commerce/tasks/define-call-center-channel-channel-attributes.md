@@ -100,3 +100,6 @@ Tässä menettelyssä kerrotaan, miten uusi kaupankäyntikanava luodaan ja miten
 65. Valitse Tallenna.
 66. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

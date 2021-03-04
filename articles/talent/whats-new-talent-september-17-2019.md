@@ -59,3 +59,6 @@ Tässä julkaisussa Työperhe-kenttä on lisätty työn tietojen **Muutosten hal
 Tämä toiminto on nyt käytettävissä eristysympäristöissä. Ota tämä toiminto käyttöön valitsemalla **Järjestelmän hallinta > Linkit > Asetukset > Järjestelmän parametrit > Esiversio-ominaisuudet**. Valitse **Laajennettu työntekijälomake ja siirtyminen**. Nämä muutokset otetaan nyt käyttöön kaikille käyttäjille. Voit poistaa tämän asetuksen käytöstä milloin tahansa.
 
 Lisätietoja on kohdassa [Yksinkertaistettu työntekijöiden lisääminen ja navigointi](./streamlined-employee-entry.md). Tutustu muutoksiin katsomalla video [Dynamics 365 for Talent 2019 -julkaisuaallon 2 yleiskatsaus](https://aka.ms/ROGT19RW2ROV).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ Seuraavassa kuvassa on esimerkki puhelinkeskuskanavien tuoteluokituksista.
 [Hallitse luokituksia ja arvosteluja](manage-reviews.md)
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Peruuta tiliotteen täsmäytys -toiminnon avulla voit peruuttaa tiliotteen täsm
 Tiliotteen täsmäytykset voidaan peruuttaa vain siinä aikajärjestyksessä, jossa ne on syötetty. Kun tiliotteen täsmäytys peruutetaan, uudet tapahtumat ja korjaukset peruutetaan ja kaikki muut tapahtumat merkitään täsmäyttämättömiksi.
  
 Jos haluat peruuttaa tiliotteen täsmäytyksen, valitse tiliote ja valitse sitten **Tiliote > Peruuta pankkitilin täsmäytys**. Anna **Peruuta pankkitilin täsmäytys** -sivulla **Syykoodi**, **Syyn kommentti** ja **Peruutuspäivämäärä**. Aloita peruutus valitsemalla **OK**. Huomautus: tiliotteen peruutus päivämäärän on oltava tiliotteen päivämääränä tai sen jälkeen. Kun tiliotteen täsmäytys on peruutettu, tiliotteen **Peruutuspäivämäärä** -kenttään päivitetään annettu **Peruutuspäivämäärä**. Valitse **Tapahtumat**-painike, jos haluat tarkastella tapahtumia, joiden täsmäytys peruutettiin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

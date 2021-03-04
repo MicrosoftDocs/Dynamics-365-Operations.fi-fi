@@ -478,3 +478,6 @@ Tässä skenaariossa vastaanottava virkailija rekisteröi määrän, joka on suu
     - **Määrä** – Syötä _7_, joka on jäljellä oleva määrä, jonka toimittaja on valtuutettu toimittamaan osana ostotilauksen kokonaismäärää 12 (jossa 10 on alkuperäisen tilauksen määrä ja 2 on 20 prosentin sallittu ylitoimitusmäärä). Muista, että viisi kpl:tta on jo rekisteröity ensimmäistä kuormaa vasten.
 
 Toinen kuorma on nyt päivitetty määrällä 7 ja se voi olla tuotteen vastaanotto-päivitetty tämän määrän perusteella.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

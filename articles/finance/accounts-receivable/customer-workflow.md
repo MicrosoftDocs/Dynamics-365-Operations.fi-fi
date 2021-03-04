@@ -60,3 +60,6 @@ Kun sinulla on vähintään yksi ehdotettu muutos, kaksi uutta valikkoa tulee n�
     Sivun tilaksi muutetaan **Hyväksymistä odottavia muutoksia**.
 
 Työnkulku noudattaa sovelluksen vakiotyönkulkuprosessia. Hyväksyjä ohjataan **Asiakas**-sivulle. Muutokset voidaan tarkistaa **Ehdotetut muutokset** -sivulla ja valita sitten **Työnkulku \> Hyväksy** hyväksyäkseen työnkulun. Kun kaikki hyväksynnät on käyty läpi, kentät päivitetään ehdottamillasi arvoilla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

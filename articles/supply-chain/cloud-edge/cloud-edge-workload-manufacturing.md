@@ -110,3 +110,6 @@ Scale unitissa käsiteltyjen valmistustöiden historiaa voi tarkastella kirjautu
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tuotannon keskuksesta scale unitiin viestikäsittely -työ
 
 _Tuotannon keskuksesta scale unitiin viestikäsittely_ -työ käsittelee tiedot keskuksesta scale unitiin. Tämä työ käynnistyy automaattisesti, kun tuotannonohjauksen kuormitus otetaan käyttöön. Se voidaan kuitenkin suorittaa myös manuaalisesti koska tahansa valitsemalla **Tuotannonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta \> Tuotannon keskuksesta scale unitiin viestikäsittely**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **Todellinen vs.
 | Kirjanpidot                   | Kirjanpidot, joilla raporit suodatetaan nykyiseen kirjanpitoon              |
 | Budjettikoodit              | Budjettikoodit, joiden mukaan raportit suodatetaan                                                |
 | Yritykset            | Yritykset, joilla raporit suodatetaan nykyiseen yritykseen |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

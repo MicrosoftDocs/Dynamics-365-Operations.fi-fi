@@ -91,3 +91,6 @@ Jos olet ottanut **ER:n muotomääritysten laajennettu haku, joka sallii kyselyt
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kehysohjelmointirajapinta](er-apis-app73.md)
 - [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

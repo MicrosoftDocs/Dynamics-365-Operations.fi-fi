@@ -73,3 +73,6 @@ Haamutuoterakenteita voidaan käyttää myös tuoterakenteelle, jossa on reitity
 Seuraavassa kuvassa (a) on tuotteen G ja osan F tuoterakenne ja (b) on tuotteen G ja osan F reititystaulukko.
 
 ![Tuote G ja osa F reititystaulukoiden kanssa](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

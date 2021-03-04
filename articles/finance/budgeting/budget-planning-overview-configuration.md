@@ -205,3 +205,6 @@ Viimeinen vaihe on budjettisuunnitteluprosessin aktivoiminen **Toiminnot**-valik
 Toinen **Toiminnot**-valikon hyödyllinen komento on **Näytä budjettiprosessin tila**. Tämä komento näyttää graafisesti prosessin budjettisuunnitelmat ja niihin liittyvät tiedot, kuten suunnitelmien työnkulun tilan, yhteenvedot summan ja yksikön mukaan sekä budjettisuunnitelmiin siirtymisen yhdellä napsautuksella.
 
 [![Budjetin suunnitteluprosessin tila](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

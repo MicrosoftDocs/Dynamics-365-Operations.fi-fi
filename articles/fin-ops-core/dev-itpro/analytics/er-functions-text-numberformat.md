@@ -77,3 +77,6 @@ Jos maa-asetukset ovat **EN-US**, `NUMBERFORMAT (0.45, "p")` palauttaa arvon **4
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

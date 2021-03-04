@@ -51,3 +51,6 @@ Voit parantaa ennusteen tarkkuuta jättämällä poikkeavat arvot pois. Tämä t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ T채ss채 aiheessa kuvataan, miten m채채rit채t Mobiililaite-valikkovaihtoehdon. T�
 5. Valitse oikealle osoittava nuoli.
 6. Valitse **Tallenna**.
 7. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Kummassakin menetelmässä tietojen päivityskomentosarja käyttää myös numer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

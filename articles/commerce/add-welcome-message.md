@@ -68,3 +68,6 @@ Tervetulosanoma tulee nyt näkyviin jokaisen valittua ylätunnisteosaa käyttäv
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

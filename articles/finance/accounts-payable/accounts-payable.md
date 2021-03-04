@@ -144,3 +144,6 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

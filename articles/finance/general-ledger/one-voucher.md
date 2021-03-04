@@ -186,3 +186,6 @@ Jos myynti- tai ostoreskontran kirjanpitotiliin on tehtävä korjaus, oikaisu on
 ### <a name="the-system-allows-it"></a>Mahdollista järjestelmässä"
 
 Organisaatiot käyttävät usein yhden tositteen toiminnallisuutta vain, koska järjestelmä mahdollistaa sen käytön, vaikka toiminnallisuuden vaikutuksia ei tunneta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

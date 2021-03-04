@@ -50,3 +50,6 @@ Vapautettuja tuotteita luodessasi sinun täytyy valita oletusyksiköt ostoille, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

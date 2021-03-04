@@ -56,3 +56,6 @@ Commerce-parametrit ovat yleensä välimuistissa. Siksi tämän parametrin päiv
 
 - [Myyntipistetoiminto offline-tilassa](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Myyntipisteen toiminnot (POS) verkossa ja paikallisesti](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

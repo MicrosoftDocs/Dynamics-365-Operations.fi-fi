@@ -110,3 +110,6 @@ Jos määrität *Järjestelmäohjattu klusterikeräily* -prosessia käytettäess
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Korjaa tämä ongelma muokkaamalla klusteriprofiilia ja määrittämällä **Aktivoi toimet** -asetukseksi *Ei*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ Käytettävissä on seuraavat tiedot: toimittajan nimi, osoitteet, yhteystiedot,
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ Tämä julkaisu tarjoaa nyt mahdollisuuden käyttää tarkistusluetteloita työn
 Tämä toiminto on nyt käytettävissä eristysympäristöissä. Ota tämä toiminto käyttöön valitsemalla **Järjestelmän hallinta > Linkit > Asetukset > Järjestelmän parametrit > Esiversio-ominaisuudet**. Valitse **Laajennettu työntekijälomake ja siirtyminen**. Nämä muutokset otetaan nyt käyttöön kaikille käyttäjille. Voit poistaa tämän asetuksen käytöstä milloin tahansa.
 
 Lisätietoja on kohdassa [Yksinkertaistettu työntekijöiden lisääminen ja navigointi](./streamlined-employee-entry.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

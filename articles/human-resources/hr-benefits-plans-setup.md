@@ -159,3 +159,6 @@ Voit antaa kuvauksen suunnitelmasta auttaaksesi työntekijöitä etuusvalinnoiss
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
 2. Valitse **Joustoluotto-ohjelmat**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

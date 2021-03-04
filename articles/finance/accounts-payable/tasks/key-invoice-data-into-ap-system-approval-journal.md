@@ -54,3 +54,6 @@ Tässä ohjeaiheessa kerrotaan, miten luodaan laskuja laskurekisterin avulla ja 
 10. Valitse **Kirjaa**.
 11. Valitse **Tosite**, kun haluat tarkastella kirjattuja syöttöjä. Hyväksyntää odottavien laskujen tili peruutetaan ja korvataan toteutuneella kulutilillä.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

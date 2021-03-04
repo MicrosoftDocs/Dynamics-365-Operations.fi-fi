@@ -64,3 +64,6 @@ Ajoita automaattinen tehtävä, joka tyhjentää erätyöhistoriasi. Suosittelem
 
 8. Muuta muita parametrejä **Suorita taustalla**-osiosta tarvittaessa ja valitse sitten **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

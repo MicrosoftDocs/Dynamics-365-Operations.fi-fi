@@ -101,3 +101,6 @@ Kaikilla tietyn tarkastuskäytännön säännöillä on samat eräparametrit ja 
 [Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

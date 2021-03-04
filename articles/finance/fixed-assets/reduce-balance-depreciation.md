@@ -85,3 +85,6 @@ Jäännösarvopoisto-menetelmää käytettäessä lasketaan 30 prosenttia edelli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

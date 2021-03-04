@@ -61,3 +61,6 @@ Tässä aiheessa käsitellään vastaanotettujen nimikkeiden poispanossa käytet
 6. Kirjoita **Työluokan tunnus** -kenttään arvo. Keräily- ja määritysohjeet kuuluvat yhteen. Jokaisella keräily/määritys-joukolla on oltava sama työluokka. Käytä samaa, keräilyohjeessa ilmoitettua työluokkaa.  
 7. Valitse **Tallenna**. Huomaa, että **Voimassaoleva**-valinta on nyt valittuna.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

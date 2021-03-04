@@ -114,3 +114,6 @@ Voit kopioida taloudelliset dimensiot asiakirjojen ylätunnisteisiin tai ostosop
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

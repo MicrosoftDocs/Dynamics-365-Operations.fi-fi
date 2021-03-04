@@ -80,3 +80,6 @@ T채m채 toiminnallisuus on k채ytett채viss채 kaikille rooleille, jotka voivat yll�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

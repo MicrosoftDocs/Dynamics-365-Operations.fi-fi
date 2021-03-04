@@ -194,3 +194,6 @@ Seuraavassa kuvassa on esimerkki **Kaikki resurssit**-sivulla resurssille määr
 
 ![Kuva 7](media/08-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

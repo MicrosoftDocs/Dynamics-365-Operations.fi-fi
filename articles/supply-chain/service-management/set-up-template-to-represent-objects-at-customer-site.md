@@ -55,3 +55,6 @@ Tämän menettelyn avulla voit määrittää mallin, joka kuvaa asiakkaan toimip
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

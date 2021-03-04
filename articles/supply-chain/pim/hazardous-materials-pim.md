@@ -61,3 +61,6 @@ Voit aloittaa näiden tietojen määrittämisen luomalla säädöksen, jonka avu
 ## <a name="warehouse-management"></a>Varastonhallinta
 
 Lähetyksen valmistelun yhteydessä voi tulostaa useita uusia raportteja. Näissä raporteissa käytetään tuotetietojen hallinnassa määritettyjä tietoja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

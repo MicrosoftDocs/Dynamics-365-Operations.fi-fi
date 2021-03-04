@@ -70,3 +70,6 @@ Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää 
     - **Vapauta ja lähetä** -toiminto on käytettävissä vain, kun käytät Puhelinkeskus-toimintoa.  
 8. Valitse **Vapauta pidot**. Tilauksen pito on nyt vapautettu ja se on poistettu aktiivisten pitojen luettelosta. Jos haluat nähdä kaikki pidot tai niiden alijoukot tietyn tilaan mukaan, muuta Näytä-kentän arvoa.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

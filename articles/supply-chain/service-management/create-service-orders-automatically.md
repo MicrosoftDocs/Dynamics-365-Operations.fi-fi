@@ -71,3 +71,6 @@ Kun huoltotilauksia luodaan manuaalisesti tai automaattisesti huoltosopimusrivil
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

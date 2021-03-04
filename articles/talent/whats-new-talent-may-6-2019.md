@@ -93,3 +93,6 @@ Mahdollisuus seurata työntekijöiden aikaa ja ymmärtää, kuinka aikaa lasketa
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Määritä esiintymätyyppi, kun Talentia valmistellaan
 
 Uuden Talent-esiintymän valmistelun yhteydessä voit määrittää, onko esiintymän tyyppi **Tuotanto** vai **Eristys**, mahdollistaen uusien ominaisuuksien varhaisen testaamisen. Kaikki aiemmin luodut Talent-esiintymät päivitetään tuotantoesiintymän tyyppiin. Jos haluat, että jokin olemassa olevista instansseista päivitetään eristysesiintymätyypiksi, ota yhteyttä tukeen ja tee muutospyyntö.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

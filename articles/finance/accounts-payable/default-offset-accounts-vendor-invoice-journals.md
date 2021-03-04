@@ -98,3 +98,6 @@ Seuraavan taulukon avulla voit p채채tt채채, mihin oletustilit ja vastatilit m채�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

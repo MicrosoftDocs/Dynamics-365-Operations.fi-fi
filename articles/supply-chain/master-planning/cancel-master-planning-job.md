@@ -53,3 +53,6 @@ Näitä tulisi käyttää vain jos pääsuunnittelutyön peruutus **Keskeneräis
 4. Valitse **Erätehtävissä** tehtävät, jotka haluat lopettaa.
 5. Valitse ensin **Muuta tilaa**, sitten **Peruuttaminen** ja lopuksi **OK**.
 6. Valitse **Erätehtävät**-pikavälilehdellä **Keskeytä**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

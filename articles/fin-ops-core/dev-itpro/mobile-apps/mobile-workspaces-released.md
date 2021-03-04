@@ -41,3 +41,6 @@ Tässä ohjeaiheessa on luettelo Dynamics 365 for Unified Operations -mobiilisov
 | [Myyntitilaukset](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Pysyt ajan tasalla myyntitilauksista.                                                                                                                          |  2017. tammikuuta                  |
 | [Toimittajayhteistyö](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja. |2017. tammikuuta    |
 | [Resurssien hallinta](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Tämä työtila antaa käyttäjien tarkastella ja luoda ylläpitopyyntöjä ja työtilauksia. Käyttäjät voivat myös tarkastella määritettyjä työtilaustöitä kalenteri- tai luettelonäkymässä. Myös käyttökohteita ja toiminnallisia sijainteja voidaan tarkastella ja etsiä. |2019. lokakuuta    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

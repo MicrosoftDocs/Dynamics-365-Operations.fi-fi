@@ -64,3 +64,6 @@ Toimittajat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaik
 
 1. Näkyviin tulee **Kopioi toimittaja** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida toimittajan nykyiseen yritykseen valitsemalla **Kyllä**.
 2. Valitse **Valitse**. Uusi toimittaja luodaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

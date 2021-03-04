@@ -58,3 +58,6 @@ Kausikirjauskansioita kutsutaan joskus toistuviksi kirjauskansioiksi, koska summ
 27. Syötä tai valitse arvo **Kausikirjauskansion numero**-kenttään.
 28. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 29. Valitse **OK**. Kausikirjauskansio voidaan nyt tarkistaa, hyväksyä tai kirjata tarpeiden ja asetusten perusteella.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

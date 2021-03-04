@@ -71,3 +71,6 @@ Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin
 + [Määritä rinnakkaiset haarat työnkulussa](configure-parallel-branch-workflow.md)
 + [Rivinimikkeen työnkulkujen määrittäminen](configure-line-item-workflow.md)
 + [Työnkulun usein kysytyt kysymykset](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

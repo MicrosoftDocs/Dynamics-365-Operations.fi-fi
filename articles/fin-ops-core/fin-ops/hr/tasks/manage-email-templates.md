@@ -47,3 +47,6 @@ Voit siirtää tietoja organisaation tietokannasta uuden asiakirjan kirjanmerkke
 8. Jatka sähköpostiviestin kirjoittamista. Lisää kirjanmerkkikenttiä tarvittaessa.
 9. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

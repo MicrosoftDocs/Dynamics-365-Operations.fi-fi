@@ -176,3 +176,6 @@ Lisätietoja asiakasportaalin määrittämisestä ja mukauttamisesta on seuraavi
 - [Portaalin päivittäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portaalin konfiguraation siirtäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Ratkaisun elinkaaren hallinta: Dynamics 365 for Customer Engagement -sovellukset](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

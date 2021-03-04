@@ -98,3 +98,6 @@ Voit määrittää useita tuoterakenteen laskentaryhmiä sen mukaan, miten paljo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

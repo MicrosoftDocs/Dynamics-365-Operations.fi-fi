@@ -63,3 +63,6 @@ MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan as
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivoiminen](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

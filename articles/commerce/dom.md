@@ -256,3 +256,6 @@ Seuraavat asiat on hyvä huomioida JTH-ominaisuutta käytettäessä:
 - Tällä hetkellä JTH tarkastelee vain Commerce-kanavissa luotuja tilauksia. Myyntilaukset tunnistetaan vähittäismyynnin myyntitilauksiksi, kun **Commerce-myynti**-asetukseksi on määritetty **Kyllä**.
 - Microsoft ei ole testannut JTH-ominaisuutta edistyneen varastonhallinnan ominaisuuksien kanssa. Asiakkaiden ja kumppanien on huolellisesti selvitettävä, onko JTH yhteensopiva heille tärkeiden edistyneen varastonhallinnan ominaisuuksien ja prosessien kanssa.
 - JTH on saatavissa vain Commerce-ratkaisun pilvipalveluversioon. Sitä ei tueta paikallisissa käyttöönotoissa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

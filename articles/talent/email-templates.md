@@ -81,3 +81,6 @@ Kun työhönottoryhmä lähettää sähköpostiviestin, se voi käyttää järje
 
 > [!NOTE] 
 > Automaattisesti lähetettäville sähköpostiviesteille voidaan luoda useita malleja. Kuitenkin vain yksi malli voidaan määrittää aktiiviseksi malliksi. Koska tapahtumat käynnistävät tämän prosessin, vain järjestelmänvalvoja voi määrittää käytettävän mallin mallikirjaston **Oletus**- ja **Automaattilähetys**-merkintäyhdistelmän perusteella.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

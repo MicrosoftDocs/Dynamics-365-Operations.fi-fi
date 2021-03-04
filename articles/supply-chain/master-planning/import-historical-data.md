@@ -59,3 +59,6 @@ Kun historialliset kysyntätiedot on tuotu, voit luoda kysynnän ennusteen.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

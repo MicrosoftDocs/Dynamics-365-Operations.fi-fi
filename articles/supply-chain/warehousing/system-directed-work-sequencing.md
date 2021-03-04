@@ -305,3 +305,6 @@ Järjestelmän ohjaamat työsarjakyselyt ovat *sisältyviä*. On tärkeää, ett
 Tämän skenaarion esimerkissä myös kysely kaappasi työtunnuksen *4*. Kun se luotiin, lisättiin kaksi riviä: yksi 25 kpl:tta ja toinen 10 kpl:tta varten. Työ on vielä esitetty käyttäjälle, koska vähintään yhden työrivin määrä on pienempi kuin 20 kpl:tta.
 
 Skenaarion mukaan voit estää tämän ongelman käyttämällä työtaukoja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

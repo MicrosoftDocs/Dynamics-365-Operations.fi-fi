@@ -168,3 +168,6 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 66. Sulje sivu.
 67. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

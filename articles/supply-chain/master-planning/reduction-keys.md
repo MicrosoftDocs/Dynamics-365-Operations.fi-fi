@@ -227,3 +227,6 @@ Kun valitset **Tapahtumat - vähennysavain** tai **Tapahtumat - dynaaminen kausi
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Pääsuunnitelmien yleiskatsaus](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

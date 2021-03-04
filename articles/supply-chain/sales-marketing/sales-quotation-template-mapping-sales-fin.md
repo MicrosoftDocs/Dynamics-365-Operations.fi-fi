@@ -143,3 +143,6 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integrointiohj
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

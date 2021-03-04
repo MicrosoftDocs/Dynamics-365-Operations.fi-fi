@@ -133,3 +133,6 @@ Seuraavien vaiheiden avulla voit luoda luettelon korjausehdotuksista, jotka void
 
 > [!NOTE]
 > Voit muuttaa vian oireiden, alueiden, tyyppien, syiden ja korjaustoimenpiteiden nimiä tarpeen mukaan. Nimen muutokset näkyvät automaattisesti liittyvissä vikarekisteröinneissä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

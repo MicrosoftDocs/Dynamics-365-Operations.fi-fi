@@ -52,3 +52,6 @@ Osastot ovat toimintayksiköitä, jotka vastaavat liiketoiminta-alueita, kuten m
 16. Kirjoita arvo Kuvaa muutokset -kenttään.
 17. Valitse Julkaise.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

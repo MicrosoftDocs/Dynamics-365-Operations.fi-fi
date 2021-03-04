@@ -54,3 +54,6 @@ Erätyö on joukko tehtäviä, jotka lähetetään Application Object Server -pa
     - **Pidätä**: Määritä erätyö **pidätettynä**, jolloin sitä ei anneta erätyön ajastukseen. Vastaa *pysäyttämistä*.
     - **Odottaa**: Määritä erätyö **odottavaksi**, jolloin se odottaa erätyön ajastuksen tekemään poimimista. Vastaa *siirtymistä*.
 5. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

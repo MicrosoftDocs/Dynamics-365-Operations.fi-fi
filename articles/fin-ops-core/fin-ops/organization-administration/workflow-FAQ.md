@@ -59,3 +59,6 @@ Kun Active Directory -liittämispalvelut (AD FS) suoritetaan päivitetyssä ymp�
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Mikä työnkulun parannettu virhetoiminto on?
 Version 10.0.13 työnkulun parannettu virhetoiminto lisää virhekoodit erojen tekemiseksi työnkulun virheiden luokkien välillä. Ilmoitetut virhesanomat ovat enimmäkseen samoja, mutta pienin selkeyttävin eroin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

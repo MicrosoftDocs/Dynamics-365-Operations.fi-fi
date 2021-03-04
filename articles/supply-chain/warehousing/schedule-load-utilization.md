@@ -72,3 +72,6 @@ Voit suunnitella tilan käyttöä luomalla **Varastokuormituksen käyttöaste** 
 
 4. Määrittämällä **Kuormitustyyppi**-kentässä **Tilavuus** tai **Paino** osoitat, mille varastotoimintayksikölle tilaa arvioidaan.
 5. Valitse **Tilan käytön asetukset** -kentässä ne tilan käytön asetukset, joihin projektio perustuu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

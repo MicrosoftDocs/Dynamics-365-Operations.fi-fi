@@ -96,3 +96,6 @@ Raporttien luominen, tarkasteleminen ja ajoittaminen on helppoa seuraavien talou
 
 ## <a name="additional-resources"></a>Lisäresurssit
 [Raporttien luonti](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

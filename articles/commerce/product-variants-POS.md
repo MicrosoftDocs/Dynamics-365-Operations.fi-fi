@@ -115,3 +115,6 @@ Seuraavassa taulukossa on lisätietoja käytettävissä olevista toiminnoista.
 | Käytettävyys         | Näytä valitun sijainnin valitun varianttiyhdistelmän ATP-tiedot. |
 | Näytä kaikki sijainnit   | Vaihda varastohaun vakionäkymään ja korosta nimikevariantiin varaston saatavuustiedot kaikissa myymälän paikanninryhmän myymälöissä sekä **vakio- tai oletustyypin** jakelukeskuksissa. |
 | Näytä tuotteen tiedot | Ohjaa käyttäjä liitetyn päätuotteen **Tuotteen tiedot** -sivulle. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

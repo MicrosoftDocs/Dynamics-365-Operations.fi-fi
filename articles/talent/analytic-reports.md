@@ -88,3 +88,6 @@ Yksi Power BI -järjestelmän suurista ominaisuuksista on se, miten kaikki rapor
 ## <a name="export-to-excel"></a>Vie Exceliin
 
 Jos haluat tarkastella raportin tietoja Excelissä, voit napsauttaa asetukset-valikkoa (kolme pistettä) visuaalisessa näkymässä ja valita **vie pohjana olevat tiedot**. Viedyt tiedot viedään suodatettuina ja niiden käyttöoikeudet otetaan huomioon Attractissa. Lisätietoja on kohdassa [tietojen vieminen visualisoinnin](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)avulla.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

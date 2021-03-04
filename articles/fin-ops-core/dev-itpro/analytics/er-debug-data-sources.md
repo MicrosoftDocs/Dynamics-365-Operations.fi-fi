@@ -281,3 +281,6 @@ Jos jokin aiemmin luetelluista konfiguraatioista puuttuu määrityspuusta, ne on
 6. Valitse **Pankkitili**-kentässä **DEMF OPER**.
 7. Valitse **Luo maksuja** -valintaikkunassa **OK**.
 8. Valitse **Sähköisen raportin parametrit** -valintaikkunasta **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

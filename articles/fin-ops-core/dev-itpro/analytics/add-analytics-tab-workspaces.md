@@ -175,3 +175,6 @@ public static void initializeReportControl(
 | showFilterPane   | Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (**tosi**) vai piilotetaanko se (**epätosi**).     |
 | showNavPane      | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (**tosi**) vai piilotetaanko se (**epätosi**). |
 | defaultFilters   | Power BI -raportin oletussuodattimet.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

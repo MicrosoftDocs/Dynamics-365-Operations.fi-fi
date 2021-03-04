@@ -207,3 +207,6 @@ Ennen kuin voit määrittää järjestelmäohjatun klusterikeräilyn, sinun on l
 1. Viimeinen vaihe mobiililaitteessa on **sijoittaa** klusteri lopulliseen sijaintiin. Valitse **OK**
     - Kun sijoitustoiminto on vahvistettu, klusteri suljetaan ja hajotetaan sen mukaan, mikä arvo on klusteriprofiilin **Hajota klusteri** -kentässä. Myös työtunnukset suljetaan.
 1. Mobiililaitteessa näkyy Klusteri valmis -sanoma.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

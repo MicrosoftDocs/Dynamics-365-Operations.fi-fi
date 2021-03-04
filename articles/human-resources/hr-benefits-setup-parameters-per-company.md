@@ -42,3 +42,5 @@ Jokaiselle etuja tarjoavalle yritykselle on määritettävä asetukset etujen va
    | **Lähettäjän oletussähköpostiosoite** | Sähköpostiosoite, jota käytetään vahvistussähköpostiviestin lähettämisessä. |
 
 3. Valitse **Tallenna**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

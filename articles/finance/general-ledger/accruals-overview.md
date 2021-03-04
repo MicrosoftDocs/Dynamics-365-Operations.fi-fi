@@ -46,3 +46,6 @@ Kirjauskansiota syötettäessä napsauta **Kirjanpidon jaksotukset** **Toiminnot
 
 
 Lisätietoja on ohjeaiheissa [Jaksotusmallien luominen](tasks/create-accrual-schemes.md) ja [Kirjanpidon jaksotustapahtumien luominen](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Varastot (Supply Chain Managementista Field Serviceen): Varasto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

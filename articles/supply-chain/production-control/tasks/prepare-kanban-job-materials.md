@@ -42,3 +42,6 @@ Tässä tehtävässä keskitytään prosessin kanban-työn valmistelemiseen sill
 6. Valitse Valmistele.
     * Prosessin valmistelu on nyt valmis. Keräysluettelon rivien valintaruutujen valinta osoittaa, niiden toimituksen tila on Kerätty.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

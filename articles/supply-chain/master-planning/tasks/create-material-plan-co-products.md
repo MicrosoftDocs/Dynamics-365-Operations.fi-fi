@@ -111,3 +111,6 @@ Tuotannon suunnittelija suunnittelee materiaalitarpeet nimikkeille, jotka ovat r
 19. Valitse Ei-vaihtoehto Poista käytöstä kaikki suunnitteluprosessit -kentässä.
 20. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

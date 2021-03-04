@@ -65,3 +65,6 @@ Tässä osoitetaan, miten myyntitilaukselle luodaan toimitusaikataulu. Toimitusa
 22. Valitse OK.
 23. Valitse Kyllä.
 24. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

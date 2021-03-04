@@ -62,3 +62,6 @@ Tässä menettelyssä esitellään asiakkaan etsiminen, uuden tilauksen luominen
 
 [Toimitustavan muuttaminen myyntipisteessä](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

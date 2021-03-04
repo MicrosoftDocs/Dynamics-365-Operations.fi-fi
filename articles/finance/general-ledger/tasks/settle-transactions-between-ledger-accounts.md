@@ -49,3 +49,6 @@ Tässä menettelyssä käsitellään, miten kirjanpitotilien väliset tapahtumie
 7. Valitse Tapahtuman selvitykset.
 8. Merkitse valittu rivi luettelossa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

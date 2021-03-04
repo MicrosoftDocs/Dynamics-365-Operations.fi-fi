@@ -47,3 +47,6 @@ Voit kirjata siirtymän oikaisun uusien kirjanpitostandardien mukaan seuraavasti
 
 5. Jos haluat tarkastella kirjauskansiovientiä, valitse **Resurssin leasingkirjauskansiot**.
 6. Valitse uusi kirjauskansio ja valitse sitten **Kirjaa**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

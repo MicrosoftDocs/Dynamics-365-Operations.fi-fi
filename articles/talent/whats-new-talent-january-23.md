@@ -53,3 +53,6 @@ Tällä muutoksella **Koeaika**- ja **Kalenteri**-kentät on lisätty **Muutoste
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Ympäristön päivitys 23 Finance and Operationsille
 Finance and Operationsin Platform update 23 -päivitykseen on sisällytetty vähäisiä ohjelmakorjauksia. Lisätietoja on kohdassa [Dynamics 365 Finance and Operations platform update 23:n uudet tai muuttuneet ominaisuudet (tammikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

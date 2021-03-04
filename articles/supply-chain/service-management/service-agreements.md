@@ -79,3 +79,6 @@ Kullakin huoltosopimusrivillä kuvataan tarkasti ehdotetun huoltotyön sisältö
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Huoltosopimusten luominen](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Lisätietoja on kohdassa [Johdetut kirjat](derived-books.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

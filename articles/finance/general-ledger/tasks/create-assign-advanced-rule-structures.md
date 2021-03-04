@@ -59,3 +59,6 @@ T채ss채 ohjeaiheessa kerrotaan, kuinka voit luoda ja m채채ritt채채 lis채s채채nt�
 17. Sulje sivu.
 18. Valitse **Aktivoi**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

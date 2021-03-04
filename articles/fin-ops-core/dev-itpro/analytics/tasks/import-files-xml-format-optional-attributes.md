@@ -123,3 +123,6 @@ Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköis
 
 > [!NOTE]
 > Sama tiedosto on tuotu, sillä muodon rakenne käsittelee document-elementit id-määritettä nyt valinnaisena.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Lisätietoja on ohjeaiheessa [Hankkia omaisuuseriä hankintojen kautta](acquire-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

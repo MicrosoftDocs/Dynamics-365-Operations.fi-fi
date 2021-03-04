@@ -73,3 +73,6 @@ T채ss채 aiheessa kuvataan, kuinka voit asettaa rahdinkuljettajan ja m채채ritt채�
 9. Valitse **Siirtoajan laskenta**-kent채st채 vaihtoehto avattavasta valikosta.
 10. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

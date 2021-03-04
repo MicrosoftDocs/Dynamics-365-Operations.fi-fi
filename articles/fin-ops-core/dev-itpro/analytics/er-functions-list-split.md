@@ -85,3 +85,6 @@ Jos `input`-argumentti on tyhjä, palautettava uusi luettelo on tyhjä. Jos `inp
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

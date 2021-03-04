@@ -56,3 +56,6 @@ Tämän viikon muutokset korjaavat ongelman, jonka vuoksi kalenteripäiviä ei v
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Nykyinen saldoraportti loma-PBI:ssä kaksinkertaistaa työntekijän saldon (385581)
 
 Tämä muutos korjaa nykyisen saldoraportin tässä skenaariossa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Tässä tehtävän ohjauksessa kuvataan myyntitilauksen laskuttaminen sekä lask
 10. Valitse **Peruuta**.
 11. Valitse **Kyllä**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

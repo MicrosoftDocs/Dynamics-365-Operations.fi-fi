@@ -57,3 +57,6 @@ Tässä aiheessa kerrotaan, miten luodaan myyntisopimus, jossa yksi asiakas sito
 11. Valitse **OK**.
 12. Sulje sivu. Sopimus on nyt voimassa. Voit aloittaa asiakkaan tilausten linkittämisen sopimukseen, jossa ne vastakirjataan sitoumustavoitteeseen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

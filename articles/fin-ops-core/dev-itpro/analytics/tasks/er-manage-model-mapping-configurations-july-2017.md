@@ -161,3 +161,6 @@ Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla,
 7. Valitse OK.
     * Tämä mallin yhdistämismäärityksen määritys käyttää mallin yhdistämismäärityksen oletusmääritystä sähköisen asiakirjan (luotu tuloste sisältää yrityskoodin) luomiseen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

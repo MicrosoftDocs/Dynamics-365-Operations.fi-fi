@@ -46,3 +46,6 @@ Voit valita liukuvan keskiarvolaskennan varauksen kustannusjärjestyksen noudatt
     - **Aktiivinen kustannus – nimike hinta** – Organisaatioissa saattaa ilmetä suorituskykyongelmia, jos ne käyttävät liiketoimintaprosesseja, joissa varasto säännöllisesti muuttuu negatiiviseksi ja samaan aikaan transaktion määrä on suuri. Tämän asetuksen avulla voit lieventää suorituskykyongelmia.
 
 ![Varastokirjanpitoparametrit](media/inventory-accounting-parameters.png "Varastokirjanpitoparametrit")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

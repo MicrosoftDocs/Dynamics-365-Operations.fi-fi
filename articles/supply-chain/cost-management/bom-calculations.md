@@ -95,3 +95,6 @@ Tilauskohtainen tuoterakennelaskenta on valmistetun nimikkeen tuoterakennelasken
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

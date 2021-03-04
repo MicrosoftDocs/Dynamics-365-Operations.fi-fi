@@ -39,3 +39,6 @@ Asiakas voi ratkaista ongelman noudattamalla käyttöoikeusroolin kaksoiskappale
 3. Valitse **Tallenna**.
 
 ![Yleisen osoitekirjan parametrit -sivu](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

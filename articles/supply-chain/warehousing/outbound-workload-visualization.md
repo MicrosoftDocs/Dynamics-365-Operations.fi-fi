@@ -98,3 +98,6 @@ Seuraavassa kuvassa on esimerkki tuloksena saatavasta kaaviosta.
 ![Vyöhykkeen ja työn tilan vertailun visualisointi](media/work-viz-chart.png "Vyöhykkeen ja työn tilan vertailun visualisointi")
 
 Kaaviossa on kaksi vyöhykettä, **TUOTANTO** ja **MÄÄRÄ**, sekä **Tyhjä**-niminen vyöhyke. **Tyhjä**-vyöhyke ilmaisee kaikki työrivit, jotka eivät ole vyöhykkeiden jäseniä. Kaavio näyttää aina kaikki ei-liittyvät suodatut tiedot **tyhjänä**, sillä näin saadaan mahdollisimman suuri näkyvyys. **TUOTANTO**-vyöhykkeen osalta kaavio näyttää kolme suljettua riviä ja neljä avointa riviä. **MÄÄRÄ**-vyöhykkeen osalta kaavio näyttää neljä suljettua riviä, yhden avoimen rivin ja 24 peruutettua riviä. Kaaviossa on vielä kahdeksan suljettua riviä, jotka eivät kuulu mihinkään vyöhykkeeseen ja jotka ovat siksi **Tyhjä**-vyöhykkeessä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

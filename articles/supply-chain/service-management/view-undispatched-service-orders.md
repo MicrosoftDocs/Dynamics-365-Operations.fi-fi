@@ -61,3 +61,6 @@ Tässä ohjeaiheessa kuvataan, kuinka sellaisen huoltotilauksen toimintoja voida
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

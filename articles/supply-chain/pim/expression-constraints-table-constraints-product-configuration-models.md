@@ -254,3 +254,6 @@ Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

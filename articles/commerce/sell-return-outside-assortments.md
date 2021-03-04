@@ -46,3 +46,6 @@ Nämä yleiset skenaariot ovat jälleenmyyjien käytettävissä Commercessa. Com
 + Nouda nykyisen myymälän tai toisen myymälän tuotteita.
 + Peruuta nykyisen myymälän tai toisen myymälän tuotteiden tilaus.
 + Tilauksen palauttaminen kuitin kanssa tai ilman nykyiseen tai toiseen myymälään.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Voit helpottaa ja nopeuttaa kuhunkin sijaintidirektiiviriviin liitettyjen toimin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

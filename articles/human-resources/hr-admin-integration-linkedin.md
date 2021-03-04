@@ -190,3 +190,6 @@ Seuraava tiedot tuodaan, ja ne sisältyvät työntekijätietueeseen:
 
 [Common Data Service -virtuaaliyksiköiden määrittäminen](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Mikä on Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

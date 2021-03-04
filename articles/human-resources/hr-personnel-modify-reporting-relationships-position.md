@@ -44,3 +44,6 @@ Tässä menettelyssä näytetään, miten työntekijän raportointisuhde muuteta
 12. Anna tai valitse Raportoi toimelle -kentässä arvo.  Esimerkki: 000437
 13. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -226,3 +226,6 @@ Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käyt
     1. Valitse päivitettävä asettelu.
     2. Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.
     3. Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

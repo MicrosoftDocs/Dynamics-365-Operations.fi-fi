@@ -61,3 +61,6 @@ Kuljettajan lasku ja rahtilasku täsmäytetään rivi kerrallaan.
 5. Avaa Viitekirjauskansion numero -kentän linkki napsauttamalla.
 6. Valitse Rivit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

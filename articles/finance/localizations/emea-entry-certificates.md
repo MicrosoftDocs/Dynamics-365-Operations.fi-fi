@@ -126,3 +126,6 @@ Jos sinulla ei ole niiden sivujen käyttöoikeutta, joita käytetään tämän t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

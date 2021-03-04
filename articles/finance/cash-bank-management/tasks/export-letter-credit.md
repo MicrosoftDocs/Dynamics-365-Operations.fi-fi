@@ -140,3 +140,6 @@ Suorittaa Määritä pankin limiitit ja kirjausprofiilit - ja Luo pankin limiitt
 3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
     * Tarkista, että Lähetyksen tila = Maksu vastaanotettu ja saldon summa = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

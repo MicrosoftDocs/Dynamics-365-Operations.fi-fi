@@ -41,3 +41,6 @@ Menettely koskee sellaista palautustilauksen vastaanottoprosessin käsittelykood
 6. Kirjoita arvo Palauta käsittelykoodi -kenttään.
     * Palautuksen käsittelykoodi määrittää rekisteröityjen nimikkeiden jäljellä olevat palautustilausprosessit. Tässä esimerkissä asiakkaan pitäisi saada hyvityslasku. Lisää palautuksen käsittelykoodi, joka sisältää hyvitystoiminnon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

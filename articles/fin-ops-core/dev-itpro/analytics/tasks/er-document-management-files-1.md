@@ -74,3 +74,6 @@ Luot oman myyntilaskumallin konfiguraation johtamalla sen Microsoftin tarjoamast
 3. Syötä Nimi-kenttään "Customer invoice model (custom)".
 4. Valitse Luo konfiguraatio.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

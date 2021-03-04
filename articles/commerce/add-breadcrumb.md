@@ -95,3 +95,6 @@ Voit lisätä linkkipolkumoduulin PDP:hen ja määrittää pakolliset ominaisuud
 [Ostoruutumoduuli](add-buy-box.md)
 
 [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

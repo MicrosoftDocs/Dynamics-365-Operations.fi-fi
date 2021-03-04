@@ -93,3 +93,6 @@ Voit myös käyttää kaksinkertaista tasoa. Jos valitset **hinta-asetus**-lomak
    | **Bonushyvitykset - määrä tupakoivalle** | Joustohyvitysten määrä, joka perustuu lisäkustannuksiin, jotka perustuvat tupakoivien tasolla määritettyyn tasoon. |
 
 5. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

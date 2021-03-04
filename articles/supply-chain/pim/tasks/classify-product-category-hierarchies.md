@@ -43,3 +43,6 @@ Tässä aiheessa kuvataan, miten tuote luokitellaan luokkahierarkioiden avulla. 
 11. Anna tai valitse **Luokka**-kentässä arvo.
 12. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Tässä menettelyssä kerrotaan, miten etu vanhenee tai miten sitä laajennetaan
 15. Valitse Edut.
 16. Etsi luettelosta etu ja valitse tietue. Ota huomioon uusi kattavuuden päättymispäivä.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

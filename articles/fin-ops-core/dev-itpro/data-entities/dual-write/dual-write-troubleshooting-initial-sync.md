@@ -211,3 +211,6 @@ Jos asiakasentiteetin rivien **ContactPersonID**- ja **InvoiceAccount**-kentiss�
     Rivien ensimmäinen synkronointi on nyt valmis.
 
 8. Ota muutosten seuranta taas käyttöön Finance and Operations -sovelluksen **Asiakkaat V3** -entiteetissä.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

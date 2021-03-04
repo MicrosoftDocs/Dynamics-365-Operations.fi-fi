@@ -94,3 +94,6 @@ Ennen kuin voit suorittaa tämän ohjeaiheen menettelyt loppuun, seuraavien vaih
 [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

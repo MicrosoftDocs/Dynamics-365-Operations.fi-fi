@@ -165,3 +165,6 @@ Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

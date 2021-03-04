@@ -221,3 +221,6 @@ Yhteensopivuus tarkistetaan seuraavasti:
 1. Valitse toimintoruudun **Kuormat**-välilehden **Toiminnot**-ryhmässä **Yhteensopivuustarkistus**.
 
 Saat ilmoituksen tarkistuksen tuloksista.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

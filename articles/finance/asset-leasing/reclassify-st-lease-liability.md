@@ -41,3 +41,6 @@ Voit luoda ja kirjata lyhytaikaisen velan uudelleenluokituskirjauskansioviennin 
 4. Ota käyttöön **Kirjaa**-parametri. Vaihtoehtoisesti voit jättää tämän parametrin pois käytöstä, jos vienti luotava mutta ei kirjattava.
 5. Ota käyttöön **Esikatselu ennen kirjaamista** -parametri, jos haluat tarkastella vientiä ennen sen kirjaamista.
 6. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

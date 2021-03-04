@@ -56,3 +56,6 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 - [Verkkokauppasivustosi hallinta](online-store-overview.md)
 - [Petosten torjunta](dev-itpro/DFP.md)
 - [Kaupan kehittäminen ja laajennettavuus](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

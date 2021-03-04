@@ -63,3 +63,6 @@ Seuraavassa on joitakin tyypillisiä **Tuotannon korvaus** varianssin lähteitä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

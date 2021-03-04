@@ -139,3 +139,6 @@ Kun olet luonut työtilauksille tarvittavat elinkaaritilat, ne voidaan jakaa ty�
 9. Tallenna työtilauksen elinkaarimalli.
 
 ![Työtilausten elinkaarimallisivu](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

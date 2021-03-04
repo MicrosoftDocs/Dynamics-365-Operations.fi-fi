@@ -99,3 +99,6 @@ Seuraava tehtävä on luoda tarjouspyyntö toimittajien tuotetarjouksia varten. 
 8. Valitse sivu.
 9. Valitse Valmis.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

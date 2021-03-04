@@ -150,3 +150,6 @@ Voit tarkastella myös tiettyjen tilien, tilausten ja nimikkeiden kassavirtaennu
 - **Tarjontaennuste**: voit tarkastella valitun nimikkeen tarjontaennusteeseen liitettyjä kassavirtoja valitsemalla **Kassavirtaennusteet**.
 - **Kysynnän ennuste**: voit tarkastella valitun nimikkeen kysynnän ennusteeseen liitettyjä kassavirtoja valitsemalla **Kassavirtaennusteet**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

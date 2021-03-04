@@ -119,3 +119,6 @@ Määritä kirjausprofiili määrittämällä seuraavat arvot
 | **Tilitys** | Ota tämän kirjausprofiilin sisältävien tapahtumien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti **Tilitä avoimet tapahtumat** -sivulla. |
 | **Peruuta**     | Valitse tämä asetus, jos haluat mahdollisuuden tämän kirjausprofiilin sisältävien tapahtumien peruuttamiseen.                                                                                                               |
 | **Sulje**      | Valitse toinen kirjausprofiili, jota siirrytään käyttämään, kun tämän kirjausprofiilin tapahtumia suljetaan. Tapahtuma katsotaan suljetuksi, kun se on selvitetty kokonaan.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

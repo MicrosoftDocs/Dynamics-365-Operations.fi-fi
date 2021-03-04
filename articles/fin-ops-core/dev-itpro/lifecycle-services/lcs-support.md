@@ -68,3 +68,6 @@ Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

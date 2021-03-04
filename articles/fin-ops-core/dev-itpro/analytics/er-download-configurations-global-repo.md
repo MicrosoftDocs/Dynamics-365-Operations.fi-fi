@@ -90,3 +90,6 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

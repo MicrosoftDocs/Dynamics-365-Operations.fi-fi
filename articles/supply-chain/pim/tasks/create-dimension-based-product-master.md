@@ -42,3 +42,6 @@ Tässä menettelyssä selvitetään, miten uusi päätuote luodaan dimensioihin 
     * Valitse dimensioihin perustuva konfiguraatiomenetelmä.  
 9. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

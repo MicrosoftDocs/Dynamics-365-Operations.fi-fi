@@ -164,3 +164,6 @@ Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määri
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

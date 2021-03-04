@@ -70,3 +70,6 @@ Voit määrittää, mitkä varaston tilat saavat aikaan eston käyttämällä **
 [Laadunhallintaprosessit](quality-management-processes.md)
 
 [Tarkista tavaroiden laatu](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

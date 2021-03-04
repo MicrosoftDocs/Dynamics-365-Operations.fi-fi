@@ -187,3 +187,6 @@ Olet luomassa valitulle määritykselle uutta tietomallia. Konfiguraation versio
 65. Valitse Tallenna.
 66. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

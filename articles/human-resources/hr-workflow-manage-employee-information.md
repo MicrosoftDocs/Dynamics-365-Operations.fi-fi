@@ -73,3 +73,6 @@ Seuraa näitä vaiheita määrittääksesi perustyönkulun, joka käynnistetää
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

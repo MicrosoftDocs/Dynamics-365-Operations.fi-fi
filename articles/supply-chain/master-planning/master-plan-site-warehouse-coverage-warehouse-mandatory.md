@@ -63,3 +63,6 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Sen sijaan käyttäjän on tyhjennettävä hakuobjektin arvo ja avattava haun va
 Kun suodatin on otettu käyttöön (ks. alla oleva kuva), käyttäjä voi paikantaa rivin tavalliseen tapaan.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

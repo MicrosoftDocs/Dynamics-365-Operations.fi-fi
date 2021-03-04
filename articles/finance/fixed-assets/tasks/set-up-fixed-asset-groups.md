@@ -39,3 +39,6 @@ Tässä aiheessa kerrotaan, miten uusi käyttöomaisuusryhmä luodaan. Siinä k�
 8. Valitse vaihtoehto **Poistomenetelmä**-kentässä.
 9. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

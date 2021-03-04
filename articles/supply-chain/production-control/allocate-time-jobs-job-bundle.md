@@ -111,3 +111,6 @@ Korjattu tuntikohtainen kustannus ja työn aika kirjataan tuotantokirjauskansioo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

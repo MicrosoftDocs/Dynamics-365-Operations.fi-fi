@@ -46,3 +46,6 @@ Tätä menettelyä varten tarvitset tuotantovirran, jolla on käytöstä poistet
     * Älä jatka, jos et ole täysin varma, että tämän tuotantovirran versio on vanhentunut. Valitsemalla Ok asetat kaikki aktiiviset kanban-säännöt vanhentuneeksi; kaikki tämän tuotantovirran version tuotanto- ja täydennysaktiviteetit pysäytetään välittömästi.  
 6. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

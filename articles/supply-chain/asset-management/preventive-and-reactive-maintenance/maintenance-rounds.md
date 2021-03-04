@@ -117,3 +117,6 @@ Alla olevat kaksi kuvitusta näyttävät työn aikataulutuksen **Ajoita ylläpit
 - Voit määrittää eräajon **Suorita taustalla** -pikavälilehdessä, jolloin kierrokset ajoitetaan säännöllisin väliajoin.  
 - Jos kierros sisältyy useisiin työtilauspooleihin (lisätietoja on kohdassa [Työtilauspoolit](../work-orders/work-order-pools.md)), kullekin poolille näytetään yksi tietue kohdassa **Avaa ylläpitoaikataulupoolit**. Tämä tehdään työtilauspoolien suodatusasetusten optimoimiseksi.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

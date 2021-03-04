@@ -73,3 +73,6 @@ Jos olet lataamassa useita resurssityyppejä samanaikaisesti (esimerkiksi kuvia 
 [Kuvien tarkennuspisteiden mukauttaminen](dam-custom-focal-point.md)
 
 [Staattisten tiedostojen lataaminen ja käyttäminen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

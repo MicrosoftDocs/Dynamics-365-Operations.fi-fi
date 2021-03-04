@@ -529,3 +529,6 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

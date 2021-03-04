@@ -239,3 +239,5 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 
 > [!TIP]
 > Voit toistaa tämän skenaarion, mutta tällä kertaa määritä **Koko**-kentän arvoksi  - *Ei* **Salli tuotedimensioiden yhdistäminen**-pikavälilehden kohdassa *BULKKI* **Sijaintiprofiilit**, jolloin mitään tuotedimensioita ei voi varastoida samaan sijaintiin. Tällöin kun vastaanotat ostotilauksen, jokainen tuotevariantti sijoitetaan uuteen sijaintiin.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

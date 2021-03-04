@@ -79,3 +79,6 @@ Työaikamallit määrittävät koko viikon työtunnit ja niiden avulla luodaan t
 3. Laajenna Sunnuntai-osa.
 4. Valitse Suljettu noudolta -kentässä Kyllä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

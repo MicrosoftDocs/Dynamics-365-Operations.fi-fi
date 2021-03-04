@@ -121,3 +121,6 @@ Mukauta kaavan suunnittelutoiminnon puunäkymässä näkyviä tietoja valitsemal
 |     Tuoterakenne     | Käytä valintaruutuja valitaksesi puurakenteessa näytettävät ehdot. Valitut ehdot näkyvät kaavan suunnittelutoiminnossa kummankin välilehden alaosassa. |
 |    Reititys    |                                           Käytä valintaruutuja valitaksesi reitityksessä näytettävät ehdot.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

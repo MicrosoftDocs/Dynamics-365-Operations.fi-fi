@@ -166,3 +166,6 @@ Tapahtumat voidaan peruuttaa ja antaa uudelleen. Voit peruuttaa tapahtuman suori
 2. Valitse **Kyllä**, kun sanoma "Kun palautat tämän maksuilmoituksen, maksuilmoitukselle luodaan vastakirjauksena palautusmaksuilmoitus. Kumpaakaan maksuilmoitusta ei voi muokata. Haluatko palauttaa tämän maksuilmoituksen?" avautuu näyttöön. 
 
 Kun olet peruuttanut maksuilmoitukset, voit luoda työntekijälle uuden maksuilmoituksen aiemmin luodusta ansioilmoituksesta. Muista korjata kaikki ansioilmoituksen virheelliset rivit ennen uuden maksuilmoituksen luontia ja luo sitten uudet maksuilmoitukset oikeilla summilla. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

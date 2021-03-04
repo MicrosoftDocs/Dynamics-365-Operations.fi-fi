@@ -56,3 +56,6 @@ Järjestelmänvalvojat voivat antaa todennettujen käyttäjien kieltäytyä itse
 ### <a name="custom-extensions"></a>Mukautetut laajennukset
 
 Järjestelmänvalvojat voivat luoda omia laajennuksia, joilla hallitaan käyttäjien käyttöoikeustietoja. Lisätietoja on kohdassa [Soita Retail-palvelimen ohjelmointirajapinnalle](e-commerce-extensibility/call-retail-server-apis.md) ja [Online-kanavan laajennettavuus](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

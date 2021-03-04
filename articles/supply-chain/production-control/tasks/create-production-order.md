@@ -71,3 +71,6 @@ Tässä menettelyssä näytetään, miten tuotantotilaus luodaan. Tämän menett
 6. Valitse Tallenna.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Jos haluat lisätä Jako yhteisöpalveluissa -moduulin ostoruutumoduuliin, tee s
 [Ostoruutumoduuli](add-buy-box.md)
 
 [Evästeen yhteensopivuus](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

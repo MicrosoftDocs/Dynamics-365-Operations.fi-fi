@@ -69,3 +69,6 @@ Kun alustus on valmis, sinun määritettävä kaupan lisätiedot. Seuraavassa on
 - Commerce-kanavat
 - Kassakoneet ja laitteet
 - Valikoimat
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

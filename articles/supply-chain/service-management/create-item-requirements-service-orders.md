@@ -72,3 +72,6 @@ Palvelutilausten nimikevaatimukset käsitellään projektin kautta. Jos huoltoti
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Tässä tehtäväopastuksessa selvitetään yksikön tukeman taloushallinnon dim
 9. Kirjoita **Dimensioarvo**-kenttään taloushallinnon dimension arvoa kuvaava nimi.
 10. Kirjoita **Kuvaus**-kenttään taloushallinnon dimension arvon kuvaus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

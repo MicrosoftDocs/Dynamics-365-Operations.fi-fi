@@ -48,3 +48,6 @@ Tässä menettelyssä esitellään täydennyssääntöjen luontivaiheet. Täyden
 14. Syötä numero Paino-kenttään.
 15. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

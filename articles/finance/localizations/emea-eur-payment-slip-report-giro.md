@@ -63,3 +63,6 @@ Kun olet määrittänyt maksutositeliitteen muodon myyntilaskuille, vapaatekstil
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

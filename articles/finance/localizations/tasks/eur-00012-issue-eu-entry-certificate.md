@@ -87,3 +87,6 @@ Tässä menettelyssä selvitetään, miten EU-saapumistodistus otetaan käyttö�
 4. Valitse toimintoruudussa Lasku.
 5. Valitse Näytä myönnetyt merkinnän varmenteet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

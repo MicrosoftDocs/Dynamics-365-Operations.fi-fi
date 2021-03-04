@@ -78,3 +78,6 @@ Seuraavana päivänä esimies ilmoittaa, että tietokoneiden pienennyksen oli ta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

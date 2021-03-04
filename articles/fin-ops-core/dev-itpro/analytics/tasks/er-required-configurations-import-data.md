@@ -254,3 +254,6 @@ Testaa muodon yhdistämismääritys suorittamalla se. Käytä aiemmin ladattua 1
 27. Sulje sivu.
 28. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

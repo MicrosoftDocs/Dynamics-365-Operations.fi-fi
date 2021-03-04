@@ -48,3 +48,6 @@ Etujen maksumuutosten käsittely Microsoft Dynamics 365 Human Resourcesissa, kun
    4. Valitse **OK**. Prosessi suoritetaan määrittämilläsi parametreilla.
 
 4. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 16. Valitse **Uusi kausiväli**. Kun ensimmäinen kausiväli on syötetty, uudet kaudet voidaan luoda automaattisesti. Voit siirtyä takaisin ja lisätä tarvittaessa uusia kausivälejä.  
 17. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

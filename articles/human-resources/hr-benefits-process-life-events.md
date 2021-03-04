@@ -57,3 +57,6 @@ Jos esimerkiksi tänään on 1. helmikuuta ja työntekijä Joe Smithin on tarkoi
    4. Valitse **OK**. Prosessi suoritetaan määrittämilläsi parametreilla.
 
 4. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

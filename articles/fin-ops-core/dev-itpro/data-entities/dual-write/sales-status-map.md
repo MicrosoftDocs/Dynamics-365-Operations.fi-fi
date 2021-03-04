@@ -150,3 +150,6 @@ Voit ottaa **isIntegrationUser**-määritteen käyttöön seuraavasti.
     ![Integrointikäyttäjän tila -kentän arvon muuttaminen](media/sales-map-user-mode-yes.png)
 
 Myyntitilauksillesi on nyt suoritettu yhdistämismääritys.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

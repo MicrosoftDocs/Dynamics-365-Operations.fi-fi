@@ -667,3 +667,6 @@ Lajitellun varaston keräilytyö on suoritettava loppuun. Kun se on valmis, vara
     Työ on valmis.
 
 Tästä eteenpäin käytetään kaikki muita varastoprosesseja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

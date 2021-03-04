@@ -108,3 +108,6 @@ Toimittajamaksujen maksuyrityksen erääntymiskohteen ja erääntymislähteen ta
 
 ## <a name="withholding-tax"></a>Ennakonpidätys
 Laskuun liittyvää toimittajatiliä käytetään määrittämään, pitääkö ennakonpidätys laskea. Jos ennakonpidätys lasketaan, se lasketaan laskuun liitetystä yrityksestä. Jos yritykset käyttävät eri valuuttoja, käytetään laskuun liitetyn yrityksen vaihtokurssia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

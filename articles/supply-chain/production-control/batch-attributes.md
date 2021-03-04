@@ -53,3 +53,6 @@ Voit hakea erämääritteitä tehdessäsi erävarauksia myyntitilaukselle asiakk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

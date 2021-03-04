@@ -62,3 +62,6 @@ Näissä toimintaohjeissa neuvotaan, miten jatkuvuusohjelman avulla tehdään my
     * Anna aiemmin ohjeessa muistiin ottamasi myyntitilauksen numero. Tämä vähentää ohjeiden suoritusaikaa huomattavasti. Myyntitilaus-kenttä on valinnainen – voit käsitellä kaikki yhden ohjelman tilaukset.  
 21. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Lisätietoja on seuraavissa aiheissa:
 
 - [Taloushallinnon dimensiot](financial-dimensions.md)
 - [Luo ja määritä lisäsääntörakenteet](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

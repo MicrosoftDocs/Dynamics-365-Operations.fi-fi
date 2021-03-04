@@ -124,3 +124,6 @@ Kun olet luonut luottorajan oikaisurivit, voit kirjata merkinnät ja päivittä�
 
 > [!NOTE]
 > **Luottorajan oikaisut** -työnkulkua luotaessa työnkulku määritetään siten, että oikaisut kirjataan automaattisesti sen jälkeen, kun rivit on hyväksytty. Työnkulkuun tarvitsee sisällyttää vain **Kirjaa kirjauskansio automaattisesti** -tehtävä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

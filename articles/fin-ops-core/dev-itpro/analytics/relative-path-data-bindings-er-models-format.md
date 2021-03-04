@@ -57,3 +57,6 @@ Tämä toiminto ei katkaise ER-kehyksen yhteensopivuutta aiempien versioiden kan
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [ER-kaavan kieli](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

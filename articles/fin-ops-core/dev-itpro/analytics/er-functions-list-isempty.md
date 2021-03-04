@@ -59,3 +59,6 @@ Lauseke `ISEMPTY (SPLIT ("",1))` palauttaa arvon **TOSI**.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Määritä Microsoft Dynamics 365 Finance + Operationsin (paikallinen) käyttö�
 13. Sulje **Reporting Services -määritystenhallintasovellus** valitsemalla **Lopeta**.
 
     [![reporting Servicesin määritystenhallinnan sulkeminen](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

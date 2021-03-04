@@ -260,3 +260,6 @@ Tästä syystä kun limityksen aktivointi on valittuna, muut asetukset (töiden 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -128,3 +128,6 @@ Kun valitset **osoitteenmuutokset**-ruudun, uusi sivu näyttää osoitteenmuutos
 > Jos haluat saada hälytyksen tai sähköpostiviestin näistä osoitemuutoksista, voit luoda uuden hälytyssäännön toimintoruudun **asetukset**-välilehteen. Lisätietoja hälytyssäännöistä on kohdassa [Hälytyssääntöjen luominen](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
 
 > Jos haluat määrittää työnkulun osoitemuutoksille, voit valita hälytyssäännössä **Lähetä ulkoisesti** -vaihtoehdon ja Power Automate käynnistää sitten liiketoimintatapahtuman ja määrittää työnkulun. Lisätietoja on kohdassa [hälytykset liiketoimintatapahtumina](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

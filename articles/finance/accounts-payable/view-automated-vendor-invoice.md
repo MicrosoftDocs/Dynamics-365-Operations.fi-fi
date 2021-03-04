@@ -38,3 +38,6 @@ Jos tuotu lasku on työnkulkuun lähettämisprosessissa, sen **Automatisoinnin t
 - **Keskeytetty** – **Ostoreskontran parametrit** -sivulla määritetyt automatisoidut prosessit on suoritettu, mutta ainakin yksi prosessin vaihe epäonnistui. **Keskeytetty**-tila on käytössä myös silloin, jos **Sisällytä automatisoituun käsittelyyn** -kentän arvo on **Ei**. Voit tarkastella epäonnistuneita vaiheita valitsemalla **Näytä viimeisimmät tulokset**.
 - **Työnkulussa** – tuotu lasku on lähetetty työnkulkujärjestelmään joko automatisoidussa työnkulkuun lähettämisprosessissa tai manuaalisesti.
 - **Työnkulku valmis** – tuodun laskun työnkulkuprosessi on valmis.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

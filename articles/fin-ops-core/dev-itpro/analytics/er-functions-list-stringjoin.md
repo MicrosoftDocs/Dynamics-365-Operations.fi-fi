@@ -63,3 +63,6 @@ Jos syötät `SPLIT("abc" , 1)` tietolähteeksi **DS**, lauseke `STRINGJOIN (DS,
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

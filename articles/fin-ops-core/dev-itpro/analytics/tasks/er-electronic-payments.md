@@ -81,3 +81,6 @@ Konfiguraation luominen, joka sisältää maksuasiakirjan muodon -menettelyn vai
 25. Valitse OK.
     * Analysoi luotu, XML-muotoinen maksutiedosto. Vertaa tiedostoa suunniteltuun asiakirjan asetteluun ja määriteltyihin maksutapahtuman määritteisiin.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

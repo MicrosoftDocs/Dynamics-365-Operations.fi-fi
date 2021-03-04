@@ -218,3 +218,6 @@ Jos halut nähdä, mihin budjettisuunnitelmiin ennusteen toimi on sisällytetty,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

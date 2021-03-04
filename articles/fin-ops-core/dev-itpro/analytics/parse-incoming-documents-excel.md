@@ -46,3 +46,6 @@ Jos et ole vielä toistanut tehtäväopasta [ER Luo vaaditut konfiguraatiot tiet
 | Sisällön kuvaus    | Tiedosto                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER_mallin määritys | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

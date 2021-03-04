@@ -67,3 +67,6 @@ Määritä organisaatiohierarkioita liiketoiminnan tarkastelemiseen ja raportoin
 Jokaiseen hierarkiaan liitetään tarkoitus. Hierarkian tarkoitus määrittää hierarkiaan sisällytettävät organisaatiotyypit. Tarkoitus määrittää myös käyttötilanteet, joissa hierarkiaa voidaan käyttää.
 
 Hierarkian organisaatiot voivat jakaa parametrejä, käytäntöjä ja tapahtumia. Organisaatio voi periä tai ohittaa ylätason organisaation parametrit. Jaetut perustiedot, kuten tuotteet ja osoitekirja, koskevat koko organisaatiota, mutta niitä ei voi ohittaa yksittäisissä organisaatioissa. Organisaatioiden ja hierarkioiden luominen edellyttää huolellista suunnittelua. Lisätietoja on kohdassa [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

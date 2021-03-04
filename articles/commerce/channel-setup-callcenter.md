@@ -136,3 +136,6 @@ Voit määrittää hintaryhmän seuraavasti.
 [Petoshälytysten määrittäminen ja käyttäminen](set-up-fraud-alerts.md)
 
 [Jatkuvuusohjelmien määrittäminen puhelinkeskuksille](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -284,3 +284,6 @@ Voit määrittää tämän määrityksen valitsemalla **Tuotetietojen hallinta \
 *Vaarallisten aineiden tunneli* -määritys rajoittaa tunnelityyppejä, joiden kautta vaarallisia aineita voidaan kuljettaa, määrittämällä käytettävät tunnelityypit. Tunneliluokat luodaan vaarallisten aineiden kuljetuksen sovellettavien määräysten mukaan. Tätä määritystä käytetään yleensä vain maantiekuljetuksissa.
 
 Voit määrittää tämän määrityksen valitsemalla **Tuotetietojen hallinta \> Asetukset \> Vaarallisten aineiden lähetysohjeet \> Vaarallisten aineiden tunneli**. Voit luoda **Vaarallisten aineiden tunneli** -sivulla haluamasi määrän tunnelitunnuksia ja määrittää kullekin tunnistuskoodin ja lyhyen kuvauksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

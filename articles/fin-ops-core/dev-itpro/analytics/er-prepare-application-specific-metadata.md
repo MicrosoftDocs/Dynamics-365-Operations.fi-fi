@@ -280,3 +280,6 @@ Kun tämä malli on arvioitava käyttämällä toisen version sovelluksen metati
 ## <a name="additional-resources"></a>Lisäresurssit
 
 Vaihtoehtoisesti voit toistaa **RSC:ssä käytettävien sovelluksen metatietojen valmisteleminen** -tehtäväoppaan sovelluksessa sekä **Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla**- ja **Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla** -tehtäväoppaat RCS:ssä. Tehtäväoppaat voidaan ladata [Dynamics 365 for Finance and Operations 8.1:n sähköisen raportoinnin tehtäväoppaat](https://go.microsoft.com/fwlink/?linkid=2082739) -sivulla.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

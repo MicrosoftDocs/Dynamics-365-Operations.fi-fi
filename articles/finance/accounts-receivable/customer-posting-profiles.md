@@ -140,3 +140,6 @@ Määritä kirjausprofiili määrittämällä seuraavat arvot:
 
 Lisätietoja on ohjeaiheessa [Asiakkaan maksujen yleiskatsaus](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

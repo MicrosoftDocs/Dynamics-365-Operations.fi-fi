@@ -71,3 +71,6 @@ Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa ol
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Suunnitteluluokka, johon tuote kuuluu, on määritettävä. Luokkaa määrittä�
 Suunnittelun määritehaulla voi etsiä tuotteita hakemalla niiden suunnittelumääritteiden arvoja. Tällä tavoin suunnittelutuotteita on helppo hakea ominaisuuksien perusteella. Haku voi kohdistua suunnittelun tuoteluokkaan kuuluviin tuotteisiin tai haku voi koskea kaikki suunnittelutuotteita.
 
 Haku on käytettävissä päätuotetietosivuilla ja järjestelmän tapahtumanimikkeissä, kuten myyntitilauksissa. Tapahtumanimikkeessä tuotetta voi hakea **Tuotteen määritehaku** -sivulla. Voit sitten lisätä tuotteen myyntilauksen riveille käyttämällä **Lisää uutena rivinä** -painikkeella. Hakutulosten tuotteita voidaan lisätä tilaukseen myös suoraan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

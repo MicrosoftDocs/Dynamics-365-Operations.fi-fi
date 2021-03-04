@@ -54,3 +54,6 @@ Liittyvän tositteen ikkunassa näkyy siirtymäyrityksen tosite,kun konsernin si
 3. Merkitse valittu rivi luettelossa.
 4. Valitse Tosite.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Jos variaatioita on jostain syystä muokattava, voit tehdä sen seuraavien ohjei
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Variaation korottaminen ja kokeen päättäminen](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Jos haluat näyttää ilmoitusten määrän painikkeessa, varmista, että oikea 
 Seuraavassa kuvassa näytetään, miten **Sisällön tasaus** -kentän **Ylös oikealle**- tai **Keskelle**-vaihtoehdon valinta vaikuttaa eri kokoisiin painikkeisiin.
 
 ![Live-sisältö POS-painikkeilla](./media/ButtonsWithLiveContent.png "Live-sisältö POS-painikkeilla")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

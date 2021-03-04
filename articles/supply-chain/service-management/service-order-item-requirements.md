@@ -70,3 +70,6 @@ Jos huoltotilaukselle luodaan nimiketarve, et voi poistaa huoltotilausta. Sinun 
 
 [Nimiketarpeet (lomake)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

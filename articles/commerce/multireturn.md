@@ -54,3 +54,6 @@ Kun tilaukset on valittu, näytetään lista kaikista palautuskelpoisista tuotte
 
 Jos tilaus palautetaan kokonaan, asiakkaalle palautettujen verojen summa on sama kuin alun perin veloitettu verosumma.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

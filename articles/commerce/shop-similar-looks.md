@@ -116,3 +116,6 @@ Seuraavassa kuvassa on **Ota käyttöön Osta samankaltaisia tyylejä -linkki** 
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

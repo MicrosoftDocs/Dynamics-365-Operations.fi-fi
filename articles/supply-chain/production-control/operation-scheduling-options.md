@@ -134,3 +134,6 @@ Voit tallentaa nykyiset arvot oletusarvoiksi. Käytettävissä ovat seuraavat ka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

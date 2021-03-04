@@ -105,3 +105,6 @@ Lisätietoja mobiililaitteiden valikkokohteista on kohdassa [Mobiililaitteiden m
 Lisätietoja *Ilmoita valmiiksi* -tuotantoskenaariosta on kohdassa [fyysisen varastoinnin työkäytäntöjen yleiskuvaus](warehouse-work-policies.md).
 
 Lisätietoja saapuvien kuormien hallinnasta on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

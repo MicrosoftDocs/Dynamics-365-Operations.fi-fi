@@ -110,3 +110,6 @@ Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](collections-cre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

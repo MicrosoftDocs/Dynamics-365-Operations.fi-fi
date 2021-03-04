@@ -74,3 +74,6 @@ Tässä menettelyssä käsitellään määrityksiä, joita tarvitaan luotaessa k
     * Tämä luo 5 kanbania.  
     * Huomaa, että tälle valmistuksen kanban-säännölle luotiin 5 kanbania, joista kunkin arvo on 10. Tämä on tämän menettelyn viimeinen vaihe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

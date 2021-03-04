@@ -83,3 +83,6 @@ Jos käytät vuokrauksen tuonnin kehystä vuokrasopimusten päivittämisessä ja
 
 1. Siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Asetus \> Päivitä kenttien valinta**.
 2. Valitse näkyviin tulevalla sivulla päivitettävät kentät ja siirrä ne sitten **Valitut kentät** -luetteloon vihreän nuolen avulla. Vain **Valitut kentät** -luettelossa olevat kentät voidaan päivittää käyttämällä vuokrauksen tuonnin ohjelmaa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

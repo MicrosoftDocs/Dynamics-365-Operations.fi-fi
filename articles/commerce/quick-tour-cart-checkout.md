@@ -107,3 +107,6 @@ Lisätietoja kassasivun muokkaamisesta on kohdassa [Kassamoduulin lisääminen s
 [Tuotetietosivujen yleiskatsaus](quick-tour-pdp.md)
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

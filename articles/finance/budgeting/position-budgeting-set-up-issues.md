@@ -64,3 +64,6 @@ Ennusteen toimen kustannustasorivin päivämäärien tulee olla seuraavien aluei
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

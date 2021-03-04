@@ -52,3 +52,6 @@ Lisätietoja on mietinnössä Lean-valmistuksen tuotantovirrat ja tehtävät.
     * Tehtäväsuhteen oletusarvoinen syklin keston suhde on 1. Oletuksena on, että molemmat tehtävät suoritetaan samassa tahdissa eli niiden tahtiaika on sama. Jos edeltäjä suoritetaan suuremmalla nopeudella (alempi tahtiaika), suhteen pitäisi olla pienempi kuin 1; jos edeltäjä suoritetaan hitaammalla nopeudella (korkeampi tahtiaika) syklin kestosuhde on suurempi kuin 1.  
 5. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

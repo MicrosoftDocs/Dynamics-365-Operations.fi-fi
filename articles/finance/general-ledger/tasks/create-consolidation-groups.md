@@ -47,3 +47,6 @@ Tässä menettelyssä käsitellään konsolidointitiliryhmän luontia ja tilien 
 8. Kirjoita Konsolidointitili-kenttään arvo.
 9. Kirjoita Konsolidointitilin nimi -kenttään arvo.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

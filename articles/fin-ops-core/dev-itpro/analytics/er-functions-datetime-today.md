@@ -49,3 +49,6 @@ Tulokseksi saatava päivämääräarvo.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Päivämäärä- ja aikatoiminnot](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

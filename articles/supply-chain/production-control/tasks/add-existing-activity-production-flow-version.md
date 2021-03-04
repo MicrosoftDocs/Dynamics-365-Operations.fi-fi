@@ -56,3 +56,6 @@ Tämän tehtävän edellytyksenä on tuotantovirran versio ja olemassa olevat te
 3. Syötä tai valitse arvo Tehtävä-kenttään.
 4. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

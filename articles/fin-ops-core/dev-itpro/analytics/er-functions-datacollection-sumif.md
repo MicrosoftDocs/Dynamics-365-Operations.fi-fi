@@ -67,3 +67,6 @@ Lisätietoja ja esimerkkejä tämän toiminnon käyttämisestä on kohdassa [Sek
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tietojen keruutoiminnot](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

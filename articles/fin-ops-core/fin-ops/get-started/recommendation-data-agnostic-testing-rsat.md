@@ -49,3 +49,6 @@ Vaikka ERP-sovelluksen toiminnan vahvistaminen ei voi olla täysin datasta riipp
     - Vahvista vasta, kun olet suodattanut valinnan tiettyyn tapahtumaan yleisen vahvistuksen sijaan. Jos haluat esimerkiksi käyttää tietueiden määrää, suodata tapahtuman numeron tai päivämäärän perusteella siten, että mitään muita tapahtumia ei käytetä vahvistuksessa. 
     - Jos olet tarkistamassa asiakkaan saldoa tai budjettia, tallenna arvo ensin ja lisää sitten tapahtuma-arvosi vahvistaaksesi odotetun tuloksen sen sijaan, että vahvistaisit kiinteän odotetun arvon. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

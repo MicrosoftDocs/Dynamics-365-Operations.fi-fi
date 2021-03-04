@@ -64,3 +64,6 @@ Seuraavassa menettelyssä selvitetään, miten myyntitilaukset vahvistetaan. Nä
 11. Valitse **OK**.
 12. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

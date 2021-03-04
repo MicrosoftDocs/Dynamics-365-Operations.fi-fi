@@ -115,3 +115,6 @@ Tulosten ero perustuu työtä luotaessa käytettävissä oleviin tietoihin. Kun 
 [![Esimerkki 2](media/ReplenTemp_example_2.png "Esimerkki 2")](media/ReplenTemp_example_2_large.png)
 
 Tämän vuoksi täydennyssijainteihin saadaan enimmäismäärä, kun täydennyksen keräilyn sijaintidirektiivien **Salli jakaminen** -asetukseksi on määritetty *Kyllä*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

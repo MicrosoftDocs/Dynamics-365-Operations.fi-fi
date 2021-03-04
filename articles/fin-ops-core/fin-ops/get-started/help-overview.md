@@ -164,3 +164,6 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 | [Dynamics-yhteisö](https://community.dynamics.com/) | Sivusto ylläpitää blogeja, keskustelupalstoja ja videoita. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Sivusto sisältää arviointi- ja myyntitietoja. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Sivusto ylläpitää koulutusresursseja ja ladattavia raportteja. Lisäksi se on palvelupakettien omistajien ensisijainen tukisivusto. Joidenkin sivuston resurssien käyttö saattaa edellyttää palvelupakettia. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

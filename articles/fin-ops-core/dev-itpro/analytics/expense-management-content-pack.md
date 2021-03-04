@@ -93,3 +93,6 @@ Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mitt
 | Työntekijätilastot | Kuluraportit kustannustyypin mukaan            |
 |                     | Henkilökohtaiset kulut                       |
 |                     | Kuluraportit tilastoryhmän mukaan     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

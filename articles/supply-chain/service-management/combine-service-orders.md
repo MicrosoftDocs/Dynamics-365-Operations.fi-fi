@@ -113,3 +113,6 @@ Huoltotilausrivien lisäryhmittely huoltotilauksiin tapahtuu huoltosopimusriveil
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

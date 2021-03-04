@@ -49,3 +49,6 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 ![Sähköisen raportoinnin konfiguroinnit -sivu](../media/er-financial-dimensions-guides-run3.png)
     * Tarkista aikaansaatu tuotos. Jokaiselle valitun erän tapahtumalle esitetään vastaavan dimensiojoukon taloushallinnon dimensiot. Aja raportti ja valitse eri dimensioita, jotta näet, että raportti ei ole riippuvainen valittujen dimensioiden määrästä tai tälle esiintymälle konfiguroitujen dimensioden määrästä.  
 ![Sähköisen raportoinnin konfiguroinnit -sivu](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

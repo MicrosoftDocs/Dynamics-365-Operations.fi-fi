@@ -81,3 +81,6 @@ Kun olet määrittänyt tarjouspyynnön perustiedot, määritä tavarat tai palv
 4. Sulje sivu.
 5. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

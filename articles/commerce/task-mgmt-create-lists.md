@@ -93,3 +93,6 @@ Jos haluat määrittää myyntipistetoiminnon niin, että se voidaan linkittää
 [Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille](task-mgmt-assign-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Tässä menettelyssä kuvataan, miten laiturin varaus kuormitustapahtumaa määr
 6. Valitse Tallenna.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

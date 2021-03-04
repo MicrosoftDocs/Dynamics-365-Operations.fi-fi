@@ -64,3 +64,6 @@ Tässä ohjeaiheessa neuvotaan jatkuvuusohjelman määrittäminen (toiselta nime
     * Kun tämä nimike myydään puhelinkeskuksessa, valitun jatkuvuusohjelman liiketoimintalogiikkaa sovelletaan nimikkeeseen.  
 7. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Sen vuokraajan ulkopuolisten käyttäjien, jolla ympäristö otettiin käyttöö
 4. Valitse **Tuo käyttäjiä**.
 5. Valitse **Sulje**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

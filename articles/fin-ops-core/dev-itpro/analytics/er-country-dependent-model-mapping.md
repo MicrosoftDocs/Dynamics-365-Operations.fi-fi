@@ -496,3 +496,6 @@ Varmista, että jaettua mallin yhdistämismääritystä ei merkitä mallin oletu
 - Vähintään yhdellä ER-mallin yhdistämismäärityksen version tila on joko **Valmis** tai **Jaettu**. Siinä tapauksessa ER-muodon suorittamiseen käytetään versiota, jonka versionumero on korkein.
 - ER-mallin yhdistämismäärityksen **Suorita luonnos** -asetus on otettu käyttöön. Siinä tapauksessa ER-muodon suorittamiseen käytetään versiota, jonka tila on **Luonnos**.
 > **Suorita luonnos** -asetus on valittavissa kunkin ER-mallin yhdistämismäärityksen **Konfiguraatiot**-sivulla, kun **Suorita asetus** -ER-käyttäjäparametri on otettu käyttöön.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

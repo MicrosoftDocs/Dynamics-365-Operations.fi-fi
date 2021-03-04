@@ -48,3 +48,6 @@ Lisätietoja on kohdassa [Kirjaaminen johdetuissa kirjoissa](post-derived-value-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

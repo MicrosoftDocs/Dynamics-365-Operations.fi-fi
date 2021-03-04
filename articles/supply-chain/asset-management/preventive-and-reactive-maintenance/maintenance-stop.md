@@ -97,3 +97,6 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 - Voit kopioida käyttökohteita yhdestä huoltoseisokkitehtävästä toiseen. Valitse **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Kopioi ylläpidon käyttökatkojen toiminnot** -painike ja tee valinnat **Ylläpidon käyttökatkojen toiminnoista**- ja **Ylläpidon käyttökatkojen toimintoihin** -kentissä ja valitse **OK**.
 - Napsauta **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Ylläpitoaikataulun rivit**- tai **Aktiiviset työtilaukset**-painike ja avaa liittyvät luettelot ja tarkastele valittuun kunnossapitoseisokin toimintoon liittyviä rivejä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -229,3 +229,6 @@ Ohjeet Human Resources -sovelluksen käyttöoikeuksien rajoittamiseen Microsoft 
 [Microsoft Teamsin lataaminen ja asentaminen](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teamsin ohje- ja tukikeskus](https://support.office.com/teams)</br>
 [Teamsin Human Resources -sovellus](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

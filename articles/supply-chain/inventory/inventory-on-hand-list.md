@@ -146,3 +146,6 @@ Tässä on tuloksena saatu tuotos.
 | IA0001 | 1 | 2 | 2 |
 
 Huomaa, että **Suodattimet**-ruudun asetukset koskevat eriteltyä (ei koostettua) varastotaulukkoa, joka näkyy tämän osan alussa. Tämän vuoksi ehto **Käytettävissä oleva fyysinen** \| **pienempi tai yhtä suuri kuin** \| _1_ etsii kaksi riviä taulukosta (ensimmäinen ja kolmas rivi, jossa kussakin näkyy **Käytettävissä oleva fyysinen** -arvo _1_). Tässä skenaariossa **Käytettävissä olevien luettelo** -sivua ei kuitenkaan ole määritetty näyttämään **Varasto**-dimensiota. Näin ollen se koostaa kaksi alkuperäistä riviä yhdeksi tulosriviksi, koska molemmilla riveillä on samanlaiset arvot kaikissa näkyvissä olevissa dimensioissa. Tämä rivi rikkoo suodatusehtoa, koska **Käytettävissä oleva fyysinen** -arvona on _2_. Tulos on kuitenkin oikein, koska **Suodattimet**-ruudun asetukset kohdistetaan lähdetaulukkoon, ei **Käytettävissä olevien luettelo** -sivun koostetaulukkoon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

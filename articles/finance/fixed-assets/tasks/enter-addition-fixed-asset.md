@@ -46,3 +46,6 @@ Menettelyssä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytiet
     * Määritä **Pidentää käyttöikää** -kohdan arvoksi **Kyllä**, jos lisäys pidentää resurssin käyttöikää.  
     * Tämä kenttä on vain tiedoksi. Voit lisätä käyttöikää muokkaamalla käyttöomaisuuserän arvomallien ja/tai poistokirjojen käyttöikää.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

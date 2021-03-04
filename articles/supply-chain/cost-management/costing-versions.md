@@ -68,3 +68,6 @@ Nimikkeiden ostohintatietueiden käytetään myös viitetietoina. Kun nimikkeen 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

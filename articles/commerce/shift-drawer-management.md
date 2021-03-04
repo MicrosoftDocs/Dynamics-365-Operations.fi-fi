@@ -158,3 +158,6 @@ Siirry **Retail ja Commerce \> Kanavat \> Myymälät \> kaikki myymälät \> las
 Tämän asetuksen avulla varmistat, että taustalaskelmat sisältävät samat tapahtumat kuin vuorot myyntipisteessä ja tiedoista tehdään yhteenveto kyseisen vuoron mukaan.
 
 Lisätietoja lausunnoista ja sulkemismenetelmistä kohdassa [Vähittäismyynnin konfiguraatiot Retail-lausunnoissa](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

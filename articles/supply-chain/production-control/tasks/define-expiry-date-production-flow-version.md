@@ -41,3 +41,6 @@ Tuotantovirran version voimassaolon ja käsittelyn voi päättää tiettynä pä
 6. Anna päivämäärä ja kellonaika Vanhentumispäivä-kenttään.
     * Vanhentumispäivästä alkaen uusi versio ei käynnisty tai aktivoidu. Töiden käynnistäminen tai luonti tähän tuotantovirtaan ei ole myöskään enää mahdollista. Käynnistetyt työt voi saattaa valmiiksi vanhentumispäivän jälkeenkin.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Kun luot suoratoimituksen, myymäsi nimikkeet eivät koskaan saavu varastoosi fy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

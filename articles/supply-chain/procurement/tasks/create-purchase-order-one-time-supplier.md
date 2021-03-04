@@ -39,3 +39,6 @@ Tässä menettelyssä näytetään, miten ostotilaus luodaan kertatoimittajalle.
 5. Valitse OK.
     * Ostotilauksen nyt viedä loppuun ja käsitellä kuin minkä tahansa tilauksen. Tämän suorittamisessa ei ole mitään erityisominaisuuksia. Laskulla tulee ilmi erääntyvä tapahtuma toimittajan tilille, joka on luotu tilausta luotaessa, jonka jälkeen maksu käsitellään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

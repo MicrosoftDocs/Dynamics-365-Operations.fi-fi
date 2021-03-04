@@ -59,3 +59,6 @@ Kun kattavuusasetukset on määritetty, liitä kattavuusasetukset etuussuunnitel
    | **Salli työntekijän kattavuussumma** | Määrittää, saavatko työntekijät muokata etujen itsepalvelun kattavuusmäärää, kun he valitsevat etuja. Jos valitset tämän valintaruudun, järjestelmä laskee etuussuunnitelman parametrit sen kattavuusmäärän perusteella, jonka työntekijä syöttää työntekijän itsepalveluun. |
 
 6. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Kun kirjanpitotapahtuma kirjataan, tapahtumatietueen tila on **Myyty**. Seuraava
 -   Negatiivisen summan varastokirjauskansiot, kuten siirto, tulos, inventointi, tuoterakenne ja siirto
 
 Määrää vähentävät tapahtumat kirjataan juoksevalla keskimääräisellä kustannushinnalla. Tämän vuoksi varaston sulkemistoiminto vaaditaan varasto-ottotapahtumien täsmäyttämiseksi vastaanottotapahtumiksi jokaiseen nimikkeeseen määritetyn varastomallin perusteella.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

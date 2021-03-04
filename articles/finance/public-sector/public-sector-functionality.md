@@ -72,3 +72,6 @@ Seuraavassa taulukossa on tietoja siitä, miten tämä konfigurointiavain liitty
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

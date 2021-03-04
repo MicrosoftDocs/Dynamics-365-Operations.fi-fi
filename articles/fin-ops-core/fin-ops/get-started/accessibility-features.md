@@ -97,3 +97,6 @@ Tuote on suunniteltu toimimaan erilaisissa laitteissa ja laitemuodoissa sekä pi
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Ohjeita, joiden avulla kehittäjät ja asiakkaat voivat ottaa helppokäyttöisyyden huomioon mukautuksissa
 
 Lisätietoja Microsoftin helppokäyttötoimintojen käyttöönoton parhaista käytännöistä on kohdassa [Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttötoiminnot](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

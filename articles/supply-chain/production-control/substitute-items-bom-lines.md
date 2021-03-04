@@ -49,3 +49,6 @@ Skenaario: hitsaustyössä tarvitaan metallilevyn palasta. Varastotyöntekijä i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

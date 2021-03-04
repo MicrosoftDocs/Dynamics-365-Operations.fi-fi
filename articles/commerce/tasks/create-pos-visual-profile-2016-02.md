@@ -48,3 +48,6 @@ Tässä menetelmässä kerrotaan, miten uuden myyntipisteen visuaalinen profiili
 17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 18. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

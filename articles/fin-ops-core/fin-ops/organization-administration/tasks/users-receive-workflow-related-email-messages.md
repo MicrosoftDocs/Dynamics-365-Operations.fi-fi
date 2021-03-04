@@ -41,3 +41,6 @@ Voit määrittää järjestelmän lähettämään sähköpostiviestejä käyttä
 
 > [!NOTE]
 > Työnkulun sähköpostimallit ovat peräisin joko järjestelmän sähköpostimalleista tai organisaation sähköpostimalleista sen mukaan, onko työnkulku järjestelmätason (ei yrityskohtainen) vai organisaatiotason (yrityskohtainen) työnkulku.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

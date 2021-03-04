@@ -58,3 +58,6 @@ Kun toimen työtä muutetaan, **työluokka** palautuu oletusasetukseen valitun t
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Suorituskyvyn parannukset työtiloja hahmonnettaessa
 Työtilojen analytiikkavälilehdet latautunut nyt vain kyseisiä sivuja käytettäessä. Ilmaisin näkyy sivun ensimmäisen hahmonnuksen aikana sivun vasemmassa yläkulmassa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -60,3 +60,5 @@ Voit ladata **Power Automate – SQL-yhteys ja toteutus** -mallin Microsoft Down
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

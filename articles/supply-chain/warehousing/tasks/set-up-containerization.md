@@ -81,3 +81,6 @@ Tässä aiheessa kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen
 11. Syötä tai valitse arvo **Kentän valinta** -kentässä.
 12. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

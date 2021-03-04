@@ -147,3 +147,6 @@ Seuraavassa kuvassa on määritetyn varaston tiedot.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

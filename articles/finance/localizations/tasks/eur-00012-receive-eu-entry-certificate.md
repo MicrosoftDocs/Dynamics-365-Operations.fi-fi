@@ -42,3 +42,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.
     * Liitä lisätiedot kirjauskansioon.  
     * Voit esimerkiksi liittää kirjauskansioon skannatun kuvan EU-saapumistodistuksesta.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

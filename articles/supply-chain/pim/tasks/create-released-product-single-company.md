@@ -103,3 +103,6 @@ Tässä menettelyssä kerrotaan, miten yksittäinen vapautettu tuote luodaan yks
 12. Etsi haluamasi tietue luettelosta ja valitse se.
 13. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

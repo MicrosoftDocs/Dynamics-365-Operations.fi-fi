@@ -144,3 +144,6 @@ Seuraavat kentät lisätään mobiililaitteen valikkovaihtoehtoon, kun **Oikaisu
 - Inventoinnin oletussyykoodi
 - Näytä inventoinnin syykoodi
 - Muokkaa inventoinnin syykoodia
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -599,3 +599,6 @@ Jos työntekijä ei tule töihin työpäivänä eikä työntekijällä ole suunn
 - Automaattinen poissaolon lisäys
 
 Kun sellaisen työntekijän päivän rekisteröintejä lasketaan, jolla on käytössä liukuva työaika, **Automaattinen liukuvan työajan lisäys** -kentässä määritettyä poissaolokoodia käytetään oletuspoissaolokoodina. Jos liukuman tunnit eivät ole käytössä työntekijällä, käytetään **Automaattinen poissaolon lisäys** -kentässä määritettyä poissaolokoodia. Jos yrityksellä on työntekijöitä, joilla liukuman tunnit ovat käytössä, ja työntekijöitä, joilla ne eivät ole käytössä, molemmat parametrit on määritettävä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

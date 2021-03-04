@@ -94,3 +94,6 @@ Edellytykset:
 12. Valitse Valmis.
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

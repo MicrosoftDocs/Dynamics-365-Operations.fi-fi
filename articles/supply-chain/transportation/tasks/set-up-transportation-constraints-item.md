@@ -44,3 +44,6 @@ Tässä menettelyssä asetetaan kuljetusrajoitus, jolla estetään valitun nimik
 10. Valitse Tallenna.
 11. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

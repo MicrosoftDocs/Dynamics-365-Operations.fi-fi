@@ -94,3 +94,6 @@ Voit poistaa tiettyjen sääntöjen aktivoinnin valitsemalla ensin säännön mu
 [Optimointiavustajan sääntöjen luominen](./create-rules-optimization-advisor.md)
 
 [Dynamics 365 for Finance and Operationsin optimointineuvoja (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

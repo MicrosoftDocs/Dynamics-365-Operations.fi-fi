@@ -50,3 +50,6 @@ Voit suunnitella ja konfiguroida rinnakkaisen haaran elementtejä seuraavasti.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Työnkulkujen luonnin yleiskatsaus](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

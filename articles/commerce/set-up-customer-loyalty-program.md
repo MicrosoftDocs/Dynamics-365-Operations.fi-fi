@@ -151,3 +151,6 @@ Jälleenmyyjät voit määrittää myös kanta-asiakaskorttikohtaisen kanta-asia
 
     > [!NOTE]
     > Kausialennuksista, kuten määräalennuksesta, yksinkertaisesta alennuksesta, yhdistelmäalennuksesta ja raja-alennuksesta, poiketen toimitusalennus ei luo alennusrivejä vaan muokkaa toimitusmaksua suoraan ja liittää alennuksen nimen kulun kuvaukseen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Ehdollisten kysymysten avulla voit määrittää vastaajalle näkyvän seurantak
 10. Valitse puussa solmu Questions\I am paid fairly for the work I do.
     * Huomaa, että päivitetyssä kysymyksen puussa näkyy riippuvuus.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

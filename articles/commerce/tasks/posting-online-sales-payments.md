@@ -109,3 +109,6 @@ Tässä menettelyssä kerrotaan, miten toistuva erätyö määritetään ja suor
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

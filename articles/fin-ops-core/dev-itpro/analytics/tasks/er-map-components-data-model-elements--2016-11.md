@@ -113,3 +113,6 @@ Jokainen muotoversio voidaan määrittää käytettäväksi tietystä päivämä
 1. Laajenna ISO maa-/aluekoodit -osa.
     * Kunkin muodon käyttöoikeutta voidaan rajoittaa määrittämällä maat/alueet, joissa muoto on käytettävissä. Kun tietyn muodon maiden ja alueiden luettelo on tyhjä, muotoa voi käyttää missä tahansa yrityksessä. Kun ISO-maa- ja -aluekoodeja lisätään maiden ja alueiden luetteloon, muotoa voi käyttää yrityksissä vain, jos niiden ensisijainen osoite on kyseisessä maassa tai kyseisellä alueella.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

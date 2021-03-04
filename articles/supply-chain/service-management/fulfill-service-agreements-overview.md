@@ -107,3 +107,6 @@ Seuraava taulukko sisältää Toteuta huoltosopimukset -liiketoimintaprosessin o
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

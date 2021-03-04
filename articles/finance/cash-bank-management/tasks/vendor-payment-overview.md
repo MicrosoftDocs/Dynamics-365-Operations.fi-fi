@@ -63,3 +63,6 @@ Tässä tehtävän ohjauksessa kerrotaan toimittajan maksujen luomisessa käytet
 33. Luo maksut valitsemalla **OK**.
 34. Valitse **Kirjaa**, jos kaikki maksut on hyväksytty ja luotu. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

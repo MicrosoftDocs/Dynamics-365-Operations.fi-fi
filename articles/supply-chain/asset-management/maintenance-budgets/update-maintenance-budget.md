@@ -75,3 +75,6 @@ Budjettirivien **Toteutunut kustannus** -kentät päivitetään, jos todelliset 
 
 - Tiedät, että joidenkin käyttöomaisuuserien kunnostus on parhaillaan suunnitteluvaiheessa, mutta siihen liittyviä töitä ei ole vielä luotu omaisuuden hallinnassa. Haluat kuitenkin, että näiden töiden budjettikustannukset sisällytetään ylläpitobudjettiin.
 - Uusia resursseja tai resurssityyppejä on luotu ylläpitobudjetin luomisen jälkeen, mutta ylläpitosuunnitelmia ei ole vielä määritetty näille käyttöomaisuuserille tai -tyypeille. Haluat kuitenkin, että näiden resurssityyppien budjettikustannukset sisällytetään ylläpitobudjettiin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

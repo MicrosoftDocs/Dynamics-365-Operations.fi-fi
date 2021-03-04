@@ -813,3 +813,6 @@ Lisätietoja siitä, kuinka muodon rakenne voidaan synkronoida ER-mallin kanssa 
 [Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md)
 
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

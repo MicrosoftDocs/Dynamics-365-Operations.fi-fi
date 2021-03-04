@@ -131,3 +131,6 @@ Tämä skenaario näyttää, miten toiminto toimii sellaisissa varastoissa, joid
 
 > [!NOTE]
 > Sama tulos on odotettavissa, kun toinen rivi on varattu osittain. Tässä tapauksessa työ luodaan varatun rivin määrälle, mutta ei varauksettoman määrän osalta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

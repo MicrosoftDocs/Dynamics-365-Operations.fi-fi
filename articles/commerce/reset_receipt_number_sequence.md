@@ -68,3 +68,6 @@ Kun nollauspäivämäärä saapuu, kunkin tyypin ensimmäisen tapahtuman vastaan
 
 > [!NOTE]
 > Valitun palautuspäivämäärän ja kuitin muodon mukaan voi olla päällekkäisiä vastaanottonumeroita. Vaikka myyntipisteen (POS) järjestelmä voi käsitellä näitä tilanteita, se kasvattaa palautusten käsittelyyn tarvittavaa aikaa, koska myyntiedustajan on valittava kuittien kaksoiskappaleet. Muita tietojen tyhjennykseen liittyviä komplikaatioita voi ilmetä, jos päällekkäiset kuitit eivät ole suunniteltu seuraus. Tämän vuoksi on suositeltavaa käyttää dynaamisia päivämäärämerkkejä (esimerkiksi **ppp**, **KK**, **PP** ja **VV**), jotta voit estää kaksoisarvojen vastaanoton numeroiden nollautumisen jälkeen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

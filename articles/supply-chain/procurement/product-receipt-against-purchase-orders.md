@@ -69,3 +69,6 @@ Voit käyttää tätä sivua **Vastaanotto**-toimintoryhmän **Ostotilaus**-sivu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

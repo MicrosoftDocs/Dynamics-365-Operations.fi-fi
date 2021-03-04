@@ -84,3 +84,6 @@ Eksponentiaalisesti kasvavan arvioitavien yhdistelmien määrän ongelman ratkai
 ![Raja-arvon laskentakaava](./media/overlapping-discount-combo-06.jpg)
 
 Kun jaetun tuotejoukon kunkin alennuksen raja-arvo on laskettu, alennukset käytetään jaettuihin tuotteisiin järjestyksessä, läpi kaikkien tapausten, korkeimmasta raja-arvosta pienimpään raja-arvoon. Tässä menetelmässä kaikkia jäljellä olevia alennusmahdollisuuksia ei verrata aina, kun yhtä alennuksen ilmentymää käytetään. Sen sijaan päällekkäisiä alennuksia verrataan yhden kerran ja käytetään sitten järjestyksessä. Muita vertailuja ei tehdä. Voit määrittää ylärajan, joka ylitettäessä siirrytään käyttämään raja-arvomenetelmää, **Alennus**-välilehdessä **Commercen parametrit** -sivulla. Hyväksyttävä aika kokonaisalennuksen laskentaan vaihtelee vähittäiskaupan toimialasta riippuen. Tämä aika on yleensä kuitenkin kymmenistä millisekunneista yhteen sekuntiin.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

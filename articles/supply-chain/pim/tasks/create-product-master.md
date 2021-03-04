@@ -61,3 +61,6 @@ Luo ennalta määritetyille varianteille päätuotteen. Tämän menettelyn luomi
 10. Valitse **Tallenna**.
 11. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

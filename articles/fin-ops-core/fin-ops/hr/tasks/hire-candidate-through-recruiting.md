@@ -45,3 +45,6 @@ Tässä menettelyssä rekrytoija palkkaa hakijan, joka lähetti hakemuksen tiety
 15. Laajenna tai tiivistä Yhteystiedot-osa.
 16. Laajenna tai tiivistä Henkilökohtaiset tiedot -osa.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

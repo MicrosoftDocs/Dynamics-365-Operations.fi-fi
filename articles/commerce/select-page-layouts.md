@@ -78,3 +78,6 @@ Voit valita toisen asettelun aiemmin määritetylle sivulle seuraavasti.
 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

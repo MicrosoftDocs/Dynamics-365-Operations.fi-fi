@@ -160,3 +160,6 @@ Tämä toiminta on käytössä vain, kun tuote valitaan suoraan vapautukseen. Mu
 Tuote X on esimerkiksi määritetty *Design-kaiuttimet*-tuotteen omistajaryhmään. Tuote X on myös tuotteen Y tuoterakenteen osa, ja tuote Y on määritetty *Design-kaiuttimet*-tuotteen omistajaryhmään. Jos *Design-kaiuttimet*-tuotteen omistajaryhmä vapauttaa tuotteen Y ja sen tuoterakenteen, tuote X vapautetaan yhdessä tuotteen Y kanssa.
 
 Lisätietoja on kohdassa [Tuotteen omistajat](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

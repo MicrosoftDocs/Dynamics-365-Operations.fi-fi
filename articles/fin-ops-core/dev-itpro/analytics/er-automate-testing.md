@@ -380,3 +380,6 @@ Tämän vuoksi ER-muodon toimintaa voidaan arvioida osoitetulla tavalla automaat
 - [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md)
 - [ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio](tasks/er-upgrade-format.md)
 - [ER Tuo kokoonpano Lifecycle Services -palvelusta](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Voit myös suodattaa kalentereita esimiehen tai osaston mukaan. Ensisijainen toi
 
 Lisätietoja kalenteriasetuksista on ohjeaiheessa [Kalenteriparametrien määrittäminen](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

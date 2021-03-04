@@ -80,3 +80,6 @@ Luottokortin varmennuksen voit mitätöidä vaihtamalla maksutavan sellaiseksi, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

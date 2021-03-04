@@ -88,3 +88,6 @@ Jos sinulla on D365:ssä raportti, joka ei vastaa odotuksiasi, voit kokeilla seu
 2.  Vie raportti Exceliin
 
 Nyt sinun pitäisi nyt pystyä kopioimaan tiedot FR Excel -raportista D365:n Pääkirja-raporttiin ja vertaamaan Loppusaldo-sarakkeita.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

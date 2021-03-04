@@ -60,3 +60,6 @@ Puun ylin solmu vastaa valitun nimikkeen ja erän käytettävissä olevaa määr
 9. Valitse **Lähetetyt myyntitilaukset**.
 10. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Seuraavassa taulukossa on esitetty Power BI -sisältö, josta raportit kopioidaa
 | [Myynti ja tuottavuus](sales-profitability-performance-content-pack.md) | <ul><li>Tuotto alueen mukaan</li><li>10 parasta asiakasta tuoton mukaan</li><li>10 parasta tuotetta tuoton mukaan</li></ul> |
 | [Luotonvalvonnan hallinta](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Asiakkaiden erääntyneet</li><li>Luottorajan ylittäneet asiakkaat</li><li>Erääntyneet saldot</li></ul> |
 | [Osto- ja kulutusanalyysi](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Osto kuukauden tai päivän mukaan</li><li>10 suurinta toimittajaa ostojen mukaan</li><li>10 parasta tuotetta ostojen mukaan</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

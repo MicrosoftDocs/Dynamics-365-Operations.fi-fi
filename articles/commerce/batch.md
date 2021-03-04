@@ -45,3 +45,6 @@ Voit määrittää laskelman kirjauksen myyntitilauksen laskutuksessa käytettä
 
 > [!NOTE]
 > Parannetun eräseurannassa olevien nimikkeiden käsittelyn tuki laskelman kirjaamisen aikana muissa kuin edistyksellisen varastonhallinnan skenaarioissa sisältyi Retail-sovelluksen versioon 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

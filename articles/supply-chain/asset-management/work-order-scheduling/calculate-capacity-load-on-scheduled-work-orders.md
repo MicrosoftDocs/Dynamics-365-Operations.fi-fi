@@ -58,3 +58,6 @@ Jos laskennalle valitaan kuormitustyypit **Kapasiteetti** tai **Jäljellä oleva
 
 Lisätietoja ylläpitoaikataulurivien kapasiteetin kuormituksen laskemisesta ja ajoittamattomista työtilauksista on kohdassa [Kapasiteetin kuormituksen laskeminen](../capacity-planning/calculate-capacity-load.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

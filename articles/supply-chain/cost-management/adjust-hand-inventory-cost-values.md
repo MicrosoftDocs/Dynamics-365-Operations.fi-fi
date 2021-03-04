@@ -44,3 +44,6 @@ Tämä nimike on määritetty FIFO-varastomallilla ja varaston sulkeminen suorit
 -   5. helmikuuta: Määrä 1 ja kustannus 13,00 €
 
 Voit määrittää näiden kahden nimikkeen kustannukseksi 15,00 Yhdysvaltain dollaria oikaisemalla avoimen käytettävissä olevan varaston edellisestä varaston sulkemisesta lähtien. **Huomautus:** Käytettävissä olevan varaston oikaisutapahtuman kirjauspäivämäärä on edellinen varaston sulkemispäivämäärä. Tätä päivämäärää ei voi muokata.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

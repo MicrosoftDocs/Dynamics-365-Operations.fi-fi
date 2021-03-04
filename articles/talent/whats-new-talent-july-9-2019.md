@@ -115,3 +115,6 @@ Mukautettuja kenttiä voi käyttää seuraavissa Common Data Servicen yksiköiss
 - **Lomatyyppi**
 - **Työntekijän pankkitili**
 - **Työkalenteri**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

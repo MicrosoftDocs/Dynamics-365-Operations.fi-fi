@@ -49,3 +49,6 @@ Lisätietoja Onboard-sovelluksen hankkimisesta ja käyttämisestä on seuraaviss
 - [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
 - [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

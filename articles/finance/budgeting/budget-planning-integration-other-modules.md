@@ -147,3 +147,6 @@ Muihin saatavilla oleviin raportteihin kuuluu esimerkiksi **Ennusteen toimet bud
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -243,3 +243,6 @@ Voit ladata arkistoidun suoritushistorian siirtymällä tietojen hallinnan työt
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Kun kyselylomake on suunniteltu ja jaettu, valitut vastaajat voivat täyttää s
 Kyselylomakkeet voidaan määrittää tietyille käyttäjille tai käyttäjäryhmille tai kaikille verkon käyttäjille.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

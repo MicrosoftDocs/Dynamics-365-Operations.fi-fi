@@ -46,3 +46,6 @@ Tässä menettelyssä kuvataan, miten kuljettajan sisään- ja uloskuittaukset r
 1. Valitse Kuljettajan uloskuittaus.
 2. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

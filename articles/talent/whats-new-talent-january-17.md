@@ -45,3 +45,6 @@ Tämän muutoksen ansiosta **Toiminnon pyytäjä** -kenttä on nyt oletusarvoise
 ### <a name="ideas-portal-updated"></a>Päivitetty ideaportaali
 Sovelluksen linkit, jolla voi lähettää Talent-idean, on päivitetty uuteen ideaportaaliin. Kaikki vanhassa portaalissa annetut ideat on siirretty, joten kaikki hyvät ideat ovat tallella ja muut voivat äänestää niitä.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

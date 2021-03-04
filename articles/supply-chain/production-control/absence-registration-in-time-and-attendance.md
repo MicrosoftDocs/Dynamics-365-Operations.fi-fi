@@ -109,3 +109,6 @@ Tässä esimerkissä työntekijä leimaa itsensä sisään kello 10.00 ja valits
 ### <a name="calculate-and-approve-absence"></a>Poissaolon laskeminen ja hyväksyminen
 
 - Valitse **Työajan seuranta** &gt; **Tarkista ja hyväksy** &gt; **Hyväksy tai laske**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

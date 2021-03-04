@@ -82,3 +82,6 @@ Seuraavassa taulukossa näkyy mikä on kustannuskohde ja mikä on varastokohde.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

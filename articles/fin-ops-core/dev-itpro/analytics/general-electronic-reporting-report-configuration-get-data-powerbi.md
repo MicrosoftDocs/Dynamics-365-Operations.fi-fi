@@ -196,3 +196,6 @@ Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -i
 [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

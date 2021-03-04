@@ -55,3 +55,6 @@ Uusi kenttä ja sen tiedot ovat nyt muokattavissa Excelissä.
 [Vähittäismyyntitapahtumien taloushallinnon dimensioiden muokkaaminen](edit-financial-dim.md)
 
 [Excel-työkirjan luominen vähittäismyyntitapahtumien muokkaamista varten](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

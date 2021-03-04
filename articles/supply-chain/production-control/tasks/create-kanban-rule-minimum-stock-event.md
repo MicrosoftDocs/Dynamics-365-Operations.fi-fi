@@ -68,3 +68,6 @@ Tämä menettely keskittyy asetuksiin, jotka tarvitaan kanban-säännön luomise
 5. Laajenna Kanbanit-osa.
     * Huomaa, että kanban luotiin siirtämään tarvittava materiaalin varastoon 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

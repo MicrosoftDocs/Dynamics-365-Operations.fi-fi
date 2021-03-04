@@ -51,3 +51,6 @@ Lisätietoja on kohdassa [Näytä talousraportit](view-financial-reports.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ Kun valitset hakutuloksista tehtäväoppaan, voit tarkastella vaiheita ohjeaihee
 
 > [!NOTE]
 > Retail Modern POS:n ja pilvimyyntipisteen ohje ei anna tehtäväohjeita sen mukaan, mikä lomake tai tehtävä on käsiteltävänä. Kirjoita hakukenttään prosessin nimi ja valitse sitten on **Haku**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

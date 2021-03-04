@@ -64,3 +64,6 @@ Asiakkaat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaikki
 
 1. Näkyviin tulee **Kopioi asiakas** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla **Kyllä**. 
 2. Valitse **Valitse**. Uusi asiakas luodaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

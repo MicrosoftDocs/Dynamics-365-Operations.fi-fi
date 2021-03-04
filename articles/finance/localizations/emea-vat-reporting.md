@@ -277,3 +277,6 @@ Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimuk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

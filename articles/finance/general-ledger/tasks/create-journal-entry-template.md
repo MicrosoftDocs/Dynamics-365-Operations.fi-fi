@@ -63,3 +63,6 @@ Kirjatut kirjauskansion tositteet voidaan tallentaa tositemalleina. Ne voidaan k
 29. Syötä **Summa**-kenttään tositteeseen kohdistettava summa. **Summa**-kenttä näytetään vain, jos tositemallin tyyppi on Prosentti.  
 30. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

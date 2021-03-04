@@ -58,3 +58,6 @@ Tässä ohjeessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään es
 5. Syötä tai valitse arvo **Tuotevariantin numeron nimikkeistö** -kentässä.
 6. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

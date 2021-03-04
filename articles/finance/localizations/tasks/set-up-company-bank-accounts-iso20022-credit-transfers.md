@@ -52,3 +52,6 @@ Tämä on toinen viidestä tehtävästä, joilla esitellään toimittajamaksujen
 4. Syötä tai valitse arvo Pankkitili-kentässä.
 5. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

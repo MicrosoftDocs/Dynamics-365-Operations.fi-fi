@@ -71,3 +71,6 @@ Palvelunhallinta voidaan integroida seuraavien moduulien kanssa sovelluksessa:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

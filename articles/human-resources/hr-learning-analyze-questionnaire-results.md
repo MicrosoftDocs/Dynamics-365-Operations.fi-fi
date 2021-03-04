@@ -69,3 +69,6 @@ Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien 
 2. Valitse Tulos.
 3. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

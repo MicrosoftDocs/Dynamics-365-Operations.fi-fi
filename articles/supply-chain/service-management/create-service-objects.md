@@ -43,3 +43,6 @@ Huoltokohteet ovat asiakkaan käyttöomaisuuseriä ja tuotteita, joille voidaan 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

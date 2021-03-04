@@ -66,3 +66,6 @@ Jos haluat lisätä ostoskorikuvakkeen moduulin, katso kohta [Otsikkomoduuli](au
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

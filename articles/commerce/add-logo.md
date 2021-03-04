@@ -74,3 +74,6 @@ Kun olet julkaissut päivitetyn otsikon osan, kaikki ylätunnisteosan sisältäv
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

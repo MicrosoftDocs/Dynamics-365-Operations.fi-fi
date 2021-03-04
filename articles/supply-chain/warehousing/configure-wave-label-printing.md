@@ -932,3 +932,6 @@ Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta siv
 - Aallon etikettihistoria
 
 Useimmilla näistä sivuista sopiva toiminto löytyy valitsemalla **Aallon etiketit** toimintoruudun **Lähetykset**-välilehden **Liittyvät tiedot** -ryhmässä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

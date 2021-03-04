@@ -51,3 +51,6 @@ Korkoryhmät voidaan määrittää laskemaan eri korkosummat arvoalueiden perust
 21. Anna kuukausikorkoprosentti, jolla lasketaan korko kuukaudesta 7 alkaen. Tässä esimerkissä se on 2,5.
 22. Lopeta asetusten määritys valitsemalla Sulje.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

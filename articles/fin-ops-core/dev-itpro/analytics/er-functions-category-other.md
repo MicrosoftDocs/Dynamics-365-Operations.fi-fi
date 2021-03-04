@@ -55,3 +55,6 @@ Sähköisen raportoinnin (ER) toimialuekohtaisia funktioita voidaan käyttää s
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
 [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

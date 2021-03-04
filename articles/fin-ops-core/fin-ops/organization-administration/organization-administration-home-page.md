@@ -101,3 +101,6 @@ Tietuemallien avulla voit luoda tietueita nopeammin. Voit luoda tietuemallin, jo
 - [Asiakirjanhallinnan määrittäminen](configure-document-management.md)
 - [Sähköpostiviestin määrittäminen ja lähettäminen](configure-email.md)
 - [Päivämäärä- ja aikatiedot sekä aikavyöhykkeet](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

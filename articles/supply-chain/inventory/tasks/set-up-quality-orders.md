@@ -136,3 +136,5 @@ Seuraavissa vaiheissa kerrotaan, miten laadunhallintaprosessi otetaan käyttöö
 
 > [!NOTE]
 > *Varastoprosessien laadunhallinta* -toiminto tarjoaa lisävaihtoehtoja laatuliitosten perustamiseen. Se lisää uuden ehdon (**Käytettävissä oleva varastotyyppi**) ja uuden asetuksen (**Laadun käsittelykäytäntö**). Jos olet ottanut tämän toiminnon käyttöön, lisätietoja on kohdassa [Varastoprosessien laadunhallinta](../quality-management-for-warehouses-processes.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

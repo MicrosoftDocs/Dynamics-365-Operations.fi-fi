@@ -68,3 +68,6 @@ Alla olevassa kuvassa näkyy **Kaikki ylläpitoaikataulut** -luettelosivu.
 
 ![Kuva 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

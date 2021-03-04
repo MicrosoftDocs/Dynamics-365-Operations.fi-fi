@@ -87,3 +87,6 @@ Supply Chain Management sisältää Tilavuuteen perustuva kuormituksen luontistr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

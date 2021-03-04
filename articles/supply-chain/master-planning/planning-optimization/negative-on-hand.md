@@ -87,3 +87,6 @@ Tuloksena on 25 kappaleen suunniteltu tilaus. (= 25 kpl &minus; 0 kpl) ja täytt
 [Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
 
 [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

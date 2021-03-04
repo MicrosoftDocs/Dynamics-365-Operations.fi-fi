@@ -65,3 +65,6 @@ Varastotiloja voi muuttaa joko **Varastosaldo sijainnin mukaan** -sivulla tai k�
 > - **Varastosaldo sijainnin mukaan** -sivulla voi ryhmittää rivejä näkyvissä olevien dimensioiden mukaan käyttämällä **Näytä dimensiot** -painiketta ja muuttamalla valittujen rivien tilaa.
 > - **Varastosaldo sijainnin mukaan** -sivulla voi valita useita tietueita ja muuttaa ne sitten kaikki kerralla **Varastosaldo sijainnin mukaan** -painikkeella.
 > - Kausittaisia **Varaston tilanmuutos** -tehtävässä voi käyttää suodatusperusteena seurantadimensioita.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

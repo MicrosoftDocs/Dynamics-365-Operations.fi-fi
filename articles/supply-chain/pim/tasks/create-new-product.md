@@ -43,3 +43,6 @@ Tässä aiheessa kuvataan, kuinka uusi jaettu tuote luodaan. Tehtävän suoritta
 3. Syötä tai valitse arvo **Seurantadimensioryhmä**-kentässä. Seurantadimensioryhmä määrää, mitä seurantadimensioita kullekin tuotteen tapahtumalle on syötettävä, ja miten sitä käsitellään varastossa.  
 4. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

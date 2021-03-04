@@ -59,3 +59,6 @@ Määritettävä suunnitelman suodatin sisältää nimekkeet A, B ja C. Samalla 
 [Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
 
 [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

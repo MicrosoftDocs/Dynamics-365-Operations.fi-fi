@@ -71,3 +71,6 @@ Kirjaa muistiin asiakasnumerot ja nimiketunnukset, jotka olevat valinnut provisi
 3. Sulje sivu.
 4. Valitse **Tosite**. Voit tarkastella esimääritetyille provision kulu- ja ostoreskontratileille kirjattujen provisiosummien tositetapahtumia.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

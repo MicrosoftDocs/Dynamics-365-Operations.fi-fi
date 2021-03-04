@@ -87,3 +87,6 @@ Tämän virheen korjaus määräytyy virheen syyn mukaan:
 
 + Jos yhdistämismääritykset ovat riippuvaisia määrityksistä, varmista, että otat käyttöön tämän taulun yhdistämismäärityksen sidonnaiset määritykset.
 + Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdekentät. Jos Finance and Operations -sovelluksen kenttä puuttuu, noudata [Puuttuvien yksikkökenttien ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps) -kohdan ohjeita. Jos kenttä Dataversessä puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta kentät täytetään automaattisesti takaisin yhdistämismääritykseen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

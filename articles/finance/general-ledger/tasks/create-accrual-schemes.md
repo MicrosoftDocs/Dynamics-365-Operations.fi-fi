@@ -41,3 +41,6 @@ Tässä ohjeaiheessa käsitellään jaksotusmallin luonti. Tässä tehtävässä
 10. Lisää **Esiintymien määrä kausittain** -kenttään arvo.
 11. Valitse **Kirjaa tapahtumat** -kentässä, milloin tapahtumat on kirjattava, esimerkiksi **Kuukausittain**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

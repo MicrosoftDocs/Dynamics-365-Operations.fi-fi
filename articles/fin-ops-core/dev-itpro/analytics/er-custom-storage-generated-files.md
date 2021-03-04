@@ -341,3 +341,6 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 - [Laajennettavuuden kotisivu](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

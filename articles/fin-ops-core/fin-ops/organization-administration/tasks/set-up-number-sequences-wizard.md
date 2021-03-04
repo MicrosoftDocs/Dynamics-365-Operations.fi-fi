@@ -38,3 +38,6 @@ Numerosarjoja käytetään muodostamaan päätietotietueille ja niitä tarvitsev
 4. Valitse **Seuraava**.
 5. Valitse **Valmis**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

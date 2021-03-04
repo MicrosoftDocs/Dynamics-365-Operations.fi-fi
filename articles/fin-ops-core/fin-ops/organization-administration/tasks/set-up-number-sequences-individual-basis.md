@@ -40,3 +40,6 @@ Tässä ohjeaiheessa selitetään, miten numerosarjat määritetään yksittäin
 8. Laajenna **Yleiset**-osa. Määritä Yleinen-pikavälilehdellä, onko numerosarja manuaalinen, jatkuva tai ei-jatkuva. Kirjoita lisäksi pienimmät ja suurimmat numerosarjassa käytettävät numerot. Emme suosittele ei-jatkuvan numerosarjan muuttamista jatkuvaksi numerosarjaksi. Numerosarja ei ole todellisuudessa jatkuva. Tämä muutos saattaa myös aiheuttaa tietokannassa päällekkäisten avainten virheitä. Lisäksi jatkuvilla numerosarjoilla on suurempi vaikutus suorituskykyyn.   
 9. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

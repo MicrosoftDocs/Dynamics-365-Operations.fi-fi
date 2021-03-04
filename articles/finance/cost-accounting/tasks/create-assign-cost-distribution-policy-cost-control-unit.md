@@ -73,3 +73,6 @@ Kustannusten jaon sääntöjä käytetään sellaisten kustannusten jaossa, jotk
 5. Anna tai valitse arvo Kustannusseurantayksikkö-kenttään.
 6. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

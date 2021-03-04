@@ -192,3 +192,6 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poistettujen tai vanhentuneiden toimintojen aiemmat ilmoitukset
 Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa on kohdassa [Poistetut tai vanhentuneet toiminnot edellisissä versioissa](../migration-upgrade/deprecated-features.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

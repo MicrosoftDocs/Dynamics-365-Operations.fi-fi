@@ -28,3 +28,6 @@ ms.locfileid: "4461025"
 # <a name="welcome-to-onboard"></a>Tervetuloa Onboardiin
 
 [!include [banner](includes/banner.md)]
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

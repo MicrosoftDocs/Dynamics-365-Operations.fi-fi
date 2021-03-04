@@ -96,3 +96,6 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 21. Valitse **OK**.
 22. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

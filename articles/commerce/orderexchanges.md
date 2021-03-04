@@ -50,3 +50,6 @@ Ostoskoriin on lisätty kolme uutta summakenttää, jotta ostoskorin eri summat 
 - **Käytetty talletus** – Tallennussumma, jota käytetään tapahtumassa, kun käyttäjä suorittaa asiakastilauksen noudon. Jos talletuksen ohitus ei ole käytössä ja määritetään 10 prosentin talletus, tähän kenttään tulee 90 prosenttia asiakastilauksen kokonaissummasta.
 - **Suoritussumma** – Niiden rivien kokonaissumma, joiden toimitustavaksi oli määritetty **Suoritus** asiakastilausta luotaessa tai muokattaessa tai asiakastilaukseen liittyvän vaihdon yhteydessä. Tämän kentän summa sisältää verot ja maksut.
 - **Palautussumma** – Niiden rivien kokonaissumma, joilla on negatiiviset määrät asiakastilauksen vaihdon aikana. Tämän kentän summa sisältää verot ja maksut.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Kun olet luonut toiminnallisten sijaintien edellyttämät elinkaariilat, ne void
 5. Jos haluat valita mallin kaikki käytettävissä olevat tilat, napsauta ![Valitse kaikki käytettävissä olevat vaiheet](media/03-setup-for-functional-locations.png) -painiketta. Kaikki tilat siirretään **Valitut elinkaaren tilat** -osioon.
 6. Jos haluat poistaa valitun tilan mallista, valitse tila **Valitut elinkaaren tilat** -osassaja valitse sitten ![takaisin-nuoli](media/04-setup-for-functional-locations.png) -painike.
 7. Valitse **Elinkaaren tilan päivitykset** määrittääksesi, mitkä elinkaaren tilat voivat seurata valittua tilaa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

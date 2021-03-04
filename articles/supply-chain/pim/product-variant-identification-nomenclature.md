@@ -198,3 +198,6 @@ Konfigurointiprosessin yhden vaiheen aikana järjestelmä ehdottaa konfiguraatio
 
 [Tuotenumeroiden nimikkeistön luominen konfiguroiduille tuotevarianteille](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

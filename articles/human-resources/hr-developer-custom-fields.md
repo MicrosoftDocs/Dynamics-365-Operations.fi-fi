@@ -40,3 +40,5 @@ Varmista, että otat käyttöön luomasi mukautetut kentät, jotta voit käyttä
 [Common Data Service -yksiköt](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Mukautettujen kenttien luominen ja käsitteleminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Mukautettujen kenttien tuominen tietoyksiköiden nähtäville](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

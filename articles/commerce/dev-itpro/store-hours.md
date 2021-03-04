@@ -78,3 +78,6 @@ Seuraavia ohjeita noudattamalla voit lisätä myymälätunteja tulostetuihin myy
 Myyntipsiteen kuiteissa on nyt myymälän tunnit. Jos malliin sisältyy vapaapäiviä, ne näkyvät kuitissa.
 
 ![Kuitin esimerkki](../dev-itpro/media/Storehours3.png "Kuitin esimerkki")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

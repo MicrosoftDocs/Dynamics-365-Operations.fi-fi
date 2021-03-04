@@ -45,3 +45,6 @@ Vastaavasti **kolmannen osapuolen tilasarakkeessa** seuraavat arvot ilmaisevat, 
 Molemmat tilajoukot ja niiden keskinäinen suhde näkyy seuraavassa kaaviossa.
 
 [ ![Kokeilun tilat](./media/experimentation_statuses.svg)](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

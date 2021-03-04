@@ -65,3 +65,6 @@ Myyntipisteen kieliasetukset määritetään kohdassa **Työntekijä**-sivun **K
 | **Yritys** | Oletusarvo                    | Oletusarvo                                                       |
 | **Myymälä**   | Ohittaa yrityksen          | Ohittaa yrityksen                                             |
 | **Käyttäjä**    | Ohittaa myymälän tai yrityksen | En koskaan                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Elleivät säännökset vaadi jatkuvien numerosarjojen käyttöä, suosittelemme
 Järjestelmä ei voi kierrättää numeroita automaattisesti jatkuvia numerosarjoja varten sähkökatkoksen, sovellusvirheen tai muun odottamattoman vian takia. Voit suorittaa vapautusprosessi manuaalisesti tai automaattisesti palauttaaksesi menetetyt numerot.
 
 Mieti palvelimen käyttö puhdistusprosessin suunnittelussa. On suositeltavaa suorittaa vapautus erätyönä hiljaisena aikana.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

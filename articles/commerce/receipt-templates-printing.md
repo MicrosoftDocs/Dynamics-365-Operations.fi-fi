@@ -82,3 +82,6 @@ Kuittiprofiilit määritetään suoraan tulostimeen laitteistoprofiilin kautta.
 
 > [!NOTE]
 > Jos käytössä on kaksi tulostinta, yhtä tulostinta voidaan käyttää standardimuotoisten 40-sarakkeisten lämpökuittien tulostamiseen. Toista tulostinta käytetään tyypillisesti suuremman tietomäärän vaativien koko sivun kuittityyppien tulostamiseen. Näihin kuittityyppeihin sisältyvät asiakastilausten kuitit ja myyntilaskut.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

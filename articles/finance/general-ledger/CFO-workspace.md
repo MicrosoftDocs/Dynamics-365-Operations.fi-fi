@@ -56,3 +56,6 @@ Tässä ohjeaiheessa kerrotaan, miten taloushallinnon dimensiot lisätään talo
 16. Luo projekti ja tarkastele sitten tuloksia avaamalla sovellus.
 
     [![Valmis työtila](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

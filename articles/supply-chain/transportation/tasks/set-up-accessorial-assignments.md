@@ -50,3 +50,6 @@ Tässä menettelyssä kerrotaan, miten lisämaksun määritys määritetään. K
 14. Syötä Lisämaksu-kenttään numero.
 15. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

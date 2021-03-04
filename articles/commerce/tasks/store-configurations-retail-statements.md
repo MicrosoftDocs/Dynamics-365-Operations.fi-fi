@@ -49,3 +49,6 @@ Tässä menettelyssä esitellään myymälän konfiguraatiot, jotka vaikuttavat 
 17. Valitse **Jakoperusteena laskelmatapa** -kohdassa Kyllä, kun jokaiselle määritetylle laskelmatavalle luodut laskelmat haetaan. Tämä toiminto voi olla hyödyllinen, jos kirjauksen suoritustasoa on parannettava myymälöissä, joiden tapahtumamäärät ovat suuria, ja halutaan useita pieniä rinnakkain käsiteltäviä laskelmia.  
 18. Valitse **Yleiset**-pikavälilehdessä **Oletusasiakas**-kentässä myymälässä asioineiden asiakkaiden myynnissä käytettävä asiakastili.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

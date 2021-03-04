@@ -67,3 +67,6 @@ Koska suunnitteluyritys omistaa suunnitteluun liittyvät tiedot, se hallitsee se
 
     - Kun nämä asiakirjat vapautetaan muihin yrityksiin, asiakirjat on suojattu siten, että operatiivinen yritys ei voi poistaa niitä.
     - Muut yritykset voivat lisätä täysin uusia paikallisia asiakirjoja. Operatiivinen yritys omistaa nämä paikalliset asiakirjat ja ylläpitää niitä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

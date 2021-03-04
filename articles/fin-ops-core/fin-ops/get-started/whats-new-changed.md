@@ -50,3 +50,6 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Lifecycle 
 - [Lifecycle Servicesin (LCS) uudet ja muuttuneet ominaisuudet](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

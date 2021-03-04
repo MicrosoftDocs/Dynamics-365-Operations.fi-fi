@@ -157,3 +157,6 @@ Seuraavassa taulukossa kuvataan yleinen sääntö.
 | Saatava arvonlisävero | Negatiivinen              | Saatava vero -tili | Negatiivinen (kredit)  |
 | Maksettava arvonlisävero    | Positiivinen              | Maksettava vero -tili    | Negatiivinen (kredit)  |
 | Maksettava arvonlisävero    | Negatiivinen              | Maksettava vero -tili    | Positiivinen (debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

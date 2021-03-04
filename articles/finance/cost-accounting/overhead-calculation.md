@@ -1415,3 +1415,6 @@ Kirjanpidossa kirjataan tyhjään kustannuspaikkatunnukseen sähkökustannus arv
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

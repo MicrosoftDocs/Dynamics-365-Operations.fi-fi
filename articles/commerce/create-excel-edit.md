@@ -78,3 +78,6 @@ Alla olevien ohjeiden avulla voit luoda ja määrittää Excel-työkirjan niin, 
 [Vähittäismyyntitapahtumien taloushallinnon dimensioiden muokkaaminen](edit-financial-dim.md)
 
 [Kenttien lisääminen Excel-työkirjaan vähittäismyyntitapahtumien muokkaamista varten](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

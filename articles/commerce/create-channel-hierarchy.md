@@ -107,3 +107,6 @@ Seuraavassa kuvassa näkyy esimerkkisolmu, johon on lisätty tuotemääriteryhmi
 [Valikoimien määrittäminen](set-up-assortments.md)
 
 [Määritteiden ja määriteryhmien hallinta](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

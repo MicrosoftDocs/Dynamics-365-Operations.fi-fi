@@ -222,3 +222,6 @@ Jos käyttäjät ohittavat lasketut kulut manuaalisesti tai lisäävät manuaali
 
 [Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

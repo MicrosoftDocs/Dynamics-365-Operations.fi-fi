@@ -129,3 +129,6 @@ Jos ehdokkaat hyväksyvät LinkedIn-profiiliinsa jakamisen organisaation käytt�
 [Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 Talent – Attractista](./attract-post-jobs-to-linkedin.md)
 
 [LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

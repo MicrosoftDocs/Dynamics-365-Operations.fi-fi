@@ -108,3 +108,6 @@ Alla olevassa näyttökuvassa on esimerkki **Työtilauksen päivämäärien hall
 ![Esimerkki Työtilausten päivämäärien hallinnan laskutuloksista](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

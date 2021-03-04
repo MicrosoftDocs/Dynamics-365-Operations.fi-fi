@@ -89,3 +89,6 @@ Seuraavat raportit sisältävät viitetietoja objekteista:
 - [Käyttöoikeuskoodien ja määritysavainten raportti](../sysadmin/license-codes-configuration-keys-report.md)
 - [Käytettävissä olevat SQL Server Reporting Servicesin (SSRS) raportit](SSRS-report.md)
 - [Työnkulkutyyppien raportti](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

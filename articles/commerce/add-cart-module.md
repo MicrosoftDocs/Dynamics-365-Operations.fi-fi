@@ -117,3 +117,6 @@ Voit lisätä ostoskorimoduulin uudelle sivulle ja määrittää pakolliset omin
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
 
 [Luo online-toimintoprofiili](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Edellytykset:
 12. Sulje sivu.
 13. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

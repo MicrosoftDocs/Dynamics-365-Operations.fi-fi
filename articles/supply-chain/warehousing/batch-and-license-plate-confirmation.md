@@ -48,3 +48,6 @@ Voit määrittää erän ja rekisterikilven tiedot mobiililaitteen valikkovaihto
 
 1. Anna työn vahvistusasetukset mobiililaitteen valikkovaihtoehdoissa.  
 1. Valitse jo erän tai rekisterikilven vahvistusvaihtoehto. Kumpikin vaihtoehto on valittavissa keräilytyötyypeissä, joissa automaattista vahvistusta ei ole otettu käyttöön.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

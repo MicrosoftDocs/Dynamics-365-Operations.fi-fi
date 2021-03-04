@@ -91,3 +91,6 @@ Jos **model.RoundOff**-parametrin arvoksi on asetettu **RoundOffType.RoundUp**, 
 [Muut (liiketoiminnan toimialuekohtaiset) toiminnot](er-functions-category-other.md)
 
 [Matemaattinen toiminto](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

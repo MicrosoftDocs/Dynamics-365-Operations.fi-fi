@@ -46,3 +46,6 @@ Lisätietoja on kohdan [Talentin valmistelu](https://docs.microsoft.com/dynamics
 **Pitkäaikainen ratkaisu**
 
 Microsoft harkitsee soveltuvien Onboard- ja Attract-oikeuksien määrittämistä automaattisesti, kun käyttäjä lisätään Human Resourceen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

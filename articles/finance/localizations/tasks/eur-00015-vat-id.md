@@ -61,3 +61,6 @@ Nämä tiedot koskevat kaikkia Euroopan maita/alueita. Tämä tehtävä luotiin 
     * Määritä luomasi rekisteröintityyppi esimääritettyyn rekisteröintiluokkaan.  
 22. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

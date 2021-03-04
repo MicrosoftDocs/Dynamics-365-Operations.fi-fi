@@ -81,3 +81,6 @@ Tämän vuoksi ATP-laskennan perusteella lähetyspäivä määritetään 10 päi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

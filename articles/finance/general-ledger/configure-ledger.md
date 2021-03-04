@@ -82,3 +82,6 @@ Jos käytät kahta valuuttaa tai jos käytät yhtä valuuttaa, mutta tapahtumat 
 Toteutuneet voitot ja tappiot ovat tuottoja ja menetyksiä, jotka on saatu valmiista tapahtumista. Ne tallennetaan tuloslaskelmaan. Toteutumattomat voitot ja tappiot ovat tuottoja ja menetyksiä, jotka ovat materialisoituneet, mutta tapahtuma ei ole valmis. Toisin sanoen esimerkiksi lasku on kirjattu, mutta sitä ei ole vielä selvitetty ja maksettu. Toteutumattomat voitot ja tappiot tallennetaan taseeseen.
 
 Lisätietoja kahden valuutan käyttämisestä on kohdassa [Kaksoisvaluutta](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

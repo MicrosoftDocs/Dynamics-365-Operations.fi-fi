@@ -62,3 +62,6 @@ Lisätietoja on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](..
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

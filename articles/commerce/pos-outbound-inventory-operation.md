@@ -193,3 +193,6 @@ Kokonaan lähetetyt siirtotilaukset siirretään **Valmis**-välilehteen **Läht
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Myyntipisteen saapuva varastotoiminto](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

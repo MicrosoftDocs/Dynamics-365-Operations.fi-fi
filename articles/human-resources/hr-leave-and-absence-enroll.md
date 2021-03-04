@@ -60,3 +60,5 @@ Kun olet luonut loma- ja poissaolosuunnitelman Dynamics 365 Human Resourcesissa,
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

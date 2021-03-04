@@ -98,3 +98,6 @@ Voit vapauttaa raaka-aineen osittaista valmiiden tavaroiden määrää varten ta
     Käytettävissä olevat yksiköt määritetään valmiin tuotteen yksikön sarjaryhmässä.
 
     Esimerkki: valmiin tavaran yksikön muunto kilogrammojen (kg) ja kuormalavojen (KL) välillä on 1 KL = 100 kg. Jos haluat luoda tuotantotilauksen 10 000 kg:lle valmista tavaraa, voit vapauttaa raaka-aineet sille kuormalavamäärälle, jonka aiot tuottaa. Valitse ensin yksiköksi **KL** ja sitten vastaava luku **Määrä**-kentässä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

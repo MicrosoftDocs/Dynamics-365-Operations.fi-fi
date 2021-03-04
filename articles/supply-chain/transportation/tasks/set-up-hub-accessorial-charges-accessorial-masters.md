@@ -54,3 +54,6 @@ Tässä menettelyssä kerrotaan, miten keskuksen lisämaksun päätiedot luodaan
 9. Valitse Tallenna.
 10. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

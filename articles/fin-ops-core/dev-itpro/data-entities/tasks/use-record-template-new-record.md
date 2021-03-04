@@ -35,3 +35,6 @@ Tässä menettelyssä käytetään USMF-yritystä.
 3. Etsi haluamasi tietue luettelosta ja valitse se.
 4. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

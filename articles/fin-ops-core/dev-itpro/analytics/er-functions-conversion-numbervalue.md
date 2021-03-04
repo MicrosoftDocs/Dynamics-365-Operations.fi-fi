@@ -63,3 +63,6 @@ Tuloksena oleva numeroarvo.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tyypin muuntamisen toiminnot](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

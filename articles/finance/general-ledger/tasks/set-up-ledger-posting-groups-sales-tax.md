@@ -42,3 +42,6 @@ Arvonlisävero lasketaan ja kirjataan kirjanpidon kirjausryhmien päätileille. 
 11. Valitse **Asiakastapauksen alennus** -kentässä päätili, jonne tähän **kirjanpidon kirjausryhmän** liitetyn **arvonlisäverokoodin** käteisalennukset kirjataan. Tämä kenttä on valinnainen. Jos tiliä ei ole syötetty, käytetään **Käteisalennuksen koodit** -kohdan päätiliä. **Kirjanpidon kirjausryhmä** -kohdassa kannattaa ehkä käyttää eri tilejä, jos käytössä on **arvonlisäveroryhmien** Mitätöi käteisalennuksen arvonlisävero -kohta.  
 12. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

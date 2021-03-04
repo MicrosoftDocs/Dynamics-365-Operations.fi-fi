@@ -101,3 +101,6 @@ Mahdollisuus seurata työntekijöiden aikaa ja ymmärtää, kuinka aikaa lasketa
 ### <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
 
 Finance and Operationsin Platform update 26 -päivityksen jälkeen käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät sähköposti-ilmoitukset automaattisesti yhteyshenkilöille, kun tapahtuma käynnistää ilmoitukset.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

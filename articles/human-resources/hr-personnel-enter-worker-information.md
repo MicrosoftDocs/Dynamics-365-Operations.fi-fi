@@ -45,3 +45,6 @@ Kun rekrytoija on luonut joukkotyöhönottoprojektin ja luonut toimet, syötetä
 8. Poista valitun rivin merkintä luettelossa.
     * Valitse seuraava projektin toimi ja jatka syöttämällä jokaisen palkattavan työntekijän tiedot.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

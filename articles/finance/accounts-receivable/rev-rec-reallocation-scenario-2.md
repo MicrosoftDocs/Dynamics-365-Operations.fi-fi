@@ -90,3 +90,6 @@ Toinen myyntitilaus laskutetaan nyt. Asiakkaalle esitettävä kokonaislasku on s
 [![Tositetapahtumat-sivu, jolla on kirjattu kirjanpitomerkintä](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Koska tuoton ja myynnin summa on suurempi kuin 1 170,44 $, kirjataan erotus –130,17 $. Tämä summa tyhjentää saldon osittaisen laskun tuoton selvitystililtä. Kyseinen saldo kirjataan uuteen kirjanpitomerkintään uudelleenkohdistuksen jälkeen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

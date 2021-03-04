@@ -149,3 +149,6 @@ Voit määrittää tuotteen saatavuuden API-liittymissä noudattamalla seuraavia
 [Varastoasetusten käyttäminen](inventory-settings.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

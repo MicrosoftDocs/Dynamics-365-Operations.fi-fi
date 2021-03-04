@@ -65,3 +65,6 @@ Kutakin vakiomuotoista Common Data Service -entiteettiä laajennetaan viittaukse
 7. Kun olet laajentanut **Tarjoukset**-entiteettiä, suodata käyttämällä kyselymerkkijonona merkkijonoa `CUSTGROUP !=  "<company>"` .
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Myynt tarjouksen otsikko, muokkaa kyselyä":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

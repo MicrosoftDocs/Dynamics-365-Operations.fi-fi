@@ -59,3 +59,6 @@ Tämän funktion palauttama merkkijono määräytyy koodauksen mukaan, joka on v
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -164,3 +164,6 @@ Joitakin kaavoja ei voi testata suunnittelun aikana. Kaava voi esimerkiksi palau
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

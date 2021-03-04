@@ -113,3 +113,6 @@ Voit käyttää **Saapumisten yleiskatsaus** -lomaketta tunnistamaan palautuslä
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

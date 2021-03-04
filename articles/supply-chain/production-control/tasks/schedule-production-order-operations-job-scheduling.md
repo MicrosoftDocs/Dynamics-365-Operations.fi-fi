@@ -56,3 +56,6 @@ Tämä aihe keskittyy tuotantotilaukseen ajoittamiseen työvaiheiden ja töiden 
 6. Valitse toimintoruudussa **Tuotantotilaus**.
 7. Valitset **Kaikki työt**. Huomaa, että aktiivisen reitin perusteella töiden ajoituksella luontiin viisi työtä.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

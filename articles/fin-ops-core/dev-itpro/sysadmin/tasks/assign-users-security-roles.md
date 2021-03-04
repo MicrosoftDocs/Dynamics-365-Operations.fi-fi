@@ -57,3 +57,6 @@ Järjestelmänvalvojan on myös poistettava käyttöoikeusrooleihin manuaalisest
 2. Valitse puussa rooli ja **Roolille määritetyt käyttäjät** -valikossa **Määritä tai sulje pois käyttäjiä manuaalisesti**.
 4. Käyttäjät, joille ei ole määritetty roolia **Määritä käyttäjiä rooliin tai sulje käyttäjät pois roolista** -kohdassa määritetään **Roolienmääritystilassa** asetuksella **Ei mitään**. Valitse vähintään yksi käyttäjä, jolle rooli liitetään.
 5. Valitse **toimintoruudussa** **Määritä rooliin**. **Määritystila** päivitetään **Manuaaliseksi**, ja käyttäjät voivat nyt määrittää uuden roolin.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

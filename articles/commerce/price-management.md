@@ -240,3 +240,6 @@ Lisäksi **vain** hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 Hinta on yksi tärkeimmistä tekijöistä, jotka ohjaavat monien asiakkaiden ostopäätöksiä, ja monet asiakkaat vertailevat hintoja eri sivustoilla ennen kuin ostavat. Vähittäiskauppiaat tarkkailevat kilpailijoitaan huolellisesti ja toteuttavat usein kampanjoita varmistaakseen, että tarjoavat kilpailukykyiset hinnat. Jotta nämä vähittäismyyjät voisivat houkutella asiakkaita, on erittäin tärkeää, että tuotehaku, selaustoiminto, luettelot ja tuotetietosivut näyttävät tarkat hinnat.
 
 Tulevassa Commerce-versiossa **GetActivePrices**-ohjelmointirajapinta (API) palaa hintoihin, joissa on yksinkertaisia alennuksia (esimerkiksi yksirivinen alennus, joka ei riipu muista ostoskorin nimikkeistä). Tällä tavoin näytettävät hinnat ovat lähellä todellista määrää, jonka asiakkaat maksavat nimikkeistä. Tämä ohjelmointirajapinta käsittää kaikki yksinkertaisten alennusten tyypit: kumppanuuteen, uskollisuuteen ja luetteloon perustuvat sekä kanavapohjaiset alennukset. Lisäksi ohjelmointirajapinta antaa käyttöön sovellettavien alennusten nimet ja voimassaolotiedot, jotta jälleenmyyjät voivat antaa hinnan tarkemman kuvauksen ja luoda kiireellisyyden, jos alennuksen voimassaoloaika umpeutuu pian.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

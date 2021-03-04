@@ -50,3 +50,6 @@ Vastavuoroinen suhde voidaan helposti määrittää **Konsernin sisäinen lasken
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

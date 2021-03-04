@@ -1233,3 +1233,6 @@ Huomaa, että luodun raportin alatunniste ei sisällä sen luonnissa käytetyn E
 - [IF-funktio](er-functions-logical-if.md)
 - [ORDERBY-funktio](er-functions-list-orderby.md)
 - [SESSIONNOW-funktio](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

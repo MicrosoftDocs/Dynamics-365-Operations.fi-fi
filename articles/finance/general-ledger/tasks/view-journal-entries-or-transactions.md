@@ -43,3 +43,6 @@ Näiden ohjeiden avulla voit käyttää tositetapahtumien kyselyä kirjauskansio
 12. Valitse toimintoruudussa **Alkuperäinen tiedosto**.
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

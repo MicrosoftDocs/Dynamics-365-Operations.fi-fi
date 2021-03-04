@@ -148,3 +148,6 @@ Määritä seuraavat kentät jokaiselle lisättävälle riville.
 | Kyselylomake | Valitse tarkistusluettelossa käytettävä kyselylomake. Tarkistusluettelon paikallinen tarkistusluettelo siinä yhtiössä, jossa valmiustarkistus tehdään. Järjestelmän on voitava arvioida kyselylomakkeessa annettujen vastausten oikeellisuus. Tämän vuoksi kyselylomake on määritettävä siten, että arviointi tehdään oikeiden vastausten perusteella. Lisätietoja kyselylomakkeiden luomisesta on kohdassa [Kyselylomakkeiden käyttäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) ja siihen liittyvissä aiheissa. |
 | Automaattinen hyväksyntä | Valmiustarkistustietueissa on **Hyväksytty**-valintaruutu, joka ilmaisee hyväksynnän tilan. Valitse **Automaattinen hyväksyntä** -valintaruutu niissä tarkistuksissa, jotka on määritettävä hyväksytyiksi heti, kun määritetty käyttäjä on suorittanut ne. Poista tämän valintaruudun valinta, jos hyväksyntään tarvitaan erillinen lisävaihe. |
 | Pakollinen | Valitse tämä valintaruutu tarkistuksissa, jotka määritetyn käyttäjän on tehtävä. Pakollisia tarkistuksia ei voi ohittaa. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

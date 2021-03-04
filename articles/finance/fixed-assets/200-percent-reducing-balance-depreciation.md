@@ -90,3 +90,6 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

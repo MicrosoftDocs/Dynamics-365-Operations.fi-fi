@@ -38,3 +38,6 @@ Jos samalla reittisegmentillä on useita lähetyksen rahdinkuljettajia ja rahdin
 1. Anna **Nimi**-kentässä ryhmää kuvaava nimi.
 1. Lisää **Tiedot**-pikavälilehdessä rivi ja valitse siihen lähetyksen rahdinkuljettaja ja rahdinkuljettajapalvelu. Toista tämä vaihe, kunnes olet lisännyt ryhmään tarvittavan määrän rahdinkuljettajia.
 1. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

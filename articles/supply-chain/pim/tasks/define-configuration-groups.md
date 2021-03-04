@@ -40,3 +40,6 @@ Tässä menettelyssä selvitetään, miten tuotekonfiguraatioryhmät määritet�
 7. Kirjoita arvo Nimi-kenttään.
 8. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -33,3 +33,6 @@ Talentin uusia versioita julkaistaan viikoittain. Nämä versiot on mainittu doc
 
 Sisällysluettelo päivitetään edelleen viikoittain, joten käy tarkistamassa sieltä Talentiin uusien versioiden uudet ja muuttuneet ominaisuudet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

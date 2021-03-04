@@ -87,3 +87,6 @@ Myyntitilausrivin syötön oletusasetuksena on avata **Tuotehaku** -sivu, kun al
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

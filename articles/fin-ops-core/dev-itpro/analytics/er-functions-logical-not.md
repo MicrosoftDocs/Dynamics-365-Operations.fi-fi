@@ -55,3 +55,6 @@ Tuloksena oleva *Totuusarvo*-arvo.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Loogiset toiminnot](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

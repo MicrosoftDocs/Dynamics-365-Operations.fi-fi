@@ -72,3 +72,6 @@ Budjettisuunnitelman mallin luo budjettipäällikkö Microsoft Wordissa ja malli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

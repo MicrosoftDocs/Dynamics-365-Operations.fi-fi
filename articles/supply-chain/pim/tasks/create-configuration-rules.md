@@ -55,3 +55,6 @@ Tässä menetelmässä luodaan konfigurointisäännöt, joita voidaan käyttää
     * Valitse nimiketunnus, joka valitaan tai jonka valinta poistetaan valitun menetelmän mukaan.  
 18. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

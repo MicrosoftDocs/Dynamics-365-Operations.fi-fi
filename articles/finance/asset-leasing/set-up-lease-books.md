@@ -53,3 +53,6 @@ Luo vuokrasopimuskirja noudattamalla seuraavia ohjeita.
     | Lyhytaikainen kynnysarvo                     | Määritä lyhytaikaisten vuokraasopimusten kynnysarvona käytettävä kuukausien määrä. Jos vuokra-aika on pienempi tai yhtä suuri kuin tähän syöttämäsi kuukausien määrä, järjestelmä luokittelee vuokrasopimuksen lyhytaikaiseksi vuokrasopimukseksi ja käyttää toteutumattoman vuokran käsittelyä. |
     | Arvoltaan vähäinen kynnysarvo                      | Anna summa, jota käytetään arvoltaan vähäisen vuokrasopimuksen kynnysarvona. Jos resurssin käypä arvo on pienempi tai yhtä suuri kuin tähän syöttämäsi arvo, järjestelmä luokittelee vuokrasopimuksen arvoltaan vähäiseksi vuokrasopimukseksi ja käyttää toteutumattoman vuokran käsittelyä. |
     | Maksu toimittajalle                            | Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat sallia maksujen kirjaamisen laskuna jokaiselle vuokrasopimukselle määritetylle toimittajan tilille. Kun maksu kirjataan, toimittajan tiliä hyvitetään. Jos tämän asetuksen arvoksi on määritetty **Ei**, hyvitetään sen sijaan **Vuokra**-kirjaustyypille **Vuokrasopimuksen kirjausparametrit** -sivulla määritettyä tiliä. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

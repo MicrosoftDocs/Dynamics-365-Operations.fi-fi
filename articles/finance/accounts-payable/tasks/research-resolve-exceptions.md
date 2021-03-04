@@ -86,3 +86,6 @@ Tässä tallenteessa käytetään esittely-yritystä USMF. Nämä vaiheet suorit
 24. Sulje sivu.
 25. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ Voit poistaa CSS-ohitustiedoston käytöstä sivustossa seuraavasti.
 [Kielten lisääminen sivustoon](add-languages-to-site.md)
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

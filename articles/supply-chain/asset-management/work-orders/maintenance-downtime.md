@@ -89,3 +89,6 @@ Näet yhteenvedon kaikista ylläpidon käyttökatkojen rekisteröinneistä valit
 >[!NOTE]
 >Kaikki **Resurssien hallinta** -moduulissa käytettävät kalenterit määritetään kohdassa **Organisaation hallinto** > **Asetukset** > **Kalenterit** > **Kalenterit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

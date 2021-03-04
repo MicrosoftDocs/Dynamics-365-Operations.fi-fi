@@ -74,3 +74,6 @@ Voit lisätä uusia suhteen tyyppejä kahdella tavalla:
     3.  Voit testata uuden suhdetyypin täyttöä luomalla runnable-luokan ja kutsumalla DirDataPopulation::insertDirRelationshipTypes()-menetelmää Main()-menetelmässä. Näkyviin tulee uusi suhteen laji **DirRelationshipTypeTable**-taulussa ja uusi suhdetyyppi on käytettävissä **Suhdetyypit**-sivulla.
 
         ![Runnable-luokka](media/Runnable.PNG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

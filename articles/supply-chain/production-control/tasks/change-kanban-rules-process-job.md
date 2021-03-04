@@ -49,3 +49,6 @@ Tässä menetelmässä käsitellään annetun kanbanin kanban-säännön vaihtam
 7. Valitse Valmis.
     * Kanban-työ käyttää nyt toista kanban-sääntöä. Tämä on kätevää työsolujen kuormituksen tasoittamisessa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

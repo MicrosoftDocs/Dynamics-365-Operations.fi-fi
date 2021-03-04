@@ -53,3 +53,6 @@ Lisätietoja asetuksista, jotka liittyvät työtilausten ajoituksen luokituspist
 
 > [!NOTE]
 > Jos muutat resurssien palvelutasotietuetta **Resurssien palvelutasot** -sivulla sen jälkeen, kun olet jo käyttänyt sitä työtilauksessa, kunnossapitopyyntöjen ja työtilausten palvelutasoa ei päivitetä vastaavasti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

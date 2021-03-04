@@ -98,3 +98,6 @@ Tämä versio sisältää useita muita ohjelmavirhekorjauksia:
 - Kun palkataan alihankkija, **Kompensaatio**-välilehden ei pitäisi olla saatavilla pyyntö-/toimintosivulla.
 - Pyynnön päättymisprosessin aikana et voi jatkaa, ennen kuin kaikki vaaditut kentät sisältävät tietoja.
 - Lajittelujärjestyksen ja päivämäärän näyttöongelmat on korjattu henkilöstöhallinnon analyysissa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

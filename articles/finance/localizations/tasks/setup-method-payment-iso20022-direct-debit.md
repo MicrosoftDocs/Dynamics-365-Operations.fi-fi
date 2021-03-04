@@ -53,3 +53,6 @@ Tämä on kolmas viidestä tehtävästä, joilla esitellään asiakasmaksujen pr
     * Valitse Vaadi valtakirjaa -parametri asiakkaan maksumuodoille, joissa vaaditaan valtakirjatiedot maksuviestissä, kuten SEPA-suoraveloitus.  
 9. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

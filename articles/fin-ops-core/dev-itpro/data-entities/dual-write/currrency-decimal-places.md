@@ -95,3 +95,6 @@ Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tar
 ### <a name="tables-currency-field"></a>taulut: Valuutta-kenttä
 
 Tiettyihin valuuttakenttiin määritettävien desimaalien määrä on rajoitettu neljään.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

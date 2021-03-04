@@ -97,3 +97,6 @@ Jos kuitenkin käytät suoritusperusteista arvonlisäveroa, täsmäytät veron v
 Jos käytät maksutapana myöhemmäksi päivättyä sekkiä maksun luomisen yhteydessä, pankkitiliä ei tarkisteta. Joissakin maissa ALV:stä tulee "toteutunutta" velkaa, kun maksu hyväksytään pankissa eli kun myöhemmäksi päivätty sekki tilitetään. Voit ottaa sen käyttöön valitsemalla **Toteuta ehdollinen vero, kun myöhemmäksi päivättyjä sekkejä luodaan** kohdassa **Maksuliikenteen hallinta > Asetukset > Maksuliikenteen tiedot > Myöhemmäksi päivätyt sekit**.
 
 Lisätietoja on ohjeaiheessa [Ennakonpidätyksen määrittäminen](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Tämä on viides viidestä tehtävästä, joilla esitellään toimittajamaksujen
     3.    Kirjoita arvo **Tiedostonimi**-kenttään. Koska tässä merkissä käytetään EUR-maksua, muodostettu tiedosto on SEPA-yhteensopiva. Maksuja voidaan luoda muilla valuutoilla myös ISO20022-tilisiirtona ja muina toimittaja maksumuotoina.
     4.    Anna tai valitse arvo **Pankkitili**-kentässä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -166,3 +166,6 @@ Seuraavassa kuvassa on esimerkki **Luo työtilaus** -valintaikkunasta.
 >[!NOTE]
 >Työtilauksia voi luoda automaattisesti myös ajoittamalla ylläpitosuunnitelman töitä tai määrittämällä resurssien [ylläpitosuunnitelmien](../preventive-and-reactive-maintenance/maintenance-plans.md) tai [ylläpitokierrosten](../preventive-and-reactive-maintenance/maintenance-rounds.md) automaattinen luonti. **Kaikki ylläpitoaikataulut**-luettelosivulla ylläpitopyynnöistä luoduilla työtilauksilla on ylläpitopyynnöissä valitut ylläpitotyötyypit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Voit luoda huoltotilauksen **Myyntitilaukset**-lomakkeesta käyttämällä **Luo
 
 [Huoltotilausten luominen (luokkalomake)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

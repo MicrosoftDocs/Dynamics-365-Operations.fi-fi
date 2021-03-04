@@ -103,3 +103,6 @@ Jos toimittajat käyttävät toimittajayhteistyöliittymää, he voivat valvoa s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

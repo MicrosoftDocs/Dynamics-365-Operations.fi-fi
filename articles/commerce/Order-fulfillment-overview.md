@@ -218,3 +218,6 @@ Tilauksen täyttäminen myyntipisteessä sisältää suodatuksen, jonka avulla k
 - Luontipäivämäärä
 - Toimituspäivä
 - Vastaanottopäivä
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Ota muutosten seuranta käyttöön tietoyksikköprojekteissa.
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projektit (Supply Chain Managementista Field Serviceen): Projektit
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

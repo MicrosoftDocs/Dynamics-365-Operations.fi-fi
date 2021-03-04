@@ -49,3 +49,6 @@ Tämän osan ohjeaiheissa on yhteenveto asiakaspalvelun liiketoimintaprosessista
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

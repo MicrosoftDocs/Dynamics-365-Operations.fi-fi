@@ -62,3 +62,6 @@ Tässä menettelyssä kuvataan, miten voit hyväksyä toimittajia tietyille tuot
 31. Sulje sivu.
 32. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

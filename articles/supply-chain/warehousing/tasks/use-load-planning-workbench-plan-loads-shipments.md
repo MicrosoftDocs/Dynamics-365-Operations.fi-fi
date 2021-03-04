@@ -61,3 +61,6 @@ Tässä aiheessa kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnit
 5. Valitse **Määritä**.
 6. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

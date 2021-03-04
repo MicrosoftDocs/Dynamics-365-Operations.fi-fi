@@ -89,3 +89,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 1.  Valitse mobiilisovelluksessa **Yrityksen hakemisto** -työtila.
 2.  Aloita haku kirjoittamalla **Haku**-kenttään työntekijän etunimi, sukunimi, nimike tai osasto.
 3.  Valitse työntekijä. **Työntekijän profiili** -sivu avautuu. Tällä sivulla on näkyvissä muun muassa työntekijän etunimi, sukunimi, nimike ja osasto.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

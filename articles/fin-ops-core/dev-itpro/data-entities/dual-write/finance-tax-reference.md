@@ -37,3 +37,6 @@ Talous- ja verotiedot integroidaan seuraavien määritysten avulla:
 
 + [Integroitu kirjanpito](ledger-mapping.md)
 + [Integroidut verojen päätiedot](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

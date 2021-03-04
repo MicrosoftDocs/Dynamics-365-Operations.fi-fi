@@ -53,3 +53,6 @@ Lisätietoja työntekijän osoittamisesta resursointiryhmälle on kohdassa [Ensi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

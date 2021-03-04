@@ -85,3 +85,6 @@ Lisätietoja tästä ominaisuudesta on [Office-integraation opetusohjelma](https
 ## <a name="other-fixes"></a>Muut korjaukset
 
 Tämä versio sisältää uusien yksiköiden lisäksi myös useita aiempien yksiköiden ohjelmavirhekorjauksia ja lokalisoituja otsikkomuutoksia.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

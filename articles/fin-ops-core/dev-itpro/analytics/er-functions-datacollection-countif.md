@@ -69,3 +69,6 @@ Lisätietoja tämän toiminnon käytöstä on tehtäväoppaassa [ER Käytä tulo
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tietojen keruutoiminnot](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

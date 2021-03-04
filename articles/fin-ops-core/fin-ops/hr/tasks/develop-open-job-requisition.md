@@ -65,3 +65,6 @@ Työhönottoprojektit auttavat rekrytointiprosessissa. Voit määrittää jokais
     * Aloitettu tila tarkoittaa, että projekti on valmis vastaanottamaan hakemuksia.  
 33. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

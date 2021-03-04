@@ -122,3 +122,6 @@ Jos varmenteen uusi versio on otettu käyttöön, mutta sitä ei voi päivittä�
 
 > [!NOTE]
 > Varmenteen uusi versio kutsutaan Commerce Runtimessa ensimmäisenä. Jos varmennetta ei ole vielä päivitetty jossain myymälässä tai päätteessä, edellinen versio kutsutaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

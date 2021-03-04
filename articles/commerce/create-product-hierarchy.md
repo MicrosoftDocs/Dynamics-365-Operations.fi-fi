@@ -80,3 +80,6 @@ Kullekin ryhmälle voi myös lisätä luokkamääriteryhmiä tarpeen mukaan.
 [Tuoteluokkien ja tuotteiden hallinta](category-management-product-creation.md)
 
 [Myynninedistämiskohteiden lajittelujärjestyksen muuttaminen](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Tämä on ensimmäinen viidestä tehtävästä, joilla esitellään asiakasmaksu
     * Jos Tuo-painike ei ole näkyvissä, tämä konfiguraatio on jo tuotu.  
 9. Valitse Kyllä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

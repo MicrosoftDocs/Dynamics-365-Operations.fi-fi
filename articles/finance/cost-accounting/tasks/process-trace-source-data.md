@@ -45,3 +45,6 @@ Kaikki tiedot käsitellään töiden avulla. Jokaiselle työlle ja tietopalvelul
     * Valitse tässä esimerkissä Tilivuosi 2017, kausi 9.  
 14. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

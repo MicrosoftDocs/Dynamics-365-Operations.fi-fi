@@ -62,3 +62,6 @@ Seuraavassa on muutamia ohjeita, jotka liittyvät kokonaiskustannusten kohdistuk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

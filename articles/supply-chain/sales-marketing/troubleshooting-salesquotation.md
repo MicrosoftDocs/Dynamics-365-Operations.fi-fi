@@ -40,3 +40,6 @@ Jos yrität määrittää myyntimäärää (**SalesQty**) *Palvelu*-tyypin nimik
 
 Et voi määrittää myyntimäärää tuotteille, jotka ovat palvelunimikkeitä. Jos esimerkiksi tarjoat nimikkeen asentamisen palvelua, määrän tallentaminen ei ole järkevää, koska fyysistä nimikettä ei ole. On vain palvelu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

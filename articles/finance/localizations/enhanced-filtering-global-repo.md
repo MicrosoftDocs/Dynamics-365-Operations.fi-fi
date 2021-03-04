@@ -46,3 +46,6 @@ Voit tarkentaa hakua valitsemalla tiedostotyypin, esimerkiksi toimittajan lasku 
 [![Kohdistettu suodatin ja liiketoiminta-asiakirjan tyypin tuonti](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Suodatetut tulokset voidaan tuoda käyttäjien RCS-arkistoon tai Dynamics 365 Finance -ympäristöön joko yksittäin tai osana. Voit tehdä tämän valitsemalla konfiguraatioryhmän ja valitsemalla **Tuo**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

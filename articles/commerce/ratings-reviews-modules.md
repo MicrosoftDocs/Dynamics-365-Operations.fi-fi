@@ -100,3 +100,6 @@ Tuotearvosteluluettelomoduuli sisältää paikan, jossa voit lisätä luokituste
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Kun rekisteröinti on valmis, kirjaa kirjauskansio ja lopeta työnkulku valitsem
 -   Materiaali voidaan ylikuluttaa. Jos esimerkiksi materiaalin kulutusmääräksi arvioidaan 100 lbs, se voidaan sitten ylikuluttaa esimerkiksi määrällä 105 lbs.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

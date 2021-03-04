@@ -62,3 +62,6 @@ Voit sulkea työn **toimi täytettynä**, kun vähintään yksi prospekti on suo
    > Voit sulkea työn **toimi täytettynä** vain, kun vähintään yksi prospekti on suorittanut tarjousvaiheen. Jos **Tarjous hyväksytty** ei ole valittu työhakemuksessa tai jos hakemuksen tilana tarjouksessa ei ole **Hyväksytty**, **Toimi täytetty** -vaihtoehto ei näy avattavassa **Syy**-luettelossa.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

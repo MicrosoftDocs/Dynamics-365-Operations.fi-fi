@@ -354,3 +354,6 @@ Seuraavat skenaariot näyttävät, miten tämän ohjeaiheen mukaisesti luotuja l
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Lähetyksen konsolidoinnin käytännöt](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Voit käyttää mukautettujen lomakkeiden yrityskontekstiin tai vakiolomakkeisii
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Yrityskontekstin käyttäminen":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

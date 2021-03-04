@@ -51,3 +51,6 @@ Nämä tiedostot voit löytää myös todellisesta asiakirjan lähteestä "Accou
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Varaston GW ja erän AAA keskimääräinen kustannushinta on 11,20 USD ja varast
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

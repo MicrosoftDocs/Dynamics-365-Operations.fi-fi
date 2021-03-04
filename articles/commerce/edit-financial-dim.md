@@ -53,3 +53,6 @@ Voit muokata vähittäismyyntitapahtumien taloushallinnon dimensioita Commerce-p
 [Excel-työkirjan luominen vähittäismyyntitapahtumien muokkaamista varten](create-excel-edit.md)
 
 [Kenttien lisääminen Excel-työkirjaan vähittäismyyntitapahtumien muokkaamista varten](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

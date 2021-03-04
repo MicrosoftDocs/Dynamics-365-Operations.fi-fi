@@ -201,3 +201,6 @@ Tälle siirrolle on luotu uusi aalto, koska se käyttää eri rahdin kuljetuspal
 1. Valitse kolmannesta myyntitilauksesta luodun aallon tunnus.
 1. Valitse aallon tunnus -linkki ja avaa aallon tiedot -sivu.
 1. Huomaa, että lähetys on lisätty **Aallon rivit** -pikavälilehteen yhdessä ensimmäisen myyntitilauksen toimituksen kanssa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

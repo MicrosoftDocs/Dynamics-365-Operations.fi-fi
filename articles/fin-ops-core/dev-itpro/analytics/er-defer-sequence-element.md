@@ -249,3 +249,6 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 - [Määritä muoto suorittamaan laskenta ja summaus](./tasks/er-format-counting-summing-1.md)
 - [Sähköisen raportoinnin muodon suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md)
 - [ER-muotoisten XML-elementtien suorittamisen lykkäys](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

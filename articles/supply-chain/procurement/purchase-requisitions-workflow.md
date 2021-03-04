@@ -121,3 +121,6 @@ Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistaj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

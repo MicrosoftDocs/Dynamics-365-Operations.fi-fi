@@ -64,3 +64,6 @@ Valitse toiminto sovelluspalkissa. Tilauksen tilan mukaan määräytyy, voidaank
 - **Muokkaa** – käyttäjät saavat tehdä muutoksia valittuun asiakastilaukseen.
 
 - **Keräile** – käynnistää keräilytyönkulun, jossa käyttäjä voi valita kerättävät tuotteet ja joka luo myynnin keräilytapahtuman.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

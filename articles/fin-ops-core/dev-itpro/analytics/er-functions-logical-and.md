@@ -65,3 +65,6 @@ Loogisten funktioiden argumenteissa voit käyttää tietolähdeviittauksia, nume
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Loogiset toiminnot](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

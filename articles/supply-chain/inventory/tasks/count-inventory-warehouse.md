@@ -56,3 +56,6 @@ Tässä aiheessa kuvataan varaston inventointikirjauskansion luonti- ja kirjausp
 1. Valitse **Varasto**.
 2. Valitse **Tapahtumat**. Tässä näkyvät kaikki liittyvät tapahtumat, jotka luodaan, kun varaston inventointikirjauskansioon kirjataan.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

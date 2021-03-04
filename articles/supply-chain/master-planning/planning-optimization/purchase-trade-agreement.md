@@ -90,3 +90,6 @@ Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri ase
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Ostosopimukset](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

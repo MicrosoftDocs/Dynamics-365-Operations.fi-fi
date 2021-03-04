@@ -74,3 +74,6 @@ Tässä menettelyssä kuvataan, miten yrityksen sisäisen tavaroidensiirron siir
 10. Valitse Pakkausluettelo.
 11. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

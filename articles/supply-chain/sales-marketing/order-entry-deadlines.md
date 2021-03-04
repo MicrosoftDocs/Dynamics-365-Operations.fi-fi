@@ -109,3 +109,6 @@ Seuraavassa taulukossa on toimipisteiden A ja B tilaustenkäsittelyn määräaja
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

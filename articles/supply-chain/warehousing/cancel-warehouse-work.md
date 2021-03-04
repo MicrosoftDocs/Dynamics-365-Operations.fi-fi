@@ -45,3 +45,6 @@ Peruuta työ -toimintoa voidaan käyttää vain tyyppien **Myynti**, **Siirtovar
 Saadakseen työn jatkumaan järjestelmä peruuttaa jäljellä olevat työrivit ja korjaa käyttäjän määrittämään työtunnukseen liittyvät varastotiedot. Tämän jälkeen tavalliset varaston käsittelytoimet, jotka kohdistuvat aiemmin estyneeseen nimikemäärään, voivat jatkua.
 
 Asettaakseen aiemmin estyneen nimikkeen tiettyyn sijaintiin työn peruuttamisen jälkeen käyttäjän on käytettävä varaston siirtotapahtumaa tai määrän oikaisua mobiililaitteella.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

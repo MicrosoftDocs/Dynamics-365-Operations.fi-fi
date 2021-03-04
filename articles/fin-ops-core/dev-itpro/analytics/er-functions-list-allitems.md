@@ -65,3 +65,6 @@ Jos syötät **Vend** *Tietueluettelon* tietotyypin tietolähteeksi, joka viitta
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

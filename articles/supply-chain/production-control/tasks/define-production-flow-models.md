@@ -46,3 +46,6 @@ Tuotantovirran malleissa käsitellään, miten Lean-valmistuksen työsolujen kap
 8. Valitse Kapasiteetin puutteen aiheuttama reaktio -kentässä vaihtoehto.
     * Vaihtoehdot: Lykkää – koko ajoitustapahtuman kysyntä lykätään seuraavaan käytettävissä olevaan päivään, jossa on tuotantokapasiteettia. Peruuta – ajoitustapahtuman automaattinen suunnittelu lopetetaan eikä liittyviä töitä suunnitella.   Lisää pyydettyyn päivämäärään – Pyydetyn kauden pyydetyt työt suunnitellaan. Kyseisen päivän solu ylikuormittuu ja edellyttää, että suunnittelija tarkistaa ja tee manuaalisia toimintoja.   Jaa käytettävissä oleville kausille – Ajoitustapahtuman eri työt jaetaan kaikille käytettävissä oleville tuotantopäiville alkaen ensimmäisestä käytettävissä olevasta päivästä. Kanban-työn määrä on pienin jaettava määrä. Jakelu määrittää vähimmäissuunnittelumäärän (kanban-määrän) jokaiselle päivälle, jossa on riittävästi vapaata tuotantokapasiteettia.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

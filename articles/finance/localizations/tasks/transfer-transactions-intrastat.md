@@ -153,3 +153,6 @@ Tämä menettely opastaa Intrastat-parametrien asetuksen ja tapahtumien siirron 
     
 Tarkista siirretyt tiedot, mukaan lukien kohde- tai lähetysmaa tai -alue, alkuperämaa, paino, määrä, määrä lisäyksiköinä, kauppatavara, tapahtumakoodi, laskutusmäärät ja tilastolliset määrät. Voit muokata tietoja tarpeen mukaan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

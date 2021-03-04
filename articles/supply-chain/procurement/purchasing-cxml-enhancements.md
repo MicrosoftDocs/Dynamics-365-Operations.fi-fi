@@ -277,3 +277,6 @@ Voit tarkastella toimittajan kuittauksen tai virhevastauksen valitsemalla **Vast
 
 - [Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen](set-up-external-catalog-for-punchout.md)
 - [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

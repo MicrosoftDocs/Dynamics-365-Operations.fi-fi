@@ -39,3 +39,6 @@ Tässä tallenteessa käytetään esittely-yritystä DEMF.
 6. Syötä **Lyhyt kuvaus** -kenttään kuvaus sisäistä käyttöä varten.
 7. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

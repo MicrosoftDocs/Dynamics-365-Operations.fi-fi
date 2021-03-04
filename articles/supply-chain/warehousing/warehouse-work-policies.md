@@ -301,3 +301,6 @@ Lisätietoja mobiililaitteiden valikkokohteista on kohdassa [Mobiililaitteiden m
 Lisätietoja rekisterikilven vastaanotosta ja työkäytännöistä on kohdassa [Rekisterikilven vastaanotto varastosovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Lisätietoja saapuvien kuormien hallinnasta on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

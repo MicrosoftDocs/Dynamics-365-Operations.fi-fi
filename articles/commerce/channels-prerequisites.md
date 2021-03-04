@@ -86,3 +86,6 @@ Ennen Dynamics 365 Commerce -kanavan luontia on suoritettava useita ennakkoedell
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
     
 [Verkkokanavan määrittäminen](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

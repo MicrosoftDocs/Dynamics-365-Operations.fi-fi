@@ -78,3 +78,6 @@ Graafisen rakennesuunnittelun avaaminen huoltokohteen suhteen avulla
 
 Jos luot huoltosopimuksen huoltotilaukset automaattisesti, myös sopimuksen huoltokohteiden suhteet luodaan huoltotilauksissa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -210,3 +210,6 @@ Todellisen painon tuotteissa tällä hetkellä käytettyjen rajoitusten lisäksi
 
 > [!NOTE]
 > Edellä olevat todellisen painon tunnisteet pitävät paikkansa vain, jos todellisen painon tuotteessa on todellisen painon tunnistedimension seurantamenetelmänä täydellinen seuranta. (Toisin sanoen todellisen painon nimikkeen käsittelykäytännön **Todellisen painon tunnistedimension seurantamenetelmä** -parametriksi määritetään **Tuotantodimensiot, seurantadimensiot ja kaikki varastodimensiot**.) Lisärajoituksia käytetään, jos todellisen painon nimike on vain osittain tunnisteseurattu. (Toisin sanoen todellisen painon nimikkeen käsittelykäytännön **Todellisen painon tunnistedimension seurantamenetelmä** -parametriksi on määritetty **Tuotantodimensiot, seurantadimensiot ja varaston tila**.) Koska tässä tunnisteen ja varaston näkyvyys menetetään, joitakin lisäskenaarioita ei tueta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

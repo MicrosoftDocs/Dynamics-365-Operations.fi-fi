@@ -125,3 +125,6 @@ Proformalasku on lasku, joka laaditaan todellisen laskusumman ennusteena ennen l
 #### <a name="blogs"></a>Blogit
 
 Myyntiprosessin yleiskatsaus on kirjoituksessa [Myynnin toiminta Dynamics 365 for Finance and Operationsissa](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

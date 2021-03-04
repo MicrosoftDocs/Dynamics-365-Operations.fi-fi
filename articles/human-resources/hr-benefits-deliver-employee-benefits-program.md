@@ -68,3 +68,6 @@ Tässä artikkelissa näytetään, miten uuden etuuden luomisessa käytettävät
 16. Valitse Peruste-kentässä vaihtoehto.
 17. Syötä Summa tai hinta -kenttään numero.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -205,3 +205,6 @@ Laskelmat näkyvät esimiehille, jotka ovat vastuussa kustannusten hallinnasta. 
 Versioita käytetään eri tulosten simulointiin, tarkasteluun ja vertailuun. Oletusarvoisesti kaikkia toteutuneita kustannuksia tarkastellaan yhdessä perusversiossa, josta käytetään nimitystä *toteutunut*. Budjeteista ja laskelmista voit käsitellä niin monta versiota kuin tarvitset. Voit esimerkiksi tuoda budjetin tiedot alkuperäiseen versioon ja korjata budjettia uudessa versiossa. Voit luoda laskelmista useita versioita. Näihin eri versioihin voit luoda laskelmia käyttämällä erilaisia laskentasääntöjä, jota käytetään kustannusten kohdistamiseen.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

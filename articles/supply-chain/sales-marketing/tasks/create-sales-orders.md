@@ -68,3 +68,6 @@ Organisaation myymät tuotteet voivat olla dimensioiden erottelemia variantteja,
     **Summat**-sivulla näkyvät koko tilauksen tiedot. Näkyvillä olevia tietoja ovat esimerkiksi välisumma, joka on lopullisille rivialennuksille oikaistujen kaikkien rivin nettosummien summa, laskun kokonaissumma, joka on lopullisille tilaustason alennukselle oikaistu kokonaisvälisumma, kulut, arvonlisävero ja asiakkaan luottorajan tilanne. Laskun summa on asiakkaan laskuasiakirjassa näkyvä summa.  
     
 3. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

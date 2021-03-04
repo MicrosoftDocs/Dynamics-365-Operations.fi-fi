@@ -62,3 +62,6 @@ Tässä menettelyssä keskitytään tietyn työsolun aikataulutusprosessin kanba
     * Huomioi myös se, että molemmat työt lisätään haluttuun kauteen.  
     * Kauden kapasiteetti -osassa näkyy kunkin kauden kuormitus. Kulutus-kentässä näkyy tämän kauden suunniteltu kulutus. Jos suunniteltu kulutus on korkeampi kuin tämän kauden käytettävissä oleva kapasiteetti, valitaan ylikuormitettu kulutus.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

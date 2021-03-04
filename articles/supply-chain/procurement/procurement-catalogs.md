@@ -76,3 +76,6 @@ Päivitykset julkaistaan automaattisesti tai manuaalisesti riippuen asetuksesta,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

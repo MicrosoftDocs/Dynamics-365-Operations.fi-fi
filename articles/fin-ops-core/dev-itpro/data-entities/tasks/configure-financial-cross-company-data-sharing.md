@@ -59,3 +59,6 @@ Tämä tehtäväopas vaatii Dynamics AX -ympäristön version 7.1 tai sitä uude
 27. Päivitä sivu.
 28. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

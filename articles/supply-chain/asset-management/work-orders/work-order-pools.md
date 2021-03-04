@@ -109,3 +109,6 @@ Kuten edellisessä osassa on kuvattu, voit lisätä työtilauksia työtilauspool
 
 Voit poistaa työtilauksen työtilauspoolista toistamalla nämä vaiheet, mutta valitsemalla **Poista** vaiheessa 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

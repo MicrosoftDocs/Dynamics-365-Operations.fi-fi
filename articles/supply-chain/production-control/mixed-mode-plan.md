@@ -69,3 +69,6 @@ Hyödyntääksesi täyden joustavuuden monijärjestelmätilassa suosittelemme, e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

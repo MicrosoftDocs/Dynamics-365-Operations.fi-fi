@@ -60,3 +60,6 @@ Jos aiot olla poissa toimistosta tai et muuten ole käytettävissä tiettynä ai
 8. Anna päivämäärä ja kellonaika **Päättymispäivämäärä ja -kellonaika** -kentässä.
 9. Aktivoi tämä delegointisääntö valitsemalla **Käytössä**-valintaruutu. 
 10. Selitä **Kommentti**-kentässä, miksi delegoit työnimikkeet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

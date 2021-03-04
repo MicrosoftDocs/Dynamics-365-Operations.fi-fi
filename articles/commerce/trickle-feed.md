@@ -54,3 +54,6 @@ Retail-sovelluksen versiossa 10.0.5 olevan syötteisiin perustuvien tilausten v�
 > Valikon vaihtoehdot **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Laske laskelmat eräajona** ja **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Kirjaa laskelmat eräajona** eivät ole enää tässä toiminnossa.
 
 Tapahtumaraportti- ja Raportti-tyypit on kuitenkin mahdollista luoda manuaalisesti. Siirry kohtaan **Retail ja Commerce > Kanavat > Myymälät** ja valitse **Laskelmat**. Valitse **Uusi** ja valitse sitten luotavan laskelman tyyppi. **Laskelmat**-sivun kentät ja sivun **Laskelmaryhmä**-kohdan toiminnot näyttävät tarvittavat tiedot ja toiminnot valitun laskelmatyypin mukaan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

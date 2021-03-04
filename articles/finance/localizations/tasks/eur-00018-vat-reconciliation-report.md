@@ -41,3 +41,6 @@ Näiden ohjeiden avulla voit luoda islantilaisille ja norjalaisille yrityksille 
 6. Valitse Näytä tiedot -kentässä Kyllä.
 7. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Voit luoda omia määritetyyppejä. Lisäksi voit siirtää tuotedimensiot **Mä
 9. Tallenna tietue.
 
     **Toiminnallisten sijaintien tyypit** -kentässä näkyy niiden toiminnallisten sijaintien määrä, jotka käyttävät määritetyyppiä. **Resurssityypit**-kentässä näkyy sitä käyttävien resurssityyppien määrä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -193,3 +193,6 @@ Tuottokirjausta voidaan käyttää myös myyntitilauksissa, jotka luodaan aika- 
 
 - **siirretty laskutettu tuotto** (kohdassa **Tuottotilit**) – Lisää siirrettyyn tuottoon (tuoton sijaan) kirjattavan tuottohinnan päätili. Tuottohinta siirretään, jos myyntitilausrivillä on tuottoaikataulu.
 - **Siirretyt kustannukset** (kohdassa **Kustannustilit**) – Anna myytyjen tuotteiden sen kustannussumman päätili, joka kirjataan myytyjen tuotteiden siirrettyihin kustannuksiin, jos myös tuottoa siirretään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

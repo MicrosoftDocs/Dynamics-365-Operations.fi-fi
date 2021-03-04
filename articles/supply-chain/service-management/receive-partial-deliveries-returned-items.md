@@ -51,3 +51,6 @@ Jos palautuslähetyksen määrä on pienempi kuin palautustilausrivin koko mää
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

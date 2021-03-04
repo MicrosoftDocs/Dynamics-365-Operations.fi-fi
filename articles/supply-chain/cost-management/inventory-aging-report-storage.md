@@ -57,3 +57,6 @@ Ennen kuin käytät tätä toimintoa, sinun on otettava se käyttöön järjeste
     > Lomake ei sisällä raporttiasettelussa määritettyjä välisummia.
 
 Voit viedä **Varaston erääntymisraportti** -tietoyksikössä **Varaston erääntymisraportin tallennus** -raportin tuloksen käyttämällä **Prosessin tunniste – nimi** -kentän suodatinta niissä muodoissa, joita tietojen hallinta tukee.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

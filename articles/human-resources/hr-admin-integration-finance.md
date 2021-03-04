@@ -255,3 +255,5 @@ Työntekijän osoitteessa käytettävä sijaintitunnus ei ole osa numerosarjaa. 
 Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integrointiohjelman yhteydessä. 
 
 ![Mallin yhdistämismääritys](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

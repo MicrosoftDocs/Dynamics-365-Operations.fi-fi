@@ -84,3 +84,6 @@ Voit luoda nimikerivejä manuaalisesti resursseille.
 5. Jos nimike vanhenee, kirjoita päättymispäivä **Vanheneminen**-kenttään.
 6. Valitse **Nimiketunnus**-kentässä nimike. Nimi tulee automaattisesti **Tuotteen nimi** -kenttään.
 7. Anna käytetty määrä **Määrä**-kenttään. **Yksikkö**-kenttä päivittyy automaattisesti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Kutakin esiintymää voi muokata muuttamatta niiden sarjojen määrittämiä esi
 ## <a name="developer-documentation"></a>Kehitysdokumentaatio
 
 Prosessin automaatiokehyksen avulla kehittäjät voivat laajentaa prosessin automaatiokehystä. [Prosessin automaatiokehys](../process-automation/process-automation-framework.md) -dokumentaatio sisältää tietoja siitä, miten voit luoda mukautettuja prosesseja, joita eräpalvelin suorittaa ajoitettuna ohjatun prosessin automatisoinnin avulla, ja tuoda ne näkyviin kalenterinäkymään automaattisesti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

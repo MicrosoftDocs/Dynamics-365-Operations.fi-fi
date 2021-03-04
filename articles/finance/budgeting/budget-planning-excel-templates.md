@@ -130,3 +130,6 @@ Voit myös luoda ja käyttää pivot-taulukoita ja kaavioita budjetin tietojen y
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

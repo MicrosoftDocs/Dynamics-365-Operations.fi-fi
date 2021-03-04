@@ -246,3 +246,6 @@ Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja vali
 
 [Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

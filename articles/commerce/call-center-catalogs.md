@@ -101,3 +101,6 @@ Kun luettelot määritetään ja julkaistaan Commercessa, **Lähetä luettelo** 
 ## <a name="additional-notes"></a>Lisähuomautukset
 
 Tällä hetkellä, kun lähdekoodin tunnusta käytetään puhelinkeskuksen myyntitilaukseen, sitä käytetään luettelokohtaisten hintojen, alennusten, komentosarjojen ja ylös- ja ristiinmyynnin edistämiseen. Järjestelmä ei kiellä tai estä tilaamasta myyntitilauksella tuotetta, joka ei ole luettelossa. Jos on tilattu luetteloon kuulumaton nimike, järjestelmä käyttää ensin **Hintaryhmä**-määritystä, joka määritetään puhelinkeskuksen kanavassa (**Retail ja Commerce** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset**) nimikkeen hinnalle tai tarjouksille. Jos tiettyä kanavan hintaa ei löydy, käytetään nimikkeen perusmyyntihintaa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

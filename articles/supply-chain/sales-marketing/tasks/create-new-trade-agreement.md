@@ -73,3 +73,6 @@ Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidä�
 ## <a name="additional-resources"></a>Lisäresurssit
 ### <a name="community-blogs"></a>Yhteisöblogit
 - [Dynamics 365 for Finance and Operationsin myyntihinnat](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Valintaikkuna palauttaa ATP-tiedot Supply Chain Managementissa. Nämä tiedot si
 - Vastaanoton määrä
 - Varasto-oton määrä
 - Varastosaldo
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

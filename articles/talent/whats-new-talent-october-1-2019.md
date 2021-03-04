@@ -84,3 +84,6 @@ Tämän viikon koontiversiossa kuvaus näytetään, kun työ valitaan **Osaamise
 ### <a name="print-performance-reviews"></a>Kehityskeskustelujen tulostaminen
 
 Työntekijät, esimiehet ja HR-ammattilaiset voivat tulostaa työntekijän kehityskeskustelun.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

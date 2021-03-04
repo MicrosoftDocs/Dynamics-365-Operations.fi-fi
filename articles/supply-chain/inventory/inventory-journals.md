@@ -117,3 +117,6 @@ Nämä kaksi kirjauskansiota tukevat *Alusta varasto* -skenaariota vain tietojen
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

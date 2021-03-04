@@ -127,3 +127,6 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

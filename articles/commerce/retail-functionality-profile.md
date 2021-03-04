@@ -64,3 +64,6 @@ Seuraavassa kuvassa on esimerkki toimintoprofiilista.
 [Näytön asettelun yleiskatsaus](pos-screen-layouts.md)       
 
 [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

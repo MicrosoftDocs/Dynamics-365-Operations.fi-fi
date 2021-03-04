@@ -137,3 +137,6 @@ Jos nyt käytät kanavan URL-perusosoitetta ja siirryt kyseisen sivuston kanavie
 [Asiakirjan tilat ja elinkaari](document-states-overview.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Tässä menettelyssä selvitetään, miten voit luoda uusia solmuja hankintaluok
 4. Valitse hankintaluokkaan lisättävät tuotteet.
 5. Lisää tuotteet **Valitut**-taulukkoon nuolen avulla.
 6. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

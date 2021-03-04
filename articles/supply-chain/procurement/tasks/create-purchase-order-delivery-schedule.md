@@ -74,3 +74,6 @@ Ostotilaus on vahvistettava ennen tuotteen vastaanoton käsittelyä. Tässä esi
 6. Tiivistä **Rivit**-osa.
 7. Kirjaa vastaanotto valitsemalla **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

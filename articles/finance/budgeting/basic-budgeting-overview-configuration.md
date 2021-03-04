@@ -88,3 +88,6 @@ Budjettisuunnittelutoimintoa käyttävä yritys voi luoda ja käyttää *budjett
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -162,3 +162,6 @@ Järjestelmään on lisätty useita tietoyksiköitä, jotka mahdollistavat budje
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

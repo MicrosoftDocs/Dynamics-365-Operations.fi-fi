@@ -88,3 +88,6 @@ Myyntipisteessä käyttäjät voivat määrittää painikeruudukoita, jotka on s
 ## <a name="calculating-commissions"></a>Provisiolaskelmat
 
 Provisio lasketaan työntekijöille määritetyissä myynnin ryhmissä laskelman kirjaamisen tai myyntitilauksen kirjaamisen yhteydessä. Provision määrä määräytyy työntekijän provisio-osuuden mukaan, kuten myyntiryhmässä ja tapahtuman asiakkaan ja/tai tuotteiden liittyvissä provision laskenta-asetuksissa on määritetty.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

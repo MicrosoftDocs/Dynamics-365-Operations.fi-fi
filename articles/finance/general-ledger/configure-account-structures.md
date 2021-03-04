@@ -107,3 +107,6 @@ Määrittäessäsi tilirakenteita on suositeltavia parhaita käytäntöjä. Kuit
 Kun olet tyytyväinen uusiin asetuksiin tai tilirakenteen muutokseen, se on aktivoitava. Jos tilirakenne on määritty kirjanpitoon, tämä aktivointi voi kestää pitkään, koska järjestelmän kaikki kirjaamattomat tapahtumat on synkronoitava uuteen rakenteeseen. Tilirakenteen muutokset eivät vaikuta kirjattuihin tapahtumiin.
 
 Lisätietoja on kohdassa [Tilikartan suunnittelu](plan-chart-of-accounts.md), [Taloushallinnon dimensiot](financial-dimensions.md) ja [Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

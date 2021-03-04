@@ -73,3 +73,6 @@ Luodaksesi uuden tai kopioidaksesi prosessin liiketoimintamallin tai käynnistä
 
 Tarkastellaksesi aktiivisia prosesseja ja liittyviä tehtäviä, avaa **Liiketoimintaprosessit**-työtila.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

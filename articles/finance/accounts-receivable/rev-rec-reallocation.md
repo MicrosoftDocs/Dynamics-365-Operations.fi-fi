@@ -114,3 +114,6 @@ Seuraavissa ohjeaiheissa käsitellään erilaisia tuottojen kirjaamisen skenaari
 - [Tuottokirjauksen uudelleenkohdistus – skenaario 2](rev-rec-reallocation-scenario-2.md) – kaksi myyntitilausta syötetään, ja sitten asiakas lisää nimikkeen sopimukseen ensimmäisen myyntitilauksen laskuttamisen jälkeen.
 - [Tuottokirjauksen uudelleenkohdistus – skenaario 3 ](rev-rec-reallocation-scenario-3.md) – aiemmin luotuun, laskutettuun myyntitilaukseen lisätään uusi rivi.
 - [Tuottokirjauksen uudelleenkohdistus – skenaario 4 ](rev-rec-reallocation-scenario-4.md) – aiemmin luodusta, osittain laskutetusta myyntitilauksesta poistetaan rivi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

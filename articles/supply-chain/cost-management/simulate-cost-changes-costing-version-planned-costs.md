@@ -59,3 +59,6 @@ Kun olet syöttänyt simuloidut kustannusmuutokset, laske niiden valmistettujen 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

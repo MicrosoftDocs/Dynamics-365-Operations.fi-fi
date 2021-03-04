@@ -83,3 +83,6 @@ Kun asetustiedot ovat käytettävissä, olet valmis luomaan resurssin.
 1. Varmista **Kaikki toiminnalliset sijainnit** -sivulla, että toiminnallinen sijainti, johon haluat luoda automaattisesti resurssin, käyttää tätä tarkoitusta varten luomaasi toiminnallisen sijainnin tyyppiä.
 2. Valitse luettelosta toiminnallinen sijainti.
 3. Valitse **Päivitä toiminnallisen sijainnin tila** ja valitse sitten sen elinkaaren tila, jonka loit tätä tarkoitusta varten. Yksi resurssi asennetaan nyt automaattisesti toiminnalliseen sijaintiiin. Resurssi saa saman tunnuksen ja nimen kuin toiminnallinen sijainti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

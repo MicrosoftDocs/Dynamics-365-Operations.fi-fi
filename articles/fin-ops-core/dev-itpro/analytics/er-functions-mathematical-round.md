@@ -75,3 +75,6 @@ Jos `decimals`-argumentin arvo on vähemmän kuin 0 (nolla), numero pyöristetä
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Matemaattinen toiminto](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

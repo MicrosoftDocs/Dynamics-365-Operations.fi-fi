@@ -837,3 +837,6 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 [Commercen oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

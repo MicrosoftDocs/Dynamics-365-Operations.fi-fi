@@ -99,3 +99,6 @@ Voit käyttää **Ohitukset**-välilehteä, jos haluat ohittaa työntekijän tie
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

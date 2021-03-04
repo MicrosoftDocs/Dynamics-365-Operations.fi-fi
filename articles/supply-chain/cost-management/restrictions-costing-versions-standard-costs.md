@@ -51,3 +51,6 @@ Vakiokustannusten nimikekustannustiedot voi kopioida toiseen kustannuslaskelmave
 
 [Valmistettujen nimikkeiden standardikustannusten ylläpitämisen valmistelutoimet](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Tässä esimerkissä tarkistetaan, että käyttäjälle "SHANNON" on määritett
 6. Voit määrittää **Tuotantoyksikkö**-kentässä työntekijän oletussuodattimen. Tämä varmistaa, että vain valittujen tuotantoyksiköiden tuotantotyöt näytetään, kun työntekijä kirjautuu laitteeseen. Anna haluttu arvo.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

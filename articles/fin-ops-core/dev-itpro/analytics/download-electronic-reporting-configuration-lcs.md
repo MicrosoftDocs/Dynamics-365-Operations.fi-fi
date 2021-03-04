@@ -76,3 +76,6 @@ Tässä aiheessa kerrotaan, miten [sähköisen raportoinnin konfiguraatioiden](g
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

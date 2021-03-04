@@ -73,3 +73,6 @@ Jos sähköisen kaupankäynnin sivuston ominaisuus tai moduuli käyttää ei-ole
 [Evästeen hyväksyntämoduuli](cookie-consent-module.md) 
  
 [Ylätunnistemoduuli](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

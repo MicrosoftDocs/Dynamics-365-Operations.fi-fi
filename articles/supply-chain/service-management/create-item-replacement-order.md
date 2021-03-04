@@ -68,3 +68,6 @@ Nimikkeen korvaavat tilaukset luodaan yleensä tuotteen palautuksen ja tarkistuk
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

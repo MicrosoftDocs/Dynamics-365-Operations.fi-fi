@@ -62,3 +62,6 @@ Muista suorittaa varaston sulkeminen alkaen %3 (31-01-2019), jolloin kohdistuska
 ## <a name="inventory-aging-report-discrepancies"></a>Varaston erääntymisraportin ristiriidat
 
 **Varaston erääntymisraportissa** on eri arvot, kun tarkasteltavana on eri varastodimensioita (kuten toimipaikka tai varasto): Lisätietoja raportointilogiikasta on kohdassa [Varaston erääntymisraporttien esimerkkejä ja logiikka](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Ennen kuin voit käyttää *Sijainnin lisävyöhyke* -toimintoa, sen pitää oll
 7. Valitse **Luo**.
 8. Näyttöön tulee sanomia, joissa todetaan, että uusia sijainteja on lisätty. Valitse **Näytä sanomat** -painike, jos haluat nähdä sanomat.
 9. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Sijainnit**. Uudet sijainnit näkyvät luettelossa, ja kaikki vyöhykekentät (aiemmin luotu vyöhykekenttä ja uudet lisävyöhykekentät) ovat käytettävissä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

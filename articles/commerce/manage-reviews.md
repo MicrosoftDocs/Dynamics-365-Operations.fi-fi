@@ -132,3 +132,6 @@ Commerce-sivustonmuodostimessa voi tarkastella luokitus- ja arvostelutrendejä s
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
 [Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

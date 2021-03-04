@@ -63,3 +63,6 @@ Jos työtilan yksittäisillä osilla on suodattimia, voit suodattaa kunkin osan 
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Suodata osan sisältö valitsemalla tai antamalla arvo samalla tavalla kuin työtilakohtaisessa suodattimessa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

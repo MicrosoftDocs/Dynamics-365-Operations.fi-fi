@@ -49,3 +49,6 @@ Lisätietoja: [Määritä ja luo Positive Pay -tiedostoja](set-up-generate-posit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

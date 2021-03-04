@@ -60,3 +60,6 @@ Kun organisaatio kasvaa ja liiketoiminnan jatkamisen suunnittelu tulee ajankohta
 28. Valitse Raportti.
     * Parhaat vastaavuudet ovat raportin alkuosassa.  Näet olevan luetellun osaamisalueaukkojen-osan.  Tämä on osaamisaluekartoituksessa mainitun tason ja henkilölle määritetyn tason välinen ero.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

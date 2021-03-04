@@ -82,3 +82,6 @@ Jos määrität eräkäsittelyn ikkunan, hälytys lähetetään hälytyssäänn�
 
 1. Siirry kohtaan **Järjestelmän hallinta** &gt; **Kausittaiset tehtävät** &gt; **Hälytykset** &gt; **Eräpäivän hälytykset**.
 2. Syötä **Eräpäivän hälytykset** -valintaikkunaan soveltuvat tiedot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

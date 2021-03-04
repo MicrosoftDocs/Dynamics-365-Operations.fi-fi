@@ -85,3 +85,6 @@ Voit myös tehdä manuaalisia oikaisuja ennusteeseen **Kysynnän ennusteen tiedo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

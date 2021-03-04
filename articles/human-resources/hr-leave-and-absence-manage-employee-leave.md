@@ -56,3 +56,6 @@ Voit sisällyttää syykoodin ja kommentin, kun säädät työntekijän lomasald
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

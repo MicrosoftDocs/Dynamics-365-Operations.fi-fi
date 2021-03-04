@@ -61,3 +61,6 @@ Voit tarkastella kaikkia käytettävissä olevia hinnoitteluprofiileja **Hinnoit
 
 > [!NOTE]
 > **Rahdinkuljettajat**-sivulla luodut profiilit näkyvät myös **Hinnoitteluprofiilit**-sivulla.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

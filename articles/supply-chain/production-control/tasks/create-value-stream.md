@@ -49,3 +49,6 @@ Arvovirrat ovat toimintayksiköitä, joilla ryhmitetään vähintään yksi tuot
 2. Sulje sivu.
 3. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

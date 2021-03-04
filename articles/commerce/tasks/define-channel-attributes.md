@@ -72,3 +72,6 @@ Monipuolista kanavaa lisäämällä kanavan ja tuotemääritteitä. Organisaatio
 33. Valitse OK.
 34. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

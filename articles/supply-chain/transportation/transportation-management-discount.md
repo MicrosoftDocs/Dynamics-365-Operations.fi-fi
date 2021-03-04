@@ -33,3 +33,6 @@ Kuljetustenhallinnan alennukset määritetään valitsemalla **Kuljetustenhallin
 Voit valita, siirretäänkö alennus asiakkaalle (määrittämällä alennustyypiksi asiakkaan) tai pidätetäänkö se yhtiölle (määrittämällä alennustyypiksi huolitsijan). Tällä tavoin voit tehdä määrityksen, jossa saat voittoa lasketuista rahtikuluista.
 
 Voit määrittää kullekin alennukselle useita tarkenteita, kuten rahdinkuljettajan, rahdinkuljetuspalvelun, toimitusehdot, asiakkaan ja määränpään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Työntekijän palkkausprosessimalli edellyttää tarjoustehtävää. Integroidun
 > Integroitua tarjoushallintasovellusta voi käyttää vain kattavan työhönottolaajennuksen kanssa. Lisätietoja on kohdassa [Mikä Microsoft Dynamics 365 Talent – Attractin versio?](./attract-comprehensive-hiring.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

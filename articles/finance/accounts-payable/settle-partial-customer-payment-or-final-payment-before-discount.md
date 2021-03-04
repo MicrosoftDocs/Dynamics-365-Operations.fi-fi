@@ -149,3 +149,6 @@ Arnie kirjaa maksukirjauskansion ja tarkistaa asiakkaan tapahtumat **Asiakastapa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

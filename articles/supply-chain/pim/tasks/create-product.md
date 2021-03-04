@@ -39,3 +39,6 @@ Tässä menettelyssä esitellään uuden tuotteen luominen Commerce-tuotehierark
 8. Kirjoita arvo Tuotenumero-kenttään.
 9. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

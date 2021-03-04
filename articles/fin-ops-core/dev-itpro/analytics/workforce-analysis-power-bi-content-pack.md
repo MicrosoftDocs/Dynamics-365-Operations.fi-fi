@@ -86,3 +86,6 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin sisältö perustuu.
 | Työntekijätrendi           | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                 | Yritys, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, kalenterin vastakirjaus, päivämäärä, työntekijän nimike, demografia, työsuhde, työ |
 | Joukkotyöhönottoprojekti        | Joukkotyöhönottoprojektien lukumäärä, projektin omistaja ja projektin tila                     | Yritys, joukkotyöhönottorivi |
 | Joukkotyöhönottorivi           | Osasto, työsuhdetyyppi ja toimi                                           | Päivämäärä, työ, joukkotyöhönottoprojekti |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Tässä artikkelissa kerrotaan, miten voit määrittää henkilökohtaisten yhte
    | **Ikä** | Kelvollisen henkilökohtaisen yhteyshenkilön yläikäraja etuussuunnitelmassa. Tämä kenttä on käytettävissä vain, jos valitset suhteen. Tätä ikää verrataan henkilökohtaisen yhteyshenkilön laskettuun ikään. Laskettu ikä on: (kattavuuspäivämäärä – henkilökohtaisen yhteyshenkilön syntymäaika / 365). Tämä luku on aina kokonaisluku. |
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

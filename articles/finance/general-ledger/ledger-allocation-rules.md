@@ -51,3 +51,6 @@ Jokaisella kohdistussäännöllä on neljä komponenttia: yleinen, lähde, kohde
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

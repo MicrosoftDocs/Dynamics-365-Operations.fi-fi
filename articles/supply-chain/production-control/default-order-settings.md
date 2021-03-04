@@ -204,3 +204,6 @@ Voit määrittää vahvistusasetuksen seuraavasti:
 1. Määritä **Yleistä**-välilehdessä **Oletustilausmäärien vahvistus** jollekin seuraavista arvoista:
     - **Tiukka** - Valitse tämä asetus, jos haluat varmistaa, että kaikki **vakiotilausmäärän** arvot ovat **Monikerta**-arvon monikertoja kussakin pikavälilehdessä (**Ostotilaus**, **Varasto** ja **Myyntitilaus**).
     - **Vakio** - Valitse tämä asetus, jos haluat käyttää vakiovahvistusta (joka toimii samalla tavalla, jos tämä ominaisuus ei ole käytössä).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Jos resurssiin liittyy alaresursseja, voit poistaa sen vain, jos mihinkään res
 
 > [!NOTE]
 > Jos et voi poistaa resurssia tämän menettelyn avulla, toinen tapa käsitellä poistoa on määrittää resurssin elinkaaren tila tätä tarkoitusta varten. Voit esimerkiksi määrittää elinkaareen **Hävikki**- tai **Poistettu**-tilan **Resurssien elinkaaritilat** -sivulla.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

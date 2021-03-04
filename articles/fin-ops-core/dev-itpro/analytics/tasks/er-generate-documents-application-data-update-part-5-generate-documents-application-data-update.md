@@ -78,3 +78,6 @@ Tarkista luotu XML-tiedosto.
 6. Sulje sivu.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

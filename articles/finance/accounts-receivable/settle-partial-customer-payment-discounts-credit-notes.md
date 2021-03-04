@@ -61,3 +61,6 @@ Tilitys on 100,00, ja siihen sisältyy maksusuoritus 99,00 ja alennus 1,00.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

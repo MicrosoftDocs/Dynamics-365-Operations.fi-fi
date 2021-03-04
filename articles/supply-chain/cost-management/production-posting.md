@@ -57,3 +57,6 @@ Ennen tuotantotilauksen lopettamista lasketaan tuotetun määrän toteutuneet ku
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

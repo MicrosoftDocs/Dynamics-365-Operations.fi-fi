@@ -55,3 +55,6 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 5. Valitse **Sulje**. 
 6. Valitse sopiva ER-konfiguraation versio ja tuo se nykyiseen esiintymään valitsemalla **Tuo**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

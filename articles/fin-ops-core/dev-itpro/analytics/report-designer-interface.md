@@ -227,3 +227,6 @@ Reporter Designer -työkaluriviltä voi käyttää nopeasti Report Designerin si
 [Taloushallinnon raportointi](financial-reporting-intro.md)
 
 [Raporttien luonti](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

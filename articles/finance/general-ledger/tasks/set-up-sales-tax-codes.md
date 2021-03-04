@@ -46,3 +46,6 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 12. Sulje sivu.
 13. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

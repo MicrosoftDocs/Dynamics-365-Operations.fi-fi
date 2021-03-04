@@ -44,3 +44,6 @@ Tässä ohjeaiheessa käsitellään toimittajan laskun arvonlisäveron oikaisemi
 13. Valitse **OK**.
 14. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

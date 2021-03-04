@@ -55,3 +55,6 @@ Seuraavien vaiheiden avulla voit lisätä BankTransactionType-lisäkentän BankJ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

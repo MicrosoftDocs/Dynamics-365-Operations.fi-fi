@@ -49,3 +49,6 @@ Aikajanaa päivitetään aina, kun sivu avataan. Se sisältää seuraavat tiedot
 - Työtilaukset, mukaan lukien kirjatut nimikkeet ja muistiinpanot
 - Häiriöt
 - Kunnon arvioinnit
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

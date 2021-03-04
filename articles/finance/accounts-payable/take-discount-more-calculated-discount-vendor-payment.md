@@ -51,3 +51,6 @@ April kirjaa maksukirjauskansion. Lasku selvitetään täysin käyttäen 940,00 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

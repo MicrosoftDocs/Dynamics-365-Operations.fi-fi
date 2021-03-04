@@ -54,3 +54,6 @@ Tässä menettelyssä kerrotaan, miten tuotteen elinkaaren tila liitetään julk
 2. Merkitse valittu rivi luettelossa.
 3. Syötä tai valitse arvo Tuotteen elinkaaren tila -kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

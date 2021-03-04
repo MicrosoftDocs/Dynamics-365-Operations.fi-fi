@@ -55,3 +55,6 @@ T채ss채 menettelyss채 kerrotaan, miten er채m채채rite luodaan, oletusarvov채li m�
 22. Valitse Tallenna.
 23. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

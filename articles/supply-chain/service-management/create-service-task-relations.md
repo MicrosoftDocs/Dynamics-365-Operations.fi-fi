@@ -75,3 +75,6 @@ Huoltotilaukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kyseises
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

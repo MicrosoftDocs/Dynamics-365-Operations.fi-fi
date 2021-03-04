@@ -99,3 +99,6 @@ Jos haluat tehdä Microsoftin kanssa yhteistyötä ohjeen mukauttamistyökalujen
 [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)  
 [Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Mukautetun ohjeen GitHub-säilö](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

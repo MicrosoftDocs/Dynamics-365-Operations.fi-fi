@@ -113,3 +113,6 @@ Uutta kiinteää kompensaatiosuunnitelmaa ei voi liittää työntekijään, enne
 
 8. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

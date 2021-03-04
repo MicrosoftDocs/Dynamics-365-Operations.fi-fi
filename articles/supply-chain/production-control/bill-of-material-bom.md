@@ -118,3 +118,6 @@ Valitse **Toimittaja**-rivityyppi, jos tuotantoprosessi käyttää alihankkijaa 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

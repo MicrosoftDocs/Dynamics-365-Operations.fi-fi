@@ -57,3 +57,6 @@ Kun vahvistat myyntitarjouksia, tuloksena muodostuvissa myyntitilauksissa näkyy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

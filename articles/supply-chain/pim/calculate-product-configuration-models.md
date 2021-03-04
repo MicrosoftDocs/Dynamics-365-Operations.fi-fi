@@ -105,3 +105,6 @@ Oikeellisuustarkistukseen ei sisällytetä laskentaa. Sinun on testattava tuotem
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

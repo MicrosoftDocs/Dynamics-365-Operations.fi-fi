@@ -55,3 +55,6 @@ Jos kohde vahingoittuu tai häviää, sille kirjataan fiktiivinen palautustietue
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

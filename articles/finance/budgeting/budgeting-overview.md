@@ -70,3 +70,6 @@ Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

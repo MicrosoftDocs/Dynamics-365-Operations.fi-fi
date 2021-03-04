@@ -242,3 +242,6 @@ Lisätietoja <strong>SysQueryRangeUtil</strong>-päivämäärämetodeista ja use
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

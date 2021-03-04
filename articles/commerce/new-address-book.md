@@ -57,3 +57,6 @@ Seuraavassa kuvassa näkyy työntekijän osoitekirjan luominen vähittäismyymä
 [Näytön asettelun yleiskatsaus](pos-screen-layouts.md)       
 
 [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

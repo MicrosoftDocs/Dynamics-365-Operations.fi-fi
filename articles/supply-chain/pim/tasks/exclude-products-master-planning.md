@@ -44,3 +44,6 @@ Tässä menettelyssä kuvataan, miten luodaan uuden tuotteen elinkaaren tila, jo
 5. Merkitse valittu rivi luettelossa.
 6. Syötä tai valitse arvo Tuotteen elinkaaren tila -kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

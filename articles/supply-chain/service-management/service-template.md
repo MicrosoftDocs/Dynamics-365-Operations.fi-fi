@@ -58,3 +58,6 @@ Kopioitavien huoltomallin rivien määrittämistä helpottaa, jos olet ryhmitell
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Huoltomallin rivien kopioiminen](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

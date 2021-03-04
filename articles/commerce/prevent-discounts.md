@@ -41,3 +41,6 @@ Seuraavat asetukset sijaitsevat vapautettujen tuotteiden **Commerce**-välilehdi
 > Nämä asetukset eivät rajoita hinnan ohitustoimintoa, koska se määrittää perushinnan, jota ei pidetä alennuksena.
 
 [![Estä alennukset -kenttä](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

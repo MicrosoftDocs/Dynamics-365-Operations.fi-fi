@@ -80,3 +80,6 @@ Monissa organisaatioissa etuuspäälliköt voivat käyttää vain tiettyjä komp
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Ympäristön päivitys 24 Finance and Operationsille
 Lisätietoja Finance and Operationsin Platform update 24:stä on kohdassa [Finance and Operations Platform update 24:n (maaliskuu 2019) uudet ja muuttuneet ominaisuudet](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

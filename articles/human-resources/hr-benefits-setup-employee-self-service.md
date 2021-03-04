@@ -72,3 +72,6 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa voit määrittää ylimmän t
    | **End-näppäin** | Lopetuspäivämäärä ja -kellonaika, jolloin laatta on käytettävissä. |
 
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Seuraavassa kuvassa on esimerkki ostoskorista, jossa näkyy Varastossa (Käytett
 [Myymälän valitsinmoduuli](store-selector.md)
 
 [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Dynamics 365 Finance ei tulosta 1096 Annual Summary and Transmittal of US Inform
 Ratkaisuun on lisätty uusi julkisen sektorin ominaisuus **Päivitä 1099-tiedot päätilin mukaan**, jonka voit ottaa käyttöön **Ominaisuuksien hallinta** ‑työtilassa. Tämän ominaisuuden avulla voit liittää toimittajan 1099-arvot kirjanpidollisen jaon päätilin mukaan toimittajatietueen oletustilin sijaan.
 
 Lisätietoja on ohjeaiheessa [1099-raportoinnin toimittajien asetukset](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

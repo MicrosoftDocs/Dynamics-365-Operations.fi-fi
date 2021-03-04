@@ -145,3 +145,6 @@ Lisätietoja on kohdassa [Ostoreskontran laskujen täsmäytyksen yleiskatsaus](a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

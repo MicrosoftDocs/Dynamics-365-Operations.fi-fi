@@ -56,3 +56,6 @@ Tässä aiheessa kerrotaan, miten myyntitilaus päivitetään, kun tuotteet on l
 19. Valitse toimintoruudussa **Kerää ja pakkaa**.
 20. Valitse **Pakkausluettelo**. Kaikki tilausta varten luodut pakkausluetteloasiakirjat ovat **Pakkausluettelo-kirjauskansio**-sivulla. Voit tarvittaessa tarkastella kunkin asiakirjan tietoja ja tulostaa ne.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

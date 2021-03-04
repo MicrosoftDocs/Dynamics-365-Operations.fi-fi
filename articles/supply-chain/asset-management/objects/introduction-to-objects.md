@@ -78,3 +78,6 @@ Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa taulukossa k
 | Varaosat          | Tarkastele resurssiin käytettävissä olevien hyväksyttyjen ja vaihtoehtoisten varaosien luetteloa.                                                                               |
 | Resurssien kulutus    | Tulosta raportti, joka sisältää resurssin kulutuksen rekisteröinnit.                                                                                                |
 | Resurssin vika          | Tulosta raportti, joka sisältää resurssin vikarekisteröinnit.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja 
 5. Sulje lomake.
 6. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

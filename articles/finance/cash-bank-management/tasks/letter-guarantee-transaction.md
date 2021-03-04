@@ -148,3 +148,6 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
     * Tarkista kirjatut kirjauskansioviennit.  
 16. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

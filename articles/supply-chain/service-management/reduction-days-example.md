@@ -121,3 +121,6 @@ Kun maaliskuun 2011 tapahtumat laskutetaan, 200 euron myyntihinnasta vähennetä
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

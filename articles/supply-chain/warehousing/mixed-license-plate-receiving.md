@@ -49,3 +49,6 @@ Sinun on luotava uusi valikkovaihtoehto, jossa tilaksi on määritetty työ, jok
 - Yhdistetyn rekisterikilven vastaanotto ja poispano
 
 Lähdeasiakirjarivien tunnistamisvaihtoehdot ovat ostotilausnimike, ostotilausrivi, palautustilaus, siirtotilausnimike ja siirtotilausrivi. Nämä vaihtoehdot voivat muuttaa yhden rekisterikilven vastaanottotilauksen. Viimeinen vaihtoehto on kuormanimikkeen mukaan. Voit lisätä rekisterikilpeen useita nimikkeitä mutta vaihtelu useiden kuormien välillä ei ole mahdollista.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Kun valitset **Tosite**, laskukirjauskansiossa näkyy alkuperäinen kirjanpitome
 Avaa seuraavaksi **Kaikki asiakkaat** -sivu (**Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat**), valitse asiakas **US\_SI\_0003** ja valitse sitten **Tapahtumat**. **Asiakastapahtumat**-sivulla näkyy vain alkuperäinen lasku (000008) yhdessä alkuperäisen kirjanpitomerkinnän kanssa. Koska **Kirjanpitoparametrit**-sivulla on määritetty **Kirjaa laskun korjaukset myyntireskontraan** ‑asetukseksi **Ei**, vain kirjanpito päivitetään. Tämän vuoksi peruuttavat ja päivitetyt kirjanpitomerkinnät eivät näy. Huomaa, että [skenaariossa 3](rev-rec-reallocation-scenario-3.md) luodut tuoton oikaisutapahtumat näytetään.
 
 [![Alkuperäinen kirjanpitomerkintä Asiakastapahtumat-sivulla](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

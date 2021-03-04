@@ -87,3 +87,6 @@ Kun lisäät sivumalleihin osan, voit varmistaa, että alatunniste hahmonnetaan 
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

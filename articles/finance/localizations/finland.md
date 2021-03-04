@@ -31,3 +31,6 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 
 - [Suomen arvonlisäveromaksun raportti](emea-fin-sales-tax-payment-report-finland.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

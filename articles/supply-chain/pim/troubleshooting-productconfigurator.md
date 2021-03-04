@@ -75,3 +75,6 @@ Voit sitten lisätä seuraavat laskelmat:
 
 - *ResultDecimal* = *Syöte* × *Prosentti* ÷ 100
 - *ResultInteger* = *ResultDecimal*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

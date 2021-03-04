@@ -56,3 +56,6 @@ Muuntokertoimet-kentät määrittävät muuntokertoimen maksutaajuuksista vakiom
    | **Tunnittainen muuntokerroin** | Toimitustiheyden vuosittainen muuntokerroin. Esimerkiksi kuukausittaisen maksutiheyden vuosittainen muuntokerroin on seuraava: </br></br>(12 kuukausimaksua/2080 tuntia) = 0,005769
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

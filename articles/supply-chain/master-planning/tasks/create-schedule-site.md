@@ -56,3 +56,6 @@ Seuraavassa menettelyssä kuvataan, toimipaikan aloittamattomat tuotantotilaukse
 4. Napsauta kohtaa Materiaalit.
     * Tällä sivulla voit tarkastella tuotantotilauksen toimintojen arvioitua materiaalinkulutusta ja käytettävissä olevaa varastoa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

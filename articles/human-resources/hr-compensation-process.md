@@ -77,3 +77,6 @@ Kun työntekijän kompensaatiosummat on arvoitu ja mahdolliset suositeltujen arv
 Kun vähintään yhden työntekijätapahtuman tila on päivitetty hyväksytyksi, kyseinen tapahtuma voidaan ladata työntekijän kiinteän kompensaation tietueisiin. Se voidaan tehdä joko valitsemalla työntekijätapahtumat yksi kerrallaan ja napsauttamalla **Lataa työntekijän kompensaatio** -painiketta **Työntekijän tulokset** -sivulla tai lataamalla kaikki hyväksytyt työntekijätapahtumat kerralla valitsemalla **Prosessin tulokset** -sivulla **Lataa kompensaatio**.
 
 Kun **Lataa kompensaatio** -valintaikkunassa valitaan **OK**, muut kuin nolla kompensaation toimintorivit lisätään **Työntekijän kiinteä kompensaatio** -sivulla.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -183,3 +183,6 @@ Sinun on määritettävä jokaiselle määrittämällesi käsittelykoodille käs
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

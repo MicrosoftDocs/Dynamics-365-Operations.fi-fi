@@ -64,3 +64,6 @@ Sivuston valitsinmoduuli voidaan lisätä [otsikkomoduuliin](author-header-modul
 [Navigointipolkumoduuli](add-breadcrumb.md)
 
 [Siirtymisvalikkomoduulit](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

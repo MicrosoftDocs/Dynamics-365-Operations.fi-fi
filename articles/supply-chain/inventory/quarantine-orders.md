@@ -67,3 +67,6 @@ Karanteenitilausprosessin aikana varastoa voidaan määrittää hävikiksi. Häv
 --------
 
 [Varastoesto](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

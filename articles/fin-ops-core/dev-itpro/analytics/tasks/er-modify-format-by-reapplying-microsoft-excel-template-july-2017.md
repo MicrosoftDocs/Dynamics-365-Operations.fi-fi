@@ -83,3 +83,6 @@ Menettelyssä kerrotaan, miten sähköisen raportoinnin (ER) muodon määrityksi
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Käytä ER-muodon muokattua luonnosversiota maksukirjauskansion käsittelyssä
 
 Tarkista luotu laskentataulukko ja maksurivien uudet maksupäivämäärien tiedot.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

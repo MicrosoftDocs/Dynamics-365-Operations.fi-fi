@@ -138,3 +138,6 @@ Voit joutua tarkistamaan asiakkaan luottorajan manuaalisesti. Voit esimerkiksi t
 1.  Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**. Kaksoisnapsauta myyntitilausta.
 
 2.  Valitse **Myyntitilaus**-lomakkeen toimintoruudun **Hallinta**-välilehdessä **Luottorajan tarkistus**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Voit helpottaa kustannusobjektin dimensiojäsenten tuontia käyttämällä tieto
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

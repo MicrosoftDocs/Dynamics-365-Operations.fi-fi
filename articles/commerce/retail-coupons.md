@@ -82,3 +82,6 @@ Kuponkitoiminto koostuu useista erillisistä ominaisuuksista. Commerce Headquart
 - **HQ päivitetään osittain, mutta Commerce Scale Unitia ja POS:stä ei päivitetä.** HQ-päivityksessä kuponki- ja alennussivut päivitetään samoin kuin kaupan hinnoitteluohjelma. Jos vain toinen kahdesta komponentista päivitetään, osa Commercen sivuista ei vastaa hinnan laskentatietoja. Niinpä alennuksia laskettaessa voi esiintyä odottamattomia laskettuja alennuksia tai virheitä.
 - **HQ päivitetään, mutta Commerce Scale Unitia ja POS:stä ei päivitetä (N-1).** Koska kaikkia myymälöitä ei voi päivittää samalla kertaa, HQ kannattaa päivittää ennen myymälöiden päivitystä. N-1-skenaariossa kuponkeihin liittyvä uusi toiminto ei ole vielä päivittämättömien myymälöiden käytössä. Kuponkitoiminnossa otetaan esimerkiksi käyttöön poissulkemisrivit. Jos poissulkemisrivejä käytetään alennuksessa, aiempaa versiota käyttävät myymälät eivät voi käyttää niitä.
 - **HQ:ta ei päivitetä, mutta Commerce Scale Unit ja POS päivitetään (N-1).** Koska Commerce Scale Unitin päivitetty hinnoitteluohjelma voi käsitellä vanhoja alennuskoodeja hinnan laskennan aikana, päivityksellä ei pitäisi olla toiminnallisia vaikutuksia tässä skenaariossa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

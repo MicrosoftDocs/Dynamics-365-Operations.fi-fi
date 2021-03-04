@@ -87,3 +87,6 @@ Kun olet suorittanut aiemmin tässä ohjeaiheessa kuvatun kohdan [Oletuskuvauste
 2. Valitse **Viitetaulukko**-kentästä tietokantataulukko, josta parametritietoja lisätään kuvaukseen.
 3. Valitse **Viitekenttä**-kentästä kenttä, josta parametritietoja lisätään kuvaukseen.
 4. Voit lisätä muita parametrejä tekemällä kohtien 1–3 toimet uudelleen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Lisäohjeita on saatavilla tehtävän ohjauksina. Voit avata tehtäväoppaan nap
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

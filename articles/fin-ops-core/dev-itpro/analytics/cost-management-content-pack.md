@@ -207,3 +207,6 @@ Seuraavia avaindimensioita käytetään suodattimina koostemittojen osittamisess
 | Oikeushenkilöt                                          | Yritysten nimet                              |
 | Kirjanpidon kalenterit                                        | Kirjanpidon vuosikalenteri, vuosi, vuosineljännes, kausi, kuukausi   |
 | Sivusto                                                    | Tunnus, nimi, osoite, osavaltio, maa               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

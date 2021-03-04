@@ -99,3 +99,6 @@ Lisätietoja tuotannon käyttökatkoksen ilmoittamisprosessista on kohdassa [T
  ## <a name="see-also"></a>Lisätietoja
 
  [Käyttöönoton valmistelu](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

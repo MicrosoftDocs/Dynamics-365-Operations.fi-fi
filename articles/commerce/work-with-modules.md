@@ -173,3 +173,6 @@ Voit määrittää sivun säilömoduulin seuraavasti.
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

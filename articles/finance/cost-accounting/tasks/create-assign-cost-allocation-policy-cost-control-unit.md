@@ -67,3 +67,6 @@ Tämän menettelyn avulla luodaan ja delegoidaan kustannusten kohdistuskäytänt
 5. Anna tai valitse arvo Kustannusseurantayksikkö-kenttään.
 6. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

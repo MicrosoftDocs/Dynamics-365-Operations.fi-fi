@@ -37,3 +37,6 @@ Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yr
 6. Valitse Seuraava.
 7. Valitse Valmis.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

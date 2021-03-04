@@ -101,3 +101,6 @@ Jos sama raportti käsitellään asiakkaalle **Litware Retail** 17.12.2015 ja ma
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

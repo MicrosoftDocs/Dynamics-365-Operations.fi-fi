@@ -64,3 +64,6 @@ Tässä menettelyssä selvitetään, miten ostosopimusta voi käyttää ostotila
 3. Sulje sivu.
 4. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

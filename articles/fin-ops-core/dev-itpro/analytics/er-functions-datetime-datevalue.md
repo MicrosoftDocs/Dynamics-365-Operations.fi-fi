@@ -79,3 +79,6 @@ Kuitenkin `DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")` aiheuttaa poikkeuk
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Päivämäärä- ja aikatoiminnot](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -163,3 +163,6 @@ Jos konfiguraatio tullaan tekemään toimipaikassa tai jopa yrityksessä, joka e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

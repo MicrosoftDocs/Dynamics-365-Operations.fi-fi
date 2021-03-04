@@ -52,3 +52,6 @@ Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin lu
 21. Valitse **Valuutan muuntotyyppi** -kentässä menetelmä, jolla tilin vaihtokurssit lasketaan.
 22. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

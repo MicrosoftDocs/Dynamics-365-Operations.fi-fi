@@ -69,3 +69,6 @@ Jos `starting position` -argumentin arvo ylittää määritetyn merkkijonon pitu
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

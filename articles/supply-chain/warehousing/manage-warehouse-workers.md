@@ -57,3 +57,6 @@ Analyysi työnimikkeiden viemästä ajasta voi auttaa edistämään parannuksia 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

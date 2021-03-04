@@ -36,3 +36,6 @@ Tuotannon palaute antaa työntekijöille palautetta tuotantotöistä. Siinä nä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

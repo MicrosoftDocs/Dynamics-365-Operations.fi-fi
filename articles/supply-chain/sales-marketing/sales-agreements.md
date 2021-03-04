@@ -113,3 +113,6 @@ Voit kopioida taloushallinnon dimensiot joko asiakirjojen ylätunnisteisiin tai 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

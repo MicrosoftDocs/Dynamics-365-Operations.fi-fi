@@ -128,3 +128,6 @@ Valitsemalla **Tapahtumavaihtoehdot \> Veloitukset \> Hallitse veloituksia** POS
 [Omnikanavan automaattiset etukäteisveloitukset](omni-auto-charges.md)
 
 [Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Seuraavat Tech Conference -tallenteet käsittelevät Supply Chain Managementin t
 ## <a name="elearning-courses"></a>eLearning-kurssit
 
 Online-kursseista ja koulutuksesta saat tietoa [Dynamics 365 Supply Chain Managementin Microsoft Learn -sivulta](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

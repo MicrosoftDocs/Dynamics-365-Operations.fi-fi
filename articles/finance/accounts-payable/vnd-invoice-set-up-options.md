@@ -63,3 +63,6 @@ Seuraavat parametrit ovat käytettävissä:
 
 - **Automaattisen täsmäytyksen yrityskertojen määrä** – Valitse, kuinka monta kertaa järjestelmä yrittää täsmäyttää tuotteen vastaanotot laskuriviin, ennen kuin se päättää prosessin epäonnistuneena. Kun määritetty yrityskertojen määrä saavutetaan, lasku poistetaan automaattisesta käsittelystä.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

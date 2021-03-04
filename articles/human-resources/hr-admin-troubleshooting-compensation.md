@@ -47,3 +47,6 @@ Kompensaation ohjeistus:
 - Prosessi:
 
     - [Kompensaation käsittely](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

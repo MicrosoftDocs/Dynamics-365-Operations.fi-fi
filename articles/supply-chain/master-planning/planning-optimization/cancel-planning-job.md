@@ -60,3 +60,6 @@ Työn tila on **Peruutetaan**, kunnes suunnittelun optimointipalvelu vahvistaa, 
 [Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
 
 [Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Kun käyttäjät aloittavat tarjouksen Salesissa, kaksoiskirjoituskehys kopioi t
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Prospektista käteiseksi -kaksoiskirjoitus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

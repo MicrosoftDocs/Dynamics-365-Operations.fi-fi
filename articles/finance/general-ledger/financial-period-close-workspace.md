@@ -108,3 +108,6 @@ Kun sulkemisaikataulu on valmis, valitse sille **Suljettu**-vaihtoehto. Teht√§v√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Laajennus sisältää datatiedoston nimeltään RecoMockDataset.csv. Sen avulla 
 [Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Jos ensimmäinen tulosarvo ja *N*:s arvo ovat *Säilön (tietueen)* tai *Tietuel
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Loogiset toiminnot](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

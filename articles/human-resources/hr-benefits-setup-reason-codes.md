@@ -41,3 +41,6 @@ Dynamics 365 Human Resources käyttää syykoodeja selittääkseen, miksi työnt
    | **Kuvaus** | Syykoodin kuvaus. |
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

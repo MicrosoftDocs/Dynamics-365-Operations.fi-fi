@@ -104,3 +104,6 @@ Tämän selittäminen edellyttää, että tiedät sijainnin varastointirajoitust
 
 > [!NOTE]
 > Sijoituksen varastointirajoitusten ei voi hallita esimerkiksi sellaisten nimikkeiden täydennystä, joilla on eri määriä samassa sijainnissa. Siinä tapauksessa on käytettävä *täydennysmallia*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

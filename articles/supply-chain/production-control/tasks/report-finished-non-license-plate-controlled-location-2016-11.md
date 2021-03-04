@@ -62,3 +62,6 @@ Tässä tehtäväoppaassa näytetään esimerkki valmiiksi ilmoittamisesta sijai
 18. Valitse Työn tiedot.
     * Kun tuotantotilaus on raportoitu päättyneeksi, poispanotöitä ei luotu. Tämä johtuu siitä, että määritettynä on työn käytäntö, joka estää töiden luonnin, kun tuote L0101 ilmoitetaan valmiiksi sijaintiin 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Commercen tulevassa versiossa jälleenmyyjät voivat määrittää myyntipistees
 
 Odottamattomat suorituskykyongelmien estämiseksi tämä määritys on piilotettu versioversiotestaukseen nimeltä **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Tämän vuoksi **Asiakkaan oletushakutila** -asetuksen näyttäminen käyttöliittymässä edellyttää, että jälleenmyyjä luo tukipalvelupyynnön käyttäjän hyväksyntätestaus- ja tuotantoympäristöjä varten. Kun pyyntö on vastaanotettu, kehitysryhmä varmistaa yhteistyössä vähittäismyyjän kanssa, että tämän testaus tapahtuu muussa kuin tuotantoympäristössä, sillä tällä tavoin voidaan arvioida suorituskyly ja ottaa käyttöön mahdollisesti tarvittavat optimoinnit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Luo uusi huoltokohteen suhde huoltotilaukselle seuraavien ohjeiden avulla:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

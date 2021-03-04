@@ -111,3 +111,6 @@ Uusi mallituoterakenne luodaan käyttämällä rivejä, jotka vastaavat **Tuoter
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

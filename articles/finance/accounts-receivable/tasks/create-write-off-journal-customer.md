@@ -84,3 +84,6 @@ Tässä tehtävän ohjauksessa näytetään, miten poiston parametrit määritet
 5. Valitse **OK**.
 6. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -209,3 +209,6 @@ Kirjanpidon konsolidoinnissa on lisätty uusi vaihtoehto, jonka mukaan lähdeyri
 -  Voit nyt valita, käytetäänkö lähdeyrityksen kirjanpitovaluuttaa vai raportointivaluuttaa konsolidointiyrityksen tapahtumavaluuttana.
 
 - Lähdeytityksen kirjanpito- tai raportointivaluutta kopioidaan suoraan konsolidointiyrityksen kirjanpidon tai raportoinnin valuuttasummiin, jos jompikumpi valuutoista on sama. Konsolidointiyrityksen kirjanpito- ja raportointivaluuttasummat lasketaan käyttämällä vaihtokurssia, jos kumpikaan valuutoista ei ole sama.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

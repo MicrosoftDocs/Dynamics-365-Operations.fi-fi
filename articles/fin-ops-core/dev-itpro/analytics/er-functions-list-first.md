@@ -59,3 +59,6 @@ Lauseke `FIRST(SPLIT("",1)).Value` heittää poikkeuksen suorituksen aikana.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

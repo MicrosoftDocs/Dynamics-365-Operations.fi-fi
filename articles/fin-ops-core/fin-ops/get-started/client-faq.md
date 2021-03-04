@@ -54,3 +54,6 @@ Näppäimistön käyttämisen helpottamiseksi aiomme tulevaisuudessa ottaa käyt
 
 - Jos ohjausobjektissa on **Näytä tiedot**-valmius ja ohjausobjektilla on arvo, kyseinen arvo näytetään hyperlinkkinä. Napsauttamalla hyperlinkkiä voit avata sivun, jossa on lisätietoja.
 - **Näytä tiedot** on myös pikavalikkojen vaihtoehto. Edellisessä osassa on lisätietoja siitä, milloin pikavalikot tulee näkyviin hiiren oikealla painikkeella napsautettaessa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

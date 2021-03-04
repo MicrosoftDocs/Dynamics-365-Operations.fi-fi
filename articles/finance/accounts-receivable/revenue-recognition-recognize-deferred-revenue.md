@@ -108,3 +108,6 @@ Sopimuksen muutoksilla on seuraavat vaikutukset tuottoaikataulutietoihin:
 - Jos tuotteelle on kirjattu tuottoa, tuottoa on kirjattu väärin, koska kirjaus on perustunut virheelliseen tuottoaikatauluun. Nämä rivit on takaisinkirjattava ja kirjattava uudelleen uuden aikataulun perusteella. Tässä skenaariossa luodaan uusia tuottoaikataulurivejä, joilla on negatiivinen summa alkuperäisenä kirjauspäivänä. Sitten luodaan uusia rivejä, joilla summat kirjataan uuden tuottoaikataulun perusteella. 8.8.2019 esimerkiksi kirjattiin 10,53 dollarin tuotto. 8. syyskuuta 2019 taas kirjattiin 13,16 dollarin tuotto. Siten samoina päivinä luodaan kaksi uutta riviä. Yhden rivin arvo on -10,53 dollaria ja toisen -13,16 dollaria. Sitten luodaan 24 uutta riviä, joille siirretyn tuoton kokonaismäärä eli 160,61 dollaria kohdistetaan. Takaisinkirjausrivit voidaan kirjata suorittamalla **Luo kirjauskansio** -prosessi.
 
 [![Tuottokirjausaikataulu](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

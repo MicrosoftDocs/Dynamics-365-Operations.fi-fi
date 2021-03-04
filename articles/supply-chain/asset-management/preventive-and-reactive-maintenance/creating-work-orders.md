@@ -52,3 +52,6 @@ Kun olet ajoittanut ennaltaehkäiseviä kunnossapitotöitä, seuraava vaihe on t
 
 5. Valitse **OK**. Yksi tai monta työtilausta luodaan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

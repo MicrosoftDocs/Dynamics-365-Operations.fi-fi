@@ -45,3 +45,6 @@ Kun nollaat konfiguroinnin uudelleenkäytön, aiemmin luotuja konfiguraatioita e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

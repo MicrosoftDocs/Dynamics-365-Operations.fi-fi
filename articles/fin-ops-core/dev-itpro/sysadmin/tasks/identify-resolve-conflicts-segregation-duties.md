@@ -43,3 +43,6 @@ Tässä ohjeaiheessa kerrotaan, miten tehtävien eriyttämisen ristiriidat tunni
 1. Valitse **Siirtymisruutu > Moduulit > Järjestelmänhallinta > Suojaus > Tehtävien eriyttäminen > Tehtävien eriyttämisen säännöt**. Valitse sääntö.  
 2. Valitse **Vahvista velvollisuudet ja roolit**. Jos aiemmin luotu rooli ei ole valitun säännön mukainen, avautunut sanoma sisältää roolin ja ristiriitaisten tehtävien nimet. Järjestelmänvalvojan on joko osoitettava suojausriskin mitätöintitapa tai muokattava roolia siten, että se ei riko tehtävien eriyttämissääntöjä. Jos mikään rooli ei riko valittua sääntöä, sanomassa on tieto siitä, että kaikki roolit ovat vaatimustenmukaisia.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

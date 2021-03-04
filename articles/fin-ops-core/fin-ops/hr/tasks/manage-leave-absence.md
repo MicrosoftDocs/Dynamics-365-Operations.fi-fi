@@ -46,3 +46,6 @@ Tässä menettelyssä esitellään työntekijän lomatietueiden luominen. Voit s
     * Esimerkki: Adoptioloma  
 12. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Sähköisen laskutuksen käyttöönotto ja käyttö saattaa edellyttää rajoite
 - [Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-mex-get-started.md)
 - [Italian sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-ita-get-started.md)
 - [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

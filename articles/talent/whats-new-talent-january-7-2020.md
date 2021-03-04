@@ -53,3 +53,6 @@ Tämä muutos lisää poistovaihtoehdon **Työntekijät, joilla ei ole työtä**
 5. Määritä **Poisto**-oikeuden myöntäminen.
 6. Valitse **Julkaisemattomat objektit** -välilehti.
 7. Valitse **Julkaise kaikki**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

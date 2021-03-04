@@ -376,3 +376,6 @@ Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedost
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Paranna sähköisen raportoinnin ratkaisujen suorituskykyä lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

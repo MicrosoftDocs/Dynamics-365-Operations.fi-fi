@@ -100,3 +100,6 @@ Huomaa, että kysynnän ennusteen mittayksiköllä ei tarvitse tiettyä merkitys
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

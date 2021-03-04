@@ -82,3 +82,6 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 - [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
 - [Loman keskeyttäminen](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

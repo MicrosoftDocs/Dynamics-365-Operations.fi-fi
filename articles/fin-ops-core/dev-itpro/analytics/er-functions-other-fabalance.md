@@ -67,3 +67,6 @@ Tuloksena oleva tietueen arvo.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Muut (liiketoiminnan toimialuekohtaiset) toiminnot](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töi
 9. Valitse Muuta toimea.
     * Voit myös muuttaa kompensaatiota täksi ajaksi. Jos et määritä kompensaatiota nyt, voit muuttaa sitä siirtymällä työntekijän lomakkeeseen, valitsemalla Kompensaatio-välilehden ja valitsemalla Kiinteä suunnitelma. Kun valitset Muuta toimea, hakemuksen tilaksi tulee Toimessa.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

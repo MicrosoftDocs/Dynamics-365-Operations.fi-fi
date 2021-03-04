@@ -179,3 +179,6 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Dynamics 
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

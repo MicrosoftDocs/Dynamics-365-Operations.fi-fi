@@ -89,3 +89,6 @@ Kanta-asiakasohjelmaan liittymistä varten voidaan luoda markkinointisivu, jossa
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

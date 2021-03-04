@@ -99,3 +99,6 @@ Avaa tämän asiakirja Wordissa ja toimi seuraavasti:
 16. Valitse **OK**.
 17. Valitse **OK**. Analysoi luotu raportti. Huomaa, että luotu raportti on Word-muotoinen ja että siinä on käsiteltyjen maksujen tiedot.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Aikarajan pidennys on poikkeus, jota harkitaan tapauskohtaisesti. Ota tässä ta
 [BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](cpe-bopis.md)
 
 [Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

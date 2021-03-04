@@ -296,3 +296,6 @@ Klusteri on suljettava, ennen kuin klusterin nimikkeet voidaan hyllyttää.
 ## <a name="notes-and-tips"></a>Huomautuksia ja vihjeitä
 
 Jos klusterin tunnuksesta tulee upotetun kuormalavan päärekisterikilpi, asetussijainti annetaan automaattisesti, kun klusterin tunnus skannataan. Muita rekisterikilpiä ei tarvitse skannata, vaikka rekisterikilven luonti olisi määritetty manuaaliseksi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

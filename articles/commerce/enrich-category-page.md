@@ -65,3 +65,6 @@ Voit täydentää luokkasivua seuraavasti:
 [Tuotesivun täydentäminen](enrich-product-page.md)
 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -84,3 +84,6 @@ Jos käsittelet rajallista materiaalia, ajoitukseen vaikuttaa myös tuotantoon t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

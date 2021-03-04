@@ -54,3 +54,6 @@ Laskurivi jätetään automaattisen käsittelyn ulkopuolelle seuraavissa tilante
 - Laskurivin **Automatisoidun vastaanoton täsmäytyksen tila** -arvo on **Epäonnistui**.
 - Laskua käytetään.
 - Lasku on työnkulkujärjestelmässä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

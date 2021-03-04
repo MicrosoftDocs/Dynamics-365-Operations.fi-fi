@@ -76,3 +76,6 @@ Huomaa lisäksi, että fyysisten tapahtumien määrä sekä fyysisten ja rahoitu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

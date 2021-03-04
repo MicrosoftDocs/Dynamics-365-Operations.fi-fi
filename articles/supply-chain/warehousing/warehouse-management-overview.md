@@ -74,3 +74,6 @@ Määritä lähtevän ja saapuvan varastointiprosessien komponentit liiketoiminn
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Sen sijaan, että kysyntä laskettaisiin yhteen kohdistusprosessin lopussa ja t�
 |   Sijaintidirektiivit   |                                                       Sijaintidirektiivejä tarvitaan ohjaamaan työ sijainteihin, joissa täydennystä tarvitaan, ja sijainteihin, jotka ovat varaston lähteenä.                                                        |
 |     Työmallit      |                                                   <strong>Täydennys</strong> tyyppisiä työmalleja tarvitaan luomaan täydennystyö, jolla varasto voidaan siirtää haluttuun sijaintiin.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

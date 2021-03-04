@@ -169,3 +169,6 @@ Esimerkkiskenaario edellyttää kahden sijaintiprofiilin valmistelemista.
 
 > [!NOTE]
 > Sijaintikentät päivitetään vain varastotapahtumien mukaan. Jos varasto siirretään kirjauskansion tai muiden kuin WHS-prosessien avulla, kenttiä ei päivitetä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

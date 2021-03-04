@@ -175,3 +175,6 @@ Kun tätä laskentamenetelmää käytetään osittaisen palautuksen skenaariossa
 [Omnikanavan automaattiset etukäteisveloitukset](omni-auto-charges.md)
 
 [Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

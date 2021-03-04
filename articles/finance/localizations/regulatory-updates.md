@@ -87,3 +87,6 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 - Etsi kaikki suunnitellut ja julkaistut pakolliset päivitykset [Lifecycle Service – ongelmahaussa](https://lcs.dynamics.com/Logon/Index) (pakollinen kirjautuminen).
 - Lisätietoja tuetuista lokalisaatiosta on [kansainvälisessä tuotesaatavuusoppaassa](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

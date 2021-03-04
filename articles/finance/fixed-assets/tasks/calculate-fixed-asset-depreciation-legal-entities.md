@@ -51,3 +51,6 @@ Käyttöomaisuuden poisto voidaan suorittaa useille yritykselle yhdellä kertaa.
 5. Valitse Luo kirjauskansio.
 6. Valitse Käyttöomaisuus > Kirjauskansioviennit > Käyttöomaisuuden kirjauskansio.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

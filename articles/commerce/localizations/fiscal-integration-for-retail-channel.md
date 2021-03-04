@@ -150,3 +150,6 @@ Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Retail SDK:ss
 Seuraava vanha kirjanpidon integrointitoiminto, joka on käytettävissä Retail SDK -versiossa, ei käytä kirjanpidon integrointikehystä, ja se poistetaan käytöstä myöhemmissä päivityksissä:
 
 - [Tarkistusyksikön integrointimalli – Ruotsi (vanha)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

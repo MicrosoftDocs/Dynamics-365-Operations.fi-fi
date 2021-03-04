@@ -37,3 +37,6 @@ Jos haluat määrittää erätyön tai käsitellä useiden vuokrasopimusten lask
 > Seuraavat tapahtumat, kuten velan kuoletusaikataulut, maksut, poistot ja kulut, kirjataan vasta, kun vastaavien vuokrasopimusten alkuperäinen tuloutus on kirjattu.
 >
 > Kirjauskansioviennit luodaan, mutta niitä ei kirjata, ennen kuin valitset **Suorita**-komennon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

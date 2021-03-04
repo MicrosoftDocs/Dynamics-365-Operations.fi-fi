@@ -104,3 +104,6 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

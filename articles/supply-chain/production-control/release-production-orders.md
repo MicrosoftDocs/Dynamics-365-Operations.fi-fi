@@ -64,3 +64,6 @@ Raaka-aineiden keräilytyö luodaan vapautuksen yhteydessä. Työ luodaan vain s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

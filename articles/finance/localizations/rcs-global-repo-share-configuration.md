@@ -75,3 +75,6 @@ Määritys jaetaan ulkoisen organisaation kanssa, ja se on kyseisen organisaatio
 ![Ulkoisen organisaation kanssa jaettu määritys](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Ulkoisen organisaation kanssa aiemmin jaetun määrityksen jakaminen poistetaan valitsemalla ensin määritys, sitten **Poista jako** ja lopuksi **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

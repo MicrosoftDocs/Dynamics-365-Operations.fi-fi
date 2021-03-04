@@ -136,3 +136,6 @@ Ennen kuin kirjaat vapaatekstilaskun, voit tarkastella laskun koko kirjanpitokir
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

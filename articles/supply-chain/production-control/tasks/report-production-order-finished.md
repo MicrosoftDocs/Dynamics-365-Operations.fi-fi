@@ -52,3 +52,6 @@ Tässä menettelyssä näytetään, miten tuotantotilaus ilmoitetaan valmiiksi. 
 4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
     * Valmiiksi ilmoitettujen kirjauskansio on kirjattu. Jos haluat tehdä oikaisuja kirjauskansioon, voit luoda manuaalisesti uuden kirjauskansion muutosten tekemistä varten.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

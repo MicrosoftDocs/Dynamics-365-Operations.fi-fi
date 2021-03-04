@@ -51,3 +51,6 @@ Pankkitilin täsmäytyksen lisätoimintojen avulla tuodaan tiliotteita. Tuotu ti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

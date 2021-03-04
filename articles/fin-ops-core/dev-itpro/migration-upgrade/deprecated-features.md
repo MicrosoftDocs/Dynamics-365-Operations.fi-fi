@@ -1373,3 +1373,6 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 |     <strong>Tuotealueet, joihin vaikutetaan</strong>     |                                              Kirjanpito                                              |
 |             <strong>Tila</strong>             |                                      Poistettu versiosta Dynamics AX 2012 alkaen                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

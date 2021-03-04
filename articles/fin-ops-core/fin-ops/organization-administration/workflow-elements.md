@@ -89,3 +89,6 @@ Myös *ehdollinen päätös* on piste, jossa työnkulku jakautuu kahteen haaraan
 ### <a name="subworkflow"></a>Alityönkulku
 
 *Alityönkulku* suoritetaan toisen työnkulun yhteydessä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

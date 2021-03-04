@@ -47,3 +47,6 @@ Tässä menettelyssä näytetään, miten pisteytysmenetelmä luodaan. Pisteytys
 14. Syötä Alue alkaa -kenttään numero.
 15. Syötä Alue loppuu -kenttään numero.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

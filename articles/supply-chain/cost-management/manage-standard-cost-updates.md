@@ -49,3 +49,6 @@ Tässä esimerkissä käytettiin vielä yhtä kustannuslaskelmaversiota koko vuo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Suorita luotu mallin yhdistämismääritys testausta varten. Tällöin näet, mi
     * Valitse Selaa ja valitse sitten Response4.xml-tiedosto.
 16. Valitse OK.
     * Tarkista aikaansaatu tuotos. Vastaustyyppi on nyt tunnistettu oikein samanlaiseksi kuin Response1.xml-tiedostolla.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

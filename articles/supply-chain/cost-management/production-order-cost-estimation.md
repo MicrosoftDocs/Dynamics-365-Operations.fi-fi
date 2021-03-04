@@ -65,3 +65,6 @@ Kustannusarvio sisältää myös seuraavat tiedot:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Tehtaan laitteen signaaleja voi simuloida. Lisätietoja on seuraavissa aiheissa:
 + [IoT DevKit AZ3166:n yhdistäminen Azuren IoT-keskittimeen](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Raspberry Pi -verkkosimulaattorin yhdistäminen Azuren IoT-keskittimeen (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Laitesimulaatioratkaisun apuohjelman yleiskatsaus](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

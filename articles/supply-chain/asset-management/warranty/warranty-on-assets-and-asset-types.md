@@ -54,3 +54,6 @@ Tässä ohje aiheessa kerrotaan, kuinka voit määrittää resurssien ja resurss
 
 > [!NOTE]
 > Kun luot työtilauksen käyttöomaisuudelle, joka kuuluu toimittajan takuun piiriin ja jos työtilauksen odotettu alkamispäivämäärä on takuukauden aikana, saat takuusopimuksesta ilmoituksen. Tämän jälkeen voit peruuttaa työtilauksen tarpeen mukaan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

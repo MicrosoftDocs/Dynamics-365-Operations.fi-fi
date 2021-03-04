@@ -66,3 +66,6 @@ Ennakkomaksulaskuja käytetään liiketoiminnassa yleisesti. Ennakkomaksulaskun 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

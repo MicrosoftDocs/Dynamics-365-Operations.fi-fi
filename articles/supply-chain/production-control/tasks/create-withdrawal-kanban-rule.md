@@ -64,3 +64,6 @@ Seuraavassa menettelyssä kuvataan tarvittavat määritykset ottamisen kanban-s�
     * Tämä luo kaksi kanbania.  
     * Huomaa, että tälle ottamisen kanban-säännölle luotiin 2 kanbania, joista kunkin arvo on 5.  Tämä on tämän menettelyn viimeinen vaihe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

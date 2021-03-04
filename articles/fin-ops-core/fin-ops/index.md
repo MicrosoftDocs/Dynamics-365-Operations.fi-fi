@@ -145,3 +145,6 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

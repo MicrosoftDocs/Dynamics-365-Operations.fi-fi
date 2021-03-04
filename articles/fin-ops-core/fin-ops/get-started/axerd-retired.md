@@ -35,3 +35,6 @@ HTML-sivut ovat repossa osoitteessa [https://github.com/Microsoft/ax-2012-doc-to
 Kuvaus siitä, miten voit luoda omia ERD- eli tietuesuhdekaavioita osoitteessa: [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
 Ratkaisu on AxErd-kansion päätasolla [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

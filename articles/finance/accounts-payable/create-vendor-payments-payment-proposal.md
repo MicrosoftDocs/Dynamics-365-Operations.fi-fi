@@ -123,3 +123,6 @@ Voit määrittää vakioveloitusten maksutilin jokaiselle laskentayksikölle rii
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

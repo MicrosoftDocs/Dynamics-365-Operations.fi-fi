@@ -114,3 +114,6 @@ On suositeltavaa ettet suorita näitä erätöitä liian usein (muutaman minuuti
 > Kun kanavan varaston saatavuuden laskelmia käytetään varaston saatavuuspyynnön luomisessa sähköisen kaupankäynnin ohjelmointirajapintaa tai uutta myyntipisteen kanavan varastointilogiikkaa, suorituskyvyn varmistamiseksi laskelma käyttää välimuistia ja määrittää sen avulla, onko laskentalogiikan suorittamisesta kulunut riittävästi aikaa, jotta sen suorittaminen uudelleen on perusteltua. Välimuistin oletusarvoksi on määritetty 60 sekuntia. Tässä esimerkissä otetaan käyttöön kanavan laskennan myymälässä ja tarkastellaan tuotteen käytettävissä olevaa varastoa **Varastohaku**-sivulla. Jos tuotetta tämän jälkeen myydään yksi yksikkö, **Varastohaku**-sivulla ei näy vähennetty varasto ennen välimuistin tyhjentämistä. Käyttäjien kirjattua tapahtumia myyntipisteeseen, heidän tulee odottaa 60 sekuntia. Tämän jälkeen he voivat tarkistaa, onko käytettävissä olevaa varastoa vähennetty tapahtuman mukaan.
 
 Jos liiketoimintaskenaario edellyttää lyhyempää välimuistin aikaa, ota yhteyttä tuotetuen edustajaan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Näytä varaston vanhat erät määritetään mobiililaitteen valikkovaihtoehdoi
 
 - Valitse ensin **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**, valitse sitten **Käytä nykyistä työtä** -arvoksi **Kyllä** ja valitse lopuksi **Varoitus** **Valitse vanhin erä** -kentässä. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

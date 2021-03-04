@@ -56,3 +56,6 @@ Tämä tehtäväopastuksen rooli on Rahastonhoitaja. Tässä tehtävässä käyt
 16. Sulje sivu.
 17. Valitse Myöhemmäksi päivätyt sekit -välilehti.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

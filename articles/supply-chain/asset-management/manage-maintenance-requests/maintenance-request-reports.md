@@ -58,3 +58,6 @@ Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.
 Seuraavassa kuvassa on esimerkki **Ylläpitopyyntöluettelo** -raportista kaikille aktiivisille yläpitopyynnöille.
 
 ![Ylläpitopyynnön luetteloraportti](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

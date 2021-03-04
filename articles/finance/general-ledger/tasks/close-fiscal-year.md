@@ -83,3 +83,6 @@ Tässä toimintaohjeessa selvitetään tilinkauden lopetusprosessi, joka siirtä
 23. Tilikauden lopetus ajetaan oletusarvoisesti eräajona. On suositeltavinta ajaa pitkään kestävät prosessit eräajona. Tämä on yleensä pitkäkestoinen prosessi, minkä vuoksi oletusasetus on eräajon käyttäminen.  
 24. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

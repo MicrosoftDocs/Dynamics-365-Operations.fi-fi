@@ -107,3 +107,6 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 ## <a name="view-the-purchase-order-that-is-generated"></a>Näytä luotava ostotilaus
 
 Valitse toimintoruudun **Yleiset**-välilehdessä **Ostotilaus**. Näkyvä sivu näyttää ostotilauksen, joka luotiin, kun hyväksyit tarjouksen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

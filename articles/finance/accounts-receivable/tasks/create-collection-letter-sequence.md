@@ -59,3 +59,6 @@ Tämän tehtävän ohjauksen avulla luodaan maksukehotussarja. Tässä tehtävä
 26. Laajenna **Huomautukset**-pikavälilehti.
 27. Kirjoita valitun maksukehotuskoodin maksukehotuksessa näkyvä teksti. Huomautusruudun yläpuolella olevan Käännökset-valikon avulla voit kääntää tämän tekstin useille eri kielille.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

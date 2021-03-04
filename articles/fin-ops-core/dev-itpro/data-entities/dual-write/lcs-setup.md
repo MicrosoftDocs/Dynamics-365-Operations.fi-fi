@@ -90,3 +90,6 @@ Näiden ohjeiden avulla voit määrittää kaksoiskirjoitusyhteyden.
 
 > [!NOTE]
 > Et voi poistaa ympäristöjen välistä linkitystä LCS-sovelluksen avulla. Jos haluat poistaa linkityksen, avaa **Tietojen integrointi** -työtila Finance and Operations -ympäristössä ja valitse sitten **Poista linkitys**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

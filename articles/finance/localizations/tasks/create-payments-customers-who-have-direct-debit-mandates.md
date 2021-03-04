@@ -68,3 +68,6 @@ Tämä on viimeinen viidestä tehtävästä, joilla esitellään asiakasmaksujen
 11. Valitse OK.
 12. Valitse OK.
 13. Valitse Luo maksut.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Seuraavassa kuvassa näkyy tässä aiheessa kuvailtu prosessi yksittäisten komp
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 - [Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

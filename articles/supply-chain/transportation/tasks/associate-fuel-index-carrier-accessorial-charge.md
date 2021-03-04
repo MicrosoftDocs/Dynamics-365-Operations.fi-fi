@@ -78,3 +78,6 @@ Tässä ohjauksessa kerrotaan, miten polttoaineen lisämaksun määritys, rahdin
 6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 7. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

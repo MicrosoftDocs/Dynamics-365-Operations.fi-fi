@@ -87,3 +87,6 @@ Voit lisätä haitarimoduulin Usein kysyttyjä kysymyksiä -sivulle ja määritt
 [Välilehtimoduuli](add-tab.md)
 
 [Tekstilohkomoduuli](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Seuraavassa kuvassa on hierarkia, johon on lisätty useita kanavia.
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
     
 [Verkkokanavan määrittäminen](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

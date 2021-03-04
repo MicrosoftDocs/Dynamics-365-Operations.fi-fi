@@ -73,3 +73,6 @@ Seuraavassa taulukossa on suosituksia eri tilanteissa käytettävistä Solver-st
 [Heuristiikka](https://techterms.com/definition/heuristic)
 
 [Rajoitustyytyväisyysongelma](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

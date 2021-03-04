@@ -157,3 +157,6 @@ Testausta varten voit suorittaa muodon yhdistämismäärityksen käyttämällä 
 2. Valitse OK.
     * Tarkista XML-muotoiset tiedot. Nämä tiedot on tuotu valitusta tiedostosta ja siirretty tietomalliin. Huomaa, että vain 3 tuodun TXT-tiedoston riviä on käsitelty. Rivillä 4 oleva IBAN-koodi, joka ei ole sallittu, on ohitettu. Infolokissa on virhesanoma.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

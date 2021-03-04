@@ -383,3 +383,6 @@ Ennustettu saldo (30) = kertynyt määrä (10 × 1) + nykyinen saldo (40) – si
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolotyyppien määrittäminen](hr-leave-and-absence-types.md)
 - [Jaksota loma- ja poissaolosuunnitelmia](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

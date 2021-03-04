@@ -91,3 +91,6 @@ Määritä seuraava kenttä kullekin sääntöjoukolle:
 - **Vakavuusaste** – Valitse vakavuusaste, jolle säännöt luodaan. Tasot luodaan ja nimetään **Suunnittelun muutosten vakavuusasteet** -sivulla. (Lisätietoja on edellisessä osassa.)
 
 Lisää tai poista valittuna olevan vakavuusasteen sääntöjä **Säännöt**-pikavälilehden painikkeilla. Kullakin säännöllä on **Sääntö**- ja **Nimi**-kenttä. Järjestelmä luo nämä säännöt, ja ne ilmaisevat muutostyypit, joita tuotteella voi olla. Nimi ilmaisee muutoksen tyypin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

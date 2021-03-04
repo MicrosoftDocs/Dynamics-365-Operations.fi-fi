@@ -47,3 +47,6 @@ Jos haluat käyttää automaattista täsmäytystä, sinun on määritettävä t�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ Dynamics 365 Supply Chain Managementin varastointisovellusta on testattu erilais
 
 Suosittelemme varaston mobiililaitteen skannaussovelluksen testaamista laitteistossa, ennen kuin laitteiston ostopäätös tehdään.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

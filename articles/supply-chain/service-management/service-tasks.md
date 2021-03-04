@@ -90,3 +90,6 @@ Kun luot huoltotilaukset automaattisesti, voit käyttää huoltotehtäviä ryhmi
 2. Valitse **Asetukset**-välilehdessä **Huoltotehtävän mukaan** **Yhdistä huoltotilaukset** -kentässä.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

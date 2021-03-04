@@ -92,3 +92,6 @@ Kompensaatioruudukoiden avulla voidaan määrittää ja ylläpitää kiinteiden 
 29. Merkitse kaikki rivit tai poista kaikkien rivien merkinnät luettelossa.
 30. Valitse Sovella ruudukkoon.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

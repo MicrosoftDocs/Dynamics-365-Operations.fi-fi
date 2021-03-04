@@ -37,3 +37,6 @@ Voit käyttää uutta **RAW XML** -muotoelementtiä suunnitellaksesi sähköisen
 > Huomaa, että kehys ei hallinnoi sitä, onko **RAW XML** -muotoelementin avulla luotuun asiakirjaan lisätty elementin muoto on oikein muotoiltu.
 
 Lisätietoja tästä toiminnosta saat toistamalla tehtäväoppaat **ER XML-raakadatan käyttäminen XML-raporttien luomiseen (osa 1: suunnittele tietomalli)** ja **ER XML-raakadatan käyttäminen XML-raporttien luomiseen (osa 2: raportin suunnittelu ja suorittaminen)**, jotka kuuluvat **7.5.4.3 Hanki/Kehitä IT-palvelu/ratkaisukomponentit (10677)** -liiketoimintaprosessiin, joka voidaan ladata [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684). Nämä tehtäväoppaat selittävät prosessin, jossa määritetään ER-muoto lisäämään XML-raakadataa luotuihin asiakirjoihin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

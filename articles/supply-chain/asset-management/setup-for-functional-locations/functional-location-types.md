@@ -67,3 +67,6 @@ Nyt luodaan oletusarvoinen toiminnallinen sijaintityyppi, jota käytetään vain
 
 >[!NOTE] 
 >**Yleiset**-pikavälilehdessä voit saada yleiskatsauksen resurssityyppien määrästä, ylläpitosuunnitelmista, resurssimääritteiden vaatimuksista, sallituista tyypeistä, määritteistä ja toiminnallisista sijainneista, jotka on määritetty toiminnallisen sijainnin tyypissä. **Toiminnalliset sijainnit** -kentässä näkyy niiden toiminnallisten sijaintien määrä, jotka käyttävät tätä toimintosijaintityyppiä. **Kopioi**-painikkeen avulla voit kopioida asetukset toiminnallisen sijainnin tyypistä valittuun toiminnallisen sijainnin tyyppiin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

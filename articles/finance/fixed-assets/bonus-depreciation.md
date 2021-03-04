@@ -65,3 +65,6 @@ Bonuspoisto ilmoitetaan joko prosenttina tai kiinteänä summana. Kun kirjataan 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

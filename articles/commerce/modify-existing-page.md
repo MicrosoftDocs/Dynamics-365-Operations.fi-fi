@@ -87,3 +87,6 @@ Seuraavassa esimerkissä näytetään, miten aloitussivua muokataan muuttamalla 
 [Luokan saapumissivun täydentäminen](enrich-category-page.md)
 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

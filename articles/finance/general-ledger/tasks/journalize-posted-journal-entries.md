@@ -40,3 +40,6 @@ Tässä menettelyssä käsitellään kirjattujen kirjauskansiovientien kirjaamin
 9. Sulje suodatussivu valitsemalla **OK**.
 10. Aloita kirjausprosessi valitsemalla **OK**. Raportti luodaan, kun prosessi on valmis.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

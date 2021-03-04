@@ -65,3 +65,6 @@ Uusi saapuvan kuorman käsittelyominaisuus *Kuormamäärien ylivastaanottaminen*
 1. Kuormamääriä vastaanotettu liikaa
 
 Lisätietoja on kohdassa [Kirjattujen tuotemäärien kirjaaminen ostotilauksiin](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

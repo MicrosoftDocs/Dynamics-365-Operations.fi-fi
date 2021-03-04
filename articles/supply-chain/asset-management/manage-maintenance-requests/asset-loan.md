@@ -58,3 +58,6 @@ Voit tarkastella luettelosa kaikista resursseista, jotka olet lainannut muihin s
 3. Määritä päivämäärä ja kellonaika **Palautettu**-kentässä.
 4. Valitse **OK**.
 5. Päivitä **Aktiiviset resurssilainat** -luetteloivu ja huomaa, että resurssilaina ei enää näy luettelossa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

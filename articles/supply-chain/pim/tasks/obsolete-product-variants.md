@@ -73,3 +73,6 @@ Tässä menettelyssä kerrotaan, miten vanhentuneita julkaistuja tuotteita tai t
 
 8. Etsi haluamasi tietue luettelosta ja valitse se.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

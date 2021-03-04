@@ -72,3 +72,6 @@ Tässä menettelyssä selvitetään tuotevariantien luonti päätuotteelle käyt
     * Voit luoda kuvaukset kaikille varianteille tuotedimensioarvojen yhdistelmien perusteella. Kuvaukset ovat valinnaisia.  
 5. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

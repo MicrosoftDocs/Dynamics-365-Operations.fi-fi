@@ -59,3 +59,6 @@ Voit myös tarkistaa, milloin huoltotilauksen ajanseuranta aloitettiin ja lopete
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

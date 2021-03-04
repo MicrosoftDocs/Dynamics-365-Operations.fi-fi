@@ -51,3 +51,6 @@ Tässä menettelyssä käsitellään, miten uusi rajoituslauseke lisätään tuo
 4. Valitse Sulje.
 5. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

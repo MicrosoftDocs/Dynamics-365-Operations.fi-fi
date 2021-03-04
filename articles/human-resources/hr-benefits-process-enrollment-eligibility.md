@@ -72,3 +72,6 @@ Tässä artikkelissa kerrotaan, miten kelpoisuusprosessitulokset näytetään.
    | **Tuloksen tila** | Tämä on kelvollinen tai kelpaamaton. Tulostila ei ole käytettävissä, jos työntekijä ei täytä kelpoisuussäännön ehtoja, jos työntekijästä puuttuu pakollisia tietoja, kuten maksutiheys tai kiinteämääräinen kompensaatio, tai jos etuussuunnitelmasta puuttuu tietoja, jotka estävät työntekijöitä ilmoittautumasta. |
    | **Tulossanoma** | Ilmaisee, miksi työntekijä ei ole oikeutettu etuusjärjestelyyn tai jos oikeutussääntö on kulunut. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

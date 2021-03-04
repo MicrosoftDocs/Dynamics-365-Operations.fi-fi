@@ -514,3 +514,6 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [ER-konfiguraatioiden lataaminen Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md)
 - [Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

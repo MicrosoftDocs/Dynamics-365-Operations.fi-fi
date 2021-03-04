@@ -122,3 +122,6 @@ April kirjaa sitten maksun. Kun hän avaa **Toimittajatapahtumat**-sivun, hän n
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

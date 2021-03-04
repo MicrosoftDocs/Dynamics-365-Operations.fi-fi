@@ -63,3 +63,6 @@ Tässä menettelyssä keskitytään kanban-määrän laskentakäytännön luomis
 8. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
     * Valitse edellisessä alitehtävässä luotu käytäntö Kaiutin2016.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

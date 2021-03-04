@@ -84,3 +84,6 @@ Tuoterakennelaskentaa aloitettaessa voi m채채ritt채채 useita tietol채hteit채. N�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

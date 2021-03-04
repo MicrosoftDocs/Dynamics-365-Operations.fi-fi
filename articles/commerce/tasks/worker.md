@@ -57,3 +57,6 @@ Tässä menettelyssä kerrotaan, miten määrität työntekijästä myyntiedusta
 6. Syötä tai valitse arvo Oletusryhmä-kentässä.
 7. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

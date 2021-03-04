@@ -59,3 +59,6 @@ Tämän menettelyn avulla voi määrittää kustannusseurannan työtilan niin, e
 27. Syötä tai valitse arvo Kustannusobjektin dimensiohierarkiasolmu -kenttään.
     * Kun olet valinnut kustannusobjektin dimensiohierarkian, laajenna kustannustason dimensiohierarkia ja katsele haluamiesi kustannusten arvoja. Voit esimerkiksi laajentaa valmistuksen yleiskustannusten hierarkian, kun haluat tarkastella arvoa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

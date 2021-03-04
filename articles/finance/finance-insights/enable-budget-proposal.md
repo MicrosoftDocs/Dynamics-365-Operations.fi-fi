@@ -48,3 +48,6 @@ Tässä ohjeaiheessa kerrotaan, miten budjettiehdotustoiminto otetaan käyttöö
 
 #### <a name="privacy-notice"></a>Tietosuojatiedot
 Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

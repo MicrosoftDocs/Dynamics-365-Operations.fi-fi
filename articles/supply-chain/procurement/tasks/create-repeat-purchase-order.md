@@ -70,3 +70,6 @@ Sen sijaan, että kopioisit kokonaisen tilauksen, on tavallisempaa luoda uusi os
 4. Valitse halutun ostotilauksen rivi. Huomaa, että ostotilauksen yksittäinen tilausrivin on myös valittu.  
 5. Valitse **OK**. Uusi tilausrivi on lisätty ostotilaukseen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

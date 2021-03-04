@@ -53,3 +53,6 @@ Määritettävät maksutavat on linkitettävä kirjanpitoon tai pankkitiliin. Jo
 Palautuksen käsittelyskenaarioissa puhelinkeskus käyttää myös joitakin myyntireskontrassa määritettyjä maksutapoja. Voit määrittää maksutavat valitsemalla **Retail ja Commerce** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen palautusmenetelmät**. Tämä määritys on tehtävä, jotta palautussekit asiakkaille voidaan käsitellä. Jos asiakas maksoi tilauksen alun perin käteisellä tai sekillä, käyttäjä haluaa ehkä lähettää asiakkaalle palautusekin myyntireskontran kautta. Tässä tapauksessa puhelinkeskuksen käteis- ja sekkimaksutyypit on yhdistettävä oikeaan maksutapaan myyntireskontrassa, jotta palautuksen oikea käsittely voidaan varmistaa.
 
 Jos käyttäjä lisäksi käsittelee palautustilauksen puhelinkeskuksen käyttäjänä Commercessa mutta hän ei voi linkittää palautusta alkuperäiseen myyntiin, **Palautus**-maksutapa on määritettävä puhelinkeskuksen parametreissa. Valitse **Retail ja Commerce** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen parametrit** ja varmista sitten **Palautus**-välilehden **Maksutapa**-kentässä, että maksutapa on määritetty. Maksutapa on palautuksille käytettävä maksutapa. Yleensä se määritetään joko sekki- tai asiakastilitapana.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

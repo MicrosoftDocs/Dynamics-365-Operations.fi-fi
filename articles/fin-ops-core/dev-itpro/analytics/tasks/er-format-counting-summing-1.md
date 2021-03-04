@@ -56,3 +56,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 8. Laajenna puussa solmu "Intrastat model".
 9. Valitse puusta "Intrastat model\Intrastat (DE)"
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ Tämä menettely selittää, miten ALV-raportti luodaan ja lähetetään Saksan 
 5. Valitse Luo sähköinen verotiedosto -kentässä Kyllä.
 6. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

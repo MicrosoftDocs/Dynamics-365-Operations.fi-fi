@@ -48,3 +48,6 @@ Sähköisen raportoinnin (ER) tiedonkeruufunktioita käytetään suorittamaan la
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
 [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Sovelluksen tietoja käytetään työntekijän osaamisalueiden ja kehittymisen s
 | Workforce\_WorkerName             | Etunimi , sukunimi ja koko nimi                                                                       | |
 | Workforce\_WorkerTitle            | Nimike ja virkaikä                                                                                   | |
 | Workorce\_WorkerTrend             | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Työsolun on erityinen resurssiryhmä, jota voidaan käyttää Lean-valmistuksen
 ## <a name="save"></a>Tallenna
 1. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

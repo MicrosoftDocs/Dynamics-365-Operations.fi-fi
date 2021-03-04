@@ -62,3 +62,6 @@ Lisätietoja vaarallisten aineiden määräysten ja arvojen määrittämisestä 
 ## <a name="warehouse-management"></a>Varastonhallinta  
 
 Kun lähetystä valmistellaan varastonhallinnassa, voit tulostaa useita uusia raportteja, joissa käytetään tuotetietojen hallinnassa määritettyjä tietoja. Lisätietoja käytettävissä olevista raporteista ja niiden käyttämisestä on kohdassa [Vaarallisten aineiden kyselyt ja raportit](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

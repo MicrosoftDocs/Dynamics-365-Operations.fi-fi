@@ -57,3 +57,6 @@ Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirj
 Versioon 10.0.13 on lisätty toiminto, joka vahvistaa kirjanpidon jakotaulukon sen varmistamiseksi, että uudet kentät on määritetty oikein. Tämän toiminnon nimi on **Ota lisävahvistus asiakirjojen tiedoille käyttöön käyttämällä lähdeasiakirjan kirjanpitokehystä**. Jos haluat käyttää ominaisuutta, sinun on otettava se käyttöön **Toiminnonhallinta**-työtilan avulla. Jos haluat ottaa toiminnon käyttöön, etsi sen nimeä **Toiminnonhallinta**-sivun **Haku**-kentässä ja valitse sitten **Ota käyttöön nyt**.
 
 Lisätietoja on kohdassa [Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

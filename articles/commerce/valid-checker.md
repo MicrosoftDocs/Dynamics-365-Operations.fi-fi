@@ -78,3 +78,6 @@ Jos löydetään tarkistusvirhe, ainoa tapa sen korjaamiseksi on ottaa yhteyttä
 
 > [!NOTE]
 > Tarkistussääntöjä useamman mahdollisen tilanteen kattamiseksi lisätään tulevissa versioissa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Voit lähettää poissaoloja koskevan pyynnön ja tarkastella lomapyyntöjen til
 ## <a name="see-also"></a>Lisätietoja
 
 [Loman keskeyttäminen](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

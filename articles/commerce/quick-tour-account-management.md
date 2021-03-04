@@ -96,3 +96,6 @@ Lisätietoja tilienhallintamoduuleista ja niiden muokkaamisesta on kohdassa [Til
 
 [Ostoskorin ja maksusivun yleiskatsaus](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Lisätietoja työtilausten elinkaaritiloista ja projektin vaiheista on kohdassa 
 8. Valitse **Tallenna**.
 
 ![Työtilaustyypit](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

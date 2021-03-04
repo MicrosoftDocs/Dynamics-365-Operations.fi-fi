@@ -144,3 +144,6 @@ Toimittajamaksujen ehdotusautomaatioita varten on lisätty seuraavat tehtävät 
 | Aikataulutapahtumien kysely | Ostoreskontran maksuvirkailija, ostoreskontran keskitetty maksuvirkailija | Tämä velvollisuus antaa oikeudet näyttää maksuehdotuksen automaatioesiintymiä seuraavien oikeuksien avulla:<ul><li>Näytä ajoituksen esiintymiä</li><li>Näytä esiintymä viikoittain -näkymä</li></ul> |
 | Kohdista kyselyjä ajoitussarjoihin      | None                                                                       | Tämä velvollisuus antaa oikeudet näyttää sarjojen asetuksia ja esiintymiä seuraavien oikeuksien avulla:<ul><li>Näytä ajoituksen esiintymiä</li><li>Näytä esiintymät -luettelosivu</li><li>Näytä esiintymä viikoittain -näkymä</li></ul>|
 | Ylläpidä ajoituksen esiintymiä     | None                                                                       | Tämä velvollisuus myöntää oikeuden luoda ja ylläpitää esiintymää seuraavien oikeuksien avulla:<ul><li>Ylläpidä ajoituksen esiintymiä</li><li>Näytä esiintymä viikoittain -näkymä</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

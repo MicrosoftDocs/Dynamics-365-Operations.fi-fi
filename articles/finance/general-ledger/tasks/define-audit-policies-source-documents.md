@@ -88,3 +88,6 @@ Tässä aiheessa kuvataan, miten tarkistuskäytännön säännöt määritetää
 57. Laajenna **Liitokset**-osa.
 58. Etsi haluamasi tietue luettelosta ja valitse se.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

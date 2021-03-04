@@ -57,3 +57,6 @@ Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja,
 **Päätös:**
 
 - Kuinka monta lisäosoitekirjaa luot?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

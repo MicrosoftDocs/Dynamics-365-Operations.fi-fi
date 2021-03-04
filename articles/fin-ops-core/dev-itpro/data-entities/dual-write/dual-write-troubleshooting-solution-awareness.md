@@ -45,3 +45,6 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 *Yksikköä, jonka nimi on msdyn\_dualwriteentitymap' with namemapping='Logical', ei löytynyt kohteesta MetadataCache.*
 
 Voit korjata ongelman varmistamalla, että kaksoiskirjoitusydinratkaisu on asennettu Dataverse -järjestelmään. Kaksoiskirjoitusydinratkaisu on ratkaisutietoisuuden edellytys.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Tuloksena oleva tietueen arvo.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tallennustoiminnot](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

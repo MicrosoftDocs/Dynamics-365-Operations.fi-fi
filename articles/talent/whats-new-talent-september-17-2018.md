@@ -54,3 +54,6 @@ Ympäristöpäivitys 18 Finance and Operations -sovelluksille on nyt osa Talent-
 ## <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
 Tämä versio sisältää useita muita ohjelmavirhekorjauksia, mukaan lukien viittaukset ACA:aan, ADA:aan ja I9:een ovat nyt käytössä vain yhdysvaltalaisissa yrityksissä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

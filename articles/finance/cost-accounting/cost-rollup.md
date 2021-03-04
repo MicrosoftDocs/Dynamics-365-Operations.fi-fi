@@ -301,3 +301,6 @@ Selkeä **kohdistusten kohdistuksen** ja **kustannuksen koontikäytäntöjen** v
 -  [Kustannustason dimensiot](cost-elements.md)
 -  [Dimensiohierarkia](dimension-hierarchy.md)
 -  [Yleiskustannuslaskenta](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

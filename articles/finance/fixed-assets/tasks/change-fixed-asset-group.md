@@ -46,3 +46,6 @@ Opastuksessa käytetään USMF-demoyritystä.
 6. Valitse OK.
 7. Valitse Kyllä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

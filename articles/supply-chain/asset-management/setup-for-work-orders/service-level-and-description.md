@@ -56,3 +56,6 @@ Kun luot työtilauksen, haluat ehkä määrittää sen palvelutasot ja lisätä 
 2. Valitse **Uusi**.
 3. Syötä **Kuvaus**-kenttään kuvaus.
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

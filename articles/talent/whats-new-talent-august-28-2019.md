@@ -90,3 +90,6 @@ Lisätietoja on kohdassa [Yksinkertaistettu työntekijöiden lisääminen ja nav
 ### <a name="platform-update-29"></a>Ympäristön update 29 -päivitys
 
 Lisätietoja Platform update 29 -päivityksestä on kohdassa [Dynamics 365 for Finance and Operations platform update 29 -esiversion toiminnot (lokakuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

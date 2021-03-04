@@ -47,3 +47,6 @@ Yritys A ylläpitää useiden pienten yritysten kirjanpitotietueita. Yksi yritys
 
 [Huoltokohteiden luominen](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

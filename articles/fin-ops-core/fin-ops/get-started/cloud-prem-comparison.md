@@ -175,3 +175,6 @@ Lisätietoja paikallisissa ympäristöissä käytettävissä olevista ominaisuuk
 
 \* Paikallisessa ympäristössä PerfTimer näyttää vain asiakkaan tulokset.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

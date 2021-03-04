@@ -91,3 +91,6 @@ Tässä aiheessa suoritetaan kaksi päävaihetta:
 9. Valitse **Objekti**-valintaikkunassa objekti lisäämällä **Sähköisen laskutuksen lisäosa**.
 10. Valitse **Lisää** ja sitten **Tallenna avainsäilön muutokset**.
 11. Kopioi **Yhteenveto**-sivulla avainsäilön **DNS nimi** -arvo. Tätä arvoa käytetään palvelun RCS:ssä määrittämiseen ja sitä kutsutaan *avainsäilön URI-tunnukseksi*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

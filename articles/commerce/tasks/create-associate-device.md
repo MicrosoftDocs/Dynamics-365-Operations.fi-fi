@@ -41,3 +41,6 @@ Tässä menettelyssä kerrotaan, miten uusi laite luodaan ja liitetään kassako
 9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 10. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Kokeen voi poistaa Commercen sivustonmuodostimessa seuraavasti:
 
 ## <a name="previous-step"></a>Edellinen vaihe
 [Kokeilun suoritus ja seuranta](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Microsoft FastTrack for Dynamics 365 on asiakaspalvelu, joka auttaa asiakkaita s
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Päivitys Dynamics AX 2012:sta tai siirtyminen AX 2009:stä
 
 Jos olet asiakas, joka päivittää Microsoft Dynamics AX 2012:sta tai siirtyy Microsoft Dynamics AX 2009:stä, sinulla on ehkä oikeus pidempään kokeilujaksoon. Pyydä lisätietoja lähettämällä viesti osoitteeseen <daxcf@microsoft.com>.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

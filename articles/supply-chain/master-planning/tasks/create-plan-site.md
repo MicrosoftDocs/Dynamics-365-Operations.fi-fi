@@ -55,3 +55,6 @@ Tuotannon suunnittelija laskee materiaali- ja kapasiteettivaatimukset, jotka kos
 2. Valitse Vahvista.
 3. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -243,3 +243,6 @@ Tämän vuoksi Proseware, Inc:n on muutettava peruskonfiguraation versiota mukau
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Mukautetun muodon maksutiedostojen luonnin testaaminen
 Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Finance and Operations -istunnossa. Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti. Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

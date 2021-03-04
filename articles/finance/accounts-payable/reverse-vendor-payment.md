@@ -83,3 +83,6 @@ Jos peruutettu sekki myönnettiin asiakaspalautukselle, tapahtuu myös seuraavaa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

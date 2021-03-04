@@ -74,3 +74,6 @@ Työntekijän tietosivun **Alias**, **Täydellinen käyttäjätunnus**- ja **Ulk
 [Vähittäismyynnin toimintoprofiilin luominen](retail-functionality-profile.md)
 
 [Työntekijän konfiguroiminen](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

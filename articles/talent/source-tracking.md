@@ -102,3 +102,6 @@ Voit välttää käyttöliittymän (UI) negatiivista vaikutusta muokkaamalla tai
 - **Muu**
 
 Voit laajentaa sen sijaan **TalentSource**-valintalistaa lisätäksesi muita lähdetyyppejä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

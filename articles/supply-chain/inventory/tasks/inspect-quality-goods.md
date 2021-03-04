@@ -51,3 +51,6 @@ Tässä ohjeaiheessa kerrotaan, kuinka laatutilaus käsitellään. Voit suoritta
 4. Valitse **OK**.
 5. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

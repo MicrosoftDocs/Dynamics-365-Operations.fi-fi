@@ -97,3 +97,6 @@ Sinun on käsiteltävä joitakin muutoksia, jotta ne olisivat aktiivisia.
 - [Elämäntapahtumien kelpoisuuden käsittely](hr-benefits-process-life-event-eligibility.md)
 - [Maksumuutosten käsittely](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

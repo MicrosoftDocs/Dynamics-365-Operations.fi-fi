@@ -346,3 +346,6 @@ Jos ennalta määritetyn dimension jäsenen Sähkö-kohdistusperuste on määrit
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kohdistusperusteet](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Kun olet luonut ylläpitopyyntöjä, voit helposti muuntaa ne työtilauksiksi. T
 
     ![Uuden työtilauksen avaaminen](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

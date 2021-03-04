@@ -57,3 +57,6 @@ Ratkaise sellaisten ER-mallien ongelmat, joita et voi käyttää, suorittamalla 
 Samankaltainen ongelma voi ilmetä, jos siirrät sovellusinstanssin toiseen sijaintiin, jota on käytetty siirtokohteena useammin kuin kerran ja jossa Blob-säilö sisältää jo ER-mallitiedostoja.
 
 Koska ER-muodon määrityksiä voi olla useita, tämä prosessi voi kestää kauan. Tämän vuoksi on suositeltavaa käyttää [ER-mallien varmuuskopiointi](er-backup-storage-templates.md) -tilaa ja palauttaa automaattisesti mallit, joissa on rikkinäisiä viittauksia.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

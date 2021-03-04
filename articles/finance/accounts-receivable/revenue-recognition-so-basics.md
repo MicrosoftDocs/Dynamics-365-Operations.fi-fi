@@ -97,3 +97,6 @@ Kun lasku on luotu, tuottokirjauksen painikkeet **Tuottohinnan kohdistus**, **Ko
 Odotettu tuoton kirjausaikataulu poistetaan ja korvataan lopullisella tuottokirjausaikataululla. Tuottoaikataulun tietoja ylläpidetään kunkin myyntitilausrivin osalta, ja niitä käytetään siirretyn tuoton vapauttamiseen todelliseksi tuotoksi, kun sopimusvelvoitteet on täytetty.
 
 [![Lopullinen tuoton kirjausaikataulu](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

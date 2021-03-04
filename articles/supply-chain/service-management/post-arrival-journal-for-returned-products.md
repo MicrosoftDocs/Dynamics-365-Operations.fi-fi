@@ -58,3 +58,6 @@ Palautetut nimikkeet rekisteröidään varastoon kirjauskansion kirjaamisen jäl
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Haluat saada työpaikkailmoituksesi mahdollisimman monen pätevän ehdokkaan nä
 
 > [!NOTE]
 > Microsoft ja Attract eivät ole mukana luomassa ja ylläpitämässä näitä arvoja. On omalla vastuullasi pitää ne ajan tasalla Attractissa ja selvittää mahdolliset ongelmat Broadbeanin kanssa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -169,3 +169,6 @@ Muokatun mallin avulla luodaan valitulle nimikkeelle vapaatekstilaskun raportti.
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
 
 [Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

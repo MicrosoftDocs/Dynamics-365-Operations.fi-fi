@@ -49,3 +49,6 @@ Kuljetuksen tila yhdistetään rahdinkuljettajan tilaan seuraavasti:
 1. Valitse kuljetuksen tilakoodi, jonka haluat määrittää valitun lähetyksen rahdinkuljettajan koodille.
 1. Anna lähetyksen rahdinkuljettajan käyttämä ulkoinen koodi.
 1. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

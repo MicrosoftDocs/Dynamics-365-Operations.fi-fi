@@ -153,3 +153,6 @@ Tässä välilehdessä korostetaan valitun toimitusvaihtoehdon vaikutusta. Jos v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

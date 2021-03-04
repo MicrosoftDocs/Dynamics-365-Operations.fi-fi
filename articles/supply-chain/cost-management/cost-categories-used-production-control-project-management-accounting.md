@@ -44,3 +44,6 @@ Joitakin tuotantotyön tyyppejä voidaan käyttää projektin aika-arvioinneissa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

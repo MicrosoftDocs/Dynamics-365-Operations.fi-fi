@@ -54,3 +54,6 @@ Kustannusryhmälle voi määrittää kustannusryhmän tyypin sekä käyttäytymi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

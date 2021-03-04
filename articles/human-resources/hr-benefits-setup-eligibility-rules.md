@@ -176,3 +176,6 @@ Ohjelmat ovat joukko etuussuunnitelmia, joilla on yhteiset kelpoisuussäännöt.
    | **Oikeutussäännöt** | Valitse etuuksia koskevaan ohjelmaan sovellettavat kelpoisuussäännöt. Voit määrittää kelpoisuussäännöt tämän sivun **Kelpoisuussäännöt**-välilehdessä. |
    
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

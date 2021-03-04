@@ -64,3 +64,6 @@ Tämän tallenteen luomisessa käytetty demotietojen yritys on USRT. Tämä tall
 5. Valitse Vie.
 6. Valitse PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

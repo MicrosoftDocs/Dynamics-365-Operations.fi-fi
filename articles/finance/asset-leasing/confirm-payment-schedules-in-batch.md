@@ -42,3 +42,6 @@ Voit vahvistaa useita maksuaikatauluja noudattamalla seuraavia ohjeita.
     - Vahvista kaikki kirjat ottamalla käyttöön **Kaikille kirjoille** -parametri.
 
 Juuri vahvistettujen kirjojen tiedot näkyvät **Vahvistetut kirjat** -sivulla. Kun maksuaikataulut on vahvistettu, alkuperäiset tuloutuksen kirjauskansioviennit voidaan kirjata vuokrauksille.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

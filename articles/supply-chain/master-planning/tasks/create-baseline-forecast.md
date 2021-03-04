@@ -82,3 +82,6 @@ Tuotannon suunnittelija voi luoda perusennusteen aikasarjan ennustemallien avull
 5. Valitse Ennusteen rivitiedot.
     * Tällä sivulla näkyvät tarkkuusarvot, aiempi kysyntä ja ennuste. Voit muuttaa myös ennustetta.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

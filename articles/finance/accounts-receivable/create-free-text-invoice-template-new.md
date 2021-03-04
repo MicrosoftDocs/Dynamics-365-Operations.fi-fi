@@ -68,3 +68,6 @@ Tässä esittelyssä käytetään USMF-demoyritystä. Menettely on tarkoitettu k
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Tallenna vapaatekstilaskumalli
 Voit myös tallentaa aiemman vapaatekstilaskun mallina. Kun valitset Tallenna malliin Lasku-välilehdellä, anna sille nimi ja liitä mallin kuvaus. Jos mallin nimi on jo käytössä, näyttöön tulee ilmoitus, että malli on jo olemassa. Voit kuitenkin napsauttaa Ok ja korvata sen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Seuraavassa kuvassa on graafinen yleiskatsaus eri projekteista, jotka on luotu *
 
 ![Kuva 6](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

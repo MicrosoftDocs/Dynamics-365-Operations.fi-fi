@@ -154,3 +154,6 @@ Seuraavia sisällön tärkeitä dimensioita käytetään koostemittojen ositussu
 | Päivämäärät                  | Päivämäärät, vuosisiirtymä                                    |
 
 Kuluvan kalenterivuoden tiedot näkyvät oletusarvoisesti sisällössä. Voit kuitenkin muuttaa päivämääräsuodatinta raportin suodatinosassa. Voit muuttaa myös yrityssuodatinta.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Voit lisätä osaston osastohierarkiaan seuraavasti:
 
 ## <a name="steps-for-creating-a-department"></a>Osaston luontiohjeet
 Uuden osaston luomisen vaiheittaiset ohjeet löytyvät [Uusien osastojen määrittäminen](../fin-and-ops/hr/tasks/define-new-departments.md) -artikkelissa. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

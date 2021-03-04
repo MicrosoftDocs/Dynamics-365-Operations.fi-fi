@@ -44,3 +44,6 @@ Kun olet löytänyt ristiriidan, sinun on ehkä otettava yhteys toimittajaan, jo
 Lisätietoja on kohdassa [Poikkeusten tutkiminen ja selvittäminen](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

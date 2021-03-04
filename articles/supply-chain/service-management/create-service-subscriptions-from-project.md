@@ -55,3 +55,6 @@ Voit nyt luoda ylläpitosopimustapahtumia ylläpitosopimukselle.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Voit käyttää tässä arvioinnissa valmista **Parhaat tuotteet**-raporttia, jo
 - **Myymälän hallinta** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit** &gt; **Suurimpien tuotteiden raportti**
 - **Luokka- ja tuotehallinta** -työtila &gt; **Retail ja Commerce** &gt; **Tuotteet ja luokat** &gt; **Myymälän hallinta** &gt; **Raportti** &gt; **Parhaat tuotteet -raportti**
 - **Kyselyt ja raportit** -osio &gt; **Retail ja Commerce** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Suurimpien tuotteiden raportti**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

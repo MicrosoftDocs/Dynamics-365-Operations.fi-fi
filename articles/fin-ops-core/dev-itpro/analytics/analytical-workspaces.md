@@ -45,3 +45,6 @@ ms.locfileid: "4683135"
 - [Toimittajan maksujen työtila](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Varaston suorituskyvyn Power BI -sisältö](warehouse-power-bi-content.md)
 - [Työvoiman mittarien Power BI -sisältö](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

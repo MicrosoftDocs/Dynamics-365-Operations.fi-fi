@@ -113,3 +113,6 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 11. Sulje sivu. 
 
 Kun tämä malli on arvioitava käyttämällä toisen version sovelluksen metatietoja, rekisteröi toinen yhdistetty sovellus, määritä se tähän mallin yhdistämismääritykseen ja vahvista se käyttämällä uusia metatietoja.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

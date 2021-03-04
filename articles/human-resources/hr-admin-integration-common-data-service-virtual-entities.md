@@ -216,3 +216,6 @@ Esiin tulevassa ruudussa näkyy prosessin viimeksi suoritetut tulokset. Voit tar
 [Ulkoisten tietolähteiden tietoja sisältävien virtuaaliyksiköiden luominen ja muokkaaminen](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Mitä Power Apps -portaalit ovat?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Yleiskatsaus sovellusten luonnista Power Appsissa](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

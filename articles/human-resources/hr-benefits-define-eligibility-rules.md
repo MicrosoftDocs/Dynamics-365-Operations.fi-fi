@@ -69,3 +69,6 @@ Tämän tallenteen luomisessa käytetty demotietojen yritys on USMF.
 10. Valitse Tallenna.
 11. Sulje lomake.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

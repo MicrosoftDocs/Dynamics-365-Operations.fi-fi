@@ -146,3 +146,6 @@ Työntekijät voivat avata työhön liitetyn asiakirjan valitsemalla **Ohjeet**.
 1. Työntekijä opettelee tehtävän toimimalla oppaan mukaisesti.
 
 Lisätietoja HoloLens-oppaiden luonnista, määrittämisestä ja käyttämisestä on kohdassa [Yhdistetyn todellisuuden oppaiden tuottaminen tuotannon työntekijöille](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Seuraavassa kuvassa on esimerkki **Aktiiviset työtilauksen ylläpitotyöt** -lu
 
 Lyhyt kuvaus **Aktiiviset työtilausten ylläpitotyöt** -luettelosivun painikkeista on kohdassa [Työtilausten esittely](../work-orders/introduction-to-work-orders.md), jossa kuvataan samanlaiset painikkeet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

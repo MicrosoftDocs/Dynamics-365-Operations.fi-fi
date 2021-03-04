@@ -105,3 +105,6 @@ Kun **NumSeq**-tietolähde kutsutaan, se palauttaa juuri luodun **Gene\_1**-nume
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Muut (liiketoiminnan toimialuekohtaiset) toiminnot](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

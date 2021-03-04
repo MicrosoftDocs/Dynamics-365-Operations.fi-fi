@@ -236,3 +236,5 @@ Jos käytät ehdollisia kysymyksiä kyselylomakkeen kysymyshierarkian luomiseen,
 Yritys tarjoaa asiakkailleen sekä nimikkeitä että palveluita. Tällaisissa tapauksissa käy usein niin, että asiakkaat saattavat ostaa pelkästään tuotteita tai palveluita tai molempia. Ku yritys siis lähettää asiakastyytyväisyyskyselyn, kyselylomakkeeseen lisätään ehdollinen rakenne, jolloin vain palveluita ostaneiden asiakkaiden ei tarvitse vastata nimikkeitä koskeviin kysymyksiin. 
 
 Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja valitsee kysymykseen 1 vastaksen A, seuraavaksi esitetään kysymys 2. Mutta jos vastaaja valitsee kysymykseen 1 vastauksen B, seuraavaksi esitetään kysymys 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Esimerkissä käytetty muoto on ISO20022 Tilisiirto, mutta voit käyttää mitä
 21. Kirjoita arvo Aihe-kenttään.
 22. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

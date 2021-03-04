@@ -209,3 +209,6 @@ Luettelo-, luokka-, työntekijä- ja asiakaskuvat, joita on käytettävä offlin
 5. Noudata samaa prosessia muille yksiköille, kuten Luokka, Työntekijä ja Asiakas.
 
     [![Offline-kuva](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

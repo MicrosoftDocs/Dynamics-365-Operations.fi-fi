@@ -47,3 +47,6 @@ Kuljetusmenetelmä luodaan seuraavasti:
 1. Luo uusi kuljetusmenetelmä valitsemalla **Uusi**.
 1. Anna kuljetusmenetelmälle yksilöivä tunnus ja kuvaava nimi.
 1. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

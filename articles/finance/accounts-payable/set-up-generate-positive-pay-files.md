@@ -165,3 +165,6 @@ Jos haluat muuttaa Positive pay -tiedosto, voit kutsua sen takaisin. Valitse **P
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

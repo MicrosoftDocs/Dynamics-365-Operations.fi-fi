@@ -105,3 +105,6 @@ Mahdollisuus palauttaa kirjauskansio työn kulussa, jonka tila on "peruuttamaton
 
 ## <a name="delete-journal-lines"></a>Poista kirjauskansion rivit
 Mahdollisuus poistaa kaikki kirjauskansion rivit nopeasti on otettu käyttöön kirjauskansion kohdassa **Toiminnot** > **Poista kirjauskansion rivit**. Voit ottaa tämän toiminnon käyttöön valitsemalla **Ominaisuuksien hallinta** -sivulla **Poista kirjauskansion suorituskyvyn optimoinnit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

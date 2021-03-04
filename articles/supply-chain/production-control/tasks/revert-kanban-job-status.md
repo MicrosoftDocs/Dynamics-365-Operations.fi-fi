@@ -55,3 +55,6 @@ Tässä menettelyssä käsitellään virheellisen kanban-työtilan palauttamista
     * Valitse sama työ.  
     * Huomaa, että kanban-työn työtilaksi on palautettu Suunniteltu, minkä osoituksena on tyhjä kanban-kuvake.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

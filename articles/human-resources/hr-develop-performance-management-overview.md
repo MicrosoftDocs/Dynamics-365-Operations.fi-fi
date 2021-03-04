@@ -163,3 +163,5 @@ Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioid
 ### <a name="review-types"></a>Arviointityypit
 
 Suoritustason arviointityyppien avulla voit hallita arvioinnin toimintaa. Voit ottaa käyttöön arvioinnin työnkulun tai poistaa sen käytöstä. Jos arvioinnissa ei käytetä työnkulkua, voit määrittää arvioinnin luomisen yhteydessä käytettävän oletustilan. Voit myös määrittää, vaaditaanko arvioinnissa työntekijän, esimiehen vai molempien kuittaus.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

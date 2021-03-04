@@ -109,3 +109,6 @@ Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuot
 [Ostoruutumoduuli](add-buy-box.md)
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

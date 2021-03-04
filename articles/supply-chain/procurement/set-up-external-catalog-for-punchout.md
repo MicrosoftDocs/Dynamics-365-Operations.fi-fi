@@ -114,3 +114,5 @@ Ulkoista toimittajan tuoteluetteloa ei voi poistaa, jos tuotetta on pyydetty ulk
 
 - [Ostojen cXML-parannukset](purchasing-cxml-enhancements.md)
 - [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

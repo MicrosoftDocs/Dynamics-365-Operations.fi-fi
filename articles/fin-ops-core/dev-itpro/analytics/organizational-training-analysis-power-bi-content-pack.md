@@ -57,3 +57,6 @@ Sovelluksen tietoja käytetään organisaation koulutuksen sisältöpaketin rapo
 | Training\_Position        | Toimi, nimike ja kokopäiväistä vastaavat (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Etunimi , sukunimi ja koko nimi                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Nimike ja virkaikä                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

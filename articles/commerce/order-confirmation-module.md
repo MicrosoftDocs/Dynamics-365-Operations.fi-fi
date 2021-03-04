@@ -87,3 +87,6 @@ Voit lisätä tilausvahvistusmoduulin uudelle sivulle ja määrittää pakollise
 [Noudon tiedot -moduuli](pickup-info-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

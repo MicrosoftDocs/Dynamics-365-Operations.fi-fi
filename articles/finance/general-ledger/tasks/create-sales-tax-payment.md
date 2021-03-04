@@ -37,3 +37,6 @@ Tilitys- ja arvonlisäveron kirjaustyö tilittävät arvonlisäverosaldot arvonl
 5. Syötä **Tapahtumapäivä**-kenttään päivämäärä.
 6. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Tässä ohjeessa kerrotaan, miten voit luoda tietuemallin, jolloin usein käytet
 13. Valitse **OK**.
 14. Valitse **Sulje**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä a
 12. Valitse **OK**.
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua 
 
 - Dynamics 365 Sales -versio 1612 (8.2.1.207) (DB 8.2.1.207) online tai uudempi versio
 - Dynamics 365 Salesin Prospektista käteiseksi -ratkaisun versio 1.15.0.0 tai uudempi versio. Ratkaisun voi ladata AppSourcesta. [Lataa Dynamics 365, Prospektista käteiseksi](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

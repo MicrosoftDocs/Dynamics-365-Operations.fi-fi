@@ -31,3 +31,6 @@ Muiden kulujen tavoin kuljetuksesta syntyviin kuluihin on liitettävä kulukoodi
 Valitsemalla **Kuljetuksenhallinta > Määritys > Luokitus > Muut kulut** voit määrittää ehdot, joiden mukaan määritetään, milloin **kulujen koodia** käytetään kuluun.
 
 Kullekin sopivalle **Kulumoduuli**-asetukselle (*Asiakas* ja *Toimittaja*) on oltava vähintään yksi määritys, jossa **Muun kulun tyyppi** -asetuksena on *Ei mitään*. Jos tämä puuttuu, muuta kulua *ei* lisätä tilaukseen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

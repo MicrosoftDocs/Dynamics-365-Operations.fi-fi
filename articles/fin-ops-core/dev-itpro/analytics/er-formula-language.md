@@ -174,3 +174,6 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
 [Sähköisen raportoinnin toimintoluettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

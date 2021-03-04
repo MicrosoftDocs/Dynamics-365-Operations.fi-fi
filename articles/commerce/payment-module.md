@@ -118,3 +118,6 @@ Jos sekä Adyen- että PayPal-maksuyhdistimiä tarvitaan, lisää molemmat moduu
 [Dynamics 365 -maksuyhdistin PayPalia varten](paypal.md)
 
 [Asiakkaan vahva todennus Adyen-yhdistimellä](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

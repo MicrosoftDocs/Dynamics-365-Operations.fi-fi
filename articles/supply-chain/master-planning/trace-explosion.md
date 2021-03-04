@@ -48,3 +48,6 @@ Voit tarkastella tietoja tulevasta ja valitun tilauksen toiminnoista. Jäljityst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

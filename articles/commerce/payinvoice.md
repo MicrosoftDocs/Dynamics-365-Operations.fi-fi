@@ -45,3 +45,6 @@ Näiden ominaisuuksien käyttöönottamiseksi myymälöiden toimintoprofiili on 
 
 > [!NOTE]
 > Osittaisten summien maksua tai selvitystä ei vielä tueta.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

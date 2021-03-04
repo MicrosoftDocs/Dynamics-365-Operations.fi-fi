@@ -97,3 +97,6 @@ Seuraavassa esimerkissä näkyy, miten voit saada luettelon yksilöivistä asiak
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Keskeytettyä tapahtumaa voi jatkaa nopeasti ja kätevästi lukemalla viivakoodi
 ### <a name="void-a-suspended-transaction"></a>Keskeytetyn tapahtuman mitätöinti
 
 Voit mitätöidä keskeytetyt tapahtumat joko jatkamalla tapahtumaa ja suorittamalla sitten **Mitätöi tapahtuma** -toiminnon tai valitsemalla tapahtuman **Jatka tapahtumaa** -luettelossa ja valitsemalla sitten sovelluspalkissa **Mitätön**. Myymälä voidaan määrittää myös pyytämään käyttäjät mitätöimään keskeytetyt tapahtumat vuoron sulkemisen yhteydessä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

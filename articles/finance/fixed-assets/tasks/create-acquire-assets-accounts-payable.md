@@ -56,3 +56,6 @@ Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hanki
 17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 18. Valitse **Kirjaa**. Käyttöomaisuus luodaan ja hankitaan, kun lasku on kirjattu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

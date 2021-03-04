@@ -66,3 +66,6 @@ Tällä asetuksella voi vahvistaa, että täyden kuorman tai osakuorman sisält�
 
 1. Valitse **Varastonhallinta** \> **Kuormat** \> **Kuljetuksen kuormat**.
 2. Valitse toimintoruudun **Lähetä ja vastaanota** -välilehden **Vahvista**-ryhmässä **Kuljetus**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

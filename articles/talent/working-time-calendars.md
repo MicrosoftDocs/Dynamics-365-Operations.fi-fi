@@ -56,3 +56,6 @@ Voit määrittää kalenterin seuraavien ohjeiden mukaisesti:
 10. Voit määrittää työntekijöille kalenterin valitsemalla **Määritä työntekijöille** toimintoruudussa. Valitse työntekijät, joille haluat määrittää tämän kalenterin, ja napsauta sitten **Määritä**.
 
 Työntekijöillä ei tarvitse välttämättä olla määritettyjä kalenterita. Jos työaikakalenteri on määritetty, vapaapäivät suljetaan automaattisesti pois pyynnöstä. Tuntien tai päivien määrät vastaavat kalenterissa määritettyjä oletustyöaikoja. Jos työntekijälle ei ole määritetty kalenteria, kaikki päivät ovat käytettävissä vapaa-ajalle eikä vapaa-ajan määrä ole pyynnön oletusarvo. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

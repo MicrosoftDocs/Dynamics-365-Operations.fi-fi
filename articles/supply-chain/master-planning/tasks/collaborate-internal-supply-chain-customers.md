@@ -43,3 +43,6 @@ Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka 
 8. Laajenna Ylöspäin suuntautuvan kysynnän tiedot -osa.
     * Tässä osassa näytetään tietoja kysynnän täyttämisestä. Voit joutua odottamaan pääsuunnittelun valmistumista toimittajayrityksessä, ennen kuin näet lisätietoja tässä.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

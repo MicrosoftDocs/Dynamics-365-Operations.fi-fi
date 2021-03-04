@@ -81,3 +81,6 @@ Luodessasi uuden huoltotilauksen huoltosopimukseen, johon palvelutasosopimus on 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

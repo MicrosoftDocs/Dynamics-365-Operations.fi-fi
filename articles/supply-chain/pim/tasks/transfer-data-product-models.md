@@ -37,3 +37,6 @@ Tuotemääritysmallin tietojen vieminen edellyttää, että ainakin yksi tuotema
 5. Valitse Vie tuotemalli.
     * Lataustoiminto vaihtelee selaimen ja määritettyjen suojausasetusten mukaan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

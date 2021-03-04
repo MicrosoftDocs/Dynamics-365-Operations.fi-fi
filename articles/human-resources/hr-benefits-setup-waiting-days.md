@@ -42,3 +42,6 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat ku
    | **Päivä** | Kuukauden päivä, jolloin järjestelmä määrittää odotusajan päivämääräksi. |
    
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md)
 - [Ohjelmiston elinkaarikäytäntö ja paikalliset versiot](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

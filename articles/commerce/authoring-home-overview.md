@@ -122,3 +122,6 @@ Kun muokkaustyökalu on ladattu, voit palata muokkaussivulle valitsemalla **Aloi
 [Sivuston hakukoneoptimointia (SEO) koskevia tietoja](search-engine-optimization-considerations.md)
 
 [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

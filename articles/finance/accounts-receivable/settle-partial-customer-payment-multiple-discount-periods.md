@@ -98,3 +98,6 @@ Laskun saldo on nyt 0,00. Arnie tarkastelee tietoja **Asiakastapahtumat**-sivull
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

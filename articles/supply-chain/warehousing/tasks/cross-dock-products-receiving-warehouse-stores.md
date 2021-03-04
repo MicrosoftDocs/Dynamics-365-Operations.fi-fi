@@ -49,3 +49,6 @@ Tässä menettelyssä esitellään, miten cross docking luodaan ja miten sitä k
 15. Etsi ja valitse luettelosta tuotteet vastaanottava varasto
 16. Valitse Tilaus, kun haluat tarkastella valitussa varastossa luotuja tilauksia
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

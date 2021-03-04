@@ -174,3 +174,6 @@ Laskelman kirjaamistoimintoon on tehty muita taustajärjestelmän parannuksia, j
 
     - Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**. Valitse sitten **Kirjaus**-välilehdellä **Varastopäivitys**-pikavälilehden **Erittelytaso**-kentässä **Yhteenveto**.
     - Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**. Aseta sitten **Kirjaus**-välilehden **Koostaminen**-pikavälilehdessä **Tositetapahtumat**-asetukseksi **Kyllä**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

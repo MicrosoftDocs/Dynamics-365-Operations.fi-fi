@@ -48,3 +48,6 @@ Tämä on kolmas viidestä tehtävästä, joilla esitellään toimittajamaksujen
 10. Syötä Maksutili-kenttään arvot DEMF OPER.
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

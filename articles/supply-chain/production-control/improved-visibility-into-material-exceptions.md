@@ -67,3 +67,6 @@ Kun ruutu on valittu, kun **Kaikki tuotantoaallot** -sivu avautuu. Tämä sivu s
 **Avoin varastotyö, joka vaatii huomiota** -ruudussa on näkyvissä tuoterakenne- ja reseptirivit, jotka on vapautettu varastoon käsittelemättömänä työnä ja joiden raaka-aineen päivämäärä on sama tai aiempi kuin työtilan päivämäärä. Lisäksi sen toimintoresurssin on kulutettava rivit, joka käyttää työtilan suodatinta.
 
 Kun ruutu on valittu, kun **Kaikki työ** -sivu avautuu. Tämä sivu suodatetaan niiden avoimien työn otsikoiden määrällä, joissa on ruudun ehdot täyttäviä vapautettujen tuoterakenne- ja kaavarivien työrivejä. Voit käsitellä työn manuaalisesti **Kaikki työ** -sivulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

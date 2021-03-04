@@ -102,3 +102,6 @@ Jos sinulla on vaikeuksia julkaista työ Broadbeanissa, yritä seuraavia vaiheit
 [Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
 [Broadbean-integroinnin ottaminen käyttöön Microsoft Dynamics 365 Talent – Attractissa](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

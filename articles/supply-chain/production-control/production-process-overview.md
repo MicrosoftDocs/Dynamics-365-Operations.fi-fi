@@ -88,3 +88,6 @@ Seuraavat tuotannon elinkaaren vaiheet voivat tapahtua kaikille tilaustyypeille,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

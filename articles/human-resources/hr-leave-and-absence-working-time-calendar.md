@@ -75,3 +75,6 @@ Jos olet ottanut loma- ja poissaolopäivän korjausten esikatselutoiminnon käyt
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Määritä loman ja poissaolon tyypit](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

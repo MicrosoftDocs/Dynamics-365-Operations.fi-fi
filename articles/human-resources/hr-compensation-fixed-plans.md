@@ -98,3 +98,6 @@ Voit nyt määrittää työntekijän kiinteään kompensaatiosuunnitelmaan. Avaa
 
 Järjestelmä tarkistaa, että se kompensaatiosumma, joka on eritelty luokan tai tyypin kompensaatiosuunnitelmassa, on vähimmäis- ja enimmäisviitepisteiden väilllä, työntekijän työn annetulla kompensaatiotasolla. Jos korvaussumma on sallitun alueen ulkopuolella, varoitus tai virhesanoma tulee näkyviin, joka on määritetty kiinteän kompensaatiosuunnitelman toleranssitason mukaisesti.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

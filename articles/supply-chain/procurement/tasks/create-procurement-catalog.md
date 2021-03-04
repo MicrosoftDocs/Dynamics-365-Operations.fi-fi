@@ -66,3 +66,6 @@ Tässä ohjeaiheessa kerrotaan, miten voit luoda hankintaluettelon. Yleensä han
 7. Valitse **Lisää riveihin**.
 8. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

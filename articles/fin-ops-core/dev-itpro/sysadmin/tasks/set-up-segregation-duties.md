@@ -40,3 +40,6 @@ Voit määrittää sääntöjä erottamaan tehtävät, joilla on oltava eri käy
 12. Kirjoita **Suojauksen mitätöinti** -kenttään arvo. Anna kuvaus toiminnoista, joilla lievennät turvallisuusriskiä. Voit lieventää riskiä esimerkiksi arvioimalla prosessin tarkasti, suorittamalla esimiestason arvioinnin kerran kuukaudessa tai jakamalla resurssit muiden osastojen kanssa.     
 13. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

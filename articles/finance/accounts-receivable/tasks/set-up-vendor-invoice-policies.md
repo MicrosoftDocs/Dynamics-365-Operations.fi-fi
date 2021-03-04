@@ -73,3 +73,6 @@ T채ss채 ohjeaiheessa kerrotaan, kuinka voit m채채ritt채채 toimittajan laskutusk�
 16. Valitse **OK**.
 17. Palaa kotisivulle sulkemalla sivut.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

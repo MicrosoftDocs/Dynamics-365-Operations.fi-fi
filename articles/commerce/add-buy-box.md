@@ -136,3 +136,6 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
 
 [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

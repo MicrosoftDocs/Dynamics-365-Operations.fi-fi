@@ -78,3 +78,6 @@ Kun työtilausten kulutus on kirjattu, voit tulostaa työtilauksen kulutusraport
 >[!NOTE]
 >Voit myös luoda [työtilausraportin](../work-orders/work-order-report.md), joka sisältää enemmän työtilaustietoja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

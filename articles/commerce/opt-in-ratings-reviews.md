@@ -64,3 +64,6 @@ Voit ottaa luokitukset ja arvostelut käyttöön sivustossa seuraavasti.
 [Tuoteluokitusten synkronoiminen Dynamics 365 Commerceissa](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Seuraavat PowerBI.com-ratkaisut ovat saatavilla [Microsoft AppSourcesta](https:/
 - Kustannushintojen hallinta
 - [Taloudellinen suorituskyky](financial-performance-power-bi-content-pack.md)
 - [Vähittäismyyntikanavan suorituskyky ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

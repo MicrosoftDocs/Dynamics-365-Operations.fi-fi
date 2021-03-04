@@ -59,3 +59,6 @@ Seuraavassa menettelyssä kuvataan, miten luot kanban-säännön, joka sisältä
     * Huomaa, että kanbanilla on kaksi tuotantovirran prosessityötä. Ensimmäinen on SpeakerAssemblyAndPolish ja toinen SpeakerTestAndPackaging.  
     * Tämä on viimeinen vaihe!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

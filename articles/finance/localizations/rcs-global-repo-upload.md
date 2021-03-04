@@ -98,3 +98,6 @@ Määritysversio poistetaan ja vahvistusviesti näytetään.
 > [!NOTE]
 > Vain määritykset luonut määrityspalvelu voi poistaa niitä. Jos määritys on jaettu toisen organisaation kanssa, määrityksen jakaminen on peruutettava ennen poistamista.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

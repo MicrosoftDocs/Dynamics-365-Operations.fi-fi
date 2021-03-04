@@ -53,3 +53,6 @@ Lisätietoja on seuraavissa aiheissa:
 [Luo pankin limiittisopimus remburssia varten](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

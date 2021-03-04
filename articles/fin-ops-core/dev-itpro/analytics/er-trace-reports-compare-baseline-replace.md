@@ -207,3 +207,6 @@ Voit tuoda perusriviasetukset Microsoft SharePoint Serveriin tallennetusta XML-t
 
 - [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md)
 - [Tehtävän tallennustoiminnon resurssit](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -180,3 +180,6 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 
 [Valitse tietojen integraatioteknologia](hr-admin-integration-choose-technology.md)</br>
 [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

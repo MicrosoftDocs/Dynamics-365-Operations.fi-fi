@@ -155,3 +155,6 @@ Valitse yritys, joka on koottujen tietojen lähde ja valitse sääntö, jota hal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

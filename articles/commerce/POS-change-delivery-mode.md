@@ -47,3 +47,6 @@ Kun olet valinnut uuden toimitustilan, näkyviin tulee tapahtumasivu. Voit tarki
 [Puhelinkeskustilausten luominen](tasks/create-call-center-orders.md)
 
 [Tapahtumasähköpostien mukauttaminen toimitustilan mukaan](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

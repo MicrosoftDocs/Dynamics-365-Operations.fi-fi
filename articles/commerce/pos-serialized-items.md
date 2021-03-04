@@ -95,3 +95,6 @@ Jotta tämä vahvistus voidaan ottaa käyttöön edellytyksenä, seuraavat työt
 [Myyntipisteen saapuva varastotoiminto](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Myyntipisteen lähtevä varastotoiminto](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -155,3 +155,6 @@ Tällä hetkellä julkaisuryhmät-ominaisuus tukee vain verkkosivuston sisältö
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Sivuston selauksen mukauttaminen](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Tässä aiheessa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanp
 [Huoltosopimusten laatiminen ja luominen – yleiskatsaus](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

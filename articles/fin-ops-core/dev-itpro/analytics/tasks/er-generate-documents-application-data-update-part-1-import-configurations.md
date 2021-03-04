@@ -75,3 +75,6 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
     * Tarkista Intrastat-raportin luonnissa käytettävän muodon rakenne. Ota huomioon, että se on määritetty luomaan XML-tiedosto niin, että tiedot täytetään lähtevän asiakirjan juurinimikkeeseen perustuvasta tietomallista. Tarkista, että luodun tiedoston nimi on määritetty käyttäjän valintanäytössä (tässä käytetään fn-tietolähdettä).   
 30. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

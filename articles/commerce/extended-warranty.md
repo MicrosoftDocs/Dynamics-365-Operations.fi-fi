@@ -239,3 +239,6 @@ Takuu on palvelu, joka koskee tiettyä yksilöityä tuotetta. Dynamics 365:n tuo
 [Valikoimien määrittäminen](set-up-assortments.md)
 
 [Numerosarjojen yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

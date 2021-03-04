@@ -167,3 +167,6 @@ ms.locfileid: "4693566"
 [FastTrack for Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) -keskustelut keskittyvät teknisiin näkemyksiin ja parhaisiin käytäntöihin, jotka tarjoavat asiakkaille ja kumppaneille tarkkaa liiketoiminta-aluekohtaista tietoa.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

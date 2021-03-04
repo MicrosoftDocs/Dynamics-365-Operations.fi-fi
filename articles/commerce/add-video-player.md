@@ -106,3 +106,6 @@ Voit lisätä videotoistinmoduulin uudelle sivulle ja määrittää pakolliset o
 [Tekstilohkomoduuli](add-content-rich-block.md)
 
 [Sisältölohkomoduuli](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

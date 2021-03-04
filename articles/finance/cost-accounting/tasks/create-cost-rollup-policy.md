@@ -68,3 +68,6 @@ Tässä menettelyssä näytetään, miten kustannusten koontikäytäntö ja käy
     * Jatka, kunnes kaikkien kustannuspaikkojen ja niiden vastaavien toissijaisten kustannustasojen vastaavuus on määritetty.  
 16. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

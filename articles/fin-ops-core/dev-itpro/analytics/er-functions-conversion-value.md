@@ -63,3 +63,6 @@ Pilkkuja ja pisteitä (.) pidetään desimaalierottimina. Alussa olevaa tavuviiv
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tyypin muuntamisen toiminnot](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

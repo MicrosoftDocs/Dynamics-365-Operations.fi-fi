@@ -53,3 +53,6 @@ Voit luoda tietyn budjettimallin ja dimensioarvojen alustavat budjettitapahtumat
 19. Valitse Päivitä.
     * Voit tarkastella päivityksen tuloksia valitsemalla sinisessä palkissa Sanoman tiedot.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

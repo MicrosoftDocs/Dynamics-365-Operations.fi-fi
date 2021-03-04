@@ -53,3 +53,6 @@ Jos haluat lisätä uusia valmistettavia nimikkeitä lukitun kauden eri kohtiin,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Finance and Operationsin versiossa 10.0.5 ER-mallien varmuuskopioinnin tallennus
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

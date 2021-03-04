@@ -84,3 +84,6 @@ Voit lisätä välilehtimoduulin sivulle ja määrittää ominaisuudet seuraavas
 [Haitarivalikkomoduuli](add-accordion.md)
 
 [Tekstilohkomoduuli](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

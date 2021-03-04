@@ -63,3 +63,6 @@ Toista tehtäväopas LCS-palvelusta seuraavien ohjeiden mukaisesti.
 2. Valitse **Avaa LCS-palvelusta**.
 3. Valitse kirjasto ja BPM-solmu, jossa tallennettu tehtäväopas on.
 4. Avaa tehtäväopas.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Voit määrittää tilakoodivirheen vastaussivun uudelleenohjauksen seuraavasti.
 [Uuden sivuston sivun lisääminen](add-new-page.md)
 
 [Sivun URL-osoitteen luominen](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

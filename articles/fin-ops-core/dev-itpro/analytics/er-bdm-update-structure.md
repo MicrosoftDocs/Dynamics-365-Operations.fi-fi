@@ -106,3 +106,6 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

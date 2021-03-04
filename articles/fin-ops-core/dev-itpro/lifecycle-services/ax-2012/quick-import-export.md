@@ -40,3 +40,6 @@ Pikatuonti- ja vientiomaisuus on lisätty, jotta käyttäjät voivat tuoda tai v
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Luodut konfiguraatiot poistetaan järjestelmästä ja ladataan takaisin LCS-säi
 26. Laajenna puussa Sample data model.
     * Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa. Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä sovelluksessa. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.   
     * Jos kirjaudut sisään Finance and Operationsiin, rekisteröit saman tarjoajan, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation, Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

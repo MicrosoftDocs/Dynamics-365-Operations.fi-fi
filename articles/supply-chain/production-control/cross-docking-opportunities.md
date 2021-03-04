@@ -127,3 +127,6 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 -   Cross docking -skenaariota tuetaan erä- ja sarjanumero-ohjatuissa nimikkeissä sekä erä- että sarjanumerodimensioissa, joille on määritetty varaushierarkiassa sijainti ylä- tai alapuolella. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Tässä menettelyssä kerrotaan, miten korkolaskuja luodaan, tulostetaan ja kirj
 5. Valitse **OK**.
 6. Valitse **Tila**-kentässä Kirjattu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

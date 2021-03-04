@@ -622,3 +622,6 @@ Olet määrittänyt varaston 51 työ- ja sijaintitiedot sen varmistamiseksi, ett
 
 > [!NOTE]
 > Harkitse laatumerkinnän lisäämistä mobiililaitteen valikkokohteeseen, jossa tehtäväkoodi on *Näytä avoin työluettelo*. Katso esimerkiksi matkaviestimen valikkovaihtoehto, jonka nimi on demotietojen **Työluettelo**. Lisää ensin *Laatutilauksen* työluokka käyttäjän ohjattuun valikkokohteeseen, koska työluokka on pakollinen, jotta työ voidaan näyttää työluettelossa. Lisää sitten *Laatutilauksen* työluokka **Työluettelo**-valikkonimikkeeseen. Käyttäjät, joilla on työluettelon käyttöoikeus, voivat tällöin poimia ja käsitellä työn, joka luodaan automaattisesti laatutilauksen vahvistuksen avulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

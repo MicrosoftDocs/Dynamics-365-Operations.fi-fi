@@ -43,3 +43,6 @@ Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan. Tämän m
 1. Valitse **Avaa** Microsoft Officessa.
 2. Valitse **Muokkaa kysynnän ennustetta** Excelissä. Excelissä voit lisätä, poistaa ja muokata kysynnän ennusterivejä. Jos et näe tietoja Excelissä, kirjaudu sisään niin, että Pidä minut kirjautuneena -asetus on käytössä. Sinun on myös luotettava tietoyhteyssovellukseen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

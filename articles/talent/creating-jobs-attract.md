@@ -157,3 +157,6 @@ Luo työ seuraavien ohjeiden avulla.
 
 13. Aktivoi työ valitsemalla **Aktivoi**.
 14. Julkaise työ valitsemalla ensin **Ilmoitukset** ja sitten **Julkaise nyt** Talent Careers -sivustossa tai LinkedInissä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

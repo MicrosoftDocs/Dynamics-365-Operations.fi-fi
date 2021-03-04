@@ -91,3 +91,6 @@ Voit lisätä sivustoon uuden sivuston sivun seuraavasti.
 [Luokan saapumissivun täydentäminen](enrich-category-page.md)
 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

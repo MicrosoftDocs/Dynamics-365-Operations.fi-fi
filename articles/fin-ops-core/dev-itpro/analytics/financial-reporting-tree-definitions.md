@@ -220,3 +220,6 @@ Seuraavassa esimerkissä on koottujen tietojen raportointipuun määrityksessä 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

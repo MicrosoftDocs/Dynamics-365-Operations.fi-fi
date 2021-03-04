@@ -65,3 +65,6 @@ Seuraavat erätyöt tulisi suorittaa yöaikaan tai sulkemisajan jälkeen. Muista
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Optimoi suorituskyky automaattisilla tyhjennystehtävillä](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

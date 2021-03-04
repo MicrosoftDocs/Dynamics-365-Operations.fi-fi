@@ -100,3 +100,6 @@ Seuraavassa kuvassa on tulos, kun säädetty muoto suoritetaan.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

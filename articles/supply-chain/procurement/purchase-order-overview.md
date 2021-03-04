@@ -92,3 +92,6 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

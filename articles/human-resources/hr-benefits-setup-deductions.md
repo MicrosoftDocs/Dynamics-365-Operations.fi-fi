@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resourcesin vähennysten avulla voit määrittää,
 4. Voit seurata ja ylläpitää etuuskurssimäärityksen muutoksia valitsemalla **Toiminnot** ja sitten **Versioiden ylläpito**.
 
 5. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

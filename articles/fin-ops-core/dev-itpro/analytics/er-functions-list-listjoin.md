@@ -83,3 +83,6 @@ Tämän luettelon rakenne koostuu `Real`-tyypistä, joka on yksittäisessä **Su
 [Luettelotoiminnot](er-functions-category-list.md)
 
 [Suoritettavan ER-muodon tietolähteiden vianmääritys tiedonkulun ja muunnoksen analysointia varten](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

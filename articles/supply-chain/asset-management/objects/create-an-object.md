@@ -116,3 +116,6 @@ Tässä pikavälilehdessä voit lisätä tai poistaa ylläpitokierroksia, jotka 
 ## <a name="financial-dimensions"></a>Taloushallinnon dimensiot
 
 Voit valita resurssille taloushallinnon dimensiot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

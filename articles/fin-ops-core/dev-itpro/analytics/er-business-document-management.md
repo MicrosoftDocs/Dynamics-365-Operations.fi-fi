@@ -423,3 +423,6 @@ Kirjauduit todennäköisesti Azure AD -toimialueen nykyisen sovelluksen esiintym
 
 [Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

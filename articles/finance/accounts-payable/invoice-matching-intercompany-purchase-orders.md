@@ -70,3 +70,6 @@ Esimerkiksi seuraavia ohjeita noudatetaan.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

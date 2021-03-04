@@ -57,3 +57,6 @@ T채m채 menettelyn rooli on Rahastonhoitaja. N채iss채 toimintaohjeissa k채ytet채�
 18. Valitse Tallenna.
 19. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

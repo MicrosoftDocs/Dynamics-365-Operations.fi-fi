@@ -504,3 +504,6 @@ Laatuliitos on määritettävä kutakin sellaista liiketoimintaprosessin muutost
 [Määrityksistä poikkeamisen hallinta](enable-nonconformance-management.md)
 
 [Laadunhallinta varastoprosesseja varten](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

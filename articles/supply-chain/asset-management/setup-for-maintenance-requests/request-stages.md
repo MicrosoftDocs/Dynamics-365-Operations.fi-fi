@@ -81,3 +81,6 @@ Kun olet luonut kunnossapitopyynnöille tarvittavat elinkaaritilat, ne voidaan j
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön elinkaarimallit** -sivusta.
 
 ![Ylläpitopyynnön elinkaarimallisivu](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

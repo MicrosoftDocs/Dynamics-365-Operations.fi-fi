@@ -68,3 +68,6 @@ Jos haluat tarkastella vuokrausten uudelleenarvostusprosessin vaikutusta IFRS 16
 Voit tarkastella vain juuri luotua maksuaikataulua, joka alkaa uudelleenarvostuspäivämäärästä ja näyttää päivitetyn maksusumman kokonaismäärän. Myös uusi vuokrasopimusvelan kuoletusaikatauku ja resurssin poistoaikataulu on luotu. Ne muuttavat oikaistua maksuaikataulua.
 
 Kirjauskansiovienti on kirjannut automaattisesti oikaisukirjauskansioviennin tilille niiden vuokrien muutokselle, jotka liittyvät indeksin uudelleenarvostukseen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

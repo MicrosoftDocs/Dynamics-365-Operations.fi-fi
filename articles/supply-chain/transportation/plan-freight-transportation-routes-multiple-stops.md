@@ -53,3 +53,6 @@ Kuormituksen luonnin työtila -sivu ehdottaa kuormaa hakemalla asiakkaiden osoit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

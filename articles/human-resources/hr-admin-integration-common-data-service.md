@@ -118,3 +118,6 @@ Voit suorittaa täyden synkronoinnin yksikölle henkilöstöhallinnon ja Common 
 [![Täyden synkronoinnin suoritus](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

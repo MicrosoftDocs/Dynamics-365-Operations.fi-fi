@@ -70,3 +70,6 @@ Jos tositteessa on enintään 100 riviä, käänteiseksi muuttamisen prosessi su
 
 Tapahtumia voidaan muuttaa käänteiseksi vain, jos ne täyttävät käänteiseksi muuttamisen liiketoimintasäännöt. Toimittajamaksuja ei voida muuttaa käänteiseksi tässä aiheessa kuvatulla tavalla. Toimittajamaksut on muutettava käänteiseksi kohdassa [Toimittajamaksun käänteiseksi muuttaminen](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment) esitetyllä tavalla.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

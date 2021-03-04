@@ -38,3 +38,6 @@ Kustannuslaskennan kirjanpito edustaa koko raportointiyksikköä. Se määritet�
 8. Syötä tai valitse arvo Dimensio-kenttään.
 9. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

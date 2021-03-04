@@ -95,3 +95,6 @@ Jos kokeen laajuudeksi määritettiin **kokonaan** ohjatussa **Yhdistä koe** -t
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Kokeen esikatseleminen ja julkaiseminen](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

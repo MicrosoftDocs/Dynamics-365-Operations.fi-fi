@@ -101,3 +101,6 @@ Tässä menettelyssä käsitellään, miten luodaan tehokkaasti tarjouksia, jotk
 11. Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.
     * Varmista, että tarjoukset on luotu valitun mallin perusteella kaikille joukkopäivitysrutiinissa määritetyille asiakkaille.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

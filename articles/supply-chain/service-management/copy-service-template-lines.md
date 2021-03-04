@@ -60,3 +60,6 @@ Huoltomallin rivit on nyt kopioitu uuteen huoltotilaukseen yhdessä liitetyn huo
 [Huollon mallit](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

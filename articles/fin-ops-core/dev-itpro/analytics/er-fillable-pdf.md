@@ -301,3 +301,6 @@ Seuraavassa kuvassa näkyy esimerkki luotavan raportin toisesta sivusta.
 
 - [ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

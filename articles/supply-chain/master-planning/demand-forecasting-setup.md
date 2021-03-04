@@ -102,3 +102,6 @@ Voit määrittää **Kohdistustunnukset**-välilehdessä kunkin kohdistustunnuks
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

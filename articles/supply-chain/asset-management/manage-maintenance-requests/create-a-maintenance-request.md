@@ -74,3 +74,6 @@ Tiedot-näkymässä voit päivittää erilaisia tietoja. Seuraavassa on muutamia
 
 > [!NOTE]
 > Jos valitset resurssin, kun luot ylläpitopyynnön, voit lisätä resurssiin yhden virheen. Kun kunnossapitopyyntö on luotu, voit lisätä vikoja, kuten tarvitset. Jos haluat lisätä vikoja, valitse **Resurssin vika** **Kaikki ylläpito pyynnöt** -sivulla.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

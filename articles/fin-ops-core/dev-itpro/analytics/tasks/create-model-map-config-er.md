@@ -65,3 +65,6 @@ Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Konfiguraati
     * Intrastat-esimerkkiyhdistämismääritys  
 5. Valitse Luo konfiguraatio.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

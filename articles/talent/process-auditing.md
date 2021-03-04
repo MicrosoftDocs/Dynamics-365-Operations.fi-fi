@@ -61,3 +61,6 @@ Seuraavat tiedot ovat käytettävissä prosessien valvonnassa.
 |Työhakemushistoria | Työhakemus (msdyn_JobapplicatonId)<br></br>Tila (msdyn_status) <br></br>Tilan syy (msdyn_statusreason) <br></br>Hylkäyksen syy (msdyn_rejectionreason) |
 | Avointen työpaikkojen historia | Avoin työpaikka (msdyn_JobopeningId) <br></br>Tila (msdyn_jobopeningstatus) <br></br>Tilan syy (msdyn_jobopeningstatusreason) |
 | Ehdokkaan historia | Ehdokas (msdyn_CandidateId) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

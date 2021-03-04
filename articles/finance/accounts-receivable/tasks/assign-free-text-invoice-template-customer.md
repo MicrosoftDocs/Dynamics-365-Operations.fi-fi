@@ -50,3 +50,6 @@ Tässä tehtävässä kerrotaan, miten vapaatekstilaskun malli liitetään asiak
     + Vuosittain– Valitse tämä vaihtoehto ja syötä vuosien määrä Per-kenttään. Jos syötät esimerkiksi luvun 2, asiakkaalle luodaan lasku joka toinen vuosi.  
 14. Syötä numero **Per**-kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

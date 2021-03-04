@@ -122,3 +122,6 @@ Voit ottaa **Tieto**-lomakevaihtoehdon uudelleen käyttöön seuraavasti:
 2. Etsi **Tieto**-lomake lomakkeet-solmussa. 
 3. Valitse **Tieto**-lomake ja valitse **Ota käyttöön käyttöoikeusroolit**. 
 4. Muuta suojausasetukseksi **Näytä kaikille**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

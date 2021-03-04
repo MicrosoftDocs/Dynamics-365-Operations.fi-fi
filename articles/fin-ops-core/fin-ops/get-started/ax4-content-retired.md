@@ -31,3 +31,6 @@ TechNetin ja MSDN:n Microsoft Dynamics AX 4.0 -sisältö on poistettu käytöst�
 
 - [Microsoftin käyttöikäkäytäntö](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
 - [Tuetut Dynamics AX 2012 -päivityspolut](https://technet.microsoft.com/library/dd362093.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

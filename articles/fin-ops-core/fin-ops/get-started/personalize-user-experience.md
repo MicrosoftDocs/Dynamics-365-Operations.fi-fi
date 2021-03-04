@@ -195,3 +195,6 @@ Niillä asiakkaila, jotka eivät ole vielä ottaneet käyttöön [Tallennetut n�
 Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimensio** -asetuksen avulla luodut asetukset. Voit esimerkiksi piilottaa eränumeron varastodimension sarakkeen mukautuksen avulla. Sarake kuitenkin näkyy, kun sivu avataan seuraavan kerran. Tämä on mahdollista, koska **dimension näyttöasetukset** määrittävät varastodimension näytettävät sarakkeet. **Dimension näyttöasetuksia** käytetään kaikilla sivulla, ja ne korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset.
 
 Jos et siis halua edellisessä esimerkissä, että varastodimension eränumero näkyy sivulla, kyseisen dimension valinta on poistettava kyseisen sivun taulukon **Näytä dimensiot** -vaihtoehdon osana.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

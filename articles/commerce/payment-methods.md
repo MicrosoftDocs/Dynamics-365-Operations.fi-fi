@@ -49,3 +49,6 @@ Maksutapojen määrittämistä varten on suoritettava seuraavat tehtävät:
 2. Organisaation laajuisten korttityyppien ja korttien numeroiden luominen. Jos luottokortit tai pankkikortit hyväksytään, luo ensin yksi korttimaksuvälinetyyppi ja luo sitten organisaation laajuiset korttityypit ja korttien numerot.
 3. Myymälän maksutavan määrittäminen. Liitä maksutavat kuhunkin myymälään ja määritä sitten myymäläkohtaiset asetukset kullekin myymälän maksutavalle.
 4. Aseta liikkeille korttimaksutavat. Suorita korttimaksujen määritys loppuun kaikille korttimaksutavoille, jotka hyväksyt liikkeessä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

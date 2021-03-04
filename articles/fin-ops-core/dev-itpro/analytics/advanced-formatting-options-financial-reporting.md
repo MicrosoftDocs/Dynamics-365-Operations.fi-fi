@@ -310,3 +310,6 @@ Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus 
 Voit suunnitella raportteja käyttämällä dimensioarvoja, jotka sisältävät et-merkin (&).
 
 Voit määrittää minkä tahansa **linkin taloushallinnon dimensio** -kenttään arvon, kuten **'P & L'**. Myös puolilainausmerkit (' ') dimension arvon molemmilla puolilla tarkoittavat, että käytät literaaliarvoa, kuten esimerkiksi (&) et-merkkiä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

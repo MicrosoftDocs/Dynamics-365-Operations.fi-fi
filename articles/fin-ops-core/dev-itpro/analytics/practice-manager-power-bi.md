@@ -117,3 +117,6 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Tärkeät koostemitat       | Kenttä               | kuvaus |
 |---------------------------------|---------------------|-------------|
 | Valmiin tehtävän suunniteltu kustannus | Sum(TotalCostPrice) | Kaikkien projektitapahtumatyyppien ja valmiiden tehtävien kokonaiskustannushinta-arviot. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

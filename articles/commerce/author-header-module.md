@@ -119,3 +119,6 @@ Voit varmistaa, että ylätunniste näkyy jokaisella sivulla, noudattamalla näi
 [Toimipaikan valitsinmoduuli](site-selector.md)
 
 [Myymälän valitsinmoduuli](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

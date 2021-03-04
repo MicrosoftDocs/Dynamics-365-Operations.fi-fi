@@ -50,3 +50,6 @@ Kun olet luonut vuokraryhmiä, voit liittää kirjoja kuhunkin ryhmään. Kun lu
 1. Siirry kohtaan **Resurssin vuokraus \> Asetukset \> Vuokraryhmä**.
 2. Valitse vuokraryhmä ja valitse sitten **Kirjat**.
 3. Valitse **Uusi** ja valitse sitten **Kirjan tyyppi** -kentässä vuokraryhmään liitettävä kirja. Voit liittää vuokraryhmään useita kirjoja, jos vuokrasopimus on otettava huomioon eri tavoin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

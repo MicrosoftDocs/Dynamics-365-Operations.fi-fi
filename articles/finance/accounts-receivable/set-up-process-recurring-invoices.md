@@ -67,3 +67,6 @@ Sen jälkeen kun toistuvat laskut on kirjattu, voit tulostaa laskuja vapaan teks
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

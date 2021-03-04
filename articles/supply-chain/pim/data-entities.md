@@ -50,3 +50,6 @@ Tuotetietojen tuontiin ja vientiin on käytettävä tietoyksiköitä. Seuraavass
 
 > [!NOTE]
 > Voit käyttää **Julkaistut tuotteet V2** -tietoyksikköä tuodaksesi tuotteita järjestelmään vain, jos jaettu tuote on jo luotu. Jos haluat tuoda tuotteita järjestelmään, sinun on käytettävä **tuotteen luonti** -tietoyksikköä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

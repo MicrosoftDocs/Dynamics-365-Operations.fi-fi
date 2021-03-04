@@ -144,3 +144,6 @@ Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mu
 --------
 
 [Varastosovelluksen asentamisen ja määrittämisen yleiskatsaus](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Näiden käsitteiden kuvaukset ovat kohdassa [Perinnän hallinnan keskeiset käs
 [Myyntitilausten luottorajapidot](./cm-sales-order-credit-holds.md)
 
 [Asiakkaan luotonhallinnan kausittaiset tehtävät](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -309,3 +309,6 @@ Lisätietoja määritetyn **LE-tietojen haun oppimismuoto** -ER-muodon käyttäm
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
 [ER-muodon parametrien määrittäminen yrityskohtaisesti](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

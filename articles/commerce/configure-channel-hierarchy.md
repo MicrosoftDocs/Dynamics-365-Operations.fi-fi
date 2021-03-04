@@ -84,3 +84,6 @@ Seuraavassa kuvassa näkyy, miten kanavapäivitykset julkaistaan.
 [Luo kanavan siirtymishierarkia](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

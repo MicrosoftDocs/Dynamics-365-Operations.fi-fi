@@ -77,3 +77,6 @@ Töiden ajoitus ottaa resursseille määritetyt tehokkuusprosentit huomioon. Teh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

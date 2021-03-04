@@ -57,3 +57,6 @@ Kun asiakirjatyypin sijainniksi on määritetty **Azure-tallennustila**, voit ta
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 - [Asiakirjanhallinnan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

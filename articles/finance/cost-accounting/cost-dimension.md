@@ -55,3 +55,6 @@ Kun tiedot tuodaan kustannuslaskentaan, voit luoda sen avulla eri näkökulmia, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

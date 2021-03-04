@@ -103,3 +103,6 @@ Jos käyttäjät haluavat poistaa pidon mutta tehdä tilaukseen muutoksia ennen 
 ## <a name="reporting-options"></a>Raportointivaihtoehdot
 
 Valitse **Retail ja Commerce** \> **Kyselyt ja raportit** \> **Puhelinkeskuksen raportit** \> **Tilausten pitoraportti**, jos haluat suorittaa tilauspitoja koskevan raportin päivämääräalueen, pitokoodin tai muiden liittyvien ehtojen perusteella.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

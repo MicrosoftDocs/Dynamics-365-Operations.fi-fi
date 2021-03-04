@@ -84,3 +84,6 @@ Kun puhelinkeskuskanavan määritykset on tehty ja kanavan käyttäjät määrit
 > [!NOTE]
 > Jos haluat käyttää puhelinkeskustoimintoa, **usean toimitusasiakkaan** konfigurointiavain on otettava käyttöön. Tämä konfigurointiavain löytyy **Kaupan määritysavaimet** -osiosta kohdasta **Järjestelmänhallinta**\> **Asetukset** \> **Käyttöoikeuden määritys**. Tämä vaaditaan puhelinkeskuksen toiminnallisuuden vuoksi, joka suorittaa erilaisia validointeja myyntitilauksen rivitasolla määritettyjen toimitusosoitteiden perusteella. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

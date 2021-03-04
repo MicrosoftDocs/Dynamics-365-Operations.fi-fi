@@ -134,3 +134,6 @@ Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määri
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
 
 [Dynamics 365 -maksuyhdistin Adyenia varten](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

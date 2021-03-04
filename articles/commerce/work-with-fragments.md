@@ -136,3 +136,6 @@ Voit muokata osaa myös valitsemalla sen sivulla, mallissa tai pääosassa ja va
 [Esimääritettyjen asettelujen käyttö](work-with-layouts.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

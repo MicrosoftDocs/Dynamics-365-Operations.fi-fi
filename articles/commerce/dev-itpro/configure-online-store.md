@@ -62,3 +62,6 @@ Seuraavassa taulukossa on luettelo ohjeaiheista, jotka auttavat määrittämää
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

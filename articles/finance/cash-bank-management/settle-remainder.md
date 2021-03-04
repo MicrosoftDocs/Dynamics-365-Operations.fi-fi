@@ -70,3 +70,6 @@ Jäljellä olevan summan voi selvittää seuraavasti:
 7)  Voit luoda halutessasi myös maksukirjauskansion, jossa tilityksen jäljellä oleva summa on, tai vain kirjata sen ilman kirjauskansiota. Luo maksukirjauskansio valitsemalla **Kyllä** **Muokkaa kirjauskansiossa** -kohdassa Voi muokata luomaasi maksukirjauskansiota.
 8)  Valitse **Selvitä jäljellä olevan summa**. Jos valitsit maksukirjauskansion luomisen, painikkeen tekstinä on **Luo kirjauskansio**. Valitse sen sijaan **Luo kirjauskansio**.
 9)  Jos loit maksukirjauskansion, kirjauskansion sivu avautuu, kun valitsit **Selvitä jäljellä olevan summa**. Kirjauskansioon lisätään kirjauskansion rivi, jossa summana on selvitettävä jäljellä oleva summa ja vastatilinä jäljellä olevan summan selvitystili. Jos olet lisännyt asiakkaan tai toimittajan siksi, että voi siirtää tilityssumman toiselle asiakkaalle tai toimittajalle, kirjauskansioon lisätään rivi, jolla tilityssumma siirretään kyseiselle asiakkaalle tai toimittajalle.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

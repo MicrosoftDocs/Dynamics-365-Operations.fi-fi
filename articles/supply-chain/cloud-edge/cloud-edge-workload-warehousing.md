@@ -245,3 +245,6 @@ Scale unitien kuormituksissa voi hallita kahta seuraavaa erätyötä valitsemall
 
 - Aaltotaulukon tietueiden käsittely
 - Käsittele aallon suorituksenhallinnan siirtotapahtumat
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

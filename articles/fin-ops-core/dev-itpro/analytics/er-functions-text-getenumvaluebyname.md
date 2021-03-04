@@ -117,3 +117,6 @@ Jos aiot käyttää tätä menetelmää suureen määrään tapahtumatietoja, si
 [FIRSTORNULL ER-funktio](er-functions-list-firstornull.md)
 
 [WHERE ER-funktio](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

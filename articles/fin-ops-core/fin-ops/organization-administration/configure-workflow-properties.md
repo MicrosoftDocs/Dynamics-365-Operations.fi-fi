@@ -179,3 +179,6 @@ Noudata seuraavia ohjeita, kun haluat määrittää työnkulkuun tehtyjen muutos
 2. Kirjoita kommenttisi **Anna kommentteja työnkulusta** -kenttään.
 3. Tarkista kommenttisi. Kommentteja ei voi muokata lisäämisen jälkeen.
 4. Valitse **Lisää** lisätäksesi kommenttisi **Kommenttihistoria**-alueelle.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -247,3 +247,6 @@ Seuraavassa esimerkissä on sellaisen tarjouspyyntötapauksen ylin ja alin tila,
 | Hyväksy yksi tarjouksista. (tai vähintään yksi rivi) |                          Vastaanotettu                           |                           Hyv.                           |                    Vastaanotettu                    |                    Hyv.                     |                   Vastaanotettu                   |                   Hyv.                    |
 |           Hylkää kaikki muut tarjoukset.           |                          Hylätty                           |                           Hyv.                           |                    Hylätty                    |                    Hyv.                     |                   Hylätty                   |                   Hyväksytty                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

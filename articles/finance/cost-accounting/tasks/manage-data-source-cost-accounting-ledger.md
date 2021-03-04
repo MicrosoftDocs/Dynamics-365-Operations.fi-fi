@@ -48,3 +48,6 @@ Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskenn
 14. Valitse Kirjanpitotaso-kentässä Nykyinen.
 15. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

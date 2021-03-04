@@ -55,3 +55,6 @@ Käyttäjä on lisättävä ympäristön tekijän rooliin Microsoft Power Appsin
     ![Synkronointipainike](media/get-more.png)
 
     Kun synkronointi on valmis, Human Resources näkyy aloitussivulla.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

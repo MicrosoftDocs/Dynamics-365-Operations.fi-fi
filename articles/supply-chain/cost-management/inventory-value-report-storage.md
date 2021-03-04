@@ -106,3 +106,6 @@ Seuraavassa esimerkissä näytetään, miten **Varastoarvon raportti** -raportti
 1. Näkyviin tulevalla **Suorituksen yhteenveto** -sivulla näkyy vientityön tila ja vietyjen entiteettien luettelo. Valitse **Entiteetin käsittelyn tila** -osassa listasta **Varaston arvo** -yksikkö. Lataa tästä yksiköstä viedyt tiedot valitsemalla **Lataa tiedosto**.
 
 Lisätietoja tietojen hallinnan käyttämisestä tietojen viemisessä on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

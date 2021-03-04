@@ -46,3 +46,6 @@ Tässä ohjeaiheessa käsitellään, kuinka maksutapa luodaan asiakasmaksuille. 
 15. Määritä **Maksun määritteet** -välilehden avulla, mitä maksumääritteitä haluat käyttää tässä maksutavassa.
 16. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

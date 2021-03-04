@@ -142,3 +142,6 @@ Voit lisätä säilön toistinmoduulin uudelle sivulle ja määrittää pakollis
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

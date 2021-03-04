@@ -142,3 +142,6 @@ Kun hakija on hakenut yhtä tai useaa työpaikkaa, hän voi tarkastella avoimia 
 ## <a name="internal-jobs"></a>Sisäiset työpaikat
 
 Tällä hetkellä sisäisiksi merkityt Attractin urasivustoon julkaistut työt eivät näy urasivustossa. Niitä voi käyttää vain avaamalla suoran **Käytä**-linkin URL-osoitteen, joka voidaan kopioida Attract-sovelluksesta.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

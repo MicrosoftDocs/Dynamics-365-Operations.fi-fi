@@ -101,3 +101,6 @@ Menettely on tarkoitettu kirjanpitäjille.
 7. Valitse OK.
 8. Valitse Valinta-kentässä Suljettu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

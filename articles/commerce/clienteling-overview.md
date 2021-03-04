@@ -124,3 +124,6 @@ Määritä integrointi noudattamalla seuraavia ohjeita:
     4. Customer Insightsissa voi olla useita ympäristöjä, kuten testi- ja tuotantoympäristöt. Kirjoita **Ympäristön esiintymätunnus** -kenttään asianmukainen ympäristö.
     5. Anna **Vaihtoehtoinen asiakastunnus** -kenttään se Customer Insights -ominaisuus, joka yhdistetään asiakastilin numeroon. (Commercessa asiakastilin numero on asiakastunnus.)
     6. Kolme jäljellä olevaa ominaisuutta ovat mittareita, jotka näytetään asiakaskirjan asiakaskortissa. Voit valita enintään kolme asiakaskortissa näytettävää mittaria. (Mittareita ei kuitenkaan ole pakko valita.) Kun aiemmin mainittiin, järjestelmä näyttää nämä arvot ensin, jonka jälkeen näytetään asiakaskirjan määriteryhmän arvot.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

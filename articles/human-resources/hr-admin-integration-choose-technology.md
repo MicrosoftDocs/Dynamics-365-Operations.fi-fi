@@ -144,3 +144,6 @@ Kun tarjolla on niin monta erilaista integrointiteknologiaa, integrointimenetelm
 <sup>2</sup>Microsoft investoi voimakkaasti tietojen kattavuuden lisäämiseen Common Data Service -yksiköihin. On suositeltavaa käyttää Common Data Serviceä, kun kattavuus on käytettävissä. Tällä hetkellä Common Data Servicen tietojen kattavuus on alhainen DMF- ja OData-yhteensopiviin yksikköihin verrattuna.
 
 <sup>3</sup>SQL-tietokantaa voidaan käyttää ohjelmallisesti.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

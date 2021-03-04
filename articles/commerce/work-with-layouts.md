@@ -109,3 +109,6 @@ Kun olet esikatsellut esimääritettyyn asetteluun tehdyt muutokset, julkaise as
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Mallien käyttö](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

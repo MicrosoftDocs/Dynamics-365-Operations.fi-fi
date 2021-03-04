@@ -140,3 +140,6 @@ LIFO-strategia etsii uusimman erääntymispäivämäärän sisältävän sijainn
 1. Huomaa, että rivillä, jonka **Työtyyppi**-arvo on *Keräily*, **Sijainti**-arvo on *KR-001*. Tässä sijainnissa on rekisterikilpi, jossa on uusin erääntymispäivä (LIFO).
 
 Näissä skenaarioissa on näytetty, miten sijainnin erääntymisstrategia ohjaa työn varastosijaintiin, jossa on joko vanhin tai uusin varasto valitun strategian mukaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

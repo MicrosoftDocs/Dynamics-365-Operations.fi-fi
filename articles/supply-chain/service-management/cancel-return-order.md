@@ -49,3 +49,6 @@ Poistamisen sijaan voit peruuttaa palautustilauksen, kun haluat tallentaa tiedot
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

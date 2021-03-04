@@ -67,3 +67,6 @@ Tämä funktio toimii kuin [ROUND](er-functions-mathematical-round.md), mutta se
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Matemaattinen toiminto](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

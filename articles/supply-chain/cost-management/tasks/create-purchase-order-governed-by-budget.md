@@ -62,3 +62,6 @@ Tämän menettelyn avulla voit luoda ostotilauksen, jonka käytettävissä oleva
 4. Valitse Budjetin tarkistusvirheet tai -varoitukset.
 5. Valitse Sulje.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

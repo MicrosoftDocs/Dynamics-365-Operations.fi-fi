@@ -41,3 +41,6 @@ Näiden ohjeiden avulla voit poistaa käyttöomaisuuden käyttämällä vapaatek
 10. Syötä tai valitse arvo **Käyttöomaisuus**-kentässä.
 11. Valitse **Kirjaa**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

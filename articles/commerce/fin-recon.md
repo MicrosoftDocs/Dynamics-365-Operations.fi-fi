@@ -62,3 +62,6 @@ Kun syötteisiin perustuvaa vähittäin suoritettavaa laskelman julkaisua käyte
 Tiedot vuoron taloushallinnon täsmäytyksestä synkronoidaan Commerce-pääkonttoriin P-työn avulla.
 
 Vähittäismyynnin raportit Commerce-pääkonttorissa eivät laske summia näyttääkseen tarkempia tietoja laskelmariveillä. Sen sijaan myyntipisteasiakasohjelman viimeisteltyjä summia käytetään vähittäismyynnin raporttien luomiseen ja julkaisemiseen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

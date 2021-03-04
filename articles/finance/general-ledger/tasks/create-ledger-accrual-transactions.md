@@ -49,3 +49,6 @@ Tässä tehtäväopastuksessa käsitellään jaksotusmalleihin perustuvien kirja
 17. Valitse OK.
 18. Valitse Kirjaa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

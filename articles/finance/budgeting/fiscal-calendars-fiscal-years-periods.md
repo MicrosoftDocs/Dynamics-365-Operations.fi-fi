@@ -64,3 +64,6 @@ Voit käyttää Kirjanpitokalenteri-sivua organisaatiosi käyttämän kirjanpido
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -193,3 +193,6 @@ On olemassa yksi poikkeus sääntöön, jonka mukaan erätilauksissa voi käytt�
 Jos reseptissä on vaikuttava ainesosa tuotteelle, jossa varastonhallintaprosessit on otettu käyttöön mutta jonka eränumero on varaushierarkian Sijainti-kohdassa, erätilauksessa ei voi käyttää erän tasausta.
 
 Jos erätilauksessa ei voi käyttää erän tasausta, se käsitellään erätilausten tavallisen prosessisyklin mukaisesti.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

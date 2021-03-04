@@ -67,3 +67,6 @@ Valitsimme Lean-valmistuksen toteuttamiseen tuotantovirta- ja toimintomenettelyn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

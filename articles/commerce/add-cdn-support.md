@@ -163,3 +163,6 @@ CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-siv
 [Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

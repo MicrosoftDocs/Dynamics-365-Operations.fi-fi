@@ -92,3 +92,6 @@ Numerosaroja voi luoda ja muokata seuraavasti:
     | Tarkistusnumero | Tämä segmenttityyppi lisää tarkistusnumeron, joka on modulo 10 -lasku. (Tämä toiminta vastaa rekisterikilpitunnusten nykyistä logiikkaa.) Tässä segmenttityypissä **Arvo**-asetuksena on aina sirkumfleksi (*^*) ja **Pituus**-kentän asetuksena on aina *1*. |
 
 1. Voit tarkastella lopullisen numeromuodon esimerkki, tarkasta **Muoto**-kenttä **Segmentit**-pikavälilehden alaosassa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

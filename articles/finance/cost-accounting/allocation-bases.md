@@ -430,3 +430,6 @@ Tämä on esimerkki kustannusten jakosäännöstä, jos Kiinteä sähkö -kaavan
 |    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × summa  |
 |    CC003    |     VS      | 13,250.00 | (13 250,00 ÷ 18 162,50) × summa |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

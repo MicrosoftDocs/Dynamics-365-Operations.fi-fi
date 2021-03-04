@@ -55,3 +55,6 @@ Jos haluat lisätä malliin taloushallinnon dimensiot, lisää muutoksia tarvita
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

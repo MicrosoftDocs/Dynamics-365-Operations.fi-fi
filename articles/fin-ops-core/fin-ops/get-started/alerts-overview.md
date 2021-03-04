@@ -88,3 +88,6 @@ Hälytyssäännöllä on viisi osaa:
 [Hälytyssääntövaihtoehdot](https://youtu.be/cpzimwOjicM) -video (edellä mainittu) sisältyy [Finance and Operations -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on katsottavissa YouTubessa.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

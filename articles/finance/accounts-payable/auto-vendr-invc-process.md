@@ -69,3 +69,6 @@ Käytettävissä on helppolukuinen toimittajan laskun työnkulkuhistorianäkymä
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Toimittajan laskun automaatio - useiden laskujen automaattisen käsittelyn jatkaminen
 Kun tuodun laskun lähettäminen ei onnistu työnkulkuun automatisoidun prosessin kautta, järjestelmä poistaa sen automaattisesta käsittelystä. Ostoreskontran käsittelijä voi tarkastella ja muokata laskua, ennen kuin automaattinen prosessi lähettää sen uudelleen työnkulkuun. Vian syy voidaan ratkaista saman korjauksen avulla useita laskuja varten. Voit käynnistää automaattisen prosessin uudelleen **Jatka automaattista laskujen käsittelyä** -sivulla. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

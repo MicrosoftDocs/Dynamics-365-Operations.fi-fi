@@ -214,3 +214,5 @@ Esimiehet voivat nähdä kaikki ryhmänsä tavoitteet **Ryhmän suorituskykytavo
 **Arvostelut**-välilehdessä on yhteenveto työntekijän kussakin tilassa tekemistä tarkastelusta: **keskeneräinen**, **valmis tarkistettavaksi** ja **lopullinen tarkistus**. Voit käyttää työntekijän tarkistusta valitsemalla **Tiedot**-painikkeen ja valitsemalla sitten arvostelut. Kun tarkistus on työnkulkuprosessin sisällä, voit tarkistaa, onko tarkistus käytettävissä päivitystä varten. 
 
 Esimiehet voivat nähdä kaikki ryhmänsä arvostelut **Ryhmän suorituskykyarviot** -ruudun avulla **Oman ryhmän** **Yhteenveto**-osassa.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

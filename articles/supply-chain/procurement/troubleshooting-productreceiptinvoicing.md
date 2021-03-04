@@ -110,3 +110,6 @@ Seuraavassa esitetään yksi tapa ongelman toistamiseen.
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Tämä määräytyy laskujen ja laskuryhmien parametriasetusten perusteella. Lisä tietoja on seuraavassa blogikirjoituksessa: [Ostomenojen kirjaaminen ja varastotilanteen vaihtelut](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

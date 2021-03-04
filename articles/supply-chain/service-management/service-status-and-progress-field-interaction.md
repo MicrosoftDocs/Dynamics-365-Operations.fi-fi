@@ -95,3 +95,6 @@ Jos huoltotilauksen kaikkien rivien tilana on **Kirjattu**, huoltotilauksen tila
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

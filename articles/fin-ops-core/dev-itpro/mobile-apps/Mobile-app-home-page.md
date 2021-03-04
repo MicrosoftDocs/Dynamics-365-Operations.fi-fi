@@ -151,3 +151,6 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 
 ## <a name="troubleshooting"></a>Vianmääritys
 [Mobiiliympäristön resurssit](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

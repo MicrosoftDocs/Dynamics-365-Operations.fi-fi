@@ -43,3 +43,6 @@ Huoltosopimusryhmistä on hyötyä lajiteltaessa ja suodatettaessa huoltosopimuk
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Huoltosopimuksen yleiskatsaus](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

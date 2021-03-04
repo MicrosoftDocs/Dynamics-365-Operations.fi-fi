@@ -410,3 +410,6 @@ Kun Supply Chain Management luo tuotannon töitä, se kerää liittyvät oppaat 
 - Jos määrität useita reitityksen työvaiheita, jotka sisältävät *Kaikki*-suhteen, ja määrität niille oppaita, vain tarkimman suhteen oppaat näytetään työssä.  
 
 ![Kaavio oppaiden soveltuvuuden ratkaisemisesta](media/instruction-guides-Resolve.png "Kaavio oppaiden soveltuvuuden ratkaisemisesta")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

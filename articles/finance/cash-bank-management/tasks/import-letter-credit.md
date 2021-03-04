@@ -185,3 +185,6 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
     * Tarkista, että raportin tapahtumissa on mainittu pankkitositteen numero, tositteen limiitti, käytetty summa ja limiittisaldo.  
 8. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

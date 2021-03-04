@@ -62,3 +62,6 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Sijainti         | Toimi, nimike ja kokopäiväistä vastaavat (FTE)                  | Kurssin työjärjestys, kurssin osallistujat |
 | Työntekijän nimi    | Etunimi , sukunimi ja koko nimi                             | Kurssin osallistujat |
 | Työntekijän nimike   | Nimike ja virkaikä                                         | Kurssin osallistujat |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

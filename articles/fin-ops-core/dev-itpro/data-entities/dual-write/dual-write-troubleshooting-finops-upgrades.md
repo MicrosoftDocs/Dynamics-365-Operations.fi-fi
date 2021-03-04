@@ -91,3 +91,6 @@ Jos ongelma ei vieläkään korjaannu, toimi seuraavasti.
 4. Avaa **Taulujen yhdistämismääritys** -sivu **Kaksoiskirjoitussivulta** Finance and Operations -sovelluksessa.
 5. Jos määritettä ei täytetä automaattisesti kartalla, lisää se manuaalisesti valitsemalla **Lisää määrite** -painike ja valitsemalla sitten **Tallenna**. 
 6. Valitse kartta ja valitse **Suorita**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

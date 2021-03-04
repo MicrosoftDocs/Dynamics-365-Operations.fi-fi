@@ -57,3 +57,6 @@ Nämä toimet keskittyvät kanban-prosessitöiden suorittamiseen. Ensimmäinen t
 6. Lisää Hyväksytty määrä -kenttään numero.
 7. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

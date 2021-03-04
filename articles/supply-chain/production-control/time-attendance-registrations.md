@@ -119,3 +119,6 @@ Työntekijöille, joiden työtehtävät eivät edellytä välitöntä palautetta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

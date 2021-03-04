@@ -47,3 +47,6 @@ Huollon vaiheen määrittäessäsi voit luoda useita vaihtoehtoja tai haaroja, j
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

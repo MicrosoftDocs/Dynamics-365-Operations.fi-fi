@@ -120,3 +120,6 @@ Voit joukkomuokata niitä tapahtumia, joita ei ole linkitetty laskelmaan Commerc
 [Excel-työkirjan luominen vähittäismyyntitapahtumien muokkaamista varten](create-excel-edit.md)
 
 [Kenttien lisääminen Excel-työkirjaan vähittäismyyntitapahtumien muokkaamista varten](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

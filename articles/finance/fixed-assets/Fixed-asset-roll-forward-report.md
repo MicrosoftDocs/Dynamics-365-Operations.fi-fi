@@ -67,3 +67,6 @@ Seuraavassa taulussa käsitellään raportissa valittavina olevat kentät.
 |           Luovutukset: hävikkiarvo            |                                                                                               Käyttöomaisuuskirjan luovutuksen hävikkiarvo – hävikkitapahtuma.                                                                                               |
 |           Luovutukset: tulos            |                                                                                 Käyttöomaisuuskirjan luovutustapahtuman osana lasketun voiton tai tappion arvo.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

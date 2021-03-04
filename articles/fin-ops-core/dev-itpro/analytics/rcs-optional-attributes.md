@@ -130,3 +130,6 @@ Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköis
 3. Valitse ensin **Selaa** ja sitten tiedosto **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Valitse **OK**.
 5. Tarkista luotu tiedosto. Huomaa, että sama tiedosto on tuotu, sillä muodon rakenne käsittelee document-elementit id-määritettä nyt valinnaisena.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

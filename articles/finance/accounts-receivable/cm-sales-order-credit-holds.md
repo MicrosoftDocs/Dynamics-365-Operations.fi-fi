@@ -265,3 +265,6 @@ Myyntitilauksia, joilla on pakotetun pidon syy, ei voi vapauttaa automaattisesti
 Luotonhallintaa voi käyttää tällä hetkellä vain myyntitilauksissa. Vapaatekstilaskut, myyntipistetilaukset ja puhelinkeskustilaukset käyttävät tilapäisiä luottorajoja sekä vakuuksia/takauksia, joita lisäämällä luottorajaa säädetään. Niissä ei käytetä estosääntöjä eikä niitä aseteta pitoluetteloon, jos luottorajassa ongelma.
 
 Luotonhallinta ei tue projektilaskuja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

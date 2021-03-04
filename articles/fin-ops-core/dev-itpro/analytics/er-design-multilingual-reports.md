@@ -210,3 +210,6 @@ Kuten aiemmin tässä ohjeaiheessa todettiin, jokaisen [mallin](#LinkModelEnum) 
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin funktiot](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

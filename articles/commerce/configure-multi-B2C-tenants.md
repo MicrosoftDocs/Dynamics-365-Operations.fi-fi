@@ -131,3 +131,6 @@ Uusi Azure AD B2C -vuokraaja näkyy nyt luettelossa **Hallitse B2C-sovelluksia**
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

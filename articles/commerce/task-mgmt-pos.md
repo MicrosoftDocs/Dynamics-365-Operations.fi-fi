@@ -64,3 +64,6 @@ Seuraavassa on kuvattu **Tehtäväluettelot**-välilehti
 [Tehtäväluetteloiden luominen ja tehtävien lisääminen](task-mgmt-create-lists.md)
 
 [Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

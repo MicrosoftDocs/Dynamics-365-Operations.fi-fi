@@ -73,3 +73,6 @@ Saatavilla olevan päivä- tai viikkokapasiteetin määrittää työsolulle mä�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

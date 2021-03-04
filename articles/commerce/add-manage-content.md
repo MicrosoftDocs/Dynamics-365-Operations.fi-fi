@@ -57,3 +57,6 @@ Aloita valitsemalla jokin seuraavista ohjeaiheista.
 [Asiakirjan tilat ja elinkaari](document-states-overview.md)
 
 [Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

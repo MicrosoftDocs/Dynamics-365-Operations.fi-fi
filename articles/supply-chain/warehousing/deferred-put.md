@@ -110,3 +110,6 @@ On olemassa useita skenaarioita, joissa lykättyä hyllytystä ei käytetä, vai
 ## <a name="deleting-completed-tasks"></a>Poista suoritetut tehtävät
 
 Voit poistaa lykätyt hyllytyksen käsittelytehtävät, jotka on suoritettu, valitsemalla ne ja poistamalla ne sivulta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,5 @@ Voit käyttää kyselylomakkeen tilastotietoja, kun haluat analysoida täytettyj
 -   Valitse tai tarkista ehdot, kun haluat analysoida tulokset vastaajan tai kyselylomakkeen ominaisuuksien perusteella. Voit analysoida esimerkiksi vastaajan sijainnin ja oikeiden vastausten välisen korrelaation valitsemalla **Postinumero**.
 
 Määrittämäsi asetukset tallennetaan ja niitä voidaan käyttää tulosten kausittaiseen uudelleenlaskemiseen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

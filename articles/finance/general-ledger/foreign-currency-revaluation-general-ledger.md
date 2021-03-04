@@ -113,3 +113,6 @@ Ulkomaanvaluutan uudelleenarvostuksen tuloksia ei tarvitse palauttaa päivämä�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

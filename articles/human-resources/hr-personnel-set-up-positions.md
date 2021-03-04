@@ -67,3 +67,6 @@ Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yk
 30. Syötä tai valitse Osasto-kentän arvo.
 31. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

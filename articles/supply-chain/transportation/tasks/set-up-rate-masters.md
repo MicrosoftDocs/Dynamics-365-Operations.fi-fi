@@ -97,3 +97,6 @@ Tässä menettelyssä näytetään, miten hinnan päätiedot määritetään. Lo
     * Määritä postinumero, josta alkaen tämä hintaan perustuva määritys on voimassa.
 10. Anna **Noutomaa/-alue**-kentässä Suomi.
 11. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

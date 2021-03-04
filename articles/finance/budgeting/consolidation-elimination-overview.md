@@ -90,3 +90,6 @@ Ratkaisu on **Talousraportointi**-vaihtoehto. Organisaatiohierarkiat, jotka sis�
 Lisätietoja on kohdassa [Valuutan uudelleenarvostus konsolidointiyrityksessä](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

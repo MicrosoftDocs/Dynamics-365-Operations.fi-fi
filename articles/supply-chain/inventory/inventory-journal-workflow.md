@@ -112,3 +112,6 @@ Voit tarkastella kirjauskansion työnkulkuhistoriaa seuraavasti:
 1. Laajenna siirtymisruudussa kohta **Varastonhallinta \> Kirjauskansioviennit \> Nimikkeet** ja valitse sitten varastokirjauskansion tyyppi.
 1. Avaa asiaankuuluva kirjauskansio.
 1. Valitse **Työnkulku**-painike toimintoruudussa ja avaa avattava valintaikkuna. Valitse **Työnkulkuhistoria**. Lisätietoja on kohdassa [Työnkulkuhistorian tarkasteleminen](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

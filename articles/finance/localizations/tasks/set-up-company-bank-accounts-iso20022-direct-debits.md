@@ -60,3 +60,6 @@ Tämä on toinen viidestä tehtävästä, joilla esitellään asiakasmaksujen pr
     * Esimerkki: valitse pankkitili "DEMF OPER".  
 6. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

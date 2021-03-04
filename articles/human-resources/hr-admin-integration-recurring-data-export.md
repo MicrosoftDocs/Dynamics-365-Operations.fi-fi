@@ -205,3 +205,6 @@ Seuraavassa kuvassa näytetään, miltä Logic Apps Designer näyttää, kun kai
 Tässä oppaassa tutustuit logiikkasovelluksen käyttöön tietojen viemiseen Human Resourcesista ja vietyjen tietojen tallentamiseen OneDrive for Business -kansioon. Voit muokata tämän oppaan vaiheita yrityksesi tarpeiden mukaan.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

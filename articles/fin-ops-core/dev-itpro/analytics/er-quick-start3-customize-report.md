@@ -671,3 +671,6 @@ Version 32.6.7.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio m
 - [Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)
 - [Luo tekstimuotoinen lasku](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Mukautettujen kenttien luominen ja käsitteleminen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

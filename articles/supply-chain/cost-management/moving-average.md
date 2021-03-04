@@ -155,3 +155,6 @@ Tässä liukuvaa keskiarvoa koskevassa esimerkissä varastoarvon raportti tulost
 
 > [!NOTE]
 > Kirjanpitoa ei voi täsmäyttää varaston kanssa käyttämällä **Tapahtuma-ajan lajittelu** -vaihtoehtoa. Raportti täytyy tulostaa käyttämällä **Kirjauspäivämäärä**-vaihtoehtoa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Varauksiin liittyy kaksi vaihtoehtoa **Varasto ja varastonhallinnan parametrit**
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Varastovarauskäytännöt Tuotantoparametrit -sivulla
 
 **Varaus**-kentän arvo **Yleistä**-välilehdessä **Tuotantoparametrit** sivulla määrittää tuotantoprosessin oletuskohdan, jossa varasto pitää varata. Esimerkiksi varasto voidaan varata, kun työ on ajoitettu tai kun työ alkaa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -156,3 +156,6 @@ Kun suoritat puuttuvien tilien analyysin, käytettävissä on seuraavat pikanäp
 [Talousraportointi](financial-reporting-intro.md)
 
 [Raporttien suunnitteluohjelman käyttöliittymä](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

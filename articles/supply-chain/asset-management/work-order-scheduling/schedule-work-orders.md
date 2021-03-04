@@ -138,3 +138,6 @@ Gantt-kaavion tarkasteleminen ja käsitteleminen:
     - Jos haluat ajoittaa näytössä olevan työtilauksen uudelleen, valitse ja vedä se sitten sopivaan uuteen päivämäärään ja kellonaikaan.
 
 1. Jos teit muutoksia, tallenna ne valitsemalla toimintoruudussa **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

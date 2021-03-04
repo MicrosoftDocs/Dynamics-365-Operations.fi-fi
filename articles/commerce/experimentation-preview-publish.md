@@ -60,3 +60,6 @@ Kun julkaisuryhmiä käytetään kokeissa, tietyt tärkeät seikat on otettava h
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Kokeen suorittaminen ja seuranta](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

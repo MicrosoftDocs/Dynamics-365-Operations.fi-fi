@@ -78,3 +78,6 @@ Epäonnistuneen varastosovelluksen tapahtumasanoman nollaaminen:
 1. Jatka työskentelyä, kunnes kaikki liittyvät sanomat on palautettu.
 
 Voit poistaa **Epäonnistui**-tapahtumasanoman myös käyttämällä **Varastosovelluksen tapahtumasanomat** -työkalurivin **Poista**-vaihtoehtoa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Alla olevassa näyttökuvassa on esimerkki nimikkeestä, jossa on laskettu Nimik
 
 ![Esimerkki nimikkeen käyttöpaikan laskennasta](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

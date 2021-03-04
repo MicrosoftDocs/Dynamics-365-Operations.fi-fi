@@ -67,3 +67,6 @@ Tämän menettelyn suorittaminen edellyttää, että tuotemääritysmalli on luo
 15. Anna tai valitse Tarve-kentässä arvo.
 16. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

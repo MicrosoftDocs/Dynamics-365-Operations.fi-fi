@@ -41,3 +41,6 @@ Tässä menettelyssä käsitellään, miten luodaan tilin tilinumeron antamisen 
 9. Valitse Alkuperäinen kohdistus -kentässä dimensio, joka on kohdistettuna aliasta käytettäessä.
     * Kun olet kirjoittanut pikavalinnan ja kun tilin ja dimensioiden tiedot on täytetty, alkuperäinen kohdistuskenttä on osoittimen kohdalla ja siirtyy siihen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

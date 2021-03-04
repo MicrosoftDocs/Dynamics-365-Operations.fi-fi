@@ -167,3 +167,6 @@ Toimittajan ostohyvitysten käsittelyyn käytettävä prosessi sisältää useit
 - Tarkkojen ostohyvitysvaatimusten muodostaminen
 - Odotettujen saatavien kerryttäminen ja väliaikainen kirjaaminen kirjanpitoon
 - Toimittajasaldon ja tuloslaskelman päivittäminen erääntyvällä korvauksella
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

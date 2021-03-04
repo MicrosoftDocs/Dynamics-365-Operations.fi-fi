@@ -68,3 +68,6 @@ Ennen kuin voit määrittää etusuunnitelmat Microsoft Dynamics 365 Human Resou
 3. Valitse **Tallenna**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

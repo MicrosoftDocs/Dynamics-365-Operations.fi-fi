@@ -68,3 +68,6 @@ Voit viedä erilaisilla suodatusvalinnoilla luodun työntekijäluettelon Excelii
 Jos katetut henkilöt on raportoitava, koska tarjoat työnantajana omakustanteisen vakuutuksen, voit tarkastella myös niiden etusuunnitelmien kattamia huollettavia, joissa on merkintä **ACA:lle ilmoitettavuudesta**, valitsemalla toimintoruuturivissä Näytä huollettavien kattaminen -toiminnon.
 
 **Huomautus:** kyselyikkunassa näkyvät vain ne suunnitelmat, joissa on merkintä **ACA:lle raportoitavuudesta**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

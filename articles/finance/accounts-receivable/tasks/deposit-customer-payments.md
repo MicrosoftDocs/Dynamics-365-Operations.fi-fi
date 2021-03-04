@@ -48,3 +48,6 @@ Talleta asiakkaan maksut. Tässä tehtävässä käytetään esittely-yritystä 
 17. Valitse **OK**. Ensimmäisellä sivulla luodaan talletuskuitti.  
 18. Valitse **OK**. Toisessa vaiheessa talletuskuitti tulostetaan. Tämä vaihe ei kuitenkaan ole pakollinen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

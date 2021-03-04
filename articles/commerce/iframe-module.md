@@ -77,3 +77,6 @@ Voit lisätä sivulle ulkoisen videon näyttävän iFrame-moduulin seuraavasti.
 [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

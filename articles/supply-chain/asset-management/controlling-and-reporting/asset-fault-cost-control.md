@@ -62,3 +62,6 @@ Tässä esimerkissä esitetään resurssivikojen kustannushallinnan laskutoimitu
     ![Kuva 1](media/05-controlling-and-reporting.png)
 
 Lisätietoja vikojen määrittämisestä esitetään aiheessa [Vikojen hallinta](../setup-for-work-orders/fault-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

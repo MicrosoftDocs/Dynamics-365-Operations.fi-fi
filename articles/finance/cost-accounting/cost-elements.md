@@ -76,3 +76,6 @@ Koska kustannustasot vastaavat alimman tason kustannustietoja, varmista, että k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

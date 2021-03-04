@@ -95,3 +95,6 @@ Voit peruuttaa korkotapahtumat käyttämällä **Historia**-painiketta **Asiakas
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

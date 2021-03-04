@@ -48,3 +48,6 @@ Tässä menettelyssä kerrotaan, miten kunkin tuotevariantin ostotilausrivit tä
 17. Valitse määräksi 1000.
 18. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Kun Salesin kentät on täytetty, seuraavat rajoitukset ovat voimassa:
 + Supply Chain Managementin kuluja ja kulujen kohdistuksia ei replikoida Salesiin.
 + Hinnoittelu ei ota huomioon erikoisvähittäismyyntihinnoittelua, joka on määritetty **Vähittäismyyntikanava**-kentässä myyntitilausrivisivulla Supply Chain Managementissa.
 + Supply Chain Managementin **Myynninedistämispalkkioiden hallinta** -osassa määritettyjä alennuksia ei oteta huomioon.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

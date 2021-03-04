@@ -61,3 +61,6 @@ Kun sinulla on vähintään yksi ehdotettu muutos, kaksi uutta välilehteä tuke
     Sivun tilaksi muutetaan **Hyväksymistä odottavat muutokset**.
 
 Työnkulku noudattaa vakiotyönkulkua. Hyväksyjä ohjataan **Toimittaja**-sivulle. Muutokset voidaan tarkistaa **Ehdotetut muutokset** -sivulla. Sitten valitaan **Työnkulku \> Hyväksy**, jolloin työnkulku hyväksytään. Kun kaikki hyväksynnät on käyty läpi, kentät päivitetään ehdottamillasi arvoilla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

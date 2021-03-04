@@ -49,3 +49,6 @@ Tässä ohjeaiheessa kuvataan kirjattujen arvonlisäverotapahtumien joitakin tar
 2. Valitse toimintoruudussa **Arvonlisäverokoodi**.
 3. Valitse **Kirjattu arvonlisävero**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

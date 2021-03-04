@@ -125,3 +125,6 @@ Tämä toiminta on tarkoituksellista. Koska ehdotuksia ei aina hyväksytä, mä�
 
 Voit luoda kauppasopimuksia mille tahansa tarjouspyynnön vastaukselle riippumatta siitä, hyväksyttiinkö vai hylättiinkö vastaus. Lisätietoja: [Tarjouspyyntöjen yleiskatsaus](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

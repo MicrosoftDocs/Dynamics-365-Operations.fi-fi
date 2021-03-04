@@ -96,3 +96,6 @@ Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

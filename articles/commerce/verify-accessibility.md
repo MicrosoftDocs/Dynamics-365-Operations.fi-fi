@@ -85,3 +85,6 @@ Jos haluat käyttää integroitua [Microsoft helppokäyttöisyystiedot](https://
 [Tuotesivun täydentäminen](enrich-product-page.md)
 
 [Luokan saapumissivun täydentäminen](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

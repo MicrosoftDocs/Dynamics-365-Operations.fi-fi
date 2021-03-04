@@ -182,3 +182,6 @@ Voit määrittää säilöjä noudattamalla seuraavia ohjeita.
 
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

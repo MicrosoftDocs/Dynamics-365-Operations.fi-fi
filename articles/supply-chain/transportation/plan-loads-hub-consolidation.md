@@ -39,3 +39,6 @@ Ennen konsolidointia keskukseen **Kuljetussuunnittelu**-vaihtoehto on otettava k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

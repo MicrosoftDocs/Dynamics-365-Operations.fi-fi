@@ -68,3 +68,6 @@ Alla olevassa näyttökuvassa on lisätty tietoja toiminnallisista sijainneista.
 
 ![Esimerkki kuukausittaisesta kuormituksesta ja toiminnallisista sijainneista](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Tässä menetelmässä selvitetään toimittajatili luominen sekä lisätään o
 7. Sulje sivu.
 8. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

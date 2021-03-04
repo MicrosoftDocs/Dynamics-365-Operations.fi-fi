@@ -49,3 +49,6 @@ Tässä menettelyssä kerrotaan, miten erityinen poistovähennys luodaan ja liit
     * Prosentin tai summan oletusarvo saadaan erityisen poistovähennyksen asetuksista.  
 8. Syötä numero Prioriteetti-kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -300,3 +300,6 @@ Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteide
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md)
 - [Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

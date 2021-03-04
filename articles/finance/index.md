@@ -73,3 +73,6 @@ Maiden/alueiden säädökset vaikuttavat veroasetuksiin ja taloushallinnon muihi
 
 Supply Chain Managementin toiminnallisuus kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [!Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

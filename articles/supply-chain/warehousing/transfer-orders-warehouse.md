@@ -53,3 +53,6 @@ Määritä myös varastojen välinen kuljetusaika **Kuljetusvuorokaudet**-sivull
 2. Valitse **Vastaanottopiste**-kentässä **varasto**.
 3. Valitse **Lähetysvarasto**, **Vastaanottovarasto** ja **Kuljetusvuorokaudet**. 
 4. (Valinnainen) Voit määrittää myös kuljetusajan toimitustavan mukaan **Kuljetuspäivät toimitustavan mukaan** -välilehdessä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

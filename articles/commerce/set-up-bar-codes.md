@@ -47,3 +47,6 @@ Viivakoodeja voi luoda manuaalisesti tai automaattisesti. Viivakoodien luonti ta
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Viivakoodin muotojen määrittäminen](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

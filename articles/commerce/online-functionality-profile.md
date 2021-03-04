@@ -67,3 +67,6 @@ Seuraavassa kuvassa on esimerkki verkkotoimintoprofiilista.
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
 
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

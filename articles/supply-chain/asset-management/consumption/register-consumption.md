@@ -95,3 +95,6 @@ Kun teet kulutusmerkintöjä, eri rekisteröintityyppeihin liittyvät taloushall
 >[!NOTE]
 >Kaikkien kolmen kirjaustyypin osalta taloushallinnon dimensioyhdistelmä tarkistetaan ja virheelliset yhdistelmät poistetaan. Tämä on vakioasetus muiden Finance and Operations -sovellusten kanssa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

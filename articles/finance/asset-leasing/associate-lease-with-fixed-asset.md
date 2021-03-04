@@ -54,3 +54,6 @@ Käyttöomaisuus voidaan nyt poistaa Käyttöomaisuuserät-kohdan vakiopoistotoi
 
 > [!NOTE]
 > Jos käyttöomaisuus liitetään vuokrasopimukseen, **Resurssin poisto** ja **Vuokrasopimuksen arvonalennus** -painikkeet eivät ole käytössä resurssin vuokrauksessa. Voit tarkastella resurssin poistoa ja vuokrasopimuksen arvonalennustapahtumia Käyttöomaisuuserät-kohdassa. **Resurssitapahtumat**-painike, joka avaa kyselylomakkeen, on myös poistettu käytöstä. Voit avata myös **Resurssitapahtumat**-kyselyn Käyttöomaisuuserät-kohdassa.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

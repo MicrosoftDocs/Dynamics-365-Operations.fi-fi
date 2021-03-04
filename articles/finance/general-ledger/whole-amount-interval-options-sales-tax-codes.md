@@ -90,3 +90,6 @@ Lisätietoja on kohdassa [Alv-rajan perusteeseen ja Laskentatapoihin perustuva a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

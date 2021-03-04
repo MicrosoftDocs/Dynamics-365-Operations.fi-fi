@@ -51,3 +51,6 @@ Tässä menettelyssä käsitellään tapaa, jolla kustannusobjekteja luodaan tuo
 ## <a name="view-the-imported-cost-centers"></a>Näytä tuodut kustannuspaikat
 1. Valitse Näytä dimension jäsenet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

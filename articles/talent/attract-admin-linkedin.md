@@ -118,3 +118,6 @@ Tämä ominaisuus on tällä hetkellä vain esiversiossa. Varmista ennen näiden
 [Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
 [LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

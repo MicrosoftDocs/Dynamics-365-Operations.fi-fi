@@ -206,3 +206,6 @@ Tarkastele koodia `BankImport_RU`-luokassa `Application Suite` -mallissa nähdä
 
 [ER-kehyksen ohjelmointirajapinnan muutokset Sovelluspäivitykselle 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

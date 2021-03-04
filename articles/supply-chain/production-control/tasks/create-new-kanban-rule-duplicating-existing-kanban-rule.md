@@ -44,3 +44,6 @@ Tässä menettelyssä käsitellään aiemmin luodun kanban-säännön kaksoiskap
 3. Valitse OK.
     * Huomaa, että kanban-säännön 000017 kaksoiskappale luodaan.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

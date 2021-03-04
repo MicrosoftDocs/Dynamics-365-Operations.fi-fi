@@ -58,3 +58,6 @@ Viimeistele uudelleenkohdistus valitsemalla **Käsittele**. Sinua kehotetaan ant
 > Jos haluat antaa kontekstitietoja siitä, miksi nämä lisänimikkeet näytetään, voit lisätä ruudukkoon muita sarakkeita, kuten **Uudelleenkohdistustunnus** ja **Myyntitilaus**.
 > 
 > [![Lisäsarakkeet Tuottohinnan kohdistus ‑sivulla](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

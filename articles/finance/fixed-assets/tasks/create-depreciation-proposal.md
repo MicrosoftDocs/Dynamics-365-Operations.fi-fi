@@ -48,3 +48,6 @@ Tässä ohjeaiheessa kuvataan, kuinka poiston eräehdotukset toimivat ja kuinka 
 3. Valitse **Rivit**.
 4. Valitse **Kirjaa**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Tässä ohjauksessa näytetään, miten ostotilauksiin liittämättömät toimit
 12. Valitse **Kirjaa**.
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

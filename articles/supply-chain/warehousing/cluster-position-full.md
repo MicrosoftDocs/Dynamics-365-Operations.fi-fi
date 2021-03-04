@@ -276,3 +276,6 @@ Tässä skenaariossa klusterikeräily on valmis, ja käyttäjä ohjataan hyllytt
     Näyttöön tulee Klusteri on valmis -sanoma.
 
 Voit nyt käyttää valikon **Myynnin keräily** -vaihtoehtoa jäljellä olevan määrän keräilemiseksi. Voit sitten käyttää valikon **Myynnin kuormaus** -vaihtoehtoa ja siirtää nimikkeet väliaikaisesta sijainnista lastauslaituriin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

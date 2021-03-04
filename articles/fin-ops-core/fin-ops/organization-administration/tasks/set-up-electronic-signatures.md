@@ -77,3 +77,6 @@ Määritä sähköiset allekirjoitukset tällä menettelyllä. Sähköisellä al
 10. Valitse Tallenna.
 11. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -129,3 +129,6 @@ Kyselylomakkeiden ajoituksen avulla voit suunnitella ja jakaa kyselylomakkeita u
 2. Valitse Lopetus.
 3. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

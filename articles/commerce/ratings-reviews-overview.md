@@ -59,3 +59,6 @@ Luokitukset ja arvostelut -ratkaisu sisältää myös Business Intelligence (BI)
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
 [Tuoteluokitusten synkronoiminen Dynamics 365 Commerceissa](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

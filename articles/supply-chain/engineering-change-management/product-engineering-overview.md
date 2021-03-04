@@ -59,3 +59,6 @@ Ota seuraavaksi käyttöön **suunnittelun muutostenhallinnan** määritysavain 
 1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
 1. Laajenna **Kauppa**-solmu ja valitse **Suunnittelun muutostenhallinta** -valintaruutu.
 1. Poista järjestelmän ylläpitotila käytöstä kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

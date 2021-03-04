@@ -45,3 +45,6 @@ Jos huoltosopimuksen riville ei ole määritetty aikaikkunaa, huoltosopimuksesta
 
 [Aikaikkunoiden luominen](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

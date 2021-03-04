@@ -44,3 +44,6 @@ Tässä ohjeaiheessa käsitellään tapaa, miten käyttäjä, jolla on järjeste
 2. Valitse **Määritä aktiivinen**.
 
 ![Sähköisen raportoinnin työtilan sivu](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

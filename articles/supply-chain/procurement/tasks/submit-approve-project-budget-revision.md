@@ -46,3 +46,6 @@ Tässä tehtävässä käytetään SSI-tietojoukkoa.
 12. Kirjoita Kommentti-kenttään arvo.
 13. Valitse Lähetä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Tammikuun 31. päivän poistoehdotus on seuraava: arvioitu määrä × prosentti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

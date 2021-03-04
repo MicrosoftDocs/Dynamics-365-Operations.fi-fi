@@ -74,3 +74,6 @@ Seuraavassa kaaviossa on verkkotulostusta tukevat perusosat.
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Huomaa, että yhteen tulostimeen voidaan rekisteröidä useita asiakirjan reititysagentteja. Isännöity palvelu ratkaisee tulostinasetukset käyttämällä verkkopolkua, joka tunnistaa yksilöllisesti jokaisen verkkotulostimen. Tämän vuoksi myös sellainen tulostin, johon on rekisteröity useita asiakasohjelmia, näkyy yhtenä valintana sovellusten käytettävissä olevien tulostimien luettelossa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Voit määrittää pyöristyssäännöt Dynamics 365 Human Resourcesissa organis
 3. Määritä arvot seuraaville: **Pyöristys lähimpään**, **Skenaario** ja **Pyöristystapa**.
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

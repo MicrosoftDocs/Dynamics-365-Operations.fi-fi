@@ -39,3 +39,6 @@ Alla olevassa kuvassa on yleiskatsaus työnkulkuun huoltosuunnitelmien ja kunnos
 
 ![Kuva 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Lisätietoja on kohdassa [Tilintarkastuskäytännön säännöt](audit-policy-ru
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -676,3 +676,6 @@ Työntekijät voivat ilmoittaa passin tiedot. Tämä tietoa on **Passi**-tunnust
 
 Työntekijät voi määrittää useita tunnistenumeroita **Passi**-tunnuksesta. Vain nykyiset aktiiviset passitapahtumat integroidaan Dayforceen. Mikäli kaikki passitapahtumat ovat vanhentuneet, passi, joka on viimeksi myönnetty on integroitu Dayforceen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

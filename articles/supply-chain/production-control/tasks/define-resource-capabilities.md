@@ -49,3 +49,6 @@ Resurssin ominaisuudet kertovat, mitä operatiiviset resurssit voivat tehdä. Aj
 5. Syötä numero Taso-kenttään.
     * Kun määrität, että työ tai työvaihe vaatii tietyn ominaisuuden, voit määrittää myös vaadittavan vähimmäistason. Ominaisuuden tason avulla voit erotella resurssit, jotka voivat suorittaa saman työn, mutta jotka käyttävät erilaista nopeutta, voimaa jne.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

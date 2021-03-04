@@ -94,3 +94,6 @@ Voit pyytää käyttöoikeusroolien muokkaamista käyttäjälle seuraavasti:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ T채ss채 toimintaohjeessa kuvataan, miten voit luoda myyntihinnan valintaehdon m�
 4. Valitse Ehto-kent채ss채 Asiakasryhm채 10. 
 5. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

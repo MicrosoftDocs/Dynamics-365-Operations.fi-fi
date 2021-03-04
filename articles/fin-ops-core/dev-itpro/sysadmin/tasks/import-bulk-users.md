@@ -58,3 +58,6 @@ Kun tuonti on päättynyt, käyttäjien roolien määrittäminen on pakollista.
 ## <a name="run-in-a-sandbox-environment"></a>Eristysympäristön suorittaminen
 1. Valitse **Erätuonti**.
 2. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

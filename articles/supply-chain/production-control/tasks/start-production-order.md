@@ -71,3 +71,6 @@ Tässä menettelyssä selvitetään, miten tuotantotilaus aloitetaan työnohjauk
 7. Valitse Kirjaa.
 8. Valitse OK.
     * Yksittäisiin toimintoihin käytetty aika kirjataan reitityskorttikirjauskansioon Myös hyväksyttyjen ja virheellisten määrä voidaan raportoida.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Työntekijän osaamisanalyysi  | Sertifioitu, taso, tason päivämäärä ja taito                                                                    | Työntekijän nimi, osaamisalue |
 | Suoritus              | Pisteytys, kuvaus arviointimalli                                                                      | Nykyisen työntekijä, nykyinen toimi, työntekijätrendi, työn ensisijainen osaamisalue, aiemmin määritetty toimi, toimitrendi, poistettu työntekijä |
 | Osaamisalue                    | Taito, osaamisalueen tyyppi ja luokitus                                                                              | Työntekijän osaamisanalyysi, työn ensisijainen osaamisalue |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

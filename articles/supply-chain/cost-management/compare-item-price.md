@@ -121,3 +121,6 @@ Seuraavassa on esimerkki siitä, miten **Nimikehintojen vertailun varasto** -rap
 1. Näkyviin tulee **Suorituksen yhteenveto** -sivu, jolla näkyy vientityön tila ja vietyjen entiteettien luettelo. Valitse **Vertaa nimikehintoja** -entiteetti, joka on **Entiteetin käsittelyn tila** -alueella. Lataa tästä entiteetistä viedyt tiedot valitsemalla **Lataa tiedosto**.
 
 Lisätietoja tietojen hallinnan käyttämisestä tietojen viemisessä on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

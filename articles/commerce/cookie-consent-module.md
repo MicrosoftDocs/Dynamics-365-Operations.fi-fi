@@ -62,3 +62,6 @@ Lisätietoja otsikon otsikon ja moduuleista on kohdassa [Otsikkomoduuli](author-
 [Ylätunnistemoduuli](author-header-module.md) 
 
 [Evästeen yhteensopivuus](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

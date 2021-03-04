@@ -89,3 +89,6 @@ Sisäisen pääsuunnittelumoduulin suorituskykyä voi parantaa seuraavasti:
 
 > [!NOTE]
 > Tämä rajoittaa kyseisessä pääsuunnitelmassa suoritetut hajotukset yhteen päivään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

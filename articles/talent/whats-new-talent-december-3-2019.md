@@ -180,3 +180,6 @@ Esiversiotoiminnot ovat käytettävissä vain **eritys** ympäristöissä.
 ### <a name="print-performance-reviews"></a>Kehityskeskustelujen tulostaminen
 
 Katso lisätietoja Dynamics 365: vuoden 2019 julkaisuaallon 2 suunnitelman kohdasta [Kehityskeskustelujen tulostaminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

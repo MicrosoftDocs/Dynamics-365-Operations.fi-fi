@@ -36,3 +36,6 @@ Luomalla rivejä **Tunnisteiden laskenta** -sivulla, varaat tunnistenumeron kull
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Inventointi](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Lataa seuraavat tiedostot suorittaaksesi tehtäväoppaan:
 
 - [ER-mallin määritys - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-muodon määritys - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ajoitus voi siis selittää tämän ongelman. Päivitä analytiikkatyötilat alo
 1. Valitse sivun yläosassa **Muokkaa** ja määritä ajoitetuksi aloituspäiväksi ja -ajaksi arvo, joka päivittää analytiikkaan lähellä kuluvaa ajankohtaa.
 
 ![Erätyöt](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

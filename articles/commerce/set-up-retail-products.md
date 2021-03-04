@@ -40,3 +40,6 @@ Sinun on luotava ja määritettävä tuotteet uudelleen myytäviksi Commerce-sov
 4. **Lisää tuotteet valikoimiin.** Valikoiman edustaa kanavissa tarjottavien tuotteiden kokoelmaa. Voit määrittää yhden tai useamman valikoiman ja määrittää kunkin tuotteen yhteen tai useampaan valikoimaan. Jos haluat määrittää tuotteita kanaville, määritä valikoimat kyseisille kanaville. Luodessasi valikoimaa voit lisätä tuotteita, joita ei ole vielä vapautettu yritykselle. Tuotteet on kuitenkin julkaistava jollekin yritykselle, ennen kuin ne voidaan tuoda kanavien käyttöön.
 5. **Lisää tuotteet siirtymishierarkioihin.** Ennen kuin tuotteita voidaan selata verkossa tai myyntipisteessä, ne on luokiteltava johonkin Commercen siirtymishierarkiaan.
 6. **Lisää tuotteet luetteloon.** Tämä vaihe on myyntipisteiden osalta valinnainen, mutta verkkokaupat edellyttävät, että tuotteet sisältyvät vähintään yhteen luetteloon.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

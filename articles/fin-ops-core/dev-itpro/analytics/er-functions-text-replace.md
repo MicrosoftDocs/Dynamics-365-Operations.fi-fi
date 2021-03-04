@@ -81,3 +81,6 @@ Jos `regular expression flag` -argumentti on **EPÄTOSI**, tämä funktio palaut
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

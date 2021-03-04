@@ -142,3 +142,6 @@ Tuotantotilauksen virhemäärää ei voi ilmoittaa ellei myös hyväksyttyjen m�
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Voiko valmiiksi ilmoitettujen tuotteiden sarjanumeroita jäljittää kulutettujen tuotteiden sarjanumeroiden perusteella?
 
 Valmiiden tuotteiden sarjanumeroita ei voi jäljittää käyttämällä niiden materiaalien sarjanumeroita, joita tuotantotilaus käyttää kyseisten valmiiden tuotteiden valmistamiseen. Tätä skenaariota ei tueta tällä hetkellä. Ongelman voi kiertää luomalla tuotantotilauksia, joiden määrä on 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

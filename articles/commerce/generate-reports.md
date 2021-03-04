@@ -138,3 +138,6 @@ Voit luoda **Organisaation myynti** -raportin seuraavasti.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Kaupan aloitussivu](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

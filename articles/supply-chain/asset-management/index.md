@@ -38,3 +38,6 @@ Alla oleva kuva on esimerkki liityntäkohdista muihin Finance and Operationsin m
 ![Yleiskatsaus siitä, miten resurssien hallinta integroituu](media/overview-integrate2.jpg)
 
 Resurssien hallinnan avulla voit hallita ja suorittaa tehokkaasti monenlaisiin laitteisiin, kuten koneisiin, tuotantolaitteisiin ja ajoneuvojoihin liittyviä tehtäviä, kuten laitteiden hallinta ja huolto. Resurssien hallinta tukee ratkaisuja monilla eri aloilla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

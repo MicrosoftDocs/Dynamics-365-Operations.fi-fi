@@ -42,3 +42,6 @@ Esimerkiksi myyntitilauksessa on kaksi nimikettä: yksi toimitusta varten ja toi
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Vapautustila koskee vain tilausrivejä, joiden nimikkeissä varastonhallinta on otettu käyttöön. Tämän vuoksi vapautustilaksi jää *Osittain vapautettu* tässä skenaariossa. Microsoft on arvioinut ongelman ja määrittänyt, että se on ominaisuuden rajoitus. Laajennus voitaisiin lisätä pakkausluettelon ja laskutusprosessin osana päivittämään vapautustila.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

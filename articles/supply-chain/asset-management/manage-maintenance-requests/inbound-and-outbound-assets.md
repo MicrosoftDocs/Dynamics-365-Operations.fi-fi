@@ -71,3 +71,6 @@ Kun huolto- tai korjaustyö on suoritettu, voit rekisteröidä resurssin palaute
 2. Valitse resurssi tai ylläpitopyyntö.
 3. Valitse **Toimita resurssit**.
 4. Määritä päivämäärä ja kellonaika **Toimitettu**-kentässä. Valitse sitten **OK**. Tietue poistetaan **Lähtevät resurssit** -luettelosivulta.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

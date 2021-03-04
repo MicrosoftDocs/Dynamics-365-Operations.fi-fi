@@ -541,3 +541,6 @@ Jos lajittelupaikat on suljettava manuaalisesti lähtevien lajittelumallin **Sul
 
 > [!IMPORTANT]
 > Kun varastosiirtotyö on luotu lajittelusijainnista, työtä ei saa peruuttaa. Muussa tapauksessa paikka ja kontit poistetaan järjestelmästä eikä niiden käsittely ole enää mahdollista. Myös varasto poistetaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

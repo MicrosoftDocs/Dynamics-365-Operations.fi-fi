@@ -80,3 +80,6 @@ Alla olevassa kuvassa näkyy esimerkki vikarekisteröinnistä.
 >[!NOTE]
 >Voit tulostaa useiden resurssien tai resurssityyppien vikaraportin valitsemalla **Resurssien hallinta** > **Raportit** > **Resurssit** > **Resurssin vika**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

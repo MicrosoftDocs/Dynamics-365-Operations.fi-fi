@@ -69,3 +69,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 Kun olet suorittanut nämä vaiheet, voit laajentaa käytettävissä olevan varaston toimipaikan mukaan sekä varastotiedot varaston tietoihin lisäämällä uudet kentät. Näin varmistat, että laajennetut kentät tunnistetaan ja sisällytetään tietojen siirron aikana, joka käyttää kyseisiä tietokokonaisuuksia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

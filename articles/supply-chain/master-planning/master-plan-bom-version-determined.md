@@ -44,3 +44,6 @@ Kaikkien kelvollisten toimipaikkakohtaisten tai yleisten tuoterakenneversioiden 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

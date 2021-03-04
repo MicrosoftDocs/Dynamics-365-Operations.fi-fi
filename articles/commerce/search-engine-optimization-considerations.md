@@ -56,3 +56,6 @@ Koska Dynamics 365 Commerce tukee WYSIWYG-todennettuja esikatseluita visuaalises
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
 
 [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

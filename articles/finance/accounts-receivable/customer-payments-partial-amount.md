@@ -60,3 +60,6 @@ Asiakkaat voivat suorittaa osittaisen maksun, jossa jäljellä oleva summaa ei m
 
 
 Lisätietoja on kohdassa [Asiakkaan maksujen tallettaminen](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

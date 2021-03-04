@@ -48,3 +48,6 @@ Voit saada tukea Onboard erillissovellukseen käyttämällä seuraavan taulukon 
 | Ilmoita ongelmasta. | Valitse sivun oikeasta yläkulmasta **Ohje**-painike (**?**) ja valitse sitten **Ilmoita ongelmasta**. Kirjoita ongelman kuvaus ja sisällytä sähköpostiosoite, jos haluat seurata ilmoitettua ongelmaa. |
 | Vastauksia kysymyksiin Talent-lisensoinnista. | Ota yhteyttä kumppaniin tai Microsoftin myyntiedustajan. |
 | Uusien ominaisuuksien ja toimintojen pyytäminen Onboardissa. | Valitse **Ohje**-painike (**?**) ja valitse **Ideat**. Voit myös vierailla [Dynamics 365 Talent: Onboard Ideas](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) -sivustolla tarkastellaksesi, hakeaksesi ja äänestääksesi aiemmin luotuja ideoita tai lisätäksesi uusia ideoita. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

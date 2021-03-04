@@ -83,3 +83,6 @@ Jos käyttäjäkohtaista tilitysprioriteettia ei ole, tapahtumat valitaan tility
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

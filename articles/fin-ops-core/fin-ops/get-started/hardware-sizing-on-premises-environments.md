@@ -141,3 +141,6 @@ Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyks
 ## <a name="virtualization-and-oversubscription"></a>Virtualisointi ja ylitilaus
 
 Toiminnan kannalta keskeiset palvelut, kuten AOS, on isännöitävä virtuaali-isännissä, joille on varattu omat resurssit (ytimet, muisti ja levy).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

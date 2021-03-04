@@ -54,3 +54,6 @@ Lisätietoja on ohjeaiheessa [Konsolidaatioryhmien ja lisäkonsolidaatiotilien l
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

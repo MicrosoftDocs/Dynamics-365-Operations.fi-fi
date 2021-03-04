@@ -92,3 +92,6 @@ Jos menetelmä suoritetaan toisella tietojoukolla, edellytyksenä on, että vapa
 12. Sulje sivu.
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

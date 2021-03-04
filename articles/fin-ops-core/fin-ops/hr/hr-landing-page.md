@@ -93,3 +93,6 @@ Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri t
 - [Kyselylomakkeiden suunnitteleminen](../../../talent/design-questionnaires.md)
 - [Kyselylomakkeiden jakelu ja aikataulutus](../../../talent/distribute-questionnaires.md)
 - [Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

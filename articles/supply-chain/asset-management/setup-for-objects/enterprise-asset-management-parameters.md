@@ -107,3 +107,6 @@ Valitse tiedostotyypit, joita voidaan käyttää työtilausraporttiin liittyvien
 **Numerosarjat**-linkki
 
 Valitse tässä osassa tarvittavat numerosarjat. Resursseille on kaksi numerosarjaa: yksi manuaalisesti luoduille resursseille ja toinen odottavien resurssien kautta luoduille resursseille.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Seuraavien ohjeiden avulla voit määrittää tehtävän uudelleen toiselle työ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

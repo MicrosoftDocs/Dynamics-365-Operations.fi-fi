@@ -81,3 +81,6 @@ Nämä esimerkit osoittavat, miten voit luoda erityyppisiä työnkulkuehtoja kä
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

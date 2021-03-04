@@ -132,3 +132,6 @@ Voit luoda laskun, jossa on negatiivinen summa ja josta tulee hyvityslaskuksi lu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

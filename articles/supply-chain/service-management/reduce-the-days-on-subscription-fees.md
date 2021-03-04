@@ -55,3 +55,6 @@ Jos vähennyskauden **Aloituspäivämäärä**-arvo on 21.1. (31 miinus 10), voi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

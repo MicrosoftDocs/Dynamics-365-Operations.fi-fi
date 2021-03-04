@@ -111,3 +111,6 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

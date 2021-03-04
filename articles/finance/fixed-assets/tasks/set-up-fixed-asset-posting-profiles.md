@@ -123,3 +123,6 @@ Tässä tehtävän ohjauksessa määritetään käyttöomaisuuden kirjausarvot. 
 88. Määritä **Päätili**-kenttään haluamasi arvot.
 89. Määritä **Vastatili**-kenttään haluamasi arvot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

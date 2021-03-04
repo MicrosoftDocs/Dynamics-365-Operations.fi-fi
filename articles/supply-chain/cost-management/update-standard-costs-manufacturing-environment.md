@@ -48,3 +48,6 @@ Jokainen tilanne vaatii tarkkaa harkintaa siitä, kuinka vakiokustannukset pitä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

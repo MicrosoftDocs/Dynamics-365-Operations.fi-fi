@@ -55,3 +55,6 @@ Takuusopimukseen voi kuulua useita sopimusrivejä, jotka kattavat työajan, kulu
     4. Kirjoita takuurivin kattavuusprosentti **Prosentti**-kenttään. Prosenttiosuus ilmaisee, kuinka paljon yrityksesi kattaa takuuta.
 
 ![Takuusivu](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

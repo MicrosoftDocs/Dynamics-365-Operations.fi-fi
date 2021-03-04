@@ -154,3 +154,6 @@ Voit käyttää seuraavia asetuksia, jos materiaalit on poistettava aina manuaal
 | Ilmoita valmiiksi |   Automaattinen tuoterakennekulutus    | <strong>Ei koskaan</strong>  |
 | Ilmoita valmiiksi | Päivitä valmis online-raportti | <strong>Tila</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

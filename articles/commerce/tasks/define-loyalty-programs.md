@@ -79,3 +79,6 @@ Seuraavassa kerrotaan, miten kaksi tasoa sisältävä kanta-asiakasohjelma mää
 39. Sulje sivu.
 40. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

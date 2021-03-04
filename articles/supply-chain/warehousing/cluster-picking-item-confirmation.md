@@ -42,3 +42,6 @@ Klusterikeräilyn nimiketarkistus toimii samalla tavalla kuin nimikkeen tarkista
 |        Vaihtoehto        |                                    kuvaus                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Tuotteen vahvistus | Voit skannattaessa tarkistaa kunkin varastokappaleen mobiililaitteessa. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

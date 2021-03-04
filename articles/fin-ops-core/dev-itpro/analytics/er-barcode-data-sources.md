@@ -303,3 +303,6 @@ Jos viivakoodit kuitenkin tuotetaan käyttämällä **Viivakoodi**-tietolähdett
 - [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
 - [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
 - [NUMBERFORMAT-funktio](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

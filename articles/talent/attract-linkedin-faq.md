@@ -117,3 +117,6 @@ Seuraavassa taulukossa esitellään eri vaihtoehdot, jolla työpaikkoja voi julk
 [Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa](./attract-linkedin-recruiter.md)
 
 [LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

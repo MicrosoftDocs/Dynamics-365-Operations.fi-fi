@@ -80,3 +80,6 @@ Seuraavan kuvan yläosassa näkyy käyttöliittymän oletusulkoasu. Alaosassa n�
 Tuotannon käyttöliittymä kirjautuu automaattisesti ulos, jos kukaan ei käytä sitä 12 tuntiin. Supply Chain Managementin käyttäjän on sitten kirjauduttava uudelleen sisään. Aikakatkaisurajan voi kuitenkin pidentää enintään 90 päivään.
 
 Aikakatkaisurajaa voi pidentää kirjautumalla Supply Chain Managementiin ja valitsemalla **Järjestelmän hallinta \> Käyttäjät \> Istunnon laajennukset**. Määritä Supply Chain Managementin käyttäjätili, jota käytetään laitteeseen kirjautumiseen, ja kuinka monta tuntia istunto pysyy aktiivisena.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

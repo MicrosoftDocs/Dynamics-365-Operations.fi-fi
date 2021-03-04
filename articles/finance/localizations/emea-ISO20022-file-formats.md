@@ -129,3 +129,6 @@ Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoi
 - [Maksutavan määrittäminen ISO20022-tilisiirtoja varten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Maksutavan määrittäminen ISO20022-suoraveloitusta varten](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Määritä toimittajat ja toimittajien pankkitilit ISO20022-tilisiirtoja varten](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

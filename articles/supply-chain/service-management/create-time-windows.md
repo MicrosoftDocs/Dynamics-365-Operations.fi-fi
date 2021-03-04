@@ -40,3 +40,6 @@ Voit optimoida huoltotilausrivien ajoittamisen aikaikkunoiden avulla.
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Aikaikkunat](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

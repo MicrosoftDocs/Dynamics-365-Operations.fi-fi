@@ -41,3 +41,6 @@ Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tallenne
 7. Lisää valitut käytettävissä olevat ryhmät osoitekirjaan nuolta napsauttamalla.
 8. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

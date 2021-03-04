@@ -88,3 +88,6 @@ Kanavan siirtymishierarkian näyttöjärjestys näkyy pääkonttorissa, tuotelue
 
 > [!NOTE]
 > Mukautettu lajittelujärjestys on oletusarvoisesti poissa käytöstä. Lisätietoja tämän toiminnon ja muiden toimintojen ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

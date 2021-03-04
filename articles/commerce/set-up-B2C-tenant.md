@@ -362,3 +362,6 @@ Valinnainen toissijainen järjestelmänvalvojatili voidaan lisätä B2C-vuokraaj
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

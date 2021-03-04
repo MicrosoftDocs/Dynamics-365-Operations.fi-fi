@@ -82,3 +82,6 @@ Tuoterakenteen määrä on 1 ja tuotannon määrä 110. Kulutuksen laskentakaava
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

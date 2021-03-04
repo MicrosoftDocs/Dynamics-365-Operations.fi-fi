@@ -59,3 +59,6 @@ Seuraavaksi sinun tulee liittää tilit kulutyyppeihin. Näitä tilejä veloitet
 7. Valitse asianmukaisten kenttien rahoitusleasingsopimuksen päätili ja käyttöleasingsopimuksen päätili.
 
 Kun olet tehnyt nämä vaiheet, voit lisätä kuluja valitun vuokrasopimuksen **Toimeenpanokustannusten maksuaikataulu** -riveillä **Vuokrauksen tiedot** -sivulla. Vaihtoehtoisesti voit lisätä kuluja, kun luot uuden vuokrasopimuksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

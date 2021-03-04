@@ -112,3 +112,6 @@ Lisätietoja rekisteröintitunnusten käsittelystä mukaan lukien vaaditut edell
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

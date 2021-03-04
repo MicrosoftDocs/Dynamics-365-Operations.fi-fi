@@ -43,3 +43,6 @@ Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirja
 - Hankintaehdotukseen sisällytetään vain se käyttöomaisuuserä, jonka hankintapäivämäärä ja -hinta on määritetty kirjassa.  
 11. Valitse sivulla **Kirjat**-välilehti.
 12. Valitse **Kirjaa**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

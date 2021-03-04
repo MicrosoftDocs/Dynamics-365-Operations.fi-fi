@@ -76,3 +76,6 @@ Aikavälien prosenttien yhteissumman ei tarvitse olla 100. Näyttöön avautuu k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

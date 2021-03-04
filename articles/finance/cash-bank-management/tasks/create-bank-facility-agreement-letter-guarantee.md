@@ -57,3 +57,6 @@ T채ss채 teht채v채ss채 luodaan pankin limiittisopimus takuuasiakirjan k채sittely�
 5. Valitse Tallenna.
 6. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

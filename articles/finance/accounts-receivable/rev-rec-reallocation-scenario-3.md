@@ -81,3 +81,6 @@ Myyntitilaus laskutetaan uudelleen lisätyn nimikkeen osalta. Asiakkaalle esitet
 [![Tositetapahtumat-sivu, jolla on kirjattu kirjanpitomerkintä](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Koska tuoton ja myynnin summa on suurempi kuin 319,50 $, kirjataan erotus 14,48 $. Tämä summa tyhjentää saldon osittaisen laskun tuoton selvitystililtä. Kyseinen saldo päivitettiin uuteen kirjanpitomerkintään, joka kirjattiin uudelleenkohdistuksen jälkeen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

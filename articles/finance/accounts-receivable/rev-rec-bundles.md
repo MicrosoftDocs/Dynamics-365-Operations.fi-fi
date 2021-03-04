@@ -110,3 +110,6 @@ Kirjauksen jälkeen luotu laskukirjauskansio ei sisällä päänimikettä myynti
 On tärkeää, ettei laskukirjauskansioon sisällytetä päänimikettä myyntirakenteesta, koska kaikki laskun kirjaamisen jälkeen suoritettavat prosessit perustuvat tähän laskukirjauskansioon. Jos esimerkiksi luot hyvityslaskun toimintoruudun **Myynti**-välilehdessä, luotava hyvityslasku sisältää komponenttinimikkeet, mutta ei päänimikettä.
 
 [![Hyvityslasku, jossa näkyvät komponenttinimikkeet mutta ei päänimike](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

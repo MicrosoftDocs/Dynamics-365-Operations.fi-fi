@@ -57,3 +57,6 @@ Tämän tehtävä luotiin USSI-tietojoukkoa.
 21. Kirjoita **Kommentti**-kenttään arvo.
 22. Valitse **Lähetä**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

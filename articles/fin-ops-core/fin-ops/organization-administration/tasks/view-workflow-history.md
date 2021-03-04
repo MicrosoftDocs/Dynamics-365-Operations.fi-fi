@@ -46,3 +46,6 @@ Tässä aiheessa kuvataan vaiheet, joiden avulla voit tarkastella työnkulkujär
     - **Määritä uudelleen** -painike avaa valintaikkunan, jossa voit määrittää työnimikkeen uudelleen toiselle käyttäjälle.  
     - Varmista, että **Seurantatiedot**-osa on laajennettu. Voit tarkastella tässä osassa valitun asiakirjan työnkulkuhistoriaa.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

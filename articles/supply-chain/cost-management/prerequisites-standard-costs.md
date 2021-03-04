@@ -80,3 +80,6 @@ Jos asiakas haluaa muuttaa aiemmin luodut nimikkeensä standardikustannusvarasto
 
 - [Suorien materiaalien standardikustannusten määrittäminen Dynamics 365 for Finance and Operationsissa](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Vakiintuneet välittömät työkustannukset Dynamics 365 for Finance and Operationsissa](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

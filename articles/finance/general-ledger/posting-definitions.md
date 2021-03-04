@@ -62,3 +62,6 @@ Seuraavat rajoitukset ovat voimassa, kun luot kirjausmääritysten linkkejä:
 Lisätietoja on kohdassa [Määritysesimerkkien kirjaaminen](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

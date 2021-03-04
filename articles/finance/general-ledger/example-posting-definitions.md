@@ -128,3 +128,6 @@ Tässä esimerkissä kaikki Tilirakenne – Tuloslaskelma -skenaarioon kuuluvat 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

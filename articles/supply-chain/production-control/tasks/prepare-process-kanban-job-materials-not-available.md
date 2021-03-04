@@ -52,3 +52,6 @@ Tässä menettelyssä keskitytään prosessin kanban-töiden valmisteluun, kun o
 6. Valitse Valmistele.
     * Huomaa, että työn tilan kuvake osoittaa työn olevan valmis.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

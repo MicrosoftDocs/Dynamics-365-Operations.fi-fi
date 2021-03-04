@@ -115,3 +115,6 @@ Lisätietoja on seuraavissa aiheissa:
 
  - [Perimistietojen tarkistaminen](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

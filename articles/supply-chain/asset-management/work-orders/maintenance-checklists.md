@@ -80,3 +80,6 @@ Alla olevassa kuvassa näkyy esimerkki ylläpidon tarkistuslistasta.
 
 ![Kuva 1](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

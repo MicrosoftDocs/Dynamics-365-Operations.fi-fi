@@ -83,3 +83,6 @@ Toimitusvaihtoehdot-moduuli voidaan lisätä vain kassalle-moduuliin. Lisätieto
 [Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille](pro-rate-charges-matching-lines.md)
 
 [Määritä toimitustavat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

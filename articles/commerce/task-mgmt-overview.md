@@ -53,3 +53,6 @@ Seuraavassa kuvassa näkyy tehtävienhallinnan käsitteellinen arkkitehtuuri Com
 [Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille](task-mgmt-assign-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

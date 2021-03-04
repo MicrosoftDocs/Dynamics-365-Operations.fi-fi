@@ -123,3 +123,6 @@ Seuraavassa kuvassa on esimerkki sähköisen kaupankäynnin tilauksesta, jossa n
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Noudon tiedot -moduuli](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

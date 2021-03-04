@@ -55,3 +55,6 @@ Voit myös suorittaa seuraavat tehtävät kaikissa ylläpitosopimusryhmään lii
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

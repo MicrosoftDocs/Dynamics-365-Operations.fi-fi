@@ -71,3 +71,6 @@ Skaalattava ominaisuus on käytettävissä vain, jos kaikki reseptin nimikekompo
 
 ## <a name="use-step-consumption"></a>Vaihekulutuksen käyttö
 Vaihekulutus poistaa tarpeen syöttää ainesosan määrä **Reseptirivi**-välilehdellä. Sen sijaan vaihekulutus määritetään siten, että sillä on **Sarjasta**-arvo ja **Määrä**-arvo. Erätilauksen määrän perusteella valitaan sen sarjakohtaisen vaihekulutuksen tiedot, joka vastaa kyseistä määrää. Vaihekulutuksen käyttö on hyödyllistä, kun kulutus ei ole eräkoon kannalta lineaarista, sillä se nostaa vaatimusta vain, kun tietty määräraja ylittyy. Toiminnon voi ottaa käyttöön uudessa reseptissä vaihtamalla **Kulutuksen laskenta** -ryhmässä reseptin ainesosa-asetuksen arvosta **Vakio** arvoon **Vaihe**. Voit määrittää tämän kulutusmenetelmään **Reseptirivi**-sivun **Asetukset**-välilehdellä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

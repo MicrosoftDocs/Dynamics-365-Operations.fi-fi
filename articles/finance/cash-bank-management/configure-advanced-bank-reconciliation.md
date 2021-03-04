@@ -61,3 +61,6 @@ Asetus **Täsmäytä tuonnin jälkeen** tarkistaa automaattisesti pankin tiliott
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

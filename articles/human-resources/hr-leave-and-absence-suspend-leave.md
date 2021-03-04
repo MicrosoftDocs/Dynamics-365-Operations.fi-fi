@@ -49,3 +49,6 @@ Jos jaksotukset käsitellään, kun työntekijän loma keskeytetään, keskeytet
 - [Loma- ja poissaolotyyppien määrittäminen](hr-leave-and-absence-types.md)
 - [Jaksota loma- ja poissaolosuunnitelmia](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

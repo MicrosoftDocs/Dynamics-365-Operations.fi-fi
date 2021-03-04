@@ -243,3 +243,6 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

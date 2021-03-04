@@ -44,3 +44,5 @@ Tämä versio sisältää seuraavat Attractin LinkedIn Recruiter -integroinnin m
 - Selaimen tuen päivitykset (LinkedIn ei enää tue Internet Explorer 11 -versiota1. heinäkuuta 2020 lähtien)
 
 Lisätietoja on kohdassa [Ehdokkaiden rekrytointi LinkedIn Recruiterin avulla Attractissa](attract-linkedin-recruiter.md).
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

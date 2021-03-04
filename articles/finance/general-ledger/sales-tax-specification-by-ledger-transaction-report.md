@@ -58,3 +58,6 @@ Kun luot raportin, seuraavat oletuskentät ovat käytettävissä. Voit käyttä�
 Jos haluat näyttää raportissa vain muut kuin verotilit, määritä suodatusehto, kuten tähtimerkki (\*), seuraavan kuvan osoittamalla tavalla.
 
 ![Raportti, joka näyttää muut kuin verotilit](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

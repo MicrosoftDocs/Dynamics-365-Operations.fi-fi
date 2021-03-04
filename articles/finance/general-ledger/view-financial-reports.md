@@ -87,3 +87,6 @@ Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

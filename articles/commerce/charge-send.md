@@ -42,3 +42,6 @@ Veloita lähetys -toiminto käyttää seuraavia myyntipisteen toimintoja: Lähet
 Lähetysosoitteen valintavaihtoehdot säilyvät ennallaan.
 
 Tilausrivin toteuttamisessa käytettävät toimitustavat perustuvat tuotteiden ja osoitteiden sallittujen toimitustilojen konfiguraatioon. Koska sallittujen toimitustilojen sääntöjä ylläpidetään Headquarters-palvelussa, myyntipisteen asiakasohjelma hakee lähetysrivin sallitut toimitustavat reaaliaikaisesti.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -171,3 +171,6 @@ Tälle yhdistelmälle on määritettävä seuraavat kentät:
 
 > [!IMPORTANT]
 > Lisää kustannustekijä soveltuvaan täyttämisprofiiliin, jotta JTH voi käyttää näitä kustannuksia suorittamisen aikana.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Hypoteesin vahvistamista varten kokeen onnistuminen tai epäonnistuminen on sido
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Kokeilun määrittäminen](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

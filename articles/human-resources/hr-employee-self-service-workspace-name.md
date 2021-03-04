@@ -45,3 +45,6 @@ Jos organisaatiossa on vapaaehtoisia tai muita ei-työntekijöitä, haluat ehkä
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Valitse ja päivitä vapautetut tuotteet ja tuotevariantit seuraavien ehtojen mu
 - [Tuotteen elinkaaren tilan määrittäminen vapautetulle tuotteelle](tasks/product-lifecycle-state-released-product.md)
 - [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan määrittäminen](tasks/obsolete-product-variants.md)
 - [Tuotteen elinkaaren tason luonti jättämään tuotteita pääsuunnittelun ulkopuolelle](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
