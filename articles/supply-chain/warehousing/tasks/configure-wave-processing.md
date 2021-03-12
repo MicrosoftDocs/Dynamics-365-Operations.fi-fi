@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e22816b33739141fbcd188d631a07313db415959
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427461"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977285"
 ---
 # <a name="configure-wave-processing"></a>Aallon käsittelyn kokoonpano
 
@@ -61,6 +60,3 @@ Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn
 Myynti- ja kanbantilauksille inventaario tulee varata ennen kuin tilaus viedään varastolle. Muussa tapauksessa tietyn kohdistuksen rivejä ei voi käsitellä aallossa. Tuotantotilauksille on myös mahdollista valita osittaisen varaamisen salliminen. Tämä on hyödyllistä esimerkiksi silloin, kun sinulla on tuotannon käynnistämiseen tarvittavat materiaalit ja voit odottaa, kunnes muut materiaalit ovat käytettävissä saattaaksesi prosessin loppuun. Jos valitset tämän vaihtoehdon, pitää vapautus varastoprosessiin toistaa manuaalisesti, kun muut materiaalit tulevat käyttöön.  
 25. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

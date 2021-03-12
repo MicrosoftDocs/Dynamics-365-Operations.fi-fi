@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2153bbca2be7c72e48b9dc51b1f7fdbe2ab89903
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529527"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977735"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Asiakasportaalin asentaminen, määrittäminen ja päivittäminen
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529527"
 Asiakasportaalin käyttöönotto edellyttää, että sinulla on seuraavat käyttöoikeudet:
 
 - **Power Apps -portaalit** – Asiakasportaalin isännöintiin tarvitaan tämä käyttöoikeus. Portaalien käyttöoikeus perustuu käyttöön. Lisätietoja on kohdassa [Power Apps -portaalien käyttöoikeussopimuksen vaatimukset](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Kaksoiskirjoitus** – Sinulla on oltava tarvittavat käyttöoikeudet, jotta voit ottaa käyttöön Supply Chain Management -yksiköiden kaksoiskirjoituksen. Lisätietoja on kohdassa [kaksoiskirjoituksen järjestelmävaatimukset](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Kaksoiskirjoitus** – Sinulla on oltava tarvittavat käyttöoikeudet, jotta voit ottaa käyttöön Supply Chain Management -taulukoiden kaksoiskirjoituksen. Lisätietoja on kohdassa [kaksoiskirjoituksen järjestelmävaatimukset](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Kaksoiskirjoituksen riippuvaisuudet ja Power Apps -portaalit
 
@@ -39,13 +38,13 @@ Asiakasportaali on riippuvainen Power Apps -portaaleista ja kaksoiskirjoittamise
 
 ![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 
-Toisin kuin muut Supply Chain Managementin ominaisuudet, asiakasportaalimalli sijaitsee Power Apps -portaaleissa. Tämän vuoksi asiakasportaalia rajoittaa Power Apps -portaalien ja kaksoiskirjoitusyritysten tarjoamat toiminnot ja ominaisuudet.
+Toisin kuin muut Supply Chain Managementin ominaisuudet, asiakasportaalimalli sijaitsee Power Apps -portaaleissa. Tämän vuoksi Power Apps -portaalien ja kaksoiskirjoitustaulukoiden sisältämät toiminnot ja ominaisuudet rajoittavat asiakasportaalia.
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Asiakasportaalin käyttöön tarvittavat määritykset
 
 Kun olet varma, että sinulla on tarvittavat käyttöoikeudet, voit määrittää kaksoiskirjoitustiedot, jotka on kuvattu kohdassa [kaksoiskirjoituksen alkuperäiset synkronointiohjeet](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
 
-Muista ottaa seuraavat entiteettien yhdistämismääritykset käyttöön kaksoiskirjoitustilanteissa:
+Muista ottaa seuraavat taulukon yhdistämismääritykset käyttöön kaksoiskirjoitustilanteissa:
 
 - Myyntitilauksen otsikko
 - Myyntitilauksen tiedot
@@ -80,12 +79,9 @@ Jos haluat tietää, miten asiakasportaali voidaan määrittää ja mukauttaa, a
 - [Power Apps -portaalit -dokumentaatio](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Kaksoiskirjoituksen dokumentointi](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-Portaalien tehokas hallinta edellyttää, että ymmärrät Power Apps -portaaleja ja Common Data Service -elinkaarta. Lisätietoja on seuraavissa resursseissa:
+Portaalien tehokas hallinta edellyttää, että ymmärrät Power Apps -portaaleja ja Microsoft Dataverse -elinkaarta. Lisätietoja on seuraavissa resursseissa:
 
 - [Tietoja portaalin elinkaaresta](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
 - [Portaalin päivittäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portaalin konfiguraation siirtäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Ratkaisun elinkaaren hallinta: Dynamics 365 for Customer Engagement -sovellukset](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

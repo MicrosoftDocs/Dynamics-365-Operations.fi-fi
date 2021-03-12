@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6afa52fa2c784fd7afbdc8db0e079af0689b4bec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7e72847b9046968c87d9602e141bae6c603c1c63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442836"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976322"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a>Määritä pankin limiitit ja kirjausprofiilit remburssia varten
 
@@ -74,6 +73,3 @@ Tässä tehtävässä käytetään USMF-esittely-yritystä.
     * Tätä tiliä veloitetaan, kun avaava marginaali on kirjattu ja hyvitetään, kun maksu on kirjattu.  
 9. Valitse Tallenna.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

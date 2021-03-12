@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcae977ede91dcaf4e455353f023e9eee4fcb2b1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426872"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977485"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Lähetyksen automaattinen vapautus cross-dockingia varten
 
@@ -179,6 +178,3 @@ Tällöin tapahtuu seuraavaa:
 - Vapautus varastoon käynnistyy myyntitilauksen osalta.
 - Vapautuksen perusteella luodaan lähetys- ja cross-docking-työ. Tämä työ kehottaa varastotyöntekijää keräilemään myyntitilauksen täyttämiseen tarvittavat määrät ja asettamaan ne cross-dockingin sijaintidirektiivissä määritettyyn lähtösijaintiin.
 - Jos tuotantotilauksen määrä ylittää myyntitilauksen edellyttämän määrän, luodaan tavallinen poispanotyö. Tämä työ kehottaa varastotyöntekijää keräilemään cross-dockingin jälkeen jäljelle jääneet valmiit tavarat ja siirtämään ne tavalliseen varastointitilaan sijaintidirektiivin mukaisesti.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

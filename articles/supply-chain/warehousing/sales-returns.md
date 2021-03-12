@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8778a96030494cbb5d819bf214fca104864eff4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426865"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977410"
 ---
 # <a name="sales-returns"></a>Myyntipalautukset
 
@@ -257,7 +256,7 @@ Vaikka **Palautustilaus**-sivu sisältääkin tietoja ja toimintoja, joita tarvi
 ### <a name="credit-correction"></a>Hyvityksen oikaisu
 
 Varmista, osana laskutusprosessia, että muut kulut ovat oikein. Jotta kirjauskansion kirjaukset tehdään korjauksina (Storno), harkitse käyttäväsi **Hyvityksen oikaisu** -asetusta **Laskun kirjaus** -sivun **Muu**-välilehdellä kun kirjaat laskun/hyvityslaskun. 
->[Huomautus!] Oletusarvoisesti **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
+>[Huomautus!] Oletusarvon mukaan **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
 
 ## <a name="create-intercompany-return-orders"></a>Luo konsernin sisäiset palautustilaukset
 Palautustilauksia voi suorittaa kahden organisaatiosi sisäisen yrityksen välillä. Seuraavia tilanteita tuetaan:
@@ -331,6 +330,3 @@ Tässä esimerkissä palautustilauksen rivi on luotu **Etsi myyntitilaus** -toim
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
