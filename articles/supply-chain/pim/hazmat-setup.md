@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db0d78c7a6fa69aa4e0c4c82f92c33daabda073f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427258"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983338"
 ---
 # <a name="set-up-hazardous-materials"></a>Vaarallisten aineiden määrittäminen
 
@@ -284,6 +283,3 @@ Voit määrittää tämän määrityksen valitsemalla **Tuotetietojen hallinta \
 *Vaarallisten aineiden tunneli* -määritys rajoittaa tunnelityyppejä, joiden kautta vaarallisia aineita voidaan kuljettaa, määrittämällä käytettävät tunnelityypit. Tunneliluokat luodaan vaarallisten aineiden kuljetuksen sovellettavien määräysten mukaan. Tätä määritystä käytetään yleensä vain maantiekuljetuksissa.
 
 Voit määrittää tämän määrityksen valitsemalla **Tuotetietojen hallinta \> Asetukset \> Vaarallisten aineiden lähetysohjeet \> Vaarallisten aineiden tunneli**. Voit luoda **Vaarallisten aineiden tunneli** -sivulla haluamasi määrän tunnelitunnuksia ja määrittää kullekin tunnistuskoodin ja lyhyen kuvauksen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

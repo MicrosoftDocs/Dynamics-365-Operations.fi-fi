@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e57c51011f1d93a6f62eb88c9cc45a38f2d0a5f3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 59cfc629e7c6e978715f08bc4a3383ba6f9bb089
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528741"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984981"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance -kehittäjien oppimisluettelo
 
@@ -49,8 +48,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Finance and Operations: Dynamics 365 for Finance and Operationsin laajentaminen PowerAppsin (DYN558PAL2) kanssa](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Ymmärrä Microsoft PowerAppsin yksinkertaisuus ja miten se voidaan integroida Dynamics 365 for Finance and Operationsin kanssa ja digitaalisesti muuttaa yrityksiä ja lisätä käyttäjien tuottavuutta. | Verkkokokouksen maksuton tallenne | 43 minuuttia |
 | [Finance and Operations: Laajennettavuus (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Microsoft tarjoaa yleiskatsauksen ja päivityksen Microsoftin laajennettavuutta koskeviin suunnitelmiin. Keskustelemme yksityiskohtaisesti eri tavoista laajentaa ratkaisua, tutustumme syvälle metatietojen laajennettavuusominaisuuksiin sekä kykyyn lisätä ja laajentaa koodia, mukaan lukien tehokkaaseen komentoketjuominaisuuteen. | Verkkokokouksen maksuton tallenne | 50 minuuttia |
 | [Visual Studio Team Servicesin (VSTS) määritys (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Tämä Tech Talk esittelee tarvittavat vaiheet VSTS-esiintymän ja -projektin määrittämiseksi luodaksesi yhteyden LCS-toteutusprojektiin kehitys-/testiympäristön määrittämiseksi. | Verkkokokouksen maksuton tallenne | 41 minuuttia |
-| [CDS-tietojen integrointi (DYN451PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Liity mukaan tähän teknologiakeskusteluun Common Data Servicen (CDS) valmiuksista tietointegraattorina. Keskustelemme integraatiovaihtoehdoista Dynamics 365 Customer Engagementin ja Dynamics 365 Finance and Operationsin sekä muiden kolmannen osapuolen ratkaisujen integroimisen kanssa. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
-| [Dynamics 365 for Salesin ja Dynamics 365 for Finance & Operationsin integrointi CDS:n kautta (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | Tässä Tech Talk -keskustelussa esittelemme integraatioskenaarion nimeltään Prospektista käteiseksi, jonka, myynnin ja markkinoinnin toiminnot tehdään Dynamics 365 for Salesissa ja toteutus Dynamics 365 for Finance and Operationsissa. Tarkastelemme myös tietojen integrointiohjelmaa ja integroinnin muokkaamista. | Verkkokokouksen maksuton tallenne | 54 minuuttia |
+| [Dataverse – tietojen integrointi (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Liity mukaan tähän teknologiakeskusteluun Dataversen tietojen integroinnin ominaisuuksista. Keskustelemme integraatiovaihtoehdoista Dynamics 365 Customer Engagementin ja Dynamics 365 Finance and Operationsin sekä muiden kolmannen osapuolen ratkaisujen integroimisen kanssa. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
+| [Dynamics 365 for Salesin ja Dynamics 365 for Finance & Operationsin integrointi Dataversen kautta (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | Tässä Tech Talk -keskustelussa esittelemme integraatioskenaarion nimeltään Prospektista käteiseksi, jonka, myynnin ja markkinoinnin toiminnot tehdään Dynamics 365 for Salesissa ja toteutus Dynamics 365 for Finance and Operationsissa. Tarkastelemme myös tietojen integrointiohjelmaa ja integroinnin muokkaamista. | Verkkokokouksen maksuton tallenne | 54 minuuttia |
 | [Tietojen hallinta (DYN757PAL2)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Liity tähän TechTalk-keskusteluun aiheesta tietojen hallinta. Tietoja käytettävissä olevista vaihtoehdoista ja tilanteista, joissa niitä suositellaan. Käsittelemme tietojen hallinnan kehystä, malleja, tietokannan kopiointia, yritysten välisten tietojen jakamista ja suorituskykyyn liittyviä seikkoja. | Verkkokokouksen maksuton tallenne | 58 minuuttia |
 | [Azure-integrointityökalut Dynamics 365 for Finance and Operationsia varten (DYN386PAL)](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Tämä TechTalk kattaa työkalutyyppejä, joita voisi harkita integroitaessa Dynamics 365 Finance and Operationsiin ja milloin valita mikäkin integraatiotyökalu. Istunto opastaa myös joitakin Azure Integration Servicesin avulla järjestettyjä integrointiskenaarioita. | Verkkokokouksen maksuton tallenne | 63 minuuttia |
 | [Integroinnin viitekehykset Dynamics 365 for Finance & Operationsissa (DYN385PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-frameworks-within-dynamics-365-for-finance-amp-operations-october-31-2017) | Tämä istunto antaa yleiskatsauksen Dynamics 365 for Finance and Operationsin integrointikehyksistä ja keskustee siitä, miten näitä puitteita voidaan käyttää. | Verkkokokouksen maksuton tallenne | 64 minuuttia |
@@ -94,6 +93,3 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö | kuvaus  | Muoto  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[Tentti MB-500: Microsoft Dynamics 365: Finance and Operations -sovellusten kehittäjä](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: arkkitehtuurin suunnitteleminen ja ratkaisun määrittäminen, kehittäjätyökalujen käyttäminen, AOT-elementtien suunnitteleminen ja kehittäminen, koodin kehittäminen ja testaaminen, raportoinnin käyttöönottaminen, tietoratkaisujen integroiminen ja hallinta sekä tietoturvan käyttöönottaminen ja suorituskyvyn optimoiminen. | Tentti, kustannukset vaihtelevat alueittain |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

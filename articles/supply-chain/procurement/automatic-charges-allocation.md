@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427373"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983164"
 ---
 # <a name="automatic-allocation-of-charges"></a>Kulujen automaattinen kohdistaminen
 
@@ -177,6 +176,3 @@ Seuraava menettely näyttää, miten otsikkotason kulut kohdistetaan riville. En
         > Varmista **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukkoa käytettäessä, että ruudukko on avoinna siihen saakka, että valitset **Kohdista**. Jos suljet ruudukon ennen **Kohdista**-vaihtoehdon valintaa, ruudukossa tehdyt asetukset menetetään. Siinä tapauksessa kulut kohdistetaan aiemmin määritettyjen ehtojen perusteella.
 
 1. Ota asetukset käyttöön valitsemalla **Kohdista** ja sulje kyselyn valintaikkuna.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
