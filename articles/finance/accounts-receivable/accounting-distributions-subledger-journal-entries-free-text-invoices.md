@@ -1,5 +1,5 @@
 ---
-title: Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
+title: Tekstimuotoisten laskujen kirjanpidolliset jaot ja kirjauskansioviennit
 description: Kirjanpidollisia jakoja käytetään määritettäessä summan käsittely, kuten esimerkiksi se, miten tuottoa, veroa tai maksua käsitellään vapaatekstilaskussa. Jokaisella määrällä, joka on huomioitava vapaatekstilaskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3ee26825ec48a8e8e32401ceaa8c80ecd679d2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442617"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993190"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran viennit
 
 [!include [banner](../includes/banner.md)]
 
@@ -136,6 +135,3 @@ Ennen kuin kirjaat vapaatekstilaskun, voit tarkastella laskun koko kirjanpitokir
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

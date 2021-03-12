@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527335"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991862"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Supply Chain Managementiin
 
@@ -35,7 +34,7 @@ ms.locfileid: "4527335"
 Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntitarjousten otsikot ja rivit suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 
 > [!NOTE]
-> Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
+> Tutustu [Microsoft Dataverse for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
@@ -63,8 +62,8 @@ Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntitilaukset otsikot j
 
 | Myynti        | Toimitusketjun hallinta     |
 |--------------|----------------------------|
-| Tarjoukset       | CDS-myyntitarjouksen otsikko |
-| QuoteDetails | CDS-myyntitarjousrivit  |
+| Tarjoukset       | Dataversen myyntitarjouksen otsikko |
+| QuoteDetails | Dataversen myyntitarjousrivit  |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
@@ -143,6 +142,3 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integrointiohj
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

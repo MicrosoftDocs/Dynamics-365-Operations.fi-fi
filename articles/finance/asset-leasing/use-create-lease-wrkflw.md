@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 1086231c65a726df5162d3593419a129d6ae5655
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442983"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992755"
 ---
 # <a name="use-lease-approval-workflows"></a>Vuokrauksen hyväksyntätyönkulkujen käyttäminen
 
@@ -45,6 +44,3 @@ Ennen kuin käytät tätä menetelmää, varmista, että ainakin vuokrasopimukse
 
 8. Jos haluat pysäyttää työnkulun, valitse **Työnkulun historia** -sivulla **Saanti**. Syötä näkyviin tulevassa valintaikkunassa kommentti ja valitse sitten **OK**.
 9. Jos haluat poistaa työnkulun aktivoinnin tai aktivoida aiemmin luodun työnkulun, siirry kohtaan **Resurssin vuokraus \> Asetukset \> Vuokrauksen työnkulku**. Valitse sitten **Vuokrauksen työnkulku** -sivulla **Työnkulku \> Versiot**. Jos haluat poistaa nykyisen työnkulun aktivoinnin, valitse aktiivinen vuokrasopimus vuokrasopimusversion valintaikkunassa ja valitse sitten **Poista aktivointi**. Jos haluat määrittää aiemmin luodun työnkulun aktiiviseksi, valitse työnkulku ja valitse sitten **Määritä aktiiviseksi**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
