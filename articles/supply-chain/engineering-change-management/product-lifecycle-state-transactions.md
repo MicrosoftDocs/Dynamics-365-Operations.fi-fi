@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4427525"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005324"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Tuotteen elinkaaren tilat ja tapahtumat
 
@@ -76,6 +75,3 @@ Seuraavat kentät ovat käytettävissä kussakin **Käyttöönotetut liiketoimin
 | Käytäntö | Valitsemalla jonkin seuraavista arvoista voit määrittää, onko nykyinen prosessi sallittu tuotteissa, joilla on tämä elinkaaren tila, ja miten se sallitaan:<ul><li>**Käytössä** – liiketoimintaprosessi sallitaan.</li><li>**Estetty** – Prosessia ei sallita. Jos käyttäjä yrittää käyttää prosessia tuotteessa, jolla on tämä elinkaaren tila, järjestelmä estää yrityksen ja näyttää virheen. Voit esimerkiksi estää elinkaaren lopussa olevan tuotteen ostamisen.</li><li>**Käytössä mutta varoitus** – Vaikka prosessi sallitaan, siitä varoitetaan. Tuotantotilaukseen voidaan esimerkiksi asettaa prototyyppituote, jonka tuotekehitysosasto on luonut. Muiden osastojen on kuitenkin tiedettävä, että tuotetta ei ole tarkoitus vielä valmistaa.</li></ul> |
 
 Jos muita elinkaaren tilasääntöjä lisätään mukautuksina, voit tarkastella kyseisiä sääntöjä käyttöliittymässä valitsemalla yläruudussa **Päivitä prosessit**. **Päivitä prosessit** -painike on vain järjestelmänvalvojien käytettävissä.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

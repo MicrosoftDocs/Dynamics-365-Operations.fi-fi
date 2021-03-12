@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Finland
 ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0097d1849965d97a8444ec0f65f69cee70fb7f0b
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: f654dcf73775094617bf0cd55fe4721f802c31d9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4407894"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005804"
 ---
 # <a name="finland-overview"></a>Suomi – yleiskatsaus
 
@@ -31,6 +30,3 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 
 - [Suomen arvonlisäveromaksun raportti](emea-fin-sales-tax-payment-report-finland.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

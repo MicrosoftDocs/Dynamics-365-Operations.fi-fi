@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427394"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004624"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Sijaintidirektiivin varastonkeräilyn erääntyminen
 
@@ -120,7 +119,7 @@ FIFO-strategia etsii vanhimman erääntymispäivämäärän sisältävän sijain
 1. Valitse **Myyntitilaus**-sivun toimintoruudun **Varasto**-välilehden **Toiminnot**-ryhmässä **Vapauta varastoon**. Näyttöön avautuu tietosanomia. Järjestelmä luo lähetyksen, lisää sen uuteen kuormitukseen ja luo tarvittavat työt.
 1. Avaa tälle myyntitilaukselle luotu työ valitsemalla **Myyntitilausrivit**-pikavälilehden **Varasto**-valikossa **Työn tiedot**. Huomaa, että rivillä, jonka **Työtyyppi**-arvo on *Keräily*, **Sijainti**-arvo on *KR-002*. Tässä sijainnissa on rekisterikilpi, jossa on vanhin erääntymispäivä (FIFO).
 1. Valitse **Varasto \> Lähetyksen tiedot**.
-1. **Yleiset**-pikavälilehdessä on aallon tunnus. Kirjoita se muistiin, jotta voit käyttää sitä skenaariossa 2.
+1. **_Yleiset_*-pikavälilehdessä on aallon tunnus. Kirjoita se muistiin, jotta voit käyttää sitä skenaariossa 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Skenaario 2: Sijainnin LIFO-erääntymisen määrittäminen ja käyttäminen
 
@@ -140,6 +139,3 @@ LIFO-strategia etsii uusimman erääntymispäivämäärän sisältävän sijainn
 1. Huomaa, että rivillä, jonka **Työtyyppi**-arvo on *Keräily*, **Sijainti**-arvo on *KR-001*. Tässä sijainnissa on rekisterikilpi, jossa on uusin erääntymispäivä (LIFO).
 
 Näissä skenaarioissa on näytetty, miten sijainnin erääntymisstrategia ohjaa työn varastosijaintiin, jossa on joko vanhin tai uusin varasto valitun strategian mukaan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

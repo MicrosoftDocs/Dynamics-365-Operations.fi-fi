@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 63f2d3dc55799efefaedb10134edb219fa8588e0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4442990"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003575"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Toimittajan maksatusehdotusten automatisointi
 
@@ -144,6 +143,3 @@ Toimittajamaksujen ehdotusautomaatioita varten on lisätty seuraavat tehtävät 
 | Aikataulutapahtumien kysely | Ostoreskontran maksuvirkailija, ostoreskontran keskitetty maksuvirkailija | Tämä velvollisuus antaa oikeudet näyttää maksuehdotuksen automaatioesiintymiä seuraavien oikeuksien avulla:<ul><li>Näytä ajoituksen esiintymiä</li><li>Näytä esiintymä viikoittain -näkymä</li></ul> |
 | Kohdista kyselyjä ajoitussarjoihin      | None                                                                       | Tämä velvollisuus antaa oikeudet näyttää sarjojen asetuksia ja esiintymiä seuraavien oikeuksien avulla:<ul><li>Näytä ajoituksen esiintymiä</li><li>Näytä esiintymät -luettelosivu</li><li>Näytä esiintymä viikoittain -näkymä</li></ul>|
 | Ylläpidä ajoituksen esiintymiä     | None                                                                       | Tämä velvollisuus myöntää oikeuden luoda ja ylläpitää esiintymää seuraavien oikeuksien avulla:<ul><li>Ylläpidä ajoituksen esiintymiä</li><li>Näytä esiintymä viikoittain -näkymä</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
