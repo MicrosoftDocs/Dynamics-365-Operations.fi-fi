@@ -11,46 +11,45 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 823ef5cddbba8a72bd67ba87edd1aa497022a81e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec91198e86b123fd886fb220c8a35c98cdfc8fdd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426745"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006513"
 ---
-# <a name="set-up-template-to-represent-objects-at-customer-site"></a><span data-ttu-id="8d1ff-103">Mallin määrittäminen objektien esittämiseksi asiakkaan sivulla</span><span class="sxs-lookup"><span data-stu-id="8d1ff-103">Set up template to represent objects at customer site</span></span> 
+# <a name="set-up-template-to-represent-objects-at-customer-site"></a><span data-ttu-id="3a8af-103">Mallin määrittäminen objektien esittämiseksi asiakkaan sivulla</span><span class="sxs-lookup"><span data-stu-id="3a8af-103">Set up template to represent objects at customer site</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8d1ff-104">Tämän menettelyn avulla voit määrittää mallin, joka kuvaa asiakkaan toimipaikan objekteja.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-104">Use this procedure to set up a template that represents objects at a customer site.</span></span>
+<span data-ttu-id="3a8af-104">Tämän menettelyn avulla voit määrittää mallin, joka kuvaa asiakkaan toimipaikan objekteja.</span><span class="sxs-lookup"><span data-stu-id="3a8af-104">Use this procedure to set up a template that represents objects at a customer site.</span></span>
 
-1.  <span data-ttu-id="8d1ff-105">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="3a8af-105">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="3a8af-105">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="8d1ff-106">Kaksoisnapsauta huoltosopimusta tai luo uusi huoltosopimus valitsemalla **Huoltosopimus**.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-106">Double-click a service agreement, or click **Service agreement** to create a new service agreement.</span></span>
+2.  <span data-ttu-id="3a8af-106">Kaksoisnapsauta huoltosopimusta tai luo uusi huoltosopimus valitsemalla **Huoltosopimus**.</span><span class="sxs-lookup"><span data-stu-id="3a8af-106">Double-click a service agreement, or click **Service agreement** to create a new service agreement.</span></span>
 
-3.  <span data-ttu-id="8d1ff-107">Valitse **Asetukset**-välilehti.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-107">Click the **Setup** tab.</span></span>
+3.  <span data-ttu-id="3a8af-107">Valitse **Asetukset**-välilehti.</span><span class="sxs-lookup"><span data-stu-id="3a8af-107">Click the **Setup** tab.</span></span>
 
-4.  <span data-ttu-id="8d1ff-108">Liitä mallituoterakenne huoltosopimukseen napsauttamalla **Huoltokohteet**.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-108">Click **Service objects** to attach a template bill of materials (BOM) to the service agreement.</span></span>
+4.  <span data-ttu-id="3a8af-108">Liitä mallituoterakenne huoltosopimukseen napsauttamalla **Huoltokohteet**.</span><span class="sxs-lookup"><span data-stu-id="3a8af-108">Click **Service objects** to attach a template bill of materials (BOM) to the service agreement.</span></span>
 
-5.  <span data-ttu-id="8d1ff-109">Valitse **Huoltokohteet**-lomakkeessa huoltokohde, jonka haluat liittää mallituoterakenteeseen, ja napsauta sitten **Toiminnot** \> **Liitä mallituoterakenne**.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-109">In the **Service objects** form, select a service object, and then click **Functions** \> **Attach template BOM**.</span></span>
+5.  <span data-ttu-id="3a8af-109">Valitse **Huoltokohteet**-lomakkeessa huoltokohde, jonka haluat liittää mallituoterakenteeseen, ja napsauta sitten **Toiminnot** \> **Liitä mallituoterakenne**.</span><span class="sxs-lookup"><span data-stu-id="3a8af-109">In the **Service objects** form, select a service object, and then click **Functions** \> **Attach template BOM**.</span></span>
 
-6.  <span data-ttu-id="8d1ff-110">Valitse **Valitse mallituoterakenne**-lomakkeessa mallituoterakenne **Mallituoterakenne**-kentässä ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-110">In the **Select template BOM** form, select a template BOM in the **Template BOM** field, and then click **OK**.</span></span>
+6.  <span data-ttu-id="3a8af-110">Valitse **Valitse mallituoterakenne**-lomakkeessa mallituoterakenne **Mallituoterakenne**-kentässä ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="3a8af-110">In the **Select template BOM** form, select a template BOM in the **Template BOM** field, and then click **OK**.</span></span>
 
-7.  <span data-ttu-id="8d1ff-111">Valitse **Huoltokohteet**-lomakkeesta **Suunnittelija**, jos haluat muokata mallituoterakennetta niin, että tuoterakenne vastaa haluamiasi kohteita.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-111">In the **Service objects** form, click **Designer** to modify the template BOM so that the BOM represents the objects that you want.</span></span>
+7.  <span data-ttu-id="3a8af-111">Valitse **Huoltokohteet**-lomakkeesta **Suunnittelija**, jos haluat muokata mallituoterakennetta niin, että tuoterakenne vastaa haluamiasi kohteita.</span><span class="sxs-lookup"><span data-stu-id="3a8af-111">In the **Service objects** form, click **Designer** to modify the template BOM so that the BOM represents the objects that you want.</span></span>
 
-8.  <span data-ttu-id="8d1ff-112">Tallenna muutokset sulkemalla lomakkeet.</span><span class="sxs-lookup"><span data-stu-id="8d1ff-112">Close the forms to save your changes.</span></span>
+8.  <span data-ttu-id="3a8af-112">Tallenna muutokset sulkemalla lomakkeet.</span><span class="sxs-lookup"><span data-stu-id="3a8af-112">Close the forms to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8d1ff-113">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="8d1ff-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3a8af-113">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="3a8af-113">See also</span></span>
 
-[<span data-ttu-id="8d1ff-114">Mallituoterakenteiden hallitseminen kohteiden suhteissa</span><span class="sxs-lookup"><span data-stu-id="8d1ff-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
+[<span data-ttu-id="3a8af-114">Mallituoterakenteiden hallitseminen kohteiden suhteissa</span><span class="sxs-lookup"><span data-stu-id="3a8af-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
 
   
 

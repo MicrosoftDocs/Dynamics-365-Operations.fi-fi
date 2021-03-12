@@ -11,71 +11,70 @@ ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkTimeTable, WorkTimeCopyDayDialog, WorkPeriodTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5bd1b384fe66dd7d59b776bdf1154cc5b8262ce
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 10e8e43900fd25f0051124d761dc7b06d4f9313a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426780"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006813"
 ---
-# <a name="create-working-time-templates"></a><span data-ttu-id="f13d6-103">Työaikamallien luominen</span><span class="sxs-lookup"><span data-stu-id="f13d6-103">Create working time templates</span></span>
+# <a name="create-working-time-templates"></a><span data-ttu-id="1646f-103">Työaikamallien luominen</span><span class="sxs-lookup"><span data-stu-id="1646f-103">Create working time templates</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f13d6-104">Työaikamallit määrittävät koko viikon työtunnit ja niiden avulla luodaan työajat tietylle ajanjaksolle.</span><span class="sxs-lookup"><span data-stu-id="f13d6-104">Working time templates define the working hours throughout a week and are used to generate working times for a period of time.</span></span> <span data-ttu-id="f13d6-105">Tässä menettelyssä käsitellään, miten työaikamalli määritetään käyttämällä työaikojen aikavälien luokittelun ajoitusominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="f13d6-105">This procedure shows you how to define a working time template using working time scheduling properties for categorizing working time intervals.</span></span> <span data-ttu-id="f13d6-106">Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="f13d6-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
+<span data-ttu-id="1646f-104">Työaikamallit määrittävät koko viikon työtunnit ja niiden avulla luodaan työajat tietylle ajanjaksolle.</span><span class="sxs-lookup"><span data-stu-id="1646f-104">Working time templates define the working hours throughout a week and are used to generate working times for a period of time.</span></span> <span data-ttu-id="1646f-105">Tässä menettelyssä käsitellään, miten työaikamalli määritetään käyttämällä työaikojen aikavälien luokittelun ajoitusominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="1646f-105">This procedure shows you how to define a working time template using working time scheduling properties for categorizing working time intervals.</span></span> <span data-ttu-id="1646f-106">Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="1646f-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. <span data-ttu-id="f13d6-107">Siirry kohtaan Kaikki työtilat > Resurssin elinkaaren hallinta.</span><span class="sxs-lookup"><span data-stu-id="f13d6-107">Go to All workspaces > Resource lifecycle management.</span></span>
-2. <span data-ttu-id="f13d6-108">Valitse Työaikamallit.</span><span class="sxs-lookup"><span data-stu-id="f13d6-108">Click Working time templates.</span></span>
+1. <span data-ttu-id="1646f-107">Siirry kohtaan Kaikki työtilat > Resurssin elinkaaren hallinta.</span><span class="sxs-lookup"><span data-stu-id="1646f-107">Go to All workspaces > Resource lifecycle management.</span></span>
+2. <span data-ttu-id="1646f-108">Valitse Työaikamallit.</span><span class="sxs-lookup"><span data-stu-id="1646f-108">Click Working time templates.</span></span>
 
-## <a name="create-working-time-template"></a><span data-ttu-id="f13d6-109">Luo työaikamalli</span><span class="sxs-lookup"><span data-stu-id="f13d6-109">Create working time template</span></span>
-1. <span data-ttu-id="f13d6-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f13d6-110">Click New.</span></span>
-2. <span data-ttu-id="f13d6-111">Kirjoita Työaikamalli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f13d6-111">In the Working time template field, type a value.</span></span>
-3. <span data-ttu-id="f13d6-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f13d6-112">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="f13d6-113">Laajenna Maanantai-osa.</span><span class="sxs-lookup"><span data-stu-id="f13d6-113">Expand the Monday section.</span></span>
-5. <span data-ttu-id="f13d6-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="f13d6-114">Click Add.</span></span>
-6. <span data-ttu-id="f13d6-115">Anna aika Alkaen-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-115">In the From field, enter a time.</span></span>
-    * <span data-ttu-id="f13d6-116">Määritä aika, jolloin työ alkaa aamulla.</span><span class="sxs-lookup"><span data-stu-id="f13d6-116">Specify the time when work begins in the morning.</span></span>  
-7. <span data-ttu-id="f13d6-117">Anna aika Asti-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-117">In the To field, enter a time.</span></span>
-    * <span data-ttu-id="f13d6-118">Määritä työntekijöiden lounastauon aika.</span><span class="sxs-lookup"><span data-stu-id="f13d6-118">Specify the time when workers break for lunch.</span></span>  
-8. <span data-ttu-id="f13d6-119">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="f13d6-119">Click Add.</span></span>
-9. <span data-ttu-id="f13d6-120">Anna aika Alkaen-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-120">In the From field, enter a time.</span></span>
-    * <span data-ttu-id="f13d6-121">Määritä aika, jolloin työ jatkuu lounaan jälkeen.</span><span class="sxs-lookup"><span data-stu-id="f13d6-121">Specify the time when work resumes after lunch.</span></span>  
-10. <span data-ttu-id="f13d6-122">Anna aika Asti-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-122">In the To field, enter a time.</span></span>
-    * <span data-ttu-id="f13d6-123">Määritä, milloin työpäivä päättyy.</span><span class="sxs-lookup"><span data-stu-id="f13d6-123">Specify the end of the work day.</span></span>  
+## <a name="create-working-time-template"></a><span data-ttu-id="1646f-109">Luo työaikamalli</span><span class="sxs-lookup"><span data-stu-id="1646f-109">Create working time template</span></span>
+1. <span data-ttu-id="1646f-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="1646f-110">Click New.</span></span>
+2. <span data-ttu-id="1646f-111">Kirjoita Työaikamalli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="1646f-111">In the Working time template field, type a value.</span></span>
+3. <span data-ttu-id="1646f-112">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1646f-112">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="1646f-113">Laajenna Maanantai-osa.</span><span class="sxs-lookup"><span data-stu-id="1646f-113">Expand the Monday section.</span></span>
+5. <span data-ttu-id="1646f-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="1646f-114">Click Add.</span></span>
+6. <span data-ttu-id="1646f-115">Anna aika Alkaen-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-115">In the From field, enter a time.</span></span>
+    * <span data-ttu-id="1646f-116">Määritä aika, jolloin työ alkaa aamulla.</span><span class="sxs-lookup"><span data-stu-id="1646f-116">Specify the time when work begins in the morning.</span></span>  
+7. <span data-ttu-id="1646f-117">Anna aika Asti-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-117">In the To field, enter a time.</span></span>
+    * <span data-ttu-id="1646f-118">Määritä työntekijöiden lounastauon aika.</span><span class="sxs-lookup"><span data-stu-id="1646f-118">Specify the time when workers break for lunch.</span></span>  
+8. <span data-ttu-id="1646f-119">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="1646f-119">Click Add.</span></span>
+9. <span data-ttu-id="1646f-120">Anna aika Alkaen-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-120">In the From field, enter a time.</span></span>
+    * <span data-ttu-id="1646f-121">Määritä aika, jolloin työ jatkuu lounaan jälkeen.</span><span class="sxs-lookup"><span data-stu-id="1646f-121">Specify the time when work resumes after lunch.</span></span>  
+10. <span data-ttu-id="1646f-122">Anna aika Asti-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-122">In the To field, enter a time.</span></span>
+    * <span data-ttu-id="1646f-123">Määritä, milloin työpäivä päättyy.</span><span class="sxs-lookup"><span data-stu-id="1646f-123">Specify the end of the work day.</span></span>  
 
-## <a name="replicate-working-times-to-all-week-days"></a><span data-ttu-id="f13d6-124">Replikoi työajat kaikkiin viikonpäiviin</span><span class="sxs-lookup"><span data-stu-id="f13d6-124">Replicate working times to all week days</span></span>
-1. <span data-ttu-id="f13d6-125">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-125">Click Copy day.</span></span>
-    * <span data-ttu-id="f13d6-126">Kopioi työaikojen määritykset maanantaista tiistaille.</span><span class="sxs-lookup"><span data-stu-id="f13d6-126">Copy the working times definitions from Monday to Tuesday.</span></span>  
-2. <span data-ttu-id="f13d6-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f13d6-127">Click OK.</span></span>
-3. <span data-ttu-id="f13d6-128">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-128">Click Copy day.</span></span>
-    * <span data-ttu-id="f13d6-129">Kopioi työaikojen määritykset maanantaista keskiviikolle.</span><span class="sxs-lookup"><span data-stu-id="f13d6-129">Copy the working times definitions from Monday to Wednesday.</span></span>  
-4. <span data-ttu-id="f13d6-130">Valitse vaihtoehto Arkipäivään-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-130">In the To weekday field, select an option.</span></span>
-5. <span data-ttu-id="f13d6-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f13d6-131">Click OK.</span></span>
-6. <span data-ttu-id="f13d6-132">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-132">Click Copy day.</span></span>
-    * <span data-ttu-id="f13d6-133">Kopioi työaikojen määritykset maanantaista torstaille.</span><span class="sxs-lookup"><span data-stu-id="f13d6-133">Copy the working times definitions from Monday to Thursday.</span></span>  
-7. <span data-ttu-id="f13d6-134">Valitse vaihtoehto Arkipäivään-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-134">In the To weekday field, select an option.</span></span>
-8. <span data-ttu-id="f13d6-135">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f13d6-135">Click OK.</span></span>
-9. <span data-ttu-id="f13d6-136">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-136">Click Copy day.</span></span>
-    * <span data-ttu-id="f13d6-137">Kopioi työaikojen määritykset maanantaista perjantaille.</span><span class="sxs-lookup"><span data-stu-id="f13d6-137">Copy the working times definitions from Monday to Friday.</span></span>  
-10. <span data-ttu-id="f13d6-138">Valitse vaihtoehto Arkipäivään-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-138">In the To weekday field, select an option.</span></span>
-11. <span data-ttu-id="f13d6-139">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f13d6-139">Click OK.</span></span>
+## <a name="replicate-working-times-to-all-week-days"></a><span data-ttu-id="1646f-124">Replikoi työajat kaikkiin viikonpäiviin</span><span class="sxs-lookup"><span data-stu-id="1646f-124">Replicate working times to all week days</span></span>
+1. <span data-ttu-id="1646f-125">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="1646f-125">Click Copy day.</span></span>
+    * <span data-ttu-id="1646f-126">Kopioi työaikojen määritykset maanantaista tiistaille.</span><span class="sxs-lookup"><span data-stu-id="1646f-126">Copy the working times definitions from Monday to Tuesday.</span></span>  
+2. <span data-ttu-id="1646f-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1646f-127">Click OK.</span></span>
+3. <span data-ttu-id="1646f-128">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="1646f-128">Click Copy day.</span></span>
+    * <span data-ttu-id="1646f-129">Kopioi työaikojen määritykset maanantaista keskiviikolle.</span><span class="sxs-lookup"><span data-stu-id="1646f-129">Copy the working times definitions from Monday to Wednesday.</span></span>  
+4. <span data-ttu-id="1646f-130">Valitse vaihtoehto Arkipäivään-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-130">In the To weekday field, select an option.</span></span>
+5. <span data-ttu-id="1646f-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1646f-131">Click OK.</span></span>
+6. <span data-ttu-id="1646f-132">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="1646f-132">Click Copy day.</span></span>
+    * <span data-ttu-id="1646f-133">Kopioi työaikojen määritykset maanantaista torstaille.</span><span class="sxs-lookup"><span data-stu-id="1646f-133">Copy the working times definitions from Monday to Thursday.</span></span>  
+7. <span data-ttu-id="1646f-134">Valitse vaihtoehto Arkipäivään-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-134">In the To weekday field, select an option.</span></span>
+8. <span data-ttu-id="1646f-135">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1646f-135">Click OK.</span></span>
+9. <span data-ttu-id="1646f-136">Valitse Kopioi päivä.</span><span class="sxs-lookup"><span data-stu-id="1646f-136">Click Copy day.</span></span>
+    * <span data-ttu-id="1646f-137">Kopioi työaikojen määritykset maanantaista perjantaille.</span><span class="sxs-lookup"><span data-stu-id="1646f-137">Copy the working times definitions from Monday to Friday.</span></span>  
+10. <span data-ttu-id="1646f-138">Valitse vaihtoehto Arkipäivään-kentässä.</span><span class="sxs-lookup"><span data-stu-id="1646f-138">In the To weekday field, select an option.</span></span>
+11. <span data-ttu-id="1646f-139">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1646f-139">Click OK.</span></span>
 
-## <a name="define-time-slots-for-special-operations"></a><span data-ttu-id="f13d6-140">Määritä erityistyövaiheiden ajankohdat</span><span class="sxs-lookup"><span data-stu-id="f13d6-140">Define time slots for special operations</span></span>
-1. <span data-ttu-id="f13d6-141">Laajenna Perjantai-osa.</span><span class="sxs-lookup"><span data-stu-id="f13d6-141">Expand the Friday section.</span></span>
-2. <span data-ttu-id="f13d6-142">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="f13d6-142">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="f13d6-143">Anna tai valitse Ominaisuus-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="f13d6-143">In the Property field, enter or select a value.</span></span>
-4. <span data-ttu-id="f13d6-144">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="f13d6-144">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="f13d6-145">Anna tai valitse Ominaisuus-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="f13d6-145">In the Property field, enter or select a value.</span></span>
+## <a name="define-time-slots-for-special-operations"></a><span data-ttu-id="1646f-140">Määritä erityistyövaiheiden ajankohdat</span><span class="sxs-lookup"><span data-stu-id="1646f-140">Define time slots for special operations</span></span>
+1. <span data-ttu-id="1646f-141">Laajenna Perjantai-osa.</span><span class="sxs-lookup"><span data-stu-id="1646f-141">Expand the Friday section.</span></span>
+2. <span data-ttu-id="1646f-142">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1646f-142">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="1646f-143">Anna tai valitse Ominaisuus-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="1646f-143">In the Property field, enter or select a value.</span></span>
+4. <span data-ttu-id="1646f-144">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1646f-144">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="1646f-145">Anna tai valitse Ominaisuus-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="1646f-145">In the Property field, enter or select a value.</span></span>
 
-## <a name="mark-weekend-days-as-closed-for-pickup"></a><span data-ttu-id="f13d6-146">Merkitse viikonlopun päivät noudolta suljetuksi</span><span class="sxs-lookup"><span data-stu-id="f13d6-146">Mark weekend days as closed for pickup</span></span>
-1. <span data-ttu-id="f13d6-147">Laajenna Lauantai-osa.</span><span class="sxs-lookup"><span data-stu-id="f13d6-147">Expand the Saturday section.</span></span>
-2. <span data-ttu-id="f13d6-148">Valitse Suljettu noudolta -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-148">Select Yes in the Closed for pickup field.</span></span>
-3. <span data-ttu-id="f13d6-149">Laajenna Sunnuntai-osa.</span><span class="sxs-lookup"><span data-stu-id="f13d6-149">Expand the Sunday section.</span></span>
-4. <span data-ttu-id="f13d6-150">Valitse Suljettu noudolta -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f13d6-150">Select Yes in the Closed for pickup field.</span></span>
+## <a name="mark-weekend-days-as-closed-for-pickup"></a><span data-ttu-id="1646f-146">Merkitse viikonlopun päivät noudolta suljetuksi</span><span class="sxs-lookup"><span data-stu-id="1646f-146">Mark weekend days as closed for pickup</span></span>
+1. <span data-ttu-id="1646f-147">Laajenna Lauantai-osa.</span><span class="sxs-lookup"><span data-stu-id="1646f-147">Expand the Saturday section.</span></span>
+2. <span data-ttu-id="1646f-148">Valitse Suljettu noudolta -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="1646f-148">Select Yes in the Closed for pickup field.</span></span>
+3. <span data-ttu-id="1646f-149">Laajenna Sunnuntai-osa.</span><span class="sxs-lookup"><span data-stu-id="1646f-149">Expand the Sunday section.</span></span>
+4. <span data-ttu-id="1646f-150">Valitse Suljettu noudolta -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="1646f-150">Select Yes in the Closed for pickup field.</span></span>
 
