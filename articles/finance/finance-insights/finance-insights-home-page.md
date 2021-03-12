@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d7d167c4a8035231ea3c5630001d3aeccbcd7988
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 9920d24ea92196331ea318cab2f67501801937bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644918"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995087"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance Insightsin aloitussivu (esiversio)
 
@@ -67,7 +66,7 @@ Microsoft Dynamics 365 Financeen, Microsoft Dynamics Lifecycle Servicesiin (LCS)
 - Active Directoryn vuokraajan järjestelmänvalvojan on annettava AI Builder -sovellukselle Data Laken käyttöoikeus.
 - Toiminto otetaan käyttöön Dynamics 365:ssä.
 
-Azuren, Common Data Servicen ja LCS:n resurssien luonti- ja hallintakokemus auttaa tässä prosessissa.
+Azuren, Microsoft Dataversen ja LCS:n resurssien luonti- ja hallintakokemus auttaa tässä prosessissa.
 
 ## <a name="configure-finance-insights"></a>Taloushallinnon tietojen määrittäminen
 
@@ -130,6 +129,3 @@ Lähetä sähköpostiviesti [Asiakasmaksujen tiedot (esiversio) -kohteeseen](mai
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 
 Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

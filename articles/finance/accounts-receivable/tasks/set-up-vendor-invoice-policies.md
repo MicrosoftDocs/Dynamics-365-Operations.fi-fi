@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 79cbabba74fdb76d8fcc0553d39e0f140aacf03e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442787"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995445"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Määritä toimittajan laskutuskäytännöt
 
@@ -73,6 +72,3 @@ Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutusk�
 16. Valitse **OK**.
 17. Palaa kotisivulle sulkemalla sivut.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f94053920b475ef9190b5ac65a5f9ca01dcd4a1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427463"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996120"
 ---
 # <a name="replenishment-over-location-capacity"></a>Täydennys yli sijainnin kapasiteetin
 
@@ -408,6 +407,3 @@ Seuraavaksi voit kerätä myyntitilauksen 2. Se vapautettiin, kun myyntitilaukse
 - Voit ohittaa halutessasi täydennystyön saatavuuden manuaalisesti jokaisen työotsikon kohdalla **Työn tiedot** -sivulla.
 - Kun järjestelmä määrittää täydennystyön saatavuuden, se ottaa huomioon varaston, joka on jo sijainnissa ennen töiden valmistumista.
 - Jokainen myyntitilaustyö on linkitetty tiettyyn täydennystyöhön. Vastaavaa myyntityön saatavuuden toimintoa ei ole.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

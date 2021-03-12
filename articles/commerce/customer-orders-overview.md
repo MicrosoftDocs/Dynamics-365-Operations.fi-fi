@@ -3,7 +3,7 @@ title: Myyntipisteen asiakastilaukset
 description: Tässä ohjeaiheessa on tietoja myyntipisteen asiakkaan työnkulusta. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 author: josaw1
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fec80dd2836a5400a7178e732fe1d5da41aca4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995792"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Myyntipisteen asiakastilaukset
 
@@ -52,9 +51,9 @@ Jos haluat käyttää asiakastilauksia, sinun on määritettävä toimitustavat 
 
 ### <a name="set-up-fulfillment-groups"></a>Täytäntöönpanoryhmien määrittäminen
 
-Jotkin myymälät tai varastosijainnit eivät ehkä pysty täyttämään asiakastilauksia. Määrittämällä täytäntöönpanoryhmät organisaatio voi määrittää myyntipisteessa asiakastilauksia luoville käyttäjille vaihtoehtoina näytettävät myymälät ja varastosijainnit. Täytäntöönpanoryhmät määritetään **Täytäntöönpanoryhmät**-sivulla. Organisaatiot voivat luoda tarvittavan määrän täytäntöönpanoryhmiä. Kun täytäntöönpanoryhmä on määritetty, se linkitetään myymälään käyttämällä toimintoruudun **Määritys**-välilehden **Myymälät**-sivua.
+Jotkin myymälät tai varastosijainnit eivät ehkä pysty täyttämään asiakastilauksia. Määrittämällä täytäntöönpanoryhmät organisaatio voi määrittää myyntipisteessa asiakastilauksia luoville käyttäjille vaihtoehtoina näytettävät myymälät ja varastosijainnit. Täytäntöönpanoryhmät määritetään **Täytäntöönpanoryhmät**-sivulla. Organisaatiot voivat luoda tarvittavan määrän täytäntöönpanoryhmiä. Kun täytäntöönpanoryhmä on määritetty, linkitä se myymälään valitsemalla toimintoruudun **Myymälät**-sivun **Määritys**-välilehdessä **Täytäntöönpanoryhmän määritys**.
 
-Commercen versiossa 10.0.12 ja uudemmissa versioissa organisaatiot voivat määrittää, käytetäänkö täytäntöönpanoryhmissä määritettyä varastoa tai varaston ja myymälän yhdistelmää toimituksessa, noudossa tai sekä toimituksessa että noudossa. Näin myymälä voi käyttää niille käyttäjille näytettäviä varaston ja myymälän vaihtoehtoja, jotka luovat tilauksen noudolle tai toimitukselle. Jos haluat käyttää näitä määritysvaihtoehtoja, ota käyttöön **Mahdollisuus määrittää sijainniksi Toimitus tai Nouto on otettu käyttöön täytäntöönpanoryhmissä** -ominaisuus. Jos myymälässä ei ole täytäntöönpanoryhmään linkitettyä varastoa, se voidaan määrittää vain toimitussijainniksi. Sitä ei voi käyttää, kun noudon tilaukset on määritetty myyntipisteessä.
+Commercen versiossa 10.0.12 ja uudemmissa versioissa organisaatiot voivat määrittää, käytetäänkö täytäntöönpanoryhmissä määritettyä varastoa tai varaston ja myymälän yhdistelmää toimituksessa, noudossa tai sekä toimituksessa että noudossa. Tämä mahdollistaa joustavan määrityksen, jonka avulla yritys voi määrittää, mitä varastoja voidaan valita, kun nimikkeiden toimitusta varten luodaan asiakastilaus sekä mitkä myymälät voidaan valita luotaessa asiakastilaus nimikkeiden noutoa varten. Jos haluat käyttää näitä määritysvaihtoehtoja, ota käyttöön **Mahdollisuus määrittää sijainniksi Toimitus tai Nouto on otettu käyttöön täytäntöönpanoryhmissä** -ominaisuus. Jos myymälässä ei ole täytäntöönpanoryhmään linkitettyä varastoa, se voidaan määrittää vain toimitussijainniksi. Sitä ei voi käyttää, kun noudon tilaukset on määritetty myyntipisteessä.
 
 ![Täytäntöönpanoryhmät-sivu](media/customer-order-fulfillment-group.png)
 
@@ -99,7 +98,10 @@ Varmista, että myyntipiste [näyttöasettelu](https://docs.microsoft.com/dynami
 
 ![Myyntipisteen tapahtumanäytön toiminnot](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Asiakastilausten käsitteleminen myyntipisteessä
+## <a name="work-with-customer-orders-in-pos"></a>Asiakastilausten käsitteleminen myyntipisteessä
+
+> [!NOTE]
+> Tuoton tuloutustoiminnon käyttöä ei tällä hetkellä tueta Commerce-kanavissa (sähköinen kauppa, myyntipiste, puhelinkeskus). Nimikkeitä, joilla on määritetty tuottojen tuloutus, ei lisätä Commerce-kanavissa luotuihin tilauksiin. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Asiakastilauksen luominen tuotteille, jotka lähetetään asiakkaalle
 
@@ -118,7 +120,7 @@ Varmista, että myyntipiste [näyttöasettelu](https://docs.microsoft.com/dynami
 2. Lisää tuotteet ostoskoriin.
 3. Valitse **Nouda valitut** tai **Nouda kaikki**, jos haluat käynnistää tilauksen noudon määrityksen.
 4. Valitse myymäläsijainti, josta asiakas noutaa valitut tuotteet.
-5. Valitse noutopäivämäärä.
+5. Valitse päivämäärä, jolloin nimike noudetaan.
 6. Käytä erääntyneiden laskettujen summien maksamisessa maksutoimintoja tai muuta erääntyviä summia **Talletuksen ohitus** -toiminnon avulla ja kohdista maksu.
 7. Jos tilauksen kokonaissummaa ei ole maksettu, määritä, maksaako asiakas myöhemmin (noudettaessa) vai tallennetaanko luottokortin tiedot nyt myöhempää noudon yhteydessä tapahtuvaa käyttöä varten.
 
@@ -127,12 +129,10 @@ Varmista, että myyntipiste [näyttöasettelu](https://docs.microsoft.com/dynami
 Vähittäismyyntitilaukset, jotka luodaan online- tai myymäläkanavassa, voidaan peruuttaa myyntipisteessä tarvittaessa. Tämän jälkeen niitä voi muokata.
 
 > [!IMPORTANT]
-> Puhelinkeskuskanavassa luotuja tilauksia ei voi muokata myyntipisteessä, jos [Ota käyttöön tilausten viimeistely](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) -asetus on otettu käyttöön puhelinkeskuskanavassa. Voit varmistaa oikean maksuprosessin puhelinkeskuskanavan tilauksille, joissa on käytössä Ota käyttöön tilausten viimeistely -toiminto, muokkaamalla niitä puhelinkeskussovelluksessa Commerce Headquarters -sovelluksessa.
+> Kaikkia vähittäismyyntitilauksia ei voi muokata myyntipistesovelluksessa. Puhelinkeskuskanavassa luotuja tilauksia ei voi muokata myyntipisteessä, jos [Ota käyttöön tilausten viimeistely](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) -asetus on otettu käyttöön puhelinkeskuskanavassa. Voit varmistaa oikean maksuprosessin puhelinkeskuskanavan tilauksille, joissa on käytössä Ota käyttöön tilausten viimeistely -toiminto, muokkaamalla niitä puhelinkeskussovelluksessa Commerce Headquarters -sovelluksessa.
 
-Commercen versiossa 10.0.13 ja uudemmissa versioissa käyttäjät voivat muokata tuettuja asiakastilauksia myyntipisteessä vain, jos tilaukset ovat kokonaan avoimia. Jos tilauksen rivejä on jo käsitelty täyttämistä (esimerkiksi keräily ja pakkaus) varten, tilausta ei voi enää muokata myyntipisteessä.
+Versiossa 10.0.17 ja sitä myöhemmissä versioissa käyttäjät voivat muokata hyväksyttäviä tilauksia myyntipistesovelluksen kautta, vaikka tilaus olisi osittain täytetty. Kokonaan laskutettuja tilauksia ei kuitenkaan vielä voi muokata myyntipisteessä. Jos haluat ottaa käyttöön tämän ominaisuuden, ota **Ota käyttöön osittain täytettyjen tilausten muokkaaminen myyntipisteessä** -toiminto käyttöön **Ominaisuuksien hallinta** -työtilassa. Jos tämä toiminto ei ole käytössä tai käytössä on versio 10.0.16 tai aiempi versio, käyttäjät voivat muokata asiakastilauksia myyntipisteessä vain, jos tilaus on kokonaan avoin. Lisäksi, jos ominaisuus on käytössä, voit rajoittaa, mitkä myymälät voivat muokata osittain täytettyjä tilauksia. Tämän toiminnon poistaminen käytöstä tietyissä myymälöissä voidaan konfiguroida **toimintoprofiilin** avulla **Yleiset**-pikavälilehdessä.
 
-> [!NOTE]
-> Commercen versiossa 10.0.14 [julkiseen esiversioon](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) vapautettu toiminto antaa myyntipisteen käyttäjille mahdollisuuden muokata asiakastilauksia myyntipisteessä, vaikka osa tilauksesta olisi jo toimitettu. Kokonaan laskutettuja tilauksia ei kuitenkaan vielä voi muokata myyntipisteessä. Jos haluat testata tätä esikatselutoimintoa ja antaa palautetta, ota käyttöön **(Esiversio) Ota käyttöön osittain täytettyjen tilausten muokkaaminen myyntipisteessä** -toiminto käyttöön **Ominaisuuksien hallinta** -työtilassa. Puhelinkeskuskanavan asiakastilauksia, joissa on käytössä Ota käyttöön tilausten viimeistely -toiminto, ei voi muokata, vaikka tämä toiminto olisi käytössä.
 
 1. Valitse **Peruuta tilaus**.
 2. Syötä suodattimet ja etsi tilaus **Hae**-kohdan avulla. Valitse sitten **Käytä**.
@@ -170,6 +170,3 @@ Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Asiakkaiden yhdistelmätilaukset](hybrid-customer-orders.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

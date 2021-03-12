@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 8cbc2909c3f4533b4ea68e522f0874873989f3ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528946"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994041"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin
 
@@ -33,9 +32,9 @@ ms.locfileid: "4528946"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
+> Tutustu [Microsoft Dataverse for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
-Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
+Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -taulut synkronoidaan suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
@@ -47,7 +46,7 @@ Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supp
 
 Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
-Seuraavia malleja ja niiden taustalla olevia tehtäviä käytetään synkronoimaan Salesin Yhteyshenkilö (Yhteyshenkilöt) -yksiköt Supply Chain Managementin Yhteyshenkilö (Asiakkaat) -yksikköön.
+Seuraavia malleja ja niiden taustalla olevia tehtäviä käytetään synkronoimaan Salesin Yhteyshenkilö (Yhteyshenkilöt) -taulut Supply Chain Managementin Yhteyshenkilö (Asiakkaat) -tauluun.
 
 - **Mallien nimet tietojen integroinnissa**
 
@@ -65,7 +64,7 @@ Seuraava synkronointitehtävä on tehtävä ennen yhteyshenkilön synkronointia:
 
 | Myynti    | Toimitusketjun hallinta |
 |----------|------------------------|
-| Yhteyshenkilöt | CDS-yhteyshenkilöt           |
+| Yhteyshenkilöt | Dataversen yhteyshenkilöt           |
 | Yhteyshenkilöt | Asiakkaat V2           |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
@@ -79,13 +78,13 @@ Salesin yhteyshenkilöstä voi tulla Supply Chain Managementin yhteyshenkilö ta
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Salesin ratkaisu prospektista käteiseksi
 
-Uusi **On aktiivinen asiakas** -kenttä on lisätty yhteyshenkilöön. Tämän kentän avulla erotetaan yhteyshenkilöt, joilla on myyntitehtävä, ja ne, joilla ei sitä ole. **On aktiivinen asiakas** -asetuksena on **Kyllä** vain yhteyshenkilöille, joilla on liittyviä tarjouksia, tilauksia tai laskuja. Vain nämä yhteyshenkilöt synkronoidaan Supply Chain Managementiin asiakkaina.
+Uusi **On aktiivinen asiakas** -sarake on lisätty yhteyshenkilöön. Tämän sarakkeen avulla erotetaan yhteyshenkilöt, joilla on myyntitehtävä, ja ne, joilla ei sitä ole. **On aktiivinen asiakas** -asetuksena on **Kyllä** vain yhteyshenkilöille, joilla on liittyviä tarjouksia, tilauksia tai laskuja. Vain nämä yhteyshenkilöt synkronoidaan Supply Chain Managementiin asiakkaina.
 
-Uusi **IsCompanyAnAccount**-kenttä on lisätty yhteyshenkilöön. Tämä kenttä osoittaa, onko yhteyshenkilö linkitetty **Tili**-tyypin yritykseen (päätili tai yhteyshenkilö). Näillä tiedoilla tunnistetaan yhteyshenkilöt, jotka on synkronoitava Supply Chain Managementiin yhteyshenkilöinä.
+Uusi **IsCompanyAnAccount**-sarake on lisätty yhteyshenkilöön. Tämä sarake osoittaa, onko yhteyshenkilö linkitetty **Tili**-tyypin yritykseen (päätili tai yhteyshenkilö). Näillä tiedoilla tunnistetaan yhteyshenkilöt, jotka on synkronoitava Supply Chain Managementiin yhteyshenkilöinä.
 
-Uusi **Yhteyshenkilön numero** -kenttä on lisätty yhteyshenkilöön, jotta integroinnin luonnollinen ja yksilöllinen avain voidaan taata. Kun uusi yhteyshenkilö luodaan, **Yhteyshenkilön numero** -arvo luodaan automaattisesti numerosarjan avulla. Arvossa on ensimmäisenä **CON**, sitten kasvava numerosarja ja lopuksi kuusimerkkinen loppuliite. Esimerkki: **CON-01000-BVRCPS**
+Uusi **Yhteyshenkilön numero** -sarake on lisätty yhteyshenkilöön, jotta integroinnin luonnollinen ja yksilöllinen avain voidaan taata. Kun uusi yhteyshenkilö luodaan, **Yhteyshenkilön numero** -arvo luodaan automaattisesti numerosarjan avulla. Arvossa on ensimmäisenä **CON**, sitten kasvava numerosarja ja lopuksi kuusimerkkinen loppuliite. Esimerkki: **CON-01000-BVRCPS**
 
-Kun Salesin integrointiratkaisu otetaan käyttöön, päivitetty komentosarja määrittää aiemmin luotujen yhteyshenkilöiden **Yhteyshenkilön numero** -kentän käyttämällä edellä mainittua numerosarjaa. Päivityskomentosarja määrittää myös **On aktiivinen asiakas** -kentän arvoksi **Kyllä** kaikille yhteyshenkilöille, joilla on myyntitehtävä.
+Kun Salesin integrointiratkaisu otetaan käyttöön, päivitetty komentosarja määrittää aiemmin luotujen yhteyshenkilöiden **Yhteyshenkilön numero** -sarakkeen käyttämällä edellä mainittua numerosarjaa. Päivityskomentosarja määrittää myös **On aktiivinen asiakas** -sarakkeen arvoksi **Kyllä** kaikille yhteyshenkilöille, joilla on myyntitehtävä.
 
 ## <a name="in-supply-chain-management"></a>Supply Chain Managementiin
 
@@ -95,7 +94,7 @@ Yhteyshenkilöt merkitään **IsContactPersonExternallyMaintained**-ominaisuudel
 
 ### <a name="contact-to-customer"></a>Yhteishenkilöstä asiakkaaseen
 
-- **CustomerGroup** on pakollinen Supply Chain Managementissa. Voit estää synkronointivirheet määrittämällä yhdistämismäärityksen oletusarvon. Oletusarvo käytetään, jos kenttä on tyhjä Salesissa.
+- **CustomerGroup** on pakollinen Supply Chain Managementissa. Voit estää synkronointivirheet määrittämällä yhdistämismäärityksen oletusarvon. Oletusarvoa käytetään, jos sarake on tyhjä Salesissa.
 
     Oletusmallin arvo on **10**.
 
@@ -118,7 +117,7 @@ Yhteyshenkilöt merkitään **IsContactPersonExternallyMaintained**-ominaisuudel
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä. 
 
 > [!NOTE]
-> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin.
+> Yhdistämismääritys osoittaa, minkä sarakkeen tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
 ### <a name="contact-to-contact"></a>Yhteyshenkilöstä yhteyshenkilöön
 
@@ -142,6 +141,3 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-invoice-template-mapping-direct.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

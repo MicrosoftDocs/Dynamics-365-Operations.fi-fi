@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68fa26daac055cd0fd72035683f05ed36052b3a3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411958"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995817"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Varaston saatavuuden laskeminen vähittäismyyntikanaville
 
@@ -114,6 +113,3 @@ On suositeltavaa ettet suorita näitä erätöitä liian usein (muutaman minuuti
 > Kun kanavan varaston saatavuuden laskelmia käytetään varaston saatavuuspyynnön luomisessa sähköisen kaupankäynnin ohjelmointirajapintaa tai uutta myyntipisteen kanavan varastointilogiikkaa, suorituskyvyn varmistamiseksi laskelma käyttää välimuistia ja määrittää sen avulla, onko laskentalogiikan suorittamisesta kulunut riittävästi aikaa, jotta sen suorittaminen uudelleen on perusteltua. Välimuistin oletusarvoksi on määritetty 60 sekuntia. Tässä esimerkissä otetaan käyttöön kanavan laskennan myymälässä ja tarkastellaan tuotteen käytettävissä olevaa varastoa **Varastohaku**-sivulla. Jos tuotetta tämän jälkeen myydään yksi yksikkö, **Varastohaku**-sivulla ei näy vähennetty varasto ennen välimuistin tyhjentämistä. Käyttäjien kirjattua tapahtumia myyntipisteeseen, heidän tulee odottaa 60 sekuntia. Tämän jälkeen he voivat tarkistaa, onko käytettävissä olevaa varastoa vähennetty tapahtuman mukaan.
 
 Jos liiketoimintaskenaario edellyttää lyhyempää välimuistin aikaa, ota yhteyttä tuotetuen edustajaan.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
