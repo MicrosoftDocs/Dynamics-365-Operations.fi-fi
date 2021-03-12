@@ -10,24 +10,23 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.custom: ''
 ms.search.region: Finland
 ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0097d1849965d97a8444ec0f65f69cee70fb7f0b
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: f654dcf73775094617bf0cd55fe4721f802c31d9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4407894"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005804"
 ---
-# <a name="finland-overview"></a><span data-ttu-id="49c63-103">Suomi – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="49c63-103">Finland overview</span></span>
+# <a name="finland-overview"></a><span data-ttu-id="402d7-103">Suomi – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="402d7-103">Finland overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="49c63-104">Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan määrittää yrityksille, joiden ensisijainen osoite on Suomessa.</span><span class="sxs-lookup"><span data-stu-id="49c63-104">This topic includes information and links to resources that can help you set up legal entities with a primary address in Finland.</span></span>
+<span data-ttu-id="402d7-104">Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan määrittää yrityksille, joiden ensisijainen osoite on Suomessa.</span><span class="sxs-lookup"><span data-stu-id="402d7-104">This topic includes information and links to resources that can help you set up legal entities with a primary address in Finland.</span></span>
 
-- [<span data-ttu-id="49c63-105">Suomen arvonlisäveromaksun raportti</span><span class="sxs-lookup"><span data-stu-id="49c63-105">Sales tax payment report for Finland</span></span>](emea-fin-sales-tax-payment-report-finland.md)
+- [<span data-ttu-id="402d7-105">Suomen arvonlisäveromaksun raportti</span><span class="sxs-lookup"><span data-stu-id="402d7-105">Sales tax payment report for Finland</span></span>](emea-fin-sales-tax-payment-report-finland.md)
 
