@@ -1,6 +1,6 @@
 ---
-title: Myyntitilauksen tilakenttien yhdistämismäärityksen määrittäminen
-description: Tässä ohjeaiheessa selitetään, miten myyntitilausten tilakentät määritetään kaksoiskirjoitusta varten.
+title: Myyntitilauksen tilasarakkeiden yhdistämismäärityksen ottaminen käyttöön
+description: Tässä aiheessa käsitellään myyntitilausten tilasarakkeiden määrittämistä kaksoiskirjoitusta varten.
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4452153"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744296"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Myyntitilauksen tilakenttien yhdistämismäärityksen määrittäminen
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Myyntitilauksen tilasarakkeiden yhdistämismäärityksen ottaminen käyttöön
 
 [!include [banner](../../includes/banner.md)]
 
-Ostotilauksen tilan ilmoittavilla kentillä on erilaiset luettelointiarvot Microsoft Dynamics 365 Supply Chain Managementissa ja Dynamics 365 Salesissa. Näiden kenttien yhdistämismääritys kaksoiskirjoituksessa edellyttää lisämäärityksiä.
+Ostotilauksen tilan ilmoittavilla sarakkeilla on erilaiset luettelointiarvot Microsoft Dynamics 365 Supply Chain Managementissa ja Dynamics 365 Salesissa. Näiden sarakkeiden yhdistämismääritys kaksoiskirjoituksessa edellyttää lisämäärityksiä.
 
-## <a name="fields-in-supply-chain-management"></a>Kentät Supply Chain Managementissa
+## <a name="columns-in-supply-chain-management"></a>Supply Chain Managementin sarakkeet
 
-Supply Chain Managementissa myyntitilauksen tilaan liittyy kaksi kenttää. Kentät, joille on suoritettava yhdistämismääritys ovat **Tila** ja **Asiakirjan tila**.
+Supply Chain Managementissa myyntitilauksen tilaan liittyy kaksi saraketta. Sarakkeet, joille on suoritettava yhdistämismääritys ovat **Tila** ja **Asiakirjan tila**.
 
 **Tila**-luettelointi määrittää tilauksen yleisen tilan. Tämä tila näkyy tilauksen otsikossa.
 
@@ -53,9 +53,9 @@ Supply Chain Managementissa myyntitilauksen tilaan liittyy kaksi kenttää. Kent
 - Pakkausluettelo
 - Lasku
 
-## <a name="fields-in-sales"></a>Kentät Salesissa
+## <a name="columns-in-sales"></a>Salesin sarakkeet
 
-Salesissa myyntitilauksen tilaan liittyy kaksi kenttää. Kentät, joille on suoritettava yhdistämismääritys ovat **Tila** ja **Käsittelytila**.
+Salesissa myyntitilauksen tilaan liittyy kaksi saraketta. Sarakkeet, joille on suoritettava yhdistämismääritys, ovat **Tila** ja **Käsittelytila**.
 
 **Tila**-luettelointi määrittää tilauksen yleisen tilan. Sillä on seuraavat arvot:
 
@@ -95,7 +95,7 @@ Seuraavassa taulukossa esitetään **Käsittelytila**-arvon yhdistämismäärity
 
 ## <a name="setup"></a>Luo perustiedot
 
-Voit määrittää myyntitilauskenttien yhdistämismäärityksen ottamalla käyttöön määritteet **IsSOPIntegrationEnabled** ja **isIntegrationUser**.
+Voit määrittää myyntitilauksen tilasarakkeiden yhdistämismäärityksen ottamalla käyttöön määritteet **IsSOPIntegrationEnabled** ja **isIntegrationUser**.
 
 Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
 
@@ -110,14 +110,14 @@ Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
 
 Voit ottaa **isIntegrationUser**-määritteen käyttöön seuraavasti.
 
-1. Siirry Salesissa kohtaan **Asetus \> Mukauttaminen \> Järjestelmän mukauttaminen**, valitse **Käyttäjäyksikkö** ja avaa sitten **Lomake \> Käyttäjä**.
+1. Valitse Salesissa **Asetus \> Mukauttaminen \> Järjestelmän mukauttaminen**, valitse **Käyttäjätaulu** ja avaa sitten **Lomake \> Käyttäjä**.
 
     ![Käyttäjälomakkeen avaaminen](media/sales-map-user.png)
 
 2. Etsi kenttähaussa **Integrointikäyttäjän tila** ja lisää se lomakkeeseen kaksoisnapsauttamalla. Tallenna muutos.
 
-    ![Integrointikäyttäjän tila -kentän lisääminen lomakkeeseen](media/sales-map-field-explorer.png)
+    ![Integrointikäyttäjän tila -sarakkeen lisääminen lomakkeeseen](media/sales-map-field-explorer.png)
 
 3. Siirry Salesissa kohtaan **Asetus \> Suojaus \> Käyttäjät** ja vaihda näkymästä **Käytössä olevat käyttäjät** näkymään **Sovelluksen käyttäjät**.
 
@@ -145,11 +145,8 @@ Voit ottaa **isIntegrationUser**-määritteen käyttöön seuraavasti.
 
     ![Sovelluksen käyttäjien luettelo](media/sales-map-user-mode.png)
 
-5. Muuta **Integrointikäyttäjän tila** -kentän arvoksi **Kyllä**.
+5. Muuta **Integrointikäyttäjän tila** -sarakkeen arvoksi **Kyllä**.
 
-    ![Integrointikäyttäjän tila -kentän arvon muuttaminen](media/sales-map-user-mode-yes.png)
+    ![Integrointikäyttäjän tila -sarakkeen arvon muuttaminen](media/sales-map-user-mode-yes.png)
 
 Myyntitilauksillesi on nyt suoritettu yhdistämismääritys.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

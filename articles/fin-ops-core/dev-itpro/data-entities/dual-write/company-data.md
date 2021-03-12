@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 2f0e3950f2b35dd8b8dbf50601b7d6b6d624863e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683672"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744876"
 ---
 # <a name="company-concept-in-dataverse"></a>Yrityksen käsite Dataversessa
 
@@ -36,7 +36,7 @@ Finance and Operationsissa käsite *Yritys* on sekä oikeudellinen että liiketo
 
 Dataversessa ei ole vastaavaa käsitettä. Lähin käsite on *liiketoimintayksikkö*, joka on ensisijaisesti tietoturvan ja näkyvyyden raja käyttäjätiedoille. Tällä käsitteellä ei ole sama oikeudellisia tai liiketoiminnan vaikutuksia kuin yrityksen käsitteellä.
 
-Koska liiketoimintayksikkö ja yritys eivät ole vastaavia käsitteitä, ei ole mahdollista pakottaa yksi-yhteen (1:1)-vastaavuutta niiden välillä Dataverse -integrointia varten. Koska käyttäjien on kuitenkin oletusarvoisesti pystyttävä näkemään samat rivit sovelluksessa ja Dataversessa, Microsoft on ottanut käyttöön uuden entiteetin Dataversessa, jonka nimi on cdm\_Company. Tämä entiteetti vastaa sovelluksen Yritys-yksikköä. Jos haluat varmistaa, että rivien näkyvyys vastaa toisiaan sovelluksen ja Dataversen välillä heti käyttöönotettaessa, suosittelemme seuraavaa tietojen määritystä Dataversessa:
+Koska liiketoimintayksikkö ja yritys eivät ole vastaavia käsitteitä, ei ole mahdollista pakottaa yksi-yhteen (1:1)-vastaavuutta niiden välillä Dataverse -integrointia varten. Koska käyttäjien on kuitenkin oletusarvoisesti pystyttävä näkemään samat rivit sovelluksessa ja Dataversessa, Microsoft on ottanut käyttöön uuden taulun Dataversessa, jonka nimi on cdm\_Company. Tämä taulu vastaa sovelluksen Yritys-taulua. Jos haluat varmistaa, että rivien näkyvyys vastaa toisiaan sovelluksen ja Dataversen välillä heti käyttöönotettaessa, suosittelemme seuraavaa tietojen määritystä Dataversessa:
 
 + Jokaiselle Finance and Operationsin Yritys-riville, jolle on otettu käyttöön kaksoiskirjoitus, luodaan liittyvä cdm\_Company-rivi.
 + Kun cdm\_Company-rivi luodaan ja otetaan käyttöön kaksoiskirjoitukselle, luodaan oletusliiketoimintayksikkö, jolla on sama nimi. Vaikka kyseiselle liiketoimintayksikölle luodaan automaattisesti oletusryhmä, liiketoimintayksikköä ei käytetä.
@@ -52,23 +52,23 @@ Tämän määrityksen vuoksi kaikki USMF-yritykseen liittyvät rivit omistaa ryh
 + Myyntipäällikkö-rooli määritetään USMF Sales -tiimin jäsenille.
 + Käyttäjät, joilla on Myyntipäällikkö-rooli, voivat käyttää mitä tahansa tilin rivejä, jotka ovat saman liiketoimintayksikön jäseniä.
 + USMF Sales -tiimi on linkitetty aiemmin mainittuun USMF-liiketoimintayksikköön.
-+ Tämän vuoksi USMF Sales -tiimin jäsenet näkevät minkä tahansa tilin, jonka omistaa USMF DW, joka olisi tullut USMF-yrityksen entiteetistä Finance and Operationsissa.
++ Tämän vuoksi USMF Sales -tiimin jäsenet näkevät minkä tahansa tilin, jonka omistaa USMF DW, joka olisi tullut USMF-yrityksen taulusta Finance and Operationsissa.
 
 ![Miten ryhmiä voidaan käyttää](media/dual-write-company-2.png)
 
 Kuten edellä olevassa kuvassa näkyy, tämä 1:1-yhteys liiketoimintayksikön, yrityksen ja tiimin välillä on vain lähtökohta. Tässä esimerkissä uusi Europe-liiketoimintayksikkö luodaan manuaalisesti Dataversessa sekä DEMF:n että ESMF:n ylätasona. Tämä uusi pääliiketoimintayksikkö ei liity kaksoiskirjoittamiseen. Sen avulla voidaan kuitenkin antaa "EUR Sales"-tiimin jäsenille pääsy tilitietoihin sekä DEMF:ssä että ESMF:ssä asettamalla tietojen näkyvyydeksi **Ylätaso/aliliiketoimintayksikkö** liittyvässä käyttöoikeusroolissa.
 
-Viimeinen käsiteltävä aihe on, miten kaksoiskirjoitus määrittää, mihin omistajaryhmään sen tulisi liittää tilejä. Tätä toiminnallisuutta ohjaa **Oletusomistajaryhmä** -kenttä kohdassa cdm\_Yrityksen rivi. Kun cdm\_Yrityksen rivillä on otettu käyttöön kaksoiskirjoitus, laajennus luo automaattisesti liittyvän liiketoimintayksikön ja omistajaryhmän (jos sitä ei vielä ole) ja määrittää **Oletusomistajaryhmä**-kentän. Järjestelmänvalvoja voi muuttaa kentän arvoksi eri arvon. Järjestelmänvalvoja ei kuitenkaan voi tyhjentää kenttää niin kauan kuin entiteetti on kaksoiskirjoitustilassa.
+Viimeinen käsiteltävä aihe on, miten kaksoiskirjoitus määrittää, mihin omistajaryhmään sen tulisi liittää tilejä. Tätä toiminnallisuutta ohjaa **Oletusomistajaryhmä**-sarake kohdassa cdm\_Yrityksen rivi. Kun cdm\_Yrityksen rivillä on otettu käyttöön kaksoiskirjoitus, laajennus luo automaattisesti liittyvän liiketoimintayksikön ja omistajaryhmän (jos sitä ei vielä ole) ja määrittää **Oletusomistajaryhmä**-sarakkeen. Järjestelmänvalvoja voi muuttaa sarakkeen arvoksi eri arvon. Järjestelmänvalvoja ei kuitenkaan voi tyhjentää saraketta niin kauan kuin taulu on kaksoiskirjoitustilassa.
 
 > [!div class="mx-imgBorder"]
-![Oletusomistajaryhmä-kenttä](media/dual-write-default-owning-team.jpg)
+![Oletusomistajaryhmä-taulu](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Yrityksen tietojen omistajuus ja esilataus
 
-Dataverse -integrointi tuo yrityksen pariteetin käyttämällä yritystunnusta tietojen omistajuuden ilmaisemiseen. Kuten seuraavassa kuvassa näkyy, kaikkia yrityskohtaisia tauluja laajennetaan siten, että niillä on monta-yhteen (N:1)-suhde cdm\_Yritys-entiteetin kanssa.
+Dataverse -integrointi tuo yrityksen pariteetin käyttämällä yritystunnusta tietojen omistajuuden ilmaisemiseen. Kuten seuraavassa kuvassa näkyy, kaikkia yrityskohtaisia tauluja laajennetaan siten, että niillä on monta-yhteen (N:1)-suhde cdm\_Yritys-taulun kanssa.
 
 > [!div class="mx-imgBorder"]
-![N:1-suhde yrityskohtaisen entiteetin ja cdm_Company-yksikön välillä](media/dual-write-bootstrapping.png)
+![N:1-suhde yrityskohtaisen taulun ja cdm_Company-taulun välillä](media/dual-write-bootstrapping.png)
 
 + Kun yritys on lisätty ja tallennettu, arvo riveillä muuttuu vain luku -arvoksi. Siksi käyttäjien tulee varmistaa, että he valitsevat oikean yrityksen.
 + Vain rivit, joilla on yritystietoja, voivat olla kaksoiskirjoituskelpoisia sovelluksen ja Dataversen välillä.
@@ -83,7 +83,7 @@ Yrityksen nimi voidaan täyttää automaattisesti usealla eri tavalla asiakkaide
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Oletusyrityksen määrittäminen Organisaation tiedot -osassa":::
 
-+ Jos sinulla on **Järjestelmäkäyttäjä**-entiteetin **Kirjoitus**-käyttöoikeus **Liiketoimintayksikkö**-tasolla, voit muuttaa oletusyrityksen missä tahansa lomakkeessa valitsemalla yrityksen avattavasta **Yritys**-luettelosta.
++ Jos sinulla on **Järjestelmäkäyttäjä**-taulun **Kirjoitus**-käyttöoikeus **Liiketoimintayksikkö**-tasolla, voit muuttaa oletusyrityksen missä tahansa lomakkeessa valitsemalla yrityksen avattavasta **Yritys**-luettelosta.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Yrityksen nimen muuttaminen uudessa tilissä":::
 
@@ -93,15 +93,12 @@ Yrityksen nimi voidaan täyttää automaattisesti usealla eri tavalla asiakkaide
 
 + Jos olet järjestelmän määrittäjä tai järjestelmänvalvoja ja haluat täyttää yrityksen tiedot automaattisesti mukautetussa lomakkeessa, voit käyttää [lomaketapahtumia](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Lisää JavaScript-viittaus kohteeseen **msdyn_/DefaultCompany.js** ja käytä seuraavia tapahtumia. Voit käyttää mitä tahansa valmista lomaketta, kuten **Tili**-lomaketta.
 
-    + Lomakkeen **OnLoad**-tapahtuma: määritä **defaultCompany**-kenttä.
-    + **Yritys**-kentän **OnChange**-tapahtuma: määritä **updateDefaultCompany**-kenttä.
+    + Lomakkeen **OnLoad**-tapahtuma: määritä **defaultCompany**-sarake.
+    + **Yritys**-sarakkeen **OnChange**-tapahtuma: määritä **updateDefaultCompany**-sarake.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Suodatuksen käyttäminen yrityskontekstin perusteella
 
-Voit käyttää mukautettujen lomakkeiden yrityskontekstiin tai vakiolomakkeisiin lisättyihin mukautettuihin valintakenttiin perustuvaa suodatusta avaamalla lomakkeen ja ottamalla yrityssuodatuksen käyttöön **Liittyvien tietueiden suodatus** -osassa. Tämä asetus on määritettävä jokaiselle valintakentälle, joka suodatetaan tietyn rivin taustalla olevan yrityksen perusteella. Seuraavassa kuvassa on tämä asetus **Tili**-lomakkeessa.
+Voit käyttää mukautettujen lomakkeiden yrityskontekstiin tai vakiolomakkeisiin lisättyihin mukautettuihin valintasarakkeisiin perustuvaa suodatusta avaamalla lomakkeen ja ottamalla yrityssuodatuksen käyttöön **Liittyvien tietueiden suodatus** -osassa. Tämä asetus on määritettävä jokaiselle valintasarakkeelle, joka suodatetaan tietyn rivin taustalla olevan yrityksen perusteella. Seuraavassa kuvassa on tämä asetus **Tili**-lomakkeessa.
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Yrityskontekstin käyttäminen":::
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

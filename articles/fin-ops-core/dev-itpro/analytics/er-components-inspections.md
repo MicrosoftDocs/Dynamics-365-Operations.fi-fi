@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688564"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797338"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 
 [!include[banner](../includes/banner.md)]
 
-Jokainen määritetty [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [muoto-](general-electronic-reporting.md#FormatComponentOutbound) ja [mallin yhdistämismääritys -](general-electronic-reporting.md#data-model-and-model-mapping-components) komponentti voidaan [oikeellisuustarkistaa](er-fillable-excel.md#validate-an-er-format) suunnittelun aikana. Tämän oikeellisuustarkistuksen aikana tehdään yhdenmukaisuustarkistus, joka auttaa estämään suorituksen aikaisia ongelmia, kuten suoritusvirheitä ja suorituskyvyn heikentymistä. Jokaiselle löydetylle ongelmalle annetaan ongelmallisen elementin polku. Automaattista korjausta voidaan käyttää joihinkin ongelmiin.
+Jokainen määritetty [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [muoto-](general-electronic-reporting.md#FormatComponentOutbound) ja [mallin yhdistämismääritys -](general-electronic-reporting.md#data-model-and-model-mapping-components) komponentti voidaan [oikeellisuustarkistaa](er-fillable-excel.md#validate-an-er-format) suunnittelun aikana. Tämän oikeellisuustarkistuksen aikana suoritettava yhdenmukaisuustarkistus auttaa estämään suorituksen aikaisia ongelmia, kuten suoritusvirheitä ja suorituskyvyn heikentymistä. Tarkistus ilmoittaa jokaiselle löydetylle ongelmalle ongelmallisen elementin polun. Automaattista korjausta voidaan käyttää joihinkin ongelmiin.
 
 Oletusarvon mukaan oikeellisuustarkistusta käytetään seuraavissa tapauksissa automaattisesti ER-kokoonpanossa, joka sisältää aiemmin mainitut ER-komponentit:
 
@@ -69,7 +68,7 @@ Voit ohittaa oikeellisuustarkistuksen määrityksiä tuotaessa noudattamalla nä
 2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
 3. Määritä **Vahvista määritykset tuonnin jälkeen** -asetuksen arvoksi **Ei**.
 
-Voit ohittaa oikeellisustarkistuksen, kun version tila vaihdetaan tai palautetaan, noudattamalla seuraavia ohjeita.
+Voit ohittaa oikeellisuustarkistuksen, kun version tila vaihdetaan tai palautetaan, noudattamalla seuraavia ohjeita.
 
 1. Siirry kohtaan **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraatiot**.
 2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
@@ -101,7 +100,7 @@ Seuraavassa taulukossa on yhteenveto ER:n tarjoamista tarkistuksista. Lisätieto
 <td>Virhe</td>
 <td>
 <p>Lauseketta, jonka tyyppi on &lt;tyyppi&gt; ei voida muuttaa kenttätyypiksi &lt;tyyppi&gt;.</p>
-<p><b>Suorituksenaikainen virhe:</b> poikkeus tyyppiä</p>
+<p><b>Suorituksenaikainen virhe:</b> tyypin poikkeus</p>
 </td>
 </tr>
 <tr>
@@ -220,17 +219,17 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![X-kenttä ja kokonaislukutietotyyppi lisättyinä tietomuotopuuhun Tietomalli-sivulla](./media/er-components-inspections-01.png)
 
-3. Lisää mallin yhdistämismäärityksen tietolähteet -ruudussa tietolähde, jonka tyyppi on **Laskettu kenttä**.
+3. Lisää mallin yhdistämismäärityksen tietolähderuudussa tietolähde, jonka tyyppi on **Laskettu kenttä**.
 4. Nimeä uusi tietolähde nimellä **Y** ja määritä se siten, että se sisältää lausekkeen `INTVALUE(100)`.
 5. Sido **X** kohteeseen **Y**.
 6. Vaihda tietomallin suunnittelijassa **X**-kentän tietotyyppi **kokonaisluvusta** tyypiksi **Int64**.
-7. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
+7. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
 
-    ![muokattavan mallin yhdistämismismäärityskonponentin oikeellisuustarkistus Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-01.gif)
+    ![muokattavan mallin yhdistämismäärityskomponentin oikeellisuustarkistus Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-01.gif)
 
-8. Valitse **Oikeellisuustarkistus** tarkastellaksesi mallin yhdistämismäärityskomponenttia valitussa ER-määrityksessä **Määritykset**-sivulla.
+8. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella mallin yhdistämismäärityskomponenttia valitussa ER-määrityksessä **Määritykset**-sivulla.
 
-    ![Suorita oikeellisuustarkistus tarkastellaksesi mallin yhdistämismäärityskomponenttia Määritykset-sivulla](./media/er-components-inspections-01a.png)
+    ![Suorittamalla oikeellisuustarkistus voidaan tarkastella mallin yhdistämismäärityskomponenttia Määritykset-sivulla](./media/er-components-inspections-01a.png)
 
 9. Huomaa, että vahvistusvirhe ilmenee. Sanoma ilmoittaa, että **Kokonaisluku**-tyypin arvoa, jonka `INTVALUE(100)`-lauseke **Y**-tietolähteestä palauttaa, ei voida tallentaa **X**-tietomallikenttään, jonka tyyppi on **Int64**.
 
@@ -278,7 +277,7 @@ Tätä ongelmaa ei voi korjata automaattisesti.
 
 #### <a name="option-1"></a>Asetus 1
 
-Päivitä muotomallin rakenne muuttamalla **Numero**-muotoelementin tietotyyppiä siten, että se on sama, kuin kyseisen elementin sitovaksi määritetyn lausekkeen tietotyyppi. Edellä olevassa esimerkissä **Numerotyyppi**-arvo, joka **X**-muotoelementillä on, on muutettava takaisin tietotyypiksi **Kokonaisluku**.
+Päivitä muotomallin rakenne muuttamalla **Numero**-muotoelementin tietotyyppiä siten, että se on sama kuin kyseisen elementin sitovaksi määritetyn lausekkeen tietotyyppi. Edellä olevassa esimerkissä **Numerotyyppi**-arvo, joka **X**-muotoelementillä on, on muutettava takaisin tietotyypiksi **Kokonaisluku**.
 
 #### <a name="option-2"></a>Asetus 2
 
@@ -295,11 +294,11 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Tietomallipuu, jossa on X-kenttä ja Kokonaisluku-tietotyyppi Tietomalli-sivulla](./media/er-components-inspections-01.png)
 
-3. Lisää mallin yhdistämismäärityksen tietolähteet -ruudussa tietolähde, jonka tyyppi on **Laskettu kenttä**.
+3. Lisää mallin yhdistämismäärityksen tietolähderuudussa tietolähde, jonka tyyppi on **Laskettu kenttä**.
 4. Nimeä uusi tietolähde nimellä **Y** ja määritä se siten, että se sisältää lausekkeen `INTVALUE(100)`.
 5. Sido **X** kohteeseen **Y**.
-6. Poista mallin yhdistämismäärityksen suunnittelijan tietolähteet-ruudusta tietolähde **Y**.
-7. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
+6. Poista mallin yhdistämismäärityksen suunnittelijan tietolähderuudusta tietolähde **Y**.
+7. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
 
     ![Tarkastele muokattavaa ER-mallin yhdistämismäärityskomponenttia Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-03.gif)
 
@@ -330,10 +329,10 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 3. Anna uudelle tietolähteelle nimeksi **Vendor**. Valitse **Taulu**-kentässä **VendTable** määrittämään, että tämä tietolähde pyytää VendTable-taulua.
 4. Lisää tietolähde, jonka tietotyyppi on **Laskettu kenttä**.
 5. Anna uudelle tietolähteelle nimeksi **FilteredVendor** ja määritä se sisältämään lauseke `FILTER(Vendor, Vendor.AccountNum="US-101")`.
-6. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmista, että `FILTER(Vendor, Vendor.AccountNum="US-101")`-lauseke **Vendor**-tietolähteessä on kyseltävissä.
+6. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmistaa, että `FILTER(Vendor, Vendor.AccountNum="US-101")`-lauseke **Vendor**-tietolähteessä on kyseltävissä.
 7. Muokkaa **Vendor**-tietolähdettä lisäämällä sisäkkäinen kenttä, jonka tyyppi on **Laskettu kenttä** saadaksesi lyhennetyn toimittajan tilin numeron.
 8. Anna uudelle sisäkkäiselle kentälle nimeksi **$AccNumber** ja määritä se sisältämään lauseke `TRIM(Vendor.AccountNum)`.
-9. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmista, että `FILTER(Vendor, Vendor.AccountNum="US-101")`-lauseke **Vendor**-tietolähteessä on kyseltävissä.
+9. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmistaa, että `FILTER(Vendor, Vendor.AccountNum="US-101")`-lauseke **Vendor**-tietolähteessä on kyseltävissä.
 
     ![Lausekkeen kyseltävyyden tarkistaminen Moallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-04.gif)
 
@@ -374,13 +373,13 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Tietolähteen määrittäminen Ryhmittelyparametrien muokkaussivulla](./media/er-components-inspections-05a.gif)
 
-6. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmista, että määritetty **GroupedTrans**-tietolähde on kyseltävissä.
+6. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmistaa, että määritetty **GroupedTrans**-tietolähde on kyseltävissä.
 7. Muokkaa **Trans**-tietolähdettä lisäämällä sisäkkäinen kenttä, jonka tyyppi on **Laskettu kenttä** saadaksesi lyhennetyn toimittajan tilin numeron.
 8. Anna uudelle tietolähteelle nimeksi **$AccNumber** ja määritä se sisältämään lauseke `TRIM(Trans.AccountNum)`.
 
     ![Tietolähteen määrittäminen Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-05a.png)
 
-9. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmista, että määritetty **GroupedTrans**-tietolähde on kyseltävissä.
+9. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmistaa, että määritetty **GroupedTrans**-tietolähde on kyseltävissä.
 
     ![Suorita oikeellisuustarkistus ER-mallin yhdistämismäärityskomponentille ja varmista, että määritetty tietolähde GroupedTrans on kyseltävissä Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-05b.png)
 
@@ -426,9 +425,9 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Tietolähteen määrittäminen Liitoksen suunnittelija -sivulla](./media/er-components-inspections-06a.gif)
 
-10. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -suvulla ja varmista, että määritetty **JoinedList**-tietolähde on kyseltävissä.
+10. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -suvulla ja varmistaa, että määritetty **JoinedList**-tietolähde on kyseltävissä.
 11. Muuta tietolähteen **Vendor.FilteredTrans** lauseke arvosta `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` arvoksi `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
-12. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -suvulla ja varmista, että määritetty **JoinedList**-tietolähde on kyseltävissä.
+12. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -suvulla ja varmistaa, että määritetty **JoinedList**-tietolähde on kyseltävissä.
 
     ![Suorita oikeellisuustarkistus muokattavan mallin yhdistämismäärityskomponentille ja varmista, että JoinedList-tietolähde on kyseltävissä Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-06b.png)
 
@@ -454,7 +453,7 @@ Muuta tietolähteen **Vendor.FilteredTrans** lauseke arvosta `WHERE(Trans, Trans
 
 #### <a name="option-2"></a>Asetus 2
 
-Muuta **Suoritus**-kentän arvo **JoinedList**-tietolähteelle arvosta **Kysely** arvoksi **Muistissa**. Emme suosittele sellaisen taulun arvon muuttamista, jossa on suuri tietomäärä (tapahtumataulu), koska kaikki tiedot haetaan ja yhdistäminen tehdään muistissa. Näin ollen tämä lähestymistapa voi heikentää suorituskykyä. Tästä riskistä ilmoitetaan oikeellisuustarkistusvaroituksen avulla.
+Muuta **Suoritus**-kentän arvo **JoinedList**-tietolähteelle arvosta **Kysely** arvoksi **Muistissa**. Sellaisen taulun arvon muuttamista ei suositella, jossa on suuri tietomäärä (tapahtumataulu), koska kaikki tiedot haetaan ja yhdistäminen tehdään muistissa. Näin ollen tämä lähestymistapa voi heikentää suorituskykyä. Tästä riskistä ilmoitetaan oikeellisuustarkistusvaroituksen avulla.
 
 ## <a name="preferability-of-filter-vs-where-function"></a><a id="i7"></a>FILTER-funktion suositeltavuus WHERE-funktion asemesta
 
@@ -471,9 +470,9 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 7. Anna uudelle tietolähteelle nimeksi **Vendor**. Valitse **Taulu**-kentässä **VendTable** määrittämään, että tämä tietolähde pyytää VendTable-taulua.
 8. Lisää tietolähde, jonka tietotyyppi on **Laskettu kenttä**.
 9. Anna uudelle tietolähteelle nimeksi **FilteredVendor** ja määritä se sisältämään lauseke `WHERE(Vendor, Vendor.AccountNum="US-101")`.
-10. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
+10. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
 
-    ![Suorita oikeellisuustarkistus tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-07a.png)
+    ![Suorittamalla oikeellisuustarkistus voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-07a.png)
 
 11. Huomaa, että oikeellisuustarkistusvaroitukset suosittelevat, että käytät **FILTER**-funktiota **WHERE**-funktion asemesta **FilteredVendor**- ja **FilteredTrans**-tietolähteille.
 
@@ -489,11 +488,11 @@ Vaihtoehtoisesti voit valita ruudukon yksittäisen varoituksen rivin ja valita s
 
 ### <a name="manual-resolution"></a>Manuaalinen ratkaisu
 
-Voit muokata lausekkeita kaikille tietolähteille, jotka on mainittu oikeellisuustarkistusruudukossa korvaamalla **WHERE**-funktion **FILTER**-funktiolla.
+Voit muokata lausekkeita kaikille tietolähteille oikeellisuustarkistusruudukossa korvaamalla **WHERE**-funktio **FILTER**-funktiolla.
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>ALLITEMSQUERY-funktion suositeltavuus ALLIITEMS-funktion asemesta
 
-Sisäänrakennettuja [ALLITEMS](er-functions-list-allitems.md)- ja [ALLITEMSQUERY](er-functions-list-allitemsquery.md)- ER funktioita käytetään hakemaan madallettu **Tietueluettelo**-arvo, joka koostuu luettelosta tietueita, jotka edustavat kaikkia nimikkeitä, jotka vastaavat määritettyä polkua. ER tarkistaa, voidaanko suora SQL-kutsu määrittää tietolähteelle, johon viitataan **ALLITEMS**-funktiossa. Jos suoraa kutsua ei voida määrittää, ER-mallin yhdistämismäärityksen suunnittelijassa ilmenee oikeellisuustarkistusvaroitus. Vastaanotettu sanoma suosittelee **ALLITEMSQUERY**-funktion käyttöä **ALLITEMS**-funktion asemesta suorituskyvyn parantamiseksi.
+Sisäänrakennetut [ALLITEMS](er-functions-list-allitems.md)- ja [ALLITEMSQUERY](er-functions-list-allitemsquery.md)-ER-funktiot palauttavat tasoitetun **Tietueluettelo**-arvon, jonka sisältämä tietueluettelo edustaa kaikkia määritettyä polkua vastaavia nimikkeitä. ER tarkistaa, voidaanko suora SQL-kutsu määrittää tietolähteelle, johon viitataan **ALLITEMS**-funktiossa. Jos suoraa kutsua ei voida määrittää, ER-mallin yhdistämismäärityksen suunnittelijassa ilmenee oikeellisuustarkistusvaroitus. Vastaanotettu sanoma suosittelee **ALLITEMSQUERY**-funktion käyttöä **ALLITEMS**-funktion asemesta suorituskyvyn parantamiseksi.
 
 Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
@@ -504,7 +503,7 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 5. Anna uudelle tietolähteelle nimeksi **FilteredVendor** ja määritä se sisältämään lauseke `FILTER(Vendor, OR(Vendor.AccountNum="US-101",Vendor.AccountNum="US-102"))`.
 6. Lisää **Laskettu kenttä** -tyyppinen tietolähde hakeaksesi tapahtumat kaikille suodatetuille toimittajille.
 7. Anna uudelle tietolähteelle nimeksi **FilteredVendorTrans** ja määritä se sisältämään lauseke `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
-8. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
+8. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
 
     ![Mallin yhdistämismäärityksen suunnittelija -sivu, Oikeellisuustarkistus-painike](./media/er-components-inspections-08a.png)
 
@@ -541,7 +540,7 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Sisäkkäisten kenttien lisääminen Tietomalli-sivulle](./media/er-components-inspections-09a.png)
 
-6. Lisää mallin yhdistämismäärityksen tietolähteet -ruudussa tietolähde, jonka tyyppi on **Dynamics 365 for Operations \\ Table records**.
+6. Lisää mallin yhdistämismäärityksen tietolähderuudussa tietolähde, jonka tyyppi on **Dynamics 365 for Operations \\ Table records**.
 7. Anna uudelle tietolähteelle nimeksi **Vendor**. Valitse **Taulu**-kentässä **VendTable** määrittämään, että tämä tietolähde pyytää VendTable-taulua.
 8. Lisää tietolähde, jonka tyyppi on **Yleinen \\ Käyttäjän syöteparametri** hakeaksesi toimittajan tilin suorituksenaikaisessa dialogiruudussa.
 9. Anna uudelle tietolähteelle nimeksi **RequestedAccountNum**. Lisää **Selite**-kenttään **Toimittajan tilinumero**. Jätä **Toiminnon tietotyypin nimi** -kenttään oletusarvo **Kuvaus**.
@@ -573,11 +572,11 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Suorita oikeellisuustarkistus muotoelementeille, jotka sidottiin tietolähteisiin Muodon suunnittelija -sivulla](./media/er-components-inspections-09c.png)
 
-16. Huomaa, että vahvistusvirheitä ilmenee. Sanoma ilmoittaa, että määritetylle **Lauseke\\Osapuoli\\Nimi**- ja **Lauseke\\Osapuoli\\AccountNum**-muotokomponenteille saatetaan luoda virhe suorituksen aikana, jos **model.Vendor**-luettelo on tyhjä.
+16. Huomaa, että vahvistusvirhe ilmenee. Sanoma ilmoittaa, että määritetylle **Lauseke\\Osapuoli\\Nimi**- ja **Lauseke\\Osapuoli\\AccountNum**-muotokomponenteille saatetaan luoda virhe suorituksen aikana, jos `model.Vendor`-luettelo on tyhjä.
 
     ![Oikeellisuustarkistus virhe, joka ilmoittaa mahdollisesta virheestä määritetyissä muotokomponenteissa](./media/er-components-inspections-09d.png)
 
-Seuraavassa kuvassa näkyy suorituksenaikainen virhe, joka tapahtuu, jos ohitat varoituksen ja valitset **Suorita** suorittaaksesi muodon ja valitset olemattoman toimittajan tilinumeron. Koska pyydettyä toimittajaa ei ole, **model.Vendor**-luettelo on tyhjä (se ei sisällä yhtään tietuetta).
+Seuraavassa kuvassa näkyy suorituksenaikainen virhe, joka tapahtuu, jos ohitat varoituksen ja valitset **Suorita** suorittaaksesi muodon ja valitset olemattoman toimittajan tilinumeron. Koska pyydettyä toimittajaa ei ole, `model.Vendor`-luettelo on tyhjä (se ei sisällä yhtään tietuetta).
 
 ![Suorituksenaikaiset virheet, jotka tapahtuivat sen vuoksi muodon yhdistymismäärityksen suorituksessa](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ Voit valita **Varoitukset**-välilehden ruudukossa valitulle riville **Pura sido
 
 #### <a name="option-1"></a>Asetus 1
 
-Voit sitoa muotoelementin **Lauseke\\Osapuoli\\Nimi** tietolähdenimikkeeseen **model.Vendor**. Suorituksen aikana tämä sidonta kutsuu ensin tietolähdettä **model.Vendor**. Kun **model.Vendor** palauttaa tyhjän tietueluettelon, sisäkkäiset muotoelementit eivät toimi. Tämän vuoksi tässä muotomäärityksessä ei tapahtu oikeellisuustarkistusvaroituksia.
+Voit sitoa muotoelementin **Lauseke\\Osapuoli\\Nimi** tietolähdenimikkeeseen `model.Vendor`. Suorituksen aikana tämä sidonta kutsuu ensin tietolähdettä `model.Vendor`. Kun `model.Vendor` palauttaa tyhjän tietueluettelon, sisäkkäiset muotoelementit eivät toimi. Tämän vuoksi tässä muotomäärityksessä ei tapahtu oikeellisuustarkistusvaroituksia.
 
 ![Sido muotoelementti tietolähdenimikkeeseen Muodon suunnittelija -sivulla](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Asetus 2
 
-Muuta muotoelementin **Lauseke\\Osapuoli\\Nimi** sidonta arvosta `model.Vendor.Name` arvoksi `FIRSTORNULL(model.Vendor).Name`. Päivitetty sidonta muuntaa ehdollisesti tietolähteen **model.Vendor** ensimmäisen tietueen tyypin tietolähteen, jonka tyyppi on **Tietueluettelo**, uudeksi tietolähteeksi, jonka tyyppi on **Tietue**. Tämä uusi tietolähde sisältää saman kenttäjoukon.
+Muuta muotoelementin **Lauseke\\Osapuoli\\Nimi** sidonta arvosta `model.Vendor.Name` arvoksi `FIRSTORNULL(model.Vendor).Name`. Päivitetty sidonta muuntaa ehdollisesti tietolähteen `model.Vendor` ensimmäisen tietueen tyypin tietolähteen, jonka tyyppi on **Tietueluettelo**, uudeksi tietolähteeksi, jonka tyyppi on **Tietue**. Tämä uusi tietolähde sisältää saman kenttäjoukon.
 
-- Jos tietolähteessä **model.Vendor** on käytettävissä vähintään yksi tietue, kyseisen tietueen kentät täytetään ensimmäisen **model.Vendor** -tietolähteen tietueen arvoilla. Tässä tapauksessa päivitetty sidonta palauttaa toimittajan nimen.
+- Jos tietolähteessä `model.Vendor` on käytettävissä vähintään yksi tietue, kyseisen tietueen kentät täytetään ensimmäisen `model.Vendor`-tietolähteen tietueen arvoilla. Tässä tapauksessa päivitetty sidonta palauttaa toimittajan nimen.
 - Muussa tapauksissa kaikki luotavan tietueen kentät täytetään kentän tietotyypin oletusarvoilla. Tässä tapauksessa tyhjä merkkijono palautetaan **Merkkijono**-tietotyypin oletusarvona.
 
 Täten oikeellisuustarkistusvaroituksia ei synny **Lauseke\\Osapuoli\\Nimi**-muotoelementille, kun se on sidottu lausekkeeseen `FIRSTORNULL(model.Vendor).Name`.
@@ -606,17 +605,17 @@ Täten oikeellisuustarkistusvaroituksia ei synny **Lauseke\\Osapuoli\\Nimi**-muo
 
 #### <a name="option-3"></a>Asetus 3
 
-Jos haluat eksplisiittisesti määrittää tiedot, jotka syötetään luotuun asiakirjaan, kun tietolähde **model.Vendor**, jonka tietotyyppi on **Tietueluettelo** ei palauta arvoja (tässä esimerkissä tekstin **Not available**), muuta muotoelementin **Lauseke\\Osapuoli\\Nimi** sidonta arvosta `model.Vendor.Name` arvoksi `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Voit myös käyttää lauseketta `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
+Jos haluat eksplisiittisesti määrittää tiedot, jotka annetaan luotuun asiakirjaan, kun tietolähde `model.Vendor`, jonka tietotyyppi on **Tietueluettelo** ei palauta arvoja (tässä esimerkissä tekstin **Not available**), muuta muotoelementin **Lauseke\\Osapuoli\\Nimi** sidonta arvosta `model.Vendor.Name` arvoksi `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Voit myös käyttää lauseketta `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>Lisähuomioita
 
-Tarkastus myös varoittaa toisesta mahdollisesta ongelmasta. Oletusarvoisesti sidottaessa **Lauseke\\Osapuoli\\Nimi**- ja **Lauseke\\Osapuoli\\AccountNum**-muotoelementit tietolähteeseen **model.Vendor**, jonka tietotyyppi on **Tietueluettelo**, kyseiset sidonnat suoritetaan ja ne hakevat soveltuvien kenttien arvot tietolähteestä **model.Vendor**, jos kyseinen luettelo ei ole tyhjä.
+Tarkastus myös varoittaa toisesta mahdollisesta ongelmasta. Oletusarvoisesti sidottaessa **Lauseke\\Osapuoli\\Nimi**- ja **Lauseke\\Osapuoli\\AccountNum**-muotoelementit tietolähteeseen `model.Vendor`, jonka tietotyyppi on **Tietueluettelo**, kyseiset sidonnat suoritetaan ja ne hakevat soveltuvien kenttien arvot tietolähteestä `model.Vendor`, jos kyseinen luettelo ei ole tyhjä.
 
-Koska muotoelementtiä **Lauseke\\Osapuoli** ei ole sidottu tietolähteeseen **model.Vendor**, **Lauseke\\Osapuoli**-elementtiä ei toisteta jokaiselle tietueelle tietolähteessä **model.Vendor** muodon suorittamisen aikana. Sen sijaan luotu asiakirja täytetään ainoastaan tietueluettelon ensimmäisen tietueen tiedoilla, jos luettelossa on useita tietueita. Tämän vuoksi, jos muodon on tarkoitus täyttää luotu asiakirja kaikkien **model.Vendor**-tietolähteen toimittajien tiedoilla, voi syntyä ongelma. Sido **Lauseke\\Osapuoli**-elementti tietolähteeseen **model.Vendor** tämän ongelman korjaamiseksi.
+Koska muotoelementtiä **Lauseke\\Osapuoli** ei ole sidottu tietolähteeseen `model.Vendor`, **Lauseke\\Osapuoli**-elementtiä ei toisteta jokaiselle tietueelle tietolähteessä `model.Vendor` muodon suorittamisen aikana. Sen sijaan luotu asiakirja täytetään ainoastaan tietueluettelon ensimmäisen tietueen tiedoilla, jos luettelossa on useita tietueita. Tämän vuoksi, jos muodon on tarkoitus täyttää luotu asiakirja kaikkien `model.Vendor`-tietolähteen toimittajien tiedoilla, voi syntyä ongelma. Korjaa ongelma sitomalla **Lauseke\\Osapuoli**-elementti tietolähteeseen `model.Vendor`.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>FILTER-funktion sisältävän lausekkeen suoritettavuus (välimuistin käyttö)
 
-Useita sisäänrakennettuja ER-funktioita, kuten [FILTER](er-functions-list-filter.md)- ja [ALLITEMSQUERY](er-functions-list-allitemsquery.md)-funktioita, käytetään sovellustaulujen, näkymien tai tietoentiteettien käyttämiseen sijoittamalla yksittäinen SQL-kutsu tietojen hakemiseksi tietueluettelona. Tietolähdettä, jonka tyyppi on **Tietueluettelo**, käytetään kunkin tällaisen funktion argumenttina, ja se määrittää sovelluslähteen kutsulle. ER tarkistaa, voidaanko suora SQL-kutsu määrittää tietolähteelle, johon viitataan tällaisessa funktiossa. Jos suoraa kutsua ei voida toteuttaa, koska tiedolähde on merkitty [välimuistiin vietäväksi](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace), ER-mallin yhdistämismäärityksen suunnittelijassa tapahtuu virhe. Vastaanotettu sanoma ilmoittaa, että ER-lauseketta, joka sisältää yhden näistä funktioista, ei voida suorittaa suorituksen aikana.
+Useita sisäänrakennettuja ER-funktioita, kuten [FILTER](er-functions-list-filter.md)- ja [ALLITEMSQUERY](er-functions-list-allitemsquery.md)-funktioita, käytetään sovellustaulujen, näkymien tai tietoentiteettien käyttämiseen sijoittamalla yksittäinen SQL-kutsu tietojen hakemiseksi tietueluettelona. Tietolähdettä, jonka tyyppi on **Tietueluettelo**, käytetään kunkin tällaisen funktion argumenttina, ja se määrittää sovelluslähteen kutsulle. ER tarkistaa, voidaanko suora SQL-kutsu määrittää tietolähteelle, johon viitataan tällaisessa funktiossa. Jos suoraa kutsua ei voida toteuttaa, koska tietolähde on merkitty [välimuistiin tallennetuksi](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace), ER-mallin yhdistämismäärityksen suunnittelijassa tapahtuu virhe. Vastaanotettu sanoma ilmoittaa, että ER-lauseketta, joka sisältää yhden näistä funktioista, ei voida suorittaa suorituksen aikana.
 
 Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
@@ -631,7 +630,7 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Määritä mallin yhdistämismäärityskomponentti Mallin yhdistämismäärityksen suunnittelija -sivulla](./media/er-components-inspections-10a.gif)
 
-9. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
+9. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla.
 
     ![Suorita oikeellisuustarkistus suodatinfunktiolle, jota käytetään välimuistin toimittajatietolähteelle Mallin yhdistämismääritysten suunnittelija -sivulla](./media/er-components-inspections-10a.png)
 
@@ -657,7 +656,7 @@ Muuta tietolähteen **FilteredVendor** lauseke arvosta `FILTER(Vendor, Vendor.Ac
 
 ## <a name="missing-binding"></a><a id="i11"></a>Puuttuva sidonta
 
-ER-muotokomponenttia määritettäessä perus-ER-tietomallia tarjotaan oletusarvoiseksi tietolähteeksi ER-muodolle. Kun konfiguroitu ER-muoto suoritetaan, [oletusarvoista mallin yhdistämismääritystä](er-country-dependent-model-mapping.md) perusmallista käytetään tietomallin täyttämiseen sovellustiedoilla. ER-muodon suunnittelija näyttää varoituksen, jos muotoelementti sidotaan tietomallin nimikkeeseen, jota ei ole sidottu mihinkään tietolähteeseen mallin yhdistämismäärityksessä, joka on valittu oletusarvoiseksi mallin yhdistämismääritykseksi muokattavalle muodolle. Tämän tyyppistä sidontaa ei voi suorittaa suorituksen aikana, koska muoto, joka suoritetaan, ei voi täyttää sidottua elementtiä sovellustiedoilla. Tämän vuoksi suorituksen aikana tapahtuu virhe.
+ER-muotokomponenttia määritettäessä perus-ER-tietomallia tarjotaan oletusarvoiseksi tietolähteeksi ER-muodolle. Kun konfiguroitu ER-muoto suoritetaan, [oletusarvoista mallin yhdistämismääritystä](er-country-dependent-model-mapping.md) perusmallista käytetään tietomallin täyttämiseen sovellustiedoilla. ER-muodon suunnittelija näyttää varoituksen, jos muotoelementti sidotaan tietomallin nimikkeeseen, jota ei ole sidottu mihinkään tietolähteeseen mallin yhdistämismäärityksessä, kun kyseinen määritys on valittu oletusarvoiseksi mallin yhdistämismääritykseksi muokattavalle muodolle. Tämän tyyppistä sidontaa ei voi suorittaa suorituksen aikana, koska muoto, joka suoritetaan, ei voi täyttää sidottua elementtiä sovellustiedoilla. Tämän vuoksi suorituksen aikana tapahtuu virhe.
 
 Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
@@ -672,7 +671,7 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
     ![Sisäkkäisten kenttien lisääminen toimittajanimikkeeseen Tietomalli-sivulla](./media/er-components-inspections-11a.png)
 
-6. Lisää mallin yhdistämismäärityksen tietolähteet -ruudussa tietolähde, jonka tyyppi on **Dynamics 365 for Operations \\ Table records**.
+6. Lisää mallin yhdistämismäärityksen tietolähderuudussa tietolähde, jonka tyyppi on **Dynamics 365 for Operations \\ Table records**.
 7. Anna uudelle tietolähteelle nimeksi **Vendor**. Valitse **Taulu**-kentässä **VendTable** määrittämään, että tämä tietolähde pyytää VendTable-taulua.
 8. Lisää tietolähde, jonka tyyppi on **Yleinen \\ Käyttäjän syöteparametri** hakeaksesi toimittajan tiliä suorituksenaikaisessa dialogiruudussa.
 9 Anna uudelle tietolähteelle nimeksi **RequestedAccountNum**. Lisää **Selite**-kenttään **Toimittajan tilinumero**. Jätä **Toiminnon tietotyypin nimi** -kenttään oletusarvo **Kuvaus**.
@@ -699,7 +698,7 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 
 14. Sido muotoelementit annettuihin tietolähteisiin seuraavalla tavalla:
 
-    - Sido **Lauseke\\Osapuoli**-muotoelementti **model.Vendor**-tietolähdenimikkeeseen.
+    - Sido **Lauseke\\Osapuoli**-muotoelementti `model.Vendor`-tietolähdenimikkeeseen.
     - Sido muotoelementti **Lauseke\\Osapuoli\\Nimi** tietolähdekenttään **model.Vendor.Name**.
     - Sido muotoelementti **Lauseke\\Osapuoli\\AccountNum** tietolähdekenttään **model.Vendor.AccountNumber**.
 
@@ -813,6 +812,3 @@ Lisätietoja siitä, kuinka muodon rakenne voidaan synkronoida ER-mallin kanssa 
 [Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md)
 
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

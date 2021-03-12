@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ea39e86ace40cd8e3ad2733b7f7f7a873a963e7
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a1039acd53f493e810b11aafd85116d034b7d323
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693037"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797310"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Anna hakijan ja hakemuksen tiedot manuaalisesti
 
@@ -61,6 +61,3 @@ Tässä menettelyssä kerrotaan, miten hakijoiden ja hakemusten tietoja ylläpid
 6. Valitse Tallenna.
     * Kun hakemus on tallennettu, voit liittää siihen asiakirjoja. Niitä ovat esimerkiksi hakijan kokemus, palkkiot ja kansilehti.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 47c07dd0e2f311b61297340a48a5a31cb1de3903
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685662"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744850"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Kaksoiskirjoituksen määrittämisen ohjeet
 
@@ -36,7 +36,7 @@ ms.locfileid: "4685662"
 Voit määrittää kaksoiskirjoitusyhteyden Finance and Operations -ympäristön ja Dataverse -ympäristön välille.
 
 + **Finance and Operations -ympäristö** tarjoaa **Finance and Operations -sovelluksille** (esimerkiksi Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce ja Dynamics 365 Human Resources) taustaympäristön.
-+ **Dataverse -ympäristö** muodostaa **asiakkaan osallistamisovellusten** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing ja Dynamics 365 Project Service Automation) taustaympäristön.
++ **Dataverse-ympäristö** on **asiakkaiden aktivointisovellusten** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing ja Dynamics 365 Project Service Automation) pohjaympäristö.
 
 > [!IMPORTANT]
 > Dynamics 365 Financen Human Resources -moduuli tukee kaksoiskirjoitusyhteyksiä, mutta Dynamics 365 Human Resources -sovellus ei.
@@ -138,6 +138,3 @@ Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on osassa [Esimerkki](
 Esimerkkiin voi tutustua kohdassa [Asiakkaiden V3 ottaminen käyttöön – yhteyshenkilöiden taulun yhdistämismääritys](enable-entity-map.md#enable-table-map)
 
 Lisätietoja vaihtoehtoisesta tavasta, joka perustuu kunkin entiteetin tietomääriin, kun niissä on suoritettava ensimmäinen synkronointi, on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

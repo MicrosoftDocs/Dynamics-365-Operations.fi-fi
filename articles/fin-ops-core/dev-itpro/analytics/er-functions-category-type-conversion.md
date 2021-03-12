@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686072"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740805"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Luettelo ER-funktioista tyypinmuutosluokassa
 
@@ -38,6 +38,14 @@ Sähköisen raportoinnin (ER) tyyppimuuntofunktioita voidaan käyttää arvojen 
 | [IntValue](er-functions-conversion-intvalue.md)       | Tämä funktio palauttaa *Int*-arvon, joka edustaa määritettyä merkkijonoa. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Tämä funktio palauttaa *todellisen* arvon, joka muunnetaan määritetystä *merkki* arvosta. Muuntamisen aikana otetaan huomioon määritetyt desimaali- ja numeroryhmittelyerottimet. |
 | [Arvo](er-functions-conversion-value.md)             | Tämä funktio palauttaa *todellisen* arvon, joka muunnetaan määritetystä *merkki* arvosta. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>Säilöluokan tyyppimuuntofunktiot
+
+Seuraavassa taulukossa kuvataan [säilöluokan](er-functions-category-container.md) tyyppimuuntofunktiot.
+
+| Toiminto | kuvaus |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Tämä funktio muuntaa *Merkkijono*-tyypin määritetyn syötteen *Säilö*-tyypin tietokohteeksi. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Syötä muuntofunktiot päivämäärä- ja aikaluokassa
 
@@ -79,6 +87,3 @@ Seuraavassa taulukossa kuvataan tyyppimuuntofunktiot [tekstikategoriassa](er-fun
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
 [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

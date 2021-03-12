@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54e3176ccf4bc3218afdf085f910e6d2a9c1b9ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694834"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796751"
 ---
 # <a name="create-a-legal-entity"></a>Luo uusi yritys
 
@@ -45,6 +45,3 @@ Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin k
 15. Laajenna **Verorekisteröinti**-osa. Kirjoita **Verorekisteröinti**-osaan rekisterinumerot, joita käytetään raportoitaessa veroviranomaisille.
 16. Laajenna **Vero 1099** -osa. Kirjoita **Vero 1099** -osaan yrityksen 1099-tiedot.  
 17. Valitse **Tallenna**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

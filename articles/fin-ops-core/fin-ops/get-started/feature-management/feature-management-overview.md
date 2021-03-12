@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692963"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798349"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -32,7 +32,7 @@ Ominaisuudet lisätään ja päivitetään jokaisessa versiossa. Ominaisuuksien 
 
 ## <a name="the-feature-management-workspace"></a>Ominaisuushallinnan työtila
 
-Voit avata **Ominaisuuksien hallinnan** työtilan valitsemalla koontinäytön hallintapaneelista haluamasi ruudun. Näkyviin tulee sivu, joka sisältää kaikkien ominaisuuksien hallinnan tukemien versioiden ominaisuusluettelon. Ajan mittaan Microsoft parantaa ominaisuuksien hallintakokemusta, jotta se sisältää toimintoja, jotka helpottavat ominaisuuksien hallintaa.
+Voit avata **Ominaisuuksien hallinnan** työtilan valitsemalla koontinäytön hallintapaneelista haluamasi ruudun. Näkyviin tulee sivu, joka sisältää kaikkien ominaisuuksien hallinnan tukemien versioiden ominaisuusluettelon. Ajan mittaan Microsoft parantaa ominaisuuksien hallintakokemusta, jotta se sisältää lisää toimintoja, jotka helpottavat toimintojen hallintaa.
 
 Ominaisuusluettelossa on seuraavat tiedot:
 
@@ -42,7 +42,7 @@ Ominaisuusluettelossa on seuraavat tiedot:
 - **Ominaisuus lisätty** – toiminto lisättiin ympäristöön. Tämä päivämäärä syötetään automaattisesti, kun päivität ympäristöäsi kuukausittaisten julkaisujaksojen aikana.
 - **Moduuli** – moduuli, johon uusi ominaisuus vaikuttaa.
 
-Kun valitset toiminnon, lisätiedot näkyvät ominaisuusluettelon oikealla puolella olevassa tietoruudussa. Ruudun yläosassa näkyy toiminnon nimi, ominaisuuden lisäämisen päiväys, moduuli, johon ominaisuus vaikuttaa, ja **Lisä tietoja** -linkki. Valitse tämä linkki, jos haluat tarkastella toiminnon dokumentaatiota. Jos dokumentaatio ei ole käytettävissä, sinut viedään väliaikaiselle sivulle. Tieto ruudussa on myös **Kommentit**-kenttä, johon voit lisätä omia kommentteja ominaisuudesta.
+Kun valitset toiminnon, lisätiedot näkyvät toimintoluettelon oikealla puolella olevassa tietoruudussa. Ruudun yläosassa näkyy toiminnon nimi, ominaisuuden lisäämisen päiväys, moduuli, johon ominaisuus vaikuttaa, ja **Lisä tietoja** -linkki. Valitse tämä linkki, jos haluat tarkastella toiminnon dokumentaatiota. Jos dokumentaatio ei ole käytettävissä, sinut viedään väliaikaiselle sivulle. Tieto ruudussa on myös **Kommentit**-kenttä, johon voit lisätä omia kommentteja ominaisuudesta.
 
 **Ominaisuuksien hallinta** -työtilassa on myös useita välilehtiä, joissa kussakin on luettelo ominaisuuksista.
 
@@ -63,7 +63,7 @@ Jotkin ominaisuudet näyttävät sanoman, jossa on lisätietoja, ennen kuin otat
 
 Jotkin ominaisuudet näyttävät sanoman, että toimintoa ei voi ottaa käyttöön, ennen kuin toimia on suoritettu. Nämä ominaisuudet on merkitty punaisella X-symbolilla. Sinun on toteutettava kuvauksessa kuvatut toimet, ennen kuin ominaisuus otetaan käyttöön. Jos et esimerkiksi pysty käyttämään ominaisuutta, ennen kuin konfigurointiavain on poistettu käytöstä, sinun on ensin poistettava määritysavain käytöstä ja palattava sitten ominaisuuksien hallintaan, jotta ominaisuus otetaan käyttöön.
 
-Kun ominaisuus on otettu käyttöön, **Lisätietoja**-linkin alla tietoruudussa näkyy viesti. Tämä sanoma joko ilmaisee, että ominaisuus on otettu käyttöön tai ilmaisee päivämäärän, jolloin ominaisuus otetaan tulevaisuudessa käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
+Kun ominaisuus on otettu käyttöön, **Lisätietoja**-linkin alla tietoruudussa näkyy viesti. Tämä sanoma joko ilmaisee, että toiminto on otettu käyttöön, tai päivämäärän, jolloin toiminto otetaan tulevaisuudessa käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
 
 Toiminnot, jotka on ajoitettu käyttöön tulevaisuudessa, näkyvät **Ajoitetut**-välilehdessä. Eräkäsittely ottaa ne käyttöön määritettynä päivänä keskiyöllä järjestelmän päivämäärän ilmaiseman aikavyöhykkeen mukaan.
 
@@ -101,8 +101,8 @@ Kaikki toiminnot, jotka voidaan ottaa käyttöön, otetaan käyttöön. Jos omin
 
 Oletusarvon mukaan kaikki ympäristöön lisätyt ominaisuudet poistetaan käytöstä, elleivät ne ole pakollisia toimintoja. Jos kuitenkin haluat ottaa kaikki uudet ominaisuudet automaattisesti käyttöön, voit muuttaa uusien ominaisuuksien lisäämisen tietoja käyttämällä työtilan otsikon alla olevaa avattavaa luetteloa.
 
-- Valitse **Ota uudet ominaisuudet automaattisesti käyttöön** ottaaksesi automaattisesti käyttöön kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
-- Valitse **Älä ota uusia ominaisuuksia automaattisesti käyttöön** ottaaksesi automaattisesti pois käytöstä kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
+- Valitsemalla `Enable new features automatically` voidaan ottaa kaikki uudet toiminnot automaattisesti käyttöön, kun ne lisätään omaan ympäristöön.
+- Valitsemalla `Do not enable new features automatically` poistamaan kaikki uudet toiminnot oletusarvoisesti käytöstä, kun ne lisätään omaan ympäristöön.
 
 
 Kun otat kaikki ominaisuudet käyttöön automaattisesti, se ottaa käyttöön kaikki ominaisuudet, jotka olisivat käytössä, kun napsautat **Ota kaikki käyttöön**-painiketta. Se ei ota käyttöön vahvistusta edellyttäviä ominaisuuksia tai ominaisuuksia, joita ei voi ottaa käyttöön, ennen kuin toimia on suoritettu.
@@ -199,10 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Mikä on joissakin ominaisuus luokissa käyttöönotettu IFeatureLifecycle?
 IFeatureLifecycle on Microsoftin sisäinen mekanismi, joka ilmaisee ominaisuuden elinkaaren vaiheen. Mahdolliset ominaisuudet:
-- PrivatePreview – näkymistä varten tarvitaan väliversio:
-- PublicPreview – näytetään oletusarvoisesti, mutta mukana on varoitus siitä, ominaisuus on esiversio.
-- Julkaistu – julkaistu kokonaisuudessaan.
+- `PrivatePreview` – näkymistä varten tarvitaan väliversio.
+- `PublicPreview` – näytetään oletusarvoisesti, mutta mukana on varoitus siitä, ominaisuus on esiversio.
+- `Released` – kokonaan vapautettu.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

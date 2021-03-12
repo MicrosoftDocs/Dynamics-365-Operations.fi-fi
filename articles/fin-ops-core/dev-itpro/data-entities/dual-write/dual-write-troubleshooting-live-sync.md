@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685560"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744610"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-synkronoinnin ongelmien vianmääritys
 
@@ -46,11 +46,11 @@ Näyttöön saattaa tulla seuraava virhesanoma, kun luot rivin Finance and Opera
 
 Voit korjata ongelman noudattamalla [Järjestelmän vaatimukset ja edellytykset](requirements-and-prerequisites.md)-kohdan ohjeita. Näiden vaiheiden suorittaminen Dataversessä edellyttää, että sovelluksessa luoduilla kaksoiskirjoituskäyttäjillä on järjestelmänvalvojan rooli. Omistavan ryhmän oletusryhmällä on oltava myös järjestelmänvalvojan rooli.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Minkä tahansa yksikön suora synkronointi johtaa järjestelmällisesti samanlaisen virheeseen, kun luot rivin Finance and Operations -sovelluksessa
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Minkä tahansa taulukon suora synkronointi johtaa järjestelmällisesti samanlaisen virheeseen, kun luot rivin Finance and Operations -sovelluksessa
 
 **Ongelman korjaamiseen tarvittava rooli:** Järjestelmänvalvoja
 
-Näyttöön saattaa tulla seuraavan kaltainen virhesanoma aina, kun yrität tallentaa Finance and Operations -sovelluksen yksikön tietoja:
+Näyttöön saattaa tulla seuraavan kaltainen virhesanoma aina, kun yrität tallentaa Finance and Operations -sovelluksen taulukon tietoja:
 
 *Muutoksia ei voi tallentaa tietokantaan. Työyksikkö ei voi sitoutua tapahtumaan. Tietoja ei voi kirjoittaa yksikön mittayksikköön. Kirjoitukset UnitOfMeasureEntity-kohtaan epäonnistuivat ja näkyviin tuli virhesanoma Ei voi synkronoida mittayksikön kanssa.*
 
@@ -58,8 +58,8 @@ Voit korjata ongelman varmistamalla, että sekä Finance and Operations -sovellu
 
 Jos molemmilla puolilla on tietoja ja olet vahvistanut, että ongelma ei liity tietoihin, toimi seuraavasti.
 
-1. Pysäytä liittyvä yksikkö.
-2. Kirjaudu sisään Finance and Operations -sovellukseen ja varmista, että epäonnistuneen yksikön rivejä on olemassa DualWriteProjectConfiguration- ja DualWriteProjectFieldConfiguration-taulukoissa. Kysely näyttää esimerkiksi siltä, että **Asiakkaat**-yksikkö epäonnistuu.
+1. Pysäytä liittyvä taulukko.
+2. Kirjaudu sisään Finance and Operations -sovellukseen ja varmista, että epäonnistuneen taulukon rivejä on olemassa DualWriteProjectConfiguration- ja DualWriteProjectFieldConfiguration-taulukoissa. Kysely näyttää esimerkiksi siltä, että **Asiakkaat**-taulukko epäonnistuu.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Jos molemmilla puolilla on tietoja ja olet vahvistanut, että ongelma ei liity t
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Jos epäonnistuneelle yksikölle on rivejä myös sen jälkeen, kun olet estänyt taulun yhdistämismäärityksen, poista epäonnistuvaan yksikköön liittyvät rivit. Tee **projectname**-sarakkeesta muistiinpano DualWriteProjectConfiguration-taulussa ja nouda tietue DualWriteProjectFieldConfiguration-taulusta käyttämällä projektin nimeä rivin poistamiseen.
+3. Jos epäonnistuneelle taulukolle on rivejä myös sen jälkeen, kun olet estänyt taulun yhdistämismäärityksen, poista epäonnistuvaan taulukkoon liittyvät rivit. Tee **projectname**-sarakkeesta muistiinpano DualWriteProjectConfiguration-taulussa ja nouda rivi DualWriteProjectFieldConfiguration-taulusta käyttämällä projektin nimeä rivin poistamiseen.
 4. Aloita taulun yhdistäminen. Tarkista, synkronoitiinko tiedot ilman ongelmia.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Luku- tai kirjoitusoikeusvirheiden käsitteleminen Finance and Operations -sovelluksen tietojen luonnin yhteydessä
@@ -127,6 +127,3 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 
 3. Varmista, että **externalenvironmentURL**-sarakkeessa on oikea Dataverse- tai sovelluksen URL-osoite. Poista kaikki rivien kaksoiskappaleet, jotka viittaavat väärään Dataverse -URL-osoitteeseen. Poista vastaavat rivit DUALWRITEPROJECTFIELDCONFIGURATION- ja DUALWRITEPROJECTCONFIGURATION-tauluista.
 4. Pysäytä taulun yhdistäminen ja käynnistä se sitten uudelleen
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

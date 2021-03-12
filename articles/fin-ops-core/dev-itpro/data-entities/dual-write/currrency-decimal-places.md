@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683726"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744372"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
@@ -44,11 +44,11 @@ Siirto on valinnainen toiminto. Jos desimaalien lisäämisestä saattaa olla hy�
 
 ## <a name="requesting-migration-from-microsoft"></a>Siirron pyytäminen Microsoftilta
 
-Dataversen nykyisten valuuttakenttien tallennustila hyväksyy enintään neljä desimaalia. Tämän vuoksi valuutta-arvot kopioidaan siirtoprosessin aikana tietokannan uusiin, sisäisiin kenttiin. Tämä prosessi jatkuu siihen saakka, että kaikki tiedot on siirretty. Vaikka siirron päätyttyä uudet tallennustilatyypit korvaavat sisäisesti vanhat tallennustilat, tietoarvot eivät ole muuttuneet. Valuuttakentät voivat tämän jälkeen tukea enintään 10 desimaalia. Dataversen käyttöä voi jatkaa siirtoprosessin aikana ilman keskeytyksiä.
+Dataversen nykyisten valuuttasarakkeiden tallennustila hyväksyy enintään neljä desimaalia. Tämän vuoksi valuutta-arvot kopioidaan siirtoprosessin aikana tietokannan uusiin, sisäisiin sarakkeisiin. Tämä prosessi jatkuu siihen saakka, että kaikki tiedot on siirretty. Vaikka siirron päätyttyä uudet tallennustilatyypit korvaavat sisäisesti vanhat tallennustilat, tietoarvot eivät ole muuttuneet. Valuuttasarakkeet voivat tämän jälkeen tukea enintään 10 desimaalia. Dataversen käyttöä voi jatkaa siirtoprosessin aikana ilman keskeytyksiä.
 
 Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama Finance and Operations -sovelluksessa ja Dataversessa.
 
-Siirto ei muuta tietoja millään tavalla. Kun valuutta- ja vaihtokurssikentät on muunnettu, järjestelmänvalvojat voivat määrittää järjestelmän käyttämään valuuttakentissä 10 desimaalia. Se tehdään määrittämällä kunkin tapahtuman valuutan ja hinnoittelun desimaalien määrä.
+Siirto ei muuta tietoja millään tavalla. Kun valuutta- ja vaihtokurssisarakkeet on muunnettu, järjestelmänvalvojat voivat määrittää järjestelmän käyttämään valuuttasarakkeissa 10 desimaalia. Se tehdään määrittämällä kunkin tapahtuman valuutan ja hinnoittelun desimaalien määrä.
 
 ### <a name="request-a-migration"></a>Siirron pyytäminen
 
@@ -72,29 +72,26 @@ Kun siirto on valmis, Dataverse voi tallentaa lukuja, joissa on enemmän desimaa
 
 Tämän muutoksen tekeminen edellyttää, että seuraavat Power Appsin asetukset päivitetään:
 
-+ **Järjestelmäasetukset: valuutan tarkkuus hinnoittelussa** – **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -kenttä määrittää, miten valuutta reagoi organisaatiossa, kun **Hinnoittelun tarkkuus** on valittu.
-+ **Liiketoiminnan hallinta: valuutat** – **Valuutan tarkkuus** -kentässä voi määrittää mukautetun desimaalien määrän tietyn valtuutan osalta. Varmistuksena on paluu koko organisaatiota koskevaan asetukseen.
++ **Järjestelmäasetukset: valuutan tarkkuus hinnoittelussa** – **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -sarake määrittää, miten valuutta reagoi organisaatiossa, kun **Hinnoittelun tarkkuus** on valittu.
++ **Liiketoiminnan hallinta: valuutat** – **Valuutan tarkkuus** -sarakkeessa voi määrittää mukautetun desimaalien määrän tietyn valtuutan osalta. Varmistuksena on paluu koko organisaatiota koskevaan asetukseen.
 
 Rajoituksia:
 
-+ Valuuttakenttää ei voi määrittää entiteetissä.
++ Valuuttasaraketta ei voi määrittää taulussa.
 + Yli neljä desimaalia voidaan määrittää vain **Hinnoittelu**- ja **Tapahtumavaluutta**-tasoilla.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Järjestelmäasetukset: valuutan tarkkuus hinnoittelussa
 
-Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset**-välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -kentässä, kuten seuraavassa kuvassa.
+Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset**-välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -sarakkeessa, kuten seuraavassa kuvassa.
 
 ![Valuutan järjestelmäasetukset](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Liiketoiminta-asiakirjat: valuutat
 
-Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tarkkuudesta, sitä on muutettava. Valitse ensin **Asetukset \> Liiketoiminnan hallinta** ja sitten **Valuutat** ja muutettava valuutta. Määritä sitten **Valuutan tarkkuus** -kenttään sopiva desimaalien määrä, mistä on esimerkki seuraavassa kuvassa.
+Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tarkkuudesta, sitä on muutettava. Valitse ensin **Asetukset \> Liiketoiminnan hallinta** ja sitten **Valuutat** ja muutettava valuutta. Määritä sitten **Valuutan tarkkuus** -sarakkeeseen sopiva desimaalien määrä, mistä on esimerkki seuraavassa kuvassa.
 
 ![Tietyn alueen valuutta-asetukset](media/specific-currency.png)
 
-### <a name="tables-currency-field"></a>taulut: Valuutta-kenttä
+### <a name="tables-currency-column"></a>taulut: Valuutta-sarake
 
-Tiettyihin valuuttakenttiin määritettävien desimaalien määrä on rajoitettu neljään.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Tiettyihin valuuttasarakkeisiin määritettävien desimaalien määrä on rajoitettu neljään.

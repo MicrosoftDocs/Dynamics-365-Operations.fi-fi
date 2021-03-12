@@ -1,6 +1,6 @@
 ---
-title: Yritysten välisten tilausten suodattaminen Tilausten ja Tilausrivien synkronoinnin välttämiseksi
-description: Tässä aiheessa kerrotaan, kuinka yritysten välisiä tilauksia suodatetaan Tilausten ja Tilausrivien synkronoinnin välttämiseksi.
+title: Konsernin sisäisten tilausten suodattaminen tilausten ja tilausrivien synkronoinnin välttämiseksi
+description: Tässä aiheessa käsitellään konsernin sisäisten tilausten suodattamista niin, ettei Tilaukset- ja Tilausrivit-yksiköitä synkronoida.
 author: negudava
 manager: tfehr
 ms.date: 11/09/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,52 +18,51 @@ ms.search.industry: ''
 ms.author: negudava
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 6c5e1e2467673badd20366d3bd8e1b93b8078b26
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 342db8c1b4337145bfd61f5698ff6de25434a400
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4701030"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796603"
 ---
-# <a name="filter-intercompany-orders-to-avoid-synchronizing-orders-and-orderlines"></a>Yritysten välisten tilausten suodattaminen Tilausten ja Tilausrivien synkronoinnin välttämiseksi
+# <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a>Konsernin sisäisten tilausten suodattaminen tilausten ja tilausrivien synkronoinnin välttämiseksi
 
 [!include [banner](../../includes/banner.md)]
 
-Voit suodattaa yritysten välisiä tilauksia **Tilausten** ja **Tilausrivien** entiteettien synkronoinnin välttämiseksi. Joissakin tapauksissa yritysten väliset tilaustiedot eivät ole tarpeen Customer Engagement -sovelluksessa.
+Konsernin sisäiset tilaukset voidaan suodattaa siten, ettei **Tilaukset** ja **Tilausrivit**-tauluja synkronoida. Joissakin skenaarioissa konsernin sisäisiä tilaustietoja ei tarvita asiakkaan aktivointisovelluksessa.
 
-Kutakin vakiomuotoista Common Data Service -entiteettiä laajennetaan viittauksella **IntercompanyOrder** -kenttään, ja kaksoiskirjoituskarttoja muokataan niin, että ne viittaavat suodattimien lisäkenttiin. Tuloksena on, että yritysten välisiä tilauksia ei enää synkronoida. Tämä prosessi välttää tarpeettomat tiedot Customer engagement -sovelluksessa.
+Kutakin Dataverse-vakiotaulua laajennetaan viittauksilla **IntercompanyOrder**-sarakkeisiin, ja kaksoiskirjoitusmäärityksiä muokataan siten, että ne viittaavat suodattimien lisäsarakkeisiin. Tämän vuoksi konsernin sisäisiä tilauksia ei enää synkronoida. Tämä prosessi auttaa estämään tarpeettomat tiedot asiakkaiden aktivointisovelluksessa.
 
-1. Lisää viittaus kohteeseen **IntercompanyOrder** kohteeseen **CDS Sales Order Headers**. Se täytetään vain yritysten välisille tilauksille. Kenttä **IntercompanyOrder** on käytettävissä taulussa **SalesTable**.
+1. **CDS myyntitilauksen otsikot** -taulu voidaan laajentaa lisäämällä viittaus **IntercompanyOrder**-sarakkeeseen. Tämä sarake täytetään vain konsernin sisäisissä tilauksissa. **IntercompanyOrder**-sarake on käytettävissä **SalesTable**-taulussa.
 
-    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Yhdistä välivarastointi kohteeseen, SalesOrderHeader":::
-    
-2. Kun **CDS Sales Order Headers** on laajennettu, **IntercompanyOrder**-kenttä on käytettävissä yhdistämismäärityksessä. Käytä suodatinta `INTERCOMPANYORDER == ""` kyselymerkkijonona.
+    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="CDS-myyntitilauksen otsikoiden Yhdistä väliaikainen alue kohteeseen -sivu":::
 
-    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Myyntitilausten otsikot, muokkaa kyselyä":::
+2. Kun **CDS-myyntitilauksen otsikot** on laajennettu, **IntercompanyOrder**-sarake on käytettävissä yhdistämismäärityksessä. Käytä suodatinta, jossa on `INTERCOMPANYORDER == ""` kyselymerkkijonona.
 
-3. Lisää viittaus **IntercompanyInventTransId** kohteeseen **CDS Sales Order Lines**.  Se täytetään vain yritysten välisille tilauksille. Kenttä **InterCompanyInventTransID** on käytettävissä kohteessa **SalesLine**.
+    :::image type="content" source="media/filter-sales-order-header.png" alt-text="CDS-myyntitilauksen otsikoiden Muokkaa kyselyä -valintaikkuna":::
 
-    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Yhdistä välivarastointi kohteeseen, SalesOrderLine":::
+3. **CDS-myyntitilausrivit**-taulua voidaan laajentaa lisäämällä viittaus **IntercompanyInventTransId**-sarakkeeseen. Tämä sarake täytetään vain konsernin sisäisissä tilauksissa. **InterCompanyInventTransId**-sarake on käytettävissä **SalesLine**-taulussa.
 
-4. Kun **CDS Sales Order Lines** on laajennettu, **IntercompanyInventTransId**-kenttä on käytettävissä yhdistämismäärityksessä. Käytä suodatinta `INTERCOMPANYINVENTTRANSID == ""` kyselymerkkijonona.
+    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="CDS-myyntitilausrivin Yhdistä väliaikainen alue kohteeseen -sivu":::
 
-    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Myyntitilauksen rivit, muokkaa kyselyä":::
+4. Kun **CDS-myyntitilausrivit** on laajennettu, **IntercompanyInventTransId**-sarake on käytettävissä yhdistämismäärityksessä. Käytä suodatinta, jossa on `INTERCOMPANYINVENTTRANSID == ""` kyselymerkkijonona.
 
-5. Laajenna **Sales Invoice Header V2** ja **Sales Invoice Lines V2** samalla tavalla kuin laajensit Common Data Service -entiteetit vaiheissa 1 ja 2. Lisää sitten suodatinkyselyt. Suodatinmerkkijono kohteelle **Sales Invoice Header V2** on `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`. Suodatinmerkkijono kohteelle **Sales Invoice Lines V2** on `INTERCOMPANYINVENTTRANSID == ""`.
+    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="CDS-myyntitilausrivien Muokkaa kyselyä -valintaikkuna":::
 
-    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Yhdistä välivarastointi kohteeseen, Myyntilaskun otsikot":::
+5. Laajenna **Myyntilaskun otsikko V2** -taulu ja lisää suodatinkysely toistamalla vaiheet 1 ja 2. Käytä tässä tapauksessa suodatinta, jossa `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` on kyselymerkkijonona.
 
-    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Myyntilaskun otsikot, muokkaa kyselyä":::
+    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Myyntilaskun otsikko V2:n Yhdistä väliaikainen alue kohteeseen -sivu":::
 
-    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Myyntilaskun rivit, muokkaa kyselyä":::
+    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Myyntilaskun otsikko V2:n Muokkaa kyselyä -valintaikkuna":::
 
-6. **Tarjoukset**-entiteetillä ei ole yritysten välistä suhdetta. Jos joku luo tarjouksen jollekin yritysten väliselle asiakkaallesi, voit sijoittaa kaikki nämä asiakkaat yhteen asiakasryhmään käyttämällä **CustGroup**-kenttää.  Otsikkoa ja rivejä voidaan laajentaa lisäämällä **CustGroup**-kenttä ja valitsemalla sitten suodata, jotta tätä ryhmää ei oteta mukaan.
+6. Laajenna **Myyntilaskurivit V2** -taulu ja lisää suodatinkysely toistamalla vaiheet 3 ja 4. Käytä tässä tapauksessa suodatinta, jossa `INTERCOMPANYINVENTTRANSID == ""` on kyselymerkkijonona.
 
-    :::image type="content" source="media/filter-cust-group.png" alt-text="Yhdistä välivarastointi kohteeseen, Myyntitarjouksen otsikko":::
+    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Myyntilaskun rivit V2:n Muokkaa kyselyä -valintaikkuna":::
 
-7. Kun olet laajentanut **Tarjoukset**-entiteettiä, suodata käyttämällä kyselymerkkijonona merkkijonoa `CUSTGROUP !=  "<company>"` .
+7. **Tarjoukset**-taulussa ei ole yritysten välistä suhdetta. Jos joku luo tarjouksen jollekin konsernin sisäiselle asiakkaalle, kaikki kyseiset asiakkaat voidaan sijoittaa yhteen asiakasryhmään käyttämällä **CustGroup**-saraketta. Otsikkoa ja rivejä voidaan laajentaa lisäämällä **CustGroup**-sarake ja tekemällä sitten suodatuksen, joka ei sisällä kyseistä ryhmää.
 
-    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Myynt tarjouksen otsikko, muokkaa kyselyä":::
+    :::image type="content" source="media/filter-cust-group.png" alt-text="CDS-myyntitarjouksen otsikon Yhdistä väliaikainen alue kohteeseen -sivu":::
 
+8. Kun **Tarjoukset** on laajennettu, käytä suodatinta, jossa on `CUSTGROUP != "<company>"` kyselymerkkijonona.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="CDS-myyntitarjouksen otsikon Muokkaa kyselyä -valintaikkuna":::

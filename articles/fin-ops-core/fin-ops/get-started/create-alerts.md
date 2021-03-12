@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694492"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798424"
 ---
 # <a name="create-alert-rules"></a>Hälytyssääntöjen luominen
 
@@ -40,7 +40,7 @@ Tietojen muuttamisen erätöiden ja eräpäivän hälytysten on oltava käynniss
 
 Tapahtuma, joka käynnistää hälytyssäännön, voi olla tietty päivämäärä tai tapahtuva muutos. Käynnistää tapahtumat, jotka on määritetty **Luo hälytyssääntö** -valintaikkunan **Hälytä seuraavissa tilanteissa** -pikavälilehdessä. Tietyn kentän käytettävissä olevat tapahtumat määräytyvät valitun käynnistimen mukaan.
 
-Jos esimerkiksi määrität hälytyssäännön **Alkamispäivä**-kenttään, eräpäivän tapahtumat soveltuvat. **Erääntymisaika**-tapahtumatyyppi on tämän vuoksi käytettävissä kyseisessä kentässä. Eräpäivään perustuva tapahtuma ei kuitenkaan sovellu esimerkiksi **Kustannuspaikka**-kentälle. **Erääntymisaika**-tapahtumatyyppi ei ole tämän vuoksi käytettävissä. Sen sijaan käytettävissä on **on muuttunut** -tapahtumatyyppi.
+Jos esimerkiksi määrität hälytyssäännön **Alkamispäivä**-kenttään, eräpäivän tapahtumat soveltuvat. `is due in` -tapahtumatyyppi on tämän vuoksi käytettävissä kyseisessä kentässä. Eräpäivään perustuva tapahtuma ei kuitenkaan sovellu esimerkiksi **Kustannuspaikka**-kentälle. `is due in` -tapahtumatyyppi ei ole tämän vuoksi käytettävissä. Käytettävissä on sen sijaan `has changed` -tapahtumatyyppi.
 
 ## <a name="event-types"></a>Tapahtumatyypit
 
@@ -86,22 +86,19 @@ Hälytyksiä voidaan lähettää ulkoisesti liiketoimintatapahtuman kehyksen avu
 2. Valitse **Asetukset**-välilehden **Jaa**-ryhmän toimintoruudussa **Luo hälytyssääntö**.
 3. Valitse **Kenttä**-kentän **Luo hälytyssääntö** -valintaikkunassa seurattava kenttä.
 4. Valitse **Tapahtuma**-kentässä tapahtuman tyyppi.
-5. Valitse **Hälytä seuraavasta:** -pikavälilehdessä haluttu vaihtoehto. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, varmista, että **Organisaation laajuinen** -kohdan arvoksi on määritetty **Ei**.
+5. Valitse **Hälytä seuraavasta:** -pikavälilehdessä haluttu vaihtoehto. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, määritä **Organisaation laajuinen** -arvoksi **Ei**.
 6. Jos haluat hälytyssäännön poistuvan käytöstä tiettynä päivämääränä, valitse **Hälytä tähän asti** -pikavälilehdessä päättymispäivämäärä.
-7. Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe. Tekstiä käytetään otsikkona sähköpostiviestissä jonka saat, kun hälytys laukaistaan. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, määritä **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**.
-8. Valitse **Sanoma**-kentässä valinnainen sanoma. Tämä teksti on sanoma, jonka saat, kun hälytys laukaistaan.
+7. Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe. Tekstistä tulee otsikko sähköpostiviestissä jonka saat, kun hälytys laukaistaan. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, määritä **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**.
+8. Valitse **Sanoma**-kentässä valinnainen sanoma. Tekstistä tulee sanoma, jonka saat, kun hälytys käynnistyy.
 9. Tallenna asetukset ja luo hälytyssääntö valitsemalla **OK**.
 
 ## <a name="limitations-and-workarounds"></a>Rajoitukset ja ratkaisuehdotukset
 
 ### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Ratkaisuehdotus lomakkeen toissijaisten tietolähteiden hälytysten luontia varten
-Hälytyksiä ei voi luoda lomakkeissa joillekin toissijaisille tietolähteille. Kun esimerkiksi asiakkaan tai toimittajan kirjausprofiililomakkeessa luodaan hälytyksiä, käytettävissä on vain otsikon (CustLedger tai VendLedger) kentät eikä dimensiotilit. Tämän rajoituksen ratkaisuehdotus on avata kyseinen taulukko ensisijaisena tietolähteenä käyttämällä **SysTableBrowser**-lomaketta. 
+Hälytyksiä ei voi luoda joillekin lomakkeiden toissijaisille tietolähteille. Kun esimerkiksi asiakkaan tai toimittajan kirjausprofiililomakkeessa luodaan hälytyksiä, käytettävissä on vain otsikon (CustLedger tai VendLedger) kentät eikä dimensiotilit. Tämän rajoituksen ratkaisuehdotus on avata kyseinen taulukko ensisijaisena tietolähteenä käyttämällä **SysTableBrowser**-lomaketta. 
 1. Avaa taulukko **SysTableBrowser**-lomakkeessa.
     ```
         https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
     ```
 2. Luo hälytys SysTableBrowser-lomakkeesta.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

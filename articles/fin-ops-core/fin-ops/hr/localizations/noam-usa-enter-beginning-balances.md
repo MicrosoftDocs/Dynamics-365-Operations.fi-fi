@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693399"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797781"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Palkanlaskennan alkusaldojen antaminen
 
@@ -166,6 +166,3 @@ Tapahtumat voidaan peruuttaa ja antaa uudelleen. Voit peruuttaa tapahtuman suori
 2. Valitse **Kyllä**, kun sanoma "Kun palautat tämän maksuilmoituksen, maksuilmoitukselle luodaan vastakirjauksena palautusmaksuilmoitus. Kumpaakaan maksuilmoitusta ei voi muokata. Haluatko palauttaa tämän maksuilmoituksen?" avautuu näyttöön. 
 
 Kun olet peruuttanut maksuilmoitukset, voit luoda työntekijälle uuden maksuilmoituksen aiemmin luodusta ansioilmoituksesta. Muista korjata kaikki ansioilmoituksen virheelliset rivit ennen uuden maksuilmoituksen luontia ja luo sitten uudet maksuilmoitukset oikeilla summilla. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

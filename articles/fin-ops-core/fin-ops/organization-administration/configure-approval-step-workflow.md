@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71d51f137cc0e0fcc18b39f8b92ab5c44b359609
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694073"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797093"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Hyväksyntävaiheiden lisääminen työnkulkuun
 
@@ -276,6 +276,3 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
 
 5. Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
 6. Jos eskalointipolun käyttäjät eivät vastaa asiakirjaan ajoissa, järjestelmä suorittaa asiakirjan toimenpiteen automaattisesti. Voit määrittää järjestelmän suorittaman toimenpiteen valitsemalla **Toimenpide**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä toimenpiteen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

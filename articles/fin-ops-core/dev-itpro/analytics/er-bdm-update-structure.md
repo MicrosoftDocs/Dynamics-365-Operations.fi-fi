@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681325"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728086"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen 
 
@@ -56,7 +56,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 5. Luo uusi malli valitsemalla **OK**.
 
     > [!NOTE]
-    > Jos et ole vielä kirjautunut sisään Office Onlineen, sinut [ohjataan Office 365 -kirjautumissivulle](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Voit palata Finance-ympäristöön valitsemalla selaimen **Edellinen**-painikkeen.
+    > Jos et ole vielä kirjautunut sisään Office Onlineen, sinut [ohjataan Office 365 -kirjautumissivulle](er-business-document-management.md#frequently-asked-questions). Voit palata Finance-ympäristöön valitsemalla selaimen **Edellinen**-painikkeen.
 
     Uusi malli avataan muokkaamista varten mallieditori-sivun upotetussa Excel Online -ohjausobjektissa.
 
@@ -106,6 +106,3 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7070748a7712d257318aff559e7b115da15b67f0
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 10f7e790fdab3866958af1fa131d25735f69a58c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694516"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798447"
 ---
 # <a name="configure-and-filter-workspaces"></a>Määritä työtiloja ja suodata niitä
 
@@ -63,6 +63,3 @@ Jos työtilan yksittäisillä osilla on suodattimia, voit suodattaa kunkin osan 
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Suodata osan sisältö valitsemalla tai antamalla arvo samalla tavalla kuin työtilakohtaisessa suodattimessa.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

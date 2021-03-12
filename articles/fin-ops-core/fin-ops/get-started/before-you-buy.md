@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694133"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798546"
 ---
 # <a name="before-you-buy"></a>Ennen ostamista
 
@@ -30,7 +30,7 @@ Uudet Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin tai Dynamics
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Vaihe 1: Finance and Operationsin maksuton 30 päivän kokeilu
 
-Voit kokeilla Dynamics 365 for Financea, Dynamics 365 Supply Chain Managementia tai Dynamics 365 Commercea 30 päivää rekisteröitymällä sähköpostitse. Finance and Operations -sovellusten kokeiluversiossa on tehtävien aloitusoppaat, joiden vaihe vaiheelta -ohjeilla voi tarkastella tiettyjä skenaarioita käytännössä. Tuotteessa voi tutustua erilaisiin skenaarioihin ja niitä voi harjoitella, mutta sitä ei voi mukauttaa. Esittelytiedot helpottavat tuotteen käyttöä ja takaavat merkityksellisen kokemuksen. Muistutussähköposti lähetetään kolme päivää ennen koeajan päättymistä. Lisätietoja on osoitteessa [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Voit kokeilla Dynamics 365 for Financea, Dynamics 365 Supply Chain Managementia tai Dynamics 365 Commercea 30 päivää rekisteröitymällä sähköpostitse. Finance and Operations -sovellusten kokeiluversiossa on tehtävien aloitusoppaat, joiden vaihe vaiheelta -ohjeilla voi tarkastella tiettyjä skenaarioita käytännössä. Tuotteessa voi tutustua erilaisiin skenaarioihin ja niitä voi harjoitella, mutta sitä ei voi mukauttaa. Esittelytiedot helpottavat tuotteen käyttöä ja takaavat merkityksellisen kokemuksen. Muistutussähköposti lähetetään kolme päivää ennen koeajan päättymistä. Lisätietoja on kohdassa [Kokeiluversioiden tilaaminen](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Toinen vaihe: Käyttöönottovaihtoehdon valitseminen
 
@@ -93,6 +93,3 @@ Microsoft FastTrack for Dynamics 365 on asiakaspalvelu, joka auttaa asiakkaita s
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Päivitys Dynamics AX 2012:sta tai siirtyminen AX 2009:stä
 
 Jos olet asiakas, joka päivittää Microsoft Dynamics AX 2012:sta tai siirtyy Microsoft Dynamics AX 2009:stä, sinulla on ehkä oikeus pidempään kokeilujaksoon. Pyydä lisätietoja lähettämällä viesti osoitteeseen <daxcf@microsoft.com>.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

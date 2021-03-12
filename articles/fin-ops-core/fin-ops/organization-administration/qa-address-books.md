@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60e6fb7d38bd3ca78538ca10a15f6fb09bba52a3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693901"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796895"
 ---
 # <a name="address-books-faq"></a>Osoitekirjat – usein kysytyt kysymykset
 
@@ -67,6 +67,3 @@ Voit määrittää osapuolitietueet joko yleisessä osoitekirjassa tai soveltuva
 ## <a name="can-i-translate-address-information-for-party-records"></a>Voiko osapuolitietueiden osoitetiedot kääntää?
 
 Voit määrittää osoitetietojen käännökset, jotta tiedot näkyvät käyttäjän kielellä (järjestelmän kieli) ohjelmassasi, mutta toisella kielellä asiakirjoissa, kuten myyntitilauksissa. Voit antaa maiden tai alueiden nimien, osoitekohteiden ja nimijaksojen käännökset. Jos järjestelmän kieli on esimerkiksi tanska, voit luoda myyntitilauksen ranskalaiselle asiakkaalle. Tässä tapauksessa voit tarkastella ongelmassa tanskankielistä asiakastietuetta, mutta osoitetiedot näkyvät tulostetussa myyntitilauksessa ranskaksi. Anna käännöksiä määritettäessä käännös luettelon jokaiselle nimikkeelle. Nimikkeet, joille ei annetta käännöstä, näkyvät järjestelmän kielellä. Jos järjestelmän kieli on esimerkiksi tanska, voit lähettää asiakirjan espanjalaiselle asiakkaalle. Jos et ole antanut osoitetietojen espanjankielisiä (ESP) käännöksiä, kyseiset tiedot näkyvät tanskaksi sekä ohjelmassa että tulostetussa asiakirjassa.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

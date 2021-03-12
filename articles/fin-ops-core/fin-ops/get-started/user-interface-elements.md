@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 0c58ac63a4eae61c9a1cc6134bd0857394895e30
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693590"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797932"
 ---
 # <a name="user-interface-elements"></a>Käyttöliittymäelementit
 
@@ -86,6 +86,3 @@ Seuraavassa kuvassa esitetään esimerkkejä tällaisista ilmoituksista.
 *Luettelo* on nimi, joka annetaan sellaisen tietueen kokoelmalle, jota voi vierittää. Voit tuoda nämä tiedot sivulle valitsemalla ne. Usein tämä avaa ruudukon.
 
 ![Seuraavassa kuvassa näkyy esimerkkejä työkaluriveistä, ruudukoista ja luetteloista.](media/user-interface-08.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

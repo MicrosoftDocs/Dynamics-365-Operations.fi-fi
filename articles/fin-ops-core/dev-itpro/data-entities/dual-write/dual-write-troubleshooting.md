@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688256"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744538"
 ---
 # <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
@@ -65,23 +65,23 @@ Jäljitysloki otetaan käyttöön seuraavasti.
 
 1. Kirjaudu mallipohjaiseen sovellukseen Dynamics 365:ssa, avaa **Asetukset**-sivu ja valitse sitten **Järjestelmä**-kohdasta **Hallinta**.
 2. Valitse **Hallinta**-sivulla **Järjestelmäasetukset**.
-3. Ota laajennuksen jäljitysloki käyttöön valitsemalla **Mukauttaminen**-välilehden **Laajennuksen ja mukautetun työnkulun tehtävän jäljitys**-kentästä **Kaikki**. Jos haluat kirjata jäljityslokit vain, kun poikkeuksia ilmenee, voit valita kohdan **Poikkeus** sen sijaan.
+3. Ota laajennuksen jäljitysloki käyttöön valitsemalla **Mukauttaminen**-välilehden **Laajennuksen ja mukautetun työnkulun tehtävän jäljitys**-sarakkeessa **Kaikki**. Jos haluat kirjata jäljityslokit vain, kun poikkeuksia ilmenee, voit valita kohdan **Poikkeus** sen sijaan.
 
 
 Jäljitysloki näytetään seuraavasti.
 
 1. Kirjaudu mallipohjaiseen sovellukseen Dynamics 365:ssa, avaa **Asetukset**-sivu ja valitse sitten **Mukautus**-kohdasta **Laajennuksen jäljitysloki**.
-2. Etsi jäljityslokit, joiden **Tyyppinimi**-kentän arvoksi on määritetty **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+2. Etsi jäljityslokit, joiden **Tyyppinimi**-sarakkeen arvoksi on määritetty **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Voit tarkastella koko lokia kaksoisnapsauttamalla kohdetta ja tarkistaa sitten **Suoritus**-pikavälilehdessä **Sanomalohko**-tekstin.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Virheenkorjaustilan käyttöönotto Finance and Operations -sovellusten live-synkronointiongelmien vianmäärityksessä
 
 **Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvojan kaksoiskirjoitusvirheet, jotka ovat peräisin Dataversestä voivat näkyä Finance and Operations -sovelluksessa. Joissakin tapauksissa virhesanoman koko teksti ei ole käytettävissä, koska sanoma on liian pitkä tai sisältää henkilökohtaisia tunnistetietoja (PII). Noudattamalla seuraavia ohjeita voit ottaa käyttöön sanallisen kirjaamisen.
 
-1. Kaikilla Finance and Operations -sovellusten projektikokoonpanoilla on **IsDebugMode**-ominaisuus **DualWriteProjectConfiguration**-yksikössä. Avaa **DualWriteProjectConfiguration**-yksikkö käyttämällä Excel-lisäosaa.
+1. Kaikilla Finance and Operations -sovellusten projektikokoonpanoilla on **IsDebugMode**-ominaisuus **DualWriteProjectConfiguration**-taulukossa. Avaa **DualWriteProjectConfiguration**-taulukko käyttämällä Excel-lisäosaa.
 
     > [!TIP]
-    > Helppo tapa avata yksikkö on ottaa **Suunnittelu**-tila käyttöön Excel-lisäosalla ja lisätä sitten taulukkoon **DualWriteProjectConfigurationEntity**. Lisätietoja kohdassa [Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa](../../office-integration/use-excel-add-in.md).
+    > Helppo tapa avata taulukko on ottaa **Suunnittelu**-tila käyttöön Excel-apuohjelmalla ja lisätä sitten taulukkoon **DualWriteProjectConfigurationEntity**. Lisätietoja kohdassa [Taulukon tietojen avaaminen Excelissä ja niiden päivittäminen käyttämällä Excel-apuohjelmaa](../../office-integration/use-excel-add-in.md).
 
 2. Aseta **sDebugMode**-ominaisuuden arvoksi projektille **Kyllä**.
 3. Suorita virheitä tuottava skenaario.
@@ -118,10 +118,7 @@ Nyt voit linkittää uuden ympäristön.
 Kun luot myyntitilauksen Dynamics 365 Salesissa, + **Lisää tuotteet** -vaihtoehdon napsauttaminen saattaa ohjata sinut Dynamics 365 Project Operationsin tilausrivilomakkeeseen. Kyseisessä lomakkeessa ei ole mitään tapaa tarkastella myyntitilausrivin **Tieto**-lomaketta. **Tietoja**-vaihtoehto ei näy **Uuden tilausrivin** alla olevassa avattavassa valikossa. Näin tapahtuu, koska Project Operations on asennettu ympäristöösi.
 
 Voit ottaa **Tieto**-lomakevaihtoehdon uudelleen käyttöön seuraavasti:
-1. Siirry **Tilausrivi**-yksikköön.
+1. Siirry **Tilausrivi**-taulukkoon.
 2. Etsi **Tieto**-lomake lomakkeet-solmussa. 
 3. Valitse **Tieto**-lomake ja valitse **Ota käyttöön käyttöoikeusroolit**. 
 4. Muuta suojausasetukseksi **Näytä kaikille**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

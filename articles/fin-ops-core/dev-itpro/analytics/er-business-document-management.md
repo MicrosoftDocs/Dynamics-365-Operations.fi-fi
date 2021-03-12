@@ -3,7 +3,7 @@ title: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja ER-kehyksen liiketoiminnan asiakirjojen hallintatoiminnon käyttämisestä.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e657ffbad88aeb9fd238112954f5555496ac329
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681301"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740953"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -43,24 +43,17 @@ Tällä hetkellä yritysasiakirjan hallintatoiminto on käytössä vain pilvikä
 
 Yritystiedostojen hallinnan käyttäminen mallien muokkaamiseen Excel- tai Word-muodoissa Microsoft Office -työpöytäsovellusten avulla edellyttää, että asennettuna on Microsoft Office 2010 tai uudempi. Tätä tuetaan sekä pilvi- että paikallisissa käyttöönotoissa.
 
+Yritystiedostojen hallinnan käyttäminen mallien muokkaamiseen Excel- tai Word-muodoissa Microsoft 365 -sovellusten avulla edellyttää, että asennettuna on Microsoft 365 Office verkkotilausta varten. Tätä tuetaan pilvikäyttöönotossa.
+
 ## <a name="business-document-availability"></a>Yritysasiakirjojen käytettävyys
 
-Seuraavat Excel-pohjaisten mallien raportit tulevat käytettäviksi julkisen esikatselun julkaisemisen yhteydessä:
+Täydellinen luettelo kaikista lokakuun 2019 julkaisun suunnitelluista raporteista on kohdassa [Määritettävien liiketoiminta-asiakirjaraportointi Wordissa ja Excelissä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-**Myyntireskontra** (elokuu 2019)
+Täydellinen luettelo kaikista lokakuun 2020 julkaisun suunnitelluista raporteista on kohdassa [Määritettävät liiketoiminta-asiakirjat – Word-mallit](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-- Myynnin ennakkomaksun lasku
-- Myyntitilauksen pakkausluettelo
+Lisää raportteja tulee saataville tulevissa julkaisuissa. Lisäraporttien erityisilmoitukset lähetetään erikseen. Lisätietoja tällä hetkellä saatavilla olevien raporttien luettelon tarkistamisesta on jäljempänä kohdassa [Luettelo Financessa julkaistuista määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä](#list-of-configurations-cbd).
 
-**Ostoreskontra** (elokuu 2019)
-
-- Oston ennakkomaksun lasku
-- Ostotilaus
-- Ostotilauksen pakkausluettelo
-
-Lisää raportteja tulee saataville. Lisäraporttien erityisilmoitukset lähetetään erikseen. 
-
-Täydellinen luettelo kaikista suunnitelluista raporteista lokakuun 2019 julkaisussa löytyy kohdasta [Määritettävien liikeasiakirjaraportointi Wordissa ja Excelissä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
+Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
 
 ## <a name="configure-er-parameters"></a>Konfiguroi ER-parametrit
 
@@ -74,24 +67,24 @@ Tämän menettelyn esimerkeissä käytetään ER-näytemäärityksiä. Nykyiseen
 
 **Esimerkki ER-asiakaslaskutusratkaisusta**
 
-| **Tiedosto**                                  | **Sisältö**                                |
-|-------------------------------------------|--------------------------------------------|
+| Tiedosto                                      | Sisältö |
+|-------------------------------------------|---------|
 | Customer invoicing model.version.2.xml    | [ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Customer FTI report (GER).version.2.3.xml | [Vapaatekstilaskun ER-muodon määritys](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Esimerkki ER-maksutarkastusratkaisusta**
 
-| **Tiedosto**                                  | **Sisältö**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model for cheques.version.10.xml          | [ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Cheques printing format.version.10.9.xml  | [Maksusekin ER-muodon konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Tiedosto                                     | Sisältö |
+|------------------------------------------|---------|
+| Model for cheques.version.10.xml         | [ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Cheques printing format.version.10.9.xml | [Maksusekin ER-muodon konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Esimerkki ER-ulkomaankaupparatkaisusta**
 
-| **Tiedosto**                                  | **Sisältö**                                |
-|-------------------------------------------|--------------------------------------------|
-| Intrastat model.version.1.xml             | [ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Intrastat report.version.1.9.xml          | [Intrastat-valvontaraportin ER-muodon konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Tiedosto                             | Sisältö |
+|----------------------------------|---------|
+| Intrastat model.version.1.xml    | [ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat report.version.1.9.xml | [Intrastat-valvontaraportin ER-muodon konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Tuo kukin tiedosto noudattamalla seuraavia ohjeita. Tuo kunkin ER-ratkaisun ER-*tietomallin* konfiguraatio yllä oleviin tauluihin ennen kuin tuot vastaavan ER *-muodon* konfiguraation.
 
@@ -101,15 +94,13 @@ Tuo kukin tiedosto noudattamalla seuraavia ohjeita. Tuo kunkin ER-ratkaisun ER-*
 4. Lataa tarvittava XML-tiedosto valitsemalla **Selaa**.
 5. Vahvista konfiguroinnin tuonti valitsemalla **OK**.
 
-![Sähköisen raportoinnin konfiguroinnit -sivu](./media/BDM-Overview-ERSolutions.png)
-
+![Määrityksen tuonnin vahvistava ER-määritysten sivu](./media/BDM-Overview-ERSolutions.png)
 
 Vaihtoehtoisesti voit tuoda virallisesti julkaistut ER-muotomääritykset Microsoft Dynamics Lifecycle Servicestä (LCS). Tämän menettelyn viimeistelyä voit esimerkiksi tuoda **Vapaatekstilasku (Excel)** -ER-muotomäärityksen uusimman version. Vastaavat ER-tietomalli ja ER-mallin yhdistämismääritykset tuodaan automaattisesti.
 
 ![LCS:n jaetun resurssikirjaston sisältösivu](./media/BDM-Overview-SharedAssetLibrary.png)
 
 Lisätietoja ER-määritysten tuomisesta on kohdassa [ER-konfiguraation elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md).
-
 
 ## <a name="enable-business-document-management"></a>Ota liiketoiminta-asiakirjojen hallinta käyttöön
 
@@ -122,7 +113,7 @@ Seuraavia ohjeita noudattamalla voit ottaa käyttöön yritystiedostojen hallinn
 3. Ota valittu toiminto käyttöön valitsemalla **Ota käyttöön nyt**.
 4. Voit avata uuden toiminnon päivittämällä sivun.
 
->[!NOTE]
+> [!NOTE]
 > Lisätietoja uuden asiakirjan käyttöliittymän käyttämisestä liiketoiminta-asiakirjojen hallinnassa on kohdassa [Uusi asiakirjojen käyttöliittymä liiketoiminta-asiakirjojen hallinnassa](er-business-document-management-new-template-ui.md).
 
 ![Ominaisuushallinnan työtila](./media/BDM-Overview-FMEnabling.png)
@@ -134,21 +125,22 @@ Lisätietoja uusien ominaisuuksien aktivoinnista on kohdassa [ominaisuuksien hal
 Seuraavien osien tietojen avulla voit määrittää liiketoiminnan tiedostojen hallinnan perusparametrit.
 
 ### <a name="prerequisites-for-parameter-setup"></a>Parametrien asetusten edellytykset
+
 Ennen kuin voit määrittää liiketoiminnan asiakirjan hallinnan, sinun on määritettävä asiakirjan hallinnan kehys. Tämän tiedostotyypin avulla voit määrittää Office-muodoissa (Excel ja Word) olevien tiedostojen väliaikaisen tallennuksen, jota käytetään ER-raporttien malleina. Väliaikaista tallennusmallia voi muokata Office-työpöytäsovellusten avulla.
 
 Tämän tiedosto tyypin osalta on valittava seuraavat määritearvot.
 
-| **Määritteen nimi**  | **Määritteen arvo**   |
-|---------------------|-----------------------|
-| Luokka               | Liitä tiedosto           |
-| Ryhmä               | Tiedosto                  |
-| Toimipaikka            | SharePoint            |
+| Määritteen nimi | Määritteen arvo |
+|----------------|-----------------|
+| Luokka          | Liitä tiedosto     |
+| Ryhmä          | Tiedosto            |
+| Toimipaikka       | SharePoint      |
 
 Lisätietoja tarvittavien tiedoston hallintaparametrien ja tiedostotyyppien määrittämisestä on kohdassa [tiedostojen hallinnan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Määritä asiakirjojen hallinnan tiedostotyyppi](./media/BDM-Overview-DMSetting.png)
 
-### <a name=""></a><a name="SetupBdmParameters">Parametrien määrittäminen</a>
+### <a name="set-up-parameters"></a><a name="SetupBdmParameters"></a>Parametrien määrittäminen
 
 Liiketoiminnan asiakirjojen hallinnan perusparametrit voidaan määrittää **Liiketoiminta-asiakirjan parametrit** -sivulla. Vain tietyt käyttäjät voivat käyttää sivua. Näihin sisältyvät:
 
@@ -159,7 +151,7 @@ Seuraavien ohjeiden avulla voit määrittää perusparametrit kaikille yrityksil
 
 1. Kirjaudu sisään käyttäjänä, jolla on **Liiketoiminta-asiakirjan parametrit** -sivun käyttöoikeus.
 2. Siirry kohtaan **Organisaation hallinto** \> **Sähköinen raportointi** \> **Liiketoiminta-asiakirjojen hallinta**\> **Liiketoiminta-asiakirjan parametrit**.
-3.    Määritä **Liiketoiminta-asiakirjan parametrit**-sivun **Liitteet**-välilehden **SharePoint-tiedostotyyppi** -kentässä asiakirjatyyppi, jota käytetään, kun malleja tallennetaan väliaikaisesti Office-muodoissa, kun niitä muokataan Office-työpöytäsovellusten avulla. 
+3. Määritä **Liiketoiminta-asiakirjan parametrit**-sivun **Liitteet**-välilehden **SharePoint-tiedostotyyppi** -kentässä asiakirjatyyppi, jota käytetään, kun malleja tallennetaan väliaikaisesti Office-muodoissa, kun niitä muokataan Office-työpöytäsovellusten avulla. 
 
 > [!NOTE]
 > Tätä parametria varten on käytettävissä vain tiedostotyyppejä , jotka on konfiguroitu käyttämällä SharePoint-sijaintia.
@@ -169,13 +161,13 @@ Seuraavien ohjeiden avulla voit määrittää perusparametrit kaikille yrityksil
 Valittu tiedostotyyppi on yrityskohtainen, ja sitä käytetään, kun käyttäjä käyttää liiketoiminnan tiedostojen hallintaa yrityksessä, jolle valittu tiedostotyyppi on määritetty. Kun käyttäjä käyttää liiketoiminnan tiedostojen hallintaa toisessa yrityksessä, käytetään samaa valittua tiedostotyyppiä, jos sellaista ei ole määritetty tälle yritykselle. Kun tiedostotyyppi on konfiguroitu, sitä käytetään **SharePoint-tiedostotyyppi** -kentässä valitun asemesta.
 
 > [!NOTE]
-> **SharePoint -asiakirjatyyppi** -parametri määrittä SharePoint -kansion väliaikaiseksi tallennuspaikaksi malleille, joita voidaan muokata Microsoft Excelillä tai Wordilla. Tämä parametri on määritettävä, jos aiot käyttää näitä Office-työpöytäsovelluksia mallien muokkaamiseen. Lisätietoja on kohdassa [Mallin muokkaaminen Office-työpöytäsovelluksessa](#EditInOfficeDesktopApp). Voit pitää tämän parametrin tyhjänä, jos aiot muokata mallia vain käyttämällä toimintoa Microsoft 365:ssä. Lisätietoja on kohdassa [Mallin muokkaaminen Microsoft 365:ssä](#EditInOffice365).
+> **SharePoint -asiakirjatyyppi** -parametri määrittä SharePoint -kansion väliaikaiseksi tallennuspaikaksi malleille, joita voidaan muokata Microsoft Excelillä tai Wordilla. Tämä parametri on määritettävä, jos aiot käyttää näitä Office-työpöytäsovelluksia mallien muokkaamiseen. Lisätietoja on kohdassa [Mallin muokkaaminen Office-työpöytäsovelluksessa](#EditInOfficeDesktopApp). Tämä parametri voidaan jättää tyhjäksi, jos aiot muokata mallia vain käyttämällä toimintoa Microsoft 365:ssä. Lisätietoja on kohdassa [Mallin muokkaaminen Microsoft 365:ssä](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Käyttöoikeuksien määrittäminen
 
 Jos yrityksen tiedostojen hallinnan käyttöoikeuksia ei ole otettu käyttöön, kaikki yrityksen asiakirjahallinnan työtilan käyttäjät näkevät oletusarvoisesti kaikki ER-ratkaisumallit, jotka ovat käytettävissä. Liiketoiminnan asiakirjan hallinnan työtilassa näkyvät vain ne mallit, jotka sijaitsevat ER-muotomäärityksissä ja jotka on merkitty **Liiketoiminta-asiakirjatyyppi** -tunnisteella.
 
-![Sähköisen raportoinnin konfiguroinnit -sivu](./media/BDM-Overview-ERFormatTags.png)
+![ER-määrityssivu ja liiketoiminta-asiakirjatyypin tunniste](./media/BDM-Overview-ERFormatTags.png)
 
 Yritysasiakirjan hallinnan työtilassa käytettävissä olevien mallien luetteloa voi rajoittaa määrittämällä käyttöoikeudet. Tämä voi olla tärkeää, kun eri malleja käytetään liiketoiminnan asiakirjojen tuottamiseen eri toimialueilla (toiminnalliset alueet), ja haluat sallia tietyille käyttäjille eri mallien käytön yritysasiakirjan hallinnan työtilassa muokkaamista varten.
 
@@ -197,13 +189,13 @@ Seuraavia ohjeita noudattamalla voit määrittää yritystiedostojen hallinnan k
 
     Seuraavassa kuvassa näkyy, mitä yritysasiakirjan hallinnan työtilassa on käytettävissä **Myyntireskontranhoitaja**-rooliin määritetyille käyttäjille. Nykyisten käyttöoikeuksien asetuksen avulla käyttäjä voi muokata eri toimintoalueista peräisin olevia liiketoiminta-asiakirjamalleja, kuten laskutusta, viranomaisraportointia ja maksuja.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Myyntireskontran käsittelijän liiketoiminta--asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Valitse **Käyttöoikeuksien määritys** -sivulla **Käyttöoikeuksien asetukset**.
 4. Ota **Mallien muokkauksen käyttöoikeuksien asetukset** -valintaikkunassa käyttöön **Ota määritetyt käyttöoikeudet käyttöön** -vaihtoehto.
 5. Vahvista , että yritysasiakirjan hallinnan käyttöoikeudet on otettu käyttöön valitsemalla **OK**.
 
-    ![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Liiketoiminta-asiakirjan hallinnan käyttöoikeuksien vahvistaminen](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Valitse **Lisää**, jos haluat määrittää uuden liiketoimintaroolin, jonka käyttöoikeuksia yritysasiakirjan hallinnan malleihin on määritettävä.
 7. Valitse **Käyttöoikeusroolit** -valintaikkunassa **Myyntireskontranhoitaja**-rooli ja vahvista roolin valinta valitsemalla **OK**.
@@ -215,7 +207,7 @@ Seuraavia ohjeita noudattamalla voit määrittää yritystiedostojen hallinnan k
 
 11. Vaihda **Aiheeseen liittyviä tietoja** -ruutu nykyisen sivun oikeasta reunasta. **Aiheeseen liittyviä tietoja** -ruudussa näkyy, miten konfiguroituja käyttöoikeuksia käytetään, mukaan lukien se, mitä ER-konfigurointimalleja **Myyntireskontranhoitaja**-rooliin määritetyt käyttäjät voivat käyttää.
 
-    ![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Käyttöoikeuksien määrityssivun liittyvien tietojen ruutu](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Valitse **Määrityskohtaiset käyttöoikeudet** -välilehdessä **Lisää**.
 13. Merkitse **Valitse määritys** -valintaikkunassa ER-muotokonfiguraatio **Intrastat-raportti**.
@@ -226,11 +218,11 @@ Nykyiset asetukset tarkoittavat sitä, että kaikille käyttäjille, jotka on li
 - Mallit, joiden **Toiminnallinen alue** -tunnisteen arvo on **Laskutus**.
 - Mallit ER-muotokonfiguraatioista, jotka on lueteltu **Määrityskohtaiset käyttöoikeudet** -välilehdessä (mallit **Intrastat-raportti** -muotokokoonpanosta **Lakisääteinen raportointi** -toimialueella tässä esimerkissä).
 
-![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess4.png)
+![Käyttöoikeuksien määrityssivulla käyttöoikeuksien pikavälilehdet](./media/BDM-Overview-TemplatesAccess4.png)
 
 Seuraavassa kuvassa näkyy, mitä yritysasiakirjan hallinnan työtilassa on saatavilla **Myyntireskontranhoitaja**-rooliin määritetyille käyttäjille. Nykyisen yritysasiakirjan hallinnan käyttöoikeuksien asetuksen avulla käyttäjä voi muokata liiketoiminta-asiakirjamalleja **Laskutus**-toimialueelta ja **Intrastat-raportti** -muotokonfiguraatiosta. **Maksu**-toimialueen mallit eivät ole käytettävissä **Myyntireskontranhoitaja**-roolille.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-TemplatesForAlice2.png)
+![Liiketoiminta-asiakirjamallien muokkaaminen Liiketoiminta-asiakirjan hallinnan työtila -sivulla](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > **Määrityskohtaiset käyttöoikeudet** -säännöt tallennetaan käyttämällä ER-muotokonfiguraation yksilöivää tunnusta. Tämä tarkoittaa, että näitä sääntöjä ei poisteta, kun niihin viittaava ER-konfiguraatio poistetaan. Kun tuot poistetut konfiguraatiot takaisin tähän esiintymään, nämä säännöt viittaavat niihin uudelleen. Sääntöjä ei tarvitse määrittää uudelleen poistettujen konfiguraatioiden tuomisen jälkeen.
@@ -252,7 +244,7 @@ Kun työasiakirjan hallintatoiminnon **Yrityksen asiakirjanhallinnan Officen kal
 - Mallit, joiden omistaja on ER-määrityksen toimittaja (eli toimittaja, joka on tällä hetkellä merkitty aktiiviseksi **Sähköinen raportointi** -työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla **Muokkaa mallia**.
 - Muiden ER-määritysten toimittajien omistamat mallit. Kun olet valinnut jonkin näistä malleista, voit valita **Uuden tiedoston** ja luoda siitä kopion, jonka omistaa ER-määrityspalvelu, ja aloittaa sitten kopion muokkaamisen.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate1.png)
+![Malliluettelo Liiketoiminta-asiakirjan hallinnan työtila -sivulla](./media/BDM-Overview-EditingTemplate1.png)
 
 **Malli** -välilehdessä näkyy valitun mallin sisältö. Valitse **Tiedot**-välilehti, jossa voit tarkastella valitun mallin tietoja sekä sen ER-muotokonfiguraation tietoja, jossa tämä malli sijaitsee. Huomaa, että kaikkien mallien tila on **Julkaistu**, eivätkä ne sisällä tietoja **Tarkistusversio**-sarakkeessa. Tämä tarkoittaa, että näitä malleja ei tällä hetkellä muokata.
 
@@ -265,7 +257,7 @@ Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, v
 1. Valitse yritysasiakirjan hallinnan työtilassa **Sekkien tulostusmuoto** -malli luettelosta.
 2. Valitse **Tiedot**-välilehti.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate2.png)
+![Liiketoiminta-asiakirjojen hallinnan työtila -sivun Tiedot-välilehti](./media/BDM-Overview-EditingTemplate2.png)
 
 **Muokkaa mallia-** vaihtoehto on käytettävissä valitulle mallille. Tämä vaihtoehto on aina käytettävissä mallissa, joka on ER-muotokokoonpanossa, jonka omistaa aktiivinen ER-konfiguraatiopalvelun toimittaja (tässä esimerkissä **Litware, Inc**). Kun **Muokkaa mallia** on valittuna, aiemmin luodun ER-muotokonfiguraation luonnosversion mallia voi muokata.
 
@@ -273,14 +265,14 @@ Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, v
 
 1. Valitse liiketoiminta-asiakirjojen hallinnan työtilassa asiakirja, jota haluat käyttää mallina.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate3.png)
+    ![Asiakirjan valitseminen Liiketoiminta-asiakirjan hallinnan työtila -sivu](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Valitse **Uusi asiakirja** ja muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
-4. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
-5. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin kommentti.
-6. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
+2. Valitse **Uusi asiakirja** ja muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
+3. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
+4. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin kommentti.
+5. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate4.png)
+![Uuden mallin luominen vahvistamalla muokkausprosessin alkaminen](./media/BDM-Overview-EditingTemplate4.png)
 
 **Uusi tiedosto** -vaihtoehto on aina käytettävissä siinä ER-muotomäärityksen mallissa, jolla ei ole uutta versiota ja jonka toimittaa kulloinenkin ja toinen palvelu (tässä esimerkissä Microsoft). Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
 
@@ -290,21 +282,21 @@ Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, v
 2. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
 3. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate5.png)
+    ![Mallin muokkaaminen Liiketoiminta-asiakirjan hallinnan työtila -sivulla](./media/BDM-Overview-EditingTemplate5.png)
 
-5. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
+4. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
 **BDM-mallieditori**-sivu avautuu. Valittu malli on käytettävissä online-muokkausta varten käyttämällä Microsoft 365:ttä.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout1.png)
+![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Mallin muokkaaminen Microsoft 365:ssä</a>
+### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Mallin muokkaaminen Microsoft 365:ssä
 
 Voit muokata mallia Microsoft 365:n avulla. Esimerkiksi Office Onlinessa voit muuttaa mallin otsikossa olevien kenttä kehotteiden fonttia arvosta **Normaali** arvoon **Lihavoitu**. Nämä muutokset tallentuvat automaattisesti muokattavaan malliin, joka on tallennettu ensisijaisen perusmallin tallennustilaan (oletusarvona on Azuren blob-säilö). Tämä on määritetty ER-kehykselle.
 
-![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout2.png)
+![Mallin otsikon fontin muuttaminen lihavoiduksi liiketoiminta-asiakirjan hallinnan mallieditorin sivulla](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name=""></a><a name="EditInOfficeDesktopApp">Mallin muokkaaminen Office-työpöytäsovelluksessa</a>
+### <a name="edit-a-template-in-the-office-desktop-application"></a><a name="EditInOfficeDesktopApp"></a>Mallin muokkaaminen Office-työpöytäsovelluksessa
 
 > [!NOTE]
 > Tämä toiminto on käytettävissä vain, kun **SharePoint -asiakirjatyyppi** -parametri on määritetty oikein. Lisätietoja on kohdassa [Parametrien määrittäminen](#SetupBdmParameters).
@@ -312,15 +304,15 @@ Voit muokata mallia Microsoft 365:n avulla. Esimerkiksi Office Onlinessa voit mu
 1. Valitse **Avaa työpöytäsovelluksessa** -vaihtoehto, jos haluat muokata mallia Office-työpöytäsovelluksen toimintojen avulla (tässä esimerkissä Excel). Muokattava malli kopioidaan pysyvästä tallennuspaikasta yrityksen tiedostojen hallinnan parametreissa määritettyyn väliaikaiseen varastoon SharePoint-kansiona.
 2. Vahvista, että haluat avata mallin väliaikaisesta tiedostovarastoinnista Officen Excel -työpöytäsovelluksessa.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout3.png)
+    ![Työpöydän Excel-sovelluksessa avattu malli](./media/BDM-Overview-EditingLayout3.png)
 
 3. Muokkaa mallia. Esimerkiksi voit muuttaa mallin otsikossa olevien kenttäkehotteiden fonttia päivittämällä värin arvosta **Musta** arvoon **Sininen**.
 
-    ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout4.png)
+    ![Mallin otsikon fontin värin muokkaaminen työpöydän Excel-sovelluksessa](./media/BDM-Overview-EditingLayout4.png)
 
 4. Tallenna mallin muutokset väliaikaiseen varastoon valitsemalla Excel-työpöytäsovelluksessa **Tallenna**.
 
-    ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout5.png)
+    ![Muutosten tallentaminen liiketoiminta-asiakirjan hallinnan mallieditorisivulla työpöydän Excel-sovelluksessa](./media/BDM-Overview-EditingLayout5.png)
 
 5. Sulje Excel-työpöytäsovellus.
 6. Synkronoi väliaikainen mallisäilö pysyvään mallivarastoon valitsemalla **Synkronoi tallennettu kopio**.
@@ -340,7 +332,7 @@ Voit muokata mallia Microsoft 365:n avulla. Esimerkiksi Office Onlinessa voit mu
 
 Päivitetty malli näkyy **Malli**-välilehdessä. Huomaa, että muokatun mallin tila on nyt **Luonnos** eikä nykyinen versio ole enää tyhjä. Tämä tarkoittaa, että tämän mallin muokkauksen prosessi on aloitettu.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate5.png)
+![Päivitetyn mallin näyttäminen Liiketoiminta-asiakirjan hallinnan työtila -sivulla](./media/BDM-Overview-EditingTemplate5.png)
 
 ### <a name="test-the-modified-template"></a>Muokatun mallin testaaminen 
 
@@ -353,7 +345,7 @@ Päivitetty malli näkyy **Malli**-välilehdessä. Huomaa, että muokatun mallin
     ![Tulostuksenhallinnan asetukset -sivu](./media/BDM-Overview-TestRun1.png)
 
 6. Voit sulkea nykyisen sivun painamalla **ESC-näppäintä**.
-7. Valitse **Tulosta** ja valitse **Valittu**.
+7. Valitse ensin **Tulosta** ja sitten **Valittu**.
 8. Lataa tiedosto ja avaa se käyttämällä Excel-työpöytäsovellusta.
 
 ![Vapaatekstilaskut-sivu](./media/BDM-Overview-TestRun2.png)
@@ -367,7 +359,7 @@ Muokatun mallin avulla luodaan valitulle nimikkeelle vapaatekstilaskun raportti.
 3. Muuta tarvittaessa toisen version nimeä **Nimi** -kentässä ja perusta se tällä hetkellä aktiiviselle ensimmäiselle versiolle.
 4. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus tarvittaessa.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-AddRevision.png)
+    ![Mallin versioiden luominen Liiketoiminta-asiakirjan hallinnan työtila -sivulla](./media/BDM-Overview-AddRevision.png)
 
     Loit uuden mallin version, joka on tallennettu pysyvän mallin varastoon. Voit jatkaa nyt aktiiviseksi valitun toisen version mallin muokkaamista.
 
@@ -385,22 +377,25 @@ Muokatun mallin avulla luodaan valitulle nimikkeelle vapaatekstilaskun raportti.
 
 Kun muokkaat mallia nykyisen aktiivisen palveluntarjoajan omistamasta ER-muodosta, sinulle tarjotaan mahdollisuus peruuttaa malliin tehdyt muutokset.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-RevokeChanges.png)
+![Mallin muutosten hylkääminen Liiketoiminta-asiakirjan hallinnan työtila -sivulla](./media/BDM-Overview-RevokeChanges.png)
 
 1. Valitse **Malli**-välilehti **BDM mallieditorin** sivulla.
 2. Valitse **Kumoa**.
 3. Jos valitset **OK** peruuttaaksesi malliin tehdyt muutokset, muokattu malli korvataan alkuperäisellä mallilla ja kaikki muutokset poistetaan. Kun peruutat malliin tehdyt muutokset, voit poistaa mallin. Voit tutkia muita vaihtoehtoja valitsemalla **Peruuta**.
 
 ### <a name="publish-a-modified-template"></a>Muokatun mallin julkaiseminen
+
 1. Valitse **BDM mallieditorin** sivun **Malli**-välilehdessä **Julkaise**.
 2. Jos valitset **OK** julkaisun vahvistamiseksi, muutetun mallin sisältävä **Asiakkaan FTI-raportti (GER) Copy** -ER-muodon johdettu luonnos merkitään valmiiksi. Muokattu malli tulee muiden käyttäjien saataville. Tämän ER-muodon valmiit versiot säilyttävät vain mallin viimeisimmän aktiivisen version. Muut versiot poistetaan. Voit tutkia muita vaihtoehtoja valitsemalla **Peruuta**.
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Valitsin **Muokkaa tiedostoa**, mutta sen sijaan että avautuisi in **BDM-mallieditori** -sivu Finance and Operationsissa, minut on siirretty Microsoft 365 -verkkosivulle.
-Tämä on tunnettu Microsoft 365:n uudelleenohjauksen ongelma. Näin tapahtuu, kun kirjaudut Microsoft 365:een ensimmäisen kerran. Voit välttää tämän ongelman valitsemalla selaimesi **Takaisin**-painikkeen ja siirtymällä takaisin.
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>Valitsin Muokkaa tiedostoa, mutta sen sijaan että BDM-mallieditorisivu avautuisi Financessa, siirryin Microsoft 365 -verkkosivulle.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ymmärrän, miten voit muokata mallia käyttämällä Microsoft 365:ttä ensimmäisessä sovellusistunnossa ja miten mallia käytetään toisessa sovellusistunnossa mallin säätämiseen, jotta näen, miten muutokset vaikuttavat luotuun liiketoiminta-asiakirjaan. Voinko tehdä tämän Office-työpöytäsovelluksen avulla?
+Tämä on tunnettu Microsoft 365:n uudelleenohjauksen ongelma. Näin tapahtuu, kun Microsoft 365:een kirjaudutaan ensimmäisen kerran. Tämän ongelman voi korjata palaamalla edelliselle sivulle valitsemalla selaimessa **Edellinen**.
+
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Tiedän, miten mallia muokataan käyttämällä Microsoft 365:tä ensimmäisessä sovellusistunnossa ja miten mallia käytetään toisessa sovellusistunnossa mallin säätämiseen, jotta nähdään, miten muutokset vaikuttavat luotuun liiketoiminta-asiakirjaan. Voiko Office-työpöytäsovellusta käyttää samalla tavalla?
+
 Kyllä voit. Valitse ensimmäisessä sovellusistunnossa **Avaa työpöytäsovelluksessa**. Malli tallennetaan väliaikaiseen tiedostovarastoon ja avataan Office-työpöytäsovelluksessa. Tee seuraavaksi seuraavat vaiheet, kun haluat esikatsella mallin muutoksia luodussa yritysasiakirjassa:
 
 1. Tee muutoksia malliin käyttämällä Office-työpöytäsovellusta.
@@ -408,7 +403,8 @@ Kyllä voit. Valitse ensimmäisessä sovellusistunnossa **Avaa työpöytäsovell
 3. Valitse ensimmäisen sovellusistunnon **BDM-mallieditorin** sivulla **Synkronoi tallennettu kopio**.
 4. Suorita tämä mallin ER-muoto toisessa sovellusistunnossa.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Näyttöön tulee virhe "Arvo ei voi olla nolla. Parametrin nimi: : externalId’, kun valitsen **Avaa työpöytäsovelluksessa**. Kuinka voin välttää tämän? 
+### <a name="when-i-select-open-in-desktop-app-i-receive-the-following-error-message-value-cannot-be-null-parameter-name-externalid-how-do-i-work-around-this-issue"></a>Sen jälkeen kun Avaa työpöytäsovelluksessa on valittu, seuraava virhesanoma avautuu: Arvo ei voi olla tyhjäarvo. Parametrin nimi: externalId. Miten tämä ongelma ratkaistaan?
+
 Kirjauduit todennäköisesti Azure AD -toimialueen nykyisen sovelluksen esiintymään, joka ei ole sama kuin esiintymän käyttöönotossa käytetty Azure AD -toimialue. Koska SharePoint-palvelu, johon tallennetaan malleja, joiden avulla niitä voidaan muokata Office-työpöytäsovelluksella, kuuluu samaan toimialueeseen, meillä ei ole SharePoint-palvelun käyttöoikeuksia. Voit ratkaista tämän ongelman kirjautumalla nykyiseen esiintymään käyttämällä oikean Azure AD -toimialueen käyttäjän tunnistetietoja.
 
 ## <a name="additional-resources"></a>Lisäresurssit
@@ -423,6 +419,163 @@ Kirjauduit todennäköisesti Azure AD -toimialueen nykyisen sovelluksen esiintym
 
 [Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Luettelo Financessa julkaistuista määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä
 
+Financen ER-määritysten [luetteloa](general-electronic-reporting.md#list-of-configurations) päivitetään jatkuvasti. Tällä hetkellä tuettujen ER-määritysten luetteloa voi tarkastella avaamalla [yleisen tietovaraston](er-download-configurations-global-repo.md). Yleinen tietovarasto voidaan [suodattaa](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) näyttämään luettelo määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Yleisen tietovaraston sisällön suodattaminen Konfiguraatiosäilö-sivulla](./media/bdm-overview-filterglobalrepo.gif)
+
+Seuraavassa taulukossa on luettelo ER-määrityksistä, jotka tukevat määritettäviä liiketoiminta-asiakirjoja ja jotka on julkaistu Financessa joulukuuhun 2020 mennessä.
+
+| Tietomallimääritys    | Muotomääritykset                           |
+|-----------------------------|-------------------------------------------------|
+| Rahtikirjamalli        | Rahtikirja (Excel)                          |
+|                             | Rahtikirja (Word)                           |
+| Alkuperätodistusmalli | Alkuperätodistus (Excel)                   |
+|                             | Alkuperätodistus (Word)                    |
+| Laskumalli               | Asiakkaan veloitus- ja hyvityslasku (Excel)          |
+|                             | Asiakkaan veloitus- ja hyvityslasku (Word)           |
+|                             | Vapaatekstilasku (Excel)                       |
+|                             | Vapaatekstilasku (Excel) (BH)                  |
+|                             | Vapaatekstilasku (FR) (Excel)                  |
+|                             | Vapaatekstilasku (LT) (Excel)                  |
+|                             | Vapaatekstilasku (LV) (Excel)                  |
+|                             | Vapaatekstilasku (PL) (Excel)                  |
+|                             | Vapaatekstilasku (CZ) (Excel)                  |
+|                             | Vapaatekstilasku (EE) (Excel)                  |
+|                             | Vapaatekstilasku (HU) (Excel)                  |
+|                             | Vapaatekstilasku (TH) (Excel)                  |
+|                             | Vapaatekstilasku (Word)                        |
+|                             | Projektisopimuksen rivinimikkeet (Excel)             |
+|                             | Projektisopimuksen rivinimikkeet (CZ) (Excel)        |
+|                             | Projektisopimuksen rivinimikkeet (Excel) (BH)        |
+|                             | Projektisopimuksen rivinimikkeet (HU) (Excel)        |
+|                             | Projektisopimuksen rivinimikkeet (LT) (Excel)        |
+|                             | Projektisopimuksen rivinimikkeet (PL) (Excel)        |
+|                             | Projektisopimuksen rivinimikkeet (Word)              |
+|                             | Projektiasiakkaan pidätyksen vapautus (Excel)      |
+|                             | Projektiasiakkaan pidätyksen vapautus (CZ) (Excel) |
+|                             | Projektiasiakkaan pidätyksen vapautus (HU) (Excel) |
+|                             | Projektiasiakkaan pidätyksen vapautus (LT) (Excel) |
+|                             | Projektiasiakkaan pidätyksen vapautus (PL) (Excel) |
+|                             | Projektiasiakkaan pidätyksen vapautus (TH) (Excel) |
+|                             | Projektiasiakkaan pidätyksen vapautus (Word)       |
+|                             | Projektilasku (Excel)                         |
+|                             | Projektilasku (Word)                          |
+|                             | Projektilasku (AE) (Excel)                    |
+|                             | Projektilasku (CZ) (Excel)                    |
+|                             | Projektilasku (Excel) (BH)                    |
+|                             | Projektilasku (HU) (Excel)                    |
+|                             | Projektilasku (JP) (Excel)                    |
+|                             | Projektilasku (LT) (Excel)                    |
+|                             | Projektilasku (PL) (Excel)                    |
+|                             | Projektilasku (TH) (Excel)                    |
+|                             | Täydellinen projektilasku (OMA) (Excel)               |
+|                             | Yksinkertainen projektilasku (OMA) (Excel)             |
+|                             | Projektinhallintalasku (LT) (Excel)                  |
+|                             | Projektinhallintalasku (CZ) (Excel)             |
+|                             | Projektinhallintalasku (Excel) (BH)             |
+|                             | Projektinhallintalasku (HU) (Excel)             |
+|                             | Projektinhallintalasku (JP) (Excel)             |
+|                             | Projektinhallintalasku (LT) (Excel)             |
+|                             | Projektinhallintalasku (PL) (Excel)             |
+|                             | Projektinhallintalasku (Word)                   |
+|                             | Oston ennakkomaksun lasku (Excel)                |
+|                             | Oston ennakkomaksun lasku (Word)                 |
+|                             | Myynnin ennakkomaksun lasku (Excel)                   |
+|                             | Myynnin ennakkomaksun lasku (Word)                    |
+|                             | Myynnin ennakkomaksun lasku (PL) (Excel)              |
+|                             | Myyntilasku (Excel)                           |
+|                             | Myyntilasku (Excel) (BH)                      |
+|                             | Myyntilasku (Excel) (CZ)                      |
+|                             | Myyntilasku (Excel) (EE)                      |
+|                             | Myyntilasku (Excel) (FR)                      |
+|                             | Myyntilasku (Excel) (HU)                      |
+|                             | Myyntilasku (Excel) (IN)                      |
+|                             | Myyntilasku (Excel) (LT)                      |
+|                             | Myyntilasku (Excel) (LV)                      |
+|                             | Myyntilasku (Excel) (PL)                      |
+|                             | Myyntilasku (Excel) (TH)                      |
+|                             | Myyntilasku (Word)                            |
+|                             | TMS-kauppalasku (Excel)                  |
+|                             | TMS-kauppalasku (Word)                   |
+|                             | Toimittajan laskuasiakirja (Excel)                 |
+|                             | Toimittajan laskuasiakirja (CZ) (Excel)            |
+|                             | Toimittajan laskuasiakirja (HU) (Excel)            |
+|                             | Toimittajan laskuasiakirja (IN) (Excel)            |
+|                             | Toimittajan laskuasiakirja (LT) (Excel)            |
+|                             | Toimittajan laskuasiakirja (LV) (Excel)            |
+|                             | Toimittajan laskuasiakirja (OMA) (Excel)            |
+|                             | Toimittajan laskuasiakirja (Word)                  |
+| Tilausmalli                 | Sopimuksen vahvistus (Excel)                  |
+|                             | Sopimuksen vahvistus (Word)                   |
+|                             | Ostosopimuksen vahvistus (Excel)         |
+|                             | Ostosopimuksen vahvistus (Word)          |
+|                             | Ostotilaus (Excel)                          |
+|                             | Ostotilaus (CZ) (Excel)                     |
+|                             | Ostotilauskysely (CZ) (Excel)             |
+|                             | Ostotilaus (HU) (Excel)                     |
+|                             | Ostotilauskysely (HU) (Excel)             |
+|                             | Ostotilaus (Word)                           |
+|                             | Ostotilauskysely (Excel)                  |
+|                             | Ostotilauskysely (Word)                   |
+|                             | Myyntitilauksen vahvistus (Excel)                |
+|                             | Myyntitilauksen vahvistus (CZ) (Excel)           |
+|                             | Myyntitilauksen vahvistus (HU) (Excel)           |
+|                             | Myyntitilauksen vahvistus (Word)                 |
+| Pakkausluettelomalli          | Säilön sisältö (Excel)                      |
+|                             | Säilön sisältö (Word)                       |
+|                             | Kuormaluettelo (Excel)                               |
+|                             | Kuormaluettelo (Word)                                |
+|                             | Keräysluettelo (Excel)                            |
+|                             | Keräysluettelo (CZ) (Excel)                       |
+|                             | Keräysluettelo (Word)                             |
+|                             | Tuotannon keräysluettelo (Excel)                    |
+|                             | Tuotannon keräysluettelo (Word)                     |
+|                             | Lähetyksen keräysluettelo kuormaa varten (Excel)             |
+|                             | Lähetyksen keräysluettelo kuormaa varten (Word)              |
+|                             | Lähetyksen keräysluettelo lähetystä varten (Excel)         |
+|                             | Lähetyksen keräysluettelo lähetystä varten (Word)          |
+|                             | Lähetyksen keräysluettelo aaltoa varten (Excel)             |
+|                             | Lähetyksen keräysluettelo aaltoa varten (Word)              |
+| Maksumalli               | Asiakkaan maksuehdotus (Excel)                 |
+|                             | Asiakkaan maksuehdotus (Word)                  |
+|                             | Toimittajan maksuehdotus (Excel)                   |
+|                             | Toimittajan maksuehdotus (Word)                    |
+| Tarjousmalli             | Projektitarjous (Excel)                       |
+|                             | Projektitarjous (Word)                        |
+|                             | Tarjouspyyntö (Excel)                   |
+|                             | Tarjouspyyntö (hyväksyntä) (Excel)          |
+|                             | Tarjouspyyntö (hyväksyntä) (Word)           |
+|                             | Tarjouspyyntö (hylkäys) (Excel)          |
+|                             | Tarjouspyyntö (hylkäys) (Word)           |
+|                             | Tarjouspyyntö (palautus) (Excel)          |
+|                             | Tarjouspyyntö (palautus) (Word)           |
+|                             | Tarjouspyyntö (Word)                    |
+|                             | Myyntitarjous (Excel)                         |
+|                             | Myyntitarjous (CZ) (Excel)                    |
+|                             | Myyntitarjous (HU) (Excel)                    |
+|                             | Myyntitarjous (Word)                          |
+|                             | Myyntitarjouksen vahvistus (Excel)            |
+|                             | Myyntitarjouksen vahvistus (Word)             |
+| Täsmäytysmalli        | Asiakkaan tiliote, ulkoinen (Excel)             |
+|                             | Asiakkaan tiliote, ulkoinen (CN) (Excel)        |
+|                             | Asiakkaan tiliote, ulkoinen (Word)              |
+|                             | Asiakkaan tiliote, Ranska (Excel)          |
+| Muistutusmalli              | Maksukehotus (Excel)                  |
+|                             | Maksukehotus (CN) (Excel)             |
+|                             | Maksukehotus (Word)                   |
+|                             | Asiakkaan korkolasku (Excel)                  |
+|                             | Asiakkaan korkolasku (Word)                   |
+| Kuormakirjamalli               | Kuorman maksuväline (Excel)                             |
+|                             | Kuorman maksuväline (Word)                              |
+|                             | Ostotilauksen pakkausluettelo (Excel)             |
+|                             | Ostotilauksen pakkausluettelo (CZ) (Excel)        |
+|                             | Ostotilauksen pakkausluettelo (Word)              |
+|                             | Reititys (Excel)                                   |
+|                             | Reititys (Word)                                    |
+|                             | Myyntitilauksen pakkausluettelo (Excel)                |
+|                             | Myyntitilauksen pakkausluettelo (CZ) (Excel)           |
+|                             | Myyntitilauksen pakkausluettelo (LT) (Excel)           |
+|                             | Myyntitilauksen pakkausluettelo (PL) (Excel)           |
+|                             | Myyntitilauksen pakkausluettelo (Word)                 |

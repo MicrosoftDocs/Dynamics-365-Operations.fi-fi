@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df30e403c4b1c7d3abc88ae98c73d797bceef02
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693109"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797256"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Nykyisten työntekijöiden työhönotto rekrytoinnin kautta
 
@@ -40,6 +40,3 @@ Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töi
 9. Valitse Muuta toimea.
     * Voit myös muuttaa kompensaatiota täksi ajaksi. Jos et määritä kompensaatiota nyt, voit muuttaa sitä siirtymällä työntekijän lomakkeeseen, valitsemalla Kompensaatio-välilehden ja valitsemalla Kiinteä suunnitelma. Kun valitset Muuta toimea, hakemuksen tilaksi tulee Toimessa.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

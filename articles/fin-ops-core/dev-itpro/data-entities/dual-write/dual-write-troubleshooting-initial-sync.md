@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683553"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744634"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Ongelmien vianmääritys synkronoinnin aikana
 
@@ -98,7 +98,7 @@ Näyttöön saattaa tulla virhesanoma, jos jollakin yhdistämismäärityksistä 
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Toimittajat V2 msdyn_vendors -taulun yhdistämismäärityksen virheiden ratkaiseminen
 
-**Toimittajat V2** kohteeseen tapahtuvassa **msdyn\_vendors** yhdistämismäärityksessä voi esiintyä ensimmäisen synkronoinnin virheitä, jos tauluissa on aiemmin luotuja rivejä, joiden **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-kentissä on arvo. Nämä virheet johtuvat siitä, että **InvoiceVendorAccountNumber** on itseviittaava kenttä ja **PrimaryContactPersonId** on kehäviittaus toimittajan yhdistämismäärityksessä.
+**Toimittajat V2** kohteeseen tapahtuvassa **msdyn\_vendors** yhdistämismäärityksessä voi esiintyä ensimmäisen synkronoinnin virheitä, jos tauluissa on aiemmin luotuja rivejä, joiden **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeissa on arvo. Nämä virheet johtuvat siitä, että **InvoiceVendorAccountNumber** on itseviittaava sarake ja **PrimaryContactPersonId** on kehäviittaus toimittajan yhdistämismäärityksessä.
 
 Näiden virhesanomien muoto on seuraavanlainen:
 
@@ -109,26 +109,26 @@ Seuraavassa on muutamia esimerkkejä:
 - *Kentän GUID-arvon selvittäminen ei onnistunut: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Hakua ei löydy: 000056. Kokeile näitä URL-osoitteita ja tarkista, ovatko viitetiedot olemassa: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Kentän GUID-arvon selvittäminen ei onnistunut: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Hakua ei löydy:V24-1 . Kokeile näitä URL-osoitteita ja tarkista, ovatko viitetiedot olemassa: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Jos toimittajaentiteetin rivien **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-kentissä on arvoja, suorita ensimmäinen synkronointi loppuun seuraavien ohjeiden mukaisesti:
+Jos toimittajataulun rivien **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeissa on arvoja, suorita ensimmäinen synkronointi loppuun seuraavien ohjeiden mukaisesti:
 
-1. Poista Finance and Operations -sovelluksessa **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-kentät yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
+1. Poista Finance and Operations -sovelluksessa **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeet yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
 
     1. Valitse **Toimittajat V2 (msdyn\_vendors)** -kaksoiskirjoituksen määrityssivun **Taulujen yhdistämismääritykset** -välilehden vasemmassa suodattimessa **Finance and Operations -sovellukset Toimittajat V2**. Valitse oikeanpuoleisesta suodattimesta **Sales.Vendor**.
-    2. Käytä hakusanaa **primarycontactperson** ja etsi **PrimaryContactPersonId**-lähdekenttä.
+    2. Käytä hakusanaa **primarycontactperson** ja etsi **PrimaryContactPersonId**-lähdesarake.
     3. Valitse ensin **Toiminnot** ja sitten **Poista**.
 
-        ![PrimaryContactPersonId-kentän poistaminen](media/vend_selfref3.png)
+        ![PrimaryContactPersonId-sarakkeen poistaminen](media/vend_selfref3.png)
 
-    4. Poista **InvoiceVendorAccountNumber**-kenttä samalla tavalla.
+    4. Poista **InvoiceVendorAccountNumber**-sarake samalla tavalla.
 
-        ![InvoiceVendorAccountNumber-kentän poistaminen](media/vend-selfref4.png)
+        ![InvoiceVendorAccountNumber-sarakkeen poistaminen](media/vend-selfref4.png)
 
     5. Tallenna yhdistämismäärityksen muutokset.
 
-2. Poista **Toimittajien V2** -entiteetin muutosten seuranta käytöstä.
+2. Poista **Toimittajien V2** -taulun muutosten seuranta käytöstä.
 
     1. Valitse **Tiedonhallinta**-työtilassa **Tietotaulut**-ruutu.
-    2. Valitse **Toimittajat V2**-yksikkö.
+    2. Valitse **Toimittajat V2**-taulu.
     3. Valitse toimintoruudussa **Vaihtoehdot** ja valitse sitten **Muutosten seuranta**.
 
         ![Muutosten seuranta -vaihtoehdon valitseminen](media/selfref_options.png)
@@ -138,14 +138,14 @@ Jos toimittajaentiteetin rivien **PrimaryContactPersonId**- ja **InvoiceVendorAc
         ![Muutosten seurannan käytöstä poistamisen valinta](media/selfref_tracking.png)
 
 3. Suorita **Toimittajat V2 (msdyn\_vendors)** -yhdistämismäärityksen ensimmäinen synkronointi. Ensimmäisen synkronoinnin pitäisi onnistua ilman virheitä.
-4. Suorita **CDS-yhteyshenkilöt V2 (yhteyshenkilöt)** -yhdistämismäärityksen ensimmäinen synkronointi. Tämä yhdistämismääritys on synkronoitava, jos haluat synkronoida toimittajanentiteetin ensisijaisen yhteyshenkilökentän, koska ensimmäinen synkronointi on tehtävä myös yhteyshenkilötaulujen osalta.
-5. Lisää **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-kentät takaisin **Toimittajat V2 (msdyn\_vendors)** -yhdistämismääritykseen ja tallenna yhdistämismääritys sitten.
+4. Suorita **CDS-yhteyshenkilöt V2 (yhteyshenkilöt)** -yhdistämismäärityksen ensimmäinen synkronointi. Tämä yhdistämismääritys on synkronoitava, jos haluat synkronoida toimittajataulun ensisijaisen yhteyshenkilösarakkeen, koska ensimmäinen synkronointi on tehtävä myös yhteyshenkilörivien osalta.
+5. Lisää **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeet takaisin **Toimittajat V2 (msdyn\_vendors)** -yhdistämismääritykseen ja tallenna yhdistämismääritys sitten.
 6. Suorita **Toimittajat V2 (msdyn\_vendors)** -yhdistämismäärityksen ensimmäinen synkronointi uudelleen. Koska muutosten seuranta on poistettu käytöstä, kaikki taulut synkronoidaan.
-7. Ota **Toimittajien V2** -entiteetin muutosten seuranta takaisin käyttöön.
+7. Ota **Toimittajien V2** -taulun muutosten seuranta takaisin käyttöön.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Asiakkaat V3 tileille -taulun yhdistämismäärityksen virheiden ratkaiseminen
 
-**Asiakkaat V3** **tileille**- yhdistämismäärityksessä voi esiintyä ensimmäisen synkronoinnin virheitä, jos tauluissa on aiemmin luotuja rivejä, joiden **ContactPersonID**- ja **InvoiceAccount**-kentissä on arvo. Näiden virheiden syynä on se, että **InvoiceAccount** on itseviittaava kenttä ja **ContactPersonID** on kehäviittaus toimittajan yhdistämismäärityksessä.
+**Asiakkaat V3** **tileille** -yhdistämismäärityksessä voi esiintyä ensimmäisen synkronoinnin virheitä, jos tauluissa on aiemmin luotuja rivejä, joiden **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa on arvo. Näiden virheiden syynä on se, että **InvoiceAccount** on itseviittaava sarake ja **ContactPersonID** on kehäviittaus toimittajan yhdistämismäärityksessä.
 
 Näiden virhesanomien muoto on seuraavanlainen:
 
@@ -156,26 +156,26 @@ Seuraavassa on muutamia esimerkkejä:
 - *Kentän GUID-arvon selvittäminen ei onnistunut: primarycontactid.msdyn\_contactpersonid. Hakua ei löydy: 000056. Kokeile näitä URL-osoitteita ja tarkista, ovatko viitetiedot olemassa: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Kentän GUID-arvon selvittäminen ei onnistunut: msdyn\_billingaccount.accountnumber. Hakua ei löydy: 1206-1. Kokeile näitä URL-osoitteita ja tarkista, ovatko viitetiedot olemassa: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Jos asiakasentiteetin rivien **ContactPersonID**- ja **InvoiceAccount**-kentissä on arvoja, suorita ensimmäinen synkronointi loppuun seuraavien ohjeiden mukaisesti: Tämän menetelmän avulla voit käyttää kaikkia valmiita tauluja, kuten **Tilejä** ja **Yhteyshenkilöitä**.
+Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa on arvoja, suorita ensimmäinen synkronointi loppuun seuraavien ohjeiden mukaisesti: Tämän menetelmän avulla voit käyttää kaikkia valmiita tauluja, kuten **Tilejä** ja **Yhteyshenkilöitä**.
 
-1. Poista Finance and Operations -sovelluksessa **ContactPersonID**- ja **InvoiceAccount** -kentät **Asiakkaat V3 (tilit)** -yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
+1. Poista Finance and Operations -sovelluksessa **ContactPersonID**- ja **InvoiceAccount** -sarakkeissa **Asiakkaat V3 (tilit)** -yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
 
     1. Valitse **Asiakkaat V3 (tilit)** -kaksoiskirjoituksen määrityssivun **Taulujen yhdistämismääritykset** -välilehden vasemmassa suodattimessa **Finance and Operations -sovellukset. Asiakkaat V3**. Valitse oikeanpuoleisesta suodattimesta **Dataverse.Account**.
-    2. Käytä hakusanaa **contactperson** ja etsi **ContactPersonID** lähdekenttä.
+    2. Käytä hakusanaa **contactperson** ja etsi **ContactPersonID** lähdesarake.
     3. Valitse ensin **Toiminnot** ja sitten **Poista**.
 
-        ![ContactPersonID-kentän poistaminen](media/cust_selfref3.png)
+        ![ContactPersonID-sarakkeen poistaminen](media/cust_selfref3.png)
 
-    4. Poista **InvoiceAccount**-kenttä samalla tavalla.
+    4. Poista **InvoiceAccount**-sarake samalla tavalla.
 
-        ![InvoiceAccount-kentän poistaminen](media/cust_selfref4.png)
+        ![InvoiceAccount-sarakkeen poistaminen](media/cust_selfref4.png)
 
     5. Tallenna yhdistämismäärityksen muutokset.
 
-2. Poista **Toimittajien V3** -entiteetin muutosten seuranta käytöstä.
+2. Poista **Toimittajien V3** -taulun muutosten seuranta käytöstä.
 
     1. Valitse **Tiedonhallinta**-työtilassa **Tietotaulut**-ruutu.
-    2. Valitse **Asiakkaat V3**-yksikkö.
+    2. Valitse **Asiakkaat V3** -taulu.
     3. Valitse toimintoruudussa **Vaihtoehdot** ja valitse sitten **Muutosten seuranta**.
 
         ![Muutosten seuranta -vaihtoehdon valitseminen](media/selfref_options.png)
@@ -190,7 +190,7 @@ Jos asiakasentiteetin rivien **ContactPersonID**- ja **InvoiceAccount**-kentiss�
     > [!NOTE]
     > Kahdella yhdistämismäärityksellä on sama nimi. Varmista, että valitse yhdistämismäärityksen, jonka **Tiedot**-välilehdessä on seuraava kuvaus: **Kaksoiskirjoitusmalli synkronointiin FO.CDS Toimittajayhteyshenkilöiden V2 ja CDS.Contacts välillä. Tarvitaan uusi paketti \[Dynamics365SupplyChainExtended\].**
 
-5. Lisää **InvoiceAccount**- ja **ContactPersonId** -kentät takaisin **Asiakkaat V3 (tilit)** -yhdistämismääritykseen ja tallenna sitten yhdistämismääritys. Sekä **InvoiceAccount**- että **ContactPersonId**-kenttä ovat nyt taas synkronoinnin live-tilan osa. Seuraavassa vaiheessa tehdään näiden kenttien ensimmäinen synkronointi.
+5. Lisää **InvoiceAccount**- ja **ContactPersonId** -sarakkeet takaisin **Asiakkaat V3 (tilit)** -yhdistämismääritykseen ja tallenna sitten yhdistämismääritys. Sekä **InvoiceAccount**- että **ContactPersonId**-sarakkeet ovat nyt taas synkronoinnin live-tilan osa. Seuraavassa vaiheessa tehdään näiden sarakkeiden ensimmäinen synkronointi.
 6. Suorita uudelleen **Asiakkaat V3 (tilit)** -yhdistämismäärityksen ensimmäinen synkronointi. Koska muutosten seuranta on poistettu käytöstä, **InvoiceAccount**- ja **ContactPersonId** -tiedot synkronoidaan Finance and Operations -sovelluksesta Dataverse en.
 7. **InvoiceAccount**- ja **ContactPersonId** -tietojen synkronoinnissa Dataversesta Finance and Operations -sovelluksiin on käytettävä tietojen integrointiprojektia.
 
@@ -210,7 +210,4 @@ Jos asiakasentiteetin rivien **ContactPersonID**- ja **InvoiceAccount**-kentiss�
 
     Rivien ensimmäinen synkronointi on nyt valmis.
 
-8. Ota muutosten seuranta taas käyttöön Finance and Operations -sovelluksen **Asiakkaat V3** -entiteetissä.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. Ota muutosten seuranta taas käyttöön Finance and Operations -sovelluksen **Asiakkaat V3** -taulussa.
