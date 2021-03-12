@@ -11,53 +11,52 @@ ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fc4fc51955544df4d0156a4c83bcc5b5a0e13df3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8679a729dc17e3ee85468b459da3956a92160ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427447"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974057"
 ---
-# <a name="reconcile-freight-manually"></a><span data-ttu-id="71c76-103">Rahdin manuaalinen täsmäytys</span><span class="sxs-lookup"><span data-stu-id="71c76-103">Reconcile freight manually</span></span>
+# <a name="reconcile-freight-manually"></a><span data-ttu-id="41951-103">Rahdin manuaalinen täsmäytys</span><span class="sxs-lookup"><span data-stu-id="41951-103">Reconcile freight manually</span></span>
 
-<span data-ttu-id="71c76-104">[!include [banner](../../includes/banner.md)]]</span><span class="sxs-lookup"><span data-stu-id="71c76-104">[!include [banner](../../includes/banner.md)]]</span></span>
+<span data-ttu-id="41951-104">[!include [banner](../../includes/banner.md)]]</span><span class="sxs-lookup"><span data-stu-id="41951-104">[!include [banner](../../includes/banner.md)]]</span></span>
 
-<span data-ttu-id="71c76-105">Tässä menettelyssä kuvataan, miten rahti täsmäytetään manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="71c76-105">This procedure shows how to reconcile freight manually.</span></span> <span data-ttu-id="71c76-106">Kuljetuskoordinaattori tekee tämän yleensä.</span><span class="sxs-lookup"><span data-stu-id="71c76-106">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="71c76-107">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="71c76-107">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="41951-105">Tässä menettelyssä kuvataan, miten rahti täsmäytetään manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="41951-105">This procedure shows how to reconcile freight manually.</span></span> <span data-ttu-id="41951-106">Kuljetuskoordinaattori tekee tämän yleensä.</span><span class="sxs-lookup"><span data-stu-id="41951-106">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="41951-107">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="41951-107">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-load-to-reconcile"></a><span data-ttu-id="71c76-108">Valitse täsmäytettävä kuorma</span><span class="sxs-lookup"><span data-stu-id="71c76-108">Select a load to reconcile</span></span>
-1. <span data-ttu-id="71c76-109">Valitse Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila.</span><span class="sxs-lookup"><span data-stu-id="71c76-109">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="71c76-110">Poista Piilota toimitettu ja vastaanotettu -valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="71c76-110">Clear the Hide shipped and received check box.</span></span> 
-3. <span data-ttu-id="71c76-111">Valitse luettelossa kuorma, jonka tunnus on 00006.</span><span class="sxs-lookup"><span data-stu-id="71c76-111">In the list, select the load that has load ID 00006.</span></span>
+## <a name="select-a-load-to-reconcile"></a><span data-ttu-id="41951-108">Valitse täsmäytettävä kuorma</span><span class="sxs-lookup"><span data-stu-id="41951-108">Select a load to reconcile</span></span>
+1. <span data-ttu-id="41951-109">Valitse Kuljetustenhallinta > Suunnittelu > Kuormasuunnittelun työtila.</span><span class="sxs-lookup"><span data-stu-id="41951-109">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="41951-110">Poista Piilota toimitettu ja vastaanotettu -valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="41951-110">Clear the Hide shipped and received check box.</span></span> 
+3. <span data-ttu-id="41951-111">Valitse luettelossa kuorma, jonka tunnus on 00006.</span><span class="sxs-lookup"><span data-stu-id="41951-111">In the list, select the load that has load ID 00006.</span></span>
 
-## <a name="create-a-carrier-invoice"></a><span data-ttu-id="71c76-112">Luo kuljettajan lasku</span><span class="sxs-lookup"><span data-stu-id="71c76-112">Create a carrier invoice</span></span>
-<span data-ttu-id="71c76-113">Jos rahti täsmäytetään manuaalisesti ja et vastaanota kuljettajan laskuja automaattisesti, voit luoda laskun rahtilaskun perusteella.</span><span class="sxs-lookup"><span data-stu-id="71c76-113">If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.</span></span>  
-1. <span data-ttu-id="71c76-114">Valitse Aiheeseen liittyviä tietoja.</span><span class="sxs-lookup"><span data-stu-id="71c76-114">Click Related information.</span></span>
-2. <span data-ttu-id="71c76-115">Valitse Rahtilaskun tiedot.</span><span class="sxs-lookup"><span data-stu-id="71c76-115">Click Freight bill details.</span></span>
-3. <span data-ttu-id="71c76-116">Valitse Luo rahtilasku.</span><span class="sxs-lookup"><span data-stu-id="71c76-116">Click Generate freight bill invoice.</span></span>
-4. <span data-ttu-id="71c76-117">Kirjoita Lasku-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="71c76-117">In the Invoice field, type a value.</span></span>
-5. <span data-ttu-id="71c76-118">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="71c76-118">Click OK.</span></span>
+## <a name="create-a-carrier-invoice"></a><span data-ttu-id="41951-112">Luo kuljettajan lasku</span><span class="sxs-lookup"><span data-stu-id="41951-112">Create a carrier invoice</span></span>
+<span data-ttu-id="41951-113">Jos rahti täsmäytetään manuaalisesti ja et vastaanota kuljettajan laskuja automaattisesti, voit luoda laskun rahtilaskun perusteella.</span><span class="sxs-lookup"><span data-stu-id="41951-113">If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.</span></span>  
+1. <span data-ttu-id="41951-114">Valitse Aiheeseen liittyviä tietoja.</span><span class="sxs-lookup"><span data-stu-id="41951-114">Click Related information.</span></span>
+2. <span data-ttu-id="41951-115">Valitse Rahtilaskun tiedot.</span><span class="sxs-lookup"><span data-stu-id="41951-115">Click Freight bill details.</span></span>
+3. <span data-ttu-id="41951-116">Valitse Luo rahtilasku.</span><span class="sxs-lookup"><span data-stu-id="41951-116">Click Generate freight bill invoice.</span></span>
+4. <span data-ttu-id="41951-117">Kirjoita Lasku-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="41951-117">In the Invoice field, type a value.</span></span>
+5. <span data-ttu-id="41951-118">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="41951-118">Click OK.</span></span>
 
-## <a name="reconcile-the-invoice"></a><span data-ttu-id="71c76-119">Täsmäytä lasku</span><span class="sxs-lookup"><span data-stu-id="71c76-119">Reconcile the invoice</span></span>
-<span data-ttu-id="71c76-120">Kuljettajan lasku ja rahtilasku täsmäytetään rivi kerrallaan.</span><span class="sxs-lookup"><span data-stu-id="71c76-120">When you reconcile a carrier invoice and a freight bill, this is done line by line.</span></span>  
-1. <span data-ttu-id="71c76-121">Valitse Täsmäytä rahtilaskut ja laskut.</span><span class="sxs-lookup"><span data-stu-id="71c76-121">Click Match freight bills and invoices.</span></span>
-2. <span data-ttu-id="71c76-122">Laajenna Laskun tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="71c76-122">Expand the Invoice details section.</span></span>
-3. <span data-ttu-id="71c76-123">Laajenna Täsmäyttämättömän rahtilaskun tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="71c76-123">Expand the Unmatched freight bill details section.</span></span>
-4. <span data-ttu-id="71c76-124">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="71c76-124">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="71c76-125">Valitse Täsmäytä.</span><span class="sxs-lookup"><span data-stu-id="71c76-125">Click Match.</span></span>
-6. <span data-ttu-id="71c76-126">Laajenna Täsmäytetyn rahtilaskun tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="71c76-126">Expand the Matched freight bill details section.</span></span>
+## <a name="reconcile-the-invoice"></a><span data-ttu-id="41951-119">Täsmäytä lasku</span><span class="sxs-lookup"><span data-stu-id="41951-119">Reconcile the invoice</span></span>
+<span data-ttu-id="41951-120">Kuljettajan lasku ja rahtilasku täsmäytetään rivi kerrallaan.</span><span class="sxs-lookup"><span data-stu-id="41951-120">When you reconcile a carrier invoice and a freight bill, this is done line by line.</span></span>  
+1. <span data-ttu-id="41951-121">Valitse Täsmäytä rahtilaskut ja laskut.</span><span class="sxs-lookup"><span data-stu-id="41951-121">Click Match freight bills and invoices.</span></span>
+2. <span data-ttu-id="41951-122">Laajenna Laskun tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="41951-122">Expand the Invoice details section.</span></span>
+3. <span data-ttu-id="41951-123">Laajenna Täsmäyttämättömän rahtilaskun tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="41951-123">Expand the Unmatched freight bill details section.</span></span>
+4. <span data-ttu-id="41951-124">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="41951-124">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="41951-125">Valitse Täsmäytä.</span><span class="sxs-lookup"><span data-stu-id="41951-125">Click Match.</span></span>
+6. <span data-ttu-id="41951-126">Laajenna Täsmäytetyn rahtilaskun tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="41951-126">Expand the Matched freight bill details section.</span></span>
 
-## <a name="submit-the-invoice-for-approval"></a><span data-ttu-id="71c76-127">Lähetä lasku hyväksyttäväksi</span><span class="sxs-lookup"><span data-stu-id="71c76-127">Submit the invoice for approval</span></span>
-1. <span data-ttu-id="71c76-128">Valitse Lähetä hyväksyttäväksi.</span><span class="sxs-lookup"><span data-stu-id="71c76-128">Click Submit for approval.</span></span>
-2. <span data-ttu-id="71c76-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="71c76-129">Close the page.</span></span>
-3. <span data-ttu-id="71c76-130">Poista Piilota hyväksytyt -valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="71c76-130">Clear the Hide approved check box.</span></span> 
-4. <span data-ttu-id="71c76-131">Valitse Toimittajan laskun kirjauskansiot.</span><span class="sxs-lookup"><span data-stu-id="71c76-131">Click Vendor invoice journals.</span></span>
-5. <span data-ttu-id="71c76-132">Avaa Viitekirjauskansion numero -kentän linkki napsauttamalla.</span><span class="sxs-lookup"><span data-stu-id="71c76-132">Click to follow the link in the Reference journal number field.</span></span>
-6. <span data-ttu-id="71c76-133">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="71c76-133">Click Lines.</span></span>
+## <a name="submit-the-invoice-for-approval"></a><span data-ttu-id="41951-127">Lähetä lasku hyväksyttäväksi</span><span class="sxs-lookup"><span data-stu-id="41951-127">Submit the invoice for approval</span></span>
+1. <span data-ttu-id="41951-128">Valitse Lähetä hyväksyttäväksi.</span><span class="sxs-lookup"><span data-stu-id="41951-128">Click Submit for approval.</span></span>
+2. <span data-ttu-id="41951-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="41951-129">Close the page.</span></span>
+3. <span data-ttu-id="41951-130">Poista Piilota hyväksytyt -valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="41951-130">Clear the Hide approved check box.</span></span> 
+4. <span data-ttu-id="41951-131">Valitse Toimittajan laskun kirjauskansiot.</span><span class="sxs-lookup"><span data-stu-id="41951-131">Click Vendor invoice journals.</span></span>
+5. <span data-ttu-id="41951-132">Avaa Viitekirjauskansion numero -kentän linkki napsauttamalla.</span><span class="sxs-lookup"><span data-stu-id="41951-132">Click to follow the link in the Reference journal number field.</span></span>
+6. <span data-ttu-id="41951-133">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="41951-133">Click Lines.</span></span>
 
