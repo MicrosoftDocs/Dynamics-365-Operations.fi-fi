@@ -3,7 +3,7 @@ title: Prospektista käteiseksi -kaksoiskirjoitus
 description: Tässä ohjeaiheessa on tietoja prospektista käteiseksi -kaksoiskirjoituksesta.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683644"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959598"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
@@ -37,6 +37,11 @@ Sovellusliittymissä voit käyttää käsittelyn tiloja ja laskun tietoja reaali
 
 ![Prospektista käteiseksi -kaksoiskirjoituksen tietovirta](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+Lisätietoja asiakkaan ja yhteyshenkilön integroinnista on kohdassa [Integroidut asiakkaan päätiedot](customer-mapping.md). Lisätietoja tuotteen integroinnista on kohdassa [Yhtenäinen tuotekokemus](product-mapping.md).
+
+> [!NOTE]
+> Dynamics 365 Salesissa sekä prospekti että asiakas viittaa tietueeseen **Tili**-taulussa, jossa **RelationshipType**-sarake on joko **Prospekti** tai **Asiakas**. Jos liiketoimintalogiikka sisältää **Tili**-hyväksyntäprosessin, jossa **Tili**-tietue luodaan ja hyväksytään ensin prospektiksi ja sitten asiakkaaksi, kyseinen tietue synkronoituu Finance and Operations -sovellukseen vasta, kun se on asiakas (`RelationshipType=Customer`). Jos **Tili**-rivi halutaan synkronoida prospektina, prospektin tietojen integrointiin tarvitaan mukautettu yhdistämismääritys.
+
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
 Ennen kuin voit synkronoida myyntitarjoukset, sinun on päivitettävä seuraavat asetukset.
@@ -46,11 +51,11 @@ Ennen kuin voit synkronoida myyntitarjoukset, sinun on päivitettävä seuraavat
 Siirry Salesissa kohtaan **Asetukset \> Hallinta \> Järjestelmäasetukset \> Sales** ja varmista, että käytetään seuraavia asetuksia:
 
 - **Käytä järjestelmän hinnanlaskentaa** -järjestelmäasetuksen arvoksi on määritetty **Kyllä**.
-- **Alennuksen laskutapa** -kentän arvoksi on määritetty **Rivinimike**.
+- **Alennuksen laskutapa** -sarakkeen arvoksi on määritetty **Rivinimike**.
 
 ### <a name="sites-and-warehouses"></a>Sivustot ja varastot
 
-Supply Chain Managementissa **Sivusto**- ja **Varasto**-kentät ovat pakollisia tarjous- ja tilausriveille. Jos määrität sivuston ja varaston oletustilausasetuksissa, nämä kentät määritetään automaattisesti, kun lisäät tuotteen tarjous- tai tilausriville. 
+Supply Chain Managementissa **Sivusto**- ja **Varasto**-sarakkeet ovat pakollisia tarjous- ja tilausriveille. Jos määrität sivuston ja varaston oletustilausasetuksissa, nämä sarakkeet määritetään automaattisesti, kun lisäät tuotteen tarjous- tai tilausriville. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Tarjousten ja tilausten numerosarjat
 
@@ -62,9 +67,9 @@ Ajatellaan, että Supply Chain Managementin numerosarja on **1, 2, 3, 4, 5, ...*
 
 Myyntitarjoukset luodaan Salesissa tai Supply Chain Managementissa. Jos luot tarjouksen Salesissa, se synkronoidaan Supply Chain Managementiin reaaliajassa. Samoin, jos luot tarjouksen Supply Chain Managementissa, se synkronoidaan Salesiin reaaliajassa. Huomaa seuraavat seikat:
 
-+ Voit lisätä tarjouksen tuotteeseen alennuksen. Tässä tapauksessa alennus synkronoidaan Supply Chain Managementiin. Otsikon **Alennus**-, **Veloitukset**- ja **Vero**-kenttien hallinta perustuu Supply Chain Managementin määrityksiin. Tämä määritys ei tue integrointimääritystä. Sen sijaan **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-kenttiä ylläpidetään ja käsitellään Supply Chain Managementissa.
-+ Myyntitarjouksen otsikon vain luku -kenttiä ovat **Alennusprosentti**, **Alennus** ja **Rahdin summa**.
-+ **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-kentät eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden kenttien määrittämistä varten on määritettävä arvomääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä yksikkö synkronoidaan.
++ Voit lisätä tarjouksen tuotteeseen alennuksen. Tässä tapauksessa alennus synkronoidaan Supply Chain Managementiin. Otsikon **Alennus**-, **Veloitukset**- ja **Vero**-sarakkeiden hallinta perustuu Supply Chain Managementin määrityksiin. Tämä määritys ei tue integrointimääritystä. Sen sijaan **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-sarakkeita ylläpidetään ja käsitellään Supply Chain Managementissa.
++ Myyntitarjouksen otsikon vain luku -sarakkeita ovat **Alennusprosentti**, **Alennus** ja **Rahdin summa**.
++ **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-sarakkeet eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden sarakkeiden määrittämistä varten on määritettävä arvon yhdistämismääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä taulu synkronoidaan.
 
 Jos käytät myös Field Service -ratkaisua, muista ottaa **Tarjousrivin pikakäynnistys** -parametri uudelleen käyttöön. Kun parametri otetaan uudelleen käyttöön, voit jatkaa tarjousrivien luomista pikaluontitoiminnon avulla.
 1. Siirry Dynamics 365 Sales -sovellukseen.
@@ -82,7 +87,7 @@ Myyntitilaukset luodaan Salesissa tai Supply Chain Managementissa. Jos luot myyn
 + Alennuksen laskeminen ja pyöristäminen:
 
     - Salesin alennuksen laskentamalli on erilainen kuin Supply Chain Managementin alennuksen laskentamalli. Supply Chain Managementissa myyntirivin lopullinen alennussumma voi olla alennussummien ja alennusprosenttien yhdistelmän tulos. Jos tämä lopullinen alennussumma jaetaan rivin määrällä, tulos saatetaan pyöristää. Pyöristystä ei kuitenkaan tehdä, jos pyöristetty yksikkökohtainen alennussumma synkronoidaan Salesiin. Voit varmistaa, että Supply Chain Management -myyntirivin koko alennussumma synkronoidaan oikein Salesiin, kun koko summa synkronoidaan ilman, että sitä jaetaan rivimäärällä. Tämän vuoksi Salesin Alennuksen laskutapa -kohdan arvoksi on määritettävä **Rivinimike**.
-    - Kun myyntitilausrivi synkronoidaan Salesista Supply Chain Managementiin, käytetään koko rivin alennussummaa. Koska Supply Chain Managementissa ei ole kenttää, johon rivin koko alennussumman voisi tallentaa, summa jaetaan määrällä ja tallennetaan **Rivialennus**-kenttään. Kaikki tässä divisioonassa tapahtuva pyöristys tallennetaan myyntirivin **Myyntikulut**-kenttään.
+    - Kun myyntitilausrivi synkronoidaan Salesista Supply Chain Managementiin, käytetään koko rivin alennussummaa. Koska Supply Chain Managementissa ei ole saraketta, johon rivin koko alennussumman voisi tallentaa, summa jaetaan määrällä ja tallennetaan **Rivialennus**-sarakkeeseen. Kaikki tässä divisioonassa tapahtuva pyöristys tallennetaan myyntirivin **Myyntikulut**-sarakkeeseen.
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>Esimerkki: Synkronointi Salesista Supply Chain Managementiin
 
@@ -98,7 +103,7 @@ Jos synkronoit Supply Chain Managementista Salesiin, saat seuraavan tuloksen:
 
 ## <a name="dual-write-solution-for-sales"></a>Kaksoiskirjoitusratkaisu Salesia varten
 
-**Tilaus**-yksikköön on lisätty uusia kenttiä, jotka näkyvät sivulla. Useimmat näistä kentistä näkyvät Salesin **Integrointi**-välilehdessä. Lisätietoja tilakenttien yhdistämismääriyksistä on kohdassa [Myyntitilausten tilakenttien yhdistämismäärityksen määrittäminen](sales-status-map.md).
+**Tilaus**-tauluun on lisätty uusia sarakkeita, jotka näkyvät sivulla. Useimmat näistä sarakkeista näkyvät Salesin **Integrointi**-välilehdessä. Lisätietoja tilasarakkeiden yhdistämismääriyksistä on kohdassa [Myyntitilausten tilasarakkeiden yhdistämismäärityksen määrittäminen](sales-status-map.md).
 
 + **Luo lasku**- ja **Peruuta tilaus** -painikkeet piilotetaan Salesin **Myyntitilaus**-sivulla.
 + **Myyntitilauksen tila** -arvo pysyy **aktiivisena**, jotta muutokset Supply Chain Managementista siirtyvät Salesin myyntitilaukseen. Voit ohjata tätä toimintaa määrittämällä **Tilakoodi \[Tila\]** -arvoksi **Aktiivinen**.
@@ -107,18 +112,18 @@ Jos synkronoit Supply Chain Managementista Salesiin, saat seuraavan tuloksen:
 
 Myyntilaskut luodaan Supply Chain Managementissa ja synkronoidaan Salesiin. Huomaa seuraavat seikat:
 
-+ **Laskun numero** -kenttä on lisätty **Lasku**-yksikköön. Se näkyy sivulla.
++ **Laskun numero** -sarake on lisätty **Lasku**-tauluun. Se näkyy sivulla.
 + **Myyntitilaus**-sivun **Luo lasku** -painike on piilotettu, koska laskut luodaan Supply Chain Managementissa, josta ne synkronoidaan Salesiin. **Lasku**-sivua ei voi muokata, sillä laskut synkronoidaan Supply Chain Managementista.
 + **Myyntitilauksen tila** -arvo muuttuu automaattisesti **Laskutettu**-tilaksi, kun liittyvä lasku on synkronoitu Supply Chain Managementista Salesiin. Lisäksi laskun omistajaksi määritetään sen myyntitilauksen omistaja, josta lasku on muodostettu. Tämän vuoksi myyntitilauksen omistaja voi tarkastella laskua.
-+ **Kuljetusehdot**-, **Toimitusehdot**- ja **Toimitustila**-kenttiä ei lisätä oletusarvoisiin yhdistämismäärityksiin. Näiden kenttien määrittämistä varten on määritettävä arvomääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä yksikkö synkronoidaan.
++ **Kuljetusehdot**-, **Toimitusehdot**- ja **Toimitustila**-sarakkeita ei lisätä oletusarvoisiin yhdistämismäärityksiin. Näiden sarakkeiden määrittämistä varten on määritettävä arvon yhdistämismääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä taulu synkronoidaan.
 
 ## <a name="templates"></a>Mallit
 
 Prospektista käteiseksi -toiminto sisältää perustaulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-| Finance and Operations -sovellukset | Dynamics 365:n mallipohjaiset sovellukset | kuvaus |
+| Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset | kuvaus |
 |-----------------------------|-----------------------------------|-------------|
-| Myyntilaskun otsikot V2    | laskut                          |             |
+| Myyntilaskun otsikot V2    | laskut                          | Finance and Operations -sovelluksen Myyntilaskun otsikot V2 -taulu sisältää myyntitilausten laskut ja vapaatekstilaskut. Dataversessa käytetään kaksoiskirjoituksen suodatinta, joka suodattaa pois vapaatekstilaskuasiakirjat. |
 | Myyntilaskun rivit V2      | invoicedetails                    |             |
 | CDS-myyntitilauksien otsikot     | salesorders                       |             |
 | CDS-myyntitilausrivit       | salesorderdetails                 |             |
@@ -135,6 +140,11 @@ Tässä ovat prospektista käteiseksi -toiminnon liittyvät perustaulukartat.
 + [Kaikki tuotteet kohteeseen msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Hinnasto](product-mapping.md)
 
+## <a name="limitations"></a>Rajoitukset
+- Palautustilauksia ei tueta.
+- Hyvityslaskuja ei tueta.
+- Taloushallinnon dimensiot on määritettävä päätiedoille, kuten asiakkaalle ja toimittajalle. Kun asiakas lisätään tarjoukseen tai myyntitilaukseen, asiakastietueeseen liitetyt taloushallinnon dimensiot siirtyvät automaattisesti tilaukseen. Kaksoiskirjoitus ei sisällä tällä hetkellä päätietojen taloushallinnon dimensioiden tietoja. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Tässä ovat prospektista käteiseksi -toiminnon liittyvät perustaulukartat.
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

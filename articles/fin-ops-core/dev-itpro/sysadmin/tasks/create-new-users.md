@@ -3,7 +3,7 @@ title: Uusien käyttäjien luominen
 description: Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen.
 author: peakerbl
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,46 +15,69 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f861b7493d039b332358be7df7d0198cbadcb7a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679837"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878654"
 ---
 # <a name="create-new-users"></a>Uusien käyttäjien luominen
 
 [!include [banner](../../includes/banner.md)]
 
-Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen.
+Ennen kuin Finance and Operations -sovellukset ovat käytettävissä, käyttäjä on lisättävä **Käyttäjät**-sivulle (**Järjestelmän hallinta \> Käyttäjät \> Käyttäjät**). Käyttäjät voivat organisaation sisäisiä työntekijöitä tai ulkoisia asiakkaita ja toimittajia. Käyttäjät voidaan tuoda tai lisätä manuaalisesti. Kaikilla käyttäjillä on oltava oikeanlaiset käyttöoikeudet.
 
-## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Käyttäjän liittäminen käyttöoikeuteen (vain uudet käyttöoikeustyypit)
-Sellaisten asiakkaiden käyttäjiin, joilla on jokin lokakuussa 2019 lisätyistä uusista käyttöoikeustyypeistä, on liitettävä käyttöoikeus. Käyttöoikeuteen liitetyt käyttäjät lisätään roolittomina järjestelmäkäyttäjinä, kun he kirjautuvat sisään ensimmäisen kerran.
+Lisätietoja Finance and Operations -sovellusten käyttöoikeuksien ostamisesta ja myöntämisestä on [Microsoft Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
+## <a name="assign-a-license-to-a-user"></a>Käyttöoikeuden määrittäminen käyttäjälle
 Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) [Microsoft 365 -hallintakeskuksessa](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
-## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Ulkoisen käyttäjän liittäminen käyttöoikeuteen (vain uudet käyttöoikeustyypit)
-Sen vuokraajan ulkopuolisten käyttäjien, jolla ympäristö otettiin käyttöön, on oltava edustettuna isännän vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta käyttäjille voidaan myöntää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Ulkoisen käyttäjän lisääminen Azure AD:ssa ja käyttöoikeuden määrittäminen 
+Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Finance and Operations -sovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:ta. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
-## <a name="add-a-new-user"></a>Lisää uusi käyttäjä
-1. Valitse **Järjestelmänvalvojat \> Käyttäjät \> Käyttäjät**.
-2. Valitse toimintoruudussa **Uusi**.
-3. Anna käyttäjän yksilöivä tunnus **Käyttäjätunnus**-kenttään. Käyttäjätunnus on pakollinen.  
-4. Kirjoita käyttäjän nimi **Käyttäjän nimi** -kenttään toimittajan nimi.  
-5. Kirjoita käyttäjän toimialue **Toimialue**-kenttään.  
-6. Kirjoita käytättäjän alias **Alias**-kenttään.  
-7. Valitse yritys **Yritys**-kentässä. 
-8. Määritä käyttöoikeusroolit käyttäjille valitsemalla **Käyttäjän rooli** -pikavälilehdessä **Määritä rooleja**. Lisätietoja on kohdassa [Käyttäjien määrittäminen käyttöoikeusrooleille](assign-users-security-roles.md).
-9. Valitse **OK**.
-10. Valitse **Tallenna**.
-
-## <a name="import-users"></a>Tuo käyttäjiä
-1. Valitse **Järjestelmänvalvojat \> Käyttäjät \> Käyttäjät**.
+## <a name="import-new-users-from-azure-ad"></a>Uusien käyttäjien tuominen Azure AD:sta 
+1. Valitse **Järjestelmän hallinta** \> **Käyttäjät** \> **Käyttäjät**.
 2. Valitse toimintoruudussa **Tuo käyttäjiä**.
-3. Merkitse valittu rivi luettelossa.
+3. Valitse tuotavat käyttäjät. Luettelo Azure AD -käyttäjät, jotka eivät ole tällä hetkellä käyttäjiä tässä ympäristössä.
 4. Valitse **Tuo käyttäjiä**.
 5. Valitse **Sulje**.
 
+> [!NOTE]
+> **Yritys**-kentän arvo perustuu järjestelmänvalvojan nykyisen istunnon yritykseen. Tuonnin jälkeen on määritettävä soveltuvat roolit ja organisaatiot. Lisätietoja on kohdassa [Käyttäjien määrittäminen käyttöoikeusrooleille](assign-users-security-roles.md). Ehdollisesti voidaan myös edellyttää, että käyttäjään liitetään **Henkilö** ja että käyttäjän asetukset, kuten kieli, päivitetään.
 
+## <a name="manually-add-a-new-user"></a>Uuden käyttäjän lisääminen manuaalisesti
+1. Valitse **Järjestelmän hallinta** \> **Käyttäjät** \> **Käyttäjät**.
+2. Valitse toimintoruudussa **Uusi**.
+3. Anna käyttäjän yksilöivä tunnus **Käyttäjätunnus**-kenttään.   
+4. Kirjoita käyttäjän nimi **Käyttäjän nimi** -kenttään toimittajan nimi.  
+5. **Palvelu**-kenttä:
+ - Käytä sisäisille käyttäjille oletusarvoa. Esimerkki: Azure AD -vuokraaja, jolla etuliitteenä https://sts.windows.net/.  
+ - Anna muille kuin Azure AD -käyttäjille, kuten Palvelusta palveluun -tileille, perustekstiarvo. Esimerkki: Ei saatavana. Tämä arvo auttaa estämään virheelliset todennuskutsut, jotka voivat aiheuttaa virheitä, jos käytetty käyttäjätietopalvelun arvo on virheellinen.  
+ - Lisää ulkoisten käyttäjien tai vieraskäyttäjien Azure AD -vuokraajan nimi merkkijonon https://sts.windows.net/ jälkeen.
+6. Kirjoita **Sähköpostiosoite**-kenttään täydellinen sähköpostiosoite tai käyttäjätunnus.  
+7. Valitse **Yritys**-kentässä käyttäjän oletusaloitusyritys. 
+8. Valitse **Tallenna**.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Käyttäjätietopalvelun ja telemetriatunnuksen arvot päivitetään [Microsoft graph](https://docs.microsoft.com/graph/overview) -kutsun perusteella, kun käyttäjätietue tallennetaan. Telemetriatunnus perustuu käyttäjän objektitunnukseen tai suojaustunnukseen (SID) Azure AD:ssa.
+
+> [!NOTE]
+> Soveltuvat rooli ja organisaatiot on määritettävä sen jälkeen, kun käyttäjä on lisätty. Lisätietoja on kohdassa [Käyttäjien määrittäminen käyttöoikeusrooleille](assign-users-security-roles.md). Ehdollisesti voidaan myös edellyttää, että käyttäjään liitetään **Henkilö** ja että **Käyttäjän asetukset**, kuten kieli, päivitetään.
+
+## <a name="change-a-user-id"></a>Käyttäjätunnuksen vaihtaminen
+Käyttäjätunnuksen vaihtaminen edellyttää, että avain nimetään uudelleen tietokannassa. Kun käyttäjätunnus vaihdetaan tällä menetelmällä, kaikki liittyvät käyttäjän asetukset muokataan käyttämään uutta käyttäjätunnusta. Esimerkiksi **SysLastValue**-taulukon käyttötiedot päivitetään käyttämään uutta käyttäjätunnusta.
+
+> [!NOTE]
+> Käyttäjätunnus on käyttäjätietotaulun ensisijainen avain. Aiemmin luotujen käyttäjien ensisijaisen avaimen nimeäminen uudelleen vie jonkin aikaa, koska myös kaikki viittaukset avaimeen päivitetään tietokannassa. 
+
+1. Valitse **Järjestelmänvalvojat \> Käyttäjät \> Käyttäjät**.
+2. Valitse ensin käyttäjä luettelossa ja valitse sitten **Vaihtoehdot \> Tietueen tiedot**.
+3. Valitse **Nimeä uudelleen**.
+4. Anna käyttäjätunnukselle uusi ja yksilöivä arvo ja valitse sitten **OK**: 
+5. Vahvista valitsemalla **Kyllä**.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+Lisätietoja yritystenvälisten käyttäjien käyttöönottovaihtoehdoista on kohdassa [Yritystenvälisten käyttäjien vieminen Azure AD:hen](../implement-b2b.md).
+
+Lisätietoja esimääritetyistä järjestelmätileistä on kohdassa [Esimääritetyt järjestelmätilit](../pre-configured-system-accounts.md).

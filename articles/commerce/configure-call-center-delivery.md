@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411876"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963107"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Määritä puhelinkeskuksen toimitustavat ja kulut
 
@@ -95,6 +94,3 @@ Halutessasi voit linkittää kaikkiin toimitustapoihin nopeutuskoodin. Tätä ko
 Esimerkiksi tilauksille, jotka toimitetaan seuraavana päivänä lentorahtina, keräys on tehtävä varastossa kello 23 päivittäin. Tässä tapauksessa nopeutuskoodi voidaan luoda ja koodi voidaan linkittää kaikkiin seuraavan päivän toimitustapoihin, jotka on määritetty järjestelmässä. Kun varasto luo keräilyaallon, soveltuvaa nopeutuskoodia **Nopeuta**-kentässä voidaan käyttää suodattimena siten, että keräily suoritetaan vain tilauksille, joilla on toimitustapa, joka on linkitetty tähän koodiin.
 
 Lisäksi, kun luodaan puhelinkekuksen tilaus, kun nopeutuskoodia voidaan manuaalisesti käyttää joko myyntitilauksen otsikkoon tai yksittäiseen myyntitilausriviin. Edelleen tätä koodia voidaan käyttää lajitteluun ja raportointiin. Joskus tilausta on käsiteltävä huolellisesti asiakaspalvelun ongelman vuoksi. Tässä tapauksessa tietty nopeutusvoidaan ottaa käyttöön tilauksen otsikossa tai riveillä, jotta tilaus voidaan tunnistaa ja priorisoida tilauslupausta toteutettaessa.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

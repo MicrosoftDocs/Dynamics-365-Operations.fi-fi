@@ -3,7 +3,7 @@ title: DATETIMEFORMAT ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) DATETIMEFORMAT-funktiota käytetään.
 author: NickSelin
 manager: kfend
-ms.date: 12/03/2019
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d42767b814f36eb75b4a43d07c663b2dd1b2c879
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 90bd2900434b1be509f72ec82375e52ea32bc424
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684951"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4825370"
 ---
 # <a name="datetimeformat-er-function"></a>DATETIMEFORMAT ER-funktio
 
@@ -52,19 +52,22 @@ Päivämäärä-/aika-arvo, joka vastaa muokattavaa päivämäärää ja aikaa.
 
 Tulostusmerkkijonon muoto
 
+> [!NOTE]
+> Muodon merkkijono ottaa kirjainkoon huomioon, kun käytössä joko vakiomuoto tai mukautettu muoto. Esimerkiksi [vakiomuotoinen](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) d-määrite palauttaa päivämäärän käyttämällä lyhyt päivämäärämalli, kun taas vakiomuotoinen D-määrite palauttaa pitkää päivämäärämallia käyttävän päivämäärän. Lisäksi [mukautetun](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) muodon M-määrite palauttaa kuukaudet 1–12, kun taas mukautetun muodon m-määrite palauttaa minuutit 0–59.
+
 `culture`: *Merkkijono*
 
 Muotoilussa käytettävä kulttuuri.
 
 ## <a name="return-values"></a>Palautusarvot
 
-*merkkijono*
+*Merkkijono*
 
 Tuloksena oleva merkkijonoarvo.
 
 ## <a name="usage-notes"></a>Käyttöhuomautukset
 
-Kun kulttuuria ei ole määritetty kutsutun funktion argumentiksi, kutsuvan kontekstin määrittämä arvo `culture` määritetään. Jos `DATETIMEFORMAT`-funktiota kutsutaan esimerkiksi käyttämällä syntaksia 1 sähköisen raportoinnin (ER) muodossa **TIEDOSTO**-elementille, joka on määritetty käyttämään Saksan kulttuuria, muuntaminen tehdään Saksan kulttuurin avulla. `culture`-arvon oletusarvo on **FI-FI**.
+Jos kulttuuria ei ole määritetty kutsutun funktion argumentiksi, kutsuvan kontekstin määrittämä arvo `culture` määritetään. Jos `DATETIMEFORMAT`-funktiota kutsutaan esimerkiksi käyttämällä syntaksia 1 sähköisen raportoinnin (ER) muodossa **TIEDOSTO**-elementille, joka on määritetty käyttämään Saksan kulttuuria, muuntaminen tehdään Saksan kulttuurin avulla. `culture`-arvon oletusarvo on **FI-FI**.
 
 Kun `DATETIMEFORMAT`-funktio muuntaa tietyn päivämäärä- ja aika-arvon, se harkitsee sen sovelluksen käyttäjän aikavyöhykeasetusta, joka suorittaa ER-muotoa ja jota funktiota kutsutaan järjestelmän kontekstissa.
 
@@ -78,11 +81,8 @@ Kun `DATETIMEFORMAT`-funktio muuntaa tietyn päivämäärä- ja aika-arvon, se h
 
 ## <a name="example-3"></a>Esimerkki 3
 
-`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` palauttaa merkkijonon arvon **2019-11-12T 08:00:00.0000000-08:00**, kun sitä kutsutaan prosessin aikana, jonka on käynnistänyt sovelluskäyttäjä, jolla on aikavyöhyke arvo **(GMT-08:00) Tyynenmeren normaaliaika (USA & Kanada)** **kieli ja maa/alue-asetukset** -osassa.
+`DATETIMEFORMAT (DATETIMEVALUE( "2019-11-12T09:00:00.0000000-07:00", "O"), "O")` palauttaa merkkijonon arvon **2019-11-12T 08:00:00.0000000-08:00**, kun funktiota kutsutaan prosessin aikana, jonka käynnistäneen sovelluskäyttäjän aikavyöhykkeen arvo on **(GMT-08:00) Tyynenmeren normaaliaika (USA ja Kanada)** **Kieli- ja alue-asetukset** -osassa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Päivämäärä- ja aikatoiminnot](er-functions-category-datetime.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

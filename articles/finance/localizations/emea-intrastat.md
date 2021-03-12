@@ -3,7 +3,7 @@ title: Intrastat – yleiskatsaus
 description: Tämä aihe sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Artikkeli sisältää raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a70108696d6187126c23eca1779553210cd4a9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9396637c27707f1732d06ec704c7e609aa6c170b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407891"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962723"
 ---
 # <a name="intrastat-overview"></a>Intrastat – yleiskatsaus
 
@@ -197,7 +196,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 <td><ul>
 <li><strong>Yleinen</strong> – määritä seuraavat tiedot:
 <ul>
-<li>Myyntitilausten, ostotilausten, hyvityslaskujen ja siirtotilausten tapahtumakoodien oletusarvot. Hyvityslaskulle määritettyä tapahtumakoodia käytetään myös fyysisten tavaroiden palautuskoodina, ja sitä käytetään poikkeavin fyysisten palautusten ja oikaisuhyvityslaskujen vertailussa.</li>
+<li>Myyntitilausten, ostotilausten, hyvityslaskujen ja siirtotilausten tapahtumakoodien oletusarvot. Hyvityslaskulle määritettyä tapahtumakoodia käytetään myös fyysisten tavaroiden palautuskoodina, ja sitä käytetään poikkeavin fyysisten palautusten ja oikaisuhyvityslaskujen vertailussa. Fyysisten tavaroiden palautukset raportoidaan Intrastat-siirrossa eri suuntaan. Saapumisen palautus ilmoitetaan lähetykseksi ja lähetyksen palautus ilmoitetaan saapumiseksi.</li>
 <li>Intrastat-raporttien valmistelusta vastaava työntekijä.</li>
 </ul></li>
 <li><strong>Vähimmäisraja</strong> – määritä raja-arvon alittavien tapahtumien päivitysasetukset:
@@ -240,6 +239,3 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </tbody>
 </table>
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

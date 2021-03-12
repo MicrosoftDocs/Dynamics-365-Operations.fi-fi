@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
+ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4452191"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "4839546"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Varaston käytettävyys kaksoiskirjoituksessa
 
@@ -58,5 +58,63 @@ Valintaikkuna palauttaa ATP-tiedot Supply Chain Managementissa. Nämä tiedot si
 - Varasto-oton määrä
 - Varastosaldo
 
+## <a name="how-it-works"></a>Näin se toimii
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Kun **Käytettävissä oleva varasto** -painike valitaan **Tarjoukset**-, **Tilaukset**- tai **Laskut**-sivulla, reaaliaikainen kaksoiskirjoituskutsu tehdään **Käytettävissä oleva varasto** -ohjelmistorajapinnassa. Ohjelmointirajapinta laskee annetun tuotteen käytettävissä olevan varaston. Tulos tallennetaan **InventCDSInventoryOnHandRequestEntity**- ja **InventCDSInventoryOnHandEntryEntity**-taulukoihin ja kirjoitettaan sitten kaksoiskirjoituksella Dataverseen. Tämän toiminnon käyttämistä varten on suoritettava seuraavat kaksoiskirjoituksen määritykset. Ohita ensimmäinen synkronointi määrityksiä suoritettaessa.
+
+- CDS:n käytettävissä olevan varaston viennit (msdyn_inventoryonhandentries)
+- CDS:n käytettävissä olevan varaston pyynnöt (msdyn_inventoryonhandrequests)
+
+## <a name="templates"></a>Mallit
+Seuraavat mallit ovat käytettävissä käytettävissä olevan varaston tietojen tuominen nähtäville
+
+Finance and Operations -sovellukset | Asiakkaiden aktivointisovellus | kuvaus 
+---|---|---
+[CDS:n käytettävissä olevan varaston merkinnät](#145) | msdyn_inventoryonhandentries |
+[CDS:n käytettävissä olevan varaston pyynnöt](#147) | msdyn_inventoryonhandrequests |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>CDS:n käytettävissä olevan varaston viennit (msdyn_inventoryonhandentries)
+
+Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Dataversen välillä.
+
+Finance and Operations -kenttä | Määritystyyppi | Asiakkaiden aktivointi -kenttä | Oletusarvo
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>CDS:n käytettävissä olevan varaston pyynnöt (msdyn_inventoryonhandrequests)
+
+Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Dataversen välillä.
+
+Finance and Operations -kenttä | Määritystyyppi | Asiakkaiden aktivointi -kenttä | Oletusarvo
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

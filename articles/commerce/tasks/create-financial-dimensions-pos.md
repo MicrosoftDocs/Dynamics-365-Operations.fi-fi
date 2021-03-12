@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7be50eba098b7b28594c8e18c721579f4bb2e879
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c51c77f4b9f411ae45fb955032aa40cb34738e9a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412023"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964767"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a>Luo myyntipisteen taloushallinnon dimensiot kassakoneille ja määritä dimensioarvot kassakoneille
 
@@ -40,7 +39,7 @@ Tässä menettelyssä kerrotaan, miten myyntipisteen kassojen taloushallinnon di
 9. Sulje sivu.
 10. Valitse Tallenna.
 11. Sulje sivu.
-12. Siirry kohtaan Retail and Commerce > Kanavan asetukset > Myyntipisteen asetukset > Kassakoneet.
+12. Siirry kohtaan Retail ja Commerce > Kanavan asetukset > Myyntipisteen asetukset > Kassakoneet.
 13. Etsi haluamasi tietue luettelosta ja valitse se.
 14. Ota käyttöön Taloushallinnon dimensiot -osan laajennus.
 15. Valitse Muokkaa.
@@ -48,6 +47,3 @@ Tässä menettelyssä kerrotaan, miten myyntipisteen kassojen taloushallinnon di
 17. Etsi ja valitse luettelosta päivitettävän kassakoneen dimension arvo.
 18. Valitse Tallenna.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
