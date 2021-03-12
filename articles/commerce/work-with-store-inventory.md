@@ -3,56 +3,58 @@ title: Myymälän varastonhallinta
 description: Tässä ohjeaiheessa käsitellään asiakirjatyyppejä, joiden avulla hallitaan varastoa.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 05/15/2020
+ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 21391
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a3e6450c358d12dc62c2ffa20e7ff529be86bbe5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 616fb8975543344657c00c419ce7279658694675
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411985"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989473"
 ---
-# <a name="store-inventory-management"></a>Myymälän varastonhallinta
+# <a name="commerce-inventory-management"></a>Commercen varastonhallinta
 
 [!include [banner](includes/banner.md)]
 
-Kun varastoa käsitellään Microsoft Dynamics 365 Commercessa myyntipistesovelluksella, on tärkeää muistaa, että tiettyjä varastodimensioita ja varastonimiketyyppejä tuetaan myyntipisteessä vain rajoitetusti. Myyntipistesovellus ei tue kaikkia niitä nimikkeen määritysominaisuuksia, jotka ovat saatavana Dynamics 365 Supply Chain Managementin nimikkeen määritysasetuksissa.
+Kun käsittelet varastoa Microsoft Dynamics 365 Commercessa ja käytät mitä tahansa Commerce-sovellusta, joka on liitetty Commerce Scale Unit (CSU) -yksikköön, on tärkeää tietää, että CSU:n tilaustenkäsittelylogiikka tukee rajoitetusti joitakin varastodimensioita ja joitakin varastonimiketyyppejä. Commerce-sovellukset eivät tue kaikkia niitä nimikkeen määritysominaisuuksia, jotka ovat saatavana Dynamics 365 Supply Chain Managementin nimikkeen määritysasetuksissa.
 
-Myyntipisteratkaisu ei tue tällä hetkellä seuraavia tuotedimensioita ja nimikemäärityksiä:
+CSU-pohjaiset Commerce-sovellukset eivät tue seuraavia tuotedimensioita ja nimikemäärityksiä:
 
 - Tuotedimensio- ja tuoterakennenimikkeiden määrittäminen (poikkeuksen niitä vähittäismyyntirakenteista, joissa käytetään joitakin tuoterakennekehyksen osia)
 - Todellisen painon nimikkeet
 - Version tuotedimension avulla ohjatut nimikkeet
 
-Myyntipistesovellus ei tue tällä hetkellä myyntipisteessä seuraavia seurantadimensioita:
-
-- Erän seurantadimensio
+CSU-pohjaiset Commerce-sovellukset eivät tue seuraavia seurantadimensioita:
 - Omistajadimensio
 
-Myyntipisteratkaisu tukee rajoitetusti seuraavia dimensioita. On siis mahdollista, että myyntipiste vie joitakin näitä dimensioita varastotapahtumiin varaston tai kaupan asetusten määritysten perusteella. Myyntipiste ei kuitenkaan tue dimensioita täysimääräisesti siinä määrin kuin jos myyntitapahtuma vietäisiin manuaalisesti Commercen pääkonttoriin. 
+- Myyntipistesovellus voi tarjota rajoitettua tukea seuraaville dimensioille. Myyntipiste saattaa merkitä joitakin näitä dimensioita varastotapahtumiin varaston tai myymälän asetusten määritysten perusteella. Myyntipiste ei kuitenkaan tue dimensioita täysimääräisesti siinä määrin kuin jos myyntitapahtuma vietäisiin manuaalisesti Commerce headquarters -sovellukseen. 
 
 - **Varaston sijainti** – Jos käyttäjät käyttävät myyntipisteen uutta [saapuvaa toimintoa](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) ja [lähtevää toimintoa](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), he voivat valita varaston varastosijainnin, johon nimikkeitä vastaanotetaan tai josta lähtevät siirtotilaukset lähetetään. Jos käytössä on vanhentunut **Keräys ja vastaanotto** -toiminto, vastaanoton ja lähtevien siirtojen lähettämisen yhteydessä on käytettävissä rajoitettu sijainnin hallinnan tuki. Tämä tuki on käytettävissä vain, jos **Käytä varastonhallintaprosesseja** -vaihtoehto on otettu käyttöön sekä nimikkeen osalta että myymälän varastossa. Varastosijaintia ei voi tällä hetkellä käyttää **Varaston inventointi**- ja **Varastohaku**-toimintojen kanssa.
+
 - **Rekisterikilpi** – Rekisterikilvet ovat käytössä vain, kun **Käytä varastonhallintaprosesseja** -vaihtoehto on otettu käyttöön nimikkeessä ja myymälän varastossa. Jos varasto vastaanotetaan myyntipistesovelluksessa **Saapuva toiminto**- tai **Keräys ja vastaanotto** -toimintoa käyttämällä myymälävarastoon, jossa varaston hallintaprosessi on otettu käyttöön, ja jos nimikkeen vastaanottamiselle valittu sijainti on sidottu sijaintiprofiiliin, joka edellyttää rekisterikilpiohjausta, myyntipistesovellus käyttää vastaanottavan rivin rekisterikilpeä järjestelmällisesti. Myyntipistekäyttäjät eivät voi muuttaa eivätkä hallita näitä rekisterikilven tietoja. Jos rekisterikilpien hallinta on pakollista, kyseisiä nimikkeitä kannattaa hallita myymälässä [varastointisovelluksella](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) tai tausta-asiakasohjelmalla.
+
 - **Sarjanumero** – Myyntipistesovellus tukee rajoitetusti sellaisen yksittäisen sarjanumeron rekisteröintiä, joka luodaan myyntipistesovelluksessa tapahtumamyyntiriville ja joka sisältää sarjoitettuja nimikkeitä. Tätä sarjanumeroa ei ole tarkistettu varastoon jo rekisteröityjen sarjanumeroiden perusteella. Jos myyntitilaus luodaan puhelinkeskuskanavassa tai täytetään ERP-järjestelmän avulla ja yhteen myyntitilausriviin rekisteröidään useita sarjanumeroita tämän täyttämisprosessin aikana, kyseisiä sarjanumeroita ei voida käyttää tai tarkistaa, jos tilauksen palautukset käsitellään myyntipisteessä. Jos varaston vastaanottoon käytetään **saapuvien toimintoa**, käyttäjät voivat [rekisteröidä tai vahvistaa vastaanotetut sarjanumerot](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+
+- **Erätunnus**: Myyntipistesovellus tarjoaa rajoitetusti tukea laskelman kirjaamisen aikana, jos eräohjattua nimikettä myydään, mutta myyntipisteen käyttäjät eivät voi määrittää myyntipistesovelluksen käytön kautta myydyn tai kerätyn erän tunnusta.
+
 - **Varaston tila** – Jos nimikkeet käyttävät varastonhallintaprosessia ja edellyttävät varaston tilaa, tätä tilakenttää ei voi määrittää eikä muokata myyntipistesovelluksessa. Nimikkeiden varastoon vastaanottamisessa käytetään myymälän varastomäärityksessä määritettyä varaston oletustilaa.
 
 > [!NOTE]
-> Kaikkien organisaatioiden on testattava nimikemääritykset myyntipisteen kehitys- tai testiympäristöissä, ennen kuin kyseiset nimikemääritykset otetaan käyttöön tuotantoympäristöissä. Nimikkeet testataan suorittamalla niillä tavallisia itsepalvelutukun myyntitapahtumia ja luomalla (tarvittaessa) asiakastilauksia myyntipisteessä. Myös myyntipisteen täyttämis- ja varastoprosessit (kuten varaston vastaanotto- ja tilauksen täyttämistoiminnot) on testattava ennen uusien nimikemääritysten käyttöönottoa, sillä näin voidaan varmistaa, että myyntipistesovellus tukee niitä. Testauksen on sisällettävä täydelliset laskelmien kirjaamisprosessit testiympäristössä ja sen varmistaminen, että mitään ongelmia ei esiinny, kun kyseisille nimikkeille luodaan ja kirjataan tilauksia Commercen pääkonttorisovelluksessa.
+> Kaikkien organisaatioiden on testattava nimikemääritykset Commerce-sovellusten kehitys- tai testiympäristöissä, ennen kuin kyseiset nimikemääritykset otetaan käyttöön tuotantoympäristöissä. Testaa nimikkeet käyttämällä niitä suorittamaan tavallisia käteisostomyyntitapahtumia myyntipisteessä ja luo asiakastilauksia (jos käytettävissä) myyntipisteen, soittokeskuksen tai sähköisen kaupan kautta, jotta voidaan varmistaa, että niitä tuetaan kokonaisvaltaisesti. Myös myyntipisteen täyttämis- ja varastoprosessit (kuten varaston vastaanotto- ja tilauksen täyttämistoiminnot) on testattava ennen uusien nimikemääritysten käyttöönottoa, sillä näin voidaan varmistaa, että myyntipistesovellus tukee niitä. Testauksen on sisällettävä täydelliset laskelmien/tilauksien kirjaamisprosessit testiympäristössä ja sen varmistaminen, että mitään kirjausongelmia ei esiinny, kun kyseisille nimikkeille luodaan ja kirjataan tilauksia Commerce headquarters -sovelluksessa.
 >
-> Jos nimikkeet määritetään tavalla, jota myyntipistesovellus ei tue eikä testausta tehdä, tilauksen luontiprosessissa saattaa esiintyviä tietovirheitä, joita ei ole helppo korjata tai joita vakiotuotetuki ei kata.
+> Jos nimikkeet on konfiguroitu niin, että Commerce-sovellukset eivät tue niitä ja soveltuvaa testausta ei tehdä, saattaa ilmetä virheitä, joita ei helposti korjata tai joita ei välttämättä pystytä ollenkaan korjaamaan.
 
 ## <a name="purchase-orders"></a>Ostotilaukset
 
@@ -69,6 +71,3 @@ Varaston inventoinnit voidaan ajoittaa tai niiden ajoitus voidaan peruuttaa. Ajo
 ## <a name="inventory-lookup"></a>Varastohaku
 
 Tuotteen nykyistä määrää useissa myymälöissä ja varastoissa voi tarkastella **Varastohaku**-sivulla. Nykyisen käytettävissä olevan määrän lisäksi näkyvissä on myös kunkin myymälän luvattavissa oleva määrä (ATP). Valitse ensin myymälä, jonka ATP-määritä haluat tarkastella, ja **Näytä myymälän käytettävyys**. Lisätietoja käytettävissä olevista määritysvaihtoehdoista on kohdassa [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 08d41244d3ec785127db8f69e37dd522a463c388
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4442947"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988537"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Italian sähköisen laskutuksen lisäosan käytön aloittaminen
 
@@ -221,7 +220,7 @@ Voit lähettää asiakirjat manuaalisesti riippuen sähköisten laskujen asiakir
 2. Valitse **OK**, jotta voit sulkea **Kysely**-valintaikkunan.
 3. Lähetä valitut asiakirjat valitsemalla **OK**.
 
-> ![HUOMAUTUS] Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköisen laskutuksen lisäosaan. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
+> ![HUOMAA] Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköisen laskutuksen lisäosaan. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
 
 #### <a name="view-submission-logs"></a>Lähetyslokien tarkasteleminen
 
@@ -246,6 +245,3 @@ Voit tarkastella kaikkien lähetettyjen asiakirjojen lähetyslokeja.
 - [Sähköisen laskutuksen yleiskatsaus](e-invoicing-service-overview.md)
 - [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md)
 - [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

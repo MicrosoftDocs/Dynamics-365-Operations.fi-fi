@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 01f44c49b6623cbcc2f08cfd6e4978c9a1676b83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 38e3c5b3b85eb9ad17270cf7002046896d305548
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442814"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988260"
 ---
 # <a name="import-iso20022-credit-transfer-configuration"></a>Tuo ISO20022-tilisiirron konfiguraatio
 
@@ -45,6 +44,3 @@ Tämä on ensimmäinen viidestä tehtävästä, joilla esitellään toimittajama
     * Jos Tuo-painike ei ole näkyvissä, tämä konfiguraatio on jo tuotu.  
 9. Valitse Kyllä.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

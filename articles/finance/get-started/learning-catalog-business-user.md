@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442809"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990236"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Financen käyttäjien oppimisluettelo
 
@@ -54,12 +53,10 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Budjetoinnin konfiguroiminen ja käyttäminen Dynamics 365 Financeissa](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Jokainen organisaatio, olipa se yksityinen tai julkinen, määrittää taloudelliset ja toiminnalliset tavoitteet luomalla budjetteja. Budjettisuunnittelu tehostaa budjettiprosessia sen yhteistyö- ja prosessiluonteen ansiosta. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 3.5 tuntia |
 | [Käyttöomaisuuden konfiguroiminen ja hallinta Dynamics 365 Financeissa](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Voit määrittää ja syöttää käyttöomaisuuden hankintatiedot ja hallita niitä tekemällä käyttöomaisuuden poistoja ja määrittämällä aktivointirajan. Käyttöomaisuuserien käsittelytavan on vastattava sekä kansainvälisiä kirjanpidon säännöksiä että kunkin maan tai alueen kirjanpitoon liittyvää lainsäädäntöä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4.5 tuntia |
 | [Toimitusketjujen kustannuslaskennan aloittaminen Dynamics 365 Financessa](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Kustannuslaskentaan voidaan kerätä tietoja useista eri lähteistä, kuten kirjanpidosta, alareskontrista, budjeteista ja tilastotiedoista. Kustannustietoja voidaan analysoida, arvioida ja tehdä yhteenvetoja, jotta yritysjohto voi tehdä tarvittavat päätökset esimerkiksi hinnanpäivityksistä, budjeteista ja kustannusseurannasta.  | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 1 tunti  |
+| [Kulujenhallinnan käyttäminen Dynamics 365 Project Operationsissa](https://docs.microsoft.com/learn/paths/work-expense-management/) | Paranna kannattavuutta ja pienennä kustannuksia Dynamics 365 Project Operationsin tarkoilla kulujenhallintaominaisuuksilla. Lue, kuinka järjestelmä konfiguroidaan sekä luodaan ja hyväksytään kuluraportteja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia  |
 
 ## <a name="exam"></a>Tentti<a name="exam"></a>
 
 | Sisältö | kuvaus  | Muoto  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365:n perusteet](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Todista, että ymmärrät Microsoft Dynamics 365:n: Power Platformin; pilvikonseptit; lisensointivaihtoehdot; sekä käyttöönotto- ja julkaisuvaihtoehdot | Tentti, kustannukset vaihtelevat alueittain |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

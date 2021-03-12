@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0997af638c141661afb677e2407a90a883168aed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9259c9bbf52c1c09a7092db6976fc3fabca6601
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442624"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990436"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Ehdota käyttöomaisuuden hankintaa
 
@@ -43,6 +42,3 @@ Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirja
 - Hankintaehdotukseen sisällytetään vain se käyttöomaisuuserä, jonka hankintapäivämäärä ja -hinta on määritetty kirjassa.  
 11. Valitse sivulla **Kirjat**-välilehti.
 12. Valitse **Kirjaa**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
