@@ -11,45 +11,44 @@ ms.technology: ''
 ms.search.form: CustPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 38afbc3a49d9020540a56e58ce51196b53d6a9e1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2cd5c174b0f3e3e15678513cecade020705beda
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442653"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982126"
 ---
-# <a name="setup-method-of-payment-for-iso20022-direct-debit"></a><span data-ttu-id="426a2-103">Maksutavan määrittäminen ISO20022-suoraveloitusta varten</span><span class="sxs-lookup"><span data-stu-id="426a2-103">Setup method of payment for ISO20022 direct debit</span></span>
+# <a name="setup-method-of-payment-for-iso20022-direct-debit"></a><span data-ttu-id="77b89-103">Maksutavan määrittäminen ISO20022-suoraveloitusta varten</span><span class="sxs-lookup"><span data-stu-id="77b89-103">Setup method of payment for ISO20022 direct debit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="426a2-104">Näiden ohjeiden avulla voi määrittää asiakkaan ISO20022-suoraveloituksen tai minkä tahansa muun maksutyypin sähköisen raportoinnin avulla.</span><span class="sxs-lookup"><span data-stu-id="426a2-104">This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting.</span></span> 
+<span data-ttu-id="77b89-104">Näiden ohjeiden avulla voi määrittää asiakkaan ISO20022-suoraveloituksen tai minkä tahansa muun maksutyypin sähköisen raportoinnin avulla.</span><span class="sxs-lookup"><span data-stu-id="77b89-104">This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting.</span></span> 
 
 
 
-<span data-ttu-id="426a2-105">Viennin muotokonfiguraatiot ja maksutilit on määritettävä ennen tämän tehtävän suorittamista.</span><span class="sxs-lookup"><span data-stu-id="426a2-105">Before you complete this task, you must set up export format configurations and payment accounts.</span></span>
+<span data-ttu-id="77b89-105">Viennin muotokonfiguraatiot ja maksutilit on määritettävä ennen tämän tehtävän suorittamista.</span><span class="sxs-lookup"><span data-stu-id="77b89-105">Before you complete this task, you must set up export format configurations and payment accounts.</span></span>
 
 
 
-<span data-ttu-id="426a2-106">Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="426a2-106">This procedure was created using the demo data company DEMF.</span></span>
+<span data-ttu-id="77b89-106">Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="77b89-106">This procedure was created using the demo data company DEMF.</span></span>
 
 
 
-<span data-ttu-id="426a2-107">Tämä on kolmas viidestä tehtävästä, joilla esitellään asiakasmaksujen prosessi, jossa käytetään sähköisen raportoinnin määrityksiä.</span><span class="sxs-lookup"><span data-stu-id="426a2-107">This is the third of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
+<span data-ttu-id="77b89-107">Tämä on kolmas viidestä tehtävästä, joilla esitellään asiakasmaksujen prosessi, jossa käytetään sähköisen raportoinnin määrityksiä.</span><span class="sxs-lookup"><span data-stu-id="77b89-107">This is the third of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
 
-1. <span data-ttu-id="426a2-108">Siirry kohtaan Myyntireskontra > Maksujen asetukset > Maksutavat.</span><span class="sxs-lookup"><span data-stu-id="426a2-108">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
-2. <span data-ttu-id="426a2-109">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="426a2-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="426a2-110">Voit esimerkiksi suodattaa Maksutapa-kenttää arvolla ELECTRONIC.</span><span class="sxs-lookup"><span data-stu-id="426a2-110">For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</span></span>
-3. <span data-ttu-id="426a2-111">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="426a2-111">Click Edit.</span></span>
-4. <span data-ttu-id="426a2-112">Syötä Maksutili-kenttään arvot DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="426a2-112">In the Payment account field, specify the values 'DEMF OPER'.</span></span>
-5. <span data-ttu-id="426a2-113">Laajenna Tiedostomuodot-osa.</span><span class="sxs-lookup"><span data-stu-id="426a2-113">Expand the File formats section.</span></span>
-6. <span data-ttu-id="426a2-114">Valitse Yleinen sähköinen raportointi -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="426a2-114">Select Yes in the Generic electronic reporting field.</span></span>
-7. <span data-ttu-id="426a2-115">Syötä Vie muotokonfiguraatio -kenttään arvo tai valitse arvo.</span><span class="sxs-lookup"><span data-stu-id="426a2-115">In the Export format configuration field, enter or select a value.</span></span>
-    * <span data-ttu-id="426a2-116">Valitse luettelosta arvo ISO20022 Direct debit (DE).</span><span class="sxs-lookup"><span data-stu-id="426a2-116">In the list, select ISO20022 Direct debit (DE).</span></span>  <span data-ttu-id="426a2-117">Jos luettelo on tyhjä, tuotua ja aktiivista asiakkaan maksun viennin muotokonfiguraatiota ei ole.</span><span class="sxs-lookup"><span data-stu-id="426a2-117">If the list is empty, the customer payment export format configuration has not been imported and active.</span></span>  
-8. <span data-ttu-id="426a2-118">Valitse Vaadi valtakirjaa -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="426a2-118">Select Yes in the Require mandate field.</span></span>
-    * <span data-ttu-id="426a2-119">Valitse Vaadi valtakirjaa -parametri asiakkaan maksumuodoille, joissa vaaditaan valtakirjatiedot maksuviestissä, kuten SEPA-suoraveloitus.</span><span class="sxs-lookup"><span data-stu-id="426a2-119">Select the Require mandate parameter for customer payment formats, which require including mandate information in the payment message, like SEPA direct debit.</span></span>  
-9. <span data-ttu-id="426a2-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="426a2-120">Click Save.</span></span>
+1. <span data-ttu-id="77b89-108">Siirry kohtaan Myyntireskontra > Maksujen asetukset > Maksutavat.</span><span class="sxs-lookup"><span data-stu-id="77b89-108">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
+2. <span data-ttu-id="77b89-109">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="77b89-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="77b89-110">Voit esimerkiksi suodattaa Maksutapa-kenttää arvolla ELECTRONIC.</span><span class="sxs-lookup"><span data-stu-id="77b89-110">For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</span></span>
+3. <span data-ttu-id="77b89-111">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="77b89-111">Click Edit.</span></span>
+4. <span data-ttu-id="77b89-112">Syötä Maksutili-kenttään arvot DEMF OPER.</span><span class="sxs-lookup"><span data-stu-id="77b89-112">In the Payment account field, specify the values 'DEMF OPER'.</span></span>
+5. <span data-ttu-id="77b89-113">Laajenna Tiedostomuodot-osa.</span><span class="sxs-lookup"><span data-stu-id="77b89-113">Expand the File formats section.</span></span>
+6. <span data-ttu-id="77b89-114">Valitse Yleinen sähköinen raportointi -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="77b89-114">Select Yes in the Generic electronic reporting field.</span></span>
+7. <span data-ttu-id="77b89-115">Syötä Vie muotokonfiguraatio -kenttään arvo tai valitse arvo.</span><span class="sxs-lookup"><span data-stu-id="77b89-115">In the Export format configuration field, enter or select a value.</span></span>
+    * <span data-ttu-id="77b89-116">Valitse luettelosta arvo ISO20022 Direct debit (DE).</span><span class="sxs-lookup"><span data-stu-id="77b89-116">In the list, select ISO20022 Direct debit (DE).</span></span>  <span data-ttu-id="77b89-117">Jos luettelo on tyhjä, tuotua ja aktiivista asiakkaan maksun viennin muotokonfiguraatiota ei ole.</span><span class="sxs-lookup"><span data-stu-id="77b89-117">If the list is empty, the customer payment export format configuration has not been imported and active.</span></span>  
+8. <span data-ttu-id="77b89-118">Valitse Vaadi valtakirjaa -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="77b89-118">Select Yes in the Require mandate field.</span></span>
+    * <span data-ttu-id="77b89-119">Valitse Vaadi valtakirjaa -parametri asiakkaan maksumuodoille, joissa vaaditaan valtakirjatiedot maksuviestissä, kuten SEPA-suoraveloitus.</span><span class="sxs-lookup"><span data-stu-id="77b89-119">Select the Require mandate parameter for customer payment formats, which require including mandate information in the payment message, like SEPA direct debit.</span></span>  
+9. <span data-ttu-id="77b89-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="77b89-120">Click Save.</span></span>
 
