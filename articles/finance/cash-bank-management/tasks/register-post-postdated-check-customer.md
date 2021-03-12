@@ -10,43 +10,42 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d14b0622f4fbad87ddf019307910d4d4e316888a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442805"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995287"
 ---
-# <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="2ec4e-103">Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="2ec4e-103">Register and post a postdated check for a customer</span></span>
+# <a name="register-and-post-a-postdated-check-for-a-customer"></a><span data-ttu-id="57527-103">Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="57527-103">Register and post a postdated check for a customer</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2ec4e-104">Voit rekisteröidä asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="2ec4e-105">Voit myös kirjata myöhemmäksi päivätyn sekin ja luoda kirjanpitotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="2ec4e-106">Suorita seuraavat tehtävät ennen asiakkaalta saadun myöhemmäksi päivitetyn sekin rekisteröintiä ja kirjaamista: \* Määritä myöhemmäksi päivitetyt sekit Maksuliikenteen hallinta -sivulla. \* Määritä myöhemmäksi päivitettyjen sekkien maksutapa . Tämän menettelyn rooli on Rahastonhoitaja.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-106">Complete the following tasks before you register and post a postdated check received from a customer:   \* Set up postdated check in the Cash and bank management page \* Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="2ec4e-107">Näissä toimintaohjeissa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-107">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="57527-104">Voit rekisteröidä asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot.</span><span class="sxs-lookup"><span data-stu-id="57527-104">You can register details of a postdated check received from a customer.</span></span> <span data-ttu-id="57527-105">Voit myös kirjata myöhemmäksi päivätyn sekin ja luoda kirjanpitotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="57527-105">You can also post the postdated check and generate financial transactions.</span></span>   <span data-ttu-id="57527-106">Suorita seuraavat tehtävät ennen asiakkaalta saadun myöhemmäksi päivitetyn sekin rekisteröintiä ja kirjaamista: \* Määritä myöhemmäksi päivitetyt sekit Maksuliikenteen hallinta -sivulla. \* Määritä myöhemmäksi päivitettyjen sekkien maksutapa . Tämän menettelyn rooli on Rahastonhoitaja.</span><span class="sxs-lookup"><span data-stu-id="57527-106">Complete the following tasks before you register and post a postdated check received from a customer:   \* Set up postdated check in the Cash and bank management page \* Set up a method of payment for postdated checks   The role for this procedure is Treasurer.</span></span> <span data-ttu-id="57527-107">Näissä toimintaohjeissa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="57527-107">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="2ec4e-108">Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-108">Go to Accounts receivable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="2ec4e-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-109">Click New.</span></span>
-3. <span data-ttu-id="2ec4e-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="2ec4e-111">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-111">Click Lines.</span></span>
-5. <span data-ttu-id="2ec4e-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-112">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="2ec4e-113">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-113">In the Account field, specify the desired values.</span></span>
-7. <span data-ttu-id="2ec4e-114">Syötä Kredit-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-114">In the Credit field, enter a number.</span></span>
-    * <span data-ttu-id="2ec4e-115">Anna myöhemmäksi päivätyssä sekissä määritetty summa.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-115">Enter the amount specified in the postdated check.</span></span>  
-8. <span data-ttu-id="2ec4e-116">Valitse Maksu-välilehti.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-116">Click the Payment tab.</span></span>
-9. <span data-ttu-id="2ec4e-117">Syötä arvo Maksutapa-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-117">In the Method of payment field, type a value.</span></span>
-    * <span data-ttu-id="2ec4e-118">Valitse myöhemmäksi päivätyn sekin maksutapa.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-118">Select the method of payment for the postdated check.</span></span>  
-10. <span data-ttu-id="2ec4e-119">Valitse Myöhemmäksi päivätyt sekit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-119">Click the Postdated checks tab.</span></span>
-11. <span data-ttu-id="2ec4e-120">Anna päivämäärä Erääntymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-120">In the Maturity date field, enter a date.</span></span>
-    * <span data-ttu-id="2ec4e-121">Anna myöhemmäksi päivätyn sekin eräpäivä.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-121">Enter the date when the postdated check is due for payment.</span></span>  
-12. <span data-ttu-id="2ec4e-122">Kirjoita arvo Myöntävä pankin konttori -kenttään.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-122">In the Issuing bank branch field, type a value.</span></span>
-    * <span data-ttu-id="2ec4e-123">Anna myöhemmäksi päivätyn sekin pankkitiedot.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-123">Enter the bank details of the postdated check.</span></span>  
-13. <span data-ttu-id="2ec4e-124">Kirjoita arvo Sekin numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-124">In the check number field, type a value.</span></span>
-14. <span data-ttu-id="2ec4e-125">Kirjoita arvo Myöntävän pankin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-125">In the Issuing bank name field, type a value.</span></span>
-    * <span data-ttu-id="2ec4e-126">Anna myöhemmäksi päivätyn sekin pankkitiedot.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-126">Enter the bank details of the postdated check.</span></span>  
-15. <span data-ttu-id="2ec4e-127">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-127">Click Post.</span></span>
-16. <span data-ttu-id="2ec4e-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2ec4e-128">Close the page.</span></span>
+1. <span data-ttu-id="57527-108">Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="57527-108">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="57527-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="57527-109">Click New.</span></span>
+3. <span data-ttu-id="57527-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="57527-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="57527-111">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="57527-111">Click Lines.</span></span>
+5. <span data-ttu-id="57527-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="57527-112">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="57527-113">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="57527-113">In the Account field, specify the desired values.</span></span>
+7. <span data-ttu-id="57527-114">Syötä Kredit-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="57527-114">In the Credit field, enter a number.</span></span>
+    * <span data-ttu-id="57527-115">Anna myöhemmäksi päivätyssä sekissä määritetty summa.</span><span class="sxs-lookup"><span data-stu-id="57527-115">Enter the amount specified in the postdated check.</span></span>  
+8. <span data-ttu-id="57527-116">Valitse Maksu-välilehti.</span><span class="sxs-lookup"><span data-stu-id="57527-116">Click the Payment tab.</span></span>
+9. <span data-ttu-id="57527-117">Syötä arvo Maksutapa-kenttään.</span><span class="sxs-lookup"><span data-stu-id="57527-117">In the Method of payment field, type a value.</span></span>
+    * <span data-ttu-id="57527-118">Valitse myöhemmäksi päivätyn sekin maksutapa.</span><span class="sxs-lookup"><span data-stu-id="57527-118">Select the method of payment for the postdated check.</span></span>  
+10. <span data-ttu-id="57527-119">Valitse Myöhemmäksi päivätyt sekit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="57527-119">Click the Postdated checks tab.</span></span>
+11. <span data-ttu-id="57527-120">Anna päivämäärä Erääntymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="57527-120">In the Maturity date field, enter a date.</span></span>
+    * <span data-ttu-id="57527-121">Anna myöhemmäksi päivätyn sekin eräpäivä.</span><span class="sxs-lookup"><span data-stu-id="57527-121">Enter the date when the postdated check is due for payment.</span></span>  
+12. <span data-ttu-id="57527-122">Kirjoita arvo Myöntävä pankin konttori -kenttään.</span><span class="sxs-lookup"><span data-stu-id="57527-122">In the Issuing bank branch field, type a value.</span></span>
+    * <span data-ttu-id="57527-123">Anna myöhemmäksi päivätyn sekin pankkitiedot.</span><span class="sxs-lookup"><span data-stu-id="57527-123">Enter the bank details of the postdated check.</span></span>  
+13. <span data-ttu-id="57527-124">Kirjoita arvo Sekin numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="57527-124">In the check number field, type a value.</span></span>
+14. <span data-ttu-id="57527-125">Kirjoita arvo Myöntävän pankin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="57527-125">In the Issuing bank name field, type a value.</span></span>
+    * <span data-ttu-id="57527-126">Anna myöhemmäksi päivätyn sekin pankkitiedot.</span><span class="sxs-lookup"><span data-stu-id="57527-126">Enter the bank details of the postdated check.</span></span>  
+15. <span data-ttu-id="57527-127">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="57527-127">Click Post.</span></span>
+16. <span data-ttu-id="57527-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="57527-128">Close the page.</span></span>
 

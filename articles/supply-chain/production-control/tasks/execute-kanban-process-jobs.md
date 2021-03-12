@@ -11,49 +11,48 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1c32b577007c400f3528a110436eb97aaabefe2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9da49ae17d6c25166f6b0e05e3c45fc991c9a54d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427120"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994151"
 ---
-# <a name="execute-kanban-process-jobs"></a><span data-ttu-id="3be54-103">Suorita kanban-prosessin töitä</span><span class="sxs-lookup"><span data-stu-id="3be54-103">Execute kanban process jobs</span></span>
+# <a name="execute-kanban-process-jobs"></a><span data-ttu-id="1ecdb-103">Suorita kanban-prosessin töitä</span><span class="sxs-lookup"><span data-stu-id="1ecdb-103">Execute kanban process jobs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="3be54-104">Nämä toimet keskittyvät kanban-prosessitöiden suorittamiseen.</span><span class="sxs-lookup"><span data-stu-id="3be54-104">This procedure focuses on executing kanban process jobs.</span></span> <span data-ttu-id="3be54-105">Ensimmäinen työ on valmis, määrä on odotettu, eikä virheitä ole.</span><span class="sxs-lookup"><span data-stu-id="3be54-105">The first job is completed with the expected quantity and has no errors.</span></span> <span data-ttu-id="3be54-106">Toinen työ valmistuu, mutta siinä on virheitä.</span><span class="sxs-lookup"><span data-stu-id="3be54-106">The second job is completed with errors.</span></span> <span data-ttu-id="3be54-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="3be54-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="3be54-108">Tämä menettely on tarkoitettu koneenkäyttäjille.</span><span class="sxs-lookup"><span data-stu-id="3be54-108">This procedure is intended for the machine operator.</span></span>
+<span data-ttu-id="1ecdb-104">Nämä toimet keskittyvät kanban-prosessitöiden suorittamiseen.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-104">This procedure focuses on executing kanban process jobs.</span></span> <span data-ttu-id="1ecdb-105">Ensimmäinen työ on valmis, määrä on odotettu, eikä virheitä ole.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-105">The first job is completed with the expected quantity and has no errors.</span></span> <span data-ttu-id="1ecdb-106">Toinen työ valmistuu, mutta siinä on virheitä.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-106">The second job is completed with errors.</span></span> <span data-ttu-id="1ecdb-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="1ecdb-108">Tämä menettely on tarkoitettu koneenkäyttäjille.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-108">This procedure is intended for the machine operator.</span></span>
 
 
-## <a name="select-a-kanban-job"></a><span data-ttu-id="3be54-109">Valitse kanban-työ.</span><span class="sxs-lookup"><span data-stu-id="3be54-109">Select a kanban job</span></span>
-1. <span data-ttu-id="3be54-110">Siirry kohtaan Tuotannonhallinta > Kanban > Prosessitöiden kanban-taulu.</span><span class="sxs-lookup"><span data-stu-id="3be54-110">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="3be54-111">Avaa haku valitsemalla Työsolu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="3be54-111">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="3be54-112">Napsauta riviä, jonka resurssiryhmä on 1250.</span><span class="sxs-lookup"><span data-stu-id="3be54-112">Click the row with resource group 1250.</span></span> <span data-ttu-id="3be54-113">Työluettelo suodatetaan niin, että se näyttää vain työsolun 1250 työt.</span><span class="sxs-lookup"><span data-stu-id="3be54-113">This filters the Jobs list to display only the jobs for work cell 1250.</span></span>
-    * <span data-ttu-id="3be54-114">Valitse rivi, jonka työn tila on Suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="3be54-114">Mark the row that has the Planned job status.</span></span>  
+## <a name="select-a-kanban-job"></a><span data-ttu-id="1ecdb-109">Valitse kanban-työ.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-109">Select a kanban job</span></span>
+1. <span data-ttu-id="1ecdb-110">Siirry kohtaan Tuotannonhallinta > Kanban > Prosessitöiden kanban-taulu.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-110">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="1ecdb-111">Avaa haku valitsemalla Työsolu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-111">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="1ecdb-112">Napsauta riviä, jonka resurssiryhmä on 1250.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-112">Click the row with resource group 1250.</span></span> <span data-ttu-id="1ecdb-113">Työluettelo suodatetaan niin, että se näyttää vain työsolun 1250 työt.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-113">This filters the Jobs list to display only the jobs for work cell 1250.</span></span>
+    * <span data-ttu-id="1ecdb-114">Valitse rivi, jonka työn tila on Suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-114">Mark the row that has the Planned job status.</span></span>  
 
-## <a name="complete-a-job-with-expected-quantity"></a><span data-ttu-id="3be54-115">Viimeistele työ odotetulla määrällä</span><span class="sxs-lookup"><span data-stu-id="3be54-115">Complete a job with expected quantity</span></span>
-1. <span data-ttu-id="3be54-116">Laajenna tai tiivistä Tiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="3be54-116">Expand or collapse the Details section.</span></span>
-    * <span data-ttu-id="3be54-117">Tässä osassa näkyy tärkeitä tietoja kortin numerosta, nimiketunnuksesta, tilatusta määrästä ja tehtävän nimestä.</span><span class="sxs-lookup"><span data-stu-id="3be54-117">This section displays important information about card number, item number, quantity ordered, and activity name.</span></span>  
-2. <span data-ttu-id="3be54-118">Laajenna tai tiivistä Tuotanto-ohjeet-osa.</span><span class="sxs-lookup"><span data-stu-id="3be54-118">Expand or collapse the Production instructions section.</span></span>
-    * <span data-ttu-id="3be54-119">Tässä osassa näytetään tehtävän tuotanto-ohjeet.</span><span class="sxs-lookup"><span data-stu-id="3be54-119">This section displays production instructions for the activity.</span></span> <span data-ttu-id="3be54-120">Ohjeet voivat olla tekstiä, kuvia, piirroksia tai muita asiakirjoja.</span><span class="sxs-lookup"><span data-stu-id="3be54-120">The instructions can be text, pictures, drawings, and other documents.</span></span>  
-3. <span data-ttu-id="3be54-121">Valitse Käynnistys.</span><span class="sxs-lookup"><span data-stu-id="3be54-121">Click Start.</span></span>
-    * <span data-ttu-id="3be54-122">Valitse työ, joka ei ole valmis.</span><span class="sxs-lookup"><span data-stu-id="3be54-122">Select a job that is not completed.</span></span> <span data-ttu-id="3be54-123">Näet työn tilan Työn tila -kentän tilakuvakkeista.</span><span class="sxs-lookup"><span data-stu-id="3be54-123">Use status icons in the Job status field to view job status.</span></span>      
-4. <span data-ttu-id="3be54-124">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="3be54-124">Click Complete.</span></span>
-    * <span data-ttu-id="3be54-125">Työ on valmis ja sen laatu vastaa odotuksia.</span><span class="sxs-lookup"><span data-stu-id="3be54-125">The job is completed with the expected quality.</span></span>  
+## <a name="complete-a-job-with-expected-quantity"></a><span data-ttu-id="1ecdb-115">Viimeistele työ odotetulla määrällä</span><span class="sxs-lookup"><span data-stu-id="1ecdb-115">Complete a job with expected quantity</span></span>
+1. <span data-ttu-id="1ecdb-116">Laajenna tai tiivistä Tiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-116">Expand or collapse the Details section.</span></span>
+    * <span data-ttu-id="1ecdb-117">Tässä osassa näkyy tärkeitä tietoja kortin numerosta, nimiketunnuksesta, tilatusta määrästä ja tehtävän nimestä.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-117">This section displays important information about card number, item number, quantity ordered, and activity name.</span></span>  
+2. <span data-ttu-id="1ecdb-118">Laajenna tai tiivistä Tuotanto-ohjeet-osa.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-118">Expand or collapse the Production instructions section.</span></span>
+    * <span data-ttu-id="1ecdb-119">Tässä osassa näytetään tehtävän tuotanto-ohjeet.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-119">This section displays production instructions for the activity.</span></span> <span data-ttu-id="1ecdb-120">Ohjeet voivat olla tekstiä, kuvia, piirroksia tai muita asiakirjoja.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-120">The instructions can be text, pictures, drawings, and other documents.</span></span>  
+3. <span data-ttu-id="1ecdb-121">Valitse Käynnistys.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-121">Click Start.</span></span>
+    * <span data-ttu-id="1ecdb-122">Valitse työ, joka ei ole valmis.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-122">Select a job that is not completed.</span></span> <span data-ttu-id="1ecdb-123">Näet työn tilan Työn tila -kentän tilakuvakkeista.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-123">Use status icons in the Job status field to view job status.</span></span>      
+4. <span data-ttu-id="1ecdb-124">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-124">Click Complete.</span></span>
+    * <span data-ttu-id="1ecdb-125">Työ on valmis ja sen laatu vastaa odotuksia.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-125">The job is completed with the expected quality.</span></span>  
 
-## <a name="complete-a-job-with-errors"></a><span data-ttu-id="3be54-126">Viimeistele työ virheettömänä</span><span class="sxs-lookup"><span data-stu-id="3be54-126">Complete a job with errors</span></span>
-1. <span data-ttu-id="3be54-127">Valitse Käynnistys.</span><span class="sxs-lookup"><span data-stu-id="3be54-127">Click Start.</span></span>
-    * <span data-ttu-id="3be54-128">Kun työ valmistuu, luettelon seuraava työ valitaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3be54-128">When a job is completed, the next job on the list is selected automatically.</span></span> <span data-ttu-id="3be54-129">Tämän vuoksi sinun ei tarvitse valita työtä, ennen kuin napsautat Aloita-painiketta.</span><span class="sxs-lookup"><span data-stu-id="3be54-129">This is why you don't need to select a job before you click Start.</span></span>  
-2. <span data-ttu-id="3be54-130">Valitse toimintoruudussa Valmista.</span><span class="sxs-lookup"><span data-stu-id="3be54-130">On the Action Pane, click Manufacture.</span></span>
-3. <span data-ttu-id="3be54-131">Napsauta Valmis (tiedot).</span><span class="sxs-lookup"><span data-stu-id="3be54-131">Click Complete (details).</span></span>
-4. <span data-ttu-id="3be54-132">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="3be54-132">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="3be54-133">Syötä numero Virhemäärä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3be54-133">In the Error quantity field, enter a number.</span></span>
-6. <span data-ttu-id="3be54-134">Lisää Hyväksytty määrä -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="3be54-134">In the Good quantity field, enter a number.</span></span>
-7. <span data-ttu-id="3be54-135">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3be54-135">Click OK.</span></span>
+## <a name="complete-a-job-with-errors"></a><span data-ttu-id="1ecdb-126">Viimeistele työ virheettömänä</span><span class="sxs-lookup"><span data-stu-id="1ecdb-126">Complete a job with errors</span></span>
+1. <span data-ttu-id="1ecdb-127">Valitse Käynnistys.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-127">Click Start.</span></span>
+    * <span data-ttu-id="1ecdb-128">Kun työ valmistuu, luettelon seuraava työ valitaan automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-128">When a job is completed, the next job on the list is selected automatically.</span></span> <span data-ttu-id="1ecdb-129">Tämän vuoksi sinun ei tarvitse valita työtä, ennen kuin napsautat Aloita-painiketta.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-129">This is why you don't need to select a job before you click Start.</span></span>  
+2. <span data-ttu-id="1ecdb-130">Valitse toimintoruudussa Valmista.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-130">On the Action Pane, click Manufacture.</span></span>
+3. <span data-ttu-id="1ecdb-131">Napsauta Valmis (tiedot).</span><span class="sxs-lookup"><span data-stu-id="1ecdb-131">Click Complete (details).</span></span>
+4. <span data-ttu-id="1ecdb-132">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-132">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="1ecdb-133">Syötä numero Virhemäärä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-133">In the Error quantity field, enter a number.</span></span>
+6. <span data-ttu-id="1ecdb-134">Lisää Hyväksytty määrä -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-134">In the Good quantity field, enter a number.</span></span>
+7. <span data-ttu-id="1ecdb-135">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="1ecdb-135">Click OK.</span></span>
 

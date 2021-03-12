@@ -11,46 +11,45 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee8385561f9aadae333c05c6df62de0ad1d39010
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 69168d62c9583149db6e61816a6ccd1059ee52db
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442869"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994362"
 ---
-# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="706e3-103">Näytä konsernin sisäinen tosite kirjauskansiosta</span><span class="sxs-lookup"><span data-stu-id="706e3-103">View related intercompany voucher from journal</span></span>
+# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="7fc8c-103">Näytä konsernin sisäinen tosite kirjauskansiosta</span><span class="sxs-lookup"><span data-stu-id="7fc8c-103">View related intercompany voucher from journal</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="706e3-104">Liittyvän tositteen ikkunassa näkyy siirtymäyrityksen tosite,kun konsernin sisäinen tapahtuma kirjataan kirjauskansiosta.</span><span class="sxs-lookup"><span data-stu-id="706e3-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
+<span data-ttu-id="7fc8c-104">Liittyvän tositteen ikkunassa näkyy siirtymäyrityksen tosite,kun konsernin sisäinen tapahtuma kirjataan kirjauskansiosta.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
 
 
-## <a name="post-an-intercompany-journal"></a><span data-ttu-id="706e3-105">Kirjaa konsernin sisäinen kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="706e3-105">Post an intercompany journal</span></span>
-1. <span data-ttu-id="706e3-106">Valitse Yleiset kirjauskansiot.</span><span class="sxs-lookup"><span data-stu-id="706e3-106">Go to General journals.</span></span>
-2. <span data-ttu-id="706e3-107">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="706e3-107">Click New.</span></span>
-3. <span data-ttu-id="706e3-108">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="706e3-108">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="706e3-109">Anna tai valitse Nimi-kentässä konsernin sisäisen kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="706e3-109">In the Name field, enter or select the intercompany journal name.</span></span>
-5. <span data-ttu-id="706e3-110">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="706e3-110">Click Lines.</span></span>
-6. <span data-ttu-id="706e3-111">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="706e3-111">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="706e3-112">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="706e3-112">In the Account field, specify the desired values.</span></span>
-8. <span data-ttu-id="706e3-113">Anna tai valitse Kuvaus-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="706e3-113">In the Description field, enter or select a value.</span></span>
-9. <span data-ttu-id="706e3-114">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="706e3-114">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="706e3-115">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="706e3-115">Close the page.</span></span>
-11. <span data-ttu-id="706e3-116">Syötä Debet-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="706e3-116">In the Debit field, enter a number.</span></span>
-12. <span data-ttu-id="706e3-117">Kirjoita tai valitse Siirtymäyritys-kentässä siirtymäyritys.</span><span class="sxs-lookup"><span data-stu-id="706e3-117">In the Offset company field, type or select the offset company.</span></span>
-13. <span data-ttu-id="706e3-118">Anna tai valitse Siirtymäyritys-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="706e3-118">In the Offset company field, enter or select a value.</span></span>
-14. <span data-ttu-id="706e3-119">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="706e3-119">Close the page.</span></span>
-15. <span data-ttu-id="706e3-120">Määritä Vastatili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="706e3-120">In the Offset account field, specify the desired values.</span></span>
-16. <span data-ttu-id="706e3-121">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="706e3-121">Click Post.</span></span>
+## <a name="post-an-intercompany-journal"></a><span data-ttu-id="7fc8c-105">Kirjaa konsernin sisäinen kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="7fc8c-105">Post an intercompany journal</span></span>
+1. <span data-ttu-id="7fc8c-106">Valitse Yleiset kirjauskansiot.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-106">Go to General journals.</span></span>
+2. <span data-ttu-id="7fc8c-107">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-107">Click New.</span></span>
+3. <span data-ttu-id="7fc8c-108">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="7fc8c-109">Anna tai valitse Nimi-kentässä konsernin sisäisen kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-109">In the Name field, enter or select the intercompany journal name.</span></span>
+5. <span data-ttu-id="7fc8c-110">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-110">Click Lines.</span></span>
+6. <span data-ttu-id="7fc8c-111">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-111">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="7fc8c-112">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-112">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="7fc8c-113">Anna tai valitse Kuvaus-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-113">In the Description field, enter or select a value.</span></span>
+9. <span data-ttu-id="7fc8c-114">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-114">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="7fc8c-115">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-115">Close the page.</span></span>
+11. <span data-ttu-id="7fc8c-116">Syötä Debet-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-116">In the Debit field, enter a number.</span></span>
+12. <span data-ttu-id="7fc8c-117">Kirjoita tai valitse Siirtymäyritys-kentässä siirtymäyritys.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-117">In the Offset company field, type or select the offset company.</span></span>
+13. <span data-ttu-id="7fc8c-118">Anna tai valitse Siirtymäyritys-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-118">In the Offset company field, enter or select a value.</span></span>
+14. <span data-ttu-id="7fc8c-119">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-119">Close the page.</span></span>
+15. <span data-ttu-id="7fc8c-120">Määritä Vastatili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-120">In the Offset account field, specify the desired values.</span></span>
+16. <span data-ttu-id="7fc8c-121">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-121">Click Post.</span></span>
 
-## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="706e3-122">Näytä liittyvä konsernin sisäinen tosite</span><span class="sxs-lookup"><span data-stu-id="706e3-122">View related intercompany voucher</span></span>
-1. <span data-ttu-id="706e3-123">Valitse Tosite.</span><span class="sxs-lookup"><span data-stu-id="706e3-123">Click Voucher.</span></span>
-2. <span data-ttu-id="706e3-124">Valitse Liittyvät tositteet.</span><span class="sxs-lookup"><span data-stu-id="706e3-124">Click Related vouchers.</span></span>
-3. <span data-ttu-id="706e3-125">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="706e3-125">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="706e3-126">Valitse Tosite.</span><span class="sxs-lookup"><span data-stu-id="706e3-126">Click Voucher.</span></span>
+## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="7fc8c-122">Näytä liittyvä konsernin sisäinen tosite</span><span class="sxs-lookup"><span data-stu-id="7fc8c-122">View related intercompany voucher</span></span>
+1. <span data-ttu-id="7fc8c-123">Valitse Tosite.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-123">Click Voucher.</span></span>
+2. <span data-ttu-id="7fc8c-124">Valitse Liittyvät tositteet.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-124">Click Related vouchers.</span></span>
+3. <span data-ttu-id="7fc8c-125">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-125">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="7fc8c-126">Valitse Tosite.</span><span class="sxs-lookup"><span data-stu-id="7fc8c-126">Click Voucher.</span></span>
 
