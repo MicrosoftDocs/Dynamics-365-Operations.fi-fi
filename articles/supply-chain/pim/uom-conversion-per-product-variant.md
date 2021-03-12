@@ -12,17 +12,16 @@ ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f327d1d0b38ad724da6a302cefc115262317812
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427361"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001696"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mittayksiköiden tuotevarianttikohtaiset muunnokset
 
@@ -59,7 +58,7 @@ Päätuote määritetään tukemaan varianttikohtaista yksikkömuunnosta seuraav
     - **Tuote** – Jos valitset tämän arvon, voit määrittää päätuotteen yksikkömuunnoksen. Tätä yksikkömuunnosta käytetään kaikkien niiden tuotevarianttien varalla olevan muunnoksena, jos mitään yksikkömuunnosta ei ole määritetty.
     - **Tuotevariantti** – Jos valitset tämän arvon, voit määrittää tietyn tuotevariantin yksikkömuunnoksen. Valitse variantti **Tuotevariantti**-kentän avulla.
 
-    ![![Uuden yksikkömuunnoksen lisääminen](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Uuden yksikkömuunnoksen lisääminen](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")
 
 1. Käytä muita käytettävissä olevia kenttiä yksikkömuunnoksen määrittämiseen.
 1. Tallenna uusi yksikkömuunnos valitsemalla **OK**.
@@ -107,6 +106,3 @@ Yksikkömuunnokset viedään Exceliin valitsemalla **Yksikkömuunnokset**-sivun 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mittayksikön hallinta](tasks/manage-unit-measure.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

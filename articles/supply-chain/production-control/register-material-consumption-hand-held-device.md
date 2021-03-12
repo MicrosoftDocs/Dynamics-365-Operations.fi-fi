@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40779d1f8bc14072928767ae1c83fdda47476871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427354"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998875"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materiaalikulutuksen rekisteröinti mobiililaitteella
 
@@ -34,14 +33,14 @@ Tässä ohjeaiheessa käsitellään työnkulkua, jolla tuotannossa kulutettavat 
 <a name="introduction"></a>Johdanto
 ------------
 
-Tämä työnkulku on hyödyllinen, jos materiaalin tarkka seuranta on välttämätöntä. Näissä tilanteissa materiaalin jäljitettävyyden ylläpito edellyttää kulutuksen tarkan ajan ja määrän ilmoittamista. Tämä prosessi voidaan nähdä esi- tai jälkipoiston peilikuvana, sillä näissä toiminnoissa rekisteröinnin ajankohta ja varsinaisen kulutuksen ajankohta poikkeavat toisistaan. Tämän vuoksi automaattista kulutusstrategiaa ei voi käyttää joissakin materiaaleissa, joissa on edellytyksenä jäljitettävyys. Tarkastellaan yksinkertainen skenaariota, joka selittää, miten määritetään työnkulku tuotannossa tapahtuvan raaka-aineiden kulutuksen rekisteröintiin kämmenlaitteella. [![määritä työnkulku, joka mahdollistaa raaka-aineiden kulutuksen kannettavan laitteen avulla](./media/scenario3.png)](./media/scenario3.png)
+Tämä työnkulku on hyödyllinen, jos materiaalin tarkka seuranta on välttämätöntä. Näissä tilanteissa materiaalin jäljitettävyyden ylläpito edellyttää kulutuksen tarkan ajan ja määrän ilmoittamista. Tämä prosessi voidaan nähdä esi- tai jälkipoiston peilikuvana, sillä näissä toiminnoissa rekisteröinnin ajankohta ja varsinaisen kulutuksen ajankohta poikkeavat toisistaan. Tämän vuoksi automaattista kulutusstrategiaa ei voi käyttää joissakin materiaaleissa, joissa on edellytyksenä jäljitettävyys. Tarkastellaan yksinkertainen skenaariota, joka selittää, miten määritetään työnkulku tuotannossa tapahtuvan raaka-aineiden kulutuksen rekisteröintiin kämmenlaitteella. [![työnkulun määrittäminen ottamaan käyttöön raaka-aineiden kulutuksen kirjaaminen kannettavan laitteen avulla](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Skenaarion tiedot
 
 Jatkuva tuotantoprosessi (5) kuluttaa eräohjattua raaka-ainetta RM-100. Materiaali on käytettävissä varaston sijainnissa Bulk-001 (1), rekisterikilpi on PL-1 ja siinä on kaksi erää B1 ja B2, joiden kummankin määrä 100 lbs. RM-100:n varastotyö (2) vapautetaan ja käsitellään. Materiaali kerätään sijainnista Bulk-001 tuotannon varastoinnin sijaintiin PIL-01 (3), joka on määritetty rekisterikilpiohjatuksi sijainniksi. Koneenkäyttäjä punnitsee materiaalin tuotannon varastointisijainnissa (3) ja rekisteröi painon. Eränumero on kulutettu (4). Osa materiaalista lisätään tuotannon varastoinnin sijainnista tuotantoprosessiin määritetyin aikavälein. Kun koneenkäyttäjä lisää materiaalia, se punnitaan vaa'alla ja eränumero rekisteröidään.
 
-## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Työnkulun määrittäminen rekisteröimään kulutus kämmenlaitteella
-Luo valmis tuote, FG 100, tuoterakenteella, jossa on eräohjattua raaka-ainetta RM-100. Lisää RM-100:n kaksi erää, B1 ja B2, joissa on määrä 100, sijaintiin Bulk-001, jossa on rekisterikilpi PL-1. RM-100:n tuoterakennerivin materiaaliottosäännöksi on valittu **Manuaalinen**. Määritä tuotannon varastoinnin sijainniksi PIL-01. Voit tehdä sen valitsemalla tämän sijainnin tuotannon varastoinnin oletussijainniksi varastossa 51.
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Työnkulun määrittäminen rekisteröimään kulutus kämmenlaitteella
+Luo valmis tuote, FG 100, jonka tuoterakenteessa on eräohjattua raaka-ainetta RM-100. Lisää RM-100:n kaksi erää, B1 ja B2, joissa on määrä 100, sijaintiin Bulk-001, jossa on rekisterikilpi PL-1. RM-100:n tuoterakennerivin materiaaliottosäännöksi on valittu **Manuaalinen**. Määritä tuotannon varastoinnin sijainniksi PIL-01. Voit tehdä sen valitsemalla tämän sijainnin tuotannon varastoinnin oletussijainniksi varastossa 51.
 
 1.  Luo uusi mobiililaitteen valikkovaihtoehto: 
 
@@ -56,19 +55,19 @@ Luo valmis tuote, FG 100, tuoterakenteella, jossa on eräohjattua raaka-ainetta 
 -    **Nimiketunnus** – FG-100 
 -    **Toimipaikka** – 5 
 -    **Varasto** – 51 
--    **Määrä** – 150
+-    **Määrä** - 150
 
 Tuotantotilaus on **arvioitu** ja **vapautettu** ja varastotyö on luotu.
 
 4.  Suorita työ käyttämällä kämmenlaitteelle suunniteltua raaka-aineiden keräilyn työnkulkua.
 
-Työnkulku siirtää materiaalin bulkkisijainnista tuotannon varastoinnin sijaintiin PIL-01. Kun työ on suoritettu, materiaalin tila on **kerätty tuotannon varastoinnin sijainnissa**. Työn käsittelyn jälkeen tila on joko **Keräilty** tai **Varattu fyysinen**. Tämä on määritetty parametrilla **Jälkeen-varasto-ottotila viety varastolomakkeeseen**.
+Työnkulku siirtää materiaalin bulkkisijainnista tuotannon varastoinnin sijaintiin PIL-01. Kun työ on suoritettu, materiaalin tila on **Kerätty tuotannon varastoinnin sijainnissa**. Työn käsittelyn jälkeen tila on joko **Keräilty** tai **Varattu fyysinen**. Tämä on määritetty parametrilla **Jälkeen-varasto-ottotila viety varastolomakkeeseen**.
 
 5.  Käynnistä tuotantotilaus asiakasohjelmasta tai kämmenlaitteesta **Tuotannon käynnistys** -valikkovaihtoehdosta.
 
-Kun tuotantotilaus on käynnistetty, voit rekisteröidä materiaalikulutuksen kämmenlaitteen työnkulussa. Aloitetaan rekisteröimällä 25 lbs:n kulutus erässä B1.
+Kun tuotantotilaus on käynnistetty, voit rekisteröidä materiaalikulutuksen kämmenlaitteen työnkulussa. Aloitetaan rekisteröimällä 25 kg:n kulutus erässä B1.
 
-6.  Valitse kämmenlaitteen valikossa  **Rekisteröi** **materiaalikulutus** ja anna seuraavat tiedot: 
+6.  Valitse kämmenlaitteen valikossa **Rekisteröi** **materiaalikulutus** ja anna seuraavat tiedot: 
 
 -    Tuotantotilauksen numero. 
 -    Sijainti, jossa materiaali aiotaan kuluttaa eli tässä tapauksessa PIL-01. 
@@ -92,6 +91,3 @@ Kun rekisteröinti on valmis, kirjaa kirjauskansio ja lopeta työnkulku valitsem
 -   Materiaali voidaan ylikuluttaa. Jos esimerkiksi materiaalin kulutusmääräksi arvioidaan 100 lbs, se voidaan sitten ylikuluttaa esimerkiksi määrällä 105 lbs.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

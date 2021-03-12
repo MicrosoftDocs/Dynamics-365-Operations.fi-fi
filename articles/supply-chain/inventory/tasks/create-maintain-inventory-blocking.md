@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c6e047e15aaab157e6de70f4a09f500af2965f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eab6730daa2eb7df0f91d99d1026d4736285fef9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427339"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000056"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Luo ja ylläpidä varastoesto
 
@@ -52,6 +51,3 @@ Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston
 2. Valitse **Kyllä**.
 3. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ae4062401cd5be2371c45642b78bf3708b04f664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427435"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001195"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Varastotyön peruutus poikkeusten käsittelyä varten
 
@@ -45,6 +44,3 @@ Peruuta työ -toimintoa voidaan käyttää vain tyyppien **Myynti**, **Siirtovar
 Saadakseen työn jatkumaan järjestelmä peruuttaa jäljellä olevat työrivit ja korjaa käyttäjän määrittämään työtunnukseen liittyvät varastotiedot. Tämän jälkeen tavalliset varaston käsittelytoimet, jotka kohdistuvat aiemmin estyneeseen nimikemäärään, voivat jatkua.
 
 Asettaakseen aiemmin estyneen nimikkeen tiettyyn sijaintiin työn peruuttamisen jälkeen käyttäjän on käytettävä varaston siirtotapahtumaa tai määrän oikaisua mobiililaitteella.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
