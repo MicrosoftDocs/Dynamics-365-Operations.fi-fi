@@ -10,131 +10,130 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae7b73c7a51ffa606876072d607fc219f5f6a2ba
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 58342f07233e3c6a6e6a1af87ab23513ad63caf5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411996"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970039"
 ---
-# <a name="generate-online-channel-reports"></a><span data-ttu-id="68e31-103">Verkkokanavaraporttien luominen</span><span class="sxs-lookup"><span data-stu-id="68e31-103">Generate online channel reports</span></span>
+# <a name="generate-online-channel-reports"></a><span data-ttu-id="b821f-103">Verkkokanavaraporttien luominen</span><span class="sxs-lookup"><span data-stu-id="b821f-103">Generate online channel reports</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="68e31-104">Tässä aiheessa kuvataan, miten Microsoft Dynamics 365 Commercessa luodaan raportteja verkkokanavassa.</span><span class="sxs-lookup"><span data-stu-id="68e31-104">This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="b821f-104">Tässä aiheessa kuvataan, miten Microsoft Dynamics 365 Commercessa luodaan raportteja verkkokanavassa.</span><span class="sxs-lookup"><span data-stu-id="b821f-104">This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="68e31-105">Yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="68e31-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="b821f-105">Yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="b821f-105">Overview</span></span>
 
-<span data-ttu-id="68e31-106">Voit luoda ja tarkastella useita Commerce-raportteja. Ne osoittavat, miten verkkokanava toimii.</span><span class="sxs-lookup"><span data-stu-id="68e31-106">You can generate and view several reports in Commerce to see how your online channel is performing.</span></span>
+<span data-ttu-id="b821f-106">Voit luoda ja tarkastella useita Commerce-raportteja. Ne osoittavat, miten verkkokanava toimii.</span><span class="sxs-lookup"><span data-stu-id="b821f-106">You can generate and view several reports in Commerce to see how your online channel is performing.</span></span>
 
-## <a name="channel-summary-report"></a><span data-ttu-id="68e31-107">Kanavan yhteenvetoraportti</span><span class="sxs-lookup"><span data-stu-id="68e31-107">Channel summary report</span></span>
+## <a name="channel-summary-report"></a><span data-ttu-id="b821f-107">Kanavan yhteenvetoraportti</span><span class="sxs-lookup"><span data-stu-id="b821f-107">Channel summary report</span></span>
 
-<span data-ttu-id="68e31-108">**Kanavan yhteenveto** -raportissa näkyy yhteenveto valitun kanavan seuraavista tapahtumista:</span><span class="sxs-lookup"><span data-stu-id="68e31-108">The **Channel summary** report shows a summary of the following transactions for the selected channel:</span></span>
+<span data-ttu-id="b821f-108">**Kanavan yhteenveto** -raportissa näkyy yhteenveto valitun kanavan seuraavista tapahtumista:</span><span class="sxs-lookup"><span data-stu-id="b821f-108">The **Channel summary** report shows a summary of the following transactions for the selected channel:</span></span>
 
-- <span data-ttu-id="68e31-109">Myyntitapahtumat</span><span class="sxs-lookup"><span data-stu-id="68e31-109">Sales transactions</span></span>
-- <span data-ttu-id="68e31-110">Maksutapahtumat</span><span class="sxs-lookup"><span data-stu-id="68e31-110">Payment transactions</span></span>
-- <span data-ttu-id="68e31-111">Verotapahtumat</span><span class="sxs-lookup"><span data-stu-id="68e31-111">Tax transactions</span></span>
-- <span data-ttu-id="68e31-112">Alennustapahtumat</span><span class="sxs-lookup"><span data-stu-id="68e31-112">Discounted transactions</span></span>
+- <span data-ttu-id="b821f-109">Myyntitapahtumat</span><span class="sxs-lookup"><span data-stu-id="b821f-109">Sales transactions</span></span>
+- <span data-ttu-id="b821f-110">Maksutapahtumat</span><span class="sxs-lookup"><span data-stu-id="b821f-110">Payment transactions</span></span>
+- <span data-ttu-id="b821f-111">Verotapahtumat</span><span class="sxs-lookup"><span data-stu-id="b821f-111">Tax transactions</span></span>
+- <span data-ttu-id="b821f-112">Alennustapahtumat</span><span class="sxs-lookup"><span data-stu-id="b821f-112">Discounted transactions</span></span>
 
-<span data-ttu-id="68e31-113">Voit luoda **Kanavan yhteenveto** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-113">To generate a **Channel summary** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-113">Voit luoda **Kanavan yhteenveto** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-113">To generate a **Channel summary** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-114">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan yhteenveto -raportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-114">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel summary report**.</span></span>
-1. <span data-ttu-id="68e31-115">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-115">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-116">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-116">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-117">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-117">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-118">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-118">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-114">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan yhteenveto -raportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-114">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel summary report**.</span></span>
+1. <span data-ttu-id="b821f-115">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-115">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-116">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-116">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-117">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-117">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-118">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-118">Select **OK**.</span></span>
  
-## <a name="channel-sales-by-year-report"></a><span data-ttu-id="68e31-119">Vuosikohtaisen kanavamyynnin raportti</span><span class="sxs-lookup"><span data-stu-id="68e31-119">Channel sales by year report</span></span> 
+## <a name="channel-sales-by-year-report"></a><span data-ttu-id="b821f-119">Vuosikohtaisen kanavamyynnin raportti</span><span class="sxs-lookup"><span data-stu-id="b821f-119">Channel sales by year report</span></span> 
 
-<span data-ttu-id="68e31-120">**Kanavan myynti vuoden mukaan** -raportissa näkyy tietyn myymälän vuosittaisen myynnin vertailu.</span><span class="sxs-lookup"><span data-stu-id="68e31-120">The **Channel sales by year** report shows a comparison of year-over-year sales for a specific store.</span></span> <span data-ttu-id="68e31-121">Valitse vuosi, jonka myyntiä verrataan. Raportti vertaa valitun vuoden myyntiä edellisen vuoden myyntiin.</span><span class="sxs-lookup"><span data-stu-id="68e31-121">You select the year to compare the sales against, and the report compares sales for the selected year with sales for the previous year.</span></span>
+<span data-ttu-id="b821f-120">**Kanavan myynti vuoden mukaan** -raportissa näkyy tietyn myymälän vuosittaisen myynnin vertailu.</span><span class="sxs-lookup"><span data-stu-id="b821f-120">The **Channel sales by year** report shows a comparison of year-over-year sales for a specific store.</span></span> <span data-ttu-id="b821f-121">Valitse vuosi, jonka myyntiä verrataan. Raportti vertaa valitun vuoden myyntiä edellisen vuoden myyntiin.</span><span class="sxs-lookup"><span data-stu-id="b821f-121">You select the year to compare the sales against, and the report compares sales for the selected year with sales for the previous year.</span></span>
 
-<span data-ttu-id="68e31-122">Voit luoda **Kanavan myynti vuoden mukaan** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-122">To generate a **Channel sales by year** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-122">Voit luoda **Kanavan myynti vuoden mukaan** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-122">To generate a **Channel sales by year** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-123">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan vuosikohtainen myynti -raportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-123">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel sales by year report**.</span></span>
-1. <span data-ttu-id="68e31-124">Anna vuosi **Kalenterivuodesta**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-124">In the **From calendar year** field, enter a year.</span></span>
-1. <span data-ttu-id="68e31-125">Anna vuosi **Kalenterivuoteen**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-125">In the **To calendar year** field, enter a year.</span></span>
-1. <span data-ttu-id="68e31-126">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-126">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-127">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-127">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-123">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan vuosikohtainen myynti -raportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-123">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel sales by year report**.</span></span>
+1. <span data-ttu-id="b821f-124">Anna vuosi **Kalenterivuodesta**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-124">In the **From calendar year** field, enter a year.</span></span>
+1. <span data-ttu-id="b821f-125">Anna vuosi **Kalenterivuoteen**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-125">In the **To calendar year** field, enter a year.</span></span>
+1. <span data-ttu-id="b821f-126">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-126">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-127">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-127">Select **OK**.</span></span>
 
-## <a name="channel-sales-by-hour-report"></a><span data-ttu-id="68e31-128">Tuntikohtaisen kanavamyynnin raportti</span><span class="sxs-lookup"><span data-stu-id="68e31-128">Channel sales by hour report</span></span>
+## <a name="channel-sales-by-hour-report"></a><span data-ttu-id="b821f-128">Tuntikohtaisen kanavamyynnin raportti</span><span class="sxs-lookup"><span data-stu-id="b821f-128">Channel sales by hour report</span></span>
 
-<span data-ttu-id="68e31-129">**Kanavan myynti tunnin mukaan** -raportti näyttää valitun kanavan tai toimintoyksikön myyntimittarin tunnin mukaan.</span><span class="sxs-lookup"><span data-stu-id="68e31-129">The **Channel sales by hour** report shows sales metrics per hour for a selected channel or operating unit.</span></span>
+<span data-ttu-id="b821f-129">**Kanavan myynti tunnin mukaan** -raportti näyttää valitun kanavan tai toimintoyksikön myyntimittarin tunnin mukaan.</span><span class="sxs-lookup"><span data-stu-id="b821f-129">The **Channel sales by hour** report shows sales metrics per hour for a selected channel or operating unit.</span></span>
 
-<span data-ttu-id="68e31-130">Voit luoda **Kanavan myynti tunnin mukaan** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-130">To generate a **Channel sales by hour** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-130">Voit luoda **Kanavan myynti tunnin mukaan** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-130">To generate a **Channel sales by hour** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-131">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan tuntikohtainen myynti -raportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-131">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel sales by hour report**.</span></span>
-1. <span data-ttu-id="68e31-132">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-132">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-133">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-133">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-134">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-134">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-135">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-135">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-131">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan tuntikohtainen myynti -raportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-131">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Channel sales by hour report**.</span></span>
+1. <span data-ttu-id="b821f-132">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-132">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-133">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-133">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-134">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-134">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-135">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-135">Select **OK**.</span></span>
 
-## <a name="top-customers-report"></a><span data-ttu-id="68e31-136">Suurimpien asiakkaiden raportti</span><span class="sxs-lookup"><span data-stu-id="68e31-136">Top customers report</span></span>
+## <a name="top-customers-report"></a><span data-ttu-id="b821f-136">Suurimpien asiakkaiden raportti</span><span class="sxs-lookup"><span data-stu-id="b821f-136">Top customers report</span></span>
 
-<span data-ttu-id="68e31-137">**Parhaat asiakkaat** -raportissa on myyntimittarit parhaille *N* asiakkaille valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="68e31-137">The **Top customers** report shows sales metrics for the top *N* customers for a selected channel or operating unit.</span></span> <span data-ttu-id="68e31-138">Arvo *N* on luku väliltä 10–100. Se perustuu käyttäjän valitsemaan koostemittariin.</span><span class="sxs-lookup"><span data-stu-id="68e31-138">The value *N* is a number from 10 to 100 and is based on a user-selected aggregate measure.</span></span>
+<span data-ttu-id="b821f-137">**Parhaat asiakkaat** -raportissa on myyntimittarit parhaille *N* asiakkaille valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="b821f-137">The **Top customers** report shows sales metrics for the top *N* customers for a selected channel or operating unit.</span></span> <span data-ttu-id="b821f-138">Arvo *N* on luku väliltä 10–100. Se perustuu käyttäjän valitsemaan koostemittariin.</span><span class="sxs-lookup"><span data-stu-id="b821f-138">The value *N* is a number from 10 to 100 and is based on a user-selected aggregate measure.</span></span>
 
-<span data-ttu-id="68e31-139">Voit luoda **Parhaat asiakkaat** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-139">To generate a **Top customers** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-139">Voit luoda **Parhaat asiakkaat** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-139">To generate a **Top customers** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-140">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat asiakkaat -raportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-140">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Top customers report**.</span></span>
-1. <span data-ttu-id="68e31-141">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-141">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-142">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-142">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-143">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-143">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-144">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-144">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-140">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat asiakkaat -raportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-140">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Top customers report**.</span></span>
+1. <span data-ttu-id="b821f-141">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-141">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-142">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-142">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-143">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-143">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-144">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-144">Select **OK**.</span></span>
 
-## <a name="top-discounts-report"></a><span data-ttu-id="68e31-145">Parhaat alennukset -raportti</span><span class="sxs-lookup"><span data-stu-id="68e31-145">Top discounts report</span></span>
+## <a name="top-discounts-report"></a><span data-ttu-id="b821f-145">Parhaat alennukset -raportti</span><span class="sxs-lookup"><span data-stu-id="b821f-145">Top discounts report</span></span>
 
-<span data-ttu-id="68e31-146">**Parhaat alennukset** -raportissa on myyntimittarit parhaille *N* alennuksille valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="68e31-146">The **Top discounts** report shows sales metrics for the top *N* discounts for a selected channel or operating unit.</span></span> <span data-ttu-id="68e31-147">Arvo *N* on luku väliltä 10–100. Se perustuu käyttäjän valitsemaan koostemittariin.</span><span class="sxs-lookup"><span data-stu-id="68e31-147">The value *N* is a number from 10 to 100 and is based on a user-selected aggregate measure.</span></span>
+<span data-ttu-id="b821f-146">**Parhaat alennukset** -raportissa on myyntimittarit parhaille *N* alennuksille valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="b821f-146">The **Top discounts** report shows sales metrics for the top *N* discounts for a selected channel or operating unit.</span></span> <span data-ttu-id="b821f-147">Arvo *N* on luku väliltä 10–100. Se perustuu käyttäjän valitsemaan koostemittariin.</span><span class="sxs-lookup"><span data-stu-id="b821f-147">The value *N* is a number from 10 to 100 and is based on a user-selected aggregate measure.</span></span>
 
-<span data-ttu-id="68e31-148">Voit luoda **Parhaat alennukset** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-148">To generate a **Top discounts** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-148">Voit luoda **Parhaat alennukset** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-148">To generate a **Top discounts** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-149">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat alennukset -raportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-149">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Top discounts report**.</span></span>
-1. <span data-ttu-id="68e31-150">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-150">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-151">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-151">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-152">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-152">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-153">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-153">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-149">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat alennukset -raportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-149">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Top discounts report**.</span></span>
+1. <span data-ttu-id="b821f-150">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-150">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-151">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-151">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-152">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-152">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-153">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-153">Select **OK**.</span></span>
 
-## <a name="top-products-report"></a><span data-ttu-id="68e31-154">Parhaat tuotteet -raportti</span><span class="sxs-lookup"><span data-stu-id="68e31-154">Top products report</span></span>
+## <a name="top-products-report"></a><span data-ttu-id="b821f-154">Parhaat tuotteet -raportti</span><span class="sxs-lookup"><span data-stu-id="b821f-154">Top products report</span></span>
 
-<span data-ttu-id="68e31-155">**Parhaat tuotteet** -raportissa on myyntimittarit parhaille *N* tuotteille valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="68e31-155">The **Top products** report shows sales metrics for the top *N* products for a selected channel or operating unit.</span></span> <span data-ttu-id="68e31-156">Arvo *N* on luku väliltä 10–100. Se perustuu käyttäjän valitsemaan koostemittariin.</span><span class="sxs-lookup"><span data-stu-id="68e31-156">The value *N* is a number from 10 to 100 and is based on a user-selected aggregate measure.</span></span>
+<span data-ttu-id="b821f-155">**Parhaat tuotteet** -raportissa on myyntimittarit parhaille *N* tuotteille valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="b821f-155">The **Top products** report shows sales metrics for the top *N* products for a selected channel or operating unit.</span></span> <span data-ttu-id="b821f-156">Arvo *N* on luku väliltä 10–100. Se perustuu käyttäjän valitsemaan koostemittariin.</span><span class="sxs-lookup"><span data-stu-id="b821f-156">The value *N* is a number from 10 to 100 and is based on a user-selected aggregate measure.</span></span>
 
-<span data-ttu-id="68e31-157">Voit luoda **Parhaat tuotteet** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-157">To generate a **Top products** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-157">Voit luoda **Parhaat tuotteet** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-157">To generate a **Top products** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-158">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat tuotteet -raportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-158">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Top products report**.</span></span>
-1. <span data-ttu-id="68e31-159">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-159">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-160">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-160">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-161">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-161">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-162">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-162">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-158">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat tuotteet -raportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-158">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Top products report**.</span></span>
+1. <span data-ttu-id="b821f-159">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-159">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-160">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-160">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-161">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-161">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-162">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-162">Select **OK**.</span></span>
 
-## <a name="category-sales-report"></a><span data-ttu-id="68e31-163">Luokan myyntiraportti</span><span class="sxs-lookup"><span data-stu-id="68e31-163">Category sales report</span></span>
+## <a name="category-sales-report"></a><span data-ttu-id="b821f-163">Luokan myyntiraportti</span><span class="sxs-lookup"><span data-stu-id="b821f-163">Category sales report</span></span>
 
-<span data-ttu-id="68e31-164">**Luokan myynti** -raportissa näkyvät myyntimittarit valittuna kautena jokaiselle luokkahierarkian solmulle valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="68e31-164">The **Category sales** report shows sales metrics over a selected period for each node of a category hierarchy for a selected channel or operating unit.</span></span>
+<span data-ttu-id="b821f-164">**Luokan myynti** -raportissa näkyvät myyntimittarit valittuna kautena jokaiselle luokkahierarkian solmulle valitussa kanavassa tai toimintoyksikössä.</span><span class="sxs-lookup"><span data-stu-id="b821f-164">The **Category sales** report shows sales metrics over a selected period for each node of a category hierarchy for a selected channel or operating unit.</span></span>
 
-<span data-ttu-id="68e31-165">Voit luoda **Luokan myynti** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-165">To generate a **Category sales** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-165">Voit luoda **Luokan myynti** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-165">To generate a **Category sales** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-166">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Luokan myyntiraportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-166">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Category sales report**.</span></span>
-1. <span data-ttu-id="68e31-167">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-167">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-168">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-168">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-169">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="68e31-169">In the **Channel** field, select the online channel.</span></span>
-1. <span data-ttu-id="68e31-170">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-170">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-166">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Luokan myyntiraportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-166">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Category sales report**.</span></span>
+1. <span data-ttu-id="b821f-167">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-167">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-168">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-168">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-169">Valitse **Kanava**-kentässä verkkokanava.</span><span class="sxs-lookup"><span data-stu-id="b821f-169">In the **Channel** field, select the online channel.</span></span>
+1. <span data-ttu-id="b821f-170">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-170">Select **OK**.</span></span>
 
-## <a name="organization-sales-report"></a><span data-ttu-id="68e31-171">Organisaation myyntiraportti</span><span class="sxs-lookup"><span data-stu-id="68e31-171">Organization sales report</span></span>
+## <a name="organization-sales-report"></a><span data-ttu-id="b821f-171">Organisaation myyntiraportti</span><span class="sxs-lookup"><span data-stu-id="b821f-171">Organization sales report</span></span>
 
-<span data-ttu-id="68e31-172">**Organisaation myynti** -raportti näyttää myymälöiden suorituskyvyn organisaatioyksiköiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="68e31-172">The **Organization sales** report shows the performance of your stores by organization unit.</span></span> <span data-ttu-id="68e31-173">Tämä raportti sisältää myynnin määrän ja summan myymälän mukaan sekä kunkin myymälän katetuoton.</span><span class="sxs-lookup"><span data-stu-id="68e31-173">This report includes the sales quantity and amount by store, and the profit margin for each store.</span></span> <span data-ttu-id="68e31-174">Organisaatioyksikkö perustuu oletusraportointihierarkiaan.</span><span class="sxs-lookup"><span data-stu-id="68e31-174">The organization unit is based on the default reporting hierarchy.</span></span>
+<span data-ttu-id="b821f-172">**Organisaation myynti** -raportti näyttää myymälöiden suorituskyvyn organisaatioyksiköiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="b821f-172">The **Organization sales** report shows the performance of your stores by organization unit.</span></span> <span data-ttu-id="b821f-173">Tämä raportti sisältää myynnin määrän ja summan myymälän mukaan sekä kunkin myymälän katetuoton.</span><span class="sxs-lookup"><span data-stu-id="b821f-173">This report includes the sales quantity and amount by store, and the profit margin for each store.</span></span> <span data-ttu-id="b821f-174">Organisaatioyksikkö perustuu oletusraportointihierarkiaan.</span><span class="sxs-lookup"><span data-stu-id="b821f-174">The organization unit is based on the default reporting hierarchy.</span></span>
 
-<span data-ttu-id="68e31-175">Voit luoda **Organisaation myynti** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="68e31-175">To generate an **Organization sales** report, follow these steps.</span></span>
+<span data-ttu-id="b821f-175">Voit luoda **Organisaation myynti** -raportin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="b821f-175">To generate an **Organization sales** report, follow these steps.</span></span>
 
-1. <span data-ttu-id="68e31-176">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Organisaation myyntiraportti**.</span><span class="sxs-lookup"><span data-stu-id="68e31-176">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Organization sales report**.</span></span>
-1. <span data-ttu-id="68e31-177">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-177">In the **From date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-178">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="68e31-178">In the **To date** field, enter a date.</span></span>
-1. <span data-ttu-id="68e31-179">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="68e31-179">Select **OK**.</span></span>
+1. <span data-ttu-id="b821f-176">Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Organisaation myyntiraportti**.</span><span class="sxs-lookup"><span data-stu-id="b821f-176">Go to **Retail and Commerce \> Inquiries and reports \> Sales reports \> Organization sales report**.</span></span>
+1. <span data-ttu-id="b821f-177">Syötä päivämäärä **Päivämäärästä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-177">In the **From date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-178">Kirjoita päivämäärä **Päivämäärään**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b821f-178">In the **To date** field, enter a date.</span></span>
+1. <span data-ttu-id="b821f-179">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="b821f-179">Select **OK**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="68e31-180">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="68e31-180">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b821f-180">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="b821f-180">Additional resources</span></span>
 
-- [<span data-ttu-id="68e31-181">Kaupan aloitussivu</span><span class="sxs-lookup"><span data-stu-id="68e31-181">Commerce home page</span></span>](../retail/index.md)
+- [<span data-ttu-id="b821f-181">Kaupan aloitussivu</span><span class="sxs-lookup"><span data-stu-id="b821f-181">Commerce home page</span></span>](../retail/index.md)
