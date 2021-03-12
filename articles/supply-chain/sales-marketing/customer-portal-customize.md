@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527360"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980853"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Asiakasportaalin mukauttaminen ja käyttäminen
 
@@ -40,9 +39,9 @@ Seuraavissa ohjeaiheissa on tietoja Power Apps -portaalien perustoiminnoista ja 
 - [Portaalin sisällönhallinta](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – Tässä ohjeaiheessa kerrotaan, kuinka voit hallita ja mukauttaa portaalissasi näkyvää sisältöä.
 - [Muokkaa CSS:tä](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – Tämän ohjeaiheen avulla voit tehdä monimutkaisempia mukautuksia portaalin käyttöliittymään.
 - [Luo portaaliin teema](https://docs.microsoft.com/dynamics365/portals/create-theme) – Tämän ohjeaiheen avulla voit luoda portaalin käyttöliittymän teeman.
-- [Luo ja näytä portaalin sisältöä helposti](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Tämän ohjeaiheen avulla voit hallita portaalissa käytössä olevia tietoja ja entiteettejä.
+- [Portaalin sisällön luominen ja tuominen näkymiin helposti](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Tämä aiheen auttaa hallitsemaan portaalissa käytettyjä tietoja ja tauluja.
 - [Yhteyshenkilön määrittäminen käytettäväksi portaalissa](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – Tässä ohjeaiheessa kerrotaan, kuinka käyttäjärooleja luodaan ja mukautetaan sekä kuinka suojaus ja todennus toimivat Power Apps -portaaleissa.
-- [Yksikkölomakkeiden ja portaalien verkkolomakkeiden huomautusten määrittäminen](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Tässä ohjeaiheessa kerrotaan, kuinka voit lisätä portaaliin asiakirjoja ja lisätallennustilaa.
+- [Taululomakkeiden ja portaalien verkkolomakkeiden huomautusten määrittäminen](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Tässä aiheessa käsitellään asiakirjojen ja tallennustilan lisäämistä portaaliin.
 - [Portaalin verkkosivuston virheenkäsittely](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – Tässä ohjeaiheessa kerrotaan, kuinka portaalin virhelokeja voidaan tarkastella ja tallentaa Microsoft Azure -Blob-objektisäilötilille.
 
 ## <a name="customize-the-order-creation-process"></a>Tilauksen luomisprosessin mukauttaminen
@@ -91,7 +90,7 @@ Tässä ovat vakiovaiheet tilauksen lähettämiselle asiakasportaalista.
 
 Jotta käyttäjäkokemus olisi sujuva, asiakasportaali täyttää automaattisesti useiden pakollisten kenttien arvot. Nämä arvot perustuvat tilauksen lähettäneen asiakkaan yhteyshenkilötietueen tietoihin.
 
-Seuraavien pakollisten kenttien arvot on määritettävä jokaiselle sellaiselle [yhteystietotietueelle](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), joka kuuluu asiakkaalle, joka käyttää asiakasportaalia tilausten lähettämiseen. Muussa tapauksessa tapahtuu virheitä.
+Seuraavien pakollisten kenttien arvot on määritettävä jokaiselle sellaiselle [yhteyshenkilöriville](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), joka kuuluu asiakasportaalia tilausten lähettämiseen käyttävälle asiakkaalle. Muussa tapauksessa tapahtuu virheitä.
 
 - **Yritys** – Yritys, joka omistaa tilauksen
 - **Potentiaalinen asiakas** – Tilaukseen liittyvä asiakastili
@@ -99,7 +98,7 @@ Seuraavien pakollisten kenttien arvot on määritettävä jokaiselle sellaiselle
 - **Valuutta** – Hinnan valuutta
 - **Toimita maahan/alueelle** – Maa tai alue, johon nimikkeet toimitetaan
 
-Seuraavat kentät määritetään automaattisesti myyntitilauskohteelle:
+Seuraavat kentät määritetään automaattisesti myyntitilaustauluun:
 
 - **Kieli** – Tilauksen kieli (Oletusarvon mukaan arvo haetaan yhteyshenkilötietueesta.)
 - **Toimita maahan/alueelle** – Maa tai alue, johon nimikkeet toimitetaan (Oletusarvon mukaan arvo haetaan yhteyshenkilötietueesta.)
@@ -116,7 +115,7 @@ Seuraavat kentät määritetään automaattisesti myyntitilauskohteelle:
 
 Voit muokata asiakasportaalin ulkoasua ja käyttöliittymää vapaasti, jos et muuta perustilauksen luomisprosessia. Jos haluat muuttaa tilauksen luomisprosessia, on joitakin seikkoja, jotka on syytä pitää mielessä.
 
-Älä poista seuraavia kenttiä myyntitilausyksiköstä Common Data Servicessä, koska niitä tarvitaan myyntitilauksen luomiseen kaksoiskirjoituksessa:
+Älä poista seuraavia sarakkeita myyntitilaustaulusta Microsoft Dataversessa, koska niitä tarvitaan myyntitilauksen luomiseen kaksoiskirjoituksessa:
 
 - **Yritys** – Yritys, joka omistaa tilauksen
 - **Nimi** – Myyntitilauksen nimi
@@ -127,7 +126,7 @@ Voit muokata asiakasportaalin ulkoasua ja käyttöliittymää vapaasti, jos et m
 - **Kieli** – Tilauksen kieli (yleensä tämä kieli on mahdollisen asiakkaan kieli.)
 - **Toimitusosoitteen kuvaus** – Myyntitilauksen toimitusosoite
 
-Nimikkeille tarvitaan seuraavat kentät:
+Nimikkeille tarvitaan seuraavat sarakkeet:
 
 - **Tuote** – Tilattava tuote
 - **Määrä** – Valitun tuotteen määrä
@@ -135,11 +134,11 @@ Nimikkeille tarvitaan seuraavat kentät:
 - **Lähetys maa/alue** – Toimitusmaa tai -alue
 - **Toimitusosoitteen kuvaus** – Tilauksen toimitusosoite
 
-Sinun on varmistettava, että asiakasportaali jotenkin lähettää arvot kaikille näille kentille.
+Varmista, että asiakasportaali lähettää jollakin tavalla kaikkien näiden sarakkeiden arvot.
 
-Jos haluat lisätä sivulle kenttiä tai poistaa kenttiä, lisätietoja on kohdassa [Pikaluonnin lomakkeiden luominen tai muokkaaminen selkeytettyä tietojen syöttökokemusta varten](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Jos haluat lisätä sivulle sarakkeita tai poistaa sarakkeita, lisätietoja on kohdassa [Pikaluonnin lomakkeiden luominen tai muokkaaminen selkeytettyä tietojen syöttökokemusta varten](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-Jos haluat muuttaa tapaa, jolla kentät on määritetty valmiiksi ja kuinka arvot määritetään, kun sivu tallennetaan, tutustu seuraaviin Power Apps -portaalin käyttöohjeissa oleviin tietoihin:
+Jos haluat muuttaa tapaa, jolla sarakkeet on määritetty valmiiksi ja arvot määritetään, kun sivu tallennetaan, tutustu seuraaviin Power Apps -portaalin käyttöohjeissa oleviin tietoihin:
 
 - [Täytä kenttä valmiiksi](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Aseta arvo tallennettaessa](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
@@ -176,6 +175,3 @@ Lisätietoja asiakasportaalin määrittämisestä ja mukauttamisesta on seuraavi
 - [Portaalin päivittäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Portaalin konfiguraation siirtäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Ratkaisun elinkaaren hallinta: Dynamics 365 for Customer Engagement -sovellukset](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411897"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979995"
 ---
 # <a name="assortment-management"></a>Valikoiman hallinta
 
@@ -107,6 +106,3 @@ Seuraavat käyttöönottovaatimukset kannattaa ottaa huomioon, kun suunnittelet 
 - **Valikoimien ulkopuolinen myynti ja palautukset** – Tämä toiminto auttaa jälleenmyyjiä hallitsemaan valikoimiaan tehokkaasti, sillä he voivat rajoittaa saatavana olevien tuotteiden määrän tuotteisiin, jotka sisältyvät myymälän ydintuoteyhdistelmään. Tämä toiminto auttaa jälleenmyyjiä käsittelemään myös tilanteita, joissa tuote jätettiin vahingossa pois valikoimasta tai joissa tuote palautettiin valikoiman voimassaoloajankohdan ulkopuolella.
 
 Jos tuotetiedot eivät ole kanavatietokannassa, myyntipiste soittaa reaaliaikaisesti pääkonttoriin ja noutaa tarvittavat tiedot, jotta tuote voidaan myydä, palauttaa tai siirtää asiakastilaukseen. Tällä tavoin noudetut tuotetiedot ovat käytettävissä vain kyseisen tapahtuman aikana. Tuotetta ei lisätä valikoiman määritykseen. Niinpä jatkossa tehdään tarpeen mukaan reaaliaikaisia soittoja.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

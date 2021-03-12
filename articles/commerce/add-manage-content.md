@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d818ab91af7b1a74b580e145e4b602cca0ea1662
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411918"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980254"
 ---
 # <a name="ways-to-add-content"></a>Tapoja lisästä sisältöä
 
@@ -57,6 +56,3 @@ Aloita valitsemalla jokin seuraavista ohjeaiheista.
 [Asiakirjan tilat ja elinkaari](document-states-overview.md)
 
 [Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen](cross-channel-sharing.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

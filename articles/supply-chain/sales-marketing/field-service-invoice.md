@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f1790366cebf317472bc1ef9a5ecd2a19fe755d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528242"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980828"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Servicen sopimuslaskujen synkronointi Supply Chain Managementin vapaatekstilaskuihin
 
@@ -55,23 +54,23 @@ Seuraavat synkronointi tarvitaan, ennen kuin sopimuslaskut voidaan synkronoida:
 
 | Field Service  | Toimitusketjun hallinta                 |
 |----------------|----------------------------------------|
-| laskut       | CDS-asiakkaan vapaatekstilaskujen otsikot |
-| invoicedetails | CDS-asiakkaan vapaatekstilaskujen rivit   |
+| laskut       | Dataversen asiakkaan vapaatekstilaskujen otsikot |
+| invoicedetails | Dataversen asiakkaan vapaatekstilaskujen rivit   |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Field Servicen sopimukset luodut laskut voidaan synkronoida Supply Chain Managementiin Common Data Service -palvelun tietojen integrointiprojektina. Näiden laskujen päivitykset synkronoidaan Supply Chain Managementin vapaatekstilaskuihin, jos vapaatekstilaskun kirjanpidollinen tila on **Käsittelyssä**. Sen jälkeen kun vapaatekstilasku on kirjattu Supply Chain Managementissa ja kirjanpidolliseksi tilaksi on päivitetty **Valmis**, päivityksiä ei voi enää synkronoida Field Servicestä.
+Field Servicen sopimukset luodut laskut voidaan synkronoida Supply Chain Managementiin Microsoft Dataverse -palvelun tietojen integrointiprojektina. Näiden laskujen päivitykset synkronoidaan Supply Chain Managementin vapaatekstilaskuihin, jos vapaatekstilaskun kirjanpidollinen tila on **Käsittelyssä**. Sen jälkeen kun vapaatekstilasku on kirjattu Supply Chain Managementissa ja kirjanpidolliseksi tilaksi on päivitetty **Valmis**, päivityksiä ei voi enää synkronoida Field Servicestä.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM -ratkaisu
 
-**Sisältää sopimuksesta peräisin olevia rivejä** -kenttä on lisätty **Lasku**-yksikköön. Tämän kentän avulla voi varmistaa, että vain sopimuksesta luodut laskut synkronoidaan. Arvo on **tosi**, jos laskussa on vähintään yksi sopimuksesta peräisin oleva laskurivi.
+**Sisältää sopimuksesta peräisin olevia rivejä** -sarake on lisätty **Lasku**-taulukkoon. Tämän sarakkeen avulla voi varmistaa, että vain sopimuksesta luodut laskut synkronoidaan. Arvo on **tosi**, jos laskussa on vähintään yksi sopimuksesta peräisin oleva laskurivi.
 
-**On peräisin sopimuksesta** -kenttä on lisätty **Laskurivi**-yksikköön. Tämän kentän avulla voi varmistaa, että vain sopimuksesta luodut laskurivit synkronoidaan. Arvo on **tosi**, jos laskurivi on peräisin sopimuksesta.
+**On peräisin sopimuksesta** -sarake on lisätty **Laskurivi**-taulukkoon. Tämän sarakkeen avulla voi varmistaa, että vain sopimuksesta luodut laskurivit synkronoidaan. Arvo on **tosi**, jos laskurivi on peräisin sopimuksesta.
 
-**Laskun päivämäärä** on pakollinen kenttä Supply Chain Managementissa. Tämän vuoksi kentässä on Field Service -arvo ennen synkronointia. Seuraava logiikka lisättiin, jotta tämä vaatimus toteutuisi:
+**Laskun päivämäärä** on pakollinen kenttä Supply Chain Managementissa. Tämän vuoksi sarakkeessa on Field Service -arvo ennen synkronointia. Seuraava logiikka lisättiin, jotta tämä vaatimus toteutuisi:
 
-- Jos **Laskun päivämäärä** -kenttä on tyhjä **Lasku**-yksikössä (eli siinä ei ole arvoa), siksi määritetään se kuluva päivä, jolloin sopimuksesta peräisin oleva laskurivi lisätään.
-- Käyttäjä voi muuttaa **Laskun päivämäärä** -kenttää. Kun käyttäjä kuitenkin yrittää tallentaa sopimuksesta peräisin olevan laskun, hänen vastaanottaa liiketoimintaprosessin virheen, jos laskun **Laskun päivämäärä** -kenttä on tyhjä.
+- Jos **Laskun päivämäärä** -sarake on tyhjä **Lasku**-taulukossa (eli siinä ei ole arvoa), siksi määritetään se kuluva päivä, jolloin sopimuksesta peräisin oleva laskurivi lisätään.
+- Käyttäjä voi muuttaa **Laskun päivämäärä** -saraketta. Kun käyttäjä kuitenkin yrittää tallentaa sopimuksesta peräisin olevan laskun, hänen vastaanottaa liiketoimintaprosessin virheen, jos laskun **Laskun päivämäärä** -sarake on tyhjä.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
@@ -108,6 +107,3 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Sopimuslaskut (Field Servicesta Supply Chain Managementiin): Laskurivit
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

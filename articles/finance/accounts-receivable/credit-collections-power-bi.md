@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
-ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
+ms.openlocfilehash: dc68926b8123c7e513f9df46e2b9f9b8ae1311e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4442952"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979136"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinnan Power BI-sisältö
 
@@ -77,6 +76,3 @@ Power BI -sisältö **CustCollectionsBICrossCompany** sisältää raportin, joss
 | Maksukehotukset         | <ul><li>Perintäkoodin summat</li><li>Perintäkoodin summan tiedot</li><li>Maksukehotuksen summa yrityksen mukaan</li><li>Maksukehotuksen summa asiakasryhmän mukaan</li><li>Maksukehotuksen summa alueen mukaan</li></ul> |
 
 Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Voit viedä visualisoinnin kokoamat pohjana olevat tiedot pohjana olevien tietojen vientitoiminnolla.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

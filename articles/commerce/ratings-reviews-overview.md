@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1248ce660d765ddade1df7d79786202235019990
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed31982dad8af4509d8dd0615ae53e3d3806640f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412073"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979775"
 ---
 # <a name="ratings-and-reviews-overview"></a>Luokitukset ja arvostelut – yleiskatsaus
 
@@ -59,6 +58,3 @@ Luokitukset ja arvostelut -ratkaisu sisältää myös Business Intelligence (BI)
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
 [Tuoteluokitusten synkronoiminen Dynamics 365 Commerceissa](sync-product-ratings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

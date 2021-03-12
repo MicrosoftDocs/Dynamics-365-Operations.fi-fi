@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a69339bc678de8343dbf2646a4d6fe0ace9964c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbb4da093cd8a0fc6cd85e1f93dfb91f0fb8a382
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427032"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981128"
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Ajoita tuotantotilaus työvaiheiden ja töiden ajoittamisen avulla
 
@@ -56,6 +55,3 @@ Tämä aihe keskittyy tuotantotilaukseen ajoittamiseen työvaiheiden ja töiden 
 6. Valitse toimintoruudussa **Tuotantotilaus**.
 7. Valitset **Kaikki työt**. Huomaa, että aktiivisen reitin perusteella töiden ajoituksella luontiin viisi työtä.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

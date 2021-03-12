@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529575"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980803"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Asiakasportaali Dynamics 365 Supply Chain Managementin yhteenvedoksi
 
@@ -64,11 +63,8 @@ Asiakasportaali toimitetaan Power Apps -portaalien mallina. Se on riippuvainen P
 
 [Power Apps -portaalit](https://docs.microsoft.com/powerapps/maker/portals/overview) on ominaisuus, jonka avulla käyttäjät voivat luoda ulkoisen sivuston, johon organisaation ulkopuolelta tulevat henkilöt voisivat kirjautua. Portaalien tekemiseen tarvitaan vain vähän koodausta. Asiakasportaali on yksi monista Microsoftin käytettävissä olevista [Dynamics 365 -portaalin malleista](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365).
 
-[Kaksoiskirjoitus](https://docs.microsoft.com/powerapps/maker/portals/overview) on valmis infrastruktuurituote, joka sisältää lähes reaaliaikaisen vuorovaikutuksen Dynamics 365:n mallipohjaisten sovellusten ja Finance and Operations -sovellusten välillä. Kaksoiskirjoitus sisältää kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Common Data Servicen välillä. Tästä syystä tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa. Asiakasportaali määräytyy niiden entiteettien mukaan, jotka on synkronoitu kaksoiskirjoituksen kanssa. Ennen kuin Supply Chain Managementin tiedot voidaan tuoda esiin asiakasportaalissa, kaksoiskirjoitus on otettava käyttöön kaikille asiaankuuluviin entiteetteihin.
+[Kaksoiskirjoitus](https://docs.microsoft.com/powerapps/maker/portals/overview) on valmis infrastruktuurituote, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja Finance and Operations -sovellusten välillä. Kaksoiskirjoitus sisältää kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Microsoft Dataversen välillä. Tästä syystä tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa. Asiakasportaali määräytyy niiden taulukoiden mukaan, jotka on synkronoitu kaksoiskirjoituksella. Ennen kuin Supply Chain Managementin tiedot voidaan tuoda esiin asiakasportaalissa, kaksoiskirjoitus on otettava käyttöön kaikissa soveltuvissa taulukoissa.
 
 ![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 
 Asiakasportaali toimii lähtökohtana organisaatioille, jotka haluavat käyttää Power Apps -portaaleja, joiden on tarkoitus muodostaa ulkoinen verkkosivusto, joka käyttää Supply Chain Managementin asennuksen tietoja. Sen avulla organisaatiot voivat yhdistää kaksoiskirjoituksen, Supply Chain Managementin ja Power Apps -portaalit.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

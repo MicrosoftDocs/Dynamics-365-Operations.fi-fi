@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442721"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979584"
 ---
 # <a name="project-invoicing"></a>Projektin laskutus
 
@@ -75,7 +74,7 @@ Jos organisaatio edellyttää laskuehdotuksien tarkistamista ennen niiden kirjaa
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Määrärahatietojen tarkasteleminen projektilaskuluettelosivuilla
 
-Julkisen sektorin käyttäjät voivat lisätä **määrärahan tunnuksen** ja **määrärahan nimen** **Projektilaskuehdotukset**- ja **Projektilaskut**-luettelosivuille. Nämä sarakkeet otetaan käyttöön **Lisää määrärahan tiedot projektilaskuluettelosivuille** -ominaisuuden avulla. Tämä ominaisuus on oletusarvoisesti pois käytöstä. Se voidaan ottaa käyttöön kohdassa **Työtilat > Ominaisuuksien hallinta**. Ota yhteyttä järjestelmänvalvojaan, jos tarvitset apua tämän ominaisuuden käyttöönotossa.
+Julkisen sektorin käyttäjät voivat lisätä **määrärahan tunnuksen** ja **määrärahan nimen** **Projektilaskuehdotukset**- ja **Projektilaskut**-luettelosivuille. Nämä sarakkeet otetaan käyttöön **Lisää määrärahan tiedot projektilaskuluettelosivuille** -ominaisuuden avulla. Tämä ominaisuus on oletusarvoisesti pois käytöstä. Se voidaan ottaa käyttöön kohdassa **Työtilat > Ominaisuuksien hallinta**. Ota yhteyttä järjestelmänvalvojaan, jos tarvitset apua tämän ominaisuuden käyttöönotossa.
 
 ## <a name="on-account-invoicing"></a>Ennakkolaskutus
 Summa, jonka kirjaat projektin ennakkolaskulle, perustuu ajoitukseen, valmistumisprosenttiin ja muihin laskutusehtoihin, jotka on määritetty liittyvässä projektisopimuksessa. Summaa ei lasketa projektiin kirjattujen tuntien, nimikkeiden, kulujen tai maksujen perusteella. 
@@ -132,6 +131,3 @@ Voit luoda laskun, jossa on negatiivinen summa ja josta tulee hyvityslaskuksi lu
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

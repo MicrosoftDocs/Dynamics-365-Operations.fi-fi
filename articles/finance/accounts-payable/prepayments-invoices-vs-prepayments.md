@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247193732a49cf0d26f0437f57f3ed66061a118
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9c29529aa57eb7685e36f5407f4279544fdb701
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442723"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979535"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 
@@ -51,7 +50,7 @@ Monissa maissa kirjanpitokäytännöt vaativat, että asiakkaan maksamia tai toi
 3.  Luo maksukirjauskansio ja luo sitten uusi maksu.
 4.  Voit merkitä maksun ennakkomaksuksi. Jos maksu on merkitty ennakkomaksuksi, maksu kirjataan kirjanpitotileille, jotka on määritetty vaiheissa 1 ja 2 määritellylle kirjausprofiilille. Lisäksi jos maksu on merkitty ennakkomaksuksi, verot lasketaan, Joissakin maissa verot on maksettava ennakkomaksua kirjattaessa, vaikka laskua ei olisi luotu.
 5.  Kirjaa ennakkomaksu.
-6.  Valinnainen: Ennakkomaksun voi tilittää osto- tai myyntitilausta vastaan jo ennen laskun luomista. Valitse myynti- tai ostotilaussivulla toimintoruudusta **Selvitä tapahtumat**.
+6.  Valinnainen: Ennakkomaksun voi tilittää osto- tai myyntitilausta vastaan jo ennen laskun luomista. Valitse myynti- tai ostotilaussivulla toimintoruudusta **Selvitä tapahtumat**.
 7.  Kun toimittaja on toimittanut tavarat tai palvelut, kirjaa lasku. Jos tilitit ennakkomaksun osto- tai myyntitilausta vastaan vaiheessa 6, ennakkomaksu tilitetään automaattisesti luomaasi laskua vastaan. Jos et tilittänyt ennakkomaksua osto- tai myyntitilausta vastaan, voit tilittää sen laskua vastaan manuaalisesti valitsemalla asiakkaan tai toimittajan sivulta **Selvitä tapahtumat**. Tällöin ennakkomaksusumma palautetaan väliaikaiselta osto- tai myyntireskontran kirjanpitotililtä. Lisäksi jos verot on laskettu, ne peruutetaan, koska todelliset verot sisältyvät laskuun.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Ennakkomaksun laskutusprosessin yleiskatsaus
@@ -66,6 +65,3 @@ Ennakkomaksulaskuja käytetään liiketoiminnassa yleisesti. Ennakkomaksulaskun 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
