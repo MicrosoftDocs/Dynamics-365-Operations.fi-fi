@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f4c33191e9a3b8f7c211093ff733f6cd025cb9bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427442"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973882"
 ---
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
@@ -89,7 +88,7 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | **Vyöhykkeen laskenta**                                | Edellyttää, että metatiedot voidaan määrittää suoraan vyöhykkeessä.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Siirtoajan laskenta** ja **Kilometrien laskenta** | Hakee metatietoja suoraan kilometrikorvausmoduulin konfigurointiasetuslomakkeesta.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Esimerkki hinnan laskennan metatiedoista** Kuljetuksen hallintamoduuli vaatii alkuperäisen osoitteen, kohdeosavaltion ja maan/alueen sekä lähetyksen alku- ja päätepisteen tunnistamisen. Käyttämällä näitä vaatimuksia metatiedot näyttävät tiedot seuraavan taulukon mukaisesti. Taulukko sisältää myös tietoja vaadittavien syöttötietojen tyypistä.
+  **Esimerkki hinnan laskennan metatiedoista** Kuljetuksen hallintamoduuli vaatii alkuperäisen osoitteen, kohdeosavaltion ja maan/alueen sekä lähetyksen alku- ja päätepisteen tunnistamisen. Käyttämällä näitä vaatimuksia metatiedot näyttävät tiedot seuraavan taulukon mukaisesti. Taulukko sisältää myös tietoja vaadittavien syöttötietojen tyypistä.
 -   Voit määrittää nämä tiedot valitsemalla **Hintaperusteen tyyppi** -sivulta **Kuljetuksen hallinta** &gt; **Asetukset**.
 
 | Järjestys | Nimi                          | Kentän tyyppi | Tietotyyppi | Hakutyyppi    | Pakollinen |
@@ -99,6 +98,3 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | 3        | Kohteen alkupostinumero | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 4        | Kohteen loppupostinumero   | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 5        | Kohdemaa           | Määritys | merkkijono    | Maa/alue |           |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

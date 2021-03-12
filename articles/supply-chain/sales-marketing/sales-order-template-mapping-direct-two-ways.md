@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427267"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974982"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
 
@@ -64,8 +65,8 @@ Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntilaskujen otsikot ja
 
 | Toimitusketjun hallinta  | Myynti             |
 |-------------------------|-------------------|
-| CDS-myyntitilauksien otsikot | SalesOrders       |
-| CDS-myyntitilausrivit   | SalesOrderDetails |
+| Dataversen myyntitilauksen otsikot | SalesOrders       |
+| Dataversen myyntitilausrivit   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
@@ -75,7 +76,7 @@ Sinun ei tarvitse luoda tilauksia Sales-sovelluksessa. Sen sijaan voit luoda uus
 
 Supply Chain Managementin mallin suodattimet auttavat varmistamaan, että synkronointiin sisällytetään vain halutut myyntitilaukset.
 
-- Sekä myyntitilauksen tilaava asiakas että laskutusasiakas on saatava Sales-sovelluksesta, jotta nämä tiedot sisällytetään synkronointiin. Supply Chain Managementin **OrderingCustomerIsExternallyMaintained**- ja **InvoiceCustomerIsExternallyMaintained**-kenttiä käytetään myyntitilausten suodattamiseen tietoyksiköistä.
+- Sekä myyntitilauksen tilaava asiakas että laskutusasiakas on saatava Sales-sovelluksesta, jotta nämä tiedot sisällytetään synkronointiin. Supply Chain Managementin **OrderingCustomerIsExternallyMaintained**- ja **InvoiceCustomerIsExternallyMaintained**-sarakkeita käytetään myyntitilausten suodattamiseen tietotaulukoista.
 - Myyntitilaus on vahvistettava Supply Chain Managementissa. Salesiin synkronoidaan vain vahvistetut myyntitilaukset tai myyntitilaukset joilla on ylempi käsittelytila, kuten **Lähetetty** tai **Laskutettu**.
 - Kun myyntitilaus on luotu tai kun sitä on muokattu, **Laske kokonaismyynti** -eräajo on suoritettava Supply Chain Managementissa. Salesiin synkronoidaan vain myyntitilaukset, joiden loppusummat on laskettu.
 
@@ -103,10 +104,10 @@ Kun myyntitilausrivi synkronoidaan Salesista Supply Chain Managementiin, käytet
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Salesin ratkaisu prospektista käteiseksi
 
-**Tilaus**-yksikköön on lisätty uusia kenttiä, jotka näkyvät sivulla:
+**Tilaus**-taulukkoon on lisätty uusia sarakkeita, jotka näkyvät sivulla:
 
 - **Ulkoisesti ylläpidetty** – Määritä tämän vaihtoehdon arvoksi **Kyllä**, kun tilaus on peräisin Supply Chain Managementista.
-- **Käsittelytila** – Tämä kenttä näyttää tilauksen käsittelyn tilan Supply Chain Managementissa. Käytettävissä ovat seuraavat arvot:
+- **Käsittelytila** – Tämä sarake näyttää tilauksen käsittelyn tilan Supply Chain Managementissa. Käytettävissä ovat seuraavat arvot:
 
     - **Luonnos** – alkuperäinen tila, jossa tilaus luodaan Salesissa. Vain tässä käsittelytilassa olevia tilauksia voi muokata Salesissa.
     - **Aktiivinen** – tila sen jälkeen, kun tilaus on aktivoitu Salesissa **Aktivoi**-painikkeen avulla.
@@ -141,7 +142,7 @@ Seuraavat asetukset tulee päivittää järjestelmissä ennen myyntitilausten sy
 - Siirry kohtaan **Asetukset** &gt; **Hallinto** &gt; **Järjestelmäasetukset** &gt; **Sales** ja varmista, että käytössä ovat seuraavat asetukset:
 
     - **Käytä järjestelmän hinnanlaskentajärjestelmää** -asetuksen arvoksi on määritetty **Kyllä**.
-    - **Alennuksen laskutapa** -kentän arvoksi on määritetty **Rivinimike**.
+    - **Alennuksen laskutapa** -sarakkeen arvoksi on määritetty **Rivinimike**.
 
 ### <a name="setup-in-supply-chain-management"></a>Määritys Supply Chain Managementissa
 
@@ -151,10 +152,10 @@ Jos käytät myös työtilausten integrointia, sinun on määritettävä myynnin
 
 1. Valitse **Myynti ja markkinointi** \> **Asetukset** \> **Myyntitilaukset** \> **Myynnin alkuperä**.
 2. Luo uusi myynnin alkuperä valitsemalla **Uusi**.
-3. Anna **Myynnin alkuperä** -kentässä myynnin alkuperän nimi, kuten **SalesOrder**.
-4. Kirjoita **Kuvaus**-kenttään kuvaus, kuten **Myyntitilaus Salesista**.
+3. Anna **Myynnin alkuperä** -sarakkeessa myynnin alkuperän nimi, kuten **SalesOrder**.
+4. Anna **Kuvaus**-sarakkeessa kuvaus, kuten **Myyntitilaus Salesista**.
 5. Valitse **Alkuperän tyypin määritys** -valintaruutu.
-6. Valitse **Myynnin alkuperän tyyppi** -kentässä **Myyntitilauksen integrointi**.
+6. Valitse **Myynnin alkuperän tyyppi** -sarakkeessa **Myyntitilauksen integrointi**.
 7. Valitse **Tallenna**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Myyntitilaukset (Salesista Supply Chain Managementiin) - suora -integrointiprojektin asetukset
@@ -181,12 +182,12 @@ Jos käytät myös työtilausten integrointia, sinun on määritettävä myynnin
 ## <a name="template-mapping-in-data-integration"></a>Mallin yhdistäminen tietojen integroinnin yhteydessä
 
 > [!NOTE]
-> **Maksuehdot**-, **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-kentät eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden kenttien määrittämistä varten on määritettävä arvomääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä yksikkö synkronoidaan.
+> **Maksuehdot**-, **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-sarakkeet eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden sarakkeiden määrittämistä varten on määritettävä arvomääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä taulukko synkronoidaan.
 
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.
 
 > [!NOTE]
-> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin tai Supply Chain Managementista Salesiin.
+> Yhdistämismääritys osoittaa, minkä sarakkeen tiedot synkronoidaan Salesista Supply Chain Managementiin tai Supply Chain Managementista Salesiin.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Myyntitilaukset (Supply Chain Managementista Salesiin) - suora: OrderHeader
 
@@ -207,6 +208,3 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Prospektista käteiseksi](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

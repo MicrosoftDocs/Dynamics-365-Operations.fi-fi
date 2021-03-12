@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0bc6f90e7adb3facdfa1facb50fecb0de4ccb04d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7f8f2f8fe0dfd0eccd61ef76242e2a77c75b3983
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442833"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976238"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Tilitä asiakkaalta jälkeen päin päivitetty lasku
 
@@ -56,6 +55,3 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 10. Valitse Tosite.
 11. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

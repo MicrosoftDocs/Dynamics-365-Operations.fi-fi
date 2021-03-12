@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSCarrierGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2570479edac9bc8cc7aa998a8b69f54ffc10cd61
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 14a2f4c7d8d053ffd7b4b5d090113e1d9c3294c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646386"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974107"
 ---
 # <a name="carrier-groups"></a>Rahdinkuljettajaryhmät
 
@@ -38,6 +37,3 @@ Jos samalla reittisegmentillä on useita lähetyksen rahdinkuljettajia ja rahdin
 1. Anna **Nimi**-kentässä ryhmää kuvaava nimi.
 1. Lisää **Tiedot**-pikavälilehdessä rivi ja valitse siihen lähetyksen rahdinkuljettaja ja rahdinkuljettajapalvelu. Toista tämä vaihe, kunnes olet lisännyt ryhmään tarvittavan määrän rahdinkuljettajia.
 1. Sulje sivu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

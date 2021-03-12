@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 929ab7ae66a217de836ce49373faed76325c4d3a
-ms.sourcegitcommit: ac0a676c91e3053ad7f9432d576c9af3ff98a99a
+ms.openlocfilehash: 5a7fcda435fd957edbbe09d796685c0c742dc6a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4442986"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975813"
 ---
 # <a name="configure-ledgers"></a>Kirjanpitojen määrittäminen
 
@@ -82,6 +81,3 @@ Jos käytät kahta valuuttaa tai jos käytät yhtä valuuttaa, mutta tapahtumat 
 Toteutuneet voitot ja tappiot ovat tuottoja ja menetyksiä, jotka on saatu valmiista tapahtumista. Ne tallennetaan tuloslaskelmaan. Toteutumattomat voitot ja tappiot ovat tuottoja ja menetyksiä, jotka ovat materialisoituneet, mutta tapahtuma ei ole valmis. Toisin sanoen esimerkiksi lasku on kirjattu, mutta sitä ei ole vielä selvitetty ja maksettu. Toteutumattomat voitot ja tappiot tallennetaan taseeseen.
 
 Lisätietoja kahden valuutan käyttämisestä on kohdassa [Kaksoisvaluutta](dual-currency.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
