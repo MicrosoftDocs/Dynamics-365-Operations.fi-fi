@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528290"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996773"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Asiakasportaalin käyttäjien luominen ja hallinta
 
@@ -39,11 +38,11 @@ Kun käyttäjät rekisteröivät itsensä, niiden yhteystiedot luodaan automaatt
 
 ## <a name="prerequisite-setup"></a>Vaadittavat asetukset
 
-Power Apps -portaalien yhteyshenkilöt tallennetaan **yhteyshenkilöt** -yksikön tietueiksi Common Data Serviceen. Kaksoiskirjoitus synkronoi sitten nämä tiedot Microsoft Dynamics 365 Supply Chain Managementille tarpeen mukaan.
+Power Apps -portaalien yhteyshenkilöt tallennetaan **yhteyshenkilöt** -taulukon tietueiksi Microsoft Dataverseen. Kaksoiskirjoitus synkronoi sitten nämä tiedot Microsoft Dynamics 365 Supply Chain Managementille tarpeen mukaan.
 
 ![Asiakasportaalin yhteyshenkilöiden järjestelmäkaavio](media/customer-portal-contacts.png "Asiakasportaalin yhteyshenkilöiden järjestelmäkaavio")
 
-Ennen kuin aloitat uusien asiakkaiden kutsumisesta, varmista, että **Yhteyshenkilö**-yksikön yhdistämismääritys on otettu käyttöön kaksoiskirjoituksessa.
+Ennen kuin aloitat uusien asiakkaiden kutsumisesta, varmista, että **Yhteyshenkilö**-taulukon yhdistämismääritys on otettu käyttöön kaksoiskirjoituksessa.
 
 ## <a name="the-invitation-process"></a>Kutsuprosessi
 
@@ -58,15 +57,15 @@ Kun yhteyshenkilö on perustettu, sen voi nähdä Supply Chain Managementissa.
 
 Lisätietoja on ohjeaiheessa [yhteystiedon määrittäminen käytettäväksi](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) Power Apps -portaalien dokumentaatiossa.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Valmiit verkkoroolit ja yksikön käyttöoikeudet
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Valmiit verkkoroolit ja taulukon käyttöoikeudet
 
-Power Apps -portaalien käyttäjäroolit määritetään [verkkoroolien](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) ja [kohteen käyttöoikeuksien](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) mukaan. Asiakasportaalille määritetään joitakin valmiita rooleja. Voit luoda uusia rooleja ja muokata tai poistaa aiemmin luotuja rooleja.
+Power Apps -portaalien käyttäjäroolit määritetään [verkkoroolien](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) ja [taulukon käyttöoikeuksien](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) mukaan. Asiakasportaalille määritetään joitakin valmiita rooleja. Voit luoda uusia rooleja ja muokata tai poistaa aiemmin luotuja rooleja.
 
 ### <a name="out-of-box-web-roles"></a>Valmiit verkkoroolit
 
 Tässä osassa kuvataan asiakasportaalin mukana toimitetut verkkoroolit.
 
-Lisätietoja muiden käyttäjien roolien muokkaamisesta on ohjeaiheissa [Verkkoroolien luominen portaaleihin](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) ja [tietuepohjaisen suojauksen lisääminen portaalien yksikkötietojen avulla](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) Power Apps -portaalien dokumentaatiossa.
+Lisätietoja muiden käyttäjien roolien muokkaamisesta on kohdissa [Verkkoroolien luominen portaaleihin](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) ja [Tietuepohjaisen suojauksen lisääminen portaalien taulukko-oikeuksien avulla](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) Power Apps -portaalien dokumentaatiossa.
 
 #### <a name="administrator"></a>Järjestelmänvalvoja
 
@@ -96,6 +95,3 @@ Seuraavasta taulukosta ilmenee, mitkä myyntitilaukset kunkin verkkoroolin käyt
 
 > [!NOTE]
 > Vaikka sekä Sam että Jane ovat yhteyshenkilöitä, jotka työskentelevät asiakas X:ssä, he näkevät vain itse asettamiaan tilauksia eikä mitään muuta. Vaikka Maylla on järjestelmässä tilaus, hän ei näe tilausta asiakasportaalissa, koska hän on luvaton käyttäjä. (Lisäksi hän on asettanut tilauksen jonkin muun kanavan kautta kuin asiakasportaali.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

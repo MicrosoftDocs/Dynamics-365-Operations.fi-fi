@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528920"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998500"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
 
@@ -62,13 +61,13 @@ Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntitilausten otsikot j
 
 | **Field Service** | **Toimitusketjun hallinta** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS-myyntitilauksien otsikot |
-| msdyn_workorderservices | CDS-myyntitilausrivit   |
-| msdyn_workorderproducts | CDS-myyntitilausrivit   |
+| msdyn_workorders        | Dataversen myyntitilauksen otsikot |
+| msdyn_workorderservices | Dataversen myyntitilausrivit   |
+| msdyn_workorderproducts | Dataversen myyntitilausrivit   |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Työtilaukset luodaan Field Servicessä. Jos työtilaukset sisältävät vain ulkoisesti ylläpidettäviä tuotteita ja jos **Työtilauksen tila** -arvo on jokin muu kuin **Avoin - ajoittamaton** ja **Suljettu - peruutettu**, työtilaukset voidaan synkronoida Supply Chain Managementiin Common Data Service -tietojen integrointiprojektin kautta. Työtilausten päivitykset synkronoidaan myyntitilauksina Supply Chain Managementissa. Nämä päivitykset sisältävät tietoja alkuperän tyypistä ja tilasta.
+Työtilaukset luodaan Field Servicessä. Jos työtilaukset sisältävät vain ulkoisesti ylläpidettäviä tuotteita ja jos **Työtilauksen tila** -arvo on jokin muu kuin **Avoin - ajoittamaton** ja **Suljettu - peruutettu**, työtilaukset voidaan synkronoida Supply Chain Managementiin Microsoft Dataverse -tietojen integrointiprojektin kautta. Työtilausten päivitykset synkronoidaan myyntitilauksina Supply Chain Managementissa. Nämä päivitykset sisältävät tietoja alkuperän tyypistä ja tilasta.
 
 ## <a name="estimated-versus-used"></a>Ennakkolasketun ja käytetyn vertailu
 
@@ -273,6 +272,3 @@ Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatu
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004) tai (msdyn_allocated ne true))
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

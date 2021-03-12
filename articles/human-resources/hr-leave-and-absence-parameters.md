@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4418417"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4997098"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Loma- ja poissaoloparametrien määrittäminen
 
@@ -92,6 +92,3 @@ Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourc
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426840"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996323"
 ---
 # <a name="confirm-and-transfer"></a>Vahvista ja siirrä
 
@@ -230,6 +229,3 @@ Voit myös vahvistaa, että tapahtuman suhteet on päivitetty seuraavasti:
 - **Uuteen kuormaan jaettava määrä** -vaihtoehto toimii myös silloin, kun osa jäljelle jääneistä työn otsikoista on *Kesken*-tilassa. Tämän vuoksi voit käyttää toimintoa, vaikka työntekijät ovat jo aloittaneet tilausten keräilyn.
 - Jos valitset kohdan **Peruuta täyttämätön määrä** silloin, kun jäljelle jääneen työn tila on *Auki* tai *Kesken*, näytölle tulee seuraava virhesanoma: Jäljelle jäänyttä kuormamäärää ei voi peruuttaa. Työ on tarkoitettu kuormalle.
 - Jos valitset kohdan **Peruuta täyttämätön määrä** silloin, kun jäljelle jäänyttä työtä ei ole, mutta kuormassa on vapauttamattomia kuormarivejä, näytölle tulee seuraava virhesanoma: Kuorman lähetystä ei voitu vahvistaa, koska nimikkeen määrä ylittää alitoimitukselle määritetyn prosenttiosuuden. Voit välttää tämän virhesanoman asettamalla vapauttamattoman kuormarivin **Alitoimitus**-prosenttiosuuden 100 prosenttiin. Vapauttamattomia rivejä ei siirretä uuteen kuormaan, mutta nykyinen kuorma vahvistetaan alitoimituksen yhteydessä. Tällöin et voi vapauttaa alkuperäistä tilausta uudelleen. Siksi sinun on hoidettava se jollakin muulla tavalla.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
