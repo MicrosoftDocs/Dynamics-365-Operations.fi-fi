@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 04605370cbcc7b8c13552ae7f999212a1efabfab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427097"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967059"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -53,7 +52,7 @@ Saat suunnittelun optimoinnin sopivuusanalyysin tulokset valitsemalla ensin **P�
 
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Yhteenveto sopivuusanalyysin mahdollisista tuloksista
 
-Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopivan analyysin jälkeen. Numeromerkit (_\#_) korvataan numerolla, joka ilmaisee luettelossa olevan varasto-oton sisältävien tietojen määrän.
+Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopivan analyysin jälkeen. Numeromerkit (_\#_) korvataan numerolla, joka ilmaisee luettelossa olevan varasto-oton sisältävien tietojen määrän. Tuotetut tai esiversion toiminnot ovat saatavana versiossa 10.0.9 tai sitä uudemmassa versiossa (ellei Odotettu käytettävyys -sarakkeessa ole mainittu suurempi versionumero).
 
 | Ominaisuus | Lueteltu ongelma | Selitys | Odotettu käytettävyys |
 | --- | --- | --- | --- |
@@ -66,17 +65,17 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Vahvistus | Automaattisen vahvistuksen määrittäminen ja nimikekattavuustietueet: _\#_ | Version 10.0.7 ja uudempien versioiden automaattista vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos _suunnittelun optimoinnin automaattinen vahvistus_ -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |
 | Vahvistus | Määritä pääsuunnitelmat ja automaattinen vahvistus: _\#_ | Version 10.0.7 ja uudempien versioiden automaattista vahvistamista tuetaan erillisenä kiinteyttämiserätyönä, kun pääsuunnittelu on suoritettu (jos _suunnittelun optimoinnin automaattinen vahvistus_ -toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Huomaa, että suunnittelun optimoinnin automaattinen vahvistus perustuu tilauspäivämäärään (aloituspäivämäärä), ei tarvepäivämäärään (päättymispäivämäärä). Näin varmistetaan, että suunniteltujen tilausten vahvistaminen tapahtuu ajallaan ilman, että läpimenoaikaa tarvitsee sisällyttää vahvistuksen aikarajakohtaan. | Tuettu |
 | FitAnalysisPlanningItems | Suunnittelunimikkeet: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä suunnittelunimikkeitä käsitellään tavallisten nimikkeiden tapaan, kun suunnittelun optimointi on käytössä. | 2021. lokakuuta |
-| Ennuste | Kattavuusryhmät, joiden "sisällytetyt konsernitilaukset" ovat käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä pääsuunnitteluun ei kuulu loppupään suunniteltua kysyntää, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Huomaa, että vapautetut/vahvistetut tilaukset toimivat säännöllisesti konsernin sisäisissä toiminnoissa ja kattavat useimmat skenaariot. | 2020. lokakuuta |
-| Ennuste | Kattavuusryhmät, joiden ennuste on "Pienennä ennustetta"-asetuksen arvoksi on määritetty eri arvo kuin "Tilaukset": _\#_ | Oletusarvon mukaan suunnittelun optimointi käyttää tilauksille "Pienennä ennustetta" -asetusta tästä asetuksesta riippumatta. | marraskuu 2020 |
+| Ennuste | Kattavuusryhmät, joiden "sisällytetyt konsernitilaukset" ovat käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä pääsuunnitteluun ei kuulu loppupään suunniteltua kysyntää, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Huomaa, että vapautetut/vahvistetut tilaukset toimivat säännöllisesti konsernin sisäisissä toiminnoissa ja kattavat useimmat skenaariot. | Esiversiossa |
+| Ennuste | Kattavuusryhmät, joiden ennuste on "Pienennä ennustetta"-asetuksen arvoksi on määritetty eri arvo kuin "Tilaukset": _\#_ | Oletusarvon mukaan suunnittelun optimointi käyttää tilauksille "Pienennä ennustetta" -asetusta tästä asetuksesta riippumatta. | Tuettu |
 | Ennuste | Ennustemallit, joissa osamalleja: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä alamalleja käyttäviä ennusteita ei tueta, kun suunnittelun optimointi on käytössä. Ne ohitetaan riippumatta tästä asetuksesta. | Huhtikuun 2021. |
 | Ennuste | Pääsuunnitelmat, joiden "sisältää tarjontaennusteen" -asetukset ovat käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tarjontaennusteita ei tueta, kun suunnittelun optimointi on käytössä. Ne ohitetaan riippumatta tästä asetuksesta. | 2021. lokakuuta |
 | Lukitusaikaraja | Kattavuusryhmät, joissa on lukittu aikaraja määritetty: _\#_ | Jäädytysaikarajaa ei käytetä usein, eikä sitä ole vielä suunniteltu suunnitteluoptimointia varten. Tällä hetkellä jäädytysaikarajan asetus ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | Ei saatavilla |
 | Lukitusaikaraja | Kohteen kattavuustietueet, joissa on lukittu aikaraja määritetty: _\#_ | Jäädytysaikarajaa ei käytetä usein, eikä sitä ole vielä suunniteltu suunnitteluoptimointia varten. Tällä hetkellä jäädytysaikarajan asetus ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | Ei saatavilla |
 | Lukitusaikaraja | Pääsuunnitelmat, joissa on lukittu aikaraja määritetty: _\#_ | Jäädytysaikarajaa ei käytetä usein, eikä sitä ole vielä suunniteltu suunnitteluoptimointia varten. Tällä hetkellä jäädytysaikarajan asetus ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | Ei saatavilla |
-| Konsernin sisäinen | Pääsuunnitelmat, mukaan lukien suunniteltu tuotantovirran kysyntä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä pääsuunnitteluun ei kuulu loppupään suunniteltua kysyntää, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Huomaa, että vapautetut/vahvistetut tilaukset toimivat normaalisti konsernin sisäisissä toiminnoissa ja kattavat useimmat skenaariot. | 2020. lokakuuta |
+| Konsernin sisäinen | Pääsuunnitelmat, mukaan lukien suunniteltu tuotantovirran kysyntä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä pääsuunnitteluun ei kuulu loppupään suunniteltua kysyntää, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Huomaa, että vapautetut/vahvistetut tilaukset toimivat normaalisti konsernin sisäisissä toiminnoissa ja kattavat useimmat skenaariot. | Esiversiossa |
 | Kanban | Kohteen kattavuusrekisterit, joissa on suunniteltu tilaustyyppi kanban: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä kanbaniin määritetty nimikekattavuus ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Kanban-suunnitellun tilauksen tyyppi luo varoituksen pääsuunnittelun aikana, ja suunnitellut ostotilaukset luodaan kattamaan liittyvä kysyntä. | 2021. lokakuuta |
 | Kanban | Nimikkeet, joiden oletusjärjestystyyppi on kanban: _\#_ | Tällä hetkellä kanbaniin määritetty oletustilaustyyppi ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Kanban-oletuksen tilauksen tyyppi luo varoituksen pääsuunnittelun aikana, ja suunnitellut ostotilaukset luodaan kattamaan liittyvä kysyntä. | 2021. lokakuuta |
-| Tuotteen elinkaaren tila   | Tuotteen elinkaaren tilat eivät ole aktiivisia suunnittelulle: _\#_ | Tämä on odottava ominaisuus. Tällä hetkellä tuotteen elinkaaren tila ohitetaan, kun suunnittelun optimointi on käytössä. Voit säätää suunnitelman tason tuotesuodatinta siten, että vältetään niiden tuotteiden sisällyttämistä, joiden suunnittelussa tuotteen elinkaaren tila on poistettu käytöstä. | marraskuu 2020 |
+| Tuotteen elinkaaren tila   | Tuotteen elinkaaren tilat eivät ole aktiivisia suunnittelulle: _\#_ | Tämä on odottava ominaisuus. Tällä hetkellä tuotteen elinkaaren tila ohitetaan, kun suunnittelun optimointi on käytössä. Voit säätää suunnitelman tason tuotesuodatinta siten, että vältetään niiden tuotteiden sisällyttämistä, joiden suunnittelussa tuotteen elinkaaren tila on poistettu käytöstä. | Tuettu |
 | Tuotantoympäristö | Tuoterakennerivit, joilla on pyöristys tai useita asetuksia: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä pyöristystä ja useita asetuksia ei oteta huomioon tuoterakenneriveillä, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | Huhtikuun 2021. |
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla on kaavan mittaus: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä kaavan mittaa ei oteta huomioon tuoterakenneriveillä ja kaavassa, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | 2021. lokakuuta |
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla käytetään nimikkeen korvausta (suunnitteluryhmät): _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä nimikkeen korvausta (suunnitteluryhmät) ei oteta huomioon tuoterakenneriveillä ja kaavassa, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | 2021. lokakuuta |
@@ -85,7 +84,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla käytetään vaiheittaista kulutusta: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä vaiheenkulutusta ei oteta huomioon, kun tuoterakenne- ja kaavarivit ohitetaan, kun suunnittelun optimointi on käytössä. | 2021. lokakuuta |
 | Tuotantoympäristö | Tuoterakenteet, joille on määritetty vakiohävikki tai muuttuva hävikki: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tuoterakenteissa määritetyt vakiohävikki ja muuttuva hävikki ohitetaan, kun suunnittelun optimointi on käytössä. | 2021. lokakuuta |
 | Tuotantoympäristö | Tuoterakenteet, joissa käytetään alihankintaa: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä alihankinta-asetus ohitetaan tuoterakenteissa, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | 2021. lokakuuta |
-| Tuotantoympäristö | Tuoterakenteet ilman sivustoa: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tuoterakenteet ilman sivustoa ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | 2020. lokakuuta |
+| Tuotantoympäristö | Tuoterakenteet ilman sivustoa: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tuoterakenteet ilman sivustoa ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | Tuettu |
 | Tuotantoympäristö | Kysyntä tietyillä määritetyillä tuoterakenne- tai reititysvaatimuksilla: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä kysyntään määritetyt tuoterakenne- tai reititysvaatimukset (kuten alituoterakenne tai myyntitilauksen alireititys) ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Vakiotuoterakennetta tai -reittiä käytetään tähän asetukseen katsomatta. | 2021. lokakuuta |
 | Tuotantoympäristö | Kaavan versiot, joissa on oheis-/sivutuotteita: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä kaavaversioon liittyvät oheistuotteet ja sivutuotteet ohitetaan, kun suunnittelun optimointi on käytössä. | 2021. lokakuuta |
 | Tuotantoympäristö | Kaavan versiot ja saanto: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tuotto, joka liittyy kaavaversioon ohitetaan, kun suunnittelun optimointi on käytössä. | 2021. lokakuuta |
@@ -97,8 +96,8 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: _\#_ | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | 2021. lokakuuta |
 | Tarjouspyyntö | Pääsuunnitelmat ja tarjouspyyntö käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tarjouspyyntöjä (RFQs) ei pidetä vaatimuksina, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | 2021. lokakuuta |
 | Ehdotukset | Pääsuunnitelmat, joissa ehdotukset on otettu käyttöön: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä vaatimuksia ei oteta huomioon, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | 2021. lokakuuta |
-| Varmuusmarginaalit | Kattavuusryhmät varmuusmarginaalin kanssa: _\#_ | Tämä ominaisuus odottaa. Turvamarginaali ohitetaan sillä hetkellä, kun suunnittelun optimointi on käytössä. Voit kompensoida tämän ongelman suurentaen läpimenoaikaa niin, että se sisältää turvamarginaalin. | 2020. lokakuuta |
-| Varmuusmarginaalit | Pääsuunnitelmat varmuusmarginaalin kanssa: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä turvamarginaali ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. Voit kompensoida tämän ongelman suurentaen läpimenoaikaa niin, että se sisältää turvamarginaalin. | 2020. lokakuuta |
+| Varmuusmarginaalit | Kattavuusryhmät varmuusmarginaalin kanssa: _\#_ | Tämä ominaisuus odottaa. Turvamarginaali ohitetaan sillä hetkellä, kun suunnittelun optimointi on käytössä. Voit kompensoida tämän ongelman suurentaen läpimenoaikaa niin, että se sisältää turvamarginaalin. | Vastaanottomarginaali: tuetaan. Uudelleentilausmarginaali ja toimitusmarginaali: huhtikuu 2021 |
+| Varmuusmarginaalit | Pääsuunnitelmat varmuusmarginaalin kanssa: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä turvamarginaali ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. Voit kompensoida tämän ongelman suurentaen läpimenoaikaa niin, että se sisältää turvamarginaalin. | Vastaanottomarginaali: tuetaan. Uudelleentilausmarginaali ja toimitusmarginaali: huhtikuu 2021 |
 | Varmuusvaraston täyttäminen | Nimikkeiden kattavuustiedot, joissa on "täytä vähimmäisvaatimukset", poikkeavat tämän päivän päivämäärästä ja hankinta-ajasta: _\#_ | Suunnittelun optimointi käyttää aina *kuluvan päivän päivämäärää ja hankinta-aikaa*. Tämä muutos tehdään, kun halutaan valmistautua yksinkertaistettuihin suunnitteluasetuksiin tulevaisuudessa. Jos toimitusaika ei sisälly varmuusvarastoon, nykyiselle alhaiselle käytettävissä olevalle varastolle luodut suunnitellut tilaukset viivästyvät aina läpimenoajan vuoksi. Tämä voi aiheuttaa merkittäviä meluongelmia ja ei-toivottuja suunniteltuja tilauksia. Paras käytäntö on muuttaa asetusta siten, että *kuluvan päivän päivämäärää + hankinta-aikaa* käytetään. Päivitä päätiedot ja varoitusten välttämiseksi. | Ei saatavilla |
 | Myyntitarjoukset | Pääsuunnitelmat ja myyntitarjoukset käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tarjouksia ei oteta huomioon, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | 2021. lokakuuta |
 | Säilyvyysaika | Pääsuunnitelmat, joissa säilyvyysaika on otettu käyttöön: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä säilyvyysaikaa ei oteta huomioon, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | 2021. lokakuuta |
@@ -114,6 +113,3 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 [Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
 
 [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411862"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965112"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Laajennettujen takuiden luominen ja määrittäminen
 
@@ -142,7 +141,7 @@ Takuuryhmä on takuunimikkeiden ja takuunalaisten nimikkeiden välinen suhde. My
 
 Takuuryhmä määritetään Commercessa seuraavasti:
 
-1. Valitse  **Retail ja Commerce \> Tuotteet ja luokat \> Takuu \> Takuuryhmät**.
+1. Valitse **Retail ja Commerce \> Tuotteet ja luokat \> Takuu \> Takuuryhmät**.
 1. Luo takuuryhmä valitsemalla **Uusi**.
 1. Kirjoita uuden ryhmä nimi **Nimi**-kenttään.
 1. Kirjoita **Yleiset**-pikavälilehden **Kuvaus**-kenttään ryhmän kuvaus.
@@ -239,6 +238,3 @@ Takuu on palvelu, joka koskee tiettyä yksilöityä tuotetta. Dynamics 365:n tuo
 [Valikoimien määrittäminen](set-up-assortments.md)
 
 [Numerosarjojen yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
