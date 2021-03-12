@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411847"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972452"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -240,6 +239,3 @@ Lisäksi **vain** hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 Hinta on yksi tärkeimmistä tekijöistä, jotka ohjaavat monien asiakkaiden ostopäätöksiä, ja monet asiakkaat vertailevat hintoja eri sivustoilla ennen kuin ostavat. Vähittäiskauppiaat tarkkailevat kilpailijoitaan huolellisesti ja toteuttavat usein kampanjoita varmistaakseen, että tarjoavat kilpailukykyiset hinnat. Jotta nämä vähittäismyyjät voisivat houkutella asiakkaita, on erittäin tärkeää, että tuotehaku, selaustoiminto, luettelot ja tuotetietosivut näyttävät tarkat hinnat.
 
 Tulevassa Commerce-versiossa **GetActivePrices**-ohjelmointirajapinta (API) palaa hintoihin, joissa on yksinkertaisia alennuksia (esimerkiksi yksirivinen alennus, joka ei riipu muista ostoskorin nimikkeistä). Tällä tavoin näytettävät hinnat ovat lähellä todellista määrää, jonka asiakkaat maksavat nimikkeistä. Tämä ohjelmointirajapinta käsittää kaikki yksinkertaisten alennusten tyypit: kumppanuuteen, uskollisuuteen ja luetteloon perustuvat sekä kanavapohjaiset alennukset. Lisäksi ohjelmointirajapinta antaa käyttöön sovellettavien alennusten nimet ja voimassaolotiedot, jotta jälleenmyyjät voivat antaa hinnan tarkemman kuvauksen ja luoda kiireellisyyden, jos alennuksen voimassaoloaika umpeutuu pian.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 3990365dda0a0cff7adcc1d97120293d43f6e858
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412100"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973125"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen
 
@@ -137,6 +136,3 @@ Jos nyt käytät kanavan URL-perusosoitetta ja siirryt kyseisen sivuston kanavie
 [Asiakirjan tilat ja elinkaari](document-states-overview.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

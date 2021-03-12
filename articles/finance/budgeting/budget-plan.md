@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442898"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971275"
 ---
 # <a name="budget-planning"></a>Budjettisuunnittelu
 
@@ -106,7 +105,7 @@ Budjettisuunnittelussa käytetään erityisiä suojauskäytäntöjä määrittä
 
 2.5. Valitse "Myönnä käyttöoikeudet yksittäisille organisaatioille". Valitse ensimmäisessä vaiheessa luotu Organisaatiohierarkia. Valitse ensin Finance-solmu ja sitten Myönnä alatasot -painike. 
 
-***Tärkeää!*** *Tarkista, että olet DEMF-yrityksen yhteydessä, kun suoritat tätä tehtävää, sillä organisaatioiden suojaus sovelletaan yrityksittäin* 
+**_Tärkeää!_* _ _Tarkista, että olet DEMF yrityksen yhteydessä, kun suoritat tätä tehtävää, sillä organisaatioiden suojaus sovelletaan yrityksittäin* 
 
 ### <a name="task-3-create-scenarios"></a>Tehtävä 3: Luo skenaarioita
 3.1. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunnittelun konfiguraatio. "Skenaariot"-sivulla, pane merkille ne skenaariot, joita käytämme myöhemmin tällä kurssilla: edellisen vuoden todeutuneet ja budjetoidut. 
@@ -247,6 +246,3 @@ C. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunni
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
