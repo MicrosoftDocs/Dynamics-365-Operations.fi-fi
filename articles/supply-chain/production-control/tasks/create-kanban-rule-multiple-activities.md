@@ -11,51 +11,50 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, KanbanFlowSelection, InventItemIdLookupSimple, KanbanCreateScheduled, Kanban
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68cac0f581e786cdb3801e03fb60db7bc05ffb2f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c25d47a78d1cc91ee2625ef628d7b9ba345b097
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426792"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977910"
 ---
-# <a name="create-a-kanban-rule-for-multiple-activities"></a><span data-ttu-id="6f09f-103">Luo kanban-sääntö usealle tehtävälle</span><span class="sxs-lookup"><span data-stu-id="6f09f-103">Create a kanban rule for multiple activities</span></span>
+# <a name="create-a-kanban-rule-for-multiple-activities"></a><span data-ttu-id="0992a-103">Luo kanban-sääntö usealle tehtävälle</span><span class="sxs-lookup"><span data-stu-id="0992a-103">Create a kanban rule for multiple activities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6f09f-104">Seuraavassa menettelyssä kuvataan, miten luot kanban-säännön, joka sisältää useita tuotantovirran toimenpiteitä.</span><span class="sxs-lookup"><span data-stu-id="6f09f-104">This procedure shows how to create a kanban rule that includes multiple activities from a production flow.</span></span> <span data-ttu-id="6f09f-105">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="6f09f-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="6f09f-106">Tämä tehtävä on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun tuotteen tuotannon valmisteluun lean-ympäristössä.</span><span class="sxs-lookup"><span data-stu-id="6f09f-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
+<span data-ttu-id="0992a-104">Seuraavassa menettelyssä kuvataan, miten luot kanban-säännön, joka sisältää useita tuotantovirran toimenpiteitä.</span><span class="sxs-lookup"><span data-stu-id="0992a-104">This procedure shows how to create a kanban rule that includes multiple activities from a production flow.</span></span> <span data-ttu-id="0992a-105">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="0992a-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="0992a-106">Tämä tehtävä on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun tuotteen tuotannon valmisteluun lean-ympäristössä.</span><span class="sxs-lookup"><span data-stu-id="0992a-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
 
 
-## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="6f09f-107">Luo uusi kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="6f09f-107">Create a new kanban rule</span></span>
-1. <span data-ttu-id="6f09f-108">Siirry kohtaan Tuotetietojen hallinta > Lean-valmistus > Kanban-säännöt.</span><span class="sxs-lookup"><span data-stu-id="6f09f-108">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-2. <span data-ttu-id="6f09f-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="6f09f-109">Click New.</span></span>
-3. <span data-ttu-id="6f09f-110">Valitse Täydennysstrategia-kentässä Ajoitettu.</span><span class="sxs-lookup"><span data-stu-id="6f09f-110">In the Replenishment strategy field, select 'Scheduled'.</span></span>
-4. <span data-ttu-id="6f09f-111">Anna tai valitse Ensimmäinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="6f09f-111">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="6f09f-112">Valitse SpeakerAssemblyAndPolish.</span><span class="sxs-lookup"><span data-stu-id="6f09f-112">Select SpeakerAssemblyAndPolish.</span></span>  
-5. <span data-ttu-id="6f09f-113">Valitse useiden tehtävien valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="6f09f-113">Select the Multiple activities check box.</span></span>
-    * <span data-ttu-id="6f09f-114">Kanban-sääntöön on tarkoitus sisällyttää useampi kuin yksi tehtävä.</span><span class="sxs-lookup"><span data-stu-id="6f09f-114">The purpose is to include more than one activity in the kanban rule.</span></span> <span data-ttu-id="6f09f-115">Valitset polun tuotantovirrassa, kun valitset viimeisen suunnitelman tehtävän.</span><span class="sxs-lookup"><span data-stu-id="6f09f-115">You choose a path in the production flow when you select the last plan activity.</span></span>  
-6. <span data-ttu-id="6f09f-116">Anna tai valitse Viimeinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="6f09f-116">In the Last plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="6f09f-117">Valitse SpeakerTestAndPackaging.</span><span class="sxs-lookup"><span data-stu-id="6f09f-117">Select SpeakerTestAndPackaging.</span></span> <span data-ttu-id="6f09f-118">Sivu aukeaa automaattisesti, kun olet valinnut arvon.</span><span class="sxs-lookup"><span data-stu-id="6f09f-118">After you select the value, a page automatically opens.</span></span> <span data-ttu-id="6f09f-119">Valitse kanban-työnkulku SpeakerAssemblyAndPolish > SpeakerTestAndPackaging.</span><span class="sxs-lookup"><span data-stu-id="6f09f-119">Select the kanban flow SpeakerAssemblyAndPolish > SpeakerTestAndPackaging.</span></span> <span data-ttu-id="6f09f-120">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="6f09f-120">Click OK.</span></span>  
-7. <span data-ttu-id="6f09f-121">Laajenna Tiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="6f09f-121">Expand the Details section.</span></span>
-8. <span data-ttu-id="6f09f-122">Anna tai valitse Tuote-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="6f09f-122">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="6f09f-123">Valitse nimike L0006.</span><span class="sxs-lookup"><span data-stu-id="6f09f-123">Select Item L0006.</span></span>  
+## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="0992a-107">Luo uusi kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="0992a-107">Create a new kanban rule</span></span>
+1. <span data-ttu-id="0992a-108">Siirry kohtaan Tuotetietojen hallinta > Lean-valmistus > Kanban-säännöt.</span><span class="sxs-lookup"><span data-stu-id="0992a-108">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="0992a-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="0992a-109">Click New.</span></span>
+3. <span data-ttu-id="0992a-110">Valitse Täydennysstrategia-kentässä Ajoitettu.</span><span class="sxs-lookup"><span data-stu-id="0992a-110">In the Replenishment strategy field, select 'Scheduled'.</span></span>
+4. <span data-ttu-id="0992a-111">Anna tai valitse Ensimmäinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="0992a-111">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="0992a-112">Valitse SpeakerAssemblyAndPolish.</span><span class="sxs-lookup"><span data-stu-id="0992a-112">Select SpeakerAssemblyAndPolish.</span></span>  
+5. <span data-ttu-id="0992a-113">Valitse useiden tehtävien valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="0992a-113">Select the Multiple activities check box.</span></span>
+    * <span data-ttu-id="0992a-114">Kanban-sääntöön on tarkoitus sisällyttää useampi kuin yksi tehtävä.</span><span class="sxs-lookup"><span data-stu-id="0992a-114">The purpose is to include more than one activity in the kanban rule.</span></span> <span data-ttu-id="0992a-115">Valitset polun tuotantovirrassa, kun valitset viimeisen suunnitelman tehtävän.</span><span class="sxs-lookup"><span data-stu-id="0992a-115">You choose a path in the production flow when you select the last plan activity.</span></span>  
+6. <span data-ttu-id="0992a-116">Anna tai valitse Viimeinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="0992a-116">In the Last plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="0992a-117">Valitse SpeakerTestAndPackaging.</span><span class="sxs-lookup"><span data-stu-id="0992a-117">Select SpeakerTestAndPackaging.</span></span> <span data-ttu-id="0992a-118">Sivu aukeaa automaattisesti, kun olet valinnut arvon.</span><span class="sxs-lookup"><span data-stu-id="0992a-118">After you select the value, a page automatically opens.</span></span> <span data-ttu-id="0992a-119">Valitse kanban-työnkulku SpeakerAssemblyAndPolish > SpeakerTestAndPackaging.</span><span class="sxs-lookup"><span data-stu-id="0992a-119">Select the kanban flow SpeakerAssemblyAndPolish > SpeakerTestAndPackaging.</span></span> <span data-ttu-id="0992a-120">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0992a-120">Click OK.</span></span>  
+7. <span data-ttu-id="0992a-121">Laajenna Tiedot-osa.</span><span class="sxs-lookup"><span data-stu-id="0992a-121">Expand the Details section.</span></span>
+8. <span data-ttu-id="0992a-122">Anna tai valitse Tuote-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="0992a-122">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="0992a-123">Valitse nimike L0006.</span><span class="sxs-lookup"><span data-stu-id="0992a-123">Select Item L0006.</span></span>  
 
-## <a name="create-kanban-and-view-jobs"></a><span data-ttu-id="6f09f-124">Luo kanban ja näytä työt</span><span class="sxs-lookup"><span data-stu-id="6f09f-124">Create kanban and view jobs</span></span>
-1. <span data-ttu-id="6f09f-125">Laajenna Kanbanit-osa.</span><span class="sxs-lookup"><span data-stu-id="6f09f-125">Expand the Kanbans section.</span></span>
-2. <span data-ttu-id="6f09f-126">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="6f09f-126">Click Add.</span></span>
-3. <span data-ttu-id="6f09f-127">Syötä Uusien kanbanien määrä -kenttän arvoksi "1".</span><span class="sxs-lookup"><span data-stu-id="6f09f-127">In the Number of new kanbans field, enter '1'.</span></span>
-    * <span data-ttu-id="6f09f-128">Tämä luo yhden kanbanin.</span><span class="sxs-lookup"><span data-stu-id="6f09f-128">This will create one kanban.</span></span>  
-4. <span data-ttu-id="6f09f-129">Määritä tuotemääräksi 3.</span><span class="sxs-lookup"><span data-stu-id="6f09f-129">Set Product quantity to '3'.</span></span>
-    * <span data-ttu-id="6f09f-130">Kanban käsittelee 3 tuotetta.</span><span class="sxs-lookup"><span data-stu-id="6f09f-130">Kanban will process 3 products.</span></span>  
-5. <span data-ttu-id="6f09f-131">Syötä päivämäärä ja kellonaika Eräpäivä/-kellonaika -kenttään.</span><span class="sxs-lookup"><span data-stu-id="6f09f-131">In the Due date/time field, enter a date and time.</span></span>
-    * <span data-ttu-id="6f09f-132">Voit antaa arvoksi Tänään.</span><span class="sxs-lookup"><span data-stu-id="6f09f-132">You can enter Today.</span></span>  
-6. <span data-ttu-id="6f09f-133">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="6f09f-133">Click Create.</span></span>
-7. <span data-ttu-id="6f09f-134">Valitse Erittely.</span><span class="sxs-lookup"><span data-stu-id="6f09f-134">Click Details.</span></span>
-    * <span data-ttu-id="6f09f-135">Huomaa, että kanbanilla on kaksi tuotantovirran prosessityötä.</span><span class="sxs-lookup"><span data-stu-id="6f09f-135">Notice that the kanban has two process jobs from the production flow.</span></span> <span data-ttu-id="6f09f-136">Ensimmäinen on SpeakerAssemblyAndPolish ja toinen SpeakerTestAndPackaging.</span><span class="sxs-lookup"><span data-stu-id="6f09f-136">The first one is SpeakerAssemblyAndPolish, and the second one is SpeakerTestAndPackaging.</span></span>  
-    * <span data-ttu-id="6f09f-137">Tämä on viimeinen vaihe!</span><span class="sxs-lookup"><span data-stu-id="6f09f-137">This is the last step!</span></span>  
+## <a name="create-kanban-and-view-jobs"></a><span data-ttu-id="0992a-124">Luo kanban ja näytä työt</span><span class="sxs-lookup"><span data-stu-id="0992a-124">Create kanban and view jobs</span></span>
+1. <span data-ttu-id="0992a-125">Laajenna Kanbanit-osa.</span><span class="sxs-lookup"><span data-stu-id="0992a-125">Expand the Kanbans section.</span></span>
+2. <span data-ttu-id="0992a-126">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="0992a-126">Click Add.</span></span>
+3. <span data-ttu-id="0992a-127">Syötä Uusien kanbanien määrä -kenttän arvoksi "1".</span><span class="sxs-lookup"><span data-stu-id="0992a-127">In the Number of new kanbans field, enter '1'.</span></span>
+    * <span data-ttu-id="0992a-128">Tämä luo yhden kanbanin.</span><span class="sxs-lookup"><span data-stu-id="0992a-128">This will create one kanban.</span></span>  
+4. <span data-ttu-id="0992a-129">Määritä tuotemääräksi 3.</span><span class="sxs-lookup"><span data-stu-id="0992a-129">Set Product quantity to '3'.</span></span>
+    * <span data-ttu-id="0992a-130">Kanban käsittelee 3 tuotetta.</span><span class="sxs-lookup"><span data-stu-id="0992a-130">Kanban will process 3 products.</span></span>  
+5. <span data-ttu-id="0992a-131">Syötä päivämäärä ja kellonaika Eräpäivä/-kellonaika -kenttään.</span><span class="sxs-lookup"><span data-stu-id="0992a-131">In the Due date/time field, enter a date and time.</span></span>
+    * <span data-ttu-id="0992a-132">Voit antaa arvoksi Tänään.</span><span class="sxs-lookup"><span data-stu-id="0992a-132">You can enter Today.</span></span>  
+6. <span data-ttu-id="0992a-133">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="0992a-133">Click Create.</span></span>
+7. <span data-ttu-id="0992a-134">Valitse Erittely.</span><span class="sxs-lookup"><span data-stu-id="0992a-134">Click Details.</span></span>
+    * <span data-ttu-id="0992a-135">Huomaa, että kanbanilla on kaksi tuotantovirran prosessityötä.</span><span class="sxs-lookup"><span data-stu-id="0992a-135">Notice that the kanban has two process jobs from the production flow.</span></span> <span data-ttu-id="0992a-136">Ensimmäinen on SpeakerAssemblyAndPolish ja toinen SpeakerTestAndPackaging.</span><span class="sxs-lookup"><span data-stu-id="0992a-136">The first one is SpeakerAssemblyAndPolish, and the second one is SpeakerTestAndPackaging.</span></span>  
+    * <span data-ttu-id="0992a-137">Tämä on viimeinen vaihe!</span><span class="sxs-lookup"><span data-stu-id="0992a-137">This is the last step!</span></span>  
 
