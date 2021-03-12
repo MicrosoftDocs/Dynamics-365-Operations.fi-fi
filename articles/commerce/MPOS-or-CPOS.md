@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411879"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970100"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS) tai Cloud POS:n valitseminen
 
@@ -105,6 +104,3 @@ Ota seuraavat tiedot huomioon, kun suunnittelet myyntipisteen käyttöönottoa m
 - **Laitteiston laitteet/oheislaitteet** – Eräs tärkeä Retail POS -järjestelmän näkökulma on myyntipisteiden oheislaitteiden, kuten tulostimien, kassojen ja maksupäätteiden, käyttäminen. Vaikka kaikissa käytettävissä olevissa myyntipisteiden vaihtoehdoissa voidaan käyttää oheislaitteita, vain Windowsin MPOS tukee niitä suoraan. Kaikki muut sovellukset vaativat vähintään yhden laiteaseman. Vaikka tämä lähestymistapa lisää joustavuutta, lisäkomponentit on otettava käyttöön, määritettävä ja ylläpidettävä.
 - **Järjestelmävaatimukset** – Myyntipistesovellusten järjestelmävaatimukset vaihtelevat. Muista tarkistaa uusimmat tiedot, ennen kuin teet valinnan. Koska esimerkiksi CPOS suoritetaan selaimessa, se tukee useampia käyttöjärjestelmiä. Lisätietoja järjestelmävaatimuksista on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Käyttöönotto ja ylläpito** – Käyttöönoton ja ylläpidon monimutkaisuus voi vaihdella sovelluksen ja käyttöönottovalintojen mukaan. Esimerkiksi pilvipalvelun CPOS-käyttöönotossa asennusta ja päivitystä ei tarvitse tehdä jokaiseen laitteeseen. Siksi tämä vaihtoehto on huomattavasti yksikertaisempi ja halvempi. Jos otat käyttöön MPOS:n jokaisessa kassakoneessa ja otat käyttöön offline-tilan sekä jaetut laiteasemat, hallinnoitavien päätepisteiden lukumäärä on huomattavasti isompi.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442885"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969001"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Jäljellä olevan käyttöajan tasapoisto
 
@@ -38,7 +37,7 @@ Voit valita **Poistoprofiilit**-sivulla **Poistovuosi**-kenttään joko **Kalent
 
 ### <a name="calendar"></a>Kalenteri
 
-Valitessasi ***Poistovuosi***-kentän arvoksi **Kalenterivuosi**, järjestelmä olettaa kauden olevan 1. tammikuuta – 31. joulukuuta, vaikka kirjanpidon vuosikalenteri olisikin määritetty toisin. **Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
+Jos valitset **Kalenteri** **_Poistovuosi_*_ -kentässä, oletetaan vuosi 1.1.–31.12., vaikka olisit määrittänyt kirjanpidon vuosikalenterin eri tavalla. _* Kalneteri**-asetus päivittää poistokannan 1. tammikuuta joka vuosi. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
 
 -   **Vuosittain** kirjaa summan 31. joulukuuta.
 -   **Kuukausittain** kirjaa kuukausikohtaisen poiston kunkin kuun lopussa.
@@ -80,6 +79,3 @@ Poiston määrä on sama vuosittain: (hankintahinta-jäännösarvo) / käyttövu
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

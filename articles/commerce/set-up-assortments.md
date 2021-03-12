@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26614d319453041177e8072793f09f52ebfd51fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412070"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969823"
 ---
 # <a name="set-up-assortments"></a>Valikoimien määrittäminen
 
@@ -55,6 +54,3 @@ Kun olet määrittänyt edellytykset, voit luoda valikoiman ja määrittää sen
 2. Valitse kanavat tai kanavien ylätason ryhmät, joita valikoima koskee.
 3. Lisää tuoteluokkia, yksittäisiä tuotteita tai tuotevariantteja valikoimaan. Voit sisällyttää kaikki tietyn luokan tuotteet tai ohittaa tietyt tuotteet valikoimaan kuuluvasta luokasta.
 4. Julkaise valikoima. Valikoiman ajastus suoritetaan automaattisesti, kun valikoima julkaistaan. Tämä prosessi luo tuoteluettelon. Kun tämä prosessi on valmis, tuotteet vapautuvat kanaville, joille tuotevalikoima on määritetty. Jos julkaistuun valikoimaan tai sille määritettyihin kanaviin tehdään muutoksia, valikoima on päivitettävä. Aja valikoimien ajastustyö komentojonotyönä päivittääksesi valikoiman muutosten yhteydessä.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

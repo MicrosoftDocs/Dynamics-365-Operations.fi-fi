@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 89b63843daaa714d9141fc362c3d6fcb6ca9a91e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5432741e7cdc21054d02bd24591deb307d096229
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412069"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969798"
 ---
 # <a name="set-up-bar-code-masks"></a>Viivakoodin muotojen määrittäminen
 
@@ -83,6 +82,3 @@ Viivakoodien muodot on määritettävä viivakoodeille ennen, kuin niitä voi k�
 5. Valitse **Tallenna**.
 
 Viivakoodin muotoa voi nyt käyttää viivakoodien luomiseen tuotteille. Yllä olevat vaiheet ovat esimerkkejä siitä, kuinka tuotteille voi luoda viivakoodin muotoja, mutta ne kuvaavat myös, viivakoodin muotoja voi luoda mille tahansa muulle viivakoodin tyypille, joka on tuettu. Viivakoodin muodot, tyypit ja pituudet tulisi mukauttaa omaa käyttötarkoitusta ja -ympäristöäsi varten.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

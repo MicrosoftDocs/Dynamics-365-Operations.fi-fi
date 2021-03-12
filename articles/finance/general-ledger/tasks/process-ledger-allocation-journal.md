@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33e989d3641ae1eaa28a55398fcf51674ac1ed72
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a7e8c3ef6fa85daec2a191b433b1ec4ece441ee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968476"
 ---
 # <a name="process-ledger-allocation-journal"></a>Käsittele kirjanpidon kohdistuskirjauskansio
 
@@ -44,6 +43,3 @@ Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään. Voit luod
 9. Valitse **Kirjaa**.
 10. Valitse **Kirjaa**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
