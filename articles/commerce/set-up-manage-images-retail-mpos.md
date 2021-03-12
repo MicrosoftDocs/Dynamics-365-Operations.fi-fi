@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aff3bee942f3443eb604311d1d804b66421e332d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31f325d2614d0a01192a0157ee0e89514bc51caa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412049"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985758"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Modern POS:n (MPOS) kuvien määrittäminen ja hallinta
 
@@ -57,7 +56,7 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
 
 ### <a name="define-the-media-template-for-an-entity"></a>Määritä yksikön mediamalli
 
-1. Valitse **Retail and Commerce** &gt; **Luettelon hallinta** &gt; **Luettelokuvat**.
+1. Valitse **Retail ja Commerce** &gt; **Luettelon hallinta** &gt; **Luettelokuvat**.
 2. Valitse **Luettelokuvat**-sivun Toimintoruudussa **Määritä mediamallit**. **Määritä mediamallit** -valintaikkunan **Yksikkö**-kentässä pitäisi oletusvalintana olla **Luettelo**.
 3. Syötä **Mediapolku**-pikavälilehdessä kuvan sijainnin polun loppuosa. Mediapolku tukee **LanguageID:tä** muuttujana. Voit esimerkiksi luoda demotiedoille **Luettelot**-kansion kaikille mediapalvelimesi median URL-perusosoitteessa sijaitseville luettelokuville (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Sinulla voi sitten olla kansio kullekin kielelle, kuten en-US tai fi-FI, ja kopioida kuhunkin kansioon asiaankuuluvat kuvat. Jos sinulla ei ole eri kuvia eri kielille, voit ohittaa **LanguageID**-muuttujan kansiorakenteestasi ja osoittaa suoraan luettelokuvat sisältävää Luettelot-kansioon.
 
@@ -101,7 +100,7 @@ Kuten opit edellisessä kohdassa, tietyn yksikön mediamalli tukee vain yhtä yh
 
 ### <a name="overwrite-by-using-edit-in-excel"></a>Korvaa käyttämällä Muokkaa Excelissä-toimintoa
 
-1. Valitse **Retail and Commerce** &gt; **Luettelon hallinta** &gt; **Luettelokuvat**.
+1. Valitse **Retail ja Commerce** &gt; **Luettelon hallinta** &gt; **Luettelokuvat**.
 2. Valitse **Luettelokuvat**-sivulla **Määritä mediamallit**. **Määritä mediamallit** -valintaikkunan **Yksikkö**-kentässä pitäisi olla valittuna **Luettelo**.
 3. Huomioi **Mediapolku**-pikavälilehdessä kuvan sijainti.
 4. Valitse **Luo kuvien URL-osoitteet Exceliin** -pikavälilehdellä **Luo**.
@@ -209,6 +208,3 @@ Luettelo-, luokka-, työntekijä- ja asiakaskuvat, joita on käytettävä offlin
 5. Noudata samaa prosessia muille yksiköille, kuten Luokka, Työntekijä ja Asiakas.
 
     [![Offline-kuva](./media/offline2.png)](./media/offline2.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

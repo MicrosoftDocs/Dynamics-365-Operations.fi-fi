@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4427520"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987476"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Suunnitteluversiot ja suunnittelun tuoteluokat
 
@@ -162,6 +161,3 @@ Suunnittelun tuoterakenteet ja reitit luodaan suunnitteluversiosta, jossa niitä
 Tuotteissa, joissa käytetään *version* tuotedimensiota (yhdessä tapahtumien logistisen vaikutuksen kanssa), versio lisätään myös tuoterakenteisiin ja reitteihin. Tämä toiminta auttaa erottamaan peräkkäisten versioiden tuoterakenteet ja reitit **Pakotettu voimassaolo** -asetuksesta riippumatta.
 
 Tuotteissa, joissa ei käytetä *version* tuotedimensiota (ilman tapahtumien logistista vaikutusta), versiota ei lisätä tuoterakenteisiin tai reitteihin. Niinpä peräkkäisten tuoterakenteiden ja reittien välillä ei ole eroa. Tässä tapauksessa **Pakotettu voimassaolo** -asetukseksi kannattaa määrittää *Kyllä*. Tällä tavoin voit estää päällekkäiset suunnitteluversiot ja voit myös aktivoida uuden version tuoterakenteen ja reitin ilman, että edellisen version tuoterakenteen ja reitin aktivointi olisi ensin poistettava. Jos **Pakotettu voimassaolo** -asetuksena on *Kyllä*, siinä tapauksessa vanhojen versioiden tuoterakenteiden ja reittien aktivointi on poistettava manuaalisesti ennen uusimman version aktivointia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427049"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987550"
 ---
 # <a name="inventory-close"></a>Varaston sulkeminen
 
@@ -60,7 +59,7 @@ Useat **Päätös ja oikaisu** -sivulla suorittamasi tehtävät päivittävät k
 Nämä tehtävät päivittävät kirjanpitotilejä, jotka on linkitetty alkuperäiseen varastotapahtumaan. Jos esimerkiksi myyntitilaus ja ostotilaus selvitetään, alkuperäisessä myyntitilauksessa käytetyt kirjanpitotilit oikaistaan. Näin tapahtuu, vaikka tähän nimikkeeseen määritetyn nimikeryhmän kirjanpitotilit ovat muuttuneet myyntitilauksen kirjaamisen jälkeen. Kun varaston sulkeminen on luonut tilityssumman, tilityssumma kirjataan alkuperäisiin kirjanpitotileihin, ei nimikkeelle määritettyihin uusiin kirjanpitotileihin. Kirjanpito voidaan myös päivittää, jos peruutat varaston sulkemisen. 
 
 > [!NOTE] 
-> - Varaston sulkeminen on pakollinen vaihe kaikkien varastomallien kuukauden lopun sulkemismenettelyssä. Tämä sisältää normaalin ja liukuvan keskimääräisen kustannuslaskennan. Et voi lopettaa kirjanpitojaksoa, ennen kuin varaston sulkeminen on suoritettu kauden päättymispäivästä lukien.
+> - Varaston sulkeminen on pakollinen vaihe kaikkien varastomallien kuukauden lopun sulkemismenettelyssä liukuvaa keskiarvoa lukuun ottamatta.  Varoitus annetaan, jos tilikausi yritetään sulkea ennen varaston sulkemista kauden päättymispäivänä.
 > - Ennen sulkemismenettelyn suorittamista voit tarkastaa listan nimikkeistä, joita ei voi selvittää päivityksen aikana.
 > - Varaston sulkeminen kannattaa ajoittaa aikaan, jona kuormitus ei ole huipussaan, jotta tietojenkäsittelyresurssit voidaan jakaa tasaisemmin.
 
@@ -87,6 +86,3 @@ Saatat joskus joutua peruuttamaan valmiin varaston sulkemisen ja palauttamaan t�
 > [!NOTE] 
 > Vain viimeinen suljettu varastojakso voidaan avata uudelleen. Jos haluat peruuttaa aiemman varaston sulkemisen, jokainen seuraava varaston sulkeminen on peruutettava yksi kerrallaan uusimmasta sulkemisesta alkaen.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
