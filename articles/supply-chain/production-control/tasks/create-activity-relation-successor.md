@@ -11,58 +11,57 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup, DefaultDashboard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91e1535ab6b53ad60394967d0377606a0cd27d01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f23dc0cb4b2ea7a4a298368a56869db90dd044d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426798"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981278"
 ---
-# <a name="create-activity-relation---successor"></a><span data-ttu-id="dfac7-103">Tehtäväsuhteen luonti – seuraaja</span><span class="sxs-lookup"><span data-stu-id="dfac7-103">Create activity relation - Successor</span></span>
+# <a name="create-activity-relation---successor"></a><span data-ttu-id="6370e-103">Tehtäväsuhteen luonti – seuraaja</span><span class="sxs-lookup"><span data-stu-id="6370e-103">Create activity relation - Successor</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="dfac7-104">Lean-tuotantovirran tehtävien työnkulku dokumentoidaan tehtäväsuhteiden kautta.</span><span class="sxs-lookup"><span data-stu-id="dfac7-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="dfac7-105">Tässä tallenteessa käsitellään tehtäväsuhteen luontia.</span><span class="sxs-lookup"><span data-stu-id="dfac7-105">This recording shows how to create an activity relation.</span></span>
+<span data-ttu-id="6370e-104">Lean-tuotantovirran tehtävien työnkulku dokumentoidaan tehtäväsuhteiden kautta.</span><span class="sxs-lookup"><span data-stu-id="6370e-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="6370e-105">Tässä tallenteessa käsitellään tehtäväsuhteen luontia.</span><span class="sxs-lookup"><span data-stu-id="6370e-105">This recording shows how to create an activity relation.</span></span>
 
-<span data-ttu-id="dfac7-106">Edellytykset:</span><span class="sxs-lookup"><span data-stu-id="dfac7-106">Prerequisites:</span></span>
+<span data-ttu-id="6370e-106">Edellytykset:</span><span class="sxs-lookup"><span data-stu-id="6370e-106">Prerequisites:</span></span>
 
-- <span data-ttu-id="dfac7-107">Tuotantovirta ja versio luonnostilassa.</span><span class="sxs-lookup"><span data-stu-id="dfac7-107">A production flow and version in draft mode.</span></span> 
+- <span data-ttu-id="6370e-107">Tuotantovirta ja versio luonnostilassa.</span><span class="sxs-lookup"><span data-stu-id="6370e-107">A production flow and version in draft mode.</span></span> 
 
-- <span data-ttu-id="dfac7-108">Tuotantovirtaan luodaan kaksi toisiaan seuraavaa tehtävää, jotka eivät ole suhteessa toisiinsa.</span><span class="sxs-lookup"><span data-stu-id="dfac7-108">Two activities that follow each other in the production flow are created but not related.</span></span>
+- <span data-ttu-id="6370e-108">Tuotantovirtaan luodaan kaksi toisiaan seuraavaa tehtävää, jotka eivät ole suhteessa toisiinsa.</span><span class="sxs-lookup"><span data-stu-id="6370e-108">Two activities that follow each other in the production flow are created but not related.</span></span>
 
 
-## <a name="find-the-production-flow-version"></a><span data-ttu-id="dfac7-109">Etsi tuotantovirran versio</span><span class="sxs-lookup"><span data-stu-id="dfac7-109">Find the production flow version</span></span> 
-1. <span data-ttu-id="dfac7-110">Valitse Tuotannonhallinta > Asetukset > Lean-tuotantovirta > Tuotantovirrat.</span><span class="sxs-lookup"><span data-stu-id="dfac7-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="dfac7-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="dfac7-111">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="dfac7-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="dfac7-112">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="dfac7-113">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="dfac7-113">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="dfac7-114">Valitse luonnosversio luettelosta.</span><span class="sxs-lookup"><span data-stu-id="dfac7-114">In the list, select a draft version.</span></span>
-    * <span data-ttu-id="dfac7-115">Tehtäväsuhteet voidaan lisätä sekä tuotantovirran luonnosversioihin että aktiivisiin versioihin.</span><span class="sxs-lookup"><span data-stu-id="dfac7-115">Activity relations can be added to both draft or active versions of a production flow.</span></span>  
+## <a name="find-the-production-flow-version"></a><span data-ttu-id="6370e-109">Etsi tuotantovirran versio</span><span class="sxs-lookup"><span data-stu-id="6370e-109">Find the production flow version</span></span> 
+1. <span data-ttu-id="6370e-110">Valitse Tuotannonhallinta > Asetukset > Lean-tuotantovirta > Tuotantovirrat.</span><span class="sxs-lookup"><span data-stu-id="6370e-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="6370e-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="6370e-111">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="6370e-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="6370e-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="6370e-113">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="6370e-113">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="6370e-114">Valitse luonnosversio luettelosta.</span><span class="sxs-lookup"><span data-stu-id="6370e-114">In the list, select a draft version.</span></span>
+    * <span data-ttu-id="6370e-115">Tehtäväsuhteet voidaan lisätä sekä tuotantovirran luonnosversioihin että aktiivisiin versioihin.</span><span class="sxs-lookup"><span data-stu-id="6370e-115">Activity relations can be added to both draft or active versions of a production flow.</span></span>  
 
-## <a name="open-the-activity-overview"></a><span data-ttu-id="dfac7-116">Avaa tehtävän yhteenveto</span><span class="sxs-lookup"><span data-stu-id="dfac7-116">Open the activity overview</span></span>
-1. <span data-ttu-id="dfac7-117">Valitse Tehtävät.</span><span class="sxs-lookup"><span data-stu-id="dfac7-117">Click Activities.</span></span>
-    * <span data-ttu-id="dfac7-118">Huomaa, että lomake näyttää kaikki tuotantovirran tehtävät, jotka on kohdistettu siihen tuotantovirtojen versioon, jossa työskentelet.</span><span class="sxs-lookup"><span data-stu-id="dfac7-118">Note that the form shows all activities of the production flow that are allocated to the Version of the production flows that you are working in.</span></span>  
+## <a name="open-the-activity-overview"></a><span data-ttu-id="6370e-116">Avaa tehtävän yhteenveto</span><span class="sxs-lookup"><span data-stu-id="6370e-116">Open the activity overview</span></span>
+1. <span data-ttu-id="6370e-117">Valitse Tehtävät.</span><span class="sxs-lookup"><span data-stu-id="6370e-117">Click Activities.</span></span>
+    * <span data-ttu-id="6370e-118">Huomaa, että lomake näyttää kaikki tuotantovirran tehtävät, jotka on kohdistettu siihen tuotantovirtojen versioon, jossa työskentelet.</span><span class="sxs-lookup"><span data-stu-id="6370e-118">Note that the form shows all activities of the production flow that are allocated to the Version of the production flows that you are working in.</span></span>  
 
-## <a name="add-a-successor"></a><span data-ttu-id="dfac7-119">Lisää seuraaja</span><span class="sxs-lookup"><span data-stu-id="dfac7-119">Add a Successor</span></span>
-1. <span data-ttu-id="dfac7-120">Valitse Lisää seuraaja.</span><span class="sxs-lookup"><span data-stu-id="dfac7-120">Click Add successor.</span></span>
-2. <span data-ttu-id="dfac7-121">Avaa haku napsauttamalla Tehtävä-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="dfac7-121">In the Activity field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="dfac7-122">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="dfac7-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="dfac7-123">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="dfac7-123">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="dfac7-124">Valitse Rajoitus-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="dfac7-124">Select the Constraint check box.</span></span>
-6. <span data-ttu-id="dfac7-125">Lisää Rajoitusarvo-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="dfac7-125">In the Constraint value field, enter a number.</span></span>
-    * <span data-ttu-id="dfac7-126">Aikarajoitus on edeltäjän (eräpäivä ja -aika) ajoitetun lopun ja seuraajan ajoitetun alun väliin ajoitettava aika.</span><span class="sxs-lookup"><span data-stu-id="dfac7-126">The constraint time is the time to be scheduled between the scheduled end of the predecessor (due date and time) and the scheduled start of the successor.</span></span>  
-7. <span data-ttu-id="dfac7-127">Kirjoita Yksiköt-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="dfac7-127">In the Units field, type a value.</span></span>
-8. <span data-ttu-id="dfac7-128">Lisää Syklin kestojen suhde -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="dfac7-128">In the Cycle time ratio field, enter a number.</span></span>
-    * <span data-ttu-id="dfac7-129">Jos molemmat tehtävät suoritetaan samassa tahdissa, syklin keston suhteen on oltava 1.</span><span class="sxs-lookup"><span data-stu-id="dfac7-129">If both activities run at the same takt, the cycle time ratio should be 1.</span></span> <span data-ttu-id="dfac7-130">Jos edeltäjä suoritetaan seuraajan kaksinkertaisella tahdilla, suhteen on oltava 2.</span><span class="sxs-lookup"><span data-stu-id="dfac7-130">If the predecessor runs at the double speed of the successor, the ratio should be 2.</span></span>   <span data-ttu-id="dfac7-131">Syklin kestosuhteita käytetään tuotantovirtatehtävien yksittäisten syklien kestojen laskentaan.</span><span class="sxs-lookup"><span data-stu-id="dfac7-131">The cycle time ratios are used to calculate the individual cycle times of the production flow activities.</span></span>  
-9. <span data-ttu-id="dfac7-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="dfac7-132">Click OK.</span></span>
-10. <span data-ttu-id="dfac7-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="dfac7-133">Close the page.</span></span>
-11. <span data-ttu-id="dfac7-134">Valitse Ruudukkoruutu-välilehti.</span><span class="sxs-lookup"><span data-stu-id="dfac7-134">Click the GridPanel tab.</span></span>
-12. <span data-ttu-id="dfac7-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="dfac7-135">Close the page.</span></span>
-13. <span data-ttu-id="dfac7-136">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="dfac7-136">Refresh the page.</span></span>
+## <a name="add-a-successor"></a><span data-ttu-id="6370e-119">Lisää seuraaja</span><span class="sxs-lookup"><span data-stu-id="6370e-119">Add a Successor</span></span>
+1. <span data-ttu-id="6370e-120">Valitse Lisää seuraaja.</span><span class="sxs-lookup"><span data-stu-id="6370e-120">Click Add successor.</span></span>
+2. <span data-ttu-id="6370e-121">Avaa haku napsauttamalla Tehtävä-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="6370e-121">In the Activity field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="6370e-122">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="6370e-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="6370e-123">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="6370e-123">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="6370e-124">Valitse Rajoitus-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="6370e-124">Select the Constraint check box.</span></span>
+6. <span data-ttu-id="6370e-125">Lisää Rajoitusarvo-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="6370e-125">In the Constraint value field, enter a number.</span></span>
+    * <span data-ttu-id="6370e-126">Aikarajoitus on edeltäjän (eräpäivä ja -aika) ajoitetun lopun ja seuraajan ajoitetun alun väliin ajoitettava aika.</span><span class="sxs-lookup"><span data-stu-id="6370e-126">The constraint time is the time to be scheduled between the scheduled end of the predecessor (due date and time) and the scheduled start of the successor.</span></span>  
+7. <span data-ttu-id="6370e-127">Kirjoita Yksiköt-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="6370e-127">In the Units field, type a value.</span></span>
+8. <span data-ttu-id="6370e-128">Lisää Syklin kestojen suhde -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="6370e-128">In the Cycle time ratio field, enter a number.</span></span>
+    * <span data-ttu-id="6370e-129">Jos molemmat tehtävät suoritetaan samassa tahdissa, syklin keston suhteen on oltava 1.</span><span class="sxs-lookup"><span data-stu-id="6370e-129">If both activities run at the same takt, the cycle time ratio should be 1.</span></span> <span data-ttu-id="6370e-130">Jos edeltäjä suoritetaan seuraajan kaksinkertaisella tahdilla, suhteen on oltava 2.</span><span class="sxs-lookup"><span data-stu-id="6370e-130">If the predecessor runs at the double speed of the successor, the ratio should be 2.</span></span>   <span data-ttu-id="6370e-131">Syklin kestosuhteita käytetään tuotantovirtatehtävien yksittäisten syklien kestojen laskentaan.</span><span class="sxs-lookup"><span data-stu-id="6370e-131">The cycle time ratios are used to calculate the individual cycle times of the production flow activities.</span></span>  
+9. <span data-ttu-id="6370e-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="6370e-132">Click OK.</span></span>
+10. <span data-ttu-id="6370e-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="6370e-133">Close the page.</span></span>
+11. <span data-ttu-id="6370e-134">Valitse Ruudukkoruutu-välilehti.</span><span class="sxs-lookup"><span data-stu-id="6370e-134">Click the GridPanel tab.</span></span>
+12. <span data-ttu-id="6370e-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="6370e-135">Close the page.</span></span>
+13. <span data-ttu-id="6370e-136">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="6370e-136">Refresh the page.</span></span>
 
