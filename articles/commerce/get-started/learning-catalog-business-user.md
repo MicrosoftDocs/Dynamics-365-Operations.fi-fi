@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 11dd8f05ec3e8e1b92bddea9676edd7e32f966d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 831d8efd3a380aa6a0925a3ad237e5c0878765fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411992"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009871"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-commerce"></a>Dynamics 365 Commercen käyttäjien oppimisluettelo
 
@@ -52,6 +51,3 @@ Lisätietoja muiden Finance and Operations -sovellusten kanssa jaetuista ominais
 | Sisältö | kuvaus  | Muoto   | Pituus    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Sähköisen kaupankäynnin määrittäminen ja käsitteleminen Dynamics 365 Commercessa](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Dynamics 365 Commercen verkkokanavat ja sähköisen kaupankäynnin sivusto antavat vähittäismyyjille mahdollisuuden luoda tuotemerkille näkyvyyttä Internetissä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia   |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

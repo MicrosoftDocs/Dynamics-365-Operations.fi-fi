@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: c1bb03fb82123e78ba21a9af2b948a386b6b4338
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4412110"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009971"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Kokeilut Dynamics 365 Commercessa
 Dynamics 365 Commercen kokeilujen avulla voi vahvistaa sähköisten kaupankäyntisivujen tehokkuutta koskevia hypoteeseja ja tehdä tietoihin perustuvia päätöksiä. Commerce tukee sivujen, moduulien ja osien A/B-testausta sekä antaa mahdollisuuden mitata sivustoon ehdotettujen muutosten vaikutusta.
@@ -57,6 +56,3 @@ Lisätietoja kokeiluprosessin kustakin vaiheesta on seuraavissa ohjeaiheissa:
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Hypoteesin ja kokeen onnistumismittareiden määrittäminen](experimentation-identify.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427496"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007488"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Ostotilausten vianmääritys
 
@@ -132,7 +131,7 @@ Voit pidentää vain sitä jaksoa, jolle toimittaja on hyväksytty. Seuraavat s�
 
 Esimerkiksi ongelmankuvauksessa kuvattu skenaario, jossa tietueen voimaantulopäivä on *01/11/2018* ja vanhenemispäivä *Ei koskaan*, y voit tuoda uuden tiedoston, jonka voimaantulopäivänä on *01/10/2018* vanhenemispäivänä *Ei koskaan*. Et kuitenkaan voi lyhentää ajanjaksoa niin, että voimaantulopäiväksi päivittyy tiedonhallinnan kautta *01/12/2018*. Tämä muutos on tehtävä käyttöliittymässä.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Kun muutan ostotilauksen otsikon toimitusosoitetta, toimituksen nimeä ei synkronoida.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>Kun muutan ostotilauksen otsikon toimitusosoitetta, toimituksen nimeä ei synkronoida.
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
@@ -145,6 +144,3 @@ Tämä on suunniteltu ominaisuus. Valittu osoite on luokiteltava toimitusosoitte
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Voinko löytää ostotilauksen peruneen käyttäjän?
 
 Näitä tietoja seurataan vain, jos ostotilaus edellyttää muutoksenhallintaa. Jos käytät muutoksenhallintaa, voit nähdä muutoksen (peruutuksen) lähettäjän ja hyväksyjän.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

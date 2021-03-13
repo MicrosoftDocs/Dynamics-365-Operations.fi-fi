@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5ba514a6af360074696814278b51ba41327a294d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427419"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006988"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean-valmistuksen yleiskatsaus
 
@@ -51,7 +50,7 @@ Voit luoda perustan lean-valmistukselle mallintamalla tuotanto- ja logistiikkapr
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Kysynnän vaatimusten ilmaiseminen kanbanien avulla
 Imujärjestelmä tuottaa tavaroita silloin, kun tavaroita tarvitaan. Tämä käytäntö lyhentää toimitusten läpimenoaikoja ja pienentää ylimääräistä varastoa. Voit käyttää kanbaneja tuotantovirtoihin perustuvien vaatimusten suunnitteluun, seurantaan ja käsittelyyn. Kanban-kehikko luodaan luomalla kanban-säännöt määrittämään, milloin kanbanit luodaan ja miten vaatimukset täytetään. Luotavia kanban-sääntöjä on kahta tyyppiä: valmistusäännöillä luodaan prosessin kanban-töitä ja kanban-ottosäännöillä luodaan siirron kanban-töitä. Voit määrittää seuraavat täydennysstrategiat:
--   **Vakiomäärän** kanban-säännöt liittyvät vakiomääräisiin käsittely-yksiköihin, ja aktiivisten kanbanien määrä pysyy vakiona. Aina kun kaikki kanbanin tuotteet on kulutettu ja käsittely-yksiköt tyhjennetään manuaalisesti, uusi saman tyypin kanban luodaan. Kun luot vakiomäärän kanban-sääntöjä, voit laskea optimaaliset käytettävät kanban-määrät ja tuotemäärät. Laskelma ottaa huomioon ennusteet, avoimien tilausten todellisen kysynnän, nimikkeiden täydennyksen läpimenoajan ja historiallisen kysynnän.
+-   **Vakiomäärän** kanban-säännöt liittyvät vakiomääräisiin käsittely-yksiköihin, ja aktiivisten kanbanien määrä pysyy vakiona. Aina kun kaikki kanbanin tuotteet on kulutettu ja käsittely-yksiköt tyhjennetään manuaalisesti, uusi saman tyypin kanban luodaan. Kun luot vakiomäärän kanban-sääntöjä, voit laskea optimaaliset käytettävät kanban-määrät ja tuotemäärät. Laskelma ottaa huomioon ennusteet, avoimien tilausten todellisen kysynnän, nimikkeiden täydennyksen läpimenoajan ja historiallisen kysynnän.
 -   **Ajoitetut** kanban-säännöt täydentävät pääsuunnittelun laskemat vaatimukset. Pääsuunnittelu luo suunniteltuja kanbanien, jotka voidaan vahvistaa kanbaneiksi.
 -   **Tapahtuman** kanban-säännöt täydentävät myyntitilausriveiltä, tuotannon tuoterakenneriveiltä, kanban-rivien tai varaston vähimmäisasetuksista peräisin olevia vaatimuksia. Kun tapahtuman kanbaneja luodaan, ne tarvekohdistetaan lähteen tarpeisiin.
 
@@ -83,6 +82,3 @@ Lean-valmistus tukee myös niiden palvelujen osto- ja laskutusprosesseja, joihin
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

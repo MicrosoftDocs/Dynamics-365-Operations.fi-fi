@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646076"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009365"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Ennustemallin parantaminen (esiversio)
 
@@ -42,19 +41,19 @@ Jos organisaatio vaatii vain kaksi tulosta, muuta **Myöhässä**- ja **Erittäi
 
 ## <a name="select-fields"></a>Valitse kentät
 
-Kun valitset malliin sisällytettävät kentät, huomaa, että luettelossa ovat kaikki Azure Data Lakeen yhdistettyjen tietojen Common Data Service -entiteetin käytettävissä olevat kentät. Joitakin näistä kentistä **ei** tule valita. Kentät, joita ei tule valita, kuuluvat yhteen kolmesta luokasta:
+Kun valitset malliin sisällytettävät kentät, huomaa, että luettelossa ovat kaikki Azure Data Lakeen yhdistettyjen tietojen Microsoft Dataverse -taulukon käytettävissä olevat kentät. Joitakin näistä kentistä **ei** tule valita. Kentät, joita ei tule valita, kuuluvat yhteen kolmesta luokasta:
 
-- Kenttä on pakollinen Common Data Service -entiteetille, mutta Data Lakessa ei ole sen varmuuskopioita.
+- Kenttä on pakollinen Dataverse-taulukolle, mutta Data Lakessa ei ole sen varmuuskopioita.
 - Kenttä on tunnus, eikä sen vuoksi ole järkevää käyttää sitä koneoppimistoiminnossa.
 - Kenttä edustaa tietoja, jotka eivät ole käytettävissä ennusteen aikana.
 
 Seuraavissa osissa näkyvät laskussa ja asiakasentiteeteissä käytettävissä olevat kentät ja kentät, joita **ei** tule valita koulutukseen. Luokka, joka on määritetty kullekin näistä kentistä, viittaa edellä olevan luettelon luokkiin.
  
-### <a name="invoice-common-data-model-entity"></a>Laskun yleisen tietomallin entiteetti
+### <a name="invoice-dataverse-table"></a>Laskun Dataverse-taulu
 
-Seuraavassa kuvassa ovat laskuentiteetille käytettävissä olevat kentät.
+Seuraavassa kuvassa ovat laskutaulukolle käytettävissä olevat kentät.
 
-[![Laskuentiteetin käytettävissä olevat kentät](./media/available-fields.png)](./media/available-fields.png)
+[![Laskutaulukon käytettävissä olevat kentät](./media/available-fields.png)](./media/available-fields.png)
 
 Seuraavia kenttiä ei saa valita koulutukselle:
 
@@ -65,11 +64,11 @@ Seuraavia kenttiä ei saa valita koulutukselle:
 - **Lähdetietue** (luokka 2)
 - **Lähdetaulukko** (luokka 2)
 
-### <a name="customer-common-data-model-entity"></a>Yleisen tietomallin entiteetti
+### <a name="customer-dataverse-table"></a>Asiakkaan Dataverse-taulu
 
-Seuraavassa kuvassa ovat asiakasentiteetille käytettävissä olevat kentät.
+Seuraavassa kuvassa ovat asiakastaulukolle käytettävissä olevat kentät.
 
-[![Asiakasentiteetin käytettävissä olevat kentät](./media/related-entities.png)](./media/related-entities.png)
+[![Asiakastaulukon käytettävissä olevat kentät](./media/related-entities.png)](./media/related-entities.png)
 
 Seuraavaa kenttää ei saa valita koulutukselle:
 
@@ -83,6 +82,3 @@ Suodattimet eivät tällä hetkellä tue asiakkaan maksuennusteen skenaariota. V
 
 #### <a name="privacy-notice"></a>Tietosuojatiedot
 Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

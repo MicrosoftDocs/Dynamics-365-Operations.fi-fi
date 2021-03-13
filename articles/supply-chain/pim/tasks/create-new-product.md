@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a4745fe4fc44f85bcfd388ee573f5a6d0cd8519
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d313d76d40476bec5c8bc9c8ea5fc93b217e7e87
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427074"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007563"
 ---
 # <a name="create-a-new-product"></a>Luo uusi tuote
 
@@ -43,6 +42,3 @@ Tässä aiheessa kuvataan, kuinka uusi jaettu tuote luodaan. Tehtävän suoritta
 3. Syötä tai valitse arvo **Seurantadimensioryhmä**-kentässä. Seurantadimensioryhmä määrää, mitä seurantadimensioita kullekin tuotteen tapahtumalle on syötettävä, ja miten sitä käsitellään varastossa.  
 4. Valitse **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

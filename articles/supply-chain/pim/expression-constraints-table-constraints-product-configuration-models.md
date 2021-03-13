@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427271"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007698"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Lausekerajoitukset ja taulurajoitukset tuotemääritysmalleissa
 
@@ -110,9 +109,9 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <tr class="odd">
 <td>Sisältää</td>
 <td>Tämä on tosi, jos ensimmäinen ehto on epätosi, toinen ehto on tosi tai molemmat.</td>
-<td>Implies[a, b], infix: a -: b</td>
+<td>Tarkoittaa [a, b] infix:-: b</td>
 <td><ul>
-<li><strong>Operaattori:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Operaattori:</strong> Implies[x! = 0, y &gt; = 0]</li>
 <li><strong>Infix-merkintä:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
@@ -121,7 +120,7 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <td>Tämä on tosi vain, jos kaikki ehdot ovat tosia. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>Tosi</strong>.</td>
 <td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operaattori:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Operaattori</strong>: And[x == 2, y &lt;= 2]</li>
 <li><strong>Infix-merkintä:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
@@ -146,16 +145,16 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <tr class="odd">
 <td>Miinus</td>
 <td>Tämä kääntää sen argumentin. Ehtoja on oltava täsmälleen yksi.</td>
-<td>Minus[expr], infix: -expr</td>
+<td>Miinus [lauseke], operandien välinen merkintä: -expr</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Minus[x] == y</li>
 <li><strong>Infix-merkintä:</strong> -x == y</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Abs</td>
+<td>Itseisarvo</td>
 <td>Tämä vaatii ehtoonsa itseisarvon. Ehtoja on oltava täsmälleen yksi.</td>
-<td>Abs[expr]</td>
+<td>Itseisarvo[lauseke]</td>
 <td><strong>Operaattori:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
@@ -169,7 +168,7 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 </tr>
 <tr class="even">
 <td>Teho</td>
-<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Toisin sanoen se on oikeus-assosiatiivinen.) Tämän vuoksi <strong>Power[a, b, c]</strong> on sama kuin <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
+<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Tämä tarkoittaa, että se on oikea-assosiatiivinen.) Siksi <strong>Power[a, b, c]</strong> on sama kuin <strong>[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Power[x, 2] == y</li>
@@ -179,13 +178,13 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 <tr class="odd">
 <td>Enintään</td>
 <td>Tämä tuottaa suurimman ehdon. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>Ääretön</strong>.</td>
-<td>Max[args]</td>
+<td>Maksimi [argumentit]</td>
 <td><strong>Operaattori:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
-<td>Min</td>
+<td>Vähintään</td>
 <td>Tämä tuottaa pienimmän ehdon. Jos ehtojen määrä on 0 (nolla), tuloksena on <strong>Ääretön</strong>.</td>
-<td>Min[args]</td>
+<td>Minimi [argumentit]</td>
 <td><strong>Operaattori:</strong> Min[x, y, 2] == z</td>
 </tr>
 <tr class="odd">
@@ -222,7 +221,7 @@ Seuraavan taulukon esimerkit kuvaavat, kuinka infix-merkintä kirjoitetaan.
 |        (x)        |                           Sulkeet ohittavat oletusarvoisen tärkeysjärjestyksen.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miksi lausekerajoitusteni vahvistaminen ei onnistu?
-Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. Seuraavassa luettelossa on varatut sanat, jotka eivät ole käytettävissä:
+Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. Seuraavassa luettelossa on varatut sanat, jotka eivät ole käytettävissä:
 
 -   Katto
 -   Elementti
@@ -254,6 +253,3 @@ Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komp
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

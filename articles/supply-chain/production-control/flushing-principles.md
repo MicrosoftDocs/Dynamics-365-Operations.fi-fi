@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84be2a4646cfc18cd1f25a4ec969acdb62cb2856
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427008"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007238"
 ---
 # <a name="flushing-principles"></a>Materiaaliottosäännöt
 
@@ -63,6 +62,3 @@ Loppu-materiaaliottosääntö ilmaisee, että materiaali kulutetaan automaattise
 
 ### <a name="available-at-location"></a>Käytettävissä sijainnissa
 Käytettävissä sijainnissa -materiaaliottosääntö ilmaisee, että materiaali kulutetaan automaattisesti, kun se on rekisteröity tuotantoon kerätyksi. Materiaali on rekisteröity sijainnista kerätyksi, kun raaka-aineen keräilytyö on valmis tai kun materiaali on käytettävissä tuotannon varastosijainnissa ja materiaalirivi on vapautettu varastoon. Prosessin aikana luotu keräystyö kirjataan erätyöhön. Tällä säännöllä on merkitystä, jos sinulla on esimerkiksi tuotantotilaus, jossa on useita keräystoimintoja. Tässä tapauksessa keräyslistaa ei tarvitse päivittää manuaalisesti ja saat KET-saldon ajantasaisen näkymän.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

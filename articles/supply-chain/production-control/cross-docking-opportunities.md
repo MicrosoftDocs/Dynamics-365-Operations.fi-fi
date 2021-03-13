@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c408c0b0c32292c074bcabf3822a50a24bbdd301
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427421"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007288"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking tuotantotilauksista lähtevien laituriin
 
@@ -38,7 +37,7 @@ Cross docking tuotannosta lähtevien sijaintiin on hyödyllinen valmistajille, j
 
 Jos tuotteelle ei ole välitöntä kysyntää, sitä on säilytettävä valmistustoimipaikan varastosijainneissa. Tämä prosessi tunnetaan myös nimellä *opportunistinen cross docking*. Se ilmaisee, että jos tuotteen lähettämiselle ei ole kysyntää, mahdollisuus on käytettävä hyväksi sen sijaan, että tuote sijoitettaisiin sisäiseen varastoon.
 
-Seuraavassa esimerkissä kolme on erilaista työnkulkua, jotka alkavat tuotantolinja päättyessä (2).
+Seuraavassa esimerkissä kolme on erilaista työnkulkua, jotka alkavat tuotantolinjan päättyessä (2).
 
 Tuote ilmoitetaan valmiiksi tuotannon tuotossijaintiin (3) ja trukin kuljettaja noutaa kuormalavan tästä sijainnista (3).
 
@@ -127,6 +126,3 @@ Kun tuote on ilmoitettu valmiiksi tuotantolinjalla, se siirretään lastausovisi
 -   Cross docking -skenaariota tuetaan erä- ja sarjanumero-ohjatuissa nimikkeissä sekä erä- että sarjanumerodimensioissa, joille on määritetty varaushierarkiassa sijainti ylä- tai alapuolella. 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
