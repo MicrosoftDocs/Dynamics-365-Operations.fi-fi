@@ -1,7 +1,7 @@
 ---
 title: Varaston näkyvyyden apuohjelma
 description: Tässä aiheessa käsitellään Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista ja määrittämistä.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625062"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114667"
 ---
 # <a name="inventory-visibility-add-in"></a>Varaston näkyvyyden apuohjelma
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Varaston näkyvyyden apuohjelma on itsenäinen ja erittäin skaalautuva mikropalvelu, joka mahdollistaa reaaliaikaisen käytettävissä olevan varaston seurannan ja antaa tällä tavoin yleisen näkymän varaston näkyvyyteen.
 
 Kaikki käytettävissä olevaan varastoon liittyvät tiedot viedään palveluun lähes reaaliaikaisesti käyttämällä matala-asteista SQL-integraatiota. Ulkoiset palvelut käyttävät palvelut tekevät RESTful API -ohjelmointirajapinnoilla käytettävissä olevien tietojen kyselyjä annetuissa dimensioissa ja saavat tällä tavoin luettelon käytettävissä olevista paikoista.
 
-Varastoin näkyvyys on Common Data Serviceen perustuva mikropalvelu, joten sitä voi laajentaa muodostamalla Power Apps -sovelluksia ja käyttämällä Power BI:ta tuottamaan liiketoiminnan tarpeita vastaavia mukautettuja toimintoja. Indeksi voidaan lisäksi päivittää tekemään varastokyselyjä.
+Varaston näkyvyys on Microsoft Dataverseen perustuva mikropalvelu, joten sitä voi laajentaa muodostamalla Power Apps -sovelluksia ja käyttämällä Power BI:ta tuottamaan liiketoiminnan tarpeita vastaavia mukautettuja toimintoja. Indeksi voidaan lisäksi päivittää tekemään varastokyselyjä.
 
 Varaston näkyvyydessä on määritysvaihtoehtoja, joiden avulla sen voi integroida useiden kolmannen osapuolen järjestelmien kanssa. Se tukee standardoitua varastodimensiota, mukautettua laajennettavuutta ja standardoituja, määritettäviä laskettuja määriä.
 
@@ -80,28 +80,55 @@ Varaston näkyvyyden apuohjelman asentaminen:
 
 Palvelun suojaustunnus haetaan seuraavasti:
 
-1. Hanki `aadToken` ja tee päätepistekutsu: https://securityservice.operations365.dynamics.com/token.
-1. Korvaa `client_assertion` tekstiosassa omalla `aadToken`-tunnuksella.
-1. Vaihda tekstiosan kontekstin tilalle ympäristö, jossa haluat ottaa apuohjelman käyttöön.
-1. Vaihda vaikutusalue tekstiosassa seuraavasti:
+1. Kirjaudu Azure-portaaliin ja etsi sen avulla Supply Chain Management -sovelluksen `clientId` ja `clientSecret`.
+1. Nouda Azure Active Directory -tunnus (`aadToken`) lähettämällä HTTP-pyyntö, jossa on seuraavat ominaisuudet:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Tapa** - `GET`
+    - **Tekstisisältö (lomaketiedot)**:
 
-    - MCK-vaikutusalue – https://inventoryservice.operations365.dynamics.cn/.default  
-    (Azure Active Directory -sovelluksen tunnus ja MCK-vuokraajan tunnus ovat kohdassa `appsettings.mck.json`.)
-    - PROD-vaikutusalue – https://inventoryservice.operations365.dynamics.com/.default  
-    (Azure Active Directory -sovelluksen tunnus ja PROD-vuokraajan tunnus ovat kohdassa `appsettings.prod.json`.)
+        | avain | arvo |
+        | --- | --- |
+        | client_id | ${aadAppId} |
+        | client_secret | ${aadAppSecret} |
+        | grant_type | client_credentials |
+        | resurssi | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Vastauksena pitäisi olla `aadToken` , joka muistuttaa seuraavaa esimerkkiä.
 
-    Tuloksen pitäisi muistuttaa seuraavaa esimerkkiä:
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Muodosta seuraavankaltainen JSON-pyyntö:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Jossa:
+    - `client_assertion`-arvon on oltava edellisessä vaiheessa vastaanotettu `aadToken`.
+    - `context`-arvon on oltava ympäristötunnus, jossa apuohjelma halutaan ottaa käyttöön.
+    - Kaikki muut arvot määritetään samoiksi kuin esimerkissä.
+
+1. Lähetä HTTP-pyyntö, jossa on seuraavat ominaisuudet:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Tapa** - `POST`
+    - **HTTP-otsikko** - sisällytä ohjelmointirajapinnan versio (avain on `Api-Version` ja arvo `1.0`)
+    - **Tekstisisältö** - sisällytä edellisessä vaiheessa luotu JSON-pyyntö.
 
 1. `access_token` saadaan vastauksessa. Sitä tarvitaan haltijatunnuksena, jolla varastoin näkyvyyden ohjelmointirajapintaa kutsutaan. Esimerkki:
 
@@ -500,6 +527,3 @@ Edellisten esimerkkien kyselyissä voitiin palauttaa seuraavankaltainen tulos.
 ```
 
 Huomaa, että määräkentät on jäsennelty mittahakemistoksi ja niihin liittyviksi arvoiksi.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

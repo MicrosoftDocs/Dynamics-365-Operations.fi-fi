@@ -2,7 +2,7 @@
 title: Lähetä lomapyyntö työnkulkuun
 description: Microsoft Dynamics 365 Human Resourcesissa voit käyttää MyLeaveRequests submit() -ohjelmointirajapintaa (API) ja lähettää lomapyynnön työnkulkuun.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7552a4c921dc4a88034b5d2c87d5a9b47d699ae3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51be70edbe1439340377fd01b9760d49d3a75348
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418258"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115509"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>Lähetä lomapyyntö työnkulkuun
 
@@ -108,5 +108,3 @@ Osana ohjelmointirajapinnan lähettämisen kutsua henkilöstöhallinto tekee tar
 
 - [MyLeaveRequests – yleiskatsaus](hr-developer-api-myleaverequests-overview.md)
 - [Todennus](hr-developer-api-authentication.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

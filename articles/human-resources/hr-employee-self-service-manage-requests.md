@@ -2,7 +2,7 @@
 title: Virkavapaan ja poissaolopyyntöjen hallinta
 description: Tarkastele ja hyväksy loma- ja poissaolopyyntöjä Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 365d933a2d33b7e1929f9f68e02050b624e30839
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a47065a28f116cde5ce2983acada2f735f8c5edf
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418400"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115291"
 ---
-# <a name="manage-leave-and-absence-requests"></a>Virkavapaan ja poissaolopyyntöjen hallinta
+# <a name="manage-leave-and-absence-requests"></a>Loma- ja poissaolopyyntöjen hallinta
 
-Esimiehet voivat hallita poissaolopyyntöjä **Työntekijän itsepalvelujärjestelmän** -työtilassa Dynamics 365 Human Resourcesissa. Pyynnöt voivat olla yksinkertaisia yhden päivän pyyntöjä tai useasta päivästä koostuvia pyyntöjä, joihin voi sisältyä useita loma- ja poissaolotyyppejä. Jos työnkulkua ei ole otettu käyttöön, pyynnöt hyväksytään automaattisesti. Jos työnkulku on otettu käyttöön, hyväksyminen voi olla työnkulun määrityksen mukaan automaattinen tai se voi edellyttää kuittausta.
+Hallitse poissaolopyyntöjä **Työntekijän itsepalvelujärjestelmän** -työtilassa Dynamics 365 Human Resourcesissa. Pyynnöt voivat olla yksinkertaisia yhden päivän pyyntöjä tai useasta päivästä koostuvia pyyntöjä, joihin voi sisältyä useita loma- ja poissaolotyyppejä. Jos työnkulkua ei ole otettu käyttöön, pyynnöt hyväksytään automaattisesti. Kun työnkulku on otettu käyttöön, hyväksyminen voi olla työnkulun määrityksen mukaan automaattinen tai se voi edellyttää kuittausta.
 
 1. Valitse **Työntekijän itsepalvelu** -työtilassa **Oma tiimi**.
 
@@ -39,5 +39,3 @@ Esimiehet voivat hallita poissaolopyyntöjä **Työntekijän itsepalvelujärjest
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

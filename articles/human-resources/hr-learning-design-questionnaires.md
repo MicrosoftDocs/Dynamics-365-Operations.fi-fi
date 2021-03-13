@@ -1,8 +1,8 @@
 ---
-title: Kyselylomakkeiden suunnitteleminen
+title: Kyselylomakkeiden luonti
 description: Tässä artikkelissa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418391"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115123"
 ---
-# <a name="design-questionnaires"></a>Kyselylomakkeiden suunnitteleminen
+# <a name="create-questionnaires"></a>Kyselylomakkeiden luonti
 
 Tässä artikkelissa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
 
@@ -91,7 +91,7 @@ Numerosarjan koodeja käytetään kysymysten ja vastausten järjestämisessä. A
 Kaikki parametrit tulee määritettävä, ennen kuin tietoja aletaan luoda. Voit muokata kyselylomakeparametrien asetuksia milloin tahansa.
 
 ## <a name="questionnaire-components"></a>Kyselylomakkeen osat
-Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta.  Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
+Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta. Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -207,7 +207,7 @@ Käytössä on johtamistaitotestin kyselylomake, jossa on 15 kysymystä kolmessa
 -   johtamistaidot
 -   tekniset taidot.
 
-Kun käytössä ovat pisteisiin perustuvat viestit, voit määrittää jokaiselle tulosryhmälle tekstivälit. Jokaiseen kysymykseen liitetään kaksi pistettä. Tämän vuoksi kunkin tulosryhmän enimmäispistemäärä on 10 
+Kun käytössä ovat pisteisiin perustuvat viestit, voit määrittää jokaiselle tulosryhmälle tekstivälit. Jokaiseen kysymykseen liitetään kaksi pistettä. Tämän vuoksi kunkin tulosryhmän enimmäispistemäärä on 10. 
 
 Seuraavassa taulussa näkyvät johtamistaidot-tulosryhmälle määritetyt pisteisiin perustuvat sanomat.
 
@@ -236,5 +236,3 @@ Jos käytät ehdollisia kysymyksiä kyselylomakkeen kysymyshierarkian luomiseen,
 Yritys tarjoaa asiakkailleen sekä nimikkeitä että palveluita. Tällaisissa tapauksissa käy usein niin, että asiakkaat saattavat ostaa pelkästään tuotteita tai palveluita tai molempia. Ku yritys siis lähettää asiakastyytyväisyyskyselyn, kyselylomakkeeseen lisätään ehdollinen rakenne, jolloin vain palveluita ostaneiden asiakkaiden ei tarvitse vastata nimikkeitä koskeviin kysymyksiin. 
 
 Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja valitsee kysymykseen 1 vastaksen A, seuraavaksi esitetään kysymys 2. Mutta jos vastaaja valitsee kysymykseen 1 vastauksen B, seuraavaksi esitetään kysymys 5.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

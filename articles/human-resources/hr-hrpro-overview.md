@@ -2,7 +2,7 @@
 title: Yleiskuvaus
 description: Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon määrittämisestä, työntekijöille maksettavien korvausten ja hyötyjen määrittämisestä sekä työntekijöiden hallinnasta.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418395"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115243"
 ---
 # <a name="overview"></a>Yleiskuvaus
 
@@ -60,10 +60,9 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 [Muokkaa toimen raportointisuhteita](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Työntekijän tietojen syöttäminen](hr-personnel-enter-worker-information.md)</br>
 [Työntekijöiden lainakohteet](hr-personnel-loan-item-worker.md)</br>
-[Projektin työaikaraporttien syöttäminen](hr-personnel-enter-project-timesheets.md)</br>
 [Joukkotyöhönottoprojektit](hr-personnel-mass-hire-projects.md)</br>
-[Toimien määritys](hr-personnel-set-up-positions.md)</br>
-[Vamma- ja sairaustietojen määrittäminen](hr-personnel-set-up-injury-illness-information.md)</br>
+[Toimien määrittäminen](hr-personnel-set-up-positions.md)</br>
+[Määritä vamma- ja sairaustiedot](hr-personnel-set-up-injury-illness-information.md)</br>
 
 ## <a name="set-up-compensation-plans"></a>Kompensaatiosuunnitelmien määrittäminen
 
@@ -128,6 +127,3 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
