@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (8. heinäkuuta 2020)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 8. heinäkuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14dfd925009cb2a9d40044e27f28521ff4d331b7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528470"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130394"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (8. heinäkuuta 2020)
 
@@ -71,9 +71,9 @@ Luodut ja muokatut järjestelmäkentät on nyt otettu käyttöön Human Resource
 
 Tämä versio korjaa virheen (tyhjäarvoviittaus) sujuvoitetussa työntekijämerkinnässä, kun työntekijän työhönottoon käytetään **Työhönotto ja tietojen lisääminen** -toimintoa.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Common Data Servicen työntekijäentiteettiin tehdyt muutokset eivät siirry Human Resourcesiin (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Dataversen työntekijäentiteettiin tehdyt muutokset eivät siirry Human Resourcesiin (455652)
 
-Seuraaviin Common Data Servicen **Työntekijä**-entiteettiin tehdyt muutokset näkyvät nyt Human Resourcesissa:
+Seuraaviin Dataversen **Työntekijä**-entiteettiin tehdyt muutokset näkyvät nyt Human Resourcesissa:
 
 - **Työskentelee kotoa käsin**
 - **Ikälisäpäivä**
@@ -131,9 +131,9 @@ DMF-yksikkö on nyt käytettävissä suoriteperusteisia keskeytyksiä varten.
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Common Data Serviceen sisältyvät tarkistusluettelokohdat
+## <a name="checklist-entities-included-in-dataverse"></a>Dataverseen sisältyvät tarkistusluettelokohdat
 
-Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Common Data Servicessä.
+Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Dataversessä.
 
 ## <a name="see-also"></a>Lisätietoja
 
@@ -141,6 +141,3 @@ Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkist
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

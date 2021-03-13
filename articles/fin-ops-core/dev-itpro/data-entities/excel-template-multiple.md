@@ -1,5 +1,5 @@
 ---
-title: Tietojen tuonti useita laskentataulukkoja sisältävistä Excelin tietoyksikkömalleista
+title: Useita laskentataulukoita sisältävät tietomallit
 description: Tässä ohjeaiheessa käsitellään tietojen tuontia Finance and Operationsiin Excelin tietoyksikkömallien avulla.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130578"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Tietojen tuonti useita laskentataulukkoja sisältävistä Excelin tietoyksikkömalleista
+# <a name="data-templates-with-multiple-worksheets"></a>Useita laskentataulukoita sisältävät tietomallit
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ Jos saman tiedoston uusi versio tai täysin uusi tiedosto on ladattava tietoproj
 ## <a name="upload-a-file-using-run-project"></a>Tiedoston lataaminen Suorita projekti -toiminnolla
 
 Voit ladata Excel-tiedoston samalla, kun tuot projektin **Suorita projektit** -asetuksella. Ole huolellinen ja lataa vain tiedostot, joissa on samat laskentataulukot kuin tietoprojektin tietoyksiköiden aiemmin luoduissa yhdistämismäärityksissä. Jos laskentataulukkoa ei ole juuri ladatussa tiedostossa, järjestelmä ilmoittaa virheestä ja lopettaa tuonnin. Jos yhdistämistä laskentataulukkoon on muutettava yksikössä, tietoprojektin yhdistämismääritykset on ensin päivitettävä tietoprojektissa ennen **Suorita projekti** -toiminnon käyttöä tiedostossa.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

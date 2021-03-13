@@ -1,5 +1,5 @@
 ---
-title: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
+title: Tositteiden tuonti käyttämällä kirjauskansioyksikköä
 description: Tässä ohjeaiheessa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129596"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Tositteiden tuonti käyttämällä kirjauskansioyksikköä
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,6 +65,3 @@ Seuraavissa osissa kuvataan näiden asetusten vaikutusta. Ne selittävät myös,
 - Jos **Tositenumero**-kentän arvoksi on valittu **Luotu automaattisesti**, tuonti epäonnistuu. **Tositenumero**-kentän **Luotu automaattisesti** -asetusta ei tueta.
 
 Kirjauskansioyksikkö käyttää oletusarvoisesti joukkoon perustuvaa käsittelyä. Kun olet arvioinut organisaation liiketoimintatavoitteet, voit muuttaa **Joukkoon perustuva käsittely** -asetusta valitsemalla **Tietoyksiköt** **Tietojen hallinta** -työtilassa. Joukkoon perustuvaa käsittelyä käytetään nopeuttamaan tuontiprosessia. Jos et käytä joukkoon perustuvaa käsittelyä, kirjauskansioyksikköä käyttävä tuonti tapahtuu hitaammin.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

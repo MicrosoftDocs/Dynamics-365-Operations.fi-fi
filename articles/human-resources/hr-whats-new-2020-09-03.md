@@ -1,9 +1,9 @@
 ---
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (03. syyskuuta 2020)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 3. syyskuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ddffff18e1d6d16bd5a5f7e7021f9a34651307fa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41763a8817d0c39b14284a247cf3e46678e7811b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130852"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (3. syyskuuta 2020)
 
@@ -106,9 +106,9 @@ Tämä toiminto edistää myös henkilöstön toimintojen lomakkeissa olevia ty�
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Common Data Serviceen sisältyvät tarkistusluettelokohdat
+### <a name="checklist-entities-included-in-dataverse"></a>Dataverseen sisältyvät tarkistusluettelokohdat
 
-Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Common Data Servicessä.
+Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Dataversessä.
 
 ### <a name="benefits-management-reason-codes"></a>Etujen hallinnan syykoodit
 
@@ -120,6 +120,3 @@ Etujen hallinnan syykoodit yhdistetään pian olemassa oleviin syykoodeihin Huma
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

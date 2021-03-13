@@ -1,9 +1,9 @@
 ---
-title: Varastosovelluksen asentaminen ja yhdistäminen
-description: Tässä ohjeaiheessa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
+title: Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
+description: Tässä aiheessa käsitellään varastonhallinnan mobiilisovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
 author: MarkusFogelberg
 manager: tfehr
-ms.date: 05/25/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,51 +16,58 @@ ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
+ms.search.validFrom: 2021-02-28
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
 ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142272"
+ms.locfileid: "5142320"
 ---
-# <a name="install-and-connect-the-warehouse-app"></a>Varastosovelluksen asentaminen ja yhdistäminen
+# <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Tässä aiheessa käsitellään vanhan varastointisovelluksen määrittämistä. Lisätietoja uuden varaston hallinnan mobiilisovelluksen (joka on tällä hetkellä julkinen esiversio) määrittämisestä on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](install-configure-warehouse-management-app.md).
+> Tässä aiheessa käsitellään uuden, tällä hetkellä julkisena esiversiona julkaistun varastonhallinnan mobiilisovelluksen määrittämistä. Lisätietoja vanhan varastointisovelluksen määrittämisestä on kohdassa [Varastointisovelluksen asentaminen ja yhteyden muodostaminen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-> [!NOTE]
-> Tässä aiheessa käsitellään pilvikäyttöönottojen varastointisovellusta. Lisätietoja varastointisovelluksen määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönotoissa](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+Varastonhallinnan mobiilisovelluksen julkinen esiversio on ladattavissa Microsoft App Centerissä. Se toimitetaan erillisenä osana. Niinpä se onkin ladattava kuhunkin laitteeseen ja määritettävä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
 
-Varastosovellus on saatavilla Google Play Storesta ja Microsoft Storesta. Se toimitetaan erillisenä osana. Niinpä se onkin ladattava kuhunkin laitteeseen ja määritettävä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
-
-Tässä ohjeaiheessa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
+Tässä aiheessa käsitellään varastonhallinnan mobiilisovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 
-Varastosovellus on saatavana sekä Windows- että Android-käyttöjärjestelmiin. Sovelluksen uusimman version käyttäminen edellyttää, että mobiililaitteisiin on asennettu jokin seuraavista käyttöjärjestelmistä:
+Varastonhallinnan mobiilisovellus on saatavana sekä Windows- että Google Android -käyttöjärjestelmiin. Sovelluksen käyttö edellyttää, että mobiililaitteisiin on asennettu jokin seuraavista käyttöjärjestelmistä:
 
-- Windows 10 (universaali Windows-ympäristö \[UWP\]) Fall Creators -päivitys 1709 (koontiversio 10.0.16299) tai uudempi
+- Windows 10 (universaali Windows-ympäristö \[UWP\]) lokakuun 2018 päivitys 1809 (koontiversio 10.0.17763) tai uudempi
 - Android 4.4 tai uudempi
 
-> [!NOTE]
-> Jos ohjelman on tuettava vanhoja Windows-laitteita, joissa ei voi käyttää Windowsin uusinta versiota, voit silti ladata varastosovelluksen version 1.6.3.0 Microsoft Storesta. Tätä versiota käytetään Windows 10:n (UWP) marraskuun päivityksessä 1511 (koontiversio 10.0.10586) tai sitä uudemmassa versiossa. Tämä varastosovelluksen versio ei kuitenkaan tue yhteysasetusten joukkokäyttöönottoa. Tämän vuoksi [yhteys on määritettävä manuaalisesti](#config-manually) jokaisessa sovelluksen tätä versiota käyttävässä laitteessa.
+## <a name="turn-on-the-feature"></a>Toiminnon ottaminen käyttöön
 
-## <a name="get-the-warehouse-app"></a>Varastosovelluksen hankkiminen
+Sovellusta ei voi käyttää, ennen kuin vastaava toiminto on otettu käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+
+- **Moduuli:** *Varastonhallinta*
+- **Toiminnon nimi:** *Uuden varastointisovelluksen käyttäjäasetukset, kuvakkeet ja vaiheiden otsikot*
+
+## <a name="get-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen hakeminen
 
 Lataa sovellus valitsemalla jompikumpi seuraavista linkeistä:
 
-- **Windows (UWP):** [Dynamics 365 for Finance and Operations – Warehousing Microsoft Storessa](https://www.microsoft.com/store/apps/9p1bffd5tstm)
-- **Android:** [Warehousing – Dynamics 365 Google Play Storessa](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+- **Windows (UWP):** [App Centerin esiversio-ohjelma – Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
 
-Pienissä käyttöönotoissa sovellus kannattaa asentaa valitusta kaupasta kuhunkin laitteeseen, jonka jälkeen yhteys käytettyyn ympäristöön voidaan määrittää manuaalisesti. Varastosovelluksen versiosta 1.7.0.0 alkaen sovelluksen käyttöönoton ja/tai määrityksen voi myös automatisoida. Tämä voi olla kätevää, jos hallittavia laitteita on useita ja käytössä on mobiililaitteiden ja -sovellusten hallintaratkaisu, kuten [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Lisätietoja sovellusten lisäämisestä Intunen avulla on kohdassa [Sovellusten lisääminen Microsoft Intuneen](https://docs.microsoft.com/mem/intune/apps/apps-add).
+    Koska kyse on sovelluksen esiversiosta, sen asentamisessa on muutamia lisävaiheita. Lisätietoja on kohdassa [Koontiversion asentaminen App Centeristä](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [App Centerin esiversio-ohjelma – Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+
+    Koska kyse on sovelluksen esiversiosta, sen asentamisessa on muutamia lisävaiheita. Lisätietoja on kohdassa [Android-sovellusten testaaminen](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+
+Pienissä käyttöönotoissa sovellus kannattaa asentaa valitusta kaupasta kuhunkin laitteeseen, jonka jälkeen yhteys käytettyyn ympäristöön voidaan määrittää manuaalisesti. Sovelluksen käyttöönoton ja/tai määrityksen voi kuitenkin myös automatisoida. Tämä voi olla kätevää, jos hallittavia laitteita on useita ja käytössä on mobiililaitteiden ja -sovellusten hallintaratkaisu, kuten [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Lisätietoja sovellusten lisäämisestä Intunen avulla on kohdassa [Sovellusten lisääminen Microsoft Intuneen](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Verkkopalvelusovelluksen luominen Azure Active Directoryssa
 
-Varastosovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa edellyttää, että verkkopalvelusovellus rekisteröidään Supply Chain Managementin vuokraajassa Azure Active Directoryssa (Azure AD). Seuraavaksi näytetään yksi tapa, jolla sen voi tehdä. Lisätietoja ja muita tapoja on jäljempänä.
+Varastonhallinnan mobiilisovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa edellyttää, että verkkopalvelusovellus rekisteröidään Supply Chain Managementin vuokraajassa Azure Active Directoryssa (Azure AD). Seuraavaksi näytetään yksi tapa, jolla sen voi tehdä. Lisätietoja ja muita tapoja on jäljempänä.
 
 1. Siirry selaimessa osoitteeseen [https://portal.azure.com](https://portal.azure.com/).
 1. Anna sen käyttäjän nimi ja salasana, jolla on Azure‑tilauksen käyttöoikeus.
@@ -84,7 +91,7 @@ Varastosovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa ed
 
 1. Valitse **Hallinta**-luettelossa **Varmenne ja salaisuudet**. Valitse sitten jokin seuraavista painikkeista sen mukaan, miten haluat määrittää todennuksen sovelluksessa. (Lisätietoja on jäljempänä tässä ohjeaiheessa kohdassa [Todennus käyttämällä varmennetta tai asiakasohjelman salaisuutta](#authenticate).)
 
-    - **Lataa varmenne** – Lataa salaisuutena käytettävä varmenne. Tätä menetelmää kannattaa käyttää, sillä se on turvallinen ja se on laajemmin automatisoitavissa. Jos varastosovellusta käytetään Windows-laitteissa, kirjoita muistiin varmenteen lataamisen jälkeen näkyvän **allekirjoituksen** arvo. Tätä arvoa tarvitaan varmenteen määrittämiseen Windows-laitteissa.
+    - **Lataa varmenne** – Lataa salaisuutena käytettävä varmenne. Tätä menetelmää kannattaa käyttää, sillä se on turvallinen ja se on laajemmin automatisoitavissa. Jos varastonhallinnan mobiilisovellusta käytetään Windows-laitteissa, kirjoita muistiin varmenteen lataamisen jälkeen näkyvän **allekirjoituksen** arvo. Tätä arvoa tarvitaan varmenteen määrittämiseen Windows-laitteissa.
     - **Uusi asiakasohjelman salasana** – Luo avain antamalla avaimen kuvaus ja sen kesto **Salasanat**-osassa ja valitse sitten **Lisää**. Kopioi avain ja tallenna se turvalliseen paikaan.
 
     ![Varmenne ja salaisuudet](media/app-connect-azure-authentication.png "Varmenne ja salaisuudet")
@@ -101,7 +108,7 @@ Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä on seura
 
 Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden mukaisesti:
 
-1. Varastosovelluksen käyttäjän tunnistetietoja vastaavan käyttäjän luonti:
+1. Varastonhallinnan mobiilisovelluksen käyttäjän tunnistetietoja vastaavan käyttäjän luonti:
 
     1. Valitse Supply Chain Managementissa **Järjestelmän hallinta \> Käyttäjät \> Käyttäjät**.
     1. Luo käyttäjä.
@@ -109,7 +116,7 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
 
     ![Varastoinnin mobiililaitteen käyttäjän määrittäminen](media/app-connect-app-users.png "Varastoinnin mobiililaitteen käyttäjän määrittäminen")
 
-1. Azure AD -sovelluksen liittäminen varastosovelluksen käyttäjään:
+1. Azure AD -sovelluksen liittäminen varastonhallinnan mobiilisovelluksen käyttäjään:
 
     1. Valitse **Järjestelmän hallinta \> Asetukset \> Azure Active Directory -sovellukset**.
     1. Luo rivi.
@@ -121,9 +128,9 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
 
 Azure AD:n todennuksen avulla mobiililaite voidaan yhdistää turvallisesti Supply Chain Managementiin. Todennuksen voi tehdä joko asiakasohjelman salauskoodilla tai varmenteella. Jos yhteysasetukset tuodaan, asiakasohjelman salauskoodin sijaan kannattaa käyttää varmennetta. Koska asiakasohjelman salauskoodi on aina tallennettava turvallisesti, sitä ei voi tuoda yhteysasetustiedostosta tai QR-koodista jäljempänä käsiteltävällä tavalla.
 
-Varmenteita voidaan käyttää salauskoodeina, joilla voidaan todistaa sovelluksen käyttäjätiedot tunnusta pyydettäessä. Siinä missä varmenteen julkinen osa ladataan sovelluksen rekisteröintiin Azure-portaalissa, koko varmenne on otettava käyttöön jokaisessa laitteessa, johon varastosovellus on asennettu. Organisaatio vastaa varmenteen hallinnassa esimerkiksi kierron osalta. Itseallekirjoitettujen varmenteiden käyttö on mahdollista, mutta käyttävien varmenteiden on aina oltava ei-vietäviä.
+Varmenteita voidaan käyttää salauskoodeina, joilla voidaan todistaa sovelluksen käyttäjätiedot tunnusta pyydettäessä. Siinä missä varmenteen julkinen osa ladataan sovelluksen rekisteröintiin Azure-portaalissa, koko varmenne on otettava käyttöön jokaisessa laitteessa, johon varastonhallinnan mobiilisovellus on asennettu. Organisaatio vastaa varmenteen hallinnassa esimerkiksi kierron osalta. Itseallekirjoitettujen varmenteiden käyttö on mahdollista, mutta käyttävien varmenteiden on aina oltava ei-vietäviä.
 
-Jokaisessa laitteessa, jossa varastosovellusta käytetään, on varmistettava, että varmenne on käytettävissä paikallisesti. Lisätietoja varmenteiden hallinnasta Intune-ohjatuissa laitteissa Intunea käytettäessä on kohdassa [Varmenteiden käyttö todennukseen Microsoft Intunessa](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Jokaisessa laitteessa, jossa varastonhallinnan mobiilisovellusta käytetään, on varmistettava, että varmenne on käytettävissä paikallisesti. Lisätietoja varmenteiden hallinnasta Intune-ohjatuissa laitteissa Intunea käytettäessä on kohdassa [Varmenteiden käyttö todennukseen Microsoft Intunessa](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Sovelluksen määrittäminen tuomalla yhteysasetukset
 
@@ -134,7 +141,7 @@ Sovellusten ylläpitoa ja käyttöönottoa useissa mobiililaitteissa helpottaa m
 Yhteysasetukset voidaan tuoda joko tiedostona tai QR-koodina. Kummassakin tapauksessa on luotava ensin JSON (JavaScript Object Notation) -muotoa ja -syntaksia noudattava asetustiedosto. Tiedostossa on oltava yhteysluettelo, joka sisältää yksittäiset lisättävät yhteydet. Seuraavassa taulukossa on yhteenveto parametreista, jotka on määritettävä yhteysasetustiedostossa.
 
 | Parametri | kuvaus |
-| --- | --- |
+|---|---|
 | ConnectionName | Määritä yhteysasetuksen nimi. Enimmäispituus on 20 merkkiä. Koska tämä arvo on yhteysasetuksen yksilöivä tunniste, varmista, että se on ainoa kyseinen tunniste luettelossa. Jos laitteessa on jo saman niminen yhteys, tuodun tiedoston asetukset korvaavat sen. |
 | ActiveDirectoryClientAppId | Määritä se asiakasohjelman tunnus, jonka kirjoitit muistiin määritettäessä Azure AD:tä kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service). |
 | ActiveDirectoryResource | Määritä Supply Chain Managementin URL-pääosoite. |
@@ -179,7 +186,7 @@ Voit tallentaa tiedot joko JSON-tiedostona tai luoda saman sisällön sisältäv
 
 ### <a name="save-the-connection-settings-file-on-each-device"></a>Yhteysasetustiedoston tallentaminen kuhunkin laitteeseen
 
-Yleensä yhteysasetustiedostot jaetaan kuhunkin hallittavaan laitteeseen laitehallintatyökalun tai komentosarjan avulla. Jos oletusnimeä käyttävä yhteysasetustiedosto on tallennettu kussakin laitteessa oletussijaintiin, varastosovellus tuo sen automaattisesti myös silloin, kun sovellusta käytetään ensimmäisen kerran asennuksen jälkeen. Jos tiedostolla on mukautettu nimi tai se on tallennettu jonnekin muualle, sovelluksen käyttäjän on määritettävä nämä arvot ensimmäisellä käyttökerralla. Tämän jälkeen sovellus kuitenkin käyttää määritettyä nimeä ja sijaintia.
+Yleensä yhteysasetustiedostot jaetaan kuhunkin hallittavaan laitteeseen laitehallintatyökalun tai komentosarjan avulla. Jos oletusnimeä käyttävä yhteysasetustiedosto on tallennettu kussakin laitteessa oletussijaintiin, varastonhallinnan mobiilisovellus tuo sen automaattisesti myös silloin, kun sovellusta käytetään ensimmäisen kerran asennuksen jälkeen. Jos tiedostolla on mukautettu nimi tai se on tallennettu jonnekin muualle, sovelluksen käyttäjän on määritettävä nämä arvot ensimmäisellä käyttökerralla. Tämän jälkeen sovellus kuitenkin käyttää määritettyä nimeä ja sijaintia.
 
 Sovellus tuo yhteysasetukset aiemmasta sijainnista aina, kun sovellus käynnistetään ja määrittää, onko tiedostoon tehty muutoksia. Sovellus päivittää vain yhteydet, joilla on sama nimi kuin yhteysasetustiedostossa olevilla yhteyksillä. Muita nimiä käyttäviä käyttäjän luomia yhteyksiä ei päivitetä.
 
@@ -187,8 +194,8 @@ Yhteyttä ei voi poistaa yhteysasetustiedoston avulla.
 
 Kuten aiemmin mainittiin, yhteystiedoston nimi on *connections.json*. Tiedoston oletussijainti määräytyy sen perusteella, onko käytössä Windows- vai Android-laite:
 
-- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.Dynamics365forOperations-Warehousing_8wekyb3d8bbwe\LocalState`
-- **Android:** `Android\data\com.Microsoft.Dynamics365forOperationsWarehousing\files`
+- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
+- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
 
 Polut luodaan yleensä automaattisesti sovelluksen ensimmäisen käyttökerran jälkeen. Ne voidaan kuitenkin luoda manuaalisesti, jos yhteysasetustiedosto on siirrettävä laitteeseen ennen asennusta.
 
@@ -199,60 +206,66 @@ Polut luodaan yleensä automaattisesti sovelluksen ensimmäisen käyttökerran j
 
 Yhteysasetukset voidaan tuoda seuraavien ohjeiden mukaisesti tiedostosta tai QR-koodista.
 
-1. Avaa varastosovellus mobiililaitteessa.
-1. Valitse **Yhteysasetukset**.
-1. Valitse **Käytä demotilaa** -vaihtoehdossa _Ei_.
+1. Käynnistä varastonhallinnan mobiilisovellus mobiililaitteessa. Kun sovellus käynnistetään ensimmäisen kerran, näkyviin tulee tervetulosanoma. Valitse **Valitse yhteys**.
 
-    ![Käytä demotilaa -vaihtoehto](media/app-connect-app-demo-mode.png "Käytä demotilaa -vaihtoehto")
+    ![Tervetuloviesti](media/app-configure-welcome-screen.png "Tervetuloviesti")
 
-1. Valitse asetusten tuontitavan mukaan **Valitse tiedosto** tai **Lue QR-koodi**.
+1. Jos yhteysasetukset tuodaan tiedostosta ja tiedostoa tallennettaessa käytettiin oletusnimeä ja -sijaintia, sovellus on voinut jo löytää tiedoston. Siirry siinä tapauksessa vaiheeseen 4. Valitse muussa tapauksessa **Määritä yhteys** ja jatka vaiheeseen 3.
 
-    - Jos yhteysasetukset tuodaan tiedostosta, sovellus on voinut jo löytää tiedoston, joka tiedostolla on oletusnimi ja se tallennettiin oletussijaintiin. Valitse muussa tapauksessa **Valitse tiedosto**, etsi tiedosto paikallisessa laitteessa ja valitse. Jos valitse mukautetun sijainnin, sovellus tallentaa sen ja käyttää sitä automaattisesti seuraavalla kerralla.
-    - Jos yhteysasetukset tuodaan lukemalla QR-koodi, valitse **Lue QR-koodi**. Sovellus pyytää laitteen kameran käyttöoikeutta. Kun käyttöoikeus on myönnetty, kamera käynnistyy ja voit käyttää sitä lukemiseen. Laitteen kameran laadun ja QR-koodin monimutkaisuuden mukaan koodin lukeminen voi olla hankalaa. Vähennä siinä tapauksessa QR-koodin monimutkaisuutta luomalla kullekin QR-koodille vain yksi yhteys. (Tällä hetkellä QR-koodin voi lukea vain laitteen kameralla.)
+    ![Määritä yhteys](media/app-configure-set-up-connection.png "Määritä yhteys")
 
-    ![Yhteysasetusten tuominen](media/app-connect-app-select-file.png "Yhteysasetusten tuominen")
+1. Valitse **Yhteysasetukset**-valintaikkunassa **Lisää tiedostosta** tai **Lisää QR-koodista**. Tee valinta sen perusteella, miten haluat tuoda asetukset:
 
-1. Kun yhteysasetukset on ladattu, valitse sivun vasemmassa yläkulmassa **Takaisin**-painike (nuoli vasemmalle).
+    - Jos yhteysasetukset tuodaan tiedostosta, valitse **Lisää tiedostosta**, siirry tiedostoon paikallisessa asemassa ja valitse se. Jos valitse mukautetun sijainnin, sovellus tallentaa sen ja käyttää sitä automaattisesti seuraavalla kerralla.
+    - Jos yhteysasetukset tuodaan lukemalla QR-koodi, valitse **Lisää QR-koodista**. Sovellus pyytää laitteen kameran käyttöoikeutta. Kun käyttöoikeus on myönnetty, kamera käynnistyy ja voit käyttää sitä lukemiseen. Laitteen kameran laadun ja QR-koodin monimutkaisuuden mukaan koodin lukeminen voi olla hankalaa. Vähennä siinä tapauksessa QR-koodin monimutkaisuutta luomalla kullekin QR-koodille vain yksi yhteys. (Tällä hetkellä QR-koodin voi lukea vain laitteen kameralla.)
 
-    ![Ladatut yhteysasetukset](media/app-connect-app-settings-loaded.png "Ladatut yhteysasetukset")
+    ![Yhteysasetukset-valikko](media/app-configure-connection-setup-flyout.png "Yhteysasetukset-valikko")
+
+1. Kun yhteysasetusten lataaminen onnistuu, valittu yhteys tulee näkyviin.
+
+    ![Ladatut yhteysasetukset](media/app-configure-select-connection.png "Ladatut yhteysasetukset")
 
 1. Jos käytössä on Android-laite ja todennukseen käytetään varmennetta, laite pyytää valitsemaan varmenteen.
 
-    ![Varmenteen valintakehote Android-laitteessa](media/app-connect-app-choose-cert.png "Varmenteen valintakehote Android-laitteessa")
+    ![Varmenteen valintakehotteen valitseminen Android-laitteessa](media/app-configure-select-certificate.png "Varmenteen valintakehotteen valitseminen Android-laitteessa")
 
 1. Sovellus muodostaa yhteyden Supply Chain Management -palvelimeen ja avaa kirjautumissivun.
 
-    ![Kirjautumissivu](media/app-connect-sign-in.png "Kirjautumissivu")
+    ![Kirjautumissivu](media/app-configure-sign-in-page.png "Kirjautumissivu")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Sovelluksen määrittäminen manuaalisesti
 
-Sovelluksen voi määrittää laitteessa manuaalisesti muodostamaan yhteyden Supply Chain Management -palvelimeen Azure AD -sovelluksen avulla.
+Sovelluksen voi määrittää laitteessa muodostamaan yhteyden manuaalisesti Supply Chain Management -palvelimeen Azure AD -sovelluksen avulla, jos tiedostoa tai QR-koodia ei ole.
 
-1. Avaa varastosovellus mobiililaitteessa.
-1. Valitse **Yhteysasetukset**.
-1. Valitse **Käytä demotilaa** -vaihtoehdossa _Ei_.
+1. Käynnistä varastonhallinnan mobiilisovellus mobiililaitteessa.
+1. Jos sovellus käynnistetään **esittelytilassa**, valitse **Yhteysasetukset**. Jos **kirjautumissivu** avautuu, kun sovellus käynnistetään, valitse **Muuta yhteys**.
+1. Valitse **Määritä yhteys**.
 
-    ![Käytöstä poistettu demotila](media/app-connect-app-select-file.png "Käytöstä poistettu demotila")
+    ![Määritä yhteys](media/app-configure-set-up-connection.png "Määritä yhteys")
 
-1. Laajenna **Valitse yhteys** -kenttää napauttamalla asetukset, jotka tarvitaan yhteyden tietojen antamiseen manuaalisesti.
+1. Valitse **Manuaalinen syöttö**.
 
-    ![Manuaaliset yhteyskentät](media/app-connect-manual-connect.png "Manuaaliset yhteyskentät")
+    ![Yhteysasetukset-valikko](media/app-configure-connection-setup-flyout.png "Yhteysasetukset-valikko")
+
+    Avautuvalla **Uusi yhteys** -sivulla on näkyvissä asetukset, jotka tarvitaan yhteyden tietojen antamiseen manuaalisesti.
+
+    ![Manuaaliset yhteyskentät](media/app-configure-input-manually.png "Manuaaliset yhteyskentät")
 
 1. Kirjoita seuraavat tiedot:
 
-    - **Käytä asiakasohjelman salauskoodi** – Valitse asetukseksi _Kyllä_, jos todennukseen Supply Chain Managementissa käytetään asiakasohjelman salauskoodia. Valitse _Ei_, jos todennukseen käytetään varmennetta. (Lisätietoja on kohdassa [Verkkosovelluksen luominen Azure Active Directoryssa](#create-service).)
+    - **Käytä asiakasohjelman salauskoodi** – Valitse asetukseksi _Kyllä_, jos todennukseen Supply Chain Managementissa käytetään asiakasohjelman salauskoodia. Valitse _Ei_, jos todennukseen käytetään varmennetta. (Lisätietoja on aiemmin tämän aiheen kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service).)
     - **Yhteyden nimi** – Anna uudelleen yhteydelle nimi. Tämä nimi näkyy **Valitse yhteys** -kentässä, kun avaat yhteysasetukset seuraavan kerran. Annettavan nimen on oltava yksilöivä. (Se ei siis saa olla sama kuin jokin muu laitteeseen mahdollisesti tallennettu yhteyden nimi.)
     - **Active Directoryn asiakasohjelman tunnus** – anna se asiakasohjelman tunnus, jonka kirjoitit muistiin määritettäessä Azure AD:ä kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service).
     - **Active Directoryn asiakasohjelman salauskoodi** – Tämä kenttä on käytettävissä vain silloin, kun **Käytä asiakasohjelman tunnusta** -asetukseksi on valittu _Kyllä_. Anna se asiakasohjelman salauskoodi, jonka kirjoitit muistiin määritettäessä Azure AD:tä kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service).
-    - **Active Directoryn varmenteen allekirjoitus** – Tämä kenttä on käytettävissä Windows-laitteissa vain silloin, kun **Käytä asiakasohjelman tunnusta** -asetukseksi on valittu _Ei_. Anna se varmenteen allekirjoitus, jonka kirjoitit muistiin määritettäessä Azure AD:tä kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service).
+    - **Active Directoryn varmenteen allekirjoitus** – Tämä kenttä on käytettävissä vain Windows-laitteissa ja vain silloin, kun **Käytä asiakasohjelman salasanaa** -asetukseksi on valittu _Ei_. Anna se varmenteen allekirjoitus, jonka kirjoitit muistiin määritettäessä Azure AD:tä kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service).
     - **Active Directoryn resurssi** – määritä Supply Chain Managementin URL-pääosoite.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Kauttaviiva (/) ei voi olla tämän arvon viimeinen merkki.
 
     - **Active Directory -vuokraaja** – Anna Azure AD -vuokraajaa, jota käytetään Supply Chain Management -palvelimen kanssa. Tämän arvon muoto on `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com`.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Kauttaviiva (/) ei voi olla tämän arvon viimeinen merkki.
 
     - **Yritys** – Anna Supply Chain Managementin yritys, johon haluat muodostaa sovelluksella yhteyden.

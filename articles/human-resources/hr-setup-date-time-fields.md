@@ -1,8 +1,8 @@
 ---
 title: Ymmärrä päivämäärä- ja kellonaikakentät
-description: Tietoja siitä, mitä tapahtuu, kun Päivämäärä- ja Aika-kenttiä käytetään Microsoft Dynamics 365 Human Resourcesissa. Saat tietää, mitä on odotettavissa, kun päivämäärä- ja aikatietoja käytetään henkilöstöhallinnon lomakkeessa, ulkoisessa lähteessä tai Common Data Servicessä.
-author: Darinkramer
-manager: AnnBe
+description: Tietoja siitä, mitä tapahtuu, kun Päivämäärä- ja Aika-kenttiä käytetään Microsoft Dynamics 365 Human Resourcesissa.
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -15,21 +15,21 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 027e46d53fd9704f5483e90409be53c1510e8cd4
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d843eb8cefcd0f2f45c8956cd451f88ca6336efb
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130444"
 ---
-# <a name="understand-date-and-time-fields"></a>Ymmärrä päivämäärä- ja kellonaikakentät
+# <a name="understand-date-and-time-fields"></a>Ymmärrä päivämäärä- ja kellonaikakenttiä
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Päivämäärä- ja Aika-** kentät ovat Dynamics 365 Human Resourcesin peruskäsitteitä. On tärkeää ymmärtää, miten **Päivämäärä ja aika** -tietoja käytetään Dynamics 365 Human Resources -lomakkeessa, Common Data Servicessä ja ulkoisissa lähteissä.
+**Päivämäärä- ja Aika-** kentät ovat Dynamics 365 Human Resourcesin peruskäsitteitä. On tärkeää ymmärtää, miten **Päivämäärä ja aika** -tietoja käytetään lomakkeissa, Dataversessä ja ulkoisissa lähteissä.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Tietoja Päivämäärä- ja Päivämäärä ja aika -tietotyyppien eroista
 
@@ -41,39 +41,39 @@ Kun tiedot näytetään **Päivämäärä ja aika** -kentässä, henkilöstöhal
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Tietoja lomakkeiden Päivämäärä ja aika -kentistä 
 
-Kun tietoja annetaan **Päivämäärä ja aika** -kentässä, näytössä näkyvät tiedot eivät ole samoja kuin tietokantaan tallennetut tiedot, jos käyttäjän vyöhykkeeksi ei ole määritetty UTC (Coordinated Universal Time) -aika. **Päivämäärä ja aika** -kenttien tiedot tallennetaan aina UTC-aikana.
+Näytössä näkyvät **Päivämäärä ja aika** -tiedot eivät ole samoja kuin tietokantaan tallennetut tiedot, jos käyttäjän vyöhykkeeksi ei ole määritetty UTC (Coordinated Universal Time) -aika. **Päivämäärä ja aika** -kenttien tiedot tallennetaan aina UTC-aikana.
 
-[![Työntekijä-lomake](./media/worker-form.png)](./media/worker-form.png)
+[![Työntekijä-lomake – UTC](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Tietoja tietokannan Päivämäärä ja aika -kentistä 
 
 Kun henkilöstöhallinto kirjoittaa **Päivämäärä ja aika** -arvon tietokannan, se tallentaa tiedot UTC-ajassa. Tällä tavoin käyttäjät näkevät **Päivämäärä ja aika** -tiedot suhteessa käyttäjän asetuksissa määritettyyn aikavyöhykkeeseen.
  
-Edellä olevassa esimerkissä aloitusaika on ajankohta, ei tietty päivämäärä. Kun kirjautuneen käyttäjän aikavyöhyke muutetaan siten, että GMT +12:00 on nyt GMT UTC, samassa juuri luodussa tietueessa näkyy 04/30/2019 12:00:00 eikä 05/01/2019 12:00:00.
+Edellä olevassa esimerkissä aloitusaika on ajankohta, ei tietty päivämäärä. Kun kirjautuneen käyttäjän aikavyöhyke muutetaan siten, että GMT +12:00 on nyt GMT UTC, samassa tietueessa näkyy 04/30/2019 12:00:00 eikä 05/01/2019 12:00:00.
   
 Jäljempänä olevassa esimerkissä työntekijän 000724 työsuhde aktivoituu samaan aikaan aikavyöhykkeestä riippumatta. Työntekijä aktivoituu 04/30/2019 GMT-aikavyöhykkeellä, mikä on sama kuin 05/01/2019 GMT+12:00 -aikavyöhykkeellä. Kumpikin viittaa samaan ajankohtaan eikä tiettyyn päivämäärään. 
 
-[![Työntekijä-lomake](./media/worker-form2.png)](./media/worker-form2.png)
+[![Työntekijä-lomake – GMT](./media/worker-form2.png)](./media/worker-form2.png)
 
-## <a name="date-and-time-data-in-data-management-framework-excel-common-data-service-and-power-bi"></a>Data Management Frameworkin, Excelin, Common Data Servicen ja Power BI:n päivämäärä ja aikatiedot 
+## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Data Management Frameworkin, Excelin, Dataversen ja Power BI:n päivämäärä ja aikatiedot 
 
-Data Management Framework, Excel-lisäosa, Common Data Service ja Power BI -raportointi on suunniteltu käyttämään tietoja suoraan tietokantatasolla. Koska mikään asiakas ei muuta **Päivämäärä ja aika** -tietoja käyttäjän aikavyöhykkeen mukaiseksi, kaikki **Päivämäärä ja aika** -tiedot ilmoitetaan UTC-aikoina, mikä voi saada aikaan virheellisiä olettamuksia tietoja annettaessa tai tarkasteltaessa.  
+Data Management Framework, Excel-lisäosa, Dataverse ja Power BI -raportointi on suunniteltu käyttämään tietoja suoraan tietokantatasolla. Koska mikään asiakas ei muuta **Päivämäärä ja aika** -tietoja käyttäjän aikavyöhykkeen mukaiseksi, kaikki **Päivämäärä ja aika** -tiedot ilmoitetaan UTC-aikoina, mikä voi saada aikaan virheellisiä olettamuksia tietoja annettaessa tai tarkasteltaessa.  
  
-Tietokanta olettaa, että DMF:n, Excelin tai Common Data Servicen kautta lähetettävien **Päivämäärä ja aika** -tiedot ovat UTC-aikoja. Tämä voi aiheuttaa sekaannusta, kun lähetetty **Päivämäärä ja aika** -arvo ei näy odotetusti, koska tietoja tarkastelevan käyttäjän aikavyöhykkeeksi ei ole määritetty UTC-aikaa. 
+Tietokanta olettaa, että DMF:n, Excelin tai Dataversen kautta lähetettävien **Päivämäärä ja aika** -tiedot ovat UTC-aikoja. Tämä voi aiheuttaa sekaannusta, kun lähetetty **Päivämäärä ja aika** -arvo ei näy odotetusti, koska tietoja tarkastelevan käyttäjän aikavyöhykkeeksi ei ole määritetty UTC-aikaa. 
  
 Näin voi käydä (käänteisesti) myös tietoja vietäessä. Viedyn DMF-yksikön **Päivämäärä ja aika** -tiedot voivat olla erilaiset kuin Dynamics-asiakasohjelmassa näkyvät tiedot. 
  
-Kun tietojen katsomiseen ja luomiseen käytetään ulkoisia lähteitä, kuten DMF:tä, on tärkeää muistaa, että **Päivämäärä ja aika** -arvojen oletetaan olevan oletusarvoisesti UTC-arvoja riippumatta siitä, mikä on käyttäjän tietokoneen aikavyöhyke tai mitkä ovat nykyisen käyttäjän aikavyöhykeasetukset. 
+Kun tietojen katsomiseen ja luomiseen käytetään ulkoisia lähteitä, kuten DMF:tä, kannattaa muistaa, että **Päivämäärä ja aika** -arvojen oletetaan olevan oletusarvoisesti UTC-arvoja riippumatta siitä, mikä on käyttäjän tietokoneen aikavyöhyke tai mitkä ovat nykyisen käyttäjän aikavyöhykeasetukset. 
 
 ## <a name="examples-of-the-same-record-being-displayed-in-different-product-areas"></a>Esimerkkejä saman tietueen näkymisestä eri tuotantoalueilla 
 
 **Henkilöstöhallinto, kun käyttäjän aikavyöhykkeeksi on määritetty UTC**
 
-[![Työntekijä-lomake](./media/worker-form3.png)](./media/worker-form3.png)
+[![Työntekijä-lomake, jonka ajaksi on määritetty UTC](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Henkilöstöhallinto, kun käyttäjän aikavyöhykkeeksi on määritetty GMT +12:00** 
 
-[![Työntekijä-lomake](./media/worker-form4.png)](./media/worker-form4.png)
+[![Työntekijä-lomake, jonka ajaksi on määritetty GMT](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel ODatan kautta**
 
@@ -85,16 +85,13 @@ Kun tietojen katsomiseen ja luomiseen käytetään ulkoisia lähteitä, kuten DM
 
 **DMF-vienti**
 
-[![DMF-vaiheet](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-vienti](./media/DMFexport.png)](./media/DMFexport.png)
 
-**Excel Common Data Servicen kautta**
+**Excel Dataversen kautta**
 
-[![Excel Common Data Servicen kautta](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel Dataversen kautta](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Lisätietoja
 
 [Päivämäärä ja aikatiedot](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [Käyttäjän ensisijaiset aikavyöhykkeet](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

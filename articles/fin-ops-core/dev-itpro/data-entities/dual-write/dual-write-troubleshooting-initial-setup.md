@@ -1,6 +1,6 @@
 ---
 title: Ongelmien vianmääritys alkumäärityksen aikana
-description: Tässä ohjeaiheessa on vianmääritystietoja, joiden avulla voit korjata ongelmat, joita voi ilmetä, kun Finance and Operations -sovellusten ja Dataverse -ohjelmien välinen kaksoiskirjoitus integroidaan.
+description: Tässä ohjeaiheessa on tietoja, joiden avulla voidaan korjata kaksoiskirjoituksen integroinnin alkuasennuksen aikana esiintyviä ongelmia.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129978"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
@@ -71,13 +71,13 @@ Voit antaa sovelluksen suostumuksen noudattamalla seuraavia ohjeita.
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Varmista, että yrityksen tiedot ja kaksoiskirjoitusryhmät on määritetty oikein linkittämisen aikana
 
-Jos haluat varmistaa, että kaksoiskirjoitus toimii oikein, konfiguroinnin aikana valitsemasi yritykset luodaan Dataverse -ympäristöön. Oletusarvon mukaan nämä yritykset ovat vain luku -tilassa ja **IsDualWriteEnable**-ominaisuuden arvo on **True**. Lisäksi luodaan oletusarvon mukainen liiketoimintayksiköiden omistaja ja ryhmä ja lisätään yrityksen nimi. Ennen kuin otat kartat käyttöön, varmista, että ryhmän oletusomistaja on määritetty. Voit etsiä **Yritykset (CDM\_Yritys)** -kohteen seuraavasti.
+Jos haluat varmistaa, että kaksoiskirjoitus toimii oikein, konfiguroinnin aikana valitsemasi yritykset luodaan Dataverse -ympäristöön. Oletusarvon mukaan nämä yritykset ovat vain luku -tilassa ja **IsDualWriteEnable**-ominaisuuden arvo on **True**. Lisäksi luodaan oletusarvon mukainen liiketoimintayksiköiden omistaja ja ryhmä ja lisätään yrityksen nimi. Ennen kuin otat kartat käyttöön, varmista, että ryhmän oletusomistaja on määritetty. Voit etsiä **Yritykset (CDM\_Yritys)** -taulukon seuraavasti.
 
 1. Valitse Dynamics 365:n mallipohjaisen sovelluksen oikeasta yläkulmasta suodatin.
 2. Valitse avattavasta luettelosta **Yritys**.
 3. Voit tarkastella tuloksia valitsemalla **Suorita**.
 4. Valitse yritys, joka on linkitetty kaksoiskirjoituksen määrityksen yhteydessä.
-5. Varmista, että **Omistavan oletusryhmän** -kentässä on arvo. Seuraavassa kuvassa **Omistavan oletusryhmän** -kentän arvoksi on asetettu **USMF-kaksoiskirjoitus**.
+5. Varmista, että **Omistavan oletusryhmän** -sarakkeessa on arvo. Seuraavassa kuvassa **Omistavan oletusryhmän** -sarakkeen arvoksi on määritetty **USMF-kaksoiskirjoitus**.
 
     ![Omistavan oletusryhmän tarkistaminen](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ Näyttöön saattaa tulla seuraava virhesanoma, kun yrität ottaa yhdistämismä
 *Kaksoiskirjoitusvirhe - Laajennuksen rekisteröiminen epäonnistui: \[(Osiokarttaa ei voitu saada projektille DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Virhe ylittää DWM-määrityksen enimmäisosiot DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], tapahtui virheitä.*
 
 Tämänhetkinen raja-arvo, kun linkität ympäristöjä, on noin 40 lakitaulua. Tämä virhe ilmenee, jos yrität ottaa käyttöön yhdistämisen ja yli 40 taulua linkitetään ympäristöjen välillä.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

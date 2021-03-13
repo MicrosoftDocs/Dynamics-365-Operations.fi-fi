@@ -1,6 +1,6 @@
 ---
 title: Sovellustietoja sisältävien asiakirjojen luominen muokkaamalla muotoa
-description: Voit suorittaa tämän menettelyn vaiheet sen jälkeen, kun ER Asiakirjojen luominen sovellustietojen päivityksen kanssa (Osa 3 – mallin ja yhdistämismäärityksen muokkaaminen) -menettely on suoritettu.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määritysten suunnittelua sähköisen asiakirjan luontia ja sovellustietojen päivitystä varten.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684544"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129394"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Sovellustietoja sisältävien asiakirjojen luominen muokkaamalla muotoa
 
@@ -149,6 +149,3 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 46. Sulje sivu.
 47. Sulje sivu.
 48. Sulje sivu.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

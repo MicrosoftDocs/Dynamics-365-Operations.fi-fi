@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmien vianmääritys
+title: Finance and Operations -sovellusten kaksoiskirjoituksen ongelmien vianmääritys
 description: Tässä ohjeaiheessa on vianmääritys tietoja, joiden avulla voit korjata Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmia.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131242"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmien vianmääritys
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Finance and Operations -sovellusten kaksoiskirjoituksen ongelmien vianmääritys
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Jos **Kaksoiskirjoitus**-sivua ei voi avata valitsemalla **Tietojen hallinta** -
 
 **Tarvittavat tunnistetiedot ongelman korjaamiseksi:** Sama käyttäjä, joka määrittää kaksoiskirjoituksen.
 
-Näyttöön saattaa tulla seuraava virhesanoma, kun yrität määrittää uuden entiteetin kaksoiskirjoittamista varten. Ainoa käyttäjä, joka voi luoda yhdistämismäärityksen, on käyttäjä, joka määrittää kaksoiskirjoituksen yhteyden.
+Seuraava virhesanoma voi avautua, kun yrität määrittää uuden taulukon kaksoiskirjoittamista varten. Ainoa käyttäjä, joka voi luoda yhdistämismäärityksen, on käyttäjä, joka määrittää kaksoiskirjoituksen yhteyden.
 
 *Vastauksen tilakoodi ei tarkoita onnistumista: 401 (Luvaton)*
 
@@ -77,7 +77,7 @@ Tämä virhe ilmenee, kun linkitetty Dataverse -ympäristö ei ole käytettävis
 
 Voit korjata ongelman luomalla pyynnön tietojen integrointitiimille. Liitä verkon jäljitys, jotta tietojen integrointiryhmä voi merkitä karttojen tilaksi **Ei käynnissä** taustalla.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Virhe yritettäessä käynnistää taulun yhdistämismääritystä
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Virhe yritettäessä käynnistää taulun yhdistämismääritystä
 
 Näyttöön voi tulla seuraavankaltainen virhesanoma, kun yrität määrittää yhdistämismäärityksen tilaksi **Käytössä**:
 
@@ -86,7 +86,4 @@ Näyttöön voi tulla seuraavankaltainen virhesanoma, kun yrität määrittää 
 Tämän virheen korjaus määräytyy virheen syyn mukaan:
 
 + Jos yhdistämismääritykset ovat riippuvaisia määrityksistä, varmista, että otat käyttöön tämän taulun yhdistämismäärityksen sidonnaiset määritykset.
-+ Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdekentät. Jos Finance and Operations -sovelluksen kenttä puuttuu, noudata [Puuttuvien yksikkökenttien ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps) -kohdan ohjeita. Jos kenttä Dataversessä puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta kentät täytetään automaattisesti takaisin yhdistämismääritykseen.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdesarakkeet. Jos Finance and Operations -sovelluksen sarake puuttuu, noudata [Puuttuvien taulukkosarakkeiden ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) -kohdan ohjeita. Jos Dataversen sarake puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta sarakkeet täytetään automaattisesti takaisin yhdistämismääritykseen.

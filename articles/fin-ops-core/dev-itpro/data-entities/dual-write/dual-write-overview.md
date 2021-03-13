@@ -1,6 +1,6 @@
 ---
 title: Kaksoiskirjoituksen yleiskatsaus
-description: Tämä ohjeaihe sisältää kaksoiskirjoituksen yleiskatsauksen. Kaksoiskirjoitus on infrastruktuuri, joka sisältää lähes reaaliaikaisen vuorovaikutuksen Microsoft Dynamics 365:n mallipohjaisten sovellusten ja Finance and Operations -sovellusten välillä.
+description: Tässä aiheessa on kaksoiskirjoituksen yleiskatsaus, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja Finance and Operations -sovellusten välillä.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130002"
 ---
 # <a name="dual-write-overview"></a>Kaksoiskirjoituksen yleiskatsaus
 
@@ -53,7 +53,7 @@ Kaksoiskirjoituksen infrastruktuuri on laajennettavissa. Se on luotettava infras
 + Yhdistetty näkymä toiminto- ja virhelokeista tietojen järjestelmänvalvojille
 + Mahdollisuus määrittää mukautettuja hälytyksiä ja rajoja sekä tilata ilmoituksia
 + Intuitiivinen käyttöliittymä suodatusta ja muunnoksia varten
-+ Mahdollisuus määrittää ja tarkastella entiteetin riippuvuuksia ja suhteita
++ Mahdollisuus määrittää ja tarkastella taulukoiden riippuvuuksia ja suhteita
 + Laajennettavuus sekä vakioentiteeteille että mukautetuille tauluille ja määrityksille
 + Luotettava sovelluksen elinkaaren hallinta
 + Uusien asiakkaiden valmis määrityskokemus
@@ -93,7 +93,7 @@ Kaksoiskirjoitus mahdollistaa tietojen integroinnin Microsoft Dynamics 365 -sove
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Mitä kaksoiskirjoitus tarkoittaa asiakkaiden aktivointisovellusten kehittäjille ja arkkitehdeille?
 
-Kaksoiskirjoitus automatisoi tietovirran Finance and Operations -sovellusten ja asiakkaiden aktivointisovellusten välillä. Kaksoiskirjoitus sisältää kaksi AppSource-ratkaisua, jotka on asennettu Dataverseen. Ratkaisut laajentavat entiteetin rakennetta, laajennuksia ja työnkulkuja Dataversessä niin, että ne voidaan ottaa käyttöön ERP:ssä. Käyttöönotto onnistuu, jos asiakkaiden aktivointisovellusten kehittäjät ja arkkitehdit ymmärtävät nämä muutokset ja tekevät yhteistyötä Finance and Operations -sovellusten vastaavien henkilöiden kanssa.
+Kaksoiskirjoitus automatisoi tietovirran Finance and Operations -sovellusten ja asiakkaiden aktivointisovellusten välillä. Kaksoiskirjoitus sisältää kaksi AppSource-ratkaisua, jotka on asennettu Dataverseen. Ratkaisut laajentavat taulukon rakennetta, laajennuksia ja työnkulkuja Dataversessa niin, että ne voidaan ottaa käyttöön ERP:ssä. Käyttöönotto onnistuu, jos asiakkaiden aktivointisovellusten kehittäjät ja arkkitehdit ymmärtävät nämä muutokset ja tekevät yhteistyötä Finance and Operations -sovellusten vastaavien henkilöiden kanssa.
 
 Jos haluat luoda pariteetin Finance and Operations -sovellusten kanssa, kaksoiskirjoitus tekee joitakin tärkeitä muutoksia Dataverse -rakenteeseen. Voit välttää suunnittelu- ja kehitystyön toistoja tulevaisuudessa, jos ymmärrät tämän suunnitelman.
 
@@ -103,12 +103,9 @@ Jos haluat luoda pariteetin Finance and Operations -sovellusten kanssa, kaksoisk
 
 + Voit estää tietojen menettämisen Finance and Operations -sovellusten ja Dataversen välisessä tiedonsiirrossa laajentamalla desimaalien määrää asiakkaiden aktivointisovellusten valuuttatietotyypissä. Ominaisuus muuntaa automaattisesti olemassa olevat taulut uuteen laajennettuun tilaan metatietotasolla. Tämän prosessin aikana valuutta-arvo muunnetaan desimaalidataksi, ei rahamääräiseksi dataksi. Valuutta-arvo tukee 10 desimaalia. Tämän ominaisuuden käyttäminen edellyttää suostumusta. Organisaatiot, joilla ei ole tarvetta yli 4 desimaalin tarkkuudelle, eivät tarvitse ominaisuutta. Lisätietoja on kohdassa [Valuutan tietotyypin siirto kaksoiskirjoitusta varten](currrency-decimal-places.md).
 
-+ [Voimassaolopäivä](../../dev-tools/date-effectivity.md) lisätään Dataverseen. Se tukee mennyttä, nykyistä ja tulevaa päivämäärää samassa yksikössä.
++ [Voimassaolopäivä](../../dev-tools/date-effectivity.md) lisätään Dataverseen. Se tukee mennyttä, nykyistä ja tulevaa päivämäärää samassa taulukossa.
 
 + Tuotteen [yksikkömuunnoksia](../../../../supply-chain/pim/tasks/manage-unit-measure.md) tuetaan tuotteissa, tarjouksissa, tilauksissa ja laskuissa.
 
 Lisätietoja tulevista muutoksista on kohdassa [Kaksoiskirjoituksen uudet ja muuttuneet ominaisuudet](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
-title: Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa
-description: Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamics Officen Excel-lisäosalla.
-author: ChrisGarty
+title: Yksikön tietojen näyttäminen ja päivittäminen Excelissä
+description: Tässä aiheessa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla.
+author: jasongre
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -13,38 +13,39 @@ ms.reviewer: sericks
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a9486b3d700cdbe19fbcdba431f673d0a03014f
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688464"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141873"
 ---
-# <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa
+# <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka avaat yksikkötietoja Microsoft Excelissä ja tarkastelet, päivität ja muokkaat tietoja Microsoft Dynamics Officen Excel-lisäosalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai Finance and Operationsista.
+Tässä aiheessa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla. Voit aloittaa yksikkötietojen avaamisen joko Excelissä tai Finance and Operations -sovelluksissa.
 
-Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tietoja Excel-lisäosalla. Tähän lisäosaan tarvitaan Microsoft Excel 2016.
+Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tietoja Excel-lisäosalla. Apuohjelman käyttö edellyttää vähintään versiota Microsoft Excel 2016.
 
 > [!NOTE]
 > Jos Microsoft Azure Active Directory (Azure AD) -vuokraaja on määritetty käyttämään Active Directory Federation Servicesiä (AD FS), varmista, että Officen toukokuun 2016 päivitys on asennettu, jotta Excel-lisäosa pystyy kirjaamaan sinut sisään.
 
-Lisätietoja Excel-lisätietoja on lyhyessä videossa [Excel-mallin luominen otsikolle ja rivimalleille Dynamics 365 for Finance and Operationsissa](https://youtu.be/RTicLb-6dbI).
+Lisätietoja Excel-apuohjelman käyttämisestä lyhyessä videossa [Excel-mallin luominen otsikolle ja rivimalleille](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Avaa yksikön tiedot Excelissä, kun aloitat Finance and Operationsista
-1. Valitse Finance and Operationsin sivulla **Avaa kohteessa Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Yksikön tietojen avaaminen Excelissä Finance and Operations -sovelluksesta aloitettaessa
+1. Valitse Finance and Operations -sovelluksen sivulla **Avaa kohteessa Microsoft Office**.
 
     Jos sivun juuritietolähde (taulukko) on sama kuin minkä tahansa yksikön juuritietolähde, sivulle muodostetaan oletusasetuksena **Avaa Excelissä**. **Avaa Excelissä** -vaihtoehto löytyy usein käytetyillä sivuilla, kuten **Kaikki toimittajat** ja **Kaikki asiakkaat**.
  
 2. Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3. Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
-5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** ja kirjaudu sitten sisään samoilla tunnuksilla, joilla kirjaudut Finance and Operationsiin. Excel-lisäosa käyttää aiempaa sisäänkirjautumista Internet Explorerista ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. Varmista tämän vuoksi Excel-lisäosan oikeassa yläkulmassa näkyvä käyttäjänimi.
+5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** ja kirjaudu sitten sisään samoilla tunnuksilla, joilla kirjaudut Finance and Operations -sovellukseen. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 
@@ -53,7 +54,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 2. Etsi Office-kaupasta avainsanalla **Dynamics** ja valitse **Lisää** **Microsoft Dynamics Office -lisäosa** -kohdan vieressä (Excel-lisäosa).
 3. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan** voidaksesi käyttää sitä. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Avaa **Asetukset**-ruutu valitsemalla **Lisää palvelimen tiedot** -painike.
-5. Kopioi kohteena olevan t Finance and Operations -esiintymän URL-osoite selaimessa, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
+5. Kopioi kohteena olevan Finance and Operations -sovellusesiintymän URL-osoite selaimessa, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
 
     Jos URL-osoite on esimerkiksi `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, poista kaikki kaikki muut tiedot paitsi `https://xxx.dynamics.com`.
 
@@ -72,7 +73,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 Kun Excel-lisäosa lukee yksikön tiedot työkirjaan, voit päivittää tiedot milloin tahansa valitsemalla Excel-lisäosassa **Päivitä**.
 
 ## <a name="edit-entity-data-in-excel"></a>Muokkaa yksikön tietoja Excelissä
-Voit muuttaa yksikön tietoja tarpeidesi mukaisesti ja julkaista muutokset takaisin valitsemalla Excel-lisäosassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
+Voit muuttaa yksikön tietoja tarpeen mukaan ja julkaista muutokset takaisin Finance and Operations -sovelluksiin valitsemalla Excel-apuohjelmassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
 
 - Napsauta tietolähdetaulun jotakin kohtaa ja valitse sitten **Uusi** Excel-lisäosassa.
 - Napsauta tietolähdetaulun viimeistä riviä ja paina sarkainpainiketta, kunnes kohdistin siirtyy pois rivin viimeisestä sarakkeesta ja luo uuden rivin.
@@ -105,6 +106,21 @@ Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnitteli
 4. Ota käyttöön tietolähteeseen tehdyt muutokset valitsemalla **Päivitä**. Valitse sitten **Valmis** ja sulje suunnitteluohjelma.
 5. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
 
+## <a name="change-the-publish-batch-size"></a>Julkaisuerän koon muuttaminen
+Kun käyttäjä julkaisee muutoksia tietotietueisiin Excel-apuohjelmalla, päivitykset lähetetään erissä. Julkaisuerän oletuskoko on 100 riviä. Versiossa 10.0.17 ja sitä uudemmissa versioissa **Julkaisuerän koon määrittämisen salliminen Excel-apuohjelmassa** -toiminto antaa joustavan tavan hallita julkaisuerän kokoa.
+
+Järjestelmänvalvojat voivat määrittää koko järjestelmää koskevan julkaisuerän kokorajoituksen Avaa Excelissä -työkirjoissa. Määritys tehdään määrittämällä **Julkaisuerän raja** -kenttä **Office-sovelluksen parametrit** -sivun **Sovelluksen parametrit** -osassa.
+
+Julkaisuerän koko voidaan muuttaa myös yksittäisessä työkirjassa Excel-apuohjelman avulla.
+
+1. Avaa työkirja Excelissä.
+2. Valitse **Asetukset**(ratas) -painike Excel-apuohjelman oikeassa yläkulmassa.
+3. Määritä **Julkaisuerän koko** -kenttään sopiva arvo. Määritetyn arvon on oltava pienempi kuin koko järjestelmää koskeva julkaisuerän raja.
+4. Valitse **OK**.
+5. Tallenna työkirja. Jos työkirjaa ei tallenneta, kun apuohjelman asetuksia on muutettu, kyseiset muutokset eivät ole työkirjassa, kun se avataan uudelleen.
+
+Excel-työkirjamallin tekijät voivat määrittää samalla tavoin mallien julkaisuerän koon, ennen kuin ne ladataan järjestelmään.
+
 ## <a name="copy-environment-data"></a>Kopioi ympäristön tiedot
 
 Ympäristöstä työkirjaan luettavat tiedot voidaan kopioida toiseen ympäristöön. Et voi kuitenkaan muuttaa yhteyden URL-osoitetta noin vain, koska työkirjan tietovälimuisti jatkaa tietojen käsittelemistä aiemmin luotuina tietoina. Sen sijaan tietojen julkaisemisessa uuteen ympäristöön uusina tietoina on käytettävä Kopioi ympäristön tiedot -toimintoa.
@@ -123,6 +139,4 @@ Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 - **Lataa sovelmat -painike on näkyvissä** – Jos Excel-lisäosassa on **Lataa sovelmat** -painike kirjautumisen jälkeen, et ehkä ole kirjautunut oikeana käyttäjänä. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, valitse se. Kirjaudu sitten ulos ja kirjaudu takaisin sisään.
 - **Näyttöön tulee Kielletty-virhesanoma** –Jos näyttöön tulee Kielletty-virhesanoma, kun Excel-lisäosa lataa metatietoja, Excel-lisäosaan kirjautuneella tilillä ei ole käyttöoikeutta kohteena olevaan palveluun, ilmentymään tai tietokantaan. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, valitse se. Kirjaudu sitten ulos ja kirjaudu takaisin sisään.
 - **Excelin päällä näkyy tyhjä verkkosivu** – Jos kirjautumisen aikana avautuu tyhjä verkkosivu, tili vaatii AD FS:n käytön, mutta Excel-lisäosan suorittava Excel-versio ei ole tarpeeksi uusi eikä kirjautumisikkunaa voi ladata. Ratkaise ongelma päivittämällä käytössä oleva Excel-versio. Jos olet yritys, jolla on käytössä hidas päivityskanava, voit päivittää Excel-version käyttämällä [Office Deployment Tool -työkalua](https://technet.microsoft.com/library/jj219422.aspx) [vaihtaaksesi hitaan päivityskanavan nykyiseen päivityskanavaan](https://technet.microsoft.com/library/mt455210.aspx).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- **Aikakatkaisu tapahtuu tietojen muutoksia julkaistaessa** – Jos ilmoitus aikakatkaisusta avautuu, kun tietojen muutoksia yritetään julkaista yksikköön, kyseisen työnkirjan julkaisuerän koon pienentämistä kannattaa harkita. Jos yksikkö käynnistää suuren määrän logiikkaa tietueen muutosten yhteydessä, aikakatkaisujen estäminen voi edellyttää, että päivitykset lähetetään pienissä erissä.

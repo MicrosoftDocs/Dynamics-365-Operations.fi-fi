@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9d1c6e20e72fb2816c32e71e8921a94724ae5656
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130752"
 ---
 # <a name="adjust-leases"></a>Vuokrasopimusten muuttaminen
 
@@ -31,48 +30,101 @@ ms.locfileid: "4442981"
 
 Ohjeaiheessa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan. Resurssin vuokraus noudattaa ASC 842:n ja IFRS 16:n ohjeita vuokrasopimuksen muokkauksesta. ASC 842-20-15-1 määrittää vuokrasopimuksen muokkauksen miksi tahansa sopimuksen ehtojen muutokseksi, jos se muuttaa vuokrasopimuksen laajuutta tai kohdetta. IFRS 16:n kappale 39 määrittää, että vuokralle ottajan on uudelleenarvostettava vuokrasopimusvelka niin, että se vastaa vuokrien muutoksia.
 
-ASC 842- ja IFRS 16 -säädöksiä noudattavissa organisaatioissa vuokrasopimus arvioidaan uudelleen niin, että se vastaa tulevan vähimmäisvuokran nykyisen arvon muutosta. Jos tämä arvo kasvaa, luotu kirjauskansiovienti veloitetaan käyttöoikeusomaisuuserästä ja hyvitetään vuokrasopimusvelalle uuden ja edellisen arvon välisenä erona. Jos arvo pienenee, kirjauskansiovienti veloitetaan vuokrasopimusvelasta ja ero hyvitetään käyttöoikeusomaisuuserälle.
+ASC 842- ja IFRS 16 -säädöksiä noudattavissa organisaatioissa vuokrasopimus arvioidaan uudelleen niin, että se vastaa tulevan vähimmäisvuokran nykyisen arvon muutosta. Jos tämä arvo kasvaa, luotu kirjauskansiovienti veloitetaan käyttöoikeusomaisuuserän tililtä ja hyvitetään vuokrasopimusvelan tilille uuden ja edellisen arvon välisenä erona. Jos arvo pienenee, kirjauskansiovienti veloitetaan vuokrasopimusvelan tililtä ja ero hyvitetään käyttöoikeusomaisuuserän tilille.
 
 Js oikaisu vähentää käyttöoikeusomaisuuserän alle arvon 0 (nolla), jäljellä oleva osa hyvitetään vuokrasopimuksen muokkauksen kirjaustilin voittoon. Se on määritetty **Vuokrasopimuksen kirjaustilit** -sivulla. Järjestelmä ottaa huomioon nämä tapahtumat ja muut oikaisuviennit, kuten vuokrasopimuksen muokkauksen aiheuttamat luokittelun muutokset, alkuvaiheen välittömät menot, vuokrasopimukseen liittyvät kannustimet, ennakkomaksut ja purkamiskustannukset.
 
 Lisäohjeita vuokrasopimuksen oikaisutapahtumia varten on IFRS 16- ja ASC 842 -ohjeissa.
 
-Voit muuttaa vuokrasopimusta noudattamalla seuraavia vaiheita. Muokatut tiedot päivittävät vuokrausaikatauluja aikataulun luontiprosessin suorittamisen jälkeen.
+## <a name="lease-adjustment-wizard"></a>Vuokrausoikaisun ohjattu toiminto
 
-1. Siirry kohtaan **Resurssin leasing \> Vuokrasopimukset \> Vuokrasopimusyhteenveto**.
-2. Valitse **Vuokrasopimusyhteenveto**-sivulla muokattava vuokrasopimus ja valitse sitten **Muokkaa vuokrasopimusta**.
-3. Syötä **Muokkaa vuokrasopimusta** -sivulla muokatun vuokrasopimuksen uusia tietoja.
+Oikaise vuokrasopimus seuraavien ohjeiden mukaan. Muokatut tiedot päivittävät vuokra-aaikataulut sen jälkeen, kun olet kirjannaut ohjatusta **Vuokrausoikaisu**-toiminnosta. Voit tallentaa työsi ja sulkea ohjatun toiminnon milloin tahansa ja palata sitten myöhemmin takaisin työsi jatkamista varten.
 
-    Huomaa, että **Muokkaa vuokrasopimusta** -sivu muistuttaa **Lisää vuokrasopimus** -sivua. Vuokrasopimuksen lisäämisen yhteydessä määritetty aloituspäivämäärä määrittää, milloin vuokrasopimus alkaa. Samoin **Muokkauspäivämäärä**-kenttä **Muokkaa vuokrasopimusta** -sivulla määrittää, milloin muokattu vuokrasopimus alkaa. Tämä päivämäärä ei voi olla maksuaikataulurivien alkamispäivän jälkeen.
+Voit avata ohjatun **Vuokraoikaisu**-toiminnon vuokrayhteenvedosta noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Resurssin leasing \> Vuokrasopimukset \> Vuokrasopimusyhteenveto**. 
+2. Valitse oikaistavat vuokrat ja valitse sitten **ohjattu oikaisutoiminto**.
+3. Tee tarvittavat muutokset noudattamalla ohjatun toiminnon kehotteita.
+
+Voit avata ohjatun **Vuokraoikaisu**-toiminnon **Vuokraoikaisut**-sivulla jo käynnissä ollutta oikaisua varten noudattamalla seuraavia vaiheita.
+
+1.  Siirry kohtaan **Vuokra \> Vuokrat \> Vuokraoikaisut**.
+2.  Valitse vuokra, jonka oikaisutilana on **kesken** ja valitse sitten **ohjattu oikaisutoiminto**.
+3.  Syötä **Muokkauksen alkamispäivä **- ja** Kirjauspäivä**-kenttiin haluamasi päivämäärät.
+4.  Valitse **Seuraava**.
+
+    Vuokra lisätään nyt **Vuokraoikaisut**-sivulle, jonne voit syöttää sille uudet tiedot.
+
+    Kun vuokra on oikaistu, siihen sovelletaan käyttöoikeusehtojen kenttää. Jos muokattuun vuokrasopimukseen ei liity alkuperäisiä suoria kustannuksia, vuokrasopimukseen liittyviä kannustimia, ennakkomaksuja tai purkamiskustannuksia, jätä vastaavat kentät tyhjiksi. Alkuperäiset summat eivät koske päivitettyä vuokrasopimusta. 
+
+    Esimerkiksi vuokralle antaja antaa 1 000 dollarin kannustimen, jotta vuokrasopimus hyväksytään. Kun tässä tapauksessa vuokrasopimusta muutetaan niin, että se ottaa laajennuksen huomioon, syötä **1 000** **Oikaisusta johtuvat vuokrasopimuksen kannustimet** -kenttään.
+
+    Maksusuunnitelman rivit näyttävät nyt kaikki kuukauden ja myöhempien kuukausien maksut **Muokkauksen alkamispäivä**-kentässä. Koska muutokset ovat prospektiivisia, maksusuunnitelmarivit eivät voi alkaa ennen muutoksen alkamista. Voit tarkastella maksusuunnitelman rivejä ennen muokkauksen alkamispäivämäärää **Vuokran versiohistoria** -sivulla.
+
+8.  Valitse **Seuraava**.
+
+    Seuraava sivu sisältää odotettua vuokraoikaisua koskevat tärkeimmät tiedot, kuten vuokravelkaan liittyvät kirjanpitoarvot ennen muutosta ja uuden odotettavissa olevan vuokravelan muutoksen jälkeen. Sivulla voit myös esikatsella odotetun vuokraoikaisun kirjauskansiokirjauskirjausta.
+
+9.  Valitse **Lähetä työnkulkuun**, jos haluat lähettää vuokraoikaisun työnkulkujärjestelmään, jos vuokraoikaisun työnkulku on aktiivinen eikä oikaisua ole vielä hyväksytty. Lisätietoja vuokraoikaisun työnkulun käyttämisestä on kohdassa [Vuokraoikeisun työnkulkujen käyttäminen](use-create-lease-wrkflw.md).
 
     > [!NOTE]
-    > **Käyttöoikeusomaisuuserän tietoja** -kenttä koskee vuokrasopimuksen oikaisua. Jos muokattuun vuokrasopimukseen ei liity alkuperäisiä suoria kustannuksia vuokrasopimukseen liittyviä kannustimia, ennakkomaksuja tai purkamiskustannuksia, jätä nämä kentät tyhjiksi. Alkuperäiset summat eivät koske päivitettyä vuokrasopimusta. Muut kustannukset, jotka tapahtuvat vuokrasopimuksen muokkauksen jälkeen, syötetään **Muokkaa vuokrasopimusta** -sivulla.
-    > 
-    > Esimerkiksi vuokralle antaja antaa 1 000 dollarin kannustimen, jotta vuokrasopimus hyväksytään. Kun tässä tapauksessa vuokrasopimusta muutetaan niin, että se ottaa laajennuksen huomioon, syötä **1 000** **Vuokrasopimukseen liittyvät kannustimet** -kenttään. Jos vuokrasopimuksen oikaisuun ei liity kannustimia, tyhjennä kaikki tähän kenttää aikaisemmin syötetyt arvot. Samaa logiikkaa sovelletaan myös muihin käyttöoikeusomaisuuden tietoihin.
+    > Tässä vaiheessa järjestelmä laskee oikaisun muuttujat uudelleen varmistaakseen, ettei tapahtumia ole kirjattu vuokraan oikaisun yhteenvedon ja oikaisukirjauskansion kirjauksen ensimmäisen laskennan jälkeen. Jos jokin arvo muuttuu, oikaisujen yhteenvetoruudukko päivitetään ja voit tarkistaa tiedot, ennen kuin lähetät vuokraoikaisut uudelleen työnkulkujärjestelmään.
 
-    Oikaistun vuokrasopimuksen maksuaikataulurivit luodaan mahdollisina riveinä. Maksuaikataulurivit, joiden luontiperustana on käytetty mahdollisuutta, eivät voi alkaa ennen kuin vuokrasopimuksen muokkaukset ovat voimassa.
+10. Jos työnkulku ei ole aktiivinen tai vuokraoikaisu on hyväksytty, käsittele muutokset ja kirjaa oikaisukirjauskansion merkintä valitsemalla **Valmis**.
 
-    Seuraavat vaiheet ovat lähes samat kuin vuokrasopimuksen alkuperäisessä tunnistamisessa.
+    > [!NOTE] 
+    > Tässä vaiheessa järjestelmä laskee oikaisun muuttujat uudelleen varmistaakseen, ettei tapahtumia ole kirjattu vuokraan oikaisun yhteenvedon ja oikaisukirjauskansion kirjauksen ensimmäisen laskennan jälkeen. Jos jokin arvo muuttuu, oikaisujen yhteenvetoruudukko päivitetään ja voit tarkistaa muutokset ennen kuin valitset **Valmis**. Jos työnkulku on aktiivinen ja vuokraoikaisu on hyväksytty, oikaisun yhteenvedon muutokset aiheuttavat hyväksynnän tilan määrittämisen takaisin **Ei lähetetty** -tilaan. Tässä tapauksessa vuokraoikaisu on lähetettävä uudelleen työnkulkujärjestelmään.
 
-4. Valitse **Luo aikataulut**, jos haluat luoda oikaistun maksuaikataulun. Näyttöön tulee sanoma, joka ilmaisee, että vuokrasopimukselle on luotu maksuaikataulu.
+    **Vuokraoikaisut**-sivulla oikaisun tilaksi tulee nyt **Valmis**.
 
-    > [!IMPORTANT]
-    > Ennen kuin valitset **Luo aikataulut**, varmista, että muokkauspäivämäärä ja maksuaikataulurivit on määritetty oikein. Varmista myös, että kaikki alkuvaiheen välittömät menot, vuokrasopimukseen liittyvät kannustimet, ennakkomaksut tai purkamiskustannukset vastaavat vain oikaisusta koituneita kustannuksia.
+    **Vuokraoikaisut**-sivulla voit silti tarkastella **Oikaisun yhteenveto**- ja **Oikaisumerkinnän esikatselu** -pikavälilehtiä. Vuokra- ja päivämäärätiedot näkyvät vuokran versiohistoriassa.
 
-5. Voit tarkastella juuri luotua maksuaikataulua valitsemalla **Kirjat** ja avaamalla sitten **Maksuaikataulu**-sivun.
-6. **Maksuaikataulu**-sivulla voit muokata oikaistuja maksusummia, ennen kuin vahvistat maksuaikataulun. Vahvista aikataulu valitsemalla **Vahvista aikataulu**.
+    Uusi vuokraversio ja uusi aikataulujoukko luodaan nyt muokattujen tietojen avulla. 
 
-    Kun maksuaikataulu on vahvistettu, uusi resurssin poisto ja uudet vuokrasopimusvelan aikataulut on luotu.
+13. Voit tarkastella uusia aikatauluja siirtymällä vuokraan ja valitsemalla sitten **Kirjat**.
+14. Voit tarkastella uutta luotua maksusuunnitelmaa valitsemalla **Maksusuunnitelma**.
+15. Voit tarkastella uutta vuokrasopimusvelan kuoletusaikataulua, joka luotiin uusista tiedoista, sulkemalla **Maksuaikataulu**-sivun ja avaamalla **Velan kuoletusaikataulu** -sivun.
+16. Voit tarkastella juuri luotua resurssin poistoaikataulua avaamalla **Resurssin poistoaikataulu** -sivun **Kirjan tiedot** -sivulla.
+17. Voit tarkastella oikaisun kirjauskansiovientiä valitsemalla **Kirjauskansiot \> Resurssin leasingkirjauskansio**.
 
-7. Voit tarkastella uutta vuokrasopimusvelan kuoletusaikataulua, joka luotiin uusista syötteistä, sulkemalla **Maksuaikataulu**-sivun ja avaamalla **Velan kuoletusaikataulu** -sivun.
-8. Voit tarkastella juuri luotua resurssin poistoaikataulua avaamalla **Resurssin poistoaikataulu** -sivun **Kirjan tiedot** -sivulla.
-9. Jos haluat luoda oikaisukirjauskansioviennin, valitse **Toiminto \> Vuokrasopimuksen oikaisu**. Näyttöön tulee sanoma, joka ilmaisee, että oikaisukirjauskansiovienti on luotu. 
-10. Voit tarkastella kirjauskansiovientiä valitsemalla **Kirjauskansiot \> Resurssin leasingkirjauskansio**.
-11. Voit kirjata kirjauskansioviennin valitsemalla rivin ja valitsemalla sitten **Kirjaa**.
+## <a name="cancel-a-lease-adjustment"></a>Vuokraoikaisun peruuttaminen
+
+Jos haluat poistaa käynnissä olevan vuokraoikaisun, noudata seuraavia ohjeita.
+
+1.  Siirry kohtaan **Vuokra \> Vuokrat \> Vuokraoikaisut**.
+2.  Valitse kesken oleva ja peruutettava vuokraoikaisu.
+3.  Valitse **Peruuta oikaisu**. 
+4.  Valitse **OK**.
+
+    > [!NOTE] 
+    > Jos valitset ohjatussa **Vuokraoikaisu**-toiminnossa **Peruuta**, peruutat ohjatun toiminnon viimeisimpään muutokseen, mutta et poista käynnissä ollutta oikaisua.
+
+## <a name="use-the-lease-adjustment-workflow"></a>Vuokraoikaisun työnkulun käyttäminen
+
+Tässä osassa on tietoja vuokraoikaisutyönkulun käytöstä. Vuokraoikaisun työnkulku auttaa hallitsemaan vuokraoikaisuja yhdenmukaisesti antamalla hyväksyntävaiheet ja määrittämällä ne tietyille käyttäjille, jotka hyväksyvät vuokraoikaisun ennen sen lopullista muuttamista. Kun vuokraoikaisu on hyväksytty työnkulussa, voit viimeistellä vuokraoikaisun ohjatun **Vuokraoikaisu**-toiminnon avulla.
+
+1.  Jos haluat lähettää vuokraoikaisun hyväksyttäväksi, siirry kohtaan **Vuokra \> Vuokrat \> Vuokraoikaisut**.
+2.  Valitse vuokraoikaisun tunnus ja valitse sitten **ohjattu oikaisutoiminto**.
+3.  Valitse ohjatun toiminnon viimeisellä sivulla **Lähetä hyväksyttäväksi**.
+4.  Kirjoita oikaisua koskeva huomautus ja valitse sitten **OK**.
+
+    Työnkulun tilaksi muutetaan **Odottaa hyväksyntää**, ja kaikki ohjatun toiminnon kentät on lukittu muokkauksen suhteen.
+
+5.  Jos haluat hyväksyä vuokraoikaisun, siirry kohtaan **Vuokra \> Vuokrat \> Vuokraoikaisut**.
+6.  Valitse vuokraoikaisun vuokratunnus ja tarkista **Oikaisun yhteenveto**- ja **Oikaisumerkinnän esikatselu** -pikavälilehdet.
+7.  Valitse **Työnkulku \> Hyväksytty**.
+
+    **Vuokraoikaisut**-sivulla työnkulun tilaksi tulee nyt **Hyväksytty**. Tässä vaiheessa vuokraoikaisu voidaan kirjata oikaisukirjauskansiomerkinnän kautta.
+
+8.  Voit jatkaa vuokraoikaisun käsittelyä ja kirjata oikaisumerkinnän siirtymällä kohtaan **Vuokra \> Vuokra \> Vuokraoikaisut**.
+9.  Valitse vuokraoikaisun tunnus ja valitse sitten **ohjattu oikaisutoiminto**.
+10. Valitse **Seuraava**, kunnes pääset ohjatun toiminnon viimeiselle sivulle, ja valitse sitten **Valmis**.
+
+Järjestelmä laskee vuokran kirjanpitoarvot uudelleen varmistaakseen, että hyväksytyt oikaisumuuttujat ovat ajan tasalla. Jos muutoksia on, hyväksynnän tilaksi tulee **Luonnos** ja sinun on lähetettävä vuokraoikaisu uudelleen työnkulkujärjestelmään.
 
 ## <a name="view-lease-versions"></a>Vuokrasopimusversioiden tarkasteleminen
 
-Jos vuokrasopimusta on muokattu, voit tarkastella sen eri versioita. Voit myös tarkastella aiempia aikatauluja ja aiempien vuokrasopimusten tietoja.
+Jos vuokrasopimusta on oikaistu, voit tarkastella sen eri versioita. Voit myös tarkastella aiempia aikatauluja ja aiempien vuokrasopimusten tietoja.
 
 1. Valitse **Vuokrasopimusyhteenveto**-sivu ja valitse sitten toimintoruudussa **Vuokrasopimuksen versiohistoria**.
 
@@ -81,7 +133,4 @@ Jos vuokrasopimusta on muokattu, voit tarkastella sen eri versioita. Voit myös 
     Voit tarkastella valitun vuokrasopimusversion taloushallinnon dimensioita, sopimustietoja, sijaintia ja maksuaikataulurivejä.
 
 2. Jos haluat tarkastella aiempia aikatauluja, avaa muokattu vuokrasopimus **Vuokrasopimusyhteenveto**-sivulla, valitse haluttu kirja ja valitse sitten toimintoruudussa **Kirjan versiohistoria**.
-3. Valitse **Kirjan versio** -sivulla haluttu versio ja aikataulu tarkastelemista varten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+3. Valitse **Kirjan versio** -sivulla versio ja aikataulu tarkastelemista varten.

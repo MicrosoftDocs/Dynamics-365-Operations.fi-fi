@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
+title: Finance and Operations -sovellusten päivitysten ongelmien vianmääritys
 description: Tässä ohjeaiheessa on vianmääritys tietoja, joiden avulla voit korjata Finance and Operations -sovellusten päivityksiin liittyviä ongelmia.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a11ce426d7f30b6b124bd2022514a0201c2b332c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131218"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Finance and Operations -sovellusten päivitysten ongelmien vianmääritys
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 
 **Ongelman korjaamiseen tarvittava rooli:** Järjestelmänvalvoja
 
-Näyttöön saattaa tulla seuraavan kaltainen virhesanoma, kun yrität päivittää Finance and Operations -sovellusta Platform Update 30 -tietojärjestelmään käyttämällä **duowriteprojectconfiguration**-yksikköä.
+Näyttöön saattaa tulla seuraavan kaltainen virhesanoma, kun yrität päivittää Finance and Operations -sovellusta Platform Update 30 -tietojärjestelmään käyttämällä **duowriteprojectconfiguration**-taulukkoa.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -62,7 +62,7 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 8. Valitse **Synkronoi**, jos haluat tehdä täyden tietokannan synkronoinnin.
 9. Kun koko tietokannan synkronointi on onnistunut, suorita tietokannan synkronointivaihe uudelleen Microsoft Dynamics Lifecycle Servicesissä (LCS) ja käytä manuaalisia päivityskomentosarjoja, jotta voit jatkaa päivitystä.
 
-## <a name="missing-entity-fields-issue-on-maps"></a>Puuttuvien yksikkökenttien ongelma kartoissa
+## <a name="missing-table-columns-issue-on-maps"></a>Taulukon puuttuvien sarakkeiden ongelmia yhdistämismäärityksissä
 
 **Ongelman korjaamiseen tarvittava rooli:** Järjestelmänvalvoja
 
@@ -70,27 +70,24 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 
 *Rakenteesta puuttuu lähdekenttä \<field name\>.*
 
-![Esimerkki puuttuva lähdekenttä -virhesanomasta](media/error_missing_field.png)
+![Esimerkki puuttuvan lähdesarakkeen virhesanomasta](media/error_missing_field.png)
 
-Voit korjata ongelman varmistamalla ensin seuraavien vaiheiden avulla, että kentät ovat yksikössä.
+Voit korjata ongelman varmistamalla ensin seuraavien vaiheiden avulla, että sarakkeet ovat taulukossa.
 
 1. Kirjaudu sisään virtuaalikone Finance and Operationsille -sovellukseen.
-2. Siirry kohtaan **Työtilat \> Tietojen hallinta**, valitse **Kehysparametrit**-ruutu ja päivitä taulut valitsemalla **Taulun asetukset** -välilehdessä **Päivitä yksikköluettelo**.
-3. Siirry kohtaan **Työtilat \> Tietojen hallinta**, valitse **Tietotaulut** -välilehti ja varmista, että yksikkö on luettelossa. Jos yksikköä ei ole luettelossa, kirjaudu Finance and Operations -sovelluksen VM-kohtaan ja varmista, että yksikkö on käytettävissä.
+2. Valitse **Työtilat \> Tietojen hallinta**, valitse **Kehysparametrit**-ruutu ja päivitä taulut valitsemalla **Taulun asetukset** -välilehdessä **Päivitä taululuettelo**.
+3. Valitse **Työtilat \> Tietojen hallinta**, valitse **Tietotaulut** -välilehti ja varmista, että taulu on luettelossa. Jos taulua ei ole luettelossa, kirjaudu Finance and Operations -sovelluksen VM-kohtaan ja varmista, että taulu on käytettävissä.
 4. Avaa **Taulujen yhdistämismääritys** -sivu **Kaksoiskirjoitussivulta** Finance and Operations -sovelluksessa.
-5. Valitse **Päivitä yksikköluettelo**, jos haluat täyttää taulujen yhdistämismääritysten kentät automaattisesti.
+5. Valitse **Päivitä taululuettelo**, jos haluat täyttää taulujen yhdistämismääritysten sarakkeet automaattisesti.
 
 Jos ongelma ei vieläkään korjaannu, toimi seuraavasti.
 
 > [!IMPORTANT]
-> Näiden vaiheiden avulla voit poistaa yksikön ja lisätä sen sitten uudelleen. Voit välttää ongelmat noudattamalla tarkasti ohjeita.
+> Näiden vaiheiden avulla voit poistaa taulun ja lisätä sen sitten uudelleen. Voit välttää ongelmat noudattamalla tarkasti ohjeita.
 
 1. Siirry Finance and Operations -sovelluksessa kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Tietotaulut**-ruutu.
-2. Etsi yksikkö, josta puuttuu määrite. Valitse työkaluriviltä **Muokkaa kohteen yhdistämismääritystä**.
+2. Etsi taulu, josta puuttuu määrite. Valitse työkaluriviltä **Muokkaa kohteen yhdistämismääritystä**.
 3. Valitse **Yhdistä väliaikainen alue kohteeseen** -ruudusta **Luo yhdistämismääritys**.
 4. Avaa **Taulujen yhdistämismääritys** -sivu **Kaksoiskirjoitussivulta** Finance and Operations -sovelluksessa.
 5. Jos määritettä ei täytetä automaattisesti kartalla, lisää se manuaalisesti valitsemalla **Lisää määrite** -painike ja valitsemalla sitten **Tallenna**. 
 6. Valitse kartta ja valitse **Suorita**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
