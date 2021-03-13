@@ -2,7 +2,7 @@
 title: Työsuhdeluokkien luominen
 description: Työsuhdeluokat voidaan määrittää Dynamics 365 Human Resources -sovelluksessa vastaamaan työntekijöitä.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,21 +18,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: da9e4fb146b9ede8036c07aede8c7584e41923ad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27e8b229833205de75825fbb1c4634e883d24fc1
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418377"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112369"
 ---
-# <a name="create-employment-categories"></a><span data-ttu-id="9831e-103">Työsuhdeluokkien luominen</span><span class="sxs-lookup"><span data-stu-id="9831e-103">Create employment categories</span></span>
+# <a name="create-employment-categories"></a><span data-ttu-id="fef00-103">Työsuhdeluokkien luominen</span><span class="sxs-lookup"><span data-stu-id="fef00-103">Create employment categories</span></span>
 
-<span data-ttu-id="9831e-104">Määritä työntekijöitä vastaavat työluokat Dynamics 365 Human Resourcesissa.</span><span class="sxs-lookup"><span data-stu-id="9831e-104">Set up employment categories in Dynamics 365 Human Resources to match your workers.</span></span>
+<span data-ttu-id="fef00-104">Määritä työntekijöitä vastaavat työluokat Dynamics 365 Human Resourcesissa.</span><span class="sxs-lookup"><span data-stu-id="fef00-104">Set up employment categories in Dynamics 365 Human Resources to match your workers.</span></span>
 
-1. <span data-ttu-id="9831e-105">Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Työsuhdeluokat**.</span><span class="sxs-lookup"><span data-stu-id="9831e-105">In the **Benefits management** workspace, under **Setup**, select **Employment categories**.</span></span>
+1. <span data-ttu-id="fef00-105">Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Työsuhdeluokat**.</span><span class="sxs-lookup"><span data-stu-id="fef00-105">In the **Benefits management** workspace, under **Setup**, select **Employment categories**.</span></span>
 
-2. <span data-ttu-id="9831e-106">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="9831e-106">Select **New**.</span></span>
+2. <span data-ttu-id="fef00-106">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="fef00-106">Select **New**.</span></span>
 
-3. <span data-ttu-id="9831e-107">Määritä **Työntekijän tyypin**, **Työluokan** ja **Kuvauksen** arvot.</span><span class="sxs-lookup"><span data-stu-id="9831e-107">Specify values for **Worker type**, **Employment category**, and **Description**.</span></span>
+3. <span data-ttu-id="fef00-107">Määritä **Työntekijän tyypin**, **Työluokan** ja **Kuvauksen** arvot.</span><span class="sxs-lookup"><span data-stu-id="fef00-107">Specify values for **Worker type**, **Employment category**, and **Description**.</span></span>
 
-4. <span data-ttu-id="9831e-108">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="9831e-108">Select **Save**.</span></span> 
+4. <span data-ttu-id="fef00-108">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="fef00-108">Select **Save**.</span></span> 
