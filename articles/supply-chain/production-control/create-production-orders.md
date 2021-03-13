@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ProdTable, ProdTableCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19741
 ms.assetid: bbb6e69d-479c-45fc-a0a8-66da5df16c7f
 ms.search.region: Global
@@ -19,28 +18,28 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80031737ab0d0c4ab1e4dbd5646ad91f1a010cd5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 28ef1da29b38354d7ccaad56fb036f21d8c9ff15
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427218"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011169"
 ---
-# <a name="production-order-lifecycle-overview"></a><span data-ttu-id="27e77-105">Tuotantotilauksen elinkaari – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="27e77-105">Production order lifecycle overview</span></span>
+# <a name="production-order-lifecycle-overview"></a><span data-ttu-id="c1863-105">Tuotantotilauksen elinkaari – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="c1863-105">Production order lifecycle overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="27e77-106">Tuotantotilauksen luonnin yhteydessä käynnistetään pyyntö nimikkeen luomisen käynnistämiseksi.</span><span class="sxs-lookup"><span data-stu-id="27e77-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="27e77-107">Tuotantotilaus sisältää tietoja tuotettavasta tuotteesta, määrästä sekä suunnitellusta valmistuspäivämäärästä.</span><span class="sxs-lookup"><span data-stu-id="27e77-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="27e77-108">Se sisältää myös tietoja kulutettavista materiaaleista ja nimikkeen tuottamisessa käytettävästä prosessista.</span><span class="sxs-lookup"><span data-stu-id="27e77-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
+<span data-ttu-id="c1863-106">Tuotantotilauksen luonnin yhteydessä käynnistetään pyyntö nimikkeen luomisen käynnistämiseksi.</span><span class="sxs-lookup"><span data-stu-id="c1863-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="c1863-107">Tuotantotilaus sisältää tietoja tuotettavasta tuotteesta, määrästä sekä suunnitellusta valmistuspäivämäärästä.</span><span class="sxs-lookup"><span data-stu-id="c1863-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="c1863-108">Se sisältää myös tietoja kulutettavista materiaaleista ja nimikkeen tuottamisessa käytettävästä prosessista.</span><span class="sxs-lookup"><span data-stu-id="c1863-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
 
-<span data-ttu-id="27e77-109">Tuotantotilaus etenee tuotannon elinkaaren vaiheesta toiseen.</span><span class="sxs-lookup"><span data-stu-id="27e77-109">A production order passes through stages of the production life cycle.</span></span> <span data-ttu-id="27e77-110">Kun tilaus luodaan, sen tilaksi määritetään **Luotu**.</span><span class="sxs-lookup"><span data-stu-id="27e77-110">When an order is created, it is assigned the status **Created**.</span></span> <span data-ttu-id="27e77-111">Kun tilaus on valmis, sen tilaksi määritetään **Päättynyt**.</span><span class="sxs-lookup"><span data-stu-id="27e77-111">When an order is finished, it is assigned the status **Ended**.</span></span> <span data-ttu-id="27e77-112">Käyttäjä voi määrittää kunkin vaiheen kyseisen vaiheen parametriasetuksella.</span><span class="sxs-lookup"><span data-stu-id="27e77-112">A parameter setting in each stage allows a user to configure each step.</span></span> <span data-ttu-id="27e77-113">Asetus voidaan määrittää yhdelle käyttäjälle tai kaikille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="27e77-113">The setting can be set up for a single user or for all users.</span></span>
+<span data-ttu-id="c1863-109">Tuotantotilaus etenee tuotannon elinkaaren vaiheesta toiseen.</span><span class="sxs-lookup"><span data-stu-id="c1863-109">A production order passes through stages of the production life cycle.</span></span> <span data-ttu-id="c1863-110">Kun tilaus luodaan, sen tilaksi määritetään **Luotu**.</span><span class="sxs-lookup"><span data-stu-id="c1863-110">When an order is created, it is assigned the status **Created**.</span></span> <span data-ttu-id="c1863-111">Kun tilaus on valmis, sen tilaksi määritetään **Päättynyt**.</span><span class="sxs-lookup"><span data-stu-id="c1863-111">When an order is finished, it is assigned the status **Ended**.</span></span> <span data-ttu-id="c1863-112">Käyttäjä voi määrittää kunkin vaiheen kyseisen vaiheen parametriasetuksella.</span><span class="sxs-lookup"><span data-stu-id="c1863-112">A parameter setting in each stage allows a user to configure each step.</span></span> <span data-ttu-id="c1863-113">Asetus voidaan määrittää yhdelle käyttäjälle tai kaikille käyttäjille.</span><span class="sxs-lookup"><span data-stu-id="c1863-113">The setting can be set up for a single user or for all users.</span></span>
 
-<span data-ttu-id="27e77-114">Tuotannon tuoterakenne ja tuotantoreititys ovat tuotantotilauksen tärkeimmät yksiköt.</span><span class="sxs-lookup"><span data-stu-id="27e77-114">The production bill of material and the production route are the main entities of the production order.</span></span> <span data-ttu-id="27e77-115">Ne kopioidaan tuotantotilaukseen tuotettavaksi valitun nimikkeen ja määrän perusteella.</span><span class="sxs-lookup"><span data-stu-id="27e77-115">They are copied to the production order based on the selected item and quantity that are going to be produced.</span></span> <span data-ttu-id="27e77-116">Tuotannon tuoterakennetta ja reititystä voidaan muokata ennen tuotantotilauksen aloittamista.</span><span class="sxs-lookup"><span data-stu-id="27e77-116">Before the production order is started, the production bill of material and route can be edited.</span></span>
+<span data-ttu-id="c1863-114">Tuotannon tuoterakenne ja tuotantoreititys ovat tuotantotilauksen tärkeimmät yksiköt.</span><span class="sxs-lookup"><span data-stu-id="c1863-114">The production bill of material and the production route are the main entities of the production order.</span></span> <span data-ttu-id="c1863-115">Ne kopioidaan tuotantotilaukseen tuotettavaksi valitun nimikkeen ja määrän perusteella.</span><span class="sxs-lookup"><span data-stu-id="c1863-115">They are copied to the production order based on the selected item and quantity that are going to be produced.</span></span> <span data-ttu-id="c1863-116">Tuotannon tuoterakennetta ja reititystä voidaan muokata ennen tuotantotilauksen aloittamista.</span><span class="sxs-lookup"><span data-stu-id="c1863-116">Before the production order is started, the production bill of material and route can be edited.</span></span>
 
-<span data-ttu-id="27e77-117">Tuotantotilaus voidaan luoda seuraavilla tavoilla:</span><span class="sxs-lookup"><span data-stu-id="27e77-117">A production order can be created in the following scenarios:</span></span>
+<span data-ttu-id="c1863-117">Tuotantotilaus voidaan luoda seuraavilla tavoilla:</span><span class="sxs-lookup"><span data-stu-id="c1863-117">A production order can be created in the following scenarios:</span></span>
 
--   <span data-ttu-id="27e77-118">Luotu toteuttamalla materiaaliin kysyntään perustuva pääsuunnittelu.</span><span class="sxs-lookup"><span data-stu-id="27e77-118">Created by master planning execution based on material demand.</span></span>
--   <span data-ttu-id="27e77-119">Luotu suoraan myyntitilausriviltä tai luotaessa ja arvioitaessa ylemmän tason tuotantotilaus (tarvekohdistus).</span><span class="sxs-lookup"><span data-stu-id="27e77-119">Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).</span></span>
--   <span data-ttu-id="27e77-120">Luo manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="27e77-120">Created manually.</span></span>
+-   <span data-ttu-id="c1863-118">Luotu toteuttamalla materiaaliin kysyntään perustuva pääsuunnittelu.</span><span class="sxs-lookup"><span data-stu-id="c1863-118">Created by master planning execution based on material demand.</span></span>
+-   <span data-ttu-id="c1863-119">Luotu suoraan myyntitilausriviltä tai luotaessa ja arvioitaessa ylemmän tason tuotantotilaus (tarvekohdistus).</span><span class="sxs-lookup"><span data-stu-id="c1863-119">Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).</span></span>
+-   <span data-ttu-id="c1863-120">Luo manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="c1863-120">Created manually.</span></span>
 
 
 

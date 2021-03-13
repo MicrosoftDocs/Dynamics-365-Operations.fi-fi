@@ -11,52 +11,51 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9678dffd84e9e4032510811731a67da953b40431
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b397dd7efdfcd8874bc5bb44aaa12ab1dc8cb66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427344"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011566"
 ---
-# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="6f159-103">Varaston varastotasojen oikaisu (perusvarastointi)</span><span class="sxs-lookup"><span data-stu-id="6f159-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="34438-103">Varaston varastotasojen oikaisu (perusvarastointi)</span><span class="sxs-lookup"><span data-stu-id="34438-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6f159-104">Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja kirjausprosessi, jolla voidaan oikaista varastossa olevien tuotteiden varastotasoja.</span><span class="sxs-lookup"><span data-stu-id="6f159-104">This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.</span></span> <span data-ttu-id="6f159-105">Ennen aloittamista varasto-oikaisuille on oltava määritettynä varaston oikaisun kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="6f159-105">You need to have an inventory journal name set up for inventory adjustments before you start this.</span></span> <span data-ttu-id="6f159-106">Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="6f159-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="6f159-107">Yleensä varastotyöntekijä tekee nämä tehtävät.</span><span class="sxs-lookup"><span data-stu-id="6f159-107">These tasks would normally be carried out by a warehouse employee.</span></span>
+<span data-ttu-id="34438-104">Tässä menettelyssä selvitetään varaston oikaisun kirjauskansion luonti- ja kirjausprosessi, jolla voidaan oikaista varastossa olevien tuotteiden varastotasoja.</span><span class="sxs-lookup"><span data-stu-id="34438-104">This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.</span></span> <span data-ttu-id="34438-105">Ennen aloittamista varasto-oikaisuille on oltava määritettynä varaston oikaisun kirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="34438-105">You need to have an inventory journal name set up for inventory adjustments before you start this.</span></span> <span data-ttu-id="34438-106">Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="34438-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="34438-107">Yleensä varastotyöntekijä tekee nämä tehtävät.</span><span class="sxs-lookup"><span data-stu-id="34438-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-adjustment-journal"></a><span data-ttu-id="6f159-108">Luo varaston oikaisun kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="6f159-108">Create an inventory adjustment journal</span></span>
-1. <span data-ttu-id="6f159-109">Valitse Inventoinnin- ja varastonhallinta > Kirjauskansioviennit > Nimikkeet > Varaston oikaisu.</span><span class="sxs-lookup"><span data-stu-id="6f159-109">Go to Inventory management > Journal entries > Items > Inventory adjustment.</span></span>
-2. <span data-ttu-id="6f159-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="6f159-110">Click New.</span></span>
-3. <span data-ttu-id="6f159-111">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="6f159-111">In the Name field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="6f159-112">Valitse luettelosta varaston oikaisun kirjauskansio, jota haluat käyttää.</span><span class="sxs-lookup"><span data-stu-id="6f159-112">In the list, click on the inventory adjustment journal name you want to use.</span></span>
-    * <span data-ttu-id="6f159-113">Joidenkin kenttien tiedot voidaan lisätä valitsemasi varaston oikaisun kirjauskansion asetusten perusteella.</span><span class="sxs-lookup"><span data-stu-id="6f159-113">Some other fields will be populated based on the setup of the inventory adjustment journal name you select.</span></span>  
-5. <span data-ttu-id="6f159-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="6f159-114">Click OK.</span></span>
+## <a name="create-an-inventory-adjustment-journal"></a><span data-ttu-id="34438-108">Luo varaston oikaisun kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="34438-108">Create an inventory adjustment journal</span></span>
+1. <span data-ttu-id="34438-109">Valitse Inventoinnin- ja varastonhallinta > Kirjauskansioviennit > Nimikkeet > Varaston oikaisu.</span><span class="sxs-lookup"><span data-stu-id="34438-109">Go to Inventory management > Journal entries > Items > Inventory adjustment.</span></span>
+2. <span data-ttu-id="34438-110">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="34438-110">Click New.</span></span>
+3. <span data-ttu-id="34438-111">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="34438-111">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="34438-112">Valitse luettelosta varaston oikaisun kirjauskansio, jota haluat käyttää.</span><span class="sxs-lookup"><span data-stu-id="34438-112">In the list, click on the inventory adjustment journal name you want to use.</span></span>
+    * <span data-ttu-id="34438-113">Joidenkin kenttien tiedot voidaan lisätä valitsemasi varaston oikaisun kirjauskansion asetusten perusteella.</span><span class="sxs-lookup"><span data-stu-id="34438-113">Some other fields will be populated based on the setup of the inventory adjustment journal name you select.</span></span>  
+5. <span data-ttu-id="34438-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="34438-114">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a><span data-ttu-id="6f159-115">Tämän kirjauskansion rivit</span><span class="sxs-lookup"><span data-stu-id="6f159-115">Create journal lines</span></span>
-1. <span data-ttu-id="6f159-116">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="6f159-116">Click New.</span></span>
-2. <span data-ttu-id="6f159-117">Merkitse luettelossa nimiketunnuskenttä.</span><span class="sxs-lookup"><span data-stu-id="6f159-117">In the list, mark the item number field.</span></span>
-3. <span data-ttu-id="6f159-118">Valitse Nimiketunnus-kentässä nimike.</span><span class="sxs-lookup"><span data-stu-id="6f159-118">In the Item number field, Select an item.</span></span> <span data-ttu-id="6f159-119">Jos käytät USMF-yrityksen demotietoja, kirjoita D0001.</span><span class="sxs-lookup"><span data-stu-id="6f159-119">If you are using demo data company USMF, type 'D0001'.</span></span>
-4. <span data-ttu-id="6f159-120">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="6f159-120">In the Site field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="6f159-121">Valitse luettelosta toimipaikka.</span><span class="sxs-lookup"><span data-stu-id="6f159-121">In the list, select a site.</span></span>
-6. <span data-ttu-id="6f159-122">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="6f159-122">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="6f159-123">Valitse luettelosta varasto.</span><span class="sxs-lookup"><span data-stu-id="6f159-123">In the list, select a warehouse.</span></span>
-    * <span data-ttu-id="6f159-124">Jos olet valinnut nimikkeen, jossa sijainti on pakollinen dimensio, sijainti on määritettävä tässä.</span><span class="sxs-lookup"><span data-stu-id="6f159-124">If you have selected an item with Location as a mandatory dimension, you would have to specify the location here.</span></span>  
-8. <span data-ttu-id="6f159-125">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="6f159-125">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="6f159-126">Kustannushinnan kenttä määrittää varastovastaanottojen yksikkökohtaisen kustannuksen.</span><span class="sxs-lookup"><span data-stu-id="6f159-126">The cost price field specifies the cost per unit for inventory receipts.</span></span> <span data-ttu-id="6f159-127">Jos nimiketunnukselle ei ole määritetty kustannusta tai haluat muuttaa sitä manuaalisesti, voit tehdä sen tässä.</span><span class="sxs-lookup"><span data-stu-id="6f159-127">If the cost is not specified for the item number or if you wanted to change it manually, you would do this here.</span></span>  
+## <a name="create-journal-lines"></a><span data-ttu-id="34438-115">Tämän kirjauskansion rivit</span><span class="sxs-lookup"><span data-stu-id="34438-115">Create journal lines</span></span>
+1. <span data-ttu-id="34438-116">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="34438-116">Click New.</span></span>
+2. <span data-ttu-id="34438-117">Merkitse luettelossa nimiketunnuskenttä.</span><span class="sxs-lookup"><span data-stu-id="34438-117">In the list, mark the item number field.</span></span>
+3. <span data-ttu-id="34438-118">Valitse Nimiketunnus-kentässä nimike.</span><span class="sxs-lookup"><span data-stu-id="34438-118">In the Item number field, Select an item.</span></span> <span data-ttu-id="34438-119">Jos käytät USMF-yrityksen demotietoja, kirjoita D0001.</span><span class="sxs-lookup"><span data-stu-id="34438-119">If you are using demo data company USMF, type 'D0001'.</span></span>
+4. <span data-ttu-id="34438-120">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="34438-120">In the Site field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="34438-121">Valitse luettelosta toimipaikka.</span><span class="sxs-lookup"><span data-stu-id="34438-121">In the list, select a site.</span></span>
+6. <span data-ttu-id="34438-122">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="34438-122">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="34438-123">Valitse luettelosta varasto.</span><span class="sxs-lookup"><span data-stu-id="34438-123">In the list, select a warehouse.</span></span>
+    * <span data-ttu-id="34438-124">Jos olet valinnut nimikkeen, jossa sijainti on pakollinen dimensio, sijainti on määritettävä tässä.</span><span class="sxs-lookup"><span data-stu-id="34438-124">If you have selected an item with Location as a mandatory dimension, you would have to specify the location here.</span></span>  
+8. <span data-ttu-id="34438-125">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="34438-125">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="34438-126">Kustannushinnan kenttä määrittää varastovastaanottojen yksikkökohtaisen kustannuksen.</span><span class="sxs-lookup"><span data-stu-id="34438-126">The cost price field specifies the cost per unit for inventory receipts.</span></span> <span data-ttu-id="34438-127">Jos nimiketunnukselle ei ole määritetty kustannusta tai haluat muuttaa sitä manuaalisesti, voit tehdä sen tässä.</span><span class="sxs-lookup"><span data-stu-id="34438-127">If the cost is not specified for the item number or if you wanted to change it manually, you would do this here.</span></span>  
 
-## <a name="validate-and-post-the-inventory-adjustment-journal"></a><span data-ttu-id="6f159-128">Vahvista ja kirjaa varaston oikaisun kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="6f159-128">Validate and post the inventory adjustment journal</span></span>
-1. <span data-ttu-id="6f159-129">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="6f159-129">Click Validate.</span></span>
-2. <span data-ttu-id="6f159-130">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="6f159-130">Click OK.</span></span>
-3. <span data-ttu-id="6f159-131">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="6f159-131">Click Post.</span></span>
-    * <span data-ttu-id="6f159-132">Kun kirjaat tämäntyyppisen kirjauskansion, järjestelmä kirjaa varastovastaanoton tai varasto-oton, muuttaa varastotason ja -arvon sekä luo kirjanpitotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="6f159-132">When you post this kind of journal, an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.</span></span>  
-4. <span data-ttu-id="6f159-133">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="6f159-133">Click OK.</span></span>
-5. <span data-ttu-id="6f159-134">Sulje lomake.</span><span class="sxs-lookup"><span data-stu-id="6f159-134">Close the form.</span></span>
-6. <span data-ttu-id="6f159-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="6f159-135">Close the page.</span></span>
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a><span data-ttu-id="34438-128">Vahvista ja kirjaa varaston oikaisun kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="34438-128">Validate and post the inventory adjustment journal</span></span>
+1. <span data-ttu-id="34438-129">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="34438-129">Click Validate.</span></span>
+2. <span data-ttu-id="34438-130">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="34438-130">Click OK.</span></span>
+3. <span data-ttu-id="34438-131">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="34438-131">Click Post.</span></span>
+    * <span data-ttu-id="34438-132">Kun kirjaat tämäntyyppisen kirjauskansion, järjestelmä kirjaa varastovastaanoton tai varasto-oton, muuttaa varastotason ja -arvon sekä luo kirjanpitotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="34438-132">When you post this kind of journal, an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.</span></span>  
+4. <span data-ttu-id="34438-133">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="34438-133">Click OK.</span></span>
+5. <span data-ttu-id="34438-134">Sulje lomake.</span><span class="sxs-lookup"><span data-stu-id="34438-134">Close the form.</span></span>
+6. <span data-ttu-id="34438-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="34438-135">Close the page.</span></span>
 
