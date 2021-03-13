@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4427383"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077628"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -41,11 +40,11 @@ Tämän ohjeaiheen muissa osissa käsitellään tapoja, joilla työntekijät kä
 
 ## <a name="all-jobs-tab"></a>Kaikki työt -välilehti
 
-**Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu*, *Pysäytetty* tai *Aloitettu*.
+**Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu*, *Pysäytetty* tai *Aloitettu*. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
 
 ![Kaikki työt -välilehti](media/pfei-all-jobs-tab.png "Kaikki työt -välilehti")
 
-Työluettelossa on seuraavat sarakkeet. (Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.)
+Työluettelossa on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
 
 1. **Valintasarake** – Vasemmassa sarakkeessa käytetään valintamerkkejä ilmaisemaan työt, jotka työntekijä on valinnut. Työntekijät voivat valita luettelossa useita töitä samanaikaisesti. Kaikki työt voidaan valita valitsemalla valintamerkki sarakkeen otsikossa. Jos töitä valitaan yksi, kyseisen työn tiedot näytetään sivun alareunassa.
 1. **Työn tilasarake** – Tämä sarake ilmaisee symboleilla kunkin työn tilan. Jos työllä ei ole tässä sarakkeessa symbolia, sen tila on *Ei aloitettu*. Vihreä kolmio ilmaisee työn, jonka tila on *Aloitettu*. Kaksi keltaista pystysuoraa viivaa ilmaisevat työn, jonka tila on *Pysäytetty*.
@@ -60,9 +59,11 @@ Työluettelossa on seuraavat sarakkeet. (Numerot vastaavat edellisessä kuvassa 
 
 ## <a name="active-jobs-tab"></a>Aktiiviset työt -välilehti
 
+**Aktiiviset työt** -välilehdissä on luettelo kaikista töistä, jotka kirjautunut työntekijä on jo aloittanut. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
+
 ![Aktiiviset työt -välilehti](media/pfei-active-jobs-tab.png "Aktiiviset työt -välilehti")
 
-**Aktiiviset työt** -välilehden työluettelossa on seuraavat sarakkeet:
+Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 - **Valintasarake** – Vasemmassa sarakkeessa käytetään valintamerkkejä ilmaisemaan työt, jotka työntekijä on valinnut. Työntekijät voivat valita luettelossa useita töitä samanaikaisesti. Kaikki työt voidaan valita valitsemalla valintamerkki sarakkeen otsikossa. Jos töitä valitaan yksi, kyseisen työn tiedot näytetään sivun alareunassa.
 - **Tilaus** – tämä sarake näyttää työn tuotantotilauksen numeron.
@@ -72,6 +73,28 @@ Työluettelossa on seuraavat sarakkeet. (Numerot vastaavat edellisessä kuvassa 
 - **Valmis** – tämä sarake näyttää määrän, joka työstä on jo valmistunut.
 - **Hävikki** – tämä sarake näyttää määrän, joka on työstä jo hävikkiä.
 - **Jäljellä** – tämä sarake näyttää määrän, joka työstä on vielä valmistumatta.
+
+## <a name="my-machine-tab"></a>Oma kone -välilehti
+
+**Oma kone** -välilehdessä työntekijät voivat valita resurssin, joka on liitetty koneresurssiin **Kaikki työt** -välilehdessä määritetyssä suodattimessa. Työntekijät voi sitten tarkastella valitun resurssin tilaa ja kuntoa lukemalla enintään neljän valitun laskurin arvot sekä viimeaikaisten ylläpitopyyntöjen ja rekisteröityjen seisokkien luetteloita. Työntekijät voi myös pyytää valitun resurssin ylläpitoa sekä rekisteröidä ja muokata koneen seisokkeja. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
+ 
+![Oma kone -välilehti](media/pfei-my-machine-tab.png "Oma kone -välilehti")
+
+**Oma kone** -välilehdessä on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
+
+1. **Koneresurssi** – Valitse seurattava koneresurssi. Aloita nimen kirjoittaminen ja tee valinta kirjoitusta vastaavien resurssien luettelosta. Vaihtoehtoisesti voit valita suurennuslasikuvakkeen ja tehdä valinnan luettelossa, jossa on kaikki työluettelon suodattimessa oleviin resursseihin liitetyt resurssit.
+
+    > [!NOTE]
+    > Supply Chain Managementin käyttäjät voivat määrittää tarpeen mukaan kullekin resurssille resurssin **Kaikki resurssit** -sivulla (**Käyttöomaisuus**-välilehden avattavassa **Resurssi**-luettelossa). Lisätietoja on kohdassa [Resurssin luominen](../asset-management/objects/create-an-object.md).
+
+1. **Asetukset** – Valitse rataskuvake ja avaa valintaikkuna, jossa voidaan valita, mitä valitun koneresurssin laskureita tarkastellaan. Näiden laskureiden arvot näytetään **Resurssien hallinta** -välilehden yläosassa. (Seuraavassa näyttökuvassa olevassa) **Asetukset**-valikossa voi ottaa käyttöön enintään neljä laskuria. Valitse kukin käyttöönotettava laskuri käyttämällä ruudun yläosassa olevaa hakukenttää. Hakukentässä on luettelo kaikista valittuun resurssiin liitetyistä laskurista. Resurssi valittiin **Resurssien hallinta** -sivun yläosassa. Määritä kukin laskuri seuraamaan joko **Koottu**-arvoa ja laskurin uusinta **Toteutunut**-arvoa. Jos määritetty laskuri esimerkiksi seuraa, kuinka monta tuntia kone on ollut käytössä, määrityksenä on oltava **Koottu**. Jos laskuri määritetään seuraamaan viimeksi päivitettyä lämpötilaa tai painetta, määrityksenä on oltava **Toteutunut**. Valitse **OK** tallentaaksesi asetukset ja sulje valintaikkuna.
+
+    ![Oma kone -välilehti](media/pfei-my-machine-tab-settings.png "Oma kone -välilehti")
+
+1. **Yläpitopyyntö** – Tämän painikkeen valinta avaa valintaikkunan, jossa voidaan luoda ylläpitopyyntö. Pyynnölle voi antaa kuvauksen ja lisätä huomautuksen. Pyyntö tulee Supply Chain Management -käyttäjän näkyville, ja tämä käyttäjä voi sitten muuntaa ylläpitopyynnön ylläpidon työtilaukseksi.
+1. **Rekisteröi seisokki** – Tämän painikkeen valinta avaa valintaikkunan, jossa voi rekisteröidä koneen seisokin. Seisokille voidaan valita syykoodi ja antaa seisokin ajankohta ja kesto. Koneen seisokkirekisteröinnin avulla lasketaan koneresurssin tehokkuus.
+1. **Näytä tai muokkaa** – tämän painikkeen valinta avaa valintaikkunan, jossa voi muokata tai tarkastella aiemmin luotuja seisokkitietueita.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Tuotantotöiden aloittaminen ja valmistuminen
 
@@ -124,7 +147,7 @@ Shannon, joka on Contoson tuotannon työntekijä, haluaa esimerkiksi osallistua 
 
 Kun Shannon on vahvistanut valintansa kummassakin skenaariossa, hän siirtyy joko kirjautumissivulle tai sivulle, joka odottaa hänen vahvistavan paluun epäsuorasta tehtävästä. Avautuva sivu määräytyy tuotannon käyttöliittymän määritysten mukaan. (Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Taukojen käyttäminen
+## <a name="registering-breaks"></a>Rekisteröidyt tauot
 
 Työntekijät voivat kirjata taukoja. Tauot voidaan määrittää joustavasti, kuten on kuvattu kohdassa [Rekisteröinteihin perustuva palkka](pay-based-on-registrations.md).
 
@@ -146,6 +169,3 @@ Työntekijät voivat avata työhön liitetyn asiakirjan valitsemalla **Ohjeet**.
 1. Työntekijä opettelee tehtävän toimimalla oppaan mukaisesti.
 
 Lisätietoja HoloLens-oppaiden luonnista, määrittämisestä ja käyttämisestä on kohdassa [Yhdistetyn todellisuuden oppaiden tuottaminen tuotannon työntekijöille](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

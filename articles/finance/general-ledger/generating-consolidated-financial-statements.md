@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442820"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044018"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
@@ -74,7 +73,7 @@ Dimensioita tai yrityksiä sisältävät organisaatiohierarkiat luovat dynaamise
 ## <a name="consolidations-that-involve-eliminations"></a>Eliminointeja sisältävät konsolidoinnit
 Eliminointitapahtumat ovat yleinen osa konsolidointiprosessia. Tässä esimerkissä viisi tiliä eliminoidaan konsolidoinnin aikana: 142600, 211400, 401420, 401180 ja 510820. Yritykset voivat määrittää konsernin sisäiset tilit eri tavalla. Joillakin yrityksillä tilin viimeinen numero on esimerkiksi 9, jos tiliä käytetään konsernin sisäisissä tapahtumissa. Jos tiedät konsernin sisäiset tilit, voit menetelmästä riippumatta näyttää eliminoinnit konsolidoiduissa raporteissa.
 
-Seuraavassa kuvassa on konsolidoidun tuloslaskelman sarakemääritys. Kolme konsernin sisäistä tulostiliä on määritetty kullekin tilille dimensiosuodattimen avulla. Sarake D sisältää vain yrityksen USMF eliminointitilit ja sarake E vain yrityksen DEMF eliminoinnit. Sekä sarake D että sarake E on määritetty siten, että niitä **ei** tulosteta raporttiin.
+Seuraavassa kuvassa on konsolidoidun tuloslaskelman sarakemääritys. Kolme konsernin sisäistä tulostiliä on määritetty kullekin tilille dimensiosuodattimen avulla. Sarakkeissa F, G ja H ovat eliminointitilit vain USMF-, USRT- ja DEMF-yrityksille. Nämä sarakkeet on määritetty siten, että niitä **ei** tulosteta raporttiin.
 
 ![Konsolidoidun tuloslaskelman sarakemääritys](./media/column-definition-consolidated-income-statement.png "Konsolidoidun tuloslaskelman sarakemääritys")
 
@@ -224,6 +223,3 @@ Jos valuuttoja käytettäessä saataisiin oikein muunnetut summat, taloushallinn
 Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
 Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: ER-konfiguraatioiden riippuvuuden määrittäminen muihin osiin
-description: Voit suorittaa nämä vaiheet, jos ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet on suoritettu ja sinulla on Microsoft Dynamics Lifecycle Services (LCS) -palvelun käyttöoikeus.
+title: Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määrityksen suunnittelua ja sen riippuvuuden määrittämistä muista ohjelmisto-osista.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dd9516ac68c46649ebc50711357b97179bfc1b2c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681970"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092147"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfiguraatioiden riippuvuuden määrittäminen muihin osiin
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
 
 [!include [banner](../../includes/banner.md)]
 
@@ -139,6 +139,3 @@ Luodut konfiguraatiot poistetaan järjestelmästä ja ladataan takaisin LCS-säi
 26. Laajenna puussa Sample data model.
     * Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa. Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä sovelluksessa. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.   
     * Jos kirjaudut sisään Finance and Operationsiin, rekisteröit saman tarjoajan, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation, Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

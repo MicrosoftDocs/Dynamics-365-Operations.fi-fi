@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594959"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053410"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Useiden noutotoimitustapojen ottaminen käyttöön asiakastilauksille
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Microsoft Dynamics 365 Commerce -versiossa 10.0.16 ja uudemmissa versioissa organisaatiot voivat määrittää useita toimitustapoja, joita ostajat tai myyjät voivat valita, kun he luovat tilauksen, joka noudetaan myymälästä. Tällä tavoin organisaatiot voivat tarjota ostajille useita noutovaihtoehtoja. Esimerkiksi monet jälleenmyyjät tarjoavat nyt ostajille mahdollisuuden valita tilauksen noudon myymälästä tai tien varresta. Commerce tukee näiden eri noutotoimitustapojen konfigurointia. Käyttäjät voivat hyödyntää niitä, kun he luovat asiakastilauksia missä tahansa tuetussa Commerce-kanavassa (sähköinen kaupankäynti, puhelinkeskus tai myymälä).
 
@@ -86,6 +85,3 @@ Kun kanavalle on käytettävissä useita noutotoimitustapoja, asiakkaille tarjot
 ## <a name="considerations-for-distributed-order-management"></a>Jaetun tilausten hallinnan huomioon otettavia seikkoja
 
 Commercen [jaetun tilausten hallinnan (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) toiminnot ohittavat kaikki myymälästä noutoa varten merkityt myyntirivit. Nämä ominaisuudet on päivitetty siten, että konfiguroituihin noutotoimitustapoihin linkitetyt myyntirivit ohittavat DOM-logiikan eikä niitä kohdisteta uuteen toteutusvarastoon.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

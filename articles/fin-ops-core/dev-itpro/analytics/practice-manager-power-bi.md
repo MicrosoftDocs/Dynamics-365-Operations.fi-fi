@@ -1,6 +1,6 @@
 ---
 title: Käytäntöpäällikön Power BI -sisältö
-description: Tässä aiheessa kuvataan, mitä kuuluu käytäntöpäällikön Power BI -sisältöön. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+description: Tässä aiheessa kuvataan, mitä kuuluu käytäntöpäällikön Power BI -sisältöön.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685702"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092454"
 ---
 # <a name="practice-manager-power-bi-content"></a>Käytäntöpäällikön Power BI -sisältö
 
@@ -117,6 +117,3 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Tärkeät koostemitat       | Kenttä               | kuvaus |
 |---------------------------------|---------------------|-------------|
 | Valmiin tehtävän suunniteltu kustannus | Sum(TotalCostPrice) | Kaikkien projektitapahtumatyyppien ja valmiiden tehtävien kokonaiskustannushinta-arviot. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

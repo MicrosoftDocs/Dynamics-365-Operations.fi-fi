@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5223bdfbc0f5828b5dccac30362783075ce8157f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645014"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044369"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Koneoppimismallien tulokset (esiversio)
 
@@ -37,7 +36,7 @@ Kun valvottu koneoppimisen ongelma on koulutettu aiempien tietojen joukon avulla
 
 Ajatellaan esimerkiksi, että tavoitteena on ennustaa joidenkin fyysisten määritteiden ja toimintamääritteiden avulla, onko lemmikki koira vai kissa. Jos testitietojoukossa on 30 koiraa ja 20 kissaa, sekaannusmatriisi saattaa muistuttaa alla olevaa kuvaa.
 
-[![Lajien ennustamisen esimerkki](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+![Lajien ennustamisen esimerkki](media/species-prediction-matrix.png)
 
 Vihreiden solujen numerot edustavat oikeita ennusteita. Kuten näemme, malli ennusti korkeamman prosenttiosuuden kuin kissoja todella on. Mallin yleinen tarkkuus on helppo laskea. Tässä tapauksessa se on 42 ÷ 50 tai 0,84.
 
@@ -47,7 +46,7 @@ Useimmat sekaannusmatriiseja koskevat keskustelut keskittyvät binaarisiin luoki
 
 Seuraavaksi tarkastellaan kolme tilaa omaavan talousskenarion luokitteluongelmaa. Malli ennustaa, maksetaanko myyntilasku kerralla, myöhässä vai erittäin paljon myöhässä. Esimerkiksi 100 testilaskun joukosta 50 maksetaan ajallaan, 35 myöhässä ja 15 erittäin paljon myöhässä. Tässä tapauksessa malli voi muodostaa sekaannusmatriisin, joka muistuttaa seuraavaa kuvaa.
 
-[![Malli 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png) Malli 1
+![Malli 1](media/payment-prediction-matrix.png)]
 
 Sekaannusmalli sisältää paljon enemmän tietoja kuin yksinkertainen tarkkuusmittari. Siitä huolimatta matriisi on suhteellisen helposti ymmärrettävä. Sekaannusmatriisi kertoo, onko tietojoukko tasapainossa ja ovatko tulostusluokkien määrät samat. Moniluokkainen skenaario kertoo, miten kaukana ennuste voi olla, kun tulostusluokat ovat ordinaaleja, kuten edellä olevassa asiakasmaksuesimerkissä.
 
@@ -58,7 +57,7 @@ Koska tarkkuus on helposti ymmärrettävä mittari, se on hyvä aloituskohta esi
 
 Perinpohjainen ymmärtäminen edellyttää kuitenkin, että tarkkuuteen liittyvät haasteet tulee ottaa huomioon. Mittarin hyödyllisyys riippuu ongelman kontekstista. Mallin suorituskyvyn yhteydessä halutaan usein tietää, miten hyvä malli on. Vastaus tähän kysymykseen ei kuitenkaan välttämättä ole yksinkertainen. Ota huomioon seuraava sekaannusmatriisi (malli 2).
 
-[![Maksun ennustemalli ja suuri näytekoko](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Maksun ennustemalli ja suuri näytekoko](media/payment-prediction-matrix-2.png)
 
 Nopea laskenta osoittaa, että tämän mallin tarkkuus on (70 + 10 + 3) ÷ 100 tai 0,83. Nopeasti ajateltuna näyttää siltä, että tämä on parempi tulos kuin edellisessä usean luokan mallissa (malli 1), jonka tarkkuus on 0,73. Mutta onko tämä parempi?
 
@@ -103,7 +102,7 @@ F1-mittari yhdistää tarkkuuden ja saannin. Tuloksena on kahden arvon harmonine
 
 Alla on konkreettinen esimerkki. Aiemmin tässä ohjeaiheessa oli esimerkki, jossa ennustettiin eläin koiraksi tai kissaksi. Kuva näytetään myös tässä.
 
-[![Lajien ennustamisen esimerkki](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Lajien ennustamisen esimerkki (toistettu)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Tässä ovat tulokset, jos koira on positiivinen vastaus.
 
@@ -115,11 +114,11 @@ Kuten nähdään, F1-arvo on tarkkuuden ja saannin välissä.
 
 Vaikka F1-tarkkuuden ymmärtäminen ei ole helppoa, se tuo lisäarvoa tarkkuuden perusarvoon. Se voi myös auttaa epätasapainossa olevien tietojoukkojen käsittelemisessä seuraavan keskustelun tapaan.
 
-Tämän ohjeaiheen [Mallin tarkkuus](#classify-machine-learning-accuracy) -osassa vertailtiin seuraavaa kahta sekaannusmatriisia. Vaikka ensimmäisen mallin tarkkuus on toista alhaisempi, se arvotettiin hyödyllisemmäksi malliksi, koska se näytti enemmän parannuksia kuin ajallaan tehdyn maksun oletusarvaus.
+Tämän ohjeaiheen [Mallin tarkkuus](#model-accuracy) -osassa vertailtiin seuraavaa kahta sekaannusmatriisia. Vaikka ensimmäisen mallin tarkkuus on toista alhaisempi, se arvotettiin hyödyllisemmäksi malliksi, koska se näytti enemmän parannuksia kuin ajallaan tehdyn maksun oletusarvaus.
 
-[![Maksuennuste vs. todellisten arvojen esimerkki](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![Maksuennuste vs. todellisten arvojen esimerkki](media/payment-prediction-matrix.png)
 
-[![Maksun ennustemalli ja suuri näytekoko](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Maksun ennustemalli ja suuri näytekoko (toistettu)](media/payment-prediction-matrix-2.png)
 
 Katsotaan, miten näitä kahta mallia verrataan, kun käytetään F1-pisteitä. F1-pisteitä käytetään kunkin tilan tarkkuudessa ja saannissa. F1-makrolaskelma määrittää F1-pisteiden keskiarvot tiloissa, jotta saadaan selville yleiset F1-pisteet. F1-muuttujia on muitakin, mutta makroversioon keskittyminen on kiinnostavinta, koska kaikkia kolmea tilaa käsitellään yhtä paljon.
 
@@ -142,6 +141,3 @@ Näiden kahden mallin F1-makron tarkkuuspisteet ovat lähes samat, kuten tuloksi
 
 #### <a name="privacy-notice"></a>Tietosuojatiedot
 Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

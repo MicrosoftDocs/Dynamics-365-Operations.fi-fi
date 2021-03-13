@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 203d12956825286b77a107bb9fd91c451ecfd1e6
+ms.sourcegitcommit: dc3deca942864c4a8354096183c9e1b9b88992f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412103"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "5032930"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 
@@ -117,6 +116,9 @@ Kompakteissa myyntipisteiden asetteluissa painikeruudukot on aseteltu automaatti
 
 ![Kompaktit asettelun painikeruudukot](../commerce/media/Compact-View-Button-Grids.png)
 
+> [!NOTE]
+> Suunnitteluohjelman painikkeiden koot sovitetaan ikkunan kokoon, joten ne eivät välttämättä vastaa myyntipistesovelluksessa muodostuvia painikkeita. Voit simuloida painikeruudukon asettelun säätämällä suunnitteluikkunoihin saman koon kuin myyntipisteessä.
+
 ### <a name="images"></a>Kuvat
 
 Voit määrittää kutakin näyttöasettelun kokoa varten kuvat, jotka sisällytetään POS-käyttöliittymään. POS-sovelluksen koko asetteluissa Tervetuloa-näyttöön voidaan määrittää yksi kuva. Kuva näkyy käyttöliittymän ensimmäisenä elementtinä vasemmalla puolella. **Tapahtuma**-näytössä kuvia voidaan käyttää välilehden kuvina tai logoina. Kompaktit myyntipisteen asettelut eivät käytä näitä kuvia.
@@ -205,6 +207,3 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Retail point of salen (POS) asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

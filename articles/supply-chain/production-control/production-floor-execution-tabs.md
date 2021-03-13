@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664269"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077575"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän suunnitteleminen
 
@@ -57,7 +56,7 @@ Uusi välilehti luodaan ja määritetään seuraavasti:
 1. Määritä seuraavat asetukset sivun otsikossa:
 
     - **Välilehden nimi** – määritä välilehden nimi.
-    - **Päänäkymä** – valitse jompikumpi esimääritetyistä työluetteloista (*Aktiiviset työt* tai *Kaikki työt*).
+    - **Päänäkymä** – valitse jokin esimääritetyistä työluetteloista (*Aktiiviset työt*, *Kaikki työt* tai *Oma kone*).
     - **Tietonäkymä** – Valitse joko tyhjä arvo tai **Työn tiedot**. Jos valitset tyhjän arvon, välilehdessä ei ole tietonäkymää. Jos valitse **Työn tiedot**, tietonäkymässä on tarkka kuvaus päänäkymän työluettelossa valitusta työstä.
 
 1. Valitse **Ensisijainen työkalurivi** -osassa ensisijaisessa työkalurivissä käytettävissä olevat painikkeet. **Käytettävissä olevat toiminnot** -sarakkeessa on luettelo lisättävistä painikkeista. **Valitut toiminnot** -sarakkeessa on luettelo kaikista painikkeista, jotka sisältyvät nykyiseen määritykseen. Siirrä nimikkeitä tarvittaessa sarakkeesta toiseen sarakkeiden välissä olevilla painikkeilla. Määritä järjestys, jossa painikkeet näytetään käyttöliittymässä, **Valitut toiminnot** -sarakkeen vieressä olevilla ylä- ja alanuolipainikkeilla.
@@ -79,6 +78,3 @@ Kun kaikki tarvittavat välilehdet on suunniteltu, voit liittää ne määrityks
 1. Jatka lisäämällä välilehtiä tarpeen mukaan.
 
 1. Järjestele välilehtiä tarpeen mukaan työkalurivin **Siirrä ylös**- ja **Siirrä alas** -painikkeilla. Välilehdet näytetään vasemmalta oikealle edellä olevassa näyttökuvassa olevassa järjestyksessä (ylhäällä oleva välilehti näytetään vasemmalla).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

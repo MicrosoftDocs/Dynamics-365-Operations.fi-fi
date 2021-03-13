@@ -1,6 +1,6 @@
 ---
 title: Konfiguraation lataaminen Lifecycle Services -palveluun
-description: Tässä ohjeaiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli voi luoda uuden sähköisen raportoinnin konfiguraation ja ladata sen Microsoft Dynamics Lifecycle Services (LCS) -sovellukseen.
+description: Tässä aiheessa käsitellään uuden sähköisen raportoinnin (ER) määrityksen luontia ja lataamista Microsoft Dynamics Lifecycle Servicesiin (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684160"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092538"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Konfiguraation lataaminen Lifecycle Services -palveluun
 
@@ -145,6 +145,3 @@ Tässä esimerkissä luodaan konfiguraatio malliyritykselle nimeltä Litware, In
     Ladattu sähköisen raportoinnin konfiguraatio näkyy luettelossa.
 
     Huomaa, että ladattu LCS-konfiguraatio voidaan tuoda toiseen esiintymään, jos tarjoajilla on käyttöoikeus tähän LCS-projektiin.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

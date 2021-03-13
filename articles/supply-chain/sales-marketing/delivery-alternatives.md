@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 48cc8974cc8a8769b3d05f47f82166164e877ae5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 829775e36a2d49ebbab5c719436cff4c92984635
+ms.sourcegitcommit: ca7fc46607ae9d07725e1486b43c66d39ec5cdb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427116"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035263"
 ---
 # <a name="delivery-alternatives"></a>Toimitusvaihtoehdot
 
@@ -35,18 +34,20 @@ Myyntitilausten vastaanottajat voivat löytää vaihtoehtoisia tilauksen toteutu
 **Toimitusvaihtoehdot**-sivun asettelu antaa yleiskuvan kaikista vaihtoehdoista. Sen avulla tilausten vastaanottajat voivat nähdä toteutusmahdollisuuksia muistakin yrityksistä. Sen avulla he voivat nyt tarkastella sekä konsernin sisäisiä että ulkoisilta toimittajilta saatavia mahdollisuuksia. Myyntitilausten vastaanottajat saavat älykkään luettelon toimitusvaihtoehdoista suodattamalla vaihtoehtoja toimituspäivämäärän mukaan. Käytössä on lisäksi parametreja, jotka auttavat ehdotettujen toimitusten hallinnassa. Koska kuljetusaika voi vaikuttaa toimituspäiviin, myyntitilausten vastaanottajat voivat tarkastella rahdinkuljettajien tarjoamia kuljetusvaihtoehtoja. Kullekin ehdotukselle näytetään yksityiskohtaiset tiedot, joiden perusteella tilausten vastaanottajat voivat tehdä päätöksensä suoraan **Toimitusvaihtoehdot** -sivulla.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Avaa Toimitusvaihtoehdot-sivu
+
 Voit avata **Toimitusvaihtoehdot**-sivun myyntitilausriviltä.
 
-1.  Valitse **Tuotteet ja toimitus** &gt; **Toimitusvaihtoehdot**.
-2.  Valitse **Rivin tiedot** &gt; **Toimitus** &gt; **Toimitusvaihtoehdot**.
+1. Valitse **Tuotteet ja toimitus \> Toimitusvaihtoehdot**.
+1. Valitse **Rivin tiedot \> Toimitus \> Toimitusvaihtoehdot**.
 
-Voit avata **Toimitusvaihtoehdot**-sivun myös avaamalla **Myyntitilausten käsittely ja kysely** -työtilan ja napsauttamalla **Tilaukset ja suosikit** &gt; **Viivästyneet tilausrivit** &gt; **Toimitusvaihtoehdot** **Huomautus:** Voit avata **Toimitusvaihtoehdot**-sivun vain, jos seuraavat ehdot täyttyvät:
+Voit avata **Toimitusvaihtoehdot**-sivun myös avaamalla **Myyntitilausten käsittely ja kysely** -työtilan ja valitsemalla **Tilaukset ja suosikit \> Viivästyneet tilausrivit \> Toimitusvaihtoehdot** **Huomautus:** Voit avata **Toimitusvaihtoehdot**-sivun vain, jos seuraavat ehdot täyttyvät:
 
--   Kaikki pakolliset myyntirivin tiedot täytetään.
--   **Toimituspäivämäärän tarkistus** -kentän arvoksi on määritetty jokin muu arvo kuin **Ei**.
+- Kaikki pakolliset myyntirivin tiedot täytetään.
+- **Toimituspäivämäärän tarkistus** -kentän arvoksi on määritetty jokin muu arvo kuin **Ei**.
 
 ## <a name="delivery-date-control-methods"></a>Toimituspäivämäärän tarkistusmenetelmät
-Toimituspäivämäärän tarkistusmenetelmä määrittää, miten järjestelmä määrää toimituspäivämäärät, miten toimitusvaihtoehdot lasketaan, ja mitä tietoja näytetään. Huomaa, että toimitustietojen tarkistus ottaa kalenterit huomioon. Seuraavat kalenterit voivat tämän vuoksi vaikuttaa ehdotettuun vastaanottopäivään: Varaston kalenteri, Toimituskalenteri, Toimittajan kalenteri ja Asiakkaan kalenteri. Seuraavassa taulukossa kuvataan toimituspäivämäärän tarkistusmenetelmät.
+
+Toimituspäivämäärän tarkistusmenetelmä määrittää, miten järjestelmä määrää toimituspäivämäärät, miten toimitusvaihtoehdot lasketaan, ja mitä tietoja näytetään. Huomaa, että toimituspäivän tarkistus ottaa kalenterit huomioon. Seuraavat kalenterit voivat tämän vuoksi vaikuttaa ehdotettuun vastaanottopäivään: Varaston kalenteri, Toimituskalenteri, Toimittajan kalenteri ja Asiakkaan kalenteri. Seuraavassa taulukossa kuvataan toimituspäivämäärän tarkistusmenetelmät.
 
 <table>
 <colgroup>
@@ -59,9 +60,9 @@ Toimituspäivämäärän tarkistusmenetelmä määrittää, miten järjestelmä 
 <td><strong>Kuvaus</strong></td>
 </tr>
 <tr class="even">
-<td><strong>Ei mitään</strong></td>
+<td><strong>None</strong></td>
 <td><ul>
-<li>Myyntirivien toimitusvaihtoehtoja ei tueta. Tämä asetus poistaa toimitustietojen tarkistuksen käytöstä.</li>
+<li>Myyntirivien toimitusvaihtoehtoja ei tueta. Tämä asetus poistaa toimituspäivän tarkistuksen käytöstä.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -102,57 +103,50 @@ Toimituspäivämäärän tarkistusmenetelmä määrittää, miten järjestelmä 
 </table>
 
 ## <a name="view-information-about-delivery-alternatives"></a>Toimitusvaihtoehtojen tietojen tarkasteleminen
-Tässä osassa kuvataan kussakin **Toimitusvaihtoehdot**-sivun välilehdessä käytettävissä olevat toimitusvaihtoehtojen tiedot.
 
-### <a name="products"></a>Tuotteet
+Tässä osassa kuvataan kussakin **Toimitusvaihtoehdot**-sivun pikavälilehdessä käytettävissä olevat toimitusvaihtoehtojen tiedot.
 
-Tässä välilehdessä on yhteenveto nykyisen myyntirivin tuotteesta ja tiedoista.
+### <a name="the-product-fasttab"></a>Tuotteet-pikavälilehti
 
-### <a name="delivery-alternatives"></a>Toimitusvaihtoehdot
+Tässä pikavälilehdessä on yhteenveto nykyisen myyntirivin tuotteesta ja tiedoista.
 
-Tässä välilehdessä näytetään luettelo vastaanottotietojen perusteella lajitelluista toimitusvaihtoehdoista. Voit valita ehdotuksen perusteena olevat vaihtoehdot luettelon yläpuolelta. Voit myös toimitustavan, joka määrittää kuljetuspäivät. Valittavissa ovat seuraavat vaihtoehdot:
+### <a name="the-delivery-alternatives-fasttab"></a>Toimitusvaihtoehdot-pikavälilehti
 
--   **Sisällytä muut tuotevariantit** - Tämä vaihtoehto on saatavilla tuotteille, joilla on tuotevariantteja. Se sisältää toimitusvaihtoehtoja tuotteen muille varianteille. Tämä vaihtoehto ei ole käytettävissä saatavuusmallille.
--   **Sisällytä osittainen määrä** - Oletusarvon mukaan vain ehdotukset, jotka sisältävät myyntirivin täyden määrän sisällytetään. Valitsemalla tämän vaihtoehdot voit sisällyttää ehdotukset, jotka täyttävät tilausrivin vain osittain. Tämä on hyödyllistä silloin, kun asiakas pyytää aikaisempaa toimituspäivää ja hyväksy osatoimituksen.
--   **Sisällytä myöhemmät päivämäärät** - oletusarvon mukaan näytetään vain ehdotukset, jotka ovat parempia (aiempia) kuin nykyinen myyntirivin päivämäärä. Sisällytä myöhemmät päivämäärät valitsemalla tämä vaihtoehto Tämä vaihtoehto voi olla hyödyllinen, kun muut parametrit kuin päivämäärä ovat tärkeämpiä. Tietty toimittaja tai varasto voi esimerkiksi olla ensisijainen.
--   **Toimitustapa** - Valitse ensisijainen toimitustapa ajan ja kustannusten optimointia varten. Näet välittömästi vaikutuksen toimitusvaihtoehtojen ehdotuksissa. Tämän ansiosta vaihtoehtojen vertailu on helppoa.
--   **Sisällytä hankinta** - Kun hankinta on valittuna, toimitusvaihtoehtojen ehdotuksiin sisällytetään vaihtoehto hankinnasta sekä ulkoisilta toimittajilta että konsernin muilta yrityksiltä (konsernin sisäinen hankinta). **Sisällytä hankinnat** -vaihtoehto on tuettu toimituspäivän ATP- ja ATP + toimitusmarginaalitarkistuksissa. Hankintavaihtoehdot tuotteen oletusostotoimittajasta tuotteen kaikkiin hyväksyttyihin toimittajiin ovat mukana.
--   Ulkoisten toimittajien laskelma perustuu oston läpimenoaikaan.
--   Konsernin sisäisessä hankinnassa laskelma ottaa huomioon lähdeyrityksen saatavuuden kyseisen yrityksen toimituspäivämäärätarkistuksen perusteella.
--   **Toimitustyyppi** (hankintaa varten)
-    -   **Varasto** - Tuotteet toimitetaan lähdevarastosta myyntirivillä olevaan sijaintiin/varastoon. Sieltä ne lähetetään edelleen asiakkaalle.
-    -   **Suoratoimitus** - Tuotteet toimitetaan lähdevarastolta suoraan asiakkaalle.
+Tässä pikavälilehdessä näytetään luettelo vastaanottopäivän perusteella lajitelluista toimitusvaihtoehdoista. Voit valita ehdotuksen perusteena olevat vaihtoehdot luettelon yläpuolelta. Voit myös toimitustavan, joka määrittää kuljetuspäivät. Valittavissa ovat seuraavat vaihtoehdot:
 
-### <a name="availability-information"></a>Käytettävyystiedot
+- **Sisällytä muut tuotevariantit** - Tämä vaihtoehto on saatavilla tuotteille, joilla on tuotevariantteja. Se sisältää toimitusvaihtoehtoja tuotteen muille varianteille. Tämä vaihtoehto ei ole käytettävissä saatavuusmallille.
+- **Sisällytä osittainen määrä** - Oletusarvon mukaan vain ehdotukset, jotka sisältävät myyntirivin täyden määrän sisällytetään. Valitsemalla tämän vaihtoehdot voit sisällyttää ehdotukset, jotka täyttävät tilausrivin vain osittain. Tämä on hyödyllistä silloin, kun asiakas pyytää aikaisempaa toimituspäivää ja hyväksy osatoimituksen.
+- **Sisällytä myöhemmät päivämäärät** - oletusarvon mukaan näytetään vain ehdotukset, jotka ovat parempia (aiempia) kuin nykyinen myyntirivin päivämäärä. Sisällytä myöhemmät päivämäärät valitsemalla tämä vaihtoehto Tämä vaihtoehto voi olla hyödyllinen, kun muut parametrit kuin päivämäärä ovat tärkeämpiä. Tietty toimittaja tai varasto voi esimerkiksi olla ensisijainen.
+- **Toimitustapa** - Valitse ensisijainen toimitustapa ajan ja kustannusten optimointia varten. Näet välittömästi vaikutuksen toimitusvaihtoehtojen ehdotuksissa. Tämän ansiosta vaihtoehtojen vertailu on helppoa.
+- **Sisällytä hankinta** - Kun hankinta on valittuna, toimitusvaihtoehtojen ehdotuksiin sisällytetään vaihtoehto hankinnasta sekä ulkoisilta toimittajilta että konsernin muilta yrityksiltä (konsernin sisäinen hankinta). **Sisällytä hankinnat** -vaihtoehto on tuettu toimituspäivän ATP- ja ATP + toimitusmarginaalitarkistuksissa. Hankintavaihtoehdot tuotteen oletusostotoimittajasta tuotteen kaikkiin hyväksyttyihin toimittajiin ovat mukana.
+- Ulkoisten toimittajien laskelma perustuu oston läpimenoaikaan.
+- Konsernin sisäisessä hankinnassa laskelma ottaa huomioon lähdeyrityksen saatavuuden kyseisen yrityksen toimituspäivämäärätarkistuksen perusteella.
+- **Toimitustyyppi** (hankintaa varten)
+  - **Varasto** - Tuotteet toimitetaan lähdevarastosta myyntirivillä olevaan sijaintiin/varastoon. Sieltä ne lähetetään edelleen asiakkaalle.
+  - **Suoratoimitus** - Tuotteet toimitetaan lähdevarastolta suoraan asiakkaalle.
 
-Tällä välilehdellä on valittuun toimitusvaihtoehdon riviin liittyviä tietoja. Seuraavat tiedot näytetään myyntirivin toimituspäivämäärän tarkistuksesta riippuen:
+### <a name="the-availability-information-fasttab"></a>Käytettävyystiedot-pikavälilehti
 
--   **Myynnin läpimenoaika**
-    -   **Käytettävissä tänään** - Näyttää tämänhetkisen fyysisen käytettävissä olevan, fyysisen varatun ja saatavilla olevan fyysisen varaston.
-    -   **Parametrit** - Näytä varaston yksikön ja myynnin läpimenoajat.
+Tässä pikavälilehdessä on valitun toimitusvaihtoehdon riviin liittyviä tietoja. Seuraavat tiedot näytetään myyntirivin toimituspäivämäärän tarkistuksesta riippuen:
 
--   **ATP ja ATP + toimitusmarginaali**
-    -   **Käytettävissä tänään** - Näyttää tämänhetkisen fyysisen käytettävissä olevan, fyysisen varatun ja saatavilla olevan fyysisen varaston.
-    -   **Parametrit** - Näytä varaston yksikön ja myynnin läpimenoajat.
-    -   **Saatavuus tulevaisuudessa** - Näyttää graafisen esityksen tämänhetkisestä ja tulevaisuuden saatavuudesta valitussa sijainnissa ja varastossa **Toimitusvaihtoehdot**-kohdassa. Saat lisätietoja tuotteen saatavuudesta napsauttamalla kaavion sarakkeita. Liukusäädin esittää luettelon asiaankuuluvista kysyntä- ja toimitustilauksista ATP-aikarajan sisällä.
+- **Myynnin läpimenoaika**
+  - **Käytettävissä tänään** - Näyttää tämänhetkisen fyysisen käytettävissä olevan, fyysisen varatun ja saatavilla olevan fyysisen varaston.
+  - **Parametrit** - Näytä varaston yksikön ja myynnin läpimenoajat.
 
--   **Saatavuus**
-    -   **Käytettävissä tänään** - Näyttää tämänhetkisen fyysisen käytettävissä olevan, fyysisen varatun ja saatavilla olevan fyysisen varaston.
-    -   **Parametrit** - Näytä varaston yksikön ja myynnin läpimenoajat.
-    -   **Hajotus** – Näytä valitun toimitusvaihtoehdon hajotus. Voit muuttaa hajotusnäkymässä näytettäviä kenttiä ja varastodimensioita **Asetuksissa**.
+- **ATP ja ATP + toimitusmarginaali**
+  - **Käytettävissä tänään** - Näyttää tämänhetkisen fyysisen käytettävissä olevan, fyysisen varatun ja saatavilla olevan fyysisen varaston.
+  - **Parametrit** - Näytä varaston yksikön ja myynnin läpimenoajat.
+  - **Saatavuus tulevaisuudessa** - Näyttää graafisen esityksen tämänhetkisestä ja tulevaisuuden saatavuudesta valitussa sijainnissa ja varastossa **Toimitusvaihtoehdot**-kohdassa. Saat lisätietoja tuotteen saatavuudesta valitsemalla kaavion sarakkeita. Liukusäädin esittää luettelon asiaankuuluvista kysyntä- ja toimitustilauksista ATP-aikarajan sisällä.
 
-### <a name="impact-of-selected-alternative"></a>Valitun vaihtoehdon vaikutus
+- **Saatavuus**
+  - **Käytettävissä tänään** - Näyttää tämänhetkisen fyysisen käytettävissä olevan, fyysisen varatun ja saatavilla olevan fyysisen varaston.
+  - **Parametrit** - Näytä varaston yksikön ja myynnin läpimenoajat.
+  - **Hajotus** – Näytä valitun toimitusvaihtoehdon hajotus. Voit muuttaa hajotusnäkymässä näytettäviä kenttiä ja varastodimensioita **Asetuksissa**.
 
-Tässä välilehdessä korostetaan valitun toimitusvaihtoehdon vaikutusta. Jos valitset **OK**, myynnin riville päivitetään VALITUISSA sarakkeissa olevat, korostetut arvot. Huomaa, että, jos valitun toimitusvaihtoehdon määrä on pienempi kuin myyntirivin määrä, luodaan toimitusaikataulu ja tilausrivi jaetaan kahdelle riville: yksi valitulle määrälle ja toinen jäljelle jäävälle määrälle. Voit myös päivittää kaupallisen rivin niin, että se vastaa aikataulurivejä ja vaikuttaa hinnoitteluun.
+### <a name="the-impact-of-selected-alternative-fasttab"></a>Valitun vaihtoehdon vaikutus -pikavälilehti
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+Tässä pikavälilehdessä korostetaan valitun toimitusvaihtoehdon vaikutusta. Jos valitset **OK**, myynnin riville päivitetään VALITUISSA sarakkeissa olevat, korostetut arvot. Huomaa, että, jos valitun toimitusvaihtoehdon määrä on pienempi kuin myyntirivin määrä, luodaan toimitusaikataulu ja tilausrivi jaetaan kahdelle riville: yksi valitulle määrälle ja toinen jäljelle jäävälle määrälle. Voit myös päivittää kaupallisen rivin niin, että se vastaa aikataulurivejä ja vaikuttaa hinnoitteluun.
+
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Luvatut tilaukset](delivery-dates-available-promise-calculations.md)
-
-
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

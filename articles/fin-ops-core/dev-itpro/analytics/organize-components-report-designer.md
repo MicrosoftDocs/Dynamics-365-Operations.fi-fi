@@ -1,6 +1,6 @@
 ---
-title: Järjestä Report Designerin raporttiosat
-description: Kun olet suunnitellut rakennusosat ja luonut raportit, kyseiset objektit kannattaa järjestää niin, että käyttäjien on helppo löytää ne. Tässä artikkelissa käsitellään aiemmin luotujen Report Designerin raporttien, rakennusosien ja objektien järjestämistä.
+title: Raporttien suunnitteluohjelman raporttikomponenttien järjestäminen
+description: Tässä aiheessa käsitellään aiemmin luotujen raporttien suunnitteluohjelman raporttien, rakennusosien ja objektien järjestämistä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b55dcee00f571228ec1e933306d77d9edc12866
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685808"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092420"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Järjestä Report Designerin raporttiosat
 
@@ -148,6 +148,3 @@ Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</t
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportointi](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

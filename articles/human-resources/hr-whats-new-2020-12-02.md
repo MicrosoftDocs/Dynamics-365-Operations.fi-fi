@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669164"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080035"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet 2. joulukuuta 2020
 
@@ -61,7 +60,7 @@ Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 | 514087 | BenefitEligibilityProcessResult-kohdassa tulee olla päivämäärä ja aika, joita käytettiin käsittelyssä. | BenefitEligibity-kohdan käsittelytuloksessa on nyt edellisen käsittelyn datetimestamp. Aiemmin tämä puuttui. |
 | 526903 | Edun rekisteröiminen epäonnistuu huollettavia sisältävissä suunnitelmissa, jos **Valitse edustajat automaattisesti** -kohta on otettu käyttöön **Henkilöstöhallinnon jaetut parametrit** -kohdassa. | Ratkaistiin ongelma, jossa huollettavien edun rekisteröiminen epäonnistui, kun **Valitse edustajan automaattisesti** -vaihtoehto on otettu käyttöön oletusedustajille. |
 | 521922 | **Näytä poissaolo ilman tietoja** -parametri näyttää poissaolopyyntöjen tiedot ryhmän poissaolokalenterissa. | Lomatyyppi, lomatyypin väri ja päivän tiedot näytettiin ryhmän poissaolokalenterissa, kun **Näytä poissaolo ilman tietoja** -kohdan arvoksi oli määritetty **Kyllä** **Loman ja poissaolon parametrit**. Tämä on korjattu, ja nyt lomatyyppiä ei näytetä ja oletuslomatyypin väriä (tummansininen) käytetään kaikkien ryhmän poissaolokalenterin lomatyyppien yhteydessä. |
-| 527316 | Työn, toimen ja työntekijän ilmoitusten otsikkomuutoksia ei synkronoida. | Otsikon suhde lisättiin aiemmin työn, toimen ja työntekijän entiteetteihin. Tämän suhteen synkronointi Human Resourcesista Common Data Serviceen synkronoinnissa toimii. Se ei kuitenkaan toimimnut Common Data Servicen ilmoituksissa. Tämä ongelma on korjattu. |
+| 527316 | Työn, toimen ja työntekijän ilmoitusten otsikkomuutoksia ei synkronoida. | Otsikon suhde lisättiin aiemmin työn, toimen ja työntekijän entiteetteihin. Tämän suhteen synkronointi Human Resourcesista Dataverseen synkronoinnissa toimii. Se ei kuitenkaan toimimnut Dataversen ilmoituksissa. Tämä ongelma on korjattu. |
 | 512275 | Poista **Loma- ja poissaoloparametrit** -kohdan värivaihtoehdot. | Nyt kun värit on määritetty lomatyypissä, värivaihtoehtoja ei enää tarvita **loma- ja poissaoloparametreissa**. Tämän vuoksi ne on poistettu. |
 | 437112 | Harhaanjohtava virhesanoman teksti työntekijän toimen määrityksen aikana. | Päivitetty virhesanoma, kun työntekijä otetaan töihin ja kun hänet yritetään määrittää passiiviseen toimeen. Päivitetty sanoma **Määritetty toimi ei ole aktiivinen työsuhteen alkamispäivänä. Tarkista tämän toimen kesto.** |
 | 527816 | Suorituskykyyn liittyviä ongelmia **Poissaolo**-sivulla. | Suorituskykyä on parannettu **Poissaolo**-sivulla. |
@@ -92,6 +91,3 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
