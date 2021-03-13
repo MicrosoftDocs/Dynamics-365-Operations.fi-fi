@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkerResponsible
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 113ee2b45c569c7dae3609f1027e31c4e5e5c54a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 137ed393f28131262584d5a2ae414092b124ea0e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427183"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021952"
 ---
 # <a name="responsible-maintenance-workers"></a>Vastuulliset ylläpitotyöntekijät
 
@@ -54,6 +53,3 @@ Ennen kuin voit määrittää vastuullisia kunnossapitotyöntekijöitä, sinun o
 Seuraavassa kuvassa on esimerkki **Vastuulliset ylläpitotyöntekijät** -sivusta.
 
 ![Vastaavien ylläpitotyöntekijöiden sivu](media/08-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
