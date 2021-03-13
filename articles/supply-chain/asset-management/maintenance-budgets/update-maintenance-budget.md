@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e43abd4644eec8c91606ec48bbecf30f12600856
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427136"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021019"
 ---
 # <a name="update-maintenance-budgets"></a>Päivitä ylläpitobudjetit
 
@@ -75,6 +74,3 @@ Budjettirivien **Toteutunut kustannus** -kentät päivitetään, jos todelliset 
 
 - Tiedät, että joidenkin käyttöomaisuuserien kunnostus on parhaillaan suunnitteluvaiheessa, mutta siihen liittyviä töitä ei ole vielä luotu omaisuuden hallinnassa. Haluat kuitenkin, että näiden töiden budjettikustannukset sisällytetään ylläpitobudjettiin.
 - Uusia resursseja tai resurssityyppejä on luotu ylläpitobudjetin luomisen jälkeen, mutta ylläpitosuunnitelmia ei ole vielä määritetty näille käyttöomaisuuserille tai -tyypeille. Haluat kuitenkin, että näiden resurssityyppien budjettikustannukset sisällytetään ylläpitobudjettiin.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

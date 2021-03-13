@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426898"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021551"
 ---
 # <a name="work-order-project-setup"></a>Työtilauksen projektiasetukset
 
@@ -86,6 +85,3 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 > Aina, kun työtilausrivi luodaan, käyttöomaisuuden hallinta etsii projektiryhmää, joka liittyy työtilaustyön projektiin. Haku perustuu tässä ohjeaiheessa kuvattuihin asetuksiin. Jokaisella projektiryhmällä on siihen liittyvä projektityyppi. Projektiryhmät, joissa on **Aika ja materiaali**- tai **Kiinteähintainen** projektityyppi, ovat kelvollisia vain asiakastiliin liittyvissä resursseissa.
 >
 > Kun järjestelmä valitsee käytettävissä olevan työtilausprojektin tai projektiryhmän pääprojekteille ja projektiryhmille, valinta perustuu edellä kuvatun menetelmän avulla luomiisi tietueisiin. Käyttöomaisuuden hallinta käy läpi työtilausprojektiin liittyvät tietueet ja tarkistaa mahdolliset vastineet. Se tarkistaa aina kaikkein erikoisimman yhdistelmän ensin. Toisin sanoen resurssien hallinta tarkistaa työtilauksen pääprojektille ensin mahdollisen **Resurssi**-kentän vastaavuuden. Jos vastaavuutta ei löydy, se tarkistaa **Resurssityyppi**-kentän vastaavuuden. Jos vastaavuutta ei löydy, se tarkistaa **Toiminnallinen sijainti** -kentän vastaavuuden ja niin edelleen. Kuten näet **Työtilausprojektin asetukset** -sivun asettelussa, tämä tarkoittaa sitä, että jos haluat löytää erityisen yhdistelmän, resurssien hallinta tarkistaa kunkin tietueen oikealta vasemmalle, jotta se vastaa toisiaan. Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain projektitunnus. Liittyvän projektiryhmän hakuprosessi on samankaltainen. Käyttöomaisuuden hallinta tarkistaa ensin **Resurssi**-kentän mahdollisen vastaavuuden, sitten **Resurssityyppi** -kentän ja sitten **Työtilauksen tyyppi** -kentän vastaavuuden. Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain projektiryhmä.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
