@@ -1,6 +1,6 @@
 ---
 title: Talousraporttien sarakemääritykset
-description: Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.
+description: Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa, joka määrittää talousraportin kunkin sarakkeen sisällön.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687227"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093106"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
@@ -226,7 +226,7 @@ Käyttäjä on luomassa dynaamista kuuden kuukauden ennusteen raporttia. Käytt�
 | Sarakkeen leveys        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Tulostusohjaus       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Käyttäjä kaksoisnapsauttaa sarakeotsikon solua ja avaa **Sarakeotsikko**-valintaikkunan, johon hän syöttää seuraavat tiedot.
+Tämän jälkeen käyttäjä kaksoisnapsauttaa sarakeotsikon solua sarakkeessa B ja avaa **Sarakeotsikko**-valintaikkunan, johon hän syöttää seuraavat tiedot.
 
 | Kenttä              | Arvo                 |
 |--------------------|-----------------------|
@@ -236,7 +236,6 @@ Käyttäjä kaksoisnapsauttaa sarakeotsikon solua ja avaa **Sarakeotsikko**-vali
 | Perustelu      | Valintaa ei ole tehty. |
 | Levitä mistä        | D                     |
 | Levitä mihin          | BASE                  |
-| Budjetin otsikko      | BASE+1 - loppusarake  |
 
 Tietojen syöttämisen jälkeen käyttäjä napsauttaa **OK-painiketta**. Tämän jälkeen hän kaksoisnapsauttaa sarakeotsikon solua sarakkeessa C ja avaa **Sarakeotsikko**-valintaikkunan, johon hän syöttää seuraavat tiedot.
 
@@ -246,8 +245,8 @@ Tietojen syöttämisen jälkeen käyttäjä napsauttaa **OK-painiketta**. Tämä
 | Lisää automaattinen teksti    | Valintaa ei ole tehty. |
 | Muotoiluasetukset     | Ruutu                   |
 | Perustelu      | Valintaa ei ole tehty. |
-| Levitä mistä        | C                     |
-| Levitä mihin          | BASE+2                |
+| Levitä mistä        | BASE+1                |
+| Levitä mihin          | M                     |
 
 Tämän jälkeen toteutuneita tietoja sisältäviin sarakkeisiin tulostetaan sana Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sana Budjetti aina, kun raportti luodaan. Tämän lisäksi sarakkeiden määrä oikaistaan joka kuukausi.
 
@@ -599,6 +598,3 @@ Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä. Esimerkiksi *
 [Talousraporttien suunnittelutoiminnon rivimääritykset](row-definitions-financial-reporting.md)
 
 [Muotoilun lisäasetukset taloushallinnon raporteissa](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

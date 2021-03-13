@@ -1,6 +1,6 @@
 ---
 title: ER Määritä muoto suorittamaan laskenta ja summaus (Osa 3 – Tuotoksen luonti laskentojen avulla)
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon suorittamaan laskennan ja summauksen luodun tekstin tietojen perusteella.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin muodon määrittämistä aiemmin luotuun tekstiin perustuvaa laskentaa ja summien tuottamista. (Osa 3)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b26a7f50a2237e0d3d756f8eebf2e4cd81f24683
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4a69dd28051d8e98643eb95c663525075bed8dec
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684664"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092969"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-3---use-computations-to-make-the-output"></a>ER Määritä muoto suorittamaan laskenta ja summaus (Osa 3 – Tuotoksen luonti laskentojen avulla)
 
@@ -132,6 +132,3 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 77. Valitse Tallenna.
 78. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

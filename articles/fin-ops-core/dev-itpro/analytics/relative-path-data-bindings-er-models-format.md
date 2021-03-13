@@ -1,6 +1,6 @@
 ---
 title: Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa
-description: Sähköisellä raportointityökalun (ER) avulla käyttäjät voivat määrittää sähköisen muodon rakenteita ja kuvailla sitten, miten kyseiset rakenteet täytetään sovelluksessa olevilla tiedoilla ja algoritmeilla.
+description: Sähköisen raportointityökalun avulla voidaan määrittää sähköisen muodon rakenteita ja kuvailla sitten, miten kyseiset rakenteet täytetään.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/03/2019
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2554dc33514185fa16868ee239c3e44ff675dd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 321a85c675439b91b99ec5988494d7514a5c53f4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687459"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093134"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa
 
@@ -57,6 +57,3 @@ Tämä toiminto ei katkaise ER-kehyksen yhteensopivuutta aiempien versioiden kan
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [ER-kaavan kieli](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

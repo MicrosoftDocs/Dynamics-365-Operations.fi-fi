@@ -1,6 +1,6 @@
 ---
 title: Näyttötyyppinen ER-kohde
-description: Tässä ohjeaiheessa annetaan tietoja siitä, miten kullekin lähteviä asiakirjoja luomaan määritetty sähköisen raportoinnin (ER) muodon kansio- tai tiedostokomponentin näyttökohde määritetään.
+description: Tässä aiheessa on tietoja kunkin sähköisen raportoinnin (ER) muodon kansio- tai tiedosto-osan näyttökohteen määrittämisestä.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 08bbde23cde6dcecea398b84bb3d7f78e2204a71
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c687a435f50b54fd7bdf5b4802f4c07abd0f0e3e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679531"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094051"
 ---
 # <a name="screen-destination"></a>Näyttökohde
 
@@ -38,6 +38,3 @@ Jos määrität **Käytössä**-kentän arvoksi **Kyllä**, tulosteen esikatselu
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

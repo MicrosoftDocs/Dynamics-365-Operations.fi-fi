@@ -1,6 +1,6 @@
 ---
 title: Tuotannon suorituskyvyn Power BI -sisältö
-description: Tässä ohjeaiheessa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+description: Tässä ohjeaiheessa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 661617ea7e51ac5cacdd5a08ee52f6a6e43b44be
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c815a2e37f9882d695bf170a806301a3145d0f06
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686683"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094209"
 ---
 # <a name="production-performance-power-bi-content"></a>Tuotannon suorituskyvyn Power BI -sisältö
 
@@ -128,6 +128,3 @@ Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina k
 | Yksiköt                  | Tunnus ja nimi                                                   |
 | Resurssit                 | Resurssin tunnus, resurssin nimi, resurssin tyyppi ja resurssiryhmä |
 | Tuotteet                  | Tuotenumero, tuotteen nimi, nimiketunnus ja nimikeryhmä         |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

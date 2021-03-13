@@ -1,6 +1,6 @@
 ---
 title: Myynnin ja tuottavuuden suorituskyvyn Power BI -sisältö
-description: Tässä aiheessa kuvataan, mitä kuuluu myynnin ja tuottavuuden suorituskyvyn Power BI -sisältöön. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
+description: Tässä aiheessa kuvataan, mitä kuuluu myynnin ja tuottavuuden suorituskyvyn Power BI -sisältöön.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7aafaa4c974f6b72e78f870eceb266fd0ef71900
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688232"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093560"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Myynnin ja tuottavuuden suorituskyvyn Power BI -sisältö
 
@@ -107,6 +107,3 @@ Suodattimina myyntikuutiossa käytetään seuraavia tärkeimpiä dimensioita osi
 | Päivämäärät            | Päivämäärät                                                |
 
 Kuluvan kalenterivuoden tiedot näkyvät oletusarvoisesti sisällössä. Voit kuitenkin muuttaa päivämääräsuodatinta raportin suodatinosassa. Voit muuttaa myös yrityssuodatinta.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

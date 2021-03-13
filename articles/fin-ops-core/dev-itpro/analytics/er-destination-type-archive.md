@@ -1,6 +1,6 @@
 ---
 title: ER-kohteen arkistotyyppi
-description: Tässä ohjeaiheessa annetaan tietoja siitä, miten kullekin lähteviä asiakirjoja luomaan määritetty sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-komponentin arkistokohde määritetään.
+description: Tässä aiheessa on tietoja kunkin sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osan arkistokohteen määrittämisestä.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/30/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3dee7ec614ec1372feaa1150f5e4ebb14c32f60e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0067024d7a29e2a1db3b7fdba9ea3c6a63aad648
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679675"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094126"
 ---
 # <a name="archive-er-destination-type"></a>ER-kohteen arkistotyyppi
 
@@ -57,6 +57,3 @@ Kun asiakirjatyypin sijainniksi on määritetty **Azure-tallennustila**, voit ta
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 - [Asiakirjanhallinnan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

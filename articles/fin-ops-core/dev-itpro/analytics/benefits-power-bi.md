@@ -1,6 +1,6 @@
 ---
 title: Etujen Power BI -sisältö
-description: Tässä ohjeaiheessa käsitellään etujen Power BI -sisältöä. Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
+description: Tässä ohjeaiheessa käsitellään etujen Power BI -sisältöä.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d0a5fe54bb4f5541f610f8ea76afa7813e3a599a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5a894ebfb79eab4888178c930b9e7d55cf735c91
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687252"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093078"
 ---
 # <a name="benefits-power-bi-content"></a>Etujen Power BI -sisältö
 
@@ -69,6 +69,3 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Työntekijän nimi            | Etunimi , sukunimi ja koko nimi                                                                       | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Työntekijän nimike           | Nimike ja virkaikä                                                                                   | Nykyinen työntekijä, poistettu työntekijä, työntekijätrendi |
 | Työntekijätrendi           | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                                        | Yritys, kompensaatio, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, kalenterin vastakirjaus, päivämäärä, työntekijän nimike, demografia, työsuhde, työ, edut |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Luotujen ER-raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
-description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Finance and Operationsin versiossa 10.0.3 (kesäkuu 2019) ER-perusviivatoiminnon parannuksista.
+description: Tässä aiheessa käsitellään ER-perusrivitoiminnon parannuksia Microsoft Dynamics 365 for Finance and Operationsin versiossa 10.0.3 (kesäkuu 2019).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682844"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094001"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Luotujen ER-raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
 
@@ -59,7 +59,7 @@ Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohj
 
 Perusrivi on lisättyyn valittuun **ER-perusrivien oppimismuoto** -muotoon, mutta perusrivisääntöjä ei ole vielä lisätty tähän perusriviin.
 
-![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-AddBaseline2.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
+![Sähköisen raportointimuotojen perusrivit -sivu, jossa ei ole vielä sääntöjä](media/GER-BaselineSample-AddBaseline2.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
 
 ### <a name="make-a-new-baseline-rule"></a>Uuden perusrivisäännön luominen
 
@@ -72,7 +72,7 @@ Perusrivi on lisättyyn valittuun **ER-perusrivien oppimismuoto** -muotoon, mutt
 7. Valitse **OK**.
 8. Valitse **Perusrivit**.
 
-    ![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
+    ![Sähköisen raportointimuodon perusrivit -sivu, perusrivit valittu](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
 
     Luotu lähtevä tiedosto on liitetty automaattisesti suoritetun ER-muodon perusriville. Perusrivisääntö on lisätty automaattisesti tälle perusriville. Lisäksi se sisältää viittauksen liitettyyn tiedostoon.
 
@@ -130,7 +130,7 @@ Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohj
 3. Valitse perusriviluettelossa **ER-perusrivien oppimismuoto** -muodolle määritetty perusrivi.
 4. Poista aiemmin määritetty perusrivisääntö valitsemalla **Perusrivit**-pikavälilehdessä **Poista**.
 
-![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-AddBaseline3.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
+![Sähköisen raportointimuotojen perusrivit -sivu, poistettu](media/GER-BaselineSample-AddBaseline3.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Suunnitellun ER-muodon sidosten korvaamisen määrittäminen
 
@@ -138,7 +138,7 @@ Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohj
 2. Laajenna muoto-osapuussa ensin **Tuloste** ja sitten **Tuloste\\Asiakirja**. Valitse sitten **Tuloste\\Asiakirja\\ProcessingDateTime** -valintaruutu.
 3. Valitse **OK**.
 
-![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-AddBaseline4.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
+![Sähköisen raportointimuotojen perusrivit -sivu, osat](media/GER-BaselineSample-AddBaseline4.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
 
 Valittu ER-muoto-osa on lisätty osaluetteloon **Korvaava**-pikavälilehteen. Kun ER-perusmuoto suoritetaan virheenkorjaustilassa, muodon kunkin osan sidonta korvataan sidonnalla, joka näkyy **Sidonta**-sarakkeessa. Voit muuttaa **Korvaava**-pikavälilehdessä mainitun osan oletussidonnan valitsemalla **Muokkaa**.
 
@@ -207,6 +207,3 @@ Voit tuoda perusriviasetukset Microsoft SharePoint Serveriin tallennetusta XML-t
 
 - [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md)
 - [Tehtävän tallennustoiminnon resurssit](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

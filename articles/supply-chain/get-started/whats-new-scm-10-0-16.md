@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin esiversio 10.0.16 (helmikuu 2021)
+title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.16 (helmikuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.16 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 manager: annbe
@@ -10,26 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 963979c9d24c275f77347ec5d682f318db18f915
-ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
+ms.openlocfilehash: 1ffd98a94b9ed3201be3c4530b8fba7e2820c268
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4626799"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104986"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Managementin esiversio 10.0.16 (helmikuu 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.16 (helmikuu 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.16 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.689. Se on käytettävissä seuraavasti:
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.16 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.689. Se on käytettävissä seuraavasti:
 
 - **Esiversio:** marraskuu 2020
 - **Version yleinen saatavuus (oma päivitys):** tammikuu 2021
@@ -40,8 +38,11 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 Tämä julkaisu sisältää seuraavat toiminnot. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
 - [Mukautettava tuotannon käyttöliittymä](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Lisätietoja on kohdassa [Laitteen määrittäminen suorittamaan tuotannon käyttöliittymä](../production-control/production-floor-execution-setup.md).
+
 - [Dynamics 365 Supply Chain Managementin varaston näkyvyyden lisäosa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Lisätietoja on kohdassa [Varaston näkyvyyden lisäosa](../inventory/inventory-visibility.md)
+
 - [Rekisterikilpien tarkistaminen lähdeasiakirjan rivien perusteella](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Lisätietoja on kohdassa [Varastomäärityksen yleiskatsaus](../warehousing/warehouse-configuration.md).
+
 - [Varastonhallinnan lähtevän kuorman visualisointi](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Lisätietoja on kohdassa [Lähtevän kuorman visualisointi](../warehousing/outbound-workload-visualization.md).
 
 Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
@@ -88,7 +89,7 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (lokakuu 2020) käyttöympäristön päivitysversio 10.0.16](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.16 platform update -päivitykset (helmikuu 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -110,6 +111,3 @@ Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](https:/
 Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

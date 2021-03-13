@@ -1,6 +1,6 @@
 ---
 title: Talousraporttien suunnittelutoiminnon raportin määritykset
-description: Tässä artikkelissa on tietoja raportin määrityksistä. Raportin määritys on raporttiosa (tai rakenneosa), joka käyttää raportin luontiin rivin, sarakkeen ja valinnaisesti myös raportointipuun määritystä. Raportin määrityksessä on myös vaihtoehtoja ja asetuksia raportin mukauttamiseen.
+description: Tässä artikkelissa on tietoja raportin määrityksistä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d5531112cfb803912849af3af785b2a69a79f3d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683108"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093411"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Talousraporttien suunnittelutoiminnon raportin määritykset
 
@@ -84,6 +84,3 @@ Seuraavassa taulukossa kuvataan raportin määrityksen välilehdet sekä tietoje
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

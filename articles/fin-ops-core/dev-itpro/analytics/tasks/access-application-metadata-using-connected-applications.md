@@ -1,6 +1,6 @@
 ---
 title: Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
-description: Tämän aiheen vaiheissa selitetään, miten Regulatory Configuration Service (RCS) -käyttäjät voivat suunnitella uuden sähköisen raportoinnin eli ER-mallin yhdistämisen käyttämällä Finance and Operationsin metatietoja.
+description: Tämän aiheen vaiheissa selitetään, miten Regulatory Configuration Servicen käyttäjä voi suunnitella uuden sähköisen raportoinnin mallin yhdistämisen käyttämällä metatietoja.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682138"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093327"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
 
@@ -113,6 +113,3 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 11. Sulje sivu. 
 
 Kun tämä malli on arvioitava käyttämällä toisen version sovelluksen metatietoja, rekisteröi toinen yhdistetty sovellus, määritä se tähän mallin yhdistämismääritykseen ja vahvista se käyttämällä uusia metatietoja.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

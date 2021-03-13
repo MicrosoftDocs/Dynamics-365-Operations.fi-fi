@@ -3,7 +3,7 @@ title: Sähköisen laskutuksen lisäosan käytön aloittaminen
 description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen lisäosan käytön Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
 manager: AnnBe
-ms.date: 10/08/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,339 +11,227 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 07954c5c96f390bc651794f8b6c61f2a1a17ab8b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4442951"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5111217"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Sähköisen laskutuksen lisäosan käytön aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen lisäosan käytön. Ensinnäkin se opastaa sinua Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicesin ja Dynamics 365 Financen määritysvaiheissa. Seuraavaksi se kuvaa prosessin, jossa asiakirjoja lähetetään palvelun kautta käyttäen Dynamics 365 Financea tai Dynamics 365 Supply Chain Managementia. Tutustut myös lähetyslokien tulkitsemiseen.
+Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen lisäosan käytön.
 
-## <a name="availability"></a>Käytettävyys
+Seuraavassa taulukossa luetellaan sähköisen laskutuksen ominaisuudet ja liiketoimintaasiakirjat, joihin niitä voidaan käyttää.
 
-Sähköisen laskutuksen lisäosa on alkuun käytettävissä useissa maissa. Apuohjelma tukee sähköisten laskujen luontia ja seuraavien liiketoiminta-asiakirjojen lähettämistä:
-
-| Maa/alue  | Yritysasiakirja                          |
-|-----------------|--------------------------------------------|
-| Itävalta         | Myynti- ja projektilaskut                 |
-| Belgia         | Myynti- ja projektilaskut                 |
-| Brasilia          | Sähköinen veroasiakirjamalli 55 (NF-e) |
-| Tanska         | Myynti- ja projektilaskut                 |
-| Viro         | Myynti- ja projektilaskut                 |
-| Suomi         | Myynti- ja projektilaskut                 |
-| Ranska          | Myynti- ja projektilaskut                 |
-| Saksa         | Myynti- ja projektilaskut                 |
-| Italia           | Myynti- ja projektilaskut                 |
-| Meksiko          | CFDI-lasku                               |
-| Alankomaat     | Myynti- ja projektilaskut                 |
-| Norja          | Myynti- ja projektilaskut                 |
-| Espanja           | Myynti- ja projektilaskut                 |
-| Eurooppa          | PEPPOL-myynti- ja projektilaskut          |
-    
-## <a name="licensing"></a>Käyttöoikeudet
-
-Voit käyttää sähköisen laskutuksen lisäosaa nykyisellä lisenssilläsi. Palvelun käyttämiseen ei tarvita lisälisenssejä.
+| Toiminnon nimi                         | Yritysasiakirja |
+|--------------------------------------|-------------------|
+| Itävallan sähköiset laskut (AT)    | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Belgian sähköinen lasku (BE)      | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Brasilian NF-e (BR)                  | <p>Mallin 55 veroasiakirja</p><p>Oikaisukirje</p> |
+| Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirja |
+| Brasilian NFS-e São Paulo (BR)       | Palvelun veroasiakirja |
+| Tanskan sähköinen lasku (DK)       | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Egyptin sähköinen lasku (EG)     | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Viron sähköinen lasku (EE)     | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Suomen sähköinen lasku (FI)       | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Ranskan sähköinen lasku (FR)       | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Saksan sähköinen lasku (DE)       | <p>Myyntilasku</p><p>Projektilasku</p> |
+| FatturaPA (IT)                       | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Meksikon CFDI Interfactura (MX)       | <p>Myyntilasku</p><p>Pakkausluettelo</p><p>Varastosiirto</p><p>Maksun täydennys</p> |
+| Alankomaiden sähköinen lasku (NL)        | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> |
+| Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> |
 
 ## <a name="prerequisites"></a>Edellytykset
 
 Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on toteuduttava:
 
-- Pääsy LCS-tiliisi.
-- LCS-käyttöönottoprojekti, joka sisältää Financen tai Supply Chain Managementin version 10.0.13 tai sitä uudemman.
-- Pääsy RCS-tiliisi.
-- RCS-tilin globalisointiominaisuuden käyttöönotto **Toiminnonhallinta**-moduulin kautta. Lisätietoja [Regulatory Configuration Services (RCS) – globalisointitoiminnot](rcs-globalization-feature.md)
-- Luo avainsäilöresurssi ja tallennustili Azuressa. Lisätietoja [Azure-tallennustilin ja -avainsäilön luominen](e-invoicing-create-azure-storage-account-key-vault.md).
+- Konfiguroi Regulatory Configuration Service (RCS) ja Microsoft Dynamics 365 Finance- tai Dynamics 365 Supply Chain Management -ympäristösi niin, että voit lähettää sähköisen laskutuksen lisäosaan.
+- Luo palveluympäristö ja julkaise se sähköisen laskutuksen lisäosaan. Lisätietoja on ohjeaiheessa [Sähköisen laskutuksen lisäpalvelun hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md).
+- Luo yhdistetty sovellus. Lisätietoja on ohjeaiheessa [Sähköisen laskutuksen lisäpalvelun hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md).
+- Luo organisaatiollesi konfiguraatiopalvelu. Lisätietoja on kohdassa [Määrityspalvelun luonti ja merkitseminen aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-## <a name="overview"></a>Yleiskuvaus
+## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Tuo sähköisen laskutuksen ominaisuus Microsoftin konfiguraatiopalvelusta. 
 
-Seuraavassa kuvassa esitetään viisi päävaihetta, jotka suoritat tässä aiheessa.
+1. Kirjaudu sisään Regulatory Configuration Service (RCS) -tilillesi.
+2. Valitse **Globalisointitoiminnot**-työtila ja **Toiminnot**-kohdan **Sähköinen laskutus** -ruutu.
+3. Valitse **Tuo** ja valitse sitten **Synkronoi**.
+4. Suodata **Konfigurointipalvelu**-sarake hakusanan **Microsoft** avulla.
+5. Valitse sähköisen laskutuksen toiminnon nimi tämän ohjeaiheen alussa olevasta taulusta ja valitse sitten **Tuo**.
 
-![Tämän aiheen viiden vaiheen yleiskatsaus](media/e-invoicing-services-get-started-overview-5-steps.png)
+## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Luo organisaation palveluntarjoajassa sähköisen laskutuksen ominaisuus
 
-1. **Azure-resurssien määritys:** Azure-tallennustilan määrittäminen ja digitaalisten varmenteiden lataaminen Azure Key Vaultiin.
-2. **LCS-määritys:** Asenna mikropalvelujen apuohjelma.
-3. **RCS-määritys:** Määritä ympäristö, käyttöoikeudet ja sähköisen laskutuksen toiminnot.
-4. **Asiakkaan asetukset:** Määritä asiakkaan ja sähköisen laskutuksen lisäohjelman välinen yhteys ja poista käytöstä vanhat toiminnot sähköisten asiakirjojen lähettämiselle ja vastausten vastaanottamiselle.
-5. **Laskujen lähettäminen:** Lähetä sähköisiä asiakirjoja sähköisen laskutuksen lisäosalla ja vastaanota vastauksia.
+1. Valitse RCS:n **Globalisointitoiminnot**-työtilan **Toiminnot**-kohdassa **Sähköinen laskutus** -ruutu.
+2. Valitse **Lisää** > **Perustuu aiempaan ominaisuuteen** ja anna **Nimi**-kentässä sähköisen lasktuksen ominaisuuden nimi.
+3. Anna ominaisuuden kuvaus **Kuvaus**-kentässä.
+4. Valitse **Perustoiminto**-kentästä tuotu sähköinen laskutusominaisuus Microsoftin konfiguraatiopalvelusta.
+5. Valitse **Luo ominaisuus**.
 
-> [!NOTE]
-> Jotkut tämän aiheen määritysvaiheet ovat yleisiä ja maasta/alueesta riippumattomia. Maa-/aluekohtaiset vaiheet ja määritysmenettelyt on kuvattu maa-/aluekohtaisissa aiheissa.
+## <a name="configure-the-electronic-invoicing-feature"></a>Konfiguroi sähköisen laskutuksen ominaisuus
 
-## <a name="lcs-setup"></a>LCS-asetukset
+Maan tai alueen mukaan sähköinen laskutustoiminto saattaa edellyttää lisäkonfiguraatiota. Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloitusdokumentaatiossa.
 
-1. Kirjaudu LCS-tilille.
-2. Valitse **Esiversiotoiminnon hallinta** -ruutu ja valitse sitten **Julkisen esiversion toiminnot** -kenttäryhmässä **BusinessDocumentSubmission**.
-3. Merkitse **Esiversiotoiminto käytössä** -kenttä.
-4. Valitse LCS-käyttöönottoprojekti. Ennen kuin voit valita projektin, sen on oltava käynnissä.
-5. Valitse **Ympäristöapuohjelmat**-pikavälilehdessä **Asenna uusi apuohjelma**.
-6. Valitse **Liikeasiakirjojen lähetys**.
-7. Syötä **Apuohjelman määritys**-valintaikkunan **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä arvo on kiinteä arvo.
-8. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi tunnus.
+## <a name="configure-the-application-setup"></a>Määritä sovellusasetukset
 
-    ![Apuohjelman valintaikkunan määrittäminen LCS:ssä](media/e-invoicing-services-get-started-lcs-addin-setup.png)
-
-9. Hyväksy ehdot valitsemalla valintaruutu.
-10. Valitse **Asenna**.
-
-## <a name="rcs-setup"></a>RCS-asetukset
-
-RCS:n määrityksen aikana suoritat seuraavat tehtävät:
-
-1. Määritä avainsäilö RCS:ssä.
-2. Määritä RCS-integrointi sähköisen laskutuksen lisäosapalvelimeen.
-3. Luo organisaatiolle sähköisen laskutuksen lisäosaympäristö.
-
-### <a name="set-up-the-key-vault-in-rcs"></a>Määritä avainsäilö RCS:ssä
-
-1. Kirjaudu RCS-tilille.
-2. Valitse **Globalisointitoiminnot**-työtila ja **Ympäristöt**-kohdan **Sähköinen laskutus** -ruutu.
-3. Valitse **Palveluympäristöt**.
-
-    ![Palveluympäristöjen valinta](media/e-invoicing-services-get-started-select-service-environments.png)
-
-> [!NOTE]
-> **Yhdistetyt sovellukset**-asetus myöntää käyttöoikeuden sähköisen laskutuksen lisäosan automaattiseen määritykseen Financessa tai Supply Managementissa RCS:n kautta. Tällä hetkellä tämä ominaisuus on kuitenkin vielä kehitteillä.
-
-4. Valitse toimintoruudussa **Avainsäilön parametrit**.
-
-    ![Avainsäilön parametrin valinta](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
-
-5. Lisää avainsäilö valitsemalla toimintoruudussa **Uusi**.
-6. Syötä **Avainsäilön URI** -kenttään Azuressa määrittämäsi avainsäilöresurssin **DNS-nimi**-määritearvo. Lisätietoja **DNS-nimen** sijainnista: [Azure-tallennustilin ja Key Vaultin luominen](e-invoicing-create-azure-storage-account-key-vault.md).
-
-    ![Avainsäilön URI -kenttä](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
-
-7. Valitsemalla **Varmenteet**-pikavälilehdessä **Lisää** voit antaa kaikki digitaaliset varmennenimet ja avainsäilön salaisuudet, joita tarvitaan luotettavien yhteyksien muodostamiseen. Voit määrittää **Tyyppi**-sarakkeessa, onko se varmenne vai salainen koodi. Molemmat arvojoukot määritetään Azuren avainsäilöresurssissa.
-
-    ![Varmenteiden lisääminen](media/e-invoicing-services-get-started-add-digital-certificates.png)
-
-8. Jos maa-/aluekohtainen laskusi edellyttää tiettyjen varmenteiden soveltamista digitaaliseen allekirjoitukseen, valitse toimintoruudusta **Varmenneketju** ja syötä ketjuun kuuluva joukko varmenteita tai avainsäilösalasanoja.
-
-### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Määritä RCS-integrointi sähköisen laskutuksen lisäosapalvelimeen
-
-1. Valitse **Globalisaatiotoiminnot**-työtilan **Liittyvät asetukset** -osassa **Sähköisen raportoinnin parametrit** -linkki.
-2. Valitse **Yhdistä elinkaaripalveluun napsauttamalla tästä**. Jos et halua yhdistää LCS:ään, valitse **Peruuta**.
-3. Anna **Sähköiset laskutuspalvelut** -välilehden **Järjestelmän päätepisteen URI** -kentässä arvo seuraavien käytettävissä olevien maantieteellisten alueiden mukaan: `https://businessdocumentsubmission.us.operations365.dynamics.com/` tai `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
-4. Varmista, että tunnus **0cdb527f-a8d1-4bf8-9436-b352c68682b2** näkyy **Sovellustunnus**-kentässä. Tämä arvo on kiinteä arvo.
-5. Syötä **LCS-ympäristötunnus**-kenttään LCS-tilaustilisi tunnus.
-
-![Sähköisen laskutuksen lisäosan parametrien syöttäminen](media/e-invoicing-services-get-started-enter-e-invoicing-parameters.png)
-
-### <a name="add-an-electronic-invoicing-add-on-environment"></a>Sähköisen laskutuksen lisäosaympäristön lisääminen
-
-Sähköisen laskutuksen lisäosassa voi luoda erilaisia ympäristöjä, kuten kehitys-, testaus- tai tuotantoympäristöjä.
-
-1. Valitse **Globalisointitoiminnot**-työtila ja **Ympäristöt**-kohdan **Sähköinen laskutus** -ruutu.
-2. Luo uusi ympäristö valitsemalla **Uusi**.
-3. Syötä **Tallennustilan SAS-tunnustili** -kenttään sen avainsäilöresurssin salasanan, jonka määritit RCS:n avainsäilössä.
-
-    ![Tallennustilan SAS-tunnustilin kenttä](media/e-invoicing-services-get-started-enter-sas-token-secret.png)
-
-4. Myönnä käyttäjille käyttöoikeus tähän ympäristöön valitsemalla **Käyttäjät**-pikavälilehdessä **Uusi**.
-
-    ![Palvelun käyttäjien lisääminen](media/e-invoicing-services-get-started-enter-service-users.png)
-
-5. Julkaise ympäristö sähköisen laskutuksen lisäosan palvelimella valitsemalla toimintoruudussa **Julkaise**.
-
-    ![Julkaise-painike](media/e-invoicing-services-get-started-publish-service-environment.png)
-
-### <a name="e-invoicing-feature-setup"></a>Sähköisen laskutuksen toiminnon määritys
-
-Sähköisen laskutuksen toiminto on sen resurssin yleinen nimi, joka määritetään ja julkaistaan käytettäväksi sähköisen laskutuksen lisäosan palvelimella. Sähköisen laskutuksen toiminnon määrityksessä yhdistyvät muun muassa sähköisen raportoinnin (ER) määrityksen muodot määritettävien vienti- ja tuontitiedostojen luomista varten sekä toimintojen ja toimintokulkujen käyttäminen määritettävien pyyntöjen lähettämisen sääntöjen luomiseen, vastausten tuomiseen sekä vastausten sisältöjen jäsentämiseen.
-
-Laskumuotojen ja toimintokulkujen välisten erojen vuoksi toiminnon määritys on maa-/aluekohtainen.
-
-## <a name="set-up-electronic-invoicing-add-on-integration-in-finance-or-supply-chain-management"></a>Sähköisen laskutuksen lisäosan integroinnin määrittäminen Financessa tai Supply Chain Managementissa 
-
-Tämän määrityksen aikana suoritat seuraavat tehtävät:
-
-1. Väliversion avaaminen
-2. Sähköisen laskutuksen lisäosan integrointitoiminnon käyttöönotto Financeen integroinnin mahdollistamiseksi.
-3. Sähköisen laskutuksen päätepisteen URL-osoitteen määrittäminen.
-4. Maa-/aluekohtaiseen sähköisen laskutuksen toimintoon liittyvien ER-määritysten tuominen.
-5. Sovellettavan maa-/aluekohtaisen sähköisen laskutuksen toiminnon käyttöönotto.
-6. ER-määritysten tuonti ja niiden vastaustyyppien määrittäminen, jotka tarvitaan maa-/aluekohtaisen laskutusasiakirjan päivittämiseen lähetysprosessin tuloksena.
-
-### <a name="open-flighted-feature"></a>Väliversion avaaminen
-Sähköisen laskun integrointitoiminto on otettu käyttöön väliversion avulla. Väliversiointi on konsepti, jonka ansiosta toiminto voi olla oletusarvoisesti KÄYTÖSSÄ tai POIS KÄYTÖSTÄ. Seuraavat vaiheet mahdollistavat väliversioinnin muussa kuin tuotantoympäristössä. 
-
-1. Suorita seuraava SQL-komento:
-
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
-    
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
-    
-2. Kun olet tehnyt edellä mainitun muutoksen, suorita kaikille AOS-solmuille IISReset
-
-### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Sähköisen laskutuksen lisäosan integrointitoiminnon käyttöönotto
-
-1. Kirjaudu Financeen tai Supply Chain Managementiin.
-2. Etsi uutta toimintoa **Määritettävä sähköisen laskutuksen lisäosan integrointi** **Toiminnonhallinta**-työtilassa. Jos toimintoa ei vieläkään näy toiminnonhallinnan sivulla, suorita **Hae päivityksiä** -toiminto
-3. Valitse toiminto ja valitse sitten **Ota käyttöön nyt**.
-
-### <a name="set-up-the-service-endpoint-url"></a>Palvelun päätepisteen URL-osoitteen määritys
-
-1. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
-2. Syötä **Järjestelmän päätepisteen URL** -kentän **Lähetyspalvelu**-välilehteen `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
-3. Syötä **Ympäristö**-kenttään RCS-määrityksen yhteydessä luomasi sähköisen laskutuksen lisäosaympäristön nimi.
-
-![Palveluparametrien syöttäminen](media/e-invoicing-services-get-started-enter-service-endpoint.png)
-
-### <a name="import-the-er-configurations"></a>ER-määritysten tuominen
-
-Voit ottaa käyttöön liiketoimintatietojen keräämisen ja lähettämisen sähköisen laskutuksen lisäosaan tuomalla ER-tietomallin ja ER-tietomallin määrityksen, jotka liittyvät siihen maa-/aluekohtaiseen sähköisen laskutuksen toimintoon, jota haluat käyttää.
-
-1. Valitse **Sähköisen raportointi** -työtilan **Määrityslähteet** -osassa **Microsoft**. Varmista, että tämän määrityspalvelun arvoksi on määritetty **Aktiivinen**. Tietoja palvelun arvon **Aktiivinen**-muotoon määrittämisestä: [Luo määrityspalveluja ja merkitse ne aktiiviseksi](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
-3. Valitse **Säilöt**.
-4. Valitse **Yleinen resurssi** ja valitse sitten **Avaa**.
-5. Valitse **Yhdistä Lifecycle Servicesiin** -valintaikkunassa **Yhdistä elinkaaripalveluun napsauttamalla tästä**.
-6. Sen mukaan, missä maassa tai millä alueella haluat käyttää sähköisen laskutuksen toimintoa, sinun on tuotava sovellettava tietomalli, tietomallin yhdistämismääritys sekä muodot. Tietoja niistä ER-määrityksistä, jotka kannattaa tuoda, esitetään maa-/aluekohtaisessa aiheessa Sähköisen laskutuksen lisäosan käytön aloittaminen.
-7. Tuo **Asiakaslaskun kontekstimalli**. Tämä malli sisältää lisäparametreja, jotka kuvaavat muun muassa sen ympäristön Financessa, jota käytetään sähköisen laskutuksen lisäosan kanssa liiketoimintatietoja lähetettäessä.
-
-### <a name="turn-on-countryregion-specific-e-invoicing-features"></a><a name="region-specific"></a>Maa-/aluekohtaisen sähköisen laskutuksen toimintojen käyttöönotto
-
-Jos haluat ottaa käyttöön maa-/aluekohtaisen sähköisen laskutuksen toiminnot siten, että ne toimivat sähköisen laskutuksen lisäosassa, sinun on otettava toiminto käyttöön jokaisessa yrityksessä, jossa haluat käyttää sitä. Tämän jälkeen vanhaa sähköisen laskutuksen integrointia ei voi enää käyttää, ja integrointi uudella sähköisen laskutuksen lisäosalla on käytössä.
-
-1. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
-2. Valitse maa-/aluekohtaiseen sähköisen laskutuksen toimintoosi liittyvän rivin **Toiminnot**-välilehdellä **Käytössä**-sarakkeen valintaruutu. Tietoja siitä, mikä toiminto kannattaa ottaa käyttöön, esitetään maa-/aluekohtaisessa aiheessa Sähköisen laskutuksen lisäosan käytön aloittaminen.
-
-![Sähköisen laskutuksen toiminnon käyttöönotto](media/e-invoicing-services-get-started-enable-invoicing-feature.png)
-
-> [!NOTE]
-> Jos sinulla on useita eri maita tai alueita varten määritettyjä yrityksiä, voit ottaa käyttöön maa-/aluekohtaisen sähköisen laskutuksen toiminnon käyttöön kullekin yritykselle.
-
-### <a name="import-er-configurations-and-set-up-the-response-types-to-update-your-countryregion-specific-invoice-document"></a>Tuo ER-määritykset ja määritä vastaustyypit päivittämään maa-/aluekohtainen laskuasiakirjasi
-
-Jos lähetetty laskuasiakirja vaati päivitystä valtiollisilta hyväksymispalveluilta saadun vastauksen perusteella, kun se on niille lähetetty, sinun on tuota erityinen ER-tietomalli ja määritykset, jotta laskuasiakirjan tai muun lisäkentän tila voidaan muuttaa.
-
-1. Valitse **Sähköisen raportointi** -työtilan **Määrityslähteet** -osassa **Microsoft**.
-2. Valitse **Säilöt**.
-3. Valitse **Yleinen resurssi** ja valitse sitten **Avaa**.
-4. Tuo **Vastausviestin malli**, **Vastausviestin tuontimuoto**, **Vastausviestin mallin yhdistämismääritys kohteeseen** ja **Tiedostosisältöjen tuontimuoto**.
-5. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
-6. Valitse **Sähköinen tiedosto** -välilehdessä **Lisää** syöttääksesi sen taulukon nimen, joka liittyy maa-/aluekohtaiseen laskuasiakirjaasi. Tietoja siitä, mitkä taulukkonimet kannattaa valita, esitetään maa-/aluekohtaisessa aiheessa Sähköisen laskutuksen lisäosan käytön aloittaminen.
-7. Määritä vastaustyypit valitsemalla **Vastaustyypit**. Tietoja siitä, mitkä taulukkonimet kannattaa valita, esitetään maa-/aluekohtaisessa aiheessa Sähköisen laskutuksen lisäosan käytön aloittaminen.
-
-![Vastaustyyppien määrittäminen](media/e-invoicing-services-get-started-set-up-response-types.png)
-
-## <a name="e-invoicing-feature-names-by-country"></a>Sähköisen laskutuksen maakohtaiset toimintonimet 
-Seuraavassa taulukossa kuvataan muita sähköisen laskutuksen toimintoja, joita voi ladata sähköisen raportoinnin yleisestä säilöstä sähköisten laskujen luomista varten.
-RCS:ssä voit ladata tässä taulukossa luetellut sähköisen laskutuksen palvelut, ER-määritykset ja käytettävissä olevat sähköisen laskutuksen toiminnon määritykset.
-Financessa voit ottaa käyttöön liittyvän toiminnon viitteet **Sähköisen asiakirjan parametrit** -sivulla luodaksesi sähköisiä laskuja kyseisisä maita varten. Lisätietoja on aiemmin tässä aiheessa osassa [Maa-/aluekohtaisen sähköisen laskutuksen toimintojen käyttöönotto](#region-specific).
-
-| Toiminnon nimi                      | kuvaus                                 | ER-määritykset                                                                                                  | Asetukset                                                                                                                                                         | Maa/alue  | Ominaisuuden viite      |
-|-----------------------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------------------|
-| Itävallan sähköiset laskut (AT) | Myynti- ja projektilaskut Itävallassa      | - OIOUBL-myyntilasku <br>- OIOUBL-projektilasku <br>- OIOUBL, myynnin hyvityslasku <br>- OIOUBL, projektin hyvityslasku | - Myyntilaskujen luonti (AT) <br>- Projektilaskujen luonti (AT) <br>- Myynnin hyvityslaskujen luonti (AT) <br>- Projektien hyvityslaskujen luonti (AT)         | Itävalta         | EUR-00023              |
-| Belgian sähköinen lasku (BE)   | Myynti- ja projektilaskut Belgiassa      | - UBL-myyntilasku BE <br>- UBL-projektilasku BE <br>- UBL, projektin hyvityslasku, BE <br>- UBL, myynnin hyvityslasku, BE | - Myyntilaskujen luonti (BE)<br>- Projektilaskujen luonti (BE) <br>- Myynnin hyvityslaskujen luonti (BE) <br>- Projektien hyvityslaskujen luonti (BE)         | Belgia         | EUR-00023              |
-| Tanskan sähköinen lasku (DK)    | Myynti- ja projektilaskut Tanskassa      | - OIOUBL-myyntilasku <br>- OIOUBL-projektilasku <br>- OIOUBL, myynnin hyvityslasku <br>- OIOUBL, projektin hyvityslasku | - Myyntilaskujen luonti (DK) <br>- Projektilaskujen luonti (DK) <br>- Myynnin hyvityslaskujen luonti (DK)<br>- Projektien hyvityslaskujen luonti (DK)         | Tanska         | EUR-00023<br> DK-00001 |
-| Alankomaiden sähköinen lasku (NL)     | Myynti- ja projektilaskut Alankomaissa  | - UBL-myyntilasku NL <br>- UBL-projektilasku NL <br>- UBL, myynnin hyvityslasku, NL <br>- UBL, projektin hyvityslasku, NL | - Myyntilaskujen luonti (NL) <br> - Projektilaskujen luonti (NL) <br> - Myynnin hyvityslaskujen luonti (NL) <br>- Projektien hyvityslaskujen luonti (NL)          | Alankomaat | EUR-00023              |
-| Viron sähköinen lasku (EE)  | Myynti- ja projektilaskut Virossa      | - Myyntilasku (EE) <br> - Projektilasku (EE)                                                                     | - Myyntilaskujen luonti (EE) <br>- Projektilaskujen luonti (EE)                                                                                           | Viro         | EUR-00023              |
-| Suomen sähköinen lasku (FI)   | Myynti- ja projektilaskut Suomessa      | - Myyntilasku (FI) <br>- Projektilaskujen luonti (FI)                                                          | - Myyntilaskujen luonti (FI) <br>- Projektilaskujen luonti (FI)                                                                                           | Suomi         | EUR-00023              |
-| Ranskan sähköinen lasku (FR)    | Myynti- ja projektilaskut Ranskassa    | - UBL-myyntilasku (FR) <br> - UBL-projektilasku FR <br> - UBL, myynnin hyvityslasku, FR <br>- UBL, projektin hyvityslasku, FR | - Myyntilaskujen luonti (FR) <br> - Projektilaskujen luonti (FR) <br>- Myynnin hyvityslaskujen luonti (FR) <br>- Projektien hyvityslaskujen luonti (FR)         | Ranska          | EUR-00023              |
-| Saksan sähköinen lasku (DE)    | Myynti- ja projektilaskut Saksassa      |- Myyntilasku (DE) <br> - Projektilasku <DE>                                                                     | - Myyntilaskujen luonti (DE) <br>- Projektilaskujen luonti (DE)                                                                                           | Saksa         | EUR-00023              |
-| Norjan sähköinen lasku (NO) | Myynti- ja projektilaskut Norjassa       | - OIOUBL-myyntilasku <br>- OIOUBL-projektilasku <br>- OIOUBL, myynnin hyvityslasku <br>- OIOUBL, projektin hyvityslasku | - Myyntilaskujen luonti (NO) <br>- Projektilaskujen luonti (NO) <br>- Myynnin hyvityslaskujen luonti (NO) <br>- Projektien hyvityslaskujen luonti (NO)          | Norja          | EUR-00023<br> NO-00010 |
-| Espanjan sähköinen lasku (ES)   | Myynti- ja projektilaskut Espanjassa        | - Myyntilasku (ES) <br>- Projektilasku (ES)                                                                     | - Myyntilaskujen luonti (ES) <br>- Projektilaskujen luonti (ES)                                                                                           | Espanja           | EUR-00023 <br>ES-00025 |
-| Italian sähköinen lasku (IT)   | Myynti- ja projektilaskut Italiassa        | - (Esikatselu) Myyntilasku (IT) <br> - Projektilasku (IT)                                                           | - Myyntilasku <br> - Projektilasku                                                                                                                           | Italia           | EUR-00023 <br>IT-00036 |
-| Sähköinen PEPPOL-lasku         | PEPPOL-myynti- ja projektilaskujen luonti | - PEPPOL-myyntilasku <br>- PEPPOL-projektilasku <br>- PEPPOL, myynnin hyvityslasku <br> - PEPPOL, projektin hyvityslasku | - PEPPOL-myyntilaskujen luonti <br>- PEPPOL-projektilaskujen luonti <br>- PEPPOL, myynnin hyvityslaskujen luonti <br>- PEPPOL, projektien hyvityslaskujen luonti |                 | EUR-00023              |
-
-
-## <a name="electronic-invoice-processing-in-finance-and-supply-chain-management"></a>Sähköinen laskujen käsittely Financessa ja Supply Chain Managementissa
-
-Käsittelyn aikana suoritat seuraavat tehtävät:
-
-1. Liiketoiminta-asiakirjan (lasku) lähettäminen sähköisen laskutuksen lisäosalla.
-2. Lähetyksen suorituslokien tarkastelu.
-
-### <a name="submit-business-documents"></a>Liiketoiminta-asiakirjojen lähettäminen
-
-Säännöllisen lähetysprosessin aikana asiakkaan ja sähköisen laskutuksen lisäosan välinen yhteys on kaksisuuntainen. Tarkoituksena on suorittaa kaksi päätehtävää sähköisten asiakirjojen toimittamisen aikana:
-
-1. Lähettää kaikki sähköiset asiakirjat, jotka odottavat lähetystä Financesta, joiden tila on oikea lähettämistä varten ja jotka täyttävät valintaperusteet.
-2. Tuo Financeen vastaus, jonka sähköisen laskutuksen lisäosa palauttaa aiemmin lähetettyjen sähköisten asiakirjojen osalta. Tuonnin jälkeen vastaukset jäsennetään ja liiketoiminta-asiakirjojen tila päivitetään sen mukaisesti.
-
-Voit lähettää liiketoiminta-asiakirjoja joko manuaalisesti tai aikatauluvaatimusten perusteella.
-
-1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Lähetä sähköisiä asiakirjoja**.
-2. Kun mikä tahansa asiakirja lähetetään ensimmäistä kertaa, määritä **Lähetä asiakirjat uudelleen** -asetukseksi aina **Ei**. Jos sinun on lähetettävä asiakirja uudelleen palvelun kautta, määritä asetukseksi **Kyllä**.
-3. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** avataksesi **Kysely**-valintaruudun, jossa voit muodostaa kyselyn lähetettävien asiakirjojen valitsemista varten.
-
-![Sähköisten asiakirjojen lähettämisen valintaruutu](media/e-invoicing-services-get-started-submission-form.png)
-
-### <a name="filter-query"></a>Suodatinkysely
-
-1. Syötä **Alue**-välilehden **Tiedustelu**-valintaikkunaan suodatusperusteet käyttämällä kenttiä **Taulukko**, **Johdettu taulukko**, **Kenttä** ja **Perusteet**.
-2. Lisää liiketoiminta-asiakirjojen valintaan tarvittava määrä lisäperusteita valitsemalla **Lisää**.
-
-    ![Lähetyksen suodatusehtojen määrittäminen](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
-
-3. Valitse **OK**, jotta voit sulkea **Kysely**-valintaikkunan.
-4. Lähetä valitut liiketoiminta-asiakirjat sähköisen laskutuksen lisäosaan valitsemalla **OK**.
+1. Valitse luomasi Sähköinen laskutus -toiminto.
+2. Tarkista **Versio**-välilehdessä, että **Luonnos**-versio on valittuna.
+3. Valitse **Asetukset** -välilehdessä **Sovelluksen asetukset**.
 
     > [!NOTE]
-    > Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköisen laskutuksen lisäosaan. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
-    >
-    > ![Yhdistä sähköisten asiakirjojen lähetyspalveluun viestiruutuun](media/e-invoicing-services-get-started-dialog-form-connect-e-Invoicing-services.png)
-    >
-    > Jos yhteyden muodostaminen onnistuu, näyttöön tulee vahvistusviesti.
-    >
-    > ![Sähköisen laskutuksen lisäosan yhteyden vahvistus](media/e-invoicing-services-get-started-confirmation-connection-e-invoicing-services.png)
+    > Tarkista, että organisaatiosi on määritetty **aktiiviseksi** konfiguraatiopalveluksi. Lisätietoja on kohdassa [Määrityspalvelun luonti ja merkitseminen aktiiviseksi.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 
-5. Sulje valintaikkuna.
+4. Valitse **Toiminnon määritys** ja sitten **Yhdistetty sovellus**.
+5. Valitse **Sähköisen asiakirjan tyypit** -osassa **Lisää**.
+6. Valitse ja määritä jokaiselle toiminnon tukemalle liiketoimintatiedostolle **Taulun nimi** -arvo seuraavan taulukon mukaisesti:
 
-> [!NOTE]
-> Kunkin lähetyksen jälkeen toimintokeskuksessa näkyy lähetettyjen asiakirjojen määrä.
->
-> ![Toimintokeskuksen viestit](media/e-invoicing-services-get-started-view-action-center-messages.png)
+    | Toiminnon nimi                         | Yritysasiakirja | Taulun nimi |
+    |--------------------------------------|-------------------|------------|
+    | Itävallan sähköiset laskut (AT)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Belgian sähköinen lasku (BE)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Brasilian NF-e (BR)                  | <p>Veroasiakirja</p><p>Oikaisukirje</p> | Veroasiakirja |
+    | Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirja | Veroasiakirja |
+    | Brasilian NFS-e São Paulo (BR)       | Palvelun veroasiakirja | Veroasiakirja |
+    | Tanskan sähköinen lasku (DK)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Egyptin sähköinen lasku (EG)     | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Viron sähköinen lasku (EE)     | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Suomen sähköinen lasku (FI)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Ranskan sähköinen lasku (FR)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Saksan sähköinen lasku (DE)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | FatturaPA (IT)                       | <p>Myyntilasku</p><p>Projektilasku | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Meksikon CFDI Interfactura (MX)       | <p>Myyntilasku</p><p>Pakkausluettelo</p><p>Varastosiirto</p><p>Maksun täydennys</p> | Myyntilaskukirjauskansio |
+    | Alankomaiden sähköinen lasku (NL)        | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
 
-### <a name="submission-by-batch"></a>Erälähetys
+7. Valitse ja määritä jokaiselle toiminnon tukemalle liiketoimintatiedostolle **Konteksti** -arvo seuraavan taulukon mukaisesti:
 
-Asiakirjojen manuaalisen lähettämisen sijaan voit automatisoida lähetysprosessin ja suorittaa sen taustalla määritetyn eräsuoritustiheyden perusteella.
+    | Toiminnon nimi                         | Yritysasiakirja | Konteksti |
+    |--------------------------------------|-------------------|---------|
+    | Itävallan sähköiset laskut (AT)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Belgian sähköinen lasku (BE)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Brasilian NF-e (BR)                  | <p>Veroasiakirja</p><p>Oikaisukirje</p> | <p>Myyntilaskun kontekstimalli – veroasiakirjan konteksti</p><p>Myyntilaskun kontekstimalli – veroasiakirjan oikaisukirjeen konteksti</p> |
+    | Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirja| Myyntilaskun kontekstimalli – veroasiakirjan konteksti |
+    | Brasilian NFS-e São Paulo (BR)       | Palvelun veroasiakirja| Myyntilaskun kontekstimalli – veroasiakirjan konteksti |
+    | Tanskan sähköinen lasku (DK)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Egyptin sähköinen lasku (EG)     | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Viron sähköinen lasku (EE)     | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Suomen sähköinen lasku (FI)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Ranskan sähköinen lasku (FR)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Saksan sähköinen lasku (DE)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | FatturaPA (IT)                       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Meksikon CFDI Interfactura (MX)       | <p>Myyntilasku</p><p>Pakkausluettelo</p><p>Varastosiirto</p><p>Maksun täydennys</p> | Myyntilaskun kontekstimalli – myyntilaskun konteksti |
+    | Alankomaiden sähköinen lasku (NL)        | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
 
-1. Määritä **Lähetä sähköisiä asiakirjoja** -valintaruudussa **Suorita taustalla** -pikavälilehdessä **Eräkäsittely**-asetuksen arvoksi **Kyllä**.
-2. Määritä käsittelytaajuus **Toistuvuus**-välilehdessä.
+8. Valitse ja määritä jokaiselle toiminnon tukemalle liiketoimintatiedostolle **Liiketoiminta-asiakirjan yhdistäminen** -arvo seuraavan taulukon mukaisesti:
 
-![Erälähetyksen määritys](media/e-invoicing-services-get-started-set-up-submission-batch.png)
+    | Toiminnon nimi                         | Yritysasiakirja | Liiketoiminta-asiakirjan yhdistämismääritys |
+    |--------------------------------------|-------------------|---------------------------|
+    | Itävallan sähköiset laskut (AT)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Belgian sähköinen lasku (BE)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Brasilian NF-e (BR)                  | <p>Veroasiakirja</p><p>Oikaisukirje</p> | <p>Veroasiakirjan määritys – veroasiakirjan määritys</p><p>Veroasiakirjan määritys – oikaisukirjeen määritys</p> |
+    | Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirja | Veroasiakirjan määritys – veroasiakirjan määritys |
+    | Brasilian NFS-e São Paulo (BR)       | Palvelun veroasiakirja | Veroasiakirjan määritys – veroasiakirjan määritys |
+    | Tanskan sähköinen lasku (DK)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Egyptin sähköinen lasku (EG)     | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Viron sähköinen lasku (EE)     | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Suomen sähköinen lasku (FI)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Ranskan sähköinen lasku (FR)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Saksan sähköinen lasku (DE)       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | FatturaPA (IT)                       | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Meksikon CFDI Interfactura (MX)       | <p>Myyntilasku</p><p>Pakkausluettelo</p><p>Varastosiirto</p><p>Maksun täydennys</p> | Laskumallin määritys – Myyntilasku |
+    | Alankomaiden sähköinen lasku (NL)        | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
 
-### <a name="view-all-submission-logs"></a>Kaikkien lähetyslokien tarkastelu
+Maan tai alueen mukaan sähköinen laskutustoiminto saattaa edellyttää lisäkonfiguraatiota. Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloitusdokumentaatiossa.
 
-1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Sähköisen asiakirjan lähetysloki**.
-2. Valitse suodatusperusteena toimiva asiakirjatyyppi **Asiakirjatyyppi**-kentässä.
+## <a name="deploy-the-electronic-invoicing-feature"></a>Ota sähköisen laskutuksen ominaisuus käyttöön
 
-    ![Asiakirjatyypin valinta lähetyslokien tarkastelua varten](media/e-invoicing-services-get-started-select-document-type-for-viewing-submission-log.png)
+1. Valitse **Versiot**-välilehdestä se sähköisen laskutuksen toiminnon versio, jonka haluat ottaa käyttöön.
+2. Valitse **Muutoksen tila** \> **Viimeistele**.
+3. Valitse **Muuta tilaa** \> **Julkaise**.
+4. Valitse **Ota käyttöön**.
+5. Määritä **Ota käyttöön yhdistetyssä sovelluksessa** -asetuksen arvoksi **Kyllä**.
+6. Valitse **Yhdistä sovellus** -sivulla yhteys, joka liittyy Financen tai Supply Chain Managementin esiintymään.
+7. Määritä **Ota käyttöön palveluympäristössä** -asetuksen arvoksi **Kyllä**.
+8. Valitse **Palveluympäristö**-kentästä sähköinen laskutuksen lisäpalvelun ympäristö, jossa haluat ottaa sähköisen laskutuksen ominaisuuden käyttöön.
+9. Valitse **Päivämäärästä**-kentässä päivämäärä, jolloin sähköisen laskutuksen ominaisuuden tulee olla voimassa sähköisen laskutuksen lisäosassa.
+10. Valitse **OK**.
 
-    > [!IMPORTANT]
-    > **Lähetystila** -sarakkeessa näkyvä arvo edustaa tilaa, joka liittyy itse lähetysprosessin valmistumiseen. Se ilmaisee, onko RCS:ssä määritetty toimintokulku suoritettu loppuun riippumatta siitä, hyväksyttiinkö vai hylättiinkö sähköinen asiakirja. **Lähetyksen tila** -sarakkeen arvo ei edusta lähetetyn asiakirjan tilaa. Voit tarkastella lähetetyn tiedoston tilaa (eli sitä, onko asiakirja hyväksytty vai hylätty) **Käsittelytoimen loki** -pikavälilehden lähetyslokitiedoissa, kuten seuraavassa kuvataan.
+## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Sähköisen laskutuksen ominaisuuden käyttöönotto Financessa tai Supply Chain Managementissa
 
-3. Valitse toimintoruudussa **Tiedustelut \> Lähetystiedot**.
-4. Näytä lähetyslokitiedot.
+1. Kirjaudu sisään Financeen tai Supply Chain Managementiin ja varmista, että olet oikeassa yrityksessä.
+2. Siirry kohtaan **Organisaation hallinta** \> **Määritys** \> **Sähköisten asiakirjojen parametrit**.
+3. Valitse **Ominaisuudet**-välilehdessä toimintoviite tai -viitteet, jotka on lueteltu seuraavassa taulukossa, kun haluat ottaa sähköisen laskutuksen käyttöön Financessa tai Supply Chain Managementissa.
 
-    ![Lähetyslokin tiedot](media/e-invoicing-services-get-started-view-submission-log-form.png)
+    | Toiminnon nimi                         | Maa tai alue  | Ominaisuuden viite |
+    |--------------------------------------|-----------------|-------------------|
+    | Itävallan sähköiset laskut (AT)    | Itävalta         | EUR-00023 |
+    | Belgian sähköinen lasku (BE)      | Belgia         | EUR-00023 |
+    | Brasilian NF-e (BR)                  | Brasilia          | BR-00053 |
+    | Brasilian NFS-e ABRASF Curitiba (BR) | Brasilia          | BR-00095 |
+    | Brasilian NFS-e São Paulo (BR)       | Brasilia          | BR-00095 |
+    | Tanskan sähköinen lasku (DK)       | Tanska         | <p>EUR-00023</p><p>DK-00001</p> |
+    | Alankomaiden sähköinen lasku (NL)        | Alankomaat | EUR-00023 |
+    | Egyptin sähköinen lasku (EG)     | Egypti           | EG-00008 |
+    | Viron sähköinen lasku (EE)     | Viro         | EUR-00023 |
+    | Suomen sähköinen lasku (FI)      | Suomi         | EUR-00023 |
+     Ranskan sähköinen lasku (FR)       | Ranska           | EUR-00023 |
+    | Saksan sähköinen lasku (DE)       | Saksa         | EUR-00023 |
+    | Meksikon CFDI Interfactura (MX)       | Meksiko          | <p>MX-00010</p><p>MX-00016</p> |
+    | Norjan sähköinen lasku (NO)    | Norja          | <p>EUR-00023</p><p>NO-00010</p> |
+    | Espanjan sähköinen lasku (ES)      | Espanja           | <p>EUR-00023</p><p>ES-00025</p> |
+    | Italian sähköinen lasku (IT)      | Italia           | <p>EUR-00023</p><p>IT-00036</p> |
+    | Sähköinen PEPPOL-lasku            | Eurooppa          | EUR-00023 |
 
-Lähetyslokissa näkyvät tulokset määräytyvät sen mukaan, miten sähköisen laskutuksen toiminto on määritetty RCS:ssä. Lähetyslokilla on kuitenkin määrityksestä riippumatta kolme pikavälilehteä:
+4. Valitse **Tallenna**.
 
-- **Käsittelytoimet** – Tässä pikavälilehdessä näkyy RCS:ssä määritetyssä toimintoversiossa määritettyjen toimien suoritusloki. **Tila**-sarakkeessa näkyy, suoritettiinko toimi onnistuneesti.
-- **Toimitiedostot** – Tässä pikavälilehdessä näkyvät välitiedostot, jotka luotiin toimien suorittamisen aikana. Voit ladata tiedoston ja tarkastella sen sisältöä valitsemalla **Näytä**.
-- **Käsittelytoimen loki** – Tässä pikavälilehdessä näkyvät sähköisen laskutuksen lisäosan ja kohteena olevan verkkopalvelun välisen tiedonsiirron tulokset. Siinä näkyy myös, mitä verkkopalvelun käsittely palautti.
+## <a name="issue-electronic-invoices"></a>Sähköisten laskujen lähettäminen
+
+1. Siirry kohtaan **Organisaation hallinta** \> **Säännölliset** \> **Sähköiset asiakirjat** \> **Lähetä sähköisiä asiakirjoja**.
+2. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
+3. Lisää kyselysuodattimeen taulun nimi valitsemalla **Lisää**.
+4. Valitse taulu, joka sisältää laskut.
+
+    > [!NOTE]
+    > Taulun nimen on oltava aiemmin tässä ohjeaiheessa [Määritä sovellusasetukset](#configure-the-application-setup) -osassa olevassa taulussa.
+
+5. Valitse taulusta kentän nimi, johon haluat kohdistaa kyselyn.
+6. Kirjoita kyselyn ehdoille taulun nimi ja kentän nimi.
+7. Lisää kyselyyn kenttiä ja ehtoja toistamalla vaiheita 5 ja 6 ja valitse sitten **OK**.
+8. Valitse **OK**.
+
+## <a name="view-submission-logs"></a>Lähetyslokien tarkasteleminen
+
+1. Siirry kohtaan **Organisaation hallinta** \> **Säännölliset** \> **Sähköiset asiakirjat** \> **Sähköisen asiakirjan lähetysloki**.
+2. Valitse **Asiakirjatyyppi**-kentässä taulukko, joka sisältää laskut.
+
+    > [!NOTE]
+    > Taulun nimen on oltava aiemmin tässä ohjeaiheessa [Määritä sovellusasetukset](#configure-the-application-setup) -osassa olevassa taulussa.
+
+3. Valitse lasku ruudukosta ja valitse sitten **Kysely** \> **Lähetystiedot**.
+
+Maan tai alueen mukaan sähköinen laskutustoiminto saattaa edellyttää lisäkonfiguraatiota. Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloitusdokumentaatiossa.
 
 ## <a name="related-topics"></a>Liittyvät aiheet
 
-- [Sähköisen laskutuksen yleiskatsaus](e-invoicing-service-overview.md)
+- [Sähköisen laskutuksen lisäosan yleiskatsaus](e-invoicing-service-overview.md)
 - [Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-bra-get-started.md)
 - [Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-mex-get-started.md)
 - [Italian sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-ita-get-started.md)
-- [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Asiakkaiden sähköiset laskut Egyptissä](emea-egy-e-invoices.md)

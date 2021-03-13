@@ -1,6 +1,6 @@
 ---
 title: Osto- ja kulutusanalyysin Power BI -sisältö
-description: Tässä ohjeaiheessa kerrotaan, mitä osto- ja kulutusanalyysin Power BI -sisältö sisältää. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+description: Tässä ohjeaiheessa kerrotaan, mitä osto- ja kulutusanalyysin Power BI -sisältö sisältää.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5914abaafab509e278d7a85441928feddb0b5164
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680611"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093439"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Osto- ja kulutusanalyysin Power BI -sisältö
 
@@ -154,6 +154,3 @@ Seuraavia sisällön tärkeitä dimensioita käytetään koostemittojen ositussu
 | Päivämäärät                  | Päivämäärät, vuosisiirtymä                                    |
 
 Kuluvan kalenterivuoden tiedot näkyvät oletusarvoisesti sisällössä. Voit kuitenkin muuttaa päivämääräsuodatinta raportin suodatinosassa. Voit muuttaa myös yrityssuodatinta.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla
-description: Tämän aiheen vaiheissa selitetään, miten Regulatory Configuration Service (RCS) -käyttäjät voivat suunnitella uuden sähköisen raportoinnin eli ER-mallin yhdistämisen käyttämällä Finance and Operationsin metatietoja.
+description: Tämän aiheessa käsitellään, miten Regulatory Configuration Servicen käyttäjä voi suunnitella uuden sähköisen raportoinnin mallin käyttämällä metatietoja.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fa8e9ac4940bbc1252819ebcc3de2e21c9e0933f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 58697148ecf83f4962bd64a221945b6d911e11a6
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682162"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093302"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla
 
@@ -125,6 +125,3 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 > [!NOTE]
 > Tietojen hankkiminen sovelluksen metatiedoista tällä tavoin on käytettävissä vain paikallisesti käyttöönotetuissa sovelluksissa (kun liiketoimintatietojen paikallista (LBD) käyttöönottomallia käytetään).
         
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

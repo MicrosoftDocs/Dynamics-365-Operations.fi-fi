@@ -1,6 +1,6 @@
 ---
 title: Kustannuslaskenta-analyysin Power BI -sisältö
-description: Tässä aiheessa kuvataan, mitä kuuluu kustannuslaskennan analyysin Power BI -sisältöön. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+description: Tässä aiheessa kuvataan, mitä kuuluu kustannuslaskennan analyysin Power BI -sisältöön.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683868"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093383"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskenta-analyysin Power BI -sisältö
 
@@ -123,6 +123,3 @@ Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemi
 | Kirjanpidon kalenterit                   | Kalenteri, kalenterin kuvaus                                                                                       |
 | Tilikaudet                       | Kalenterivuosi                                                                                                        |
 | Tilikaudet                     | Kalenterivuoden kausi                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Sähköpostin ER-kohteen tyyppi
-description: Tässä aiheessa kerrotaan, miten kullekin lähteviä asiakirjoja luomaan määritetylle sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-komponentille määritetään sähköpostikohde.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla määritetään sähköpostikohde.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690123"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094101"
 ---
 # <a name="email-er-destination-type"></a>Sähköpostin ER-kohteen tyyppi
 
@@ -65,8 +65,6 @@ Jos valitse sähköpostiosoitteen tyypiksi **Tulostuksenhallintasähköposti**, 
 - Valitse **Sähköpostin lähde**-kentässä **Ei mikään**.
 - Syötä **Lisäsähköpostiosoitteet eroteltuina merkillä ";"** -kenttään kiinteät sähköpostiosoitteet.
 
-![Kiinteän sähköpostiosoitteen määritys](./media/er_destinations-emailfixedaddress.png)
-
 Vaihtoehtoisesti voit hankkia sähköpostiosoitteita sen osapuolen yhteystiedoista, jolle luot lähtevän asiakirjan. Jos haluat käyttää muita kuin kiinteitä sähköpostiosoitteita, valitse **Sähköpostin lähde** -kentässä tiedoston kohteen [rooli](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles). Seuraavia rooleja tuetaan:
 
 - Asiakas
@@ -92,8 +90,6 @@ Syötä **Kaavasuunnittelija**-sivun **Kaava**-kenttään asiakirjakohtainen vii
 
 Jos määritetyn roolin tilinumerot ovat yksilöllisiä koko Microsoft Dynamics 365 Finance -esiintymässä, **Sähköpostilähteen yritys** -kenttä dialogi-ikuunassa **Sähköposti vastaanottajalle** voi jäädä tyhjäksi.
 
-![Tyhjä sähköpostin lähdekentän yritys](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Voit myös joutua tilanteeseen, jossa [Yleisen osoitekirjan](../../fin-ops/organization-administration/overview-global-address-book.md) eri osapuolet on rekisteröity eri yrityksiin ([oikeushenkilöihin](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) siten, että ne kaikki käyttävät samaa tilinumeroa määritetyn roolin täyttämiseen. Tässä tapauksessa määritetyn roolin tilinumerot eivät ole yksilöiviä koko Finance-esiintymässä. Tämän vuoksi et voi eksplisiittisesti valita osapuolta vain tilinumeron perusteella. On myös määritettävä yritys, jolle osapuoli on rekisteröity määritetyn roolin täyttämiseksi. Valitse **Sido** -painike (ketjusymboli) **Sähköpostin yritys** -kentän vierestä **Sähköposti vastaanottajalle** -dialogi-ikkunassa avataksesi [Kaavasuunnittelija](general-electronic-reporting-formula-designer.md)-sivun. Voit sitten käyttää tätä sivua määrittääksesi kaavan, joka palauttaa suorituksen aikana sen yrityksen koodin, josta halutun lähteen on löydyttävä.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Suorituksen aika käytettävien sähköpostiosoitteiden tyyppi voidaan määritt
 
 > [!NOTE]
 > Jos tarkoitukset on valittu **Tarkoitus**-kentässä ja **Ensisijainen yhteyshenkilö** -asetukseksi on samanaikaisesti määritetty **Kyllä**, kaikkia vähintään yhden määritetyn ehdon täyttäviä sähköpostiviestejä käytetään suorituksen aikana.
-
-![Sähköpostin lähteen määritetilin määritys](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Määrityssähköposti
 
@@ -145,6 +139,3 @@ Seuraavassa kuvassa näkyy tässä aiheessa kuvailtu prosessi yksittäisten komp
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 - [Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

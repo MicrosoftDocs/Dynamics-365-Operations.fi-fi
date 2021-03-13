@@ -1,6 +1,6 @@
 ---
-title: Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
-description: Tässä ohjeaiheessa on tietoja Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelemisesta ja lähtevien Excel-muotoisten tiedostojen luonnista.
+title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
+description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686535"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094026"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -189,6 +189,3 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md)
 
 [Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

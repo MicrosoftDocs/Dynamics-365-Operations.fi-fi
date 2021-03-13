@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4442946"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104226"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure-tallennustilin ja avainsäilön luominen
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Sähköisen laskutuksen lisäosapalvelu ottaa vastuun kaikkien liiketoimintatietojen tallentamisesta yrityksen omistamiin Microsoft Azure -resursseihin. Sen varmistamiseksi, että palvelu toimii oikein ja että kaikki sähköisen laskutuksen lisäosaa varten tarvittavat ja sen luomat liiketoimintatiedot ovat vain lisäosan käytettävissä, on luotava kaksi keskeistä Azure-resurssia:
-
-- Azure-tallennustili (Blob-tallennus) sähköisten laskujen tallentamista varten
-- Azure-avainsäilö, johon tallennetaan tallennustilin tallennusvarmenteet ja Uniform Resource Identifier (URI)
-
-> [!NOTE]
-> Erillinen avainsäilöresurssi ja asiakkaan Blob-tallennustila on määritettävä nimenomaisesti käytettäväksi sähköisen laskutuksen lisäosan kanssa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -91,6 +80,3 @@ Tässä aiheessa suoritetaan kaksi päävaihetta:
 9. Valitse **Objekti**-valintaikkunassa objekti lisäämällä **Sähköisen laskutuksen lisäosa**.
 10. Valitse **Lisää** ja sitten **Tallenna avainsäilön muutokset**.
 11. Kopioi **Yhteenveto**-sivulla avainsäilön **DNS nimi** -arvo. Tätä arvoa käytetään palvelun RCS:ssä määrittämiseen ja sitä kutsutaan *avainsäilön URI-tunnukseksi*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

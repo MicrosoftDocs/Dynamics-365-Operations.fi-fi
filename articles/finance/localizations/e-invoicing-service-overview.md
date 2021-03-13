@@ -3,7 +3,7 @@ title: Sähköisen laskutuksen yleiskatsaus
 description: Tässä aiheessa annetaan tietoja sähköisen laskutuksen lisäosasta Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4442945"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104205"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Sähköisen laskutuksen yleiskatsaus
 
@@ -45,9 +44,9 @@ Sähköisen laskutuksen lisäosa voi auttaa seuraavien tavoitteiden saavuttamise
 
 Jos haluat käyttää sähköisen laskutuksen lisäosaa, sinun on asennettava se Microsoft Dynamics Lifecycle Servicesin (LCS) projektistasi. Noudata seuraavaksi määritysmenettelyä, jolla integrointi Financeen tai Supply Chain Managementiin otetaan käyttöön. Lisätietoja: [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Käytettävyys
+## <a name="service-availability"></a><a name="availability"></a>Palvelun käytettävyys
 
-Aluksi sähköisen laskutuksen lisäosa on valittujen asiakkaiden käytettävissä esikatseluohjelman kautta. Myöhemmin esikatselu avataan laajemmalle asiakaskunnalle. Lopuksi palvelu tulee yleisesti saataville. Koska maa-/aluekohtaisia vaatimuksia koskevat toiminnot saattavat olla rajoitettuja julkaisun eri vaiheissa, kannattaa aina tarkistaa ajantasaisin dokumentaatio, joka käsittelee tuettujen maa-/aluekohtaisten ratkaisujen kattavuutta ja laajuutta.
+Tällä hetkellä sähköisen laskutuksen lisäosa on asiakkaiden käytettävissä esiversio-ohjelman kautta, ja seuraavassa vaiheessa palvelu tulee yleisesti saataville. Koska maa-/aluekohtaisia vaatimuksia koskevat toiminnot saattavat olla rajoitettuja julkaisun eri vaiheissa, kannattaa aina tarkistaa ajantasaisin dokumentaatio, joka käsittelee tuettujen maa-/aluekohtaisten ratkaisujen kattavuutta ja laajuutta.
 
 Sähköisen laskutuksen lisäosa otetaan käyttöön seuraavilla Azuren maantieteellisillä alueilla:
 
@@ -76,7 +75,7 @@ Sähköisen laskutuksen lisäosaa voidaan käyttää skenaarioissa, joissa on lu
     - Sisäänrakennettu, helposti laajennettava ja määritettävä integrointi lisäsisältöön useissa maissa
 
     > [!NOTE]
-    > Tällä hetkellä tuetaan rajoitettua määrää suoria lähetyksiä. Lisätietoja on osassa [Käytettävyys](#availability) aiemmin tässä aiheessa. Tukea jatketaan tulevaisuudessa.
+    > Tällä hetkellä tuetaan rajoitettua määrää suoria lähetyksiä. Lisätietoja on osassa [Palvelun käytettävyys](#availability) aiemmin tässä aiheessa. Tukea jatketaan tulevaisuudessa.
 
 - Verkkopalveluiden vastausten käsittely, mukaan lukien määritettävä poikkeussanomien käsittely
 - Sähköisten allekirjoitusten tuki (esimerkiksi XMLDSig-allekirjoitusalgoritmin avulla)
@@ -104,15 +103,9 @@ Seuraavassa kuvassa näkyy, miten tieto kulkee sähköisen laskutuksen lisäosaa
 ![Sähköisen laskutuksen lisäosan tietovuo](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
-Sähköisen laskutuksen käyttöönotto ja käyttö saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten niissä esimääritetyssä muodoissa, jota integrointi valtion verkkopalveluihin edellyttää. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
+Sähköisen laskutuksen lisäosan käyttöönotto ja käyttö saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten niissä esimääritetyssä muodoissa, jota integrointi valtion verkkopalveluihin edellyttää. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-
-- [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md)
-- [Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-bra-get-started.md)
-- [Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-mex-get-started.md)
-- [Italian sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-ita-get-started.md)
-- [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Palvelun hallinta](e-invoicing-service-administration.md)
+- [Konfiguroi sähköiset laskut RCS:ssä](e-invoicing-configuration-rcs.md)
+- [Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

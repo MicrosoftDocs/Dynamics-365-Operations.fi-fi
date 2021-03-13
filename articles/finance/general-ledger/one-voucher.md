@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cada62078b71dd304e90951ab0f4c1643beaa48c
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442824"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107717"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
@@ -55,25 +54,26 @@ Yhden tositteen toiminto aiheuttaa ongelmia esimerkiksi tilityksen, arvonlisäve
 
 Voit esimerkiksi kirjata seuraavan useita rivejä sisältävän tositteen.
 
-[![Esimerkki](./media/example.png)](./media/example.png)
+[![Esimerkki monirivitositteesta](./media/example.png)](./media/example.png)
 
 Voit sitten luoda **Toimittajakohtaiset kulut** -raportin **Taloushallinnon tiedot** -työtilassa. Tässä raportissa kulutilin saldot ryhmitetään toimittajaryhmän ja sitten toimittajan mukaan. Raporttia luotaessa järjestelmä ei voi määrittää, mitkä toimittajaryhmät tai toimittajat aiheuttivat kulun 250,00. Koska tapahtuman tiedot puuttuvat, järjestelmä olettaa, että koko kulu 250,00 on tositteen ensimmäisen toimittajan aiheuttama. Tämän vuoksi Päätilin 600120 saldoon sisältyvä kulu 250,00 näytetään kyseisen toimittajaryhmän tai toimittajan kohdalla. On kuitenkin todennäköistä, että tositteen ensimmäinen toimittaja ei ole oikea toimittaja. Tämän vuoksi raportti on todennäköisesti virheellinen.
 
-[![Kulut](./media/expenses.png)](./media/expenses.png)
+[![Toimittajakohtaiset kulut -raportti](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Yksi tosite jatkossa
 
-Aiemmin mainituista ongelmista johtuen yhden tositteen toiminnallisuus on vanhentunut. Toimintoa ei poisteta käytöstä kerralla, koska jotkin toiminnalliset aukot saattavat olla riippuvaisia tästä toiminnosta. Sen sijaan käytetään seuraavaa aikataulua:
+Yksi tosite -toimintoa käytettäessä mahdollisesti ilmenevien ongelmien vuoksi tämä toiminto lopulta poistetaan. Toimintoa ei kuitenkaan poisteta käytöstä kerralla, koska jotkin toiminnalliset aukot saattavat olla riippuvaisia tästä toiminnosta. Sen sijaan käytetään seuraavaa aikataulua:
 
-- **Kevään 2018 versio** – Oletusarvoisesti toiminto poistetaan käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa käsitellyn toiminnallisen aukon.
+- **Kevään 2018 versio** – Tämä toiminto poistettiin käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon uudelleen käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa käsitellyn toiminnallisen aukon.
 
-    - Jos asiakkailla on liiketoimintaskenaario, jossa ei tarvita yhden tositteen toiminnallisuutta, toimintoa ei kannata ottaa käyttöön. Microsoft ei korjaa myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä, jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu.
-    - Lopeta yhden tositteen käyttö integrointien yhteydessä, elleivät toiminnalliset aukot edellytä toiminnon käyttöä.
+    - Jos liiketoimintaskenaariosi ei vaadi Yksi tosite -toimintoa, on suositeltavaa, että jätät toiminnon pois käytöstä. Jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu, Microsoft ei korjaa myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä.
+    - On suositeltavaa lopettaa yhden tositteen käyttö integrointien yhteydessä, ellei jokin dokumentoiduista toiminnallisista aukoista edellytä toiminnon käyttöä.
 
-- **Myöhemmät versiot** – Kaikki toiminnalliset aukot täytetään. **Kun toiminnalliset aukot on täytetty ja uudet ominaisuudet on toimitettu, kestää ainakin vuoden, ennen kuin yhden tositteen toiminto poistetaan pysyvästi käytöstä**, sillä asiakkailla ja riippumattomilla ohjelmistotoimittajilla on oltava riittävästi aikaa reagoida uuteen toimintoon. Heidän on ehkä esimerkiksi päivitettävä liiketoimintaprosessit, yksiköt ja integroinnit.
+- **Myöhemmät julkaisut** – Monet liiketoiminnan tarpeista voidaan toteuttaa vain käyttämällä yhtä tositetta. Microsoftin on varmistettava, että kaikki tunnistettuihin liiketoimintavaatimuksiin voidaan vastata järjestelmässä, kun toiminto vanhentuu. Siksi toiminta-aukkojen täyttämiseksi on ehkä lisättävä uusia toimintoja. Microsoft ei voi määrittää tiettyä ratkaisua, koska kukin toimintoaukko on erilainen, ja se on arvioitava liiketoimintavaatimusten perusteella. Joitakin toimintoaukkoja todennäköisesti korvataan ominaisuuksilla, jotka auttavat täyttämään tietyt liiketoimintavaatimukset. Muita aukkoja voidaan kuitenkin täyttää sallimalla kirjauskansion kirjaaminen samalla tavoin kuin silloin, kun käytetään yhtä tositetta, mutta järjestelmä voi tarvittaessa jäljittää yksityiskohtaisempia tietoja.
 
-> [!IMPORTANT]
-> Huomaa, että **Vain yksi tositenumero** -asetusta **ei** ole poistettu kirjauskansion nimen asetuksista. Tätä asetusta tuetaan edelleen, kun tosite sisältää vain kirjanpitotilityyppejä. Asiakkaiden on oltava huolellinen tätä asetusta käytettäessä, sillä tositetta ei kirjata, jos he käyttävät **Vain yksi tositenumero** -asetusta mutta kirjaavat useamman kuin yhden asiakkaan, toimittajan, pankin, käyttöomaisuuserän tai projektin. Asiakkaat voivat edelleen kirjata alareskontran tilityyppejä, kuten maksun yhdellä tositteella, joka sisältää **Toimittaja**/**pankki**-tilityyppejä.
+Kun kaikki toiminta-aukot on täytetty, Microsoft ilmoittaa, että toiminto vanhentuu. Vanhentuminen tulee kuitenkin voimaan aikaisintaan vuoden kuluttua ilmoituksesta. Vaikka Microsoft ei voikaan antaa täsmällistä arviota Yksi tosite -toiminnon vanhentumisesta, kestää todennäköisesti vähintään kaksi vuotta ennen vanhentumista. Microsoftin käytäntö on jättää vähintään 12 kuukautta vanhentuneesta toiminnosta ilmoittamisen ja todellisen poiston väliin, jotta asiakkaat ja riippumattomat ohjelmistotoimittajat voivat reagoida muutokseen. Organisaatioiden on ehkä esimerkiksi päivitettävä liiketoimintaprosessit, yksiköt ja integroinnit.
+
+Yksi tosite- toiminnon vanhentuminen on tärkeä muutos, josta tiedotetaan paljon. Osana tätä viestintää Microsoft päivittää tämän aiheen, julkaisee blogiviestin Microsoft Dynamics 365 Finance -blogissa, päivittää "Poistetut tai vanhentuneet ominaisuudet" -aiheen, ilmoittaa muutoksesta asianmukaisissa Microsoftin tapahtumissa ja niin edelleen.
 
 ## <a name="why-use-one-voucher"></a>Yhden tositteen käytön syitä
 
@@ -84,7 +84,7 @@ Asiakaspalautteen perusteella Microsoft on kääntänyt seuraavat skenaariot, jo
 Seuraavat skenaariot voidaan toteuttaa vain käyttämällä yhden tositteen toiminnolla. Jos organisaatiossa on jokin näistä skenaariosta, tositteessa on otettava käyttöön useiden tapahtumien kirjaaminen muuttamalla **Salli useita tapahtumia yhdessä tositteessa** -parametrin asetusta **Kirjanpitoparametrit**-sivulla. Nämä toiminnalliset aukot täytetään muilla toiminnoilla myöhemmissä versioissa.
 
 > [!Note]
-> [Kunkin seuraavan skenaarion **Salli useita tapahtumia yhdessä tositteessa** -kentän arvoksi on määritettävä Kyllä **Yleistietoja**-pikavälilehdessä **Kirjanpidon parametrit** -sivulla.]
+> [Kussakin seuraavassa skenaariossa **Salli useita tapahtumia yhdessä tositteessa** -kentän asetuksiksi on valittava Kyllä **Kirjanpidon parametrit** -sivun **Yleiset**-pikavälilehdessä.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Kirjaa yhteenvetolomakkeen toimittaja- tai asiakasmaksut pankkitilille
 
@@ -186,6 +186,3 @@ Jos myynti- tai ostoreskontran kirjanpitotiliin on tehtävä korjaus, oikaisu on
 ### <a name="the-system-allows-it"></a>Mahdollista järjestelmässä"
 
 Organisaatiot käyttävät usein yhden tositteen toiminnallisuutta vain, koska järjestelmä mahdollistaa sen käytön, vaikka toiminnallisuuden vaikutuksia ei tunneta.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

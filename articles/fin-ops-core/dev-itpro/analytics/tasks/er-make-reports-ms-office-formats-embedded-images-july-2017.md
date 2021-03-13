@@ -1,6 +1,6 @@
 ---
 title: Konfiguraatioiden suunnitteleminen raporttien luomiseksi Office-muodoissa, joissa on upotettuja kuvia
-description: Tämän ohjeaiheen vaiheissa on tietoja sähköisen raportoinnin (ER) määritysten suunnittelusta, kun tavoitteena on luoda sähköisiä Microsoft Office -asiakirjoja (Excel ja Word), jotka sisältävät upotettuja kuvia.
+description: Tässä aiheessa käsitellään määritysten suunnittelua luomaan upotettuja kuvia sisältäviä Excel- ja Word-muotoisia sähköisiä asiakirjoja.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60ed6b07851c44ceb4b8f313bc65f04b802e646
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684399"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093667"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfiguraatioiden suunnitteleminen raporttien luomiseksi Office-muodoissa, joissa on upotettuja kuvia
 
@@ -90,6 +90,3 @@ ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettely
  30. Valitse Kyllä kohdassa Salli esilaskun luonti käytöstä poistetuille pankkitileille: kenttä.  
  31. Valitse Tallenna.  
  32. Sulje sivu.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

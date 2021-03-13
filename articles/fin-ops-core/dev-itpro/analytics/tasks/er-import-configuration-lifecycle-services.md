@@ -1,6 +1,6 @@
 ---
 title: Konfiguraation tuominen Lifecycle Services -palvelusta
-description: Tässä ohjeaiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli voi tuoda uuden sähköisen raportoinnin konfiguraation version Microsoft Dynamics Lifecycle Services (LCS) -sovelluksesta.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määrityksen uuden version tuontia Microsoft Dynamics Lifecycle Servicesista (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684448"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093692"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Konfiguraation tuominen Lifecycle Services -palvelusta
 
@@ -103,6 +103,3 @@ Tässä esimerkissä valitaan sopiva ER-konfiguraatio ja tuodaan se malliyrityks
     Valitse tässä esimerkissä konfiguraation versio, jonka tila on **Jaettu**.
 
     Huomaa, että valitun tietomallin konfiguraation jaettu versio 1 on nyt myös käytettävissä.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

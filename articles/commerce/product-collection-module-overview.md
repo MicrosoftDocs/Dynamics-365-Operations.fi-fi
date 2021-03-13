@@ -3,35 +3,32 @@ title: Tuotekokoelmamoduulit
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
 author: v-chgri
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bae9ca722c2b6e776abb0e1da9694edc8afadf8
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411842"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097100"
 ---
 # <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Tuotteiden etsintätyökalu on ensisijainen työkalu, jonka avulla jälleenmyyjät voivat seurata asiakkaita sähköisen kaupankäynnin sivustossa. Tuotekokoelmamoduulien avulla jälleenmyyjät voivat luoda houkuttelevia ostoskokemuksia tarjoamalla intuitiivisen visuaalisen käyttöliittymän, jonka avulla voi nopeasti luoda tuotekokoelmia.
 
@@ -67,6 +64,10 @@ Seuraavassa taulukossa on tuotekokoelmamoduulien eri tyypit Dynamics 365 Commerc
 | Ostetaan usein yhdessä | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan liittyviä nimikkeitä, jotka ostetaan usein yhdessä tietyn tuotteen kanssa. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
 | Ihmiset pitävät myös seuraavista           | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan nimikkeitä, jotka liittyvät tiettyyn tuotteeseen. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
 | Valinnat sinulle              | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista kirjautuneen käyttäjän ostomallien analysoimiseen ja antaa mukautettuja suosituksia, jotka perustuvat näihin ostotottumuksiin. Vieraskäyttäjän luettelo on kutistettu. |
+
+## <a name="supported-modules"></a>Tuetut moduulit 
+
+Tuotekokoelmamoduuli tukee [pikanäkymämoduulia](quick-view-module.md), jonka avulla käyttäjät voivat tarkastella tuotetietoja ja lisätä nimikkeitä ostoskoriin tuotekokoelmasivulta.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Tuotekokoelmamoduulin lisääminen luokkasivulle
 
@@ -110,5 +111,4 @@ Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuot
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Pikanäkymämoduuli](quick-view-module.md)

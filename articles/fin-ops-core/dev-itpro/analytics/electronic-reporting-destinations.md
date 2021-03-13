@@ -1,9 +1,9 @@
 ---
 title: Sähköisen raportoinnin (ER) kohteet
-description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin (ER) kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
+description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687155"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097278"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -62,7 +62,7 @@ Jos määrität **Eräkäsittely**-asetuksen arvoksi **Ei**, **Intrastat-raportt
 Jos määrität **Eräkäsittely**-asetukseksi **Kyllä**, ER-muoto suoritetaan [erä](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview)-tilassa. Luodaan oikea erätyö, joka perustuu parametreihin, jotka määrität **Suorita taustalla**-välilehdellä **ER-parametrit**-valintaikkunassa.
 
 > [!NOTE]
-> Työn kuvaus aloitetaan siten, että siinä ilmoitetaan ER-muotomäärityksen suoritus. Lisäksi se sisältää suoritettavan ER-osan nimen.
+> Työn kuvauksessa ilmoitetaan ER-muotomäärityksen suoritus. Lisäksi se sisältää suoritettavan ER-osan nimen.
 
 [![ER-muodon käyttö](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -95,6 +95,8 @@ Voit sitten ottaa tiedostokohteen yksittäiset kohteet käyttöön tai poistaa n
 Tämän ominaisuuden avulla voit esimerkiksi määrittää tiedostojen kohteet tiedostokomponentille, jota käytetään lähtevän asiakirjan luomiseen Excel-muodossa. Yksi kohde ([Arkisto](er-destination-type-archive.md)) voidaan määrittää tallentamaan alkuperäinen Excel-tiedosto ER-tehtävien arkistoon ja toinen kohde ([Sähköposti](er-destination-type-email.md)) voidaan määrittää samanaikaisesti [muuntamaan](#OutputConversionToPDF) Excel-tiedosto PDF-muotoon ja lähettämään PDF-tiedosto sähköpostitse.
 
 [![Useiden kohteiden määrittäminen yksittäistä muotoelementtiä varten](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+Kun ER-muoto suoritetaan, kaikki muodon osille määritetyt kohteet suoritetaan aina. Lisäksi Finance **versiossa 10.0.17 ja sitä uudemmissa versioissa**, ER-kohteiden toimintoa on parannettu, ja sillä voi nyt määrittää erilaisia kohdejoukkoja yhdelle ER-muodolle. Tämä määritys merkitsee kunkin joukon tietylle käyttäjätoiminnolle määritetyksi. ER-ohjelmointirajapintaa on [laajennettu](er-apis-app10-0-17.md) siten, että käyttäjä suorittaa annetun toiminnon suorittamalla ER-muodon. Annettu toimintokoodi välitetään ER-kohteeseen. ER-muodon eri kohteita voidaan suorittaa annetun toimintokoodin perusteella. Lisätietoja on kohdassa [Toiminnosta riippuvaisten ER-kohteiden määrittäminen](er-action-dependent-destinations.md).
 
 ## <a name="destination-types"></a>Kohdetyypit
 
@@ -154,7 +156,7 @@ Jos tyhjennät **Lopeta käsittely virheestä** -valintaruudun **CoveringLetter*
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Tuloksen muuntaminen PDF-muotoon
 
-Voit käyttää PDF-muunnosasetuksen muuntaaksesi tuloksen Microsoft Office -muodosta (Excel/Word) PDF-muotoon.
+Voit muuntaa PDF-muunnosasetuksella tuloksen Microsoft Office (Excel tai Word) -muodosta PDF-muotoon.
 
 ### <a name="make-pdf-conversion-available"></a>Ota PDF-muunnos käyttöön
 
@@ -164,21 +166,20 @@ Ota PDF-muunnosasetus käyttöön kulloisessakin Finance-esiintymässä avaamall
 
 ### <a name="applicability"></a>Soveltuvuus
 
-PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponenttien osalta, joiden avulla luodaan tuloksia Microsoft Office Excel- tai Word-muodossa (**Excel-tiedosto**). Kun tämä asetus on käytössä, Office-muodossa luotu tulos muunnetaan automaattisesti PDF-muotoon.
+PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponenttien osalta, joiden avulla luodaan tuloksia Office (Excel tai Word) -muodossa (**Excel-tiedosto**). Kun tämä asetus on käytössä, Office-muodossa luotu tulos muunnetaan automaattisesti PDF-muotoon.
 
 ### <a name="limitations"></a>Rajoitukset
 
 > [!NOTE]
 > Tämä ominaisuus on esikatseluominaisuus, ja siihen sovelletaan ehdoissa [Microsoft Dynamics 365 -esikatselujen lisäkäyttöehdot](https://go.microsoft.com/fwlink/?linkid=2105274) esitettyjä käyttöehtoja.
 
-> [!NOTE]
-> PDF-muunnoksen asetus on käytettävissä vain pilvikäyttöönotoissa.
->
-> Tuloksena olevan PDF-tiedoston enimmäispituus on 300 sivua.
->
-> Microsoft Dynamics 365 Finance -version 10.0.9 (Huhtikuu 2020) Excel-tuloksesta luotavassa PDF-asiakirjassa tuetaan vain vaakasuuntaista asettelua. Dynamics 365 Financen version 10.0.10 (toukokuu 2020) julkaisun avulla voit [määrittää sivun suunnan](#SelectPdfPageOrientation) PDF-tiedostossa, joka tuotetaan Excelin tulosteesta samalla, kun määrität ER-kohteen.
->
-> Sellaisten tulosten muuntamisessa, jotka eivät sisällä upotettuja fontteja, käytetään vain Windows-käyttöjärjestelmän yleisiä järjestelmäfontteja.
+PDF-muunnoksen asetus on käytettävissä vain pilvikäyttöönotoissa.
+
+Tuloksena olevan PDF-tiedoston enimmäispituus on 300 sivua.
+
+Financen **versiossa 10.0.9** tuetaan tällä hetkellä vain vaakasuuntaista asettelua Excel-tuloksesta luotavassa PDF-asiakirjassa. Financen **versiossa 10.0.10 (toukokuu 2020) ja sitä myöhemmissä versioissa** voidaan [määrittää sivun suunta](#SelectPdfPageOrientation) PDF-tiedostossa, joka tuotetaan Excelin tulosteesta samalla, kun ER-kohde määritetään.
+
+Sellaisten tulosten muuntamisessa, jotka eivät sisällä upotettuja fontteja, käytetään vain Windows-käyttöjärjestelmän yleisiä järjestelmäfontteja.
 
 ### <a name="use-the-pdf-conversion-option"></a>PDF-muunnosasetuksen käyttö
 
@@ -193,11 +194,11 @@ Jos luot Excel-muodossa ER-konfiguraation ja haluat muuntaa sen PDF-muotoon, voi
 [![Sivun suunnan valitseminen PDF-muunnosta varten](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Jos haluat valita PDF-sivun suunnan, sinun on asennettava Microsoft Dynamics 365 Finance -versio 10.0.10 (toukokuu 2020) tai uudempi.
+> Jos haluat valita PDF-sivun suunnan, sinun on asennettava Financen versio 10.0.10 tai uudempi.
 >
 > Valittua sivun suuntaa käytetään kaikissa Excel-muodossa luoduissa ER-kokoonpanoissa ja muunnetaan sitten PDF-muotoon.
 >
-> Jos muunnettu PDF luodaan Word-muodon ER-konfiguraatiosta, PDF-tiedoston sivun suunta otetaan Word-asiakirjasta.
+> Jos Word-muotoinen ER-määritys muunnetaan PDF-muotoon, PDF-tiedoston sivun suunta otetaan Word-asiakirjasta.
 
 ## <a name="security-considerations"></a>Tietojen suojaamisesta
 
@@ -225,7 +226,7 @@ Nro Käytössä on tiedostonhallintajärjestelmälle määritetty ja siinä käy
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Minkä takia kohdeasetuksissa on tiedostokohde? Mitä tällä asetuksella tehdään?
 
-**Tiedosto**-kohteen avulla hallitaan valintaikkunaa. Jos otat tämän kohteen käyttöön tai jos määrityksellä ei ole määritetty lainkaan sijaintia, tulostetiedoston luonnin jälkeen avautuu avaamis- tai tallennusikkuna.
+**Tiedosto**-kohteen avulla hallitaan selaimen valintaikkunaa, kun ER-muoto suoritetaan vuorovaikutteisessa tilassa. Jos otat tämän kohteen käyttöön tai jos määrityksellä ei ole määritetty lainkaan sijaintia, tulostetiedoston luonnin jälkeen selaimessa avautuu avaamis- tai tallennusikkuna.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Saisinko esimerkin sellaiseen toimittajatiliin viittaavasta kaavasta, johon voin lähettää sähköpostia?
 
@@ -239,5 +240,4 @@ Muodon on ensin oltava käytettävissä ER-määrityksissä. Jos tämä edellyty
 
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Toiminnosta riippuvaisten ER-kohteiden määrittäminen](er-action-dependent-destinations.md)

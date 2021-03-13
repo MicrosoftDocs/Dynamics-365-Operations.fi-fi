@@ -1,6 +1,6 @@
 ---
 title: ER Luodun muodon osien yhdistäminen tietomallielementteihin (marraskuu 2016)
-description: Seuraavassa menettelyssä selitetään, miten käyttäjä, jolla on joko järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi yhdistää tietomallielementtejä sellaisen luodun sähköisen raportoinnin (ER) -konfiguraation osiin, joka määrittää maksujen liiketoimintatoimialueen sähköisen asiakirjamuodon.
+description: Tässä aiheessa käsitellään tietomallin elementtien yhdistämistä luodun sähköisen raportoinnin (ER) määrityksen osiin.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 109a6736196b6ed3d1445a9f1a70c5f2b9d5af58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 043c66cf3345678aa7750ef50323700384579299
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684328"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093770"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Luodun muodon osien yhdistäminen tietomallielementteihin (marraskuu 2016)
 
@@ -113,6 +113,3 @@ Jokainen muotoversio voidaan määrittää käytettäväksi tietystä päivämä
 1. Laajenna ISO maa-/aluekoodit -osa.
     * Kunkin muodon käyttöoikeutta voidaan rajoittaa määrittämällä maat/alueet, joissa muoto on käytettävissä. Kun tietyn muodon maiden ja alueiden luettelo on tyhjä, muotoa voi käyttää missä tahansa yrityksessä. Kun ISO-maa- ja -aluekoodeja lisätään maiden ja alueiden luetteloon, muotoa voi käyttää yrityksissä vain, jos niiden ensisijainen osoite on kyseisessä maassa tai kyseisellä alueella.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

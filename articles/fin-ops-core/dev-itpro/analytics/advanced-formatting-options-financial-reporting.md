@@ -1,7 +1,7 @@
 ---
 title: Muotoilun lisäasetukset taloushallinnon raporteissa
-description: Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa.
-author: ryansandness
+description: Tässä aiheessa käsitellään muotoilun lisätoimintoja, kuten suodattimia, rajoituksia, ei-tulostettavia rivejä ja ehdollisia lausekkeita laskutoimituksissa.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683160"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093159"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
@@ -310,6 +310,3 @@ Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus 
 Voit suunnitella raportteja käyttämällä dimensioarvoja, jotka sisältävät et-merkin (&).
 
 Voit määrittää minkä tahansa **linkin taloushallinnon dimensio** -kenttään arvon, kuten **'P & L'**. Myös puolilainausmerkit (' ') dimension arvon molemmilla puolilla tarkoittavat, että käytät literaaliarvoa, kuten esimerkiksi (&) et-merkkiä.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
