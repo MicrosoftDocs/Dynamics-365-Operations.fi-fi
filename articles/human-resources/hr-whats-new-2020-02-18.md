@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (18. helmikuuta 2020)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 18. helmikuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e087095807f587536f2dad7e65fbc8beaa88878e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128062"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (18. helmikuuta 2020)
 
@@ -43,17 +43,17 @@ Uusi **työntekijälomake** muistaa nyt hakuarvot, kun muutat näkymän asetuksi
 
 Pysyvät ja muuttuvat kompensaation hallinnan ruudut näyttävät nyt oikeat tiedot uudessa **työntekijälomakkeessa**. Koskee vain tehostettua työntekijälomakkeen esikatselutoimintoa. Voit ottaa tämän esikatselutoiminnon käyttöön **ominaisuuksien hallinnassa**. Lisätietoja on ohjeaiheessa [Toimintojen hallinta](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Joidenkin lomapyyntötietueiden tyhjä Tila-kenttä Common Data Servicessä (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Joidenkin lomapyyntötietueiden tyhjä Tila-kenttä Dataversessä (414915)
 
-Tämä muutos korjaa ongelman Common Data Servicessä, kun lomapyynnön **Tila**-kentän arvoksi on määritetty **Tarkistus**. Common Data Service ilmaisee nyt tilan.
+Tämä muutos korjaa ongelman Dataversessä, kun lomapyynnön **Tila**-kentän arvoksi on määritetty **Tarkistus**. Dataverse ilmaisee nyt tilan.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Osaamisalueaukkoanalyysi on mahdollinen vain määritetylle työlle (411390)
 
 Voit tehdä osaamisalueaukkoanalyysin mille tahansa Human Resources -sovelluksen määritetylle työlle.
 
-## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Järjestelmän valuuttaa ei synkronoida Common Data Servicestä Human Resources -sovellukseen uusissa ympäristöissä (418011)
+## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Järjestelmän valuuttaa ei synkronoida Dataversestä Human Resources -sovellukseen uusissa ympäristöissä (418011)
 
-Common Data Servicen järjestelmän valuutan voi nyt synkronoida Human Resources -sovellukseen.
+Dataversen järjestelmän valuutan voi nyt synkronoida Human Resources -sovellukseen.
 
 ## <a name="in-preview"></a>Esiversiossa
 
@@ -63,9 +63,9 @@ Common Data Servicen järjestelmän valuutan voi nyt synkronoida Human Resources
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-### <a name="updated-common-data-service-solution"></a>Päivitetty Common Data Service -ratkaisu
+### <a name="updated-dataverse-solution"></a>Päivitetty Dataverse -ratkaisu
 
-Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
+Uusi Dataverse -ratkaisu tulee pian saataville seuraavin muutoksin:
 
 | Kuvaus | Muutos |
 | ----------------------------------------- | --- |
@@ -76,7 +76,7 @@ Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 | Uudet muuttuvat kompensaatioasetusten entiteetit | **Muuttuvan kompensaatiosuunnitelman tyyppi**</br>**Muuttuva kompensaatiosuunnitelma**</br>**Hyvityssäännöt**</br>**Muuttuvan kompensaatiosuunnitelman taso** |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | **Työkalenteriyksikkö** lisätty |
 | Uusi **Palkanlaskennan toimen tiedot** -yksikkö | **Palkanlaskennan toimen tiedot** lisätty |
-| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Common Data Service -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
+| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Dataverse -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
 
 ## <a name="see-also"></a>Lisätietoja
 
@@ -84,5 +84,3 @@ Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

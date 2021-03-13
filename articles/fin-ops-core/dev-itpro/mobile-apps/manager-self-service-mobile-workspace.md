@@ -1,6 +1,6 @@
 ---
 title: Oman ryhmän mobiilityötila
-description: Tässä ohjeaiheessa on tietoja oman ryhmän mobiilityötilasta, jossa esimiehet voit tarkastella suoria alaisiaan ja laajennettua henkilökuntaa. Käyttäjät voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.
+description: Tässä ohjeaiheessa on tietoja oman ryhmän mobiilityötilasta, jossa esimiehet voit tarkastella suoria alaisiaan ja laajennettua henkilökuntaa.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79678c42545a07054af00cd408e04e9d1a42caed
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680967"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127542"
 ---
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
@@ -97,6 +97,3 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 1.  Valitse **Lähetä kehu**. 
 1. Kirjoita kehu, jonka haluat lähettää. 
 1. Valitse **Valmis**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

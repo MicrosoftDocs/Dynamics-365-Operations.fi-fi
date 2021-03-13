@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (14. toukokuuta 2020)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 14. toukokuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b8d65236d316035722451a871afabedc6ab73f7a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127846"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (14. toukokuuta 2020)
 
@@ -35,9 +35,9 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muu
 
 Ympäristömuutokset sisältyvät tämän viikon julkaisuun. Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.10 ympäristöpäivitykset (toukokuu 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Tämä versio sisältää ohjelmakorjauksia ja tallennettujen näkymien muutoksia.
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Common Data Service -valintaluetteloiden ja lomien valintaluetteloiden yhdenmukaisuuden varmistaminen (436343)
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Dataverse -valintaluetteloiden ja lomien valintaluetteloiden yhdenmukaisuuden varmistaminen (436343)
 
-Common Data Service -valintaluettelot ja lomien valintaluettelot ovat nyt yhdenmukaisia.
+Dataverse -valintaluettelot ja lomien valintaluettelot ovat nyt yhdenmukaisia.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Käyttäjät saavat määrittää lomapyyntötyönkulun pyydetyn määrän perusteella (300044)
 
@@ -75,7 +75,7 @@ Tämä muutos korjaa virheen, kun lomasuunnitelmassa on määritetty kaksi lomat
 
 Tämän muutoksen myötä Aloituspalkki piilotetaan käyttäjiltä, jotka eivät ole järjestelmänvalvojia tai tiedonhallinnan järjestelmänvalvojia. 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Common Data Servicen työntekijän osoite-entiteetti toimii eri tavalla kuin Human Resourcesin päivämäärän ja ajan voimassaolopäivät (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Dataversen työntekijän osoite-entiteetti toimii eri tavalla kuin Human Resourcesin päivämäärän ja ajan voimassaolopäivät (425071)
 
 Tämä muutos säilyttää osoitetietojen kohdistuksen tietyissä skenaarioissa osoitteen päivämäärien perusteella.
 
@@ -119,5 +119,3 @@ Voit määrittää siirrettäville saldoille siirtosäännön, johon on siirto-o
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

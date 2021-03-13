@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (12. helmikuuta 2020)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 12. helmikuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b89e022441f69825d9c9c56ecdbca2e09e461b9e
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d9d5d88d1d2bc1d6f3ff737b79e6a323e6a5c947
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128086"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (12. helmikuuta 2020)
 
@@ -35,9 +35,9 @@ Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muu
 
 Tämän viikon julkaisussa **CompFixedEmpls**- ja **HcmPersonImage**-yksiköt ovat nyt julkisia ja käytettävissä ODAta:n kautta.
 
-## <a name="delete-employment-from-common-data-service-doesnt-work-when-employment-details-arent-active-403193"></a>Työsuhteen poistaminen Common Data Servicestä ei toimi, jos työsuhteen tiedot eivät ole aktiivisia (403193)
+## <a name="delete-employment-from-dataverse-doesnt-work-when-employment-details-arent-active-403193"></a>Työsuhteen poistaminen Dataversestä ei toimi, jos työsuhteen tiedot eivät ole aktiivisia (403193)
 
-Tämä muutos mahdollistaa nyt työsuhteen poistamisen Common Data Servicen kautta, kun aktiivisia työsuhteen tietoja ei ole.
+Tämä muutos mahdollistaa nyt työsuhteen poistamisen Dataversen kautta, kun aktiivisia työsuhteen tietoja ei ole.
 
 ## <a name="course-registration-workflow-changes-status-to-complete-and-errors-after-second-approval-409749"></a>Kurssin rekisteröinnin työnkulku muuttaa tilaksi Valmis ja päättyy virheeseen sekunnin kuluttua hyväksynnästä (409749)
 
@@ -57,9 +57,9 @@ Seuraavat esikatseluominaisuudet ovat käytettävissä 3. helmikuuta 2020:
 
 Käyttöympäristön päivitys 32 on pian saatavilla. [Lue lisätietoja käyttöympäristön päivityksestä 32 tästä](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### <a name="updated-common-data-service-solution"></a>Päivitetty Common Data Service -ratkaisu
+### <a name="updated-dataverse-solution"></a>Päivitetty Dataverse -ratkaisu
 
-Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
+Uusi Dataverse -ratkaisu tulee pian saataville seuraavin muutoksin:
 
 | Kuvaus | Muutos |
 | ----------------------------------------- | --- |
@@ -70,7 +70,7 @@ Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 | Uudet muuttuvat kompensaatioasetusten entiteetit | **Muuttuvan kompensaatiosuunnitelman tyyppi**</br>**Muuttuva kompensaatiosuunnitelma**</br>**Hyvityssäännöt**</br>**Muuttuvan kompensaatiosuunnitelman taso** |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | **Työkalenteriyksikkö** lisätty |
 | Uusi **Palkanlaskennan toimen tiedot** -yksikkö | **Palkanlaskennan toimen tiedot** lisätty |
-| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Common Data Service -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
+| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Dataverse -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
 
 ## <a name="see-also"></a>Lisätietoja
 
@@ -78,5 +78,3 @@ Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

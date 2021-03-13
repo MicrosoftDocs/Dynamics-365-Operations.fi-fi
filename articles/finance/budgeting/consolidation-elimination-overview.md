@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442889"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120476"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konsolidoinnin ja eliminoinnin yhteenveto
 
@@ -60,6 +59,7 @@ Vaihtoehtoja on useita. Voit sisällyttää eliminoinnit prosessin aikana tai eh
 Ratkaisu on **Talousraportointi**-vaihtoehto, koska sen avulla tarkastella kaikkien raportointipuun määritykseen sisältyvien yritysten tapahtumatason tietoja.
 
 4.  Käytössämme on budjettisuunnittelu tai budjetin hallinta, joka on konsolidoitava.
+
 **Talousraportointi**-vaihtoehto on oikea ratkaisu minkä tahansa budjettisuunnittelun tai budjetin hallinnan tietojen konsolidointia varten.
 
 5.  Tytäryhtiömme sijaitsevat eri maissa, ja meillä on useita tilikarttoja. Mikä on paras tietojen konsolidointimenetelmä meille?
@@ -86,10 +86,10 @@ Ratkaisu on **Talousraportointi**-vaihtoehto. Organisaatiohierarkiat, jotka sis�
 
 **Vie yrityksen saldot** -vaihtoehdon avulla voidaan suorittaa vienti yhdestä esiintymästä. Tämän jälkeen tiedot voidaan konsolidoida käyttämällä toisen esiintymän **Konsolidoi tuonnin kanssa** -vaihtoehtoa.
 
+11. Voiko tehdä konsolidoinnin, kun budjetti on **LUONNOS**-tilassa? 
+            
+Et voi käsitellä tai suorittaa budjetteja konsolidointiyrityksessä. On suositeltavaa käyttää Financial Reportingia luonnostilassa olevien budjettien konsolidointiin.
 
 Lisätietoja on kohdassa [Valuutan uudelleenarvostus konsolidointiyrityksessä](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
