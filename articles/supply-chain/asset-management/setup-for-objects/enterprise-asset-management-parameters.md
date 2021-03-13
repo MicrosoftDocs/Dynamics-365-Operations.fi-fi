@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427180"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020650"
 ---
 # <a name="asset-management-parameters"></a>Resurssienhallinnan parametrit
 
@@ -34,25 +33,24 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
 > [!NOTE]
 > Jos haluat määrittää järjestelmän, joka sisältää resurssien hallinnan toimintojen testauksessa käytettävät esittelytiedot, katso lisätietoja kohdasta [Esittely-ympäristön käyttöönotto](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md).
 
-**Resurssit**-linkki
+## <a name="the-assets-tab"></a>Resurssit-välilehti
+
+**Resurssit**-välilehdessä on seuraavat asetukset:
 
 - **Oletusarvoinen toiminnallinen sijainti** on toiminnallinen vakuisijainti, joka valitaan automaattisesti resursseille, kun luot uusia resursseja.  
 - Valitse **Vakiokalenteri**-kentässä kalenteri, jota käytetään resurssin suorituskykyilmaisien laskemiseen, jos resurssille ei ole valittu resurssia.  
 - Valitse **Näytä**-kentässä vakionäkymä, joka näytetään, kun avaat **resurssinäkymän** (**Resurssien hallinta** > **Yleinen** > **Resurssit** > **Resurssinäkymä**).
 - **Oletuspyyntötyyppi** on huoltopyynnön vakiotyyppi, joka valitaan automaattisesti, kun luot uuden pyynnön.  
-- Jos haluat luoda projekteja, jotka liittyvät resursseihin, projektin suhteet, kuten **Pääprojekti**, **Projektihierarkia** ja asetus **Luo projekteja automaattisesti** määritetään **Resurssien hallinnan parametrit** -osassa.  
-- **Työtilauksen projektin peite** -kentässä määritetään työtilauksille ja aliresursseille sallittujen aliprojektien määrä. Työtilauksen peitteen avulla määritetään, kuinka monta työtilausta voidaan luoda resurssille ja miten sitä käytetään liittyvässä työtilaustyön projektissa. Työtilauksen peite määritetään **Liittyvän työtilauksen peite** -kentässä kohdassa **Resurssien hallinnan parametrit** (**Resurssien hallinta** > **Asetukset** > **Resurssien hallinnan parametrit** > **Työtilaukset**).  
-    >[!NOTE]
-    >Liittyvän työtilauksen peitteen muoto on useita hajautusmerkkejä (#) sen mukaan, kuinka paljon työtilauksia oletat luovasi resurssille. Esimerkki: ## sallii enintään 99 aliprojektin luonnin.  
 - Työtyyppien ennusteet tallennetaan **Ennusteprojekti**-kentässä valittuun projektiin. Jokaiselle työtyypille luodaan automaattisesti uusi aktiviteetti ennusteprojektiin. Työtyypin ennusteet tallennetaan ennusteprojektiin.  
-- Valitse **Malli**-kentässä projektityypissä ja työtilausennusteissa käytettävä ennustemalli.  
+- Valitse **Malli**-kentässä projektityypissä ja työtilausennusteissa käytettävä ennustemalli.
 
+## <a name="the-work-orders-tab"></a>Työtilaukset-välilehti
 
-**Työtilaukset**-linkki
+**Työtilaukset**-välilehdessä on seuraavat asetukset:
 
 - **Työtilauksen oletustyyppi** määrittää vakioasetukset työtilausta luotaessa.  
 - **Ennaltaehkäisevän työtilauksen tyyppi** määrittää työtilaustyypin, jota käytetään luotaessa työtilauksia ylläpitosuunnitelmista. Jos tämä kenttä jätetään tyhjäksi, työtilauksen tyypiksi käytetään **Työtilauksen oletustyyppi** -kenttän arvoa.  
-- **Liittyvän työtilauksen peite** -kenttään määritetään työtilausten enimmäismäärä, joka voidaan liittää työtilaukseen. Esimerkki: ## sallii enintään 99 liittyvää työtilausta. Jos määrität peitteen tässä kuvatulla tavalla, siihen liittyvät työtilaukset numeroidaan sen [työtilauksen tunnukselle, johon työtilaus liittyy] -01, -02, -03 ja niin edelleen. Jos tähän kenttään ei määritetä peitettä, liittyvä työtilaus saa seuraavan peräkkäisen työtilauksen tunnuksen.  
+- **Liittyvän työtilauksen peite** -kenttään määritetään työtilausten enimmäismäärä, joka voidaan liittää työtilaukseen. Esimerkki: ## sallii enintään 99 liittyvää työtilausta. Jos määrität peitettä tässä kuvatulla tavalla, siihen liittyvät työtilaukset numeroidaan [työtilauksen tunnus työtilaukselle, johon työtilaus liittyy]-01, -02, -03 ja niin edelleen. Jos tähän kenttään ei määritetä peitettä, liittyvä työtilaus saa seuraavan peräkkäisen työtilauksen tunnuksen.  
 - Valitse **Kyllä** **Kopioi viat** -kohdassa, jos haluat kopioida työtilauksiin rekisteröidyt viat automaattisesti liittyviin ylläpitopyyntöihin. 
 - **Taso**-kentässä määritetään toiminnallinen sijaintitaso, joka lisätään työtilaukseen automaattisesti, jos kaikki liittyvät työtilaustyöt viittaavat samaan toiminnalliseen sijaintiin. Jos työtilauksen työt eivät kaikki liity määritettyyn tasoon samassa toiminnallisessa sijainnissa, työtilauksen **Toiminnallinen sijainti** -kenttä jätetään tyhjäksi. Jos lisäät tähän kenttään esimerkiksi numeron 1, käytetään toiminnallisen sijainnin rakenteen ylintä tasoa. Jos lisäät tähän kenttään numeron "0", et ole määrittänyt tiettyä toiminnallista sijaintitasoa, vain, että työtilauksen kaikkien työtilaustöiden on oltava yhteydessä samaan toiminnalliseen sijaintiin, jolle kyseinen toiminnallinen sijainti lisätään työtilaukseen.  
 - Työtilauksen kulutuksen kirjaamisen yhteydessä käytettävät kirjauskansiot voidaan valita **Yleiset**-pikavälilehden **Tunti**-, **Nimike**- ja **Kulu**-kentissä.  
@@ -67,8 +65,9 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
     - Ylläpitokierrosten määritykset  
 - **Luokka**-pikavälilehdessä voidaan määrittää työtilausten kulutukseen liittyvät oletusluokat.  
 
+## <a name="the-work-order-scheduling-tab"></a>Työtilausten ajoitus -välilehti
 
-**Työtilausten ajoitus** -linkki
+**Työtilausten ajoitus** -välilehden **Yleiset**-pikavälilehdessä on seuraavat asetukset:
 
 - **Ajoituksen aikaraja** määrittää jakson päivinä (laskettu työtilauksen odotetusta alkamispäivämäärästä), jonka aikana työtilauksen työt suunnitellaan.  
 - **Pääsuunnitelma** liittyy **Organisaation hallinto** -moduulin resursseihin. Jos valitset pääsuunnitelman tässä kentässä, voit tarkastella työtilauksiin liittyviä kapasiteettivarauksia kohdassa **Kapasiteettivaraukset** (**Organisaation hallinto** > **Resurssit** > **Resurssit** > valitse resurssi > **Resurssi**-välilehti > **Kapasiteettivaraukset**-painike). Jos jätät tämän kentän tyhjäksi, voit tarkastella työtilauksiin liittyviä kapasiteettikuormituksia kohdassa **Kapasiteetin kuormitus** (**Organisaation hallinto** \> **Resurssit** \> **Resurssit** \> valitse resurssi \> **Resurssi**-välilehti \> **Kapasiteetin kuormitus** -painike).  
@@ -100,13 +99,10 @@ Seuraavassa luettelomerkkiluettelossa olevat kentät liittyvät laskettuihin luo
   - Olettaen, että ajoitettavassa työtilauksessa ei ole valittu vastuullista työntekijää tai vastuullista työntekijäryhmää, ja lisätään ja vähennetään esimerkkien luokituksen pistearvot **Ensisijainen työntekijä**-, **Ensisijainen työntekijäryhmä**-, **Resurrsin sijainti**- ja **Alkamispäivämäärä**-kentissä, saat yhteensä summan 3 010,00. Tämä tarkoittaa korkeaa pistemäärää työntekijälle, joka on jo valittu ensisijaiseksi työntekijäksi, sekä kuuluu työtilauksen ensisijaiseen työntekijäryhmään, ja työntekijä myös sijaitsee samassa laitoksessa kuin resurssi, jolle työ on aikataulutettava. Tämä tarkoittaa, että on hyvin mahdollista, että kyseinen työntekijä valitaan työn suorittamiseen työtilauksen ajoituksessa.  
   - Jos arvo "0,00" lisätään johonkin edellä mainituista kahdeksasta kentästä, luokituspisteet eivät ole käytössä työtilausten ajoituksessa.  
 
-**Tiedostotyypit**-linkki
+## <a name="the-document-types-tab"></a>Asiakirjatyypit-välilehti
 
 Valitse tiedostotyypit, joita voidaan käyttää työtilausraporttiin liittyvien liitteiden tulostamiseen. Tämä tehdään valitsemalla tiedostotyyppi **Saatavilla**-osassa ja valitsemalla sitten ![eteenpäin osoittava nuoli](media/15-setup-for-objects.png). Jos haluat poistaa valitun tiedostotyypin, valitse tiedostotyyppi **Valittu**-osassa ja valitse sitten ![takaisin osoittava nuoli](media/16-setup-for-objects.png).
 
-**Numerosarjat**-linkki
+## <a name="the-number-sequences-tab"></a>Numerojärjestykset-välilehti
 
 Valitse tässä osassa tarvittavat numerosarjat. Resursseille on kaksi numerosarjaa: yksi manuaalisesti luoduille resursseille ja toinen odottavien resurssien kautta luoduille resursseille.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
