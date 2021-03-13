@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427458"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014480"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
 
@@ -50,7 +49,12 @@ Kun työ suoritetaan, sen toteutuskoko on 100. Toisin sanoen, se yrittää sitou
 
 ## <a name="possible-user-impact"></a>Mahdollinen käyttäjän vaikutus
 
-Käyttäjät saattavat vaikuttaa, jos käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki tietyn tason tietueet (kuten rekisterikilven tason). Tässä tapauksessa toiminto, jonka mukaan varasto on aiemmin käytettävissä käyttöoikeuskilvessä, ei ehkä toimi odotetulla tavalla, koska tarvittavat käytettävissä olevat tiedot eivät ole enää saatavilla. (Tämä toiminto tarkistaa ehdon **Määrä \<\> 0** **dimension näyttöasetuksissa**, kun käyttäjät näkevät käytettävissä olevan tiedon.) Kuitenkin puhdistustyön tarjoaman suorituskyvyn parantamisen pitäisi korvata tämä pieni toiminnallisuuden menetys..
+Käyttäjät saattavat vaikuttaa, jos käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki tietyn tason tietueet (kuten rekisterikilven tason). Tässä tapauksessa toiminto, jonka mukaan varasto oli aiemmin käytettävissä rekisterikilvessä, ei ehkä toimi odotetulla tavalla, koska tarvittavat käytettävissä olevat tiedot eivät ole enää saatavilla. Näin voi tapahtua esimerkiksi seuraavissa tilanteissa:
+
+- Kun käyttäjä poistaa **Varastoluettelo**-kohdassa ehdon **Määrä \<\> 0** valinnan tai valitsee ehdon **Suljetut tapahtumat** **Dimensionäyttö**-asetuksia.
+- Kun käyttäjä määrittää menneiden kausien **Varastotilanne/varastodimensio** -raportissa **Alkupäivämäärä**-parametrin.
+
+Puhdistustyö kuitenkin parantaa suorituskykyä, minkä pitäisi korvata nämä pienet toimintojen heikennykset.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Parhaan suoritusajan määrittäminen käyttöön
 
@@ -58,6 +62,3 @@ Oletusarvoisesti **Paras suoritusaika** asetus ei ole käytettävissä. Jos halu
 
 - **Moduuli:** *Varastonhallinta*
 - **Ominaisuuden nimi:** *Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyöajan maksimisuoritusaika*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

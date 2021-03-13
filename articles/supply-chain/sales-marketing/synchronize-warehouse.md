@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 28445592d7a2a8964b1642ae52cff08be6feabbe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0c0c1bafb5b36bb9ddc00061e0040a199c8c033d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529503"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010844"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Varastojen synkronointi Supply Chain Managementista Field Serviceen
 
@@ -45,20 +44,20 @@ Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoitaessa
 **Tietojen integrointiprojektin tehtävä**
 - Varasto
 
-## <a name="entity-set"></a>Yksikköjoukko
+## <a name="table-set"></a>Taulujoukko
 | Field Service    | Toimitusketjun hallinta                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Varastot                             |
 
-## <a name="entity-flow"></a>Yksikön työnkulku
-Supply Chain Managementissa luodut ja ylläpidetyt fyysiset varastot voidaan synkronoida Field Serviceen Common Data Servicen (CDS) tietojen integrointiprojektilla. Field Serviceen synkronoitavia varastoja voidaan ohjata projektin kyselyn ja suodatuksen lisäasetuksilla. Supply Chain Managementista synkronoitavat fyysiset varastot luodaan Field Servicessa siten, että **Ylläpidetään ulkoisesti** -kentän asetukseksi määritetään **Kyllä**. Lisäksi tietue on Vain luku -muotoinen.
+## <a name="table-flow"></a>Taulutyönkulku
+Supply Chain Managementissa luodut ja ylläpidetyt fyysiset varastot voidaan synkronoida Field Serviceen Microsoft Dataversen tietojen integrointiprojektilla. Field Serviceen synkronoitavia varastoja voidaan ohjata projektin kyselyn ja suodatuksen lisäasetuksilla. Supply Chain Managementista synkronoitavat fyysiset varastot luodaan Field Servicessa siten, että **Ylläpidetään ulkoisesti** -sarakkeen asetukseksi määritetään **Kyllä**. Lisäksi tietue on vain luku -muotoinen.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM -ratkaisu
-Field Servicen ja Supply Chain Managementin integraation tukemiseen tarvitaan Field Service CRM -ratkaisun lisätoiminto. **Ylläpidetään ulkoisesti** -kenttä on lisätty ratkaisussa **Varasto (msdyn_warehouses)** -yksikköön. Tämä kenttä auttaa määrittämään, käsitelläänkö varastoa Supply Chain Managementista vai onko se vain Field Servicessa. Tässä kentässä on seuraavat asetukset:
+Field Servicen ja Supply Chain Managementin integraation tukemiseen tarvitaan Field Service CRM -ratkaisun lisätoiminto. **Ylläpidetään ulkoisesti** -sarakeon lisätty ratkaisussa **Varasto (msdyn_warehouses)** -taulukkoon. Tämä sarake auttaa määrittämään, käsitelläänkö varastoa Supply Chain Managementista vai onko se vain Field Servicessa. Tässä sarakkeessa on seuraavat asetukset:
 - **Kyllä** – Varasto on peräisin Supply Chain Managementista eikä sitä voi muokata Salesissa.
 - **Ei** – varasto annettiin suoraan Field Servicessä, jossa sitä myös ylläpidetään.
 
-**Ylläpidetään ulkoisesti** -kenttä auttaa hallitsemaan varaston tasojen, oikaisujen, siirtojen ja käytön synkronointia työtilauksissa. Vain varastoja, joiden **Ylläpidetään ulkoisesti** -asetuksena on **Kyllä**, voidaan käyttää suoraan synkronointiin toisessa järjestelmässä olevaan samaan varastoon. 
+**Ylläpidetään ulkoisesti** -sarake auttaa hallitsemaan varaston tasojen, oikaisujen, siirtojen ja käytön synkronointia työtilauksissa. Vain varastoja, joiden **Ylläpidetään ulkoisesti** -asetuksena on **Kyllä**, voidaan käyttää suoraan synkronointiin toisessa järjestelmässä olevaan samaan varastoon. 
 
 > [!NOTE]
 > Field Servicessä voi luoda useita varastoja (kun **Ylläpidetään ulkoisesti** = Ei) ja ne voi sitten yhdistää yhteen varastoon kyselyn ja suodatuksen lisäasetustoiminnolla. Tämä menettelyä käytetään tilanteissa, joissa Field Servicella halutaan hallita tarkkaa varastotasoa ja joissa vain päivitykset lähetetään Supply Chain Managementiin. Tässä tapauksessa Field Service ei saa varastotasopäivityksiä Supply Chain Managementista. Lisätietoja on kohdissa [Field Servicen varasto-oikaisujen synkronointi Finance and Operationsiin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) ja [Field Servicen työtilausten synkronointi projekteihin Finance and Operationsissa linkitettyihin myyntitilauksiin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
@@ -81,6 +80,3 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Varastot (Supply Chain Managementista Field Serviceen): Varasto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/Warehouse1.png)](./media/Warehouse1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

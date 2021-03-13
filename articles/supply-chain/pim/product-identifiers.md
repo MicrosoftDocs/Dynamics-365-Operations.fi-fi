@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529183"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011363"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset
 
@@ -44,7 +43,7 @@ Tuotenumeroa ei usein ole luotu alun perin Dynamics 365 Supply Chain Management 
 
 Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Hyvässä tuotetunnuksessa on enintään 15 merkkiä. Merkkejä tulisi olla alle 10 ja luokittelevia merkkejä enintään viisi. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
 
-Kun käytät Common Data Servicea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Common Data Servicessa. Tuotevariantit synkronoidaan Common Data Servicen kanssa erillisinä tuotteina.
+Kun käytät Microsoft Dataversea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Microsoft Dataversessa. Tuotevariantit synkronoidaan Dataverseen erillisinä tuotteina.
 
 ## <a name="item-number-and-product-dimensions"></a>Nimikenumero ja tuotedimensiot
 
@@ -167,7 +166,7 @@ Seuraavassa taulukossa on yhteenveto tuonnin ja manuaalisen luonnin tulokset, ku
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Tuoteyksikön tunniste (vie kaikki tuotetunnisteet)
 
-Tuoteyksikön tunnistemalli luotiin, jotta CDS:n versio 1.0 voidaan valmistella kaikilla tuotteeseen viittaavilla tunnisteilla. Tehtävää on yksinkertaistettu keräämällä kaikki tunnisteet yhteen yleiseen tunnistetauluun, jolloin ne voidaan vietä yhtenä mallina. Huomaa, että tämä CDS-versio ei käytä tuotetunnusten mallia. **Tuoteyksikön Common Data Service -tunnisteyksikkö** -yksiköllä ja tällä prosessilla onkin vain vähän käytännön merkitystä ja se tulee todennäköisesti muuttumaan myöhemmin.
+Tuoteyksikön tunnistemalli luotiin, jotta Dataversen versio 1.0 voidaan valmistella kaikilla tuotteeseen viittaavilla tunnisteilla. Tehtävää on yksinkertaistettu keräämällä kaikki tunnisteet yhteen yleiseen tunnistetauluun, jolloin ne voidaan vietä yhtenä mallina. Huomaa, että tämä Dataversen versio ei käytä tuotetunnusten mallia. **Tuoteyksikön Common Data Service -tunnisteyksikkö** -yksiköllä ja tällä prosessilla onkin vain vähän käytännön merkitystä ja se tulee todennäköisesti muuttumaan myöhemmin.
 
 Tuotetunnistetaulukko on yleinen taulukko, jonka tiedot täytetään kaikista pääyrityksen viitetaulukoista toistuvana erätyönä. Valitse yleisten päätietojen vaikutusalueen määritelmäksi yritys ja tuoteluokkahierarkia. Yleisen tuotetunnuksen taulun luonti on rajoitettu tuotteisiin, jotka on vapautettu valitulle yritykselle ja tuotteisiin, jotka ovat **Common data service** -roolin tuotehierarkian jäseniä tuoteluokkahierarkiassa.
 
@@ -175,7 +174,7 @@ Tämä prosessi olettaa, että tuotteen päätietoja ylläpidetään ensisijaise
 
 Määritä ympäristö näiden ohjeiden avulla.
 
-1. Valitse CDS:n luokkahierarkia. Jos **Luokkahierarkian rooliliitokset** -sivulla ei ole liitetty hierarkiaa **Common data service** -rooliin, sinun on luotava uusi liitos. Valitse **Common data service** -rooli ja liitä sitten CDS-palveluun synkronoitavaa tuotevalikoimaa edustava luokkahierarkia.
+1. Valitse Dataversen luokkahierarkia. Jos **Luokkahierarkian rooliliitokset** -sivulla ei ole liitetty hierarkiaa **Common data service** -rooliin, sinun on luotava uusi liitos. Valitse **Common data service** -rooli ja liitä sitten Dataverseen synkronoitavaa tuotevalikoimaa edustava luokkahierarkia.
 2. Valitse yleisen tuotteen päätietojen yritys. Valitse **Tuotetietojen hallintaparametrit** -sivun **Tuotemääritteet**-välilehdessä pääyritys, jossa tuotetta ja nimiketunnuksia pääasiassa ylläpidetään.
 3. Määritä vietävät tunnisteen koodityypit ja koodit. Siirry kohtaan **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Tuotteen tunnistekoodit**. Voit muodostaa tunnistekoodityyppejä valitsemalla **Luo koodit**. Valitun yrityksen tunnisteen jokaiselle tyypille luodaan merkintä, jonka tyyppi on Koodi.
 
@@ -190,6 +189,3 @@ Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-,
 ## <a name="related-topic"></a>Liittyvä aihe
 
 [Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

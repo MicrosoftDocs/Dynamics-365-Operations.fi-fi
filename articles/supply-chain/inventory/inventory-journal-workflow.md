@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426831"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011669"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulut
 
@@ -31,6 +30,13 @@ Tässä ohjeaiheessa kerrotaan, miten varastokirjauskansion hyväksyntätyönkul
 
 > [!NOTE]
 > Varastokirjauskansion hyväksymistyönkulkuja käytetään vain varastonhallintamoduulin avulla tallennettuihin tapahtumiin. Ne eivät toimi varastonhallintamoduulista käynnistettyjen varastokirjauskansioiden kanssa.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Varastokirjauskansion hyväksyntätyönkulut -toiminnon ottaminen käyttöön
+
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Varastonhallinta*
+- **Toiminnon nimi:** *Varastokirjauskansion hyväksyntätyönkulku*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulun luominen
 
@@ -112,6 +118,3 @@ Voit tarkastella kirjauskansion työnkulkuhistoriaa seuraavasti:
 1. Laajenna siirtymisruudussa kohta **Varastonhallinta \> Kirjauskansioviennit \> Nimikkeet** ja valitse sitten varastokirjauskansion tyyppi.
 1. Avaa asiaankuuluva kirjauskansio.
 1. Valitse **Työnkulku**-painike toimintoruudussa ja avaa avattava valintaikkuna. Valitse **Työnkulkuhistoria**. Lisätietoja on kohdassa [Työnkulkuhistorian tarkasteleminen](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
