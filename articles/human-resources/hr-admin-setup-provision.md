@@ -2,7 +2,7 @@
 title: Valmistele Human Resources
 description: Tässä artikkelissa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1a57180c60be4b4686c274aecbf86f0bc6c8b2fb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527787"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112311"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -32,6 +32,23 @@ ms.locfileid: "4527787"
 Tässä artikkelissa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. Artikkelissa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Human Resourcesin palvelusopimuksen, etkä pysty suorittamaan tämän artikkelin vaiheita, ota yhteys tukeen.
 
 Aluksi yleisen järjestelmänvalvojan tulee kirjautua [Microsoft Dynamics Lifecycle Servicesiin](https://lcs.dynamics.com) (LCS) ja luoda uusi Human Resources -projekti. Jos Human Resourcesin käyttämistä estävä ongelma ei liity käyttöoikeuteen, tuen tai Dynamics-palvelun kehityspalvelun edustajien apua ei tarvita.
+
+## <a name="plan-human-resources-environments"></a>Human Resources -ympäristöjen suunnitteleminen
+
+Ennen ensimmäisen Human Resources -ympäristön luontia sinun tulee suunnitella huolellisesti projektin ympäristötarpeet. Human Resourcesin perustilaus sisältää kaksi ympäristöä: tuotantoympäristön ja eristysympäristön. Projektin monimutkaisuuden mukaan projektitoimintojen tueksi voi olla tarpeen ostaa ylimääräisiä eristysympäristöjä. 
+
+Muihin ympäristöihin liittyen huomioon otettavia seikkoja ovat esimerkiksi seuraavat:
+
+- **Tietojen siirto**: Sinun on ehkä harkittava lisäympäristöä tietojen siirtoa varten, jotta eristysympäristöä voidaan käyttää testaustarkoituksiin koko projektin ajan. Lisäympäristön ansiosta tietojen siirtotoiminnot voivat jatkua, kun testaus- ja konfigurointitoiminnot tapahtuvat samanaikaisesti toisessa ympäristössä.
+- **Integrointi**: On ehkä otettava huomioon lisäympäristö integrointien konfiguroinnissa ja testaamisessa. Tällaisia integrointeja voivat olla esimerkiksi Ceridian Dayforce- tai LinkedIn Talent Hub -integroinnit, tai mukautetut integroinnit, kuten palkanlaskenta-, hakijaseuranta- ja etujärjestelmät ja -toimittajat.
+- **Koulutus**: Tarvitset ehkä erillisen ympäristön, jossa on käytössä koulutustietojoukko, jotta työntekijät voidaan kouluttaa käyttämään uutta järjestelmää. 
+- **Monivaiheinen projekti**: Saatat tarvita lisäympäristön, joka tukee konfigurointeja, tietojen siirtoa, testausta tai muita projektin vaiheen tehtäviä, jotka on suunniteltu projektin ensimmäisen julkaisun jälkeen.
+
+ > [!IMPORTANT]
+ > On suositeltavaa käyttää tuotantoympäristöä koko projektin ajan GOLD-konfiguraatioympäristönä. Tämä on tärkeää, koska et voi kopioida eristysympäristöä tuotantoympäristöön. Kun siis julkaiset ratkaisun, GOLD-ympäristösi on tuotantoympäristösi, ja sinun tulee suorittaa käyttöönotto tässä ympäristössä.</br></br>
+ > On suositeltavaa käyttää eristysympäristöä tai muita ympäristöjä, jotta voit suorittaa käyttönoton harjoituksen ennen julkaisua. Voit tehdä tämän päivittämällä tuotantoympäristön GOLD-konfiguraatiolla eristysympäristöön.</br></br>
+ > On suositeltavaa säilyttää yksityiskohtainen käyttöönoton tarkistusluettelo, joka sisältää kaikki tietopaketit, joita tarvitaan lopullisten tietojen siirtämiseen tuotantoympäristöön siirtymisprosessin aikana.</br></br>
+ > On myös suositeltavaa käyttää eristysympäristöä koko projektin ajan TEST-ympäristönä. Jos tarvitset lisää ympäristöjä, organisaatiosi voi ostaa niitä lisäkustannuksilla.</br></br>
 
 ## <a name="create-an-lcs-project"></a>LCS-projektin luominen
 
@@ -88,7 +105,7 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
 
 2. Yksittäinen Human Resources -ympäristö yhdistetään yksittäiseen Power Apps-ympäristöön.
 
-3. Power Apps-ympäristö sisältää Human Resources -sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Common Data Service -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Human Resources -ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto** ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
+3. Power Apps-ympäristö sisältää Human Resources -sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Dataverse -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Human Resources -ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto** ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
 
 4. Tietojen integrointi- ja testausstrategiat kannattaa ottaa huomioon, esimerkiksi Sandbox, hyväksyntätestaus ja tuotanto. On suositeltavaa pohtia, mitä vaikutuksia käyttöönotolla on, koska on hankala muuttaa Power Apps-ympäristöön yhdistettyä Human Resources -ympäristöä.
 
@@ -108,6 +125,3 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
 ## <a name="grant-access-to-the-environment"></a>Ympäristön käyttöoikeuksien myöntäminen
 
 Oletusarvoisesti vain ympäristön luonut yleinen järjestelmänvalvoja voi käyttää sitä. Käyttöoikeus on myönnettävä sovelluksen muille käyttäjille erikseen. Sinun on lisättävä käyttäjiä ja määritettävä heille sopivat roolit henkilöstöhallintoympäristössä. Human Resourcesin käyttöönoton tehneen yleisen järjestelmänvalvojan on käynnistettävä sekä Attract että Onboard alustuksen suorittamiseksi ja muiden vuokraajakäyttäjien pääsyn sallimiseksi. Kunnes näin tapahtuu, muut käyttäjät eivät voi käyttää Attractia ja Onboardia, vaan ne näyttävät käyttöoikeusvirheitä. Lisätietoja on kohdassa [Uusien käyttäjien luonti](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) ja [Käyttäjien liittäminen käyttöoikeusrooleihin](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

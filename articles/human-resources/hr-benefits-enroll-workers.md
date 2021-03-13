@@ -2,7 +2,7 @@
 title: Rekisteröi etuja työntekijöille ja poista niitä
 description: Tässä menetelmässä käsitellään, miten yksittäiselle työtekijällä voidaan rekisteröidä vähintään yksi etu ja miten etu voidaan rekisteröidä usealle työntekijälle.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 36fd724ff27cbb646f3f8a35ca1b30dc86a5afe4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 13e32c9bc77470d6b8e157e7a7805d3d72850478
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418246"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112338"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Rekisteröi etuja työntekijöille ja poista niitä
 
@@ -58,6 +58,3 @@ Tässä menetelmässä käsitellään, miten yksittäiselle työtekijällä void
 14. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 15. Voit tarkastella tällä sivulla, kenelle työntekijöille etu on rekisteröity ja kenelle ei.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

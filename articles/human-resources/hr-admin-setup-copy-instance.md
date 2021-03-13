@@ -2,7 +2,7 @@
 title: Kopioi esiintymä
 description: Microsoft Dynamics 365 Human Resources -tietokannan voi kopioida eristysympäristöön Microsoft Dynamics Lifecycle Servicesin (LCS) avulla.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527834"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112363"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
@@ -41,7 +41,7 @@ Esiintymää kopioitaessa kannattaa muistaa seuraavat vinkit:
 
 - Kun kopioit Human Resourcesin tietokannan, et kopioi elementtejä (sovelluksia tai tietoja), jotka sisältyvät Microsoft Power Apps -ympäristöön. Lisätietoja elementtien kopioinnista Power Apps-ympäristössä on kohdassa [Ympäristön kopioiminen](https://docs.microsoft.com/power-platform/admin/copy-environment). Korvattavan Power Apps-ympäristön on oltava eristysympäristö. Sinun on oltava yleinen vuokraajan järjestelmänvalvoja, jotta voit muuttaa Power Apps-tuotantoympäristön eristysympäristöksi. Lisä tietoja Power Apps-ympäristön muuttamisesta on kohdassa [Esiintymän vaihtaminen](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Jos kopioit esiintymään eristysympäristöön ja haluat integroida eristysympäristön Common Data Servicen kanssa, mukautetut kentät on otettava uudelleen Common Data Service -entiteeteissä. Lisätietoja on kohdassa [Mukautettujen kenttien käyttäminen Common Data Servicessä](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Jos kopioit esiintymään eristysympäristöön ja haluat integroida eristysympäristön Dataversen kanssa, mukautetut kentät on otettava uudelleen Dataverse-taulukoissa. Lisätietoja on kohdassa [Mukautettujen kenttien käyttäminen Dataversessä](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Human Resources -tietokannan kopioinnin vaikutukset
 
@@ -72,7 +72,7 @@ Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sit
 
 4. Valitse korvattava esiintymä **Kopioi esiintymä** -tehtäväruudusta ja valitse sitten **Kopioi**. Odota, että **Kopioi tila** -kentän arvoksi päivittyy **Valmis**.
 
-   ![[Valitse korvattava esiintymä](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Valitse esiintymä, joka korvataan](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Valitse **Power Platform** ja kirjaudu Microsoft Power Platform -hallintakeskukseen.
 
@@ -80,7 +80,7 @@ Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sit
 
 6. Valitse kopioitava Power Apps-ympäristö ja sitten **Kopioi**.
 
-7. Kun kopiointiprosessi on valmis, kirjaudu kohde-esiintymään ja ota Common Data Service -integrointi käyttöön. Lisätietoja ja -ohjeita on kohdassa [Common Data Service -integroinnin määrittäminen](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Kun kopiointiprosessi on valmis, kirjaudu kohde-esiintymään ja ota Dataverse -integrointi käyttöön. Lisätietoja ja -ohjeita on kohdassa [Dataverse -integroinnin määrittäminen](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Tietoelementit ja tilat
 
@@ -122,11 +122,11 @@ Kaikki eristetyn kohdeympäristön käyttäjät, myös järjestelmänvalvojat, k
 
 Kaikki muut kuin järjestelmänvalvojakäyttäjät poistetaan käytöstä eristetyssä kohdeympäristössä, jotta estetään ei-toivotut kirjautumiset siihen. Järjestelmänvalvojat voivat tarvittaessa ottaa käyttäjiä uudelleen käyttöön.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Mukautettujen kenttien käyttäminen Common Data Servicessä
+## <a name="apply-custom-fields-to-dataverse"></a>Mukautettujen kenttien käyttäminen Dataversessä
 
-Jos kopioit esiintymään eristysympäristöön ja haluat integroida eristysympäristön Common Data Servicen kanssa, mukautetut kentät on otettava uudelleen Common Data Service -entiteeteissä.
+Jos kopioit esiintymään eristysympäristöön ja haluat integroida eristysympäristön Dataversen kanssa, mukautetut kentät on otettava uudelleen Dataverse-taulukoissa.
 
-Tee seuraavat jokaisen Common Data Servicessä näkyvän mukautetun kentän kohdalla:
+Tee seuraavat jokaisen Dataverse-taulukoissa näkyvän mukautetun kentän kohdalla:
 
 1. Siirry mukautettuun kenttään ja valitse **Muokkaa**.
 
@@ -140,7 +140,7 @@ Tee seuraavat jokaisen Common Data Servicessä näkyvän mukautetun kentän kohd
 
 6. Valitse **Ota muutokset käyttöön** uudelleen.
 
-Valinnan poistamisprosessi, muutosten käyttöönottaminen, uudelleen valitseminen ja muutosten ottaminen uudelleen käyttöön saa rakenteen päivittämään Common Data Servicen sisällyttämään mukautetut kentät.
+Valinnan poistamisprosessi, muutosten käyttöönottaminen, uudelleen valitseminen ja muutosten ottaminen uudelleen käyttöön saa rakenteen päivittämään Dataversen sisällyttämään mukautetut kentät.
 
 Lisätietoja mukautetuista kentistä on kohdassa [Mukautettujen kenttien luonti ja käyttö](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ Lisätietoja mukautetuista kentistä on kohdassa [Mukautettujen kenttien luonti 
 [Poista esiintymä](hr-admin-setup-remove-instance.md)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 74a87ddb4ed14042dd4e716ad64bc844a800a0a0
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527431"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112433"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (16. syyskuuta 2020)
 
@@ -110,9 +110,9 @@ Tämä julkaisu sisältää lisää kalenterivaihtoehtoja loma- ja poissaolokale
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Common Data Serviceen sisältyvät tarkistusluettelokohdat
+### <a name="checklist-entities-included-in-dataverse"></a>Dataverseen sisältyvät tarkistusluettelokohdat
 
-Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Common Data Servicessä.
+Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Dataversessä.
 
 ### <a name="benefits-management-reason-codes"></a>Etujen hallinnan syykoodit
 
@@ -124,6 +124,3 @@ Etujen hallinnan syykoodit yhdistetään pian olemassa oleviin syykoodeihin Huma
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

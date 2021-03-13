@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4fda9d85b459d233e6239f3fcffbb48e596d4085
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527882"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112439"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn Talent Hub -integrointi
 
@@ -127,14 +127,14 @@ Kun uusi sovelluskäyttäjä on tallennettu ja suljettu edellisessä osassa, ole
     - **Nimi**: anna aiemmin luodun Power Appsin käyttöoikeusroolin nimi, kuten **LinkedIn Talent Hub HRIS integraatio**.
     - **Käyttäjätunnus**: valitse käyttäjä, jolla on tietojen kirjoitusoikeudet henkilöstöhallinnossa.
 
-### <a name="create-the-entity-in-common-data-service"></a>Yksikön luominen Common Data Servicessa
+### <a name="create-the-table-in-dataverse"></a>Taulun luominen Dataversessa
 
 > [!IMPORTANT]
-> LinkedIn Talent Hub -integraatio määräytyy Human Resourcesin Common Data Servicessa virtuaaliyksiköiden mukaan. Määritysten tätä vaihetta varten on määritettävä virtuaaliyksiköitä. Lisätietoja virtuaaliyksiköiden määrittämisestä on kohdassa [Common Data Servicen virtuaaliyksiköiden määrittäminen](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> LinkedIn Talent Hub -integraatio määräytyy Human Resourcesille Dataverse-virtuaalitaulukoiden mukaan. Määritysten tätä vaihetta varten on määritettävä virtuaalitaulukoita. Lisätietoja virtuaalitaulukoiden määrittämisestä on kohdassa [Dataversen virtuaalitaulukoiden määrittäminen](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-1. Avaa Human Resourcesissa **Common Data Service (CDS) -integraatio** -sivu.
+1. Avaa Human Resourcesissa **Dataverse-integraatio** -sivu.
 
-2. Valitse **Virtuaaliyksiköt**-välilehti.
+2. Valitse **Virtuaalitaulukot**-välilehti.
 
 3. Etsi **LinkedInin viety ehdokas** suodattamalla yksikköluetteloa yksikön otsikon perusteella.
 
@@ -188,8 +188,5 @@ Seuraava tiedot tuodaan, ja ne sisältyvät työntekijätietueeseen:
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Common Data Service -virtuaaliyksiköiden määrittäminen](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Mikä on Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Määritä Dataverse -virtuaalitaulukot](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

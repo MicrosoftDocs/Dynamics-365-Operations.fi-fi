@@ -2,7 +2,7 @@
 title: Rekisteröintikelpoisuuden käsittely
 description: Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 69ea23e4051a6975a5892cd027777c5a88472509
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418281"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112401"
 ---
 # <a name="process-enrollment-eligibility"></a>Rekisteröintikelpoisuuden käsittely
 
@@ -72,6 +72,3 @@ Tässä artikkelissa kerrotaan, miten kelpoisuusprosessitulokset näytetään.
    | **Tuloksen tila** | Tämä on kelvollinen tai kelpaamaton. Tulostila ei ole käytettävissä, jos työntekijä ei täytä kelpoisuussäännön ehtoja, jos työntekijästä puuttuu pakollisia tietoja, kuten maksutiheys tai kiinteämääräinen kompensaatio, tai jos etuussuunnitelmasta puuttuu tietoja, jotka estävät työntekijöitä ilmoittautumasta. |
    | **Tulossanoma** | Ilmaisee, miksi työntekijä ei ole oikeutettu etuusjärjestelyyn tai jos oikeutussääntö on kulunut. |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

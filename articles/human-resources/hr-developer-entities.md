@@ -1,9 +1,9 @@
 ---
-title: Common Data Service -yksiköt
-description: Microsoft Dynamics 365 Human Resources käyttää Common Data Serviceä laajennettavuuden ja integroinnin skenaarioiden mahdollistamiseksi.
+title: Dataverse-taulut
+description: Microsoft Dynamics 365 Human Resources käyttää Dataverseä laajennettavuuden ja integroinnin skenaarioiden mahdollistamiseksi.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2f075a8e96af55b1363d2d51db377c5b25c38775
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530003"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112410"
 ---
-# <a name="common-data-service-entities"></a>Common Data Service -yksiköt
+# <a name="dataverse-tables"></a>Dataverse-taulut
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+Microsoft Dynamics 365 Human Resources käyttää Dataverseä laajennettavuuden ja integroinnin skenaarioiden mahdollistamiseksi.
 
-Microsoft Dynamics 365 Human Resources käyttää Common Data Serviceä laajennettavuuden ja integroinnin skenaarioiden mahdollistamiseksi.
+> [!NOTE]
+> Human Resources -yksiköt vastaavat Dataverse-tauluja. Lisätietoja Dataversesta (aiemmin Common Data Service) ja terminologiapäivityksistä on kohdassa [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
-Lisätietoja Common Data Servicestä on kohdassa [Mikä on Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) .
+Seuraavat Dataverse-taulut ovat käytössä Human Resources -yksiköiden perusteella.
 
-Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Data Servicessä.
+## <a name="benefit-tables"></a>Etutaulut
 
-## <a name="benefit-entities"></a>Etuyksiköt
-
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Edun laskentatiheys | cdm_benefitcalculationfrequency |
 | Edun laskennan toistuvuuden maksukausi | cdm_benefitcalculationfrequencypayperiod |
@@ -47,9 +46,9 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 | Etusuunnitelma | cdm_benefitplan (Ei käytössä mukautetulla kentän tuella) |
 | Edun tyyppi | cdm_benefittype |
 
-## <a name="business-process-tasks-entities"></a>Liiketoimintaprosessin tehtävien yksiköt
+## <a name="business-process-tasks-tables"></a>Liiketoimintaprosessin tehtävien taulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Liiketoimintaprosessin kalenteri | cdm_businessprocesscalendar |
 | Liiketoimintaprosessin ryhmämääritys | cdm_businessprocessgroupassignment |
@@ -58,11 +57,11 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 | Tarkistusluettelomallin otsikko | cdm_businessprocesstemplateheader |
 | Tarkistusluettelomallin tehtävä | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-entities"></a>Kompensaatioyksiköt
+## <a name="compensation-tables"></a>Kompensaatiotaulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
-| Kompensaation kiinteä suunnitelma | cdm_compensationfixedplan |
+| Kiinteä kompensaatiosuunnitelma | cdm_compensationfixedplan |
 | Kompensaatioruudukko | cdm_compensationgrid |
 | Kompensaatiotaso | cdm_compensationlevel |
 | Kompensaation maksutiheys | cdm_compensationpayfrequency |
@@ -77,13 +76,13 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 | Hyvityssääntö | cdm_vestingrule |
 | Työntekijän kiinteä kompensaatio | cdm_workerfixedcompensation |
 
-## <a name="organization-entities"></a>Organisaatioyksiköt
+## <a name="organization-tables"></a>Organisaatiotaulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Osasto | cdm_department |
 | Työsuhde | cdm_employment |
-| Yritys  | cdm_company |
+| Yhtiö | cdm_company |
 | Tehtävä | cdm_job |
 | Työtehtävä | cdm_jobfunction |
 | Toimi | cdm_jobposition |
@@ -95,33 +94,33 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 | Tehtävänimike | cdm_title |
 
 > [!NOTE]
-> Talous hallinnon dimensiot **Toimityypille**, **Toimen työntekijämääritykselle** ja **Työllisyydelle** tarjoavat yhdensuuntaisen integroinnin Common Data Service -järjestelmään. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Common Data Service -sovelluksesta Human Resources -sovellukseen. 
+> Talous hallinnon dimensiot **Toimityypille**, **Toimen työntekijämääritykselle** ja **Työllisyydelle** tarjoavat yhdensuuntaisen integroinnin Dataverse -järjestelmään. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Dataverse -sovelluksesta Human Resources -sovellukseen. 
 
-## <a name="leave-and-absence-entities"></a>Loman ja poissaolon kohteet
+## <a name="leave-and-absence-tables"></a>Loma- ja poissaolotaulut
 
-| Nimi | Yksikkö |
+| Nimi | Taulu |
 | --- | --- |
 | Lomapankkitapahtuma | cdm_leavebanktransaction |
-| Lomailmoittautuminen | cdm_leaveenrollment |
+| Lomarekisteröinti | cdm_leaveenrollment |
 | Lomasuunnitelma | cdm_leaveplan |
 | Lomapyyntö | cdm_leaverequest |
 | Lomapyynnön tiedot | cdm_leaverequestdetail |
 | Lomatyyppi | cdm_leavetype |
 | Lomatyypin syykoodi | cdm_leavetypereasoncode |
 
-## <a name="payroll-entities"></a>Palkanlaskentayksiköt
+## <a name="payroll-tables"></a>Palkanlaskentataulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Maksujakso | cdm_paycycle |
 | Maksukausi | cdm_payperiod |
-| Palkanlaskennan ansiokoodi | cdm_payrollearningcode |
+| Palkkalaji | cdm_payrollearningcode |
 | Pankkitilisuoritukset | cdm_bankaccountdisbursement |
 | Verotusalue | cdm_taxregion |
 
-## <a name="worker-entities"></a>Työntekijäyksiköt
+## <a name="worker-tables"></a>Työntekijätaulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Työntekijä | cdm_worker |
 | Työntekijän osoite | cdm_workeraddress |
@@ -135,22 +134,22 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 | Työkalenterin aikaväli | cdm_workcalendartimeinterval (Ei käytössä mukautetulla kentän tuella) |
 | Työntekijän pankkitili | cdm_workerbankaccount |
 
-## <a name="worker-setup-entities"></a>Työntekijän asetusyksiköt
+## <a name="worker-setup-tables"></a>Työntekijän asetustaulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Sotaveteraanitila | cdm_veteranstatus |
-| Etninen tausta | HcmEthnicOrigin |
+| Etninen alkuperä | cdm_ethnicorigin |
 | Syykoodi | cdm_reasoncode |
-| Henkilötunnuksen myöntänyt virasto | cdm_personidentificationissuingagency |
+| Henkilötunnuksen myöntäjätaho | cdm_personidentificationissuingagency |
 
-## <a name="competency-entities"></a>Osaamisyksiköt
+## <a name="competency-tables"></a>Pätevyystaulut
 
-| Nimi | Kokonaisuus |
+| Nimi | Taulu |
 | --- | --- |
 | Osaamisaluetyyppi | cdm_skilltype |
 
-## <a name="entity-relationship-models"></a>Yksikkösuhteen mallit
+## <a name="table-relationship-models"></a>Taulukkosuhteen mallit
 
 ### <a name="worker"></a>Työntekijä
 
@@ -178,8 +177,9 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Valitse tietojen integraatioteknologia](hr-admin-integration-choose-technology.md)</br>
-[Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Valitse tietojen integraatioteknologia](hr-admin-integration-choose-technology.md)<br>
+[Dataverse -integroinnin määritys](hr-admin-integration-common-data-service.md)<br>
+[Määritä Dataverse -virtuaalitaulukot](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Human Resourcesin virtuaalitaulut – usein kysytyt kysymykset](hr-admin-virtual-entity-faq.md)<br>
+[Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologiapäivitykset](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)

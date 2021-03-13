@@ -2,7 +2,7 @@
 title: Työntekijöiden etuussuunnitelmien luominen
 description: Voit luoda työntekijöiden etuussuunnitelmia Microsoft Dynamics 365 Human Resourcesissa valitaksesi etuussuunnitelmia työntekijöille ja vahvistaaksesi etuussuunnitelmavalintoja.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2083d3b18621ec7759b658b5ec34f2371c2ea1df
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418279"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112412"
 ---
 # <a name="create-worker-benefit-plans"></a>Työntekijöiden etuussuunnitelmien luominen
 
@@ -49,6 +49,3 @@ Voit luoda työntekijöiden etuussuunnitelmia Microsoft Dynamics 365 Human Resou
    | Suunnitelmat | Suunnitelmat-pikavälilehti sisältää ne suunnitelmat, jotka täyttävät määrittämäsi suodatusperusteet. Henkilöstöhallinnon työntekijöiden määrittämät asiaan liittyvät määritysvalinnat ja työntekijöiden valitsemat rekisteröintivaihtoehdot sisällytetään jokaiselle riville. Kelvollinen-kenttä ilmaisee, onko suunnitelman valinnan kanssa vahvistusristiriitaa. |
 
 4. Valitse **Tallenna**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

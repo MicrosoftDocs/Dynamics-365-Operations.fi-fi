@@ -2,7 +2,7 @@
 title: Maksumuutosten käsittely
 description: Etujen maksumuutosten käsittely Microsoft Dynamics 365 Human Resourcesissa, kun uuden tai olemassa olevan etuussuunnitelman kelpoisuussääntöasetukset muuttuvat.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: da42ef6ea91b95903316e35b551b222b8ff3b946
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f326957d5f33607e434f99563cfeb528c05f258d
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418302"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112372"
 ---
 # <a name="process-rate-changes"></a>Maksumuutosten käsittely
 
@@ -48,6 +48,3 @@ Etujen maksumuutosten käsittely Microsoft Dynamics 365 Human Resourcesissa, kun
    4. Valitse **OK**. Prosessi suoritetaan määrittämilläsi parametreilla.
 
 4. Valitse **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

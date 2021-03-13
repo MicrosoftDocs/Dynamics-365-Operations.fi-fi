@@ -2,7 +2,7 @@
 title: Tekstin katkaisun välttäminen toimihierarkiassa ja Visio-viennissä
 description: Tässä artikkelissa kerrotaan, miten voi ratkaista henkilöiden ja toimien nimien katkaisemisongelman, kun asiakkaat tarkastelevat toimihierarkiaa Microsoft Dynamics 365 Human Resourcesissa. Tekstin katkaisemisen voi vaikeuttaa näyttökuvan ottamista hierarkiasta tai sen tulostamista.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0dc91d3165f14c165f75756dc63a3dc8f63149aa
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418334"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112362"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Tekstin katkaisemisen välttäminen toimihierarkiassa ja vienti Visioon
 
@@ -104,6 +104,3 @@ Kun Visio-tiedosto luodaan, kussakin solmussa näkyvät ne tiedot, jotka perustu
 **Lisäasetus**
 
 Human Resourcesissa joitakin hierarkiaan liittyviä tietoja voi olla mahdollista katsoa **Ihmiset**-työtilassa.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Henkilökohtaisen yhteyshenkilön kelpoisuusasetusten määrittäminen
 description: Määritä henkilökohtaisten yhteyshenkilöiden kelpoisuusasetuksia Microsoft Dynamics 365 Human Resourcesissa. Henkilökohtaiset yhteyshenkilöt voivat olla edunsaajia tai huollettavia.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 68364b0cc1c579a3ee9813474c9d3f6e4df1c05d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 137416477928fd4d6b4438f25df5afea93972027
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418349"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112384"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Henkilökohtaisen yhteyshenkilön kelpoisuusasetusten määrittäminen
 
@@ -45,6 +45,3 @@ Tässä artikkelissa kerrotaan, miten voit määrittää henkilökohtaisten yhte
    | **Ikä** | Kelvollisen henkilökohtaisen yhteyshenkilön yläikäraja etuussuunnitelmassa. Tämä kenttä on käytettävissä vain, jos valitset suhteen. Tätä ikää verrataan henkilökohtaisen yhteyshenkilön laskettuun ikään. Laskettu ikä on: (kattavuuspäivämäärä – henkilökohtaisen yhteyshenkilön syntymäaika / 365). Tämä luku on aina kokonaisluku. |
 
 4. Valitse **Tallenna**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

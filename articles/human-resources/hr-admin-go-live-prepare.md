@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4418403"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112329"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resourcesin julkistamisen valmistelu
 
@@ -53,28 +53,36 @@ Seuraavassa taulukossa on kaikki prosessin vaiheet, odotettu kesto ja kuka vasta
 
 ## <a name="completing-the-lcs-methodology"></a>LCS-menetelmän päättäminen
 
-Jokaisen käyttöönottoprojektin tärkeä välitavoite on valmistelusiirto tuotantoympäristöön. 
-
-Microsoft valmistelee tuotantoesiintymän vasta, kun toteuttaminen on lähellä **käytön** vaihetta. Se tehdään sen jälkeen, kun LCS-menetelmän pakolliset aktiviteetit on suoritettu. Tällä tavoin varmistetaan, että tuotantoympäristöä käytetään live-toimintoihin. Lisätietoja tilauksessa olevista ympäristöistä on  [Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544). 
-
-Asiakkaiden on suoritettava LCS-menetelmän **Analyysi**-, **Suunnittelu ja kehitys** sekä **Testi**-vaiheet, ennen kuin tuotantoympäristön pyytämiseen tarkoitettu  **Määritys**-painike on käytettävissä. LCS-vaiheen päättäminen edellyttää, että kyseisen vaiheen jokainen osavaihe on suoritettu. Kun kaikki vaiheen osavaiheet on suoritettu, koko vaihe voidaan päättää. Vaiheen voi aina avata myöhemmin uudelleen, jos muutoksia on tehtävä. Lisätietoja on kohdassa  [Finance and Operations -sovellusten asiakkaiden Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
-
-Osavaiheen päättämisprosessissa on kaksi osaa: 
+Jokaisen käyttöönottoprojektin tärkeä välitavoite on valmistelusiirto tuotantoympäristöön. Osavaiheen päättämisprosessissa on kaksi osaa: 
 
 - Varsinaisen tehtävän, kuten sovitus- ja aukkoanalyysin tai käyttäjän hyväksyntätestauksen, suorittaminen. 
 - Vastaavan osavaiheen merkitseminen suoritetuksi LCS-menetelmässä. 
 
-On hyvän käytännön mukaista suorittaa menetelmän osavaiheet toteutuksessa edetessä. Ei siis kannata odottaa viime hetkeen saakka. Osavaiheita ei myöskään kannata vain merkitä suoritetuksi tuotantoympäristön saamista varten. Asiakkaan kannalta on järkevintä, että toteutus suoritetaan huolellisesti. 
+On hyvän käytännön mukaista suorittaa menetelmän osavaiheet toteutuksessa edetessä. Ei siis kannata odottaa viime hetkeen saakka. Asiakkaan kannalta on järkevintä, että toteutus suoritetaan huolellisesti. 
 
 ## <a name="uat-for-your-solution"></a>Ratkaisun käyttäjän hyväksyntätestaus
 
 Käyttäjän hyväksyntätestausvaiheen aikana on testattava kaikki toteutetut liiketoimintaprosessit ja mahdolliset mukautukset eristysympäristön toteutusprojektissa. Julkaisun onnistumisen varmistamiseksi seuraavat kannattaa ottaa huomioon käyttäjän hyväksyntätestausvaihetta suoritettaessa: 
 
+- Suosittelemme, että hyväksyntätestausprosessi alkaa puhtaasta ja tyhjästä ympäristöstä, jossa GOLD-konfiguraatiosi tiedot kopioidaan ympäristöön ennen hyväksyntätestausprosessin aloittamista. On suositeltavaa käyttää tuotantoympäristöä GOLD-ympäristönä siihen asti, kunnes julkaiset ratkaisun, jolloin ympäristöstä tulee tuotanto.
 - Testitapaukset kattavat kaikki tarpeet. 
 - Testaus siirrettyjen tietojen avulla. Tällaisia tietoja ovat ainakin päätiedot, kuten työntekijät, työt ja toimet. Lisäksi kannattaa sisällyttää alkusaldot, kuten loma-ja poissaolojaksotukset. Myös avoimia tapahtumia, kuten ajankohtaisia eturekisteröintejä, on syytä sisällyttää. Testaukseen kannattaa käyttää kaiken tyyppisiä tietoja, vaikka tietojoukkoa ei olisi viimeistelty. 
 - Testaus käyttämällä oikeita käyttäjille määritettyjä käyttöoikeusrooleja (oletusroolit ja mukautetut roolit). 
 - Varmistus, että ratkaisu noudattaa kaikkia yritys- ja toimialakohtaisia lakisääteisiä vaatimuksia. 
 - Kaikkien ominaisuuksien dokumentointi sekä hyväksynnän ja kuittauksen hankkiminen asiakkaalta. 
+
+## <a name="mock-go-live"></a>Julkistamisen harjoitus
+
+Ennen kuin siirryt liveen, sinun on suoritettava julkaisun harjoitus, jotta voit testata vaiheita, joita on suoritettava, kun siirryt vanhoista järjestelmistä uuteen järjestelmään. Suorita julkaisun harjoitus eristysympäristössä, ja sisällytä kaikki vaiheet käyttöönottosuunnitelmaan.
+
+- On suositeltavaa käyttää tuotantoympäristöä GOLD-konfiguraatioympäristönä julkaisuun saakka.
+- Varmista, että tuotantoympäristöä suojataan vahvalla hallintoprosessilla vahingossa tehtäviltä tapahtumilta tai päivityksiltä ennen julkaisua.
+- Kun olet valmis suorittamaan hyväksyntätestauksen tai julkaisun harjoituksen, päivitä eristysympäristö tuotantoympäristöstä. Lisätietoja on kohdassa [Esiintymän kopioiminen](hr-admin-setup-copy-instance.md).
+- Testaa kaikki käyttöönottosuunnitelman vaiheet eristysympäristöissä ja vahvista sen jälkeen eristysympäristö suorittamalla pistetarkistuksia tai suorittamalla hyväksyntätestauskomentosarjoja ympäristössä.
+  - Testeihin tulisi kuulua kaikki tietojen siirrot mukaan lukien julkaisussa tarvittavat muunnokset.
+  - Prosessin tulisi sisältää kaikkien vanhojen järjestelmien käytöstäpoiston harjoitus.
+  - Varmista, että sisällytät kaikki integroinnin käyttöönoton vaiheet tai ulkoisen järjestelmän vaiheet käyttöönoton harjoituksessa.
+- Jos käyttöönoton harjoituksen aikana löytyy ongelmia, voi olla tarpeen toinen käyttöönoton harjoitus. Tämän vuoksi suosittelemme, että suunnittelet projektisuunnitelmaan kaksi käyttöönoton harjoitusta.
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrackin julkaisuarviointi
 
@@ -91,5 +99,3 @@ Kun tarkistusluettelo on lähetetty, FastTrack-ratkaisuarkkitehti perehtyy proje
 ## <a name="see-also"></a>Lisätietoja
 
 [Käyttöönoton usein kysytyt kysymykset](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669165"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112297"
 ---
 # <a name="recruit-job-candidates"></a>Ehdokkaiden työhönotto
 
@@ -38,7 +38,7 @@ Dynamics 365 Human Resources auttaa työhönottopyyntöjen hallinnassa. Sen avul
 Jos käytössä ei ole erillistä työhönottosovellusta, voit hallinnoida ehdokkaita Human Resourcesissa myös manuaalisesti.
 
 >[!NOTE]
->Jos olet järjestelmänvalvoja tai kehittäjä ja haluat integroida Human Resourcen kolmannen osapuolen työhönottosovellukseen, katso lisätietoja kohdasta [Common Data Service -integroinnin määrittäminen](hr-admin-integration-common-data-service.md) ja [Common Data Servicen virtuaalientiteettien määrittäminen](hr-admin-integration-common-data-service-virtual-entities.md)
+>Jos olet järjestelmänvalvoja tai kehittäjä ja haluat integroida Human Resourcen kolmannen osapuolen työhönottosovellukseen, katso lisätietoja kohdasta [Dataverse -integroinnin määrittäminen](hr-admin-integration-common-data-service.md) ja [Dataversen virtuaalitaulukoiden määrittäminen](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Voit myös etsiä työhönoton integrointisovelluksia [AppSourcesta](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -46,15 +46,13 @@ Jos käytössä ei ole erillistä työhönottosovellusta, voit hallinnoida ehdok
 
 ## <a name="enable-recruiting-requests"></a>Ota työhönottopyynnöt käyttöön
 
-Jos hlauat lähettää työhönottopyyntöjä Human Resourcesissa, ota ensin toiminto käyttöön **Human resources -parametreissa**.
+Jos haluat lähettää työhönottopyyntöjä Human Resourcesissa, ota ensin toiminto käyttöön kohdassa **Human Resourcesin jaetut parametrit**.
 
 1. Valitse **Henkilöstön hallinta** -työtilassa **Linkit**.
 
-2. Valitse **Määritys**-kohdasta **Henkilöstöparametrit**.
+2. Valitse **Määritys**-kohdasta **Human resourcesin jaetut parametrit**.
 
-3. Määritä **Yleistiedot**-välilehden **TYÖHÖNOTTO**-kohdan **Ota työhönottopyynnöt käyttöön** -arvoksi **Kyllä**.
-
-   ![Ota työhönottopyynnöt käyttöön](./media/hr-recruit-0-enable-requests.png)
+3. Määritä **Työhönotto**-välilehden **TYÖHÖNOTTO**-kohdan **Ota työhönottopyynnöt käyttöön** -arvoksi **Kyllä**.
 
 ## <a name="add-a-recruiting-request-location"></a>Työhönottopyynnön sijainnin lisääminen
 
@@ -224,8 +222,6 @@ Tarvittaessa voit hylätä ehdokkaan työhönoton jälkeen. Ehdokas voi esimerki
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Common Data Service -virtuaaliyksiköiden määrittäminen](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Määritä Dataverse -virtuaalitaulukot](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Työvoimasi organisointi](hr-personnel-departments-jobs-positions.md)<br>
 [Työn komponenttien määrittäminen](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

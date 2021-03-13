@@ -2,7 +2,7 @@
 title: Hintojen määrittäminen
 description: Hinnat Microsoft Dynamics 365 Human Resourcesissa määrittävät, kuinka paljon työnantajat ja työntekijät edistävät etua.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f5c2ce14f6a0ff830ce2645496a35fb98d6a6ab
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418352"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112354"
 ---
 # <a name="configure-rates"></a>Hintojen määrittäminen
 
@@ -93,6 +93,3 @@ Voit myös käyttää kaksinkertaista tasoa. Jos valitset **hinta-asetus**-lomak
    | **Bonushyvitykset - määrä tupakoivalle** | Joustohyvitysten määrä, joka perustuu lisäkustannuksiin, jotka perustuvat tupakoivien tasolla määritettyyn tasoon. |
 
 5. Valitse **Tallenna**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Financeen integroinnin usein kysytyt kysymykset
 description: Tässä artikkelissa selitetään, mitkä tiedot synkronoidaan Human Resourcesin ja Financen integroinnissa.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6a94c1269cd81ecdcbdff018ec4a8f90be36f0f3
-ms.sourcegitcommit: 6aa8d6aa8276611967fb6fab44715950de49f6af
+ms.openlocfilehash: 0a6432fb5b04097d81680aed4e940e47f5ff2902
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4589060"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112374"
 ---
 # <a name="integration-with-finance-faq"></a>Financeen integroinnin usein kysytyt kysymykset
 
@@ -32,7 +32,7 @@ Tässä ohjeaiheessa vastaan yleisiin kysymyksiin, jotka koskevat Dynamics 365 H
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Voinko muokata Dynamics 365 Talent -sovelluksen käyttäjää Power Appsissa?
 
-Nro Jos muokkaat Talentin sovelluskäyttäjää, Human Resourcesin ja Common Data Servicen välinen integrointi voi epäonnistua. Seuraavassa taulukossa näkyvät Talentin sovelluskäyttäjän oletusasetukset.
+Nro Jos muokkaat Human Resourcesin sovelluskäyttäjää, Human Resourcesin ja Dataversen välinen integrointi voi epäonnistua. Seuraavassa taulukossa näkyvät Talentin sovelluskäyttäjän oletusasetukset.
 
 | Koko nimi | Sovelluksen tunnus | Azure AD -objektin tunnus | Sovelluksen tunnuksen URI |
 | --- | --- | --- | --- |
@@ -44,17 +44,17 @@ Nro Jos muokkaat Talentin sovelluskäyttäjää, Human Resourcesin ja Common Dat
 
 Tiedoista synkronoidaan tietojen alijoukko. Kaikki yksiköt sisältävä luettelo on kohdassa [Integrointi Dynamics 365 Financeen](hr-admin-integration-finance.md).
 
-## <a name="why-dont-i-see-any-data-synced-to-common-data-service"></a>Miksi en nää, että Common Data Serviceen synkronoidaan tietoja?
+## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Miksi en nää, että Dataverseen synkronoidaan tietoja?
 
-Common Data Service -integrointi on oletusarvoisesti pois käytöstä uudessa ympäristössä, joka ei sisällä toimitettuja demotietoja. Se on oletusarvoisesti käytössä ympäristöissä, jotka sisältävät demotietoja, ja tietojen synkronointi alkaa, kun ympäristö on provisioitu. Kyn ympäristö on valmis synkronoimaan tietoja, voit ottaa integroinnin käyttöön. Lisätietoja on kohdassa [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md).
+Dataverse -integrointi on oletusarvoisesti pois käytöstä uudessa ympäristössä, joka ei sisällä toimitettuja demotietoja. Se on oletusarvoisesti käytössä ympäristöissä, jotka sisältävät demotietoja, ja tietojen synkronointi alkaa, kun ympäristö on provisioitu. Kyn ympäristö on valmis synkronoimaan tietoja, voit ottaa integroinnin käyttöön. Lisätietoja on kohdassa [Dataverse -integroinnin määritys](hr-admin-integration-common-data-service.md).
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Voinko luoda uuden yhdistämismäärityksen ilman mallia?
 
-Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojektia luotaessa tarvitaan aina malli. Lisätietoja tietojen integrointiohjelmasta, malleista ja projekteista on kohdassa [Tietojen integrointi Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator) -ratkaisuun.
+Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojektia luotaessa tarvitaan aina malli. Lisätietoja tietojen integrointiohjelmasta, malleista ja projekteista on kohdassa [Tietojen integrointi Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator) -ratkaisuun.
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Voinko määrittää taloushallinnon dimensiot siirtymään Human Resourcesin ja Financen välillä?
 
-Common Data Service -ratkaisussa ei ole tällä hetkellä taloushallinnon dimensioita, joten ne eivät sisälly oletusmalliin. Tätä yksikköä suunnitellaan, mutta julkaisuajankohta ei ole tällä hetkellä tiedossa.
+Dataverse -ratkaisussa ei ole tällä hetkellä taloushallinnon dimensioita, joten ne eivät sisälly oletusmalliin. Tätä yksikköä suunnitellaan, mutta julkaisuajankohta ei ole tällä hetkellä tiedossa.
 
 Jos Financessa on sellaisia tietoja, joita ei ole Human Resourcesissa, voit linkittää järjestelmät yhteen Human Resourcesin **linkkien määrittämisen** avulla.
 
@@ -76,7 +76,7 @@ Kyselyn lisäasetusten avulla voit suodattaa ja muokata lähdetietoja, ennen kui
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Voinko määrittää, mitkä tietyn yksikön kentät lähetetään Financeen?
 
-Kenttiä voi lisätä integrointitehtävään tai poistaa niitä siitä. Kaikkia Common Data Service -yksikössä olevia tietokenttiä ei täytetä Human Resourcesista.
+Kenttiä voi lisätä integrointitehtävään tai poistaa niitä siitä. Kaikkia Dataverse-taulukossa olevia tietokenttiä ei täytetä Human Resourcesista.
 Lisätiedot voidaan täyttää Power Appsin kautta.
 
 ![Lisää tai poista kenttiä integrointitehtävään tai -tehtävästä](media/SpecifyFieldsIncludedInIntegration.png)
@@ -95,7 +95,7 @@ Ei, sillä tietojen integrointiohjelma ei taltioi poistettuja tietueita tietojen
 
 ## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Voinko suorittaa virheellisen suorituksen uudelleen? Ja lähetetäänkö siinä tapauksessa koko tiedosto vai vain muutokset?
 
-Tietojen integrointiohjelman ensimmäinen ajo on täydellinen ajo. Seuraavat ajot perustuvat muutosten seurantaan. Kun virheajo suoritetaan, se poistaa tietueet ajosta ja lähettää viimeisimmät muutokset Common Data Servicestä.
+Tietojen integrointiohjelman ensimmäinen ajo on täydellinen ajo. Seuraavat ajot perustuvat muutosten seurantaan. Kun virheajo suoritetaan, se poistaa tietueet ajosta ja lähettää viimeisimmät muutokset Dataversestä.
 
 ## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>Saan projektia tallentaessani virheen, jonka mukaan projektissa on yhdistämisvirheitä. Mitä teen seuraavaksi?
 
@@ -109,15 +109,15 @@ Kyllä. Jokaiselle Financen yksikölle on luotava erillinen integrointiprojekti 
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Minun on siirrettävä tietoja, jotka eivät sisälly Microsoftin oletusmalliin. Onko se mahdollista?
 
-Kyllä. Nykyisiin malleihin voi lisätä kenttiä, ja niitä voidaan myös poistaa siitä. Kun virheajo suoritetaan, se poistaa tietueet ajosta ja lähettää viimeisimmät muutokset muista Common Data Service -yksiköistä. Yksikön on oltava Common Data Service -ratkaisussa, jotta sen voi sisällyttää malliin. 
+Kyllä. Nykyisiin malleihin voi lisätä kenttiä, ja niitä voidaan myös poistaa siitä. Kun virheajo suoritetaan, se poistaa tietueet ajosta ja lähettää viimeisimmät muutokset muista Dataverse-taulukoista. Yksikön on oltava Dataverse -ratkaisussa, jotta sen voi sisällyttää malliin. 
 
 ## <a name="i-just-created-new-finance-and-human-resources-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Olen juuri luonut uudet Finance- ja Human Resources -ympäristöt ja saan virheilmoituksen, jonka mukaan tietoarvo rikkoo yhtenäisyysehtoja. Miksi?
 
 Tämän virheen syy voi olla jokin seuraavista:
 
-- Tiedonsiirto aiheutti sen, että tietueet noudettiin lähteestä (Common Data Service) kahdesti.
+- Tiedonsiirto aiheutti sen, että tietueet noudettiin lähteestä (Dataverse) kahdesti.
 
-- Tiedonsiirrossa Finance and Operationsin pakollisilla kentillä on tyhjäarvo. Tarkista, että tiedot ovat Common Data Servicessä ja että ne vastaavat Finance and Operationsin vaatimuksia.
+- Tiedonsiirrossa Finance and Operationsin pakollisilla kentillä on tyhjäarvo. Tarkista, että tiedot ovat Dataversessä ja että ne vastaavat Finance and Operationsin vaatimuksia.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Jos tapahtuu suoritusvirheitä eikä työntekijätunnus synkronoitunut, miten löydän työhistoria, joka sisältää epäonnistuneen työntekijätietueen?
 
@@ -139,27 +139,27 @@ Jäljitä aika tietojen integrointiohjelman suoritushistoriasta ja etsi Financen
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Kun olen integroinut Human Resourcesin ja Financen, en näe Human Resources -tietojani Financessa. Mitä teen seuraavaksi?
 
-Integrointi Financeen tapahtuu kahdessa vaiheessa. Tarkista ensin, että Human Resourcesin tiedot on päivitetty ja käytettävissä Common Data Servicessä. Tämä synkronointi tapahtuu lähes reaaliaikaisesti, ja se voidaan tarkistaa Power Appsissa katsomalla tietoyksiköiden tietoja.
+Integrointi Financeen tapahtuu kahdessa vaiheessa. Tarkista ensin, että Human Resourcesin tiedot on päivitetty ja käytettävissä Dataversessä. Tämä synkronointi tapahtuu lähes reaaliaikaisesti, ja se voidaan tarkistaa Power Appsissa katsomalla tietotaulukoiden tietoja.
 
-![Tiedot Common Data Servicessä](media/DataInCDS.png)
+![Tiedot Dataversessä](media/DataInCDS.png)
 
-Jos tiedot eivät näy odotetusti Common Data Servicessä, tarkista, että yksikön integrointia tuetaan. Jos Common Data Serviceen halutaan sisällyttää lisätietoja, se edellyttää muutosta Microsoftin puolella.
+Jos tiedot eivät näy odotetusti Dataversessä, tarkista, että yksikön integrointia tuetaan. Jos Dataverseen halutaan sisällyttää lisätietoja, se edellyttää muutosta Microsoftin puolella.
 
-Jos yksikköä tuetaan ja tiedot ovat käytettävissä Common Data Servicessä, tarkista, että yhdistämismääritys on oikein tietojen integrointiohjelmassa. Jos integrointiohjelman yhdistämismääritys näyttää olevan kunnossa, varmista seuraavaksi, että tietojen hallintatyöt on suoritettu. Erätöitä suoritettaessa voi tapahtua virheitä. Lisätietoja tietojen hallinnasta on kohdassa [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Jos yksikköä tuetaan ja tiedot ovat käytettävissä Dataversessä, tarkista, että yhdistämismääritys on oikein tietojen integrointiohjelmassa. Jos integrointiohjelman yhdistämismääritys näyttää olevan kunnossa, varmista seuraavaksi, että tietojen hallintatyöt on suoritettu. Erätöitä suoritettaessa voi tapahtua virheitä. Lisätietoja tietojen hallinnasta on kohdassa [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Työntekijöiden osoitteet ovat virheellisiä Financeen tuonnin jälkeen. Mitä minun pitäisi tehdä?
 
-**Sijainnin tunnus** -asetuksen numerosarja käyttää samaa mallia sekä Human Resourcesissa että Financessa. Kummallakin puolella on oltava yksilöllinen numerosarja, jotta osoiteongelmia ei tule, kun tiedot integroidaan Common Data Servicestä Finance and Operationsiin.
+**Sijainnin tunnus** -asetuksen numerosarja käyttää samaa mallia sekä Human Resourcesissa että Financessa. Kummallakin puolella on oltava yksilöllinen numerosarja, jotta osoiteongelmia ei tule, kun tiedot integroidaan Dataversestä Finance and Operationsiin.
 
 Tarkista Human Resourcesin toteutuksen aikana, että Human Resourcesissa ja Financessa ei käytetä samaa numerosarjaa. Tarkista, että kaikki numerosarjat eivät ole samanlaisia siellä, missä tietoja ehkä ylläpidetään molemmissa järjestelmissä.
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Kun yhteysjoukkoa luotiin, en nähnyt yhteyttä avattavassa Yhteys-luettelossa. Mitä teen seuraavaksi?
 
-Varmista, että valitset yhteyksiä luotaessa Dynamics 365 Financen ja Common Data Servicen.
+Varmista, että valitset yhteyksiä luotaessa Dynamics 365 Financen ja Dataversen.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Saan työsuhteita synkronoitaessa virheen, jonka mukaan CompanyInfo_FK ei ole olemassa tai kentän Työsuhteen päättymispäivämäärä arvoa 31.12.2154 23:59:59 ei löydy liittyvästä taulusta Työsuhde. Mitä minun pitäisi tehdä?
 
-Varmista, että yhdistämismääritys tehdään oikeisiin yrityksiin. Yrityksen synkronointi ei sisälly oletusmalliin, joten oletuksena on, että jokainen Human Resourcesissa ja Common Data Servicessä oleva yritys on myös Financessa.
+Varmista, että yhdistämismääritys tehdään oikeisiin yrityksiin. Yrityksen synkronointi ei sisälly oletusmalliin, joten oletuksena on, että jokainen Human Resourcesissa ja Dataversessä oleva yritys on myös Financessa.
 Varmista myös, että valitset liitetylle yhteysjoukolle oikeat yritykset.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Financen kenttämääritys näyttää olevan tyhjä projektin määrittämisen jälkeen. Mitä minun pitäisi tehdä?
@@ -172,15 +172,12 @@ Päivitä Financen tietoyksiköt valitsemalla **Tietojen hallinta \> Kehikkopara
 
 - Tietojen integrointiohjelma: 
 
-  - [Integroi tiedot kohteeseen Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integroi tiedot kohteeseen Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
   - [Tietojen integrointiohjelman virheiden hallinta ja vianmääritys](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen Power Appsissa, Microsoft Power Automatessa ja Common Data Servicessa](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen Power Appsissa, Microsoft Power Automatessa ja Dataversessa](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Tietojen hallinta:
 
   - [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

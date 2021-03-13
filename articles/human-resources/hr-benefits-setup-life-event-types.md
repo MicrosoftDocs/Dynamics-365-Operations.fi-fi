@@ -2,7 +2,7 @@
 title: Elämäntapahtumatyyppien määrittäminen
 description: Microsoft Dynamics 365 Human Resources käyttää elinkaaritapahtumatyyppejä sellaisten tapahtumien määrittämiseen, joissa työntekijän etujen rekisteröiminen päivitetään.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418314"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112398"
 ---
 # <a name="configure-life-event-types"></a>Elämäntapahtumatyyppien määrittäminen
 
@@ -88,6 +88,3 @@ Voit valita seuraavista elinkaaritapahtumista, kun luot elinkaaritapahtumatyypin
 | **Etukelpoisuuden ohituksen päättyminen (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Edut > Oikeutussäännön ohitus | Elinkaaritapahtuman muutoksen käsittelyn käyttäminen. Jos esimerkiksi muokkaat suunnitelman oikeutussääntöä, jonka mukaan vanhentumispäivä on tänään klo 5:00 PM, milloin tahansa sen jälkeen, kun 5:00 PM tai seuraavat päivät on kulunut, ja suoritat sitten elinkaaritapahtuman muutoksen käsittelyn, näyttöön tulee sanoma, jonka mukaan oikeutussäännön ohitus on vanhentunut. |
 | **Uusi etuussuunnitelma (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Uusi | <ul><li>Kelpoisuusvaihtoehdot lisätään nykyiseen suunnitelmaan</li><li>Uusi suunnitelma, johon on liitetty kelpoisuusehtoja, lisätään</li></ul></br></br>Henkilöstöhallinnon henkilökunnan tulisi suorittaa tässä tapauksessa elinkaaritapahtuman kelpoisuuden käsittely. |
 | **Etukelpoisuussäännön muutos (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Säännöt/vaihtoehdot > Kelpoisuussäännöt | Elinkaaritapahtuman kelpoisuuskäsittelyn käyttäminen. Lokiin kirjataan , kun **EhrBenefitEligibilityRule**-tietueissa on muutettu seuraavat arvot: **UseEmplCategory**, **UseEmplStatus** tai **UseEmplType**. Päivittää vain ne elinkaaritapahtuman tapahtumat, jotka ovat jo muuttuneessa säännössä tai kelpoisuusehdoissa. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

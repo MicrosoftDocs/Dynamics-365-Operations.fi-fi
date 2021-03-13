@@ -2,7 +2,7 @@
 title: Human Resourcesin uudet ja muuttuneet ominaisuudet
 description: Tarjoamme joka viikko uuden Microsoft Dynamics 365 Human Resources -julkaisun. Aiheissa luetellaan kunkin viikon muutokset.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669081"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5112437"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
 
@@ -49,6 +49,8 @@ Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuk
 
 Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua joka toinen viikko ilmestyvässä Human Resources -julkaisussa on.
 
+[28. tammikuuta 2021](hr-whats-new-2021-01-28.md)</br>
+[21. tammikuuta 2021](hr-whats-new-2021-01-21.md)</br>
 [02. joulukuuta 2020](hr-whats-new-2020-12-02.md)</br>
 [22. lokakuuta 2020](hr-whats-new-2020-10-22.md)</br>
 [16. syyskuuta 2020](hr-whats-new-2020-09-16.md)</br>
@@ -79,6 +81,3 @@ Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua joka toin
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
