@@ -11,60 +11,59 @@ ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43389db93032ec29adb805f86ae04a686803176f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426969"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018493"
 ---
-# <a name="maintenance-status"></a><span data-ttu-id="e153e-103">Ylläpitotila</span><span class="sxs-lookup"><span data-stu-id="e153e-103">Maintenance status</span></span>
+# <a name="maintenance-status"></a><span data-ttu-id="db8d6-103">Ylläpitotila</span><span class="sxs-lookup"><span data-stu-id="db8d6-103">Maintenance status</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="e153e-104">Resurssienhallinnassa voit laskea yhteenvedon, jossa on tietoja uusista, aktiivisista ja valmiista ylläpitopyynnöistä, työtilauksista ja ylläpidon käyttökatkoista tietyltä kaudelta.</span><span class="sxs-lookup"><span data-stu-id="e153e-104">In Asset Management, you can make an overview calculation for a specific period for new, active, and completed maintenance requests, work orders, and maintenance downtime activities.</span></span> <span data-ttu-id="e153e-105">Voit tarkastella myös saman kauden suoritettujen kuntoarviointien määrää.</span><span class="sxs-lookup"><span data-stu-id="e153e-105">You can also see the number of completed condition assessments for the same period.</span></span> <span data-ttu-id="e153e-106">Tämän laskennan avulla saat yleiskuvan saapuvien ja suoritettujen kunnossapitopyyntöjen ja työtilausten kuormituksesta.</span><span class="sxs-lookup"><span data-stu-id="e153e-106">Use this calculation to get an overview of workload for incoming and completed maintenance requests and work orders.</span></span>
+<span data-ttu-id="db8d6-104">Resurssienhallinnassa voit laskea yhteenvedon, jossa on tietoja uusista, aktiivisista ja valmiista ylläpitopyynnöistä, työtilauksista ja ylläpidon käyttökatkoista tietyltä kaudelta.</span><span class="sxs-lookup"><span data-stu-id="db8d6-104">In Asset Management, you can make an overview calculation for a specific period for new, active, and completed maintenance requests, work orders, and maintenance downtime activities.</span></span> <span data-ttu-id="db8d6-105">Voit tarkastella myös saman kauden suoritettujen kuntoarviointien määrää.</span><span class="sxs-lookup"><span data-stu-id="db8d6-105">You can also see the number of completed condition assessments for the same period.</span></span> <span data-ttu-id="db8d6-106">Tämän laskennan avulla saat yleiskuvan saapuvien ja suoritettujen kunnossapitopyyntöjen ja työtilausten kuormituksesta.</span><span class="sxs-lookup"><span data-stu-id="db8d6-106">Use this calculation to get an overview of workload for incoming and completed maintenance requests and work orders.</span></span>
 
-## <a name="make-a-maintenance-status-calculation"></a><span data-ttu-id="e153e-107">Ylläpidon tilan laskennan suorittaminen</span><span class="sxs-lookup"><span data-stu-id="e153e-107">Make a maintenance status calculation</span></span>
+## <a name="make-a-maintenance-status-calculation"></a><span data-ttu-id="db8d6-107">Ylläpidon tilan laskennan suorittaminen</span><span class="sxs-lookup"><span data-stu-id="db8d6-107">Make a maintenance status calculation</span></span>
 
-1. <span data-ttu-id="e153e-108">Valitse **Resurssien hallinta** > **Kyselyt** > **Ylläpidon tila**.</span><span class="sxs-lookup"><span data-stu-id="e153e-108">Click **Asset management** > **Inquiries** > **Maintenance status**.</span></span>
+1. <span data-ttu-id="db8d6-108">Valitse **Resurssien hallinta** > **Kyselyt** > **Ylläpidon tila**.</span><span class="sxs-lookup"><span data-stu-id="db8d6-108">Click **Asset management** > **Inquiries** > **Maintenance status**.</span></span>
 
-2. <span data-ttu-id="e153e-109">Valitse **Laske tila** -valintaikkunassa aikaväli, jonka ajalta haluat tehdä laskennan (**Alkamispäivämäärä**- ja **Päättymispäivämäärä** -kentät).</span><span class="sxs-lookup"><span data-stu-id="e153e-109">In the **Calculate status** dialog, select the time range that you want to make the calculation in the **From date** and **To date** fields.</span></span>
+2. <span data-ttu-id="db8d6-109">Valitse **Laske tila** -valintaikkunassa aikaväli, jonka ajalta haluat tehdä laskennan (**Alkamispäivämäärä**- ja **Päättymispäivämäärä** -kentät).</span><span class="sxs-lookup"><span data-stu-id="db8d6-109">In the **Calculate status** dialog, select the time range that you want to make the calculation in the **From date** and **To date** fields.</span></span>
 
-3. <span data-ttu-id="e153e-110">**Taso** -kentän avulla voit määrittää, miten yksityiskohtaisia ylläpitoriveistä haluat liittyen toiminnallisiin sijainteihin.</span><span class="sxs-lookup"><span data-stu-id="e153e-110">You can use the **Level** field to indicate how detailed you want the maintenance lines to be regarding functional locations.</span></span> 
+3. <span data-ttu-id="db8d6-110">**Taso** -kentän avulla voit määrittää, miten yksityiskohtaisia ylläpitoriveistä haluat liittyen toiminnallisiin sijainteihin.</span><span class="sxs-lookup"><span data-stu-id="db8d6-110">You can use the **Level** field to indicate how detailed you want the maintenance lines to be regarding functional locations.</span></span> 
 
-  <span data-ttu-id="e153e-111">Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoinen toiminnallinen sijaintirakenne, kaikki toimintosijainnin ylläpitorivit näkyvät ylimmällä tasolla, joten rivin tila voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista.</span><span class="sxs-lookup"><span data-stu-id="e153e-111">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance lines for a functional location will be shown on the top level, and therefore the status on a line may be added up from functional locations located at a lower level.</span></span> 
+  <span data-ttu-id="db8d6-111">Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoinen toiminnallinen sijaintirakenne, kaikki toimintosijainnin ylläpitorivit näkyvät ylimmällä tasolla, joten rivin tila voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista.</span><span class="sxs-lookup"><span data-stu-id="db8d6-111">For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance lines for a functional location will be shown on the top level, and therefore the status on a line may be added up from functional locations located at a lower level.</span></span> 
   
-  <span data-ttu-id="e153e-112">Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki ylläpitorivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.</span><span class="sxs-lookup"><span data-stu-id="e153e-112">If you insert the number "0" in the **Level** field, you see a detailed result showing all maintenance lines on all the functional location levels to which they are related.</span></span>
+  <span data-ttu-id="db8d6-112">Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki ylläpitorivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.</span><span class="sxs-lookup"><span data-stu-id="db8d6-112">If you insert the number "0" in the **Level** field, you see a detailed result showing all maintenance lines on all the functional location levels to which they are related.</span></span>
 
-4. <span data-ttu-id="e153e-113">Aloita laskenta valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="e153e-113">Click **OK** to start the calculation.</span></span>
+4. <span data-ttu-id="db8d6-113">Aloita laskenta valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="db8d6-113">Click **OK** to start the calculation.</span></span>
 
-5. <span data-ttu-id="e153e-114">Valitse **Ryhmittely...**-painikkeita tuodaksesi näkyviin laskun vaaditun yksityiskohtaisuuden tason.</span><span class="sxs-lookup"><span data-stu-id="e153e-114">Click the **Group by** buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="e153e-115">Valitut **Ryhmittely...**-painikkeet on korostettu.</span><span class="sxs-lookup"><span data-stu-id="e153e-115">The selected **Group by** buttons are highlighted.</span></span> <span data-ttu-id="e153e-116">Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.</span><span class="sxs-lookup"><span data-stu-id="e153e-116">Click on a button to activate or deactivate it.</span></span>
+5. <span data-ttu-id="db8d6-114">Valitse **Ryhmittely...**-painikkeita tuodaksesi näkyviin laskun vaaditun yksityiskohtaisuuden tason.</span><span class="sxs-lookup"><span data-stu-id="db8d6-114">Click the **Group by** buttons to show the required detail level of the calculation.</span></span> <span data-ttu-id="db8d6-115">Valitut **Ryhmittely...**-painikkeet on korostettu.</span><span class="sxs-lookup"><span data-stu-id="db8d6-115">The selected **Group by** buttons are highlighted.</span></span> <span data-ttu-id="db8d6-116">Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.</span><span class="sxs-lookup"><span data-stu-id="db8d6-116">Click on a button to activate or deactivate it.</span></span>
 
-6. <span data-ttu-id="e153e-117">Muista napsauttaa **Päivitä**-painiketta, jos haluat päivittää laskemisen aina, kun teet muutoksia aktivoimalla tai poistamalla käytöstä **Ryhmittely...**-painikkeita tai tekemällä laskelmia uudelle kaudelle.</span><span class="sxs-lookup"><span data-stu-id="e153e-117">Remember to click the **Update** button to update the calculation each time you make changes by activating or deactivating **Group by** buttons, or by making a calculation for a new period.</span></span>
+6. <span data-ttu-id="db8d6-117">Muista napsauttaa **Päivitä**-painiketta, jos haluat päivittää laskemisen aina, kun teet muutoksia aktivoimalla tai poistamalla käytöstä **Ryhmittely...**-painikkeita tai tekemällä laskelmia uudelle kaudelle.</span><span class="sxs-lookup"><span data-stu-id="db8d6-117">Remember to click the **Update** button to update the calculation each time you make changes by activating or deactivating **Group by** buttons, or by making a calculation for a new period.</span></span>
 
-7. <span data-ttu-id="e153e-118">Valitse **Tila**, jos haluat luoda uuden ylläpitotilan laskemisen.</span><span class="sxs-lookup"><span data-stu-id="e153e-118">Click **Status** if you want to create a new maintenance status calculation.</span></span>
+7. <span data-ttu-id="db8d6-118">Valitse **Tila**, jos haluat luoda uuden ylläpitotilan laskemisen.</span><span class="sxs-lookup"><span data-stu-id="db8d6-118">Click **Status** if you want to create a new maintenance status calculation.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="e153e-119">**Ylläpitotila**-kohdassa näkyvät tulokset koskevat vain huoltopyyntöjä ja työtilauksia, joilla on todellinen alkamispäivämäärä ja -aika.</span><span class="sxs-lookup"><span data-stu-id="e153e-119">The results shown in **Maintenance status** only include maintenance requests and work orders that have an actual start date and time.</span></span> <span data-ttu-id="e153e-120">Päättymispäivämäärä ja -aika voivat olla tyhjiä.</span><span class="sxs-lookup"><span data-stu-id="e153e-120">End date and time may be blank.</span></span>
+><span data-ttu-id="db8d6-119">**Ylläpitotila**-kohdassa näkyvät tulokset koskevat vain huoltopyyntöjä ja työtilauksia, joilla on todellinen alkamispäivämäärä ja -aika.</span><span class="sxs-lookup"><span data-stu-id="db8d6-119">The results shown in **Maintenance status** only include maintenance requests and work orders that have an actual start date and time.</span></span> <span data-ttu-id="db8d6-120">Päättymispäivämäärä ja -aika voivat olla tyhjiä.</span><span class="sxs-lookup"><span data-stu-id="db8d6-120">End date and time may be blank.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="e153e-121">Esimerkki 1</span><span class="sxs-lookup"><span data-stu-id="e153e-121">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="db8d6-121">Esimerkki 1</span><span class="sxs-lookup"><span data-stu-id="db8d6-121">Example 1</span></span>
 
-<span data-ttu-id="e153e-122">Alla olevassa näyttökuvassa **Vuosi**- ja **Kuukausi**-painikkeet on aktivoitu.</span><span class="sxs-lookup"><span data-stu-id="e153e-122">In the screenshot below, the **Year** and **Month** buttons have been activated.</span></span> <span data-ttu-id="e153e-123">Kun nämä **Ryhmittely...**-asetukset on valittu, saat yleiskuvan ylläpitopyyntöihin ja työtilauksiin liittyvästä kuormituksesta ja suoritusnopeudesta kuukausittain.</span><span class="sxs-lookup"><span data-stu-id="e153e-123">With these **Group by** options selected, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders.</span></span> 
+<span data-ttu-id="db8d6-122">Alla olevassa näyttökuvassa **Vuosi**- ja **Kuukausi**-painikkeet on aktivoitu.</span><span class="sxs-lookup"><span data-stu-id="db8d6-122">In the screenshot below, the **Year** and **Month** buttons have been activated.</span></span> <span data-ttu-id="db8d6-123">Kun nämä **Ryhmittely...**-asetukset on valittu, saat yleiskuvan ylläpitopyyntöihin ja työtilauksiin liittyvästä kuormituksesta ja suoritusnopeudesta kuukausittain.</span><span class="sxs-lookup"><span data-stu-id="db8d6-123">With these **Group by** options selected, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders.</span></span> 
 
 ![Esimerkki kuukausittaisesta kuormituksesta](media/13-controlling-and-reporting.png)
 
-## <a name="example-2"></a><span data-ttu-id="e153e-125">Esimerkki 2</span><span class="sxs-lookup"><span data-stu-id="e153e-125">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="db8d6-125">Esimerkki 2</span><span class="sxs-lookup"><span data-stu-id="db8d6-125">Example 2</span></span>
 
-<span data-ttu-id="e153e-126">Alla olevassa näyttökuvassa on lisätty tietoja toiminnallisista sijainneista.</span><span class="sxs-lookup"><span data-stu-id="e153e-126">In the screenshot below, information about functional locations has been added.</span></span> <span data-ttu-id="e153e-127">Nyt on mahdollista vertailla työmäärää ja suorituskykyä eri toiminnallisissa sijainneissa, jotka voivat edustaa maantieteellisiä sijainteja, tehtaita tai työalueita.</span><span class="sxs-lookup"><span data-stu-id="e153e-127">Now it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas.</span></span> 
+<span data-ttu-id="db8d6-126">Alla olevassa näyttökuvassa on lisätty tietoja toiminnallisista sijainneista.</span><span class="sxs-lookup"><span data-stu-id="db8d6-126">In the screenshot below, information about functional locations has been added.</span></span> <span data-ttu-id="db8d6-127">Nyt on mahdollista vertailla työmäärää ja suorituskykyä eri toiminnallisissa sijainneissa, jotka voivat edustaa maantieteellisiä sijainteja, tehtaita tai työalueita.</span><span class="sxs-lookup"><span data-stu-id="db8d6-127">Now it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas.</span></span> 
 
 ![Esimerkki kuukausittaisesta kuormituksesta ja toiminnallisista sijainneista](media/14-controlling-and-reporting.png)
 

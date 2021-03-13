@@ -11,41 +11,40 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25d53b1380887789c6c4a7a51b600dccfe4589f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ea71dee6f653f73a86d31e82cf3541b4447bd552
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427206"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019503"
 ---
-# <a name="asset-event-history"></a><span data-ttu-id="00513-103">Resurssien tapahtumahistoria</span><span class="sxs-lookup"><span data-stu-id="00513-103">Asset event history</span></span>
+# <a name="asset-event-history"></a><span data-ttu-id="ac26a-103">Resurssien tapahtumahistoria</span><span class="sxs-lookup"><span data-stu-id="ac26a-103">Asset event history</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="00513-104">Tässä ohjeaiheessa kerrotaan, miten resurssien tapahtumahistoriaa pääsee käyttämään resurssien hallinnassa.</span><span class="sxs-lookup"><span data-stu-id="00513-104">This topic explains how to access asset event history in Asset Management.</span></span> <span data-ttu-id="00513-105">**Resurssien tapahtumahistoria** -sivulla näkyy rekisteröintihistoria, joka on tehty resurssin elinkaaren aikana.</span><span class="sxs-lookup"><span data-stu-id="00513-105">The **Asset event history** page shows the registration history that has been made during the lifetime of an asset.</span></span> <span data-ttu-id="00513-106">Voit käyttää tätä sivua **Kaikki resurssit**-, **Aktiiviset resurssit**- ja **Omat aktiiviset resurssit** -valikkokohteista.</span><span class="sxs-lookup"><span data-stu-id="00513-106">You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items.</span></span> <span data-ttu-id="00513-107">Valitse resurssi ja valitse sitten **Tapahtumahistoria**.</span><span class="sxs-lookup"><span data-stu-id="00513-107">Select an asset, and then select **Event history**.</span></span>
+<span data-ttu-id="ac26a-104">Tässä ohjeaiheessa kerrotaan, miten resurssien tapahtumahistoriaa pääsee käyttämään resurssien hallinnassa.</span><span class="sxs-lookup"><span data-stu-id="ac26a-104">This topic explains how to access asset event history in Asset Management.</span></span> <span data-ttu-id="ac26a-105">**Resurssien tapahtumahistoria** -sivulla näkyy rekisteröintihistoria, joka on tehty resurssin elinkaaren aikana.</span><span class="sxs-lookup"><span data-stu-id="ac26a-105">The **Asset event history** page shows the registration history that has been made during the lifetime of an asset.</span></span> <span data-ttu-id="ac26a-106">Voit käyttää tätä sivua **Kaikki resurssit**-, **Aktiiviset resurssit**- ja **Omat aktiiviset resurssit** -valikkokohteista.</span><span class="sxs-lookup"><span data-stu-id="ac26a-106">You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items.</span></span> <span data-ttu-id="ac26a-107">Valitse resurssi ja valitse sitten **Tapahtumahistoria**.</span><span class="sxs-lookup"><span data-stu-id="ac26a-107">Select an asset, and then select **Event history**.</span></span>
 
-<span data-ttu-id="00513-108">**Resurssien tapahtumahistoria** -sivun **Tiedot**-pikavälilehdessä voit tehdä haun kaikista käytettävissä olevista tiedoista.</span><span class="sxs-lookup"><span data-stu-id="00513-108">On the **Details** FastTab of the **Asset event history** page, you can do a search on all the available information.</span></span> <span data-ttu-id="00513-109">Voit esimerkiksi käyttää resurssin tapahtumahistoriaa löytääksesi seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="00513-109">For example, you can use the asset event history to find the following information:</span></span>
+<span data-ttu-id="ac26a-108">**Resurssien tapahtumahistoria** -sivun **Tiedot**-pikavälilehdessä voit tehdä haun kaikista käytettävissä olevista tiedoista.</span><span class="sxs-lookup"><span data-stu-id="ac26a-108">On the **Details** FastTab of the **Asset event history** page, you can do a search on all the available information.</span></span> <span data-ttu-id="ac26a-109">Voit esimerkiksi käyttää resurssin tapahtumahistoriaa löytääksesi seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="ac26a-109">For example, you can use the asset event history to find the following information:</span></span>
 
-- <span data-ttu-id="00513-110">Kun resurssiin on viimeksi käytetty työlajia</span><span class="sxs-lookup"><span data-stu-id="00513-110">When a job type was last used on an asset</span></span>
-- <span data-ttu-id="00513-111">Kun tietty työntekijä on syöttänyt huomautuksen työtilauksen työhön</span><span class="sxs-lookup"><span data-stu-id="00513-111">When a specific worker entered a remark on a work order job</span></span>
+- <span data-ttu-id="ac26a-110">Kun resurssiin on viimeksi käytetty työlajia</span><span class="sxs-lookup"><span data-stu-id="ac26a-110">When a job type was last used on an asset</span></span>
+- <span data-ttu-id="ac26a-111">Kun tietty työntekijä on syöttänyt huomautuksen työtilauksen työhön</span><span class="sxs-lookup"><span data-stu-id="ac26a-111">When a specific worker entered a remark on a work order job</span></span>
 
-<span data-ttu-id="00513-112">Aikajanaa päivitetään aina, kun sivu avataan.</span><span class="sxs-lookup"><span data-stu-id="00513-112">The timeline is updated every time that the page is opened.</span></span> <span data-ttu-id="00513-113">Se sisältää seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="00513-113">It contains the following information:</span></span>
+<span data-ttu-id="ac26a-112">Aikajanaa päivitetään aina, kun sivu avataan.</span><span class="sxs-lookup"><span data-stu-id="ac26a-112">The timeline is updated every time that the page is opened.</span></span> <span data-ttu-id="ac26a-113">Se sisältää seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="ac26a-113">It contains the following information:</span></span>
 
-- <span data-ttu-id="00513-114">Resurssiin tehdyt muutokset: resurssin sijainti, resurssin tunnus, nimi ja toimittajan takuu</span><span class="sxs-lookup"><span data-stu-id="00513-114">Changes that have been made on the asset: asset location, asset ID, name, and vendor warranty</span></span>
-- <span data-ttu-id="00513-115">Resurssin ylätaso</span><span class="sxs-lookup"><span data-stu-id="00513-115">Asset parent</span></span>
-- <span data-ttu-id="00513-116">Resurssin tuoterakenne</span><span class="sxs-lookup"><span data-stu-id="00513-116">Asset bill of materials (BOM)</span></span>
-- <span data-ttu-id="00513-117">Resurssin elinkaaren loki</span><span class="sxs-lookup"><span data-stu-id="00513-117">Asset lifecycle state log</span></span>
-- <span data-ttu-id="00513-118">Toiminnallinen sijainti</span><span class="sxs-lookup"><span data-stu-id="00513-118">Functional location</span></span>
-- <span data-ttu-id="00513-119">Ylläpitopyynnöt</span><span class="sxs-lookup"><span data-stu-id="00513-119">Maintenance requests</span></span>
-- <span data-ttu-id="00513-120">Työtilaukset, mukaan lukien kirjatut nimikkeet ja muistiinpanot</span><span class="sxs-lookup"><span data-stu-id="00513-120">Work orders, including posted item and notes</span></span>
-- <span data-ttu-id="00513-121">Häiriöt</span><span class="sxs-lookup"><span data-stu-id="00513-121">Faults</span></span>
-- <span data-ttu-id="00513-122">Kunnon arvioinnit</span><span class="sxs-lookup"><span data-stu-id="00513-122">Condition assessments</span></span>
+- <span data-ttu-id="ac26a-114">Resurssiin tehdyt muutokset: resurssin sijainti, resurssin tunnus, nimi ja toimittajan takuu</span><span class="sxs-lookup"><span data-stu-id="ac26a-114">Changes that have been made on the asset: asset location, asset ID, name, and vendor warranty</span></span>
+- <span data-ttu-id="ac26a-115">Resurssin ylätaso</span><span class="sxs-lookup"><span data-stu-id="ac26a-115">Asset parent</span></span>
+- <span data-ttu-id="ac26a-116">Resurssin tuoterakenne</span><span class="sxs-lookup"><span data-stu-id="ac26a-116">Asset bill of materials (BOM)</span></span>
+- <span data-ttu-id="ac26a-117">Resurssin elinkaaren loki</span><span class="sxs-lookup"><span data-stu-id="ac26a-117">Asset lifecycle state log</span></span>
+- <span data-ttu-id="ac26a-118">Toiminnallinen sijainti</span><span class="sxs-lookup"><span data-stu-id="ac26a-118">Functional location</span></span>
+- <span data-ttu-id="ac26a-119">Ylläpitopyynnöt</span><span class="sxs-lookup"><span data-stu-id="ac26a-119">Maintenance requests</span></span>
+- <span data-ttu-id="ac26a-120">Työtilaukset, mukaan lukien kirjatut nimikkeet ja muistiinpanot</span><span class="sxs-lookup"><span data-stu-id="ac26a-120">Work orders, including posted item and notes</span></span>
+- <span data-ttu-id="ac26a-121">Häiriöt</span><span class="sxs-lookup"><span data-stu-id="ac26a-121">Faults</span></span>
+- <span data-ttu-id="ac26a-122">Kunnon arvioinnit</span><span class="sxs-lookup"><span data-stu-id="ac26a-122">Condition assessments</span></span>
