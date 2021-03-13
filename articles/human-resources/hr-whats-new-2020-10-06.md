@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 036b43d8730b52bddc93c0fc3b47d9d62649e898
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529825"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152170"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (6. lokakuuta 2020)
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529825"
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
-Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Tässä julkaisussa
 
@@ -73,13 +72,13 @@ Seuraavat uudet ominaisuudet ovat esiversioita. Lisätietoja ominaisuuksien otta
 | --- | --- | --- |
 | Microsoft Teamsin Human Resources -sovellus | [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teamsin Human Resources -sovellus](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md) |
 | Työnkulun parannetut pyynnöt ja hyväksynnät | [Organisaation ja henkilöstöhallinnon työnkulkukokemuksen parannukset](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Toimen Itselle määritetyt työnimikkeet -luettelon määritysasetus](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Human Resourcesin Common Data Servicen virtuaaliyksiköt | [Dynamics 365 Human Resources -perustietojen laajentaminen Common Data Servicessa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Common Data Service -virtuaaliyksiköiden määrittäminen](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Human Resourcesin Dataversen virtuaaliyksiköt | [Dynamics 365 Human Resources -perustietojen laajentaminen Dataversessa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Dataverse -virtuaaliyksiköiden määrittäminen](hr-admin-integration-common-data-service-virtual-entities.md) |
 
 ## <a name="coming-soon"></a>Tulossa pian
 
 Seuraavat uudet ominaisuudet on aikataulutettu tukeviin julkaisuihin:
 
-- **Common Data Serviceen sisällytetty tarkistusluetteloyksiköt**: käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluetteloyksiköt ovat pian saatavilla Common Data Servicessa.
+- **Dataverseen sisällytetty tarkistusluetteloyksiköt**: käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluetteloyksiköt ovat pian saatavilla Dataversessa.
 
 - **Etujen hallinnan syykoodit**: Etujen hallinnan syykoodit yhdistetään pian olemassa oleviin syykoodeihin Human Resourcesissa. Jos olet määrittänyt etujen hallinnassa syykoodeja, joiden pituus on yli 15 merkkiä, syykoodin nimeä on muutettava etujen hallinnan **Syykoodit**-lomakkeessa niin, että pituus on enintään 15 merkkiä. Kun olet päivittänyt nimen, syykoodi näkyy olemassa olevan syykoodilomakkeen henkilöstön hallinnassa. Tämä muutos on käytettävissä tulevaisuudessa. Se ei vaikuta olemassa oleviin toimintoihin.
 
@@ -90,9 +89,6 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

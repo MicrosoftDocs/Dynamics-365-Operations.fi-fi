@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695136"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154150"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -163,7 +163,4 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Sivuston ylläpitää aiempien versioiden sisältöä. |
 | [Dynamics-yhteisö](https://community.dynamics.com/) | Sivusto ylläpitää blogeja, keskustelupalstoja ja videoita. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Sivusto sisältää arviointi- ja myyntitietoja. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Sivusto ylläpitää koulutusresursseja ja ladattavia raportteja. Lisäksi se on palvelupakettien omistajien ensisijainen tukisivusto. Joidenkin sivuston resurssien käyttö saattaa edellyttää palvelupakettia. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Sivusto ylläpitää koulutusresursseja ja ladattavia raportteja. Lisäksi se on palvelupakettien omistajien ensisijainen tukisivusto. Joidenkin sivuston resurssien käyttö saattaa edellyttää palvelupakettia. |

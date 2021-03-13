@@ -1,7 +1,7 @@
 ---
 title: Hankinnan aloitussivu
 description: Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d189213a691d752f02160d7ed9b6f5f60329eebd
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427355"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154330"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
@@ -86,7 +85,7 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 ## <a name="prices-and-discounts"></a>Hinnat ja alennukset
 -   [Ostosopimukset](purchase-agreements.md)
 -   [Luo ostosopimus](tasks/create-purchase-agreement.md)
--   [Toimittajien ostohyvitykset](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (raportti)
+-   [Toimittajien ostohyvitykset](https://docs.microsoft.com/dynamics/s-e/) (raportti)
 
 ## <a name="product-receipt-and-invoicing"></a>Tuotteen vastaanotto ja laskutus
 -   [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
@@ -104,6 +103,3 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

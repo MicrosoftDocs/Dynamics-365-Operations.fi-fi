@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6ba2e1a3a884d29bff491f914aa2d5f9ece2b84
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427314"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154224"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Kysynnän ennusteiden historiallisten tietojen tuominen
 
@@ -40,13 +39,15 @@ Ennusteiden tarkkuuden varmistamiseksi historiallisia kysyntätietoja tulee olla
 
 Voit käyttää tietoyksikköä, kun käytössä on historialliset kysyntätiedot sisältävä Microsoft Excel -tiedosto tai CSV-tiedosto (pilkulla erotettujen arvojen tiedosto). Seuraavassa esimerkissä näytetään, miten tiedot tuodaan CSV-tiedostosta.
 
+Lisätietoja tietojen tuonnista sekä tietojen tyhjentämisestä tuonnin jälkeen on kohdassa [Tietojen tuonti- ja vientityöt – yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) ja siihen liittyvissä aiheissa.
+
 ## <a name="example"></a>Esimerkki
 
-Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Tämä tiedosto sisältää nimikkeen D0001 historialliset kysyntätiedot. Se sisältää vain seuraavat pakolliset kentät: sivusto, määrä ja kysynnän päivämäärä.
+Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). Tämä tiedosto sisältää nimikkeen D0001 historialliset kysyntätiedot. Se sisältää vain seuraavat pakolliset kentät: sivusto, määrä ja kysynnän päivämäärä.
 
 1. Valitse yritys, johon historialliset kysyntätiedot tuodaan.
 2. Avaa **Tietojen hallinta** -työtila.
-3. Valitse **Tuo**-ruutu.
+3. Valitse **Tuonti**-ruutu.
 4. Syötä tuontiprojektin nimi, kuten **Nimikkeen D0001 historiallisen kysynnän tuominen**.
 5. Valitse **Lähdetietojen muoto** -kenttään tuotavan tiedoston muoto. Voit tuoda tämän esimerkin HistoricalDemandData-tiedoston valitsemalla **CSV**.
 6. Valitse **Yksikön nimi** -kenttään **Historiallinen ulkoinen kysyntä**.
@@ -58,7 +59,5 @@ Kun historialliset kysyntätiedot on tuotu, voit luoda kysynnän ennusteen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)  
+[Tietojen tuonti- ja vientityöt – yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)

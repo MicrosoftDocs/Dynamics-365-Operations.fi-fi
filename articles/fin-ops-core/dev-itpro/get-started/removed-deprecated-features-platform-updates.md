@@ -3,7 +3,7 @@ title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689563"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154084"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -32,7 +32,55 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="feature-removed-effective-january-28-2021"></a>Toiminto poistettiin 28. tammikuuta 2021
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Erätyö SQL-indeksin eheyttämisen käsittelemistä varten
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tämä toiminto on poistettu, jotta asiakkaiden indeksinhallinnan toiminnan, valvonnan ja ylläpidon yleiskustannuksia voidaan pienentää. |
+| **Onko toinen ominaisuus korvannut?**   | Jatkossa Microsoftin palvelut suorittavat indeksin ylläpidon. Sitä tehdään jatkuvasti ilman, että se vaikuttaa käyttäjän työkuormiin. |
+| **Tuotealueet, joihin vaikutetaan**         | Finance and Operations -sovellukset|
+| **Käytön asetukset**              | Pilvikäyttöönotto – vaikuttaa Microsoftin hallitsemiin tuotantoympäristöihin ja tason 2–5 eristysympäristöihin. |
+| **Tila**                         | Tämä toiminto on poistettu. |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.17
+
+> [!IMPORTANT]
+> Versio 10.0.17 on saatavana esiversion julkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [One Version -palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Uusimpien Visual Studio -versioiden tueksi on tehtävä joitakin muutoksia Visual Studion X + +-laajennuksiin. Nämä muutokset eivät ole yhteensopivia Visual Studio 2015:n kanssa. |
+| **Onko toinen ominaisuus korvannut?**   | Visual Studio 2017 korvaa Visual Studio 2015:n käyttöönotettuna ja vaaditussa muodossa. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. Päivityksen myötä edelliset X++-työkalut poistetaan Visual Studio 2015:stä eivätkä päivitetyt työkalut asennu Visual Studio 2015:een. Tällä ei ole vaikutusta isännöityihin koontiversioihin. Koontinäennäiskoneissa koontijakso (koontimääritelmä) on päivitettävä manuaalisesti muuttamaan riippuvuus MSBuild 14.0:sta (Visual Studio 2015) to MSBuild 15.0:aan (Visual Studio 2017) kohdassa [Vanhan jakson päivittäminen Azure-jaksoissa](../dev-tools/pipeline-msbuild-update.md). |
+
+### <a name="user-avatar"></a>Käyttäjän avatar 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Siirtymispalkin oikealla puolella näkyvä käyttäjän avatar noudettiin käyttämällä Dynamics 365:n otsikon ohjausobjektin ohjelmointirajapintaa, joka on vanhentunut. |
+| **Onko toinen ominaisuus korvannut?**   | Käyttäjät näkevät sen sijaan nimikirjaimessa siirtymispalkissa olevassa ympyrässä. Tämä on sama visualisointi, joita käytetään tällä hetkellä kehittämiskoneissa. |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Poistettu versiosta 10.0.17 alkaen |
+
+### <a name="enterprise-portal-ep-deprecation"></a>Yritysportaalin (EP) poistaminen  
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Dynamics AX 2012 -yritysportaaliin (EP) liitetyt metatietojen artefaktit ovat vanhentuneet, sillä EP:tä ei koskaan tuettu Finance and Operations -sovelluksissa. |
+| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. Kaikki EP-koodi on ajoitettu poistettavaksi lokakuun 2021 julkaisussa. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.15
 
@@ -192,6 +240,3 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poistettujen tai vanhentuneiden toimintojen aiemmat ilmoitukset
 Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa on kohdassa [Poistetut tai vanhentuneet toiminnot edellisissä versioissa](../migration-upgrade/deprecated-features.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

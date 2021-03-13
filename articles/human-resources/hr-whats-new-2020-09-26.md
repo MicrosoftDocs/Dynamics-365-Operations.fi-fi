@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527407"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152194"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 26. syyskuuta 2020
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527407"
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
-Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Tässä julkaisussa
 
@@ -58,7 +57,7 @@ Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 | 481401 | Jaksotuksen käsittely jumiutuu, kun jaksotuksen päivämääräperuste on jaksotuksen alkamispäivän jälkeen kuun lopussa. | Jaksotuksen käsittely on päivitetty siten, että siinä ei ole viivettä, kun jaksotuksen päivämääräperuste on jaksotuksen alkamispäivän jälkeen kuun lopussa |
 | 447167 | Vanhentuvien tietueiden luettelossa on ei-aktiivisia työntekijöitä | **Henkilöstöhallinto**-kohdan **Vanhentuvat tietueet** -välilehti sisälsi ei-aktiivisia työntekijöitä. Nyt se sisältää vain aktiiviset työntekijät. |
 | 486840 | **Minulle määritetyt työnimikkeet** -kohdasta avautuu väärä poissaolopyyntö. | Poissaolopyynnön valitseminen **Minulle määritetyt työnimikkeet** -kohdassa ei enää avaa uusinta nykyiselle käyttäjälle määritettyä poissaolopyyntöä. |
-| 506868 | Common Data Servicen **Otsikko**-kenttä ei ole määritetty **Tehtävänimike**-entiteetille | **Työ**- ja **Tehtävänimike**-entiteettien **Otsikko**-kenttä näkyi määrittämättömänä. **Otsikko**-kenttä näkyy nyt. |
+| 506868 | Dataversen **Otsikko**-kenttä ei ole määritetty **Tehtävänimike**-entiteetille | **Työ**- ja **Tehtävänimike**-entiteettien **Otsikko**-kenttä näkyi määrittämättömänä. **Otsikko**-kenttä näkyy nyt. |
 | 430359 | Käytöstäpoiston tarkistusluettelon tehtäviä ei voi käyttää määritetyillä esimiehen ja työntekijän rooleilla | Työntekijät, joiden työsuhteen päättymispäivä on tulevaisuudessa, eivät voineet käyttää tarkistusluettelon tehtäviä, jos heillä oli vain työntekijän tai esimiehen rooli. Nyt käyttäjät, joilla on vain työntekijän tai esimiehen rooli, voivat käyttää käytöstäpoistotehtäviä, joiden työsuhteen päättymispäivä on tulevaisuudessa. |
 | 458102 | Uusi työntekijä ei näy luotaessa **Työntekijän palkanlaskentatiedot** -entiteetissä. | Uudet työntekijät sisältyvät työntekijän palkanlaskenta tietojen entiteettiin ilman, että työntekijän palkanlaskentatiedot olisi avattava ennen entiteetin vientiä. |
 
@@ -85,6 +84,3 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Päivitysprosessi](hr-admin-setup-update-process.md)
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
