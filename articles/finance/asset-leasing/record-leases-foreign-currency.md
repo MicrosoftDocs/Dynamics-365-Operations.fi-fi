@@ -52,3 +52,6 @@ Kun poistokulukirjauskansioviennit luodaan ulkomaanvaluuttaa käyttävälle vuok
 Lopullisen poistokulun summa voidaan laskea käyttämällä hieman eri vaihtokurssia, jolloin käyttöoikeusomaisuuserä poistetaan kokonaan sekä kirjanpitovaluuttana että raportointivaluuttana.
 
 Jos vuokrasopimus on luokiteltu **toteutumattomaksi vuokraksi**, järjestelmä tyhjentää automaattisesti kirjanpito- ja raportointivaluuttojen vaihtokurssit, jos ne on jo määritetty.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

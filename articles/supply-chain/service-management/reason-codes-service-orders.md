@@ -49,3 +49,6 @@ Syykoodit ovat valinnaisia. Voit päättää, vaaditaanko syykoodia, kun huoltot
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

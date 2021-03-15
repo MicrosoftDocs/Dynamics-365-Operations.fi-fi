@@ -97,3 +97,6 @@ Kun tulostat vapaateksti-, asiakas- ja projektihyvityslaskuja, ne sisältävät 
 
 > [!NOTE]
 > Varmista, että tiedostojen tulostettavat muodot on määritetty oikein sillä olettamuksella, että viitteet alkuperäisiin laskuihin tulostetaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

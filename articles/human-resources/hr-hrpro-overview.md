@@ -127,3 +127,6 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

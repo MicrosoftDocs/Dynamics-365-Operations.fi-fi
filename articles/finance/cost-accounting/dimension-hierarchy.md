@@ -332,3 +332,6 @@ Käyttöoikeusluettelon hierarkian asetuksilla hallitaan seuraavilla alueilla n�
 > [!NOTE] 
 > - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Käyttöoikeusluettelon hierarkia ei suojaa Exceliin vietyjä tietoja. Niinpä vain niiden kustannuslaskijoiden ja esimiesten, joilla on tietojen täydet katseluoikeudet, pitäisi käyttää raportointityökalua.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

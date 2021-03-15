@@ -54,3 +54,6 @@ Tuoterakenne voidaan liittää huoltokohteen suhteeseen. Huoltokohteen suhde voi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

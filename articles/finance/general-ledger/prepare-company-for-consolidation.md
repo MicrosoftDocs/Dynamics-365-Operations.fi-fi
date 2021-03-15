@@ -67,3 +67,6 @@ Konsolidoitu yritys on nyt määritetty kausittaiselle **Konsolidoi**-työlle. V
 
 > [!NOTE]
 > Ennen konsolidoinnin suorittamista yritykset on valmisteltava konsolidointia varten. Lisätietoja on kohdassa [Määritä tytäryhtiö konsolidointia varten](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ Varastosovellukseen voidaan luoda valikkovaihtoehto, jolla työntekijät voivat 
 - **Näytä varaston tila:** *Kyllä*
 
 Sivulla voi määrittää tarvittaessa myös muita kenttiä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

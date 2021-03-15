@@ -73,3 +73,6 @@ Tässä tehtävässä käytetään USMF-esittely-yritystä.
     * Tätä tiliä veloitetaan, kun avaava marginaali on kirjattu ja hyvitetään, kun maksu on kirjattu.  
 9. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Onnistumismittarit määritetään seuraavasti:
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Kokeilun yhdistäminen ja muokkaaminen](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

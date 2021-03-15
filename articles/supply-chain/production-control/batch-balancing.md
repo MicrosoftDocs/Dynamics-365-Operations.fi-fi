@@ -186,3 +186,6 @@ On olemassa kaksi poikkeusta sääntöön, jonka mukaan erätilauksissa voi käy
 1. Jos reseptin mittayksikkö ei ole sama kuin vaikuttavan ainesosan varastomittayksikkö, erän tasauta ei voi käyttää erätilauksessa.
 
 Jos erätilauksessa ei voi käyttää erän tasausta, se käsitellään erätilausten tavallisen prosessisyklin mukaisesti.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Tässä esimerkissä suunniteltu ostotilaus luodaan USMF-yrityksessä kattamaan 
 Seuraavassa kuvassa näkyy, miltä tämä esimerkki näyttäisi suunnittelun tuotantotilauksen **Monitasoinen tarvekohdistus** -sivulla.
 
 ![Kolme konsernin sisäistä yritystä sisältävä esimerkki](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

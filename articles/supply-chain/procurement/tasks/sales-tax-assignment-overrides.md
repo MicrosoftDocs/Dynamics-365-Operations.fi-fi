@@ -56,3 +56,6 @@ Tässä menettelyssä kerrotaan miten arvonlisäveroryhmät määritetään kaup
 21. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 22. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

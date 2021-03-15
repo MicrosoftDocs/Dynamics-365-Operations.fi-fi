@@ -54,3 +54,6 @@ Joissakin tilanteissa tietovarastoa ei kannata nollata. Niitä ovat esimerkiksi 
 > Seuraavaksi määritetään kaksi seikkaa, joita tietovaraston nollaus *ei* tee. <br>
 > - Nollaukset eivät tyhjennä raportin rakenteita. <br>
 > - Nollaukset eivät tyhjennä yritystietoja tai käyttäjätietoja, ellei niitä ole valittu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

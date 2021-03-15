@@ -182,3 +182,6 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
 - [Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen](er-country-dependent-model-mapping.md)
 - [Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

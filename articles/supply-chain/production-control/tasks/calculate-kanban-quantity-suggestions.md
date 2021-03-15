@@ -84,3 +84,6 @@ Tässä menettelyssä keskitytään tietyn kanbanin koon ja määrien optimointi
     * Huomaa, että tämä on kanban-määrän laskelman kiinteä kanban-määrä 4.  
 5. Valitse ListPanel-välilehti.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

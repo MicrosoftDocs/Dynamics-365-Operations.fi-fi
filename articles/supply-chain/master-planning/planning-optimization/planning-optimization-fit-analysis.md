@@ -113,3 +113,6 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 [Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
 
 [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

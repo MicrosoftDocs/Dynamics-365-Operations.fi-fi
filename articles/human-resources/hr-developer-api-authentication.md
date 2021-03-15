@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Kun olet hakenut käyttötunnussanoman, ohitat valtuutustietojen otsikossa olevan tunnuksen ja jokaisen pyynnön, jonka lähetät tietojen ohjelmointirajapintaliittymään edellä kuvatulla tavalla.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

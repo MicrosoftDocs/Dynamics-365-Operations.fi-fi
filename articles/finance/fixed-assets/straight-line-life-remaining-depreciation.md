@@ -79,3 +79,6 @@ Poiston määrä on sama vuosittain: (hankintahinta-jäännösarvo) / käyttövu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

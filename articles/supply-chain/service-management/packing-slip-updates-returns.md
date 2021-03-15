@@ -48,3 +48,6 @@ Kun päivität myyntisopimukseen kuuluvan palautetun nimikkeen pakkausluettelon,
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

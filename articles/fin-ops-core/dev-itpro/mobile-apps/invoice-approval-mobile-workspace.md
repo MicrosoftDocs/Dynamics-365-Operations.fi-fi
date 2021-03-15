@@ -86,3 +86,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 7.  Voit tarkastella laskuun liitettyjä huomautuksia tai tiedostoja valitsemalla **Liitteet**.
 8.  Viimeistele tarkasteluprosessi valitsemalla **Laskun tiedot** -sivulla soveltuva työkulkutoiminto.
 9.  Valitse **Valmis**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

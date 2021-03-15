@@ -153,3 +153,6 @@ Kullekin kulutyypille valittua tiliä veloitetaan, kun luodaan maksu, jonka tyyp
 
 > [!NOTE]
 > Vastatili valitaan toimeenpanokustannuksen maksuaikataulun rivien vuokratasolla. Tämä vastatili voidaan liittää toimittajaan tai kirjanpitotiliin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

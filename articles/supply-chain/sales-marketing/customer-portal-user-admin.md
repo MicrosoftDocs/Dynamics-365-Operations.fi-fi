@@ -95,3 +95,6 @@ Seuraavasta taulukosta ilmenee, mitkä myyntitilaukset kunkin verkkoroolin käyt
 
 > [!NOTE]
 > Vaikka sekä Sam että Jane ovat yhteyshenkilöitä, jotka työskentelevät asiakas X:ssä, he näkevät vain itse asettamiaan tilauksia eikä mitään muuta. Vaikka Maylla on järjestelmässä tilaus, hän ei näe tilausta asiakasportaalissa, koska hän on luvaton käyttäjä. (Lisäksi hän on asettanut tilauksen jonkin muun kanavan kautta kuin asiakasportaali.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

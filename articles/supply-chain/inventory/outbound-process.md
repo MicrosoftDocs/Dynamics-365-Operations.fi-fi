@@ -84,3 +84,6 @@ Varasto, jota ei ole vielä varattu, varataan keräysluettelon luonnin aikana. E
 Kun kaikki **Keräysluettelon kirjaaminen** -sivun keräilyrivit on kerätty, liittyvä lähetys on valmis. Myyntitilausten pakkausluetteloprosessi voidaan sitten alustaa keräillyn varaston perusteella.
 
 [![Lähtevien lähetysten päivittäminen](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

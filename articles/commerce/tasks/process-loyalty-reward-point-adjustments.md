@@ -49,3 +49,6 @@ T채ss채 menettelyss채 k채sitell채채n, miten kanta-asiakaskortin tietoa voi etsi�
 15. Valitse Korttitapahtumat.
 16. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

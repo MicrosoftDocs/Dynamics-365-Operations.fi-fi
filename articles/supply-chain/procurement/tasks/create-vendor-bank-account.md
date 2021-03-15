@@ -57,3 +57,6 @@ Tässä menettelyssä näytetään, miten luodaan toimittajalle pankkitili. Voit
 25. Valitse juuri luomasi tili **Pankkitili**-kentässä.
 26. Valitse **Tallenna**. Osoite voi periytyä pankkiryhmästä, jos sellainen on määritelty, tai sen voi lisätä tässä.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

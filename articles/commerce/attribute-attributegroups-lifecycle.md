@@ -256,3 +256,6 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 
     > [!NOTE]
     > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin tuotteisiin.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

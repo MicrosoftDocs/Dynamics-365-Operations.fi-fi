@@ -99,3 +99,6 @@ Alla olevassa kuvassa näkyy esimerkki **Ostotilaus**-sivusta, jossa **Tehtävä
 
 Samoin voit tarkastella työtilauksen ostoehdotusriviin liittyvää tehtävänumeroa tai syöttää sen valitsemalla **Työtilauksen ostoehdotus** -luettelosivulla ostoehdotuksen tietueen ja sitten **Ostoehdotus**-sarakkeessa ostoehdotuksen linkin. **Tehtävänumero**-kenttä löytyy **Rivitiedot**-pikavälilehden **Projekti**-välilehdeltä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

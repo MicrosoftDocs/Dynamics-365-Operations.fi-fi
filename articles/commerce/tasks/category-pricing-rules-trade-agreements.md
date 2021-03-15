@@ -58,3 +58,6 @@ Tässä menettelyssä käsitellään, miten myyntihinnan kauppasopimukset luodaa
 24. Valitse Luokan hintasäännöt -välilehti.
     * Kanavakohtaiset luokan hinnoittelusäännöt näkyvät tässä luettelossa.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

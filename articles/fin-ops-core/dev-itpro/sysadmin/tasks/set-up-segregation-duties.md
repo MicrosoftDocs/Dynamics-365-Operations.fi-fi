@@ -42,3 +42,6 @@ Voit määrittää sääntöjä erottamaan tehtävät, joilla on oltava eri käy
 
 > [!IMPORTANT] 
 > Tehtävien eriyttämisen sääntöjen noudattamista ei ole tarkistettu sääntöä luotaessa. Voit luoda säännön, joka luo ristiriidan aiemmin luoduille rooleille. Myös aiemmin luodut käyttäjän roolimääritykset voivat olla ristiriidassa uuden säännön kanssa. Vaatimustenmukaisuus on tarkistettava, kun sääntö luodaan tai sitä muokataan. Lisätietoja on kohdassa [Tehtävien eriyttämisen ristiriitojen tunnistaminen ja ratkaiseminen](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

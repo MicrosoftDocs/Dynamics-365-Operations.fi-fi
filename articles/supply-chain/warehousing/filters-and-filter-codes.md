@@ -165,3 +165,6 @@ Toimittajan suodatinkoodit määritetään seuraavasti:
 ## <a name="see-also"></a>Lisätietoja
 
 [Lisätietoja on blogikirjoituksessa WMS-varaston suodatinkoodit](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -207,3 +207,6 @@ Näkyviin tulee työntekijän huollettavien kattavuustiedot.
 
 > [!NOTE]
 > Sivulla näkyvät vain ne edut, jotka on merkitty **ACA-raportoitaviksi**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Arnie tarkastelee tietoja **Asiakastapahtumat**-sivulla.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

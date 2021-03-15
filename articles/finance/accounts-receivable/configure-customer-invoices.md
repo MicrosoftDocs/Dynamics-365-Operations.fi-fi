@@ -166,3 +166,6 @@ Seuraavat kentät muuttaa kirjausprosessin toimintaa.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Järjestelmä kohtelee kirjauskansion otsikon asetusta ensisijaisena. Oletusarvo
 4. Aseta **Asetukset**-välilehden **Viivästynyt veron laskenta** -asetuksen arvoksi **Kyllä**.
 
 ![Kirjauskansiosivun kuva](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

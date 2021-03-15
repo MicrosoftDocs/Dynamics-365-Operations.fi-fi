@@ -106,3 +106,6 @@ Tässä artikkelissa käsitellään Microsoft Dynamics AX -sovellusversion 7.0.1
 [Uudet ja muuttuneet ominaisuudet Finance and Operationsin aloitussivulla](whats-new-changed.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

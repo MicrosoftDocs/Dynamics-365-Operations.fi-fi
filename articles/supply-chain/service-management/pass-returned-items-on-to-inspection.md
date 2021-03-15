@@ -55,3 +55,6 @@ Tällöin järjestelmä luo karanteenitilauksen, ja tarkastuksia suorittava henk
 
 [Palautettujen nimikkeiden poistotavan määrittäminen](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

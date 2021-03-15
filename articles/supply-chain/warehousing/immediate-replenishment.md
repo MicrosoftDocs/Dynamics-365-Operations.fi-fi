@@ -56,3 +56,6 @@ Jos sijaintidirektiiviriville valitaan välitön kohdistus mutta mitään täyde
 
 - Varmista, että käytetty kysynnän täydennyksen malli on määritetty käyttämään oikeita **Täydennys**-tyypin sijainti- ja työmalleja.
 - Varmista, käytettävissä olevaa varastoa on riittävästi niissä sijainneissa, joissa kysynnän täydennyksen malli hakee käytettävissä olevaa varastoa täydennystä varten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

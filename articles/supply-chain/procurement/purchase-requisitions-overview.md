@@ -201,3 +201,6 @@ Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

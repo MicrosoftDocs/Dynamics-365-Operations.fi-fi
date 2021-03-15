@@ -55,3 +55,6 @@ LCS-määritys on nyt valmis. Seuraavaksi [määritetään skenaariot](iot-scena
 2. Siirry LCS:ssä Supply Chain Management -ympäristön tietoihin.
 3. Vieritä **Ympäristön lisäosat** -osaan.
 4. Valitse IoT-analytiikkalisäosan osalta **Poista asennus**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

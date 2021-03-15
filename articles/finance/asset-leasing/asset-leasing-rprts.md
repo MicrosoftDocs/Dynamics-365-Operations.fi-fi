@@ -164,3 +164,6 @@ Painotetun keskimääräisen diskonttauskoron raportti täyttää Yhdysvaltojen 
 |     Valuutta                          |     Käytetyn tapahtumavaluutan lyhenne. Kaikki raportit muuntavat tapahtumavaluutan raportointivaluutaksi.  |
 |     Vuokria jäljellä          |     Maksamattomien vuokrien kokonaissumma, joka on jäljellä maksuaikataulusta **alkupäivämäärästä** lähtien.            |
 |     Painotettuja maksuja jäljellä       |     Jäljellä olevat vuokramaksut kerrottuna käytetyllä diskonttauskorolla.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

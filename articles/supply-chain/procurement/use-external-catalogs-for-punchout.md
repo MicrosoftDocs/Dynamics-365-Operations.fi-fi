@@ -54,3 +54,5 @@ Kun varasto-ottoehdotus on valmis, käytä **Työnkulku** > **Lähetä** -toimin
 
 - [Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen](set-up-external-catalog-for-punchout.md)
 - [Ostojen cXML-parannukset](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

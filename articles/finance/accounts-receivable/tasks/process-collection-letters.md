@@ -87,3 +87,6 @@ Ohita maksut ja hyvityslaskut maksukehotuksen koodia laskettaessa seuraavasti.
 
 1. Valitse ensin **Siirtymisruutu > Moduulit > Luotonvalvonta > Asetukset > Myyntireskontran parametrit** ja sitten **Perintä**-välilehti. 
 2. Vaihda **Älä huomioi maksuja tai hyvityslaskuja maksukehotuksen koodin laskemisessa** -arvoksi **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

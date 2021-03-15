@@ -47,3 +47,6 @@ Seuraava kuva ilmaisee, miten pääsuunnittelun kysynnän hajotus etenee. ![Kysy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

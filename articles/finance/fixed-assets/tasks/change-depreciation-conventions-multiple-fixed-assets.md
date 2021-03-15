@@ -48,3 +48,6 @@ Tässä tehtävässä päivitetään määritetyn käyttöomaisuusryhmän poisto
 15. Valitse OK.
     *  Käsittelyn tulokset näytetään joukkopäivitysraportissa.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

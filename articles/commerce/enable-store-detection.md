@@ -68,3 +68,6 @@ Voit ottaa sijaintiin perustuvan myymälän tunnistamisen käyttöön Commercess
 [Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

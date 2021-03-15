@@ -50,3 +50,6 @@ Seuraavien vaiheiden avulla voit perua tallentamattomat muutokset resursointitau
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

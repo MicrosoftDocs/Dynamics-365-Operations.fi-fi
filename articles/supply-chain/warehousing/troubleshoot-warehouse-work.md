@@ -49,3 +49,6 @@ Tämä ongelma korjataan muutoksilla, jotka otetaan käyttöön [KB 4571546:n](h
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Microsoft on arvioinut ongelman ja määrittänyt, että se on ominaisuuden rajoitus. Tällä hetkellä varastonhallintaprosessit tukevat vain varastoa, jonka omistaja on yritys.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

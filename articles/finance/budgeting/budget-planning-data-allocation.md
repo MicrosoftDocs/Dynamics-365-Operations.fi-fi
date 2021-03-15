@@ -76,3 +76,6 @@ Lopuksi lisätään budjettisuunnittelun vaiheen kohdistuksen haluttuun työnkul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

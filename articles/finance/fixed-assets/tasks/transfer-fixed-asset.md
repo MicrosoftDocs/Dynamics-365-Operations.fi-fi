@@ -47,3 +47,6 @@ Tässä tehtäväoppaassa siirretään käyttöomaisuuskirjan taloushallinnon ti
     * Tarkastele tuloksia, ennen kuin siirrät käyttöomaisuuskirjat.  
 10. Valitse **Siirrä**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Tässä tehtävän tallennuksessa esitellään arvonlisäveroryhmien ja nimikkei
 19. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 20. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

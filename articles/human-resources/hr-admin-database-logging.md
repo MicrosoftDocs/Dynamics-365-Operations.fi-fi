@@ -87,3 +87,6 @@ Tietokantalokin tyhjentäminen määritetään seuraavasti:
    - Luonnin päivämäärä ja aika
 
 3. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

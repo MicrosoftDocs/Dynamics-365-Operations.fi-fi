@@ -48,3 +48,6 @@ Määritä selaimen ponnahdusikkunoiden estotoiminto sallimaan ponnahdusikkunat 
 **Avaa uudessa ikkunassa** -toiminto on käytettävissä vain, kun ikkunassa on avoinna useita sivuja. Ponnahdusikkuna suljetaan automaattisesti, kun sivuja ei ole enää avoinna (eli sitten, kun ikkunan viimeinen sivu suljetaan). Järjestelmä sulkee sivut myös silloin, kun siirryt sovelluksen toiselle alueelle. Niinpä jos ponnahdusikkunoita on avoinna silloin, kun siirryt sovelluksen toiselle alueelle, ponnahdusikkunat sulkeutuvat automaattisesti, koska järjestelmä sulki ikkunoissa olevat sivut.
 
 Ponnahdusikkunoiden yläpalkeissa on tietoja yrityksestä, jolle sivu on avattu. Tiedot ovat vain luku -muodossa. Ponnahdusikkunat ovat riippuvaisia myös selainikkunasta. Jos pääikkuna suljetaan tai päivitetään, kaikki avoimet ponnahdusikkunat siirtyvät vain luku -tilaan. Jos näin tapahtuu, voit yhä tarkastella ikkunoiden tietoja, mutta et voi käsitellä niitä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

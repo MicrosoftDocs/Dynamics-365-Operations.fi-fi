@@ -238,3 +238,6 @@ Järjestelmä voidaan määrittää nollaamaan laskuri automaattisesti aina, kun
 1. Valitse **Resurssien hallinta \> Asetukset \> Työtilaukset \> Elinkaaren tilat**.
 1. Valitse luetteloruudussa se työtilauksen elinkaaren tila, jonka liittyvä laskuri on nollattava.
 1. Määritä **Yleinen**-pikavälilehden **Nollaa laskuri** -asetukseksi *Kyllä*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

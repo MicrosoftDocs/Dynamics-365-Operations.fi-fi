@@ -107,3 +107,6 @@ Lisätietoja erilaisista sivujen etsimistavoista on aiemmin tässä artikkelissa
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kenttien kuvausten mukauttaminen](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

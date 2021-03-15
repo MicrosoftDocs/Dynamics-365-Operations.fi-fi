@@ -47,3 +47,6 @@ Tämä menettely osoittaa, miten projektin ostotilaus luodaan. Tässä tehtävä
     * Tarkista, että myynti- ja kustannushinnat ovat käytettävissä. Jos ne eivät ole käytettävissä mutta niitä tarvitaan, anna tiedot.  
 14. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

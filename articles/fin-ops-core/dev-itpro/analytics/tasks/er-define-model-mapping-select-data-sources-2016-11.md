@@ -157,3 +157,6 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 71. Sulje sivu.
 72. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

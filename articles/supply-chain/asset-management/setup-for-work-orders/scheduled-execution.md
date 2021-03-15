@@ -42,3 +42,6 @@ Työtilauksiin liittyvät ajoitetut suoritusmääritykset voivat olla yleisiä t
 6. Valitse **Tallenna**.
 
 ![Ajoitettu suoritus](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

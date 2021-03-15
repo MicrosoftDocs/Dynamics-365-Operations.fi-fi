@@ -103,3 +103,6 @@ Voit lisätä mediavalikoimamoduulin markkinointisivulle seuraavasti.
 [Konttimoduuli](add-container-module.md)
 
 [Kuvien lataaminen palveluun](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

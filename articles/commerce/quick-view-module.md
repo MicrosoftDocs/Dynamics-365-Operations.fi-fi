@@ -77,3 +77,6 @@ Voit lisätä pikanäkymämoduulin tuotekokoelmamoduuliin Commercen sivustonmuod
 [Tuotekokoelmamoduuli](product-collection-module-overview.md)
 
 [Hakutulosmoduuli](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

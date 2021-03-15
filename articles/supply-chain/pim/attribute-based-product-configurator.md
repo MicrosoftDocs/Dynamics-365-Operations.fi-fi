@@ -140,3 +140,6 @@ Viimeiseksi määritetään tuotemalliversion määritepohjaiset myyntihinnat. T
 1. Avaa toimintoruudussa **Malli**-välilehti ja valitse **Tuotemallin tiedot** -ryhmässä **Versiot**.
 1. **Versiot** -sivu avautuu. Varmista, että **Hinnoittelumenetelmä**-asetuksena on **Määritepohjainen**.
     ![Hinnoittelumenetelmän määrittäminen määritepohjaiseksi](media/prod-config-versions.png "Hinnoittelumenetelmän määrittäminen määritepohjaiseksi")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

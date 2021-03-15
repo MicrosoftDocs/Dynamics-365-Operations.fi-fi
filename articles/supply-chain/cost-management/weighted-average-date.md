@@ -195,3 +195,6 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

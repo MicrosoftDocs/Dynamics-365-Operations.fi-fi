@@ -87,3 +87,6 @@ Kun kirjaat laskelman, myyntitilaukset ja laskut luodaan laskelman myyntiin.
 - Myynti, johon asiakas on lisätty tapahtumaan POS:ssa luo erillisiä myyntitilauksia ja laskuja, yksi kutakin asiakaskohtaisesti.
 
 Maksukirjauskansioita luodaan automaattisesti lausunnon maksuille, ja varasto päivitetään myyntipistemyymälälle.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

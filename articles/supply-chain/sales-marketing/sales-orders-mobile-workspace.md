@@ -141,3 +141,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 4.  Valitse asiakas.
 5.  Valitse **Yhteystiedot** tai **Myyntitilaukset**. Jos valittuna on **Myyntitilaukset**, näyttöön tulee luettelo asiakkaan myyntitilauksista.
 6.  Valitse **Myyntitilaus**. Voit nyt tarkastella tietoja myyntitilausriveistä, toimituksista, asiakkaan yhteystiedoista ja tilauksen vastaanottajan yhteystiedoista.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

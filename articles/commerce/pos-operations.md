@@ -208,3 +208,6 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 § Kun myyntipiste on offline-tilassa, vain nykyisen offline-tietokannan tapahtumia voi jatkaa palautusta varten.
 
 \*\* Kun myyntipiste on offline-tilassa, vain nykyisen offline-kanavatietokannan tapahtumat näytetään kirjauskansiossa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

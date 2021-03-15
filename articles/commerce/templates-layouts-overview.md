@@ -111,3 +111,6 @@ Lisätietoja esimääritettyjen asetteluiden käyttämisen aloittamisesta on koh
 [Esimääritettyjen asettelujen käyttö](work-with-layouts.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

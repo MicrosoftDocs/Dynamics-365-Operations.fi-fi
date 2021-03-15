@@ -121,3 +121,6 @@ Voit lisätä ulkoisen komentosarjan suoraan sivustonmuodostimen malliin noudatt
 [Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
 
 [Kielten lisääminen sivustoon](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Tässä ohjeaiheessa kuvataan, kuinka voit määrittää päätilien luokat. Pä
 3. Valitse päätilit valitsemalla **Linkitetty**-vaihtoehto tai poistamalla sen valinta.
 4. Valitse **OK**.
 5. Valitse **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

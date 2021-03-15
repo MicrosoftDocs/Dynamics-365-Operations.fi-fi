@@ -65,3 +65,6 @@ Uusi Dataverse -ratkaisu tulee pian saataville seuraavin muutoksin:
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

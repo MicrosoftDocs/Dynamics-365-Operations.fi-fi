@@ -72,3 +72,6 @@ Tässä menettelyssä kerrotaan, miten tuotepaketti luodaan ja miten sitä käyt
 17. Valitse Luo.
 18. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

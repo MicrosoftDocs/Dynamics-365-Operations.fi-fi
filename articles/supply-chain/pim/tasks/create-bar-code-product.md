@@ -42,3 +42,6 @@ Tässä aiheessa kuvataan viivakoodin manuaalinen luonti käyttämällä esimerk
 12. Valitse **Tallenna**.
 13. Sulje sivu. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -174,3 +174,6 @@ Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset va
 6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettel
 3. Valitse **OK**.
 4. Valitse **Suunnitellut tilaukset**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

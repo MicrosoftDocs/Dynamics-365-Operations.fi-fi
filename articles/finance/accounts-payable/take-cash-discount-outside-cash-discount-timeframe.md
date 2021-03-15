@@ -90,3 +90,6 @@ Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. **Käyt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

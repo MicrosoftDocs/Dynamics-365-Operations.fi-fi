@@ -82,3 +82,6 @@ Napsauta **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje pr
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

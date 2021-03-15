@@ -125,3 +125,6 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 > [!NOTE]
 > Tietojen hankkiminen sovelluksen metatiedoista tällä tavoin on käytettävissä vain paikallisesti käyttöönotetuissa sovelluksissa (kun liiketoimintatietojen paikallista (LBD) käyttöönottomallia käytetään).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

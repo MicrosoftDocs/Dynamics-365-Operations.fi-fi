@@ -83,3 +83,6 @@ Asiakkailla on tiettyjä oikeuksia palautuksiin molemmissa SEPA-suoraveloitusmal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

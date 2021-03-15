@@ -106,3 +106,6 @@ Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisu
 [Tekstilohkomoduuli](add-content-rich-block.md)
 
 [Videotoistinmoduuli](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

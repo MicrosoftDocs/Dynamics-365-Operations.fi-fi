@@ -66,3 +66,6 @@ Kirjanpidon lisätapahtumien välttämiseksi kirjattaessa debet ja kredit samall
 
 -   Organisaatiot käyttävät usein kiinteitä dimensioita, jotta voidaan täyttää nollilla taloushallinnon dimensio, joka ei ole pakollinen. Tämä on yleistä tasetileissä, kuten myyntireskontrassa/ostoreskontrassa. Tilirakenteita voidaan käyttää seuranna poistamiseen taloushallinnon dimensioista, jotka on yleensä täytetty nollilla.  Voit poistaa kirjanpitodimension tasetileiltä, jotta ei tarvitse käyttää kiinteitä dimensioita.
 -   Jos organisaatiosi vaatii kiinteitä dimensioita myyntireskontran/ostoreskontran päätilille, etsi tapa liittää kiinteä dimensio oletusarvoisesti maksuun, jotta kiinteä dimensioarvo tallennetaan maksun toimittajatapahtumaan. Tällöin järjestelmä luo myyntireskontran/ostoreskontran päätilin sisältämään kiinteät dimensioarvot. Kiinteä dimensioarvo voidaan määrittää oletusarvona joko toimittajille tai maksukirjauskansion kirjauskansionimelle.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

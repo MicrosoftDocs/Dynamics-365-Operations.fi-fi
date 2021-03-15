@@ -110,3 +110,6 @@ Voit lähettää käyttäjille ilmoituksia, kun automaattinen tehtävä on suori
     </table>
 
 8. Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

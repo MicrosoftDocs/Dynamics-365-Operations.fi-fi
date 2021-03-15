@@ -139,3 +139,6 @@ Todistuksen allekirjoittavan käyttäjän on annettava manuaalisesti sivujen mä
 ### <a name="page-numbers"></a>Sivunumerot
 
 Asiakirjan alareunaan tulostettu käytössä oleva sivu ja sivujen määrä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

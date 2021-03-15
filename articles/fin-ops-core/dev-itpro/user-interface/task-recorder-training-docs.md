@@ -123,3 +123,6 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 [Tehtävien tallennustoiminto](task-recorder.md)
 
 [Monipuolisten ohjeaiheiden luominen tehtävien tallennustoiminnolla (ulkoinen linkki)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Lisätietoja on kohdassa [Poistomenetelmät ja -käytännöt](depreciation-metho
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

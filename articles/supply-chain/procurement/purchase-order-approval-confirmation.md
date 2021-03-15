@@ -98,3 +98,6 @@ Jos ostotilaus on muutostenhallinnan piirissä, mikä tahansa muutos, kuten tila
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Hankintahinta on 100 000, kerroin on 20, käyttöikä on 10 vuotta ja poisto alk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

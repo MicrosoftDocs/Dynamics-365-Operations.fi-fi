@@ -61,3 +61,6 @@ Tässä menettelyssä keskitytään prosessin suunniteltujen kanban-töiden siir
 2. Valitse **Eteenpäin**. Huomaa, että työtä siirrettiin yksi rivi alaspäin luettelossa. 
 
 3. Valitse **Taaksepäin**. Huomaa, että työtä siirrettiin yksi rivi ylöspäin luettelossa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

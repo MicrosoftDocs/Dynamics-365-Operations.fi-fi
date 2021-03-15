@@ -50,3 +50,6 @@ Peruutuslaskun ja korjaavan laskun voi tunnistaa kahdella tavalla:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Pakkaamisprosessin avulla voit vahvistaa ja pakata tuotteita kontteihin. Tässä
 8. Syötä tai valitse arvo kentässä Painoyksikkö.
 9. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

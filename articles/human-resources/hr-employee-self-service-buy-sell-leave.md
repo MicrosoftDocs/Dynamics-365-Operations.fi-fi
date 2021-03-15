@@ -53,3 +53,6 @@ Saldo päivitetään joko automaattisesti tai se siirtyy hyväksyntäprosessiin 
 
 [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)</br>
 [Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

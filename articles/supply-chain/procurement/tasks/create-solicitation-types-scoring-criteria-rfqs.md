@@ -51,3 +51,6 @@ Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteyt
 8. Valitse OK.
 9. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -159,3 +159,6 @@ Seuraavassa taulukossa ovat maksuaikataulun ensimmäiset 12 kuukautta. Ota seura
 
 > [!NOTE]
 > Jos annuiteettityypiksi muutetaan **Erääntyvä annuiteetti**, maksu suoritetaan tammikuussa joulukuun sijaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

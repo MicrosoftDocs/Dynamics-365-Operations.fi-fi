@@ -82,3 +82,6 @@ Viivakoodien muodot on määritettävä viivakoodeille ennen, kuin niitä voi k�
 5. Valitse **Tallenna**.
 
 Viivakoodin muotoa voi nyt käyttää viivakoodien luomiseen tuotteille. Yllä olevat vaiheet ovat esimerkkejä siitä, kuinka tuotteille voi luoda viivakoodin muotoja, mutta ne kuvaavat myös, viivakoodin muotoja voi luoda mille tahansa muulle viivakoodin tyypille, joka on tuettu. Viivakoodin muodot, tyypit ja pituudet tulisi mukauttaa omaa käyttötarkoitusta ja -ympäristöäsi varten.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

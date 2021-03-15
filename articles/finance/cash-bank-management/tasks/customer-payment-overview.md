@@ -51,3 +51,6 @@ Tässä tehtävän ohjauksessa kerrotaan asiakkaan maksujen syöttämisessä kä
 21. Anna **Maksuviite**-kentässä maksuviite. Maksuviite vaaditaan vain, jos maksu on merkitty talletuskuittiin sisällytettäväksi.  
 22. Kirjaa asiakkaan maksut valitsemalla **toimintoruudussa** **Kirjaa**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

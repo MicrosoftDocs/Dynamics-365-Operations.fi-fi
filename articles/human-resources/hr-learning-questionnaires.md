@@ -44,3 +44,6 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 | [Lomakkeen suunnitteleminen](hr-learning-design-questionnaires.md) | Tämä artikkeli sisältää tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
 | [Kyselylomakkeiden jakelu ja aikataulutus](hr-learning-distribute-questionnaires.md) | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä. |
 | [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](hr-learning-evaluate-questionnaire-results.md) | Tässä artikkelissa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

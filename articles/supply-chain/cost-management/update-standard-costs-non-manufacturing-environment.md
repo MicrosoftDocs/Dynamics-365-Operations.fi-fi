@@ -51,3 +51,6 @@ Voit korjata, oikaista tai päivittää uusien nimikkeiden vakiokustannuksia seu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

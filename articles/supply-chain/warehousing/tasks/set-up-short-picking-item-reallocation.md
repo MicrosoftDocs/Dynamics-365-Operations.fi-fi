@@ -63,3 +63,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 6. Valitse luettelosta **Käyttäjätunnus**. Esimerkki: 24.
 7. Laajenna **Työ**-pikavälilehti.
 8. Valitse **Salli manuaalinen nimikkeen uudelleenkohdistus** -kentässä **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

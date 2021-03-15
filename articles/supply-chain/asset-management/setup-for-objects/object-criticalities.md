@@ -61,3 +61,6 @@ Voit määrittää kriittisyyden määrittämällä ensin kriittisyystyypit, joi
 - Työtilauksen kriittisyys lasketaan uudelleen aina, kun työtilausivi lisätään työtilaukseen tai poistetaan siitä.
 - Jos työtilaus sisältää useita työtilaustöitä, suurin kriittisyys, joka määräytyy **Kriittisyystyypit**-sivun **kerroin**-kentän mukaan, on aina käytössä työtilauksessa.
 - Yleensä resurssin kriittisyys voi muuttua kauden aikana. Kriittisyyteen voidaan vaikuttaa ostamalla uusia laitteita, kunnostustöitä, ja niin edelleen. Harkitse resurssien kriittisyyden uudelleenarviointia säännöllisin väliajoin (esimerkiksi kerran vuodessa tai joka toinen vuosi) varmistaaksesi, että kriittisyysmääritykset vastaavat nykyisiä tuotannon asetuksia.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

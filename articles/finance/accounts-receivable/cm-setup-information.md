@@ -152,3 +152,6 @@ Seuraavien vaiheiden avulla voit lisätä valittujen kriteerien perusteella luot
 2. Valitse vertailuoperaattori, joka määrittää, miten pisteytysryhmän tiedot arvioidaan.
 3. Määritä arvo, jota verrataan pisteytysryhmälle määritettyyn arvoon.
 4. Määritä luottoraja, joka määritetään, jos asiakastiedot vastaavat pisteytysryhmälle määritettyä arvoa. Voit esimerkiksi luoda automaattisen luottorajan **Alahainen pistemäärä** -ryhmälle. Jos toiminta-aika on yksi pisteytysryhmistä, voit määrittää yhden rivin, joka määrittää luottorajaksi 100 000, jos asiakas on toiminut viisi vuotta ja toisen rivin, joka määrittää luottorajaksi 200 000, jos asiakas on toiminut 10 vuoden ajan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

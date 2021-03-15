@@ -128,3 +128,6 @@ Nämä tehtävät on tarkoitettu järjestelmänvalvojille.
 8. Kirjoita Maa/alue-kenttään PRT.
 9. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

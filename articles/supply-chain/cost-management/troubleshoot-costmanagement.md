@@ -81,3 +81,6 @@ Nämä virheet voidaan välttää tai niitä voidaan vähentää käyttämällä
 - Vältä desimaaliarvojen käyttämistä standardikustannuksissa. Yritä määrittää vakiokustannus siten, että **Hintamäärä**-kentän arvoksi on määritetty *1*. Jos **Hintamäärä**-arvoksi on määritettävä arvo, joka on suurempi kuin *1*, yritä käyttää yksikön standardikustannuksessa mahdollisimman vähän desimaaleja. (Parhaassa tapauksessa desimaaleja on vähemmän kuin kaksi.) Yritä välttää standardikustannuksen asetuksina esimerkiksi seuraavia: **Hinta** = *10* ja **Hintamäärä** = *3*. Tässä tapauksessa yksikön vakiokustannukseksi tulee nimittäin 3,333333 (jossa desimaaliarvo toistuu).
 - Useimmissa asiakirjoissa kannattaa välttää sama tuotannon ja varaston taloushallinnon dimensioyhdistelmän käyttämistä useilla riveillä.
 - Vähennä rinnakkaisuutta. (Tässä tapauksessa järjestelmä voi nopeutua, koska päivitysristiriitoja ja uudelleenyrityksiä on vähemmän.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

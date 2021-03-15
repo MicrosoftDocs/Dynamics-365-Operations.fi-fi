@@ -103,3 +103,6 @@ Tässä esimerkissä valitaan sopiva ER-konfiguraatio ja tuodaan se malliyrityks
     Valitse tässä esimerkissä konfiguraation versio, jonka tila on **Jaettu**.
 
     Huomaa, että valitun tietomallin konfiguraation jaettu versio 1 on nyt myös käytettävissä.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

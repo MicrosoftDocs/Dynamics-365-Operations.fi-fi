@@ -61,3 +61,6 @@ Tässä esimerkissä vain nimiketunnus A0001 on inventoitava varastossa 61.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Inventointi](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

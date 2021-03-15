@@ -63,3 +63,6 @@ Ennen kuin tämän menettelyn voi suorittaa, ALV-tunnukset on määritettävä. 
 25. Anna tai valitse Verovapausnumero-kentässä arvo.
 26. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

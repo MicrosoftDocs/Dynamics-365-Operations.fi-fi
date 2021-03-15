@@ -34,3 +34,6 @@ Tässä menettelyssä näytetään, miten uuden tuotteen elinkaaren tila luodaan
 3. Kirjoita arvo Tila-kenttään.
 4. Kirjoita arvo Kuvaus-kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

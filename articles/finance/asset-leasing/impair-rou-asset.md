@@ -101,3 +101,6 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
 7. Voit tarkastella arvonalennuksen nettovaikutusta siirtymällä velka- ja resurssitapahtumien taulukoihin. Huomaa, että arvonalennuksen kulu on vähentänyt käyttöoikeusomaisuuserää, mutta vuokrasopimusvelan kirjanpitosumma ei ole muuttunut.
 
 Arvonalennuksella on toinen vaikutus, joka tulee ottaa huomioon. Koska käyttöoikeusomaisuuserän summa on nyt pienempi kuin vuokrasopimusvelka, summa on vähennettävä eri tavalla kuin ennen. Resurssi on nyt vähennetty tasapoistomenetelmällä kaikista vuokrasopimuksen jäljellä olevista 84 kuukaudesta tapahtumapäivämäärästä alkaen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

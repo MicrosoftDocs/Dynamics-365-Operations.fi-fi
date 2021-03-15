@@ -39,3 +39,6 @@ Seuraavassa menettelyssä on ohjeet, joiden avulla järjestelmänvalvojat voivat
 6. Valitse **Siirtymisruutu > Moduulit > Yleinen > Yleinen > Oletuskoontinäyttö**. Uuden ilmoituspalkin tai logon kuvan pitäisi näkyä koontinäytössä.  
     
     Yritys on ehkä vaihdettava yrityksen valinnassa yritykseksi, jolle ilmoituspalkki ladattiin.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

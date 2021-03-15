@@ -116,3 +116,6 @@ Seuraavassa taulukossa on näkyvissä kullakin raporttisivulla käytettävissä 
 | Laskut, joiden tuonti epäonnistui | <ul><li>Laskut, joiden tuonti epäonnistui</li><li>Laskut, joiden tuonti epäonnistui yrityksen mukaan</li></ul> |
 | Automaatiovirheen syyt | <ul><li>Epäonnistuneet laskut</li><li>Epäonnistuneet laskut yrityksen mukaan</li><li>Epäonnistuneet laskut toimittajaryhmän mukaan</li></ul> |
 | Työnkulun tila                | <ul><li>Työnkulussa olevat laskut</li><li>Toimittajan laskun työnkulkuesiintymät</li><li>Hyväksyjäkohtaiset tehtävät</li><li>Toimittajan laskun työnkulku yrityskohtaisesti</li><li>Työnkulun keskimääräinen pituus (päiviä) / hyväksyjä</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Tämän toiminnon avulla voit määrittää säännöt luokan tuotteiden tilaami
 6. Valitse vaihtoehto **Toimittajan valinta** -kentässä. Valitse sääntö, joka ohjaa luokan toimittajavalintaa, kun ostoehdotuksia luodaan.  
 7. Valitse **Sulje**. Määrittämäsi käytäntösäännöt ovat olleet kulutustyypin ostoehdotuksille. Jos haluat määrittää täydennystyypin ostoehdotusten käytäntöjä, luo sääntö käytäntösäännön tyypille "Täydennysluokan käyttöoikeuskäytäntöjen sääntö".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

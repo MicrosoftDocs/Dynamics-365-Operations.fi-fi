@@ -67,3 +67,6 @@ Voit valita minkä tahansa työntekijän ensisijaiseksi teknikoksi huoltosopimuk
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

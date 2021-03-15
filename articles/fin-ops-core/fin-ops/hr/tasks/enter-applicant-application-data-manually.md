@@ -61,3 +61,6 @@ Tässä menettelyssä kerrotaan, miten hakijoiden ja hakemusten tietoja ylläpid
 6. Valitse Tallenna.
     * Kun hakemus on tallennettu, voit liittää siihen asiakirjoja. Niitä ovat esimerkiksi hakijan kokemus, palkkiot ja kansilehti.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

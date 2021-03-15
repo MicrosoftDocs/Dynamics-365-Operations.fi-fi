@@ -130,3 +130,6 @@ Asiakirjan/kirjauskansion asetukseksi on määritetty Summat sisältävät arvon
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Voit hyväksyä erän yhdistämisen varastokirjauskansion **Kaikki erän yhdist�
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miksi en näe todellista painoa varaston kirjauskansiossa, kun olen yhdistänyt todellisen painon nimikkeen?
 Voit yhdistää todellisen painon nimikkeiden eriä samalla tavalla kuin muitakin nimikkeitä. Todellisen painon tietoja ei kuitenkaan näytetä varastokirjauskansiossa. Suosittelemme, että varmistat todelliset painotiedot ennen erän yhdistämisen siirtämistä varaston kirjauskansioon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

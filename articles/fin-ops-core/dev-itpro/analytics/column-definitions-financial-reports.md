@@ -598,3 +598,6 @@ Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä. Esimerkiksi *
 [Talousraporttien suunnittelutoiminnon rivimääritykset](row-definitions-financial-reporting.md)
 
 [Muotoilun lisäasetukset taloushallinnon raporteissa](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

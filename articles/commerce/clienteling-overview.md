@@ -132,3 +132,6 @@ Kun olet päivittänyt kentät, varmista valitsemalla **Vahvista**, että Commer
 8. Määritä Commercen **Commercen parametrit** -sivun **Asiakashallinta** -välilehden **Dynamics 365 Customer Insights** -pikavälilehdessä **Sovelluksen tunnus** -kentän arvoksi "CI_Access_AppID" (edellä olevasta vaiheesta 1). Valitse **salaisen koodin nimelle** edellä olevassa vaiheessa 7 syötetty nimi ("CISecret"). Määritä **Ota Customer Insights käyttöön** -asetukseksi **Kyllä**. Jos asetukset eivät jostain syystä onnistu, näet virhesanoman ja tämän asetuksen arvoksi määritetään **Ei**. 
 
 Customer Insightsissa voi olla useita ympäristöjä, kuten testi- ja tuotantoympäristöt. Kirjoita **Ympäristön esiintymätunnus** -kenttään asianmukainen ympäristö. Anna **Vaihtoehtoinen asiakastunnus** -kenttään se Customer Insights -ominaisuus, joka yhdistetään asiakastilin numeroon. (Commercessa asiakkaan tilinumero on asiakkaan tunnus.) Muut kolme ominaisuutta ovat mitat, jotka näkyvät asiakaskirjan asiakaskortissa. Voit valita enintään kolme asiakaskortissa näytettävää mittaria. Mittoja ei kuitenkaan tarvitse valita. Kuten aiemmin on mainittu, järjestelmä näyttää ensin nämä arvot ja näyttää sitten asiakaskirjan määriteryhmän arvot.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

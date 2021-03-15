@@ -146,3 +146,6 @@ Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänva
 5. Valitse nykyisen konfiguraation valmis versio.
     * Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

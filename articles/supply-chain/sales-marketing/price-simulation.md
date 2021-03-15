@@ -144,3 +144,6 @@ Hintasimulointi vaikuttaa vain siihen riviin, johon sit채 k채ytet채채n, v채hent�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

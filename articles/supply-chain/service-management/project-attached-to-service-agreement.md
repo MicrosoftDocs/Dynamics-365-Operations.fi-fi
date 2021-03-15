@@ -36,3 +36,6 @@ Kaikki huoltotilaustapahtumat rekisteröidään ja kirjataan huoltosopimukseen l
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

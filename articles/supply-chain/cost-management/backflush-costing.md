@@ -125,3 +125,6 @@ Arvota KET-työt ja tuota kauden päätöstila, johon lasketaan materiaalin, ty�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

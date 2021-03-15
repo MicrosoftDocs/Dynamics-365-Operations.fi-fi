@@ -159,3 +159,6 @@ Saatettuasi tietyn kauden raportointiprosessin päätökseen (esimerkiksi, kun v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

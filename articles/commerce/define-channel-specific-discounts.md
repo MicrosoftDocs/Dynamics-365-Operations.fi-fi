@@ -61,3 +61,6 @@ Seuraavassa esimerkissä käsitellään tehtäviä, jotka liittyvät kanava-alen
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

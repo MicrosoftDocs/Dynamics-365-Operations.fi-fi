@@ -123,3 +123,6 @@ Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemi
 | Kirjanpidon kalenterit                   | Kalenteri, kalenterin kuvaus                                                                                       |
 | Tilikaudet                       | Kalenterivuosi                                                                                                        |
 | Tilikaudet                     | Kalenterivuoden kausi                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

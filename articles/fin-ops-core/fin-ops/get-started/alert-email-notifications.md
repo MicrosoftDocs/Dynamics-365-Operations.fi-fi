@@ -50,3 +50,6 @@ Palvelu lähettää sähköposti-ilmoituksia käyttämällä valmiita sähköpos
 Seuraavassa kuvassa on sähköpostitse toimitettujen hälytysilmoitusten rakenne.
 
 [![Tietueen luontia, kentän muutoksia ja mallin poistoa koskevat mallipohjaiset hälytysilmoitukset](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

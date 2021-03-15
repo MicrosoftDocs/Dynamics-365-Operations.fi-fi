@@ -71,3 +71,6 @@ Voit määrittää tiettyjen toimitustapojen sähköpostimallit Commerce-pääko
 [Puhelinkeskustilausten luominen](tasks/create-call-center-orders.md)
 
 [Toimitustavan muuttaminen myyntipisteessä](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

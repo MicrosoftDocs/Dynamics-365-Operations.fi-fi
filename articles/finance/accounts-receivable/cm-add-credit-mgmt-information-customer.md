@@ -101,3 +101,6 @@ Voit luoda vakuussopimuksia ja takauksia **Kaikki asiakkaat** -sivulla (**Myynti
     Tässä tapauksessa todellinen luottoraja is 125 000 (= A + \[B × C\]).
     
     Jos kuitenkin **Sisältyy riskiin** -valintaruutu valitaan, **Päivitä luottoraja** -kohdan arvo 50 000 (= 50,00 prosenttia 100 000:sta) poistetaan ja riskiarvoksi tulee 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

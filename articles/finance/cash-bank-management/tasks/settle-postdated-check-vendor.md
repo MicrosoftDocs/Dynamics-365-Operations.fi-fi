@@ -51,3 +51,6 @@ T채m채 menettelyn rooli on Rahastonhoitaja. N채iss채 toimintaohjeissa k채ytet채�
 10. Valitse Tosite.
 11. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

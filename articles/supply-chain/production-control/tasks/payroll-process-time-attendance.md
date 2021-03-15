@@ -69,3 +69,6 @@ Tässä menettelyssä kerrotaan, miten palkanlaskentaprosessi otetaan käyttöö
 7. Valitse Muokkaa.
 8. Syötä tai valitse arvo Maksusopimus-kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

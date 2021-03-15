@@ -182,3 +182,6 @@ Esimerkiksi nimikkeen läpimenoaika on yksi päivä ja vastaanottomarginaali on 
 [Suunnittelun optimoinnin aloittaminen](get-started.md)
 
 [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

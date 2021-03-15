@@ -63,3 +63,6 @@ Voit viimeistellä pankkisiirrot avaamalla **Liittyvät tiedot** -osiossa **Kirj
 -   Saldo valuutan mukaan
 
 Voit tarkastella kaikkien yritysten pankkitietojen analytiikkaa **Kassayhteenveto – kaikki yritykset** -työtilassa. Lisätietoja on kohdassa [Kassayhteenvedon Power BI -sisältö](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

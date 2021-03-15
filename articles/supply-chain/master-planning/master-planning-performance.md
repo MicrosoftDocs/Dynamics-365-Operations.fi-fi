@@ -161,3 +161,6 @@ Ennen kattavuusvaihetta otetaan käyttöön esikattavuusvaihe, jonka aikana nimi
 - **Yksi kuormittava rutiini kerrallaan** – älä suorita pääsuunnittelu yhdessä muiden kuormittavien rutiinien kanssa.
 - **Tarkista istuntoloki.**
 - **Nimikkeiden suodatus** – Jätä nimikkeitä pääsuunnitteluajon ulkopuolelle elinkaaren tilan avulla. (Älä käytä nimikenumeroita.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

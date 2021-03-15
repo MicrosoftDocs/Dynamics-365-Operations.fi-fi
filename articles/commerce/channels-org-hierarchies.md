@@ -87,3 +87,6 @@ Seuraavassa kuvassa on hierarkian juureen lisätty yritys ja neljä kustannuspai
 [Kanavien yleiskatsaus](channels-overview.md)
 
 [Kanava-asetusten edellytykset](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

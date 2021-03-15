@@ -56,3 +56,6 @@ Kun määrität laskupäivityksen eräkäsittelyä varten, **Palautettu tilaus**
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

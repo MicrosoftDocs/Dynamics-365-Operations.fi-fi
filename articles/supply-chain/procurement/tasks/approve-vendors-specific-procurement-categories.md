@@ -43,3 +43,6 @@ Tässä ohjeaiheessa selitetään, miten tiettyjen hankintaluokkien toimittajat 
 13. Valitse **Ei** **Peri toimittajat ylemmän tason luokalta** -kenttään.
 14. Valitse **Kyllä** **Peri toimittajat ylemmän tason luokalta** -kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

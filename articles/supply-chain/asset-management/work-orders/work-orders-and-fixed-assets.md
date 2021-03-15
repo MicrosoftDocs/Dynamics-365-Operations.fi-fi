@@ -64,3 +64,6 @@ Seuraavassa menettelyssä kuvataan resurssien, työtilausten, työtilausten työ
 
 7. Jos haluat nähdä yhteenvedon käyttöomaisuuteen liittyvistä projekteista, valitse **Käyttöomaisuuserät** > **Käyttöomaisuuserät** > **Käyttöomaisuuserät** ja sitten **Käyttöomaisuuserän numero** -kentässä linkki käyttöomaisuudelle, joka avataan tietonäkymässä. Laajenna **Aiheeseen liittyviä tietoja** -ruutu sivun oikeassa reunassa ja valitse **Liittyvät projektit** -pikavälilehti.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

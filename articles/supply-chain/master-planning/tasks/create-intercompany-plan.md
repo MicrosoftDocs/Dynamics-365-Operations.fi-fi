@@ -53,3 +53,6 @@ Tässä menettelyssä kuvataan, miten luot konsernin sisäisen suunnitelman. Tä
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä. Napsauta StaticPlan-linkkiä. Sinun on oltava USMF-yrityksessä.  
 3. Valitse **Suunnitellut tilaukset**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

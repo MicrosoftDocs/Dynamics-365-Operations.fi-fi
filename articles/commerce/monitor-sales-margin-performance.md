@@ -48,3 +48,6 @@ Kahden hierarkkista ruudukkorakennetta hyödyntävän yksilöllisen raportin avu
 - **Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Tuotteet ja luokat** &gt; **Myymälän hallinta** &gt; **Raportti**
 - **Hinnoittelun ja alennusten hallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Hinnoittelu ja alennukset** &gt; **Myymälän hallinta** &gt; **Raportit**
 - **Kyselyt ja raportit** -osio &gt; **Vähittäismyynti ja kauppa** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

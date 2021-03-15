@@ -65,3 +65,6 @@ Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehd
 5. Valitse **toimintoruudussa** Suunnitelma.
 6. Valitse **Nimikekattavuus**. Huomaa, että **vähimmäismääräksi** on päivitetty uusi vähimmäismäärä varmuusvaraston kirjauskansiosta.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

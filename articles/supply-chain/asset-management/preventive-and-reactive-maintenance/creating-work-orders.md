@@ -95,3 +95,6 @@ Automaattisesti luotujen työtilausten ryhmittely määritetään seuraavasti:
 1. Jos vaihtoehtoja halutaan käyttää, kun vain osa ylläpitosuunnitelmista suoritetaan, lisää **Sisällytettävät tietueet** -pikavälilehdessä sopivat suodattimet aivan kuten muissakin Microsoft Dynamics 365 Supply Chain Managementin erätöissä.
 1. Määritä **Suorita taustalla** -pikavälilehdessä tarvittavat erä- ja aikataulutusvaihtoehdot aivan kuten muissakin Supply Chain Managementin erätöissä.
 1. Suorita ja/tai aikatauluta valitut ylläpitosuunnitelmat valitsemalla **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

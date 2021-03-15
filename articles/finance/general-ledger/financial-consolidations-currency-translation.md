@@ -181,3 +181,6 @@ Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioit
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

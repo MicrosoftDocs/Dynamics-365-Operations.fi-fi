@@ -113,3 +113,6 @@ Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.
     * Valitse esimerkiksi Lähtevät.  
 27. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

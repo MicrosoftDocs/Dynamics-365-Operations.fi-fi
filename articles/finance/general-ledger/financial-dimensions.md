@@ -139,3 +139,6 @@ Lisätietoja on seuraavissa aiheissa:
 
 - [Määritä taloushallinnon dimensiot](tasks/define-financial-dimensions.md)
 - [Ylläpidä taloushallinnon dimension oletusmalleja](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

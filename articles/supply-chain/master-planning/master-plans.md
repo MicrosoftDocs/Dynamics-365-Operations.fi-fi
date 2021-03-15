@@ -56,3 +56,6 @@ Alkuperäinen dynaaminen suunnitelma voidaan myös asettaa päivittymään uuden
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

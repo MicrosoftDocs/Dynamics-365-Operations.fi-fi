@@ -39,3 +39,6 @@ Etuuspäällikkö voi liittää työntekijöitä kiinteisiin kompensaatiosuunnit
     * Jos Kiinteä kompensaatiosuunnitelma on vaihesuunnitelma, valitse vaihe, joka sisältää työntekijän oikean palkkion. Jos Kiinteä kompensaatiosuunnitelma on palkkaluokan tai kompensaatioluokan suunnitelma, työntekijälle oikea palkkio. Palkkio vahvistetaan suunnitelman toleranssiasetusten ja työn kompensaatiotason vähimmäis- ja enimmäisviitepisteiden avulla.  
 8. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Päivitettyäsi käyttöomaisuuserien poistomenetelmän, voit käsitellä kunkin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

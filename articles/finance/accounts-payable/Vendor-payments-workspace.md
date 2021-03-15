@@ -77,3 +77,6 @@ Seuraavassa taulukossa on näkyvissä kullakin raporttisivulla käytettävissä 
 |    Toimittaja-/asiakassaldo     |                                                                                                                   <ul><li>Toimittaja-/asiakassaldo</li><li>Toimittaja-/asiakassaldo yrityksittäin</li><li>Toimittaja-/asiakassaldon tiedot</li></ul>                                                                                                                    |
 |    Laskun pidossa oleva maksu     |                                                                                         <ul><li>Laskun pidossa oleva maksu</li><li>Laskun pidossa oleva maksu -yksityiskohdat</li><li>Laskun pidossa oleva maksu yrityksittäin</li><li>Laskun pidossa oleva maksu toimittajaryhmittäin</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

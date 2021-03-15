@@ -50,3 +50,6 @@ Kun luot alkuperäisen budjettitapahtuman ja käytät budjettimallia ja dimensio
     * Jos haluat tehdä valinnaisia valintoja, napsauta sivun yläosassa avauskuvaketta.  
 18. Valitse Päivitä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

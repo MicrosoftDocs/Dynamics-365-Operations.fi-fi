@@ -40,3 +40,6 @@ Saat lisätietoja tästä ominaisuudesta toistamalla joukon ER-luontiasiakirjoja
 - [Sähköisen raportoinnin tietomallien määritys: Intrastat (malli)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [Sähköisen raportoinnin mallin yhdistämismäärityksen määrittäminen: Intrastat (yhdistämismääritys)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [Sähköisen raportointimuodon määritys: Intrastat (muoto)](https://go.microsoft.com/fwlink/?linkid=849038)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

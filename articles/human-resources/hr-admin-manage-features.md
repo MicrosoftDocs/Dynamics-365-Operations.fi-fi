@@ -94,3 +94,5 @@ Haluamme kuulla kokemuksistasi esikatseluominaisuuksien parissa. Kannustamme sin
 
 - [Uutta henkilöstöhallinnossa](hr-admin-whats-new.md)
 - [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

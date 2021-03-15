@@ -103,3 +103,6 @@ Seuraavassa esimerkissä näkyy, miten jälleenmyyjä voi suorittaa tämän teht
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ ms.locfileid: "4968676"
 5. Suorita vienti valitsemalla **OK**.
 
 Kun vienti on valmis, saat viestin, joka näyttää kuhunkin tiedostoon tallennettujen tietueiden lukumäärän. Tämän jälkeen voit tuoda tiedostoja konsolidointiyritykseen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

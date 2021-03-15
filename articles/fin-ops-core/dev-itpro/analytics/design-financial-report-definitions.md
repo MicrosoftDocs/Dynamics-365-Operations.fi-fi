@@ -84,3 +84,6 @@ Seuraavassa taulukossa kuvataan raportin määrityksen välilehdet sekä tietoje
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

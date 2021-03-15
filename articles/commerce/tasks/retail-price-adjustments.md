@@ -52,3 +52,6 @@ Tässä menettelyssä esitellään kaupan hinnanoikaisun luominen. Hinnanoikaisu
 14. Sulje sivu.
 15. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

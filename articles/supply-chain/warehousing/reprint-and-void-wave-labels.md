@@ -217,3 +217,6 @@ Työn poikkeukset määrittävät lyhyen keräilyn toiminnan. Määritä työn p
 1. Valitse **Lyhyt keräily**.
 1. Valitse tälle skenaariolle luotu työn poikkeuksen koodi.
 1. Jos valitsit oikean poikkeuksen, **Mitätöinti ja uudelleentulostus** -valintaruudun pitäisi olla valittavissa. Valitse valitse ruutu ja vahvista. Vahvistetun etikettirullasarjan tunnistaa siitä, että **Etiketin luontitunnus** -kenttä lasketaan uudelleen työrivin muutetun määrän mukaan. Se tulostetaan sitten uudelleen määritetyssä tulostimessa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

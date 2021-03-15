@@ -110,3 +110,6 @@ Voit käsitellä NSF-maksuja napsauttamalla Perintä-sivulla NSF-maksu -kohtaa. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

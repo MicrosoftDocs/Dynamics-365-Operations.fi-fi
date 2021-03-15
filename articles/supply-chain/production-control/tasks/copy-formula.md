@@ -64,3 +64,6 @@ Tässä menettelyssä keskitytään luomaan resepti, joka sisältää samat aine
 5. Klikkaa Valitse.
 6. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

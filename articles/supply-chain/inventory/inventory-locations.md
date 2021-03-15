@@ -65,3 +65,6 @@ Sijainteja voidaan kopioida varastosta toiseen ja luoda ohjatun toiminnon avulla
 --------
 
 [Luo uusi varastoasettelu](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

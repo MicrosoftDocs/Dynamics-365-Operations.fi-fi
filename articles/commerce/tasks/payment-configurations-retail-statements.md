@@ -52,3 +52,6 @@ Tässä tallenteessa käytetään esittely-yritystä USRT.
     * Valitse tili, jolle kassakaappiin toimitettavat summat kirjataan.  
 8. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

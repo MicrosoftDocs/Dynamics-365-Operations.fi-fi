@@ -66,3 +66,6 @@ Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään
 3. Suorita 1070-jakeluaikataulu, kun synkronoit muutokset kanavatietokannan kanssa. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

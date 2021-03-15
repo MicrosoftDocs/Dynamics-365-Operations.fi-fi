@@ -71,3 +71,6 @@ Varaston inventoinnit voidaan ajoittaa tai niiden ajoitus voidaan peruuttaa. Ajo
 ## <a name="inventory-lookup"></a>Varastohaku
 
 Tuotteen nykyistä määrää useissa myymälöissä ja varastoissa voi tarkastella **Varastohaku**-sivulla. Nykyisen käytettävissä olevan määrän lisäksi näkyvissä on myös kunkin myymälän luvattavissa oleva määrä (ATP). Valitse ensin myymälä, jonka ATP-määritä haluat tarkastella, ja **Näytä myymälän käytettävyys**. Lisätietoja käytettävissä olevista määritysvaihtoehdoista on kohdassa [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

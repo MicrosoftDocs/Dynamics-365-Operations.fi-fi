@@ -187,3 +187,6 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

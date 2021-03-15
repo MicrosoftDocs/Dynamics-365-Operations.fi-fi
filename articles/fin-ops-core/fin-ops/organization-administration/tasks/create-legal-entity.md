@@ -45,3 +45,6 @@ Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin k
 15. Laajenna **Verorekisteröinti**-osa. Kirjoita **Verorekisteröinti**-osaan rekisterinumerot, joita käytetään raportoitaessa veroviranomaisille.
 16. Laajenna **Vero 1099** -osa. Kirjoita **Vero 1099** -osaan yrityksen 1099-tiedot.  
 17. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

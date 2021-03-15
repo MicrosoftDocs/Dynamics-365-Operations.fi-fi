@@ -158,3 +158,6 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
 11. Avaa velka- ja käyttöomaisuustapahtumataulut, jos haluat tarkastella irtisanomisen nettovaikutusta, jossa ROU-käyttöomaisuus ja vuokravelka ovat 0 (nolla).
 
 Vuokraustilan olisi nyt oltava **Irtisanottu**. Tähän vuokraan ei kirjata muita kirjauskansiomerkintöjä, ellei irtisanomista peruta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

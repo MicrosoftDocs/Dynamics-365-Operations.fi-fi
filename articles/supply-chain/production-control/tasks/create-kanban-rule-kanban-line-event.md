@@ -68,3 +68,6 @@ Tämä menettely luo kanban-säännön vetämällä prosessitoiminnosta kanban-r
     * Huomaa, että kanban 27:lle luotiin käsittelemään toiminto, joka perustuu luotuun kanban-sääntöön.  
     * Tämä on viimeinen vaihe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

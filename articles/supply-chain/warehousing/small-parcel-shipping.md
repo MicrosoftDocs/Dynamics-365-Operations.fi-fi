@@ -279,3 +279,6 @@ Pakkaa lähetys seuraavasti:
     ![Osoitetarraesimerkki](media/sps-label-example.png "Osoitetarraesimerkki")
 
 1. Huomaa, että rahdinkuljettajalta saadut **Kontin lastiluettelon tunnus**- ja **Kokonaisrahti**-arvot on lisätty sellaisenaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

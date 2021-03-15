@@ -82,3 +82,6 @@ Lean-valmistus tukee myös niiden palvelujen osto- ja laskutusprosesseja, joihin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Voit lisätä luokkasivulle hakutulosmoduulin seuraavasti.
 [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Pikanäkymämoduuli](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Voit suorittaa osamaksun, jonka jälkeen tilitettäväksi voi jäädä hyvin pie
 
 
 Lisätietoja on ohjeaiheessa [Toimittajan maksujen yleiskatsaus](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ Seuraavassa kuvassa on esimerkki vapautetun tuotteen asetusten määrityksistä.
 [Yritysten luominen](channels-legal-entities.md)
 
 [Luo varianttiryhmä](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

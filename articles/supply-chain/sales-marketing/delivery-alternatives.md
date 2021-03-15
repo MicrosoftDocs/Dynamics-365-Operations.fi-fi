@@ -150,3 +150,6 @@ Tässä pikavälilehdessä korostetaan valitun toimitusvaihtoehdon vaikutusta. J
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luvatut tilaukset](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

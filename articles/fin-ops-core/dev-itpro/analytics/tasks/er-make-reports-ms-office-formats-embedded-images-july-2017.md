@@ -90,3 +90,6 @@ ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettely
  30. Valitse Kyllä kohdassa Salli esilaskun luonti käytöstä poistetuille pankkitileille: kenttä.  
  31. Valitse Tallenna.  
  32. Sulje sivu.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

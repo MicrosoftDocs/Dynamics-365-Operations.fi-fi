@@ -111,3 +111,6 @@ Poista tietyn suunnitelman ja päivämäärävälin jaksotustiedot. Jaksotuspäi
 
 [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)</br>
 [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

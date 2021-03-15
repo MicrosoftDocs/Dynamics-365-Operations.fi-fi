@@ -92,3 +92,6 @@ Voit käyttää kyselyn ja suodatuksen lisäasetusten suodattimia siten, että v
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Tuotevarasto (Supply Chain Managementista Field Serviceen): Tuotevarasto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

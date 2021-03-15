@@ -89,3 +89,6 @@ Alla olevassa kuvassa näkyy kuvakaappaus neljän käyttöomaisuuden KPI-laskenn
 - Voit valita useita käyttöomaisuuseriä kohdassa **Kaikki resurssit** napsauttamalla **Resurssien suorituskykyilmaisimet** -painiketta **Yleiset**-välilehdessä. Valitse sitten **OK** **Laske resurssien suorituskykyilmaisimet** -valintaikkunassa laskeaksesi valittujen resurssien suorituskykyilmaisimet.  
 - KPI-laskennasta saadut tulokset eivät välttämättä sisällä [kunnossapitoseisokkeja koskevia rekisteröintejä](../work-orders/maintenance-downtime.md), jotka määräytyvät huoltoseisokkien syykoodien asetusten ja käytön mukaan. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

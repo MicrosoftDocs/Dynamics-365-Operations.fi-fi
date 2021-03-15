@@ -36,3 +36,6 @@ Tässä ohjeaiheessa selitetään, miten vuokratunnuksille luodaan numerosarjat.
 4. Valitse numerosarja **vuokratunnuksen** viitteelle. Tämän numerosarjan avulla luodaan kunkin vuokrauksen yksilöivä tunnus.
 5. Valitse numerosarja **prosessitunnuksen** viitteelle. Tämän numerosarjan avulla luodaan kunkin indeksin uudelleenarvostusprosessin yksilöivä tunnus.
 6. Valitse numerosarja **Irtisanomisehdotuksen tunnus** -viitteelle. Tämän numerosarjan avulla luodaan kunkin irtisanomisehdotuksen yksilöivä tunnus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

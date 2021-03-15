@@ -56,3 +56,6 @@ Kun organisaatio kasvaa, on aloitettava seuraajien suunnittelu. Seuraajien suunn
 27. Valitse **Tulos**.
 28. Valitse **Raportti**. Parhaat vastaavuudet listataan raportin alkuosassa. Näet, että osaamisalueaukkoelementti on luettelossa. Aukko on osaamisaluekartoituksen tason ja henkilön osaamisaluetason välinen ero.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

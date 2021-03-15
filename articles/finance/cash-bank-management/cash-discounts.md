@@ -65,3 +65,6 @@ Yrityksen kirjanpitovaluutta on euro ja Yhdysvaltain dollarille on määritetty 
 > [!NOTE]
 > Jos Myyntireskontran parametrit- tai Ostoreskontran parametrit -sivulla valitaan Laske käteisalennukset osamaksuille -vaihtoehto, käytetään osamaksun maksupäivänä voimassaolevaa vaihtokurssia. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -148,3 +148,6 @@ Voit tarkastella **Työn tiedot** -sivulla luotua työtä ja hallita työpoolia.
 > Kun **Vaihda työpooli** -valintaikkuna avautuu, **Työpoolin tunnus** -kenttä voi olla oletusarvoisesti tyhjä. Jos kenttä on tyhjä, kun ota muutokset käyttöön valitsemalla **OK**, työpooli poistetaan kokonaan työstä.
 >
 > Työpoolien vaihtamisen lisäksi työpooli voidaan lisätä tällä menettelyllä mihin tahansa työnimikkeeseen, jossa sitä ei ole, tai poistaa työpoolin mistä tahansa työnimikkeestä, jossa sellainen on.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

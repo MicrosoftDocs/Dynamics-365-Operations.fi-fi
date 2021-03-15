@@ -78,3 +78,6 @@ Henkilöstöhallinto yhdistää henkilö- ja toimintotietoja, joiden avulla voit
 [Virkavapaan ja poissaolojen hallinta](hr-leave-and-absence-overview.md)</br>
 [Kehitä työntekijöitä](hr-develop-performance-management-overview.md)</br>
 [Luo kursseja](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Seuraavat seikat kannattaa ottaa huomioon kattavuuden aikarajoja määritettäes
 - Konsernin sisäinen kysyntä ohitetaan, jos laskettu pyydetty lähetyspäivämäärä on kattavuuden aikarajan ulkopuolella. Huomaa, että sisäisessä pääsuunnittelussa kattavuuden aikaraja ei rajoita konsernin sisäistä kysyntää.
 - Kysynnän ennusteet ohitetaan, jos budjettipäivämäärä on kattavuuden aikarajan ulkopuolella. Huomaa, että sisäisessä pääsuunnittelussa kattavuuden aikaraja ei rajoita kysynnän ennusteita.
 - Suunnittelun optimointi ottaa aikavyöhykkeet huomioon. Se ottaa huomioon tarjonnan ja kysynnän toimipaikan aikavyöhykkeen ja suunnitteluajon ajankohdan. Esimerkki: Pääsuunnittelu käynnistetään 15. lokakuuta klo 11 Tanskassa sijaitsevassa toimipaikassa (GMT+1 aikavyöhyke), ja kattavuuden aikarajana käytetään 10 päivää. Tässä tapauksessa tarjonta ja kysyntä Seattlen toimipaikassa (GMT-8 aikavyöhyke) otetaan huomioon 25. lokakuuta klo 2.00 saakka (= kymmenen 24 tunnin päivää pääsuunnittelun käynnistymisen jälkeen, josta on vähennetty aikavyöhyke-eron vuoksi 9 tuntia). Huomaa, että sisäinen pääsuunnittelumoduuli ottaa huomioon vain aikarajan päivämäärän. Tämän vuoksi tuloksissa voi olla eroja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

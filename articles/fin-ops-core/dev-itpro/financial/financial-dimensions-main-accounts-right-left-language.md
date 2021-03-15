@@ -38,3 +38,6 @@ Taloushallinnon dimensiot ja päätilit ovat tärkeimmät käyttöönoton suunni
 - Älä käytä valitun tilikartan erotin kirjanpitodimension ja päätilin arvoina.
 
 Näitä toimintaohjeita noudattamalla autat takaamaan, että käyttäjän määrittämä järjestys on yhdenmukainen koko järjestelmässä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

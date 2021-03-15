@@ -49,3 +49,6 @@ Poistoksi on laskettu ilman pyöristyksiä 2 444,44. Kuten seuraavasta taulukost
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Commerce käyttää organisaatiohierarkioita määrittämään vähittäismyynni
 > [!NOTE]
 > Jos haluat käyttää Commercen myyntitoimintoa, **usean toimitusasiakkaan** konfigurointiavain on otettava käyttöön. Tämä konfigurointiavain löytyy **Kaupan määritysavaimet** -osiosta kohdasta **Järjestelmänhallinta**\> **Asetukset** \> **Käyttöoikeuden määritys**. Tämä vaaditaan, koska myyntitilauksen rivitasolla määritettyjen toimitusosoitteiden perusteella suoritetaan erilaisia tarkistuksia.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

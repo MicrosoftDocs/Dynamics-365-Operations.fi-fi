@@ -42,3 +42,6 @@ Sinun on valittava **Indeksikoron arvojen ero**- tai **Indeksikoron arvo** indek
 
 - Valitse **Indeksikoron arvojen ero** -menetelmä, jos haluat laskea uuden vuokran indeksikoron eron perusteella alkupäivämäärän ja uusimman indeksikoron välillä. Indeksikorko määritetään **Indeksikorko (%)** -kentässä.
 - Valitse **Indeksikoron arvo** -menetelmä, jos haluat laskea maksun käyttämällä **Indeksikorko (%)** -kentässä määritettyä prosenttilukua.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

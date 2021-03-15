@@ -63,3 +63,6 @@ Seuraavien vaiheiden avulla voit lisätä tiliotteen tuonnin entiteetin tukemaan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

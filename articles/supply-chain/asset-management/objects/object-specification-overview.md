@@ -39,3 +39,6 @@ Tässä aiheessa on yleiskatsaus resurssien hallinnan resurssimääritteisiin. R
 3. Valitse **OK**. Luettelossa näkyvät kaikki resurssit, jotka käyttävät valittua resurssityyppiä. Jokaiselle resurssille kaikki liittyvät resurssimääritteen tyypit näkyvät samalla rivillä.
 
 **Resurssimäärite** -sivulla näkyy erillinen rivi jokaista määritetyyppiä varten, jota käytetään resurssissä. Voit avat tämän sivun valitsemalla **Resurssien hallinta** \> **Kyselyt** \> **Resurssit** \> **Resurssimäärite**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

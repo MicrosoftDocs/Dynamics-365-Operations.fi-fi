@@ -113,3 +113,6 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 ## <a name="see-also"></a>Lisätietoja
 
 [Hakijan seurantajärjestelmän integroinnin sovellusliittymän esittely](hr-admin-integration-ats-api-introduction.md)<br>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

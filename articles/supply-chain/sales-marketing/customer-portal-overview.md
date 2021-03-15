@@ -68,3 +68,6 @@ Asiakasportaali toimitetaan Power Apps -portaalien mallina. Se on riippuvainen P
 ![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 
 Asiakasportaali toimii lähtökohtana organisaatioille, jotka haluavat käyttää Power Apps -portaaleja, joiden on tarkoitus muodostaa ulkoinen verkkosivusto, joka käyttää Supply Chain Managementin asennuksen tietoja. Sen avulla organisaatiot voivat yhdistää kaksoiskirjoituksen, Supply Chain Managementin ja Power Apps -portaalit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

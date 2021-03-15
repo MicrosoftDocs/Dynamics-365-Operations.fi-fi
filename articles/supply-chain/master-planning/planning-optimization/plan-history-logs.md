@@ -46,3 +46,6 @@ Töiden alkamisajan ja tilan lisäksi voit tarkastella tietyn työn lokia. Loki 
 [Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
 
 [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

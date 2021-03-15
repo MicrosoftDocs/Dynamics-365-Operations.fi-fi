@@ -36,3 +36,6 @@ Microsoftin Dynamics 365 Supply Chain Management -kustannuslaskentapalvelun apuo
 ## <a name="related-resources"></a>Liittyvät resurssit
 
 [Kustannuslaskentapalvelun käytön aloittaminen](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

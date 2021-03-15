@@ -55,3 +55,6 @@ Lean-aikatauluryhmät on määritetty ryhmittelemään ja erottamaan kanban-ajoi
 3. Avaa haku napsauttamalla Nimikkeenkohdistustunnus-kentässä avattavan valikon painiketta.
 4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

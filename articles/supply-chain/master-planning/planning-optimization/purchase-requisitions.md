@@ -101,3 +101,6 @@ Pääsuunnittelua suoritettaessa luodaan kaksi suunniteltua tilausta: yksi kolme
 > Kun ostoehdotukseen tarvekohdistettu suunniteltu tilaus on vahvistettu, suunnittelumoduuli säilyttää tarvekohdistuksen ostoehdotukseen. Jos myöhemmin huomataan, että vahvistetusta tilauksesta puuttuu jokin määrä, joka tarvitaan ostoehdotuksen täyttämiseen, järjestelmä luo eron kattavan uuden suunnitellun tilauksen.
 
 Lisätietoja ostoehdotuksista on kohdassa [Ostoehdotusten yleiskatsaus](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

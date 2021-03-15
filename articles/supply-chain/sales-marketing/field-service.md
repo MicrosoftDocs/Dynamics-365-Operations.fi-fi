@@ -84,3 +84,6 @@ Seuraavat komponentit on asennettava, jotta Field Service -integrointiratkaisua 
 - Field Service (versio 8.2.0.286) tai uusi versio Dynamics 365 9.1.x – julkaistiin marraskuussa 2018
 - Dynamics 365:N prospektista käteiseksi (P2C) -ratkaisu, versio 1.15.0.1 tai uudempi versio. Ratkaisun voi ladata [AppSourcesta](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Dynamics 365:n Field Servicen integrointi-, projekti- ja varastoratkaisu, versio 2.0.0.0 tai uudempi versio. Ratkaisun voi ladata [AppSourcesta](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

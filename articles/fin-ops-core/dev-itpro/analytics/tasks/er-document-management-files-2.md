@@ -91,3 +91,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 26. Valitse Valmis.
 27. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

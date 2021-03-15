@@ -61,3 +61,6 @@ Tässä menettelyssä kerrotaan, miten tuotteen elinkaaren oletustila luodaan se
 > [!NOTE]
 > Oletetaan, että olet määrittänyt aktiivisen tilan. Voit nyt valita aktiivisen tilan ja sallia tuotteen käyttämisen pääsuunnittelussa ja tuoterakennetason laskennassa. Luonnollisesti tämä kannattaa tehdä vain, jos kaikki yhdenmukaisen suunnittelun vaatimat tuotetiedot on määritetty.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

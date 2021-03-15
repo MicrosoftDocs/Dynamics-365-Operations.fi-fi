@@ -88,3 +88,6 @@ Näet tässä lisätapahtumia raportointivaluutan summille.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Jos noutomäärää on muutettava sen jälkeen, kun noudettavat nimikkeet on val
 **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus on otettu käyttöön, organisaatiot voivat lisätä **Muuta noutorivejä** -toiminnolle painikkeen tapahtumasivun näyttöasetteluun. Kun olet luonut noutotapahtuman ostoskorin myyntipisteessä ja valinnut nimikkeet, voit valita **Muuta noutorivejä**, jos sinun on muutettava noutonimikkeitä, mutta et halua mitätöidä koko tapahtumaa. Näyttöön tulevassa **Muuta noutorivejä** -valintaikkunassa voit muuttaa noutonimikkeitä ja -määriä. Tapahtuman ostoskori päivitetään vastaamaan muutoksiasi.
 
 ![Muuta noutonimikkeitä -valintaikkuna](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

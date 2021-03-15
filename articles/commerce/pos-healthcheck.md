@@ -82,3 +82,6 @@ Mukautettuja kuntotarkistuksia voidaan myös määrittää testaamaan laitteita,
 ## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Modern POS:n (MPOS) käynnistimet ja tulostaminen](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

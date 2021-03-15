@@ -116,3 +116,6 @@ Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänva
 68. Valitse Tallenna.
     * Huomaa, että Suoritus-kenttä osoittaa tämän ryhmittelyn tapahtuvan suorituksen aikana muistissa, vaikka koonteja ei ole määritetty ja valittu Taulukkotietueet-tyyppinen tietolähde viittaa samaan Intrastat-taulukkoon. Tämä johtuu siitä, että tietolähde sisältää joitakin laskettuja kenttiä, joita ei voi vielä kääntää SQL-tietokannan tasolle.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

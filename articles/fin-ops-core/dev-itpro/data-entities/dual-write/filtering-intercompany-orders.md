@@ -66,3 +66,6 @@ Kutakin Dataverse-vakiotaulua laajennetaan viittauksilla **IntercompanyOrder**-s
 8. Kun **Tarjoukset** on laajennettu, käytä suodatinta, jossa on `CUSTGROUP != "<company>"` kyselymerkkijonona.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="CDS-myyntitarjouksen otsikon Muokkaa kyselyä -valintaikkuna":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

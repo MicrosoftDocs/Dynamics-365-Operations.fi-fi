@@ -527,3 +527,6 @@ Edellisten esimerkkien kyselyissä voitiin palauttaa seuraavankaltainen tulos.
 ```
 
 Huomaa, että määräkentät on jäsennelty mittahakemistoksi ja niihin liittyviksi arvoiksi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

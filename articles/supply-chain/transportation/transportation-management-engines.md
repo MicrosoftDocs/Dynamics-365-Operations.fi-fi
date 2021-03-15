@@ -98,3 +98,6 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | 3        | Kohteen alkupostinumero | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 4        | Kohteen loppupostinumero   | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 5        | Kohdemaa           | Määritys | merkkijono    | Maa/alue |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

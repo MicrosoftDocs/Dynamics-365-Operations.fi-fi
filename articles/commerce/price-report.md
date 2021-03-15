@@ -43,3 +43,6 @@ Hintaraportti voidaan ottaa käyttöön, kun **Ota myymälän hintaraportti käy
 | Näytä tuotteet, joilla on hintamuutoksia | Kun asetukseksi valitaan **Kyllä**, vain niiden päivämäärien hinnat näytetään, jolloin hintaa on muutettu. Valitun **Päivämäärästä**-kentän *yhtä päivää aikaisempi* hinta on aina näkyvissä, jotta myymäläpäällikön on helppo havaita tuotteet, joiden hinta ei ole muuttunut koko valittuna ajanjaksona. Tällä tavoin hän näkee myös nykyisen hinnan. |
 
 Raportin luonnin jälkeen Excel-tiedosto voidaan ladata mahdollista lisäsuodatusta varten. Hintaraportin avulla voidaan tarkistaa myös tuotteiden aiempien päivämäärien historialliset hinnat.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

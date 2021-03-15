@@ -49,3 +49,6 @@ Käyttäjä ei voi mukauttaa upotettuja Microsoft Power BI -raportteja.
 **Pitkäaikainen ratkaisu**
 
 Käyttöön tulee lisää Power BI -asetuksia, ja Dataverseen tulee sisältymään entistä enemmän tietoja ja yksiköitä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -190,3 +190,6 @@ Seuraava tiedot tuodaan, ja ne sisältyvät työntekijätietueeseen:
 
 [Määritä Dataverse -virtuaalitaulukot](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

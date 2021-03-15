@@ -96,3 +96,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 7. Valitse OK.
     * Tarkista aikaansaatu tuotos. Huomaa, että XML-muotoisen laskuviestin lisäksi jokaiselle liitteelle on luotu yksi tiedosto. Liitetiedostot täytetään pakatulla, binäärimuotoisella tulosteella.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

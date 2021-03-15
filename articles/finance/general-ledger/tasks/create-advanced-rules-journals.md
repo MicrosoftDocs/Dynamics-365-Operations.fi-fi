@@ -57,3 +57,6 @@ Tässä menettelyssä käsitellään kirjauskansioiden lisäsääntöjen luontia
 4. Valitse puussa ryhmä, jolle annat luvan kirjata tähän kirjauskansioon.
 5. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Jos ennustetta ei luoda isolle nimikejoukolle vaan esimerkiksi yhdelle nimikkeel
 - [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 
 - [Oikaistun ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

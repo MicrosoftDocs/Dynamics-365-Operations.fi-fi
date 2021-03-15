@@ -44,3 +44,6 @@ Yrityksen käytäntöjen mukaan palautustilauksen nimikkeet lähetetään karant
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin 
 10. Valitse Hyväksytty.
     * Kun tietue on hyväksytty, se voidaan ladata työntekijän viralliseen kompensaatiotietueeseen. Uusi kompensaatio astuu voimaan kompensaatioprosessissa määritettynä tapahtumapäivämääränä.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

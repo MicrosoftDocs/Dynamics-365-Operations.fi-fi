@@ -59,3 +59,6 @@ Valitse **Huollon hallinta** \> **Kausittainen** \> **Resursointitaulu**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

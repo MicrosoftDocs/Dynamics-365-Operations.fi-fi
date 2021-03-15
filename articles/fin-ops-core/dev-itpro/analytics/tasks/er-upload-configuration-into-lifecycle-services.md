@@ -145,3 +145,6 @@ Tässä esimerkissä luodaan konfiguraatio malliyritykselle nimeltä Litware, In
     Ladattu sähköisen raportoinnin konfiguraatio näkyy luettelossa.
 
     Huomaa, että ladattu LCS-konfiguraatio voidaan tuoda toiseen esiintymään, jos tarjoajilla on käyttöoikeus tähän LCS-projektiin.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

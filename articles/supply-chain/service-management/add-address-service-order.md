@@ -74,3 +74,6 @@ Voit lisätä vaihtoehtoisen osoitteen huoltotilaukseen seuraavasti:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

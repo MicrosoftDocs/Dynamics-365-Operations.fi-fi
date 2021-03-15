@@ -57,3 +57,6 @@ Kun sinulla on **Henkilöresurssi**-tyyppisiä operatiivisia resursseja, jotka o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

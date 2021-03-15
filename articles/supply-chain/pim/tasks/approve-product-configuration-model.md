@@ -48,3 +48,6 @@ Tämän menettelyn suorittaminen edellyttää, että ainakin yksi tuotemäärity
     * Aktivoi tuotemalliversio. Samanaikaisesti vain yksi tuotemallin tuote voi olla aktiivinen.  
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

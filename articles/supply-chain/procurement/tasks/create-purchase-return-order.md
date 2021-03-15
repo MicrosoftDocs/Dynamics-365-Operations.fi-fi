@@ -67,3 +67,6 @@ Seuraavassa menettelyssä kuvataan, miten luot ostopalautustilauksen kopioimalla
 4. Kirjoita arvo **Tuotteen vastaanotto** -kenttään. Tätä kenttää käytetään syöttämään viite, jota käytetään tositteena tuotteen vastaanoton kirjauskansiossa.  
 5. Valitse **OK**. Tavarat on nyt tallennettu lähetetyiksi ostopalautustilauksella, ja sitä vastaava tuotteen vastaanoton kirjauskansio on luotu. Voit käyttää Tuotteen vastaanotto -toimintoa ostotilauksesta luotujen kirjauskansioiden tarkasteluun selvittääksesi mitä on vastaanotettu tai palautettu ja milloin.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Tässä aiheessa käsitellään, miten myyntitilaukselle luodaan suoratoimitus. 
     - Suoratoimitus-sivu toimii työtilana, jossa ostoedustaja saa yhteenvedon kaikista suoratoimitettavista myyntitilausriveistä, joten he voivat luoda vastaavat ostotilaukset. Lisäksi he tarkastella Vahvistus- ja Toimitus-välilehdissä avoimia suoratoimitustilauksia ja vahvistettuja tilauksia.  
     - Luotu suoratoimitustilaus siirretään automaattisesti Vahvistus-välilehteen. Voit halutessasi vahvistaa tilauksen suoraan tällä sivulla. Kun osto on vahvistettu, se siirretään automaattisesti Toimitus-välilehteen, josta voit rekisteröidä sen vastaanoton.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

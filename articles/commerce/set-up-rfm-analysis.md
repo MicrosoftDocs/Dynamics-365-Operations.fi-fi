@@ -96,3 +96,6 @@ Tämän toiminnon avulla voit tarkastella tai poistaa RFM-analyysitietueen histo
 2. Valitse **RFM-analyysi**-sivulla tarkasteltava tietue.
 3. Voit tarkastella tietueen historiatiedot valitsemalla **Historia**-pikavälilehden.
 4. Voit tyhjentää tietueen historiatiedot valitsemalla **Tyhjennä historia**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

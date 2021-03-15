@@ -151,3 +151,6 @@ Jos tuotevariantti on jo vapautettu yrityksessä A ja yrität vapauttaa sen yrit
 **Vapautetut tuotevariantit** -sivun **Uusi**-painike luo variantin ja vapauttaa sen yrityskontekstissa. Jos variantti on jo luotu, sitä ei voi vapauttaa toisessa yrityksessä **Uusi**-painikkeella.
 
 Korjaa ongelma vapauttamalla aiemmin luotu variantti toivotussa yrityksessä avaamalla **Päätuote**-sivu ja valitsemalla **Vapauta tuote**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

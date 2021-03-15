@@ -102,3 +102,6 @@ Hälytyksiä ei voi luoda joillekin lomakkeiden toissijaisille tietolähteille. 
     ```
 2. Luo hälytys SysTableBrowser-lomakkeesta.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

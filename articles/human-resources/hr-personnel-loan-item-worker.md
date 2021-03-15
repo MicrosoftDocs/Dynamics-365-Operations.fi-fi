@@ -44,3 +44,6 @@ Tässä menettelyssä kerrotaan, miten kohde lainataan työntekijälle sekä se,
 2. Valitse Muokkaa.
 3. Syötä Todellinen palautuspvm -kenttään päivämäärä.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

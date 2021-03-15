@@ -60,3 +60,6 @@ T채ss채 opastuksessa k채sitell채채n tilirakenteen luominen. Vaiheissa k채ytet채�
 29. Valitse **toimintoruudussa** **Aktivoi**.
 30. Valitse **Aktivoi**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

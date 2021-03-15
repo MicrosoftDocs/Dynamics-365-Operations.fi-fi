@@ -109,3 +109,6 @@ Sähköisen laskutuksen lisäosan käyttöönotto ja käyttö saattaa edellyttä
 - [Palvelun hallinta](e-invoicing-service-administration.md)
 - [Konfiguroi sähköiset laskut RCS:ssä](e-invoicing-configuration-rcs.md)
 - [Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

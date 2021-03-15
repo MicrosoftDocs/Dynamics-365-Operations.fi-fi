@@ -50,3 +50,6 @@ Nimike on nyt liitetty huoltokohteeseen. Kaikki nimikkeelle määritetyt varasto
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

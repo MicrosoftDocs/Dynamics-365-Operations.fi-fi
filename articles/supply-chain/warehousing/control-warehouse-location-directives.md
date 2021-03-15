@@ -76,3 +76,6 @@ Sijaintidirektiivit määrittävät, *missä* nimikkeet kerätään ja *mihin* n
 
 - Video: [Perusteellinen varastonhallinnan määrityksen tarkastelu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Ohjeaihe: [Toimipaikkadirektiivien luominen](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Varastotilausrivit peruutetaan seuraavasti:
 
 - Valitse **Varastonhallinta \> Kyselyt ja raportit \> Varastotilausrivit** ja etsi rivit suodattimen avulla.
 - Valitse **Hankinta \> Ostotilaukset \> Kaikki ostotilaukset** ja avaa kyseinen ostotilaus. Valitse **Ostotilausrivit**-osassa vähintään yksi rivi ja valitse sitten työkalurivillä **Varasto \> Varaston vastaanottoviennit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

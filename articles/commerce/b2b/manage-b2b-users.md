@@ -139,3 +139,6 @@ Voit ottaa käyttöön liikekumppaneita ja käyttäjia Commerce headquarters -so
 [Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille](quantity-limits.md)
 
 [Numerosarjojen yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

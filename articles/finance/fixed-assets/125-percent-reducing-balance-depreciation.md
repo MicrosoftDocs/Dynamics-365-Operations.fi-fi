@@ -87,3 +87,6 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

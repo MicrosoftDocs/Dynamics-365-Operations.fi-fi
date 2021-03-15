@@ -129,3 +129,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
     -   Fyysisen varaston mukaan (tämä näkymä edustaa kokonaismäärää).
     -   Fyysisen varaston varattujen mukaan (tämä näkymä edustaa varattua määrää).
     -   Käytettävissä olevan fyysisen varaston mukaan (tämä näkymä edustaa varaamatonta käytettävissä olevaa määrää).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

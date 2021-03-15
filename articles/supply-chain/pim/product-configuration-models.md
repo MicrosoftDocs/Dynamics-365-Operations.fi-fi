@@ -152,3 +152,6 @@ Voit tarkastella <strong>Vapautetun tuotteen tiedot</strong> -sivun <strong>Ylei
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Jos haluat käyttää reititystietoja kustannuslaskelmissa, valmisteluun tarvita
 
 [Tuotettavissa tai hankittavissa olevien tuotteiden määrittäminen](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Tässä menettelyssä kerrotaan, miten kustannuslaskennan kirjanpidon kustannuss
 10. Syötä tai valitse arvo Dimensio-kenttään.
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

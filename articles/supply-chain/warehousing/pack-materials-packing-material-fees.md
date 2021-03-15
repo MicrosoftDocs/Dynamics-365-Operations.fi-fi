@@ -111,3 +111,6 @@ Voit tulostaa pakkausmateriaalien painon laskuun ja osoittaa, kuka maksaa liitty
 
 1. Valitse **Myyntireskontra \> Asetukset \> Myyntireskontran parametrit**.
 1. Määritä **Päivitykset**-välilehden **Lasku**-pikavälilehdessä **Tulosta pakkausmateriaalin paino** -asetuksen arvoksi **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

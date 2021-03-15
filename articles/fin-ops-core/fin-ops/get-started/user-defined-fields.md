@@ -162,3 +162,6 @@ Suorituskyvyn ja teknisten syiden vuoksi vain seuraavat ehdot täyttävät taulu
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Voinko viitata mukautettuihin kenttiin kehittäjän työkaluissa?  
 
 Mukautettuja kenttiä voi hallinnoida vain käyttöliittymässä. Niihin ei voi viitata koodilla. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

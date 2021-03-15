@@ -54,3 +54,6 @@ Tällöin seuraavat kirjanpitomerkinnät luodaan automaattisesti, jotta kirjausk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

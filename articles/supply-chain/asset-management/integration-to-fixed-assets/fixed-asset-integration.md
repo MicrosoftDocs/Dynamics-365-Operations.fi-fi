@@ -114,3 +114,6 @@ Seuraa näitä ohjeita poistaaksesi olemassa olevan liitoksen ylläpidettävän 
 1. Etsi ja avaa käyttöomaisuus.
 1. Poista **käyttöomaisuus**-pikavälilehden **toiminnallinen sijainti** -kentän arvo.
 1. Valitse toimintoruudussa **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

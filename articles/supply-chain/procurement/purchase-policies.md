@@ -150,3 +150,6 @@ Ostotilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käyt�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -328,3 +328,6 @@ Ajoitusmoduulin suorituskyky voidaan optimoida käyttämällä **Ajoitusparametr
 
 > [!NOTE]
 > Aikakatkaisuille määritettyjä arvoja voidaan käyttää sekä vapautettujen tuotantotilausten aikatauluttamiseen että suunniteltujen tilausten aikatauluttamiseen tarvesuunnittelun osana. Jos asetuksella on erittäin suuri arvo, tarvesuunnittelun suoritusaika voi tämän vuoksi pidentyä merkittävästi, kun suoritetaan suunnitelma, jossa on monia suunniteltuja tuotantotilauksia:
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

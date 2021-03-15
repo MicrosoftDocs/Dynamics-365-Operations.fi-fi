@@ -85,3 +85,6 @@ Voit määrittää **Asiakkaat**-sivun **Oletusmaksut**-välilehdessä vekselien
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

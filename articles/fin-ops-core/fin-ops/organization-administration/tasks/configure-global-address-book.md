@@ -45,3 +45,6 @@ Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtäv�
 13. Etsi haluamasi tietue luettelosta ja valitse se. Voit lisätä useita rooleja **Valitut roolit** -ruutuun painamalla Vaihto-näppäintä ja lisäämällä sitten valitut roolit nuolta napsauttamalla.  
 14. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

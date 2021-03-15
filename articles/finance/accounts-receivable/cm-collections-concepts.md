@@ -121,3 +121,6 @@ Voit käsitellä NSF-maksuja valitsemalla **Perintä**-sivulla **NSF-maksu**. Ma
 [Myyntitilausten luottorajapidot](./cm-sales-order-credit-holds.md)
 
 [Asiakkaan luotonhallinnan kausittaiset tehtävät](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

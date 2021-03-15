@@ -75,3 +75,6 @@ Kirjoita muistiin luomasi ostotilauksen numero sekä ostotilausrivillä käytett
     * Tarkista sanomarivi, kun olet valinnut OK. Sanoman pitäisi ilmoittaa, että toiminto onnistui.  
 5. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

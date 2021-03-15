@@ -46,3 +46,6 @@ Voit ajoittaa tulevia elämäntapahtumia Dynamics 365 Human Resourcesissa.
    | Linja | Tulevan elämäntapahtuman rivinumero. |
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

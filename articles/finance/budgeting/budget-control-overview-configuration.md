@@ -126,3 +126,6 @@ Kun budjetin hallinta on otettu käyttöön, käyttäjät vastaanottavat niiden 
 Tältä sivulta käyttäjät voivat porautua **Budjetin hallinnan tilasto kausittain** -sivulle ja tarkastella budjetin käytettävyystietoja ja varauksia tietyn budjetin ohjausdimensioyhdistelmän osalta. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot**-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
 
 Jos budjetin hallinta on otettu käyttöön ostotilauksille, budjettipäällikkö voi tarkastella **Kirjanpitobudjetit ja ennusteet** -työtilan avulla kaikkien niiden vahvistamattomien ostotilausten jonoa, joilla on budjetin tarkistuksen varoituksia ja virheitä. Jos budjettipäällikölle on konfiguroitu budjetin ylitysoikeudet, ostotilaukset voidaan vahvistaa suoraan työtilassa.    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -123,3 +123,6 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

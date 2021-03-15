@@ -57,3 +57,6 @@ Hyväksyttyjen ehdokkaiden joukon löytäminen avointen toimien täyttämistä v
 24. Sulje sivu.
 25. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Tässä menettelyssä kuvataan, miten automaattisen rahdintäsmäytyksen tiedot 
 11. Anna tai valitse Alimaksun syykoodi -kentässä arvo.
 12. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

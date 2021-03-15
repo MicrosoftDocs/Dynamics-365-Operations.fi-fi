@@ -137,3 +137,5 @@ Asetusjoukot:
 [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Microsoft Dataverse -verkkoliittymän käyttäminen](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
 [Asetusjoukkojen luominen ja päivittäminen verkkoliittymän avulla](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

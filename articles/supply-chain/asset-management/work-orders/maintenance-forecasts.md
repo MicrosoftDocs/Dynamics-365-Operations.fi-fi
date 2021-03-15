@@ -123,3 +123,6 @@ Jos tuntikustannuksia, nimikekustannuksia ja kuluja päivitetään muissa Micros
 Seuraavassa kuvassa on esimerkki **Päivitä työtilauksen ennuste** -valintaikkunasta.
 
 ![Kuva 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

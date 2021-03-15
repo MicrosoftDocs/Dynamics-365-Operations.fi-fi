@@ -71,3 +71,6 @@ Toimitusosoitemoduuli voidaan lisätä vain kassalle-moduuliin. Lisätietoja toi
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

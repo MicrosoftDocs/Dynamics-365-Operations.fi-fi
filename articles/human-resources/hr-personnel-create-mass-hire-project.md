@@ -48,3 +48,6 @@ Tässä menettelyssä esitellään joukkotyöhönottoprojektin määritysprosess
     * Vaihtoehtoisesti voit valita uusille toimille osaston.  
 13. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

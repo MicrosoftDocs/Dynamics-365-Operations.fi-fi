@@ -75,3 +75,6 @@ Ennakonpidätys lasketaan **toimittajan maksukirjauskansiossa**. Voit oikaista s
 Johdettu ennakonpidätyksen summa vähennetään toimittajan maksusta ja kirjataan **ennakonpidätystilille** liittyvässä tositteessa.
 
 ![Ennakonpidätystili, jossa näkyy liittyvä tosite](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

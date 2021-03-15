@@ -42,3 +42,6 @@ Jos esimerkiksi perushinta on 1 000 euroa ja indeksi on 110, myyntihinta on 1 10
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

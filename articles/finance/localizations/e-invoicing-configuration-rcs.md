@@ -290,3 +290,6 @@ Kun sähköinen laskutusominaisuus johdetaan toisesta ominaisuudesta, **Pohjusta
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

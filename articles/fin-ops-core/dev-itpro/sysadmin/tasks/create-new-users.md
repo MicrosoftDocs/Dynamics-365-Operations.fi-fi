@@ -81,3 +81,6 @@ Käyttäjätunnuksen vaihtaminen edellyttää, että avain nimetään uudelleen 
 Lisätietoja yritystenvälisten käyttäjien käyttöönottovaihtoehdoista on kohdassa [Yritystenvälisten käyttäjien vieminen Azure AD:hen](../implement-b2b.md).
 
 Lisätietoja esimääritetyistä järjestelmätileistä on kohdassa [Esimääritetyt järjestelmätilit](../pre-configured-system-accounts.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Kun historialliset kysyntätiedot on tuotu, voit luoda kysynnän ennusteen.
 
 [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)  
 [Tietojen tuonti- ja vientityöt – yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

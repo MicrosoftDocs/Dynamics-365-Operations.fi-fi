@@ -150,3 +150,6 @@ Kun tarjolla on niin monta erilaista integrointiteknologiaa, integrointimenetelm
 <sup>2</sup>Microsoft investoi voimakkaasti tietojen kattavuuden lisäämiseksi Dataverse-taulukoille. On suositeltavaa käyttää Dataverseä, kun kattavuus on käytettävissä. Tällä hetkellä Dataversen tietojen kattavuus on alhainen DMF- ja OData-yhteensopiviin yksikköihin verrattuna.
 
 <sup>3</sup>SQL-tietokantaa voidaan käyttää ohjelmallisesti.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

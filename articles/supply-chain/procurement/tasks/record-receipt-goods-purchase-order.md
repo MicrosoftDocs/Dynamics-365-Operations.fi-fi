@@ -48,3 +48,6 @@ Tässä aiheessa kuvataan, miten kirjaat tavaroiden vastaanoton suoraan ostotila
 6. Valitse **määräksi** 4. Tähän pystyt määrittämään manuaalisesti vastaanotettavan määrän kullekin tilauksen riville.  
 7. Valitse **OK**. Tavarat nyt tallennettuja vastaanotetuiksi ostotilauksella, ja sitä vastaava tuotteen vastaanoton kirjauskansioasiakirja on luotu. Voit käyttää Tuotteen vastaanotto -toimintoa ostotilauksesta luotujen kirjauskansioiden tarkasteluun selvittääksesi mitä on vastaanotettu ja milloin.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

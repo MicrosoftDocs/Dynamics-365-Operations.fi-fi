@@ -139,3 +139,6 @@ April luo 20. heinäkuuta lopullisen maksun, jonka summa on 200,00. Alennusta ei
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

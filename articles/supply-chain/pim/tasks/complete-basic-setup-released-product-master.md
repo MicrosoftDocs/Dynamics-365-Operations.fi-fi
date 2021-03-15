@@ -52,3 +52,6 @@ Tämä on kolmas kahdeksasta menettelystä, joissa selitetään, miten dimensioi
 20. Sulje sivu.
 21. Sulje **Vapautetun tuotteen tiedot** -lomake.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

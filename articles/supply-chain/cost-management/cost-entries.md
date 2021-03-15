@@ -71,3 +71,6 @@ Uuden **Kustannustapahtuma**-sivun avulla voit tarkastella ja hallita määrien 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Kuten aiemmin mainittiin, kun käytät laitekonfiguraatiota yhdessä **Yksi työ
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Ilmoita valmiiksi työkorttilaitteesta](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

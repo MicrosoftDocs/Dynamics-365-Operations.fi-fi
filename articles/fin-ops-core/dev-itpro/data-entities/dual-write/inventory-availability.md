@@ -118,3 +118,6 @@ Finance and Operations -kenttä | Määritystyyppi | Asiakkaiden aktivointi -ken
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Tässä menettelyssä käsitellään, miten myyntisopimus toteutetaan liittämä
 23. Valitse Liittyvä myyntisopimus.
 24. Valitse Täytäntöönpano-välilehti.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

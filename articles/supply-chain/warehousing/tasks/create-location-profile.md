@@ -42,3 +42,6 @@ Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply
 10. Valitse **Salli inventointi** -kentässä **Kyllä**.
 11. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

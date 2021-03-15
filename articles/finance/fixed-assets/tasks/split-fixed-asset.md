@@ -62,3 +62,6 @@ Ennen kokonaan poistetun käyttöomaisuuden jakamista käyttöomaisuuskirjan til
     - Uudelle käyttöomaisuuserälle luodaan hankintatapahtuma samalle summalle.
 
 4. Valitse **Kirjaa**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

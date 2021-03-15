@@ -52,3 +52,6 @@ Tarkista, että yksikkösäilön mitat "Kassavirran mitta V2" ja "LedgerCovLiqui
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Onko yksikkösäilön entiteetit päivitetty?
 
 Entiteetit on päivitettävä säännöllisesti, jotta tiedot ovat ajan tasalla ja oikein. Jos haluat päivittää tietyn yksikön manuaalisesti, siirry kohtaan **Järjestelmänvalvonta \> Määritys \> Yksikkösäilö** valitse yksikkö ja sitten **Päivitä**. Tiedot voidaan myös päivittää automaattisesti. Määritä **Yksikkösäilö**-sivulla **Automaattinen päivitys käytössä** -asetuksen arvoksi **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

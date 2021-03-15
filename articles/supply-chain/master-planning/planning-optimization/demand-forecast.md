@@ -273,3 +273,6 @@ Ennusteen vähennysavain on määritettävä nimikkeen kattavuusryhmään. Mää
 ### <a name="reduce-a-forecast-by-transactions"></a>Vähennä ennustetta tapahtumien mukaan
 
 Kun valitset **Tapahtumat - vähennysavain** tai **Tapahtumat - dynaaminen kausi** ennustetarpeita vähennystapana, voit määrittää, mitkä tapahtumat vähentävät ennustetta. Valitse **Kattavuusryhmät** -sivun **Muut**-pikavälilehden **Vähennä ennustetta seuraavasti** -kentässä **Kaikki tapahtumat**, jossa kaikkien tapahtumien tulisi vähentää ennustetta, tai **Tilaukset**, jos vain myyntitilausten tulisi vähentää ennustetta.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

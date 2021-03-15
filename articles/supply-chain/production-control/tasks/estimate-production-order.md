@@ -41,3 +41,6 @@ Voit suorittaa tämän menettelyn USMF-demoyrityksen tiedoilla tai käyttää om
 1. Valitse toimintoruudussa Hallitse kustannuksia.
 2. Valitse Näytä laskennan tiedot.
     * Kustannuserittely näkyy tällä sivulla. Voit esimerkiksi tarkastella ensimmäisellä rivillä valmiin tuotteen yksikkökohtaista kokonaiskustannushintaa. Seuraavilla riveillä on tuoterakenteen ja tuotantoreitin kustannukset sekä välilliset kustannukset.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

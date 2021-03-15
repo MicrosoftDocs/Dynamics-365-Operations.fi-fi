@@ -82,3 +82,6 @@ Toimittajan laskun tila on Odottaa niin kauan, kunnes todellinen toimittajan las
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

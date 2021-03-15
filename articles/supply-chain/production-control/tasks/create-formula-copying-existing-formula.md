@@ -56,3 +56,6 @@ Tässä menettelyssä näytetään, miten uusi kaava luodaan nopeasti kopioimall
 3. Valitse OK.
 4. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

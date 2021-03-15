@@ -36,3 +36,6 @@ Tässä toimintaohjeessa kuvataan, miten kuva lisätään tuotteeseen, jonka avu
 5. Valitse Uusi.
     * Valitse Selaa. Etsi haluamasi kuva ja sulje sitten valintaikkuna.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

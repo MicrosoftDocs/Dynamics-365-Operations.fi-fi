@@ -95,3 +95,6 @@ Tässä menettelyssä käsitellään, miten myyntiprovision laskenta ja seuranta
 17. Etsi ja valitse luettelosta aiemmin luomasi provisioryhmä.
 18. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

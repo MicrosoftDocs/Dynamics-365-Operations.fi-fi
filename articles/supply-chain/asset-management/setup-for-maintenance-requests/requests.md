@@ -41,3 +41,6 @@ Voit määrittää erityyppisiä pyyntöjä yrityksesi käyttöön. Ylläpitopyy
 Seuraavassa kuvassa on esimerkki **Kaikki ylläpitopyynnöt** -luettelosivusta.
 
 ![Kaikkien ylläpitopyyntöjen luettelosivu](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

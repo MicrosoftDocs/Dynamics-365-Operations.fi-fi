@@ -105,3 +105,6 @@ Voit muuttaa URL-polkua seuraavasti.
 [Kuvien rajaaminen](dam-crop-images.md)
 
 [Kuvien tarkennuspisteiden mukauttaminen](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

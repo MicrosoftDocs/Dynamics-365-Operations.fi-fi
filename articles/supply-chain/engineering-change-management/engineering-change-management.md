@@ -184,3 +184,6 @@ Useimmat suunnitelman muutostilausten kentät ovat samoja kuin vapautettujen tuo
 | Ympäristön terveellisyys ja turvallisuus | Määritä, käytetäänkö ympäristön terveellisyys- ja turvallisuussääntöjä muutokseen. Jos niitä käytetään, voit valita käytettävät säännöt. |
 
 Voit kopioida muutoksen tietoja niiden tuotteiden välillä, joita muutos koskee, käyttämällä **Ylläpidä tai kopioi muutostietoja** -painiketta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

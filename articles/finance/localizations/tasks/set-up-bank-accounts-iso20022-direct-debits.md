@@ -68,3 +68,6 @@ Tämä on neljäs viidestä tehtävästä, joilla esitellään asiakasmaksujen p
 8. Valitse OK.
 9. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

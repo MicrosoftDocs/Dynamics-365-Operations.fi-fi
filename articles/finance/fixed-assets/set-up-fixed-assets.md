@@ -83,3 +83,6 @@ Syykoodit voidaan konfiguroida niin, että ne ovat pakollisia käyttöomaisuuden
 **Numerosarjat**-välilehdessä määritetään lopuksi käyttöomaisuuden numerosarjat. Jos **käyttöomaisuusryhmän** numerosarja on määritetty, se voi ohittaa **käyttöomaisuuden** numerosarjan.
 
 Lisätietoja on kohdassa [Käyttöomaisuuden luominen](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

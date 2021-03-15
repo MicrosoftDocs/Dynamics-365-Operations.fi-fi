@@ -111,3 +111,6 @@ Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
 | Lähetysten suorituskyky        | Lähetetyt tuotteen mukaan                       | CustPackingSlipOnTimeStatus           | Etuajassa, Ajoissa ja Myöhässä (kuvaukset aiempana tässä taulukossa). |
 | Lähetysten suorituskyky        | Lähetetyt asiakkaan mukaan                      | CustPackingSlipOnTimeStatus           | Etuajassa, Ajoissa ja Myöhässä (kuvaukset aiempana tässä taulukossa). |
 | Lähetysten suorituskyky        | Lähetetyt sijainnin/varaston mukaan              | CustPackingSlipOnTimeStatus           | Etuajassa, Ajoissa ja Myöhässä (kuvaukset aiempana tässä taulukossa). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

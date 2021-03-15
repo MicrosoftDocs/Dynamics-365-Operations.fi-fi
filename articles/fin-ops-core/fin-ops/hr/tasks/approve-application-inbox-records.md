@@ -48,3 +48,6 @@ Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta v
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 3. Laajenna Liitteet-osa.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

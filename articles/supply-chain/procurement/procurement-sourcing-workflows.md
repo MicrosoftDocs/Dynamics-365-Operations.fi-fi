@@ -79,3 +79,6 @@ Voit määrittää hyväksyntävaiheen seuraaville osallistujaryhmille.
 - [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen (raportti)](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
 - [Toimittajien aktivointi](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

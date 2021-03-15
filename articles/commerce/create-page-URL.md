@@ -106,3 +106,6 @@ Voit ohjata URL-osoitteen toiseen URL-osoitteeseen seuraavasti.
 [Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
 [Kielten lisääminen sivustoon](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

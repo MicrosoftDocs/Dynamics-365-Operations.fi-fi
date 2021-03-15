@@ -87,3 +87,6 @@ Lisätietoja on ohjeaiheissa [Kirjanpidon sulkeminen kauden lopussa](close-gener
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Väri näkyy vain Gantt-kaavion alimmalla tasolla. Valitsemalla **Laajenna kaikk
 1. Valitse ruudukossa rivi, jonka **Kenttä**-kentän arvona on **Nimiketunnus**.
 1. Anna **Ehdot**-kenttään arvo.
 1. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

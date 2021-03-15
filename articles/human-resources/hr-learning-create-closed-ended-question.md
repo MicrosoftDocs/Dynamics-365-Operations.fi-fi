@@ -68,3 +68,6 @@ Monivalintakysymysten avulla voit antaa vastaajille vastauksia, joista he voivat
 5. Anna tai valitse arvo Vastausryhmä-kenttään.
 6. Kirjoita arvo Teksti-kenttään.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

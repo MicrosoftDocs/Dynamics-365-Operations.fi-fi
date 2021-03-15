@@ -83,3 +83,6 @@ Kun olet valmis tallentamaan ja aktivoimaan työnkulun, noudata seuraavia ohjeit
 
     - Voit aktivoida tämän työnkulun version valitsemalla **Ota uusi versio käyttöön**. Kun työnkulku on aktiivinen, käyttäjät voivat lähettää siihen asiakirjoja käsittelyä varten.
     - Jos et halua aktivoida versiota napsauta **Älä ota uutta versiota käyttöön**. Voit ottaa työnkulun käyttöön myöhemmin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

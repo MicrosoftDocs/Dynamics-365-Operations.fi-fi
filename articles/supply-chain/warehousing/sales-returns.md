@@ -330,3 +330,6 @@ Tässä esimerkissä palautustilauksen rivi on luotu **Etsi myyntitilaus** -toim
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

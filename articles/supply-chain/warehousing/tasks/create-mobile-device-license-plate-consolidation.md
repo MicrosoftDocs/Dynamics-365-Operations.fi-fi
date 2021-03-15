@@ -36,3 +36,6 @@ Tässä menettelyssä kuvataan, miten voit luodaan mobiililaitteen valikkovaihto
 5. Valitse Tila-kentässä Epäsuora.
 6. Valitse Toimintokoodi-kentässä "Konsolidoi rekisterikilvet".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

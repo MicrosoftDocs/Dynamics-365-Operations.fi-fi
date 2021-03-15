@@ -381,3 +381,6 @@ Kun manuaalinen tehtävä on määritetty käyttäjälle, käyttäjän pitää s
 5. Valitse **Delegoi**-valintaruutu, jos haluat, että käyttäjä voi määrittää tehtävän toiselle käyttäjälle.
 6. Valitse **Määritä uudelleen**-valintaruutu, jos haluat, että käyttäjä voi määrittää tehtävän uudelleen toiselle käyttäjälle työnimikejonossa.
 7. Valitse **Vapauta**-valintaruutu, jos haluat, että käyttäjä voi vapauttaa tehtävän työnimikejonoon. Toinen käyttäjä voi sitten suorittaa tehtävän.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

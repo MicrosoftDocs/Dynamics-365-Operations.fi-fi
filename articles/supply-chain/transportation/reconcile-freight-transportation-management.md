@@ -105,3 +105,6 @@ Manuaalinen täsmäytys voidaan tehdä myös seuraavalla tavalla:
 1. Lasku 1 ja lasku 2 täsmäytetään rahtikirjaan peräkkäin. Rahtikirjan on kokonaan täsmäytetty.
 
 Tämä esimerkki osoittaa, että negatiivisia summia sisältävien rahtilaskujen täsmäyttäminen on tehtävä vain manuaalisesti. Näin varmistetaan, että negatiivisia summia sisältävät rahtilaskut voidaan aina täsmäyttää rahtikirjaan, jota ei ole kokonaan täsmäytetty, koska tällä tavoin täsmäytysjärjestystä voidaan hallita.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

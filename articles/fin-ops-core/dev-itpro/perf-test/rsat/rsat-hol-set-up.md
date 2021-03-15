@@ -803,3 +803,6 @@ Tässä osassa luodaan tallennettu muuttuja ensimmäisessä testitapauksessa, se
 2. Tarkista, että molemmat testitapaukset on hyväksytty.
 
     ![Kummankin testitapauksen hyväksytyksi määritetty Tulos-kenttä](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

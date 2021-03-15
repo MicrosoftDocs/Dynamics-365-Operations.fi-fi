@@ -79,3 +79,6 @@ Kun olet peruuttanut *Vahvistettu*-tilassa olleita ostotilauksia, peruutetut ost
 
 Tämä ongelma ilmenee vain sellaisten ostotilausten osalta, joihin sovelletaan muutoksenhallintaa. Se johtuu siitä, että peruutus tulkitaan muutokseksi, joka on hyväksyttävä. Järjestelmä voi suorittaa hyväksynnän automaattisesti. siksi prosessina on peruutetun ostotilauksen lähettäminen hyväksymisen työnkulkuun, jotta se voi siirtyä *Hyväksytty*-tilaan. Tässä vaiheessa ostotilaus ei enää näy **Ostotilausten valmistelu** -työtilan ostotilausluonnosten luettelossa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

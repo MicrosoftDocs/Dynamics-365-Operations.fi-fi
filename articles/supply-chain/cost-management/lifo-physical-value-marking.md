@@ -150,3 +150,6 @@ Seuraavassa kuvassa havainnollistetaan LIFO-varastomallin käyttämisen vaikutus
 - Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
 - Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

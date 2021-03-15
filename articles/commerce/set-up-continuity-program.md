@@ -49,3 +49,6 @@ Sen jälkeen kun olet määrittänyt jatkuvuusohjelman yllä kuvatulla tavalla, 
 - **Laajenna jatkuvuusrivejä tarvittaessa** (jos tarpeellista) – Lisää jatkuvuustapahtuman toistokertojen määrää. Lähetysten toisto voi jatkua asetettujen rajojen yli, jotka määritettiin **Jatkuvuuden toistuva kynnys** -kentässä puhelinkeskuksen parametreissä.
 - **Suorita jatkuvuuspäivitys** (tarvittaessa) – Synkronoi muutokset jatkuvuusohjelman ja jatkuvuuspäämyyntitilausten välillä.
 - **Sulje jatkuvuuden päärivit ja tilaukset** - Sulje jatkuvuustilaukset.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

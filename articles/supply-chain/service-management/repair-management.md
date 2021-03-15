@@ -112,3 +112,6 @@ Kun korjausongelma on ratkaistu, voit sulkea korjausrivin. Määritä korjauksen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

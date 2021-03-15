@@ -64,3 +64,5 @@ Microsoft Dynamics 365 Human Resourcesin MyLeaveRequests-yksikkö sisältää lu
 
 - [Lähetä lomapyyntö työnkulkuun](hr-developer-api-myleaverequests-submit.md)
 - [Todennus](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

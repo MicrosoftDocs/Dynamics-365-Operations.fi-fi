@@ -69,3 +69,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 11. Valitse OK.
     * Tarkista aikaansaatu tuotos. Huomaa, että kullekin liitetiedostolle on luotu yksi XML-solmu. Liitteen sisältö lisätään XML-tuotteeseen MIME (base64) -tekstimuodossa.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

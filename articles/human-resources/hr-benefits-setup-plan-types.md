@@ -63,3 +63,6 @@ Suunnitelmatyyppi voi määrittää kattavuusasetukset. Kattavuusasetukset mää
    | **Raportointi-ikkuna** | Määrittää elinkaaritapahtuman raportointi-ikkunan päivinä. **Huomautus**: Jos et syötä määrää, järjestelmä olettaa raportointi-ikkunan olevan nolla eikä käsittele elinkaaritapahtumaa. |
 
 5. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

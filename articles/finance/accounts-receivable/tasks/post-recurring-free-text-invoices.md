@@ -45,3 +45,6 @@ Toistuvia laskuja käytetään silloin, kun asiakkailta laskutetaan sama summa t
 6. Valitse Kirjaa.
     * Kirjaa valitut laskut.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

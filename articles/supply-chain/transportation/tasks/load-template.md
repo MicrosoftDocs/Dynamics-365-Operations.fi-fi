@@ -53,3 +53,6 @@ Tässä aiheessa käsitellään kuormamallien määrittämistä ja kuormamallin 
 1. Valitse toimintoruudun **Tarjonta ja kysyntä** -välilehden **Lisää**-ryhmässä kohta **Uuteen kuormaan**.
 1. Valitse **Kuormamalli**-valintaikkunan **Kuorman mallitunnus** -kentässä käytettävä malli.
 1. Käytä mallia valitsemalla **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

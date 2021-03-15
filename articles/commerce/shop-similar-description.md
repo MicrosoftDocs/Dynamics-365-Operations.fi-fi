@@ -98,3 +98,6 @@ Seuraavassa kuvassa on **ota käyttöön Tuotteet, joissa samankaltainen kuvaus 
 [Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

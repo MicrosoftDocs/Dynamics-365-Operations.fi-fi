@@ -50,3 +50,6 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 18. Valitse **Lisämaksun valuutta** -kentässä lisämaksun valuutta. Tämä on valuutta, jossa lisämaksu luodaan.  
 19. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

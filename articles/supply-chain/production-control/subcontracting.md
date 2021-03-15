@@ -302,3 +302,6 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
     ![Kustannusvertailukaaviot](./media/subcontract35_cost-comparison-charts.png)
 
 Puuttuva määritys tiedoissa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

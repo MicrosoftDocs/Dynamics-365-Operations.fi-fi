@@ -225,3 +225,6 @@ Kun synkronointi sitten otetaan käyttöön ja sitä käytetään, Finance and O
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Tuotetietojen siirtäminen täsmäyttäminen muista Dynamics 365 -sovelluksista Finance and Operationsiin
 
 Jos muissa Dynamics 365 -sovelluksissa on tuotteita, joita ei ole Finance and Operationsissa, järjestelmänvalvoja voi tuoda kyseiset tuotteet Finance and Operationsiin käyttämällä kohdetta **EcoResReleasedProductCreationV2Entity**. Sitten tuotetiedot on täsmättävä Finance and Operationsista ja muista Dynamics 365 -sovelluksista edellä kuvatulla tavalla. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

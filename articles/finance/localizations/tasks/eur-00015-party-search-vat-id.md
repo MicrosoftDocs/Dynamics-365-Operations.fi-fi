@@ -41,3 +41,6 @@ Tämä menettely koskee kaikkia Euroopan maita/alueita. Tämä menettely luotiin
 7. Valitse Etsi.
     * Kaikki osapuolet, joilla on kyseinen rekisteröintitunnus näytetään.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

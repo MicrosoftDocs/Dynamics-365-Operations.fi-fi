@@ -85,3 +85,6 @@ Voit palauttaa ympäristön seuraavasti:
 
 > [!Warning]
 > Power Apps -ympäristöjä säilytetään vain seitsemän päivää poiston jälkeen. Ympäristö on palautettava seitsemän päivän kuluessa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

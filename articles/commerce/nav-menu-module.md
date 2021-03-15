@@ -72,3 +72,6 @@ Lisätietoja siirtymisvalikkomoduulin lisäämisestä ylätunnistemoduuliin on k
 [Evästeen yhteensopivuus](cookie-compliance.md)
 
 [Ylätunnistemoduuli](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Konttien määrä, joka tulisi ottaa huomioon kuormassa lasketaan kontin painon 
 -   Kontin painon ja tilavuuden voi määrittää kohdassa **Varastonhallinta** \> **Asetukset** \> **Kontit** \> **Konttityypit**.
 
 -   Kontin käyttöaste valitsemalla asetetaan kohdassa **Varastonhallinta** \> **Asetukset** \> **Kontit** \> **Konttiryhmät** kirjoittamalla arvo **Kontin käyttöaste** -kenttään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

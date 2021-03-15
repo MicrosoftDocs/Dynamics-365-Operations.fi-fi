@@ -55,3 +55,6 @@ Tämän menetelmä keskittyy korvaamaan vanhoja kanban-sääntöjä uusilla sä�
 1. Määritä Enimmäismäärä-arvoksi 100.
     * Laajenna Määrät-pikavälilehti nähdäksesi Suurin määrä -kentän. Jos muutat enimmäismääräksi 100, voit käsitellä enintään 100:a kanbania.    Tämä on tämän tehtävän viimeinen vaihe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

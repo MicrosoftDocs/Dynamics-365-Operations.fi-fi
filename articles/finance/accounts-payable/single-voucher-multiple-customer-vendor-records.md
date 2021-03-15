@@ -232,3 +232,6 @@ Ei-toivottujen ongelmien välttämiseksi tämän tapahtuman tulevissa kirjauksis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

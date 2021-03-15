@@ -70,3 +70,6 @@ Kun haluat mallintaa alihankkijalle annetun lean-valmistuksen työn, luo työsol
 24. Avaa haku napsauttamalla Yksikkö -kentässä avattavan valikon painiketta.
 25. Ratkaise muutokset yksikössä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

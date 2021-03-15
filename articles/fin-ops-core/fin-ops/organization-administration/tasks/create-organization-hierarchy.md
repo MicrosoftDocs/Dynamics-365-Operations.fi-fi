@@ -48,3 +48,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
     - Lisää organisaatioita tarvittaessa.  
     - Lisää organisaatio napsauttamalla **Muokkaa** ja sitten **Lisää**. Kun olet tehnyt haluamasi muutokset, voit tallentaa luonnoksena (**Tallenna**) ja/tai julkaista muutokset (**Julkaise**).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

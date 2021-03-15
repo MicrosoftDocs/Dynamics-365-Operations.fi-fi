@@ -49,3 +49,6 @@ Resurssien hallinnassa voit määrittää asiakirjoja niin, että ne liittyvät 
 
 4. Valitse **Liitteet**. **Tiedoston käsittely** -vakiosivu tulee näkyviin.
 5. Määritä asiakirjat tai huomautukset, jotka liitetään resurssin asiakirjatietueeseen. Kun olet liittänyt tiedostot, **Liitteet**-kentässä näkyy tietueeseen liittyvien tiedostojen määrä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Tämän menettelyn avulla voit luoda organisaation raportoinnin raporttihierarki
     * Valitse solmua vastaava dimension jäsen.  
 59. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

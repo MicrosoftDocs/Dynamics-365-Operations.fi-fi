@@ -49,3 +49,6 @@ Jos sama henkilö tarvitsee käyttöoikeudet Toimittajaportaalissa useille toimi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

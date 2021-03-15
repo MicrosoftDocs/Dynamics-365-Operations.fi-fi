@@ -40,3 +40,6 @@ Tämän kaksoismuunnon vuoksi päivämäärät muuttavat sovellusten välillä. 
 4. Muuta **Aikavyöhyke**-asetukseksi **Koordinoitu yleisaika** ja muuta **Kieli**-asetukseksi **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

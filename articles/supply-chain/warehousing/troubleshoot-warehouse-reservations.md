@@ -77,3 +77,6 @@ Jos käytät kuitenkin nimikettä, jossa käytetään erän alapuolella olevaa v
 Tämä on suunniteltu ominaisuus. Jos sijoitat dimension **Sijainti**-dimension yläpuolelle varaushierarkiassa, se on määritettävä ennen vapautusta varastoon. Microsoft on arvioinut tämän ongelman ja määrittänyt sen toimintorajoitukseksi, joka koskee vapautuksia varastoon kuormasuunnittelun työtilasta. Osittaisia määriä ei voi vapauttaa, jos vähintään yhtä **Sijainti**-dimension yläpuolella olevaa dimensiota ei ole määritetty.
 
 Lisätietoja on kohdassa [Joustava varastotason dimensioiden varauskäytäntö](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Tässä menettelyssä keskitytään otto-kanbaneihin materiaalien siirtämiseksi
 2. Valitse Valmis.
     * Molempien töiden siirto suoritetaan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

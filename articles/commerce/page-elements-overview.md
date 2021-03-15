@@ -63,3 +63,6 @@ Seuraavassa taulukossa on yhteenveto termeistä, jotka sinun tulisi tuntea, kun 
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Sivuston selauksen mukauttaminen](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

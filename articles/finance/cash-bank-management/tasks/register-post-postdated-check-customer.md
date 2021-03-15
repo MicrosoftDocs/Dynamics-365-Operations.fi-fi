@@ -49,3 +49,6 @@ Voit rekisteröidä asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot. Vo
 15. Valitse Kirjaa.
 16. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

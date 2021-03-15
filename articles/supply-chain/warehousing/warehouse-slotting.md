@@ -383,3 +383,6 @@ Kun kaikki vaaditut elementit ovat paikoillaan, voit määrittää tilauksen suo
 1. Voit halutessasi määrittää toistuvan ajon automaattisesti.
 
 Jos harjoitteet ovat skenaariossa, **älä** määritä automaattista paikoitusta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

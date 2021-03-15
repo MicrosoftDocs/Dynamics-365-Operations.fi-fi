@@ -276,3 +276,6 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
 
 5. Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
 6. Jos eskalointipolun käyttäjät eivät vastaa asiakirjaan ajoissa, järjestelmä suorittaa asiakirjan toimenpiteen automaattisesti. Voit määrittää järjestelmän suorittaman toimenpiteen valitsemalla **Toimenpide**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä toimenpiteen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

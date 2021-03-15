@@ -74,3 +74,6 @@ Voit luoda uuden kuratoidun tuotesuositusluettelon seuraavasti.
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

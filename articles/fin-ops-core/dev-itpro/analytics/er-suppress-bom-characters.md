@@ -66,3 +66,6 @@ Toiminnon tarkastelu suorituksen aikana edellyttää soveltuvan menettelyn suori
 ## <a name="see-also"></a>Lisätietoja
 
 - [Sähköisen raportoinnin muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

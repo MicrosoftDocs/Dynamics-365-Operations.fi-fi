@@ -74,3 +74,6 @@ Tämä liittyy odottavaan toimintoon, joka suunniteltu tuotantotilausten tuen os
 [Suunnittelun optimoinnin aloittaminen](get-started.md)
 
 [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Tämän menettelyn suorittaminen edellyttää, että sinulla käyttäjätiliin l
 29. Valitse OK.
 30. Valitse syy, miksi poistut etuajassa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

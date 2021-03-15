@@ -52,3 +52,6 @@ Seuraavassa kuvataan konfiguraation määrittäminen dimensioperustaiselle tuott
     * Kirjoita konfiguraatiolle sen sisällön selittävä kuvaus.  
 11. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

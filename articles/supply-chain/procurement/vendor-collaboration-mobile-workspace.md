@@ -169,3 +169,6 @@ Kaikki tilausriville tehdyt muutokset näytetään. Ladattuja huomautuksia ja li
 
 ### <a name="open-confirmed-orders"></a>Avoimet vahvistetut tilaukset
 Kun asiakas on vahvistanut ostotilauksen, (ts. ostotilaus on siirretty **Vahvistettu** -tilaan), se näkyy avoimissa vahvistetuissa tilauksissa. Se pysyy luettelossa, kunnes se on rekisteröity asiakkaan vastaanottamaksi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

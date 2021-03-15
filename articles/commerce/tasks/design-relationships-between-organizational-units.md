@@ -62,3 +62,6 @@ Menettely opastaa organisaatioyksiköiden välisten suhteiden suunnittelemisessa
 29. Valitse Julkaise.
 30. Valitse Sulje.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

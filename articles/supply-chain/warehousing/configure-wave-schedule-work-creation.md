@@ -110,3 +110,6 @@ Seuraava vuokaavio osoittaa, miten suunniteltu työ luodaan aaltokäsittelyn aik
 Käsittelyaaltojen erätöitä voi tarkastella valitsemalla **Kaikki aallot** -sivun toimintoruudussa **Erätyöt**.
 
 Tällä tavoin voi tarkastella kunkin erätyötunnuksen kaikki erätehtävän tietoja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

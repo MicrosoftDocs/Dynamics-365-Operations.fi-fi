@@ -103,3 +103,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 21. Valitse Avaa.
     * Tarkista luotu XML-tiedosto, joka sisältää laskennan ja summauksen tiedot, jotka on kerättiin valitun konfiguraation ajon aikana.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

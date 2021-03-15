@@ -127,3 +127,6 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 
 3. Varmista, että **externalenvironmentURL**-sarakkeessa on oikea Dataverse- tai sovelluksen URL-osoite. Poista kaikki rivien kaksoiskappaleet, jotka viittaavat väärään Dataverse -URL-osoitteeseen. Poista vastaavat rivit DUALWRITEPROJECTFIELDCONFIGURATION- ja DUALWRITEPROJECTCONFIGURATION-tauluista.
 4. Pysäytä taulun yhdistäminen ja käynnistä se sitten uudelleen
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

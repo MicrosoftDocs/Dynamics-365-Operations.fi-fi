@@ -76,3 +76,6 @@ Voit vahvistaa, että asiakastilin maksutapa on otettu käyttöön ja julkaistu,
 [Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille](quantity-limits.md)
 
 [SDK:n ja moduulikirjaston päivitykset](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

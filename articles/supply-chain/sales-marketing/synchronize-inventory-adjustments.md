@@ -80,3 +80,6 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Varastosiirto (Field Servicesta Supply Chain Managementiin): Varastosiirto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -396,3 +396,6 @@ Tässä skenaariossa kuormalava 3 hyväksytään.
 1. Valitse valikkopainike (**≡**) sivun yläosassa ja valitse sitten valikosta **Peruuta**, jos haluat palata valikkoon.
 
 Voit nyt sulkea mobiilisovelluksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Määritä työntekijöitä vastaavat työluokat Dynamics 365 Human Resourcesiss
 3. Määritä **Työntekijän tyypin**, **Työluokan** ja **Kuvauksen** arvot.
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

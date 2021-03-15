@@ -407,3 +407,6 @@ Seuraavaksi voit kerätä myyntitilauksen 2. Se vapautettiin, kun myyntitilaukse
 - Voit ohittaa halutessasi täydennystyön saatavuuden manuaalisesti jokaisen työotsikon kohdalla **Työn tiedot** -sivulla.
 - Kun järjestelmä määrittää täydennystyön saatavuuden, se ottaa huomioon varaston, joka on jo sijainnissa ennen töiden valmistumista.
 - Jokainen myyntitilaustyö on linkitetty tiettyyn täydennystyöhön. Vastaavaa myyntityön saatavuuden toimintoa ei ole.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

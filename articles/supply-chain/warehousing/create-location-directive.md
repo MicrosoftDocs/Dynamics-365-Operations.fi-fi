@@ -257,3 +257,6 @@ Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työ
 
 - Video: [Perusteellinen varastonhallinnan määrityksen tarkastelu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Ohjeaihe: [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

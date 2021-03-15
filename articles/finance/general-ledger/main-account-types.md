@@ -40,3 +40,6 @@ Lisätietoja on ohjeaiheessa [Päätililuokkien määrittäminen](tasks/set-up-m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

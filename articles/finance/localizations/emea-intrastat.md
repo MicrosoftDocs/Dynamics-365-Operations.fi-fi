@@ -239,3 +239,6 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

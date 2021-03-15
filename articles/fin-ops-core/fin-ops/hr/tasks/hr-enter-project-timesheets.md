@@ -51,3 +51,6 @@ Voit luoda tässä menettelyssä aikaraportin käyttämällä tyhjää aikarapor
 21. Valitse **Lähetä**.
 22. Valitse **Lähetä**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

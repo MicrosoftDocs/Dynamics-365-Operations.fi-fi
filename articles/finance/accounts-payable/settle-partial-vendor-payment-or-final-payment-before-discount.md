@@ -141,3 +141,6 @@ April kirjaa maksukirjauskansion ja tarkistaa toimittajan tapahtumat **Toimittaj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

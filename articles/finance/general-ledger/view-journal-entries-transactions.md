@@ -60,3 +60,6 @@ Talousraporttien lisäksi voit käyttää seuraavia kirjanpitoraportteja tarkast
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

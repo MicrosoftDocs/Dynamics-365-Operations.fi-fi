@@ -113,3 +113,6 @@ Seuraa näitä ohjeita, oppaan ja ylläpidon tarkistuslistamallin kytkemiseksi.
 
 - [Kaksoiskirjoituksen yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Resurssien hallinnan yleiskatsaus](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

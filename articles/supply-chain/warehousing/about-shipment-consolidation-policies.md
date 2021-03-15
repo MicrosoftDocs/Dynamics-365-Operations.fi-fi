@@ -134,3 +134,6 @@ Seuraavassa taulukossa on yhteenveto siitä, miten lähetyksen konsolidointi toi
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Lähetyksen konsolidointikäytäntöjen määrittäminen](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

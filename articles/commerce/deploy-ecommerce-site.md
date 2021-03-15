@@ -111,3 +111,6 @@ Kun haluat käyttää Commerce-sivuston muodostinta, siirry **Sähköinen kaupan
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

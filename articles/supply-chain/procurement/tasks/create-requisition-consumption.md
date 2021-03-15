@@ -91,3 +91,6 @@ Tässä aiheessa kuvataan ehdotuksen luontiprosessia. Siinä näytetään erilai
 6. Sulje sivu.
 7. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

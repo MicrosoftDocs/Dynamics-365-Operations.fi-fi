@@ -52,3 +52,6 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

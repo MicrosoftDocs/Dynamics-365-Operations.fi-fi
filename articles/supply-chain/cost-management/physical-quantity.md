@@ -146,3 +146,6 @@ Seuraava taulukko sisältää varasto-objektin laskennan tulokset. Voit tarkaste
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

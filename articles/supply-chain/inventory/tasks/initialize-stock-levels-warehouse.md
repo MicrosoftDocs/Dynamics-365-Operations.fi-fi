@@ -59,3 +59,6 @@ Tässä menettelyssä selitetään, miten käytettävissä oleva varasto päivit
 25. Sulje sivu.
 26. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

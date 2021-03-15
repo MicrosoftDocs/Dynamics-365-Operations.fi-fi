@@ -250,3 +250,6 @@ Liiketoiminnan kannalta oikeiden arvojen antaminen edellyttää, että otat huom
 ## <a name="see-also"></a>Lisätietoja
 
 Lisätietoja on alkuperäisessä blogikirjoituksessa [Lisätietoja (dynaamisista) negatiivista päivistä](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

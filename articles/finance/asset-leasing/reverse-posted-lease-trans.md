@@ -55,3 +55,6 @@ Voit peruuttaa palautetun tapahtuman seuraavasti.
 Kun valitset **Käänteinen jäljitys**, näyttöön tulee valintaruutu, jossa näkyvät sekä alkuperäiset tapahtumat että palautetut tapahtumat linkitetyn jäljitysnumeron kanssa.
 
 Voit myös jäljittää peruutuksia käyttämällä soveltuvaa **Aikataulut**-sivua. **Käänteinen**-kenttä tyhjennetään, kun taas **Kirjauskansio kirjattu** -kenttä valitaan. Lisäksi **Viimeisin kirjauskansionumero** -kenttään päivitetään peruutustapahtuman kirjauskansionumero ja **Kirjauskansionumero**-kenttään päivitetään palautuskirjauskansionumero.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

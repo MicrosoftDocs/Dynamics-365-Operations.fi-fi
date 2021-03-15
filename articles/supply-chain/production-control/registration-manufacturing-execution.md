@@ -61,3 +61,6 @@ Työntekijät voivat tehdä erityyppisiä rekisteröintejä tuotannonohjauksessa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

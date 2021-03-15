@@ -110,3 +110,6 @@ Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sill
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

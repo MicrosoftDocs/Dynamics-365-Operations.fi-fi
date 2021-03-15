@@ -35,3 +35,6 @@ Varmenteen V5 **Palvelimen todentamisen tarkoitus** -ominaisuuden myöntäjä on
 Tämä päivitys antaa vaihtoehtoisen varmenteen vahvistusratkaisun, jolla voi muodostaa turvallisen yhteyden.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

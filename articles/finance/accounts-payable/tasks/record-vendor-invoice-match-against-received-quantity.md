@@ -64,3 +64,6 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Nämä vaiheet s
 10. Valitse toimintoruudussa Tarkista.
 11. Valitse Täsmäytyksen tiedot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Näiden ohjeiden avulla voit luoda uuden käyttöomaisuuskirjan ja liittää sen
     * Ota huomioon, että Poistokaudet-kentän arvo lasketaan käyttöiän määrittämisen jälkeen.  
     * Voit määrittää poistomenetelmän verotustarpeen mukaan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Tässä ohjeessa kuvataan, miten taloushallinnon dimension oletusmallit määrit
 11. Anna taloushallinnon dimensioarvot, jotka vastaavat annettua prosenttiarvoa.
 12. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

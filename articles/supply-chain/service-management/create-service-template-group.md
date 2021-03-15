@@ -38,3 +38,6 @@ Huoltomalliryhmien avulla voit lajitella ja suodattaa huoltomalleja.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

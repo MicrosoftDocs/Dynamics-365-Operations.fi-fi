@@ -35,3 +35,6 @@ Seuraava aihe selittää, miten käyttäjä, jolla on järjestelmänvalvojan roo
 5. Valitse **Aikavyöhyke**-kentästä vaihtoehto avattavasta luettelosta.
 6. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

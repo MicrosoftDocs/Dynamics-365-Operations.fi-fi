@@ -58,3 +58,6 @@ Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kir
 1. Valitse **Varasto**.
 2. Valitse **Tapahtumat**. Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

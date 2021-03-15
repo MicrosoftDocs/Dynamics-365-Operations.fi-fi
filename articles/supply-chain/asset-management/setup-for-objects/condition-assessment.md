@@ -65,3 +65,6 @@ Kun olet tehnyt kunnon arvioinnin rekisteröinnin resurssille, voit tulostaa kun
 
 >[!NOTE]
 >Voit myös rekisteröidä kunnon arvioinnintyötilaukselle (**resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** > **Kunnon arviointi** -painike).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

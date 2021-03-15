@@ -66,3 +66,6 @@ Tässä ohjauksessa kerrotaan, miten polttoaineindeksialue, polttoaineindeksi ja
 12. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 13. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

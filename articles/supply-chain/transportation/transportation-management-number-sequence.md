@@ -48,3 +48,6 @@ Numerosarja linkitetään rahdinkuljettajaan seuraavasti:
 1. Valitse **Muokkaa**.
 1. Valitse **Yleiskatsaus**-pikavälilehdessä **Tuotenumerosarja**-kentässä vaihtoehto.
 1. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

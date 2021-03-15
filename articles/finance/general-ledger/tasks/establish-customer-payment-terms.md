@@ -56,3 +56,6 @@ Tämä menettely määrittää käteisalennuksen ja eräpäivän asetukset. Täs
 26. Syötä **Toimittajaalennusten päätili** -kohdassa päätili, jolle käteisalennus kirjataan toimittajan laskuja varten.
 27. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

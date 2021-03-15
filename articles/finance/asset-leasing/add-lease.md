@@ -88,3 +88,6 @@ Kaikki resurssin vuokrauksessa luodut kirjauskansioviennit sisältyvät resurssi
 
 > [!NOTE]
 > Resurssin leasingkirjauskansiota ei voi luoda manuaalisesti. Se luodaan automaattisesti, kun vuokrasopimuksen aikataulut luodaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

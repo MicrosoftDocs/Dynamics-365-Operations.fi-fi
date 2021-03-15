@@ -178,3 +178,6 @@ Tällöin tapahtuu seuraavaa:
 - Vapautus varastoon käynnistyy myyntitilauksen osalta.
 - Vapautuksen perusteella luodaan lähetys- ja cross-docking-työ. Tämä työ kehottaa varastotyöntekijää keräilemään myyntitilauksen täyttämiseen tarvittavat määrät ja asettamaan ne cross-dockingin sijaintidirektiivissä määritettyyn lähtösijaintiin.
 - Jos tuotantotilauksen määrä ylittää myyntitilauksen edellyttämän määrän, luodaan tavallinen poispanotyö. Tämä työ kehottaa varastotyöntekijää keräilemään cross-dockingin jälkeen jäljelle jääneet valmiit tavarat ja siirtämään ne tavalliseen varastointitilaan sijaintidirektiivin mukaisesti.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

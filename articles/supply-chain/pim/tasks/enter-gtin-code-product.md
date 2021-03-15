@@ -41,3 +41,6 @@ GTIN-koodit määrittää GS1-organisaatio. Tässä esimerkissä syötät koodin
 11. Anna GTIN-kenttään arvo.
 12. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

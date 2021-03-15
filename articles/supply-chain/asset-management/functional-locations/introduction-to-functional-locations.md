@@ -82,3 +82,6 @@ Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa taulukossa k
 | Viat                              | Avaa **Resurssin viat** -sivu, jolla voit tarkastella luetteloa resurssin vikarekisteröinneistä, jotka liittyvät valittuun toiminnalliseen sijaintiin. |
 | Päivitä toiminnallisen sijainnin tila    | Päivitä valitun toiminnallisen siajinnin vaihe                                                                                        |
 | Elinkaaren tilan loki                 | Tarkastele lokia, joka näyttää valitun toiminnallisen sijainnin vaiheet.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Tässä menettelyssä kerrotaan, miten myyntipisteen kassojen taloushallinnon di
 17. Etsi ja valitse luettelosta päivitettävän kassakoneen dimension arvo.
 18. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

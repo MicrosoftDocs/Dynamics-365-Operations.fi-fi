@@ -40,3 +40,6 @@ Tässä menettelyssä näytetään, miten tuotantotilaus vapautetaan. Tämän me
 6. Valitse OK.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

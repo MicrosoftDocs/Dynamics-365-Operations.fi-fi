@@ -177,3 +177,6 @@ Tässä osassa jatketaan edellisessä osassa luodun työtilauksen käyttämistä
 1. Valitse toimintoruudun **Laskutus**-välilehdessä **Uusi laskuehdotus**.
 1. Valitse **Luo laskuehdotus** -valintaikkunan **Projektitapahtumat**-osassa jokaisen laskutettavan rivin kohdalla **Valitse**-valintaruutu.
 1. Sulje valintaikkuna ja tarkastele uutta laskuehdotusta valitsemalla **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

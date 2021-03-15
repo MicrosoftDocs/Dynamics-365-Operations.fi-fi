@@ -51,3 +51,6 @@ Tässä aiheessa kerrotaan, miten määritepohjainen hinnoittelu määritetään
 8. Kirjoita arvo **Lauseke**-kenttään. Kirjoita esimerkiksi `50`. 
 9. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

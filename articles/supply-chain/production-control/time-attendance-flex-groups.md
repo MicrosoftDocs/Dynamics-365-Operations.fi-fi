@@ -184,3 +184,6 @@ Tämä muutos tapahtuu siirron jälkeen, koska liukumatunnit on laskettu palkkal
 | 18.00 | 20.00 | 2    | 1.5       | 3            |
 | 20.00 | 21.00 | 1    | 2         | 2            |
 |          |          |      | **Yhteensä** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

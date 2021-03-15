@@ -84,3 +84,6 @@ Tässä aiheessa kuvataan, miten perusvarastoinventoinnin prosessien konfiguroin
 5. Valitse inventointiryhmä **Inventointiryhmä**-kentän avattavasta valikosta. Voit valita tietyn inventointiryhmän, jota käytetään valitsemasi tietyn varaston nimikkeessä. Kun kyseisen varaston inventointi suoritetaan, inventointikäytäntö korvaa nimikkeen yleisen inventointikäytännön.  
 6. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

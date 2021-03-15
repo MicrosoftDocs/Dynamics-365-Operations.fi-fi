@@ -105,3 +105,6 @@ Kun testaat esikatseluominaisuuksia tai kokeilet uusia toimintoja, saatat löyt�
 [Dynamics 365 Human Resourcen uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
 [Ohjelmiston elinkaarikäytäntö](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

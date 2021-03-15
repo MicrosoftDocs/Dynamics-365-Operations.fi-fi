@@ -174,3 +174,6 @@ Mahdollisen toimittajan rekisteröintipyynnön eri tilat luovat yleiskuvan pyynn
 |         Hyväksytty         |                                                                               Toimittajapyyntö hyväksytään.                                                                               |                                                                                                   Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.                                                                                                    |
 |         Hylätty         |                                                                               Toimittajapyyntö hylätään.                                                                               |                                                                                                   Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Lisätietoja kokeiluprosessin kustakin vaiheesta on seuraavissa ohjeaiheissa:
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Hypoteesin ja kokeen onnistumismittareiden määrittäminen](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

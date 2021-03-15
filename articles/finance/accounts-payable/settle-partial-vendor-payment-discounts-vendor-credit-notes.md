@@ -70,3 +70,6 @@ April voi tarkistaa toimittajan tapahtumat **Toimittajan tapahtumat** -sivulla v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

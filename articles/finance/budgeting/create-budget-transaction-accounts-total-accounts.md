@@ -45,3 +45,6 @@ Näin voidaan luoda summatilin aikavälille erilliset budjetit tärkeimpiä tapa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

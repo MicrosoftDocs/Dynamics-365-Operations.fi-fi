@@ -117,3 +117,6 @@ Oletustilit valitaan **Oletustilin määritys** -sivulla, jonka voit avata toimi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

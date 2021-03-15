@@ -53,3 +53,6 @@ Voit antaa lisäksi vahvistussanoman, joka näytetään, kun ohjattu toiminto on
 4.  Avaa **Maa/alueet**-välilehti ja valitse maa tai alue, jossa konfigurointia on käytettävä.
 5.  Viimeistele konfigurointi noudattamalla oletuskonfiguroinnin ohjeita.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

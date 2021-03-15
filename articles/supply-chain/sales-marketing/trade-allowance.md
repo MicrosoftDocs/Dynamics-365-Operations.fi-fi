@@ -199,3 +199,6 @@ Jos haluat analysoidaan yleiskuvan kampanjan erilaisista suorituskykymittareista
 
 Jos haluat analysoidaan yleiskuvan kampanjan erilaisista suorituskykymittareista, voit käyttää analyysinäkymää. Siirry analyysinäkymään valitsemalla **Myynti ja markkinointi** \> **Myynninedistämispalkkiot** \> **Myynninedistämisen palkkiosopimukset**. Valitse toimintoruudussa **Analyysi**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

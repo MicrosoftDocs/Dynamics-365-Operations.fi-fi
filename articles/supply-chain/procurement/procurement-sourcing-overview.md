@@ -92,3 +92,6 @@ Laskutetut ostotilaukset tallentavat velan toimittajan tilille ostoreskontraan, 
 ## <a name="vendor-performance"></a>Toimittajan suoritustaso
 
 Ostotoimintojen suorituskykyä ja arviointia tuetaan *hankinnan ja ostoreskontran raporttien kautta*, mikä sisältää varojen käytön analyysin ja toimittajan suoritusten analyysin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

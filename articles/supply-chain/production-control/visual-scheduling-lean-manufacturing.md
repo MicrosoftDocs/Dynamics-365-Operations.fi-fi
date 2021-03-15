@@ -94,3 +94,6 @@ Voit avata Kanban-aikataulun valikkokohdasta seuraavilla sivuilla:
 
 [Lean-valmistuksen kanban-työn ajoitus](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

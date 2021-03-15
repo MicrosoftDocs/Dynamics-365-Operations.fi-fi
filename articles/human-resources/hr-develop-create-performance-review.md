@@ -78,3 +78,6 @@ Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvio
 34. Valitse **Arviointi**-välilehti. Arvioinnin tilan vaihtuessa työntekijä ja esimies voivat lisätä kommentteja kullekin tavoitteelle tai osaamisalueelle.  
 35. Valitse **Kuittaukset**-välilehti. Työntekijä ja esimies voivat kuitata arvioinnin. Kun kaikki tarvittavat hyväksynnät on tehty, tilaksi muutetaan **Valmis**, eikä muutoksia voi enää tehdä.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

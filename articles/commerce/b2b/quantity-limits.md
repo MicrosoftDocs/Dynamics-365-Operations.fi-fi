@@ -84,3 +84,6 @@ Ota B2B-tilauksen määrärajatoiminto käyttöön Commercen sivustonmuodostimes
 [Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa](manage-b2b-users.md)
 
 [Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

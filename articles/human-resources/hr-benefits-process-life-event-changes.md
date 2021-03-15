@@ -52,3 +52,6 @@ Käsittele elämäntapahtumien muutokset Microsoft Dynamics 365 Human Resourcesi
    4. Valitse **OK**. Prosessi suoritetaan määrittämilläsi parametreilla.
 
 4. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

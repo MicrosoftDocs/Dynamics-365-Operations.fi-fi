@@ -534,3 +534,6 @@ Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatim
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

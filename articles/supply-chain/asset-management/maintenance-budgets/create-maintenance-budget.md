@@ -58,3 +58,6 @@ Voit myös luoda uuden ylläpitobudjetin kopioimalla aiemmin luodun budjetin. Va
 
 > [!NOTE]
 > Kunnossapitobudjetissa lasketaan vain kunnossapitoaikatauluriveihin perustuvia budjettikustannuksia. Voit laskea saman kauden todelliset kustannukset käyttämällä **Resurssien kustannusten hallinta** -sivulla olevaa laskentaa. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

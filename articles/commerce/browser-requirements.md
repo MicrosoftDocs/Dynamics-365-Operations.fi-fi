@@ -47,3 +47,6 @@ Dynamics 365 Commerce -sivustot ovat parhaiten tuettuja seuraavissa Internet-sel
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

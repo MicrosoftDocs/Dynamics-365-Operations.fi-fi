@@ -44,3 +44,6 @@ Tässä aiheessa kuvataan, miten myönnät työntekijöille oikeuden valmistella
 2. Etsi pyynnön lähettäjäksi lisäämäsi työntekijä pikasuodattimen avulla.
 3. Valitse pyynnön lähettäjä. Valmistelijaluettelossa ovat käyttäjät, joilla on oikeus tilata nimikkeitä vasemmassa ruudussa valitun pyynnön lähettäjän puolesta.  Voit lisätä muita valmistelijoita tässä. Näkymän avulla voit myös antaa pyynnön lähettäjälle oikeuden luoda ostoehdotuksia yrityksissä toimintayksiköissä, jotka eivät ole tämän ensisijainen yritys tai toimintayksikkö.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

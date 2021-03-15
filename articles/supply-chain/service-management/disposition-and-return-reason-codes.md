@@ -53,3 +53,6 @@ Määritä käsittelykoodi nimikkeen vastaanoton tai palautetun nimikkeen fyysis
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

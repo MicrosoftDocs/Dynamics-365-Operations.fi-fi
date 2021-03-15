@@ -138,3 +138,6 @@ Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00. Maksua ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

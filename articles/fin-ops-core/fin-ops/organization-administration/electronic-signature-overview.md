@@ -109,3 +109,6 @@ Määritä hyväksyjät seuraavasti.
 1. Valitse **Asetukset**-sivun **Tilit**-välilehdessä **Määritä hyväksyjä**.
 2. Valitse sen käyttäjän tunnus, jonka on allekirjoitettava toisen käyttäjän muutokset **Hyväksyjän käyttäjätunnus** -kentässä.
 3. Valitse sen käyttäjän tunnus, jonka muutokset on allekirjoitettava **Käyttäjätunnus, jonka puolesta allekirjoitetaan** -kentässä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

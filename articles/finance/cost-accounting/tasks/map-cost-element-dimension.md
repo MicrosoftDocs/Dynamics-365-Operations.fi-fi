@@ -43,3 +43,6 @@ Kustannusten vastuuhenkilö voi käyttää tätä menettelyä kustannustason dim
     * Valitse tässä esimerkissä dimension jäsen 6001004 Telefono.  
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

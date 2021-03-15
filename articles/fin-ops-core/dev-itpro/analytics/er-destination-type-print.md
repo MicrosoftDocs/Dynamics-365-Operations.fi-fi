@@ -70,3 +70,6 @@ Jos haluat käyttää tiettyä [sivun suuntaa](electronic-reporting-destinations
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

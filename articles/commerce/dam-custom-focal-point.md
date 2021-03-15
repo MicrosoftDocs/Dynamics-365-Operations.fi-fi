@@ -59,3 +59,6 @@ Voit määrittää kuvalle mukautetun keskipisteen seuraavasti.
 [Kuvien rajaaminen](dam-crop-images.md)
 
 [Staattisten tiedostojen lataaminen ja käyttäminen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

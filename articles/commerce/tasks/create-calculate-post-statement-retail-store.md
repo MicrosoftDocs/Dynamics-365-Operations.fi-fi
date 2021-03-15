@@ -47,3 +47,6 @@ Tässä aiheessa kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaami
 12. Valitse kotisivulla **Myymälän myyntitiedot**.
 13. Valitse **Kirjatut laskelmat** -välilehti.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

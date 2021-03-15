@@ -109,3 +109,6 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

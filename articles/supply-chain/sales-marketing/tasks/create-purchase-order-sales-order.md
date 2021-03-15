@@ -68,3 +68,6 @@ Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilau
     - **Viite-erä** varmistaa, että oston kustannukset veloitetaan siihen liitetyssä myyntitilauksessa.  
     - Voit siirtyä alkuperäiseen myyntitilaukseen avaamalla linkin **Viitenumero**-kentässä.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

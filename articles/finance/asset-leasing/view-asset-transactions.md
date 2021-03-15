@@ -47,3 +47,6 @@ Voit tarkastella vuokrauksen resurssin tapahtumia, valitse vuokrasopimus **Vuokr
 Voit tarkastella vuokrauksen kulutapahtumia, valitse vuokrasopimus **Vuokrasopimusyhteenveto**-sivulla ja valitse sitten **Kirjat**, jos haluat avata vuokrasopimustietueeseen liitetyt vuokrasopimuskirjat. Valitse sitten **Kulutapahtumat**.
 
 **Kulutapahtumat**-sivulla näkyvät kaikki vuokrasopimukseen kirjatut kulut, kuten korkokulut, poistokulut ja mahdolliset toimeenpanokustannukset.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

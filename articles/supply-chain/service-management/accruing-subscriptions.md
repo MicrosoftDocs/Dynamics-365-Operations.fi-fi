@@ -151,3 +151,6 @@ Voit määrittää, kuinka monta kirjanpitotapahtumaa luodaan, kun jaksotettu tu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

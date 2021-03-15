@@ -59,3 +59,6 @@ Alla olevassa kuvassa näkyy esimerkki resursointivalinnoista **Ajoita työtilau
 [!NOTE]
 Jos haluat poistaa aikataulun työtilauksesta, valitse työtilaus kohdassa **Kaikki työtilaukset** ja valitsemalla **Yleiset**-välilehdestä **Poista ajoitus**. Muista päivittää työtilauksen elinkaaritila manuaalisesti, jos poistat aikataulun.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

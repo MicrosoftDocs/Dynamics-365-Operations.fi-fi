@@ -293,3 +293,6 @@ Tässä osassa luettelo uuden ruudukko-ohjausobjektin tunnetuista ongelmista.
 ### <a name="quality-update-for-1009platform-update-33"></a>Laatupäivitys 10.0.9/Ympäristön päivitys 33
 
 - [KB 4550367] Aika-arvoja ei ole muotoiltu oikein.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

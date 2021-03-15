@@ -39,3 +39,6 @@ Valmistetun nimikkeen kulut sisältyvät aina nimikkeen yksikkökustannukseen st
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Kun napsautat Kamera-sivulla kamerapainiketta, se näkyy himmeänä viivakoodin 
 
 Kun osoitat viivakoodia kameralla, saat parhaan tuloksen, kun viivakoodi on kohdistettu viivojen sisälle. Kun viivakoodi on luettu, tulos käsitellään ja siirryt seuraavaan vaiheeseen. Jos seuraavassa vaiheessa on toinen syötekenttä, jonka ensisijaiseksi syöttömenetelmäksi on valittu Luetaan, kamerasivu käynnistyy uudelleen. Jos seuraava vaihe ei ole luettava kenttä, kamerasivu ei käynnisty.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

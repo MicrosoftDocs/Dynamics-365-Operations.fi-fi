@@ -104,3 +104,6 @@ Kun Visio-tiedosto luodaan, kussakin solmussa näkyvät ne tiedot, jotka perustu
 **Lisäasetus**
 
 Human Resourcesissa joitakin hierarkiaan liittyviä tietoja voi olla mahdollista katsoa **Ihmiset**-työtilassa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

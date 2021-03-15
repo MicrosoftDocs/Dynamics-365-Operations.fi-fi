@@ -57,3 +57,6 @@ Kustannuselementtien luomiseen Kustannuslaskennassa on useita keinoja. Tässä m
 1. Valitse Näytä dimension jäsenet.
     * Näytä tuodut kirjanpitotilit yrityksesi kustannuselementteinä joihin kustannukset voivat virrata.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

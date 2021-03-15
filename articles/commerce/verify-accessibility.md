@@ -86,3 +86,6 @@ Jos haluat käyttää integroitua [Microsoft helppokäyttöisyystiedot](https://
 [Luokan saapumissivun täydentäminen](enrich-category-page.md)
 
 [Dynaamisten verkkokauppasivujen luominen URL-parametrien perusteella](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

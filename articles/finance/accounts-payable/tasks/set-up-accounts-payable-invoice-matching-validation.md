@@ -97,3 +97,6 @@ Määritä laskujen kokonaissummien täsmäytyksen toimittajakohtaiset toleranss
 
 1. Voit määrittää yksittäisten toimittajien oletustoleranssin ohittavat toleranssit valitsemalla **Toimittajatili**.
 2. Kirjoita tälle toimittajalle hyväksymäsi vaihteluprosentti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

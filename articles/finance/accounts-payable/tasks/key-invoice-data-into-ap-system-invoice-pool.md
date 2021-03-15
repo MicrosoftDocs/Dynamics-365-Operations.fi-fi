@@ -67,3 +67,6 @@ Tässä aiheessa kuvataan, miten laskurekisteriä käytetään laskujen luomisee
 13. Valitse **Tapahtumat**.
 14. Valitse luomasi lasku. Laskurekisterin jaksotus peruutettiin ja kirjattiin sopivalle kulutilille.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

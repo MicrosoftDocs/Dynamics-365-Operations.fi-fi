@@ -87,3 +87,6 @@ Ulkomaanvaluutan uudelleenarvostustapahtuma jaetaan myös eri dimensioille, jotk
 Jos uudelleenarvostustapahtuma pitää palauttaa, valitse **Ulkomaanvaluutan uudelleenarvostus** -sivun **Palautustapahtuma**. Uusi ulkomaanvaluutan uudelleenarvostuksen historiatietue luodaan ylläpitämään historian kirjausketjua ulkomaanvaluutan uudelleenarvioinnin ajankohdasta tai palautuksesta.
 
 Jos haluat peruuttaa useita uudelleenarvostuksia, peruuta ensin uusin uudelleenarvostus. Jatka sitten vanhempien uudelleenarvostusten peruutusta päivämäärän osoittamassa järjestyksessä. Tämän jälkeen voit käsitellä uudet uudelleenarvostukset peruutetuilta kausilta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Asiakirjojen arvonlisävero lasketaan määrittämällä arvonlisäveroryhmä ja
 29. Valitse Arvonlisävero.
 30. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

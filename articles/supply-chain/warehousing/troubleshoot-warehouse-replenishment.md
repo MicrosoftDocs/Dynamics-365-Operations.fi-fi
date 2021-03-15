@@ -39,3 +39,6 @@ Keräilytyö estetään riippuvaisen täydennystyön vuoksi.
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Jos aaltokysynnän täydennystä käytettäessä keräilysijainti on täydennettävä lähdetilauksen kysynnän täyttämistä varten, järjestelmä luo sekä täydennystyön että keräilytyön. Se kuitenkin estää keräilytyön täydennystyön valmistumiseen saakka. Tämä on tarkoituksellista, sillä keräilysijainnissa ie ole riittävästi varastoa ellei täydennystyö valmistu. Suorita täydennystyö ja käsittele sitten keräilytyö.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

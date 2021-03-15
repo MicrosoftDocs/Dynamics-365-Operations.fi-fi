@@ -252,3 +252,6 @@ Luo uusi vuokrasopimus seuraavien ohjeiden mukaan.
 
    Alkuperäinen kirjaus, vuokran korko, vuokra ja vuokravelan saldo näkyvät **Vuokravelan tapahtumat** -sivulla. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,5 @@ Dynamics 365 Human Resources tarjoaa analyyseja, joiden avulla saat käsityksen 
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

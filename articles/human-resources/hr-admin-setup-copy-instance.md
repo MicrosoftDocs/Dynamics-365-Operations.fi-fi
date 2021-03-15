@@ -150,3 +150,6 @@ Lisätietoja mukautetuista kentistä on kohdassa [Mukautettujen kenttien luonti 
 [Poista esiintymä](hr-admin-setup-remove-instance.md)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän ohjeaiheen kuv
 [Bing Maps REST -ohjelmointirajapinta](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Kartat-moduuli](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Tässä menettelyssä keskitytään prosessin suunnitellun kanban-työn poistami
 4. Valitse OK.
     * Tällöin työn nykyinen tila muuttuu Suunniteltu-tilasta Ei suunniteltu -tilaan, ja työ poistetaan prosessitaululta.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

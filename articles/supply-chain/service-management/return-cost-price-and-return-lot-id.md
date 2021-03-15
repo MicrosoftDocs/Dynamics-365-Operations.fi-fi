@@ -111,3 +111,6 @@ Kun käytät **Palauta erätunnus** -kenttää palautustilausrivillä palautukse
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Toimintoruudun **Työtilaus**-välilehden **Projekti**-ryhmän painikkeet liitty
 >[!NOTE]
 >Voit lisätä työtilaukselle luotuja ennusteita suorittaessasi pääajoitusta käyttämällä ennustemallia, joka on valittu **Resurssienhallinnan parametrit** -sivulla.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

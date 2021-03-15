@@ -44,3 +44,6 @@ Ylläpitopyynnön tyyppi määrittää liitoksen ylläpitopyynnön elinkaaren ti
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tyypit** -luettelosivusta.
 
 ![Ylläpitopyyntöjen tyyppisivu](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

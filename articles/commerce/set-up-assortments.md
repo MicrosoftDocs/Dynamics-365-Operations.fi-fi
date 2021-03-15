@@ -54,3 +54,6 @@ Kun olet määrittänyt edellytykset, voit luoda valikoiman ja määrittää sen
 2. Valitse kanavat tai kanavien ylätason ryhmät, joita valikoima koskee.
 3. Lisää tuoteluokkia, yksittäisiä tuotteita tai tuotevariantteja valikoimaan. Voit sisällyttää kaikki tietyn luokan tuotteet tai ohittaa tietyt tuotteet valikoimaan kuuluvasta luokasta.
 4. Julkaise valikoima. Valikoiman ajastus suoritetaan automaattisesti, kun valikoima julkaistaan. Tämä prosessi luo tuoteluettelon. Kun tämä prosessi on valmis, tuotteet vapautuvat kanaville, joille tuotevalikoima on määritetty. Jos julkaistuun valikoimaan tai sille määritettyihin kanaviin tehdään muutoksia, valikoima on päivitettävä. Aja valikoimien ajastustyö komentojonotyönä päivittääksesi valikoiman muutosten yhteydessä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

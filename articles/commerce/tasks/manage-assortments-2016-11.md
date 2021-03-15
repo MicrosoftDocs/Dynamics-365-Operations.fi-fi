@@ -54,3 +54,6 @@ Tässä menettelyssä kerrotaan, miten uusi tuotevalikoima luodaan ja julkaistaa
 1. Valitse Julkaise.
 2. Valitse Kyllä.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

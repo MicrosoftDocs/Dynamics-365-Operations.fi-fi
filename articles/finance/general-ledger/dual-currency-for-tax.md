@@ -143,3 +143,6 @@ Lisätietoja on seuraavissa aiheissa:
 - [Kaksoisvaluutta](dual-currency.md)
 - [Arvonlisäveron yleiskatsaus](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

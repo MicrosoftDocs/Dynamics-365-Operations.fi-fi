@@ -54,3 +54,6 @@ Yhdysvaltojen IRCA (Immigration Reform and Control Act) -laki edellyttää, ett�
 22. Anna tai valitse arvo Asiakirjan numero -kenttään.
 23. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

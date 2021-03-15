@@ -43,3 +43,6 @@ Noudattamalla näitä ohjeita voit määrittää käyttäjät resurssin vuokrauk
 1. Siirry kohtaan **Järjestelmänhallinta \> Suojaus \> Liitä käyttäjät rooleihin**.
 2. Valitse **Vuokrasopimuksen ylläpitäminen**-, **Vuokravirkailija**- tai **Vuokrasopimuksen tarkasteleminen** -rooli ja valitse sitten **Manualainen liittäminen / sulje pois käyttäjiä**.
 3. Valitse rooliin liitettävä käyttäjä ja valitse sitten **Liitä rooliin**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

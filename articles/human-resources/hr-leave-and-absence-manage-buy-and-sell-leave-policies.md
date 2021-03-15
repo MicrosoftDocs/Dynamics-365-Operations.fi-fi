@@ -80,3 +80,6 @@ Voit antaa työntekijöille oikeuden ostaa ja myydä lomia luomalla lomien osto-
 [Jaksota loma- ja poissaolosuunnitelmat](hr-leave-and-absence-accrue.md)</br>
 [Osta ja myy lomaa](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

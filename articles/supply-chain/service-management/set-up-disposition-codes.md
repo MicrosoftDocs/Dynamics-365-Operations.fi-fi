@@ -56,3 +56,6 @@ Voit määrittää myös syykoodin, kun haluat kertoa nimikkeen palautuksen syyn
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

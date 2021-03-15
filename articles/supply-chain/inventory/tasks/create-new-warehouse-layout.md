@@ -62,3 +62,6 @@ Tässä ohjeaiheessa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot
 7. Sulje sivu.
 8. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

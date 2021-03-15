@@ -48,3 +48,6 @@ Tässä ohjeaiheessa kuvataan ennakonpidätyksen määrittäminen. *Ennakonpidä
 18. Valitse **Tallenna**.
 19. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

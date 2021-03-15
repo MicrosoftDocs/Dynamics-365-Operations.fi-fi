@@ -47,3 +47,6 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö  | kuvaus  | Muoto  | Pituus    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Dynamics 365 Commercen sähköisen kaupankäynnin määrittäminen ja käsitteleminen](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/)              | Dynamics 365 Commercen verkkokanavat ja sähköisen kaupankäynnin sivusto antavat vähittäismyyjille mahdollisuuden luoda tuotemerkille näkyvyyttä Internetissä. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

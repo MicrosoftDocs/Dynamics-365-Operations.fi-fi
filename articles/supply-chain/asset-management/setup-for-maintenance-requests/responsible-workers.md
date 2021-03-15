@@ -53,3 +53,6 @@ Ennen kuin voit määrittää vastuullisia kunnossapitotyöntekijöitä, sinun o
 Seuraavassa kuvassa on esimerkki **Vastuulliset ylläpitotyöntekijät** -sivusta.
 
 ![Vastaavien ylläpitotyöntekijöiden sivu](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

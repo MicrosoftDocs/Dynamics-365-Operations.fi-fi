@@ -39,3 +39,6 @@ Tässä menettelyssä kerrotaan, miten linkitetyt tuotteen määritetään. Täs
 10. Kirjoita numero Määrä-kenttään.
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

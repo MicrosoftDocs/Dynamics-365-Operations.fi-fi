@@ -134,3 +134,6 @@ Ohjeet Human Resources -sovelluksen käyttöoikeuksien rajoittamiseen Microsoft 
 [Microsoft Teamsin ohje- ja tukikeskus](https://support.office.com/teams)</br>
 [Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ Seuraavat oletusparametrit näytetään, kun tämä raportti luodaan. Voit käyt
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Valitse tiedostotyypit, joita voidaan käyttää työtilausraporttiin liittyvien
 ## <a name="the-number-sequences-tab"></a>Numerojärjestykset-välilehti
 
 Valitse tässä osassa tarvittavat numerosarjat. Resursseille on kaksi numerosarjaa: yksi manuaalisesti luoduille resursseille ja toinen odottavien resurssien kautta luoduille resursseille.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Useita vaiheita on suoritettava, kun haluat ajoittaa ja suorittaa ylläpitotyön
 
 > [!NOTE]
 > Yleensä kun työskentelet Dynamics 365 Supply Chain Managementissa ja **Resurssien hallinta** -moduulissa, valitset **Uusi** luodaksesi uuden tietueen, valitset **Muokkaa** päivittääksesi aiemmin luodun tietueen ja valitset **Tallenna** tallentaaksesi uusia tai muokattuja tietoja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

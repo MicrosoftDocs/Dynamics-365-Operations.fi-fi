@@ -117,3 +117,6 @@ Seuraavissa taulukoissa ovat sivut ja kentät, joiden avulla määritettyä pika
 |     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Lähetä maksukehotukset automaattisesti           |     Maksukehotuksen toimintotyypit lähettävät kehotuksen automatisoinnin aikana.                                      |
 |     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Luo automatisoinnon tehtävät                |     Luo ja sulkee muiden kuin tehtävätoimintotyyppien tehtäviä kaikkien huomioon otettavien automatisoitujen vaiheiden tarkastelemista varten.        |
 |     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Päivät, joiden ajan perintäprosessin automatisointi säilytetään     |     Määrittää, monenko päivän ajaksi perintähistoria tallennetaan.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

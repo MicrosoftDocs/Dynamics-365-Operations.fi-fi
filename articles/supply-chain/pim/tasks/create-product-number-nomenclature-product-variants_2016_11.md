@@ -101,3 +101,6 @@ Tässä aiheessa kuvataan, miten tuotenumeroiden nimikkeistö määritetään ko
 43. Sulje sivu.
 44. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

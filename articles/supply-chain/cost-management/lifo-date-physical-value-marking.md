@@ -156,3 +156,6 @@ Seuraavassa on kuvattu LIFO-varastomallin vaikutusta, kun käytetään varastost
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -32,3 +32,6 @@ Kaikkien jäsenmaiden on noudatettava EU-direktiivin säädöksiä, jotka koskev
 
 > [!NOTE]
 > Tarkista, että **Myyntiveron erittely** -kentän arvo on **Rekisteröintivaluutta** tai **Rekisteröinti- ja yritysvaluutta** **Lomakeasetukset**-sivun **Yleinen**-välilehdellä (**Myyntireskontra > Määritys > Lomakkeet > Lomakkeen määritys** tai **Projektinhallinta ja kirjanpito > Määritys > Lomakkeet > Lomakkeen määritys**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

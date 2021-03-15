@@ -52,3 +52,6 @@ Voit valita **Kattavuusryhmät**-sivulla toimintosanomat, jotka haluat järjeste
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

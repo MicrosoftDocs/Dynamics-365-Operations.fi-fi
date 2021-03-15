@@ -229,3 +229,6 @@ Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon varastomallin ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

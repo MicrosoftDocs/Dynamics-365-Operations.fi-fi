@@ -94,3 +94,6 @@ Halutessasi voit linkittää kaikkiin toimitustapoihin nopeutuskoodin. Tätä ko
 Esimerkiksi tilauksille, jotka toimitetaan seuraavana päivänä lentorahtina, keräys on tehtävä varastossa kello 23 päivittäin. Tässä tapauksessa nopeutuskoodi voidaan luoda ja koodi voidaan linkittää kaikkiin seuraavan päivän toimitustapoihin, jotka on määritetty järjestelmässä. Kun varasto luo keräilyaallon, soveltuvaa nopeutuskoodia **Nopeuta**-kentässä voidaan käyttää suodattimena siten, että keräily suoritetaan vain tilauksille, joilla on toimitustapa, joka on linkitetty tähän koodiin.
 
 Lisäksi, kun luodaan puhelinkekuksen tilaus, kun nopeutuskoodia voidaan manuaalisesti käyttää joko myyntitilauksen otsikkoon tai yksittäiseen myyntitilausriviin. Edelleen tätä koodia voidaan käyttää lajitteluun ja raportointiin. Joskus tilausta on käsiteltävä huolellisesti asiakaspalvelun ongelman vuoksi. Tässä tapauksessa tietty nopeutusvoidaan ottaa käyttöön tilauksen otsikossa tai riveillä, jotta tilaus voidaan tunnistaa ja priorisoida tilauslupausta toteutettaessa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

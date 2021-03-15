@@ -66,3 +66,6 @@ Tässä aiheessa kerrotaan, miten voit hallita määrityksistä poikkeamisia aie
 2. Valitse **Sulje määrityksistä poikkeaminen**.
 3. Valitse **Kyllä**.
 4. Sulje sivut.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

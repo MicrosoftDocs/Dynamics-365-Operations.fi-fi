@@ -102,3 +102,6 @@ Yleensä tulosvarasto ja alihankinnan resurssiryhmän sijainti on suoraan kohdis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti
 7. Valitse **Tallenna**.
 8. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

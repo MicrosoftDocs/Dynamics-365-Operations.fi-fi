@@ -246,3 +246,6 @@ C. Mene: Budjetointi &gt; Asetukset &gt; Budjettisuunnittelu &gt; Budjettisuunni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

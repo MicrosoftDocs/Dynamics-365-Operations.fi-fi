@@ -193,3 +193,6 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 [Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

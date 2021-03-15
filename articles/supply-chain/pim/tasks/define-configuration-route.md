@@ -45,3 +45,6 @@ Tässä menettelyssä keskitytään määrittämään konfiguraatioreitti, joka 
 15. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 16. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

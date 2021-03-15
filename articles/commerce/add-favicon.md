@@ -98,3 +98,6 @@ Kun esikatselet sivuja, jotka perustuvat malliin, johon lisäsit metatunnisteen 
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

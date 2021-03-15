@@ -82,3 +82,6 @@ Teht채v채ss채 keskityt채채n m채채rityksiin, jotka tarvitaan tapahtuman kanban-s�
     * Huomaa kanban, joka on luotu toimittamaan M0001 arvioituun tuotantotilaukseen.  
     * T채m채 on viimeinen vaihe!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

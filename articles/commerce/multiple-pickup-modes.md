@@ -85,3 +85,6 @@ Kun kanavalle on käytettävissä useita noutotoimitustapoja, asiakkaille tarjot
 ## <a name="considerations-for-distributed-order-management"></a>Jaetun tilausten hallinnan huomioon otettavia seikkoja
 
 Commercen [jaetun tilausten hallinnan (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) toiminnot ohittavat kaikki myymälästä noutoa varten merkityt myyntirivit. Nämä ominaisuudet on päivitetty siten, että konfiguroituihin noutotoimitustapoihin linkitetyt myyntirivit ohittavat DOM-logiikan eikä niitä kohdisteta uuteen toteutusvarastoon.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

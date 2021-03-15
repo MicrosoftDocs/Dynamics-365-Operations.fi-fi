@@ -87,3 +87,6 @@ Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vas
 
 ## <a name="steps-for-creating-a-job"></a>Työn luontiohjeet
 Uuden työn luomisen vaiheittaiset ohjeet löytyvät [Uusien töiden määrittäminen](../fin-and-ops/hr/tasks/define-new-jobs.md) -artikkelista. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

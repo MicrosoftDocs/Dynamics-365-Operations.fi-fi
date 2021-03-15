@@ -128,3 +128,6 @@ Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina k
 | Yksiköt                  | Tunnus ja nimi                                                   |
 | Resurssit                 | Resurssin tunnus, resurssin nimi, resurssin tyyppi ja resurssiryhmä |
 | Tuotteet                  | Tuotenumero, tuotteen nimi, nimiketunnus ja nimikeryhmä         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

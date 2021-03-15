@@ -65,3 +65,6 @@ Kullekin täydennysmenetelmälle määritetään jokin seuraavista kattavuuskood
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Pääsuunnitelmien yleiskatsaus](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

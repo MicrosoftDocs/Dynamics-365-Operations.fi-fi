@@ -40,3 +40,6 @@ Tässä menetelmässä selvitetään, miten dimensioihin perustuvissa konfiguraa
 7. Valitse Seuraava.
 8. Valitse Valmis.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

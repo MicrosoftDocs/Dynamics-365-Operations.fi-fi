@@ -174,3 +174,6 @@ Ongelma 3: ClickOnce Report Designerin kirjautumissivulta päästään etenemä�
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Näytä raportit](view-financial-reports.md)
 - [Talousraporttien raportointipuiden määritykset](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

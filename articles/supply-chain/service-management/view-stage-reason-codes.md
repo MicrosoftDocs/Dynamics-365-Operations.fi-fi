@@ -44,3 +44,6 @@ Tarkastele ja muokkaa huoltotilauksen vaiheen syyluetteloa. Käytä vaiheen syyk
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

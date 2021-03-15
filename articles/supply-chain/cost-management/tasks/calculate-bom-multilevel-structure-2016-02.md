@@ -48,3 +48,6 @@ Tämä menettely osoittaa, miten valmiin tuotteen kustannukset lasketaan käytt�
 11. Sulje sivu.
 12. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

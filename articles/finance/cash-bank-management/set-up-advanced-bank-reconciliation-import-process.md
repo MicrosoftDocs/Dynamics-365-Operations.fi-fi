@@ -198,3 +198,6 @@ Jos tuonti onnistuu, avautuva sanoma ilmoittaa, että tiliote on tuotu. Jos tuon
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

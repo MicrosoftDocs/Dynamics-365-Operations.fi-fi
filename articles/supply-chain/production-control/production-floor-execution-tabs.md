@@ -78,3 +78,6 @@ Kun kaikki tarvittavat välilehdet on suunniteltu, voit liittää ne määrityks
 1. Jatka lisäämällä välilehtiä tarpeen mukaan.
 
 1. Järjestele välilehtiä tarpeen mukaan työkalurivin **Siirrä ylös**- ja **Siirrä alas** -painikkeilla. Välilehdet näytetään vasemmalta oikealle edellä olevassa näyttökuvassa olevassa järjestyksessä (ylhäällä oleva välilehti näytetään vasemmalla).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

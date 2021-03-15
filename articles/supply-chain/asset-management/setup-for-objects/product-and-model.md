@@ -59,3 +59,6 @@ Tässä ohje aiheessa kerrotaan, kuinka voit määrittää resurssin valmistajat
 2. Valitse **Resurssi**-sarakkeessa resurssin linkki. Näyttöön tulee **Tiedot** -sivu.
 3. Valitse **Muokkaa**.
 4. Valitse **Yleiset**-pikavälilehdessä **valmistaja**- ja **Malli**-kenttien arvot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

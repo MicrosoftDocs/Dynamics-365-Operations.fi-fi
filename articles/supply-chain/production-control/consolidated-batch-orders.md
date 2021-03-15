@@ -45,3 +45,6 @@ Konsolidoitu erätilaus voi sisältää yhdistelmän mitä tahansa seuraavia til
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Seuraavassa esimerkissä näytetään, miten aloitussivua muokataan muuttamalla 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
 
 [Dynaamisten verkkokauppasivujen luominen URL-parametrien perusteella](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

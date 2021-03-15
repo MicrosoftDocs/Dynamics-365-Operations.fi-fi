@@ -53,3 +53,6 @@ Haluat luoda 10 päivän huoltovälin.
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Huoltovälit ](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

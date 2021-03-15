@@ -82,3 +82,6 @@ Tässä menettelyssä käsitellään tuotemallien luomista sekä perustietojen, 
 17. Lisää Per sarja -kenttään numero.
 18. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

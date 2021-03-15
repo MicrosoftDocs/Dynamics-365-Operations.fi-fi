@@ -99,3 +99,6 @@ Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotk
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

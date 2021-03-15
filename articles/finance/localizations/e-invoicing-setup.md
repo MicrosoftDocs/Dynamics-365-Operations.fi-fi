@@ -360,3 +360,6 @@ Voit hallita laskutuksen lisäosatoimintoa noudattamalla seuraavia ohjeita.
 
     > [!NOTE]
     > Kun valitset **Kyllä**, määritysversioiden tila muutetaan automaattisesti tilasta **Valmis** tilaan **Jaettu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

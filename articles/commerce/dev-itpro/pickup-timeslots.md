@@ -127,3 +127,6 @@ Soittokeskuksen asiakaspalvelijat voivat valita soittokeskussovelluksessa noutom
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Noudon tiedot -moduuli](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

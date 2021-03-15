@@ -1033,3 +1033,6 @@ Uusia ominaisuuksia ei ole lisätty.
 [Uudet ja muuttuneet ominaisuudet Finance and Operationsin aloitussivulla](whats-new-changed.md)
 
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

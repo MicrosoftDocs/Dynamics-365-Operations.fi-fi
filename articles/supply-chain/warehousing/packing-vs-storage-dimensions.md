@@ -133,3 +133,6 @@ Tässä prosessissa luodaan lähetys nimikkeen *pakkauksen* dimensioiden peruste
 1. Avaa mobiililaite, kirjaudu varastoon 63 ja valitse **Varasto \> Oikaisu sisään**.
 1. Anna **Sijainti** = *SHORT-01*. Tee uusi rekisterikilpi, jossa **Nimike** = *A0001* ja **Määrä** = *1 kpl*.
 1. Valitse **OK**. Näyttöön avautuu virhe sanoma Sijainti SHORT-01 epäonnistui, koska nimike A0001 ei sovi sijainnin määritettyihin dimensioihin. Tämä johtuu siitä, että tuotteen *Varasto*-tyypin dimensiot ovat suuremmat kuin sijaintiprofiilissa määritetyt dimensiot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

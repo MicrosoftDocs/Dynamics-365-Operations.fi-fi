@@ -40,3 +40,6 @@ Ennakonpidätyksen maksutyö tilittää ennakonpidätyssaldot ostoreskontrasta e
 7. Valitse **OK**.
 
 ![Ennakonpidätysmaksun parametrit](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

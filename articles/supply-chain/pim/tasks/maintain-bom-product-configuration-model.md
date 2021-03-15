@@ -57,3 +57,6 @@ Tämän menettelyn suorittaminen edellyttää, että tuotemääritysmalli on luo
     * Tarkista, onko yksikään tuotedimensio aktiviinen ja onko sillä siksi oltava arvo tai määrite määritettynä.  
 9. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

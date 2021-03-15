@@ -72,3 +72,6 @@ Kun inventointisuunnitelmia käytetään inventointityön luomisessa, voit ohjat
 14. Valitse OK.
 15. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

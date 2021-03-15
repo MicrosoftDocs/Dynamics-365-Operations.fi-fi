@@ -44,3 +44,6 @@ Toimittaja- ja asiakastapahtumien yleistä ennakonpidätystoimintoa on parannett
 
 > [!NOTE]
 > Yleisiä ennakonpidätystoimintoja ei voi ottaa käyttöön maissa tai alueilla, joissa on jo olemassa paikallisia ennakonpidätysratkaisuja. Näitä alueita ovat muun muassa Intia, Brasilia, Thaimaa, Saudi-Arabia, Irlanti, Yhdistynyt kuningaskunta ja Yhdysvallat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

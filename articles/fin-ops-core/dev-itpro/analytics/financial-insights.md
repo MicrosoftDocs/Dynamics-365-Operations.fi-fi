@@ -248,3 +248,6 @@ Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa
 - [Analyyttisten työtilojen ja raporttien käyttäminen 1-Box-ympäristössä](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

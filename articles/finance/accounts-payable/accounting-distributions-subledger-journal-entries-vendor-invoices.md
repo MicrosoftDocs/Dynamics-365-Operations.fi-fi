@@ -249,3 +249,6 @@ Jos alareskontran kirjaus on virheellinen esikatsellessa, et voi muokata sitä e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

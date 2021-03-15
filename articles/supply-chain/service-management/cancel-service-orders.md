@@ -77,3 +77,6 @@ Valitut huoltotilaukset on joko peruutettu tai niiden **Peruutettu**-tila on pal
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

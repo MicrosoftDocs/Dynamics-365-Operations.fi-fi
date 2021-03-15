@@ -40,3 +40,6 @@ Noudattamalla seuraavia ohjeita voit siirtää huoltotilauksen seuraavaan vaihee
 4.  Valitse **Muuta huoltotilauksen vaihe** -lomake, ja valitse haluamasi vaihe.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

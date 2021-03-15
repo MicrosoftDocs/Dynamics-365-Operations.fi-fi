@@ -39,3 +39,6 @@ Tässä kuvataan, miten tuotantotilauksen tuotannon suuren varianssin syitä tar
 6. Valitse Näytä kustannusvertailu.
 7. Valitse Sulje.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

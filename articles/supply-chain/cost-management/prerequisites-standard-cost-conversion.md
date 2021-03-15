@@ -53,3 +53,6 @@ Toimi ennen standardikustannusten muuntoa seuraavasti:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

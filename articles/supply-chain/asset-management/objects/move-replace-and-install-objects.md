@@ -90,3 +90,6 @@ Käytä **Asenna resurssi** -toimintoa resurssirakenteen asentamiseen toiminnall
 4. Valitse uusi sijainti **Toiminnallinen sijainti** -kentässä.
 5. **Voimassa**-kenttään valitaan oletusarvoisesti nykyinen päivämäärä ja aika. Voit kuitenkin valita eri päivämäärän ja ajan, josta lähtien resurssin asentaminen resurssirakenteeseen on voimassa.
 6. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

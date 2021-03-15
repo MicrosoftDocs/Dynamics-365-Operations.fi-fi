@@ -147,3 +147,6 @@ Lisäasetusten sivut on järjestetty toiminnon mukaan.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

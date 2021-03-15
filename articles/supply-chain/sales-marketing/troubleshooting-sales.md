@@ -112,3 +112,6 @@ Supply Chain Management ei tällä hetkellä tue kirjattujen laskujen provisioid
 Pakettinimike ei ole käytettävissä ostotilauksessa, koska jos tarkastelet pakettinimikkeen myyntitilaus rivejä, määrä on *0* (nolla) ja tila on *Peruutettu*. Tämä on suunniteltu ominaisuus. myyntitilauksella ostetaan vain pakettinimikkeen osat. Sillä ei osteta itse pakettinimikettä.
 
 Jos sinun on ostettava paketti, harkitse, pitääkö se merkitä pakettinimikkeeksi, koska tämä toiminto on suunniteltu tuottokirjausskenaarioita varten. Lisätietoja pakettinimikkeistä: [Paketit](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

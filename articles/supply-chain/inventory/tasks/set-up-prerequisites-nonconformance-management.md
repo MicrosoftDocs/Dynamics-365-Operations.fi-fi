@@ -79,3 +79,6 @@ Tämän ohjeaiheen avulla voit ottaa käyttöön määrityksistä poikkeamisen h
 4. Kirjoita **Kuvaus**-kenttään arvo.
 5. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Seuraavat kahdeksan tehtäväopasta ovat siinä järjestyksessä, missä ne on t
 7.  [Luo konfiguraatiosäännöt](tasks/create-configuration-rules.md)
 8.  [Luo dimensioihin perustuvat konfiguraatiot](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

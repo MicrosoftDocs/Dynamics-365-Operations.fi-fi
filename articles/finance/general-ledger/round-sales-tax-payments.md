@@ -130,3 +130,6 @@ Lisätietoja on seuraavissa aiheissa:
 - [pyöristysfunktio](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

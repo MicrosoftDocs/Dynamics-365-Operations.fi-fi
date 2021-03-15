@@ -144,3 +144,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 11. Yksittäisten kustannuselementtien suorituskyvyn tarkasteleminen.
 12. Voit myös etsiä tiettyjä kustannuselementtejä.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

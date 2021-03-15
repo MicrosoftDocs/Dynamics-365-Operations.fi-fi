@@ -127,3 +127,6 @@ Seuraa seuraavia ohjeita luodaksesi poimintatyön.
 
 > [!IMPORTANT]
 > Jos peruutat vain osan työrivin määrästä, myös vanhentunut määrä on poistettava kuormarivistä. Muussa tapauksessa kuormariviä ei voi vahvistaa, ellei alitoimitus ole määritetty oikein.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

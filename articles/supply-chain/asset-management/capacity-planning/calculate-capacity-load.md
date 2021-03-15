@@ -60,3 +60,6 @@ Tästä on hyötyä, jos haluat saada yleiskuvan tietyn kauden odotetusta kapasi
 >[!NOTE]
 >Jos haluat keskittyä vain ajoitettujen työtilausten kapasiteettisuunnitteluun, lisätietoja on kohdassa [Ajoitettujen työtilausten kapasiteetin kuormituksen laskeminen](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

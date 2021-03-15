@@ -57,3 +57,6 @@ Tässä menettelyssä kerrotaan, miten uusi laiteasema luodaan. Luodaan uusi lai
 23. Syötä EFT-päätteen tunnus -kenttään arvo.
 24. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

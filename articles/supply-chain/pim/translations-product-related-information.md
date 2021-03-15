@@ -127,3 +127,6 @@ Tuotteisiin liittyvien tietojen käännöksiä voidaan hallinnoida milloin tahan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

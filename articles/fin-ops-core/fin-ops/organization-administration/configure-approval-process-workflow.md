@@ -183,3 +183,6 @@ Hyväksyntäprosessi koostuu hyväksymisvaiheista. Lisää hyväksyntäprosessii
 1. Kaksoisnapsauta hyväksyntäprosessia työnkulun editorissa. Työnkulun editori näyttää hyväksyntäprosessin vaiheet.
 2. Hyväksyntävaihe lisätään vetämällä vaihe **Työnkulun elementit** -alueelta alustalle.
 3. Lisätietoja hyväksyntävaiheen määrittämisestä on kohdassa [Työnkulun hyväksyntävaiheen määrittäminen](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

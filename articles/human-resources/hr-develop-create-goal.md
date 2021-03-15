@@ -58,3 +58,6 @@ Voit luoda tavoitteita, lisätä niihin aktiviteettejä, kerätä mittauksia yhd
     * On useita tavoitteita, jotka ovat samoja tai samankaltaisia ryhmän jäsenille tai kaikille työntekijöille.     Henkilöstöhallinnon päällikkö tai esimies voi luoda tavoiteryhmiä, jotka sisältävät yhden tai useamman tavoitemallin. Voit lisätä tavoitteita tavoiteryhmästä ja muokata niitä vastaamaan omia aikajanojasi.  
     * Kun luot arvioinnin, voit lisätä siihen tavoitteita. Katso arviointeja koskevasta tehtäväoppaasta, miten tavoitteita lisätään.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Riippumatta siitä, oletko määrittänyt tilit, poista konsolidointiyrityksen *
 
 > [!NOTE]
 > Voit käyttää tätä menetelmää konsolidointiyrityksen tilikartan luomiseen jostakin tytäryhtiön tilikartasta. (Lisätietoja on kohdassa [Konsolidointitiliryhmät ja lisäkonsolidointitilit](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Liitä sitten asianmukainen konsolidoinnin muuntoperiaate jokaiseen konsolidoituun päätiliin ja suorita konsolidointi kaikille tytäryhtiön yrityksille.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

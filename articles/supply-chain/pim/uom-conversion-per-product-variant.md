@@ -106,3 +106,6 @@ Yksikkömuunnokset viedään Exceliin valitsemalla **Yksikkömuunnokset**-sivun 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mittayksikön hallinta](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Intrastat-taulukkotietueen metatiedot on lisätty.
 3.    Valitse **OK**. 
     
 Luotu ER-metatietokonfiguraatio on tallennettu XML-tiedostona, joka voidaan tuoda RCS:ään ja jota voidaan käyttää ulkomaankaupan liiketoimintatoimialueen metatietojen tietolähteenä. Näiden tietojen perusteella voidaan määrittää sovelluksen metatietojen ja ER-tietomallin välisen yhdistämismäärityksen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

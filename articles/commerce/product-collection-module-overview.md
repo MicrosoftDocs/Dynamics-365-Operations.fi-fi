@@ -112,3 +112,6 @@ Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuot
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
 [Pikanäkymämoduuli](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

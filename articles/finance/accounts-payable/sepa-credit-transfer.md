@@ -125,3 +125,6 @@ Maksuja muodostettaessa muodostetaan maksutiedosto, ja sinua pyydetään tallent
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

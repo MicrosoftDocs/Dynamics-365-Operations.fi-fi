@@ -109,3 +109,6 @@ Jos vaarallisten aineiden toiminto on otettu järjestelmässä käyttöön, **Ra
 ## <a name="packing-list-report"></a>Pakkausluetteloraportti
 
 Jos vaarallisten aineiden toiminto on otettu järjestelmässä käyttöön, pakkausluettelo sisältää nimikkeen tulostettavaan lähetystekstiin liittyviä tietoja. Tämä rapotti on saatavana tavalliseen tapaan **Kaikki kuormat** -sivulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

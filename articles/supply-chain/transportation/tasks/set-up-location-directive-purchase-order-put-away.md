@@ -85,3 +85,6 @@ Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijai
 4. Kirjoita arvo **Ehdot**-kenttään.
 5. Valitse **OK**. Voit jatkaa direktiivirivien ja -toimintojen lisäämistä, kunnes varaston kaikki mahdolliset skenaariot on otettu huomioon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Koska **Tuotteet**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaa
 ## <a name="quote-and-quote-product-tables"></a>Tarjous- ja tarjoustuotetaulut
 
 Käytä **Tarjous**-taulun osalta tämän aiheen aiemmassa [Tilaustaulu](#order-table)-kohdassa annettuja ohjeita. Käytä **Tarjoustuote**-taulun osalta [Tilaustuotteet-taulu](#order-products-table)-kohdassa annettuja ohjeita.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

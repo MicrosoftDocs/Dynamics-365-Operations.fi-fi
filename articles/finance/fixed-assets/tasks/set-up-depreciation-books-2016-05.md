@@ -54,3 +54,6 @@ Tämä menettely käy läpi uuden poistokirjan luomisprosessin ja liittää sen 
 6. Syötä Käyttöikä-kenttään numero.
     * Ota huomioon, että Poistokaudet-kentän arvo lasketaan käyttöiän määrittämisen jälkeen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

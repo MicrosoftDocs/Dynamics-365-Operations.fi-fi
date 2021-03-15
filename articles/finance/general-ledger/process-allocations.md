@@ -43,3 +43,6 @@ Kirjanpidon kohdistussääntöjä voidaan käyttää budjettisuunnitelmiin. Käy
 > [!NOTE]
 > Et voi käyttää konsernin sisäisen kirjanpidon kohdistussääntöjä budjettisuunnittelussa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

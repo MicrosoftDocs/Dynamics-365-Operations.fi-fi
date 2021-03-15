@@ -258,3 +258,6 @@ Tarjouspyyntöprosessin parametrit määrittävä käyttäjä voi luoda useita s
 - %createddate%
 
 Jos muutos on välttämätön ja se lähetetään tarjouspyynnön lähettämisen jälkeen, tarjouspyyntö lähetetään uudelleen kaikille kutsutuille toimittajille. Myös julkaistu asiakirja päivitetään **Avaa julkaistut tarjouspyynnöt** -sivulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

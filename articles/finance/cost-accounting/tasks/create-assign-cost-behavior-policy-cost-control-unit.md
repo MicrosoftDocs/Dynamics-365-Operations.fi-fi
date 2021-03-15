@@ -85,3 +85,6 @@ Kustannustoiminta on sekä kiinteiden että muuttuvien kustannusten luokittelu. 
 15. Anna tai valitse arvo Kustannusseurantayksikkö-kenttään.
 16. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

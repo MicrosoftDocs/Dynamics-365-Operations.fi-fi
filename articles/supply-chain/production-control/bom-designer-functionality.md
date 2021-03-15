@@ -120,3 +120,6 @@ Napsauta **Asetukset** mukauttaaksesi graafisen rakennesuunnitteluikkunan puunä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

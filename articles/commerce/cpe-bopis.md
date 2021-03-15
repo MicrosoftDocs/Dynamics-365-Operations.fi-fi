@@ -163,3 +163,6 @@ Kaikkien yleisten ongelmien varalta kannattaa aina tutustua Modern POS- tai Inte
 [Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Omnikanavamaksujen yleiskatsaus](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

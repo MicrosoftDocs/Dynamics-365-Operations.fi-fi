@@ -54,3 +54,6 @@ Tässä menettelyssä, miten muutat tavaralähetysvaraston omistajuuden toimitta
 2. Valitse OK.
 3. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

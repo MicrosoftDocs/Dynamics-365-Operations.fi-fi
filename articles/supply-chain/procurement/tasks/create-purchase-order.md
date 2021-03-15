@@ -73,3 +73,6 @@ Tässä aiheessa näytetään, miten ostotilaus luodaan manuaalisesti. Ostotilau
 
 2. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

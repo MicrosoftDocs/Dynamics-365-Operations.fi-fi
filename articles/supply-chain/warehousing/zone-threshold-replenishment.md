@@ -343,3 +343,6 @@ Seuraavassa on muutamia huomautuksia ja vihjeitä toiminnon käyttämisestä:
 
 - Jos käytät dynaamisia sijainteja, täydennystyöt luodaan joko ensimmäiselle käytettävissä olevalle sijainnille tai sijainnille, joissa on jo varasto, jos sijaintidirektiivitoimenpide on määritetty käyttämään **Konsolidoi**-strategiaa.
 - Jos käytät paikkoja, joissa käytetään vyöhykkeitä, käytä [normaalia min.-/max.-täydennystä](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

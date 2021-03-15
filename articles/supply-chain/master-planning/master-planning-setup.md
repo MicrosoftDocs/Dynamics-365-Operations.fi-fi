@@ -226,3 +226,6 @@ läpimenoaika + negatiiviset päivät + kuluva päivä – tarvepäivä.
 Järjestelmä käyttää vain tälle aikarajalle sijoittuvia suunniteltuja toimitustilauksia, ja se luo uuden suunnitellun tilauksen aikarajan ulkopuolelle. Dynaamisten negatiivisten päivien etuna on, että siihen sisältyy yksittäisen tuotteen läpimenoaika. Lisäksi se käyttää uudelleen aiemmin luotuja tilauksia ja välttää sellaisten uusien suunniteltujen tilausten luomisen, joiden päivämäärä tulee olemaan myöhäisempi läpimenoajan aiheuttamien viiveiden vuoksi. 
 
 Lisätietoja on kohdassa [Negatiiviset päivät ja dynaamiset negatiiviset päivät](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ Kun olet tarkastellut sinulle määritettyä ostotilausta ja lukenut työnkulun 
 5. Valitse asianmukainen toiminto.
 6. Kirjoita kommentti **Suorita tehtävä** -sivulle. Huomaa, että jos valitset **Delegoi**-toiminnon, sinun on valittava käyttäjä, jolle tehtävä delegoidaan.
 7. Valitse **Valmis**. Kun päivität työtilan, ostotilaus ei ole enää luettelossasi. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

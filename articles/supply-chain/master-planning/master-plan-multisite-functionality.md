@@ -51,3 +51,6 @@ Seuraavat aiheet kuvaavat suunnitteluohjelman toimintaa määritettäessä erila
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

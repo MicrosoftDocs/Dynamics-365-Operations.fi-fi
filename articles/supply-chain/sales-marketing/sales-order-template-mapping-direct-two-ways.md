@@ -208,3 +208,6 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Prospektista käteiseksi](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -266,3 +266,6 @@ Käyttöomaisuuden hallinnassa voit päivittää automaattisesti ylläpitotyön 
 2. Voit lisätä tiettyjen kunnossapitotöiden tyyppien valintoja tarpeen mukaan käyttämällä **Päivitä ylläpitotyön tyypin ennuste** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehteä. Valitse **Suodatin** ja tee sitten valinnat valitsemalla **Valitse**.
 3. **Suorita taustalla** -pikavälilehdessä voit määrittää automaattisen päivityksen erätyönä tarpeen mukaan.
 4. Käynnistä ennusteen päivitys valitsemalla **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

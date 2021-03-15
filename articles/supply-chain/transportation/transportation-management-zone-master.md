@@ -35,3 +35,6 @@ Kuljetustenhallinnassa maantieteelliset sijainnit voidaan jakaa vyöhykkeiksi. S
 - **Reittisuunnittelun optimointi** – tiettyjen reittisuunnitelmien määrittäminen tiettyihin vyöhykkeisiin.
 
 Vyöhykkeet määritetään kunkin vyöhykkeen määrittävän metatietokentän arvojen perustella. Tällaisia arvoja ovat esimerkiksi maa, postinumeroalue tai rahdinkuljetuspalvelu. Vyöhykemääritelmiä ei edellytetä, jos kuljetuksen hinnoittelussa ei käytetä vyöhykkeitä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

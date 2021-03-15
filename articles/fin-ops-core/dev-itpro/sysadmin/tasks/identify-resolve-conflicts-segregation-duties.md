@@ -59,3 +59,6 @@ Kun rooleja määritetään käyttäjille, tehtävien eriyttämissääntöjen no
 
 > [!NOTE]
 > Jos samalla käyttäjällä on useita ristiriitoja, valitse käyttäjätietue ja arvioi määritetyt roolit **Käyttäjät**-sivulla. Tämä ristiriita voidaan välttää tarkistamalla kukin rooli sen jälkeen, kun se on luotu tai sitä on muokattu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

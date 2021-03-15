@@ -141,3 +141,6 @@ Jos hyväksyjä tekee muutospyynnön, tiedosto palautetaan sen lähettäneelle a
 Sam on esimerkiksi lähettänyt 12 000 dollarin arvoisen kuluraportin ja asiakirja on määritetty Suelle. Jos Sue pyytää muutosta, kuluraportti lähetetään takaisin Samille.
 
 Sam voi lähettää kuluraportin uudelleen. Hän voi tehdä siihen ensin pyydetyt muutokset tai lähettää kuluraportin alkuperäisen version uudelleen. Jos Sam lähettää kuluraportin uudelleen, se lähetetään Frankille hyväksyttäväksi, koska Frank on hyväksyntäprosessin ensimmäinen hyväksyjä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

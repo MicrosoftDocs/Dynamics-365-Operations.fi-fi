@@ -84,3 +84,6 @@ Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dy
 Lisätietoja **Resurssien hallinta** -mobiilityötilan käyttämisestä on kohdassa [Resurssien hallinnan mobiilityötilan käyttäminen](asset-management-mobile-workspace.md).
 
 Lisätietoja Finance and Operations (Dynamics 365) -mobiilisovelluksesta on kohdassa [Mobiilisovelluksen aloitussivu](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

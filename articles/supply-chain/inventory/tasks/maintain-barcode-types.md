@@ -45,3 +45,6 @@ Tässä menettelyssä käsitellään, miten määritetään uusi viivakoodimää
 12. Valitse Tallenna.
 13. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

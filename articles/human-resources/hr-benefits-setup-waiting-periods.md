@@ -45,3 +45,6 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat ta
    | **Odotuspäivä** | Valitse odotuspäivän laskemisessa käytettävä odotuspäivä. |
 
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

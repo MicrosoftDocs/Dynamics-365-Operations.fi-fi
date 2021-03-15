@@ -55,3 +55,6 @@ Voit linkittää tietokoodit siten, että kun tietokoodi käynnistyy, toinen koo
 **Esimerkki 2: Linkitä tietokoodit tietokoodiryhmiin**
 
 Kun myyt tiettyjä tuotteita, esimerkiksi kannettavat laitteet, haluat aina kerätä tietyt tiedot, kuten puhelinnumero, kannettavat laitteet tunnus (MEID) ja sarjanumero. Kuitenkin haluat myös kerätä eri tietoja taulutietokonesovellukseen kuin matkapuhelimeen. Voit määrittää tietokoodiryhmän, joka sisältää kehotteen puhelinnumeron, tunnuksen ja sarjanumeron kysymisestä ja linkittää sitten tietokoodiryhmän yksittäiseen tietokoodiin. Kun tuotetta koskeva infokoodi toteutuu, tietokoodiryhmä voidaan määrittää käynnistymään seuraavaksi, jotta voit kerätä yleisiä tietoja tarvitsematta määrittää useita linkitettyjä infokoodisarjoja kullekin laitteelle.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

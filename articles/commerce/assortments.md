@@ -106,3 +106,6 @@ Seuraavat käyttöönottovaatimukset kannattaa ottaa huomioon, kun suunnittelet 
 - **Valikoimien ulkopuolinen myynti ja palautukset** – Tämä toiminto auttaa jälleenmyyjiä hallitsemaan valikoimiaan tehokkaasti, sillä he voivat rajoittaa saatavana olevien tuotteiden määrän tuotteisiin, jotka sisältyvät myymälän ydintuoteyhdistelmään. Tämä toiminto auttaa jälleenmyyjiä käsittelemään myös tilanteita, joissa tuote jätettiin vahingossa pois valikoimasta tai joissa tuote palautettiin valikoiman voimassaoloajankohdan ulkopuolella.
 
 Jos tuotetiedot eivät ole kanavatietokannassa, myyntipiste soittaa reaaliaikaisesti pääkonttoriin ja noutaa tarvittavat tiedot, jotta tuote voidaan myydä, palauttaa tai siirtää asiakastilaukseen. Tällä tavoin noudetut tuotetiedot ovat käytettävissä vain kyseisen tapahtuman aikana. Tuotetta ei lisätä valikoiman määritykseen. Niinpä jatkossa tehdään tarpeen mukaan reaaliaikaisia soittoja.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

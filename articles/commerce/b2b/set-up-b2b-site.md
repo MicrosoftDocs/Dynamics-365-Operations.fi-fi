@@ -302,3 +302,6 @@ Luo laskun tietosivu sivustonmuodostimessa seuraavasti.
 [Sisältölohkomoduuli](../add-hero-module.md)
 
 [Tuotekokoelma](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

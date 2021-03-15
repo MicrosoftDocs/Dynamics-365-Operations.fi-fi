@@ -66,3 +66,6 @@ Ennen kuin taulurajoitus voidaan ottaa käyttöön tuotemääritysmallissa, taul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

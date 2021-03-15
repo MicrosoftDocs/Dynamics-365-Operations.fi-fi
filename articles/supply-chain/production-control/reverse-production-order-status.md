@@ -52,3 +52,6 @@ Kun tuotantotilaus palautetaan **Aloitettu**-tilasta **Vapautettu**-tilaan, kaik
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

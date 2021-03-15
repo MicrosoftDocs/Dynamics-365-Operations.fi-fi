@@ -88,3 +88,6 @@ Vuoden toisen puolikkaan aikana asiakas päättää, että huoltokäyntejä on l
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

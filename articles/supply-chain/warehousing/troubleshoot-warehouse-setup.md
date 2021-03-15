@@ -39,3 +39,6 @@ Järjestelmänvalvojan rooli on ainoa, jolla mobiililaitteen sovelluksen emulaat
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Mobiililaitteen sovelluksen emulaattori on määritetty käytettäväksi vain järjestelmänvalvojan tilillä. Testausta ja julkistamisprosessia varten kannattaa käyttää varsinaista varastosovellusta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

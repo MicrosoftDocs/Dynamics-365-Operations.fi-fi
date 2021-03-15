@@ -73,3 +73,6 @@ Seuraavassa taulukossa on näkyvissä kullakin raporttisivulla käytettävissä 
 | Arvostuskartat        | Käyttöomaisuustiedot |
 
 Voit tarkastella analytiikkaa tietoihin päivittämällä ensin AssetTransactionMeasure-koostemitan **Yksikkösäilö**-sivulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

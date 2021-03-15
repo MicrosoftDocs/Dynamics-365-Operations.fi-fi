@@ -71,3 +71,6 @@ Tämä ohjeaihe opastaa luomaan ostosopimuksen. Se on yleensä ostopäällikön 
 5. Valitse **Ostosopimuksen vahvistukset**. **Esikatselu/tulostus**-vaihtoehdolla voi luoda ostosopimusasiakirjan, jonka voi tulostaa tai lähettää asiakkaalle. Jos päivität sopimusta myöhemmin ja vahvistat sen uudelleen, molemmat versiot näkyvät tässä.  
 6. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

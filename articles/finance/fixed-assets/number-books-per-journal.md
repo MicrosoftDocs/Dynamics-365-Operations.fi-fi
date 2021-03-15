@@ -49,3 +49,6 @@ Jos esimerkiksi käyttöomaisuustunnuksia on 5 001, kuhunkin käyttöomaisuustun
 
 > [!Note] 
 > Jos **Tee yhteenveto poistoista** -parametri on käytössä poistoehdotusta luotaessa, **Kirjojen määrä kirjauskansiota kohti – poistoehtotus** -kentän arvolla ei ole vaikutusta. Tässä tapauksessa kirjauskansiokohtainen kirjamäärä on 6 000 eli sisäinen määritetty raja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

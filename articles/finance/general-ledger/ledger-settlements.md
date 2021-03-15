@@ -74,3 +74,6 @@ Voit tehdä tarvittaessa käänteisen tilityksen.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Tapahtumaluetteloon sisältyvän tililuettelon päivittäminen
 
 Valitse **Tapahtumien selvityksen tilit**. Voit muokata avautuvassa valintaikkunassa tapahtumaluetteloon sisältyviä tilejä. Lisää uudet tilit luetteloon valitsemalla **Uusi**. Tämän luettelon avulla voi suodattaa **Tapahtuman selvitykset** -sivulla näkyvää tapahtumaluetteloa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

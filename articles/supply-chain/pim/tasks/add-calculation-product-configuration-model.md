@@ -38,3 +38,6 @@ Tässä menettelyssä käsitellään, miten uusi laskelma lisätään tuotemää
 4. Valitse Sulje.
 5. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

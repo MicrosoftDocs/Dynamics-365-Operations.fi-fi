@@ -251,3 +251,6 @@ Globalisointipalveluiden käyttäjät voivat hallita ympäristöä niin, että n
 10. Julkaise ympäristö valitsemalla **Julkaise**.
 
     ![Julkaistu ympäristö](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

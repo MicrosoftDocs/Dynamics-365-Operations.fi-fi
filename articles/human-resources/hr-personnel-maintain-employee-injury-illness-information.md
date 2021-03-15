@@ -93,3 +93,6 @@ Tämän tehtävän tallenteessa käsitellään tapaturma- tai sairaustapauksen p
 36. Valitse Tallenna.
     * Tapaustilan voi päivittää milloin tahansa.  Määritä tapauksen tilaksi keskeneräinen, jos tapaturmaa tai sairautta käsitellään edelleen.  Kun tapaus on suljettu, siihen voi vain lisätä tapaukseen liittyviä kustannuksia, hoitoja tai ilmoituksia tai poistaa niitä.  Muiden tietojen muokkaaminen edellyttää tapauksen avaamista uudelleen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

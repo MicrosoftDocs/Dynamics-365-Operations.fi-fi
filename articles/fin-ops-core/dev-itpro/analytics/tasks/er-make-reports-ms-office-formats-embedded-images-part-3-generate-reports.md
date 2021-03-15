@@ -119,3 +119,6 @@ Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc. 
 23. Valitse OK.
     * Tarkista luotu tuotos. Tuloste on luotu Word -asiakirjana, joka sisältää yrityksen logoa esittävät upotetut kuvat, valtuutetun henkilön allekirjoituksen ja vesileiman valitun tekstin.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

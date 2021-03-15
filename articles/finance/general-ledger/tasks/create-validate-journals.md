@@ -42,3 +42,6 @@ Tässä tehtävässä luodaan ja vahvistetaan kirjauskansioita ja kirjauskansion
 12. Valitse **Kirjaa**.
 13. Valitse **Tosite**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

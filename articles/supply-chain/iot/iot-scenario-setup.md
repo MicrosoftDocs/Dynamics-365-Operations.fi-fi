@@ -142,3 +142,6 @@ Skenaario poistetaan käytöstä seuraavasti.
 2. Valitse skenaarion ruudussa **Määritä**.
 3. Siirry ohjatun toiminnon viimeiselle sivulle valitsemalla **Seuraava**.
 4. Poista skenaario käytöstä määrittämällä asetus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

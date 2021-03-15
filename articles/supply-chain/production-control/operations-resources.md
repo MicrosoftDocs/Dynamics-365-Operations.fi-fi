@@ -84,3 +84,6 @@ Kun määrität tehtävän, kuten reitityksen työvaiheen tai projektituntiennus
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

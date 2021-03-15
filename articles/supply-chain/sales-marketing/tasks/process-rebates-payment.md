@@ -50,3 +50,6 @@ Tämä menettely osoittaa, miten asiakkaiden hyväksytyt ja käsitellyt ostohyvi
     * Huomaa, että negatiivisen summan tapahtuma, joka ilmaisee ostohyvityksen kokonaismäärän ilman laskutusviitteen määrää, on lisätty asiakkaan saldoon.   
 15. Valitse Peruuta.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

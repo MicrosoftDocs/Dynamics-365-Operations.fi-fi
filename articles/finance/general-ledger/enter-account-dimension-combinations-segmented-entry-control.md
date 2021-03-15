@@ -113,3 +113,6 @@ Seuraavassa taulukossa kuvataan pikanäppäimiä, joita voidaan käyttää, kun 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

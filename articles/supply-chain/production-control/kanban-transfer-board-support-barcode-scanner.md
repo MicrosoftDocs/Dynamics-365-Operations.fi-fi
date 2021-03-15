@@ -191,3 +191,6 @@ Valitun työn tila sekä tapahtumien kanbanien tarvekohdistettujen töiden tila 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

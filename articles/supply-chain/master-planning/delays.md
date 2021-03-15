@@ -58,3 +58,6 @@ Toimenpidesanomien avulla voidaan myös tunnistaa suunnitellut tilaukset, jotka 
 --------
 
 [Kattavuusasetukset](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

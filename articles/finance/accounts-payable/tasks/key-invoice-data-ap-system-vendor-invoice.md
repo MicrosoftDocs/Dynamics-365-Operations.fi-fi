@@ -72,3 +72,6 @@ Tämän tehtäväoppaan avulla voit luoda toimittajan laskun ostotilauksesta ja 
 19. Valitse **Kirjaa**.
 20. Sulje lomake. Huomaa, että ostotilaus on vastaanotettujen luettelon sijaan laskuttamattomien luettelossa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

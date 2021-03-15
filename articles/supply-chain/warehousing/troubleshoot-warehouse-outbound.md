@@ -61,3 +61,6 @@ Nimike lisätään suoratoimituksen myyntiriville varastosta, jossa varastonhall
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Microsoft on arvioinut ongelman ja määrittänyt, että se on ominaisuuden rajoitus. Varastonhallinta ei tue tällä hetkellä suoratoimitusta. Suoratoimituksen käyttämistä varten on sen vuoksi valittava muu kuin varastonhallintanimike ja varasto.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Tässä esimerkissä luodaan uusi kohdistusehto käyttökulujen päätilille. Ku
 > Voit vaihtoehtoisesti käyttää **Kopioi**-painiketta, jos haluat monistaa valitun kohdistuksen.
 
 Kun kohdistusehto luodaan päätilille, järjestelmä kirjaa automaattisesti uuden tositteen, kun kirjataan kohdistusehtojen lähdetalousdimensioita vastaava tosite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

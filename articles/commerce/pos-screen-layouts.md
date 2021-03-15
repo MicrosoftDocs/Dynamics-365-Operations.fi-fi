@@ -207,3 +207,6 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Retail point of salen (POS) asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

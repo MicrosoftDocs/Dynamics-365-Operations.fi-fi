@@ -59,3 +59,6 @@ Tästä on hyötyä, jos haluat saada yleiskuvan odotetusta nimikkeen kulutukses
 8. Valitse **Näytä dimensiot** -painike, jos haluat nähdä nimikkeisiin liittyvät tuote-, varastointi- tai seurantadimensiot. Valitse asiaankuuluvat valintaruudut ja napsauta sitten **OK**.
 
 ![Kuva 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

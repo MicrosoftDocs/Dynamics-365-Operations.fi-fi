@@ -52,3 +52,6 @@ Voit päivittää yhdistetyt kustannustason dimension määritykset milloin taha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

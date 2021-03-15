@@ -51,3 +51,6 @@ T채m채 menettely osoittaa, miten projektiresurssi m채채ritet채채n. T채ss채 teht�
 20. Valitse Tallenna.
 21. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Jos markkinointisisältö koskee vain tiettyä tuotetta, mikä tahansa markkinoi
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
 
 [Tuotetietosivun täydentäminen](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

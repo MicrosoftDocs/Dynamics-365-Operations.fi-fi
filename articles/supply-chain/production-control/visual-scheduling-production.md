@@ -159,3 +159,6 @@ Gantt-kaavion voit avata seuraavilta sivuilta.
 
 [Tuotannon visuaalinen ajoitus (esittelykäsikirjoitus)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

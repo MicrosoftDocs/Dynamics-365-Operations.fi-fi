@@ -93,3 +93,6 @@ Lisätietoja lahjakorttimoduulin lisäämisestä kassasivulle ja tarvittavien om
 [Ulkoisten lahjakorttien tuki](./dev-itpro/gift-card.md)
 
 [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

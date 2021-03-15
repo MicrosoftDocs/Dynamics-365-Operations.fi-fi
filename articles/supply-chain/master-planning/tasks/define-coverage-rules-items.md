@@ -101,3 +101,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tässä menette
 11. Syötä **Ostoaika**-kenttään 5.
 12. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

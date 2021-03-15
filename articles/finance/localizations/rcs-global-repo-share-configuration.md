@@ -72,3 +72,6 @@ Kun määritys on luotu määrityspalvelussa, voit jakaa sen suoraan ulkoisten o
 Määritys jaetaan ulkoisen organisaation kanssa, ja se on kyseisen organisaation käytettävissä yleisessä säilössä. Se voidaan tuoda sieltä organisaation RCS-esiintymään tai Finance and Operations -sovellusten esiintymiin.
 
 6. Ulkoisen organisaation kanssa aiemmin jaetun määrityksen jakaminen poistetaan valitsemalla ensin määritys, sitten **Poista jako** ja lopuksi **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

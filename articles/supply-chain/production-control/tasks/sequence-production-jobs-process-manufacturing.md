@@ -70,3 +70,6 @@ Näissä toimintaohjeissa käytetään maalituotteita esimerkkinä suunniteltuje
 8. Pikasuodattimen avulla voit suodattaa Nimiketunnus-kentän arvon P300 mukaan.
     * Huomaa, että tilaukset nyt on sarjoitettu väri- ja kokoprioriteetin mukaan, ja suunnitellut tilaukset aloitetaan aikaisimpana tilaus- ja toimituspäivänä. Vahvista Tilauspäivämäärä-sarake tai Aloituspäivämäärä Ajoituksen tiedot -tietoruudussa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

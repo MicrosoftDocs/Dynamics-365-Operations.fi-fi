@@ -52,3 +52,6 @@ Järjestelmä päättää käytettävän haaran arvioimalla, täyttääkö lähe
     2. Valitse tietue lomakkeen **Tarkista ehto** -alueelta.
     3. Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot.
     4. Palaa **Ominaisuudet**-lomakkeeseen valitsemalla **OK** tai **Peruuta**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

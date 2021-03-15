@@ -57,3 +57,6 @@ Mielipiteitä, uutisia ja muita varastonhallintaa ja muita ratkaisuja koskevat t
 
 ### <a name="task-guides"></a>Tehtäväoppaat
 Lisäohjeita on saatavilla tehtävän ohjauksina. Voit avata tehtäväoppaan napsauttamalla **Ohje**-painiketta millä tahansa sivulla
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

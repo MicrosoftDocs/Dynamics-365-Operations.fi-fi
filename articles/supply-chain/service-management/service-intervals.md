@@ -93,3 +93,6 @@ Koska huoltotilausta ei ole ryhmitelty (jonka määrittää **Yhdistä huoltotil
 
 [Huoltovälien määrittäminen](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

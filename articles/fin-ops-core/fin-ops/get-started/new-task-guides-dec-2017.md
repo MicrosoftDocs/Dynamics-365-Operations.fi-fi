@@ -368,3 +368,6 @@ Kun BPM-rivi poistetaan, kaikki siihen liityvät tehtäväoppaat poistetaan myö
 **Poista BPM-rivi**
 
 - Siirrä aikataulutetut kanban-työt
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

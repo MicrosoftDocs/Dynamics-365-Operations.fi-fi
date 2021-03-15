@@ -109,3 +109,6 @@ Jos haluat luoda pariteetin Finance and Operations -sovellusten kanssa, kaksoisk
 
 Lisätietoja tulevista muutoksista on kohdassa [Kaksoiskirjoituksen uudet ja muuttuneet ominaisuudet](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

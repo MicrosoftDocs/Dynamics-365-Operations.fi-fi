@@ -109,3 +109,6 @@ Voit lisätä siirtymisvalikkoon mukautettuja siirtymisvaihtoehtoja seuraavasti.
 [Sivun URL-osoitteen luominen](create-page-url.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

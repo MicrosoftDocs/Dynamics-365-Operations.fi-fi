@@ -239,3 +239,6 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 1. Valitse **Valmis**.
 
     ![Liitteen lisääminen ylläpitopyyntöön](media/am-mobile-10.png "Liitteen lisääminen ylläpitopyyntöön")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

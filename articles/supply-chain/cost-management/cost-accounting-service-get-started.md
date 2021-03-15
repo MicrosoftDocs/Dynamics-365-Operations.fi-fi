@@ -110,3 +110,6 @@ Voit määrittää kustannuslaskentapalvelun ja Dynamics 365 Supply Chain Manage
 ## <a name="related-resources"></a>Liittyvät resurssit
 
 [Kustannuslaskentapalvelun aloitussivu](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

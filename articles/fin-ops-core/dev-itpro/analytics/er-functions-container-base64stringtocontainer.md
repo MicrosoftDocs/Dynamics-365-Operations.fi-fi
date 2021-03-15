@@ -80,3 +80,6 @@ Tässä esimerkissä **\#MediaAsBase64String**-tietolähde koodaa nykyisen media
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Säilöfunktiot](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

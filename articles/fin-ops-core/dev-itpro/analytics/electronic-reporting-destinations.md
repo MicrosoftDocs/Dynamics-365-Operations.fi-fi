@@ -241,3 +241,6 @@ Muodon on ensin oltava käytettävissä ER-määrityksissä. Jos tämä edellyty
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Toiminnosta riippuvaisten ER-kohteiden määrittäminen](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

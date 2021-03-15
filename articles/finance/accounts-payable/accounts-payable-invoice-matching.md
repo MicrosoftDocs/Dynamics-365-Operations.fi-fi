@@ -193,3 +193,6 @@ Lisätietoja on kohdissa [Kolmisuuntaiset vastaavuuskäytännöt](three-way-matc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

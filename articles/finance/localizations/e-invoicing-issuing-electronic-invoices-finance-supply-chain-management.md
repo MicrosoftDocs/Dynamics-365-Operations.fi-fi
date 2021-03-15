@@ -93,3 +93,6 @@ Lähetyslokit sisältävät seuraavat lisätoiminnot:
 - **Peruuta lähetyksiä** – Tämä toiminto mahdollistaa erityisen lähetysprosessin tilanteissa, joissa ulkoisen verkkopalvelun on hyväksyttävä sähköinen lasku. Se ohjeistaa sähköistä laskutusta lähettämään verkkopalveluun tietyn sanoman, joka on tarkoitettu hyväksytyn sähköisen laskun tilan peruuttamiseen verkkopalvelun tietokannassa.
 - **Lähetä asiakirja uudelleen** – Lähetä uudelleen sähköinen asiakirja, joka on jo lähetetty sähköisen laskutuksen lisäosaan. **Lähetyksen tiedot** -sivulla luodaan kokonaan uusi loki.
 - **Lähetä liittyvä lähetys**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

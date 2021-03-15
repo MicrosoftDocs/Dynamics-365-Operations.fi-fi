@@ -142,3 +142,6 @@ Tässä aiheessa käsitellään perintätietojen tarkastelemista sekä erilaisia
 5. Valitse **Näytä luettelo**.
 - Valitse asiakas tai hyväksy oletusarvo. Oletusarvoisesti tämä asiakastili on valittu luettelosivulta tai lomakkeesta, josta avasit tämän lomakkeen. Jos avasit lomakkeen luettelosivulta, luettelon asiakkaat ovat asiakkaille, jotka on sisällytetty luettelosivulla käytettävään perintäpooliin.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

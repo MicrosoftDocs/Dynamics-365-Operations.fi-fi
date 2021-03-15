@@ -86,3 +86,6 @@ Seuraavassa skenaariossa otto-kanbanin siirtotehtävä on määritetty siirtymä
 
 Kun kanban on kulutettu tuotannon varastointisijainnissa, kanban ilmoitetaan tyhjäksi ja uusi kanban lisätään työnkulkuun. Kanbania luotaessa kanban-aaltoon lisätään aaltorivi. Kun kanban-aalto käsitellään, kanban-keräilylle luodaan varastotyö. Varastotyöntekijä käsittelee kanban-keräilyn työn, ja työ ohjaa hänet keräämään kanbanin materiaalin varastosijainnissa. Kun tämä varastotyöntekijä vahvistaa keräilyn, kanban valmistuu automaattisesti ja varastotyöntekijä ohjataan sijoittamaan materiaali tuotannon varastoinnin sijaintiin.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

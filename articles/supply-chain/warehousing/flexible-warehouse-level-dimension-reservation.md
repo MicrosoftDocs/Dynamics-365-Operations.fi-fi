@@ -853,3 +853,6 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
     - Siirtotilaukset ja raaka-aineiden keräily
 
 - Kontin direktiiviyksiköittäin pakkaamisen konsolidointisäännöllä on rajoituksia. Tilaussidonnaisten varausten osalta suosittelemme välttämää sellaisten kontinrakennusmallien käyttöä, joissa **Pakkaa direktiiviyksiköittäin** -kenttä on käytössä. Nykyisessä ratkaisussa sijaintidirektiivejä ei käytetä varastotyön luonnin yhteydessä. Siksi vain yksikön sarjaryhmän alinta yksikköä (varastoyksikköä) käytetään konttiinpakkauksen aaltovaiheen aikana.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

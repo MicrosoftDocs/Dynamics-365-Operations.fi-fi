@@ -142,3 +142,6 @@ Kattavuusryhmän kalenterissa on tärkeää ottaa huomioon, että sen toiminta o
 
 ### <a name="updating-scm-related-calendars"></a>Liittyvien SCM-kalenterien näyttäminen
 Vaikka on tärkeää, että kaikki soveltuvat kalenterit määritetään asianmukaisesti (toimittaja, asiakas, varasto, toimitustapa tai kattavuusryhmä), niiden päivittäminen näyttämään muutokset on tärkeää. Järjestelmä määrittää tuotannon, siirron, oston ja myyntitilauksen päivämäärät määritettyjen kalenterien yhdistelmän mukaan. On parhaan käytännön mukaista selventää, kuka vastaa kalenterien määrittämisestä ja päivittämisestä kyseisillä alueilla. Mikäli työpäivinä tapahtuu käyttökatkos tai silloin epätavallisia muutoksia, on erittäin tärkeää, että kalenterit päivitetään vastaavasti. Kaikki kalenterista riippuvat tapahtumat, kuten pääsuunnittelu ja tuotannon aikataulutus, on suoritettava uudelleen, kun kalenterit päivitetään. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

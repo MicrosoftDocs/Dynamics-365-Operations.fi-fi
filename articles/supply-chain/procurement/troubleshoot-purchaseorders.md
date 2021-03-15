@@ -144,3 +144,6 @@ Tämä on suunniteltu ominaisuus. Valittu osoite on luokiteltava toimitusosoitte
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Voinko löytää ostotilauksen peruneen käyttäjän?
 
 Näitä tietoja seurataan vain, jos ostotilaus edellyttää muutoksenhallintaa. Jos käytät muutoksenhallintaa, voit nähdä muutoksen (peruutuksen) lähettäjän ja hyväksyjän.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Jos sinun on raportoitava kattavuuteen kuuluvat henkilöt itsevakuutettujen katt
 
 > [!NOTE]
 > Vain **ACA-raportoitavat** etusuunnitelmat näkyvät kyselyikkunassa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

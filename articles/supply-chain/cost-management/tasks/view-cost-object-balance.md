@@ -39,3 +39,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettel
 8. Poista Sijainti-valintaruudun valinta.
 9. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -333,3 +333,6 @@ Siirtotilauksen luodaan ilman **Toimituspäivän tarkistus** -ominaisuuksia.
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Voiko sellaista rekisterikilpeä käyttää, jonka fyysinen käytettävissä oleva varasto on negatiivinen?
 
 Toiminto tukee vain positiivisia fyysisen käytettävissä olevan varaston määriä. Varmista ennen rekisterikilpien määrittämistä siirtotilaukseen, että varaston ja varaston tilatason käytettävissä olevan fyysisen varaston määrät ovat positiivisia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

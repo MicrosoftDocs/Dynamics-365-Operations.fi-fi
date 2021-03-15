@@ -62,3 +62,6 @@ Tässä menettelyssä kerrotaan, miten mittayksikkö määritetään, miten yksi
 6. Valitse **OK**.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

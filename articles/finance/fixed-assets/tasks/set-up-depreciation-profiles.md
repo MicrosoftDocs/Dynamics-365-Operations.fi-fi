@@ -39,3 +39,6 @@ Poistoprofiilit määrittävät käyttöomaisuuserän poiston lajin ja tiheyden.
 7. Valitse vaihtoehto **Kausiväli**-kentässä.
 8. Sulje lomake.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

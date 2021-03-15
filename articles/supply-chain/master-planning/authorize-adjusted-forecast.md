@@ -50,3 +50,6 @@ On erittäin tärkeää, että ymmärrät, miten **Tallenna kysynnän perusennus
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

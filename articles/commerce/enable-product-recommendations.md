@@ -113,3 +113,6 @@ Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten 
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

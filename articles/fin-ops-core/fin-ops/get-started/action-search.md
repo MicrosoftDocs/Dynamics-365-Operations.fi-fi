@@ -75,3 +75,6 @@ Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta to
 ## <a name="action-search-vs-navigation-search"></a>Toimintohaku vs. siirtymishaku
 
 Toimintohaun tarkoituksena on etsiä ja suorittaa toimintoja sivulla, mutta sivujen etsimiseen ja niissä siirtymisessä on myös erillinen hakumekanismi. Lisätietoja tästä ominaisuudesta löydät artikkelista. [Siirtymishaku](navigation-search.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

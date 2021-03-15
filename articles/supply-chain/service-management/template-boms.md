@@ -133,3 +133,6 @@ Mallituoterakenteiden käyttämiseksi sinun on määritettävä kaksi numerosarj
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Kun sivusto on määritetty, vain käyttöoikeusryhmään kuuluvat käyttäjät,
 [Sivuston hakukoneoptimointia (SEO) koskevia tietoja](search-engine-optimization-considerations.md)
 
 [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

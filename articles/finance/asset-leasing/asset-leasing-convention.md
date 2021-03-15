@@ -50,3 +50,6 @@ Voit tarkastella tai määrittää vuokramenetelmän noudattamalla näitä vaihe
 3. Valitse **Tallenna**.
 
 Kun vuokra luodaan, kunkin kirjan aloituspäivä lisätään automaattisesti vuokralle syötettyyn alkamispäivämäärään ja kirjalle määritettyyn vuokramenetelmään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

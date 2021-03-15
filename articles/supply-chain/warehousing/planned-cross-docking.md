@@ -315,3 +315,6 @@ Tällä hetkellä molemmilla työtunnuksilla on sama kohderekisterikilpi. Jotta 
 Seuraavassa kuvassa näkyy, miten tehty cross-docking-työ saattaa näkyä Microsoft Dynamics 365 Supply Chain Managementissa.
 
 ![Cross-docking-työ päättynyt](media/PlannedCrossDockingWork.png "Cross-docking-työ päättynyt")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

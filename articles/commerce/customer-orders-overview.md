@@ -170,3 +170,6 @@ Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Asiakkaiden yhdistelmätilaukset](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

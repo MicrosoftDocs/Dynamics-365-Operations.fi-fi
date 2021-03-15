@@ -126,3 +126,6 @@ Kun käyttäjä avaa rakenneosan, muut käyttäjät voivat käyttää kyseistä 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

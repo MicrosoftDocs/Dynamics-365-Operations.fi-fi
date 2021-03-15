@@ -145,3 +145,6 @@ Versiodimensio toimii muiden tuotedimensioiden tapaan. Koska se kuitenkin on luo
 
 > [!IMPORTANT]
 > Jos otat käyttöön version dimension ja käytät sitä, jotkin varastodimensioihin viittaavat ratkaisut voivat lakata toimimasta odotetulla tavalla. Voit vahvistaa ja korjata nämä ongelmat ottamalla yhteyttä ohjelmistotoimittajaan (ISV) haavoittuvuuden sisältävissä ratkaisuissa. Lisätietoja on kohdassa [versiodimension ottaminen käyttöön](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Lisätietoja karttamoduulin määrittämisestä sivulla on kohdassa [Myymälän 
 [Bing Maps -karttapalvelun hallinta organisaatiossa](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 -verkko-ohjausobjekti](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

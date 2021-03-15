@@ -67,3 +67,6 @@ Voit valita sivustossa käytettävän teeman noudattamalla seuraavia ohjeita.
 
 [Uuden teeman luominen](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

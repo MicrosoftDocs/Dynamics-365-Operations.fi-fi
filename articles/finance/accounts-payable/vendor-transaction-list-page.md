@@ -96,3 +96,6 @@ Kukin kenttä vaikuttaa eri tavalla tapahtumaan, kun muokkaat sitä:
 - **Muokkaa käteisalennuksen ehtoja** – Käteisalennuksia muutetaan peruspäivämäärän ja käteisalennuksen ehtojen perusteella.
 
 Kun olet muokannut maksuasetuksia, tallenna muutokset valitsemalla **Sulje**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

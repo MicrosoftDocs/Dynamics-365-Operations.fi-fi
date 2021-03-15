@@ -535,3 +535,6 @@ Voit nyt joko poistaa tai päivittää sanoman tilan. Päivitä sanoman tila val
 ![Päivitä sanoman tila](media/update-status.png)
 
 Sanoman tilaksi päivitetään **Valmisteltu**, ja voit nyt luoda raportin valitsemalla **Luo raportti**. Raportti luodaan sekä sanoman tila ja toimintoloki päivitetään. Voit tarkastella muodostettu raporttia valitsemalla sivun oikeassa yläkulmassa **Liite**-painikkeen (paperiliitinsymboli).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ EU-myyntiluettelon luominen ja lähettäminen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

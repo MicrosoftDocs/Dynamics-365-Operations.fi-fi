@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources katkaisee käyttäjien yhteyden, kun sama
 Varmista, että kussakin selaintyypissä on aina avoinna vain yksi ympäristö. Käyttäjät voivat avata useita saman ympäristön istuntoja (eli useita välilehtiä samassa selaimessa).
 
 Jos käyttäjät haluavat siirtyä kahden ympäristön välillä samanaikaisesti, heidän on avattavat ympäristöt eri selaintyypissä. (Esimerkki: käyttäjä A voi tarkastella ympäristöä 1 Chromessa ja ympäristöä 2 Microsoft Edgessä.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

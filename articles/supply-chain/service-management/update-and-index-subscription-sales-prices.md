@@ -54,3 +54,6 @@ Ylläpitosopimuksen perushinta tai indeksi päivitetään halutulla arvolla.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

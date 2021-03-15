@@ -37,3 +37,6 @@ Rajoituspohjaisissa tuotemääritysmalleissa komponentteja käytetään tuotemal
 7. Kirjoita arvo Kuvaus-kenttään.
 8. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

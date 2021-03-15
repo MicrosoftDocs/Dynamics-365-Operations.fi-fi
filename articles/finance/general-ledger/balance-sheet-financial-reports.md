@@ -81,3 +81,6 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

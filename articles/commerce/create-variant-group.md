@@ -72,3 +72,6 @@ Seuraavassa kuvassa on esimerkki rentojen paitakokojen kokoryhmästä.
 [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md)
 
 [Tuotedimensiot](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

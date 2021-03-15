@@ -88,3 +88,6 @@ Voit lisätä tekstilohkomoduulin uudelle sivulle ja määrittää pakolliset om
 
 [Videotoistinmoduuli](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

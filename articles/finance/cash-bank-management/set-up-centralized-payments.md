@@ -57,3 +57,6 @@ Voit m채채ritt채채 yritystenv채listen selvitystositteiden oletuskuvaukset. T채m�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

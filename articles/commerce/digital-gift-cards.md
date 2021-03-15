@@ -100,3 +100,6 @@ Voit määrittää mukautetun summan digitaalista lahjakorttia varten Commercen 
 [Luo online-toimintoprofiili](online-functionality-profile.md)
 
 [Ulkoisten lahjakorttien tuki](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

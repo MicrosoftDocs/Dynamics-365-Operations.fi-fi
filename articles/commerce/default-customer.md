@@ -112,3 +112,6 @@ Seuraavassa kuvassa näkyy esimerkki asiakasmäärityksestä.
 [Kanavien yleiskatsaus](channels-overview.md)
 
 [Kanava-asetusten edellytykset](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

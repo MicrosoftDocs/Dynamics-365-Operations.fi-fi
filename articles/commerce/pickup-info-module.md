@@ -69,3 +69,6 @@ Seuraavassa kuvassa on esimerkki sähköisen kaupankäynnin kassasivusta, joka s
 [Tilauksen vahvistusmoduuli](order-confirmation-module.md)
 
 [Tilauksen tiedot -moduuli](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

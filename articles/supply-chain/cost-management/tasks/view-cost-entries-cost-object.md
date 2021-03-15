@@ -38,3 +38,6 @@ Tässä menettelyssä käsitellään, miten kustannusobjektin kustannusmerkintö
 7. Suodata pikasuodattimella Nimiketunnus-kenttää arvon p000031 mukaan.
     * Jos kustannusmerkinnät ovat tyhjiä, määritä Päivämäärästä-arvoksi 31. tammikuuta 2012 ja Päivämäärään-arvoksi 31. joulukuuta 2012.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

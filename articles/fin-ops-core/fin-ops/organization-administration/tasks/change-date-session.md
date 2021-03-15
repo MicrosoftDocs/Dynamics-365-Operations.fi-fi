@@ -32,3 +32,6 @@ Tässä ohjeaiheessa käsitellään istunnon päivämäärän muuttamista. Kuluv
 2. Syötä **Päivämäärä**-kenttään päivämäärä.
 3. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

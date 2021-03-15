@@ -102,3 +102,5 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
 - [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
 - [Kehittäjän opas](hr-developer-overview.md)
 - [Käyttöopas](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

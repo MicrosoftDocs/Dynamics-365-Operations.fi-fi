@@ -103,3 +103,6 @@ Jos useiden työntekijöiden täytyy tarkistaa hakemus, voit hallita tätä pros
 ## <a name="hiring-applicants"></a>Hakijoiden ottaminen palvelukseen
 
 Käytä **Hakemukset**-sivua ottaaksesi hakija palvelukseen. Kun hakija palkataan, hakemustietueen tilaksi merkitään **Palkattu** ja hakijan yleisessä osoitekirjassa olevat tiedot liitetään uuteen työntekijätietueeseen. Yleiseen osoitekirjan tietoihin tehdyt muutokset uuden työntekijätietueen kautta näkyvät myös hakijatietueessa. Tämä voi vähentää tietokirjausten määrää, jos uusi työntekijäsi hakee koskaan yrityksen sisällä uutta työtä. Vanhan työntekijän palkkaamisen uuteen toimeen voit tehdä napsauttamalla **Hakemuksen tila** -valikosta **Muuta toimea**, joka aloittaa siirtoprosessin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

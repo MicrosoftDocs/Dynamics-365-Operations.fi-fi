@@ -81,3 +81,6 @@ Nämä esimerkit osoittavat, miten voit luoda erityyppisiä työnkulkuehtoja kä
 [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)<br>
 [Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

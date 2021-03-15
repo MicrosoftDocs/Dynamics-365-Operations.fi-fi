@@ -95,3 +95,6 @@ Ennen kuin voit lähettää viestejä, sinun on määritettävä lähtevä posti
 [Kanava-asetusten edellytykset](channels-prerequisites.md)
 
 [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

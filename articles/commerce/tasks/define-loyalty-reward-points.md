@@ -45,3 +45,6 @@ Tässä menettelyssä esitellään kanta-asiakkaan palkkiopisteiden määrittäm
 10. Valitse Vanhentumisajan yksikkö -kenttään vaihtoehto.
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

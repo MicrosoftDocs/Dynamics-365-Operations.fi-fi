@@ -105,3 +105,6 @@ Kun kirjaat tiedoston, tiedostolle määritetään asianmukainen numerosarjaryhm
 
 > [!NOTE]
 > Joissakin maissa asiakirjanumeroinnissa on käytössä erityinen logiikka. Tällöin maakohtainen logiikka korvaa **Kronologinen numerointi** -toiminnon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

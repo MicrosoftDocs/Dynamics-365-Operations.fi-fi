@@ -150,3 +150,6 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 3. Syötä **Ympäristö**-kenttään sähköisen laskutuksen lisäosan ympäristön nimi.
 4. Valitse **Tallenna** ja sulje sitten sivu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

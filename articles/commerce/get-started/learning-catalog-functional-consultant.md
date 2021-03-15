@@ -54,3 +54,6 @@ Lisätietoja muiden Finance and Operations -sovellusten kanssa jaetuista ominais
 | Sisältö  | kuvaus | Muoto  | Pituus    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Dynamics 365 Commercen sähköisen kaupankäynnin määrittäminen ja käsitteleminen](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Dynamics 365 Commercen verkkokanavat ja sähköisen kaupankäynnin sivusto antavat vähittäismyyjille mahdollisuuden luoda tuotemerkille näkyvyyttä Internetissä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

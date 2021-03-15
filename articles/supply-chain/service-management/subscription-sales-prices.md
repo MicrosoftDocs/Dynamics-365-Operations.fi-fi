@@ -379,3 +379,6 @@ Ylläpitosopimukseen 00020\_135 liittyvässä ensimmäisessä tapahtumassa 550 e
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -154,3 +154,6 @@ Jos yrität suorittaa keräilytyön varastosovelluksessa sellaisen tunnuksen osa
 ## <a name="other-blocked-operations"></a>Muut estetyt toiminnot
 
 Kaikki sellaiset jaettavaan työhön liittyvät toiminnot, jotka muokkaavat työrivejä, työn varastotapahtumia tai täydennyslinkkejä, epäonnistuvat ja seuraava sanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

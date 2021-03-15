@@ -67,3 +67,6 @@ Seuraavissa ohjeaiheissa on tietoja ennen marraskuuta 2019 julkaistujen versioid
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | marraskuu 2016    | [Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | Toukokuun 2016.         | [Dynamics AX -sovelluksen version 7.0.1 uudet ja muuttuneet ominaisuudet (toukokuu 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | Helmikuun 2016.    | [Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

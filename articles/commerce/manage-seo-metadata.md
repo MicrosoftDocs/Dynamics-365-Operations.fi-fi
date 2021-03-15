@@ -96,3 +96,6 @@ Voit muokata sivun metatietoja seuraavasti.
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
 
 [Dynaamisten verkkokauppasivujen luominen URL-parametrien perusteella](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

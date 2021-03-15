@@ -57,3 +57,6 @@ Resurssiryhmä on operatiivisten resurssien joukko, joka vastaa yleensä tuotann
 6. Etsi haluamasi tietue luettelosta ja valitse se.
 7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

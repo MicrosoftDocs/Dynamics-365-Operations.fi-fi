@@ -72,3 +72,6 @@ Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa taulukossa k
 | Lähetä lainattu resurssi                  | Valitse lainaresurssi, jonka pitäisi olla väliaikainen korvaava resurssi, joka on valittu valitulle ylläpitopyynnölle. |
 | Palauta lainaresurssi                | Rekisteröi lainaresurssi palautetuksi. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Operatiivinen resurssi suorittaa projektin tai tuotantoprosessin aktiviteetit. T
 4. Syötä tai valitse arvo Syötön sijainti -kenttään.
     * Määritä varaston sijainti, josta operatiivinen resurssi käyttää materiaaleja.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -161,3 +161,6 @@ Suunnittelun tuoterakenteet ja reitit luodaan suunnitteluversiosta, jossa niitä
 Tuotteissa, joissa käytetään *version* tuotedimensiota (yhdessä tapahtumien logistisen vaikutuksen kanssa), versio lisätään myös tuoterakenteisiin ja reitteihin. Tämä toiminta auttaa erottamaan peräkkäisten versioiden tuoterakenteet ja reitit **Pakotettu voimassaolo** -asetuksesta riippumatta.
 
 Tuotteissa, joissa ei käytetä *version* tuotedimensiota (ilman tapahtumien logistista vaikutusta), versiota ei lisätä tuoterakenteisiin tai reitteihin. Niinpä peräkkäisten tuoterakenteiden ja reittien välillä ei ole eroa. Tässä tapauksessa **Pakotettu voimassaolo** -asetukseksi kannattaa määrittää *Kyllä*. Tällä tavoin voit estää päällekkäiset suunnitteluversiot ja voit myös aktivoida uuden version tuoterakenteen ja reitin ilman, että edellisen version tuoterakenteen ja reitin aktivointi olisi ensin poistettava. Jos **Pakotettu voimassaolo** -asetuksena on *Kyllä*, siinä tapauksessa vanhojen versioiden tuoterakenteiden ja reittien aktivointi on poistettava manuaalisesti ennen uusimman version aktivointia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

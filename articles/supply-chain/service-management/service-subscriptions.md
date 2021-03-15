@@ -37,3 +37,6 @@ Kausikoodi ilmaisee ylläpitosopimusmaksun kauden tai ajanjakson, jonka välein 
 Kausikoodi määritetään huollon ylläpitosopimusryhmässä. Se määritetään ylläpitosopimuksille ylläpitosopimusryhmän avulla. Uusilla luotavilla ylläpitosopimusmaksuilla on ehdotettu alkamispäivämäärä. Se on kauden alkamispäivämäärä, jos luotava kausi on ensimmäinen, tai edeltävän kauden päättymisajankohta, jos kyse on toisesta tai myöhemmästä kaudesta.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

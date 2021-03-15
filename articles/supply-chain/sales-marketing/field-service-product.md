@@ -72,3 +72,6 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service -tuotteet (Supply Chain Managementista Field Serviceen): Tuotteet – Tuotteet
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

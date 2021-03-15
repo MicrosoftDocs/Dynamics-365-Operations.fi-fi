@@ -57,3 +57,6 @@ Tässä menettelyssä kerrotaan, miten nimikkeet rekisteröidään käyttämäll
 2. Valitse Tuotteen vastaanotto.
 3. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

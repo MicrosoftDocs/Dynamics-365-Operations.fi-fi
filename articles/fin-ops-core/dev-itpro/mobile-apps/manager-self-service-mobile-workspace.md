@@ -97,3 +97,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 1.  Valitse **Lähetä kehu**. 
 1. Kirjoita kehu, jonka haluat lähettää. 
 1. Valitse **Valmis**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

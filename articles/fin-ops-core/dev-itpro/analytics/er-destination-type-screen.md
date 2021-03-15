@@ -38,3 +38,6 @@ Jos määrität **Käytössä**-kentän arvoksi **Kyllä**, tulosteen esikatselu
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

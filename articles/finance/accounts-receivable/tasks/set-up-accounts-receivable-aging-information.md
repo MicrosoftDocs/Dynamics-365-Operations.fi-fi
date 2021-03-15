@@ -58,3 +58,6 @@ Tämän ohjauksen avulla opit määrittämään erääntymiskauden ja asiakkaide
 2. Valitse asiakas, jolla on saldo.
 3. Laajenna **Erääntyminen**-tietoruutua niin, että erääntyvät saldot näkyvät. Tietokentän erääntymiskauden määritys saadaan parametreissa määritetystä erääntymiskauden oletusmäärityksestä. Arvon voi muuttaa keräysvalikon avulla.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Muuntoprosessi vaatii, että varaston sulkeminen suoritetaan päivää ennen suu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

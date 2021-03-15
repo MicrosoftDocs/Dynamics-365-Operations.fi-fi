@@ -61,3 +61,6 @@ Tässä menettelyssä kerrotaan, miten maksupalveluiden tarjoajien luetteloa tar
 24. Valitse Uusien luottokorttien oletuskäsittelijä -valintaruutu.
 25. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

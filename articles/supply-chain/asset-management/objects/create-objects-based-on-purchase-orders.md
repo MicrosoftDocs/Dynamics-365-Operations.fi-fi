@@ -69,3 +69,6 @@ Voit tarkistaa odottavat resurssit suorittamalla **Odottavien resurssien määr�
 3. Voit määrittää tämän työn suoritettavaksi erätyönä, esimerkiksi kerran päivässä.
 
 **Varoitus:** jos tietoja muutetaan ostotilauksessa *sen jälkeen*, resurssi on luotu nimikkeeseen perustuen, kyseiset muutokset eivät vaikuta resurssiin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ Tämä ongelma esiintyy, kun varastotapahtuman määräksi määritetään desim
 
 > [!IMPORTANT]
 > On suositeltavaa, että komentosarjaa muokataan huolellisesti ympäristöön sopivaksi ja että se testataan testiympäristössä ja sen tuloksena saatava tiedot tarkistetaan, ennen kuin komentosarja suoritetaan tuotantoympäristössä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

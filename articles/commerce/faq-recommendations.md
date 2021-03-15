@@ -99,3 +99,6 @@ Kun olet ottanut käyttöön tuotesuositukset, sinun on lisättävä suositusten
 [Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
 
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

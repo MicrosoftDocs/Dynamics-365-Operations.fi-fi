@@ -69,3 +69,6 @@ Tässä menettelyssä kerrotaan, miten kanta-asiakkuusmalli määritetään. Kan
 27. Valitse Tallenna.
     * Käsittele kanta-asiakkuusmallit -kohta on suoritettava aina, kun kanta-asiakkuusmallin kanavia muutetaan. Näin kanavien kanta-asiakkuusmallit päivitetään.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

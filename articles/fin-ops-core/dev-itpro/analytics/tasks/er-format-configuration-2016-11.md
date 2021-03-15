@@ -158,3 +158,6 @@ Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raporto
 42. Valitse **Tallenna**.
 43. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

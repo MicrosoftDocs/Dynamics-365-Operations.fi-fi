@@ -56,3 +56,6 @@ Tässä menettelyssä käsitellään sellaisen myyntirivin tarvekohdistuspuuta, 
 5. Valitse puussa Myyntirivi 000832\Kanban 000558\Varasto-otto L0001\Kanban 000559.
     * Myös toisen kanbanin työ on suunniteltu, koska koko tarvekohdistuspuu on suunniteltu. Huomaa, että kanban-työn tila on muuttunut ei suunnitellusta suunnitelluksi.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

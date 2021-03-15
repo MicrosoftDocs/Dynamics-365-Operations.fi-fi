@@ -88,3 +88,6 @@ Tässä tapauksessa kaksi varastossa käytettävissä olevaa kappaletta nimiketu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

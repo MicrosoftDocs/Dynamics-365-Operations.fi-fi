@@ -94,3 +94,6 @@ Lisätietoja luokitus- ja arvostelumoduulien määrittämisestä tuotetietojen s
 [Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla](ratings-reviews-modules.md)
 
 [Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

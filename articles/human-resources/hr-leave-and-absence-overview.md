@@ -54,3 +54,6 @@ Työntekijät voivat lähettää lomapyyntöjä ja hallita niitä **Työntekijä
 [Poissaolopyyntö](hr-employee-self-service-request-time-off.md)
 [Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

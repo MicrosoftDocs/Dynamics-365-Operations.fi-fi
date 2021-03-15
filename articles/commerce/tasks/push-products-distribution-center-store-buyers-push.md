@@ -52,3 +52,6 @@ T채ss채 menettelyss채 esitell채채n, miten ostovaatimus luodaan ja miten sit채 k�
 19. Valitse Luo tilaus.
 20. Valitse Kyll채.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

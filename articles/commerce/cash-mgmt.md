@@ -61,3 +61,6 @@ Retail-versiossa 10.0.3 ja uudemmissa on myös seuraavat käteistapahtumiin liit
 - Jos valitun tapahtuman saldo ei täsmää täsmäytyksen aikana, käyttäjän on kirjoitettava epätasapainoisen täsmäytyksen syyn kuvaus. Käyttäjät voivat valita yhden tapahtuman ja täsmäyttää sen asiaankuuluvan syyn kuvauksen kanssa.
 - Käyttäjät voivat edelleen täsmäyttää ja purkaa tapahtumia, kunnes vuoro on suljettu. Kun vaihto on suljettu, tapahtumia ei voi täsmäyttää.
 - Kun käyttäjä päättää vuoron sulkemisesta, Commerce tarkistaa, että vuorossa ei ole täsmäyttämättömiä kassanhallintatapahtumia. Käyttäjät eivät voi sulkea vuoroja, jos niissä on täsmäyttämättömiä tapahtumia.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

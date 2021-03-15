@@ -53,3 +53,6 @@ Lisätietoja tiettyjen tehtävien suorittamisesta lähetystaulussa on **Katso my
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

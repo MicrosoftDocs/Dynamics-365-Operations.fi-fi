@@ -75,3 +75,6 @@ Tässä kuvatut esimerkit osoittavat, että kaikki käyttöomaisuuserään tehdy
 
 ![Kuva 4](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

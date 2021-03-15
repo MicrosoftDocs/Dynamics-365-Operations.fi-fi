@@ -45,3 +45,6 @@ Luokittele käyttöomaisuuserä uudelleen noudattamalla seuraavia vaiheita:
 5. Anna **Uudelleenluokittelupäivä** -kentässä päivämäärä.
 6. Anna tai valitse **Tositesarja**-kentässä arvo.
 7. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

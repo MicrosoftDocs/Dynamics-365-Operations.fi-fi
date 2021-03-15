@@ -71,3 +71,6 @@ Tässä tehtävässä keskitytään uuden työn luomiseen. Se tehdään mallitoi
 33. Ota käyttöön Koulutus-osan laajennus.
 34. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

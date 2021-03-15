@@ -79,3 +79,6 @@ Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärk
 1. Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** \> **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
 
 1. Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**. **Tuotteen vahvistus** -asetuksella voi tarkistaa kunkin varastokappaleen mobiililaitteessa skannauksen yhteydessä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -272,3 +272,6 @@ Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatu
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004) tai (msdyn_allocated ne true))
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -229,3 +229,6 @@ Voit myös vahvistaa, että tapahtuman suhteet on päivitetty seuraavasti:
 - **Uuteen kuormaan jaettava määrä** -vaihtoehto toimii myös silloin, kun osa jäljelle jääneistä työn otsikoista on *Kesken*-tilassa. Tämän vuoksi voit käyttää toimintoa, vaikka työntekijät ovat jo aloittaneet tilausten keräilyn.
 - Jos valitset kohdan **Peruuta täyttämätön määrä** silloin, kun jäljelle jääneen työn tila on *Auki* tai *Kesken*, näytölle tulee seuraava virhesanoma: Jäljelle jäänyttä kuormamäärää ei voi peruuttaa. Työ on tarkoitettu kuormalle.
 - Jos valitset kohdan **Peruuta täyttämätön määrä** silloin, kun jäljelle jäänyttä työtä ei ole, mutta kuormassa on vapauttamattomia kuormarivejä, näytölle tulee seuraava virhesanoma: Kuorman lähetystä ei voitu vahvistaa, koska nimikkeen määrä ylittää alitoimitukselle määritetyn prosenttiosuuden. Voit välttää tämän virhesanoman asettamalla vapauttamattoman kuormarivin **Alitoimitus**-prosenttiosuuden 100 prosenttiin. Vapauttamattomia rivejä ei siirretä uuteen kuormaan, mutta nykyinen kuorma vahvistetaan alitoimituksen yhteydessä. Tällöin et voi vapauttaa alkuperäistä tilausta uudelleen. Siksi sinun on hoidettava se jollakin muulla tavalla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

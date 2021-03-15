@@ -65,3 +65,6 @@ Ulkomaanvaluutan uudelleenarvostusprosessin ajosta säilytetään aina tietue. V
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

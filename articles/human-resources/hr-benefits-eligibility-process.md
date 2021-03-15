@@ -54,3 +54,6 @@ Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii. Voit k�
 25. Avaa Tila-sarakkeen suodatin.
 26. Lajittele A–Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

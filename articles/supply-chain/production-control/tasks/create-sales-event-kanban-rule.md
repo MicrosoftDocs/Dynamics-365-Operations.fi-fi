@@ -73,3 +73,6 @@ Tässä menettelyssä käsitellään asetuksia, joita tarvitaan myyntitilauksen 
 2. Valitse Näytä tarvekohdistuspuu.
     * Huomaa, että luotavalla kanbanilla on sama määrä kuin myyntirivillä. Näet myös mitä materiaaliottoja L0050:n tuotantoon tarvitaan. Tämä on tämän menettelyn viimeinen vaihe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

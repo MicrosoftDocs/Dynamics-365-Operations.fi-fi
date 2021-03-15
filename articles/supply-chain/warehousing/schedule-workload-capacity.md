@@ -79,3 +79,6 @@ Jos näitä tietoja ei ole määritetty oikein, saat viestin luodessasi **Kuormi
 3. Valitse **Tilaustyyppi**-kentässä **Suunniteltu ja vahvistettu**, **Suunniteltu** tai **Vahvistettu** osoittaaksesi raportissa näytettävät tilaustyypit.
 4. Valitse **Kuormatyyppi**-kentässä kuormatyyppi, joka määrittää arvioidaanko kuormituskapasiteetti tilavuuden vai painon mukaan.
 5. Valitse kuormituskapasiteettiasetus **Kuormituskapasiteetti**-kentässä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

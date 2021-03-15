@@ -40,3 +40,6 @@ Kun järjestelmä pyytää määrittämään huoltotilauksen vaiheen päivitykse
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

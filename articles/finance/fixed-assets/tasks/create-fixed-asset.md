@@ -54,3 +54,6 @@ Jos Excel-apuohjelman mallissa tai tiedonhallinnassa ei määritetty käyttöoma
 
 > [!WARNING]
 > Käyttöomaisuustietuetta ei poisteta, jos tapahtumat kirjattiin siihen liittyvään kirjaan tai jos juuri luotu käyttöomaisuuserä syötetään kirjauskansioriville, mutta sitä ei kirjata. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

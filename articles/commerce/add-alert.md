@@ -95,3 +95,6 @@ Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominai
 [Sisältölohkomoduuli](add-hero-module.md)
 
 [Videotoistinmoduuli](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

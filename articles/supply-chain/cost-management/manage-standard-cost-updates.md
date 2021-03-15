@@ -51,3 +51,6 @@ Uuden vakiohinnan aktivointi arvostaa yleensä uudelleen käytettävissä olevan
 - **Ei mitään** – Taloushallinnon dimensioita ei kirjata uudelleenarvostustapahtumiin. Jos tilirakenteessa sisältää pakollisen taloushallinnon dimension, uudelleenarvostusprosessi suoritetaan siitä huolimatta, mutta se luo kirjanpitomerkinnät, joissa ei ole taloushallinnon dimensioita. Siinä tapauksessa käyttäjät saavat ensin varoitusanoman, jotta he voivat tarvittaessa peruuttaa uudelleenarvostuksen.
 - **Taulu** – Taloushallinnon dimensiot kirjataan uudelleenarvotustapahtumiin. Tämä on oletusasetus ja on yhdenmukainen alkuperäisen järjestelmän toiminnan kanssa ilman, että *Varaston vakiokustannusten uudelleenarvostuksen taloushallinnon dimensioihin oletusarvoihin palaamisen vaihtoehdot* -toiminto otetaan käyttöön.
 - **Kirjaus** – Uudelleenarvostustapahtumiin kirjataan uudelleenarvostettavana olevan tapahtuman taloushallinnon dimensioita. Alkuperäisen tapahtuman varastotilin taloushallinnon dimensioita käytetään oletusarvoisesti sekä varastotilillä että uudelleenarvostustilillä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

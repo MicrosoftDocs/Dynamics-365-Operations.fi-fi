@@ -59,3 +59,6 @@ Voit käyttää tätä opastusta USMF-yrityksen demotiedoissa. Tämä menettely 
 6. Valitse **Tallenna**.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

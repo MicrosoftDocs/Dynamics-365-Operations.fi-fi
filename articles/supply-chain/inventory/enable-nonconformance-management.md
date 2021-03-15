@@ -53,3 +53,6 @@ Voit ottaa määrityksistä poikkeamisen käyttöön seuraavien vaiheiden avulla
 [Laadunhallintaprosessit](quality-management-processes.md)
 
 [Määritä määrityksistä poikkeamisen hallinnan edellytykset](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

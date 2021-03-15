@@ -220,3 +220,6 @@ Kun asiakirjan tila on **Pyydetty**, se näkyy **Aktiivinen**-välilehdessä. Sa
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Myyntipisteen lähtevä varastotoiminto](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

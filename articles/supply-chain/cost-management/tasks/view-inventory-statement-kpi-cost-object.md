@@ -38,3 +38,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettel
 7. Syötä päivämäärä Päivämäärästä-kenttään.
 8. Kirjoita päivämäärä Päivämäärään-kenttään.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

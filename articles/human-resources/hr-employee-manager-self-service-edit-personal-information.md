@@ -72,3 +72,6 @@ Yleisessä osoitekirjassa määritetyt parametrit määrittävät roolit, jotka 
     - Lataa kuva valitsemalla **Lataa uusi kuva**.
     - Jos haluat poistaa kuvan, valitse kuva ja valitse sitten **Poista**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

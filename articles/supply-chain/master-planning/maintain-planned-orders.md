@@ -67,3 +67,6 @@ Jos aiot vahvistaa useita tilauksia samalla kertaa, suorituksen rinnakkaisuus vo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

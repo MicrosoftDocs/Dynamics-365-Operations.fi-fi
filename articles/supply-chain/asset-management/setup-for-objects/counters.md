@@ -66,3 +66,6 @@ Kun resurssityypit lisätään laskurityyppiin kohdassa **Laskurit**, kyseinen l
 
 ![Kuva 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

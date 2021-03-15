@@ -64,3 +64,6 @@ Tämän menettelyn avulla voit käynnistää ja pysäyttää huoltotilauksen aja
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

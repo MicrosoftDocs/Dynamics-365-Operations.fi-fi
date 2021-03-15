@@ -78,3 +78,6 @@ Odottavia ylimääräisiä päiviä ei voi määrittää joihinkin kirjauksen ta
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Numerosarjat ja jaetut numerosarjaparametrit
 
 Luottorajaoikaisujen käsittelemiseen tarvitaan kirjauskansion tunnus. Kirjauskansion tunnukseen käytettävä luottorajan oikaisun numero on lisättävä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

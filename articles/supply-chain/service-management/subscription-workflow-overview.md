@@ -56,3 +56,6 @@ Joka kuukauden lopussa jaksotat yhden kuukauden tuoton asiakkaan ylläpitosopimu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

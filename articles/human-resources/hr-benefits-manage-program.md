@@ -64,3 +64,6 @@ Joskus organisaatio lopettaa tietyn edun tarjoamisen. Tällöin etu ja siihen re
 Etujen joukkopäättämisen avulla voi samaan tapaan laajentaa sekä edun että työntekijöiden rekisteröitymisten päättymispäivää, jos haluat edun olevan käytettävissä alkuperäistä aikaa pidempään.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

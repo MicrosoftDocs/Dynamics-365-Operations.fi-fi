@@ -90,3 +90,6 @@ Voit valita seuraavista poistomenetelmistä.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

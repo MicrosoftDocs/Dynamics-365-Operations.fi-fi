@@ -66,3 +66,6 @@ Kuormituksen luontistrategia voidaan nyt määrittää kuormituksen luontimallii
 1. Tarkista ehdotetut kuormat ja ehdotetut kuormarivit.
 1. Luo **Ehdotetut kuormarivit** -pikavälilehden lähdeasiakirjan riveihin perustuvat kuormat valitsemalla toimintoruudussa **Luo kuormat**.
 1. Sulje **Kuormituksen luonnin työtila** -sivu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

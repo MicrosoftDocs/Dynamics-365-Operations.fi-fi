@@ -67,3 +67,6 @@ Voit määrittää osapuolitietueet joko yleisessä osoitekirjassa tai soveltuva
 ## <a name="can-i-translate-address-information-for-party-records"></a>Voiko osapuolitietueiden osoitetiedot kääntää?
 
 Voit määrittää osoitetietojen käännökset, jotta tiedot näkyvät käyttäjän kielellä (järjestelmän kieli) ohjelmassasi, mutta toisella kielellä asiakirjoissa, kuten myyntitilauksissa. Voit antaa maiden tai alueiden nimien, osoitekohteiden ja nimijaksojen käännökset. Jos järjestelmän kieli on esimerkiksi tanska, voit luoda myyntitilauksen ranskalaiselle asiakkaalle. Tässä tapauksessa voit tarkastella ongelmassa tanskankielistä asiakastietuetta, mutta osoitetiedot näkyvät tulostetussa myyntitilauksessa ranskaksi. Anna käännöksiä määritettäessä käännös luettelon jokaiselle nimikkeelle. Nimikkeet, joille ei annetta käännöstä, näkyvät järjestelmän kielellä. Jos järjestelmän kieli on esimerkiksi tanska, voit lähettää asiakirjan espanjalaiselle asiakkaalle. Jos et ole antanut osoitetietojen espanjankielisiä (ESP) käännöksiä, kyseiset tiedot näkyvät tanskaksi sekä ohjelmassa että tulostetussa asiakirjassa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

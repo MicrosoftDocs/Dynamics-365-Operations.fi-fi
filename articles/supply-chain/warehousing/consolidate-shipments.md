@@ -38,3 +38,6 @@ Seuraavissa skenaarioissa käydään läpi lähetyksen konsolidointiprosessi, jo
 
 - [Lähetyksen konsolidoinnin käytännöt](about-shipment-consolidation-policies.md)
 - [Lähetyksen konsolidointikäytäntöjen määrittäminen](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

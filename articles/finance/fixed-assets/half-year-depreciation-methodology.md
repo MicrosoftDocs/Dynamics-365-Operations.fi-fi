@@ -41,3 +41,6 @@ Ensimmäinen huoltovuosi päättyy joulu kuussa 2020, mikä tarkoittaa, että k�
    [![Puolen vuoden poistomenetelmän poistoaikataulu](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Puolivuotisen sopimuksen lisäämät laajennetut poistokaudet lisäävät poistojen täsmällisempää jakautumista. Kuuden kuukauden menetelmä edustaa poistokuluja tasaisemmin. Se on hyödyllinen tuloslaskelman raportoinnissa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

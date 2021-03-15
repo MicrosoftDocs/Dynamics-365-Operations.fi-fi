@@ -295,3 +295,6 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 | Myyntireskontra (Fabrikam West)    |              | 75,00         |
 | Maksaja Fabrikam East (Fabrikam West) | 25,00        |               |
 | Myyntireskontra (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

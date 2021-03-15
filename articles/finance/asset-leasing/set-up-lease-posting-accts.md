@@ -83,3 +83,6 @@ Jos haluat liittää tilejä vuokrauskirjoihin ja -ryhmiin, jotka on jo luotu, m
     > [!NOTE]
     > Valittua rahoitus- tai käyttötiliä veloitetaan, kun ajoitetun kulun lasku kirjataan.
     > **Vuokrasopimuksen kulun vastatili** -kohtaa käytetään kirjaustyyppinä toimeenpanokustannusten tapahtumissa, mutta kirjaa määritettyyn **vastatiliin** **toimeenpanokustannusten maksuaikatauluriveillä** vuokrasopimuksen tiedoissa tai vuokrauskirjalomakkeessa.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

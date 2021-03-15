@@ -36,3 +36,6 @@ Tässä menettelyssä kerrotaan, miten tuotteen elinkaaren tila liitetään julk
 5. Syötä tai valitse arvo Tuotteen elinkaaren tila -kenttään.
 6. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

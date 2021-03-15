@@ -208,3 +208,6 @@ Ohjatussa toiminnossa seuraavat arvot syötetään Contoso Retailerille:
     - **Vastaus:** "Kyllä, kuten tässä pääsuunnitelmassa on määritelty". Syötetään **1 päivä**.
 
     Contoso käyttää liikkeiden hyväksyttyjä ehdotuksia luodakseen suunniteltuja ostotilauksia näiden myymälöiden täydentämiseksi. Koska pääsuunnittelu suoritetaan joka päivä, edellisen päivän ehdotukset sisällytetään suunnitteluun.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

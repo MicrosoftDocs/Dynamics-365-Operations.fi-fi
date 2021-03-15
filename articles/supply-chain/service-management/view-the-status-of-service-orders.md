@@ -54,3 +54,6 @@ Jotta näkisit huoltotilauksen kiireellisyyden nopeasti, Gantt-kaavio tukee eri 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

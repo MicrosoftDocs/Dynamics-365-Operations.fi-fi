@@ -50,3 +50,6 @@ Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin kä
 18. Valitse Laajenna.
 19. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

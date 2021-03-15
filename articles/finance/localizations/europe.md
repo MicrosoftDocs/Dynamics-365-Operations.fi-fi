@@ -99,3 +99,6 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 
 - [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

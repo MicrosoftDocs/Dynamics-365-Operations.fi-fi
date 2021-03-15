@@ -58,3 +58,6 @@ Huoltosopimus on voimassa 1. tammikuuta 2012 – 31. joulukuuta 2012. Huoltosopi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

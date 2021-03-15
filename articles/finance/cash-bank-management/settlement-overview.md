@@ -77,3 +77,6 @@ Kun yrit채t selvitt채채 tapahtuman, saatat huomata symbolin, joka ilmaisee, ett�
 ## <a name="additional-resources"></a>Lis채resurssit
 
 - [Selvit채 j채ljell채 olevan summa](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

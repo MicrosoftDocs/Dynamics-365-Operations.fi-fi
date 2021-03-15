@@ -45,3 +45,6 @@ Tässä menettelyssä selvitetään, miten tuotantotilaus päätetään. Tämän
 1. Valitse toimintoruudussa Hallitse kustannuksia.
 2. Valitse Näytä kustannusvertailu.
     * Kun tuotantotilaus on päätetty, voit verrata arvioitua kustannushintaa toteutuneisiin kustannushintaan. Saat tällä tavoin paremman käsityksen tuotannon variansseista.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

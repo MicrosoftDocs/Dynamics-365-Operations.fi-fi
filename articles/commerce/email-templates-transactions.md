@@ -202,3 +202,6 @@ Lisätietoja sähköpostien määrittämisestä Dynamics 365 Commercessa on kohd
 [Aseta sähköpostikuitit](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Sähköpostikuittien lähettäminen Modern POS:stä ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

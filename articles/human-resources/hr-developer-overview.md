@@ -62,3 +62,6 @@ Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät
 - [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
 - [Järjestelmänvalvojan opas](hr-admin-overview.md)
 - [Käyttöopas](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

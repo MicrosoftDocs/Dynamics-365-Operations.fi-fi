@@ -40,3 +40,6 @@ Jos valitun myyntikorin rivi on valittu ja on myös **Kerää valitut**, **Toimi
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Modernin myyntipisteen (MPOS) asiakastilaukset](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

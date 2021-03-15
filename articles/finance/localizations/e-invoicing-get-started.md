@@ -235,3 +235,6 @@ Maan tai alueen mukaan sähköinen laskutustoiminto saattaa edellyttää lisäko
 - [Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-mex-get-started.md)
 - [Italian sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-ita-get-started.md)
 - [Asiakkaiden sähköiset laskut Egyptissä](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

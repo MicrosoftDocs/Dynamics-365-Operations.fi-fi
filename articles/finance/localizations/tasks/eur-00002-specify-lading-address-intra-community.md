@@ -72,3 +72,6 @@ Tämä menettely koskee kaikkia Euroopan maita/alueita. Tämä tehtävä luotiin
 37. Valitse Yleiset-välilehti.
     * Etsi juuri luotu rivi ja varmista, että lähettäjä toimitti tavarat Italiasta.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

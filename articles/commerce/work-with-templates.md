@@ -149,3 +149,6 @@ Kun olet esikatsellut malliin tehdyt muutokset, julkaise malli live-sivustossa j
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Esimääritettyjen asettelujen käyttö](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

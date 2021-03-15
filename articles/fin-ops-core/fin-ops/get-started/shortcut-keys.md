@@ -255,3 +255,6 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 [Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

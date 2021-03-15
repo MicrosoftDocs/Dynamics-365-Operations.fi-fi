@@ -73,3 +73,6 @@ Alla olevassa näyttökuvassa on esimerkki **Resurssituntien hallinta** -laskenn
 Toinen tapa määrittää tuntilaskennat on valita valita monta resurssia **Kaikki resurssit**- tai **Aktiiviset resurssit** -kohdassa. Napsauta sitten **Yleiset**-pikavälilehden **Tuntien hallinta** -painiketta. Valitut resurssit lisätään automaattisesti **Sisällytettävät tietueet** -pikavälilehden **Resurssi**-kenttään. Valitse **Resurssituntien hallinta** -valintaikkunassa **OK** ja näkyviin tulee valittujen käyttöomaisuuserien laskelma. Sama menettely voidaan tehdä toiminnallisille sijainneille kohdassa **Kaikki toiminnalliset sijainnit** tai **Aktiiviset toiminnalliset sijainnit** sekä kohdassa  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

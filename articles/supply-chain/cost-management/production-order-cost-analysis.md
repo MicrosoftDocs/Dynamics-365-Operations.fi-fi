@@ -64,3 +64,6 @@ Erillisissä raporteissa on tietoja kustakin tapahtumatyypistä. Näiden raportt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

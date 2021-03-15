@@ -51,3 +51,6 @@ Kuten jokaisen uuden ominaisuuden osalta, asiakkaiden on seurattava julkaisusuun
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Kun vanhentumispäivämäärä tunnistetaan, missä siitä ilmoitetaan?
 
 Yksi tosite- toiminnon vanhentuminen on tärkeä muutos, josta tiedotetaan paljon. Siitä viestitään tuotedokumentaation, blogijulkaisujen ja soveltuvien Microsoftin tapahtumien kautta – reilusti ennen vanhentumisen päivämäärää.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

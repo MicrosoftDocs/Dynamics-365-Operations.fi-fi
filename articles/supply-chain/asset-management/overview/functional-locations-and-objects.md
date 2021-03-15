@@ -57,3 +57,6 @@ Toiminnallisten sijaintien hierarkian koontitapa riippuu yrityksesi vaatimuksist
 Seuraavassa kuvassa on esimerkki toiminnallisista sijainneista, jotka perustuvat asiakkaisiin.
 
 ![Kaavio, jossa näkyy toiminnallisia sijainteja asiakkaiden perusteella](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

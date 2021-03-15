@@ -410,3 +410,6 @@ Tuote voidaan nyt vapauttaa uudelleen *USMF*-yhtiölle ja lähettää sitten asi
 1. Valitse kukin yhtiö, johon tuotteet halutaan vapauttaa.
 1. Valitse **Vapautukset**-valintaikkuna valitsemalla **OK** ja palaa muutostilaukseen.
 1. Vapauta kyseiset tuotteet valittuihin yhtiöihin valitsemalla toimintoruudun **Muutostilaus**-välilehden **Tuotevapautukset**-ryhmässä **Käsittele**. Aloita vapautusprosessi valitsemalla vaihtoehtoisesti **Vapauta tuotteen rakenne**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Tässä menetelmässä käsitellään, miten yksittäiselle työtekijällä void
 14. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 15. Voit tarkastella tällä sivulla, kenelle työntekijöille etu on rekisteröity ja kenelle ei.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

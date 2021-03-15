@@ -75,3 +75,6 @@ Seuraavat kentät ovat käytettävissä kussakin **Käyttöönotetut liiketoimin
 | Käytäntö | Valitsemalla jonkin seuraavista arvoista voit määrittää, onko nykyinen prosessi sallittu tuotteissa, joilla on tämä elinkaaren tila, ja miten se sallitaan:<ul><li>**Käytössä** – liiketoimintaprosessi sallitaan.</li><li>**Estetty** – Prosessia ei sallita. Jos käyttäjä yrittää käyttää prosessia tuotteessa, jolla on tämä elinkaaren tila, järjestelmä estää yrityksen ja näyttää virheen. Voit esimerkiksi estää elinkaaren lopussa olevan tuotteen ostamisen.</li><li>**Käytössä mutta varoitus** – Vaikka prosessi sallitaan, siitä varoitetaan. Tuotantotilaukseen voidaan esimerkiksi asettaa prototyyppituote, jonka tuotekehitysosasto on luonut. Muiden osastojen on kuitenkin tiedettävä, että tuotetta ei ole tarkoitus vielä valmistaa.</li></ul> |
 
 Jos muita elinkaaren tilasääntöjä lisätään mukautuksina, voit tarkastella kyseisiä sääntöjä käyttöliittymässä valitsemalla yläruudussa **Päivitä prosessit**. **Päivitä prosessit** -painike on vain järjestelmänvalvojien käytettävissä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

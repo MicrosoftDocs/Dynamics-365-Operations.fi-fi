@@ -579,3 +579,6 @@ Seuraavassa taulukossa on luettelo ER-määrityksistä, jotka tukevat määritet
 |                             | Myyntitilauksen pakkausluettelo (LT) (Excel)           |
 |                             | Myyntitilauksen pakkausluettelo (PL) (Excel)           |
 |                             | Myyntitilauksen pakkausluettelo (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

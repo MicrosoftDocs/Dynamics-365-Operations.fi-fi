@@ -51,3 +51,6 @@ Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston
 2. Valitse **Kyllä**.
 3. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventoint
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

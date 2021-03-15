@@ -124,3 +124,6 @@ Testausta varten voit suorittaa muodon yhdistämismäärityksen käyttämällä 
     * Tarkista XML-muotoiset tiedot. Nämä tiedot on tuotu valitusta tiedostosta ja siirretty tietomalliin. Huomaa, että kaikki 7 tuodun CSV-tiedoston riviä on käsitelty. Sisältyvien kenttien otsikoista 1 ohitettiin, 4 tapahtumaa jäsennettiin oikein ja 2 tapahtumaa todettiin virheellisiksi.
 3. Sulje sivu.
 4. Sulje sivu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

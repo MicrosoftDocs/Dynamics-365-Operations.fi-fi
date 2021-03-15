@@ -47,3 +47,6 @@ Voit asettaa tuotantotilauksen tilaksi **Ilmoitettu valmiiksi** normaalin tuotan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

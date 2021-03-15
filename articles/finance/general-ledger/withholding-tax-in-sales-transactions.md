@@ -63,3 +63,6 @@ Kun luot uuden myyntitilauksen, käytetään ennakonpidätysryhmän ja nimikkeen
 Ennakonpidätys lasketaan ja kirjataan **asiakkaan maksukirjauskansiossa**. Voit oikaista sovellettavaa ennakonpidätyskoodia sekä todellista ennakonpidätyksen summaa manuaalisesti **Ennakonpidätys** -välilehdessä **Tapahtumien selvitys** -sivulla.
 
 Laskettu ennakonpidätyksen summa vähennetään asiakasmaksusta ja kirjataan **ennakonpidätyksen vastatilille** liittyvässä tositteessa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

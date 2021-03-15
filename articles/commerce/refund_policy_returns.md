@@ -103,3 +103,6 @@ Voit tarkastella myyntipisteen sallittuja palautuksen maksuvälinetyyppejä noud
 
 
 ![Maksutapaluettelo](media/Return-policy-page5.PNG "Palautustyypit eivät ole sallittuja")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

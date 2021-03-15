@@ -62,3 +62,6 @@ Oletusarvoisesti **Paras suoritusaika** asetus ei ole käytettävissä. Jos halu
 
 - **Moduuli:** *Varastonhallinta*
 - **Ominaisuuden nimi:** *Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyöajan maksimisuoritusaika*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

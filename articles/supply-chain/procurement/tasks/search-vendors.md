@@ -38,3 +38,6 @@ Opettele hakemaan toimittajia tiettyjen ehtojen perusteella. Tässä esimerkiss�
 6. Kirjoita arvo Maa/alue-kenttään.
 7. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

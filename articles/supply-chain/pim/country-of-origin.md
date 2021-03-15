@@ -90,3 +90,6 @@ Kun luot tuoterakenneraportin, voit sisällyttää kunkin sellaisen osan alkuper
 Kunkin osan alkuperämaasta tietoja sisältävä raportti luodaan ja näytetään. Esimerkki raportista.
 
 ![Alkuperämaaraportti](media/country-of-origin-report.png "Alkuperämaaraportti")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

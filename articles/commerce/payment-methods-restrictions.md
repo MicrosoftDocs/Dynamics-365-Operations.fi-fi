@@ -60,3 +60,6 @@ Kun **Rajoitus kuitittomille palautuksille** -asetukseksi on valittu **Kyllä**,
 
 Jos tapahtuma on sekä kuitillinen että kuititon palautus, rajoitusehtojen noudattamista ei pakoteta, koska tapahtuma palautetaan työnkulkuun kuitillisena. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

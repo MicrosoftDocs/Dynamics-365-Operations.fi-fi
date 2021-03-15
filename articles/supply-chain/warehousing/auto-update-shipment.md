@@ -139,3 +139,6 @@ Aalto käsitellään ja kuormariveillä varatuille määrille luodaan työ. Läh
 Jos lähetyksen tila on vähintään **Aalto**, myyntirivillä olevien määrien päivitykset eivät vaikuta lähetykseen liitettyyn kuormariviin eikä niitä tarkisteta tämän kuormarivin perusteella. Kuormarivillä olevaa määrää koskevat muutokset on tehtävä suoraan kuormarivillä.
 
 Tarkistus tehdään sitten, kun kuormariville on luotu työ ja varaus on tehty. Myyntitilausrivillä olevan määrän vähennyt tarkistetaan sitten työrivin varauksen perusteella.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

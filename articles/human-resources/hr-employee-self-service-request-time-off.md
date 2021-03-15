@@ -62,3 +62,6 @@ Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös 
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Tilaukset vapautetaan varastoon erässä erätyön avulla. Erätyössä ajettavi
 -   Voit määrittää **Määrä**- ja **Salli osittain vapautettujen tilausten vapautus** -parametrit siirtotilauksille kohdassa **Varastonhallinta** \> **Vapauta varastoon** \> **Siirtotilauksien automaattinen vapauttaminen**.
 
 -   Voit määrittää **Määrä**- ja **Salli osittain vapautettujen tilausten vapautus** -parametrit myyntitilauksille kohdassa **Varastonhallinta** \> **Vapauta varastoon** \> **Myyntitilauksien automaattinen vapauttaminen**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

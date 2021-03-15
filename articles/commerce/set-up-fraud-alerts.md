@@ -68,3 +68,6 @@ Tilaus on tallennettu, mutta siihen on määritetty **Älä käsittele** -merkin
 Voit tarkastella ja hallinta petostarkistusta varten pitoon asetettuja tilauksia valitsemalla **Retail ja Commerce** \> **Asiakkaat** \> **Tilausten pidot**. Valitse **Tilausten pidot** -sivulla luettelosta merkintä ja valitse sitten **Tilaus pidossa**. Näet nyt lisätietoja, kuten tietoja pidon syystä. **Petoksen tiedot** -pikavälilehdessä on tietoja järjestelmän petosehdoista, joille tilauksesta löytyi vastine, ja käytetty pisteytys. Jos tilaus on asetettu manuaaliseen pitoon, voit tarkastella tilauksen pitoon asettaneen käyttäjän antamia tietoja. Nämä tiedot ovat **Huomautukset**-pikavälilehden **Petoksen huomautukset** -osassa.
 
 Lisätietoja tilauksen pitojen käyttämisestä on kohdassa [Tilauksen pidot](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

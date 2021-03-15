@@ -185,3 +185,6 @@ Lisätietoja: [Alv-koodien koko summa- ja väli-laskentavaihtoehdot](whole-amoun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

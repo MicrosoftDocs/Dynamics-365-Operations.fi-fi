@@ -56,3 +56,6 @@ Tässä aiheessa kuvataan, miten luot ostokäytäntöjä, jotka vastaavat ostoje
 4. Valitse **Sulje**.
 - Voit nyt määrittää muut ostokäytännön käytäntösäännöt. Huomaa, että käytäntösääntötyyppi ei voi sisältää päällekkäisiä sääntöjä, jotka ovat aktiivisia samaan aikaan yhdessä hankintasäännössä.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

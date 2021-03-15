@@ -66,3 +66,6 @@ Sekä suunnittelun optimointia että Microsoft Dynamics 365 Supply Chain Managem
 - Automaattinen vahvistus perustuu tarvepäivään (päättymispäivään).
 - Vahvistuksen aikarajan on oltava pidempi kuin läpimenoajan, jotta voidaan varmistaa, että tilaukset vahvistetaan ajoissa.
 - Jos haluat vahvistaa kaikki tilaukset, joiden on käynnistyttävä kuluvana viikkona, vahvistuksen aikarajan on oltava läpimenoaika plus yksi viikko.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

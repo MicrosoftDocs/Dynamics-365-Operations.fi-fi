@@ -53,3 +53,6 @@ Tässä menettelyssä näytetään, miten voit kopioida rinnakkaistuotteet aiemm
 6. Valitse OK.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

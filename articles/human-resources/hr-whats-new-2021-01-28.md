@@ -94,3 +94,6 @@ Lisätietoja Microsoft Dataversen ja Dynamics 365 Human Resourcesin integroinnis
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2021 julkaisuaallosta 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

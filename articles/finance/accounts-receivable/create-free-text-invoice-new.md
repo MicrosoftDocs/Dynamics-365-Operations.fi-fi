@@ -84,3 +84,6 @@ Kun olet kopioinut rivit, voit muokata tietoja tarpeen mukaan.
 Voit luoda vapaatekstilaskun mallin mukaan. Kun valitset **Uusi mallista** **Lasku**-välilehdessä, voit valita mallin nimen ja uuden tekstimuotoisen laskun asiakastilin. Oletusarvot, kuten maksuehdot ja maksutapa, voidaan automaattisesti täyttää asiakkaan tiedoista, tai voit käyttää arvoja, jotka on tallennettu malliin.
 
 Uusi vapaatekstilasku luodaan ja voit muokata sen arvoja tarpeen mukaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

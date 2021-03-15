@@ -42,3 +42,6 @@ Voit luoda päärahtikirjan, kun kuormassa on useampi kuin yksi lähetys Siinä 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

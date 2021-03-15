@@ -108,3 +108,6 @@ Vaihtoehtoisesti organisaatio voi määrittää **Puhelinkeskuksen parametri** -
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Puhelinkeskusten maksutavat](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

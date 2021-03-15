@@ -96,3 +96,6 @@ Kuten kohdassa "Luo resurssityypin asetusrivit" on kuvattu, varaosat määritet�
 
 Jos haluat nähdä, käytetäänkö valitun rivin varaosaa jossakin muualla resurssien hallinnassa (esimerkiksi suhteessa resursseihin ja työtilauksiin), valitse varaosarivi ja valitse sitten **Nimike, missä käytetty** avataksesi **Nimike, missä käytetty** -sivun. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

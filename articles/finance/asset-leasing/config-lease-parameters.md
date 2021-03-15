@@ -45,3 +45,6 @@ Useat määritysasetukset vaikuttavat siihen, miten resurssin vuokraus toimii. N
 
     > [!NOTE]
     > On suositeltavaa säilyttää tämän asetuksen arvona **Ei**. Tämän asetuksen määritystä käytetään tarkistuksessa ja ohjausobjektissa, jotta suljettua kirjan versiota ei poisteta vahingossa. Jos säilytät asetuksen arvona **Ei**, voit säilyttää nettokirjanpitoarvon ja tulevien poistojen laskelmat ajantasalla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Jos käytät reitityksiä, jokaiselle tuotantoreititykselle on määritettävä 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

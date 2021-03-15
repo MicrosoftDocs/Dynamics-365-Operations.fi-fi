@@ -241,3 +241,6 @@ Ota huomioon seuraavat suositeltavat menetelmät organisaatiohierarkian käyttö
 - Ennen kuin mallinnat tärkeimpiä uudelleenjärjestelyn tilanteita, käytä hierarkian voimassaolopäivämääriä vaikutusanalyysiin ja oikeellisuustarkistukseen.
 - Käytä luonnostilaa hierarkian muuttamiseen ennen, kuin julkaiset uuden version tuotantoympäristössä.
 - Rajoita niiden käyttäjien määrää, joilla on oikeudet lisätä organisaatioita hierarkiaan tai poistaa niitä tuotantoympäristössä. Pienempi numero laskee kalliiden virheiden mahdollisuutta ja tarvetta korjata virheitä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

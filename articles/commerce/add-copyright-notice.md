@@ -74,3 +74,6 @@ Copyright-ilmoituksen sisältävä alatunniste näkyy automaattisesti kaikkien v
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

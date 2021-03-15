@@ -47,3 +47,6 @@ Toiminnallisen siajinnin tunnus / Toiminnallisen siajinnin tunnus (jos on enemm�
 Jos olet valinnut resurssin puunäkymässä, voit valita **aktiiviset pyynnöt** tai **aktiiviset työtilaukset**, jos haluat tarkastella resurssiin liittyviä ylläpito- tai työtilauksia. Voit myös valita **avaa** \> **Toiminnallinen sijainti**, **Resurssit** tai **Resurssien tuoterakenne** avataksesi liittyvät näkymän.
 
 **Resurssien toiminnalliset sijainnit** -vaihtoehto, jonka voit valita **Näytä**-kentässä, on käytettävissä myös missä tahansa resurssihaussa, jossa voit valita resurssin. Puunäkymä näkyy **Resurssinäkymä**-välilehdessä, esimerkiksi silloin, kun [luot resurssin](../objects/create-an-object.md), luot ylläpitopyynnön tai luot työtilauksen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

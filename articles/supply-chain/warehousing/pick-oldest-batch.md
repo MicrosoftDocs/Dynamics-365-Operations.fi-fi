@@ -40,3 +40,6 @@ Aiemmin luotua työtä käyttämään määritetyillä nimikkeillä **Valitse va
 **Varoita** ja **Pakota**: luettelo eristä, joilla on vanhimmat vanhentumispäivät, näytetään erähallinnan yläpuolella, kun työntekijä valitsee erän. Jos rekisterikilven sijainti on ohjattu, rekisterikilpiluettelo, jossa on vanhin erä, näkyy rekisterikilven ohjausobjektin yläpuolella. 
 -   **Varoita**: jos työntekijä valitsee rekisterikilven tai erän, joka ei näy luettelossa, ohjausobjekti on tyhjennetty ja varoitus ilmoittaa, että valittavana on vanhempi erä. Työn jatkaminen on edellyttää, että työntekijä valitsee uudelleen saman rekisterikilven tai erän.  
 -   **Pakota**: työntekijä saa edelleen ilmoituksia, että valittavana vanhempi erä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

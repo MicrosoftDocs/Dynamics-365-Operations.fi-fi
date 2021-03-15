@@ -68,3 +68,6 @@ Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät puheli
 ## <a name="configure-continuity-programs"></a>Määritä jatkuvuusohjelmat
 
 [Jatkuvuusohjelmien määrittäminen puhelinkeskuksille](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

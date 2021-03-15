@@ -52,3 +52,6 @@ Tässä artikkelissa kuvataan tuotemääritysmallin määrityksen ja luonnin vai
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

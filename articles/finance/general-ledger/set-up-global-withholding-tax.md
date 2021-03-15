@@ -47,3 +47,6 @@ Tässä ohjeaiheessa on luettelo vaiheista myynnin ja ostojen yleisen ennakonpid
 7. Määritä nimikkeen tai palvelun ennakonpidätysryhmät **Nimikkeen ennakonpidätysryhmät**-sivulla.
 
 8. Määritä **Laskun vähimmäissumma** sivulla **Kirjanpitoparametrit > Ennakonpidätys**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

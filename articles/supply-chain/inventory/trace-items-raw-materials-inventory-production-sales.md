@@ -139,3 +139,6 @@ Voit luoda **Lähetetty asiakkaille** -raportin, jossa määritetään lähetett
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Voinko jäljittää oheistuotteita ja sivutuotteita?
 Voit seurata rinnakkaistuotteita, mutta et voi seurata sivutuotteita, koska niihin ei ole tavallisesti liitetty seurantadimensioita. Kun seuraat nimikettä, seurantatietoihin sisältyvät kaikki liittyvät oheistuotteet. Solmun, joka sisältää rinnakkaistuotteen lisätiedoissa on sana "rinnakkaistuote". Voit tarkastella tietoja oheistuotteesta myös valitsemalla seurantatietojen solmun ja napsauttamalla sitten **Tuotanto**-pikavälilehteä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -176,3 +176,6 @@ Seuraava menettely näyttää, miten otsikkotason kulut kohdistetaan riville. En
         > Varmista **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukkoa käytettäessä, että ruudukko on avoinna siihen saakka, että valitset **Kohdista**. Jos suljet ruudukon ennen **Kohdista**-vaihtoehdon valintaa, ruudukossa tehdyt asetukset menetetään. Siinä tapauksessa kulut kohdistetaan aiemmin määritettyjen ehtojen perusteella.
 
 1. Ota asetukset käyttöön valitsemalla **Kohdista** ja sulje kyselyn valintaikkuna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Tässä menettelyssä käsitellään varastosiirtokirjauskansion luonti- ja kirj
 2. Valitse Tapahtumat.
     * Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

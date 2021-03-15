@@ -69,3 +69,6 @@ Tässä menettelyssä käsitellään, miten myyntitarjous luodaan ja päivitetä
 13. Valitse **Myyntitilaukset**.
 14. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

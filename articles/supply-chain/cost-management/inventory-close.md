@@ -86,3 +86,6 @@ Saatat joskus joutua peruuttamaan valmiin varaston sulkemisen ja palauttamaan tÃ
 > [!NOTE] 
 > Vain viimeinen suljettu varastojakso voidaan avata uudelleen. Jos haluat peruuttaa aiemman varaston sulkemisen, jokainen seuraava varaston sulkeminen on peruutettava yksi kerrallaan uusimmasta sulkemisesta alkaen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

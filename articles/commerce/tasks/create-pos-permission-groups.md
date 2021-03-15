@@ -47,3 +47,6 @@ Tässä ohjeaiheessa kerrotaan, miten voit luoda myyntipisteen käyttöoikeusryh
 16. Syötä tai valitse arvo Myyntipisteen käyttöoikeusryhmä -kentässä. Kaikki tämän työn toimissa olevat työntekijät käyttävät näitä myyntipisteen käyttöoikeusryhmän asetuksia, ellei työntekijöiden myyntipisteen käyttöoikeuksia ole ohitettu toimen tasolla.  
 17. Valitse **Tallenna**. Kun muutokset on tallennettu, suorita henkilökunnan jakeluaikataulu ja siirrä muutokset kanaville.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

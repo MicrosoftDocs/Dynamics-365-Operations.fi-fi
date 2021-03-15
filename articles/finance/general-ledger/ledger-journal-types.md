@@ -67,3 +67,6 @@ Tässä ohjeaiheessa kuvataan kirjauskansiotyypit, joita voit määrittää talo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

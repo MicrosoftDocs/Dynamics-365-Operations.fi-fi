@@ -49,3 +49,6 @@ Kustannuslaskentalomake näkyy **Laske nimikekustannus** -sivun osana. Kustannus
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

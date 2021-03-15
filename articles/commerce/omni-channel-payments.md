@@ -237,3 +237,6 @@ Kun tilaus, jolla on useita tarjouksia ja useita rivejä, on noudettavissa, kass
 - [Dynamics 365 -maksuyhdistin Adyenia varten](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

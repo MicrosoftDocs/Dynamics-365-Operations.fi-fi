@@ -108,3 +108,6 @@ Lisätietoja on ohjeaiheessa [Käyttöomaisuuden integrointi](fixed-asset-integr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

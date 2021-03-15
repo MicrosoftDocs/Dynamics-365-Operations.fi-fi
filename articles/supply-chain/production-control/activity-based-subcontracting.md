@@ -105,3 +105,6 @@ Siksi Supply Chain Management tukee nyt tuoterakennelaskentaa, joka sisällyttä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

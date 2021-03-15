@@ -43,3 +43,6 @@ Työajan ajoitusominaisuuksia käytetään työajan aikavälien luokittelussa ja
 3. Kirjoita arvo Arvo-kenttään.
 4. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

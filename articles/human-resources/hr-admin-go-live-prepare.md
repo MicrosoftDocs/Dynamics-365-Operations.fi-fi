@@ -99,3 +99,6 @@ Kun tarkistusluettelo on lähetetty, FastTrack-ratkaisuarkkitehti perehtyy proje
 ## <a name="see-also"></a>Lisätietoja
 
 [Käyttöönoton usein kysytyt kysymykset](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

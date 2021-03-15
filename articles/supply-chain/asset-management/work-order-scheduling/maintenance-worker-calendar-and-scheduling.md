@@ -38,3 +38,6 @@ Alla oleva kuvakaappaus näyttää esimerkin huoltotyöntekijästä, joka liitty
 
 Työkalujen ja resurssien kalenteriasetuksia ei tarvita suhteessa työtilausten suunnitteluun. Oletus on, että työkalut ja resurssit ovat käytettävissä 24 tuntia vuorokaudessa huoltoa varten.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

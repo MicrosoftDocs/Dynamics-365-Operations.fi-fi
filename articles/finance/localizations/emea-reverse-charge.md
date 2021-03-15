@@ -136,3 +136,6 @@ Seuraavat ominaisuusasetuksiin liittyvät sivut ja valikkovaihtoehdot ovat käyt
  - **Ulkomaankauppaparametrit** (**Vero** > **Asetus** > **Arvonlisävero** > **Ulkomaankauppa** > **Ulkomaankauppaparametrit**). Katso [Maan/alueen ominaisuuksien määrittäminen](#Set-up-Country/region-properties).
 
 **Käänteinen veloitus** -valintaruutu on käytettävissä **Arvonlisäveroryhmä** ja **Kirjattu arvonlisävero** -sivuilla. Lisätietoja on kohdissa [Arvonlisäveroryhmien ja nimikkeen arvonlisäveroryhmien määrittäminen](#sales-tax-item-sales-tax-groups), [Myyntilaskun käänteinen veloitus](#reverse-charge-sale) ja [Ostolaskun käänteinen veloitus](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

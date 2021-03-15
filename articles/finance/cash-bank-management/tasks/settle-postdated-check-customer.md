@@ -55,3 +55,6 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 10. Valitse Tosite.
 11. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

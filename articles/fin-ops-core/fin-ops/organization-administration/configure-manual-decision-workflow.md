@@ -350,3 +350,6 @@ Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa.
     - **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä päätös on tehtävä. Voit esimerkiksi määrittää, että päätös on tehtävä joulukuun kolmannen viikon perjantaihin mennessä.
 
 4. Jos aikaraja ylittyy, järjestelmä tekee päätöksen automaattisesti. Valitse **Toiminto**-luettelosta vaihtoehto, jonka haluat järjestelmän valitsevan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Täsmäytyksen laskentataulukossa **uusiksi** merkityt tiliotteen tapahtumat kir
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

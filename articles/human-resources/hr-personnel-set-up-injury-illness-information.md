@@ -65,3 +65,6 @@ Työnantajan on tiedettävä, kun työntekijä loukkaantuu tai sairastuu työpai
     * Raportoinnin virastot ovat virastoja, joille tapauksesta on raportoitava. Valitse sen viraston oletusvalintaruutu, joka on oletusvirasto raportoitaessa tapaturmasta ja sairaudesta.  
 23. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

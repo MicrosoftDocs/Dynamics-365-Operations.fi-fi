@@ -298,3 +298,6 @@ Toimintojen MX-00010 ja MX-00016 (CFDI-lasku ja CFDI-peruutus) käyttöönotto s
 - [Sähköisen laskutuksen yleiskatsaus](e-invoicing-service-overview.md)
 - [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md)
 - [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

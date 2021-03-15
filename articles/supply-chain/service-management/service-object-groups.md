@@ -65,3 +65,6 @@ Voit määrittää huoltokohteet ryhmään **Huoltokohteet**-lomakkeessa.
 [Huoltokohteiden luominen](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

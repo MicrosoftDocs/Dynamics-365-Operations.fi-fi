@@ -95,3 +95,6 @@ Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tar
 ### <a name="tables-currency-column"></a>taulut: Valuutta-sarake
 
 Tiettyihin valuuttasarakkeisiin määritettävien desimaalien määrä on rajoitettu neljään.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

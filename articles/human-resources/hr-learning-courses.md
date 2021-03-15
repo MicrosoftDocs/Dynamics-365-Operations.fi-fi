@@ -137,3 +137,6 @@ Työntekijät, jotka ilmoittautuvat kurssille **työntekijän itsepalvelun** siv
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

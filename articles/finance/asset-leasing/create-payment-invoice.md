@@ -48,3 +48,6 @@ Voit luoda kuukausittaisia laskuja yksittäisille vuokrasopimuksille tai voit lu
 6. Kun tapahtuma on kirjattu, voit tarkastella tapahtuman tietoja ja vuokrasopimusvelan arvoa valitsemalla **Velkatapahtumat** vuokrasopimuksen kirjassa.
 
     Maksuaikataulussa valitaan **Kirjauskansio kirjattu** -valintaruutu. Rivi näkyy laskun kirjauskansion numerossa. Kun olet luonut kirjauskansion ja viennin luodulle kirjauskansiolle, vienti on peruutettava ennen kuin se voidaan luoda uudelleen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

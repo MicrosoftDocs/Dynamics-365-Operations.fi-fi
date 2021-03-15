@@ -63,3 +63,6 @@ Lisätietoja Commercen arviointiympäristön valmistelusta on kohdassa [Commerce
 [Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)
 
 [Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

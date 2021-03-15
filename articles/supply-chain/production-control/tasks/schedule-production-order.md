@@ -54,3 +54,6 @@ Tässä menettelyssä selvitetään, miten tuotantotilaus ajoitetaan. Tämän me
 6. Sulje sivu.
 7. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Kun sivusto on luotu, voit varmistaa, että se on liitetty verkkomyymälään, v
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

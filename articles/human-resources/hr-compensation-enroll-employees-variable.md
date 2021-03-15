@@ -41,3 +41,6 @@ Etuuspäällikkö voi rekisteröidä työntekijät muuttuvan kompensaation suunn
 8. Ota käyttöön Organisaation ohitukset -osan laajennus.
     * Jos työntekijän suoritustaso on otettava huomioon, eri osastojen tai muun kuin työntekijän toimelle liitetyn osaston suoritustaso voidaan ohittaa. Prosentti-sarakkeen summan on oltava 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

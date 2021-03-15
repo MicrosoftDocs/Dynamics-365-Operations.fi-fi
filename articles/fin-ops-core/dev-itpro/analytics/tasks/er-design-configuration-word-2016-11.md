@@ -164,3 +164,6 @@ Muokattavissa olevan muodon luonnosversion suorittaminen edellyttää, että se 
 
 - [Uuden ER-määrityksen suunnitteleminen luomaan Word-muotoisia raportteja](../er-design-configuration-word.md)
 - [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

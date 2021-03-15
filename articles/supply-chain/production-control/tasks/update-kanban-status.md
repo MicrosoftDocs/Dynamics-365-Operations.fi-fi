@@ -47,3 +47,6 @@ Kun kanban tyhjennetään vahingossa tai vastaanotettu kanban on tyhjennettävä
 2. Merkitse valittu rivi luettelossa.
     * Huomaa, että materiaalin käsittely-yksikön tila on Tyhjennetty.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

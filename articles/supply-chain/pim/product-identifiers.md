@@ -189,3 +189,6 @@ Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-,
 ## <a name="related-topic"></a>Liittyvä aihe
 
 [Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

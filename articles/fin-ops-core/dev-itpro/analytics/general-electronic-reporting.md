@@ -298,3 +298,6 @@ Financen ER-määritysten luetteloa päivitetään jatkuvasti. Tällä hetkellä
 
 - [Sähköisen raportoinnin (ER) määritysten luominen](electronic-reporting-configuration.md)
 - [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -34,3 +34,6 @@ site:technet.microsoft.com dynamics ax 2012 "hakuehto"
 –TAI–
 
 site:msdn.microsoft.com dynamics ax 2012 hakusana
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

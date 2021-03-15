@@ -87,3 +87,6 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö  | kuvaus  | Muoto  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Dynamics 365:n perusteet](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Todista, että ymmärrät Microsoft Dynamics 365:n: Power Platformin; pilvikonseptit; lisensointivaihtoehdot; sekä käyttöönotto- ja julkaisuvaihtoehdot. | Tentti, kustannukset vaihtelevat alueittain |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

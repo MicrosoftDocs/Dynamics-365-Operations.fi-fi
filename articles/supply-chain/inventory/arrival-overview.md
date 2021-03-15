@@ -120,3 +120,6 @@ Kun kaikki tavarat on rekisteröity, varastopäällikkö tai ostopäällikkö vo
 
 ## <a name="summary"></a>Yhteenveto
 **Saapumisen yleiskuva** -sivun avulla varastopäällikkö ja varastotyöntekijät voivat nähdä yleiskuvan odotettavissa olevasta työstä, joka on tehtävä saapuvien käsittelyn aikana. Sivun avulla voidaan myös aloittaa nimikkeiden saapumisprosessi, jotta nimikkeiden seuranta voidaan aloittaa heti, kun ne saapuvat varastolle.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

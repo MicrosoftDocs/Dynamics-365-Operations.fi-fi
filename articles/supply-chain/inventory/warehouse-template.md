@@ -97,3 +97,6 @@ Kolme minuuttia kestävässä YouTube-videossa on lisätietoja tavasta, jolla va
 ## <a name="related-topic"></a>Liittyvä aihe
 
 [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -134,3 +134,6 @@ Jos vuokrasopimusta on oikaistu, voit tarkastella sen eri versioita. Voit myös 
 
 2. Jos haluat tarkastella aiempia aikatauluja, avaa muokattu vuokrasopimus **Vuokrasopimusyhteenveto**-sivulla, valitse haluttu kirja ja valitse sitten toimintoruudussa **Kirjan versiohistoria**.
 3. Valitse **Kirjan versio** -sivulla versio ja aikataulu tarkastelemista varten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

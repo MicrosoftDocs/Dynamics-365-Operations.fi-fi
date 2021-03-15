@@ -89,3 +89,6 @@ Tässä tehtävän ohjauksessa kerrotaan, miten suoraveloitusvaltakirja luodaan 
 3. Valitse asiakas, jolle valtakirja lisättiin.
 4. Anna tai valitse **Suoraveloitusvaltakirjan tunnus** -kentässä arvo.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

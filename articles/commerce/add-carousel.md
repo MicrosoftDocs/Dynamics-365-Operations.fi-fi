@@ -85,3 +85,6 @@ Voit lisätä karusellimoduulin uudelle sivulle ja määrittää pakolliset omin
 [Sisältölohkomoduuli](add-hero-module.md)
 
 [Videotoistinmoduuli](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

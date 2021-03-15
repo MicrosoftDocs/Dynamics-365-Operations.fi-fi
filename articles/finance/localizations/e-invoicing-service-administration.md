@@ -138,3 +138,6 @@ Ympäristö on konfiguroitava **Sähköisen tiedoston parametri** -sivun **Lähe
 
 - [Konfiguroi sähköiset laskut RCS:ssä](e-invoicing-configuration-rcs.md)
 - [Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

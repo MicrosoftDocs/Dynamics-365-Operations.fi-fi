@@ -82,3 +82,6 @@ Lisäksi voit ottaa käyttöön **Aloitusaika**- ja **Päättymisaika**-kentät 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla
 [Lisää tietosuojakäytäntösivu](add-privacy-page.md)
 
 [Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

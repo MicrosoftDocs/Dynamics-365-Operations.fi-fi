@@ -66,3 +66,5 @@ Työhönottoprojektit auttavat rekrytointiprosessin hallinnassa. Työhönottopro
 32. Valitse **Työhönottoprojektin tila**.
 33. Valitse **Aloita**. **Aloitettu** tila tarkoittaa, että projekti on valmis vastaanottamaan hakemuksia.  
 34. Valitse **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

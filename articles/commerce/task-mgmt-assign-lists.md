@@ -91,3 +91,6 @@ Voit seurata kaikkien sinulle määritettyjen tehtävien tehtäväluettelon tila
 [Tehtäväluetteloiden luominen ja tehtävien lisääminen](task-mgmt-create-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

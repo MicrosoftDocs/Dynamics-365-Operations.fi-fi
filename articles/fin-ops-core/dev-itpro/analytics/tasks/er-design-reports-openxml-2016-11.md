@@ -150,3 +150,6 @@ Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn v
 17. Anna **Pankkitili**-kentän arvoksi `GBSI OPER`.
 18. Valitse ensin **OK** ja sitten uudelleen **OK**. Tarkista luotu taulukko, mukaan lukien maksutietorivit sekä jokaisen tässä maksusanomassa käytetyn valuuttakoodin kokonaissummat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

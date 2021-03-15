@@ -120,3 +120,6 @@ Lisätietoja sisällön hallinnasta on seuraavissa ohjeaiheissa:
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
 
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

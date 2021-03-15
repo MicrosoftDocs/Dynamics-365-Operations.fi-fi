@@ -47,3 +47,6 @@ Tässä menettelyssä näytetään, miten kuljetuksen maksuväline määritetä�
 7. Valitse Lähetä.
 8. Valitse reitti.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Käytössä on versio 10.0.16 tai sitä uudempi versio ja seuraava virhesanoma a
 > Aloita täyttämällä seuraava kyselylomake ja pyydä tarvittaessa poikkeus suunnittelun optimointiin siirtymisessä.
 
 **Vastaus:** Ei, pääsuunnittelua ei ole estetty. Pääsuunnitteluajo onnistui ja tuloksia voi käyttää tavalliseen tapaan. Tämän virhesanoman avautuminen voidaan kuitenkin estää tulevissa pääsuunnitteluajoissa joko siirtymällä heti suunnittelun optimointiin tai pyytämällä poikkeusta käyttämällä virhesanomassa olevaa linkkiä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

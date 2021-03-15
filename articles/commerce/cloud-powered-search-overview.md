@@ -81,3 +81,6 @@ Dynamics 365 Commercen parannellun lajittelun avulla asiakkaat voivat lajitella,
 [Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
 
 [SEO-metatietojen hallinta](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

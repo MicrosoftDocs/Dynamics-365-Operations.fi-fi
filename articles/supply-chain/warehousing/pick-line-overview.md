@@ -68,3 +68,6 @@ Määritä mobiililaitteen valikkovaihtoehto tuottamaan keräilyrivin yhteenveto
     - Käytä jäljellä olevia **Näyttökenttä**-kenttiä lisätäksesi jopa seitsemän lisänäyttökenttää tarpeen mukaan. Valitse jokaisessa **Näyttökenttä**-kentässä työrivikentän nimi. Kukin rivi näyttä tällöin arvon kyseiselle kentälle. Arvot näytetään tässä valitussa järjestyksessä. Voit jättää osan **Näyttökenttä**-kentistä tyhjiksi, jos et tarvitse kaikkia seitsemää arvoa.
 
 1. Valitse toimintoruudussa **Tallenna** ja sulje sitten **Kenttäluettelo**-sivu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

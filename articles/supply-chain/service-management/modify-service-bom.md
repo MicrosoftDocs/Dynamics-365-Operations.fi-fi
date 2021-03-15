@@ -71,3 +71,6 @@ Voit kirjata elementin historian huollon tuoterakenteen sisällä. Aina, kun pä
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

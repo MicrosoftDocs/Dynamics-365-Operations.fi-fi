@@ -81,3 +81,6 @@ Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimu
     - Ostohyvityksen jaksotuskirjauskansiota on hyvitetty ilmaisemaan tulevaa velkaa asiakkaalle.
     - Ostohyvityksen kulutiliä on veloitettu osoituksena myyntiin liittyvistä kustannuksista.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

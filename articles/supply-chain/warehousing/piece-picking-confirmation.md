@@ -50,3 +50,6 @@ Seuraavat asetukset ovat valittavissa, kun työtyyppinä on keräily tai invento
 | Kappaleen keräilyvahvistus | Käytettävissä, kun työtyyppinä on keräily tai inventointi. Tuotteen vahvistus valitaan automaattisesti. Jokainen varastokappale voidaan vahvistaa mobiililaitteessa. |
 |  Kappaleiden enimmäismäärä  |                   Käytettävissä keräilytyössä, jos kappalekeräilyn vahvistus on otettu käyttöön. Määrittää rajan vahvistettavien kappaleiden määrälle.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

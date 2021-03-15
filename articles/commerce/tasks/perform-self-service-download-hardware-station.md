@@ -36,3 +36,6 @@ Tässä menettelyssä kerrotaan, miten ennalta määritetty laiteasema ladataan.
 5. Etsi haluamasi tietue luettelosta ja valitse se.
 6. Valitse Lataa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Määritä työntekijöitä vastaavat tyypit Dynamics 365 Human Resourcesissa.
    | **Kuvaus** | Työtyypin kuvaus. |
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

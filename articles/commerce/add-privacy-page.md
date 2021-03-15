@@ -108,3 +108,6 @@ Osaan voidaan nyt viitata muiden sivuston sivujen mallissa. Kun tähän osaan vi
 [Evästeen yhteensopivuus](cookie-compliance.md)
 
 [Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

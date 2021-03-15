@@ -203,3 +203,6 @@ IFeatureLifecycle on Microsoftin sisäinen mekanismi, joka ilmaisee ominaisuuden
 - `PublicPreview` – näytetään oletusarvoisesti, mutta mukana on varoitus siitä, ominaisuus on esiversio.
 - `Released` – kokonaan vapautettu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

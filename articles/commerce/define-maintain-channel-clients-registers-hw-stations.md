@@ -204,3 +204,6 @@ Muita aktivointiin liittyviä tietoja ovat laitteen aktivointitilan vaihtanut ty
 ### <a name="client-data-synchronization"></a>Asiakasohjelman tietojen synkronointi
 
 Kaikki POS-asiakasohjelmaan tehdyt muutokset laitteen aktivointitilan muutoksia lukuun ottamatta on synkronoitava kanavatietokantaan, ennen kuin ne otetaan käyttöön. Voit synkronoida muutokset kanavatietokantaan valitsemalla **Vähittäismyynti ja kauppa** &gt; **Vähittäismyynnin ja kaupan IT** &gt; **Jakeluaikataulu** ja suorittamalla sitten tarvittavan jakeluaikataulun. Jos kyse on asiakasohjelman muutoksista, suorita **Kassakoneet**- ja **Kanavan määritys** -jakeluaikataulut.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

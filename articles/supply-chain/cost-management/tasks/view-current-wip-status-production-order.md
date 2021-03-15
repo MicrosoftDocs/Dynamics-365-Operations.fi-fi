@@ -37,3 +37,6 @@ Tässä menettelyssä näytetään, miten tuotantotilauksen KET-raporttia tarkas
 6. Lisää Päivämäärästä-kenttään päivämäärä 1.1.2012.
 7. Lisää Päivämäärään-kenttään päivämäärä 31.12.2012.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

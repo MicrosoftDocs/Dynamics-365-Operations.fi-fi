@@ -40,3 +40,6 @@ Ennen kuin kanban-työt voidaan luoda ja tehtäviä käsitellä tuotannon työnk
 5. Valitse Aktivoi.
 6. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

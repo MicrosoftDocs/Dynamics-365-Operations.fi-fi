@@ -68,3 +68,6 @@ Seuraavassa kuvassa on logiikka, jota käytetään alennuksen samanaikaisuuden o
 Seuraavassa kuvassa on logiikka, jota käytetään alennuksen samanaikaisuuden ohjausobjektiksi on määritetty **Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken**.
 
 ![Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa](./media/Model_2.png "Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

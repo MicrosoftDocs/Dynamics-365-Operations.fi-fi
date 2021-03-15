@@ -138,3 +138,6 @@ Commerce-käyttäjä noudattaa työnkulkua aikakirjausten laskemiseen, hyväksym
 - Poissaolon kirjaaminen
 
 Lisätietoja työajan seurannan rekisteröintien käsittelystä on kohdassa [Työajan seurannan rekisteröintien käsittely](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

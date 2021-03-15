@@ -59,3 +59,6 @@ Kun myyntitilaus kirjataan, kirjattu kustannussumman on 10,00 Yhdysvaltain dolla
 
 > [!NOTE]
 > Jos puolestaan olet valinnut nimikkeen **Sisällytä fyysinen arvo** -valintaruudun ja myyntitilaus kirjataan, kirjattu kustannussumma on 12,00 Yhdysvaltain dollaria.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

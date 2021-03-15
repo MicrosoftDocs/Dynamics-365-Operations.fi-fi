@@ -56,3 +56,6 @@ Ennen kuin **tietojen tarkistuksen tarkistusluettelon** työtilaa voi käyttää
 Tehtäväalueiden avulla voi ryhmitellä tietojen tarkistustehtäviä loogisiin omistusoikeuden alueisiin organisaatiossa. Tehtäväalueina voidaan käyttää esimerkiksi ostoreskontraa, myyntireskontraa tai kirjanpitoa.
 
 **Valikkovaihtoehdon nimi** liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi tietojen tarkistustehtävä, jolla ostoreskontran **ostoreskontran erääntymisraportti** suoritetaan, voidaan linkittää **Ostoreskontran erääntymisraportti** -sivulle.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

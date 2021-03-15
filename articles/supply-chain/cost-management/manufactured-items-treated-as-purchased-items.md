@@ -41,3 +41,6 @@ Voit estää laskennan valitsemalla **Lopeta hajotus** -merkin, joka on sisälly
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

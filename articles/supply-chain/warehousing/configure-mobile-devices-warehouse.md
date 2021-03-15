@@ -438,3 +438,6 @@ Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuks
 [Varaston tilat](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

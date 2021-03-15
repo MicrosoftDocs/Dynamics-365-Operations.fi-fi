@@ -41,3 +41,6 @@ Jos tilikartan kanssa on ristiriita, tilikartan erotin ja projektin tai aliproje
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Erottimen päivitystarpeen määrittäminen ympäristössä 
 Jos päivitetyn ympäristön erottimissa on ristiriita, arvojen kirjaamisessa voi esiintyä epävakautta segmentoidussa kirjauksen hallinnassa tai dimensiomerkinnän ohjauksessa. Tämä tarkoittaa sitä, sinun on aina käytettävä hakuja tai lisätietoikkunaa, kun kirjaat tili- ja dimensioyhdistelmiä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

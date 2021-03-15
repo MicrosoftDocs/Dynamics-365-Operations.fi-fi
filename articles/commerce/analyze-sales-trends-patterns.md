@@ -42,3 +42,6 @@ Käyttäjät voivat tarkastella myyntitrendejä ja -malleja myös tuntiperusteis
 - **Myymälän hallinta** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
 - **Myymälän myyntiedot** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän myyntitiedot** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
 - **Kyselyt ja raportit** -osio &gt; **Retail ja Commerce** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -276,3 +276,6 @@ Jos laite katoaa tai vaarantuu, laitteen Supply Chain Managementin käyttöoikeu
 1. Varmista, että sovelluksen asiakasohjelman tunnus vastaa vaiheessa 2 muistiin kirjoitettua asiakasohjelman tunnusta.
 1. Valitse työkalurivillä **Poista**.
 1. Valitse avautuvassa vahvistussanomassa **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

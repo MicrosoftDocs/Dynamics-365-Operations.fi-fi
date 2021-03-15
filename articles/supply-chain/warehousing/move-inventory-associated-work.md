@@ -58,3 +58,6 @@ Valitse työntekijän, jolle annetaan oikeus siirtää varattua varastoa, **Sall
 Tämä toiminto on takaisinsovitettu Microsoft Dynamics AX 2012 R3:een ja on käytettävissä CU12:n osana.
 Se voidaan myös ladata erikseen KB-numeron 3192548 kautta. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

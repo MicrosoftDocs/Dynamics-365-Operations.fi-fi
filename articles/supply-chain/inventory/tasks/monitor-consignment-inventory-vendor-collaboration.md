@@ -42,3 +42,6 @@ Tässä menettelyssä kuvataan, miten toimittajanyhteistyötä voi käyttää as
 1. Siirry kohtaan Toimittajayhteistyö > Tavaralähetysvarasto > Käytettävissä oleva tavaralähetysvarasto.
     * Käytettävissä oleva tavaralähetysvarasto -sivulla näytetään asiakkaan varastossa omistamasi varasto. Voit näyttää muita dimensioita, kuten toimipaikan ja varaston, valitsemalla Näytä dimensiot -välilehden.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

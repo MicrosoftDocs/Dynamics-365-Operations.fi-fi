@@ -280,3 +280,6 @@ Kun *Toimipaikan rekisterikilven paikannus* -toiminto on määritetty ja varasto
     ![Sijainti 1 toimipaikassa](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
 
 1. Kirjoita toimipaikalle luomasi rekisterikilven tunnus ja kerää myyntitilaus noudattamalla kehotteita.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

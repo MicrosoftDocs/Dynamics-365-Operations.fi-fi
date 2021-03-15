@@ -106,3 +106,6 @@ Jos haluat poistaa robots.txt-tiedoston sivustoon Commerce-sivustossa, toimi seu
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Seuraavassa kuvassa esitetään esimerkkejä tällaisista ilmoituksista.
 *Luettelo* on nimi, joka annetaan sellaisen tietueen kokoelmalle, jota voi vierittää. Voit tuoda nämä tiedot sivulle valitsemalla ne. Usein tämä avaa ruudukon.
 
 ![Seuraavassa kuvassa näkyy esimerkkejä työkaluriveistä, ruudukoista ja luetteloista.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

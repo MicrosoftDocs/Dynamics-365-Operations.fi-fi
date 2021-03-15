@@ -132,3 +132,6 @@ Voit suositella prosessitapahtuman suorittamisen jälkeen muutoksia työntekijä
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Seuraavassa taulukossa luetellaan tuontimuoto, jota on käytettävä, kun teet k
 | 6            | BusinessUnit, 1 Osasto, 2 | Taloushallinnon dimension määritteet määritetään segmenttijärjestyksessä.<p>**Vienti**-sivulla voit tarkistaa, miten määritteet on määritetty.</p> |
 | 7            | 002,1,658 | <ul><li>Taloushallinnon dimension arvo</li><li>Taloushallinnon dimensio RecordDimensions-dimensioiden indeksinä.</li><li>Moniselitteinen, yksilöivä tietuetunnus, joka liittyy RecordTrans- tai RecordTrans2-kohteen yksilöivään tietuetunnukseen</li></ul> |
 | 8            | 002,1,1 | <ul><li>RecordBudget-kohteesta tapahtumaan liittyvät dimensioarvot</li><li>Taloushallinnon dimensio RecordDimensions-dimensioiden indeksinä.</li><li>Moniselitteinen rivitietueen tunnus, joka on kohdistettu tiedoston tapahtumarivien järjestyksen mukaan.</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Tässä aiheessa keskitytään saapumisen yleiskuvaprofiilin määrittämiseen. 
 17. Valitse **Tallenna**.
 18. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

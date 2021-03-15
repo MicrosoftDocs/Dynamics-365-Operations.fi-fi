@@ -92,3 +92,6 @@ Esimerkiksi:
 - **Palkkaa työntekijä** -toiminnon otsikon voimassaolopäivä on **Työsuhteen alkamispäivämäärä** -kentässä annettu päivämäärä.
 - **Siirrä työntekijä** -toiminnon otsikon voimassaolopäivä on **Määrityksen alkamispäivä** -kentässä työntekijälle annettu päivämäärä.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

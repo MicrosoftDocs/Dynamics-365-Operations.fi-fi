@@ -147,3 +147,6 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 4. Valitse Valmis.
 5. Valitse OK.
 ![ER-mallimäärityksen suunnittelun sivu](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

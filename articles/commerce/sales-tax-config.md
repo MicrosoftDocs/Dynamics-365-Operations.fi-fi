@@ -81,3 +81,6 @@ Jos tilausrivit on määritetty noudettaviksi myymälästä tai tien vierestä, 
 
 [Verovapauden laskenta](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

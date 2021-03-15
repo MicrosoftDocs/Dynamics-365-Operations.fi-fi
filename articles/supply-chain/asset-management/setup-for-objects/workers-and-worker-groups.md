@@ -63,3 +63,6 @@ Voit myös luoda kunnossapitotyöntekijäryhmiä ja liittää niitä kunnosapito
 6. Jos resurssiryhmä liittyy valittuun kunnossapitotyöntekijäryhmään, valitse **Kopioi resurssiryhmästä**. Valitse **Ryhmä**-kentässä resurssiryhmä, josta kalenteriasetukset kopioidaan. Valitse sitten **Työntekijäryhmä**-kentästä työntekijäryhmä, johon resurssiryhmän kalenteriasetukset kopioidaan. Tämä vaihe on merkityksellinen vain, jos haluat, että kunnossapitotyöntekijät voivat käyttää resurssiin (kuormituspaikkaan) liittyvää kalenteria työtilauksen ajoittamisen aikana.
 
     **Tiedot**-pikavälilehden kentissä näkyy niiden kunnossapitotyöntekijöiden määrä, jotka on määritetty valitulle kunnossapitotyöntekijäryhmälle.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

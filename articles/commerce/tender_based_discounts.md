@@ -71,3 +71,6 @@ Vähittäiskauppiaat jättävät usein joitakin tuotteita, kuten uusia nimikkeit
 
 > [!NOTE]
 > Kun **Estä kaikki alennukset** -määritykseksi on valittu **Kyllä**, tuotteeseen ei sovelleta alennuksia. Ei edes maksuvälineperusteisia alennuksia.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

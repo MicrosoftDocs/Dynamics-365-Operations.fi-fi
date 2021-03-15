@@ -44,3 +44,6 @@ Tämä raportti tarjoaa tilannevedoksen seuraaviin yhteenvetoihin osana myymäl�
 - Veron yhteenveto
 - Hinnan ohitusten yhteenveto
 - Alennusten yhteenveto
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

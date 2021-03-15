@@ -238,3 +238,6 @@ Noudattamalla seuraavia ohjeita voit määrittää, pitääkö työntekijöiden 
 
 > [!NOTE]
 > Määrittääksesi etiketin, siirry kohtaan **Varastonhallinta \> Asetukset \> Asiakirjan reititys \> Asiakirjan reititysasettelut**. Lisätietoja on kohdassa [Rekisterikilven tarratulostuksen ottaminen käyttöön](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

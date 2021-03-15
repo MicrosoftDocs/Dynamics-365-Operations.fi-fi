@@ -42,3 +42,6 @@ Arvoltaan vähäisen käyttöomaisuuden ryhmässä olevan käyttöomaisuuserän 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ Seuraavassa taulukossa käsitellään varastonhallintamoduulissa käytettäviss�
 | Kaikki aallot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä aallon käsittelyä varten |
 | Kuormasuunnittelun työtila | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Työsuunnittelun työtilan tallennettu näkymä |
 | Työn tiedot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Työn tietosivun tallennettu näkymä |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

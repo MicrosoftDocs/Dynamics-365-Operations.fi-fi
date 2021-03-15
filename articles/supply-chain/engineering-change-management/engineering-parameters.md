@@ -56,3 +56,6 @@ Seuraavassa taulukossa käsitellään kenttiä, jotka ovat käytettävissä **Su
 | Vakavuussääntö | Valitse, miten suunnittelun muutostilauksen vakavuusaste luodaan. Valitse *Manuaalinen*, jos käyttäjän odotetaan antavan arvon **Vakavuusaste**-kenttään. Valitse *Laske*, jos järjestelmä laskee **Vakavuusaste**-kentän arvon, kun suunnittelun muutostilauksen toimintoruudussa valitaan **Laske vakavuusaste**. Siinä tapauksessa järjestelmä käyttää **Vakavuussääntöjoukko**-sivulla määritettyjä vakavuussääntöjä. Valitse *Laske automaattisesti*, jos **Vakavuusaste**-kentän arvo lasketaan ja täytetään automaattisesti vakavuussääntöjoukkojen mukaisesti. |
 | Julkaise uudelleen tuotteet, joihin vaikutus kohdistuu | Tätä kenttää käytetään, kun tuotteita vapautetaan uudelleen suunnittelun muutostilausta käyttämällä. Voit valita, ehdotetaanko **Vapautukset**-valintaikkunassa kaikkia tuotteita vai vain tuotteita, joihin vaikutus kohdistuu. |
 | Julkaistavat tuoterakennetasot | Vapautettavan tuoterakennetason syvyys. Jos tuoterakenteessa on enemmän tasoja (eli jos se on syvempi) kuin tässä määritetty arvo, tasot vapautetaan vain määritettyyn arvoon saakka. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

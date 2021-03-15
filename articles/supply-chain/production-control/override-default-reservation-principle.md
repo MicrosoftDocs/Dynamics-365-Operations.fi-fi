@@ -58,3 +58,6 @@ Ennen kuin käytät toimintoa, se on otettava käyttöön järjestelmässä. Jä
 Irtotavaravoiteluainetta tuotetaan 1 000 litran miksauslaitteessa. Kun irtotavara on valmis, se pumpataan useisiin täyttöasemiin, joissa erikokoiset pullot täytetään. Kun pullot on täytetty, ne pakataan laatikkoihin. Kyseiset laatikot pakataan sitten kuormalavoille.
 
 Tässä skenaariossa luodaan erätilaus tuottamaan 1 000 litraa irtotavaraa. (Tämä tilaus on irtotavaratilaus.) Kun tämä erätilaus on valmis, se raportoidaan valmiina täyttöasemien materiaalin syöttösijaintiin. Sen jälkeen luodaan erätilaus täyttämään ja pakkaamaan jokainen pullokoko. (Nämä tilaukset ovat pakkaustilauksia.) Pakkaustilauksissa on kaava, joka koostuu irtotavarasta, tyhjästä pullosta, etiketistä ja muista pakkausmateriaaleista. Koska irtotavara siirtyy suoraan miksauslaitteesta täyttöasemiin, tämän ainesosan keräämiseen ei tarvita varastotyötä ja irtotavara kulutetaan suoraan syöttösijainnista. Tämän vuoksi varausperiaatteeksi on määritetty *manuaalinen*. Muut materiaalit on vaiheistettu täyttöasemaan keräilytyön avulla. Niinpä kyseisten rivin varausperiaatteeksi on määritetty esimerkiksi *vapautus*, jolloin varaus tehdään automaattisesti, kun pakkaustilaus vapautetaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

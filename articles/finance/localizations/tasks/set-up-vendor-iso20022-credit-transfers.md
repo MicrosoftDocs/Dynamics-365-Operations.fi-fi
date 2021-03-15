@@ -51,3 +51,6 @@ Tämä on neljäs viidestä tehtävästä, joilla esitellään toimittajamaksuje
 4. Valitse luettelosta SEPA CT -rivillä oleva linkki.
 5. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

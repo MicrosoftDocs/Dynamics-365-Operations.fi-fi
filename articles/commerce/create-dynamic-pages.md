@@ -96,3 +96,6 @@ Kun mukautettu sivu on julkaistu, se tarjotaan sen sijaan, että tarjottaisiin d
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
 
 [Online-kanavan laajennettavuus](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

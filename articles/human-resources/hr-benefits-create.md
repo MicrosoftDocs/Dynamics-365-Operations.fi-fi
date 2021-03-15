@@ -53,3 +53,6 @@ Tässä tehtävässä näytetään, miten uuden etuuden luomisessa käytettävä
 6. Syötä päivämäärä ja kellonaika Voimaantulo-kenttään.
 7. Valitse Uusi etu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

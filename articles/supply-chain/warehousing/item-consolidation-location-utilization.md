@@ -207,3 +207,6 @@ Seuraavassa skenaariossa käytetään varastosovellusta mobiililaitteessa tekem�
 
     > [!NOTE]
    > Järjestelmä luo kullekin suoritettavalle siirrolle yhden työtunnuksen. Jos määrität jo varastoa sisältävän sijainnin, vain yksi työtunnus luodaan. Jos määritä uuden sijainnin, työtunnuksia luodaan kaksi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

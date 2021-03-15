@@ -41,3 +41,6 @@ Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan talo
     + Ilmoita viestintämenetelmien tiedot, kuten sähköpostiosoitteet, URL-osoitteet ja puhelinnumerot. Voit syöttää uuden viestintätietueen valitsemalla Uusi. Voit muokata aiemmin luodut viestintätietue valitsemalla **Lisäasetukset > Lisäasetukset**.   
 6. Voit halutessasi muuttaa **Toimintayksikön numero** -asetusta tarpeen mukaan. Huomaa, että tämä numero on vastaavan **Osapuoli**-tietueen yksilöivä tunnus, eikä se voi olla sama kuin mikä tahansa muu toimintayksikkö.
 7. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

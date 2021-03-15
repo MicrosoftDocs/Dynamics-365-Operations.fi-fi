@@ -54,3 +54,6 @@ Tässä menetelmässä kerrotaan, miten kaupankäyntikanavan taloushallinnon dim
 24. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 25. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

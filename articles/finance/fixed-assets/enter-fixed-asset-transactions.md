@@ -67,3 +67,6 @@ Käyttöomaisuustapahtumatyyppejä voi kirjata Kirjauskansio-sivulla. Voit käyt
 Käyttöomaisuuden poistokausien jäljellä olevaa arvoa ei päivitetä, kun poistotapahtumatyypin kirjauskansion rivi luodaan tai tuodaan manuaalisesti tietoyksikön kautta. Tämä arvo päivitetään, kun kirjauskansion rivi luodaan käyttämällä poistoehdotusprosessia.
 
 Lisätietoja on ohjeaiheessa [Käyttöomaisuuden integrointi](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Dynamics 365 Human Resources käyttää tasokoodeja, joiden etuhinnat ovat työn
    | **Kuvaus** | Etutasokoodin lyhyt kuvaus. |
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

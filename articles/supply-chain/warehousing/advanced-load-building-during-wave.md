@@ -249,3 +249,6 @@ Tässä tilanteessa näytetään, miten tässä aiheessa aiemmin kuvaillut asetu
 1. Valitse juuri luomasi myyntitilaus ja lisää uusi rivi valitsemalla **Myyntitilausrivit**-pikavälilehdessä kohta **Lisää rivi**.
 1. Aseta uuden rivin **Nimiketunnus**-kentän arvoksi *M9200* ja **Määrä**-kentän arvoksi *1*.
 1. Varaa rivi toistamalla sama riveillä 6–9 ja vapauta se varastoon. Kuten aiemminkin, järjestelmä luo **uuden** lähetyksen lisäämällesi riville. Koska nimike on kuitenkin peräisin **CarAudio**-nimikeryhmästä, se **ei läpäise rajoitteita, jotka asetit kuorman yhdistelmäryhmälle**. Siksi se **lisätään uuteen kuormaan**. Jos et olisi määrittänyt kuorman yhdistelmäryhmää kuorman luontimallissa, tämä lähetys oltaisiin lisätty ensimmäiseen kuormaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

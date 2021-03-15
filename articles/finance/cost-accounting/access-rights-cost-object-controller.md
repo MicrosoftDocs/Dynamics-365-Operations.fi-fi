@@ -105,3 +105,6 @@ Lisäresurssit
 - [Kustannusseurannan työtila](cost-control-workspace.md)
 - [Dimensiohierarkia](dimension-hierarchy.md)
 - [Kustannuslaskennan sisältöpaketin määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Arvonlisäveroviranomaiset ovat yksiköitä, joille on raportoitava kerättävä
 10. Syötä Pyöristys-kenttään numero.
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

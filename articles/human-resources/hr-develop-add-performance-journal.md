@@ -54,3 +54,6 @@ Suoritustason kirjauskansiossa on tietoja siitä, miten olet saavuttanut tavoitt
 20. Kirjoita kuvaus-kenttään 'Kiitos avustasi konferenssin aikana!'.
 21. Valitse Lähetä.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

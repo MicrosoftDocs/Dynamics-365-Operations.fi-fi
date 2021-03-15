@@ -82,3 +82,6 @@ Määritä URL-osoite avautumaan POS:ssä seuraavien ohjeiden mukaan.
 5. Valitse **Avaa URL** toimintona.
 6. Anna käytettävä URL-osoite.
 7. Määritä, avataanko URL-osoite uudessa ikkunassa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

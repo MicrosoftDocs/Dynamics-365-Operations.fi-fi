@@ -108,3 +108,6 @@ Alla olevaan kuva kaappausruutuun lisättiin **Tyyppi** ja tässä esimerkissä 
 >[!NOTE]
 >Saat yleiskuvan kaikista työtilauksiin ja ylläpitopyyntöihin luoduista vikarekisteröinneistä valitsemalla **Resurssien hallinta** > **Kyselyt** > **Resurssin vika** > **Resurssin viat**. Valitse **Resurssin viat** -sivulla käyttöomaisuus virheiden kirjaaminen ja laajenna **Aiheeseen liittyviä tietoja** -ruutu, josta näet tietoja asiaan liittyvästä työtilauksesta tai ylläpitopyynnöstä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

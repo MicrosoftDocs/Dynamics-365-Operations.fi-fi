@@ -92,3 +92,6 @@ Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourc
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

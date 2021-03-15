@@ -99,3 +99,6 @@ Erätyö poistaa säännöllisesti viitetaulukoista niiden laitteiden merkinnät
 1. Valitse toimintoruudussa **Tyhjennä asiakasohjelmamäärityksiä**.
 1. Määritä **Tyhjennä asiakasohjelmamäärityksiä** -valintaikkunan **Päivien määrä** -kentässä, kuinka monta päivää (ennen kuluvaa päivää) ilman toimintaa otetaan huomioon. Kaikkien niiden laitteiden määritykset ja kirjautumistietueet poistetaan, jotka eivät ole olleet aktiivisia kyseisenä aikana.
 1. Tyhjennä soveltuvat määritykset **Päivien määrä** -asetuksen perusteella valitsemalla **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

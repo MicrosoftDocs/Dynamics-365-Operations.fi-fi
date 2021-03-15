@@ -170,3 +170,6 @@ Ennen kuin voit määrittää keräilyrivin ryhmittelyn, sinun on luotava joitak
 >   - Työrivit, joilla on keskeneräinen täydennystyö
 >   - Ylikeräily
 >   - Nimikkeen uudelleenkohdistaminen lyhyen keräilyn avulla
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

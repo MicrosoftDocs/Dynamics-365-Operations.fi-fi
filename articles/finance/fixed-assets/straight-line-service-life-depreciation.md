@@ -107,3 +107,6 @@ Hankintaoikaisun käyttöaika on sama kuin käyttöomaisuuserän käyttöaika ja
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

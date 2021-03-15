@@ -41,3 +41,6 @@ Voit määrittää **Huoltohallinnan parametrit** -sivun **Huoltosopimusryhmä**
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Huoltosopimusryhmien luominen](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

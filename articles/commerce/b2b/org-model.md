@@ -62,3 +62,6 @@ Commerce headquarters -käyttäjät voivat tarkastella hierarkian kaikkien asiak
 [Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille](payment-method.md)
 
 [Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -300,3 +300,6 @@ Fabrikam muodostaa maksun, jonka summa on 75,00, toimittajalle 3004, Fourth Coff
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

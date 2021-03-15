@@ -53,3 +53,6 @@ Tässä ohjeaiheessa kuvataan, kuinka resursointiryhmä luodaan. Kun olet luonut
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

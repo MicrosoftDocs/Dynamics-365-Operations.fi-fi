@@ -107,3 +107,6 @@ Seuraavassa taulukossa on esimerkkejä tuonnin lisäasetuksista pankkitilin täs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,5 @@ Osana ohjelmointirajapinnan lähettämisen kutsua henkilöstöhallinto tekee tar
 
 - [MyLeaveRequests – yleiskatsaus](hr-developer-api-myleaverequests-overview.md)
 - [Todennus](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

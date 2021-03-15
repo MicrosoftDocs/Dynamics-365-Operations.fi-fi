@@ -38,3 +38,6 @@ Vastaajat voivat kirjoittaa avoimiin kysymyksiin oman vastauksen. Voit määritt
     * Avoimissa kysymyksissä käytetään Teksti- tai Huomautus-tyyppistä syöttöä.  
 6. Syötä kysymys Teksti-kenttään.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

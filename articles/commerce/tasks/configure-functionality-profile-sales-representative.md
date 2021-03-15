@@ -36,3 +36,6 @@ Tässä menettelyssä esitellään myyntiedustajia koskevien myymälän toiminto
 4. Valitse vaihtoehto Kysy myyntiedustajaa ‑kentästä.
 5. Valitse Vaadi myyntiedustaja -kentässä Kyllä.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

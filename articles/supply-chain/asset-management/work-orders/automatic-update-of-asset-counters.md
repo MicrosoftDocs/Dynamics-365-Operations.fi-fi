@@ -69,3 +69,6 @@ Huomaa seuraavat seikat:
 
 - Voit määrittää toisiin laskureihin liittyviä laskureita. Tällöin liittyvät laskurit päivitetään automaattisesti samalla kun päälaskuri päivitetään. Lisätietoja resurssilaskureiden määrittämisestä esitetään kohdassa [Laskurit](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

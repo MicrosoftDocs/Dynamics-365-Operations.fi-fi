@@ -292,3 +292,6 @@ Scale unitien kuormituksissa voi hallita seuraavia erätöitä valitsemalla **Va
 - Aaltotaulukon tietueiden käsittely
 - Varastokeskuksen yksikkösanoman käsittelijä
 - Käsittele varastotilausrivien määräpäivityspyynnöt
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

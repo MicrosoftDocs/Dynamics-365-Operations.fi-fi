@@ -49,3 +49,6 @@ Nimikkeet, jotka on tarkoitus käyttää lähetysprosesseissa, on yhdistettävä
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Toimittajayhteistyö tavaralähetysprosessissa
 Jos toimittajat käyttävät toimittajayhteistyöliittymää, he voivat valvoa sen avulla toimipaikan varaston kulutusta. Lisätietoja toimittajien määrittämisestä käyttämään toimittajayhteistyötä on kohdassa [Toimittajaportaalin käyttäjän suojaus](../procurement/configure-security-vendor-portal-users.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

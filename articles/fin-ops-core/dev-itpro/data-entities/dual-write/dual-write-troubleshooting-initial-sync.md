@@ -211,3 +211,6 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
     Rivien ensimmäinen synkronointi on nyt valmis.
 
 8. Ota muutosten seuranta taas käyttöön Finance and Operations -sovelluksen **Asiakkaat V3** -taulussa.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

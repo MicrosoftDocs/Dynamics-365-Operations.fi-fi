@@ -43,3 +43,6 @@ Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään. Voit luod
 9. Valitse **Kirjaa**.
 10. Valitse **Kirjaa**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

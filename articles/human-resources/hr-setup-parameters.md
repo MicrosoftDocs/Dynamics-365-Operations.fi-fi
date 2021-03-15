@@ -50,3 +50,6 @@ Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja. **Yleinen
 
 > [!NOTE]
 > Tehtyjen työtuntien määrä ei voi ylittää 1 250 tuntia, ja työsuhteen pituus ei voi ylittää 12 kuukautta. Nämä enimmäisarvot ovat Yhdysvaltojen liittovaltion lainsäädännön mukaiset. Lopuksi, **Työntekijän itsepalvelu** -välilehden asetuksissa määritellään tiedot, jotka esimiehet voivat syöttää työntekijöidensä puolesta.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

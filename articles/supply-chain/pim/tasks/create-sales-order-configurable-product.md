@@ -52,3 +52,6 @@ Tämä menettely osoittaa, miten konfiguraatiomallia käytetään myyntitilaukse
 
 ## <a name="select-the-product-configuration"></a>Valitse tuotteen konfiguraatio.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Tässä menettelyssä kerrotaan, miten toistuva erätyö määritetään ja suor
 8. Valitse OK.
 9. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

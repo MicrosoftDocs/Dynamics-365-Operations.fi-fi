@@ -175,3 +175,6 @@ Lisäämäsi kieli on nyt käytettävissä. Voit määrittää sivuston käyttä
 [Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Tuotantotilaus voidaan luoda seuraavilla tavoilla:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

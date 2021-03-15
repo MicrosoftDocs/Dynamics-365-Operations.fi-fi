@@ -52,3 +52,6 @@ Tässä ohjeaiheessa kerrotaan, miten uuden vuokrasopimuksen luomisen yhteydess�
 14. Valitse **Luo työnkulku** -sivulla **Sulje**.
 14. Valitse uusi työnkulku ja valitse sitten **Versiot**. Varmista sitten, että työnkulku on aktiivinen, valitsemalla **Aktivoi**.
 15. Valitse **Sulje**. Uusi aktiivinen versio tulee näkyviin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

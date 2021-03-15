@@ -63,3 +63,6 @@ Oletetaan, että organisaatiosi haluaa rajoittaa tietojen käyttöä. Jos jostai
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Lisätietoja Power BI:n rivitason suojauksesta on kohdassa [Mallin tietoturvan hallinta Power BI:ssä](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

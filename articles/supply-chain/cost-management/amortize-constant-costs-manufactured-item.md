@@ -46,3 +46,6 @@ Valmistetun nimikkeen kuoletettujen vakiokustannusten laskettu summa sisältyy k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

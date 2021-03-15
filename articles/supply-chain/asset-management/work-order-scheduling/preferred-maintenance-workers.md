@@ -67,3 +67,6 @@ Voit myös määrittää *Vastaavat ylläpitotyöntekijät*, jotka voidaan valit
 
 Työtilausten ajoituksessa lasketaan eri pisteet, joiden perusteella määritetään, mitkä työn tekijät voivat suorittaa työtilaukseen liittyvät työt (nämä pisteet määritetään kohdassa **Resurssienhallinnan parametrit** > **Työtilausten ajoitus** -linkki). Jos vähintään kaksi ensisijaista huoltotyöntekijää tai vastaavaa huolto työntekijä saavat samat pisteet työtilauksen ajoituksessa, toinen työntekijä valitaan satunnaisesti. Muussa tapauksessa työtilauksen suorittaa aina työntekijä, jolla on korkein pistemäärä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

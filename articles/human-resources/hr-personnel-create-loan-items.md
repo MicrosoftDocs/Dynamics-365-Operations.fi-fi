@@ -59,3 +59,6 @@ Lainan kohteet ovat tietueita, joiden avulla voit seurata fyysisiä yrityksen ty
 14. Valitse OK.
 15. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -161,3 +161,6 @@ Redis-välimuistin yhteysmerkkijonon salauskoodi tallennetaan seuraavasti:
 > Aina kun yhteysmerkkijono päivitetään, myös salauskoodin arvo on päivitettävä.
 
 Pakolliset Azure-resurssit on nyt valmisteltu. Seuraavaksi [asennetaan IoT-analytiikkalisäosa Microsoft Dynamics Lifecycle Servicesiin (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

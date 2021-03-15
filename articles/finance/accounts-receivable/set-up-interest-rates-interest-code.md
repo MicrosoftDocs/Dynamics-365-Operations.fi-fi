@@ -130,3 +130,6 @@ Voit tarkastella eri versioita valitsemalla **Alkupäivämäärä**-valikkovaiht
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Projektin työtilaukset (Field Servicesta Supply Chain Managementiin): WorkOrderService
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

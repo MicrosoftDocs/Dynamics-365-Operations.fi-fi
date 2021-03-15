@@ -72,3 +72,6 @@ Jos olet määrittänyt syykoodin pakolliseksi, syykoodi on annettava seuraaviss
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Tässä aiheessa kerrotaan, kuinka tiedot ulkoisista järjestelmistä valmistell
 8. Määritä **Eräkäsittely**-asetuksen arvoksi **Kyllä**, jos haluat suorittaa konsolidoinnin erätyönä tiettynä aikana. Jos haluat suorittaa konsolidoinnin heti, valitse **OK**. 
 
 Konsolidoitaviksi määritetyt tytäryhtiöiden tapahtumat ja saldot lisätään konsolidointiyrityksen tileille.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

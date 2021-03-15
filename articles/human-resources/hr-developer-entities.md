@@ -183,3 +183,6 @@ Seuraavat Dataverse-taulut ovat käytössä Human Resources -yksiköiden peruste
 [Human Resourcesin virtuaalitaulut – usein kysytyt kysymykset](hr-admin-virtual-entity-faq.md)<br>
 [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiapäivitykset](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

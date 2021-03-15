@@ -65,3 +65,6 @@ Toiminto on niiden yritysten käytettävissä, joiden ensisijainen osoite on Tan
 16. Valitse Tallenna.
 17. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

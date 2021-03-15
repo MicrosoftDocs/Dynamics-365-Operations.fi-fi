@@ -48,3 +48,6 @@ Tätä ominaisuutta voi käyttää ottamalla **Esimiehen itsepalvelun mukautetut
 ## <a name="see-also"></a>Lisätietoja
 
 [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

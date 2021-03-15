@@ -115,3 +115,6 @@ Varmuusvaraston tarvetapahtuman täyttämisen priorisointi poistetaan, jos järj
 Pääsuunnittelun kattavuusvaiheen aikana varmuusvaraston täydennyksen priorisointia ei enää poisteta. Käytettävissä olevaa varastoa käytetään ennen muista kysyntätyyppejä. Viiveen laskennan aikana uusi logiikka lisätään käsittelemään viivästyneet myyntirivit, tuoterakennerivin tarpeet ja kaikki muut kysyntätyypit. Tällä tavoin selvitetään, voidaanko ne toimittaa ajallaan varmuusvarastoa käyttämällä. Jos järjestelmä havaitsee, että se voi minimoida viiveet varmuusvarastoa käyttämällä, myyntirivit tai tuoterakennerivit korvaavat sitten alkuperäisen kattavuuden varmuusvarastolla ja järjestelmä käynnistää sen sijaan varmuusvaraston täydennyksen.
 
 Jos suunnitelmalle tai nimikkeelle ei ole määritetty viivästyksen laskentaa, varmuusvarastorajoituksella on sama prioriteetti kuin muilla kysyntätyypeillä. Tämä tarkoittaa, että käytössä on käytettävissä olevan varaston ja muun varastosaatavuuden varaus ennen muita kysyntätyyppejä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

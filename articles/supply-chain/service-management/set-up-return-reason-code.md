@@ -62,3 +62,6 @@ Tämän toiminnon avulla voit määrittää palautusten syykoodit, joiden avulla
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

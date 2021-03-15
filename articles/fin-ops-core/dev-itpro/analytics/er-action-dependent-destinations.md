@@ -129,3 +129,6 @@ Annettu käyttäjän toimintokoodi tarkistetaan seuraavasti:
 [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset Application update 10.0.17 -päivitystä varten](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

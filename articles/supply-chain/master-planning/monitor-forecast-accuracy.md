@@ -49,3 +49,6 @@ Supply Chain Management laskee seuraavia ennusteen tarkkuuden tyyppejä:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

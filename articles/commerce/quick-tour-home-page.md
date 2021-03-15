@@ -72,3 +72,6 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 [Ostoskorin ja maksusivun yleiskatsaus](quick-tour-cart-checkout.md)
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

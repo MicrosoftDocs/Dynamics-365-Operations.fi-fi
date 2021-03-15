@@ -49,3 +49,6 @@ Sinä määrität säännön laajuuden käytännön sisällä. Esimerkiksi, jos 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

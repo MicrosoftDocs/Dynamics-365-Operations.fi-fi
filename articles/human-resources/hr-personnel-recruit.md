@@ -225,3 +225,6 @@ Tarvittaessa voit hylätä ehdokkaan työhönoton jälkeen. Ehdokas voi esimerki
 [Määritä Dataverse -virtuaalitaulukot](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Työvoimasi organisointi](hr-personnel-departments-jobs-positions.md)<br>
 [Työn komponenttien määrittäminen](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

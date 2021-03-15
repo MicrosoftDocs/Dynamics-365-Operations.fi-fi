@@ -72,3 +72,6 @@ Kun määritetty ER-muoto suoritetaan, liitettyä Word-mallia käytetään luoma
 
 - [Excel-malleja sisältävien ER-määritysten käyttäminen uudelleen Word-muotoisten raporttien luontiin](./tasks/er-design-configuration-word-2016-11.md)
 - [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

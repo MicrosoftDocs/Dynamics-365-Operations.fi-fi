@@ -69,3 +69,6 @@ Tässä menettelyssä esitellään kanavakohtaisen myyntihinnan kauppasopimusten
 38. Valitse **toimintoruudussa** Myynti.
 39. Valitse **Myyntihinta**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

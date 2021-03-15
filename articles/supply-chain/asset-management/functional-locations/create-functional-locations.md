@@ -131,3 +131,6 @@ Toiminnallinen sijainti ja siihen liittyvät alisijainnit voidaan poistaa, jos m
 
 >[!NOTE]
 >Jos et voi poistaa toiminnallista sijaintia, voit sen sijaan käsitellä poistoa määrittämällä tähän tarkoitukseen toimintosijainnin elinkaaritilan. Voit esimerkiksi määrittää "Hävikki"- tai "Poistettu"-vaiheen, joka ei saa olla aktiivinen vaihe, **Toiminnallisen sijainnin elinkaaren tilat** -lomakkeessa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

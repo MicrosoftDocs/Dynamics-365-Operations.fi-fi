@@ -53,3 +53,6 @@ Tuontiperittävän avulla on mahdollista varmistaa, että myyjä saa maksun, kun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Tuotteen C tuotantotilaus luodaan ja tuote A lisätään tuotantotilauksen tuote
     - **Tuote C:** 2
 
 Tämä toiminto varmistaa, että tuotantotilauksen tuoterakenteiden muutokset eivät vaikuta seuraaviin kustannuslaskelmiin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
