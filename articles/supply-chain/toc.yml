@@ -72,14 +72,16 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.18 (toukokuu 2021)
+                      href: get-started/whats-new-scm-10-0-18.md
                     - name: Supply Chain Management 10.0.17 (huhtikuu 2021)
                       href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (helmikuu 2021)
                       href: get-started/whats-new-scm-10-0-16.md
-                    - name: Supply Chain Management 10.0.15 (tammikuu 2021)
-                      href: get-started/whats-new-scm-10-0-15.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
+                    - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
                       href: get-started/removed-deprecated-features-scm-updates.md
                     - name: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
@@ -1349,6 +1351,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Arkiston varastotapahtumat
+              href: inventory/archive-inventory-transactions.md
             - name: Varaston näkyvyyden apuohjelma
               href: inventory/inventory-visibility.md
         - name: IoT-analyysi
@@ -2021,6 +2025,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Suunnitteluversiot ja suunnittelun tuoteluokat
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön
+              href: engineering-change-management/change-management-existing-products.md
             - name: Tuotteen elinkaaren tila ja tapahtumat
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: Suunnittelutuotteiden muutosten hallinta
@@ -2129,6 +2135,8 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
                           href: production-control/production-floor-execution-use.md
+                        - name: Tuotannon käyttöliittymän ohjaustyylit
+                          href: production-control/production-floor-execution-styles.md
                     - name: Laitteiden työnkortin määrittäminen
                       href: production-control/config-job-card-device.md
                     - name: Ilmoittaminen valmiiksi työkorttilaitteesta
@@ -2729,9 +2737,57 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: Nimikkeen kuljetusrajoitteiden määrittäminen
               href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Aiheutuneet kustannukset
+          items:
+            - name: Aiheutuneet kustannukset -moduulin yleiskuvaus
+              href: landed-cost/landed-cost-overview.md
+            - name: Aiheutuneet kustannukset kuljetuksenhallintaan verrattuna
+              href: landed-cost/landed-cost-vs-tms.md
+            - name: Aiheutuneet kustannukset -moduulin määrittäminen ja konfiguroiminen
+              items:
+                - name: Aiheutuneiden kustannusten parametrit
+                  href: landed-cost/landed-cost-parameters.md
+                - name: Aiheutuneiden kustannusten hankintaparametrit
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Matkatilan asetukset
+                  href: landed-cost/voyage-status-setup.md
+                - name: Kontin asetukset
+                  href: landed-cost/shipping-container-setup.md
+                - name: Toimitustietojen asetukset
+                  href: landed-cost/delivery-information-setup.md
+                - name: Moniosaisen matkan asetukset
+                  href: landed-cost/multi-leg-journey-setup.md
+                - name: Lähetystietojen asetukset
+                  href: landed-cost/shipping-information-setup.md
+                - name: Kustannuslaskennan parametriarvojen asetukset
+                  href: landed-cost/costing-parameters-setup.md
+                - name: Kirjanpidon oletuskuvaukset
+                  href: landed-cost/defult-descriptions.md
+            - name: Aiheutuneille kustannuksille lisätyt toimittajan asetukset
+              href: landed-cost/vendors-landed-cost-settings.md
+            - name: 'Matkojen, konttien ja folioiden käsittely'
+              items:
+                - name: Matkojen hallinta
+                  href: landed-cost/manage-voyages.md
+                - name: Konttien hallinta
+                  href: landed-cost/manage-shipping-containers.md
+                - name: Folioiden hallinta
+                  href: landed-cost/manage-folios.md
+            - name: Saapuvien matkojen ja konttimatkojen seuraaminen
+              href: landed-cost/inbound-tracking.md
+            - name: Aiheutuneiden kustannusten arviointi ja hallinta
+              href: landed-cost/estimate-manage-landed-costs.md
+            - name: Siirtokäsittely
+              href: landed-cost/in-transit-processing.md
+            - name: Yli-/alitapahtumien käsittely
+              href: landed-cost/over-under-transactions.md
+            - name: Aiheutuneiden kustannusten kyselyt
+              href: landed-cost/landed-cost-inquiries.md
+            - name: Aiheutuneiden kustannusten raportit
+              href: landed-cost/landed-cost-reports.md
         - name: Varastonhallinta
           items:
-            - name: Varastohallinnan yleiskatsaus
+            - name: Varastonhallinnan yleiskatsaus
               href: warehousing/warehouse-management-overview.md
             - name: Saapuvien varaston työvaiheet
               items:
@@ -2925,10 +2981,12 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: Nimikkeen konsolidointi – toimipaikan käyttöaste
                       href: warehousing/item-consolidation-location-utilization.md
-                    - name: Varastotyön vianmääritys
-                      href: warehousing/troubleshoot-warehouse-work.md
                     - name: Työn jako
                       href: warehousing/work-split.md
+                    - name: Materiaalin käsittelylaitteiden rajapinta (MHAX)
+                      href: warehousing/mhax.md
+                    - name: Varastotyön vianmääritys
+                      href: warehousing/troubleshoot-warehouse-work.md
             - name: Varaston asetukset
               items:
                 - name: Varaston konfigurointi
@@ -2987,6 +3045,8 @@
                   items:
                     - name: Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
                       href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Mobiililaitteen käyttäjäasetukset
+                      href: warehousing/mobile-device-user-settings.md
                     - name: Varastosovelluksen asentaminen ja yhdistäminen
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Viivakoodien lukeminen kameran avulla varastosovelluksessa

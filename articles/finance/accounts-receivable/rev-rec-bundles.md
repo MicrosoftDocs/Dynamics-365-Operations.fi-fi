@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: cf4d03c1a697259899c419ce084b35f4eddf13fe
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 857078e0b97bd136f5236c999a939d3fd263c39f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142296"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238373"
 ---
 # <a name="revenue-recognition-bundles"></a>Tuottokirjauksen myyntirakenteet
 
@@ -29,7 +29,7 @@ ms.locfileid: "5142296"
 Tässä ohjeaiheessa kuvataan myyntireskontran tuottokirjausominaisuuteen sisältyviä myyntirakennetoimintoja. Myyntirakenne koostuu päänimikkeestä ja useasta komponenttinimikkeestä. Päänimike lisätään myyntitilaukseen, mikä tehostaa tilaustenkäsittelyä. Sen jälkeen se kuitenkin hajotetaan komponenttinimikkeiksi. Komponenttinimikkeet ovat lueteltuina sisäisissä asiakirjoissa, kuten pakkausluettelossa. Ulkoisissa asiakirjoissa näkyy kuitenkin vain päänimike.
 
 > [!NOTE]
-> Microsoftin Dynamics 365 Commerce -kanavat, kuten online-kanava, myyntipiste (POS) ja puhelinkeskukset, eivät tue tuottokirjausta (eivätkä sen myyntirakennetoimintoja). Tämä koskee myös Dynamics 365 Supply Chain Managementin ja Dynamics 365 Salesin Prospektista käteiseksi ‑ratkaisua. Nimikkeitä, jotka on määritetty käyttämään tuottokirjausta, ei tulisi lisätä tilauksiin tai tapahtumiin, jotka on luotu Commerce-kanavissa tai Prospektista käteiseksi ‑ratkaisussa.
+> Microsoft Dynamics 365 Commerce -kanavat, kuten online-kanava, myyntipiste (POS) ja puhelinkeskukset, eivät tue tuottokirjausta (eivätkä sen myyntirakennetoimintoja). Tämä koskee myös Dynamics 365 Supply Chain Managementin ja Dynamics 365 Salesin Prospektista käteiseksi ‑ratkaisua. Nimikkeitä, jotka on määritetty käyttämään tuottokirjausta, ei tulisi lisätä tilauksiin tai tapahtumiin, jotka on luotu Commerce-kanavissa tai Prospektista käteiseksi ‑ratkaisussa.
 
 Jotta voit määrittää myyntirakenteita, sinun on syötettävä tuottokirjauksen määritysavaimet. Voit kuitenkin käyttää myyntirakenteita, vaikka tuottokirjausta ei olisi määritetty. Samoin voit käyttää tuottokirjausta, vaikka myyntirakenteita ei olisi määritetty. Jos tuottokirjaus on määritetty, komponenttinimikkeet määrittävät tuottohinnan ja tuottoaikataulun, joita käytetään tuottojen kirjaamiseen tai lykkäykseen, kun myyntitilaus laskutetaan.
 
