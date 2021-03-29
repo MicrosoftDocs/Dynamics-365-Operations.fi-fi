@@ -14,6 +14,8 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
+                - name: Platform update -päivitykset 10.0.18 (toukokuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platform update -päivitykset 10.0.17 (huhtikuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platform update -päivitykset 10.0.16 (helmikuu 2021)
@@ -22,6 +24,8 @@
                   href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
+                - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
+                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
@@ -38,9 +42,11 @@
               href: business-events/app-business-events.md
             - name: Työnkulun liiketoimintatapahtumat
               href: business-events/business-events-workflow.md
+            - name: Liiketoimintatapahtumien eräkäsittely
+              href: business-events/system-business-events.md
             - name: Hälytykset liiketoimintatapahtumina
               href: business-events/alerts-business-events.md
-            - name: Liiketoimintatapahtumat Microsoft Flowssa
+            - name: Liiketoimintatapahtumat Microsoft Flow'ssa
               href: business-events/business-events-flow.md
             - name: Liiketoimintatapahtumien kehitysdokumentaatio
               href: business-events/business-events-dev-doc.md
@@ -216,10 +222,14 @@
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: Sisäiset resurssit huoltoa varten
                               href: data-entities/dual-write/in-house-assets.md
-                            - name: 'Integroitu työntekijä, työ ja sijainti'
-                              href: data-entities/dual-write/integrated-hr.md
                             - name: Varaston käytettävyys
                               href: data-entities/dual-write/inventory-availability.md
+                            - name: 'Integroitu työntekijä, työ ja sijainti'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Huomautusten integrointi
+                              href: data-entities/dual-write/notes-integration.md
+                            - name: Määritysviite
+                              href: data-entities/dual-write/mapping-reference.md
                         - name: Kaksoiskirjoituksen tuki
                           items:
                             - name: Tuki Field Service- ja Project Service Automation -ratkaisuille
@@ -642,6 +652,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Lifecycle Services (LCS) -yhteyden luominen Azure Pipelinesiin
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Isännöidyn Azure Pipelinen päivittäminen uusia NuGet-paketteja varten
+                  href: dev-tools/pipeline-nuget-split.md
                 - name: Vanhan pipelinen päivittäminen Azure Pipelines -ratkaisussa
                   href: dev-tools/pipeline-msbuild-update.md
             - name: Kuljetuskaluston hallinnan esimerkkisovellus
@@ -1100,11 +1112,9 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Valvonta ja diagnostiikka
               href: lifecycle-services/monitoring-diagnostics.md
-            - name: Vaikutusanalyysiraportti
-              href: lifecycle-services/impact-analysis-report.md
             - name: Ympäristöpalvelujen käynnistäminen uudelleen
               href: lifecycle-services/restart-environment-services.md
-            - name: Tuotantokatkoksesta ilmoittaminen
+            - name: Raportoi tuotantokatkos
               href: lifecycle-services/report-production-outage.md
             - name: Käyttäjien sisäänkirjautumisten seuraaminen
               href: lifecycle-services/user-logins.md
@@ -1448,6 +1458,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: 'Vie B2B-käyttäjät Azure AD:hen'
               href: sysadmin/implement-b2b.md
+            - name: Tietojen ylläpito
+              href: sysadmin/DataMaintenancePortal.md
             - name: Suojaus
               items:
                 - name: Rooliperustainen suojaus

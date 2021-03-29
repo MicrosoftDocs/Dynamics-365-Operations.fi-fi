@@ -72,7 +72,9 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.17 (maaliskuu 2021)
+                    - name: Finance 10.0.18 (toukokuu 2021)
+                      href: get-started/whats-new-changed-10-0-18.md
+                    - name: Finance 10.0.17 (huhtikuu 2021)
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (helmikuu 2021)
                       href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
                       href: get-started/whats-new-changed-10-0-15.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
+                - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
@@ -474,6 +478,8 @@
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
             - name: Käsittele maksukehotuksia
               href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Käsittele maksukehotuksia – esimerkki
+              href: accounts-receivable/process-collection-letters-example.md
             - name: Määritä ja luo myyntireskontran erääntymistiedot
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Myyntireskontran erääntymisraportti
@@ -486,6 +492,8 @@
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: Asiakirjojen ja tositteiden numeroiminen aikajärjestyksessä
               href: accounts-receivable/chrono-numbers.md
+            - name: Arkistoi tulostetut myyntilaskut hajautusarvonumeroilla
+              href: accounts-receivable/archive-printed-invoices.md
         - name: Budjetointi
           items:
             - name: Budjetoinnin aloitussivu
@@ -1318,6 +1326,8 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: Useiden julkisen sektorin kertatoimittajien ja -laskujen tuonti ja luonti
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Laskujen kirjanpidollisen jaon muokkaamisen rajoittaminen
+                  href: public-sector/restrict-edit-accounting-distributions.md
                 - name: Julkisen sektorin kertatoimittajien suunnittelu
                   href: public-sector/plan-one-time-vendors-public-sector.md
                 - name: Julkisen sektorin ostosopimusten käyttöoikeuksien hallinta
@@ -1428,8 +1438,8 @@
                       href: localizations/e-invoicing-get-started.md
                     - name: Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Asiakkaiden sähköiset laskut Egyptissä
-                      href: localizations/emea-egy-e-invoices.md
+                    - name: Egyptin sähköisen laskutuksen lisäosan käytön aloittaminen
+                      href: localizations/e-invoicing-eg-get-started.md
                     - name: Italian sähköisen laskutuksen lisäosan käytön aloittaminen
                       href: localizations/e-invoicing-ita-get-started.md
                     - name: Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
@@ -1580,6 +1590,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Veroviranomaisen NF-e-parametrien määrittäminen
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: 'NT2020.006 – Välittäjän myynnin digitaalinen alusta NF-e:lle'
+                      href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 - Veroetujen ja -vapautusten säännöt - NF-e/NFC-e
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
@@ -1784,6 +1796,8 @@
                   href: localizations/emea-egy-reg-numbers.md
                 - name: Egyptin laskuasettelun määrittäminen
                   href: localizations/emea-egy-invoice-layout.md
+                - name: Asiakkaiden sähköiset laskut Egyptissä
+                  href: localizations/emea-egy-e-invoices.md
             - name: Viro
               items:
                 - name: Viro – yleiskatsaus
@@ -2008,12 +2022,14 @@
                   items:
                     - name: Saksalainen tarkistustiedosto – yleiskatsaus
                       href: localizations/emea-deu-gdpdu-audit-data-export.md
-                    - name: Tarkistustiedoston määrityksien mukauttaminen
-                      href: localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Luo tarkistustiedosto
-                      href: localizations/tasks/german-audit-file.md
                     - name: Tuo tarkistustiedoston määritykset
                       href: localizations/tasks/import-german-audit-file-configuration.md
+                    - name: Luo tarkistustiedosto
+                      href: localizations/tasks/german-audit-file.md
+                    - name: Tarkistustiedoston määrityksien mukauttaminen
+                      href: localizations/tasks/customize-german-audit-file-configuration.md
+                    - name: Suodattimien lisääminen tarkistustiedoston määritykseen
+                      href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Toisen vuoden lisähankintojen poistojen oikaisut
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: ALV-ilmoituksen antaminen sähköisesti (ELSTER)
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Mustan listan raportti
                   href: localizations/emea-ita-black-list-report.md
-                - name: Ennakonpidätyspäivämäärä
+                - name: Ennakonpidätyspäivämäärä ja verokirjauskansio
                   href: localizations/emea-ita-competence-date.md
                 - name: Käyttöomaisuuden poisto
                   href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3253,7 +3269,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Taloudellinen suorituskyky
                   href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: Taloushallinnon tiedot
+                - name: Talousanalyysi
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: Käyttöomaisuuden hallinta
                   href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3493,12 +3509,18 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
                         - name: ValueInLarge
@@ -3675,6 +3697,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
                     - name: Raporttien luominen Word-muodossa käyttämällä ER-konfiguraatioita uudelleen Excel-mallien avulla
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Word-sisällön ohjausobjektien estäminen luoduissa raporteissa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguraatioiden suunnitteleminen PDF-mallien täyttämiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Kuvien ja muotojen upottaminen
@@ -3759,6 +3783,8 @@
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: 'Jaa kokoonpanot GR:ssä'
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Pika-aloitusoppaat
               items:
                 - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
