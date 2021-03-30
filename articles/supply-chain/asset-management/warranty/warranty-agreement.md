@@ -17,40 +17,43 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7080af2059c9c9bcdd11ca0ee9c5e339cef69302
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 35b5c89751d17687bd7e306094a1e4e5e144a8dc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021501"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245344"
 ---
-# <a name="warranty-agreements"></a><span data-ttu-id="2c20d-103">Takuusopimukset</span><span class="sxs-lookup"><span data-stu-id="2c20d-103">Warranty agreements</span></span>
+# <a name="warranty-agreements"></a><span data-ttu-id="4a9c5-103">Takuusopimukset</span><span class="sxs-lookup"><span data-stu-id="4a9c5-103">Warranty agreements</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
 
-<span data-ttu-id="2c20d-104">Käyttöomaisuuden hallinnassa voit määrittää takuuehdot, jotka voidaan liittää käyttöomaisuuserään tai käyttöomaisuuslajiin.</span><span class="sxs-lookup"><span data-stu-id="2c20d-104">In Asset Management, you can set up warranty terms that can be connected to an asset or an asset type.</span></span> <span data-ttu-id="2c20d-105">Takuuehdot luodaan tietylle kaudelle.</span><span class="sxs-lookup"><span data-stu-id="2c20d-105">Warranty terms are created for a specific period.</span></span> <span data-ttu-id="2c20d-106">Takuun voi määrittää siten, että se sisältää täyden kattavuuden tai osittaisen kattavuuden, ja voit määrittää ehdot, jotka liittyvät tunteihin, kuluihin ja nimikkeisiin.</span><span class="sxs-lookup"><span data-stu-id="2c20d-106">Warranty can be set up to provide full coverage or partial coverage, and you can set up terms that are related to hours, expenses, and items.</span></span>
+<span data-ttu-id="4a9c5-104">Käyttöomaisuuden hallinnassa voit määrittää takuuehdot, jotka voidaan liittää käyttöomaisuuserään tai käyttöomaisuuslajiin.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-104">In Asset Management, you can set up warranty terms that can be connected to an asset or an asset type.</span></span> <span data-ttu-id="4a9c5-105">Takuuehdot luodaan tietylle kaudelle.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-105">Warranty terms are created for a specific period.</span></span> <span data-ttu-id="4a9c5-106">Takuun voi määrittää siten, että se sisältää täyden kattavuuden tai osittaisen kattavuuden, ja voit määrittää ehdot, jotka liittyvät tunteihin, kuluihin ja nimikkeisiin.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-106">Warranty can be set up to provide full coverage or partial coverage, and you can set up terms that are related to hours, expenses, and items.</span></span>
 
-<span data-ttu-id="2c20d-107">Ensimmäiseksi on luotava mahdolliset toimittajien takuusopimukset, jotka on tehty laitteillesi.</span><span class="sxs-lookup"><span data-stu-id="2c20d-107">The first step is to create any vendor warranty agreements that you have for your equipment.</span></span> <span data-ttu-id="2c20d-108">Tämän jälkeen voit liittää takuusopimukset käyttöomaisuuseriin tai omaisuustyyppeihin.</span><span class="sxs-lookup"><span data-stu-id="2c20d-108">You then attach warranty agreements to assets or asset types.</span></span> <span data-ttu-id="2c20d-109">Toimittajien takuusopimuksia käytetään vain tiedotustarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="2c20d-109">Vendor warranty agreements are used only for informational purposes.</span></span> <span data-ttu-id="2c20d-110">Jos toimittajan takuu on määritetty käyttöomaisuuserään, voit nähdä käyttöomaisuuserän takuun kattavuuskauden.</span><span class="sxs-lookup"><span data-stu-id="2c20d-110">If vendor warranty is set up on an asset, you can see the warranty coverage period on the asset.</span></span>
+<span data-ttu-id="4a9c5-107">Ensimmäiseksi on luotava mahdolliset toimittajien takuusopimukset, jotka on tehty laitteillesi.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-107">The first step is to create any vendor warranty agreements that you have for your equipment.</span></span> <span data-ttu-id="4a9c5-108">Tämän jälkeen voit liittää takuusopimukset käyttöomaisuuseriin tai omaisuustyyppeihin.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-108">You then attach warranty agreements to assets or asset types.</span></span> <span data-ttu-id="4a9c5-109">Toimittajien takuusopimuksia käytetään vain tiedotustarkoituksiin.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-109">Vendor warranty agreements are used only for informational purposes.</span></span> <span data-ttu-id="4a9c5-110">Jos toimittajan takuu on määritetty käyttöomaisuuserään, voit nähdä käyttöomaisuuserän takuun kattavuuskauden.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-110">If vendor warranty is set up on an asset, you can see the warranty coverage period on the asset.</span></span>
 
-## <a name="create-a-warranty-agreement"></a><span data-ttu-id="2c20d-111">Luo takuusopimus</span><span class="sxs-lookup"><span data-stu-id="2c20d-111">Create a warranty agreement</span></span>
+## <a name="create-a-warranty-agreement"></a><span data-ttu-id="4a9c5-111">Luo takuusopimus</span><span class="sxs-lookup"><span data-stu-id="4a9c5-111">Create a warranty agreement</span></span>
 
-<span data-ttu-id="2c20d-112">Takuusopimukseen voi kuulua useita sopimusrivejä, jotka kattavat työajan, kulujen ja nimikkeiden takuun.</span><span class="sxs-lookup"><span data-stu-id="2c20d-112">A warranty agreement can include several agreement lines to cover the warranty for work hours, expenses, and items.</span></span>
+<span data-ttu-id="4a9c5-112">Takuusopimukseen voi kuulua useita sopimusrivejä, jotka kattavat työajan, kulujen ja nimikkeiden takuun.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-112">A warranty agreement can include several agreement lines to cover the warranty for work hours, expenses, and items.</span></span>
 
-1. <span data-ttu-id="2c20d-113">Valitse **Resurssien hallinta** \> **Asetukset** \> **Resurssit** \> **Takuu**.</span><span class="sxs-lookup"><span data-stu-id="2c20d-113">Select **Asset management** \> **Setup** \> **Assets** \> **Warranty**.</span></span>
-2. <span data-ttu-id="2c20d-114">Luo tuote valitsemalla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="2c20d-114">Select **New** to create a product.</span></span>
-3. <span data-ttu-id="2c20d-115">Syötä **Takuu** -kenttään takuun tunnus.</span><span class="sxs-lookup"><span data-stu-id="2c20d-115">In the **Warranty** field, enter a warranty ID.</span></span> 
-4. <span data-ttu-id="2c20d-116">Anna kuvaus **nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2c20d-116">In the **Name** field, enter a description.</span></span>
+1. <span data-ttu-id="4a9c5-113">Valitse **Resurssien hallinta** \> **Asetukset** \> **Resurssit** \> **Takuu**.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-113">Select **Asset management** \> **Setup** \> **Assets** \> **Warranty**.</span></span>
+2. <span data-ttu-id="4a9c5-114">Luo tuote valitsemalla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-114">Select **New** to create a product.</span></span>
+3. <span data-ttu-id="4a9c5-115">Syötä **Takuu** -kenttään takuun tunnus.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-115">In the **Warranty** field, enter a warranty ID.</span></span> 
+4. <span data-ttu-id="4a9c5-116">Anna kuvaus **nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-116">In the **Name** field, enter a description.</span></span>
 
-    <span data-ttu-id="2c20d-117">**Tiedot**-pikavälilehden **Resurssit**-kentässä näkyy takuusopimusta käyttävien aktiivisten resurssien määrä.</span><span class="sxs-lookup"><span data-stu-id="2c20d-117">On the **Details** FastTab, the **Assets** field shows the number of active assets that use the warranty agreement.</span></span>
+    <span data-ttu-id="4a9c5-117">**Tiedot**-pikavälilehden **Resurssit**-kentässä näkyy takuusopimusta käyttävien aktiivisten resurssien määrä.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-117">On the **Details** FastTab, the **Assets** field shows the number of active assets that use the warranty agreement.</span></span>
 
-5. <span data-ttu-id="2c20d-118">Lisää takuusopimukseen sisällytettävät rivit **Takuurivit**-pikavälilehdessä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="2c20d-118">On the **Warranty lines** FastTab, follow these steps to add lines that should be included in a warranty agreement:</span></span>
+5. <span data-ttu-id="4a9c5-118">Lisää takuusopimukseen sisällytettävät rivit **Takuurivit**-pikavälilehdessä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="4a9c5-118">On the **Warranty lines** FastTab, follow these steps to add lines that should be included in a warranty agreement:</span></span>
 
-    1. <span data-ttu-id="2c20d-119">Voit lisätä uuden ehdon takuuseen valitsemalla **Lisää rivi**.</span><span class="sxs-lookup"><span data-stu-id="2c20d-119">Select **Add line** to add a new condition to the warranty.</span></span> <span data-ttu-id="2c20d-120">**Rivi**-kenttään syötetään automaattisesti rivin järjestysnumero.</span><span class="sxs-lookup"><span data-stu-id="2c20d-120">A sequential line number is automatically entered in the **Line** field.</span></span>
-    2. <span data-ttu-id="2c20d-121">Valitse **Kausi**-kentässä takuukauden tyyppi.</span><span class="sxs-lookup"><span data-stu-id="2c20d-121">In the **Period** field, select the type of warranty period.</span></span>
-    3. <span data-ttu-id="2c20d-122">Syötä numero **Väli**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2c20d-122">In the **Interval** field, enter a number.</span></span> <span data-ttu-id="2c20d-123">Tämä kenttä määrittää niiden kausien määrän, joiden takuun tulisi olla voimassa.</span><span class="sxs-lookup"><span data-stu-id="2c20d-123">This field defines the number of periods that the warranty should be valid for.</span></span>
-    4. <span data-ttu-id="2c20d-124">Kirjoita takuurivin kattavuusprosentti **Prosentti**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2c20d-124">In the **Percent** field, enter the coverage percentage for the warranty line.</span></span> <span data-ttu-id="2c20d-125">Prosenttiosuus ilmaisee, kuinka paljon yrityksesi kattaa takuuta.</span><span class="sxs-lookup"><span data-stu-id="2c20d-125">The percentage indicates how much is covered by your company.</span></span>
+    1. <span data-ttu-id="4a9c5-119">Voit lisätä uuden ehdon takuuseen valitsemalla **Lisää rivi**.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-119">Select **Add line** to add a new condition to the warranty.</span></span> <span data-ttu-id="4a9c5-120">**Rivi**-kenttään syötetään automaattisesti rivin järjestysnumero.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-120">A sequential line number is automatically entered in the **Line** field.</span></span>
+    2. <span data-ttu-id="4a9c5-121">Valitse **Kausi**-kentässä takuukauden tyyppi.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-121">In the **Period** field, select the type of warranty period.</span></span>
+    3. <span data-ttu-id="4a9c5-122">Syötä numero **Väli**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-122">In the **Interval** field, enter a number.</span></span> <span data-ttu-id="4a9c5-123">Tämä kenttä määrittää niiden kausien määrän, joiden takuun tulisi olla voimassa.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-123">This field defines the number of periods that the warranty should be valid for.</span></span>
+    4. <span data-ttu-id="4a9c5-124">Kirjoita takuurivin kattavuusprosentti **Prosentti**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-124">In the **Percent** field, enter the coverage percentage for the warranty line.</span></span> <span data-ttu-id="4a9c5-125">Prosenttiosuus ilmaisee, kuinka paljon yrityksesi kattaa takuuta.</span><span class="sxs-lookup"><span data-stu-id="4a9c5-125">The percentage indicates how much is covered by your company.</span></span>
 
 ![Takuusivu](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
