@@ -15,24 +15,27 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5157b782c64f3cc75f9842b36e3ded710126eb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 49f221736c1efd8314e6a137de5f0778386499da
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983192"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220773"
 ---
-# <a name="release-a-productproduct-master-to-legal-entities"></a><span data-ttu-id="de8ca-103">Vapauta tuote/päätuote yrityksille</span><span class="sxs-lookup"><span data-stu-id="de8ca-103">Release a product/product master to legal entities</span></span>
+# <a name="release-a-productproduct-master-to-legal-entities"></a><span data-ttu-id="6004f-103">Vapauta tuote/päätuote yrityksille</span><span class="sxs-lookup"><span data-stu-id="6004f-103">Release a product/product master to legal entities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="de8ca-104">Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yritykseen tai useaan yritykseen.</span><span class="sxs-lookup"><span data-stu-id="de8ca-104">This procedure walks through how to release a product or product master into one or more legal entities.</span></span> <span data-ttu-id="de8ca-105">Tämän tehtävän luomisessa käytetään esittely-tietojen yritystä USRT. Tehtävä on tarkoitettu myynninedistämispäällikölle ja tuotesuunnittelijalle.</span><span class="sxs-lookup"><span data-stu-id="de8ca-105">The demo data company used to create this task is USRT, and the task is intended for the Merchandising Manager and Product Designer.</span></span>
+<span data-ttu-id="6004f-104">Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yritykseen tai useaan yritykseen.</span><span class="sxs-lookup"><span data-stu-id="6004f-104">This procedure walks through how to release a product or product master into one or more legal entities.</span></span> <span data-ttu-id="6004f-105">Tämän tehtävän luomisessa käytetään esittely-tietojen yritystä USRT. Tehtävä on tarkoitettu myynninedistämispäällikölle ja tuotesuunnittelijalle.</span><span class="sxs-lookup"><span data-stu-id="6004f-105">The demo data company used to create this task is USRT, and the task is intended for the Merchandising Manager and Product Designer.</span></span>
 
-1. <span data-ttu-id="de8ca-106">Valitse Retail ja Commerce > ..</span><span class="sxs-lookup"><span data-stu-id="de8ca-106">Go to Retail and Commerce > ..</span></span> <span data-ttu-id="de8ca-107">> Tuotteet luokittain.</span><span class="sxs-lookup"><span data-stu-id="de8ca-107">> Products by category.</span></span>
-2. <span data-ttu-id="de8ca-108">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="de8ca-108">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="de8ca-109">Valitse Vapautettu tuotteet.</span><span class="sxs-lookup"><span data-stu-id="de8ca-109">Click Release products.</span></span>
-4. <span data-ttu-id="de8ca-110">Valitse Seuraava.</span><span class="sxs-lookup"><span data-stu-id="de8ca-110">Click Next.</span></span>
-5. <span data-ttu-id="de8ca-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="de8ca-111">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="de8ca-112">Valitse Seuraava.</span><span class="sxs-lookup"><span data-stu-id="de8ca-112">Click Next.</span></span>
-7. <span data-ttu-id="de8ca-113">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="de8ca-113">Click Finish.</span></span>
+1. <span data-ttu-id="6004f-106">Valitse Retail ja Commerce > ..</span><span class="sxs-lookup"><span data-stu-id="6004f-106">Go to Retail and Commerce > ..</span></span> <span data-ttu-id="6004f-107">> Tuotteet luokittain.</span><span class="sxs-lookup"><span data-stu-id="6004f-107">> Products by category.</span></span>
+2. <span data-ttu-id="6004f-108">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="6004f-108">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="6004f-109">Valitse Vapautettu tuotteet.</span><span class="sxs-lookup"><span data-stu-id="6004f-109">Click Release products.</span></span>
+4. <span data-ttu-id="6004f-110">Valitse Seuraava.</span><span class="sxs-lookup"><span data-stu-id="6004f-110">Click Next.</span></span>
+5. <span data-ttu-id="6004f-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="6004f-111">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="6004f-112">Valitse Seuraava.</span><span class="sxs-lookup"><span data-stu-id="6004f-112">Click Next.</span></span>
+7. <span data-ttu-id="6004f-113">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="6004f-113">Click Finish.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
