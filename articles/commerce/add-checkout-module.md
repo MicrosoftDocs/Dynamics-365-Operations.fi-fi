@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb32b014ac35e33db28d3dee03b01dfa43f5d6a5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5e800daa6eeb54a2eda535cb57aa45559b59b4ea
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980503"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206460"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Kassamoduuli on erityinen säilö, joka isännöi kaikkia sellaisia moduuleja, jotka tarvitaan tilauksen luomista varten. Se sisältää vaiheittaisen työnkulun, jota käyttämällä asiakas syöttää kaikki tarvittavat tiedot ostoa varten. Se taltioi toimitusosoitteen, toimitustavan ja laskutustiedot. Siinä on myös tilauksen yhteenveto ja muita asiakkaan tilaukseen liittyviä tietoja.
 

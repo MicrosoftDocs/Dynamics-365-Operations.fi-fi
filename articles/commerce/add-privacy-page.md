@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0a9e09a1d0dbd6c0dc94b5668bb29de6605e2ca9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 07a806ac040df9dee284e2466629221fbc3403a4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980204"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209272"
 ---
 # <a name="add-a-privacy-policy-page"></a>Lisää tietosuojakäytäntösivu
 
@@ -30,7 +30,7 @@ ms.locfileid: "4980204"
 
 Tässä ohjeaiheessa kerrotaan, miten tietosuojakäytäntösivu lisätään sivustollesi Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Tietosuojan noudattaminen sisältää organisatorisia toimenpiteitä, jotka ilmoittavat sivuston käyttäjille, miten heidän tietojaan kerätään ja käsitellään. Käyttäjät voivat sitten päättää, miten he haluavat henkilötietojaan käsiteltävän, ja ryhtyä asianmukaisiin toimiin.
 

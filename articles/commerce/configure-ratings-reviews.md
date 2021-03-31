@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fcdf571378c25d71b3ef4f3baad062a25390417
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 130c80c1d68c7fb207a4fa073fe2b0476cbdd409
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993547"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220531"
 ---
 # <a name="configure-ratings-and-reviews"></a>Määritä luokitukset ja arvostelut
 
@@ -29,7 +29,7 @@ ms.locfileid: "4993547"
 
 Tässä ohjeaiheessa kerrotaan, miten sähköisen kaupankäynnin sivusto määritetään niin, että se näyttää asiakasluokituksia ja -arvostelut Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakkaita saamaan tietoja tuotteista ennen ostopäätöksen tekemistä. NIiden avulla saadaan selville, mitä muut asiakkaat ajattelevat kyseisistä tuotteista. Sähköisen kaupankäynnin sivustoissa luokitukset ja arvostelut ovat myös keino, jolla kerätään asiakaspalautetta tuotteista. 
 

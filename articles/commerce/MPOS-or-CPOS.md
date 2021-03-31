@@ -1,6 +1,6 @@
 ---
 title: Modern POS:n (MPOS) tai Cloud POS:n valitseminen
-description: Tässä ohjeaiheessa kerrotaan Modern POS:n ja Cloud POS:n tärkeimmät erot. Ohjeaiheessa kerrotaan myös eri tekijöistä, jotka Dynamics 365 Commercein käyttöönottavien jälleenmyyjien tulee ottaa huomioon, kun he määrittävät vaatimuksiaan.
+description: Tässä ohjeaiheessa kerrotaan Modern POS:n ja Cloud POS:n tärkeimmät erot. Ohjeaiheessa kerrotaan myös eri tekijöistä, jotka Dynamics 365 Commercen käyttöönottavien jälleenmyyjien tulee ottaa huomioon, kun he määrittävät vaatimuksiaan.
 author: jblucher
 manager: AnnBe
 ms.date: 10/13/2017
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d636e80ba853191516b970ff3f1dece02ee771ac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970100"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206868"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS) tai Cloud POS:n valitseminen
 
 [!include [banner](includes/banner.md)]
 
-Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Dynamics 365 Commercein käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
+Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Dynamics 365 Commercen käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
 
 ## <a name="insights"></a>Tietoja
 

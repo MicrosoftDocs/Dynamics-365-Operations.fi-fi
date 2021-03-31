@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9d8945348cbe3255ecc497f129d125ad11e9ceab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d0e5fa731d4b808cda9863074d17d1917410f399
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000846"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213671"
 ---
-# <a name="delivery-options-module"></a>Toimitusvaihtoehdot -moduuli
+# <a name="delivery-options-module"></a>Toimitusvaihtoehtomoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja toimitusvaihtoehtomoduuleista ja niiden määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
-
-## <a name="overview"></a>Yhteenveto
 
 Toimitusasetukset-moduulien avulla asiakkaat valitsevat toimitustavan, kuten lähetys tai nouto verkossa tehdylle tilaukselleen. Toimitusosoite on pakollinen, jotta lähetystapa voidaan määrittää. Jos toimitusosoite muuttuu, toimitusvaihtoehdot on noudettava uudelleen. Jos tilauksessa on vain myymälästä noudettavia nimikkeitä, tämä moduuli piilotetaan automaattisesti.
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d818ab91af7b1a74b580e145e4b602cca0ea1662
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980254"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208060"
 ---
 # <a name="ways-to-add-content"></a>Tapoja lisästä sisältöä
 
@@ -29,7 +29,7 @@ ms.locfileid: "4980254"
 
 Tässä ohjeaiheessa käsitellään yleisesti sisällönhallintaa käyttämällä Microsoft Dynamics 365 Commercen sivustonmuodostimen verkonmuokkaustyökaluja sekä annetaan linkkejä asiaan liittyvään ohjeistukseen.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Sivuston ulkoasua, ulkoasua ja sisältöä voi muuttaa monella tavalla. Tarvittavan mukautustason mukaan monien näiden muutosten toteuttaminen on mahdollista myös muille kuin kehittäjälle käyttämällä sivustonmuodostinta, joka on Dynamics 365 Commerceen sisältävä verkonmuokkaustyökalupaketti. Sivustonmuodostimessa voi muodostaa malleja, valita teemoja sekä valita ja määrittää moduuleja koodia kirjoittamatta. Sen sijaan kehitystaitoja vaaditaan uuden teeman tai moduulin luomisessa, koska sähköisen kaupankäynnin SDK:n ja Microsoft Dynamics Lifecycle Services (LCS) -palvelun kehitystyönkulkua on käytettävä.
 

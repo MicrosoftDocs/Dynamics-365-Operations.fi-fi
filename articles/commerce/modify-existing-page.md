@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 47a7d17b97631ba469a9b68f5f6cf492ebccde6f
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 6afd19a01520813e54871f4849aeb18f4424173c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097303"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223044"
 ---
 # <a name="modify-an-existing-site-page"></a>Aiemmin luodun sivuston sivun muokkaaminen
 
@@ -30,7 +30,7 @@ ms.locfileid: "5097303"
 
 Tässä ohjeaiheessa kerrotaan, miten olemassa olevaa sivua muokataan Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Sivun muokkauksen ensimmäinen vaihe on sivun avaaminen sivueditorissa. Siirry sivustoon, joka sisältää sivun. Etsi haluamasi sivu sivuluettelosta. Jos et löydä sivua, voit käyttää muokkaustyökalun monipuolisia hakutoimintoja. Kirjoita sivun tarkka nimi tai sen ensimmäiset kirjaimet ja sen jälkeen tähti (\*). Näkyviin tulee suodatettu luettelo sivuista. Tämän luettelon avulla voit etsiä haluamasi sivun. Kun olet löytänyt oikean sivun, avaa sivu sivueditorissa valitsemalla sivun nimi.
 

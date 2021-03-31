@@ -1,6 +1,6 @@
 ---
 title: Linkkipolkumoduuli
-description: Tässä ohjeaiheessa on tietoja linkkipolkumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+description: Tässä ohjeaiheessa on tietoja navigointipolkumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/20/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06f8ffdecd1f77468ed88043929f29b6957c2e6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986076"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206556"
 ---
-# <a name="breadcrumb-module"></a>Linkkipolkumoduuli
+# <a name="breadcrumb-module"></a>Navigointipolkumoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja linkkipolkumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskuvaus
+Tässä ohjeaiheessa on tietoja navigointipolkumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
 Linkkipolkua käytetään sivuston sivujen toissijaiseen navigointiin. Ne näkyvät yleensä sivun yläosassa otsikon alapuolella. Vaikka linkkipolkumoduulit voidaan lisätä mille tahansa sivulle, niitä käytetään useimmiten tuotetietosivuilla (PDP:t), jotka näyttävät tuoteluokkahierarkian ja tarjoavat nopean tavan liikkua sivustossa. Linkkipolkua käyttämällä voidaan myös näyttää takaisin tuloksiin -linkki, kun käyttäjät avaavat PDP:n haku- tai luettelosivulta. Tällä tavoin käyttäjät voivat palata nopeasti suodatettuun luettelosivuun ja jatkaa ostosten tekemistä.
 

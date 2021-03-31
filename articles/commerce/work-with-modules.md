@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 89d95814e892e3afcb6514ab0d0219f7b08b9c63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eddee09fa81c18bc464b7768921981e6b5159a3e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000456"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210896"
 ---
 # <a name="work-with-modules"></a>Moduulien käyttäminen
 
@@ -29,7 +29,7 @@ ms.locfileid: "5000456"
 
 Tässä ohjeaiheessa kuvataan, miten ja milloin moduuleja käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Moduulit ovat loogisia rakenneosia, jotka muodostavat sivurakenteen. Niillä on eri tarkoitukset ja käyttöalueet. Jotkin moduulit ovat korkean tason säilöjä, joiden ainoa tarkoitus on säilyttää ja järjestää muita moduuleja (alimoduuleja). Muilla moduuleilla, kuten yksinkertaisella kuvansijoittelumoduulilla, on tarkkaan määritetty tarkoitus. Muut moduulit, kuten karusellimoduuli, ovat näiden kahden luokan välissä.
 

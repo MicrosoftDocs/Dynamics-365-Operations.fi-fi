@@ -1,6 +1,6 @@
 ---
 title: Suositusten lisääminen tapahtumanäyttöön
-description: Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercein näytön asettelun suunnittelutoimintoa.
+description: Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercen näytön asettelun suunnittelutoimintoa.
 author: bebeale
 manager: AnnBe
 ms.date: 05/26/2020
@@ -18,19 +18,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2e1ef6506833b35e61351600553a3bc29c20d5b2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6085a69132a4687455282a908d613aa98d2e7a8d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980229"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209248"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Suositusten lisääminen tapahtumanäyttöön
 
 [!include [banner](includes/banner.md)]
 
 
-Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercein näytön asettelun suunnittelutoimintoa. Lisätietoja tuotesuositusominaisuuksista on [POS-dokumentaation tuotesuosituksissa](product.md).
+Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercen näytön asettelun suunnittelutoimintoa. Lisätietoja tuotesuositusominaisuuksista on [POS-dokumentaation tuotesuosituksissa](product.md).
 
 
 Voit näyttää tuotesuosituksia myyntipisteen laitteessa, kun käytät Commercea. Voit näyttää tuotteen suosituksi lisäämällä ohjausobjektin tapahtumanäytölle näytön asettelun suunnittelutoiminnon avulla. 

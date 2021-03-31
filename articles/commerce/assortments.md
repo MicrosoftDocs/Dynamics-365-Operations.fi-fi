@@ -1,6 +1,6 @@
 ---
 title: Toimintojen hallinta
-description: Tässä ohjeaiheessa selitetään Dynamics 365 Commercein valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
+description: Tässä ohjeaiheessa selitetään Dynamics 365 Commercen valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6a7a488b6684c23ceac9f35abf9e93e5c7261eb9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979995"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211495"
 ---
 # <a name="assortment-management"></a>Valikoiman hallinta
 
@@ -27,7 +27,7 @@ ms.locfileid: "4979995"
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Dynamics 365 Commerceissa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
+Dynamics 365 Commercessa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
 
 Commercessa valikoimaan yhdistetään vähintään yksi kanava (tai kanavaryhmä organisaatiohierarkioita käytettäessä) vähintään yhteen tuotteeseen (tai tuoteryhmiään luokkahierarkioita käytettäessä).
 

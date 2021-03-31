@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42c3cd99897627dbcdbdec91cfdb03d5743f7388
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8375c33bd6ffd3004cfc9d7b686d9a0edc77cdef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980179"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209224"
 ---
 # <a name="tab-module"></a>Välilehtimoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja välilehtimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Välilehtimoduulit ovat kontin kaltaisia moduuleja, joita käytetään välilehtien sivujen tietojen järjestämiseen. Niitä voidaan käyttää millä tahansa sivulla, jolla tiedot on esitettävä välilehdissä.
 

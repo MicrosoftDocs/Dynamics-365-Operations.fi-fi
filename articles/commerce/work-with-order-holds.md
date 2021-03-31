@@ -1,6 +1,6 @@
 ---
 title: Puhelinkeskuksen tilauspitojen määrittäminen ja käyttäminen
-description: Tässä ohjeaiheessa käsitellään tilausten pitojen käyttämistä Dynamics 365 Commercein avulla.
+description: Tässä ohjeaiheessa käsitellään tilausten pitojen käyttämistä Dynamics 365 Commercen avulla.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 55b794029ec765162ccfca1f39f3816c6772273d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cd7ad1bdb9d2421a4b5ad96755867d2a389464a6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000431"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210848"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Puhelinkeskustilauksen pidon määrittäminen ja käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään puhelinkeskuksen tilauksissa käytettäviä Dynamics 365 Commercein tilauksen pitotoimintoja.
+Tässä ohjeaiheessa käsitellään puhelinkeskuksen tilauksissa käytettäviä Dynamics 365 Commercen tilauksen pitotoimintoja.
 
 ## <a name="configuring-call-center-order-holds"></a>Puhelinkeskuksen tilauspitojen määrittäminen
 

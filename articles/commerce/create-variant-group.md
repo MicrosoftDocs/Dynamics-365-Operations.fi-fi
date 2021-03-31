@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e19d9a2549fa9957126592f3db7e468147997261
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4c34aca043f10fef38f186800c429cac36c41ce7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965148"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207844"
 ---
-# <a name="create-a-variant-group"></a>Varianttiryhmän luonti
+# <a name="create-a-variant-group"></a>Varianttiryhmän luominen
 
 
 [!include [banner](includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce tukee tuotteelle useita variantteja. Varianttiryhmien määrittäminen eri tuoteluokille on paras ratkaisu. Esimerkiksi t-paidoille voidaan luoda kokoryhmä, joka sisältää koot XS, S, M, L ja XL, tai väriryhmä, joka sisältää kaikki tuotteen saatavilla olevat värivaihtoehdot. Varianttiryhmät kannattaa lisätä ennen tuotteiden lisäämistä.
 

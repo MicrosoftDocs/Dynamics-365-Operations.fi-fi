@@ -1,6 +1,6 @@
 ---
 title: Viivakoodien määrittäminen
-description: Tässä artikkelissa käsitellään viivakoodien käyttöä Dynamics 365 Commerceissa.
+description: Tässä artikkelissa käsitellään viivakoodien käyttöä Dynamics 365 Commercessa.
 author: jblucher
 manager: AnnBe
 ms.date: 09/22/2020
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 86a29935974fbe30947c089d161f024428230b51
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: aab4b75414d8749bd0bb89c18cc0f97eca8ebc8a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969773"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207544"
 ---
 # <a name="set-up-bar-codes"></a>Viivakoodien määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään viivakoodien käyttöä Dynamics 365 Commerceissa.
+Tässä artikkelissa käsitellään viivakoodien käyttöä Dynamics 365 Commercessa.
 
 Voit käyttää viivakoodeja tuotteiden ostamisessa ja myynnissä, tuotevarianttien seurannassa sekä asiakkaiden ja työntekijöiden määrittämisessä. Voit lisäksi käyttää viivakoodeja kuponkien, lahjakorttien ja hyvityslaskujen antamiseen ja käyttöön. Tuotteet voi määrittää niin, että niillä on joko vakioviivakoodit tai itse kehitetyt viivakoodit. Tuotteilla voi olla useampi viivakoodi. Tuotteella voi esimerkiksi olla useita viivakoodeja, jos se on peräisin usealta valmistajalta tai jos sillä on kokoon, tyyliin tai väriin perustuvia variantteja. Viivakoodit voivat sisältää tuotteen painon tai hinnan. Viivakoodin muodot ovat malleja, joita käytetään viivakoodien luomiseen.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 297bd34f9bde23d5cc7de266b8e8f49b1a752662
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4212797d2959c4f8b0d60e6b45de76ffc3ee0dc2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993689"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216746"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Kanavan lisääminen organisaatiohierarkiaan
 
@@ -30,7 +30,7 @@ ms.locfileid: "4993689"
 
 Tässä ohjeaiheessa käsitellään kanavan lisäämistä organisaatiohierarkiaan Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Kanavat on liitettävä vähintään yhteen organisaatiohierarkiaan. Ennen kanavien luontia on varmistettava, että organisaatiohierarkiat on määritetty.  
 

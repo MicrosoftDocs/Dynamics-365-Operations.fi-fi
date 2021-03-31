@@ -1,6 +1,6 @@
 ---
 title: Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
-description: Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoftin Dynamics 365 Commercessa.
+description: Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3dcba743e6557b1bd366ac79ecb49ead831dceb4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ceb6aa65c2ed5bc8d4224bdaf7095fba769181e8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001022"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220579"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoftin Dynamics 365 Commercessa.
+Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Kanavien siirtymishierarkiat järjestävät tuotteet luokkiin, jotta tuotteita voi selata verkkokauppasivustolla tai myyntipisteissä. Vähittäismyynti- ja verkkokanavat on määritettävä kanavan siirtymishierarkioilla.
 

@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 23d81eaee6684ff2b041f93edd05076af66d322d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 43017cbb76c38eed6951a9e87c763cf919c3bd93
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980528"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206412"
 ---
 # <a name="container-module"></a>Konttimoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja säilömoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Säilömoduuli on moduuli, joka isännöi muita moduuleja. Säilömoduulin ensisijainen tarkoitus on määrittää sen sisässä olevien moduulien asettelu sille määritettyjen ominaisuuksien avulla. Nämä moduulit voivat olla rinnakkain esimerkiksi kahden, kolmen, neljän tai kuuden sarakkeen asettelussa. Ne voivat olla säilön levyisiä tai täyttää koko näytön. Jokaiseen säilömoduuliin voidaan lisätä otsikko.
 

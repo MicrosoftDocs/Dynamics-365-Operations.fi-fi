@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130752"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219984"
 ---
 # <a name="adjust-leases"></a>Vuokrasopimusten muuttaminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ohjeaiheessa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan. Resurssin vuokraus noudattaa ASC 842:n ja IFRS 16:n ohjeita vuokrasopimuksen muokkauksesta. ASC 842-20-15-1 määrittää vuokrasopimuksen muokkauksen miksi tahansa sopimuksen ehtojen muutokseksi, jos se muuttaa vuokrasopimuksen laajuutta tai kohdetta. IFRS 16:n kappale 39 määrittää, että vuokralle ottajan on uudelleenarvostettava vuokrasopimusvelka niin, että se vastaa vuokrien muutoksia.
 

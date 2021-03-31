@@ -1,6 +1,6 @@
 ---
 title: Puhelinkeskuksen luettelot
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein luetteloiden puhelinkeskusta koskevia toimintoja.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen luetteloiden puhelinkeskusta koskevia toimintoja.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 259b68aa28aa0c84699fc6d2e691bae0af135ab7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5a5f38cf0cd88c5a6ba04725c3bdf5b6a14cf15b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997797"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213959"
 ---
 # <a name="call-center-catalogs"></a>Puhelinpalvelukeskuksen luettelot
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään Dynamics 365 Commercein puhelinkeskusta koskevat, luettelotoimintoihin linkittyvät toiminnot.
+Tässä artikkelissa käsitellään Dynamics 365 Commercen puhelinkeskusta koskevat, luettelotoimintoihn linkittyvät toiminnot.
 
 Commercen luettelo-ominaisuuksia voidaan käyttää useita tarkoituksia varten. Alunperin luettelo-ominaisuudet luotiin tukemaan sähköisen kaupankäynnin kolmannen osapuolen integrointeja. Luettelon asetukset sallivat yritysten luoda tuotteiden ja määritteiden ryhmittelyjä, jotka voitiin julkaista ulkoisesti sähköisen kaupankäynnin kolmannen osapuolen ratkaisun käyttöön.
 

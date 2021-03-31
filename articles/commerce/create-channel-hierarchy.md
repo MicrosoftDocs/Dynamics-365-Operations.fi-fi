@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 89e24496d35ea0a02bd985f76d7579e1914d9290
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2e1462c10dfe1c858429e9f4cc5d720ca43df609
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972979"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221326"
 ---
-# <a name="create-a-channel-navigation-hierarchy"></a>Luo kanavan siirtymishierarkia
+# <a name="create-a-channel-navigation-hierarchy"></a>Vähittäismyyntikanavan siirtymishierarkian luominen
 
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään kanavan siirtymishierarkian luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Kanavan siirtymishierarkiaa käytetään tuotteiden luokkiin ryhmittelemiseen ja järjestämiseen, jotta niitä voidaan selata verkossa tai myyntipisteessä (POS).
 

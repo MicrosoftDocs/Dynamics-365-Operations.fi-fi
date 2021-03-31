@@ -1,5 +1,5 @@
 ---
-title: Verkkokanavan määrittäminen
+title: Online-kanavan määrittäminen
 description: Tässä ohjeaiheessa käsitellään uuden verkkokanavan luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 manager: annbe
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 89a28d6d4f435b9cf0c39afc64c3caaf0b24ba19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 44cc63560c048031c8315dc3f15ef07583bdc266
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993625"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218342"
 ---
-# <a name="set-up-an-online-channel"></a>Verkkokanavan määrittäminen
+# <a name="set-up-an-online-channel"></a>Online-kanavan määrittäminen
 
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään uuden verkkokanavan luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Verkkokaupassa asiakkaat voivat ostaa tuotteita sekä verkkokaupasta että vähittäismyymälästä.
 

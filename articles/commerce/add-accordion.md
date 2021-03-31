@@ -1,6 +1,6 @@
 ---
 title: Haitarimoduuli
-description: Tässä ohjeaiheessa on tietoja haitarimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+description: Tässä ohjeaiheessa on tietoja haitarivalikkomoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 28cb9d2e450ff1c05d4faa5cac343e03ef051437
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a08441f5dffa9c2c65b304d0265dd107a838a685
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986101"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206604"
 ---
-# <a name="accordion-module"></a>Haitarimoduuli
+# <a name="accordion-module"></a>Haitarivalikkomoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja haitarimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskuvaus
+Tässä ohjeaiheessa on tietoja haitarivalikkomoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
 Haitarimoduulit ovat konttimoduulin kaltaisia ja niitä käytetään tietojen tai moduulien järjestämiseen sivulla tarjoamalla tiivistettävän laatikon kaltaisen ominaisuuden. Haitarimoduulia voidaan käyttää millä tahansa sivulla.
 

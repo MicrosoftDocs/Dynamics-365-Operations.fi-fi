@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8436fd3621e94fb761c076454423fe9842306c78
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3df2d99ef10f909cedef16167fb8d5a0024683b3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982235"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210944"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
@@ -29,7 +29,7 @@ ms.locfileid: "4982235"
 
 Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Osat mahdollistavat koko sivustossa uudelleenkäytettävien moduulin määritysten keskitetyn muokkauskokemuksen. Esimerkiksi ylä- ja alatunnisteet sekä ilmoituspalkit määritetään usein osiksi, koska ne jaetaan useille sivuille. Voit ajatella osia pienoisverkkosivuina, jotka voidaan lisätä sivuston muihin sivuihin. Osilla on oma elinkaarensa. Toisin sanoen ne luodaan, päivitetään, niihin viitataan ja ne poistetaan yksittäisinä entiteetteinä muokkaustyökaluissa.
 

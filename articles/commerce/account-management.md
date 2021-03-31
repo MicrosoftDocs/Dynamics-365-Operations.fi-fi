@@ -1,5 +1,5 @@
 ---
-title: Tilinhallinnan sivut ja moduulit
+title: Tilin hallintasivut ja -moduulit
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
 author: v-chgri
 manager: annbe
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c465b8883438eee886b177274bf89ddb86aa00b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980553"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206628"
 ---
-# <a name="account-management-pages-and-modules"></a>Tilinhallinnan sivut ja moduulit
+# <a name="account-management-pages-and-modules"></a>Tilin hallintasivut ja -moduulit
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Tilien hallinta viittaa sivuryhmään, jota käytetään Dynamics 365 Commercen käyttäjän tileihin liittyvien tietojen hallinnassa. Tilinhallinnan sivut sisältävät tilinhallinnan saapumissivun, käyttäjäprofiilisivun, käyttäjän osoitteen sivun, tilaushistoriasivun, tilaustietojen sivun, kanta-asiakkuussivun ja toivomusluettelosivun.
 

@@ -1,5 +1,5 @@
 ---
-title: Uuden tuotteen luominen Commerce-ohjelmassa
+title: Uuden tuotteen luominen Commercessa
 description: Tässä ohjeaiheessa käsitellään uuden tuotteen luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 manager: annbe
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b578c1bdfe1c6b4bf66cc85cc09ed906fb812a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cb0137468d690649abb18b9d19673ff740d52e5d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965306"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207916"
 ---
-# <a name="create-a-new-product-in-commerce"></a>Uuden tuotteen luominen Commerce-ohjelmassa
+# <a name="create-a-new-product-in-commerce"></a>Uuden tuotteen luominen Commercessa
 
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään uuden tuotteen luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Tuote määritetään ensisijaisesti tuotenumeron, nimen ja kuvauksen perusteella. Tuotteen tai palvelun kuvaamiseen tarvitaan myös muita tietoja:
 

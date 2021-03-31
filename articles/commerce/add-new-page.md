@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54e690b0dde048b17ce074fcc30cf20a9ff7a4ca
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 2d96f173c68bd6a7d9c7a559ed7f18329c3508af
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097126"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208036"
 ---
 # <a name="add-a-new-site-page"></a>Uuden sivuston sivun lisääminen
 
@@ -30,7 +30,7 @@ ms.locfileid: "5097126"
 
 Tässä ohjeaiheessa kerrotaan, miten uusi sivu lisätään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Kun olet luonut sivustoon malleja ja osia, seuraava vaihe on luoda sivuja, jotka käyttävät malleja ja osia. Valitse ensin malli tai asettelu, sivun nimi ja sivun URL-osoite.
 

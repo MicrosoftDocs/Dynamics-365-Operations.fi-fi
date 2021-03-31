@@ -1,6 +1,6 @@
 ---
 title: Puhelinkeskusten maksutavat
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein puhelinkeskuksessa käytettäviä maksutapoja.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen puhelinkeskuksessa käytettäviä maksutapoja.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8fede81aa8c61eddba72b9ba2e780d61731f8253
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 939776b7bf55eafa8ca548905faa47cfa578a7e0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989249"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210800"
 ---
 # <a name="payment-methods-in-call-centers"></a>Puhelinkeskusten maksutavat
 
 [!include [banner](includes/banner.md)]
 
-Puhelinkeskuskanavan määritys Dynamics 365 Commerceissa sisältää **Ota käyttöön tilausten viimeistely** -asetuksen. Tämän asetuksen avulla voidaan varmistaa, että kaikki kanavan käyttäjien luomat tilaukset vapautetaan tilaustenkäsittelyyn vain, jos ne on maksettu ennakkoon tai jos esihyväksytty maksu on hyväksyttyjen toleranssien mukainen. Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, puhelinkeskuksen käyttäjät voivat kirjata maksuja asiakkaiden myyntitilauksille käyttämällä puhelinkeskuksen maksujen käsittelyominaisuuksia. Jos asetus poistetaan käytöstä, puhelinkeskuksen käyttäjät ei voi käyttää puhelinkeskuksen maksujen käsittelyominaisuuksia. He voivat kuitenkin käyttää myyntitilauksissa esimaksuja käyttämällä oletusarvoista myyntireskontratoimintoa.
+Puhelinkeskuskanavan määritys Dynamics 365 Commercessa sisältää **Ota käyttöön tilausten viimeistely** -asetuksen. Tämän asetuksen avulla voidaan varmistaa, että kaikki kanavan käyttäjien luomat tilaukset vapautetaan tilaustenkäsittelyyn vain, jos ne on maksettu ennakkoon tai jos esihyväksytty maksu on hyväksyttyjen toleranssien mukainen. Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, puhelinkeskuksen käyttäjät voivat kirjata maksuja asiakkaiden myyntitilauksille käyttämällä puhelinkeskuksen maksujen käsittelyominaisuuksia. Jos asetus poistetaan käytöstä, puhelinkeskuksen käyttäjät ei voi käyttää puhelinkeskuksen maksujen käsittelyominaisuuksia. He voivat kuitenkin käyttää myyntitilauksissa esimaksuja käyttämällä oletusarvoista myyntireskontratoimintoa.
 
 Yritys voi määrittää kanavamäärityksen osana puhelinkeskuskanavassa sallitut maksutavat. Puhelinkeskuskanava käyttää niitä maksutapoja, jotka on määritetty myymäläkanaville.
 
