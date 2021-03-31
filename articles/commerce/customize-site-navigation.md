@@ -16,96 +16,99 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d45f116acc19130e09108a246d276bb4b62a1e6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cfd0a9559eb2b596adb822b228929e6855711bb4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972904"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222606"
 ---
-# <a name="customize-site-navigation"></a><span data-ttu-id="0e7aa-103">Sivuston selauksen mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-103">Customize site navigation</span></span>
+# <a name="customize-site-navigation"></a><span data-ttu-id="31ade-103">Sivuston selauksen mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="31ade-103">Customize site navigation</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="0e7aa-104">Tässä ohjeaiheessa kerrotaan, miten luodaan mukautettu online-siirtymishierarkia, jonka avulla tuotteita voidaan järjestellä Microsoft Dynamics 365 Commerce -sivuston selaamista varten.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-104">This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.</span></span>
+<span data-ttu-id="31ade-104">Tässä ohjeaiheessa kerrotaan, miten luodaan mukautettu online-siirtymishierarkia, jonka avulla tuotteita voidaan järjestellä Microsoft Dynamics 365 Commerce -sivuston selaamista varten.</span><span class="sxs-lookup"><span data-stu-id="31ade-104">This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="0e7aa-105">Yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="0e7aa-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="31ade-105">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="31ade-105">Overview</span></span>
 
-<span data-ttu-id="0e7aa-106">Verkkomyymälöissä asiakkaat yleensä voivat etsiä ja selata tuotteita siirtymällä tuoteluokissa.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-106">Online storefronts typically let customers discover and browse products by navigating through product categories.</span></span> <span data-ttu-id="0e7aa-107">Tätä ominaisuutta käytetään yleensä sivun yläosassa olevien välilehtien tai vasemmalla olevan siirtymispalkin avulla.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-107">This capability is usually provided by tabs at the top of the page or by a navigation bar on the left.</span></span> <span data-ttu-id="0e7aa-108">Dynamics 365 Commerce -sovelluksessa voit luoda luokan siirtymisen ja eri luokkien tuotteiden hierarkiarakenteen ja hallita sitä.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-108">In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products that are included in the various categories.</span></span>
+<span data-ttu-id="31ade-106">Verkkomyymälöissä asiakkaat yleensä voivat etsiä ja selata tuotteita siirtymällä tuoteluokissa.</span><span class="sxs-lookup"><span data-stu-id="31ade-106">Online storefronts typically let customers discover and browse products by navigating through product categories.</span></span> <span data-ttu-id="31ade-107">Tätä ominaisuutta käytetään yleensä sivun yläosassa olevien välilehtien tai vasemmalla olevan siirtymispalkin avulla.</span><span class="sxs-lookup"><span data-stu-id="31ade-107">This capability is usually provided by tabs at the top of the page or by a navigation bar on the left.</span></span> <span data-ttu-id="31ade-108">Dynamics 365 Commerce -sovelluksessa voit luoda luokan siirtymisen ja eri luokkien tuotteiden hierarkiarakenteen ja hallita sitä.</span><span class="sxs-lookup"><span data-stu-id="31ade-108">In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products that are included in the various categories.</span></span>
 
-## <a name="create-a-channel-navigation-hierarchy"></a><span data-ttu-id="0e7aa-109">Luo kanavan siirtymishierarkia</span><span class="sxs-lookup"><span data-stu-id="0e7aa-109">Create a channel navigation hierarchy</span></span>
+## <a name="create-a-channel-navigation-hierarchy"></a><span data-ttu-id="31ade-109">Luo kanavan siirtymishierarkia</span><span class="sxs-lookup"><span data-stu-id="31ade-109">Create a channel navigation hierarchy</span></span>
 
-<span data-ttu-id="0e7aa-110">Voit luoda kanavan siirtymishierarkian seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-110">To create a channel navigation hierarchy, follow these steps.</span></span>
+<span data-ttu-id="31ade-110">Voit luoda kanavan siirtymishierarkian seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="31ade-110">To create a channel navigation hierarchy, follow these steps.</span></span>
 
-1. <span data-ttu-id="0e7aa-111">Siirry kohtaan **Retail ja Commerce \> Tuotteet ja luokat \> Luokka- ja tuotehallinta**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-111">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
-1. <span data-ttu-id="0e7aa-112">Valitse **Luokan hierarkiat** ja valitse sitten **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-112">Select **Category hierarchies**, and then select **New**.</span></span>
-1. <span data-ttu-id="0e7aa-113">Anna hierarkialle nimi.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-113">Name the hierarchy.</span></span>
+1. <span data-ttu-id="31ade-111">Siirry kohtaan **Retail ja Commerce \> Tuotteet ja luokat \> Luokka- ja tuotehallinta**.</span><span class="sxs-lookup"><span data-stu-id="31ade-111">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
+1. <span data-ttu-id="31ade-112">Valitse **Luokan hierarkiat** ja valitse sitten **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="31ade-112">Select **Category hierarchies**, and then select **New**.</span></span>
+1. <span data-ttu-id="31ade-113">Anna hierarkialle nimi.</span><span class="sxs-lookup"><span data-stu-id="31ade-113">Name the hierarchy.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="0e7aa-114">Luotu ylin luokka on luokan juurisolmu.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-114">The topmost category that you create is the root category node.</span></span> <span data-ttu-id="0e7aa-115">Se ei näy sivustossa.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-115">It won't be shown on your site.</span></span> <span data-ttu-id="0e7aa-116">Jos haluat luoda luokkahierarkian, jossa yksi ylätason solmu näkyy sivustossa, luo luokka ja nimeä se juuriluokan alitasoksi.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-116">To create a category hierarchy where a single top-level node is shown on your site, create and name the category as a child of the root category.</span></span>
+    > <span data-ttu-id="31ade-114">Luotu ylin luokka on luokan juurisolmu.</span><span class="sxs-lookup"><span data-stu-id="31ade-114">The topmost category that you create is the root category node.</span></span> <span data-ttu-id="31ade-115">Se ei näy sivustossa.</span><span class="sxs-lookup"><span data-stu-id="31ade-115">It won't be shown on your site.</span></span> <span data-ttu-id="31ade-116">Jos haluat luoda luokkahierarkian, jossa yksi ylätason solmu näkyy sivustossa, luo luokka ja nimeä se juuriluokan alitasoksi.</span><span class="sxs-lookup"><span data-stu-id="31ade-116">To create a category hierarchy where a single top-level node is shown on your site, create and name the category as a child of the root category.</span></span>
 
-1. <span data-ttu-id="0e7aa-117">Valitse **Uusi luokka solmu** ja anna luokan nimi.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-117">Select **New category node**, and name the category.</span></span>
-1. <span data-ttu-id="0e7aa-118">Jatka rinnakkais- ja alitasojen luomista halutulla tavalla.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-118">Continue to create sibling and child categories as you require.</span></span>
+1. <span data-ttu-id="31ade-117">Valitse **Uusi luokka solmu** ja anna luokan nimi.</span><span class="sxs-lookup"><span data-stu-id="31ade-117">Select **New category node**, and name the category.</span></span>
+1. <span data-ttu-id="31ade-118">Jatka rinnakkais- ja alitasojen luomista halutulla tavalla.</span><span class="sxs-lookup"><span data-stu-id="31ade-118">Continue to create sibling and child categories as you require.</span></span>
 
-<span data-ttu-id="0e7aa-119">Voit nyt määrittää tuotteita kuhunkin ylätason luokkaan luotuun luokkaan.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-119">You can now assign products to each category that you created under the top-level category.</span></span>
+<span data-ttu-id="31ade-119">Voit nyt määrittää tuotteita kuhunkin ylätason luokkaan luotuun luokkaan.</span><span class="sxs-lookup"><span data-stu-id="31ade-119">You can now assign products to each category that you created under the top-level category.</span></span>
 
-## <a name="customize-the-order-of-categories"></a><span data-ttu-id="0e7aa-120">Luokkien järjestyksen mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-120">Customize the order of categories</span></span>
+## <a name="customize-the-order-of-categories"></a><span data-ttu-id="31ade-120">Luokkien järjestyksen mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="31ade-120">Customize the order of categories</span></span>
 
-<span data-ttu-id="0e7aa-121">Oletusarvoisesti määrittämäsi luokat näkyvät sivustossa aakkosjärjestyksessä.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-121">By default, the categories that you define will appear in alphabetical order on your site.</span></span> <span data-ttu-id="0e7aa-122">Voit kuitenkin mukauttaa luokkien näyttöjärjestystä.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-122">However, you can also customize the display order of categories.</span></span>
+<span data-ttu-id="31ade-121">Oletusarvoisesti määrittämäsi luokat näkyvät sivustossa aakkosjärjestyksessä.</span><span class="sxs-lookup"><span data-stu-id="31ade-121">By default, the categories that you define will appear in alphabetical order on your site.</span></span> <span data-ttu-id="31ade-122">Voit kuitenkin mukauttaa luokkien näyttöjärjestystä.</span><span class="sxs-lookup"><span data-stu-id="31ade-122">However, you can also customize the display order of categories.</span></span>
 
-## <a name="assign-a-category-hierarchy-type"></a><span data-ttu-id="0e7aa-123">Määritä luokkahierarkiatyyppi</span><span class="sxs-lookup"><span data-stu-id="0e7aa-123">Assign a category hierarchy type</span></span>
+## <a name="assign-a-category-hierarchy-type"></a><span data-ttu-id="31ade-123">Määritä luokkahierarkiatyyppi</span><span class="sxs-lookup"><span data-stu-id="31ade-123">Assign a category hierarchy type</span></span>
 
-1. <span data-ttu-id="0e7aa-124">Siirry kohtaan **Retail ja Commerce \> Tuotteet ja luokat \> Luokka- ja tuotehallinta**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-124">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
-1. <span data-ttu-id="0e7aa-125">Valitse **Luokkahierarkiat**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-125">Select **Category hierarchies**.</span></span>
-1. <span data-ttu-id="0e7aa-126">Valitse toimintoruudun **Luokkahierakia**-välilehden **Määritys**-ryhmässä **Liitä hierarkiatyyppi**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-126">On the Action Pane, on the **Category hierarchy** tab, in the **Set up** group, select **Associate hierarchy type**.</span></span>
-1. <span data-ttu-id="0e7aa-127">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-127">Select **New**.</span></span>
-1. <span data-ttu-id="0e7aa-128">Valitse **Luokkahierarkian tyyppi** -kentässä **Kanavan siirtymishierarkia**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-128">In the **Category hierarchy type** field, select **Channel navigation hierarchy**.</span></span>
-1. <span data-ttu-id="0e7aa-129">Valitse **Luokkahierarkia**-kentässä aiemmin valittu kanavan siirtymishierarkia.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-129">In the **Category hierarchy** field, select the channel navigation hierarchy that you created earlier.</span></span>
+1. <span data-ttu-id="31ade-124">Siirry kohtaan **Retail ja Commerce \> Tuotteet ja luokat \> Luokka- ja tuotehallinta**.</span><span class="sxs-lookup"><span data-stu-id="31ade-124">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
+1. <span data-ttu-id="31ade-125">Valitse **Luokkahierarkiat**.</span><span class="sxs-lookup"><span data-stu-id="31ade-125">Select **Category hierarchies**.</span></span>
+1. <span data-ttu-id="31ade-126">Valitse toimintoruudun **Luokkahierakia**-välilehden **Määritys**-ryhmässä **Liitä hierarkiatyyppi**.</span><span class="sxs-lookup"><span data-stu-id="31ade-126">On the Action Pane, on the **Category hierarchy** tab, in the **Set up** group, select **Associate hierarchy type**.</span></span>
+1. <span data-ttu-id="31ade-127">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="31ade-127">Select **New**.</span></span>
+1. <span data-ttu-id="31ade-128">Valitse **Luokkahierarkian tyyppi** -kentässä **Kanavan siirtymishierarkia**.</span><span class="sxs-lookup"><span data-stu-id="31ade-128">In the **Category hierarchy type** field, select **Channel navigation hierarchy**.</span></span>
+1. <span data-ttu-id="31ade-129">Valitse **Luokkahierarkia**-kentässä aiemmin valittu kanavan siirtymishierarkia.</span><span class="sxs-lookup"><span data-stu-id="31ade-129">In the **Category hierarchy** field, select the channel navigation hierarchy that you created earlier.</span></span>
 
-## <a name="publish-new-or-updated-navigation-hierarchies"></a><span data-ttu-id="0e7aa-130">Uusien tai päivitettyjen siirtymishierarkioiden julkaiseminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-130">Publish new or updated navigation hierarchies</span></span>
+## <a name="publish-new-or-updated-navigation-hierarchies"></a><span data-ttu-id="31ade-130">Uusien tai päivitettyjen siirtymishierarkioiden julkaiseminen</span><span class="sxs-lookup"><span data-stu-id="31ade-130">Publish new or updated navigation hierarchies</span></span>
 
-<span data-ttu-id="0e7aa-131">Voit määrittää siirtymishierarkian käyttöön verkkomyymälässä seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-131">To make your navigation hierarchy available to your online storefront, follow these steps.</span></span>
+<span data-ttu-id="31ade-131">Voit määrittää siirtymishierarkian käyttöön verkkomyymälässä seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="31ade-131">To make your navigation hierarchy available to your online storefront, follow these steps.</span></span>
 
-1. <span data-ttu-id="0e7aa-132">Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-132">Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.</span></span>
-1. <span data-ttu-id="0e7aa-133">Valitse vasemmanpuoleisesta puusta verkkomyymälä.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-133">In the tree on the left, select your online store.</span></span>
-1. <span data-ttu-id="0e7aa-134">Valitse **Julkaise kanavan päivitykset**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-134">Select **Publish channel updates**.</span></span>
-1. <span data-ttu-id="0e7aa-135">Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-135">Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.</span></span>
-1. <span data-ttu-id="0e7aa-136">Etsi luettelosta **Työ 1040** ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-136">In the list, find and select **Job 1040**.</span></span>
-1. <span data-ttu-id="0e7aa-137">Valitse **Suorita nyt**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-137">Select **Run now**.</span></span>
-1. <span data-ttu-id="0e7aa-138">Toista vaiheet 5 ja 6 töille 1070 ja 1150.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-138">Repeat steps 5 and 6 for jobs 1070 and 1150.</span></span>
+1. <span data-ttu-id="31ade-132">Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.</span><span class="sxs-lookup"><span data-stu-id="31ade-132">Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.</span></span>
+1. <span data-ttu-id="31ade-133">Valitse vasemmanpuoleisesta puusta verkkomyymälä.</span><span class="sxs-lookup"><span data-stu-id="31ade-133">In the tree on the left, select your online store.</span></span>
+1. <span data-ttu-id="31ade-134">Valitse **Julkaise kanavan päivitykset**.</span><span class="sxs-lookup"><span data-stu-id="31ade-134">Select **Publish channel updates**.</span></span>
+1. <span data-ttu-id="31ade-135">Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.</span><span class="sxs-lookup"><span data-stu-id="31ade-135">Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.</span></span>
+1. <span data-ttu-id="31ade-136">Etsi luettelosta **Työ 1040** ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="31ade-136">In the list, find and select **Job 1040**.</span></span>
+1. <span data-ttu-id="31ade-137">Valitse **Suorita nyt**.</span><span class="sxs-lookup"><span data-stu-id="31ade-137">Select **Run now**.</span></span>
+1. <span data-ttu-id="31ade-138">Toista vaiheet 5 ja 6 töille 1070 ja 1150.</span><span class="sxs-lookup"><span data-stu-id="31ade-138">Repeat steps 5 and 6 for jobs 1070 and 1150.</span></span>
 
-## <a name="show-categories-on-your-site"></a><span data-ttu-id="0e7aa-139">Luokkien näyttäminen sivustossa</span><span class="sxs-lookup"><span data-stu-id="0e7aa-139">Show categories on your site</span></span>
+## <a name="show-categories-on-your-site"></a><span data-ttu-id="31ade-139">Luokkien näyttäminen sivustossa</span><span class="sxs-lookup"><span data-stu-id="31ade-139">Show categories on your site</span></span>
 
-<span data-ttu-id="0e7aa-140">Jos haluat näyttää luokkahierarkian verkkomyymälässä, lisää siirtymisvalikkomoduuli sopivaan sijaintiin mallissa tai osassa.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-140">To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment.</span></span> <span data-ttu-id="0e7aa-141">Tämä siirtymisvalikkomoduuli näyttää nyt siirtymishierarkian, jos olet julkaissut siirtymishierarkian kanavassa, johon sivusto on sidottu.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-141">The navigation menu module will then show your navigation hierarchy, provided that you've published your navigation hierarchy to the channel that your site is bound to.</span></span>
+<span data-ttu-id="31ade-140">Jos haluat näyttää luokkahierarkian verkkomyymälässä, lisää siirtymisvalikkomoduuli sopivaan sijaintiin mallissa tai osassa.</span><span class="sxs-lookup"><span data-stu-id="31ade-140">To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment.</span></span> <span data-ttu-id="31ade-141">Tämä siirtymisvalikkomoduuli näyttää nyt siirtymishierarkian, jos olet julkaissut siirtymishierarkian kanavassa, johon sivusto on sidottu.</span><span class="sxs-lookup"><span data-stu-id="31ade-141">The navigation menu module will then show your navigation hierarchy, provided that you've published your navigation hierarchy to the channel that your site is bound to.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0e7aa-142">Myymälän moduulikirjastoon sisältyvän siirtymisvalikkomoduulin avulla käyttäjät voivat siirtyä vain luokissa, joissa ei ole aliluokkia.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-142">The navigation menu module that is included in the module library lets users navigate only to categories that don't have subcategories.</span></span> <span data-ttu-id="0e7aa-143">Jos asiakkaiden on voivat siirtyä luokissa, joissa on aliluokkia, mukauta siirtymisvalikkomoduulia.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-143">If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.</span></span>
+> <span data-ttu-id="31ade-142">Myymälän moduulikirjastoon sisältyvän siirtymisvalikkomoduulin avulla käyttäjät voivat siirtyä vain luokissa, joissa ei ole aliluokkia.</span><span class="sxs-lookup"><span data-stu-id="31ade-142">The navigation menu module that is included in the module library lets users navigate only to categories that don't have subcategories.</span></span> <span data-ttu-id="31ade-143">Jos asiakkaiden on voivat siirtyä luokissa, joissa on aliluokkia, mukauta siirtymisvalikkomoduulia.</span><span class="sxs-lookup"><span data-stu-id="31ade-143">If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.</span></span>
 
-## <a name="add-custom-navigation-options"></a><span data-ttu-id="0e7aa-144">Mukautettujen siirtymisvaihtoehtojen lisääminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-144">Add custom navigation options</span></span>
+## <a name="add-custom-navigation-options"></a><span data-ttu-id="31ade-144">Mukautettujen siirtymisvaihtoehtojen lisääminen</span><span class="sxs-lookup"><span data-stu-id="31ade-144">Add custom navigation options</span></span>
 
-<span data-ttu-id="0e7aa-145">Siirtymisvalikossa voit lisätä siirtymisvaihtoehtoja, jotka eivät ole tuoteluokkahierarkian osa.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-145">On your navigation menu, you can add navigation options that aren't part of your product category hierarchy.</span></span> <span data-ttu-id="0e7aa-146">Esimerkiksi tuoteluokkaluettelon loppuun voit lisätä **Ota yhteyttä** -nimikkeen, joka vie sivustolle luodulle yhteydenottosivulle.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-146">For example, at the end of the list of product categories, you can add a **Contact Us** item that points to a contact page that you've built for your site.</span></span>
+<span data-ttu-id="31ade-145">Siirtymisvalikossa voit lisätä siirtymisvaihtoehtoja, jotka eivät ole tuoteluokkahierarkian osa.</span><span class="sxs-lookup"><span data-stu-id="31ade-145">On your navigation menu, you can add navigation options that aren't part of your product category hierarchy.</span></span> <span data-ttu-id="31ade-146">Esimerkiksi tuoteluokkaluettelon loppuun voit lisätä **Ota yhteyttä** -nimikkeen, joka vie sivustolle luodulle yhteydenottosivulle.</span><span class="sxs-lookup"><span data-stu-id="31ade-146">For example, at the end of the list of product categories, you can add a **Contact Us** item that points to a contact page that you've built for your site.</span></span>
 
-<span data-ttu-id="0e7aa-147">Voit lisätä siirtymisvalikkoon mukautettuja siirtymisvaihtoehtoja seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-147">To add custom navigation options to your navigation menu, follow these steps.</span></span>
+<span data-ttu-id="31ade-147">Voit lisätä siirtymisvalikkoon mukautettuja siirtymisvaihtoehtoja seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="31ade-147">To add custom navigation options to your navigation menu, follow these steps.</span></span>
 
-1. <span data-ttu-id="0e7aa-148">Valitse mukautettavassa mallissa tai osassa siirtymisvalikkomoduuli.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-148">In the template or fragment that you want to customize, select the navigation menu module.</span></span>
-1. <span data-ttu-id="0e7aa-149">Valitse ominaisuusruudun **Tiedot**-välilehdessä **Lisää nimike**, jos haluat luoda uuden sisällönhallintajärjestelmän (CMS) siirtymisnimikkeen.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-149">In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.</span></span>
-1. <span data-ttu-id="0e7aa-150">Anna linkin teksti ja URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-150">Enter link text and a URL.</span></span>
-1. <span data-ttu-id="0e7aa-151">Toista vaiheet 2 ja 3 ja lisää mukautettuja siirtymisvaihtoehtoja.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-151">Repeat steps 2 and 3 to add more custom navigation options.</span></span>
-1. <span data-ttu-id="0e7aa-152">Kun olet valmis, tallenna malli tai osa valitsemalla **Tallenna** ja tarkista se sitten valitsemalla **Viimeistele muokkaus**.</span><span class="sxs-lookup"><span data-stu-id="0e7aa-152">When you've finished, select **Save** to save the template or fragment, and then select **Finish editing** to check it in.</span></span>
+1. <span data-ttu-id="31ade-148">Valitse mukautettavassa mallissa tai osassa siirtymisvalikkomoduuli.</span><span class="sxs-lookup"><span data-stu-id="31ade-148">In the template or fragment that you want to customize, select the navigation menu module.</span></span>
+1. <span data-ttu-id="31ade-149">Valitse ominaisuusruudun **Tiedot**-välilehdessä **Lisää nimike**, jos haluat luoda uuden sisällönhallintajärjestelmän (CMS) siirtymisnimikkeen.</span><span class="sxs-lookup"><span data-stu-id="31ade-149">In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.</span></span>
+1. <span data-ttu-id="31ade-150">Anna linkin teksti ja URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="31ade-150">Enter link text and a URL.</span></span>
+1. <span data-ttu-id="31ade-151">Toista vaiheet 2 ja 3 ja lisää mukautettuja siirtymisvaihtoehtoja.</span><span class="sxs-lookup"><span data-stu-id="31ade-151">Repeat steps 2 and 3 to add more custom navigation options.</span></span>
+1. <span data-ttu-id="31ade-152">Kun olet valmis, tallenna malli tai osa valitsemalla **Tallenna** ja tarkista se sitten valitsemalla **Viimeistele muokkaus**.</span><span class="sxs-lookup"><span data-stu-id="31ade-152">When you've finished, select **Save** to save the template or fragment, and then select **Finish editing** to check it in.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0e7aa-153">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="0e7aa-153">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="31ade-153">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="31ade-153">Additional resources</span></span>
 
-[<span data-ttu-id="0e7aa-154">Mallit ja asettelut – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="0e7aa-154">Templates and layouts overview</span></span>](templates-layouts-overview.md)
+[<span data-ttu-id="31ade-154">Mallit ja asettelut – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="31ade-154">Templates and layouts overview</span></span>](templates-layouts-overview.md)
 
-[<span data-ttu-id="0e7aa-155">Mallien käyttö</span><span class="sxs-lookup"><span data-stu-id="0e7aa-155">Work with templates</span></span>](work-with-templates.md)
+[<span data-ttu-id="31ade-155">Mallien käyttö</span><span class="sxs-lookup"><span data-stu-id="31ade-155">Work with templates</span></span>](work-with-templates.md)
 
-[<span data-ttu-id="0e7aa-156">Esimääritettyjen asettelujen käyttö</span><span class="sxs-lookup"><span data-stu-id="0e7aa-156">Work with preset layouts</span></span>](work-with-layouts.md)
+[<span data-ttu-id="31ade-156">Esimääritettyjen asettelujen käyttö</span><span class="sxs-lookup"><span data-stu-id="31ade-156">Work with preset layouts</span></span>](work-with-layouts.md)
 
-[<span data-ttu-id="0e7aa-157">Katkelmien käyttäminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-157">Work with fragments</span></span>](work-with-fragments.md)
+[<span data-ttu-id="31ade-157">Katkelmien käyttäminen</span><span class="sxs-lookup"><span data-stu-id="31ade-157">Work with fragments</span></span>](work-with-fragments.md)
 
-[<span data-ttu-id="0e7aa-158">Moduulien käyttäminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-158">Work with modules</span></span>](work-with-modules.md)
+[<span data-ttu-id="31ade-158">Moduulien käyttäminen</span><span class="sxs-lookup"><span data-stu-id="31ade-158">Work with modules</span></span>](work-with-modules.md)
 
-[<span data-ttu-id="0e7aa-159">Sivun URL-osoitteen luominen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-159">Create a page URL</span></span>](create-page-url.md)
+[<span data-ttu-id="31ade-159">Sivun URL-osoitteen luominen</span><span class="sxs-lookup"><span data-stu-id="31ade-159">Create a page URL</span></span>](create-page-url.md)
 
-[<span data-ttu-id="0e7aa-160">Julkaisuryhmien kanssa työskenteleminen</span><span class="sxs-lookup"><span data-stu-id="0e7aa-160">Work with publish groups</span></span>](publish-groups.md)
+[<span data-ttu-id="31ade-160">Julkaisuryhmien kanssa työskenteleminen</span><span class="sxs-lookup"><span data-stu-id="31ade-160">Work with publish groups</span></span>](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

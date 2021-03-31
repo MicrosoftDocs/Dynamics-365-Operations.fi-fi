@@ -15,39 +15,42 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 276f918e5f86ba8bef3144a476ae72192829cf7a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f1d1bfe358bbff1720e7d013c3bfeaba1a598ed0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978593"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216470"
 ---
-# <a name="create-a-main-account"></a><span data-ttu-id="85bd8-103">Luo päätili</span><span class="sxs-lookup"><span data-stu-id="85bd8-103">Create a main account</span></span>
+# <a name="create-a-main-account"></a><span data-ttu-id="b7212-103">Luo päätili</span><span class="sxs-lookup"><span data-stu-id="b7212-103">Create a main account</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="85bd8-104">Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan.</span><span class="sxs-lookup"><span data-stu-id="85bd8-104">This task guide steps through adding a main account to an existing chart of accounts.</span></span> <span data-ttu-id="85bd8-105">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="85bd8-105">This recording uses the USMF demo company.</span></span>  
+<span data-ttu-id="b7212-104">Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan.</span><span class="sxs-lookup"><span data-stu-id="b7212-104">This task guide steps through adding a main account to an existing chart of accounts.</span></span> <span data-ttu-id="b7212-105">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="b7212-105">This recording uses the USMF demo company.</span></span>  
 
-1. <span data-ttu-id="85bd8-106">Valitse **Siirtymisruutu > Moduulit > Kirjanpito > Tilikartta > Tilit > Päätilit**.</span><span class="sxs-lookup"><span data-stu-id="85bd8-106">Go to **Navigation pane > Modules > General ledger > Chart of accounts > Accounts > Main accounts**.</span></span>
-2. <span data-ttu-id="85bd8-107">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="85bd8-107">Click **New**.</span></span>
-3. <span data-ttu-id="85bd8-108">Kirjoita **Päätili**-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="85bd8-108">In the **Main account** field, type a value.</span></span>
-4. <span data-ttu-id="85bd8-109">Kirjoita arvo **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="85bd8-109">In the **Name** field, type a value.</span></span>
-5. <span data-ttu-id="85bd8-110">Valitse **Päätilin tyyppi** -kentässä tyyppi, joka vastaa parhaiten tilien saldoa ja sijaintia raporteissa.</span><span class="sxs-lookup"><span data-stu-id="85bd8-110">In the **Main account type** field, select the type that best represents the accounts balance and location on financial statements.</span></span>
-6. <span data-ttu-id="85bd8-111">Valitse luettelossa tililuokka, johon päätili kuuluu.</span><span class="sxs-lookup"><span data-stu-id="85bd8-111">In the list, select the account category the main account belongs to.</span></span> <span data-ttu-id="85bd8-112">Tililuokkaa käytetään oletusraporteissa ja Power BI -koontinäytön sisällössä.</span><span class="sxs-lookup"><span data-stu-id="85bd8-112">Account category is used for default financial reports and Power BI dashboard content.</span></span>  
-7. <span data-ttu-id="85bd8-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="85bd8-113">In the list, click the link in the selected row.</span></span> <span data-ttu-id="85bd8-114">Muuta oletussaatavien tai -maksettavien saldo.</span><span class="sxs-lookup"><span data-stu-id="85bd8-114">Change the default debit or credit balance.</span></span>  
-8. <span data-ttu-id="85bd8-115">Valitse **Oletusvaluutta**-kentässä arvo valuuttaluettelosta.</span><span class="sxs-lookup"><span data-stu-id="85bd8-115">In the **Default currency** field, select a value from the list of currencies.</span></span>
-9. <span data-ttu-id="85bd8-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="85bd8-116">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="85bd8-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="85bd8-117">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="85bd8-118">Ota käyttöön **Yrityksen ohitukset** -osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="85bd8-118">Toggle the expansion of the **Legal entity overrides** section.</span></span>
-12. <span data-ttu-id="85bd8-119">Valitse yritys valitsemalla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="85bd8-119">Click **Add** to select a legal entity.</span></span>
-13. <span data-ttu-id="85bd8-120">Valitse luettelossa Yritys.</span><span class="sxs-lookup"><span data-stu-id="85bd8-120">In the list, select the Legal entity.</span></span>
-14. <span data-ttu-id="85bd8-121">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="85bd8-121">Click **Add**.</span></span>
-15. <span data-ttu-id="85bd8-122">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="85bd8-122">In the list, mark the selected row.</span></span>
-16. <span data-ttu-id="85bd8-123">Valitse **Keskeytetty**-valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="85bd8-123">Check or uncheck the **Suspended** checkbox.</span></span>
-17. <span data-ttu-id="85bd8-124">Laajenna **Taloushallinnon raportointi** -osa.</span><span class="sxs-lookup"><span data-stu-id="85bd8-124">Expand the **Financial reporting** section.</span></span>
-18. <span data-ttu-id="85bd8-125">Avaa haku valitsemalla **Vaihtokurssin tyyppi** -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="85bd8-125">In the **Exchange rate type** field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="85bd8-126">Valitse luettelossa tilin **Vaihtokurssin tyyppi**.</span><span class="sxs-lookup"><span data-stu-id="85bd8-126">In the list, select the **Exchange rate type for the account**.</span></span>
-20. <span data-ttu-id="85bd8-127">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="85bd8-127">In the list, click the link in the selected row.</span></span>
-21. <span data-ttu-id="85bd8-128">Valitse **Valuutan muuntotyyppi** -kentässä menetelmä, jolla tilin vaihtokurssit lasketaan.</span><span class="sxs-lookup"><span data-stu-id="85bd8-128">In the **Currency translation type** field, select the method for calculating exchange rates for the account.</span></span>
-22. <span data-ttu-id="85bd8-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="85bd8-129">Close the page.</span></span>
+1. <span data-ttu-id="b7212-106">Valitse **Siirtymisruutu > Moduulit > Kirjanpito > Tilikartta > Tilit > Päätilit**.</span><span class="sxs-lookup"><span data-stu-id="b7212-106">Go to **Navigation pane > Modules > General ledger > Chart of accounts > Accounts > Main accounts**.</span></span>
+2. <span data-ttu-id="b7212-107">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="b7212-107">Click **New**.</span></span>
+3. <span data-ttu-id="b7212-108">Kirjoita **Päätili**-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="b7212-108">In the **Main account** field, type a value.</span></span>
+4. <span data-ttu-id="b7212-109">Kirjoita arvo **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b7212-109">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="b7212-110">Valitse **Päätilin tyyppi** -kentässä tyyppi, joka vastaa parhaiten tilien saldoa ja sijaintia raporteissa.</span><span class="sxs-lookup"><span data-stu-id="b7212-110">In the **Main account type** field, select the type that best represents the accounts balance and location on financial statements.</span></span>
+6. <span data-ttu-id="b7212-111">Valitse luettelossa tililuokka, johon päätili kuuluu.</span><span class="sxs-lookup"><span data-stu-id="b7212-111">In the list, select the account category the main account belongs to.</span></span> <span data-ttu-id="b7212-112">Tililuokkaa käytetään oletusraporteissa ja Power BI -koontinäytön sisällössä.</span><span class="sxs-lookup"><span data-stu-id="b7212-112">Account category is used for default financial reports and Power BI dashboard content.</span></span>  
+7. <span data-ttu-id="b7212-113">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="b7212-113">In the list, click the link in the selected row.</span></span> <span data-ttu-id="b7212-114">Muuta oletussaatavien tai -maksettavien saldo.</span><span class="sxs-lookup"><span data-stu-id="b7212-114">Change the default debit or credit balance.</span></span>  
+8. <span data-ttu-id="b7212-115">Valitse **Oletusvaluutta**-kentässä arvo valuuttaluettelosta.</span><span class="sxs-lookup"><span data-stu-id="b7212-115">In the **Default currency** field, select a value from the list of currencies.</span></span>
+9. <span data-ttu-id="b7212-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="b7212-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="b7212-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="b7212-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="b7212-118">Ota käyttöön **Yrityksen ohitukset** -osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="b7212-118">Toggle the expansion of the **Legal entity overrides** section.</span></span>
+12. <span data-ttu-id="b7212-119">Valitse yritys valitsemalla **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="b7212-119">Click **Add** to select a legal entity.</span></span>
+13. <span data-ttu-id="b7212-120">Valitse luettelossa Yritys.</span><span class="sxs-lookup"><span data-stu-id="b7212-120">In the list, select the Legal entity.</span></span>
+14. <span data-ttu-id="b7212-121">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="b7212-121">Click **Add**.</span></span>
+15. <span data-ttu-id="b7212-122">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="b7212-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="b7212-123">Valitse **Keskeytetty**-valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="b7212-123">Check or uncheck the **Suspended** checkbox.</span></span>
+17. <span data-ttu-id="b7212-124">Laajenna **Taloushallinnon raportointi** -osa.</span><span class="sxs-lookup"><span data-stu-id="b7212-124">Expand the **Financial reporting** section.</span></span>
+18. <span data-ttu-id="b7212-125">Avaa haku valitsemalla **Vaihtokurssin tyyppi** -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="b7212-125">In the **Exchange rate type** field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="b7212-126">Valitse luettelossa tilin **Vaihtokurssin tyyppi**.</span><span class="sxs-lookup"><span data-stu-id="b7212-126">In the list, select the **Exchange rate type for the account**.</span></span>
+20. <span data-ttu-id="b7212-127">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="b7212-127">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="b7212-128">Valitse **Valuutan muuntotyyppi** -kentässä menetelmä, jolla tilin vaihtokurssit lasketaan.</span><span class="sxs-lookup"><span data-stu-id="b7212-128">In the **Currency translation type** field, select the method for calculating exchange rates for the account.</span></span>
+22. <span data-ttu-id="b7212-129">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b7212-129">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

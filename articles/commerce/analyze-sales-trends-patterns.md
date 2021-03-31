@@ -1,6 +1,6 @@
 ---
 title: Myyntitrendien ja -mallien analysointi
-description: Dynamics 365 Commerceissa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.
+description: Dynamics 365 Commercessa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,27 +18,30 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3367a8b3572b8055c420866e1aa1fc9e44ceaa1d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 116b473f40f7b0365474abe618c8689b8b1e8a58
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980078"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211372"
 ---
-# <a name="analyze-sales-trends-and-patterns"></a><span data-ttu-id="a9770-103">Myyntitrendien ja -mallien analysointi</span><span class="sxs-lookup"><span data-stu-id="a9770-103">Analyze sales trends and patterns</span></span>
+# <a name="analyze-sales-trends-and-patterns"></a><span data-ttu-id="3382c-103">Myyntitrendien ja -mallien analysointi</span><span class="sxs-lookup"><span data-stu-id="3382c-103">Analyze sales trends and patterns</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="a9770-104">Dynamics 365 Commerceissa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="a9770-104">You can study sales trends and patterns in real time in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="3382c-104">Dynamics 365 Commercessa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="3382c-104">You can study sales trends and patterns in real time in Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="a9770-105">Commercessa käyttäjät voivat tarkastella myyntitrendejä ja -malleja reaaliaikaisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **Vuosikohtaisen kanavamyynnin** -raportin.</span><span class="sxs-lookup"><span data-stu-id="a9770-105">As part of Commerce, users can study sales trends and patterns in real time across different levels of the organization hierarchy over a period of years by using the out-of-box **Channel sales by year** report.</span></span> <span data-ttu-id="a9770-106">Tämän raportin voi avata seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="a9770-106">You can open this report from any of the following locations:</span></span>
+<span data-ttu-id="3382c-105">Commercessa käyttäjät voivat tarkastella myyntitrendejä ja -malleja reaaliaikaisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **Vuosikohtaisen kanavamyynnin** -raportin.</span><span class="sxs-lookup"><span data-stu-id="3382c-105">As part of Commerce, users can study sales trends and patterns in real time across different levels of the organization hierarchy over a period of years by using the out-of-box **Channel sales by year** report.</span></span> <span data-ttu-id="3382c-106">Tämän raportin voi avata seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="3382c-106">You can open this report from any of the following locations:</span></span>
 
-- <span data-ttu-id="a9770-107">**Myymälän hallinta** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="a9770-107">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
-- <span data-ttu-id="a9770-108">**Myymälän myyntiedot** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän myyntitiedot** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="a9770-108">**Store financials** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store financials** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
-- <span data-ttu-id="a9770-109">**Kyselyt ja raportit** -osio &gt; **Retail ja Commerce** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="a9770-109">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by year report**</span></span>
+- <span data-ttu-id="3382c-107">**Myymälän hallinta** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="3382c-107">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
+- <span data-ttu-id="3382c-108">**Myymälän myyntiedot** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän myyntitiedot** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="3382c-108">**Store financials** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store financials** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
+- <span data-ttu-id="3382c-109">**Kyselyt ja raportit** -osio &gt; **Retail ja Commerce** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="3382c-109">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by year report**</span></span>
 
-<span data-ttu-id="a9770-110">Käyttäjät voivat tarkastella myyntitrendejä ja -malleja myös tuntiperusteisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **tuntikohtaisen kanavamyynnin raportin**.</span><span class="sxs-lookup"><span data-stu-id="a9770-110">Users can also study sales trends and patterns by hour across different levels of the organization hierarchy over a selected period by using the out-of-box **Channel sales by hour** report.</span></span> <span data-ttu-id="a9770-111">Tämän raportin voi avata seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="a9770-111">You can open this report from any of the following locations:</span></span>
+<span data-ttu-id="3382c-110">Käyttäjät voivat tarkastella myyntitrendejä ja -malleja myös tuntiperusteisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **tuntikohtaisen kanavamyynnin raportin**.</span><span class="sxs-lookup"><span data-stu-id="3382c-110">Users can also study sales trends and patterns by hour across different levels of the organization hierarchy over a selected period by using the out-of-box **Channel sales by hour** report.</span></span> <span data-ttu-id="3382c-111">Tämän raportin voi avata seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="3382c-111">You can open this report from any of the following locations:</span></span>
 
-- <span data-ttu-id="a9770-112">**Myymälän hallinta** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="a9770-112">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
-- <span data-ttu-id="a9770-113">**Myymälän myyntiedot** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän myyntitiedot** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="a9770-113">**Store financials** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store financials** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
-- <span data-ttu-id="a9770-114">**Kyselyt ja raportit** -osio &gt; **Retail ja Commerce** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="a9770-114">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**</span></span>
+- <span data-ttu-id="3382c-112">**Myymälän hallinta** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="3382c-112">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
+- <span data-ttu-id="3382c-113">**Myymälän myyntiedot** -työtila &gt; **Retail ja Commerce** &gt; **Kanavat** &gt; **Myymälän myyntitiedot** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="3382c-113">**Store financials** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store financials** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
+- <span data-ttu-id="3382c-114">**Kyselyt ja raportit** -osio &gt; **Retail ja Commerce** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**</span><span class="sxs-lookup"><span data-stu-id="3382c-114">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
