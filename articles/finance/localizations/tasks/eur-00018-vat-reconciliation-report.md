@@ -15,28 +15,31 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cac7cf21c1ee30c20b6d7dfc1cad995d3f0323bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6bb674d9605959692ec5ca2dc7ebd54a6ea93cc6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4984730"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227888"
 ---
-# <a name="eur-00018-vat-reconciliation-report"></a><span data-ttu-id="466d5-103">EUR-00018 ALV-täsmäytysraportti</span><span class="sxs-lookup"><span data-stu-id="466d5-103">EUR-00018 VAT reconciliation report</span></span>
+# <a name="eur-00018-vat-reconciliation-report"></a><span data-ttu-id="8284b-103">EUR-00018 ALV-täsmäytysraportti</span><span class="sxs-lookup"><span data-stu-id="8284b-103">EUR-00018 VAT reconciliation report</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="466d5-104">Näiden ohjeiden avulla voit luoda islantilaisille ja norjalaisille yrityksille tarkoitetun verojen täsmäytysraportin.</span><span class="sxs-lookup"><span data-stu-id="466d5-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="466d5-105">Tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijaisen osoitteen maaksi tai alueeksi päivitettiin Norja.</span><span class="sxs-lookup"><span data-stu-id="466d5-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
+<span data-ttu-id="8284b-104">Näiden ohjeiden avulla voit luoda islantilaisille ja norjalaisille yrityksille tarkoitetun verojen täsmäytysraportin.</span><span class="sxs-lookup"><span data-stu-id="8284b-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="8284b-105">Tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijaisen osoitteen maaksi tai alueeksi päivitettiin Norja.</span><span class="sxs-lookup"><span data-stu-id="8284b-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
 
-1. <span data-ttu-id="466d5-106">Valitse Vero > Kyselyt ja raportit > Arvonlisäveroraportit > Veron täsmäytysraportti</span><span class="sxs-lookup"><span data-stu-id="466d5-106">Go to Tax > Inquiries and reports > Sales tax reports > Tax reconciliation report.</span></span>
-2. <span data-ttu-id="466d5-107">Anna tai valitse arvo Tililtä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="466d5-107">In the From account field, enter or select a value.</span></span>
-    * <span data-ttu-id="466d5-108">Valitse arvoksi 200140.</span><span class="sxs-lookup"><span data-stu-id="466d5-108">Select the value 200140.</span></span>  
-3. <span data-ttu-id="466d5-109">Syötä tai valitse arvo Tilille-kentässä.</span><span class="sxs-lookup"><span data-stu-id="466d5-109">In the To account field, enter or select a value.</span></span>
-    * <span data-ttu-id="466d5-110">Valitse arvoksi 600180.</span><span class="sxs-lookup"><span data-stu-id="466d5-110">Select the value 600180.</span></span>  
-4. <span data-ttu-id="466d5-111">Syötä tai valitse arvo kentässä Tilityskausi.</span><span class="sxs-lookup"><span data-stu-id="466d5-111">In the Settlement period field, enter or select a value.</span></span>
-    * <span data-ttu-id="466d5-112">Valitse arvoksi Ma.</span><span class="sxs-lookup"><span data-stu-id="466d5-112">Select the value Mon.</span></span>  
-5. <span data-ttu-id="466d5-113">Syötä päivämäärä Päivämäärästä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="466d5-113">In the From date field, enter a date.</span></span>
-    * <span data-ttu-id="466d5-114">Valitse arvoksi 2015-11-01.</span><span class="sxs-lookup"><span data-stu-id="466d5-114">Select the value 2015-11-01.</span></span>  
-6. <span data-ttu-id="466d5-115">Valitse Näytä tiedot -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="466d5-115">Select Yes in the Show details field.</span></span>
-7. <span data-ttu-id="466d5-116">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="466d5-116">Click OK.</span></span>
+1. <span data-ttu-id="8284b-106">Valitse Vero > Kyselyt ja raportit > Arvonlisäveroraportit > Veron täsmäytysraportti</span><span class="sxs-lookup"><span data-stu-id="8284b-106">Go to Tax > Inquiries and reports > Sales tax reports > Tax reconciliation report.</span></span>
+2. <span data-ttu-id="8284b-107">Anna tai valitse arvo Tililtä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="8284b-107">In the From account field, enter or select a value.</span></span>
+    * <span data-ttu-id="8284b-108">Valitse arvoksi 200140.</span><span class="sxs-lookup"><span data-stu-id="8284b-108">Select the value 200140.</span></span>  
+3. <span data-ttu-id="8284b-109">Syötä tai valitse arvo Tilille-kentässä.</span><span class="sxs-lookup"><span data-stu-id="8284b-109">In the To account field, enter or select a value.</span></span>
+    * <span data-ttu-id="8284b-110">Valitse arvoksi 600180.</span><span class="sxs-lookup"><span data-stu-id="8284b-110">Select the value 600180.</span></span>  
+4. <span data-ttu-id="8284b-111">Syötä tai valitse arvo kentässä Tilityskausi.</span><span class="sxs-lookup"><span data-stu-id="8284b-111">In the Settlement period field, enter or select a value.</span></span>
+    * <span data-ttu-id="8284b-112">Valitse arvoksi Ma.</span><span class="sxs-lookup"><span data-stu-id="8284b-112">Select the value Mon.</span></span>  
+5. <span data-ttu-id="8284b-113">Syötä päivämäärä Päivämäärästä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="8284b-113">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="8284b-114">Valitse arvoksi 2015-11-01.</span><span class="sxs-lookup"><span data-stu-id="8284b-114">Select the value 2015-11-01.</span></span>  
+6. <span data-ttu-id="8284b-115">Valitse Näytä tiedot -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="8284b-115">Select Yes in the Show details field.</span></span>
+7. <span data-ttu-id="8284b-116">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="8284b-116">Click OK.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
