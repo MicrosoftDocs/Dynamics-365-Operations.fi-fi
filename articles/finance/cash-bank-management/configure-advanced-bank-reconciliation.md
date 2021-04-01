@@ -1,6 +1,6 @@
 ---
 title: Pankkitilin täsmäytyksen lisätoimintojen määritysprosessi
-description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financeissa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.
+description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.
 author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b3c68c8e985e5ef770421cb5e7120db4d97d1de
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ee84ad09806e8efbf37de659851c086a6e955921
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976487"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232438"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Pankkitilin täsmäytyksen lisätoimintojen määritysprosessi
 
 [!include [banner](../includes/banner.md)]
 
-Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financeissa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
+Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
 
 Ennen kehittyneen pankin täsmäytystoiminnon käyttöä on määritettävä monta asiaa. Lisätietoja tiliotteen tuonnin määrittämisestä on kohdassa [Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittämisen vaatimukset on kuvattu alla.
 

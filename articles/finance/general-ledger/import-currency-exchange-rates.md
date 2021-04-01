@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a5dbe0d822f7bdb1a62a99c43ef9f7170c889676
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 37f3897f9f2a0db0bb7ccb6851fba36814ab0c7b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988874"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249116"
 ---
 # <a name="import-currency-exchange-rates"></a>Vaihtokurssien tuonti
 
@@ -33,7 +33,7 @@ Jos oikeudellinen yksikkö on saanut laskuja ulkomaan valuutassa, tulee muuntaa 
 Seuraavissa osissa kuvataan ulkomaiden valuuttakurssien tuomisen määrittämisessä ja käsittelyssä käytettävää tiedonkulkua.
 
 ## <a name="configure-an-exchange-rate-provider"></a>Konfiguroi vaihtokurssipalvelu
-Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoavat vaihtokurssit, on määritettävä. Valitse vaihtokurssin toimittajat **Konfiguroi vaihtokurssipalvelut** -sivulla. Jotkin vaihtokurssin palveluntarjoajat sisältyvät Dynamics 365 Financein esittelytietoihin. Seuraavassa taulukossa kuvaillaan tämän sivun ohjausobjektit.
+Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoavat vaihtokurssit, on määritettävä. Valitse vaihtokurssin toimittajat **Konfiguroi vaihtokurssipalvelut** -sivulla. Jotkin vaihtokurssin palveluntarjoajat sisältyvät Dynamics 365 Financen esittelytietoihin. Seuraavassa taulukossa kuvaillaan tämän sivun ohjausobjektit.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,5 +1,5 @@
 ---
-title: Julkaisuryhmien kanssa työskenteleminen
+title: Julkaisuryhmien käsittely
 description: Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 Commercen julkaisuryhmät-ominaisuutta.
 author: phinneyridge
 manager: annbe
@@ -16,21 +16,21 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0a4f19af0cdf9c72add0ec18be84e36c807af9ce
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b623573f598f6b21291cafe95fa04e6777cffe11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969873"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244836"
 ---
-# <a name="work-with-publish-groups"></a>Julkaisuryhmien kanssa työskenteleminen
+# <a name="work-with-publish-groups"></a>Julkaisuryhmien käsittely
 
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 Commercen julkaisuryhmät-ominaisuutta.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Verkkokauppasivustoja päivitetään jatkuvasti uudella sisällöllä koko vuoden ajan. Päivitykset julkaistaan usein vilkkaissa verkkokaupan tapahtumissa, kuten juhlapäivinä, kausiluonteisissa markkinointikampanjoissa tai kampanjalanseerauksissa. Nämä päivitykset edellyttävät usein, että sivuston sisältöryhmiä (esimerkkejä, sivuja, kuvia, fragmentteja ja malleja) vaiheistetaan, validoidaan ja julkaistaan samanaikaisesti yhdessä toiminnassa.
 

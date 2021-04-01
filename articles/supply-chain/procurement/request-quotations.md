@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016928"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237373"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Tarjouspyynnöt – yleiskatsaus
 
@@ -80,23 +80,23 @@ Valitse **Hankintaparametrit**-sivulla toimittajille lähetettävän sähköpost
 - %Tarjouksen palautuksen syy%
 - %Muutoksen syy%
 - %Muutoksen valmistelija%
-- %Yritys%
+- %Company%
 - %Tarjouspyyntötapauksen nimi%
 - %Ajon vanhenemispäivä%
-- %Päivämäärä%
+- %Date%
 
-%Tarjouksen palautuksen syy%- ja %Muutoksen syy% -tunnisteet korvataan tekstillä, jonka hankinta-asiantuntija voi täyttää viimeistellessään muutoksia ohjatussa **Muutos**-toiminnossa. %Muutoksen valmistelija%- ja %Yritys%-tunnisteet korvataan automaattisesti tarjouspyynnön tiedoilla. %Päivämäärä%-tunniste korvataan nykyisellä päivämäärällä.
+%Tarjouksen palautuksen syy%- ja %Muutoksen syy% -tunnisteet korvataan tekstillä, jonka hankinta-asiantuntija voi täyttää viimeistellessään muutoksia ohjatussa **Muutos**-toiminnossa. %Muutoksen valmistelija%- ja %Company%-tunnisteet korvataan automaattisesti tarjouspyynnön tiedoilla. %Date%-tunniste korvataan nykyisellä päivämäärällä.
 
 Jos haluat peruuttaa tarjouspyynnön lähettämisen jälkeen, se voidaan tehdä tarjouspyyntötapauksessa. Peruutusta varten tarvitaan sähköpostimalli lähettämään peruutusilmoitus toimittajan yhteyshenkilöille. Malli on oltava valittuna **Hankintaparametrit**-sivulla. Luotava malli voi sisältää seuraavat korvattavat tunnisteet:
 
 - %Peruutuksen syy%
 - %Tarjouspyyntötapaus%
 - %Tarjouspyynnön peruuttaja%
-- %Yritys%
+- %Company%
 - %Tarjouspyyntötapauksen nimi%
-- %Päivämäärä%
+- %Date%
 
-%Peruutuksen syy% -tunniste korvataan tekstillä, jonka hankinta-asiantuntija voi antaa ohjatussa **Peruutus**-toiminnossa. %Päivämäärä%-tunniste korvataan nykyisellä päivämäärällä.
+%Peruutuksen syy% -tunniste korvataan tekstillä, jonka hankinta-asiantuntija voi antaa ohjatussa **Peruutus**-toiminnossa. %Date%-tunniste korvataan nykyisellä päivämäärällä.
 
 Jos haluat osoittaa tarjouksessa tarjouksen hylkäämisen tai hyväksymisen syyn syykoodeilla, määritä syykoodit **Toimittajan syyt** -sivulla.
 
