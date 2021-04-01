@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ed31982dad8af4509d8dd0615ae53e3d3806640f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 16c9411687acc4d9cb46b09ab2f258855c53df96
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979775"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243817"
 ---
 # <a name="ratings-and-reviews-overview"></a>Luokitukset ja arvostelut – yleiskatsaus
 
@@ -31,7 +31,7 @@ ms.locfileid: "4979775"
 
 Tämä ohjeaihe sisältää Microsoft Dynamics 365 Commercen luokitukset ja arvostelut.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Luokitukset ja arvostelut ovat tärkeä osa sähköisen kaupankäynnin asiakkaille, jotka haluavat tietää muiden asiakkaiden mielipiteen tuotteesta. Ne voivat myös auttaa kuluttajia tekemään ostopäätöksiä. Dynamics 365 Commerce -sovelluksessa luokitusten ja arvostelujen ratkaisun avulla jälleenmyyjät keräävät tuotearvosteluja ja -luokituksia asiakkailta. Jälleenmyyjät voivat tämän jälkeen näyttää keskimääräiset arvostelujen ja luokitusten tiedot sähköisen kaupankäynnin sivustossa.
 
@@ -57,7 +57,7 @@ Luokitukset ja arvostelut -ratkaisu sisältää myös Business Intelligence (BI)
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
-[Tuoteluokitusten synkronoiminen Dynamics 365 Commerceissa](sync-product-ratings.md)
+[Tuoteluokitusten synkronoiminen Dynamics 365 Commercessa](sync-product-ratings.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
