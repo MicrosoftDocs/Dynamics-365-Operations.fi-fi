@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 711f4f5549a478768f7f86a7001ac8a6cf9f4db6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1038b0ec80ec3441e508bcf51bca0dac01cbd0d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985669"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234458"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Vuoron ja kassan hallinta
 
@@ -31,7 +31,7 @@ ms.locfileid: "4985669"
 
 Tässä ohjeaiheessa käsitellään miten määritetään ja käytetään vuoroja Commercen myyntipisteessä (POS).
 
-Dynamics 365 Commerceissa *vuoro* tarkoittaa myyntipisteen tapahtumatietojen keräämistä kahden päivämäärän välillä. Kunkin vuoron tavoitteeksi asetettua rahasummaa verrataan summaan, joka on laskettu ja ilmoitettu.
+Dynamics 365 Commercessa *vuoro* tarkoittaa myyntipisteen tapahtumatietojen keräämistä kahden päivämäärän välillä. Kunkin vuoron tavoitteeksi asetettua rahasummaa verrataan summaan, joka on laskettu ja ilmoitettu.
 
 Yleensä vuorot avataan työpäivän alussa. Tässä vaiheessa käyttäjä ilmoittaa alkusumman, joka sisältää pohjakassan määrän. Myyntitapahtumia suoritetaan läpi päivän. Päivän lopussa kassa lasketaan ja sulkemisajan summat ilmoitetaan. Vuoro suljetaan ja Z-raportti luodaan. Z-raportti osoittaa yli- tai alijäämät.
 

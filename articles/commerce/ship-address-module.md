@@ -3,7 +3,7 @@ title: Toimitusosoitemoduuli
 description: Tässä ohjeaiheessa on tietoja toimitusosoitemoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6a5eb69c7746be419779b1a844ee35ec375a324c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e590c966ca6bd8111df5f91cbac0485afaa45c78
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985633"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234410"
 ---
 # <a name="shipping-address-module"></a>Toimitusosoitemoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja toimitusosoitemoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
-
-## <a name="overview"></a>Yhteenveto
+Tässä aiheessa kuvataan tietoja toimitusosoitemoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 
 Toimitusosoitemoduulin avulla asiakkaat voivat lisätä tai valita tilauksen toimitusosoitteen kassatyönkulun aikana. Jos asiakas on kirjautunut sisään, kaikki kyseiselle asiakkaalle aiemmin tallennetut osoitteet näytetään ja asiakas voi valita niistä. Asiakas voi myös lisätä uuden osoitteen. Toimitusosoitemoduulia käytetään kaikissa tilauksen nimikkeissä, jotka edellyttävät toimitusta.
 
@@ -49,6 +47,8 @@ Seuraavassa kuvassa on esimerkki uudesta toimitusosoitemoduulista maksusivulla.
 |---------------|--------|-------------|
 | Otsikko | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Toimitusosoitemoduulin valinnainen otsikko. |
 | Näytä osoitetyyppi | **Tosi** vai **Epätosi** | Jos tämän valinnaisen ominaisuuden arvo on **Tosi**, näkyviin tulee osoitetyyppi, esimerkiksi **koti** tai **yritys**. Jos osoitetyyppiä ei ole määritetty, osoite tallennetaan automaattisesti **tyypiksi**=**Muu**. |
+| Ota automaattinen ehdotus käyttöön| **Tosi** vai **Epätosi** | Jos tämän valinnaisen ominaisuuden arvoksi määritetään **Tosi**, automaattisia osoite-ehdotuksia annetaan. Ehdotukset saadaan Bing Maps -palvelusta. Lisätietoja Bing Maps -integroinnin määrityksestä sivustossasi on [myymälän valitsinmoduulissa](store-selector.md). Tämä ominaisuus on käytettävissä Commerce-version 10.0.15 julkaisussa.|
+|Automaattisen ehdotuksen vaihtoehdot| Numero| Jos automaattiset osoite-ehdotukset ovat käytössä, voit määrittää lisäasetuksia, kuten annettavien ehdotusten enimmäismäärän.|
 
 ## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Lisää toimitusosoitemoduuli kassalle-sivulle ja määritä pakolliset ominaisuudet
 
@@ -71,6 +71,8 @@ Toimitusosoitemoduuli voidaan lisätä vain kassalle-moduuliin. Lisätietoja toi
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
+
+[Myymälän valitsinmoduuli](store-selector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

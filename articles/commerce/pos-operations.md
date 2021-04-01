@@ -1,6 +1,6 @@
 ---
 title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
-description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commercein myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
+description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commercen myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: jblucher
 manager: AnnBe
 ms.date: 02/21/2020
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3051a3b5895a46801a1a154324ec9872dfcb82a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fac3f75dd601eaabe47fb4e8ad8d10b33307a5a4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989551"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235999"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
 [!include [banner](includes/banner.md)]
 
-Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Dynamics 365 Commercein taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
+Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Dynamics 365 Commercen taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
 
 Seuraavassa taulukossa on tietoja Modern POS- ja Cloud POS -toiminnoista. Taulukossa määritetään myös, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä, kun myyntipiste on offline-tilassa.
 
