@@ -1,6 +1,6 @@
 ---
 title: Myynti- ja marginaalisuoritusten valvonta
-description: Dynamics 365 Commerceissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
+description: Dynamics 365 Commercessa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,33 +18,36 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51dc7c4b62a497e3dc9279b3c5a616057316c106
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d8d6a99e0ed3f331051d504e3a1ce2bd403cc17
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985883"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251304"
 ---
-# <a name="monitor-sales-and-margin-performance"></a><span data-ttu-id="01b87-103">Myynnin ja katteen kehittymisen seuranta</span><span class="sxs-lookup"><span data-stu-id="01b87-103">Monitor sales and margin performance</span></span>
+# <a name="monitor-sales-and-margin-performance"></a><span data-ttu-id="43ceb-103">Myynnin ja katteen kehittymisen seuranta</span><span class="sxs-lookup"><span data-stu-id="43ceb-103">Monitor sales and margin performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="01b87-104">Dynamics 365 Commerceissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="01b87-104">You can monitor sales and margin performance in real time using Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="43ceb-104">Dynamics 365 Commercessa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="43ceb-104">You can monitor sales and margin performance in real time using Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="01b87-105">Kaupassa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:</span><span class="sxs-lookup"><span data-stu-id="01b87-105">As part of Commerce, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
+<span data-ttu-id="43ceb-105">Kaupassa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:</span><span class="sxs-lookup"><span data-stu-id="43ceb-105">As part of Commerce, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
 
-- <span data-ttu-id="01b87-106">Tuotteet</span><span class="sxs-lookup"><span data-stu-id="01b87-106">Products</span></span>
-- <span data-ttu-id="01b87-107">Luokat</span><span class="sxs-lookup"><span data-stu-id="01b87-107">Categories</span></span>
-- <span data-ttu-id="01b87-108">Alennukset</span><span class="sxs-lookup"><span data-stu-id="01b87-108">Discounts</span></span>
-- <span data-ttu-id="01b87-109">Vuodet aikajaksona</span><span class="sxs-lookup"><span data-stu-id="01b87-109">Years as time period</span></span>
-- <span data-ttu-id="01b87-110">Rekisterit/päätteet</span><span class="sxs-lookup"><span data-stu-id="01b87-110">Registers/terminals</span></span>
-- <span data-ttu-id="01b87-111">Henkilökunta/työntekijät</span><span class="sxs-lookup"><span data-stu-id="01b87-111">Staff/employees</span></span>
-- <span data-ttu-id="01b87-112">Asiakkaat</span><span class="sxs-lookup"><span data-stu-id="01b87-112">Customers</span></span>
-- <span data-ttu-id="01b87-113">Käyttöyksiköt</span><span class="sxs-lookup"><span data-stu-id="01b87-113">Operating units</span></span>
+- <span data-ttu-id="43ceb-106">Tuotteet</span><span class="sxs-lookup"><span data-stu-id="43ceb-106">Products</span></span>
+- <span data-ttu-id="43ceb-107">Luokat</span><span class="sxs-lookup"><span data-stu-id="43ceb-107">Categories</span></span>
+- <span data-ttu-id="43ceb-108">Alennukset</span><span class="sxs-lookup"><span data-stu-id="43ceb-108">Discounts</span></span>
+- <span data-ttu-id="43ceb-109">Vuodet aikajaksona</span><span class="sxs-lookup"><span data-stu-id="43ceb-109">Years as time period</span></span>
+- <span data-ttu-id="43ceb-110">Rekisterit/päätteet</span><span class="sxs-lookup"><span data-stu-id="43ceb-110">Registers/terminals</span></span>
+- <span data-ttu-id="43ceb-111">Henkilökunta/työntekijät</span><span class="sxs-lookup"><span data-stu-id="43ceb-111">Staff/employees</span></span>
+- <span data-ttu-id="43ceb-112">Asiakkaat</span><span class="sxs-lookup"><span data-stu-id="43ceb-112">Customers</span></span>
+- <span data-ttu-id="43ceb-113">Käyttöyksiköt</span><span class="sxs-lookup"><span data-stu-id="43ceb-113">Operating units</span></span>
 
-<span data-ttu-id="01b87-114">Kahden hierarkkista ruudukkorakennetta hyödyntävän yksilöllisen raportin avulla käyttäjät voivat lisäksi valvoa myynnin ja katetuoton kehittymistä porautumalla päätason luokan solmusta luokan yksittäisiin lehtisolmuihin oletusarvoisessa tuoteluokkahierarkiassa.</span><span class="sxs-lookup"><span data-stu-id="01b87-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default product category hierarchy.</span></span> <span data-ttu-id="01b87-115">Käyttäjät voivat myös porautua päätason toimintayksiköstä yksittäiseen kanavaan organisaatiohierarkiassa, joka on määritetty oletusorganisaatiohierarkiaksi raportointia varten.</span><span class="sxs-lookup"><span data-stu-id="01b87-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for reporting.</span></span> <span data-ttu-id="01b87-116">Raportit voi avata seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="01b87-116">You can open the reports from any of the following locations:</span></span>
+<span data-ttu-id="43ceb-114">Kahden hierarkkista ruudukkorakennetta hyödyntävän yksilöllisen raportin avulla käyttäjät voivat lisäksi valvoa myynnin ja katetuoton kehittymistä porautumalla päätason luokan solmusta luokan yksittäisiin lehtisolmuihin oletusarvoisessa tuoteluokkahierarkiassa.</span><span class="sxs-lookup"><span data-stu-id="43ceb-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default product category hierarchy.</span></span> <span data-ttu-id="43ceb-115">Käyttäjät voivat myös porautua päätason toimintayksiköstä yksittäiseen kanavaan organisaatiohierarkiassa, joka on määritetty oletusorganisaatiohierarkiaksi raportointia varten.</span><span class="sxs-lookup"><span data-stu-id="43ceb-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for reporting.</span></span> <span data-ttu-id="43ceb-116">Raportit voi avata seuraavista sijainneista:</span><span class="sxs-lookup"><span data-stu-id="43ceb-116">You can open the reports from any of the following locations:</span></span>
 
-- <span data-ttu-id="01b87-117">**Myymälän hallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit**</span><span class="sxs-lookup"><span data-stu-id="01b87-117">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports**</span></span>
-- <span data-ttu-id="01b87-118">**Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Tuotteet ja luokat** &gt; **Myymälän hallinta** &gt; **Raportti**</span><span class="sxs-lookup"><span data-stu-id="01b87-118">**Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**</span></span>
-- <span data-ttu-id="01b87-119">**Hinnoittelun ja alennusten hallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Hinnoittelu ja alennukset** &gt; **Myymälän hallinta** &gt; **Raportit**</span><span class="sxs-lookup"><span data-stu-id="01b87-119">**Pricing and discount management** workspace &gt; **Retail and Commerce** &gt; **Pricing and discounts** &gt; **Store management** &gt; **Reports**</span></span>
-- <span data-ttu-id="01b87-120">**Kyselyt ja raportit** -osio &gt; **Vähittäismyynti ja kauppa** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**</span><span class="sxs-lookup"><span data-stu-id="01b87-120">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
+- <span data-ttu-id="43ceb-117">**Myymälän hallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälän hallinta** &gt; **Raportit**</span><span class="sxs-lookup"><span data-stu-id="43ceb-117">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="43ceb-118">**Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Tuotteet ja luokat** &gt; **Myymälän hallinta** &gt; **Raportti**</span><span class="sxs-lookup"><span data-stu-id="43ceb-118">**Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="43ceb-119">**Hinnoittelun ja alennusten hallinta** -työtila &gt; **Vähittäismyynti ja kauppa** &gt; **Hinnoittelu ja alennukset** &gt; **Myymälän hallinta** &gt; **Raportit**</span><span class="sxs-lookup"><span data-stu-id="43ceb-119">**Pricing and discount management** workspace &gt; **Retail and Commerce** &gt; **Pricing and discounts** &gt; **Store management** &gt; **Reports**</span></span>
+- <span data-ttu-id="43ceb-120">**Kyselyt ja raportit** -osio &gt; **Vähittäismyynti ja kauppa** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**</span><span class="sxs-lookup"><span data-stu-id="43ceb-120">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
