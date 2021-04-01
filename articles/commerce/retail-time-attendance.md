@@ -1,6 +1,6 @@
 ---
 title: Ajan ja läsnäolon hallinta Retailissa
-description: Tässä aiheessa on kuvaus Dynamics 365 Commercein ajan ja työajan hallinnassa tuettavista skenaarioista.
+description: Tässä aiheessa on kuvaus Dynamics 365 Commercen ajan ja työajan hallinnassa tuettavista skenaarioista.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e28df09ecb592ae7df360d1b2d0bf06339c1410d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28f4f72cd1272bd4562a58e343e50157143fac2c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989374"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254910"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Ajan ja läsnäolon hallinta Retailissa
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on kuvaus Dynamics 365 Commercein ajan ja työajan hallinnassa tuettavista skenaarioista.
+Tässä aiheessa on kuvaus Dynamics 365 Commercen ajan ja työajan hallinnassa tuettavista skenaarioista.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Työntekijän asetusten ja ajoituksen hallinta
 

@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 045568797722a621ea4e6c82d10dbb266b9e8162
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9b5a8123c64dce2ba65758f0312a899646cf948
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982463"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252555"
 ---
 # <a name="media-gallery-module"></a>Mediavalikoimamoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja mediavalikoimamoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Mediavalikoimamoduuleissa on yksi kuva tai useita kuvia valikoimanäkymässä. Mediavalikoimamoduulit tukevat pikkukuvia. Ne voivat olla vaakasuuntaisesti (rivinä kuvan alla) tai pystysuuntaisesti (pystyrivinä kuvan vieressä). Mediavalikoimamoduulit sisältävät myös ominaisuuksia, joiden avulla kuvia voi zoomata (suurentaa) tai tarkastella koko näytön tilassa. Kuvan on oltava käytettävissä Commercen sivustonmuodostimen mediakirjastossa, jotta se voidaan hahmontaa mediavalikoimamoduuliin. Tällä hetkellä mediavalikoimamoduulit tukevat vain kuvia.
 
