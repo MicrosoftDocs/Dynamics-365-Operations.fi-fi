@@ -17,76 +17,79 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af1c1a222981a0bcf9d7341cde5b83dd720da802
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1aacc57051f21b992d9f7feb44c99511fc2a65bb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994962"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241287"
 ---
-# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="6d00e-103">Poistomenetelmät ja -käytännöt</span><span class="sxs-lookup"><span data-stu-id="6d00e-103">Depreciation methods and conventions</span></span>
+# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="ae7d5-103">Poistomenetelmät ja -käytännöt</span><span class="sxs-lookup"><span data-stu-id="ae7d5-103">Depreciation methods and conventions</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6d00e-104">Tämä artikkeli sisältää yleiskuvauksen tuetuista poistokäytännöistä ja poistomenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="6d00e-104">This article provides an overview of the supported depreciation conventions and depreciation methods.</span></span>
+<span data-ttu-id="ae7d5-104">Tämä artikkeli sisältää yleiskuvauksen tuetuista poistokäytännöistä ja poistomenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-104">This article provides an overview of the supported depreciation conventions and depreciation methods.</span></span>
 
-<span data-ttu-id="6d00e-105">Voit valita useita poistomenetelmiä.</span><span class="sxs-lookup"><span data-stu-id="6d00e-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="6d00e-106">Menetelmien tarkoituksena on kohdistaa käyttöomaisuuserän poistokelpoinen arvo tilikausille.</span><span class="sxs-lookup"><span data-stu-id="6d00e-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="6d00e-107">Käyttöomaisuuserän poistokelpoinen arvo on hankintahinta vähennettynä mahdollisella jäännösarvolla.</span><span class="sxs-lookup"><span data-stu-id="6d00e-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
+<span data-ttu-id="ae7d5-105">Voit valita useita poistomenetelmiä.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="ae7d5-106">Menetelmien tarkoituksena on kohdistaa käyttöomaisuuserän poistokelpoinen arvo tilikausille.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="ae7d5-107">Käyttöomaisuuserän poistokelpoinen arvo on hankintahinta vähennettynä mahdollisella jäännösarvolla.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
 
-<span data-ttu-id="6d00e-108">Jos käytät poistomenetelmiä ja muutat käyttöomaisuuserän viimeisen poiston suorituspäivää, jolloin jotkin poistot jäävät väliin, viimeisen vuoden poisto voi olla odotettua suurempi tai pienempi.</span><span class="sxs-lookup"><span data-stu-id="6d00e-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="6d00e-109">Poistoa muutetaan niiden poistokausien määrällä, joihin viimeisen poistokerran päivämäärän muuttaminen vaikuttaa</span><span class="sxs-lookup"><span data-stu-id="6d00e-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
+<span data-ttu-id="ae7d5-108">Jos käytät poistomenetelmiä ja muutat käyttöomaisuuserän viimeisen poiston suorituspäivää, jolloin jotkin poistot jäävät väliin, viimeisen vuoden poisto voi olla odotettua suurempi tai pienempi.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="ae7d5-109">Poistoa muutetaan niiden poistokausien määrällä, joihin viimeisen poistokerran päivämäärän muuttaminen vaikuttaa</span><span class="sxs-lookup"><span data-stu-id="ae7d5-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
 
-<span data-ttu-id="6d00e-110">Jos esimerkiksi käytät puolivuosittaista poistomenetelmää kolmen vuoden ajan, poistot tehdään yleensä 3,5 vuoden aikana.</span><span class="sxs-lookup"><span data-stu-id="6d00e-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="6d00e-111">Jos muutat viimeisen poiston suorituspäivää tämän 3 1/2 vuoden kuluessa, viimeinen poistovuosi siirtää niiden kausien määrää, joihin muutos vaikuttaa.</span><span class="sxs-lookup"><span data-stu-id="6d00e-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="6d00e-112">Jos siirrät päivämäärää kolmella kuukaudella, viimeisessä vuodessa on yhdeksän kuukautta poistettavaa, kun tavallisesti siinä olisi kuusi kuukautta poistettavaa.</span><span class="sxs-lookup"><span data-stu-id="6d00e-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
+<span data-ttu-id="ae7d5-110">Jos esimerkiksi käytät puolivuosittaista poistomenetelmää kolmen vuoden ajan, poistot tehdään yleensä 3,5 vuoden aikana.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="ae7d5-111">Jos muutat viimeisen poiston suorituspäivää tämän 3 1/2 vuoden kuluessa, viimeinen poistovuosi siirtää niiden kausien määrää, joihin muutos vaikuttaa.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="ae7d5-112">Jos siirrät päivämäärää kolmella kuukaudella, viimeisessä vuodessa on yhdeksän kuukautta poistettavaa, kun tavallisesti siinä olisi kuusi kuukautta poistettavaa.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
 
-<span data-ttu-id="6d00e-113">Voit valita jonkin seuraavista poistomenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="6d00e-113">You can select from the following depreciation conventions.</span></span>
-
-
--   <span data-ttu-id="6d00e-114">Puolivuosi</span><span class="sxs-lookup"><span data-stu-id="6d00e-114">Half year</span></span>
--   <span data-ttu-id="6d00e-115">Täysi kuukausi</span><span class="sxs-lookup"><span data-stu-id="6d00e-115">Full month</span></span>
--   <span data-ttu-id="6d00e-116">Vuosineljänneksen puoliväli</span><span class="sxs-lookup"><span data-stu-id="6d00e-116">Mid quarter</span></span>
--   <span data-ttu-id="6d00e-117">Kuukauden puoliväli (kuukauden 1. päivä)</span><span class="sxs-lookup"><span data-stu-id="6d00e-117">Mid month (1st of month)</span></span>
--   <span data-ttu-id="6d00e-118">Kuukauden puoliväli (kuukauden 15. päivä)</span><span class="sxs-lookup"><span data-stu-id="6d00e-118">Mid month (15th of month)</span></span>
--   <span data-ttu-id="6d00e-119">Puolivuosi (vuoden alku)</span><span class="sxs-lookup"><span data-stu-id="6d00e-119">Half year (start of year)</span></span>
--   <span data-ttu-id="6d00e-120">Puolivuosi (seuraava vuosi)</span><span class="sxs-lookup"><span data-stu-id="6d00e-120">Half year (next year)</span></span>
-
-<span data-ttu-id="6d00e-121">Voit valita seuraavista poistomenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="6d00e-121">You can select from the following depreciation methods.</span></span>
--   <span data-ttu-id="6d00e-122">Tasapoisto - käyttöaika</span><span class="sxs-lookup"><span data-stu-id="6d00e-122">Straight line service life</span></span>
--   <span data-ttu-id="6d00e-123">Jäännösarvopoisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-123">Reducing balance</span></span>
--   <span data-ttu-id="6d00e-124">Manuaalinen</span><span class="sxs-lookup"><span data-stu-id="6d00e-124">Manual</span></span>
--   <span data-ttu-id="6d00e-125">Kerroin</span><span class="sxs-lookup"><span data-stu-id="6d00e-125">Factor</span></span>
--   <span data-ttu-id="6d00e-126">Kulutus</span><span class="sxs-lookup"><span data-stu-id="6d00e-126">Consumption</span></span>
--   <span data-ttu-id="6d00e-127">Tasapoisto - jäljellä oleva käyttöaika</span><span class="sxs-lookup"><span data-stu-id="6d00e-127">Straight line life remaining</span></span>
--   <span data-ttu-id="6d00e-128">Jäännös 200 %</span><span class="sxs-lookup"><span data-stu-id="6d00e-128">200% reducing balance</span></span>
--   <span data-ttu-id="6d00e-129">Jäännös 175 %</span><span class="sxs-lookup"><span data-stu-id="6d00e-129">175% reducing balance</span></span>
--   <span data-ttu-id="6d00e-130">Jäännös 150 %</span><span class="sxs-lookup"><span data-stu-id="6d00e-130">150% reducing balance</span></span>
--   <span data-ttu-id="6d00e-131">Jäännös 125 %</span><span class="sxs-lookup"><span data-stu-id="6d00e-131">125% reducing balance</span></span>
+<span data-ttu-id="ae7d5-113">Voit valita jonkin seuraavista poistomenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-113">You can select from the following depreciation conventions.</span></span>
 
 
+-   <span data-ttu-id="ae7d5-114">Puolivuosi</span><span class="sxs-lookup"><span data-stu-id="ae7d5-114">Half year</span></span>
+-   <span data-ttu-id="ae7d5-115">Täysi kuukausi</span><span class="sxs-lookup"><span data-stu-id="ae7d5-115">Full month</span></span>
+-   <span data-ttu-id="ae7d5-116">Vuosineljänneksen puoliväli</span><span class="sxs-lookup"><span data-stu-id="ae7d5-116">Mid quarter</span></span>
+-   <span data-ttu-id="ae7d5-117">Kuukauden puoliväli (kuukauden 1. päivä)</span><span class="sxs-lookup"><span data-stu-id="ae7d5-117">Mid month (1st of month)</span></span>
+-   <span data-ttu-id="ae7d5-118">Kuukauden puoliväli (kuukauden 15. päivä)</span><span class="sxs-lookup"><span data-stu-id="ae7d5-118">Mid month (15th of month)</span></span>
+-   <span data-ttu-id="ae7d5-119">Puolivuosi (vuoden alku)</span><span class="sxs-lookup"><span data-stu-id="ae7d5-119">Half year (start of year)</span></span>
+-   <span data-ttu-id="ae7d5-120">Puolivuosi (seuraava vuosi)</span><span class="sxs-lookup"><span data-stu-id="ae7d5-120">Half year (next year)</span></span>
+
+<span data-ttu-id="ae7d5-121">Voit valita seuraavista poistomenetelmistä.</span><span class="sxs-lookup"><span data-stu-id="ae7d5-121">You can select from the following depreciation methods.</span></span>
+-   <span data-ttu-id="ae7d5-122">Tasapoisto - käyttöaika</span><span class="sxs-lookup"><span data-stu-id="ae7d5-122">Straight line service life</span></span>
+-   <span data-ttu-id="ae7d5-123">Jäännösarvopoisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-123">Reducing balance</span></span>
+-   <span data-ttu-id="ae7d5-124">Manuaalinen</span><span class="sxs-lookup"><span data-stu-id="ae7d5-124">Manual</span></span>
+-   <span data-ttu-id="ae7d5-125">Kerroin</span><span class="sxs-lookup"><span data-stu-id="ae7d5-125">Factor</span></span>
+-   <span data-ttu-id="ae7d5-126">Kulutus</span><span class="sxs-lookup"><span data-stu-id="ae7d5-126">Consumption</span></span>
+-   <span data-ttu-id="ae7d5-127">Tasapoisto - jäljellä oleva käyttöaika</span><span class="sxs-lookup"><span data-stu-id="ae7d5-127">Straight line life remaining</span></span>
+-   <span data-ttu-id="ae7d5-128">Jäännös 200 %</span><span class="sxs-lookup"><span data-stu-id="ae7d5-128">200% reducing balance</span></span>
+-   <span data-ttu-id="ae7d5-129">Jäännös 175 %</span><span class="sxs-lookup"><span data-stu-id="ae7d5-129">175% reducing balance</span></span>
+-   <span data-ttu-id="ae7d5-130">Jäännös 150 %</span><span class="sxs-lookup"><span data-stu-id="ae7d5-130">150% reducing balance</span></span>
+-   <span data-ttu-id="ae7d5-131">Jäännös 125 %</span><span class="sxs-lookup"><span data-stu-id="ae7d5-131">125% reducing balance</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="6d00e-132">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="6d00e-132">Additional resources</span></span>
+
+
+<a name="additional-resources"></a><span data-ttu-id="ae7d5-132">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="ae7d5-132">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="6d00e-133">Käyttöomaisuuden poisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
+[<span data-ttu-id="ae7d5-133">Käyttöomaisuuden poisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
 
-[<span data-ttu-id="6d00e-134">Käyttöikään perustuva tasapoisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
+[<span data-ttu-id="ae7d5-134">Käyttöikään perustuva tasapoisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
 
-[<span data-ttu-id="6d00e-135">Jäännöspoisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-135">Reduce balance depreciation</span></span>](reduce-balance-depreciation.md)
+[<span data-ttu-id="ae7d5-135">Jäännöspoisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-135">Reduce balance depreciation</span></span>](reduce-balance-depreciation.md)
 
-[<span data-ttu-id="6d00e-136">Manuaalinen poisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-136">Manual depreciation</span></span>](manual-depreciation.md)
+[<span data-ttu-id="ae7d5-136">Manuaalinen poisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-136">Manual depreciation</span></span>](manual-depreciation.md)
 
-[<span data-ttu-id="6d00e-137">Kerroinpoisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-137">Factor depreciation</span></span>](factor-depreciation.md)
+[<span data-ttu-id="ae7d5-137">Kerroinpoisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-137">Factor depreciation</span></span>](factor-depreciation.md)
 
-[<span data-ttu-id="6d00e-138">Kulutuspoisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-138">Consumption depreciation</span></span>](consumption-depreciation.md)
+[<span data-ttu-id="ae7d5-138">Kulutuspoisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-138">Consumption depreciation</span></span>](consumption-depreciation.md)
 
-[<span data-ttu-id="6d00e-139">Jäljellä olevan käyttöajan tasapoisto</span><span class="sxs-lookup"><span data-stu-id="6d00e-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
+[<span data-ttu-id="ae7d5-139">Jäljellä olevan käyttöajan tasapoisto</span><span class="sxs-lookup"><span data-stu-id="ae7d5-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
 
-[<span data-ttu-id="6d00e-140">Jäännöspoisto 125 prosenttia</span><span class="sxs-lookup"><span data-stu-id="6d00e-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="ae7d5-140">Jäännöspoisto 125 prosenttia</span><span class="sxs-lookup"><span data-stu-id="ae7d5-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="6d00e-141">Jäännöspoisto 150 prosenttia</span><span class="sxs-lookup"><span data-stu-id="6d00e-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="ae7d5-141">Jäännöspoisto 150 prosenttia</span><span class="sxs-lookup"><span data-stu-id="ae7d5-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="6d00e-142">Jäännöspoisto 175 prosenttia</span><span class="sxs-lookup"><span data-stu-id="6d00e-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="ae7d5-142">Jäännöspoisto 175 prosenttia</span><span class="sxs-lookup"><span data-stu-id="ae7d5-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="6d00e-143">Jäännöspoisto 200 prosenttia</span><span class="sxs-lookup"><span data-stu-id="6d00e-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="ae7d5-143">Jäännöspoisto 200 prosenttia</span><span class="sxs-lookup"><span data-stu-id="ae7d5-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
