@@ -1,6 +1,6 @@
 ---
 title: Monikanavaisten maksujen yleiskatsaus
-description: Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commerceissa.
+description: Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa.
 author: rubendel
 manager: AnnBe
 ms.date: 09/17/2020
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 6ecfd518298021e08cf73934b450d175cf699a46
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fe64dad3c60560363428d76566d910868b87111
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985858"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244908"
 ---
 # <a name="omni-channel-payments-overview"></a>Omnikanavan maksujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commerceissa. Se sisältää kattavan luettelon tuetuista skenaarioista, tietoja toiminnoista, asetuksista ja vianmäärityksestä sekä joidenkin tavallisten ongelmien kuvauksia.
+Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa. Se sisältää kattavan luettelon tuetuista skenaarioista, tietoja toiminnoista, asetuksista ja vianmäärityksestä sekä joidenkin tavallisten ongelmien kuvauksia.
 
 ## <a name="key-terms"></a>Tärkeimmät termit
 

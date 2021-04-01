@@ -1,6 +1,6 @@
 ---
 title: Myy ja palauta tuotteet, jotka eivät kuulu myymälän on valikoimaan
-description: Dynamics 365 Commerceissa voi myydä ja palauttaa valikoiman ulkopuolisia tuotteita.
+description: Dynamics 365 Commercessa voi myydä ja palauttaa valikoiman ulkopuolisia tuotteita.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4f0801828086a7c5cc316895b5426a184a345ce1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 18d91287bfdcca272b5dd5e8dc8e04b1fd937a6d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982395"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254694"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Myy ja palauta tuotteet, jotka eivät kuulu myymälän on valikoimaan
 
