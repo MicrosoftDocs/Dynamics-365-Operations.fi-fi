@@ -1,6 +1,6 @@
 ---
 title: Kanta-asiakkuuden yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
 author: scott-tucker
 manager: AnnBe
 ms.date: 07/21/2020
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 085071cb7aa314dd8a8c19b8ef2ac926a6ab4103
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1697c377c8291190f27b2057463ddb98aac1f9b9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985808"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264549"
 ---
 # <a name="loyalty-overview"></a>Kanta-asiakkuuden yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Kanta-asiakasohjelmat voivat lisätä asiakasuskollisuutta palkitsemalla asiakkaita, kun ovat tekemisissä jälleenmyyjän brändin kanssa. Voit määrittää Dynamics 365 Commerceissa yksinkertaisia tai monimutkaisia kanta-asiakassovelluksia yritysten välille missä tahansa kaupan kanavassa. Tässä ohjeaiheessa käsitellään Commercen kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
+Kanta-asiakasohjelmat voivat lisätä asiakasuskollisuutta palkitsemalla asiakkaita, kun ovat tekemisissä jälleenmyyjän brändin kanssa. Voit määrittää Dynamics 365 Commercessa yksinkertaisia tai monimutkaisia kanta-asiakassovelluksia yritysten välille missä tahansa kaupan kanavassa. Tässä ohjeaiheessa käsitellään Commercen kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
 
 Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja.
 

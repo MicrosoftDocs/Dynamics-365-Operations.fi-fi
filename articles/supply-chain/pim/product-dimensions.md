@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118678"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260644"
 ---
 # <a name="product-dimensions"></a>Tuotedimensiot
 
@@ -106,7 +106,7 @@ Kun testaat ratkaisujasi, jotka ovat yhteensopivia versiodimension kanssa, etsi 
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Kartat:** Jos kaikki kartat käyttävät varastodimensioita, näiden karttojen vastaava suhdemääritys on päivitettävä, jotta ne sisällyttävät version dimension. Etsi laajennetusta mallista tai taulukkolaajennuksista tauluja, joiden kentissä on varastodimensioita.
-1. **Microsoft Dynamics 365 Commerce -toiminnot:** Kun se on otettu käyttöön, versiodimensio tulee näkyviin koko Commerce-kohtaisen koodin sisään Dynamics 365 Supply Chain Managementissa. Versiodimensiota ei kuitenkaan vielä tueta Commerce-kanavatietokannassa tai myyntipisteen (POS) tai sähköisen kaupankäynnin sovelluksissa. Nämä Commerce-kohtaiset sovellukset eivät tue käyttäjiä, jotka myyvät/lähettävät tai palauttavat/vastaanottavat varastoa versiodimension perusteella. Varaston saatavuushakufunktiot eivät erota varastoa Commerce-sovellusten versiodimensioiden perusteella. Tämä toiminta muistuttaa config-dimension nykyistä toimintaa kautta koko Commercen.
+1. **Microsoft Dynamics 365 Commerce** -toiminnot: Kun se on otettu käyttöön, versiodimensio tulee näkyviin koko Commerce-kohtaisen koodin sisään Dynamics 365 Supply Chain Managementissa. Versiodimensiota ei kuitenkaan vielä tueta Commerce-kanavatietokannassa tai myyntipisteen (POS) tai sähköisen kaupankäynnin sovelluksissa. Nämä Commerce-kohtaiset sovellukset eivät tue käyttäjiä, jotka myyvät/lähettävät tai palauttavat/vastaanottavat varastoa versiodimension perusteella. Varaston saatavuushakufunktiot eivät erota varastoa Commerce-sovellusten versiodimensioiden perusteella. Tämä toiminta muistuttaa config-dimension nykyistä toimintaa kautta koko Commercen.
 
 #### <a name="turn-on-the-version-dimension"></a>Ota käyttöön version tuotedimensio
 
