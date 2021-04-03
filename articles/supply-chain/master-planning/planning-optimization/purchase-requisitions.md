@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqPlanSched, ReqGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8075f8d7c3868c6d6012edbce17dbbb4749209ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 20b4012e054a25d7d21c6f017d8ebcf18f6ee28d
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992341"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501075"
 ---
 # <a name="purchase-requisitions"></a>Ostoehdotukset
 
@@ -44,7 +44,7 @@ Ehdotukset sisällytetään pääsuunnittelun kattavuuslaskentaan seuraavasti:
 
 ### <a name="set-the-approved-requisitions-time-fence-for-a-coverage-group"></a>Kattavuusryhmän hyväksyttyjen ehdotusten aikarajan määrittäminen
 
-1. Valitse **Pääsuunnittelu** \> **Määritys** \> **Kattavuus** \> **Kattavuusryhmä**.
+1. Valitse **Pääsuunnittelu** \> **Määritys** \> **Kattavuus** \> **Kattavuusryhmät**.
 1. Luo tai valitse kattavuusryhmä.
 1. Määritä **Muu**-pikavälilehden **Hyväksyttyjen ehdotusten aikaraja (päivää)** -kenttään aikarajaan sisällytettävien päivien määrä.
 1. Toista vaiheet 2 ja 3 jokaisessa kattavuusryhmässä, jossa halutaan määrittää hyväksyttyjen ehdotusten aikaraja.

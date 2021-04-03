@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970303"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556263"
 ---
 # <a name="planned-cross-docking"></a>Suunniteltu cross-docking
 
@@ -37,14 +37,14 @@ Saapuvien tilausten vastaanoton yhteydessä cross-docking-asennus määrittää 
 > [!NOTE]
 > Varastotapahtumat **eivät** ole rekisteröimättömiä, kun crossing-dock-työ peruutetaan, vaikka tämän ominaisuuden asetus olisi käytössä varastonhallinnan parametreissa.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Suunnitellun cross-docking-toiminnon ottaminen käyttöön
+## <a name="turn-on-the-planned-cross-docking-features"></a>Suunnitellun cross-docking-toimintojen ottaminen käyttöön
 
-Ennen kuin voit käyttää laajennettua suunniteltua cross-dockingia, sinun on otettava järjestelmäsi toiminto käyttöön. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota seuraavat ominaisuudet käyttöön seuraavassa järjestyksessä:
 
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Suunniteltu cross-docking*
+1. *Suunniteltu cross-docking*
+2. *Cross docking -mallit ja sijaintidirektiivit*
 
-## <a name="setup"></a>Määritys
+## <a name="setup"></a>Luo perustiedot
 
 ### <a name="regenerate-load-posting-methods"></a>Lataa kirjausmenetelmät uudelleen
 
@@ -89,6 +89,10 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
     - **Tarkista uudelleen toimituskuitissa:** *Ei*
 
         Tämä vaihtoehto määrittää, tuleeko toimitus vahvistaa uudelleen vastaanoton aikana. Jos tämän asetuksen arvoksi on määritetty *Kyllä*, sekä enimmäisaikaikkuna että vanhenemispäivien alue tarkistetaan.
+
+    - **Direktiivikoodi** Jätä tämä kenttä tyhjäksi
+
+        Tämä valinta sallii järjestelmän käyttää sijaintidirektiivejä parhaan paikan määrittämiseen cross-docking varaston siirtämiselle. Voit määrittää sen määrittämällä jokaiselle asiaankuuluvalle cross-docking-mallille direktiivikoodin. Kukin direktiivikoodi määrittää yksilöivän sijaintidirektiivin.
 
     - **Vahvista aikaikkuna:** *Kyllä*
 

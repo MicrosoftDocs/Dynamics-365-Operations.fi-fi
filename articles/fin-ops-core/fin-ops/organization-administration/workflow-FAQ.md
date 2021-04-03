@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 98d67e240cdd5e64fef1aaf24b4907d1af42056a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797388"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567976"
 ---
 # <a name="workflow-faq"></a>Työnkulun usein kysytyt kysymykset
 
@@ -49,7 +48,7 @@ Seuraavat seikat on otettava huomioon, kun työnkulkuihin lisätään hälytyksi
     - Toimintokeskuksen sanomat voidaan luoda tietyille käyttäjille, kuten työnkulusta luotu sanoma X++-kielessä.
     - [Työnkuluissa on liiketoimintatapahtumia](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), joilla asiakas voi käynnistää työnkulut, joissa on heidän etsimänsä ilmoitukset.   
 
-Tiivistäen voi todeta, että jos käyttäjä ei saa oikeaa ilmoitusta toimintokeskuksesta, kun heille määritetään työnkulun työnimike, he voivat muodostaa lisäilmoituksia tai toisia ilmoituksia käyttämällä [työnkulun liiketoimintatapahtumia](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) yhdessä Microsoft Power Automaten kanssa.
+Tiivistäen voi todeta, että jos käyttäjä ei saa oikeaa ilmoitusta toimintokeskuksesta, kun heille määritetään työnkulun työnimike, he voivat muodostaa lisäilmoituksia tai toisia ilmoituksia käyttämällä [työnkulun liiketoimintatapahtumia](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) yhdessä Microsoft Power Automate'n kanssa.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Miksi työnkulkueditori ei voi käynnistyä AD FS -palvelun avulla?
 Kun Active Directory -liittämispalvelut (AD FS) suoritetaan päivitetyssä ympäristössä, työnkulkueditorilla saattaa olla ongelmia käynnistymisen yhteydessä. Jos näin on, varmista, että URL-osoite https://dynamicsaxworkfloweditor/ lisätään ominaisuuteen **Microsoft Dynamics 365 for Operationsin paikallinen - työnkulku - natiivisovellus** ADFS-asetuksissa.

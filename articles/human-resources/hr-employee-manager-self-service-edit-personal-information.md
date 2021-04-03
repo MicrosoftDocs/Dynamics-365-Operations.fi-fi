@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
+ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115339"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5502985"
 ---
 # <a name="edit-personal-information"></a>Muokkaa henkilökohtaisia tietoja
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Voit muokata henkilökohtaisia tietojasi Dynamics 365 Human Resourcesissa **Työntekijän itsepalvelu -työtilassa**.
 
@@ -38,13 +40,16 @@ Voit muokata myös seuraavia henkilökohtaisia tietoja:
 - Maksutapa
 - Henkilöstöhallinnossa käytettävä kuva
 
+>[!NOTE]
+>Et välttämättä voi muokata kaikkia henkilökohtaisia tietoja, kuten yrityksen yhteystietoja. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
+
 Yleisessä osoitekirjassa määritetyt parametrit määrittävät roolit, jotka voivat tarkastella henkilökohtaisia tietojasi.
 
 1. Valitse henkilöstöhallinnossa **Työntekijän itsepalvelu**.
 
 2. Valitse **Muokkaa henkilökohtaisia tietoja**.
 
-3. Jos haluat muuttaa osoitetta, valitse **Osoitteet** -välilehti. Tekemäsi muutokset näkyvät **Henkilöstöhallinnan** työtilassa ja varoittavat henkilöstöhallintoa. 
+3. Jos haluat muuttaa osoitetta, valitse **Osoitteet** -välilehti. Tekemäsi muutokset näkyvät **Henkilöstöhallinnan** työtilassa ja varoittavat henkilöstöhallintoa.
 
     - Valitse **Lisää** lisätäksesi uuden osoitteen.
     - Jos haluat muokata aiemmin luotua osoitetta, valitse osoite ja valitse sitten **Muokkaa**.
@@ -52,11 +57,13 @@ Yleisessä osoitekirjassa määritetyt parametrit määrittävät roolit, jotka 
     - Voit lisätä tai poistaa yhteystiedon valitsemalla **Lisää asetuksia** ja valitsemalla sitten **Lisäasetukset**. Valitse **Yhteystiedot**-kohdasta **Lisää** tai **Poista** ja muokkaa kenttiä tarpeen mukaan.
     - Jos haluat määrittää aikavyöhykkeen ja sijainnin, valitse **Lisää asetuksia** ja valitse sitten **Lisäasetukset**. Muokkaa **Yleiset**-kohdan kenttiä tarpeen mukaan.
 
-4. Voit muuttaa yhteystietoja valitsemalla **Yhteystiedot**-välilehden. Voit määrittää erityyppisiä yhteystietoja, kuten puhelin-, sähköposti- ja sosiaalisen median linkkejä. Voit määrittää yhteystiedot ensisijaiseksi, mutta voit määrittää vain yhden kunkin tyypin ensisijaiseksi vaihtoehdoksi. 
+4. Voit muuttaa yhteystietoja valitsemalla **Yhteystiedot**-välilehden. Voit määrittää erityyppisiä yhteystietoja, kuten puhelin-, sähköposti- ja sosiaalisen median linkkejä. Voit määrittää yhteystiedot ensisijaiseksi, mutta voit määrittää vain yhden kunkin tyypin ensisijaiseksi vaihtoehdoksi.
 
     - Valitse **Lisää** lisätäksesi uuden yhteystiedon. Muokkaa kenttiä tarvittavalla tavalla.
     - Jos haluat muokata aiemmin luotua yhteystietoa, valitse nimike ja valitse sitten **Muokkaa**. Muokkaa kenttiä tarvittavalla tavalla.
     - Voit määrittää yhteystiedon yksityiseksi valitsemalla kohteen, valitsemalla **Lisäasetukset** ja määrittämällä sitten **Yksityisen** vaihtoehdon arvoksi **Kyllä**. Valitse **OK**.
+      >[!NOTE]
+      >**Lisäasetukset**-painike ei ole käytettävissä, jos järjestelmänvalvojasi on ottanut **(Esikatselu) Estä työntekijöitä lisäämästä tai muokkaamasta osoite- ja yhteystietoja tiettyihin tarkoituksiin** -ominaisuuden käyttöön ympäristössäsi. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
   
 5. Voit muuttaa henkilökohtaisia yhteystietoja valitsemalla **Omat yhteystiedot** -välilehden. Voit määrittää hätäyhteyshenkilöitä, edunsaajia ja huollettavia. Yhteystieto voi olla henkilö tai organisaatio. **Etujen hallinta** -toiminto käyttää henkilökohtaisia yhteystietoja. Katso lisätietoja kohdasta [Henkilökohtaisten yhteyshenkilöiden oikeutusasetusten määrittäminen](hr-benefits-setup-contact-eligibility-options.md).
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994000"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487094"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Varaston määrityksen vianmääritys
 
@@ -109,5 +109,32 @@ Varastosovellukseen voidaan luoda valikkovaihtoehto, jolla työntekijät voivat 
 
 Sivulla voi määrittää tarvittaessa myös muita kenttiä.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>Sijaintiprofiilin lähetys- ja vastaanottoalueen hallintaprofiili ei estä varastotyyppien sekoittamista.
+
+### <a name="issue-description"></a>Ongelman kuvaus
+
+Käytät *lähetyksen konsolidoinnin käytäntöjä*. Olet määrittänyt *lähetys- ja vastaanottoalueen hallintaprofiilin* *sijaintiprofiilille*, mutta kun töitä luodaan, lopullisessa sijainnissa on erilaisia varastotyyppejä.
+
+### <a name="issue-resolution"></a>Ongelman ratkaisu
+
+Lähetys- ja vastaanottoalueen hallintaprofiilit edellyttävät, että työt jaetaan etukäteen. Toisin sanoen lähetys- ja vastaanottoalueen hallintaprofiili odottaa, että työotsikolla ei ole useita asetussijainteja.
+
+Jotta lähetys- ja vastaanottoalueen hallintaprofiili voisi hallita varastojen sekoittamista, on määritettävä työotsikon vaihto.
+
+Tässä esimerkissä lähetys- ja vastaanottoalueen hallintaprofiili on määritetty siten, että **varastotyypit, joita ei pidä sekoittaa** on määritetty arvoon *Lähetystunnus*. Sitä varten määritetään työotsikon vaihto:
+
+1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Työ \> Työmallit**.
+1. Valitse muokattava **Työtilauksen tyyppi** (kuten *Ostotilaukset*).
+1. Valitse muokattava työmalli.
+1. Valitse toimintoruudussa **Muokkaa kyselyä**.
+1. Avaa **Lajittelu**-välilehti ja lisää rivi seuraavin asetuksin:
+    - **Taulukko** - *Väliaikaiset työtapahtumat*
+    - **Johdettu taulukko** - *Väliaikaiset työtapahtumat*
+    - **Kenttä** - *Lähetystunnus*
+1. Valitse **OK**.
+1. Palaat **Työmallit**-sivulle. Valitse toimintoruudussa **Työn otsikoiden katkaisut**.
+1. Valitse toimintoruudussa **Muokkaa**.
+1. Valitse **Kenttänimeen** *Lähetystunnus* yhdistetty valintaruutu.
+1. Valitse toimintoruudussa **Tallenna**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

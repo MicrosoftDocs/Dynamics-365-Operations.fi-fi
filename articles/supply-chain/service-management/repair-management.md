@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 265709f298d9310d5d647eaa029ece778d2e226e
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001343"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470638"
 ---
 # <a name="repair-management"></a>Korjausten hallinta       
 
@@ -37,15 +37,11 @@ Voit määrittää oireiden, vianmäärityksen ja ratkaisun asetukset. Kaikkia n
 
 Käytä seuraavia määrityslomakkeita syöttääksesi tiedot, joita käytetään korjauksen oireiden, vianmäärityksen ja ratkaisun määritykseen.
 
-1.  Valitse **Huollon hallinta** \> **Määritys** \> **Korjaus** \> **Olosuhteet**.
-
-2.  Valitse **Huollon hallinta** \> **Määritys** \> **Korjaus** \> **Oirealueet**.
-
-3.  Valitse **Huollon hallinta** \> **Määritys** \> **Korjaus** \> **Vianmääritysalueet**.
-
-4.  Valitse **Huollon hallinta** \> **Määritys** \> **Korjaus** \> **Ratkaisut**.
-
-5.  Valitse **Huollon hallinta** \> **Määritys** \> **Korjaus** \> **Korjauksen vaiheet**.
+- **Palveluiden hallinta** \> **Määritys** \> **Korjaus** \> **Olosuhteet**.
+- **Palveluiden hallinta** \> **Määritys** \> **Korjaus** \> **Oirealueet**.
+-  **Palvelujen hallinta** \> **Määritys** \> **Korjaus** \> **Vianmääritysalueet**.
+- **Palvelujen hallinta** \> **Määritys** \> **Korjaus** \> **Ratkaisut**.
+- **Palvelujen hallinta** \> **Määritys** \> **Korjaus** \> **Korjauksen vaiheet**.
 
 ## <a name="symptoms-and-conditions"></a>Oireet ja olosuhteet
 
@@ -81,19 +77,19 @@ Voit luoda korjausrivejä jokaisessa korjausprosessin vaiheessa.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Korjausrivin luominen huoltotilaukseen
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1.  Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
 2.  Valitse huoltotilaus, jossa korjausta kaipaava huoltokohde on.
 
 3.  Valitse **Korjaus** \> **Korjausrivit** avataksesi **Korjausrivit**-lomakkeen.
 
-4.  Luo uusi rivi CTRL+N-näppäinyhdistelmällä.
+4.  Luo uusi rivi valitsemalla **Uusi**.
 
 5.  Valitse huoltokohde. Voit valita minkä tahansa huoltokohteen, jolle on määritetty kohteen suhde huoltotilauksessa.
 
 6.  Valitse mitkä tahansa korjausriville haluamasi esiintyvien oireiden, vianmäärityksen ja suorituksen arvot. Luo tarvittaessa huomautus korjausriville valitsemalla **Huomautus**-välilehti.
 
-7.  Tallenna uusi korjausrivi painamalla näppäinyhdistelmää CTRL+S. **Luonnin päivämäärä ja aika** -kenttä **Yleinen**-välilehdellä **Korjausrivit**-lomakkeessa päivitetään tallennusajalla.
+7.  Tallenna uusi korjausrivi valitsemalla **Tallenna**. **Luonnin päivämäärä ja aika** -kenttä **Yleinen**-välilehdellä **Korjausrivit**-lomakkeessa päivitetään tallennusajalla.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Edistymisen seuranta ja korjausongelman ratkaisu
 
