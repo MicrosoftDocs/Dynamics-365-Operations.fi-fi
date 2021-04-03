@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b46e49ec3510c93383216fdffeca2793a9076872
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115677"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560456"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -92,9 +91,13 @@ Koska tuote ilmaista varastointiyksikkönä, käsitteet erilliset tuotteet, pä�
 
 Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon, jossa on sama valuutta. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. Jos ilmoitetulla valuutalla ei ole hinnastoa, hinnasto luodaan automaattisesti ja tuote määritetään siihen. 
 
+Finance and Operations -sovellukseen liittyvän valuutan yksikköhaun oletusarvoiseen hintaluetteloon liittävän kaksoiskirjoituksen laajennusten nykyinen toteutus ja asiakasvuorovaikutusovelluksen ensimmäinen hinnasto käyttävät aakkosellista lajittelua hinnaston nimessä. Jos haluat määrittää tietyn valuutan oletushintaluettelon, kun valuuttaa varten on useita hinnastoja, hintaluettelon nimi on päivitettävä aakkosjärjestyksessä aiempaan nimeen kuin muut saman valuutan hinnastoissa.
+
 Finance and Operations -sovellusten oletustuotteet synkronoidaan muihin Dynamics 365 -sovelluksiin **Luonnos**-tilassa. Jos haluat synkronoida **Aktiivinen**-tilassa olevan tuotteen, jotta sitä voi käyttää esimerkiksi suoraan myyntitilauksen tarjouksissa, seuraavat asetukset on valittava: valitse ensin **Järjestelmä> Hallinto > Järjestelmän hallinta > Järjestelmäasetukset > Sales**-välilehti ja sitten **Luo tuotteet aktiivisessa tilassa = kyllä**. 
 
 Tuotteita synkronoitaessa on annettava arvo **Myyntiyksikkö**-kenttään Finance and Operations -sovelluksessa, koska se on pakollinen kenttä Salesissa.
+
+Tuoteperheiden luomista Dynamics 365 Salesista ei tueta tuotteiden kaksoiskirjoituksen synkronoinnissa.
 
 Tuotteet synkronoidaan Finance and Operations -sovelluksesta Dataverseen. Tämän vuoksi tuotetaulusarakkeiden arvot voidaan muuttaa Dataversessa, mutta kun synkronointi käynnistyy (tuotesaraketta muokataan Finance and Operations -sovelluksessa), se korvaa Dataversen arvot. 
 

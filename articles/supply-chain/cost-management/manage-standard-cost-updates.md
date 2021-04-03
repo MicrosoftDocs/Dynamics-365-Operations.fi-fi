@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 69992
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
-ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
+ms.openlocfilehash: fc4ae40e9740ce76e79b76c2bff2c690568abff2
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5024667"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500595"
 ---
 # <a name="manage-standard-cost-updates"></a>Vakiokustannuspäivitysten hallinta
 
@@ -45,6 +45,8 @@ Seuraavassa esimerkissä kuvataan, miten yhden version ja kahden version menette
 Tässä esimerkissä käytettiin vielä yhtä kustannuslaskelmaversiota koko vuoden 2020 päivitysten hallintaan. Lisäkustannuslaskelmaversioita voi käyttää useita; esimerkiksi jokaisella päivityserällä voi olla oma, erillinen versionsa. Kun käytössä on useampia kustannuslaskentoja, varmistus on ilmaistava aktiivisina kustannuksina, koska ne jakautuvat useille kustannuslaskentaversioille.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Vakiokustannusten uudelleenarvostuksen taloushallinnon dimensiot
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Uuden vakiohinnan aktivointi arvostaa yleensä uudelleen käytettävissä olevan varaston arvon vakiokustannuksen uudelleenarvostustapahtumien perusteella. Nimikkeen taloushallinnon dimensiot kirjataan yleensä tapahtumiin. Jos kuitenkin haluat hallita taloushallinnon dimensioiden kirjaamista ja kirjaamistapaa, ota *Varaston vakiokustannusten uudelleenarvostuksen taloushallinnon dimensioihin oletusarvoihin palaamisen vaihtoehdot* -toiminto käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Kun tämä toiminto on otettu käyttöön valitse **Kustannusten hallinta > Varaston kirjanpitokäytäntöjen määrittäminen > Parametrit** ja määritä avattavassa **Taloushallinnon dimension alkuperä** luettelossa jokin seuraavista arvoista:
 

@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123465"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500691"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Managementin tallennetut vakionäkymät
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management sisältää useita tallennettuja näkyviä, jotka voidaan ottaa käyttöön ja joita voidaan käyttää tarvittaessa. Osa näistä tallennetuista vakionäkymistä on optimoitu ja nimetty tietyn roolin tai tehtävän mukaan (kuten Laadunvalvonta tai Vastaanotto). Muut on optimoitu siten, että ne sisältävät vain kentät ja asetukset, joita asiakkaat Microsoftin käyttötilastojen mukaan käyttävät eniten. Näitä tallennettuja näkymiä kutsutaan yleensä *yksinkertaistetuiksi* näkymiksi. Tässä aiheessa käsitellään käytettävissä olevia tallennettuja vakionäkymiä sekä niiden käyttöön ottamista ja mukauttamista.
 

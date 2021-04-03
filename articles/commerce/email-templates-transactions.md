@@ -3,7 +3,7 @@ title: Tapahtumasidonnaisten tapahtumien sähköpostimallien luominen
 description: Tässä ohjeaiheessa käsitellään tapahtumasidonnaisten tapahtumien sähköpostimallien luontia, lataamista ja määrittämistä Microsoft Dynamics 365 Commercessa.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000779"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555242"
 ---
-# <a name="create-email-templates-for-transactional-events"></a>Tapahtumasidonnaisten tapahtumien sähköpostimallien luominen
+# <a name="create-email-templates-for-transactional-events"></a>Tapahtuman tapahtumien sähköpostimallien luominen
 
 [!include [banner](includes/banner.md)]
 
@@ -39,7 +39,7 @@ Ennen tietyn tapahtumasidonnaisen tapahtuman yhdistämistä sähköpostimalliin 
 
 Voit luoda sähköpostimallin seuraavien ohjeiden avulla.
 
-1. Siirry Commerce Headquarters -sovelluksessa kohtaan **Organisaation sähköpostimallit**, joka on kohdassa **Retail ja Commerce \> Headquarters -sovelluksen määritys \> Organisaation sähköpostimallit** tai **Organisaation hallinta \> Määritys \> Organisaation sähköpostimallit**.
+1. Siirry Commerce Headquarters -sovelluksessa kohtaan **Retail ja Commerce \> Headquarters -sovelluksen määritys \> Organisaation sähköpostimallit** tai **Organisaation hallinta \> Määritys \> Organisaation sähköpostimallit**.
 1. Valitse **Uusi**.
 1. Määritä seuraavat kentät **Yleiset**-kohdassa:
 
@@ -78,28 +78,29 @@ Esimerkki:
 
 Seuraavilla paikkamerkeillä noudetaan ja näytetään tiedot, jotka on määritetty myyntitilaustasolla (eikä myyntirivitasolla).
 
-| Paikkamerkin nimi    | Paikkamerkin arvo                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Tilauksen tehneen asiakkaan nimi.                   |
-| salesid             | Tilauksen myyntitunnus.                                       |
-| deliveryaddress     | Lähetettyjen tilausten toimitusosoite.                         |
-| customeraddress     | Asiakkaan osoite.                                     |
-| deliverydate        | Toimituspäivä.                                               |
-| shipdate            | Lähetyspäivä.                                                   |
-| modeofdelivery      | Tilauksen toimitustapa.                                  |
-| kulut             | Tilauksen kokonaiskulut.                                 |
-| vero                 | Tilauksen verot yhteensä.                                     |
-| yhteensä               | Tilauksen kokonaissumma.                                  |
-| ordernetamount      | Tilauksen kokonaissumma ilman veroja.             |
-| alennus            | Tilauksen kokonaisalennus.                                |
-| storename           | Sen myymälän nimi, jossa tilaus tehtiin.                |
-| storeaddress        | Tilauksen tehneen myymälän osoite.                  |
-| storeopenfrom       | Tilauksen tehneen myymälän avaamisaika.             |
-| storeopento         | Tilauksen tehneen myymälän sulkemisaika.             |
-| pickupstorename     | Sen myymälän nimi, josta tilaus noudetaan.         |
-| pickupstoreaddress  | Sen myymälän osoite, josta tilaus noudetaan.      |
-| pickupopenstorefrom | Sen myymälän avaamisaika, josta tilaus noudetaan. |
-| pickupopenstoreto   | Sen myymälän sulkemisaika, josta tilaus noudetaan. |
+| Paikkamerkin nimi     | Paikkamerkin arvo                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Tilauksen tehneen asiakkaan nimi.               |
+| salesid              | Tilauksen myyntitunnus.                                   |
+| deliveryaddress      | Lähetettyjen tilausten toimitusosoite.                     |
+| customeraddress      | Asiakkaan osoite.                                 |
+| customeremailaddress | Sähköpostiosoite, jonka asiakas on antanut uloskuittauksen aikana.     |
+| deliverydate         | Toimituspäivä.                                           |
+| shipdate             | Lähetyspäivä.                                               |
+| modeofdelivery       | Tilauksen toimitustapa.                              |
+| kulut              | Tilauksen kokonaiskulut.                             |
+| vero                  | Tilauksen verot yhteensä.                                 |
+| yhteensä                | Tilauksen kokonaissumma.                              |
+| ordernetamount       | Tilauksen kokonaissumma ilman veroja.         |
+| alennus             | Tilauksen kokonaisalennus.                            |
+| storename            | Sen myymälän nimi, jossa tilaus tehtiin.            |
+| storeaddress         | Tilauksen tehneen myymälän osoite.              |
+| storeopenfrom        | Tilauksen tehneen myymälän avaamisaika.         |
+| storeopento          | Tilauksen tehneen myymälän sulkemisaika.         |
+| pickupstorename      | Sen myymälän nimi, josta tilaus noudetaan.     |
+| pickupstoreaddress   | Sen myymälän osoite, josta tilaus noudetaan.  |
+| pickupopenstorefrom  | Sen myymälän avaamisaika, josta tilaus noudetaan. |
+| pickupopenstoreto    | Sen myymälän sulkemisaika, josta tilaus noudetaan. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Tilausrivin paikkamerkit (myyntirivitaso)
 
@@ -169,11 +170,8 @@ Esimerkki:
 
 Kuitit voidaan lähettää sähköpostitse asiakkaille, jotka tekevät ostoksia vähittäismyymälässä. Yleisesti ottaen sähköpostitse lähetettävän kuittimallin luontivaiheet ovat samat kuin muiden tapahtumasidonnaisten tapahtumien mallien luonnissa. Seuraavat muutokset on kuitenkin tehtävä:
 
-- Sähköpostimallin sähköpostitunnuksen on oltava **emailRecpt**.
 - Kuitin teksti lisätään sähköpostiin **%message%**-paikkamerkin avulla. Kuitin tekstin oikea hahmonnus varmistetaan asettamalla **%message%**-paikkamerkin ympärille HTML-tunnisteet **&lt;pre&gt;** ja **&lt;/pre&gt;**.
-- Sähköpostin ylä- ja alatunnisteen HTML-koodin rivinvaihdot muunnetaan HTML-tunnisteiksi **&lt;br /&gt;**, jolloin kuitin teksti hahmonnetaan oikein. Tarpeeton pystysuuntainen tila voidaan poistaa kuittisähköposteista poistamalla kaikki sellaiset rivinvaihdot HTML-koodissa, joissa pystysuuntaista tilaa ei tarvita.
-
-Lisätietoja sähköpostikuittien määrittämisestä on kohdassa [Sähköpostikuittien määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- **%receiptid%**-paikkamerkkiä voidaan käyttää näyttämään kuitin tunnusta vastaavan QR-koodin tai viivakoodin. (QR-koodit ja viivakoodit luodaan dynaamisesti, ja niitä voi tuottaa kolmannen osapuolen palvelu.) Lisätietoja siitä, miten sähköpostilla postitetussa kuitissa näytetään QR-koodi tai viivakoodi, on kohdassa [QR-koodin tai viivakoodin lisääminen tapahtuma- tai kuittisähköposteihin](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Sähköpostin HTML-koodin lataaminen
 
