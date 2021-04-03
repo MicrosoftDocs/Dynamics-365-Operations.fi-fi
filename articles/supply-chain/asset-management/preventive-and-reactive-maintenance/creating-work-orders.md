@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131790"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500571"
 ---
 # <a name="creating-work-orders"></a>Työtilauksien luonti
 
@@ -62,8 +62,7 @@ Ylläpitoaikatauluun perustuvia työtilauksia luodaan seuraavasti:
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Ylläpitosuunnitelman suorittamisen aikana automaattisesti luotavien työtilausrivien ryhmitteleminen
 
-> [!IMPORTANT]
-> Tässä osassa kuvatut toiminnot ovat saatavana esiversion osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [One Version -palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Tällä toiminnolla voidaan määrittää ylläpitosuunnitelman perusteella säännöt, joilla työtilausrivit ryhmitellään yhteen työtilaukseen, kun järjestelmä on määritetty luomaan työtilauksia automaattisesti. Aiemmin automaattisesti luoduissa työtilauksissa saattoi olla vain yksi rivi. Työtilaukset voidaan kuitenkin nyt ryhmitellä esimerkiksi resurssin, resurssin tyypin tai toiminnallisen sijainnin perusteella. (Tällainen ryhmittely oli jo mahdollisesti manuaalisesti luoduissa työtilauksissa tämän aiheen edellisessä osassa kuvatulla tavalla.)
 

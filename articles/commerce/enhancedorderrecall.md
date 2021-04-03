@@ -3,7 +3,7 @@ title: Myyntipisteen Peruuta tilaus -toiminto
 description: Tässä ohjeaiheessa käsitellään myyntipisteen parannetulla tilausten peruutussivuilla olevia ominaisuuksia.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010071"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585127"
 ---
 # <a name="recall-order-operation-in-pos"></a>Myyntipisteen Peruuta tilaus -toiminto
 
@@ -35,7 +35,7 @@ Ota tämä toiminto käyttöön ottamalla **Parannettu tilauksen peruutustoimint
 
 Näyttöasetukset:
 - **Ei mitään** – Tällä asetuksella toiminto otetaan käyttöön ilman tiettyä näyttöä. Kun käyttäjä avaa toiminnon tällä määrityksellä, häntä pyydetään hakemaan tilaukset tai tekemään valinnan esimääritetystä tilaussuodattimesta.
-- **Täytettävät tilaukset** – Kun käyttäjä käynnistää toiminnon, automaattisesti suoritettava kysely tekee haun ja luettelon tilauksista, jotka myymälän on täytettävä. Nämä tilaukset määritetään myymälästä noudatettavaksi tai lähetettäväksi eikä näiden tilausten rivejä ole vielä poimittu tai pakattu.
+- **Täytettävät tilaukset** – Kun käyttäjä käynnistää toiminnon, automaattisesti suoritettava kysely tekee haun ja luettelon tilauksista, jotka käyttäjän nykyisen myymälän on täytettävä. Nämä tilaukset määritetään myymälästä noudatettavaksi tai lähetettäväksi eikä näiden tilausten rivejä ole vielä poimittu tai pakattu.
 - **Poimittavat tilaukset** – Kun käyttäjä käynnistää toiminnon, automaattisesti suoritettava kysely tekee haun ja luettelon tilauksista, jotka on määritetty myymälästä poimittavaksi käyttäjän nykyisestä myymälästä.
 - **Lähetettävät tilaukset** – Kun käyttäjä käynnistää toiminnon, automaattisesti suoritettava kysely tekee haun ja luettelon tilauksista, jotka on määritetty lähetettäväksi käyttäjän nykyisestä myymälästä.
 
@@ -46,7 +46,7 @@ Jos **Peruuta tilaus** -toiminto käynnistetään myyntipisteessä ja jos näyt�
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 
-Kun ehtojen mukainen haku on tehty, sovellus näyttää vastaavien myyntitilausten luettelon.
+Kun ehtojen mukainen haku on tehty, sovellus näyttää vastaavien myyntitilausten luettelon. Haku- tai suodatusasetuksia käytettäessä on tärkeää muistaa, että haettujen tilausten ei tarvitse olla käyttäjän nykyiseen myymälään linkitettyjä tilauksia. Tämä hakuprosessi hakee ja näyttää kaikki hakuehtoja vastaavat asiakastilaukset, vaikka tilaus olisi luotu tai määritetty toisen myymälän/kanavan tai varaston sijainnin avulla.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -54,15 +54,18 @@ Käyttäjä voi valita luettelossa tilauksen ja katsoa lisätietoja. Näytön oi
 
 Valitse toiminto sovelluspalkissa. Tilauksen tilan mukaan määräytyy, voidaanko tietyt toiminnot ottaa käyttää.
 
-- **Palautus** – palauttaa vähintään yhden valittuun myyntilaskuun liittyvän laskun.
+- **Palauta** – Aloittaa prosessin, joka luo palautuksen valitun asiakastilauksen laskutetuille tuotteille.
 
-- **Peruuta** – myöntää valitun myyntitilauksen täyden peruutuksen.
+- **Peruuta** – myöntää valitun myyntitilauksen täyden peruutuksen. Tämä vaihtoehto ei ole käytettävissä puhelinkeskuksen kanavan kautta käynnistettaville tilauksille, eikä sitä voi käyttää tilauksen osittaista peruuttamista varten.
 
 - **Täytä** – Siirtää käyttäjän tilauksen täyttämissivulle, joka esisuodatetaan valittuun tilaukseen. Näkyvissä on vain ne valitun tilauksen tilausrivit, jotka ovat avoimia täytettäväksi käyttäjän myymälässä.
 
-- **Muokkaa** – käyttäjät saavat tehdä muutoksia valittuun asiakastilaukseen.
+- **Muokkaa** – käyttäjät saavat tehdä muutoksia valittuun asiakastilaukseen. Tilauksia voi muokata vain [tietyissä tilanteissa](customer-orders-overview.md#edit-an-existing-customer-order).
 
-- **Keräile** – käynnistää keräilytyönkulun, jossa käyttäjä voi valita kerättävät tuotteet ja joka luo myynnin keräilytapahtuman.
+- **Nouto** – Tämä vaihtoehto on käytettävissä, jos tilauksessa on vähintään yksi rivi, joka on määritetty noudettavaksi käyttäjän nykyisessä myymälässä. Tämä toiminto käynnistää keräilytyönkulun, jossa käyttäjä voi valita kerättävät tuotteet ja joka luo myynnin keräilytapahtuman.
 
+## <a name="add-notifications-to-the-recall-order-operation"></a>Ilmoitusten lisääminen palautustilauksen toimintoon
+
+Versiossa 10.0.18 ja sitä myöhemmässä versiossa voit tarvittaessa määrittää **Tilauksen palautus** -toiminnolle myyntipisteilmoitukset ja live- ruutuhälytykset. Lisätietoja on kohdassa [Tilausilmoitusten näyttäminen myyntipisteessä](notifications-pos.md).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

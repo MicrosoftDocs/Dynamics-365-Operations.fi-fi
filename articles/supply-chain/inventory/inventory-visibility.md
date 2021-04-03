@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 4e588be2ac5aae395ca66e3c9a743a67d71db7c0
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114667"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574219"
 ---
 # <a name="inventory-visibility-add-in"></a>Varaston näkyvyyden apuohjelma
 
@@ -48,11 +48,64 @@ Lisätietoja on kohdassa [Lifecycle Services -resurssit](https://docs.microsoft.
 Ennen varaston näkyvyyden apuohjelman asentamista:
 
 - Hanki LCS-toteutusprojekti, jossa on otettu käyttöön vähintään yksi ympäristö.
-- Luo tarjoomalle beeta-avaimet LCS:ssa.
-- Ota tarjooman beeta-avaimet käyttöön käyttäjälle LCS:ssa.
-- Ota yhteys Microsoftin varaston näkyvyyden tuotetiimiin and ympäristötunnus, jossa haluat ottaa varaston näkyvyyden apuohjelman käyttöön.
+- Varmista, että kohdassa [Lisäosien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) annetut edellytykset lisäosien määrittämiselle on täytetty. Varaston näkyvyys ei edellytä kaksoiskirjoituslinkitystä.
+- Ota yhteyttä varaston näkyvyyden tiimiin [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), jotta saat seuraavat kolme vaadittua tiedostoa:
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (jos käynnissä ollut Supply Chain Managementin versio on aiempi kuin 10.0.18)
+
+> [!NOTE]
+> Tällä hetkellä tuettuja maita ja alueita ovat Kanada, Yhdysvallat ja Euroopan unioni (EU).
 
 Jos sinulla on näitä edellytyksiä koskevia kysymyksiä, ota yhteys varaston näkyvyyden tuotetiimiin.
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Määritys Dataverse
+
+Määritä Dataverse noudattamalla seuraavia ohjeita.
+
+1. Lisää palveluperiaate vuokraajaan:
+
+    1. Asenna Azure AD PowerShell Module v2, kuten kuvattu kohdassa [Asenna Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Suorita seuraava PowerShell-komento.
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Luo sovelluskäyttäjä varaston näkyvyydelle Dataversessä:
+
+    1. Avaa Dataverse-ympäristön URL-osoite.
+    1. Valitse **Lisäasetukset \> Järjestelmä \> Suojaus \> Käyttäjät** ja luo sovelluskäyttäjä. Vaihda sivunäkymäksi **Sovelluskäyttäjät** näkymävalikossa.
+    1. Valitse **Uusi**. Aseta sovellustunnukseksi *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (Objektin tunnus ladataan automaattisesti, kun tallennat muutokset.) Voit mukauttaa nimeä. Voit muuttaa sen esimerkiksi nimeksi *Varaston näkyvyys*. Kun olet valmis, valitse **Tallenna**.
+    1. Valitse **Määritä rooli** ja valitse sitten **Järjestelmänvalvoja**. Jos saatavana on rooli nimeltä **Common Data Service -käyttäjä**, valitse myös se.
+
+    Lisätietoja on kohdassa [Sovelluskäyttäjän luominen](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Tuo `Inventory Visibility Dataverse Solution.zip` -tiedosto, joka sisältää Dataverse-konfiguraatioon liittyvät entiteetit ja Power Apps -sovellukset:
+
+    1. Siirry **Ratkaisut**-sivulle.
+    1. Valitse **Tuo**.
+
+1. Tuo konfiguraation päivityksen käynnistimen työnkulku:
+
+    1. Siirry Microsoft Flow -sivulle.
+    1. Varmista, että yhteys nimeltä *Dataverse (vanha)* on olemassa. (Jos sitä ei ole olemassa, luo se.)
+    1. Tuo `Inventory Visibility Configuration Trigger.zip` -tiedosto. Kun käynnistys on tuotu, se näkyy **Omat työnkulut** -kohdassa.
+    1. Alusta seuraavat neljä muuttujaa ympäristön tietojen perusteella:
+
+        - Azure-vuokraajan tunnus
+        - Azure-sovelluksen asiakastunnus
+        - Azure-sovelluksen asiakasohjelman salasana
+        - Varaston näkyvyyden päätepiste
+
+            Lisätietoja tästä muuttujasta on jäljempänä tässä ohjeaiheessa kohdassa [Varaston näkyvyyden integraation määrittäminen](#setup-inventory-visibility-integration).
+
+        ![Määrityksen käynnistin](media/configuration-trigger.png "Määrityksen käynnistin")
+
+    1. Valitse **Ota käyttöön**.
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>Lisäosan asentaminen
 
@@ -61,14 +114,16 @@ Varaston näkyvyyden apuohjelman asentaminen:
 1. Kirjaudu [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) -portaaliin.
 1. Valitse aloitussivulla projekti, jossa ympäristö on otettu käyttöön.
 1. Valitse projektisivulla ympäristö, johon haluat asentaa apuohjelman.
-1. Vieritä ympäristösivulla **Ympäristöapuohjelmat** -osaan. Jos osa ei ole näkyvissä, varmista, että edellytyksissä mainitut beeta-avaimet on käsitelty kokonaisuudessaan.
+1. Siirry ympäristösivulla alaspäin, kunnes näet **Ympäristön lisäosat** -kohdan **Power Platform -integraatio** -kohdassa, josta löytyy Dataverse-ympäristön nimi.
 1. Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.
+
     ![Ympäristösivu LCS:ssa](media/inventory-visibility-environment.png "Ympäristösivu LCS:ssa")
+
 1. Valitse **Asenna uusi apuohjelma** -linkki. Käytettävissä olevien apuohjelmien luettelo avautuu.
-1. Valitse luettelossa **Varastopalvelu**. (Huomaa, että sen nimi voi olla nyt **Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelma**.)
+1. Valitse luettelosta **Vataston näkyvyys**.
 1. Anna arvot seuraavissa ympäristön kentissä:
 
-    - **AAD-sovelluksen tunnus**
+    - **AAD-sovelluksen (asiakasohjelman) tunnus**
     - **AAD-vuokraajan tunnus**
 
     ![Apuohjelman määrityssivu](media/inventory-visibility-setup.png "Apuohjelman määrityssivu")
@@ -76,7 +131,70 @@ Varaston näkyvyyden apuohjelman asentaminen:
 1. Hyväksy käyttöehdot valitsemalla **Käyttöehdot**-valintaruutu.
 1. Valitse **Asenna**. Apuohjelman tilana näkyy nyt **Asennetaan**. Se on valmis, päivitä sivu, jonka jälkeen tilana on **Asennettu**.
 
-### <a name="get-a-security-service-token"></a>Palvelun suojaustunnuksen hankkiminen
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>Lisäosan asennuksen poistaminen
+
+Poista apuohjelman asennus valitsemalla **Poista asennus**. Kun päivität LCS:n, varaston näkyvyyden apuohjelma poistetaan. Asennuksen poistoprosessi poistaa apuohjelman rekisteröinnin sekä käynnistää kaikkien palveluun tallennettujen liiketoimintatietojen puhdistustyön.
+
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Käytettävissä olevan varaston tietojen käyttäminen Supply Chain Managementista
+
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Varaston näkyvyyden integrointipaketin käyttöönotto
+
+Jos käytössäsi on Supply Chain Management -versio 10.0.17 tai aiempi, ota yhteyttä varaston näkyvyyden tukihenkilöstöön osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) saadaksesi pakettitiedoston. Ota sitten paketti käyttöön LCS:ssä.
+
+> [!NOTE]
+> Jos käyttöönoton aikana ilmenee version vastaavuusvirhe, X++-projekti on tuotava manuaalisesti kehitysympäristöön. Luo sitten käyttöön otettava paketti kehitysympäristössä ja ota se käyttöön tuotantoympäristössä.
+> 
+> Koodi sisältyy Supply Chain Management -versioon 10.0.18. Jos käytössä on tämä versio tai myöhempi versio, käyttöönottoa ei tarvita.
+
+Varmista, että seuraavat ominaisuudet on otettu käyttöön Supply Chain Management -ympäristössä. (Oletusarvon mukaan ne ovat käytössä.)
+
+| Toiminnon kuvaus | Koodiversio | Vaihda luokka |
+|---|---|---|
+| Varastodimensioiden ottaminen käyttöön InventSum-taulussa tai poistaminen käytöstä | 10.0.11 | InventUseDimOfInventSumToggle |
+| Varastodimensioiden ottaminen käyttöön InventSumDelta-taulussa tai poistaminen käytöstä | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Määritä Varaston näkyvyyden integrointi
+
+1. Avaa Supply Chain Managementissa **[Ominaisuuden hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -työtila ja ota käyttöön **Varaston näkyvyyden integraatio** -ominaisuus.
+1. Siirry kohtaan **Varastonhallinta \> Määritys \> Varaston näkyvyyden integraation parametrit** ja kirjoita sen ympäristön URL-osoite, jossa varaston näkyvyys on käytössä.
+
+    Etsi LCS-ympäristösi Azure-alue ja kirjoita sitten URL-osoite. URL-osoitteessa on seuraava muoto:
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    Esimerkiksi Euroopassa ympäristössäsi on jokin seuraavista URL-osoitteista:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    Seuraavat alueet ovat käytettävissä tällä hetkellä.
+
+    | Azure-alue | Alueen lyhyt nimi |
+    |---|---|
+    | Itä-Australia | eau |
+    | Kaakkois-Australia | seau |
+    | Kanada, keskinen | cca |
+    | Kanada, itäinen | eca |
+    | Pohjois-Eurooppa | neu |
+    | Länsi-Eurooppa | weu |
+    | Itä-Yhdysvallat | eus |
+    | Länsi-Yhdysvallat | wus |
+
+1. Valitse **Varastonhallinta \> Kausittainen \> Varaston näkyvyyden integraatio** ja ota työ käyttöön. Kaikki Supply Chain Managementin varastomuutostapahtumat kirjataan nyt varaston näkyvyyteen.
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>Varaston näkyvyyden apuohjelman julkinen ohjelmointirajapinta
+
+Varaston näkyvyyden apuohjelman julkinen REST API sisältää useita nimenomaisia integroinnin päätepisteitä. Se tukee kolmea pääasiallista vuorovaikutustyyppiä:
+
+- Varastosaldon määrän muutosten kirjaaminen apuohjelmaan ulkoisesta järjestelmästä
+- Nykyisten käytettävissä olevien määrien kysely ulkoisesta järjestelmästä
+- Automaattinen synkronointi Supply Chain Managementin käytettävissä olevan varaston kanssa
+
+Automaattinen synkronointi ei kuulu julkiseen ohjelmointirajapintaan. Sen sijaan sitä käsitellään niiden ympäristöjen taustalla, joissa varaston näkyvyyden apuohjelma on otettu käyttöön.
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Todennus
+
+Ympäristön suojaustunnuksen avulla kutsutaan varaston näkyvyyden apuohjelmaa. Siksi sinun on luotava *Azure Active Directory (Azure AD) -tunnus* Azure AD -sovelluksen avulla. Tämän jälkeen Azure AD -tunnuksen avulla saat *käyttöoikeustunnuksen* suojauspalvelusta.
 
 Palvelun suojaustunnus haetaan seuraavasti:
 
@@ -140,27 +258,7 @@ Palvelun suojaustunnus haetaan seuraavasti:
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>Lisäosan asennuksen poistaminen
-
-Poista apuohjelman asennus valitsemalla **Poista asennus**. Päivitä LCS, ja varaston näkyvyyden apuohjelma poistetaan. Asennuksen poistoprosessi poistaa apuohjelman rekisteröinnin sekä käynnistää kaikkien palveluun tallennettujen liiketoimintatietojen puhdistustyön.
-
-## <a name="inventory-visibility-add-in-public-api"></a>Varaston näkyvyyden apuohjelman julkinen ohjelmointirajapinta
-
-Varaston näkyvyyden apuohjelman julkinen REST API sisältää useita nimenomaisia integroinnin päätepisteitä. Se tukee kolmea pääasiallista vuorovaikutustyyppiä:
-
-- Varastosaldon määrän muutosten kirjaaminen apuohjelmaan ulkoisesta järjestelmästä.
-- Nykyisten käytettävissä olevien määrien kysely ulkoisesta järjestelmästä.
-- Automaattinen synkronointi Supply Chain Managementin käytettävissä olevan varaston kanssa.
-
-Automaattinen synkronointi ei sisälly julkiseen ohjelmointirajapintaan, vaan se käsitellään taustalla ympäristöissä, joissa varaston näkyvyyden apuohjelma on otettu käyttöön.
-
-### <a name="authentication"></a>Todennus
-
-Ympäristön suojaustunnusta käytetään varaston näkyvyyden apuohjelman kutsumiseen, joten Azure Active Directory -tunnus on luotava Azure Active Directory -sovelluksessa.
-
-Lisätietoja suojaustunnuksen hakemista on kohdassa [Varaston näkyvyyden apuohjelman asentaminen](#install-add-in).
-
-### <a name="configure-the-inventory-visibility-api"></a>Varaston näkyvyyden ohjelmointirajapinnan määrittäminen
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Varaston näkyvyyden ohjelmointirajapinnan määrittäminen
 
 Ennen palvelun käyttöä on tehtävä valmiiksi seuraavissa aliosissa käsiteltävät määritykset. Määritykset voivat vaihdella ympäristön tietojen mukaan. Siinä pääasiallisesti neljä osaa:
 
@@ -257,7 +355,7 @@ Seuraavassa esimerkissä on väri- ja kokoyhdistelmää käyttävä tuotekysely.
 
 #### <a name="custom-measurement"></a>Mukautettu mitta
 
-Vaikka oletusarvoiset mittamäärät linkitetään Supply Chain Managementiin, myös oletusmittamäärien yhdistelmistä koostuva määrä on mahdollinen. Sitä varten on määritettävä mukautettuja määritä, jotka lisätään käytettävissä olevan määrän tulosteisiin.
+Oletusmittamäärät linkitetään Supply Chain Managementiin. Haluat ehkä kuitenkin määrän, joka koostuu oletusmitoista. Sitä varten on määritettävä mukautettuja määritä, jotka lisätään käytettävissä olevan määrän tulosteisiin.
 
 Toiminnon antaa yksinkertaisesti mahdollisuuden määrittää lisättävän ja/tai vähennettävän mittajoukon, joiden avulla voidaan muodostaa mukautettu mitta.
 

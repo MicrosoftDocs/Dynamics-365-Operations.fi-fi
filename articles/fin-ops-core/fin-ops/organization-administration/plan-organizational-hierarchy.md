@@ -3,10 +3,9 @@ title: Organisaatiohierarkian suunnitteleminen
 description: Ennen kuin määrität organisaation ja organisaatiohierarkiat, varmista, että suunnittelet miten liiketoimintasi mallinnetaan.
 author: sericks007
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 7bf683487a20203d49fbab680373fbf48a5c58b6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154406"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569358"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Organisaatiohierarkian suunnitteleminen
 
@@ -166,7 +165,7 @@ Toimintayksiköt käyttävät pääyrityksen maakontekstia. Samassa yrityksessä
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jos organisaatio perustuu yrityksenä
 
-Tuettujen maiden tai alueiden kohdalla voidaan luoda useimmat lakisääteiset raportit. Lisätietoja kullekin maalle/alueella saatavilla olevista raporteista on [Microsoft Dynamics Localization Portalissa](https://docs.microsoft.com/dynamics/s-e/). (CustomerSource-kirjautuminen on pakollista.)
+Tuettujen maiden tai alueiden kohdalla voidaan luoda useimmat lakisääteiset raportit. 
 
 > [!NOTE]
 > Kirjanpidon kirjanpitotason avulla voit tehdä oikaisevat kirjaukset emoyhtiölle, joka käyttää eri kirjanpidon vakiota kuin tytäryhtiö. Esimerkiksi yrityksessä, joka käyttää yleisesti Isossa-Britanniassa (UK GAAP) hyväksyttyjä kirjanpitokäytäntöjä, voit tehdä oikaisevat kirjaukset kirjanpitotasolla. Nämä tapahtumat voidaan konsolidoida emoyhtiöksi, joka käyttää Yhdysvalloissa yleisesti hyväksyttyjä kirjanpitoperiaatteita (GAAP). Oikaisumerkinnät eivät vaikuta UK GAAP -raportointiin.

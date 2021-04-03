@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988474"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592643"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
 
@@ -291,7 +291,7 @@ Kun olet ottanut **Määritettävä sähköisen laskutuksen lisäosan integroint
     ![Peruutusten lähetyslokitietojen tarkastelu](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
-Toimintojen MX-00010 ja MX-00016 (CFDI-lasku ja CFDI-peruutus) käyttöönotto saattaa edellyttää rajoitettujen tietojen, organisaation verorekisteritunnus mukaan luettuna, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvoja voi ottaa toiminnot MX-00010 ja MX-00016 (CFDI-lasku ja CFDI-peruutus) käyttöön ja poistaa ne käytöstä siirtymällä kohtaan **Organisaation hallinta \> Määritykset \> Sähköisten asiakirjojen parametrit**. Valitse **Toiminnot**-välilehti, valitse toiminnot MX-00010 ja MX-00016 sisältävät rivit ja tee sitten haluamasi valinta. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
+**CFDI – Meksikon sähköinen lasku (MX)** -ominaisuuden käyttöönotto saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvoja voi ottaa toiminnon **CFDI – Meksikon sähköinen lasku (MX)** -toiminnon käyttöön ja poistaa sen käytöstä siirtymällä kohtaan **Organisaation hallinta \> Määritykset \> Sähköisten asiakirjojen parametrit**. Valitse **Ominaisuudet**-välilehdestä ne rivit, jotka sisältävät **CFDI – Meksikon sähköinen lasku (MX)** -ominaisuuden, ja tee sitten haluamasi valinta. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

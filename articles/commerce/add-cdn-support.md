@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985951"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582716"
 ---
-# <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisältöverkon (CDN) tuen lisääminen
-
+# <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisällön toimitusverkoston (CDN) tuen lisääminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Kun määrität Dynamics 365 Commerce -sovelluksessa sähköisen kaupankäynnin ympäristöä, voit määrittää sen käyttämään CDN-palvelua. 
 
@@ -96,8 +93,8 @@ Määritä reitityssääntö Azure Front Door Service -palvelussa seuraavasti.
 1. Kirjoita **Nimi**-kenttään **oletus**.
 1. Valitse **Hyväksytty protokolla** -kentässä **HTTP ja HTTPS**.
 1. Syötä **Edustaisännät**-kenttään **dynamics-ecom-tenant-name.azurefd.net**.
-1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\** _.
-1. Määritä _*Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
+1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\***.
+1. Määritä **Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
 1. Valitse **Taustapooli**-kentässä **ecom-backend**.
 1. Valitse **Välitysprotokolla**-kenttäryhmässä **Pyynnön vastaavuus** -vaihtoehto. 
 1. Määritä **URL-osoitteen uudelleenkirjoitus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
@@ -109,8 +106,8 @@ Määritä välimuistiin tallennuksen sääntö Azure Front Door Service -palvel
 1. Kirjoita **Nimi**-kenttään **tilastot**.
 1. Valitse **Hyväksytty protokolla** -kentässä **HTTP ja HTTPS**.
 1. Syötä **Edustaisännät**-kenttään **dynamics-ecom-tenant-name.azurefd.net**.
-1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\_msdyn365/\_scnr/\** _.
-1. Määritä _*Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
+1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\_msdyn365/\_scnr/\***.
+1. Määritä **Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
 1. Valitse **Taustapooli**-kentässä **ecom-backend**.
 1. Valitse **Välitysprotokolla**-kenttäryhmässä **Pyynnön vastaavuus** -vaihtoehto.
 1. Määritä **URL-osoitteen uudelleenkirjoitus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
@@ -143,25 +140,7 @@ CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-siv
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
-
-[Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
-
-[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
-
-[Dynamics 365 Commerce -sivuston liittäminen online-kanavaan](associate-site-online-store.md)
-
-[Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
-
-[URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
-
-[B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
-
-[Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
-
-[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
-
-[Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+[Sisällön toimitusverkoston käyttöönottoasetukset](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
