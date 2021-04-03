@@ -15,60 +15,63 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0778cc7c1703dcfd5ea77979aafc99f4f040830d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dfea71459b80712c924912d909a0fdfa5fad09ad
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977135"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238939"
 ---
-# <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="23fc7-103">Määritä sijainnin osittainen inventointiprosessi</span><span class="sxs-lookup"><span data-stu-id="23fc7-103">Define partial location cycle counting process</span></span> 
+# <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="42337-103">Määritä sijainnin osittainen inventointiprosessi</span><span class="sxs-lookup"><span data-stu-id="42337-103">Define partial location cycle counting process</span></span> 
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="23fc7-104">Kun inventointisuunnitelmia käytetään inventointityön luomisessa, voit ohjata toteutuneita inventointitoimintoja pyytämällä vain tiettyjen tuotteiden ja tuotevarianttien inventointia sijainnin koko käytettävissä olevan varaston inventoinnin sijaan.</span><span class="sxs-lookup"><span data-stu-id="23fc7-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="23fc7-105">Tiettyjen tuotteiden suodattaminen auttaa varastopäällikköä pienentämään tarkistuksen yleiskustannuksia, estämään konsolidointivirheitä ja säästämään aikaa.</span><span class="sxs-lookup"><span data-stu-id="23fc7-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="23fc7-106">Yleensä nämä määritystehtävät suorittaa varastopäällikkö.</span><span class="sxs-lookup"><span data-stu-id="23fc7-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="23fc7-107">Voit käyttää tässä menettelyssä USMF-yrityksen demotietoja tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
+<span data-ttu-id="42337-104">Kun inventointisuunnitelmia käytetään inventointityön luomisessa, voit ohjata toteutuneita inventointitoimintoja pyytämällä vain tiettyjen tuotteiden ja tuotevarianttien inventointia sijainnin koko käytettävissä olevan varaston inventoinnin sijaan.</span><span class="sxs-lookup"><span data-stu-id="42337-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="42337-105">Tiettyjen tuotteiden suodattaminen auttaa varastopäällikköä pienentämään tarkistuksen yleiskustannuksia, estämään konsolidointivirheitä ja säästämään aikaa.</span><span class="sxs-lookup"><span data-stu-id="42337-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="42337-106">Yleensä nämä määritystehtävät suorittaa varastopäällikkö.</span><span class="sxs-lookup"><span data-stu-id="42337-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="42337-107">Voit käyttää tässä menettelyssä USMF-yrityksen demotietoja tai käyttää omia tietojasi.</span><span class="sxs-lookup"><span data-stu-id="42337-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
 
 
-## <a name="create-a-cycle-counting-work-template"></a><span data-ttu-id="23fc7-108">Inventointityömallin luominen</span><span class="sxs-lookup"><span data-stu-id="23fc7-108">Create a cycle counting work template</span></span>
-1. <span data-ttu-id="23fc7-109">Valitse Varastonhallinta > Asetukset > Työ > Työmallit.</span><span class="sxs-lookup"><span data-stu-id="23fc7-109">Go to Warehouse management > Setup > Work > Work templates.</span></span>
-2. <span data-ttu-id="23fc7-110">Valitse Työtilauksen tyyppi -kentässä Inventointi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-110">In the Work order type field, select 'Cycle counting'.</span></span>
-3. <span data-ttu-id="23fc7-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-111">Click New.</span></span>
-4. <span data-ttu-id="23fc7-112">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="23fc7-112">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="23fc7-113">Lajittelujärjestys on pienimmästä numerosta suurimpaan.</span><span class="sxs-lookup"><span data-stu-id="23fc7-113">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="23fc7-114">Arvon on oltava suurempi kuin 0 (nolla).</span><span class="sxs-lookup"><span data-stu-id="23fc7-114">The value must be more than 0 (zero).</span></span>  
-5. <span data-ttu-id="23fc7-115">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="23fc7-115">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="23fc7-116">Kirjoita Työmalli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="23fc7-116">In the Work template field, type a value.</span></span>
-7. <span data-ttu-id="23fc7-117">Kirjoita Työmallin kuvaus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="23fc7-117">In the Work template description field, type a value.</span></span>
-8. <span data-ttu-id="23fc7-118">Anna tai valitse Työpoolin tunnus-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="23fc7-118">In the Work pool ID field, enter or select a value.</span></span>
-9. <span data-ttu-id="23fc7-119">Syötä numero Työn prioriteetti -kenttään.</span><span class="sxs-lookup"><span data-stu-id="23fc7-119">In the Work priority field, enter a number.</span></span>
-10. <span data-ttu-id="23fc7-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="23fc7-120">Click Save.</span></span>
-11. <span data-ttu-id="23fc7-121">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-121">Click New.</span></span>
-12. <span data-ttu-id="23fc7-122">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="23fc7-122">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="23fc7-123">Valitse Työtyyppi-kentässä Inventointi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-123">In the Work type field, select 'Counting'.</span></span>
-14. <span data-ttu-id="23fc7-124">Syötä tai valitse arvo Työluokan tunnus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="23fc7-124">In the Work class ID field, enter or select a value.</span></span>
-15. <span data-ttu-id="23fc7-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="23fc7-125">Click Save.</span></span>
-16. <span data-ttu-id="23fc7-126">Valitse Työrivin tauot.</span><span class="sxs-lookup"><span data-stu-id="23fc7-126">Click Work line breaks.</span></span>
-17. <span data-ttu-id="23fc7-127">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-127">Click New.</span></span>
-18. <span data-ttu-id="23fc7-128">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="23fc7-128">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="23fc7-129">Lajittelujärjestys on pienimmästä numerosta suurimpaan.</span><span class="sxs-lookup"><span data-stu-id="23fc7-129">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="23fc7-130">Arvon on oltava suurempi kuin 0 (nolla).</span><span class="sxs-lookup"><span data-stu-id="23fc7-130">The value must be more than 0 (zero).</span></span>  
-19. <span data-ttu-id="23fc7-131">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="23fc7-131">Click Save.</span></span>
-20. <span data-ttu-id="23fc7-132">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="23fc7-132">Close the page.</span></span>
-21. <span data-ttu-id="23fc7-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="23fc7-133">Close the page.</span></span>
+## <a name="create-a-cycle-counting-work-template"></a><span data-ttu-id="42337-108">Inventointityömallin luominen</span><span class="sxs-lookup"><span data-stu-id="42337-108">Create a cycle counting work template</span></span>
+1. <span data-ttu-id="42337-109">Valitse Varastonhallinta > Asetukset > Työ > Työmallit.</span><span class="sxs-lookup"><span data-stu-id="42337-109">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+2. <span data-ttu-id="42337-110">Valitse Työtilauksen tyyppi -kentässä Inventointi.</span><span class="sxs-lookup"><span data-stu-id="42337-110">In the Work order type field, select 'Cycle counting'.</span></span>
+3. <span data-ttu-id="42337-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="42337-111">Click New.</span></span>
+4. <span data-ttu-id="42337-112">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="42337-112">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="42337-113">Lajittelujärjestys on pienimmästä numerosta suurimpaan.</span><span class="sxs-lookup"><span data-stu-id="42337-113">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="42337-114">Arvon on oltava suurempi kuin 0 (nolla).</span><span class="sxs-lookup"><span data-stu-id="42337-114">The value must be more than 0 (zero).</span></span>  
+5. <span data-ttu-id="42337-115">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="42337-115">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="42337-116">Kirjoita Työmalli-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="42337-116">In the Work template field, type a value.</span></span>
+7. <span data-ttu-id="42337-117">Kirjoita Työmallin kuvaus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="42337-117">In the Work template description field, type a value.</span></span>
+8. <span data-ttu-id="42337-118">Anna tai valitse Työpoolin tunnus-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="42337-118">In the Work pool ID field, enter or select a value.</span></span>
+9. <span data-ttu-id="42337-119">Syötä numero Työn prioriteetti -kenttään.</span><span class="sxs-lookup"><span data-stu-id="42337-119">In the Work priority field, enter a number.</span></span>
+10. <span data-ttu-id="42337-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="42337-120">Click Save.</span></span>
+11. <span data-ttu-id="42337-121">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="42337-121">Click New.</span></span>
+12. <span data-ttu-id="42337-122">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="42337-122">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="42337-123">Valitse Työtyyppi-kentässä Inventointi.</span><span class="sxs-lookup"><span data-stu-id="42337-123">In the Work type field, select 'Counting'.</span></span>
+14. <span data-ttu-id="42337-124">Syötä tai valitse arvo Työluokan tunnus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="42337-124">In the Work class ID field, enter or select a value.</span></span>
+15. <span data-ttu-id="42337-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="42337-125">Click Save.</span></span>
+16. <span data-ttu-id="42337-126">Valitse Työrivin tauot.</span><span class="sxs-lookup"><span data-stu-id="42337-126">Click Work line breaks.</span></span>
+17. <span data-ttu-id="42337-127">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="42337-127">Click New.</span></span>
+18. <span data-ttu-id="42337-128">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="42337-128">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="42337-129">Lajittelujärjestys on pienimmästä numerosta suurimpaan.</span><span class="sxs-lookup"><span data-stu-id="42337-129">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="42337-130">Arvon on oltava suurempi kuin 0 (nolla).</span><span class="sxs-lookup"><span data-stu-id="42337-130">The value must be more than 0 (zero).</span></span>  
+19. <span data-ttu-id="42337-131">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="42337-131">Click Save.</span></span>
+20. <span data-ttu-id="42337-132">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="42337-132">Close the page.</span></span>
+21. <span data-ttu-id="42337-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="42337-133">Close the page.</span></span>
 
-## <a name="create-a-cycle-counting-plan"></a><span data-ttu-id="23fc7-134">Inventointisuunnitelman luominen</span><span class="sxs-lookup"><span data-stu-id="23fc7-134">Create a cycle counting plan</span></span>
-1. <span data-ttu-id="23fc7-135">Valitse Varastonhallinta > Asetukset > Inventointi > Inventointisuunnitelmat.</span><span class="sxs-lookup"><span data-stu-id="23fc7-135">Go to Warehouse management > Setup > Cycle counting > Cycle count plans.</span></span>
-2. <span data-ttu-id="23fc7-136">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-136">Click New.</span></span>
-3. <span data-ttu-id="23fc7-137">Kirjoita Inventointisuunnitelman tunnus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="23fc7-137">In the Cycle counting plan ID field, type a value.</span></span>
-4. <span data-ttu-id="23fc7-138">Kirjoita Kuvaus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="23fc7-138">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="23fc7-139">Lisää Inventointien enimmäismäärä -kenttään luku.</span><span class="sxs-lookup"><span data-stu-id="23fc7-139">In the Maximum number of cycle counts field, enter a number.</span></span>
-6. <span data-ttu-id="23fc7-140">Anna tai valitse Työmalli-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="23fc7-140">In the Work template field, enter or select a value.</span></span>
-7. <span data-ttu-id="23fc7-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="23fc7-141">Click New.</span></span>
-8. <span data-ttu-id="23fc7-142">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="23fc7-142">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="23fc7-143">Lajittelujärjestys on pienimmästä numerosta suurimpaan.</span><span class="sxs-lookup"><span data-stu-id="23fc7-143">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="23fc7-144">Arvon on oltava suurempi kuin 0 (nolla).</span><span class="sxs-lookup"><span data-stu-id="23fc7-144">The value must be more than 0 (zero).</span></span>  
-9. <span data-ttu-id="23fc7-145">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="23fc7-145">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="23fc7-146">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="23fc7-146">Click Save.</span></span>
-11. <span data-ttu-id="23fc7-147">Valitse Määritä tuotekysely.</span><span class="sxs-lookup"><span data-stu-id="23fc7-147">Click Define product query.</span></span>
-12. <span data-ttu-id="23fc7-148">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="23fc7-148">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="23fc7-149">Syötä tai valitse arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="23fc7-149">In the Criteria field, enter or select a value.</span></span>
-14. <span data-ttu-id="23fc7-150">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="23fc7-150">Click OK.</span></span>
-15. <span data-ttu-id="23fc7-151">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="23fc7-151">Close the page.</span></span>
+## <a name="create-a-cycle-counting-plan"></a><span data-ttu-id="42337-134">Inventointisuunnitelman luominen</span><span class="sxs-lookup"><span data-stu-id="42337-134">Create a cycle counting plan</span></span>
+1. <span data-ttu-id="42337-135">Valitse Varastonhallinta > Asetukset > Inventointi > Inventointisuunnitelmat.</span><span class="sxs-lookup"><span data-stu-id="42337-135">Go to Warehouse management > Setup > Cycle counting > Cycle count plans.</span></span>
+2. <span data-ttu-id="42337-136">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="42337-136">Click New.</span></span>
+3. <span data-ttu-id="42337-137">Kirjoita Inventointisuunnitelman tunnus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="42337-137">In the Cycle counting plan ID field, type a value.</span></span>
+4. <span data-ttu-id="42337-138">Kirjoita Kuvaus-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="42337-138">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="42337-139">Lisää Inventointien enimmäismäärä -kenttään luku.</span><span class="sxs-lookup"><span data-stu-id="42337-139">In the Maximum number of cycle counts field, enter a number.</span></span>
+6. <span data-ttu-id="42337-140">Anna tai valitse Työmalli-kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="42337-140">In the Work template field, enter or select a value.</span></span>
+7. <span data-ttu-id="42337-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="42337-141">Click New.</span></span>
+8. <span data-ttu-id="42337-142">Syötä Järjestysnumero-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="42337-142">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="42337-143">Lajittelujärjestys on pienimmästä numerosta suurimpaan.</span><span class="sxs-lookup"><span data-stu-id="42337-143">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="42337-144">Arvon on oltava suurempi kuin 0 (nolla).</span><span class="sxs-lookup"><span data-stu-id="42337-144">The value must be more than 0 (zero).</span></span>  
+9. <span data-ttu-id="42337-145">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="42337-145">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="42337-146">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="42337-146">Click Save.</span></span>
+11. <span data-ttu-id="42337-147">Valitse Määritä tuotekysely.</span><span class="sxs-lookup"><span data-stu-id="42337-147">Click Define product query.</span></span>
+12. <span data-ttu-id="42337-148">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="42337-148">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="42337-149">Syötä tai valitse arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="42337-149">In the Criteria field, enter or select a value.</span></span>
+14. <span data-ttu-id="42337-150">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="42337-150">Click OK.</span></span>
+15. <span data-ttu-id="42337-151">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="42337-151">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
