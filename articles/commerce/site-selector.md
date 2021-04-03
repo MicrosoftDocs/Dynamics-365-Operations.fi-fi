@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ed00836c435bd391e5edef1f6a99889c80f45211
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e24590d4a8f172809704aab0d761f6db0fb0e11b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985583"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234338"
 ---
-# <a name="site-selector-module"></a>Sivuston valitsinmoduuli
+# <a name="site-selector-module"></a>Toimipaikan valitsinmoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään sivuston valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Jos yrityksellä on useita sivustoja eri markkinoilla, alueilla ja kielialueilla, sivuston käyttäjät tarvitsevat kätevän tavan vaihdella sivustoja ja valitse ensisijaisen ostossivuston. Tätä skenaariota varten käyttäjät voivat selata useita sivustoja sivuston valitsinmoduulin ansiosta.
 

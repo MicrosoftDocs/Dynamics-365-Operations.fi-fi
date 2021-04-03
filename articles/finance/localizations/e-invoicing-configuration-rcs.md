@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104376"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592619"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen lisäosan konfiguroiminen Regulatory Configuration Servicesissä (RCS)
 
@@ -64,7 +64,6 @@ Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat es
 | Belgia        | Belgian sähköinen lasku (BE)      | Myyntilaskut ja projektilaskut |
 | Brasilia         | Brasilian NF-e (BR)                  | Veroasiakirjamalli 55, oikaisukirjeet, peruutukset ja hylkäämiset |
 | Brasilia         | Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirjat |
-| Brasilia         | Brasilian NFS-e São Paulo (BR)       | Palvelun veroasiakirjat |
 | Tanska        | Tanskan sähköinen lasku (DK)       | Myyntilaskut ja projektilaskut |
 | Egypti          | Egyptin sähköinen lasku (EG) | Myyntilaskut ja projektilaskut |
 | Viro        | Viron sähköinen lasku (EE)     | Myyntilaskut ja projektilaskut |
@@ -119,10 +118,6 @@ Seuraavissa luetteloissa näkyvät sähköisen laskutuksen ominaisuuksissa käyt
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF Inquire Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brasilian (BR) NFS-e: NFS-e São Paulo city
-
-- NFS-e Sao Paulo (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Tanskan (DK) sähköinen lasku: Tanskan myynti- ja projektilaskut
 
@@ -210,7 +205,7 @@ Seuraavassa taulukossa on lueteltu käytettävissä olevat toiminnnot sekä tied
 | Brasilian SEFAZ-palvelun kutsuminen                  | Integroi Brasilian SEFAZ-palvelun kanssa veroasiakirjojen lähetystä varten.       | Esiversiossa           |
 | Kutsu Meksikon PAC-palvelua                      | Integroi Meksikon PAC-palvelun kanssa CFDI-lähetystä varten.                      | Esiversiossa           |
 | Käsittele vastaus                              | Analysoi verkkopalvelukutsusta saatu vastaus.                     | Yleisesti saatavilla  |
-| Käytä MS Power Automatea                         | Integroi Microsoft Power Automatessa luodun työnkulun kanssa.                       | Esiversiossa           |
+| Käytä MS Power Automatea                         | Integroi Microsoft Power Automatella luodun työnkulun kanssa.                       | Esiversiossa           |
 
 ## <a name="configuration-providers"></a>Konfiguraation tarjoajat
 

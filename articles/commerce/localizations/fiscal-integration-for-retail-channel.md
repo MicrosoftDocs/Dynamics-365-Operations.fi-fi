@@ -1,6 +1,6 @@
 ---
 title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
-description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercein kirjanpidoin integrointitoiminnoista.
+description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d766515d82e021f41e0cc0a9a877f25551817ad5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017464"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250827"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "5017464"
 
 ## <a name="introduction"></a>Johdanto
 
-Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercein kirjanpidoin integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa myynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
+Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa myynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
 
 - Myynnin rekisteröinti kirjanpidon laitteessa, joka on liitetty myyntipisteeseen (POS), kuten kuittitulostimeen, ja verokuitin tulostaminen asiakkaalle.
 - Retail POS:ssä suoritettuun myyntiin ja palautuksiin liittyvien tietojen lähettäminen turvallisesti ulkoiseen, veroviranomaisen ylläpitämään verkkopalveluun.
