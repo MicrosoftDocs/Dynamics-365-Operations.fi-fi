@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112398"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466035"
 ---
 # <a name="configure-life-event-types"></a>Elämäntapahtumatyyppien määrittäminen
 
-Microsoft Dynamics 365 Human Resources käyttää elinkaaritapahtumatyyppejä sellaisten tapahtumien määrittämiseen, joissa työntekijän etujen rekisteröiminen päivitetään. Esimerkiksi avioliiton solmiminen tai lapsen saaminen. Kukin elinkaaritapahtumatyypin tunnus voidaan liittää vain yhteen elinkaaritapahtumatyyppiin. Jos esimerkiksi luot elinkaaritapahtuman tunnuksen nimeltä "osoitteenmuutos", joka liittyy elinkaaritapahtumatyyppiin työntekijän osoitteenmuutos, et voi luoda toista tunnusta, jonka nimi on työntekijän osoitteenmuutos ja liittää sitä elinkaaritapahtumatyyppiin työntekijän osoitteenmuutos. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources käyttää elinkaaritapahtumatyyppejä määrittääkseen tapahtumia, joissa työsuhde-etujen rekisteröinti voidaan päivittää. Esimerkiksi avioliiton solmiminen tai lapsen saaminen. Kukin elinkaaritapahtumatyypin tunnus voidaan liittää vain yhteen elinkaaritapahtumatyyppiin. Jos esimerkiksi luot elinkaaritapahtuman tunnuksen nimeltä "osoitteenmuutos", joka liittyy elinkaaritapahtumatyyppiin työntekijän osoitteenmuutos, et voi luoda toista tunnusta, jonka nimi on työntekijän osoitteenmuutos ja liittää sitä elinkaaritapahtumatyyppiin työntekijän osoitteenmuutos. 
 
 Kun olet luonut elinkaaritapahtumatyypit, sinun on liitettävä ne suunnitelmatyyppeihin. Lisätietoja on kohdassa [Suunnitelmatyyppien luominen](hr-benefits-setup-plan-types.md).
 

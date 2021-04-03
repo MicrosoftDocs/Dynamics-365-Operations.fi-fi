@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48e368fe69443a5105ddba78a887bf9159bfe52a
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 61d8502a8f420d387b5b7f48fca2f8a680f6f3f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125590"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464029"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Hakijan seurantajärjestelmän integroinnin sovellusliittymän esittely
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin hakijan seurantajärjestelmän (ATS) integraation API. API-liittymän tarkoituksena on ottaa käyttöön tehokkaat integroinnit Dynamics 365 Human Resourcesin ja ATS-kumppanisovellusten välillä.
 
@@ -121,11 +123,11 @@ Asetusjoukot:
 - [Tyhjä Kyllä Ei](hr-admin-integration-ats-api-blank-yes-no.md)
 - [Valmistumisen tila](hr-admin-integration-ats-api-completion-status.md)
 - [Yhteyshenkilötyyppi](hr-admin-integration-ats-api-contact-type.md)
-- [Koulutuksen yksikköperuste](hr-admin-integration-ats-api-education-credit-basis.md)
+- [Koulutuksen hyvitysperuste](hr-admin-integration-ats-api-education-credit-basis.md)
 - [Sukupuoli](hr-admin-integration-ats-api-gender.md)
 - [Siviilisääty](hr-admin-integration-ats-api-marital-status.md)
 - [Vuoden kuukaudet](hr-admin-integration-ats-api-months-of-year.md)
-- [Kyllä Ei](hr-admin-integration-ats-api-no-yes.md)
+- [Ei Kyllä](hr-admin-integration-ats-api-no-yes.md)
 - [Kausiyksikkö](hr-admin-integration-ats-api-period-unit.md)
 - [Seulonnan tiheys](hr-admin-integration-ats-api-screening-frequency.md)
 - [Seulonnan tiheys luo kohteesta](hr-admin-integration-ats-api-screening-frequency-generate-from.md)

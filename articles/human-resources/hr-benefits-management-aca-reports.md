@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2e4b250f4a059719067a9e19bbf3ce4aecc9bb1f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 24df18f428e4ca14859bc34048a6bda5e03d1b2f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112416"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464371"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>ACA-raporttien luominen etujen hallinnassa
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Etujen hallinnan avulla voit seurata tietoja, jotka on raportoitu Affordable Care Act (ACA) työnantajan toimeksiannosta lomakkeella 1095-B ja lomakkeessa 1095-C. Kuten ACA-raportointitoiminto vanhassa **Edut**-työtilassa, tämä toiminto koskee vain Yhdysvalloissa olevia yrityksiä.
 

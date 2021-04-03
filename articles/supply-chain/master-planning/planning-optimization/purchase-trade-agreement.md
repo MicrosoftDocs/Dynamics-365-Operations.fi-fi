@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e060f20b65153a7bbe70996e6ff4c3930468348a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d8d5b8c7ac5da9c68926d7fbb4f37b81b56665cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992242"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264719"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Pääsuunnittelu ja ostokauppasopimukset
 
@@ -73,12 +73,12 @@ Kun järjestelmä on valmisteltu edellisessä osassa kuvatulla tavalla, varmista
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Esimerkkejä siitä, miten suunnittelun optimointi löytää toimittaja- ja läpimenoajat
 
-Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri asetukset ja niihin liittyvät ostokauppasopimukset vaikuttavat tuloksena olevaan suunniteltuun ostotilaukseen liittyviin arvoihin. Kahden oikeanpuoleisimman sarakkeen **Lihavoidut** arvot ovat suunnittelun optimoinnin valitsemat arvot. Muiden sarakkeiden **_lihavoinnin ja kursivoinnin_* arvot ovat asetuksia, jotka tuottavat kullekin riville tulokseksi saatavat arvot.
+Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri asetukset ja niihin liittyvät ostokauppasopimukset vaikuttavat tuloksena olevaan suunniteltuun ostotilaukseen liittyviin arvoihin. Kahden oikeanpuoleisimman sarakkeen **Lihavoidut** arvot ovat suunnittelun optimoinnin valitsemat arvot. Muiden sarakkeiden **_lihavoinnin ja kursivoinnin_** arvot ovat asetuksia, jotka tuottavat kullekin riville tulokseksi saatavat arvot.
 
 | Vapautettu tuote: Toimittaja | Tilauksen oletusasetuset: Läpimenoaika | Nimikekattavuus: Ohita toimittaja | Nimikekattavuus: Ohita läpimenoaika | Kauppasopimus: Toimittaja | Kauppasopimus: Läpimenoaika | Kauppasopimus: Ohita läpimenoaika | Tuloksena oleva toimittaja | Tuloksena oleva läpimenoaika |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _*_US001_*_ | _*_1_*_ | Nro | Nro | US003 | 3 | Nro | _ *US001** | **1** |
-| US001 | 1 | **_Kyllä: US002_* _ | _*_Kyllä: 2_*_ | US003 | 3 | Nro | _ *US002** | **2** |
+| ***US001** _ | _*_1_*_ | Nro | Nro | US003 | 3 | Nro | _ *US001** | **1** |
+| US001 | 1 | ***Kyllä: US002** _ | _*_Kyllä: 2_*_ | US003 | 3 | Nro | _ *US002** | **2** |
 | *(Tyhjä)* | 1 | Nro | Nro | ***US003** _ | _*_3_*_ | Nro | _ *US003** | **3** |
 | *(Tyhjä)* | ***1** _ | Nro | Nro | _*_US003_*_ | 3 | Kyllä | _ *US003** | **1** |
 | *(Tyhjä)* | ***1** _ | _*_Kyllä: US002_*_ | Nro | US003 | 3 | Nro | _ *US002** | **1** |
