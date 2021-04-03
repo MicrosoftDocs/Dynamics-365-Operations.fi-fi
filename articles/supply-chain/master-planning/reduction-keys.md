@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001846"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470766"
 ---
 # <a name="forecast-reduction-keys"></a>Ennusteen vähennysavaimet
 
@@ -198,7 +198,7 @@ Siksi luodaan seuraavat suunnitellut tilaukset.
 Ennusteen vähennysavainta käytetään **Tapahtumat - vähennysavain**- ja **Prosentti - vähennysavain** -menetelmissä ennusteen tarpeiden vähentämiseen. Näiden ohjeiden avulla voit luoda ja määrittää vähennysavaimen.
 
 1. Siirry kohtaan **Pääsuunnittelu \> Määritys \> Kattavuus \> Vähennysavaimet**.
-2. Valitse **Uusi** tai paina **Ctrl + N** luodaksesi vähennysavaimen.
+2. Luo vähennysavain valitsemalla **Uusi**.
 3. Syötä **Vähennysavain**-kenttään ennusteen vähennysavaimen yksilöivä tunnus. Syötä **Nimi**-kenttään nimi. 
 4. Määritä kaudet sekä kunkin kauden vähennysavaimen prosentti:
 

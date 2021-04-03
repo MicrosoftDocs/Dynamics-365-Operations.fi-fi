@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b081cd8d56217b8cf76db824c29482d453fc9ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fde9194ece4774c4d39785e337caf2413052159
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001945"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476672"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -44,20 +44,24 @@ Suunnittelun muutostenhallinta auttaa suunnittelemaan ja hallitsemaan tuotteen v
 
 Edellä oleva video ([Dynamics 365 Supply Chain Managementin muutostenhallinnan ominaisuudet](https://youtu.be/N313FqvRuBc)) sisältyy [Finance and Operations -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
 
-## <a name="turn-on-engineering-change-management-for-your-system"></a>Järjestelmän suunnittelun muutostenhallinnan ottaminen käyttöön
+## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Ota suunnittelun muutostenhallinnan ja versiodimension toiminnot käyttöön järjestelmässä
 
-Ota ensimmäiseksi muutostenhallinta käyttöön seuraavien ohjeiden mukaan.
+Ennen kuin voit käyttää suunnittelun muutostenhallintaa, sinun on otettava käyttöön sekä *Suunnittelun muutostenhallinta* -toiminto että sen määritysavain. Jos haluat seurata myös tapahtumien versiodimensiota (valinnainen), sinun on otettava käyttöön myös *Tuoteversion dimensio* -toiminto ja sen määritysavain.
+
+Ota toiminnot ensin käyttöön seuraavasti.
 
 1. Mene [Toimintojen hallintaan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Tarkista päivitysten saatavuus.
 1. Ota käyttöön **Suunnittelun muutostenhallinta** -niminen toiminto.
+1. Jos haluat käyttää sitä, sinun on otettava käyttöön myös **Tuotteen dimensioversio** -niminen toiminto.
 
-Ota seuraavaksi käyttöön **suunnittelun muutostenhallinnan** määritysavain seuraavien ohjeiden mukaan.
+Ota seuraavaksi määritysavaimet käyttöön seuraavia vaiheita noudattamalla.
 
 1. Siirrä järjestelmä ylläpitotilaan kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
 1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
-1. Laajenna **Kauppa**-solmu ja valitse **Suunnittelun muutostenhallinta** -valintaruutu.
+1. **Kauppa**-solmun laajentaminen
+1. Valitse **Suunnittelun muutostenhallinta** -valintaruutu.
+1. Jos haluat käyttää sitä, valitse myös **Tuotedimensio – Versio** -valintaruutu.
 1. Poista järjestelmän ylläpitotila käytöstä kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

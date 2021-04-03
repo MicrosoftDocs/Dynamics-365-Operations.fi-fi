@@ -3,7 +3,7 @@ title: Teamsin Human Resources -sovellus
 description: Tässä ohjeaiheessa käsitellään Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovellusta.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112377"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487870"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksen avulla työntekijät voivat tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldonsa tietoja Microsoft Teamsissa. Työntekijät voivat pyytää tietoja botin avustuksella. **Poissaolo**-välilehdessä on lisätietoja. Lisäksi lähettää tietoja tulevista poissaoloista voidaan lähettää ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
 
-![Human Resources Teamsin lomasovelluksen botti](./media/hr-admin-teams-leave-app-bot.png)
+![Human Resources Teamsin lomasovelluksen botti](./media/hr-teams-leave-app-bot.png)
 
 ![Human Resources Teamsin lomasovelluksen Poissaolo-välilehti](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksen avulla ty�
 
 ## <a name="install-and-setup"></a>Asentaminen ja määrittäminen
 
-Human Resources -sovellus löytyy Teams-kaupasta. Lisätietoja Teams-sovelluksen asentamisesta on kohdassa [Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md).
+Löydät Dynamics 365 Human Resources -sovelluksen Teams-kaupasta. Lisätietoja Teams-sovelluksen asentamisesta on kohdassa [Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md).
 
 Lisätietoja sovellusten käyttöoikeuksien hallinnasta Teamsissa on kohdassa [Sovellusten käyttöoikeuskäytäntöjen hallinta Microsoft Teamsissa](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Jos haluat käyttäjien näkevän loma- ja poissaolokalenterin sovelluksessa, sinun on täytyy ottaa **Loma- ja poissaolokalenteri Teamsissa** -ominaisuus käyttöön ominaisuuksien hallinnasta. Lisätietoja ominaisuuksien käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Ilmoitusten käyttöönotto Teamsin Human Resources -sovelluksessa
 
-Jos haluat, että käyttäjät voivat vastaanottaa lomapyyntöilmoitukset Teams-sovelluksessa, sinun on otettava ilmoitukset käyttöön Human Resources -sovelluksessa.
+Jos haluat, että käyttäjät voivat vastaanottaa lomapyyntöjen ilmoituksia Teams-sovelluksessa, sinun täytyy ottaa ilmoitukset käyttöön Dynamics 365 Human Resources -sovelluksessa.
 
 >[!NOTE]
->Vain Teamsiin kirjautuneet käyttäjät, jotka käyttävät Human Resourcesin Teams-sovellusta, vastaanottavat ilmoituksia.
+>Vain Teamsiin kirjautuneet käyttäjät, jotka käyttävät Dynamics 365 Human Resources Teams -sovellusta, vastaanottavat ilmoituksia.
 
 1. Valitse Human Resourcesissa **Järjestelmän hallinta**.
 
@@ -66,7 +68,7 @@ Jos haluat, että käyttäjät voivat vastaanottaa lomapyyntöilmoitukset Teams-
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Teams-ilmoitusten ottaminen käyttöön tai poistaminen käytöstä yksittäisille käyttäjille
 
-Kun olet ottanut ilmoitukset käyttöön Human Resourcesin Teams-sovelluksessa, voit ottaa ilmoitukset käyttöön tai poistaa ne käytöstä yksittäisille käyttäjille.
+Kun olet ottanut ilmoitukset käyttöön Dynamics 365 Human Resources Teams -sovelluksessa, voit ottaa ilmoitukset käyttöön tai poistaa ne käytöstä yksittäisille käyttäjille.
 
 1. Valitse Human Resourcesissa **Järjestelmän hallinta**.
 
@@ -82,9 +84,28 @@ Kun olet ottanut ilmoitukset käyttöön Human Resourcesin Teams-sovelluksessa, 
 
 6. Valitse **Tallenna**.
 
-## <a name="known-issues"></a>Tunnetut ongelmat
+## <a name="supported-languages"></a>Tuetut kielet
 
-| Varasto-otto | Tila |
+Teamsin Dynamics 365 Human Resources -sovellus tukee seuraavia kieliä:
+
+| Kielialueen tunnus | Kieli |
+| --- | --- |
+| de-DE | saksa (Saksa) |
+| es-ES | espanja (Espanja) |
+| es-MX | espanja (Meksiko) |
+| fr-CA | ranska (Kanada) |
+| fr-FR | ranska (Ranska) |
+| it-IT | italia (Italia) |
+| nl-NL | hollanti (Alankomaat) |
+| pt-BR | portugali (Brasilia) |
+| tr-TR | turkki (Turkki) |
+| zh-CN | kiina (yksinkertaistettu) |
+
+## <a name="notes"></a>Muistiinpanot
+
+Seuraavat työnimikkeet on ajoitettu tulevia julkaisuja varten:
+
+| Työnimike | Tila |
 | --- | --- |
 | Saldo on virheellinen, kun lähetetään tulevaisuudessa olevaa päivämäärää koskeva poissaolo. | Ennakointi ei ole vielä käytettävissä. Saldo näkyy kuluvalta päivältä. |
 | **Tarkistuksessa**-tilassa olevaa pyyntöä ei voi peruuttaa. | Tätä toimintoa ei tällä hetkellä tueta ja se lisätään tulevaan julkaisuun. |
@@ -96,11 +117,11 @@ Jos käyttäjällä on vaikeuksia Human Resources Teams -sovellukseen kirjautumi
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kirjautuminen Human Resources -sovelluksen ei onnistu Teamsissa
 
-Jos käyttäjä ottaa yhteyttä, koska ei pysty kirjautumaan sovellukseen, tarkista, että käyttäjään on liitettyä työntekijätietue Human Resourcesissa.
+Jos käyttäjä ottaa yhteyttä, koska hän ei pysty kirjautumaan sovellukseen, tarkista, että hänellä on työntekijätietue Human Resourcesissa.
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Virhe hyväksyttäessä lomapyyntöjä Human Resources -sovelluksessa Teamsissa
 
-Jos käyttäjä saa virheilmoituksen yrittäessään hyväksyä lomapyyntöjä Teams-sovelluksessa, tee seuraava vianmääritys:
+Jos käyttäjä saa virheilmoituksen yrittäessään hyväksyä lomapyyntöjä Teams-sovelluksessa, kokeile seuraavaa vianmääritystä:
 
 1. Tarkista, että käyttäjän Teams-tili on sama tili, jolla käyttäjä käyttää Human Resourcesiin.
 

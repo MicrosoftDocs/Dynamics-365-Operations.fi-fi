@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f99bff8846cf95bc25f0396444a3920c48f73b1e
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 4bf2c6525f245a72811f4f239479be360c0c434c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115845"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465651"
 ---
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
 

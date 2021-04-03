@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977535"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470688"
 ---
 # <a name="set-up-disposition-codes"></a>Määritä käsittelykoodit 
 
@@ -35,13 +35,13 @@ Voit määrittää myös syykoodin, kun haluat kertoa nimikkeen palautuksen syyn
 
 1.  Valitse **Myynti ja markkinointi** \> **Asetukset** \> **Myyntitilaukset** \> **Palautukset** \> **Käsittelykoodit**.
 
-2.  Luo uusi käsittelykoodi valitsemalla **Uusi** tai painamalla CTRL+N-näppäinyhdistelmää.
+2.  Valitse **Uusi** luodaksesi uuden käsittelykoodin.
 
 3.  Syötä yksilöivä kuvaava nimi, valitse toiminto ja syötä käsittelykoodille kuvaus.
 
-4.  Jos haluat liittää tähän käsittelykoodiin asiakasmaksuja, napsauta **Kulut**-painiketta avataksesi **Määritä kulut** -lomakkeen.
+4.  Jos haluat liittää tähän käsittelykoodiin asiakasmaksuja, valitse **Kulut**-painike avataksesi **Määritä kulut** -lomakkeen.
 
-5.  Jos haluat määrittää yrityksen omia käsittelykoodeja vastaavia ulkoisia koodeja, napsauta **Ulkoiset koodit** -painiketta avataksesi **Ulkoiset koodit** -lomakkeen.
+5.  Jos haluat määrittää yrityksen omia käsittelykoodeja vastaavia ulkoisia koodeja, valitse **Ulkoiset koodit** -painike avataksesi **Ulkoiset koodit** -lomakkeen.
 
 ## <a name="see-also"></a>Lisätietoja
 
