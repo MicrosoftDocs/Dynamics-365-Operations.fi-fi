@@ -18,112 +18,117 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 38848fe326deb4dd1e63c9f090765e8a0af2f649
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115243"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467960"
 ---
-# <a name="overview"></a><span data-ttu-id="70924-103">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="70924-103">Overview</span></span>
+# <a name="overview"></a><span data-ttu-id="59262-103">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="59262-103">Overview</span></span>
 
-<span data-ttu-id="70924-104">Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon määrittämisestä, työntekijöille maksettavien korvausten ja hyötyjen määrittämisestä sekä työntekijöiden hallinnasta.</span><span class="sxs-lookup"><span data-stu-id="70924-104">The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="set-up-human-resources"></a><span data-ttu-id="70924-105">Määritä henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="70924-105">Set up Human Resources</span></span>
+<span data-ttu-id="59262-104">Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon määrittämisestä, työntekijöille maksettavien korvausten ja hyötyjen määrittämisestä sekä työntekijöiden hallinnasta.</span><span class="sxs-lookup"><span data-stu-id="59262-104">The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.</span></span>
 
-[<span data-ttu-id="70924-106">Määritä henkilöstöparametreja</span><span class="sxs-lookup"><span data-stu-id="70924-106">Configure Human resources parameters</span></span>](hr-setup-parameters.md)</br>
-[<span data-ttu-id="70924-107">Määritä jaetut henkilöstöhallinnon parametrit</span><span class="sxs-lookup"><span data-stu-id="70924-107">Configure Human resources shared parameters</span></span>](hr-setup-shared-parameters.md)</br>
-[<span data-ttu-id="70924-108">Määritä henkilöstöhallinnon työnkulut</span><span class="sxs-lookup"><span data-stu-id="70924-108">Set up Human resource workflows</span></span>](hr-setup-workflows.md)</br>
-[<span data-ttu-id="70924-109">Ymmärrä päivämäärä- ja kellonaikakenttiä</span><span class="sxs-lookup"><span data-stu-id="70924-109">Understand Date and Time fields</span></span>](hr-setup-date-time-fields.md)</br>
+## <a name="set-up-human-resources"></a><span data-ttu-id="59262-105">Määritä henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="59262-105">Set up Human Resources</span></span>
 
-## <a name="configure-organization-settings"></a><span data-ttu-id="70924-110">Organisaation asetusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-110">Configure organization settings</span></span>
+[<span data-ttu-id="59262-106">Määritä henkilöstöparametreja</span><span class="sxs-lookup"><span data-stu-id="59262-106">Configure Human resources parameters</span></span>](hr-setup-parameters.md)</br>
+[<span data-ttu-id="59262-107">Määritä jaetut henkilöstöhallinnon parametrit</span><span class="sxs-lookup"><span data-stu-id="59262-107">Configure Human resources shared parameters</span></span>](hr-setup-shared-parameters.md)</br>
+[<span data-ttu-id="59262-108">Määritä henkilöstöhallinnon työnkulut</span><span class="sxs-lookup"><span data-stu-id="59262-108">Set up Human resource workflows</span></span>](hr-setup-workflows.md)</br>
+[<span data-ttu-id="59262-109">Ymmärrä päivämäärä- ja kellonaikakenttiä</span><span class="sxs-lookup"><span data-stu-id="59262-109">Understand Date and Time fields</span></span>](hr-setup-date-time-fields.md)</br>
 
-[<span data-ttu-id="70924-111">Organisaation hallinnon aloitussivu</span><span class="sxs-lookup"><span data-stu-id="70924-111">Organization administration home page</span></span>](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-112">Numerosarjojen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-112">Number sequences overview</span></span>](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-113">Organisaatiot ja organisaatiohierarkiat – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-113">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-114">Yleisen osoitekirjan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-114">Global address book overview</span></span>](../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-115">Työnkulkujärjestelmän yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-115">Workflow system overview</span></span>](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-116">Hälytysten yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="70924-116">Alerts overview</span></span>](../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-117">Sähköisten allekirjoitusten yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-117">Electronic signatures overview</span></span>](../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-118">Palvelupyynnön hallinnan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-118">Case management overview</span></span>](../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-119">Asiakirjanhallinnan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-119">Configure document management</span></span>](../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-120">Sähköpostiviestin määrittäminen ja lähettäminen</span><span class="sxs-lookup"><span data-stu-id="70924-120">Configure and send email</span></span>](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json)</br>
-[<span data-ttu-id="70924-121">Päivämäärä- ja aikatiedot sekä aikavyöhykkeet</span><span class="sxs-lookup"><span data-stu-id="70924-121">Date/time data and time zones</span></span>](../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json)</br>
+## <a name="configure-organization-settings"></a><span data-ttu-id="59262-110">Organisaation asetusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-110">Configure organization settings</span></span>
 
-## <a name="manage-personnel"></a><span data-ttu-id="70924-122">Henkilökunnan hallinta</span><span class="sxs-lookup"><span data-stu-id="70924-122">Manage personnel</span></span>
+[<span data-ttu-id="59262-111">Organisaation hallinnon aloitussivu</span><span class="sxs-lookup"><span data-stu-id="59262-111">Organization administration home page</span></span>](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-112">Numerosarjojen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-112">Number sequences overview</span></span>](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-113">Organisaatiot ja organisaatiohierarkiat – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-113">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-114">Yleisen osoitekirjan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-114">Global address book overview</span></span>](../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-115">Työnkulkujärjestelmän yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-115">Workflow system overview</span></span>](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-116">Hälytysten yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="59262-116">Alerts overview</span></span>](../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-117">Sähköisten allekirjoitusten yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-117">Electronic signatures overview</span></span>](../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-118">Palvelupyynnön hallinnan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-118">Case management overview</span></span>](../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-119">Asiakirjanhallinnan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-119">Configure document management</span></span>](../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-120">Sähköpostiviestin määrittäminen ja lähettäminen</span><span class="sxs-lookup"><span data-stu-id="59262-120">Configure and send email</span></span>](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json)</br>
+[<span data-ttu-id="59262-121">Päivämäärä- ja aikatiedot sekä aikavyöhykkeet</span><span class="sxs-lookup"><span data-stu-id="59262-121">Date/time data and time zones</span></span>](../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json)</br>
 
-[<span data-ttu-id="70924-123">Työvoimasi organisointi</span><span class="sxs-lookup"><span data-stu-id="70924-123">Organize your workforce</span></span>](hr-personnel-departments-jobs-positions.md)</br>
-[<span data-ttu-id="70924-124">Työn komponenttien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-124">Set up the components of a job</span></span>](hr-personnel-jobs.md)</br>
-[<span data-ttu-id="70924-125">Osastojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-125">Define departments</span></span>](hr-personnel-define-departments.md)</br>
-[<span data-ttu-id="70924-126">Töiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-126">Define jobs</span></span>](hr-personnel-define-jobs.md)</br>
-[<span data-ttu-id="70924-127">Työntekijätietojen hallinta työnkulkujen avulla</span><span class="sxs-lookup"><span data-stu-id="70924-127">Use workflows to manage employee information</span></span>](hr-workflow-manage-employee-information.md)</br>
-[<span data-ttu-id="70924-128">Muokkaa toimen raportointisuhteita</span><span class="sxs-lookup"><span data-stu-id="70924-128">Modify reporting relationships for a position</span></span>](hr-personnel-modify-reporting-relationships-position.md)</br>
-[<span data-ttu-id="70924-129">Työntekijän tietojen syöttäminen</span><span class="sxs-lookup"><span data-stu-id="70924-129">Enter worker information</span></span>](hr-personnel-enter-worker-information.md)</br>
-[<span data-ttu-id="70924-130">Työntekijöiden lainakohteet</span><span class="sxs-lookup"><span data-stu-id="70924-130">Loan items to workers</span></span>](hr-personnel-loan-item-worker.md)</br>
-[<span data-ttu-id="70924-131">Joukkotyöhönottoprojektit</span><span class="sxs-lookup"><span data-stu-id="70924-131">Mass hire projects</span></span>](hr-personnel-mass-hire-projects.md)</br>
-[<span data-ttu-id="70924-132">Toimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-132">Set up positions</span></span>](hr-personnel-set-up-positions.md)</br>
-[<span data-ttu-id="70924-133">Määritä vamma- ja sairaustiedot</span><span class="sxs-lookup"><span data-stu-id="70924-133">Set up injury and illness information</span></span>](hr-personnel-set-up-injury-illness-information.md)</br>
+## <a name="manage-personnel"></a><span data-ttu-id="59262-122">Henkilökunnan hallinta</span><span class="sxs-lookup"><span data-stu-id="59262-122">Manage personnel</span></span>
 
-## <a name="set-up-compensation-plans"></a><span data-ttu-id="70924-134">Kompensaatiosuunnitelmien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-134">Set up compensation plans</span></span>
+[<span data-ttu-id="59262-123">Työvoimasi organisointi</span><span class="sxs-lookup"><span data-stu-id="59262-123">Organize your workforce</span></span>](hr-personnel-departments-jobs-positions.md)</br>
+[<span data-ttu-id="59262-124">Työn komponenttien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-124">Set up the components of a job</span></span>](hr-personnel-jobs.md)</br>
+[<span data-ttu-id="59262-125">Osastojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-125">Define departments</span></span>](hr-personnel-define-departments.md)</br>
+[<span data-ttu-id="59262-126">Töiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-126">Define jobs</span></span>](hr-personnel-define-jobs.md)</br>
+[<span data-ttu-id="59262-127">Työntekijätietojen hallinta työnkulkujen avulla</span><span class="sxs-lookup"><span data-stu-id="59262-127">Use workflows to manage employee information</span></span>](hr-workflow-manage-employee-information.md)</br>
+[<span data-ttu-id="59262-128">Muokkaa toimen raportointisuhteita</span><span class="sxs-lookup"><span data-stu-id="59262-128">Modify reporting relationships for a position</span></span>](hr-personnel-modify-reporting-relationships-position.md)</br>
+[<span data-ttu-id="59262-129">Työntekijän tietojen syöttäminen</span><span class="sxs-lookup"><span data-stu-id="59262-129">Enter worker information</span></span>](hr-personnel-enter-worker-information.md)</br>
+[<span data-ttu-id="59262-130">Työntekijöiden lainakohteet</span><span class="sxs-lookup"><span data-stu-id="59262-130">Loan items to workers</span></span>](hr-personnel-loan-item-worker.md)</br>
+[<span data-ttu-id="59262-131">Joukkotyöhönottoprojektit</span><span class="sxs-lookup"><span data-stu-id="59262-131">Mass hire projects</span></span>](hr-personnel-mass-hire-projects.md)</br>
+[<span data-ttu-id="59262-132">Toimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-132">Set up positions</span></span>](hr-personnel-set-up-positions.md)</br>
+[<span data-ttu-id="59262-133">Määritä vamma- ja sairaustiedot</span><span class="sxs-lookup"><span data-stu-id="59262-133">Set up injury and illness information</span></span>](hr-personnel-set-up-injury-illness-information.md)</br>
 
-[<span data-ttu-id="70924-135">Kompensaatiosuunnitelmien yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="70924-135">Compensation plans overview</span></span>](hr-compensation-overview.md)</br>
-[<span data-ttu-id="70924-136">Kompensaatioruudukoiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-136">Set up compensation grids</span></span>](hr-compensation-grids.md)</br>
-[<span data-ttu-id="70924-137">Kompensaatiorakenteen ja -suunnitelman kehittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-137">Develop a compensation structure and plan</span></span>](hr-compensation-structure.md)</br>
-[<span data-ttu-id="70924-138">Kiinteiden kompensaatiosuunnitelmien luominen</span><span class="sxs-lookup"><span data-stu-id="70924-138">Create fixed compensation plans</span></span>](hr-compensation-fixed-plans.md)</br>
-[<span data-ttu-id="70924-139">Muuttuvien kompensaatiosuunnitelmien luominen</span><span class="sxs-lookup"><span data-stu-id="70924-139">Create variable compensation plans</span></span>](hr-compensation-variable-plans.md)</br>
-[<span data-ttu-id="70924-140">Työntekijöiden rekisteröiminen kiinteän kompensaation suunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="70924-140">Enroll employees in a fixed compensation plan</span></span>](hr-compensation-enroll-employees-fixed.md)</br>
-[<span data-ttu-id="70924-141">Työntekijöiden rekisteröiminen muuttuvan kompensaation suunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="70924-141">Enroll employees in a variable compensation plan</span></span>](hr-compensation-enroll-employees-variable.md)</br>
-[<span data-ttu-id="70924-142">Kompensaatioprosessin määrittäminen ja tulosten laskeminen</span><span class="sxs-lookup"><span data-stu-id="70924-142">Define compensation process and calculate results</span></span>](hr-compensation-define-process.md)</br>
-[<span data-ttu-id="70924-143">Prosessin kompensaatiosuunnitelmat</span><span class="sxs-lookup"><span data-stu-id="70924-143">Process compensation plans</span></span>](hr-compensation-process.md)</br>
+## <a name="set-up-compensation-plans"></a><span data-ttu-id="59262-134">Kompensaatiosuunnitelmien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-134">Set up compensation plans</span></span>
 
-## <a name="manage-benefits"></a><span data-ttu-id="70924-144">Hallitse etuja</span><span class="sxs-lookup"><span data-stu-id="70924-144">Manage benefits</span></span>
+[<span data-ttu-id="59262-135">Kompensaatiosuunnitelmien yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="59262-135">Compensation plans overview</span></span>](hr-compensation-overview.md)</br>
+[<span data-ttu-id="59262-136">Kompensaatioruudukoiden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-136">Set up compensation grids</span></span>](hr-compensation-grids.md)</br>
+[<span data-ttu-id="59262-137">Kompensaatiorakenteen ja -suunnitelman kehittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-137">Develop a compensation structure and plan</span></span>](hr-compensation-structure.md)</br>
+[<span data-ttu-id="59262-138">Kiinteiden kompensaatiosuunnitelmien luominen</span><span class="sxs-lookup"><span data-stu-id="59262-138">Create fixed compensation plans</span></span>](hr-compensation-fixed-plans.md)</br>
+[<span data-ttu-id="59262-139">Muuttuvien kompensaatiosuunnitelmien luominen</span><span class="sxs-lookup"><span data-stu-id="59262-139">Create variable compensation plans</span></span>](hr-compensation-variable-plans.md)</br>
+[<span data-ttu-id="59262-140">Työntekijöiden rekisteröiminen kiinteän kompensaation suunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="59262-140">Enroll employees in a fixed compensation plan</span></span>](hr-compensation-enroll-employees-fixed.md)</br>
+[<span data-ttu-id="59262-141">Työntekijöiden rekisteröiminen muuttuvan kompensaation suunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="59262-141">Enroll employees in a variable compensation plan</span></span>](hr-compensation-enroll-employees-variable.md)</br>
+[<span data-ttu-id="59262-142">Kompensaatioprosessin määrittäminen ja tulosten laskeminen</span><span class="sxs-lookup"><span data-stu-id="59262-142">Define compensation process and calculate results</span></span>](hr-compensation-define-process.md)</br>
+[<span data-ttu-id="59262-143">Prosessin kompensaatiosuunnitelmat</span><span class="sxs-lookup"><span data-stu-id="59262-143">Process compensation plans</span></span>](hr-compensation-process.md)</br>
 
-[<span data-ttu-id="70924-145">Esiversio-ominaisuus: Etujen hallinta</span><span class="sxs-lookup"><span data-stu-id="70924-145">Preview feature: Benefits management</span></span>](hr-benefits-management-overview.md)</br>
-[<span data-ttu-id="70924-146">Etuohjelman määrittäminen ja hallinta</span><span class="sxs-lookup"><span data-stu-id="70924-146">Define and manage a benefits program</span></span>](hr-benefits-manage-program.md)</br>
-[<span data-ttu-id="70924-147">Etuuskelpoisuuden käytännöt</span><span class="sxs-lookup"><span data-stu-id="70924-147">Benefit eligibility policies</span></span>](hr-benefits-eligibility-policies.md)</br>
-[<span data-ttu-id="70924-148">Etuuskelpoisuusprosessi</span><span class="sxs-lookup"><span data-stu-id="70924-148">Benefit eligibility process</span></span>](hr-benefits-eligibility-process.md)</br>
-[<span data-ttu-id="70924-149">Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-149">Define benefit eligibility rules and policies</span></span>](hr-benefits-define-eligibility-rules.md)</br>
-[<span data-ttu-id="70924-150">Työsuhde-etuohjelman toteuttaminen</span><span class="sxs-lookup"><span data-stu-id="70924-150">Deliver an employee benefits program</span></span>](hr-benefits-deliver-employee-benefits-program.md)</br>
-[<span data-ttu-id="70924-151">Uusien etujen luominen</span><span class="sxs-lookup"><span data-stu-id="70924-151">Create new benefits</span></span>](hr-benefits-create.md)</br>
-[<span data-ttu-id="70924-152">Rekisteröi työntekijät etuihin</span><span class="sxs-lookup"><span data-stu-id="70924-152">Enroll workers in benefits</span></span>](hr-benefits-enroll-workers.md)</br>
-[<span data-ttu-id="70924-153">Etuuksien päättymispäivien hallinta</span><span class="sxs-lookup"><span data-stu-id="70924-153">Manage benefit expiration dates</span></span>](hr-benefits-expiration-dates.md)</br>
-[<span data-ttu-id="70924-154">ACA-raporttien luominen</span><span class="sxs-lookup"><span data-stu-id="70924-154">Generate ACA reports</span></span>](hr-benefits-aca-reports.md)</br>
+## <a name="manage-benefits"></a><span data-ttu-id="59262-144">Hallitse etuja</span><span class="sxs-lookup"><span data-stu-id="59262-144">Manage benefits</span></span>
 
-## <a name="manage-leave-and-absence"></a><span data-ttu-id="70924-155">Virkavapaan ja poissaolojen hallinta</span><span class="sxs-lookup"><span data-stu-id="70924-155">Manage leave and absence</span></span>
+[<span data-ttu-id="59262-145">Esiversio-ominaisuus: Etujen hallinta</span><span class="sxs-lookup"><span data-stu-id="59262-145">Preview feature: Benefits management</span></span>](hr-benefits-management-overview.md)</br>
+[<span data-ttu-id="59262-146">Etuohjelman määrittäminen ja hallinta</span><span class="sxs-lookup"><span data-stu-id="59262-146">Define and manage a benefits program</span></span>](hr-benefits-manage-program.md)</br>
+[<span data-ttu-id="59262-147">Etuuskelpoisuuden käytännöt</span><span class="sxs-lookup"><span data-stu-id="59262-147">Benefit eligibility policies</span></span>](hr-benefits-eligibility-policies.md)</br>
+[<span data-ttu-id="59262-148">Etuuskelpoisuusprosessi</span><span class="sxs-lookup"><span data-stu-id="59262-148">Benefit eligibility process</span></span>](hr-benefits-eligibility-process.md)</br>
+[<span data-ttu-id="59262-149">Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-149">Define benefit eligibility rules and policies</span></span>](hr-benefits-define-eligibility-rules.md)</br>
+[<span data-ttu-id="59262-150">Työsuhde-etuohjelman toteuttaminen</span><span class="sxs-lookup"><span data-stu-id="59262-150">Deliver an employee benefits program</span></span>](hr-benefits-deliver-employee-benefits-program.md)</br>
+[<span data-ttu-id="59262-151">Uusien etujen luominen</span><span class="sxs-lookup"><span data-stu-id="59262-151">Create new benefits</span></span>](hr-benefits-create.md)</br>
+[<span data-ttu-id="59262-152">Rekisteröi työntekijät etuihin</span><span class="sxs-lookup"><span data-stu-id="59262-152">Enroll workers in benefits</span></span>](hr-benefits-enroll-workers.md)</br>
+[<span data-ttu-id="59262-153">Etuuksien päättymispäivien hallinta</span><span class="sxs-lookup"><span data-stu-id="59262-153">Manage benefit expiration dates</span></span>](hr-benefits-expiration-dates.md)</br>
+[<span data-ttu-id="59262-154">ACA-raporttien luominen</span><span class="sxs-lookup"><span data-stu-id="59262-154">Generate ACA reports</span></span>](hr-benefits-aca-reports.md)</br>
 
-[<span data-ttu-id="70924-156">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="70924-156">Overview</span></span>](hr-leave-and-absence-overview.md)</br>
-[<span data-ttu-id="70924-157">Loma- ja poissaoloparametrien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-157">Configure leave and absence parameters</span></span>](hr-leave-and-absence-parameters.md)</br>
-[<span data-ttu-id="70924-158">Työaikakalenterin luominen</span><span class="sxs-lookup"><span data-stu-id="70924-158">Create a working time calendar</span></span>](hr-leave-and-absence-working-time-calendar.md)</br>
-[<span data-ttu-id="70924-159">Lomapyyntötyönkulun luominen</span><span class="sxs-lookup"><span data-stu-id="70924-159">Create a leave request workflow</span></span>](hr-leave-and-absence-workflow.md)</br>
-[<span data-ttu-id="70924-160">Loma- ja poissaolotyyppien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-160">Configure leave and absence types</span></span>](hr-leave-and-absence-types.md)</br>
-[<span data-ttu-id="70924-161">Loma- ja poissaolosuunnitelman luominen</span><span class="sxs-lookup"><span data-stu-id="70924-161">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)</br>
-[<span data-ttu-id="70924-162">Työntekijöiden liittäminen lomasuunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="70924-162">Assign workers to a leave plan</span></span>](hr-leave-and-absence-enroll.md)</br>
-[<span data-ttu-id="70924-163">Loma- ja poissaolosuunnitelmien jaksottaminen</span><span class="sxs-lookup"><span data-stu-id="70924-163">Accrue leave and absence plans</span></span>](hr-leave-and-absence-accrue.md)</br>
-[<span data-ttu-id="70924-164">Loma- ja poissaoloanalyysien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="70924-164">View analytics for leave and absence</span></span>](hr-leave-and-absence-analytics.md)</br>
-[<span data-ttu-id="70924-165">Loma- ja poissaolopyyntöjen hallinta</span><span class="sxs-lookup"><span data-stu-id="70924-165">Manage leave and absence requests</span></span>](hr-employee-self-service-manage-requests.md)</br>
-[<span data-ttu-id="70924-166">Pyydä vapaata</span><span class="sxs-lookup"><span data-stu-id="70924-166">Request time off</span></span>](hr-employee-self-service-request-time-off.md)</br>
-[<span data-ttu-id="70924-167">Ryhmä- ja yrityskalenterien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="70924-167">View team and company calendars</span></span>](hr-employee-self-service-calendar.md)</br>
+## <a name="manage-leave-and-absence"></a><span data-ttu-id="59262-155">Virkavapaan ja poissaolojen hallinta</span><span class="sxs-lookup"><span data-stu-id="59262-155">Manage leave and absence</span></span>
 
-## <a name="develop-employees"></a><span data-ttu-id="70924-168">Työntekijöiden kehittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-168">Develop employees</span></span>
+[<span data-ttu-id="59262-156">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="59262-156">Overview</span></span>](hr-leave-and-absence-overview.md)</br>
+[<span data-ttu-id="59262-157">Loma- ja poissaoloparametrien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-157">Configure leave and absence parameters</span></span>](hr-leave-and-absence-parameters.md)</br>
+[<span data-ttu-id="59262-158">Työaikakalenterin luominen</span><span class="sxs-lookup"><span data-stu-id="59262-158">Create a working time calendar</span></span>](hr-leave-and-absence-working-time-calendar.md)</br>
+[<span data-ttu-id="59262-159">Lomapyyntötyönkulun luominen</span><span class="sxs-lookup"><span data-stu-id="59262-159">Create a leave request workflow</span></span>](hr-leave-and-absence-workflow.md)</br>
+[<span data-ttu-id="59262-160">Loma- ja poissaolotyyppien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-160">Configure leave and absence types</span></span>](hr-leave-and-absence-types.md)</br>
+[<span data-ttu-id="59262-161">Loma- ja poissaolosuunnitelman luominen</span><span class="sxs-lookup"><span data-stu-id="59262-161">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)</br>
+[<span data-ttu-id="59262-162">Työntekijöiden liittäminen lomasuunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="59262-162">Assign workers to a leave plan</span></span>](hr-leave-and-absence-enroll.md)</br>
+[<span data-ttu-id="59262-163">Loma- ja poissaolosuunnitelmien jaksottaminen</span><span class="sxs-lookup"><span data-stu-id="59262-163">Accrue leave and absence plans</span></span>](hr-leave-and-absence-accrue.md)</br>
+[<span data-ttu-id="59262-164">Loma- ja poissaoloanalyysien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="59262-164">View analytics for leave and absence</span></span>](hr-leave-and-absence-analytics.md)</br>
+[<span data-ttu-id="59262-165">Loma- ja poissaolopyyntöjen hallinta</span><span class="sxs-lookup"><span data-stu-id="59262-165">Manage leave and absence requests</span></span>](hr-employee-self-service-manage-requests.md)</br>
+[<span data-ttu-id="59262-166">Pyydä vapaata</span><span class="sxs-lookup"><span data-stu-id="59262-166">Request time off</span></span>](hr-employee-self-service-request-time-off.md)</br>
+[<span data-ttu-id="59262-167">Ryhmä- ja yrityskalenterien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="59262-167">View team and company calendars</span></span>](hr-employee-self-service-calendar.md)</br>
 
-[<span data-ttu-id="70924-169">Suorituksen hallinnan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-169">Performance management overview</span></span>](hr-develop-performance-management-overview.md)</br>
-[<span data-ttu-id="70924-170">Työntekijöiden osaamisalueiden kohdentaminen</span><span class="sxs-lookup"><span data-stu-id="70924-170">Align workforce skills</span></span>](hr-develop-skills.md)</br>
-[<span data-ttu-id="70924-171">Lisää suorituskyvyn kirjauskansioon</span><span class="sxs-lookup"><span data-stu-id="70924-171">Add to your performance journal</span></span>](hr-develop-add-performance-journal.md)</br>
-[<span data-ttu-id="70924-172">Tavoitteen luominen</span><span class="sxs-lookup"><span data-stu-id="70924-172">Create a goal</span></span>](hr-develop-create-goal.md)</br>
-[<span data-ttu-id="70924-173">Suorituskykyarvion luominen</span><span class="sxs-lookup"><span data-stu-id="70924-173">Create a performance review</span></span>](hr-develop-create-performance-review.md)</br>
+## <a name="develop-employees"></a><span data-ttu-id="59262-168">Työntekijöiden kehittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-168">Develop employees</span></span>
 
-## <a name="create-courses"></a><span data-ttu-id="70924-174">Luo kursseja</span><span class="sxs-lookup"><span data-stu-id="70924-174">Create courses</span></span>
+[<span data-ttu-id="59262-169">Suorituksen hallinnan yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-169">Performance management overview</span></span>](hr-develop-performance-management-overview.md)</br>
+[<span data-ttu-id="59262-170">Työntekijöiden osaamisalueiden kohdentaminen</span><span class="sxs-lookup"><span data-stu-id="59262-170">Align workforce skills</span></span>](hr-develop-skills.md)</br>
+[<span data-ttu-id="59262-171">Lisää suorituskyvyn kirjauskansioon</span><span class="sxs-lookup"><span data-stu-id="59262-171">Add to your performance journal</span></span>](hr-develop-add-performance-journal.md)</br>
+[<span data-ttu-id="59262-172">Tavoitteen luominen</span><span class="sxs-lookup"><span data-stu-id="59262-172">Create a goal</span></span>](hr-develop-create-goal.md)</br>
+[<span data-ttu-id="59262-173">Suorituskykyarvion luominen</span><span class="sxs-lookup"><span data-stu-id="59262-173">Create a performance review</span></span>](hr-develop-create-performance-review.md)</br>
 
-[<span data-ttu-id="70924-175">Koulutuskurssien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="70924-175">Set up training courses</span></span>](hr-learning-courses.md)</br>
-[<span data-ttu-id="70924-176">Kyselylomakkeiden yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70924-176">Questionnaires overview</span></span>](hr-learning-questionnaires.md)</br>
-[<span data-ttu-id="70924-177">Kyselylomakkeiden suunnitteleminen</span><span class="sxs-lookup"><span data-stu-id="70924-177">Design questionnaires</span></span>](hr-learning-design-questionnaires.md)</br>
-[<span data-ttu-id="70924-178">Kyselylomakkeiden jakelu ja aikataulutus</span><span class="sxs-lookup"><span data-stu-id="70924-178">Distribute and schedule questionnaires</span></span>](hr-learning-distribute-questionnaires.md)</br>
-[<span data-ttu-id="70924-179">Kyselylomakkeiden jakaminen aikatauluttamalla</span><span class="sxs-lookup"><span data-stu-id="70924-179">Distribute questionnaires using scheduling</span></span>](hr-learning-distribute-questionnaires-scheduling.md)</br>
-[<span data-ttu-id="70924-180">Näytä kyselylomakkeen tulokset</span><span class="sxs-lookup"><span data-stu-id="70924-180">View questionnaire results</span></span>](hr-learning-evaluate-questionnaire-results.md)</br>
-[<span data-ttu-id="70924-181">Kyselylomakkeen tulosten analysointi</span><span class="sxs-lookup"><span data-stu-id="70924-181">Analyze questionnaire results</span></span>](hr-learning-analyze-questionnaire-results.md)</br>
-[<span data-ttu-id="70924-182">Avoimen kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="70924-182">Create an open-ended question</span></span>](hr-learning-create-open-ended-question.md)</br>
-[<span data-ttu-id="70924-183">Suljetun kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="70924-183">Create a closed-ended question</span></span>](hr-learning-create-closed-ended-question.md)</br>
-[<span data-ttu-id="70924-184">Riippuvaisen kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="70924-184">Create a dependent question</span></span>](hr-learning-depending-question.md)</br>
+## <a name="create-courses"></a><span data-ttu-id="59262-174">Luo kursseja</span><span class="sxs-lookup"><span data-stu-id="59262-174">Create courses</span></span>
+
+[<span data-ttu-id="59262-175">Koulutuskurssien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="59262-175">Set up training courses</span></span>](hr-learning-courses.md)</br>
+[<span data-ttu-id="59262-176">Kyselylomakkeiden yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="59262-176">Questionnaires overview</span></span>](hr-learning-questionnaires.md)</br>
+[<span data-ttu-id="59262-177">Kyselylomakkeiden suunnitteleminen</span><span class="sxs-lookup"><span data-stu-id="59262-177">Design questionnaires</span></span>](hr-learning-design-questionnaires.md)</br>
+[<span data-ttu-id="59262-178">Kyselylomakkeiden jakelu ja aikataulutus</span><span class="sxs-lookup"><span data-stu-id="59262-178">Distribute and schedule questionnaires</span></span>](hr-learning-distribute-questionnaires.md)</br>
+[<span data-ttu-id="59262-179">Kyselylomakkeiden jakaminen aikatauluttamalla</span><span class="sxs-lookup"><span data-stu-id="59262-179">Distribute questionnaires using scheduling</span></span>](hr-learning-distribute-questionnaires-scheduling.md)</br>
+[<span data-ttu-id="59262-180">Näytä kyselylomakkeen tulokset</span><span class="sxs-lookup"><span data-stu-id="59262-180">View questionnaire results</span></span>](hr-learning-evaluate-questionnaire-results.md)</br>
+[<span data-ttu-id="59262-181">Kyselylomakkeen tulosten analysointi</span><span class="sxs-lookup"><span data-stu-id="59262-181">Analyze questionnaire results</span></span>](hr-learning-analyze-questionnaire-results.md)</br>
+[<span data-ttu-id="59262-182">Avoimen kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="59262-182">Create an open-ended question</span></span>](hr-learning-create-open-ended-question.md)</br>
+[<span data-ttu-id="59262-183">Suljetun kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="59262-183">Create a closed-ended question</span></span>](hr-learning-create-closed-ended-question.md)</br>
+[<span data-ttu-id="59262-184">Riippuvaisen kysymyksen luominen</span><span class="sxs-lookup"><span data-stu-id="59262-184">Create a dependent question</span></span>](hr-learning-depending-question.md)</br>
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
