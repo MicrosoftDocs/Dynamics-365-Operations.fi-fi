@@ -3,7 +3,7 @@ title: Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managemen
 description: Tässä aiheessa selitetään, miten sähköisen laskutuksen lisäosan kautta lähetetään sähköisiä laskuja Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104374"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486950"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa
 
@@ -35,25 +35,35 @@ Tässä aiheessa selitetään, miten sähköisen laskutuksen lisäosan kautta l�
 
 ## <a name="feature-activation"></a>Ominaisuuden aktivointi
 
-Sähköisten laskujen lähettämisen aloittaminen sähköisen laskutuksen lisäosan kautta on aktivoitava Financen ja Supply Chain Managementin toimintoviite.
+Sähköisten laskujen lähettämiseksi sähköisen laskutuksen lisäosan kautta on aktivoitava Financen ja Supply Chain Managementin toiminto.
 
-Jokainen toimintoviite vastaa tiettyä sähköistä laskutustoimintoa, joka vastaa maan/alueen sähköisen laskutuksen vaatimuksia.
+Jokainen toiminto vastaa tiettyä sähköistä laskutustoimintoa, joka vastaa maan/alueen sähköisen laskutuksen vaatimuksia.
 
-Seuraavassa taulukossa on luettelo toimintoviitteistä, joita sähköisen laskutuksen lisäosa tukee.
+Seuraavassa taulukossa on luettelo toiminnoista, joita sähköisen laskutuksen lisäosa tukee.
 
-| Ominaisuuden viite | Nimi                                              | Maa tai alue |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e Federal – Brasilian sähköinen lasku       | Brasilia         |
-| BR-00095          | NFS-e Brasilian sähköiset laskut               | Brasilia         |
-| DK-00001          | Sähköinen laskutus julkiselle sektorille (OIOUBL) – DK    | Tanska        |
-| EG-00008          | Egyptin e-laskutus                             | Egypti          |
-| ES-00025          | Sähköinen lasku julkiselle sektorille           | Espanja          |
-| EUR-00023         | Euroopan unionin sähköinen laskutus julkiselle sektorille       | Eurooppa         |
-| ITA-00036         | IT – Sähköinen laskutus julkiselle sektorille (FatturaPA) | Italia          |
-| MX-00010          | Sähköisen laskutuksen CFDI                                  | Meksiko         |
-| MX-00016          | Sähköisen laskutuksen CFDI – peruutusprosessi           | Meksiko         |
+| Nimi                                              | Maa tai alue |
+|---------------------------------------------------|----------------|
+|Itävallan sähköinen lasku                        |Itävalta         |
+|Belgian sähköinen lasku                         |Belgia         |
+|NF-e Federal – Brasilian sähköinen lasku       |Brasilia          |
+|NFS-e – Brasilian kaupungin sähköinen lasku|Brasilia          |
+|Tanskan sähköinen lasku                          |Tanska         |
+|Egyptin sähköinen lasku                        |Egypti           |
+|Viron sähköinen lasku                        |Viro         |
+|Suomen sähköinen lasku                         |Suomi         |
+|Ranskan sähköinen lasku                          |Ranska          |
+|Saksan sähköinen lasku                          |Saksa         |
+|PEPPOL – yleinen sähköinen lasku                 |Yleinen          |
+|Italian sähköinen lasku                         |Italia           |
+|CFDI – Meksikon sähköinen lasku                  |Meksiko          |
+|Hollannin sähköinen lasku                           |Alankomaat     |
+|Norjan sähköinen lasku                       |Norja          |
+|Espanjan sähköinen lasku                         |Espanja           |
 
-Kun käytössä on vanha sähköinen laskutustoiminto, jota maan tai alueen maakohtainen laajuus tukee, toimintoviittauksen aktivoiminen ottaa käyttöön sähköisten laskujen toimituksen sähköisen laskutuksen lisäosan kautta ja ottaa vanhan ominaisuuden pois käytöstä.
+Kun käytössä on vanha sähköinen laskutustoiminto, jota maan tai alueen maakohtainen laajuus tukee, yhden toiminnon aktivoiminen ottaa vanhan ominaisuuden pois käytöstä ja ottaa käyttöön sähköisten laskujen toimituksen sähköisen laskutuksen lisäosan kautta.
+
+> [!IMPORTANT]
+> Kun sähköisen laskutuksen lisäosan integrointiominaisuus on otettu käyttöön, uusi sähköinen laskutuskokemus on oletusarvon mukaan poissa käytöstä. Toimintokäsite mahdollistaa uusien kokemusten valikoivan käyttöönoton yrityksille, jotka käyttävät maa-/aluekohtaista toiminnallisuutta. **Yleinen**-vaihtoehto ohjaa muiden kuin taulussa lueteltujen maiden/alueiden uutta käyttökokemusta.
 
 ## <a name="submit-electronic-documents"></a>Lähetä sähköiset asiakirjat
 

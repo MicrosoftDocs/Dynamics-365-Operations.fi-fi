@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115969"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463427"
 ---
 # <a name="leave-and-absence-overview"></a>Lomien ja poissaolojen yhteenveto
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources auttaa sinua tarjoamaan hienoja lomaetuuksia työntekijöillesi. **Lomat ja poissaolot** -työtila on joustava kehikko uusien lomasuunnitelmien luomiseen. Se sisältää työkulut pyyntöjen hallintaan ja intuitiivisen itsepalvelusivun, jossa työntekijät voivat pyytää vapaata. Analyysi auttaa organisaatiotasi mittaamaan ja seuraamaan lomasuunnitelmien saldoja ja käyttöä.
 
