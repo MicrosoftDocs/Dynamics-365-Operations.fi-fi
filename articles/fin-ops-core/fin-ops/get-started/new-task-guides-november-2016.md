@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9c422b0d24c3f7bd4cd9b4b4d00fb26597bfdebb
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: fa9910ec65899926a57b974f7e9a3f1f2becc5d9
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796679"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566525"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)
 
@@ -32,7 +31,7 @@ Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotk
 (Marraskuu 2016, kaikki kielet) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics 365 for Operationsin, Microsoft Dynamics 365 for Operationsin platform update 3:n, Microsoft Dynamics AX Platform update 2:n, Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet Finance and Operationsin kotisivulla](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
 
 > [!NOTE]
-> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics 365 for Operationsin marraskuun 2016 päivityksessä ja ettei sitä tueta Microsoft Microsoft Dynamics AX:n aiemmissa versioissa.
+> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics 365 for Operationsin marraskuun 2016 päivityksessä ja ettei sitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
 
 ### <a name="accounts-payable"></a>Ostoreskontra
 
