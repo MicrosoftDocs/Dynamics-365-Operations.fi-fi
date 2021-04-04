@@ -18,27 +18,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e56edc19591ba535518f1cac54d29427ca233ab9
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: aba4a073e714e950b8efed1692ff2de7b3d557fa
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112366"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468320"
 ---
-# <a name="configure-waiting-days"></a><span data-ttu-id="ba0d7-103">Odotuspäivien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="ba0d7-103">Configure waiting days</span></span>
+# <a name="configure-waiting-days"></a><span data-ttu-id="97755-103">Odotuspäivien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="97755-103">Configure waiting days</span></span>
 
-<span data-ttu-id="ba0d7-104">Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat kuukausittaisen tavoitteen, jota käytetään etuussuunnitelmissa.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-104">In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly milestone to use for benefit plans.</span></span> <span data-ttu-id="ba0d7-105">Esimerkiksi odotuspäivä 15 vastaa kunkin kuukauden 15. päivää.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-105">For example, a waiting day of 15 represents the 15th day of each month.</span></span> 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="ba0d7-106">Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Odotuspäivät**.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-106">In the **Benefits management** workspace, under **Setup**, select **Waiting days**.</span></span>
+<span data-ttu-id="97755-104">Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat kuukausittaisen tavoitteen, jota käytetään etuussuunnitelmissa.</span><span class="sxs-lookup"><span data-stu-id="97755-104">In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly milestone to use for benefit plans.</span></span> <span data-ttu-id="97755-105">Esimerkiksi odotuspäivä 15 vastaa kunkin kuukauden 15. päivää.</span><span class="sxs-lookup"><span data-stu-id="97755-105">For example, a waiting day of 15 represents the 15th day of each month.</span></span> 
 
-2. <span data-ttu-id="ba0d7-107">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-107">Select **New**.</span></span>
+1. <span data-ttu-id="97755-106">Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Odotuspäivät**.</span><span class="sxs-lookup"><span data-stu-id="97755-106">In the **Benefits management** workspace, under **Setup**, select **Waiting days**.</span></span>
 
-3. <span data-ttu-id="ba0d7-108">Määritä seuraavien kenttien arvot.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-108">Specify values for the following fields:</span></span>
+2. <span data-ttu-id="97755-107">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="97755-107">Select **New**.</span></span>
 
-   | <span data-ttu-id="ba0d7-109">Kenttä</span><span class="sxs-lookup"><span data-stu-id="ba0d7-109">Field</span></span> | <span data-ttu-id="ba0d7-110">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="ba0d7-110">Description</span></span> |
+3. <span data-ttu-id="97755-108">Määritä seuraavien kenttien arvot.</span><span class="sxs-lookup"><span data-stu-id="97755-108">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="97755-109">Kenttä</span><span class="sxs-lookup"><span data-stu-id="97755-109">Field</span></span> | <span data-ttu-id="97755-110">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="97755-110">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="ba0d7-111">**Odotuspäivä**</span><span class="sxs-lookup"><span data-stu-id="ba0d7-111">**Waiting day**</span></span> | <span data-ttu-id="ba0d7-112">Odotuspäivän yksilöivä tunniste.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-112">A unique identifier for the waiting day.</span></span> |
-   | <span data-ttu-id="ba0d7-113">**Kuvaus**</span><span class="sxs-lookup"><span data-stu-id="ba0d7-113">**Description**</span></span> | <span data-ttu-id="ba0d7-114">Odotuspäivän kuvaus.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-114">A description of the waiting day.</span></span> |
-   | <span data-ttu-id="ba0d7-115">**Päivä**</span><span class="sxs-lookup"><span data-stu-id="ba0d7-115">**Day**</span></span> | <span data-ttu-id="ba0d7-116">Kuukauden päivä, jolloin järjestelmä määrittää odotusajan päivämääräksi.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-116">The day of the month that the system should set the waiting period date to.</span></span> |
+   | <span data-ttu-id="97755-111">**Odotuspäivä**</span><span class="sxs-lookup"><span data-stu-id="97755-111">**Waiting day**</span></span> | <span data-ttu-id="97755-112">Odotuspäivän yksilöivä tunniste.</span><span class="sxs-lookup"><span data-stu-id="97755-112">A unique identifier for the waiting day.</span></span> |
+   | <span data-ttu-id="97755-113">**Kuvaus**</span><span class="sxs-lookup"><span data-stu-id="97755-113">**Description**</span></span> | <span data-ttu-id="97755-114">Odotuspäivän kuvaus.</span><span class="sxs-lookup"><span data-stu-id="97755-114">A description of the waiting day.</span></span> |
+   | <span data-ttu-id="97755-115">**Päivä**</span><span class="sxs-lookup"><span data-stu-id="97755-115">**Day**</span></span> | <span data-ttu-id="97755-116">Kuukauden päivä, jolloin järjestelmä määrittää odotusajan päivämääräksi.</span><span class="sxs-lookup"><span data-stu-id="97755-116">The day of the month that the system should set the waiting period date to.</span></span> |
    
-4. <span data-ttu-id="ba0d7-117">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ba0d7-117">Select **Save**.</span></span>
+4. <span data-ttu-id="97755-117">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="97755-117">Select **Save**.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

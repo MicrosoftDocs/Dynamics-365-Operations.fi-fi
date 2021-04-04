@@ -1,0 +1,147 @@
+---
+title: Käsittele maksukehotuksia – esimerkki
+description: Tämä ohjeaihe käy läpi esimerkin, jossa käsitellään maksukehotuksen luonti-, tulostus- ja kirjausprosessia.
+author: JodiChristiansen
+manager: AnnBe
+ms.date: 02/03/2021
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustPosting, CustCollectionLetterNote
+audience: Application User
+ms.reviewer: roschlom
+ms.search.region: Global
+ms.author: jchrist
+ms.search.validFrom: 2021-02-03
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: df4252513f9e3a02632561b4e465c98edc888ea7
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558308"
+---
+# <a name="process-collection-letters-example"></a><span data-ttu-id="fe471-103">Käsittele maksukehotuksia – esimerkki</span><span class="sxs-lookup"><span data-stu-id="fe471-103">Process collection letters example</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="fe471-104">Tämä ohjeaihe käy läpi esimerkin, jossa käsitellään maksukehotuksen luonti-, tulostus- ja kirjausprosessia.</span><span class="sxs-lookup"><span data-stu-id="fe471-104">This topic goes through an example that shows the process of creating, printing, and posting collection letters.</span></span> <span data-ttu-id="fe471-105">Esimerkki perustuu **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -toimintoon luotonvalvonnassa.</span><span class="sxs-lookup"><span data-stu-id="fe471-105">The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections.</span></span> <span data-ttu-id="fe471-106">Se käyttää USMF-demoyrityksen ja uuden asiakkaan,US-045:n tietoja.</span><span class="sxs-lookup"><span data-stu-id="fe471-106">It uses data in the USMF demo company and a new customer, US-045.</span></span>
+
+<span data-ttu-id="fe471-107">Aloita kohdassa **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat** valitsemalla **Uusi** ja kirjoita sitten tarvittavat tiedot, jotta asiakas US-045 luodaan.</span><span class="sxs-lookup"><span data-stu-id="fe471-107">To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and then enter the required information to create customer US-045.</span></span>
+
+<span data-ttu-id="fe471-108">Noudata näitä vaiheita, kun olet valmis.</span><span class="sxs-lookup"><span data-stu-id="fe471-108">When you've finished, follow these steps.</span></span>
+
+1. <span data-ttu-id="fe471-109">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Määritä maksukehotusten järjestys** ja määritä maksukehotusten järjestys seuraavassa asiakkaan kirjausprofiiliin liitetyssä taulukossa kuvatulla tavalla.</span><span class="sxs-lookup"><span data-stu-id="fe471-109">Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the collection letter sequence as shown in the following table that is assigned to the customer posting profile.</span></span>
+
+|     <span data-ttu-id="fe471-110">Maksukehotuksen koodi</span><span class="sxs-lookup"><span data-stu-id="fe471-110">Collection   letter code</span></span>      |     <span data-ttu-id="fe471-111">kuvaus</span><span class="sxs-lookup"><span data-stu-id="fe471-111">Description</span></span>                           |     <span data-ttu-id="fe471-112">Valuutta</span><span class="sxs-lookup"><span data-stu-id="fe471-112">Currency</span></span>      |     <span data-ttu-id="fe471-113">Päätili</span><span class="sxs-lookup"><span data-stu-id="fe471-113">Main   account</span></span>        |     <span data-ttu-id="fe471-114">Lisämaksu valuuttana</span><span class="sxs-lookup"><span data-stu-id="fe471-114">Fee   in currency</span></span>     |     <span data-ttu-id="fe471-115">Minimi yli</span><span class="sxs-lookup"><span data-stu-id="fe471-115">Minimum   over</span></span>        |     <span data-ttu-id="fe471-116">Päivien esto</span><span class="sxs-lookup"><span data-stu-id="fe471-116">Days   Block</span></span>      |
+|---------------------------------  |---------------------------------------    |-----------------  |-----------------------    |-------------------------- |-----------------------    |---------------------  |
+|     <span data-ttu-id="fe471-117">Maksukehotus 1</span><span class="sxs-lookup"><span data-stu-id="fe471-117">Collection   letter 1</span></span>         |     <span data-ttu-id="fe471-118">Toinen ilmoitus ja lisämaksu</span><span class="sxs-lookup"><span data-stu-id="fe471-118">Second   notification with fee</span></span>        |     <span data-ttu-id="fe471-119">USD</span><span class="sxs-lookup"><span data-stu-id="fe471-119">USD</span></span>           |                           |     <span data-ttu-id="fe471-120">0,00</span><span class="sxs-lookup"><span data-stu-id="fe471-120">0.00</span></span>                  |     <span data-ttu-id="fe471-121">0,00</span><span class="sxs-lookup"><span data-stu-id="fe471-121">0.00</span></span>                  |     <span data-ttu-id="fe471-122">2</span><span class="sxs-lookup"><span data-stu-id="fe471-122">2</span></span>                 |
+|     <span data-ttu-id="fe471-123">Maksukehotus 2</span><span class="sxs-lookup"><span data-stu-id="fe471-123">Collection   letter 2</span></span>         |     <span data-ttu-id="fe471-124">Toinen ilmoitus ja lisämaksu</span><span class="sxs-lookup"><span data-stu-id="fe471-124">Second   notification with fee</span></span>        |     <span data-ttu-id="fe471-125">USC</span><span class="sxs-lookup"><span data-stu-id="fe471-125">USC</span></span>           |     <span data-ttu-id="fe471-126">403150</span><span class="sxs-lookup"><span data-stu-id="fe471-126">403150</span></span>                |     <span data-ttu-id="fe471-127">20.00</span><span class="sxs-lookup"><span data-stu-id="fe471-127">20.00</span></span>                 |     <span data-ttu-id="fe471-128">10.00</span><span class="sxs-lookup"><span data-stu-id="fe471-128">10.00</span></span>                 |     <span data-ttu-id="fe471-129">3</span><span class="sxs-lookup"><span data-stu-id="fe471-129">3</span></span>                 |
+|     <span data-ttu-id="fe471-130">Perittävä</span><span class="sxs-lookup"><span data-stu-id="fe471-130">Collection</span></span>                    |     <span data-ttu-id="fe471-131">Viimeinen ilmoitus ja lisämaksu</span><span class="sxs-lookup"><span data-stu-id="fe471-131">Final   notification with fee</span></span>         |     <span data-ttu-id="fe471-132">USD</span><span class="sxs-lookup"><span data-stu-id="fe471-132">USD</span></span>           |     <span data-ttu-id="fe471-133">403150</span><span class="sxs-lookup"><span data-stu-id="fe471-133">403150</span></span>                |     <span data-ttu-id="fe471-134">50.00</span><span class="sxs-lookup"><span data-stu-id="fe471-134">50.00</span></span>                 |     <span data-ttu-id="fe471-135">100.00</span><span class="sxs-lookup"><span data-stu-id="fe471-135">100.00</span></span>                |     <span data-ttu-id="fe471-136">15</span><span class="sxs-lookup"><span data-stu-id="fe471-136">15</span></span>                |
+
+<span data-ttu-id="fe471-137">Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksukehotussivulla**.</span><span class="sxs-lookup"><span data-stu-id="fe471-137">The following illustration shows the information that's in the table as it would appear on the **Collection letters** page.</span></span> 
+
+<span data-ttu-id="fe471-138">[![Maksukehotusjärjestyksen määrittäminen](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-138">[![Setting up a collection letter sequence](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)</span></span>
+
+ <span data-ttu-id="fe471-139">Tässä esimerkissä on nyt määritettävä kaksi parametria.</span><span class="sxs-lookup"><span data-stu-id="fe471-139">You must now set the two parameters that are required for this example.</span></span>
+
+2. <span data-ttu-id="fe471-140">Valitse ensin **Luotonvalvonta \> Asetukset \> Myyntireskontran parametrit** ja toimi seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="fe471-140">Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-141">Määritä **Perintä**-välilehdessä **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -arvoksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="fe471-141">On the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **Yes**.</span></span>
+    2. <span data-ttu-id="fe471-142">Varmista, että **Luo maksukehotus per** -kentän arvoksi on määritetty **Asiakas**.</span><span class="sxs-lookup"><span data-stu-id="fe471-142">Make sure that the **Create collection letter per** field is set to **Customer**.</span></span>
+
+    <span data-ttu-id="fe471-143">[![Myyntireskontran parametrien määrittäminen perintää varten](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-143">[![Setting Accounts receivable parameters for Credit collections](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)</span></span>
+
+3. <span data-ttu-id="fe471-144">Siirry kohtaan **Myyntireskontra \> Laskut \> Kaikki vapaatekstilaskut**, valitse **Uusi** ja noudata seuraavia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="fe471-144">Go to **Accounts receivable \> Invoices \> All free text invoices**, select **New**, and then follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-145">Valitse **Asiakastili**-kentässä **US-045**.</span><span class="sxs-lookup"><span data-stu-id="fe471-145">In the **Customer account** field select **US-045**.</span></span>
+    2. <span data-ttu-id="fe471-146">Lisää **Laskun päivämäärä** -kenttään **15.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-146">In the **Invoice date** field, enter **1/15/2021**.</span></span>
+    3. <span data-ttu-id="fe471-147">Syötä **Eräpäivä**-kenttään arvo **16.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-147">In the **Due date** field, enter **1/16/2021**.</span></span>
+    4. <span data-ttu-id="fe471-148">Kirjoita **Laskurivit**-pikavälilehden **Päätili**-kenttään **401100**.</span><span class="sxs-lookup"><span data-stu-id="fe471-148">On the **Invoice lines** FastTab, in the **Main account** field, enter **401100**.</span></span>
+    5. <span data-ttu-id="fe471-149">Kirjoita **Yksikköhinta**-kentässä **500.00**.</span><span class="sxs-lookup"><span data-stu-id="fe471-149">In the **Unit price** field, enter **500.00**.</span></span>
+    6. <span data-ttu-id="fe471-150">Valitse **Kirjaa**.</span><span class="sxs-lookup"><span data-stu-id="fe471-150">Select **Post**.</span></span>
+
+    <span data-ttu-id="fe471-151">Sinun on nyt kirjoitettava asiakkaalle kaksi hyvityslaskua.</span><span class="sxs-lookup"><span data-stu-id="fe471-151">You must now enter two credit notes for the customer.</span></span>
+
+4. <span data-ttu-id="fe471-152">Valitse **Uusi** ja toimi sitten seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="fe471-152">Select **New**, and then follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-153">Valitse **Asiakastili**-kentässä **US-045**.</span><span class="sxs-lookup"><span data-stu-id="fe471-153">In the **Customer account** field, select **US-045**.</span></span>
+    2. <span data-ttu-id="fe471-154">Lisää **Laskun päivämäärä** -kenttään **15.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-154">In the **Invoice date** field, enter **1/15/2021**.</span></span>
+    3. <span data-ttu-id="fe471-155">Syötä **Eräpäivä**-kenttään arvo **16.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-155">In the **Due date** field, enter **1/16/2021**.</span></span>
+    4. <span data-ttu-id="fe471-156">Kirjoita **Laskurivit**-pikavälilehden **Päätili**-kenttään **401100**.</span><span class="sxs-lookup"><span data-stu-id="fe471-156">On the **Invoice lines** FastTab, in the **Main account** field, enter **401100**.</span></span>
+    5. <span data-ttu-id="fe471-157">Syötä **Yksikköhinta**-kentän arvoksi **-100,00**.</span><span class="sxs-lookup"><span data-stu-id="fe471-157">In the **Unit price** field, enter **-100.00**.</span></span>
+    6. <span data-ttu-id="fe471-158">Valitse **Kirjaa**.</span><span class="sxs-lookup"><span data-stu-id="fe471-158">Select **Post**.</span></span>
+
+5. <span data-ttu-id="fe471-159">Toista vaihe 4, mutta kirjoita **Yksikköhinta**-kenttään **-200,00**.</span><span class="sxs-lookup"><span data-stu-id="fe471-159">Repeat step 4, but enter **-200.00** in the **Unit price** field.</span></span>
+6. <span data-ttu-id="fe471-160">Siirry kohtaan **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat** ja valitse asiakas **US-045**.</span><span class="sxs-lookup"><span data-stu-id="fe471-160">Go to **Accounts receivable \> Customers \> All customers**, and select customer **US-045**.</span></span> <span data-ttu-id="fe471-161">Tämän jälkeen voit tarkistaa aiemmin kirjaamiasi asiakastapahtumia valitsemalla toimintoruudusta **Tapahtumat \> Tapahtumat**.</span><span class="sxs-lookup"><span data-stu-id="fe471-161">Then, on the Action Pane, select **Transactions \> Transactions** to review the customer transactions that you posted earlier.</span></span>
+
+    <span data-ttu-id="fe471-162">[![Kirjattujen asiakastapahtumien tarkistaminen](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-162">[![Reviewing the posted customer transactions](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)</span></span>
+
+    <span data-ttu-id="fe471-163">Asiakkaalle US-045 on nyt luotava maksukehotuksia.</span><span class="sxs-lookup"><span data-stu-id="fe471-163">You must now create collection letters for customer US-045.</span></span>
+
+7. <span data-ttu-id="fe471-164">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Luo maksukehotukset** ja noudata seuravia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="fe471-164">Go to **Credit and collections \> Collection letter \> Create collection letters**, and follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-165">Määritä **Lasku**- ja **Hyvityslasku**-asetuksiksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="fe471-165">Set the **Invoice** and **Credit note** options to **Yes**.</span></span>
+
+        <span data-ttu-id="fe471-166">Oletusarvon mukaan **Maksukehotus**-kentän arvoksi tulee **Perittävää asiakasta kohti**.</span><span class="sxs-lookup"><span data-stu-id="fe471-166">By default, the **Collection letter** field should be set to **Collection per customer**.</span></span>
+
+    2. <span data-ttu-id="fe471-167">Lisää **Maksukehotuksen päivämäärä** -kenttään **19.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-167">In the **Collection letter date** field, enter **1/19/2021**.</span></span>
+    3. <span data-ttu-id="fe471-168">Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** ja lisää sitten **Asiakastili**-kentässä asiakas **US-045**.</span><span class="sxs-lookup"><span data-stu-id="fe471-168">On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.</span></span>
+    4. <span data-ttu-id="fe471-169">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="fe471-169">Select **OK**.</span></span>
+    5. <span data-ttu-id="fe471-170">Luo maksukehotukset valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="fe471-170">Select **OK** to create collection letters.</span></span>
+
+8. <span data-ttu-id="fe471-171">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Tarkastele ja käsittele maksukehotuksia** ja noudata seuravia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="fe471-171">Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-172">Huomaa, että sekä otsikon että tapahtumarivien maksukehotuskoodi on **Maksukehotus 1**, koska tämä maksukehotus on sarjan ensimmäinen maksukehotus.</span><span class="sxs-lookup"><span data-stu-id="fe471-172">Notice that the collection letter code on both the header and the transaction lines is **Collection letter 1**, because this collection letter is the first collection letter in the sequence.</span></span> <span data-ttu-id="fe471-173">(Jos haluat tarkastella tapahtumarivejä, sinun on ehkä valittava **Tapahtumat**-pikavälilehti.)</span><span class="sxs-lookup"><span data-stu-id="fe471-173">(To view the transaction lines, you might have to select the **Transactions** FastTab.)</span></span>
+
+   <span data-ttu-id="fe471-174">[![Saman maksukehotuskoodin tarkistaminen otsikossa ja riveillä](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-174">[![Verifying that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)</span></span>
+
+    2. <span data-ttu-id="fe471-175">Valitse toimintoruudussa **Kirjaa**.</span><span class="sxs-lookup"><span data-stu-id="fe471-175">On the Action Pane, select **Post**.</span></span>
+    3. <span data-ttu-id="fe471-176">Lisää **Kirjauspäivämäärä** -kenttään **19.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-176">In the **Posting date** field, enter **1/19/2021**.</span></span>
+
+    <span data-ttu-id="fe471-177">Asiakkaalle US-045 on jälleen luotava maksukehotuksia.</span><span class="sxs-lookup"><span data-stu-id="fe471-177">You must now create collection letters again for customer US-045.</span></span>
+
+9. <span data-ttu-id="fe471-178">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Luo maksukehotukset** ja noudata seuravia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="fe471-178">Go to **Credit and collections \> Collection letter \> Create collection letters**, and follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-179">Määritä **Lasku**- ja **Hyvityslasku**-asetuksiksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="fe471-179">Set the **Invoice** and **Credit note** options to **Yes**.</span></span>
+
+        <span data-ttu-id="fe471-180">Oletusarvon mukaan **Maksukehotus**-kentän arvoksi tulee **Perittävää asiakasta kohti**.</span><span class="sxs-lookup"><span data-stu-id="fe471-180">By default, the **Collection letter** field should be set to **Collection per customer**.</span></span>
+
+    2. <span data-ttu-id="fe471-181">Lisää **Maksukehotuksen päivämäärä** -kenttään **23.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-181">In the **Collection letter date** field, enter **1/23/2021**.</span></span>
+    3. <span data-ttu-id="fe471-182">Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** ja lisää sitten **Asiakastili**-kentässä asiakas **US-045**.</span><span class="sxs-lookup"><span data-stu-id="fe471-182">On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.</span></span>
+    4. <span data-ttu-id="fe471-183">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="fe471-183">Select **OK**.</span></span>
+    5. <span data-ttu-id="fe471-184">Luo maksukehotukset valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="fe471-184">Select **OK** to create collection letters.</span></span>
+
+10. <span data-ttu-id="fe471-185">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Tarkastele ja käsittele maksukehotuksia** ja noudata seuravia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="fe471-185">Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-186">Huomaa, että otsikon maksukehotuskoodi on **Maksukehotus 1**.</span><span class="sxs-lookup"><span data-stu-id="fe471-186">Notice that the collection letter code on the header is **Collection letter 1**.</span></span> <span data-ttu-id="fe471-187">Tapahtumarivien koodi on kuitenkin **Maksukehotus 2**.</span><span class="sxs-lookup"><span data-stu-id="fe471-187">However, the code on the transaction lines is **Collection letter 2**.</span></span>
+
+   <span data-ttu-id="fe471-188">[![Eri maksukehotuskoodien tarkistaminen otsikossa ja riveillä](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-188">[![Verifies that different collection letter codes appear on the header and the lines](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)</span></span>
+
+  <span data-ttu-id="fe471-189">Koodit ovat eri, koska **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -arvoksi on määritetty **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="fe471-189">The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.</span></span>
+
+  2. <span data-ttu-id="fe471-190">Älä kirjaa tätä maksukehotusta.</span><span class="sxs-lookup"><span data-stu-id="fe471-190">Don't post this collection letter.</span></span>
+
+11. <span data-ttu-id="fe471-191">Siirry kohtaan **Luotonvalvonta \> Asetukset \> Myyntireskontran parametrit** ja määritä sitten **Perintä**-välilehdessä **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -asetukseksi **Ei**.</span><span class="sxs-lookup"><span data-stu-id="fe471-191">Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and then, on the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **No**.</span></span>
+
+    <span data-ttu-id="fe471-192">[![Määritetään Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia -asetukseksi Ei](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-192">[![Setting the Ignore payments and credit memos when calculating collection letter code option to No](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)</span></span>
+
+    <span data-ttu-id="fe471-193">Asiakkaalle US-045 on jälleen luotava maksukehotuksia.</span><span class="sxs-lookup"><span data-stu-id="fe471-193">You must now create collection letters again for customer US-045.</span></span>
+
+12. <span data-ttu-id="fe471-194">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Luo maksukehotukset** ja noudata seuravia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="fe471-194">Go to **Credit and collections \> Collection letter \> Create collection letters**, and follow these steps:</span></span>
+
+    1. <span data-ttu-id="fe471-195">Määritä **Lasku**- ja **Hyvityslasku**-asetuksiksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="fe471-195">Set the **Invoice** and **Credit note** options to **Yes**.</span></span>
+
+        <span data-ttu-id="fe471-196">Oletusarvon mukaan **Maksukehotus**-kentän arvoksi tulee **Perittävää asiakasta kohti**.</span><span class="sxs-lookup"><span data-stu-id="fe471-196">By default, the **Collection letter** field should be set to **Collection per customer**.</span></span>
+
+    2. <span data-ttu-id="fe471-197">Lisää **Maksukehotuksen päivämäärä** -kenttään **23.1.2021**.</span><span class="sxs-lookup"><span data-stu-id="fe471-197">In the **Collection letter date** field, enter **1/23/2021**.</span></span>
+    3. <span data-ttu-id="fe471-198">Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** ja lisää sitten **Asiakastili**-kentässä asiakas **US-045**.</span><span class="sxs-lookup"><span data-stu-id="fe471-198">On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.</span></span>
+    4. <span data-ttu-id="fe471-199">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="fe471-199">Select **OK**.</span></span>
+    5. <span data-ttu-id="fe471-200">Luo maksukehotukset valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="fe471-200">Select **OK** to create collection letters.</span></span>
+
+13. <span data-ttu-id="fe471-201">Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Tarkastele ja käsittele maksukehotuksia** ja huomaa, että sekä otsikon että tapahtumarivien maksukehotuskoodi on **Maksukehotus 2**.</span><span class="sxs-lookup"><span data-stu-id="fe471-201">Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and notice that the collection letter code on both the header and the transaction lines is **Collection letter 2**.</span></span>
+
+    <span data-ttu-id="fe471-202">[![Näytetään taas, että sama maksukehotuskoodi on otsikossa ja riveillä](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)</span><span class="sxs-lookup"><span data-stu-id="fe471-202">[![Showing again that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)</span></span>
+
+    <span data-ttu-id="fe471-203">Sama koodi on molemmissa paikoissa, koska **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -arvoksi on määritetty nyt **Ei**.</span><span class="sxs-lookup"><span data-stu-id="fe471-203">The same code appears in both places because the **Ignore payments and credit memos when calculating collection letter code** option is now set to **No**.</span></span>
