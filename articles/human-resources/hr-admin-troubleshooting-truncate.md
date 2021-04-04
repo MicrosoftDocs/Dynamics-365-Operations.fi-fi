@@ -17,90 +17,95 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0dc91d3165f14c165f75756dc63a3dc8f63149aa
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: a745543f4d2a2e2a94a820f4ff5f35f8067a83d7
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112362"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466373"
 ---
-# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a><span data-ttu-id="b2d64-104">Tekstin katkaisemisen välttäminen toimihierarkiassa ja vienti Visioon</span><span class="sxs-lookup"><span data-stu-id="b2d64-104">Avoid text truncation on the position hierarchy and export to Visio</span></span>
+# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a><span data-ttu-id="85a17-104">Tekstin katkaisemisen välttäminen toimihierarkiassa ja vienti Visioon</span><span class="sxs-lookup"><span data-stu-id="85a17-104">Avoid text truncation on the position hierarchy and export to Visio</span></span>
 
-<span data-ttu-id="b2d64-105">**Varasto-otto**</span><span class="sxs-lookup"><span data-stu-id="b2d64-105">**Issue**</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="b2d64-106">Kun asiakas tarkastelee, toimihierarkiaa Microsoft Dynamics 365 Human Resourcesissa, henkilöiden ja toimien nimet on katkaistu.</span><span class="sxs-lookup"><span data-stu-id="b2d64-106">When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated.</span></span> <span data-ttu-id="b2d64-107">Tämän vuoksi näyttökuvan ottaminen hierarkiasta tai hierarkian tulostaminen jakamista varten voi olla hankalaa.</span><span class="sxs-lookup"><span data-stu-id="b2d64-107">Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.</span></span>
+<span data-ttu-id="85a17-105">**Varasto-otto**</span><span class="sxs-lookup"><span data-stu-id="85a17-105">**Issue**</span></span>
+
+<span data-ttu-id="85a17-106">Kun asiakas tarkastelee, toimihierarkiaa Microsoft Dynamics 365 Human Resourcesissa, henkilöiden ja toimien nimet on katkaistu.</span><span class="sxs-lookup"><span data-stu-id="85a17-106">When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated.</span></span> <span data-ttu-id="85a17-107">Tämän vuoksi näyttökuvan ottaminen hierarkiasta tai hierarkian tulostaminen jakamista varten voi olla hankalaa.</span><span class="sxs-lookup"><span data-stu-id="85a17-107">Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.</span></span>
 
 ![Toimihierarkia](media/position-h.png)
 
-<span data-ttu-id="b2d64-109">**Syy**</span><span class="sxs-lookup"><span data-stu-id="b2d64-109">**Cause**</span></span>
+<span data-ttu-id="85a17-109">**Syy**</span><span class="sxs-lookup"><span data-stu-id="85a17-109">**Cause**</span></span>
 
-<span data-ttu-id="b2d64-110">Tämä on suunniteltu ominaisuus.</span><span class="sxs-lookup"><span data-stu-id="b2d64-110">This behavior is by design.</span></span>
+<span data-ttu-id="85a17-110">Tämä on suunniteltu ominaisuus.</span><span class="sxs-lookup"><span data-stu-id="85a17-110">This behavior is by design.</span></span>
 
-<span data-ttu-id="b2d64-111">**Tarkkuus**</span><span class="sxs-lookup"><span data-stu-id="b2d64-111">**Resolution**</span></span>
+<span data-ttu-id="85a17-111">**Tarkkuus**</span><span class="sxs-lookup"><span data-stu-id="85a17-111">**Resolution**</span></span>
 
-<span data-ttu-id="b2d64-112">Tekstin koon muuttaminen ei valitettavasti ole yksinkertaista.</span><span class="sxs-lookup"><span data-stu-id="b2d64-112">Unfortunately, users can't easily change the size of the text.</span></span> <span data-ttu-id="b2d64-113">Voit kuitenkin viedä toimihierarkian Human Resourcesista ja tuoda sen Microsoft Visioon.</span><span class="sxs-lookup"><span data-stu-id="b2d64-113">However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio.</span></span> <span data-ttu-id="b2d64-114">Vaikka seuraava artikkeli kirjoitettiin Microsoft Dynamics AX 2012:ta varten, samaa prosessia käytetään Human Resourcesissa: [Toimihierarkian vieminen Microsoft Visioon](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).</span><span class="sxs-lookup"><span data-stu-id="b2d64-114">Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).</span></span>
+<span data-ttu-id="85a17-112">Tekstin koon muuttaminen ei valitettavasti ole yksinkertaista.</span><span class="sxs-lookup"><span data-stu-id="85a17-112">Unfortunately, users can't easily change the size of the text.</span></span> <span data-ttu-id="85a17-113">Voit kuitenkin viedä toimihierarkian Human Resourcesista ja tuoda sen Microsoft Visioon.</span><span class="sxs-lookup"><span data-stu-id="85a17-113">However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio.</span></span> <span data-ttu-id="85a17-114">Vaikka seuraava artikkeli kirjoitettiin Microsoft Dynamics AX 2012:ta varten, samaa prosessia käytetään Human Resourcesissa: [Toimihierarkian vieminen Microsoft Visioon](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).</span><span class="sxs-lookup"><span data-stu-id="85a17-114">Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).</span></span>
 
-<span data-ttu-id="b2d64-115">Vie hierarkia Visioon seuraavien ohjeiden mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="b2d64-115">Follow these steps to export to Visio.</span></span>
+<span data-ttu-id="85a17-115">Vie hierarkia Visioon seuraavien ohjeiden mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="85a17-115">Follow these steps to export to Visio.</span></span>
 
-1. <span data-ttu-id="b2d64-116">Avaa Human Resourcesissa **Toimet**-luettelosivu.</span><span class="sxs-lookup"><span data-stu-id="b2d64-116">In Human Resources, open the **Positions** list page.</span></span>
+1. <span data-ttu-id="85a17-116">Avaa Human Resourcesissa **Toimet**-luettelosivu.</span><span class="sxs-lookup"><span data-stu-id="85a17-116">In Human Resources, open the **Positions** list page.</span></span>
 
-    <span data-ttu-id="b2d64-117">Jos haluat sisällyttää muita tietoja organisaation rakennekaavioon, lisää kenttiä **Toimet**-luetteloon. jotta ne ovat käytettävissä, kun käytät ohjattua toimintoa myöhemmin tämän menettelyn aikana.</span><span class="sxs-lookup"><span data-stu-id="b2d64-117">To include more information in the organization structure diagram, add fields to the **Positions** list, so that they are available when you use the wizard later in this procedure.</span></span>
+    <span data-ttu-id="85a17-117">Jos haluat sisällyttää muita tietoja organisaation rakennekaavioon, lisää kenttiä **Toimet**-luetteloon. jotta ne ovat käytettävissä, kun käytät ohjattua toimintoa myöhemmin tämän menettelyn aikana.</span><span class="sxs-lookup"><span data-stu-id="85a17-117">To include more information in the organization structure diagram, add fields to the **Positions** list, so that they are available when you use the wizard later in this procedure.</span></span>
 
-2. <span data-ttu-id="b2d64-118">Valitse toimintoruudussa ensin **Avaa Microsoft Officessa** -painike ja sitten **Vie Exceliin** -kohdassa **Toimet**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-118">On the Action Pane, select the **Open in Microsoft Office** button, and then, under **Export to Excel**, select **Positions**.</span></span> <span data-ttu-id="b2d64-119">Voit vaihtoehtoisesti painaa näppäinyhdistelmää Ctrl+T.</span><span class="sxs-lookup"><span data-stu-id="b2d64-119">Alternatively, press Ctrl+T.</span></span>
+2. <span data-ttu-id="85a17-118">Valitse toimintoruudussa ensin **Avaa Microsoft Officessa** -painike ja sitten **Vie Exceliin** -kohdassa **Toimet**.</span><span class="sxs-lookup"><span data-stu-id="85a17-118">On the Action Pane, select the **Open in Microsoft Office** button, and then, under **Export to Excel**, select **Positions**.</span></span> <span data-ttu-id="85a17-119">Voit vaihtoehtoisesti painaa näppäinyhdistelmää Ctrl+T.</span><span class="sxs-lookup"><span data-stu-id="85a17-119">Alternatively, press Ctrl+T.</span></span>
 
     ![Toimet-luettelosivun vieminen Exceliin](media/org-admin.png)
 
-3. <span data-ttu-id="b2d64-121">Tallenna viety Excel-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="b2d64-121">Save the Excel file that is exported.</span></span>
+3. <span data-ttu-id="85a17-121">Tallenna viety Excel-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="85a17-121">Save the Excel file that is exported.</span></span>
 
     ![Vie Exceliin -valintaikkuna](media/export-excel.png)
 
-4. <span data-ttu-id="b2d64-123">Valitse Visiossa ensin **Visio - Luo uusi** ja sitten **Yritys**-malliluokka.</span><span class="sxs-lookup"><span data-stu-id="b2d64-123">In Visio, select **Visio - Create New**, and select the **Business** template category.</span></span>
+4. <span data-ttu-id="85a17-123">Valitse Visiossa ensin **Visio - Luo uusi** ja sitten **Yritys**-malliluokka.</span><span class="sxs-lookup"><span data-stu-id="85a17-123">In Visio, select **Visio - Create New**, and select the **Business** template category.</span></span>
 
     ![Uusi kaavio](media/new.png)
 
-5. <span data-ttu-id="b2d64-125">Valitse ensin **organisaatiokaavion ohjattu toiminto** ja sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-125">Select **Organization Chart Wizard**, and then select **Create**.</span></span>
+5. <span data-ttu-id="85a17-125">Valitse ensin **organisaatiokaavion ohjattu toiminto** ja sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="85a17-125">Select **Organization Chart Wizard**, and then select **Create**.</span></span>
 
     ![Organisaatiokaavion ohjatun toiminnon valintaikkuna](media/orgchart-wizard.png)
 
-6. <span data-ttu-id="b2d64-127">Valitse ensin **Tiedostoon tai tietokantaan jo tallennetut tiedot** ja sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-127">Select **Information that's already stored in a file or database**, and then select **Next**.</span></span>
+6. <span data-ttu-id="85a17-127">Valitse ensin **Tiedostoon tai tietokantaan jo tallennetut tiedot** ja sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-127">Select **Information that's already stored in a file or database**, and then select **Next**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 1](media/orgchart-wizard7.png)
 
-7. <span data-ttu-id="b2d64-129">Valitse ensin **Teksti-, Org Plus (\*.txt)- tai Excel-tiedosto** ja sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-129">Choose **A text, Org Plus (\*.txt), or Excel file**, and then select **Next**.</span></span>
+7. <span data-ttu-id="85a17-129">Valitse ensin **Teksti-, Org Plus (\*.txt)- tai Excel-tiedosto** ja sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-129">Choose **A text, Org Plus (\*.txt), or Excel file**, and then select **Next**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 2](media/orgchart-wizard3.png)
 
-8. <span data-ttu-id="b2d64-131">Siirry toimihierarkian sisältävään Excel-tiedostoon, valitse se ja valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-131">Browse to select the exported Excel file that contains the position hierarchy, and then select **Next**.</span></span>
+8. <span data-ttu-id="85a17-131">Siirry toimihierarkian sisältävään Excel-tiedostoon, valitse se ja valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-131">Browse to select the exported Excel file that contains the position hierarchy, and then select **Next**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 3](media/orgchart-wizard2.png)
 
-9. <span data-ttu-id="b2d64-133">Määritä **Nimi**-kentän arvoksi **Toimi** ja **Raportoi:**-kentän arvoksi **Raportoi toimella**. Valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-133">Set the **Name** field to **Position**, set the **Reports to** field to **Reports to position**, and then select **Next**.</span></span>
+9. <span data-ttu-id="85a17-133">Määritä **Nimi**-kentän arvoksi **Toimi** ja **Raportoi:**-kentän arvoksi **Raportoi toimella**. Valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-133">Set the **Name** field to **Position**, set the **Reports to** field to **Reports to position**, and then select **Next**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 4](media/orgchart-wizard1.png)
 
-10. <span data-ttu-id="b2d64-135">Valitse kussakin solmussa näytettävät kentät ja valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-135">Select the fields that should be shown on each node, and then select **Next**.</span></span>
+10. <span data-ttu-id="85a17-135">Valitse kussakin solmussa näytettävät kentät ja valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-135">Select the fields that should be shown on each node, and then select **Next**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 5](media/orgchart-wizard5.png)
 
-11. <span data-ttu-id="b2d64-137">Lisää **Toimi**-sarake **Muokkaa tietokenttien muotoa** -luetteloon ja valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-137">Add the **Position** column to the **Shape Data fields** list, and then select **Next**.</span></span>
+11. <span data-ttu-id="85a17-137">Lisää **Toimi**-sarake **Muokkaa tietokenttien muotoa** -luetteloon ja valitse sitten **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-137">Add the **Position** column to the **Shape Data fields** list, and then select **Next**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 6](media/orgchart-wizard6.png)
 
-12. <span data-ttu-id="b2d64-139">Kuvia ei ole tällä hetkellä käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="b2d64-139">Pictures aren't currently available.</span></span> <span data-ttu-id="b2d64-140">Valitse tämän vuoksi seuraavalla sivulla **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-140">Therefore, on the next page, select **Next**.</span></span>
-13. <span data-ttu-id="b2d64-141">Valitse **Haluan, että ohjattu toiminto jakaa organisaatiokaavio automaattisesti sivuille**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-141">Select **I want the wizard to automatically break my organization chart across pages**.</span></span>
+12. <span data-ttu-id="85a17-139">Kuvia ei ole tällä hetkellä käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="85a17-139">Pictures aren't currently available.</span></span> <span data-ttu-id="85a17-140">Valitse tämän vuoksi seuraavalla sivulla **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="85a17-140">Therefore, on the next page, select **Next**.</span></span>
+13. <span data-ttu-id="85a17-141">Valitse **Haluan, että ohjattu toiminto jakaa organisaatiokaavio automaattisesti sivuille**.</span><span class="sxs-lookup"><span data-stu-id="85a17-141">Select **I want the wizard to automatically break my organization chart across pages**.</span></span>
 
     ![Organisaatiokaavion ohjattu toiminto 7](media/orgchart-wizard4.png)
 
-14. <span data-ttu-id="b2d64-143">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="b2d64-143">Select **Finish**.</span></span>
+14. <span data-ttu-id="85a17-143">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="85a17-143">Select **Finish**.</span></span>
 
-    <span data-ttu-id="b2d64-144">Jos jotkin toimet eivät ole rakenteessa, sinua pyydetään sisällyttämään ne kaavioon.</span><span class="sxs-lookup"><span data-stu-id="b2d64-144">If there are any positions that aren't in the structure, you're asked to include them in the diagram.</span></span>
+    <span data-ttu-id="85a17-144">Jos jotkin toimet eivät ole rakenteessa, sinua pyydetään sisällyttämään ne kaavioon.</span><span class="sxs-lookup"><span data-stu-id="85a17-144">If there are any positions that aren't in the structure, you're asked to include them in the diagram.</span></span>
 
-<span data-ttu-id="b2d64-145">Visiossa muodostettavassa kaaviossa jokainen esimies näkyy erillisessä laskentataulukossa.</span><span class="sxs-lookup"><span data-stu-id="b2d64-145">The diagram that is generated in Visio shows each manager on a separate worksheet.</span></span>
+<span data-ttu-id="85a17-145">Visiossa muodostettavassa kaaviossa jokainen esimies näkyy erillisessä laskentataulukossa.</span><span class="sxs-lookup"><span data-stu-id="85a17-145">The diagram that is generated in Visio shows each manager on a separate worksheet.</span></span>
 
-<span data-ttu-id="b2d64-146">Kun Visio-tiedosto luodaan, kussakin solmussa näkyvät ne tiedot, jotka perustuvat kaavioon sisällytettäväksi valittuihin kenttiin.</span><span class="sxs-lookup"><span data-stu-id="b2d64-146">Based on the fields that you selected to include in the diagram, each node shows the appropriate information when the Visio file is generated.</span></span>
+<span data-ttu-id="85a17-146">Kun Visio-tiedosto luodaan, kussakin solmussa näkyvät ne tiedot, jotka perustuvat kaavioon sisällytettäväksi valittuihin kenttiin.</span><span class="sxs-lookup"><span data-stu-id="85a17-146">Based on the fields that you selected to include in the diagram, each node shows the appropriate information when the Visio file is generated.</span></span>
 
 ![Hierarkiakaavio](media/hierarchy.png)
 
-<span data-ttu-id="b2d64-148">**Lisäasetus**</span><span class="sxs-lookup"><span data-stu-id="b2d64-148">**Additional option**</span></span>
+<span data-ttu-id="85a17-148">**Lisäasetus**</span><span class="sxs-lookup"><span data-stu-id="85a17-148">**Additional option**</span></span>
 
-<span data-ttu-id="b2d64-149">Human Resourcesissa joitakin hierarkiaan liittyviä tietoja voi olla mahdollista katsoa **Ihmiset**-työtilassa.</span><span class="sxs-lookup"><span data-stu-id="b2d64-149">In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.</span></span>
+<span data-ttu-id="85a17-149">Human Resourcesissa joitakin hierarkiaan liittyviä tietoja voi olla mahdollista katsoa **Ihmiset**-työtilassa.</span><span class="sxs-lookup"><span data-stu-id="85a17-149">In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

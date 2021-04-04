@@ -17,43 +17,46 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c93697921e6199587da6e3f3a116e55d4b079e8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9e10327ad65b712cf7713eb3e25713ac5dae950e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019601"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253299"
 ---
-# <a name="maintenance-request-reports"></a><span data-ttu-id="9672b-103">Ylläpitopyyntöraportit</span><span class="sxs-lookup"><span data-stu-id="9672b-103">Maintenance request reports</span></span>
+# <a name="maintenance-request-reports"></a><span data-ttu-id="f5e41-103">Ylläpitopyyntöraportit</span><span class="sxs-lookup"><span data-stu-id="f5e41-103">Maintenance request reports</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="9672b-104">Resurssien hallinnassa voit luoda kaksi raporttia, jotka liittyvät ylläpitopyyntöihin.</span><span class="sxs-lookup"><span data-stu-id="9672b-104">In Asset Management, you can generate two reports that are related to maintenance requests.</span></span> <span data-ttu-id="9672b-105">Yhdessä raportissa näkyy tietoja, ja toisessa raportissa on luettelo, jota voidaan käyttää suunnitteluun ja seurantaan.</span><span class="sxs-lookup"><span data-stu-id="9672b-105">One report shows details, and the other report provides a list that can be used for planning and follow-up.</span></span>
+<span data-ttu-id="f5e41-104">Resurssien hallinnassa voit luoda kaksi raporttia, jotka liittyvät ylläpitopyyntöihin.</span><span class="sxs-lookup"><span data-stu-id="f5e41-104">In Asset Management, you can generate two reports that are related to maintenance requests.</span></span> <span data-ttu-id="f5e41-105">Yhdessä raportissa näkyy tietoja, ja toisessa raportissa on luettelo, jota voidaan käyttää suunnitteluun ja seurantaan.</span><span class="sxs-lookup"><span data-stu-id="f5e41-105">One report shows details, and the other report provides a list that can be used for planning and follow-up.</span></span>
 
-## <a name="create-a-maintenance-request-details-report"></a><span data-ttu-id="9672b-106">Ylläpitopyyntöjen tietoraportin luominen</span><span class="sxs-lookup"><span data-stu-id="9672b-106">Create a Maintenance request details report</span></span>
+## <a name="create-a-maintenance-request-details-report"></a><span data-ttu-id="f5e41-106">Ylläpitopyyntöjen tietoraportin luominen</span><span class="sxs-lookup"><span data-stu-id="f5e41-106">Create a Maintenance request details report</span></span>
 
-<span data-ttu-id="9672b-107">**Ylläpitopyynnön tiedot** -raportissa näkyy erilaisia ylläpitopyyntöihin liittyviä tietoja.</span><span class="sxs-lookup"><span data-stu-id="9672b-107">The **Maintenance request details** report shows various information that is related to maintenance requests.</span></span>
+<span data-ttu-id="f5e41-107">**Ylläpitopyynnön tiedot** -raportissa näkyy erilaisia ylläpitopyyntöihin liittyviä tietoja.</span><span class="sxs-lookup"><span data-stu-id="f5e41-107">The **Maintenance request details** report shows various information that is related to maintenance requests.</span></span>
 
-1. <span data-ttu-id="9672b-108">Valitse **Resurssien hallinta** \> **Raportit** \> **Ylläpitopyynnöt** \> **Ylläpitopyynnön tiedot**.</span><span class="sxs-lookup"><span data-stu-id="9672b-108">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request details**.</span></span>
-2. <span data-ttu-id="9672b-109">**Sisällytettävät tietueet** -pikavälilehdessä voit valita raporttiin sisällytettävät tietyt ylläpitopyynnöt.</span><span class="sxs-lookup"><span data-stu-id="9672b-109">On the **Records to include** FastTab, you can select specific maintenance requests to include on the report.</span></span>
-3. <span data-ttu-id="9672b-110">**Suorita taustalla** -pikavälilehdessä voit määrittää raportin luonnin erätyönä tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="9672b-110">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
-4. <span data-ttu-id="9672b-111">Luo raportti valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="9672b-111">Select **OK** to generate the report.</span></span>
+1. <span data-ttu-id="f5e41-108">Valitse **Resurssien hallinta** \> **Raportit** \> **Ylläpitopyynnöt** \> **Ylläpitopyynnön tiedot**.</span><span class="sxs-lookup"><span data-stu-id="f5e41-108">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request details**.</span></span>
+2. <span data-ttu-id="f5e41-109">**Sisällytettävät tietueet** -pikavälilehdessä voit valita raporttiin sisällytettävät tietyt ylläpitopyynnöt.</span><span class="sxs-lookup"><span data-stu-id="f5e41-109">On the **Records to include** FastTab, you can select specific maintenance requests to include on the report.</span></span>
+3. <span data-ttu-id="f5e41-110">**Suorita taustalla** -pikavälilehdessä voit määrittää raportin luonnin erätyönä tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="f5e41-110">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
+4. <span data-ttu-id="f5e41-111">Luo raportti valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="f5e41-111">Select **OK** to generate the report.</span></span>
 
-<span data-ttu-id="9672b-112">Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.</span><span class="sxs-lookup"><span data-stu-id="9672b-112">The following illustration shows an example of the **Maintenance request details** report.</span></span>
+<span data-ttu-id="f5e41-112">Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.</span><span class="sxs-lookup"><span data-stu-id="f5e41-112">The following illustration shows an example of the **Maintenance request details** report.</span></span>
 
 ![Ylläpitopyynnön tietoraportti](media/09-manage-maintenance-requests.png)
 
-## <a name="create-a-maintenance-request-list-report"></a><span data-ttu-id="9672b-114">Ylläpitopyyntöjen luetteloraportin luominen</span><span class="sxs-lookup"><span data-stu-id="9672b-114">Create a Maintenance request list report</span></span>
+## <a name="create-a-maintenance-request-list-report"></a><span data-ttu-id="f5e41-114">Ylläpitopyyntöjen luetteloraportin luominen</span><span class="sxs-lookup"><span data-stu-id="f5e41-114">Create a Maintenance request list report</span></span>
 
-<span data-ttu-id="9672b-115">**Ylläpitopyyntöluettelo**-raportissa on luettelo kaikista saman pyyntötyypin ylläpitopyynnöistä.</span><span class="sxs-lookup"><span data-stu-id="9672b-115">The **Maintenance request list** report shows a list of all maintenance requests of the same request type.</span></span>
+<span data-ttu-id="f5e41-115">**Ylläpitopyyntöluettelo**-raportissa on luettelo kaikista saman pyyntötyypin ylläpitopyynnöistä.</span><span class="sxs-lookup"><span data-stu-id="f5e41-115">The **Maintenance request list** report shows a list of all maintenance requests of the same request type.</span></span>
 
-1. <span data-ttu-id="9672b-116">Valitse **Resurssien hallinta** \> **Raportit** \> **Ylläpitopyynnöt** \> **Ylläpitopyyntöluettelo**.</span><span class="sxs-lookup"><span data-stu-id="9672b-116">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request list**.</span></span>
-2. <span data-ttu-id="9672b-117">**Sisällytettävät tietueet** -pikavälilehdessä voit tehdä valintoja raporttiin sisällytettävistä ylläpitopyynnöistä.</span><span class="sxs-lookup"><span data-stu-id="9672b-117">On the **Records to include** FastTab, you can make selections to define which maintenance requests are included on the report.</span></span>
-3. <span data-ttu-id="9672b-118">**Suorita taustalla** -pikavälilehdessä voit määrittää raportin luonnin erätyönä tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="9672b-118">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
-4. <span data-ttu-id="9672b-119">Luo raportti valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="9672b-119">Select **OK** to generate the report.</span></span>
+1. <span data-ttu-id="f5e41-116">Valitse **Resurssien hallinta** \> **Raportit** \> **Ylläpitopyynnöt** \> **Ylläpitopyyntöluettelo**.</span><span class="sxs-lookup"><span data-stu-id="f5e41-116">Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request list**.</span></span>
+2. <span data-ttu-id="f5e41-117">**Sisällytettävät tietueet** -pikavälilehdessä voit tehdä valintoja raporttiin sisällytettävistä ylläpitopyynnöistä.</span><span class="sxs-lookup"><span data-stu-id="f5e41-117">On the **Records to include** FastTab, you can make selections to define which maintenance requests are included on the report.</span></span>
+3. <span data-ttu-id="f5e41-118">**Suorita taustalla** -pikavälilehdessä voit määrittää raportin luonnin erätyönä tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="f5e41-118">On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.</span></span>
+4. <span data-ttu-id="f5e41-119">Luo raportti valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="f5e41-119">Select **OK** to generate the report.</span></span>
 
-<span data-ttu-id="9672b-120">Seuraavassa kuvassa on esimerkki **Ylläpitopyyntöluettelo** -raportista kaikille aktiivisille yläpitopyynnöille.</span><span class="sxs-lookup"><span data-stu-id="9672b-120">The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.</span></span>
+<span data-ttu-id="f5e41-120">Seuraavassa kuvassa on esimerkki **Ylläpitopyyntöluettelo** -raportista kaikille aktiivisille yläpitopyynnöille.</span><span class="sxs-lookup"><span data-stu-id="f5e41-120">The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.</span></span>
 
 ![Ylläpitopyynnön luetteloraportti](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
