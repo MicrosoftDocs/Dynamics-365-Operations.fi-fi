@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: be263dbbec61f3fa9d169c1b9faa6be741adca33
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 2e1d5fc80d93e41626da8eb5bdf8f389fb0bd531
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112360"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466179"
 ---
 # <a name="create-coverage-options"></a>Kattavuusasetusten luominen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources -ohjelman kattavuustasot osallistujan valitsemiselle etuussuunnitelmassa tai -ohjelmassa. Kattavuusvaihtoehdot voivat olla esimerkiksi **Vain työntekijä** lääketieteellisessä suunnitelmassa tai **2 x palkka** henkivakuutussuunnitelmaa varten. Voit käyttää kattavuusasetuksia uudelleen hyödyksi, kun ne on määritetty. Voit liittää vaihtoehdon yhteen tai useaan suunnitelmaan.
 

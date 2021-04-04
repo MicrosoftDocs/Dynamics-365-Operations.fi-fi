@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef5ca8cc9c80581b9f7ef69bd8c4403d3d0296e8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f883d5b312c042a995e30998fc24da5b1c02f22a
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965959"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470854"
 ---
 # <a name="create-service-agreements"></a>Huoltosopimusten luominen
 
@@ -33,7 +33,7 @@ Tässä aiheessa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanp
 ## <a name="create-a-service-agreement-from-service-management"></a>Huoltosopimuksen luominen Huoltohallinnassa
 
 1. Siirry **huoltohallintaan**.
-2. Luo uusi huoltosopimus sivun otsikossa valitsemalla **Huoltosopimukset**. 
+2. Valitse **Huoltosopimukset** luodaksesi uuden huoltosopimusrivin sivun yllätunnisteessa. 
 3. Valitse **Uusi**. Anna kuvaus, valitse viittaus projektiin **Projektitunnus**-kentässä ja täytä huoltosopimuksen muut kentät ja rivit. Valitse **Tallenna**.
 4. Luo huoltokohteen suhteet tai huoltotehtäväsuhteet huoltosopimusta varten valitsemalla **Suhteet**-välilehdessä **Huoltokohteet** tai **Huoltotehtävät**. Huoltokohteet ja -tehtävät, joita varten olet luonut suhteet, voidaan liittää huoltosopimuksen riveihin.
 5. Luo sivun alaosaan huoltosopimusrivejä kopioimalla rivejä huoltomallista tai toisesta huoltosopimuksesta. Vaihtoehtoisesti voit luoda huoltosopimusrivit manuaalisesti.
@@ -45,14 +45,14 @@ Tässä aiheessa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanp
 
 1. Lisää huoltosopimusrivit riviruudukossa **Huoltosopimukset**-sivulla. 
 2. Anna asiaankuuluvat tiedot huoltosopimusriville. 
-3. Tallenna rivi painamalla näppäinyhdistelmää **CTRL+S** ja sulje sitten sivu.
+3. Valitse **Tallenna** tallentaaksesi rivin ja sulje sivu.
 
 ## <a name="create-a-service-agreement-from-project"></a>Huoltosopimuksen luominen projektista
 
 1. Valitse **Projektinhallinta ja kirjanpito**.
 2. Valitse **Kaikki projektit**.
 3. Valitse projekti luettelosta.
-4. Valitse **toimintoruudussa** **Hallitse**. Valitse **Uusi**-toimintoryhmässä ensin **Huolto** ja sitten **Huoltosopimus**.
+4. Valitse **Toimintoruutu**-osiosta **Hallinta**. Valitse **Uusi**-toimintoryhmästä **Huolto** ja sitten **Huoltosopimus**.
 5. Anna projektiviite noudattamalla osan **Huoltosopimuksen luominen** vaiheita, kuten on kuvattu aiemmin tässä ohjeaiheessa.
 
 

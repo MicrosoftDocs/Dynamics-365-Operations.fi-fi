@@ -1,6 +1,6 @@
 ---
 title: Valikoimien määrittäminen
-description: Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commerceissa.
+description: Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commercessa.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d61addbc4eac691351c2d8cac013c9d94bd900e9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969823"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264597"
 ---
 # <a name="set-up-assortments"></a>Valikoimien määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commerceissa.
+Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commercessa.
 
 Valikoima on kokoelma toisiinsa liittyviä tuotteita, jotka määritetään kaupan kanavalle, kuten myymälälle tai verkkokaupalle. Voit käyttää valikoimia tunnistamaan tuotteet, jotka ovat myynnissä jokaisessa myymälässä. Valikoimaan voi sisältyä tuoteluokkia. Siispä kaikki tiettyyn luokkaan määritetyt tuotteet sisältyvät valikoimaan. Valikoimaan voi myös sisältyä tiettyjä tuotteita ja tuotevariantteja. Valikoiman määrittämällä voit määrittää tuhansia tuotteita kanaviisi yhdellä kertaa juuri sellaisena yhdistelmänä, joka liikkeissäsi tarvitaan. Voit määrittää niin monta tuotevalikoimaa kuin on tarpeen. Kukin tuote voi kuulua yhteen tai useampaa valikoimaan, ja jokaisen valikoiman voi määrittää yhteen tai useampaan kanavaan. Voit esimerkiksi määrittää yhden valikoiman, joka sisältää joukon perustuotteita. Tämä valikoima kuuluu kaikille myymälöille. Voit sitten määrittää toisen valikoiman, joka sisältää vain suuria urheiluvälineitä. Vain suuremmat myymäläsi saavat tämän valikoiman. Seuraavassa kaaviossa näkyy, kuinka tuotteet voi liittää valikoimiin, ja valikoimat voi liittää kanaviin.
 

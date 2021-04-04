@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 100822ecea03d03267f98654c66e74f2f5924bd9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5d0a081cff9fab8dc0a513496e6a5eccd03c871
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997722"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478257"
 ---
 # <a name="set-up-a-retail-channel"></a>Vähittäismyyntikanavan määrittäminen
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään uuden vähittäismyyntikanavan luomisesta Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Dynamics 365 Commerce tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Jokaisella vähittäismyymäläkanavalla voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Sinun on määritettävä kaikki nämä elementit, ennen kuin voit luoda vähittäismyymäläkanavan. 
 
