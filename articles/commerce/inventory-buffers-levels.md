@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012424"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478385"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Varastopuskureiden ja varastotasojen konfiguroiminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyyttä koskevat viestit Microsoft Dynamics 365 Commerce -sivustoissa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce -pääkonttori sisältää varastotiedot ja erilaisia kanavia, kuten myyntipisteen (POS) sovellukset, sähköisen kaupankäynnin julkisivut ja muut mukautetut integroidut sovellukset, jotka vetävät ja työntävät varastoa ympäri asynkronisesti. Näin ollen käytettävissä olevat varastoarvot, jotka saadaan Commerce Headquarters -sovelluksen myyntipistekäyttöliittymän (POS) ja sähköisen kaupan varaston käytettävyyden API-liittymien kautta, eivät aina ole 100-prosenttisen oikeita reaaliaikaisesti.
 

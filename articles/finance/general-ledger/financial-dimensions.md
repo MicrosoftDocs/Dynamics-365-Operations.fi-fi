@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 455b676dcd186b84a0c429c1b0bab85796c0dbff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: af93f115dca3f26a984c53e044659f4eac9986f1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975736"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249360"
 ---
 # <a name="financial-dimensions"></a>Taloushallinnon dimensiot
 
@@ -33,7 +33,7 @@ Luo **Taloushallinnon dimensiot** -sivun avulla tilikartan tilisegmentteinä kä
 
 Kun taloushallinnon dimensiot on luotu, voit liittää jokaiselle taloushallinnon dimensiolle lisää ominaisuuksia **Taloushallinnon dimension arvot** -sivulla.
 
-Voit käyttää taloushallinnon dimensiota yritysten esittämiseen. Sinun ei tarvitse luoda yrityksiä Dynamics 365 Financeissa. Taloushallinnon dimensioita ei kuitenkaan ole suunniteltu käsittelemään yritysten operatiivisia tai liiketoiminnan tarpeita. Financen yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät.
+Voit käyttää taloushallinnon dimensiota yritysten esittämiseen. Sinun ei tarvitse luoda yrityksiä Dynamics 365 Financessa. Taloushallinnon dimensioita ei kuitenkaan ole suunniteltu käsittelemään yritysten operatiivisia tai liiketoiminnan tarpeita. Financen yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät.
 
 Ennen kuin määrität taloushallinnon dimensiot yrityksiksi, arvioi liiketoimintaprosessisi seuraavilla alueilla ja selvitä, voiko tätä asetusta käyttää organisaatiossasi:
 

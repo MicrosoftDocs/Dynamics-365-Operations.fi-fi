@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 90a3d624dac6c78dfbf2479c5ac7eab76dd4b542
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f90e49c6191134a99b306fdc9de6b46c07844dea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115945"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463403"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Loma- ja poissaolosuunnitelman luominen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Määritä loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourcesissa jokaiselle tarjoamallesi lomatyypille. Loma- ja poissaolosuunnitelmat voidaan kerätä eri taajuuksilla, esimerkiksi vuosittain, kuukausittain tai kaksi kertaa kuussa. Voit myös määrittää suunnitelmat myönnettynä, jolloin yksi jaksotus tapahtuu tiettynä päivämääränä. Voit esimerkiksi luoda suunnitelman, joka myöntää kelluvia lomia vuosittain.
 

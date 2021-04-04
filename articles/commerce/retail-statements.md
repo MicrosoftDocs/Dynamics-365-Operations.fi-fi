@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: e9162bb9b56432dbeb4638e0598dcbf436ab0b1b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6bf582ff61e09ab7586108fa9270a7f485fc9ec7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989498"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254886"
 ---
 # <a name="retail-statements"></a>Vähittäismyyntilaskelmat
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Commerceissa laskelman kirjausprosessia käytetään seuraamaan pilvimyyntipisteen tai Modern POS:n (MPOS) tapahtumia. Laskelman kirjausprosessi hakee myyntipistetapahtumajoukon Headquarters (HQ) -asiakasohjelmaan jakeluaikataulun avulla. **Kaupan parametrit**- ja **Myymälät**-sivuilla määritetyillä parametreilla valitaan yksittäisiin laskelmiin haettavat tapahtumat.
+Dynamics 365 Commercessa laskelman kirjausprosessia käytetään seuraamaan pilvimyyntipisteen tai Modern POS:n (MPOS) tapahtumia. Laskelman kirjausprosessi hakee myyntipistetapahtumajoukon Headquarters (HQ) -asiakasohjelmaan jakeluaikataulun avulla. **Kaupan parametrit**- ja **Myymälät**-sivuilla määritetyillä parametreilla valitaan yksittäisiin laskelmiin haettavat tapahtumat.
 
 Seuraavassa kuvassa on laskelman kirjausprosessi. Tässä prosessissa myyntipisteeseen tallennetut tapahtumat lähetetään asiakkaalle Commerce-ajastuksen avulla. Kun asiakas on vastaanottanut tapahtumat, voit luoda, laskea ja kirjata myymälän tapahtumaotteen.
 
