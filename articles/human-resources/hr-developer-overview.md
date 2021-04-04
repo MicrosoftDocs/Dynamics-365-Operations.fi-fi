@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 517febd7967350956a28dfd9d11e4042456c7da0
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 8e390592b000c8f6006aa489fd3823c4f15cb2cb
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115387"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467792"
 ---
 # <a name="development-overview"></a>Kehityksen yleiskatsaus
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -42,8 +44,8 @@ Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät
 - Määritä dataintegrointi
   - [Tietojen integrointiteknologian valitseminen](hr-admin-integration-choose-technology.md)
   - [Dataverse -integroinnin määritys](hr-admin-integration-common-data-service.md)
-  - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
-  - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
+  - [Integroinnin määrittäminen Financen kanssa](hr-admin-integration-finance.md)
+  - [Integroinnin määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
   - [Toistuvan tietojen viennin sovelluksen luominen](hr-admin-integration-recurring-data-export.md)
   - Office-integraatio
     - [Office-integraation opasohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)

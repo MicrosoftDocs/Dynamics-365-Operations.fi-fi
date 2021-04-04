@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c10990f96fecf55e005650257f83c28423203b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 72b600bc59119a6304fa043240a34051435f8691
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001403"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470950"
 ---
 # <a name="create-service-orders-manually"></a>Huoltotilausten luominen manuaalisesti    
 
@@ -36,17 +36,17 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Huoltotilauksen luominen manuaalisesti huoltosopimuksesta
 
-1.  Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.
+1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltosopimukset** \> **Huoltosopimukset**.
 
 2.  Valitse huoltosopimus tai luo uusi huoltosopimus.
 
-3.  Napsauta **Toimita**-välilehteä ja valitse sitten **Luo**-ryhmässä **Suunnitellut huoltotilaukset** avataksesi **Luo huoltotilaukset** -lomakkeen.
+3.  Valitse **Toimita**-välilehteä ja valitse sitten **Luo**-ryhmästä **Suunnitellut huoltotilaukset** avataksesi **Luo huoltotilaukset** -lomakkeen.
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Huoltotilauksen luominen manuaalisesti Huoltotilaukset-lomakkeessa
 
 1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
-2.  Luo uusi huoltotilaus painamalla CTRL+N.
+2.  Valitse **Uusi** luodaksesi uuden palvelutilauksen.
 
 3.  Luo huoltotilauksen huoltotilausrivit.
 
@@ -55,9 +55,9 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 ## <a name="create-a-service-order-from-a-project"></a>Huoltotilauksen luominen projektista
 
-1.  Valitse **Projektinhallinta ja kirjanpito** \> **Yleinen** \> **Projektit** \> **Kaikki projektit**.
+1.  Avaa **Projektinhallinta ja kirjanpito** \> **Yleinen** \> **Projektit** \> **Kaikki projektit**.
 
-2.  Valitse **Projektit**-lomakkeen **toimintoruudun** **Hallinta**-välilehdessä \> **Huolto** \> **Huoltotilaukset**.
+2.  Valitse **Projektit**-lomakkeen **Toimintoruutu**-osiosta **Hallinta**-välilehti \> valitse **Huolto** \> **Huoltotilaukset**.
 
 3.  Noudata aiempia ohjeita, jotka koskevat huoltotilauksen luomista manuaalisesti **Huoltotilaukset**-lomakkeen avulla. **Projektitunnus**-kentässä näkyy projektin viite.
 
@@ -68,19 +68,19 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 Voit luoda huoltotilauksen **Myyntitilaukset**-lomakkeesta käyttämällä **Luo uusi huoltotilaus myyntitilauksen perusteella** -ohjattua toimintoa.
 
-1.  Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**.
+1.  Avaa **Myynti ja markkinointi** \> **Yleinen** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**.
 
 2.  Avaa asianmukainen myyntitilaus.
 
-3.  **Myyntitilaus**-välilehdellä napsauta **Huoltotilaus** aloittaaksesi **Luo uusi huoltotilaus myyntitilauksen perusteella** -ohjatun toiminnon.
+3.  Valitse **Myyntitilaus**-välilehdestä **Huoltotilaus** käynnistääksesi ohjatun **Luo uusi huoltotilaus myyntitilauksen perusteella** -toiminnon.
 
-4.  Valitse **Seuraava \>**, ja noudata seuraavia ohjeita **Valitse sopimus huoltotilaukselle** -sivulla:
+4.  Valitse **Seuraava \>** ja noudata sitten seuraavia ohjeita **Valitse sopimus huoltotilaukselle** -sivulla:
     
       - Valitse **Huoltosopimus**-kentässä huoltosopimus, johon uusi huoltotilaus liittyy.
     
       - Valinnainen: Liitä huoltotilaus tiettyyn projektiin käyttämällä **Projektin tunnus** -kenttää.
 
-5.  Valitse **Seuraava \>**, ja noudata seuraavia ohjeita **Luo huoltotilaus** -sivulla:
+5.  Valitse **Seuraava \>** ja noudata sitten seuraavia ohjeita **Luo huoltotilaus** -sivulla:
     
       - Määritä huoltokutsun alkamispäivämäärä ja -aika **Ensisijainen huoltoaika** -kentässä.
     
@@ -97,7 +97,7 @@ Voit luoda huoltotilauksen **Myyntitilaukset**-lomakkeesta käyttämällä **Luo
 
 [Huoltotilaukset](service-orders.md)
 
-[Automaattisesti luodut huoltotilaukset](create-service-orders-automatically.md)
+[Huoltotilausten luominen automaattisesti](create-service-orders-automatically.md)
 
 [Huoltotilausten luominen (luokkalomake)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 

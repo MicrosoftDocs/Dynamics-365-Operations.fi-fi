@@ -1,9 +1,9 @@
 ---
 title: Sähköpostin ilmoitusprofiilin määrittäminen
 description: Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.
-author: samjarawan
+author: bicyclingfool
 manager: annbe
-ms.date: 03/31/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -13,26 +13,23 @@ ms.reviewer: v-chgri
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9378fb200a239433f2023bb90f72840dace1c0eb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d82a1abe68ff6e162acb75c6fdc1e207af11c279
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000821"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555304"
 ---
-# <a name="set-up-an-email-notification-profile"></a>Sähköpostin ilmoitusprofiilin määrittäminen
-
+# <a name="set-up-an-email-notification-profile"></a>Sähköposti-ilmoitusprofiilin määrittäminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
-
-Ennen kanavien luomista kannattaa määrittää profiili sen varmistamiseksi, että sähköposti-ilmoituksia voidaan lähettää eri tapahtumia, kuten tilausten luomista, tilauksen lähetystilaa ja epäonnistuneita maksuja varten.
+Kun luot kanavia, voit määrittää sähköposti-ilmoitusprofiilin. Näin asiakkaille voidaan lähettää sähköposteja erilaisista tapahtumista, kuten tilausten luomisesta, tilausten lähetystilasta ja maksuvirheistä.
 
 Lisätietoja sähköpostin määrittämisestä on kohdassa [Sähköpostiviestin määrittäminen ja lähettäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -48,7 +45,7 @@ Luo sähköposti-ilmoitusprofiili noudattamalla seuraavia ohjeita.
 
 ### <a name="create-an-email-template"></a>Luo sähköpostimalli
 
-Ennen kuin sähköposti-ilmoitus voidaan luoda, sinun on luotava organisaation sähköpostimalli, joka sisältää lähettäjän sähköpostitiedot ja sähköpostimallin.
+Ennen sähköposti-ilmoitustyypin käyttöä on luotava organisaation sähköpostimalli Commerce Headquarters -sovelluksessa. Tässä mallissa määritetään kullakin tuettavalla kielellä sähköpostien aihe, lähettäjä, oletuskieli ja sähköpostin perusteksti.
 
 Voit luoda sähköpostimallin seuraavien ohjeiden avulla.
 
@@ -58,7 +55,7 @@ Voit luoda sähköpostimallin seuraavien ohjeiden avulla.
 1. Kirjoita **Lähettäjän nimi**-kenttään lähettäjän nimi.
 1. Syötä **Sähköpostin kuvaus**-kenttään asianmukainen kuvaus.
 1. Kirjoita **Lähettäjän sähköpostiosoite** -kenttään lähettäjän sähköpostiosoite.
-1. Täytä **Yleiset** -osaan kaikki tarvittavat valinnaiset tiedot (kuten sähköpostin prioriteetti).
+1. Valitse **Yleiset**-osasta sähköpostimallin oletuskieli. Oletuskieltä käytetään, kun määritetyllä kielellä ei ole lokalisoitua mallia.
 1. Laajenna **Sähköpostiviestin sisältö** -osa ja valitse **Uusi**, kun haluat luoda mallin sisällön. Valitse kunkin sisällön kohteen osalta kieli ja sähköpostiviestin aiherivi. Jos sähköpostiin tulee teksti, varmista, että **Leipäteksti on** -ruutu on valittuna.
 1. Valitse toimintoruudussa **Sähköpostiviesti** määrittääksesi sähköpostin leipätekstimallin.
 

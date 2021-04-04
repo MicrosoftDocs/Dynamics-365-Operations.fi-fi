@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078255"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501099"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Tuotannon materiaalien oletusvarausperiaatteen ohittaminen
 
@@ -38,11 +39,11 @@ Jos esimerkiksi raaka-aineet tai ainesosat edellyttävät keräilytyötä, kysei
 Ennen kuin käytät toimintoa, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Tuotannonhallinta*
-- **Toiminnon nimi:** *Ohita tuotannon oletusvaraus*
+- **Toiminnon nimi:** *(Esikatselu) Ohita tuotannon oletusvaraus*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tuotannon varauskäytännön määrittäminen nimikemalliryhmään
 
-1. Valitse **Kustannusten hallinta &gt; Varaston kirjanpitokäytäntöjen määrittäminen &gt; Nimikemalliryhmät**.
+1. Valitse **Kustannusten hallinta \> Varaston kirjanpitokäytäntöjen määrittäminen \> Nimikemalliryhmät**.
 1. Luo tai valitse nimikemalliryhmä.
 1. Valitse **Varastokäytännöt**-pikavälilehdessä **Ohita nimikkeen tuotantovaraus** -valintaruutu.
 1. Valitse **Varaus**-kentässä valittuun malliryhmään kuuluvien nimikkeiden varausperiaate. (Nämä nimikkeet sisältävät tuoterakenne- tai kaavarivillä olevat nimikkeet.)

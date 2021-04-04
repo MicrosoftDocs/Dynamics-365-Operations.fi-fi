@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125422"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500619"
 ---
 # <a name="recruiting-request"></a>Työhönottopyyntö
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tässä aiheessa kuvataan työhönottopyynnön yksikköä Dynamics 365 Human Resourcesissa.
 
@@ -98,7 +100,8 @@ Kuvaa pyyntöä rekrytoida työhön.
 | **Työtyypin tunnuksen arvo**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Vain luku<br>Valinnainen<br>Viiteavain: mshr_hcmjobtypenentity-yksikön mshr_hcmjobtypeentityid | Järjestelmän luoma työhönottopyynnön työhön liitetyn työtyypin yksilöivä tunnus. |
 | **Vapautustila**<br>mshr_exemptstatus<br>*JobExemptStatus*-asetusjoukko | Vain luku<br>Valinnainen | FLSA-vapautustila, joka perustuu työlajiin. |
 | **Arvioitu alkamispäivämäärä**<br>mshr_estimatedstartdate<br>*Päivämäärä* | Luku/Kirjoitus<br>Vaadittu | Arvioitu päivämäärä, jolloin hakija aloittaisi työn. |
-| **Ulkoinen kuvaus**<br>mshr_externaldescription<br>*Merkkijono* | Luku/Kirjoitus<br>Valinnainen | Työn/toimen hakijalle näkyvä kuvaus. | Kompensaation alaraja<br>mshr_compensationlowthreshold<br>*Kaksinkertainen* | Luku/Kirjoitus<br>Valinnainen | Kompensaatiotason alaraja. |
+| **Ulkoinen kuvaus**<br>mshr_externaldescription<br>*Merkkijono* | Luku/Kirjoitus<br>Valinnainen | Työn/toimen hakijalle näkyvä kuvaus. | 
+| **Kompensaation alaraja**<br>mshr_compensationlowthreshold<br>*Kaksinkertainen* | Luku/Kirjoitus<br>Valinnainen | Kompensaatiotason alaraja. |
 | **Kompensaation kontrollipiste**<br>mshr_compensationcontrolpoint<br>*Kaksinkertainen* | Luku/Kirjoitus<br>Valinnainen | Kompensaatiotason kontrollipiste. |
 | **Kompensaation yläraja**<br>mshr_compensationhighthreshold<br>*Kaksinkertainen* | Luku/Kirjoitus<br>Valinnainen | Kompensaatiotason yläraja. |
 | **Kompensaatiotaso**<br>mshr_compensationlevelid<br>*Merkkijono* | Luku/Kirjoitus<br>Valinnainen | Työn kompensaatiotaso. Työlle voi määrittää useita kompensaatiotasoja. Tämä määrite ilmaisee valitun työn kompensaatiotason tälle pyynnölle. |

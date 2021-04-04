@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983541"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501123"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Pääsuunnittelu ja kysynnän ennusteet
 
@@ -249,7 +249,7 @@ Siksi luodaan seuraavat suunnitellut tilaukset.
 Ennusteen vähennysavainta käytetään **Tapahtumat - vähennysavain**- ja **Prosentti - vähennysavain** -menetelmissä ennusteen tarpeiden vähentämiseen. Näiden ohjeiden avulla voit luoda ja määrittää vähennysavaimen.
 
 1. Siirry kohtaan **Pääsuunnittelu \> Määritys \> Kattavuus \> Vähennysavaimet**.
-2. Valitse **Uusi** tai paina **Ctrl + N** luodaksesi vähennysavaimen.
+2. Luo vähennysavain valitsemalla **Uusi**.
 3. Syötä **Vähennysavain**-kenttään ennusteen vähennysavaimen yksilöivä tunnus. Syötä **Nimi**-kenttään nimi. 
 4. Määritä kaudet sekä kunkin kauden vähennysavaimen prosentti:
 
@@ -265,8 +265,8 @@ Ennusteen vähennysavain on määritettävä nimikkeen kattavuusryhmään. Mää
 2. Valitse **Muut**-pikavälilehden **Vähennysavain**-kentässä kattavuusryhmään määritettävä vähennysavain. Vähennysavaimen sitten kohdistetaan kaikkiin nimikkeisiin, jotka kuuluvat kyseiseen kattavuusryhmään.
 3. Voit käyttää vähennysavainta laskemaan ennusteen vähennykset pääajoituksen aikana määrittämällä tämän asetuksen pääsuunnitelman tai ennustesuunnitelman asetuksissa. Valitse jokin seuraavista sijainneista:
 
-    - Pääsuunnittelu \> Määritys \> Suunnitelmat \> Ennustesuunnitelmat
-    - Pääsuunnittelu \> Asetukset \> Suunnitelmat \> Pääsuunnitelmat
+    - **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Ennustesuunnitelmat**
+    - **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Pääsuunnitelmat**
 
 4. Kun olet **Ennustesuunnitelmat** tai **Pääsuunnitelmat**-sivulla, valitse edelleen **Yleiset**-pikavälilehden **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Prosentti - vähennysavain** tai **Tapahtumat - vähennysavain**.
 
@@ -274,5 +274,69 @@ Ennusteen vähennysavain on määritettävä nimikkeen kattavuusryhmään. Mää
 
 Kun valitset **Tapahtumat - vähennysavain** tai **Tapahtumat - dynaaminen kausi** ennustetarpeita vähennystapana, voit määrittää, mitkä tapahtumat vähentävät ennustetta. Valitse **Kattavuusryhmät** -sivun **Muut**-pikavälilehden **Vähennä ennustetta seuraavasti** -kentässä **Kaikki tapahtumat**, jossa kaikkien tapahtumien tulisi vähentää ennustetta, tai **Tilaukset**, jos vain myyntitilausten tulisi vähentää ennustetta.
 
+## <a name="forecast-models-and-submodels"></a>Ennustemallit ja osamallit
+
+Tässä osiossa kuvataan, kuinka voit luoda ennustemalleja ja yhdistää useita ennustemalleja yhdistetään määrittämällä osamalleja.
+
+*Ennustemalli* nimeää ja yksilöi tietyn ennusteen. Kun olet luonut ennustemallin, voit lisätä siihen ennusterivejä. Jos haluat lisätä ennusterivejä useille nimikkeille, käytä **Kysynnän ennusteen rivit** -sivua. Jos haluat lisätä ennusterivejä tietylle valitulle nimikkeelle, käytä **Vapautetut tuotteet** -sivua.
+
+Ennustemalli voi sisältää ennusteita muista ennustemalleista. Voit tehdä näin lisäämällä muita ennustemalleja pääennustemallin *osamalleiksi*. Sinun täytyy luoda malli ennen kuin voit lisätä sen pääennustemallin osamalliksi.
+
+Tuloksena oleva rakenne tarjoaa sinulle tehokkaan tavan hallita ennusteita, koska sen avulla voit yhdistää (koostaa) useiden yksittäisten ennusteiden syötteet toisiinsa. Näin ollen ennusteiden yhdistäminen simulaatioita varten on helppoa suunnittelun näkökulmasta. Voit esimerkiksi luoda simulaation, joka perustuu tavallisen ennusteen ja kevätkampanjan ennusteen yhdistelmään.
+
+### <a name="submodel-levels"></a>Osamallien tasot
+
+Pääennustemalliin lisättävien osamallien määrää ei ole rajoitettu. Rakenne voi kuitenkin olla vain yhden tason syvä. Toisin sanoen ennustemallilla, joka on toisen ennustemallin osamalli, ei voi olla omia osamalleja. Kun lisäät ennustemalliin osamalleja, järjestelmä tarkastaa, onko ennustemalli jo toisen ennustemallin osamalli.
+
+Jos pääsuunnittelu kohtaa osamallin, jolla on omia osamalleja, näkyviin tulee virhesanoma.
+
+#### <a name="submodel-levels-example"></a>Esimerkki osamallien tasoista
+
+Ennustemallilla A on osamallina ennustemalli B. Näin ollen ennustemallilla B ei voi olla omia osamallejaan. Jos yrität lisätä osamallia ennustemalliin B, näet tämän virhesanoman: "Ennustemalli B on mallin A osamalli”.
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Ennusteiden koostaminen yhteen eri ennustemalleista
+
+Samana päivänä tapahtuvat ennusterivit yhdistetään niiden ennustemallista ja sen osamalleista.
+
+#### <a name="aggregation-example"></a>Esimerkki koostamisesta
+
+Ennustemallilla A on osamalleina ennustemallit B ja C.
+
+- Ennustemalli A sisältää kysynnän ennusteen 2 kappaleelle (kpl) 15. kesäkuuta.
+- Ennustemalli B sisältää kysynnän ennusteen 3 kappaleelle 15. kesäkuuta.
+- Ennustemalli C sisältää kysynnän ennusteen 4 kappaleelle 15. kesäkuuta.
+
+Tuloksena syntyvä kysynnän ennuste on yksi 9 kpl (2+3+4) kysyntä 15. kesäkuuta.
+
+> [!NOTE]
+> Jokainen osamalli käyttää omia parametrejään, ei pääennustemallin parametrejä.
+
+### <a name="create-a-forecast-model"></a>Ennustemallin luominen
+
+Voit luoda ennustemallin noudattamalla seuraavia ohjeita.
+
+1. Avaa **Pääsuunnittelu \> Määritys \> Kysynnän ennuste \> Ennustemallit**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Määritä uudelle ennustemallille seuraavat kentät:
+
+    - **Malli** – Syötä mallille yksilöivä tunnus.
+    - **Nimi** – Anna mallille kuvaava nimi.
+    - **Pysäytetty** – Tavallisesti sinun tulisi valita täksi vaihtoehdoksi *Ei*. Valitse *Kyllä* vain, jos haluat estää kaikkien malliin kohdistettujen ennusterivien muokaamisen.
+
+    > [!NOTE]
+    > **Sisällytä kassavirtaennusteisiin** -kenttä ja **Projekti**-pikavälilehden kentät eivät liity pääsuunnitteluun. Sinun ei tarvitse siis huomioida niitä tässä asiayhteydessä. Sinun täytyy ottaa ne huomioon vain, kun käytät **Projektinhallinta ja kirjanpito** -moduulin ennusteita.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Osamallien kohdistaminen ennustemalliin
+
+Kohdista ennustemalliin osamalleja noudattamalla seuraavia ohjeita.
+
+1. Valitse **Varastonhallinta \> Määritys \> Ennuste \> Ennustemallit**.
+1. Valitse luetteloruudusta ennustemalli, jolle haluat määrittää osamallin.
+1. Valitse **Osamalli**-pikavälilehdestä **Lisää** lisätäksesi ruudukkoon uuden rivin.
+1. Määritä uudella rivillä seuraavat kentät:
+
+    - **Osamalli** – Valitse ennustemalli, joka lisätään osamalliksi. Tämän ennustemallin täytyy olla jo olemassa, eikä sillä saa olla omia osamalleja.
+    - **Nimi** – Anna osamallille kuvaava nimi. Tämä nimi voi esimerkiksi osoittaa osamallin suhteen pääennustemalliin.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

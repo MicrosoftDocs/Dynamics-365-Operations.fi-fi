@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd9f6dfdf17ffd506fff21763388ee0ca7526681
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991587"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470879"
 ---
 # <a name="set-up-subscription-groups"></a>Määritä ylläpitosopimusryhmät 
 
@@ -31,7 +31,7 @@ ms.locfileid: "4991587"
 
 1.  Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltotilaukset** \> **Ylläpitosopimusryhmät**.
 
-2.  Luo uusi ylläpitosopimusryhmä painamalla näppäinyhdistelmää CTRL+N tai valitsemalla **Uusi**.
+2.  Valitse **Uusi** luodaksesi uuden ylläpitosopimusryhmän.
 
 3.  Kirjoita **Ylläpitosopimusryhmä**-kenttään uutta ylläpitosopimusryhmää kuvaava nimi.
 

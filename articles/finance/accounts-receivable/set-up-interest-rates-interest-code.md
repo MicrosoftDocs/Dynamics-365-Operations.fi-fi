@@ -3,7 +3,7 @@ title: Korkoryhmän korkoprosenttien määrittäminen
 description: Korkokoodit sisältävät asetukset, joilla määritetään, milloin korkoa veloitetaan ja miten se lasketaan erääntyneillä tileillä.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971625"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555362"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Korkoryhmän korkoprosenttien määrittäminen
 
@@ -46,10 +46,19 @@ Voit määrittää korkotasot, jotka laskevat määritetyn prosenttiosuuden.
 
 - Korkosumman koskee kaikkia valuuttoja.
 - Korkosumman rajojen antaminen on valinnaista.
-- <strong>Prosentti</strong> valitaan** <strong>Korkokoodien määrittäminen</strong> -sivun <strong>**Käytä korkolaskennan perusteena</strong> -kentässä.
+- **Prosentti** valitaan **Korkokoodien määrittäminen** -sivun **Käytä korkolaskennan perusteena** -kentässä.
 
 Jos esimerkiksi haluat määrittää korkokoodin, joka määrää 5 prosentin koron jokaista kahta kuukautta kohti, jonka laskun maksaminen ylittää tapahtuman eräpäivän, anna arvo 2 **Koronlaskentaväli**-kenttään ja valitse **Kuukausi**.
 
+> [!NOTE] 
+> Uusi korkolaskun laskennassa käytettävä algoritmi lisätään käyttämällä ominaisuuksien hallintaa. Jos haluat käyttää tätä algoritmia, ota käyttöön ominaisuus **(GBL) Salli päiväkohtaisen koron laskenta jakamalla vuositaisen prosentin luvulla 365**. Lisätietoja uuden ominaisuuden käyttöönotosta on kohdassa [ominaisuuksien hallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> Korkolaskun summan laskentakaava on: 
+>  
+> Korkolaskun summa = Velkasumma * Vuosittainen korkoprosentti / 365 * myöhässä olevien päivien määrä
+>  
+> Ominaisuus on saatavilla versiossa 10.0.18 ja sitä uudemmissa versioissa.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Summin perustuvat korkotasot
 Voit määrittää korkotasot, jotka laskevat määritetyn summan valuuttaa kohden.
 - Korkosumma on määritettävä jokaiselle korkokoodin valuutalle.

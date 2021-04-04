@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963307"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470516"
 ---
 # <a name="work-with-location-directives"></a>Sijaintidirektiivien käyttäminen
 
@@ -239,7 +239,7 @@ Voit määrittää useita sijaintidirektiivin toimintoja kullekin riville. Jäll
     - **Pyöristä kokonaiseen rekisterikilpeen ja FEFO-erään** – Tämä strategia yhdistää *FEFO-erävarauksen*- ja *Pyöristä kokonaiseen rekisterikilpeen* -strategioiden elementtejä. Se on käytettävissä vain eränimikkeissä ja sijaintidirektiiveissä, joiden työtyyppi on *Keräily*. *FEFO-erävaraus*-strategian käyttäminen edellyttää eränimikkeiden käyttöä rivillä. *Pyöristä kokonaiseen rekisterikilpeen* -strategiaa voidaan käyttää vain täydennykseen. Jos tämä strategia on määritetty yhdessä sijainnin varastointirajan kanssa, se voi aiheuttaa valitun hyllytystyösijainnin ylitäyttymisen ja varastointirajojen ohittamisen.
     - **Pyöristä kokonaiseen rekisterikilpeen** – Tällä strategialla pyöristetään varastomäärä vastaamaan rekisterimerkinnän määrää, joka on määritetty kerättäville nimikkeille. Tätä strategiaa voi käyttää vain *Keräily*-tyypin täydennyksen sijaintidirektiiveihin. Jos tämä strategia on määritetty yhdessä sijainnin varastointirajan kanssa, se voi aiheuttaa valitun hyllytystyösijainnin ylitäyttymisen ja varastointirajojen ohittamisen.
     - **Rekisterikilpiopastus** – Käytä tätä strategiaa, kun vapautat tilauksen varastoon keräily- ja hyllytystyön luontia varten. Tätä menetelmää voi käyttää useissa rekisterikilvissä. Strategia yrittää varata ja luoda keräilytöitä sijainneissa, joissa on pyydettyjä siirtotilausriveihin liitettyjä rekisterikilpiä. Jos näitä toimintoja ei kuitenkaan voi suorittaa loppuun mutta keräilytyö halutaan silti luoda, käytä jotain muuta sijaintidirektiivitoimintojen strategiaa. Liiketoiminnan tarpeiden mukaan on mahdollista, että varastohaku halutaan tehdä varaston toisella alueella.
-    - **Tyhjä sijainti ilman saapuvia töitä** – Käytä tätä strategiaa tyhjien sijaintien etsimiseen. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa, eikä odotettuja saapuvia töitä. Tätä strategiaa voi käyttää vain sijaintidirektiiveissä, joiden työtyyppi on *Keräily*.
+    - **Tyhjä sijainti ilman saapuvia töitä** – Käytä tätä strategiaa tyhjien sijaintien etsimiseen. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa, eikä odotettuja saapuvia töitä. Voit käyttää tätä strategiaa vain sijaintidirektiiveille, joiden työtyyppi on *Hyllytys*.
     - **Sijainnin FIFO-erääntyminen** – Käytä FIFO-strategiaa sekä eräseurattujen nimikkeiden että ei-eräseurattujen nimikkeiden lähettämiseen sen päivämäärän perusteella, jolloin varastoa saapui fyysiseen varastoon. Tätä ominaisuus voi kätevä etenkin ei-eräseuratun varaston osalta, jos vanhentumispäivä ei ole käytettävissä lajittelua varten. FIFO-strategia etsii vanhimman erääntymispäivämäärän sisältävän sijainnin ja kohdistaa sitten keräilyn kyseisen päivämäärän perusteella.
     - **Sijainnin LIFO-erääntyminen** – Käytä LIFO-strategiaa sekä eräseurattujen nimikkeiden että ei-eräseurattujen nimikkeiden lähettämiseen sen päivämäärän perusteella, jolloin varastoa saapui fyysiseen varastoon. Tätä ominaisuus voi kätevä etenkin ei-eräseuratun varaston osalta, jos vanhentumispäivä ei ole käytettävissä lajittelua varten. LIFO-strategia etsii uusimman erääntymispäivämäärän sisältävän sijainnin ja kohdistaa sitten keräilyn kyseisen päivämäärän perusteella.
 

@@ -1,5 +1,5 @@
 ---
-title: Yritysten luominen
+title: Luo oikeushenkilöt
 description: Tässä ohjeaiheessa käsitellään yritysten luontia Microsoft Dynamics 365 Commercessa, sillä yritykset on luotava ja määritettävä ennen kanavien luontia.
 author: samjarawan
 manager: annbe
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9491feb004366a02155225bfb323773e130f3dc9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 016b67631a53139d12d65dfaf594f49b030326b1
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993600"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478209"
 ---
-# <a name="create-legal-entities"></a>Yritysten luominen
-
+# <a name="create-legal-entities"></a>Luo oikeushenkilöt
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään yritysten luontia Microsoft Dynamics 365 Commercessa, sillä yritykset on luotava ja määritettävä ennen kanavien luontia.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Yritys on organisaatio, jolla on rekisteröity tai lain vaatima rakenne. Yritys voi solmia oikeudellisia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista.
 

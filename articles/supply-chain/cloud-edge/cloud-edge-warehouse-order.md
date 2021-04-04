@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105704"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556359"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Varastotilausten pilvi- ja reunapalvelujen scale unitit
 
@@ -51,6 +51,8 @@ Varastotilaus luodaan seuraavasti:
 1. Siirry kohtaan **Hankinta ja alihankinta \> Ostotilaukset \> Kaikki ostotilaukset**.
 1. Valitse toimintoruudussa **Varasto**-välilehden **Toiminnot**-ryhmässä **Vapauta varastoon**.
 1. Liittyviä varastotilauksia rivejä voi tarkastella avaamalla liittyvän ostotilauksen, valitsemalla rivin **Ostotilausrivit**-osassa ja valitsemalla sitten työkalurivillä **Varasto \> Varastotilausrivit**. Kaikki rivit voidaan näyttää valitsemalla **Varastonhallinta \> Kyselyt ja raportit \> Varastotilausrivit**.
+
+Voit käynnistää *Vapauta varastoon* -prosessin myös erätyöstä valitsemalla **Varastonhallinta > Vapauta varastoon > Ostotilausten automaattinen vapautus**. Kun määrität erätyötä, voit valita tietyt ostotilausrivit kyselyn perusteella. Tyypillinen tilanne on määrittää toistuva erätyö, joka vapauttaa kaikki vahvistetut ostotilausrivit, joiden odotetaan saapuvan seuraavana päivänä.
 
 ## <a name="cancel-a-warehouse-order"></a>Varastotilauksen peruuttaminen
 

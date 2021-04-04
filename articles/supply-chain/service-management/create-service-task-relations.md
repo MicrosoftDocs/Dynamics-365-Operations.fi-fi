@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5fd978c1e9db7e7ce3c06bbeb45b59854f1582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea5952376fe30f489d385c8f8295fbf86f2af085
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974657"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470727"
 ---
 # <a name="create-service-task-relations"></a>Huoltotehtävän suhteiden luominen    
 
@@ -32,13 +32,13 @@ Voi liittää huoltotehtäviä huoltosopimuksiin tai huoltotilauksiin kuvatakses
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Suhteen luominen huoltosopimukseen
 
-1.  Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.
+1.  Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltosopimukset** \> **Huoltosopimukset**.
 
 2.  Valitse nykyinen huoltosopimus tai luo uusi huoltosopimus.
 
-3.  Valitse toimintoruudussa **Huoltotehtävät**-painike.
+3.  Valitse toimintoruudusta **Huoltotehtävät**-painike.
 
-4.  Paina **Huoltotehtävät**-lomakkeessa CTRL + N luodaksesi uuden rivin, ja valitse sitten huoltosopimukseen liitettävä huoltotehtävä **Huoltotehtävä**-luettelosta.
+4.  Valitse **Huoltotehtävät**-lomakkeesta **Uusi** luodaksesi uuden rivin, ja valitse sitten huoltosopimukseen liitettävä huoltotehtävä **Huoltotehtävä**-luettelosta.
 
 5.  Lisää **Kuvaus** -välilehden vapaatekstikenttiin mahdolliset sisäisten tai ulkoisten huomautusten kuvaukset.
 
@@ -50,13 +50,13 @@ Huoltosopimukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kaikiss
 
 ## <a name="create-a-relation-with-a-service-order"></a>Suhteen luominen huoltotilaukseen
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1.  Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
 2.  Valitse nykyinen huoltotilaus tai luo uusi huoltotilaus.
 
-3.  Valitse toimintoruudussa **Huoltotehtävät**-painike.
+3.  Valitse toimintoruudusta **Huoltotehtävät**-painike.
 
-4.  Paina **Huoltotehtävät**-lomakkeessa CTRL + N luodaksesi uuden rivin, ja valitse sitten huoltotilaukseen liitettävät huoltotehtävät **Huoltotehtävä**-luettelosta.
+4.  Valitse **Huoltotehtävät**-lomakkeesta **Uusi** luodaksesi uuden rivin, ja valitse sitten huoltosopimukseen liitettävät huoltotehtävät **Huoltotehtävä**-luettelosta.
 
 5.  Lisää **Kuvaus** -välilehden vapaatekstikenttiin mahdolliset sisäisten tai ulkoisten huomautusten kuvaukset.
 

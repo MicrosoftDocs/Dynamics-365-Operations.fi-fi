@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4cad56389c7a8fd6d37591c1ff335fff715707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001821"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476696"
 ---
 # <a name="inventory-statuses"></a>Varaston tilat
 
@@ -45,6 +45,9 @@ Varaston tila on yksi varastodimensioryhmän dimensioista. Varaston tiloja voida
 
 Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on *Valmis*, ei-käytettävissä oleville tilan, jonka nimi on *Vioittuneet* ja toimituskiellossa oleville tilan, jonka nimi on *Suljettu*. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan *Vioittuneet*-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti *Suljettu*. Jos luet vioittuneet nimikkeet mobiililaitteella, Supply Chain Management voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi *Varaus* **Varastotapahtumat** -lomakkeessa.
 
+> [!NOTE]
+> Et voi muuttaa varaston tilaa sijainnissa, joissa on avoimia töitä. Jos esimerkiksi vastaanotit nimikkeelle oston, mutta et tehnyt hyllytysvaihetta, vastaanottosijainnissa on avoin työ, ja saat virheilmoituksen, jos haluat muuttaa varaston tilan tässä sijainnissa. Liittyvän työn valmiiksi saaminen tai peruuttaminen mahdollistaa tilan muuttumisen.
+ 
 Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on *Rikkoutunut* ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti.
 
 Kun olet määrittänyt varaston tilat, voit määrittää varaston oletustilan toimipaikalle, nimikkeelle ja varastolle. Voit myös määrittää oletustilan myyntiin, siirtoon ja ostotilauksiin. Myyntitilausten ja lähtevien siirtotilausten oletustilassa **Varastonesto**-asetus ei voi olla asennossa *Kyllä*. Varaston tila, joka periytyy toimipaikan, varaston, nimikkeen, ostotilauksen, siirtotilauksen tai myyntitilauksen oletusarvoasetuksista, voidaan muuttaa käyttämällä mobiililaitetta tai ostotilauksessa, myyntitilauksessa tai siirtotilausrivillä.
