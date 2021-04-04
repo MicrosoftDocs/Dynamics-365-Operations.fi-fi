@@ -16,43 +16,46 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 457e7128bed2232a3e092b31136f768940482741
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a6a18d24be85e20a7e5824c334855aa94fe61cb5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994176"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245969"
 ---
-# <a name="lean-pegging-from-sales-orders"></a><span data-ttu-id="8a269-103">Lean-tarvekohdistus myyntitilauksista</span><span class="sxs-lookup"><span data-stu-id="8a269-103">Lean pegging from sales orders</span></span>
+# <a name="lean-pegging-from-sales-orders"></a><span data-ttu-id="2a5fe-103">Lean-tarvekohdistus myyntitilauksista</span><span class="sxs-lookup"><span data-stu-id="2a5fe-103">Lean pegging from sales orders</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8a269-104">Tässä menettelyssä käsitellään sellaisen myyntirivin tarvekohdistuspuuta, jossa nimike tuotetaan kanbanien avulla.</span><span class="sxs-lookup"><span data-stu-id="8a269-104">This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans.</span></span> <span data-ttu-id="8a269-105">Tarvekohdistuspuun vahvistamisen jälkeen kaikki kanban-työt on suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="8a269-105">After validating the pegging tree, all the kanban jobs are planned.</span></span> <span data-ttu-id="8a269-106">Tämä on kätevää tilausskenaarioissa, joissa tilauksen vastaanottajan on varmistettava, että tuotanto voi alkaa heti.</span><span class="sxs-lookup"><span data-stu-id="8a269-106">This is useful for order scenarios where the order taker needs to ensure that production can start right away.</span></span> <span data-ttu-id="8a269-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="8a269-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8a269-108">Tämä menettely on tarkoitettu Lean-yrityksen ennakkotilausten vastaanottajille.</span><span class="sxs-lookup"><span data-stu-id="8a269-108">This procedure is intended for the advanced order taker working in a lean company.</span></span>
+<span data-ttu-id="2a5fe-104">Tässä menettelyssä käsitellään sellaisen myyntirivin tarvekohdistuspuuta, jossa nimike tuotetaan kanbanien avulla.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-104">This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans.</span></span> <span data-ttu-id="2a5fe-105">Tarvekohdistuspuun vahvistamisen jälkeen kaikki kanban-työt on suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-105">After validating the pegging tree, all the kanban jobs are planned.</span></span> <span data-ttu-id="2a5fe-106">Tämä on kätevää tilausskenaarioissa, joissa tilauksen vastaanottajan on varmistettava, että tuotanto voi alkaa heti.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-106">This is useful for order scenarios where the order taker needs to ensure that production can start right away.</span></span> <span data-ttu-id="2a5fe-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="2a5fe-108">Tämä menettely on tarkoitettu Lean-yrityksen ennakkotilausten vastaanottajille.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-108">This procedure is intended for the advanced order taker working in a lean company.</span></span>
 
 
-## <a name="create-a-sales-order-for-a-kanban-controlled-item"></a><span data-ttu-id="8a269-109">Luo kanban-ohjatun nimikkeen myyntitilaus</span><span class="sxs-lookup"><span data-stu-id="8a269-109">Create a sales order for a kanban controlled item</span></span>
-1. <span data-ttu-id="8a269-110">Siirry Kaikki myyntitilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="8a269-110">Go to All sales orders.</span></span>
-2. <span data-ttu-id="8a269-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="8a269-111">Click New.</span></span>
-3. <span data-ttu-id="8a269-112">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="8a269-112">In the Customer account field, enter or select a value.</span></span>
-    * <span data-ttu-id="8a269-113">Käytä arvoa US-001.</span><span class="sxs-lookup"><span data-stu-id="8a269-113">Use US-001.</span></span>  
-4. <span data-ttu-id="8a269-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="8a269-114">Click OK.</span></span>
-5. <span data-ttu-id="8a269-115">Kirjoita Nimiketunnus-kenttään L0001.</span><span class="sxs-lookup"><span data-stu-id="8a269-115">In the Item number field, type 'L0001'.</span></span>
-6. <span data-ttu-id="8a269-116">Valitse määräksi 30.</span><span class="sxs-lookup"><span data-stu-id="8a269-116">Set Quantity to '30'.</span></span>
-    * <span data-ttu-id="8a269-117">On tärkeää, että määrä on suurempi kuin 24, jotta tapahtuman kanban-sääntö käynnistyy.</span><span class="sxs-lookup"><span data-stu-id="8a269-117">It is important that the quantity is higher than 24 in order to trigger the event kanban rule.</span></span>  
+## <a name="create-a-sales-order-for-a-kanban-controlled-item"></a><span data-ttu-id="2a5fe-109">Luo kanban-ohjatun nimikkeen myyntitilaus</span><span class="sxs-lookup"><span data-stu-id="2a5fe-109">Create a sales order for a kanban controlled item</span></span>
+1. <span data-ttu-id="2a5fe-110">Siirry Kaikki myyntitilaukset -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-110">Go to All sales orders.</span></span>
+2. <span data-ttu-id="2a5fe-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-111">Click New.</span></span>
+3. <span data-ttu-id="2a5fe-112">Syötä tai valitse arvo Asiakastili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-112">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="2a5fe-113">Käytä arvoa US-001.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-113">Use US-001.</span></span>  
+4. <span data-ttu-id="2a5fe-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-114">Click OK.</span></span>
+5. <span data-ttu-id="2a5fe-115">Kirjoita Nimiketunnus-kenttään L0001.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-115">In the Item number field, type 'L0001'.</span></span>
+6. <span data-ttu-id="2a5fe-116">Valitse määräksi 30.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-116">Set Quantity to '30'.</span></span>
+    * <span data-ttu-id="2a5fe-117">On tärkeää, että määrä on suurempi kuin 24, jotta tapahtuman kanban-sääntö käynnistyy.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-117">It is important that the quantity is higher than 24 in order to trigger the event kanban rule.</span></span>  
 
-## <a name="open-a-pegging-tree"></a><span data-ttu-id="8a269-118">Avaa tarvekohdistuspuu</span><span class="sxs-lookup"><span data-stu-id="8a269-118">Open a pegging tree</span></span> 
-1. <span data-ttu-id="8a269-119">Valitse Tuote ja toimitus.</span><span class="sxs-lookup"><span data-stu-id="8a269-119">Click Product and supply.</span></span>
-2. <span data-ttu-id="8a269-120">Valitse Näytä tarvekohdistuspuu.</span><span class="sxs-lookup"><span data-stu-id="8a269-120">Click View pegging tree.</span></span>
-    * <span data-ttu-id="8a269-121">Huomaa, että kaikki myyntitilausrivin tarvitsemat tarvekohdistustasot näkyvät tarvekohdistuspuussa.</span><span class="sxs-lookup"><span data-stu-id="8a269-121">Notice that the pegging tree shows all levels of the pegging needed for the sales order line.</span></span> <span data-ttu-id="8a269-122">Tässä tapauksessa näkyvissä on kaksi kanban-tasoa ja kaikki pakolliset komponentit.</span><span class="sxs-lookup"><span data-stu-id="8a269-122">In this case, there are two levels of kanbans and all the required components.</span></span>  
+## <a name="open-a-pegging-tree"></a><span data-ttu-id="2a5fe-118">Avaa tarvekohdistuspuu</span><span class="sxs-lookup"><span data-stu-id="2a5fe-118">Open a pegging tree</span></span> 
+1. <span data-ttu-id="2a5fe-119">Valitse Tuote ja toimitus.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-119">Click Product and supply.</span></span>
+2. <span data-ttu-id="2a5fe-120">Valitse Näytä tarvekohdistuspuu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-120">Click View pegging tree.</span></span>
+    * <span data-ttu-id="2a5fe-121">Huomaa, että kaikki myyntitilausrivin tarvitsemat tarvekohdistustasot näkyvät tarvekohdistuspuussa.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-121">Notice that the pegging tree shows all levels of the pegging needed for the sales order line.</span></span> <span data-ttu-id="2a5fe-122">Tässä tapauksessa näkyvissä on kaksi kanban-tasoa ja kaikki pakolliset komponentit.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-122">In this case, there are two levels of kanbans and all the required components.</span></span>  
 
-## <a name="plan-the-pegging-tree"></a><span data-ttu-id="8a269-123">Suunnittele tarvekohdistuspuu</span><span class="sxs-lookup"><span data-stu-id="8a269-123">Plan the pegging tree</span></span>
-1. <span data-ttu-id="8a269-124">Valitse puussa Myyntirivi 000832\Kanban 000558.</span><span class="sxs-lookup"><span data-stu-id="8a269-124">In the tree, select 'Sales line 000832\Kanban 000558'.</span></span>
-2. <span data-ttu-id="8a269-125">Laajenna Kanban-työt-osa.</span><span class="sxs-lookup"><span data-stu-id="8a269-125">Expand the Kanban jobs section.</span></span>
-    * <span data-ttu-id="8a269-126">Huomaa, että kanban-työn tila on Ei suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="8a269-126">Notice that the job status for the kanban job is Not planned.</span></span>  
-3. <span data-ttu-id="8a269-127">Valitse Suunnittele koko tarvekohdistuspuu.</span><span class="sxs-lookup"><span data-stu-id="8a269-127">Click Plan entire pegging tree.</span></span>
-    * <span data-ttu-id="8a269-128">Tällöin kaikki kanban-työt suunnitellaan tarvekohdistuspuussa, mikä muuttaa työn tilan Ei suunniteltu tilaksi Suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="8a269-128">This will plan all kanban jobs in the pegging tree, changing the Job status from Not planned to Planned.</span></span>  
-4. <span data-ttu-id="8a269-129">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="8a269-129">Refresh the page.</span></span>
-    * <span data-ttu-id="8a269-130">Huomaa, että kanban-työn tila muuttui ei suunnitellusta suunnitelluksi.</span><span class="sxs-lookup"><span data-stu-id="8a269-130">Notice that the kanban Job status changed from Not planned to Planned.</span></span>  
-5. <span data-ttu-id="8a269-131">Valitse puussa Myyntirivi 000832\Kanban 000558\Varasto-otto L0001\Kanban 000559.</span><span class="sxs-lookup"><span data-stu-id="8a269-131">In the tree, select 'Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559'.</span></span>
-    * <span data-ttu-id="8a269-132">Myös toisen kanbanin työ on suunniteltu, koska koko tarvekohdistuspuu on suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="8a269-132">The job for the second kanban is also planned, because the entire pegging tree is planned.</span></span> <span data-ttu-id="8a269-133">Huomaa, että kanban-työn tila on muuttunut ei suunnitellusta suunnitelluksi.</span><span class="sxs-lookup"><span data-stu-id="8a269-133">Notice that the kanban job status is changed from Not planned to Planned.</span></span>  
+## <a name="plan-the-pegging-tree"></a><span data-ttu-id="2a5fe-123">Suunnittele tarvekohdistuspuu</span><span class="sxs-lookup"><span data-stu-id="2a5fe-123">Plan the pegging tree</span></span>
+1. <span data-ttu-id="2a5fe-124">Valitse puussa Myyntirivi 000832\Kanban 000558.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-124">In the tree, select 'Sales line 000832\Kanban 000558'.</span></span>
+2. <span data-ttu-id="2a5fe-125">Laajenna Kanban-työt-osa.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-125">Expand the Kanban jobs section.</span></span>
+    * <span data-ttu-id="2a5fe-126">Huomaa, että kanban-työn tila on Ei suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-126">Notice that the job status for the kanban job is Not planned.</span></span>  
+3. <span data-ttu-id="2a5fe-127">Valitse Suunnittele koko tarvekohdistuspuu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-127">Click Plan entire pegging tree.</span></span>
+    * <span data-ttu-id="2a5fe-128">Tällöin kaikki kanban-työt suunnitellaan tarvekohdistuspuussa, mikä muuttaa työn tilan Ei suunniteltu tilaksi Suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-128">This will plan all kanban jobs in the pegging tree, changing the Job status from Not planned to Planned.</span></span>  
+4. <span data-ttu-id="2a5fe-129">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-129">Refresh the page.</span></span>
+    * <span data-ttu-id="2a5fe-130">Huomaa, että kanban-työn tila muuttui ei suunnitellusta suunnitelluksi.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-130">Notice that the kanban Job status changed from Not planned to Planned.</span></span>  
+5. <span data-ttu-id="2a5fe-131">Valitse puussa Myyntirivi 000832\Kanban 000558\Varasto-otto L0001\Kanban 000559.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-131">In the tree, select 'Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559'.</span></span>
+    * <span data-ttu-id="2a5fe-132">Myös toisen kanbanin työ on suunniteltu, koska koko tarvekohdistuspuu on suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-132">The job for the second kanban is also planned, because the entire pegging tree is planned.</span></span> <span data-ttu-id="2a5fe-133">Huomaa, että kanban-työn tila on muuttunut ei suunnitellusta suunnitelluksi.</span><span class="sxs-lookup"><span data-stu-id="2a5fe-133">Notice that the kanban job status is changed from Not planned to Planned.</span></span>  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
