@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
@@ -15,42 +14,45 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab03e28b3e42d02395da01024bc3bcf4dbcd5abf
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 8bfd6a5c26c6e68d10918bdc4e4144b640035b32
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798091"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565987"
 ---
-# <a name="employment-verification-i9-verification"></a><span data-ttu-id="c82d2-103">Työntekijän vahvistus i9-lomakkeen tarkistaminen</span><span class="sxs-lookup"><span data-stu-id="c82d2-103">Employment verification i9 verification</span></span>
+# <a name="employment-verification-i9-verification"></a><span data-ttu-id="227a5-103">Työntekijän vahvistus i9-lomakkeen tarkistaminen</span><span class="sxs-lookup"><span data-stu-id="227a5-103">Employment verification i9 verification</span></span>
 
 [!include [banner](../../../includes/banner.md)]
 
-<span data-ttu-id="c82d2-104">Yhdysvaltojen IRCA (Immigration Reform and Control Act) -laki edellyttää, että työnantajat varmistavat uusien työntekijöiden oikeuden työskennellä.</span><span class="sxs-lookup"><span data-stu-id="c82d2-104">The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees.</span></span> <span data-ttu-id="c82d2-105">Tässä menettelyssä käydään läpi I-9-lomakkeen tarkistuksessa tarvittavien asiakirjojen tallentaminen.</span><span class="sxs-lookup"><span data-stu-id="c82d2-105">This procedure will walk you through the steps of recording the necessary documents for I-9 verification.</span></span> <span data-ttu-id="c82d2-106">Menettelyssä käytetään USMF-yritystä.</span><span class="sxs-lookup"><span data-stu-id="c82d2-106">Use the USMF company for this procedure.</span></span>
+<span data-ttu-id="227a5-104">Yhdysvaltojen IRCA (Immigration Reform and Control Act) -laki edellyttää, että työnantajat varmistavat uusien työntekijöiden oikeuden työskennellä.</span><span class="sxs-lookup"><span data-stu-id="227a5-104">The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees.</span></span> <span data-ttu-id="227a5-105">Tässä menettelyssä käydään läpi I-9-lomakkeen tarkistuksessa tarvittavien asiakirjojen tallentaminen.</span><span class="sxs-lookup"><span data-stu-id="227a5-105">This procedure will walk you through the steps of recording the necessary documents for I-9 verification.</span></span> <span data-ttu-id="227a5-106">Menettelyssä käytetään USMF-yritystä.</span><span class="sxs-lookup"><span data-stu-id="227a5-106">Use the USMF company for this procedure.</span></span>
 
-1. <span data-ttu-id="c82d2-107">Siirry kohtaan Henkilöstöhallinto > Työntekijät > Työntekijät.</span><span class="sxs-lookup"><span data-stu-id="c82d2-107">Go to Human resources > Workers > Employees.</span></span>
-2. <span data-ttu-id="c82d2-108">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="c82d2-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="c82d2-109">Voit esimerkiksi suodattaa Nimi-kenttää arvolla Vince.</span><span class="sxs-lookup"><span data-stu-id="c82d2-109">For example, filter on the Name field with a value of 'Vince'.</span></span>
-3. <span data-ttu-id="c82d2-110">Valitse työntekijä.</span><span class="sxs-lookup"><span data-stu-id="c82d2-110">Select the employee.</span></span> <span data-ttu-id="c82d2-111">Esimerkki: Vince Prado</span><span class="sxs-lookup"><span data-stu-id="c82d2-111">Example: Vince Prado</span></span>
-4. <span data-ttu-id="c82d2-112">Laajenna Henkilökohtaiset tiedot -pikavälilehti.</span><span class="sxs-lookup"><span data-stu-id="c82d2-112">Expand the Personal information FastTab.</span></span>
-5. <span data-ttu-id="c82d2-113">Valitse Tunnusnumerot.</span><span class="sxs-lookup"><span data-stu-id="c82d2-113">Click Identification numbers.</span></span>
-6. <span data-ttu-id="c82d2-114">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c82d2-114">Click New.</span></span>
-7. <span data-ttu-id="c82d2-115">Valitse tallennettava tunnustyyppi.</span><span class="sxs-lookup"><span data-stu-id="c82d2-115">Select the identification type that you are recording.</span></span> <span data-ttu-id="c82d2-116">Esimerkki: Passi</span><span class="sxs-lookup"><span data-stu-id="c82d2-116">Example: Passport</span></span>
-8. <span data-ttu-id="c82d2-117">Kirjoita arvo Numero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c82d2-117">In the Number field, type a value.</span></span>
-9. <span data-ttu-id="c82d2-118">Valitse Ensisijainen-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="c82d2-118">Select Yes in the Primary field.</span></span>
-10. <span data-ttu-id="c82d2-119">Määritä Kuvaus-kenttään tunnistetietueen nimi ja lyhyt kuvaus.</span><span class="sxs-lookup"><span data-stu-id="c82d2-119">In the Description field, enter a brief description of the identification record..</span></span>
-11. <span data-ttu-id="c82d2-120">Valitse myöntäjäksi taho, joka on myöntänyt työntekijän henkilöllisyyden osoittavan asiakirjan.</span><span class="sxs-lookup"><span data-stu-id="c82d2-120">In the issuing agency select the agency that issued the form of identification to the worker.</span></span> <span data-ttu-id="c82d2-121">Esimerkki: Valtio</span><span class="sxs-lookup"><span data-stu-id="c82d2-121">Example: Government</span></span>
-12. <span data-ttu-id="c82d2-122">Syötä päivämäärä, jolloin työntekijän henkilöllisyyden osoittava asiakirja on myönnetty.</span><span class="sxs-lookup"><span data-stu-id="c82d2-122">Enter the date that the issuing agency issued the form of identification to the worker.</span></span> <span data-ttu-id="c82d2-123">Esimerkki: 15.2.2011</span><span class="sxs-lookup"><span data-stu-id="c82d2-123">Example: 02/15/2011</span></span>
-13. <span data-ttu-id="c82d2-124">Syötä päivämäärä, jolloin asiakirja vanhenee.</span><span class="sxs-lookup"><span data-stu-id="c82d2-124">Enter the date when the form of identification expires.</span></span> <span data-ttu-id="c82d2-125">Esimerkki: 15.2.2021</span><span class="sxs-lookup"><span data-stu-id="c82d2-125">Example: 2/15/2021</span></span>
-14. <span data-ttu-id="c82d2-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c82d2-126">Click Save.</span></span>
-15. <span data-ttu-id="c82d2-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c82d2-127">Close the page.</span></span>
-16. <span data-ttu-id="c82d2-128">Valitse Työsuhde-välilehti.</span><span class="sxs-lookup"><span data-stu-id="c82d2-128">Click the Employment tab.</span></span>
-17. <span data-ttu-id="c82d2-129">Valitse I-9.</span><span class="sxs-lookup"><span data-stu-id="c82d2-129">Click I-9.</span></span>
-18. <span data-ttu-id="c82d2-130">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c82d2-130">Click New.</span></span>
-19. <span data-ttu-id="c82d2-131">Valitse Työlupa-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="c82d2-131">In the Work eligibility field, select an option.</span></span>
-    * <span data-ttu-id="c82d2-132">Jos työntekijä ei ole Yhdysvaltain kansalainen, lisää myös työntekijän valtuutus- tai käyttöoikeusnumero.</span><span class="sxs-lookup"><span data-stu-id="c82d2-132">If the employee is not a citizen or national of the United States, you must enter the worker's resident alien or admission number.</span></span>  
-20. <span data-ttu-id="c82d2-133">Valitse GroupListA-vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="c82d2-133">Select the GroupListA option.</span></span>
-    * <span data-ttu-id="c82d2-134">Valitsemasi luettelo riippuu siitä, miten työntekijä todistaa henkilöllisyytensä.</span><span class="sxs-lookup"><span data-stu-id="c82d2-134">The list that you select depends on what form of identification the worker provided.</span></span> <span data-ttu-id="c82d2-135">Työntekijällä on oltava yksi luettelon A asiakirja ja yksi luettelon B ja C asiakirja. Jos työntekijä näyttää esimerkiksi passin, valitaan luettelo A.</span><span class="sxs-lookup"><span data-stu-id="c82d2-135">A worker must provide one List A document or one document from List B and C. For example, if the worker provided a passport, then List A could be selected.</span></span> <span data-ttu-id="c82d2-136">Jos työntekijä on näyttänyt ainoastaan ajokortin ja henkilökortin, valitaan luettelo B ja C.</span><span class="sxs-lookup"><span data-stu-id="c82d2-136">However, if the worker has only provided their drivers license and social security card, then list B and C must be selected.</span></span>  
-21. <span data-ttu-id="c82d2-137">Valitse I-9-asiakirjan tyyppi -kentässä työntekijän toimittaman asiakirjan tyyppi.</span><span class="sxs-lookup"><span data-stu-id="c82d2-137">In the I-9 document type field, select the type of document that the worker provided.</span></span>
-22. <span data-ttu-id="c82d2-138">Anna tai valitse arvo Asiakirjan numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c82d2-138">In the Document number field, enter or select a value.</span></span>
-23. <span data-ttu-id="c82d2-139">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c82d2-139">Click Save.</span></span>
+1. <span data-ttu-id="227a5-107">Siirry kohtaan Henkilöstöhallinto > Työntekijät > Työntekijät.</span><span class="sxs-lookup"><span data-stu-id="227a5-107">Go to Human resources > Workers > Employees.</span></span>
+2. <span data-ttu-id="227a5-108">Käytä pikasuodatinta tietueiden etsimiseen.</span><span class="sxs-lookup"><span data-stu-id="227a5-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="227a5-109">Voit esimerkiksi suodattaa Nimi-kenttää arvolla Vince.</span><span class="sxs-lookup"><span data-stu-id="227a5-109">For example, filter on the Name field with a value of 'Vince'.</span></span>
+3. <span data-ttu-id="227a5-110">Valitse työntekijä.</span><span class="sxs-lookup"><span data-stu-id="227a5-110">Select the employee.</span></span> <span data-ttu-id="227a5-111">Esimerkki: Vince Prado</span><span class="sxs-lookup"><span data-stu-id="227a5-111">Example: Vince Prado</span></span>
+4. <span data-ttu-id="227a5-112">Laajenna Henkilökohtaiset tiedot -pikavälilehti.</span><span class="sxs-lookup"><span data-stu-id="227a5-112">Expand the Personal information FastTab.</span></span>
+5. <span data-ttu-id="227a5-113">Valitse Tunnusnumerot.</span><span class="sxs-lookup"><span data-stu-id="227a5-113">Click Identification numbers.</span></span>
+6. <span data-ttu-id="227a5-114">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="227a5-114">Click New.</span></span>
+7. <span data-ttu-id="227a5-115">Valitse tallennettava tunnustyyppi.</span><span class="sxs-lookup"><span data-stu-id="227a5-115">Select the identification type that you are recording.</span></span> <span data-ttu-id="227a5-116">Esimerkki: Passi</span><span class="sxs-lookup"><span data-stu-id="227a5-116">Example: Passport</span></span>
+8. <span data-ttu-id="227a5-117">Kirjoita arvo Numero-kenttään.</span><span class="sxs-lookup"><span data-stu-id="227a5-117">In the Number field, type a value.</span></span>
+9. <span data-ttu-id="227a5-118">Valitse Ensisijainen-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="227a5-118">Select Yes in the Primary field.</span></span>
+10. <span data-ttu-id="227a5-119">Määritä Kuvaus-kenttään tunnistetietueen nimi ja lyhyt kuvaus.</span><span class="sxs-lookup"><span data-stu-id="227a5-119">In the Description field, enter a brief description of the identification record..</span></span>
+11. <span data-ttu-id="227a5-120">Valitse myöntäjäksi taho, joka on myöntänyt työntekijän henkilöllisyyden osoittavan asiakirjan.</span><span class="sxs-lookup"><span data-stu-id="227a5-120">In the issuing agency select the agency that issued the form of identification to the worker.</span></span> <span data-ttu-id="227a5-121">Esimerkki: Valtio</span><span class="sxs-lookup"><span data-stu-id="227a5-121">Example: Government</span></span>
+12. <span data-ttu-id="227a5-122">Syötä päivämäärä, jolloin työntekijän henkilöllisyyden osoittava asiakirja on myönnetty.</span><span class="sxs-lookup"><span data-stu-id="227a5-122">Enter the date that the issuing agency issued the form of identification to the worker.</span></span> <span data-ttu-id="227a5-123">Esimerkki: 15.2.2011</span><span class="sxs-lookup"><span data-stu-id="227a5-123">Example: 02/15/2011</span></span>
+13. <span data-ttu-id="227a5-124">Syötä päivämäärä, jolloin asiakirja vanhenee.</span><span class="sxs-lookup"><span data-stu-id="227a5-124">Enter the date when the form of identification expires.</span></span> <span data-ttu-id="227a5-125">Esimerkki: 15.2.2021</span><span class="sxs-lookup"><span data-stu-id="227a5-125">Example: 2/15/2021</span></span>
+14. <span data-ttu-id="227a5-126">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="227a5-126">Click Save.</span></span>
+15. <span data-ttu-id="227a5-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="227a5-127">Close the page.</span></span>
+16. <span data-ttu-id="227a5-128">Valitse Työsuhde-välilehti.</span><span class="sxs-lookup"><span data-stu-id="227a5-128">Click the Employment tab.</span></span>
+17. <span data-ttu-id="227a5-129">Valitse I-9.</span><span class="sxs-lookup"><span data-stu-id="227a5-129">Click I-9.</span></span>
+18. <span data-ttu-id="227a5-130">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="227a5-130">Click New.</span></span>
+19. <span data-ttu-id="227a5-131">Valitse Työlupa-kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="227a5-131">In the Work eligibility field, select an option.</span></span>
+    * <span data-ttu-id="227a5-132">Jos työntekijä ei ole Yhdysvaltain kansalainen, lisää myös työntekijän valtuutus- tai käyttöoikeusnumero.</span><span class="sxs-lookup"><span data-stu-id="227a5-132">If the employee is not a citizen or national of the United States, you must enter the worker's resident alien or admission number.</span></span>  
+20. <span data-ttu-id="227a5-133">Valitse GroupListA-vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="227a5-133">Select the GroupListA option.</span></span>
+    * <span data-ttu-id="227a5-134">Valitsemasi luettelo riippuu siitä, miten työntekijä todistaa henkilöllisyytensä.</span><span class="sxs-lookup"><span data-stu-id="227a5-134">The list that you select depends on what form of identification the worker provided.</span></span> <span data-ttu-id="227a5-135">Työntekijällä on oltava yksi luettelon A asiakirja ja yksi luettelon B ja C asiakirja. Jos työntekijä näyttää esimerkiksi passin, valitaan luettelo A.</span><span class="sxs-lookup"><span data-stu-id="227a5-135">A worker must provide one List A document or one document from List B and C. For example, if the worker provided a passport, then List A could be selected.</span></span> <span data-ttu-id="227a5-136">Jos työntekijä on näyttänyt ainoastaan ajokortin ja henkilökortin, valitaan luettelo B ja C.</span><span class="sxs-lookup"><span data-stu-id="227a5-136">However, if the worker has only provided their drivers license and social security card, then list B and C must be selected.</span></span>  
+21. <span data-ttu-id="227a5-137">Valitse I-9-asiakirjan tyyppi -kentässä työntekijän toimittaman asiakirjan tyyppi.</span><span class="sxs-lookup"><span data-stu-id="227a5-137">In the I-9 document type field, select the type of document that the worker provided.</span></span>
+22. <span data-ttu-id="227a5-138">Anna tai valitse arvo Asiakirjan numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="227a5-138">In the Document number field, enter or select a value.</span></span>
+23. <span data-ttu-id="227a5-139">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="227a5-139">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
