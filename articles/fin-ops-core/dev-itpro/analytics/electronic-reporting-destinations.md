@@ -2,11 +2,10 @@
 title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097278"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569716"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -166,12 +165,14 @@ Ota PDF-muunnosasetus käyttöön kulloisessakin Finance-esiintymässä avaamall
 
 ### <a name="applicability"></a>Soveltuvuus
 
-PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponenttien osalta, joiden avulla luodaan tuloksia Office (Excel tai Word) -muodossa (**Excel-tiedosto**). Kun tämä asetus on käytössä, Office-muodossa luotu tulos muunnetaan automaattisesti PDF-muotoon.
-
-### <a name="limitations"></a>Rajoitukset
+PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponenttien osalta, joiden avulla luodaan tuloksia Office (Excel tai Word) -muodossa (**Excel-tiedosto**). Kun tämä asetus on käytössä, Office-muodossa luotu tulos muunnetaan automaattisesti PDF-muotoon. Financen versioissa **ennen 10.0.18 -versiota** voit ottaa tämän vaihtoehdon käyttöön vain **Excel\\Tiedosto**-tyypin komponentteihin, joita käytetään tulostamiseen [Excel](er-fillable-excel.md)- tai [Word](er-design-configuration-word.md)-muodossa. **Version 10.0.18** ja sitä myöhempien versioiden osalta voit kuitenkin ottaa tämän vaihtoehdon käyttöön myös **Yhteiset\\Tiedosto**-tyypin komponenteille.
 
 > [!NOTE]
-> Tämä ominaisuus on esikatseluominaisuus, ja siihen sovelletaan ehdoissa [Microsoft Dynamics 365 -esikatselujen lisäkäyttöehdot](https://go.microsoft.com/fwlink/?linkid=2105274) esitettyjä käyttöehtoja.
+> Huomaa varoitussanoma, joka tulee näyttöön, kun otat käyttöön **Yhteiset\\Tiedosto**-tyyppisen ER-komponentin PDF-muuntovaihtoehdon. Tämä sanoma kertoo, että suunnittelun aikana ei ole mahdollista varmistaa, että valittu tiedostokomponentti paljastaa sisällön PDF-muodossa tai PDF-muunnettavana sisältönä suorituksen aikana. Tämän vuoksi asetus on otettava käyttöön vain, jos olet varma, että valittu tiedostokomponentti on määritetty siten, että se paljastaa sisällön PDF-muodossa tai PDF-muunnettavassa muodossa suorituksen aikana.
+> 
+> Jos otat **Excel\\Tiedosto**-tyypin komponentin PDF-muuntovaihtoehdon käyttöönja jos tämä komponentti paljastaa sisältöä jossakin muussa kuin PDF-muodossa ja jos sen sisältöä ei voi muuntaa PDF-muotoon, ajon aikana tapahtuu poikkeus. Sanoma, jonka vastaanotat, ilmoittaa, että luotua sisältöä ei voi muuntaa PDF-muotoon.
+
+### <a name="limitations"></a>Rajoitukset
 
 PDF-muunnoksen asetus on käytettävissä vain pilvikäyttöönotoissa.
 

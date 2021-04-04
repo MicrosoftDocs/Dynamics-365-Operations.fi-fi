@@ -16,21 +16,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2e25a584121b700e566c29dbfe3fbbd72bf998cc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: afd7982179dc9845c9adc24e8c7c9951a04460a3
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982538"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477705"
 ---
 # <a name="manage-robotstxt-files"></a>Robots.txt-tiedostojen hallinta
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten robots.txt-tiedostoja hallitaan Microsoft Dynamics 365 Commercella.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Robottien poissulkemisstandardi tai robots.txt on standardi, jonka avulla sivustot kommunikoivat Web-robottien kanssa. Se ohjeistaa Web-robotteja kaikista verkkosivuston alueista, joilla ei pitäisi käydä. Hakukoneet käyttävät usein robotteja indeksoidakseen verkkosivustoja.
 

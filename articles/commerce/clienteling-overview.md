@@ -3,7 +3,7 @@ title: Asiakashallinnan yleiskatsaus
 description: Tässä ohjeaiheessa on myymäläsovellukseen sisältyvien uusienasiakashallinnan ominaisuuksien yleiskatsaus.
 author: bebeale
 manager: AnnBe
-ms.date: 01/29/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 206031f5ddbaedb2b581a452fe8979252647f0c4
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 8f3135d0a34086b67c6e5ce11a5af47a51479c92
+ms.sourcegitcommit: 8a14eac1c27f10c2b1b02ac9ad82339f5e127602
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5554991"
 ---
 # <a name="clienteling-overview"></a>Asiakashallinnan yleiskuvaus
 
@@ -34,7 +34,7 @@ Monet etenkin laadukkaiden erikoismyymälöiden jälleenmyyjät haluat, että my
 
 ## <a name="client-book"></a>Asiakaskirja
 
-Microsoft Dynamics 365 Commercein asiakaskirjatoiminnon avulla jälleenmyyjät voivat auttaa myymälän myyjiä muodostamaan pitkäaikaisia asiakassuhteita avainasiakkaiden kanssa.
+Microsoft Dynamics 365 Commercen asiakaskirjatoiminnon avulla jälleenmyyjät voivat auttaa myymälän myyjiä muodostamaan pitkäaikaisia asiakassuhteita avainasiakkaiden kanssa.
 
 Asiakaskirjassa on asiakaskortteja, joissa on kunkin asiakkaan yhteystiedot sekä kolme lisäparametria, jotka jälleenmyyjä määrittää Headquartersissa. Jälleenmyyjät voivat päättää, mitkä ovat kolme tärkeintä asiaa, jotka myyjien on tiedettävä asiakkaasta. Esimerkiksi kultasepänliikkeen kannattaa sisällyttää tärkeät päivämäärät, kuten merkkipäivät ja syntymäpäivät, koska ne ovat tapahtumia, jolloin asiakas voi olla kiinnostunut ostamaan koruja. Vastaavasti muotoliikkeessä kannattaa ehkä sisällyttää asiakasta kiinnostavat ostokset ja tuotemerkit.
 

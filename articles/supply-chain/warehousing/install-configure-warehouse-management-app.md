@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142320"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487022"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142320"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Tässä aiheessa käsitellään uuden, tällä hetkellä julkisena esiversiona julkaistun varastonhallinnan mobiilisovelluksen määrittämistä. Lisätietoja vanhan varastointisovelluksen määrittämisestä on kohdassa [Varastointisovelluksen asentaminen ja yhteyden muodostaminen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Tässä aiheessa käsitellään uutta varastonhallinnan mobiilisovellusta. Lisätietoja vanhan varastointisovelluksen määrittämisestä on kohdassa [Varastointisovelluksen asentaminen ja yhteyden muodostaminen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Varastonhallinnan mobiilisovelluksen julkinen esiversio on ladattavissa Microsoft App Centerissä. Se toimitetaan erillisenä osana. Niinpä se onkin ladattava kuhunkin laitteeseen ja määritettävä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
-
-Tässä aiheessa käsitellään varastonhallinnan mobiilisovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
+Tässä aiheessa käsitellään varastonhallinnan mobiilisovelluksen lataamista ja asentamista mobiililaitteisiin ja sovelluksen määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 
@@ -53,17 +51,27 @@ Sovellusta ei voi käyttää, ennen kuin vastaava toiminto on otettu käyttöön
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen hakeminen
 
-Lataa sovellus valitsemalla jompikumpi seuraavista linkeistä:
+Pienissä käyttöönotoissa sovellus kannattaa asentaa valitusta kaupasta kuhunkin laitteeseen, jonka jälkeen yhteys käytettyyn ympäristöön voidaan määrittää manuaalisesti.
 
-- **Windows (UWP):** [App Centerin esiversio-ohjelma – Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+Suurissa käyttöönotoissa voit automatisoida sovelluksen käytön ja/tai konfiguroinnin, mikä on kätevämpää, jos hallitset useita laitteita. Voit käyttää esimerkiksi mobiililaitteiden hallintaa ja mobiilisovellusten hallintaratkaisua, kuten [Microsoft Intunea](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Lisätietoja sovellusten lisäämisestä Intunen avulla on kohdassa [Sovellusten lisääminen Microsoft Intuneen](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Koska kyse on sovelluksen esiversiosta, sen asentamisessa on muutamia lisävaiheita. Lisätietoja on kohdassa [Koontiversion asentaminen App Centeristä](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Sovelluksen asentaminen sovelluskaupasta
 
-- **Android:** [App Centerin esiversio-ohjelma – Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Helpoin tapa asentaa sovellus yksittäiseen laitteeseen on asentaa se sovelluskaupasta, joka tarjoaa aina uusimman saatavilla olevan version. Microsoft Intune voi myös hakea sovellukset sovelluskaupoista. Asenna sovellus sovelluskaupasta seuraavien linkkien avulla:
 
-    Koska kyse on sovelluksen esiversiosta, sen asentamisessa on muutamia lisävaiheita. Lisätietoja on kohdassa [Android-sovellusten testaaminen](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Varastonhallinta Microsoft Storessa](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-Pienissä käyttöönotoissa sovellus kannattaa asentaa valitusta kaupasta kuhunkin laitteeseen, jonka jälkeen yhteys käytettyyn ympäristöön voidaan määrittää manuaalisesti. Sovelluksen käyttöönoton ja/tai määrityksen voi kuitenkin myös automatisoida. Tämä voi olla kätevää, jos hallittavia laitteita on useita ja käytössä on mobiililaitteiden ja -sovellusten hallintaratkaisu, kuten [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Lisätietoja sovellusten lisäämisestä Intunen avulla on kohdassa [Sovellusten lisääminen Microsoft Intuneen](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Varastonhallinta Google Play Kaupassa](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Sovelluksen lataaminen Microsoft App Centeristä
+
+Sovelluskaupasta asentamisen sijaan voit myös ladata sovelluksen Microsoft App Centeristä. App Centerissä on asennettavat paketit, jotka voidaan siirtää laitteiden välillä. Nykyisen version lisäksi App Centerissä voit myös ladata aiempia versioita ja esikatsella versioita, jotka voivat sisältää tulevia toimintoja, joita voit kokeilla. Voit ladata Varastonhallinta-mobiilisovelluksen nykyiset, aiemmat tai esikatseluversiot Microsoft App Centeristä käyttämällä jotakin seuraavista linkeistä:
+
+- **Windows (UWP):** [Varastonhallinta (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Ohjeita ladatun paketin asentamisesta Windows-laitteella ja tarvittavien sertifikaattien asennuksesta on kohdassa [Koontiversion asentaminen App Centeristä](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Varastonhallinta (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Jos lataat esiversion, sen asentamisessa on muutamia lisävaiheita. Lisätietoja on kohdassa [Android-sovellusten testaaminen](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Verkkopalvelusovelluksen luominen Azure Active Directoryssa
 

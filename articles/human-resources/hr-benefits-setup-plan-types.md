@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e24c11fb6e84a7480a40b706b106cd8465470f5c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 1d8db6900e6b697e988e2a7e9e31828b70e4ad0d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112367"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463909"
 ---
 # <a name="create-plan-types"></a>Suunnitelmantyyppien luominen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resourcesin suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kullakin suunnitelmatyypillä on suunnitelmatyypin koodi, joka määrittää suunnitelmatyypin säännöt. Esimerkiksi suunnitelmatyypillä Peruselinaika olisi suunnitelmatyyppikoodi Elämä, koska se on eräänlainen henkivakuutussuunnitelma ja on noudatettava Elämä-suunnitelmatyyppikoodille vahvistettuja sääntöjä. Toinen suunnitelmatyyppi voi olla täydentävä elämä, myös suunnitelmatyyppikoodilla Elämä.
 

@@ -1,6 +1,6 @@
 ---
-title: Määritä henkilöstöparametreja
-description: Jotkin henkilöstöhallinnon parametrien asetukset ovat yhteisiä eri yrityksissä, toiset taas yrityskohtaisia. Tässä artikkelissa on selostettu, miten määritetään yrityskohtaisia henkilöstöhallinnon parametreja.
+title: Määritä Human Resourcesin parametrit
+description: Tässä ohjeaiheessa kerrotaan, miten voit määrittää yrityskohtaisia parametreja Dynamics 365 Human Resources -sovelluksessa.
 author: andreabichsel
 manager: tfehr
 ms.date: 02/03/2020
@@ -18,38 +18,137 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 131606ebaff49a2c63d22bcfdb5e523f4df87ec6
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 10f3c62925f6b951f88b990cb8b103dde54c27d1
+ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129122"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5502937"
 ---
-# <a name="configure-human-resources-parameters"></a>Määritä henkilöstöparametreja
+# <a name="configure-human-resources-parameters"></a>Määritä Human Resourcesin parametrit
 
-Jotkin henkilöstöhallinnon (HR) parametrien asetukset ovat yhteisiä eri yrityksissä, toiset taas yrityskohtaisia. Tässä artikkelissa on selostettu, miten määritetään yrityskohtaisia henkilöstöhallinnon parametreja.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Henkilöstöhallinto (HR)-parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten (ts. asetukset koskevat yhtä yhtiötä) parametrien määrittämiseen **Henkilöstöparametrit**-sivua. **Henkilöstöparametrit**-sivulla asetukset jaetaan kuudelle välilehdelle:
+Joidenkin henkilöstöhallinnon parametrien asetukset ovat yhteisiä eri yrityksissä, kun taas muiden parametrien asetukset ovat yrityskohtaisia. Tässä ohjeaiheessa kerrotaan, miten voit määrittää yrityskohtaisia henkilöstöhallinnon parametreja.
 
--   Yleiset
--   Työhönotto – ei sisälly Dynamics 365 Human Resourcesiin
--   Kompensaatio
--   Numerosarjat
--   Perhe ja sairauspoissaolon säädös (FMLA)
--   Työntekijän itsepalvelu
+Henkilöstöhallinnon parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten (ts. asetukset koskevat yhtä yhtiötä) parametrien määrittämiseen **Henkilöstöparametrit**-sivua.
 
-Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja. **Yleinen**-välilehdellä määritetään poissaoloja, tapaturmia ja sairaustapauksia sekä uusia työntekijöitä koskevien tietojen ulkonäkö. Tämän välilehden asetukset määrittävät myös osan oletusarvoista, jotka tulevat näkyviin työskentelysi aikana. Tarkemmin sanoen, tällä välilehdellä voit valita avoimissa poissaolotapahtumissa käytettävän värin, määrittää raporteissa käytettävän tyylitiedoston, määrittää, otetaanko integrointi käyttöön koulutusten ja poissaolomerkintöjen välillä, ja valita tämän integroinnin hallinnassa käytettävä poissaolokoodi. Voit myös määrittää, miten pitkään loukkaantumis- ja sairaustapauksia säilytetään, ja määrittää oletusarvoisen tunnusnumeron, joka näytetään, kun uusi työntekijä palkataan. 
+![Valitse Henkilöstöhallintoparametrit](./media/hr-employee-self-service-human-resources-parameters.png)
 
-**Työhönotto**-välilehden asetuksilla määritetään tiedostotyypit, joita käytetään automaattisessa hakijoiden kanssa käytävässä yhteydenpidossa sekä avoimissa hakemuksissa (hakemuksissa, jotka eivät koske määrättyä työhönottoprojektia) käytettävän työhönottoprojekti. Työhönottoprosessin vanhentumisasetuksissa määritetty ajanjakso määrittää ne työhönottoprojektit, jotka sisällytetään **Vanhentuvat projektit** -ruudulle **Työhönoton hallinta** -työtilassa. Hakemuksen määräajan varoitukselle määritettyä ajanjaksoa käytetään näyttämään ne työhönottoprojektit, jotka lähestyvät hakemuksille asetettua määräaikaansa **Hakemuksen määräaika lähestyy** -ruudulla **Työhönotto**-työtilassa. 
+**Henkilöstöparametrit**-sivulla asetukset jaetaan kuudelle välilehdelle:
 
-**Kompensaatio**-välilehden asetukset määrittävät, onko käyttäjien vahvistettava, että he haluavat tallentaa joko kiinteän tai muuttuvan kompensaatiosuunnitelman asetukset. Jos valitset **Otetaan vahvistuksen tallennus käyttöön** -asetuksen, aina kun käyttäjä sulkee kompensaatioon liittyvän sivun, tälle lähetetään viesti, jossa tätä pyydetään tallentamaan tietue. Jotkin kompensaationhallinnan sivut eivät salli käyttäjille tietojen poistamista. Näin ollen, kehottamalla käyttäjiä vahvistamaan, että he haluavat tallentaa tiedot, saatat pystyä rajoittamaan tietojen määrää, jotka on tallennettu mutta joita ei voida poistaa myöhemmin. Jos **Otetaan vahvistuksen tallennus käyttöön** -valintaruutu tyhjennetään, tietueet tallennetaan aina heti, mahdollisesti jo ennen kuin käyttäjä on valmis. Jos käytät suorituskyvyn hallintaa, **Kompensaatio** -välilehdellä voit myös valita suorituskykyä arvioitaessa käytettävän arviointimallin kompensaatiosuunnitelmille määritetyn mallin asemesta. 
+- **Yleistä**
+- **Työhönotto** (Dynamics 365 Human Resources ei sisällä tätä välilehteä)
+- **Kompensaatio**
+- **Numerosarjat**
+- **FMLA**
+- **Työntekijän itsepalvelu**
+- **Esimiehen itsepalvelu**
+- **Etujen hallinta**
+- **Loma ja poissaolo**
+- **Maksutavat**
 
-### <a name="previously-released-functionality"></a>Aiemmin julkaistu toiminto
+Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja.
 
-**Numerojärjestys**-välilehden asetukset määrittävät numerosarjat, joita käytetään tunnusten määrittämiseen automaattisesti nimikkeille henkilöstöhallinnossa, kuten sovelluksille, poissaolomerkinnöille, kompensaatioprosessin tuloksille, tapausnumeroille, kursseille ja kurssien työjärjestyksille. Jos haluat ylläpitää numerosarjaviitteitä ja koodeja, käytä **Numerojärjestykset**-luettelosivua (valitse **Organisaation hallinto** &gt; **Numerojärjestykset** &gt; **Numerojärjestykset**).
+## <a name="general"></a>Yleistä
+
+**Yleinen**-välilehdellä määritetään poissaoloja, tapaturmia ja sairaustapauksia sekä uusia työntekijöitä koskevien tietojen ulkonäkö. Tämän välilehden asetukset määrittävät myös osan oletusarvoista, jotka tulevat näkyviin työskentelysi aikana. Tässä välilehdessä voit tehdä erityisesti seuraavat toimet:
+
+- Valitse avoimille poissaolotapahtumille käytettävä väri
+- Valitse raporteille käytettävä tyylisivu
+- Ota koulutuskurssien ja poissaolokirjauksen välinen integrointi käyttöön
+- Valitse poissaolokoodi, jota käytetään tämän integroinnin hallinnassa.
+- Valitse, kuinka kauan haluat säilyttää loukkaantumis- ja sairaustapauksia.
+- Määritä oletusarvoinen tunnusnumero, joka näytetään, kun uusi työntekijä palkataan.
+
+![Yleinen-välilehti](./media/hr-setup-parameters-general.png)
+
+## <a name="recruitment"></a>Työhönotto
+
+**Työhönotto**-välilehden asetukset määrittävät asiakirjatyypit, joita käytetään hakijoille automaattisesti lähetettävässä viestinnässä. Voit myös valita avoimille hakemuksille käytettävän työhönottoprojektin.
+
+Työhönottoprojektin vanhentumiselle määritetty ajanjakso määrittää työhönottoprojektit, jotka sisällytetään **Työhönoton hallinta** -työtilan **Vanhentuvat projektit** -ruutuun. Hakemuksen määräajan varoitukselle määritettyä ajanjaksoa käytetään näyttämään työhönottoprojektit, jotka lähestyvät hakemuksille asetettua määräaikaansa **Työhönotto**-työtilan **Hakemuksen määräaika lähestyy** -ruudussa.
+
+Lisätietoja työhönotosta on kohdassa [Ehdokkaiden työhönotto](hr-personnel-recruit.md).
+
+## <a name="compensation"></a>Kompensaatio
+
+Dynamics 365 Finance -sovelluksen **Kompensaatio**-välilehden asetukset määrittävät, onko käyttäjien vahvistettava, että he haluavat tallentaa joko kiinteän tai muuttuvan kompensaatiosuunnitelman tiedot. Jos valitset **Otetaan vahvistuksen tallennus käyttöön** -asetuksen, käyttäjiltä kysytään, haluavatko he tallentaa tietueen, kun he sulkevat kompensaatioon liittyvän sivun. Jotkin kompensaation hallinnan sivut eivät salli käyttäjien poistaa tietoja. Kun pyydät käyttäjiä vahvistamaan, että he haluavat tallentaa tiedot, saatat pystyä rajoittamaan sellaisten tietojen määrää, jotka on tallennetaan, mutta joita ei voida poistaa myöhemmin. Jos et valitse **Otetaan vahvistuksen tallennus käyttöön** -asetusta, tietueet tallennetaan välittömästi, mahdollisesti jo ennen kuin käyttäjä on valmis. Jos käytät suorituskyvyn hallintaa, **Kompensaatio**-välilehti sallii sinun myös valita suorituskykyä arvioitaessa käytettävän arviointimallin kompensaatiosuunnitelmille määritetyn mallin sijaan.
+
+Voit käyttää henkilöstöhallinnon **Kompensaatio**-välilehteä rajoittaaksesi kompensaatiosuunnitelmien käyttöoikeuksia ja määrittääksesi oletusvaluutan.
+
+Lisätietoja kompensaatiosta on kohdassa [Kompensaatiosuunnitelmien yleiskuvaus](hr-compensation-overview.md).
+
+![Kompensaatiovälilehti](./media/hr-setup-parameters-compensation.png)
+
+## <a name="number-sequences"></a>Numerosarjat
+
+**Numerosarja**-välilehdessä olevat asetukset määrittävät järjestyksen, joita käytetään tunnusten kohdistamiseksi automaattisesti henkilöstöhallinnon nimikkeille, esimerkiksi:
+
+- Hakemukset
+- Poissaolokirjaukset
+- Kompensaatioprosessin tulokset
+- Tapausnumerot
+- Kurssit
+- Kurssin työjärjestykset
+
+Voit ylläpitää numerosarjojen viitteitä ja koodeja **Numerosarjat**-luettelosivulta (valitse **Organisaation hallinto > Numerosarjat > Numerosarjat**).
+
+Lisätietoja on kohdassa [Numerosarjojen yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/human-resources/toc.json).
 
 > [!NOTE]
-> Tehtyjen työtuntien määrä ei voi ylittää 1 250 tuntia, ja työsuhteen pituus ei voi ylittää 12 kuukautta. Nämä enimmäisarvot ovat Yhdysvaltojen liittovaltion lainsäädännön mukaiset. Lopuksi, **Työntekijän itsepalvelu** -välilehden asetuksissa määritellään tiedot, jotka esimiehet voivat syöttää työntekijöidensä puolesta.
+> Tehtyjen työtuntien määrä ei voi ylittää 1 250 tuntia, ja työsuhteen pituus ei voi ylittää 12 kuukautta. Nämä enimmäisarvot ovat Yhdysvaltojen liittovaltion lainsäädännön mukaiset.
+
+![Numerosarjat-välilehti](./media/hr-setup-parameters-number-sequences.png)
+
+## <a name="fmla"></a>FMLA
+
+Voit määrittää FMLA-kelpoisuusvaatimukset ja FMLA-korvausajat FMLA-välilehdestä. Lisätietoja on kohdassa [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md).
+
+![FMLA-välilehti](./media/hr-setup-parameters-fmla.png)
+
+## <a name="employee-self-service"></a>Työntekijän itsepalvelu
+
+**Työntekijän itsepalvelu** -välilehden asetukset vaikuttavat siihen, miten työntekijän itsepalvelu näytetään työntekijöille. Tästä välilehdestä voit suorittaa seuraavat toimet:
+
+- Anna työntekijän itsepalvelutyötilalle nimi
+- Valitse tiedot, joita esimies voi syöttää työntekijöille
+- Lisää hyödyllisiä linkkejä työntekijöille
+- Estä työntekijöitä lisäämästä muokkaamasta yrityksen yhteystietoja. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
+
+Lisätietoja työntekijän itsepalvelun määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
+
+![Työntekijän itsepalvelu -välilehti](./media/hr-setup-parameters-employee-self-service.png)
+
+## <a name="manager-self-service"></a>Esimiehen itsepalvelu
+
+**Esimiehen itsepalvelu** -välilehden asetukset vaikuttavat siihen, mitä esimiehet näkevät esimiehen itsepalvelussa. Tästä välilehdestä voit määrittää seuraavat vaihtoehdot:
+
+- Vanhentuvien tietueiden ajanjakso
+- Tiedot, jotka esimiehet näkevät vanhentuvissa tietueissa
+- Voivatko esimiehet tarkastella laajennettujen raporttien avoimia toimia
+- Poistuvien työntekijöiden näkymät
+- Hyödyllisiä linkkejä esimiehille
+
+Lisätietoja esimiehen itsepalvelun määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
+
+![Esimiehen itsepalvelu -välilehti](./media/hr-setup-parameters-manager-self-service.png)
+
+## <a name="benefits-management"></a>Etujen hallinta
+
+Voit määrittää etujen hallinnan sähköpostiasetukset Etujen hallinta -välilehdestä. Lisätietoja etujen hallinnan määrittämisestä ja käytöstä on kohdassa [Etujen hallinnan yleiskatsaus](hr-benefits-management-overview.md).
+
+![Etujen hallinta -välilehti](./media/hr-setup-parameters-benefits-management.png)
+
+## <a name="leave-and-absence"></a>Loma ja poissaolo
+
+Lisätietoja lomien ja poissaolojen määrittämisestä ja käytöstä on kohdassa [Lomien ja poissaolojen yleiskatsaus](hr-leave-and-absence-overview.md).
+
+## <a name="payment-methods"></a>Maksutavat
+
+Voit valita organisaatiosi tukemat maksutavat **Maksutavat**-välilehdestä. Lisätietoja kompensaation määrittämisestä on kohdassa [Kompensaatiosuunnitelmien yleiskuvaus](hr-compensation-overview.md).
+
+![Maksutavat-välilehti](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
