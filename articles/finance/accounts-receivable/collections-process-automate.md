@@ -1,9 +1,9 @@
 ---
 title: Perintäprosessin automatisointi
-description: Tässä ohjeaiheessa kuvataan perintäprosessin strategiat. Ne määrittävät automaattisesti myyntilaskut, jotka edellyttävät sähköpostimuistutuksen, perintätoiminnon (kuten puhelu) tai maksukehotuksen lähettämisen asiakkaalle.
+description: Tässä ohjeaiheessa kuvataan perintäprosessin strategiat. Ne määrittävät automaattisesti myyntilaskut, jotka edellyttävät sähköpostimuistutuksen, perintätoiminnon tai maksukehotuksen lähettämisen asiakkaalle.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969698"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582748"
 ---
 # <a name="collections-process-automation"></a>Perintäprosessin automatisointi
 
@@ -32,6 +32,8 @@ Organisaatiot käyttävät paljon aikaa tutkiessaan vanhoja saldoraportteja, asi
 
 ## <a name="collections-process-setup"></a>Perintäprosessin määrittäminen
 Voit käyttää **Perintäprosessin määrittäminen** -sivua (**Luotonvalvonta > Määritys > Perintäprosessin määrittäminen**) jos haluat luoda automatisoituja perintäprosesseja. Niiden avulla voit ajoittaa toimintoja, lähettää sähköpostiviestejä ja luoda sekä lähettää asiakkaan maksukehotuksia. Prosessin vaiheet perustuvat johtavaan tai vanhimpaan avoimeen laskuun. Kukin vaihe käyttää tätä laskua määritettäessä, mitä viestintää käytetään ja mikä tehtävä suoritetaan kunkin asiakkaan kanssa.  
+
+Perintäryhmät lähettävät tavallisesti etuajassa ilmoituksen, joka liittyy kuhunkin avoimeen laskuun, jotta asiakkaalle ilmoitetaan ennen laskun erääntymistä. **Ennen perintää** -valinta voidaan määrittää sallimaan jokaisessa prosessihierarkiassa yksi vaihe jokaista laskua kohti, joka toteutetaan, kun laskun ajoitus saavuttaa tämän vaiheen.
 
 ### <a name="process-hierarchy"></a>Prosessihierarkia
 Kukin asiakaspooli voidaan liittää vain yhteen prosessihierarkiaan. Tämän vaiheen hierarkiajärjestys määrittää ensisijaisen prosessin, jos asiakas kuuluu useampaan kuin yhteen pooliin, johon on määritetty prosessihierarkia. Poolin tunnus määrittää, mitkä asiakkaat määritetään prosessiin. 
@@ -82,6 +84,7 @@ Seuraavissa taulukoissa ovat sivut ja kentät, joiden avulla määritettyä pika
 |                                                           |     Liiketoiminta-asiakirja                           |     Määrittää tehtävän tai sähköpostiviestimallin, jota käytetään prosessivaiheen aikana.                                                                        |
 |                                                           |     Milloin                                          |     Määrittää, tapahtuuko prosessivaihe ennen vai jälkeen johtavan laskun eräpäivän. Myös **Päivien määrä suhteessa laskun eräpäivään** -kentän arvo otetaan huomioon.        |
 |                                                           |     Päivien määrä suhteessa laskun eräpäivään        |     Yhdessä **Kun**-kentän kanssa se määrittää prosessivaiheen ajoituksen.                                                                          |
+|                                                           |     Esimuistutus                                   |     Tämän valinnan avulla määritetään prosessihierarkiaa kohden yksi vaihe, joka suoritetaan jokaiselle laskulle, kun ajoitusehdot täytetään.                                                |
 |                                                           |     Vastaanottaja                                     |     Ilmaisee, lähetetäänkö sähköpostiviesti asiakkaalle, myyntiryhmälle vai perintäasiamiehen yhteyshenkilölle.                                                   |
 |                                                           |     Liiketoiminnan tarkoituksen yhteyshenkilö                    |     Määrittää, mitä vastaanottajan sähköpostiosoitetta käytetään sähköpostiviestinnässä.                                                                                 |
 
@@ -100,7 +103,7 @@ Seuraavissa taulukoissa ovat sivut ja kentät, joiden avulla määritettyä pika
 ### <a name="collections-history"></a>Perintähistoria 
 |     Sivu                              |     Kenttä     |      kuvaus                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Perintäprosessin määrittäminen       |               |     Näytä valitun prosessihierarkian uusin historia.     |
+|     Perintäprosessin määrittäminen       |               |     Näytä valitun prosessihierarkian uusin historia.       |
 
 ### <a name="collection-process-assignment"></a>Perintäprosessin määritys
 |     Sivu                              |     Kenttä     |      kuvaus                                                  |
@@ -110,6 +113,11 @@ Seuraavissa taulukoissa ovat sivut ja kentät, joiden avulla määritettyä pika
 |     Esikatsele prosessin määritystä      |               |     Esikatsele asiakkaita, jotka liitetään strategiaan sen suorittamisen yhteydessä.   |
 |     Esikatsele asiakasmääritystä     |               |     Näytä strategia, johon tietty asiakas on määritetty.    |
  
+ ### <a name="process-simulation"></a>Prosessisimulaatio
+|     Sivu                              |     Kenttä     |      kuvaus                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Prosessisimulaatio                 |               |     Esikatsele toimenpiteet, jotka luodaan, jos valittu prosessien automaatio suoritetaan tällä kertaa. |
+
 ### <a name="parameters"></a>Parametrit
 |     Sivu                                                                  |     Kenttä                                             |      kuvaus                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
@@ -117,6 +125,7 @@ Seuraavissa taulukoissa ovat sivut ja kentät, joiden avulla määritettyä pika
 |     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Lähetä maksukehotukset automaattisesti           |     Maksukehotuksen toimintotyypit lähettävät kehotuksen automatisoinnin aikana.                                      |
 |     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Luo automatisoinnon tehtävät                |     Luo ja sulkee muiden kuin tehtävätoimintotyyppien tehtäviä kaikkien huomioon otettavien automatisoitujen vaiheiden tarkastelemista varten.        |
 |     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Päivät, joiden ajan perintäprosessin automatisointi säilytetään     |     Määrittää, monenko päivän ajaksi perintähistoria tallennetaan.                                                       |
+|     Myyntireskontran parametrit > Perintäprosessin automatisointi     |     Jätä lasku pois viimeisen prosessivaiheen aktivoinnin jälkeen    |     Laskua, joka saavuttaa perintäprosessin viimeisen vaiheen, ei käytetä tulevien prosessien automaation toimenpidetyyppien luomiseen. Seuraavaksi vanhin lasku määrittää seuraavan prosessien automaation vaiheen, jotta perintäprosessien automaatiotoimintojen jatkuminen varmistetaan.                                                        |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

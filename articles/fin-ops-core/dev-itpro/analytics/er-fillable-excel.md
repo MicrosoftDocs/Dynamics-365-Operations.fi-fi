@@ -3,10 +3,9 @@ title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094026"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574170"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -54,7 +53,7 @@ Määrityksen Er-muoto-osa määritetään valitsemalla toimintoruudussa **Suunn
 Lähtevän tiedoston asettelu määritetään liittämällä Excel-työkirja, jossa on .xlsx-tunniste, **Excel\\Tiedosto**-osaan lähtevien tiedostojen mallina.
 
 > [!NOTE]
-> Jos malli liitetään manuaalisesti, käytettävän [tiedostotyypin](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) on oltava määritetty tätä tarkoitusta varten [ER-parametreissa](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> Jos malli liitetään manuaalisesti, käytettävän [tiedostotyypin](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) on oltava määritetty tätä tarkoitusta varten [ER-parametreissa](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Liitteen lisääminen Excel\Tiedosto-osaan](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Lisätietoja kuvien ja muotojen upottamisesta on kohdassa [Kuvien ja muotojen up
 
 **Sivunvaihto**-osa pakottaa Excelin aloittamaan uuden sivun. Tämä osa ei ole pakollinen, jos haluat käyttää Excelin oletussivusta, mutta sitä kannattaa käyttää, jos haluat Excelin jäsentävän sivutuksen ER-muodon mukaisesti.
 
+## <a name="footer-component"></a>Alatunnistekomponentti
+
+**Alatunniste**-komponentin avulla täytetään Excel-työkirjassa luodun laskentataulukon alaosaan alatunniste.
+
+> [!NOTE]
+> Voit lisätä tämän komponentin jokaiselle **Laskentataulukko**-komponentille määrittääksesi eri alatunnisteet luodun Excel-työkirjan eri laskentataulukoille.
+
+Kun määrität yksittäisen **Alatunniste**-komponentin, voit **Otsikon/alatunnisteen ulkoasu** -ominaisuuden avulla määrittää sivut, joissa komponenttia käytetään. Käytettävissä ovat seuraavat arvot:
+
+- **Kaikki** – Suorita määritetty **Alatunniste**-komponentti kaikille Excel-päälaskentataulukon sivuille.
+- **Ensimmäinen** – Suorita määritetty **Alatunniste**-komponentti vain Excel-päälaskentataulukon ensimmäiselle sivulle.
+- **Parillinen** – Suorita määritetty **Alatunniste**-komponentti vain Excel-päälaskentataulukon parillisille sivuille.
+- **Pariton** – Suorita määritetty **Alatunniste**-komponentti vain Excel-päälaskentataulukon parittomille sivuille.
+
+Voit lisätä yksittäiselle **Laskentataulukko**-komponentille useita **alatunniste**-komponentteja, joilla kullakin on eri arvo **Otsikon/alatunnisteen ulkoasu** -ominaisuudelle. Näin voit luoda eri alatunnisteita Excel-laskentataulukon erityyppisille sivuille.
+
+> [!NOTE]
+> Varmista, että jokaiselle yksittäiselle **Laskentataulukko**-komponentille lisätylle **Alatunniste**-komponentilla on eri arvo **Otsikon/alatunnisteen ulkoasu** -ominaisuudelle. Muussa tapauksessa tapahtuu [oikeellisuustarkistusvirhe](er-components-inspections.md#i16). Näyttöön tulee virhesanoma, joka ilmoittaa epäyhtenäisyydestä.
+
+Lisää lisätyn **alatunniste**-komponentin kohdassa sisäkkäiset komponentit **Text\\String**, **Text\\DateTime** tai muu tyyppi. Määritä näiden komponenttien sidonnat ja määritä, miten sivun alatunniste täytetään.
+
+Erityisten [muotoilukoodien](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) avulla voit muotoilla luodun alatunnisteen sisällön oikein. Lisätietoja tämän menetelmän käytöstä on jäljempänä tässä ohjeaiheessa [esimerkin 1](#example-1) vaiheiden mukaisesti.
+
+> [!NOTE]
+> Kun määrität ER-muotoja, muista ottaa huomioon Excelin [rajoitus](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) ja yksittäisen ylä- tai alatunnisteen enimmäismerkkimäärä.
+
+## <a name="header-component"></a>Ylätunnistekomponentti
+
+**Ylätunniste**-komponentin avulla täytetään Excel-työkirjassa luodun laskentataulukon yläosaan ylätunniste. Sitä käytetään kuten **Alatunniste**-komponenttia.
+
 ## <a name="edit-an-added-er-format"></a>Lisätyn ER-muodon muokkaaminen
 
 ### <a name="update-a-template"></a>Mallin päivittäminen
@@ -175,6 +204,48 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
     >[!NOTE]
     > Kaavan uudelleenlaskenta pakotetaan manuaalisesti, kun luotu asiakirja avataan esikatselua varten Excelissä.
     > Älä käytä tätä vaihtoehtoa, jos määrität ER-kohteen, joka olettaa, että luotu tiedosto on käytössä ilman sen esikatselua Excelissä (PDF-muunnos, sähköpostin lähetys jne.) koska luotu tiedosto ei ehkä sisällä kaavoja sisältävien solujen arvoja.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Esimerkki 1: Alatunnisteen sisällön muotoileminen
+
+1. Käyttämällä ER-konfiguraatioita voit [luoda](er-generate-printable-fti-forms.md) tulostettavan vapaatekstilaskun (FTI) asiakirjan.
+2. Tarkista luodun tiedoston alatunniste. Huomaa, että sivu sisältää tietoja nykyisestä sivunumerosta ja asiakirjan sivujen kokonaismäärästä.
+
+    ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa](./media/er-fillable-excel-footer-1.gif)
+
+3. [Avaa](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ER-muodon suunnittelijassa tarkistettavaksi ER-esimerkkimuoto.
+
+    **Lasku**-laskentataulukon alatunniste luodaan kahden **Alatunniste**-komponentissa olevan **Merkkijono**-komponentin asetusten perusteella:
+
+    - Ensimmäinen **merkkijono**-osa täyttää seuraavat erityismuotoilukoodit, jotka pakottavat Excelin käyttämään tiettyjä muotoiluja:
+
+        - **&C** – Tasaa alatunnisteteksti keskelle.
+        - **&"Segoe UI,Regular"&8** – Esittää alatunnisteen tekstin "Segoe UI Regular" -fontilla, jonka koko on 8 pistettä.
+
+    - Toinen **merkkijono**-komponentti lisää tekstin, joka sisältää nykyisen sivunumeron ja nykyisen asiakirjan sivujen kokonaismäärän.
+
+    ![Alatunnisteen ER-muotokomponentin tarkistus Muodon suunnittelija -sivulla](./media/er-fillable-excel-footer-2.png)
+
+4. Muokkaa nykyisen sivun alatunnistetta mukauttamalla ER-esimerkkimuotoa:
+
+    1. [Luo](er-quick-start2-customize-report.md#DeriveProvidedFormat) johdettu **Vapaatekstilasku (Excel) mukautettu** ER-muoto, joka perustuu ER-esimerkkimuotoon.
+    2. Lisää **Lasku**-laskentataulukon **Alatunniste**-komponentin ensimmäiset uudet **merkkijono**-komponentit:
+
+        1. Lisää **merkkijono**-komponentti, joka tasaa yrityksen nimen vasemmalle ja esittää sen 8 pisteen "Segoe UI Regular" -fontilla (**"&L&"Segoe UI,Regular"&8"**).
+        2. Lisää **merkkijono**-komponentti, joka täyttää yrityksen nimen (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Lisää **Lasku**-laskentataulukon **Alatunniste**-komponentin toiset uudet **merkkijono**-komponentit:
+
+        1. Lisää **merkkijono**-komponentti, joka tasaa käsittelypäivämäärän oikealle ja esittää sen 8 pisteen "Segoe UI Regular" -fontilla (**"&R&"Segoe UI,Regular"&8"**).
+        2. Lisää **merkkijono**-komponentti, joka täyttää käsittelypäivämäärän mukautetussa muodossa (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![Alatunnisteen ER-muotokomponentin tarkistus Muodon suunnittelija -sivulla](./media/er-fillable-excel-footer-3.png)
+
+    4. [Viimeistele](er-quick-start2-customize-report.md#CompleteDerivedFormat) johdetun **Vapaatekstilasku (Excel) mukautettu** -ER-muodon luonnosversio.
+
+5. [Määritä](er-generate-printable-fti-forms.md#configure-print-management) tulostuksenhallinta käyttämään johdettua **Vapaatekstilasku (Excel) mukautettu** -ER-muotoa ER-esimerkkimuodon sijaan.
+6. Luo tulostettava FTI-tiedosto ja tarkista luodun tiedoston alatunniste.
+
+    ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

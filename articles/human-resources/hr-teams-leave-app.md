@@ -3,7 +3,7 @@ title: Loma- ja poissaolopyyntöjen hallinta Teamsissa
 description: Tässä ohjeaiheessa käsitellään poissaolopyyntöjä Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128158"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571725"
 ---
-# <a name="manage-leave-requests-in-teams"></a>Loma- ja poissaolopyyntöjen hallinta Teamsissa
+# <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksessa voi tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldon tietoja Microsoft Teamsissa. Voit käyttää bottia pyytääksesi tietoja ja aloittaaksesi lomapyynnön. **Poissaolo**-välilehdessä on lisätietoja. Voit myös lähettää ihmisille tietoja tulevista poissaoloista ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
+Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa voi tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldon tietoja Microsoft Teamsissa. Voit käyttää bottia pyytääksesi tietoja ja aloittaaksesi lomapyynnön. **Poissaolo**-välilehdessä on lisätietoja. Voit myös lähettää ihmisille tietoja tulevista poissaoloista Teamsissa ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
 
 ## <a name="install-the-app"></a>Sovelluksen asentaminen
 
-Human Resources -sovellus löytyy Teams-kaupasta.
+Löydät Dynamics 365 Human Resources -sovelluksen Teams-kaupasta.
 
 1. Valitse Microsoft Teamsissa kolme pistettä.
 
@@ -70,29 +70,21 @@ Kun sovellus on asennettu, näkyviin tuleva tervehdyssanoma ilmoittaa, minkälai
 
 Botilta voi pyytää seuraavia:
 
-- Jokaisen sellaisen poissaolotyypin poissaolosaldon tietojen näyttäminen, johon kysyjä on rekisteröity.
-
-   ![Human Resources Teamsin lomasovelluksen saldon näyttäminen](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Tietyn lomatyypin lisätietojen näyttäminen.
-
-   ![Human Resources Teamsin lomasovelluksen tietojen näyttäminen](./media/hr-teams-leave-app-bot-details.png)
-
 - Lomapyynnön käynnistäminen käyttäjän puolesta.
 
-   ![Human Resources Teamsin lomasovelluksen lomapyyntö](./media/hr-teams-leave-app-bot-request.png)
- 
-Kun olet jättänyt lomapyynnön, voit muuttaa päiviä kortin sisällä.
+  ![Lomapyynnön käynnistäminen Tiimit-keskustelussa](./media/hr-teams-leave-app-initiate.png)
 
-![Human Resources Teamsin lomasovelluksen muokkauspyyntö](./media/hr-teams-leave-app-bot-edit.png)
- 
-Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi valitsemalla **Lähetä**. Voit palata pyyntöön, jos valitset **Tallenna luonnoksena**.
+- Keskustelubotti täyttää lomapyynnön puolestasi. Valitse **Pyydä vapaata** ja muokkaa pyyntösi tietoja.
 
-![Human Resources Teamsin lomasovelluksen pyynnön lähetys](./media/hr-teams-leave-app-bot-submit.png)
+  ![Lomapyynnön tietojen muokkaaminen](./media/hr-teams-leave-app-details.png)
+
+- Kun olet muokannut lomapyyntösi tietoja, lähetä se hyväksyttäväksi valitsemalla **Lähetä**.
+
+  ![Lomapyynnön lähettäminen](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Lomien ja poissaolojen hallinta Teamsissa
 
-**Poissaolo**-välilehdessä voi tarkastella seuraavia:
+**Poissaolo**-välilehdessä voi tarkastella seuraavia: 
 
 - Jokaisen sellaisen poissaolotyypin poissaolosaldon tiedot, johon kysyjä on rekisteröity
 
@@ -164,21 +156,51 @@ Jos olet esimies, jolla on suoria alaisia, voit tarkastella ryhmän hyväksytty�
 
 1. Valitse Teamsin Human Resources -sovelluksessa **Poissaolo**.
 
-2. Valitse **Ryhmän kalenteri**.
+2. Valitse **Ryhmän kalenteri**. Kalenterissa näkyvät suorien alaisten hyväksytyt ja hyväksyntää odottavat poissaolot.
 
    ![Human Resourcesin Teams-sovelluksen tarkasteleminen](./media/hr-teams-leave-app-view-calendar.png)
 
-Kalenterissa näkyvät suorien alaisten hyväksytyt ja hyväksyntää odottavat poissaolot.
+   > [!NOTE]
+   > Jos et näe ryhmäkalenteria, pyydä järjestelmänvalvojaasi ottamaan se käyttöön. Lisätietoja on kohdassa [Asentaminen ja määrittäminen](hr-admin-teams-leave-app.md#install-and-setup).
 
-![Human Resourcesin Teams-sovelluksen poissaolokalenteri](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>Tuetut kielet
+
+Teamsin Dynamics 365 Human Resources -sovellus tukee seuraavia kieliä:
+
+| Kielialueen tunnus | Kieli |
+| --- | --- |
+| de-DE | saksa (Saksa) |
+| es-ES | espanja (Espanja) |
+| es-MX | espanja (Meksiko) |
+| fr-CA | ranska (Kanada) |
+| fr-FR | ranska (Ranska) |
+| it-IT | italia (Italia) |
+| nl-NL | hollanti (Alankomaat) |
+| pt-BR | portugali (Brasilia) |
+| tr-TR | turkki (Turkki) |
+| zh-CN | kiina (yksinkertaistettu) |
 
 ## <a name="troubleshooting"></a>Vianmääritys
 
-Jos sinulla on vaikeuksia Human Resources Teams -sovellukseen kirjautumisessa tai sen käyttämisessä, seuraavat vianmääritysohjeet voivat olla hyödyllisiä. Jos ongelmat jatkuvat vianmäärityksen jälkeen, ota yhteys tukeen. Lisätietoja on kohdassa [Pyydä tukea](hr-admin-troubleshooting-support.md).
+Jos sinulla on vaikeuksia Dynamics 365 Human Resources Teams -sovellukseen kirjautumisessa tai sen käyttämisessä, seuraavat vianmääritysohjeet voivat olla hyödyllisiä. Jos ongelmat jatkuvat vianmäärityksen jälkeen, ota yhteys tukeen. Lisätietoja on kohdassa [Pyydä tukea](hr-admin-troubleshooting-support.md).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kirjautuminen Human Resources -sovelluksen ei onnistu Teamsissa
 
 Jos et voi kirjautua sovellukseen, Microsoft Teamsiin kirjautumiseen käytettyä tiliä ei ehkä ole liitetty työntekijätietueeseen Dynamics 365 Human Resourcesissa. Ota yhteys järjestelmänvalvojaan ja varmista, että työntekijätietue on liitetty oikein.
+
+### <a name="translations-dont-display-correctly"></a>Käännökset eivät näy oikein
+
+Jos käännökset eivät näy odotetulla tavalla, varmista, että Teamsissa valitsemasi kieli vastaa Human Resources -sovelluksen **Käyttäjän asetukset** -osiossa valittua kieltä.
+
+Tarkasta Teamsissa **Sovelluksen kieli** -asetus **Asetukset**-osiosta.
+
+![Teams-asetukset](./media/hr-teams-leave-app-settings.png)
+
+Valitse Human Resources -sovelluksesta **Asetukset** ja sitten **Käyttäjän asetukset**. Varmista, että **Kieli**-kenttä vastaa Teamsin **Sovelluksen kieli** -kenttää.
+
+![Human Resources -sovelluksen Käyttäjän asetukset -osio](./media/hr-teams-leave-app-user-options.png)
+
+Jos sinulla edelleen ilmenee käännöksiin liittyviä ongelmia, kerro niistä meille. Lisätietoja on kohdassa [Tuen pyytäminen Finance and Operations -sovelluksia tai Lifecycle Services (LCS) -sovellusta varten](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Virhe hyväksyttäessä lomapyyntöjä Human Resources -sovelluksessa Teamsissa
 
@@ -198,7 +220,6 @@ Teamsin Human Resources -sovellus sisältää seuraavat käytettävyysongelmat. 
 | **Poissaolo**-välilehdessä VoiceOver-toiminto ilmoittaa painiketoiminnosta, kun poissaoloruudukon otsikkoa luetaan. | Ruudukon otsikko ja elementit ryhmitellään vuoden mukaan. Ne voidaan tiivistää. VoiceOver tulkitsee tämän toiminnalliseksi nimikkeeksi, vaikka näin ei ole. |
 | **Poissaolo**-välilehdessä on ylimääräinen sipaisuele siirryttäessä uuden pyynnön **Syykoodi**-kohtaan. | Piilotettua ohjausobjektia, jota sipaisulla siirtyminen yrittää käyttää, ei ole. |
 | Jos sipaiset **Poissaolo**-välilehdessä kalenterin ollessa auki, näkymä siirtyy ohjausobjektin ulkopuolelle uuden pyynnön yläosan tai pyynnön muokkauksen sijaan. | Kun käyttäjä on kohdassa **Siirry tähän päivään**, tätä pidetään ohjausobjektin päättymisenä. Näkymä siirtyy takaisin yläosaan sipaisemalla vastakkaiseen suuntaan. |
-| VoiceOver ei lue päivämäärien selitteitä. | Pareittain olevat päivämäärät ovat aina **alkamis**- ja **päättymispäivämäärä**. |
 | **Keskustelu**-välilehdessä kohdistus siirtyy takaisin alkuun, jossa syötettiin päivämäärä käyttöä helpottavan työkalun tai näppäimistön siirtymistoiminnon avulla. | Siirry käyttämällä sarkainta, kunnes olet jälleen syöttöalueella. |
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot

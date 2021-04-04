@@ -3,7 +3,7 @@ title: Sähköisen laskutuksen lisäosien hallintakomponentit
 description: Tässä ohjeaiheessa on tietoja sähköisen laskutuksen lisäosan hallintaan liittyvistä komponenteista.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104375"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592571"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>Sähköisen laskutuksen lisäosien hallintakomponentit
 
@@ -39,11 +39,15 @@ Microsoft Azuren avulla voit luoda avainsäilön ja tallennustilin salaisia kood
 
 Ota Microsoft DynamicsLifecycle Servicesin (LCS) avulla käyttöön lisäosa LCS-käyttöönottoprojektin mikropalveluille.
 
-Valitse LCS:ssä **Esiversio-ominaisuuden hallinta** -ruutu ja ota sitten **sähköisen laskutuksen palvelu** käyttöön.
+> [!NOTE]
+> Mikropalveluiden lisäosan asennus LCS:ssä edellyttää vähintään Tier 2 -virtuaalikoneen asentamista. Lisätietoja ympäristöjen suunnittelusta on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) on liittymä, jota käytetään sähköisen laskutuksen lisäosan määrittämisessä. Resursseja, kuten ympäristöjä ja sähköistä laskutusta, luodaan, ylläpidetään ja ylläpidetään RCS:ssä. Kun resurssit ovat valmiita, ne julkaistaan sähköisen laskutuksen lisäpalvelussa.
+
+Lisätietoja RCS-rekisteröitymisistä on kohdassa [Regulatory services](https://marketing.configure.global.dynamics.com/).
 
 Lisätietoja RCS:stä: [Regulatory Configuration Services (RCS) – globalisointitoiminnot](rcs-globalization-feature.md)
 
@@ -53,22 +57,14 @@ Ennen kuin sähköisten laskujen konfiguroinnissa voi käyttää RCS:ää, RCS o
 
 #### <a name="service-endpoint"></a>Palvelun päätepiste
 
-Sähköisen laskutuksen lisäosan päätepisteen URL-osoite voi vaihdella Azure-konesalin maantieteellisen sijainnin mukaan. Seuraavassa taulukossa luetellaan käytettävyys alueittain:
+Sähköisen laskutuksen lisäosa on käytössä useilla Azure-palvelinkeskusten maantieteellisillä alueilla. Seuraavassa taulukossa luetellaan käytettävyys alueittain.
 
-| Azure-konesalin alue | Palvelun päätepisteen URL-osoite                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| Itä-Yhdysvallat                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| Länsi-Yhdysvallat                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| Pohjois-EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| Länsi-EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>Sovelluksen tunnus
-
-Sovellustunnus on sähköisen laskutuksen lisäosasovelluksen tunnus. Tässä tapauksessa arvo on kiinteä: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### <a name="lcs-environment-id"></a>LCS-ympäristön tunnus
-
-LCS-ympäristötunnus on organisaation LCS-ylläpitosopimuksen tunnus.
+| Azure-konesalin alue |
+|----------------------------|
+| Itä-Yhdysvallat                    |
+| Länsi-Yhdysvallat                    |
+| Pohjois-EU                   |
+| Länsi-EU                    |
 
 ### <a name="service-environments"></a>Palveluympäristöt
 

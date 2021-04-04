@@ -3,10 +3,9 @@ title: Osoitekirjat – usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on vastauksia osoitekirjoihin liittyviin usein kysyttyihin kysymyksiin.
 author: msftbrking
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +16,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ad2be27d406928222ca00fe696f49b8578fc8cb3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796895"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559938"
 ---
 # <a name="address-books-faq"></a>Osoitekirjat – usein kysytyt kysymykset
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Miten tietueiden kaksoiskappaleita etsitään?
 
@@ -68,5 +68,10 @@ Voit määrittää osapuolitietueet joko yleisessä osoitekirjassa tai soveltuva
 
 Voit määrittää osoitetietojen käännökset, jotta tiedot näkyvät käyttäjän kielellä (järjestelmän kieli) ohjelmassasi, mutta toisella kielellä asiakirjoissa, kuten myyntitilauksissa. Voit antaa maiden tai alueiden nimien, osoitekohteiden ja nimijaksojen käännökset. Jos järjestelmän kieli on esimerkiksi tanska, voit luoda myyntitilauksen ranskalaiselle asiakkaalle. Tässä tapauksessa voit tarkastella ongelmassa tanskankielistä asiakastietuetta, mutta osoitetiedot näkyvät tulostetussa myyntitilauksessa ranskaksi. Anna käännöksiä määritettäessä käännös luettelon jokaiselle nimikkeelle. Nimikkeet, joille ei annetta käännöstä, näkyvät järjestelmän kielellä. Jos järjestelmän kieli on esimerkiksi tanska, voit lähettää asiakirjan espanjalaiselle asiakkaalle. Jos et ole antanut osoitetietojen espanjankielisiä (ESP) käännöksiä, kyseiset tiedot näkyvät tanskaksi sekä ohjelmassa että tulostetussa asiakirjassa.
 
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Kun osoitteet on tuotu ja kun yritän käyttää tietueita, miksi tuotuja osoitteita ei voi muokata?
+
+Osoitteita tuotaessa on kenttä, jonka nimi on **IsLocationOwner**. Tämä kenttä ilmaisee, onko sijaintiin (osoite) liittyvä osapuoli osoitteen omistaja. Jos osapuoli on osoitteen omistaja, osoitetta voidaan muokata, kun sitä käytetään osapuolen avulla yleisessä osoitekirjasssa tai päätietueen lomakkeessa (kuten asiakas, toimittaja tai työntekijä). Jos osapuoli ei ole osoitteen omistaja, tietuetta ei voi muokata aiemmin luetelluista lomakkeista. Osoitteita tuotaessa **IsLocationOwner**-arvoksi tulee määrittää **Kyllä**, jos haluat, että osoitetta voi muokata liittyvän osapuolen avulla. Tämän kenttä tuodaan kuitenkin joskus virheellisesti. Voit korjata tämän ongelman päivittämällä sijainnin omistajan yleisen osoitekirjan osapuolen tietueesta tai **Vahvista sijainnin omistajat** -sivulta. Voit päivittää yksittäisen osapuolen tietueen valitsemalla **Yleinen osoitekirja > Osoite**. Valitse **Muokkaa** käynnistääksesi **Muokkaa osoitetta** -sivun, jos haluat muuttaa sijainnin omistajaa. Valitsemalla **Muuta sijainnin omistajaa** näet sijainnin edellisen omistajan ja valittuna olevan osapuolen uutena sijainnin omistajana. Jos edellinen sijainnin omistaja on tyhjä, sijainnin omistajaa ei ole perustettu. Valitsemalla **Lisäasetukset** avaat **Osoitteiden hallinta** -sivun, jossa sijainnin omistaja voidaan myös määrittää. Valitse päivitettävä sijainti ja valitse sitten valikosta **Määritä sijainnin omistaja**. Voit päivittää sijainnin omistajan useille tietueille valitsemalla **Yleinen osoitekirja > Sijainnit > Vahvista sijainnin omistajat**. Luettelossa on sijainnit, jotka on linkitetty yhteen osapuoleen, mutta joissa kyseinen osapuoli ei ole omistaja. Jos valitset **Vahvista omistaja**, **Ehdotetun omistavan osapuolen tunnus** -arvoksi määritetään linkitetyn osoitteen omistaja. Kun osapuoli on määritetty omistajaksi, linkitettyä osoitetta voi muokata osapuolen tietueesta. Jotta sijainnin omistajaa voisi muuttaa, sinulle on määritettävä **Määritä sijainnin omistaja** -oikeus **Suojausmääritys**-sivulla.  Tämä oikeus myönnetään oletusarvon mukaan järjestelmänvalvojalle.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

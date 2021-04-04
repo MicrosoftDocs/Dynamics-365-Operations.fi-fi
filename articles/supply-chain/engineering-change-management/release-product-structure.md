@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967228"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580912"
 ---
 # <a name="release-product-structures"></a>Tuoterakenteiden vapauttaminen
 
@@ -76,8 +76,6 @@ Esimerkki tuotteen hyväksymisestä on kohdassa [Tuotteen tarkistaminen ja hyvä
 ## <a name="release-policies"></a>Vapautuskäytännöt
 
 Kaikki operatiiviset yritykset eivät tarvitse samoja tuotetietoja. Yleisesti ottaen suunnittelutuotteita valmistavat operatiiviset yritykset tarvitsevat tuoterakenteen, kun taas suunnittelutuotteita ainoastaan myyvät operatiiviset yritykset eivät tarvitse tuoterakennetta. Voit muodostaa vapautuskäytäntöjen avulla parametreja, joita käytetään tuotteiden vapauttamisessa.
-
-Suunnittelutuotteiden vapautuskäytäntö määritetään suunnittelun tuoteluokassa, ja kenttä on pakollinen. Vakiotuotteiden osalta käytäntö määritetään jaettuun tuotteeseen, ja kenttä on valinnainen.
 
 Lisätietoja suunnittelun tuoteluokista on kohdassa [Suunnitteluversiot ja suunnittelun tuoteluokat](engineering-versions-product-category.md).
 

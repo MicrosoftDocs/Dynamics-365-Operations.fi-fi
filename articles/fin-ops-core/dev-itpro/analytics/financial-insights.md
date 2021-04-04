@@ -1,12 +1,11 @@
 ---
-title: Taloushallinnon tiedot
-description: Taloushallinnon tiedot kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä.
+title: Talousanalyysi
+description: Talousanalyysi kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätökset.
 author: kweekley
 manager: AnnBe
 ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,20 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
+ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115725"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5572363"
 ---
-# <a name="financial-insights"></a>Taloushallinnon tiedot
+# <a name="financial-analysis"></a>Talousanalyysi
 
 [!include [banner](../includes/banner.md)]
 
-**Taloushallinnon tiedot** kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä. Power BI on upotettu sovellukseen. **Taloushallinnon tiedoissa** keskitytään on analyyttiseen raportointiin. Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia. 
+**Talousanalyysi** kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätökset. Power BI on upotettu sovellukseen. **Talousanalyysi** keskittyy analyyttiseen raportointiin. Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia. 
 
-**Taloushallinnon tiedot** yhdistää kirjanpidon ja alareskontran tiedot ja tuottaa niiden avulla kattavan kuvan organisaation taloudellisesta tilasta.
+**Talousanalyysi** yhdistää kirjanpidon ja alareskontran tiedot ja tuottaa niiden avulla kattavan kuvan organisaation taloudellisesta tilasta.
 
 > [!NOTE]
 > Tässä asiakirjassa käytetään seuraavia Power BI -termejä:
@@ -38,14 +37,14 @@ ms.locfileid: "5115725"
 > - **Sivu** – Yhden välilehden sisältävä .pbix-tiedosto. Kullakin sivulla voi olla useita visualisointeja.
 > - **Visualisointi** – Yksi tietolähde, kuten kortti, tunnusluku, kaavio, taulukko tai raportti. Jos sivulla oleva visualisointi on raportti, siinä ei voi olla muita visualisointeja raportoitavien tietojen koon vuoksi.
 
-Tällä hetkellä **taloushallinnon tiedoissa** voi katsella aktiivisen yrityksen ja kaikkien yritysten tietoja. Tulevissa versioissa työtila kehittyy paikaksi, jossa voit muokata ja luoda visualisointeja Power BI:n avulla.
+Tällä hetkellä **talousanalyysissa** voi katsella aktiivisen yrityksen ja kaikkien yritysten tietoja. Tulevissa versioissa työtila kehittyy paikaksi, jossa voit muokata ja luoda visualisointeja Power BI:n avulla.
 
-Vaikka **Talousjohtajan yhteenveto** -työtilassa on samat visualisoinnit **taloushallinnon tiedoissa**, se keskittyy ennen kaikkea aiemmin luotujen tietojen tarkasteluun ja suodattamiseen. Tulevissa versioissa voit lisätä uusia visualisointeja **Taloushallinnon tiedot** -työtilaan. Uudet visualisointeja on ehkä mahdollista käyttää myös muissa työtiloissa, jotka keskittyvät toisiin rooleihin, kuten projekti- tai ostoreskontrapäälliköihin. **Talousjohtajan yhteenveto** -työtilassa on jatkossakin näkyvissä kaikkien yritysten tiedot riippumatta siitä, minkä yrityksen käyttöoikeudet roolilla on.
+Vaikka **Talousjohtajan yhteenveto** -työtilassa on samat visualisoinnit **talousanalyysissa**, se keskittyy ennen kaikkea aiemmin luotujen tietojen tarkasteluun ja suodattamiseen. Tulevissa versioissa voit lisätä uusia visualisointeja **Talousanalyysi** -työtilaan. Uudet visualisointeja on ehkä mahdollista käyttää myös muissa työtiloissa, jotka keskittyvät toisiin rooleihin, kuten projekti- tai ostoreskontrapäälliköihin. **Talousjohtajan yhteenveto** -työtilassa on jatkossakin näkyvissä kaikkien yritysten tiedot riippumatta siitä, minkä yrityksen käyttöoikeudet roolilla on.
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance -asetukset
 **Kirjanpito**
 
-Päätilityypin ja päätililuokkien avulla täytetään **taloushallinnon tietojen** **Tase**-raportin ja erilaisten **Tuloslaskelma**-raporttien oletuspäätilit.
+Päätilityypin ja päätililuokkien avulla täytetään **talousanalyysin** **Tase**-raportin ja erilaisten **Tuloslaskelma**-raporttien oletuspäätilit.
 
 Sinun on määritettävä **Päätilit**-sivulla päätili, jotta siihen voidaan määrittää jokin seuraavista tyypeistä:
 
@@ -57,14 +56,14 @@ Sinun on määritettävä **Päätilit**-sivulla päätili, jotta siihen voidaan
 
 Älä määritä päätileille mitään muuta päätilin tyyppiä, kuten **Tase** tai **Voitto ja tappio**. Raportit eivät voi määrittää päätilin tyyppiä, kun muita päätilityyppejä on määritetty, sillä ne eivät ole riittävän yksityiskohtaisia. Päätilin tyyppi on määritettävä näyttämään velat ja tuotto raporteissa positiivisina summina.
 
-Jokaiselle päätilille on määritettävä päätililuokka, sillä muuten ne eivät näy tilinpäätöksissä eivätkä sisälly muihin visualisointeihin, kuten tunnuslukuihin. Päätililuokkia on parannettu siten, että sisältävät näyttöjärjestyksen. Näyttöjärjestystä käytetään nimenomaisesti **taloushallinnon tietojen** raporteissa. Kun olet muokannut päätilin luokkaa tai lisännyt uuden luokat, voit muuttaa **Näyttöjärjestys**-arvon määrittämään järjestyksessä, jossa päätilin luokat näytetään raportissa. Jos useiden päätilin luokkien näyttöjärjestystä on muutettava, Avaa Excelissä -toiminto nopeuttaa muokkausta ja muutosten julkaisemista takaisin sovellukseen.
+Jokaiselle päätilille on määritettävä päätililuokka, sillä muuten ne eivät näy tilinpäätöksissä eivätkä sisälly muihin visualisointeihin, kuten tunnuslukuihin. Päätililuokkia on parannettu siten, että sisältävät näyttöjärjestyksen. Näyttöjärjestystä käytetään nimenomaisesti **talousanalyysin** raporteissa. Kun olet muokannut päätilin luokkaa tai lisännyt uuden luokat, voit muuttaa **Näyttöjärjestys**-arvon määrittämään järjestyksessä, jossa päätilin luokat näytetään raportissa. Jos useiden päätilin luokkien näyttöjärjestystä on muutettava, Avaa Excelissä -toiminto nopeuttaa muokkausta ja muutosten julkaisemista takaisin sovellukseen.
 
 ## <a name="entity-store"></a>Yksikkösäilö
-**Taloushallinnon tiedoissa** olevat tiedot noudetaan yksikkösäilöstä (**Järjestelmänvalvoja** \> **Asetukset** \> **Yksikkösäilö**). Jos avaat **Talousjohtajan yhteenveto**- tai **Taloushallinnon tiedot** -työtilan ja seuraava varoitussanoma avautuu visualisoinneissa, yksiköt on päivitettävä.
+**Talousanalyysissa** olevat tiedot noudetaan yksikkösäilöstä (**Järjestelmänvalvoja** \> **Asetukset** \> **Yksikkösäilö**). Jos avaat **Talousjohtajan yhteenveto**- tai **Talousanalyysi** -työtilan ja seuraava varoitussanoma avautuu visualisoinneissa, yksiköt on päivitettävä.
 
 ![Varoitus](./media/Cantdisplay.png)
 
-Seuraavat yksiköt on päivitettävä, jos haluat nähdä **Taloushallinnon tiedot**- ja **Talousjohtajan yhteenveto** -työtilojen tiedot:
+Seuraavat yksiköt on päivitettävä, jos haluat nähdä **Talousanalyysi** -työtilojen tiedot:
 
 - BudgetActivityMeasure
 - Taloushallinnon raportoinnin tapahtumatietojen versio 3 
@@ -74,8 +73,6 @@ Seuraavat yksiköt on päivitettävä, jos haluat nähdä **Taloushallinnon tied
 - Ostokuutio
 - Myyntikuutio
 
-Edellisessä versiossa LedgerActivityMeasure- ja VendPaymentBIMeasure-yksiköitä käytettiin **Talousjohtajan yhteenveto** -työtilan tiedoille. Niitä ei kuitenkaan enää käytetä nykyisessä versiossa.
-
 Voit määrittää toistuvan erätyön päivittämään yksiköiden tiedot säännöllisesti. Koska jokainen yksikkö muodostetaan kokonaan uudelleen päivityksen aikana, valitse yksikköpäivitysten ajankohta tai tiheys huolellisesti. Ensisijainen tilinpäätöksissä käytettävä yksikkö on FinancialReportingTransactionData. Voitkin harkita sen päivittämistä muita useammin.
 
 ## <a name="security"></a>Suojaus
@@ -83,22 +80,21 @@ Upotettujen Power BI -raporttien tietoja ei voi tällä hetkellä rajoittaa niih
 
 | Tulli                                    | Roolit | kuvaus |
 |-----------------------------------------|-------|------------|
-| Näytä talousjohtajan yhteenvedon työtila             | Talousjohtaja | Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta. |
-| Näytä nykyisen yrityksen taloushallinnon tiedot | <ul><li>Kirjanpitäjä</li><li>Laskentapäällikkö</li><li>Taloushallintopäällikkö</li><li>Tilintarkastaja</li><li>Budjettipäällikkö</li><li>Pääjohtaja</li><li>Talousjohtaja</li><li>Laskentatoimen controller</li></ul> | Tämä velvollisuus antaa Taloushallinnon tiedot -työtilan käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Et voi lisätä muita yrityksiä. |
-| Näytä yritystenväliset taloushallinnon tiedot   | Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin. Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin. | Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta. |
+| Näytä nykyisen yrityksen talousanalyysi | <ul><li>Kirjanpitäjä</li><li>Laskentapäällikkö</li><li>Taloushallintopäällikkö</li><li>Tilintarkastaja</li><li>Budjettipäällikkö</li><li>Pääjohtaja</li><li>Talousjohtaja</li><li>Laskentatoimen controller</li></ul> | Tämä velvollisuus antaa Talousanalyysi -työtilan käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Et voi lisätä muita yrityksiä. |
+| Näytä kaikkien yritysten talousanalyysi   | Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin. Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin. | Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta. |
 
 
-## <a name="financial-reporting-vs-financial-insights"></a>Financial reporting vs. Financial insights
-Vaikka **Taloushallinnon tiedot** sisältää tilinpäätöksiä, se ei korvaa sovelluksen taloushallinnon raportointia. **Taloushallinnon tietojen** oletustilinpäätökset ovat laajuudeltaan rajoitettuja eivätkä ne sisällä kaiken tyyppisiä tilinpäätöksiä. Taloushallinnon raportointi on edelleen ensisijainen työkalu lakisääteisten tilinpäätösten suunnitteluun, luontiin ja muodostamiseen.
+## <a name="financial-reporting-vs-financial-analysis"></a>Financial Reporting vs. Talousanalyysi
+Vaikka **Talousanalyysi** sisältää tilinpäätöksiä, se ei korvaa sovelluksen taloushallinnon raportointia. **Talousanalyysin** oletustilinpäätökset ovat laajuudeltaan rajoitettuja eivätkä ne sisällä kaiken tyyppisiä tilinpäätöksiä. Taloushallinnon raportointi on edelleen ensisijainen työkalu lakisääteisten tilinpäätösten suunnitteluun, luontiin ja muodostamiseen.
 
 Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:
 
 
-|                                                          | Taloushallinnon raportointi                                               | Taloushallinnon tiedot |
+|                                                          | Financial Reporting                                               | Talousanalyysi |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Muokkaa oletusraportteja**                                 | Kyllä                                                               | En |
-| **Luo uusia raportteja**                                   | Kyllä                                                               | En |
-| **Raporttien tulostaminen**                                        | Kyllä                                                               | En |
+| **Muokkaa oletusraportteja**                                 | Kyllä                                                               | Nro |
+| **Luo uusia raportteja**                                   | Kyllä                                                               | Nro |
+| **Tulosta raportit**                                        | Kyllä                                                               | En |
 | **Vie Exceliin**                                      | Kyllä                                                               | Rajoitettu raakatietojen vienti Exceliin, muotoilematon raportti |
 | **Raportointihierarkian/organisaatiohierarkian tuki**   | Kyllä                                                               | En |
 | **Alareskontran tietojen raportti**                             | Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen                              | Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne. |
@@ -108,7 +104,7 @@ Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:
 | **Ulkoisten tietojen raportti**                              | En                                                                | En |
 | **Konsolidointien tuki**                               | Kyllä                                                               | Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö |
 
-Alkuperäisen **Talousjohtajan yhteenveto** -työtilan käyttöliittymän lisäksi uudet tunnusluvut, kaaviot ja tilinpäätökset ovat käytettävissä Seuraavat tilinpäätökset ovat käytettävissä:
+Seuraavat tilinpäätökset ovat käytettävissä:
 
 - Pääkirja
 - Tase
@@ -121,7 +117,7 @@ Alkuperäisen **Talousjohtajan yhteenveto** -työtilan käyttöliittymän lisäk
 - Asiakaskohtainen myynti
 
 ## <a name="edit-visuals"></a>Visualisointien muokkaus
-**Taloushallinnon tietojen** ensimmäisessä versiossa visualisointeja ei voitu muokata. Tulevissa versioissa käyttäjät, joilla on soveltuvat käyttöoikeudet, voivat luoda uusia visualisointeja, kopioida aiemmin luotuja visualisointeja ja muokata visualisointeja. Vaikka raportit sisältävät .pbix-tiedostot ovat käytettävissä resursseina, oletusraporttien muokkaamista ei suositella. Lisämuutoksia tehdään tilinpäätösten luonnissa käytettävään tietomalliin, oletusraportteihin ja mukautettuun raportin visualisointiin. Jotta voisit käyttää hyväksesi seuraavan version uusia ominaisuuksia ja tietomallissa tehtyjä muutoksia, sinun olisikin tehtävä uudelleen kaikki oletusmalleihin Microsoft Power BI Desktopissa tekemäsi muutokset.
+**Talousanalyysin** edellisissä versioissa visualisointeja ei voitu muokata. Tulevissa versioissa käyttäjät, joilla on soveltuvat käyttöoikeudet, voivat luoda uusia visualisointeja, kopioida aiemmin luotuja visualisointeja ja muokata visualisointeja. Vaikka raportit sisältävät .pbix-tiedostot ovat käytettävissä resursseina, oletusraporttien muokkaamista ei suositella. Lisämuutoksia tehdään tilinpäätösten luonnissa käytettävään tietomalliin, oletusraportteihin ja mukautettuun raportin visualisointiin. Jotta voisit käyttää hyväksesi seuraavan version uusia ominaisuuksia ja tietomallissa tehtyjä muutoksia, sinun olisikin tehtävä uudelleen kaikki oletusmalleihin Microsoft Power BI Desktopissa tekemäsi muutokset.
 
 ## <a name="filtering"></a>Suodatus
 Käyttäjät voivat suodattaa raportin vasemmalla olevan **Suodatus**-ruudun avulla. Tätä samaa ruutua voi käyttää myös Power BI Desktopista. Suodatustasoja on useita, eivätkä kaikki ole välttämättä käytettävissä sen mukaan, mitä valintoja olet tehnyt sivulla (välilehdessä), tai oletko käyttämässä porautumistoimintoja:
@@ -168,7 +164,7 @@ Seuraavia dimensioita käytetään oletusraporteissa. Mikään niistä ei ole ta
 - Paikkakunta
 
 > [!IMPORTANT] 
-> Jos teet useiden toimittajien tai asiakkaiden yhteenvedon yhteen tositteeseen talouskirjauskansioiden avulla, tiedot eivät ole oikein. Raportointi ei voi määrittää, mikä toimittaja vai asiakas liittyy tiettyyn kirjauskansioviennin kirjanpitotiliin, koska kyseistä tietoa ei ole missään. Tämän vuoksi useiden toimittajien, asiakkaiden, käyttöomaisuuden tai projektien tietojen kirjaamista yhteen tositteeseen ei suositella.
+> Jos teet useiden toimittajien tai asiakkaiden yhteenvedon yhteen tositteeseen talouskirjauskansioiden avulla, tiedot eivät ole oikein. Raportointiprosessi ei voi määrittää, mikä toimittaja vai asiakas liittyy tiettyyn kirjauskansioviennin kirjanpitotiliin, koska kyseistä tietoa ei ole missään. Tämän vuoksi useiden toimittajien, asiakkaiden, käyttöomaisuuden tai projektien tietojen kirjaamista yhteen tositteeseen ei suositella.
 
 ## <a name="drill-on-data"></a>Tietoihin porautuminen
 
@@ -243,7 +239,7 @@ Power BI:ssä ei ole tyhjien rivien piilottamis- ja näyttämisasetusta. Jos riv
 
 ## <a name="additional-resources-for-power-bi"></a>Power BI:n lisäresurssit
 
-Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa käyttöön upotettuja raportteja tuotantoympäristön **Talousjohtajan yhteenveto**- tai **Taloushallinnon tiedot** -työtilassa. Niistä on kuitenkin hyötyä kehityskehyksissä ja tilanteissa, joissa halutaan upottaa omia Power BI -raportteja.
+Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa käyttöön upotettuja raportteja tuotantoympäristön **Talousanalyysi** -työtilassa. Niistä on kuitenkin hyötyä kehityskehyksissä ja tilanteissa, joissa halutaan upottaa omia Power BI -raportteja.
 
 - [Analyyttisten työtilojen ja raporttien käyttäminen 1-Box-ympäristössä](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 

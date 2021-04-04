@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104937"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580962"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -85,7 +85,14 @@ Keskus omistaa seuraavat tiedot:
 > [!NOTE]
 > Saapuva ostotilaustyönkulku poikkeaa käsitteellisesti lähtevästä työnkulusta. Samaa varastoa voi käyttää joko scale unitin tai keskuksen kautta sen mukaan, onko ostotilaus vapautettu varastoon vai ei. Kun tilaus on vapautettu varastoon, tilausta voi käsitellä vain scale unitiin kirjautuneena.
 
-Jos käytössä on *varastoon vapautuksen* prosessi, [*varastotilaukset*](cloud-edge-warehouse-order.md) luodaan ja liittyvän vastaanoton työnkulun omistus määritetään scale unitille. Keskus ei voi rekisteröidä saapuvaa vastaanottoa.
+Jos käytät *Vapauta varastoon* -prosessia, [*varastotilaukset*](cloud-edge-warehouse-order.md) luodaan ja asiaankuuluvan vastaanottokulun omistus kohdistetaan scale unitille. Keskus ei voi rekisteröidä saapuvaa vastaanottoa.
+
+Sinun täytyy kirjautua keskukseen käyttääksesi *Vapauta varastoon* -prosessia. Voit suorittaa tai ajoittaa sen seuraavilta sivuilta:
+
+- **Hankinta > Ostotilaukset > Kaikki ostotilaukset > Varasto > Toiminnot > Vapauta varastoon**
+- **Varastonhallinta > Vapauta varastoon > Ostotilausten automaattinen vapautus**
+
+Kun käytät **Ostotilausten automaattinen vapautus** -prosessia, voit valita haluamasi ostotilausrivit kyselyn perusteella. Tyypillinen tilanne on määrittää toistuva erätyö, joka vapauttaa kaikki vahvistetut ostotilausrivit, joiden odotetaan saapuvan seuraavana päivänä.
 
 Työntekijä voi suorittaa vastaanottoprosessin käyttämällä scale unitiin yhdistettyä varastosovellusta. Tiedot kirjataan sitten scale unitin mukaan ja raportoidaan saapuvan varastotilauksen perusteella. Scale unit käsittelee myös myöhemmin tehtävän hyllytyksen luonnin ja käsittelyn.
 
@@ -222,7 +229,7 @@ Seuraava taulukko sisältää tuetut saapuvien toiminnot ja missä näitä toimi
 | Siirtotilausrivin vastaanotto ja poispano                        | Kyllä | Nro |
 | Työn peruuttaminen (saapuva)                                              | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, mutta vain silloin kun <b>Poista vastaanoton rekisteröinti, kun työ peruutetaan</b> -asetuksen (<b>Varastonhallinnan parametrit</b> -sivulla) valinta on tyhjennetty</p> |
 | Ostotilauksen tuotteen vastaanoton käsittely                          | Kyllä | Nro |
-| Alitoimituksen sisältävän ostotilauksen vastaanotto                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei, koska vain täydet varastotilausrivin määrät voidaan peruuttaa |
+| Alitoimituksen sisältävän ostotilauksen vastaanotto                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä, mutta vain tekemällä peruutuspyyntö keskuksesta |
 | Ylitoimituksen sisältävän ostotilauksen vastaanotto                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä  |
 | *Cross docking* -työn luonnin sisältävä vastaanotto                   | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
 | *Laatutilaus*-työn luonnin sisältävä vastaanotto                  | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |

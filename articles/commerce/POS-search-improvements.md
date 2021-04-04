@@ -1,9 +1,9 @@
 ---
 title: Ttuote- ja asiakashaku myyntipisteessä (POS)
-description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Commercein tuote- ja asiakashakuihin.
+description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Commercen tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 23b556e72e1ec76be48336bed21d02abd9d31087
+ms.sourcegitcommit: db9b35ce6968cad8874b3c13d4c02d84e2617c8b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965275"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5574716"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -42,18 +42,15 @@ Työntekijät voivat valita minkä tahansa myymälän tai hakea tuotteita kaikis
 
 Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 
-- Tuotenumero
+- Tuotetunnus
 - Tuotteen nimi
 - kuvaus
 - Dimensiot
 - Viivakoodi
-- Hakunimi
+- Hae nimellä
 
-### <a name="enhancements-to-local-product-searches"></a>Paikallisten tuotehakujen parannukset
+### <a name="additional-local-product-search-capabilities"></a>Paikalliset tuotteiden lisähakutoiminnot
 
-Paikallisista tuotehaut ovat nyt käyttäjäystävällisempiä. Niihin on tehty seuraavat parannukset:
-
-- Avattavat tuote- ja asiakasvalikot on lisätty hakukenttään, jotta työntekijät voivat valita joko **tuotteen** tai **asiakkaan** ennen hakua. Oletusarvon mukaan **tuote** on valittuna seuraavan kuvan mukaisesti.
 - Useita sanoja käytettäessä (eli hakuehtoja käytettäessä) jälleenmyyjät voivat määrittää, sisältyykö hakutuloksiin kohteita, jotka vastaavat *mitä tahansa* hakuehtoja vai kohteita, jotka vastaavat *kaikkia* hakuehtoja. Tämän toiminnon asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Oletusarvo on **Kohdista mikä tahansa hakusana**. Tämä asetus on suositeltu asetus. **Kohdista mikä tahansa hakusana**-asetusta käytettäessä tulokseksi palautetaan kaikki tuotteet, jotka vastaavat osittain tai kokonaan vähintään yhtä hakuehtoa. Nämä tulokset järjestetään automaattisesti nousevaan järjestykseen siten, että tuotteet, jotka vastaavat parhaiten avainsanoja (kokonaan tai osittain), ovat ensimmäisenä.
 
     **Kohdista kaikki hakusanat** -asetus palauttaa vain tuotteita, jotka vastaavat kaikkia hakusanoja (kokonaan tai osittain). Tästä asetuksesta on hyötyä, kun tuotenimet ovat pitkiä ja työntekijät haluavat rajoitetumman joukon hakutuloksia. Näillä hauilla on kuitenkin kaksi rajoituista:
@@ -61,7 +58,7 @@ Paikallisista tuotehaut ovat nyt käyttäjäystävällisempiä. Niihin on tehty 
     - Haku tehdään yksittäisiin tuoteominaisuuksiin. Haku palauttaa esimerkiksi vain tuotteita, jolla on vähintään yksi tuoteominaisuus, joka sisältää kaikki hakusanat.
     - Haku ei koske dimensioita.
 
-- Vähittäismyyjät voivat nyt määrittää tuotehaun näyttämään hakuehdotuksia käyttäjien kirjoittaessa tuotenimiä. Tämän toiminnon uusi asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Asetuksen nimi on **Näytä hakuehdotukset kirjoittamisen aikana**. Työntekijät voivat käyttää tätä toimintoa löytämään etsimänsä tuotteet nopeasti, koska koko tuotenimeä ei tarvitse kirjoittaa.
+- Vähittäismyyjät voivat määrittää tuotehaun näyttämään hakuehdotuksia käyttäjien kirjoittaessa tuotenimiä. Tämän toiminnon uusi asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Asetuksen nimi on **Näytä hakuehdotukset kirjoittamisen aikana**. Työntekijät voivat käyttää tätä toimintoa löytämään etsimänsä tuotteet nopeasti, koska koko tuotenimeä ei tarvitse kirjoittaa.
 - Tuotehaun algoritmi etsii hakusanoja nyt myös tuotteen **Hakunimi**-ominaisuudesta.
 
 ![Tuote-ehdotukset](./media/Productsuggestions.png "Tuote-ehdotukset")
@@ -86,13 +83,13 @@ Työntekijät voivat suorittaa yleisen haun valitsemalla **Suodata tuloksia** -p
 > [!NOTE]
 > Asiakkaan etähaun hakusanan on oltava vähintään neljä merkkiä pitkä, jotta järjestelmä näyttää tuloksia.
 
-Asiakkaan etähauissa ei näytetä muiden yritysten asiakkaiden asiakastunnusta, koska näillä asiakkailla ei ole asiakastunnusta nykyisessä yrityksessä. Jos työntekijä kuitenkin avaa asiakkaan tietosivun, järjestelmä luo automaattisesti osapuolelle asiakastunnuksen ja liittää myymälän osoitekirjan asiakkaaseen. Tällöin asiakas näkyy myöhemmin tehtävissä paikallisissa hauissa.
+Tuloksissa ei näytetä muiden yritysten asiakkaiden asiakastunnusta, koska näillä asiakkailla ei ole asiakastunnusta nykyisessä yrityksessä. Jos työntekijä kuitenkin avaa asiakkaan tietosivun, järjestelmä luo automaattisesti osapuolelle asiakastunnuksen ja liittää myymälän osoitekirjan asiakkaaseen. Tällöin asiakas näkyy myöhemmin tehtävissä paikallisissa hauissa.
 
 ![Globaali asiakashaku](./media/Globalcustomersearch.png "Globaali asiakashaku")
 
-### <a name="enhancements-to-local-customer-search"></a>Paikallisten asiakashakujen parannukset
+### <a name="additional-local-customer-search-capabilities"></a>Paikalliset asiakkaiden lisähakutoiminnot
 
-Puhelinnumeroon perustuvia hakuja on yksinkertaistettu. Nämä haut ohittavat nyt erikoismerkit, kuten välilyönnit, tavuviivat ja sulkeet, jotka on mahdollisesti lisätty asiakasta luotaessa. Kassan ei tämän vuoksi tarvitse välittää puhelinnumeron muodosta hakujen yhteydessä. Jos esimerkiksi asiakkaan puhelinnumeroksi on tallennettu **123-456-7890**, kassa voi etsiä asiakkaan kirjoittamalla **1234567890**. Haun voi tehdä myös kirjoittamalla puhelinnumeron muutaman ensimmäisen numeron.
+Kun käyttäjä hakee puhelinnumeroa, järjestelmä ohittaa erikoismerkit (kuten välilyönnit, tavuviivat ja sulkeet) jotka on mahdollisesti lisätty asiakasta luotaessa. Kassan ei tämän vuoksi tarvitse välittää puhelinnumeron muodosta hakujen yhteydessä. Jos esimerkiksi asiakkaan puhelinnumeroksi on tallennettu **123-456-7890**, kassa voi etsiä asiakkaan kirjoittamalla **1234567890**. Haun voi tehdä myös kirjoittamalla puhelinnumeron muutaman ensimmäisen numeron.
 
 > [!NOTE]
 > Asiakkaalla voi olla useita puhelinnumeroita ja sähköpostiosoitteita. Asiakkaan hakualgoritmi hakee myös näiden toissijaisten sähköpostiosoitteiden ja puhelinnumeroista. Asiakkaan hakutulossivulla näytetään kuitenkin vain ensisijainen sähköpostiosoite ja puhelinnumero. Tämä saattaa aiheuttaa sekaannusta, koska palautetut asiakkaan tulokset eivät näytä haettua sähköpostiosoitetta tai puhelinnumeroa. Tulevissa julkaisuissa aiomme parantaa asiakkaan hakutulosnäyttöä näiden tietojen saamiseksi.
@@ -113,10 +110,46 @@ Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **Co
 > [!NOTE]
 > Valintalistaan lisättävä mukautettu ominaisuus ei vaikuta vakioasiakashaun algoritmiin. Asiakashakualgoritmi ei siis tee hakuja mukautetussa ominaisuudessa. Käyttäjät voivat käyttää mukautettua ominaisuutta haussa vain, jos kyseinen mukautettu ominaisuus on lisätty pikavalintoja tai jos oletushakualgoritmi on ohitettu.
 
-Commercen tulevassa versiossa jälleenmyyjät voivat määrittää myyntipisteessä oletushakutilaksi **Hae kaikista myymälöistä**. Tämä määritys voi olla hyödyllinen tilanteissa, joissa myyntipisteen ulkopuolella luotuja asiakkaita on haettava heti (esimerkiksi ennen jakelutyön ajamista). Uusi **Asiakkaan oletushakutila** -vaihtoehto on käytettävissä myyntipisteen toimintoprofiilissa. Jos sen arvoksi on määritetty **Käytössä**, oletushakutilana on **Hae kaikista myymälöistä**. Jokainen asiakashakuyritys tekee sitten reaaliaikaisen kutsun pääkonttoriin.
+Vähittäismyyjät voivat myös määrittää asiakashaun oletustilaksi myyntipisteessähakea **Hae kaikista myymälöistä**. Tämä määritys voi olla hyödyllinen tilanteissa, joissa myyntipisteen ulkopuolella luotuja asiakkaita on haettava heti (esimerkiksi ennen jakelutyön ajamista). Tätä varten vähittäismyyjän on otettava käyttöön myyntipisteen toimintoprofiilissa **Asiakkaan oletushakutila** -asetus. Kun sen arvona on **Kyllä**, jokainen asiakashakuyritys tekee sitten reaaliaikaisen kutsun pääkonttoriin.
 
 Odottamattomat suorituskykyongelmien estämiseksi tämä määritys on piilotettu versioversiotestaukseen nimeltä **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Tämän vuoksi **Asiakkaan oletushakutila** -asetuksen näyttäminen käyttöliittymässä edellyttää, että jälleenmyyjä luo tukipalvelupyynnön käyttäjän hyväksyntätestaus- ja tuotantoympäristöjä varten. Kun pyyntö on vastaanotettu, kehitysryhmä varmistaa yhteistyössä vähittäismyyjän kanssa, että tämän testaus tapahtuu muussa kuin tuotantoympäristössä, sillä tällä tavoin voidaan arvioida suorituskyly ja ottaa käyttöön mahdollisesti tarvittavat optimoinnit.
 
+## <a name="cloud-powered-customer-search"></a>Pilvipohjainen asiakashaku
 
+Azure Cognitive Search -palvelua käyttävän asiakkaan hakuominaisuuden julkinen esiversio on julkaistu osana Commerce 10.0.18 -versiota. Suorituskyvyn parannusten lisäksi palvelun käyttäjät hyötyvät myös tarkennuksista ja parannuksista. Suorituskykyyn liittyvät parannukset ovat erityisen selkeitä, kun myyntipisteen yleistä hakutoimintoa (Hae kaikista myymälöistä) käytetään. Tämä johtuu siitä, että hakutulokset haetaan Azure-hakuindeksistä sen sijaan että tiedot kyseltäisiin Commerce headquartersista. 
+
+### <a name="enable-the-cloud-powered-search-feature"></a>Ota käyttöön pilvipohjainen hakutoiminto
+
+> [!NOTE]
+> On tarpeen päivittää sekä Commerce headquarters että Commerce Scale Unit versioksi 10.0.18. Myyntipisteen päivitystä ei tarvita.
+
+Jos haluat ottaa käyttöön pilvipohjaisen hakutoiminnon Commerce headquarters -sovelluksessa, toimi seuraavasti.
+
+1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
+1. Etsi ja valitse **(Esiversio) Pilvipohjainen asiakashaku** -toiminto ja valitse sitten **Ota käyttöön nyt**.
+1. Siirry kohtaan **Retail ja Commerce > Headquartersin asetukset > Commerce-ajastus > Alusta Commerce-ajoitus** ja valitse **OK** näyttäksesi uuden **1010_CustomerSearch**-työn **Jakeluaikataulu**-lomakkeessa.
+1. Mene kohtaan **Retail ja Commerce > Retail ja Commerce IT > Jakeluaikataulu**.
+1. Suorita **1010_CustomerSearch**-työ. Tämä työ julkaisee päivämäärän Azure-hakuindeksiin. Kun indeksi on julkaistu, työn tilaksi tulee **Käytössä**.
+1. Kun **1010_CustomerSearch**-työn tila on **Käytössä**, suorita **1110 - Yleinen määritys** -työ päivittääksesi myyntipistekanavat uudelle ominaisuudelle **ominaisuuksien hallinnassa**.
+1. Suorita sen jälkeen **1010_CustomerSearch**-työ säännöllisesti lähettääksesi asiakaspäivitykset hakuindeksiin.
+
+> [!NOTE]
+> Ensimmäisessä indeksin julkaisussa **1010_CustomerSearch**-työ voi kestää joitakin tunteja, sillä se lähettää kaikki asiakastietueet Azure-hakuindeksiin. Seuraavien päivitysten pitäisi kestää muutaman minuutin. Sen aikajakson aikana, jolloin pilvipalveluun perustuva hakutoiminto on käytössä, mutta indeksin julkaisu ei ole vielä valmis, asiakashaun oletusarvo myyntipisteessä on olemassa oleva SQL-pohjainen haku. Näin varmistetaan, että myymälän toimintoihin ei tule keskeytyksiä.
+
+### <a name="functional-differences-from-the-existing-search"></a>Toiminnalliset erot nykyiseen hakuun
+
+Seuraavassa luettelossa kerrotaan, miten pilvipohjainen asiakashakutoiminto eroaa olemassa olevasta hakutoiminnosta. 
+
+- Commerce headquartersissa luodut ja muokatut asiakkaat lähetetään Azure-hakuindeksiin, kun **1010_CustomerSearch**-työ suoritetaan. Näiden päivitysten tekeminen indeksiin kestää vähintään 15–20 minuuttia. Myyntipisteen käyttäjät voivat etsiä uusia asiakkaita (tai etsiä päivitettyjen tietojen perusteella) noin 15-20 minuuttia Commerce headquartersin päivitysten jälkeen. Jos liiketoimintaprosessi edellyttää, että Commerce headquarters -sovelluksessa luodut asiakkaat ovat heti haettavissa myyntipisteessä, tämä ei ehkä ole oikea palvelu tarpeisiisi.
+- Uudet myyntipisteessä luodut asiakkaat lähetetään Azure-hakuindeksiin Commerce Scale Unitista, ja he ovat heti haettavissa mistä tahansa myymälästä. Jos asynkroninen asiakkaan luontiominaisuus on kuitenkin käytössä, uusia asiakastietueita ei julkaista Commerce Scale Unitista Azure-hakuindeksiin, eikä niitä voi hakea myyntipisteestä, ennen kuin asiakastiedot synkronoidaan Commerce headquarters -sovelluksen kanssa ja asiakastunnukset luodaan asynkronisille asiakkaille. Tämän jälkeen **1010_CustomerSearch**-työ voi lähettää asynkroniset asiakastietueet Azure-hakuindeksiin. Keskimäärin kestää noin 30 minuuttia, kun uusia asynkronisia asiakkaita voidaan hakea myyntipisteessä. Tässä arviossa oletetaan, että **1010_CustomerSearch**-työ, **P-työ** ja **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työ suoritetaan 15 minuutin välein.
+- Pilvipohjainen haku etsii myös asiakkaiden toissijaisia sähköpostiosoitteita ja puhelinnumeroita, mutta tällä hetkellä asiakashakutuloksissa näkyy vain asiakkaiden ensisijainen puhelinnumero ja ensisijainen sähköpostiosoite. Aluksi saattaa vaikuttaa siltä, että hakutuloksissa on asiaan liittymättömiä tuloksia, mutta hakutuloksissa olevan asiakkaan toissijaisen sähköpostiosoitteen ja puhelinnumeron tarkistaminen voi auttaa varmistamaan, onko avainsanasta saatu hakutulos oikea vastaavuus. Sekaannuksen välttämiseksi on suunnitelmia parantaa hakutulossivua, jotta käyttäjät voivat helposti ymmärtää, miksi hakutulos palautettiin.
+- Tässä palvelussa ei ole rajoitusta tehdä hakuja vähintään neljällä merkillä kuten yleishaussa ("Hae kaikista myymälöistä").
+
+> [!NOTE]
+> Azure Cognitive Search -palvelua käyttävä asiakshaku on ksaatavilla esiversiona vain rajoitetulla määrällä alueita. Asiakashakutoiminto *ei* ole käytettävissä seuraavilla alueilla:
+> - Brasilia
+> - Intia
+> - Kanada
+> - Iso-Britannia
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

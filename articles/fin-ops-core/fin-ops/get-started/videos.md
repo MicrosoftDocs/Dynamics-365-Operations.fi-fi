@@ -3,10 +3,9 @@ title: Videot
 description: Tällä sivulla on Microsoftin luomia toimintaohjeita ja Finance and Operations -sovelluksiin liittyviä teknisiä keskusteluja sisältäviä videoita, joita voi katsoa YouTubessa ja muissa sivustoissa.
 author: sericks007
 manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70eddab17d94a7ff4a9f00117200a657ebfb24dd
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797872"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566219"
 ---
 # <a name="videos"></a>Videot 
 
@@ -90,10 +89,7 @@ ms.locfileid: "4797872"
 - [Lisää mukautettuja kenttiä](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Power Appsin upottaminen](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-### <a name="expenses"></a>Kulut
-- [Kulukokemus](https://youtu.be/Ocy-MsTvEE0)
-
-### <a name="financial-reporting"></a>Taloushallinnon raportointi
+### <a name="financial-reporting"></a>Taloushallinnan raportointi
 - [Raporttien suunnitteluohjelman version tarkistaminen](https://www.youtube.com/embed/icfA5Q3kp4w)
 
 ### <a name="help-system"></a>Ohjejärjestelmä

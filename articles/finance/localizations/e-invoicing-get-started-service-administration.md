@@ -3,7 +3,7 @@ title: Sähköisen laskutuksen lisäosan palvelun hallinnan aloittaminen
 description: Tässä aiheessa selitetään, miten sähköisen laskutuksen lisäosan käyttö voidaan aloittaa.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 111ec65aa826795125d4a9ce835f72e1a0f41b7b
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104373"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592523"
 ---
 # <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Sähköisen laskutuksen lisäosan palvelun hallinnan aloittaminen
 
@@ -35,7 +35,7 @@ ms.locfileid: "5104373"
 Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on toteuduttava:
 
 - Sinulla on oltava Microsoft Dynamics Lifecycle Services (LCS) -tili.
-- Käytössäsi on oltava LCS-projekti, joka sisältää Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin version 10.0.13 tai sitä myöhemmän version. Lisäksi nämä sovellukset on otettava käyttöön jossakin seuraavista Azure-alueista:
+- Käytössäsi on oltava LCS-projekti, joka sisältää Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin version 10.0.17 tai sitä myöhemmän version. Lisäksi nämä sovellukset on otettava käyttöön jossakin seuraavista Azure-alueista:
 
     - Itä-Yhdysvallat
     - Länsi-Yhdysvallat
@@ -52,6 +52,13 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 2. Valitse **Esiversiotoiminnon hallinta** -ruutu.
 3. Valitse **Julkisen esiversion ominaisuudet** -osasta **Sähköisen laskutuksen palvelu**.
 4. Varmista, että **Esiversiotoiminto käytössä** -asetukseksi on valittu **Kyllä**.
+5. Valitse LCS-käyttöönottoprojekti LCS-koontinäytössä. LCS-projektin on oltava käynnissä.
+7. Valitse **Ympäristöapuohjelmat**-välilehdessä **Asenna uusi apuohjelma**.
+8. Valitse **e-laskutuspalvelut** ja kirjoita **AAD-sovellustunnus** -kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä on kiinteä arvo.
+10. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi vuokraajan tunnus.
+11. Lue ehdot ja valitse valintaruutu.
+12. Valitse **Asenna**.
+
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Määritä RCS-integroinnin parametrit sähköisen laskutuksen lisäosan avulla.
 
@@ -73,7 +80,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 ## <a name="create-key-vault-secret"></a>Luo avainsäilön salainen koodi
 
 1. Kirjaudu RCS-tilille.
-2. Valitse **Globalisointitoiminnot**-työtila ja **Ympäristö**-kohdan **Sähköinen laskutus** -ruutu.
+2. Valitse **Globalisaatio-ominaisuudet**-työtilan **Ympäristö**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
 3. Valitse **Ympäristöasetukset**-sivun toimintoruudusta **Palveluympäristö** ja valitse sitten **Key Vault -parametrit**.
 4. Valitse **Uusi**, jos haluat luoda avainsäilön salaisen koodin.
 5. Syötä **Nimi**-kenttään avainsäilön salaisen koodin nimi. Syötä **Kuvaus**-kenttään kuvaus.
@@ -82,22 +89,31 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 ## <a name="create-storage-account-secret"></a>Luo tallennustilin salainen koodi
 
-1. Valitse **Varmenteet**-osasta **Key Vault -parametrit** -sivulla **Lisää**.
-2. Syötä **Nimi**-kenttään tallennustilin salaisen koodin nimi. Syötä **Kuvaus**-kenttään kuvaus.
-3. Valitse **Tyyppi**-kentästä **Varmenne**.
-4. Valitse **Tallenna** ja sulje sitten sivu.
+1. Siirry kohtaan **Järjestelmänhallinta** > **Asetukset** > **Avainsäilön parametit** ja valitse avainsäilön salainen koodi.
+2. Valitse **Varmenteet**-osasta **Lisää**.
+3. Kirjoita **Nimi**-kenttään tallennustilin salaisen koodin nimi ja **Kuvaus**-kenttään kuvaus.
+4. Valitse **Tyyppi**-kentästä **Varmenne**.
+5. Valitse **Tallenna** ja sulje sitten sivu.
+
+## <a name="create-a-digital-certificate-secret"></a>Digitaalisen varmenteen salaisen koodin luonti
+
+1. Siirry kohtaan **Järjestelmänhallinta** > **Asetukset** > **Avainsäilön parametit** ja valitse avainsäilön salainen koodi.
+2. Valitse **Varmenteet**-osasta **Lisää**.
+3. Kirjoita **Nimi**-kenttään digitaalisen varmenteen salaisen koodin nimi ja **Kuvaus**-kenttään kuvaus.
+4. Valitse **Tyyppi**-kentästä **Varmenne**.
+5. Valitse **Tallenna** ja sulje sitten sivu.
 
 ## <a name="create-an-electronic-invoicing-add-on-environment"></a>Sähköisen laskutuksen lisäosaympäristön luonti
 
 1. Kirjaudu RCS-tilille.
-2. Valitse **Globalisointitoiminnot**-työtila ja **Ympäristö**-kohdan **Sähköinen laskutus** -ruutu.
+2. Valitse **Globalisaatio-ominaisuudet**-työtilan **Ympäristö**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
 
 ## <a name="create-a-service-environment"></a>Palveluympäristön luominen
 
 1. Valitse **Ympäristöasetukset**-sivun toimintoruudusta **Palveluympäristö**.
 2. Luo uusi palveluympäristö valitsemalla **Uusi**.
 3. Syötä **Nimi**-kenttään sähköisen laskutuksen ympäristön nimi. Syötä **Kuvaus**-kenttään kuvaus.
-4. Valitse **Tallennutilin SAS-tunnuksen salasana** -kentässä sen varmenteen nimi, jota on käytettävä tallennustiliin todentautumisessa.
+4. Valitse **Tallennutilin SAS-tunnuksen salasana** -kentässä sen tallennustilin varmenteen nimi, jota on käytettävä tallennustiliin todentautumisessa.
 5. Valitse **Käyttäjät**-osassa **Lisää**, kun haluat lisätä käyttäjän, joka voi lähettää sähköisiä laskuja ympäristön kautta sekä muodostaa yhteyden tallennustiliin.
 6. Kirjoita **Käyttäjätunnus**-kenttään käyttäjän alias. Kirjoita **Sähköpostiosoite**-kenttään käyttäjän sähköpostiosoite.
 7. Valitse **Tallenna**.
