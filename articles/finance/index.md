@@ -2,11 +2,9 @@
 title: Financen aloitussivu
 description: Tässä aiheessa on luettelo Microsoft Dynamics 365 Finance -ohjelman taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista.
 author: roschlom
-manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218880"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813456"
 ---
 # <a name="finance-home-page"></a>Financen aloitussivu
 
@@ -71,8 +69,10 @@ Maiden/alueiden säädökset vaikuttavat veroasetuksiin ja taloushallinnon muihi
 
 ### <a name="additional-content"></a>Lisää sisältöä
 
-Supply Chain Managementin toiminnallisuus kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [!Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
+Supply Chain Managementin toiminnallisuus kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
+## <a name="elearning-courses"></a>eLearning-kurssit
 
+Online-kursseista ja -koulutuksesta saat tietoa [Dynamics 365 Financein Microsoft Learn -sivulta](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
