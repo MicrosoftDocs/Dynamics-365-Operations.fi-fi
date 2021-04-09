@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (helmikuu 2021)
                       href: get-started/whats-new-changed-10-0-16.md
-                    - name: Finance 10.0.15 (tammikuu 2021)
-                      href: get-started/whats-new-changed-10-0-15.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -1418,13 +1416,13 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
             - name: Pakolliset päivitykset
               href: localizations/regulatory-updates.md
-            - name: Sähköisen laskutuksen lisäosa
+            - name: Sähköinen laskutus
               items:
-                - name: Sähköisen laskutuksen lisäosan yleiskatsaus
+                - name: Sähköisen laskutuksen yleiskatsaus
                   href: localizations/e-invoicing-service-overview.md
-                - name: Sähköisen laskutuksen lisäosan hallintakomponentit
+                - name: Sähköisen laskutuksen hallintakomponentit
                   href: localizations/e-invoicing-service-administration.md
-                - name: Sähköisen laskutuksen lisäosan määrittäminen Regulatory Configuration Services (RCS) -palvelussa
+                - name: Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
                   href: localizations/e-invoicing-configuration-rcs.md
                 - name: Sähköisten laskujen luominen Financessa ja Supply Chain Managementissa
                   href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1432,20 +1430,22 @@
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
                 - name: Aloittaminen
                   items:
-                    - name: Sähköisen laskutuksen lisäosan palvelun hallinnan aloittaminen
+                    - name: Sähköisen laskutuksen palvelun hallinnan aloittaminen
                       href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Sähköisen laskutuksen lisäosan käytön aloittaminen
+                    - name: Sähköisen laskutuksen käytön aloittaminen
                       href: localizations/e-invoicing-get-started.md
-                    - name: Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen
+                    - name: Brasilian sähköisen laskutuksen käytön aloittaminen
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Egyptin sähköisen laskutuksen lisäosan käytön aloittaminen
+                    - name: Egyptin sähköisen laskutuksen käytön aloittaminen
                       href: localizations/e-invoicing-eg-get-started.md
-                    - name: Italian sähköisen laskutuksen lisäosan käytön aloittaminen
+                    - name: Italian sähköisen laskutuksen käytön aloittaminen
                       href: localizations/e-invoicing-ita-get-started.md
-                    - name: Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
+                    - name: Meksikon sähköisen laskutuksen käytön aloittaminen
                       href: localizations/e-invoicing-mex-get-started.md
-                    - name: Sähköisen laskutuksen lisäosan määrittäminen
+                    - name: Sähköisen laskutuksen määrittäminen
                       href: localizations/e-invoicing-setup.md
+                - name: Sähköisen laskutuksen usein kysytyt kysymykset
+                  href: localizations/e-invoicing-faq.md
             - name: Australia
               items:
                 - name: Australia – yleiskatsaus
@@ -1798,6 +1798,10 @@
                   href: localizations/emea-egy-invoice-layout.md
                 - name: Asiakkaiden sähköiset laskut Egyptissä
                   href: localizations/emea-egy-e-invoices.md
+                - name: Egyptin ALV-ilmoitus
+                  href: localizations/emea-egy-vat-declaration.md
+                - name: Egyptin ennakonpidätysilmoitus
+                  href: localizations/emea-egy-wht-declaration.md
             - name: Viro
               items:
                 - name: Viro – yleiskatsaus
@@ -2082,6 +2086,38 @@
                   href: localizations/india.md
                 - name: Intian lokalisointien laajuus
                   href: localizations/apac-ind-scope.md
+                - name: Intian lokalisointiin liittyvät uudet tai muuttuneet ominaisuudet
+                  items:
+                    - name: Version 10.0.0 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-00.md
+                    - name: Version 10.0.01 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: Version 10.0.02 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: Version 10.0.03 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: Version 10.0.04 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: Version 10.0.05 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: Version 10.0.06 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: Version 10.0.07 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: Version 10.0.08 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: Version 10.0.09 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: Version 10.0.10 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: Version 10.0.11 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: Version 10.0.12 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Version 10.0.13 uudet ja muuttuneet ominaisuudet
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Version 10.0.14 uudet ja muuttuneet ominaisuudet
+                      href: localizations/apac-ind-news-letter-10-0-14.md
                 - name: Käyttöomaisuuserät
                   items:
                     - name: Intia – käyttöomaisuuden yleiskatsaus
@@ -2108,210 +2144,198 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Pääomanimikkeiden siirtäminen käyttöomaisuuteen
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Intian GST-vero
+                - name: Välilliset verot
                   items:
-                    - name: Intian GST-veron yleiskatsaus
-                      href: localizations/apac-ind-gst.md
-                    - name: Intian GST-veron lokalisointiin liittyvät uudet tai muuttuneet ominaisuudet
+                    - name: Intian GST-vero
                       items:
-                        - name: Version 10.0.0 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-00.md
-                        - name: Version 10.0.01 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-01.md
-                        - name: Version 10.0.02 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-02.md
-                        - name: Version 10.0.03 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-03.md
-                        - name: Version 10.0.04 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-04.md
-                        - name: Version 10.0.05 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-05.md
-                        - name: Version 10.0.06 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-06.md
-                        - name: Version 10.0.07 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-07.md
-                        - name: Version 10.0.08 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-08.md
-                        - name: Version 10.0.09 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-09.md
-                        - name: Version 10.0.10 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-10.md
-                        - name: Version 10.0.11 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-11.md
-                        - name: Version 10.0.12 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-12.md
-                        - name: Version 10.0.13 uudet ja muuttuneet ominaisuudet
-                          href: localizations/ind-news-letter-10-0-13.md
-                        - name: Version 10.0.14 uudet ja muuttuneet ominaisuudet
-                          href: localizations/apac-ind-news-letter-10-0-14.md
-                    - name: Intian GST-veron viiteryhmät
-                      href: localizations/apac-ind-gst-reference-groups.md
-                    - name: Kassapäätteiden GST-veron integrointi
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
-                    - name: Päätietojen määrittäminen
+                        - name: Intian GST-veron yleiskatsaus
+                          href: localizations/apac-ind-gst.md
+                        - name: Veromoduuli
+                          items:
+                            - name: Veromoduulin yleiskatsaus
+                              href: general-ledger/tax-engine.md
+                            - name: Tuonnin konfiguraatio
+                              href: general-ledger/tax-engine-import-configuration.md
+                            - name: Edistynyt kaavojen suunnittelutoiminto
+                              href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                            - name: Veromoduulin soveltuvuus
+                              href: general-ledger/tax-engine-applicability.md
+                            - name: Verokomponenttien luominen
+                              href: localizations/tax-engine-create-tax-component.md
+                            - name: Veromoduulin integrointi
+                              href: general-ledger/tax-engine-integration.md
+                            - name: Veromoduulin laajentaminen
+                              href: general-ledger/extend-tax-engine-configurations.md
+                            - name: TaxDocumentJSON-taulun tyhjentäminen
+                              href: localizations/gte-clean-up-tax-document-json-table.md
+                            - name: 'GTE:n vianmääritys'
+                              href: localizations/tax-engine-trouble-shooting.md
+                        - name: Päätietojen määrittäminen
+                          items:
+                            - name: Liiketoiminnan osa-alueen luominen
+                              href: localizations/apac-ind-GST-create-business-vertical.md
+                            - name: Osavaltiokoodin ja territorion päivittäminen
+                              href: localizations/apac-ind-GST-update-state-code-union-territory.md
+                            - name: GSTIN-päätunnuksen luominen
+                              href: localizations/apac-ind-GST-create-gstin-master.md
+                            - name: GSTIN- ja viitenumeroiden sarjojen määrittäminen
+                              href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                            - name: HSN-koodien ja palvelun kirjanpitokoodien määrittäminen
+                              href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                            - name: Veroprosentin tyypin luominen
+                              href: localizations/apac-ind-GST-create-tax-rate-type.md
+                            - name: Päätilien luominen GST-veron kirjaustyypille
+                              href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                            - name: Veron tilityskauden luominen
+                              href: localizations/apac-ind-GST-create-tax-settlement-period.md
+                            - name: GSTIN-tunnuksen liittäminen veron rekisteröintiryhmään
+                              href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                        - name: Veroasetukset
+                          items:
+                            - name: Verokokoonpanon määrittäminen ja ottaminen käyttöön oikeushenkilöille
+                              href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                            - name: Kokoonpanon verotyyppien kartoittaminen - Mukautetut
+                              href: localizations/apac-ind-GST-map-configuration-tax-types.md
+                            - name: Kurssi- ja prosenttitaulukoiden määrittäminen
+                              href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                            - name: Arvonlisäverohierarkian ja vahvistussääntöjen määrittäminen
+                              href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                            - name: Intian GST-veron viiteryhmät
+                              href: localizations/apac-ind-gst-reference-groups.md
+                        - name: Verotapahtumat
+                          items:
+                            - name: Ostotapahtumat
+                              items:
+                                - name: Ostot rekisteröimättömiltä toimittajilta
+                                  href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                                - name: Verollisen nimikkeen ostaminen rekisteröimättömältä toimittajalta
+                                  href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                                - name: Ostokset rekisteröidyiltä toimittajilta
+                                  href: localizations/apac-ind-GST-purchases-registered-vendor.md
+                                - name: Alennustuotteiden ostot
+                                  href: localizations/apac-ind-GST-purchase-discounted-goods.md
+                                - name: Verovapaiden tuotteiden osto
+                                  href: localizations/apac-ind-GST-purchase-exempted-goods.md
+                                - name: Nollaverokantaisten tuotteiden osto
+                                  href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                                - name: Muiden kuin GST-verollisten tuotteiden ostot
+                                  href: localizations/apac-ind-GST-purchase-non-gst-goods.md
+                                - name: Ostokset yhdistelmätoimittajilta
+                                  href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                                - name: Kuljetusmaksuja sisältävien verotettavien tuotteiden ostot
+                                  href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                                - name: Verotettavia tuotteita sisältävän ostolaskun tarkistaminen
+                                  href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                                - name: Käyttöomaisuuksien ostokset
+                                  href: localizations/apac-ind-GST-purchase-fixed-asset.md
+                                - name: Hyvityslaskun luominen ostolaskulle
+                                  href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                                - name: Veloituslaskun luominen ostolaskulle
+                                  href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                                - name: 'Laatutilaukset, joihin liittyy otantanimikkeen hävittäminen'
+                                  href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                                - name: Oston palautustilaukset
+                                  href: localizations/apac-ind-GST-purchase-return-order.md
+                                - name: 'Toimittajien ennakkomaksut, joissa on käänteisiä veloituksia'
+                                  href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                            - name: Myyntitapahtumat
+                              items:
+                                - name: Verotettavien tuotteiden myynti kuluttajille
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                                - name: Myynti rekisteröidyille asiakkaille
+                                  href: localizations/apac-ind-GST-sell-registered-customer.md
+                                - name: Vapaatekstilaskut
+                                  href: localizations/apac-ind-GST-free-text-invoices.md
+                                - name: Käänteisen veloituksen sisältävien verotettavien tuotteiden myynti
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                                - name: Verovapaiden nimikkeiden myynti
+                                  href: localizations/apac-ind-GST-sales-exempted-item.md
+                                - name: Nollaverokantaisten tuotteiden myynti
+                                  href: localizations/apac-ind-GST-sell-zero-rated-goods.md
+                                - name: Muiden kuin GST-verollisten tuotteiden myynti
+                                  href: localizations/apac-ind-GST-sell-non-gst-goods.md
+                                - name: Alennuksen ja alustavan arvioinnin sisältävien verotettavien tuotteiden myynti
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                                - name: Kuljetusmaksujen veroja sisältävien verotettavien tuotteiden myynti
+                                  href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                                - name: 'Myynti, jossa hinnat sisältävät ja eivät sisällä veroa'
+                                  href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                                - name: Veloituslaskun luominen myyntilaskulle
+                                  href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                                - name: Hyvityslaskun luominen myyntilaskulle
+                                  href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                                - name: 'Myyntilaskut, jotka on jaettu toimitusosoitteiden perusteella'
+                                  href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                                - name: Palautustilaukset
+                                  href: localizations/apac-ind-GST-return-order-form.md
+                            - name: Ulkomaiden maksutapahtumat
+                              items:
+                                - name: GST-verollisten tuotteiden tuonti
+                                  href: localizations/apac-ind-GST-import-goods-gst.md
+                                - name: GST-verollisten palveluiden tuonti
+                                  href: localizations/apac-ind-import-services-gst.md
+                                - name: Nollaverokantaisten tuotteiden vienti
+                                  href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                                - name: Nollaverokantaisten palveluiden vienti
+                                  href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                                - name: Vientitilaukseen kohdistuva hyvitys- tai veloituslasku
+                                  href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+                            - name: Varastosiirtotapahtumat
+                              items:
+                                - name: Varastosiirtotilaukset
+                                  href: localizations/apac-ind-stock-transfer.md
+                                - name: 'Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero'
+                                  href: localizations/apac-ind-GST-stock-transfer-transactions.md
+                            - name: Asiakasmaksutapahtumat
+                              items:
+                                - name: Verolliset ennakkomaksut
+                                  href: localizations/apac-ind-GST-advance-payment-includes-tax.md
+                                - name: 'Ennakkomaksut, jotka on selvitetty laskun kirjaamisen yhteydessä'
+                                  href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                                - name: Verollisen ennakkomaksun ja laskun manuaalinen selvitys
+                                  href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                                - name: Verollisten laskujen maksaminen
+                                  href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                                - name: Verollisten ennakkomaksujen korjaaminen
+                                  href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                                - name: Asiakkaan maksun hyvitykset
+                                  href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Veron oikaisu
+                              items:
+                                - name: Veron summan säätö
+                                  href: localizations/apac-ind-GST-tax-adjustments.md
+                                - name: Verokirjauskansion luominen
+                                  href: localizations/apac-ind-GST-tax-journal.md
+                            - name: Veroasiakirjan kyselyt
+                              items:
+                                - name: Verotiedustelu
+                                  href: localizations/apac-ind-GST-tax-inquiry.md
+                        - name: Veron tilitys
+                          items:
+                            - name: Sääntöihin perustuva verojen selvitys
+                              href: localizations/apac-ind-GST-tax-settlement.md
+                        - name: GSTR-raportit
+                          items:
+                            - name: Uudet GSTR-1- ja GSTR-2-palautusmuodot
+                              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
+                            - name: 'Uusi GSTR-offline-työkalu ANX-1:tä ja ostorekisteriä varten'
+                              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+                            - name: GSTR-raporttitietojen luominen veronpalautuksille
+                              href: localizations/apac-ind-GST-tax-returns.md
+                            - name: Usean erän käsittelyn käyttöönotto GSTR-raporteissa
+                              href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                - name: Suorat verot
+                  items:
+                    - name: Intian ennakonpidätys
                       items:
-                        - name: Liiketoiminnan osa-alueen luominen
-                          href: localizations/apac-ind-GST-create-business-vertical.md
-                        - name: Osavaltiokoodin ja territorion päivittäminen
-                          href: localizations/apac-ind-GST-update-state-code-union-territory.md
-                        - name: GSTIN-päätunnuksen luominen
-                          href: localizations/apac-ind-GST-create-gstin-master.md
-                        - name: GSTIN- ja viitenumeroiden sarjojen määrittäminen
-                          href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
-                        - name: HSN-koodien ja palvelun kirjanpitokoodien määrittäminen
-                          href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-                        - name: Veroprosentin tyypin luominen
-                          href: localizations/apac-ind-GST-create-tax-rate-type.md
-                        - name: Päätilien luominen GST-veron kirjaustyypille
-                          href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
-                        - name: Veron tilityskauden luominen
-                          href: localizations/apac-ind-GST-create-tax-settlement-period.md
-                        - name: GSTIN-tunnuksen liittäminen veron rekisteröintiryhmään
-                          href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
-                    - name: Veroasetukset
-                      items:
-                        - name: Verokokoonpanon määrittäminen ja ottaminen käyttöön oikeushenkilöille
-                          href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
-                        - name: Kokoonpanon verotyyppien kartoittaminen - Mukautetut
-                          href: localizations/apac-ind-GST-map-configuration-tax-types.md
-                        - name: Kurssi- ja prosenttitaulukoiden määrittäminen
-                          href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                        - name: Arvonlisäverohierarkian ja vahvistussääntöjen määrittäminen
-                          href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
-                    - name: Ostotapahtuma
-                      items:
-                        - name: Ostot rekisteröimättömiltä toimittajilta
-                          href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
-                        - name: Verollisen nimikkeen ostaminen rekisteröimättömältä toimittajalta
-                          href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
-                        - name: Ostokset rekisteröidyiltä toimittajilta
-                          href: localizations/apac-ind-GST-purchases-registered-vendor.md
-                        - name: Alennustuotteiden ostot
-                          href: localizations/apac-ind-GST-purchase-discounted-goods.md
-                        - name: Verovapaiden tuotteiden osto
-                          href: localizations/apac-ind-GST-purchase-exempted-goods.md
-                        - name: Nollaverokantaisten tuotteiden osto
-                          href: localizations/apac-ind-GST-purchase-zero-rated-goods.md
-                        - name: Muiden kuin GST-verollisten tuotteiden ostot
-                          href: localizations/apac-ind-GST-purchase-non-gst-goods.md
-                        - name: Ostokset yhdistelmätoimittajilta
-                          href: localizations/apac-ind-GST-purchase-from-composite-dealer.md
-                        - name: Kuljetusmaksuja sisältävien verotettavien tuotteiden ostot
-                          href: localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
-                        - name: Verotettavia tuotteita sisältävän ostolaskun tarkistaminen
-                          href: localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
-                        - name: Käyttöomaisuuksien ostokset
-                          href: localizations/apac-ind-GST-purchase-fixed-asset.md
-                        - name: Hyvityslaskun luominen ostolaskulle
-                          href: localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
-                        - name: Veloituslaskun luominen ostolaskulle
-                          href: localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
-                        - name: 'Laatutilaukset, joihin liittyy otantanimikkeen hävittäminen'
-                          href: localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
-                        - name: Oston palautustilaukset
-                          href: localizations/apac-ind-GST-purchase-return-order.md
-                        - name: 'Toimittajien ennakkomaksut, joissa on käänteisiä veloituksia'
-                          href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
-                    - name: Myyntitapahtuma
-                      items:
-                        - name: Verotettavien tuotteiden myynti kuluttajille
-                          href: localizations/apac-ind-GST-sell-taxable-goods-consumer.md
-                        - name: Myynti rekisteröidyille asiakkaille
-                          href: localizations/apac-ind-GST-sell-registered-customer.md
-                        - name: Vapaatekstilaskut
-                          href: localizations/apac-ind-GST-free-text-invoices.md
-                        - name: Käänteisen veloituksen sisältävien verotettavien tuotteiden myynti
-                          href: localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
-                        - name: Verovapaiden nimikkeiden myynti
-                          href: localizations/apac-ind-GST-sales-exempted-item.md
-                        - name: Nollaverokantaisten tuotteiden myynti
-                          href: localizations/apac-ind-GST-sell-zero-rated-goods.md
-                        - name: Muiden kuin GST-verollisten tuotteiden myynti
-                          href: localizations/apac-ind-GST-sell-non-gst-goods.md
-                        - name: Alennuksen ja alustavan arvioinnin sisältävien verotettavien tuotteiden myynti
-                          href: localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
-                        - name: Kuljetusmaksujen veroja sisältävien verotettavien tuotteiden myynti
-                          href: localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
-                        - name: 'Myynti, jossa hinnat sisältävät ja eivät sisällä veroa'
-                          href: localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
-                        - name: Veloituslaskun luominen myyntilaskulle
-                          href: localizations/apac-ind-GST-debit-note-against-sales-invoice.md
-                        - name: Hyvityslaskun luominen myyntilaskulle
-                          href: localizations/apac-ind-GST-credit-note-against-sales-invoice.md
-                        - name: 'Myyntilaskut, jotka on jaettu toimitusosoitteiden perusteella'
-                          href: localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-                        - name: Palautustilaukset
-                          href: localizations/apac-ind-GST-return-order-form.md
-                    - name: Ulkomaiden maksutapahtumat
-                      items:
-                        - name: GST-verollisten tuotteiden tuonti
-                          href: localizations/apac-ind-GST-import-goods-gst.md
-                        - name: GST-verollisten palveluiden tuonti
-                          href: localizations/apac-ind-import-services-gst.md
-                        - name: Nollaverokantaisten tuotteiden vienti
-                          href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                        - name: Nollaverokantaisten palveluiden vienti
-                          href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
-                    - name: Varastotapahtuma
-                      items:
-                        - name: Varastosiirtotilaukset
-                          href: localizations/apac-ind-stock-transfer.md
-                        - name: 'Varaston siirtotilaukset, joiden siirron hintaan sisältyy vero'
-                          href: localizations/apac-ind-GST-stock-transfer-transactions.md
-                    - name: Asiakasmaksutapahtuma
-                      items:
-                        - name: Verolliset ennakkomaksut
-                          href: localizations/apac-ind-GST-advance-payment-includes-tax.md
-                        - name: 'Ennakkomaksut, jotka on selvitetty laskun kirjaamisen yhteydessä'
-                          href: localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
-                        - name: Verollisen ennakkomaksun ja laskun manuaalinen selvitys
-                          href: localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
-                        - name: Verollisten laskujen maksaminen
-                          href: localizations/apac-ind-GST-pay-invoice-includes-tax.md
-                        - name: Verollisten ennakkomaksujen korjaaminen
-                          href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
-                        - name: Asiakkaan maksun hyvitykset
-                          href: localizations/apac-ind-GST-customer-payment-refund.md
-                    - name: Suora verotapahtuma
-                      items:
-                        - name: Sisällytä GST veroalennusten laskutoimiin
+                        - name: GST-veron sisällyttäminen veroalennusten laskutoimiin
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: Sisällytä GST verojen keruun laskutoimiin
+                        - name: GST-veron sisällyttäminen verojen keruun laskutoimiin
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-                    - name: Veron summan säätö
-                      href: localizations/apac-ind-GST-tax-adjustments.md
-                    - name: Sääntöihin perustuva verojen selvitys
-                      href: localizations/apac-ind-GST-tax-settlement.md
-                    - name: Verokirjauskansion luominen
-                      href: localizations/apac-ind-GST-tax-journal.md
-                    - name: GSTR-raporttitietojen luominen veronpalautuksille
-                      href: localizations/apac-ind-GST-tax-returns.md
-                    - name: Usean erän käsittelyn käyttöönotto GSTR-raporteissa
-                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
-                    - name: Verotiedustelu
-                      href: localizations/apac-ind-GST-tax-inquiry.md
-                    - name: TaxDocumentJSON-taulun tyhjentäminen
-                      href: localizations/gte-clean-up-tax-document-json-table.md
-                - name: Veromoduuli
-                  items:
-                    - name: Veromoduulin yleiskatsaus
-                      href: general-ledger/tax-engine.md
-                    - name: Tuontimääritys
-                      href: general-ledger/tax-engine-import-configuration.md
-                    - name: Edistynyt kaavojen suunnittelutoiminto
-                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
-                    - name: Veromoduulin soveltuvuus
-                      href: general-ledger/tax-engine-applicability.md
-                    - name: Verokomponenttien luominen
-                      href: localizations/tax-engine-create-tax-component.md
-                    - name: Veromoduulin integrointi
-                      href: general-ledger/tax-engine-integration.md
-                    - name: Veromoduulin laajentaminen
-                      href: general-ledger/extend-tax-engine-configurations.md
-                    - name: 'GTE:n vianmääritys'
-                      href: localizations/tax-engine-trouble-shooting.md
-                - name: Veron raja-arvojen usein kysytyt kysymykset
-                  href: localizations/apac-ind-tax-thresholds.md
+                        - name: Veron raja-arvojen usein kysytyt kysymykset
+                          href: localizations/apac-ind-tax-thresholds.md
+                        - name: TCS tavaroiden myynnissä
+                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
             - name: Italia
               items:
                 - name: Italia – yleiskatsaus
@@ -2566,8 +2590,10 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: ALV-laskelman tiedot
                   href: localizations/emea-ltu-vat-statement-details.md
-                - name: i. SAF-raportointi Liettualle
+                - name: Liettuan i.SAF-raportointi
                   href: localizations/emea-ltu-isaf.md
+                - name: Verotuksen perustarkistustiedosto (SAF-T) – Liettua
+                  href: localizations/emea-ltu-saf-t.md
             - name: Malesia
               items:
                 - name: Malesia – yleiskatsaus
@@ -2930,6 +2956,8 @@
                       href: localizations/rus-deferred-expenses-register.md
                     - name: Kassavirran verorekisterit
                       href: localizations/rus-cash-flow-tax-registers.md
+                    - name: Nimelliskulujen rekisterit
+                      href: localizations/rus-rated-expenses-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Saudi-Arabia – yleiskatsaus
@@ -3381,11 +3409,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Sovelluskohtaisten metatietojen valmisteleminen
                       items:
-                        - name: '(ER) Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi'
+                        - name: 'Sovelluksen metatietojen valmisteleminen sähköisessä raportoinnissa RCS:ssä käytettäviksi'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Sovelluksen metatietojen käyttäminen sähköisen raportoinnin konfiguraation avulla
+                        - name: 'Sovelluksen metatietojen käyttäminen RCS:ssä sähköisen raportoinnin konfiguraation avulla'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
+                        - name: 'Sovelluksen metatietojen käyttäminen RCS:ssä yhdistetyillä sovelluksilla'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
                         - name: Mallin yhdistämismääritysten määrittäminen ja tietolähteiden valitseminen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3675,7 +3703,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Teksti: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten asiakirjojen luomiseksi eri muodoissa
+            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien asiakirjojen luomiseksi eri muodoissa
               items:
                 - name: Konfiguraatioiden suunnitteleminen lähtevien asiakirjojen luomiseksi Excel-muodossa
                   items:
@@ -3703,7 +3731,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Kuvien ja muotojen upottaminen
                   items:
-                    - name: (ER) Kuvien ja muotojen upottaminen luomiisi asiakirjoihin
+                    - name: Kuvien ja muotojen upottaminen luotaviin asiakirjoihin
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
                     - name: Esimerkki kuvien ja muotojen upottamisesta
                       items:
@@ -3717,7 +3745,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Tuoterakenteen merkkien estäminen luoduissa tiedostoissa
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
-            - name: Sovellustietojen päivittäminen sähköisen raportoinnin avulla
+            - name: 'Sovellustietojen päivittäminen ER:n avulla'
               items:
                 - name: Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
@@ -3763,9 +3791,9 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory service (RCS)
                   items:
-                    - name: Regulatory Configuration Services (RCS) – globalisointiominaisuudet
-                      href: localizations/rcs-globalization-feature.md
-                    - name: Lataa sähköisen raportoinnin konfiguraatiot Financeen
+                    - name: 'RCS:n globalisaatio-ominaisuudet'
+                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
+                    - name: Sähköisen raportoinnin konfiguraatioiden lataaminen Financeen
                       items:
                         - name: 'Konfiguraatioiden lataaminen RCS:stä'
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
@@ -3896,17 +3924,17 @@
                     - name: Kohdetyypit
                       items:
                         - name: Arkistokohde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
                         - name: Sähköpostikohde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
                         - name: Tiedostokohde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
                         - name: Power BI -kohde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
                         - name: Tulostinkohde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
                         - name: Näyttökohde
-                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                          href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
                     - name: Kohteiden määrittäminen
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Toimintosidonnaisten kohteiden määrittäminen
@@ -3919,11 +3947,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                     - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: Testauksen automatisointi sähköisen raportoinnin avulla
+                    - name: 'Testauksen automatisointi ER:n avulla'
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: Liiketoimintaprosessien automatisointi sähköisten raportointikonfiguraatioiden avulla
+                - name: Liiketoimintaprosessien automatisointi sähköisen raportoinnin konfiguraatioiden avulla
                   items:
-                    - name: 'Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin'
+                    - name: 'Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin'
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json

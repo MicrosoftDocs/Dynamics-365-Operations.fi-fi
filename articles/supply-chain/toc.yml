@@ -763,17 +763,19 @@
               items:
                 - name: Konfiguraatioiden luonti
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisen raportointiratkaisun komponenttien valmisteleminen
                   items:
                     - name: Toimialuekohtaisen tietomallin suunnitteleminen
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Sovelluskohtaisten metatietojen valmisteleminen
                       items:
-                        - name: '(ER) Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi'
+                        - name: 'Sovelluksen metatietojen valmisteleminen sähköisessä raportoinnissa RCS:ssä käytettäviksi'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Sovelluksen metatietojen käyttäminen sähköisen raportoinnin konfiguraation avulla
+                        - name: 'Sovelluksen metatietojen käyttäminen RCS:ssä sähköisen raportoinnin konfiguraation avulla'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
+                        - name: 'Sovelluksen metatietojen käyttäminen RCS:ssä yhdistetyillä sovelluksilla'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Mallin yhdistämismääritysten määrittäminen ja tietolähteiden valitseminen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -785,7 +787,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Valmistellun sähköisen raportoinnin ratkaisun testaaminen kohdesovelluksessa
                       items:
-                        - name: '(ER) Konfiguraatioiden tuonti RCS:stä'
+                        - name: 'Konfiguraatioiden tuonti RCS:stä'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Sähköisten maksuasiakirjojen luominen muotokonfiguraation avulla
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
@@ -803,6 +805,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funktiot
                   items:
+                    - name: Säilö
+                      items:
+                        - name: Säilöfunktiot
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Päivämäärä ja aika
                       items:
                         - name: Päivämäärä- ja aikatoiminnot
@@ -833,6 +841,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Luettelo
                       items:
                         - name: Luettelotoiminnot
@@ -859,6 +869,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Luettelo
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListOfFields
@@ -887,14 +899,22 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Matemaattinen
                       items:
                         - name: Matemaattinen toiminto
@@ -990,7 +1010,7 @@
                         - name: CurCredRef
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FA_Balance
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/supply-chain/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365supply-chain/toc.json
                         - name: FA_Sum
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/supply-chain/toc.json
                         - name: GetCurrentCompany
@@ -1019,6 +1039,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Tyyppi: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Säilö: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Päivämäärä ja aika: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Päivämäärä ja aika: DateToDateTime'
@@ -1043,79 +1065,49 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Teksti: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Tietomallin määritysten valitseminen luotaessa muotoja
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Parannetut suodatusvaihtoehdot konfiguraatioiden löytämiseksi yleisestä tietovarastosta
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Raporttien luominen lisäämällä sisältöä XML-raakatiedostona
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
-            - name: (ER) Yritysten väliset tietolähteet sähköisessä raportoinnissa
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien sähköisten asiakirjojen luomiseksi eri muodoissa
+            - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien asiakirjojen luomiseksi eri muodoissa
               items:
-                - name: (ER) Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: (ER) Konfiguraatioiden suunnitteleminen raporttien luomiseksi Word-muodossa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfiguraatioiden suunnitteleminen lähtevien asiakirjojen luomiseksi Excel-muodossa
+                  items:
+                    - name: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Esimerkki raporttien luomisesta OPENXML-muodossa
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja uudelleen
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
+                      items:
+                        - name: Muotojen suunnitteleminen lisäämään sarakkeita dynaamisesti Excel-raportteihin
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Sarakkeiden lisääminen dynaamisesti Excel-raportteihin muotoja suorittamalla
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfiguraatioiden suunnitteleminen raporttien luontiin Word-muodossa
+                  items:
+                    - name: Uuden ER-konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Raporttien luominen Word-muodossa käyttämällä ER-konfiguraatioita uudelleen Excel-mallien avulla
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Word-sisällön ohjausobjektien estäminen luoduissa raporteissa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfiguraatioiden suunnitteleminen PDF-mallien täyttämiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Kuvien ja muotojen upottaminen
-              items:
-                - name: (ER) Kuvien ja muotojen upottaminen luomiisi asiakirjoihin
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Esimerkki kuvien ja muotojen upottamisesta
+                - name: Kuvien ja muotojen upottaminen
                   items:
-                    - name: Konfiguraatioiden suunnitteleminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfiguraatioiden tarkastaminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Upotettuja kuvia sisältävien raporttien luominen Office-muodoissa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportoinnin ratkaisun suunnitteleminen taloushallinnon dimensioiden käyttämiseksi
-              items:
-                - name: Tietomallien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Mallien yhdistäminen taloushallinnon dimensioiden käyttämiseksi tietolähteinä
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Raporttien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Taloushallinnon dimensioita tietolähteinä käyttävien raporttien suorittaminen
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisen raportoinnin muotojen suunnitteleminen laskennan ja yhteenlaskujen suorittamiseksi luotujen tietojen perusteella
-              items:
-                - name: Muotojen luominen laskentaa ja summien tuottamista varten
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muodon konfigurointi laskentaa ja summien tuottamista varten
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Laskutoimitusten käyttäminen laskentaan ja summien tuottamiseen
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muotojen suorittaminen laskentaa ja summien tuottamista varten
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
-              items:
-                - name: Muotojen suunnitteleminen sarakkeiden lisäämiseksi Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muotojen suorittaminen sarakkeiden lisäämiseksi Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Asiakirjojen hallintatiedostojen käyttäminen muodon tuotoksissa
-              items:
-                - name: Tietomallien valmisteleminen asiakirjojen hallintatiedostojen käyttämiseksi sähköisen raportoinnin tuotoksissa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tietomallien laajentaminen asiakirjojen hallintatiedostojen käyttämiseksi sähköisen raportoinnin tuotoksissa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muotojen luominen asiakirjojen hallintatiedostojen käyttämiseksi sähköisen raportoinnin tuotoksissa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muotojen suorittaminen asiakirjojen hallintatiedostojen käyttämiseksi sähköisen raportoinnin tuotoksissa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muotojen muokkaaminen ja suorittaminen asiakirjojen hallintatiedostojen käyttämiseksi sähköisen raportoinnin tuotoksissa
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sovellustietojen päivittäminen sähköisen raportoinnin avulla
+                    - name: Kuvien ja muotojen upottaminen luotaviin asiakirjoihin
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Esimerkki kuvien ja muotojen upottamisesta
+                      items:
+                        - name: Konfiguraatioiden suunnitteleminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfiguraatioiden tarkastaminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Upotettuja kuvia sisältävien raporttien luominen Office-muodoissa
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tuoterakenteen merkkien estäminen luoduissa tiedostoissa
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'Sovellustietojen päivittäminen ER:n avulla'
               items:
                 - name: Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
@@ -1145,52 +1137,146 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Sähköisen raportoinnin muotojen määrittäminen XML-muotoisten tiedostojen tuomiseksi valinnaisilla määritteillä
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Lasketun kentän muotoisten sähköisen raportoinnin tietolähteiden parametrisoitujen kutsujen tukeminen
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
             - name: Konfiguraation elinkaari
               items:
                 - name: Konfiguraatioiden elinkaaren hallinta
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfiguraatioiden lataaminen Lifecycle Services -palveluun
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfiguraatioiden tuonti Lifecycle Services -palvelusta
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfiguraatioiden lataaminen Lifecycle Services -palvelusta
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfiguraatioiden tuonti
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sähköisen raportoinnin konfiguraatioiden lataaminen RCS-säiliöstä
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Konfiguraatioiden lataaminen RCS-tyyppisestä sähköisen raportoinnin säilöstä
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Konfiguraatioiden tuonti RCS:stä'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Lataa konfiguraatiot LCS-järjestelmään
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Konfiguraatioiden tuonti LCS:stä'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Konfiguraatioiden lataaminen LCS:stä'
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfiguraatioiden tuonti (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory service (RCS)
+                  items:
+                    - name: 'RCS:n globalisaatio-ominaisuudet'
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfiguraatioiden lataaminen Supply Chain Managementiin
+                      items:
+                        - name: 'Konfiguraatioiden lataaminen RCS:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Konfiguraatioiden tuonti RCS:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Yleinen tietovarasto (GR)
+                      items:
+                        - name: 'Konfiguraatioiden tuonti GR:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Lataa konfiguraatiot GR-järjestelmään
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: 'Jaa kokoonpanot GR:ssä'
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Pika-aloitusoppaat
+              items:
+                - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Uuden ER-ratkaisun suunnitteleminen mukautetun raportin tulostamista varten
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sähköisen raportoinnin ratkaisun määrittäminen mukautetun sähköisen asiakirjan luomiseksi
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oppaat
               items:
-                - name: Useiden sovellustaulujen tietojen hakeminen tietolähteiden LIITÄ-määrityksen avulla
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sähköisen raportoinnin muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sähköisen raportoinnin muodon parametrien määrittäminen yrityskohtaisesti
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sähköisen raportoinnin muodon elementtien suorituksen lykkääminen
+                - name: Tietolähteiden käyttäminen
                   items:
-                    - name: Sekvenssielementin suorituksen lykkääminen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: XML-elementin suorituksen lykkääminen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operationsissa
+                    - name: Usean taulukon tietojen hakeminen LIITÄ-määrityksen avulla
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: XML-raakatietojen käyttäminen sisällön lisäämiseen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: LASKETTU KENTTÄ -tyypin tietolähteiden parametrisoitujen kutsujen tukeminen
+                      items:
+                        - name: Käyttökokemuksen parantaminen ja käytettävyyden ylläpito
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Tieto käytön suorituskyvyn parantaminen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Yritystenväliset sähköisen raportoinnin tietolähteet
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: TALOUSHALLINNON DIMENSIOIDEN TIEDOT -tietolähteiden käyttäminen
+                      items:
+                        - name: Tietomallien suunnitteleminen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Mallien yhdistäminen taloushallinnon dimensioiden käyttöä varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Raporttien suunnitteleminen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Raporttien suorittaminen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Luotujen tietojen käyttäminen tietolähteenä laskentaa ja summien tuottamista varten
+                      items:
+                        - name: Muotojen luominen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Muodon konfigurointi laskentaa ja summien tuottamista varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Tietojen luominen laskentaa ja summien tuottamista varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Muotojen suorittaminen laskentaa ja summien tuottamista varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ASIAKIRJAT-suhteiden käyttäminen asiakirjojen hallintatiedostojen käyttöä varten
+                      items:
+                        - name: Tietomallien valmisteleminen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Tietomallien laajentaminen asiakirjojen hallintatiedostojen käyttöä varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Muotojen luominen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Muotojen suorittaminen asiakirjojen hallintatiedostojen käyttöä varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Muotojen muokkaaminen ja suorittaminen asiakirjojen hallintatiedostojen käyttöä varten
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tietolähteiden vianmääritys
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: VIIVAKOODIN käyttäminen viivakoodikuvien luontiin
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mallimääritysten määrittäminen
+                  items:
+                    - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Useiden johdettujen yhdistämismääritysten hallinta yksittäiselle mallin juurelle
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Muotojen määrittäminen
+                  items:
+                    - name: Mallin määritysten valitseminen luotaessa muotoja
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin muodon parametrien määrittäminen yrityskohtaisesti
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin muodon elementtien suorituksen lykkääminen
+                      items:
+                        - name: Sekvenssielementin suorituksen lykkääminen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: XML-elementin suorituksen lykkääminen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Monikielisten raporttien suunnitteleminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Suurten lähtevien tiedostojen pakkaaminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Määritettyjen ER-komponenttien tarkastaminen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Suhteellinen polku tietojen sidonnoissa
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ER-ratkaisujen käyttäminen Supply Chain Managementissa
               items:
                 - name: Kehyksen määrittäminen
                   items:
                     - name: Sähköisen raportointikehyksen määrittäminen
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Sähköisen raportoinnin mallien varmuuskopiointi ja palauttaminen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                      items:
+                        - name: Sähköisen raportoinnin mallien varmuuskopion tallennustila
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Sähköisen raportoinnin siirron siivous
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfiguraatioiden lähteiden luominen ja merkitseminen aktiivisiksi
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kohteet
@@ -1213,6 +1299,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Kohteiden määrittäminen
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Toimintosidonnaisten kohteiden määrittäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisen raportoinnin muodon viitteen määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Luotujen raporttien vahvistaminen automaattisesti
@@ -1221,32 +1309,48 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Testauksen automatisointi sähköisen raportoinnin avulla
+                    - name: 'Testauksen automatisointi ER:n avulla'
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Liiketoimintaprosessien automatisointi sähköisten raportointikonfiguraatioiden avulla
+                - name: Liiketoimintaprosessien automatisointi sähköisen raportoinnin konfiguraatioiden avulla
                   items:
-                    - name: 'Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin'
+                    - name: 'Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin'
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Liiketoiminta-asiakirjojen hallinta
+                - name: Liiketoiminta-asiakirjojen hallinta (BDM)
                   items:
-                    - name: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
+                    - name: 'BDM:n yleiskatsaus'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Uuden asiakirjan käyttöliittymä liiketoiminta-asiakirjan hallinnassa
+                    - name: 'BDM:n uusi asiakirjan käyttöliittymä'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Uusien kenttien lisääminen liiketoiminta-asiakirjan malliin Microsoft Excelissä
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Liiketoiminta-asiakirjamallien muokkaaminen BDM:ssä'
+                      items:
+                        - name: Uusien kenttien lisääminen liiketoiminta-asiakirjan malliin Microsoft Excelissä
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Liiketoiminta-asiakirjamallin rakenteen päivittäminen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sähköisen raportoinnin kehyksen ohjelmointirajapinta
               items:
-                - name: Sähköisen raportoinnin toimintoluettelon laajentaminen
+                - name: Oletustoimintoluettelon laajentaminen
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset Application update 7.3 -päivitystä varten
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ohjelmointirajapinnan muutokset
+                  items:
+                    - name: Application Update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application Update 10.0.11
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application Update 10.0.17
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin kohteen luomisen delegoiminen mukautettuun kohdetehtaaseen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tietolähdearvojen käynnistäminen lähdekoodin USER INPUT PARAMETER -tyypistä
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Varastonhallinta
           items:
             - name: Varastonhallinnan yleiskatsaus
@@ -1973,8 +2077,10 @@
                       href: pim/tasks/create-dimension-based-configurations.md
                 - name: Poissulkevan konfiguraation luominen
                   items:
-                    - name: Tuotemääritysmallin määritys
+                    - name: Tuotekonfiguraatiomallin määritys
                       href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Tuotekonfiguraatiomallin laskelmat
+                      href: pim/config-model-calculations.md
                     - name: Tuotekonfiguraatiomallin laskennan usein kysytyt kysymykset
                       href: pim/calculate-product-configuration-models.md
                     - name: Konfiguraatiosääntö
@@ -2043,6 +2149,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Tuotannon alihankintatyön hallinta
               href: production-control/manage-subcontract-work-production.md
+            - name: Työtunnusten yhdistetty numerosarja
+              href: production-control/unified-job-ids.md
             - name: Erillinen tuotanto
               items:
                 - name: Tuotannon päätietojen ylläpito
@@ -2347,6 +2455,28 @@
                       href: cost-management/production-posting.md
                 - name: Prosessivalmistuksen vianmääritys
                   href: production-control/troubleshoot-processmanufacturing.md
+        - name: Ostohyvitysten hallinta
+          items:
+            - name: Ostohyvitysten hallintamoduulin yleiskatsaus
+              href: rebate-management/rebate-management-overview.md
+            - name: Ostohyvitysten hallintamoduulin määrittäminen ja konfiguroiminen
+              items:
+                - name: Ostohyvitysten hallinnan parametrit
+                  href: rebate-management/rebate-management-parameters.md
+                - name: Ostohyvitysten hallintasopimuksen työnkulut
+                  href: rebate-management/rebate-management-workflows.md
+                - name: Ostohyvityksen vähentämisperiaatteet
+                  href: rebate-management/rebate-reduction-principle.md
+                - name: Ostohyvityksen tilat
+                  href: rebate-management/rebate-statuses.md
+                - name: Ostohyvitysten hallintaryhmät
+                  href: rebate-management/rebate-management-groups.md
+                - name: Ostohyvitysten hallinnan kirjausasetukset
+                  href: rebate-management/rebate-management-posting.md
+            - name: Ostohyvitysten hallintasopimukset
+              href: rebate-management/rebate-management-deals.md
+            - name: 'Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen'
+              href: rebate-management/process-review-post.md
         - name: Myynti ja markkinointi
           items:
             - name: Myynnin ja markkinoinnin yleiskatsaus
@@ -2819,6 +2949,8 @@
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
                     - name: Varastonhallinnan varausten vianmääritys
                       href: warehousing/troubleshoot-warehouse-reservations.md
+                    - name: Varaston erä- ja sarjavaraushierarkioiden vianmääritys
+                      href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
                 - name: Osittainen vapautus ja osalähetys
                   items:
                     - name: Kuljetuskuorman osalähetys
@@ -2837,8 +2969,6 @@
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Eri dimensioiden määrittäminen pakkausta ja varastointia varten
                       href: warehousing/packing-vs-storage-dimensions.md
-                    - name: Konttiinpakkauksen määrittäminen
-                      href: warehousing/tasks/set-up-containerization.md
                     - name: Erän ja rekisterikilven tiedot
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Rekisterikilven etiketin tulostuksen ottaminen käyttöön
@@ -2899,10 +3029,6 @@
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Vapauta varastoon -sääntö
                       href: warehousing/release-to-warehouse-rule.md
-                    - name: Aallon mallipohjan ryhmittely
-                      href: warehousing/wave-template-grouping.md
-                    - name: Aallon etikettien tulostaminen uudelleen ja mitätöinti
-                      href: warehousing/reprint-and-void-wave-labels.md
                     - name: Pienten pakettien lähettäminen
                       href: warehousing/small-parcel-shipping.md
                     - name: Kuormituksen luomisen ja lähetysten vianmääritys
@@ -2923,6 +3049,10 @@
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: Skenaario 5 – Lähetysten konsolidointi manuaalisesti käyttämällä Lähetysten konsolidointi -sivua
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Aaltojen luominen ja käsittely
+                  href: warehousing/wave-processing.md
+                - name: Aallon etikettien tulostaminen uudelleen ja mitätöinti
+                  href: warehousing/reprint-and-void-wave-labels.md
                 - name: Lähtevien varaston työvaiheiden vianmääritys
                   href: warehousing/troubleshoot-warehouse-outbound.md
             - name: Koko varaston toiminnot
@@ -3003,17 +3133,31 @@
                       href: warehousing/filters-and-filter-codes.md
                     - name: Sijainnin varastointirajoitukset
                       href: warehousing/location-stocking-limits.md
-                    - name: Aallon vaihekoodit
-                      href: warehousing/wave-step-codes.md
-                    - name: Aaltokäsittelyn määrittäminen
-                      href: warehousing/tasks/configure-wave-processing.md
-                    - name: Työn luomisen ajoitus aallon aikana
-                      href: warehousing/configure-wave-schedule-work-creation.md
-                    - name: Aallon etikettitulostuksen määrittäminen ja käyttäminen
-                      href: warehousing/configure-wave-label-printing.md
+                    - name: Aallon luominen ja käsittely
+                      items:
+                        - name: Aaltokäsittelyn konfiguroinnin esimerkki
+                          href: warehousing/tasks/configure-wave-processing.md
+                        - name: Varaston parametrit aaltokäsittelyä varten
+                          href: warehousing/wave-warehouse-parameters.md
+                        - name: Aaltomallit
+                          href: warehousing/wave-templates.md
+                        - name: Aallon vaihekoodit
+                          href: warehousing/wave-step-codes.md
+                        - name: Aaltomallien ryhmittely
+                          href: warehousing/wave-template-grouping.md
+                        - name: Aallon kohdistus
+                          href: warehousing/wave-allocation-method.md
+                        - name: Työn luomisen ajoitus aallon aikana
+                          href: warehousing/configure-wave-schedule-work-creation.md
+                        - name: Aallon suoritusilmoitukset
+                          href: warehousing/wave-execution-notifications.md
+                        - name: Aallon etiketin tulostus
+                          href: warehousing/configure-wave-label-printing.md
+                        - name: Konttiinpakkaus
+                          href: warehousing/wave-containerization.md
                     - name: Lähetysten automaattinen päivitys
                       href: warehousing/auto-update-shipment.md
-                    - name: Toimipaikkaprofiilin luonti
+                    - name: Sijaintiprofiilin luonti
                       href: warehousing/tasks/create-location-profile.md
                     - name: Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa
                       href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
@@ -3039,9 +3183,9 @@
                       href: warehousing/mobile-barcode-support.md
                     - name: Siirtotilausten varaston määrittäminen
                       href: warehousing/transfer-orders-warehouse.md
-                    - name: Varaston määrityksen vianmääritys
+                    - name: Varaston konfiguroinnin vianmääritys
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Varastosovelluksen asentaminen ja määrittäminen
+                - name: Varastonhallinnan mobiilisovelluksen asentaminen ja konfigurointi
                   items:
                     - name: Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
                       href: warehousing/install-configure-warehouse-management-app.md
@@ -3049,15 +3193,15 @@
                       href: warehousing/mobile-device-user-settings.md
                     - name: Varastosovelluksen asentaminen ja yhdistäminen
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Viivakoodien lukeminen kameran avulla varastosovelluksessa
+                    - name: Viivakoodien lukeminen kameran avulla varastonhallinnan mobiilisovelluksessa
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Kenttien nimien määrittäminen varastosovelluksessa
+                    - name: Varastonhallinnan mobiilisovelluksen kenttien konfigurointi
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Varastotyön mobiililaitteiden määrittäminen
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Varastosovelluksen tapahtumakäsittely
                       href: warehousing/warehouse-app-events.md
-                    - name: Rekisterikilven vastaanottaminen varastosovelluksella
+                    - name: Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3075,7 +3219,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Prosessioppaan kehys
                       href: warehousing/process-guide-framework.md
-                    - name: Varastosovelluksen yhteysongelmien vianmääritys
+                    - name: Varastonhallinnan mobiilisovelluksen yhteysongelmien vianmääritys
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Päivitys ja siirto
                   items:

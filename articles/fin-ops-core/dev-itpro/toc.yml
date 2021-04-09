@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platform update -päivitykset 10.0.16 (helmikuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Platform update -päivitykset 10.0.15 (tammikuu 2021)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Integroitu työntekijä, työ ja sijainti'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Osapuolen osoitekirja ja yleinen osoitekirja
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Power Portalin käyttö osapuolen tietomallin kanssa
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Huomautusten integrointi
                               href: data-entities/dual-write/notes-integration.md
                             - name: Määritysviite
@@ -526,13 +528,15 @@
                   items:
                     - name: 'Paikallisten projektien määrittäminen LCS:ssä'
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Paikallisten ympäristöjen asennus ja käyttöönotto
+                    - name: Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update ‑päivitykset 12–40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Retail-kanavan komponenttien asennusohjeet paikallisessa ympäristössä
                       href: deployment/deploy-retail-onprem.md
                     - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Ympäristön ylläpito
+                - name: Ympäristötoiminnot
                   items:
                     - name: Päivitysten käyttöönotto paikallisessa ympäristössä
                       href: deployment/apply-updates-on-premises.md
@@ -540,9 +544,11 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Asiakasohjelman Internet-yhteys
                       href: user-interface/client-disconnected.md
-                    - name: Määritä vain erä- ja vain vuorovaikutteiset AOS-solmut paikallisissa käyttöönotoissa
+                    - name: Konfiguroi vain erä- ja vain vuorovaikutteiset AOS-solmut paikallisissa käyttöönotoissa
                       href: deployment/onprem-batchonly.md
-                    - name: Välityspalvelimien määrittäminen paikallisiin ympäristöihin
+                    - name: SQL Server Reporting Services (SSRS) -solmujen korkean käytettävyyden konfigurointi
+                      href: deployment/onprem-SSRSHA.md
+                    - name: Välityspalvelimien konfigurointi paikallisia ympäristöjä varten
                       href: deployment/onprem-reverseproxy.md
                     - name: Paikallisten ympäristöjen diagnostiikka
                       href: deployment/on-premises-diagnostics.md
@@ -1136,20 +1142,24 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform -integrointi
           items:
-            - name: Microsoft Power Platform- ja Finance and Operations -integrointi
-              href: power-platform/overview.md
-            - name: Lisäosien yleiskatsaus
-              href: power-platform/add-ins-overview.md
-            - name: Yksikkömallinnus
-              href: power-platform/entity-modeling.md
-            - name: Sovellusten elinkaaren hallinta
-              href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations- ja Dataverse -järjestelmänvalvojan viitetiedot
-              href: power-platform/admin-reference.md
-            - name: Power Apps -portaalit Finance and Operationsin kanssa
-              href: power-platform/power-portal-reference.md
-            - name: Finance and Operations -virtuaaliyksiköiden usein kysytyt kysymykset
-              href: power-platform/faq.md
+            - name: Virtuaaliyksiköt
+              items:
+                - name: Microsoft Power Platform- ja Finance and Operations -integrointi
+                  href: power-platform/overview.md
+                - name: Yksikkömallinnus
+                  href: power-platform/entity-modeling.md
+                - name: Sovellusten elinkaaren hallinta
+                  href: power-platform/application-lifecycle-management.md
+                - name: Finance and Operations- ja Dataverse -järjestelmänvalvojan viitetiedot
+                  href: power-platform/admin-reference.md
+                - name: Power Apps -portaalit Finance and Operationsin kanssa
+                  href: power-platform/power-portal-reference.md
+                - name: Finance and Operations -virtuaaliyksiköiden usein kysytyt kysymykset
+                  href: power-platform/faq.md
+            - name: Apuohjelmat
+              items:
+                - name: Apuohjelmien yleiskatsaus
+                  href: power-platform/add-ins-overview.md
         - name: Mobiiliympäristö
           items:
             - name: Mobiiliympäristön resurssit
@@ -1390,6 +1400,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Regression Suite Automation Tool -opas
               href: perf-test/rsat/rsat-tutorial.md
+            - name: Muiden kuin järjestelmänvalvojakäyttäjien konfigurointi
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Parhaat käytännöt
               href: perf-test/rsat/rsat-best-practices.md
             - name: Tietoriippumaaton testaaminen Regression Suite Automation Toolilla

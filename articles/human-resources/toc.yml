@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 22. maaliskuuta 2021
+          href: hr-whats-new-2021-03-22.md
         - name: 8. maaliskuuta 2021
           href: hr-whats-new-2021-03-08.md
         - name: 22. helmikuuta 2021
@@ -261,13 +263,15 @@
           items:
             - name: Hanki tukea
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
-            - name: Optimoi suorituskyky erätöiden määrityksellä työajan jälkeen
+            - name: Suorituskyvyn optimointi erätöiden määrityksellä työajan jälkeen
               href: hr-admin-troubleshooting-batch-jobs.md
-            - name: Optimoi suorituskyky automaattisilla tyhjennystehtävillä
+            - name: Suorituskyvyn optimointi automaattisilla tyhjennystehtävillä
               href: hr-admin-troubleshooting-batch-history.md
+            - name: Jumittuneiden erätöiden nollaaminen
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: Analytiikkaraportteja ei päivitetä
               href: hr-admin-troubleshooting-analytic-reports.md
-            - name: Power Apps -hallintakeskuksessa ei voi luoda ympäristöä
+            - name: Power Apps ‑hallintakeskuksessa ei voi luoda ympäristöä
               href: hr-admin-troubleshooting-power-apps.md
             - name: Asiakasohjelma katkaisee yhteyden
               href: hr-admin-troubleshooting-disconnect.md
