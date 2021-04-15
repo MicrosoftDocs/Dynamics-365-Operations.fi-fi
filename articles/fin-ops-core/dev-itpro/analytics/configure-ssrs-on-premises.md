@@ -2,7 +2,6 @@
 title: SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa
 description: Tässä ohjeaiheessa on tietoja SQL Server Reporting Servicesin (SSRS) määrittämisestä paikallista käyttöönottoa varten.
 author: PeterRFriis
-manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: ''
@@ -15,83 +14,83 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: cc8bb6c3a993274f70316145f2ec8a6217e6886c
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 88e6d5470ff7808a9b6263b6426e19f6ea11493d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571701"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755521"
 ---
-# <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a><span data-ttu-id="4f189-103">SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa</span><span class="sxs-lookup"><span data-stu-id="4f189-103">Configure SQL Server Reporting Services for on-premises deployments</span></span>
+# <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a><span data-ttu-id="33af7-103">SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa</span><span class="sxs-lookup"><span data-stu-id="33af7-103">Configure SQL Server Reporting Services for on-premises deployments</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4f189-104">Määritä Microsoft Dynamics 365 Finance + Operationsin (paikallinen) käyttöönoton SQL Server Reporting Services (SSRS) tämän ohjeaiheen ohjeiden mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="4f189-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.</span></span>
+<span data-ttu-id="33af7-104">Määritä Microsoft Dynamics 365 Finance + Operationsin (paikallinen) käyttöönoton SQL Server Reporting Services (SSRS) tämän ohjeaiheen ohjeiden mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="33af7-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.</span></span>
 
-1. <span data-ttu-id="4f189-105">Avaa Reporting Services -määritystenhallintasovellus</span><span class="sxs-lookup"><span data-stu-id="4f189-105">Open the Reporting Services Configuration Manager application.</span></span>
-2. <span data-ttu-id="4f189-106">Jätä oletusarvoinen **Palvelimen nimi**, jonka pitäisi olla nykyisen laitteen nimi, ja **Report Server -esiintymä**, **MSSQLSERVER**.</span><span class="sxs-lookup"><span data-stu-id="4f189-106">Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.</span></span>
-3. <span data-ttu-id="4f189-107">Valitse **Yhdistä**.</span><span class="sxs-lookup"><span data-stu-id="4f189-107">Click **Connect**.</span></span>
+1. <span data-ttu-id="33af7-105">Avaa Reporting Services -määritystenhallintasovellus</span><span class="sxs-lookup"><span data-stu-id="33af7-105">Open the Reporting Services Configuration Manager application.</span></span>
+2. <span data-ttu-id="33af7-106">Jätä oletusarvoinen **Palvelimen nimi**, jonka pitäisi olla nykyisen laitteen nimi, ja **Report Server -esiintymä**, **MSSQLSERVER**.</span><span class="sxs-lookup"><span data-stu-id="33af7-106">Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.</span></span>
+3. <span data-ttu-id="33af7-107">Valitse **Yhdistä**.</span><span class="sxs-lookup"><span data-stu-id="33af7-107">Click **Connect**.</span></span>
 
-    <span data-ttu-id="4f189-108">[![Reporting Servicesin määritysyhteys](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-108">[![Reporting services configuration connection](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span></span>
+    <span data-ttu-id="33af7-108">[![Reporting Servicesin määritysyhteys](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-108">[![Reporting services configuration connection](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span></span>
 
-4. <span data-ttu-id="4f189-109">Valitse **Palvelutili**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-109">Click the **Service Account** tab and verify that the settings match the following graphic.</span></span>
+4. <span data-ttu-id="33af7-109">Valitse **Palvelutili**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-109">Click the **Service Account** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="4f189-110">[![Palvelutili-välilehti](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-110">[![Service account tab](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span></span>
+    <span data-ttu-id="33af7-110">[![Palvelutili-välilehti](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-110">[![Service account tab](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span></span>
 
-5. <span data-ttu-id="4f189-111">Valitse **Internet-palvelun URL**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-111">Click the **Web Service URL** tab and verify that the settings match the following graphic.</span></span>
+5. <span data-ttu-id="33af7-111">Valitse **Internet-palvelun URL**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-111">Click the **Web Service URL** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="4f189-112">[![Internet-palvelun URL -välilehti](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-112">[![Web service URL tab](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span></span>
+    <span data-ttu-id="33af7-112">[![Internet-palvelun URL -välilehti](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-112">[![Web service URL tab](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span></span>
 
-6. <span data-ttu-id="4f189-113">Valitse **Tietokanta**-välilehti ja tarkista, että **Tietokannan nimi** ja **Tunnistetietojen asetukset** ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-113">Click the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="4f189-114">Sinun on luotava uusi tietokanta.</span><span class="sxs-lookup"><span data-stu-id="4f189-114">You will need to create a new database.</span></span> <span data-ttu-id="4f189-115">Tee se valitsemalla **Muuta tietokantaa** ja tarkista sitten, että uuden tietokannan nimi on **DynamicsAxReportServer**.</span><span class="sxs-lookup"><span data-stu-id="4f189-115">To do this, click **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.</span></span>
-
-    <span data-ttu-id="4f189-116">[![tietokanta-välilehti](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-116">[![database tab](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span></span>
-
-7. <span data-ttu-id="4f189-117">Valitse **Internet-portaalin URL** -välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-117">Click the **Web Portal URL** tab and verify that the settings match the following graphic.</span></span>
+6. <span data-ttu-id="33af7-113">Valitse **Tietokanta**-välilehti ja tarkista, että **Tietokannan nimi** ja **Tunnistetietojen asetukset** ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-113">Click the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="4f189-118">Sinun on valittava **Käytä**, jotta voit luoda ja määrittää portaalin oikein.</span><span class="sxs-lookup"><span data-stu-id="4f189-118">You must click **Apply** to create and properly configure the Portal.</span></span>
+    > <span data-ttu-id="33af7-114">Sinun on luotava uusi tietokanta.</span><span class="sxs-lookup"><span data-stu-id="33af7-114">You will need to create a new database.</span></span> <span data-ttu-id="33af7-115">Tee se valitsemalla **Muuta tietokantaa** ja tarkista sitten, että uuden tietokannan nimi on **DynamicsAxReportServer**.</span><span class="sxs-lookup"><span data-stu-id="33af7-115">To do this, click **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.</span></span>
 
-    <span data-ttu-id="4f189-119">[![Internet-portaalin url -välilehti](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
+    <span data-ttu-id="33af7-116">[![tietokanta-välilehti](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-116">[![database tab](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span></span>
 
-    <span data-ttu-id="4f189-120">Kun portaali on määritetty, **Internet-portaali**-välilehden on vastattava seuraavaa kuvaa.</span><span class="sxs-lookup"><span data-stu-id="4f189-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
+7. <span data-ttu-id="33af7-117">Valitse **Internet-portaalin URL** -välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-117">Click the **Web Portal URL** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="4f189-121">[![Internet-portaali-välilehti](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="33af7-118">Sinun on valittava **Käytä**, jotta voit luoda ja määrittää portaalin oikein.</span><span class="sxs-lookup"><span data-stu-id="33af7-118">You must click **Apply** to create and properly configure the Portal.</span></span>
 
-8. <span data-ttu-id="4f189-122">Avaa SQL Server Reporting Services -verkkoportaali napsauttamalla raporttien URL-osoitetta.</span><span class="sxs-lookup"><span data-stu-id="4f189-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span>
-9. <span data-ttu-id="4f189-123">Luo portaalissa uusi **Dynamics**-niminen kansio.</span><span class="sxs-lookup"><span data-stu-id="4f189-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
+    <span data-ttu-id="33af7-119">[![Internet-portaalin url -välilehti](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
 
-    <span data-ttu-id="4f189-124">[![dynamics-kansio](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
+    <span data-ttu-id="33af7-120">Kun portaali on määritetty, **Internet-portaali**-välilehden on vastattava seuraavaa kuvaa.</span><span class="sxs-lookup"><span data-stu-id="33af7-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
 
-10. <span data-ttu-id="4f189-125">Valitse **Reporting Servicesin määritystenhallinnassa** **Sähköpostiasetukset**-välilehti ja varmista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
+    <span data-ttu-id="33af7-121">[![Internet-portaali-välilehti](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
 
-    <span data-ttu-id="4f189-126">[![sähköpostiasetukset-välilehti](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-126">[![email settings tab](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span></span>
+8. <span data-ttu-id="33af7-122">Avaa SQL Server Reporting Services -verkkoportaali napsauttamalla raporttien URL-osoitetta.</span><span class="sxs-lookup"><span data-stu-id="33af7-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span>
+9. <span data-ttu-id="33af7-123">Luo portaalissa uusi **Dynamics**-niminen kansio.</span><span class="sxs-lookup"><span data-stu-id="33af7-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
 
-11. <span data-ttu-id="4f189-127">Valitse **Toimeenpanotili**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-127">Click the **Execution Account** tab and verify that the settings match the following graphic.</span></span>
+    <span data-ttu-id="33af7-124">[![dynamics-kansio](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
 
-    <span data-ttu-id="4f189-128">[![toimeenpanotili-välilehti](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
+10. <span data-ttu-id="33af7-125">Valitse **Reporting Servicesin määritystenhallinnassa** **Sähköpostiasetukset**-välilehti ja varmista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="4f189-129">Älä muuta **Salausavaimet**-välilehden oletusasetuksia.</span><span class="sxs-lookup"><span data-stu-id="4f189-129">Don't change the default settings on the **Encryption Keys** tab.</span></span>
+    <span data-ttu-id="33af7-126">[![sähköpostiasetukset-välilehti](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-126">[![email settings tab](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span></span>
 
-    <span data-ttu-id="4f189-130">[![salausavaimet-välilehti](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-130">[![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
+11. <span data-ttu-id="33af7-127">Valitse **Toimeenpanotili**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-127">Click the **Execution Account** tab and verify that the settings match the following graphic.</span></span>
 
-12. <span data-ttu-id="4f189-131">Valitse **Tilausasetukset**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="4f189-131">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
+    <span data-ttu-id="33af7-128">[![toimeenpanotili-välilehti](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
 
-    <span data-ttu-id="4f189-132">[![tilausasetukset-välilehti](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-132">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
+    <span data-ttu-id="33af7-129">Älä muuta **Salausavaimet**-välilehden oletusasetuksia.</span><span class="sxs-lookup"><span data-stu-id="33af7-129">Don't change the default settings on the **Encryption Keys** tab.</span></span>
 
-    <span data-ttu-id="4f189-133">Älä muuta **Skaalauskäyttöönotto**-välilehden oletusasetuksia.</span><span class="sxs-lookup"><span data-stu-id="4f189-133">Don't change the default settings on the **Scale-out Deployment** tab.</span></span>
+    <span data-ttu-id="33af7-130">[![salausavaimet-välilehti](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-130">[![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
 
-    <span data-ttu-id="4f189-134">[![skaalauskäyttöönotto-välilehti](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-134">[![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
+12. <span data-ttu-id="33af7-131">Valitse **Tilausasetukset**-välilehti ja tarkista, että asetukset ovat samat kuin seuraavassa kuvassa.</span><span class="sxs-lookup"><span data-stu-id="33af7-131">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
 
-    <span data-ttu-id="4f189-135">Älä muuta **Power BI -integrointi** -välilehden oletusasetuksia.</span><span class="sxs-lookup"><span data-stu-id="4f189-135">Don't change the default settings on the **Power BI Integration** tab.</span></span>
+    <span data-ttu-id="33af7-132">[![tilausasetukset-välilehti](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-132">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
 
-    <span data-ttu-id="4f189-136">[![power bi -integrointi -välilehti](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-136">[![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span>
+    <span data-ttu-id="33af7-133">Älä muuta **Skaalauskäyttöönotto**-välilehden oletusasetuksia.</span><span class="sxs-lookup"><span data-stu-id="33af7-133">Don't change the default settings on the **Scale-out Deployment** tab.</span></span>
 
-13. <span data-ttu-id="4f189-137">Sulje **Reporting Services -määritystenhallintasovellus** valitsemalla **Lopeta**.</span><span class="sxs-lookup"><span data-stu-id="4f189-137">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
+    <span data-ttu-id="33af7-134">[![skaalauskäyttöönotto-välilehti](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-134">[![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
 
-    <span data-ttu-id="4f189-138">[![reporting Servicesin määritystenhallinnan sulkeminen](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span><span class="sxs-lookup"><span data-stu-id="4f189-138">[![close reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span></span>
+    <span data-ttu-id="33af7-135">Älä muuta **Power BI -integrointi** -välilehden oletusasetuksia.</span><span class="sxs-lookup"><span data-stu-id="33af7-135">Don't change the default settings on the **Power BI Integration** tab.</span></span>
+
+    <span data-ttu-id="33af7-136">[![power bi -integrointi -välilehti](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-136">[![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span>
+
+13. <span data-ttu-id="33af7-137">Sulje **Reporting Services -määritystenhallintasovellus** valitsemalla **Lopeta**.</span><span class="sxs-lookup"><span data-stu-id="33af7-137">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
+
+    <span data-ttu-id="33af7-138">[![reporting Servicesin määritystenhallinnan sulkeminen](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span><span class="sxs-lookup"><span data-stu-id="33af7-138">[![close reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
