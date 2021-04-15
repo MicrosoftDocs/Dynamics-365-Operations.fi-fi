@@ -2,11 +2,9 @@
 title: Perinnät myyntireskontrassa
 description: Myyntireskontran perimistietoja hallitaan keskitetysti yhdessä näkymässä Microsoft Dynamics 365 Financen Perintä-sivulla. Luotonvalvonnan esimiehet voit hallita perintää tästä keskusnäkymästä. Perimisasiamiehet voivat aloittaa perintäprosessin ennalta määritettyjen ehtojen mukaan muodostettavasta asiakasluettelosta tai Asiakkaat-sivulta.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4dd9887debf73b94fb976af873690dcc53b8f53c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224786"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814245"
 ---
 # <a name="collections-in-accounts-receivable"></a>Perinnät myyntireskontrassa
 

@@ -2,11 +2,9 @@
 title: Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella
 description: Tässä artikkelissa on kaksi skenaariota, jotka osoittavat, miten käteisalennus voidaan käyttää, vaikka maksu suoritettaisiin käteisalennuskauden ulkopuolella.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df635e78fff1994b9a9e1abc99c67470852ad81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 47acacf9b1e9667e86fcdd5ce1ed62e79d8afec3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235858"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810219"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella
 
@@ -43,7 +41,7 @@ April merkitsee laskun maksulle. Käteisalennusta ei käytetä, koska maksu suor
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 12.7.2015 |
 | Käteisalennussumma         | -20,00    |
@@ -61,7 +59,7 @@ Jos sekä maksu ja lasku on kirjattu, käteisalennusta voi edelleen käyttää, 
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. Käytettävä alennussumma on 20,00, koska laskulle tilitettävä summa on oletussumma, eli 1 980,00.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 12.7.2015 |
 | Käteisalennussumma         | -20,00    |
@@ -78,7 +76,7 @@ April päivittää laskun **Tilitettävä summa** -kentän arvoksi **-500,00**. 
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. **Käytettävä käteisalennussumma** -kentän arvo on **5,05**, koska laskun tilitettäväksi summaksi muutettiin maksun summa, 500,00.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 12.7.2015 |
 | Käteisalennussumma         | -20,00    |

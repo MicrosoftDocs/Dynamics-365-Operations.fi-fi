@@ -2,11 +2,9 @@
 title: Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 description: Tässä artikkelissa käydään läpi skenaario, jossa suoritetaan useita osittaisia maksuja, joista osa on käteisalennuskaudella ja osa käteisalennuskauden ulkopuolella.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227325"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810339"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 
@@ -46,12 +44,12 @@ April syöttää ja kirjaa 25. kesäkuuta laskun toimittajalle 3057, jonka arvo 
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Valittu | Normaali            | Lku-10020 | 3057    | 25.6.2015 | 25.7.2015 | 10020   | -1 000,00                      | USD      | -297,00          |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
-| Käteisalennussumma         | –10,00    |
+| Käteisalennussumma         | -10,00    |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | -3,00     |
@@ -73,7 +71,7 @@ April maksaa loput laskusta 15.7, joka on alennuskauden jälkeen. Alennussummaa 
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa. April näkee, että hän on jo käyttänyt 3,00:n alennuksen.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 0,00      |
@@ -99,10 +97,10 @@ Jos toimittaja sallii alennuksen käyttämisen, vaikka April on maksamassa lasku
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
-| Käteisalennussumma         | 7:00      |
+| Käteisalennussumma         | 7.00      |
 | Käytä käteisalennusta            | Aina    |
 | Käytetty käteisalennus          | -3,00     |
 | Käytettävä käteisalennussumma | -7,00     |
