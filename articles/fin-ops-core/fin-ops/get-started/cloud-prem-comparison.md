@@ -2,7 +2,6 @@
 title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 description: Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566633"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744048"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
@@ -43,9 +42,9 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |---------------------|-----------------------------|-----------|-----------------|
 | Yhteensopivuus ja sertifiointi        |                                                                                           | Kyllä       | Kyllä             |
 |                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Ei              |
-| Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             
+| Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Tietojen vienti omaan tietovarastoon                                                    | Kyllä       | Kyllä             |
-|                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä              |
+|                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä             |
 |                                      | Tietojen integroinnit                                                                         | Kyllä       | Kyllä             |
 | Tiedoston hallinta                  |                                                                                           | Kyllä       | Kyllä             |
 | Taloushallinto                 |                                                                                           | Kyllä       | Kyllä             |
@@ -62,8 +61,8 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |                                      | Analyysityötilat                                                                     | Kyllä       | Nro              |
 |                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Nro              |
 |                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Nro              |
-|                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | Ei              |
-|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Ei              |
+|                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | Kyllä             |
+|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Nro              |
 | Käyttöikäpalvelut                   |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Konfiguroitavat liiketoimintaprosessit                                                           | Kyllä       | Ei              |
 | Lokalisoinnit                        |                                                                                           | Kyllä       | Kyllä             |
@@ -85,7 +84,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 
 | **Alue**                | **Ominaisuus**             | **Pilvi** | **Paikallinen** |
 |-------------------------|-------------------|-----------|-----------------|
-| Resurssien hallinta                     |                                                                                           | Kyllä       | Nro |
+| Resurssien hallinta                     |                                                                                           | Kyllä       | Nro              |
 | Yhteensopivuus ja sertifiointi        |                                                                                           | Kyllä       | Kyllä             |
 |                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Nro              |
 | Kustannuslaskenta                      |                                                                                           | Kyllä       | Kyllä             |
@@ -96,7 +95,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 | Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Määritysperustainen laajennus                                                            | Kyllä       | En              |
 |                                      | Tietojen vienti omaan tietovarastoon                                                    | Kyllä       | Kyllä             |
-|                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä              |
+|                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä             |
 |                                      | Tietojen integroinnit                                                                         | Kyllä       | Kyllä             |
 | Tiedostojen hallinta                  |                                                                                           | Kyllä       | Kyllä             |
 | Ohje                                 |                                                                                           | Kyllä       | Ei              |
@@ -111,9 +110,9 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |                                      | Analyysityötilat                                                                     | Kyllä       | Nro              |
 |                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Nro              |
 |                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Nro              |
-|                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | En              |
-|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | En              |
-| Varastoinninhallinta                 |                                                                                           | Kyllä       | Kyllä             |
+|                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | Kyllä             |
+|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Nro              |
+| Inventoinnin- ja varastonhallinta                 |                                                                                           | Kyllä       | Kyllä             |
 | Käyttöikäpalvelut                   |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Konfiguroitavat liiketoimintaprosessit                                                           | Kyllä       | En              |
 | Lokalisoinnit                        |                                                                                           | Kyllä       | Kyllä             |

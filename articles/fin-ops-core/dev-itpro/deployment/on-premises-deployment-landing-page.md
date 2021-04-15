@@ -2,8 +2,7 @@
 title: Paikallisen käyttöönoton aloitussivu – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564057"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749302"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -38,12 +37,14 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 
 ## <a name="onboard"></a>Perehdytys
 - [Paikallisten Lifecycle Services (LCS) -projektien määrittäminen](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 12 ja uudemmat)](setup-deploy-on-premises-pu12.md)
+- [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](setup-deploy-on-premises-pu41.md)
+- [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update ‑päivitykset 12–40)](setup-deploy-on-premises-pu12.md)
 - [Verkkotulostimien asentaminen paikallisiin ympäristöihin](../analytics/install-network-printer-onprem.md)
 - [SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa](../analytics/configure-ssrs-on-premises.md)
-- [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](develop-deploy-custom-models-on-premises.md)
+- [Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Paikallinen käyttöönoton käyttäminen
+- [SQL Server Reporting Services (SSRS) -solmujen korkean käytettävyyden konfigurointi](onprem-SSRSHA.md)
 - [Asiakirjanhallinnan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md)
 - [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti, julkaiseminen ja tulostaminen paikallisissa ympäristöissä](../analytics/printing-capabilities-on-premises.md)
