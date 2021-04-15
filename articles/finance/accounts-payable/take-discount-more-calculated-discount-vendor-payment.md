@@ -2,11 +2,9 @@
 title: Summa on suurempi kuin toimittajan maksulle laskettu alennus
 description: Tässä artikkelissa käydään läpi skenaario, jossa käteisalennuksen summa on suurempi kuin alennus, joka oli alunperin käytettävissä laskussa. Tämä skenaario on mahdollinen, jos organisaatio sopii toimittajan kanssa laskun summaa pienemmän summan maksamisesta.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a56331f76867aeac0bad0912749d96f959513e0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 62f2088ff04a0ef5ffe6ffe47b85f47e6957264d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235882"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810243"
 ---
 # <a name="take-more-than-the-calculated-discount-for-a-vendor-payment"></a>Summa on suurempi kuin toimittajan maksulle laskettu alennus
 
@@ -38,10 +36,10 @@ Toimittaja 3051 antaa Fabrikamille 4 prosentin käteisalennuksen, jos lasku maks
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 12.7.2015 |
-| Käteisalennussumma         | 60,00     |
+| Käteisalennussumma         | 60.00     |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | 60,00     |

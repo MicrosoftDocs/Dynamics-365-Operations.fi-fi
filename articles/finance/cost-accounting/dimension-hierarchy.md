@@ -2,11 +2,9 @@
 title: Dimensiohierarkia
 description: Tässä ohjeaiheessa on tietoja dimensiohierarkioista. Dimensiohierarkian avulla voi määrittää kustannuslaskennan raportoinnin rakenteen, kustannuskäytännöt ja suojausasetukset.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217383"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810171"
 ---
 # <a name="dimension-hierarchy"></a>Dimensiohierarkia
 
@@ -124,12 +122,13 @@ Organisaation raportointivaatimukset täyttävä dimension hierarkia voidaan mä
 
 Raportoinnin dimensiohierarkia voidaan määrittää tässä kuvatulla tavalla.
 
-|                   | Dimension jäsenalueet   |                         |
+**Dimension jäsenalueet**
+
+|   Solmukohdat           |   Lähtödimension jäsen   |   Kohdedimension jäsen   |
 |-------------------|---------------------------|-------------------------|
-| **Solmukohdat**         | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Organisaatio      |                           |                         |
 | &nbsp;&nbsp;Hallinto         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Henkilöstöhallinto        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Tuotanto    |                           |                         |
@@ -146,12 +145,13 @@ Käytäntövaatimukset täyttävä dimension hierarkia voidaan määrittää tä
 
 Käytännön dimensiohierarkia voidaan määrittää tässä kuvatulla tavalla.
 
-|                   | Dimension jäsenalueet   |                         |
+**Dimension jäsenalueet**
+
+|   Solmukohdat           |   Lähtödimension jäsen   |   Kohdedimension jäsen   |
 |-------------------|---------------------------|-------------------------|
-| **Solmukohdat**         | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Kustannustoiminta     |                           |                         |
 | &nbsp;&nbsp;Kiinteä kustannus    | 10 001                     | 10011                   |
-|&nbsp;&nbsp;Muuttuva kulu | 40001                     | 40010                   |
+| &nbsp;&nbsp;Muuttuva kulu | 40001                     | 40010                   |
 
 > [!NOTE]
 > Solmulla voi olla **Dimension jäsenalueet** -kohdassa 1:_n_ dimension jäsenaluetta. Voit lisätä ne dimension jäsentunnukset, jotka eivät ole vielä dimension jäseniä. Tämä menetelmä mahdollistaa hierarkian käytön myös tulevaisuudessa.  
@@ -297,9 +297,10 @@ Periaatteessa kaikki esimiehet voivat käyttää erittäin arkaluonteisia liiket
 
 Hierarkian suunnittelutoiminnossa on uusi **Käyttäjät**-pikavälilehti. Voit lisätä välilehdessä yhden käyttäjätunnukset tai useita tunnuksia jokaiseen hierarkian solmuun.
 
-|                 | Käyttäjät            | Dimension jäsenalueet   |                         |
+**Käyttäjät ja dimension jäsenalueet**
+
+|   Solmukohdat         |   Käyttäjätunnus        |   Lähtödimension jäsen   |   Kohdedimension jäsen   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Solmukohdat**       | **Käyttäjätunnus**      | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Organisaatio    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Hallinto         | Huhtikuu            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | Alicia           | CC002                     | CC003                   |

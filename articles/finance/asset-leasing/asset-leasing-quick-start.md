@@ -2,11 +2,9 @@
 title: Omaisuuden leasingin aloittaminen
 description: Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b4f1bdf74dc5319f0b3ba145969b064ad33d5010
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229595"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814125"
 ---
 # <a name="asset-leasing-get-started"></a>Omaisuuden leasingin aloittaminen
 
@@ -41,16 +39,16 @@ Vuokratun omaisuuden pääkomponentit:
 
 - **Vuokrasopimus** – Vuokralle antaja omistaa omaisuuden ja sopii vuokralle ottajan kanssa omaisuuden vuokraamisesta tietyksi ajaksi säännöllistä vuokraa vastaan. Vuokralle antajan ja vuokralle ottajan välisen oikeudellisen sopimuksen lisäksi vuokrasopimus sisältää hallintaa koskevat päätökset, kuten todennäköisyyden uusimisoption käyttämisestä ja omistuksen siirtämisestä.
 
-- **Vuokran laskenta ja luokittelu kirjanpitostandardin mukaisesti** – Vuokran laskenta ja luokittelu määrittävät kirjanpitostandardin, jota käytetään alkuperäisessä ja myöhemmässä arvostamisessa, sekä luokittelutestin, joka määrittää vuokrasopimustyypin. Vuokrasopimus voi olla rahoitusleasingsopimus, käyttöleasingsopimus, lyhytaikainen vuokrasopimus tai arvoltaan vähäinen vuokrasopimus. Järjestelmä laskee myös tulevien vähimmäisvuokrien nykyarvon arvostusta ja luokittelua varten.
+- **Vuokran laskenta ja luokittelu kirjanpitostandardin mukaisesti** – Vuokran laskenta ja luokittelu määrittävät kirjanpitostandardin, jota käytetään alkuperäisessä ja myöhemmässä arvostamisessa, sekä luokittelutestin, joka määrittää vuokrasopimustyypin. Vuokrasopimus voi olla rahoitusleasingsopimus, käyttöleasingsopimus, lyhytaikainen vuokrasopimus tai arvoltaan vähäinen vuokrasopimus. Järjestelmä laskee myös tulevien vähimmäisvuokrien nykynettoarvon arvostusta ja luokittelua varten.
 
-- **Vuokratapahtumat** – Omaisuuden leasing tukee leasingsopimusten käyttöoikeusomaisuuserän alkukirjaamista taseessa sekä myöhempää arvostusta joko taseen leasingsopimuksissa tai taseen ulkopuolisissa leasingsopimuksissa. Alkuperäinen kirjaamistapahtuma arvostaa tulevien vähimmäisvuokrien nykyarvon. Näiden tietojen avulla määritetään alkuperäinen käyttöoikeusomaisuuserä ja vuokrasopimusvelka, jotka vaikuttavat organisaation taseeseen. Myöhemmät kuukausittaisten vuokratapahtumien arvostus sisältää vuokrasopimusvelan koron kertymisen, mikä nostaa vuokrasopimusvelkaa. Se myös arvostaa vuokrasopimusvelkaa vähentävien vuokrien kertymisen, joka tullaan maksamaan vuokralle antajalle. Arvostus sisältää lisäksi käyttöoikeusomaisuuserän kuoletuksen.
+- **Vuokratapahtumat** – Omaisuuden leasing tukee leasingsopimusten käyttöoikeusomaisuuserän alkukirjaamista taseessa sekä myöhempää arvostusta joko taseen leasingsopimuksissa tai taseen ulkopuolisissa leasingsopimuksissa. Alkuperäinen kirjaamistapahtuma arvostaa tulevien vähimmäisvuokrien nykynettoarvon. Näiden tietojen avulla määritetään alkuperäinen käyttöoikeusomaisuuserä ja vuokrasopimusvelka, jotka vaikuttavat organisaation taseeseen. Myöhemmät kuukausittaisten vuokratapahtumien arvostus sisältää vuokrasopimusvelan koron kertymisen, mikä nostaa vuokrasopimusvelkaa. Se myös arvostaa vuokrasopimusvelkaa vähentävien vuokrien kertymisen, joka tullaan maksamaan vuokralle antajalle. Arvostus sisältää lisäksi käyttöoikeusomaisuuserän kuoletuksen.
 
   Taseen ulkopuolisissa vuokrasopimuksissa järjestelmä laskee vuokrakulun suoraan sen mukaan, kumpi on pienempi: omaisuuden taloudellinen kokonaisvaikutusaika tai vuokra-aika. Vuokran oikaisut arvostavat sopimuksen muokkaukset, kuten vuokrasopimuksen laajentamisen tai pidentämisen, sekä arvonalennustapahtuman, joka käyttää käyttöoikeusomaisuuseriä ei-takaisinsaatavina kustannuksina.
 
   Koska omaisuuden leasing integroituu kirjanpitoon voidaan varmistaa, kaikki kirjattavat vuokratapahtumat päivittävät tilikartan. Omaisuuden leasing integroituu ostoreskontraan, jolloin vuokralle antajan laskuja voidaan seurata ostoreskontrassa ja tulevat maksut voidaan ottaa sieltä. Integroituminen käyttöomaisuuserien kanssa antaa mahdollisuuden seurata vuokrasopimuksia käyttöomaisuuserien rekisterissä ja kirjata käyttöoikeusomaisuuserien tapahtumat, kuten omaisuuden alkuperäisen kirjaamisen, poiston ja arvonalennuksen, käyttöomaisuuseristä.   
 
 ## <a name="asset-leasing-components"></a>Omaisuuden leasingin komponentit 
-Omaisuuden leasing tekee vuokrasopimuksen tietojen, maksusuunnitelmien, alkamis- ja päättymispäivien sekä maksun toistuvuuden yhdistämismääritykset. Se myös automatisoi nykyarvon, kuukausittaisten vuokrien, koron ja vuokrasopimuksen kuoletuksen laskutoimitukset. Järjestelmä suorittaa vuokrasopimuksen luokittelutestit määrityksen mukaan. Järjestelmä myös luo ja kirjaa vastaavat vuokratapahtumat, jotka perustuvat noudatettavan kirjanpitostandardin määrittämään järjestelmään.
+Omaisuuden leasing tekee vuokrasopimuksen tietojen, maksusuunnitelmien, alkamis- ja päättymispäivien sekä maksun toistuvuuden yhdistämismääritykset. Se myös automatisoi nykynettoarvon, kuukausittaisten vuokrien, koron ja vuokrasopimuksen kuoletuksen laskutoimitukset. Järjestelmä suorittaa vuokrasopimuksen luokittelutestit määrityksen mukaan. Järjestelmä myös luo ja kirjaa vastaavat vuokratapahtumat, jotka perustuvat noudatettavan kirjanpitostandardin määrittämään järjestelmään.
 
 Seuraavassa kaaviossa on vuokrasopimuskirja, vuokrasopimus, laskettu maksusuunnitelma, vuokrasopimusten ja vuokrasopimuskirjojen luokittelutestit sekä vastaavat kirjanpitotapahtumat.
 
@@ -62,13 +60,13 @@ Seuraavassa kaaviossa on vuokrasopimuskirja, vuokrasopimus, laskettu maksusuunni
 
 - **Omaisuuden käyttöikä** – Tämä ilmaisee omaisuuden käyttöiän jäljellä olevat kaudet vuokrasopimuksen alkamispäivästä alkaen. Omaisuuden käyttöikä otetaan huomioon luokittelutestiyhtälössä. Se ei ole sama kuin käyttöomaisuuserissä määritetty käyttöikä.
 
-- **Inkrementaalinen lainakorko** – Tätä korkoprosenttia käytetään nykyisen arvon laskemiseen. Järjestelmä käyttää vuokrien nykyisen arvon laskemiseen laskennallista korkoa, jos se on määritetty vuokrasopimuksen tiedoissa. Jos laskennallista korkoa ei ole määritetty, järjestelmä käyttää inkrementaalista lainakorkoa.
+- **Inkrementaalinen lainakorko** – Tätä korkoprosenttia käytetään nykyisen nettoarvon laskemiseen. Järjestelmä käyttää vuokrien nykyisen nettoarvon laskemiseen laskennallista korkoa, jos se on määritetty vuokrasopimuksen tiedoissa. Jos laskennallista korkoa ei ole määritetty, järjestelmä käyttää inkrementaalista lainakorkoa.
 
 - **Annuiteettityyppi** – Tämä tarkoittaa sitä, että vuokra erääntyy joko maksukauden alussa tai sen lopussa. Se voi olla ennakkomaksu tai erääntyvä annuiteetti (vuokrakauden alussa) tai tavallinen annuiteetti (vuokrakauden lopussa).
 
   Ensimmäinen kuukauden kausinumeroksi katsotaan ennakomaksussa nolla; ensimmäinen kuukausi katsotaan olevan kausi 1 jälkimaksuissa.
 
-- **Yhdistämisväli** – Tämä ilmaisee, kuinka moneksi jaksoksi korko yhdistetään vuosittain. Se voidaan tehdä kuukausittain (12 jaksoa vuodessa), neljännesvuosittain (4 jaksoa vuodessa), puolivuosittain (2 jaksoa vuodessa) tai vuosittain (1 jakso vuodessa). Jaksojen määrä otetaan huomioon nykyistä arvoa laskettaessa.
+- **Yhdistämisväli** – Tämä ilmaisee, kuinka moneksi jaksoksi korko yhdistetään vuosittain. Se voidaan tehdä kuukausittain (12 jaksoa vuodessa), neljännesvuosittain (4 jaksoa vuodessa), puolivuosittain (2 jaksoa vuodessa) tai vuosittain (1 jakso vuodessa). Jaksojen määrä otetaan huomioon nykyistä nettoarvoa laskettaessa.
 
 - **Alkamispäivä** – Tämä on päivämäärä, jolloin vuokralle antaja antaa omaisuuden vuokralle ottajan käyttöön. Kaikki vuokrasopimuksen laskelmat ja tapahtumat perustuvat alkamispäivään. Alkamispäivän on syytä olla jakson alussa (kuukauden ensimmäinen päivä), sillä niin voidaan varmistaa, että myöhemmin tehtävät laskelmat ovat tarkkoja. Sopimuksen varsinaisen allekirjoituspäivämäärän voi antaa **Sopimuksen allekirjoituksen päivämäärä** -kenttään.
 
@@ -81,7 +79,7 @@ Seuraavassa kaaviossa on vuokrasopimuskirja, vuokrasopimus, laskettu maksusuunni
 
 - **Maksun toistuvuus** – Tämä ilmaisee, onko maksu kuukausittainen, neljännesvuosittainen, puolivuosittainen vai vuosittainen. Päättymispäivä lasketaan automaattisesti alkamispäivän ja annettujen kausien määrän määrän perusteella.
 
-- **Maksusuunnitelma** – tämä ilmaisee lasketun nykyarvon, joka perustuu vuokrien kattamaan aikaan, maksujen summaan, yhdistämisjaksoihin ja annuiteettityyppiin.
+- **Maksusuunnitelma** – tämä ilmaisee lasketun nykynettoarvon, joka perustuu vuokrien kattamaan aikaan, maksujen summaan, yhdistämisjaksoihin ja annuiteettityyppiin.
 
 - **Kaudet** – Nämä vuokrasopimuskaudet vastaavat sisäistä yhdistämistä ja annuiteettityyppiä. Yhdistämisväli määrittää, miten kaudet jaetaan. Voit määrittää seuraavat yhdistämisvälit:
 
@@ -92,10 +90,10 @@ Seuraavassa kaaviossa on vuokrasopimuskirja, vuokrasopimus, laskettu maksusuunni
 
 Ensimmäisen kauden alussa on kausi nolla, jos annuiteetin tyyppi on erääntyvä annuiteetti. Muussa tapauksessa ensimmäisen kausisi on yksi, annuiteetin tyyppi on jälkimaksu.
 
-- **Kuukaudet** – Tämä ilmaisee, kuinka monta kalenterikuukautta vuokrasopimuksen aikana on. Maksusumma on maksun toistuvuudessa määritetty maksettava summa. Valmiiksi laskettu arvo on nykyiseen arvoon perustuva kausikohtainen vuokra, yhdistämisvälit ja inkrementaalinen lainakorko.
+- **Kuukaudet** – Tämä ilmaisee, kuinka monta kalenterikuukautta vuokrasopimuksen aikana on. Maksusumma on maksun toistuvuudessa määritetty maksettava summa. Valmiiksi laskettu nettoarvo on nykyiseen nettoarvoon perustuva kausikohtainen vuokra, yhdistämisvälit ja inkrementaalinen lainakorko.
 
 > [!NOTE] 
-> Nykyinen arvo lasketaan diskontatun kassavirtayhtälön perusteella.
+> Nykyinen nettoarvo lasketaan diskontatun kassavirtayhtälön perusteella.
 
 - **Kirjat** – Tämä on esimääritetty asetus, joka liitetään kuhunkin vuokrasopimukseen. Kirja määritettää käytettävän kirjanpitostandardin, vuokrasopimustyyppit ja raja-arvon, jota käytetään luokittelutestien perusteena. Luokittelutestien avulla vuokrasopimustyyppi voidaan määrittää automaattisesti.
 
@@ -107,7 +105,7 @@ Ensimmäisen kauden alussa on kausi nolla, jos annuiteetin tyyppi on erääntyv�
 
   - **Vuokra-aika** – Tätä käyttöiän prosenttiosuutta käytetään luokittelutestissä. Järjestelmä luokittelee vuokrasopimuksen rahoitusleasingsopimukseksi, jos vuokrasopimustyyppi on määritetty automaattiseksi ja jos omaisuuden käyttöikää koskeva vuokra-aika on suurempi tai yhtä suuri kuin tässä määritetty prosenttisosuus.
 
-  - **Nykyinen arvo** – Tätä omaisuuden käyvän arvon prosenttiosuutta käytetään luokittelutestissä. Järjestelmä luokittelee vuokrasopimuksen rahoitusleasingsopimukseksi, jos tulevien vuokrien nykyinen arvo omaisuuden käyvän arvon osalta on suurempi tai yhtä suuri kuin tässä määritetty prosenttisosuus.
+  - **Nykyinen nettoarvo** – Tätä omaisuuden käyvän arvon prosenttiosuutta käytetään luokittelutestissä. Järjestelmä luokittelee vuokrasopimuksen rahoitusleasingsopimukseksi, jos tulevien vuokrien nykyinen nettoarvo omaisuuden käyvän arvon osalta on suurempi tai yhtä suuri kuin tässä määritetty prosenttisosuus.
 
   - **Lyhytaikainen vuokrasopimus** – jos vuokra-aika on pienempi tai yhtä suurin kuin määritetty arvo, vuokrasopimus luokitellaan lyhytaikaisesti vuokrasopimukseksi.
 
@@ -115,7 +113,7 @@ Ensimmäisen kauden alussa on kausi nolla, jos annuiteetin tyyppi on erääntyv�
 
   - **Vuokrasopimuksen luokittelu ja tapahtumat** – Vuokrasopimuken luokittelu on automaattinen prosessi, jolla luokitellaan vuokrasopimuksia käyttämällä kirjoissa määritettyjä raja-arvoja muiden luokittelutestin ehtojen lisäksi. Tällä tavoin tunnistetaan, onko vuokrasopimus rahoitusleasingsopimus, käyttöleasingsopimus, lyhytaikainen vuokrasopimus tai arvoltaan vähäinen vuokrasopimus. Tämän avulla määritetään myös, onko toteutumaton vuokraprosessi käytössä.
 
-Luokittelutestejä ovat esimerkiksi omistajuuden siirto, ostovaihtoehto, vuokra-aika, nykyinen arvo ja ainutlaatuinen omaisuus. Seuraava kaavio selventää vuokrasopimuksen luokittelutestejä.
+Luokittelutestejä ovat esimerkiksi omistajuuden siirto, ostovaihtoehto, vuokra-aika, nykyinen nettoarvo ja ainutlaatuinen omaisuus. Seuraava kaavio selventää vuokrasopimuksen luokittelutestejä.
 
 [![Vuokrasopimuksen luokittelutestit](./media/overview-03.png)](./media/overview-03.png)
 
@@ -124,22 +122,22 @@ Kukin vuokrasopimustyyppi käsittelee kirjanpitoa eri tavoin eri vuokratapahtumi
 ## <a name="asset-leasing-transactions"></a>Omaisuuden leasingtapahtumat
 
 #### <a name="initial-recognition"></a>Alkuperäinen tunnustaminen 
-Vuokratun omaisuuden alkuperäisessä kirjaamisessa käytetään laskettua nykyistä arvo, jotta se voidaan ilmoittaa taseessa. Tämän kirjanpitomerkintä luodaan automaattisesti. Tämä tapahtuma vähennetään käyttöoikeusomaisuuserätililä ja lisätään käyttöleasingsopimuksen velkatilille seuraavasti. Jos käyttöoimaisuus on liitetty vuokrasopimukseen, alkuperäinen kirjausvienti ilmaistaan käyttöomaisuuden hankintana. Tässä skenaariossa käyttöomaisuuden kirjausprofiili on määritettävä kirjaamaan käyttöoikeusomaisuustilille. 
+Vuokratun omaisuuden alkuperäisessä kirjaamisessa käytetään laskettua nykyistä nettoarvoa, jotta se voidaan ilmoittaa taseessa. Tämän kirjanpitomerkintä luodaan automaattisesti. Tämä tapahtuma vähennetään käyttöoikeusomaisuuserätililä ja lisätään käyttöleasingsopimuksen velkatilille seuraavasti. Jos käyttöoimaisuus on liitetty vuokrasopimukseen, alkuperäinen kirjausvienti ilmaistaan käyttöomaisuuden hankintana. Tässä skenaariossa käyttöomaisuuden kirjausprofiili on määritettävä kirjaamaan käyttöoikeusomaisuustilille. 
 
 > [!NOTE]
 > Vain US GAAP ASC 842 tukee käyttöleasingsopimuksia.
 
 |     Laji                                          |     Veloitus                     |     Luotto                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Käyttöleasingsopimus US GAAP -järjestelmässä              |     Käyttöoikeusomaisuuserä      |     Käyttöleasingsopimusvelka       |
-|     Rahoitusleasingsopimus IFRS- ja US GAAP -järjestelmissä        |     Käyttöoikeusomaisuuserä      |     Käyttöleasingsopimusvelka       |
+|     Käyttöleasingsopimus US GAAP -järjestelmässä            |     Käyttöoikeusomaisuuserä        |     Käyttöleasingsopimusvelka     |
+|     Rahoitusleasingsopimus IFRS- ja US GAAP -järjestelmissä      |     Käyttöoikeusomaisuuserä        |     Rahoituksen vuokrasopimusvelka       |
 
 #### <a name="lease-liability-amortization-interest-expense"></a>Vuokrasopimusvelan kuoletus (korkokulut) 
 Korko huomioidaan vuokrasopimuksessa laskemalla korko vuokrasopimuksen alkusaldolle, kauden vuokra, lainakorko ja yhdistämisvälien kaudet vuodessa. Korkosumma kasvattaa käyttöleasingsopimuksen velkatiliä, sillä se lisätään siihen, mikä näkyy myös organisaation taseessa. Tapahtuma sisältä myös debet-merkinnän korkokulutilille, mikä näkyy rajoitusleasingsopimusten tuloslaskelmassa, ja vuokrasopimuksen kulutille käyttöleasingsopimuksissa.
 
 |     Laji                                          |     Veloitus                     |     Luotto                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Käyttöleasingsopimusvelan vienti US GAAP ASC 842 -järjestelmässä    |     Korkokustannus          |     Käyttöleasingsopimusvelka         |
+|     Käyttöleasingsopimusvelan vienti US GAAP ASC 842 -järjestelmässä    |     Vuokran kulu         |     Käyttöleasingsopimusvelka         |
 |     Rahoitusleasingsopimusvelan vienti IFRS- ja US GAAP -järjestelmissä      |     Korkokustannus          |     Rahoituksen vuokrasopimusvelka           |
 
 #### <a name="accrued-lease-payment"></a>Jaksotetut vuokrat
@@ -151,7 +149,7 @@ Jaksotettu vuokra kirjataan vuokrasopimuksen tulevana maksuna, joka on määrä 
 |     Rahoitusleasingsopimus IFRS- ja US GAAP -järjestelmissä        |  Rahoituksen vuokrasopimusvelka      |   Toimittajan velka (alareskontra) / velkavekselit  |
 
 #### <a name="asset-depreciation"></a>Omaisuuden poisto
-Käyttöoikeusomaisuuserä poistetaan sen mukaan, kumpi on pienempi: omaisuuden käyttöikä tai vuokra-aika. US GAAP (ASC 842) -järjestelmässä poiston laskentamenetelmä perustuu suoran vuokrakulun ja korkosumman eroon. Rahoitusleasingsopimuksen korko lasketaan käyttämällä suoraa vakiomenetelmää. Vuokrapoisto vaikuttaa debet-puolen korkokulujen tuloslaskelmaan. Rahoitusleasingsopimusten kumulatiivisen käyttöoikeusomaisuuserätilin lisääminen credit-puolelle vaikuttaa taseeseen. Käyttöleasingsopimuksissa poisto lisätään vuokrakulutilin credit-puolelle. Jos vuokrasopimus on linkitetty käyttöomaisuuserään, poistotapahtumat suoritetaan vain käyttöomaisuusmoduulista. 
+Käyttöoikeusomaisuuserä poistetaan sen mukaan, kumpi on pienempi: omaisuuden käyttöikä tai vuokra-aika. US GAAP -käyttöleasingsopimuksen (ASC 842) poiston laskentamenetelmä perustuu suoran vuokrakulun ja korkosumman eroon. Rahoitusleasingsopimuksen poisto lasketaan käyttämällä suoraa vakiomenetelmää. Vuokrapoisto vaikuttaa debet-puolen korkokulujen tuloslaskelmaan. Rahoitusleasingsopimusten kumulatiivisen käyttöoikeusomaisuuserätilin lisääminen credit-puolelle vaikuttaa taseeseen. Jos vuokrasopimus on linkitetty käyttöomaisuuserään, poistotapahtumat suoritetaan vain käyttöomaisuusmoduulista. 
 
 |     Laji                                          |     Veloitus                     |     Luotto                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |

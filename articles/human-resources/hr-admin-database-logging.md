@@ -2,11 +2,9 @@
 title: Tietokannan lokikirjauksen määrittäminen ja hallinta
 description: Voit seurata Dynamics 365 Human Resourcesin taulukoiden ja kenttien muutoksia tietokantakirjausten avulla.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467646"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801332"
 ---
 # <a name="configure-and-manage-database-logging"></a>Tietokannan lokikirjauksen määrittäminen ja hallinta
 
@@ -68,7 +66,22 @@ Voit parantaa suorituskykyä rajaamalla lokikirjausten määrää ja valitsemall
 Tietokantakirjauksen voi määrittää käyttämällä ohjattua **Tietokantamuutosten kirjaaminen lokiin** -toimintoa. Ohjattu toiminto on joustava tapa määrittää taulukoiden tai kenttien lokiin kirjaaminen.
 
 1. Valitse **Järjestelmänvalvoja > Linkit > Tietokanta > Tietokantalokin asetukset**. Käynnistä ohjattu **Tietokantamuutosten kirjaaminen lokiin** -toiminto valitsemalla **Uusi**.
-2. Suorita ohjattu toiminto loppuun.
+2. Valitse **Seuraava**. 
+3. Valitse ohjatun toiminnon **Taulut ja kentät** -sivulla taulut ja kentät, joille tietokannan lokiin kirjaamisen haluat ottaa käyttöön, ja valitse **Seuraava**.
+
+   > [!Note]
+   > Tietokannan lokiinkirjaus ei ole käytettävissä kaikissa Human Resources -tietokannan taulukoissa. Jos valitset **Näytä kaikki taulukot** luettelon alapuolella taulujen ja kenttien luettelo laajennetaan näyttämään kaikkien ne tietokantataulut, joiden tietokantaloki on käytettävissä, mutta tämä on kaikkien tietokantataulujen luettelon osajoukko.
+
+4. Valitse ohjatun toiminnon **Muutostyypit**-sivulla tietotoiminnot, joiden muutoksia haluat seurata kullekin taululle ja kentälle, ja valitse sitten **Seuraava**. Alla olevassa taulukossa on lokiin kirjattavissa olevien tietotoimintojen kuvaus.
+5. Tarkista tehdyt muutokset **Valmis**-sivulla ja valitse **Valmis**.
+
+| Toiminto | kuvaus |
+| -- | -- |
+| Seuraa uusia tapahtumia | Luo loki tauluun luoduille uusille tietueille. |
+| Päivitys | Luo loki taulutietueiden päivitystä varten tai taulun yksittäisten kenttien päivitykselle. Jos kirjaat lokiin taulun päivitykset, lokitietue luodaan aina, kun taulun mihin tahansa tietueen kenttään tehdään päivitys. Jos kirjaat lokiin tiettyjen kenttien päivitykset, lokitietue luodaan vain, kun taulutietueiden kyseisiin kenttiin tehdään päivityksiä. |
+| Delete-näppäin | Luo loki taulusta poistettuja tietueita varten. |
+| Nimeä tunnus uudelleen | Luo lokitietue, kun taulun avain nimetään uudelleen. |
+
 
 ## <a name="clean-up-database-logs"></a>Tietokantalokien tyhjentäminen
 
