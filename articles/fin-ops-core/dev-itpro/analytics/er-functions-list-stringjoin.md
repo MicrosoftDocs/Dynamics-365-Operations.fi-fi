@@ -2,7 +2,6 @@
 title: STRINGJOIN ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) STRINGJOIN-funktiota käytetään.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,52 +15,52 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 755e6481abb65dfecc8ddb6bceb032c8110095e2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ac21651e0f5b5a1579b9335bb7f3217370c4d5a1
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568167"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745518"
 ---
-# <a name="stringjoin-er-function"></a><span data-ttu-id="95e75-103">STRINGJOIN ER-funktio</span><span class="sxs-lookup"><span data-stu-id="95e75-103">STRINGJOIN ER function</span></span>
+# <a name="stringjoin-er-function"></a><span data-ttu-id="f2ec7-103">STRINGJOIN ER-funktio</span><span class="sxs-lookup"><span data-stu-id="f2ec7-103">STRINGJOIN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="95e75-104">`STRINGJOIN`-funktio palauttaa määritetystä luettelosta *merkkijonon*, joka koostuu määritetyn kentän ketjutetuista arvoista tietystä luettelosta.</span><span class="sxs-lookup"><span data-stu-id="95e75-104">The `STRINGJOIN` function returns a *String* value that consists of concatenated values of the specified field from the specified list.</span></span> <span data-ttu-id="95e75-105">Arvot voidaan erottaa määritetyllä erottimella.</span><span class="sxs-lookup"><span data-stu-id="95e75-105">The values can be separated by the specified delimiter.</span></span>
+<span data-ttu-id="f2ec7-104">`STRINGJOIN`-funktio palauttaa määritetystä luettelosta *merkkijonon*, joka koostuu määritetyn kentän ketjutetuista arvoista tietystä luettelosta.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-104">The `STRINGJOIN` function returns a *String* value that consists of concatenated values of the specified field from the specified list.</span></span> <span data-ttu-id="f2ec7-105">Arvot voidaan erottaa määritetyllä erottimella.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-105">The values can be separated by the specified delimiter.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="95e75-106">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="95e75-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f2ec7-106">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="f2ec7-106">Syntax</span></span>
 
 ```vb
 STRINGJOIN (list, field, delimiter)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="95e75-107">Argumentit</span><span class="sxs-lookup"><span data-stu-id="95e75-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="f2ec7-107">Argumentit</span><span class="sxs-lookup"><span data-stu-id="f2ec7-107">Arguments</span></span>
 
-<span data-ttu-id="95e75-108">`list`: *Tietueluettelo*</span><span class="sxs-lookup"><span data-stu-id="95e75-108">`list`: *Record list*</span></span>
+<span data-ttu-id="f2ec7-108">`list`: *Tietueluettelo*</span><span class="sxs-lookup"><span data-stu-id="f2ec7-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="95e75-109">*Tietueluettelo*-tietotyypin tietolähteen kelvollinen polku.</span><span class="sxs-lookup"><span data-stu-id="95e75-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="f2ec7-109">*Tietueluettelo*-tietotyypin tietolähteen kelvollinen polku.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="95e75-110">`field`: *Kenttä*</span><span class="sxs-lookup"><span data-stu-id="95e75-110">`field`: *Field*</span></span>
+<span data-ttu-id="f2ec7-110">`field`: *Kenttä*</span><span class="sxs-lookup"><span data-stu-id="f2ec7-110">`field`: *Field*</span></span>
 
-<span data-ttu-id="95e75-111">*Merkkijono*-tietotyypin kentän kelvollinen polku on määritetyssä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="95e75-111">The valid path of a field of the *String* data type in the specified list.</span></span>
+<span data-ttu-id="f2ec7-111">*Merkkijono*-tietotyypin kentän kelvollinen polku on määritetyssä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-111">The valid path of a field of the *String* data type in the specified list.</span></span>
 
-<span data-ttu-id="95e75-112">`delimiter`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="95e75-112">`delimiter`: *String*</span></span>
+<span data-ttu-id="f2ec7-112">`delimiter`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="f2ec7-112">`delimiter`: *String*</span></span>
 
-<span data-ttu-id="95e75-113">Erotin, jota käytetään erottelemaan alimerkkijonoja.</span><span class="sxs-lookup"><span data-stu-id="95e75-113">A delimiter that is used to separate substrings.</span></span>
+<span data-ttu-id="f2ec7-113">Erotin, jota käytetään erottelemaan alimerkkijonoja.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-113">A delimiter that is used to separate substrings.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="95e75-114">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="95e75-114">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f2ec7-114">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="f2ec7-114">Return values</span></span>
 
-<span data-ttu-id="95e75-115">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="95e75-115">*String*</span></span>
+<span data-ttu-id="f2ec7-115">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="f2ec7-115">*String*</span></span>
 
-<span data-ttu-id="95e75-116">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="95e75-116">The resulting text value.</span></span>
+<span data-ttu-id="f2ec7-116">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-116">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95e75-117">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="95e75-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f2ec7-117">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="f2ec7-117">Example</span></span>
 
-<span data-ttu-id="95e75-118">Jos syötät `SPLIT("abc" , 1)` tietolähteeksi **DS**, lauseke `STRINGJOIN (DS, DS.Value, "-")` palauttaa arvon **a-b-c**.</span><span class="sxs-lookup"><span data-stu-id="95e75-118">If you enter `SPLIT("abc" , 1)` as data source **DS**, the expression `STRINGJOIN (DS, DS.Value, "-")` returns **"a-b-c"**.</span></span>
+<span data-ttu-id="f2ec7-118">Jos syötät `SPLIT("abc" , 1)` tietolähteeksi **DS**, lauseke `STRINGJOIN (DS, DS.Value, "-")` palauttaa arvon **a-b-c**.</span><span class="sxs-lookup"><span data-stu-id="f2ec7-118">If you enter `SPLIT("abc" , 1)` as data source **DS**, the expression `STRINGJOIN (DS, DS.Value, "-")` returns **"a-b-c"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="95e75-119">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="95e75-119">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="f2ec7-119">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="f2ec7-119">Additional resources</span></span>
 
-[<span data-ttu-id="95e75-120">Luettelotoiminnot</span><span class="sxs-lookup"><span data-stu-id="95e75-120">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="f2ec7-120">Luettelotoiminnot</span><span class="sxs-lookup"><span data-stu-id="f2ec7-120">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
