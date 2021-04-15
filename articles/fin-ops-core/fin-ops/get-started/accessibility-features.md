@@ -2,7 +2,6 @@
 title: Helppokäyttötoiminnot
 description: Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 45395113944af6f02d0afb67284dc0d42bdedca4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562432"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744120"
 ---
 # <a name="accessibility-features"></a>Helppokäyttötoiminnot
 
@@ -65,7 +64,7 @@ Kirjoita hakukenttään toimintoa kuvaavia sanoja. Toiminto on käytettävissä 
 
 ![Hakukenttään on syötetty sähköposti-sana](media/image4.png "hakukenttään on syötetty sähköposti-sana")
 
-![Hakukenttään on syötetty teksti "ilmoit"](media/image5.png "hakukenttään on syötetty teksti "ilmoit"")
+![Hakukenttään on syötetty teksti "ilmoit"](media/image5.png "hakukenttään on syötetty teksti &quot;ilmoit&quot;")
 
 ![Hakukenttään on syötetty loki-sana](media/image6.png "hakukenttään on syötetty loki-sana")
 
