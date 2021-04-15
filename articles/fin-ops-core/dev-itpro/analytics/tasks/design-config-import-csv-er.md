@@ -2,7 +2,6 @@
 title: ER-konfiguraatioiden suunnitteleminen tietojen tuomiseksi ulkoisista tiedostoista CSV-muotoon
 description: Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin määrityksiä, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Finance and Operations -sovellukseen.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 82c3af7d49f725a045b17cbef00b56fdfa0383f3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 05beb15413362aea557fb80fb471c10e1f832184
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564115"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752529"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>ER-konfiguraatioiden suunnitteleminen tietojen tuomiseksi ulkoisista tiedostoista CSV-muotoon
 

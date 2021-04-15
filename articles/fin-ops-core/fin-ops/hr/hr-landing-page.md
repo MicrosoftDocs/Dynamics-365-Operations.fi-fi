@@ -1,8 +1,7 @@
 ---
-title: Henkilöstöhallinnon yleiskatsaus
-description: Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta.
+title: Human Resources – yleiskatsaus
+description: Human Resources tehostaa monet rutiininomaisista tallennusprosesseista ja ja automatisoi organisaation resursointiin liittyvät prosessit sekä tarjoaa henkilöstöhallinnon henkilöstölle kehikon osa-alueiden hallintaan.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,14 +13,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fb04ed91c28dc87bdcf4e218cbeaf99f5442ab4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d6f70e7626100646feb12e8544b5ab943097b1a3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566695"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752177"
 ---
-# <a name="human-resources-overview"></a>Henkilöstöhallinnon yleiskatsaus
+# <a name="human-resources-overview"></a>Human Resources – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 

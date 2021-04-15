@@ -2,8 +2,7 @@
 title: SPLITLIST ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) SPLITLIST-funktiota käytetään.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559135"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745566"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER-funktio
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559135"
 
 `SPLITLIST`-funktio jakaa määritetyn luettelon aliluetteloiksi (tai eriksi), joissa on tietty määrä tietueita. Sitten se palauttaa tuloksen uutena *Tietueluettelon* arvona, joka koostuu eristä.
 
-## <a name="syntax"></a>Syntaksi
+## <a name="syntax-1"></a>Syntaksi 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Syntaksi 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumentit
@@ -44,6 +49,10 @@ SPLITLIST (list, number)
 `number`: *Kokonaisluku*
 
 Tietueiden enimmäismäärä erää kohti.
+
+`on-demand reading flag`: *Totuusarvo*
+
+*Totuusarvo* joka määrittää, luodaanko aliluetteloiden elementtejä tarpeen mukaan.
 
 ## <a name="return-values"></a>Palautusarvot
 
@@ -62,6 +71,8 @@ Palautettu eräluettelo, joka sisältää seuraavat elementit:
 - **BatchNumber:** *Kokonaisluku*
 
     Palautetun luettelon nykyisen erän numero.
+
+Kun tarvittaessa lukemisen merkinnän arvoksi määritetään **Tosi**, järjestelmä luo pyydettäessä aliluetteloita, jotka mahdollistavat muistin kulutuksen vähentämisen, mutta jotka voivat aiheuttaa suorituskyvyn heikentymisen, jos elementtejä ei käytetä peräkkäin.
 
 ## <a name="example"></a>Esimerkki
 
