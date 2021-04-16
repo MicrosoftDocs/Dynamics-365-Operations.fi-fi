@@ -2,11 +2,9 @@
 title: Kanban-töiden ajoitus
 description: Tässä menettelyssä keskitytään tietyn työsolun aikataulutusprosessin kanban-töihin.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
@@ -15,51 +13,51 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30f7c431b3d27a534e53540c41768ea55c8dd39f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c8c088e7f70303aae9f106f627778108062a073f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222798"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811011"
 ---
-# <a name="schedule-kanban-jobs"></a><span data-ttu-id="2609b-103">Kanban-töiden ajoitus</span><span class="sxs-lookup"><span data-stu-id="2609b-103">Schedule kanban jobs</span></span>
+# <a name="schedule-kanban-jobs"></a><span data-ttu-id="74c01-103">Kanban-töiden ajoitus</span><span class="sxs-lookup"><span data-stu-id="74c01-103">Schedule kanban jobs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2609b-104">Tässä menettelyssä keskitytään tietyn työsolun aikataulutusprosessin kanban-töihin.</span><span class="sxs-lookup"><span data-stu-id="2609b-104">This procedure focuses on scheduling process kanban jobs for a specific work cell.</span></span> <span data-ttu-id="2609b-105">Valmistele kanban-työn kun materiaalit eivät ole käytettävissä työsolulle -menettely on tämän menettelyn luomisen edellytys.</span><span class="sxs-lookup"><span data-stu-id="2609b-105">The procedure "Prepare a process kanban job when materials are not available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="2609b-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="2609b-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="2609b-107">Tämä tehtävä on tarkoitettu työnohjauksen esimiehelle ja tuotannon suunnittelijalle, jotka käsittelevät kanbaneita.</span><span class="sxs-lookup"><span data-stu-id="2609b-107">This task is intended for the shop floor supervisor and production planner working with kanbans.</span></span>
+<span data-ttu-id="74c01-104">Tässä menettelyssä keskitytään tietyn työsolun aikataulutusprosessin kanban-töihin.</span><span class="sxs-lookup"><span data-stu-id="74c01-104">This procedure focuses on scheduling process kanban jobs for a specific work cell.</span></span> <span data-ttu-id="74c01-105">Valmistele kanban-työn kun materiaalit eivät ole käytettävissä työsolulle -menettely on tämän menettelyn luomisen edellytys.</span><span class="sxs-lookup"><span data-stu-id="74c01-105">The procedure "Prepare a process kanban job when materials are not available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="74c01-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="74c01-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="74c01-107">Tämä tehtävä on tarkoitettu työnohjauksen esimiehelle ja tuotannon suunnittelijalle, jotka käsittelevät kanbaneita.</span><span class="sxs-lookup"><span data-stu-id="74c01-107">This task is intended for the shop floor supervisor and production planner working with kanbans.</span></span>
 
 
-## <a name="select-kanban-jobs-for-a-work-cell"></a><span data-ttu-id="2609b-108">Työsolun kanban-töiden valitseminen</span><span class="sxs-lookup"><span data-stu-id="2609b-108">Select kanban jobs for a work cell</span></span>
-1. <span data-ttu-id="2609b-109">Siirry kohtaan Tuotannonhallinta > Kanban > Kanban-työn aikataulutus.</span><span class="sxs-lookup"><span data-stu-id="2609b-109">Go to Production control > Kanban > Kanban job scheduling.</span></span>
-2. <span data-ttu-id="2609b-110">Laajenna Kauden kapasiteetti -tietokenttä.</span><span class="sxs-lookup"><span data-stu-id="2609b-110">Expand the Period capacity fact box</span></span>
-    * <span data-ttu-id="2609b-111">Laajenna Kanban-tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="2609b-111">Expand the Kanban FactBox.</span></span>  
-3. <span data-ttu-id="2609b-112">Avaa haku valitsemalla Työsolu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="2609b-112">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="2609b-113">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2609b-113">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="2609b-114">Valitse työsolu 1250.</span><span class="sxs-lookup"><span data-stu-id="2609b-114">Select work cell 1250.</span></span> <span data-ttu-id="2609b-115">Nyt näkymä suodatetaan niin, että se näyttää vain työsolun 1250 työt.</span><span class="sxs-lookup"><span data-stu-id="2609b-115">This will filter the view to display only the jobs for work cell 1250.</span></span>  
-5. <span data-ttu-id="2609b-116">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="2609b-116">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="2609b-117">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="2609b-117">Click Select.</span></span>
+## <a name="select-kanban-jobs-for-a-work-cell"></a><span data-ttu-id="74c01-108">Työsolun kanban-töiden valitseminen</span><span class="sxs-lookup"><span data-stu-id="74c01-108">Select kanban jobs for a work cell</span></span>
+1. <span data-ttu-id="74c01-109">Siirry kohtaan Tuotannonhallinta > Kanban > Kanban-työn aikataulutus.</span><span class="sxs-lookup"><span data-stu-id="74c01-109">Go to Production control > Kanban > Kanban job scheduling.</span></span>
+2. <span data-ttu-id="74c01-110">Laajenna Kauden kapasiteetti -tietokenttä.</span><span class="sxs-lookup"><span data-stu-id="74c01-110">Expand the Period capacity fact box</span></span>
+    * <span data-ttu-id="74c01-111">Laajenna Kanban-tietoruutu.</span><span class="sxs-lookup"><span data-stu-id="74c01-111">Expand the Kanban FactBox.</span></span>  
+3. <span data-ttu-id="74c01-112">Avaa haku valitsemalla Työsolu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="74c01-112">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="74c01-113">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="74c01-113">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="74c01-114">Valitse työsolu 1250.</span><span class="sxs-lookup"><span data-stu-id="74c01-114">Select work cell 1250.</span></span> <span data-ttu-id="74c01-115">Nyt näkymä suodatetaan niin, että se näyttää vain työsolun 1250 työt.</span><span class="sxs-lookup"><span data-stu-id="74c01-115">This will filter the view to display only the jobs for work cell 1250.</span></span>  
+5. <span data-ttu-id="74c01-116">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="74c01-116">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="74c01-117">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="74c01-117">Click Select.</span></span>
 
-## <a name="schedule-a-kanban-job-in-the-first-available-period"></a><span data-ttu-id="2609b-118">Kanban-työn aikatauluttaminen ensimmäiselle käytettävissä olevalle kaudelle</span><span class="sxs-lookup"><span data-stu-id="2609b-118">Schedule a kanban job in the first available period</span></span>
-1. <span data-ttu-id="2609b-119">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2609b-119">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="2609b-120">Valitse luettelon ensimmäinen rivi, jonka tila on Ei suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="2609b-120">Select the first row in the list that has the Not planned status.</span></span> <span data-ttu-id="2609b-121">Työn tila -kentän pisteviivakuvake osoittaa, että tila on Ei suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="2609b-121">The dotted icon in the Job status field indicates not planned.</span></span>  
-2. <span data-ttu-id="2609b-122">Valitse Aikatauluta.</span><span class="sxs-lookup"><span data-stu-id="2609b-122">Click Schedule.</span></span>
-    * <span data-ttu-id="2609b-123">Tämä aikatauluttaa kanban-työn ensimmäisellä käytettävissä olevalla kaudella.</span><span class="sxs-lookup"><span data-stu-id="2609b-123">This will schedule the kanban job in the first available period.</span></span>  
-    * <span data-ttu-id="2609b-124">Huomioi, että kanban-työ siirretään luettelon loppuun, koska se on lisätty tänään alkavalle kaudelle.</span><span class="sxs-lookup"><span data-stu-id="2609b-124">Notice that the kanban job is moved to the end of the list because it has been added to the period starting from today.</span></span>  
-    * <span data-ttu-id="2609b-125">Jos kuluvasta päivästä alkava kausi on kokonaan varattu, työ siirretään ensimmäiseen käytettävissä olevaan kauteen.</span><span class="sxs-lookup"><span data-stu-id="2609b-125">If the period starting from today is fully booked, the job will be moved to the first available period.</span></span>  
+## <a name="schedule-a-kanban-job-in-the-first-available-period"></a><span data-ttu-id="74c01-118">Kanban-työn aikatauluttaminen ensimmäiselle käytettävissä olevalle kaudelle</span><span class="sxs-lookup"><span data-stu-id="74c01-118">Schedule a kanban job in the first available period</span></span>
+1. <span data-ttu-id="74c01-119">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="74c01-119">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="74c01-120">Valitse luettelon ensimmäinen rivi, jonka tila on Ei suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="74c01-120">Select the first row in the list that has the Not planned status.</span></span> <span data-ttu-id="74c01-121">Työn tila -kentän pisteviivakuvake osoittaa, että tila on Ei suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="74c01-121">The dotted icon in the Job status field indicates not planned.</span></span>  
+2. <span data-ttu-id="74c01-122">Valitse Aikatauluta.</span><span class="sxs-lookup"><span data-stu-id="74c01-122">Click Schedule.</span></span>
+    * <span data-ttu-id="74c01-123">Tämä aikatauluttaa kanban-työn ensimmäisellä käytettävissä olevalla kaudella.</span><span class="sxs-lookup"><span data-stu-id="74c01-123">This will schedule the kanban job in the first available period.</span></span>  
+    * <span data-ttu-id="74c01-124">Huomioi, että kanban-työ siirretään luettelon loppuun, koska se on lisätty tänään alkavalle kaudelle.</span><span class="sxs-lookup"><span data-stu-id="74c01-124">Notice that the kanban job is moved to the end of the list because it has been added to the period starting from today.</span></span>  
+    * <span data-ttu-id="74c01-125">Jos kuluvasta päivästä alkava kausi on kokonaan varattu, työ siirretään ensimmäiseen käytettävissä olevaan kauteen.</span><span class="sxs-lookup"><span data-stu-id="74c01-125">If the period starting from today is fully booked, the job will be moved to the first available period.</span></span>  
 
-## <a name="schedule-two-kanban-jobs-for-a-specific-day"></a><span data-ttu-id="2609b-126">Kahden kanban-työn aikatauluttaminen tietylle päivälle</span><span class="sxs-lookup"><span data-stu-id="2609b-126">Schedule two kanban jobs for a specific day</span></span>
-1. <span data-ttu-id="2609b-127">Valitse luettelosta rivi 1.</span><span class="sxs-lookup"><span data-stu-id="2609b-127">In the list, select row 1.</span></span>
-    * <span data-ttu-id="2609b-128">Ensimmäisen rivin Työn tila -kentässä tulisi olla Ei suunniteltu -tila.</span><span class="sxs-lookup"><span data-stu-id="2609b-128">You should see that the first row has the Not planned status in the Job status field.</span></span>  
-2. <span data-ttu-id="2609b-129">Valitse luettelosta rivi 2.</span><span class="sxs-lookup"><span data-stu-id="2609b-129">In the list, select row 2.</span></span>
-    * <span data-ttu-id="2609b-130">Toisen rivin Työn tila -kentässä tulisi olla Ei suunniteltu -tila.</span><span class="sxs-lookup"><span data-stu-id="2609b-130">You should see that the second row has the Not planned status in the Job status field.</span></span> <span data-ttu-id="2609b-131">Nyt kaksi ensimmäistä työtä on valittu.</span><span class="sxs-lookup"><span data-stu-id="2609b-131">Now you have the first two jobs selected.</span></span>  
-3. <span data-ttu-id="2609b-132">Avaa valintaikkuna valitsemalla Aikataulun alkupäivä.</span><span class="sxs-lookup"><span data-stu-id="2609b-132">Click Schedule from date to open the drop dialog.</span></span>
-4. <span data-ttu-id="2609b-133">Valitse Ohita kapasiteetin puutteen aiheuttama reaktio -ruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="2609b-133">Check or uncheck the Override capacity shortage reaction box.</span></span>
-    * <span data-ttu-id="2609b-134">Tämän asetuksen avulla voit korvata kapasiteetin puutteen aiheuttaman oletusreaktion.</span><span class="sxs-lookup"><span data-stu-id="2609b-134">This option allows you to override the default capacity shortage reaction.</span></span>  
-5. <span data-ttu-id="2609b-135">Valitse Kapasiteetin puutteen aiheuttama reaktio -kentässä Lisää pyydetty kausi.</span><span class="sxs-lookup"><span data-stu-id="2609b-135">In the Capacity shortage reaction field, select 'Add to the requested period'.</span></span>
-    * <span data-ttu-id="2609b-136">Tämä asetus varmistaa, että työ lisätään pyydetylle kaudelle myös silloin, jos työsolu on ylikuormittunut.</span><span class="sxs-lookup"><span data-stu-id="2609b-136">This option will ensure that the job is added to the requested period, regardless if the work cell might be overloaded.</span></span>  
-6. <span data-ttu-id="2609b-137">Valitse Aikatauluta.</span><span class="sxs-lookup"><span data-stu-id="2609b-137">Click Schedule.</span></span>
-    * <span data-ttu-id="2609b-138">Huomioi myös se, että molemmat työt lisätään haluttuun kauteen.</span><span class="sxs-lookup"><span data-stu-id="2609b-138">Notice that both jobs are added to the desired period.</span></span>  
-    * <span data-ttu-id="2609b-139">Kauden kapasiteetti -osassa näkyy kunkin kauden kuormitus.</span><span class="sxs-lookup"><span data-stu-id="2609b-139">In the Period capacity section, you can see the load for each period.</span></span> <span data-ttu-id="2609b-140">Kulutus-kentässä näkyy tämän kauden suunniteltu kulutus.</span><span class="sxs-lookup"><span data-stu-id="2609b-140">The Consumption field shows the scheduled consumption in this period.</span></span> <span data-ttu-id="2609b-141">Jos suunniteltu kulutus on korkeampi kuin tämän kauden käytettävissä oleva kapasiteetti, valitaan ylikuormitettu kulutus.</span><span class="sxs-lookup"><span data-stu-id="2609b-141">If the scheduled consumption is higher than the available capacity in this period, the overloaded consumption will be selected.</span></span>  
+## <a name="schedule-two-kanban-jobs-for-a-specific-day"></a><span data-ttu-id="74c01-126">Kahden kanban-työn aikatauluttaminen tietylle päivälle</span><span class="sxs-lookup"><span data-stu-id="74c01-126">Schedule two kanban jobs for a specific day</span></span>
+1. <span data-ttu-id="74c01-127">Valitse luettelosta rivi 1.</span><span class="sxs-lookup"><span data-stu-id="74c01-127">In the list, select row 1.</span></span>
+    * <span data-ttu-id="74c01-128">Ensimmäisen rivin Työn tila -kentässä tulisi olla Ei suunniteltu -tila.</span><span class="sxs-lookup"><span data-stu-id="74c01-128">You should see that the first row has the Not planned status in the Job status field.</span></span>  
+2. <span data-ttu-id="74c01-129">Valitse luettelosta rivi 2.</span><span class="sxs-lookup"><span data-stu-id="74c01-129">In the list, select row 2.</span></span>
+    * <span data-ttu-id="74c01-130">Toisen rivin Työn tila -kentässä tulisi olla Ei suunniteltu -tila.</span><span class="sxs-lookup"><span data-stu-id="74c01-130">You should see that the second row has the Not planned status in the Job status field.</span></span> <span data-ttu-id="74c01-131">Nyt kaksi ensimmäistä työtä on valittu.</span><span class="sxs-lookup"><span data-stu-id="74c01-131">Now you have the first two jobs selected.</span></span>  
+3. <span data-ttu-id="74c01-132">Avaa valintaikkuna valitsemalla Aikataulun alkupäivä.</span><span class="sxs-lookup"><span data-stu-id="74c01-132">Click Schedule from date to open the drop dialog.</span></span>
+4. <span data-ttu-id="74c01-133">Valitse Ohita kapasiteetin puutteen aiheuttama reaktio -ruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="74c01-133">Check or uncheck the Override capacity shortage reaction box.</span></span>
+    * <span data-ttu-id="74c01-134">Tämän asetuksen avulla voit korvata kapasiteetin puutteen aiheuttaman oletusreaktion.</span><span class="sxs-lookup"><span data-stu-id="74c01-134">This option allows you to override the default capacity shortage reaction.</span></span>  
+5. <span data-ttu-id="74c01-135">Valitse Kapasiteetin puutteen aiheuttama reaktio -kentässä Lisää pyydetty kausi.</span><span class="sxs-lookup"><span data-stu-id="74c01-135">In the Capacity shortage reaction field, select 'Add to the requested period'.</span></span>
+    * <span data-ttu-id="74c01-136">Tämä asetus varmistaa, että työ lisätään pyydetylle kaudelle myös silloin, jos työsolu on ylikuormittunut.</span><span class="sxs-lookup"><span data-stu-id="74c01-136">This option will ensure that the job is added to the requested period, regardless if the work cell might be overloaded.</span></span>  
+6. <span data-ttu-id="74c01-137">Valitse Aikatauluta.</span><span class="sxs-lookup"><span data-stu-id="74c01-137">Click Schedule.</span></span>
+    * <span data-ttu-id="74c01-138">Huomioi myös se, että molemmat työt lisätään haluttuun kauteen.</span><span class="sxs-lookup"><span data-stu-id="74c01-138">Notice that both jobs are added to the desired period.</span></span>  
+    * <span data-ttu-id="74c01-139">Kauden kapasiteetti -osassa näkyy kunkin kauden kuormitus.</span><span class="sxs-lookup"><span data-stu-id="74c01-139">In the Period capacity section, you can see the load for each period.</span></span> <span data-ttu-id="74c01-140">Kulutus-kentässä näkyy tämän kauden suunniteltu kulutus.</span><span class="sxs-lookup"><span data-stu-id="74c01-140">The Consumption field shows the scheduled consumption in this period.</span></span> <span data-ttu-id="74c01-141">Jos suunniteltu kulutus on korkeampi kuin tämän kauden käytettävissä oleva kapasiteetti, valitaan ylikuormitettu kulutus.</span><span class="sxs-lookup"><span data-stu-id="74c01-141">If the scheduled consumption is higher than the available capacity in this period, the overloaded consumption will be selected.</span></span>  
 
 
 

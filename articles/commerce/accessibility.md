@@ -2,11 +2,9 @@
 title: Helppokäyttöisyyden toiminnot ja ominaisuudet
 description: Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
 author: BrianShook
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,103 +14,100 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 094ad8d34e13051ce7596be462070ead4cbc4f14
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 13f035a080eb41b4a69cc31b7275d87a5836c686
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206652"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796315"
 ---
-# <a name="accessibility-features-and-capabilities"></a><span data-ttu-id="4b8d8-103">Helppokäyttöisyyden toiminnot ja ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="4b8d8-103">Accessibility features and capabilities</span></span>
-
+# <a name="accessibility-features-and-capabilities"></a><span data-ttu-id="403a8-103">Helppokäyttöisyyden toiminnot ja ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="403a8-103">Accessibility features and capabilities</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="4b8d8-104">Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-104">This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="403a8-104">Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.</span><span class="sxs-lookup"><span data-stu-id="403a8-104">This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="4b8d8-105">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-105">Overview</span></span>
+<span data-ttu-id="403a8-105">Helppokäyttöominaisuudet ja -toiminnot mahdollistavat kaikkien käyttäjien toimintojen käytön ja suorittamisen, jotta he voivat saavuttaa tavoitteensa.</span><span class="sxs-lookup"><span data-stu-id="403a8-105">Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals.</span></span> <span data-ttu-id="403a8-106">Tämä laaja käyttäjäryhmä voi tarvita apuvälineitä kuulo-, näkö-, liikkuvuus- tai neurodiversiteetin vuoksi.</span><span class="sxs-lookup"><span data-stu-id="403a8-106">This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.</span></span>
 
-<span data-ttu-id="4b8d8-106">Helppokäyttöominaisuudet ja -toiminnot mahdollistavat kaikkien käyttäjien toimintojen käytön ja suorittamisen, jotta he voivat saavuttaa tavoitteensa.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-106">Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals.</span></span> <span data-ttu-id="4b8d8-107">Tämä laaja käyttäjäryhmä voi tarvita apuvälineitä kuulo-, näkö-, liikkuvuus- tai neurodiversiteetin vuoksi.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-107">This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.</span></span>
+<span data-ttu-id="403a8-107">Voit rakentaa sivustosi Dynamics 365 Commercessa erilaisten ominaisuuksien avulla niin, että se sisältää aputoimintoja.</span><span class="sxs-lookup"><span data-stu-id="403a8-107">Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality.</span></span> <span data-ttu-id="403a8-108">Kun suunnittelet sivustoa, harkitse helppokäyttötoimintojen alueita, jotka mainitaan [Microsoft Accessibility Centerissä](https://www.microsoft.com/accessibility).</span><span class="sxs-lookup"><span data-stu-id="403a8-108">When you design your site, you should consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility).</span></span> 
 
-<span data-ttu-id="4b8d8-108">Voit rakentaa sivustosi Dynamics 365 Commercessa erilaisten ominaisuuksien avulla niin, että se sisältää aputoimintoja.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-108">Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality.</span></span> <span data-ttu-id="4b8d8-109">Kun suunnittelet sivustoa, harkitse helppokäyttötoimintojen alueita, jotka mainitaan [Microsoft Accessibility Centerissä](https://www.microsoft.com/accessibility).</span><span class="sxs-lookup"><span data-stu-id="4b8d8-109">When you design your site, you should consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility).</span></span> 
+<span data-ttu-id="403a8-109">Tässä ohjeaiheessa käsitellään helppokäyttötoimintojen lisätoimintoja, jotka kannattaa ottaa huomioon, kun käytät Dynamics 365 Commercea.</span><span class="sxs-lookup"><span data-stu-id="403a8-109">This topic describes some additional areas of accessibility functionality that you should consider when you use Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="4b8d8-110">Tässä ohjeaiheessa käsitellään helppokäyttötoimintojen lisätoimintoja, jotka kannattaa ottaa huomioon, kun käytät Dynamics 365 Commercea.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-110">This topic describes some additional areas of accessibility functionality that you should consider when you use Dynamics 365 Commerce.</span></span>
+## <a name="image-alt-text"></a><span data-ttu-id="403a8-110">Kuvan vaihtoehtoinen teksti</span><span class="sxs-lookup"><span data-stu-id="403a8-110">Image alt text</span></span>
 
-## <a name="image-alt-text"></a><span data-ttu-id="4b8d8-111">Kuvan vaihtoehtoinen teksti</span><span class="sxs-lookup"><span data-stu-id="4b8d8-111">Image alt text</span></span>
+<span data-ttu-id="403a8-111">Dynamics 365 Commercessa on sisäänrakennettu digitaalisten resurssien hallintajärjestelmä, jonka avulla voit seurata sivustollasi käytettäviä kuva- ja videoresursseja.</span><span class="sxs-lookup"><span data-stu-id="403a8-111">Dynamics 365 Commerce has a built-in digital asset management system to track image and video assets that are used on your site.</span></span> <span data-ttu-id="403a8-112">Kuvatekstit, kuvaukset ja vaihtoehtoinen teksti voidaan lisätä kuvan ominaisuudet -ruutuun, kun kuva on valittu tai ladattu.</span><span class="sxs-lookup"><span data-stu-id="403a8-112">Image captions, descriptions, and alt text can be added in the properties pane for an image when it's selected or uploaded.</span></span>
 
-<span data-ttu-id="4b8d8-112">Dynamics 365 Commercessa on sisäänrakennettu digitaalisten resurssien hallintajärjestelmä, jonka avulla voit seurata sivustollasi käytettäviä kuva- ja videoresursseja.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-112">Dynamics 365 Commerce has a built-in digital asset management system to track image and video assets that are used on your site.</span></span> <span data-ttu-id="4b8d8-113">Kuvatekstit, kuvaukset ja vaihtoehtoinen teksti voidaan lisätä kuvan ominaisuudet -ruutuun, kun kuva on valittu tai ladattu.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-113">Image captions, descriptions, and alt text can be added in the properties pane for an image when it's selected or uploaded.</span></span>
+## <a name="video-accessibility"></a><span data-ttu-id="403a8-113">Videon helppokäyttötoiminnot</span><span class="sxs-lookup"><span data-stu-id="403a8-113">Video accessibility</span></span>
 
-## <a name="video-accessibility"></a><span data-ttu-id="4b8d8-114">Videon helppokäyttötoiminnot</span><span class="sxs-lookup"><span data-stu-id="4b8d8-114">Video accessibility</span></span>
+<span data-ttu-id="403a8-114">Dynamics 365 Commercen digitaalisten resurssien hallintajärjestelmä tukee useita videosisällön helppokäyttötoimintoja.</span><span class="sxs-lookup"><span data-stu-id="403a8-114">The Dynamics 365 Commerce digital asset management system supports several accessibility features for video content.</span></span> <span data-ttu-id="403a8-115">Seuraavassa taulukossa on kuvattu eräitä esimerkkejä.</span><span class="sxs-lookup"><span data-stu-id="403a8-115">The following table lists some examples.</span></span>
 
-<span data-ttu-id="4b8d8-115">Dynamics 365 Commercen digitaalisten resurssien hallintajärjestelmä tukee useita videosisällön helppokäyttötoimintoja.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-115">The Dynamics 365 Commerce digital asset management system supports several accessibility features for video content.</span></span> <span data-ttu-id="4b8d8-116">Seuraavassa taulukossa on kuvattu eräitä esimerkkejä.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-116">The following table lists some examples.</span></span>
-
-| <span data-ttu-id="4b8d8-117">Video-ominaisuus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-117">Video feature</span></span>               | <span data-ttu-id="4b8d8-118">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-118">Description</span></span> |
+| <span data-ttu-id="403a8-116">Video-ominaisuus</span><span class="sxs-lookup"><span data-stu-id="403a8-116">Video feature</span></span>               | <span data-ttu-id="403a8-117">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="403a8-117">Description</span></span> |
 |-----------------------------|-------------|
-| <span data-ttu-id="4b8d8-119">Tekstitys (CC)</span><span class="sxs-lookup"><span data-stu-id="4b8d8-119">Closed captioning (CC)</span></span>      | <span data-ttu-id="4b8d8-120">Teksti, joka voidaan näyttää videon ääni- ja äänikuvaelementeille kuulovammaisten käyttäjien auttamiseksi</span><span class="sxs-lookup"><span data-stu-id="4b8d8-120">Text that can be shown for the audio and audio descriptive elements of a video, to help users who are deaf or hard of hearing</span></span> |
-| <span data-ttu-id="4b8d8-121">Tekstitys</span><span class="sxs-lookup"><span data-stu-id="4b8d8-121">Subtitles</span></span>                   | <span data-ttu-id="4b8d8-122">Tekstitystiedostot, jotka näyttävät kontekstivihjeitä tai dialogin näytöllä</span><span class="sxs-lookup"><span data-stu-id="4b8d8-122">Caption files that show the text of context clues or dialog on-screen</span></span> |
-| <span data-ttu-id="4b8d8-123">Äänitallenteet</span><span class="sxs-lookup"><span data-stu-id="4b8d8-123">Audio transcripts</span></span>           | <span data-ttu-id="4b8d8-124">Puhuttujen sanojen tekstitiedote, joka luodaan videosisällön äänestä</span><span class="sxs-lookup"><span data-stu-id="4b8d8-124">A textual transcript of spoken words that is generated from the audio of a video asset</span></span> |
-| <span data-ttu-id="4b8d8-125">Kuvaava ääni</span><span class="sxs-lookup"><span data-stu-id="4b8d8-125">Descriptive audio</span></span>           | <span data-ttu-id="4b8d8-126">Muu kuin ensisijainen äänikanava, joka kuvaa näytöllä esiintyvää sisältöä tai kontekstia</span><span class="sxs-lookup"><span data-stu-id="4b8d8-126">A non-primary audio channel that describes the content or context that is occurring on-screen</span></span> |
-| <span data-ttu-id="4b8d8-127">Vähimmäisikä</span><span class="sxs-lookup"><span data-stu-id="4b8d8-127">Minimum age gate</span></span>            | <span data-ttu-id="4b8d8-128">Määrite, joka voi säilyttää vähimmäisiän, jonka katselijan on oltava katsoakseen videon (vain metatiedot)</span><span class="sxs-lookup"><span data-stu-id="4b8d8-128">An attribute that can store the minimum age that a viewer must be to view a video (metadata only)</span></span> |
+| <span data-ttu-id="403a8-118">Tekstitys (CC)</span><span class="sxs-lookup"><span data-stu-id="403a8-118">Closed captioning (CC)</span></span>      | <span data-ttu-id="403a8-119">Teksti, joka voidaan näyttää videon ääni- ja äänikuvaelementeille kuulovammaisten käyttäjien auttamiseksi</span><span class="sxs-lookup"><span data-stu-id="403a8-119">Text that can be shown for the audio and audio descriptive elements of a video, to help users who are deaf or hard of hearing</span></span> |
+| <span data-ttu-id="403a8-120">Tekstitys</span><span class="sxs-lookup"><span data-stu-id="403a8-120">Subtitles</span></span>                   | <span data-ttu-id="403a8-121">Tekstitystiedostot, jotka näyttävät kontekstivihjeitä tai dialogin näytöllä</span><span class="sxs-lookup"><span data-stu-id="403a8-121">Caption files that show the text of context clues or dialog on-screen</span></span> |
+| <span data-ttu-id="403a8-122">Äänitallenteet</span><span class="sxs-lookup"><span data-stu-id="403a8-122">Audio transcripts</span></span>           | <span data-ttu-id="403a8-123">Puhuttujen sanojen tekstitiedote, joka luodaan videosisällön äänestä</span><span class="sxs-lookup"><span data-stu-id="403a8-123">A textual transcript of spoken words that is generated from the audio of a video asset</span></span> |
+| <span data-ttu-id="403a8-124">Kuvaava ääni</span><span class="sxs-lookup"><span data-stu-id="403a8-124">Descriptive audio</span></span>           | <span data-ttu-id="403a8-125">Muu kuin ensisijainen äänikanava, joka kuvaa näytöllä esiintyvää sisältöä tai kontekstia</span><span class="sxs-lookup"><span data-stu-id="403a8-125">A non-primary audio channel that describes the content or context that is occurring on-screen</span></span> |
+| <span data-ttu-id="403a8-126">Vähimmäisikä</span><span class="sxs-lookup"><span data-stu-id="403a8-126">Minimum age gate</span></span>            | <span data-ttu-id="403a8-127">Määrite, joka voi säilyttää vähimmäisiän, jonka katselijan on oltava katsoakseen videon (vain metatiedot)</span><span class="sxs-lookup"><span data-stu-id="403a8-127">An attribute that can store the minimum age that a viewer must be to view a video (metadata only)</span></span> |
 
-### <a name="configure-video-accessibility-elements"></a><span data-ttu-id="4b8d8-129">Videon helppokäyttötoimintojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="4b8d8-129">Configure video accessibility elements</span></span>
+### <a name="configure-video-accessibility-elements"></a><span data-ttu-id="403a8-128">Videon helppokäyttötoimintojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="403a8-128">Configure video accessibility elements</span></span>
 
-<span data-ttu-id="4b8d8-130">Commerce-sivuston **Mediakirjasto**-osiossa voit ladata videoresursseja, joissa on erilliset tiedostot, kuten tekstitys, tavallinen ääni ja kuvaava ääni.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-130">In the Commerce **Media Library** section for your site, you can upload video assets that have separate files for closed captions, regular audio, and descriptive audio.</span></span> <span data-ttu-id="4b8d8-131">Tekstitys voidaan luoda myös automaattisesti, kun videoresurssi ladataan.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-131">Closed captions can also be generated automatically when a video asset is uploaded.</span></span>
+<span data-ttu-id="403a8-129">Commerce-sivuston **Mediakirjasto**-osiossa voit ladata videoresursseja, joissa on erilliset tiedostot, kuten tekstitys, tavallinen ääni ja kuvaava ääni.</span><span class="sxs-lookup"><span data-stu-id="403a8-129">In the Commerce **Media Library** section for your site, you can upload video assets that have separate files for closed captions, regular audio, and descriptive audio.</span></span> <span data-ttu-id="403a8-130">Tekstitys voidaan luoda myös automaattisesti, kun videoresurssi ladataan.</span><span class="sxs-lookup"><span data-stu-id="403a8-130">Closed captions can also be generated automatically when a video asset is uploaded.</span></span>
 
-#### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a><span data-ttu-id="4b8d8-132">Luo tai lataa suljettuja tekstitystiedostoja videoresurssien lataamisen aikana</span><span class="sxs-lookup"><span data-stu-id="4b8d8-132">Generate or upload closed caption files during video asset upload</span></span>
+#### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a><span data-ttu-id="403a8-131">Luo tai lataa suljettuja tekstitystiedostoja videoresurssien lataamisen aikana</span><span class="sxs-lookup"><span data-stu-id="403a8-131">Generate or upload closed caption files during video asset upload</span></span>
 
-<span data-ttu-id="4b8d8-133">Seuraa tätä vaihetta, jos haluat, että tekstitystiedosto luodaan automaattisesti, kun lataat videon.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-133">To have a closed caption file automatically generated when you upload a video, follow this step.</span></span>
+<span data-ttu-id="403a8-132">Seuraa tätä vaihetta, jos haluat, että tekstitystiedosto luodaan automaattisesti, kun lataat videon.</span><span class="sxs-lookup"><span data-stu-id="403a8-132">To have a closed caption file automatically generated when you upload a video, follow this step.</span></span>
 
-- <span data-ttu-id="4b8d8-134">Valitse **Resurssien lataaminen** -valintaikkunassa **Luo automaattisesti suljetut tekstitykset**.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-134">In the **Asset Upload** dialog box, select **Automatically generate closed captions**.</span></span> <span data-ttu-id="4b8d8-135">Jos olet muodostamassa suljettua tekstitystiedostoa, suljettujen tekstitystiedostojen tiedostovalitsin ei ole käytettävissä valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-135">If you're generating a closed caption file, the file selector for closed caption files will be unavailable in the dialog box.</span></span>
+- <span data-ttu-id="403a8-133">Valitse **Resurssien lataaminen** -valintaikkunassa **Luo automaattisesti suljetut tekstitykset**.</span><span class="sxs-lookup"><span data-stu-id="403a8-133">In the **Asset Upload** dialog box, select **Automatically generate closed captions**.</span></span> <span data-ttu-id="403a8-134">Jos olet muodostamassa suljettua tekstitystiedostoa, suljettujen tekstitystiedostojen tiedostovalitsin ei ole käytettävissä valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="403a8-134">If you're generating a closed caption file, the file selector for closed caption files will be unavailable in the dialog box.</span></span>
 
-<span data-ttu-id="4b8d8-136">Seuraa tätä vaihetta, jos haluat ladata tekstitystiedoston manuaalisesti, kun lataat videon.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-136">To manually upload a closed caption file when you upload a video, follow this step.</span></span>
+<span data-ttu-id="403a8-135">Seuraa tätä vaihetta, jos haluat ladata tekstitystiedoston manuaalisesti, kun lataat videon.</span><span class="sxs-lookup"><span data-stu-id="403a8-135">To manually upload a closed caption file when you upload a video, follow this step.</span></span>
 
-- <span data-ttu-id="4b8d8-137">Tyhjennä **Resurssien lataaminen** -valintaikkunassa **Luo automaattisesti suljetut tekstitykset**.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-137">In the **Asset Upload** dialog box, clear **Automatically generate closed captions**.</span></span>
+- <span data-ttu-id="403a8-136">Tyhjennä **Resurssien lataaminen** -valintaikkunassa **Luo automaattisesti suljetut tekstitykset**.</span><span class="sxs-lookup"><span data-stu-id="403a8-136">In the **Asset Upload** dialog box, clear **Automatically generate closed captions**.</span></span>
 
-<span data-ttu-id="4b8d8-138">Jos haluat ladata videolle tavallisia ääni- tai kuvaavia äänitiedostoja, käytä **Resurssien lataaminen** -valintaikkunassa olevaa tiedoston valitsinta.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-138">To upload regular audio or descriptive audio files for the video, use the file selector in the **Asset Upload** dialog box.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="4b8d8-139">Tekstitys, tavallinen ääni ja kuvaileva äänisisältö voidaan lisätä myös videoresurssin lataamisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-139">Closed caption, regular audio, and descriptive audio assets can also be added after a video asset is uploaded.</span></span> <span data-ttu-id="4b8d8-140">Siirry **Mediakirjasto**-kohtaan, valitse **Muokkaa** tarkistaaksesi sen. Lataa sitten videoresurssin ominaisuudet -ruudussa lisäresurssit.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-140">Go to **Media Library**, select the video asset, and select **Edit** to check it out. Then, in the properties pane for the video asset, upload the additional assets.</span></span>
-
-#### <a name="edit-cc-and-audio-transcript-files"></a><span data-ttu-id="4b8d8-141">Muokkaa tekstitys- ja äänitallennetiedostoja</span><span class="sxs-lookup"><span data-stu-id="4b8d8-141">Edit CC and audio transcript files</span></span>
-
-<span data-ttu-id="4b8d8-142">Tekstitys- ja äänitallennetiedostoja voi muokata suoraan sisällönluontityökalussa.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-142">CC and audio transcript files can be edited directly in the authoring tool.</span></span> <span data-ttu-id="4b8d8-143">Videon toisto on käytettävissä muokkauksen aikana.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-143">Video playback is available during editing.</span></span>
-
-<span data-ttu-id="4b8d8-144">Voit muokata tekstitys- ja äänitallennetiedostoja seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-144">To edit CC and audio transcript files, follow these steps.</span></span>
-
-1. <span data-ttu-id="4b8d8-145">Siirry kohtaan **Mediakirjasto** ja valitse videoresurssin tiedostonimi.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-145">Go to **Media Library**, and select the file name of the video asset.</span></span> <span data-ttu-id="4b8d8-146">Näyttöön tulee tekstityksen ja tallenteen sisältöeditori.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-146">The closed caption and transcript content editor appears.</span></span>
-1. <span data-ttu-id="4b8d8-147">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-147">Select **Edit**.</span></span>
-1. <span data-ttu-id="4b8d8-148">Muokkaa tekstitystä tai tallennetekstiä.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-148">Edit the closed caption or transcript text.</span></span>
-1. <span data-ttu-id="4b8d8-149">Kun olet valmis, valitse **Tallenna** ja valitse sitten **Lopeta muokkaus**.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-149">When you've finished, select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="4b8d8-150">Kun olet valmis julkaisemaan, valitse **Julkaise**.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-150">When you're ready to publish, select **Publish**.</span></span>
-
-#### <a name="set-the-minimum-age-attribute"></a><span data-ttu-id="4b8d8-151">Vähimmäisikämääritteen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="4b8d8-151">Set the Minimum Age attribute</span></span>
-
-<span data-ttu-id="4b8d8-152">**Vähimmäisiän** metatietoattribuutti voidaan liittää videoresursseihin.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-152">A **Minimum Age** metadata attribute can be associated with video assets.</span></span>
-
-<span data-ttu-id="4b8d8-153">Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-153">To set the **Minimum Age** attribute for a video asset, follow these steps.</span></span>
-
-1. <span data-ttu-id="4b8d8-154">Siirry **Mediakirjasto**-kohtaan ja valitse videosisältö.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-154">Go to **Media Library**, and select the video asset.</span></span>
-1. <span data-ttu-id="4b8d8-155">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-155">Select **Edit**.</span></span>
-1. <span data-ttu-id="4b8d8-156">Määritä **Vähimmäisikämäärite** videoresurssin ominaisuudet-ruudussa.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-156">In the properties pane for the video asset, set the **Minimum Age** attribute.</span></span>
+<span data-ttu-id="403a8-137">Jos haluat ladata videolle tavallisia ääni- tai kuvaavia äänitiedostoja, käytä **Resurssien lataaminen** -valintaikkunassa olevaa tiedoston valitsinta.</span><span class="sxs-lookup"><span data-stu-id="403a8-137">To upload regular audio or descriptive audio files for the video, use the file selector in the **Asset Upload** dialog box.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4b8d8-157">Ominaisuudet-ruutua käytetään vain metatietomääritteen arvon asettamiseen ja tallentamiseen.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-157">The properties pane is used only to set and store the metadata attribute value.</span></span> <span data-ttu-id="4b8d8-158">Mukautetut moduulit on luotava, jotta tätä määritettä voidaan käyttää toisto-ominaisuutta varten.</span><span class="sxs-lookup"><span data-stu-id="4b8d8-158">Customized modules must be created to use this attribute for playback gating.</span></span>
+> <span data-ttu-id="403a8-138">Tekstitys, tavallinen ääni ja kuvaileva äänisisältö voidaan lisätä myös videoresurssin lataamisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="403a8-138">Closed caption, regular audio, and descriptive audio assets can also be added after a video asset is uploaded.</span></span> <span data-ttu-id="403a8-139">Siirry **Mediakirjasto**-kohtaan, valitse **Muokkaa** tarkistaaksesi sen. Lataa sitten videoresurssin ominaisuudet -ruudussa lisäresurssit.</span><span class="sxs-lookup"><span data-stu-id="403a8-139">Go to **Media Library**, select the video asset, and select **Edit** to check it out. Then, in the properties pane for the video asset, upload the additional assets.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4b8d8-159">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="4b8d8-159">Additional resources</span></span>
+#### <a name="edit-cc-and-audio-transcript-files"></a><span data-ttu-id="403a8-140">Muokkaa tekstitys- ja äänitallennetiedostoja</span><span class="sxs-lookup"><span data-stu-id="403a8-140">Edit CC and audio transcript files</span></span>
 
-[<span data-ttu-id="4b8d8-160">Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet</span><span class="sxs-lookup"><span data-stu-id="4b8d8-160">Accessibility in forms, products, and controls</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+<span data-ttu-id="403a8-141">Tekstitys- ja äänitallennetiedostoja voi muokata suoraan sisällönluontityökalussa.</span><span class="sxs-lookup"><span data-stu-id="403a8-141">CC and audio transcript files can be edited directly in the authoring tool.</span></span> <span data-ttu-id="403a8-142">Videon toisto on käytettävissä muokkauksen aikana.</span><span class="sxs-lookup"><span data-stu-id="403a8-142">Video playback is available during editing.</span></span>
 
-[<span data-ttu-id="4b8d8-161">Microsoftin helppokäyttökeskus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-161">Microsoft Accessibility Center</span></span>](https://www.microsoft.com/accessibility)
+<span data-ttu-id="403a8-143">Voit muokata tekstitys- ja äänitallennetiedostoja seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="403a8-143">To edit CC and audio transcript files, follow these steps.</span></span>
 
-[<span data-ttu-id="4b8d8-162">Dynamics 365:n helppokäyttökeskus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-162">Dynamics 365 Accessibility Center</span></span>](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+1. <span data-ttu-id="403a8-144">Siirry kohtaan **Mediakirjasto** ja valitse videoresurssin tiedostonimi.</span><span class="sxs-lookup"><span data-stu-id="403a8-144">Go to **Media Library**, and select the file name of the video asset.</span></span> <span data-ttu-id="403a8-145">Näyttöön tulee tekstityksen ja tallenteen sisältöeditori.</span><span class="sxs-lookup"><span data-stu-id="403a8-145">The closed caption and transcript content editor appears.</span></span>
+1. <span data-ttu-id="403a8-146">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="403a8-146">Select **Edit**.</span></span>
+1. <span data-ttu-id="403a8-147">Muokkaa tekstitystä tai tallennetekstiä.</span><span class="sxs-lookup"><span data-stu-id="403a8-147">Edit the closed caption or transcript text.</span></span>
+1. <span data-ttu-id="403a8-148">Kun olet valmis, valitse **Tallenna** ja valitse sitten **Lopeta muokkaus**.</span><span class="sxs-lookup"><span data-stu-id="403a8-148">When you've finished, select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="403a8-149">Kun olet valmis julkaisemaan, valitse **Julkaise**.</span><span class="sxs-lookup"><span data-stu-id="403a8-149">When you're ready to publish, select **Publish**.</span></span>
 
-[<span data-ttu-id="4b8d8-163">Yhteensopivuuden yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-163">Compliance overview</span></span>](compliance-overview.md)
+#### <a name="set-the-minimum-age-attribute"></a><span data-ttu-id="403a8-150">Vähimmäisikämääritteen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="403a8-150">Set the Minimum Age attribute</span></span>
 
-[<span data-ttu-id="4b8d8-164">Evästeen yhteensopivuus</span><span class="sxs-lookup"><span data-stu-id="4b8d8-164">Cookie compliance</span></span>](cookie-compliance.md)
+<span data-ttu-id="403a8-151">**Vähimmäisiän** metatietoattribuutti voidaan liittää videoresursseihin.</span><span class="sxs-lookup"><span data-stu-id="403a8-151">A **Minimum Age** metadata attribute can be associated with video assets.</span></span>
 
-[<span data-ttu-id="4b8d8-165">Lisää tietosuojakäytäntösivu</span><span class="sxs-lookup"><span data-stu-id="4b8d8-165">Add a privacy policy page</span></span>](add-privacy-page.md)
+<span data-ttu-id="403a8-152">Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="403a8-152">To set the **Minimum Age** attribute for a video asset, follow these steps.</span></span>
 
-[<span data-ttu-id="4b8d8-166">Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen</span><span class="sxs-lookup"><span data-stu-id="4b8d8-166">Replace user IDs associated with tracked content changes</span></span>](replace-IDs-tracked-changes.md)
+1. <span data-ttu-id="403a8-153">Siirry **Mediakirjasto**-kohtaan ja valitse videosisältö.</span><span class="sxs-lookup"><span data-stu-id="403a8-153">Go to **Media Library**, and select the video asset.</span></span>
+1. <span data-ttu-id="403a8-154">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="403a8-154">Select **Edit**.</span></span>
+1. <span data-ttu-id="403a8-155">Määritä **Vähimmäisikämäärite** videoresurssin ominaisuudet-ruudussa.</span><span class="sxs-lookup"><span data-stu-id="403a8-155">In the properties pane for the video asset, set the **Minimum Age** attribute.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="403a8-156">Ominaisuudet-ruutua käytetään vain metatietomääritteen arvon asettamiseen ja tallentamiseen.</span><span class="sxs-lookup"><span data-stu-id="403a8-156">The properties pane is used only to set and store the metadata attribute value.</span></span> <span data-ttu-id="403a8-157">Mukautetut moduulit on luotava, jotta tätä määritettä voidaan käyttää toisto-ominaisuutta varten.</span><span class="sxs-lookup"><span data-stu-id="403a8-157">Customized modules must be created to use this attribute for playback gating.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="403a8-158">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="403a8-158">Additional resources</span></span>
+
+[<span data-ttu-id="403a8-159">Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet</span><span class="sxs-lookup"><span data-stu-id="403a8-159">Accessibility in forms, products, and controls</span></span>](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+
+[<span data-ttu-id="403a8-160">Microsoftin helppokäyttökeskus</span><span class="sxs-lookup"><span data-stu-id="403a8-160">Microsoft Accessibility Center</span></span>](https://www.microsoft.com/accessibility)
+
+[<span data-ttu-id="403a8-161">Dynamics 365:n helppokäyttökeskus</span><span class="sxs-lookup"><span data-stu-id="403a8-161">Dynamics 365 Accessibility Center</span></span>](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+
+[<span data-ttu-id="403a8-162">Yhteensopivuuden yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="403a8-162">Compliance overview</span></span>](compliance-overview.md)
+
+[<span data-ttu-id="403a8-163">Evästeen yhteensopivuus</span><span class="sxs-lookup"><span data-stu-id="403a8-163">Cookie compliance</span></span>](cookie-compliance.md)
+
+[<span data-ttu-id="403a8-164">Lisää tietosuojakäytäntösivu</span><span class="sxs-lookup"><span data-stu-id="403a8-164">Add a privacy policy page</span></span>](add-privacy-page.md)
+
+[<span data-ttu-id="403a8-165">Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen</span><span class="sxs-lookup"><span data-stu-id="403a8-165">Replace user IDs associated with tracked content changes</span></span>](replace-IDs-tracked-changes.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

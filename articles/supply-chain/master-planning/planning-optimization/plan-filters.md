@@ -2,11 +2,9 @@
 title: Suodattimien käyttäminen suunnitelmaan
 description: Tässä ohjeaiheessa käsitellään suodattimien käyttöä suunnitelmassa suunnittelun optimointitoimintoa käytettäessä.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,46 +16,46 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b5262cc5dc72ffcc50770cf5a2e2dda216d7ff8e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b605f9826d2116f6f52a4b880f4fb5bd24cfdd0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212099"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813048"
 ---
-# <a name="apply-filters-to-a-plan"></a><span data-ttu-id="5e2d2-103">Suodattimien käyttäminen suunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="5e2d2-103">Apply filters to a plan</span></span>
+# <a name="apply-filters-to-a-plan"></a><span data-ttu-id="189e5-103">Suodattimien käyttäminen suunnitelmaan</span><span class="sxs-lookup"><span data-stu-id="189e5-103">Apply filters to a plan</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="5e2d2-104">Kun suunnittelun optimointitoimintoa käytetään, voit käyttää suunnitelmassa suodatinta.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-104">When the Planning Optimization functionality is used, you can apply a filter to a plan.</span></span> <span data-ttu-id="5e2d2-105">**Suunnitelma** n suodatinta käytetään aina pääsuunnitteluajon aikana.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-105">The **Plan filter** will always be applied during a master planning run.</span></span> <span data-ttu-id="5e2d2-106">**Suunnitelman suodattimella** voi rajoittaa suunnitelman kätevästi tiettyyn nimikeryhmään ja varmistaa, ettei muita nimikkeitä sisällytetä tuloksena olevaan pääsuunnitteluun.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-106">A **Plan filter** is useful when you want to limit a plan to a specific group of items and make sure that no other items are included as part of the resulting master planning.</span></span>
+<span data-ttu-id="189e5-104">Kun suunnittelun optimointitoimintoa käytetään, voit käyttää suunnitelmassa suodatinta.</span><span class="sxs-lookup"><span data-stu-id="189e5-104">When the Planning Optimization functionality is used, you can apply a filter to a plan.</span></span> <span data-ttu-id="189e5-105">**Suunnitelma** n suodatinta käytetään aina pääsuunnitteluajon aikana.</span><span class="sxs-lookup"><span data-stu-id="189e5-105">The **Plan filter** will always be applied during a master planning run.</span></span> <span data-ttu-id="189e5-106">**Suunnitelman suodattimella** voi rajoittaa suunnitelman kätevästi tiettyyn nimikeryhmään ja varmistaa, ettei muita nimikkeitä sisällytetä tuloksena olevaan pääsuunnitteluun.</span><span class="sxs-lookup"><span data-stu-id="189e5-106">A **Plan filter** is useful when you want to limit a plan to a specific group of items and make sure that no other items are included as part of the resulting master planning.</span></span>
 
-<span data-ttu-id="5e2d2-107">Jos **suunnitelman suodatinta** käytetään ja jos pääsuunnitteluajon aikana käytetään myös suorituksenaikaista suodatinta, suunnitteluajossa otetaan huomioon vain kahden suodattimen leikkauskohta.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-107">If a **Plan filter** is applied, and a runtime filter is also applied during the master planning run, only the intersection of the two filters is included in the planning run.</span></span>
+<span data-ttu-id="189e5-107">Jos **suunnitelman suodatinta** käytetään ja jos pääsuunnitteluajon aikana käytetään myös suorituksenaikaista suodatinta, suunnitteluajossa otetaan huomioon vain kahden suodattimen leikkauskohta.</span><span class="sxs-lookup"><span data-stu-id="189e5-107">If a **Plan filter** is applied, and a runtime filter is also applied during the master planning run, only the intersection of the two filters is included in the planning run.</span></span>
 
-<span data-ttu-id="5e2d2-108">**Suunnitelman suodatinta** voi käyttää **pääsuunnitelmista**, kun suunnittelun optimointia käytetään.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-108">The **Plan filter** can be accessed from **Master plans** when Planning Optimization is used.</span></span>
+<span data-ttu-id="189e5-108">**Suunnitelman suodatinta** voi käyttää **pääsuunnitelmista**, kun suunnittelun optimointia käytetään.</span><span class="sxs-lookup"><span data-stu-id="189e5-108">The **Plan filter** can be accessed from **Master plans** when Planning Optimization is used.</span></span>
 
-## <a name="example-scenario"></a><span data-ttu-id="5e2d2-109">Esimerkkiskenaario</span><span class="sxs-lookup"><span data-stu-id="5e2d2-109">Example scenario</span></span>
+## <a name="example-scenario"></a><span data-ttu-id="189e5-109">Esimerkkiskenaario</span><span class="sxs-lookup"><span data-stu-id="189e5-109">Example scenario</span></span>
 
-<span data-ttu-id="5e2d2-110">Määritettävä suunnitelman suodatin sisältää nimekkeet A, B ja C. Samalla suunnitelmalle suoritetaan sitten pääsuunnitteluajoja niin, että käytössä on erilaiset suorituksenaikaiset suorittimet:</span><span class="sxs-lookup"><span data-stu-id="5e2d2-110">A plan filter is set up that includes items A, B, and C. Master planning runs are then run for the same plan, but different runtime filters are applied:</span></span>
+<span data-ttu-id="189e5-110">Määritettävä suunnitelman suodatin sisältää nimekkeet A, B ja C. Samalla suunnitelmalle suoritetaan sitten pääsuunnitteluajoja niin, että käytössä on erilaiset suorituksenaikaiset suorittimet:</span><span class="sxs-lookup"><span data-stu-id="189e5-110">A plan filter is set up that includes items A, B, and C. Master planning runs are then run for the same plan, but different runtime filters are applied:</span></span>
 
-- <span data-ttu-id="5e2d2-111">**Suorituksenaikainen suodatin, joka sisältää nimikkeen D**: nimikkeitä ei suunnitella, koska suunnitelman suodattimen ja suorituksenaikaisen suodattimen välillä ei ole leikkauskohtaa.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-111">**Runtime filter that includes item D:** No items are planned, because there is no intersection between the plan filter and the runtime filter.</span></span>
-- <span data-ttu-id="5e2d2-112">**Suorituksenaikainen suodatin, joka sisältää nimikkeen A ja D**: vain nimike A sisältyy suunnitteluajoon, koska nimike D ei sisälly suunnitelman suodattimeen.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-112">**Runtime filter that includes item A and D:** Only item A is included in the planning run, because item D isn't part of the plan filter.</span></span>
-- <span data-ttu-id="5e2d2-113">**Suorituksenaikainen suodatin, joka sisältää nimikkeen B**: vain nimike B sisältyy suunnitteluajoon ja nimikkeen A edellinen suunnittelutulos säilytetään.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-113">**Runtime filter that includes item B:** Only item B is included in the planning run, and the previous planning output for item A is kept.</span></span>
-- <span data-ttu-id="5e2d2-114">**Suorituksenaikainen suodatin, joka sisältää kaikki nimikkeet (tyhjä suodatin)**: nimikkeet A, B ja C sisältyvät suunnitteluajoon ja nimikkeiden A ja B edelliset suunnittelutulokset korvataan.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-114">**Runtime filter that includes all items (blank filter):** Items A, B, and C are included in the planning run, and the previous planning output for items A and B is overwritten.</span></span>
+- <span data-ttu-id="189e5-111">**Suorituksenaikainen suodatin, joka sisältää nimikkeen D**: nimikkeitä ei suunnitella, koska suunnitelman suodattimen ja suorituksenaikaisen suodattimen välillä ei ole leikkauskohtaa.</span><span class="sxs-lookup"><span data-stu-id="189e5-111">**Runtime filter that includes item D:** No items are planned, because there is no intersection between the plan filter and the runtime filter.</span></span>
+- <span data-ttu-id="189e5-112">**Suorituksenaikainen suodatin, joka sisältää nimikkeen A ja D**: vain nimike A sisältyy suunnitteluajoon, koska nimike D ei sisälly suunnitelman suodattimeen.</span><span class="sxs-lookup"><span data-stu-id="189e5-112">**Runtime filter that includes item A and D:** Only item A is included in the planning run, because item D isn't part of the plan filter.</span></span>
+- <span data-ttu-id="189e5-113">**Suorituksenaikainen suodatin, joka sisältää nimikkeen B**: vain nimike B sisältyy suunnitteluajoon ja nimikkeen A edellinen suunnittelutulos säilytetään.</span><span class="sxs-lookup"><span data-stu-id="189e5-113">**Runtime filter that includes item B:** Only item B is included in the planning run, and the previous planning output for item A is kept.</span></span>
+- <span data-ttu-id="189e5-114">**Suorituksenaikainen suodatin, joka sisältää kaikki nimikkeet (tyhjä suodatin)**: nimikkeet A, B ja C sisältyvät suunnitteluajoon ja nimikkeiden A ja B edelliset suunnittelutulokset korvataan.</span><span class="sxs-lookup"><span data-stu-id="189e5-114">**Runtime filter that includes all items (blank filter):** Items A, B, and C are included in the planning run, and the previous planning output for items A and B is overwritten.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5e2d2-115">Suunnitelman suodattimen määrittämistä kannattaa välttää, jos suunnitelma on valittu **Pääsuunnittelun parametrit** -sivulla **nykyiseksi dynaamiseksi pääsuunnitelmaksi**.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-115">You should avoid setting a plan filter on the plan that is selected as **Current dynamic master plan** on the **Master planning parameters** page.</span></span> <span data-ttu-id="5e2d2-116">Muussa tapauksessa dynaaminen pääsuunnitelmattoiminto rajoittuu suodatettuihin nimikkeisiin.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-116">Otherwise, the dynamic master plan functionality will be limited to the filtered items.</span></span> <span data-ttu-id="5e2d2-117">Jos esimerkiksi nettotarpeet päivitetään nimikkeelle, joka ei sisälly suunnitelman suodattimeen, tulosta ei muodostu.</span><span class="sxs-lookup"><span data-stu-id="5e2d2-117">For example, if the net requirements are updated for an item that isn't part of the plan filter, no result will be generated.</span></span>
+> <span data-ttu-id="189e5-115">Suunnitelman suodattimen määrittämistä kannattaa välttää, jos suunnitelma on valittu **Pääsuunnittelun parametrit** -sivulla **nykyiseksi dynaamiseksi pääsuunnitelmaksi**.</span><span class="sxs-lookup"><span data-stu-id="189e5-115">You should avoid setting a plan filter on the plan that is selected as **Current dynamic master plan** on the **Master planning parameters** page.</span></span> <span data-ttu-id="189e5-116">Muussa tapauksessa dynaaminen pääsuunnitelmattoiminto rajoittuu suodatettuihin nimikkeisiin.</span><span class="sxs-lookup"><span data-stu-id="189e5-116">Otherwise, the dynamic master plan functionality will be limited to the filtered items.</span></span> <span data-ttu-id="189e5-117">Jos esimerkiksi nettotarpeet päivitetään nimikkeelle, joka ei sisälly suunnitelman suodattimeen, tulosta ei muodostu.</span><span class="sxs-lookup"><span data-stu-id="189e5-117">For example, if the net requirements are updated for an item that isn't part of the plan filter, no result will be generated.</span></span>
 
-## <a name="related-resources"></a><span data-ttu-id="5e2d2-118">Liittyvät resurssit</span><span class="sxs-lookup"><span data-stu-id="5e2d2-118">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="189e5-118">Liittyvät resurssit</span><span class="sxs-lookup"><span data-stu-id="189e5-118">Related resources</span></span>
 
-[<span data-ttu-id="5e2d2-119">Suunnittelun optimoinnin yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="5e2d2-119">Planning Optimization overview</span></span>](planning-optimization-overview.md)
+[<span data-ttu-id="189e5-119">Suunnittelun optimoinnin yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="189e5-119">Planning Optimization overview</span></span>](planning-optimization-overview.md)
 
-[<span data-ttu-id="5e2d2-120">Suunnittelun optimoinnin aloittaminen</span><span class="sxs-lookup"><span data-stu-id="5e2d2-120">Get started with Planning Optimization</span></span>](get-started.md)
+[<span data-ttu-id="189e5-120">Suunnittelun optimoinnin aloittaminen</span><span class="sxs-lookup"><span data-stu-id="189e5-120">Get started with Planning Optimization</span></span>](get-started.md)
 
-[<span data-ttu-id="5e2d2-121">Suunnittelun optimoinnin sopivuusanalyysi</span><span class="sxs-lookup"><span data-stu-id="5e2d2-121">Planning Optimization fit analysis</span></span>](planning-optimization-fit-analysis.md)
+[<span data-ttu-id="189e5-121">Suunnittelun optimoinnin sopivuusanalyysi</span><span class="sxs-lookup"><span data-stu-id="189e5-121">Planning Optimization fit analysis</span></span>](planning-optimization-fit-analysis.md)
 
-[<span data-ttu-id="5e2d2-122">Suunnitelman historia- ja suunnittelulokien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="5e2d2-122">View plan history and planning logs</span></span>](plan-history-logs.md)
+[<span data-ttu-id="189e5-122">Suunnitelman historia- ja suunnittelulokien tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="189e5-122">View plan history and planning logs</span></span>](plan-history-logs.md)
 
-[<span data-ttu-id="5e2d2-123">Suunnittelutyön peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="5e2d2-123">Cancel a planning job</span></span>](cancel-planning-job.md)
+[<span data-ttu-id="189e5-123">Suunnittelutyön peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="189e5-123">Cancel a planning job</span></span>](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
