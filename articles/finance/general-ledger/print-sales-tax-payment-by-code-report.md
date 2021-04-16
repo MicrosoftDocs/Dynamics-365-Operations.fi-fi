@@ -2,11 +2,9 @@
 title: Arvonlisäveromaksun tulostaminen koodeittain -raportti
 description: Tässä ohjeaiheessa on tietoja asetuksista ja toiminnoista, joita tarvitaan, jotta arvonlisäveromaksun koodiraportti voidaan tulostaa kirjanpidon tai verokoodin valuuttana.
 author: anasyash
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,36 +13,36 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6f66db74867bdd3e9b4364e247058e0534191f2e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205057"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815449"
 ---
-# <a name="print-the-sales-tax-payment-by-code-report"></a><span data-ttu-id="ca0a4-103">Arvonlisäveromaksun tulostaminen koodeittain -raportti</span><span class="sxs-lookup"><span data-stu-id="ca0a4-103">Print the Sales tax payment by code report</span></span> 
+# <a name="print-the-sales-tax-payment-by-code-report"></a><span data-ttu-id="91051-103">Arvonlisäveromaksun tulostaminen koodeittain -raportti</span><span class="sxs-lookup"><span data-stu-id="91051-103">Print the Sales tax payment by code report</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ca0a4-104">Jos haluat tulostaa **Arvonlisäveromaksun koodin perusteella** -raportin, siirry kohtaan **Vero** \> **Tiedustelut ja raportit** \> **Arvonlisäveroraportit** \> **Arvon lisäveromaksu koodin mukaan**.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-104">To print the **Sales tax payment by code** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.</span></span> <span data-ttu-id="ca0a4-105">Oletusarvon mukaan raportin summat luodaan yrityksen kirjanpitovaluuttana kaikille raportointikoodeille, jotka on määritetty **Arvonlisäveroilmoituksen koodit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-105">By default, report amounts are generated in the accounting currency of the legal entity for all reporting codes that are set up on the **Sales tax reporting codes** page.</span></span>
+<span data-ttu-id="91051-104">Jos haluat tulostaa **Arvonlisäveromaksun koodin perusteella** -raportin, siirry kohtaan **Vero** \> **Tiedustelut ja raportit** \> **Arvonlisäveroraportit** \> **Arvon lisäveromaksu koodin mukaan**.</span><span class="sxs-lookup"><span data-stu-id="91051-104">To print the **Sales tax payment by code** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.</span></span> <span data-ttu-id="91051-105">Oletusarvon mukaan raportin summat luodaan yrityksen kirjanpitovaluuttana kaikille raportointikoodeille, jotka on määritetty **Arvonlisäveroilmoituksen koodit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="91051-105">By default, report amounts are generated in the accounting currency of the legal entity for all reporting codes that are set up on the **Sales tax reporting codes** page.</span></span>
 
-<span data-ttu-id="ca0a4-106">Voit myös luoda tämän raportin niin, että se näyttää arvonlisäveromaksun summat arvonlisäverokoodien valuuttoina kaikkien niiden raportointikoodien osalta, jotka on liitetty **Arvonlisäverokoodit** -sivun ALV-koodeihin.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-106">You can also generate this report so that it shows the sales tax payment amounts in the currencies of sales tax codes for all reporting codes that are assigned to sales tax codes on the **Sales tax codes** page.</span></span>
+<span data-ttu-id="91051-106">Voit myös luoda tämän raportin niin, että se näyttää arvonlisäveromaksun summat arvonlisäverokoodien valuuttoina kaikkien niiden raportointikoodien osalta, jotka on liitetty **Arvonlisäverokoodit** -sivun ALV-koodeihin.</span><span class="sxs-lookup"><span data-stu-id="91051-106">You can also generate this report so that it shows the sales tax payment amounts in the currencies of sales tax codes for all reporting codes that are assigned to sales tax codes on the **Sales tax codes** page.</span></span>
 
-## <a name="turn-on-the-feature"></a><span data-ttu-id="ca0a4-107">Toiminnon ottaminen käyttöön</span><span class="sxs-lookup"><span data-stu-id="ca0a4-107">Turn on the feature</span></span>
+## <a name="turn-on-the-feature"></a><span data-ttu-id="91051-107">Toiminnon ottaminen käyttöön</span><span class="sxs-lookup"><span data-stu-id="91051-107">Turn on the feature</span></span>
 
-<span data-ttu-id="ca0a4-108">Ota **Ominaisuuden hallinta** -työtilassa käyttöön seuraava ominaisuus: **Luo arvonlisäveromaksu koodin mukaan -raportti arvonlisäverokoodin valuuttana**.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-108">In the **Feature management** workspace, turn on the following feature: **Generate the Sales tax payment by code report in the sales tax code currency**.</span></span>
+<span data-ttu-id="91051-108">Ota **Ominaisuuden hallinta** -työtilassa käyttöön seuraava ominaisuus: **Luo arvonlisäveromaksu koodin mukaan -raportti arvonlisäverokoodin valuuttana**.</span><span class="sxs-lookup"><span data-stu-id="91051-108">In the **Feature management** workspace, turn on the following feature: **Generate the Sales tax payment by code report in the sales tax code currency**.</span></span>
 
-## <a name="run-the-report"></a><span data-ttu-id="ca0a4-109">Raportin suorittaminen</span><span class="sxs-lookup"><span data-stu-id="ca0a4-109">Run the report</span></span>
+## <a name="run-the-report"></a><span data-ttu-id="91051-109">Raportin suorittaminen</span><span class="sxs-lookup"><span data-stu-id="91051-109">Run the report</span></span>
 
-1. <span data-ttu-id="ca0a4-110">Siirry kohtaan **Vero** \> **Kyselyt ja raportit** \> **Arvonlisäveroraportit** \> **Arvonlisäveron maksu koodin mukaan**.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-110">Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.</span></span>
-2. <span data-ttu-id="ca0a4-111">Valitse **Raportin valuutta** -kentästä jokin seuraavista arvoista:</span><span class="sxs-lookup"><span data-stu-id="ca0a4-111">In the **Report currency** field, select one of the following values:</span></span>
+1. <span data-ttu-id="91051-110">Siirry kohtaan **Vero** \> **Kyselyt ja raportit** \> **Arvonlisäveroraportit** \> **Arvonlisäveron maksu koodin mukaan**.</span><span class="sxs-lookup"><span data-stu-id="91051-110">Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.</span></span>
+2. <span data-ttu-id="91051-111">Valitse **Raportin valuutta** -kentästä jokin seuraavista arvoista:</span><span class="sxs-lookup"><span data-stu-id="91051-111">In the **Report currency** field, select one of the following values:</span></span>
 
-    - <span data-ttu-id="ca0a4-112">**Kirjanpito valuutta** : Tulosta raportin summat kirjanpitovaluuttana.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-112">**Accounting currency** – Print the report amounts in the accounting currency.</span></span>
-    - <span data-ttu-id="ca0a4-113">**Arvonlisäverokoodin valuutta** – Tulosta raportin summat arvonlisäverokoodien valuuttoina.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-113">**Sales tax code currency** – Print the report amounts in the currencies of sales tax codes.</span></span>
+    - <span data-ttu-id="91051-112">**Kirjanpito valuutta** : Tulosta raportin summat kirjanpitovaluuttana.</span><span class="sxs-lookup"><span data-stu-id="91051-112">**Accounting currency** – Print the report amounts in the accounting currency.</span></span>
+    - <span data-ttu-id="91051-113">**Arvonlisäverokoodin valuutta** – Tulosta raportin summat arvonlisäverokoodien valuuttoina.</span><span class="sxs-lookup"><span data-stu-id="91051-113">**Sales tax code currency** – Print the report amounts in the currencies of sales tax codes.</span></span>
 
     ![Arvonlisäveromaksu koodeittain -valintaikkuna](media/Sales-tax-payment-by-code.png)
 
-<span data-ttu-id="ca0a4-115">Seuraavassa kuvassa näkyy esimerkki luotavasta raportista.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-115">The following illustration shows an example of the report that is generated.</span></span> <span data-ttu-id="ca0a4-116">Raportti osoittaa, että raportointikoodilla **101** on **EUR**-valuutta, jos **Arvonlisäveron valuutta** -kentän arvoksi on määritetty **EUR** sen arvonlisäverokoodin osalta, johon raportointikoodi on liitetty.</span><span class="sxs-lookup"><span data-stu-id="ca0a4-116">The report shows that reporting code **101** has the **EUR** currency if the **Sales tax currency** field is set to **EUR** for the sales tax code that the reporting code is assigned to.</span></span>
+<span data-ttu-id="91051-115">Seuraavassa kuvassa näkyy esimerkki luotavasta raportista.</span><span class="sxs-lookup"><span data-stu-id="91051-115">The following illustration shows an example of the report that is generated.</span></span> <span data-ttu-id="91051-116">Raportti osoittaa, että raportointikoodilla **101** on **EUR**-valuutta, jos **Arvonlisäveron valuutta** -kentän arvoksi on määritetty **EUR** sen arvonlisäverokoodin osalta, johon raportointikoodi on liitetty.</span><span class="sxs-lookup"><span data-stu-id="91051-116">The report shows that reporting code **101** has the **EUR** currency if the **Sales tax currency** field is set to **EUR** for the sales tax code that the reporting code is assigned to.</span></span>
 
 ![Esimerkki arvonlisäveromaksu koodin mukaan -raportista](media/Sales-tax-payment-by-code-2.png)
 
