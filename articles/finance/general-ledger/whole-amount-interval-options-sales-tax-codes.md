@@ -2,11 +2,9 @@
 title: Alv-koodien koko summa- ja väli-laskentavaihtoehdot
 description: Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0414f835b7797d2ed554f8d9dbd95b2ad47bba43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48569da2d504e4c380ca89bfec4450ad1b9888e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234114"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842365"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alv-koodien koko summa- ja väli-laskentavaihtoehdot
 
@@ -46,9 +44,8 @@ Jos summa on edellisen välin enimmäisraja ja seuraavan välin vähimmäisraja,
 ## <a name="example-whole-amount-method-of-calculation"></a>Esimerkki: Koko summa -laskutapa
 Arvonlisäveron koodi -sivulla arvonlisäveroprosentit määritetään seuraavin välein:
 
-|                   |                   |              |
+| Vähimmäisraja     | Enimmäisraja     | Veroprosentti     |
 |-------------------|-------------------|--------------|
-| **Vähimmäisraja** | **Enimmäisraja** | **Veroprosentti** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -65,9 +62,8 @@ Arvonlisävero lasketaan koko verotettavasta summasta
 ## <a name="example-interval-method-of-calculation"></a> Esimerkki: Väli-laskentatapa
 Arvonlisäveroprosentit määritetään Arvot-sivulla seuraavin välein:
 
-|                   |                   |              |
+| Vähimmäisraja     | Enimmäisraja     | Veroprosentti     |
 |-------------------|-------------------|--------------|
-| **Vähimmäisraja** | **Enimmäisraja** | **Veroprosentti** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
