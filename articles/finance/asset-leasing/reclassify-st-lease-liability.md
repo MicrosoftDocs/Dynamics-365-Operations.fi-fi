@@ -2,11 +2,9 @@
 title: Lyhytaikaisen vuokrasopimusvelan osan uudelleenluokitteleminen
 description: Tässä ohjeaiheessa selitetään, miten voit luoda kuukausittaisen kirjauskansion, jonka avulla voit luokitella vuokrasopimusvelan lyhytaikaiseksi.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9189033987a3072c7122e1a198768d9de6aa2a52
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7d98d66b5fe9d32a86eb75d937fedfdca6773ac4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254080"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823092"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>Lyhytaikaisen vuokrasopimusvelan osan uudelleenluokitteleminen
 
@@ -38,8 +36,7 @@ Voit luoda ja kirjata lyhytaikaisen velan uudelleenluokituskirjauskansioviennin 
 2. Valitse **Eräkirjauskansion luominen** -valintaikkunan **Valitse aikataulu** -kentässä **Lyhytaikaisen vuokrasopimusvelan uudelleenluokittelu**.
 3. Valitse **Vuokraryhmä**-kentässä vuokraryhmä. Voit myös valita kirjan tunnuksen **Kirjan tunnus** -kentässä.
 4. Ota käyttöön **Kirjaa**-parametri. Vaihtoehtoisesti voit jättää tämän parametrin pois käytöstä, jos vienti luotava mutta ei kirjattava.
-5. Ota käyttöön **Esikatselu ennen kirjaamista** -parametri, jos haluat tarkastella vientiä ennen sen kirjaamista.
-6. Valitse **OK**.
+5. Valitse **OK**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
