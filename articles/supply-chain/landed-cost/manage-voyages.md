@@ -2,7 +2,6 @@
 title: Hallitse matkoja
 description: Tässä aiheessa kuvataan, miten matkoja käsitellään. Matka edustaa yleensä alusta. Käytäntöjen ja menettelyiden mukaan se voi kuitenkin edustaa toimittajaa, ostotilausta tai muuta organisaation kannalta järkevää asiaa.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501003"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833782"
 ---
 # <a name="manage-voyages"></a>Hallitse matkoja
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Matka edustaa yleensä alusta. Käytäntöjen ja menettelyiden mukaan se voi kuitenkin edustaa toimittajaa, ostotilausta tai muuta organisaation kannalta järkevää asiaa.
 
@@ -74,9 +72,9 @@ Seuraavassa taulukossa kuvataan toiminnot, jotka ovat käytettävissä toimintor
 | Kirjaa lasku | Kirjaa lasku kaikille matkan tilausriveille. Jos matkan tuotteet käyvät läpi kuljetettavien tuotteiden käsittelyn, ostotilausrivit laskutetaan, ennen kuin vastaanottoprosessi on valmis. Kun alkuperäinen ostotilaus laskutetaan, luodaan alkuperäisiin ostotilausriveihin liittyvät kuljetettavien tuotteiden tilaukset. Tämän jälkeen varasto voi vastaanottaa tilaukset. Jos käytetään usean yrityksen lähetyksiä, kunkin yrityksen osalta avautuu uusi laskun kirjaamisen valintaikkuna. |
 | Lähetyksen siirtotilaus | Kirjaa siirtotilausmatka kaikille matkan kuljetustilausriveille. Kun tämä painike on valittuna, vain siirtotilauksia voidaan päivittää. |
 | Vastaanota siirtotilaus | Kirjaa siirtotilauksen vastaanotto kaikille matkan kuljetustilausriveille. |
-| Vastaanota matkalla olevat tavarat | Vastaanota kaikki tilausrivit, jotka ovat kuljetettavana matkassa. Tämä painike on yksi kolmesta vaihtoehdosta, joita voi käyttää matkan kuljetettavien tuotteiden vastaanottoon. (Kaksi muuta vaihtoehtoa ovat **Luo saapumisten kirjauskansio** -painike, joka kuvataan myöhemmin tässä taulukossa, sekä varastosovellus.) Tämä vaihtoehto on yksinkertaisin vaihtoehto, jossa kuljetettavana olevat tuotteet käsitellään kuljetettavien tuotteiden varastosta lopulliseen kohdevarastoon. Jos haluat hallita prosessia tarkemmin, käytä tuotteiden vastaanoton käsittelyyn saapumisten kirjauskansiota tai mobiililaitetta. |
+| Vastaanota matkalla olevat tavarat | Vastaanota kaikki tilausrivit, jotka ovat kuljetettavana matkassa. Tämä painike on yksi kolmesta vaihtoehdosta, joita voi käyttää matkan kuljetettavien tuotteiden vastaanottoon. (Kaksi muuta vaihtoehtoa ovat **Luo saapumisten kirjauskansio** -painike, joka kuvataan myöhemmin tässä taulukossa, sekä varastonhallinnan mobiilisovellus.) Tämä vaihtoehto on yksinkertaisin vaihtoehto, jossa kuljetettavana olevat tuotteet käsitellään kuljetettavien tuotteiden varastosta lopulliseen kohdevarastoon. Jos haluat hallita prosessia tarkemmin, käytä tuotteiden vastaanoton käsittelyyn saapumisten kirjauskansiota tai mobiililaitetta. |
 | Hae automaattiset kustannukset | Etsi asianomaiset matkakustannukset. Jos nämä kustannukset on jo löydetty tai päivitetty, näyttöön tulee viesti "Laskuttamattomia kustannusrivejä löytyi. Haluatko korvata ne?" Kaikki kustannukset, joita ei ollut liitetty matkaan sen luontihetkellä, haetaan. Matkakustannuksia, jotka on liitetty matkoihin ja laskutettu, ei korvata. |
-| Luo saapumisen kirjauskansio | <p>Avaa **Luo saapumisten kirjauskansio** -valintaikkuna, jossa voit luoda sijainnin erittelevän saapumisten kirjauskansion. Valintaikkunassa sisältää seuraavat vaihtoehdot:</p><ul><li>**Luo kuljetettavista tuotteista** tai **Luo siirtotilauksesta** – Tämän vaihtoehdon otsikko muuttuu sen mukaan, käytätkö kuljetettavien tuotteiden prosessia. Valitse *Kyllä*, jos haluat avata saapumisten kirjauskansiosivun, jonka avulla voit käsitellä matkaan liittyvien kuljetettavien tuotteiden vakiomallista saapumisten kirjauskansiota. Jos nimike on jo vastaanotettu lopulliseen kohdevarastoon, sitä ei lisätä saapumisten kirjauskansion riveille.</li><li>**Alusta määrä** – Voit alustaa vastaanotettavan määrän matkan rivillä määritetyn tuotemäärän perusteella valitsemalla tämän vaihtoehdon arvoksi *Kyllä*. Jos matkarivi on vastaanotettu osittain, tämä määrä on jäljellä oleva määrä. On suositeltavaa asettaa tämän asetuksen arvoksi *Kyllä*.</li><li>**Luo tilausriveiltä** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat käyttää tilausrivien arvoa.</li></ul><p>Tämä painike on yksi kolmesta vaihtoehdosta, joita voi käyttää matkan tuotteiden vastaanottoon. (Muut vaihtoehdot ovat **Vastaanota kuljetettavat tuotteet** -painike, joka kuvattiin aiemmin tässä taulukossa, sekä varastosovellus.)</p> |
+| Luo saapumisen kirjauskansio | <p>Avaa **Luo saapumisten kirjauskansio** -valintaikkuna, jossa voit luoda sijainnin erittelevän saapumisten kirjauskansion. Valintaikkunassa sisältää seuraavat vaihtoehdot:</p><ul><li>**Luo kuljetettavista tuotteista** tai **Luo siirtotilauksesta** – Tämän vaihtoehdon otsikko muuttuu sen mukaan, käytätkö kuljetettavien tuotteiden prosessia. Valitse *Kyllä*, jos haluat avata saapumisten kirjauskansiosivun, jonka avulla voit käsitellä matkaan liittyvien kuljetettavien tuotteiden vakiomallista saapumisten kirjauskansiota. Jos nimike on jo vastaanotettu lopulliseen kohdevarastoon, sitä ei lisätä saapumisten kirjauskansion riveille.</li><li>**Alusta määrä** – Voit alustaa vastaanotettavan määrän matkan rivillä määritetyn tuotemäärän perusteella valitsemalla tämän vaihtoehdon arvoksi *Kyllä*. Jos matkarivi on vastaanotettu osittain, tämä määrä on jäljellä oleva määrä. On suositeltavaa asettaa tämän asetuksen arvoksi *Kyllä*.</li><li>**Luo tilausriveiltä** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat käyttää tilausrivien arvoa.</li></ul><p>Tämä painike on yksi kolmesta vaihtoehdosta, joita voi käyttää matkan tuotteiden vastaanottoon. (Muut vaihtoehdot ovat **Vastaanota kuljetettavat tuotteet** -painike, joka kuvattiin aiemmin tässä taulukossa, sekä varastonhallinnan mobiilisovellus.)</p> |
 | Jaksota kustannukset | Kustannukset voi jaksottaa, jos kustannuslajin veloitukselle on määritetty kirjanpitotili. Tätä painiketta käytetään yleensä, kun varasto on kuljetettava tai kun tuotteet on vastaanotettu ja laskutettu. |
 | Koosta kustannukset | Siirrä kustannuksia kuljetuskontin tasolta matkatasolle. Voit käyttää tätä painiketta yhteisten palvelujen/kuljetusten tilanteessa, joissa useat yksiköt käyttävät samaa kuljetuskonttia tai pakkaustilaa. Käytetään esimerkkinä matkaa, jossa on 12 metrin ja 6 metrin kuljetuskontit ja jako tapahtuu tilavuuden perusteella. Tässä tapauksessa tuotteille/yksiköille, jotka jakavat tai käyttävät 6-metrisen kuljetuskontin tilaa, voi koitua haittaa. Kustannusten oikeudenmukaista jakamista varten joidenkin organisaatioiden kannattaa siirtää matkan kustannukset ja jakaa ne matkatason jakomenetelmän perusteella. |
 | Muuta matkamallia | Näyttöön tulee valintaikkuna, jossa voit muokata matkamallia. Kun olet vaihtanut mallin, kaikki matkan kustannukset poistetaan. Siksi voi olla tarpeen valita **Hae automaattiset kustannukset** (katso kuvaus ylempänä tässä taulukossa) tai lisätä kustannukset jälleen manuaalisesti. |

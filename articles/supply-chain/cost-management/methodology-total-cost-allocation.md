@@ -2,11 +2,9 @@
 title: Kokonaiskustannusten kohdistustapa
 description: Tämä ohjeaihe sisältää kokonaiskustannusten kohdistuksen käyttöön liittyviä ohjeita. Kokonaiskustannusten kohdistus on menetelmä, jolla lasketaan erätilauksen pääreseptinimikkeen ja reseptille määritettyjen oheistuotteiden välinen kustannus.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c37463bf2f31a900e6f5a8e106b9d58b1fdedcaa
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 63efbe25a7327dc454d4141f0ae4a640dc77e84b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235529"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832295"
 ---
 # <a name="total-cost-allocation-method"></a>Kokonaiskustannusten kohdistustapa
 

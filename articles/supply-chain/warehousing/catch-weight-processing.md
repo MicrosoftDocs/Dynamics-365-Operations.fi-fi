@@ -2,30 +2,27 @@
 title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 45f8d53b5ac212866a9c693e0039631507e14dd7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233076"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808915"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>Ominaisuuden näyttäminen
 
@@ -52,7 +49,7 @@ Koska varastoon saapuvan varaston paino voi poiketa fyysisestä varastosta otett
 > [!NOTE]
 > Mobiililaitetehtävä käynnistää tapahtumaoikaisun vain, jos nimikkeen todellisen painon nimikkeen käsittelykäytännön lähtevän painon varianssimenetelmä on **Salli painon varianssi**.
 
-**Esimerkki 1**
+### <a name="example-1"></a>Esimerkki 1
 
 **Ilmoita valmiiksi** -tuotantoprosessin aikana sellaisen rekisterikilven saapuvaksi painoksi, joka koostuu kahdeksasta todellisen painon tuotteen laatikosta, taltioidaan 80,1 kg. Rekisterikilpi varastoidaan sitten valmiiden tavaroiden alueelle, jossa osa painosta katoaa varastoinnin aikana ilmaan.
 
@@ -60,7 +57,7 @@ Myöhemmin myyntitilauksen keräilyprosessin osana saman rekisterikilven painoks
 
 Järjestelmä oikaisee siinä tapauksessa eron kirjaamalla tapahtuman puuttuvalle 0,3 kilogrammalle.
 
-**Esimerkki 2**
+### <a name="example-2"></a>Esimerkki 2
 
 Tuotteen määritelmässä tuotteen vähimmäispainoksi määritetään 8 kg ja enimmäispainoksi 12 kg, kun todellisen painon yksikkönä on **laatikko**.
 
@@ -106,7 +103,7 @@ Kun nimikettä seurataan tunnisteella, käytössä on lisäksi **Lähtevän pain
 **Kun todellisen painon tunnisteseurantaa käytetään**, jokaiselle vastaanotetulle todellisen painon yksikölle on luotava tunniste ja jokaiseen tunnisteeseen on aina liitettävä paino.
 
 Esimerkki: Todellisen painon yksikkö on **laatikko** ja vastaanotetulla kuormalavalla on kahdeksan laatikkoa. Tässä tapauksessa on luotava kahdeksan yksilöivää todellisen painon tunnistetta ja kuhunkin tunnisteeseen on liitettävä paino. Saapuvan todellisen painon tunnisteen mukaan taltioidaan joko kaikkien kahdeksan laatikon paino, jonka jälkeen keskimääräinen paino jaetaan kullekin laatikolle. Vaihtoehtoisesti kullekin laatikolle voidaan taltioida yksilöivä paino.
-Kun käytät **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita** -toimintoa ja prosessi on otettu käyttöön mobiililaitteen valikkonimikkeen kautta, varasto päivittyy olemassa olevan todellisen painon tunnisteen tiedoilla. Tämän vuoksi varastosovellus ei pyydä tallentamaan todellisen painon tunnisteen tietoja osana tuotantoraporttia, kun työvaihe on valmis.
+Kun käytät **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita** -toimintoa ja prosessi on otettu käyttöön mobiililaitteen valikkonimikkeen kautta, varasto päivittyy olemassa olevan todellisen painon tunnisteen tiedoilla. Tämän vuoksi varastonhallinnan mobiilisovellus ei pyydä tallentamaan todellisen painon tunnisteen tietoja osana tuotantoraporttia, kun työvaihe on valmis.
 
 **Jos todellisen painon seurantaa ei käytetä**, paino voidaan taltioida kullekin dimensioyhdistelmälle (kuten kullekin rekisterikilvelle ja seurantadimensiolle). Vaihtoehtoisesti paino voidaan taltioida koontitason perusteella, kuten viitenä rekisterikilpenä (kuormalavana).
 
@@ -194,7 +191,11 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 
 ### <a name="catch-weight-tags"></a>Todellisen painon tunnisteet
 
-Todellisen painon tunnus voidaan luoda varastosovelluksen prosessilla, manuaalisesti lomakkeessa tai tietoyksikköprosessin avulla. Jos todellisen painon tunniste liitetään saapuvaan lähdeasiakirjan riviin, kuten ostotilausriviin, tunniste rekisteröidään. Jos riviä käytetään lähtevien käsittelyyn, tunniste päivitetään toimitetuksi.
+Todellisen painon tunnus voidaan luoda varastonhallinnan mobiilisovelluksen prosessilla, manuaalisesti lomakkeessa (**Varastonhallinta > Kyselyt ja raportit > Todellisen painon tunnus**) tai tietoyksikköprosessin avulla. Jos todellisen painon tunniste liitetään saapuvaan lähdeasiakirjan riviin, kuten ostotilausriviin, tunniste rekisteröidään. Jos riviä käytetään lähtevien käsittelyyn, tunniste päivitetään toimitetuksi. Voit tarkastella kaikkia todellisen painon tunnisteen rekisteröintitapahtumia **todellisen painon tunnisteen rekisteröinti** -vaihtoehdon avulla **Todellisen painon tunniste** -sivulla.
+
+Voit päivittää todellisen painon tunnisteen painoarvon manuaalisesti käyttämällä **Muuta tunnisteen siepattu paino** -asetusta. Huomaa, että käytettävissä olevan varaston painoa ei oikaista tässä manuaalisessa prosessissa, mutta voit helposti etsiä eroavuudet aktiivisten todellisen painon tunnusten ja nykyisen varaston välillä **Käytettävissä olevan varaston eroavuudet todellisen painon tunnusten nimikkeille**.
+
+Muita manuaalisia asetuksia ovat **tunnisteen rekisteröiminen** lähdeasiakirjariville ja olemassa olevan varastotyön **Rekisteröi työ** -toiminto.
 
 Todellisen painon tuotteissa tällä hetkellä käytettyjen rajoitusten lisäksi tunnisteella varustetuissa todellisen painon tuotteissa on myös muita rajoituksia.
 

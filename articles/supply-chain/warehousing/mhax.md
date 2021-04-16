@@ -2,7 +2,6 @@
 title: Materiaalin käsittelylaitteiden rajapinta (MHAX)
 description: Tässä aiheessa kuvataan, miten materiaalin käsittelylaitteiden rajapinta (MHAX) määritetään siten, että voit muodostaa yhteyden fyysisiin ulkoisiin materiaalinkäsittelyjärjestelmiin (MH).
 author: Mirzaab
-manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ea021529d7417fb3170c859c7fffcb2cfd23a43f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 9273e4a1f6b3f57086c921c4beb0530a67ccd976
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571839"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810507"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Materiaalin käsittelylaitteiden rajapinta (MHAX)
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 *Materiaalin käsittelylaitteiden rajapintaa* (MHAX) voi käyttää yhteyden muodostamiseen edistynyttä varastonhallintaa (WMS) Microsoft Dynamics 365 Supply Chain Managementissa käyttävän varaston ja ulkoisten fyysisten materiaalinkäsittelyjärjestelmien (MH) välille. WMS- ja MH-järjestelmien välinen rajapinta koostuu kahdesta jonosta: yksi lähteville tapahtumille (WMS -> MH) ja toinen saapuville tapahtumille (MH -> WMS). WMS-järjestelmä luo lähteviä tapahtumia niiden työrivien perusteella, jotka luodaan työn luomisen ja suorittamisen eri prosessien aikana. Tämän jälkeen MH-järjestelmä kyselee WMS-järjestelmältä säännöllisesti uusia tapahtumia ja käsittelee vastaukset. Kun MH-järjestelmä on lopettanut tapahtumien käsittelyn työohjeiden mukaisesti, se lähettää saapuvia tapahtumia, kuten työrivien valmistumisia ja lyhyitä keräilyjä.
 

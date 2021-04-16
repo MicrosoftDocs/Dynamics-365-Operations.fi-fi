@@ -2,11 +2,9 @@
 title: Varastonhallinnan varausten vianmääritys
 description: Tässä aiheessa käsitellään yleisiä ongelmia, joita voi esiintyä, kun varastovarauksia käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248712"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828103"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Varastonhallinnan varausten vianmääritys
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa käsitellään yleisiä ongelmia, joita voi esiintyä, kun varastovarauksia käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
+
+Lisätietoja erä- ja sarjanumerorekisteröinnistä: [Varaston erä- ja sarjanumeroiden varaushierarkioiden vianmääritys](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Seuraava virhesanoma avautuu: Varauksia ei voi poistaa, koska on luotu töitä, jotka ovat riippuvaisia niistä.
 
@@ -63,20 +63,6 @@ Tämä ongelma voi esiintyä, jos järjestelmä ei voi päivittää varastomää
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
 Tämä ongelman syy on todennäköisesti avoin työ. Voit joko suorittaa työn tai vastaanottaa ilman työn luontia. Varmista, että määrää ei ole varattu fyysisesti millään varastotapahtumalla. Nämä tapahtumat voivat esimerkiksi avata laatutilauksia, varastoestotilauksia tai toimitustilauksia.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Seuraava virhesanoma avautuu: Jotta kuormituksen rivit voidaan määrittää aaltoon, niiden on määritettävä dimensiot sijainnin yläpuolelle. Voit määrittää nämä dimensiot varaamalla kuormituksen rivin ja luomalla sen uudelleen.
-
-### <a name="issue-description"></a>Ongelman kuvaus
-
-Jos käytät nimikettä, jossa käytetään erän yläpuolella olevaa varaushierarkiaa (eli **Eränumero**-dimensio on sijoitettu **Sijainti**-dimension *yläpuolelle*), osittaisen määrän **Kuormasuunnittelun työtila** -sivun **Vapauta varastoon** -komento ei toimi. Sait tämän virhesanoma eikä osittaiselle määrälle luoda yhtään työtä.
-
-Jos käytät kuitenkin nimikettä, jossa käytetään erän alapuolella olevaa varaushierarkiaa (eli **Eränumero**-dimensio on sijoitettu **Sijainti**-dimension *alapuolelle*), voit vapauttaa kuorman osittaisen määrän **Kuormasuunnittelun työtila** -sivulta.
-
-### <a name="issue-resolution"></a>Ongelman ratkaisu
-
-Tämä on suunniteltu ominaisuus. Jos sijoitat dimension **Sijainti**-dimension yläpuolelle varaushierarkiassa, se on määritettävä ennen vapautusta varastoon. Microsoft on arvioinut tämän ongelman ja määrittänyt sen toimintorajoitukseksi, joka koskee vapautuksia varastoon kuormasuunnittelun työtilasta. Osittaisia määriä ei voi vapauttaa, jos vähintään yhtä **Sijainti**-dimension yläpuolella olevaa dimensiota ei ole määritetty.
-
-Lisätietoja on kohdassa [Joustava varastotason dimensioiden varauskäytäntö](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

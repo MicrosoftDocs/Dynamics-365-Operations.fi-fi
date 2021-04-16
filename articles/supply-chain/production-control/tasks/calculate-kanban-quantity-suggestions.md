@@ -2,11 +2,9 @@
 title: Kanban-määräehdotusten laskeminen
 description: Tässä menettelyssä keskitytään tietyn kanbanin koon ja määrien optimointiin tietylle kanban-säännölle kanban-määrän laskelman avulla.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 409903740413994fead3f65b12afb414ca5c43ed
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 93845129e057b8729e676123967efefb6bca66f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255394"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829327"
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Kanban-määräehdotusten laskeminen
 

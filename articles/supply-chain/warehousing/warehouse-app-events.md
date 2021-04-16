@@ -2,11 +2,9 @@
 title: Varastosovelluksen tapahtumat
 description: Tässä ohjeaiheessa käsitellään varastosovelluksen tapahtumasanomien käsittelyssä erätyön osana käytettyä varastosovelluksen tapahtumien käsittelyä.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0bafcbd5306860cb80d6e813aabf83853a9011c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d63cdea8917bed762bf8d970a408e5931aec48b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248640"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837390"
 ---
 # <a name="warehouse-app-event-processing"></a>Varastosovelluksen tapahtumakäsittely
 
 [!include [banner](../includes/banner.md)]
 
-Supply Chain Managementissa suoritettavat erätyöt voivat käyttää tapahtumien käsittelyjonon varastosovelluksen määrittämiä tietoja, jotta ilmoitettuihin tapahtumiin voidaan reagoida tarvittaessa. Tämä toiminto lisää liittyvät tapahtumat jonoon vastauksena sovellusta käyttävien työtekijöiden tekemiin tietyn tyyppisiin toimintoihin. Esimerkiksi käytettäessä **Luo ja käsittele siirtotilauksia varastosovelluksessa** -toimintoa siirtotilauksen otsikko ja rivit luodaan ja päivitetään taustalla, kun järjestelmä suorittaa **Käsittele varastosovelluksen tapahtumia** -erätyön.
+Supply Chain Managementissa suoritettavat erätyöt voivat käyttää tapahtumien käsittelyjonon varastonhallinnan mobiilisovelluksen määrittämiä tietoja, jotta ilmoitettuihin tapahtumiin voidaan reagoida tarvittaessa. Tämä toiminto lisää liittyvät tapahtumat jonoon vastauksena sovellusta käyttävien työtekijöiden tekemiin tietyn tyyppisiin toimintoihin. Esimerkiksi käytettäessä *Luo ja käsittele siirtotilauksia varastosovelluksessa* -toimintoa siirtotilauksen otsikko ja rivit luodaan ja päivitetään taustalla, kun järjestelmä suorittaa **Käsittele varastosovelluksen tapahtumia** -erätyön.
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>Käsittele varastosovelluksen tapahtumia -toiminnon ottaminen käyttöön
 
@@ -50,11 +48,11 @@ Määritä aikataulutettu erätyö käsittelemään siirtotilausten luonti-ja ri
 
 ## <a name="query-warehouse-app-events"></a>Varastosovelluksen tapahtumakyselyt
 
-Voit näyttää varastosovelluksen luoman tapahtumajonon ja tapahtumasanomat valitsemalla **Varastonhallinta \> Kyselyt ja raportit \> Mobiililaitteen lokit \> Varastosovelluksen tapahtumat**.
+Voit näyttää varastonhallinnan mobiilisovelluksen luoman tapahtumajonon ja tapahtumasanomat valitsemalla **Varastonhallinta \> Kyselyt ja raportit \> Mobiililaitteen lokit \> Varastosovelluksen tapahtumat**.
 
 ## <a name="the-standard-event-queue-process"></a>Tapahtuman vakiojonoprosessi
 
-Varastosovellusten tapahtumajonoa käytetään yleensä seuraavaksi käsitellyn työnkulun kanssa:
+Varastosovelluksen tapahtumajonoa käytetään yleensä seuraavaksi käsitellyn työnkulun kanssa:
 
 1. Tapahtuma lisätään jonoon tapahtumasanoman avulla. Uuden sanoman tapahtuman tila on aluksi **Odottaa**, jolloin **Käsittele varastosovelluksen tapahtumat** -erätyö ei poimi ja käsittele tätä sanomaa.
 1. Heti kun sanoman tilaksi päivitetään **Asetettu jonoon**, **Käsittele varastosovelluksen tapahtumat** -erätyö poimii ja käsittelee tapahtuman.

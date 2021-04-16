@@ -2,11 +2,9 @@
 title: Sijainnin osittainen inventointi
 description: Inventointisuunnitelmat ohjaavat varsinaista inventointia. Voit pyytää vain tiettyjen tuotteiden tai tuotevarianttien inventointia sen sijaan, että toimipaikan koko käytettävissä oleva varasto inventoitaisiin.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abafe64a17b7b284e5e045da33bb15cf3c42800b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4fa017c9702524d4637ef73a4c2e506a9c53b28
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234678"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818893"
 ---
 # <a name="partial-location-cycle-counting"></a>Sijainnin osittainen inventointi
 
@@ -48,7 +46,7 @@ Ennen osittaisen inventointityön käsittelyä mobiililaitteen valikosta on vali
 Osittaisessa inventointiprosessissa **edellisen inventoinnin** päivämäärää/aikaa ei päivitetä sijainnille, vaikka kaikki tietyssä sijainnissa olevat nimikkeet inventoidaan. Osittaisessa inventoinnissa ei oteta huomioon **Inventoinnin välissä olevat päivät** -arvoa **Inventointisuunnitelmat**-sivulla. Osittainan inventointi ei tue samanaikaista useiden nimikkeiden inventointia samassa sijainnissa. Osittainen inventointitoiminto voi aiheuttaa nimikkeen inventoinnin suorittamisen useita kertoja samassa sijainnissa, jos **Prosessin inventointisuunnitelma** suoritetaan. Voit välttää tämän määrittämällä suodattimet **Valitse sijainnit** -kentässä.
 
 > [!NOTE]
-> Varastosovelluksessa ei ole **Lisää LP tai nimike** -painiketta osittaista inventointiprosessia käytettäessä.
+> Varastonhallinnan mobiilisovelluksessa ei ole **Lisää LP tai nimike** -painiketta osittaista inventointiprosessia käytettäessä.
 
 ## <a name="example"></a>Esimerkki
 

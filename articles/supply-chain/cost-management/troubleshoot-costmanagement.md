@@ -1,12 +1,10 @@
 ---
 title: Kustannusten hallinnan vianmääritys
 description: Tässä ohjeaiheessa käsitellään sellaisten ongelmien korjaamista, joita kustannusten hallinnan käytössä voi esiintyä.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262450"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834286"
 ---
 # <a name="troubleshoot-cost-management"></a>Kustannusten hallinnan vianmääritys
 
@@ -37,7 +35,7 @@ Tässä ohjeaiheessa käsitellään sellaisten ongelmien korjaamista, joita kust
 
 Välisummat voivat aiheuttaa ongelmia, kun tulos viedään, etenkin jo käyttäjät muuttavat tietuejärjestystä.
 
-Välisummat voi tarkistaa viemällä tulokseen Microsoft Exceliin. Vaihtoehtoisesti välisummat voidaan tarkistaa Supply Chain Managementissa ottamalla *Uusi ruudukon ohjausobjekti*- ja *(Esiversio) Ryhmittely ruudukoissa* -toiminnot käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tällä tavoin voidaan tarkastella joustavasti minkä tahansa ryhmän välisumman sarakekohtaisesti. Lisätietoja on aiheessa [Ruudukon ominaisuudet](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+Välisummat voi tarkistaa viemällä tulokseen Microsoft Exceliin. Vaihtoehtoisesti välisummat voidaan tarkistaa Supply Chain Managementissa ottamalla *Uusi ruudukon ohjausobjekti*- ja *Ryhmittely ruudukoissa* -toiminnot käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tällä tavoin voidaan tarkastella joustavasti minkä tahansa ryhmän välisumman sarakekohtaisesti. Lisätietoja on aiheessa [Ruudukon ominaisuudet](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Varastoarvon tallennusraportti ei tue kirjanpitotilin tietoja
 

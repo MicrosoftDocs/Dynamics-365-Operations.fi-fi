@@ -2,11 +2,9 @@
 title: Sijaintidirektiivien käyttäminen
 description: Tässä aiheessa käsitellään sijaintidirektiivien käyttämistä. Sijaintidirektiivit ovat käyttäjän määrittämiä sääntöjä, jotka auttavat tunnistamaan keräily- ja poispanosijainnit varaston siirrossa.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470516"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838391"
 ---
 # <a name="work-with-location-directives"></a>Sijaintidirektiivien käyttäminen
 
@@ -152,7 +150,7 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
     > [!IMPORTANT]
     > Sekä moninimikkeisen hyllytyksen että yhden varastointiyksikön hyllytyksen käyttöönottaminen edellyttää kahden sellaisen rivin määrittämistä, jolla on sama rakenne ja samat määritykset. Toisen rivin **Useita varastointiyksiköitä** -asetukseksi on valittava *Kyllä* ja toisen *Ei*. Tämän vuoksi hyllytystoimintoja on oltava kaksi samanlaista sijaintidirektiiviä, vaikka työn tunnuksessa ei tehdä erottaa yhtä varastointiyksikköä ja useita varastointiyksiköitä. Jos molempia sijaintidirektiivejä ei määritetä, käytetystä sijaintidirektiivistä tulee usein esille odottamattomia liiketoimintaprosessisijainteja. Sijaintidirektiiveillä, joiden **työtyyppi** on *keräily*, on oltava samanlaisen määritys, jos käsiteltävissä tilauksissa on useita varastointiyksiköitä.
 
-    Käytä **Useita varastointiyksiköitä** -vaihtoehtoa työriveillä, joilla käsitellään useita nimiketunnuksia. (Nimiketunnus on tyhjä työn tiedoissa, ja sen arvona näytetään **Useita** varastosovelluksen käsittelysivuilla.)
+    Käytä **Useita varastointiyksiköitä** -vaihtoehtoa työriveillä, joilla käsitellään useita nimiketunnuksia. (Nimiketunnus on tyhjä työn tiedoissa, ja sen arvona näytetään **Useita** varastonhallinnan mobiilisovelluksen käsittelysivuilla.)
 
     Tyypillisessä skenaariossa työmalli määritetään siten, että siinä on useita keräily/hyllytys-pareja Tässä tapauksessa kannattaa ehkä hakea tietty valmistelusijainti käytettäväksi riveillä, joiden **Työntyyppi** on *Hyllytys*.
 
@@ -171,7 +169,7 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
     > [!NOTE]
     > Tämä kenttä on käytettävissä vain valituissa työtilaustyypeissä, joissa sallitaan täydennys. Täydellinen on kohdassa [Työtilaustyyppikohtaiset kentät](#fields-specific-types).
 
-- **Käsittelykoodi** – Tätä kenttää käytetään sijaintidirektiiveissä, joiden työtilaustyyppi on *Ostotilaukset*, *Valmiiden tuotteiden hyllytys* tai *Palautustilaukset* ja työtilaus on *Hyllytys*. Ohjaa sen avulla työnkulku käyttämään tiettyä sijaintidirektiiviä työntekijän varastosovelluksessa valitseman käsittelykoodin mukaan. Voit esimerkiksi ohjata palautetut tuotteet tarkastussijaintiin, ennen kuin palautetaan varastoon. Käsittelykoodi voidaan linkittää varaston tilaan. Tällä tavoin sitä voidaan käyttää muuttamaan varaston tila vastaanottoprosessin osana. Esimerkiksi käsittelykoodi *Laadunvalvonta* määrittä varastoon *Laadunvalvonta*-tilaan. Voit sitten käyttää erillistä sijaintidirektiiviä siirtämän kyseisen varaston karanteenisijaintiin.
+- **Käsittelykoodi** – Tätä kenttää käytetään sijaintidirektiiveissä, joiden työtilaustyyppi on *Ostotilaukset*, *Valmiiden tuotteiden hyllytys* tai *Palautustilaukset* ja työtilaus on *Hyllytys*. Ohjaa sen avulla työnkulku käyttämään tiettyä sijaintidirektiiviä työntekijän varastonhallinnan mobiilisovelluksessa valitseman käsittelykoodin mukaan. Voit esimerkiksi ohjata palautetut tuotteet tarkastussijaintiin, ennen kuin palautetaan varastoon. Käsittelykoodi voidaan linkittää varaston tilaan. Tällä tavoin sitä voidaan käyttää muuttamaan varaston tila vastaanottoprosessin osana. Esimerkiksi käsittelykoodi *Laadunvalvonta* määrittä varastoon *Laadunvalvonta*-tilaan. Voit sitten käyttää erillistä sijaintidirektiiviä siirtämän kyseisen varaston karanteenisijaintiin.
 
     > [!NOTE]
     > Tämä kenttä on käytettävissä vain valituissa työtilaustyypeissä, joissa sallitaan täydennys. Täydellinen on kohdassa [Työtilaustyyppikohtaiset kentät](#fields-specific-types).

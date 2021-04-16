@@ -2,11 +2,9 @@
 title: Varastosovelluksen asentaminen ja yhdistäminen
 description: Tässä ohjeaiheessa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,19 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5486974"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835561"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Varastosovelluksen asentaminen ja yhdistäminen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tässä aiheessa käsitellään vanhan varastointisovelluksen määrittämistä. Lisätietoja uuden varaston hallinnan mobiilisovelluksen määrittämisestä on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](install-configure-warehouse-management-app.md).
+> Tässä ohjeaiheessa kuvataan, miten vanha varastosovellus (joka on nyt vanhentunut) määritetään. Lisätietoja uuden varaston hallinnan mobiilisovelluksen määrittämisestä on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Tässä aiheessa käsitellään pilvikäyttöönottojen varastointisovellusta. Lisätietoja varastointisovelluksen määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönotoissa](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

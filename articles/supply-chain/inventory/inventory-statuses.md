@@ -2,11 +2,9 @@
 title: Varaston tilat
 description: Tässä artikkelissa kuvataan, miten varaston tiloja voidaan käyttää varaston luokittelussa ja seuraamisessa.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
-ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
+ms.openlocfilehash: e3c8b467f29037bbb869189e3607e11f40aad2c2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476696"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829857"
 ---
 # <a name="inventory-statuses"></a>Varaston tilat
 
@@ -45,10 +43,14 @@ Varaston tila on yksi varastodimensioryhmän dimensioista. Varaston tiloja voida
 
 Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on *Valmis*, ei-käytettävissä oleville tilan, jonka nimi on *Vioittuneet* ja toimituskiellossa oleville tilan, jonka nimi on *Suljettu*. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan *Vioittuneet*-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti *Suljettu*. Jos luet vioittuneet nimikkeet mobiililaitteella, Supply Chain Management voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi *Varaus* **Varastotapahtumat** -lomakkeessa.
 
+Voit määrittää, mitkä varaston tilat saavat aikaan eston käyttämällä **Varastoesto**-valintaruutua **Varaston tilat** -sivulla. Varaston tiloja ei voi käyttää myynti-, tai siirtotilauksien tai projekti-integrointien estotiloina.
+
+Lähteville töille voidaan käyttää erilaisia ei-estäviä varastotiloja, joilla ohjataan varastoa, josta varataan. Jos on nimikkeitä, joiden tila on *Estossa* ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti. Lisäksi lähteviin töihin liittyvien laatutilausten **varastotilaa** ei voi päivittää laatutilauksen vahvistuksen osana.
+
 > [!NOTE]
 > Et voi muuttaa varaston tilaa sijainnissa, joissa on avoimia töitä. Jos esimerkiksi vastaanotit nimikkeelle oston, mutta et tehnyt hyllytysvaihetta, vastaanottosijainnissa on avoin työ, ja saat virheilmoituksen, jos haluat muuttaa varaston tilan tässä sijainnissa. Liittyvän työn valmiiksi saaminen tai peruuttaminen mahdollistaa tilan muuttumisen.
- 
-Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on *Rikkoutunut* ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti.
+>
+> Tavallisesti käytettävissä olevan varaston tilaa, joka liittyy avoimen varastotyöhön, muutavat vain työntekijät, jotka käyttävät varastonhallinnan mobiilisovellusta esimerkiksi siirtoprosessia suoritettaessa.
 
 Kun olet määrittänyt varaston tilat, voit määrittää varaston oletustilan toimipaikalle, nimikkeelle ja varastolle. Voit myös määrittää oletustilan myyntiin, siirtoon ja ostotilauksiin. Myyntitilausten ja lähtevien siirtotilausten oletustilassa **Varastonesto**-asetus ei voi olla asennossa *Kyllä*. Varaston tila, joka periytyy toimipaikan, varaston, nimikkeen, ostotilauksen, siirtotilauksen tai myyntitilauksen oletusarvoasetuksista, voidaan muuttaa käyttämällä mobiililaitetta tai ostotilauksessa, myyntitilauksessa tai siirtotilausrivillä.
 
