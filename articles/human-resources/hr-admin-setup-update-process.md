@@ -2,11 +2,9 @@
 title: Päivitysprosessi
 description: Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS), joka tarjoaa jatkuvia ja kosketusvapaita palvelupäivityksiä sovellus- ja ympäristömuutoksille.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466829"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791530"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
@@ -58,14 +56,14 @@ Tarvittaessa Human Resources tarjoaa myös seuraavanlaisia korjauksia:
 
 Julkaisut tarkistetaan, testataan ja vahvistetaan sisäisessä ympäristössä. Kun koontiversiot on hyväksytty, ne otetaan käyttöön tuotannossa.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Vapauta tahtipoikkeukset vuonna 2020
+## <a name="release-cadence-exceptions-in-2021"></a>Vapauta tahtipoikkeukset vuonna 2021
 
-Lomien vuoksi vuoden 2020 marraskuun ja joulukuun julkaisuaikataulu on seuraava:
+Lomien vuoksi vuoden 2021 marraskuun ja joulukuun julkaisuaikataulu on seuraava:
 
-- Marraskuun julkaisu: 2.11.–13.11.
-- Joulukuun julkaisu: 30.11.–11.12.
+- Marraskuun julkaisu: 1.11.–14.11.
+- Joulukuun julkaisu: 29.11.–12.12.
  
-Kahden viikon julkaisuväli jatkuu tavalliseen tapaan 11.1.2021.
+Kahden viikon julkaisuväli jatkuu tavalliseen tapaan 10.1.2022.
 
 ## <a name="communications"></a>Viestintä
 
