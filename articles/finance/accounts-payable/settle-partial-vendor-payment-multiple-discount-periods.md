@@ -2,11 +2,9 @@
 title: Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen
 description: Tämä artikkeli opastaa sinua skenaariossa, jossa useita osittaisia maksuja suoritetaan toimittajalle, jolla on useita käteisalennuksia.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbcaca97203c47bf7eac02ba410763a4e1a7b34a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56e2b3a8dadd824fa0170a1db19fffeaecb47775
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227277"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827863"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen
 
@@ -54,9 +52,9 @@ Laskuun voidaan liittää seuraavat käteisalennuspäivämäärät ja -summat.
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 |      | Normaali            | Var-10060 | 3054    | 28.6.2015 | 28.7.2015 | 10060   | 1 000,00                       | USD      | 300,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 2.7.2015 |
 | Käteisalennussumma         | -20,00    |
@@ -70,9 +68,9 @@ Koska käteisalennus on käytettävissä, April haluaa muuttaa maksusummaa siten
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 |      | Normaali            | Var-10060 | 3054    | 28.6.2015 | 28.7.2015 | 10060   | 1 000,00                       | USD      | 294,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 2.7.2015 |
 | Käteisalennussumma         | -20,00    |
@@ -103,12 +101,12 @@ April päättää maksaa 495,00 ja käyttää käteisalennuksen 5,00. Niinpä ti
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 |      | Normaali            | Var-10060 | 3054    | 28.6.2015 | 28.7.2015 | 10060   | 1 000,00                       | USD      | 495,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 12.7.2015 |
-| Käteisalennussumma         | –10,00    |
+| Käteisalennussumma         | -10,00    |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | -6,00     |
 | Käytettävä käteisalennussumma | -5,00     |

@@ -1,12 +1,10 @@
 ---
 title: Kassavirtaennusteet
 description: Tässä ohjeaiheessa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 98bf906569f99c74fef747381e8f27b1d9f91a5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232462"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819647"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
@@ -45,10 +43,9 @@ Kassavirtaennuste voidaan integroida kirjanpitoon, ostoreskontraan, myyntireskon
 - **Budjettirekisterimerkinnät** – kassavirtaennusteille valitut budjettirekisterimerkinnät.
 - **Kysynnän ennusteet** – kassavirtaennusteille valitut varastoennustemallin rivit.
 - **Tarjontaennusteet** – kassavirtaennusteille valitut varastoennustemallin rivit.
+- **Projektiennusteet** – Projektinhallinta- ja kirjanpitoennusteet ennustemallin avulla.
 
-Vaikka projektinhallintaa ja kirjanpito eivät ole suoraan integroituja, projektitapahtumat voidaan sisällyttää monella tavalla kassavirtaennusteeseen. Kirjatut projektilaskut sisällytetään ennusteeseen avoimien asiakastapahtumien osana. Projektista peräisin olevat myynti- ja ostotilaukset sisällytetään ennusteeseen avoimina tilauksina sen jälkeen, kun ne on viety järjestelmään. Voit myös siirtää projektiennusteet kirjanpidon budjettimalliin. Tämä kirjanpidon budjettimalli sisällytetään sitten kassavirtaennusteeseen budjettirekisterimerkintöjen osana.
-
-## <a name="configuration"></a>Konfiguraatio
+## <a name="configuration"></a>Määritys
 
 Voit määrittää kassaviran ennusteprosessin **Kassavirtaennusteen määritys** -sivulla. Voit määrittää tällä sivulla seurattavat rahatilit ja kunkin alueen oletusennustetoiminnot.
 
@@ -97,6 +94,14 @@ Varaston kysynnän ja tarjonnan ennusteet voidaan sisällyttää kassavirtaennus
 
 Valitse **Dimensiot**-välilehdessä suodatuksessa käytettävät dimensiot luettelosta ja siirrä ne oikeanpuoleiseen sarakkeeseen nuolinäppäinten avulla. Kassavirtaennustetietojen suodattamiseen voidaan valita vain kaksi dimensiota. 
 
+### <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
+
+Versiossa 10.0.17 uusi ominaisuus mahdollistaa integroinnin projektinhallintaan ja kirjanpitoon sekä kassavirtaennusteisiin. Ota **Ominaisuuksien hallinta** -työtilassa käyttöön **Kassavirtaprojektin ennuste** -ominaisuus, jos haluat sisällyttää ennustetut kustannukset ja tuotot kassavirtaennusteeseen. Valitse **Kassavirtaennusteen asetukset** -sivun **Projektinhallinta ja kirjanpito** -välilehdessä projektityypit ja tapahtumatyypit, jotka sisällytetään kassavirtaennusteeseen. Valitse sitten projektin ennustemalli. Vähennystyypin alimalli toimii parhaiten. Myyntireskontra-asetuksiin syötettyjä maksuvalmiustilejä käytetään maksuvalmiustilien oletusarvona. Tämän vuoksi maksuvalmiustilejä ei tarvitse syöttää kassavirtaennustetta määrittäessä. Budjettimallia voidaan käyttää myös, mutta projektinhallinnan ja kirjanpidon **Kassavirtaennusteen asetukset** -sivulla voidaan valita vain yksi tyyppi. Ennustemalli tarjoaa eniten joustavuutta, kun käytetään projektinhallintaa ja kirjanpitoa tai Project Operationsia.
+
+Kun kassavirtaprojektin ennusteominaisuus on käytössä, kassavirtaennustetta voidaan tarkastella kunkin projektin osalta **Kaikki projektit** -sivulla. Valitse toimintoruudun **Suunnitelma**-välilehden **Ennuste**-ryhmässä **Kassavirtaennuste**. **Kassayhteenveto**-työtiloissa (katso myöhemmin tässä ohjeaiheessa [Raportointi](#reporting)-osa) projektin ennustetapahtumatyyppi näyttää sisäänvirtaukset (projektiennusteen tuotot) ja ulosvirtaukset (projektiennusteen kustannukset). Summat voidaan sisällyttää vain, jos **Kassayhteenveto**-työtilojen **Projektin vaihe** -kentän arvoksi on määritetty **Käsittelyssä**.
+
+Projektitapahtumat sisältyvät kassavirtaennusteeseen edelleen monin tavoin riippumatta siitä, onko **Kassavirtaprojektin ennuste** -ominaisuus käytössä. Kirjatut projektilaskut sisällytetään ennusteeseen avoimien asiakastapahtumien osana. Projektista peräisin olevat myynti- ja ostotilaukset sisällytetään ennusteeseen avoimina tilauksina sen jälkeen, kun ne on viety järjestelmään. Voit myös siirtää projektiennusteet kirjanpidon budjettimalliin. Tämä kirjanpidon budjettimalli sisällytetään sitten kassavirtaennusteeseen budjettirekisterimerkintöjen osana. Jos **Kassavirtaprojektin ennuste** -ominaisuus on käytössä, älä siirrä projektiennusteita kirjanpidon budjettimalliin, koska tämä toiminto aiheuttaa projektiennusteiden laskemisen kahteen kertaan.
+
 ### <a name="calculation"></a>Laskelma
 
 Kassavirran laskentaprosessin on suoritettava ennen kassavirtaennusteen analyysien tarkastelemista. Laskentaprosessi projisoi vietyjen tapahtumien tulevat vaikutukset käteisvaroihin.
@@ -137,7 +142,7 @@ Nykyisen yrityksen työntilan käyttöä hallitaan **Näytä kassavirta – nyky
 
 **Kassayhteenveto – kaikki yritykset** -työtila näyttää kassavirtaennusten analytiikan järjestelmän valuuttana. Analytiikassa käytettävä järjestelmän valuutta ja järjestelmän vaihtokurssityyppi määritetään **Järjestelmän parametrit** -sivulla. Työtilassa on kaikkien yritysten kassavirtaennusteiden ja pankkitilin saldojen yhteenveto. Tilikartan saapuvat ja lähtevät kassavirrat on yhteenveto käteisvarojen tulevista siirroista ja saldoista järjestelmän valuuttana. Siinä on myös tarkkoja tietoja ennakoiduista tapahtumista. Näkyvissä on myös valuuttasaldojen ennuste.
 
-**Kassayhteenveto – nykyinen yrityksen** työtilassa kassavirtaennusteen analytiikka näkyy yrityksen määrittämänä kirjanpitovaluuttana. Analytiikassa käytettävä kirjanpitovaluutta määritetään **Kirjanpito**-sivulla. Työtilassa on nykyisen yrityksen kassavirtaennusteiden ja pankkitilin saldojen yhteenveto. Tilikartan saapuvat ja lähtevät kassavirrat on yhteenveto käteisvarojen tulevista siirroista ja saldoista kirjanpitovaluuttana. Siinä on myös tarkkoja tietoja ennakoiduista tapahtumista. Näkyvissä on myös valuuttasaldojen ennuste.
+**Kassayhteenveto – nykyinen yritys** -työtilassa kassavirtaennusteen analytiikka näkyy yrityksen määrittämänä kirjanpitovaluuttana. Analytiikassa käytettävä kirjanpitovaluutta määritetään **Kirjanpito**-sivulla. Työtilassa on nykyisen yrityksen kassavirtaennusteiden ja pankkitilin saldojen yhteenveto. Tilikartan saapuvat ja lähtevät kassavirrat on yhteenveto käteisvarojen tulevista siirroista ja saldoista kirjanpitovaluuttana. Siinä on myös tarkkoja tietoja ennakoiduista tapahtumista. Näkyvissä on myös valuuttasaldojen ennuste.
 
 Lisätietoja kassavirtaennusteiden analytiikasta on kohdassa [Käteisvarojen yleiskatsaus - Power BI -sisältö](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
 
