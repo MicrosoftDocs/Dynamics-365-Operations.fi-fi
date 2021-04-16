@@ -2,7 +2,6 @@
 title: Tallenna seuraavaa maksua varten -vaihtoehto ei tule näkyviin
 description: Tässä aiheessa on vianmääritysohjeita, jotka voivat auttaa siinä, kun Tallenna seuraavaa maksua varten -valintaruutu ei näy sähköisen kaupankäynnin sivuston kassasivun Maksutapa-kohdassa.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
@@ -17,41 +16,41 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3a4fbcd522651ed1b82b72b751ff6ead44c94a71
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 7e3156d1aa9a05dc5d159b6f9b33ae341de640bf
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585305"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801696"
 ---
-# <a name="save-for-my-next-payment-option-doesnt-appear"></a><span data-ttu-id="9d2ad-103">Tallenna seuraavaa maksua varten -vaihtoehto ei tule näkyviin</span><span class="sxs-lookup"><span data-stu-id="9d2ad-103">"Save for my next payment" option doesn't appear</span></span>
+# <a name="save-for-my-next-payment-option-doesnt-appear"></a><span data-ttu-id="5e0b3-103">Tallenna seuraavaa maksua varten -vaihtoehto ei tule näkyviin</span><span class="sxs-lookup"><span data-stu-id="5e0b3-103">"Save for my next payment" option doesn't appear</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9d2ad-104">Tässä aiheessa on vianmääritysohjeita, jotka voivat auttaa siinä, kun **Tallenna seuraavaa maksua varten** -valintaruutu ei näy sähköisen kaupankäynnin sivuston kassasivun **Maksutapa**-kohdassa.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-104">This topic provides troubleshooting guidance that can help when the **Save for my next payment** check box doesn't appear under **Payment method** on an e-commerce site's checkout page.</span></span>
+<span data-ttu-id="5e0b3-104">Tässä aiheessa on vianmääritysohjeita, jotka voivat auttaa siinä, kun **Tallenna seuraavaa maksua varten** -valintaruutu ei näy sähköisen kaupankäynnin sivuston kassasivun **Maksutapa**-kohdassa.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-104">This topic provides troubleshooting guidance that can help when the **Save for my next payment** check box doesn't appear under **Payment method** on an e-commerce site's checkout page.</span></span>
 
-## <a name="description"></a><span data-ttu-id="9d2ad-105">kuvaus</span><span class="sxs-lookup"><span data-stu-id="9d2ad-105">Description</span></span>
+## <a name="description"></a><span data-ttu-id="5e0b3-105">kuvaus</span><span class="sxs-lookup"><span data-stu-id="5e0b3-105">Description</span></span>
 
-<span data-ttu-id="9d2ad-106">**Tallenna seuraavaa maksua varten** -valintaruutu ei näy sähköisen kaupankäynnin sivuston kassasivun **Maksutapa**-osassa.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-106">The **Save for my next payment** check box doesn't appear in the **Payment method** section on an e-commerce site's checkout page.</span></span>
+<span data-ttu-id="5e0b3-106">**Tallenna seuraavaa maksua varten** -valintaruutu ei näy sähköisen kaupankäynnin sivuston kassasivun **Maksutapa**-osassa.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-106">The **Save for my next payment** check box doesn't appear in the **Payment method** section on an e-commerce site's checkout page.</span></span>
 
-<span data-ttu-id="9d2ad-107">Seuraavassa kuvassa on esimerkki kassasivusta, joka sisältää **Tallenna seuraavaa maksua varten** -valintaruudun.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-107">The following illustration shows an example of a checkout page that includes the **Save for my next payment** check box.</span></span>
+<span data-ttu-id="5e0b3-107">Seuraavassa kuvassa on esimerkki kassasivusta, joka sisältää **Tallenna seuraavaa maksua varten** -valintaruudun.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-107">The following illustration shows an example of a checkout page that includes the **Save for my next payment** check box.</span></span>
 
 ![Tallenna seuraavaa maksua varten -valintaruutu maksumoduulissa](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a><span data-ttu-id="9d2ad-109">Ratkaisu</span><span class="sxs-lookup"><span data-stu-id="9d2ad-109">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="5e0b3-109">Ratkaisu</span><span class="sxs-lookup"><span data-stu-id="5e0b3-109">Resolution</span></span>
 
-### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a><span data-ttu-id="9d2ad-110">Tarkista, että Dynamics 365 Payment Connector Adyenia varten on määritetty oikein Commerce headquarters -sovelluksessa</span><span class="sxs-lookup"><span data-stu-id="9d2ad-110">Verify that the Dynamics 365 Payment Connector for Adyen is correctly configured in Commerce headquarters</span></span>
+### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a><span data-ttu-id="5e0b3-110">Tarkista, että Dynamics 365 Payment Connector Adyenia varten on määritetty oikein Commerce headquarters -sovelluksessa</span><span class="sxs-lookup"><span data-stu-id="5e0b3-110">Verify that the Dynamics 365 Payment Connector for Adyen is correctly configured in Commerce headquarters</span></span>
 
-<span data-ttu-id="9d2ad-111">Voit tarkistaa, että Dynamics 365 Payment Connector Adyenia varten on määritetty oikein Commerce headquarters -sovelluksessa, toimimalla seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-111">To verify that the Dynamics 365 Payment Connector for Adyen is correctly configured in Commerce headquarters, follow these steps.</span></span>
+<span data-ttu-id="5e0b3-111">Voit tarkistaa, että Dynamics 365 Payment Connector Adyenia varten on määritetty oikein Commerce headquarters -sovelluksessa, toimimalla seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-111">To verify that the Dynamics 365 Payment Connector for Adyen is correctly configured in Commerce headquarters, follow these steps.</span></span>
 
-1. <span data-ttu-id="9d2ad-112">Valitse **Retail ja Commerce \> Kanavat \> Verkkokaupat**.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-112">Go to **Retail and Commerce \> Channels \> Online Stores**.</span></span>
-1. <span data-ttu-id="9d2ad-113">Valitse verkkokauppa.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-113">Select the online store.</span></span>
-1. <span data-ttu-id="9d2ad-114">Varmista **Maksutilit**-pikavälilehdessä, että **Salli maksutietojen tallentaminen verkkokaupassa** -kentän arvoksi on määritetty **Tosi**.</span><span class="sxs-lookup"><span data-stu-id="9d2ad-114">On the **Payment accounts** FastTab, make sure that the **Allow saving payment information in e-commerce** field is set to **True**.</span></span>
+1. <span data-ttu-id="5e0b3-112">Valitse **Retail ja Commerce \> Kanavat \> Verkkokaupat**.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-112">Go to **Retail and Commerce \> Channels \> Online Stores**.</span></span>
+1. <span data-ttu-id="5e0b3-113">Valitse verkkokauppa.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-113">Select the online store.</span></span>
+1. <span data-ttu-id="5e0b3-114">Varmista **Maksutilit**-pikavälilehdessä, että **Salli maksutietojen tallentaminen verkkokaupassa** -kentän arvoksi on määritetty **Tosi**.</span><span class="sxs-lookup"><span data-stu-id="5e0b3-114">On the **Payment accounts** FastTab, make sure that the **Allow saving payment information in e-commerce** field is set to **True**.</span></span>
 
 ![Salli maksutietojen tallentaminen verkkokaupassa -kenttä Commerce headquartersissa](media/payment-connector-save-payment.jpg)
 
-## <a name="additional-resources"></a><span data-ttu-id="9d2ad-116">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="9d2ad-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="5e0b3-116">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="5e0b3-116">Additional resources</span></span>
 
-[<span data-ttu-id="9d2ad-117">Maksumoduuli</span><span class="sxs-lookup"><span data-stu-id="9d2ad-117">Payment module</span></span>](../payment-module.md)
+[<span data-ttu-id="5e0b3-117">Maksumoduuli</span><span class="sxs-lookup"><span data-stu-id="5e0b3-117">Payment module</span></span>](../payment-module.md)
 
-[<span data-ttu-id="9d2ad-118">Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla</span><span class="sxs-lookup"><span data-stu-id="9d2ad-118">Saving online payment instruments with the Adyen connector</span></span>](../dev-itpro/adyen-connector-listPI.md)
+[<span data-ttu-id="5e0b3-118">Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla</span><span class="sxs-lookup"><span data-stu-id="5e0b3-118">Saving online payment instruments with the Adyen connector</span></span>](../dev-itpro/adyen-connector-listPI.md)

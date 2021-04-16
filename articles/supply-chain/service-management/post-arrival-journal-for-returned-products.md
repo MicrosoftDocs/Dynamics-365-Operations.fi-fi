@@ -2,11 +2,9 @@
 title: Postita saapumiskirjauskansio palautettuja tuotteita varten
 description: Postita saapumiskirjauskansio palautettuja tuotteita varten.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview
 audience: Application User
@@ -17,42 +15,42 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14619069c0e984060f67fc4536b311c6802bfec7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9dbd19b7dab95f5cf746fe6c7e3a9387acbda3ec
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214295"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810627"
 ---
-# <a name="post-arrival-journal-for-returned-products"></a><span data-ttu-id="e058b-103">Postita saapumiskirjauskansio palautettuja tuotteita varten</span><span class="sxs-lookup"><span data-stu-id="e058b-103">Post arrival journal for returned products</span></span> 
+# <a name="post-arrival-journal-for-returned-products"></a><span data-ttu-id="e1702-103">Postita saapumiskirjauskansio palautettuja tuotteita varten</span><span class="sxs-lookup"><span data-stu-id="e1702-103">Post arrival journal for returned products</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="e058b-104">Palautuksen käsittely tapahtuu vahvistamalla ensin palautusmäärä ja päivittämällä määräkenttä nimikkeen saapumisen kirjauskansiossa.</span><span class="sxs-lookup"><span data-stu-id="e058b-104">To process a return, first validate the return quantity, update the quantity field in the item arrival journal.</span></span> <span data-ttu-id="e058b-105">Valitse sitten käsittelykoodi tai määritä, että palautetut nimikkeet on tarkastettava.</span><span class="sxs-lookup"><span data-stu-id="e058b-105">Then select a disposition code or indicate that the returned items have to be inspected.</span></span> <span data-ttu-id="e058b-106">Näiden vaiheiden jälkeen voit kirjata palautustilauksen nimikkeen saapumisen kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="e058b-106">After completing these steps, you can post the item arrival journal for the return order.</span></span>
+<span data-ttu-id="e1702-104">Palautuksen käsittely tapahtuu vahvistamalla ensin palautusmäärä ja päivittämällä määräkenttä nimikkeen saapumisen kirjauskansiossa.</span><span class="sxs-lookup"><span data-stu-id="e1702-104">To process a return, first validate the return quantity, update the quantity field in the item arrival journal.</span></span> <span data-ttu-id="e1702-105">Valitse sitten käsittelykoodi tai määritä, että palautetut nimikkeet on tarkastettava.</span><span class="sxs-lookup"><span data-stu-id="e1702-105">Then select a disposition code or indicate that the returned items have to be inspected.</span></span> <span data-ttu-id="e1702-106">Näiden vaiheiden jälkeen voit kirjata palautustilauksen nimikkeen saapumisen kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="e1702-106">After completing these steps, you can post the item arrival journal for the return order.</span></span>
 
-1.  <span data-ttu-id="e058b-107">Napsauta **Varastonhallinta** \> **Kausittainen** \> **Saapumisten yhteenveto**.</span><span class="sxs-lookup"><span data-stu-id="e058b-107">Click **Inventory management** \> **Periodic** \> **Arrival overview**.</span></span>
+1.  <span data-ttu-id="e1702-107">Napsauta **Varastonhallinta** \> **Kausittainen** \> **Saapumisten yhteenveto**.</span><span class="sxs-lookup"><span data-stu-id="e1702-107">Click **Inventory management** \> **Periodic** \> **Arrival overview**.</span></span>
 
-2.  <span data-ttu-id="e058b-108">Valitse **Asetusten nimi** -suodattimessa **Palautustilaus**.</span><span class="sxs-lookup"><span data-stu-id="e058b-108">In the **Setup name** filter, select **Return order**.</span></span>
+2.  <span data-ttu-id="e1702-108">Valitse **Asetusten nimi** -suodattimessa **Palautustilaus**.</span><span class="sxs-lookup"><span data-stu-id="e1702-108">In the **Setup name** filter, select **Return order**.</span></span>
 
-3.  <span data-ttu-id="e058b-109">Jos vastaanottajaluettelo on liian pitkä, lyhennä luetteloa **Alue**-alueen kenttien avulla.</span><span class="sxs-lookup"><span data-stu-id="e058b-109">If the list of receipts is long, use the fields in the **Range** area to narrow the list.</span></span>
+3.  <span data-ttu-id="e1702-109">Jos vastaanottajaluettelo on liian pitkä, lyhennä luetteloa **Alue**-alueen kenttien avulla.</span><span class="sxs-lookup"><span data-stu-id="e1702-109">If the list of receipts is long, use the fields in the **Range** area to narrow the list.</span></span>
 
-4.  <span data-ttu-id="e058b-110">Etsi palautustilauksen kirjattava rivi, valitse rivin **Valitse saapumiseen** -ruutu ja valitse sitten **Aloita saapuminen**.</span><span class="sxs-lookup"><span data-stu-id="e058b-110">Locate the line of the return order that you want to post, select its **Select for arrival** box, and then click **Start arrival**.</span></span>
+4.  <span data-ttu-id="e1702-110">Etsi palautustilauksen kirjattava rivi, valitse rivin **Valitse saapumiseen** -ruutu ja valitse sitten **Aloita saapuminen**.</span><span class="sxs-lookup"><span data-stu-id="e1702-110">Locate the line of the return order that you want to post, select its **Select for arrival** box, and then click **Start arrival**.</span></span>
 
-5.  <span data-ttu-id="e058b-111">Napsauta **Kirjauskansiot** \> **Näytä vastaanottojen saapumiset** avataksesi **Sijainnin kirjauskansio** -lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="e058b-111">Click **Journals** \> **Show arrivals from receipts** to open the **Location journal** form.</span></span>
+5.  <span data-ttu-id="e1702-111">Napsauta **Kirjauskansiot** \> **Näytä vastaanottojen saapumiset** avataksesi **Sijainnin kirjauskansio** -lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="e1702-111">Click **Journals** \> **Show arrivals from receipts** to open the **Location journal** form.</span></span>
     
 
     > [!TIP]
-    > <P><span data-ttu-id="e058b-112">Voit katsella yksityiskohtaisia tietoja valitsemalla kirjauskansion ja napsauttamalla sitten <STRONG>Rivit</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="e058b-112">To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</span></span></P>
+    > <P><span data-ttu-id="e1702-112">Voit katsella yksityiskohtaisia tietoja valitsemalla kirjauskansion ja napsauttamalla sitten <STRONG>Rivit</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="e1702-112">To view detailed information, select a journal, and then click <STRONG>Lines</STRONG>.</span></span></P>
 
 
-6.  <span data-ttu-id="e058b-113">Tee tarvittavat päivitykset ja valitse sitten **Kirjaa**.</span><span class="sxs-lookup"><span data-stu-id="e058b-113">Make any necessary updates, and then click **Post**.</span></span>
+6.  <span data-ttu-id="e1702-113">Tee tarvittavat päivitykset ja valitse sitten **Kirjaa**.</span><span class="sxs-lookup"><span data-stu-id="e1702-113">Make any necessary updates, and then click **Post**.</span></span>
 
-<span data-ttu-id="e058b-114">Palautetut nimikkeet rekisteröidään varastoon kirjauskansion kirjaamisen jälkeen. **Palautustilaukset**-lomake osoittaa, että nimikkeet ovat saapuneet varastoon.</span><span class="sxs-lookup"><span data-stu-id="e058b-114">After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.</span></span>
+<span data-ttu-id="e1702-114">Palautetut nimikkeet rekisteröidään varastoon kirjauskansion kirjaamisen jälkeen. **Palautustilaukset**-lomake osoittaa, että nimikkeet ovat saapuneet varastoon.</span><span class="sxs-lookup"><span data-stu-id="e1702-114">After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e058b-115">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="e058b-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e1702-115">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="e1702-115">See also</span></span>
 
-<span data-ttu-id="e058b-116">[Sijaintikirjauskansio (lomake)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="e058b-116">[Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span></span>
+<span data-ttu-id="e1702-116">[Sijaintikirjauskansio (lomake)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="e1702-116">[Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))</span></span>
 
   
 

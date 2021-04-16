@@ -2,11 +2,9 @@
 title: Kuormituksen mallipohjat
 description: Tässä aiheessa käsitellään kuormamallien määrittämistä ja kuormamallin liittämistä uuteen kuormaan.
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate
 audience: Application User
@@ -16,43 +14,43 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 80004b5d22e1cf81c1ffa9f74c2c479e1561df72
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 175c8017b14cc298cdaa00031f8450015a747786
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247211"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831503"
 ---
-# <a name="load-templates"></a><span data-ttu-id="52653-103">Kuormituksen mallipohjat</span><span class="sxs-lookup"><span data-stu-id="52653-103">Load templates</span></span>
+# <a name="load-templates"></a><span data-ttu-id="e9e6e-103">Kuormituksen mallipohjat</span><span class="sxs-lookup"><span data-stu-id="e9e6e-103">Load templates</span></span>
 
-<span data-ttu-id="52653-104">Kun luot uuden kuorman, voi määrittää kuormamallin.</span><span class="sxs-lookup"><span data-stu-id="52653-104">When you create a new load, you can assign a load template.</span></span> <span data-ttu-id="52653-105">Kuormamallissa on tietoja välineistä ja mitoista, kuten kuorman korkeudesta, leveydestä, syvyydestä ja tilavuudesta.</span><span class="sxs-lookup"><span data-stu-id="52653-105">The load template contains information about equipment, and about measures such as the height, width, depth, and volume of the load.</span></span>
+<span data-ttu-id="e9e6e-104">Kun luot uuden kuorman, voi määrittää kuormamallin.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-104">When you create a new load, you can assign a load template.</span></span> <span data-ttu-id="e9e6e-105">Kuormamallissa on tietoja välineistä ja mitoista, kuten kuorman korkeudesta, leveydestä, syvyydestä ja tilavuudesta.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-105">The load template contains information about equipment, and about measures such as the height, width, depth, and volume of the load.</span></span>
 
-<span data-ttu-id="52653-106">Tässä aiheessa käsitellään kuormamallien määrittämistä ja kuormamallin liittämistä uuteen kuormaan.</span><span class="sxs-lookup"><span data-stu-id="52653-106">This topic describes how to set up load templates, and how to associate a load template with a new load.</span></span>
+<span data-ttu-id="e9e6e-106">Tässä aiheessa käsitellään kuormamallien määrittämistä ja kuormamallin liittämistä uuteen kuormaan.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-106">This topic describes how to set up load templates, and how to associate a load template with a new load.</span></span>
 
-## <a name="set-up-a-load-template"></a><span data-ttu-id="52653-107">Kuormamallien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="52653-107">Set up a load template</span></span>
+## <a name="set-up-a-load-template"></a><span data-ttu-id="e9e6e-107">Kuormamallien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e9e6e-107">Set up a load template</span></span>
 
-1. <span data-ttu-id="52653-108">Valitse **Kuljetustenhallinta \> Määritys \> Kuormituksen luonti \> Kuormamalli**.</span><span class="sxs-lookup"><span data-stu-id="52653-108">Go to **Transportation management \> Setup \> Load Building \> Load template**.</span></span>
-1. <span data-ttu-id="52653-109">Lisää uusi malli valitsemalla toimintoruudussa **Uusi** tai muokkaa aiemmin luotua mallia valitsemalla **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="52653-109">On the Action Pane, select **New** to add a new template or **Edit** to edit an existing template.</span></span>
-1. <span data-ttu-id="52653-110">Määritä seuraavat kentät uuden tai aiemmin luodun mallin rivillä:</span><span class="sxs-lookup"><span data-stu-id="52653-110">In the row for the new or existing template, set the following fields:</span></span>
+1. <span data-ttu-id="e9e6e-108">Valitse **Kuljetustenhallinta \> Määritys \> Kuormituksen luonti \> Kuormamalli**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-108">Go to **Transportation management \> Setup \> Load Building \> Load template**.</span></span>
+1. <span data-ttu-id="e9e6e-109">Lisää uusi malli valitsemalla toimintoruudussa **Uusi** tai muokkaa aiemmin luotua mallia valitsemalla **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-109">On the Action Pane, select **New** to add a new template or **Edit** to edit an existing template.</span></span>
+1. <span data-ttu-id="e9e6e-110">Määritä seuraavat kentät uuden tai aiemmin luodun mallin rivillä:</span><span class="sxs-lookup"><span data-stu-id="e9e6e-110">In the row for the new or existing template, set the following fields:</span></span>
 
-    - <span data-ttu-id="52653-111">**Kuorman mallitunnus** – anna kuormamallin yksilöivä tunnus.</span><span class="sxs-lookup"><span data-stu-id="52653-111">**Load template ID** – Enter a unique identifier (ID) for the load template.</span></span>
-    - <span data-ttu-id="52653-112">**Laite** – valitse laite, jota käytetään kuorman lähettämiseen.</span><span class="sxs-lookup"><span data-stu-id="52653-112">**Equipment** – Select the equipment that should be used to ship the load.</span></span>
-    - <span data-ttu-id="52653-113">**Kuorman korkeus**, **Kuorman leveys** ja **Kuorman syvyys** – anna kuorman dimensiot.</span><span class="sxs-lookup"><span data-stu-id="52653-113">**Load height**, **Load width**, and **Load depth** – Enter the dimensions of the load.</span></span>
-    - <span data-ttu-id="52653-114">**Kuorman suurin sallittu tilavuus** ja **Suurin sallittu kuorman paino** – anna kuorman suurin sallittu tilavuus ja paino.</span><span class="sxs-lookup"><span data-stu-id="52653-114">**Max. allowed load volume** and **Max. allowed load weight** – Enter the maximum allowed volume and weight of the load.</span></span>
-    - <span data-ttu-id="52653-115">**Suurin sallittu bruttopaino** – Anna kuorman suurin sallittu bruttopaino.</span><span class="sxs-lookup"><span data-stu-id="52653-115">**Maximum allowed gross weight** – Enter the maximum allowed gross weight of the load.</span></span> <span data-ttu-id="52653-116">Kuorman bruttopaino sisältää sekä sen taarapainon että sen kuormauspainon.</span><span class="sxs-lookup"><span data-stu-id="52653-116">A load's gross weight includes both its tare weight and its loading weight.</span></span>
-    - <span data-ttu-id="52653-117">**Suurin sallittu rahdin osien määrä** – anna suurin sallittu rahdin osien määrä, joka kuormassa voi olla.</span><span class="sxs-lookup"><span data-stu-id="52653-117">**Maximum number of freight pieces allowed** – Enter the maximum number of freight pieces that the load can contain.</span></span>
-    - <span data-ttu-id="52653-118">**Pinoa kuorma lattialle** – Valitse tämä valintaruutu lattiakuormitusta varten</span><span class="sxs-lookup"><span data-stu-id="52653-118">**Stack load on floor** – Select this check box to use floor loading.</span></span> <span data-ttu-id="52653-119">Lattiakuormaskenaariossa laatikot ovat pinossa lattiasta kattoon ja seinästä seinään konttien kapasiteetin maksimoimiseksi.</span><span class="sxs-lookup"><span data-stu-id="52653-119">In a floor loading scenario, boxes are stacked floor to ceiling and wall to wall inside the container, to maximize capacity.</span></span>
+    - <span data-ttu-id="e9e6e-111">**Kuorman mallitunnus** – anna kuormamallin yksilöivä tunnus.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-111">**Load template ID** – Enter a unique identifier (ID) for the load template.</span></span>
+    - <span data-ttu-id="e9e6e-112">**Laite** – valitse laite, jota käytetään kuorman lähettämiseen.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-112">**Equipment** – Select the equipment that should be used to ship the load.</span></span>
+    - <span data-ttu-id="e9e6e-113">**Kuorman korkeus**, **Kuorman leveys** ja **Kuorman syvyys** – anna kuorman dimensiot.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-113">**Load height**, **Load width**, and **Load depth** – Enter the dimensions of the load.</span></span>
+    - <span data-ttu-id="e9e6e-114">**Kuorman suurin sallittu tilavuus** ja **Suurin sallittu kuorman paino** – anna kuorman suurin sallittu tilavuus ja paino.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-114">**Max. allowed load volume** and **Max. allowed load weight** – Enter the maximum allowed volume and weight of the load.</span></span>
+    - <span data-ttu-id="e9e6e-115">**Suurin sallittu bruttopaino** – Anna kuorman suurin sallittu bruttopaino.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-115">**Maximum allowed gross weight** – Enter the maximum allowed gross weight of the load.</span></span> <span data-ttu-id="e9e6e-116">Kuorman bruttopaino sisältää sekä sen taarapainon että sen kuormauspainon.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-116">A load's gross weight includes both its tare weight and its loading weight.</span></span>
+    - <span data-ttu-id="e9e6e-117">**Suurin sallittu rahdin osien määrä** – anna suurin sallittu rahdin osien määrä, joka kuormassa voi olla.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-117">**Maximum number of freight pieces allowed** – Enter the maximum number of freight pieces that the load can contain.</span></span>
+    - <span data-ttu-id="e9e6e-118">**Pinoa kuorma lattialle** – Valitse tämä valintaruutu lattiakuormitusta varten</span><span class="sxs-lookup"><span data-stu-id="e9e6e-118">**Stack load on floor** – Select this check box to use floor loading.</span></span> <span data-ttu-id="e9e6e-119">Lattiakuormaskenaariossa laatikot ovat pinossa lattiasta kattoon ja seinästä seinään konttien kapasiteetin maksimoimiseksi.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-119">In a floor loading scenario, boxes are stacked floor to ceiling and wall to wall inside the container, to maximize capacity.</span></span>
 
-1. <span data-ttu-id="52653-120">Valitse toimintoruudussa **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="52653-120">On the Action Pane, select **Save**.</span></span>
+1. <span data-ttu-id="e9e6e-120">Valitse toimintoruudussa **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-120">On the Action Pane, select **Save**.</span></span>
 
-## <a name="associate-a-load-template-with-a-new-load"></a><span data-ttu-id="52653-121">Kuormamallin liittäminen uuteen kuormaan</span><span class="sxs-lookup"><span data-stu-id="52653-121">Associate a load template with a new load</span></span>
+## <a name="associate-a-load-template-with-a-new-load"></a><span data-ttu-id="e9e6e-121">Kuormamallin liittäminen uuteen kuormaan</span><span class="sxs-lookup"><span data-stu-id="e9e6e-121">Associate a load template with a new load</span></span>
 
-1. <span data-ttu-id="52653-122">Valitse **Kuljetustenhallinta \> Suunnittelu \> Kuormasuunnittelun työtila**.</span><span class="sxs-lookup"><span data-stu-id="52653-122">Go to **Transportation management \> Planning \> Load planning workbench**.</span></span>
-1. <span data-ttu-id="52653-123">Valitse sivun yläosassa jokin seuraavista välilehdistä sen perusteella, minkälaiselle lähdeasiakirjatyypille luodaan kuorma: **lähetykset**, **myyntirivit**, **siirtorivit** tai **ostotilausrivit**.</span><span class="sxs-lookup"><span data-stu-id="52653-123">In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**.</span></span> 
-1. <span data-ttu-id="52653-124">Valitse tietty asiakirja, jolle kuorma suunnitellaan.</span><span class="sxs-lookup"><span data-stu-id="52653-124">Select the specific document to plan the load for.</span></span>
-1. <span data-ttu-id="52653-125">Valitse toimintoruudun **Tarjonta ja kysyntä** -välilehden **Lisää**-ryhmässä kohta **Uuteen kuormaan**.</span><span class="sxs-lookup"><span data-stu-id="52653-125">On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.</span></span>
-1. <span data-ttu-id="52653-126">Valitse **Kuormamalli**-valintaikkunan **Kuorman mallitunnus** -kentässä käytettävä malli.</span><span class="sxs-lookup"><span data-stu-id="52653-126">In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.</span></span>
-1. <span data-ttu-id="52653-127">Käytä mallia valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="52653-127">Select **OK** to apply the template.</span></span>
+1. <span data-ttu-id="e9e6e-122">Valitse **Kuljetustenhallinta \> Suunnittelu \> Kuormasuunnittelun työtila**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-122">Go to **Transportation management \> Planning \> Load planning workbench**.</span></span>
+1. <span data-ttu-id="e9e6e-123">Valitse sivun yläosassa jokin seuraavista välilehdistä sen perusteella, minkälaiselle lähdeasiakirjatyypille luodaan kuorma: **lähetykset**, **myyntirivit**, **siirtorivit** tai **ostotilausrivit**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-123">In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**.</span></span> 
+1. <span data-ttu-id="e9e6e-124">Valitse tietty asiakirja, jolle kuorma suunnitellaan.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-124">Select the specific document to plan the load for.</span></span>
+1. <span data-ttu-id="e9e6e-125">Valitse toimintoruudun **Tarjonta ja kysyntä** -välilehden **Lisää**-ryhmässä kohta **Uuteen kuormaan**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-125">On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.</span></span>
+1. <span data-ttu-id="e9e6e-126">Valitse **Kuormamalli**-valintaikkunan **Kuorman mallitunnus** -kentässä käytettävä malli.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-126">In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.</span></span>
+1. <span data-ttu-id="e9e6e-127">Käytä mallia valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="e9e6e-127">Select **OK** to apply the template.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
