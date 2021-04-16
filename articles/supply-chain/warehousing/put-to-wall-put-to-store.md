@@ -2,11 +2,9 @@
 title: Asettaminen seinälle – asettaminen myymälään
 description: Tässä ohjeaiheessa käsitellään Asettaminen seinälle – asettaminen myymälään -toimintoa. Tällä toiminnolla voi käsitellä skenaarioita, joissa tuote on konsolidoitava esipakkauksen valmistelualueelle määritettävien ehtojen perusteella. Se auttaa lyhentämään keräilyaikaa, koska keräyksen voi tehdä sen avulla yhden kohderekisterikilven mukaan ja koska siinä voi käyttää enemmän asetuspaikkoja kuin klusterikeräilyssä.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228510"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823284"
 ---
 # <a name="put-to-wall---put-to-store"></a>Asettaminen seinälle – asettaminen myymälään
 
@@ -524,7 +522,7 @@ Nyt kun varasto on asetettu lajittelusijaintiin, se on lajiteltava oikeaan lajit
 
 Jos lajittelupaikat on suljettava manuaalisesti lähtevien lajittelumallin **Sulje lajittelupaikka automaattisesti** -asetuksena on oltava *Ei* ja sulkeminen on tehtävä, ennen kuin varastoa voidaan siirtää lastausovialueelle. Paikat voidaan sulkea eri tavoin:
 
-- Varastosovelluksessa:
+- Varastonhallinnan mobiilisovelluksen kautta:
 
     - Käyttäjä voi lukea jonkin jo paikassa olevan nimikkeet ja sulkea sitten paikan valitsemalla **Sulje**.
     - Jos käyttäjä lukee kontin, joka on jo lajiteltu kontti, näyttöön tulee virhesanoma. Käyttäjä voi kuitenkin jatkaa paikan sulkemista.

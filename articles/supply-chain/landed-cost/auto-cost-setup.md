@@ -2,7 +2,6 @@
 title: Automaattisten kustannusten määrittäminen
 description: Tässä aiheessa kuvataan, miten voit määrittää kustannussääntöjä saapuvien merikuljetusten eri tasoille. Järjestelmä laskee kustannukset ja lisää ne automaattisesti näiden sääntöjen perusteella. Käyttäjien ei siis tarvitse lisätä kustannuksia manuaalisesti.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2e9135019323db74a4dca9343d315cbbf9683e32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501147"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841956"
 ---
 # <a name="auto-costs-setup"></a>Automaattisten kustannusten määrittäminen
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Voit käyttää **Automaattiset kustannukset** -sivua määrittääksesi kustannussääntöjä erilaisille kustannusalueille (kuten merikuljetuksille, konteille, pakkauksille, ostotilauksille, nimikkeille tai siirtotilausriveille). Järjestelmä laskee kustannukset ja lisää ne automaattisesti näiden sääntöjen perusteella sekä niiden kenttien perusteella, jotka käyttäjät valitsevat luodessaan tietueita jollekin kustannusalueista. Käyttäjien ei siis tarvitse lisätä kustannuksia manuaalisesti.
 

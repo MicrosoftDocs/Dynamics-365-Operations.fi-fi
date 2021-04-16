@@ -1,12 +1,10 @@
 ---
-title: Italian sähköisen laskutuksen lisäosan käytön aloittaminen
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen lisäosan käytön Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
+title: Italian sähköisen laskutuksen käytön aloittaminen
+description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen käytön.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259217"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840097"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Italian sähköisen laskutuksen lisäosan käytön aloittaminen
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>Italian sähköisen laskutuksen käytön aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> Italian sähköisen laskutuksen lisäosa ei tällä hetkellä välttämättä tue kaikkia funktioita, jotka ovat käytettävissä Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin laskuissa. 
+> Italian sähköinen laskutus ei tällä hetkellä välttämättä tue kaikkia funktioita, jotka ovat käytettävissä Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin laskuissa. 
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen lisäosan käytön. Se opastaa Regulatory Configuration Servicesin (RCS) ja Financen maakohtaisissa määritysvaiheissa. Se opastaa myös, miten voidaan lähettää sähköisiä laskuja, jotka on luotu palvelulla Italialle yksilöllisessä **FatturaPA**-muodossa. Lisäksi siinä selitetään, miten käsittelyn tulokset arvioidaan.
+Tässä aiheessa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) ja Financen maakohtaisissa määritysvaiheissa. Se opastaa myös, miten voidaan lähettää sähköisiä laskuja, jotka on luotu palvelulla Italialle yksilöllisessä **FatturaPA**-muodossa. Lisäksi siinä selitetään, miten käsittelyn tulokset arvioidaan.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheen [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
+Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheen [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
 
 ## <a name="rcs-setup"></a>RCS-asetukset
 
@@ -48,7 +46,7 @@ RCS:n määrityksen aikana suoritat seuraavat tehtävät:
 4. Sähköisen laskutuksen toiminnon julkaiseminen.
 
 > [!NOTE]
-> Sähköisen laskutuksen toiminto on sen resurssin yleinen nimi, joka määritetään ja julkaistaan käytettäväksi sähköisen laskutuksen lisäosan palvelimella. Tässä tapauksessa määritettävä sähköisen laskutuksen toiminto on asiakkaiden sähköisten laskujen vienti.
+> Sähköisen laskutuksen toiminto on sen resurssin yleinen nimi, joka määritetään ja julkaistaan käytettäväksi sähköisen laskutuksen palvelimella. Tässä tapauksessa määritettävä sähköisen laskutuksen toiminto on asiakkaiden sähköisten laskujen vienti.
 
 ## <a name="import-the-e-invoicing-feature"></a>Sähköisen laskutuksen toiminnon tuominen
 
@@ -153,7 +151,7 @@ Voit julkaista sähköisen laskutuksen toiminnon muuttamalla version tilaksi **V
 
 ![Sähköisen laskutuksen toiminnon tilan muuttaminen](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>Sähköisen laskutuksen lisäosan integroinnin määritys Financessa
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Sähköisen laskutuksen integroinnin määritys Financessa
 
 Financen määrityksen aikana suoritat seuraavat tehtävät:
 
@@ -193,17 +191,17 @@ Financen määrityksen aikana suoritat seuraavat tehtävät:
 
 Financessa käsittelyn aikana suoritat seuraavat tehtävät:
 
-1. Italialaisten sähköisten laskujen luominen sähköisen laskutuksen lisäosan kautta
+1. Italialaisten sähköisten laskujen luominen sähköisen laskutuksen kautta
 2. Suorituslokien tarkasteleminen ja käsittelytulosten arvioiminen
 
 ### <a name="generate-electronic-invoices"></a>Sähköisten laskujen luominen
 
-Kun otat käyttöön **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminnon ja aktivoit **IT00036** -toiminnon, Financen vanhaa prosessia italialaisten sähköisten laskujen luomiseen ei enää voi käyttää. Se korvataan uudella prosessilla, jonka nimi on **Lähetä sähköiset asiakirjat**.
+Kun otat käyttöön **Määritettävä sähköisen laskutuksen integrointi** -toiminnon ja aktivoit **IT00036** -toiminnon, Financen vanhaa prosessia italialaisten sähköisten laskujen luomiseen ei enää voi käyttää. Se korvataan uudella prosessilla, jonka nimi on **Lähetä sähköiset asiakirjat**.
 
 Voit lähettää asiakirjat manuaalisesti riippuen sähköisten laskujen asiakirjojen tarpeestasi.
 
 > [!NOTE]
-> Varmista ennen jatkamista, että italialaisten sähköisten laskujen edellyttämä määritys on tehty. Lisätietoja: [Asiakkaiden sähköiset laskut](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Huomaa, että osa kyseisessä aiheessa kuvatuista määritysvaiheista ei välttämättä ole käytettävissä sähköisen laskutuksen lisäosan aktivoinnin vuoksi.
+> Varmista ennen jatkamista, että italialaisten sähköisten laskujen edellyttämä määritys on tehty. Lisätietoja: [Asiakkaiden sähköiset laskut](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Huomaa, että osa kyseisessä aiheessa kuvatuista määritysvaiheista ei välttämättä ole käytettävissä sähköisen laskutuksen aktivoinnin vuoksi.
 
 1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Lähetä sähköisiä asiakirjoja**.
 2. Kun mikä tahansa asiakirja lähetetään ensimmäistä kertaa, määritä **Lähetä asiakirjat uudelleen** -asetukseksi **Ei**. Jos sinun on lähetettävä asiakirja uudelleen palvelun kautta, määritä asetukseksi **Kyllä**.
@@ -220,7 +218,7 @@ Voit lähettää asiakirjat manuaalisesti riippuen sähköisten laskujen asiakir
 2. Valitse **OK**, jotta voit sulkea **Kysely**-valintaikkunan.
 3. Lähetä valitut asiakirjat valitsemalla **OK**.
 
-> ![HUOMAA] Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköisen laskutuksen lisäosaan. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
+> ![HUOMAUTUS] Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköiseen laskutukseen. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
 
 #### <a name="view-submission-logs"></a>Lähetyslokien tarkasteleminen
 
@@ -243,8 +241,8 @@ Voit tarkastella kaikkien lähetettyjen asiakirjojen lähetyslokeja.
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 - [Sähköisen laskutuksen yleiskatsaus](e-invoicing-service-overview.md)
-- [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md)
-- [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)
+- [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md)
+- [Sähköisen laskutuksen määrittäminen](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

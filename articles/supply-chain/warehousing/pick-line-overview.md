@@ -2,11 +2,9 @@
 title: Mobiililaitteen valikkovaihtoehdon määrittäminen tuottamaan keräilyrivin yhteenvedon
 description: Tässä ohjeaiheessa selitetään, miten voit määrittää, milloin kaikkien työrivien luettelo näytetään varastotyöntekijöille, jotka käsittelevät varastotyötä mobiililaitteilla. Tämä ominaisuus voi olla hyödyllinen varastotyöntekijöille, jotka tarvitsevat usein yhteenvedon työtilauksen keräilyriveistä, jotta he voivat optimoida keräilyjärjestyksen.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,21 +12,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 22e724b60ec5cc8bf39a520022f43784d3a328eb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6eaba6da313f398c8d30f9a26c959ee971812e21
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232908"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818869"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Mobiililaitteen valikkovaihtoehdon määrittäminen tuottamaan keräilyrivin yhteenvedon
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa selitetään, miten määritetään keräilyrivien mobiililaitteille tarkoitettuun yhteenvetoon liittyvät valikkovaihtoehdot, joita käytetään keräilytyön käsittelyssä. Keräilyrivin yhteenvedon avulla varastotyöntekijät pystyvät tarkastelemaan ja valitsemaan töitä luettelosta, joka sisältää kaikki heidän kulloiseenkin tehtäväänsä liittyvät työrivit. Tämä ominaisuus voi auttaa työntekijöitä optimoimaan keräilyjärjestyksensä. Toiminto sisältää vaihtoehtoja vakiomuotoisen **Ohitus**-painikkeen korvaamiseksi. Tällä painikkeella työntekijät voivat käydä rivit läpi yksi kerrallaan kiinteässä järjestyksessä. (Painikkeen käyttäminen on kuitenkin edelleen mahdollista.)
 
-Järjestelmänvalvojat voivat määrittää kunkin valikkovaihtoehdon erikseen ja hallita miten, milloin ja missä varastosovellus esittää keräilyrivin yhteenvedon.
+Järjestelmänvalvojat voivat määrittää kunkin valikkovaihtoehdon erikseen ja hallita miten, milloin ja missä varastonhallinnan mobiilisovellus esittää keräilyrivin yhteenvedon.
 
 ## <a name="turn-on-the-work-pick-line-overview-feature"></a>Työn keräilyriviyhteenveto-toiminnon käyttöönotto
 
@@ -52,17 +49,17 @@ Määritä mobiililaitteen valikkovaihtoehto tuottamaan keräilyrivin yhteenveto
 
 1. Määritä toiminto **Yleiset**-pikavalikossa määrittämällä **Näytä työriviluettelo** -kentän arvoksi jokin seuraavista:
 
-    - **Näytä vain pyydettäessä** – Työntekijät voivat avata keräilyriviluettelon valitsemalla **Siirry kohteeseen** -painikkeen varastosovelluksessa.
-    - **Näytä jokaisen keräilyn alussa** – Työntekijät näkevät luettelon aina, kun he aloittavat keräilyrivin tai saavat sen valmiiksi. He voivat myös tarkastella luetteloa uudelleen valitsemalla **Siirry kohteeseen** -painikkeen varastosovelluksessa.
-    - **Näytä vain ensimmäisen keräilyn alussa** – Työtekijät näkevät luettelon aina, kun he aloittavat uuden keräystyön, mutta eivät jokaisen rivin jälkeen. He voivat myös tarkastella luetteloa uudelleen valitsemalla **Siirry kohteeseen** -painikkeen varastosovelluksessa.
-    - **Älä näytä koskaan** – Vakiomuotoinen **Ohita**-painike näkyy varastosovelluksessa ja työriviluettelon näyttö on kytketty pois. **Ohita**-painikkeen avulla työntekijät käyvät rivit läpi yksi kerrallaan kiinteässä järjestyksessä. He voivat myös selata luetteloa niin monta kertaa kuin on tarpeen, kunnes kaikki rivit on käsitelty.
+    - **Näytä vain pyydettäessä** – Työntekijät voivat avata keräilyriviluettelon valitsemalla **Siirry kohteeseen** -painikkeen varastonhallinnan mobiilisovelluksessa.
+    - **Näytä jokaisen keräilyn alussa** – Työntekijät näkevät luettelon aina, kun he aloittavat keräilyrivin tai saavat sen valmiiksi. He voivat myös tarkastella luetteloa uudelleen valitsemalla **Siirry kohteeseen** -painikkeen varastonhallinnan mobiilisovelluksessa.
+    - **Näytä vain ensimmäisen keräilyn alussa** – Työtekijät näkevät luettelon aina, kun he aloittavat uuden keräystyön, mutta eivät jokaisen rivin jälkeen. He voivat myös tarkastella luetteloa uudelleen valitsemalla **Siirry kohteeseen** -painikkeen varastonhallinnan mobiilisovelluksessa.
+    - **Älä näytä koskaan** – Vakiomuotoinen **Ohita**-painike näkyy varastonhallinnan mobiilisovelluksessa ja työriviluettelon näyttö on kytketty pois. **Ohita**-painikkeen avulla työntekijät käyvät rivit läpi yksi kerrallaan kiinteässä järjestyksessä. He voivat myös selata luetteloa niin monta kertaa kuin on tarpeen, kunnes kaikki rivit on käsitelty.
 
 1. Valitse toimintoruudussa **Tallenna**.
 
     Jos määrität **Näytä työriviluettelo**-kentän arvoksi minkä tahansa muun kuin *Älä näytä koskaan*, toimintoruudun **Kenttäluettelo**-painike muuttuu käytettäväksi.
 
 1. Valitse toimintoruudussa **Kenttäluettelo**.
-1. Määritä **Kenttäluettelo**-sivulla tiedot, jotka varastosovellus näyttää kunkin luettelon rivin osalta.
+1. Määritä **Kenttäluettelo**-sivulla tiedot, jotka varastonhallinnan mobiilisovellus näyttää kunkin luettelon rivin osalta.
 
     - **Ensisijainen ohjausobjekti** -kentän arvona on aina *LineNum*. Siksi jokainen luettelon rivi alkaa rivinumerolla.
     - Käytä jäljellä olevia **Näyttökenttä**-kenttiä lisätäksesi jopa seitsemän lisänäyttökenttää tarpeen mukaan. Valitse jokaisessa **Näyttökenttä**-kentässä työrivikentän nimi. Kukin rivi näyttä tällöin arvon kyseiselle kentälle. Arvot näytetään tässä valitussa järjestyksessä. Voit jättää osan **Näyttökenttä**-kentistä tyhjiksi, jos et tarvitse kaikkia seitsemää arvoa.

@@ -2,11 +2,9 @@
 title: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 description: Tässä ohjeaiheessa käsitellään tuotannon käyttöliittymää työntekijän näkökulmasta.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500787"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814653"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tuotannon käyttöliittymä on optimoitu kosketuskäyttöön. Siihen suunniteltu visuaalinen kontrasti vastaa tuotantoympäristön helppokäyttöisyysvaatimuksia. Siinä on kaikki samat toiminnalliset ominaisuudet kuin työkorttilaitteessa. Siinä voidaan kuitenkin aloittaa myös rinnakkain useita töitä työluettelosta. (Tätä ominaisuutta kutsutaan myös *töiden niputukseksi*.) Työntekijät voivat avata työluettelosta myös Microsoft Dynamics 365 Guidesissa luodun oppaan. He saavat tällä tavoin visuaalisia ohjeita HoloLensissa.
 
@@ -90,7 +87,7 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 1. **Asetukset** – Valitse rataskuvake ja avaa valintaikkuna, jossa voidaan valita, mitä valitun koneresurssin laskureita tarkastellaan. Näiden laskureiden arvot näytetään **Resurssien hallinta** -välilehden yläosassa. (Seuraavassa näyttökuvassa olevassa) **Asetukset**-valikossa voi ottaa käyttöön enintään neljä laskuria. Valitse kukin käyttöönotettava laskuri käyttämällä ruudun yläosassa olevaa hakukenttää. Hakukentässä on luettelo kaikista valittuun resurssiin liitetyistä laskurista. Resurssi valittiin **Resurssien hallinta** -sivun yläosassa. Määritä kukin laskuri seuraamaan joko **Koottu**-arvoa ja laskurin uusinta **Toteutunut**-arvoa. Jos määritetty laskuri esimerkiksi seuraa, kuinka monta tuntia kone on ollut käytössä, määrityksenä on oltava **Koottu**. Jos laskuri määritetään seuraamaan viimeksi päivitettyä lämpötilaa tai painetta, määrityksenä on oltava **Toteutunut**. Valitse **OK** tallentaaksesi asetukset ja sulje valintaikkuna.
 
-    ![Oma kone -välilehti](media/pfei-my-machine-tab-settings.png "Oma kone -välilehti")
+    ![Oma kone -välilehden asetukset](media/pfei-my-machine-tab-settings.png "Oma kone -välilehden asetukset")
 
 1. **Yläpitopyyntö** – Tämän painikkeen valinta avaa valintaikkunan, jossa voidaan luoda ylläpitopyyntö. Pyynnölle voi antaa kuvauksen ja lisätä huomautuksen. Pyyntö tulee Supply Chain Management -käyttäjän näkyville, ja tämä käyttäjä voi sitten muuntaa ylläpitopyynnön ylläpidon työtilaukseksi.
 1. **Rekisteröi seisokki** – Tämän painikkeen valinta avaa valintaikkunan, jossa voi rekisteröidä koneen seisokin. Seisokille voidaan valita syykoodi ja antaa seisokin ajankohta ja kesto. Koneen seisokkirekisteröinnin avulla lasketaan koneresurssin tehokkuus.
