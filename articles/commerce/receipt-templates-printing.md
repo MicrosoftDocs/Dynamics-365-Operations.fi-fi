@@ -2,11 +2,9 @@
 title: Määritä ja suunnittele vastaanottoluetteloiden muodot
 description: Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Dynamics 365 Commerce sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c44798c6b879ebd95618d976beebe1d41b40dcdd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 281a5e2be6f43f5a83ef7435b2041423dd5d4caa
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243742"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792120"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Määritä ja suunnittele vastaanottoluetteloiden muodot
 

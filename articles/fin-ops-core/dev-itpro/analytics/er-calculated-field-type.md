@@ -2,7 +2,6 @@
 title: Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 description: Tässä ohjeaiheessa käsitellään ER-tietolähteiden Laskettu kenttä -tyypin käyttöä.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569198"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749486"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 
@@ -194,7 +193,7 @@ Tämän parametrin lisääminen määrittää ehdon, joka on oltava käytössä,
 
 ![Laajennettu lasketun kentän tasoluettelo](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Muodon elementtien sitominen määritetyn lasketun kentän avulla
+### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Muodon elementtien sitominen määritetyn lasketun kentän avulla
 
 1. Valitse laskettu kenttä valitsemalla **Model.Data2.Levels**.
 2. Valitse **Statement.Taxation.Regular**-muotoelementti.
@@ -215,7 +214,7 @@ Tämän parametrin lisääminen määrittää ehdon, joka on oltava käytössä,
 9. Valitse **Sido**.
 10. Valitsemalla **Kyllä** voit vahvistaa käytössä olevan tietolähteen **Taso3** korvaamisen uudella tietolähteellä **Tasot** kaikissa valitun muotoelementin sisäkkäisissä muotoelementeissä.
 
-   Jos määrität verotustasoon viittaavan XML-elementin (kuten **Model.Data2.Levels("Alennettu")** tekstiarvona) parametrisoidun lasketun kentän argumentin, samaa ei tarvitse tehdä sisäkkäisille XML-määritteille, sillä niiden sidonnat perivät automaattisesti päätasolla määritetyn argumentin arvon (**Model.Data2.Levels.aggregated.Base**, ei siis **Model.Data2.Levels("Alennettu").aggregated.Base**).
+   Jos määrität verotustasoon viittaavan XML-elementin (kuten **Model.Data2.Levels(&quot;Alennettu")** tekstiarvona) parametrisoidun lasketun kentän argumentin, samaa ei tarvitse tehdä sisäkkäisille XML-määritteille, sillä niiden sidonnat perivät automaattisesti päätasolla määritetyn argumentin arvon (**Model.Data2.Levels.aggregated.Base**, ei siis **Model.Data2.Levels("Alennettu").aggregated.Base**).
 
 Parametrisoidun lasketun kentän toistuvia kutsuja ei tueta.
 

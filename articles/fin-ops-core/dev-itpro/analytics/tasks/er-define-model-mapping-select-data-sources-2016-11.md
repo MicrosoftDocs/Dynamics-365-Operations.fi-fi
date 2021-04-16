@@ -2,7 +2,6 @@
 title: Määritä ER-mallin yhdistämismääritys ja valitse niille tietolähteet
 description: Tässä aiheessa käsitellään, miten järjestelmänvalvoja tai sähköisen raportoinnin kehittäjä voi valita sähköisen raportoinnin tietomallille tietolähteitä.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7b5f291372bc459bc1979dca4a95cfafb39e2ad9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7d88aaa24d61d6768801a84c81002d7a6ab2f316
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567291"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755079"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Määritä ER-mallin yhdistämismääritys ja valitse niille tietolähteet
 

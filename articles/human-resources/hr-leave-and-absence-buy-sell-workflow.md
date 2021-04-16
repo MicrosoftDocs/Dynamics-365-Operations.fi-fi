@@ -2,11 +2,9 @@
 title: Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen
 description: Luo loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulku, jonka avulla voit hallita loman rahaksi tai lomapalkan vapaaksi vaihtamista johdonmukaisesti Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 16260c66c2e92fb06664a8f20a5fc3ed4a964609
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: a0ddb3ea3aa7f1941ff486d7a3e1db5846fac3eb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5468128"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790545"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen
 

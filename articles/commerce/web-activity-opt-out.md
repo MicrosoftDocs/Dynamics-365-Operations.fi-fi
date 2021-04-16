@@ -2,11 +2,9 @@
 title: Verkkotoiminnan tapahtumien keräämisestä kieltäytyminen
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla sivustossa vierailijat voivat kieltäytyä verkkotoiminnan tapahtumien keräämisestä Microsoft Dynamics 365 Commercessa.
 author: aamiral
-manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,19 +14,17 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 244d612fa01529df4fff250df50a06526632fcf1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 86f475cc0b78c620309301516b6c3b525b640637
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210920"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791554"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Verkkotehtävätapahtumien keräämisestä kieltäytyminen
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään, miten asiakkaat voivat kieltäytyä verkkotoiminnan tapahtumien keräämisestä Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce antaa sivuston järjestelmänvalvojille mahdollisuuden analysoida käyttäjien verkkotoimintaa omissa sähköisen kaupankäynnin sivustoissa. Tällä tavoin he saavat paremman käsityksen tavasta, jolla sivustoja käytetään. Lisäksi he voivat optimoida sivustoja niin, että niiden käyttökokemus paranee ja liiketoimintatavoitteet saavutetaan.
 
