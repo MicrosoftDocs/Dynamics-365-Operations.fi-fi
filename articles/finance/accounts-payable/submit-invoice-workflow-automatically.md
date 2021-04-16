@@ -2,11 +2,9 @@
 title: Laskujen lähettäminen työnkulkujärjestelmään ja tuotteen vastaanottorivien täsmäyttäminen
 description: Tässä ohjeaiheessa käsitellään toimittajan laskujen lähettämisprosessia työnkulkujärjestelmään ja kirjattujen tuotteen vastaanottorivien täsmäyttämistä automaattisesti toimittajan laskuihin.
 author: abruer
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534b5dbc54a516fea0b3f7090042d247c1076737
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84699746349024854a4eeb9cee62960ec38bc338
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231539"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827815"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Laskujen lähettäminen työnkulkujärjestelmään ja tuotteen vastaanottorivien täsmäyttäminen
 
@@ -41,7 +39,9 @@ Työnkulun **Lähettäjä**-arvo on se käyttäjätunnus, joka annettiin **Lähe
 
 Järjestelmä voi automaattisesti täsmäyttää kirjatut tuotteen vastaanotot laskuriveille osana ilman käyttäjän toimia suoritettavaa ostoreskontran laskutusprosessia. Tälle tehtävälle on määritettävä kolmisuuntainen vastaavuuskäytäntö. Tämä toiminto on käytettävissä, jos **Toimittajan laskun automatisointi** -toiminto on otettu käyttöön **Ominaisuuksien hallinta** -sivulla.
 
-Prosessia suoritetaan siihen saakka, että täsmäytetty tuotteen vastaanottomäärä on sama kuin laskun määrä. Tämän prosessin osana määritetään, kuinka monta kertaa järjestelmä enintään yrittää täsmäyttää tuotteen vastaanotot laskuriviin, ennen kuin se päättää prosessin epäonnistuneena. Prosessi suoritetaan taustalla joko kerran tunnissa tai kerran päivässä. Automatisoitu täsmäytysprosessi voidaan suorittaa osana laskujen työnkulkujärjestelmään lähettämisprosessia. Vaihtoehtoisesti se voidaan suorittaa erillisenä prosessina. Tuotteen vastaanottojen laskuriveille täsmäyttämisprosessin asetukset määritetään valitsemalla **Toimittajan laskujen automatisointi** -välilehden **Ostoreskontran parametrit** -sivulla (**Ostoreskontra \> Asetukset \> Ostoreskontran parametrit**).
+Vastaavuusprosessia suoritetaan siihen saakka, että täsmäytetty tuotteen vastaanottomäärä on sama kuin laskun määrä. Jos yksittäisellä laskurivillä on kuitenkin useita tuotevastaanottoja, sinun on tehtävä prosessi useita kertoja, jotta koko määrä täsmää. Voit määrittää, kuinka monta kertaa järjestelmä enintään yrittää täsmäyttää tuotteen vastaanotot laskuriviin, ennen kuin se päättää prosessin epäonnistuneena. Prosessi suoritetaan taustalla joko kerran tunnissa tai kerran päivässä. 
+
+Automatisoitu täsmäytysprosessi voidaan suorittaa osana laskujen työnkulkujärjestelmään lähettämisprosessia. Vaihtoehtoisesti se voidaan suorittaa erillisenä prosessina. Tuotteen vastaanottojen laskuriveille täsmäyttämisprosessin asetukset määritetään valitsemalla **Toimittajan laskujen automatisointi** -välilehden **Ostoreskontran parametrit** -sivulla (**Ostoreskontra \> Asetukset \> Ostoreskontran parametrit**).
 
 Automaattiseen tuotteen vastaanoton täsmäyttämisprosessiin sisällytetään laskurivit, joiden kolmisuuntaisen vastaavuuskäytännön vastaanotettu määrä on pienempi kuin laskun määrä.
 

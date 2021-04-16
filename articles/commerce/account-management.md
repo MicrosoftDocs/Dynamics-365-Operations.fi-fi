@@ -2,11 +2,9 @@
 title: Tilin hallintasivut ja -moduulit
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206628"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796291"
 ---
 # <a name="account-management-pages-and-modules"></a>Tilin hallintasivut ja -moduulit
 
@@ -51,9 +49,9 @@ Tilaushistoriasivulla näkyvät kaikki käyttäjän asettamat viimeaikaiset tila
 
 Tilaustietojen sivulla on eriteltyjä tietoja jokaisesta tilauksesta. Sitä voi käyttää tilaushistoriasivulta. Se käyttää tilaustietojen moduulia, jossa edellytetään myynnin tai tapahtuman tunnusta tilaustietojen noutamiseksi.
 
-### <a name="user-profile-page"></a>Käyttäjäprofiilisivu
+### <a name="my-profile-page"></a>Oma profiili -sivu
 
-Käyttäjäprofiilisivulla näkyvät käyttäjätilin tiedot, kuten käyttäjän nimi ja sähköpostiosoite. Se käyttää käyttäjäprofiilin tieto- ja muokkausmoduuleja. Vaikka sähköpostiosoitetta ei voi poistaa, sitä voi muokata. Käyttäjäprofiilisivulla näkyvät myös käyttäjäasetukset, joiden avulla käyttäjä voi halutessaan valita tiettyjä ominaisuuksia, kuten suositusluetteloiden mukauttamisen, tai poistaa ne käytöstä. 
+Oma profiili -sivulla näkyvät käyttäjän tiliprofiilin tiedot käyttämällä tiliprofiilimoduulia. Sivulla näkyy käyttäjän tiliin liitetty sähköpostiosoite sekä tilille määritetyt asetukset. Jos määrität mukautettuja asiakkaan määritteitä, nämä määritteet näkyvät myös Lisätiedot-osassa. Käyttäjät voivat muokata nimeään, asetuksiaan tai lisätietojaan (jos käytettävissä).
 
 ### <a name="user-address-page"></a>Käyttäjän osoitteen sivu
 

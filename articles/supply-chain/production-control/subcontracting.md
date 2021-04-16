@@ -2,11 +2,9 @@
 title: Alihankinta
 description: Tämä ohjeaihe opastaa tuotannon alihankinnan ohjeen luomisesta Dynamics 365 Supply Chain Managementissa.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255538"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825179"
 ---
 # <a name="subcontracting"></a>Alihankinta
 
@@ -210,7 +208,7 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
 
     ![Kaksi työjoukkoa raakamateriaalin keräykseen Työ-sivulla](./media/subcontract22_work-page.png)
 
-26. Käynnistä varastosovellus varastotyön käsittelemiseksi työvaiheelle 10.
+26. Käynnistä varastonhallinnan mobiilisovellus varastotyön käsittelemiseksi työvaiheelle 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
     - Valitse **Työvaiheesta nro** -kentässä **10**.
     - Valitse **Työvaiheeseen nro** -kentässä **10**.
 
-    ![Yleiset-välilehdessä määritetyt arvot](./media/subcontract23_start-dialog.png)
+    ![Yleiset-välilehdessä 1 määritetyt arvot](./media/subcontract23_start-dialog.png)
 
 31. Valitse **OK**, jotta voit sulkea **Käynnistä** -valintaikkunan ja palata **Kaikki tuotantotilaukset** -sivulle.
 
     Huomaa, että tuotantotilauksen tilana on nyt **Käynnistetty**. Työvaiheen 10 materiaalit käytetään keräysluettelokirjauskansion automaattisessa kirjauksessa. Työvaiheen 10 ajankäyttö lasketaan reitityskorttikirjauskansion automaattisen kirjauksen mukaan.
 
-32. Käynnistä varastosovellus varastotyön käsittelemiseksi työvaiheelle 20.
+32. Käynnistä varastonhallinnan mobiilisovellus varastotyön käsittelemiseksi työvaiheelle 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ Tuotteelle D8100 luodaan 10 osan tuotantotilaus, "Pinnoitettu kotelo". Kotelot p
     - Kirjoita **Määrä**-kenttään **10**.
     - Määritä **Kirjaa keräysluettelo nyt** -vaihtoehdon arvoksi **Ei**.
 
-    ![Yleiset-välilehdessä määritetyt arvot](./media/subcontract24_general-tab.png)
+    ![Yleiset-välilehdessä 2 määritetyt arvot](./media/subcontract24_general-tab.png)
 
 35. Valitse **OK**, jotta voit sulkea **Käynnistä** -valintaikkunan ja palata **Kaikki tuotantotilaukset** -sivulle.
 

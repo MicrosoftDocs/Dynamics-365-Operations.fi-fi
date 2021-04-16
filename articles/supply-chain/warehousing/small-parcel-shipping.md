@@ -2,11 +2,9 @@
 title: Pienten pakettien lähettäminen
 description: Tässä aiheessa on tietoja pienten pakettien lähetystoiminnosta. Tämän toiminnon avulla Microsoft Dynamics 365 Supply Chain Management voi lähettää tietoja pakatusta kontista rahdinkuljettajalle sekä saada kyseiseltä rahdinkuljettajalta osoitetarran, lähetyshinnan ja seurantanumeron.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 37f07139853c30da25c067a3d736b4b9bf4eb361
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501171"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831167"
 ---
 # <a name="small-parcel-shipping"></a>Pienten pakettien lähettäminen
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Pienten pakettien lähetystoiminnon avulla Microsoft Dynamics 365 Supply Chain Management voi olla suoraan yhteydessä rahdinkuljettajaan muodostamalla viestintäkehyksen rahdinkuljettajan ohjelmointirajapintojen kautta. Tämä toiminto on kätevä, kun yksittäisiä myyntitilauksia lähetetään kaupallisten rahdinkuljettajien kanssa sen sijaan, että käytettäisiin konttitoimitusta tai kuorma-auton osakuormatoimitusta (LTL).
 

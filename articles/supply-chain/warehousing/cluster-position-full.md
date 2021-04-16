@@ -2,11 +2,9 @@
 title: Klusterisijainti täynnä
 description: Tässä ohjeaiheessa on tietoja Klusterisijainti täynnä -ominaisuudesta. Tämä ominaisuus on vaihtoehto tiukalle työkatkosääntöjen valvonnalle, kun käytössä on klusterikeräily. Tämä johtuu siitä, että ominaisuus mahdollistaa konttien ja kassien tilavuusrajoitteiden aiempaa suuremman virhemarginaalin.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233004"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808843"
 ---
 # <a name="cluster-position-full"></a>Klusterisijainti täynnä
 
@@ -213,7 +211,7 @@ Luotuna on nyt kaksi työtunnusta. Molemmilla tunnuksilla on kaksi keräilyrivi�
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobiililaitteen työnkulun suoritus – Tuotteen työn vahvistuksen määritys
 
-1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*.
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*.
 1. Siirry kohtaan **Lähtevät \> Klusterikeräilyn luominen**.
 
     Näkyviin tulee **TEHTÄVÄ: Liitä työ klusteriin** -sivu.

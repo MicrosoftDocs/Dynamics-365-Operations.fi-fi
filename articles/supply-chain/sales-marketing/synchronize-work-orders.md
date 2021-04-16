@@ -2,11 +2,9 @@
 title: Työtilausten ja projektin synkronointi Field Servicesta Supply Chain Managementiin
 description: Ohjeaiheessa käsitellään malleja ja taustalla olevaa tehtävää, joilla projektinumeron sisältävät työtilaukset synkronoidaan Dynamics 365 Field Servicestä Dynamics 365 Supply Chain Managementiin.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: d2364378ce8992666e374ec6f665c180d2fa1981
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d733bf3256fa1f6c572bd0aa35c228490d409bbc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258020"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836491"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Työtilausten ja projektin synkronointi Field Servicesta Supply Chain Managementiin
 

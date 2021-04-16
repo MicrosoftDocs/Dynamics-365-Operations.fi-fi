@@ -2,11 +2,9 @@
 title: Eri dimensioiden määrittäminen pakkausta ja varastointia varten
 description: Tässä aiheessa käsitellään, miten määritetään, missä prosessissa (pakkaus, varastointi ja sisäkkäinen pakkaus) kutakin määritettyä dimensiota käytetään.
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: e997f8bccde7856303d8b3c6407143598ccc6030
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501291"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818917"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Eri dimensioiden määrittäminen pakkausta ja varastointia varten
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Jotkin nimikkeet pakataan tai tallennetaan siten, että fyysisiä dimensioita on ehkä seurattava eri tavalla kussakin prosessissa. *Pakkauksen tuotedimensiot* -toiminnolla voi määrittää kullekin tuotteelle vähintään yhden dimensiotyypin. Kussakin dimensiotyypissä on fyysisten mittojen joukko (paino, leveys, syvyys ja korkeus), ja se muodostaa prosessin, jossa kyseisiä fyysisiä mitta-arvoja käytetään. Kun tämä toiminto on otettu käyttöön, järjestelmä tukee seuraavia dimensiotyyppejä:
 

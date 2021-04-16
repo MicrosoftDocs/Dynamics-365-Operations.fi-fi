@@ -2,11 +2,9 @@
 title: Supply Chain Managementin tallennetut vakionäkymät
 description: Tässä aiheessa käsitellään käytettävissä olevia tallennettuja vakionäkymiä ja niiden käyttöön ottamista.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500691"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821246"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Managementin tallennetut vakionäkymät
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management sisältää useita tallennettuja näkyviä, jotka voidaan ottaa käyttöön ja joita voidaan käyttää tarvittaessa. Osa näistä tallennetuista vakionäkymistä on optimoitu ja nimetty tietyn roolin tai tehtävän mukaan (kuten Laadunvalvonta tai Vastaanotto). Muut on optimoitu siten, että ne sisältävät vain kentät ja asetukset, joita asiakkaat Microsoftin käyttötilastojen mukaan käyttävät eniten. Näitä tallennettuja näkymiä kutsutaan yleensä *yksinkertaistetuiksi* näkymiksi. Tässä aiheessa käsitellään käytettävissä olevia tallennettuja vakionäkymiä sekä niiden käyttöön ottamista ja mukauttamista.
 
@@ -82,14 +79,16 @@ Seuraavassa taulukossa käsitellään hankintamoduulissa käytettävissä olevia
 
 ## <a name="saved-views-for-the-production-control-module"></a>Tuotannonhallintamoduulin tallennetut näkymät
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Seuraavassa taulukossa käsitellään tuotannonhallintamoduulissa käytettävissä olevia tallennettuja näkymiä.
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Tuotantotilauksen tuoterakenne -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
-| Tuotantotilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
-| Tuotantotilauksen keräysluettelo -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
-| Tuotantotilauksen luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
+| Tuotantotilauksen tuoterakenne -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
+| Tuotantotilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
+| Tuotantotilauksen keräysluettelo -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
+| Tuotantotilauksen luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Myynti- ja markkinointimoduulin tallennetut näkymät
 

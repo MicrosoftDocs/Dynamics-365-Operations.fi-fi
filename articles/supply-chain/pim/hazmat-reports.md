@@ -2,11 +2,9 @@
 title: Vaarallisten aineiden kyselyt ja raportit
 description: Tässä ohjeaiheessa käsitellään erilaisten vaarallisiin aineisiin liittyvien raporttien käyttämistä. Monet näistä raporteista ovat pakollisia, sillä niiden avulla voidaan osoittaa, että lähetyksen ja säilytyksen aikana on noudatettu vaarallisia aineita koskevia määräyksiä.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cee824e9e8f7577d1d4a6c0a21c7341608e1f588
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243126"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820319"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Vaarallisten aineiden kyselyt ja raportit
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management sisältää erilaisia vaarallisiin aineisiin liittyviä raportteja. Monet näistä raporteista ovat pakollisia, sillä niiden avulla voidaan osoittaa, että lähetyksen ja säilytyksen aikana on noudatettu vaarallisia aineita koskevia määräyksiä.
 

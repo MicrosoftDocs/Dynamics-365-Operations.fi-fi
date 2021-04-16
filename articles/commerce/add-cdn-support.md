@@ -2,11 +2,9 @@
 title: Sisältöverkon (CDN) tuen lisääminen
 description: Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582716"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797836"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisällön toimitusverkoston (CDN) tuen lisääminen
 
@@ -41,11 +39,7 @@ Lisäksi Commerce-sovelluksen *tilastot* (JavaScript- tai Cascading Style Sheets
 
 ## <a name="set-up-ssl"></a>Määritä SSL
 
-Jos haluat varmistaa, että SSL on määritetty ja että tilastot tallennetaan välimuistiin, määritä CDN niin, että se liittyy isäntänimeen, jonka Commerce on luonut ympäristöä varten. Myös seuraava muoto on tallennettava välimuistiin tilastoja varten: 
-
-/\_msdyn365/\_scnr/\*
-
-Kun Commerce-ympäristö on valmisteltu annetun mukautetun toimialueen avulla tai kun ympäristön mukautettu toimialue on annettu palvelupyynnön avulla, osoita mukautettu toimialue isäntänimelle tai päätepisteelle, jonka Commerce on luonut.
+Kun Commerce-ympäristö on valmisteltu annetun mukautetun toimialueen avulla tai kun ympäristön mukautettu toimialue on annettu palvelupyynnön avulla, DNS-muutokset pitää suunnitella Commerce-perehdytystiimin kanssa.
 
 Kuten aiemmin mainittiin, luotu isäntänimi tai päätepiste tukee SSL-varmennetta vain osoitteessa \*.commerce.dynamics.com. Se ei tue SSL-varmennetta mukautetuissa toimialueissa.
 
@@ -62,7 +56,7 @@ CDN-määritysprosessi koostuu seuraavista yleisistä vaiheista:
 
 1. Lisää edustaisäntä.
 1. Määritä taustapooli.
-1. Määritä reitityksen ja välimuistiin tallennuksen säännöt.
+1. Määritä reitityssäännöt.
 
 ### <a name="add-a-front-end-host"></a>Lisää edustaisäntä
 
@@ -74,8 +68,9 @@ Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Pika-aloitus: Luo
 
 Voit määrittää Azure Front Door Service -palvelun taustapoolin seuraavasti.
 
-1. Lisää **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** taustapooliin mukautettuna isäntänä, jolla on tyhjä taustan isännän otsikko.
+1. Lisää **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** taustapooliin mukautettuna isäntäkoneena, jolla on taustakoneen otsikko, joka on sama kuin **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. Jätä **Kuormituksen tasaus** -kohtaan oletusarvot.
+1. Poista taustapoolin kunnon tarkistukset käytöstä.
 
 Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa sekä annettu taustan isäntänimi.
 
@@ -84,6 +79,10 @@ Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Do
 Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa sekä kuormituksen tasauksen oletusarvot.
 
 ![Taustapooli-valintaikkunan lisääminen, jatkuu](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Varmista, että poistat **Kuntotutukimukset**, kun määrität omaa Azure Front Door -palvelua Commercelle.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Sääntöjen määrittäminen Azure Front Door Service -palvelussa
 
@@ -100,24 +99,6 @@ Määritä reitityssääntö Azure Front Door Service -palvelussa seuraavasti.
 1. Määritä **URL-osoitteen uudelleenkirjoitus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
 1. Määritä **Välimuistiin tallennus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
 
-Määritä välimuistiin tallennuksen sääntö Azure Front Door Service -palvelussa seuraavasti.
-
-1. Lisää välimuistiin tallennuksen sääntö.
-1. Kirjoita **Nimi**-kenttään **tilastot**.
-1. Valitse **Hyväksytty protokolla** -kentässä **HTTP ja HTTPS**.
-1. Syötä **Edustaisännät**-kenttään **dynamics-ecom-tenant-name.azurefd.net**.
-1. Syötä ylempään **Kohdistettavat mallit** -kenttään **/\_msdyn365/\_scnr/\***.
-1. Määritä **Reitin tiedot** -kohdan **Reitin tyyppi** -vaihtoehdon arvoksi **Välitä edelleen**.
-1. Valitse **Taustapooli**-kentässä **ecom-backend**.
-1. Valitse **Välitysprotokolla**-kenttäryhmässä **Pyynnön vastaavuus** -vaihtoehto.
-1. Määritä **URL-osoitteen uudelleenkirjoitus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
-1. Määritä **Välimuistiin tallennus** -vaihtoehdon arvoksi **Poistettu käytöstä**.
-1. Valitse **Kyselymerkkijonon välimuistiin tallennuksen toiminta** -kentässä **Tallenna jokainen yksilöllinen URL-osoite välimuistiin**.
-1. Valitse **Dynaaminen pakkaus** -kenttäryhmässä **Käytössä**-vaihtoehto.
-
-Seuraavassa kuvassa näkyy **Lisää sääntö** -valintaikkuna Azure Front Door Service -palvelussa.
-
-![Lisää sääntö -valintaikkuna](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Jos käytettävä toimialue on jo aktiivinen ja julkaistu, luo tukipalvelupyyntö **Tuki**-ruudussa [Microsoft Dynamics Lifecycle Services -sovelluksessa](https://lcs.dynamics.com/). Näin saat apua seuraavissa vaiheissa. Lisätietoja on kohdassa [Tuen pyytäminen Finance and Operations -sovelluksia tai Lifecycle Services (LCS) -sovellusta varten](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).

@@ -2,11 +2,9 @@
 title: Työkäytännöt
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää työkäytännöt.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248544"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838127"
 ---
 # <a name="work-policies"></a>Työkäytännöt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten järjestelmä ja varastosovellus määritetään niin, että ne tukevat työkäytäntöjä. Tämän toiminnon avulla voit rekisteröidä varaston nopeasti ilman hyllytystyön luomista silloin, kun vastaanotat osto- ja siirtotilauksia ja kun viimeistelet valmistusprosesseja. Tämä ohjeaihe sisältää yleistietoja. Saat yksityiskohtaisia tietoja rekisterikilven vastaanotosta kohdassa [Rekisterikilven vastaanotto varastosovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
+Tässä ohjeaiheessa kerrotaan, miten järjestelmä ja varastonhallinnan mobiilisovellus määritetään niin, että ne tukevat työkäytäntöjä. Tämän toiminnon avulla voit rekisteröidä varaston nopeasti ilman hyllytystyön luomista silloin, kun vastaanotat osto- ja siirtotilauksia ja kun viimeistelet valmistusprosesseja. Tämä ohjeaihe sisältää yleistietoja. Saat yksityiskohtaisia tietoja rekisterikilven vastaanotosta kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
 
-Työkäytäntö määrittää, luodaanko varastotyö valmistetun nimikkeen valmiiksi raportoinnin yhteydessä vai silloin, kun tavarat vastaanotetaan käyttämällä varastosovellusta. Voit määrittää kunkin työkäytännön määrittämällä sen ehdot: työtilaustyypit ja -prosessit, varaston sijainnin ja (vaihtoehtoisesti) tuotteet. Esimerkiksi ostotilaus tuotteelle *A0001* on vastaanotettava sijainnissa *RECV* varastossa *24*. Myöhemmin tuotetta kulutetaan toisessa prosessissa sijainnissa *RECV*. Tässä tapauksessa määrität työkäytännön, joka estää hyllytystyön luomisen, kun työntekijä raportoi tuotteen *A0001* vastaanotetuksi sijainnissa *RECV*.
+Työkäytäntö määrittää, luodaanko varastotyö valmistetun nimikkeen valmiiksi raportoinnin yhteydessä vai silloin, kun tavarat vastaanotetaan käyttämällä varastonhallinnan mobiilisovellusta. Voit määrittää kunkin työkäytännön määrittämällä sen ehdot: työtilaustyypit ja -prosessit, varaston sijainnin ja (vaihtoehtoisesti) tuotteet. Esimerkiksi ostotilaus tuotteelle *A0001* on vastaanotettava sijainnissa *RECV* varastossa *24*. Myöhemmin tuotetta kulutetaan toisessa prosessissa sijainnissa *RECV*. Tässä tapauksessa määrität työkäytännön, joka estää hyllytystyön luomisen, kun työntekijä raportoi tuotteen *A0001* vastaanotetuksi sijainnissa *RECV*.
 
 > [!NOTE]
 > - Jotta työkäytäntö olisi aktiivinen, määritä sille ensin vähintään yksi sijainti **Varastosijainnit**-pikavälilehdessä **Työkäytännöt**-sivulla. 
@@ -297,7 +295,7 @@ Kun tuotantotilaus on ilmoitettu valmistuneeksi, hyllytystyötä ei luoda. Täm�
 
 Lisätietoja mobiililaitteiden valikkokohteista on kohdassa [Mobiililaitteiden määrittäminen varastotyötä varten](configure-mobile-devices-warehouse.md).
 
-Lisätietoja rekisterikilven vastaanotosta ja työkäytännöistä on kohdassa [Rekisterikilven vastaanotto varastosovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
+Lisätietoja rekisterikilven vastaanotosta ja työkäytännöistä on kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Lisätietoja saapuvien kuormien hallinnasta on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](inbound-load-handling.md).
 

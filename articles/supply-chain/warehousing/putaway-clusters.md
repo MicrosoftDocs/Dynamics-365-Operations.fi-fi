@@ -2,11 +2,9 @@
 title: Hyllytysklusterit
 description: Hyllytysklusterit ovat tapa, jolla voi kerätä samanaikaisesti useita rekisterikilpiä viedä sitten hyllytettäviksi eri sijainteihin. Ne voivat olla erittäin käteviä vähittäismyynnissä, jossa rekisterikilvet eivät yleensä ole täysiä kuormalavoja.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228438"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840362"
 ---
 # <a name="putaway-clusters"></a>Hyllytysklusterit
 
@@ -230,7 +228,7 @@ Tämä skenaario simuloi hyllytysklusterin käsittelyä.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Varaston vastaanotto ja lajittelu klusteriin
 
-1. Kirjaudu varastosovellukseen käyttäjänä, joka on määritetty varastoon *61*.
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä, joka on määritetty varastoon *61*.
 1. Valitse päävalikossa **Saapuva**.
 1. Valitse **Saapuva**-valikossa **Vastaanotto ja klusterilajittelu**.
 1. Anna **Ostotilausnro**-kentässä ostotilauksen numero.
@@ -272,7 +270,7 @@ Klusteri on suljettava, ennen kuin klusterin nimikkeet voidaan hyllyttää.
 
 #### <a name="put-the-cluster-away"></a>Klusterin hyllyttäminen
 
-1. Kirjaudu varastosovellukseen käyttäjänä, joka on määritetty varastoon *61*.
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä, joka on määritetty varastoon *61*.
 1. Valitse päävalikossa **Saapuva**.
 1. Valitse **Saapuva**-valikossa **Klusterihyllytys**.
 1. Valitse **Klusterin tunnus** ja anna aiemmin annettu suljetun klusterin tunnus.

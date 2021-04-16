@@ -2,11 +2,9 @@
 title: Lähetyksen automaattinen vapautus cross-dockingia varten
 description: Tässä aiheessa kuvataan cross-docking-strategia, jolla voit automaattisesti vapauttaa kysyntätilauksen varastoon, kun kysyntämäärän toimittava tuotantotilaus ilmoitetaan suoritetuksi. Tällöin määrä siirretään suoraan tuotossijainnista lähtevien sijaintiin.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233172"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831431"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Lähetyksen automaattinen vapautus cross-dockingia varten
 
@@ -163,7 +161,7 @@ Valmiin tavaramäärän cross-docking myyntitilauksen lähtösijaintiin tapahtuu
 8. Valitse **Tuotantotilaus**-sivun toimintoruudun **Tuotantotilaus**-välilehden **Prosessi**-ryhmässä **Arvio** ja sitten **OK**. Tilaus arvioidaan ja raaka-ainemäärä varataan tuotantoon.
 9. Valitse toimintoruudun **Tuotantotilaus**-välilehden **Prosessi**-ryhmässä **Vapautus** ja sitten **OK**. Raaka-aineille luodaan varaston keräilytyö.
 10. Avaa ja tarkista työ. Valitse toimintoruudun **Varasto**-välilehden **Yleinen**-ryhmässä **Työn tiedot**. Kirjoita työn tunnus muistiin.
-11. Kirjaudu sisään varastosovellukseen ja suorita työ varastossa 51.
+11. Kirjaudu sisään varastonhallinnan mobiilisovellukseen ja suorita työ varastossa 51.
 12. Siirry kohtaan **Tuotanto** \> **Tuotannon keräily**.
 13. Aloita ja suorita raaka-aineiden keräily syöttämällä työn tunnus. 
 

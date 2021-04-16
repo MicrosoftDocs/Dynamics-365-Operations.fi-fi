@@ -2,11 +2,9 @@
 title: Varastotilausten pilvi- ja reunapalvelujen scale unitit
 description: Tässä aiheessa käsitellään varastotilausominaisuutta, jota käytetään varaston scale unitin työkuorman osana.
 author: perlynne
-manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556359"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836683"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Varastotilausten pilvi- ja reunapalvelujen scale unitit
 
@@ -38,7 +36,7 @@ ms.locfileid: "5556359"
 
 *Varastotilaukset* ovat tilaustyyppi, joka luotiin tukemaan keskusta ja scale unitia hyödyntäviä varaston käyttöönottoja. Niiden avulla voidaan vastaanottaa varastoa, kun varastotyökuorma suoritetaan scale unitissa. Niitä käytetään tällä hetkellä vain ostotilausten yhteydessä.
 
-Varastotilauksia käytetään varastonhallintaprosessien osana esimerkiksi silloin, kun varastosovelluksella kirjataan fyysinen käytettävissä oleva varasto saapuvan ostotilauksen käsittelyn aikana. Varastotilaukset luodaan *Vapauta varastoon* -prosessin osana. Tätä prosessia voi käyttää ostotilauksissa, jotka määrittävät scale unit -varaston, ja nimikkeissä, joissa varastonhallintaprosessien käyttö on otettu käyttöön.
+Varastotilauksia käytetään varastonhallintaprosessien osana esimerkiksi silloin, kun varastonhallinnan mobiilisovelluksella kirjataan fyysinen käytettävissä oleva varasto saapuvan ostotilauksen käsittelyn aikana. Varastotilaukset luodaan *Vapauta varastoon* -prosessin osana. Tätä prosessia voi käyttää ostotilauksissa, jotka määrittävät scale unit -varaston, ja nimikkeissä, joissa varastonhallintaprosessien käyttö on otettu käyttöön.
 
 > [!IMPORTANT]
 > Varastotilaukset ovat käytettävissä vain käyttöönotoissa, joissa käytetään [varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale uniteja](cloud-edge-workload-warehousing.md).
@@ -70,7 +68,7 @@ Varastotilausrivit peruutetaan seuraavasti:
 
 ## <a name="monitor-a-warehouse-order"></a>Varastotilauksen seuraaminen
 
-**Varastotilausrivit**-näkymässä voi seurata saapuvan vastaanoton etenemistä tarkastelemalla **Jäljellä oleva vastaanotettava määrä** -sarakkeen arvoja. Varastosovelluksella tehtävään työhön liittyviä tietoja voi tarkastella jollakin seuraavista tavoista:
+**Varastotilausrivit**-näkymässä voi seurata saapuvan vastaanoton etenemistä tarkastelemalla **Jäljellä oleva vastaanotettava määrä** -sarakkeen arvoja. Varastonhallinnan mobiilisovelluksella tehtävään työhön liittyviä tietoja voi tarkastella jollakin seuraavista tavoista:
 
 - Valitse **Varastonhallinta \> Kyselyt ja raportit \> Varastotilausrivit** ja etsi rivit suodattimen avulla.
 - Valitse **Hankinta \> Ostotilaukset \> Kaikki ostotilaukset** ja avaa kyseinen ostotilaus. Valitse **Ostotilausrivit**-osassa vähintään yksi rivi ja valitse sitten työkalurivillä **Varasto \> Varaston vastaanottoviennit**.

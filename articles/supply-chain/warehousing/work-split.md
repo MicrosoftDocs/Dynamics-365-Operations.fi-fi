@@ -2,11 +2,9 @@
 title: Työn jako
 description: Tässä aiheessa on tietoja työn jakotoiminnosta. Tällä toiminnolla voidaan jakaa suuret työtilaukset useiksi pieniksi työtilauksiksi, jotka voidaan sitten määrittää useille varastotyöntekijöille. Tällä tavoin useat varastotyöntekijät voivat keräillä samaa työtä samanaikaisesti.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245079"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830759"
 ---
 # <a name="work-split"></a>Työn jako
 
@@ -69,7 +67,7 @@ Ota seuraavaksi *Työn jako* -toiminto, joka ilmaistaan seuraavasti:
 >
 > - Toinen käyttäjä jakaa parhaillaan työtä. Jos yrität avata sellaisen työn jakosivun, jota toinen käyttäjä jo jakaa, seuraava virhesanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan. Yritä uudelleen muutaman minuutin kuluttua. Jos näet tämän sanoman uudelleen, ota yhteys työnjohtajaan.
 
-Uusi työn estosyy, *Jaa työ*, ilmaisee, kun työtunnusta ollaan jakamassa. Se näkyy sekä **Jaa työt** -sivulla että varastosovelluksessa, jos käyttäjä yrittää suorittaa työn. Jos eston syitä käytetään, työtunnuksen **Estetty aalto** -kentän arvoksi vaihtuu **Estetty**.
+Uusi työn estosyy, *Jaa työ*, ilmaisee, kun työtunnusta ollaan jakamassa. Se näkyy sekä **Jaa työt** -sivulla että varastonhallinnan mobiilisovelluksessa, jos käyttäjä yrittää suorittaa työn. Jos eston syitä käytetään, työtunnuksen **Estetty aalto** -kentän arvoksi vaihtuu **Estetty**.
 
 ## <a name="initiate-a-work-split"></a>Työn jaon aloittaminen
 
@@ -147,9 +145,9 @@ Työn jakamisen lopettaminen edellyttää, että *Jaa työ* eston syynä on pois
 
 Kun *Jaa työ* on poistettu eston syynä, työ voidaan suorittaa mobiililaitteessa, mikäli **Estetty**-tilan asetuksena on työtunnuksessa *Ei*.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Käyttäjän estäminen varastosovelluksessa
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Käyttäjien esto varastonhallinnan mobiilisovelluksessa
 
-Jos yrität suorittaa keräilytyön varastosovelluksessa sellaisen tunnuksen osalta, jota jaetaan, seuraava virhesanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan. Jos tämä sanoma avautuu, valitse **Peruuta**. Voit sitten jatkaa muiden töiden käsittelyä.
+Jos yrität suorittaa keräilytyön varastonhallinnan mobiilisovelluksessa sellaisen tunnuksen osalta, jota jaetaan, seuraava virhesanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan. Jos tämä sanoma avautuu, valitse **Peruuta**. Voit sitten jatkaa muiden töiden käsittelyä.
 
 ## <a name="other-blocked-operations"></a>Muut estetyt toiminnot
 

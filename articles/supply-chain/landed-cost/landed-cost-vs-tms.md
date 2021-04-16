@@ -2,7 +2,6 @@
 title: Aiheutunut kustannus vs. kuljetustenhallinta
 description: 'Microsoft Dynamics 365 Supply Chain Management tarjoaa kaksi eri moduulia kuljetusten kanssa työskentelyä varten: kuljetustenhallinnan (TMS) ja aiheutuneen kustannuksen. Tässä ohjeaiheessa on yhteenveto toiminnoista, jotka moduuleilla ovat yhteisiä, ja korostaa niiden väliset erot.'
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500715"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833854"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Aiheutunut kustannus vs. kuljetustenhallinta
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management tarjoaa kaksi eri moduulia kuljetusten kanssa työskentelyä varten: **kuljetustenhallinnan** (TMS) ja **aiheutuneen kustannuksent**. Tässä ohjeaiheessa on yhteenveto toiminnoista, jotka moduuleilla ovat yhteisiä, ja korostaa niiden väliset erot. Voit käyttää näitä tietoja päättääksesi, mikä moduuli sopii parhaiten liiketoimintakäytäntöihin. Saattaa olla, että jotkin liiketoimintakäytännöt toimivat paremmin kuljetustenhallinnan kanssa, kun taas toiset toimivat parhaiten aiheutuneessa kustannuksessa. Sen jälkeen voit liiketoimintavaatimusten mukaan valita yksinomaan yhden moduulin tai voit yhdistää nämä kaksi moduulia.
 
@@ -158,15 +156,15 @@ Sekä kuljetustenhallinta että aiheutunut kustannus tarjoaa toimintoja tuotteid
 
 ### <a name="tms-receiving-by-container-features"></a>Kuljetustenhallinnan vastaanotto kontin mukaan – ominaisuudet
 
-Kuljetustenhallinta tukee saapuvia lähetysilmoituksia, kaikkia vastaanottovariantteja varastosovelluksen kautta sekä kaikkia vastaanottotapoja Supply Chain Management -asiakasohjelman kautta.
+Kuljetustenhallinta tukee saapuvia lähetysilmoituksia, kaikkia vastaanottovariantteja varastonhallinnan mobiilisovelluksen kautta sekä kaikkia vastaanottotapoja Supply Chain Management -asiakasohjelman kautta.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Aiheutuneen kustannuksen vastaanotto kontin mukaan – ominaisuudet
 
 Tukeakseen vastaanottoa kontin mukaan aiheutunut kustannus luo kuljetuskonttitietueita ja liittää ostotilaukset tiettyyn kuljetuskonttiin käyttämällä konttitunnusta. Yleiskustannukset voidaan sitten liittää tähän kuljetuskonttiin ja jakaa niin, että ne liittyvät asianomaisiin ostotilauksiin.
 
-Aiheutuneen kustannuksen kontit voidaan vastaanottaa uudentyyppisen vastaanoton avulla, jota kutsutaan *kuljetettavien tuotteiden vastaanotoksi* saapumisen kirjauskansioiden kautta tai mobiililaitteen vastaanoton kautta. Kun saapumisen kirjauskansioita käytetään, määrät voidaan alustaa kuljetettavien tuotteiden tilauksesta tai kontin alkuperäisistä ostotilausriveistä. Aiheutunut kustannus tarjoaa kaksi työtyyppiä vastaanottoon varastosovelluksen kautta.
+Aiheutuneen kustannuksen kontit voidaan vastaanottaa uudentyyppisen vastaanoton avulla, jota kutsutaan *kuljetettavien tuotteiden vastaanotoksi* saapumisen kirjauskansioiden kautta tai mobiililaitteen vastaanoton kautta. Kun saapumisen kirjauskansioita käytetään, määrät voidaan alustaa kuljetettavien tuotteiden tilauksesta tai kontin alkuperäisistä ostotilausriveistä. Aiheutunut kustannus tarjoaa kaksi työtyyppiä vastaanottoon varastonhallinnan mobiilisovelluksen kautta.
 
-Aiheutunut kustannus ei anna lähetysilmoitusta (ASN) tuotteiden sähköistä vastaanottoa varten. Lisäksi se ei tue varastosovelluksen työnkulkuja, jotka käsittelevät prosessikuormituksen vastaanottoa, rekisterikilven vastaanottoa tai yhdistetyn rekisterikilven vastaanottoa.
+Aiheutunut kustannus ei anna lähetysilmoitusta (ASN) tuotteiden sähköistä vastaanottoa varten. Lisäksi se ei tue varastonhallinnan mobiilisovelluksen työnkulkuja, jotka käsittelevät prosessikuormituksen vastaanottoa, rekisterikilven vastaanottoa tai yhdistetyn rekisterikilven vastaanottoa.
 
 ## <a name="rate-shopping-by-vendor"></a>Hintojen haku toimittajan mukaan
 

@@ -2,11 +2,9 @@
 title: Saapuvien varastotoimintojen vianmääritys
 description: Tässä aiheessa käsitellään sellaisten yleisten ongelmien korjaamista, joita voi esiintyä, kun saapuvia varastotoimintoja käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250879"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828223"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Saapuvien varastotoimintojen vianmääritys
 
@@ -65,5 +63,22 @@ Uusi saapuvan kuorman käsittelyominaisuus *Kuormamäärien ylivastaanottaminen*
 
 Lisätietoja on kohdassa [Kirjattujen tuotemäärien kirjaaminen ostotilauksiin](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Kun rekisteröin saapuvia tilauksia, näyttöön tulee seuraava virhesanoma: Määrä ei kelpaa.
+
+### <a name="issue-description"></a>Ongelman kuvaus
+
+Jos saapuvien tilausten rekisteröimiseen käytettävässä mobiililaitteen valikkokohteessa on määritetty **rekisterikilpien ryhmittelykäytäntö** -kentän arvoksi *Käyttäjän määrittämä*, näkyviin tulee virhesanoma (Määrä ei kelpaa) etkä voi tehdä rekisteröintiä valmiiksi.
+
+### <a name="issue-cause"></a>Ongelman syy
+
+Kun *Käyttäjän määrittämä* -arvoa käytetään rekisterikilpien ryhmittelykäytäntönä, järjestelmä jakaa saapuvan varaston erillisiksi rekisterikilviksi, kuten yksikköjärjestysryhmä määrittää. Jos vastaanotettavan nimikkeen jäljittämiseen käytetään erä- tai sarjanumeroita, kunkin erän tai sarja määrät on määritettävä rekisteröityä rekisterikilpeä kohden. Jos rekisterikilvelle määritetty määrä ylittää määrän, joka on vielä vastaanotettava nykyisille dimensioille, näyttöön tulee virhesanoma.
+
+### <a name="issue-resolution"></a>Ongelman ratkaisu
+
+Kun rekisteröit nimikkeen käyttämällä kannettavan laitteen valikkonimikettä, jossa **Rekisterikilpien ryhmittelykäytäntö** -kentän arvoksi on määritetty *Käyttäjän määrittämä*, järjestelmä saattaa edellyttää, että vahvistat tai määrität rekisterikilpinumerot, eränumerot tai sarjanumerot.
+
+Järjestelmä näyttää rekisterikilven vahvistussivulla määrän, joka on varattu nykyiselle rekisterikilvelle. Järjestelmä näyttää erä- tai sarjavahvistussivuilla määrän, joka on edelleen vastaanotettava nykyiselle rekisterikilvelle. Siihen sisältyy myös kenttä, johon voit syöttää rekisteröitävän määrän tätä rekisterikilven ja erä- tai sarjanumeron yhdistelmää varten. Varmista tässä tapauksessa, että rekisterikilvelle rekisteröitävä määrä ei ylitä vielä vastaanotettavaa määrää.
+
+Vaihtoehtoisesti, jos saapuvan tilauksen rekisteröinnissä luodaan liian monta rekisterikilpeä, **Rekisterikilpien ryhmittelykäytäntö** -kentän arvoksi voidaan muuttaa *Rekisterikilpien ryhmittely*, nimikkeelle voi määrittää uuden yksikköjärjestysryhmän tai yksikköjärjestysryhmän **Rekisterikilpien ryhmittely** -vaihtoehdon aktivointi voidaan poistaa käytöstä.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

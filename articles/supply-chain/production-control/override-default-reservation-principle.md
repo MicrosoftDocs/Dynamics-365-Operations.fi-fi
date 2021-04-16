@@ -2,11 +2,9 @@
 title: Tuotannon materiaalien oletusvarausperiaatteen ohittaminen
 description: Tässä aiheessa käsitellään kunkin nimikemalliryhmän oletusvarausperiaatteen määrittämistä siten, että kussakin tuotannon tuoterakenteen tai erätilauskaavan nimikkeessä käytetään automaattisesti eri varausperiaatetta.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
@@ -16,17 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501099"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814799"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Tuotannon materiaalien oletusvarausperiaatteen ohittaminen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 *Ohita tuotannon oletusvaraus* -toiminnolla voidaan määrittää kunkin nimikemalliryhmän oletusvarausperiaate. Niinpä kussakin tuotannon tuoterakenteen tai erätilauskaavan nimikkeessä käytetään automaattisesti eri varausperiaatetta. Voit valita, ohittaako jokainen nimikemalliryhmä tilaukselle määritetyn oletusvarausperiaatteen ja mitä varausperiaatetta käytetään sen tilalla (*manuaalinen*, *arvio*, *aikataulutus*, *vapautus* tai *aloitus*).
 
