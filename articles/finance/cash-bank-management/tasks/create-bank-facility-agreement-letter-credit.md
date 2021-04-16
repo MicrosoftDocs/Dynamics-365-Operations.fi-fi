@@ -2,11 +2,9 @@
 title: Luo pankin limiittisopimus remburssia varten
 description: Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin käsittelemistä varten.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard
 audience: Application User
@@ -15,40 +13,40 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40d13e996b08efecb19be961c592230567656a4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 582a41a0a4a3c509eae8a05c57b0910446addb26
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225486"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834833"
 ---
-# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="dbd64-103">Luo pankin limiittisopimus remburssia varten</span><span class="sxs-lookup"><span data-stu-id="dbd64-103">Create a bank facility agreement for a letter of credit</span></span>
+# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="05cac-103">Luo pankin limiittisopimus remburssia varten</span><span class="sxs-lookup"><span data-stu-id="05cac-103">Create a bank facility agreement for a letter of credit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="dbd64-104">Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin käsittelemistä varten.</span><span class="sxs-lookup"><span data-stu-id="dbd64-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="dbd64-105">Määritä pankin limiitit ja kirjausprofiilit ennen tätä tehtävää.</span><span class="sxs-lookup"><span data-stu-id="dbd64-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="dbd64-106">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="dbd64-106">This task uses the demo company 'USMF'.</span></span>  
+<span data-ttu-id="05cac-104">Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin käsittelemistä varten.</span><span class="sxs-lookup"><span data-stu-id="05cac-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="05cac-105">Määritä pankin limiitit ja kirjausprofiilit ennen tätä tehtävää.</span><span class="sxs-lookup"><span data-stu-id="05cac-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="05cac-106">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="05cac-106">This task uses the demo company 'USMF'.</span></span>  
 
 
-## <a name="create-bank-facility-agreement"></a><span data-ttu-id="dbd64-107">Pankin limiittisopimuksen luominen</span><span class="sxs-lookup"><span data-stu-id="dbd64-107">Create Bank facility agreement</span></span>
-1. <span data-ttu-id="dbd64-108">Siirry kohtaan Maksuliikenteen hallinta > Remburssit > Pankin limiittisopimukset.</span><span class="sxs-lookup"><span data-stu-id="dbd64-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
-2. <span data-ttu-id="dbd64-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="dbd64-109">Click New.</span></span>
-3. <span data-ttu-id="dbd64-110">Syötä Sopimusnumero-kenttään sopimusnumero pankin kanssa tehdyn sopimuksen mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="dbd64-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
-4. <span data-ttu-id="dbd64-111">Syötä Pankkitili-kenttään liikkeelle laskevan pankin tilinumero.</span><span class="sxs-lookup"><span data-stu-id="dbd64-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
-5. <span data-ttu-id="dbd64-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="dbd64-112">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="dbd64-113">Määritä päivämäärä ja kellonaika Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dbd64-113">In the Start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="dbd64-114">Määritä päivämäärä ja kellonaika Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dbd64-114">In the End date field, enter a date and time.</span></span>
-8. <span data-ttu-id="dbd64-115">Laajenna tai tiivistä Yleiset-osa.</span><span class="sxs-lookup"><span data-stu-id="dbd64-115">Expand or collapse the General section.</span></span>
-9. <span data-ttu-id="dbd64-116">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="dbd64-116">Click Add line.</span></span>
-10. <span data-ttu-id="dbd64-117">Avaa haku valitsemalla Limiittityyppi-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="dbd64-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="dbd64-118">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="dbd64-118">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="dbd64-119">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="dbd64-119">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="dbd64-120">Syötä Raja-kenttään pankin kanssa neuvoteltu limiittisumma.</span><span class="sxs-lookup"><span data-stu-id="dbd64-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
-14. <span data-ttu-id="dbd64-121">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="dbd64-121">Click Save.</span></span>
-15. <span data-ttu-id="dbd64-122">Avaa valintaikkuna valitsemalla Laajenna.</span><span class="sxs-lookup"><span data-stu-id="dbd64-122">Click Extend to open the drop dialog.</span></span>
-16. <span data-ttu-id="dbd64-123">Kirjoita Uusi sopimusnumero -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="dbd64-123">In the New agreement number field, type a value.</span></span>
-17. <span data-ttu-id="dbd64-124">Määritä päivämäärä ja kellonaika Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="dbd64-124">In the End date field, enter a date and time.</span></span>
-18. <span data-ttu-id="dbd64-125">Valitse Laajenna.</span><span class="sxs-lookup"><span data-stu-id="dbd64-125">Click Extend.</span></span>
-19. <span data-ttu-id="dbd64-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="dbd64-126">Close the page.</span></span>
+## <a name="create-bank-facility-agreement"></a><span data-ttu-id="05cac-107">Pankin limiittisopimuksen luominen</span><span class="sxs-lookup"><span data-stu-id="05cac-107">Create Bank facility agreement</span></span>
+1. <span data-ttu-id="05cac-108">Siirry kohtaan Maksuliikenteen hallinta > Remburssit > Pankin limiittisopimukset.</span><span class="sxs-lookup"><span data-stu-id="05cac-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
+2. <span data-ttu-id="05cac-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="05cac-109">Click New.</span></span>
+3. <span data-ttu-id="05cac-110">Syötä Sopimusnumero-kenttään sopimusnumero pankin kanssa tehdyn sopimuksen mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="05cac-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
+4. <span data-ttu-id="05cac-111">Syötä Pankkitili-kenttään liikkeelle laskevan pankin tilinumero.</span><span class="sxs-lookup"><span data-stu-id="05cac-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
+5. <span data-ttu-id="05cac-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="05cac-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="05cac-113">Määritä päivämäärä ja kellonaika Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="05cac-113">In the Start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="05cac-114">Määritä päivämäärä ja kellonaika Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="05cac-114">In the End date field, enter a date and time.</span></span>
+8. <span data-ttu-id="05cac-115">Laajenna tai tiivistä Yleiset-osa.</span><span class="sxs-lookup"><span data-stu-id="05cac-115">Expand or collapse the General section.</span></span>
+9. <span data-ttu-id="05cac-116">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="05cac-116">Click Add line.</span></span>
+10. <span data-ttu-id="05cac-117">Avaa haku valitsemalla Limiittityyppi-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="05cac-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="05cac-118">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="05cac-118">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="05cac-119">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="05cac-119">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="05cac-120">Syötä Raja-kenttään pankin kanssa neuvoteltu limiittisumma.</span><span class="sxs-lookup"><span data-stu-id="05cac-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
+14. <span data-ttu-id="05cac-121">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="05cac-121">Click Save.</span></span>
+15. <span data-ttu-id="05cac-122">Avaa valintaikkuna valitsemalla Laajenna.</span><span class="sxs-lookup"><span data-stu-id="05cac-122">Click Extend to open the drop dialog.</span></span>
+16. <span data-ttu-id="05cac-123">Kirjoita Uusi sopimusnumero -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="05cac-123">In the New agreement number field, type a value.</span></span>
+17. <span data-ttu-id="05cac-124">Määritä päivämäärä ja kellonaika Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="05cac-124">In the End date field, enter a date and time.</span></span>
+18. <span data-ttu-id="05cac-125">Valitse Laajenna.</span><span class="sxs-lookup"><span data-stu-id="05cac-125">Click Extend.</span></span>
+19. <span data-ttu-id="05cac-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="05cac-126">Close the page.</span></span>
 
 
 
