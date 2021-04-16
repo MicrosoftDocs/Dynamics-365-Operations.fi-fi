@@ -1,12 +1,10 @@
 ---
 title: Sähköisen laskutuksen yleiskatsaus
-description: Tässä aiheessa annetaan tietoja sähköisen laskutuksen lisäosasta Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
+description: Tässä aiheessa annetaan tietoja sähköisestä laskutuksesta Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
-manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,23 +15,23 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 381f5ecdb3d6fc909a8350ba28af9fd21152da7a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228786"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839977"
 ---
-# <a name="electronic-invoicing-add-on-overview"></a>Sähköisen laskutuksen yleiskatsaus
+# <a name="electronic-invoicing-overview"></a>Sähköisen laskutuksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin sähköisen laskutuksen lisäosa on lisäosa on äärimmäisen skaalautuva usean vuokraajan palvelu, joka mahdollistaa sähköisten laskuasiakirjojen määritettävän prosessoinnin sekä määritettävän asiakirjanvaihdon. Käsittely- ja integrointisäännöt ovat täysin määritettävissä, ja logiikka suoritetaan Financen ja Supply Chain Managementin ulkopuolella. Palvelu on kohdistettu pääasiassa sähköisten laskujen käsittelyyn yritysten ja valtioiden välisissä skenaarioissa, mutta se voidaan mukauttaa myös muihin tarkoituksiin.
+Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin sähköinen laskutus on lisäosa on äärimmäisen skaalautuva usean vuokraajan palvelu, joka mahdollistaa sähköisten laskuasiakirjojen määritettävän prosessoinnin sekä määritettävän asiakirjanvaihdon. Käsittely- ja integrointisäännöt ovat täysin määritettävissä, ja logiikka suoritetaan Financen ja Supply Chain Managementin ulkopuolella. Palvelu on kohdistettu pääasiassa sähköisten laskujen käsittelyyn yritysten ja valtioiden välisissä skenaarioissa, mutta se voidaan mukauttaa myös muihin tarkoituksiin.
 
-Sähköisen laskutuksen lisäosa voi auttaa seuraavien tavoitteiden saavuttamisessa:
+Sähköinen laskutus voi auttaa seuraavien tavoitteiden saavuttamisessa:
 
 - Nopea ja helppo maa-/aluekohtaisten määritysten käyttöönotto
-- Sähköisen laskutuksen lisäosaratkaisun vakioidut toimeenpanot
+- Sähköisen laskutuksen ratkaisun vakioidut toimeenpanot
 - Parannettu asiakirjahistorian jäljitettävyys
 - Lyhyempi täytäntöönpanosykli
 - Pienemmät kokonaiskustannukset (TCO)
@@ -42,29 +40,29 @@ Sähköisen laskutuksen lisäosa voi auttaa seuraavien tavoitteiden saavuttamise
 - Sisäänrakennettu vienti, tuonti ja integrointi sekä helppo laajennettavuus sähköisten laskuasiakirjojen käsittelyssä
 - Samojen vienti-, tuonti-ja integrointimääritysten helppo uudelleenkäyttö eri yrityksissä
 
-Jos haluat käyttää sähköisen laskutuksen lisäosaa, sinun on asennettava se Microsoft Dynamics Lifecycle Servicesin (LCS) projektistasi. Noudata seuraavaksi määritysmenettelyä, jolla integrointi Financeen tai Supply Chain Managementiin otetaan käyttöön. Lisätietoja: [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
+Jos haluat käyttää sähköistä laskutusta, sinun on asennettava se Microsoft Dynamics Lifecycle Servicesin (LCS) projektistasi. Noudata seuraavaksi määritysmenettelyä, jolla integrointi Financeen tai Supply Chain Managementiin otetaan käyttöön. Lisätietoja: [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="service-availability"></a><a name="availability"></a>Palvelun käytettävyys
 
-Tällä hetkellä sähköisen laskutuksen lisäosa on asiakkaiden käytettävissä esiversio-ohjelman kautta, ja seuraavassa vaiheessa palvelu tulee yleisesti saataville. Koska maa-/aluekohtaisia vaatimuksia koskevat toiminnot saattavat olla rajoitettuja julkaisun eri vaiheissa, kannattaa aina tarkistaa ajantasaisin dokumentaatio, joka käsittelee tuettujen maa-/aluekohtaisten ratkaisujen kattavuutta ja laajuutta.
+Tällä hetkellä sähköinen laskutus on asiakkaiden käytettävissä esiversio-ohjelman kautta, ja seuraavassa vaiheessa palvelu tulee yleisesti saataville. Koska maa-/aluekohtaisia vaatimuksia koskevat toiminnot saattavat olla rajoitettuja julkaisun eri vaiheissa, kannattaa aina tarkistaa ajantasaisin dokumentaatio, joka käsittelee tuettujen maa-/aluekohtaisten ratkaisujen kattavuutta ja laajuutta.
 
-Sähköisen laskutuksen lisäosa otetaan käyttöön seuraavilla Azuren maantieteellisillä alueilla:
+Sähköinen laskutus otetaan käyttöön seuraavilla Azuren maantieteellisillä alueilla:
 
 - Yhdysvallat
 - Eurooppa
 
 > [!NOTE]
-> Sähköisen laskutuksen lisäosa ei tue paikallisia käyttöönottoja.
+> Sähköinen laskutus ei tue paikallisia käyttöönottoja.
 
 ## <a name="extended-configurability"></a>Laajennettu määritettävyys
 
-Sähköisen laskutuksen lisäosaa voidaan käyttää skenaarioissa, joissa on luotava ja lähetettävä sähköinen asiakirja tietyille osapuolille. Se on suunniteltu erityisesti määritettävän prosessointitehtävien kulun suorittamiseen vastaanotettujen tietojen perusteella. Financessa ja Supply Chain Managementissa käytettävissä olevat määritysvaihtoehdot rajoittuvat asiakirjan muuntamiseen. Palvelu laajentaa näitä asetuksia lisäämällä siinä käytettävissä olevat määritettävät integroinnit. Lisäksi kaikki aiemmin käytettävissä olleet sähköisen laskutuksen toiminnot, kuten Brasilian Nota fiscal eletrônica (NF-e), Meksikon Comprobante Fiscal Digital por Internet (CFDI) tai muu Western European Universal Business Language (UBL)- tai Pan-European Public Procurement OnLine (PEPPOL) -toiminto, alkavat käyttää määrityksiä viennille ja tuonnille sekä mahdollistamaan integrointeja ulkoisiin verkkopalveluihin.
+Sähköistä laskutusta voidaan käyttää skenaarioissa, joissa on luotava ja lähetettävä sähköinen asiakirja tietyille osapuolille. Se on suunniteltu erityisesti määritettävän prosessointitehtävien kulun suorittamiseen vastaanotettujen tietojen perusteella. Financessa ja Supply Chain Managementissa käytettävissä olevat määritysvaihtoehdot rajoittuvat asiakirjan muuntamiseen. Palvelu laajentaa näitä asetuksia lisäämällä siinä käytettävissä olevat määritettävät integroinnit. Lisäksi kaikki aiemmin käytettävissä olleet sähköisen laskutuksen toiminnot, kuten Brasilian Nota fiscal eletrônica (NF-e), Meksikon Comprobante Fiscal Digital por Internet (CFDI) tai muu Western European Universal Business Language (UBL)- tai Pan-European Public Procurement OnLine (PEPPOL) -toiminto, alkavat käyttää määrityksiä viennille ja tuonnille sekä mahdollistamaan integrointeja ulkoisiin verkkopalveluihin.
 
 ## <a name="feature-highlights"></a>Toiminnon tärkeimmät ominaisuudet
 
 - Käyttövalmis integrointi Financeen ja Supply Chain Managementiin
 - Yhdenmukainen käyttökokemus kaikkien maiden tai alueiden sähköisen laskutusprosessin määrittämiseen ja seuraamiseen
-- Nopeampi, helpompi ja edullisempi sähköisen laskutuksen lisäosaratkaisujen käyttöönotto uusissa maissa tai uusilla alueilla
+- Nopeampi, helpompi ja edullisempi sähköisen laskutuksen ratkaisujen käyttöönotto uusissa maissa tai uusilla alueilla
 - Palvelun määrittäminen Regulatory Configuration Servicen (RCS) ja globalisointitoiminnon määrityksen kautta
 - Liiketoimintatietojen muuntaminen useisiin sähköisen laskutuksen muotoihin (XML, JavaScript Object Notation \[JSON\], TXT ja pilkuin erotetut arvot \[CSV\]) käyttämällä RCS:ssä määritettyjä määrityksiä:
 
@@ -83,7 +81,7 @@ Sähköisen laskutuksen lisäosaa voidaan käyttää skenaarioissa, joissa on lu
 
 ## <a name="architecture-and-data-flow"></a>Arkkitehtuuri ja tiedonkulku
 
-Kun sähköisen laskutuksen lisäosa asennetaan LCS:stä ja vaaditut määritykset suoritetaan kaikissa tarvittavissa sovelluksissa, muodostetaan suojattu yhteys. Palvelu sijaitsee tällä hetkellä palvelinkeskuksissa Yhdysvalloissa ja Euroopassa. Tämän vuoksi palvelun sijainti voi poiketa liittyvän Financen tai Supply Chain Managementin esiintymän sijainnista. Kun olet suorittanut sähköisen laskutuksen lisäosan määrittämisen ja otat integroinnin käyttöön, tiettyyn asiakirjaan liittyvät päätiedot ja siirtotiedot lähetetään sähköisen laskutuksen lisäosaan aina, kun sähköinen lasku lähetetään.
+Kun sähköinen laskutus asennetaan LCS:stä ja vaaditut määritykset suoritetaan kaikissa tarvittavissa sovelluksissa, muodostetaan suojattu yhteys. Palvelu sijaitsee tällä hetkellä palvelinkeskuksissa Yhdysvalloissa ja Euroopassa. Tämän vuoksi palvelun sijainti voi poiketa liittyvän Financen tai Supply Chain Managementin esiintymän sijainnista. Kun olet suorittanut sähköisen laskutuksen määrittämisen ja otat integroinnin käyttöön, tiettyyn asiakirjaan liittyvät päätiedot ja siirtotiedot lähetetään sähköiseen laskutukseen aina, kun sähköinen lasku lähetetään.
 
 > [!NOTE]
 > Jos sähköinen laskusi tai jokin muu asiakirja sisältää henkilötietoja, varmista, että tämän toiminnon käyttö on yleisen tietosuoja-asetuksen (GDPR) ja muiden henkilötietojen siirtämiseen liittyvien asetusten mukaista.
@@ -98,12 +96,12 @@ Kun sähköisen laskutuksen lisäosa asennetaan LCS:stä ja vaaditut määrityks
 6. Palvelu toimittaa asiakkaalle tarvittaessa tietoja lähetetyn liiketoiminta-asiakirjan käsittelytilasta.
 7. Asiakas saa tietoja valmiiksi saadusta käsittelyn suorituksesta ja asettaa kaikki lokitiedot saataville. Se asettaa saataville myös työnkulun käsittelyn aikana luodun tai vastaanotetun asiakirjan.
 
-Seuraavassa kuvassa näkyy, miten tieto kulkee sähköisen laskutuksen lisäosaan ja sieltä pois.
+Seuraavassa kuvassa näkyy, miten tieto kulkee sähköiseen laskutukseen ja sieltä pois.
 
-![Sähköisen laskutuksen lisäosan tietovuo](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Sähköisen laskutuksen tietovuo](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
-Sähköisen laskutuksen lisäosan käyttöönotto ja käyttö saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten niissä esimääritetyssä muodoissa, jota integrointi valtion verkkopalveluihin edellyttää. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
+Sähköisen laskutuksen käyttöönotto ja käyttö saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten niissä esimääritetyssä muodoissa, jota integrointi valtion verkkopalveluihin edellyttää. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Palvelun hallinta](e-invoicing-service-administration.md)

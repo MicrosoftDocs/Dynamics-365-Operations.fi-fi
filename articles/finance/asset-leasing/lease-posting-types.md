@@ -2,11 +2,9 @@
 title: Vuokrauksen kirjaustyypit
 description: Tässä ohjeaiheessa kuvataan kirjaustyypit, joita käytetään resurssien vuokratapahtumissa.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229499"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841138"
 ---
 # <a name="lease-posting-types"></a>Vuokrauksen kirjaustyypit
 
@@ -90,15 +88,6 @@ Tili on liitetty käyttöoikeusomaisuuserän vastatilille. Tätä tiliä hyvitet
 **Esimerkki kirjauskansiovienneistä:** Poistokertymä<br>
 **Veloitus:** Poistokulu XXX<br>
 **Hyvitys:** Kumulatiivinen poisto XXX
-
-## <a name="retained-earnings"></a>Jakamaton voitto
-
-Kertyneisiin tuottoihin liittyvä tili. Tätä tiliä veloitetaan tai hyvitetään siirtymäoikaisun kirjauskansioviennissä käyttämällä kokonaan takautuvaa menetelmää tai päivittävää kumulatiivista vaihtoehto A -menetelmää. Alkuperäisen käyttöoikeusomaisuuserän ja vuokrasopimusvelan välinen ero kirjataan kertyneisiin tuottoihin. Harvoissa tapauksissa myös vuokrasopimuksen muokkaus vaikuttaa kertyneisiin tuottoihin, jos vuokrasopimuksen luokittelu muutetaan rahoitusleasingsopimuksesta käyttöleasingsopimukseksi ja käyttöoikeusomaisuuserä korotetaan tai alennetaan niin, että se vastaa vuokrasopimusvelkaa.
-
-**Esimerkki kirjauskansiovienneistä:** Siirtymän oikaisu (kokonaan takautuva menetelmä tai päivittävä kumulatiivinen vaihtoehto A -menetelmä)<br>
-**Veloitus:** Vuokrasopimusvelka XXX<br>
-**Hyvitys:** Vuokrasopimuksen resurssi XXX<br>
-**Hyvitys:** Kertynyt tuotto XXX
 
 ## <a name="variable-payment"></a>Muuttuva maksu
 

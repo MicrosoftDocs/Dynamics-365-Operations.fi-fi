@@ -1,12 +1,10 @@
 ---
-title: Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen lisäosan käytön Financessa ja Supply Chain Managementissa.
+title: Brasilian sähköisen laskutuksen käytön aloittaminen
+description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen käytön Financessa ja Supply Chain Managementissa.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,29 +15,27 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: eaf9433ad2d9ccf3d3c5632d0f2d4fe772ff8bde
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: f8caaa6417365a131da0565cbc4a9f79425d0c7e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592667"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840265"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Brasilian sähköisen laskutuksen lisäosan käytön aloittaminen 
+# <a name="get-started-with-electronic-invoicing-for-brazil"></a>Brasilian sähköisen laskutuksen käytön aloittaminen 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa selitetään, miten Brasilian sähköisen laskutuksen lisäosan käyttö voidaan aloittaa. Tämän ohjeaiheen vaiheet ohjaavat sinua niissä konfigurointivaiheissa, jotka ovat maa-/aluekohtaisia Regulatory Configuration Services (RCS) -palveluissa ja täydentävät seuraavsassa ohjeaiheessa kuvattuja vaiheita: [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
+Tässä aiheessa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen käytön. Ohjeaihe ohjaa sinua niissä konfigurointivaiheissa, jotka ovat maa-/aluekohtaisia Regulatory Configuration Services (RCS) -palveluissa ja täydentävät seuraavassa ohjeaiheessa kuvattuja vaiheita: [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Sähköisen laskutuksen maakohtainen konfigurointi Brasilian NF-e (BR) – sähköinen laskutus -ominaisuudelle
 
-Brasilian sähköisen NF-e (BR) -laskutusominaisuuden konfiguroiminen edellyttää, että tietyt vaiheet on suoritettava. Osa konfiguraatioiden parametreista julkaistaan oletusarvoilla, joten ne on tarkistettava ja päivitettävä liiketoimintaasi sopiviksi.
+Osa **Brasilian NF-e (BR) – sähköinen laskutus** -ominaisuuden parametreista julkaistaan oletusarvoilla. Tarkista ja päivitä tarvittaessa arvot liiketoimintasi tarpeisiin sopivaksi, ennen kuin otat sähköisen laskutuksen käyttöön ominaisuuden palveluympäristössä.
 
-### <a name="prerequisites"></a>Edellytykset
+Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
-Ennen kuin suoritat tämän osan menettelyn, luo organisaatiollesi Brasilian sähköisen NF-e (BR) -laskutuksen toiminto, kuten on kuvattu ohjeaiheen [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md) **Luo organisaation palveluntarjoajassa sähköisen laskutuksen ominaisuus** -osassa.
-
-1. Valitse RCS:ssä **Globalisaatio-ominaisuudet**-työtilan **Toiminnot**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
-2. Varmista **Sähköisen laskutuksen laajennuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Brasilian NF-e (BR)** -ominaisuus on valittuna.
+1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
+2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Brasilian NF-e (BR)** -ominaisuus on valittuna.
 3. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittuna.
 4. Valitse **Asetukset**-välilehden ruudukosta **Lähetä** ja valitse sitten **Muokkaa**.
 5. Valitse **Toiminnot**-välilehden **Toiminnot**-kenttäryhmästä **(Esiversio) Allekirjoita XML-tiedosto** -toiminto.
@@ -49,18 +45,16 @@ Ennen kuin suoritat tämän osan menettelyn, luo organisaatiollesi Brasilian sä
 9. Tarkista ja päivitä tarvittaessa **Arvo**-kentässä osavaltiosi SEFAZ-dokumentaatiossa julkaisemien Internet-palveluiden URL-osoite ja valitse sitten **Tallenna**.
 10. Tarkista ja päivitä **Sovellettavuussäännöt**-välilehden **Sovellettavuussäännön määritys** -kenttäryhmän **Osavaltio**-kentän ehdot tarpeen mukaan samalle osavaltiolle, johon Internet-palveluiden URL-osoitteessa viitataan.
 11. Valitse **Tallenna** ja sulje sivu.
-12. Tietoja sovelluksen asetusten määrittämisestä on kohdassa [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
+12. Lisätietoja sähköisen laskutuksen ominaisuuden käyttöönotosta palveluympäristössä on kohdassa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-application-setup-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Sovellusmäärityksen sähköisen laskutuksen maakohtainen konfigurointi Brasilian NF-e (BR) – sähköinen laskutus -ominaisuudelle
 
-Sovellusmäärityksen Brasilian sähköisen NF-e (BR) -laskutusominaisuuden konfiguroiminen edellyttää, että tietyt vaiheet on suoritettava. Suorita nämä vaiheet, ennen kuin otat sähköisen laskutusominaisuuden käyttöön sähköisen laskutuksen laajennuksen palveluympäristössä.
+Suorita nämä vaiheet, ennen kuin otat sovelluksen määritykset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa.
 
-### <a name="prerequisites"></a>Edellytykset
+Tämä os täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
-Ennen kuin suoritat tämän osan menettelyn, luo ja käynnistä sovellusmäärityksen Brasilian sähköisen NF-e (BR) -laskutuksen toiminto, kuten on kuvattu ohjeaiheen [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md) **Sovellusmäärityksen määritys** -osassa.
-
-1. Valitse RCS:ssä **Globalisaatio-ominaisuudet**-työtilan **Toiminnot**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
-2. Varmista **Sähköisen laskutuksen laajennuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Brasilian NF-e (BR)** -ominaisuus on valittuna.
+1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus* -ruutu.
+2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Brasilian NF-e (BR)** -ominaisuus on valittuna.
 3. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittuna.
 4. Valitse **Asetukset**-välilehden **Sovelluksen asetukset** -vaihtoehto ja valitse **Yhdistetty sovellus** -kentästä sovellus, jossa haluat ottaa käyttöön.
 5. Tarkista **Taulukon nimi** -kentässä, onko **Veroasiakirjan otsikko** valittuna.
@@ -71,18 +65,16 @@ Ennen kuin suoritat tämän osan menettelyn, luo ja käynnistä sovellusmäärit
 10. Valitse **Uusi** ja kirjoita **Vastaustyyppi**-kenttään "ResponseData" kiinteänä arvona ja kirjoita **Kuvaus**-kenttään "Description".
 11. Valitse **Lähetystila**-kentässä **Odottaa**.
 12. Valitse **Mallin yhdistämismääritys** -kentässä **Vastaustietojen tuonti** ja **(Esiversio) NFe-vastaustietojen tuontimuoto (BR)** ja valitse sitten **Tallenna**.
-13. Lisätietoja sähköisen laskutuksen ominaisuuden käyttöönotosta on kohdassa [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
+13. Jos haluat ottaa sovelluksen asetukset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa, katso ohjetta [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nfs-e-abrasf-curitiba-br-electronic-invoicing-feature"></a>Sähköisen laskutuksen maakohtainen konfigurointi Brasilian NFS-e ABRASF Curitiba (BR) – sähköinen laskutus -ominaisuudelle
 
-Brasilian sähköisen NFS-e ABRASF Curitiba (BR) -laskutusominaisuuden konfiguroiminen edellyttää, että tietyt vaiheet on suoritettava. Osa konfiguraatioiden parametreista julkaistaan oletusarvoilla, joten ne on tarkistettava ja päivitettävä liiketoimintaasi sopiviksi.
+Osa **Brasilian NFS-e ABRASF Curitiba (BR) – sähköinen laskutus** -ominaisuuden parametreista julkaistaan oletusarvoilla. Tarkista ja päivitä tarvittaessa arvot liiketoimintasi tarpeisiin sopivaksi, ennen kuin otat sähköisen laskutuksen käyttöön ominaisuuden palveluympäristössä.
 
-### <a name="prerequisites"></a>Edellytykset
+Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
-Ennen kuin suoritat tämän osion vaiheet, luo organisaatiollesi sähköisen laskutuksen NFS-e ABRASF Curitiba (BR) -toiminto. Tämä on kuvattu ohjeaiheessa **Sähköisen laskutuksen ominaisuuden konfiguroiminen** -osassa ohjeaiheessa [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
-
-1. Valitse RCS:ssä **Globalisaatio-ominaisuudet**-työtilan **Toiminnot**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
-2. Varmista **Sähköisen laskutuksen laajennuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Brasilian NFS-e ABRASF Curitiba (BR)** -ominaisuus on valittuna.
+1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
+2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Brasilian NFS-e ABRASF Curitiba (BR)** -ominaisuus on valittuna.
 3. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittu ja valitse **Asetukset**-välilehden ruudukosta **Lähetä**.
 4. Valitse **Muokkaa** ja valitse **Toiminnot**-välilehden **Toiminnot**-kenttäryhmästä **(Esiversio) Allekirjoita XML-tiedosto** -toiminnon ensimmäinen esiintymä.
 5. Valitse **Parametrit**-kenttäryhmästä **Varmenteen nimi**.
@@ -98,18 +90,16 @@ Ennen kuin suoritat tämän osion vaiheet, luo organisaatiollesi sähköisen las
 15. Valitse **Parametrit**-kenttäryhmästä **URL-osoite**-parametri.
 16. Tarkista ja päivitä tarvittaessa **Arvo**-kentässä osavaltiosi Curitiban kaupungin vero-osaston julkaisemien Internet-palveluiden URL-osoite.
 17. Valitse **Tallenna** ja sulje sitten sivu.
-18. Tietoja sovelluksen asetusten määrittämisestä on kohdassa [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md).
+18. Lisätietoja sähköisen laskutuksen ominaisuuden käyttöönotosta palveluympäristössä on kohdassa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-application-setup-for-brazilian-nfs-e-abrasf-curitiba-br-electronic-invoicing-feature"></a>Sovellusmäärityksen sähköisen laskutuksen maakohtainen konfigurointi Brasilian NFS-e ABRASF Curitiba (BR) – sähköinen laskutus -ominaisuudelle
 
-Sähköisen lakutuksen Brazilian NFS-e ABRASF Curitiba (BR) -ominaisuuden sovellusmäärityksen määrittämiseksi on suoritettava tietyt vaiheet, ennen kuin otat sähköisen laskutusominaisuuden käyttöön sähköisen laskutuksen laajennuksen palveluympäristössä.
+Suorita nämä vaiheet, ennen kuin otat sovelluksen määritykset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa.
 
-### <a name="prerequisites"></a>Edellytykset
+Tämä os täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
-Ennen kuin suoritat tämän osan menettelyn, luo ja käynnistä Brasilian sähköisen NFS-e ABRASF Curitiba (BR) -laskutuksen toiminto, kuten on kuvattu ohjeaiheen [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md) **Sovellusmäärityksen määritys** -osassa.
-
-1. Valitse RCS:ssä **Globalisaatio-ominaisuudet**-työtilan **Toiminnot**-osassa **Sähköisen laskutuksen lisäosa** -ruutu.
-2. Varmista **Sähköisen laskutuksen laajennuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Brasilian NFS-e ABRASF Curitiba (BR)** -ominaisuus on valittuna.
+1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
+2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Brasilian NFS-e ABRASF Curitiba (BR)** -ominaisuus on valittuna.
 3. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittu ja valitse **Asetukset**-välilehdestä **Sovellusmääritys**.
 4. Valitse **Yhdistetty sovellus** -kentästä sovellus, jossa haluat ottaa käyttöön.
 5. Tarkista **Taulukon nimi** -kentässä, onko veroasiakirjan otsikko valittuna.
@@ -123,7 +113,8 @@ Ennen kuin suoritat tämän osan menettelyn, luo ja käynnistä Brasilian sähk�
 13. Valitse **Uusi** ja kirjoita **Vastaustyyppi**-kenttään "ABRASFCuritibaInquireResponse" kiinteänä arvona ja kirjoita **Kuvaus**-kenttään "Description".
 14. Valitse **Lähetystila**-kentässä **Odottaa**.
 15. Valitse **Mallin yhdistämismääritys** -kentässä **Vastausviestien tuonti** ja **(Esiversio) NFS-e ABRASF Curitiba -vastausviestien tuonti (BR)**.
-16. Valitse **Tallenna** ja palaa ohjeaiheeseen [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md) ottaaksesi sähköisen laskutuksen ominaisuuden käyttöön.
+16. Valitse **Tallenna** ja sulje sivu.
+17. Jos haluat ottaa sovelluksen asetukset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa, katso ohjetta [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 **NF-e Federal - Brasilian sähköinen lasku (BR)**- ja **NFS-e - Brasilian palvelun (kaupunki) sähköinen lasku** -ominaisuuksien ottaminen käyttöön saattaa edellyttää rajoitettujen tietojen lähettämistä, mukaan lukien organisaation verorekisteröintitunnus. Tiedot välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvojana voit ottaa käyttöön tai poistaa käytöstä **NF-e Federal - Brasilian sähköinen lasku (BR)**- ja **NFS-e - Brasilian palvelun (kaupunki) sähköinen lasku** -ominaisuuden. Toimi seuraavasti: 
@@ -133,9 +124,9 @@ Ennen kuin suoritat tämän osan menettelyn, luo ja käynnistä Brasilian sähk�
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Sähköisen laskutuksen lisäosan yleiskatsaus](e-invoicing-service-overview.md)
-- [Sähköisen laskutuksen lisäosan palvelun hallinnan aloittaminen](e-invoicing-get-started-service-administration.md)
-- [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md)
+- [Sähköisen laskutuksen yleiskatsaus](e-invoicing-service-overview.md)
+- [Sähköisen laskutuksen palvelun hallinnan aloittaminen](e-invoicing-get-started-service-administration.md)
+- [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

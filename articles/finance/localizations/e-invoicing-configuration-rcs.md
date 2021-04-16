@@ -1,12 +1,10 @@
 ---
-title: Sähköisen laskutuksen lisäosan konfiguroiminen Regulatory Configuration Servicesissä (RCS)
-description: Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen lisäosan määrittämisestä.
+title: Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
+description: Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen määrittämisestä.
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,32 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592619"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840241"
 ---
-# <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen lisäosan konfiguroiminen Regulatory Configuration Servicesissä (RCS)
+# <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen konfigurointiominaisuuksista.
 
-Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen lisäosan konfigurointiominaisuuksista.
-
-Sähköisen laskutuksen lisäosa auttaa sähköisten laskujen liiketoiminta- ja sääntelyvaatimusten saavuttamisessa tarvitsematta tehdä koodausta. Skenaarioissa, joissa verkkopalveluiden on hyväksyttävä sähköiset laskut sähköisesti, konfigurointiominaisuudet auttavat myös viestinvaihdossa verkkopalvelujen kanssa ilman koodia.
+Sähköinen laskutus auttaa sähköisten laskujen liiketoiminta- ja sääntelyvaatimusten saavuttamisessa tarvitsematta tehdä koodausta. Skenaarioissa, joissa verkkopalveluiden on hyväksyttävä sähköiset laskut sähköisesti, konfigurointiominaisuudet auttavat myös viestinvaihdossa verkkopalvelujen kanssa ilman koodia.
 
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
 
-Sähköinen raportointi (ER) tukee sähköisen laskutuksen lisäosaa.
+Sähköinen raportointi (ER) tukee sähköistä laskutusta.
 
-Tietomallien määritys ja muodot ovat konfiguroitavissa olevia komponentteja, jotka luodaan ja ylläpidetään ER:n kautta ja joita käytetään sähköisen laskutuksen lisäosassa. ER-muotosuunnittelu on työkalu, jolla luodaan ja ylläpidetaan tiedostomuotoja. Sitä käytetään sähköisen laskutuksen ominaisuuksien konfiguroinnissa.
+Tietomallien määritys ja muodot ovat konfiguroitavissa olevia komponentteja, jotka luodaan ja ylläpidetään ER:n kautta ja joita käytetään sähköisessä laskutuksessa. ER-muotosuunnittelu on työkalu, jolla luodaan ja ylläpidetaan tiedostomuotoja. Sitä käytetään sähköisen laskutuksen ominaisuuksien konfiguroinnissa.
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin (ER) yleiskuvaus](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="electronic-invoicing-features"></a>Sähköisen laskutuksen ominaisuudet
 
-Sähköisen laskutuksen ominaisuudet vastaavat sähköisten laskujen luomisesta sähköisen laskutuksen lisäosan kautta. Ne keräävät konfiguraatiosäännöt ja käyttävät niitä niiden tietojen käsittelemiseen, joita Microsoft Dynamics 365 Finance ja Dynamics 365 Supply Chain Management lähettävät sähköiseen laskujen lisäosaan ja sähköisiin laskuihin.
+Sähköisen laskutuksen ominaisuudet vastaavat sähköisten laskujen luomisesta sähköisen laskutuksen kautta. Ne keräävät konfiguraatiosäännöt ja käyttävät niitä niiden tietojen käsittelemiseen, joita Microsoft Dynamics 365 Finance ja Dynamics 365 Supply Chain Management lähettävät sähköiseen laskutukseen ja sähköisiin laskuihin.
 
 Toiminnot tukevat myös skenaarioita, joissa tiedostomuotomääritysten säännöstenmukaisuus on pakollista ja tulostus on erillinen sähköinen tiedosto. Useimmissa tapauksissa veroviranomainen julkaisee tiedostomuotomääritykset.
 
@@ -81,13 +77,13 @@ Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat es
 
 Sähköisen laskutuksen ominaisuudet koostuvat seuraavista konfiguroitavissa olevien komponenttien ryhmistä:
 
-- **Muodot** – Muotojen avulla voit määrittää, mitä sähköisen laskutuksen lisäosan on luotava, kun sähköisestä asiakirjasta tulee sähköinen lasku. Muotoja ovat sähköisen laskun muotomääritys sekä tiedostojen ja sanomien muoto, joita käytetään pyyntöjen lähettämiseen ja vastausten vastaanottamiseen, kun ulkoisen Internet-palvelun kanssa tarvitaan viestintää.
-- **Toiminnot** – Toimintojen avulla voit määrittää, miten sähköisen laskutuksen lisäosa luo sähköisen tiedoston muuntamisen, jonka Finance ja Supply Chain Management ovat lähettäneet sähköiseksi laskuksi.
-- **Käytettävyyssäännöt** – Käytettävyyssääntöjen avulla voit konfiguroida kontekstin, jonka sähköisen laskutuksen lisäosan on otettav huomioon käsiteltäessä sähköisen laskutuksen ominaisuutta.
-- **Muuttujat** – Muuttujien avulla voit määrittää konfiguraatiologiikan rakenteen tuen. Muuttujia voidaan käyttää arvojen syötteenä tietyn toiminnon suorittamiseen. Vaihtoehtoisesti ne voivat toimia arvojen vaihdossa Financen ja Supply Chain Managementin sekä sähköisen laskutuksen lisäosan välillä.
-- **Sähköisen tiedostomallin määritys** – Sähköisen asiakirjamallin määrityksen avulla voit konfiguroida ER-mallimäärityksen. Mallimääritys määrittää abstraktin laskun tietomäärityksen, joka integroidaan sähköiseen laskutuksen lisäosaan sähköisiä tiedostoja lähetettäessä.
+- **Muodot** – Muotojen avulla voit määrittää, mitä sähköisen laskutuksen on luotava, kun sähköisestä asiakirjasta tulee sähköinen lasku. Muotoja ovat sähköisen laskun muotomääritys sekä tiedostojen ja sanomien muoto, joita käytetään pyyntöjen lähettämiseen ja vastausten vastaanottamiseen, kun ulkoisen Internet-palvelun kanssa tarvitaan viestintää.
+- **Toiminnot** – Toimintojen avulla voit määrittää, miten sähköinen laskutus luo sähköisen tiedoston muuntamisen, jonka Finance ja Supply Chain Management ovat lähettäneet sähköiseksi laskuksi.
+- **Käytettävyyssäännöt** – Käytettävyyssääntöjen avulla voit konfiguroida kontekstin, jonka sähköisen laskutuksen on otettava huomioon käsiteltäessä sähköisen laskutuksen ominaisuutta.
+- **Muuttujat** – Muuttujien avulla voit määrittää konfiguraatiologiikan rakenteen tuen. Muuttujia voidaan käyttää arvojen syötteenä tietyn toiminnon suorittamiseen. Vaihtoehtoisesti ne voivat toimia arvojen vaihdossa Financen ja Supply Chain Managementin sekä sähköisen laskutuksen välillä.
+- **Sähköisen tiedostomallin määritys** – Sähköisen asiakirjamallin määrityksen avulla voit konfiguroida ER-mallimäärityksen. Mallimääritys määrittää abstraktin laskun tietomäärityksen, joka integroidaan sähköiseen laskutukseen sähköisiä tiedostoja lähetettäessä.
 - **Laskun kontekstimalli** – Laskun kontekstimallin avulla voit konfiguroida ER-laskun kontekstimallin ja määrittää sähköisen laskutusominaisuuden kontekstin.
-- **Vastaustyypit** – Vastaustyyppien avulla voit konfiguroida, mitä sähköisen laskutuksen lisäosan on päivitettävä Financessa ja Supply Chain Managementissa sähköisen laskun käsittelyn tuloksena.
+- **Vastaustyypit** – Vastaustyyppien avulla voit konfiguroida, mitä sähköisen laskutuksen on päivitettävä Financessa ja Supply Chain Managementissa sähköisen laskun käsittelyn tuloksena.
 
 ### <a name="formats"></a>Muodot
 
@@ -237,7 +233,7 @@ Sähköiset laskutusominaisuusversiot seuraavat elinkaarta, jossa voi olla kolme
 
 - **Luonnos** – Jos toimintoversio on tässä tilassa, voit muokata sen konfigurointimääritteitä ja sen artefakteja (esimerkiksi tiedostomuodon konfiguraatioita).
 - **Valmis** – Jos toimintoversio on tässä tilassa, se on julkaistu organisaatioosi liittyvässä yleisessä tietovarastossa. Et voi enää muokata toimintoversiota tai ER-komponentteja.
-- **Julkaistu** – Jos toimintoversio on tässä tilassa, se on julkaistu sähköisen laskutuksen lisäosassa. Et voi enää muokata toimintoversiota tai ER-komponentteja.
+- **Julkaistu** – Jos toimintoversio on tässä tilassa, se on julkaistu sähköisessä laskutuksessa. Et voi enää muokata toimintoversiota tai ER-komponentteja.
 
 ### <a name="feature-configurations"></a>Ominaisuuden konfiguraatiot
 
@@ -266,14 +262,14 @@ Sovelluksen asetusten avulla voit konfiguroida sähköisen laskutusominaisuuden 
 
 RCS:ssä käytetään **Ota käyttöön** -komentoa sähköisen laskutusominaisuusversion julkaisemiseen. Valitse **Ota käyttöön** ja määritä käyttöönoton kohde valitsemalla jokin seuraavista vaihtoehdoista: 
 
-- **Palveluympäristö** – Kun käyttöönoton kohde on palveluympäristö, sähköisen laskutuksen ominaisuusversio julkaistaan palveluympäristössä. Sähköisen laskutuksen lisäosa on tämän jälkeen valmis vastaanottamaan ja käsittelemään sähköisiä asiakirjoja, jotka Finance ja Supply Chain Management lähettävät.
+- **Palveluympäristö** – Kun käyttöönoton kohde on palveluympäristö, sähköisen laskutuksen ominaisuusversio julkaistaan palveluympäristössä. Sähköinen laskutus on tämän jälkeen valmis vastaanottamaan ja käsittelemään sähköisiä asiakirjoja, jotka Finance ja Supply Chain Management lähettävät.
 - **Yhdistetty sovellus** – Kun kohde on liitetty sovellus, sovelluksen asetusten konfiguraatio on kirjoitettu aiemmin siihen liittyvässä Financen ja Supply Chain Managementin esiintymässä.
 
 Vain sähköisiä laskutustoiminnon versioita, joiden tila on **Valmis**, voidaan ottaa käyttöön joko palveluympäristössä tai liitetyssä sovelluksessa.
 
 ### <a name="removing-feature-versions"></a>Toimintoversioiden poistaminen
 
-RCS:ssä käytetään **Poista käytöstä** -komentoa tietyn sähköisen laskutusominaisuuden version poistamiseen palveluympäristöstä sähköisen laskutuksen lisäosassa.
+RCS:ssä käytetään **Poista käytöstä** -komentoa tietyn sähköisen laskutusominaisuuden version poistamiseen palveluympäristöstä sähköisessä laskutuksessa.
 
 > [!IMPORTANT]
 > **Poista käytöstä** -komento toimii vain palveluympäristöissä. Se ei poista sähköisiä laskutusominaisuusversioita yhdistetyistä sovelluksista.

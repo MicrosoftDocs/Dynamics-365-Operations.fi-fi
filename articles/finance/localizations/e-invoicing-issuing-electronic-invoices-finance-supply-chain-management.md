@@ -1,12 +1,10 @@
 ---
 title: Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa
-description: Tässä aiheessa selitetään, miten sähköisen laskutuksen lisäosan kautta lähetetään sähköisiä laskuja Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
+description: Tässä aiheessa selitetään, miten sähköisen laskutuksen kautta lähetetään sähköisiä laskuja Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
-manager: AnnBe
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,29 +15,27 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 8d6ef59b64a96e13bdc2e5ddf299ef7ab98e105c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5486950"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840073"
 ---
-# <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Sähköisten laskujen lähettäminen Financessa ja Supply Chain Managementissa
+# <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Sähköisten laskujen luominen Financessa ja Supply Chain Managementissa
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
-Tässä aiheessa selitetään, miten sähköisen laskutuksen lisäosan kautta lähetetään sähköisiä laskuja Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
+Tässä aiheessa selitetään, miten sähköisen laskutuksen kautta lähetetään sähköisiä laskuja Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 
 
 ## <a name="feature-activation"></a>Ominaisuuden aktivointi
 
-Sähköisten laskujen lähettämiseksi sähköisen laskutuksen lisäosan kautta on aktivoitava Financen ja Supply Chain Managementin toiminto.
+Sähköisten laskujen lähettämiseksi sähköisen laskutuksen kautta on aktivoitava Financen ja Supply Chain Managementin toiminto.
 
 Jokainen toiminto vastaa tiettyä sähköistä laskutustoimintoa, joka vastaa maan/alueen sähköisen laskutuksen vaatimuksia.
 
-Seuraavassa taulukossa on luettelo toiminnoista, joita sähköisen laskutuksen lisäosa tukee.
+Seuraavassa taulukossa on luettelo toiminnoista, joita sähköinen laskutus tukee.
 
 | Nimi                                              | Maa tai alue |
 |---------------------------------------------------|----------------|
@@ -60,19 +56,19 @@ Seuraavassa taulukossa on luettelo toiminnoista, joita sähköisen laskutuksen l
 |Norjan sähköinen lasku                       |Norja          |
 |Espanjan sähköinen lasku                         |Espanja           |
 
-Kun käytössä on vanha sähköinen laskutustoiminto, jota maan tai alueen maakohtainen laajuus tukee, yhden toiminnon aktivoiminen ottaa vanhan ominaisuuden pois käytöstä ja ottaa käyttöön sähköisten laskujen toimituksen sähköisen laskutuksen lisäosan kautta.
+Kun käytössä on vanha sähköinen laskutustoiminto, jota maan tai alueen maakohtainen laajuus tukee, yhden toiminnon aktivoiminen ottaa vanhan ominaisuuden pois käytöstä ja ottaa käyttöön sähköisten laskujen toimituksen sähköisen laskutuksen kautta.
 
 > [!IMPORTANT]
-> Kun sähköisen laskutuksen lisäosan integrointiominaisuus on otettu käyttöön, uusi sähköinen laskutuskokemus on oletusarvon mukaan poissa käytöstä. Toimintokäsite mahdollistaa uusien kokemusten valikoivan käyttöönoton yrityksille, jotka käyttävät maa-/aluekohtaista toiminnallisuutta. **Yleinen**-vaihtoehto ohjaa muiden kuin taulussa lueteltujen maiden/alueiden uutta käyttökokemusta.
+> Kun sähköisen laskutuksen integrointiominaisuus on otettu käyttöön, uusi sähköinen laskutuskokemus on oletusarvon mukaan poissa käytöstä. Toimintokäsite mahdollistaa uusien kokemusten valikoivan käyttöönoton yrityksille, jotka käyttävät maa-/aluekohtaista toiminnallisuutta. **Yleinen**-vaihtoehto ohjaa muiden kuin taulussa lueteltujen maiden/alueiden uutta käyttökokemusta.
 
 ## <a name="submit-electronic-documents"></a>Lähetä sähköiset asiakirjat
 
-Sähköisten asiakirjojen lähettämisen prosessi edustaa Financen ja Supply Chain Managementin sekä sähköisen laskutuksen lisäosan välistä yhden yhteyspisteen viestintää. Viestintä kulkee kunkin lähetystapahtuman aikana molempiin suuntiin:
+Sähköisten asiakirjojen lähettämisen prosessi edustaa Financen ja Supply Chain Managementin sekä sähköisen laskutuksen välistä yhden yhteyspisteen viestintää. Viestintä kulkee kunkin lähetystapahtuman aikana molempiin suuntiin:
 
-- **Financesta ja Supply Chain Managementista sähköisen laskutuksen lisäosaan** – Finance ja Supply Chain Management lähettää abstraktit laskut sähköiseen laskutuksen lisäosaan. Tarvittaessa ohjelma lähettää myös niiden muuttujien sisällön, jotka on konfiguroitu osana sähköisen laskutuksen ominaisuuksia.
-- **Sähköisen laskutuksen lisäosasta Financeen ja Supply Chain Managementiin** – Finance ja Supply Chain Management saa aiemmin lähetettyjen laskujen käsittelyn tuloksia koskevat päivitykset sähköisen laskutuksen lisäosasta sähköisen laskutuksen toiminnosta riippuen. Ne myös vastaanottavat niiden muuttujien sisällön, jotka on konfiguroitu osana sähköisen laskutuksen ominaisuuksia.
+- **Financesta ja Supply Chain Managementista sähköiseen laskutukseen** – Finance ja Supply Chain Management lähettää abstraktit laskut sähköiseen laskutukseen. Tarvittaessa ohjelma lähettää myös niiden muuttujien sisällön, jotka on konfiguroitu osana sähköisen laskutuksen ominaisuuksia.
+- **Sähköisestä laskutuksesta Financeen ja Supply Chain Managementiin** – Finance ja Supply Chain Management saa aiemmin lähetettyjen laskujen käsittelyn tuloksia koskevat päivitykset sähköisestä laskutuksesta sähköisen laskutuksen toiminnosta riippuen. Ne myös vastaanottavat niiden muuttujien sisällön, jotka on konfiguroitu osana sähköisen laskutuksen ominaisuuksia.
 
-Sähköisten tiedostojen lähettäminen sähköisen laskutuksen lisäosaan: siirry Financessa ja Supply Chain Managementissa kohtaan **Organisaation hallinto &gt; Kausittainen &gt; Sähköiset asiakirjat &gt; Lähetä sähköiset asiakirjat**.
+Sähköisten tiedostojen lähettäminen sähköiseen laskutukseen siirry Financessa ja Supply Chain Managementissa kohtaan **Organisaation hallinto &gt; Kausittainen &gt; Sähköiset asiakirjat &gt; Lähetä sähköiset asiakirjat**.
 
 Lähtökohtana on kirjattu lasku. Lasku voi olla peräisin eri lähteistä, esimerkiksi myyntitilauksista, projektilaskuista tai vapaatekstilaskuista.
 
@@ -83,25 +79,25 @@ Lähetysprosessi voidaan suorittaa manuaalisesti tai taustalla.
 
 ## <a name="view-the-submission-logs"></a>Lähetyslokien tarkastelu
 
-Financessa ja Supply Chain Managementissa voit lähetyslokien avulla tarkastella sähköisen laskutuksen lisäosaan lähettämisen käsittelyn tuloksia. Siirry kohtaan **Organisaation hallinto &gt; Kausittainen &gt; Sähköiset asiakirjat &gt; ESähköisen asiakirjan lähetys** ja valitse sitten **Asiakirjatyyppi**-kentässä arvo, jola suodatetaan lokien näyttämien laskujen tyyppi.
+Financessa ja Supply Chain Managementissa voit lähetyslokien avulla tarkastella sähköiseen laskutukseen lähettämisen käsittelyn tuloksia. Siirry kohtaan **Organisaation hallinto &gt; Kausittainen &gt; Sähköiset asiakirjat &gt; ESähköisen asiakirjan lähetys** ja valitse sitten **Asiakirjatyyppi**-kentässä arvo, jola suodatetaan lokien näyttämien laskujen tyyppi.
 
 Lähetystiloja voi olla kolme:
 
-- **Ajoitettu** – Sähköisen laskutuksen lisäosa vastaanotti lähetyksen Financesta ja Supply Chain Managementista, ja sähköisen laskutuksen toiminto on käynnissä.
-- **Valmis** – Sähköisen laskutuksen lisäosa on käsitellyt sähköisen laskutuksen ominaisuuden onnistuneesti siinä muodossa, jossa se on määritetty suoritettavaksi.
-- **Epäonnistunut** – Sähköisen laskutuksen lisäosa kohtasi virheen tai se pysäytettiin poikkeuksesta käsiteltäessä sähköistä laskutustoimintoa.
+- **Ajoitettu** – Sähköinen laskutus vastaanotti lähetyksen Financesta ja Supply Chain Managementista, ja sähköisen laskutuksen toiminto on käynnissä.
+- **Valmis** – Sähköinen laskutus on käsitellyt sähköisen laskutuksen ominaisuuden onnistuneesti siinä muodossa, jossa se on määritetty suoritettavaksi.
+- **Epäonnistunut** – Sähköinen laskutus kohtasi virheen tai se pysäytettiin poikkeuksesta käsiteltäessä sähköistä laskutustoimintoa.
 
 > [!IMPORTANT]
-> Lähetyksen tila viittaa sen käsittelyn tilaan, jota sähköisen laskutuksen lisäosa tekee sähköisessä laskutusominaisuudessa. Se ei viittaa itse sähköisen laskun lopulliseen tilaan.
+> Lähetyksen tila viittaa sen käsittelyn tilaan, jota sähköinen laskutus tekee sähköisessä laskutusominaisuudessa. Se ei viittaa itse sähköisen laskun lopulliseen tilaan.
 >
-> Jos esimerkiksi sähköinen lasku on toimitettava ulkoiseen verkkopalveluun hyväksyttäväksi, lähetyksen tila voi olla **Valmis**, mutta sähköisen laskun tila voi olla **Hylätty**. Tässä tapauksessa sähköisen laskutuksen lisäosa pystyi käsittelemään sähköisen laskutuksen ominaisuuden onnistuneesti siinä muodossa, jossa se on määritetty käsittelemään kyseistä ominaisuutta. Sähköinen lasku on kuitenkin hylätty, koska se ei täytä laskun hyväksyntää varten määritetyn verkkopalvelun ehtoja.
+> Jos esimerkiksi sähköinen lasku on toimitettava ulkoiseen verkkopalveluun hyväksyttäväksi, lähetyksen tila voi olla **Valmis**, mutta sähköisen laskun tila voi olla **Hylätty**. Tässä tapauksessa sähköinen laskutus pystyi käsittelemään sähköisen laskutuksen ominaisuuden onnistuneesti siinä muodossa, jossa se on määritetty käsittelemään kyseistä ominaisuutta. Sähköinen lasku on kuitenkin hylätty, koska se ei täytä laskun hyväksyntää varten määritetyn verkkopalvelun ehtoja.
 
 Lähetyslokit sisältävät seuraavat lisätoiminnot:
 
 - **Lähetystiedot** – Tarkastele päälähetyksen tietoja. Visualisoinnissa näkyy sähköisessä laskutusominaisuudessa konfiguroitujen toimintojen täydellinen suoritusloki. Lisäksi käyttäjät voivat ladata käsittelyn aikana luodut tiedostot. Jos ulkoisen verkkopalvelun on hyväksyttävä lasku, käyttäjät voivat tarkastella laskun tilaa.
 - **Liittyvät lähetykset** – Tarkastele alilähetysten tietoja.
 - **Peruuta lähetyksiä** – Tämä toiminto mahdollistaa erityisen lähetysprosessin tilanteissa, joissa ulkoisen verkkopalvelun on hyväksyttävä sähköinen lasku. Se ohjeistaa sähköistä laskutusta lähettämään verkkopalveluun tietyn sanoman, joka on tarkoitettu hyväksytyn sähköisen laskun tilan peruuttamiseen verkkopalvelun tietokannassa.
-- **Lähetä asiakirja uudelleen** – Lähetä uudelleen sähköinen asiakirja, joka on jo lähetetty sähköisen laskutuksen lisäosaan. **Lähetyksen tiedot** -sivulla luodaan kokonaan uusi loki.
+- **Lähetä asiakirja uudelleen** – Lähetä uudelleen sähköinen asiakirja, joka on jo lähetetty sähköiseen laskutukseen. **Lähetyksen tiedot** -sivulla luodaan uusi loki.
 - **Lähetä liittyvä lähetys**
 
 
