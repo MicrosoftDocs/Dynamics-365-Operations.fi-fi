@@ -1,27 +1,26 @@
 ---
 title: Talousraporttien raportointipuiden määritykset
 description: Tässä artikkelissa käsitellään raportointipuiden määrityksiä. Raportointipuun määritys on raporttiosa, joka määrittää organisaation rakenteen.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568772"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819935"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Talousraporttien raportointipuiden määritykset
 
@@ -74,7 +73,7 @@ Voit luoda raportointipuun määrityksen seuraavien vaiheiden avulla.
     | Sisällytä / merkin sijainti       | Tässä osassa on luettelo taloushallinnon tiedoissa määritetyt dimensiot ja näyttää kunkin dimension pisimmän määritetyn arvon merkkien määrän. Valitse raportointipuuhierarkian dimensioon sisällytettävän dimension valintaruutu. |
     | Segmenttihierarkia ja -alueet     | Tämä osa näyttää dimensiohierarkian. Voit siirtää luettelon dimensioita, jos haluat muuttaa raportointijärjestystä. Voit määrittää kunkin dimension arvoalue **Dimensiosta**- ja **Dimensioon**-kentissä. Jos et määritä aluetta, kaikki dimension arvot lisätään raportointipuuhun.<blockquote>[!NOTE] Jos käytät useampaa kuin yhtä dimensiota, hauissa palautetaan vain ne dimensioyhdistelmät, joihin on kirjattu.</blockquote> |
 
-    Jos haluat nähdä näyttökuvan, jossa on esimerkki **Lisää raportointiyksiköt dimensioista** -valintaikkunasta, katso tässä artikkelissa jäljempänä olevaa osaa Esimerkki lisää raportointiyksiköt dimensioista -valintaruudusta.
+    Jos haluat nähdä kuvan, jossa on esimerkki **Lisää raportointiyksiköt dimensioista** -valintaikkunasta, katso tässä artikkelissa jäljempänä olevaa osaa Esimerkki lisää raportointiyksiköt dimensioista -valintaruudusta.
 
 5. Voit luoda lisäsegmenttejä (esimerkiksi jakaa yhden segmentin kahdeksi lyhyemmäksi segmentiksi) valitsemalla oikean kohdan **Merkin sijainti** -kentässä ja valitsemalla sitten **Jaa segmentit**.
 6. Voit yhdistää kaksi segmenttiä yhdeksi segmentiksi valitsemalla jommankumman segmenttiruudun ja valitsemalla sitten **Yhdistä segmentit**.
@@ -186,23 +185,23 @@ Tämä on seuraavan raportointiyksikön raportointiyksiköiden rakenne:
 - Alimman tason tietojen raportointiyksiköt (Home Sales, Auto Sales, Client Services ja Operations) edustavat taloushallinnon tietojen osastoja. Nämä raportointiyksiköt näkyvät kaavion varjostetulla alueella.
 - Korkeamman tason yhteenvetotietojen yksiköt sisältävät erittelytietojen yksiköiden yhteenvetotietoja.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso-yhteenvetoraportin rakenne – esimerkki 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Raportointiyksikön rakenne – esimerkki 2
 
 Seuraavan kaavion raportointiyksikössä on yritystoimintojen perusteella jaettu organisaatiorakenne.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso-yhteenvetoraportin rakenne – esimerkki 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Esimerkki Raportointiyksiköiden lisääminen dimensioista -valintaikkunasta
 
 Seuraavassa kuvassa on esimerkki **Lisää raportointiyksiköitä dimensioista** -valintaikkunasta. Tässä esimerkissä tulokset palauttavat liiketoimintayksiköiden, kustannuspaikkojen ja osastojen yhdistelmän.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Lisää raporttiyksiköitä](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Tuloksena on raportointipuu, joka lajitellaan ensin liiketoimintoyksikön, sitten kustannuspaikan ja lopuksi osaston mukaan. Viidennen raportointiyksikön dimensio on **Liiketoimintayksikkö = \[001\], Kustannuspaikka = \[\], Osasto = \[022\]** ja se tunnistaa liiketoimintayksikölle 001 ja osastolle 022 kuuluvien tilien raportointiyksikön.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Kuva raportointipuusta](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Esimerkkejä tietojen koonnista
 
@@ -210,15 +209,15 @@ Seuraavassa esimerkissä on koottujen tietojen raportointipuun määrityksessä 
 
 #### <a name="example-1"></a>Esimerkki 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Usean yrityksen koonti](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Esimerkki 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Yritysten välisten osastojen koonti](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Talousraportointi](financial-reporting-intro.md)
+[Taloushallinnon raportointi](financial-reporting-intro.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

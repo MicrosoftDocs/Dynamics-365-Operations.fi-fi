@@ -2,11 +2,9 @@
 title: Kirjojen määrä kirjauskansiota kohti
 description: Tässä ohjeaiheessa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta. Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f266e458802e65f0955ae8f8933f9bee2eca972
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e948b4353d0216f1e09019a98319e343bd535861
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256712"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822030"
 ---
 # <a name="number-of-books-per-journal"></a>Kirjojen määrä kirjauskansiota kohti
 
@@ -43,11 +41,14 @@ Eräkäsittelyn avulla voidaan suorittaa poistot samasta hankittujen käyttöoma
 
 Eräkäsittelytyö sulkee pois suljetut kirjat. Esimerkiksi poistojen eräajossa 10 ensimmäistä kirjaa 2 000 kirjasta on suljettu. Tässä tapauksessa ensimmäinen kirjauskansio sisältää kirjoja, jotka on liitetty käyttöomaisuuseriksi, joiden numero on 1-2 011. Toinen kirjauskansio sisältää kirjoja, jotka on liitetty käyttöomaisuuseriksi, joiden numero on 2 012–4 000.
 
+> [!NOTE]
+> Jos sinulla on käyttöomaisuustunnuksen, joilla on eri erottimet (kuten – tai /), ja luot käyttöomaisuustapahtumia eräajoissa, kullekin erotintyypille on tehtävä erillinen eräajo. Järjestelmä ei voi käsitellä eri erottimia samassa eräajossa.
+
 Kirjojen määrää rajoitetaan, jos samassa kirjauskansiossa ei ole päällekkäisiä käyttöomaisuuerien tunnuksia. Jos käyttöomaisuuserän tunnus on kuitenkin sama kuin kirjan tunnus, kirjauskansion kirjojen määrä voidaan ylittää, jotta käyttöomaisuustunnus säilyy samassa kirjauskansiossa.
 
 Jos esimerkiksi käyttöomaisuustunnuksia on 5 001, kuhunkin käyttöomaisuustunnukseen liitetään kolme kirjaa ja kukin käyttöomaisuuskirja kirjataan samalle kirjaustasolle. Poisto suoritetaan kolmen peräkkäisen kuukauden ajan ilman yhteenvetoa.  Poistokirjauskansio luodaan erätyönä, ja järjestelmä luo seitsemän kirjauskansiota, joissa on 667 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Tuloksena on 2 001 kirjaa. Tämän vuoksi kolmen kuukauden aikana on 6 003 kirjauskansioriviä ylläpitävät samoja käyttöomaisuustunnuksia samassa kirjauskansiossa. Järjestelmä luo myös yhden kirjauskansion, jossa on 332 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Kolmessa kuukaudessa saadaan 2 988 riviä.
 
-> [!Note] 
+> [!NOTE] 
 > Jos **Tee yhteenveto poistoista** -parametri on käytössä poistoehdotusta luotaessa, **Kirjojen määrä kirjauskansiota kohti – poistoehtotus** -kentän arvolla ei ole vaikutusta. Tässä tapauksessa kirjauskansiokohtainen kirjamäärä on 6 000 eli sisäinen määritetty raja.
 
 
