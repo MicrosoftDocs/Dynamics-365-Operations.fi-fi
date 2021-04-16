@@ -2,7 +2,6 @@
 title: Ylitys-/alitustapahtumat
 description: Tässä ohjeaiheessa on tietoja, jotka auttavat ylitys-/alitustapahtumien käytäntöjen tietojen määrittämisessä, jotta järjestelmä voi määrittää, miten tuotteiden yli- ja alikäsittelyä hallitaan vastaanoton hetkellä.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500979"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833734"
 ---
 # <a name="overunder-transactions"></a>Ylitys-/alitustapahtumat
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Kun matkan tilaukset on käsitelty, järjestelmä odottaa lopullisessa kohdevarastossa käytettäväksi vastaanotetun nimikemäärän vastaavan määrää, joka on määritetty matkaan liittyvillä ostotilausriveillä. Koska ostotilausrivien tarkkaa määrää ei kuitenkaan aina vastaanoteta varastoon, **Aiheutunut kustannus** -moduuli määrittää sääntöjoukon, jota käytetään liiallisen tai liian vähäisen tuotemäärän vastaanoton käsittelyyn. Nämä säännöt ovat erityisen tärkeitä, koska alkuperäinen ostotilaus on laskutettu eikä sitä enää voi muuttaa. Kun ylitys-/alitustapahtumien käytäntöjen tiedot määritetään, järjestelmä voi määrittää, miten tuotteiden yli- ja alikäsittelyä hallitaan vastaanoton hetkellä. Voit hallita liiallista tai liian vähäistä varastoa myös käyttämällä **Ylitys-/alitustapahtumat**-sivua.
 

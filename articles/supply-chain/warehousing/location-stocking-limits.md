@@ -2,11 +2,9 @@
 title: Sijainnin varastointirajoitukset
 description: Tässä aiheessa käsitellään sijainnin varastointirajoituksia.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e336b54b894669f8a49091473314e1d7d2639e5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b9fb3c35f2f2e0fd7c0e3afe132efb4c51f163a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216978"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831263"
 ---
 # <a name="location-stocking-limits"></a>Sijainnin varastointirajoitukset
 
@@ -83,7 +81,7 @@ Tässä esimerkissä suoritetaan ostotilauksen vastaanoton työnkulku kahdelle r
 
 Ensimmäinen vastaanotettu määrä on *4*, yksikkö *KL* ja koko *S*. Tarkista luodun työn sijainnin asetusrivi. Seuraava vastaanotettu määrä on *4*, yksikkö *KL* ja koko *L*. Tarkista luodun työn sijainnin asetusrivi.
 
-1. Kirjaudu varastosovelluksessa sisään käyttämällä lukua *24* käyttäjätunnuksena ja lukua *1* salasanana.
+1. Kirjaudu varastonhallinnan mobiilisovelluksessa sisään käyttämällä lukua *24* käyttäjätunnuksena ja lukua *1* salasanana.
 1. Valitse **Saapuva** \> **Oston vastaanotto**.
 1. Vastaanotto: *4* *KL*, nimiketunnus *D0013*, koko *S*.
 1. Tarkista luotu hyllytystyö. Tuloksen pitäisi olla seuraava:

@@ -2,11 +2,9 @@
 title: Kassavirtaennusteiden asetusten vianmääritys
 description: Tässä aiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, kun määrität kassavirtaennusteita. Se käsittelee usein kysyttyjä kysymyksiä kassavirran asetuksista, kassavirran päivityksistä ja kassavirran Power BI -ominaisuuksista.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232486"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827311"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Kassavirtaennusteiden asetusten vianmääritys
 
@@ -47,11 +45,19 @@ Useita vaiheita on suoritettava, ennen kuin kassavirtaennusteet voivat näkyä P
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Miksi kassavirran Power BI toimi aiemmissa versioissa, mutta on nyt tyhjä?
 
-Tarkista, että yksikkösäilön mitat "Kassavirran mitta V2" ja "LedgerCovLiquidityMeasurement" on konfiguroitu. Lisätietoja yksikkösäilön tietojen tarkastelemista varten on ohjeessa [Power BI:n integrointi yksikkösäilön kanssa](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Varmista, että kaikki Power BI -sisällön tarkastelemisen edellyttämät vaiheet on suoritettu. Lisätietoja on kohdassa [Kassayhteenvedon Power BI -sisältö](Cash-Overview-Power-BI-content.md).
+Tarkista, että yksikkösäilön mitat "Kassavirran mitta V2" ja "LedgerCovLiquidityMeasurement" on konfiguroitu. Lisätietoja yksikkösäilön tietojen ksäittelystä on kohdassa [Power BI:n ja yksikkösäilön integrointi](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Varmista, että kaikki Power BI -sisällön tarkastelemiseen tarvittavat vaiheet on suoritettu. Lisätietoja on kohdassa [Kassayhteenvedon Power BI -sisältö](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Onko yksikkösäilön entiteetit päivitetty?
 
 Entiteetit on päivitettävä säännöllisesti, jotta tiedot ovat ajan tasalla ja oikein. Jos haluat päivittää tietyn yksikön manuaalisesti, siirry kohtaan **Järjestelmänvalvonta \> Määritys \> Yksikkösäilö** valitse yksikkö ja sitten **Päivitä**. Tiedot voidaan myös päivittää automaattisesti. Määritä **Yksikkösäilö**-sivulla **Automaattinen päivitys käytössä** -asetuksen arvoksi **Kyllä**.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Mitä laskentamenetelmää tulisi käyttää kassavirtaennusteita laskettaessa?
+
+Kassavirtaennusteen laskentamenetelmässä on kaksi tärkeää valintavaihtoehtoa. **Uusi**-vaihtoehto laskee kassavirtaennusteet uusille asiakirjoille ja asiakirjoille, jotka ovat muuttuneet edellisen eräajon jälkeen. Tämä asetus suoritetaan yleensä nopeammin, koska se käsittelee pienemmän asiakirjajoukon. **Yhteensä**-vaihtoehto laskee uudelleen kassavirtaennusteet järjestelmän jokaiselle asiakirjalle. Tämä vaihtoehto vie enemmän aikaa, koska sillä on enemmän työtä suoritettavana.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Miten parannan kassavirtaennusteen toistuva eräajon suorituskykyä?
+
+Suosittelemme, että kassavirtaennuste suoritetaan kerran päivässä ruuhka-aikojen ulkopuolella **Uusi**-laskentamenetelmällä. Suosittelemme käyttämään tätä lähestymistapaa 6 päivänä viikossa. Suorita sitten kassavirtaennuste kerran viikossa käyttämällä **Yhteensä**-laskentamenetelmää päivänä, jolloin on vähiten aktiviteettia.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

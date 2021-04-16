@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.16 (helmikuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.16 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f9eb0685fcefe5d0734dc01fa82971958c3952d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236072"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829977"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.16 (helmikuu 2021)
 
@@ -35,11 +33,13 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
+Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
 - [Mukautettava tuotannon käyttöliittymä](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Lisätietoja on kohdassa [Laitteen määrittäminen suorittamaan tuotannon käyttöliittymä](../production-control/production-floor-execution-setup.md).
 
 - [Dynamics 365 Supply Chain Managementin varaston näkyvyyden lisäosa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Lisätietoja on kohdassa [Varaston näkyvyyden lisäosa](../inventory/inventory-visibility.md)
+
+- Työtunnusten yhdistetty numerosarja<br> - Lisätietoja: [Työtunnusten yhdistetty numerosarja](../production-control/unified-job-ids.md).
 
 - [Rekisterikilpien tarkistaminen lähdeasiakirjan rivien perusteella](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Lisätietoja on kohdassa [Varastomäärityksen yleiskatsaus](../warehousing/warehouse-configuration.md).
 
@@ -74,8 +74,8 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 - [Varastonhallinnan varausten vianmääritys](../warehousing/troubleshoot-warehouse-reservations.md)
 - [Myyntitilauksiin liittyvien ongelmien vianmääritys](../sales-marketing/troubleshooting-sales.md)
 - [Myyntitarjouksiin liittyvien ongelmien vianmääritys](../sales-marketing/troubleshooting-salesquotation.md)
-- [Edistyneeseen varastonhallintaan päivittämisen ja siirtymisen vianmääritys](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Varastosovelluksen yhteysongelmien vianmääritys](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Päivityksen vianmääritys ja siirto edistyneeseen varastonhallintaan](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
+- [Varastonhallinnan mobiilisovelluksen yhteysongelmien vianmääritys](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Varaston määrityksen vianmääritys](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Varaston täydennyksen vianmääritys](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Varaston asetusten vianmääritys](../warehousing/troubleshoot-warehouse-setup.md)

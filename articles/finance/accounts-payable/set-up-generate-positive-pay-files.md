@@ -2,11 +2,9 @@
 title: Positive pay -tiedostojen määrittäminen ja luominen
 description: Tässä ohjeaiheessa käsitellään Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista.
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7d1520828bc626784f1555d8878a1fdad1bd5b9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f96e34b8d94f9e83afb39d6ad97aca85386b458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227373"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830709"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Positive pay -tiedostojen määrittäminen ja luominen
 
@@ -140,6 +138,9 @@ Positive pay -tiedostot luodaan käyttämällä tietoyksiköitä. Ennen Positive
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> XSLT-tiedoston XML-nimien on vastattava XML-solmujen kirjainkokoa. Sekä XSLT- että XML-tiedostoissa kirjainkoolla on merkitystä. 
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Positive pay -muodon määrittäminen pankkitileille
 Jokaiselle pankkitilille, jolle haluat luoda Positive pay -tiedot, on määritettävä edellisessä toimenpiteessä määritetty Positive pay -muoto. Valitse **Pankkitilit**-sivulla Positive pay -muoto, joka vastaa pankkitiliä. Lisää **Positive pay -aloituspäivä** -kenttään ensimmäinen päivämäärä, jona Positive pay -tiedostot luodaan. On tärkeää, että tähän kenttään määritetään päivämäärä. Muussa tapauksessa ensimmäinen luomasi Positive pay -tiedosto sisältää kaikki pankkitilille luodut sekit.

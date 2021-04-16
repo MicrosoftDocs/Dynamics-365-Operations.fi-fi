@@ -2,13 +2,11 @@
 title: Materiaalipoikkeusten näkyvyys
 description: Tässä aiheessa käsitellään tuotantotilausten ja erätilausten materiaalipoikkeusten näkyvyyden parantamista.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246162"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831983"
 ---
 # <a name="visibility-into-material-exceptions"></a>Materiaalipoikkeusten näkyvyys
 
@@ -59,7 +57,11 @@ Kun valitse ruudun, **Vapauta varastoon** -sivu avautuu. Tällä sivulla näkyy 
 
 Kun tuoterakenne- tai reseptirivi vapautetaan, se lisätään joko uuteen tuotantoaaltoon tai aiemmin luotuun avoimeen aaltoon tuotantoaaltomallin määritysten mukaan. Voit määrittää aaltomallin määrityksissä aallon myös siten, että se käsitellään automaattisesti, kun tuoterakenne- tai reseptirivi vapautetaan. Kun aalto käsitellään, raaka-aineen keräilylle luodaan varastotyö. Jos aaltomalli on määritetty siten, että aaltoja ei käsitellä vapautuksen yhteydessä, aalto jää käsittelemättömään tilaan. **Käsittelemättömät aallot, jotka vaativat huomiota** -ruudussa on näkyvissä tuoterakenne- ja reseptirivit, jotka on vapautettu varastoon käsittelemättöminä aaltoina ja joiden raaka-aineen päivämäärä on sama tai aiempi kuin työtilan päivämäärä. Lisäksi sen toimintoresurssin on kulutettava rivit, joka käyttää työtilan suodatinta.
 
-Kun ruutu on valittu, kun **Kaikki tuotantoaallot** -sivu avautuu. Tämä sivu suodatetaan niiden avoimien aaltojen määrällä, joissa on ruudun ehdot täyttäviä vapautettujen tuoterakenne- ja kaavarivien aaltorivejä. Voit käsitellä aallon manuaalisesti **Kaikki tuotantoaallot** -sivulla.
+Kun ruutu on valittu, kun **Kaikki tuotantoaallot** -sivu avautuu. Tämä sivu suodatetaan niiden avoimien aaltojen määrällä, joissa on ruudun ehdot täyttäviä vapautettujen tuoterakenne- ja kaavarivien aaltorivejä.
+
+### <a name="manually-maintain-production-waves"></a>Tuotantoaaltojen manuaalinen ylläpito
+
+**Kaikki tuotantoaallot** -sivulla voit käyttää toimintoruudun **Aalto**-välilehden painikkeita manuaalisiin aaltotoimintoihin **Käsittele** ja **Vapauta**. **Ylläpidä tuotantoja** -vaihtoehdon avulla voit myös tarkastella ja ylläpitää **Prod BOM Pool** -tietoja, joita käytetään aaltoprosessin käsittelyssä.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Avoin varastotyö, joka vaatii huomiota
 

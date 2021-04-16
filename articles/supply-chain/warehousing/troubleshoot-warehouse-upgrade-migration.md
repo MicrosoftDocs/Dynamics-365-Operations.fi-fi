@@ -2,11 +2,9 @@
 title: Edistyneeseen varastonhallintaan päivittämisen ja siirtymisen vianmääritys
 description: Tässä aiheessa käsitellään yleisten edistyneeseen varastonhallintaan päivittämisen ja siirtymisen ongelmien korjaamista.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208084"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826392"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Edistyneeseen varastonhallintaan päivittämisen ja siirtymisen vianmääritys
 
@@ -34,11 +32,11 @@ Tässä aiheessa käsitellään yleisten edistyneeseen varastonhallintaan päivi
 
 ### <a name="issue-description"></a>Ongelman kuvaus
 
-Tämä virhesanoma avautuu varastointisovelluksessa, koska itse allekirjoitettuihin varmenteisiin ei tueta paikallisissa Android 8+ -ympäristöissä.
+Tämä virhesanoma avautuu varastonhallinnan mobiilisovelluksessa, koska itse allekirjoitettuihin varmenteisiin ei tueta paikallisissa Android 8+ -ympäristöissä.
 
 ### <a name="issue-resolution"></a>Ongelman ratkaisu
 
-Käytä ulkoista (julkista) varmenteiden myöntäjää. Tämän varastointisovelluksen ongelman korjaus on saatavana versiossa 1.9.0.0. Lisätietoja tästä ongelmasta ja sen korjaamisesta on kohdassa [Varastosovelluksen yhteysongelmien vianmääritys](troubleshoot-warehouse-app-connection.md).
+Käytä ulkoista (julkista) varmenteiden myöntäjää. Tämän varastointisovelluksen ongelman korjaus on saatavana versiossa 1.9.0.0. Lisätietoja tästä ongelmasta ja sen korjaamisesta on kohdassa [Varastonhallinnan mobiilisovelluksen yhteysongelmien vianmääritys](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Mikä on hyväksytty prosessi siirryttäessä perusvarastoinnista edistyneeseen varastointiin?
 
