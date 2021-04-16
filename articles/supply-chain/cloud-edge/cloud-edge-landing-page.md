@@ -2,11 +2,9 @@
 title: Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit
 description: Tässä aiheessa on lisätietoja valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Uniteista.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fb0d8e0226b11e93503979c202da917de1df6319
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240434"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836707"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit
 
@@ -124,10 +122,10 @@ Lisätietoja on kohdassa [Tuotannon scale unitin kuormitustiedot](cloud-edge-wor
 Varastonhallinnan pilvi- ja reunapalvelujen scale uniteissa on seuraavat ominaisuudet myös silloin, kun reunapalvelujen yksiköt eivät ole yhteydessä pilvipalveluun:
 
 - Valittujen aaltomenetelmien käsittely on otettu käyttöön myyntitilauksissa ja kysynnän täydennyksessä.
-- Varastotyöntekijät voivat suorittaa myynnin ja kysynnän täydennyksen varastotyön käyttämällä varastosovellusta.
-- Varastotyöntekijät voivat tehdä varastosovelluksella kyselyjä käytettävissä olevasta varastosta.
-- Varastotyöntekijät voivat luoda ja suorittaa varastosiirtoja varastosovelluksella.
-- Varastotyöntekijät voivat rekisteröidä ostotilauksia ja tehdä hyllytyksiä varastosovelluksella.
+- Varastotyöntekijät voivat suorittaa myynnin ja kysynnän täydennyksen varastotyön käyttämällä varastonhallinnan mobiilisovellusta.
+- Varastotyöntekijät voivat tehdä varastonhallinnan mobiilisovelluksella kyselyjä käytettävissä olevasta varastosta.
+- Varastotyöntekijät voivat luoda ja suorittaa varastosiirtoja varastonhallinnan mobiilisovelluksella.
+- Varastotyöntekijät voivat rekisteröidä ostotilauksia ja tehdä hyllytyksiä varastonhallinnan mobiilisovelluksella.
 
 Lisätietoja on kohdassa [Varaston scale unitin kuormitustiedot](cloud-edge-workload-warehousing.md).
 

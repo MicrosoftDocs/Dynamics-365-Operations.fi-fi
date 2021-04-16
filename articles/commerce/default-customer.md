@@ -2,11 +2,9 @@
 title: Oletusasiakkaan luominen
 description: Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477897"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799176"
 ---
 # <a name="create-a-default-customer"></a>Oletusasiakkaan luominen
 
@@ -67,14 +65,14 @@ Seuraavassa kuvassa näkyy esimerkki osoitekirjasta.
 
 ![Osoitekirja](media/address-book.png)
 
-## <a name="create-a-default-customer"></a>Oletusasiakkaan luominen
+## <a name="create-a-default-customer&quot;></a>Oletusasiakkaan luominen
 
 Luo oletusasiakas noudattamalla seuraavia ohjeita.
 
 1. Valitse siirtymisruudussa **Moduulit \> Retail ja Commerce \> Asiakkaat \> Kaikki asiakkaat**.
 1. Valitse toimintoruudussa **Uusi**.
-1. Valitse avattavasta **Tyyppi**-luettelosta "Henkilö".
-1. Valitse tai syötä avattavassa **Asiakastili**-luettelossa tilinumero (esim. "100001").
+1. Valitse avattavasta **Tyyppi**-luettelosta &quot;Henkilö&quot;.
+1. Valitse tai syötä avattavassa **Asiakastili**-luettelossa tilinumero (esim. &quot;100001").
 1. Valitse tai syötä avattavassa **Etunimi**-valikossa nimi (esim. "Oletus").
 1. Valitse tai syötä avattavassa **Toinen etunimi**-valikossa nimi (esim. "Vähittäiskauppa").
 1. Valitse tai syötä avattavassa **Sukunimi**-valikossa nimi (esim. "Asiakas").

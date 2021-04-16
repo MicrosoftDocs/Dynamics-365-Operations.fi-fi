@@ -1,12 +1,10 @@
 ---
-title: Dynamics 365 Supply Chain Managementin esiversio 10.0.17 (huhtikuu 2021)
+title: Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.17 (huhtikuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.17 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 985879ef765bf3074387a909d508f0f93a4771ed
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571809"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813168"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Managementin esiversio 10.0.17 (huhtikuu 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.17 (huhtikuu 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.17 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.761. Se on käytettävissä seuraavasti:
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.17 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.761. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esiversio:** helmikuu 2021
 - **Julkaisun yleinen saatavuus (oma päivitys):** maaliskuu 2021
@@ -36,9 +33,9 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
+Tämä julkaisu sisältää seuraavat toiminnot.  Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
-Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista saattaa vielä olla esiversioita, vaikka useimmat ovat nyt yleisesti saatavana.
 
 ### <a name="asset-management"></a>Resurssien hallinta
 
@@ -68,9 +65,13 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 - [Varastonhallinnan mobiilisovellus](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Lisätietoja: [Varastonhallintasovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md) ja [Mobiililaitteiden käyttäjäasetukset](../warehousing/mobile-device-user-settings.md).
 
+- Aallon suoritusilmoitukset<br> - Lisätietoja: [Aallon suoritusilmoitukset](../warehousing/wave-execution-notifications.md).
+
 ### <a name="manufacturing"></a>Valmistus
 
-- [Resurssien hallinnan ominaisuudet tuotannon käyttöliittymässä](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md).
+- [Resurssien hallinnan ominaisuudet tuotannon käyttöliittymässä](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
+
+- Työtunnusten yhdistetty numerosarja<br> - Lisätietoja on kohdassa 
 
 - [Oletusvarausperiaatteen ohittaminen tuotannossa oleville materiaaleille](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Lisätietoja on kohdassa [Tuotannon materiaalien oletusvarausperiaatteen ohittaminen](../production-control/override-default-reservation-principle.md)
 

@@ -2,11 +2,9 @@
 title: Varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale unitit
 description: Tässä aiheessa on tietoja toiminnossa, jonka avulla scale unitit voivat suorittaa valittuja prosesseja varastonhallinnan kuormituksesta.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580962"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832391"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -70,7 +68,7 @@ Keskus omistaa seuraavat tiedot:
 - Tilausten kohdistus ja lähtevän kuorman käsittely
 - Vapautus varastoon, lähetyksen luonti-, aallon luonti- ja aallon viimeistelyprosessit
 
-Scale unitit omistavat varsinaisen aalloin käsittelyn (kuten työn kohdistamisen, täydennystyön ja kysynnän työn luonnin) aallon vapautuksen jälkeen. Niinpä varastotyöntekijät voivat käsitellä lähtevän työn käyttämällä scale unitiin yhdistettyä varastosovellusta.
+Scale unitit omistavat varsinaisen aalloin käsittelyn (kuten työn kohdistamisen, täydennystyön ja kysynnän työn luonnin) aallon vapautuksen jälkeen. Niinpä varastotyöntekijät voivat käsitellä lähtevän työn käyttämällä Scale Unitiin yhdistettyä varastonhallinnan mobiilisovellusta.
 
 ![Aallon käsittelyn työnkulku](./media/wes-wave-processing-ga.png "Aallon käsittelyn työnkulku")
 
@@ -94,7 +92,7 @@ Sinun täytyy kirjautua keskukseen käyttääksesi *Vapauta varastoon* -prosessi
 
 Kun käytät **Ostotilausten automaattinen vapautus** -prosessia, voit valita haluamasi ostotilausrivit kyselyn perusteella. Tyypillinen tilanne on määrittää toistuva erätyö, joka vapauttaa kaikki vahvistetut ostotilausrivit, joiden odotetaan saapuvan seuraavana päivänä.
 
-Työntekijä voi suorittaa vastaanottoprosessin käyttämällä scale unitiin yhdistettyä varastosovellusta. Tiedot kirjataan sitten scale unitin mukaan ja raportoidaan saapuvan varastotilauksen perusteella. Scale unit käsittelee myös myöhemmin tehtävän hyllytyksen luonnin ja käsittelyn.
+Työntekijä voi suorittaa vastaanottoprosessin käyttämällä Scale Unitiin yhdistettyä varastonhallinnan mobiilisovellusta. Tiedot kirjataan sitten scale unitin mukaan ja raportoidaan saapuvan varastotilauksen perusteella. Scale unit käsittelee myös myöhemmin tehtävän hyllytyksen luonnin ja käsittelyn.
 
 Jos *varastoon vapauttamisen* prosessi ei ole käytössä, jolloin myöskään *varastotilaukset* eivät ole käytössä, keskus voi käsitellä varaston vastaanoton ja työn käsittelyn erillään scale uniteista.
 
@@ -117,10 +115,10 @@ Käyttäjille, jotka toimivat varastopäällikköinä sekä keskuksessa että sc
 Seuraavat varastonohjausprosessit voidaan ottaa käyttöön scale unitin WES-kuormituksessa:
 
 - Myynti- ja siirtotilausten valitut aaltomenetelmät (kohdistus, kysynnän täydennys, konttiinpakkaus, työn luonti ja aallon etikettitulostus)
-- Myynti- ja siirtotilausten varastotyön käsittely varastosovelluksella (mukaan lukien täydennystyö)
-- Käytettävissä olevan varaston kysely varastosovelluksella
-- Varastosiirtojen luominen ja suorittaminen varastosovelluksella
-- Ostotilausten rekisteröinti ja hyllytystöiden tekeminen varastosovelluksella.
+- Myynti- ja siirtotilausten varastotyön käsittely varastonhallinnan mobiilisovelluksella (mukaan lukien täydennystyö)
+- Käytettävissä olevan varaston kysely varastonhallinnan mobiilisovelluksella
+- Varastosiirtojen luominen ja suorittaminen varastonhallinnan mobiilisovelluksella
+- Ostotilausten rekisteröinti ja hyllytystöiden tekeminen varastonhallinnan mobiilisovelluksella
 
 Seuraavia työtilaustyyppejä tuetaan tällä hetkellä scale unit -käyttöönottojen WES-kuormituksissa:
 
@@ -133,7 +131,7 @@ Seuraavia työtilaustyyppejä tuetaan tällä hetkellä scale unit -käyttööno
 Scale uniteissa ei tueta tällä hetkellä minkään muun tyyppistä lähdeasiakirjojen käsittelyä tai varastotyötä. Esimerkiksi scale unitin WES-työkuormassa ei voi suorittaa siirtotilauksen vastaanottoprosessia (siirron vastaanottoa) tai käsitellä inventointityötä.
 
 > [!NOTE]
-> Niiden toimintojen, joita ei tueta, mobiililaitteen valikkovaihtoehtoja ja painikkeita ei näytetä _varastosovelluksessa_, kun se on yhdistetty scale unitin käyttöönottoon.
+> Niiden toimintojen, joita ei tueta, mobiililaitteen valikkovaihtoehtoja ja painikkeita ei näytetä _varastonhallinnan mobiilisovelluksessa_, kun se on yhdistetty Scale Unitin käyttöönottoon.
 
 > [!WARNING]
 > Jos työkuorma suoritetaan scale unitissa, prosesseja, joita ei tueta, ei voi suorittaa kyseisen varaston osalta keskuksessa. Tässä aiheessa on jäljempänä taulukoita, joissa on luettelo tuetuista ominaisuuksista.
@@ -164,7 +162,7 @@ Seuraavia varastonhallintatoimintoja ei tueta tällä hetkellä scale unitin ty�
 - Kuormakirjoja sisältävän varastotyön käsittely
 - Inventoinnin käynnistysrajan sisältävän varastotyön käsittely
 - Materiaalikäsittelyä tai varastoautomaatiota sisältävän varastotyön käsittely
-- Tuotteen päätietojen kuvan käyttö (esimerkiksi varastosovelluksessa)
+- Tuotteen päätietojen kuvan käyttö (esimerkiksi varastonhallinnan mobiilisovelluksessa)
 
 > [!WARNING]
 > Jotkin varastotoiminnot eivät ole käytettävissä varastoissa, joissa varastonhallinnan työkuormia suoritetaan scale unitissa eikä sitä myöskään tueta keskuksessa tai scale unitin työkuormassa.
@@ -253,7 +251,7 @@ Seuraava taulukko sisältää tuetut varastotoimintojen ja poikkeuksien käsitte
 | Siirto                                           | Kyllä | Kyllä                          |
 | Siirto mallin mukaan                               | Kyllä | Kyllä                          |
 | Varastosiirto                                 | Kyllä | Nro                           |
-| Siirtotilauksen luominen varastosovelluksesta           | Kyllä | Nro                           |
+| Siirtotilauksen luominen varastonhallinnan mobiilisovelluksesta           | Kyllä | Nro                           |
 | Oikaisu (sisään/ulos)                                | Kyllä | Nro                           |
 | Varaston tilamuutos                            | Kyllä | Nro                           |
 | Inventointi ja poikkeamien käsittely | Kyllä | Nro                           |
