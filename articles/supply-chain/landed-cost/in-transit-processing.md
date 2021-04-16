@@ -2,7 +2,6 @@
 title: Kuljetettavien tuotteiden käsittely
 description: Tässä ohjeaiheessa käsitellään kuljetettavien tuotteiden tilauksia. Kun tilaus tai merikuljetus on määritetty käyttämään kuljetettavien tuotteiden käsittelyä, tuotteet voidaan laskuttaa, ennen kuin ne on vastaanotettu varastoon kulutusta varten.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500401"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823406"
 ---
 # <a name="goods-in-transit-processing"></a>Kuljetettavien tuotteiden käsittely
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään kuljetettavien tuotteiden tilauksia. Tätä tilaustyyppiä käytetään vain **Aiheutunut kustannus** -moduulissa. Kun tilaus tai merikuljetus on määritetty käyttämään kuljetettavien tuotteiden käsittelyä, tavarat voidaan laskuttaa jo ennen kuin ne on vastaanotettu varastoon. Sen sijaan tuotteet laskutetaan, kun ne lähtevät toimittajan varastosta tai lähtösatamasta, ja taloudelliset kustannukset tunnistetaan, kun merikuljetus alkaa. Tämän toiminnon avulla voit ottaa oikein varaston omistajuuden, koska tavaroista tulee usein organisaation omaisuutta, kun ne lähtevät lähtösatamasta.
 
@@ -135,7 +133,7 @@ Aiheutunut kustannus lisää seuraavat työn luontiprosessit mobiililaitteen val
 
 Näiden prosessien konfigurointiasetukset muistuttavat [ostotilauksen vastaanoton ja hyllytyksen luomisprosesseja](https://technet.microsoft.com/library/dn553216.aspx). *Kuljetettavien tuotteiden nimikkeiden vastaanotto ja hyllytysprosessi* kuitenkin lisää seuraavan kentän.
 
-- **Ota käyttöön Kuljetuskontti valmis** – Jos tämän asetuksen arvoksi on määritetty *Kyllä*, kun hyllytystyö on valmis, varastosovellus määrittää lisävaihtoehdon, jonka nimi on **Kuljetuskontti valmis**. Kun tämä vaihtoehto on valittuna, työntekijää pyydetään vahvistamaan, että kontti on valmis. Tässä vaiheessa kaikki lyhyet vastaanotot käsitellään alitustapahtumana.
+- **Ota käyttöön Kuljetuskontti valmis** – Jos tämän asetuksen arvoksi on määritetty *Kyllä*, kun hyllytystyö on valmis, varastonhallinnan mobiilisovellus määrittää lisävaihtoehdon, jonka nimi on **Kuljetuskontti valmis**. Kun tämä vaihtoehto on valittuna, työntekijää pyydetään vahvistamaan, että kontti on valmis. Tässä vaiheessa kaikki lyhyet vastaanotot käsitellään alitustapahtumana.
 
 ### <a name="location-directives"></a>Sijaintidirektiivit
 

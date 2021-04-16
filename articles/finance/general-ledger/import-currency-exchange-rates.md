@@ -2,11 +2,9 @@
 title: Vaihtokurssien tuonti
 description: Tässä ohjeaiheessa on tietoja valuuttakurssitoimittajien julkaisemien ulkomaanvaluutan viitekorkojen tuonnin vaatimuksista.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 37f3897f9f2a0db0bb7ccb6851fba36814ab0c7b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 20b8496bc3074eae6535eea4cfe0b254f2773e6a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249116"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823737"
 ---
 # <a name="import-currency-exchange-rates"></a>Vaihtokurssien tuonti
 
@@ -35,9 +33,8 @@ Seuraavissa osissa kuvataan ulkomaiden valuuttakurssien tuomisen määrittämise
 ## <a name="configure-an-exchange-rate-provider"></a>Konfiguroi vaihtokurssipalvelu
 Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoavat vaihtokurssit, on määritettävä. Valitse vaihtokurssin toimittajat **Konfiguroi vaihtokurssipalvelut** -sivulla. Jotkin vaihtokurssin palveluntarjoajat sisältyvät Dynamics 365 Financen esittelytietoihin. Seuraavassa taulukossa kuvaillaan tämän sivun ohjausobjektit.
 
-|           |                                                                                                                                                                                                                             |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Kenttä** | **Kuvaus**                                                                                                                                                                                                             |
+| Kenttä | kuvaus                   |
+|-----------|-----------------------------------|
 | **Nimi**  | Vaihtokurssipalvelun nimi.                                                                                                                                                                                     |
 | **Avain**   | Palvelun tarvitsemien konfigurointitietojen yksilöivä tunnus. Nämä tiedot lisätään automaattisesti jokaiseen vaihtokurssipalveluun, jonka lisäät. |
 | **Value** | Jokaisen avaimen tiedot. Nämä tiedot lisätään jokaiseen vaihtokurssipalveluun, jonka lisäät.                                                                                         |
@@ -45,9 +42,8 @@ Ennen kuin tuot vaihtokurssit, tiedot, joita tarvitaan tarjoajille, jotka tarjoa
 ## <a name="import-currency-exchange-rates"></a>Vaihtokurssien tuonti
 Voit tuoda valuuttakurssit vaihtokurssin tarjoajien lähteestä ja lisätä ne **Valuutan vaihtokurssit** -sivulle. Käytä **Tuo valuutanvaihtokurssit** -sivua tuodaksesi vaihtokurssit. Seuraavassa taulukossa on kuvaus kentistä, joita tarvitaan tuontiprosessin onnistuneeseen suorittamiseen.
 
-|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Kenttä**                              | **Kuvaus**                                                                                                                                                                                                                                                                                                                                                             |
+| Kenttä | kuvaus                   |
+|-----------|-----------------------------------|
 | **Vaihtokurssin tyyppi**                 | Vaihtokurssin tyyppi.                                                                                                                                                                                                                                                                                                                                                      |
 | **Vaihtokurssipalvelu**             | Vaihtokurssipalvelu.                                                                                                                                                                                                                                                                                                                                                  |
 | **Tuo päivämäärätyypillä**                       | Tämä parametri hallitsee, tuodaanko kuluvan päivän mukaan vai tietyltä päivämääräväliltä. Jos haluat käyttää päivämääräväliä, valitse tai kirjoita alku- ja loppupäivämäärä.                                                                                                                                                                                                                |

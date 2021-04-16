@@ -2,11 +2,9 @@
 title: Azure-tallennustilin ja avainsäilön luominen
 description: Tässä ohjeaiheessa kerrotaan, miten luodaan Azure-tallennustili ja avainsäilö.
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
-ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
+ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2021
-ms.locfileid: "5479342"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840217"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure-tallennustilin ja avainsäilön luominen
 
@@ -44,7 +42,7 @@ Tässä aiheessa suoritetaan kaksi päävaihetta:
 
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Azure-tallennustilin määrittäminen tallennustilin URI-tunnuksen saamista varten
 
-1. Avaa tallennustili, jota aiot käyttää sähköisen laskutuksen lisäosan kanssa.
+1. Avaa tallennustili, jota aiot käyttää sähköisen laskutuksen kanssa.
 2. Siirry kohtaan **Blob-palvelu** \> **Säilöt** ja luo uusi säilö.
 3. Anna säilölle nimi ja määritä **Julkinen käyttöoikeustaso** -kentän arvoksi **Yksityinen (ei anonyymia käyttöä)**.
 4. Avaa säilö ja siirry kohtaan **Asetukset \> Käyttöoikeuskäytäntö**.
@@ -63,12 +61,12 @@ Tässä aiheessa suoritetaan kaksi päävaihetta:
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Avainsäilön määrittäminen tallennustilin URI-tunnuksen tallentamista varten
 
-1. Avaa avainsäilö, jota aiot käyttää sähköisen laskutuksen lisäosan kanssa.
+1. Avaa avainsäilö, jota aiot käyttää sähköisen laskutuksen kanssa.
 2. Siirry kohtaan **Asetukset** \> **Salasanat** ja luo sitten uusi salasana valitsemalla **Luo/tuo**.
 3. Valitse **Luo salasana** -sivun **Lataa asetuksia** -kentässä **Manuaalinen**.
 4. Anna salasanan nimi. Tätä nimeä käytetään palvelun määrittämiseen RCS:ssä (Regulatory Configuration Service) ja sitä kutsutaan *avainsäilön salasananimeksi*.
 5. Valitse **Arvo**-kentässä **Jaetun käyttöoikeuden allekirjoituksen URI-tunnus** ja sitten **Luo**.
-6. Määritä käyttöoikeuskäytäntö, jolla sähköisen laskutuksen lisäosalle myönnetään asianmukainen suojattu käyttöoikeus luomaasi salasanaan. Siirry kohtaan **Asetukset \> Käyttöoikeuskäytäntö** ja valitse **Lisää käyttöoikeuskäytäntö**.
+6. Määritä käyttöoikeuskäytäntö, jolla sähköiselle laskutukselle myönnetään asianmukainen suojattu käyttöoikeus luomaasi salasanaan. Siirry kohtaan **Asetukset \> Käyttöoikeuskäytäntö** ja valitse **Lisää käyttöoikeuskäytäntö**.
 7. Määritä salasanaoikeudet toiminnoille **Hae** ja **Luetteloi**.
 
     ![Palvelun käyttöoikeuksien myöntäminen](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
