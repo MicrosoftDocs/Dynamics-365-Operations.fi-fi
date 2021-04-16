@@ -2,11 +2,9 @@
 title: Toimittajien tilastodimension jäsenet ja tilastomittauksen mallit
 description: Tämä ohjeaihe sisältää tietoja tilastodimension jäsenistä ja tilastomittauksen lähdemalleista. Tilastodimension jäseniä voidaan käyttää kohdistusperusteena esimerkiksi kustannusten jaon ja kohdistuksen tyyppisissä käytännöissä. Niitä voidaan käyttää myös raportoitaessa ei-rahallista kulutusta.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1ceb274c05874438206c1b3f8fc279a6f39e2b69
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 330b7dfd3937d0d7c4a394b55972d75e876aea17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208820"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833063"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Toimittajien tilastodimension jäsenet ja tilastomittauksen mallit
 
@@ -158,11 +156,11 @@ Seuraavat tilastomerkinnät luodaan kustannuslaskennassa tilastomittausten lähd
 |-----------------|-----------|---------------------|---------------------|-------------|
 | 31.1.2017      | 1,00      | FTE                | Kokopäiväiset työntekijät | CC001       |
 | 31.1.2017      | 2,00      | FTE                | Kokopäiväiset työntekijät | CC002       |
-| 31.1.2017      | 2,00      | Kokopäiväiset työntekijät                | Kokoaikaiset työntekijät | CC003       |
+| 31.1.2017      | 2,00      | Kokopäiväiset työntekijät                | Kokopäiväiset työntekijät | CC003       |
 
 **Tilastomerkinnät**
 
-| Kustannusobjekti |    | Kirjauspäivä | Tilastodimension jäsen |  kuvaus        | Suuruus |
+| Kustannusobjekti |  kuvaus  | Kirjauspäivä | Tilastodimension jäsen |  kuvaus        | Suuruus |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Henkilöstöhallinto | 31.1.2017      | Kokopäiväiset työntekijät                         | Kokoaikaiset työntekijät | 1,00      |
 | CC002       | FI | 31.1.2017      | Kokopäiväiset työntekijät                         | Kokoaikaiset työntekijät | 2,00      |
@@ -328,7 +326,7 @@ Siirry kohtaan **Kustannuslaskennan kirjanpito** \> **Todellinen versio** \> **H
 
 **Tilastomerkinnät**
 
-| Kustannusobjekti |    | Kirjauspäivä | Tilastodimension jäsen |      kuvaus                   | Suuruus  |
+| Kustannusobjekti | kuvaus | Kirjauspäivä | Tilastodimension jäsen |      kuvaus                   | Suuruus  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | Henkilöstöhallinto | 31.1.2017      | Sähkö                  | Sähkönkulutus | 2,450.00   |
 | CC002       | FI | 31.1.2017      | Sähkö                  | Sähkönkulutus | 4,100.00   |
@@ -336,11 +334,11 @@ Siirry kohtaan **Kustannuslaskennan kirjanpito** \> **Todellinen versio** \> **H
 
 Jos ennalta määritetyn dimension jäsenen Sähkö-kohdistusperuste on määritetty kustannusten jakosäännöksi, kustannukset jaetaan seuraavan kohdistuskertoimen avulla.
 
-| Kustannusobjekti |    | Suuruus | Kohdistuskerroin          |
-|-------------|----|-----------|----------------------------|
-| CC001       | Henkilöstöhallinto | 2,450.00  | (2 450 ÷ 21 550) × summa  |
-| CC002       | FI | 4,100.00  | (4 100 ÷ 21 550) × summa  |
-| CC003       | VS | 15,000.00 | (15 000 ÷ 21 550) × summa |
+| Kustannusobjekti | kuvaus   | Suuruus | Kohdistuskerroin          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | Henkilöstöhallinto            | 2,450.00  | (2 450 ÷ 21 550) × summa  |
+| CC002       | FI            | 4,100.00  | (4 100 ÷ 21 550) × summa  |
+| CC003       | VS            | 15,000.00 | (15 000 ÷ 21 550) × summa |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
