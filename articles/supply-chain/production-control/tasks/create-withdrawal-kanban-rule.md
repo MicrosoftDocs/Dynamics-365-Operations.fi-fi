@@ -2,11 +2,9 @@
 title: Luo oton kanban-sääntö
 description: Seuraavassa menettelyssä kuvataan tarvittavat määritykset ottamisen kanban-säännön luomiseen materiaalin siirtämiseksi lean-ympäristössä.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
@@ -16,52 +14,52 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1e1fc6dff80457cecdcd1659ffa42fd6c9c4447
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2adbcdbb2d278b25dce1d8c027e66367e9c0930e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263991"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828823"
 ---
-# <a name="create-a-withdrawal-kanban-rule"></a><span data-ttu-id="7c238-103">Luo oton kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="7c238-103">Create a withdrawal kanban rule</span></span>
+# <a name="create-a-withdrawal-kanban-rule"></a><span data-ttu-id="ee506-103">Luo oton kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="ee506-103">Create a withdrawal kanban rule</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7c238-104">Seuraavassa menettelyssä kuvataan tarvittavat määritykset ottamisen kanban-säännön luomiseen materiaalin siirtämiseksi lean-ympäristössä.</span><span class="sxs-lookup"><span data-stu-id="7c238-104">This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment.</span></span> <span data-ttu-id="7c238-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="7c238-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="7c238-106">Menettely on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun materiaalin täydennyksen valmisteluun.</span><span class="sxs-lookup"><span data-stu-id="7c238-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare replenishment of new or modified material.</span></span>
+<span data-ttu-id="ee506-104">Seuraavassa menettelyssä kuvataan tarvittavat määritykset ottamisen kanban-säännön luomiseen materiaalin siirtämiseksi lean-ympäristössä.</span><span class="sxs-lookup"><span data-stu-id="ee506-104">This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment.</span></span> <span data-ttu-id="ee506-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="ee506-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ee506-106">Menettely on tarkoitettu prosessiteknikolle tai arvovirtaa hallitsevalle työntekijälle uuden tai muokatun materiaalin täydennyksen valmisteluun.</span><span class="sxs-lookup"><span data-stu-id="ee506-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare replenishment of new or modified material.</span></span>
 
 
-## <a name="create-new-kanban-rule"></a><span data-ttu-id="7c238-107">Luo uusi kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="7c238-107">Create new kanban rule</span></span>
-1. <span data-ttu-id="7c238-108">Valitse Kanban-säännöt.</span><span class="sxs-lookup"><span data-stu-id="7c238-108">Go to Kanban rules.</span></span>
-2. <span data-ttu-id="7c238-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7c238-109">Click New.</span></span>
-3. <span data-ttu-id="7c238-110">Valitse Tyyppi-kentän arvoksi "Otto".</span><span class="sxs-lookup"><span data-stu-id="7c238-110">In the Type field, select 'Withdrawal'.</span></span>
-    * <span data-ttu-id="7c238-111">Otto-tyyppiä käytetään kanban-säännössä tuotteiden tai materiaalin siirtoon.</span><span class="sxs-lookup"><span data-stu-id="7c238-111">The Withdrawal type is used for kanban rules to transfer material or goods.</span></span>  
-4. <span data-ttu-id="7c238-112">Anna tai valitse Ensimmäinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7c238-112">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="7c238-113">Valitse ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="7c238-113">Select ReplenishSpeakerComponents.</span></span>   <span data-ttu-id="7c238-114">Tehtävä on määritetty siirtämään komponentteja varaston 11 toimipaikasta 11 varaston 12 toimipaikkaan 12.</span><span class="sxs-lookup"><span data-stu-id="7c238-114">This activity is set up to move components from warehouse 11, location 11 to warehouse 12, and location 12.</span></span>  
-5. <span data-ttu-id="7c238-115">Anna tai valitse Tuote-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7c238-115">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="7c238-116">Valitse M0007.</span><span class="sxs-lookup"><span data-stu-id="7c238-116">Select M0007.</span></span>  
-6. <span data-ttu-id="7c238-117">Lisää Läpimenoaika-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="7c238-117">In the Lead time field, enter a number.</span></span>
-    * <span data-ttu-id="7c238-118">Esimerkki: 60.</span><span class="sxs-lookup"><span data-stu-id="7c238-118">For example, 60.</span></span>  
-7. <span data-ttu-id="7c238-119">Anna tai valitse Mittayksikkö-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7c238-119">In the Unit of measure field, enter or select a value.</span></span>
-    * <span data-ttu-id="7c238-120">Esimerkiksi minuutteja.</span><span class="sxs-lookup"><span data-stu-id="7c238-120">For example, Minutes.</span></span>  
+## <a name="create-new-kanban-rule"></a><span data-ttu-id="ee506-107">Luo uusi kanban-sääntö</span><span class="sxs-lookup"><span data-stu-id="ee506-107">Create new kanban rule</span></span>
+1. <span data-ttu-id="ee506-108">Valitse Kanban-säännöt.</span><span class="sxs-lookup"><span data-stu-id="ee506-108">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="ee506-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="ee506-109">Click New.</span></span>
+3. <span data-ttu-id="ee506-110">Valitse Tyyppi-kentän arvoksi "Otto".</span><span class="sxs-lookup"><span data-stu-id="ee506-110">In the Type field, select 'Withdrawal'.</span></span>
+    * <span data-ttu-id="ee506-111">Otto-tyyppiä käytetään kanban-säännössä tuotteiden tai materiaalin siirtoon.</span><span class="sxs-lookup"><span data-stu-id="ee506-111">The Withdrawal type is used for kanban rules to transfer material or goods.</span></span>  
+4. <span data-ttu-id="ee506-112">Anna tai valitse Ensimmäinen suunnitelman tehtävä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="ee506-112">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="ee506-113">Valitse ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="ee506-113">Select ReplenishSpeakerComponents.</span></span>   <span data-ttu-id="ee506-114">Tehtävä on määritetty siirtämään komponentteja varaston 11 toimipaikasta 11 varaston 12 toimipaikkaan 12.</span><span class="sxs-lookup"><span data-stu-id="ee506-114">This activity is set up to move components from warehouse 11, location 11 to warehouse 12, and location 12.</span></span>  
+5. <span data-ttu-id="ee506-115">Anna tai valitse Tuote-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="ee506-115">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="ee506-116">Valitse M0007.</span><span class="sxs-lookup"><span data-stu-id="ee506-116">Select M0007.</span></span>  
+6. <span data-ttu-id="ee506-117">Lisää Läpimenoaika-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="ee506-117">In the Lead time field, enter a number.</span></span>
+    * <span data-ttu-id="ee506-118">Esimerkki: 60.</span><span class="sxs-lookup"><span data-stu-id="ee506-118">For example, 60.</span></span>  
+7. <span data-ttu-id="ee506-119">Anna tai valitse Mittayksikkö-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="ee506-119">In the Unit of measure field, enter or select a value.</span></span>
+    * <span data-ttu-id="ee506-120">Esimerkiksi minuutteja.</span><span class="sxs-lookup"><span data-stu-id="ee506-120">For example, Minutes.</span></span>  
 
-## <a name="set-quantities-for-kanban"></a><span data-ttu-id="7c238-121">Määritä kanban-määrät</span><span class="sxs-lookup"><span data-stu-id="7c238-121">Set quantities for kanban</span></span>
-1. <span data-ttu-id="7c238-122">Määritä Oletusmäärä-arvoksi 5.</span><span class="sxs-lookup"><span data-stu-id="7c238-122">Set Default quantity to '5'.</span></span>
-    * <span data-ttu-id="7c238-123">Tämä määrä siirretään kullekin kanbanille.</span><span class="sxs-lookup"><span data-stu-id="7c238-123">This is the quantity that will be transferred for each kanban.</span></span>  
-2. <span data-ttu-id="7c238-124">Syötä Kiinteä kanban-määrä -kentän arvoksi 2.</span><span class="sxs-lookup"><span data-stu-id="7c238-124">In the Fixed kanban quantity field, enter '2'.</span></span>
-    * <span data-ttu-id="7c238-125">Tämä on sellaisten kanbanien määrä, joiden pitäisi olla aktiivisia.</span><span class="sxs-lookup"><span data-stu-id="7c238-125">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="7c238-126">Tällä tapauksessa jokainen 2 kanbanista siirtää 5.</span><span class="sxs-lookup"><span data-stu-id="7c238-126">In this case, 2 kanbans transferring 5 each.</span></span>  
-3. <span data-ttu-id="7c238-127">Lisää Vähimmäisrajan hälytys -kenttään 1.</span><span class="sxs-lookup"><span data-stu-id="7c238-127">In the Alert boundary minimum field, enter '1'.</span></span>
-    * <span data-ttu-id="7c238-128">Käytetään seuraamaan sellaisten täysien kanbanien vähimmäismäärää, joiden pitäisi olla päämäärässä.</span><span class="sxs-lookup"><span data-stu-id="7c238-128">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="7c238-129">Tätä käytetään esimerkiksi kanban-määrän yhteenvedossa.</span><span class="sxs-lookup"><span data-stu-id="7c238-129">For example, this is used on the kanban quantity overview.</span></span>  
-4. <span data-ttu-id="7c238-130">Lisää Enimmäisrajan hälytys -kenttään 2.</span><span class="sxs-lookup"><span data-stu-id="7c238-130">In the Alert boundary maximum field, enter '2'.</span></span>
-    * <span data-ttu-id="7c238-131">Käytetään seuraamaan sellaisten täysien kanbanien enimmäismäärää, joiden pitäisi olla päämäärässä.</span><span class="sxs-lookup"><span data-stu-id="7c238-131">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="7c238-132">Tätä käytetään esimerkiksi kanban-määrän yhteenvedossa.</span><span class="sxs-lookup"><span data-stu-id="7c238-132">For example, this is used on the kanban quantity overview.</span></span>  
+## <a name="set-quantities-for-kanban"></a><span data-ttu-id="ee506-121">Määritä kanban-määrät</span><span class="sxs-lookup"><span data-stu-id="ee506-121">Set quantities for kanban</span></span>
+1. <span data-ttu-id="ee506-122">Määritä Oletusmäärä-arvoksi 5.</span><span class="sxs-lookup"><span data-stu-id="ee506-122">Set Default quantity to '5'.</span></span>
+    * <span data-ttu-id="ee506-123">Tämä määrä siirretään kullekin kanbanille.</span><span class="sxs-lookup"><span data-stu-id="ee506-123">This is the quantity that will be transferred for each kanban.</span></span>  
+2. <span data-ttu-id="ee506-124">Syötä Kiinteä kanban-määrä -kentän arvoksi 2.</span><span class="sxs-lookup"><span data-stu-id="ee506-124">In the Fixed kanban quantity field, enter '2'.</span></span>
+    * <span data-ttu-id="ee506-125">Tämä on sellaisten kanbanien määrä, joiden pitäisi olla aktiivisia.</span><span class="sxs-lookup"><span data-stu-id="ee506-125">This is the amount of kanbans that should be active.</span></span> <span data-ttu-id="ee506-126">Tällä tapauksessa jokainen 2 kanbanista siirtää 5.</span><span class="sxs-lookup"><span data-stu-id="ee506-126">In this case, 2 kanbans transferring 5 each.</span></span>  
+3. <span data-ttu-id="ee506-127">Lisää Vähimmäisrajan hälytys -kenttään 1.</span><span class="sxs-lookup"><span data-stu-id="ee506-127">In the Alert boundary minimum field, enter '1'.</span></span>
+    * <span data-ttu-id="ee506-128">Käytetään seuraamaan sellaisten täysien kanbanien vähimmäismäärää, joiden pitäisi olla päämäärässä.</span><span class="sxs-lookup"><span data-stu-id="ee506-128">Used to keep track of the minimum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="ee506-129">Tätä käytetään esimerkiksi kanban-määrän yhteenvedossa.</span><span class="sxs-lookup"><span data-stu-id="ee506-129">For example, this is used on the kanban quantity overview.</span></span>  
+4. <span data-ttu-id="ee506-130">Lisää Enimmäisrajan hälytys -kenttään 2.</span><span class="sxs-lookup"><span data-stu-id="ee506-130">In the Alert boundary maximum field, enter '2'.</span></span>
+    * <span data-ttu-id="ee506-131">Käytetään seuraamaan sellaisten täysien kanbanien enimmäismäärää, joiden pitäisi olla päämäärässä.</span><span class="sxs-lookup"><span data-stu-id="ee506-131">Used to keep track of the maximum amount of full kanbans that should be at the destination.</span></span> <span data-ttu-id="ee506-132">Tätä käytetään esimerkiksi kanban-määrän yhteenvedossa.</span><span class="sxs-lookup"><span data-stu-id="ee506-132">For example, this is used on the kanban quantity overview.</span></span>  
 
-## <a name="create-kanbans"></a><span data-ttu-id="7c238-133">Luo kanbaneita</span><span class="sxs-lookup"><span data-stu-id="7c238-133">Create kanbans</span></span>
-1. <span data-ttu-id="7c238-134">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7c238-134">Click Save.</span></span>
-    * <span data-ttu-id="7c238-135">Kanban-sääntö on tallennettava ennen kanbanien luomista.</span><span class="sxs-lookup"><span data-stu-id="7c238-135">The kanban rule needs to be saved before kanbans can be created.</span></span>  
-2. <span data-ttu-id="7c238-136">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="7c238-136">Click Add.</span></span>
-    * <span data-ttu-id="7c238-137">Huomaa, että yksikään kanban ei ole aktiivinen, koska ehdotettu Uusien kanbanien määrä on 2. Tämä vastaa Kiinteä kanban-määrä -asetusta.</span><span class="sxs-lookup"><span data-stu-id="7c238-137">Note that there are no active kanbans because the suggested 'Number of new kanbans' is 2, which is equal to the 'Fixed kanban quantity'.</span></span>  
-3. <span data-ttu-id="7c238-138">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="7c238-138">Click Create.</span></span>
-    * <span data-ttu-id="7c238-139">Tämä luo kaksi kanbania.</span><span class="sxs-lookup"><span data-stu-id="7c238-139">This will create two kanbans.</span></span>  
-    * <span data-ttu-id="7c238-140">Huomaa, että tälle ottamisen kanban-säännölle luotiin 2 kanbania, joista kunkin arvo on 5.</span><span class="sxs-lookup"><span data-stu-id="7c238-140">Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.</span></span>  <span data-ttu-id="7c238-141">Tämä on tämän menettelyn viimeinen vaihe.</span><span class="sxs-lookup"><span data-stu-id="7c238-141">This is the last step in this procedure.</span></span>  
+## <a name="create-kanbans"></a><span data-ttu-id="ee506-133">Luo kanbaneita</span><span class="sxs-lookup"><span data-stu-id="ee506-133">Create kanbans</span></span>
+1. <span data-ttu-id="ee506-134">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ee506-134">Click Save.</span></span>
+    * <span data-ttu-id="ee506-135">Kanban-sääntö on tallennettava ennen kanbanien luomista.</span><span class="sxs-lookup"><span data-stu-id="ee506-135">The kanban rule needs to be saved before kanbans can be created.</span></span>  
+2. <span data-ttu-id="ee506-136">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="ee506-136">Click Add.</span></span>
+    * <span data-ttu-id="ee506-137">Huomaa, että yksikään kanban ei ole aktiivinen, koska ehdotettu Uusien kanbanien määrä on 2. Tämä vastaa Kiinteä kanban-määrä -asetusta.</span><span class="sxs-lookup"><span data-stu-id="ee506-137">Note that there are no active kanbans because the suggested 'Number of new kanbans' is 2, which is equal to the 'Fixed kanban quantity'.</span></span>  
+3. <span data-ttu-id="ee506-138">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="ee506-138">Click Create.</span></span>
+    * <span data-ttu-id="ee506-139">Tämä luo kaksi kanbania.</span><span class="sxs-lookup"><span data-stu-id="ee506-139">This will create two kanbans.</span></span>  
+    * <span data-ttu-id="ee506-140">Huomaa, että tälle ottamisen kanban-säännölle luotiin 2 kanbania, joista kunkin arvo on 5.</span><span class="sxs-lookup"><span data-stu-id="ee506-140">Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.</span></span>  <span data-ttu-id="ee506-141">Tämä on tämän menettelyn viimeinen vaihe.</span><span class="sxs-lookup"><span data-stu-id="ee506-141">This is the last step in this procedure.</span></span>  
 
 
 

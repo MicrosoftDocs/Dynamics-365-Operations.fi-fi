@@ -2,11 +2,9 @@
 title: Määritä luokitukset ja arvostelut
 description: Tässä ohjeaiheessa kerrotaan, miten sähköisen kaupankäynnin sivusto määritetään niin, että se näyttää asiakasluokituksia ja -arvostelut Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,84 +14,84 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 130c80c1d68c7fb207a4fa073fe2b0476cbdd409
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5161755b9e15e93fbb5eeb6404ea0820f7068ea7
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220531"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796072"
 ---
-# <a name="configure-ratings-and-reviews"></a><span data-ttu-id="e3750-103">Määritä luokitukset ja arvostelut</span><span class="sxs-lookup"><span data-stu-id="e3750-103">Configure ratings and reviews</span></span>
+# <a name="configure-ratings-and-reviews"></a><span data-ttu-id="12736-103">Määritä luokitukset ja arvostelut</span><span class="sxs-lookup"><span data-stu-id="12736-103">Configure ratings and reviews</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="e3750-104">Tässä ohjeaiheessa kerrotaan, miten sähköisen kaupankäynnin sivusto määritetään niin, että se näyttää asiakasluokituksia ja -arvostelut Microsoft Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="e3750-104">This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="12736-104">Tässä ohjeaiheessa kerrotaan, miten sähköisen kaupankäynnin sivusto määritetään niin, että se näyttää asiakasluokituksia ja -arvostelut Microsoft Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="12736-104">This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="e3750-105">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="e3750-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="12736-105">Yleiskuvaus</span><span class="sxs-lookup"><span data-stu-id="12736-105">Overview</span></span>
 
-<span data-ttu-id="e3750-106">Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakkaita saamaan tietoja tuotteista ennen ostopäätöksen tekemistä. NIiden avulla saadaan selville, mitä muut asiakkaat ajattelevat kyseisistä tuotteista.</span><span class="sxs-lookup"><span data-stu-id="e3750-106">Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision by showing them what other customers think about those products.</span></span> <span data-ttu-id="e3750-107">Sähköisen kaupankäynnin sivustoissa luokitukset ja arvostelut ovat myös keino, jolla kerätään asiakaspalautetta tuotteista.</span><span class="sxs-lookup"><span data-stu-id="e3750-107">For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products.</span></span> 
+<span data-ttu-id="12736-106">Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakkaita saamaan tietoja tuotteista ennen ostopäätöksen tekemistä. NIiden avulla saadaan selville, mitä muut asiakkaat ajattelevat kyseisistä tuotteista.</span><span class="sxs-lookup"><span data-stu-id="12736-106">Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision by showing them what other customers think about those products.</span></span> <span data-ttu-id="12736-107">Sähköisen kaupankäynnin sivustoissa luokitukset ja arvostelut ovat myös keino, jolla kerätään asiakaspalautetta tuotteista.</span><span class="sxs-lookup"><span data-stu-id="12736-107">For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products.</span></span> 
 
-## <a name="configure-a-site-to-show-ratings-and-reviews"></a><span data-ttu-id="e3750-108">Sivuston määrittäminen niin, että se näyttää luokitukset ja arvostelut</span><span class="sxs-lookup"><span data-stu-id="e3750-108">Configure a site to show ratings and reviews</span></span>
+## <a name="configure-a-site-to-show-ratings-and-reviews"></a><span data-ttu-id="12736-108">Sivuston määrittäminen niin, että se näyttää luokitukset ja arvostelut</span><span class="sxs-lookup"><span data-stu-id="12736-108">Configure a site to show ratings and reviews</span></span>
 
-<span data-ttu-id="e3750-109">Luokitusten ja arvostelujen määrityksen arvot, kuten vuokraajan tunnus, arvostelun tekstin pituus ja luokituksen otsikon pituus, määritetään sivustotasolla.</span><span class="sxs-lookup"><span data-stu-id="e3750-109">Configuration values for ratings and reviews, such as the tenant ID, review text length, and review title length, are configured at the site level.</span></span> 
+<span data-ttu-id="12736-109">Luokitusten ja arvostelujen määrityksen arvot, kuten vuokraajan tunnus, arvostelun tekstin pituus ja luokituksen otsikon pituus, määritetään sivustotasolla.</span><span class="sxs-lookup"><span data-stu-id="12736-109">Configuration values for ratings and reviews, such as the tenant ID, review text length, and review title length, are configured at the site level.</span></span> 
 
-<span data-ttu-id="e3750-110">Voit määrittää sivuston näyttämään luokitukset ja arvostelut seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="e3750-110">To configure a site to show ratings and reviews, follow these steps.</span></span> 
+<span data-ttu-id="12736-110">Voit määrittää sivuston näyttämään luokitukset ja arvostelut seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="12736-110">To configure a site to show ratings and reviews, follow these steps.</span></span> 
 
-1. <span data-ttu-id="e3750-111">Siirry kohtaan **Aloitus \> Sivustot**.</span><span class="sxs-lookup"><span data-stu-id="e3750-111">Go to **Home \> Sites**.</span></span>
-1. <span data-ttu-id="e3750-112">Valitse sivuston nimi.</span><span class="sxs-lookup"><span data-stu-id="e3750-112">Select the name of your site.</span></span> 
-1. <span data-ttu-id="e3750-113">Siirry kohtaan **Sivuston asetukset \> Laajennukset**.</span><span class="sxs-lookup"><span data-stu-id="e3750-113">Go to **Site settings \> Extensions**.</span></span> 
-1. <span data-ttu-id="e3750-114">Syötä **Arvostelun tekstin enimmäispituus** -kenttään arvostelun tekstin merkkien enimmäismäärä (esimerkiksi **1 000**).</span><span class="sxs-lookup"><span data-stu-id="e3750-114">In the **Review text max length** field, enter the maximum number of characters that review text can have (for example, **1000**).</span></span> 
-1. <span data-ttu-id="e3750-115">Syötä **Arvostelun otsikon enimmäispituus** -kenttään arvostelun otsikoiden merkkien enimmäismäärä (esimerkiksi **55**).</span><span class="sxs-lookup"><span data-stu-id="e3750-115">In the **Review title max length** field, enter the maximum number of characters that review titles can have (for example, **55**).</span></span> 
-1. <span data-ttu-id="e3750-116">Valitse **Tallenna ja julkaise**.</span><span class="sxs-lookup"><span data-stu-id="e3750-116">Select **Save and Publish**.</span></span> 
+1. <span data-ttu-id="12736-111">Siirry kohtaan **Aloitus \> Sivustot**.</span><span class="sxs-lookup"><span data-stu-id="12736-111">Go to **Home \> Sites**.</span></span>
+1. <span data-ttu-id="12736-112">Valitse sivuston nimi.</span><span class="sxs-lookup"><span data-stu-id="12736-112">Select the name of your site.</span></span> 
+1. <span data-ttu-id="12736-113">Siirry kohtaan **Sivuston asetukset \> Laajennukset**.</span><span class="sxs-lookup"><span data-stu-id="12736-113">Go to **Site settings \> Extensions**.</span></span> 
+1. <span data-ttu-id="12736-114">Syötä **Arvostelun tekstin enimmäispituus** -kenttään arvostelun tekstin merkkien enimmäismäärä (esimerkiksi **1 000**).</span><span class="sxs-lookup"><span data-stu-id="12736-114">In the **Review text max length** field, enter the maximum number of characters that review text can have (for example, **1000**).</span></span> 
+1. <span data-ttu-id="12736-115">Syötä **Arvostelun otsikon enimmäispituus** -kenttään arvostelun otsikoiden merkkien enimmäismäärä (esimerkiksi **55**).</span><span class="sxs-lookup"><span data-stu-id="12736-115">In the **Review title max length** field, enter the maximum number of characters that review titles can have (for example, **55**).</span></span> 
+1. <span data-ttu-id="12736-116">Valitse **Tallenna ja julkaise**.</span><span class="sxs-lookup"><span data-stu-id="12736-116">Select **Save and Publish**.</span></span> 
 
-<span data-ttu-id="e3750-117">Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="e3750-117">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="12736-117">Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="12736-117">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
 
 ![Sivuston määrittäminen niin, että se näyttää luokitukset ja arvostelut](media/rnr-eCommerce-site-appsettings.png)
 
-## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a><span data-ttu-id="e3750-119">Tuoteluokituksen linkittäminen PDP:n Arvostelut-osaan</span><span class="sxs-lookup"><span data-stu-id="e3750-119">Link a product rating to the Reviews section of a PDP</span></span>
+## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a><span data-ttu-id="12736-119">Tuoteluokituksen linkittäminen PDP:n Arvostelut-osaan</span><span class="sxs-lookup"><span data-stu-id="12736-119">Link a product rating to the Reviews section of a PDP</span></span>
 
-<span data-ttu-id="e3750-120">Tuoteluokitus näkyy PDP:n yläosassa olevan tuotteen otsikon alla.</span><span class="sxs-lookup"><span data-stu-id="e3750-120">A product rating is shown below the product title at the top of PDP.</span></span> <span data-ttu-id="e3750-121">Tuoteluokitus voidaan määrittää niin, että se on linkitetty saman PDP:n **Arvostelut**-osaan.</span><span class="sxs-lookup"><span data-stu-id="e3750-121">The product rating can be configured so that it's linked to the **Reviews** section of the same PDP.</span></span> 
+<span data-ttu-id="12736-120">Tuoteluokitus näkyy PDP:n yläosassa olevan tuotteen otsikon alla.</span><span class="sxs-lookup"><span data-stu-id="12736-120">A product rating is shown below the product title at the top of PDP.</span></span> <span data-ttu-id="12736-121">Tuoteluokitus voidaan määrittää niin, että se on linkitetty saman PDP:n **Arvostelut**-osaan.</span><span class="sxs-lookup"><span data-stu-id="12736-121">The product rating can be configured so that it's linked to the **Reviews** section of the same PDP.</span></span> 
 
-<span data-ttu-id="e3750-122">Voit linkittää tuoteluokituksen PDP:n osan **Arvostelut**-osaan seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="e3750-122">To link a product rating to the **Reviews** section of the PDP, follow these steps.</span></span>
+<span data-ttu-id="12736-122">Voit linkittää tuoteluokituksen PDP:n osan **Arvostelut**-osaan seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="12736-122">To link a product rating to the **Reviews** section of the PDP, follow these steps.</span></span>
 
-1. <span data-ttu-id="e3750-123">Avaa PDP-malli.</span><span class="sxs-lookup"><span data-stu-id="e3750-123">Open the PDP template.</span></span> 
-1. <span data-ttu-id="e3750-124">Siirry kohtaan **Ostoruudun säilömoduulin asetukset**.</span><span class="sxs-lookup"><span data-stu-id="e3750-124">Go to **Buy box container module settings**.</span></span>
-1. <span data-ttu-id="e3750-125">Valitse **Ostoruutu**-kohdassa **Tuoteluokitukset** ja valitse sitten **Linkitä napsautus täydellisten arviointien moduuliin** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="e3750-125">Under **Buy box**, select **Product ratings**, and then select the **Link the click to full reviews module** check box.</span></span>
+1. <span data-ttu-id="12736-123">Avaa PDP-malli.</span><span class="sxs-lookup"><span data-stu-id="12736-123">Open the PDP template.</span></span> 
+1. <span data-ttu-id="12736-124">Siirry kohtaan **Ostoruudun säilömoduulin asetukset**.</span><span class="sxs-lookup"><span data-stu-id="12736-124">Go to **Buy box container module settings**.</span></span>
+1. <span data-ttu-id="12736-125">Valitse **Ostoruutu**-kohdassa **Tuoteluokitukset** ja valitse sitten **Linkitä napsautus täydellisten arviointien moduuliin** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="12736-125">Under **Buy box**, select **Product ratings**, and then select the **Link the click to full reviews module** check box.</span></span>
 
-<span data-ttu-id="e3750-126">Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="e3750-126">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="12736-126">Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="12736-126">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
 
 ![Tuoteluokituksen linkittäminen PDP:n Arvostelut-osaan](media/rnr-eCommerce-buy-box-rating-summary.png)
 
-## <a name="configure-the-link-for-the-privacy-and-policy-page"></a><span data-ttu-id="e3750-128">Tietosuoja- ja käytäntösivun linkin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="e3750-128">Configure the link for the privacy and policy page</span></span>
+## <a name="configure-the-link-for-the-privacy-and-policy-page"></a><span data-ttu-id="12736-128">Tietosuoja- ja käytäntösivun linkin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="12736-128">Configure the link for the privacy and policy page</span></span>
 
-<span data-ttu-id="e3750-129">Voit määrittää tietosuoja- ja käytäntösivun linkin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="e3750-129">To configure the link for the privacy and policy page, follow these steps.</span></span>
+<span data-ttu-id="12736-129">Voit määrittää tietosuoja- ja käytäntösivun linkin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="12736-129">To configure the link for the privacy and policy page, follow these steps.</span></span>
 
-1. <span data-ttu-id="e3750-130">Siirry kohtaan **Aloitus \> Sivustot**.</span><span class="sxs-lookup"><span data-stu-id="e3750-130">Go to **Home \> Sites**.</span></span>
-1. <span data-ttu-id="e3750-131">Valitse sivuston nimi.</span><span class="sxs-lookup"><span data-stu-id="e3750-131">Select the name of your site.</span></span> 
-1. <span data-ttu-id="e3750-132">Siirry kohtaan **Sivuston asetukset \> Laajennukset**.</span><span class="sxs-lookup"><span data-stu-id="e3750-132">Go to **Site settings \> Extensions**.</span></span>
-1. <span data-ttu-id="e3750-133">Valitse **Reitit**-välilehdessä **RNR - tietosuoja ja käytäntö** -kohdassa **Lisää linkki**.</span><span class="sxs-lookup"><span data-stu-id="e3750-133">On the **Routes** tab, under **RNR Privacy and Policy**, select **Add a link**.</span></span> <span data-ttu-id="e3750-134">Jos linkki on jo syötetty ja haluat korvata sen, valitse linkki.</span><span class="sxs-lookup"><span data-stu-id="e3750-134">If a link is already entered, and you want to replace it, select the link.</span></span> 
-1. <span data-ttu-id="e3750-135">Valitse **Lisää linkki** -valintaikkunassa tietosuoja-ja käytäntösivun linkki ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="e3750-135">In the **Add a link** dialog box, select the link for the privacy and policy page, and then select **OK**.</span></span> 
-1. <span data-ttu-id="e3750-136">Valitse **Tallenna ja julkaise**.</span><span class="sxs-lookup"><span data-stu-id="e3750-136">Select **Save and Publish**.</span></span> 
+1. <span data-ttu-id="12736-130">Siirry kohtaan **Aloitus \> Sivustot**.</span><span class="sxs-lookup"><span data-stu-id="12736-130">Go to **Home \> Sites**.</span></span>
+1. <span data-ttu-id="12736-131">Valitse sivuston nimi.</span><span class="sxs-lookup"><span data-stu-id="12736-131">Select the name of your site.</span></span> 
+1. <span data-ttu-id="12736-132">Siirry kohtaan **Sivuston asetukset \> Laajennukset**.</span><span class="sxs-lookup"><span data-stu-id="12736-132">Go to **Site settings \> Extensions**.</span></span>
+1. <span data-ttu-id="12736-133">Valitse **Reitit**-välilehdessä **RNR - tietosuoja ja käytäntö** -kohdassa **Lisää linkki**.</span><span class="sxs-lookup"><span data-stu-id="12736-133">On the **Routes** tab, under **RNR Privacy and Policy**, select **Add a link**.</span></span> <span data-ttu-id="12736-134">Jos linkki on jo syötetty ja haluat korvata sen, valitse linkki.</span><span class="sxs-lookup"><span data-stu-id="12736-134">If a link is already entered, and you want to replace it, select the link.</span></span> 
+1. <span data-ttu-id="12736-135">Valitse **Lisää linkki** -valintaikkunassa tietosuoja-ja käytäntösivun linkki ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="12736-135">In the **Add a link** dialog box, select the link for the privacy and policy page, and then select **OK**.</span></span> 
+1. <span data-ttu-id="12736-136">Valitse **Tallenna ja julkaise**.</span><span class="sxs-lookup"><span data-stu-id="12736-136">Select **Save and Publish**.</span></span> 
 
-<span data-ttu-id="e3750-137">Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="e3750-137">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="12736-137">Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="12736-137">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
 
 ![Tietosuoja- ja käytäntösivun linkin määrittäminen](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
-## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a><span data-ttu-id="e3750-139">Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla</span><span class="sxs-lookup"><span data-stu-id="e3750-139">Configure ratings and reviews modules on product details pages</span></span>
+## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a><span data-ttu-id="12736-139">Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla</span><span class="sxs-lookup"><span data-stu-id="12736-139">Configure ratings and reviews modules on product details pages</span></span>
 
-<span data-ttu-id="e3750-140">Lisätietoja luokitus- ja arvostelumoduulien määrittämisestä tuotetietojen sivuilla on kohdassa [Luokitus- ja arvostelumoduulit](ratings-reviews-modules.md).</span><span class="sxs-lookup"><span data-stu-id="e3750-140">For information on configuring ratings and reviews modules on product details pages, see [Ratings and reviews modules](ratings-reviews-modules.md).</span></span>
+<span data-ttu-id="12736-140">Lisätietoja luokitus- ja arvostelumoduulien määrittämisestä tuotetietojen sivuilla on kohdassa [Luokitus- ja arvostelumoduulit](ratings-reviews-modules.md).</span><span class="sxs-lookup"><span data-stu-id="12736-140">For information on configuring ratings and reviews modules on product details pages, see [Ratings and reviews modules](ratings-reviews-modules.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="e3750-141">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="e3750-141">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="12736-141">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="12736-141">Additional resources</span></span>
 
-[<span data-ttu-id="e3750-142">Luokitukset ja arvostelut – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="e3750-142">Ratings and reviews overview</span></span>](ratings-reviews-overview.md)
+[<span data-ttu-id="12736-142">Luokitukset ja arvostelut – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="12736-142">Ratings and reviews overview</span></span>](ratings-reviews-overview.md)
 
-[<span data-ttu-id="e3750-143">Luokitusten ja arvostelujen käytön hyväksyminen</span><span class="sxs-lookup"><span data-stu-id="e3750-143">Opt in to use ratings and reviews</span></span>](opt-in-ratings-reviews.md)
+[<span data-ttu-id="12736-143">Luokitusten ja arvostelujen käytön hyväksyminen</span><span class="sxs-lookup"><span data-stu-id="12736-143">Opt in to use ratings and reviews</span></span>](opt-in-ratings-reviews.md)
 
-[<span data-ttu-id="e3750-144">Hallitse luokituksia ja arvosteluja</span><span class="sxs-lookup"><span data-stu-id="e3750-144">Manage ratings and reviews</span></span>](manage-reviews.md)
+[<span data-ttu-id="12736-144">Hallitse luokituksia ja arvosteluja</span><span class="sxs-lookup"><span data-stu-id="12736-144">Manage ratings and reviews</span></span>](manage-reviews.md)
 
-[<span data-ttu-id="e3750-145">Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla</span><span class="sxs-lookup"><span data-stu-id="e3750-145">Configure ratings and reviews modules on product details pages</span></span>](ratings-reviews-modules.md)
+[<span data-ttu-id="12736-145">Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla</span><span class="sxs-lookup"><span data-stu-id="12736-145">Configure ratings and reviews modules on product details pages</span></span>](ratings-reviews-modules.md)
 
-[<span data-ttu-id="e3750-146">Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa</span><span class="sxs-lookup"><span data-stu-id="e3750-146">Sync product ratings in Dynamics 365 Retail</span></span>](sync-product-ratings.md)
+[<span data-ttu-id="12736-146">Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa</span><span class="sxs-lookup"><span data-stu-id="12736-146">Sync product ratings in Dynamics 365 Retail</span></span>](sync-product-ratings.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
