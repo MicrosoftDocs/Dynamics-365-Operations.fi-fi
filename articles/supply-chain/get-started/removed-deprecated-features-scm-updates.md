@@ -2,11 +2,9 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Supply Chain Managementsta.
 author: kamaybac
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9c91ffcb03793db2f2ef3a9631ab549ace3f735d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259088"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821270"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 
@@ -34,6 +32,18 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Supply Chain Managementin version 10.0.18 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – varastointi (varastosovellus)
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Alkaen huhtikuusta 2021 *Dynamics 365 for Finance and Operations – varastointi* (varastosovellus) on vanhentunut, eikä sitä tueta huhtikuun 2022 jälkeen. Sen korvaa nyt *varastonhallinnan mobiilisovellus*, joka on julkaistu Supply Chain Managementin version 10.0.17 mukana. Uusi sovellus on täydellinen korvaava tuote, mutta käyttää samaa pohjana olevaa kehystä, mikä helpottaa siirtymistä sen käyttöön. Tarvittaessa näitä kahta sovellusta voidaan käyttää vierekkäin, jotta käyttäjät voivat asteittain opetella käyttämään uutta sovellusta.<br><br>Lisätietoja uudesta varastonhallinnan mobiilisovelluksesta on kohdissa [Varastonhallinnan mobiilisovellus](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) ja [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, korvataan uudella varastonhallinnan mobiilisovelluksella. |
+| **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – varastosovellus |
+| **Käytön asetukset**              | Pilsi ja paikallinen käyttöönotto |
+| **Tila**                         | Vanhentunut. Varastosovellus saa tukea virheiden ja tieoturvan korjauksiin, mutta sille ei enää ole käytettävissä toimintojen parannuksia. Huhtikuun 2022 jälkeen vanhaa varastosovellusta ei enää tueta ja asiakkaita pyydetään siirtymään uuteen varastonhallinnan mobiilisovellukseen. Vanha varastosovellus poistetaan sitten Microsoft Storesta ja Google Play -kaupasta.  |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10015-release"></a>Supply Chain Managementin version 10.0.15 poistetut tai vanhentuneet ominaisuudet
 

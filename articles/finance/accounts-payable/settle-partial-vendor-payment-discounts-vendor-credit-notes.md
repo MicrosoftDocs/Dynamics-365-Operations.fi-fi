@@ -2,11 +2,9 @@
 title: Hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
 description: Tässä artikkelissa käydään läpi skenaario, jossa hyvityslasku selvitetään laskua vastaan.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a23ef6bff5f135e7f4189add776aeed18fbe79
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e634796c7143c14a872c721f298f3ab28cbddd6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227301"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827839"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
 
@@ -42,10 +40,10 @@ April luo 29. kesäkuuta 1 000,00 arvoisen laskun toimittajalle 3050. 2. heinäk
 
 Hyvityslaskun alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 13.7.2015 |
-| Käteisalennussumma         | 2,00      |
+| Käteisalennussumma         | 2.00      |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | 2,00      |

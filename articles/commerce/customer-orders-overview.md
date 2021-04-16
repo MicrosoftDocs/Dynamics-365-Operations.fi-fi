@@ -2,11 +2,9 @@
 title: Myyntipisteen asiakastilaukset
 description: Tässä ohjeaiheessa on tietoja myyntipisteen asiakkaan työnkulusta. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220507"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821005"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Myyntipisteen asiakastilaukset
 
@@ -61,7 +59,8 @@ Commercen versiossa 10.0.12 ja uudemmissa versioissa organisaatiot voivat määr
 
 Jotkin myyntikanavan asetukset on tarkistettava, kun asiakastilauksia käsitellään myyntipisteessä. Nämä asetukset ovat Commerce Headquarters -sovelluksen **Myymälät**-sivulla.
 
-- **Varasto** – Tämä kenttä osoittaa varaston, jota käytetään myymälässä määritettyjen toimitusten täyttämisessä.
+- **Varasto** – Tämä kenttä ilmaisee varaston, jota käytetään, kun varastoa vähennetään maksa ja nouda- ja asiakkaan nouto -tilauksille, jotka ovat sidottuja tähän myymälään. Parhaan käytännön mukaisesti on hyvä käyttää kullekin myymäläkanavalle yksilöllisiä varastoja, jotta voidaan estää myymälöiden väliset ristiriitaiset liiketoimintalogiikan ongelmat.
+- **Lähetysvarasto** – Tämä kenttä ilmaisee varaston, jota käytetään, kun varastoa vähennetään maksa ja nouda- ja asiakkaan nouto -tilauksille, jotka toimitetaan valitusta myymälästä. Jos **Mahdollisuus määrittää sijainniksi Lähetys tai Nouto on otettu käyttöön täyttämisryhmässä** -toiminto on otettu käyttöön ympäristössäsi, myyntipisteen käyttäjät voivat valita myyntipisteessa tietyn varaston, josta lähetetään, sen sijaan, että valittaisiin myymälä, josta lähetetään. Kun tämä ominaisuus on käytössä, lähetysvarastoa ei enää käytetä, koska käyttäjä valitsee tietyn varaston, josta tilaus lähetetään tilauksen luomisen yhteydessä.
 - **Täytäntöönpanoryhmän määritys** – Valitse tämä painike (toimintoruudun **Määritys**-välilehdessä), jos haluat linkittää noutosijaintien tai toimitusten alkuperäisten sijaintien näyttövaihtoehtoihin viittaavat täytäntöönpanoryhmät, kun asiakastilaukset luodaan myyntipisteessä.
 - **Käytä kohteeseen perustuvaa veroa** – Tämä vaihtoehto osoittaa, käytetäänkö toimitusosoitetta sen veroryhmän määrittämisessä, joka kohdistetaan asiakkaan osoitteeseen toimitettaviin tilausriveihin.
 - **Käytä asiakkaaseen perustuvaa veroa** – Tämä vaihtoehto osoittaa, käytetäänkö asiakkaan toimitusosoitteelle määritettyä veroryhmää myyntipisteessä luoduissa asiakkaan kotiin toimitettavien asiakastilausten verotuksessa.

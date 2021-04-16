@@ -2,10 +2,8 @@
 title: Aallon etikettien uudelleentulostus ja mitätöinti
 description: Tässä ohjeaiheessa käsitellään aiemmin luotujen aallon etikettien mitätöintiä ja uudelleentulostusta.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228366"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817362"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Aallon etikettien uudelleentulostus ja mitätöinti
 
@@ -218,5 +216,8 @@ Työn poikkeukset määrittävät lyhyen keräilyn toiminnan. Määritä työn p
 1. Valitse tälle skenaariolle luotu työn poikkeuksen koodi.
 1. Jos valitsit oikean poikkeuksen, **Mitätöinti ja uudelleentulostus** -valintaruudun pitäisi olla valittavissa. Valitse valitse ruutu ja vahvista. Vahvistetun etikettirullasarjan tunnistaa siitä, että **Etiketin luontitunnus** -kenttä lasketaan uudelleen työrivin muutetun määrän mukaan. Se tulostetaan sitten uudelleen määritetyssä tulostimessa.
 
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Aallon etiketin tulostus](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

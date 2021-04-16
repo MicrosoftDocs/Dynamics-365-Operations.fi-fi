@@ -2,11 +2,9 @@
 title: Täydennys yli sijainnin kapasiteetin
 description: Tässä ohjeaiheessa on tietoja Täydennys sijainnin kapasiteetilla -ominaisuudesta. Tämä ominaisuus ottaa käyttöön kaiken täydennystyön, joka vaaditaan luontipäivänä. Se myös hallitsee täydennystyön käytettävyyttä ja varmistaa näin, että varasto ei koskaan lopu keräilysijainnista eikä kapasiteettia ylitetä.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228390"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823236"
 ---
 # <a name="replenishment-over-location-capacity"></a>Täydennys yli sijainnin kapasiteetin
 
@@ -241,7 +239,7 @@ Käytettävissä olevista määristä riippuen luodut työmäärät voivat olla 
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Käytettävissä olevan varaston rekisterikilven tunnus
 
-Myöhemmin tässä skenaariossa käytetään varastosovellusta (tai emulaattoria), jossa sinun on tunnistettava rekisterikilpi keräilyn ja täydennyksen skenaarioiden viimeistelemistä varten.
+Myöhemmin tässä skenaariossa käytetään varastonhallinnan mobiilisovellusta (tai emulaattoria), jossa sinun on tunnistettava rekisterikilpi keräilyn ja täydennyksen skenaarioiden viimeistelemistä varten.
 
 Voit etsiä myöhemmin tarvittavat rekisterikilven tunnukset alla olevien vaiheiden avulla.
 
@@ -266,7 +264,7 @@ Suorita varastosijainnin täydennys kahdelle ensimmäiselle työtunnukselle. Kol
 
 #### <a name="replenishment"></a>Täydennys
 
-1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
 1. Siirry kohtaan **Varasto \> Täydennys**.
 
     Sinua pyydetään suorittamaan ensimmäinen täydennystyö. Näkyvissä ovat nimiketunnus, määrä ja keräilysijainti.
@@ -296,7 +294,7 @@ Tämä täydennystyö pysyy estettynä niin kauan, kunnes sijainnista kerätää
 
 Ennen kuin jäljellä oleva täydennystyötehtävä voidaan viimeistellä, keräilysijainnin varaston tason on oltava niin alhainen, että jäljellä oleva täydennystyö voidaan vapauttaa. Toisin sanoen käytettävissä olevan varaston kokonaismäärä sijainnissa ja täydennysmäärä eivät saa ylittää **ylivuotomäärän** arvoa. Kun tämä summa on pienempi kuin ylivuotomäärä, jäljelle jäävä täydennystyö vapautetaan.
 
-1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
 1. Siirry kohtaan **Lähtevät \> Myynnin keräily**.
 1. Anna myyntitilauksen 1 ensimmäinen työtunnus.
 

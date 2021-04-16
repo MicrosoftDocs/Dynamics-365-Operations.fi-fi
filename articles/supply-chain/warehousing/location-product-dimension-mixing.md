@@ -2,11 +2,9 @@
 title: Tuotedimensioiden yhdistäminen sijainnissa
 description: Tässä ohjeaiheessa on tietoja tuotteiden useiden eri mittojen yhtäaikaisesta käytöstä samassa toimipaikassa. Tämä toimipaikkaprofiilin toiminto auttaa parantamaan toimipaikan varastonhallintaa, kun tuotteesta on varastossa useita variantteja tai tuotteiden ominaisuudet vaihtelevat, kuten muotiteollisuudessa. Sen avulla voit määrittää, voidaanko toimipaikkaprofiilissa sekoittaa tuotteita kokoonpanon, värin, tyylin ja värin mukaan vai voidaanko samassa toimipaikassa varastoida vain yhtä tietyn ominaisuuden tai ominaisuusyhdistelmän tuotetta.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217026"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831287"
 ---
 # <a name="location-product-dimension-mixing"></a>Tuotedimensioiden yhdistäminen sijainnissa
 
@@ -206,9 +204,9 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 
 1. Valitse **Tallenna**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Ostotilausrivien vastaanottaminen varasto-sovelluksessa
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Ostotilausrivien vastaanottaminen varastonhallinnan mobiilisovelluksessa
 
-1. Kirjaudu varastosovellukseen käyttäjänä, joka on otettu käyttöön varastossa *24*.
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä, joka on otettu käyttöön varastolle *24*.
 1. Valitse **Saapuvat**-valikko.
 1. Valitse **Ostotilausrivien vastaanotto**.
 1. Valitse **PUNUM**-kenttä ja syötä ostotilauksen numero.
