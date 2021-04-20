@@ -72,7 +72,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchangen käyttöönotto-ohje
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: 21Vianet vastaa Finance and Operations -sovelluksista Kiinassa
+                - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations -sovellukset Ranskassa
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
@@ -280,7 +280,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Stationin määrittäminen ja asentaminen
                   href: retail-hardware-station-configuration-installation.md
-                - name: Itsepalvelukomponenttien joukkokäyttöönotto
+                - name: Vanhojen itsepalvelukomponenttien joukkokäyttöönotto
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-komponenttien diagnostiikka- ja vianmääritystapahtumat
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1056,6 +1056,16 @@
                       href: author-header-module.md
                     - name: Alatunnistemoduuli
                       href: author-footer-module.md
+                - name: 'Sivu-, metatieto- ja skriptimoduulit'
+                  items:
+                    - name: Oletusarvoinen sivumoduuli
+                      href: default-page-module.md
+                    - name: Sivun yhteenvetomoduulit
+                      href: page-summary-module.md
+                    - name: Metatunnistemoduuli
+                      href: metatags-module.md
+                    - name: Ulkoiset ja sisäiset skriptimoduulit
+                      href: script-module.md
                 - name: Tuotetietojen sivumoduulit
                   items:
                     - name: Ostoruutumoduuli

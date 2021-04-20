@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: Power Portalin käyttö osapuolen tietomallin kanssa
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: Päivitä osapuolen osoitekirja ja yleinen osoitekirja
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: Huomautusten integrointi
                               href: data-entities/dual-write/notes-integration.md
                             - name: Määritysviite
@@ -714,6 +716,8 @@
               items:
                 - name: X++ ja virheenkorjausominaisuudet
                   href: dev-tools/new-x-debugger-features.md
+                - name: 'Visual Studio 2017:n vaatimukset X++:lle'
+                  href: dev-tools/developer-tools-vs2017.md
                 - name: X++-koodin virheenkorjaus
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-luokat pyyntö- tai vastausskenaarioissa
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: Voimassaolopäivä
               href: dev-tools/date-effectivity.md
-            - name: ISV-käyttöoikeudet
-              href: dev-tools/isv-licensing.md
-            - name: Paikalliset ISV-käyttöoikeudet
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: Riippumattomien ohjelmistotoimittajien kehitys
+              items:
+                - name: Link X++ -moduulit paketteihin ISV Studion avulla
+                  href: dev-tools/isv-studio-solutions.md
+                - name: ISV-käyttöoikeudet
+                  href: dev-tools/isv-licensing.md
+                - name: Paikalliset ISV-käyttöoikeudet
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: Yleinen tietosuoja-asetus (GDPR)
           items:
             - name: Yleinen tietosuoja-asetus (GDPR) – yleiskatsaus
@@ -1142,10 +1150,10 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform -integrointi
           items:
+            - name: Microsoft Power Platform- ja Finance and Operations -integrointi
+              href: power-platform/overview.md
             - name: Virtuaaliyksiköt
               items:
-                - name: Microsoft Power Platform- ja Finance and Operations -integrointi
-                  href: power-platform/overview.md
                 - name: Yksikkömallinnus
                   href: power-platform/entity-modeling.md
                 - name: Sovellusten elinkaaren hallinta
@@ -1448,12 +1456,14 @@
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Tuen hankkiminen Kiinassa 21Vianetin ylläpitämälle Finance and Operationsille
+            - name: Tuen hankkiminen Kiinassa 21Vianetin ylläpitämälle Finance and Operations
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations -sovellusten teknisen tuen määrittäminen
               href: lifecycle-services/support-experience.md
             - name: Finance and Operations -sovellusten tukikokemusten hallinta
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: Tuotannon tuki ja valvonta
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Järjestelmän hallinta
           items:
             - name: Järjestelmän hallinnan aloitussivu
