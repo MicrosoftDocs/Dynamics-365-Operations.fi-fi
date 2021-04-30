@@ -2,7 +2,8 @@
 title: ER-muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
 description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) muotojen määrittämistä siten, että ne käyttävät yrityskohtaisesti määritettyjä parametreja.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3802675b2fe0615f4c2ad682462a233c67f18f1a
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751175"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853490"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER-muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
 
@@ -86,7 +87,7 @@ Tässä esimerkissä luodaan määritys esimerkkiyritykselle Litware, Inc. Ennen
 
     ![Model.Data.Summary-tietolähde – verotapahtumien luettelo](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    Laskettu **Model.Data.Summary.Level**-kenttä on määritetty sisältämään ER-lauseke. Huomaa, että verokoodit (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** ja **InVAT0**) on koodattu pysyvästi tähän määritykseen. Tämän vuoksi tämä ER-muoto määräytyy sen yrityksen mukaan, jossa nämä verokoodit on määritetty.
+    Laskettu **Model.Data.Summary.Level**-kenttä on määritetty sisältämään ER-lauseke. Verokoodit (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** ja **InVAT0**) on koodattu pysyvästi tähän määritykseen. Tämän vuoksi tämä ER-muoto määräytyy sen yrityksen mukaan, jossa nämä verokoodit on määritetty.
 
     ![Laskettu Model.Data.Summary.Level-kenttä ja kovakoodatut verokoodit](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
@@ -153,12 +154,12 @@ Seuraavaksi lisätään uusi tietolähde määrittämään, miten yrityskäyttä
 1.  Valitse **Yhdistämismääritys**-välilehdessä **Lisää**.
 2.  Valitse **Muodon luetteloinnit\Haku**.
 
-    Olet juuri määrittänyt, että jokainen sääntö, jonka yrityskäyttäjät määrittävät verotustason tunnistamiseen, palauttaa ER-muodon luetteloinnin arvon. Huomaa, että **Haku**-tietolähdetyypin käyttö on mahdollista **Tietomalli**- ja **Dynamics 365 for Operations** -lohkoissa **Muodon luettelointi** -lohkon lisäksi. Tämän vuoksi ER-tietomallin luettelointeja ja sovelluksen luettelointeja voi käyttää määrittämään niiden arvojen tyypin, joka palautetaan kyseisen tyypin tietolähteiksi.
+    Olet juuri määrittänyt, että jokainen sääntö, jonka yrityskäyttäjät määrittävät verotustason tunnistamiseen, palauttaa ER-muodon luetteloinnin arvon. Huomaa, että **Haku**-tietolähdetyypin käyttö on mahdollista **Tietomalli**- ja **Dynamics 365 for Operations** -lohkoissa **Muodon luettelointi** -lohkon lisäksi. Tämän vuoksi ER-tietomallin luettelointeja ja sovelluksen luettelointeja voi käyttää määrittämään niiden arvojen tyypin, joka palautetaan kyseisen tyypin tietolähteiksi. Lisätietoja **haku** tietolähteistä on kohdassa [Määritä hakutietolähteet käyttämään ER-sovelluskohtaisia parametreja](er-lookup-data-sources.md).
     
 3.  Kirjoita **Nimi**-kenttään **Valitsin**.
 4.  Valitse **Muodon luettelointi** -kentässä **Verotustasojen luettelo**.
 
-    Määritit juuri, että yrityskäyttäjän on valittava kunkin tässä tietolähteessä määritettävän säännön osalta palautetuksi arvoksi jonkin muodon luetteloinnin **Verotustasojen luettelo** -arvon.
+    Määritit, että yrityskäyttäjän on valittava kunkin tässä tietolähteessä määritettävän säännön osalta palautetuksi arvoksi jonkin muodon luetteloinnin **Verotustasojen luettelo** -arvon.
     
 5.  Valitse **Muokkaa hakua**.
 6.  Valitse **Sarakkeet**.
@@ -190,7 +191,7 @@ Seuraavaksi lisätään uusi tietolähde määrittämään, miten yrityskäyttä
     
     ![Muodon suunnittelusivu ja uusi tietolähde](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Huomaa, että määritettyjen sääntöjen arviointi määräytyy niiden kenttien tietotyypin mukaan, jotka on valittu määrittämään kyseisten sääntöjen ehtoja. Kun valitset kentän, joka on määritetty joko **Numeerinen**- tai **Päivämäärä**-tietotyypin kentäksi, ehdot poikkeavat edellä käsitellyn **Merkkijono**-tietotyypin ehdoista. **Numeerinen**- ja **Päivämäärä**-kenttien säännöt on määritettävä arvoalueena. Säännön ehdon katsotaan sitten toteutuvan, kun tietolähteeseen välitetty arvo on määritetyllä alueella.
+    Määritettyjen sääntöjen arviointi määräytyy niiden kenttien tietotyypin mukaan, jotka on valittu määrittämään kyseisten sääntöjen ehtoja. Kun valitset kentän, joka on määritetty joko **Numeerinen**- tai **Päivämäärä**-tietotyypin kentäksi, ehdot poikkeavat edellä käsitellyn **Merkkijono**-tietotyypin ehdoista. **Numeerinen**- ja **Päivämäärä**-kenttien säännöt on määritettävä arvoalueena. Säännön ehdon katsotaan sitten toteutuvan, kun tietolähteeseen välitetty arvo on määritetyllä alueella.
     
     Seuraavassa kuvassa on esimerkki tämän tyyppisestä määrityksestä. **Merkkijono**-tietotyypin **Model.Data.Tax.Code**-kentän lisäksi **Reaaliluku**-tietotyypin **Model.Tax.Summary.Base**-kenttää käytetään määrittämään haun tietolähteen ehtoja.
     
@@ -306,7 +307,9 @@ Lisätietoja määritetyn **LE-tietojen haun oppimismuoto** -ER-muodon käyttäm
 
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
-[ER-muodon parametrien määrittäminen yrityskohtaisesti](er-app-specific-parameters-set-up.md)
+[Sähköisen raportoinnin muodon parametrien määrittäminen yrityskohtaisesti](er-app-specific-parameters-set-up.md)
+
+[Haun tietolähteiden määrittäminen ER-sovelluskohtaisten parametrien käyttämiseksi -ominaisuus](er-lookup-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

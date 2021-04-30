@@ -16,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809779"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899092"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Tuotannon suorituksen kuormitus on esikatseltavissa tällä hetkellä.
 > Joitakin liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun kuormituksen scale uniteja käytetään.
 
-Tuotannonohjauksessa pilvi- ja reunapalvelujen scale uniteissa on seuraavat ominaisuudet myös silloin, kun reunapalvelujen yksiköt eivät ole yhteydessä keskukseen:
+Tuotannon suorittamisessa asteikkoyksiköt toimittavat seuraavat toiminnot:
 
 - Koneenkäyttäjät ja työnjohtajat voivat käyttää operatiivista tuotantosuunnitelmaa.
 - Koneenkäyttäjät voivat pitää suunnitelman ajan tasalla suorittamalla erillisen valmistuksen ja prosessivalmistuksen töitä.
@@ -108,5 +109,6 @@ Scale unitissa käsiteltyjen valmistustöiden historiaa voi tarkastella kirjautu
 
 _Tuotannon keskuksesta scale unitiin viestikäsittely_ -työ käsittelee tiedot keskuksesta scale unitiin. Tämä työ käynnistyy automaattisesti, kun tuotannonohjauksen kuormitus otetaan käyttöön. Se voidaan kuitenkin suorittaa myös manuaalisesti koska tahansa valitsemalla **Tuotannonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta \> Tuotannon keskuksesta scale unitiin viestikäsittely**.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

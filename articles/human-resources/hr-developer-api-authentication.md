@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dffe1db98ba39fde2229e69bc70bdbf113ff6ad
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793678"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893445"
 ---
 # <a name="authentication"></a>Todennus
 
@@ -82,7 +82,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Jos kyseessä on Internet-sovellus, anna sovelluksen perusosoite. Tämä `http://localhost:31544` voi olla esimerkiksi paikallisessa tietokoneessa käytettävän Internet-sovelluksen URL-osoite. Tämän jälkeen käyttäjät kirjautuvat WWW-asiakasohjelmaan tämän URL-osoitteen avulla.
         - Jos kyseessä on yleinen asiakassovellus, anna URI-tunnus, jota Azure AD käyttää palauttamaan tunnuksen vastauksia. Kirjoita sovellukseen liittyviä arvoja, kuten `myapp://auth`.
 
-        Lisätietoja Internet-sovelluksista ja alkuperäisistä sovelluksista on [Microsoftin käyttäjätietoympäristössä (aiemmin Azure Active Directory sovelluskehittäjille)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        Lisätietoja Internet-sovelluksista ja alkuperäisistä sovelluksista on [Microsoftin käyttäjätietoympäristössä (aiemmin Azure Active Directory sovelluskehittäjille)](/azure/active-directory/develop/#quickstarts).
 
 5. Valitse **API-käyttöoikeudet**-kohdasta **Lisää käyttöoikeus**. Valitse sitten **API-liittymät, joita oma organisaationi käyttää** -välilehti, etsi **Dynamics 365 Human Resources** ja lisää **käyttäjä\_tekeytyminen**-oikeus sovellukseen. Henkilöstöhallinnon sovellustunnus on f9be0c49-aa22-4ec6-911a-c5da515226ff. Tämän tunnuksen avulla voit varmistaa, että olet valinnut oikean sovelluksen.
 

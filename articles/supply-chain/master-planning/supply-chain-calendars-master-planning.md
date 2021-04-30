@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841764"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908368"
 ---
 # <a name="calendars-and-master-planning"></a>Kalenterit ja pääsuunnittelu
 
@@ -90,7 +90,7 @@ Voit ilmaista päivämäärät, jolloin asiakas voi vastaanottaa toimituksia, m�
 
 Huomaa, että kullekin asiakkaalle voidaan sisällyttää vain yksi kalenteri. Jos asiakkaan kullekin osoitteelle on sisällytettävä kalenteri, voit luoda kullekin osoitteelle yhden asiakkaan ja määrittää sitten sille kalenterin. 
 
-Asiakkaan kalenteri ja toimituspäivän valvontamenetelmä vaikuttavat myyntitilausrivin pyydettyyn vastaanottopäivään. Lisätietoja aikaisimman toimituspäivän laskemistavasta [luvatuissa tilauksissa.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Asiakkaan kalenteri ja toimituspäivän valvontamenetelmä vaikuttavat myyntitilausrivin pyydettyyn vastaanottopäivään. Lisätietoja aikaisimman toimituspäivän laskemistavasta [luvatuissa tilauksissa.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Yrityksen lähetyskalenteri
 Voit ilmaista päivämäärät, jolloin yritys voi lähettää tavaroita, määrittämällä lähetyskalenterin valitsemalla **Organisaation hallinto > Organisaatiot > Yritykset**. Valitse yritys ja lisää kalenteri **Lähetyskalenteri**-kentän **Ulkomaankauppa ja logistiikka** -välilehdessä. Lähetyskalenteri toimii yrityksen kaikkien varastokalenterien oletusarvojen lähteenä. 

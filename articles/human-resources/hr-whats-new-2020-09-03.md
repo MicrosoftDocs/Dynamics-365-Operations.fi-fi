@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 965f3ca859c601d26470038a889b0f21d2bdff5f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 10978d8843e7bce2800d62b63e58152569be9631
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800114"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891766"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (3. syyskuuta 2020)
 
@@ -31,7 +31,7 @@ ms.locfileid: "5800114"
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3504. Joissakin otsikoissa suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
 
-Lisätietoja Human Resources -sovelluksen tulevista ominaisuuksista on kohdassa [Dynamics 365 Human Resources -sovelluksen vuoden 2019 julkaisuaallon 2 yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Lisätietoja Human Resources -sovelluksen päivitysprosessista on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
+Lisätietoja Human Resources -sovelluksen tulevista ominaisuuksista on kohdassa [Dynamics 365 Human Resources -sovelluksen vuoden 2019 julkaisuaallon 2 yleiskatsaus](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Lisätietoja Human Resources -sovelluksen päivitysprosessista on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
 ## <a name="in-this-release"></a>Tässä julkaisussa
 
@@ -76,21 +76,21 @@ Analyysiraportissa näkyvät nyt oikeat **palkkion** tiedot.
 
 Työntekijät voivat tarkastella ja pyytää lomaa työstä Microsoft Teamsissä. Ne voivat olla vuorovaikutuksessa botin kanssa luodakseen lomapyyntöjä. Lisätietoja:
 
-- [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 1 -suunnitelmassa
-- [Teamsin Human Resources -sovellus](https://go.microsoft.com/fwlink/?linkid=2127841) Human Resources -sovelluksen dokumentaatiossa
+- [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 1 -suunnitelmassa
+- [Teamsin Human Resources -sovellus](./hr-admin-teams-leave-app.md) Human Resources -sovelluksen dokumentaatiossa
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Human Resources -sovellus Teamsin esiversiotoiminnoissa
  
 -  **Ilmoitukset**: Poissaolopyyntöjen lähettäjät ja hyväksyjät saavat ilmoitukset Teamsin Human Resources -sovelluksessa. Hyväksyjät voivat hyväksyä tai hylätä poissaolopyyntöjä. Lähettäjille ilmoitetaan, jos pyyntö on hyväksytty tai hylätty. Lisätietoja:
-   - [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
-   - [Teamsin Human Resources -sovelluksen ilmoitusten käyttöönotto](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) Human Resources -sovelluksen dokumentaatiossa
-   - [Teams-ilmoitusten käyttöönotto tai käytöstäpoisto yksittäisille käyttäjille](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) Human Resources -sovelluksen dokumentaatiossa
-   - [Teams-ilmoitukset](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) Human Resources -sovelluksen dokumentaatiossa
-   - [Ryhmän lomakalenterin tarkasteleminen](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) Human Resources -sovelluksen dokumentaatiossa
+   - [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
+   - [Teamsin Human Resources -sovelluksen ilmoitusten käyttöönotto](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) Human Resources -sovelluksen dokumentaatiossa
+   - [Teams-ilmoitusten käyttöönotto tai käytöstäpoisto yksittäisille käyttäjille](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) Human Resources -sovelluksen dokumentaatiossa
+   - [Teams-ilmoitukset](./hr-teams-leave-app.md#respond-to-teams-notifications) Human Resources -sovelluksen dokumentaatiossa
+   - [Ryhmän lomakalenterin tarkasteleminen](./hr-teams-leave-app.md#view-your-teams-leave-calendar) Human Resources -sovelluksen dokumentaatiossa
  
 - **Esimiehen poissaolokalenteri**: Esimiehet voivat nähdä suorien alaisten hyväksytyt ja odottavat poissaolot kalenterinäkymässä. Tämän näkymän avulla on helppo hahmottaa, milloin ryhmä jäsenet ovat poissa töistä. Lisätietoja:
-   - [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
-   - [Ryhmän lomakalenterin tarkasteleminen](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) Human Resources -sovelluksen dokumentaatiossa
+   - [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
+   - [Ryhmän lomakalenterin tarkasteleminen](./hr-teams-leave-app.md#view-your-teams-leave-calendar) Human Resources -sovelluksen dokumentaatiossa
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>Toimen Itselle määritetyt työnimikkeet -luettelon määritysasetus (477004)
 
@@ -98,7 +98,7 @@ Uusi asetus on nyt käytettävissä toimelle **Itselle määritetyt työnimikkee
 
 Tämä toiminto edistää myös henkilöstön toimintojen lomakkeissa olevia työnkulkuasetuksia. Työnkulunasetukset näkyvät myös toiminnon nopean käytön pikavälilehdessä. Lisätietoja: 
 
-- [Organisaation ja henkilöstön hallinnan työnkulun käyttökokemuksen parannukset](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) Dynamics 365:n vuoden 2020 julkaisuaallon 2 suunnitelmassa
+- [Organisaation ja henkilöstön hallinnan työnkulun käyttökokemuksen parannukset](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) Dynamics 365:n vuoden 2020 julkaisuaallon 2 suunnitelmassa
 
 ![Minulle määritetyt työnimikkeet](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -117,7 +117,7 @@ Etujen hallinnan syykoodit yhdistetään pian olemassa oleviin syykoodeihin Huma
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
 

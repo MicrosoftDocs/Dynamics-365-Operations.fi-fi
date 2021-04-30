@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751229"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893575"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Toiminnosta riippuvaisten ER-kohteiden määrittäminen
 
@@ -60,7 +60,7 @@ Jos asiakirjatyypiksi valitaan **Mikä tahansa**, käyttäjän toiminnoksi valit
     - Jos **Lähetä**-toiminto annetaan suorituksen aikana, **Sähköposti**-ER-kohdetta käytetään.
     - Jos **Tulosta**-toiminto annetaan suorituksen aikana, **Tulostin**-ER-kohdetta käytetään.
 
-**Vapaatekstilasku (Excel)** -ER-muodolla voidaan esimerkiksi tulostaa [vapaatekstilasku](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new), kun se kirjataan. Luodun asiakirjan reititys edellyttää, että tämän ER-muodon ER-kohteet määritetään. Esimerkiksi seuraavat ER-kohteet on ehkä määritettävä suorittamaan seuraavat luodussa asiakirjassa:
+**Vapaatekstilasku (Excel)** -ER-muodolla voidaan esimerkiksi tulostaa [vapaatekstilasku](../../../finance/accounts-receivable/create-free-text-invoice-new.md), kun se kirjataan. Luodun asiakirjan reititys edellyttää, että tämän ER-muodon ER-kohteet määritetään. Esimerkiksi seuraavat ER-kohteet on ehkä määritettävä suorittamaan seuraavat luodussa asiakirjassa:
 
 - Asiakirjan arkistointi, jos ER-muoto suoritetaan mutta mitään toimintokoodia ei anneta (kun asiakirja esimerkiksi lähetetään sähköisesti).
 - Asiakirjan esikatselu selaimessa, kun käyttäjä suorittaa **Näytä**- toiminnon.
@@ -82,7 +82,7 @@ Seuraava kuva osoittaa, miten sama tulos saavutetaan myös määrittämällä ER
 
 Jos käyttäjän toiminnot valmistelleilla käyttäjillä on soveltuvat [käyttöoikeudet](electronic-reporting-destinations.md#security-considerations) määritettyjen kohdeasetusten muuttamiseen suorituksen aikana, ER-muotoa suoritettaessa avautuu valintaikkuna, jossa on vaihtoehto määritettyjen kohdeasetusten muuttamiseen. Tämä valintaikkuna on valinnainen, ja sen esiintyminen määräytyy sen mukaan, miten ER-muodon suorittamisen kutsuva ER-kehys on toteutettu. Jos tämä valintaikkuna avautuu, siinä olevat ER-kohteet otetaan käyttöön annetun käyttäjän toiminnon mukaisesti.
 
-Seuraavassa kuvassa on esimerkki **Sähköisen raportointimuodon kohteet** -valintaikkunasta, joka avautuu, kun vapaatekstilasku [kirjataan](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) ja **Vapaatekstilasku (Excel)** -ER-muoto suoritetaan luomaan tämä asiakirja, jos **Tulostin**-toiminto oli valmisteltu ja ER-kohteet oli määritetty tällä muodolla aiemmin tässä aiheessa kuvatulla tavalla.
+Seuraavassa kuvassa on esimerkki **Sähköisen raportointimuodon kohteet** -valintaikkunasta, joka avautuu, kun vapaatekstilasku [kirjataan](../../../finance/accounts-receivable/create-free-text-invoice-new.md) ja **Vapaatekstilasku (Excel)** -ER-muoto suoritetaan luomaan tämä asiakirja, jos **Tulostin**-toiminto oli valmisteltu ja ER-kohteet oli määritetty tällä muodolla aiemmin tässä aiheessa kuvatulla tavalla.
 
 ![Valintaikkuna, jossa on vaihtoehto suoritettavan ER-muodon aluksi määritettyjen ER-kohteiden muuttamiseen](./media/er-destination-action-dependent-02.gif)
 

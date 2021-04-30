@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743504"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893249"
 ---
 # <a name="expense-management-power-bi-content"></a>Kulujen hallinnan Power BI -sisältö
 
@@ -41,7 +41,7 @@ Versiosta 8.1 alkaen kulujen hallinnan kanssa on käytettävissä kaksi Power BI
 Kaikkien summat näytetään yrityksen valuuttana. Kaikkien yritysten tiedot näytetään, mutta voit tarvittaessa lisätä yrityssuodattimen. 
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
-Expense Admin Dashboard.pbix- ja Expense Personal Dashboard.pbix-tiedostot (Power BI -sisältö) sijaistee Microsoft Dynamics Lifecycle Servicesin (LCS) jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Expense Admin Dashboard.pbix- ja Expense Personal Dashboard.pbix-tiedostot (Power BI -sisältö) sijaistee Microsoft Dynamics Lifecycle Servicesin (LCS) jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Sisältö on käytettävissä kulujenhallinnan työtilassa upotetun Power BI -sisältönä. Kulun omistaja voi käyttää henkilökohtaisia kuluja itse, kun taas ostoreskontran käyttäjät ja esimiehet voivat käyttää kaikkien käyttäjien kulutietojen hallintasisältöä.
 
 ## <a name="refreshing-the-power-bi-content"></a>Power BI -sisällön päivittäminen

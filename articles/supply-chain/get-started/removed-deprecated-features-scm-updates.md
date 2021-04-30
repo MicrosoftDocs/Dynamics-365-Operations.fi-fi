@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821270"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909644"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 
@@ -31,7 +31,7 @@ Tämä ohjeaihe päivitetään, koska Dynamics 365 Supply Chain Managementissa o
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi.
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Supply Chain Managementin version 10.0.18 poistetut tai vanhentuneet ominaisuudet
 
@@ -39,7 +39,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Alkaen huhtikuusta 2021 *Dynamics 365 for Finance and Operations – varastointi* (varastosovellus) on vanhentunut, eikä sitä tueta huhtikuun 2022 jälkeen. Sen korvaa nyt *varastonhallinnan mobiilisovellus*, joka on julkaistu Supply Chain Managementin version 10.0.17 mukana. Uusi sovellus on täydellinen korvaava tuote, mutta käyttää samaa pohjana olevaa kehystä, mikä helpottaa siirtymistä sen käyttöön. Tarvittaessa näitä kahta sovellusta voidaan käyttää vierekkäin, jotta käyttäjät voivat asteittain opetella käyttämään uutta sovellusta.<br><br>Lisätietoja uudesta varastonhallinnan mobiilisovelluksesta on kohdissa [Varastonhallinnan mobiilisovellus](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) ja [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md). |
+| **Poiston tai vanhentumisen syy** | Alkaen huhtikuusta 2021 *Dynamics 365 for Finance and Operations – varastointi* (varastosovellus) on vanhentunut, eikä sitä tueta huhtikuun 2022 jälkeen. Sen korvaa nyt *varastonhallinnan mobiilisovellus*, joka on julkaistu Supply Chain Managementin version 10.0.17 mukana. Uusi sovellus on täydellinen korvaava tuote, mutta käyttää samaa pohjana olevaa kehystä, mikä helpottaa siirtymistä sen käyttöön. Tarvittaessa näitä kahta sovellusta voidaan käyttää vierekkäin, jotta käyttäjät voivat asteittain opetella käyttämään uutta sovellusta.<br><br>Lisätietoja uudesta varastonhallinnan mobiilisovelluksesta on kohdissa [Varastonhallinnan mobiilisovellus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) ja [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md). |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, korvataan uudella varastonhallinnan mobiilisovelluksella. |
 | **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – varastosovellus |
 | **Käytön asetukset**              | Pilsi ja paikallinen käyttöönotto |
@@ -65,7 +65,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |
 | **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – Pääsuunnittelu |
 | **Käytön asetukset**              | Vain pilvipalvelussa. Suunnittelun optimointia ei tueta paikallisilla käyttöönotoilla. |
-| **Tila**                         | Vanhentunut. 1. lokakuun 2021 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Asiakkaiden on käytettävä valmistusskenaarioissa suunnittelun optimointia pääsuunnittelun laskelmissa. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](https://go.microsoft.com/fwlink/?linkid=2105830). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää Supply Chain Managementin pääsuunnittelumoduulia valmistusskenaarioissa huhtikuun 2021 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
+| **Tila**                         | Vanhentunut. 1. huhtikuun 2022 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Asiakkaiden on käytettävä valmistusskenaarioissa suunnittelun optimointia pääsuunnittelun laskelmissa. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](../master-planning/planning-optimization/planning-optimization-overview.md). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää Supply Chain Managementin pääsuunnittelumoduulia valmistusskenaarioissa huhtikuun 2022 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Supply Chain Managementin version 10.0.11 poistetut tai vanhentuneet ominaisuudet
 
@@ -77,7 +77,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |
 | **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – Pääsuunnittelu |
 | **Käytön asetukset**              | Vain pilvipalvelussa. Suunnittelun optimointia ei tueta paikallisilla käyttöönotoilla. |
-| **Tila**                         | Vanhentunut. 1. huhtikuun 2021 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Jakeluskenaarioiden osalta asiakkaiden on käytettävä suunnittelun optimointia pääsuunnittelun laskennoissa. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](https://go.microsoft.com/fwlink/?linkid=2105830). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää toimitusketjun hallinnan pääsuunnittelumoduulia jakeluskenaarioissa huhtikuun 2021 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
+| **Tila**                         | Vanhentunut. 1. huhtikuun 2021 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Jakeluskenaarioiden osalta asiakkaiden on käytettävä suunnittelun optimointia pääsuunnittelun laskennoissa. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](../master-planning/planning-optimization/planning-optimization-overview.md). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää toimitusketjun hallinnan pääsuunnittelumoduulia jakeluskenaarioissa huhtikuun 2021 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poistettujen tai vanhentuneiden toimintojen aiemmat ilmoitukset
 

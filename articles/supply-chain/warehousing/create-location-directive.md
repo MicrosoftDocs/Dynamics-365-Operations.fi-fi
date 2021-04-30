@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838391"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911293"
 ---
 # <a name="work-with-location-directives"></a>Sijaintidirektiivien käyttäminen
 
@@ -44,8 +44,8 @@ Ennen kuin voit luoda sijaintidirektiivin, sinun on varmistettava, että edellyt
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
 1. Luo varasto.
 1. Valitse **Varasto**-pikavälilehdellä **Käytä varastonhallintaprosesseja** -vaihtoehdon arvoksi *Kyllä*.
-1. Luo toimipaikat, toimipaikkojen tyypit, toimipaikkojen profiilit ja toimipaikkojen muodot. Lisätietoja on kohdassa [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Luo toimipaikkoja, alueita ja vyöhykeryhmiä. Lisätietoja on kohdassa [Varaston määrittäminen](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) ja [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Luo toimipaikat, toimipaikkojen tyypit, toimipaikkojen profiilit ja toimipaikkojen muodot. Lisätietoja on kohdassa [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Luo toimipaikkoja, alueita ja vyöhykeryhmiä. Lisätietoja on kohdassa [Varaston määrittäminen](../../commerce/channels-setup-warehouse.md) ja [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Sijaintidirektiivien työtilaustyypit
 
@@ -143,7 +143,7 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
 - **Direktiivikoodi** – Valitse liitettävän työmallin tai täydennysmallin direktiivikoodi. Voit luoda **Direktiivikoodi**-sivulla uusia koodeja, joilla työmallit tai täydennysmallit voidaan yhdistää sijaintidirektiiveihin. Direktiivikoodeja voidaan käyttää myös linkin luomiseen työmallin rivin ja sijaintidirektiivin välille (kuten lastausovi tai väliaikainen sijainti).
 
     > [!TIP]
-    > Jos direktiivikoodi on määritetty, järjestelmä ei etsi sijaintidirektiivejä järjestysnumeron perustella, kun työ on luotava. Sen sijaan haku tehdään direktiivikoodin perusteella. Tällä tavoin voit tarkentaa tietyssä työmallin vaiheessa käytettävää sijaintimallia. Kyse voi olla esimerkiksi materiaalien valmisteluvaihe.
+    > Jos direktiivikoodi on määritetty, järjestelmä ei etsi sijaintidirektiivejä järjestysnumeron perustella, kun työ on luotava. Sen sijaan haku tehdään direktiivikoodin perusteella. Tällä tavoin voit tarkentaa tietyssä työmallin vaiheessa käytettävää sijaintidirektiiviä. Kyse voi olla esimerkiksi materiaalien valmisteluvaihe.
 
 - **Useita varastointiyksiköitä** – Valitse tässä asetukseksi *Kyllä*, jos haluat, että sijainnissa voi käyttää useita varastointiyksiköitä. Useita varastointiyksiköitä voidaan ottaa käyttöön esimerkiksi lastausovisijainnissa. Jos otat useat varastointiyksiköt käyttöön, hyllytyssijainti määritetään odotetusti työssä. Hyllytyssijainti voi kuitenkin käsitellä vain moninimikkeisen hyllytyksen (jos työ sisältää useita varastointiyksiköitä, joita on kerättävä ja hyllytettävä). Se ei voi käsitellä yhden varastointiyksikön hyllytystä. Jos asetuksena on *Ei*, hyllytyssijainti määritetään vain, jos hyllytyksessä on vain yhdenlaista varastointiyksikköä.
 
@@ -249,7 +249,7 @@ Tätä skenaariota varten sinun on määritettävä kaksi sijaintidirektiivitoim
 
 ## <a name="next-step"></a>Seuraava vaihe
 
-Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työmallin koodiin työn luomista varten. Lisätietoja on kohdassa [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työmallin koodiin työn luomista varten. Lisätietoja on kohdassa [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

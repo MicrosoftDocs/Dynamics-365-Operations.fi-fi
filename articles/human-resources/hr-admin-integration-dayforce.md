@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805079"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890001"
 ---
 # <a name="configure-integration-with-dayforce"></a>Dayforceen integroinnin määritys
 
@@ -53,8 +53,8 @@ Kun integrointi otetaan käyttöön, tietojen viennin paketti ja tiedostot luoda
 
 Lisätietoja Azure-tallennustilien ja Azure-tallennusyhteyden yhteysmerkkijonoista seuraavissa Azure-artikkeleissa:
 
-- [Lisätietoja Azure-tallennustileistä](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Määritä Azure-tallennustilan yhteysmerkkijonot](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Lisätietoja Azure-tallennustileistä](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Määritä Azure-tallennustilan yhteysmerkkijonot](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniset tiedot, kun palkanlaskennan integrointi on otettu käyttöön
 
@@ -65,6 +65,7 @@ Palkanlaskennan integroinnin käytöstäpoistamisella on kaksi pääasiallista v
 
 > [!NOTE]
 > SFTP-päätepisteeseen siirretty tietopaketti salataan paketin yksilöllisellä avaimella. Avain on Azure Key Vaultissa, jota vain Ceridian voi käyttää. Tietopaketin sisällön salausta ei voi purkaa eikä sisältöä tutkia. Jos tietopaketin sisältöä on tarkasteltava, Palkanlaskennan integroinnin vienti -tietoprojekti on vietävä manuaalisesti, jonka jälkeen on ladattava ja avattava. Manuaalisessa viennissä ei käytetä salausta eikä pakettia siirretä.
+> Jos integroinnin tiedostot lähetetään Dynamics 365 Human Resources UAT- tai eristysympäristöstä Ceridian Dayforce -testiympäristöön, voit käyttää seuraavaa key vault -URL-osoitetta: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Määritä tietosi 
 
@@ -124,10 +125,10 @@ Dayforce luo seuraavat vähennykset, jotka perustuvat palkanlaskennan vaikutukse
 
 Lisätietoja etuohjelman määrittämisestä ja hallitsemisesta seuraavissa artikkeleissa:
 
-- [Työsuhde-etuusohjelman toteuttaminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Luo uusi etu](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Määritä edun oikeutussäännöt ja -käytännöt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Rekisteröi etuja työntekijöille ja poista niitä](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Työsuhde-etuusohjelman toteuttaminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Luo uusi etu](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Määritä edun oikeutussäännöt ja -käytännöt](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Rekisteröi etuja työntekijöille ja poista niitä](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensaatio 
 
@@ -137,20 +138,20 @@ Dayforce käyttää kompensaatiotietoja laskeakseen työntekijän tunti- tai vuo
 
 Katso lisätietoja kompensaatiosuunnitelmista seuraavista artikkeleista:
 
-- [Kiinteiden kompensaatiosuunnitelmien luominen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Muuttuvien kompensaatiosuunnitelmien luominen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Palkka- ja kompensaatiorakenteen ja -suunnitelmien kehittäminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Kompensaation käsittely](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Kompensaatioprosessin määrittäminen ja tulosten laskeminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Työntekijän rekisteröiminen kiinteän kompensaation suunnitelmaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Kiinteiden kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Muuttuvien kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Palkka- ja kompensaatiorakenteen ja -suunnitelmien kehittäminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Kompensaation käsittely](/dynamics365/unified-operations/talent/process-compensation)
+- [Kompensaatioprosessin määrittäminen ja tulosten laskeminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Työntekijän rekisteröiminen kiinteän kompensaation suunnitelmaan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Työt 
 
 Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Lisätietoja on seuraavissa artikkeleissa:
 
-- [Työn komponenttien määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Uusien töiden määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Työn komponenttien määrittäminen](/dynamics365/unified-operations/talent/create-job)
+- [Uusien töiden määrittäminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Toimet
 
@@ -174,8 +175,8 @@ Mikäli useita toimia samalla osastolla liittyy samaan työhön, ne yhdistetää
 
 Lisätietoja on seuraavissa artikkeleissa:
 
-- [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Toimien määritys](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Toimien määritys](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Osastot
 
@@ -183,8 +184,8 @@ Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-
 
 Lisätietoja on seuraavissa artikkeleissa:
 
-- [Osaston luominen ja liittäminen osastohierarkiaan](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Määritä uudet osastot](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Osaston luominen ja liittäminen osastohierarkiaan](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Määritä uudet osastot](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Maksujaksot ja maksukaudet
 

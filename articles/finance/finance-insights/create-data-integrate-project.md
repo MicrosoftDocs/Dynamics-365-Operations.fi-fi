@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818677"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867444"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Tietojen integrointiprojektin luominen (esiversio)
 
@@ -59,6 +59,7 @@ Tässä ohjeaiheessa kerrotaan, miten tietojen integrointiprojekti luodaan.
     1. Luo seuraavien mallien tietojen integrointiprojektit käyttämällä juuri luomaasi yhteysjoukkoa:
 
         - Asiakasmaksujen tietojen tulokset kävijä tietojen tulokset (CDS:stä Fin and Opsiin)
+            - Jos käytössä on 10.0.17 tai myöhempi versio, sinun on käytettävä mallia nimeltään Asiakasmaksujen tiedot -tulos (CDS:stä Fin and Opsiin 10.0.17+).
         - Kassavirran aikasarjojen tulokset (CDS:stä Fin and Opsiin)
         - Budjetin aikasarjojen tulokset (CDS:stä Fin and Opsiin)
 

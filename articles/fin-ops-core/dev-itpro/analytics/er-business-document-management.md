@@ -2,7 +2,7 @@
 title: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja ER-kehyksen liiketoiminnan asiakirjojen hallintatoiminnon käyttämisestä.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749534"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891302"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -45,9 +45,9 @@ Yritystiedostojen hallinnan käyttäminen mallien muokkaamiseen Excel- tai Word-
 
 ## <a name="business-document-availability"></a>Yritysasiakirjojen käytettävyys
 
-Täydellinen luettelo kaikista lokakuun 2019 julkaisun suunnitelluista raporteista on kohdassa [Määritettävien liiketoiminta-asiakirjaraportointi Wordissa ja Excelissä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+Täydellinen luettelo kaikista lokakuun 2019 julkaisun suunnitelluista raporteista on kohdassa [Määritettävien liiketoiminta-asiakirjaraportointi Wordissa ja Excelissä](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-Täydellinen luettelo kaikista lokakuun 2020 julkaisun suunnitelluista raporteista on kohdassa [Määritettävät liiketoiminta-asiakirjat – Word-mallit](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+Täydellinen luettelo kaikista lokakuun 2020 julkaisun suunnitelluista raporteista on kohdassa [Määritettävät liiketoiminta-asiakirjat – Word-mallit](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Lisää raportteja tulee saataville tulevissa julkaisuissa. Lisäraporttien erityisilmoitukset lähetetään erikseen. Lisätietoja tällä hetkellä saatavilla olevien raporttien luettelon tarkistamisesta on jäljempänä kohdassa [Luettelo Financessa julkaistuista määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä](#list-of-configurations-cbd).
 
@@ -272,7 +272,23 @@ Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, v
 
 ![Uuden mallin luominen vahvistamalla muokkausprosessin alkaminen](./media/BDM-Overview-EditingTemplate4.png)
 
+Jos palveluntarjoajaa ei ole, sen luomista tarjotaan. Jos aktiivista toimittajaa ei ole, se voidaan valita aktivoitavaksi.
+
+Jos haluat luoda tarjoajan, muuta tarjoajan nimi **Nimi**-kentässä, päivitä uuden tarjoajan **Internet-osoite** kenttään ja vahvista valitsemalla **OK**.
+
+   ![Uuden tarjoajan luominen BDM:ssä](./media/bdm_create_provider.png)
+
+Voit aktivoida aiemmin luodun tarjoajan valitsemalla **Konfigurointipalvelu**-kentästä tarjoajan nimen ja valitsemalla **OK**, jos haluat määrittää tarjoajan aktiiviseksi.
+
+   ![Tarjoajan aktivoiminen BDM:ssä](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Kunkin BDM-malli viittaa palveluntarjoajaan kokoonpanon tekijänä. Siksi mallissa tarvitaan aktiivista toimittajaa.
+
+
 **Uusi tiedosto** -vaihtoehto on aina käytettävissä siinä ER-muotomäärityksen mallissa, jolla ei ole uutta versiota ja jonka toimittaa kulloinenkin ja toinen palvelu (tässä esimerkissä Microsoft). Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
+
+
 
 ### <a name="start-editing-a-template"></a>Aloita mallin muokkaus
 
@@ -419,7 +435,7 @@ Kirjauduit todennäköisesti Azure AD -toimialueen nykyisen sovelluksen esiintym
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Luettelo Financessa julkaistuista määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä
 
-Financen ER-määritysten [luetteloa](general-electronic-reporting.md#list-of-configurations) päivitetään jatkuvasti. Tällä hetkellä tuettujen ER-määritysten luetteloa voi tarkastella avaamalla [yleisen tietovaraston](er-download-configurations-global-repo.md). Yleinen tietovarasto voidaan [suodattaa](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) näyttämään luettelo määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä.
+Financen ER-määritysten [luetteloa](general-electronic-reporting.md#list-of-configurations) päivitetään jatkuvasti. Tällä hetkellä tuettujen ER-määritysten luetteloa voi tarkastella avaamalla [yleisen tietovaraston](er-download-configurations-global-repo.md). Yleinen tietovarasto voidaan [suodattaa](../../../finance/localizations/enhanced-filtering-global-repo.md) näyttämään luettelo määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä.
 
 ![Yleisen tietovaraston sisällön suodattaminen Konfiguraatiosäilö-sivulla](./media/bdm-overview-filterglobalrepo.gif)
 

@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829977"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909916"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.16 (helmikuu 2021)
 
@@ -33,17 +33,17 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
+Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
-- [Mukautettava tuotannon käyttöliittymä](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Lisätietoja on kohdassa [Laitteen määrittäminen suorittamaan tuotannon käyttöliittymä](../production-control/production-floor-execution-setup.md).
+- [Mukautettava tuotannon käyttöliittymä](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Lisätietoja on kohdassa [Laitteen määrittäminen suorittamaan tuotannon käyttöliittymä](../production-control/production-floor-execution-setup.md).
 
-- [Dynamics 365 Supply Chain Managementin varaston näkyvyyden lisäosa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Lisätietoja on kohdassa [Varaston näkyvyyden lisäosa](../inventory/inventory-visibility.md)
+- [Dynamics 365 Supply Chain Managementin varaston näkyvyyden lisäosa](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Lisätietoja on kohdassa [Varaston näkyvyyden lisäosa](../inventory/inventory-visibility.md)
 
 - Työtunnusten yhdistetty numerosarja<br> - Lisätietoja: [Työtunnusten yhdistetty numerosarja](../production-control/unified-job-ids.md).
 
-- [Rekisterikilpien tarkistaminen lähdeasiakirjan rivien perusteella](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Lisätietoja on kohdassa [Varastomäärityksen yleiskatsaus](../warehousing/warehouse-configuration.md).
+- [Rekisterikilpien tarkistaminen lähdeasiakirjan rivien perusteella](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Lisätietoja on kohdassa [Varastomäärityksen yleiskatsaus](../warehousing/warehouse-configuration.md).
 
-- [Varastonhallinnan lähtevän kuorman visualisointi](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Lisätietoja on kohdassa [Lähtevän kuorman visualisointi](../warehousing/outbound-workload-visualization.md).
+- [Varastonhallinnan lähtevän kuorman visualisointi](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Lisätietoja on kohdassa [Lähtevän kuorman visualisointi](../warehousing/outbound-workload-visualization.md).
 
 Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
@@ -99,7 +99,7 @@ Lisätietoja kunkin version 10.0.16 päivityksen virheenkorjauksista saa kirjaut
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

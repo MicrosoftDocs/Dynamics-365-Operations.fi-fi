@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: f21e9b94b5aa30b2cdb18692e8cc9c8d00f758d6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805031"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890073"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Aikataulutettujen BYOD-erätöiden optimointi
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä ohjeaiheessa käsitellään suorituskyvyn optimointia käytettäessä oman tietokannan tuontitoimintoa (BYOD). Lisätietoja oman tietokannan tuonnista on kohdassa [Oman tietokannan tuonti (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
+Tässä ohjeaiheessa käsitellään suorituskyvyn optimointia käytettäessä oman tietokannan tuontitoimintoa (BYOD). Lisätietoja oman tietokannan tuonnista on kohdassa [Oman tietokannan tuonti (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Tietojen viennin suorituskykyyn liittyviä tietoja
 
-Kun entiteetit on julkaistu kohdetietokantaan, tiedot voidaan siirtää **Tiedonhallinta**-työtilan vientitoiminnolla. Vientitoiminnolla voi määrittää vähintään yhden entiteetin sisältävän tietojen siirtotyön. Lisätietoja tietojen viennistä on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
+Kun entiteetit on julkaistu kohdetietokantaan, tiedot voidaan siirtää **Tiedonhallinta**-työtilan vientitoiminnolla. Vientitoiminnolla voi määrittää vähintään yhden entiteetin sisältävän tietojen siirtotyön. Lisätietoja tietojen viennistä on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Voit viedä tietoja **Vie**-sivulla erilaisiin kohdetietomuotoihin, kuten CSV-tiedostoon. Tämä sivu tukee myös SQL-tietokantoja toisena kohteena.
 
@@ -61,7 +61,7 @@ Suorituskyky pysyy hyvänä, kun BYOD-erätöiden aikataulutuksessa käytetään
 
 Kun entiteetti lisätään tietojen vientiin, valittavana on joko lisäävä siirto (vienti) tai täydellinen siirto. Täydellinen siirto poistaa kaikki entiteetin tietueet BYOD-tietokannassa. Tämän jälkeen lisätään Human Resources -entiteetin nykyinen tietuejoukko.
 
-Lisäävää siirtoa varten muutosten seuranta on otettava käyttöön jokaisessa entiteetissä **Entiteetit**-sivulla. Lisätietoja on kohdassa [Muutosten seurannan ottaminen käyttöön yksiköille](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+Lisäävää siirtoa varten muutosten seuranta on otettava käyttöön jokaisessa entiteetissä **Entiteetit**-sivulla. Lisätietoja on kohdassa [Muutosten seurannan ottaminen käyttöön yksiköille](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Jos valitset lisäävän siirron, ensimmäinen siirto on aina täydellinen siirto. SQL seuraa muutoksia tästä ensimmäisestä täydellisestä siirrosta alkaen. Kun uusi tietue lisätään tai kun tietue päivitetään tai poistetaan, muutos näkyy myös kohde-entiteetissä.
 
@@ -88,14 +88,14 @@ Oman tietokannan tuontitoiminnolla on seuraavat rajoitukset:
 
 **Ongelma:** Kun entiteetille tehdään täydellinen siirto, näkyvissä on suuri joukko tietueita omaa tietokantaa tuotaessa ja **select**-lauseketta käytettäessä. Lisäävää siirtoa tehtäessä omaa tietokantaa tuotaessa näkyvissä on vain muutama tietue. Vaikuttaa siltä, että lisäävä siirto poisti kaikki tietueet ja lisäsi vain muuttuneet tietueet omassa tuodussa tietokannassa.
 
-**Ratkaisu:** SQL:n muutosten seurantataulukoiden tila ei ole ehkä odotettu. Näissä tilanteissa entiteetin muutosten seuranta kannattaa poistaa käytöstä ja ottaa sitten uudelleen käyttöön. Lisätietoja on kohdassa [Muutosten seurannan ottaminen käyttöön yksiköille](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+**Ratkaisu:** SQL:n muutosten seurantataulukoiden tila ei ole ehkä odotettu. Näissä tilanteissa entiteetin muutosten seuranta kannattaa poistaa käytöstä ja ottaa sitten uudelleen käyttöön. Lisätietoja on kohdassa [Muutosten seurannan ottaminen käyttöön yksiköille](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Tietojen hallinnan yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
-[Oman tietokannan tuonti (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
-[Tietojen tuonti- ja vientityöt – yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
-[Muutosten seurannan ottaminen käyttöön yksiköille](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+[Tietojen hallinnan yleiskatsaus](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Oman tietokannan tuonti (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Tietojen tuonti- ja vientityöt – yleiskatsaus](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Muutosten seurannan ottaminen käyttöön yksiköille](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

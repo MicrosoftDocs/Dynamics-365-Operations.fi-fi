@@ -1,7 +1,7 @@
 ---
 title: Konsernin sisäisen suunnitelman luominen
 description: Tässä menettelyssä kuvataan, miten luot konsernin sisäisen suunnitelman.
-author: ShylaThompson
+author: ChristianRytt
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0fb787955a67776b24b626eb23b7c1a9df87a0c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f8cf4ed879b6b2202d0b0f1f45052f5e21452967
+ms.sourcegitcommit: 9b07d536b4bd8addfbdba42d2429c9fedb664635
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841692"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867347"
 ---
 # <a name="create-an-intercompany-plan"></a>Konsernin sisäisen suunnitelman luominen
 
@@ -26,20 +26,21 @@ ms.locfileid: "5841692"
 
 Tässä menettelyssä kuvataan, miten luot konsernin sisäisen suunnitelman. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
+## <a name="set-up-an-intercompany-planning-group"></a>Määritä konsernin sisäinen suunnitteluryhmä
 
-## <a name="set-up-an-intercompany-planning-group"></a>Määritä konsernin sisäinen suunnitteluryhmä 
-1. Siirry **siirtymisruudussa** **Moduulit > Pääsuunnittelu > Asetukset > Konsernin sisäiset suunnitteluryhmät.** 
+1. Siirry **siirtymisruudussa** **Moduulit > Pääsuunnittelu > Asetukset > Konsernin sisäiset suunnitteluryhmät.**
 2. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa Nimi-kenttää arvolla 10.
 3. Merkitse valittu rivi luettelossa.
 4. Valitse **Poista**. Tämä vaihe on tarpeen konsernin sisäisen suunnitelma-ajon lyhentämiseksi.   Konsernin sisäisessä suunnittelussa ajetaan kaikkien suunnitteluryhmän yritysten pääsuunnittelu, ajoitusjärjestyksessä pienimmästä alkaen.  
 5. Valitse **Kyllä**.
 6. Sulje sivu.
 
-## <a name="create-an-intercompany-plan"></a>Konserniyritysten välisen suunnitelman luominen
+## <a name="create-an-intercompany-master-plan"></a>Konserniyritysten välisen pääsuunnitelman luominen
+
 1. Siirry **siirtymisruudussa** **Moduulit > Pääsuunnittelu > Työtilat > Pääsunnittelu.**
 2. Valitse **Konsernin sisäinen pääsuunnittelu**.  
 3. Avaa haku napsauttamalla **Konsernin sisäinen suunnitteluryhmä** -kentässä avattavan valikon painiketta.
-4. Napsauta luettelossa valitulla rivillä olevaa linkkiä. Valitse konsernin sisäinen suunnitteluryhmä 10.  
+4. Valitse luettelossa valitulla rivillä oleva linkki. Valitse konsernin sisäinen suunnitteluryhmä 10.  
 5. Kirjoita **Konsernin sisäisten suunnitteluiteraatioiden määrä** -kenttään arvo 2. Konsernin sisäisellä suunnitteluryhmällä 10 on kaksi jäsentä. Jotta viiveet voisi täyttää lähdeyrityksestä (USMF) asiakasyritykseen (DEMF), konsernin sisäinen suunnittelu on ajettava molemmissa yrityksissä kahdesti. Ensimmäinen iteraatio täyttää kysynnän ja tunnistaa lähdeyrityksen (USMF) viiveet. Toisen iteraatio täyttää viiveet yritysten välillä.  
 6. Valitse Täydellinen laskenta -vaihtoehto **Ensimmäinen iteraatio** -kentässä.
 7. Valitse Täydellinen laskenta -vaihtoehto **Seuraavat iteraatiot** -kentässä.
@@ -47,8 +48,9 @@ Tässä menettelyssä kuvataan, miten luot konsernin sisäisen suunnitelman. Tä
 9. Valitse **OK**.
 
 ## <a name="view-the-result-of-the-plan"></a>Näytä suunnitelman tulos
+
 1. Avaa haku valitsemalla **Suunnitelma**-kentässä avattavan valikon painike.
-2. Napsauta luettelossa valitulla rivillä olevaa linkkiä. Napsauta StaticPlan-linkkiä. Sinun on oltava USMF-yrityksessä.  
+2. Valitse luettelossa valitulla rivillä oleva linkki. Valitse StaticPlan-linkki. Sinun on oltava USMF-yrityksessä.  
 3. Valitse **Suunnitellut tilaukset**.
 
 

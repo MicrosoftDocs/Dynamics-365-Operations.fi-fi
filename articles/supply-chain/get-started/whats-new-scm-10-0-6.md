@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 2ea4da7a656a6696f41848575e37d2381fd3d3f1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 83798af9c39ae8845125026903741882356d8845
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809611"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909326"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio10.0.6 (marraskuu 2019)
 
@@ -56,7 +56,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.6 sisältää Platform updat
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: vuoden 2019 julkaisuaallon 2 suunnitelma
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2019 julkaisuaallon 2 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2019 julkaisuaallon 2 suunnitelma](/dynamics365-release-plan/2019wave2/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

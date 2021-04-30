@@ -13,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a95dd6caf01e2c1079d6d9690b52e9ef65d87ea8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0df3f840162cf93c9e9f5f34a22e8b49171ea71f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839957"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891158"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-tiedostojen tuominen
 
@@ -114,7 +114,7 @@ Kun tuot LCS:n muotokonfiguraatioita, tuot koko konfiguraatiopuun, johon myös m
  - **Pain.002** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan pain.002-tiedosto toimittajan maksujen siirtokirjauskansioon.
  - **Camt.054** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan camt.054-tiedosto toimittajan maksujen siirtokirjauskansioon. Samaa muotokonfiguraatiota käytetään asiakkaan maksujen tuontitoiminnossa mutta Maksumallin yhdistämismääritykset kohteeseen ISO20022 -konfiguraatiossa käytetään erilaista yhdistämismääritystä.
 
-Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md).
+Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801164"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889953"
 ---
 # <a name="configure-integration-with-finance"></a>Integraation määrittäminen Financen kanssa
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801164"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Integroidaksesi Dynamics 365 Human Resources -järjestelmän Dynamics 365 Financeen, voit käyttää henkilöresursseja rahoitusmalliin [Tietojen integrointiohjelmassa](https://docs.microsoft.com/powerapps/administrator/data-integrator). Henkilöstöresurssit rahoitusmalliin mahdollistavat töiden, asemien ja työntekijöiden tiedonkulun. Malli sallii tietojen kulun henkilöstöresursseista rahoitukseen, mutta se ei salli tietojen juoksuttamista henkilöstöresursseihin.
+Integroidaksesi Dynamics 365 Human Resources -järjestelmän Dynamics 365 Financeen, voit käyttää henkilöresursseja rahoitusmalliin [Tietojen integrointiohjelmassa](/powerapps/administrator/data-integrator). Henkilöstöresurssit rahoitusmalliin mahdollistavat töiden, asemien ja työntekijöiden tiedonkulun. Malli sallii tietojen kulun henkilöstöresursseista rahoitukseen, mutta se ei salli tietojen juoksuttamista henkilöstöresursseihin.
 
 ![Human Resourcesista Financeen -integrointivirta](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Tietojen integrointi henkilöstöhallinnosta talouteen yrittää yhdistää tiet
 
 Tämä voi tapahtua kohteessa **Työntekijä**, jossa vastaavuuden perusteena on **henkilöstönumero** ja **Toimet**. Töissä ei käytetä samoja numerosarjoja. Tuloksena tästä, jos sama työtunnus havaitaan sekä henkilöstöhallinnossa että taloudessa, henkilöstöhallinnon tiedot korvaavat Dynamics 365 Financen tiedot. 
 
-Päällekkäisiin tunnuksiin liittyvien ongelmien ehkäisemiseksi voit joko lisätä etuliitteen [numerosarjaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) tai määrittää numerosarjan alkamaan sellaisesta numerosta, joka ylittää toisen järjestelmän numeroalueen. 
+Päällekkäisiin tunnuksiin liittyvien ongelmien ehkäisemiseksi voit joko lisätä etuliitteen [numerosarjaan](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) tai määrittää numerosarjan alkamaan sellaisesta numerosta, joka ylittää toisen järjestelmän numeroalueen. 
 
 Työntekijän osoitteessa käytettävä sijaintitunnus ei ole osa numerosarjaa. Kun työntekijän osoitetta integroidaan Human Resourcesista Financeen, saatetaan luoda osoitetietueen kaksoiskappale, jos työntekijän osoite on jo olemassa Financessa. 
 

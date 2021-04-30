@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 16d5c13c0fbff8c5033b0d1e9dd0d07851521126
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840770"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908997"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Asiakasportaalin mukauttaminen ja käyttäminen
 
@@ -33,14 +33,14 @@ Asiakasportaali tarjoaa joitakin valmiita verkkosivuja ja toimintoja. Seuraavass
 
 Seuraavissa ohjeaiheissa on tietoja Power Apps -portaalien perustoiminnoista ja portaalien mukauttamisesta:
 
-- [Mallien käsitteleminen](https://docs.microsoft.com/powerapps/maker/portals/work-with-templates) – Tämä ohjeaihe sisältää yleiskatsauksen Power Apps -portaalien toiminnasta ja siitä, miten voit tehdä portaalien yksinkertaisia mukautuksia.
-- [Portaalin sisällönhallinta](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – Tässä ohjeaiheessa kerrotaan, kuinka voit hallita ja mukauttaa portaalissasi näkyvää sisältöä.
-- [Muokkaa CSS:tä](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – Tämän ohjeaiheen avulla voit tehdä monimutkaisempia mukautuksia portaalin käyttöliittymään.
-- [Luo portaaliin teema](https://docs.microsoft.com/dynamics365/portals/create-theme) – Tämän ohjeaiheen avulla voit luoda portaalin käyttöliittymän teeman.
-- [Portaalin sisällön luominen ja tuominen näkymiin helposti](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – Tämä aiheen auttaa hallitsemaan portaalissa käytettyjä tietoja ja tauluja.
-- [Yhteyshenkilön määrittäminen käytettäväksi portaalissa](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – Tässä ohjeaiheessa kerrotaan, kuinka käyttäjärooleja luodaan ja mukautetaan sekä kuinka suojaus ja todennus toimivat Power Apps -portaaleissa.
-- [Taululomakkeiden ja portaalien verkkolomakkeiden huomautusten määrittäminen](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – Tässä aiheessa käsitellään asiakirjojen ja tallennustilan lisäämistä portaaliin.
-- [Portaalin verkkosivuston virheenkäsittely](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – Tässä ohjeaiheessa kerrotaan, kuinka portaalin virhelokeja voidaan tarkastella ja tallentaa Microsoft Azure -Blob-objektisäilötilille.
+- [Mallien käsitteleminen](/powerapps/maker/portals/work-with-templates) – Tämä ohjeaihe sisältää yleiskatsauksen Power Apps -portaalien toiminnasta ja siitä, miten voit tehdä portaalien yksinkertaisia mukautuksia.
+- [Portaalin sisällönhallinta](/dynamics365/portals/manage-portal-content) – Tässä ohjeaiheessa kerrotaan, kuinka voit hallita ja mukauttaa portaalissasi näkyvää sisältöä.
+- [Muokkaa CSS:tä](/powerapps/maker/portals/edit-css) – Tämän ohjeaiheen avulla voit tehdä monimutkaisempia mukautuksia portaalin käyttöliittymään.
+- [Luo portaaliin teema](/dynamics365/portals/create-theme) – Tämän ohjeaiheen avulla voit luoda portaalin käyttöliittymän teeman.
+- [Portaalin sisällön luominen ja tuominen näkymiin helposti](/dynamics365/portals/create-expose-portal-content) – Tämä aiheen auttaa hallitsemaan portaalissa käytettyjä tietoja ja tauluja.
+- [Yhteyshenkilön määrittäminen käytettäväksi portaalissa](/powerapps/maker/portals/configure/configure-contacts) – Tässä ohjeaiheessa kerrotaan, kuinka käyttäjärooleja luodaan ja mukautetaan sekä kuinka suojaus ja todennus toimivat Power Apps -portaaleissa.
+- [Taululomakkeiden ja portaalien verkkolomakkeiden huomautusten määrittäminen](/powerapps/maker/portals/configure-notes) – Tässä aiheessa käsitellään asiakirjojen ja tallennustilan lisäämistä portaaliin.
+- [Portaalin verkkosivuston virheenkäsittely](/powerapps/maker/portals/admin/view-portal-error-log) – Tässä ohjeaiheessa kerrotaan, kuinka portaalin virhelokeja voidaan tarkastella ja tallentaa Microsoft Azure -Blob-objektisäilötilille.
 
 ## <a name="customize-the-order-creation-process"></a>Tilauksen luomisprosessin mukauttaminen
 
@@ -88,7 +88,7 @@ Tässä ovat vakiovaiheet tilauksen lähettämiselle asiakasportaalista.
 
 Jotta käyttäjäkokemus olisi sujuva, asiakasportaali täyttää automaattisesti useiden pakollisten kenttien arvot. Nämä arvot perustuvat tilauksen lähettäneen asiakkaan yhteyshenkilötietueen tietoihin.
 
-Seuraavien pakollisten kenttien arvot on määritettävä jokaiselle sellaiselle [yhteyshenkilöriville](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts), joka kuuluu asiakasportaalia tilausten lähettämiseen käyttävälle asiakkaalle. Muussa tapauksessa tapahtuu virheitä.
+Seuraavien pakollisten kenttien arvot on määritettävä jokaiselle sellaiselle [yhteyshenkilöriville](/powerapps/maker/portals/configure/configure-contacts), joka kuuluu asiakasportaalia tilausten lähettämiseen käyttävälle asiakkaalle. Muussa tapauksessa tapahtuu virheitä.
 
 - **Yritys** – Yritys, joka omistaa tilauksen
 - **Potentiaalinen asiakas** – Tilaukseen liittyvä asiakastili
@@ -134,16 +134,16 @@ Nimikkeille tarvitaan seuraavat sarakkeet:
 
 Varmista, että asiakasportaali lähettää jollakin tavalla kaikkien näiden sarakkeiden arvot.
 
-Jos haluat lisätä sivulle sarakkeita tai poistaa sarakkeita, lisätietoja on kohdassa [Pikaluonnin lomakkeiden luominen tai muokkaaminen selkeytettyä tietojen syöttökokemusta varten](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Jos haluat lisätä sivulle sarakkeita tai poistaa sarakkeita, lisätietoja on kohdassa [Pikaluonnin lomakkeiden luominen tai muokkaaminen selkeytettyä tietojen syöttökokemusta varten](/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
 Jos haluat muuttaa tapaa, jolla sarakkeet on määritetty valmiiksi ja arvot määritetään, kun sivu tallennetaan, tutustu seuraaviin Power Apps -portaalin käyttöohjeissa oleviin tietoihin:
 
-- [Täytä kenttä valmiiksi](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
-- [Aseta arvo tallennettaessa](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
+- [Täytä kenttä valmiiksi](/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
+- [Aseta arvo tallennettaessa](/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
 
 ## <a name="customize-the-home-page"></a>Kotisivun mukauttaminen
 
-Kaikki asiakasportaalin ohjausobjektit ovat sisäänrakennettuja Power Apps -portaalien ohjausobjekteja. Voit mukauttaa niitä noudattamalla ohjeita, jotka liittyvät [sivun luomiseen](https://docs.microsoft.com/powerapps/maker/portals/compose-page) Power Apps -portaalien dokumentaatiossa.
+Kaikki asiakasportaalin ohjausobjektit ovat sisäänrakennettuja Power Apps -portaalien ohjausobjekteja. Voit mukauttaa niitä noudattamalla ohjeita, jotka liittyvät [sivun luomiseen](/powerapps/maker/portals/compose-page) Power Apps -portaalien dokumentaatiossa.
 
 Vain asiakasportaalin mallipohjaan sisältyvää mukautettua ohjausobjektia käytetään luotaessa ruutuja kotisivulle.
 
@@ -151,7 +151,7 @@ Vain asiakasportaalin mallipohjaan sisältyvää mukautettua ohjausobjektia käy
 
 Voit muokata ruutuja seuraavasti.
 
-1. Avaa [Portaalin hallintasovellus](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
+1. Avaa [Portaalin hallintasovellus](/powerapps/maker/portals/configure/configure-portal).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivumallit**.
 
     ![Portaalinhallinnan siirtymisruutu](media/customer-portal-nav.png "Portaalinhallinnan siirtymisruutu")
@@ -167,11 +167,11 @@ Voit muokata ruutuja seuraavasti.
 
 Lisätietoja asiakasportaalin määrittämisestä ja mukauttamisesta on seuraavissa resursseissa:
 
-- [Power Apps -portaalit -dokumentaatio](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps -portaalit -dokumentaatio](/powerapps/maker/portals/overview)
 - [Kaksoiskirjoituksen dokumentointi](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
-- [Tietoja portaalin elinkaaresta](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Portaalin päivittäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Portaalin konfiguraation siirtäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Tietoja portaalin elinkaaresta](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Portaalin päivittäminen](/powerapps/maker/portals/admin/upgrade-portal)
+- [Portaalin konfiguraation siirtäminen](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Ratkaisun elinkaaren hallinta: Dynamics 365 for Customer Engagement -sovellukset](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

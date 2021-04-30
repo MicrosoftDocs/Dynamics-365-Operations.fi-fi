@@ -2,11 +2,11 @@
 title: Vuokrausten hallinta vuokrauksen tuonnin kehyksen kautta
 description: Tässä ohjeaiheessa kerrotaan, miten vuokrauksen tuonnin kehystä käytetään useiden vuokrausten muokkaamisessa kerralla.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 26fb195ff18dc0c86d3546b782265043c2c78bf4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 083adf0a4bb74ac65e6f8b5077f65c74eb3fa337
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819791"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880907"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Vuokrausten hallinta vuokrauksen tuonnin kehyksen kautta
 
@@ -53,7 +53,7 @@ Vertailutoiminnon avulla voit vertailla tuotavaa tietuetta vastaavaan järjestel
 > [!NOTE]
 > Vertailutoiminto ei toimi vuokrasopimuksissa, joiden prosessityyppi on **Lisää tietue**, koska vuokrasopimus ei sisällä vertailtavia kohteita.
 >
-> Jos haluat vertailla useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen \> Vertaa** ja valitse **Vertaa**.
+> Jos haluat vertailla useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Vertaa**.
 
 Voit tarkastella kaikkien entiteettien eroja järjestelmässä olevien tietojen ja väliaikaisten taulukoiden tietojen välillä. Valitse kunkin väliaikaisen taulukon entiteetin **Katso erot** -kohta. Näkyviin tulevassa valintaikkunassa näkyy valittu arvo ja ehdotettu väliaikainen arvo.
 
@@ -62,17 +62,17 @@ Voit myös päivittää väliaikaisen arvon muuttamalla sitä **Uusi arvo** -sar
 Voit vahvistaa vuokrasopimukset ja varmistaa, että ne tietueet voidaan tuoda järjestelmään ilman virheitä. Ennen kuin vuokrasopimustietue siirretään, järjestelmä suorittaa useita tarkistuksia. Niiden avulla varmistetaan, että tietueen tuonti onnistuu. Voit vahvistaa yksittäisen vuokrasopimuksen valitsemalla **Vahvista**.
 
 > [!NOTE]
-> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen \> Vahvista** ja valitse **Vertaa**.
+> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Vertaa**.
 
 Voit käsitellä yksittäistä vuokrasopimusta valitsemalla **Siirrä vuokrasopimustietueet** **Tuonnin otsikko** -sivulla. Kun vuokrasopimus siirretään, järjestelmä suorittaa toiminnon, joka on määritetty **Prosessityyppi**-kentässä.
 
 > [!NOTE]
-> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen \> Vahvista** ja valitse **Vertaa**.
+> Jos haluat siirtää useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Siirrä**.
 
 Kun vuokrasopimuksia verrataan, voit tarkastella kunkin tuonnin tunnukseen sisältyvän vuokrasopimuksen erot suorittamalla raportin. Jos haluat suorittaa yhden vuokrasopimuksen raportin, valitse kyseinen vuokrasopimus väliaikaisista tiedoista ja valitse sitten **Vertaile ja tarkastele raporttia \> Erojen raportti**.
 
 > [!NOTE]
-> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Kyselyt ja raportit \> Erojen raportti** ja valitse **Vertaa**.
+> Jos haluat vertailla useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Vertaa**. 
 
 ## <a name="set-up-update-fields"></a>Kenttien päivittämisen määrittäminen
 

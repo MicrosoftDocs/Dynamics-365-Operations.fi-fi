@@ -1,7 +1,7 @@
 ---
 title: Pääsuunnittelun aloitussivu
 description: Pääsuunnittelun avulla yritykset voivat määrittää tulevan raaka-aineiden ja kapasiteetin tarpeen ja tasapainottaa ne yrityksen tavoitteita vastaaviksi.
-author: ShylaThompson
+author: ChristianRytt
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -13,34 +13,34 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5056bc9ffa96e1a23e07582b1742e5b3bec12610
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 92dfb05addc1c791b24f129587b842d22423eb54
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833422"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908753"
 ---
 # <a name="master-planning-home-page"></a>Pääsuunnittelun aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Pääsuunnittelun avulla yritykset voivat määrittää tulevan raaka-aineiden ja kapasiteetin tarpeen ja tasapainottaa ne yrityksen tavoitteita vastaaviksi. Pääsuunnittelussa arvioidaan seuraavat seikat: 
+Pääsuunnittelun avulla yritykset voivat määrittää tulevan raaka-aineiden ja kapasiteetin tarpeen ja tasapainottaa ne yrityksen tavoitteita vastaaviksi. Pääsuunnittelussa arvioidaan seuraavat seikat:
 
--  Mitkä raaka-aineet ja kapasiteetit ovat tällä hetkellä käytettävissä? 
--  Mitkä ovat tuotannon valmistumisessa tarvittavat raaka-aineet ja kapasiteetit? Esimerkiksi mitä on valmistettava, ostettava, siirrettävä tai asetettava varmuusvarastoon, ennen kuin tuotanto saadaan valmiiksi.
+- Mitkä raaka-aineet ja kapasiteetit ovat tällä hetkellä käytettävissä?
+- Mitkä ovat tuotannon valmistumisessa tarvittavat raaka-aineet ja kapasiteetit? Esimerkiksi mitä on valmistettava, ostettava, siirrettävä tai asetettava varmuusvarastoon, ennen kuin tuotanto saadaan valmiiksi.
 
 Pääsuunnittelu laskee tarpeet ja luo suunnitellut tilaukset näiden tietojen avulla.
 
 Kolme pääsuunnitteluprosessia ovat seuraavat:
 
--  **Pääsuunnittelu** - pääsuunnitelma laskee nettotarpeet. Se perustuu toteutuneet tämän hetkisiin tilauksiin. Tämän avulla yritykset voivat ohjata varaston täydennystä lyhyellä aikavälillä päivittäin. Pääsuunnittelua kutsutaan myös *nettotarvesuunnitelmaksi*. Lisätietoja on kohdassa [Pääsuunnitelmien yleiskatsaus](master-plans.md). 
+- **Pääsuunnittelu** - pääsuunnitelma laskee nettotarpeet. Se perustuu toteutuneet tämän hetkisiin tilauksiin. Tämän avulla yritykset voivat ohjata varaston täydennystä lyhyellä aikavälillä päivittäin. Pääsuunnittelua kutsutaan myös *nettotarvesuunnitelmaksi*. Lisätietoja on kohdassa [Pääsuunnitelmien yleiskatsaus](master-plans.md).
 
--  **Ennusteen suunnittelu** - ennusteajoitus laskee bruttotarpeet. Se perustuu tuleviin arvioihin (tai ennusteisiin). Yritykset voivat käyttää tätä materiaalien ja kapasiteetin pitkäaikaissuunnittelussa. Lisätietoja on kohdassa [Kysynnän ennusteen yleiskatsaus](introduction-demand-forecasting.md). 
+- **Ennusteen suunnittelu** - ennusteajoitus laskee bruttotarpeet. Se perustuu tuleviin arvioihin (tai ennusteisiin). Yritykset voivat käyttää tätä materiaalien ja kapasiteetin pitkäaikaissuunnittelussa. Lisätietoja on kohdassa [Kysynnän ennusteen yleiskatsaus](introduction-demand-forecasting.md).
 
--  **Konsernin sisäinen pääsuunnittelu** - Konsernin sisäinen pääsuunnitelma laskee yritysten nettotarpeet. Se yhdistää kysynnän ja tarjonnan yritysten välillä niin lyhytaikaisen, kiinteän kysynnän ja tarjonnan kuin myös pitkäaikaisen ja suunnitellun (mutta ei vielä kiinteän) kysynnän ja tarjonnan osalta. Lisätietoja on kohdassa [Konsernin sisäinen pääsuunnittelu](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (vaatii CustomerSource-tilin). 
+- **Konsernin sisäinen pääsuunnittelu** - Konsernin sisäinen pääsuunnitelma laskee yritysten nettotarpeet. Se yhdistää kysynnän ja tarjonnan yritysten välillä niin lyhytaikaisen, kiinteän kysynnän ja tarjonnan kuin myös pitkäaikaisen ja suunnitellun (mutta ei vielä kiinteän) kysynnän ja tarjonnan osalta. Lisätietoja on kohdassa [Konsernin sisäinen suunnittelu](planning-optimization/Intercompany-planning.md).
 
 Yritykset voivat muuttaa suunnitelman tulosta. Yritykset voivat suorittaa uudelleensuunnittelun, nettomuutoksen tai molemmat. Uudelleensuunnittelut päivittävät kaikki vaatimukset, kun taas nettomuutossuunnitelmat päivittävät vain suunnitelman, jonka nimikkeille on määritetty uusia tarpeita edellisen ajoituksen jälkeen.
 
@@ -61,28 +61,30 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 - [Konserniyritysten välisen suunnitelman luominen](./tasks/create-intercompany-plan.md)
 - [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
 - [Ennusteen vähennysavaimet](reduction-keys.md)
-                                  
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 ### <a name="roadmaps"></a>Tiekartat
+
 [Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
-Pääsuunnittelua sekä muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja on kohdissa [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+
+Pääsuunnittelua sekä muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja on kohdissa [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogi](/archive/blogs/axmfg/) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Tehtäväoppaat
+
 Lisäohjeita on saatavilla tehtävän ohjauksina. Voit avata tehtäväoppaan napsauttamalla **Ohje**-painiketta millä tahansa sivulla.
 
 ### <a name="webinars"></a>Verkkoseminaarit
+
 [Azuren koneoppimisen käyttäminen kysynnän ennusteessa](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### <a name="tech-conference-recordings"></a>Teknisen konferenssin tallenteet
--  [Kysynnän ennustetoimintojen laajentaminen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
--  [Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen](https://youtu.be/7v8BPmEs9Dg)
--  [Apua! Tarvesuunnittelu toimii hitaasti.](https://youtu.be/RLXybx20B5o)
 
-
-
+- [Kysynnän ennustetoimintojen laajentaminen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+- [Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen](https://youtu.be/7v8BPmEs9Dg)
+- [Apua! Tarvesuunnittelu toimii hitaasti.](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

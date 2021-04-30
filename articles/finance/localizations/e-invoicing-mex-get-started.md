@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840049"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894880"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Meksikon sähköisen laskutuksen käytön aloittaminen
 
@@ -86,7 +86,7 @@ Voit luoda uuden version, jos esimerkiksi URL-osoitteita on päivitettävä. Lis
 
     ![Muodon suunnittelija -sivun avaaminen](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Käytä **Muodon suunnittelija** -sivua muokataksesi ja tarkastellaksesi ER-muodon tiedostomäärityksiä. Lisätietoja on kohdassa [Sähköisten asiakirjojen määritysten luominen](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+3. Käytä **Muodon suunnittelija** -sivua muokataksesi ja tarkastellaksesi ER-muodon tiedostomäärityksiä. Lisätietoja on kohdassa [Sähköisten asiakirjojen määritysten luominen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
     ![Muodon suunnittelutoiminto -sivu](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ Sähköinen laskutus määritetään Financessa suorittamalla seuraavat tehtäv�
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Tuo ER-tietomalli, ER-tietomallin yhdistämismääritys ja CFDI-laskujen kontekstimääritykset
 
 1. Kirjaudu Financeen.
-2. Valitse **Sähköisen raportointi** -työtilan **Määrityslähteet** -osassa **Microsoft**-ruutu. Varmista, että tämän määrityspalvelun arvoksi on määritetty **Aktiivinen**. Tietoja palvelun arvon **Aktiivinen**-muotoon määrittämisestä: [Luo määrityspalveluja ja merkitse ne aktiiviseksi](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. Valitse **Sähköisen raportointi** -työtilan **Määrityslähteet** -osassa **Microsoft**-ruutu. Varmista, että tämän määrityspalvelun arvoksi on määritetty **Aktiivinen**. Tietoja palvelun arvon **Aktiivinen**-muotoon määrittämisestä: [Luo määrityspalveluja ja merkitse ne aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Valitse **Säilöt**.
 4. Valitse **Yleinen resurssi \> Avaa**.
 5. Tuo **Laskumalli**, **Laskumallin yhdistämismääritys**, **CFDI-laskun muoto (MX)**, **CFDI-laskun peruutuspyynnön muoto (MX)** sekä **CFDI-laskun peruutusmuoto (MX)**.
@@ -215,7 +215,7 @@ Kun käsittelet CFDI-laskuja Financessa sähköisen laskutuksen kautta, voit suo
 Kun olet ottanut käyttöön **Määritettävä sähköisen laskutuksen integrointi** -toiminnon **Vie/tuo sähköinen lasku** -prosessia (**Myyntireskontra \> Laskut \> Sähköiset laskut**) CFDI-laskujen lähettämiseen ei voida enää käyttää. Se korvataan uudella prosessilla, jonka nimi on **Lähetä sähköiset asiakirjat**.
 
 > [!NOTE]
-> Ennen kuin käytät uutta **Lähetä sähköisiä asiakirjoja** -prosessia, varmista, että Meksikon sähköisten laskujen edellyttämät määritykset on tehty. Lisätietoja [CFDI-asettelun versio 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Ennen kuin käytät uutta **Lähetä sähköisiä asiakirjoja** -prosessia, varmista, että Meksikon sähköisten laskujen edellyttämät määritykset on tehty. Lisätietoja [CFDI-asettelun versio 3.3](./latam-mex-cfdi-3-3.md).
 
 1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Lähetä sähköisiä asiakirjoja**.
 2. Kun mikä tahansa asiakirja lähetetään ensimmäistä kertaa, määritä **Lähetä asiakirjat uudelleen** -asetukseksi aina **Ei**. Jos sinun on lähetettävä asiakirja uudelleen palvelun kautta, määritä asetukseksi **Kyllä**.

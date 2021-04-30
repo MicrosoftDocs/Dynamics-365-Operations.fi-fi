@@ -2,7 +2,7 @@
 title: SPLIT ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) SPLIT-funktiota käytetään.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745590"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853440"
 ---
 # <a name="split-er-function"></a>SPLIT ER-funktio
 
@@ -79,6 +79,14 @@ Jos `input`-argumentti on tyhjä, palautettava uusi luettelo on tyhjä. Jos `inp
 ## <a name="example-2"></a>Esimerkki 2
 
 `SPLIT ("XAb aBy", "aB")` palauttaa uuden luettelon, joka sisältää kolme tietuetta, joilla on *Merkkijono*-tyypin **Arvo**-kenttä. Ensimmäisen tietueen **Arvo**-kentässä on teksti **X**, toisen tietueen **Arvo**-kentässä teksti **&nbsp;** ja kolmannen tietueen **Arvo**-kentässä teksti **y**. 
+
+## <a name="example-3"></a>Esimerkki 3
+
+[INDEX](er-functions-list-index.md)-toiminnolla voit käyttää määritetyn syötemerkkijonon yksittäisiä elementtejä. Jos syötät **laskettu kenttä**-tyyppin **MyList**-tietolähteen ja määrität sen `SPLIT("abc", 1)`-lausekkeelle `INDEX(MyList,2).Value`-lauseke palauttaa tekstiarvon **b**.
+
+## <a name="example-4"></a>Esimerkki 4
+
+[ERITTELE](er-functions-list-enumerate.md)-toiminto voi auttaa sinua myös käyttämään määritetyn syötemerkkijonon yksittäisiä elementtejä. Jos syötät ensin **Lasketun kentän** tyypin **MyList**-tietolähteen ja konfiguroit sen lausekkeelle `SPLIT("abc", 1)` ja syötät sitten **Lasketun kentän** tyypin **Valintalista**-tietolähteen ja konfiguroit sen lausekkeelle `ENUMERATE(MyList)`, `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value`-lauseke palauttaa tekstin **b**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

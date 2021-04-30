@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f67bb8e218c98c6f227f5e1f05f9ba7b35da37c7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 356cdf0fc6bc2dbc086ff186805a97755d98e49e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832151"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909522"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio10.0.6 (marraskuu 2020)
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää päivitetyn ympäristön ja yleisiä parannuksia, mutta se ei sisällä uusia Supply Chain Management -sovellukseen liittyviä ominaisuuksia. Lisätietoja tulevista ominaisuuksista on [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/) -sivustossa.
+Tämä julkaisu sisältää päivitetyn ympäristön ja yleisiä parannuksia, mutta se ei sisällä uusia Supply Chain Management -sovellukseen liittyviä ominaisuuksia. Lisätietoja tulevista ominaisuuksista on [Julkaisusuunnitelmat](/dynamics365/release-plans/) -sivustossa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -49,7 +49,7 @@ Saat lisätietoja version 10.0.14 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

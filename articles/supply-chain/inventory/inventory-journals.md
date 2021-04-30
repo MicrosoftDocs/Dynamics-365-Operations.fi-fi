@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a94c5371db10fa4f0090f2d177b1a01233ab0f30
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fe02a7b785b7d53763f314eec4d9b23fe723173a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826032"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910182"
 ---
 # <a name="inventory-journals"></a>Varastokirjauskansiot
 
@@ -95,7 +95,7 @@ Tietoyksiköt tukevat seuraavia integrointityyppejä:
 -    Synkroninen palvelu (OData)
 -  Asynkroninen integrointi
 
-Lisätietoja on kohdassa [Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md).
+Lisätietoja on kohdassa [Tietoyksiköt](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > OData ei ole käytössä kaikissa varastokirjauskansioissa, joten et voi käyttää Excelin tietoyhdistintä tietojen julkaisemiseen, päivittämiseen ja takaisintuontiin Supply Chain Managementiin. 
@@ -113,7 +113,7 @@ Nämä kaksi kirjauskansiota tukevat *Alusta varasto* -skenaariota vain tietojen
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md)
+[Tietoyksiköt](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

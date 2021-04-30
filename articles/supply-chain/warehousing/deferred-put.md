@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838319"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908008"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Varastotyön lykätty käsittely
 
@@ -28,7 +28,7 @@ Tässä ohjeaiheessa kuvataan toimintoja, joiden avulla varastotyön lykätty k�
 
 Lykätyn käsittely toiminnon avulla varastotyöntekijät jatkavat työskentelyä, kun hyllytystoimintoa käsitellään taustalla. Lykätty käsittely on kätevää, kun useita työrivejä on käsiteltävä ja työntekijä voi antaa työn käsittelyn toimia asynkronisesti. Se on hyödyllinen myös silloin, kun palvelimella voi olla ad-hoc-tai suunnittelemattomia lisäyksiä käsittelyaikaan, ja lisääntynyt käsittelyaika saattaa vaikuttaa käyttäjän tuottavuuteen.
 
-Taustakäsittely saavutetaan käyttämällä SysOperation-kehystä. Lisätietoja saat ohjeaiheesta [SysOperation-kehyksen yleiskatsaus](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Taustakäsittely saavutetaan käyttämällä SysOperation-kehystä. Lisätietoja saat ohjeaiheesta [SysOperation-kehyksen yleiskatsaus](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Työn käsittelykäytäntöjen konfiguroiminen
 

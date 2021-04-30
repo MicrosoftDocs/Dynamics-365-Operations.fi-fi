@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751313"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893601"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -57,7 +57,7 @@ ER-muodon konfiguroinnin oletustoiminta määräytyy sen mukaan, mikä suoritust
 
 Jos määrität **Eräkäsittely**-asetuksen arvoksi **Ei**, **Intrastat-raportti**-valintaikkunan **Suorita taustalla** -pikavälilehdessä voit käyttää ER-muotoa heti vuorovaikutteisessa tilassa. Kun tämä suoritus on suoritettu onnistuneesti, luotu lähtevä asiakirja on ladattavissa.
 
-Jos määrität **Eräkäsittely**-asetukseksi **Kyllä**, ER-muoto suoritetaan [erä](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview)-tilassa. Luodaan oikea erätyö, joka perustuu parametreihin, jotka määrität **Suorita taustalla**-välilehdellä **ER-parametrit**-valintaikkunassa.
+Jos määrität **Eräkäsittely**-asetukseksi **Kyllä**, ER-muoto suoritetaan [erä](../sysadmin/batch-processing-overview.md)-tilassa. Luodaan oikea erätyö, joka perustuu parametreihin, jotka määrität **Suorita taustalla**-välilehdellä **ER-parametrit**-valintaikkunassa.
 
 > [!NOTE]
 > Työn kuvauksessa ilmoitetaan ER-muotomäärityksen suoritus. Lisäksi se sisältää suoritettavan ER-osan nimen.
@@ -70,7 +70,7 @@ Tietoja tästä työstä on useissa paikoissa:
 - Siirry kohtaan **Organisaation hallinta** \> **Sähköinen raportointi** \> **sähköisen raportoinnin työt** tarkistaaksesi ajoitetun työn tilan ja valmiin työn suoritustulokset. Kun työn suorittaminen on suoritettu onnistuneesti, hae luotu lähtevä asiakirja valitsemalla **sähköisen raportoinnin työt**-sivulta **Näytä tiedostot**.
 
     > [!NOTE]
-    > Tämä tiedosto tallennetaan nykyisen työtietueen liitteenä, ja sitä hallitaan [tiedostonhallinta](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) -kehyksellä. [Tiedostotyyppi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), jota käytetään tämäntyyppisten artefakteja varten, määritetään [ER-parametreissa](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > Tämä tiedosto tallennetaan nykyisen työtietueen liitteenä, ja sitä hallitaan [tiedostonhallinta](../../fin-ops/organization-administration/configure-document-management.md) -kehyksellä. [Tiedostotyyppi](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), jota käytetään tämäntyyppisten artefakteja varten, määritetään [ER-parametreissa](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - Valitse **Sähköisen raportoinnin työt** -sivulla **Näytä tiedostot**, jos haluat nähdä luettelon töiden suorituksen aikana luoduista virheistä ja varoituksista.
 

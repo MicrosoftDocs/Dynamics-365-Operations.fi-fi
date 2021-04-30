@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818796"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908827"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Finance Insightsin määritys (esiversio)
 
@@ -69,7 +69,7 @@ Voit tehdä seuraavat manuaaliset määritysvaiheet valmiiksi tai voit nopeuttaa
     13. Valitse **Resurssit \> Kaikki vanhat asetukset**.
     14. Valitse yläreunan siirtymispalkissa **Asetukset** ja valitse sitten **Mukautukset**.
     15. Valitse **Kehittäjän resurssit**.
-    16. Määritä **Esiintymän viitetietojen tunnus** -kentän arvoksi sen Dataverse -organisaation tunnuksen arvo, jonka merkitsit muistiin aiemmin.
+    16. Kopioi **Dataverse-organisaation tunnuksen** arvo.
     17. Kirjoita selaimen osoitepalkkiin Dataverse -organisaation URL-osoite. URL-osoite voi olla esimerkiksi `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Jos aiot käyttää kassavirtaennusteiden tai budjettiennusteiden toimintoa, päivitä organsaation huomautusten rajaksi vähintään 50 megatavua (Mt) seuraavasti:
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Windows PowerShell -komentosarjan käyttäminen](#tab/use-a-powershell-script)
 
-Windows PowerShell -komentosarja on annettu. Voit siis helposti määrittää Azure-resurssit, jotka on esitelty kohdassa [Azure Data Lakeen viennin määrittäminen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). Jos haluat määrittää asetuksen manuaalisesti, ohita nämä vaiheet ja jatka [Manuaalinen määritys](#manual-setup) -osan toimintojen avulla.
+Windows PowerShell -komentosarja on annettu. Voit siis helposti määrittää Azure-resurssit, jotka on esitelty kohdassa [Azure Data Lakeen viennin määrittäminen](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). Jos haluat määrittää asetuksen manuaalisesti, ohita nämä vaiheet ja jatka [Manuaalinen määritys](#manual-setup) -osan toimintojen avulla.
 
 > [!NOTE]
 > Suorita PowerShell -komentosarja alla olevien vaiheiden avulla. Azure CLI:n Kokeile-vaihtoehto tai komentosarjan suorittaminen tietokoneella eivät ehkä toimi.
 
-Näiden vaiheiden avulla voit määrittää Azuren käyttämällä Windows PowerShell -komentosarjaa. Tarvitset Azure-resurssiryhmän, Azure-resurssien ja Azure AD -sovelluksen luontioikeudet. Lisätietoja vaadituista käyttöoikeuksista on kohdassa [Azure AD:n käyttöoikeuksien tarkistaminen](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Näiden vaiheiden avulla voit määrittää Azuren käyttämällä Windows PowerShell -komentosarjaa. Tarvitset Azure-resurssiryhmän, Azure-resurssien ja Azure AD -sovelluksen luontioikeudet. Lisätietoja vaadituista käyttöoikeuksista on kohdassa [Azure AD:n käyttöoikeuksien tarkistaminen](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. Siirry [Azure-portaalissa](https://portal.azure.com) Azuren kohdetilaukseen. Valitse **Hae**-kentän oikealla puolella oleva **Cloud Shell** -painike.
 2. Valitse **PowerShell**.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Yksikkösäilön määrittäminen
 
-Näiden vaiheiden avulla voit määrittää Finance-ympäristön yksikkösäilön.
-
-1. Siirry kohtaan **Järjestelmän hallinta \> Asetukset \> Järjestelmän parametrit \> Tietoyhteydet**.
-2. Määritä **Ota Data Lake -integrointi käyttöön** -asetukseksi **Kyllä**.
-3. Määritä seuraavat avainsäilön kentät:
-
-    - **Sovelluksen (asiakkaan) tunnus** – Anna aiemmin luotu sovelluksen asiakastunnus.
-    - **Sovelluksen salainen koodi** – Syötä aiemmin luotu sovellukselle tallennettu salainen koodi.
-    - **DNS-nimi** – DNS (Domain Name System) -nimi löytyy aiemmin luodun sovelluksen sovellustietojen sivulta.
-    - **Salainen koodi** – Syötä **Tallennustilin yhteysmerkkijono**.
 
 ## <a name="configure-the-data-lake"></a>Data Laken määrittäminen
 
@@ -991,6 +980,19 @@ Apuohjelma asennetaan muutamassa minuutissa.
     | CDS-vuokraajan tunnus (AAD:n hakemistotunnus)               | Dataverse -esiintymän vuokraajan tunnus. Jos haluat etsiä tämän arvon, avaa [Azure-portaali](https://portal.azure.com), siirry **Azure Active Directory** -kohtaan ja kopioi **Vuokraajan tunnus** -kentän arvo. |
     | Anna sen käyttäjäobjektin tunnus, jolla on järjestelmänvalvojan rooli | Dataverse -käyttäjän Azure AD -käyttäjäobjektin tunnus. Tämän käyttäjän on oltava Dataverse -esiintymän järjestelmänvalvoja. Jos haluat etsiä tämän arvon, avaa [Azure-portaali](https://portal.azure.com) ja siirry kohtaan **Azure Active Directory \> Käyttäjät**. Valitse käyttäjä ja kopioi **Tunnistetiedot**-osassa **Objektin tunnus** -kohdan arvo. |
     | Onko tämä CDS:n oletusympäristö vuokralaiselle?      | Jos Dataverse -esiintymä oli ensimmäinen luotu tuotantoesiintymä, valitse tämä valintaruutu. Jos Dataverse -esiintymä on luotu manuaalisesti, poista tämän valintaruudun valinta. |
+
+## <a name="configure-the-entity-store"></a>Yksikkösäilön määrittäminen
+
+Näiden vaiheiden avulla voit määrittää Finance-ympäristön yksikkösäilön.
+
+1. Siirry kohtaan **Järjestelmän hallinta \> Asetukset \> Järjestelmän parametrit \> Tietoyhteydet**.
+2. Määritä **Ota Data Lake -integrointi käyttöön** -asetukseksi **Kyllä**.
+3. Määritä seuraavat avainsäilön kentät:
+
+    - **Sovelluksen (asiakkaan) tunnus** – Anna aiemmin luotu sovelluksen asiakastunnus.
+    - **Sovelluksen salainen koodi** – Syötä aiemmin luotu sovellukselle tallennettu salainen koodi.
+    - **DNS-nimi** – DNS (Domain Name System) -nimi löytyy aiemmin luodun sovelluksen sovellustietojen sivulta.
+    - **Salainen koodi** – Syötä **Tallennustilin yhteysmerkkijono**.
 
 ## <a name="feedback-and-support"></a>Palaute ja tuki
 

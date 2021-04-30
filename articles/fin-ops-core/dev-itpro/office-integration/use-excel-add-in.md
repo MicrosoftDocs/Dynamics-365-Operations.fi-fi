@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752963"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908338"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
@@ -45,7 +45,7 @@ Lisätietoja Excel-apuohjelman käyttämisestä lyhyessä videossa [Excel-mallin
 2. Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3. Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
-5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** ja kirjaudu sitten sisään samoilla tunnuksilla, joilla kirjaudut Finance and Operations -sovellukseen. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
+5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** ja kirjaudu sitten sisään samoilla tunnuksilla, joilla kirjaudut Finance and Operations -sovellukseen. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 
@@ -60,7 +60,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 
 6. Valitse **OK** ja vahvista muutos valitsemalla **Kyllä**. Excel-lisäosa käynnistetään uudelleen. Se lataa metatiedot.
 
-    **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen [Vianmääritys](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) -osan Lataa sovelmat -painike on näkyvissä -kohdassa.
+    **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen [Vianmääritys](../office-integration/use-excel-add-in.md#troubleshooting) -osan Lataa sovelmat -painike on näkyvissä -kohdassa.
 
 7. Valitse **Rakenne**. Excel-lisäosa hakee yksikön metatiedot.
 8. Valitse **Lisää taulu**. Näkyviin tulee luettelo yksiköistä. Yksiköt näytetään muodossa "Nimi – Otsikko".
@@ -138,7 +138,7 @@ Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 
 - **Lataa sovelmat -painike on näkyvissä** – Jos Excel-lisäosassa on **Lataa sovelmat** -painike kirjautumisen jälkeen, et ehkä ole kirjautunut oikeana käyttäjänä. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, valitse se. Kirjaudu sitten ulos ja kirjaudu takaisin sisään.
 - **Näyttöön tulee Kielletty-virhesanoma** –Jos näyttöön tulee Kielletty-virhesanoma, kun Excel-lisäosa lataa metatietoja, Excel-lisäosaan kirjautuneella tilillä ei ole käyttöoikeutta kohteena olevaan palveluun, ilmentymään tai tietokantaan. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, valitse se. Kirjaudu sitten ulos ja kirjaudu takaisin sisään.
-- **Excelin päällä näkyy tyhjä verkkosivu** – Jos kirjautumisen aikana avautuu tyhjä verkkosivu, tili vaatii AD FS:n käytön, mutta Excel-lisäosan suorittava Excel-versio ei ole tarpeeksi uusi eikä kirjautumisikkunaa voi ladata. Ratkaise ongelma päivittämällä käytössä oleva Excel-versio. Jos olet yritys, jolla on käytössä hidas päivityskanava, voit päivittää Excel-version käyttämällä [Office Deployment Tool -työkalua](https://technet.microsoft.com/library/jj219422.aspx) [vaihtaaksesi hitaan päivityskanavan nykyiseen päivityskanavaan](https://technet.microsoft.com/library/mt455210.aspx).
+- **Excelin päällä näkyy tyhjä verkkosivu** – Jos kirjautumisen aikana avautuu tyhjä verkkosivu, tili vaatii AD FS:n käytön, mutta Excel-lisäosan suorittava Excel-versio ei ole tarpeeksi uusi eikä kirjautumisikkunaa voi ladata. Ratkaise ongelma päivittämällä käytössä oleva Excel-versio. Jos olet yritys, jolla on käytössä hidas päivityskanava, voit päivittää Excel-version käyttämällä [Office Deployment Tool -työkalua](/deployoffice/overview-office-deployment-tool) [vaihtaaksesi hitaan päivityskanavan nykyiseen päivityskanavaan](/deployoffice/overview-update-channels).
 - **Aikakatkaisu tapahtuu tietojen muutoksia julkaistaessa** – Jos ilmoitus aikakatkaisusta avautuu, kun tietojen muutoksia yritetään julkaista yksikköön, kyseisen työnkirjan julkaisuerän koon pienentämistä kannattaa harkita. Jos yksikkö käynnistää suuren määrän logiikkaa tietueen muutosten yhteydessä, aikakatkaisujen estäminen voi edellyttää, että päivitykset lähetetään pienissä erissä.
 
 

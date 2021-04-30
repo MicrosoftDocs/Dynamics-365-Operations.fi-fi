@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832391"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899164"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832391"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Scale unitien varastonohjaus
 
-Tämän toiminnon avulla scale unitit voivat suorittaa valittuja prosesseja varastonhallinnan ominaisuuksista. Pilvipalvelujen scale unitit suorittavat kuormitukset pilvessä käyttämällä erillisistä käsittelykapasiteettia valitulla Microsoft Azure -alueella. Reunapalvelujen scale uniteissa voidaan suorittaa joitakin kuormituksia erikseen paikallisesti, vaikka scale unitien yhteys pilvipalveluihin olisi tilapäisesti katkennut.
+Tämän toiminnon avulla scale unitit voivat suorittaa valittuja prosesseja varastonhallinnan ominaisuuksista.
 
 Tässä aiheessa varastonhallinnan ohjausta varastossa, joka on määritetty scale unitiksi, kutsutaan *varastonohjausjärjestelmäksi* (*WES*).
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Käytössä on oltava Dynamics 365 Supply Chain Managementin keskus ja scale unit, jonka käyttöönottoon sisältyy varastonhallinnan kuormitus. Lisätietoja on arkkitehtuurista ja käyttöönottoprosessista on kohdassa [Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit](cloud-edge-landing-page.md).
+Käytössä on oltava Dynamics 365 Supply Chain Managementin keskus ja scale unit, jonka käyttöönottoon sisältyy varastonhallinnan kuormitus. Lisätietoja on arkkitehtuurista ja käyttöönottoprosessista on kohdassa [Käytä scale uniteja Supply chain managementin työkuormien joustavuutta](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>WES-kuormituksen käyttäminen scale uniteissa
 
@@ -297,6 +297,8 @@ Scale unitien kuormituksissa voi hallita seuraavia erätöitä valitsemalla **Va
 - Aaltotaulukon tietueiden käsittely
 - Varastokeskuksen yksikkösanoman käsittelijä
 - Käsittele varastotilausrivien määräpäivityspyynnöt
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ca8868069fca4453efbb76694702a554da6d7aa6
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791530"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892272"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
@@ -39,7 +39,7 @@ Päivitykset julkaistaan säännöllisesti kaikkiin ympäristöihin. Human Resou
 
 Human Resources -päivitykset tehdään kaikissa ympäristöissä automaattisesti. Human Resourcesiin liittyy kahdenlaisia julkaisuja:
 
-- **Palvelupäivitykset**: Kahden viikon välein ilmestyvät päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiin kuuluvat myös soveltuvat Platform updatet, kun ne julkaistaan. Jos haluat saada käsityksen siitä, milloin Platform updatet julkaistaan, katso [Taulukko 3: Platform-julkaisut ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Kahdesti viikossa ilmestyvillä päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto alueiden välillä. Lisätietoja kahdesti viikossa ilmestyvistä päivityksistä esitetään kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
+- **Palvelupäivitykset**: Kahden viikon välein ilmestyvät päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiin kuuluvat myös soveltuvat Platform updatet, kun ne julkaistaan. Jos haluat saada käsityksen siitä, milloin Platform updatet julkaistaan, katso [Taulukko 3: Platform-julkaisut ](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Kahdesti viikossa ilmestyvillä päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto alueiden välillä. Lisätietoja kahdesti viikossa ilmestyvistä päivityksistä esitetään kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
 
     Kaikki tuetut palvelinkeskukset päivittyvät kahden viikon välein, ellei muuta mainita. Alueet Yhdysvallat, Australia, Eurooppa, Yhdistynyt kuningaskunta ja Kanada kuuluvat kahdesti viikossa ilmestyvien päivitysten piiriin. 
 
@@ -71,11 +71,11 @@ Tietoa siitä, mitä Human Resourcesin osalta suunnitellaan ja mitä siihen liit
 
 - [Dynamics 365 Human Resourcesin toteutussuunnitelma](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Dynamics 365:n julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Dynamics 365:n julkaisusuunnitelmat](/dynamics365/release-plans/)
 
 - [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
 
-- [Lifecycle Servicesin (LCS) ongelmahaku](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (vain Platformiin liittyvät virheet)
+- [Lifecycle Servicesin (LCS) ongelmahaku](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (vain Platformiin liittyvät virheet)
 
 - [Human Resources -blogi](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -83,7 +83,7 @@ Tietoa siitä, mitä Human Resourcesin osalta suunnitellaan ja mitä siihen liit
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Ominaisuuksien esikatselu eristysympäristössä
 
-Voit varmentaa esikatseluominaisuudet eristysympäristössä, ennen kuin otat ne käyttöön tuotantoympäristössä. Lisätietoja uusien ominaisuuksien käyttöönotosta on kohdassa [ominaisuuksien hallinnan yleiskuvaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Voit varmentaa esikatseluominaisuudet eristysympäristössä, ennen kuin otat ne käyttöön tuotantoympäristössä. Lisätietoja uusien ominaisuuksien käyttöönotosta on kohdassa [ominaisuuksien hallinnan yleiskuvaus](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Kaikki uudet toiminnot pysyvät esiversiossa ainakin 30 päivää ja yleensä 30–60 päivää. Tärkeimmät toiminnot ovat yleensä saatavana kunkin vuoden lokakuussa ja huhtikuussa esiversiojakson jälkeen. Voit ottaa uudet ominaisuudet käyttöön heti, kun näet ne Toimintojen hallinta -työtilassa. Jotkin toiminnot on ehkä otettu käyttöön oletusarvoisesti.
 
@@ -101,9 +101,9 @@ Kun testaat esikatseluominaisuuksia tai kokeilet uusia toimintoja, saatat löyt�
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Dynamics 365:n ja Power Platformin julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Dynamics 365:n ja Power Platformin julkaisusuunnitelmat](/dynamics365/release-plans)</br>
 [Dynamics 365 Human Resourcen uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Ohjelmiston elinkaarikäytäntö](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Ohjelmiston elinkaarikäytäntö](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 

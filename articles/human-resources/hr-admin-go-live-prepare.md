@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795138"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892750"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Human Resourcesin julkistamisen valmistelu
 
@@ -43,7 +43,7 @@ Seuraavassa taulukossa on kaikki prosessin vaiheet, odotettu kesto ja kuka vasta
 | 2 | Tarkistusluettelon viimeistely ja lähettäminen | Käyttäjän hyväksyntätestauksen (UAT) valmistumisen jälkeen | Kumppani/asiakas | Noudata [FastTrackin julkaisuarvioinnissa](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment) olevia ohjeita. |
 | 3 | Projektin arviointi (FasTrack) | FasTrack-arkkitehti * | Arkkitehti toimittaa arvioinnin tarkistusluettelon vastaanottamisen jälkeen ja jatkaa arviointia, kunnes mahdolliset kysymykset on selvitetty ja korjaavat toimet on ilmoitettu. |
 | 4 | Projektityöpaja (FasTrack) | FasTrack-arkkitehti * | |
-| 5 | Tietopaketin tuonnit | Määräytyy projektin mukaan | Kumppani/asiakas | Noudata kohdassa [Tietojen hallinnan yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages) olevia ohjeita.|
+| 5 | Tietopaketin tuonnit | Määräytyy projektin mukaan | Kumppani/asiakas | Noudata kohdassa [Tietojen hallinnan yleiskatsaus](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) olevia ohjeita.|
 | 6 | Tuotantovalmius | Kaikkien edeltävien vaiheiden valmistumisen jälkeen | Kumppani/asiakas | Kumppani/asiakas ottaa vastuun tuotantoympäristöstä.|
 | 7 | Valmistelusiirron aktiviteetit | Määräytyy projektin mukaan | Kumppani/asiakas | |
 | 8 | Julkaisu | Määräytyy projektin mukaan | Asiakas | |
@@ -66,7 +66,7 @@ Käyttäjän hyväksyntätestausvaiheen aikana on testattava kaikki toteutetut l
 
 - Suosittelemme, että hyväksyntätestausprosessi alkaa puhtaasta ja tyhjästä ympäristöstä, jossa GOLD-konfiguraatiosi tiedot kopioidaan ympäristöön ennen hyväksyntätestausprosessin aloittamista. On suositeltavaa käyttää tuotantoympäristöä GOLD-ympäristönä siihen asti, kunnes julkaiset ratkaisun, jolloin ympäristöstä tulee tuotanto.
 - Testitapaukset kattavat kaikki tarpeet. 
-- Testaus siirrettyjen tietojen avulla. Tällaisia tietoja ovat ainakin päätiedot, kuten työntekijät, työt ja toimet. Lisäksi kannattaa sisällyttää alkusaldot, kuten loma-ja poissaolojaksotukset. Myös avoimia tapahtumia, kuten ajankohtaisia eturekisteröintejä, on syytä sisällyttää. Testaukseen kannattaa käyttää kaiken tyyppisiä tietoja, vaikka tietojoukkoa ei olisi viimeistelty. 
+- Testaus siirrettyjen tietojen avulla. Tämän tulisi siältää tietoja, kuten työntekijät, työt ja toimet. Lisäksi kannattaa sisällyttää alkusaldot, kuten loma-ja poissaolojaksotukset. Myös avoimia tapahtumia, kuten ajankohtaisia eturekisteröintejä, on syytä sisällyttää. Testaukseen kannattaa käyttää kaiken tyyppisiä tietoja, vaikka tietojoukkoa ei olisi viimeistelty. 
 - Testaus käyttämällä oikeita käyttäjille määritettyjä käyttöoikeusrooleja (oletusroolit ja mukautetut roolit). 
 - Varmistus, että ratkaisu noudattaa kaikkia yritys- ja toimialakohtaisia lakisääteisiä vaatimuksia. 
 - Kaikkien ominaisuuksien dokumentointi sekä hyväksynnän ja kuittauksen hankkiminen asiakkaalta. 
@@ -86,7 +86,7 @@ Ennen kuin siirryt liveen, sinun on suoritettava julkaisun harjoitus, jotta voit
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrackin julkaisuarviointi
 
-FastTrack-asiakkaat, joilla on FastTrack-ratkaisuarkkitehdin tuki, suorittavat julkaisuarvioinnin Microsoft FastTrackin kanssa. Lisätietoja on kohdassa  [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+FastTrack-asiakkaat, joilla on FastTrack-ratkaisuarkkitehdin tuki, suorittavat julkaisuarvioinnin Microsoft FastTrackin kanssa. Lisätietoja on kohdassa  [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 FastTrack-tiimi pyytää täyttämään noin kahdeksan viikkoa ennen julkaisua [julkaisun tarkistusluettelon](https://go.microsoft.com/fwlink/?linkid=2146013).
 

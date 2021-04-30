@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821126"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910422"
 ---
 # <a name="inventory-visibility-add-in"></a>Varaston näkyvyyden apuohjelma
 
@@ -39,7 +39,7 @@ Tässä aiheessa käsitellään Dynamics 365 Supply Chain Managementin varaston 
 
 Varaston näkyvyyden lisäapuohjelman asentamiseen on käytettävä Microsoft Dynamics Lifecycle Servicesiä (LCS). LCS on yhteistyöportaali, jonka muodostamassa ympäristössä ja jonka säännöllisesti päivitetyillä palveluilla voi hallita Dynamics 365 Finance and Operations -sovellusten elinkaarta.
 
-Lisätietoja on kohdassa [Lifecycle Services -resurssit](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+Lisätietoja on kohdassa [Lifecycle Services -resurssit](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="prerequisites"></a>Edellytykset
 
@@ -48,10 +48,13 @@ Ennen varaston näkyvyyden apuohjelman asentamista:
 - Hanki LCS-toteutusprojekti, jossa on otettu käyttöön vähintään yksi ympäristö.
 - Varmista, että kohdassa [Lisäosien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) annetut edellytykset lisäosien määrittämiselle on täytetty. Varaston näkyvyys ei edellytä kaksoiskirjoituslinkitystä.
 - Ota yhteyttä varaston näkyvyyden tiimiin [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), jotta saat seuraavat kolme vaadittua tiedostoa:
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (jos käynnissä ollut Supply Chain Managementin versio on aiempi kuin 10.0.18)
+- Noudata seuraavassa annettuja ohjeita: [Pikaopas: Rekisteröi hakemus Microsoft identity Platformiin](/azure/active-directory/develop/quickstart-register-app) sovelluksen rekisteröimiseksi ja asiakkaan lisäämiseksi AAD:lle ylläpitosopimuksen mukaan.
+    - [Sovelluksen rekisteröinti](/azure/active-directory/develop/quickstart-register-app)
+    - [Lisää asiakasohjelman salasana](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - **Sovelluksen (asiakas) tunnuksen**, **asiakasohjelman salasanan** ja **vuokraajan tunnuksen** avulla voidaan tehdä seuraavat vaiheet.
 
 > [!NOTE]
 > Tällä hetkellä tuettuja maita ja alueita ovat Kanada, Yhdysvallat ja Euroopan unioni (EU).
@@ -64,7 +67,7 @@ Määritä Dataverse noudattamalla seuraavia ohjeita.
 
 1. Lisää palveluperiaate vuokraajaan:
 
-    1. Asenna Azure AD PowerShell Module v2, kuten kuvattu kohdassa [Asenna Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Asenna Azure AD PowerShell Module v2, kuten kuvattu kohdassa [Asenna Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
     1. Suorita seuraava PowerShell-komento.
 
         ```powershell
@@ -80,7 +83,12 @@ Määritä Dataverse noudattamalla seuraavia ohjeita.
     1. Valitse **Uusi**. Aseta sovellustunnukseksi *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (Objektin tunnus ladataan automaattisesti, kun tallennat muutokset.) Voit mukauttaa nimeä. Voit muuttaa sen esimerkiksi nimeksi *Varaston näkyvyys*. Kun olet valmis, valitse **Tallenna**.
     1. Valitse **Määritä rooli** ja valitse sitten **Järjestelmänvalvoja**. Jos saatavana on rooli nimeltä **Common Data Service -käyttäjä**, valitse myös se.
 
-    Lisätietoja on kohdassa [Sovelluskäyttäjän luominen](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    Lisätietoja on kohdassa [Sovelluskäyttäjän luominen](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Jos oletuskieli ei Dataversessäsi ole **englanti**:
+
+    1. Siirry kohtaan **Lisäasetukset \> Hallinta \> Kielet**,
+    1. Valitse **englanti (LanguageCode=1033)** ja valitse **Ota käyttöön**.
 
 1. Tuo `Inventory Visibility Dataverse Solution.zip` -tiedosto, joka sisältää Dataverse-konfiguraatioon liittyvät entiteetit ja Power Apps -sovellukset:
 
@@ -158,12 +166,12 @@ Varmista, että seuraavat ominaisuudet on otettu käyttöön Supply Chain Manage
 
     Etsi LCS-ympäristösi Azure-alue ja kirjoita sitten URL-osoite. URL-osoitteessa on seuraava muoto:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     Esimerkiksi Euroopassa ympäristössäsi on jokin seuraavista URL-osoitteista:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     Seuraavat alueet ovat käytettävissä tällä hetkellä.
 
@@ -212,13 +220,13 @@ Palvelun suojaustunnus haetaan seuraavasti:
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -255,6 +263,43 @@ Palvelun suojaustunnus haetaan seuraavasti:
         "expires_in": 1200
     }
     ```
+
+### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a>Mallipyyntö
+
+Tässä on esimerkki http-pyynnöstä. Voit käyttää mitä tahansa työkaluja tai koodauskieltä lähettääksesi pyynnön, esimerkiksi ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Varaston näkyvyyden ohjelmointirajapinnan määrittäminen
 
@@ -338,7 +383,7 @@ Seuraavassa esimerkissä on väri- ja kokoyhdistelmää käyttävä tuotekysely.
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -350,6 +395,8 @@ Seuraavassa esimerkissä on väri- ja kokoyhdistelmää käyttävä tuotekysely.
     "returnNegative": true
 }
 ```
+
+`filters`-kenttää varten vain `ProductId` tukee tällä hetkellä useita arvoja. Jos `ProductId` on tyhjä matriisi, kaikkia tuotteita kysellään.
 
 #### <a name="custom-measurement"></a>Mukautettu mitta
 

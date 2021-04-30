@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825395"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909153"
 ---
 # <a name="create-purchase-orders"></a>Ostotilausten luominen
 
@@ -65,7 +65,7 @@ Haluat ehkä joskus jakaa tilatun määrän, jotta sen eri osat toimitetaan eri 
 Kulut voidaan lisätä automaattisesti ostotilausriveille, jos automaattiset kulut on määritetty toimittajalle tai toimittajan kuluryhmälle ja nimike tai nimikkeen kuluryhmälle. Kulut lisätään kuitenkin enemmän yleensä kulut lisätään manuaalisesti että tilausrivin tasolla. Voit lisätä kulun avaamalla **Kulujen ylläpito** -sivun **Kulujen ylläpito** -toiminnon **Myyntitiedot**-valikossa **Rivit**-näkymässä. Kulujen lisäämisen etuna suoraan tilausrivitasolla on kulujen kohdistaminen varastokustannuksena. Voit määrittää koodit tilin tuotekustannukseen **Nimike**-debet-vaihtoehdolla. Tällaiset kulut on kohdistettava ostotilauksen otsikosta riveille ennen tilauksen vahvistamista. Haluat ehkä esimerkiksi kohdistaa kulut kullekin riville määrän perusteella. Kululuokan vaikuttaa myös siihen, miten kulut lasketaan. Kiinteät kulut esimerkiksi määrittävät kiinteän summan ja prosenttikulut lasketaan tilausrivin nettosumman prosenttiosuutena. Ostotilaukset voidaan määrittää kuormalle, ja kuorma voi sisältää arvion kuljetuskustannusten odotetuista kuluista. Voit kohdistaa tämän kulun kuormasta takaisin ostotilausriveille.
 
 ## <a name="purchase-order-actions"></a>Ostotilaustehtävät
-Kun olet lisännyt otsikon ja rivit ostotilaukseen, lisävaiheet on täydennettävä, ennen kuin tilaus voidaan vahvistaa. Koska valittavia vaihtoehtoja on niin monia, [Toiminnon haku](../../fin-and-ops/get-started/action-search.md) voi auttaa löytämään sopivan valikkovaihtoehdon.  
+Kun olet lisännyt otsikon ja rivit ostotilaukseen, lisävaiheet on täydennettävä, ennen kuin tilaus voidaan vahvistaa. Koska valittavia vaihtoehtoja on niin monia, [Toiminnon haku](../../fin-ops-core/fin-ops/get-started/action-search.md) voi auttaa löytämään sopivan valikkovaihtoehdon.  
 
 Voit määrittää tilauksen tuotteet niin, että niillä lisänimikkeitä. Lisänimikkeet ovat tuotteita, jotka on ostettava tai jotka voidaan ostaa yhdessä muiden tuotteiden kanssa. Lisätuotteita voidaan lisätä maksutta liittyvinä tuotteina tai voit päättää, lisätäänkö ne tilaukseen vai ei. Voit tarkistaa lisätuotteet, kun kukin tilausrivi on lisätty. Todennäköisesti on kuitenkin kätevämpää tarkastella kaikkien tilausrivien lisänimikkeitä tai lisätä niitä **Lisänimikkeet**-sivulla, jonka voit avata toimintoruudusta.  
 

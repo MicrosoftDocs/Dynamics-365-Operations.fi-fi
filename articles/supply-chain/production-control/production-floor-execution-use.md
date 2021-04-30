@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814653"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907714"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -136,7 +136,7 @@ Työntekijä valitsee kolmannen työn **Kaikki työt** -välilehdessä ja valits
 
 ## <a name="working-on-indirect-activities"></a>Epäsuorien tehtävien tekeminen
 
-Epäsuorat tehtävät ovat tehtäviä, jotka eivät liity suoraan tuotantotilaukseen. Epäsuorat tehtävät voidaan määrittää joustavasti, mistä on lisätietoja kohdassa [Työajan seurannan epäsuorien tehtävien määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Epäsuorat tehtävät ovat tehtäviä, jotka eivät liity suoraan tuotantotilaukseen. Epäsuorat tehtävät voidaan määrittää joustavasti, mistä on lisätietoja kohdassa [Työajan seurannan epäsuorien tehtävien määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 Shannon, joka on Contoson tuotannon työntekijä, haluaa esimerkiksi osallistua yrityksen kokoukseen, ja kokouksia pidetään epäsuorina tehtävinä. Jompikumpi seuraavista skenaarioista on käytössä:
 

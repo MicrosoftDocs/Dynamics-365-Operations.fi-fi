@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793822"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889833"
 ---
 # <a name="manage-features-in-human-resources"></a>Ominaisuuksien hallinta Human Resourcesissa
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793822"
 
 Julkaisemme jatkuvasti uusia ominaisuuksia Microsoft Dynamics 365 Human Resourcesissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Tarjoamme esikatseluominaisuuksia, jotka ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
 
-Katso lisätietoja uusista ominaisuuksista Human Resourcesissa kohdista [Uutta Human Resourcesissa](hr-admin-whats-new.md) ja [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Katso lisätietoja uusista ominaisuuksista Human Resourcesissa kohdista [Uutta Human Resourcesissa](hr-admin-whats-new.md) ja [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-**Toimintojen hallinta** -työtilassa on luettelo kussakin julkaisussa toimitetuista toiminnoista. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+**Toimintojen hallinta** -työtilassa on luettelo kussakin julkaisussa toimitetuista toiminnoista. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Kaikki uudet toiminnot pysyvät esiversiossa ainakin 30 päivää ja yleensä 30–60 päivää. Tärkeimmät toiminnot ovat yleensä saatavana kunkin vuoden lokakuussa ja huhtikuussa esiversiojakson jälkeen. Voit ottaa uudet ominaisuudet käyttöön heti, kun näet ne **Toimintojen hallinta** -työtilassa. Jotkin toiminnot on ehkä otettu käyttöön oletusarvoisesti.
 
@@ -93,6 +93,6 @@ Haluamme kuulla kokemuksistasi esikatseluominaisuuksien parissa. Kannustamme sin
 ## <a name="see-also"></a>Lisätietoja
 
 - [Uutta henkilöstöhallinnossa](hr-admin-whats-new.md)
-- [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835561"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909376"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Varastosovelluksen asentaminen ja yhdistäminen
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835561"
 > Tässä ohjeaiheessa kuvataan, miten vanha varastosovellus (joka on nyt vanhentunut) määritetään. Lisätietoja uuden varaston hallinnan mobiilisovelluksen määrittämisestä on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Tässä aiheessa käsitellään pilvikäyttöönottojen varastointisovellusta. Lisätietoja varastointisovelluksen määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönotoissa](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Tässä aiheessa käsitellään pilvikäyttöönottojen varastointisovellusta. Lisätietoja varastointisovelluksen määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönotoissa](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Varastosovellus on saatavilla Google Play Storesta ja Microsoft Storesta. Se toimitetaan erillisenä osana. Niinpä se onkin ladattava kuhunkin laitteeseen ja määritettävä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
 
@@ -54,7 +54,7 @@ Lataa sovellus valitsemalla jompikumpi seuraavista linkeistä:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations – Warehousing Microsoft Storessa](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing – Dynamics 365 Google Play Storessa](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-Pienissä käyttöönotoissa sovellus kannattaa asentaa valitusta kaupasta kuhunkin laitteeseen, jonka jälkeen yhteys käytettyyn ympäristöön voidaan määrittää manuaalisesti. Varastosovelluksen versiosta 1.7.0.0 alkaen sovelluksen käyttöönoton ja/tai määrityksen voi myös automatisoida. Tämä voi olla kätevää, jos hallittavia laitteita on useita ja käytössä on mobiililaitteiden ja -sovellusten hallintaratkaisu, kuten [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Lisätietoja sovellusten lisäämisestä Intunen avulla on kohdassa [Sovellusten lisääminen Microsoft Intuneen](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Pienissä käyttöönotoissa sovellus kannattaa asentaa valitusta kaupasta kuhunkin laitteeseen, jonka jälkeen yhteys käytettyyn ympäristöön voidaan määrittää manuaalisesti. Varastosovelluksen versiosta 1.7.0.0 alkaen sovelluksen käyttöönoton ja/tai määrityksen voi myös automatisoida. Tämä voi olla kätevää, jos hallittavia laitteita on useita ja käytössä on mobiililaitteiden ja -sovellusten hallintaratkaisu, kuten [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Lisätietoja sovellusten lisäämisestä Intunen avulla on kohdassa [Sovellusten lisääminen Microsoft Intuneen](/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Verkkopalvelusovelluksen luominen Azure Active Directoryssa
 
@@ -89,11 +89,11 @@ Varastosovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa ed
 
 Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä on seuraavissa resursseissa:
 
-- Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä Windows PowerShellin avulla on kohdassa [Ohje: Varmennetta käyttävän palvelun päänimen luominen Azure PowerShellin avulla](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä Windows PowerShellin avulla on kohdassa [Ohje: Varmennetta käyttävän palvelun päänimen luominen Azure PowerShellin avulla](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Lisätietoja verkkopalvelusovelluksen luomisesta Azure AD:ssä on seuraavissa ohjeaiheissa:
 
-    - [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Toimintaohje: Azure AD -sovelluksen ja resursseja käyttävän palvelun päänimen luonti portaalin avulla](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](/azure/active-directory/develop/quickstart-register-app)
+    - [Toimintaohje: Azure AD -sovelluksen ja resursseja käyttävän palvelun päänimen luonti portaalin avulla](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Managementin käyttäjätilin luominen ja määrittäminen
 
@@ -121,7 +121,7 @@ Azure AD:n todennuksen avulla mobiililaite voidaan yhdistää turvallisesti Supp
 
 Varmenteita voidaan käyttää salauskoodeina, joilla voidaan todistaa sovelluksen käyttäjätiedot tunnusta pyydettäessä. Siinä missä varmenteen julkinen osa ladataan sovelluksen rekisteröintiin Azure-portaalissa, koko varmenne on otettava käyttöön jokaisessa laitteessa, johon varastosovellus on asennettu. Organisaatio vastaa varmenteen hallinnassa esimerkiksi kierron osalta. Itseallekirjoitettujen varmenteiden käyttö on mahdollista, mutta käyttävien varmenteiden on aina oltava ei-vietäviä.
 
-Jokaisessa laitteessa, jossa varastosovellusta käytetään, on varmistettava, että varmenne on käytettävissä paikallisesti. Lisätietoja varmenteiden hallinnasta Intune-ohjatuissa laitteissa Intunea käytettäessä on kohdassa [Varmenteiden käyttö todennukseen Microsoft Intunessa](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Jokaisessa laitteessa, jossa varastosovellusta käytetään, on varmistettava, että varmenne on käytettävissä paikallisesti. Lisätietoja varmenteiden hallinnasta Intune-ohjatuissa laitteissa Intunea käytettäessä on kohdassa [Varmenteiden käyttö todennukseen Microsoft Intunessa](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Sovelluksen määrittäminen tuomalla yhteysasetukset
 

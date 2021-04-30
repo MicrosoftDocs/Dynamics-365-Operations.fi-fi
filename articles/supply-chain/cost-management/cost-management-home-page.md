@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839364"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908779"
 ---
 # <a name="cost-management-home-page"></a>Kustannushintojen hallinnan aloitussivu
 
@@ -43,7 +43,7 @@ Voit käyttää varastokirjanpitoa ja valmistuksen kirjanpitoa **Kustannuslasken
 
 Valmistuksen kirjanpidossa voit käsitellä [työtilausten kustannuslaskentaa](production-order-cost-analysis.md) tuotanto- ja erätilauksissa sekä [jälkikustannuslaskentaan](backflush-costing.md) Lean-valmistuksessa.
 
-[Kustannustenhallinnan Power BI -sisältö](../../dev-itpro/analytics/cost-management-content-pack.md) tarjoaa johdolle näkymän varastoon ja keskeneräisten töiden (KET) varastoon sekä niiden läpi kulkeviin kustannuksiin luokittain pitkällä aikavälillä. Näitä tietoja voidaan käyttää myös raportin yksityiskohtaisena täydennyksenä.
+[Kustannustenhallinnan Power BI -sisältö](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) tarjoaa johdolle näkymän varastoon ja keskeneräisten töiden (KET) varastoon sekä niiden läpi kulkeviin kustannuksiin luokittain pitkällä aikavälillä. Näitä tietoja voidaan käyttää myös raportin yksityiskohtaisena täydennyksenä.
 
 ### <a name="additional-resources"></a>Lisäresurssit
 
@@ -57,7 +57,7 @@ Valmistuksen kirjanpidossa voit käsitellä [työtilausten kustannuslaskentaa](p
 
 #### <a name="blogs"></a>Blogit
 
-Kustannushintojen hallintaa koskevia mielipiteitä, uutisia ja muita tietoja on [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/dynamicsaxscm). Vaikka monet kirjoitukset koskevat kustannushintojen hallinnan edellistä versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
+Kustannushintojen hallintaa koskevia mielipiteitä, uutisia ja muita tietoja on [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogissa](/archive/blogs/axmfg/) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/dynamicsaxscm). Vaikka monet kirjoitukset koskevat kustannushintojen hallinnan edellistä versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
 
 #### <a name="task-guides"></a>Tehtäväoppaat
 

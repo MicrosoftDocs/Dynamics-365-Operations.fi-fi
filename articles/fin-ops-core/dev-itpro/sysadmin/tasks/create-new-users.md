@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745834"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907908"
 ---
 # <a name="create-new-users"></a>Uusien käyttäjien luominen
 
@@ -29,10 +29,10 @@ Ennen kuin Finance and Operations -sovellukset ovat käytettävissä, käyttäj�
 Lisätietoja Finance and Operations -sovellusten käyttöoikeuksien ostamisesta ja myöntämisestä on [Microsoft Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Käyttöoikeuden määrittäminen käyttäjälle
-Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) [Microsoft 365 -hallintakeskuksessa](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) [Microsoft 365 -hallintakeskuksessa](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Ulkoisen käyttäjän lisääminen Azure AD:ssa ja käyttöoikeuden määrittäminen 
-Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Finance and Operations -sovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:ta. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Finance and Operations -sovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:ta. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Uusien käyttäjien tuominen Azure AD:sta 
 1. Valitse **Järjestelmän hallinta** \> **Käyttäjät** \> **Käyttäjät**.
@@ -57,7 +57,7 @@ Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Dire
 7. Valitse **Yritys**-kentässä käyttäjän oletusaloitusyritys. 
 8. Valitse **Tallenna**.
 
-Käyttäjätietopalvelun ja telemetriatunnuksen arvot päivitetään [Microsoft graph](https://docs.microsoft.com/graph/overview) -kutsun perusteella, kun käyttäjätietue tallennetaan. Telemetriatunnus perustuu käyttäjän objektitunnukseen tai suojaustunnukseen (SID) Azure AD:ssa.
+Käyttäjätietopalvelun ja telemetriatunnuksen arvot päivitetään [Microsoft graph](/graph/overview) -kutsun perusteella, kun käyttäjätietue tallennetaan. Telemetriatunnus perustuu käyttäjän objektitunnukseen tai suojaustunnukseen (SID) Azure AD:ssa.
 
 > [!NOTE]
 > Soveltuvat rooli ja organisaatiot on määritettävä sen jälkeen, kun käyttäjä on lisätty. Lisätietoja on kohdassa [Käyttäjien määrittäminen käyttöoikeusrooleille](assign-users-security-roles.md). Ehdollisesti voidaan myös edellyttää, että käyttäjään liitetään **Henkilö** ja että **Käyttäjän asetukset**, kuten kieli, päivitetään.

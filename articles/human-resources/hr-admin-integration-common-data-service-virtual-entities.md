@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805103"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890049"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse -virtuaalitaulukot
 
@@ -34,7 +34,7 @@ Dynamics 365 Human Resources on Microsoft Dataversen virtuaalinen tietolähde. S
 Jos haluat ottaa Dataversen Human Resources -yksiköiden CRUD-toiminnot käyttää, yksiköiden on oltava käytettävissä virtuaalitaulukkoina Dataversessa. Voit suorittaa tällä tavoin Dataversen ja Microsoft Power Platformin CRUD-toimintoja Human Resourcesin tiedoissa. Toiminnot tukevat myös Human Resourcesin liiketoimintalogiikan tarkistuksia, joilla varmistetaan tietojen eheys kirjoitettaessa tietoja yksiköihin.
 
 > [!NOTE]
-> Human Resources -yksiköt vastaavat Dataverse-tauluja. Lisätietoja Dataversesta (aiemmin Common Data Service) ja terminologiapäivityksistä on kohdassa [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources -yksiköt vastaavat Dataverse-tauluja. Lisätietoja Dataversesta (aiemmin Common Data Service) ja terminologiapäivityksistä on kohdassa [Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>Human Resourcesin käytettävissä olevat virtuaalitaulukot
 
@@ -51,7 +51,7 @@ Human Resourcesin virtuaalitaulukot eivät ole samoja kuin Human Resourcesille l
 Human Resourcesin alkuperäiset taulukot luodaan erikseen ja niitä ylläpidetään HCM Common -ratkaisussa Dataversessa. Aluperäisissä taulukoissa tiedot tallennetaan Dataversessa, ja ne on synkronoitava Human Resourcesin sovellustietokannassa.
 
 > [!NOTE]
-> Alkuperäisten Human Resourcesin Dataverse -taulukoiden luettelo on kohdassa [Dataverse-taulukot](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Alkuperäisten Human Resourcesin Dataverse -taulukoiden luettelo on kohdassa [Dataverse-taulukot](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Luo perustiedot
 
@@ -71,7 +71,7 @@ Lisätietoja ominaisuuksien ottamisesta käyttöön ja poistamisesta käytöstä
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Sovelluksen rekisteröinti Microsoft Azuressa
 
-Human Resources -esiintymä on rekisteröitävä Azure-portaalissa, jotta Microsoftin käyttäjätietoympäristö voi toimittaa todennus- ja valtuutuspalvelut sovellukselle ja käyttäjille. Lisätietoja sovellusten rekisteröinnistä Azuressa on kohdassa [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Human Resources -esiintymä on rekisteröitävä Azure-portaalissa, jotta Microsoftin käyttäjätietoympäristö voi toimittaa todennus- ja valtuutuspalvelut sovellukselle ja käyttäjille. Lisätietoja sovellusten rekisteröinnistä Azuressa on kohdassa [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](/azure/active-directory/develop/quickstart-register-app).
 
 1. Avaa [Microsoft Azure -portaali](https://portal.azure.com).
 
@@ -93,7 +93,7 @@ Human Resources -esiintymä on rekisteröitävä Azure-portaalissa, jotta Micros
 
 10. Anna kuvaus, valitse kesto ja valitse **Lisää**.
 
-11. Kirjaa salaisen koodin arvo muistiin. Nämä tiedot annetaan, kun [määrität virtuaalitaulukon tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Kirjaa sen arvo taulun **Arvo**-ominaisuudesta. Nämä tiedot annetaan, kun [määrität virtuaalitaulukon tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Muista kirjoittaa salaisen koodin arvo muistiin tässä vaiheessa. Salaista koodi ei näytetä sen jälkeen, kun poistut sivulta.
@@ -215,12 +215,11 @@ Esiin tulevassa ruudussa näkyy prosessin viimeksi suoritetut tulokset. Voit tar
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Mikä on Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Taulut Dataversessa](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Taulukkosuhteiden yleiskatsaus](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Ulkoisten tietolähteiden tietoja sisältävien virtuaalitaulukoiden luominen ja muokkaaminen](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Mitä Power Apps -portaalit ovat?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Yleiskatsaus sovellusten luonnista Power Appsissa](https://docs.microsoft.com/powerapps/maker/)
-
+[Mikä on Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Taulut Dataversessa](/powerapps/maker/common-data-service/entity-overview)<br>
+[Taulukkosuhteiden yleiskatsaus](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Ulkoisten tietolähteiden tietoja sisältävien virtuaalitaulukoiden luominen ja muokkaaminen](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Mitä Power Apps -portaalit ovat?](/powerapps/maker/portals/overview)<br>
+[Yleiskatsaus sovellusten luonnista Power Appsissa](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

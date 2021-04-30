@@ -1,8 +1,8 @@
 ---
 title: Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
-description: Tässä ohjeaiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Microsoft Dynamics 365 Finance -ratkaisussa.
+description: Tässä ohjeaiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 Finance -ratkaisussa.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 165f2c981b550f8a6fd4d2ce08763e6fa3c8b6e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750103"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893198"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Microsoft Dynamics 365 Finance -ratkaisussa.
+Tässä ohjeaiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 Finance -ratkaisussa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -45,7 +45,7 @@ Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia 
 
 - Julkaise malli käyttöön niin, että sitä voidaan käyttää muissa esiintymissä:
 
-    - Muunna luotu asiakirjamalli sähköisen raportoinnin konfiguraatioon ja vie se nykyisestä sovellusesiintymästä XML-pakettina, joka voidaan tallentaa joko paikallisesti tai LCS:ään.
+    - Muunna luotu asiakirjamalli sähköisen raportoinnin konfiguraatioon ja vie se nykyisestä sovellusesiintymästä XML-pakettina, joka voidaan tallentaa joko paikallisesti tai Lifecycle Servicesiin (LCS).
     - Muunna sähköisen raportoinnin konfiguraatio sovelluksen asiakirjamalliksi.
     - Tuo XML-paketti, joka tallennetaan paikallisesti tai LCS:ään nykyiseen esiintymään.
 
@@ -78,9 +78,20 @@ On suositeltavaa, että ER-määritykset suunnitellaan kehitysympäristössä Fi
 - Käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat muokata konfiguraatioita ja suorittaa ne sitten testitarkoituksissa. Tämä skenaario saattaa aiheuttaa kutsuja luokkien tai taulujen menetelmistä, jotka voivat olla vahingollisia liiketoimintatiedoille ja esiintymän suorituskyvylle.
 - Aloituskohdat ja kirjattu yrityksen sisältö eivät rajoita luokkien ja taulujen menetelmien kutsuja sähköisen raportoinnin tietolähteinä tai konfiguraatioina. Niinpä käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat päästä käsiksi salassa pidettäviin tietoihin.
 
-Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot voidaan ladata testiympäristöön konfiguraation arviointia (oikea prosessi-integraatio, tulosten oikeellisuus, suorituskyky) ja laadunvarmistusta (roolipohjaisten käyttöoikeuksien oikeellisuus, tehtävien eriyttäminen jne.) varten. Tähän tarkoitukseen voidaan käyttää toimintoja, jotka sallivat sähköisen raportoinnin konfiguraatioiden vaihdon. Lopuksi testatut sähköisen raportoinnin konfiguraatiot voidaan ladata joko LCS:ään, jossa ne voidaan jakaa palvelun tilaajille, tai tuotantoympäristöön sisäiseen käyttöön, kuten seuraavassa kaaviossa.
+Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot voidaan [ladata](#data-persistence-consideration) testiympäristöön konfiguraation arviointia (oikea prosessi-integraatio, tulosten oikeellisuus, suorituskyky) ja laadunvarmistusta (roolipohjaisten käyttöoikeuksien oikeellisuus, tehtävien eriyttäminen jne.) varten. Tähän tarkoitukseen voidaan käyttää toimintoja, jotka sallivat sähköisen raportoinnin konfiguraatioiden vaihdon. Testatut sähköisen raportoinnin konfiguraatiot voidaan ladata joko LCS:ään, jakaa palvelun tilaajille, tai [tuoda](#data-persistence-consideration) tuotantoympäristöön sisäiseen käyttöön.
 
 ![ER-konfiguraation elinkaari](./media/ger-configuration-lifecycle.png)
+
+## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Tietojen pysyvyyden huomioon ottaminen
+
+Voit [tuoda](tasks/er-import-configuration-lifecycle-services.md) eri [versioita](general-electronic-reporting.md#component-versioning) ER-[konfiguraatiosta](general-electronic-reporting.md#Configuration) yksitellen Finance-instanssiisi. Kun tuot uuden ER-konfiguraation version, järjestelmä ohjaa tämän konfiguraation luonnosversion sisältöä:
+
+   - Kun tuotu versio on pienempi kuin nykyisen taloustietoinstanssin tämän konfiguraation ylin versio, tämän konfiguraation luonnosversion sisältö pysyy muuttumattomana.
+   - Kun tuotu versio on suurempi kuin mikään muu tämän konfiguroinnin versio nykyisessä taloustietoinstanssissa, tuodun version sisältö kopioidaan tämän konfiguraation luonnosversioon, jotta voit jatkaa viimeisen valmiin version muokkausta.
+
+Jos tämän konfiguraation [omistaa](general-electronic-reporting.md#Provider) tällä hetkellä aktivoitu konfiguraatiopalvelu, konfiguraation luonnosversio näkyy konfiguroinnit-sivun **Versiot**-pikavälilehdillä **Määritykset**-sivulla (**Organisaation hallinta** > **Sähköinen raportointi** > **Määritykset**). Voit valita konfiguraation luonnosversion ja [muokata](er-quick-start2-customize-report.md#ConfigureDerivedFormat) sen sisältöä käyttämällä ER-suunnittelutoimintoa. Kun olet muokannut ER-kokoonpanon luonnosversiota, sen sisältö ei enää vastaa tämän kokoonpanon korkeimman version sisältöä nykyisessä Finance-ilmentymässä. Jos haluat estää muutosten menettämisen, järjestelmä näyttää virheen, jota tuonti ei voi jatkua, koska tämän konfiguraation versio on suurempi kuin nykyisen taloustietoinstanssin tämän konfiguraation korkein versio. Jos esimerkiksi muodon määritys on **X**, **muodon X-versio ei ole valmis** -virhe ilmestyy näkyviin.
+
+Voit peruuttaa luonnosversiossa tekemäsi muutokset valitsemalla ER-konfiguraation suurimman valmiin tai jaetun version **Versiot**-pikavälilehdissä ja valitsemalla sitten **Hae tämä versio**  -vaihtoehdon. Valitun version sisältö kopioidaan luonnosversioon.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

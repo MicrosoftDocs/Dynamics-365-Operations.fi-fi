@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 59a421b5e81366845901c44486acb3dfa3781850
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753645"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894097"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>ER-muotoisten sarjaelementtien suorittamisen lykkäys
 
@@ -42,7 +42,7 @@ Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Esimerkki: ER-muotoisen sarjaelementin suorituksen lykkäys
 
-Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan sähköisen raportoinnin toiminnallinen konsultin [rooli](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) voi määrittää ER-muodon, joka sisältää sarjaelementin, jossa suoritusjärjestys eroaa muotohierarkian järjestyksestä.
+Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan sähköisen raportoinnin toiminnallinen konsultin [rooli](../sysadmin/tasks/assign-users-security-roles.md) voi määrittää ER-muodon, joka sisältää sarjaelementin, jossa suoritusjärjestys eroaa muotohierarkian järjestyksestä.
 
 Nämä vaiheet voidaan suorittaa Microsoft Dynamics 365 Financen **USMF**-esimerkkiyrityksessä.
 

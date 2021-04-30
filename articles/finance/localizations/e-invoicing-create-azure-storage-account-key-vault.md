@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840217"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893799"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure-tallennustilin ja avainsäilön luominen
 
@@ -30,8 +30,8 @@ ms.locfileid: "5840217"
 
 Ennen kuin voit suorittaa tämän ohjeaiheen vaiheet on varmistettava, että seuraavat tehtävät on suoritettu:
 
-- Avainsäilöresurssin luominen Azuressa. Lisätietoja: [Tietoja Azure Key Vaultista](https://docs.microsoft.com/azure/key-vault/general/overview).
-- Azure-tallennustilin (Blob-tallennustila) luominen. Lisätietoja: [Azure-tallennustilin ylläpito ](https://docs.microsoft.com/azure/storage/blobs/).
+- Avainsäilöresurssin luominen Azuressa. Lisätietoja: [Tietoja Azure Key Vaultista](/azure/key-vault/general/overview).
+- Azure-tallennustilin (Blob-tallennustila) luominen. Lisätietoja: [Azure-tallennustilin ylläpito ](/azure/storage/blobs/).
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -83,4 +83,3 @@ Tässä aiheessa suoritetaan kaksi päävaihetta:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

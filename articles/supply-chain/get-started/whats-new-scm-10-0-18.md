@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832127"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909350"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.18 esikatselu (toukokuu 2021)
 
@@ -35,15 +35,15 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
+Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
-- Ostotilausten automaattinen vapautus (parannus [Varastonohjaukseen pilven scale unitien avulla](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Ostotilausten automaattinen vapautus (parannus [Varastonohjaukseen pilven scale unitien avulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Yritystason inventaariosuorituskyvyn parannukset ja arkistointi](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Lisätietoja: [Varastotapahtumien arkistointi](../inventory/archive-inventory-transactions.md)
+- [Yritystason inventaariosuorituskyvyn parannukset ja arkistointi](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Lisätietoja: [Varastotapahtumien arkistointi](../inventory/archive-inventory-transactions.md)
 
-- [Ostohyvitysten hallinta](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Lisätietoja on kohdassa [Ostohyvitysten hallintamoduulin yleiskatsaus](../rebate-management/rebate-management-overview.md).
+- [Ostohyvitysten hallinta](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Lisätietoja on kohdassa [Ostohyvitysten hallintamoduulin yleiskatsaus](../rebate-management/rebate-management-overview.md).
 
-- Yksinkertainen liittymä vain töihin sisään- ja uloskirjautumiselle (parannus [Parannettuun valmistustuotannon toteutusliittymään](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
+- Yksinkertainen liittymä vain töihin sisään- ja uloskirjautumiselle (parannus [Parannettuun valmistustuotannon toteutusliittymään](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
 
 Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana. 
 
@@ -70,7 +70,7 @@ Saat lisätietoja version 10.0.18 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2021 julkaisuaallon 1 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2021 julkaisuaallon 1 suunnitelma](/dynamics365-release-plan/2021wave1/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 882e9ba310930cd6a9c638c60d5be7edc6809335
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e63c5f3f327870b616eb93f80544c4f1e89980e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821198"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909618"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.10. (toukokuu 2020)
 
@@ -33,19 +33,19 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
-- [Olemassa olevien todellisen painon tunnisteiden käyttäminen varaston hallinnassa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+- [Olemassa olevien todellisen painon tunnisteiden käyttäminen varaston hallinnassa](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
 
-- [Saapuvien kuormituksen hallinnan parannukset varaston hallinnassa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Lisätietoja on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](../warehousing/inbound-load-handling.md).
+- [Saapuvien kuormituksen hallinnan parannukset varaston hallinnassa](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Lisätietoja on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](../warehousing/inbound-load-handling.md).
 
-- [Tarratulostuksen parannukset varastonhallintaan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Lisätietoja on kohdassa [Rekisterikilven otsikoiden asiakirjareitityksen asettelu](../warehousing/document-routing-layout-for-license-plates.md).
+- [Tarratulostuksen parannukset varastonhallintaan](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Lisätietoja on kohdassa [Rekisterikilven otsikoiden asiakirjareitityksen asettelu](../warehousing/document-routing-layout-for-license-plates.md).
 
-- [Pääsuunnittelu sisältää nimikkeet, joilla on käytettävissä oleva varasto, kun esikäsittelyn suodattimet ovat käytössä](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+- [Pääsuunnittelu sisältää nimikkeet, joilla on käytettävissä oleva varasto, kun esikäsittelyn suodattimet ovat käytössä](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 
-- [Tuotantoalueen uudet tietoyksiköt](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Tuotantoalueen uudet tietoyksiköt](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Laadunhallinta varastoprosesseja varten](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Lisätietoja on kohdassa [Laadunhallinta varastoprosesseja varten](../inventory/quality-management-for-warehouses-processes.md).
+- [Laadunhallinta varastoprosesseja varten](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Lisätietoja on kohdassa [Laadunhallinta varastoprosesseja varten](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -61,7 +61,7 @@ Saat lisätietoja tähän päivitykseen liittyvistä virheenkorjauksista kirjaut
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

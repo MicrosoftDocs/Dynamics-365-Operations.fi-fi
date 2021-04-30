@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813914"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908564"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Dynamics 365 Supply Chain Managementin (Resurssien hallinta) integrointi Dynamics 365 Guidesin kanssa
 
@@ -30,12 +30,12 @@ Ennen kuin voit liittää ohjeita käyttöomaisuuden hallinnan työtilauksiin, s
 - [Asenna Dynamics 365 Supply Chain Management -sovelluksen](../../fin-ops-core/fin-ops/index.md) versio 10.0.9 tai uudempi.
 - [Ota käyttöön kaksoiskirjoituslähde Supply Chain Management -sovelluksissa](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Ota väliversio käyttöön](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) **MRGuidesFeature** -ominaisuudesta. (Tuotantoympäristöissä on ensin lähetettävä tukipyyntö, jotta vuokralaisesi lisätään flighting-ryhmään.)
-- [Ota seuraavat konfigurointiavaimet käyttöön](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) **käyttöoikeuksienmääritys** -sivulla:
+- [Ota seuraavat konfigurointiavaimet käyttöön](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) **käyttöoikeuksienmääritys** -sivulla:
 
     - Resurssienhallinta \> Resurssienhallinnan yhdistetty todellisuus
     - Yhdistetty todellisuus \> Yhdistetyn todellisuuden opas
 
-- [Asenna Dynamics 365 Guides -sovelluksen](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) versio 200.0.0.96 tai uudempi.
+- [Asenna Dynamics 365 Guides -sovelluksen](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) versio 200.0.0.96 tai uudempi.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Käytä Dynamics 365 Guidesia resurssienhallinnan kanssa
 
@@ -47,8 +47,8 @@ Seuraa näitä ohjeita, oppaan ja ylläpidon tarkistuslistamallin kytkemiseksi.
 
 1. Luo opas Dynamics 365 Guides -PC:n ja HoloLens-sovellusten avulla. Lisätietoja kunkin oppaan luomisesta on seuraavissa ohjeaiheissa.
 
-    - [Oppaan luominen PC-sovelluksen avulla](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Aseta hologrammit HoloLens-sovelluksen avulla](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Oppaan luominen PC-sovelluksen avulla](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Aseta hologrammit HoloLens-sovelluksen avulla](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. Luo toimitusketjun hallinnassa [ylläpidon tarkistuslistamalli](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. Liitä uusi ylläpidon tarkistuslistarivillä luomasi opas ylläpidon tarkistuslistamalliin:

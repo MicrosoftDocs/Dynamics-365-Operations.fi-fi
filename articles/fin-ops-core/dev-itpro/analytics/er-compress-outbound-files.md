@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753813"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894169"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Sähköisessä raportissa luotavien isokokoisten asiakirjojen pakkaaminen 
 
 [!include [banner](../includes/banner.md)]
 
-Voit määrittää tapahtumatietoja lähtevän asiakirjan luomista varten noutavan ratkaisun käyttämällä [Sähköisen raportoinnin (ER) kehystä](general-electronic-reporting.md). Tämä luotu tiedosto voi olla melko suuri. Kun tällainen asiakirja luodaan, [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) -muistia käytetään sen säilyttämiseen. Jossakin vaiheessa tiedosto on ladattava Microsoft Dynamics 365 Finance -sovelluksesta. Tällä hetkellä sähköisessä raportoinnissa luotavan yksittäisen asiakirjan koko on rajoitettu 2 gigatavuun (Gt). Lisäksi Finance [rajoittaa](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) tällä hetkellä ladatun tiedoston koon 1 gigatavuun. Siksi sinun on konfiguroitava ER-ratkaisu, joka pienentää todennäköisyyttä, että nämä rajoitukset ylittyvät ja poikkeukset **Tietovirta oli liian pitkä** tai **Yli- tai alivuoto aritmeettisessa toiminnassa**.
+Voit määrittää tapahtumatietoja lähtevän asiakirjan luomista varten noutavan ratkaisun käyttämällä [Sähköisen raportoinnin (ER) kehystä](general-electronic-reporting.md). Tämä luotu tiedosto voi olla melko suuri. Kun tällainen asiakirja luodaan, [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) -muistia käytetään sen säilyttämiseen. Jossakin vaiheessa tiedosto on ladattava Microsoft Dynamics 365 Finance -sovelluksesta. Tällä hetkellä sähköisessä raportoinnissa luotavan yksittäisen asiakirjan koko on rajoitettu 2 gigatavuun (Gt). Lisäksi Finance [rajoittaa](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) tällä hetkellä ladatun tiedoston koon 1 gigatavuun. Siksi sinun on konfiguroitava ER-ratkaisu, joka pienentää todennäköisyyttä, että nämä rajoitukset ylittyvät ja poikkeukset **Tietovirta oli liian pitkä** tai **Yli- tai alivuoto aritmeettisessa toiminnassa**.
 
 Kun määrität ratkaisun, voit muokata ER-muotoa toimintojen suunnitteluohjelmassa lisäämällä **Kansio**-tyypin pääelementin sen jonkin sisäkkäisen elementin luoman sisällön pakkaamiseksi. Pakkauksessa sovelletaan just in time -periaatetta, jotta muistin käyttöä voidaan vähentää ja ladattavan tiedoston kokoa pienentää.
 

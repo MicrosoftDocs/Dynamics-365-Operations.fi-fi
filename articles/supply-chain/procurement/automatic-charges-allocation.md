@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841476"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910158"
 ---
 # <a name="automatic-allocation-of-charges"></a>Kulujen automaattinen kohdistaminen
 
@@ -144,7 +144,7 @@ Kun kulujen koodit on määritetty, määritä automaattiset kulut seuraavien oh
     - **Toimipaikka** ja **Varasto** – määritä toimipaikka ja varasto, jos kulut kohdistetaan vain tiettyyn toimipaikkaan ja varastoon.
     - **Säilytä** – valitse tämä valintaruutu, jos haluat säilyttää kulutapahtumat laskutuksen valmistumisen jälkeen siten, että kulua käytetään aina, kun luot uuden laskun valitulle asiakastilille.
 
-1. **Vain myyntitilaukset:** jos haluat laskea kulut tasoittain, lisätietoja on kohdassa [Myyntitilausten tasoittaiset kulut](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
+1. **Vain myyntitilaukset:** jos haluat laskea kulut tasoittain, lisätietoja on kohdassa [Myyntitilausten tasoittaiset kulut](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Kulujen kohdistaminen otsikosta riville
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837630"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910374"
 ---
 # <a name="modeling-a-lean-organization"></a>Lean-organisaation mallinnus
 
@@ -51,7 +51,7 @@ Tulevan tilan arvovirta voidaan mallintaa tuotantovirtaversiona. Kaikki arvovirr
 
 Itse arvovirta mallinnetaan toimintayksikkönä. Tämän vuoksi arvovirtaa voidaan käyttää taloushallinnon dimensiona.
 
-Lisätietoja toimintayksiköistä on kohdassa [Käyttöyksikön luominen](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+Lisätietoja toimintayksiköistä on kohdassa [Käyttöyksikön luominen](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Lean-valmistuksen kustannuslaskenta tuotantovirtaan perustuen
 Ajoittainen tuotantovirran kustannusten konsolidaatio korjaa siihen liittyvän KET-tilin ja mahdollistaa tuotantovirran toimittamien tuotteiden varianssien määrittämisen.

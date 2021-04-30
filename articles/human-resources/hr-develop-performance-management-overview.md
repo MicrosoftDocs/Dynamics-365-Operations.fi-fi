@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789633"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890744"
 ---
 # <a name="performance-management"></a>Suorituksen hallinta
 
@@ -93,7 +93,7 @@ Myös **Osaamistiedot**-osaa voi käyttää työntekijän osaamistiedoista kesku
 
 Voit luoda uusia arvioijia luomasi mallin perusteella. Sinulla voi olla malli esimerkiksi kahdenkeskisiä tapaamisia, kehityssuunnitelmia tai kausittaisia arviointeja varten. Valitse malli uuden arvioinnin luomisen yhteydessä.
 
-Tulosta arvostelut valitsemalla **Tulosta arvostelu** -painike. Jos et näe painiketta **Arvostelu**-sivulla, varmista, että olet ottanut ominaisuuden käyttöön **Ominaisuuden hallinta** -työtilassa. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Tulosta arvostelut valitsemalla **Tulosta arvostelu** -painike. Jos et näe painiketta **Arvostelu**-sivulla, varmista, että olet ottanut ominaisuuden käyttöön **Ominaisuuden hallinta** -työtilassa. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Suorituskykytarkistusten tulostusmahdollisuus on käytettävissä vain Human Resources -sovelluksessa. Ne eivät ole käytettävissä Dynamics 365 Finance -sovelluksessa.

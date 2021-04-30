@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840097"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894774"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Italian sähköisen laskutuksen käytön aloittaminen
 
@@ -201,7 +201,7 @@ Kun otat käyttöön **Määritettävä sähköisen laskutuksen integrointi** -t
 Voit lähettää asiakirjat manuaalisesti riippuen sähköisten laskujen asiakirjojen tarpeestasi.
 
 > [!NOTE]
-> Varmista ennen jatkamista, että italialaisten sähköisten laskujen edellyttämä määritys on tehty. Lisätietoja: [Asiakkaiden sähköiset laskut](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Huomaa, että osa kyseisessä aiheessa kuvatuista määritysvaiheista ei välttämättä ole käytettävissä sähköisen laskutuksen aktivoinnin vuoksi.
+> Varmista ennen jatkamista, että italialaisten sähköisten laskujen edellyttämä määritys on tehty. Lisätietoja: [Asiakkaiden sähköiset laskut](./emea-ita-e-invoices.md). Huomaa, että osa kyseisessä aiheessa kuvatuista määritysvaiheista ei välttämättä ole käytettävissä sähköisen laskutuksen aktivoinnin vuoksi.
 
 1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Lähetä sähköisiä asiakirjoja**.
 2. Kun mikä tahansa asiakirja lähetetään ensimmäistä kertaa, määritä **Lähetä asiakirjat uudelleen** -asetukseksi **Ei**. Jos sinun on lähetettävä asiakirja uudelleen palvelun kautta, määritä asetukseksi **Kyllä**.
