@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7d9ecea08f5095e7fa8501d690bbabbd54e6501
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d95c92fe15f4dfe77d2bc8a153f86165c17edb4e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802236"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892630"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet 2. joulukuuta 2020
 
@@ -30,7 +30,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttu
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
-Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Tässä julkaisussa
 
@@ -42,10 +42,10 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 
 | Ominaisuus | Julkaisusuunnitelma | Dokumentaatio |
 | --- | --- | --- |
-| Esimiehet voivat lähettää toimien työhönottopyyntöjä | [Esimiehet voivat lähettää avointen toimien työhönottopyyntöjä](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Työhönottopyynnön lisääminen](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Henkilöstöhallinnon parannettu ehdokasprofiili | [Henkilöstöhallinnon parannettu ehdokasprofiili](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Ehdokasprofiilin lisääminen tai muokkaaminen](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa | [Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Ehdokkaiden työhönotto](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
-| Mukautetut linkit esimiehen itsepalvelussa | [Mukautetut linkit esimiehen itsepalvelussa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Mukautetut linkit esimiehen itsepalvelussa](https://aka.ms/MSSCustomLinks) |
+| Esimiehet voivat lähettää toimien työhönottopyyntöjä | [Esimiehet voivat lähettää avointen toimien työhönottopyyntöjä](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Työhönottopyynnön lisääminen](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Henkilöstöhallinnon parannettu ehdokasprofiili | [Henkilöstöhallinnon parannettu ehdokasprofiili](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Ehdokasprofiilin lisääminen tai muokkaaminen](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa | [Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Ehdokkaiden työhönotto](./hr-personnel-recruit.md) |
+| Mukautetut linkit esimiehen itsepalvelussa | [Mukautetut linkit esimiehen itsepalvelussa](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Mukautetut linkit esimiehen itsepalvelussa](./hr-employee-manager-self-service-custom-links.md) |
 
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
@@ -72,23 +72,23 @@ Seuraavat uudet ominaisuudet ovat esiversioita. Lisätietoja ominaisuuksien otta
 
 | Ominaisuus | Julkaisusuunnitelma | Dokumentaatio |
 | --- | --- | --- |
-| Microsoft Teamsin Human Resources -sovellus | [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teamsin Human Resources -sovellus](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md) |
-| Työnkulun parannetut pyynnöt ja hyväksynnät | [Organisaation ja henkilöstöhallinnon työnkulkukokemuksen parannukset](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Toimen Itselle määritetyt työnimikkeet -luettelon määritysasetus](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| LinkedIn Talent Hub -integrointi | [LinkedIn Talent Hub -integrointi](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [LinkedIn Talent Hub -integrointi](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
-|Yritystenvälinen näkymä esimiesten lomia varten | [Yritystenvälinen näkymä työntekijöiden lomia varten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Loma- ja poissaoloparametrien määrittäminen](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-|Merkityksellisten lomasaldoja koskevien lisätietojen antaminen| [Merkityksellisten lomasaldoja koskevien lisätietojen antaminen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Työntekijän loman hallinta](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
-| Esimiehet voivat lähettää toimien työhönottopyyntöjä | [Esimiehet voivat lähettää avointen toimien työhönottopyyntöjä](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Työhönottopyynnön lisääminen](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Henkilöstöhallinnon parannettu ehdokasprofiili | [Henkilöstöhallinnon parannettu ehdokasprofiili](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Ehdokasprofiilin lisääminen tai muokkaaminen](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa | [Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Ehdokkaiden työhönotto](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Microsoft Teamsin Human Resources -sovellus | [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Teamsin Human Resources -sovellus](./hr-admin-teams-leave-app.md)<br>[Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md) |
+| Työnkulun parannetut pyynnöt ja hyväksynnät | [Organisaation ja henkilöstöhallinnon työnkulkukokemuksen parannukset](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Toimen Itselle määritetyt työnimikkeet -luettelon määritysasetus](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| LinkedIn Talent Hub -integrointi | [LinkedIn Talent Hub -integrointi](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [LinkedIn Talent Hub -integrointi](./hr-admin-integration-linkedin.md) |
+|Yritystenvälinen näkymä esimiesten lomia varten | [Yritystenvälinen näkymä työntekijöiden lomia varten](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Loma- ja poissaoloparametrien määrittäminen](./hr-leave-and-absence-parameters.md) |
+|Merkityksellisten lomasaldoja koskevien lisätietojen antaminen| [Merkityksellisten lomasaldoja koskevien lisätietojen antaminen](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Työntekijän loman hallinta](./hr-leave-and-absence-manage-employee-leave.md) |
+| Esimiehet voivat lähettää toimien työhönottopyyntöjä | [Esimiehet voivat lähettää avointen toimien työhönottopyyntöjä](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Työhönottopyynnön lisääminen](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Henkilöstöhallinnon parannettu ehdokasprofiili | [Henkilöstöhallinnon parannettu ehdokasprofiili](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Ehdokasprofiilin lisääminen tai muokkaaminen](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa | [Yksinkertaisten integrointien käyttöönotto työhönoton palveluntarjoajien kanssa](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Ehdokkaiden työhönotto](./hr-personnel-recruit.md) |
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuista julkaisuista on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuista julkaisuista on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 

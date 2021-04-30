@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 49807c90c145eee55fae2d515fd19925eb2d944c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810411"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911245"
 ---
 # <a name="planned-cross-docking"></a>Suunniteltu cross-docking
 
@@ -28,19 +28,21 @@ Tässä aiheessa kuvataan suunnitellun cross-dockingin lisäasetukset. Cross-doc
 
 Cross-dockingin avulla työntekijät ohittavat saapuvan hyllytyksen ja lähtevien nimikkeiden varaston, joka on jo merkitty lähtevälle tilaukselle. Näin ollen varastojen kosketuskertojen määrää vähennetään mahdollisuuksien mukaan. Lisäksi, koska vuorovaikutus järjestelmän kanssa on vähäisempää, fyysisen varastoinnin työn aika- ja tilasäästöt lisääntyvät.
 
-Ennen kuin cross-docking voidaan suorittaa, käyttäjän on konfiguroitava uusi cross-docking-malli, jossa on määritetty toimituslähde ja muut cross-docking-vaatimukset. Kun lähtevä tilaus luodaan, rivi täytyy merkitä saman nimikkeen sisältävään saapuvaan tilaukseen.
+Ennen kuin suoritat cross-dockingin, sinun on konfiguroitava uusi cross-docking-malli, jossa on määritetty toimituslähde ja muut cross-docking-vaatimukset. Kun lähtevä tilaus luodaan, rivi täytyy merkitä saman nimikkeen sisältävään saapuvaan tilaukseen. Voit valita cross docking -mallista direktiivinkoodikentän samalla tavalla kuin täydennys- ja ostotilauksia määritetään.
 
 Saapuvien tilausten vastaanoton yhteydessä cross-docking-asennus määrittää automaattisesti, että cross-docking on tarpeen, ja luo varasto- ja kuormitustyön tarvittavalle määrälle sijaintidirektiivin asetusten mukaisesti.
 
 > [!NOTE]
-> Varastotapahtumat **eivät** ole rekisteröimättömiä, kun crossing-dock-työ peruutetaan, vaikka tämän ominaisuuden asetus olisi käytössä varastonhallinnan parametreissa.
+> Varastotapahtumat *eivät* ole rekisteröimättömiä, kun crossing-dock-työ peruutetaan, vaikka tämän ominaisuuden asetus olisi käytössä varastonhallinnan parametreissa.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Suunnitellun cross-docking-toimintojen ottaminen käyttöön
 
 Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota seuraavat ominaisuudet käyttöön seuraavassa järjestyksessä:
 
 1. *Suunniteltu cross-docking*
-2. *Cross docking -mallit ja sijaintidirektiivit*
+1. *Cross docking -mallit ja sijaintidirektiivit*
+    > [!NOTE]
+    > Tämän ominaisuuden avulla **direktiivin koodi** kenttä voidaan määrittää cross docking -mallissa samalla tavalla kuin täydennysmallien määrittäminen. Tämän ominaisuuden ottaminen käyttöön estää sinua lisäämästä lopullisen *hyllytys* rivin cross-docking-työmalliriveille direktiivinkoodia. Näin varmistetaan, että työn luonnin aikana voidaan määrittää lopullinen sijainti, ennen kuin otetaan huomioon työmallit.
 
 ## <a name="setup"></a>Luo perustiedot
 
@@ -88,9 +90,9 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 
         Tämä vaihtoehto määrittää, tuleeko toimitus vahvistaa uudelleen vastaanoton aikana. Jos tämän asetuksen arvoksi on määritetty *Kyllä*, sekä enimmäisaikaikkuna että vanhenemispäivien alue tarkistetaan.
 
-    - **Direktiivikoodi** Jätä tämä kenttä tyhjäksi
+    - **Direktiivikoodi:** Jätä tämä kenttä tyhjäksi
 
-        Tämä valinta sallii järjestelmän käyttää sijaintidirektiivejä parhaan paikan määrittämiseen cross-docking varaston siirtämiselle. Voit määrittää sen määrittämällä jokaiselle asiaankuuluvalle cross-docking-mallille direktiivikoodin. Kukin direktiivikoodi määrittää yksilöivän sijaintidirektiivin.
+        Tämä vaihtoehto on käytössä *cross docking -malleilla ja sijaintidirektiivi* -toiminnolla. Järjestelmän käyttää sijaintidirektiivejä parhaan paikan määrittämiseen cross-docking varaston siirtämiselle. Voit määrittää sen määrittämällä jokaiselle asiaankuuluvalle cross-docking-mallille direktiivikoodin. Jos direktiivikoodi on määritetty, järjestelmä etsii sijaintidirektiivit direktiivikoodin perusteella, kun työ luodaan. Näin voit rajata tietyssä cross docking -mallissa käytettävät sijaintiohjeet.
 
     - **Vahvista aikaikkuna:** *Kyllä*
 

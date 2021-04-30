@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826687"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897861"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
@@ -34,7 +34,7 @@ Yksinkertaisin raportteja hyödyntävä konsolidointimenetelmä on koota raportt
 3. Luo raporttipuu, joka sisältää raporttisolmun kullekin konsolidointiraportissa käytetylle yritykselle.
 
 > [!TIP]
-> Lisätietoja rivin ja sarakkeen määritysten sekä raporttipuiden luomisesta ja hallinnasta on kohdassa [Raportin komponentit](../../dev-itpro/analytics/financial-report-components.md).
+> Lisätietoja rivin ja sarakkeen määritysten sekä raporttipuiden luomisesta ja hallinnasta on kohdassa [Raportin komponentit](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Seuraava kuva näyttää, miten raporttien raporttipuun määrityksellä voi tunnistaa kunkin konsolidoitavan yrityksen.
 

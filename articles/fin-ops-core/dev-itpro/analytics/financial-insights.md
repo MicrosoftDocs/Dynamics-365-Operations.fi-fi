@@ -2,8 +2,7 @@
 title: Talousanalyysi
 description: Talousanalyysi kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätökset.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 71fd1ad15320fda162a289e9c5741aec2ce76778
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572363"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894905"
 ---
 # <a name="financial-analysis"></a>Talousanalyysi
 
@@ -65,10 +64,9 @@ Jokaiselle päätilille on määritettävä päätililuokka, sillä muuten ne ei
 
 Seuraavat yksiköt on päivitettävä, jos haluat nähdä **Talousanalyysi** -työtilojen tiedot:
 
-- BudgetActivityMeasure
 - Taloushallinnon raportoinnin tapahtumatietojen versio 3 
+- Luotonvalvonta V2
 - CustCollectionsBIMeasurements
-- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Ostokuutio
 - Myyntikuutio
@@ -241,9 +239,9 @@ Power BI:ssä ei ole tyhjien rivien piilottamis- ja näyttämisasetusta. Jos riv
 
 Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa käyttöön upotettuja raportteja tuotantoympäristön **Talousanalyysi** -työtilassa. Niistä on kuitenkin hyötyä kehityskehyksissä ja tilanteissa, joissa halutaan upottaa omia Power BI -raportteja.
 
-- [Analyyttisten työtilojen ja raporttien käyttäminen 1-Box-ympäristössä](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Analyyttisten työtilojen ja raporttien käyttäminen 1-Box-ympäristössä](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

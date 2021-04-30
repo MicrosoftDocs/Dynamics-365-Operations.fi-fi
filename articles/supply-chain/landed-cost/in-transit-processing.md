@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823406"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909448"
 ---
 # <a name="goods-in-transit-processing"></a>Kuljetettavien tuotteiden käsittely
 
@@ -40,7 +40,7 @@ Kun otat **Aiheutunut kustannus** -moduulin käyttöön, *vakiotoimitusehtoja* t
 
 Kun **Kuljetettavien tuotteiden hallinta** -asetuksena on *Kyllä* toimitustietueen sovellettavia ehtoja varten, tuotteet laitetaan kuljetettavien tuotteiden varastoon. Tämä toimenpide käynnistyy vain, jos varastovastaanottoa ei käsitellä ennen laskun käsittelyä. Kun tilauksen toimitusehdot on määritetty käyttämään kuljetettavia tuotteita, käyttäjät eivät voi enää kirjata ostotilaukseen tuotteen vastaanottoa. Jos he yrittävät, tapahtuu virhe. Virhesanomassa sanotaan, että heidän on käytettävä kuljetettavien tuotteiden toimintoa, jotta he voivat jatkaa.
 
-Kun haluat käyttää toimitusehtojen tietoja kuljetettavien tuotteiden kohdalla, siirry kohtaan **Hankinta \> Määritys \> Jakelu \> Toimitusehdot**. Seuraavassa taulukossa kuvataan kenttiä, jotka **Aiheutunut kustannus** -moduuli lisää **Toimitusehdot**-sivulle ja tukevat kuljettavien tuotteiden toimintoa. Molemmat kentät ovat **Yleiset**-pikavälilehdessä. Lisätietoja muista tämän sivun kentistä on kohdassa [Toimitusehdot (lomake)](https://technet.microsoft.com/library/aa575567.aspx).
+Kun haluat käyttää toimitusehtojen tietoja kuljetettavien tuotteiden kohdalla, siirry kohtaan **Hankinta \> Määritys \> Jakelu \> Toimitusehdot**. Seuraavassa taulukossa kuvataan kenttiä, jotka **Aiheutunut kustannus** -moduuli lisää **Toimitusehdot**-sivulle ja tukevat kuljettavien tuotteiden toimintoa. Molemmat kentät ovat **Yleiset**-pikavälilehdessä. Lisätietoja muista tämän sivun kentistä on kohdassa [Toimitusehdot (lomake)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Kenttä | kuvaus |
 |---|---|
@@ -55,7 +55,7 @@ Aiheutunut kustannus lisää kaksi uutta varastotyyppiä: *kuljetettavat tuottee
 
 *Kuljetettavien tuotteiden* varastotyyppi liitetään kuljetettavien tuotteiden varastoon, ja tätä varastoa käytetään kuljetettavien tuotteiden tilausten tuotteiden käsittelemiseen, ennen kuin ne vastaanotetaan lopulliseen kohdevarastoon. Yleensä kutakin toimipaikkaa varten riittää yksi kuljetettavien tuotteiden varasto, jos toimipaikka ja varasto ovat ainoat varastonhallinnassa käytettävät varastodimensiot. Jos käytetään myös Sijainti-varastodimensiota, kullekin toimipaikan ja varaston yhdistelmälle on määritettävä kuljetettavien tuotteiden varasto, jotta oletussijainti voidaan määrittää myös.
 
-Voit käsitellä varastojen kuljetettavien tuotteiden asetuksia kohdassa **Varastonhallinta \> Määritys \> Inventaarioanalyysi \> Varastot**. Seuraavassa taulukossa kuvataan kenttiä, jotka **Aiheutunut kustannus** -moduuli lisää **Varastot**-sivulle ja tukevat kuljettavien tuotteiden toimintoa. Molemmat kentät ovat **Yleiset**-pikavälilehdessä. Lisätietoja muista sivun kentistä on kohdassa [Varastot (lomake)](https://technet.microsoft.com/library/aa620570.aspx).
+Voit käsitellä varastojen kuljetettavien tuotteiden asetuksia kohdassa **Varastonhallinta \> Määritys \> Inventaarioanalyysi \> Varastot**. Seuraavassa taulukossa kuvataan kenttiä, jotka **Aiheutunut kustannus** -moduuli lisää **Varastot**-sivulle ja tukevat kuljettavien tuotteiden toimintoa. Molemmat kentät ovat **Yleiset**-pikavälilehdessä. Lisätietoja muista sivun kentistä on kohdassa [Varastot (lomake)](/dynamicsax-2012//warehouses-form).
 
 | Kenttä | kuvaus |
 |---|---|
@@ -109,7 +109,7 @@ Voit vastaanottaa tavaroita myös luomalla saapumisen kirjauskansion. Voit luoda
     - **Luo kuljetettavista tuotteista** - Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat ottaa määrät valituilta kuljetettavien tuotteiden riveiltä valittua merikuljetusta, konttia tai pakkausta varten.
     - **Luo tilausriveiltä** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat määrittää saapumisen kirjauskansion oletusmäärän ostotilausriveiltä. Saapumisen kirjauskansion oletusmäärä voidaan määrittää tällä tavalla vain, jos ostotilausrivin määrä vastaa kuljetettavien tuotteiden tilauksen määrää.
 
-1. Käsittele saapumisen kirjauskansio kohdassa [Rekisteröi nimikekuitit nimikesaapumiskirjauskansion kanssa](https://technet.microsoft.com/library/aa571129.aspx) kuvatulla tavalla.
+1. Käsittele saapumisen kirjauskansio kohdassa [Rekisteröi nimikekuitit nimikesaapumiskirjauskansion kanssa](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal) kuvatulla tavalla.
 
 > [!NOTE]
 > Saapumisen kirjauskansiota käytetään yleensä tilanteissa, joissa käytetään sijainteja ja erä- tai sarjaseurantaa, mutta varastonhallintaa ei käytetä.
@@ -131,15 +131,14 @@ Aiheutunut kustannus lisää seuraavat työn luontiprosessit mobiililaitteen val
 - Matkalla olevien tavaroiden nimikkeiden vastaanotto
 - Kuljetettavien tuotteiden nimikkeiden vastaanotto ja hyllytys
 
-Näiden prosessien konfigurointiasetukset muistuttavat [ostotilauksen vastaanoton ja hyllytyksen luomisprosesseja](https://technet.microsoft.com/library/dn553216.aspx). *Kuljetettavien tuotteiden nimikkeiden vastaanotto ja hyllytysprosessi* kuitenkin lisää seuraavan kentän.
+Näiden prosessien konfigurointiasetukset muistuttavat [ostotilauksen vastaanoton ja hyllytyksen luomisprosesseja](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). *Kuljetettavien tuotteiden nimikkeiden vastaanotto ja hyllytysprosessi* kuitenkin lisää seuraavan kentän.
 
 - **Ota käyttöön Kuljetuskontti valmis** – Jos tämän asetuksen arvoksi on määritetty *Kyllä*, kun hyllytystyö on valmis, varastonhallinnan mobiilisovellus määrittää lisävaihtoehdon, jonka nimi on **Kuljetuskontti valmis**. Kun tämä vaihtoehto on valittuna, työntekijää pyydetään vahvistamaan, että kontti on valmis. Tässä vaiheessa kaikki lyhyet vastaanotot käsitellään alitustapahtumana.
 
 ### <a name="location-directives"></a>Sijaintidirektiivit
 
-Aiheutunut kustannus lisää uuden työtilaustyypin, jonka nimi on *Kuljetettavat tavarat*, **Sijaintidirektiivit**-sivulle. Tämä työtilaustyyppi tulee konfiguroida samalla tavalla kuin [ostotilauksen työtilaustyypit](https://technet.microsoft.com/library/dn553184.aspx).
+Aiheutunut kustannus lisää uuden työtilaustyypin, jonka nimi on *Kuljetettavat tavarat*, **Sijaintidirektiivit**-sivulle. Tämä työtilaustyyppi tulee konfiguroida samalla tavalla kuin [ostotilauksen työtilaustyypit](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Työmallit
 
-Aiheutunut kustannus lisää uuden työtilaustyypin, jonka nimi on *Kuljetettavat tavarat*, **Työmallit**-sivulle. Tämä työtilaustyyppi tulee konfiguroida samalla tavalla kuin [ostotilauksen työmallit](https://technet.microsoft.com/library/dn553184.aspx).
-
+Aiheutunut kustannus lisää uuden työtilaustyypin, jonka nimi on *Kuljetettavat tavarat*, **Työmallit**-sivulle. Tämä työtilaustyyppi tulee konfiguroida samalla tavalla kuin [ostotilauksen työmallit](/dynamicsax-2012/appuser-itpro/create-a-work-template).

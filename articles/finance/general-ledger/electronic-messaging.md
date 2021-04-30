@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823785"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897597"
 ---
 # <a name="electronic-messaging"></a>Sähköiset sanomat
 
@@ -29,7 +29,7 @@ Useiden eri maiden ja eri alueiden hallitukset ja viranomaiset eri puolilla maai
 
 Financen sähköiset viestitoiminnot tukevat erilaisia sähköisiä prosesseja Financen sekä sellaisten julkishallinnon ja viranomaisten järjestelmien välillä, jotka mahdollistavat virallisten tietojen raportoinnin, lähettämisen ja vastaanottamisen.
 
-Sähköisen viestinnän toiminnot on integroitu **sähköisen raportoinnin** (ER) moduulin kanssa. Näin ollen onkin mahdollista määrittää ER-muotoja sähköisiä sanomia varten. Lisätietoja on kohdassa [Sähköinen raportointi (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Sähköisen viestinnän toiminnot on integroitu **sähköisen raportoinnin** (ER) moduulin kanssa. Näin ollen onkin mahdollista määrittää ER-muotoja sähköisiä sanomia varten. Lisätietoja on kohdassa [Sähköinen raportointi (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Sähköiset sanomat perustuvat seuraaviin yksiköihin:
 
@@ -56,7 +56,7 @@ Sähköinen sanomatoiminto tukee seuraavia skenaarioita:
 
 ## <a name="set-up-electronic-messaging"></a>Sähköisen viestinnän määrittäminen
 
-Sähköiset sanomat auttavat ylläpitämään erillisiä sähköisiä raportointiprosesseja eri asiakirjatyypeille. Joissakin monimutkaisissa skenaarioissa sähköisten sanomien määritys koostuu monien sanomatilojen, sanoman nimiketilojen, toimintojen, lisäkenttien ja suoritettavien luokkien yhdistelmästä. Näissä skenaarioissa käytettävissä on tuotavia tietoyksikköpaketteja. Jos käytät näitä tietoyksikköpaketteja, ne on tuotava yritykseen tietojen hallintatyökalulla. Lisätietoja tietojen hallintatyökalun käytöstä on kohdassa [Tiedonhallinta](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Sähköiset sanomat auttavat ylläpitämään erillisiä sähköisiä raportointiprosesseja eri asiakirjatyypeille. Joissakin monimutkaisissa skenaarioissa sähköisten sanomien määritys koostuu monien sanomatilojen, sanoman nimiketilojen, toimintojen, lisäkenttien ja suoritettavien luokkien yhdistelmästä. Näissä skenaarioissa käytettävissä on tuotavia tietoyksikköpaketteja. Jos käytät näitä tietoyksikköpaketteja, ne on tuotava yritykseen tietojen hallintatyökalulla. Lisätietoja tietojen hallintatyökalun käytöstä on kohdassa [Tiedonhallinta](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Jos et tuo tietoyksikköpakettia, voit määrittää sähköiset sanomatoiminnot manuaalisesti. Siinä tapauksessa seuraavat elementit on määritettävä:
 

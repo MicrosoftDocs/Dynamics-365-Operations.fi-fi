@@ -2,7 +2,8 @@
 title: Myymälän valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798630"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853414"
 ---
 # <a name="store-selector-module"></a>Myymälän valitsinmoduuli
 
@@ -32,11 +33,32 @@ Asiakkaat voivat käyttää myymälän valitsinmoduulia ja noutaa tuotteen valit
 
 Myymälän valitsinmoduulin avulla käyttäjät voivat syöttää sijainnin (kaupunki, osavaltio, osoite jne.) ja etsiä myymälöitä hakusäteen avulla. Kun moduuli avataan ensimmäisen kerran, se käyttää asiakkaan selaimen sijaintia myymälöiden etsimiseen (jos suostumus on annettu).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Myymälän valitsinmoduulin käyttö sähköisessä kaupankäynnissä
+## <a name="store-selector-module-usage"></a>Myymälän valitsinmoduulin käyttö
 
 - Myymälän valitsinmoduulia voidaan käyttää tuotetietosivulla (PDP), kun halutaan valita noutopaikka.
 - Myymälän valitsinmoduulia voidaan käyttää ostoskorisivulla, kun halutaan valita noutopaikka.
 - Myymälän valitsinmoduulia voidaan käyttää erillisenä sivuna, jolla näytetään kaikki käytettävissä olevat myymälät.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Täydennysryhmien asetus Commerce headquarters -sovelluksessa
+
+Jotta myymälän valitsin voisi näyttää käytettävissä olevat myymälät, täydennysryhmä on määritettävä Commerce Headquarters -sovelluksessa. Lisätietoja on kohdassa [Täydennysryhmien määrittäminen](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Lisäksi myymälän sijaintipaikka on määritettävä pääkonttorissa jokaiselle täydennysryhmän myymälälle.
+
+Voit antaa myymälän sijainnin leveys- ja pituusasteet Commerce headquarters -sovelluksessa seuraavasti.
+
+1. Mene **Varastonhallinta \> Asetukset \> Inventaarioanalyysi**.
+1. Valitse varaston sijainti vasemmasta ruudusta.
+1. Valitse **Osoitteet**-pikavälilehdestä **Lisäasetukset**.
+
+    ![Esimerkki myymälän tiedoista pääkonttorissa](./media/Store-address.png)
+
+1. Valitse toimintoruudussa **Muokkaa**.
+1. Kirjoita **Yleiset**-pikavälilehteen arvot kohteille **leveysaste** ja **pituusaste**.
+
+    ![Esimerkki pääkonttorin myymälän leveysasteiden ja pituusasteiden määrityksestä](./media/Store-latitude-longitude.png)
+
+1. Valitse toimintoruudussa **Tallenna**. 
 
 ## <a name="bing-maps-integration"></a>Bing Maps -integrointi
 
@@ -48,6 +70,7 @@ Automaattisen ehdotuksen REST-ohjelmointirajapintaa varten on varmistettava, ett
 - Lisää **img-src**-direktiiviin **&#42;.virtualearth.net**.
 - Lisää **script-src**-direktiiviin **&#42;.bing.com, &#42;.virtualearth.net**.
 - Lisää **skriptin style-src** -direktiiviin **&#42;.bing.com**.
+
  
 ## <a name="pickup-in-store-mode"></a>Nouto myymälästä -tila
 

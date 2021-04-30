@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840698"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907762"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Asiakasportaalin käyttäjien luominen ja hallinta
 
@@ -44,26 +44,26 @@ Ennen kuin aloitat uusien asiakkaiden kutsumisesta, varmista, että **Yhteyshenk
 
 ## <a name="the-invitation-process"></a>Kutsuprosessi
 
-Jos haluat kutsua aiemmin luodun yhteyshenkilön asiakasportaaliin, noudata ohjeita kohdassa [yhteystietojen kutsuminen portaaleihin](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) Power Apps -portaalien dokumentaatiossa.
+Jos haluat kutsua aiemmin luodun yhteyshenkilön asiakasportaaliin, noudata ohjeita kohdassa [yhteystietojen kutsuminen portaaleihin](/powerapps/maker/portals/configure/invite-contacts) Power Apps -portaalien dokumentaatiossa.
 
-Ennen kuin kutsut asiakkaan liittymään asiakasportaaliin, varmista, että asiakkaan [yhteyshenkilötietue](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) on käytettävissä ja määritetty seuraavalla tavalla:
+Ennen kuin kutsut asiakkaan liittymään asiakasportaaliin, varmista, että asiakkaan [yhteyshenkilötietue](/powerapps/maker/portals/configure/configure-contacts) on käytettävissä ja määritetty seuraavalla tavalla:
 
 1. Aseta **Yritys**-kenttä yritykselle, johon haluat asiakkaan kuuluvan Supply Chain Managementissa.
 2. Aseta **Tilinumero**-kenttä siihen asiakastilinumeroon, jonka haluat asiakkaalla olevan Supply Chain Managementissa.
 
 Kun yhteyshenkilö on perustettu, sen voi nähdä Supply Chain Managementissa.
 
-Lisätietoja on ohjeaiheessa [yhteystiedon määrittäminen käytettäväksi](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) Power Apps -portaalien dokumentaatiossa.
+Lisätietoja on ohjeaiheessa [yhteystiedon määrittäminen käytettäväksi](/powerapps/maker/portals/configure/configure-contacts) Power Apps -portaalien dokumentaatiossa.
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>Valmiit verkkoroolit ja taulukon käyttöoikeudet
 
-Power Apps -portaalien käyttäjäroolit määritetään [verkkoroolien](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) ja [taulukon käyttöoikeuksien](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) mukaan. Asiakasportaalille määritetään joitakin valmiita rooleja. Voit luoda uusia rooleja ja muokata tai poistaa aiemmin luotuja rooleja.
+Power Apps -portaalien käyttäjäroolit määritetään [verkkoroolien](/powerapps/maker/portals/configure/create-web-roles) ja [taulukon käyttöoikeuksien](/powerapps/maker/portals/configure/assign-entity-permissions) mukaan. Asiakasportaalille määritetään joitakin valmiita rooleja. Voit luoda uusia rooleja ja muokata tai poistaa aiemmin luotuja rooleja.
 
 ### <a name="out-of-box-web-roles"></a>Valmiit verkkoroolit
 
 Tässä osassa kuvataan asiakasportaalin mukana toimitetut verkkoroolit.
 
-Lisätietoja muiden käyttäjien roolien muokkaamisesta on kohdissa [Verkkoroolien luominen portaaleihin](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) ja [Tietuepohjaisen suojauksen lisääminen portaalien taulukko-oikeuksien avulla](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) Power Apps -portaalien dokumentaatiossa.
+Lisätietoja muiden käyttäjien roolien muokkaamisesta on kohdissa [Verkkoroolien luominen portaaleihin](/powerapps/maker/portals/configure/create-web-roles) ja [Tietuepohjaisen suojauksen lisääminen portaalien taulukko-oikeuksien avulla](/powerapps/maker/portals/configure/assign-entity-permissions) Power Apps -portaalien dokumentaatiossa.
 
 #### <a name="administrator"></a>Järjestelmänvalvoja
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f50636eaf633820e5cf746e2c5ee818cf670616b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fdfe4d5042e0a6a7948a09334dc675e210e765a1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813144"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909812"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.9 (huhtikuu 2020)
 
@@ -33,67 +33,67 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet*-ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet*-ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
-- [Kuormituksen lisäluonti aallon aikana](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Lisätietoja on kohdassa [Kuormituksen lisäluonti allon aikana](../warehousing/advanced-load-building-during-wave.md).
+- [Kuormituksen lisäluonti aallon aikana](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Lisätietoja on kohdassa [Kuormituksen lisäluonti allon aikana](../warehousing/advanced-load-building-during-wave.md).
 
-- [Lähetyksen automaattinen vapauttaminen cross-dockingia varten](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)<br> - Lisätietoja on kohdassa [Lähetyksen automaattinen vapauttaminen cross-dockingia varten](../warehousing/auto-release-shipment-for-cross-docking.md).
+- [Lähetyksen automaattinen vapauttaminen cross-dockingia varten](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)<br> - Lisätietoja on kohdassa [Lähetyksen automaattinen vapauttaminen cross-dockingia varten](../warehousing/auto-release-shipment-for-cross-docking.md).
 
-- [Laske ostotilauksen toimituspäivämäärä, joka perustuu läpimenoaikoihin ja työpäiviin (julkinen sektori)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
+- [Laske ostotilauksen toimituspäivämäärä, joka perustuu läpimenoaikoihin ja työpäiviin (julkinen sektori)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
 
-- [Todellisen painon tuotteen käsittely varastonhallinnan avulla](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Lisätietoja on kohdassa [Todellisen painon tuotteen käsittely varastonhallinnan avulla](../warehousing/catch-weight-processing.md) ja videossa [Todellisen painon tuotteen parannukset](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
+- [Todellisen painon tuotteen käsittely varastonhallinnan avulla](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Lisätietoja on kohdassa [Todellisen painon tuotteen käsittely varastonhallinnan avulla](../warehousing/catch-weight-processing.md) ja videossa [Todellisen painon tuotteen parannukset](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
 
-- [Nimikehintojen varaston vertailu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage)<br> - Lisätietoja on kohdassa [Nimikehintojen vertailun varastoraportti](../cost-management/compare-item-price.md).
+- [Nimikehintojen varaston vertailu](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage)<br> - Lisätietoja on kohdassa [Nimikehintojen vertailun varastoraportti](../cost-management/compare-item-price.md).
 
-- [Lähetyksen konsolidoinnin parannukset](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
+- [Lähetyksen konsolidoinnin parannukset](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 
-- [Cross-docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - Lisätietoja on videossa [Suunniteltu cross-docking](https://www.microsoft.com/videoplayer/embed/RE4f7LF).
+- [Cross-docking](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - Lisätietoja on videossa [Suunniteltu cross-docking](https://www.microsoft.com/videoplayer/embed/RE4f7LF).
 
-- Todellisen painon lisäintegrointi [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Lisätietoja on kohdassa [Todellisen painon tuotteen käsittely varastonhallinnan avulla](../warehousing/catch-weight-processing.md) ja myös videossa [Todellisen painon tuotteen parannukset](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
+- Todellisen painon lisäintegrointi [10.0.1](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Lisätietoja on kohdassa [Todellisen painon tuotteen käsittely varastonhallinnan avulla](../warehousing/catch-weight-processing.md) ja myös videossa [Todellisen painon tuotteen parannukset](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
 
-- [Käyttöomaisuuden integrointi käyttöomaisuuden hallinnan elinkaaren kanssa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Lisätietoja on kohdassa [Resurssien hallinnan integraatio käyttöomaisuuteen](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
+- [Käyttöomaisuuden integrointi käyttöomaisuuden hallinnan elinkaaren kanssa](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Lisätietoja on kohdassa [Resurssien hallinnan integraatio käyttöomaisuuteen](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
 
-- [Joustava varastotason dimensiovaraus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)<br> - Lisätietoja on kohdassa [Joustava varastotason dimensioiden varauskäytäntö](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+- [Joustava varastotason dimensiovaraus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)<br> - Lisätietoja on kohdassa [Joustava varastotason dimensioiden varauskäytäntö](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 
-- [Parannettu työkorttilaite](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device)<br> - :Lisätietoja on kohdassa [Edistymisen ilmoittaminen matkaviestimen työlaitteella](../production-control/tasks/report-progress-mobile-job-device.md) ja [Ilmoittaminen valmiiksi työkorttilaitteeseen](../production-control/report-finished-job-device.md).
+- [Parannettu työkorttilaite](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device)<br> - :Lisätietoja on kohdassa [Edistymisen ilmoittaminen matkaviestimen työlaitteella](../production-control/tasks/report-progress-mobile-job-device.md) ja [Ilmoittaminen valmiiksi työkorttilaitteeseen](../production-control/report-finished-job-device.md).
 
-- [Saapuvan laadun tarkistus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
+- [Saapuvan laadun tarkistus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 
-- [Varaston erääntymisraportin tallennus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
+- [Varaston erääntymisraportin tallennus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 
-- [Varastoarvoraporttien säiliö](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Lisätietoja on kohdassa [Varaston arvon tallennusraportti](../cost-management/inventory-value-report-storage.md)
+- [Varastoarvoraporttien säiliö](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Lisätietoja on kohdassa [Varaston arvon tallennusraportti](../cost-management/inventory-value-report-storage.md)
 
-- [Pääsuunnittelun edistymisen Gantt-kaavio](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Lisätietoja on kohdassa [Pääsuunnittelun suorittamisen valvominen](../master-planning/tasks/monitor-master-planning-run.md) ja videossa [MRP-suorituskyvyn ja käytettävyyden parannukset](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
+- [Pääsuunnittelun edistymisen Gantt-kaavio](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Lisätietoja on kohdassa [Pääsuunnittelun suorittamisen valvominen](../master-planning/tasks/monitor-master-planning-run.md) ja videossa [MRP-suorituskyvyn ja käytettävyyden parannukset](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Tuotantoalueen uudet tietoyksiköt](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Tuotantoalueen uudet tietoyksiköt](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Lähtevä lajittelu](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)<br> - Lisätietoja on kohdassa [Lähtevien lajittelu](../warehousing/outbound-sorting.md).
+- [Lähtevä lajittelu](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)<br> - Lisätietoja on kohdassa [Lähtevien lajittelu](../warehousing/outbound-sorting.md).
 
-- [Pakkaus- ja varastodimensiot](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
+- [Pakkaus- ja varastodimensiot](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
-- [Suunniteltujen tilausten yhdenmukaistamisen vahvistus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Lisätietoja on kohdassa [Rinnakkainen vahvistus](../master-planning/maintain-planned-orders.md#parallelize-firming) ja videossa [MRP-suorituskyvyn ja käytettävyyden parannukset](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
+- [Suunniteltujen tilausten yhdenmukaistamisen vahvistus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Lisätietoja on kohdassa [Rinnakkainen vahvistus](../master-planning/maintain-planned-orders.md#parallelize-firming) ja videossa [MRP-suorituskyvyn ja käytettävyyden parannukset](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Jakelun suunnittelun optimointi](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Lisätietoja on kohdassa [Suunnittelun optimoinnin yleiskatsaus](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Jakelun suunnittelun optimointi](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Lisätietoja on kohdassa [Suunnittelun optimoinnin yleiskatsaus](../master-planning/planning-optimization/planning-optimization-overview.md).
 
-- [Ostosopimuksen parannukset](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Lisätietoja on kohdassa [Ostosopimukset](../procurement/purchase-agreements.md).
+- [Ostosopimuksen parannukset](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Lisätietoja on kohdassa [Ostosopimukset](../procurement/purchase-agreements.md).
 
-- [Hyllytyksen klusterit](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - Lisätietoja on videossa [Hyllytysklusterointi](https://www.microsoft.com/videoplayer/embed/RE4f5aB).
+- [Hyllytyksen klusterit](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - Lisätietoja on videossa [Hyllytysklusterointi](https://www.microsoft.com/videoplayer/embed/RE4f5aB).
 
-- [Asettaminen seinälle / asettaminen myymälään](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Lisätietoja on kohdassa [Asettaminen seinälle - asettaminen myymälään](../warehousing/put-to-wall-put-to-store.md).
+- [Asettaminen seinälle / asettaminen myymälään](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Lisätietoja on kohdassa [Asettaminen seinälle - asettaminen myymälään](../warehousing/put-to-wall-put-to-store.md).
 
-- [Lajittelun vastaanottaminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
+- [Lajittelun vastaanottaminen](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 
-- [Pienten pakettien lähetys (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
+- [Pienten pakettien lähetys (SPS)](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 
-- [Toimittajan tarjoukset - kysymykset toimittajilta ja vastausten yhteenveto](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
+- [Toimittajan tarjoukset - kysymykset toimittajilta ja vastausten yhteenveto](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 
-- [Työtilausten visuaalinen ajoittaminen käyttöomaisuuden hallinnassa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Lisätietoja on kohdassa [Ajoitettujen työtilausten käsitteleminen Gantt-kaavion avulla](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
+- [Työtilausten visuaalinen ajoittaminen käyttöomaisuuden hallinnassa](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Lisätietoja on kohdassa [Ajoitettujen työtilausten käsitteleminen Gantt-kaavion avulla](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
 
-- [Varastopaikoitus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Lisätietoja on kohdassa [Varastopaikoitus](../warehousing/warehouse-slotting.md).
+- [Varastopaikoitus](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Lisätietoja on kohdassa [Varastopaikoitus](../warehousing/warehouse-slotting.md).
 
-- [Aallon etiketin tulostuksen parannukset](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
+- [Aallon etiketin tulostuksen parannukset](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 
-- [Aallon vaihekoodi](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)<br> - Lisätietoja on kohdassa [Aallon vaihekoodit](../warehousing/wave-step-codes.md).
+- [Aallon vaihekoodi](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)<br> - Lisätietoja on kohdassa [Aallon vaihekoodit](../warehousing/wave-step-codes.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -109,7 +109,7 @@ Saat lisätietoja version 10.0.9 virheenkorjauksista päivityksissä kirjautumal
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

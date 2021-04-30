@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813168"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907960"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.17 (huhtikuu 2021)
 
@@ -33,65 +33,65 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot.  Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
+Tämä julkaisu sisältää seuraavat toiminnot.  Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
 Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista saattaa vielä olla esiversioita, vaikka useimmat ovat nyt yleisesti saatavana.
 
 ### <a name="asset-management"></a>Resurssien hallinta
 
-- [Työtilausten ryhmittelysääntöjen käyttäminen ylläpitosuunnitelmaa suoritettaessa](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Lisätietoja on kohdassa [Työtilausten luominen](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
+- [Työtilausten ryhmittelysääntöjen käyttäminen ylläpitosuunnitelmaa suoritettaessa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Lisätietoja on kohdassa [Työtilausten luominen](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
 
-- [Ylläpitotyön laskuttaminen asiakkaalta](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Lisätietoja on kohdassa [Asiakkaan omistamien resurssien ylläpidon laskuttaminen](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
+- [Ylläpitotyön laskuttaminen asiakkaalta](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Lisätietoja on kohdassa [Asiakkaan omistamien resurssien ylläpidon laskuttaminen](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
 
-- [Ylläpidon suunnitteleminen resurssilaskurin kumulatiivisten arvojen perusteella](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Lisätietoja on kohdassa [Ylläpitosuunnitelmat](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
+- [Ylläpidon suunnitteleminen resurssilaskurin kumulatiivisten arvojen perusteella](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Lisätietoja on kohdassa [Ylläpitosuunnitelmat](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
 
 ### <a name="inventory-and-logistics"></a>Varasto ja logistiikka
 
-- [Automatisoitujen varastoprosessien materiaalin käsittelylaitteiden integrointikehys (aiemmin MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Lisätietoja: [Materiaalin käsittelylaitteiden rajapinta (MHAX)](../warehousing/mhax.md).
+- [Automatisoitujen varastoprosessien materiaalin käsittelylaitteiden integrointikehys (aiemmin MHAX)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Lisätietoja: [Materiaalin käsittelylaitteiden rajapinta (MHAX)](../warehousing/mhax.md).
 
-- [Aiheutunut kustannus](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Lisätietoja: [Aiheutunut kustannus -moduuli](../landed-cost/landed-cost-overview.md).
+- [Aiheutunut kustannus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Lisätietoja: [Aiheutunut kustannus -moduuli](../landed-cost/landed-cost-overview.md).
 
-- [Pakkaus- ja varastodimensiot](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Lisätietoja: [Eri dimensioiden määrittäminen pakkausta ja varastointia varten](../warehousing/packing-vs-storage-dimensions.md).
+- [Pakkaus- ja varastodimensiot](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Lisätietoja: [Eri dimensioiden määrittäminen pakkausta ja varastointia varten](../warehousing/packing-vs-storage-dimensions.md).
 
-- [Varaston ja logistiikan tallennetut näkymät](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
+- [Varaston ja logistiikan tallennetut näkymät](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
 
-- [Varastotyön luonnin aikatauluttaminen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Lisätietoja on kohdassa [Työn luonnin aikatauluttaminen aallon aikana](../warehousing/configure-wave-schedule-work-creation.md).
+- [Varastotyön luonnin aikatauluttaminen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Lisätietoja on kohdassa [Työn luonnin aikatauluttaminen aallon aikana](../warehousing/configure-wave-schedule-work-creation.md).
 
-- [Varaston kustannusten uudelleenarvostustositteiden taloushallinnon oletusdimensioiden määrittäminen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Lisätietoja on kohdassa [Vakiokustannusten päivitysten hallinta](../cost-management/manage-standard-cost-updates.md).
+- [Varaston kustannusten uudelleenarvostustositteiden taloushallinnon oletusdimensioiden määrittäminen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Lisätietoja on kohdassa [Vakiokustannusten päivitysten hallinta](../cost-management/manage-standard-cost-updates.md).
 
-- [Pienten pakettien lähetys (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Lisätietoja on kohdassa [Pienten pakettien lähettäminen](../warehousing/small-parcel-shipping.md).
+- [Pienten pakettien lähetys (SPS)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Lisätietoja on kohdassa [Pienten pakettien lähettäminen](../warehousing/small-parcel-shipping.md).
 
-- [Varastonohjaus pilven scale unitien avulla](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Lisätietoja on kohdissa [Varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale unitit](../cloud-edge/cloud-edge-workload-warehousing.md) ja[Varastotilausten pilvi- ja reunapalvelujen scale unitit](../cloud-edge/cloud-edge-warehouse-order.md).
+- [Varastonohjaus pilven scale unitien avulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - Lisätietoja on kohdissa [Varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale unitit](../cloud-edge/cloud-edge-workload-warehousing.md) ja[Varastotilausten pilvi- ja reunapalvelujen scale unitit](../cloud-edge/cloud-edge-warehouse-order.md).
 
-- [Varastonhallinnan mobiilisovellus](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Lisätietoja: [Varastonhallintasovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md) ja [Mobiililaitteiden käyttäjäasetukset](../warehousing/mobile-device-user-settings.md).
+- [Varastonhallinnan mobiilisovellus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Lisätietoja: [Varastonhallintasovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md) ja [Mobiililaitteiden käyttäjäasetukset](../warehousing/mobile-device-user-settings.md).
 
 - Aallon suoritusilmoitukset<br> - Lisätietoja: [Aallon suoritusilmoitukset](../warehousing/wave-execution-notifications.md).
 
 ### <a name="manufacturing"></a>Valmistus
 
-- [Resurssien hallinnan ominaisuudet tuotannon käyttöliittymässä](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
+- [Resurssien hallinnan ominaisuudet tuotannon käyttöliittymässä](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
 
 - Työtunnusten yhdistetty numerosarja<br> - Lisätietoja on kohdassa 
 
-- [Oletusvarausperiaatteen ohittaminen tuotannossa oleville materiaaleille](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Lisätietoja on kohdassa [Tuotannon materiaalien oletusvarausperiaatteen ohittaminen](../production-control/override-default-reservation-principle.md)
+- [Oletusvarausperiaatteen ohittaminen tuotannossa oleville materiaaleille](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Lisätietoja on kohdassa [Tuotannon materiaalien oletusvarausperiaatteen ohittaminen](../production-control/override-default-reservation-principle.md)
 
-- [Tuotannonhallinnan tallennetut näkymät](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
+- [Tuotannonhallinnan tallennetut näkymät](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
 
-- [Tuotannon suorittaminen pilven scale unitien avulla](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Lisätietoja on kohdassa [Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset](../cloud-edge/cloud-edge-workload-manufacturing.md)
+- [Tuotannon suorittaminen pilven scale unitien avulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Lisätietoja on kohdassa [Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset](../cloud-edge/cloud-edge-workload-manufacturing.md)
 
 ### <a name="planning"></a>Suunnittelu
 
-- [Kattavuuden aikarajan tuki suunnittelun optimoinnissa](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Lisätietoja on kohdassa [Kattavuuden aikarajat](../master-planning/planning-optimization/coverage-time-fence.md).
+- [Kattavuuden aikarajan tuki suunnittelun optimoinnissa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Lisätietoja on kohdassa [Kattavuuden aikarajat](../master-planning/planning-optimization/coverage-time-fence.md).
 
-- [Suunnittelun optimoinnin ennustealimallin tuki](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Lisätietoja on kohdassa [Pääsuunnittelu ja kysyntäennusteet](../master-planning/planning-optimization/demand-forecast.md).
+- [Suunnittelun optimoinnin ennustealimallin tuki](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - Lisätietoja on kohdassa [Pääsuunnittelu ja kysyntäennusteet](../master-planning/planning-optimization/demand-forecast.md).
 
-- [Ostoehdotusten tuki suunnittelun optimoinnissa](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Lisätietoja on kohdassa [Ostoehdotukset](../master-planning/planning-optimization/purchase-requisitions.md).
+- [Ostoehdotusten tuki suunnittelun optimoinnissa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Lisätietoja on kohdassa [Ostoehdotukset](../master-planning/planning-optimization/purchase-requisitions.md).
 
-- [Suunniteltujen tilausten tallennetut näkymät](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
+- [Suunniteltujen tilausten tallennetut näkymät](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
 
 ### <a name="product-information-management"></a>Tuotetietojen hallinta
 
-- [Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Lisätietoja on kohdassa [Ota olemassa olevien tuotteiden muutostenhallinta käyttöön](../engineering-change-management/change-management-existing-products.md).
+- [Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - Lisätietoja on kohdassa [Ota olemassa olevien tuotteiden muutostenhallinta käyttöön](../engineering-change-management/change-management-existing-products.md).
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 
@@ -145,7 +145,7 @@ Saat lisätietoja version 10.0.17 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2021 julkaisuaallon 1 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2021 julkaisuaallon 1 suunnitelma](/dynamics365-release-plan/2021wave1/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

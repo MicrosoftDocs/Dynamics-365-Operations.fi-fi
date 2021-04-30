@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819935"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866299"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Talousraporttien raportointipuiden määritykset
 
@@ -52,9 +52,7 @@ Raportointipuun määritys sisältää sarakkeet, joita käsitellään seuraavas
 | Yksikön kuvaus      | Raportointiyksikön otsikko näkyy raportin ylä- tai alatunnisteessa, jos raportin määrityksen **Ylä- ja alatunnisteet** -välilehteen syötetään **UnitDesc**-koodi. Otsikko näkyy raportin rivin kuvauksessa, jos syötät rivin määrityksen **Kuvaus**-soluun **UnitDesc**. |
 | Dimensiot            | Raportointiyksikkö, joka esittää tiedot suoraan taloushallinnon tiedoista. Se määrittää tilin ja liittyvien segmenttien loogisen asettelun ja pituudet. Kullakin raportointiyksikön rivillä on oltava dimensio tässä sarakkeessa. Voit sijoittaa dimension myös yhteenvetotietojen yksikköriville (esimerkiksi kuluille, jotka liittyvät suoraan kyseiseen yksikköön). Jos annat dimension yhteenvetotietojen yksikköriville, pääyksiköissä käytettäviä tilejä ei saa käyttää aliyksiköissä. Muussa tapauksessa summista voi tulla päällekkäisiä. |
 | Rivien määritykset       | Raportointiyksikön rivimäärityksen nimi. Samaa rivimääritystä käytetään kullekin raporttipuun yksikölle. Kun luot raportin, tätä rivimääritystä käytetään kullekin raporttiyksikölle. Rivimääritys voi sisältää useita taloushallinnon dimensioiden linkkejä. Jos rivimääritys on määritetty raporttipuussa, valitse **Käytä rivimääritystä raporttipuusta** -valintaruutu raporttimäärityksen **Raportti**-välilehdessä. |
-| Rivilinkki              | Raporttiyksikköä varten käytettävä rivilinkki. Rivilinkeillä määritetään rivimääritykselle linkitettävät taloushallinnon dimensiot. |
-| Ulkoinen linkki         | Tätä raporttiyksikköä varten käytettävä rivilinkki. Rivien linkit määritetään rivin määritykselle, jolla tunnistetaan linkitettävä raportti. |
-| Ulkoinen tiedosto         | Sen talousraportoinnin laskentataulukon tiedostopolku, josta tiedot haetaan. |
+| Taloushallinnon dimensioiden linkki| Raportointiyksikössä käytettävä taloushallinnon dimensioiden linkki. Taloushallinnon dimensioilla määritetään rivimääritykselle linkitettävät taloushallinnon dimensiot. |
 | Sivuvaihtoehdot          | Tämä sarake määrittää, estetäänkö raportointiyksikön tiedot, kun raporttia tarkastellaan tai se tulostetaan. |
 | Koonti-%              | Pääyksikköön kohdistettavan raportointiyksikön prosenttiosuus. Tähän sarakkeeseen syötettävä prosenttiluku koskee rivin määrityksen jokaista riviä, ennen kuin rivin arvo lisätään pääraporttiin. Jos esimerkiksi aliyksikkö on jaettava tasan kahden osaston kesken, kunkin rivin summat kerrotaan 50 prosentilla, ennen kuin arvo lisätään osaston raporttiin. Yhdellä raportointiyksiköllä ei voi olla kahta pääyksikköä. Raportointiyksikön summat voidaan kohdistaa kahteen pääyksikköön luomalla toinen raportointiyksikkö, jolla on sama dimensio loppujen 50 prosentin kokoamiseen. Anna prosenttiluvut ilman desimaalipilkkua. Esimerkiksi **25** tarkoittaa 25 prosentin kohdistusta pääyksikköön. Jos desimaalipilkkua käytetään (**,25**), pääyksikölle kohdistetaan 0,25 prosenttia. Jos haluat käyttää prosenttilukua, joka on alle yksi, käytä raportin määrityksen **Salli koonti &lt; 1 %** -asetusta. Tämä vaihtoehto on **Raportin asetukset** -valintaikkunan **Lisäasetukset**-välilehdessä. Voit käyttää tätä valintaikkunaa raportin määrityksen **Asetukset**-välilehden **Muu**-painikkeella. |
 | Yksikön suojaus         | Rajoitukset, joiden mukaan käyttäjät ja ryhmät voivat käyttää raportointiyksikön tietoja. |
@@ -113,10 +111,10 @@ Jokainen raportointipuun määritys näytetään yksilöllisinä näkyminä. Gra
 
 Talousraportoinnissa käytetään seuraavia raportointiyksikkötyyppejä:
 
-- Erittelytietojen yksikkö hakee tiedot suoraan taloushallinnon tiedoista, Excel-laskentataulukosta tai toisesta talousraportoinnin laskentataulukosta.
+- Tietoyksikkö, joka esittää tiedot suoraan taloushallinnon tiedoista.
 - Yhteenvetotietojen yksikkö sisältää alemman tason yksiköiden yhteenvetotiedot.
 
-Päätason raportointiyksikkö on yhteenvetotietojen yksikkö, joka yhdistää erittelytietojen yksikön yhteenvetotiedot. Yhteenvetoyksikkö voi olla sekä erittely-yksikkö että yhteenvetoyksikkö. Tämän vuoksi yhteenvetoyksikkö voi hakea tiedot alatason yksiköstä, taloushallinnon tiedoista tai Excel-laskentataulukosta. Pääyksikkö voi olla ylätason yksikön aliyksikkö. Aliraportointiyksikkö voi olla erittelytietojen yksikkö, joka noutaa tiedot suoraan taloushallinnon tiedoista tai Excel-laskentataulukosta. Aliraportointiyksikkö voi olla myös keskitason yhteenvetoyksikkö. Se voi siis toisin sanoen olla alatason yksikön pääyksikkö ja samalla myös ylätason yhteenvetoyksikön aliyksikkö. Yleisin raportointiyksiköiden skenaario on se, että **Dimensiot**-sarakkeen pääyksiköissä on tyhjiä soluja ja että aliyksiköillä on linkkejä määritettyihin tai yleismerkkejä sisältäviin dimensioyhdistelmiin.
+Päätason raportointiyksikkö on yhteenvetotietojen yksikkö, joka yhdistää erittelytietojen yksikön yhteenvetotiedot. Yhteenvetoyksikkö voi olla sekä erittely-yksikkö että yhteenvetoyksikkö. Tämän vuoksi yhteenvetoyksikkö voi hakea tiedot alatason yksiköstä tai taloushallinnon tiedoista. Pääyksikkö voi olla ylätason yksikön aliyksikkö. Aliraportointiyksikkö voi olla erittelytietojen yksikkö, joka noutaa tiedot suoraan taloushallinnon tiedoista. Aliraportointiyksikkö voi olla myös keskitason yhteenvetoyksikkö. Se voi siis toisin sanoen olla alatason yksikön pääyksikkö ja samalla myös ylätason yhteenvetoyksikön aliyksikkö. Yleisin raportointiyksiköiden skenaario on se, että **Dimensiot**-sarakkeen pääyksiköissä on tyhjiä soluja ja että aliyksiköillä on linkkejä määritettyihin tai yleismerkkejä sisältäviin dimensioyhdistelmiin.
 
 ### <a name="organize-reporting-units"></a> Raportointiyksiköiden järjestäminen
 
@@ -160,20 +158,7 @@ Voit estää tiettyjen käyttäjien ja ryhmien käyttämästä raportointiyksikk
 1. Avaa Report Designer -ohjelmassa muokattava raportointipuun määritys.
 2. Kaksoisnapsauta sen raportointiyksikön rivin **Yksikön suojaus** -solua, jonka käyttöoikeuden haluat poistaa.
 3. Valitse **Yksikön suojaus** -valintaikkunassa nimi ja valitse sitten **Poista**.
-4. Napsauta **OK**.
-
-### <a name="link-to-reports"></a>Raporttien linkittäminen
-
-Kun rivin määrityksen **raportti**-sarake on luotu ja raporttiin sisällytettävä raportti on määritetty, raportointipuu on päivitettävä linkitetyn sarakkeen ja raportin tiedoilla. Raportti voidaan tuoda mihin tahansa raportointipuun yksikköön.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Raportin tunnistaminen raportointipuussa
-
-1. Avaa Report Designer -ohjelmassa muokattava raportointipuun määritys.
-2. **Rivien määritykset** -sarakkeen solujen tiedot perustuvat valitun rivin tietoihin, koska samaa rivin määritystä on käytettävä kaikissa raportointipuun yksiköissä. Kaksoisnapsauta **Rivien määritykset** -solua ja valitse sitten raportin tiedot sisältävä rivin määritys.
-3. Valitse raportointiyksikön **Laskentataulukon linkki** -solu ja valitse sitten raporttia vastaavan linkin nimi.
-4. Kirjoita raportointiyksikön **Laskentataulukon tai raportin polku** -soluun raportin nimi tai valitse raportti selaamalla.
-5. Voit määrittää raportin laskentataulukon kirjoittamalla laskentataulukon nimen **Laskentataulukon nimi** -soluun.
-6. Toista vaiheet 3– 5 jokaiselle raportointiyksikölle, jonka halutaan vastaanottavan tietoja raportista. Voit estää virheellisten tietojen esiintymisen raportissa, kun varmistat, että vastaavassa raportointipuun yksikössä on oikeat raportin nimet.
+4. Valitse **OK**.
 
 ## <a name="examples"></a>Esimerkkejä
 ### <a name="reporting-unit-structure--example-1"></a>Raportointiyksikön rakenne – esimerkki 1

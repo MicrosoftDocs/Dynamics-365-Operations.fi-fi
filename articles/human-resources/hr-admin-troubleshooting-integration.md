@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794850"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892248"
 ---
 # <a name="integration-with-finance-faq"></a>Financeen integroinnin usein kysytyt kysymykset
 
@@ -50,7 +50,7 @@ Dataverse -integrointi on oletusarvoisesti pois käytöstä uudessa ympäristös
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Voinko luoda uuden yhdistämismäärityksen ilman mallia?
 
-Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojektia luotaessa tarvitaan aina malli. Lisätietoja tietojen integrointiohjelmasta, malleista ja projekteista on kohdassa [Tietojen integrointi Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator) -ratkaisuun.
+Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojektia luotaessa tarvitaan aina malli. Lisätietoja tietojen integrointiohjelmasta, malleista ja projekteista on kohdassa [Tietojen integrointi Microsoft Dataverse](/powerapps/administrator/data-integrator) -ratkaisuun.
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Voinko määrittää taloushallinnon dimensiot siirtymään Human Resourcesin ja Financen välillä?
 
@@ -145,7 +145,7 @@ Integrointi Financeen tapahtuu kahdessa vaiheessa. Tarkista ensin, että Human R
 
 Jos tiedot eivät näy odotetusti Dataversessä, tarkista, että yksikön integrointia tuetaan. Jos Dataverseen halutaan sisällyttää lisätietoja, se edellyttää muutosta Microsoftin puolella.
 
-Jos yksikköä tuetaan ja tiedot ovat käytettävissä Dataversessä, tarkista, että yhdistämismääritys on oikein tietojen integrointiohjelmassa. Jos integrointiohjelman yhdistämismääritys näyttää olevan kunnossa, varmista seuraavaksi, että tietojen hallintatyöt on suoritettu. Erätöitä suoritettaessa voi tapahtua virheitä. Lisätietoja tietojen hallinnasta on kohdassa [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Jos yksikköä tuetaan ja tiedot ovat käytettävissä Dataversessä, tarkista, että yhdistämismääritys on oikein tietojen integrointiohjelmassa. Jos integrointiohjelman yhdistämismääritys näyttää olevan kunnossa, varmista seuraavaksi, että tietojen hallintatyöt on suoritettu. Erätöitä suoritettaessa voi tapahtua virheitä. Lisätietoja tietojen hallinnasta on kohdassa [Tietojen hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Työntekijöiden osoitteet ovat virheellisiä Financeen tuonnin jälkeen. Mitä minun pitäisi tehdä?
 
@@ -172,15 +172,15 @@ Päivitä Financen tietoyksiköt valitsemalla **Tietojen hallinta \> Kehikkopara
 
 - Tietojen integrointiohjelma: 
 
-  - [Integroi tiedot kohteeseen Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integroi tiedot kohteeseen Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Tietojen integrointiohjelman virheiden hallinta ja vianmääritys](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Tietojen integrointiohjelman virheiden hallinta ja vianmääritys](/powerapps/administrator/data-integrator-error-management)
 
-  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen Power Appsissa, Microsoft Power Automate'ssa ja Dataversessa](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen Power Appsissa, Microsoft Power Automate'ssa ja Dataversessa](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Tietojen hallinta:
 
-  - [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Tietojen hallinta](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

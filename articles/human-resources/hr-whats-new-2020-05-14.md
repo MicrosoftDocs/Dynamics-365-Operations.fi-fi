@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e70d8fc62150d68503552754e94c7130d8960c76
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f8244d512c9e1236fc52cd4a91cdc78cc2b9b984
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802356"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893098"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (14. toukokuuta 2020)
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muu
 
 ## <a name="platform-changes"></a>Alustan muutokset
 
-Ympäristömuutokset sisältyvät tämän viikon julkaisuun. Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.10 ympäristöpäivitykset (toukokuu 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Tämä versio sisältää ohjelmakorjauksia ja tallennettujen näkymien muutoksia.
+Ympäristömuutokset sisältyvät tämän viikon julkaisuun. Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.10 ympäristöpäivitykset (toukokuu 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Tämä versio sisältää ohjelmakorjauksia ja tallennettujen näkymien muutoksia.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Dataverse -valintaluetteloiden ja lomien valintaluetteloiden yhdenmukaisuuden varmistaminen (436343)
 
@@ -116,7 +116,7 @@ Voit määrittää siirrettäville saldoille siirtosäännön, johon on siirto-o
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753693"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894145"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
 
@@ -27,7 +27,7 @@ Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajent
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Jatkuvaa koontia tukevan topologian ottaminen käyttöön. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Sinulla on oltava tämän topologian käyttöoikeus yhdelle seuraavista rooleista:
+Jatkuvaa koontia tukevan topologian ottaminen käyttöön. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Sinulla on oltava tämän topologian käyttöoikeus yhdelle seuraavista rooleista:
 
 - Sähköisen raportoinnin kehittäjä
 - Sähköisen raportoinnin toiminnallinen konsultti
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Muokkaa aiemmin luotua `AssetRollForwardService`-luokkaa ja kirjoita koodi määrittääksesi mukautetun kohdetehtaan raportin suorittajalle. Huomaa, että kun mukautettu kohdetehdas on muodostettu, kohdekansion määrittävä sovellusvetoinen parametri välitetään. Näin kohd kansiota käytetään luotujen tiedostojen tallentamiseen.
 
     > [!NOTE] 
-    > Varmista, että määritetty kansio (**c:\\0** tässä esimerkissä) esiintyy AOS-palvelua suorittavan palvelimen paikallisessa tiedostojärjestelmässä. Muussa tapauksessa suorituksen aikana ilmenee [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-poikkeus.
+    > Varmista, että määritetty kansio (**c:\\0** tässä esimerkissä) esiintyy AOS-palvelua suorittavan palvelimen paikallisessa tiedostojärjestelmässä. Muussa tapauksessa suorituksen aikana ilmenee [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-poikkeus.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

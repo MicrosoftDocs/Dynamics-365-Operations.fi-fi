@@ -1,8 +1,8 @@
 ---
-title: Verolaskelma-apuohjelman käytön aloittaminen
-description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskelma-apuohjelman.
+title: Verolaskennan aloittaminen
+description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskennan.
 author: wangchen
-ms.date: 03/10/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 835ae33fba31d4bccb218969aa9aa61eaa7a3061
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a90455a338067331a6a44cab36b578ed01ed56eb
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832590"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890295"
 ---
-# <a name="get-started-with-the-tax-calculation-add-in-preview"></a>Verolaskelma-apuohjelman käytön aloittaminen (esiversio)
+# <a name="get-started-with-the-tax-calculation-preview"></a>Verolaskennan (esiversio) käytön aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa on tietoja verolaskelma-apuohjelman käytön aloittamisesta. Ensin se opastaa sinua Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin määritysvaiheissa. Tämän jälkeen se tarkastelee yleistä prosessia, jossa veronlaskenta-apuohjelmaa käytetään Financen ja Supply Chain Managementin tapahtumissa.
+Tässä ohjeaiheessa on tietoja verolaskennan käytön aloittamisesta. Ensin se opastaa sinua Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin määritysvaiheissa. Tämän jälkeen se tarkastelee yleistä prosessia, jossa veronlaskennan mahdollisuuksia käytetään Financen ja Supply Chain Managementin tapahtumissa.
 
 Asetukset koostuvat neljästä päävaihesta:
 
-1. Asenna LCS:ssä verolaskelma-apuohjelma.
+1. Asenna verolaskenta LCS:ssä.
 2. Määritä RCS:ssä veronlaskentaominaisuus. Nämä määritykset eivät ole yrityskohtaisia. Se voidaan jakaa Financen ja Supply Chain Managementin oikeushenkilöiden kanssa.
-3. Määritä Financessa ja Supply Chain Managementissa verolaskelma-apuohjelman parametrit oikeushenkilöittäin.
-4. Luo Financessa ja Supply Chain Managementissa tapahtumia, kuten myyntitilauksia, ja määritä ja laske verot verolaskelma-apuohjelman avulla.
+3. Määritä Financessa ja Supply Chain Managementissa verolaskennan parametrit oikeushenkilöittäin.
+4. Luo Financessa ja Supply Chain Managementissa tapahtumia, kuten myyntitilauksia, ja määritä ja laske verot verolaskennan avulla.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -46,7 +46,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 - Sinull on pääsy RCS-tiliisi.
 - Olet ottanut yhteyttä Microsoftiin ottaaksesi väliversiot käyttöön ottamassasi Finance- tai Supply Chain Management -ympäristössä.
 
-## <a name="set-up-the-tax-calculation-add-in-in-lcs"></a>Määrtä LCS:ssä verolaskelma-apuohjelma
+## <a name="set-up-tax-calculation-in-lcs"></a>Määritä verolaskenta LCS:ssä
 
 1. Kirjaudu [LCS-palveluun](https://lcs.dynamics.com)
 2. Viimeistele Microsoft Power Platform -integroinnin asetukset. Lisätietoja on kohdassa [Apuohjelmien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
@@ -54,7 +54,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 4. Valitse **Verolaskelma (esiversio)**.
 5. Lue ja hyväksy käyttöehdot ja valitse sitten **Asenna**.
 
-## <a name="set-up-the-tax-calculation-add-in-in-rcs"></a>Määrtä RCS:ssä verolaskelma-apuohjelma
+## <a name="set-up-tax-calculation-in-rcs"></a>Määritä verolaskenta RCS:ssä
 
 Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritettava tämä toiminto vain kerran, ja voit suorittaa sen missä tahansa RCS:n oikeushenkilössä.
 
@@ -64,7 +64,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 4. Valitse **Microsoft**-määrityspalvelu ja valitse sitten **Säilöt**.
 5. Kirjoita **Tyyppi**-kenttään **Yleinen**.
 6. Valitse **Avaa**.
-7. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys – Eurooppa**.
+7. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys**.
 8. Valitse uusin versio ja valitse sitten **Tuo**.
 9. Palaa **Globalisaatio-ominaisuudet (esiversio)** -työtilaan, valitse **Ominaisuudet**, valitse **Verolaskelma**-ruutu ja valitse sitten **Lisää**.
 10. Valitse jokin seuraavista ominaisuustyypeistä:
@@ -79,18 +79,18 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 12. Valitse ominaisuuden luonnosversio ja valitse sitten **Muokkaa**. **Verolaskelman asetukset** -sivu täytetään.
 13. Valitse **Määritysten versio**. Sinun pitäisi nähdä vaiheessa 8 tuotu määritysversio.
 
-    Microsoft tarjoaa verolaskenta-apuohjelman oletusveromäärityksen. Tämä määritys kattaa suurimman osan verolaskennan vaatimuksista. Sitä päivitetään markkinapalautteen perusteella. Jos konfiguraatiota on laajennettava vastaamaan tiettyjä vaatimuksia, katso lisätietoja oman verokonfiguraation luomisesta ja valitsemisesta kohdassa [Veropalvelun laajennuksen kehittäminen](https://go.microsoft.com/fwlink/?linkid=2138483).
+    Microsoft tarjoaa verolaskenta-apuohjelman oletusveromäärityksen. Tämä määritys kattaa suurimman osan verolaskennan vaatimuksista. Sitä päivitetään markkinapalautteen perusteella. Jos konfiguraatiota on laajennettava vastaamaan tiettyjä vaatimuksia, katso lisätietoja oman verokonfiguraation luomisesta ja valitsemisesta kohdassa [Veropalvelun laajennuksen kehittäminen](./tax-service-add-data-fields-tax-integration-by-extension.md).
 
     Kun olet valinnut **määritysversion**, useita välilehtiä tulee näkyviin:
 
-    - **Verokoodit** – Tämä välilehti on pakollinen verolaskentapalvelussa. Sitä käytetään verokoodien päätietojen ylläpitämiseen. Kaikki tässä välilehdessä luodut verokoodit synkronoidaan automaattisesti Financeen, kun otat käyttöön vero-ominaisuuden asetusten nykyisen version yrityksessä.
-    - **Verokoodien kohdistettavuus** – Tämä välilehti on pakollinen verolaskenta-apuohjelmassa. Sen avulla määritetään matriisi, joka määrittää verokoodin, veroryhmän ja nimikkeen veroryhmän. Määritettyä verokoodia käytetään veron summan laskemiseen. **Verokoodi**-, **Veroryhmä**- ja **Nimikkeen veroryhmä** -kenttien arvot palautetaan Financeen.
-    - **Asiakkaan verorekisteröintinumeron kohdistettavuus** – Tämä välilehti on valinnainen verolaskenta-apuohjelmassa. Jos yhdellä asiakkaalla on useita verorekisteröintinumeroita, verolaskelma-lisäosa voi määrittää automaattisesti oikean verorekisteröintinumeron. Tämän välilehden matriisissa määritetään säännöt, joita lisäosa käyttää tässä päättelyssä. Muutoin Finance ja Supply Chain Management jatkavat veron oletusrekisteröintinumeron käyttöä myyntitapahtumien verotettavissa asiakirjoissa.
-    - **Toimittajan verorekisteröintinumeron kohdistettavuus** – Tämä välilehti on valinnainen verolaskenta-apuohjelmassa. Jos yhdellä toimittajalla on useita verorekisteröintinumeroita, verolaskelma-lisäosa voi määrittää automaattisesti oikean verorekisteröintinumeron. Tämän välilehden matriisissa määritetään säännöt, joita lisäosa käyttää tässä päättelyssä. Muutoin Finance ja Supply Chain Management jatkavat veron oletusrekisteröintinumeron käyttöä ostotapahtumien verotettavissa asiakirjoissa.
-    - **Luettelokoodien kohdistettavuus** – Tämä välilehti on valinnainen verolaskenta-apuohjelmassa. Se voi auttaa määrittämään automaattisesti **Luettelokoodi**-kentän arvon joustavampien ja konfiguroitavampien sääntöjen avulla. Tämän välilehden matriisissa voit määrittää säännöt, joita lisäosa käyttää tässä päättelyssä. Muutoin Finance ja Supply Chain Management jatkavat oletuskoodin käyttöä verotettavissa asiakirjoissa.
+    - **Verokoodit** – Tämä välilehti on pakollinen. Sitä käytetään verokoodien päätietojen ylläpitämiseen. Kaikki tässä välilehdessä luodut verokoodit synkronoidaan automaattisesti Financeen, kun otat käyttöön vero-ominaisuuden asetusten nykyisen version yrityksessä.
+    - **Verokoodien sovellettavuus** – Tämä välilehti on pakollinen. Sen avulla määritetään matriisi, joka määrittää verokoodin, veroryhmän ja nimikkeen veroryhmän. Määritettyä verokoodia käytetään veron summan laskemiseen. **Verokoodi**-, **Veroryhmä**- ja **Nimikkeen veroryhmä** -kenttien arvot palautetaan Financeen.
+    - **Asiakkaan verorekisteröintinumeron kohdistettavuus** – Tämä välilehti on valinnainen. Jos yhdellä asiakkaalla on useita verorekisteröintinumeroita, verolaskenta voi määrittää automaattisesti oikean verorekisteröintinumeron. Tämän välilehden matriisissa määritetään säännöt, joita käytetään tässä päättelyssä. Muutoin Finance ja Supply Chain Management jatkavat veron oletusrekisteröintinumeron käyttöä myyntitapahtumien verotettavissa asiakirjoissa.
+    - **Alihankkijan verorekisteröintinumeron kohdistettavuus** – Tämä välilehti on valinnainen. Jos yhdellä alihankkijalla on useita verorekisteröintinumeroita, verolaskenta voi määrittää automaattisesti oikean verorekisteröintinumeron. Tämän välilehden matriisissa määritetään säännöt, joita käytetään tässä päättelyssä. Muutoin Finance ja Supply Chain Management jatkavat veron oletusrekisteröintinumeron käyttöä ostotapahtumien verotettavissa asiakirjoissa.
+    - **Luettelokoodin käytettävyys** – Tämä välilehti on valinnainen. Se voi auttaa määrittämään automaattisesti **Luettelokoodi**-kentän arvon joustavampien ja konfiguroitavampien sääntöjen avulla. Tämän välilehden matriisissa voidaan määrittää säännöt, joita käytetään tässä päättelyssä. Muutoin Finance ja Supply Chain Management jatkavat oletuskoodin käyttöä verotettavissa asiakirjoissa.
 
 14. Valitse **Verokoodit**-välilehdessä **Lisää** ja kirjoita verokoodi sekä kuvaus.
-15. Valitse **Verokomponentti**. Verokomponentti on ryhmä veron laskentatapoja, jotka on määritetty valitun verokonfiguraation aiemmassa versiossa. Seuraavat verkokomponentit ovat käytettävissä:
+15. Valitse **Verokomponentti**. Verokomponentti on ryhmä tapoja, jotka on määritetty valitun verokonfiguraation aiemmassa versiossa. Seuraavat verkokomponentit ovat käytettävissä:
 
     - Nettosumman mukaan
     - Bruttosumman mukaan
@@ -124,31 +124,31 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 
 ## <a name="dynamics-365-setup"></a>Dynamics 365:n asetukset
 
-Kun asetukset on tehty RCS:ssä edellisen osan ohjeiden mukaisesti, käytössä on vero-ominaisuuden julkaistu versio. Näiden vaiheiden avulla voit määrittää verolaskelma-apuohjelman Financessa.
+Kun asetukset on tehty RCS:ssä edellisen osan ohjeiden mukaisesti, käytössä on vero-ominaisuuden julkaistu versio. Näiden vaiheiden avulla voit määrittää verolaskennan Financessa.
 
-Tämän osan määritykset tehdään yrityskohtaisesti. Se on määritettävä kullekin yritykselle, jolle verolaskelma-lisäosa otetaan käyttöön Financessa.
+Tämän osan määritykset tehdään yrityskohtaisesti. Se on määritettävä kullekin yritykselle, jolle verolaskenta otetaan käyttöön Financessa.
 
-1. Siirry Financessa kohtaan **Vero** \> **Asetukset** \> **Veromääritys** \> **Verolaskelma-apuohjelman määritys (esiversio)**.
+1. Siirry Financessa kohtaan **Vero** \> **Asetukset** \> **Veromääritys** \> **Verolaskennan määritys (esiversio)**.
 2. Määritä **Yleiset**-välilehdessä seuraavat kentät:
 
-    - **Ota käyttöön verolaskelma-apuohjelma** – Valitsemalla tämän valintaruudun voit ottaa käyttöön verolaskelma-apuohjelman yritykselle. Jos verolaskelma-apuohjelmaa ei ole otettu käyttöön nykyiselle yritykselle, yritys käyttää edelleen aiemmin luotua veromoduulia veron määrittämiseen ja laskemiseen.
+    - **Ota käyttöön verolaskenta** – Valitsemalla tämän valintaruudun voit ottaa käyttöön verolaskennan yritykselle. Jos sitä ei ole otettu käyttöön nykyiselle yritykselle, yritys käyttää edelleen aiemmin luotua veromoduulia veron määrittämiseen ja laskemiseen.
     - **Ominaisuuden määritys** – Valitse yritykselle julkaistun verotoiminnon asetukset ja versio. Lisätietoja julkaistun verotoiminnon määrittämisestä ja suorittamisesta on tämän ohjeaiheen edellisessä osassa.
-    - **Liiketoimintaprosessi** – Valitse liiketoimintaprosessit, jotka otetaan käyttöön verolaskelma-apuohjelmalle.
+    - **Liiketoimintaprosessi** – Valitse käyttöön otettavat liiketoimintaprosessit.
     - **Ota verokoodin oikaisu käyttöön** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat ottaa käyttöön verokoodioikaisut arvonlisäverosivulla.
 
 3. Määritä **Laskelma**-välilehdessä yrityksen odotettu pyöristyssääntö.
-4. Määritä **Virheen käsittely** -välilehdessä yrityksen odotettu virheenkäsittelymenetelmä. Jokaiselle verolaskelma-apuohjelman tuloskoodille on käytettävissä kolme vaihtoehtoa:
+4. Määritä **Virheen käsittely** -välilehdessä yrityksen odotettu virheenkäsittelymenetelmä. Tuloskoodille on käytettävissä kolme vaihtoehtoa:
 
     - Nro
     - Varoitus
     - Virhe
 
-5. Tallenna verolaskelma-apuohjelman asetukset.
+5. Tallenna asetukset.
 6. Toista vaiheet 1-5 jokaiselle lisäyritykselle.
 
 ## <a name="transaction-processing"></a>Tapahtumien käsittely
 
-Kun olet suorittanut kaikki määritysmenettelyt, voit käyttää veron laskennan lisäosaa verojen määrittämiseen ja laskemiseen Financessa. Tapahtumien käsittelyvaiheet säilyvät samana. Financen versio 10.0.18 tukee seuraavia tapahtumia:
+Kun olet suorittanut kaikki määritysmenettelyt, voit käyttää veron laskentaa verojen määrittämiseen ja laskemiseen Financessa. Tapahtumien käsittelyvaiheet säilyvät samana. Financen versio 10.0.18 tukee seuraavia tapahtumia:
 
 - Myyntiprosessi
 

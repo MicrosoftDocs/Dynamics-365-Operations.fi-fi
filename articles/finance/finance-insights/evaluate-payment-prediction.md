@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818616"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897909"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Asiakkaan alkuperäisen maksuennustemallin arvioiminen (esiversio)
 
@@ -41,7 +41,7 @@ Tämä linkki vie AI Builderiin, josta saat lisätietoja nykyisestä mallista. V
 
 Avautuva sivu sisältää seuraavat tiedot:
 
-- **Suorituskyky**-osan mallin suorituskykyluokka kertoo mallin laadusta. Lisätietoja tästä luokasta on kohdassa [Ennustemallin suorituskyky](https://docs.microsoft.com/ai-builder/prediction-performance) AI Builderin dokumentaatiossa.
+- **Suorituskyky**-osan mallin suorituskykyluokka kertoo mallin laadusta. Lisätietoja tästä luokasta on kohdassa [Ennustemallin suorituskyky](/ai-builder/prediction-performance) AI Builderin dokumentaatiossa.
 - **Vaikuttavimmat tiedot** -osassa näkyy, miten tärkeitä tietojen eri syöttötyypit olivat mallille. Voit arvioida tämän luettelon ja vastaavat prosenttiosuudet ja määrittää, ovatko tiedot yhdenmukaisia yrityksen ja markkinoiden kanssa.
 
     [![Ennustemallin Suorituskyky- ja Vaikuttavimmat tiedot -osat](./media/models.png)](./media/models.png)

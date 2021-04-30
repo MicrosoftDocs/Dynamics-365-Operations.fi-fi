@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 599f9728019cd6bc59c59a4f08df06c6c9c9ac31
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798414"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890122"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Hakijan seurantajärjestelmän integroinnin sovellusliittymän esittely
 
@@ -45,21 +45,21 @@ Tämä sovellusliittymä perustuu Microsoft Dataverseen (aiemmin Common Data Ser
 
 Yleisiä tietoja Microsoft Dataverse -verkkoliittymästä:
 
-- [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [Microsoft Dataverse -verkkoliittymän käyttäminen](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Microsoft Dataversen kehittäjäopas](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [Microsoft Dataverse -verkkoliittymän käyttäminen](/powerapps/developer/data-platform/webapi/overview)
+- [Microsoft Dataversen kehittäjäopas](/powerapps/developer/data-platform)
 
-Yllä olevat dokumentaatiot sisältävät yksityiskohtaisia tietoja ja kehittäjän ohjeita Dataverse-verkkoliittymän käyttämisestä. Tällaisia ohjeita ovat esimerkiksi [todennuksen hallinta](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [toimintojen suorittaminen](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [Postmanin käyttäminen API:n kanssa](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api) sekä [muutosseurannan tai delta-tunnusten käyttäminen](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) liittymän avulla.
+Yllä olevat dokumentaatiot sisältävät yksityiskohtaisia tietoja ja kehittäjän ohjeita Dataverse-verkkoliittymän käyttämisestä. Tällaisia ohjeita ovat esimerkiksi [todennuksen hallinta](/powerapps/developer/data-platform/webapi/authenticate-web-api), [toimintojen suorittaminen](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [Postmanin käyttäminen API:n kanssa](/powerapps/developer/data-platform/webapi/use-postman-web-api) sekä [muutosseurannan tai delta-tunnusten käyttäminen](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) liittymän avulla.
 
 ### <a name="option-sets"></a>Asetusjoukot
 
-Tässä asiakirjassa kuvattu ATS-integroinnin API:n tietomalli sisältää asetusjoukot, joiden luettelo sisältää yksikön ominaisuuksiin liittyvät luetteloarvot. Lisätietoja asetusjoukkojen käyttämisestä Dataverse-verkkoliittymässä on kohdassa [Asetusjoukkojen luominen ja päivittäminen verkkoliittymän avulla](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Asetusjoukot määritetään kullekin Dataverse-ympäristölle.
+Tässä asiakirjassa kuvattu ATS-integroinnin API:n tietomalli sisältää asetusjoukot, joiden luettelo sisältää yksikön ominaisuuksiin liittyvät luetteloarvot. Lisätietoja asetusjoukkojen käyttämisestä Dataverse-verkkoliittymässä on kohdassa [Asetusjoukkojen luominen ja päivittäminen verkkoliittymän avulla](/powerapps/developer/data-platform/webapi/create-update-optionsets). Asetusjoukot määritetään kullekin Dataverse-ympäristölle.
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>Human Resourcesin virtuaalitaulut Dataversessa
 
 ATS-integroinnin API:n päätepisteet käyttävät Microsoft Dataversen virtuaalitaulujen ominaisuuksia. Oletusarvon mukaan virtuaalitauluja ja niihin liittyviä API-päätepisteitä ei ole otettu käyttöön Human Resources -ympäristöissä, minkä ansiosta organisaatiot voivat määrittää, mitkä OData-päätepisteet julkistetaan ympäristölle. Jotta sovellusliittymää voidaan käyttää, Human Resourcesin yksiköiden virtuaalitaulut on luotava ympäristöä varten. 
 
-Lisätietoja virtuaalitaulujen luomisesta liittymää varten on kohdassa [Dataverse-virtuaalitaulujen konfiguroiminen](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Lisätietoja virtuaalitaulujen luomisesta liittymää varten on kohdassa [Dataverse-virtuaalitaulujen konfiguroiminen](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="data-model"></a>Tietomalli
 
@@ -134,8 +134,8 @@ Asetusjoukot:
 ## <a name="see-also"></a>Lisätietoja
 
 [Ehdokkaiden työhönotto](hr-personnel-recruit.md)<br>
-[Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Microsoft Dataverse -verkkoliittymän käyttäminen](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Asetusjoukkojen luominen ja päivittäminen verkkoliittymän avulla](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Microsoft Dataverse -verkkoliittymän käyttäminen](/powerapps/developer/data-platform/webapi/overview)<br>
+[Asetusjoukkojen luominen ja päivittäminen verkkoliittymän avulla](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

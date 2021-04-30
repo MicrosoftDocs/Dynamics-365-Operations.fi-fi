@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e550f310fe3ec0aaee9c16f3edccd775921a64be
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c993c10bdd3517ed8a3e192851b4716cba1c638
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821150"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909964"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Dynamics 365 Supply Chain Management 10.0.15:n uudet tai muuttuneet ominaisuudet (tammikuu 2021)
 
@@ -33,23 +33,23 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
+Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
 - Pilvi- ja reunapalvelujen Scale Unitin hallinta tuotannon ja varaston suorituksen kuormituksen avulla<br> - Lisätietoja on kohdassa [Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit](../cloud-edge/cloud-edge-landing-page.md)
 
-- [Luo ja käsittele siirtotilauksia varastosovelluksesta](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Lisätietoja on kohdassa [Siirtotilausten luonnin ottaminen käyttöön varastosovelluksessa](../warehousing/create-transfer-order-from-warehouse-app.md).
+- [Luo ja käsittele siirtotilauksia varastosovelluksesta](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Lisätietoja on kohdassa [Siirtotilausten luonnin ottaminen käyttöön varastosovelluksessa](../warehousing/create-transfer-order-from-warehouse-app.md).
 
-- [Toimittajan tarjouksen oletustarjouspyynnön kentät](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Lisätietoja on kohdassa [Tarjouspyyntöjen yleiskatsaus](../procurement/request-quotations.md).
+- [Toimittajan tarjouksen oletustarjouspyynnön kentät](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Lisätietoja on kohdassa [Tarjouspyyntöjen yleiskatsaus](../procurement/request-quotations.md).
 
-- [Dynamics 365 Supply Chain Managementin suunnittelun muutostenhallinnan apuohjelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Lisätietoja on kohdassa [Suunnittelun muutostenhallinnan yleiskatsaus](../engineering-change-management/product-engineering-overview.md).
+- [Dynamics 365 Supply Chain Managementin suunnittelun muutostenhallinnan apuohjelma](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<br> - Lisätietoja on kohdassa [Suunnittelun muutostenhallinnan yleiskatsaus](../engineering-change-management/product-engineering-overview.md).
 
-- [Yhdistetyn todellisuuden valmistuksen oppaat](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Lisätietoja on kohdassa [Yhdistetyn todellisuuden oppaiden tuottaminen tuotannon työntekijöille](../production-control/instruction-guides-in-production-overview.md).
+- [Yhdistetyn todellisuuden valmistuksen oppaat](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Lisätietoja on kohdassa [Yhdistetyn todellisuuden oppaiden tuottaminen tuotannon työntekijöille](../production-control/instruction-guides-in-production-overview.md).
 
-- [Uuden tuotannon käyttökokemuksen suorittaminen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md).
+- [Uuden tuotannon käyttökokemuksen suorittaminen](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md).
 
-- [Käsittele varastosovelluksen tapahtumat](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Lisätietoja on kohdassa [Varastosovellustapahtuman käsittely](../warehousing/warehouse-app-events.md).
+- [Käsittele varastosovelluksen tapahtumat](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Lisätietoja on kohdassa [Varastosovellustapahtuman käsittely](../warehousing/warehouse-app-events.md).
 
-- [Vapautetut tuotteet -sivun tallennetut näkymät](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Lisätietoja: [Tallennetut näkymät](../../fin-ops-core/fin-ops/get-started/saved-views.md).
+- [Vapautetut tuotteet -sivun tallennetut näkymät](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/saved-views-released-products-page)<br> - Lisätietoja: [Tallennetut näkymät](../../fin-ops-core/fin-ops/get-started/saved-views.md).
 
 - USMCA-alkuperätodistusasiakirja<br> - Lisätietoja on kohdassa [Alkuperän USMCA-sertifiointi](../transportation/usmca-certification-of-origin.md).
 
@@ -69,7 +69,7 @@ Saat lisätietoja version 10.0.15 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 

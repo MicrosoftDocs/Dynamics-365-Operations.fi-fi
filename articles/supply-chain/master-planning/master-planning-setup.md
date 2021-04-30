@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e30b02a6f98f638954adc7ec335babd518b92bf4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833398"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909400"
 ---
 # <a name="set-up-master-planning"></a>Pääsuunnittelun määrittäminen
 
@@ -106,11 +106,11 @@ Kullekin suunnitelmalle on valittava tuotantotilauksissa käytettävä ajoitusme
 
 ### <a name="operations-scheduling"></a>Työvaiheiden ajoitus
 
-Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio. Työvaiheiden ajoituksessa reitityksen tuotannon työvaiheita ei hajoteta töiksi. Lisätietoja työvaiheiden ajoittamisesta on kohdassa [Työvaiheiden ajoitus](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio. Työvaiheiden ajoituksessa reitityksen tuotannon työvaiheita ei hajoteta töiksi. Lisätietoja työvaiheiden ajoittamisesta on kohdassa [Työvaiheiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Töiden ajoitus
 
-Töiden ajoitus on tarkka ajoitusmenetelmä, jossa jokainen työvaihe jaetaan yksittäisiin tehtäviin tai töihin. Töiden ajoitus sisältää tietoja kapasiteetista. Sitä käytetään yleensä yksittäisten töiden ajoituksessa tuotannossa, ja normaalisti se tapahtuu välittömästi tai lyhyen ajan kuluessa. Lisätietoja työn ajoittamisesta on kohdassa [Työn ajoitus](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Töiden ajoitus on tarkka ajoitusmenetelmä, jossa jokainen työvaihe jaetaan yksittäisiin tehtäviin tai töihin. Töiden ajoitus sisältää tietoja kapasiteetista. Sitä käytetään yleensä yksittäisten töiden ajoituksessa tuotannossa, ja normaalisti se tapahtuu välittömästi tai lyhyen ajan kuluessa. Lisätietoja työn ajoittamisesta on kohdassa [Työn ajoitus](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Aikarajat päivissä
 
@@ -158,7 +158,7 @@ Toimenpidesanomat ehdottavat aiemmin luotuun toimituksen tilaukseen muutoksia, j
 
 Kun **Toimenpidesanoma**-asetukseksi valitaan **Kyllä**, voit ohittaa nimikkeelle pääajoituksen aikana määritetyn toimenpidesanoman aikarajan. Määritä siinä tapauksessa, montako päivää pääajoituksen on luotava tarpeiden toimenpidesanomia. Toimenpidesanoman aikaraja lasketaan eteenpäin nykyisestä päivämäärästä.
 
-Lisätietoja toimenpidesanomista on kohdassa [Toimenpidesanomat](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Lisätietoja toimenpidesanomista on kohdassa [Toimenpidesanomat](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Toimenpidesanomien laskeminen pidentää pääsuunnittelun ajoaikaa. Jos toimenpidesanomia ei analysoida ja käytetä säännöllisesti (kuten päivittäin tai viikoittain), harkitse laskennan poistamista käytöstä pääsuunnitteluajon aikana. Voit poistaa laskennan käytöstä määrittämällä **Pääsuunnitelmat**-sivulla suoritettavan pääsuunnitelman **Toimenpidesanoma**-aikarajaksi **0** (nolla). Varmista myös, että **Toimenpidesanoma**-asetus on poistettu käytöstä kaikissa kattavuusryhmissä.
@@ -223,7 +223,7 @@ läpimenoaika + negatiiviset päivät + kuluva päivä – tarvepäivä.
 
 Järjestelmä käyttää vain tälle aikarajalle sijoittuvia suunniteltuja toimitustilauksia, ja se luo uuden suunnitellun tilauksen aikarajan ulkopuolelle. Dynaamisten negatiivisten päivien etuna on, että siihen sisältyy yksittäisen tuotteen läpimenoaika. Lisäksi se käyttää uudelleen aiemmin luotuja tilauksia ja välttää sellaisten uusien suunniteltujen tilausten luomisen, joiden päivämäärä tulee olemaan myöhäisempi läpimenoajan aiheuttamien viiveiden vuoksi. 
 
-Lisätietoja on kohdassa [Negatiiviset päivät ja dynaamiset negatiiviset päivät](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Lisätietoja on kohdassa [Negatiiviset päivät ja dynaamiset negatiiviset päivät](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

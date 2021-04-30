@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743530"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893273"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Tavujärjestysmerkkejä luoduissa tiedostoissa estävien ER-määritysten suunnitteleminen
 
 [!include [banner](../includes/banner.md)]
 
-[Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisu](er-quick-start1-new-solution.md) voidaan suunnitella luomaan lähteviä asiakirjoja. Teksti- tai XML-tiedostojen kaltaisten asiakirjojen luominen edellyttää, että ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-[muoto](general-electronic-reporting.md#FormatComponentOutbound)-osan Luotujen tiedostojen merkkijoukon ilmaisevan [merkkikoodaus](https://docs.microsoft.com/windows/win32/intl/character-sets) edellyttää, että ER-muoto sisältää **Yleinen\\Tiedosto**-muotoelementin. ER-muoto-osan määritetään avaamalla ER-määrityksen [luonnos](general-electronic-reporting.md#component-versioning) ER-muodon suunnittelutoiminnossa ja lisäämällä **Yleinen\\Tiedosto**-elementti. **Koodaus**-kenttään määritetään niiden lähtevien tiedostojen koodaus, jotka luodaan suorituksen aikana tätä osaa käyttämällä.
+[Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisu](er-quick-start1-new-solution.md) voidaan suunnitella luomaan lähteviä asiakirjoja. Teksti- tai XML-tiedostojen kaltaisten asiakirjojen luominen edellyttää, että ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-[muoto](general-electronic-reporting.md#FormatComponentOutbound)-osan Luotujen tiedostojen merkkijoukon ilmaisevan [merkkikoodaus](/windows/win32/intl/character-sets) edellyttää, että ER-muoto sisältää **Yleinen\\Tiedosto**-muotoelementin. ER-muoto-osan määritetään avaamalla ER-määrityksen [luonnos](general-electronic-reporting.md#component-versioning) ER-muodon suunnittelutoiminnossa ja lisäämällä **Yleinen\\Tiedosto**-elementti. **Koodaus**-kenttään määritetään niiden lähtevien tiedostojen koodaus, jotka luodaan suorituksen aikana tätä osaa käyttämällä.
 
 > [!NOTE]
 > Jos muodon sisältämän koodauksen nimi on virheellinen, seurauksena on virhe, kun muutokset tallennetaan muotoasetuksiin.
 
 ![Juurielementin lisääminen Muodon suunnittelija -sivulla](./media/er-suppress-bom-characters-image1.gif)
 
-Jos koodaukseksi määritettään **UTF-8**, **UTF-16** tai **UTF-32**, **Estä tavujärjestysmerkit**-vaihtoehto on käytettävissä. Kun asetuksena on **Kyllä**, [tavujärjestysmerkit](https://docs.microsoft.com/globalization/encoding/byte-order-mark) estetään lähtevissä tiedostoissa, jotka luodaan suorituksen aikana suoritettaessa muokattavaa ER-muotoa.
+Jos koodaukseksi määritettään **UTF-8**, **UTF-16** tai **UTF-32**, **Estä tavujärjestysmerkit**-vaihtoehto on käytettävissä. Kun asetuksena on **Kyllä**, [tavujärjestysmerkit](/globalization/encoding/byte-order-mark) estetään lähtevissä tiedostoissa, jotka luodaan suorituksen aikana suoritettaessa muokattavaa ER-muotoa.
 
 > [!NOTE]
 > Jos **Koodaus**-kenttä jätetään tyhjäksi, **UTF-8**-oletuskoodausta käytetään.

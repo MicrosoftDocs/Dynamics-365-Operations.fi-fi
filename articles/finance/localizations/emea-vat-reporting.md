@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 743298a1c32f5fc706ad7a47d9b559569946889b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: efa9be4a5243444c2bf0b154836efbf8cfa76de9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832661"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894667"
 ---
 # <a name="vat-reporting-for-europe"></a>ALV-raportointi Euroopassa
 
@@ -248,9 +248,9 @@ d<li>Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</stron
 
 Voit käyttää sähköistä raportointia (ER) määrittääksesi ilmoituksia ja raportteja sekä viedäksesi tietoja eri sähköisissä muodoissa muuttamatta X++ -koodia. Lisätietoja:
 
--   [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Lokalisoinnin vaatimukset – GER-konfiguraation luominen](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+-   [Sähköisen raportoinnin yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+-   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Lokalisoinnin vaatimukset – GER-konfiguraation luominen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>ALV-ilmoitusten maakohtaiset resurssit
 Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimukset. On olemassa ennalta määritetyt mallit ja muodot ALV-ilmoituksille seuraavassa taulukossa luetelluissa maissa.

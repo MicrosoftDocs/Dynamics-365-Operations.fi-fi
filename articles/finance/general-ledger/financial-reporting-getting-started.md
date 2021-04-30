@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811284"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897033"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial reportingin aloittaminen 
 
@@ -148,7 +148,7 @@ Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
 * Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus**-välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
 * Poista ponnahdusikkunoiden esto käytöstä selaimessa.
 * Työasemien on asennettava Microsoft .NET -kehys 4.6.2 tai uudempi versio. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345).
-* Jos käytössäsi on Chrome-selain, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät Chromea incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Lisätietoja Chrome ClickOnce -laajennuksesta on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Jos käytössäsi on Chrome-selain, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät Chromea incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Lisätietoja Chrome ClickOnce -laajennuksesta on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Jos käytät Microsoft Edgea Chrome-selaimen kanssa, sinun ei tarvitse asentaa ClickOnce-laajennusta Edge Chromiumiin. Voit kuitenkin ottaa käyttöön ClickOnce-asetuksen, jotta voit ladata raporttien suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa.
      1. Avaa uusi selain Microsoft Edgessä.
      2. Anna **edge://flags** ja paina **Enter**-näppäintä.
