@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd9ee69e180f2ff605c4f373a95d2346ccc73c0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807941"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909228"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Hankinnan työnkulut
 
@@ -47,7 +47,7 @@ Hankinnoissa voi käyttää seuraavia työnkulkutyyppejä.
 | Toimittajan sovelluksen lisäystyönkulku | Luo toimittajapyyntöjen kautta lisättävien uusien toimittajien tarkistus- ja hyväksyntätyönkulkuja. |
 
 > [!IMPORTANT]
-> Uutta työnkulkua lisättäessä näkyvissä saattaa olla seuraavat **Luo työnkulku** -valintaikkunassa mainitut vanhentuneet työnkulut. Ne liittyvät *vastaanoton vahvistuksen* toimintoon, joka oli käytössä [Dynamics AX 2012:ssa](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) mutta joka on nyt vanhentunut. Näitä työnkulkuja ei tueta tällä hetkellä.
+> Uutta työnkulkua lisättäessä näkyvissä saattaa olla seuraavat **Luo työnkulku** -valintaikkunassa mainitut vanhentuneet työnkulut. Ne liittyvät *vastaanoton vahvistuksen* toimintoon, joka oli käytössä [Dynamics AX 2012:ssa](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) mutta joka on nyt vanhentunut. Näitä työnkulkuja ei tueta tällä hetkellä.
 > 
 > - Toimituksen eräpäiväilmoitustyönkulku
 > - Laskun vastaanottoilmoitustyönkulku

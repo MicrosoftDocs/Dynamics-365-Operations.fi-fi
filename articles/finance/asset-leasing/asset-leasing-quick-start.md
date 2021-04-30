@@ -2,11 +2,11 @@
 title: Omaisuuden leasingin aloittaminen
 description: Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814125"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892430"
 ---
 # <a name="asset-leasing-get-started"></a>Omaisuuden leasingin aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä. Ohjeaiheessa myös määritellään käyttöliittymässä ja ohjeissa käytetyt termit. Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen. Omaisuuden leasing integroituu saumattomasti Dynamics 365 Financen komponentteihin, mukaan lukien käyttöomaisuuseriin, ostoreskontraan ja kirjanpitoon.
+
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Etsi ja valitse **Ominaisuuksien hallinta** -työtilassa toiminto, jonka nimi on **Käyttöomaisuuden vuokraus** ja napsauta sitten **Ota käyttöön nyt** -painiketta.
 
 Lisätietoja tilinpäätösstandardeista on IFRS 16- ja US GAAP ASC 842 -standardien ohjeissa.
 

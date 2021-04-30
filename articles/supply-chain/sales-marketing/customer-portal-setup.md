@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: dcb952ccc68f5f19119f8b72285667e259b00429
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840722"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907812"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Asiakasportaalin asentaminen, määrittäminen ja päivittäminen
 
@@ -27,7 +27,7 @@ ms.locfileid: "5840722"
 
 Asiakasportaalin käyttöönotto edellyttää, että sinulla on seuraavat käyttöoikeudet:
 
-- **Power Apps -portaalit** – Asiakasportaalin isännöintiin tarvitaan tämä käyttöoikeus. Portaalien käyttöoikeus perustuu käyttöön. Lisätietoja on kohdassa [Power Apps -portaalien käyttöoikeussopimuksen vaatimukset](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Power Apps -portaalit** – Asiakasportaalin isännöintiin tarvitaan tämä käyttöoikeus. Portaalien käyttöoikeus perustuu käyttöön. Lisätietoja on kohdassa [Power Apps -portaalien käyttöoikeussopimuksen vaatimukset](/power-platform/admin/powerapps-flow-licensing-faq#portals).
 - **Kaksoiskirjoitus** – Sinulla on oltava tarvittavat käyttöoikeudet, jotta voit ottaa käyttöön Supply Chain Management -taulukoiden kaksoiskirjoituksen. Lisätietoja on kohdassa [kaksoiskirjoituksen järjestelmävaatimukset](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Kaksoiskirjoituksen riippuvaisuudet ja Power Apps -portaalit
@@ -40,7 +40,7 @@ Toisin kuin muut Supply Chain Managementin ominaisuudet, asiakasportaalimalli si
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Asiakasportaalin käyttöön tarvittavat määritykset
 
-Kun olet varma, että sinulla on tarvittavat käyttöoikeudet, voit määrittää kaksoiskirjoitustiedot, jotka on kuvattu kohdassa [kaksoiskirjoituksen alkuperäiset synkronointiohjeet](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+Kun olet varma, että sinulla on tarvittavat käyttöoikeudet, voit määrittää kaksoiskirjoitustiedot, jotka on kuvattu kohdassa [kaksoiskirjoituksen alkuperäiset synkronointiohjeet](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
 
 Muista ottaa seuraavat taulukon yhdistämismääritykset käyttöön kaksoiskirjoitustilanteissa:
 
@@ -74,14 +74,14 @@ Asiakasportaaliin voidaan lisätä toimintoja myöhemmin. Kaikki Microsoftin poh
 
 Jos haluat tietää, miten asiakasportaali voidaan määrittää ja mukauttaa, aloita tarkastelemalla seuraavia tekniikoita koskevia ohjeita:
 
-- [Power Apps -portaalit -dokumentaatio](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps -portaalit -dokumentaatio](/powerapps/maker/portals/overview)
 - [Kaksoiskirjoituksen dokumentointi](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 Portaalien tehokas hallinta edellyttää, että ymmärrät Power Apps -portaaleja ja Microsoft Dataverse -elinkaarta. Lisätietoja on seuraavissa resursseissa:
 
-- [Tietoja portaalin elinkaaresta](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Portaalin päivittäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Portaalin konfiguraation siirtäminen](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Tietoja portaalin elinkaaresta](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Portaalin päivittäminen](/powerapps/maker/portals/admin/upgrade-portal)
+- [Portaalin konfiguraation siirtäminen](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Ratkaisun elinkaaren hallinta: Dynamics 365 for Customer Engagement -sovellukset](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

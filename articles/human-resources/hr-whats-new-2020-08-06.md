@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 263650cae4b8408f1f7a4a27c43294d2f51c1444
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: edbfad387496cb3381c6298b9141129c6a878335
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800138"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891838"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (06. huhtikuuta 2020)
 
@@ -33,23 +33,23 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muu
 
 ## <a name="platform-update-1001236-is-now-available"></a>Platform Update 10.0.12(36) on nyt saatavana
 
-Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.12 ympäristöpäivitykset (elokuu 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
+Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.12 ympäristöpäivitykset (elokuu 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Tietojen hallintakehys (DMF) -yksiköt etuuksien hallintaa varten
  
 Etujen hallintayksiköt julkaisevat. DMF-yksikköjen avulla voi tuoda ja viedä tietoja, mikä helpottaa etuuksien hallinnan määrittämistä. Tietojen siirtämiseen on käytettävissä etuuksien hallintamalli. Malli vie tiedot ja tuo ne peräkkäin tietojen riippuvaisuuksia noudattaen. Lisätietoja:
 
-- [DMF-yksikkötuki](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) Dynamics 365 2020 Release Wave 1 -suunnitelmassa
-- [Tietojen hallinnan yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+- [DMF-yksikkötuki](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) Dynamics 365 2020 Release Wave 1 -suunnitelmassa
+- [Tietojen hallinnan yleiskatsaus](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire luo työnkulun poissaolojen osto- ja myyntipyynnöille (446557)
 
 Lisätietoja:
 
-- [Salli työntekijöiden ostaa ja myydä lomaa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
-- [Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Vaihda lomaa rahaksi tai lomapalkka vapaaksi](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Salli työntekijöiden ostaa ja myydä lomaa](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
+- [Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Vaihda lomaa rahaksi tai lomapalkka vapaaksi](./hr-employee-self-service-buy-sell-leave.md)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>Työntekijän postiosoitteet V2-yksikkö käyttää yrityksiä, joilla on rajoitetut käyttöoikeudet (459126)
@@ -62,7 +62,7 @@ Kun käytät paikkamerkkiä tarkistustyönkulun suorituskyvyn tarkistuksen avaam
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Uudet yksiköt, jotka ostavat ja myyvät lomaa (473180)
 
-Tietojen hallinnan puiteyksiköt ovat nyt ostamassa ja myymässä lomaa. Lisätietoja on kohdassa [Tiedonhallinnan yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+Tietojen hallinnan puiteyksiköt ovat nyt ostamassa ja myymässä lomaa. Lisätietoja on kohdassa [Tiedonhallinnan yleiskatsaus](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>Kun tarkastelet tietuetietoja ja käytät kehittyneitä suodattimia, käyttäjä voi käyttää muiden työntekijöiden tietueita (472490)
 
@@ -96,9 +96,9 @@ Tämän muutoksen yhteydessä toimihierarkiakehäviittauksen tunnistaminen on ra
 
 Jotkut organisaatiot tarjoavat edun, jonka avulla työntekijät voivat vaihtaa lomaa rahaksi tai rahaa vapaaksi. Tätä prosessia hallitaan usein manuaalisesti. Tämä toiminto automatisoi henkilöstöosaston käytäntöjen ja pyyntöjen hallinnan. Se sujuvoittaa lomien hallintaprosessia ja auttaa poistamaan virheitä. Lisätietoja:
 
-- [Salli työntekijöiden ostaa ja myydä lomaa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
-- [Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Vaihda lomaa rahaksi tai lomapalkka vapaaksi](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Salli työntekijöiden ostaa ja myydä lomaa](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
+- [Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Vaihda lomaa rahaksi tai lomapalkka vapaaksi](./hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Yhden yrityksen tai yhden suunnitelman mukainen loman jaksotus
 
@@ -126,15 +126,15 @@ Voit luoda säännön, joka keskeyttää työntekijöiden lomaa ja palkatonta lo
 
 Voit tehdä kentistä pakollisia käyttämällä henkilöstöhallinnon mukauttamisominaisuuksia. Tämä toiminto edellyttää **tallennettuja näkymiä**. Lisätietoja tallennetuista näkymistä on kohdassa:
 
-- [Tallennetut näkymät – yleinen käytettävyys](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
-- [Tallennettuja näkymiä täysimääräisesti hyödyntävien lomakkeiden luominen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Tallennetut näkymät – yleinen käytettävyys](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) Dynamics 365 2020 Release Wave 2 -suunnitelmassa
+- [Tallennettuja näkymiä täysimääräisesti hyödyntävien lomakkeiden luominen](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Teamsin Human Resources -sovellus
 
 Työntekijät voivat tarkastella ja pyytää lomaa työstä Microsoft Teamsissä. Ne voivat olla vuorovaikutuksessa botin kanssa luodakseen lomapyyntöjä. Lisätietoja:
 
-- [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 1 -suunnitelmassa
-- [Teamsin Human Resources -sovellus](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Työntekijän loma- ja poissaolokokemus Microsoft Teamsissa](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) Dynamics 365 2020 Release Wave 1 -suunnitelmassa
+- [Teamsin Human Resources -sovellus](./hr-admin-teams-leave-app.md)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF-yksikkö käytettävissä suoriteperusteisia keskeytyksiä varten
 
@@ -172,7 +172,7 @@ Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkist
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
 

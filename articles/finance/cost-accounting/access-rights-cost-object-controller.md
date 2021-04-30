@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa8faf0f0f45f901151b3b20a1792b3d8f264fa6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810195"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897621"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Käyttöoikeudet kustannusobjektin vastuuhenkilölle
 
@@ -62,9 +62,8 @@ Seuraavassa on esimerkki dimensiohierarkiasta.
 
 Voit lisätä kuhunkin solmuun käyttäjätunnuksia hierarkian suunnittelutoiminnon **Käyttäjät**-pikavälilehdessä.
 
-|                                   | Käyttäjät            | Dimension jäsenalueet   |                         |
+|             Solmukohdat                 | Käyttäjät            | Lähtödimension jäsen     |   Kohdedimension jäsen   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Solmukohdat**                         | **Käyttäjätunnus**      | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Organisaatio                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Hallinto                 | Huhtikuu            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | Alicia           | CC002                     | CC003                   |
@@ -95,14 +94,14 @@ Käyttöoikeusluettelohierarkian asetuksilla hallitaan seuraavilla alueilla näk
     - Tietojen Power BI -visualisoinnit, jotka on upotettu Dynamics 365 Financen asiakasohjelmassa
 
 > [!IMPORTANT]
-> - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Tässä ohjeaiheessa käsitellään edellytykset, joita ilman **kustannusseurannan** työtilaa ei voi käyttää.
 
 Lisäresurssit
 
 - [Kustannusseurannan työtila](cost-control-workspace.md)
 - [Dimensiohierarkia](dimension-hierarchy.md)
-- [Kustannuslaskennan sisältöpaketin määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Kustannuslaskennan sisältöpaketin määrittäminen](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

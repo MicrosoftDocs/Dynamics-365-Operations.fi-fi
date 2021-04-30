@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819277"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908925"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -79,7 +79,7 @@ Reititys on hyväksyttävä, ennen kuin sitä voidaan käyttää suunnittelu- ja
 
 Kukin reititys voidaan hyväksyä erikseen tai jättää hyväksymättä. Huomaa kuitenkin, että jos reititys on hyväksymistä odottava, myös kaikki siihen liittyvät reititysversiot ovat silloin hyväksymättömiä. Tuotannonohjauksen parametreissa määritetään, voivatko reititykset olla hyväksymättömiä ja voiko hyväksyttyjä reitityksiä muuttaa.  
 
-Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) avulla.
+Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) avulla.
 
 ## <a name="operations"></a>Operations
 Työvaihe on tuotantoprosessin vaihe. Jokaisella työvaiheella on tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
@@ -185,7 +185,7 @@ Voit määrittää reititysversion aktivoinnin yhteydessä oletusreititysversiok
 
 ### <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
 
-Jos ylläpidät lokia, johon tallennetaan kunkin reititysversion hyväksyjä ja aktivoija, voit vaatia näistä tehtävistä sähköiset allekirjoitukset. Käyttäjien, jotka hyväksyvät ja aktivoivat reititysversioita, on vahvistettava henkilöllisyys [sähköisen allekirjoituksen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) avulla.
+Jos ylläpidät lokia, johon tallennetaan kunkin reititysversion hyväksyjä ja aktivoija, voit vaatia näistä tehtävistä sähköiset allekirjoitukset. Käyttäjien, jotka hyväksyvät ja aktivoivat reititysversioita, on vahvistettava henkilöllisyys [sähköisen allekirjoituksen](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) avulla.
 
 ### <a name="product-change-that-uses-case-management"></a>Tuotemuutos, joka käyttää tapaustenhallintaa
 
@@ -253,7 +253,7 @@ Tästä syystä kun limityksen aktivointi on valittuna, muut asetukset (töiden 
 
 - [Resurssin ominaisuudet](resource-capabilities.md)
 
-- [Sähköisten allekirjoitusten yleiskatsaus](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Sähköisten allekirjoitusten yleiskatsaus](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

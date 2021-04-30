@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840241"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897717"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 
@@ -50,6 +50,14 @@ Toiminnot tukevat sanomien vaihtoa ulkoisten Internet-palvelujen kanssa, joita j
 
 Sähköisten laskutusominaisuuksien käytettävyys määräytyy maan tai alueen mukaan. Vaikka jotkin toiminnot ovat yleisesti saatavilla, jotkin ovat esiversio-ominaisuuksia.
 
+#### <a name="generally-available-features"></a>Yleisesti käytettävissä olevat toiminnot
+
+Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat yleisesti saatavilla.
+
+| Maa tai alue | Toiminnon nimi                         | Yritysasiakirja |
+|----------------|--------------------------------------|-------------------|
+| Egypti          | Egyptin sähköinen lasku (EG) | Myyntilaskut ja projektilaskut |
+
 #### <a name="preview-features"></a>Esiversio-ominaisuudet
 
 Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat esiversiona.
@@ -61,7 +69,6 @@ Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat es
 | Brasilia         | Brasilian NF-e (BR)                  | Veroasiakirjamalli 55, oikaisukirjeet, peruutukset ja hylkäämiset |
 | Brasilia         | Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirjat |
 | Tanska        | Tanskan sähköinen lasku (DK)       | Myyntilaskut ja projektilaskut |
-| Egypti          | Egyptin sähköinen lasku (EG) | Myyntilaskut ja projektilaskut |
 | Viro        | Viron sähköinen lasku (EE)     | Myyntilaskut ja projektilaskut |
 | Suomi        | Suomen sähköinen lasku (FI)      | Myyntilaskut ja projektilaskut |
 | Ranska         | Ranskan sähköinen lasku (FR)       | Myyntilaskut ja projektilaskut |
@@ -202,6 +209,91 @@ Seuraavassa taulukossa on lueteltu käytettävissä olevat toiminnnot sekä tied
 | Kutsu Meksikon PAC-palvelua                      | Integroi Meksikon PAC-palvelun kanssa CFDI-lähetystä varten.                      | Esiversiossa           |
 | Käsittele vastaus                              | Analysoi verkkopalvelukutsusta saatu vastaus.                     | Yleisesti saatavilla  |
 | Käytä MS Power Automatea                         | Integroi Microsoft Power Automatella luodun työnkulun kanssa.                       | Esiversiossa           |
+
+### <a name="applicability-rules"></a>Soveltuvuussäännöt
+
+Sovellettavuussäännöt ovat konfiguroitavissa olevia lauseita, jotka on määritetty sähköisen laskutuksen ominaisuustasolla. Säännöt on määritetty antamaan konteksti sähköisen laskutuksen ominaisuuksien suoritukselle sähköisen laskutuksen ominaisuusjoukon avulla.
+
+Kun Financen tai Supply Chain Managementin liiketoiminta-asiakirja lähetetään sähköiseen laskutukseen, liiketoiminta-asiakirjassa ei ole täsmällistä viitettä, jonka avulla sähköinen laskutustoiminto voi kutsua tiettyä sähköistä laskutustoimintoa lähetyksen käsittelemiseksi.
+
+Kun liiketoiminta-asiakirja on konfiguroitu oikein, se sisältää tarvittavat elementit, joiden avulla sähköinen laskutus voi ratkaista sähköisen laskutuksen, minkä ominaisuuden on oltava valittuna, ja muodostaa sitten sähköisen laskun.
+
+Sovellettavuussääntöjen avulla sähköinen laskutustoiminto voi etsiä lähetyksen suorittamisessa käytettävät tarkat sähköiset laskutusominaisuudet. Tämä tapahtuu täsmäyttämällä lähetetyn liiketoiminta-asiakirjan sisältö ja sovellettavuussääntöjen lausekkeet.
+
+Esimerkiksi kaksi sähköistä laskutustoimintoa, joissa on liittyvät käytettävyyssäännöt, otetaan käyttöön sähköisen laskutuksen ominaisuussarjassa.
+
+| Sähköisen laskutuksen ominaisuus | Soveltuvuussäännöt        |
+|------------------------------|--------------------------- |
+| A                            | <p>Maa = BR</p><p>ja</p><p>Yritys = BRMF</p>  |
+| D                            | <p>Maa = MX</p><p>ja</p><p>Yritys = MXMF</p>  |
+
+Jos Financen tai Supply Chain Managementin liiketoiminta-asiakirja lähetetään sähköisen laskutuksen toimintosarjaan, liiketoiminta-asiakirja sisältää seuraavat määritteet:
+
+- Maa = BR
+- Yritys = BRMF
+
+Sähköisen laskutuksen toimintosarja valitsee sähköisen laskutusominaisuuden **A**, joka käsittelee lähetyksen ja luo sähköisen laskun.
+
+Jos yritysasiakirja sisältää samalla tavalla seuraavat tiedot:
+
+- Maa = MX
+- Yritys = MXMF
+
+Sähköisen laskutuksen toiminto **B** on valittuna, kun haluat luoda sähköisen laskun.
+
+Käytettävyyssääntöjen konfigurointi ei voi olla tulkinnanvarainen. Tämä tarkoittaa, että vähintään kahdella sähköisellä laskutusominaisuudella ei voi olla samoja lauseita, muussa tapauksessa se ei tuota valintaa. Jos sähköisen laskutusominaisuuden kaksoiskappaleet ovat olemassa, voit välttää tulkinnanvaraisuuden käyttämällä lisälausekkeita, joiden avulla sähköinen laskutustoiminto erottuu toisistaan kahden sähköisen laskutusominaisuuden välillä.
+
+Harkitse esimerkiksi sähköistä laskutustoimintoa **C**. Tämä ominaisuus on kopio sähköisestä laskutuksesta **A**.
+
+| Sähköisen laskutuksen ominaisuus | Soveltuvuussäännöt        |
+|------------------------------|--------------------------- |
+| A                            | <p>Maa = BR</p><p>ja</p><p>Yritys = BRMF</p>  |
+| K                            | <p>Maa = BR</p><p>ja</p><p>Yritys = BRMF</p>  |
+
+Tässä esimerkissä toiminto **C** on yritysasiakirjan lähetyksen edessä, ja se sisältää seuraavat tiedot:
+
+- Maa = BR
+- Yritys = BRMF
+
+Sähköisen laskutuksen avulla ei voi erottaa toisistaan sähköistä laskutustoimintoa, jota lähetyksen käsittelemiseen käytetään, koska lähetykset sisältävät samat lausekkeet.
+
+Jotta näiden kahden ominaisuuden välille voidaan luoda käytettävyyssäännön avulla uusi lauseke, on lisättävä uusi lauseke, jotta sähköisen laskutuksen ominaisuus voi valita oikean sähköisen laskutuksen.
+
+| Sähköisen laskutuksen ominaisuus | Soveltuvuussäännöt        |
+|------------------------------|--------------------------- |
+| A                            | <p>Maa = BR</p><p>ja</p><p>Yritys = BRMF</p>  |
+| K                            | <p>Maa = BR</p><p>ja</p><p>Yritys = BRMF</p><p>ja</p><p>Malli=55</p>  |
+
+Jotta voit luoda monimutkaisempia lauseita, käytettävissä ovat seuraavat resurssit:
+
+Logiikan operaattorit:
+- Ja
+- Tai
+
+Operaattorityypit:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Suurempi tai yhtä suuri
+- Pienempi tai yhtä suuri
+- Contains
+- Alkaa
+
+Tietotyypit:
+- Merkkijono
+- Numero
+- Boolen arvo
+- Päivämäärä
+- UUID
+
+Kyky ryhmitellä ja poistaa lausekkeiden ryhmityksiä.
+Esimerkki näyttää tältä.
+
+| Sähköisen laskutuksen ominaisuus | Soveltuvuussäännöt        |
+|------------------------------|--------------------------- |
+| K                            | <p>Maa = BR</p><p>ja</p><p>(Yritys = BRMF</p><p>tai</p><p>Malli=55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Konfiguraation tarjoajat
 

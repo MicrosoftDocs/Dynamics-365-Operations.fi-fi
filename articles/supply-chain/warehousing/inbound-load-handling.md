@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835627"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910012"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Ostotilausten saapuvien kuormien varastokäsittely
 
 Tässä aiheessa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
 
-Jokaisessa saapuvassa kuormassa järjestelmässä on jo oltava liittyvä myyntitilaus, ja se voi sisältää myös liittyvän kuormamäärityksen ja/tai kuljetussuunnitelman. Lisätietoja saapuvien kuormien luomisesta ja hallinnasta on kohdassa [Liiketoimintaprosessi: saapuvien kuormien kuljetusten suunnitteleminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Jokaisessa saapuvassa kuormassa järjestelmässä on jo oltava liittyvä myyntitilaus, ja se voi sisältää myös liittyvän kuormamäärityksen ja/tai kuljetussuunnitelman. Lisätietoja saapuvien kuormien luomisesta ja hallinnasta on kohdassa [Liiketoimintaprosessi: saapuvien kuormien kuljetusten suunnitteleminen](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Yleiskatsaus: miten saapuvat kuormat luodaan, kirjataan ja vastaanotetaan
 
@@ -38,11 +38,11 @@ Seuraavassa kuvassa näkyy tyypillinen kulku, jolla käsitellään saapuvia kuor
 
 1. **Saapuvan kuorman tietue luodaan, jotta saapuminen ja sen sisältö voidaan suunnitella.**
 
-    Saapuva kuormatietue edustaa yhden tai usean ostotilauksen toimittajan toimitusta. Kuorman odotetaan saapuvan varastoon yhtenä fyysisenä kuljetusyksikkönä (kuten rekkakuorma). Saapuvan kuorman tietuetta käytetään suunnittelutarkoituksiin, ja sen avulla logistiikkakoordinaattori voi seurata kuorman edistymistä toimittajalta. Sitä käytetään myös tilausrivimäärien rekisteröimiseen ja edistymisen hallintaan varaston työvaiheiden, kuten saapumisen ja hyllytyksen, kautta. Kuormat voidaan luoda joko automaattisesti tai manuaalisesti, ja ne voivat perustua joko ostotilaukseen tai toimittajan lähetysilmoitus (ASN) -lähetykseen. Lisätietoja on kohdassa [Saapuvan kuorman luominen tai muokkaaminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Saapuva kuormatietue edustaa yhden tai usean ostotilauksen toimittajan toimitusta. Kuorman odotetaan saapuvan varastoon yhtenä fyysisenä kuljetusyksikkönä (kuten rekkakuorma). Saapuvan kuorman tietuetta käytetään suunnittelutarkoituksiin, ja sen avulla logistiikkakoordinaattori voi seurata kuorman edistymistä toimittajalta. Sitä käytetään myös tilausrivimäärien rekisteröimiseen ja edistymisen hallintaan varaston työvaiheiden, kuten saapumisen ja hyllytyksen, kautta. Kuormat voidaan luoda joko automaattisesti tai manuaalisesti, ja ne voivat perustua joko ostotilaukseen tai toimittajan lähetysilmoitus (ASN) -lähetykseen. Lisätietoja on kohdassa [Saapuvan kuorman luominen tai muokkaaminen](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Toimittaja vahvistaa kuorman lähetyksen.**
 
-    Kun toimittaja lähettää kuorman, vastaanottavan varaston logistiikkakoordinaattori vahvistaa kuorman lähetyksen. Jos vastaanottava yritys käyttää **Kuljetuksen hallinta** -moduulia, saapuvien lähetysten vahvistus käynnistää muita saapuvaan kuormaan liittyviä kuormanhallintaprosesseja. Lisätietoja on kohdassa [Kuorman lähetyksen vahvistaminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Kun toimittaja lähettää kuorman, vastaanottavan varaston logistiikkakoordinaattori vahvistaa kuorman lähetyksen. Jos vastaanottava yritys käyttää **Kuljetuksen hallinta** -moduulia, saapuvien lähetysten vahvistus käynnistää muita saapuvaan kuormaan liittyviä kuormanhallintaprosesseja. Lisätietoja on kohdassa [Kuorman lähetyksen vahvistaminen](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Kuorma saapuu varastoon ja työntekijät rekisteröivät määriä.**
 

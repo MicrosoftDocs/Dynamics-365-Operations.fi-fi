@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822128"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898207"
 ---
 # <a name="budget-planning-overview"></a>Budjettisuunnittelun yleiskatsaus
 
@@ -75,7 +75,7 @@ Seuraavassa kuvassa yrityksen pääkonttori arvioi alkuperäisen budjetin peruss
 
 Voit määrittää organisaatiohierarkian kunkin budjettisuunnitteluprosessin budjettisuunnittelun hierarkiaksi **Organisaatiohierarkia**-sivulla. Budjettisuunnittelun hierarkian ei tarvitse vastata muihin tarkoituksiin käytettävää vakio-organisaatiohierarkiaa. Koska tätä hierarkiaa käytetään tietojen yhdistämisessä ja jakelussa, sen rakenne kannattaa muokata erilaiseksi. Esimerkkimallissa myyntiorganisaatiot ovat budjetin ja talousosastot sisältävän pääkonttorin tason alla. Rakenne on luultavasti erilainen kuin myyntiosaston toimintojen hallinnassa käytettävä rakenne. Kuhunkin budjettisuunnitteluprosessiin voidaan määrittää vain yksi organisaatiohierarkia.
 
-Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Käyttäjän suojaus
 
@@ -163,7 +163,7 @@ Budjettisummien sarakkeiden lisäksi voit määrittää projektin, ehdotetun pro
 
 Esimerkkimallissa voidaan luoda sarakkeet Edellisen vuoden myynti-, Sopimukset- ja Ennuste-skenaarioille. (Seuraava kuva sisältää malliin liittyvän osan). Tämän jälkeen voit eritellä yhden skenaarion tai useita skenaarioita erillisiksi sarakkeiksi kullekin tilikauden vuosineljännekselle niin, että myyntiosaston esimies voi syöttää kunkin kauden ennustesummat tarkasti.
 
-[![Sarakkeet](./media/columns.png)](./media/columns.png)
+[![Kuva mallin osista sarakkeiden lisäämistä varten](./media/columns.png)](./media/columns.png)
 
 Voit myös määrittää, ovatko asetteluelementit (sarakkeet) muokattavissa ja asettelulle luotujen laskentataulukkomallien käytettävissä. Esimerkkimallin arviointivaiheessa käytetyssä asettelussa Ennuste-sarakkeet ovat muokattavissa, mutta Edellisen vuoden myynti- ja Sopimukset-sarakkeet vain luku -tilassa.
 

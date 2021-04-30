@@ -2,7 +2,7 @@
 title: Evästeen yhteensopivuus
 description: Tässä ohjeaiheessa käsitellään evästeiden yhteensopivuuden ja Microsoft Dynamics 365 Commercen oletuskäytäntöjen huomioitavia seikkoja.
 author: BrianShook
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2cc2089bc3052c0c59cb0414f8301123a9a30df2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796024"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908181"
 ---
 # <a name="cookie-compliance"></a>Evästeen yhteensopivuus
 
@@ -50,6 +50,57 @@ Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce
 | x-ms-cpim-slice                             | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Käytetään kertakirjautumisistunnon ylläpitämiseen.                        |
 | x-ms-cpim-trans                             | Käytetään tapahtumien seurantaan (kuluttajakauppasivustossa todennettavien avoimien välilehtien määrä), mikä sisältää myös nykyisen tapahtuman. |
+| \_msdyn365___muid_                            | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään käyttäjätunnuksena kokeilutarkoituksiin. |
+| \_msdyn365___exp_                             | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään suorituskyvyn kuormituksen tasaamisen mittarina.         |
+
+
+
+Jos sivuston käyttäjä valitsee sivuston mahdolliset medialinkit, seuraavan taulukon evästeitä seurataan myös selaimessa.
+
+
+| Toimialue                      | Eväste               | kuvaus                                                  | Lähde                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | LinkedIn-mainosten tunnusten synkronointi                                      | LinkedIn-syöte ja merkityksellisten tietojen tunniste                                |
+| .linkedin.com               | li_sugr                  | Selaimen tunnus                                           | LinkedInin merkityksellisten tietojen tunniste, jos IP-osoitetta ei ole määritetyssä maassa |
+| .linkedin.com               | BizographicsOptOut       | Määrittää ulkopuolelle jätetyn tilan kolmannen osapuolen seurantaa varten.              | LinkedInin vierasohjausobjektit ja toimialan pois jätetyt sivut           |
+| .linkedin.com               | \_guid                    | Google Adsin selaintunniste.                            | LinkedIn-syöte                                                |
+| .linkedin.com               | li_oatml                 | Jäsenen epäsuora tunniste konversioseurannalle, uudelleen kohdentamiselle ja analyysille. | LinkedInin mainonnan ja merkityksellisten tietojen tunnisteet                                |
+| Useita ensimmäisen osapuolen toimialueita | li_fat_id                | Jäsenen epäsuora tunniste konversioseurannalle, uudelleen kohdentamiselle ja analyysille. | LinkedInin mainonnan ja merkityksellisten tietojen tunnisteet                                |
+| .adsymptotic.com            | U                        | Selaimen tunnus                                           | LinkedInin merkityksellisten tietojen tunniste, jos IP-osoitetta ei ole määritetyssä maassa |
+| .linkedin.com                | bcookie                  | Selaimen tunnuksen eväste                                            | LinkedIn-pyynnöt                                         |
+| .linkedin.com                | bscookie                 | Suojattu selaineväste                                        | LinkedIn-pyynnöt                                         |
+| .linkedin.com               | kieli                     | Määrittää oletussijainnit ja -kielen.                                 | LinkedIn-pyynnöt                                         |
+| .linkedin.com                | lidc                     | Käytetään reititykseen.                                             | LinkedIn-pyynnöt                                         |
+| .linkedin.com               | aam_uuid                 | Adoben yleisönhallintaeväste                                                     | Tunnuksen synkronoinnin asetus                                              |
+| .linkedin.com               | \_ga                      | Google Analyticsin eväste                                            | Google Analytics                                             |
+| .linkedin.com               | \_gat                     | Google Analyticsin eväste                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Google Analyticsin eväste                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | Eväste sisältää kirjautuneena olevan käyttäjän käyttäjätunnuksen.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Tämän avulla tunnistat Internet-selaimen, jota käytetään yhteyden muodostamiseen Facebookiin sisäänkirjatuneesta käyttäjästä riippumatta. | Facebook                                                             |
+| .facebook.com               | wd                       | Tallentaa selaimen ikkunan dimensiot ja Facebook käyttää sitä sivun hahmontamisen optimointiin. | Facebook                                                             |
+| .facebook.com               | xs                       | Kaksinumeroinen luku, joka edustaa istunnon numeroa. Toinen osa on istunnon salainen koodi. |  Facebook                                                            |
+| .facebook.com               | fr                       | Sisältää yksilöivän selaimen ja käyttäjätunnuksen, joita käytetään kohdistetussa mainonnassa. |  Facebook                                                            |
+| .facebook.com               | sb                       | Käytetään Facebookin kaveriehdotusten parantamiseen.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Eväste sisältää kirjautuneena olevan käyttäjän käyttäjätunnuksen.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Eväste sisältää kirjautuneena olevan käyttäjän käyttäjätunnuksen.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Eväste sisältää sivut, kun käyttäjä valitsee Pinterest-painikkeen.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Eväste sisältää sivut, kun käyttäjä valitsee Pinterest-painikkeen.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | Sisältää käyttäjätunnuksen ja aikaleiman, jolloin eväste luotiin. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Eväste sisältää sivut, kun käyttäjä valitsee Pinterest-painikkeen.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Eväste sisältää sivut, kun käyttäjä valitsee Pinterest-painikkeen.      | Pinterest                                                             |
+| .pinterest.com              | Paikallinen tallennussijainti            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Palvelualan työntekijät          |                                                              |  Pinterest                                                            |
+
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Sivuston käyttäjän evästeiden hyväksyntä sähköisen kaupankäynnin sivustossa 
 

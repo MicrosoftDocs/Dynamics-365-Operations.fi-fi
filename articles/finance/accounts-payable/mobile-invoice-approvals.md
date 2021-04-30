@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828031"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897693"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
@@ -32,7 +32,7 @@ Mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiil
 
 | Edellytys                                                                                            | kuvaus                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Ympäristö, johon on asennettu in versio 1611 ja Platform update 3 (marraskuu 2016)                   |
 | Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Platform update 3:een (marraskuun 2016 päivitys). |
 | Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Platform update 3:een (marraskuun 2016 päivitys).           |
@@ -213,7 +213,7 @@ Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeader
 
 11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.
     
-    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Kuva, jossa näkyy lisättyjä kenttiä](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Valitse **Valmis** poistuaksesi muokkaustilasta.
 

@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9bb3c178a698bdcd46e7c596247360ba9233b398
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816481"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908877"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Kysynnän ennusteiden historiallisten tietojen tuominen
 
@@ -41,7 +41,7 @@ Lisätietoja tietojen tuonnista sekä tietojen tyhjentämisestä tuonnin jälkee
 
 ## <a name="example"></a>Esimerkki
 
-Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). Tämä tiedosto sisältää nimikkeen D0001 historialliset kysyntätiedot. Se sisältää vain seuraavat pakolliset kentät: sivusto, määrä ja kysynnän päivämäärä.
+Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](/dynamics/s-e/). Tämä tiedosto sisältää nimikkeen D0001 historialliset kysyntätiedot. Se sisältää vain seuraavat pakolliset kentät: sivusto, määrä ja kysynnän päivämäärä.
 
 1. Valitse yritys, johon historialliset kysyntätiedot tuodaan.
 2. Avaa **Tietojen hallinta** -työtila.

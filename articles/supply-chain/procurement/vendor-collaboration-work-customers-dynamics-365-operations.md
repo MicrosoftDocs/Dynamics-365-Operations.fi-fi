@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825203"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908032"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
@@ -31,7 +31,7 @@ Tässä aiheessa kuvataan, miten voit käyttää toimittajayhteistyötä työske
 - **Ostotilauksen vahvistus** – ostotilausten seuranta ja niihin vastaaminen.
 - **Toimittajan tarjoukset** – tarjouspyyntöjen tarkastelu ja niihin vastaaminen tekemällä tarjouksia.
 - **Toimittajatiedot** – toimittajan päätietojen tarkastelu ja päivittäminen.
-- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Toimittajat voivat seurata myös tavaralähetysvaraston tietoja.
 

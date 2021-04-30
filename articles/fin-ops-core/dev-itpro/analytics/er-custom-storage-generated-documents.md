@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dab70b213efc7e7a3537aa2b47b9edf38d492d34
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753717"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894121"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
 
@@ -27,7 +27,7 @@ Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajent
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Käyttöön on otettava jatkuvaa koontia tukeva topologia. (Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Sinulla on oltava tämän topologian käyttöoikeus jollakin seuraavista rooleista:
+Käyttöön on otettava jatkuvaa koontia tukeva topologia. (Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Sinulla on oltava tämän topologian käyttöoikeus jollakin seuraavista rooleista:
 
 - Sähköisen raportoinnin kehittäjä
 - Sähköisen raportoinnin toiminnallinen konsultti
@@ -53,7 +53,7 @@ Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden.
 
 ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määritettävä [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md). Jokaisessa ER-kohteessa, joka on määritetty tallentamaan muodostetut asiakirjat tiedostoina, on määritettävä tiedoston hallintakehyksen asiakirjatyyppi. Eri asiakirjatyyppejä voidaan käyttää reitittämään eri ER-muotojen muodostamia asiakirjoja.
 
-1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
+1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](../../fin-ops/organization-administration/configure-document-management.md). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
 2. Voit erottaa tämän asiakirjatyypin muista asiakirjatyypeistä sisällyttämällä tietyn avainsanan sen nimeen. Esimerkiksi seuraavassa kuvassa nimi on **(PAIKALLINEN) kansio**.
 3. Määritä **Luokka**-kentässä **Liitä tiedosto**.
 4. Määritä **Ryhmä**-kentässä **Tiedosto**.
@@ -117,14 +117,14 @@ public DocuRef insertFile(
 
 ## <a name="configure-an-er-destination"></a>ER-kohteen määrittäminen
 
-1. Määritä luodun tai tuodun ER-muodon yhden edellä mainitun elementin (tiedosto, kansio, yhdistämistoiminto tai liite) arkistokohde. Lisätietoja on kohdassa [ER Kohteiden määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Määritä luodun tai tuodun ER-muodon yhden edellä mainitun elementin (tiedosto, kansio, yhdistämistoiminto tai liite) arkistokohde. Lisätietoja on kohdassa [ER Kohteiden määrittäminen](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Käytä asiakirjatyyppiä, jonka lisäsit määritetylle kohteelle aiemmin. (Tämä ohjeaiheen esimerkissä asiakirjatyyppi on **FileX**.)
 
 ![Kohdeasetukset-valintaikkuna](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Lähdekoodin muokkaaminen
 
-1. Lisää uusi luokka Microsoft Visual Studio -projektiin ja kirjoita koodi, joka tilaa aiemmin mainitun **AttachingFile()**-tapahtuman. (Lisätietoja käytettävästä laajennettavuusmallista on kohdassa [Vastaaminen käyttämällä kohdetta EventHandlerResult](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Kirjoita esimerkiksi uudessa luokassa koodia, joka suorittaa seuraavat toiminnot:
+1. Lisää uusi luokka Microsoft Visual Studio -projektiin ja kirjoita koodi, joka tilaa aiemmin mainitun **AttachingFile()**-tapahtuman. (Lisätietoja käytettävästä laajennettavuusmallista on kohdassa [Vastaaminen käyttämällä kohdetta EventHandlerResult](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Kirjoita esimerkiksi uudessa luokassa koodia, joka suorittaa seuraavat toiminnot:
 
     1. Tallenna muodostetut tiedostot sen palvelimen paikallisen tiedostojärjestelmän kansioon, joka suorittaa Application Object Server (AOS) -palvelun.
     2. Tallenna muodostetut tiedostot vain, kun uutta asiakirjatyyppiä (kuten **FileX**-tyyppi, jonka nimessä on avainsana (PAIKALLINEN)) käytetään liitettäessä tiedostoa tietueeseen ER-suoritustyölokissa.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7b66951b9c742af4aa11f681af8f9583a2d97d8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841860"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908290"
 ---
 # <a name="safety-margins"></a>Varmuusmarginaalit
 
@@ -87,7 +87,7 @@ Huomaa, että kun toimitusmarginaalia käytetään, siihen liittyvät tarjonnan 
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>Varmuusmarginaalien ottaminen käyttöön ominaisuuksien hallinnassa
 
-Ennen kuin käytät tätä toimintoa suunnittelun optimoinnin kanssa, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+Ennen kuin käytät tätä toimintoa suunnittelun optimoinnin kanssa, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
 
 - **Moduuli:** _Pääsuunnittelu_
 - **Ominaisuuden nimi:** _Suunnittelun optimoinnin marginaalit_

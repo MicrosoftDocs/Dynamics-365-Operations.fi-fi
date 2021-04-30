@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 497061500660e41c8f82c73e5dd6c085810c9209
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744048"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910446"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
@@ -84,7 +84,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 
 | **Alue**                | **Ominaisuus**             | **Pilvi** | **Paikallinen** |
 |-------------------------|-------------------|-----------|-----------------|
-| Resurssien hallinta                     |                                                                                           | Kyllä       | Nro              |
+| Resurssien hallinta                     |                                                                                           | Kyllä       | Kyllä             |
 | Yhteensopivuus ja sertifiointi        |                                                                                           | Kyllä       | Kyllä             |
 |                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Nro              |
 | Kustannuslaskenta                      |                                                                                           | Kyllä       | Kyllä             |
@@ -147,7 +147,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 
 ## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Lisätietoja paikallisissa ympäristöissä käytettävissä olevista ominaisuuksista on kohdassa [Paikallisten ympäristöjen Commerce-ominaisuudet](../../../retail/retail-onprem.md).
+Lisätietoja paikallisissa ympäristöissä käytettävissä olevista ominaisuuksista on kohdassa [Paikallisten ympäristöjen Commerce-ominaisuudet](../../../commerce/retail-onprem.md).
 
 ## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 

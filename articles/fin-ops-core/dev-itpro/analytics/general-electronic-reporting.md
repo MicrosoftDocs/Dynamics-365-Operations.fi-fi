@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750055"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893174"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -183,11 +183,11 @@ Huomaa, että tätä säilötyyppiä voi käyttää seuraavista ympäristöistä
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti](./electronic-reporting-import-ger-configurations.md)
 
-**RCS**-säilössä on tietyn esiintymän [Määrityspalvelu (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) -määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen esiintymään, joten voit käyttää niitä sähköisessä raportoinnissa.
+**RCS**-säilössä on tietyn esiintymän [Määrityspalvelu (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) -määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen esiintymään, joten voit käyttää niitä sähköisessä raportoinnissa.
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti RCS:stä](./rcs-download-configurations.md).
 
-**Yleinen tietovarasto** -arkiston avulla voit käyttää [konfigurointipalvelun](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) yleisessä tietovarastossa olevien kokoonpanojen luetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda yleisestä tietovarastosta ER-määritysten uusimmat versiot nykyiseen esiintymään.
+**Yleinen tietovarasto** -arkiston avulla voit käyttää [konfigurointipalvelun](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) yleisessä tietovarastossa olevien kokoonpanojen luetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda yleisestä tietovarastosta ER-määritysten uusimmat versiot nykyiseen esiintymään.
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti konfiguraatiopalvelun yleisestä säilöstä](./er-download-configurations-global-repo.md).
 
