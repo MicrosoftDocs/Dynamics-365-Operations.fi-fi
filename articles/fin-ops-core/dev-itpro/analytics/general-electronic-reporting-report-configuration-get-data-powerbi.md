@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
 description: Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta esiintymästä Power BI -palveluihin.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750079"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944434"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
 
@@ -68,10 +68,10 @@ Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>ER-tietomallin käyttö tietolähteenä
 ER-tietomallin täytyy olla liiketoimintatietolähteenä, jota käytetään Power BI -raporteissa. Tämä tietomalli ladataan ER-konfiguraatiot-tietovarastosta. Lisätietoja on kohdassa [Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md) tai **ER Tuo kokoonpano Lifecycle Services -palvelusta** -tehtäväoppaasta. Valitse **Intrastat** tietomalliksi joka ladataan valitusta ER-konfiguraatiot-tietovarastosta. (Tässä esimerkissä käytetään mallin 1 versiota.) Tämän jälkeen voit käyttää **Intrastatin** ER-mallin kokoonpanoa **Konfiguroinnit**-sivulla.
 
-[![Konfiguroinnit-sivu](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Intrastat ER -mallin määritys Konfiguroinnit-sivulla](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Suunnittele ER-muotokonfiguraatio
-Sinun on luotava uusi ER-muotokonfiguraatio, joka käyttää **Intrastat**-tietomallia liiketoimintatietolähteenä. Tämän muotokonfiguraation on luotava tulosteet sähköisinä asiakirjoina OpenXML (Excel-tiedosto) -muodossa. Lisätietoja on **Sähköisen raportoinnin OPENXML-muotoisten raporttimääritysten luonti** -tehtäväoppaassa. Nimeä uusi konfiguraatio **Tuonti-/vientitoiminnot** (Tuonti-/vientitoiminnot) kuvassa esitetyllä tavalla. Käytä Excel-tiedostoa [ER-tiedot - tuonnin ja viennin tiedot](https://go.microsoft.com/fwlink/?linkid=845208) mallina suunniteltaessa ER-muotoa. (Lisätietoja muotomallin tuomisesta on tehtäväoppassa.)
+Sinun on luotava uusi ER-muotokonfiguraatio, joka käyttää **Intrastat**-tietomallia liiketoimintatietolähteenä. Tämän muotokonfiguraation on luotava tulosteet sähköisinä asiakirjoina OpenXML (Excel-tiedosto) -muodossa. Lisätietoja on **Sähköisen raportoinnin OPENXML-muotoisten raporttimääritysten luonti** -tehtäväoppaassa. Nimeä uusi konfiguraatio **Tuonti-/vientitoiminnot** (Tuonti-/vientitoiminnot) kuvassa esitetyllä tavalla. Käytä Excel-tiedostoa [ER-tiedot - tuonnin ja viennin tiedot](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) mallina suunniteltaessa ER-muotoa. (Lisätietoja muotomallin tuomisesta on tehtäväoppassa.)
 
 [![Tuonti- tai vientitehtävien määritys](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
 1. **Konfiguroinnit**-sivulla (**Organisaation hallinto** &gt; **Sähköinen raportointi** &gt; **Konfiguroinnit**) konfiguraatioiden puurakenteessa, valitse **Tuonti-/vientitoiminnot**-konfiguraatio, jonka loit aiemmin.
 2. Vaihda version 1.1 tila **Luonnos**-tilasta **Valmis** -tilaan, jotta voit ottaa tämän muodon käyttöön.
 
-    [![Konfiguroinnit-sivu](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Toimintojen tuonti-/vientikonfiguraatio Konfiguroinnit-sivulla](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Valitse valmis versio **Tuonti-/vientitoiminnot**-konfiguraatiosta ja valitse sitten **Suorita**. Huomaa, että konfiguroitua kohdetta sovelletaan tulosteeseen, joka luodaan Excel-muodossa.
 4. Määritä **Eräkäsittely**-asetukseksi **Kyllä** raportin suorittamiseksi valvomattomassa tilassa.
@@ -187,7 +187,7 @@ Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -i
 2. Valitse **Tuodut ja viedyt tiedot** Power BI -raportti, jonka olet luonut, jotta raportti näytetään valitun sivun toimintonimikkeenä.
 3. Valitse toimintonimike, joka avaa sivun, jossa näkyy Power BI:ssa suunniteltu raportti.
 
-    [![Tuonnin ja viennin tietojen raportti](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Tuonnin ja viennin tietojen raportti, joka on suunniteltu Power BI:ssä](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

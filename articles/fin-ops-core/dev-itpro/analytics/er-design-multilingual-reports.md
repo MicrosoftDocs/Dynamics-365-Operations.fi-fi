@@ -2,7 +2,7 @@
 title: Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) selitteiden käyttöä monikielisten raporttien suunnittelussa ja luonnissa.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753549"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951982"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 
@@ -158,6 +158,31 @@ ER tukee erilaisia tapoja määrittää luodun raportin kieli. **Muoto**-välile
 - **Määritetty suorituksen aikana** – Luo raportin suorituksen aikana määritetyllä kielellä. Jos valitset tämän arvon, määritä **Kieli**-kentässä ER-lauseke, joka palauttaa kielen kielikoodin, kuten vastaavan asiakkaan kielen.
 
     ![Suorituksen aikana määritetyn kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Kulttuurikohtainen muotoilu
+
+ER tukee erilaisia tapoja määrittää luodun raportin kulttuuri. Siksi päivämäärä-, aika- ja numeerisissa arvoissa voidaan käyttää oikeaa kulttuurikohtaista muotoilua. Kun suunnittelet ER-muodon, **Muoto**-välilehdessä **Kulttuuriasetukset**-kentässä voit valita yhden seuraavista arvoista jokaiselle muotokomponentille, jonka tyyppinä on **Common\\File**, **Excel\\File**, **PDF\\File** tai **PDF\\Merger**:
+
+- **Käyttäjän asetukset** – Muotoile arvot käyttäjän ensisijaisen kulttuurin mukaisesti. Kulttuuri määritetään **Päivämäärä-, kellonaika- ja numeromuoto** -kentässä **Asetukset**-välilehdessä **Käyttäjän asetukset** -sivulla.
+
+    ![Käyttäjän ensisijaisen kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Määritetty erikseen** – Muotoile arvot suunnittelun aikana määritetyn kulttuurin mukaan.
+
+    ![Suunnittelun aikana määritetyn kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Määritetty suorituksen aikana** – Muotoile arvot suorituksen aikana määritetyn kulttuurin mukaan. Jos valitset tämän arvon, määritä **Määritys**-välilehden **Päivämäärä-, kellonaika- ja numeromuoto** -kenttään ER-lauseke, joka palauttaa kyseisen kulttuurin koodin, kuten vastaavan asiakkaan kulttuurin.
+
+    ![Suorituksen aikana määritetyn kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> ER-komponentti, jota varten määrität tietyn kulttuurin, voi sisältää ali-ER-komponentteja, jotka on konfiguroitu täyttämään tekstiarvo. Oletusarvon mukaan pääkomponentin kulttuuria käytetään näiden komponenttien arvojen muotoiluun. Seuraavien sisäänrakennettujen ER-toimintojen avulla voit konfiguroida näiden komponenttien siteet ja käyttää vaihtoehtoista kulttuuria arvon muotoiluun:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> Versiossa 10.0.20 ja sitä myöhemmässä versiossa **Common\\File**- ja **Excel\\File**-tyyppien muotokomponenttien aluetta käytetään arvojen muotoiluun luodun asiakirjan [PDF-muuntamisen](electronic-reporting-destinations.md#OutputConversionToPDF) aikana.
 
 ## <a name="translation"></a>Käännös
 

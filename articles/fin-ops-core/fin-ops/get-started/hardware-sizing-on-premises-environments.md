@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55dc237629b7b595b03d48adabc6b31492171e25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748742"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923477"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Laitteiston kokovaatimukset paikallisissa ympäristöissä
 
@@ -134,7 +134,7 @@ Yleisesti saatavilla olevassa julkaisuversiossa voidaan ottaa käyttöön vain y
 
 ## <a name="environment-orchestrator"></a>Ympäristön Orchestrator-palvelu
 
-Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä. Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta. Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut. Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen. Lisätietoja on ohjeaiheessa [Service Fabric -klusterin erillisen käyttöönoton suunnittelu ja valmistelu](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä. Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta. Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut. Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen. Lisätietoja on ohjeaiheessa [Service Fabric -klusterin erillisen käyttöönoton suunnittelu ja valmistelu](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisointi ja ylitilaus
 

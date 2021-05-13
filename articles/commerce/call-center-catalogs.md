@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799642"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936879"
 ---
 # <a name="call-center-catalogs"></a>Puhelinpalvelukeskuksen luettelot
 
@@ -39,7 +39,7 @@ Suoraan asiakkaille -markkinointiyritykset ovat hyvin keskittyneitä seuraamaan 
 
 Määritä luettelo valitsemalla **Retail ja Commerce** \> **Luettelot ja valikoimat** \> **Kaikki luettelot**.
 
-Kun uusi luettelo luodaan, luettelo on linkitettävä vähintään yhteen kanavaan. Tämä tehdään **Commerce-kanavat**-pikavälilehdessä **Luettelon asetukset** -lomakkeessa. Valitse **Lisää** ja valitse vähintään yksi kanava. Vain sellaisia nimikkeitä voi käyttää luetteloa luodessa, jotka on linkitetty valitun kanavan [valikoimiin](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments).
+Kun uusi luettelo luodaan, luettelo on linkitettävä vähintään yhteen kanavaan. Tämä tehdään **Commerce-kanavat**-pikavälilehdessä **Luettelon asetukset** -lomakkeessa. Valitse **Lisää** ja valitse vähintään yksi kanava. Vain sellaisia nimikkeitä voi käyttää luetteloa luodessa, jotka on linkitetty valitun kanavan [valikoimiin](/dynamics365/unified-operations/retail/assortments).
 
 Lisää luetteloon tuotteita. Ensin on valittava siirtymishierarkia. Siirtymishierarkia tukee luettelon luokitusrakennetta. Valitse yksi kanaviin linkitetty siirtymishierarkia, joka on valittu **Commerce-kanavat**-pikavälilehdessä **Luettelo**-sivulla. Jos siirtymiskanavaa ei ole linkitetty kanavaan aiemmin, valitse **Retail ja Commerce** \> **Kanavan asetukset** \> **Kanavaluokat ja tuotemääritteet** ja linkitä oletussiirtymishierarkia kuhunkin kanavaan.
 

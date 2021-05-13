@@ -2,7 +2,7 @@
 title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc5afc9d685954bf736686bbed3e7575f76e7e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744690"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944530"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -98,7 +98,7 @@ Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
 Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuksia. Ruudun ominaisuusikkunassa voi esimerkiksi olla mahdollista viedä kyseisen ruutu ylös koontinäyttöön, kun taas oletuskoontinäytön elementtien ominaisuusikkunoissa voi luoda uuden mukautetun työtilan.
 
-### <a name="the-personalization-toolbar"></a>Mukauttamisen työkalurivi
+### <a name="personalization-toolbar"></a>Mukauttamisen työkalurivi
 
 Jos haluat tehdä useita muutoksia sivulle tai muutoksia, jotka eivät ole käytettävissä muiden mekanismien kautta (jos esimerkiksi haluat muuttaa elementtien järjestystä), voit käyttää **Mukauttaminen**-työkaluriviä. Voit avata **Mukauttaminen**-työkalurivin seuraavilla tavoilla:
 
@@ -173,7 +173,90 @@ Yksi ainutlaatuinen mukautusominaisuus, joka on käytettävissä koontinäytöss
 
 ## <a name="sharing-personalizations"></a>Mukauttamisen jakaminen
 
-Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Tämän jälkeen voit pyytää muita käyttäjiä tuomaan mukautustiedoston. Vaihtoehtoisesti voit antaa mukautuksesi käyttäjälle, jolla on järjestelmänvalvojan oikeudet. Käyttäjä voi sitten ottaa mukautustiedoston käyttöön useille käyttäjille samalla kertaa käyttämällä **Mukautus**-hallintasivua.
+Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa muutamalla tavalla. Seuraavassa luettelossa menetelmät järjestetään suositeltavimmista vähiten suositeltavimpiin.
+
+1. Julkaise näkymiä käyttäjille.
+2. Kopioi näkymiä tai mukautuksia käyttäjille.
+3. Vie ja tuo näkymiä tai mukautuksia.
+
+### <a name="publish-views-to-users"></a>Julkaise näkymiä käyttäjille
+
+Jos [Tallennetut näkymät](saved-views.md) -toiminto on käytössä ja jos sivu tukee näkymiä, paras tapa jakaa mukautuksia muiden käyttäjien kanssa on julkaista näkymä käyttäjille, joilla on vähintään yksi käyttöoikeusrooli. Lisätietoja on kohdassa [Julkaisunäkymät](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Kopioi näkymiä tai mukautuksia käyttäjille
+
+Jos [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä tai jos sivu ei tue näkymiä, suositeltu tapa jakaa mukautuksia on kopioida ne käyttäjien välillä. Tämä menetelmä on vain käyttöoikeuden omaavien käyttäjien (esimerkiksi järjestelmänvalvojien) käytettävissä. Järjestelmänvalvojat voivat kuitenkin etsiä tietyn käyttäjän mukautuksen järjestelmästä (mukaan lukien käyttäjän oman näkymän, jos tallennetut näkymät ovat käytössä) ja kopioida konfiguraation muille käyttäjille.
+
+Jos tallennetut näkymät ovat käytössä, kopioi mukautukset noudattamalla näitä ohjeita.
+
+1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
+2. Kopioi henkilökohtaiset näkymät noudattamalla seuraavia vaiheita:
+
+    1. Valitse **Henkilökohtaiset näkymät**.
+    2. Valitse luettelosta haluamasi näkymät.
+    3. Valitse **Kopioi käyttäjille**.
+    4. Valitse käyttäjät, joille näkymät jaetaan.
+
+    Seuraavien vaiheiden avulla voit kopioida mukautuksia sivuille, jotka eivät tue näkymiä:
+
+    1. Valitse **Käyttäjäasetukset**.
+    2. Valitse käyttäjä, jolla on jaettava mukautus.
+    3. Valitse **Hallitse kaikkia mukautuksia**.
+    4. Valitse luettelosta haluamasi mukautukset.
+    5. Valitse **Kopioi käyttäjille**.
+    6. Valitse käyttäjät, joille mukautukset jaetaan.
+
+Jos tallennetut näkymät eivät ole käytössä, kopioi mukautus noudattamalla näitä ohjeita.
+
+1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
+2. Valitse **Käytä**.
+3. Valitse käyttäjät, joille mukautus jaetaan.
+4. Valitse **Valitse aiemmin luotu mukautus**.
+5. Etsi ja valitse haluamasi (yksittäinen) mukautus.
+6. Valitse **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Vie ja tuo näkymiä tai mukautuksia
+
+Mukautuksia voidaan jakaa myös viennin ja tuonnin kautta. Yksittäiset käyttäjät tai järjestelmänvalvoja, joka toimii heidän puolestaan, voivat viedä mukautuksen tai näkymiä tämän menetelmän avulla ja antaa viedyn tiedoston sitten toisille käyttäjille tuontia varten. Vaihtoehtoisesti käyttäjät voivat antaa viedyt mukautukset käyttäjälle, jolla on järjestelmänvalvojan käyttöoikeudet. Tällöin käyttäjä voi käyttää mukautustiedostoa samalla kertaa useille käyttäjille **Mukauttaminen**-hallintasivulla.
+
+#### <a name="export"></a>Vie
+
+Yleensä voit viedä oman näkymäsi tai mukautuksesi avaamalla haluamasi sivun, avaamalla **Mukauttaminen**-työkalurivin ja valitsemalla sitten **Vie**. Lisätietoja työkalurivistä on tämän aiheen aiemmassa kohdassa [Mukauttamisen työkalurivi](#personalization-toolbar). Jos [tallennetut näkymät](saved-views.md) ovat käytettävissä, voit tarkastella luetteloa kaikista järjestelmän mukautuksista valitsemalla **Asetukset \> Käyttäjän asetukset \> Mukauttaminen**. Sieltä voit valita vietävien näkymien tai mukautusten tiedot ja valita sitten **Vie**.
+
+Järjestelmänvalvojat voivat lisäksi viedä muiden käyttäjien mukautuksia noudattamalla seuraavia vaiheita.
+
+1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
+2. Valitse haluttu käyttäjä **Käyttäjät**-välilehdessä.
+3. Etsi ja valitse haluamasi näkymä tai mukautus.
+4. Valitse **Vie**.
+
+#### <a name="import"></a>Tuo
+
+Voit tuoda näkymän tai mukautuksen avaamalla **Mukauttaminen**-työkalurivin ja valitsemalla **Tuo**. Lisäksi järjestelmänvalvojat voivat tuoda tiedoston ja antaa sen välittömästi vähintään yhdelle käyttäjälle.
+
+Jos tallennetut näkymät ovat käytössä, noudata näitä ohjeita.
+
+1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
+2. Valitse toimintoruudussa **Tuo näkymiä \> Käyttäjän näkymät**.
+3. Valitse tuontitila:
+
+    - **Valitse tietyt käyttäjät** – Anna näkymä tai mukauttaminen valituille käyttäjille.
+    - **Tuo sellaisenaan** - Tuo näkymä tai mukautus samalle käyttäjälle, joka on vienyt sen.
+
+4. Valitse **Selaa** ja etsi ja valitse tuotava mukautus.
+5. Valitse **Seuraava**.
+6. Jos valitsit vaiheessa 3 **Valitse tietyt käyttäjät**, valitse käyttäjät, joille mukautus tuodaan.
+7. Valitse **Tuo**.
+8. Ratkaise ristiriitoja tarpeen mukaan.
+
+Jos tallennetut näkymät eivät ole käytössä, noudata näitä ohjeita.
+
+1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
+2. Valitse **Käytä**.
+3. Valitse käyttäjät, joille mukautus jaetaan.
+4. Valitse **Tuo mukautuksia tiedostosta**.
+5. Valitse **Selaa** ja etsi ja valitse tuotava mukautus.
+6. Valitse **OK**.
 
 ## <a name="administration-of-personalizations"></a>Mukautusten hallinta
 
@@ -184,8 +267,11 @@ Jos asiakas on ottanut käyttöön **Tallennetut näkymät** -toiminnon, lue Tal
 Niillä asiakkaila, jotka eivät ole vielä ottaneet käyttöön [Tallennetut näkymät](saved-views.md) -ominaisuutta, tällä sivulla on neljä välilehteä:
 
 - **Käytä** – Voit tuoda tai valita yhden tai usean käyttäjän mukautuksen. Jos mukautus otetaan käyttöön yhdelle tai usealle käyttäjälle, ensiksi valitaan rooli ja käyttäjät, joilla tämä rooli on. Valitse sitten joko aiemmin luotu mukautus, jota haluat käyttää valituille käyttäjille, tai tuo mukautustiedosto. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
+
 - **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan kaikki mukautukset. Valitse ensin sivu tai työtila. Näet nyt luettelon käyttäjistä, jotka ovat mukauttaneet sitä. Valitse sitten käyttäjät, joiden sivun tai mukautukset on tyhjennettävä. Valitse lopuksi **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
+
 - **Käyttäjät** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten sallia käyttäjän käyttävän mukautuksia tietyillä sivuilla tai koko järjestelmässä tai estää sen. Voit myös tuoda, viedä tai tyhjentää käyttäjän mukautuksen. Lisäksi voit palauttaa käyttäjän kuvatekstitoiminnot. Jos käyttäjä tällöin on aiemmin hylännyt uusia ominaisuuksia esitteleviä ponnahdusikkunoita, ne tulevat näkyviin uudelleen, kun kyseinen käyttäjä kohtaa kyseiset ominaisuudet.
+
 - **Järjestelmä** – Voit poistaa kaikkien järjestelmän käyttäjien mukautukset käytöstä väliaikaisesti. Tällöin kaikkien käyttäjien mukautukset poistetaan ja kaikki sivut palautetaan oletustiloihinsa. Jos otat mukautukset myöhemmin jälleen käyttöön, kaikkia mukautuksia sovelletaan uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voi palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
 
 ## <a name="personalizing-inventory-dimensions"></a>Varastodimensioiden mukauttaminen

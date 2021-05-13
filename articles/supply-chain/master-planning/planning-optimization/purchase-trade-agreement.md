@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
+ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820415"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5961702"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Pääsuunnittelu ja ostokauppasopimukset
 
@@ -67,7 +67,7 @@ Kun järjestelmä on valmisteltu edellisessä osassa kuvatulla tavalla, varmista
 1. Toista tämä toimenpide jokaiselle oleelliselle tuotteelle.
 
 > [!NOTE]
-> Ostosopimusrivin valuutan on vastattava valitun toimittajan valuuttaa. Pääsuunnittelu sisällyttää tietoja vain sellaisista ostosopimusriveistä, joiden valuutta vastaa toimittajan valuuttaa.
+> Suunnittelun optimointi tukee monivaluutan kauppasopimuksia. Kun järjestelmä hakee kauppasopimusta **Alhaisin yksikköhinta** -asetuksella, järjestelmä harkitsee eri valuuttoja käyttävät kauppasopimusrivit, jos kauppasopimusrivin valuutan ja yrityksen kirjanpitovaluutan välillä on määritetty vaihtokurssi. Muussa tapauksessa kauppasopimusriviä ei oteta huomioon, ja näkyviin tulee virhe pääsuunnittelun aikana. Pääsuunnittelu sisältää siis kaikkien niiden asiaankuuluvien ostosopimusrivien tiedot, joissa hinnat voidaan muuntaa kirjanpitovaluutaksi.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Esimerkkejä siitä, miten suunnittelun optimointi löytää toimittaja- ja läpimenoajat
 

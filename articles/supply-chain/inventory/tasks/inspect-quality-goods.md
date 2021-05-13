@@ -1,8 +1,8 @@
 ---
 title: Tarkista tavaroiden laatu
-description: Tässä ohjeaiheessa kerrotaan, kuinka laatutilaus käsitellään.
+description: Tässä ohjeaiheessa kerrotaan, kuinka laatutilauksia käsitellään.
 author: perlynne
-ms.date: 08/01/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,40 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47e7156e5c57d5f983564cc966b4108f1180ff8d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ec67e7864db12178c0f3cfe8b93d510a46e8a0d4
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825912"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956131"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Tarkista tavaroiden laatu
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka laatutilaus käsitellään. Voit suorittaa tämän ohjauksen esittely-tietojen USMF-yrityksessä. Vahvista ostotilaus 000016 ennen tämän esimerkin menettelyn aloittamista ja kirjaa tuotteen vastaanotto. Tällöin laatutilaus luodaan automaattisesti. Laatuassistentti suorittaa yleensä laatutarkastukset.
+Tässä ohjeaiheessa kerrotaan, kuinka laatutilauksia käsitellään. Laatuassistentti suorittaa yleensä laatutarkastukset.
 
+Jos vakioesittely on asennettu, voit suorittaa sen avulla tässä ohjeaiheessa olevat toimenpiteet. Valitse *USMF*-yritys ennen kuin aloitat, jotta voit käyttää esittelytietoja. Sen jälkeen on vahvistettava ostotilaus *000016* ja kirjattava tuotteen vastaanotto. Laatutilaus luodaan automaattisesti.
 
-## <a name="select-a-quality-order"></a>Valitse laatutilaus.
-1. Valitse siirtymisruudussa **Moduulit > Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Laadunhallinta > Laatutilaukset**.
-2. Valitse ennen tämän menettelyn aloittamista luotu laatutilaus.  
+## <a name="step-1-select-a-quality-order"></a>Vaihe 1: Valitse laatutilaus
 
-## <a name="record-test-results"></a>Testitulosten tallentaminen
+Voit luoda laatutilauksen seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Laatutilaukset**.
+1. Valitse ennen tämän menettelyn aloittamista luotu laatutilaus.
+
+## <a name="step-2-record-test-results"></a>Vaihe 2: Testitulosten tallentaminen
+
+Voit tallentaa testitulokset noudattamalla seuraavia vaiheita.
+
 1. Valitse **Tulokset**.
-2. Valitse **Muokkaa**.
-3. Syötä numero **Tulosmäärä**-kenttään.
-4. Valitse **Tulos**-kentässä avattavasta valikosta haluamasi tietue.  
-- Tässä esimerkissä tulos perustuu ennalta määritettyyn tulokseen. Yleensä tallennetaan yksityiskohtaisempia testituloksia, kuten esimerkiksi koko tai muu dimensio.  
-5. Valitse **Tallenna**.
-6. Sulje sivu.
+1. Valitse **Muokkaa**.
+1. Syötä numero **Tulosmäärä**-kenttään.
+1. Etsi haluamasi tietue **Tulos**-kentästä. Tässä esimerkissä tulos perustuu ennalta määritettyyn tulokseen. Yleensä tallennetaan yksityiskohtaisempia testituloksia, kuten esimerkiksi koko tai muu dimensio.
+1. Valitse **Tallenna**.
+1. Sulje sivu.
 
-## <a name="validate-the-quality-order"></a>Vahvista laatutilaus
+## <a name="step-3-validate-the-quality-order"></a>Vaihe 3: Vahvista laatutilaus
+
+Voit vahvistaa laatutilauksen seuraavasti.
+
 1. Valitse **Tarkista**.
-2. Valitse **Vahvistaja**-kentässä avattavasta valikosta käyttäjä, joka suorittaa tarkastuksen.  
-3. Klikkaa **Valitse**.
-4. Valitse **OK**.
-5. Sulje sivu.
-
-
+1. Valitse **Vahvistaja**-kentästä tarkastuksen tehnyt käyttäjä.
+1. Valitse **Valitse**.
+1. Valitse **OK**.
+1. Sulje sivu.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

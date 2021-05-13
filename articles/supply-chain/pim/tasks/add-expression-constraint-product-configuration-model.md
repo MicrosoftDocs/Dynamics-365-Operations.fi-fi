@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a2fd383944a96a073f12399e1a29d0fcf520e3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9cd5475e48cbcd8dcee6b228297f58e364ac503d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812640"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920878"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Lisää rajoituslauseke tuotemääritysmalliin
 
@@ -26,27 +26,27 @@ ms.locfileid: "5812640"
 
 Tässä menettelyssä käsitellään, miten uusi rajoituslauseke lisätään tuotemääritysmalliin. Se näyttää, miten voit määrätä, että kulmasuojausta on käytettävä kaiuttimessa, jos käyttäjä on valinnut metallin etusäleikköön. Menettely käyttää USMF-demoyrityksen Korkealaatuinen kaiutin -komponenttia.
 
-
 ## <a name="create-an-expression-constraint"></a>Luo lausekerajoitus
-1. Valitse Tuotevarianttimallin määritys.
-2. Valitse Tuotekonfiguraation mallit.
+
+1. Valitse **Tuotetietojen hallinta \> Tuotteet \> Tuotekonfiguraation mallit**.
 3. Etsi haluamasi tietue luettelosta ja valitse se.
     * Tässä esimerkissä käytetään Korkealaatuinen kaiutin -mallia.  
-4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-5. Laajenna Rajoitukset-osa.
-6. ValitseLisää.
-7. Valitse Luo.
-8. Kirjoita arvo Nimi-kenttään.
+4. Valitse luettelossa valitulla rivillä oleva linkki.
+5. Laajenna **Rajoitukset**-osa.
+6. Valitse **Lisää**.
+7. Valitse **Luo**.
+8. Kirjoita arvo **Nimi**-kenttään.
 
 ## <a name="enter-expression"></a>Anna lauseke
-1. Valitse Muokkaa lauseketta.
+
+1. Valitse **Muokkaa lauseketta**.
     * Jos vapautat käyttöliittymän tehtävätallenteen tässä vaiheessa, voit muodostaa rajoituslausekkeen IntelliSensen ja symboliluettelon avulla.  
-2. Lisää ConstraintBody-kenttään Implies[FrontGrill=="Metal", CornerProtection].
+2. Lisää **ConstraintBody**-kenttään Implies[FrontGrill=="Metal", CornerProtection].
     * Tämän lausekkeen logiikka ilmaisee, että jos etusäleikkö on metallia, sitten kulmasuojausvaihtoehto on valittava.  
-3. Valitse Vahvista.
+3. Valitse **Tarkista**.
     * Vahvistustoiminto suoritetaan rajoitelausekkeessa, jossa se tarkistaa syntaksivirheet.  
-4. Valitse Sulje.
-5. Valitse OK.
+4. Valitse **Sulje**.
+5. Valitse **OK**.
 
 
 

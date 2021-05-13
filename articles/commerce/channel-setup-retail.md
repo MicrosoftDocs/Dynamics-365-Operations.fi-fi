@@ -2,7 +2,7 @@
 title: Vähittäismyyntikanavan määrittäminen
 description: Tässä ohjeaiheessa käsitellään uuden vähittäismyyntikanavan luomisesta Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 713cbe68c151b6893519843611089941cabf0e70
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800588"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937531"
 ---
 # <a name="set-up-a-retail-channel"></a>Vähittäismyyntikanavan määrittäminen
 
@@ -68,7 +68,7 @@ Seuraavassa kuvassa on esimerkki vähittäismyyntikanavan asetusten määrityksi
 
 ## <a name="additional-channel-set-up"></a>Lisäkanavan määrittäminen
 
-Muita kanavaan määritettäviä kohteita on **Asetukset**-osan **toimintoruudussa**.
+Muita kanavaan määritettäviä kohteita on **Asetukset**-osan toimintoruudussa.
 
 Verkkokanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen, kassatilityksen, toimitustapojen, tulo- ja kulutilin, osien, täytäntöönpanoryhmään määrityksen ja säilöjen määrittäminen.
 
@@ -102,7 +102,7 @@ Seuraavassa kuvassa näkyy esimerkki kassatilityksestä.
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
-Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** **toimintoruudun** **Asetukset**-välilehdessä.  
+Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** toimintoruudun **Asetukset**-välilehdessä.  
 
 Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
 
@@ -151,7 +151,7 @@ Voit määrittää täytäntöönpanoryhmän määrityksen noudattamalla seuraav
 1. Valitse toimintoruudussa **Uusi**.
 1. Valitse täytäntöönpanoryhmä avattavassa **Täytäntöönpanoryhmä**-luettelossa.
 1. Anna kuvaus avattavassa **Kuvaus**-luettelossa.
-1. Valitse toimintoruudussa **Tallenna**.
+1. Valitse toimintoruudussa **Tallenna**
 
 Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määrittämisestä.
 
@@ -166,11 +166,42 @@ Voit määrittää säilöjä noudattamalla seuraavia ohjeita.
 1. Anna säilön nimi.
 1. Valitse toimintoruudussa **Tallenna**.
 
+### <a name="ensure-unique-transaction-ids"></a>Yksilöivien tapahtumatunnusten varmistaminen
+
+Commerce-version 10.0.18 jälkeen myyntipistettä varten luodut tapahtumatunnukset ovat peräkkäisiä, ja ne sisältävät seuraavat osat:
+
+- Kiinteä osa, joka on myymälän tunnuksen ja päätteen tunnuksen ketjutus. 
+- Peräkkäinen osa, joka on numerosarja. 
+
+Muoto on tarkalleen ottaen *{store}-{terminal}-{numbersequence}*. 
+
+Koska tapahtumatunnuksia voi luoda offline-tilassa ja online-tiloissa, luotuja tapahtumatunnuksia on olemassa kaksoiskappaleita. Tapahtumatunnuksen kaksoiskappaleiden poistaminen edellyttää manuaalisten tietojen korjausta. 
+
+Commerce-versiossa 10.0.19 tapahtumatunnuksen muoto on päivitetty poistamaan järjestysosa ja siinä käytetään sen sijaan 13-numeroista lukua, joka on luotu laskemalla aika millisekunteina 1970 jälkeen. Muutoksen jälkeen uusi tapahtumatunnuksen muoto on *{store}-{terminal}-{millisecondsSince1970}*. Tämä päivitys tekee tapahtumatunnuksesta ei-peräkkäisen ja varmistaa, että tapahtumatunnukset ovat aina yksilöiviä. 
+
+> [!NOTE]
+> Tapahtumatunnukset on tarkoitettu vain sisäistä järjestelmää varten, joten niiden ei tarvitse olla peräkkäisiä. Monissa maissa kuittitunnusten pitää kuitenkin olla peräkkäisiä.
+
+Uuden tapahtumatunnuksen muoto-ominaisuuden voi ottaa käyttöön **Ominaisuuksien hallinta** -työtilassa. 
+
+Voit ottaa uudet tapahtumatunnukset käyttöön seuraavasti:
+
+1. Valitse Commerce-pääkonttorissa **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
+1. Suodata "retail ja commerce" -moduuli.
+1. Etsi **Ota käyttöön uusi tapahtumatunnus tapahtumatunnusten kaksoiskappaleiden estämiseksi** -toiminnon nimeä.
+1. Valitse ominaisuus ja valitse sitten oikeanpuoleisesta ruudusta **Ota käyttöön nyt**.  
+1. Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.
+1. Suorita **1070 Kanavan määritys**- ja **1170 Myyntipisteen tehtävien tallennustoiminto** -työt synkronoidaksesi käyttöönotetut ominaisuudet myymälöihin.
+1. Kun muutokset on lähetetty myymälöihin, myyntipistepäätteet on suljettava ja avattava uudelleen, jotta uutta tapahtumatunnuksen muotoa voi käyttää. 
+
+> [!NOTE]
+> Kun uuden tapahtumatunnuksen muoto-ominaisuus on käytössä, et voi poistaa toimintoa käytöstä. Jos se on poistettava käytöstä, ota yhteyttä Commerce-tukeen.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
 
 [Verkkokanavan määrittäminen](channel-setup-online.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6bf158361f95b6551b29f195616cf21f908b802
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800636"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936941"
 ---
 # <a name="set-up-an-online-channel"></a>Online-kanavan määrittäminen
 
@@ -67,7 +67,7 @@ Jos sähköinen kaupankäyntisivusto tukee useita kieliä, laajenna **Kielet**-o
 
 ## <a name="set-up-payment-account"></a>Maksutilin määrittäminen
 
-Voit lisätä **Maksutili**-osassa kolmannen osapuolen maksupalvelun. Lisätietoja Adyen-maksuyhdistimen määrittämisestä on kohdassa [Dynamics 365:n Adyen-maksuyhdistin](../retail/dev-itpro/adyen-connector.md).
+Voit lisätä **Maksutili**-osassa kolmannen osapuolen maksupalvelun. Lisätietoja Adyen-maksuyhdistimen määrittämisestä on kohdassa [Dynamics 365:n Adyen-maksuyhdistin](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Lisäkanavan määrittäminen
 
@@ -130,7 +130,7 @@ Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määri
 
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
 
-[Dynamics 365 -maksuyhdistin Adyenia varten](../retail/dev-itpro/adyen-connector.md)
+[Dynamics 365 -maksuyhdistin Adyenia varten](./dev-itpro/adyen-connector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

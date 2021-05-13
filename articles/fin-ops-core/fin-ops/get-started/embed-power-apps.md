@@ -2,7 +2,7 @@
 title: Power Appsin kaavasovellusten upottaminen
 description: Tässä ohjeaiheessa käsitellään Microsoft Power Appsin kaaviosovellusten upottamista asiakasohjelmaan laajentamaan tuotteen toimintoja.
 author: jasongre
-ms.date: 11/03/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,35 +13,36 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 7b20d24f79bd84f516e005b9d4a0ecdf6ef848fc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 18146ce5ab081b3a6376bf412805016b04da6a11
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752887"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944676"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Appsin kaavasovellusten upottaminen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps on palvelu, joka sallii kehittäjien ja muiden kuin teknisten käyttäjien muokata yrityssovelluksia mobiililaitteille, tableteille ja verkkoon ilman, että heidän tarvitsee kirjoittaa koodia. Finance and Operations -sovellukset tukevat integrointia Power Appsiin. Sinun, organisaatiosi tai laajemman ekosysteemin kehittämät kaaviosovellukset voidaan upottaa Finance and Operations -sovelluksiin laajentamaan tuotteen toimintoja. Voit esimerkiksi luoda Power Apps -kaaviosovelluksen, joka täydentää Finance and Operations -sovellusta toisesta järjestelmästä haetuilla tiedoilla.
 
-Lisätietoja Power Appsin upottamisesta on lyhyessä [Power Appsin upottaminen](https://www.youtube.com/watch?v=x3qyA1bH-NY) -videossa.
+Lisätietoja kaaviosovellusten upottamisesta on lyhyessä videossa [Kaaviosovellusten upottaminen](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Upotetun Power Apps -kaaviosovelluksen lisääminen sivulle
 
 ### <a name="overview"></a>Yleiskuvaus
 
-Ennen kuin Power Apps -kaaviosovellus voidaan upottaa asiakasohjelmaan, käyttäjän on ensin etsittävä tai luotava sovellus, jossa on toivotut visuaaliset elementit tai toiminnot. Tässä ohjeaiheessa ei ole yksityiskohtaista kuvausta sovellusten luontiprosessista. Jos Power Apps ei ole tuttu, tutustu [Power Apps -dokumentaatioon](https://docs.microsoft.com/powerapps/).
+Ennen kuin Power Apps -kaaviosovellus voidaan upottaa asiakasohjelmaan, käyttäjän on ensin etsittävä tai luotava sovellus, jossa on toivotut visuaaliset elementit tai toiminnot. Tässä ohjeaiheessa ei ole yksityiskohtaista kuvausta sovellusten luontiprosessista. Jos Power Apps ei ole tuttu, tutustu [Power Apps -dokumentaatioon](/powerapps/).
 
 On kaksi tapaa käyttää tiettyä kaaviosovellusta sivulla, kun olet valmis upottamaan sovelluksen. Voit valita, kumpi tapa sopii paremmin tilanteeseen. Ensimmäinen tapa on tavalliseen toimintoruutuun lisätyn **Power Apps** -painikkeen käyttäminen. Tämän menetelmän avulla lisäämäsi sovellukset näkyvät nimikkeinä **Power Apps** -valikkopainikkeessa. Kun valitset jonkin näistä nimikkeistä, näkyviin tulee upotettavan sovelluksen sisältävä sivuruutu. Vaihtoehtoisesti voit upottaa sovelluksen suoraan sivulla uutena välilehtenä, pikavälilehtenä, lehtenä tai työtilan uutena osana.
 
 Voit valita upotettua kaaviosovellusta määritettäessä yhden kentän, jonka haluat lähettää kontekstina sovellukseen. Tälölin sovellus voi reagoida tarkasteltavien tietojen perusteella.
 
 > [!NOTE]
-> Tätä menetelmää ei tällä hetkellä voi käyttää mallinnettujen sovellusten upottamiseen.  
+> Tätä menetelmää ei tällä hetkellä voi käyttää mallipohjaisten sovellusten upottamiseen.  
 
-### <a name="details"></a>Tietoja
+### <a name="details"></a>Lisätietoja
 
 Seuraavassa menettelyssä esitetään, miten Power Apps -kaaviosovellus upotetaan verkkoasiakkaaseen.
 
@@ -55,7 +56,8 @@ Seuraavassa menettelyssä esitetään, miten Power Apps -kaaviosovellus upotetaa
 
     - **Nimi**-kentässä on sen painikkeen tai välilehden teksti, joka sisältää upotetun sovelluksen. Sovelluksen nimi on usein toistettava tässä kentässä.
     - **Sovellustunnus**-kenttä ilmaisee upotettavan kaaviosovelluksen GUID-tunnuksen. Voit noutaa tämän arvon etsimällä sovelluksen sivustossa [make.powerapps.com](https://make.powerapps.com) ja siirtymällä sitten **Sovelluksen tunnus** -kenttään **Tiedot**-kohdassa.
-    - Voit vaihtoehtoisesti valita **Lisää sovellukselle konteksti** -kohdassa kentän, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla sovellus voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovelluksista lähetettyjä tietoja hyödyntävien sovellusten kehittäminen](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
+    - Voit vaihtoehtoisesti valita **Lisää sovellukselle konteksti** -kohdassa kentän, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoa tavoista, joilla sovellus voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovelluksien lähettämiä tietoja hyödyntävän sovelluksen kehittäminen](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
+        - Versiosta 10.0.19 alkaen nykyinen yritys välitetään myös kaaviosovellukselle kontekstina **cmp**-URL-parametrin kautta. Tällä ei ole vaikutusta kohdekaaviosovellukseen, ennen kuin sovellus käyttää näitä tietoja. 
     - Valitse upotettavan sovelluksen tyyppiä vastaava **sovelluksen koko**. Jos sovellus luodaan mobiililaitteille, valitse **Ohut**. Jos se luodaan tableteille, valitse **Leveä**. Tämä varmistaa, että upotetulle sovellukselle on varattu riittävästi tilaa.
     - **Yritykset**-pikavälilehdessä voi valita, mitkä yritykset voivat käyttää sovellusta. Oletusarvona on sovelluksen antaminen käyttöön kaikille yrityksille. Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä. 
 
@@ -65,7 +67,7 @@ Seuraavassa menettelyssä esitetään, miten Power Apps -kaaviosovellus upotetaa
 
 Kun kaaviosovellus on upotettu sivulle ja kun on vahvistettu, että se toimii oikein kaikkien sivulle välitettyjen tietokontekstien kanssa, upotettu sovellus on mahdollista jakaa järjestelmän muiden käyttäjien kanssa. Voit jakaa upotetun kaaviosovelluksen seuraavasti.
 
-1. [Jaa kaaviosovellus ](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) asianmukaisten käyttäjien kanssa, jotta he voivat käyttää sovellusta Power Appsissa. 
+1. [Jaa kaaviosovellus ](/powerapps/maker/canvas-apps/share-app) asianmukaisten käyttäjien kanssa, jotta he voivat käyttää sovellusta Power Appsissa. 
 
 2. Varmista, että näillä käyttäjillä on tarvittavat mukautukset, jotta upotettu sovellus tulee näkyviin, kun käyttäjät avaavat sivun. Voit käyttää kumpaa tahansa seuraavista menetelmistä:
 
@@ -79,12 +81,14 @@ Lisätietoja tuotteen mukauttamistoiminnoista ja niiden käytöstä on kohdassa 
 
 ## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Finance and Operations -sovelluksista lähetettyjä tietoja käyttävän kaaviosovelluksen luominen
 
-Kun luot kaaviosovelluksen, joka upotetaan Finance and Operations -sovellukseen, tärkeä osa prosessia on käyttää kyseisen Finance and Operations -sovelluksen syöttötietoja. Power Apps -kehityskokemuksessa Finance and Operations -sovelluksesta välitettyjä tietoja voidaan käyttää käyttämällä muuttujaa **Param("EntityId")**.
+Kun luot kaaviosovelluksen, joka upotetaan Finance and Operations -sovellukseen, tärkeä osa prosessia on käyttää kyseisen Finance and Operations -sovelluksen syöttötietoja. Power Apps -kehityskokemuksessa Finance and Operations -sovelluksesta välitettyjä tietoja voidaan käyttää käyttämällä muuttujaa **Param("EntityId")**. Lisäksi versiosta 10.0.19 alkaen nykyinen yritys välitetään myös kaaviosovellukselle **Param("cmp")**-muuttujan kautta. 
 
 Esimerkiksi sovelluksen OnStart-toiminnolle voi määrittää syöttötiedot Finance and Operations -sovelluksista muuttujalle seuraavalla tavalla:
 
-```powerapps
+``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
+
+If(!IsBlank(Param("cmp")), Set(FinOpsInput, Param("cmp")), Set(FinOpsLegalEntity, ""));
 ```
 
 ## <a name="viewing-a-canvas-app"></a>Kaaviosovelluksen tarkasteleminen
@@ -112,6 +116,11 @@ Upotetun sovelluksen voi tarvittaessa poistaa sivulta käyttämällä jompaakump
 - Koska upotettu sovellus on tallennettu mukautuksen tietoina, sivun mukautuksen tyhjentäminen poistaa myös kaikki sivulle upotetut sovellukset. Huomaa, että sivun mukautukset tyhjennetään pysyvästi. Tyhjennystä ei voi peruuttaa. Voit poistaa sivun mukautukset valitsemalla ensin **Asetukset**, sitten **Mukauta tämä sivu** ja lopuksi **Tyhjennä**-painike. Kaikki tämän sivun edelliset mukautukset poistetaan, kun selain päivitetään. Lisätietoja sivujen optimoinnista mukauttamisen avulla on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Liite
+
+### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Kehittäjä] Kaaviosovelluksen mallinnus lomakkeelle
+
+Vaikka tämä ohjeaihe keskittyy kaaviosovelluksen upottamiseen räätälöinnin kautta, kehittäjillä on myös mahdollisuus lisätä kaaviosovellus lomakkeeseen Visual Studio -kehityskokemusta käyttäen. Voit tehdä tämän lisäämällä lomakkeeseen PowerAppsHostControlin. Ohjausobjektin käytettävissä olevat metatietojen ominaisuudet tarjoavat samat ominaisuudet kuin personointikokemuskin.
+
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Kehittäjä] Määrittää, minne sovellus voidaan upottaa
 

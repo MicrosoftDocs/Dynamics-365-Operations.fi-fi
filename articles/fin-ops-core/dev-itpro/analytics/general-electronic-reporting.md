@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin (ER) yleiskatsaus
 description: Tässä aiheessa on sähköisen raportointityökalun yleiskatsaus. Siinä käsitellään keskeisiä käsitteitä, tuettuja skenaarioita ja muotoja, jotka osa ratkaisua.
 author: NickSelin
-ms.date: 12/07/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893174"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944362"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -236,7 +236,7 @@ Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin toimialuekoh
 
 Sähköisen raportointimuodon suunnittelutoiminnolla voidaan muodostaa OPENXML-laskentataulukon muotoinen sähköinen asiakirja. 
 
-Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin OPENXML-muotoisten raporttimääritysten luonti** -tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia). Käytä tehtäväoppaan mallin tuontivaiheessa mallina Excel-tiedostoa [Maksuraportin malli (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202).
+Tutustu skenaarion tietoihin toistamalla **Sähköisen raportoinnin OPENXML-muotoisten raporttimääritysten luonti** -tehtäväopas (osa **7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)** -liiketoimintaprosessia). Käytä tehtäväoppaan mallin tuontivaiheessa mallina Excel-tiedostoa [Maksuraportin malli (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Word-asiakirjan muodossa luotavien sähköisten asiakirjojen määritysten muodostaminen
 
@@ -244,8 +244,8 @@ Sähköisen raportointimuodon suunnittelutoiminnolla voidaan muodostaa Word-asia
 
 Tutustu skenaarion tietoihin toistamalla Sähköisen raportoinnin Micrsoft Word -muotoisten raporttimääritysten suunnittelu -tehtäväopas (liiketoimintaprosessin osa 7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)). Käytä tehtäväoppaan mallin tuontivaiheessa seuraavia Word-tiedostoja sähköisen raportointimuodon malleina:
 
-- [Maksuraportin malli (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Maksuraportin sidottu malli (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
+- [Maksuraportin malli (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [Maksuraportin sidottu malli (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Saapuvien sähköisten asiakirjojen tietojen tuontimääritysten muodostaminen
 
@@ -253,10 +253,10 @@ Sähköisen raportointimuodon suunnittelutoiminnolla voi kuvata sähköisen asia
 
 Tutustu skenaarion tietoihin toistamalla Tarvittavien sähköisen raportoinnin määritysten luonti tietojen tuontiin ulkoisesta tiedostosta -tehtäväopas (liiketoimintaprosessin osa 7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)). Toista opas käyttämällä seuraavia tiedostoja:
 
-- [Sähköisen raportoinnin tietomallien määritys (1099model.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Sähköisen raportointimuodon määritys (1099format.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Malli saapuvasta XML-muotoisesta asiakirjasta (1099entries.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Saapuvan asiakirjan tietojen hallinnan työkirjamalli (1099entries.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
+- [Sähköisen raportoinnin tietomallien määritys (1099model.xml)](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)
+- [Sähköisen raportointimuodon määritys (1099format.xml)](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)
+- [Malli saapuvasta XML-muotoisesta asiakirjasta (1099entries.xml)](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)
+- [Saapuvan asiakirjan tietojen hallinnan työkirjamalli (1099entries.xlsx)](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx)
 
 ### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Suunnitellun muoto-osan tallentaminen muotomäärityksenä
 

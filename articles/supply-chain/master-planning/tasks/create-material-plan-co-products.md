@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d910b89330865b0bcf3f6cd05b761506f339a45f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b51e4b4d00da2babb5128d8c4c22139b0c1853d4
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841668"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920726"
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Oheistuotteiden materiaalisuunnitelman luominen
 
@@ -26,88 +26,88 @@ ms.locfileid: "5841668"
 
 Tuotannon suunnittelija suunnittelee materiaalitarpeet nimikkeille, jotka ovat reseptin oheistuotteita. Tämän menettelyn luomisessa käytetty esittely-yritys on USP2.
 
-
 ## <a name="create-requirement-for-a-co-product"></a>Oheistuotteen tarpeen luominen
-1. Siirry oletuskoontinäyttöön.
-2. Valitse Myyntitilausten käsittely ja kysely.
-3. Valitse Uusi.
-4. Valitse Myyntitilaus.
-5. Kirjoita arvo Asiakastili-kenttään.
+
+1. Valitse **Myynti ja markkinointi \> Työtilat \> Myyntitilausten käsittely ja kysely**.
+1. Valitse **Uusi**.
+1. Valitse **Myyntitilaus**.
+1. Kirjoita arvo **Asiakastili**-kenttään.
     * Esimerkki: US-001  
-6. Valitse OK.
-7. Kirjoita arvo Nimiketunnus-kenttään.
+1. Valitse **OK**.
+1. Kirjoita arvo **Nimiketunnus**-kenttään.
     * Esimerkki: P6003  
-8. Kirjoita numero Määrä-kenttään.
+1. Anna **Määrä**-kentässä numero.
     * Esimerkki: 50 000  
-9. Valitse Tallenna.
+1. Valitse **Tallenna**.
 
 ## <a name="create-a-material-plan-for-co-products"></a>Rinnakkaistuotteiden materiaalisuunnitelman luominen
+
 1. Sulje sivu.
-2. Sulje sivu.
-3. Valitse Pääsuunnittelu.
-4. Avaa haku valitsemalla Suunnitelma-kentässä avattavan valikon painike.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+1. Sulje sivu.
+1. Valitse **Pääsuunnittelu**.
+1. Avaa haku valitsemalla **Suunnitelma**-kentässä avattavan valikon painike.
+1. Valitse luettelossa valitulla rivillä oleva linkki.
     * Esimerkki: MasterPlan  
-6. Valitse Suorita.
-7. Laajenna tai tiivistä Sisällytettävät tietueet -osa.
-8. Valitse Suodatin.
-9. Valitse luettelosta rivi Nimiketunnus-kentälle.
-10. Kirjoita arvo Ehdot-kenttään.
+1. Valitse **Suorita**.
+1. Laajenna tai tiivistä **Sisällytettävät tietueet** -osa.
+1. Valitse **Suodata**.
+1. Valitse luettelosta rivi kohdalle **Kenttä** = *Nimiketunnus*.
+1. Kirjoita arvo **Ehdot**-kenttään.
     * Esimerkki: P6003  
-11. Valitse OK.
-12. Valitse OK.
-13. Valitse Suunnitellut tilaukset.
-14. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa Nimiketunnus-kenttää arvolla P6000.
+1. Valitse **OK**.
+1. Valitse **OK**.
+1. Valitse **Suunnitellut tilaukset**.
+1. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa **Nimiketunnus**-kenttää arvolla P6000.
     * Suodata sellaisen reseptinimikkeen perusteella, jolla on sen nimikkeen oheistuote, jolle myyntitilaus luotiin.  
-15. Merkitse valittu rivi luettelossa.
+1. Merkitse valittu rivi luettelossa.
     * Valitse mikä tahansa suodattimen palauttamista riveistä.  
-16. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-17. Laajenna tai tiivistä Tarvekohdistus-osa.
-18. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+1. Valitse luettelossa valitulla rivillä oleva linkki.
+1. Laajenna **Tarvekohdistus**-osa.
+1. Valitse luettelossa valitulla rivillä oleva linkki.
     * Suunniteltu tilaus on tarvekohdistettu oheistuotteen myyntitilaukseen.  
-19. Sulje sivu.
+1. Sulje sivu.
 
-## <a name="create-requirement-for-a-co-product"></a>Oheistuotteen tarpeen luominen
-1. Siirry oletuskoontinäyttöön.
-2. Valitse Myyntitilausten käsittely ja kysely.
-3. Valitse Uusi.
-4. Valitse Myyntitilaus.
-5. Kirjoita arvo Asiakastili-kenttään.
+## <a name="create-a-second-requirement-for-a-co-product"></a>Oheistuotteen toisen tarpeen luominen
+
+1. Valitse **Myynti ja markkinointi \> Työtilat \> Myyntitilausten käsittely ja kysely**.
+1. Valitse **Uusi**.
+1. Valitse **Myyntitilaus**.
+1. Kirjoita arvo **Asiakastili**-kenttään.
     * Esimerkki: US-001  
-6. Valitse OK.
-7. Kirjoita arvo Nimiketunnus-kenttään.
+1. Valitse **OK**.
+1. Kirjoita arvo **Nimiketunnus**-kenttään.
     * Esimerkki: P6003  
-8. Kirjoita numero Määrä-kenttään.
+1. Anna **Määrä**-kentässä numero.
     * Esimerkki: 50 000  
-9. Valitse Tallenna.
+1. Valitse **Tallenna**.
 
-## <a name="create-a-material-plan-for-co-products"></a>Rinnakkaistuotteiden materiaalisuunnitelman luominen
-1. Avaa haku valitsemalla Suunnitelma-kentässä avattavan valikon painike.
-2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+## <a name="create-a-second-material-plan-for-co-products"></a>Rinnakkaistuotteiden toisen materiaalisuunnitelman luominen
+
+1. Avaa haku valitsemalla **Suunnitelma**-kentässä avattavan valikon painike.
+2. Valitse luettelossa valitulla rivillä oleva linkki.
     * Esimerkki: MasterPlan  
-3. Valitse Suorita.
-4. Laajenna tai tiivistä Sisällytettävät tietueet -osa.
-5. Valitse Suodatin.
-6. Valitse luettelosta rivi Nimiketunnus-kentälle.
-7. Kirjoita arvo Ehdot-kenttään.
+3. Valitse **Suorita**.
+4. Laajenna tai tiivistä **Sisällytettävät tietueet** -osa.
+5. Valitse **Suodata**.
+6. Valitse luettelosta rivi kohdalle **Kenttä** = *Nimiketunnus*.
+7. Kirjoita arvo *Ehdot*-kenttään.
     * Esimerkki: P6003  
-8. Valitse OK.
-9. Valitse OK.
-10. Valitse Suunnitellut tilaukset.
-11. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa Nimiketunnus-kenttää arvolla P6000.
+8. Valitse **OK**.
+9. Valitse **OK**.
+10. Valitse **Suunnitellut tilaukset**.
+11. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa **Nimiketunnus**-kenttää arvolla P6000.
     * Suodata sellaisen reseptinimikkeen perusteella, jolla on sen nimikkeen oheistuote, jolle myyntitilaus luotiin.  
 12. Merkitse valittu rivi luettelossa.
     * Valitse mikä tahansa suodattimen palauttamista riveistä.  
-13. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-14. Laajenna tai tiivistä Tarvekohdistus-osa.
-15. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+13. Valitse luettelossa valitulla rivillä oleva linkki.
+14. Laajenna tai tiivistä **Tarvekohdistus**-osa.
+15. Valitse luettelossa valitulla rivillä oleva linkki.
     * Suunniteltu tilaus on tarvekohdistettu oheistuotteen myyntitilaukseen.  
 16. Sulje sivu.
-17. Valitse Pääsuunnittelu.
-18. Valitse Pääsuunnittelu > Määritys > Pääsuunnittelun parametrit.
-19. Valitse Ei-vaihtoehto Poista käytöstä kaikki suunnitteluprosessit -kentässä.
+17. Valitse **Pääsuunnittelu**.
+18. Valitse **Pääsuunnittelu \> Määritys \> Pääsuunnittelun parametrit**.
+19. Valitse *Ei*-vaihtoehto **Poista käytöstä kaikki suunnitteluprosessit** -kentässä.
 20. Sulje sivu.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

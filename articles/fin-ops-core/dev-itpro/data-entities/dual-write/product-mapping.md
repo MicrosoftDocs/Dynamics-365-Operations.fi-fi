@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3087ab8853b14308da9496eead7478822cec86b8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750737"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941193"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -124,7 +124,7 @@ Tuotedimensiot ovat ominaisuuksia, joilla voidaan tuotevariantti tunnistetaan. N
 
 Kun tuotteella on erilaisia tuotedimensioita (esimerkiksi koko ja väri ovat päätuotteen tuotedimensioita), kukin erillinen tuote (toisin sanoen kukin tuotevariantti) määritetään kyseisten tuotedimensioiden yhdistelmänä. Esimerkiksi tuotenumero B0001 on XS-kokoinen musta t-paita, ja tuotenumero B0002 on S-kokoinen musta t-paita. Tässä tapauksessa määritetään aiemmin luodut tuotedimensioyhdistelmät. Esimerkiksi edellisen esimerkin t-paita voi olla XS-kokoinen ja musta, S-kokoinen ja musta, M-kokoinen ja musta tai L-kokoinen ja musta mutta se ei voi olla XL-kokoinen ja musta. Päätuotteessa käytettävät tuotedimensiot on siis määritetty, ja variantit voidaan vapauttaa näiden arvojen perusteella.
 
-Päätuotteen käytössä olevien tuotedimensioiden seuraamista varten on luotu seuraavat taulut, jotka on yhdistetty kunkin tuotedimension osalta Dataverseen. Lisätietoja on kohdassa [Tuotetietojen yleiskatsaus](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
+Päätuotteen käytössä olevien tuotedimensioiden seuraamista varten on luotu seuraavat taulut, jotka on yhdistetty kunkin tuotedimension osalta Dataverseen. Lisätietoja on kohdassa [Tuotetietojen yleiskatsaus]../../../supply-chain/pim/product-information.md).
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -138,7 +138,7 @@ Päätuotteen käytössä olevien tuotedimensioiden seuraamista varten on luotu 
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Tilauksen oletusasetukset ja tuotekohtaiset tilauksen oletusasetukset
 
-Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Näitä tietoja voidaan käyttää Dataversessa käyttämällä tilauksen oletusasetusten ja tuotekohtaisen tilauksen oletusasetusten yksikön avulla. Lisätietoja toiminnosta on kohdassa [Tilauksen oletusasetukset](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Näitä tietoja voidaan käyttää Dataversessa käyttämällä tilauksen oletusasetusten ja tuotekohtaisen tilauksen oletusasetusten yksikön avulla. Lisätietoja toiminnosta on kohdassa [Tilauksen oletusasetukset](../../../../supply-chain/production-control/default-order-settings.md).
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 

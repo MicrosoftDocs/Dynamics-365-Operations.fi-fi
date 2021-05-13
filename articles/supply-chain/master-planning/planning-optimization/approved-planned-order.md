@@ -1,8 +1,8 @@
 ---
-title: Hyväksy suunnitellut tilaukset
-description: Tässä ohjeaiheessa kuvataan suunnittelun optimoinnin tukemien suunniteltujen tilausten hyväksyntä.
+title: Suunniteltujen tilausten tarkasteleminen, hallinta ja hyväksyminen
+description: Tässä ohjeaiheessa on tietoja suunnittelun optimoinnin suunniteltujen tilausten tarkastelusta, hallinnasta ja hyväksymisestä.
 author: ChristianRytt
-ms.date: 08/21/2020
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,30 +16,62 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 6c215a89403f16336caae5c62cde6df469c4091c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3b9b5274481e693f9fa05eb084ec5505ce5bc2eb
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825888"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935654"
 ---
-# <a name="approve-planned-orders"></a>Hyväksy suunnitellut tilaukset
+# <a name="view-manage-and-approve-planned-orders"></a>Suunniteltujen tilausten tarkasteleminen, hallinta ja hyväksyminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja suunnittelun optimoinnin suunniteltujen tilausten tilan päivittämisestä.
+Tässä ohjeaiheessa on tietoja suunnittelun optimoinnin suunniteltujen tilausten tarkastelusta, hallinnasta ja hyväksymisestä.
 
-Huomaa, että suunniteltujen tilausten hyväksyminen on valinnainen vaihe. Se tehdään luotaessa vahvistettu tilaus suunnitellusta tilauksesta. On suositeltavaa hyväksyä muutetut suunnitellut tilaukset. Muussa tapauksessa muokkaukset ohitetaan, ja seuraava suunnittelun suoritus korvaa ne.
+## <a name="view-and-manage-planned-orders"></a><a name="view-planned-orders"></a>Suunniteltujen tilausten tarkasteleminen ja hallinta
+
+Voit tarkastella ja hallita suunniteltuja tilauksia minkä tahansa suunnitellun tilauksen luettelosivulla. Siirry yhteen seuraavista paikoista sen mukaan, minkä tyyppisiä suunniteltuja tilauksia haluat käyttää:
+
+- Pääsuunnittelu \> Työtila \> Pääsuunnittelu
+- Pääsuunnittelu \> Pääsuunnittelu \> Suunnitellut tilaukset
+- Tuotannonhallinta \> Tuotantotilaukset \> Suunnitellut tuotantotilaukset
+- Hankinta \> Ostotilaukset \> Suunnitellut ostotilaukset
+- Varastonhallinta \> Saapuvat tilaukset \> Suunnitellut siirrot
+- Varastonhallinta \> Lähtevät tilaukset \> Suunnitellut siirrot
+
+## <a name="view-and-edit-the-status-of-planned-orders"></a>Tarkastele ja muokkaa suunniteltujen tilausten tilaa
+
+Kunkin suunnitellun tilauksen **Tila**-kentän avulla voit seurata etenemistäsi tai muuttaa suunnitellun tilauksen käsittelyjärjestystä. Seuraavat **Tila**-arvot ovat käytettävissä:
+
+- **Käsittelemätön** – Kun pääsuunnittelu luo suunniteltuja tilauksia, niille annetaan tämä tila. Tässä tilassa olevat suunnitellut tilaukset poistetaan seuraavan suunnittelun suorittamisen aikana.
+- **Valmis** – Tämä tila ilmaisee, että suunniteltu tilaus on valmis. Jos et halua vahvistaa suunniteltua tilausta, voit muuttaa sen tilaksi manuaalisesti *Valmis*. Huomaa, että *Käsittelemätön*- ja *Valmis*-tiloja käsitellään järjestelmässä samalla tavalla.
+- **Hyväksytty** – Tämä tila ilmaisee, että suunniteltu tilaus on hyväksytty vahvistettavaksi. Jos haluat vahvistaa suunnitellun tilauksen, voit muuttaa sen tilaksi *Hyväksytty*. Jos haluat säilyttää suunniteltuun tilaukseen tehdyt muutokset tai jos aiot vahvistaa suunnitellun tilauksen, muuta sen tilaksi *Hyväksytty*. Suunnitellut tilaukset, joiden tila on *Hyväksytty*, pidetään valmiina. Niiden toimitusta odotetaan pääsuunnittelussa. Siksi niitä ei muokata tai poisteta myöhemmin pääsuunnittelun suorituksissa. Tämän käytöksen saavuttamiseksi suunnittelulogiikka kopioi *Hyväksytty*-tilassa olevat suunnitellut tilaukset vanhasta suunnitelmaversiosta uuteen suunnitelmaversioon pääsuunnittelun aikana. Huomaa, että *Hyväksytty*-tilassa olevia suunniteltuja tilauksia pidetään tarjontana vain tietyssä pääsuunnitelmassa.
+
+Jos haluat muuttaa yksittäisen suunnitellun tilauksen tilan, [avaa jokin suunniteltujen tilausten luettelosivu](#view-planned-orders), avaa tilaus ja noudata sitten toista seuraavista vaiheista:
+
+- Muuta **Yleinen**-pikavälilehdellä **Tila**-kentän arvoa.
+- Valitse toimintoruudun **Suunniteltu tilaus**-välilehden **Prosessi**-ryhmässä **Muuta tila**.
+- Voit merkitä tilauksen hyväksytyksi valitsemalla toimintoruudussa **Hyväksy**.
+
+Jos haluat muuttaa usean suunnitellun tilauksen tilaa samanaikaisesti, [avaa jokin suunniteltujen tilausten luettelosivu](#view-planned-orders), valitse kunkin muutettavan tilauksen valintaruutu ja tee jokin seuraavista vaiheista:
+
+- Valitse toimintoruudun **Suunniteltu tilaus**-välilehden **Prosessi**-ryhmässä **Muuta tila**.
+- Voit merkitä tilaukset hyväksytyksi valitsemalla toimintoruudussa **Hyväksy**.
+
+## <a name="approve-planned-orders"></a>Suunniteltujen tilausten hyväksyminen
+
+Suunniteltujen tilausten hyväksyminen on valinnainen vaihe. Se tehdään luotaessa vahvistettu tilaus suunnitellusta tilauksesta.
+
+Seuraavassa kuvassa näytetään, kuinka voit käyttää kullekin suunnitellulle tilaukselle määritettyä **Tila**-arvoa hyväksyntätyönkulun käyttöönotossa. Voit ottaa hyväksyntäprosessin käyttöön säätämällä kunkin suunnitellun tilauksen **Tila**-arvon manuaalisesti edellisessä osassa kuvatulla tavalla.
 
 ![Suunniteltu tilausten työnkulku](media/approved-planned-orders-1.png)
 
-**Tila**-kentän avulla voit seurata edistymistä käyttämällä seuraavia arvoja:
+> [!TIP]
+> On suositeltavaa hyväksyä kaikki muokatut suunnitellut tilaukset. Muussa tapauksessa seuraava suunnitteluajo ohittaa ja korvaa muokkaukset.
 
-- **Käsittelemätön:** Kun pääsuunnittelu luo suunniteltuja tilauksia, suunniteltujen tilausten tilana on *Käsittelemätön*. Tässä tilassa olevat suunnitellut tilaukset poistetaan seuraavan suunnittelun suorittamisen aikana.
-- **Valmis:** Jos päätät olla vahvistamatta suunniteltua tilausta, voit muuttaa tilaksi *Valmis*. Näin osoitat, että tämän suunnitellun tilauksen arvioiminen on tehty. Huomaa, että *Käsittelemätön*- ja *Valmis*-tiloja käsitellään järjestelmässä samalla tavalla.
-- **Hyväksytty:** Jos haluat säilyttää muokkaukset tai suunnittelet suunnitellun tilauksen vahvistamista, muuta tilaksi *Hyväksytty*. Suunniteltuja tilauksia, joiden tila on *Hyväksytty*, pidetään valmiina. Niiden toimitusta odotetaan pääsuunnittelussa. Niitä ei muokata tai poisteta myöhemmin pääsuunnittelun suorituksissa. Tämän saavuttamiseksi suunnittelulogiikka kopioi *hyväksytyt* suunnitellut tilaukset vanhasta suunnitelmaversiosta uuteen suunnitelmaversioon pääsuunnittelun aikana. Huomaa, että *hyväksyttyjä* suunniteltuja tilauksia pidetään tarjontana vain tietyssä pääsuunnitelmassa.
+## <a name="additional-resources"></a>Lisäresurssit
 
-Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunniteltu tilaus** -luettelossa tai **Suunnitellut tuotantotilaukset**-, **Suunnitellut ostotilaukset**- ja **Suunniteltu siirto** -luetteloissa.
-
+- [Vahvista suunnitellut tilaukset](planned-order-firming.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

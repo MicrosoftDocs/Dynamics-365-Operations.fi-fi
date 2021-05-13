@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81e573593fbbb0bf87e53c5cbd985b38a8db89ac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8607de5705354aa58c985fb536f3e1d52acd1f37
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841596"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921286"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>Myyntitilauksen luominen määritettävälle tuotteelle
 
@@ -26,30 +26,27 @@ ms.locfileid: "5841596"
 
 Tämä menettely osoittaa, miten konfiguraatiomallia käytetään myyntitilauksen tuotteeseen. Tämä esimerkki käyttää USMF-yrityksen demotietojen kaiutinmallia D0006. Nämä toimet suorittaa yleensä myyntitilausten käsittelijä.
 
-
 ## <a name="create-a-sales-order"></a>Luo myyntitilaus
-1. Valitse Myyntitilausten käsittely ja kysely.
-2. Valitse Uusi.
-3. Valitse Myyntitilaus.
-4. Valitse Asiakastili-kentässä US-001. 
-5. Valitse OK.
-6. Valitse Nimiketunnus-kenttään D0006.
+
+1. Valitse **Myynti ja markkinointi \> Työtilat \> Myyntitilausten käsittely ja kysely**.
+1. Valitse **Uusi**.
+1. Valitse **Myyntitilaus**.
+1. Valitse **Asiakastili**-kentässä *US-001*. 
+1. Valitse **OK**.
+1. Valitse **Nimikkeen numero** -kentässä *D0006*.
     * Tätä tehtävää varten on valittava määritettävissä oleva tuote.  
-7. Valitse Tuote ja toimitus.
-8. Napsauta Konfiguroi rivi.
-    * Huomaa, että hinta on muuttunut valitun konfiguraation perusteella, ja Kaapeli mukana -kenttä on nyt arvoltaan Tosi.  
+1. Valitse **Tuote ja toimitus**.
+1. Valitse **Konfiguroi rivi**.
+    * Huomaa, että hinta on muuttunut valitun konfiguraation perusteella, ja **Kaapeli mukana** -kenttä on nyt arvoltaan *Tosi*.  
     * Pidä mielessä oletushinta ja kaapelille valitut asetukset.  
-9. Valitse Lataa malli.
-    * Tässä esimerkissä näytetään, miten voit käyttää mallia esimääritetyn konfiguraation valinnassa. Jos käytät tätä menettelyä tehtäväoppaana ja haluat nähdä käytettävissä olevat määritearvot, paina Poista lukitus -painiketta.  
-10. Valitse OK.
-11. Valitse OK.
-12. Laajenna Rivin erittely -osa.
-13. Valitse Tuote-välilehti.
+1. Valitse **Kuormamalli**.
+    * Tässä esimerkissä näytetään, miten voit käyttää mallia esimääritetyn konfiguraation valinnassa. Jos käytät tätä menettelyä tehtäväoppaana ja haluat nähdä käytettävissä olevat määritearvot, paina **Poista lukitus** -painiketta.  
+1. Valitse **OK**.
+1. Valitse **OK**.
+1. Laajenna **Rivin erittely** -osa.
+1. Valitse **Tuote**-välilehti.
     * Nimikkeen konfigurointi näytetään nyt tuotedimensioissa.  
-14. Sulje sivu.
-
-## <a name="select-the-product-configuration"></a>Valitse tuotteen konfiguraatio.
-
+1. Sulje sivu.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

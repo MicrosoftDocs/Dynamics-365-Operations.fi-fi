@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6539bf6acf0216f1491cbf852f2c9a7063fbe26e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fffe8aa99641846c0052dfa4a42856c8dddb8a5
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752863"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923222"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
 
@@ -732,7 +732,7 @@ Retail Serverin ja tietojen hallinnan avulla kuluttajat ja yritykset voivat luod
 </tr>
 <tr>
 <td>Voit siirtää tietoja Microsoft Dynamics AX:n taustatoimintojen ja kanavien välillä Commerce Data Exchangen avulla.</td>
-<td>Commerce Data Exchange -järjestelmä siirtää tietoja Microsoft Dynamics AX:n ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välillä. Lisätietoja on kohdassa <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange -järjestelmä siirtää tietoja Microsoft Dynamics AX:n ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välillä. Lisätietoja on kohdassa <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Vaikka Microsoft Dynamics AX 2012 CU8:n kanssa on toiminnallinen pariteetti, ota seuraavat seikat huomioon:
 <ul>
 <li>Commerce Data Exchange on uudistettu toimimaan pilviympäristössä.</li>

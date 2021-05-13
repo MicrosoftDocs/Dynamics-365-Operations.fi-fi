@@ -1,8 +1,8 @@
 ---
 title: Human Resourcesin uudet ja muuttuneet ominaisuudet
-description: Tarjoamme joka viikko uuden Microsoft Dynamics 365 Human Resources -julkaisun. Aiheissa luetellaan kunkin viikon muutokset.
+description: Tarjoamme kahden viikon välein uuden Microsoft Dynamics 365 Human Resources -julkaisun. Aiheissa luetellaan kunkin viikon muutokset.
 author: andreabichsel
-ms.date: 09/01/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bbcedfe45801d0892d80d3e18f78be00bdfdc40
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 4aaa52fa52964f68405596fd510a1aefca89edbf
+ms.sourcegitcommit: e24e335811727c4b12152323b2bcb25495c08c5b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892174"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934841"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
 
@@ -47,8 +47,9 @@ Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuk
 
 ## <a name="human-resources-weekly-releases"></a>Viikoittaiset Human Resources -julkaisut
 
-Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua joka toinen viikko ilmestyvässä Human Resources -julkaisussa on.
+Seuraavissa aiheissa on tietoja siitä, mitä uutta tai muutettua joka toinen viikko ilmestyvässä Human Resources -julkaisussa on.
 
+[19. huhtikuuta 2021](hr-whats-new-2021-04-19.md)</br>
 [5. huhtikuuta 2021](hr-whats-new-2021-04-05.md)</br>
 [22. maaliskuuta 2021](hr-whats-new-2021-03-22.md)</br>
 [8. maaliskuuta 2021](hr-whats-new-2021-03-08.md)</br>

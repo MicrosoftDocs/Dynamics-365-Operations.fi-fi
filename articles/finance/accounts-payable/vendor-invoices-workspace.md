@@ -1,5 +1,5 @@
 ---
-title: Toimittajan laskun syötön työtila
+title: Toimittajan laskun automaation työtila
 description: Tässä ohjeaiheessa käsitellään toimittajan laskuihin liittyvän työtilan määrittämistä ja Microsoft Power BI:n kautta käytettävien tietojen näyttämistä.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837250"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954132"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Toimittajan laskun syötön työtila
+# <a name="vendor-invoice-automation-workspace"></a>Toimittajan laskun automaation työtila
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ Tässä ohjeaiheessa käsitellään toimittajan laskuihin liittyvän työtilan m
 
 ## <a name="overview"></a>Yleiskuvaus
 
-**Toimittajan laskun syöttö** -työtilassa näkyy toimittajan laskujen käsittelyyn liittyviä tietoja. Siinä on **Oma työ** -näkymä ja **Analytiikka – kaikki yritykset** -sivu. **Oma työ** -näkymä näyttää yhteenvetoruudut, toimittajatapahtumaruudukot ja liittyvän toimittajan tiedot. **Analytiikka – kaikki yritykset** -sivu näyttää Power BI:n ominaisuuksien avulla toimittajan laskuihin liittyviä visualisointeja.
+**Toimittajan laskun automaatio** -työtilassa näkyy toimittajan laskujen käsittelyyn liittyviä tietoja. Siinä on **Oma työ** -näkymä ja **Analytiikka – kaikki yritykset** -sivu. **Oma työ** -näkymä näyttää yhteenvetoruudut, toimittajatapahtumaruudukot ja liittyvän toimittajan tiedot. **Analytiikka – kaikki yritykset** -sivu näyttää Power BI:n ominaisuuksien avulla toimittajan laskuihin liittyviä visualisointeja.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Työtilan määrittäminen näyttämään Power BI -sisältöä
 
-Nämä määritykset on tehtävä, ennen kuin tietoja voidaan näyttää Power BI -visualisointeina **Toimittajan laskun syöttö** -työtilassa.
+Nämä määritykset on tehtävä, ennen kuin tietoja voidaan näyttää Power BI -visualisointeina **Toimittajan laskun automaatio** -työtilassa.
 
 1. Etsi **Toimittajan laskun automatisointi** -ominaisuus suodattamalla luettelo **Ominaisuuksien hallinta** -työtilassa.
 3. Valitse **Ota käyttöön nyt**.
@@ -54,7 +54,7 @@ Työtilassa olevien tietojen tarkastelemiseen tarvitaan ostoreskontrapäällikö
 
 ### <a name="company-selection"></a>Yrityksen valinta
 
-Kun **Automatisoi toimittajan laskut** -toiminto on otettu käyttöön, **Yritys**-kenttä näkyy työtilan yläosassa. **Yritys**-kentässä oleva valinta vaikuttaa kaikkiin työtilassa näkyviin tietoihin. Oletusarvoisesti näkyvissä on sen yrityksen tiedot, johon olet kirjautunut. Jos valitset **Yritys**-kentässä jonkin muun yrityksen, kyseisen yrityksen tiedot näytetään työtilassa. Voit sitten valita työtilassa ruudun ja siirtyä siihen liittyvälle sivulle valitussa yrityksessä.
+Kun **Toimittajan laskun automaatio** -toiminto on otettu käyttöön, **Yritys**-kenttä näkyy työtilan yläosassa. **Yritys**-kentässä oleva valinta vaikuttaa kaikkiin työtilassa näkyviin tietoihin. Oletusarvoisesti näkyvissä on sen yrityksen tiedot, johon olet kirjautunut. Jos valitset **Yritys**-kentässä jonkin muun yrityksen, kyseisen yrityksen tiedot näytetään työtilassa. Voit sitten valita työtilassa ruudun ja siirtyä siihen liittyvälle sivulle valitussa yrityksessä.
 
 ### <a name="summary-tiles"></a>Yhteenvetoruudut
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745260"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921420"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -37,7 +37,7 @@ Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhe
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 ja Platform update 31
 
@@ -147,7 +147,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin. Lisätietoja on kohdassa [Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
+| **Poiston tai vanhentumisen syy** | Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin. Lisätietoja on kohdassa [Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Onko toinen ominaisuus korvannut?**   | Uudelleen muotoiltu navigointipalkki, jossa on hakuominaisuus, otettiin käyttöön Platform Update 24:sta alkaen. |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
@@ -161,7 +161,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla. Uusi lukitun oletustoiminnon ominaisuus korjaa tämän. Lisätietoja on kohdassa [Lukitut oletustoiminnot ruudukoissa](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Poiston tai vanhentumisen syy** | Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla. Uusi lukitun oletustoiminnon ominaisuus korjaa tämän. Lisätietoja on kohdassa [Lukitut oletustoiminnot ruudukoissa](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Onko toinen ominaisuus korvannut?**   | Lukittujen oletustoimintojen ominaisuus oli ensimmäisen kerran mukana Platform update 21 -versiossa. Tämän ominaisuuden voi ottaa käyttöön **Työaseman suorituskykyasetukset** -sivulla. |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelman ruudukot |
 | **Käytön asetukset**              | Kaikki |
@@ -172,7 +172,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | On yksi seuraavista: -suodattimen käyttö suunniteltiin uudelleen Platform update 22 -versiota varten niin, että tämän piti olla ainoa On yksi seuraavista: -suodattimen käyttömahdollisuus. |
-| **Onko toinen ominaisuus korvannut?**   | Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa **Työaseman suorituskykyasetukset** -sivulla. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Onko toinen ominaisuus korvannut?**   | Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa **Työaseman suorituskykyasetukset** -sivulla. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Vuoden 2020 huhtikuusta alkaen parannettu On yksi seuraavista: -suodattimen käyttö kuuluu oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata. |
@@ -1333,7 +1333,7 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 
 ### <a name="virtual-company-accounts"></a>Virtuaaliyritykset
 
-Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
+Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](../../fin-ops/get-started/ax4-content-retired.md). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

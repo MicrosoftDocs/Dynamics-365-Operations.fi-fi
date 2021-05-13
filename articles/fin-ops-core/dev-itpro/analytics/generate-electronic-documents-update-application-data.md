@@ -2,7 +2,7 @@
 title: Sähköisten asiakirjojen luominen ja päivittäminen sovellustiedoilla sähköistä raportointia (ER) käyttäen
 description: Voit suunnitella sähköisen raportoinnin muotoja, joilla voidaan luoda sovelluksessa lähteviä sähköisiä asiakirjoja.
 author: NickSelin
-ms.date: 11/01/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 863c69446e9a7d447847483ec129788e85a8fd58
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5f66a173c7d66f915a7802e42caf1a36f661eea1
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750031"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944314"
 ---
 # <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen ER:n avulla
 
@@ -35,9 +35,9 @@ Tämän toiminnon avulla yhdellä sähköisen raportoinnin muodolla voidaan luod
 
 Saat lisätietoja tästä ominaisuudesta toistamalla joukon ER-luontiasiakirjoja sovellustietojen päivityksen tehtäväoppaassa (osa liiketoimintaprosessia 7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677)), joka opastaa Intrastat-raportoinnin ja -arkistoinnin vaiheissa. Seuraavat tiedostot tarvitaan joidenkin tehtäväoppaiden vaiheiden suorittamiseen. Lataa ja tallenna nämä tiedostot paikallisesti tietokoneeseen.
 
-- [Sähköisen raportoinnin tietomallien määritys: Intrastat (malli)](https://go.microsoft.com/fwlink/?linkid=849038)
-- [Sähköisen raportoinnin mallin yhdistämismäärityksen määrittäminen: Intrastat (yhdistämismääritys)](https://go.microsoft.com/fwlink/?linkid=849038)
-- [Sähköisen raportointimuodon määritys: Intrastat (muoto)](https://go.microsoft.com/fwlink/?linkid=849038)
+- [Sähköisen raportoinnin tietomallien määritys: Intrastat (malli)](https://download.microsoft.com/download/9/c/e/9ceeacbe-c13e-422e-96f2-594c4a6b45b7/Intrastatmodel.xml)
+- [Sähköisen raportoinnin mallin yhdistämismäärityksen määrittäminen: Intrastat (yhdistämismääritys)](https://download.microsoft.com/download/2/1/d/21ddaaeb-64c5-4408-a35f-1ccb922d40a4/Intrastatmapping.xml)
+- [Sähköisen raportointimuodon määritys: Intrastat (muoto)](https://download.microsoft.com/download/8/b/b/8bbb8891-e88d-4739-b92a-2d1d2fffcb79/Intrastatformat.xml)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

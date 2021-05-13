@@ -1,8 +1,8 @@
 ---
 title: Luo ja ylläpidä varastoesto
-description: Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla.
+description: Tässä aiheessa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833998"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956155"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Luo ja ylläpidä varastoesto
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla. Voit suorittaa menettelyn esittelytietojen USMF-yrityksen avulla näkyvillä olevilla esimerkkiarvoilla. Aloita tämä menettely vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.
+Tässä aiheessa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla. Aloita tämän aiheen menettelyt vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.
 
+## <a name="block-inventory"></a>Varastoesto
 
-## <a name="create-an-inventory-blocking"></a>Varastoeston luominen
-1. Valitse **siirtymisruudussa** **Moduulit > Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Varastoesto**.
-2. Valitse **Uusi**.
-3. Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.
-4. Valitse luettelosta nimike. Määritä estettävä nimiketunnus, jolla on fyysistä käytettävissä olevaa varastoa. Jos käytössä on USMF, voit valita nimikkeen M9201.  
-5. Anna **Määrä**-kentässä numero. Jos käytössä on nimike M9201, määritä arvo, joka on pienempi kuin 200.
-6. Laajenna **Varaston dimensiot** -pikavälilehti.
-7. Avaa haku valitsemalla **Varasto**-kentässä avattavan valikon painike.
-8. Etsi haluamasi tietue luettelosta ja valitse se. Jos käytössä on nimike M9201, voit valita varaston 51.  
-9. Valitse **Tallenna**.
+Noudattamalla näitä ohjeita voit luoda varaston estotietueen varaston eston mahdollistamiseksi.
+
+1. Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Varastoesto**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Uuden estotietueen otsikossa määritä **Nimiketunnus**-kenttä estettävään nimikkeeseen ja kirjoita kuvaus.
+1. Kirjoita **Yleiset**-pikavälilehden **Määrä**-kenttään estettävien nimikkeiden määrä.
+1. Määritä **Varastodimensiot**-pikavälilehdessä paikka ja varasto, jossa estettävät nimikkeet sijaitsevat tällä hetkellä.
+1. Valitse toimintoruudussa **Tallenna**.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Varastoeston ehtojen päivittäminen
-1. Kirjoita numero **Yleiset** -pikavälilehden **Määrä**-kenttään. Päivitä Varastomäärä-kenttä vastaamaan estettävää määrää.  
-2. Kirjoita päivämäärä **Odotettu päivämäärä** -kenttään. Haluat ehkä määrittää, milloin estetyn varaston odotetaan olevan varattavissa. Voit määrittää tätä varten odotetun päivämäärän. Jos varastoestolle on valittu Odotetut vastaanotot -asetus, kuten oletusarvoisesti on, voit luoda eston manuaalisesti. Tämä päivä näkyy odotetun tapahtuman kohdalla.  
-3. Valitse **Tallenna**.
 
-## <a name="remove-the-inventory-blocking"></a>Varastoeston poistaminen
-1. Valitse **toimintoruudussa** **Poista**.
-2. Valitse **Kyllä**.
-3. Sulje sivu.
+Päivitä varaston estotietue noudattamalla seuraavia vaiheita.
 
+1. Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Varastoesto**.
+1. Valitse luetteloruudusta asianmukainen estotietue.
+1. Muokkaa tietuetta tarvittaessa. Esimerkiksi ehkä haluat muuttaa **Odotettu päivämäärä** -kentän arvoa ja määrittää, milloin estetyn varaston odotetaan olevan varattavissa. Jos **Oletetut vastaanotot** -asetus on valittuna, oletetussa tapahtumassa näkyy päivämäärä. (**Oletetut vastaanotot** -asetus on oletusarvon mukaan valittuna, kun estotietue luodaan manuaalisesti.)
+1. Valitse toimintoruudussa **Tallenna**.
 
+## <a name="unblock-inventory"></a>Poista varaston esto
+
+Noudattamalla näitä ohjeita voit poistaa varaston estotietueen varaston eston poiston mahdollistamiseksi.
+
+1. Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Varastoesto**.
+1. Valitse luetteloruudusta asianmukainen estotietue.
+1. Valitse toimintoruudussa **Poista**.
+1. Järjestelmä pyytää vahvistamaan toiminnon. Jatka valitsemalla **Kyllä**.
+1. Sulje sivu.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

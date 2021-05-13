@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
-ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
+ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
+ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5898284"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5965307"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -104,15 +104,15 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Financen version 10.0.12 poistetut tai vanhentuneet ominaisuudet
 
-### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Puolan SSRS-raportit, maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri - toimintojen viite PL-00014
+### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Ei vanhentunut: Puolan SSRS-raportit, maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri - toimintojen viite PL-00014
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Ei lakisääteistä edellytystä.  |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä (Excel-muoto vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa - JPK_VDEK) |
-| **Tuotealueet, joihin vaikutetaan**         | Sovellus |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: 1.7.2021 jälkeen emme enää tue SSRS-raportteja: **Maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri – toimintojen viite PL-00014**. Excel-muodon esimerkki vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa (JPK_VDEK) otetaan sen sijaan käyttöön. |
+| **Tila**                         | Ei vanhentunut: 27.4.2021 alkaen tuemme SSRS-raportteja: **Maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri – toimintojen viite PL-00014**. Excel-muodon esimerkki vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa (JPK_VDEK) on myös otettu käyttöön. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Financen version 10.0.11 poistetut tai vanhentuneet ominaisuudet
 

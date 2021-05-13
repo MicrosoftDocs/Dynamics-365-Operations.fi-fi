@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 964db71efc9dc81d60199e37de8668de9d667496
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842078"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947517"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -48,7 +48,7 @@ Ennen kuin voit käyttää suunnittelun muutostenhallintaa, sinun on otettava k�
 
 Ota toiminnot ensin käyttöön seuraavasti.
 
-1. Mene [Toimintojen hallintaan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Valitse [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtila.
 1. Tarkista päivitysten saatavuus.
 1. Ota käyttöön **Suunnittelun muutostenhallinta** -niminen toiminto.
 1. Jos haluat käyttää sitä, sinun on otettava käyttöön myös **Tuotteen dimensioversio** -niminen toiminto.
@@ -57,9 +57,12 @@ Ota seuraavaksi määritysavaimet käyttöön seuraavia vaiheita noudattamalla.
 
 1. Siirrä järjestelmä ylläpitotilaan kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
 1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
-1. **Kauppa**-solmun laajentaminen
-1. Valitse **Suunnittelun muutostenhallinta** -valintaruutu.
-1. Jos haluat käyttää sitä, valitse myös **Tuotedimensio – Versio** -valintaruutu.
+1. **Kauppa**-solmun laajentaminen.
+1. Ota pääominaisuuden määritysavain käyttöön valitsemalla **Suunnittelun muutostenhallinta** -valintaruutu. (Solmua ei tarvitse laajentaa, ellet halua poistaa yhtä tai molempia sen aliominaisuuksista käytöstä.)
+1. Jos haluat myös käyttää versiodimensiota, valitse myös **Tuotedimensio – Versio** -valintaruutu. (Tämä valintaruutu on luettelossa alempana, ei **Suunnittelun muutoshallinta** -solmussa.)
 1. Poista järjestelmän ylläpitotila käytöstä kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
+
+> [!IMPORTANT]
+> Huhtikuussa 2022 alkaen sekä **Suunnittelun muutostenhallinta**- että **Tuotedimensio - Versio** -lisenssiavaimet ovat oletusarvon mukaan käytössä kaikissa uusissa asennuksissa, mutta ne voidaan tarvittaessa poistaa käytöstä.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

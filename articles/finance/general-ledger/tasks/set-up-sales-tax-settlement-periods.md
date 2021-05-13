@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd11068a31b5324d87416e7c00f75a59743f695a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 83587df3963d215fec020150e6b707e431c1b6eb
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813504"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944774"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Määritä arvonlisäveron tilityskaudet
 
@@ -37,9 +37,7 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 7. Valitse **Maksuehdot**-kentässä avattavasta valikosta haluamasi tietue. Liittyvä arvonlisäveroviranomainen voidaan määrittää toimittajaksi. Arvonlisäveron tilitys luo avoimen toimittajan laskun. Maksuehdot määrittävät avoimen toimittajan laskun eräpäivän.  
 8. Valitse tilityskauden välien tyyppi.
 9. Syötä kausivälien yksiköiden määrä kautta kohti. Esimerkiksi neljännesvuosi sisältää 3 kuukautta.
-10. Valitse **Käytä arvonlisäveron tilitykseen eräprosessia** -valintaruutu tai poista sen valinta. Tilityskauden tilitysprosessi voidaan käsitellä taustalla erätyönä. Tätä suositellaan, jos kausiväli sisältää paljon verotapahtumia.  
-    > [!NOTE]
-    > Tällä hetkellä tätä ei tueta Espanjassa, Japanissa tai Alankomaissa.
+10. Valitse **Käytä arvonlisäveron tilitykseen eräprosessia** -valintaruutu tai poista sen valinta. Tilityskauden tilitysprosessi voidaan käsitellä taustalla erätyönä. Tätä suositellaan, jos kausiväli sisältää paljon verotapahtumia.
 11. Valitse **Estä verotapahtumien vastakirjauksien luonti** -valintaruutu tai poista sen valinta. Järjestelmä luo oletusarvoisesti verotapahtumien vastakirjauksia selvitysprosessin aikana, mikä voi heikentää suorituskykyä, jos kausiväliin sisältyy suuri määrä verotapahtumia. Estä verotapahtumien vastakirjauksien luonti valitsemalla tämä valintaruutu.
 12. Laajenna **Kausivälit**-välilehti.
 13. Valitse **Lisää**.

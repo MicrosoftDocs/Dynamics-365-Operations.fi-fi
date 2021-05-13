@@ -2,7 +2,7 @@
 title: Laadunhallinta varastoprosesseja varten
 description: Tämä ohjeaihe sisältää tietoja varastoprosessiominaisuuksien laadunhallinnasta. Tämä ominaisuus laajentaa laadunhallinnan ominaisuuksia ja antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834262"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956079"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Laadunhallinta varastoprosesseja varten
 
@@ -620,5 +620,8 @@ Olet määrittänyt varaston 51 työ- ja sijaintitiedot sen varmistamiseksi, ett
 > [!NOTE]
 > Harkitse laatumerkinnän lisäämistä mobiililaitteen valikkokohteeseen, jossa tehtäväkoodi on *Näytä avoin työluettelo*. Katso esimerkiksi matkaviestimen valikkovaihtoehto, jonka nimi on demotietojen **Työluettelo**. Lisää ensin *Laatutilauksen* työluokka käyttäjän ohjattuun valikkokohteeseen, koska työluokka on pakollinen, jotta työ voidaan näyttää työluettelossa. Lisää sitten *Laatutilauksen* työluokka **Työluettelo**-valikkonimikkeeseen. Käyttäjät, joilla on työluettelon käyttöoikeus, voivat tällöin poimia ja käsitellä työn, joka luodaan automaattisesti laatutilauksen vahvistuksen avulla.
 
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Laadun ja määrityksistä poikkeamisen hallinnan yleiskatsaus](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

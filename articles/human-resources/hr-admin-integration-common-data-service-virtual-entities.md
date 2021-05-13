@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 04997aba427ae6013c8154593b09ae1a45a580c3
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890049"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935750"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse -virtuaalitaulukot
 
@@ -102,27 +102,15 @@ Human Resources -esiintymä on rekisteröitävä Azure-portaalissa, jotta Micros
 
 Asenna Dynamics 365 HR Virtual Table -sovellus Power Apps -ympäristöön ottamaan virtuaalitaulukon ratkaisupaketti käyttöön Dataversessa.
 
-1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
+1. Avaa Human Resourcesissa **Microsoft Dataverse-integraatio** -sivu.
 
-2. Valitse **Ympäristöt**-luettelossa Human Resources -esiintymään liitetty Power Apps -ympäristö.
+2. Valitse **Virtuaalitaulukot**-välilehti.
 
-3. Valitse sivun **Resurssit**-osassa **Dynamics 365 -sovellukset**.
+3. Valitse **Asenna virtuaalitaulusovellus**.
 
-4. Valitse **Asenna sovellus** -toiminto.
+### <a name="configure-the-virtual-table-data-source"></a>Virtuaalitaulukon tietolähteen määrittäminen
 
-5. Valitse ensin **Dynamics 365 HR Virtual Table** ja valitse **Seuraava**.
-
-6. Tutustu palvelun käyttöehtoihin ja merkitse ne hyväksytyiksi.
-
-7. Valitse **Asenna**.
-
-Asennus kestää muutaman minuutin. Kun asennus valmistuu, jatka seuraaviin vaiheisiin.
-
-![Dynamics 365 HR Virtual Table -sovelluksen asentaminen Power Platform -hallintakeskuksessa](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>Virtuaalitaulukon tietolähteen määrittäminen 
-
-Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympäristössä. 
+Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympäristössä.
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
@@ -133,6 +121,9 @@ Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympärist�
 4. Valitse **Ratkaisun kunnon keskus** -kohdassa **Erikoishaku**-kuvake sovellussivun oikeassa yläkulmassa.
 
 5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Finance and Operations -virtuaalitietolähteen määritykset**.
+
+   > [!NOTE]
+   > Virtuaalitaulusovelluksen asentaminen edellisestä asennusvaiheesta voi kestää muutaman minuutin. Jos **Finance and Operations -virtuaalitietolähteen määritykset** eivät ole käytettävissä luettelossa, odota minuutti ja päivitä luettelo.
 
 6. Valitse **Tulokset**.
 
@@ -186,7 +177,7 @@ Myönnä kahden Azure AD -sovelluksen oikeudet Human Resourcesissa:
 
 Voit valita asennuksen valmistumisen jälkeen virtuaalitaulukot, jotka haluat luoda ja ottaa käyttöön Dataverse -esiintymässä.
 
-1. Avaa Human Resourcesissa **Dataverse-integraatio** -sivu.
+1. Avaa Human Resourcesissa **Microsoft Dataverse-integraatio** -sivu.
 
 2. Valitse **Virtuaalitaulukot**-välilehti.
 
@@ -197,7 +188,7 @@ Voit valita asennuksen valmistumisen jälkeen virtuaalitaulukot, jotka haluat lu
 
 4. Valitse **Luo/päivitä**.
 
-![Dataverse -integraatio](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse -integraatio](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Taulukon luontitilan tarkistaminen
 

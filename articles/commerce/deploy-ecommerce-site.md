@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fff5d47d6eb3e08288d17853fcd94f9eab843c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b228babfd32a4191eeed2a6d924a8b99f1a5311
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801946"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936703"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 
@@ -29,13 +29,13 @@ Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin Dynamics 3
 
 Microsoft Dynamics Lifecycle Services (LCS) on pilvipohjainen yhteinen työtila, jossa kumppanit ja asiakkaat voivat hallita projekteja ja ympäristöjä, katsella uusimpia tietoja Microsoft Dynamics -tuotteista ja -toiminnoista sekä luoda, seurata ja selata tukitapauksia. Sähköisen kaupankäynnin hallintatoiminnot integroidaan LCS:n kanssa.
 
-Lisätietoja LCS:stä on kohdassa [Lifecycle Services -käyttöopas](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
+Lisätietoja LCS:stä on kohdassa [Lifecycle Services -käyttöopas](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
 ## <a name="get-started"></a>Aloittaminen
 
 Ennen kuin voit alustaa sähköisen kaupankäynnin, sinun on alustettava projekti, ympäristö ja Retail Cloud Scale Unit (RCSU). Jos haluat tehdä alustuksen LCS:ssä, tarvitset joko projektin omistajan tai ympäristön valvojan roolin oikeudet. Tuotanto- ja eristysympäristön topologioita tuetaan.
 
-Lisätietoja ympäristöistä on kohdassa [Ympäristön suunnittelu](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Lisätietoja RCSU:sta on kohdassa [Retail Cloud Scale Unitin alustaminen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
+Lisätietoja ympäristöistä on kohdassa [Ympäristön suunnittelu](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Lisätietoja RCSU:sta on kohdassa [Retail Cloud Scale Unitin alustaminen](/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
 ## <a name="initialize-e-commerce"></a>Sähköisen kaupankäynnin alustaminen
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890773"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941137"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -47,6 +47,7 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 |      Brasilia         |   2020. lokakuuta      | 10.0.16      |   DRCST-ilmoituksen SC - SEF 262/2020   |
 |      Brasilia         |   2020. lokakuuta      | 10.0.16      |   SPED-verotus, ICMS/IPI-tietue, C176   |
 |      Brasilia         |   2020. joulukuuta      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 – Digitaalisen alustan välittäjän tunnus (asettelu- ja vahvistussääntöjen päivitykset)   |
+|      Brasilia         |   Maaliskuun 2021.         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF -asettelu 1.5.1
 |      Eurooppa        |   2021. tammikuuta       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Pohjois-Irlannin protokollan vaikutus EU:n sisäisiin kaupparaportointiin EU:n jäsenvaltioissa  |
 |      Saksa        |   2021. tammikuuta       | 10.0.16HF      |   ELSTER UstVA – ALV-ennakkoilmoitusmuotoa on laajennettu kahdella uudella ruudulla 37,50 selvittämättömien velkojen poistamista varten  |
 |      Saksa        |   2021. tammikuuta       | 10.0.17      |   ELSTER-arvonlisäveron ennakkoilmoituksen XML-rakenteen muutokset (UstVA)  |

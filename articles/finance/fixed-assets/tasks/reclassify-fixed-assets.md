@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8935213c4629de408a48df5e54a2122324e1b3e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823929"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944709"
 ---
 # <a name="reclassify-fixed-assets"></a>Luokittele käyttöomaisuus uudelleen
 
@@ -27,11 +27,25 @@ Voit luokitella käyttöomaisuuserän uudelleen siirtämällä sen uuteen käytt
 
 Kun käyttöomaisuuserä luokitellaan uudelleen:
 
-* Kaikki aiemman käyttöomaisuuserän kirjat luodaan myös uudelle käyttöomaisuuserälle. Alkuperäiselle käyttöomaisuuserälle mahdollisesti määritetyt tiedot kopioidaan uuteen käyttöomaisuuserään. Alkuperäisen käyttöomaisuuserän kirjojen tila on Suljettu. 
+- Kaikki aiemman käyttöomaisuuserän kirjat luodaan myös uudelle käyttöomaisuuserälle. Alkuperäiselle käyttöomaisuuserälle mahdollisesti määritetyt tiedot kopioidaan uuteen käyttöomaisuuserään. Alkuperäisen käyttöomaisuuserän kirjojen tila on Suljettu. 
 
-* Uuden käyttöomaisuuserän kirjoissa on uudelleenluokittelupäivä **Hankintapäivämäärä**-kentässä. **Poiston suorituspäivä** -kenttä kopioidaan alkuperäisen käyttöomaisuuden tiedoista. Jos poistot on jo aloitettu, **Viimeisen poiston suorituspäivä** -kentässä näkyy uudelleenluokittelun päivämäärä. 
+- Uuden käyttöomaisuuserän kirjoissa on uudelleenluokittelupäivä **Hankintapäivämäärä**-kentässä. **Poiston suorituspäivä** -kenttä kopioidaan alkuperäisen käyttöomaisuuden tiedoista. Jos poistot on jo aloitettu, **Viimeisen poiston suorituspäivä** -kentässä näkyy uudelleenluokittelun päivämäärä. 
 
-* Alkuperäisen käyttöomaisuuserän aiemmin luodut käyttöomaisuustapahtumat peruutetaan ja luodaan uudelleen uudelle käyttöomaisuuserälle.
+- Alkuperäisen käyttöomaisuuserän aiemmin luodut käyttöomaisuustapahtumat peruutetaan ja luodaan uudelleen uudelle käyttöomaisuuserälle.
+
+- Kun käyttöomaisuuserä, jolla on siirtotapahtuma, on luokiteltu uudelleen, järjestelmä näyttää **toimintokeskuksessa** sanoman, jossa ilmoitetaan, ettei siirtotapahtumaa ole suoritettu uudelleenluokitteluprosessin aikana. Siirtotapahtuma on suoritettava valmiiksi, jotta olemassa olevat uudelleenluokittelutapahtumat voidaan siirtää asianmukaisiin taloushallinnon dimensioihin. 
+
+   Uudelleenluokittelun aikana järjestelmä luokittelee käyttöomaisuussaldon alkuperäisestä käyttöomaisuuserästä uuteen käyttöomaisuuserään uudelleen seuraavasti: 
+   
+   - Uudelleenluokitteluprosessi kopioi tiedot alkuperäisestä käyttöomaisuuskirjasta uuteen käyttöomaisuuskirjaan.
+
+   - Uudelleenluokittelutapahtuma käyttää alkuperäisen kirjatun hankinnan tietoja, jotka sisältävät hankintatapahtumaan sisältyviä kirjanpitodimensiotietoja.  
+   
+   - Uudelleenluokitteluprosessi palauttaa samalla alkuperäisen käyttöomaisuuden hankinta- ja käyttöomaisuussiirtotapahtuman. 
+
+Seuraavassa kaaviossa ja menettelyssä on esimerkki uudelleenluokitteluprosessista. 
+
+[![Kaavio, jossa näkyy uudelleenluokitteluprosessi](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Luokittele käyttöomaisuuserä uudelleen noudattamalla seuraavia vaiheita:
 

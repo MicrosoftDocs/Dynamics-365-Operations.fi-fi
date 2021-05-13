@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800444"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937009"
 ---
 # <a name="clienteling-overview"></a>Asiakashallinnan yleiskuvaus
 
@@ -60,7 +60,7 @@ Myyjät voivat tallentaa yleisiä asiakastietoja huomautuksiin, joita voi tarkas
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Integrointi Dynamics 365 Customer Insights:n kanssa
 
-Dynamics 365 Customer Insights -sovelluksen avulla jälleenmyyjät voivat kerätä tietoja erilaisista järjestelmistä, joiden kautta asiakkaat ovat vuorovaikutuksessa jälleenmyyjän brändin kanssa. He voivat luoda näiden tietojen avulla yhden näkymän asiakkaasta ja saada tällä tavoin merkityksellisiä tietoja. Customer Insightsin ja Commercen ansiosta jälleenmyyjät voivat valita vähintään yhden mittarin asiakaskirjan asiakaskortissa näytettäväksi. Jälleenmyyjät voivat esimerkiksi laskea Customer Insightsin tietojen avulla asiakkaan vaihtuvuustodennäköisyyden ja määrittää parhaan seuraavan toiminnon. Jos nämä arvot määritetään mittareiksi, ne voidaan näyttää asiakaskortissa antamaan olennaisia tietoja myyjälle. Lisätietoja Customer Insightsista on [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview) -dokumentaatiossa. Lisätietoja mittareista on kohdassa [Mittarit](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Dynamics 365 Customer Insights -sovelluksen avulla jälleenmyyjät voivat kerätä tietoja erilaisista järjestelmistä, joiden kautta asiakkaat ovat vuorovaikutuksessa jälleenmyyjän brändin kanssa. He voivat luoda näiden tietojen avulla yhden näkymän asiakkaasta ja saada tällä tavoin merkityksellisiä tietoja. Customer Insightsin ja Commercen ansiosta jälleenmyyjät voivat valita vähintään yhden mittarin asiakaskirjan asiakaskortissa näytettäväksi. Jälleenmyyjät voivat esimerkiksi laskea Customer Insightsin tietojen avulla asiakkaan vaihtuvuustodennäköisyyden ja määrittää parhaan seuraavan toiminnon. Jos nämä arvot määritetään mittareiksi, ne voidaan näyttää asiakaskortissa antamaan olennaisia tietoja myyjälle. Lisätietoja Customer Insightsista on [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) -dokumentaatiossa. Lisätietoja mittareista on kohdassa [Mittarit](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="set-up-clienteling"></a>Asiakashallinnan määrittäminen
 
@@ -73,7 +73,7 @@ Ota asiakashallintatoiminnot käyttöön ympäristössä seuraavien ohjeiden muk
 2. Ota **Asiakashallinta**-toiminto käyttöön valitsemalla **Ota käyttöön nyt**.
 3. Valitse **Commercen parametrit** -sivun **Numerosarja**-välilehdessä **Asiakaskirjan tunniste** -rivi. Valitse sitten numerosarja **Numerosarjan koodi** -kentässä. Järjestelmä määrittää asiakaskirjojen tunnuksen tämän numerosarjan perusteella.
 4. Valitse **Tallenna**.
-5. Luo uusi määriteryhmä. Se sisältää määritteet, jotka tallennetaan asiakaskirjoissa hallituista asiakkaista. Lisätietoja on kohdassa [Määritteet ja määriteryhmät](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
+5. Luo uusi määriteryhmä. Se sisältää määritteet, jotka tallennetaan asiakaskirjoissa hallituista asiakkaista. Lisätietoja on kohdassa [Määritteet ja määriteryhmät](./attribute-attributegroups-lifecycle.md).
 
     - Määritä pakolliset määritteet **Voidaan tarkentaa** -muodossa. Myyjät voivat suodattaa asiakaskirjaa näiden määritteiden avulla.
     - Määritä määritteiden näyttöjärjestys. Näyttöjärjestys määrittää, mitkä määritteet näytetään asiakaskirjan asiakaskortissa. Näyttöjärjestys 1 on korkeampi kuin näyttöjärjestys 2. Tämän vuoksi määrite, jonka näyttöjärjestys on 1, näytetään ennen määritettä, jonka näyttöjärjestys on 2.
@@ -103,18 +103,18 @@ Customer Insightsin ja Commercen integrointi edellyttää, että sinulla on akti
 
 Määritä integrointi noudattamalla seuraavia ohjeita:
 
-1. Rekisteröi uusi sovellus Azure-portaalissa ja kirjoita muistiin sovelluksen nimi, sovelluksen tunnus ja salainen koodi. Näitä tietoja käytetään Commerce- ja Customer Insights -palveluiden väliseen todennukseen. Merkitse salainen koodi muistiin turvallisesti, koska on tallennettava avainsäilöön. Käytä seuraavassa esimerkissä CI_Access_name, CI_Access_AppID ja CI_Access_Secret sovelluksen nimelle, tunnukselle ja salaiselle koodille. Lisätietoja: [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. Rekisteröi uusi sovellus Azure-portaalissa ja kirjoita muistiin sovelluksen nimi, sovelluksen tunnus ja salainen koodi. Näitä tietoja käytetään Commerce- ja Customer Insights -palveluiden väliseen todennukseen. Merkitse salainen koodi muistiin turvallisesti, koska on tallennettava avainsäilöön. Käytä seuraavassa esimerkissä CI_Access_name, CI_Access_AppID ja CI_Access_Secret sovelluksen nimelle, tunnukselle ja salaiselle koodille. Lisätietoja: [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Varmista menettely, jonka avulla muistat muuttaa salauskoodin ennen sen vanhentumista. Muussa tapauksessa integrointi päättyy odottamatta.
 
 2. Siirry Customer Insights -instanssiin ja hae yllä luodun sovelluksen nimeä (tässä esimerkissä CI_Access_name).
-3. Luo Azure Key Vault ja ota muistiin nimi ja URL (tässä esimerkissä "KeyVaultName", "KeyVaultURL"). Lisätietoja on kohdassa [Pika-aloitus: Salauskoodin määrittäminen ja sen noutaminen Azure Key Vaultista Azure-portaalin avulla](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+3. Luo Azure Key Vault ja ota muistiin nimi ja URL (tässä esimerkissä "KeyVaultName", "KeyVaultURL"). Lisätietoja on kohdassa [Pika-aloitus: Salauskoodin määrittäminen ja sen noutaminen Azure Key Vaultista Azure-portaalin avulla](/azure/key-vault/quick-create-portal).
 4. Tallenna salainen koodi (tässä esimerkissä "CI_Access_Secret") säilöön. Kun salainen koodi tallennetaan säilössä, se saa nimen. Merkitse muistiin salaisen koodin nimi (tässä esimerkissä SecretName).
 5. Voit käyttää salaista koodia Azure Key Vaultissa luomalla toisen sovelluksen, jolla on sovellustunnus ja salainen koodi (tässä esimerkissä "KeyVault_Access_AppID" ja "KeyVault_Access_Secret"). Merkitse salainen koodi muistiin huolellisesti, koska sitä enää näytetä.
 6. Seuraavaksi sinun on annettava sovellukselle oikeudet käyttää Key Vault -säilöä Commercesta API-liittymien avulla. Siirry Azure-portaalissa sovellussivulle. Valitse **Hallinta**-kohdasta **Ohjelmointirajapinnan käyttöoikeudet**. Lisää käyttöoikeus **Azure Key Vault** -säilön käyttöön. Valitse tälle käyttöoikeudelle **Käyttöoikeuskäytäntö**. Valitse malli nimellä **Salaisen koodin hallinta** ja valitse **Hae**-, **Luetteloi**-, **Pura salaus**- ja **Salaa**-vaihtoehdot. 
 5. Valitse Commerce headquartersissa **Järjestelmän hallinta \> Asetukset \> Avainsäilön parametrit** ja anna tarvittavat avainsäilön tiedot. Anna sitten **Avainsäilön asiakas** -kentässä sovelluksen tunnus, jota käytit vaiheessa 4. Tällä tavoin Commerce voi käyttää avainsäilössä olevia salauskoodeja.
-6. Voit lisätä vaiheessa 1 luodun sovelluksen turvallisten sovellusten luetteloon (jota kutsutaan joskus turvallisten luetteloksi) siirtymällä Customer Insightsiin ja antamalla sovellukselle **katseluoikeuden**. Lisätietoja on kohdassa [Käyttöoikeudet](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Voit lisätä vaiheessa 1 luodun sovelluksen turvallisten sovellusten luetteloon (jota kutsutaan joskus turvallisten luetteloksi) siirtymällä Customer Insightsiin ja antamalla sovellukselle **katseluoikeuden**. Lisätietoja on kohdassa [Käyttöoikeudet](/dynamics365/ai/customer-insights/pm-permissions).
 7. Päivitä **Järjestelmänvalvonta > Määritä > Avainsäilön parametrit** -sivulla Commerce HQ -sovelluksessa kentät alla kuvatulla tavalla: 
 
 - **Key Vault – URL-osoite**: "KeyVaultURL" (edellä olevasta vaiheesta 3).

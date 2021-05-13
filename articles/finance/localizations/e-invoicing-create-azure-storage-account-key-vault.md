@@ -2,7 +2,7 @@
 title: Azure-tallennustilin ja avainsäilön luominen
 description: Tässä ohjeaiheessa kerrotaan, miten luodaan Azure-tallennustili ja avainsäilö.
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893799"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963236"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Azure-tallennustilin ja avainsäilön luominen
 
@@ -80,6 +80,10 @@ Tässä aiheessa suoritetaan kaksi päävaihetta:
 11. Valitse **Lisää** ja sitten **Tallenna avainsäilön muutokset**.
 12. Kopioi **Yhteenveto**-sivulla avainsäilön **DNS nimi** -arvo. Tätä arvoa käytetään palvelun RCS:ssä määrittämiseen ja sitä kutsutaan *avainsäilön URI-tunnukseksi*.
 
+> [!NOTE]
+> Jos haluat lisäsuojausominaisuuksia tallennustilille, määritä Azure Defender for Storage.
+> 
+> Lisätietoja on kohdassa [Azure Defender for Storagen esittely](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

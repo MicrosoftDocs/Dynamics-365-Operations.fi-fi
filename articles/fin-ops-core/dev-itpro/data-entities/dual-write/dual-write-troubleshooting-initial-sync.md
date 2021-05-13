@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c716707140c85b06ad2f084c10c4b2d0ecfea82e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754011"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941052"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Ongelmien vianmääritys synkronoinnin aikana
 
@@ -192,7 +192,7 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
 6. Suorita uudelleen **Asiakkaat V3 (tilit)** -yhdistämismäärityksen ensimmäinen synkronointi. Koska muutosten seuranta on poistettu käytöstä, **InvoiceAccount**- ja **ContactPersonId** -tiedot synkronoidaan Finance and Operations -sovelluksesta Dataverse en.
 7. **InvoiceAccount**- ja **ContactPersonId** -tietojen synkronoinnissa Dataversesta Finance and Operations -sovelluksiin on käytettävä tietojen integrointiprojektia.
 
-    1. Luo Power Appsissa tietojen integrointiprojekti **Sales.Account**- ja **Finance and Operations apps.Customers V3** -taulujen välille. Tietojen suunnan on oltava peräisin Dataversestä Finance and Operations -sovellukseen. Koska **InvoiceAccount** on uusi kaksoiskirjoituksen määrite, sen ensimmäinen synkronointi kannattaa ehkä ohittaa. Lisätietoja on kohdassa [Tietojen integrointi Dataverse -ratkaisuun](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. Luo Power Appsissa tietojen integrointiprojekti **Sales.Account**- ja **Finance and Operations apps.Customers V3** -taulujen välille. Tietojen suunnan on oltava peräisin Dataversestä Finance and Operations -sovellukseen. Koska **InvoiceAccount** on uusi kaksoiskirjoituksen määrite, sen ensimmäinen synkronointi kannattaa ehkä ohittaa. Lisätietoja on kohdassa [Tietojen integrointi Dataverse -ratkaisuun](/power-platform/admin/data-integrator).
 
         Seuraavassa kuvassa on projekti, joka päivittää **CustomerAccount**- ja **ContactPersonId**-määritteet.
 

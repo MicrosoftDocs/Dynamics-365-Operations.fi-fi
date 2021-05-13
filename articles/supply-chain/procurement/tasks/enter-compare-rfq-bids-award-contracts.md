@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811987"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920578"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia
 
@@ -32,7 +32,7 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Kirjoita vastaus toimittajana
 
-1. Valitse koontinäytössä **Toimittajan tarjoukset**.
+1. Valitse **Toimittajayhteistyö \> Työtilat \> Toimittajan tarjoukset**.
 2. Etsi **Uudet tarjouskutsut** -luettelosta juuri lähetetty tarjouspyyntö. Valitsemalla tarjouspyynnön voit tarkistaa, mitä pyydettiin.
 3. Valitse **tarjouspyynnön liitteet** tarkastellaksesi mitä tahansa lisättyjä liitteitä.
 4. Valitse **Tarjous** tehdäksesi kentistä muokattavia. Huomaa, että **Tarjouksen edistyminen** -kentän arvoksi on asetettu **Toimittaja päivittää**.

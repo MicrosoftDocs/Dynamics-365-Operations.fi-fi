@@ -1,8 +1,8 @@
 ---
-title: Luo ja käsittele määritysten noudattaminen
+title: Määrityksistä poikkeamisten luonti ja käsittely
 description: Tässä aiheessa kerrotaan, miten voit hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella.
 author: perlynne
-ms.date: 08/07/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,57 +13,226 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4f7e61adf37e74bdb082270b689cf0375ccc7f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 06a56a694f7a80d65cb46d08744e78d8361cee3b
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833950"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956203"
 ---
-# <a name="create-and-process-a-conformance"></a>Luo ja käsittele määritysten noudattaminen
+# <a name="create-and-process-nonconformances"></a>Määrityksistä poikkeamisten luonti ja käsittely
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten voit hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella. Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja. Tämän menettelyn suorittaa yleensä laatuassistentti.  Edellytyksenä on suorittaa [Tarkista tavaroiden laatu](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) -ohjeet. Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla. Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa.
+Tässä aiheessa kerrotaan, miten voit hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella. Määrityksistä poikkeamisen hallinnan hoitaa yleensä laatutyöntekijä. Edellytyksenä laatutilauksen on oltava käytettävissä. (Lisätietoja laatutilauksen luomisesta on kohdassa [Tarkista tavaroiden laatu](inspect-quality-goods.md).)
 
-
-## <a name="select-a-quality-order"></a>Valitse laatutilaus.
-1. Valitse siirtymisruudussa **Moduulit > Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Laadunhallinta > Laatutilaukset**.
-2. Valitse [Tarkista tavaroiden laatu](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) -ohjeessa luotu laatutilaus listasta.  
+Ennen kuin käyttäjä voi käsitellä määrityksistä poikkeamisen hyväksynnän, työntekijä on liitettävä niihin **Henkilö**-kentässä **Käyttäjät**-sivulla. Ennen kuin käyttäjä voi käyttää asiakirjan huomautuksia, **Ota tiedoston käsittely käyttöön** -kentän arvoksi on asetettava *Kyllä* käyttäjän asetuksissa.
 
 ## <a name="create-a-nonconformance"></a>Luo määrityksistä poikkeaminen
-1. Valitse toimintoruudussa **Kyselyt**.
-2. Valitse **Määrityksistä poikkeamiset**.
-3. Valitse **Uusi**.
-4. Valitse **Ongelman tyyppi** -kentän avattavasta valikosta ongelma, joka löydettiin tarkastusprosessin aikana.  
-5. Valitse **OK**.
 
-## <a name="approvereject-a-nonconformance"></a>Hyväksy tai hylkää määrityksistä poikkeaminen
-1. Valitse **Toiminnot**.
-2. Valitse **Hyväksy määrityksistä poikkeaminen**. Hyväksy tässä esimerkissä määrityksistä poikkeamisen. Hyväksytyt määrityksistä poikkeamiset voidaan liittää liittyviin toimintoihin tallentamaan työ, joka tehdään osana määrityksistä poikkeamisen käsittelyä ja, kuten tässä ohjeaiheessa, korjauskäsittelyn käsittelyä.  
-3. Valitse **Kyllä**.
+Voit luoda määrityksistä poikkeamisen seuraavasti.
 
-## <a name="create-a-correction-action"></a>Luo korjaustoiminto
-1. Valitse **Korjaukset**.
-2. Valitse **Uusi**.
-3. Valitse uuden rivin **Henkilöstönumero**-kentästä haluamasi tietue avattavasta valikosta.
-4. Klikkaa **Valitse**.
-5. Valitse **Liitä**. Luo korjausta koskeva huomautus. Tässä esimerkissä toimintona on yhteydenotto toimittajaan ja keskustelu määrityksistä poikkeamistapauksesta.  
-6. Valitse **Uusi**.
-7. Valitse **Muistiinpano**. Raporttiasetusten mukaan eri asiakirjatyyppejä voi tulostaa raportteihin, jotka liittyvät määrityksistä poikkeamisen hallintaan.  
-8. Kirjoita **Kuvaus**-kenttään arvo.
-9. Sulje sivu.
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Valitse **Luo määrityksistä poikkeaminen** -valintaikkunan **Ongelman tyyppi** -kentässä ongelman tyyppi, joka löydettiin tarkastusprosessin aikana.
+1. Valitse **OK**.
 
-## <a name="maintain-a-correction"></a>Ylläpidä korjausta
-1. Valitse **Merkitse valmiiksi**.
-2. Valitse **OK**.
-3. Sulje sivu.
+## <a name="approve-or-reject-a-nonconformance"></a>Hyväksy tai hylkää määrityksistä poikkeaminen
+
+Voit hyväksyä tai hylätä määrityksistä poikkeamisen seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä korjauksen vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Toiminnot \> Hyväksy määrityksistä poikkeaminen** hyväksyäksesi määrityksistä poikkeamisen tai **Toiminnot \> Hylkää määrityksistä poikkeaminen** hylätäksesi sen. Voit liittää hyväksytyt määrityksistä poikkeamisen [liittyviin toimintoihin](../quality-operations.md). Näin voit kirjata määrityksistä poikkeamisen käsittelyn ja korjauskäsittelyn osana tehtyä työtä.
+1. Järjestelmä pyytää vahvistamaan valinnan. Jatka valitsemalla **Kyllä**.
+
+## <a name="add-operations-and-other-details-to-nonconformances"></a>Toimintojen ja muiden tietojen lisääminen määrityksistä poikkeamisiin
+
+Kun olet luonut määrityksistä poikkeamisen, voit alkaa lisätä siihen liittyviä toimintoja ja määrittää näiden toimintojen lisätietoja. Voit lisätä liittyvät toiminnot vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+Perustietojen lisäksi voit lisätä toimintoon seuraavia tietoja:
+
+- **Nimikkeet** – Voit luoda luettelon korjauksen suorittamiseen kulutetuista nimikkeistä. Nimikkeet voivat olla esimerkiksi tuotteita, joita tarvitaan valmiin tuotteen korjausta varten tarvittavien laitteiden tai ainesosien korjaamiseen.
+- **Laatukulut** – Voit luoda luettelon kuluista, jotka syntyvät tai laskutetaan ulkoisista lähteistä.
+- **Työaikaraportti** – Voit luoda lokin ajasta, jonka kukin työntekijä käyttää toiminnossa.
+
+Muut asetukset ovat valinnaisia. Kunkin nimikkeen, laatukulujen ja aikaraportin kustannukset lasketaan yhteen, ja ne näkyvät toiminnossa. Toiminnon **Kustannus**-kenttää ei voi muokata suoraan.
+
+### <a name="create-an-operation-for-a-nonconformance"></a>Toiminnon luominen määrityksistä poikkeamiselle
+
+Voit luoda toiminnon määrityksistä poikkeamiselle seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä toimintoja tai päivittää niitä vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Liittyvät toiminnot**.
+1. Valitse **Liittyvät toiminnot** -sivulla toimintoruudussa **Uusi** lisätäksesi rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+
+    - **Toiminto** – Valitse määrityksistä poikkeamista varten suoritettavan toiminnon koodi.
+    - **Syy** – Kirjoita yksityiskohtainen kuvaus, jossa kerrotaan, miksi toiminto on pakollinen.
+    - **Myyntitilaus** – Jos valittu toimintokoodi liittyy myyntitilauksen tyyppiin, valitse myyntitilaus, johon linkität toiminnon.
+    - **Ostotilaus** – Jos valittu toimintokoodi liittyy ostotilauksen tyyppiin, valitse ostotilaus, johon linkität toiminnon.
+
+1. Sulje sivut.
+
+### <a name="add-items-to-an-operation"></a>Nimikkeiden lisääminen toimintoon
+
+Voit lisätä nimikkeitä toimintoon noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä toimintoja tai päivittää niitä vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Liittyvät toiminnot**.
+1. Valitse **Liittyvät toiminnot** -sivulla toiminto, johon haluat lisätä nimikkeitä.
+1. Valitse toimintoruudussa **Nimikkeet**.
+1. Valitse **Liittyvät toiminnot** -sivulla toimintoruudussa **Uusi** lisätäksesi rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+
+    - **Nimiketunnus** – Valitse tuote, joka kulutetaan osana valittua toimintoa.
+    - **Määrä** – Kirjoita kulutettava nimikemäärä.
+
+    > [!NOTE]
+    > Voit tarkastella nimikkeen kustannusta **Kustannus**-kentässä **Yleiset**-välilehdessä. Siellä näkyvä kustannus tulee **Vapautettu tuote** -sivulla määritettyjen kustannusten perusteella. Kustannusta ei voi päivittää suoraan **Liittyvä toimintonimike**-sivulla. Kaikkien **Liittyvät toimintonimikkeet** -sivulla lisättyjen nimikkeiden kustannus lisätään automaattisesti **Kustannus**-kenttään **Liittyvät toiminnot** -sivulla.
+
+1. Toista edellinen vaihe kullekin lisättävälle nimikkeelle.
+1. Sulje sivut.
+
+### <a name="add-quality-charges-to-an-operation"></a>Laatukulujen lisääminen toimintoon
+
+Voit lisätä laatukuluja toimintoon noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä toimintoja tai päivittää niitä vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Liittyvät toiminnot**.
+1. Valitse **Liittyvät toiminnot** -sivulla toiminto, johon haluat lisätä laatukuluja.
+1. Valitse toimintoruudussa **Laatukulut**.
+1. Valitse **Liittyvät toimintokulut** -sivulla toimintoruudussa **Uusi** lisätäksesi rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+
+    - **Kulujen koodi** – Valitse lisättävä laatukulu.
+    - **Kuvaus** – Anna kulun yksityiskohtainen kuvaus.
+    - **Kulujen arvo** – Anna veloitettavan kulun summa.
+
+1. Toista edellinen vaihe kullekin lisättävälle kululle.
+1. Sulje sivut.
+
+> [!NOTE]
+> **Kulujen arvo** -kentän summa lasketaan automaattisesti kaikkien laatukulujen osalta ja lisätään muihin summiin **Kustannus**-kentässä **Liittyvät toiminnot** -sivulla.
+
+### <a name="create-a-timesheet-on-an-operation"></a>Aikaraportin luominen toimintoa varten
+
+Voit lisätä aikaraportin toimintoon noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä toimintoja tai päivittää niitä vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Liittyvät toiminnot**.
+1. Valitse **Liittyvät toiminnot** -sivulla toiminto, johon haluat lisätä aikaraportin.
+1. Valitse toimintoruudussa **Aikaraportti**.
+1. Valitse **Liittyvän toiminnon aikaraportit** -sivulla toimintoruudussa **Uusi** lisätäksesi rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+
+    - **Päivämäärä** – Määritä päivämäärä, jolloin työ on tehty. Oletusarvoisesti tämä kenttä on nykyinen päivämäärä.
+    - **Työntekijät** – Valitse työntekijä, joka teki työn. Oletusarvon mukaan tässä kentässä on työntekijä, joka on määritetty nykyiselle käyttäjälle.
+    - **Toiminnon tunnit** – Kirjoita valitussa toiminnossa tehtyjen tuntien määrä.
+    - **Laskutettu** – Valitse tämä valintaruutu, jos aika on veloitettu laskussa asiakkaalle tai toimittajalle.
+
+    > [!NOTE]
+    > Voit tarkastella kustannusta **Kustannus**-kentässä **Yleiset**-välilehdessä. Kustannukset lasketaan käyttämällä **Varastonhallinnan parametrit** -sivulla määrittämääsi hintaa.
+
+1. Toista edellinen vaihe kullekin lisättävälle aikaraportin riville.
+1. Sulje sivut.
+
+> [!NOTE]
+> **Kustannus**-kentän summa lasketaan kaikkien aikaraportin rivien osalta ja lisätään muihin summiin **Kustannus**-kentässä **Liittyvät toiminnot** -sivulla.
+
+## <a name="add-a-correction-to-a-nonconformance"></a>Korjauksen lisääminen määrityksistä poikkeamiseen
+
+Voit lisätä korjauksen määrityksistä poikkeamiseen seuraavasti:
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä korjauksen vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Korjaukset**.
+1. Valitse **Korjaukset**-sivulla toimintoruudussa **Uusi** lisätäksesi rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+
+    - **Diagnostiikka** – Valitse diagnostiikkatyyppi, joka määrittää luotavien korjausten tyypin.
+    - **Työntekijä** – Valitse henkilö, joka on vastuussa korjauksesta.
+    - **Korjausjärjestys** – Valitse vaihtoehto, joka määrittää, miten korjaus priorisoidaan (*pieni*, *normaali* tai *suuri*).
+    - **Vaadittu päivämäärä** – Määritä päivämäärä, jolloin korjaustoimintoa pyydettiin.
+    - **Suunniteltu päivämäärä** – Syötä päivämäärä, jolloin korjaus on tarkoitus tehdä loppuun.
+    - **Lyhytaikainen ratkaisu** – Valitse tämä valintaruutu, jos korjaustoiminto korjaa määrityksistä poikkeamisen vain lyhyen ajan.
+
+1. Sulje sivut.
+
+## <a name="mark-a-correction-as-completed"></a>Korjauksen merkitseminen valmiiksi
+
+Voit merkitä määrityksistä poikkeamisen korjauksen valmiiksi seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+
+    > [!NOTE]
+    > Voit lisätä korjauksen vain hyväksyttyihin määrityksistä poikkeamisiin.
+
+1. Valitse toimintoruudussa **Korjaukset**.
+1. Valitse **Korjaukset**-sivun ruudukosta korjaus, jonka haluat merkitä valmiiksi.
+1. Valitse toimintoruudussa **Merkitse valmiiksi**.
+1. Järjestelmä pyytää vahvistamaan valinnan. Jatka valitsemalla **OK**. **Valmistumispäivämäärä ja -aika** -kentän arvoksi tulee nykyinen päivämäärä ja aika, ja **Valmis**-valintaruutu on valittuna.
+1. Sulje sivu.
+
+## <a name="reopen-a-completed-correction"></a>Valmiin korjauksen avaaminen uudelleen
+
+Voit avata valmiin korjauksen uudelleen seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Määrityksistä poikkeamiset**.
+1. Etsi ja valitse luettelosta päivitettävä määrityksistä poikkeaminen.
+1. Valitse toimintoruudussa **Korjaukset**.
+1. Valitse **Korjaukset**-sivun ruudukosta korjaus, jonka haluat avata uudelleen.
+1. Valitse toimintoruudussa **Avaa uudelleen**.
+1. Järjestelmä pyytää vahvistamaan valinnan. Jatka valitsemalla **OK**. Arvo poistetaan **Valmistumispäivämäärä ja -aika** -kentästä, ja **Valmis**-valintaruudun valinta poistetaan.
+1. Sulje sivu.
+
+Korjaukseen voi nyt tehdä lisämuokkauksia tai päivityksiä. Kun olet valmis, voit merkitä korjauksen valmiiksi uudelleen.
 
 ## <a name="close-a-nonconformance"></a>Sulje määrityksistä poikkeaminen
-1. Valitse **Toiminnot**.
-2. Valitse **Sulje määrityksistä poikkeaminen**.
-3. Valitse **Kyllä**.
-4. Sulje sivut.
 
+Voit sulkea määrityksistä poikkeamisen seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Laatutilaukset**.
+1. Valitse ruudukosta laatutilaus.
+1. Valitse toimintoruudussa **Tiedustelut \> Määrityksistä poikkeamiset**.
+1. Valitse **Määrityksistä poikkeamiset** -sivulla ruudukosta kohteena oleva määrityksistä poikkeaminen.
+1. Valitse toimintoruudussa **Toiminnot \> Sulje määrityksistä poikkeaminen**.
+1. Järjestelmä pyytää vahvistamaan valinnan. Jatka valitsemalla **Kyllä**.
+1. Sulje sivut.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Laadunhallinnan yleiskuvaus](../quality-management-processes.md)
+- [Laadun ja määrityksistä poikkeamisen hallinnan ottaminen käyttöön](../enable-quality-management.md)
+- [Määrityksistä poikkeamisia hyväksyvät työntekijät](../quality-responsible-workers.md)
+- [Määrityksistä poikkeamisia koskevat karanteenivyöhykkeet](../quality-quarantine-zones.md)
+- [Määrityksistä poikkeamisten diagnostiikkatyypit](../quality-diagnostic-types.md)
+- [Määrityksistä poikkeamisten laatukulut](../quality-charges.md)
+- [Toiminnot määrityksistä poikkeamisille](../quality-operations.md)
+- [Laadunhallinta varastoprosesseja varten](../quality-management-for-warehouses-processes.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

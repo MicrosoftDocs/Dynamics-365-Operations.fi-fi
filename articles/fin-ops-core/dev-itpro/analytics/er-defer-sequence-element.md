@@ -2,7 +2,7 @@
 title: ER-muotoisten sarjaelementtien suorittamisen lykkäys
 description: Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin (ER) muotoisten sarjaelementtien suorittamista lykätään.
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894097"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944506"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>ER-muotoisten sarjaelementtien suorittamisen lykkäys
 
@@ -57,14 +57,14 @@ Jos et ole vielä suorittanut tätä esimerkkiä ohjeaiheessa [ER-muotoisten XML
 
 | Sisällön kuvaus            | Tiedostonimi |
 |--------------------------------|-----------|
-| ER-tietomallin konfigurointi    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-mallin yhdistämismääritys | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-tietomallin konfigurointi    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-mallin yhdistämismääritys | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Ennen kuin aloitat, sinun on myös ladattava ja tallennettava seuraavat esimerkkinä käytettävän ER-ratkaisun määritykset.
 
 | Sisällön kuvaus     |Tiedostonimi |
 |-------------------------|----------|
-| ER-muodon konfigurointi | [Format to learn deferred sequences.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-muodon konfigurointi | [Format to learn deferred sequences.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>ER-mallikonfiguraation tuonti
 
@@ -169,7 +169,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
 1. Vallitse **Muodon suunnittelu** -sivulla **Suorita**.
 2. Lataa verkkoselaimen tarjoama tiedosto ja avaa se tarkistusta varten.
 
-    ![Ladattu tiedosto](./media/ER-DeferredSequence-Run.png)
+    ![Ladattu malliraporttitiedosto](./media/ER-DeferredSequence-Run.png)
 
 Huomaa, että yhteenvetorivillä 22 on käsiteltyjen tapahtumien veroarvojen summa. Koska muoto on määritetty käyttämään arvoa **model.Data.Summary.Total** sitovasti tämän summan palauttamista varten, summa lasketaan kutsumalla mallin yhdistämismääritystä käyttävän *GroupBy*-tyypin **Ryhmitelty**-tietolähteen **TotalSum**-kooste. Tämän koosteen laskemiseksi mallin yhdistämismääritys iteroi kaikki tapahtumat, jotka on valittu **Suodatettu**-tietolähteessä. Vertaamalla rivien 21 ja 22 suoritusaikoja voidaan päätellä, että summan laskemiseen kului 10 millisekuntia (ms). Vertaamalla rivien 2 ja 21 suoritusaikoja voidaan päätellä, että kaikkien tapahtumarivien luomiseen kului 7 millisekuntia. Siten yhteisaika oli 17 ms.
 
@@ -202,7 +202,7 @@ Jos tapahtumien määrä on huomattavasti suurempi kuin tässä esimerkissä, su
 12. Valitse ensin **Tallenna** ja sitten **Suorita**.
 13. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredSequence-Run1.png)
+    ![Ladattu tiedosto - Summatut veroarvot](./media/ER-DeferredSequence-Run1.png)
 
     Rivi 21 sisältää kaikille käsitellyille tapahtumille luotua tulosta tietolähteenä käyttäen lasketun veroarvojen juoksevan summan. Tämä tietolähde alkaa raportin alusta ja jatkuu viimeisimpään verotapahtumaan asti. Rivi 22 sisältää kaikkien sellaisten käsiteltyjen tapahtumien veroarvojen summan, jotka on laskettu mallin yhdistämismäärityksessä käyttämällä *GroupBy* -tyypin tietolähdettä. Huomaa, että nämä arvot ovat samat. Siksi voidaan käyttää tulokseen perustuvaa yhteenlaskua **GroupBy**-tyypin käytön sijaan. Vertaamalla rivien 2 ja 21 suoritusaikoja voidaan päätellä, että kaikkien tapahtumarivien luomiseen ja summien laskemiseen kului 9 millisekuntia. Siksi muokattu muoto on noin kaksi kertaa alkuperäistä muotoa nopeampi tietorivien luomisessa ja veroarvojen summien laskemisessa.
 
@@ -211,7 +211,7 @@ Jos tapahtumien määrä on huomattavasti suurempi kuin tässä esimerkissä, su
 16. Valitse ensin **Tallenna** ja sitten **Suorita**.
 17. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredSequence-Run2.png)
+    ![Ladattu tiedosto muokatulla kaavalla](./media/ER-DeferredSequence-Run2.png)
 
     Huomaa, että veroarvojen juokseva summa viimeisellä tapahtumatietojen rivillä vastaa nyt yhteenvetorivin summaa.
 
@@ -224,7 +224,7 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 3. Valitse ensin **Tallenna** ja sitten **Suorita**.
 4. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredSequence-Run3.png)
+    ![Ladattu tiedosto raportin ylätunnisteessa yhteenvetoa varten](./media/ER-DeferredSequence-Run3.png)
 
     Huomaa, että yhteenvetorivin 2 veroarvojen summa on nyt 0 (nolla), koska tämä summa lasketaan nyt luodun tuloksen perusteella. Kun rivi 2 luodaan, luotu tulos ei vielä sisällä rivejä, joilla on tapahtumatietoja. Voit määrittää tämän muodon lykkäämään **Raportti\\Rivit\\Yhteenveto** -sarjaelementtiä siihen asti, että **Raportti\\Rivit\\Tietue** -sarjaelementti on suoritettu kaikkien verotapahtumien osalta.
 
@@ -238,7 +238,7 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 3. Valitse ensin **Tallenna** ja sitten **Suorita**.
 4. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredSequence-Run4.png)
+    ![Ladattu tiedosto - lykätty suoritus](./media/ER-DeferredSequence-Run4.png)
 
     **Raportti\\Rivit\\Yhteenveto** -sarjaelementti suoritetaan nyt vasta, kun kaikki muut sen pääelementin **Raportti\\Rivit** alaiset kohteet on suoritettu. Siten se suoritetaan sen jälkeen, kun **Raportti\\Rivit\\Tietue** -sarjaelementti on suoritettu kaikkien **model.Data.List** -tietolähteen verotapahtumien osalta. Tämä ilmenee rivien 1, 2 ja 3 ja viimeisen rivin 22 suoritusajoista.
 

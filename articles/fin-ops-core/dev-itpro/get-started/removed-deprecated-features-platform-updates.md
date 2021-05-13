@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814317"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923535"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -30,7 +30,7 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Toiminto poistettiin 28. tammikuuta 2021
 
@@ -123,7 +123,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Yleensä mukautettu koodi tarjoaa rajoitettuja etuja samaan aikaan ja edellyttää huomattavaa resursointi- ja käsittelytukea. Mukautettua koodia käytetään ensisijaisesti raportin laatijoiden kutsussa julkisiin menetelmiin mukautetusta koodikokoonpanosta. Pilvipohjainen palvelu ei kuitenkaan tue SSRS-raporttien mukautettujen kokoonpanojen viittauksia. |
-| **Onko toinen ominaisuus korvannut?**   | Raporttien laatijat voivat halutessaan jatkaa julkisten .NET-API-liittymien vertailemista mistä tahansa tekstiruudun lausekkeesta. Lisätietoja on kohdassa [Koodin lisääminen raporttiin (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Onko toinen ominaisuus korvannut?**   | Raporttien laatijat voivat halutessaan jatkaa julkisten .NET-API-liittymien vertailemista mistä tahansa tekstiruudun lausekkeesta. Lisätietoja on kohdassa [Koodin lisääminen raporttiin (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
 | **Tuotealueet, joihin vaikutetaan**         | RDL:ssä määritetyn sovellusraporttimallin alijoukko, joka sisältää mukautettua koodia. |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Versiolla 10.0.13, kääntäjä alkaa antaa varoituksen tapauksissa, joissa mukautettua koodia havaitaan SSRS-raportti määritelmässä. Voit korjata ongelman avaamalla raportin rakennemäärityksen ja poistamalla kaikki mukautetut koodiartefaktit. Tämä varoitus korvataan kääntäjän virheellä tulevassa päivityksessä.   |
@@ -178,7 +178,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | IP-osoitteiden turvallisiin osoitteisiin siirtymisprosessi on muuttunut. Itsepalvelu ei enää tue turvallisia IP-osoitteita. |
-| **Onko toinen ominaisuus korvannut?**   | Lisätietoja on kohdassa [Azure Active Directoryn ehdollisen käytön konfigurointi](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Onko toinen ominaisuus korvannut?**   | Lisätietoja on kohdassa [Azure Active Directoryn ehdollisen käytön konfigurointi](/appcenter/general/configuring-aad-conditional-access).|
 | **Tuotealueet, joihin vaikutetaan**         | Suojaus |
 | **Käytön asetukset**              | Pilvi |
 | **Tila**                         | **Vanhentunut:** Tämä ominaisuus on täysin vanhentunut itsepalvelukäyttöönotoissa. |
@@ -223,7 +223,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Työnkulku |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Käyttäjän valinnan avattava luettelo poistettiin pyynnön muutoksen valintaikkunasta Platform update 32 -päivityksessä. Pyynnön muutospyynnöt lähetetään automaattisesti aloittajalle aiemmin määritetyllä tavalla. Lisätietoja tästä toiminnosta on kohdassa [Toiminnot työnkulun hyväksyntäprosesseissa](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
+| **Tila**                         | Käyttäjän valinnan avattava luettelo poistettiin pyynnön muutoksen valintaikkunasta Platform update 32 -päivityksessä. Pyynnön muutospyynnöt lähetetään automaattisesti aloittajalle aiemmin määritetyllä tavalla. Lisätietoja tästä toiminnosta on kohdassa [Toiminnot työnkulun hyväksyntäprosesseissa](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>Upotetut porautumiseen käytettäviä linkkejä ei enää tueta sivutetuissa asiakirjoissa, jotka pilvipohjainen palvelu hahmontaa 
 
@@ -233,7 +233,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Nro |
 | **Tuotealueet, joihin vaikutetaan**         | Raportointi |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Tämä toiminto poistetaan käytöstä palvelusta.<br><br>Uusi asiakasohjelma tarjoaa useita vaihtoehtoja näkymien tuottamiseen. Se luo myös linkkejä automaattisesti sovelluksessa siirtymistä varten. Palvelun hahmontamia sivutettuja asiakirjoja suositellaan ulkoista viestintää varten sähköpostissa, arkistoinnissa ja vastaanottajien tulostuksissa. Asiakirjojen esikatselua suoraan selaimessa on parannettu. Näin voidaan käyttää paikallisia tulostimia suoraan. Lisätietoja on kohdassa [PDF-asiakirjojen esikatselu upotetussa katseluohjelmassa](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
+| **Tila**                         | Tämä toiminto poistetaan käytöstä palvelusta.<br><br>Uusi asiakasohjelma tarjoaa useita vaihtoehtoja näkymien tuottamiseen. Se luo myös linkkejä automaattisesti sovelluksessa siirtymistä varten. Palvelun hahmontamia sivutettuja asiakirjoja suositellaan ulkoista viestintää varten sähköpostissa, arkistoinnissa ja vastaanottajien tulostuksissa. Asiakirjojen esikatselua suoraan selaimessa on parannettu. Näin voidaan käyttää paikallisia tulostimia suoraan. Lisätietoja on kohdassa [PDF-asiakirjojen esikatselu upotetussa katseluohjelmassa](../analytics/preview-pdf-documents.md). |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poistettujen tai vanhentuneiden toimintojen aiemmat ilmoitukset
 Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa on kohdassa [Poistetut tai vanhentuneet toiminnot edellisissä versioissa](../migration-upgrade/deprecated-features.md).

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: shajain
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-11-03
-ms.openlocfilehash: 364cc5adf0358ffa952750149ad31d62cbd35e87
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fa93b1262049d80148ff23b3d7223ec0f6c2fe68
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751431"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941163"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Dynamics 365 Commerce -hinnoittelumoduulin käyttäminen Dynamics 365 Salesin kanssa
 
@@ -31,7 +31,7 @@ Tässä aiheessa kuvataan, kuinka Microsoft Dynamics 365 Commerce -hinnoittelumo
 
 Dynamics 365 Commerce -hinnoittelumoduuli tukee useimpia kuluttajakaupan (B2C) hinnoitteluskenaarioita, kuten myymälätason hinnoittelua, kumppanuus- ja lojaalisuushinnoittelua, yhdistelmäalennuksia, määräalennuksia ja kynnysalennuksia. Hinnoittelumoduuli määrittää tietyn tarjouksen tai tilauksen parhaan hinnan käyttämällä monimutkaisia sääntöjä.
 
-Kun käytät [kaksoiskirjoittamista ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview), hinnoittelutarpeisiisi on kolme vaihtoehtoa. Voit käyttää kiinteähintaista hinnoittelua, joka tulee Dynamics 365 Salesin hinnastosta, hinnoittelumoduulia Dynamics 365 Supply Chain Managementissa, tai hinnoittelumoduulia Dynamics 365 Commercessa. Näiden vaihtoehtojen joukossa on Commercen hinnoittelumoduuli, joka soveltuu parhaiten asiakaskaupan skenaarioihin.
+Kun käytät [kaksoiskirjoittamista ](./dual-write-overview.md), hinnoittelutarpeisiisi on kolme vaihtoehtoa. Voit käyttää kiinteähintaista hinnoittelua, joka tulee Dynamics 365 Salesin hinnastosta, hinnoittelumoduulia Dynamics 365 Supply Chain Managementissa, tai hinnoittelumoduulia Dynamics 365 Commercessa. Näiden vaihtoehtojen joukossa on Commercen hinnoittelumoduuli, joka soveltuu parhaiten asiakaskaupan skenaarioihin.
 
 ## <a name="use-the-commerce-pricing-engine-in-sales"></a>Käytä Commercen hinnoittelumoduulia Salesissa
 
@@ -42,7 +42,7 @@ Kun käyttäjät aloittavat tarjouksen Salesissa, kaksoiskirjoituskehys kopioi t
 
 ## <a name="prerequisites"></a>Edellytykset
 
-- Ennen kuin voit käyttää Commercen hinnoittelu moduulia Salesissa, sinun on suoritettava vaiheet kohdassa [Mahdollisesta asiakkaasta käteiseen kaksoiskirjoituksella](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/).
+- Ennen kuin voit käyttää Commercen hinnoittelu moduulia Salesissa, sinun on suoritettava vaiheet kohdassa [Mahdollisesta asiakkaasta käteiseen kaksoiskirjoituksella](./dual-write-prospect-to-cash.md).
 - Sinun on poistettava kauppasopimuksen arviointi käytöstä manuaaliselle syötölle seuraamalla näitä vaiheita:
 
     1. Siirry Commerce-ympäristössäsi kohtaan **Myyntireskontra \> Asetukset \> Myyntireskontran parametrit**.
@@ -50,7 +50,7 @@ Kun käyttäjät aloittavat tarjouksen Salesissa, kaksoiskirjoituskehys kopioi t
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Prospektista käteiseksi -kaksoiskirjoitus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+[Prospektista käteiseksi -kaksoiskirjoitus](./dual-write-prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

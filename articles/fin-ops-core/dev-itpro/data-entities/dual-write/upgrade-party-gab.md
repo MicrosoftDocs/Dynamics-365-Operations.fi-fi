@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857367"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941080"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirja ja yleinen osoitekirja
 
@@ -52,11 +52,11 @@ Nämä edellytykset vaaditaan:
 
 2. Kirjaudu [Microsoft Azure -palveluun](https://portal.azure.com/).
 
-3. [Resurssiryhmän](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal) luonti.
+3. [Resurssiryhmän](/azure/azure-resource-manager/management/manage-resource-groups-portal) luonti.
 
-4. Luo [tallennustili](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) luomallesi resurssiryhmälle.
+4. Luo [tallennustili](/azure/storage/common/storage-account-create?tabs=azure-portal) luomallesi resurssiryhmälle.
 
-5. Luo [Data Factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) yllä luomallesi resurssiryhmälle.
+5. Luo [Data Factory](/azure/data-factory/quickstart-create-data-factory-portal) yllä luomallesi resurssiryhmälle.
 
 6. Avaa Data Factory ja valitse **Tee & valvo** -ruutu.
 
@@ -81,7 +81,7 @@ Nämä edellytykset vaaditaan:
     FO Linked Service_properties_type Properties_service Principal Id | Määritä sovelluksen asiakkaan tunnus.
     Dynamics Crm Linked Service_properties_type Properties_username | Dynamics-yhteyden muodostanut käyttäjänimi.
 
-    Lisätietoja on ohjeaiheessa [Resource Manager -mallin manuaalinen luominen jokaiselle ympäristölle](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [linkitetyt palvelun ominaisuudet](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties) ja [tietojen kopioiminen Azure Data Factoryn avulla](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Lisätietoja on ohjeaiheessa [Resource Manager -mallin manuaalinen luominen jokaiselle ympäristölle](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [linkitetyt palvelun ominaisuudet](/azure/data-factory/connector-dynamics-ax#linked-service-properties) ja [tietojen kopioiminen Azure Data Factoryn avulla](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Tarkista käyttöönoton jälkeen tietojoukot, tietovuo ja data factoryn linkitetty palvelu.
 
@@ -158,7 +158,7 @@ Nämä edellytykset vaaditaan:
 8. Tuo Finance and Operations -sovelluksen uudet **osapuoli**-tietueet.
 
     + Lataa `FONewParty.csv`-tiedosto Azure blob-objektisäilöstä. Polku on `partybootstrapping/output/FONewParty.csv`.
-    + Muunna `FONewParty.csv`-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto Finance and Operations -sovellukseen.  Jos csv-tuonti toimii sinulle, voit tuoda csv-tiedoston suoraan. Tuonti saattaa kestää muutamia tunteja sen mukaan, mikä tietomäärä on käytössä. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Muunna `FONewParty.csv`-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto Finance and Operations -sovellukseen.  Jos csv-tuonti toimii sinulle, voit tuoda csv-tiedoston suoraan. Tuonti saattaa kestää muutamia tunteja sen mukaan, mikä tietomäärä on käytössä. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../data-import-export-job.md).
 
     ![Dataverse-osapuolen tietueiden tuominen](media/data-factory-import-party.png)
 

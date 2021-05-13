@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830025"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954642"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Suunnittelutuotteiden muutostenhallinta
 
@@ -139,13 +139,14 @@ Kun tarkistat muutospyyntöä valitse toimintoruudun **Muutospyyntö**-välilehd
 
 Kuten kohdassa [Suunnitteluyritykset ja tietojen omistussäännöt](engineering-org-data-ownership-rules.md) on kuvattu, muokattavat tuotetiedot vaihtelevat sen mukaan, minkälainen yritys on käytössä (suunnitteluyritys vai operatiivinen yritys). Tietojen omistussääntöjä käytetään myös suunnittelun muutostilauksissa. Niinpä yritystyyppi, jossa suunnittelun muutostilaus luotiin, määrittää minkälaisia muutoksia voidaan tehdä. Seuraavassa on muutamia esimerkkejä:
 
-- **Suunnitteluyrityksen** suunnittelun muutostilauksissa voidaan tehdä perusmuutoksia suunnittelutietoihin. Voit esimerkiksi luoda uusia versioita tuotteesta, muuttaa tuotteen rakennetta tuoterakenteen avulla ja muuttaa suunnittelumääritteen arvoja. Valitse kunkin sellaisen tuotteen osalta, johon muutos vaikuttaa, seuraavat arvot **Vaikutus**-kentässä:
+- *Suunnitteluyrityksen* suunnittelun muutostilauksissa voidaan tehdä perusmuutoksia suunnittelutietoihin. Voit esimerkiksi luoda uusia versioita tuotteesta, muuttaa tuotteen rakennetta tuoterakenteen avulla ja muuttaa suunnittelumääritteen arvoja. Valitse kunkin sellaisen tuotteen osalta, johon muutos vaikuttaa, seuraavat arvot **Vaikutus**-kentässä:
 
     - **Ei mitään** – päivitä aiemmin luotu tuoteversio (version päivitys).
     - **Uusi versio** – luo uusi valittuun tuoteversioon perustuva versio.
-    - **Uusi tuote** – luo täysin uusi tuote tai tuotevariantti, joka perustuu valittuun tuoteversioon.
+    - **Uusi tuote** – luo täysin uusi tuote, joka perustuu valittuun tuoteversioon.
+    - **Uusi variantti** – luo uusi valittuun tuoteversioon perustuva variantti. Sen tuoterakenteen ja reitin tiedot kopioidaan.
 
-- **Operatiivisen yrityksen** suunnittelun muutostilauksissa voi muuttaa tuotteen logistisia tietoja. Voit esimerkiksi rikastaa aiemmin luotua tuoterakennetta hankinnan asetuksia, lisätä paikallisia reittejä tai paikallisia tuoterakenteita ja jopa rikastaa tuoterakennetta lisäämällä uusia tuoterakennerivejä paikallisia pakkausmateriaaleja, voiteluaineita tai paikallisella kielellä annettavia ohjeita varten. Käyttäjien operatiivisessa yrityksessä tekemät rikastukset säilytetään, kun uudet päivitykset lähetetään suunnitteluyrityksestä. Lisätietoja on kohdassa [Suunnitteluyritykset ja tietojen omistussäännöt](engineering-org-data-ownership-rules.md).
+- *Operatiivisen yrityksen* suunnittelun muutostilauksissa voi muuttaa tuotteen logistisia tietoja. Voit esimerkiksi rikastaa aiemmin luotua tuoterakennetta hankinnan asetuksia, lisätä paikallisia reittejä tai paikallisia tuoterakenteita ja jopa rikastaa tuoterakennetta lisäämällä uusia tuoterakennerivejä paikallisia pakkausmateriaaleja, voiteluaineita tai paikallisella kielellä annettavia ohjeita varten. Käyttäjien operatiivisessa yrityksessä tekemät rikastukset säilytetään, kun uudet päivitykset lähetetään suunnitteluyrityksestä. Lisätietoja on kohdassa [Suunnitteluyritykset ja tietojen omistussäännöt](engineering-org-data-ownership-rules.md).
 
     Kun suunnittelun muutostilauksia käsitellään suunnitteluyrityksessä, tuotteet luodaan ja/tai päivitetään suunnitteluyrityksessä. Niinpä jos myös tuotteen päätiedot päivitetään, tuotteet on vapautettava myös operatiivisiin yrityksiin.
 

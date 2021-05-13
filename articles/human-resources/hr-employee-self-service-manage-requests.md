@@ -2,7 +2,7 @@
 title: Virkavapaan ja poissaolopyyntöjen hallinta
 description: Tarkastele ja hyväksy loma- ja poissaolopyyntöjä Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 53d4651b60da63243547ee8a5da6e105705640c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 301b8978264dd3cb517652492a0b1791df63e6f3
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790737"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924800"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Loma- ja poissaolopyyntöjen hallinta
 
@@ -31,9 +31,20 @@ Hallitse poissaolopyyntöjä **Työntekijän itsepalvelujärjestelmän** -työti
 
 1. Valitse **Työntekijän itsepalvelu** -työtilassa **Oma tiimi**.
 
-2. Valitse **Oman ryhmän tiedot** -kohdan **Loma- ja poissaolo** -välilehti. 
+2. Valitse **Oman ryhmän tiedot** -kohdan **Loma- ja poissaolo** -välilehti.
 
 3. Tarkastele ja hyväksy tarvittaessa ryhmän jäsenten poissaolopyyntöjä.
+
+## <a name="preview-leave-request-workflow-experience-enhancements"></a>(Esiversio) Lomapyyntötyönkulun käyttökokemuksen parannukset
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+Tämä esikatselutoiminto sisältää seuraavat parannukset:
+
+- Voit valita useita lomapyyntöjä ja suorittaa niille kaikille saman toiminnon.
+- Yläosan nauhassa ja uuden työnkulun painikkeessa on näkyvissä toimenpiteet, jotka voit tehdä lomapyyntöjen suhteen.
+
+![Esimieskokemus](media/hr-leave-and-absence-manager-experience.png)
 
 ## <a name="see-also"></a>Lisätietoja
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c56b5a333854c9a95fdc74b8f98a3552ff0f7719
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892404"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944798"
 ---
 # <a name="number-of-books-per-journal"></a>Kirjojen määrä kirjauskansiota kohti
 
@@ -47,9 +47,5 @@ Eräkäsittelytyö sulkee pois suljetut kirjat. Esimerkiksi poistojen eräajossa
 Kirjojen määrää rajoitetaan, jos samassa kirjauskansiossa ei ole päällekkäisiä käyttöomaisuuerien tunnuksia. Jos käyttöomaisuuserän tunnus on kuitenkin sama kuin kirjan tunnus, kirjauskansion kirjojen määrä voidaan ylittää, jotta käyttöomaisuustunnus säilyy samassa kirjauskansiossa.
 
 Jos esimerkiksi käyttöomaisuustunnuksia on 5 001, kuhunkin käyttöomaisuustunnukseen liitetään kolme kirjaa ja kukin käyttöomaisuuskirja kirjataan samalle kirjaustasolle. Poisto suoritetaan kolmen peräkkäisen kuukauden ajan ilman yhteenvetoa.  Poistokirjauskansio luodaan erätyönä, ja järjestelmä luo seitsemän kirjauskansiota, joissa on 667 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Tuloksena on 2 001 kirjaa. Tämän vuoksi kolmen kuukauden aikana on 6 003 kirjauskansioriviä ylläpitävät samoja käyttöomaisuustunnuksia samassa kirjauskansiossa. Järjestelmä luo myös yhden kirjauskansion, jossa on 332 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Kolmessa kuukaudessa saadaan 2 988 riviä.
-
-> [!NOTE] 
-> Jos **Tee yhteenveto poistoista** -parametri on käytössä poistoehdotusta luotaessa, **Kirjojen määrä kirjauskansiota kohti – poistoehtotus** -kentän arvolla ei ole vaikutusta. Tässä tapauksessa kirjauskansiokohtainen kirjamäärä on 6 000 eli sisäinen määritetty raja.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

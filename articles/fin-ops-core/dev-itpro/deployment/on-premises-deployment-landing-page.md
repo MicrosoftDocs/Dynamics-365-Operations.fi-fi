@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4de916fcd09b4eaa041dea0a1d1f843ce0e8f10a
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749302"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940958"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -56,10 +56,10 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Saman AD FS -esiintymän käyttäminen useissa ympäristöissä](onprem-reuseadfs.md)
 
 ## <a name="commerce"></a>Kaupankäynti
-- [Commerce-ominaisuudet, jotka ovat käytettävissä paikallisissa käyttöönotoissa](../../../retail/retail-onprem.md)
+- [Commerce-ominaisuudet, jotka ovat käytettävissä paikallisissa käyttöönotoissa](../../../commerce/retail-onprem.md)
 - [Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä](deploy-retail-onprem.md)
-- [Modern POS:n (MPOS) määrittäminen, asettaminen ja aktivoiminen](../../../retail/retail-modern-pos-device-activation.md)
-- [Commerce Scale Unitin määrittäminen ja asentaminen](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Modern POS:n (MPOS) määrittäminen, asettaminen ja aktivoiminen](../../../commerce/retail-modern-pos-device-activation.md)
+- [Commerce Scale Unitin määrittäminen ja asentaminen](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Päivitä
 - [Paikallisten ympäristöjen paikallinen päivitysprosessi](../migration-upgrade/on-prem-upgrade.md)

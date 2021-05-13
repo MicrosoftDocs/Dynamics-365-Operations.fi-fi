@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 9d1d511fa83655dfcb383bdf2c1da84eb4e0ed3e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797254"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936801"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Määritteiden ja määriteryhmien hallinta
 
@@ -101,7 +101,7 @@ Muut **Määritteet**-sivun määritteen metatietoasetukset:
 
 Nämä asetukset oli tarkoitettu alun perin verkkokaupan hakutoimintojen parantamista varten. Vaikka verkkokauppa ei ole heti käytettävissä Commercessa, se sisältää eCommerce Publishing Software Development Kitin (SDK). Asiakkaat voivat viedä tuotteita tämän SDK:n avulla valitsemaansa hakuindeksiin. Vaikka tuotetiedot tuodaan, asiakkaiden on silti voitava erottaa toisistaan haettavissa olevat tiedot, tiedot, joissa voidaan tehdä hakuja ja niin edelleen. Tällä tavoin voidaan luoda optimaalinen indeksi, jolla voi varmistaa, että vain *heidän mielestään* indeksoitavat määritteet indeksoidaan.
 
-Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](https://technet.microsoft.com/library/jj219669.aspx).
+Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Määritteiden suodatusasetukset
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797836"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936827"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisällön toimitusverkoston (CDN) tuen lisääminen
 
@@ -47,7 +47,7 @@ Kuten aiemmin mainittiin, luotu isäntänimi tai päätepiste tukee SSL-varmenne
 
 Commerce-ympäristössä voi käyttää mitä tahansa CDN-palvelua. Seuraavassa on kaksi esimerkkiä:
 
-- **Microsoft Azure Front Door Service** – Azuren CDN-ratkaisu. Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Azure Front Door Service -dokumentaatio](https://docs.microsoft.com/azure/frontdoor/).
+- **Microsoft Azure Front Door Service** – Azuren CDN-ratkaisu. Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Azure Front Door Service -dokumentaatio](/azure/frontdoor/).
 - **Akamai Dynamic Site Accelerator** – Lisätietoja on kohdassa [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp).
 
 ## <a name="cdn-setup"></a>CDN-asetukset
@@ -62,7 +62,7 @@ CDN-määritysprosessi koostuu seuraavista yleisistä vaiheista:
 
 Mitä tahansa CDN-palvelua voi käyttää. Tämän ohjeaiheen esimerkissä käytetään Azure Front Door Service -palvelua. 
 
-Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Pika-aloitus: Luo Front Door erittäin käytettävissä olevalle yleiselle verkkosovellukselle](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
+Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Pika-aloitus: Luo Front Door erittäin käytettävissä olevalle yleiselle verkkosovellukselle](/azure/frontdoor/quickstart-create-front-door).
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Azure Front Door Service -palvelun taustapooli
 
@@ -115,7 +115,7 @@ Seuraavassa kuvassa näkyy **Mukautetun toimialueen HTTPS**-valintaikkuna Azure 
 
 ![Mukautetun toimialueen HTTPS -valintaikkuna](./media/Custom_Domain_HTTPS.png)
 
-Lisätietoja mukautetun toimialueen lisäämisestä Azure Front Door -palveluun on kohdassa [Mukautetun toimialueen lisääminen Front Door -palveluun](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
+Lisätietoja mukautetun toimialueen lisäämisestä Azure Front Door -palveluun on kohdassa [Mukautetun toimialueen lisääminen Front Door -palveluun](/azure/frontdoor/front-door-custom-domain).
 
 CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-sivuston kanssa.
 

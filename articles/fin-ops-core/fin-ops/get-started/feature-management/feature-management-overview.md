@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754797"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923304"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -140,7 +140,7 @@ Ominaisuuksien hallinnan avulla voit hallita kuhunkin julkaisuun toimitettuja om
 
 ## <a name="new-features-are-optional-for-12-months"></a>Uudet ominaisuudet ovat valinnaisia 12 kuukauden ajan
 
-Jos uusi ei-kriittinen ominaisuus asennetaan, se on valinnainen 12 kuukauden ajan. Tämän ansiosta sinä ja organisaatiosi voitte suunnitella etukäteen, milloin ominaisuus kannattaa ottaa käyttöön, ja testata sitä päivittäisissä toiminnoissanne. Lisätietoa on kohdassa [Yhden version palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+Jos uusi ei-kriittinen ominaisuus asennetaan, se on valinnainen 12 kuukauden ajan. Tämän ansiosta sinä ja organisaatiosi voitte suunnitella etukäteen, milloin ominaisuus kannattaa ottaa käyttöön, ja testata sitä päivittäisissä toiminnoissanne. Lisätietoa on kohdassa [Yhden version palvelupäivitysten usein kysytyt kysymykset](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>ISV-ominaisuuksien tai mukautettujen ominaisuuksien ottaminen käyttöön ominaisuuksien hallinnan avulla
 
@@ -161,7 +161,7 @@ Käytäntönä on, että kaikki uudet toiminnot on ensin hyväksyttävä 12 kuuk
 Päivitysjulkaisujen ajoitus vaihtelee, ympäristöpäivityksen ajoitus vaihtelee ja asiakkaat voivat halutessaan ohittaa joitakin päivityksiä. Tämän vuoksi tietyt päivämäärät ovat vaikeasti määritettävissä. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Missä on pakolliseksi muuttuvien toimintojen ohjeistus? 
-Tämä ohjeistus saadaan sovellusryhmiltä. Usein niistä on maininta [poistetuissa tai vanhentuneissa toiminnoissa](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+Tämä ohjeistus saadaan sovellusryhmiltä. Usein niistä on maininta [poistetuissa tai vanhentuneissa toiminnoissa](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Onko tuotteessa käytössä sisäinen ilmoitus tai signaali, että toiminnon käyttöönotto tulee olemaan pakollista? 
 Tällä hetkellä ei ole olemassa toiminnon pakollisuuteen liittyvää ilmoitusmekanismia.

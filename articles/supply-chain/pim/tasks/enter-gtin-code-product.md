@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18df36fe2d147ce395c113eacaf69d8016b38303
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c0163844d7999468e288ba2d612662d1dd6f22df
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818058"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921386"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Kirjoita tuotteen GTIN-koodi
 
@@ -26,18 +26,17 @@ ms.locfileid: "5818058"
 
 GTIN-koodit määrittää GS1-organisaatio. Tässä esimerkissä syötät koodin tuotenumerolle M0001 USMF-yrityksen esittelytietoihin.
 
-1. Valitse Vapautetun tuotteen ylläpito.
-2. Valitse Vapautetut tuotteet.
-3. Laajenna tuotekuvan tietoruutu.
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Valitse toimintoruudussa Varastonhallinta.
-6. Valitse GTIN-koodit.
-7. Valitse Uusi.
-8. Merkitse valittu rivi luettelossa.
-9. Syötä tai valitse arvo Yksikkö-kenttään.
-10. Valitse asetus GTIN-koodi -kentässä.
-11. Anna GTIN-kenttään arvo.
-12. Sulje sivu.
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Laajenna **Tuotekuva**-tietoruutu.
+1. Etsi haluamasi tietue luettelosta ja valitse se.
+1. Valitse toimintoruudussa **Varastonhallinta**.
+1. Valitse **GTIN-koodit**.
+1. Valitse **Uusi**.
+1. Merkitse valittu rivi luettelossa.
+1. Syötä tai valitse arvo **Yksikkö**-kenttään.
+1. Valitse asetus **GTIN-koodi**-kentässä.
+1. Kirjoita arvo **GTIN-kenttään**.
+1. Sulje sivu.
 
 
 

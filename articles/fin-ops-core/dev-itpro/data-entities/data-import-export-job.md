@@ -2,7 +2,7 @@
 title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750997"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937327"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -161,19 +161,7 @@ Voit nopeuttaa tietojen tuontia, jolloin tiedoston tuonnin rinnakkaiskäsittely 
     - Kirjoita **Tuonnin kynnystietueiden määrä** -kenttään tuonnin kynnystietueiden määrä. Tämä määrittää, mitä tietuemäärää säie käsittelee. Jos tiedostossa on 10 000 tietuetta, tietueiden määrä on 2 500 ja tehtävän määrä 4 merkitsee, että kukin säie käsittelee 2 500 tietuetta.
     - Syötä **Tuontitehtävien määrä** -kenttään tuontitehtävien määrä. Tämä ei saa ylittää eräkäsittelyn enimmäiseräsäikeitä **Järjestelmänhallinnan \>Palvelinmäärityksissä**.
 
-## <a name="clean-up-the-staging-tables"></a>Tyhjennä väliaikaiset taulut
-Platform update 29 -versiosta alkaen tämä toiminto on vanhentunut. Tämä korvataan uudella versiolla, joka on kuvattu alla olevassa työhistorian puhdistustoiminnoissa.
-
-Väliaikaiset taulut voi tyhjentää **Tietojenhallinta**-työtilan **Tyhjennä väliaikaiset taulut** -ominaisuuden avulla. Voit valita kustakin väliaikaisesta taulusta poistettavat tietueet seuraavilla asetuksilla:
-
-- **Yksikkö** – jos tarjottuna on vain yksikkö, kaikki kyseisen yksikön väliaikaisen taulun tietueet poistetaan. Valitsemalla tämän voit tyhjentää kaikki yksikön tietoprojektien ja -töiden tiedot.
-- **Työn tunnus** – jos vain työn tunnus on annettu, kaikki valitun työn yksiköiden tietueet poistetaan asianmukaisista väliaikaisista tauluista.
-- **Tietoprojektit** – jos valittuna on vain tietoprojekti, kaikki valitun projektin kaikkien töiden yksiköihin kuuluvat kaikki tietueet poistetaan.
-
-Poistettavaa tietojoukkoa voi myös rajoittaa yhdistämällä asetuksia.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Työhistorian tyhjennus (saatavilla Platform update 29 -versiossa tai uudemmissa)
-
+## <a name="job-history-clean-up"></a>Työhistorian siivous 
 Tietojen hallinnan työhistorian puhdistustoimintoa on käytettävä suoritushistorian ajoittaista uudelleenpuhdistusta varten. Tämä toiminto korvaa aiemman väliaikaisen taulukon puhdistustoiminnon, joka on nyt vanhentunut. Puhdistusprosessi puhdistaa seuraavat taulukot.
 
 -   Kaikki väliaikaiset taulukot

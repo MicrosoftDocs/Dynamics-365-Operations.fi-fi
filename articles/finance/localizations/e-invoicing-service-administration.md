@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen hallintakomponentit
 description: Tässä ohjeaiheessa on tietoja sähköisen laskutuksen hallintaan liittyvistä komponenteista.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840025"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963188"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Sähköisen laskutuksen hallintakomponentit
 
@@ -31,7 +31,7 @@ Tässä ohjeaiheessa on tietoja sähköisen laskutuksen hallintaan liittyvistä 
 
 ## <a name="azure"></a>Azure
 
-Microsoft Azuren avulla voit luoda avainsäilön ja tallennustilin salaisia koodeja. Käytä sen jälkeen sen salaisia koodeja sähköisen laskutuksen konfiguroinnissa.
+Microsoft Azuren avulla voit luoda Key Vaultin ja tallennustilin salaisia koodeja. Käytä sen jälkeen sen salaisia koodeja sähköisen laskutuksen konfiguroinnissa.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
@@ -85,12 +85,14 @@ Palveluympäristöjä voidaan hallita tilan kautta. Mahdolliset vaihtoehdot ovat
 Sähköinen laskutus vastaa kaikkien liiketoimintatietojen tallentamisesta yrityksen omistamiin Azure-resursseihin. Sen varmistamiseksi, että palvelu toimii oikein ja että kaikki sähköistä laskutusta varten tarvittavat ja sen luomat liiketoimintatiedot ovat asianmukaisesti käytettävissä, on luotava kaksi keskeistä Azure-resurssia:
 
 - Azure-tallennustili (Blob-tallennus) sähköisten laskujen tallentamista varten
-- Azure-avainsäilö, johon tallennetaan tallennustilin tallennusvarmenteet ja Uniform Resource Identifier (URI)
+- Azure Key Vault, johon tallennetaan tallennustilin tallennusvarmenteet ja Uniform Resource Identifier (URI)
 
-> [!NOTE]
-> Erillinen avainsäilö ja asiakkaan tallennustili on määritettävä nimenomaisesti käytettäväksi sähköisen laskutuksen kanssa.
 
-Lisätietoja: [Azure-tallennustilin ja -avainsäilön luominen](e-invoicing-create-azure-storage-account-key-vault.md).
+Erillinen Key Vault ja asiakkaan tallennustili on määritettävä nimenomaisesti käytettäväksi sähköisen laskutuksen kanssa. Lisätietoja: [Azure-tallennustilin ja Key Vaultin luominen](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Jos haluat seurata Key Vaultin kuntoa ja vastaanottaa hälytyksiä, voit määrittää Azure Monitorin Key Vaultille. Ottamalla Key Vault -lokikirjauksen käyttöön voit valvoa, miten, koska ja kuka käyttää Key Vaulteja. Lisätietoja on kohdassa [Azure Key Vaultin seuranta ja hälytykset](/azure/key-vault/general/alert) ja [Key Vault -lokikirjauksen käyttöönotto](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Parhaana käytäntönä salaisia koodeja kannattaa vaihtaa säännöllisesti. Lisätietoja on kohdassa [Salaisten koodien dokumentaatio](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Käyttäjät
 

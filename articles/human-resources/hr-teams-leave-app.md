@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48bf6f7997d6159077419bcd05d27fd711c8fb4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
+ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891027"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5953409"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
@@ -207,6 +207,14 @@ Jos saat virheilmoituksen, kun yrität hyväksyä lomapyyntöjä Teams-sovelluks
 1. Tarkista, että tili, jolla kirjaudut Microsoft Teamsiin, on sama kuin se, jolla käytät Dynamics 365 Human Resourcesia.
 
 2. Tarkista myös, että saat hyväksyä pyynnön. Voit tehdä tämän loman hyväksymistyönkulun asetuksissa. Lisätietoja lomapyyntöjen työnkulusta on kohdassa [Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md).
+
+### <a name="leave-approvers-dont-receive-teams-chat-messages-to-approve-leave-requests"></a>Lomien hyväksyjät eivät saa Teams-keskustelusanomia lomapyyntöjen hyväksymistä varten
+
+1. Varmista, että ympäristö- ja käyttäjäilmoitukset ovat käytössä. Lisätietoa on kohdissa [Ilmoitusten käyttöönotto Teamsin Human Resources -sovelluksessa](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) ja [Teams-ilmoitusten ottaminen käyttöön tai poistaminen käytöstä yksittäisille käyttäjille](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users).
+
+2. Varmista, että käyttäjät ovat kirjautuneet **Keskustelut**-välilehteen samoilla tunnistetiedoilla, kuin mitä he käyttävät lomapyyntöjen hyväksymisessä. Käytä viestejä "kirjaudu ulos" ja sitten "kirjaudu sisään" kirjautuaksesi sisään oikeilla tunnistetiedoilla.
+
+3. Jos ongelma säilyy, tarkista Business Events -järjestelmän erätyön tila järjestelmänvalvojana. Jos se on odotus- tai suoritusvaiheessa, palaa muutaman minuutin kuluttua. Jos tila ei muutu, kirjaa tukipalvelupyyntö, jotta tiimimme voi ratkaista ongelman.
 
 ## <a name="known-accessibility-issues"></a>Tunnetut helppokäyttöisyyteen liittyvät ongelmat
 

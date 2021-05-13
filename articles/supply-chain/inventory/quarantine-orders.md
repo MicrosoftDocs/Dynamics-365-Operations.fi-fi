@@ -2,7 +2,7 @@
 title: Karanteenitilaukset
 description: Tässä ohjeaiheessa kuvataan varaston käytön estämistä karanteenitilauksilla.
 author: perlynne
-ms.date: 11/02/2017
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a44909a7880b0cd53e39ccbadf8b79ae5c9dafc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e1eed14b7d38cf569af7192dec9580e771f06df
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834214"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956179"
 ---
 # <a name="quarantine-orders"></a>Karanteenitilaukset
 
@@ -28,18 +28,35 @@ ms.locfileid: "5834214"
 
 Tässä ohjeaiheessa kuvataan varaston käytön estämistä karanteenitilauksilla.
 
-Varaston käyttö voidaan estää karanteenitilauksilla. Haluat ehkä esimerkiksi siirtää nimikkeitä karanteeniin laadunvalvontasyistä. Karanteeniin asetettu varasto siirretään karanteenivarastoon. **Huomautus:** Jos käytät varaston lisähallintaprosesseja (Varastonhallinnassa), karanteenitilauksen käsittelyä käytetään vain palautusmyyntitilauksille.
+Karanteenitilausten avulla voit estää varaston. Haluat ehkä esimerkiksi siirtää nimikkeitä karanteeniin laadunvalvontasyistä. Karanteeniin asetettu varasto siirretään karanteenivarastoon.
+
+> [!NOTE]
+> Jos käytät varaston lisähallintaprosesseja (Varastonhallinnassa), karanteenitilauksen käsittelyä käytetään vain palautusmyyntitilauksille.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Käytettävissä olevien varastonimikkeiden siirtäminen karanteeniin
-Kun siirrät nimikkeitä karanteeniin, voit joko luoda karanteenitilauksen manuaalisesti tai määrittää järjestelmän luomaan karanteenitilaukset automaattisesti saapuvien käsittelyn aikana. Jos haluat luoda karanteenitilauksia automaattisesti, valitse **Karanteeninhallinta**-vaihtoehto **Nimikemalliryhmät**-sivun **Varastokäytännöt**-välilehdestä. Sinun täytyy myös määrittää oletuskaranteenivarasto vastaanottavien varastojen **Karanteenivarasto**-kentässä. Karanteeniin siirretyt nimikkeet siirretään Supply Chain Managementissa automaattisesti karanteenivarastoon, kun fyysinen käytettävissä oleva varasto kirjataan ostotilauksen tai tuotantotilauksen kautta. Siirto tapahtuu, koska karanteenitilauksen tilaksi muuttuu **Aloitettu**. Luodessasi karanteenitilauksia manuaalisesti ei ole tarpeen määrittää nykyistä nimikettä karantiinihallintaa varten liitetyssä nimikemalliryhmässä. Tässä prosessissa sinun täytyy määrittää käytettävissä oleva varasto, joka on asetettava karanteeniin, sekä käytettävä karanteenivarasto. Voit käyttää prosessin suunnittelussa apuna karanteenitilauksen tiloja.
+
+Kun siirrät nimikkeitä karanteeniin, voit joko luoda karanteenitilauksen manuaalisesti tai määrittää järjestelmän luomaan karanteenitilaukset automaattisesti saapuvien käsittelyn aikana.
+
+Määritä, että järjestelmä luo karanteenitilaukset automaattisesti, noudattamalla seuraavia vaiheita.
+
+1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varasto \> Nimikemalliryhmät**.
+1. Valitse haluamasi malliryhmä luetteloruudusta tai luo uusi malliryhmä.
+1. Valitse **Varastokäytännöt**-pikavälilehdessä **Karanteeninhallinta**-valintaruutu.
+1. Sulje sivu.
+1. Sinun täytyy määrittää oletuskaranteenivarasto vastaanottavien varastojen **Karanteenivarasto**-kentässä.
+
+Kun varastoon vastaanotetuksi rekisteröity nimike kuuluu malliryhmään, jossa **Karanteeninhallinta**-valintaruutu on valittuna, järjestelmä luo sille karanteenitilauksen. Karanteenitilaus kehottaa työntekijöitä siirtämään nimikkeen karanteenivarastoon.
+
+Luodessasi karanteenitilauksia manuaalisesti **Karanteenitilaukset**-sivulla ei ole tarpeen määrittää nykyistä nimikettä karantiinihallintaa varten liitetyssä nimikemalliryhmässä. Tässä prosessissa sinun täytyy määrittää käytettävissä oleva varasto, joka on asetettava karanteeniin, sekä käytettävä karanteenivarasto. Voit käyttää prosessin suunnittelussa apuna karanteenitilauksen tiloja.
 
 ## <a name="quarantine-order-statuses"></a>Karanteenitilausten tilat
+
 Karanteenitilauksilla voi olla seuraavanlaisia tiloja:
 
--   Luotu
--   Aloitettu
--   Ilmoitettu valmiiksi
--   Päättynyt
+- Luotu
+- Aloitettu
+- Ilmoitettu valmiiksi
+- Päättynyt
 
 ### <a name="created"></a>Luotu
 
@@ -51,19 +68,18 @@ Kun karanteenitilauksen tilana on **Aloitettu**, varasto siirretään tavallises
 
 ### <a name="reported-as-finished"></a>Ilmoitettu valmiiksi
 
-Valitsemalla **Ilmoita valmiiksi**, voit ilmoittaa aloitetun karanteenitilauksen valmiiksi. Nimike vapautetaan karanteenista, mutta sitä ei siirretä vielä tavalliseen varastoon. Siirto takaisin tavalliseen varastoon voidaan käsitellä nimikkeen saapumisen kirjauskansiossa, joka voidaan alustaa Ilmoita valmiiksi -prosessin aikana.
+Voit ilmoittaa aloitetun karanteenitilauksen valmiiksi avaamalla tilauksen ja valitsemalla toimintoruudusta **Ilmoita valmiiksi**. Nimike vapautetaan karanteenista, mutta sitä ei siirretä vielä tavalliseen varastoon. Siirto takaisin tavalliseen varastoon voidaan käsitellä nimikkeen saapumisen kirjauskansiossa, joka voidaan alustaa Ilmoita valmiiksi -prosessin aikana.
 
 ### <a name="ended"></a>Päättynyt
 
-Kun karanteenitilaus on päättynyt, nimike siirretään karanteenivarastosta takaisin tavalliseen varastoon. Nimiketapahtuman tilaksi asetetaan karanteenivarastossa **Myyty** ja tavallisessa varastossa **Ostettu**.
+Kun karanteenitilaus on päättynyt, nimike siirretään karanteenivarastosta takaisin tavalliseen varastoon. Nimiketapahtuman tilaksi asetetaan karanteenivarastossa *Myyty* ja tavallisessa varastossa *Ostettu*.
 
 ## <a name="quarantine-order-scrap"></a>Karanteenitilausten hävikki
-Karanteenitilausprosessin aikana varastoa voidaan määrittää hävikiksi. Hävikkiä käsiteltäessä varaston tilaksi asetetaan **Myyty** ottotapahtumalla karanteenivarastosta.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+Karanteenitilausprosessin aikana varastoa voidaan määrittää hävikiksi. Hävikkiä käsiteltäessä varaston tilaksi asetetaan *Myyty* ottotapahtumalla karanteenivarastosta.
 
-[Varastoesto](inventory-blocking.md)
+## <a name="additional-resources"></a>Lisäresurssit
 
+- [Varastoesto](inventory-blocking.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

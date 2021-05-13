@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889785"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963212"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -55,6 +55,9 @@ Muihin ympäristöihin liittyen huomioon otettavia seikkoja ovat esimerkiksi seu
 Luo ensin LCS-projekti, jotta voit hallinnoida Human Resources -ympäristöjä LCS:n avulla.
 
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index) samalla tilillä, jota käytit tilatessasi Human Resources -sovelluksen.
+
+   > [!NOTE]
+   > Onnistuneen valmistelun varmistamiseksi Human Resources -ympäristön valmisteluun käytetyn tilin on oltava määritettynä joko **Järjestelmänvalvoja**- tai **Järjestelmän mukauttaja** -roolille Power Apps -ympäristössä, joka liittyy Human Resources -ympäristöön. Kohdassa [Käyttäjäsuojauksen määrittäminen resursseille](https://docs.microsoft.com/power-platform/admin/database-security) on lisätietoa käyttöoikeusroolien määrittämisestä käyttäjille Power Platformissa.
 
 2. Luo projekti valitsemalla plusmerkki (**+**).
 
@@ -115,13 +118,30 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
    
     - **Kokeiluympäristöt** - Näille ympäristöille luodaan vanhentumispäivä. Kun voimassaolo päättyy, ympäristösi ja sen sisältämät henkilöstöresurssien esiintymät poistetaan automaattisesti.
    
-    - **Alueet, joita ei tueta** – Tällä hetkellä Human Resourcesia tuetaan vain seuraavilla alueilla: Yhdysvallat, Eurooppa, Yhdistynyt kuningaskunta, Australia, Kanada ja Aasia.
-
-    > [!NOTE]
-    > Human Resources -ympäristö valmistellaan samalla alueella, jolla Power Apps -ympäristö on valmisteltu. Human Resources -ympäristön siirtämistä toiselle alueelle ei tueta.
+    - **Maantieteelliset alueet, joita ei tueta** - Ympäristön on oltava tuetulla maantieteellisellä alueella. Lisätietoja on kohdassa [Tuetut maantieteelliset alueet](hr-admin-setup-provision.md#supported-geographies).
 
 6. Kun olet määrittänyt oikean ympäristön, voit jatkaa valmisteluprosessia. 
- 
+
+### <a name="supported-geographies"></a>Tuetut maantieteelliset alueet
+
+Human Resources tukee tällä hetkellä seuraavia maantieteellisiä alueita:
+
+- Yhdysvallat
+- Eurooppa
+- Iso-Britannia
+- Australia
+- Kanada
+- Aasia 
+
+Kun luot Human Resources -ympäristön, valitset Power Apps -ympäristön, joka liitetään Human Resources -ympäristöön. Human Resources -ympäristö valmistellaan tämän jälkeen samaan Azuren maantieteelliseen alueeseen kuin valittu Power Apps -ympäristö. Voit valita, missä Human Resources -ympäristö ja tietokanta sijaitsevat fyysisesti valitsemalla maantieteellisen alueen, kun luot Human Resources -ympäristöön liittyvää Power Apps -ympäristöä.
+
+Voit valita Azuren *maantieteellisen alueen*, johon ympäristö valmistellaan, mutta et voi valita tiettyä Azuren *aluetta*. Automaatio määrittää tietyn alueen maantieteellisell alueella, jossa ympäristö luodaan kuormituksen tasaamisen ja suorituskyvyn optimoimiseksi. Tietoa Azuren maantieteellisistä alueista ja alueista on dokumentaatiossa [Azuren maantieteelliset alueet](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Human Resources -ympäristön tiedot sisältyvät aina siihen Azuren maantieteelliseen alueeseen, jossa se luotiin. Se ei kuitenkaan aina sisälly samaan Azure-alueeseen. Järjestelmäpalautusta varten tiedot replikoidaan sekä ensisijaisella Azure-alueella että toissijaisella vikasietoalueella maantieteellisellä alueella.
+
+ > [!NOTE]
+ > Human Resources -ympäristön siirtämistä yhdeltä Azure-alueelta toiselle ei tueta.
+
 ## <a name="grant-access-to-the-environment"></a>Ympäristön käyttöoikeuksien myöntäminen
 
 Oletusarvoisesti vain ympäristön luonut yleinen järjestelmänvalvoja voi käyttää sitä. Käyttöoikeus on myönnettävä sovelluksen muille käyttäjille erikseen. Sinun on lisättävä käyttäjiä ja määritettävä heille sopivat roolit henkilöstöhallintoympäristössä. Human Resourcesin käyttöönoton tehneen yleisen järjestelmänvalvojan on käynnistettävä sekä Attract että Onboard alustuksen suorittamiseksi ja muiden vuokraajakäyttäjien pääsyn sallimiseksi. Kunnes näin tapahtuu, muut käyttäjät eivät voi käyttää Attractia ja Onboardia, vaan ne näyttävät käyttöoikeusvirheitä. Lisätietoja on kohdassa [Uusien käyttäjien luonti](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) ja [Käyttäjien liittäminen käyttöoikeusrooleihin](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

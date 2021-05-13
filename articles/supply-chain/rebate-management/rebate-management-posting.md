@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: e79feb567a48d08a9063bf20cface3c5c7fe8ecc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e806af55247fc78b5e353f3ae1dd624809feb43
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831743"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919914"
 ---
 # <a name="rebate-management-posting-setup"></a>Ostohyvitysten hallinnan kirjausasetukset
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ostohyvitysten hallinnan kirjausprofiilien avulla määritetään ostohyvityksen hallinnan laskentarivien kirjausmerkinnät. Kun sopimuksen otsikkoon on valittu kirjausprofiili, sitä sovelletaan kaikkiin sopimusriveihin.
 

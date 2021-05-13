@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin version 10.0.18 esikatselu (toukokuu 2021)
+title: Dynamics 365 Supply Chain Managementin version 10.0.18 uudet tai muuttuneet ominaisuudet (toukokuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.18 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909350"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934964"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.18 esikatselu (toukokuu 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.18 uudet tai muuttuneet ominaisuudet (toukokuu 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.18 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.793. Se on käytettävissä seuraavasti:
+Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin version 10.0.18 uudet tai muuttuneet ominaisuudet. Tämän version koontinumero on 10.0.793. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esikatselu:** Maaliskuu 2021
 - **Julkaisun yleinen saatavuus (itsepäivitys):** Huhtikuu 2021
@@ -43,9 +42,17 @@ Tämä julkaisu sisältää seuraavat toiminnot. Saat lisätietoja kunkin ominai
 
 - [Ostohyvitysten hallinta](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Lisätietoja on kohdassa [Ostohyvitysten hallintamoduulin yleiskatsaus](../rebate-management/rebate-management-overview.md).
 
+- [Myyntitietoyksikön viennin asetuskäytäntö](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Myyntipalautustilauksen rivin rekisteröinti desimaalitarkkuudella sekä todellisen painon kanssa että ilman todellista painoa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Myyntitilauksen vahvistus yhdellä napsautuksella](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Myyntitilauksesta ostotilausrivin poistokäytäntöön](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Yksinkertainen liittymä vain töihin sisään- ja uloskirjautumiselle (parannus [Parannettuun valmistustuotannon toteutusliittymään](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
 
-Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana. 
+Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 

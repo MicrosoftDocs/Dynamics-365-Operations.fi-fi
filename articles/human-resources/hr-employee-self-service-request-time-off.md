@@ -2,7 +2,7 @@
 title: Pyydä poissaoloaikaa
 description: Pyydä poissaoloaikaa Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790689"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924851"
 ---
 # <a name="request-time-off"></a>Pyydä poissaoloaikaa
 
@@ -45,7 +45,7 @@ Voit lähettää aikaa koskevia pyyntöjä, tarkastella lomaa ja jättää saldo
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Lisää liite aiemmin luotuun pyyntöön
 
-Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös tarkastella kaikkia tiettyyn päivään liittyviä pyyntöjä. 
+Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös tarkastella kaikkia tiettyyn päivään liittyviä pyyntöjä.
 
 ## <a name="view-leave-balances"></a>Näytä poissaolosaldot
 
@@ -58,6 +58,20 @@ Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös 
 1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
 2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty loma-aika**. Voit tarkastella odottavia lomapyyntöjä valitsemalla **Loma-aika pyynnöt**.
+
+## <a name="cancel-time-off-requests"></a>Poissaolopyyntöjen peruuttaminen
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. Valitse **työntekijän itsepalvelu** -työtilassa **Näytä poissaoloaika** **Vapaasaldot**-ruudusta.
+
+2. Valitse **Poissaolo**-lomakkeesta yksi tai useita peruutettavia aikapyyntöjä.
+
+3. Valitse **Peruuta**-painike.
+
+4. Kirjoita kommentti **Peruutuksen tiedot** -ruutuun ja valitse **Lähetä**.
+
+   ![Peruuta lomapyyntö](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Lisätietoja
 

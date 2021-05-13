@@ -2,7 +2,8 @@
 title: Mediavalikoimamoduuli
 description: Tässä ohjeaiheessa on tietoja mediavalikoimamoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802812"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937383"
 ---
 # <a name="media-gallery-module"></a>Mediavalikoimamoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja mediavalikoimamoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
@@ -49,11 +51,13 @@ Seuraavassa esimerkissä PDP:n ostoruutu isännöi tuotekuvia mediavalikoimamodu
 |---------------|--------|-------------|
 | Kuvan lähde | **Sivun konteksti** tai **Tuotetunnus** | Oletusarvo on **Sivun konteksti**. Jos **Sivun konteksti** on valittuna, moduuli olettaa, että sivu antaa tuotetunnuksen tiedot. Jos **Tuotetunnus** on valittuna, kuvan tuotetunnus on annettava **Tuotetunnus**-ominaisuuden arvona. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.12. |
 | Tuotetunnus | Tuotetunnus | Tämä ominaisuus on käytettävissä vain, jos **Kuvan lähde** -ominaisuuden arvo on **Tuotetunnus**. |
-| Kuvan zoomaus | **Sisäinen** tai **Säilö** | Tämän ominaisuuden avulla käyttäjä voi zoomata kuvia mediavalikoimamoduulissa. Kuvaa voi zoomata sisäisesti tai erillisessä säilössä kuvan vieressä. Tämä ominaisuus on käytettävissä versiossa 10.0.12 |
-| Zoomausasteikko | Desimaalinumero | Tämä ominaisuus määrittää kuvien zoomauksen skaalauskertoimen. Jos arvoksi on määritetty esimerkiksi **2,5**, kuvat suurennetaan 2,5 kertaisiksi.|
-| Koko näyttö | **Tosi** vai **Epätosi** | Tämä ominaisuus määrittää, voidaanko kuvia tarkastella koko näytön tilassa. Koko näytön tilassa kuvia voidaan myös suurentaa entisestään, jos zoomausominaisuus on käytössä. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.13. |
+| Kuvan zoomaus | **Sisäinen** tai **Säilö** | Tämän ominaisuuden avulla käyttäjä voi zoomata kuvia mediavalikoimamoduulissa. Kuvaa voi zoomata sisäisesti tai erillisessä säilössä kuvan vieressä. Tämä ominaisuus on käytettävissä versiossa 10.0.12. |
+| Zoomauskerroin | Desimaalinumero | Tämä ominaisuus määrittää kuvien zoomauksen skaalauskertoimen. Jos arvoksi on määritetty esimerkiksi **2,5**, kuvat suurennetaan 2,5 kertaisiksi. |
+| Koko näyttö | **Tosi** vai **Epätosi** | Tämä ominaisuus määrittää, voidaanko kuvia tarkastella koko näytön tilassa. Koko näytön tilassa kuvia voidaan myös suurentaa entisestään, jos zoomausominaisuus on käytössä. Tämä ominaisuus on käytettävissä Commerce-version 10.0.13 julkaisussa. |
+| Zoomatun kuvan laatu | Luku väliltä 1–100, joka edustaa prosenttilukua ja joka valitaan käyttämällä ohjauspalkkia. | Tässä ominaisuudessa määritetään kuvalaatu zoomatuille kuville. Sen arvoksi voidaan määrittää 100 prosenttia. Näin voidaan varmistaa, että zoomattu kuva käyttää aina suurinta mahdollista tarkkuutta. Tämä ominaisuus ei koske PNG-tiedostoja, koska ne käyttävät häviötöntä muotoa. Tämä ominaisuus on käytettävissä Commerce-version 10.0.19 julkaisussa. |
 | Kuvat | Kuvat, jotka on valittu sivustonmuodostimen mediakirjastosta | Kuvia voidaan hahmontaa tuotteesta. Niitä voidaan kuratoida myös mediavalikoimamoduulista. Nämä kuvat lisätään käytettävissä oleviin tuotekuviin. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.12. |
 | Pikkukuvan suunta | **Pysty** tai **vaaka** | Tämä ominaisuus määrittää, näytetäänkö pikkukuvat pysty- vai vaakanauhassa. |
+| Muuttujan päätuotekuvien piilottaminen | **Tosi** vai **Epätosi** | Jos ominaisuuden arvoksi määritetään **Tosi**, kun muuttuja valitaan, päätuotteen kuvat piilotetaan, ellei muuttujalla ole kuvia. Tämä ominaisuus ei vaikuta tuotteisiin, joissa ei ole muuttujia. |
 
 Seuraavassa kuvassa on esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä.
 

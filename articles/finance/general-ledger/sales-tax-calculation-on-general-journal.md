@@ -2,25 +2,25 @@
 title: Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 description: Tässä aiheessa selitetään, miten arvonlisäverot lasketaan erityyppisille tileille (toimittaja, asiakas, kirjanpito ja projekti) yleisen kirjauskansioiden riveille.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815329"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937303"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ Tässä osiossa kuvataan, miten arvonlisäveron summan etumerkki lasketaan.
 
 ![Arvonlisäverotapahtumat-sivu](media/sales-tax-amount-sign.jpg)
 
-Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonlisäveron summien etumerkin väliaikaisessa arvonlisäveron taulussa.
+Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonlisäveron suunnan ja summien etumerkin väliaikaisessa arvonlisäveron taulussa.
 
 | Kirjauskansiorivin summa | Arvonlisäveron suunta  | Arvonlisäveron summan etumerkki |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonli
 | Negatiivinen            | Saatava arvonlisävero | Negatiivinen              |
 | Negatiivinen            | Maksettava arvonlisävero    | Positiivinen              |
 
-Tositteilla, joilla on vain **Projekti**- tai **Kirjanpito**-rivejä, on erityissääntö, kun **Kirjanpito**-riville on valittu arvonlisäveroryhmä tai nimikkeen arvonlisäveroryhmä. Tätä sääntöä ohjaa yleisten kirjauskansioiden Ota käyttöön itsenäinen arvonlisäveron laskeminen -toiminto. Kun tämä toiminto ei ole käytössä, **Kirjanpito**-rivin veron summa käyttää **Projekti**-rivin debet/kredit-suuntaa. Kun tämä toiminto on käytössä, **Kirjanpito**-rivin veron summa käyttää sen omaa debet/kredit-suuntaa. Seuraava taulukko esittää säännön molemmille skenaariolle. 
+Tositteilla, joilla on vain **Projekti**- tai **Kirjanpito**-rivejä, on erityissääntö, kun **Kirjanpito**-riville on valittu arvonlisäveroryhmä tai nimikkeen arvonlisäveroryhmä. Tätä sääntöä ohjaa yleisten kirjauskansioiden **Ota käyttöön itsenäinen arvonlisäveron laskeminen** -toiminto. Kun tämä toiminto ei ole käytössä, **Kirjanpito**-rivin veron summa käyttää **Projekti**-rivin debet/kredit-suuntaa. Kun tämä toiminto on käytössä, **Kirjanpito**-rivin veron summa käyttää sen omaa debet/kredit-suuntaa. Seuraava taulukko esittää säännön molemmille skenaariolle. 
 
 **Sääntö, kun toiminto on käytössä**
 

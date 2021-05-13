@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13f035a080eb41b4a69cc31b7275d87a5836c686
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e924b3ce737925303e5123ca8102c7867bd81f2c
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796315"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936677"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Helppokäyttöisyyden toiminnot ja ominaisuudet
 
@@ -95,11 +95,11 @@ Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+[Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
 
 [Microsoftin helppokäyttökeskus](https://www.microsoft.com/accessibility)
 
-[Dynamics 365:n helppokäyttökeskus](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+[Dynamics 365:n helppokäyttökeskus](/dynamics365/get-started/accessibility/index)
 
 [Yhteensopivuuden yleiskatsaus](compliance-overview.md)
 

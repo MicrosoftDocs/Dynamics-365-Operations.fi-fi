@@ -2,7 +2,7 @@
 title: Varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale unitit
 description: Tässä aiheessa on tietoja toiminnossa, jonka avulla scale unitit voivat suorittaa valittuja prosesseja varastonhallinnan kuormituksesta.
 author: perlynne
-ms.date: 10/06/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,17 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899164"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944410"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Kaikkia varastonhallinnan liiketoimintatoimintoja ei tueta täysin varastoissa, joissa on käytössä scale unitin työkuorma. Varmista, että käytät vain niitä prosesseja, joiden tuesta nimenomaisesti ilmoitetaan tässä aiheessa.
@@ -49,15 +48,16 @@ Scale unit voi ylläpitää vain omistamiaan tietoja. Scale unitien tietojen omi
 
 Scale unitit omistavat seuraavat tiedot:
 
-- **Aallon käsittelyn tiedot** – valitut aallon käsittelymenetelmät käsitellään scale unitin aallon käsittelyn osana.
-- **Työn käsittelyn tiedot** – Seuraavanlaisia työtilausten käsittelyjä tuetaan:
+- **Lähetysaallon käsittelyn tiedot** – valitut aallon käsittelymenetelmät käsitellään scale unitin aallon käsittelyn osana.
+- **Työn käsittelyn tiedot** – Tämä tietty scale unit omistaa scale unitille luodun varastotyön. Seuraavia työtilausten käsittelytyyppejä tuetaan:
 
   - **Varastosiirrot** (manuaalinen siirto ja mallityön mukainen siirto)
+  - **Inventointi**- ja hyväksymis-/hylkäysprosessi osana inventointitoimintoja
   - **Ostotilaukset** (hyllytystyö varastotilauksen kautta, kun ostotilauksia ei liitetä kuormiin)
   - **Myyntitilaukset** (yksinkertainen keräily- ja lastaustyö)
   - **Siirtotilaukset** (vain lähtevät, jossa yksinkertainen keräily- ja lastaustyö)
 
-- **Varastotilauksen vastaanoton tiedot** – näitä tietoja käytetään vain ostotilauksissa, jotka vapautetaan manuaalisesti varastoon.
+- **Varastotilauksen vastaanoton tiedot** – näitä tietoja käytetään vain ostotilauksissa, jotka on vapautettu varastoon.
 - **Rekisterikilven tiedot** – Rekisterikilpiä voidaan luoda keskuksessa ja scale unitissa. Erillinen ristiriitojen käsittely on mahdollista. Huomaa, että nämä tiedot eivät ole varastokohtaisia.
 
 ## <a name="outbound-process-flow"></a>Lähtevien käsittelyn työnkulku
@@ -72,6 +72,14 @@ Scale unitit omistavat varsinaisen aalloin käsittelyn (kuten työn kohdistamise
 
 ![Aallon käsittelyn työnkulku](./media/wes-wave-processing-ga.png "Aallon käsittelyn työnkulku")
 
+### <a name="process-work-and-ship"></a>Työn käsittely ja lähetys
+
+Kun lopullinen työprosessi laittaa varaston lopulliseen toimitussijaintiin (lastausovi), scale unit antaa merkin keskukselle päivittää lähdeasiakirjan varastotapahtumat tilaan *Kerätty*. Siihen asti kunnes prosessi suoritetaan ja synkronoidaan takaisin, scale unitin kuormituksen käytettävissä oleva varasto varataan fyysisesti varastotasolla.
+
+Kun keskus on päivittänyt tapahtumat *Kerätty*-tilaan, se voi käsitellä lähtevän lähetyksen vahvistuksen ja siihen liittyvän myynnin pakkausluettelon tai siirtotilauksen lähetyksen kuormaa varten.
+
+![Lähtevien käsittelyn työnkulku](./media/WES-outbound-processing-19.png "Lähtevien käsittelyn työnkulku")
+
 ## <a name="inbound-process-flow"></a>Saapuvien käsittelyn työnkulku
 
 Keskus omistaa seuraavat tiedot:
@@ -82,8 +90,8 @@ Keskus omistaa seuraavat tiedot:
 
 > [!NOTE]
 > Saapuva ostotilaustyönkulku poikkeaa käsitteellisesti lähtevästä työnkulusta. Samaa varastoa voi käyttää joko scale unitin tai keskuksen kautta sen mukaan, onko ostotilaus vapautettu varastoon vai ei. Kun tilaus on vapautettu varastoon, tilausta voi käsitellä vain scale unitiin kirjautuneena.
-
-Jos käytät *Vapauta varastoon* -prosessia, [*varastotilaukset*](cloud-edge-warehouse-order.md) luodaan ja asiaankuuluvan vastaanottokulun omistus kohdistetaan scale unitille. Keskus ei voi rekisteröidä saapuvaa vastaanottoa.
+>
+> Jos käytät *Vapauta varastoon* -prosessia, [*varastotilaukset*](cloud-edge-warehouse-order.md) luodaan ja asiaankuuluvan vastaanottokulun omistus kohdistetaan scale unitille. Keskus ei voi rekisteröidä saapuvaa vastaanottoa.
 
 Sinun täytyy kirjautua keskukseen käyttääksesi *Vapauta varastoon* -prosessia. Voit suorittaa tai ajoittaa sen seuraavilta sivuilta:
 
@@ -97,6 +105,10 @@ Työntekijä voi suorittaa vastaanottoprosessin käyttämällä Scale Unitiin yh
 Jos *varastoon vapauttamisen* prosessi ei ole käytössä, jolloin myöskään *varastotilaukset* eivät ole käytössä, keskus voi käsitellä varaston vastaanoton ja työn käsittelyn erillään scale uniteista.
 
 ![Saapuvien käsittelyn työnkulku](./media/wes-inbound-ga.png "Saapuvien käsittelyn työnkulku")
+
+Kun suoritat saapuvan rekisteröinnin varastosovelluksen vastaanottoprosessin avulla scale unitin varastotilauksen perusteella, scale unitin kuormitus antaa merkin keskukselle päivittää asiaan liittyvät ostotilausrivin tapahtumat tilaan *Rekisteröity*. Kun tämä on valmis, voit suorittaa sen jälkeen ostotilausten tuotevastaanoton.
+
+![Saapuvien käsittelyn työnkulku](./media/WES-inbound-processing-19.png "Saapuvien käsittelyn työnkulku")
 
 ## <a name="supported-processes-and-roles"></a>Tuetut prosessit ja roolit
 
@@ -115,10 +127,13 @@ Käyttäjille, jotka toimivat varastopäällikköinä sekä keskuksessa että sc
 Seuraavat varastonohjausprosessit voidaan ottaa käyttöön scale unitin WES-kuormituksessa:
 
 - Myynti- ja siirtotilausten valitut aaltomenetelmät (kohdistus, kysynnän täydennys, konttiinpakkaus, työn luonti ja aallon etikettitulostus)
-- Myynti- ja siirtotilausten varastotyön käsittely varastonhallinnan mobiilisovelluksella (mukaan lukien täydennystyö)
-- Käytettävissä olevan varaston kysely varastonhallinnan mobiilisovelluksella
-- Varastosiirtojen luominen ja suorittaminen varastonhallinnan mobiilisovelluksella
-- Ostotilausten rekisteröinti ja hyllytystöiden tekeminen varastonhallinnan mobiilisovelluksella
+
+- Myynti- ja siirtotilausten varastotyön käsittely varastosovelluksella (mukaan lukien täydennystyö)
+- Käytettävissä olevan varaston kysely varastosovelluksella
+- Varastosiirtojen luominen ja suorittaminen varastosovelluksella
+- Inventointityön luominen ja käsitteleminen varastosovelluksen avulla
+- Varaston oikaisun tekeminen varastosovelluksella
+- Ostotilausten rekisteröinti ja hyllytystöiden tekeminen varastosovelluksella.
 
 Seuraavia työtilaustyyppejä tuetaan tällä hetkellä scale unit -käyttöönottojen WES-kuormituksissa:
 
@@ -126,9 +141,10 @@ Seuraavia työtilaustyyppejä tuetaan tällä hetkellä scale unit -käyttööno
 - Siirtovarasto-otto
 - Täydennys
 - Varaston siirtotapahtuma
+- Inventointi
 - Varastotilaukset (linkitetyt ostotilaukset)
 
-Scale uniteissa ei tueta tällä hetkellä minkään muun tyyppistä lähdeasiakirjojen käsittelyä tai varastotyötä. Esimerkiksi scale unitin WES-työkuormassa ei voi suorittaa siirtotilauksen vastaanottoprosessia (siirron vastaanottoa) tai käsitellä inventointityötä.
+Scale uniteissa ei tueta tällä hetkellä minkään muun tyyppistä lähdeasiakirjojen käsittelyä tai varastotyötä. Esimerkiksi scale unitin WES-työkuormassa ei voi suorittaa siirtotilauksen vastaanottoprosessia (siirron vastaanottoa) vaan sen sijaan keskusesiintymän pitää käsitellä se.
 
 > [!NOTE]
 > Niiden toimintojen, joita ei tueta, mobiililaitteen valikkovaihtoehtoja ja painikkeita ei näytetä _varastonhallinnan mobiilisovelluksessa_, kun se on yhdistetty Scale Unitin käyttöönottoon.
@@ -160,7 +176,6 @@ Seuraavia varastonhallintatoimintoja ei tueta tällä hetkellä scale unitin ty�
 - Negatiivisen käytettävissä olevan varaston käsittely
 - Mukautettuja työtyyppejä sisältävän varastotyön käsittely
 - Kuormakirjoja sisältävän varastotyön käsittely
-- Inventoinnin käynnistysrajan sisältävän varastotyön käsittely
 - Materiaalikäsittelyä tai varastoautomaatiota sisältävän varastotyön käsittely
 - Tuotteen päätietojen kuvan käyttö (esimerkiksi varastonhallinnan mobiilisovelluksessa)
 
@@ -186,14 +201,14 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 | Aallon lähetysten ylläpito                                  | Kyllä | Nro |
 | Varastotyön käsittely (mukaan lukien rekisterikilven tulostus)        | Nro  | <p>Kyllä, mutta vain edellä mainittujen tuettujen ominaisuuksien osalta. |
 | Klusterin keräily                                              | Nro  | Kyllä|
-| Manuaalinen pakkaamisen käsittely, mukaan lukien Pakatun kontin keräily -työn käsittely                                           | Nro <P>Osa käsittelystä voidaan tehdä scale unitin käsittelemän ensimmäisen keräilyn käsittelyn jälkeen, mutta sitä ei suositella seuraavien estettyjen toimintojen vuoksi.</p>  | Nro  |
-| Poista kontti ryhmästä                        | Nro  | Nro                           |
+| Manuaalinen pakkaamisen käsittely, mukaan lukien Pakatun kontin keräily -työn käsittely | Nro <P>Osa käsittelystä voidaan tehdä scale unitin käsittelemän ensimmäisen keräilyn käsittelyn jälkeen, mutta sitä ei suositella seuraavien estettyjen toimintojen vuoksi.</p>  | Nro |
+| Poista kontti ryhmästä                                  | Nro  | Nro |
 | Lähtevien lajittelun käsittely                                  | Nro  | Nro |
 | Lastaukseen liittyvien asiakirjojen tulostaminen                           | Kyllä | Nro |
 | Rahtikirjan ja ASN-ilmoituksen luonti                            | Kyllä | Nro |
-| Lähetyksen vahvistus                    | Kyllä  | Nro |
-| Lähetyksen vahvistus sekä Vahvista ja siirrä                    | Nro  | Nro |
-| Pakkausluettelon ja laskutuksen käsittely                | Kyllä | Nro |
+| Lähetyksen vahvistus                                             | Kyllä | Nro |
+| Lähetyksen vahvistus sekä Vahvista ja siirrä            | Nro  | Nro |
+| Pakkausluettelon ja laskutuksen käsittely                        | Kyllä | Nro |
 | Lyhyt keräily (myynti- ja siirtotilaukset)                    | Nro  | Nro |
 | Ylikeräily (myynti- ja siirtotilaukset)                     | Nro  | Nro |
 | Työsijaintien muuttaminen (myynti- ja siirtotilaukset)         | Nro  | Kyllä|
@@ -212,31 +227,31 @@ Seuraava taulukko sisältää tuetut saapuvien toiminnot ja missä näitä toimi
 
 | Käsittele                                                          | Keskus | WES-kuormitus scale unitissa<BR>*(Nimikkeet, joissa on Kyllä-merkintä, koskevat vain varastotilauksia)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Lähdeasiakirjan&nbsp;käsittely                                       | Kyllä | Nro |
+| Lähdeasiakirjan&nbsp;käsittely                             | Kyllä | Nro |
 | Lastauksen ja kuljetusten hallinnan käsittely                    | Kyllä | Nro |
-| Saapuvan lähetyksen vahvistus                                            | Kyllä | Nro |
+| Saapuvan lähetyksen vahvistus                                    | Kyllä | Nro |
 | Ostotilauksen vapautus varastoon (varastotilausten käsittely) | Kyllä | Nro |
-| Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä</p>          | Kyllä | Nro |
+| Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä</p> | Kyllä | Nro |
 | Ostotilausnimikkeen vastaanotto ja poispano                       | <p>Kyllä,&nbsp;kun &nbsp;varastotilausta ei&nbsp;ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p> |
-| Ostotilausrivin vastaanotto ja poispano                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p></p> |
-| Palautustilauksen vastaanotto ja poispano                               | Kyllä | Nro |
-| Yhdistetyn rekisterikilven vastaanotto ja poispano                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Kuorman nimikkeen vastaanotto                                             | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Rekisterikilven vastaanotto ja poispano                              | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Siirtotilausnimikkeen vastaanotto ja poispano                        | Kyllä | Nro |
-| Siirtotilausrivin vastaanotto ja poispano                        | Kyllä | Nro |
-| Työn peruuttaminen (saapuva)                                              | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, mutta vain silloin kun <b>Poista vastaanoton rekisteröinti, kun työ peruutetaan</b> -asetuksen (<b>Varastonhallinnan parametrit</b> -sivulla) valinta on tyhjennetty</p> |
-| Ostotilauksen tuotteen vastaanoton käsittely                          | Kyllä | Nro |
-| Alitoimituksen sisältävän ostotilauksen vastaanotto                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä, mutta vain tekemällä peruutuspyyntö keskuksesta |
-| Ylitoimituksen sisältävän ostotilauksen vastaanotto                        | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä  |
-| *Cross docking* -työn luonnin sisältävä vastaanotto                   | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
+| Ostotilausrivin vastaanotto ja poispano                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p></p> |
+| Palautustilauksen vastaanotto ja poispano                              | Kyllä | Nro |
+| Yhdistetyn rekisterikilven vastaanotto ja poispano                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
+| Kuorman nimikkeen vastaanotto                                              | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
+| Rekisterikilven vastaanotto ja poispano                             | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
+| Siirtotilausnimikkeen vastaanotto ja poispano                       | Kyllä | Nro |
+| Siirtotilausrivin vastaanotto ja poispano                       | Kyllä | Nro |
+| Työn peruuttaminen (saapuva)                                            | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, mutta vain silloin kun <b>Poista vastaanoton rekisteröinti, kun työ peruutetaan</b> -asetuksen (<b>Varastonhallinnan parametrit</b> -sivulla) valinta on tyhjennetty</p> |
+| Ostotilauksen tuotteen vastaanoton käsittely                        | Kyllä | Nro |
+| Alitoimituksen sisältävän ostotilauksen vastaanotto                      | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä, mutta vain tekemällä peruutuspyyntö keskuksesta |
+| Ylitoimituksen sisältävän ostotilauksen vastaanotto                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä  |
+| *Cross docking* -työn luonnin sisältävä vastaanotto                 | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
 | *Laatutilaus*-työn luonnin sisältävä vastaanotto                  | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
 | *Laatunimikkeen otanta* -työn luonnin sisältävä vastaanotto          | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
 | *Laatu laaduntarkistuksessa* -työn luonnin sisältävä vastaanotto       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
 | Laatutilauksen luonnin sisältävä vastaanotto                            | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Työnkäsittely – *Klusterihyllytys*-ohjattu                             | Kyllä | Nro |
-| *Lyhyt keräilyn* sisältävän työn käsittely                                           | Kyllä | Nro |
-| Rekisterikilven lataus                                           | Kyllä | Nro |
+| Työnkäsittely – *Klusterihyllytys*-ohjattu                 | Kyllä | Nro |
+| *Lyhyt keräilyn* sisältävän työn käsittely                               | Kyllä | Nro |
+| Rekisterikilven lataus                                           | Kyllä | Kyllä |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Varastotoiminnot ja poikkeuksien käsittely
 
@@ -251,10 +266,10 @@ Seuraava taulukko sisältää tuetut varastotoimintojen ja poikkeuksien käsitte
 | Siirto                                           | Kyllä | Kyllä                          |
 | Siirto mallin mukaan                               | Kyllä | Kyllä                          |
 | Varastosiirto                                 | Kyllä | Nro                           |
-| Siirtotilauksen luominen varastonhallinnan mobiilisovelluksesta           | Kyllä | Nro                           |
-| Oikaisu (sisään/ulos)                                | Kyllä | Nro                           |
+| Siirtotilauksen luominen varastosovelluksesta           | Kyllä | Nro                           |
+| Oikaisu (sisään/ulos)                                | Kyllä | Kyllä, mutta ei oikaisu ulos -skenaariota varten, jossa varastovaraus on poistettava käyttämällä varasto-oikaisutyyppien **Poista varaukset** -asetusta.</p>                           |
 | Varaston tilamuutos                            | Kyllä | Nro                           |
-| Inventointi ja poikkeamien käsittely | Kyllä | Nro                           |
+| Inventointi ja poikkeamien käsittely | Kyllä | Kyllä                           |
 | Etiketin uudelleentulostus (rekisterikilven tulostus)             | Kyllä | Kyllä                          |
 | Rekisterikilpikoonti                                | Kyllä | Nro                           |
 | Rekisterikilven tauko                                | Kyllä | Nro                           |
@@ -286,11 +301,9 @@ Useita erätöitä suoritetaan sekä keskuksessa että scale uniteissa
 
 Erätöitä voidaan ylläpitää manuaalisesti keskuskäyttöönotossa. Seuraavia erätyötä voi hallita valitsemalla **Varastonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta**:
 
-- Käsittele työn tilan päivitystapahtumat
 - Scale Unitin ja keskuksen välinen sanoman käsittelijä
 - Rekisteröi lähdetilauksen vastaanotot
 - Viimeistele varastotilaukset
-- Käsittele varastotilausrivien määrien päivitysvastaukset
 
 Scale unitien kuormituksissa voi hallita seuraavia erätöitä valitsemalla **Varastonhallinta \> Kausittaiset tehtävät \> Kuormituksen hallinta**:
 
@@ -299,6 +312,5 @@ Scale unitien kuormituksissa voi hallita seuraavia erätöitä valitsemalla **Va
 - Käsittele varastotilausrivien määräpäivityspyynnöt
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

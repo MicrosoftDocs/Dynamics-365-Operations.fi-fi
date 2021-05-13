@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907960"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935602"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.17 (huhtikuu 2021)
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 Tämä julkaisu sisältää seuraavat toiminnot.  Saat lisätietoja kunkin ominaisuuden virallisista julkaisupäivämääristä avaamalla [julkaisusuunnitelman](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) linkkejä.
 
-Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista saattaa vielä olla esiversioita, vaikka useimmat ovat nyt yleisesti saatavana.
+Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 ### <a name="asset-management"></a>Resurssien hallinta
 
@@ -71,13 +71,13 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 - [Resurssien hallinnan ominaisuudet tuotannon käyttöliittymässä](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md).
 
-- Työtunnusten yhdistetty numerosarja<br> - Lisätietoja on kohdassa 
+- [Tuotannon suorittaminen pilven scale unitien avulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Lisätietoja on kohdassa [Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset](../cloud-edge/cloud-edge-workload-manufacturing.md)
 
 - [Oletusvarausperiaatteen ohittaminen tuotannossa oleville materiaaleille](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Lisätietoja on kohdassa [Tuotannon materiaalien oletusvarausperiaatteen ohittaminen](../production-control/override-default-reservation-principle.md)
 
 - [Tuotannonhallinnan tallennetut näkymät](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Lisätietoja on kohdassa [Supply Chain Managementin tallennetut vakionäkymät](saved-views-scm.md).
 
-- [Tuotannon suorittaminen pilven scale unitien avulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Lisätietoja on kohdassa [Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset](../cloud-edge/cloud-edge-workload-manufacturing.md)
+- Työtunnusten yhdistetty numerosarja<br> - Lisätietoja: [Työtunnusten yhdistetty numerosarja](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Suunnittelu
 

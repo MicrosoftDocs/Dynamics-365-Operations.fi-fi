@@ -2,7 +2,8 @@
 title: B2B-verkkokauppasivuston määrittäminen
 description: Tässä aiheessa kuvataan, kuinka määritetään yritysten (B2B) verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799754"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937503"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Yritysten välisillä (B2B) verkkokauppasivustoilla on joitakin avaintoimintoja, jotka optimoivat B2B-käyttäjän työnkulun. Tässä aiheessa kuvataan, kuinka määritetään B2B-verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla. Se käy läpi moduulit ja sivuston asetukset, jotka pitää olla konfiguroitu B2B-skenaarioiden käyttöön ottamiseksi.
 
@@ -283,9 +285,35 @@ Luo laskun tietosivu sivustonmuodostimessa seuraavasti.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 1. Julkaise sivun URL-osoite.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Pikalisäysmoduulin lisääminen ostoskorisivulle
+
+Pikalisäysmoduulin avulla voit lisätä nopeasti useita nimikkeitä ostoskoriin nimiketunnusten (eli varastointiyksikön \[SKU\] tunnusten) avulla. Pikalisäysmoduuli lisätään sivuston ostoskorisivulle.
+
+Voit lisätä pikalisäysmoduulin ostoskorisivulle Commercen sivustonmuodostimessa seuraavasti.
+
+1. Valitse **Mallit** ja valitse sivuston ostoskorisivun malli.
+1. Valitse **Muokkaa**.
+1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Pikalisäys**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Sivut** ja valitse sivuston ostoskorisivu.
+1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse **Säilö**-moduulin ominaisuusruudussa **Leveys**-kohdassa **Täytä säilö**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Pikalisäys**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
+
+> [!NOTE] 
+> Pikalisäysmoduuli on käytettävissä Commerce 10.0.17 -versiosta eteenpäin. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Moduulikirjaston yleiskatsaus](../starter-kit-overview.md)
+
+[SDK:n ja moduulikirjaston päivitykset](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Muokkaussivun yleiskatsaus](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Luo laskun tietosivu sivustonmuodostimessa seuraavasti.
 
 [Sisältölohkomoduuli](../add-hero-module.md)
 
-[Tuotekokoelma](../product-collection-module-overview.md)
+[Tuotekokoelmamoduuli](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

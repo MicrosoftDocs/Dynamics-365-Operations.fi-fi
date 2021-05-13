@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1221bb57aea4c93cb60fc29caec2d3b41798f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 592b3d0265a3be92a5a823c6aabdd40b4e3f0a27
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836395"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919938"
 ---
 # <a name="create-a-new-trade-agreement"></a>Luo uusi kauppasopimus
 
@@ -26,8 +26,8 @@ ms.locfileid: "5836395"
 
 Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidään tuotteen tietyn asiakkaan kanssa sovittu uusi hinta. Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi. Jos käytät omia tietojasi, varmista ennen tämän ohjeen käyttöä, että kauppasopimuksen kirjauskansion nimi on kohteeseen, jossa Oletussuhde-arvoksi on valittu Hinta (myynti).
 
-
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Luo ja kirjaa uusi kauppasopimuksen kirjauskansi
+
 1. Valitse **Siirtymisruutu > Moduulit >Myynti ja markkinointi > Hinnat ja alennukset > Kauppasopimuksen kirjauskansiot**.
 2. Valitse **Uusi**.
 3. Avaa haku valitsemalla **Nimi**-kentässä avattavan valikon painike.
@@ -58,22 +58,26 @@ Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidä�
 20. Valitse **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Näytä tuotteen kauppasopimukset
+
 1. Valitse **Siirtymisruutu > Moduulit > Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet**.
 2. Etsi ja valitse luettelosta tuote, jonka hinnan päivitit.
 3. Valitse **toimintoruudussa** **Myynti**.
 4. Valitse **Näytä kauppasopimukset**.
     
-    Tarkastele juuri luodun hinnan kauppasopimuksen tietoja.    
+    Tarkastele juuri luodun hinnan kauppasopimuksen tietoja.
 
 5. Sulje sivu.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 ### <a name="whitepaper"></a>Tekninen raportti
+
 Lisätietoja saa lataamalla seuraava tekninen raportti (joka on kirjoitettu tukemaan AX2012-versiota, mutta koskee myös Dynamics 365 Supply Chain Managementia)
-- [Kauppasopimukset](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
+- [Kauppasopimukset](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 ### <a name="community-blogs"></a>Yhteisöblogit
+
 - [Dynamics 365 for Finance and Operationsin myyntihinnat](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 

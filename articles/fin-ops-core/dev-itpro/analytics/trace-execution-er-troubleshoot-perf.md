@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 description: Tässä ohjeaiheessa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754213"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944650"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 
@@ -47,10 +47,10 @@ Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti.
 
 | Tiedosto                                  | Sisältö                               |
 |---------------------------------------|---------------------------------------|
-| Suorituskyvyn jäljitysmalli.versio.1     | [Esimerkin ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Suorituskyvyn jäljitysmetadata.versio.1  | [Esimerkin ER-metadatan konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Suorituskyvyn jäljitysmapping.versio.1 | [Esimerkin ER-mallikartoituksen konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Suorituskyvyn jäljitysformat.versio.1  | [Esimerkin ER-format-konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Suorituskyvyn jäljitysmalli.versio.1     | [Esimerkin ER-tietomallin konfigurointi](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Suorituskyvyn jäljitysmetadata.versio.1  | [Esimerkin ER-metadatan konfigurointi](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Suorituskyvyn jäljitysmapping.versio.1 | [Esimerkin ER-mallikartoituksen konfigurointi](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Suorituskyvyn jäljitysformat.versio.1  | [Esimerkin ER-format-konfigurointi](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Konfiguroi ER-parametrit
 
@@ -84,7 +84,7 @@ Jos haluat olla käytettävissä **Muut** -hakukentässä, DM-tiedostotyyppi on 
 Oletetaan, että olet aloittanut uuden ER-ratkaisun suunnittelun, joka luo toimittajatapahtumia esittelevän uuden raportin. Tällä hetkellä voit etsiä valitun toimittajan tapahtumat **Toimittajatapahtumat**-sivulta (Siirry **Ostoreskontra \> Toimittajat \> Kaikki toimittajat**, valitse toimittaja ja sitten toimintoruudun **Toimittaja**-välilehti kohdassa valitse **Tapahtumat**-ryhmästä **Tapahtumat**). Haluat kuitenkin saada kaikki toimittajatapahtumat samaan aikaan yhdessä sähköisessä asiakirjassa XML-muodossa. Tämä ratkaisu koostuu useista ER-konfiguraatioista, jotka sisältävät vaaditun tietomallin, metatiedot, mallien yhdistämismääritykset ja muotokomponentit.
 
 1. Kirjaudu yrityksen RCS-esiintymään, joka on valmisteltu yrityksellesi.
-2. Tässä opetusohjelmassa luodaan ja muokataan konfiguraatioita malliyritykselle **Litware, Inc.**. Varmista siksi, että tämä konfigurointipalvelu on lisätty RCS-järjestelmään ja valittu aktiiviseksi. Lisätietoja on kohdassa [Luo konfigurointipalvelut ja merkitse ne aktiivisiksi](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) menettelyiksi.
+2. Tässä opetusohjelmassa luodaan ja muokataan konfiguraatioita malliyritykselle **Litware, Inc.**. Varmista siksi, että tämä konfigurointipalvelu on lisätty RCS-järjestelmään ja valittu aktiiviseksi. Lisätietoja on kohdassa [Luo konfigurointipalvelut ja merkitse ne aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) menettelyiksi.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**-ruutu.
 4. Tuo **Konfiguraatiot** -sivulla lataamasi ER-kokoonpanot RCS-edellytyksenä seuraavassa järjestyksessä: tietomalli, metatiedot, mallikartoitus, muoto. Luo kukin mukautus seuraavasti:
 
@@ -101,7 +101,7 @@ Oletetaan, että olet suunnitellut ER-ratkaisun ensimmäisen version. Nyt haluat
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Sähköisen raportoinnin konfiguraation tuominen RCS:stä Finance and Operations -sovellukseen
 
 1. Kirjaudu sisään sovelluksen esiintymään.
-2. Tämän opetusohjelman avulla voit tuoda konfiguraatiot RCS-esiintymästäsi (jossa suunnittelet ER-komponentteja) esiintymääsi (jossa testaat ja lopulta käytät niitä). Siksi on varmistettava, että kaikki vaaditut tiedot on valmisteltu. Ohjeita on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. Tämän opetusohjelman avulla voit tuoda konfiguraatiot RCS-esiintymästäsi (jossa suunnittelet ER-komponentteja) esiintymääsi (jossa testaat ja lopulta käytät niitä). Siksi on varmistettava, että kaikki vaaditut tiedot on valmisteltu. Ohjeita on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md).
 3. Seuraavien vaiheiden mukaisesti voit tuoda konfiguraatiot RCS:stä sovellukseen:
 
     1. Valitse **Sähköisen raportoinnin** työtilassa **Litware, Inc**-määrityspalveluruudussa **Arkistot**.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4767d5dc3944d2595a5b2a74a6d5c7c0ea0c849a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2c945756997b0580ac7ffb19261f9184e53a1c10
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809443"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920504"
 ---
 # <a name="approve-a-product-configuration-model"></a>Tuotteen konfigurointimallin hyväksyntä
 
@@ -26,25 +26,24 @@ ms.locfileid: "5809443"
 
 Tämän menettelyn suorittaminen edellyttää, että ainakin yksi tuotemääritysmalli on käytettävissä. Tämä menettely käyttää USMF-yrityksen demotietojen korkealaatuista kaiutinmallia. Huomaa, että tämä malli on jo hyväksytty, mutta menettely selittää koko prosessin.
 
-1. Valitse Tuotevarianttimallin määritys.
-2. Valitse Tuotekonfiguraation mallit.
-3. Etsi haluamasi tietue luettelosta ja valitse se.
+1. Valitse **Tuotetietojen hallinta \> Tuotteet \> Tuotekonfiguraation mallit**.
+1. Etsi haluamasi tietue luettelosta ja valitse se.
     * Valitse tähän menettelyyn Korkealaatuinen kaiutinmalli.  
-4. Valitse Versiot.
-5. Valitse Uusi.
-6. Anna tai valitse Tuotenumero -kentässä arvo.
+1. Valitse **Versiot**.
+1. Valitse **Uusi**.
+1. Anna tai valitse **Tuotenumero**-kentässä arvo.
     * Tuotteen viite vastaa tuotemääritysmallin versiota. Tässä luettelossa on vain poissulkevaa konfigurointitekniikkaa sisältävät päätuotteet.  
-7. Syötä päivämäärä Päivämäärästä-kenttään.
+1. Syötä päivämäärä **Päivämäärästä**-kenttään.
     * Valitse, milloin tuotemalliversio on käytettävissä.  
-8. Kirjoita päivämäärä Päivämäärään-kenttään.
+1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
     * Valitse päättymispäivä, jolloin tuotemalliversio vanhenee, tai valitse Ei koskaan.  
-9. Avaa valintaikkuna valitsemalla Hyväksy.
-10. Anna tai valitse Hyväksyjä-kentässä arvo.
+1. Avaa valintaikkuna valitsemalla **Hyväksy**.
+1. Anna tai valitse **Hyväksyjä**-kentässä arvo.
     * Valitse henkilö, joka vastaa työvaiheissa käytettävien tuotemallien hyväksymisestä.  
-11. Valitse OK.
-12. Valitse Hinnoittelumenetelmä-kentässä vaihtoehto.
+1. Valitse **OK**.
+1. Valitse **Hinnoittelumenetelmä**-kentässä vaihtoehto.
     * Aktivoi tuotemalliversio. Samanaikaisesti vain yksi tuotemallin tuote voi olla aktiivinen.  
-13. Sulje sivu.
+1. Sulje sivu.
 
 
 
