@@ -1,8 +1,8 @@
 ---
 title: Luo ja ylläpidä varastoesto
-description: Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla.
+description: Tässä aiheessa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833998"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956155"
 ---
-# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="2a9a1-103">Luo ja ylläpidä varastoesto</span><span class="sxs-lookup"><span data-stu-id="2a9a1-103">Create and maintain an inventory blocking</span></span>
+# <a name="create-and-maintain-an-inventory-blocking"></a><span data-ttu-id="9af16-103">Luo ja ylläpidä varastoesto</span><span class="sxs-lookup"><span data-stu-id="9af16-103">Create and maintain an inventory blocking</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2a9a1-104">Tässä menettelyssä kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muiden lähtevien asiakirjojen tai varastoeston avulla.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="2a9a1-105">Voit suorittaa menettelyn esittelytietojen USMF-yrityksen avulla näkyvillä olevilla esimerkkiarvoilla.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="2a9a1-106">Aloita tämä menettely vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
+<span data-ttu-id="9af16-104">Tässä aiheessa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla.</span><span class="sxs-lookup"><span data-stu-id="9af16-104">This topic describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.</span></span> <span data-ttu-id="9af16-105">Aloita tämän aiheen menettelyt vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.</span><span class="sxs-lookup"><span data-stu-id="9af16-105">Before you start the procedures in this topic, you must have an item that physical on-hand inventory is available for.</span></span>
 
+## <a name="block-inventory"></a><span data-ttu-id="9af16-106">Varastoesto</span><span class="sxs-lookup"><span data-stu-id="9af16-106">Block inventory</span></span>
 
-## <a name="create-an-inventory-blocking"></a><span data-ttu-id="2a9a1-107">Varastoeston luominen</span><span class="sxs-lookup"><span data-stu-id="2a9a1-107">Create an inventory blocking</span></span>
-1. <span data-ttu-id="2a9a1-108">Valitse **siirtymisruudussa** **Moduulit > Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Varastoesto**.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-108">In the **Navigation pane**, go to **Modules > Inventory management > Periodic tasks > Inventory blocking**.</span></span>
-2. <span data-ttu-id="2a9a1-109">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-109">Click **New**.</span></span>
-3. <span data-ttu-id="2a9a1-110">Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-110">In the **Item number** field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="2a9a1-111">Valitse luettelosta nimike.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-111">In the list, select the item you want to choose.</span></span> <span data-ttu-id="2a9a1-112">Määritä estettävä nimiketunnus, jolla on fyysistä käytettävissä olevaa varastoa.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="2a9a1-113">Jos käytössä on USMF, voit valita nimikkeen M9201.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-113">If you're using USMF you can select item M9201.</span></span>  
-5. <span data-ttu-id="2a9a1-114">Anna **Määrä**-kentässä numero.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-114">In the **Quantity** field, enter a number.</span></span> <span data-ttu-id="2a9a1-115">Jos käytössä on nimike M9201, määritä arvo, joka on pienempi kuin 200.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-115">If you're using item M9201, you need to select less than 200.</span></span>
-6. <span data-ttu-id="2a9a1-116">Laajenna **Varaston dimensiot** -pikavälilehti.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-116">Expand the **Inventory dimensions** fastTab.</span></span>
-7. <span data-ttu-id="2a9a1-117">Avaa haku valitsemalla **Varasto**-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-117">In the **Warehouse** field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="2a9a1-118">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-118">In the list, find and select the desired record.</span></span> <span data-ttu-id="2a9a1-119">Jos käytössä on nimike M9201, voit valita varaston 51.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-119">If you're using item M9201, you can select warehouse 51.</span></span>  
-9. <span data-ttu-id="2a9a1-120">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-120">Click **Save**.</span></span>
+<span data-ttu-id="9af16-107">Noudattamalla näitä ohjeita voit luoda varaston estotietueen varaston eston mahdollistamiseksi.</span><span class="sxs-lookup"><span data-stu-id="9af16-107">To create an inventory blocking record so that inventory is blocked, follow these steps.</span></span>
 
-## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="2a9a1-121">Varastoeston ehtojen päivittäminen</span><span class="sxs-lookup"><span data-stu-id="2a9a1-121">Update the conditions of the inventory blocking</span></span>
-1. <span data-ttu-id="2a9a1-122">Kirjoita numero **Yleiset** -pikavälilehden **Määrä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-122">In the **General** fastTab, in the **Quantity** field, enter a number.</span></span> <span data-ttu-id="2a9a1-123">Päivitä Varastomäärä-kenttä vastaamaan estettävää määrää.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
-2. <span data-ttu-id="2a9a1-124">Kirjoita päivämäärä **Odotettu päivämäärä** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-124">In the **Expected date** field, enter a date.</span></span> <span data-ttu-id="2a9a1-125">Haluat ehkä määrittää, milloin estetyn varaston odotetaan olevan varattavissa. Voit määrittää tätä varten odotetun päivämäärän.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="2a9a1-126">Jos varastoestolle on valittu Odotetut vastaanotot -asetus, kuten oletusarvoisesti on, voit luoda eston manuaalisesti. Tämä päivä näkyy odotetun tapahtuman kohdalla.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
-3. <span data-ttu-id="2a9a1-127">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-127">Click **Save**.</span></span>
+1. <span data-ttu-id="9af16-108">Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Varastoesto**.</span><span class="sxs-lookup"><span data-stu-id="9af16-108">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="9af16-109">Valitse toimintoruudussa **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="9af16-109">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="9af16-110">Uuden estotietueen otsikossa määritä **Nimiketunnus**-kenttä estettävään nimikkeeseen ja kirjoita kuvaus.</span><span class="sxs-lookup"><span data-stu-id="9af16-110">On the header of the new blocking record, set the **Item number** field to the item that you want to block, and enter a description.</span></span>
+1. <span data-ttu-id="9af16-111">Kirjoita **Yleiset**-pikavälilehden **Määrä**-kenttään estettävien nimikkeiden määrä.</span><span class="sxs-lookup"><span data-stu-id="9af16-111">On the **General** FastTab, in the **Quantity** field, enter the number of items to block.</span></span>
+1. <span data-ttu-id="9af16-112">Määritä **Varastodimensiot**-pikavälilehdessä paikka ja varasto, jossa estettävät nimikkeet sijaitsevat tällä hetkellä.</span><span class="sxs-lookup"><span data-stu-id="9af16-112">On the **Inventory dimensions** FastTab, specify the site and warehouse where the items that you want to block are currently located.</span></span>
+1. <span data-ttu-id="9af16-113">Valitse toimintoruudussa **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="9af16-113">On the Action Pane, select **Save**.</span></span>
 
-## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="2a9a1-128">Varastoeston poistaminen</span><span class="sxs-lookup"><span data-stu-id="2a9a1-128">Remove the inventory blocking</span></span>
-1. <span data-ttu-id="2a9a1-129">Valitse **toimintoruudussa** **Poista**.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-129">On the **Action Pane**, click **Delete**.</span></span>
-2. <span data-ttu-id="2a9a1-130">Valitse **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-130">Click **Yes**.</span></span>
-3. <span data-ttu-id="2a9a1-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2a9a1-131">Close the page.</span></span>
+## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="9af16-114">Varastoeston ehtojen päivittäminen</span><span class="sxs-lookup"><span data-stu-id="9af16-114">Update the conditions of the inventory blocking</span></span>
 
+<span data-ttu-id="9af16-115">Päivitä varaston estotietue noudattamalla seuraavia vaiheita.</span><span class="sxs-lookup"><span data-stu-id="9af16-115">To update an inventory blocking record, follow these steps.</span></span>
 
+1. <span data-ttu-id="9af16-116">Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Varastoesto**.</span><span class="sxs-lookup"><span data-stu-id="9af16-116">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="9af16-117">Valitse luetteloruudusta asianmukainen estotietue.</span><span class="sxs-lookup"><span data-stu-id="9af16-117">In the list pane, select the relevant blocking record.</span></span>
+1. <span data-ttu-id="9af16-118">Muokkaa tietuetta tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="9af16-118">Edit the record as required.</span></span> <span data-ttu-id="9af16-119">Esimerkiksi ehkä haluat muuttaa **Odotettu päivämäärä** -kentän arvoa ja määrittää, milloin estetyn varaston odotetaan olevan varattavissa.</span><span class="sxs-lookup"><span data-stu-id="9af16-119">For example, you might change the value of the **Expected date** field to indicate when the blocked inventory is expected to become available for reservation.</span></span> <span data-ttu-id="9af16-120">Jos **Oletetut vastaanotot** -asetus on valittuna, oletetussa tapahtumassa näkyy päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="9af16-120">If the **Expected receipts** option is selected, the date will appear on the expected transaction.</span></span> <span data-ttu-id="9af16-121">(**Oletetut vastaanotot** -asetus on oletusarvon mukaan valittuna, kun estotietue luodaan manuaalisesti.)</span><span class="sxs-lookup"><span data-stu-id="9af16-121">(The **Expected receipts** option is selected by default when you manually create a blocking record.)</span></span>
+1. <span data-ttu-id="9af16-122">Valitse toimintoruudussa **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="9af16-122">On the Action Pane, select **Save**.</span></span>
+
+## <a name="unblock-inventory"></a><span data-ttu-id="9af16-123">Poista varaston esto</span><span class="sxs-lookup"><span data-stu-id="9af16-123">Unblock inventory</span></span>
+
+<span data-ttu-id="9af16-124">Noudattamalla näitä ohjeita voit poistaa varaston estotietueen varaston eston poiston mahdollistamiseksi.</span><span class="sxs-lookup"><span data-stu-id="9af16-124">To remove an inventory blocking record so that inventory is unblocked, follow these steps.</span></span>
+
+1. <span data-ttu-id="9af16-125">Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Varastoesto**.</span><span class="sxs-lookup"><span data-stu-id="9af16-125">Go to **Inventory management \> Periodic tasks \> Inventory blocking**.</span></span>
+1. <span data-ttu-id="9af16-126">Valitse luetteloruudusta asianmukainen estotietue.</span><span class="sxs-lookup"><span data-stu-id="9af16-126">In the list pane, select the relevant blocking record.</span></span>
+1. <span data-ttu-id="9af16-127">Valitse toimintoruudussa **Poista**.</span><span class="sxs-lookup"><span data-stu-id="9af16-127">On the Action Pane, select **Delete**.</span></span>
+1. <span data-ttu-id="9af16-128">Järjestelmä pyytää vahvistamaan toiminnon.</span><span class="sxs-lookup"><span data-stu-id="9af16-128">You're prompted to confirm the operation.</span></span> <span data-ttu-id="9af16-129">Jatka valitsemalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="9af16-129">Select **Yes** to continue.</span></span>
+1. <span data-ttu-id="9af16-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="9af16-130">Close the page.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

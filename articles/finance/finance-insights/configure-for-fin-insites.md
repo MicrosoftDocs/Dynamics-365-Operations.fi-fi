@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908827"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941223"
 ---
-# <a name="configuration-for-finance-insights-preview"></a><span data-ttu-id="8e1d1-103">Finance Insightsin määritys (esiversio)</span><span class="sxs-lookup"><span data-stu-id="8e1d1-103">Configuration for Finance insights (preview)</span></span>
+# <a name="configuration-for-finance-insights-preview"></a><span data-ttu-id="57b43-103">Finance Insightsin määritys (esiversio)</span><span class="sxs-lookup"><span data-stu-id="57b43-103">Configuration for Finance insights (preview)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,420 +30,231 @@ ms.locfileid: "5908827"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="8e1d1-104">Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Microsoft Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-104">Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization.</span></span> <span data-ttu-id="8e1d1-105">Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-105">This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.</span></span>
+<span data-ttu-id="57b43-104">Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Microsoft Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle.</span><span class="sxs-lookup"><span data-stu-id="57b43-104">Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization.</span></span> <span data-ttu-id="57b43-105">Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.</span><span class="sxs-lookup"><span data-stu-id="57b43-105">This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.</span></span>
 
-## <a name="deploy-dynamics-365-finance"></a><span data-ttu-id="8e1d1-106">Dynamics 365 Financen käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="8e1d1-106">Deploy Dynamics 365 Finance</span></span>
+## <a name="deploy-dynamics-365-finance"></a><span data-ttu-id="57b43-106">Dynamics 365 Financen käyttöönotto</span><span class="sxs-lookup"><span data-stu-id="57b43-106">Deploy Dynamics 365 Finance</span></span>
 
-<span data-ttu-id="8e1d1-107">Ota ympäristöt käyttöön näiden ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-107">Deploy the environments by following these steps.</span></span>
+<span data-ttu-id="57b43-107">Ota ympäristöt käyttöön näiden ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-107">Deploy the environments by following these steps.</span></span>
 
-1. <span data-ttu-id="8e1d1-108">Luo tai päivitä Dynamics 365 Finance -ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-108">In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment.</span></span> <span data-ttu-id="8e1d1-109">Ympäristö edellyttää, että käytössä on sovellusversio 10.0.11/Platform update 35 -päivitys tai uudempi päivitys.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-109">The environment requires app version 10.0.11/Platform update 35 or later.</span></span>
-2. <span data-ttu-id="8e1d1-110">Ympäristön on oltava korkean käytettävyyden ympäristö eristysympäristössä.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-110">The environment must be a high-availability (HA) environment in Sandbox.</span></span> <span data-ttu-id="8e1d1-111">(Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span><span class="sxs-lookup"><span data-stu-id="8e1d1-111">(This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span></span>
-3. <span data-ttu-id="8e1d1-112">Jos käytössä ovat Contoso-esittelytiedot, asiakkaan maksuennusteiden, kassavirtaennusteiden ja budjettiennusteiden ominaisuuksien käyttäminen edellyttää lisämallitietoja.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-112">If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features.</span></span> 
+1. <span data-ttu-id="57b43-108">Luo tai päivitä Dynamics 365 Finance -ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="57b43-108">In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment.</span></span> <span data-ttu-id="57b43-109">Ympäristö edellyttää, että käytössä on sovellusversio 10.0.11/Platform update 35 -päivitys tai uudempi päivitys.</span><span class="sxs-lookup"><span data-stu-id="57b43-109">The environment requires app version 10.0.11/Platform update 35 or later.</span></span>
+2. <span data-ttu-id="57b43-110">Ympäristön on oltava korkean käytettävyyden ympäristö eristysympäristössä.</span><span class="sxs-lookup"><span data-stu-id="57b43-110">The environment must be a high-availability (HA) environment in Sandbox.</span></span> <span data-ttu-id="57b43-111">(Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span><span class="sxs-lookup"><span data-stu-id="57b43-111">(This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span></span>
+3. <span data-ttu-id="57b43-112">Jos käytössä ovat Contoso-esittelytiedot, asiakkaan maksuennusteiden, kassavirtaennusteiden ja budjettiennusteiden ominaisuuksien käyttäminen edellyttää lisämallitietoja.</span><span class="sxs-lookup"><span data-stu-id="57b43-112">If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features.</span></span> 
 
-## <a name="configure-dataverse"></a><span data-ttu-id="8e1d1-113">Määritä Dataverse</span><span class="sxs-lookup"><span data-stu-id="8e1d1-113">Configure Dataverse</span></span>
+## <a name="configure-dataverse"></a><span data-ttu-id="57b43-113">Määritä Dataverse</span><span class="sxs-lookup"><span data-stu-id="57b43-113">Configure Dataverse</span></span>
 
-<span data-ttu-id="8e1d1-114">Voit tehdä seuraavat manuaaliset määritysvaiheet valmiiksi tai voit nopeuttaa määritysprosessia käyttämällä tarjolla olevaa Windows PowerShell -komentosarjaa.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-114">You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided.</span></span> <span data-ttu-id="8e1d1-115">Kun PowerShell-komentosarja on suoritettu, käytettävissä ovat Finance Insightsin määrityksessä käytettävät arvot.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-115">When the PowerShell script has finished running, it will give you values to use to configure Finance insights.</span></span> 
+<span data-ttu-id="57b43-114">Seuraavia ohjeita noudattamalla voit määrittää Dataversen Finance insightsille.</span><span class="sxs-lookup"><span data-stu-id="57b43-114">Use the following steps to configure Dataverse for Finance insights.</span></span>
+
+1. <span data-ttu-id="57b43-115">Avaa ympäristösivu LCS:ssä ja tarkista, että **Power Platform Integrointi** -osa on jo asennettu.</span><span class="sxs-lookup"><span data-stu-id="57b43-115">Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.</span></span>
+    1. <span data-ttu-id="57b43-116">Jos se on jo asennettu, Dataverse-ympäristön nimi, joka on linkitetty Dynamics 365 Finance -ympäristöön, pitäisi olla luettelossa.</span><span class="sxs-lookup"><span data-stu-id="57b43-116">If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed.</span></span> <span data-ttu-id="57b43-117">Kopioi Dataverse-ympäristön nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-117">Copy the Dataverse environment name.</span></span>
+    2. <span data-ttu-id="57b43-118">Jos sitä ei ole määritetty, noudata seuraavia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="57b43-118">If it is not set up, follow these steps:</span></span>
+        1. <span data-ttu-id="57b43-119">Valitse **Asetukset**-painike Power Platform Integrointi -osasta.</span><span class="sxs-lookup"><span data-stu-id="57b43-119">Select the **Setup** button in the Power Platform Integration section.</span></span> <span data-ttu-id="57b43-120">Ympäristön määrittäminen voi viedä noin tunnin.</span><span class="sxs-lookup"><span data-stu-id="57b43-120">It may take up to an hour for the environment to be set up.</span></span>
+        2. <span data-ttu-id="57b43-121">Jos Dataverse-ympäristö on asennettu onnistuneesti, Dataverse-ympäristön nimi, joka on linkitetty Dynamics 365 Finance -ympäristöön, pitäisi olla luettelossa.</span><span class="sxs-lookup"><span data-stu-id="57b43-121">If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed.</span></span> <span data-ttu-id="57b43-122">Kopioi Dataverse-ympäristön nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-122">Copy the Dataverse environment name.</span></span>
+> [!NOTE]
+> <span data-ttu-id="57b43-123">Kun ympäristön määritys on valmis, **ÄLÄ** valitse **Linkitä CDS for Apps** -painiketta.</span><span class="sxs-lookup"><span data-stu-id="57b43-123">After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button.</span></span> <span data-ttu-id="57b43-124">Tätä ei tarvita Finance Insightsissa, ja se poistaa kyvyn suorittaa tarvittavat ympäristön lisäosat LCS:ssä.</span><span class="sxs-lookup"><span data-stu-id="57b43-124">This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.</span></span>
+
+2. <span data-ttu-id="57b43-125">Avaa [Power Platformin hallintakeskus](https://admin.powerplatform.microsoft.com/) ja luo uusi Dataverse -ympäristö samaan Active Directory -vuokraajaan seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-125">Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:</span></span>
+
+    1. <span data-ttu-id="57b43-126">Avaa **Ympäristöt**-sivu.</span><span class="sxs-lookup"><span data-stu-id="57b43-126">Open the **Environments** page.</span></span>
+
+        <span data-ttu-id="57b43-127">[![Ympäristöt-sivu](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span><span class="sxs-lookup"><span data-stu-id="57b43-127">[![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span></span>
+
+    2. <span data-ttu-id="57b43-128">Valitse yllä luotu Dataverse-ympäristö ja valitse sitten **Asetukset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-128">Select the Dataverse environment created above and then select **Settings**.</span></span>
+    3. <span data-ttu-id="57b43-129">Valitse **Resurssit \> Kaikki vanhat asetukset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-129">Select **Resources \> All Legacy Settings**.</span></span>
+    4. <span data-ttu-id="57b43-130">Valitse yläreunan siirtymispalkissa **Asetukset** ja valitse sitten **Mukautukset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-130">On the top navigation bar, select **Settings**, and then select **Customizations**.</span></span>
+    5. <span data-ttu-id="57b43-131">Valitse **Kehittäjän resurssit**.</span><span class="sxs-lookup"><span data-stu-id="57b43-131">Select **Developer Resources**.</span></span>
+    6. <span data-ttu-id="57b43-132">Kopioi **Dataverse-organisaation tunnuksen** arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-132">Copy the **Dataverse organization ID** value.</span></span>
+    7. <span data-ttu-id="57b43-133">Kirjoita selaimen osoitepalkkiin Dataverse -organisaation URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="57b43-133">In the browser's address bar, make a note of the URL for the Dataverse organization.</span></span> <span data-ttu-id="57b43-134">URL-osoite voi olla esimerkiksi `https://org42b2b3d3.crm.dynamics.com`.</span><span class="sxs-lookup"><span data-stu-id="57b43-134">For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.</span></span>
+
+3. <span data-ttu-id="57b43-135">Jos aiot käyttää kassavirtaennusteiden tai budjettiennusteiden toimintoa, päivitä organsaation huomautusten rajaksi vähintään 50 megatavua (Mt) seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-135">If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):</span></span>
+
+    1. <span data-ttu-id="57b43-136">Avaa [Power Apps -portaali](https://make.powerapps.com).</span><span class="sxs-lookup"><span data-stu-id="57b43-136">Open the [Power Apps portal](https://make.powerapps.com).</span></span>
+    2. <span data-ttu-id="57b43-137">Valitse juuri luotu ympäristö ja valitse sitten **Lisäasetukset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-137">Select the environment that you just created, and then select **Advanced settings**.</span></span>
+    3. <span data-ttu-id="57b43-138">Valitse **Asetukset \> Sähköpostimääritykset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-138">Select **Settings \> Email Configuration**.</span></span>
+    4. <span data-ttu-id="57b43-139">Muuta **Tiedoston enimmäiskoko** -kentän arvoksi **51 200**.</span><span class="sxs-lookup"><span data-stu-id="57b43-139">Change the value of the **Maximum file size** field to **51,200**.</span></span> <span data-ttu-id="57b43-140">(Arvo ilmoitetaan kilotavuina \[Kt\].)</span><span class="sxs-lookup"><span data-stu-id="57b43-140">(The value is expressed in kilobytes \[KB\].)</span></span>
+    5. <span data-ttu-id="57b43-141">Tallenna muutokset valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="57b43-141">Select **OK** to save your changes.</span></span>
+
+## <a name="configure-the-azure-setup"></a><span data-ttu-id="57b43-142">Azure-asetuksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="57b43-142">Configure the Azure setup</span></span>
+
+### <a name="enter-the-dataverse-directory-id-and-the-users-azure-ad-object-id"></a><span data-ttu-id="57b43-143">Syötä Dataverse -hakemiston tunnus ja käyttäjän Azure AD -objektin tunnus</span><span class="sxs-lookup"><span data-stu-id="57b43-143">Enter the Dataverse directory ID and the user's Azure AD object ID</span></span>
+
+1. <span data-ttu-id="57b43-144">Syötä Dataverse -hakemiston tunnus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-144">Enter the Dataverse directory ID:</span></span>
+
+    1. <span data-ttu-id="57b43-145">Avaa [Azure-portaali](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="57b43-145">Open the [Azure portal](https://portal.azure.com).</span></span>
+    2. <span data-ttu-id="57b43-146">Kirjaudu sisään käyttämällä käyttäjätunnusta, jota käytettiin Dataverse -ympäristön luomisessa.</span><span class="sxs-lookup"><span data-stu-id="57b43-146">Sign in by using the user ID that was used to create the Dataverse environment.</span></span>
+    3. <span data-ttu-id="57b43-147">Siirry osoitteeseen **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="57b43-147">Go to **Azure Active Directory**.</span></span>
+    4. <span data-ttu-id="57b43-148">Kopioi **Vuokraajan tunnus** -arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-148">Copy the **Tenant ID** value.</span></span>
+
+2. <span data-ttu-id="57b43-149">Syötä Azure Active Directory (Azure AD) -objektin tunnus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-149">Enter the user's Azure Active Directory (Azure AD) object ID:</span></span>
+
+    1. <span data-ttu-id="57b43-150">Siirry [Azure-portaalissa](https://portal.azure.com) **Käyttäjät**-kohtaan ja hae käyttäjää sähköpostiosoitteen avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-150">In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.</span></span>
+    2. <span data-ttu-id="57b43-151">Valitse käyttäjän nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-151">Select the user's name.</span></span>
+    3. <span data-ttu-id="57b43-152">Kopioi **Objektin tunnus** -arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-152">Copy the **Object ID** value.</span></span>
+
+### <a name="use-azure-cloud-shell-to-set-up-finance-insights-data-lake-resources"></a><span data-ttu-id="57b43-153">Finance Insightsin Data Lake -resurssien määrittäminen Azure Cloud Shellin avulla</span><span class="sxs-lookup"><span data-stu-id="57b43-153">Use Azure Cloud Shell to set up Finance insights Data Lake resources</span></span>
+
+# <a name="use-a-windows-powershell-script"></a>[<span data-ttu-id="57b43-154">Windows PowerShell -komentosarjan käyttäminen</span><span class="sxs-lookup"><span data-stu-id="57b43-154">Use a Windows PowerShell script</span></span>](#tab/use-a-powershell-script)
+
+<span data-ttu-id="57b43-155">Windows PowerShell -komentosarja on annettu. Voit siis helposti määrittää Azure-resurssit, jotka on esitelty kohdassa [Azure Data Lakeen viennin määrittäminen](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span><span class="sxs-lookup"><span data-stu-id="57b43-155">A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span></span> <span data-ttu-id="57b43-156">Jos haluat määrittää asetuksen manuaalisesti, ohita nämä vaiheet ja jatka [Manuaalinen määritys](#manual-setup) -osan toimintojen avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-156">If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8e1d1-116">Suorita komentosarja avaamalla tietokoneen PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-116">Open PowerShell on your PC to run the script.</span></span> <span data-ttu-id="8e1d1-117">Saatat tarvita PowerShellin version 5.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-117">You may need PowerShell version 5.</span></span> <span data-ttu-id="8e1d1-118">Microsoft Azuren CLI:n Kokeile-vaihtoehto ei ehkä toimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-118">The Microsoft Azure CLI "Try it" option may not work.</span></span>
+> <span data-ttu-id="57b43-157">Suorita PowerShell -komentosarja alla olevien vaiheiden avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-157">Follow the steps below to run the PowerShell script.</span></span> <span data-ttu-id="57b43-158">Azure CLI:n Kokeile-vaihtoehto tai komentosarjan suorittaminen tietokoneella eivät ehkä toimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-158">The Azure CLI "Try it" option, or running the script on your PC may not work.</span></span>
 
-# <a name="manual-configuration-steps"></a>[<span data-ttu-id="8e1d1-119">Manuaaliset määritysvaiheet</span><span class="sxs-lookup"><span data-stu-id="8e1d1-119">Manual configuration steps</span></span>](#tab/configuration-steps)
+<span data-ttu-id="57b43-159">Näiden vaiheiden avulla voit määrittää Azuren käyttämällä Windows PowerShell -komentosarjaa.</span><span class="sxs-lookup"><span data-stu-id="57b43-159">Follow these steps to configure Azure by using the Windows PowerShell script.</span></span> <span data-ttu-id="57b43-160">Tarvitset Azure-resurssiryhmän, Azure-resurssien ja Azure AD -sovelluksen luontioikeudet.</span><span class="sxs-lookup"><span data-stu-id="57b43-160">You must have rights to create an Azure resource group, Azure resources, and an Azure AD application.</span></span> <span data-ttu-id="57b43-161">Lisätietoja vaadituista käyttöoikeuksista on kohdassa [Azure AD:n käyttöoikeuksien tarkistaminen](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span><span class="sxs-lookup"><span data-stu-id="57b43-161">For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span></span>
 
-1. <span data-ttu-id="8e1d1-120">Avaa [Power Platformin hallintakeskus](https://admin.powerplatform.microsoft.com/) ja luo uusi Dataverse -ympäristö samaan Active Directory -vuokraajaan seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-120">Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:</span></span>
+1. <span data-ttu-id="57b43-162">Siirry [Azure-portaalissa](https://portal.azure.com) Azuren kohdetilaukseen.</span><span class="sxs-lookup"><span data-stu-id="57b43-162">In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.</span></span> <span data-ttu-id="57b43-163">Valitse **Hae**-kentän oikealla puolella oleva **Cloud Shell** -painike.</span><span class="sxs-lookup"><span data-stu-id="57b43-163">Select the **Cloud Shell** button to the right of the **Search** field.</span></span>
+2. <span data-ttu-id="57b43-164">Valitse **PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="57b43-164">Select **PowerShell**.</span></span>
+3. <span data-ttu-id="57b43-165">Luo tallennustila, jos sinua kehotetaan tekemään niin.</span><span class="sxs-lookup"><span data-stu-id="57b43-165">Create storage if you're prompted to do so.</span></span>
+4. <span data-ttu-id="57b43-166">Siirry **Azure CLI** -välilehteen ja valitse **Kopioi**.</span><span class="sxs-lookup"><span data-stu-id="57b43-166">Go to the **Azure CLI** tab and select **Copy**.</span></span>  
+5. <span data-ttu-id="57b43-167">Avaa Notepad ja liitä PowerShell-komentosarja.</span><span class="sxs-lookup"><span data-stu-id="57b43-167">Open Notepad and paste the PowerShell script.</span></span> <span data-ttu-id="57b43-168">Tallenna tiedosto nimellä ConfigureDataLake.ps1.</span><span class="sxs-lookup"><span data-stu-id="57b43-168">Save the file as ConfigureDataLake.ps1.</span></span>
+6. <span data-ttu-id="57b43-169">Lataa Windows PowerShell -komentosarja istuntoon käyttämällä valikkovaihtoehtoa lataamiselle Cloud Shellissä.</span><span class="sxs-lookup"><span data-stu-id="57b43-169">Upload the Windows PowerShell script to the session using the menu option for upload in Cloud Shell.</span></span>
+7. <span data-ttu-id="57b43-170">Suorita komentosarja .\ConfigureDataLake.ps1.</span><span class="sxs-lookup"><span data-stu-id="57b43-170">Run the script .\ConfigureDataLake.ps1.</span></span>
+8. <span data-ttu-id="57b43-171">Suorita komentosarja kehotteen ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-171">Follow the prompts to run the script.</span></span>
+9. <span data-ttu-id="57b43-172">Käytä komentosarjan tulosten tietoja ja asenna **Vie Data Lakeen** -apuohjelma LCS:ssä.</span><span class="sxs-lookup"><span data-stu-id="57b43-172">Use the information from the script output to install the **Export to Data Lake** add-in in LCS.</span></span>
+10. <span data-ttu-id="57b43-173">Käytä komentosarjan tulosteen tietoja ja ota käyttöön yksikkösäilö Financen **Tietoyhteydet**-sivulla (**Järjestelmän hallinta \> Järjestelmäparametrit \> Tietoyhteydet**).</span><span class="sxs-lookup"><span data-stu-id="57b43-173">Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).</span></span>
 
-    1. <span data-ttu-id="8e1d1-121">Avaa **Ympäristöt**-sivu.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-121">Open the **Environments** page.</span></span>
+### <a name="manual-setup"></a><span data-ttu-id="57b43-174">Manuaalinen määritys</span><span class="sxs-lookup"><span data-stu-id="57b43-174">Manual setup</span></span>
 
-        <span data-ttu-id="8e1d1-122">[![Ympäristöt-sivu](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span><span class="sxs-lookup"><span data-stu-id="8e1d1-122">[![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span></span>
+#### <a name="add-applications-to-the-azure-ad-tenant"></a><span data-ttu-id="57b43-175">Sovellusten lisääminen Azure AD -vuokraajaan</span><span class="sxs-lookup"><span data-stu-id="57b43-175">Add applications to the Azure AD tenant</span></span>
 
-    2. <span data-ttu-id="8e1d1-123">Valitse **Uusi ympäristö**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-123">Select **New environment**.</span></span>
-    3. <span data-ttu-id="8e1d1-124">Valitse **Tyyppi**-kentässä **Eristys**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-124">In the **Type** field, select **Sandbox**.</span></span>
-    4. <span data-ttu-id="8e1d1-125">Määritä **Luo tietokanta** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-125">Set the **Create Database** option to **Yes**.</span></span>
-    5. <span data-ttu-id="8e1d1-126">Valitse **Seuraava**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-126">Select **Next**.</span></span>
-    6. <span data-ttu-id="8e1d1-127">Valitse organisaation kieli ja valuutta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-127">Select the language and currency for your organization.</span></span>
-    7. <span data-ttu-id="8e1d1-128">Hyväksy muiden kenttien oletusarvot.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-128">Accept the default values for the other fields.</span></span>
-    8. <span data-ttu-id="8e1d1-129">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-129">Select **Save**.</span></span>
-    9. <span data-ttu-id="8e1d1-130">Päivitä **Ympäristöt**-sivu.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-130">Refresh the **Environments** page.</span></span>
-    10. <span data-ttu-id="8e1d1-131">Odota, kunnes **Osavaltio**-kentän arvoksi päivitetään **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-131">Wait until the value of the **State** field is updated to **Ready**.</span></span>
-    11. <span data-ttu-id="8e1d1-132">Kirjoita Dataverse -organisaation tunnus muistiin.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-132">Make a note of the Dataverse organization ID.</span></span>
-    12. <span data-ttu-id="8e1d1-133">Valitse ympäristö ja valitse sitten **Asetukset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-133">Select the environment, and then select **Settings**.</span></span>
-    13. <span data-ttu-id="8e1d1-134">Valitse **Resurssit \> Kaikki vanhat asetukset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-134">Select **Resources \> All Legacy Settings**.</span></span>
-    14. <span data-ttu-id="8e1d1-135">Valitse yläreunan siirtymispalkissa **Asetukset** ja valitse sitten **Mukautukset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-135">On the top navigation bar, select **Settings**, and then select **Customizations**.</span></span>
-    15. <span data-ttu-id="8e1d1-136">Valitse **Kehittäjän resurssit**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-136">Select **Developer Resources**.</span></span>
-    16. <span data-ttu-id="8e1d1-137">Kopioi **Dataverse-organisaation tunnuksen** arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-137">Copy the **Dataverse organization ID** value.</span></span>
-    17. <span data-ttu-id="8e1d1-138">Kirjoita selaimen osoitepalkkiin Dataverse -organisaation URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-138">In the browser's address bar, make a note of the URL for the Dataverse organization.</span></span> <span data-ttu-id="8e1d1-139">URL-osoite voi olla esimerkiksi `https://org42b2b3d3.crm.dynamics.com`.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-139">For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.</span></span>
+1. <span data-ttu-id="57b43-176">Siirry [Azure-portaalissa](https://portal.azure.com) **Azure Active Directoryyn**.</span><span class="sxs-lookup"><span data-stu-id="57b43-176">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.</span></span>
+2. <span data-ttu-id="57b43-177">Valitse **Hallitse \> Yrityssovellukset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-177">Select **Manage \> Enterprise applications**.</span></span>
+3. <span data-ttu-id="57b43-178">Hae seuraavat sovellukset sovellustunnuksen avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-178">Search for the following applications by app ID.</span></span>
 
-2. <span data-ttu-id="8e1d1-140">Jos aiot käyttää kassavirtaennusteiden tai budjettiennusteiden toimintoa, päivitä organsaation huomautusten rajaksi vähintään 50 megatavua (Mt) seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-140">If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):</span></span>
-
-    1. <span data-ttu-id="8e1d1-141">Avaa [Power Apps -portaali](https://make.powerapps.com).</span><span class="sxs-lookup"><span data-stu-id="8e1d1-141">Open the [Power Apps portal](https://make.powerapps.com).</span></span>
-    2. <span data-ttu-id="8e1d1-142">Valitse juuri luotu ympäristö ja valitse sitten **Lisäasetukset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-142">Select the environment that you just created, and then select **Advanced settings**.</span></span>
-    3. <span data-ttu-id="8e1d1-143">Valitse **Asetukset \> Sähköpostimääritykset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-143">Select **Settings \> Email Configuration**.</span></span>
-    4. <span data-ttu-id="8e1d1-144">Muuta **Tiedoston enimmäiskoko** -kentän arvoksi **51 200**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-144">Change the value of the **Maximum file size** field to **51,200**.</span></span> <span data-ttu-id="8e1d1-145">(Arvo ilmoitetaan kilotavuina \[Kt\].)</span><span class="sxs-lookup"><span data-stu-id="8e1d1-145">(The value is expressed in kilobytes \[KB\].)</span></span>
-    5. <span data-ttu-id="8e1d1-146">Tallenna muutokset valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-146">Select **OK** to save your changes.</span></span>
-
-# <a name="windows-powershell-configuration-script"></a>[<span data-ttu-id="8e1d1-147">Windows PowerShell -määrityskomentosarja</span><span class="sxs-lookup"><span data-stu-id="8e1d1-147">Windows PowerShell configuration script</span></span>](#tab/powershell-configuration-script)
-
-```azurecli-interactive
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
-
-    $module = 'Microsoft.PowerApps.Administration.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '2.0.61' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.PowerApps.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '1.0.9' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '1.0.9' -AllowClobber -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '3.3.0.892' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '3.3.0.892' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    Write-Output '================================================================================='
-
-    $useMfa = $false
-    $useMfaPrompt = Read-Host "Does your organization require the use of multi-factor authentication? (yes/no)"
-    if ($useMfaPrompt -eq 'yes' -or $useMfaPrompt -eq 'y') {
-        $useMfa = $true
-    }
-    if(-not $useMfa) {
-        $credential = Get-Credential -Message 'Power Apps Credential'
-    }
-
-    $orgFriendlyName = Read-Host "Enter the name of the CDS Organization to use or create: (blank for 'FinanceInsightsOrg')"
-    if ($orgFriendlyName.Trim() -eq '') {
-        $orgFriendlyName = 'FinanceInsightsOrg'
-    }
-
-    $isDefaultOrgPrompt = Read-Host ("Is '" + $orgFriendlyName + "' the default organization for your tenant? (yes/no)")
-    if ($isDefaultOrgPrompt -eq 'yes' -or $isDefaultOrgPrompt -eq 'y') {
-        $isDefaultOrg = $true
-    }
-
-    if ($credential) {
-        Add-PowerAppsAccount -Username $credential.UserName -Password $credential.Password
-    }
-    else {
-        Add-PowerAppsAccount
-    }
-
-    if ($isDefaultOrg) {
-        $orgMatch = ('(default)')
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { $_.IsDefault -eq $true })
-    }
-    else {
-        $orgMatch = ('{0} (*)' -f $orgFriendlyName)
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.IsDefault -eq $false -and ($_.DisplayName -eq $orgFriendlyName -or $_.DisplayName -like $orgMatch)) })
-    }
-
-    $getCrmOrgParams = @{ 'OnlineType' = 'Office365' }
-    if ($credential) {
-        $getCrmOrgParams.Credential = $credential
-    }
-
-    if ($null -eq $environment) {
-        Write-Output '================================================================================='
-        Write-Output 'PowerApps environment not found. A new one will be provisioned.'
-
-        $invalid = 'invalid'
-
-        $location = $invalid
-        $cdsLocations = (Get-AdminPowerAppEnvironmentLocations | Select-Object LocationName).LocationName
-        while (-not ($location -in $cdsLocations)) {
-            $location = (Read-Host -Prompt "Enter the location in which to create the new PowerApps environment: ('help' to see values)")
-            if ($location -eq 'help') {
-                $cdsLocations
-            }
-        }
-
-        $currency = $invalid
-        $cdsCurrencies = (Get-AdminPowerAppCdsDatabaseCurrencies -Location $location | Select-Object CurrencyName).CurrencyName
-        while ($currency -ne '' -and -not ($currency -in $cdsCurrencies)) {
-            $currency = (Read-Host -Prompt "Enter the currency to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($currency -eq 'help') {
-                $cdsCurrencies
-            }
-        }
-
-        $language = $invalid
-        $cdsLanguages = (Get-AdminPowerAppCdsDatabaseLanguages -Location $location | Select-Object LanguageName, LanguageDisplayName)
-        while ($language -ne '' -and -not ($language -in $cdsLanguages.LanguageName)) {
-            $language = (Read-Host -Prompt "Enter the language name to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($language -eq 'help') {
-                $cdsLanguages | Format-Table -Property LanguageName, LanguageDisplayName
-            }
-        }
-
-        Write-Output 'Provisioning PowerApps environment. This may take several minutes.'
-
-        $sleep = 15
-
-        $envParams = @{ 'DisplayName' = $orgFriendlyName; 'EnvironmentSku' = 'Sandbox'; 'ProvisionDatabase' = $true; 'Location' = $location; 'WaitUntilFinished' = $true }
-        if ($language.Trim() -ne '') {
-            $envParams.LanguageName = $language
-        }
-        if ($currency.Trim() -ne '') {
-            $envParams.CurrencyName = $currency
-        }
-        $newEnvResult = New-AdminPowerAppEnvironment @envParams
-        if (($null -eq $newEnvResult) -or ($newEnvResult.CommonDataServiceDatabaseProvisioningState -ne 'Succeeded')) {
-            Write-Warning 'Failed to create to PowerApps environment'
-            if ($null -ne $newEnvResult) {
-                $newEnvResult
-            }
-        }
-        else {
-            $environment = $null
-            $retryCount = 0
-            while (($null -eq $environment) -and ($retryCount -lt 5)) {
-                Start-Sleep -Seconds $sleep
-                $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.DisplayName -like $orgMatch) })
-            }
-            Write-Output ("Provisioned PowerApps environment with name: '" + $environment.DisplayName + "'")
-        }
-
-        Write-Output 'Waiting for CDS organization provisioning. This may take several minutes.'
-        if (-not $credential) {
-            $sleep = 120
-            Write-Output 'You may be prompted for credentials multiple times while checking the status of the provisioning.'
-        }
-
-        while ($null -eq $crmOrg) {
-            Start-Sleep -Seconds $sleep
-            $crmOrg = (Get-CrmOrganizations @getCrmOrgParams) | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-    else {
-        $crmOrgs = Get-CrmOrganizations @getCrmOrgParams
-        if ($UseDefaultOrganization -eq $true) {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -match $orgMatch }
-        }
-        else {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-
-    Write-Output '================================================================================='
-    Write-Output 'Values for PowerAI LCS Add-In:'
-    Write-Output ("  CDS organization url:             " + $crmOrg.WebApplicationUrl)
-    Write-Output ("  CDS organization ID:              " + $crmOrg.OrganizationId)
-}
-catch {
-    Write-Error $_.Exception.Message
-    Write-Warning $_.Exception.StackTrace
-    $inner = $_.Exception.InnerException
-    while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
-}
-```
----
-
-## <a name="configure-the-azure-setup"></a><span data-ttu-id="8e1d1-148">Azure-asetuksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-148">Configure the Azure setup</span></span>
-
-### <a name="enter-the-dataverse-directory-id-and-the-users-azure-ad-object-id"></a><span data-ttu-id="8e1d1-149">Syötä Dataverse -hakemiston tunnus ja käyttäjän Azure AD -objektin tunnus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-149">Enter the Dataverse directory ID and the user's Azure AD object ID</span></span>
-
-1. <span data-ttu-id="8e1d1-150">Syötä Dataverse -hakemiston tunnus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-150">Enter the Dataverse directory ID:</span></span>
-
-    1. <span data-ttu-id="8e1d1-151">Avaa [Azure-portaali](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="8e1d1-151">Open the [Azure portal](https://portal.azure.com).</span></span>
-    2. <span data-ttu-id="8e1d1-152">Kirjaudu sisään käyttämällä käyttäjätunnusta, jota käytettiin Dataverse -ympäristön luomisessa.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-152">Sign in by using the user ID that was used to create the Dataverse environment.</span></span>
-    3. <span data-ttu-id="8e1d1-153">Siirry osoitteeseen **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-153">Go to **Azure Active Directory**.</span></span>
-    4. <span data-ttu-id="8e1d1-154">Kopioi **Vuokraajan tunnus** -arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-154">Copy the **Tenant ID** value.</span></span>
-
-2. <span data-ttu-id="8e1d1-155">Syötä Azure Active Directory (Azure AD) -objektin tunnus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-155">Enter the user's Azure Active Directory (Azure AD) object ID:</span></span>
-
-    1. <span data-ttu-id="8e1d1-156">Siirry [Azure-portaalissa](https://portal.azure.com) **Käyttäjät**-kohtaan ja hae käyttäjää sähköpostiosoitteen avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-156">In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.</span></span>
-    2. <span data-ttu-id="8e1d1-157">Valitse käyttäjän nimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-157">Select the user's name.</span></span>
-    3. <span data-ttu-id="8e1d1-158">Kopioi **Objektin tunnus** -arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-158">Copy the **Object ID** value.</span></span>
-
-### <a name="use-azure-cloud-shell-to-set-up-finance-insights-data-lake-resources"></a><span data-ttu-id="8e1d1-159">Finance Insightsin Data Lake -resurssien määrittäminen Azure Cloud Shellin avulla</span><span class="sxs-lookup"><span data-stu-id="8e1d1-159">Use Azure Cloud Shell to set up Finance insights Data Lake resources</span></span>
-
-# <a name="use-a-windows-powershell-script"></a>[<span data-ttu-id="8e1d1-160">Windows PowerShell -komentosarjan käyttäminen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-160">Use a Windows PowerShell script</span></span>](#tab/use-a-powershell-script)
-
-<span data-ttu-id="8e1d1-161">Windows PowerShell -komentosarja on annettu. Voit siis helposti määrittää Azure-resurssit, jotka on esitelty kohdassa [Azure Data Lakeen viennin määrittäminen](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span><span class="sxs-lookup"><span data-stu-id="8e1d1-161">A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span></span> <span data-ttu-id="8e1d1-162">Jos haluat määrittää asetuksen manuaalisesti, ohita nämä vaiheet ja jatka [Manuaalinen määritys](#manual-setup) -osan toimintojen avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-162">If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8e1d1-163">Suorita PowerShell -komentosarja alla olevien vaiheiden avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-163">Follow the steps below to run the PowerShell script.</span></span> <span data-ttu-id="8e1d1-164">Azure CLI:n Kokeile-vaihtoehto tai komentosarjan suorittaminen tietokoneella eivät ehkä toimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-164">The Azure CLI "Try it" option, or running the script on your PC may not work.</span></span>
-
-<span data-ttu-id="8e1d1-165">Näiden vaiheiden avulla voit määrittää Azuren käyttämällä Windows PowerShell -komentosarjaa.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-165">Follow these steps to configure Azure by using the Windows PowerShell script.</span></span> <span data-ttu-id="8e1d1-166">Tarvitset Azure-resurssiryhmän, Azure-resurssien ja Azure AD -sovelluksen luontioikeudet.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-166">You must have rights to create an Azure resource group, Azure resources, and an Azure AD application.</span></span> <span data-ttu-id="8e1d1-167">Lisätietoja vaadituista käyttöoikeuksista on kohdassa [Azure AD:n käyttöoikeuksien tarkistaminen](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span><span class="sxs-lookup"><span data-stu-id="8e1d1-167">For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span></span>
-
-1. <span data-ttu-id="8e1d1-168">Siirry [Azure-portaalissa](https://portal.azure.com) Azuren kohdetilaukseen.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-168">In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.</span></span> <span data-ttu-id="8e1d1-169">Valitse **Hae**-kentän oikealla puolella oleva **Cloud Shell** -painike.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-169">Select the **Cloud Shell** button to the right of the **Search** field.</span></span>
-2. <span data-ttu-id="8e1d1-170">Valitse **PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-170">Select **PowerShell**.</span></span>
-3. <span data-ttu-id="8e1d1-171">Luo tallennustila, jos sinua kehotetaan tekemään niin.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-171">Create storage, if you're prompted to do so.</span></span> <span data-ttu-id="8e1d1-172">Lataa sitten Windows PowerShell -komentosarja istuntoon.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-172">Then upload the Windows PowerShell script to the session.</span></span>
-4. <span data-ttu-id="8e1d1-173">Suorita komentosarja.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-173">Run the script.</span></span>
-5. <span data-ttu-id="8e1d1-174">Suorita komentosarja kehotteen ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-174">Follow the prompts to run the script.</span></span>
-6. <span data-ttu-id="8e1d1-175">Käytä komentosarjan tulosten tietoja ja asenna **Vie Data Lakeen** -apuohjelma LCS:ssä.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-175">Use the information from the script output to install the **Export to Data Lake** add-in in LCS.</span></span>
-7. <span data-ttu-id="8e1d1-176">Käytä komentosarjan tulosteen tietoja ja ota käyttöön yksikkösäilö Financen **Tietoyhteydet**-sivulla (**Järjestelmän hallinta \> Järjestelmäparametrit \> Tietoyhteydet**).</span><span class="sxs-lookup"><span data-stu-id="8e1d1-176">Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).</span></span>
-
-### <a name="manual-setup"></a><span data-ttu-id="8e1d1-177">Manuaalinen määritys</span><span class="sxs-lookup"><span data-stu-id="8e1d1-177">Manual setup</span></span>
-
-#### <a name="add-applications-to-the-azure-ad-tenant"></a><span data-ttu-id="8e1d1-178">Sovellusten lisääminen Azure AD -vuokraajaan</span><span class="sxs-lookup"><span data-stu-id="8e1d1-178">Add applications to the Azure AD tenant</span></span>
-
-1. <span data-ttu-id="8e1d1-179">Siirry [Azure-portaalissa](https://portal.azure.com) **Azure Active Directoryyn**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-179">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.</span></span>
-2. <span data-ttu-id="8e1d1-180">Valitse **Hallitse \> Yrityssovellukset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-180">Select **Manage \> Enterprise applications**.</span></span>
-3. <span data-ttu-id="8e1d1-181">Hae seuraavat sovellukset sovellustunnuksen avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-181">Search for the following applications by app ID.</span></span>
-
-    | <span data-ttu-id="8e1d1-182">Hakemus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-182">Application</span></span>                              | <span data-ttu-id="8e1d1-183">Sovelluksen tunnus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-183">App ID</span></span>                               |
+    | <span data-ttu-id="57b43-179">Hakemus</span><span class="sxs-lookup"><span data-stu-id="57b43-179">Application</span></span>                              | <span data-ttu-id="57b43-180">Sovelluksen tunnus</span><span class="sxs-lookup"><span data-stu-id="57b43-180">App ID</span></span>                               |
     |------------------------------------------|--------------------------------------|
-    | <span data-ttu-id="8e1d1-184">Microsoft Dynamics ERP Microservices</span><span class="sxs-lookup"><span data-stu-id="8e1d1-184">Microsoft Dynamics ERP Microservices</span></span>     | <span data-ttu-id="8e1d1-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span><span class="sxs-lookup"><span data-stu-id="8e1d1-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span></span> |
-    | <span data-ttu-id="8e1d1-186">Microsoft Dynamics ERP Microservices CDS</span><span class="sxs-lookup"><span data-stu-id="8e1d1-186">Microsoft Dynamics ERP Microservices CDS</span></span> | <span data-ttu-id="8e1d1-187">703e2651-d3fc-48f5-942c-74274233dba8</span><span class="sxs-lookup"><span data-stu-id="8e1d1-187">703e2651-d3fc-48f5-942c-74274233dba8</span></span> |
-    | <span data-ttu-id="8e1d1-188">AI Builderin todennuspalvelu</span><span class="sxs-lookup"><span data-stu-id="8e1d1-188">AI Builder Authorization Service</span></span>         | <span data-ttu-id="8e1d1-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span><span class="sxs-lookup"><span data-stu-id="8e1d1-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span></span> |
+    | <span data-ttu-id="57b43-181">Microsoft Dynamics ERP Microservices</span><span class="sxs-lookup"><span data-stu-id="57b43-181">Microsoft Dynamics ERP Microservices</span></span>     | <span data-ttu-id="57b43-182">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span><span class="sxs-lookup"><span data-stu-id="57b43-182">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span></span> |
+    | <span data-ttu-id="57b43-183">Microsoft Dynamics ERP Microservices CDS</span><span class="sxs-lookup"><span data-stu-id="57b43-183">Microsoft Dynamics ERP Microservices CDS</span></span> | <span data-ttu-id="57b43-184">703e2651-d3fc-48f5-942c-74274233dba8</span><span class="sxs-lookup"><span data-stu-id="57b43-184">703e2651-d3fc-48f5-942c-74274233dba8</span></span> |
+    | <span data-ttu-id="57b43-185">AI Builderin todennuspalvelu</span><span class="sxs-lookup"><span data-stu-id="57b43-185">AI Builder Authorization Service</span></span>         | <span data-ttu-id="57b43-186">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span><span class="sxs-lookup"><span data-stu-id="57b43-186">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span></span> |
 
-<span data-ttu-id="8e1d1-190">Jos et löydä ainoatakaan edellisistä sovelluksista, kokeile alla mainittuja vaiheita.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-190">If you can't find any of the preceding applications, try the following steps.</span></span>
+<span data-ttu-id="57b43-187">Jos et löydä ainoatakaan edellisistä sovelluksista, kokeile alla mainittuja vaiheita.</span><span class="sxs-lookup"><span data-stu-id="57b43-187">If you can't find any of the preceding applications, try the following steps.</span></span>
 
-1. <span data-ttu-id="8e1d1-191">Valitse paikallisessa koneessa **Käynnistä**-valikko ja hae **powershell**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-191">On your local machine, select the **Start** menu, and search for **powershell**.</span></span>
-2. <span data-ttu-id="8e1d1-192">Valitse ja pidä valittuna (tai valitse hiiren kakkospainikkeella) **Windows PowerShell** ja valitse sitten **Suorita järjestelmänvalvojana**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-192">Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.</span></span>
-3. <span data-ttu-id="8e1d1-193">Suorita seuraava komento, jos haluat asentaa **AzureAD**-moduulin.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-193">Run the following command to install the **AzureAD** module.</span></span>
+1. <span data-ttu-id="57b43-188">Valitse paikallisessa koneessa **Käynnistä**-valikko ja hae **powershell**.</span><span class="sxs-lookup"><span data-stu-id="57b43-188">On your local machine, select the **Start** menu, and search for **powershell**.</span></span>
+2. <span data-ttu-id="57b43-189">Valitse ja pidä valittuna (tai valitse hiiren kakkospainikkeella) **Windows PowerShell** ja valitse sitten **Suorita järjestelmänvalvojana**.</span><span class="sxs-lookup"><span data-stu-id="57b43-189">Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.</span></span>
+3. <span data-ttu-id="57b43-190">Suorita seuraava komento, jos haluat asentaa **AzureAD**-moduulin.</span><span class="sxs-lookup"><span data-stu-id="57b43-190">Run the following command to install the **AzureAD** module.</span></span>
 
     `Install-Module -Name AzureAD`
 
-4. <span data-ttu-id="8e1d1-194">Jos jatkaminen edellyttää, että käytössä on NuGet-palveluntarjoaja, valitse **K** ja asenna se.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-194">If a NuGet provider is required to continue, select **Y** to install it.</span></span>
-5. <span data-ttu-id="8e1d1-195">Jos näyttöön tulee Ei-luotettava säilö -sanoma, jatka valitsemalla **K**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-195">If an "Untrusted repository" message appears, select **Y** to continue.</span></span>
-6. <span data-ttu-id="8e1d1-196">Suorita jokaisen lisättävän sovelluksen kohdalla seuraavat komennot ja lisää sovellus Azure AD:hen.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-196">For each application that must be added, run the following commands to add the application to Azure AD.</span></span> <span data-ttu-id="8e1d1-197">Kun sinua pyydetään kirjautumaan, käytä Azure AD -järjestelmänvalvojan tunnuksia.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-197">When you're prompted, sign in as the Azure AD administrator.</span></span>
+4. <span data-ttu-id="57b43-191">Jos jatkaminen edellyttää, että käytössä on NuGet-palveluntarjoaja, valitse **K** ja asenna se.</span><span class="sxs-lookup"><span data-stu-id="57b43-191">If a NuGet provider is required to continue, select **Y** to install it.</span></span>
+5. <span data-ttu-id="57b43-192">Jos näyttöön tulee Ei-luotettava säilö -sanoma, jatka valitsemalla **K**.</span><span class="sxs-lookup"><span data-stu-id="57b43-192">If an "Untrusted repository" message appears, select **Y** to continue.</span></span>
+6. <span data-ttu-id="57b43-193">Suorita jokaisen lisättävän sovelluksen kohdalla seuraavat komennot ja lisää sovellus Azure AD:hen.</span><span class="sxs-lookup"><span data-stu-id="57b43-193">For each application that must be added, run the following commands to add the application to Azure AD.</span></span> <span data-ttu-id="57b43-194">Kun sinua pyydetään kirjautumaan, käytä Azure AD -järjestelmänvalvojan tunnuksia.</span><span class="sxs-lookup"><span data-stu-id="57b43-194">When you're prompted, sign in as the Azure AD administrator.</span></span>
 
     `Connect-AzureAD`
 
     `New-AzureADServicePrincipal –AppId <AppId>`
 
-#### <a name="create-azure-resources"></a><span data-ttu-id="8e1d1-198">Azure-resurssien luominen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-198">Create Azure resources</span></span>
+#### <a name="create-azure-resources"></a><span data-ttu-id="57b43-195">Azure-resurssien luominen</span><span class="sxs-lookup"><span data-stu-id="57b43-195">Create Azure resources</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8e1d1-199">Varmista, että luot seuraavat resurssit samassa Azure AD -esiintymässä kuin Dataverse -ympäristön.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-199">Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment.</span></span> <span data-ttu-id="8e1d1-200">Et voi käyttää eri Azure AD -esiintymän resursseja.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-200">You can't use resources from a different Azure AD instance.</span></span>
+> <span data-ttu-id="57b43-196">Varmista, että luot seuraavat resurssit samassa Azure AD -esiintymässä kuin Dataverse -ympäristön.</span><span class="sxs-lookup"><span data-stu-id="57b43-196">Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment.</span></span> <span data-ttu-id="57b43-197">Et voi käyttää eri Azure AD -esiintymän resursseja.</span><span class="sxs-lookup"><span data-stu-id="57b43-197">You can't use resources from a different Azure AD instance.</span></span>
 
-1. <span data-ttu-id="8e1d1-201">Luo uusi tallennustili seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-201">Create a new storage account:</span></span>
+1. <span data-ttu-id="57b43-198">Luo uusi tallennustili seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-198">Create a new storage account:</span></span>
 
-    1. <span data-ttu-id="8e1d1-202">Luo [Azure-portaalissa](https://portal.azure.com) tallennustili.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-202">In the [Azure portal](https://portal.azure.com), create a storage account.</span></span>
-    2. <span data-ttu-id="8e1d1-203">Määritä **Luo tallennustili** -valintaikkunassa seuraavat kentät:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-203">In the **Create storage account** dialog box, set the following fields:</span></span>
+    1. <span data-ttu-id="57b43-199">Luo [Azure-portaalissa](https://portal.azure.com) tallennustili.</span><span class="sxs-lookup"><span data-stu-id="57b43-199">In the [Azure portal](https://portal.azure.com), create a storage account.</span></span>
+    2. <span data-ttu-id="57b43-200">Määritä **Luo tallennustili** -valintaikkunassa seuraavat kentät:</span><span class="sxs-lookup"><span data-stu-id="57b43-200">In the **Create storage account** dialog box, set the following fields:</span></span>
 
-        - <span data-ttu-id="8e1d1-204">**Sijainti** – Valitse palvelinkeskus, jossa ympäristö sijaitsee.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-204">**Location** – Select the data center where your environment is located.</span></span>
-        - <span data-ttu-id="8e1d1-205">**Suorituskyky** – Suorituskyvyn arvoksi kannattaa valita **Standardi**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-205">**Performance** – We recommend that you select **Standard**.</span></span>
-        - <span data-ttu-id="8e1d1-206">**Tilin tyyppi** – Valitse **TallennustilaV2**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-206">**Account kind** – You must select **StorageV2**.</span></span>
+        - <span data-ttu-id="57b43-201">**Sijainti** – Valitse palvelinkeskus, jossa ympäristö sijaitsee.</span><span class="sxs-lookup"><span data-stu-id="57b43-201">**Location** – Select the data center where your environment is located.</span></span>
+        - <span data-ttu-id="57b43-202">**Suorituskyky** – Suorituskyvyn arvoksi kannattaa valita **Standardi**.</span><span class="sxs-lookup"><span data-stu-id="57b43-202">**Performance** – We recommend that you select **Standard**.</span></span>
+        - <span data-ttu-id="57b43-203">**Tilin tyyppi** – Valitse **TallennustilaV2**.</span><span class="sxs-lookup"><span data-stu-id="57b43-203">**Account kind** – You must select **StorageV2**.</span></span>
 
-    3. <span data-ttu-id="8e1d1-207">Valitse **Data Laken tallennustila Gen2** -asetuksen **Lisäasetukset**-valintaikkunassa **Ota käyttöön** **Hierarkkiset nimitilat**-toiminnon alla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-207">In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature.</span></span> <span data-ttu-id="8e1d1-208">Jos poistat tämän toiminnon käytöstä, et voi käyttää Finance and Operations -sovellusten kirjoittamia tietoja käyttämällä palveluita, kuten Power BI:n tiedonkulkuja.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-208">If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.</span></span>
-    4. <span data-ttu-id="8e1d1-209">Valitse **Tarkista ja luo**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-209">Select **Review and create**.</span></span> <span data-ttu-id="8e1d1-210">Kun käyttöönotto on valmis, uusi resurssi näkyy Azure-portaalissa.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-210">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
-    5. <span data-ttu-id="8e1d1-211">Siirry luotuun tallennustiliin.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-211">Go to the storage account that you created.</span></span>
-    6. <span data-ttu-id="8e1d1-212">Valitse vasemmanpuoleisessa valikossa **Käyttöoikeusavaimet**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-212">On the left menu, select **Access keys**.</span></span>
-    7. <span data-ttu-id="8e1d1-213">Kopioi ja tallenna **Avain1**-tai **Avain2**-kohdan yhteysmerkkijono.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-213">Copy and save the connection string for either **Key1** or **Key2**.</span></span>
-    8. <span data-ttu-id="8e1d1-214">Kopioi ja tallenna tallennustilin nimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-214">Copy and save the storage account name.</span></span>
+    3. <span data-ttu-id="57b43-204">Valitse **Data Laken tallennustila Gen2** -asetuksen **Lisäasetukset**-valintaikkunassa **Ota käyttöön** **Hierarkkiset nimitilat**-toiminnon alla.</span><span class="sxs-lookup"><span data-stu-id="57b43-204">In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature.</span></span> <span data-ttu-id="57b43-205">Jos poistat tämän toiminnon käytöstä, et voi käyttää Finance and Operations -sovellusten kirjoittamia tietoja käyttämällä palveluita, kuten Power BI:n tiedonkulkuja.</span><span class="sxs-lookup"><span data-stu-id="57b43-205">If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.</span></span>
+    4. <span data-ttu-id="57b43-206">Valitse **Tarkista ja luo**.</span><span class="sxs-lookup"><span data-stu-id="57b43-206">Select **Review and create**.</span></span> <span data-ttu-id="57b43-207">Kun käyttöönotto on valmis, uusi resurssi näkyy Azure-portaalissa.</span><span class="sxs-lookup"><span data-stu-id="57b43-207">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
+    5. <span data-ttu-id="57b43-208">Siirry luotuun tallennustiliin.</span><span class="sxs-lookup"><span data-stu-id="57b43-208">Go to the storage account that you created.</span></span>
+    6. <span data-ttu-id="57b43-209">Valitse vasemmanpuoleisessa valikossa **Käyttöoikeusavaimet**.</span><span class="sxs-lookup"><span data-stu-id="57b43-209">On the left menu, select **Access keys**.</span></span>
+    7. <span data-ttu-id="57b43-210">Kopioi ja tallenna **Avain1**-tai **Avain2**-kohdan yhteysmerkkijono.</span><span class="sxs-lookup"><span data-stu-id="57b43-210">Copy and save the connection string for either **Key1** or **Key2**.</span></span>
+    8. <span data-ttu-id="57b43-211">Kopioi ja tallenna tallennustilin nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-211">Copy and save the storage account name.</span></span>
 
-2. <span data-ttu-id="8e1d1-215">Luo uusi avainsäilö seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-215">Create a new key vault:</span></span>
+2. <span data-ttu-id="57b43-212">Luo uusi avainsäilö seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-212">Create a new key vault:</span></span>
 
-    1. <span data-ttu-id="8e1d1-216">Luo [Azure-portaalissa](https://portal.azure.com) avainsäilö.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-216">In the [Azure portal](https://portal.azure.com), create a key vault.</span></span>
-    2. <span data-ttu-id="8e1d1-217">Valitse **Sijainti**-kentän **Luo avainsäilö** -valintaikkunassa palvelinkeskus, jossa ympäristö sijaitsee.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-217">In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.</span></span>
-    3. <span data-ttu-id="8e1d1-218">Kun avainsäilö on luotu, valitse se luettelosta ja valitse sitten **Salaiset koodit**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-218">After key vault is created, select it in the list, and then select **Secrets**.</span></span>
-    4. <span data-ttu-id="8e1d1-219">Valitse **Luo tai tuo**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-219">Select **Generate/Import**.</span></span>
-    5. <span data-ttu-id="8e1d1-220">Valitse **Luo salasana** -valintaikkunan **Lataa asetuksia** -kentässä **Manuaalinen**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-220">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
-    6. <span data-ttu-id="8e1d1-221">Kirjoita salaisen koodin nimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-221">Enter a name for the secret.</span></span> <span data-ttu-id="8e1d1-222">Kirjoita nimi muistiin, sillä sinun on annettava se myöhemmin.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-222">Make a note of the name, because you will have to provide it later.</span></span>
-    7. <span data-ttu-id="8e1d1-223">Syötä **Arvo**-kenttään yhteysmerkkijono, jonka olet hankkinut edellisen vaiheen tallennustilistä.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-223">In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
-    8. <span data-ttu-id="8e1d1-224">Valitse **Käytössä** ja valitse sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-224">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="8e1d1-225">Salainen koodi luodaan ja lisätään avainsäilöön.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-225">The secret is created and added to Key Vault.</span></span>
-    9. <span data-ttu-id="8e1d1-226">Siirry **Avainsäilön yleiskatsaus** -kohtaan ja merkitse DNS-nimi muistiin.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-226">Go to the **Key Vault Overview**, and make a note of the DNS name.</span></span>
+    1. <span data-ttu-id="57b43-213">Luo [Azure-portaalissa](https://portal.azure.com) avainsäilö.</span><span class="sxs-lookup"><span data-stu-id="57b43-213">In the [Azure portal](https://portal.azure.com), create a key vault.</span></span>
+    2. <span data-ttu-id="57b43-214">Valitse **Sijainti**-kentän **Luo avainsäilö** -valintaikkunassa palvelinkeskus, jossa ympäristö sijaitsee.</span><span class="sxs-lookup"><span data-stu-id="57b43-214">In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.</span></span>
+    3. <span data-ttu-id="57b43-215">Kun avainsäilö on luotu, valitse se luettelosta ja valitse sitten **Salaiset koodit**.</span><span class="sxs-lookup"><span data-stu-id="57b43-215">After key vault is created, select it in the list, and then select **Secrets**.</span></span>
+    4. <span data-ttu-id="57b43-216">Valitse **Luo tai tuo**.</span><span class="sxs-lookup"><span data-stu-id="57b43-216">Select **Generate/Import**.</span></span>
+    5. <span data-ttu-id="57b43-217">Valitse **Luo salasana** -valintaikkunan **Lataa asetuksia** -kentässä **Manuaalinen**.</span><span class="sxs-lookup"><span data-stu-id="57b43-217">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+    6. <span data-ttu-id="57b43-218">Kirjoita salaisen koodin nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-218">Enter a name for the secret.</span></span> <span data-ttu-id="57b43-219">Kirjoita nimi muistiin, sillä sinun on annettava se myöhemmin.</span><span class="sxs-lookup"><span data-stu-id="57b43-219">Make a note of the name, because you will have to provide it later.</span></span>
+    7. <span data-ttu-id="57b43-220">Syötä **Arvo**-kenttään yhteysmerkkijono, jonka olet hankkinut edellisen vaiheen tallennustilistä.</span><span class="sxs-lookup"><span data-stu-id="57b43-220">In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
+    8. <span data-ttu-id="57b43-221">Valitse **Käytössä** ja valitse sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="57b43-221">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="57b43-222">Salainen koodi luodaan ja lisätään avainsäilöön.</span><span class="sxs-lookup"><span data-stu-id="57b43-222">The secret is created and added to Key Vault.</span></span>
+    9. <span data-ttu-id="57b43-223">Siirry **Avainsäilön yleiskatsaus** -kohtaan ja merkitse DNS-nimi muistiin.</span><span class="sxs-lookup"><span data-stu-id="57b43-223">Go to the **Key Vault Overview**, and make a note of the DNS name.</span></span>
 
-3. <span data-ttu-id="8e1d1-227">Luo ja rekisteröi Azure AD -sovellus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-227">Create and register an Azure AD application:</span></span>
+3. <span data-ttu-id="57b43-224">Luo ja rekisteröi Azure AD -sovellus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-224">Create and register an Azure AD application:</span></span>
 
-    1. <span data-ttu-id="8e1d1-228">Siirry [Azure-portaalissa](https://portal.azure.com) kohtaan **Azure Active Directory** ja valitse **Sovellusten rekisteröinnit**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-228">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.</span></span>
-    2. <span data-ttu-id="8e1d1-229">Valitse **Uuden sovelluksen rekisteröiminen** ja valitse sitten seuraavat kentät:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-229">Select **New application registration**, and set the following fields:</span></span>
+    1. <span data-ttu-id="57b43-225">Siirry [Azure-portaalissa](https://portal.azure.com) kohtaan **Azure Active Directory** ja valitse **Sovellusten rekisteröinnit**.</span><span class="sxs-lookup"><span data-stu-id="57b43-225">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.</span></span>
+    2. <span data-ttu-id="57b43-226">Valitse **Uuden sovelluksen rekisteröiminen** ja valitse sitten seuraavat kentät:</span><span class="sxs-lookup"><span data-stu-id="57b43-226">Select **New application registration**, and set the following fields:</span></span>
 
-        - <span data-ttu-id="8e1d1-230">**Nimi** – Anna sovelluksen nimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-230">**Name** – Enter the name of the app.</span></span>
-        - <span data-ttu-id="8e1d1-231">**Sovellustyyppi** – Valitse **Web-ohjelmointirajapinta**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-231">**Application type** – Select **Web API**.</span></span>
-        - <span data-ttu-id="8e1d1-232">**Uudelleenohjauksen URI:n määritys** – Anna Dynamics 365 -esiintymän URL-osoite, esimerkiksi `https://yourdynamicsinstance.dynamics.com/auth`.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-232">**Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.</span></span>
+        - <span data-ttu-id="57b43-227">**Nimi** – Anna sovelluksen nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-227">**Name** – Enter the name of the app.</span></span>
+        - <span data-ttu-id="57b43-228">**Sovellustyyppi** – Valitse **Web-ohjelmointirajapinta**.</span><span class="sxs-lookup"><span data-stu-id="57b43-228">**Application type** – Select **Web API**.</span></span>
+        - <span data-ttu-id="57b43-229">**Uudelleenohjauksen URI:n määritys** – Anna Dynamics 365 -esiintymän URL-osoite, esimerkiksi `https://yourdynamicsinstance.dynamics.com/auth`.</span><span class="sxs-lookup"><span data-stu-id="57b43-229">**Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.</span></span>
 
-    3. <span data-ttu-id="8e1d1-233">Siirry juuri luotuun sovellukseen. Kopioi ja tallenna sen **sovelluksen (asiakassovelluksen) tunnuksen** arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-233">Go to the app that you just created, and copy and save its **Application (client) ID** value.</span></span> <span data-ttu-id="8e1d1-234">Tämä arvo on annettava myöhemmin, kun avainsäilö määritetään.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-234">You will have to provide this value later, when you set up the key vault.</span></span>
-    4. <span data-ttu-id="8e1d1-235">Siirry **Ohjelmointirajapinnan käyttöoikeudet** -kohtaan ja suorita seuraavat vaiheet:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-235">Go to **API permissions**, and follow these steps:</span></span>
+    3. <span data-ttu-id="57b43-230">Siirry juuri luotuun sovellukseen. Kopioi ja tallenna sen **sovelluksen (asiakassovelluksen) tunnuksen** arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-230">Go to the app that you just created, and copy and save its **Application (client) ID** value.</span></span> <span data-ttu-id="57b43-231">Tämä arvo on annettava myöhemmin, kun avainsäilö määritetään.</span><span class="sxs-lookup"><span data-stu-id="57b43-231">You will have to provide this value later, when you set up the key vault.</span></span>
+    4. <span data-ttu-id="57b43-232">Siirry **Ohjelmointirajapinnan käyttöoikeudet** -kohtaan ja suorita seuraavat vaiheet:</span><span class="sxs-lookup"><span data-stu-id="57b43-232">Go to **API permissions**, and follow these steps:</span></span>
 
-        1. <span data-ttu-id="8e1d1-236">Valitse **Lisää käyttöoikeus**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-236">Select **Add a permission**.</span></span>
-        2. <span data-ttu-id="8e1d1-237">Valitse **Azure Key Vault**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-237">Select **Azure Key vault**.</span></span>
-        3. <span data-ttu-id="8e1d1-238">Kun olet valinnut delegoidut käyttöoikeudet, valitse **user\_impersonation**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-238">After you select delegated permissions, select **user\_impersonation**.</span></span>
-        4. <span data-ttu-id="8e1d1-239">Valitse **Lisää käyttöoikeudet**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-239">Select **Add permissions**.</span></span>
+        1. <span data-ttu-id="57b43-233">Valitse **Lisää käyttöoikeus**.</span><span class="sxs-lookup"><span data-stu-id="57b43-233">Select **Add a permission**.</span></span>
+        2. <span data-ttu-id="57b43-234">Valitse **Azure Key Vault**.</span><span class="sxs-lookup"><span data-stu-id="57b43-234">Select **Azure Key vault**.</span></span>
+        3. <span data-ttu-id="57b43-235">Kun olet valinnut delegoidut käyttöoikeudet, valitse **user\_impersonation**.</span><span class="sxs-lookup"><span data-stu-id="57b43-235">After you select delegated permissions, select **user\_impersonation**.</span></span>
+        4. <span data-ttu-id="57b43-236">Valitse **Lisää käyttöoikeudet**.</span><span class="sxs-lookup"><span data-stu-id="57b43-236">Select **Add permissions**.</span></span>
 
-    5. <span data-ttu-id="8e1d1-240">Valitse sovelluksen valikosta **Sertifikaatit \& salaiset koodit**. Luo sitten avainsäilön salaiset koodit seuraavien vaiheiden avulla:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-240">On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:</span></span>
+    5. <span data-ttu-id="57b43-237">Valitse sovelluksen valikosta **Sertifikaatit \& salaiset koodit**. Luo sitten avainsäilön salaiset koodit seuraavien vaiheiden avulla:</span><span class="sxs-lookup"><span data-stu-id="57b43-237">On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:</span></span>
 
-        1. <span data-ttu-id="8e1d1-241">Valitse **Uusi asiakkaan salainen koodi**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-241">Select **New client secret**.</span></span>
-        2. <span data-ttu-id="8e1d1-242">Syötä **Avaimen kuvaus** -kenttään nimi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-242">In the **Key Description** field, enter a name.</span></span>
-        3. <span data-ttu-id="8e1d1-243">Valitse kesto ja valitse sitten **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-243">Select a duration, and then select **Add**.</span></span> <span data-ttu-id="8e1d1-244">Salainen koodi luodaan **Arvo**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-244">A secret is generated in the **Value** field.</span></span>
-        4. <span data-ttu-id="8e1d1-245">Kopioi ja tallenna salaisen koodin arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-245">Copy and save the secret value.</span></span>
+        1. <span data-ttu-id="57b43-238">Valitse **Uusi asiakkaan salainen koodi**.</span><span class="sxs-lookup"><span data-stu-id="57b43-238">Select **New client secret**.</span></span>
+        2. <span data-ttu-id="57b43-239">Syötä **Avaimen kuvaus** -kenttään nimi.</span><span class="sxs-lookup"><span data-stu-id="57b43-239">In the **Key Description** field, enter a name.</span></span>
+        3. <span data-ttu-id="57b43-240">Valitse kesto ja valitse sitten **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="57b43-240">Select a duration, and then select **Add**.</span></span> <span data-ttu-id="57b43-241">Salainen koodi luodaan **Arvo**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="57b43-241">A secret is generated in the **Value** field.</span></span>
+        4. <span data-ttu-id="57b43-242">Kopioi ja tallenna salaisen koodin arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-242">Copy and save the secret value.</span></span>
 
-4. <span data-ttu-id="8e1d1-246">Luo avainsäilön salaiset koodit seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-246">Create Key Vault secrets:</span></span>
+4. <span data-ttu-id="57b43-243">Luo avainsäilön salaiset koodit seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-243">Create Key Vault secrets:</span></span>
 
-    1. <span data-ttu-id="8e1d1-247">Siirry aiemmin luotuun avainsäilöön ja valitse **Salaiset koodit**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-247">Go to the key vault that you created earlier, and select **Secrets**.</span></span>
-    2. <span data-ttu-id="8e1d1-248">Noudata seuraavia vaiheita kunkin seuraavan taulukon salaisen koodin nimen kohdalla:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-248">For each secret name in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="57b43-244">Siirry aiemmin luotuun avainsäilöön ja valitse **Salaiset koodit**.</span><span class="sxs-lookup"><span data-stu-id="57b43-244">Go to the key vault that you created earlier, and select **Secrets**.</span></span>
+    2. <span data-ttu-id="57b43-245">Noudata seuraavia vaiheita kunkin seuraavan taulukon salaisen koodin nimen kohdalla:</span><span class="sxs-lookup"><span data-stu-id="57b43-245">For each secret name in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="8e1d1-249">Valitse **Luo tai tuo**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-249">Select **Generate/Import**.</span></span>
-        2. <span data-ttu-id="8e1d1-250">Valitse **Luo salasana** -valintaikkunan **Lataa asetuksia** -kentässä **Manuaalinen**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-250">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
-        3. <span data-ttu-id="8e1d1-251">Luo salaisen koodin nimi ja arvo seuraavasta taulusta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-251">Create the secret name and value from the following table.</span></span>
-        4. <span data-ttu-id="8e1d1-252">Valitse **Käytössä** ja valitse sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-252">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="8e1d1-253">Salainen koodi luodaan ja lisätään avainsäilöön.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-253">The secret is created and added to Key Vault.</span></span>
+        1. <span data-ttu-id="57b43-246">Valitse **Luo tai tuo**.</span><span class="sxs-lookup"><span data-stu-id="57b43-246">Select **Generate/Import**.</span></span>
+        2. <span data-ttu-id="57b43-247">Valitse **Luo salasana** -valintaikkunan **Lataa asetuksia** -kentässä **Manuaalinen**.</span><span class="sxs-lookup"><span data-stu-id="57b43-247">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+        3. <span data-ttu-id="57b43-248">Luo salaisen koodin nimi ja arvo seuraavasta taulusta.</span><span class="sxs-lookup"><span data-stu-id="57b43-248">Create the secret name and value from the following table.</span></span>
+        4. <span data-ttu-id="57b43-249">Valitse **Käytössä** ja valitse sitten **Luo**.</span><span class="sxs-lookup"><span data-stu-id="57b43-249">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="57b43-250">Salainen koodi luodaan ja lisätään avainsäilöön.</span><span class="sxs-lookup"><span data-stu-id="57b43-250">The secret is created and added to Key Vault.</span></span>
 
-        | <span data-ttu-id="8e1d1-254">Salaisen koodin nimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-254">Secret name</span></span>                       | <span data-ttu-id="8e1d1-255">Salaisen koodin arvo</span><span class="sxs-lookup"><span data-stu-id="8e1d1-255">Secret value</span></span>                                                                                |
+        | <span data-ttu-id="57b43-251">Salaisen koodin nimi</span><span class="sxs-lookup"><span data-stu-id="57b43-251">Secret name</span></span>                       | <span data-ttu-id="57b43-252">Salaisen koodin arvo</span><span class="sxs-lookup"><span data-stu-id="57b43-252">Secret value</span></span>                                                                                |
         |-----------------------------------|---------------------------------------------------------------------------------------------|
-        | <span data-ttu-id="8e1d1-256">sovelluksen tunnus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-256">app-id</span></span>                            | <span data-ttu-id="8e1d1-257">Aiemmin luodun sovelluksen sovellustunnus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-257">The app ID of the application that you created earlier</span></span>                                      |
-        | <span data-ttu-id="8e1d1-258">sovelluksen salainen koodi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-258">app-secret</span></span>                        | <span data-ttu-id="8e1d1-259">Aiemmin tallennettu asiakkaan salainen koodi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-259">The client secret that you saved earlier</span></span>                                                    |
-        | <span data-ttu-id="8e1d1-260">tallennustilin nimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-260">storage-account-name</span></span>              | <span data-ttu-id="8e1d1-261">Aiemmin luodun tallennustilin nimi, kuten **tallennustili1**</span><span class="sxs-lookup"><span data-stu-id="8e1d1-261">The name of the storage account that you created earlier, such as **storageaccount1**</span></span>       |
-        | <span data-ttu-id="8e1d1-262">tallennustilin yhteysmerkkijono</span><span class="sxs-lookup"><span data-stu-id="8e1d1-262">storage-account-connection-string</span></span> | <span data-ttu-id="8e1d1-263">Tallennustilin **Käyttöoikeusavaimet**-sivulta kopioitu yhteysmerkkijono</span><span class="sxs-lookup"><span data-stu-id="8e1d1-263">The connection string that you copied from the **Access keys** page for the storage account</span></span> |
+        | <span data-ttu-id="57b43-253">sovelluksen tunnus</span><span class="sxs-lookup"><span data-stu-id="57b43-253">app-id</span></span>                            | <span data-ttu-id="57b43-254">Aiemmin luodun sovelluksen sovellustunnus</span><span class="sxs-lookup"><span data-stu-id="57b43-254">The app ID of the application that you created earlier</span></span>                                      |
+        | <span data-ttu-id="57b43-255">sovelluksen salainen koodi</span><span class="sxs-lookup"><span data-stu-id="57b43-255">app-secret</span></span>                        | <span data-ttu-id="57b43-256">Aiemmin tallennettu asiakkaan salainen koodi</span><span class="sxs-lookup"><span data-stu-id="57b43-256">The client secret that you saved earlier</span></span>                                                    |
+        | <span data-ttu-id="57b43-257">tallennustilin nimi</span><span class="sxs-lookup"><span data-stu-id="57b43-257">storage-account-name</span></span>              | <span data-ttu-id="57b43-258">Aiemmin luodun tallennustilin nimi, kuten **tallennustili1**</span><span class="sxs-lookup"><span data-stu-id="57b43-258">The name of the storage account that you created earlier, such as **storageaccount1**</span></span>       |
+        | <span data-ttu-id="57b43-259">tallennustilin yhteysmerkkijono</span><span class="sxs-lookup"><span data-stu-id="57b43-259">storage-account-connection-string</span></span> | <span data-ttu-id="57b43-260">Tallennustilin **Käyttöoikeusavaimet**-sivulta kopioitu yhteysmerkkijono</span><span class="sxs-lookup"><span data-stu-id="57b43-260">The connection string that you copied from the **Access keys** page for the storage account</span></span> |
 
-5. <span data-ttu-id="8e1d1-264">Anna sovellukselle lupa käyttää avainsäilöä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-264">Authorize the application to access the key vault:</span></span>
+5. <span data-ttu-id="57b43-261">Anna sovellukselle lupa käyttää avainsäilöä seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="57b43-261">Authorize the application to access the key vault:</span></span>
 
-    1. <span data-ttu-id="8e1d1-265">Avaa [Azure-portaalissa](https://portal.azure.com) aiemmin luotu avainsäilö.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-265">In the [Azure portal](https://portal.azure.com), open the key vault that you created earlier.</span></span>
-    2. <span data-ttu-id="8e1d1-266">Valitse käyttöoikeuskäytännöt.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-266">Select the access policies.</span></span>
-    3. <span data-ttu-id="8e1d1-267">Noudata seuraavia vaiheita kunkin seuraavan taulukon sovelluksen kohdalla:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-267">For each application in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="57b43-262">Avaa [Azure-portaalissa](https://portal.azure.com) aiemmin luotu avainsäilö.</span><span class="sxs-lookup"><span data-stu-id="57b43-262">In the [Azure portal](https://portal.azure.com), open the key vault that you created earlier.</span></span>
+    2. <span data-ttu-id="57b43-263">Valitse käyttöoikeuskäytännöt.</span><span class="sxs-lookup"><span data-stu-id="57b43-263">Select the access policies.</span></span>
+    3. <span data-ttu-id="57b43-264">Noudata seuraavia vaiheita kunkin seuraavan taulukon sovelluksen kohdalla:</span><span class="sxs-lookup"><span data-stu-id="57b43-264">For each application in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="8e1d1-268">Luo käyttöoikeuskäytäntö valitsemalla **Lisää käyttöoikeuskäytäntö**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-268">Select **Add Access Policy** to create an access policy.</span></span>
-        2. <span data-ttu-id="8e1d1-269">Valitse **Salaisen koodin käyttöoikeudet** -kentässä käyttöoikeudet seuraavasta taulukosta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-269">In the **Secret permissions** field, select the permissions from the following table.</span></span>
-        3. <span data-ttu-id="8e1d1-270">Hae **Valitse päänimi** -kentässä sovelluksen näyttönimi seuraavasta taulukosta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-270">In the **Select principal** field, search for the application display name from the following table.</span></span>
-        4. <span data-ttu-id="8e1d1-271">Valitse **Valitse**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-271">Select **Select**.</span></span>
-        5. <span data-ttu-id="8e1d1-272">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-272">Select **Add**.</span></span>
-        6. <span data-ttu-id="8e1d1-273">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-273">Select **Save**.</span></span>
+        1. <span data-ttu-id="57b43-265">Luo käyttöoikeuskäytäntö valitsemalla **Lisää käyttöoikeuskäytäntö**.</span><span class="sxs-lookup"><span data-stu-id="57b43-265">Select **Add Access Policy** to create an access policy.</span></span>
+        2. <span data-ttu-id="57b43-266">Valitse **Salaisen koodin käyttöoikeudet** -kentässä käyttöoikeudet seuraavasta taulukosta.</span><span class="sxs-lookup"><span data-stu-id="57b43-266">In the **Secret permissions** field, select the permissions from the following table.</span></span>
+        3. <span data-ttu-id="57b43-267">Hae **Valitse päänimi** -kentässä sovelluksen näyttönimi seuraavasta taulukosta.</span><span class="sxs-lookup"><span data-stu-id="57b43-267">In the **Select principal** field, search for the application display name from the following table.</span></span>
+        4. <span data-ttu-id="57b43-268">Valitse **Valitse**.</span><span class="sxs-lookup"><span data-stu-id="57b43-268">Select **Select**.</span></span>
+        5. <span data-ttu-id="57b43-269">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="57b43-269">Select **Add**.</span></span>
+        6. <span data-ttu-id="57b43-270">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="57b43-270">Select **Save**.</span></span>
 
-        | <span data-ttu-id="8e1d1-274">Hakemus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-274">Application</span></span>                                              | <span data-ttu-id="8e1d1-275">Käyttöoikeudet</span><span class="sxs-lookup"><span data-stu-id="8e1d1-275">Permissions</span></span> |
+        | <span data-ttu-id="57b43-271">Hakemus</span><span class="sxs-lookup"><span data-stu-id="57b43-271">Application</span></span>                                              | <span data-ttu-id="57b43-272">Käyttöoikeudet</span><span class="sxs-lookup"><span data-stu-id="57b43-272">Permissions</span></span> |
         |----------------------------------------------------------|-------------|
-        | <span data-ttu-id="8e1d1-276">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-276">The display name of the new application that you created</span></span> | <span data-ttu-id="8e1d1-277">Hae, Luettelo</span><span class="sxs-lookup"><span data-stu-id="8e1d1-277">Get, List</span></span>   |
-        | <span data-ttu-id="8e1d1-278">**Microsoft Dynamics ERP Microservices**</span><span class="sxs-lookup"><span data-stu-id="8e1d1-278">**Microsoft Dynamics ERP Microservices**</span></span>                 | <span data-ttu-id="8e1d1-279">Hae, Luettelo</span><span class="sxs-lookup"><span data-stu-id="8e1d1-279">Get, List</span></span>   |
+        | <span data-ttu-id="57b43-273">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="57b43-273">The display name of the new application that you created</span></span> | <span data-ttu-id="57b43-274">Hae, Luettelo</span><span class="sxs-lookup"><span data-stu-id="57b43-274">Get, List</span></span>   |
+        | <span data-ttu-id="57b43-275">**Microsoft Dynamics ERP Microservices**</span><span class="sxs-lookup"><span data-stu-id="57b43-275">**Microsoft Dynamics ERP Microservices**</span></span>                 | <span data-ttu-id="57b43-276">Hae, Luettelo</span><span class="sxs-lookup"><span data-stu-id="57b43-276">Get, List</span></span>   |
 
-6. <span data-ttu-id="8e1d1-280">Määritä seuraavasti roolit, jotka käyttävät tallennustiliä:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-280">Assign roles to access the storage account:</span></span>
+6. <span data-ttu-id="57b43-277">Määritä seuraavasti roolit, jotka käyttävät tallennustiliä:</span><span class="sxs-lookup"><span data-stu-id="57b43-277">Assign roles to access the storage account:</span></span>
 
-    1. <span data-ttu-id="8e1d1-281">Avaa [Azure-portaalissa](https://portal.azure.com) aiemmin luotu tallennustili.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-281">In the [Azure portal](https://portal.azure.com), open the storage account that you created earlier.</span></span>
-    2. <span data-ttu-id="8e1d1-282">Valitse **Käyttöoikeuksien hallinta (IAM)** ja valitse sitten **Roolimääritykset**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-282">Select **Access Control (IAM)**, and then select **Role Assignments**.</span></span>
-    3. <span data-ttu-id="8e1d1-283">Valitse **Lisää, Lisää roolimääritys**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-283">Select **Add, Add Role Assignment**.</span></span>
-    4. <span data-ttu-id="8e1d1-284">Noudata seuraavia vaiheita kunkin seuraavan taulukon sovelluksen kohdalla:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-284">For each application in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="57b43-278">Avaa [Azure-portaalissa](https://portal.azure.com) aiemmin luotu tallennustili.</span><span class="sxs-lookup"><span data-stu-id="57b43-278">In the [Azure portal](https://portal.azure.com), open the storage account that you created earlier.</span></span>
+    2. <span data-ttu-id="57b43-279">Valitse **Käyttöoikeuksien hallinta (IAM)** ja valitse sitten **Roolimääritykset**.</span><span class="sxs-lookup"><span data-stu-id="57b43-279">Select **Access Control (IAM)**, and then select **Role Assignments**.</span></span>
+    3. <span data-ttu-id="57b43-280">Valitse **Lisää, Lisää roolimääritys**.</span><span class="sxs-lookup"><span data-stu-id="57b43-280">Select **Add, Add Role Assignment**.</span></span>
+    4. <span data-ttu-id="57b43-281">Noudata seuraavia vaiheita kunkin seuraavan taulukon sovelluksen kohdalla:</span><span class="sxs-lookup"><span data-stu-id="57b43-281">For each application in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="8e1d1-285">Valitse rooli seuraavasta luettelosta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-285">Select the role from the following table.</span></span>
-        2. <span data-ttu-id="8e1d1-286">Jätä **Delegoi käyttöoikeus** -kentän arvoksi **Azure AD -käyttäjä, -ryhmä tai -palvelun päänimi** -arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-286">Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.</span></span>
-        3. <span data-ttu-id="8e1d1-287">Syötä **Valitse**-kenttään sovellus seuraavasta taulukosta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-287">In the **Select** field, enter the application from the following table.</span></span>
-        4. <span data-ttu-id="8e1d1-288">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-288">Select **Save**.</span></span>
+        1. <span data-ttu-id="57b43-282">Valitse rooli seuraavasta luettelosta.</span><span class="sxs-lookup"><span data-stu-id="57b43-282">Select the role from the following table.</span></span>
+        2. <span data-ttu-id="57b43-283">Jätä **Delegoi käyttöoikeus** -kentän arvoksi **Azure AD -käyttäjä, -ryhmä tai -palvelun päänimi** -arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-283">Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.</span></span>
+        3. <span data-ttu-id="57b43-284">Syötä **Valitse**-kenttään sovellus seuraavasta taulukosta.</span><span class="sxs-lookup"><span data-stu-id="57b43-284">In the **Select** field, enter the application from the following table.</span></span>
+        4. <span data-ttu-id="57b43-285">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="57b43-285">Select **Save**.</span></span>
 
-        | <span data-ttu-id="8e1d1-289">Hakemus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-289">Application</span></span>                                              | <span data-ttu-id="8e1d1-290">Rooli</span><span class="sxs-lookup"><span data-stu-id="8e1d1-290">Role</span></span>                        |
+        | <span data-ttu-id="57b43-286">Hakemus</span><span class="sxs-lookup"><span data-stu-id="57b43-286">Application</span></span>                                              | <span data-ttu-id="57b43-287">Rooli</span><span class="sxs-lookup"><span data-stu-id="57b43-287">Role</span></span>                        |
         |----------------------------------------------------------|-----------------------------|
-        | <span data-ttu-id="8e1d1-291">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-291">The display name of the new application that you created</span></span> | <span data-ttu-id="8e1d1-292">Omistaja</span><span class="sxs-lookup"><span data-stu-id="8e1d1-292">Owner</span></span>                       |
-        | <span data-ttu-id="8e1d1-293">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-293">The display name of the new application that you created</span></span> | <span data-ttu-id="8e1d1-294">Osallistuja</span><span class="sxs-lookup"><span data-stu-id="8e1d1-294">Contributor</span></span>                 |
-        | <span data-ttu-id="8e1d1-295">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-295">The display name of the new application that you created</span></span> | <span data-ttu-id="8e1d1-296">Tallennustili - osallistuja</span><span class="sxs-lookup"><span data-stu-id="8e1d1-296">Storage Account Contributor</span></span> |
-        | <span data-ttu-id="8e1d1-297">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-297">The display name of the new application that you created</span></span> | <span data-ttu-id="8e1d1-298">Tallennustilan blob-objektin tietojen omistaja</span><span class="sxs-lookup"><span data-stu-id="8e1d1-298">Storage Blob Data Owner</span></span>     |
-        | <span data-ttu-id="8e1d1-299">**AI Builderin todennuspalvelu**</span><span class="sxs-lookup"><span data-stu-id="8e1d1-299">**AI Builder Authorization Service**</span></span>                     | <span data-ttu-id="8e1d1-300">Tallennustilan blob-objektin tietojen lukija</span><span class="sxs-lookup"><span data-stu-id="8e1d1-300">Storage Blob Data Reader</span></span>    |
+        | <span data-ttu-id="57b43-288">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="57b43-288">The display name of the new application that you created</span></span> | <span data-ttu-id="57b43-289">Omistaja</span><span class="sxs-lookup"><span data-stu-id="57b43-289">Owner</span></span>                       |
+        | <span data-ttu-id="57b43-290">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="57b43-290">The display name of the new application that you created</span></span> | <span data-ttu-id="57b43-291">Osallistuja</span><span class="sxs-lookup"><span data-stu-id="57b43-291">Contributor</span></span>                 |
+        | <span data-ttu-id="57b43-292">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="57b43-292">The display name of the new application that you created</span></span> | <span data-ttu-id="57b43-293">Tallennustili - osallistuja</span><span class="sxs-lookup"><span data-stu-id="57b43-293">Storage Account Contributor</span></span> |
+        | <span data-ttu-id="57b43-294">Luodun uuden sovelluksen näyttönimi</span><span class="sxs-lookup"><span data-stu-id="57b43-294">The display name of the new application that you created</span></span> | <span data-ttu-id="57b43-295">Tallennustilan blob-objektin tietojen omistaja</span><span class="sxs-lookup"><span data-stu-id="57b43-295">Storage Blob Data Owner</span></span>     |
+        | <span data-ttu-id="57b43-296">**AI Builderin todennuspalvelu**</span><span class="sxs-lookup"><span data-stu-id="57b43-296">**AI Builder Authorization Service**</span></span>                     | <span data-ttu-id="57b43-297">Tallennustilan blob-objektin tietojen lukija</span><span class="sxs-lookup"><span data-stu-id="57b43-297">Storage Blob Data Reader</span></span>    |
 
-# <a name="azure-cli"></a>[<span data-ttu-id="8e1d1-301">Azure CLI</span><span class="sxs-lookup"><span data-stu-id="8e1d1-301">Azure CLI</span></span>](#tab/azure-azure-cli)
+# <a name="azure-cli"></a>[<span data-ttu-id="57b43-298">Azure CLI</span><span class="sxs-lookup"><span data-stu-id="57b43-298">Azure CLI</span></span>](#tab/azure-azure-cli)
 
 ```
 function New-FinanceDataLakeAzureResources {
@@ -945,62 +756,62 @@ finally {
 
 
 
-## <a name="configure-the-data-lake"></a><span data-ttu-id="8e1d1-302">Data Laken määrittäminen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-302">Configure the data lake</span></span>
+## <a name="configure-the-data-lake"></a><span data-ttu-id="57b43-299">Data Laken määrittäminen</span><span class="sxs-lookup"><span data-stu-id="57b43-299">Configure the data lake</span></span>
 
-<span data-ttu-id="8e1d1-303">Voit lisätä Azure Data Laken apuohjelman ympäristöön LCS:n avulla.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-303">Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.</span></span>
+<span data-ttu-id="57b43-300">Voit lisätä Azure Data Laken apuohjelman ympäristöön LCS:n avulla.</span><span class="sxs-lookup"><span data-stu-id="57b43-300">Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.</span></span>
 
-1. <span data-ttu-id="8e1d1-304">KIrjaudu sisään LCS:ään ja valitse sivun oikealla olevan ympäristön nimen alta **Täydet tiedot**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-304">Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.</span></span>
-2. <span data-ttu-id="8e1d1-305">Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-305">In the **Environment add-ins** section, select **Install a new add-in**.</span></span>
-3. <span data-ttu-id="8e1d1-306">Valitse **Vie Data Lakeen** -apuohjelma.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-306">Select the **Export to Data Lake** add-in.</span></span>
-4. <span data-ttu-id="8e1d1-307">Syötä seuraavat arvot.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-307">Enter the following values.</span></span>
+1. <span data-ttu-id="57b43-301">KIrjaudu sisään LCS:ään ja valitse sivun oikealla olevan ympäristön nimen alta **Täydet tiedot**.</span><span class="sxs-lookup"><span data-stu-id="57b43-301">Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.</span></span>
+2. <span data-ttu-id="57b43-302">Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.</span><span class="sxs-lookup"><span data-stu-id="57b43-302">In the **Environment add-ins** section, select **Install a new add-in**.</span></span>
+3. <span data-ttu-id="57b43-303">Valitse **Vie Data Lakeen** -apuohjelma.</span><span class="sxs-lookup"><span data-stu-id="57b43-303">Select the **Export to Data Lake** add-in.</span></span>
+4. <span data-ttu-id="57b43-304">Syötä seuraavat arvot.</span><span class="sxs-lookup"><span data-stu-id="57b43-304">Enter the following values.</span></span>
 
-    | <span data-ttu-id="8e1d1-308">Arvo</span><span class="sxs-lookup"><span data-stu-id="8e1d1-308">Value</span></span>                                                              | <span data-ttu-id="8e1d1-309">kuvaus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-309">Description</span></span> |
+    | <span data-ttu-id="57b43-305">Arvo</span><span class="sxs-lookup"><span data-stu-id="57b43-305">Value</span></span>                                                              | <span data-ttu-id="57b43-306">kuvaus</span><span class="sxs-lookup"><span data-stu-id="57b43-306">Description</span></span> |
     |--------------------------------------------------------------------|-------------|
-    | <span data-ttu-id="8e1d1-310">Seb Azure-tilauksen vuokraajan tunnus, jossa avainsäilö sijaitsee</span><span class="sxs-lookup"><span data-stu-id="8e1d1-310">Tenant ID of the Azure Subscription where the Key Vault is located</span></span> | <span data-ttu-id="8e1d1-311">Sen vuokraajan tunnus, jossa tallennustili, sovellukset ja avainsäilöt sijaitsevat.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-311">The tenant ID where the storage account, apps, and key vaults are located.</span></span> <span data-ttu-id="8e1d1-312">Jos haluat etsiä tämän arvon, avaa [Azure-portaali](https://portal.azure.com), siirry **Azure Active Directory** -kohtaan ja kopioi **Vuokraajan tunnus** -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-312">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
-    | <span data-ttu-id="8e1d1-313">Anna avainsäilön DNS-nimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-313">Provide the DNS name of your Key Vault</span></span>                             | <span data-ttu-id="8e1d1-314">Avainsäilön DNS-nimi, esimerkiksi `https://customkeyvault.vault.azure.net/`.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-314">The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`.</span></span> <span data-ttu-id="8e1d1-315">(Tämä arvo vastaa DNS-nimeä, jota käytetään yksikkösäilössä.)</span><span class="sxs-lookup"><span data-stu-id="8e1d1-315">(This value matches the DNS name that is used in the entity store.)</span></span> |
-    | <span data-ttu-id="8e1d1-316">Anna salauskoodi, joka sisältää tallennustilin nimen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-316">Provide the secret that contains the name of the storage account</span></span>   | <span data-ttu-id="8e1d1-317">**tallennustilin nimi**</span><span class="sxs-lookup"><span data-stu-id="8e1d1-317">**storage-account-name**</span></span> |
-    | <span data-ttu-id="8e1d1-318">Sen sovelluksen tunnuksen salaisen koodin nimi, jonka avulla Data Lakea käytetään</span><span class="sxs-lookup"><span data-stu-id="8e1d1-318">Secret Name for App ID to be used for accessing Data Lake</span></span>          | <span data-ttu-id="8e1d1-319">**sovelluksen tunnus**</span><span class="sxs-lookup"><span data-stu-id="8e1d1-319">**app-id**</span></span> |
-    | <span data-ttu-id="8e1d1-320">Sovelluksen tunnuksen kanssa käytettävä salaisen koodin nimi</span><span class="sxs-lookup"><span data-stu-id="8e1d1-320">Secret name to be used with App ID</span></span>                                 | <span data-ttu-id="8e1d1-321">**sovelluksen salainen koodi**</span><span class="sxs-lookup"><span data-stu-id="8e1d1-321">**app-secret**</span></span> |
+    | <span data-ttu-id="57b43-307">Seb Azure-tilauksen vuokraajan tunnus, jossa avainsäilö sijaitsee</span><span class="sxs-lookup"><span data-stu-id="57b43-307">Tenant ID of the Azure Subscription where the Key Vault is located</span></span> | <span data-ttu-id="57b43-308">Sen vuokraajan tunnus, jossa tallennustili, sovellukset ja avainsäilöt sijaitsevat.</span><span class="sxs-lookup"><span data-stu-id="57b43-308">The tenant ID where the storage account, apps, and key vaults are located.</span></span> <span data-ttu-id="57b43-309">Jos haluat etsiä tämän arvon, avaa [Azure-portaali](https://portal.azure.com), siirry **Azure Active Directory** -kohtaan ja kopioi **Vuokraajan tunnus** -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="57b43-309">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
+    | <span data-ttu-id="57b43-310">Anna avainsäilön DNS-nimi</span><span class="sxs-lookup"><span data-stu-id="57b43-310">Provide the DNS name of your Key Vault</span></span>                             | <span data-ttu-id="57b43-311">Avainsäilön DNS-nimi, esimerkiksi `https://customkeyvault.vault.azure.net/`.</span><span class="sxs-lookup"><span data-stu-id="57b43-311">The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`.</span></span> <span data-ttu-id="57b43-312">(Tämä arvo vastaa DNS-nimeä, jota käytetään yksikkösäilössä.)</span><span class="sxs-lookup"><span data-stu-id="57b43-312">(This value matches the DNS name that is used in the entity store.)</span></span> |
+    | <span data-ttu-id="57b43-313">Anna salauskoodi, joka sisältää tallennustilin nimen</span><span class="sxs-lookup"><span data-stu-id="57b43-313">Provide the secret that contains the name of the storage account</span></span>   | <span data-ttu-id="57b43-314">**tallennustilin nimi**</span><span class="sxs-lookup"><span data-stu-id="57b43-314">**storage-account-name**</span></span> |
+    | <span data-ttu-id="57b43-315">Sen sovelluksen tunnuksen salaisen koodin nimi, jonka avulla Data Lakea käytetään</span><span class="sxs-lookup"><span data-stu-id="57b43-315">Secret Name for App ID to be used for accessing Data Lake</span></span>          | <span data-ttu-id="57b43-316">**sovelluksen tunnus**</span><span class="sxs-lookup"><span data-stu-id="57b43-316">**app-id**</span></span> |
+    | <span data-ttu-id="57b43-317">Sovelluksen tunnuksen kanssa käytettävä salaisen koodin nimi</span><span class="sxs-lookup"><span data-stu-id="57b43-317">Secret name to be used with App ID</span></span>                                 | <span data-ttu-id="57b43-318">**sovelluksen salainen koodi**</span><span class="sxs-lookup"><span data-stu-id="57b43-318">**app-secret**</span></span> |
 
-5. <span data-ttu-id="8e1d1-322">Hyväksy ehdot ja valitse **Asenna**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-322">Agree to the terms, and select **Install**.</span></span>
+5. <span data-ttu-id="57b43-319">Hyväksy ehdot ja valitse **Asenna**.</span><span class="sxs-lookup"><span data-stu-id="57b43-319">Agree to the terms, and select **Install**.</span></span>
 
-<span data-ttu-id="8e1d1-323">Apuohjelma asennetaan muutamassa minuutissa.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-323">The add-in will be installed within a few minutes.</span></span>
+<span data-ttu-id="57b43-320">Apuohjelma asennetaan muutamassa minuutissa.</span><span class="sxs-lookup"><span data-stu-id="57b43-320">The add-in will be installed within a few minutes.</span></span>
 
-## <a name="configure-ai-builder"></a><span data-ttu-id="8e1d1-324">AI Builderin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-324">Configure AI Builder</span></span>
+## <a name="configure-ai-builder"></a><span data-ttu-id="57b43-321">AI Builderin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="57b43-321">Configure AI Builder</span></span>
 
-1. <span data-ttu-id="8e1d1-325">Kirjaudu sisään LCS:ään ja avaa **Ympäristön tiedot** -sivu.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-325">Sign in to LCS, and open the **Environment details** page.</span></span>
-2. <span data-ttu-id="8e1d1-326">Vieritä **Ympäristön lisäosat** -osaan.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-326">Scroll to the **Environment add-ins** section.</span></span> <span data-ttu-id="8e1d1-327">Näkyvissä tulisi olla tähän ympäristöön jo asennetut apuohjelmat.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-327">You should see the add-ins that are already installed in this environment.</span></span> <span data-ttu-id="8e1d1-328">Jos **Vie Data Lakeen** -apuohjelma ei ole näkyvissä, määritä se.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-328">If the **Export to Data Lake** add-in isn't among them, configure this add-in.</span></span>
-3. <span data-ttu-id="8e1d1-329">Valitse **Hae tiedot** -apuohjelma.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-329">Select the **Get insights** add-in.</span></span>
-4. <span data-ttu-id="8e1d1-330">Syötä **Hae tiedot** -apuohjelman tietojen sivulla seuraavat arvot.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-330">On the **Get insights** add-in details page, enter the following values.</span></span>
+1. <span data-ttu-id="57b43-322">Kirjaudu sisään LCS:ään ja avaa **Ympäristön tiedot** -sivu.</span><span class="sxs-lookup"><span data-stu-id="57b43-322">Sign in to LCS, and open the **Environment details** page.</span></span>
+2. <span data-ttu-id="57b43-323">Vieritä **Ympäristön lisäosat** -osaan.</span><span class="sxs-lookup"><span data-stu-id="57b43-323">Scroll to the **Environment add-ins** section.</span></span> <span data-ttu-id="57b43-324">Näkyvissä tulisi olla tähän ympäristöön jo asennetut apuohjelmat.</span><span class="sxs-lookup"><span data-stu-id="57b43-324">You should see the add-ins that are already installed in this environment.</span></span> <span data-ttu-id="57b43-325">Jos **Vie Data Lakeen** -apuohjelma ei ole näkyvissä, määritä se.</span><span class="sxs-lookup"><span data-stu-id="57b43-325">If the **Export to Data Lake** add-in isn't among them, configure this add-in.</span></span>
+3. <span data-ttu-id="57b43-326">Valitse **Hae tiedot** -apuohjelma.</span><span class="sxs-lookup"><span data-stu-id="57b43-326">Select the **Get insights** add-in.</span></span>
+4. <span data-ttu-id="57b43-327">Syötä **Hae tiedot** -apuohjelman tietojen sivulla seuraavat arvot.</span><span class="sxs-lookup"><span data-stu-id="57b43-327">On the **Get insights** add-in details page, enter the following values.</span></span>
 
-    | <span data-ttu-id="8e1d1-331">Arvo</span><span class="sxs-lookup"><span data-stu-id="8e1d1-331">Value</span></span>                                                    | <span data-ttu-id="8e1d1-332">kuvaus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-332">Description</span></span> |
+    | <span data-ttu-id="57b43-328">Arvo</span><span class="sxs-lookup"><span data-stu-id="57b43-328">Value</span></span>                                                    | <span data-ttu-id="57b43-329">kuvaus</span><span class="sxs-lookup"><span data-stu-id="57b43-329">Description</span></span> |
     |----------------------------------------------------------|-------------|
-    | <span data-ttu-id="8e1d1-333">CDS-organisaation URL-osoite</span><span class="sxs-lookup"><span data-stu-id="8e1d1-333">CDS Organization URL</span></span>                                     | <span data-ttu-id="8e1d1-334">Dataverse -esiintymän Dataverse -organisaation URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-334">The Dataverse organization URL of the Dataverse instance.</span></span> <span data-ttu-id="8e1d1-335">Jos haluat löytää tämän arvon, avaa [Power Apps -portaali](https://make.powerapps.com) ja valitse oikeassa yläkulmassa oleva **Asetukset**-painike (ratassymboli). Valitse **Lisäasetukset** ja kopioi URL-osoite.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-335">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL.</span></span> <span data-ttu-id="8e1d1-336">(URL-osoitteen lopussa on merkkijono dynamics.com.)</span><span class="sxs-lookup"><span data-stu-id="8e1d1-336">(The URL ends with "dynamics.com.")</span></span> |
-    | <span data-ttu-id="8e1d1-337">CDS-organisaation tunnus</span><span class="sxs-lookup"><span data-stu-id="8e1d1-337">CDS Org ID</span></span>                                               | <span data-ttu-id="8e1d1-338">Dataverse -esiintymän ympäristön tunnus.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-338">The environment ID of the Dataverse instance.</span></span> <span data-ttu-id="8e1d1-339">Jos haluat etsiä tämän arvon, avaa [Power Apps -portaali](https://make.powerapps.com) ja valitse oikeassa yläkulmassa oleva **Asetukset**-painike (ratassymboli) . Valitse **Mukautukset \> Kehittäjän resurssit \> Esiintymän viitetiedot** ja kopioi **Tunnus**-kohdan arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-339">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value.</span></span> |
-    | <span data-ttu-id="8e1d1-340">CDS-vuokraajan tunnus (AAD:n hakemistotunnus)</span><span class="sxs-lookup"><span data-stu-id="8e1d1-340">CDS Tenant ID (Directory ID from AAD)</span></span>               | <span data-ttu-id="8e1d1-341">Dataverse -esiintymän vuokraajan tunnus.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-341">The tenant ID of the Dataverse instance.</span></span> <span data-ttu-id="8e1d1-342">Jos haluat etsiä tämän arvon, avaa [Azure-portaali](https://portal.azure.com), siirry **Azure Active Directory** -kohtaan ja kopioi **Vuokraajan tunnus** -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-342">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
-    | <span data-ttu-id="8e1d1-343">Anna sen käyttäjäobjektin tunnus, jolla on järjestelmänvalvojan rooli</span><span class="sxs-lookup"><span data-stu-id="8e1d1-343">Provide user object ID who has system administrator role</span></span> | <span data-ttu-id="8e1d1-344">Dataverse -käyttäjän Azure AD -käyttäjäobjektin tunnus.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-344">The Azure AD user object ID of the user in Dataverse.</span></span> <span data-ttu-id="8e1d1-345">Tämän käyttäjän on oltava Dataverse -esiintymän järjestelmänvalvoja.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-345">This user must be a system administrator of the Dataverse instance.</span></span> <span data-ttu-id="8e1d1-346">Jos haluat etsiä tämän arvon, avaa [Azure-portaali](https://portal.azure.com) ja siirry kohtaan **Azure Active Directory \> Käyttäjät**. Valitse käyttäjä ja kopioi **Tunnistetiedot**-osassa **Objektin tunnus** -kohdan arvo.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-346">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value.</span></span> |
-    | <span data-ttu-id="8e1d1-347">Onko tämä CDS:n oletusympäristö vuokralaiselle?</span><span class="sxs-lookup"><span data-stu-id="8e1d1-347">Is this the default CDS environment for the tenant?</span></span>      | <span data-ttu-id="8e1d1-348">Jos Dataverse -esiintymä oli ensimmäinen luotu tuotantoesiintymä, valitse tämä valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-348">If the Dataverse instance was the first production instance that was created, select this check box.</span></span> <span data-ttu-id="8e1d1-349">Jos Dataverse -esiintymä on luotu manuaalisesti, poista tämän valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-349">If the Dataverse instance was manually created, clear this check box.</span></span> |
+    | <span data-ttu-id="57b43-330">CDS-organisaation URL-osoite</span><span class="sxs-lookup"><span data-stu-id="57b43-330">CDS Organization URL</span></span>                                     | <span data-ttu-id="57b43-331">Dataverse-organisaation URL-osoite, joka on kopioitu yllä olevasta kohteesta.</span><span class="sxs-lookup"><span data-stu-id="57b43-331">The Dataverse organization URL copied from above.</span></span> |
+    | <span data-ttu-id="57b43-332">CDS-organisaation tunnus</span><span class="sxs-lookup"><span data-stu-id="57b43-332">CDS Org ID</span></span>                                               | <span data-ttu-id="57b43-333">Dataverse-organisaation tunnus, joka on kopioitu yllä olevasta kohteesta.</span><span class="sxs-lookup"><span data-stu-id="57b43-333">The Dataverse organization ID copied from above.</span></span> |
+5. <span data-ttu-id="57b43-334">Ota käyttöön **Onko tämä oletusympäristö vuokralaiselle**.</span><span class="sxs-lookup"><span data-stu-id="57b43-334">Enable **Is this the default environment for you Tenant**.</span></span>
+    
+## <a name="configure-the-entity-store"></a><span data-ttu-id="57b43-335">Yksikkösäilön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="57b43-335">Configure the entity store</span></span>
 
-## <a name="configure-the-entity-store"></a><span data-ttu-id="8e1d1-350">Yksikkösäilön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="8e1d1-350">Configure the entity store</span></span>
+<span data-ttu-id="57b43-336">Näiden vaiheiden avulla voit määrittää Finance-ympäristön yksikkösäilön.</span><span class="sxs-lookup"><span data-stu-id="57b43-336">Follow these steps to set up the entity store in your Finance environment.</span></span>
 
-<span data-ttu-id="8e1d1-351">Näiden vaiheiden avulla voit määrittää Finance-ympäristön yksikkösäilön.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-351">Follow these steps to set up the entity store in your Finance environment.</span></span>
+1. <span data-ttu-id="57b43-337">Siirry kohtaan **Järjestelmän hallinta \> Asetukset \> Järjestelmän parametrit \> Tietoyhteydet**.</span><span class="sxs-lookup"><span data-stu-id="57b43-337">Go to **System administration \> Setup \> System parameters \> Data connections**.</span></span>
+2. <span data-ttu-id="57b43-338">Määritä seuraavat avainsäilön kentät:</span><span class="sxs-lookup"><span data-stu-id="57b43-338">Set the following key vault fields:</span></span>
 
-1. <span data-ttu-id="8e1d1-352">Siirry kohtaan **Järjestelmän hallinta \> Asetukset \> Järjestelmän parametrit \> Tietoyhteydet**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-352">Go to **System administration \> Setup \> System parameters \> Data connections**.</span></span>
-2. <span data-ttu-id="8e1d1-353">Määritä **Ota Data Lake -integrointi käyttöön** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-353">Set the **Enable Data Lake integration** option to **Yes**.</span></span>
-3. <span data-ttu-id="8e1d1-354">Määritä seuraavat avainsäilön kentät:</span><span class="sxs-lookup"><span data-stu-id="8e1d1-354">Set the following key vault fields:</span></span>
+    - <span data-ttu-id="57b43-339">**Sovelluksen (asiakkaan) tunnus** – Anna aiemmin luotu sovelluksen asiakastunnus.</span><span class="sxs-lookup"><span data-stu-id="57b43-339">**Application (client) ID** – Enter the application client ID that you created earlier.</span></span>
+    - <span data-ttu-id="57b43-340">**Sovelluksen salainen koodi** – Syötä aiemmin luotu sovellukselle tallennettu salainen koodi.</span><span class="sxs-lookup"><span data-stu-id="57b43-340">**Application Secret** – Enter the secret that you saved for the application that you created earlier.</span></span>
+    - <span data-ttu-id="57b43-341">**DNS-nimi** – DNS (Domain Name System) -nimi löytyy aiemmin luodun sovelluksen sovellustietojen sivulta.</span><span class="sxs-lookup"><span data-stu-id="57b43-341">**DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.</span></span>
+    - <span data-ttu-id="57b43-342">**Salainen koodi** – Syötä **Tallennustilin yhteysmerkkijono**.</span><span class="sxs-lookup"><span data-stu-id="57b43-342">**Secret name** – Enter **storage-account-connection-string**.</span></span>
+3. <span data-ttu-id="57b43-343">Ota käyttöön **Ota Data Lake -integrointi käyttöön**.</span><span class="sxs-lookup"><span data-stu-id="57b43-343">Enable **Enable Data Lake integration**.</span></span>
+4. <span data-ttu-id="57b43-344">Valitse **Testaa Azure Key Vault** ja tarkista, ettei siinä ole virheitä.</span><span class="sxs-lookup"><span data-stu-id="57b43-344">Select **Test Azure Key Vault** and verify there are no errors.</span></span>
+5. <span data-ttu-id="57b43-345">Valitse **Testaa Azure-tallennustila** ja tarkista, ettei siinä ole virheitä.</span><span class="sxs-lookup"><span data-stu-id="57b43-345">Select **Test Azure storage** and verify there are no errors.</span></span>
 
-    - <span data-ttu-id="8e1d1-355">**Sovelluksen (asiakkaan) tunnus** – Anna aiemmin luotu sovelluksen asiakastunnus.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-355">**Application (client) ID** – Enter the application client ID that you created earlier.</span></span>
-    - <span data-ttu-id="8e1d1-356">**Sovelluksen salainen koodi** – Syötä aiemmin luotu sovellukselle tallennettu salainen koodi.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-356">**Application Secret** – Enter the secret that you saved for the application that you created earlier.</span></span>
-    - <span data-ttu-id="8e1d1-357">**DNS-nimi** – DNS (Domain Name System) -nimi löytyy aiemmin luodun sovelluksen sovellustietojen sivulta.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-357">**DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.</span></span>
-    - <span data-ttu-id="8e1d1-358">**Salainen koodi** – Syötä **Tallennustilin yhteysmerkkijono**.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-358">**Secret name** – Enter **storage-account-connection-string**.</span></span>
+## <a name="feedback-and-support"></a><span data-ttu-id="57b43-346">Palaute ja tuki</span><span class="sxs-lookup"><span data-stu-id="57b43-346">Feedback and support</span></span>
 
-## <a name="feedback-and-support"></a><span data-ttu-id="8e1d1-359">Palaute ja tuki</span><span class="sxs-lookup"><span data-stu-id="8e1d1-359">Feedback and support</span></span>
+<span data-ttu-id="57b43-347">Lähetä sähköpostiviesti [Asiakasmaksujen tiedot (esiversio) -kohteeseen](mailto:fiap@microsoft.com), jos haluat antaa palautetta tai tarvitset tukea.</span><span class="sxs-lookup"><span data-stu-id="57b43-347">Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.</span></span>
 
-<span data-ttu-id="8e1d1-360">Lähetä sähköpostiviesti [Asiakasmaksujen tiedot (esiversio) -kohteeseen](mailto:fiap@microsoft.com), jos haluat antaa palautetta tai tarvitset tukea.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-360">Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.</span></span>
+## <a name="privacy-notice"></a><span data-ttu-id="57b43-348">Tietosuojatiedot</span><span class="sxs-lookup"><span data-stu-id="57b43-348">Privacy notice</span></span>
 
-## <a name="privacy-notice"></a><span data-ttu-id="8e1d1-361">Tietosuojatiedot</span><span class="sxs-lookup"><span data-stu-id="8e1d1-361">Privacy notice</span></span>
-
-<span data-ttu-id="8e1d1-362">Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.</span><span class="sxs-lookup"><span data-stu-id="8e1d1-362">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
+<span data-ttu-id="57b43-349">Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.</span><span class="sxs-lookup"><span data-stu-id="57b43-349">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

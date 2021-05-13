@@ -13,68 +13,69 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0db1c35779a468d9a86d18eb6c849d40bc8c03a3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 13053dd87242963586678b46c64493feb3383c4c
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820079"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920702"
 ---
-# <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="9d926-103">Tuoterakenteen luominen dimensioperustaiselle päätuotteelle</span><span class="sxs-lookup"><span data-stu-id="9d926-103">Create a bill of materials for a dimension-based product master</span></span>
+# <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="0b0ed-103">Tuoterakenteen luominen dimensioperustaiselle päätuotteelle</span><span class="sxs-lookup"><span data-stu-id="0b0ed-103">Create a bill of materials for a dimension-based product master</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9d926-104">Tätä menettelyä varten sinun tulisi olla suorittanut edelliset 4 opasta tässä neljän tallenteen sarjassa.</span><span class="sxs-lookup"><span data-stu-id="9d926-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="9d926-105">Ensimmäiset 4 tallennetta määrittävät tiedot, jotka tarvitaan tämän menettelyn suorittamiseen.</span><span class="sxs-lookup"><span data-stu-id="9d926-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="9d926-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="9d926-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9d926-107">Tästä tehtävästä vastaa yleensä tuotesuunnittelija.</span><span class="sxs-lookup"><span data-stu-id="9d926-107">This task is typically handled by the product designer.</span></span>
+<span data-ttu-id="0b0ed-104">Tätä menettelyä varten sinun tulisi olla suorittanut edelliset 4 opasta tässä neljän tallenteen sarjassa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="0b0ed-105">Ensimmäiset 4 tallennetta määrittävät tiedot, jotka tarvitaan tämän menettelyn suorittamiseen.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="0b0ed-106">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0b0ed-107">Tästä tehtävästä vastaa yleensä tuotesuunnittelija.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-107">This task is typically handled by the product designer.</span></span>
 
+## <a name="select-the-product"></a><span data-ttu-id="0b0ed-108">Valitse tuote</span><span class="sxs-lookup"><span data-stu-id="0b0ed-108">Select the product</span></span>
 
-## <a name="select-the-product"></a><span data-ttu-id="9d926-108">Valitse tuote</span><span class="sxs-lookup"><span data-stu-id="9d926-108">Select the product</span></span>
-1. <span data-ttu-id="9d926-109">Valitse Vapautetun tuotteen ylläpito.</span><span class="sxs-lookup"><span data-stu-id="9d926-109">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="9d926-110">Valitse Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="9d926-110">Click Released products.</span></span>
-3. <span data-ttu-id="9d926-111">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9d926-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="9d926-112">Paikanna tämän tehtäväoppaan ensimmäisessä vaiheessa luomasi julkaistu päätuote, jolla on dimensioihin perustuva konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="9d926-112">Find the released product master with dimension-based configuration technology that you created in the first task guide in this sequence.</span></span>  
-4. <span data-ttu-id="9d926-113">Valitse toimintoruudussa Suunnittele.</span><span class="sxs-lookup"><span data-stu-id="9d926-113">On the Action Pane, click Engineer.</span></span>
-5. <span data-ttu-id="9d926-114">Valitse Tuoterakenneversiot.</span><span class="sxs-lookup"><span data-stu-id="9d926-114">Click BOM versions.</span></span>
+1. <span data-ttu-id="0b0ed-109">Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-109">Go to **Product information management \> Products \> Released products**.</span></span>
+1. <span data-ttu-id="0b0ed-110">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-110">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="0b0ed-111">Paikanna tämän tehtäväoppaan ensimmäisessä vaiheessa luomasi julkaistu päätuote, jolla on dimensioihin perustuva konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-111">Find the released product master with dimension-based configuration technology that you created in the first task guide in this sequence.</span></span>  
+1. <span data-ttu-id="0b0ed-112">Valitse toimintoruudussa **Kehittäjä**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-112">On the Action Pane, select **Engineer**.</span></span>
+1. <span data-ttu-id="0b0ed-113">Valitse **Tuoterakenneversiot**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-113">Select **BOM versions**.</span></span>
 
-## <a name="create-new-bom-and-bom-version"></a><span data-ttu-id="9d926-115">Luo uusi tuoterakenne ja tuoterakenneversio</span><span class="sxs-lookup"><span data-stu-id="9d926-115">Create new BOM and BOM version</span></span>
-1. <span data-ttu-id="9d926-116">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="9d926-116">Click New.</span></span>
-2. <span data-ttu-id="9d926-117">Napsauta kohtia Tuoterakenne ja Tuoterakenneversio.</span><span class="sxs-lookup"><span data-stu-id="9d926-117">Click BOM and BOM version.</span></span>
-3. <span data-ttu-id="9d926-118">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9d926-118">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="9d926-119">Toimipaikan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="9d926-119">Setting a site</span></span>  
-    * <span data-ttu-id="9d926-120">Näissä toimintaohjeissa ei määritetä tuoterakenteelle tiettyä toimipaikkaa.</span><span class="sxs-lookup"><span data-stu-id="9d926-120">In this procedure we don't set a specific site for the BOM.</span></span>  
-4. <span data-ttu-id="9d926-121">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="9d926-121">Click OK.</span></span>
-5. <span data-ttu-id="9d926-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="9d926-122">Click New.</span></span>
-    * <span data-ttu-id="9d926-123">Näissä toimintaohjeissa lisätään neljä riviä tuoterakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="9d926-123">In this procedure we will add four lines to the BOM.</span></span> <span data-ttu-id="9d926-124">Kaksi riviä edustavat kaapelivaihtoehtoja ja toisen kaksi riviä kabinettivaihtoehtoja.</span><span class="sxs-lookup"><span data-stu-id="9d926-124">Two lines represent cable options and two lines represent cabinet options.</span></span>  
-6. <span data-ttu-id="9d926-125">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9d926-125">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="9d926-126">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="9d926-126">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-127">Valitse nimiketunnus A0001, HDMI 6' kaapelit.</span><span class="sxs-lookup"><span data-stu-id="9d926-127">Select item number A0001, HDMI 6' Cables.</span></span>  
-8. <span data-ttu-id="9d926-128">Anna tai valitse arvo Konfiguraatioryhmä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9d926-128">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-129">Valitse kaapelin konfiguraatioryhmä, joka luotiin oppaan vaiheessa 4.</span><span class="sxs-lookup"><span data-stu-id="9d926-129">Select the Cable configuration group created in guide 4 in this sequence.</span></span>  
-9. <span data-ttu-id="9d926-130">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="9d926-130">Click New.</span></span>
-    * <span data-ttu-id="9d926-131">Valitse nimiketunnus A0002, HDMI 12' kaapelit.</span><span class="sxs-lookup"><span data-stu-id="9d926-131">Select item number A0002, HDMI 12' Cables.</span></span>  
-10. <span data-ttu-id="9d926-132">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9d926-132">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="9d926-133">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="9d926-133">In the Item number field, enter or select a value.</span></span>
-12. <span data-ttu-id="9d926-134">Anna tai valitse arvo Konfiguraatioryhmä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9d926-134">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-135">Valitse kaapelin konfiguraatioryhmä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="9d926-135">Select the Cable configuration group again.</span></span>  
-13. <span data-ttu-id="9d926-136">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="9d926-136">Click New.</span></span>
-14. <span data-ttu-id="9d926-137">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9d926-137">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="9d926-138">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="9d926-138">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-139">Valitse nimiketunnus D0002 Kabinetti.</span><span class="sxs-lookup"><span data-stu-id="9d926-139">Select item number D0002 Cabinet.</span></span>  
-16. <span data-ttu-id="9d926-140">Anna tai valitse arvo Konfiguraatioryhmä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9d926-140">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-141">Valitse kabinetin konfiguraatioryhmä tälle tuoterakenteen riville.</span><span class="sxs-lookup"><span data-stu-id="9d926-141">Select the Cabinet configuration group for this BOM line.</span></span>  
-17. <span data-ttu-id="9d926-142">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="9d926-142">Click New.</span></span>
-18. <span data-ttu-id="9d926-143">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="9d926-143">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="9d926-144">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="9d926-144">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-145">Valitse nimiketunnus M0007 Vakiokabinetti viimeiseksi tuoterakenteen riviksi.</span><span class="sxs-lookup"><span data-stu-id="9d926-145">Select Item number M0007 StandardCabinet as the last BOM line.</span></span>  
-20. <span data-ttu-id="9d926-146">Anna tai valitse arvo Konfiguraatioryhmä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="9d926-146">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="9d926-147">Valitse kabinetin konfiguraatioryhmä viimeiselle tuoterakenteen riville.</span><span class="sxs-lookup"><span data-stu-id="9d926-147">Select the Cabinet configuration group for the laste BOM line.</span></span>  
+## <a name="create-new-bom-and-bom-version"></a><span data-ttu-id="0b0ed-114">Luo uusi tuoterakenne ja tuoterakenneversio</span><span class="sxs-lookup"><span data-stu-id="0b0ed-114">Create new BOM and BOM version</span></span>
 
-## <a name="approve-and-activate"></a><span data-ttu-id="9d926-148">Hyväksy ja aktivoi</span><span class="sxs-lookup"><span data-stu-id="9d926-148">Approve and activate</span></span>
-1. <span data-ttu-id="9d926-149">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="9d926-149">Close the page.</span></span>
-2. <span data-ttu-id="9d926-150">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="9d926-150">Click Approve.</span></span>
-3. <span data-ttu-id="9d926-151">Anna tai valitse Hyväksyjä-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="9d926-151">In the Approved by field, enter or select a value.</span></span>
-4. <span data-ttu-id="9d926-152">Vastaa kyllä kysymykseen "Haluatko myös hyväksyä tuoterakenteen?" avulla.</span><span class="sxs-lookup"><span data-stu-id="9d926-152">Select Yes in the Do you also want to approve the bill of materials? field.</span></span>
-5. <span data-ttu-id="9d926-153">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="9d926-153">Click OK.</span></span>
-6. <span data-ttu-id="9d926-154">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="9d926-154">Click Activate.</span></span>
+1. <span data-ttu-id="0b0ed-115">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-115">Select **New**.</span></span>
+1. <span data-ttu-id="0b0ed-116">Valitse **Tuoterakenne ja tuoterakenneversio**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-116">Select **BOM and BOM version**.</span></span>
+1. <span data-ttu-id="0b0ed-117">Kirjoita arvo **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-117">In the **Name** field, type a value.</span></span>
+    * <span data-ttu-id="0b0ed-118">Toimipaikan määrittäminen</span><span class="sxs-lookup"><span data-stu-id="0b0ed-118">Setting a site</span></span>  
+    * <span data-ttu-id="0b0ed-119">Näissä toimintaohjeissa ei määritetä tuoterakenteelle tiettyä toimipaikkaa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-119">In this procedure we don't set a specific site for the BOM.</span></span>  
+1. <span data-ttu-id="0b0ed-120">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-120">Select **OK**.</span></span>
+1. <span data-ttu-id="0b0ed-121">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-121">Select **New**.</span></span>
+    * <span data-ttu-id="0b0ed-122">Näissä toimintaohjeissa lisätään neljä riviä tuoterakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-122">In this procedure we will add four lines to the BOM.</span></span> <span data-ttu-id="0b0ed-123">Kaksi riviä edustavat kaapelivaihtoehtoja ja toisen kaksi riviä kabinettivaihtoehtoja.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-123">Two lines represent cable options and two lines represent cabinet options.</span></span>  
+1. <span data-ttu-id="0b0ed-124">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-124">In the list, mark the selected row.</span></span>
+1. <span data-ttu-id="0b0ed-125">Syötä tai valitse arvo **Nimiketunnus**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-125">In the **Item number** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-126">Valitse nimiketunnus A0001, HDMI 6' kaapelit.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-126">Select item number A0001, HDMI 6' Cables.</span></span>  
+1. <span data-ttu-id="0b0ed-127">Anna tai valitse arvo **Konfiguraatioryhmä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-127">In the **Configuration group** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-128">Valitse kaapelin konfiguraatioryhmä, joka luotiin oppaan vaiheessa 4.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-128">Select the cable configuration group created in guide 4 in this sequence.</span></span>  
+1. <span data-ttu-id="0b0ed-129">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-129">Select **New**.</span></span>
+    * <span data-ttu-id="0b0ed-130">Valitse nimiketunnus A0002, HDMI 12' kaapelit.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-130">Select item number A0002, HDMI 12' Cables.</span></span>  
+1. <span data-ttu-id="0b0ed-131">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-131">In the list, mark the selected row.</span></span>
+1. <span data-ttu-id="0b0ed-132">Syötä tai valitse arvo **Nimiketunnus**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-132">In the **Item number** field, enter or select a value.</span></span>
+1. <span data-ttu-id="0b0ed-133">Anna tai valitse arvo **Konfiguraatioryhmä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-133">In the **Configuration group** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-134">Valitse kaapelin konfiguraatioryhmä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-134">Select the cable configuration group again.</span></span>  
+1. <span data-ttu-id="0b0ed-135">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-135">Select **New**.</span></span>
+1. <span data-ttu-id="0b0ed-136">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-136">In the list, mark the selected row.</span></span>
+1. <span data-ttu-id="0b0ed-137">Syötä tai valitse arvo **Nimiketunnus**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-137">In the **Item number** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-138">Valitse nimiketunnus D0002 Kabinetti.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-138">Select item number D0002 Cabinet.</span></span>  
+1. <span data-ttu-id="0b0ed-139">Anna tai valitse arvo **Konfiguraatioryhmä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-139">In the **Configuration group** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-140">Valitse kabinetin konfiguraatioryhmä tälle tuoterakenteen riville.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-140">Select the cabinet configuration group for this BOM line.</span></span>  
+1. <span data-ttu-id="0b0ed-141">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-141">Select **New**.</span></span>
+1. <span data-ttu-id="0b0ed-142">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-142">In the list, mark the selected row.</span></span>
+1. <span data-ttu-id="0b0ed-143">Syötä tai valitse arvo **Nimiketunnus**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-143">In the **Item number** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-144">Valitse nimiketunnus M0007 Vakiokabinetti viimeiseksi tuoterakenteen riviksi.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-144">Select Item number M0007 StandardCabinet as the last BOM line.</span></span>  
+1. <span data-ttu-id="0b0ed-145">Anna tai valitse arvo **Konfiguraatioryhmä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-145">In the **Configuration group** field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b0ed-146">Valitse kabinetin konfiguraatioryhmä viimeiselle tuoterakenteen riville.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-146">Select the Cabinet configuration group for the last BOM line.</span></span>  
+
+## <a name="approve-and-activate"></a><span data-ttu-id="0b0ed-147">Hyväksy ja aktivoi</span><span class="sxs-lookup"><span data-stu-id="0b0ed-147">Approve and activate</span></span>
+
+1. <span data-ttu-id="0b0ed-148">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-148">Close the page.</span></span>
+1. <span data-ttu-id="0b0ed-149">Valitse **Hyväksy**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-149">Select **Approve**.</span></span>
+1. <span data-ttu-id="0b0ed-150">Anna tai valitse **Hyväksyjä**-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-150">In the **Approved by** field, enter or select a value.</span></span>
+1. <span data-ttu-id="0b0ed-151">Vastaa *Kyllä* **Haluatko myös hyväksyä tuoterakenteen?** -kentässä.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-151">Select *Yes* in the **Do you also want to approve the bill of materials?** field.</span></span>
+1. <span data-ttu-id="0b0ed-152">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-152">Select **OK**.</span></span>
+1. <span data-ttu-id="0b0ed-153">Valitse **Aktivoi**.</span><span class="sxs-lookup"><span data-stu-id="0b0ed-153">Select **Activate**.</span></span>
 
 
 
