@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811304"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923022"
 ---
-# <a name="financial-reporting-faq"></a><span data-ttu-id="e5aa7-103">Taloushallinnon raportoinnin usein kysytyt kysymykset</span><span class="sxs-lookup"><span data-stu-id="e5aa7-103">Financial reporting FAQ</span></span> 
+# <a name="financial-reporting-faq"></a><span data-ttu-id="4b196-103">Taloushallinnon raportoinnin usein kysytyt kysymykset</span><span class="sxs-lookup"><span data-stu-id="4b196-103">Financial reporting FAQ</span></span> 
 
-<span data-ttu-id="e5aa7-104">Tässä ohjeaiheessa käsitellään kysymyksiä, joita muilla käyttäjillä on ollut taloushallinnon raportoinnista.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-104">This topic lists questions related to financial reporting that other users have had.</span></span> 
+<span data-ttu-id="4b196-104">Tämä ohjeaihe sisältää vastauksia usein kysyttyihin talousraportoinnin kysymyksiin.</span><span class="sxs-lookup"><span data-stu-id="4b196-104">This topic provides answers to frequently asked questions about financial reporting.</span></span> 
 
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="4b196-105">Miten rajoitan raportin käyttöoikeuksia puurakenteen suojauksen avulla?</span><span class="sxs-lookup"><span data-stu-id="4b196-105">How do I restrict access to a report using tree security?</span></span>
 
-## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="e5aa7-105">Miten rajoitan raportin käyttöoikeuksia puurakenteen suojauksen avulla?</span><span class="sxs-lookup"><span data-stu-id="e5aa7-105">How do I restrict access to a report using Tree security?</span></span>
+<span data-ttu-id="4b196-106">Seuraavassa esimerkissä kerrotaan, miten raportin käyttöoikeuksia rajoitetaan puurakenteen suojauksen avulla.</span><span class="sxs-lookup"><span data-stu-id="4b196-106">The following example shows how to restrict access to a report using tree security.</span></span>
 
-<span data-ttu-id="e5aa7-106">Skenaario: esittely-yrityksellä USMF on taseraportti, jota se ei halua kaikkien taloushallinnon raportoinnin käyttäjien voivan nähdä D365:ssä.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-106">Scenario: The USMF demo company has a Balance sheet report that it doesn’t want all Financial reporting users to be able to view in D365.</span></span> <span data-ttu-id="e5aa7-107">Ratkaisu: voit rajoittaa yksittäisen raportin käyttöoikeutta puurakenteen suojauksen avulla siten, että vain tietyt käyttäjät voivat käyttää raporttia.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-107">Solution: You can utilize Tree security to restrict access to a single report so that only certain users can access the report.</span></span> 
+<span data-ttu-id="4b196-107">USFM-esittely-yrityksellä on taseraportti, johon kaikilla taloushallinnon raportoinnin käyttäjillä ei pitäisi olla käyttöoikeuksia.</span><span class="sxs-lookup"><span data-stu-id="4b196-107">The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to.</span></span> <span data-ttu-id="4b196-108">Voit rajoittaa käyttöoikeutta puurakenteen suojauksen avulla siten, että vain tietyt käyttäjät voivat käyttää raporttia.</span><span class="sxs-lookup"><span data-stu-id="4b196-108">To restrict access, you can use tree security to restrict access to a single report so that only certain users can access the report.</span></span> <span data-ttu-id="4b196-109">Rajoita käyttöoikeuksia noudattamalla seuraavia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="4b196-109">Follow these steps to restrict access:</span></span> 
 
-1.  <span data-ttu-id="e5aa7-108">Kirjaudu raporttien suunnitteluohjelmaan</span><span class="sxs-lookup"><span data-stu-id="e5aa7-108">Log into Financial Reporter Report Designer</span></span>
+1. <span data-ttu-id="4b196-110">Kirjaudu Financial Reporter Report Designer.</span><span class="sxs-lookup"><span data-stu-id="4b196-110">Sign in to Financial Reporter Report Designer.</span></span>
+2. <span data-ttu-id="4b196-111">Luo uusi puumääritys.</span><span class="sxs-lookup"><span data-stu-id="4b196-111">Create a new tree definition.</span></span> <span data-ttu-id="4b196-112">Siirry kohtaan **Tiedosto > Uusi > Puumääritys**.</span><span class="sxs-lookup"><span data-stu-id="4b196-112">Go to **File > New > Tree Definition**.</span></span>
+3. <span data-ttu-id="4b196-113">Kaksoisnapsauta **Yhteenveto**-riviä **Yksikkösuojaus**-sarakkeessa.</span><span class="sxs-lookup"><span data-stu-id="4b196-113">Double-click the **Summary** line in the **Unit Security** column.</span></span>
+4. <span data-ttu-id="4b196-114">Valitse **Käyttäjät ja ryhmät**.</span><span class="sxs-lookup"><span data-stu-id="4b196-114">Select **Users and Groups**.</span></span>  
+5. <span data-ttu-id="4b196-115">Valitse käyttäjät tai ryhmät, joiden on voitava käyttää tätä raporttia.</span><span class="sxs-lookup"><span data-stu-id="4b196-115">Select the users or groups that need access to this report.</span></span> 
+6. <span data-ttu-id="4b196-116">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="4b196-116">Select **Save**.</span></span>
+7. <span data-ttu-id="4b196-117">Lisää uusi puumäärityksesi raportin määritykseen.</span><span class="sxs-lookup"><span data-stu-id="4b196-117">In the report definition, add your new tree definition.</span></span>
+8. <span data-ttu-id="4b196-118">Valitse puumäärityksessä **Asetus**.</span><span class="sxs-lookup"><span data-stu-id="4b196-118">In the tree definition, select **Setting**.</span></span> <span data-ttu-id="4b196-119">Valitse **Raportointiyksikön valinta** -kohdassa **Sisällytä kaikki yksiköt**.</span><span class="sxs-lookup"><span data-stu-id="4b196-119">Under **Reporting unit selection**, select **Include all units**.</span></span>
 
-2.  <span data-ttu-id="e5aa7-109">Luo uusi puumääritys (Tiedosto | Uusi | Puumääritys) a.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-109">Create a new Tree Definition (File | New | Tree Definition) a.</span></span>    <span data-ttu-id="e5aa7-110">Kaksoisnapsauta **Yhteenveto**-riviä **Yksikkösuojaus**-sarakkeessa.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-110">Double-click the **Summary** line in the **Unit Security** column.</span></span>
-  <span data-ttu-id="e5aa7-111">i.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-111">i.</span></span>    <span data-ttu-id="e5aa7-112">Valitse Käyttäjät ja ryhmät.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-112">Click Users and Groups.</span></span>  
-          <span data-ttu-id="e5aa7-113">1. Valitse käyttäjät tai ryhmä, joiden haluat voivat käyttää tätä raporttia.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-113">1.    Select the User(s) or Group that would like to access this report.</span></span> 
-          
-<span data-ttu-id="e5aa7-114">[![käyttäjänäyttö](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-114">[![user screen](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span></span>
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a><span data-ttu-id="4b196-120">Miten tunnistan tilit, jotka eivät täsmää saldojeni kanssa?</span><span class="sxs-lookup"><span data-stu-id="4b196-120">How do I identify which accounts do not match my balances?</span></span>
 
-<span data-ttu-id="e5aa7-115">[![suojausnäyttö](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-115">[![security screen](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span></span>
+<span data-ttu-id="4b196-121">Jos sinulla on raportti, jossa ei ole täsmääviä saldoja, voit kokeilla seuraavia toimia tilien ja niiden varianssien tunnistamiseksi.</span><span class="sxs-lookup"><span data-stu-id="4b196-121">If you have a report that doesn't have matching balances, here are some steps you can take to identify each of the accounts and variances.</span></span> 
 
-  <span data-ttu-id="e5aa7-116">b.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-116">b.</span></span>    <span data-ttu-id="e5aa7-117">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-117">Click **Save**.</span></span>
-  
-<span data-ttu-id="e5aa7-118">[![Tallenna-painike](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-118">[![save button](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span></span>
+<span data-ttu-id="4b196-122">**Financial Reporter Report Designer**</span><span class="sxs-lookup"><span data-stu-id="4b196-122">**Financial Reporter Report Designer**</span></span>
+1. <span data-ttu-id="4b196-123">Luo uusi rivimääritys kohteessa Financial Reporter Report Designer.</span><span class="sxs-lookup"><span data-stu-id="4b196-123">In Financial Reporter Report Designer, create a new row definition.</span></span> 
+2. <span data-ttu-id="4b196-124">Valitse **Muokkaa > Lisää rivit dimensioista**.</span><span class="sxs-lookup"><span data-stu-id="4b196-124">Select **Edit > Insert Rows from Dimensions**.</span></span>
+3. <span data-ttu-id="4b196-125">Valitse **Päätili**.</span><span class="sxs-lookup"><span data-stu-id="4b196-125">Select **MainAccount**.</span></span>  
+4. <span data-ttu-id="4b196-126">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="4b196-126">Select **OK**.</span></span>
+5. <span data-ttu-id="4b196-127">Tallenna rivimääritys.</span><span class="sxs-lookup"><span data-stu-id="4b196-127">Save the row definition.</span></span>
+6. <span data-ttu-id="4b196-128">Luo uusi sarakemääritys.</span><span class="sxs-lookup"><span data-stu-id="4b196-128">Create a new column definition</span></span>
+7. <span data-ttu-id="4b196-129">Luo uusi raportin määritys.</span><span class="sxs-lookup"><span data-stu-id="4b196-129">Create a new report definition.</span></span>
+8. <span data-ttu-id="4b196-130">Valitse **Asetukset** ja poista tämän vaihtoehdon valinta.</span><span class="sxs-lookup"><span data-stu-id="4b196-130">Select **Settings** and unmark this option.</span></span>  
+9. <span data-ttu-id="4b196-131">Luo raportti.</span><span class="sxs-lookup"><span data-stu-id="4b196-131">Generate the report.</span></span> 
+10. <span data-ttu-id="4b196-132">Vie raportti Microsoft Exceliin.</span><span class="sxs-lookup"><span data-stu-id="4b196-132">Export the report to Microsoft Excel.</span></span>
 
-3.  <span data-ttu-id="e5aa7-119">Lisää uusi puumäärityksesi raportin määritykseen</span><span class="sxs-lookup"><span data-stu-id="e5aa7-119">In your Report Definition add your new Tree Definition</span></span>
+<span data-ttu-id="4b196-133">**Dynamics 365 Finance**</span><span class="sxs-lookup"><span data-stu-id="4b196-133">**Dynamics 365 Finance**</span></span> 
+1. <span data-ttu-id="4b196-134">Valitse Dynamics 365 Financessa **Pääkirja > Kyselyt ja raportit > Pääkirja**.</span><span class="sxs-lookup"><span data-stu-id="4b196-134">In Dynamics 365 Finance, go to **General Ledger > Inquiries and Reports > Trial Balance**.</span></span>
+2. <span data-ttu-id="4b196-135">Määritä seuraavat parametrit:</span><span class="sxs-lookup"><span data-stu-id="4b196-135">Set the following parameters:</span></span>
+   - <span data-ttu-id="4b196-136">**Aloituspäivä** - syötä tilikauden alku.</span><span class="sxs-lookup"><span data-stu-id="4b196-136">**From Date** - Enter the start of the fiscal year.</span></span>
+   - <span data-ttu-id="4b196-137">**Aloituspäivä** - syötä päivämäärä, jolle raportti luodaan.</span><span class="sxs-lookup"><span data-stu-id="4b196-137">**To Date** - Enter the date you are generating the report for.</span></span>
+   - <span data-ttu-id="4b196-138">**Taloushallinnon dimensio** - aseta tämän kentän arvoksi **Asetettu päätili**.</span><span class="sxs-lookup"><span data-stu-id="4b196-138">**Financial Dimension** - Set this field to **Main Account set**.</span></span>
+ 3. <span data-ttu-id="4b196-139">Valitse **Laske**.</span><span class="sxs-lookup"><span data-stu-id="4b196-139">Select **Calculate**.</span></span>
+ 4. <span data-ttu-id="4b196-140">Vie raportti Microsoft Exceliin.</span><span class="sxs-lookup"><span data-stu-id="4b196-140">Export the report to Microsoft Excel.</span></span>
 
-<span data-ttu-id="e5aa7-120">[![puumäärityslomake](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-120">[![tree definition form](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span></span>
-
-<span data-ttu-id="e5aa7-121">A.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-121">A.</span></span>  <span data-ttu-id="e5aa7-122">Valitse puumäärityksessä Asetus ja valitse Raporttiyksikön valinta -kohdassa Sisällytä kaikki yksiköt</span><span class="sxs-lookup"><span data-stu-id="e5aa7-122">While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”</span></span>
-
-<span data-ttu-id="e5aa7-123">[![raporttiyksikön valintalomake](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-123">[![reporting unit selection form](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span></span>
-
-<span data-ttu-id="e5aa7-124">**Ennen:** [![ennen-näyttökuva](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-124">**Before:** [![before screenshot](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span></span>
-
-<span data-ttu-id="e5aa7-125">**Jälkeen:** [![jälkeen-näyttökuva](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-125">**After:** [![after screenshot](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span></span>
-
-<span data-ttu-id="e5aa7-126">Huomautus: edellä kuvatun sanoman syy on se, että käyttäjällä ei ole raportin käyttöoikeutta yksikön suojauksen käyttöönoton jälkeen</span><span class="sxs-lookup"><span data-stu-id="e5aa7-126">Note: Reason for the above message is my user does not have access to that report after applying Unit Security</span></span>
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a><span data-ttu-id="e5aa7-127">Miten selvitän, mitkä tilit eivät täsmää saldojeni kanssa D365:ssä?</span><span class="sxs-lookup"><span data-stu-id="e5aa7-127">How do I determine which account(s) do not matching my balances in D365?</span></span>
-
-<span data-ttu-id="e5aa7-128">Jos sinulla on D365:ssä raportti, joka ei vastaa odotuksiasi, voit kokeilla seuraavia toimia täsmäämättömien tilien ja niiden varianssien tunnistamiseksi.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-128">When you have a report that doesn't match what you would expect in D365, here are some steps you could take to identify those accounts and the variances.</span></span> 
-
-### <a name="in-financial-reporter-report-designer"></a><span data-ttu-id="e5aa7-129">Raporttien suunnitteluohjelmassa</span><span class="sxs-lookup"><span data-stu-id="e5aa7-129">In Financial Reporter Report Designer</span></span>
-
-1.  <span data-ttu-id="e5aa7-130">Luo uusi rivimääritys a.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-130">Create a new Row Definition a.</span></span>    <span data-ttu-id="e5aa7-131">Valitse Muokkaa | Lisää rivit dimensioista i.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-131">Click Edit | Insert Rows from Dimensions i.</span></span>  <span data-ttu-id="e5aa7-132">Valitse MainAccount [![Valitse päätili ‑näyttö_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-132">Select MainAccount [![Select Main screen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span></span>
-    
-    <span data-ttu-id="e5aa7-133">ii.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-133">ii.</span></span> <span data-ttu-id="e5aa7-134">Valitse Ok b.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-134">Click Ok b.</span></span>    <span data-ttu-id="e5aa7-135">Tallenna rivimääritys</span><span class="sxs-lookup"><span data-stu-id="e5aa7-135">Save the Row Definition</span></span>
-
-2.  <span data-ttu-id="e5aa7-136">Luo uusi sarakemääritys     [![Luo uusi sarakemääritys](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-136">Create a new Column Definition     [![Create a new column definition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span></span>
-
-3.  <span data-ttu-id="e5aa7-137">Luo uusi raportin määritys a.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-137">Create a new Report Definition a.</span></span>    <span data-ttu-id="e5aa7-138">Valitse Asetukset ja poista [![Asetukset-lomakkeen](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png) valinta</span><span class="sxs-lookup"><span data-stu-id="e5aa7-138">Click Settings and uncheck [![Settings form](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)</span></span>
-   
-4.  <span data-ttu-id="e5aa7-139">Luo raportti.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-139">Generate the Report.</span></span> 
-
-5.  <span data-ttu-id="e5aa7-140">Vie raportti Exceliin.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-140">Export the Report to Excel.</span></span>
-
-### <a name="in-d365"></a><span data-ttu-id="e5aa7-141">D365:ssä:</span><span class="sxs-lookup"><span data-stu-id="e5aa7-141">In D365:</span></span> 
-1.  <span data-ttu-id="e5aa7-142">Valitse Kirjanpito | Kyselyt ja raportit | Pääkirja a.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-142">Click General Ledger | Inquiries and Reports | Trial Balance a.</span></span>    <span data-ttu-id="e5aa7-143">Parametrit i.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-143">Parameters i.</span></span>  <span data-ttu-id="e5aa7-144">Aloituspäivä: tilikauden alku ii.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-144">From Date: Start of Fiscal Year ii.</span></span> <span data-ttu-id="e5aa7-145">Päivämäärään: päivämäärä, jolle olet luonut raportin iii.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-145">To Date: Date you generated the report for iii.</span></span>    <span data-ttu-id="e5aa7-146">Taloushallinnon dimensioyhdistelmä ”Asetettu päätili” [![Päätili-lomake](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span><span class="sxs-lookup"><span data-stu-id="e5aa7-146">Financial Dimension Set “Main Account set” [![Main Account Form](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span></span>
-      
-  <span data-ttu-id="e5aa7-147">b.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-147">b.</span></span>    <span data-ttu-id="e5aa7-148">Valitse Laske</span><span class="sxs-lookup"><span data-stu-id="e5aa7-148">Click Calculate</span></span>
-
-2.  <span data-ttu-id="e5aa7-149">Vie raportti Exceliin</span><span class="sxs-lookup"><span data-stu-id="e5aa7-149">Export the report to Excel</span></span>
-
-<span data-ttu-id="e5aa7-150">Nyt sinun pitäisi nyt pystyä kopioimaan tiedot FR Excel -raportista D365:n Pääkirja-raporttiin ja vertaamaan Loppusaldo-sarakkeita.</span><span class="sxs-lookup"><span data-stu-id="e5aa7-150">You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns.</span></span>
-
+<span data-ttu-id="4b196-141">Nyt sinun pitäisi nyt pystyä kopioimaan tiedot Raporttien suunnitteluohjelman Excel-raportista Pääkirja-raporttiin, jotta voit verrata **Loppusaldo**-sarakkeita.</span><span class="sxs-lookup"><span data-stu-id="4b196-141">You should now be able to copy the data from the Financial Reporter Excel report to the Trial Balance report, so you can compare the **Closing Balance** columns.</span></span>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

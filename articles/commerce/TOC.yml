@@ -94,12 +94,12 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.19 (heinäkuu 2021)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (toukokuu 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (huhtikuu 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Commerce 10.0.16 (helmikuu 2021)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -184,6 +184,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: Upotetut kolmannen osapuolen sovellukset
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
                 - name: Tietojen etsiminen hakujen avulla
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Istunnon päivämäärän muuttaminen
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Stationin määrittäminen ja asentaminen
                   href: retail-hardware-station-configuration-installation.md
+                - name: Sinetöityjen Commerce-itsepalvelukomponenttien joukkokäyttöönotto
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Vanhojen itsepalvelukomponenttien joukkokäyttöönotto
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-komponenttien diagnostiikka- ja vianmääritystapahtumat
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: 'Mukautetun Modern POS:n laiteaktivointi'
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Azure Active Directory -todennuksen ottaminen käyttöön myyntipistekirjautumisessa
+                    - name: Azure Active Directory -todennuksen määrittäminen myyntipistekirjautumisessa
                       href: aad-pos-logon.md
                     - name: Tuote- ja asiakashaku myyntipisteessä
                       href: POS-search-improvements.md
@@ -634,6 +638,8 @@
                   href: tender_based_discounts.md
                 - name: Lähetyskulujen alennusten yleiskatsaus
                   href: retail-shipping-discount.md
+                - name: Lahjan määrittäminen ostokampanjoiden avulla
+                  href: gift-with-purchase.md
                 - name: Kuponkien määrittäminen
                   href: retail-coupons.md
                 - name: Alennusten näyttäminen myyntipisteessä
@@ -760,6 +766,8 @@
                   href: notifications-pos.md
                 - name: Jatkuvuusohjelmien myyminen ja myyntitilausten käsitteleminen
                   href: tasks/use-continuity-program.md
+                - name: Ota käyttöön asiakkaan sisäänkuittausten ilmoitukset myyntipisteissä
+                  href: enable-customer-check-in.md
             - name: Palautukset
               items:
                 - name: Linkitetyt palautukset
@@ -922,6 +930,8 @@
                   href: manage-csp.md
                 - name: Verkkotehtävätapahtumien keräämisestä kieltäytyminen
                   href: web-activity-opt-out.md
+                - name: Käytä mittayksikön asetuksia
+                  href: unit-of-measure.md
             - name: Sivuston sisällön hallinta
               items:
                 - name: Tapoja lisästä sisältöä
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: Noudon tiedot -moduuli
                       href: pickup-info-module.md
+                    - name: Noudon sisäänkuittaus -moduuli
+                      href: check-in-pickup-module.md
                     - name: Tilauksen tiedot -moduuli
                       href: order-confirmation-module.md
                     - name: Lahjakorttimoduuli
@@ -1194,6 +1206,8 @@
               href: store-performance-information.md
             - name: 'RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen'
               href: set-up-rfm-analysis.md
+            - name: Microsoft Clarityn määrittäminen Dynamics 365 Commercessa
+              href: set-up-clarity.md
         - name: Maailmanlaajuinen toiminta
           items:
             - name: Commerce-kanavan kirjanpidon integroinnin yleiskatsaus
@@ -1202,6 +1216,14 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Regulatory configuration service -yleiskatsaus
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory configuration service – globalisointiominaisuudet
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory configuration service -palvelussa ja niiden lataaminen yleiseen säilöön
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Itävalta
               items:
                 - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Moduulin props.autogenerated.ts-tiedosto
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Moduulin määrityksen esimääritykset
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Moduulien kehittäminen
                   items:
                     - name: Uuden moduulin luominen
@@ -2416,6 +2440,18 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: Mukautettujen painikkeiden lisääminen myyntipisteen otsikkopalkkiin
                   href: dev-itpro/pos-header-bar.md
+                - name: Myyntipisteestä riippumaton pakkaus-SDK
+                  items:
+                    - name: Myyntipisteen tunnisteen yleiskuvaus
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Myyntipisteen laajennuksen käytön aloittaminen
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Myyntipisteen laajennuspaketin projektin luominen
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Modernin myyntipisteen laajennuksen appx-tiedoston luominen
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Myyntipisteen laajennuksen virheenkorjaus
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Hardware Stationin laajennettavuus
               items:
                 - name: Hardware Station ja laajennettavuus
