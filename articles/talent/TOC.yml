@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: talent-welcome.md
+  href: ./index.md
   items:
     - name: Aloittaminen
       items:
@@ -151,7 +151,7 @@
         - name: Tietojen vieminen Attractista ja Onboardista
           href: attract-onboard-export-data.md
         - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Talent-tuen hankkiminen
           href: talent-support.md
     - name: Henkilöstön palkkaaminen organisaatioon Attractin avulla

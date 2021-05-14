@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811304"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923022"
 ---
 # <a name="financial-reporting-faq"></a>Taloushallinnon raportoinnin usein kysytyt kysymykset 
 
-Tässä ohjeaiheessa käsitellään kysymyksiä, joita muilla käyttäjillä on ollut taloushallinnon raportoinnista. 
-
+Tämä ohjeaihe sisältää vastauksia usein kysyttyihin talousraportoinnin kysymyksiin. 
 
 ## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Miten rajoitan raportin käyttöoikeuksia puurakenteen suojauksen avulla?
 
-Skenaario: esittely-yrityksellä USMF on taseraportti, jota se ei halua kaikkien taloushallinnon raportoinnin käyttäjien voivan nähdä D365:ssä. Ratkaisu: voit rajoittaa yksittäisen raportin käyttöoikeutta puurakenteen suojauksen avulla siten, että vain tietyt käyttäjät voivat käyttää raporttia. 
+Seuraavassa esimerkissä kerrotaan, miten raportin käyttöoikeuksia rajoitetaan puurakenteen suojauksen avulla.
 
-1.  Kirjaudu raporttien suunnitteluohjelmaan
+USFM-esittely-yrityksellä on taseraportti, johon kaikilla taloushallinnon raportoinnin käyttäjillä ei pitäisi olla käyttöoikeuksia. Voit rajoittaa käyttöoikeutta puurakenteen suojauksen avulla siten, että vain tietyt käyttäjät voivat käyttää raporttia. Rajoita käyttöoikeuksia noudattamalla seuraavia ohjeita: 
 
-2.  Luo uusi puumääritys (Tiedosto | Uusi | Puumääritys) a.    Kaksoisnapsauta **Yhteenveto**-riviä **Yksikkösuojaus**-sarakkeessa.
-  i.    Valitse Käyttäjät ja ryhmät.  
-          1. Valitse käyttäjät tai ryhmä, joiden haluat voivat käyttää tätä raporttia. 
-          
-[![käyttäjänäyttö](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+1. Kirjaudu Financial Reporter Report Designer.
+2. Luo uusi puumääritys. Siirry kohtaan **Tiedosto > Uusi > Puumääritys**.
+3. Kaksoisnapsauta **Yhteenveto**-riviä **Yksikkösuojaus**-sarakkeessa.
+4. Valitse **Käyttäjät ja ryhmät**.  
+5. Valitse käyttäjät tai ryhmät, joiden on voitava käyttää tätä raporttia. 
+6. Valitse **Tallenna**.
+7. Lisää uusi puumäärityksesi raportin määritykseen.
+8. Valitse puumäärityksessä **Asetus**. Valitse **Raportointiyksikön valinta** -kohdassa **Sisällytä kaikki yksiköt**.
 
-[![suojausnäyttö](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a>Miten tunnistan tilit, jotka eivät täsmää saldojeni kanssa?
 
-  b.    Valitse **Tallenna**.
-  
-[![Tallenna-painike](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+Jos sinulla on raportti, jossa ei ole täsmääviä saldoja, voit kokeilla seuraavia toimia tilien ja niiden varianssien tunnistamiseksi. 
 
-3.  Lisää uusi puumäärityksesi raportin määritykseen
+**Financial Reporter Report Designer**
+1. Luo uusi rivimääritys kohteessa Financial Reporter Report Designer. 
+2. Valitse **Muokkaa > Lisää rivit dimensioista**.
+3. Valitse **Päätili**.  
+4. Valitse **OK**.
+5. Tallenna rivimääritys.
+6. Luo uusi sarakemääritys.
+7. Luo uusi raportin määritys.
+8. Valitse **Asetukset** ja poista tämän vaihtoehdon valinta.  
+9. Luo raportti. 
+10. Vie raportti Microsoft Exceliin.
 
-[![puumäärityslomake](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
+**Dynamics 365 Finance** 
+1. Valitse Dynamics 365 Financessa **Pääkirja > Kyselyt ja raportit > Pääkirja**.
+2. Määritä seuraavat parametrit:
+   - **Aloituspäivä** - syötä tilikauden alku.
+   - **Aloituspäivä** - syötä päivämäärä, jolle raportti luodaan.
+   - **Taloushallinnon dimensio** - aseta tämän kentän arvoksi **Asetettu päätili**.
+ 3. Valitse **Laske**.
+ 4. Vie raportti Microsoft Exceliin.
 
-A.  Valitse puumäärityksessä Asetus ja valitse Raporttiyksikön valinta -kohdassa Sisällytä kaikki yksiköt
-
-[![raporttiyksikön valintalomake](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
-
-**Ennen:** [![ennen-näyttökuva](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
-
-**Jälkeen:** [![jälkeen-näyttökuva](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
-
-Huomautus: edellä kuvatun sanoman syy on se, että käyttäjällä ei ole raportin käyttöoikeutta yksikön suojauksen käyttöönoton jälkeen
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Miten selvitän, mitkä tilit eivät täsmää saldojeni kanssa D365:ssä?
-
-Jos sinulla on D365:ssä raportti, joka ei vastaa odotuksiasi, voit kokeilla seuraavia toimia täsmäämättömien tilien ja niiden varianssien tunnistamiseksi. 
-
-### <a name="in-financial-reporter-report-designer"></a>Raporttien suunnitteluohjelmassa
-
-1.  Luo uusi rivimääritys a.    Valitse Muokkaa | Lisää rivit dimensioista i.  Valitse MainAccount [![Valitse päätili ‑näyttö_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
-    
-    ii. Valitse Ok b.    Tallenna rivimääritys
-
-2.  Luo uusi sarakemääritys     [![Luo uusi sarakemääritys](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
-
-3.  Luo uusi raportin määritys a.    Valitse Asetukset ja poista [![Asetukset-lomakkeen](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png) valinta
-   
-4.  Luo raportti. 
-
-5.  Vie raportti Exceliin.
-
-### <a name="in-d365"></a>D365:ssä: 
-1.  Valitse Kirjanpito | Kyselyt ja raportit | Pääkirja a.    Parametrit i.  Aloituspäivä: tilikauden alku ii. Päivämäärään: päivämäärä, jolle olet luonut raportin iii.    Taloushallinnon dimensioyhdistelmä ”Asetettu päätili” [![Päätili-lomake](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
-      
-  b.    Valitse Laske
-
-2.  Vie raportti Exceliin
-
-Nyt sinun pitäisi nyt pystyä kopioimaan tiedot FR Excel -raportista D365:n Pääkirja-raporttiin ja vertaamaan Loppusaldo-sarakkeita.
-
+Nyt sinun pitäisi nyt pystyä kopioimaan tiedot Raporttien suunnitteluohjelman Excel-raportista Pääkirja-raporttiin, jotta voit verrata **Loppusaldo**-sarakkeita.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

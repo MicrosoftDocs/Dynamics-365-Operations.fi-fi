@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95989a395781e790da6aedc9079c3aaebf98f9ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748462"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920854"
 ---
 # <a name="globalization-resources"></a>Maailmanlaajuisen käytön resurssit
 
 ## <a name="local-and-regional-deployments"></a>Paikalliset ja alueelliset käyttöönotot
-Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yritykselle tärkeitä tietoja:
+Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yrityksellesi tärkeitä tietoja:
 
-[21Vianet vastaa Finance and Operations -sovelluksista Kiinassa](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
@@ -60,7 +60,7 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 -   [Hälytyksien lähettäminen maa- tai aluekohtaisista säädöstenmukaisista ominaisuuksista](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365:n julkaisusuunnitelmat
-[Dynamics 365:n julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
+[Dynamics 365:n julkaisusuunnitelmissa](/business-applications-release-notes/) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations -sovellusten uudet ominaisuudet
 [Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on luettelo ominaisuuksista, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
