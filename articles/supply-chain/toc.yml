@@ -361,13 +361,11 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Resurssinäkymä
                   href: asset-management/objects/object-view.md
-                - name: Resurssin määritteen yleiskuvaus
+                - name: Resurssin määritteen yleiskatsaus
                   href: asset-management/objects/object-specification-overview.md
             - name: Ylläpitopyyntöjen määrittäminen
               items:
-                - name: Ylläpitopyynnöt
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Ylläpitopyynnön elinkaaritilat
+                - name: Ylläpitopyynnön elinkaaren tilat
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Ylläpitopyyntötyypit
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -411,7 +409,7 @@
                   href: asset-management/work-orders/manually-created-workorders.md
                 - name: Ylläpitoennusteet
                   href: asset-management/work-orders/maintenance-forecasts.md
-                - name: Osto ja hankinta
+                - name: Hankinta
                   href: asset-management/work-orders/procurement.md
                 - name: Resurssilaskureiden manuaalinen päivitys
                   href: asset-management/work-orders/manual-update-of-asset-counters.md
@@ -3343,8 +3341,94 @@
               href: inventory/extend-on-hand-entities.md
         - name: Vianmääritys
           items:
+            - name: Kustannusten hallinta
+              items:
+                - name: 'Kentän asetukset puuttuvat, kun kopioidaan nimikemalliryhmiä toiseen yritykseen'
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: Keskeneräiset epäsuorat kustannukset -raportti sisältää poistetut tuotantotilaukset
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: 'Ostojen jaksotus, joka on kirjattu nollasummalla nolla-arvoisen tuotteen vastaanotolle'
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: Fyysisesti vastaanotetut ostotilaukset eivät näy varaston sulkemisraportissa
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Nimikkeen hinta -sivun Aktiiviset hinnat -välilehdessä ei ole Alkamispäivä-kohtaa
+                  href: troubleshooting/costing/there-is-no-from-dat.md
             - name: Varastonhallinta
               items:
+                - name: 'Useat varastotapahtumat eränumeroille, joilla ei ole Fyysisen päivityksen yhteydessä -kohtaa valittuna'
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: Valmiiksi ilmoittamisen peruuttaminen luo odottamattoman avoimen tapahtuman
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: Kirjauskansioon liitettyjä uusia huomautuksia ei voi näyttää keräysluetteloraportissa
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: 'Aloitetun karanteenitilauksen määrää ei päivitetä, kun tilaus jaetaan'
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: 'Viimeinen testauspäivämäärä -kenttää ei päivitetä, kun luodaan useita laatutilauksia'
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: 'Kun todellisen painon määrää jaetaan, käytetään nimellismäärän sijaan vähimmäisarvoa'
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Pääsuunnittelu
+              items:
+                - name: Sisäisen tarkistuksen työnkulku käsittelee suoraan johdetut kiinteät tilaukset
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Pääsuunnittelu luo suunniteltuja tilauksia haamutuotteita varten
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: 'Suunniteltu ostotilaus, joka luodaan, kun järjestelmässä on osto, jolla on negatiivinen päivien määrä'
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Kysynnän ennusteen syötön kustannushinnan lataaminen ei onnistu
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Varaston kysynnän ennustedimensiota ei voi poistaa ennusteriveiltä
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Hankinta
+              items:
+                - name: VEL-yrityksessä ei voi laskuttaa asiakkaalla olevaa myyntitilausta
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Ostoehdotukseen ei voi lisätä riviä muutoksen pyytämisen jälkeen
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Tuotetietojen hallinta
+              items:
+                - name: Vapautetun tuotteen luomisessa ei voi käyttää mallia
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Nimikettä ei voi tuoda käyttämällä vapautettujen tuotteiden V2-yksikköä
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: Käännetty tuoteteksti ei näy ostotilauksissa
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Tuotannonhallinta
+              items:
+                - name: Tuoterakennerivien materiaaliottosääntöjen asetuksia ei noudateta
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: 'Eränumero tyhjennetään, kun uusi erätunnus valitaan'
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: 'Myöhäistä valintaa ei noudateta, kun tuotantotilauksia palautetaan erätyön avulla'
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: 'Käyttäjät voivat peruuttaa niiden tuotteiden materiaalirivien valinnan, jotka on ilmoitettu valmiiksi'
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Virhe kirjattaessa Ilmoita valmiiksi -kirjauskansio
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Keräysluettelon kirjauskansion varastoa ei päivitetä tuoterakennerivillä
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Ostohyvitysten hallinta
+              items:
+                - name: Asiakkaan ostohyvitysten kumulointi nimikkeen ostohyvitysryhmien avulla epäonnistuu
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Myynti ja markkinointi
+              items:
+                - name: 'Järjestelmänvalvojat eivät voi poistaa tilausten pitoa, koska heillä ei ole poisto-oikeutta'
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Kuljetustenhallinta
+              items:
+                - name: Voi lisätä vain päätilin kredit-tiliksi täsmäyttämiseen liittyvien syiden vuoksi
+                  href: troubleshooting/transportation/reconciliation-reaso.md
+            - name: Varastonhallinta
+              items:
+                - name: Virhe valittaessa sijaintia keräysluettelon rekisteröinnin aikana
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: Pakkausasema ei näytä tuotteen huomautuksia
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'Varastopaikan profiili ei hyväksy negatiivista varastoa, mutta negatiivinen varastosaldo on sallittu'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Usean työn otsikoille tulostetaan vain yksi etiketti yhdessä kuitissa
+                  href: troubleshooting/warehousing/when-receipting-prod.md
                 - name: Lähetystä ei voi vahvistaa kalenterin ongelman vuoksi
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Lähetystä ei voi vahvistaa keskeneräisten tai puuttuvan työn vuoksi
