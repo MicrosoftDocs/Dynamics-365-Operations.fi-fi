@@ -2,7 +2,6 @@
 title: Luo ja arvostele palkanlaskennan yksiköitä
 description: Tässä aiheessa kuvataan, kuinka palkanlaskentayksiköitä luodaan ja tarkistetaan.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod: ''
@@ -15,24 +14,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6e043498d4e36e38575a16c6475a5edfef51fc6
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881975"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021317"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="27a4c-103">Luo palkanlaskennan yksiköitä</span><span class="sxs-lookup"><span data-stu-id="27a4c-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="3c922-103">Luo palkanlaskennan yksiköitä</span><span class="sxs-lookup"><span data-stu-id="3c922-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="27a4c-104">Tämän OData-toiminnon avulla voit luoda palkanlaskennan integroinnissa tarvittavia yksiköitä.</span><span class="sxs-lookup"><span data-stu-id="27a4c-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="27a4c-105">Jos näihin henkilöstöhallinnon yksiköihin tehdään muutoksia, kuten mukautettujen kenttien lisäämistä, tämän toiminnon voi kutsua uudelleen kunkin yksikön metatietojen päivittämiseksi.</span><span class="sxs-lookup"><span data-stu-id="27a4c-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="27a4c-106">Vastaus sisältää toimintotunnuksen, jota voidaan valvoa, jotta tiedät, milloin luontiprosessi on valmis.</span><span class="sxs-lookup"><span data-stu-id="27a4c-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="3c922-104">Tämän OData-toiminnon avulla voit luoda palkanlaskennan integroinnissa tarvittavia yksiköitä.</span><span class="sxs-lookup"><span data-stu-id="3c922-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="3c922-105">Jos näihin henkilöstöhallinnon yksiköihin tehdään muutoksia, kuten mukautettujen kenttien lisäämistä, tämän toiminnon voi kutsua uudelleen kunkin yksikön metatietojen päivittämiseksi.</span><span class="sxs-lookup"><span data-stu-id="3c922-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="3c922-106">Vastaus sisältää toimintotunnuksen, jota voidaan valvoa, jotta tiedät, milloin luontiprosessi on valmis.</span><span class="sxs-lookup"><span data-stu-id="3c922-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="27a4c-107">**Pyyntö**</span><span class="sxs-lookup"><span data-stu-id="27a4c-107">**Request**</span></span>
+<span data-ttu-id="3c922-107">**Pyyntö**</span><span class="sxs-lookup"><span data-stu-id="3c922-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="27a4c-108">**tekstiosa**</span><span class="sxs-lookup"><span data-stu-id="27a4c-108">**body**</span></span>
+<span data-ttu-id="3c922-108">**tekstiosa**</span><span class="sxs-lookup"><span data-stu-id="3c922-108">**body**</span></span>
 
 ```json
 {
@@ -40,7 +39,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="27a4c-109">**Vastaus**</span><span class="sxs-lookup"><span data-stu-id="27a4c-109">**Response**</span></span>
+<span data-ttu-id="3c922-109">**Vastaus**</span><span class="sxs-lookup"><span data-stu-id="3c922-109">**Response**</span></span>
 
 ```json
 {
@@ -48,17 +47,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="27a4c-110">Tarkastele palkanlaskentayksiköitä</span><span class="sxs-lookup"><span data-stu-id="27a4c-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="3c922-110">Tarkastele palkanlaskentayksiköitä</span><span class="sxs-lookup"><span data-stu-id="3c922-110">Review payroll entities</span></span>
 
-<span data-ttu-id="27a4c-111">Tämän ohjelmointirajapinnan avulla voit hakea luettelon yksiköistä, jotka on luotu onnistuneesti ja jotka ovat valmiita käytettäväksi.</span><span class="sxs-lookup"><span data-stu-id="27a4c-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="3c922-111">Tämän ohjelmointirajapinnan avulla voit hakea luettelon yksiköistä, jotka on luotu onnistuneesti ja jotka ovat valmiita käytettäväksi.</span><span class="sxs-lookup"><span data-stu-id="3c922-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="27a4c-112">**Pyyntö**</span><span class="sxs-lookup"><span data-stu-id="27a4c-112">**Request**</span></span>
+<span data-ttu-id="3c922-112">**Pyyntö**</span><span class="sxs-lookup"><span data-stu-id="3c922-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="27a4c-113">**Vastaus**</span><span class="sxs-lookup"><span data-stu-id="27a4c-113">**Response**</span></span>
+<span data-ttu-id="3c922-113">**Vastaus**</span><span class="sxs-lookup"><span data-stu-id="3c922-113">**Response**</span></span>
 
 ```json
 {

@@ -15,43 +15,43 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9ec43ad0a7d121eb247d81d4b506556a0fa2214
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db0e8efec1a5a6f01c9b7c4d9334a959fc42886b
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794898"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027984"
 ---
-# <a name="client-disconnects"></a><span data-ttu-id="37cfa-103">Asiakasohjelma katkaisee yhteyden</span><span class="sxs-lookup"><span data-stu-id="37cfa-103">Client disconnects</span></span>
+# <a name="client-disconnects"></a><span data-ttu-id="96ae0-103">Asiakasohjelma katkaisee yhteyden</span><span class="sxs-lookup"><span data-stu-id="96ae0-103">Client disconnects</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="37cfa-104">**Ympäristön tiedot**</span><span class="sxs-lookup"><span data-stu-id="37cfa-104">**Environment details**</span></span> 
+<span data-ttu-id="96ae0-104">**Ympäristön tiedot**</span><span class="sxs-lookup"><span data-stu-id="96ae0-104">**Environment details**</span></span> 
 
-<span data-ttu-id="37cfa-105">Tämä ongelma voi esiintyä kaikissa ympäristöissä.</span><span class="sxs-lookup"><span data-stu-id="37cfa-105">This issue can occur in all environments.</span></span>
+<span data-ttu-id="96ae0-105">Tämä ongelma voi esiintyä kaikissa ympäristöissä.</span><span class="sxs-lookup"><span data-stu-id="96ae0-105">This issue can occur in all environments.</span></span>
  
-<span data-ttu-id="37cfa-106">**Oire**</span><span class="sxs-lookup"><span data-stu-id="37cfa-106">**Symptom**</span></span> 
+<span data-ttu-id="96ae0-106">**Oire**</span><span class="sxs-lookup"><span data-stu-id="96ae0-106">**Symptom**</span></span> 
 
-<span data-ttu-id="37cfa-107">Asiakkaan yhteys ympäristöön katkeaa tuntemattomasta syystä.</span><span class="sxs-lookup"><span data-stu-id="37cfa-107">The customer is disconnected from his or her environment and doesn't know why.</span></span> <span data-ttu-id="37cfa-108">Asiakas saa jonkin seuraavista virhesanomista:</span><span class="sxs-lookup"><span data-stu-id="37cfa-108">The customer receives one of the following error messages:</span></span>
+<span data-ttu-id="96ae0-107">Asiakkaan yhteys ympäristöön katkeaa tuntemattomasta syystä.</span><span class="sxs-lookup"><span data-stu-id="96ae0-107">The customer is disconnected from the environment and doesn't know why.</span></span> <span data-ttu-id="96ae0-108">Asiakas saa jonkin seuraavista virhesanomista:</span><span class="sxs-lookup"><span data-stu-id="96ae0-108">The customer receives one of the following error messages:</span></span>
 
-- <span data-ttu-id="37cfa-109">Yhteys on katkennut.</span><span class="sxs-lookup"><span data-stu-id="37cfa-109">We've lost your connection.</span></span> <span data-ttu-id="37cfa-110">Jatka työskentelyä valitsemalla Sulje.</span><span class="sxs-lookup"><span data-stu-id="37cfa-110">Click Close to continue working.</span></span>
-- <span data-ttu-id="37cfa-111">Vaikuttaa siltä, että verkkoyhteys katkesi. Yritä uudelleen napsauttamalla Yritä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="37cfa-111">It appears you lost network connectivity, click Retry to try again.</span></span>
+- <span data-ttu-id="96ae0-109">Yhteys on katkennut.</span><span class="sxs-lookup"><span data-stu-id="96ae0-109">We've lost your connection.</span></span> <span data-ttu-id="96ae0-110">Jatka työskentelyä valitsemalla Sulje.</span><span class="sxs-lookup"><span data-stu-id="96ae0-110">Click Close to continue working.</span></span>
+- <span data-ttu-id="96ae0-111">Vaikuttaa siltä, että verkkoyhteys katkesi. Yritä uudelleen napsauttamalla Yritä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="96ae0-111">It appears you lost network connectivity, click Retry to try again.</span></span>
 
-<span data-ttu-id="37cfa-112">**Varoitusmerkki**</span><span class="sxs-lookup"><span data-stu-id="37cfa-112">**Red flag**</span></span>
+<span data-ttu-id="96ae0-112">**Varoitusmerkki**</span><span class="sxs-lookup"><span data-stu-id="96ae0-112">**Red flag**</span></span>
 
-<span data-ttu-id="37cfa-113">Tämä ongelma ilmenee usein silloin, kun käyttäjät ovat käyttöönottovaiheessa, kun he vertailevat tietoja eri tuotanto-ja testiympäristöistä ja kun he unohtavat, että siirtyvät istuntojen välillä.</span><span class="sxs-lookup"><span data-stu-id="37cfa-113">This issue often occurs when users are in the implementation stage, are comparing information across production and test environments, and forget that they are moving between sessions.</span></span> <span data-ttu-id="37cfa-114">Tämä ongelma tulee esille todennäköisimmin, jos käyttäjät ovat tässä vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="37cfa-114">If users are at this stage, they will most likely experience this issue.</span></span>
+<span data-ttu-id="96ae0-113">Tämä ongelma ilmenee usein silloin, kun käyttäjät ovat käyttöönottovaiheessa, kun he vertailevat tietoja eri tuotanto-ja testiympäristöistä ja kun he unohtavat, että siirtyvät istuntojen välillä.</span><span class="sxs-lookup"><span data-stu-id="96ae0-113">This issue often occurs when users are in the implementation stage, are comparing information across production and test environments, and forget that they are moving between sessions.</span></span> <span data-ttu-id="96ae0-114">Tämä ongelma tulee esille todennäköisimmin, jos käyttäjät ovat tässä vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="96ae0-114">If users are at this stage, they will most likely experience this issue.</span></span>
 
-<span data-ttu-id="37cfa-115">**Lähetä**</span><span class="sxs-lookup"><span data-stu-id="37cfa-115">**Issue**</span></span> 
+<span data-ttu-id="96ae0-115">**Lähetä**</span><span class="sxs-lookup"><span data-stu-id="96ae0-115">**Issue**</span></span> 
 
-<span data-ttu-id="37cfa-116">**Selaintyypit:** Google Chrome, Internet Explorer ja Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="37cfa-116">**Browser types:** Google Chrome, Internet Explorer, and Microsoft Edge</span></span>
+<span data-ttu-id="96ae0-116">**Selaintyypit:** Google Chrome, Internet Explorer ja Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="96ae0-116">**Browser types:** Google Chrome, Internet Explorer, and Microsoft Edge</span></span>
 
-<span data-ttu-id="37cfa-117">Microsoft Dynamics 365 Human Resources katkaisee käyttäjien yhteyden, kun samalla käyttäjällä on samanaikaisesti avoinna samassa selaintyypissä kaksi eri istuntoa.</span><span class="sxs-lookup"><span data-stu-id="37cfa-117">Microsoft Dynamics 365 Human Resources disconnects users when two different sessions are open at the same time for the same user and the same browser type.</span></span> <span data-ttu-id="37cfa-118">(Esimerkki: käyttäjä A katsoo sekä ympäristöä 1 että ympäristöä 2 Chromessa.) Sillä ei ole merkitystä, onko käyttäjä avannut eri selainikkunoita tai välilehtiä.</span><span class="sxs-lookup"><span data-stu-id="37cfa-118">(For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs.</span></span> <span data-ttu-id="37cfa-119">Jos samoilla käyttäjän tunnistetiedoilla kirjaudutaan samanaikaisesti samassa selaintyypissä sekä ympäristöön 1 että ympäristöön 2, Human Resources katkaisee yhteyden toiseen istuntoon.</span><span class="sxs-lookup"><span data-stu-id="37cfa-119">If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Human Resources disconnects one of the sessions.</span></span>
+<span data-ttu-id="96ae0-117">Microsoft Dynamics 365 Human Resources katkaisee käyttäjien yhteyden, kun samalla käyttäjällä on samanaikaisesti avoinna samassa selaintyypissä kaksi eri istuntoa.</span><span class="sxs-lookup"><span data-stu-id="96ae0-117">Microsoft Dynamics 365 Human Resources disconnects users when two different sessions are open at the same time for the same user and the same browser type.</span></span> <span data-ttu-id="96ae0-118">(Esimerkki: käyttäjä A katsoo sekä ympäristöä 1 että ympäristöä 2 Chromessa.) Sillä ei ole merkitystä, onko käyttäjä avannut eri selainikkunoita tai välilehtiä.</span><span class="sxs-lookup"><span data-stu-id="96ae0-118">(For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs.</span></span> <span data-ttu-id="96ae0-119">Jos samoilla käyttäjän tunnistetiedoilla kirjaudutaan samanaikaisesti samassa selaintyypissä sekä ympäristöön 1 että ympäristöön 2, Human Resources katkaisee yhteyden toiseen istuntoon.</span><span class="sxs-lookup"><span data-stu-id="96ae0-119">If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Human Resources disconnects one of the sessions.</span></span>
 
-<span data-ttu-id="37cfa-120">**Ratkaisu**</span><span class="sxs-lookup"><span data-stu-id="37cfa-120">**Solution**</span></span>
+<span data-ttu-id="96ae0-120">**Ratkaisu**</span><span class="sxs-lookup"><span data-stu-id="96ae0-120">**Solution**</span></span>
 
-<span data-ttu-id="37cfa-121">Varmista, että kussakin selaintyypissä on aina avoinna vain yksi ympäristö.</span><span class="sxs-lookup"><span data-stu-id="37cfa-121">Make sure that only one environment is open at a time for a given browser type.</span></span> <span data-ttu-id="37cfa-122">Käyttäjät voivat avata useita saman ympäristön istuntoja (eli useita välilehtiä samassa selaimessa).</span><span class="sxs-lookup"><span data-stu-id="37cfa-122">Users can open multiple sessions to the same environment (that is, multiple tabs in the same browser).</span></span>
+<span data-ttu-id="96ae0-121">Varmista, että kussakin selaintyypissä on aina avoinna vain yksi ympäristö.</span><span class="sxs-lookup"><span data-stu-id="96ae0-121">Make sure that only one environment is open at a time for a given browser type.</span></span> <span data-ttu-id="96ae0-122">Käyttäjät voivat avata useita saman ympäristön istuntoja (eli useita välilehtiä samassa selaimessa).</span><span class="sxs-lookup"><span data-stu-id="96ae0-122">Users can open multiple sessions to the same environment (that is, multiple tabs in the same browser).</span></span>
 
-<span data-ttu-id="37cfa-123">Jos käyttäjät haluavat siirtyä kahden ympäristön välillä samanaikaisesti, heidän on avattavat ympäristöt eri selaintyypissä.</span><span class="sxs-lookup"><span data-stu-id="37cfa-123">Users who want to jump between two environments at the same time should open each environment in a different browser type.</span></span> <span data-ttu-id="37cfa-124">(Esimerkki: käyttäjä A voi tarkastella ympäristöä 1 Chromessa ja ympäristöä 2 Microsoft Edgessä.)</span><span class="sxs-lookup"><span data-stu-id="37cfa-124">(For example, user A can view environment 1 in Chrome and environment 2 in Microsoft Edge.)</span></span>
+<span data-ttu-id="96ae0-123">Jos käyttäjät haluavat siirtyä kahden ympäristön välillä samanaikaisesti, heidän on avattavat ympäristöt eri selaintyypissä.</span><span class="sxs-lookup"><span data-stu-id="96ae0-123">Users who want to jump between two environments at the same time should open each environment in a different browser type.</span></span> <span data-ttu-id="96ae0-124">(Esimerkki: käyttäjä A voi tarkastella ympäristöä 1 Chromessa ja ympäristöä 2 Microsoft Edgessä.)</span><span class="sxs-lookup"><span data-stu-id="96ae0-124">(For example, user A can view environment 1 in Chrome and environment 2 in Microsoft Edge.)</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -376,12 +376,10 @@
                       href: aad-pos-logon.md
                     - name: Tuote- ja asiakashaku myyntipisteessä
                       href: POS-search-improvements.md
-                    - name: Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
+                    - name: Tuotteiden ja tuotevarianttien hakeminen tilaustenkäsittelyn aikana
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Kassanhallinnan parannukset
                       href: cash-mgmt.md
-                    - name: Varastohaku myyntipisteessä
-                      href: product-variants-POS.md
                     - name: Tapahtumien keskeyttäminen ja jatkaminen myyntipisteessä
                       href: pos-suspend-recall-transactions.md
                     - name: Myyntipisteen offline-toiminnot
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Vähittäismyyntikanavien varaston käytettävyyden laskeminen
                       href: calculated-inventory-retail-channels.md
+                    - name: Varastohakutoiminto myyntipisteessä
+                      href: pos-inventory-lookup-operation.md
                 - name: Ostotilaukset
                   items:
                     - name: Ostotilausten yleiskatsaus
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: Myyntipisteen laajennuspaketin projektin luominen
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Modernin myyntipisteen laajennuksen appx-tiedoston luominen
+                    - name: Luodaan .appx-tiedosto Modern POS -laajennuspakettia varten
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Myyntipisteen laajennuksen virheenkorjaus
+                    - name: Myyntipisteen laajennusten virheenkorjaus
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Laajennuksen pakkaaminen ja käyttöönotto
+                      items:
+                        - name: Modern POS -laajennuspaketin luominen
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Modern POS (MSIX) -laajennuspaketin allekirjoittaminen koodin avulla
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Cloud POS -laajennuspaketin luominen
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Myyntipistelaajennuksen siirtäminen riippumattoman pakkauksen malliin
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Myyntipisteen laajennuksen kehitysopas
+                      items:
+                        - name: Myyntipisteen laajennuksen perustiedot
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Mukautetun näkymän luominen myyntipisteessä
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: Myyntipisteen ohjausobjektien käyttäminen laajennuksissa
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Tehtävät
+                          items:
+                            - name: Knockout.js-kirjaston käyttäminen myyntipisteen laajennuksissa
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: Mukautettujen Commercen headless-ohjelmointirajapintojen kuluttaminen
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Stationin laajennettavuus
               items:
                 - name: Hardware Station ja laajennettavuus
