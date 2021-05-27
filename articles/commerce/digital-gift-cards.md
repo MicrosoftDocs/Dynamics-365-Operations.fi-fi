@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792868"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019930"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Sähköisen kaupan digitaaliset lahjakortit
 
@@ -51,12 +51,12 @@ Digitaalisten lahjakorttien tuotteet pitää määrittää Commerce headquarters
 
     ![Lahjakorttituotteen kenttä Commerce headquarters -sovelluksessa](./media/PostGiftcard.png)
 
-- Jos lahjakortin on tuettava useita ennalta määritettyjä summia (esimerkiksi 25 $, 50 $, ja 100 $), määritä ennalta määritetyt summat **Koko**-dimension avulla. Kukin ennalta määritetty summa on variantti. Lisätietoja on kohdassa [Tuotedimensiot](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Jos lahjakortin on tuettava useita ennalta määritettyjä summia (esimerkiksi 25 $, 50 $, ja 100 $), määritä ennalta määritetyt summat **Koko**-dimension avulla. Kukin ennalta määritetty summa on variantti. Lisätietoja on kohdassa [Tuotedimensiot](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Jos asiakkaiden on pystyttävä määrittämään lahjakortille mukautettu summa, määritä ensin muuttuja, joka sallii mukautetun summan. Avaa seuraavaksi tuote **Luokan julkaistut tuotteet** -sivulla ja määritä sitten **Commerce**-pikavälilehdellä **Syötä hinta** -kentän arvoksi **Uusi hinta on näppäiltävä** seuraavan kuvan mukaisesti. Tällä asetuksella varmistetaan, että asiakkaat voivat syöttää hinnan, kun he selaavat tuotetta PDP-sivulla.
 
     ![Syötä hinta -kenttä Commerce headquarters -sovelluksessa](./media/KeyInPrice.png)
 
-- Digitaalisten lahjakorttien toimitustavaksi on määritettävä **Sähköinen**. Valitse **Toimitustavat**-sivulla (**Retail ja Commerce \> Kanavan asetukset \> Toimitustavat**) **Sähköinen**-toimitustapa luetteloruudussa ja lisää digitaalinen lahjakorttituote ruudukkoon **Tuotteet**-pikavälilehdessä seuraavan kuvan mukaisesti. Lisätietoja on kohdassa [Toimitustapojen määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- Digitaalisten lahjakorttien toimitustavaksi on määritettävä **Sähköinen**. Valitse **Toimitustavat**-sivulla (**Retail ja Commerce \> Kanavan asetukset \> Toimitustavat**) **Sähköinen**-toimitustapa luetteloruudussa ja lisää digitaalinen lahjakorttituote ruudukkoon **Tuotteet**-pikavälilehdessä seuraavan kuvan mukaisesti. Lisätietoja on kohdassa [Toimitustapojen määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitaaliset lahjakorttituotteet Commerce headquarters -sovelluksen Toimitustapa-sivulla](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ Voit määrittää mukautetun summan digitaalista lahjakorttia varten Commercen 
 
 [Uuden tuotteen luominen Commercessa](create-new-product-commerce.md)
 
-[Määritä toimitustavat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Määritä toimitustavat](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Tuotedimensiot](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Tuotedimensiot](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [Sähköposti-ilmoitusprofiilin määrittäminen](email-notification-profiles.md)
 

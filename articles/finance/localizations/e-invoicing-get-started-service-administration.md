@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen palvelun hallinnan aloittaminen
 description: Tässä aiheessa selitetään, miten sähköisen laskutuksen käyttö voidaan aloittaa.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840145"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980972"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Sähköisen laskutuksen palvelun hallinnan aloittaminen
 
@@ -33,10 +33,10 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 - Sinulla on oltava Microsoft Dynamics Lifecycle Services (LCS) -tili.
 - Käytössäsi on oltava LCS-projekti, joka sisältää Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin version 10.0.17 tai sitä myöhemmän version. Lisäksi nämä sovellukset on otettava käyttöön jossakin seuraavista Azure-alueista:
 
-    - Itä-Yhdysvallat
-    - Länsi-Yhdysvallat
-    - Pohjois-EU
-    - Länsi-EU
+    - Yhdysvallat
+    - Eurooppa
+    - Iso-Britannia
+    - Aasia
 
 - Dynamics 365 Regulatory Configuration Services (RCS) -tilin on oltava käytettävissä.
 - RCS-tilin globalisointiominaisuus on otettava käyttöön toiminnonhallinnan kautta. Lisätietoja: [Regulatory Configuration Services (RCS) – globalisointitoiminnot](rcs-globalization-feature.md).
@@ -46,11 +46,12 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 1. Kirjaudu LCS-tilille.
 2. Valitse **Esiversiotoiminnon hallinta** -ruutu.
-3. Valitse **Julkisen esiversion ominaisuudet** -osasta **Sähköisen laskutuksen palvelu**.
+3. Valitse **Julkisen esiversion ominaisuudet** -osasta **Sähköinen laskutus**.
 4. Varmista, että **Esiversiotoiminto käytössä** -asetukseksi on valittu **Kyllä**.
-5. Valitse LCS-käyttöönottoprojekti LCS-koontinäytössä. LCS-projektin on oltava käynnissä.
-7. Valitse **Ympäristöapuohjelmat**-välilehdessä **Asenna uusi apuohjelma**.
-8. Valitse **sähköisen laskutuksen palvelut**.
+5. Valitse LCS-projektikoontinäytössä LCS-projekti.
+6. Valitse LCS-projektissa LCS-ympäristön koontinäytössä valitse LCS-käyttöönottoprojekti. LCS-käyttöönottoprojektin on oltava käynnissä.
+7. Valitse **Power Platform -integrointi** -välilehden **Ympäristön lisäosat** -kenttäryhmässä **Asenna uusi lisäosa**.
+8. Valitse **Sähköinen laskutus**.
 9. Kirjoita **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä on kiinteä arvo.
 10. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi vuokraajan tunnus.
 11. Lue ehdot ja valitse valintaruutu.
@@ -65,10 +66,10 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
     | Konesalin Azure-alue | Palvelun päätepisteen URI-osoite                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Itä-Yhdysvallat                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Länsi-Yhdysvallat                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Pohjois-EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Länsi-EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | Yhdysvallat              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Eurooppa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Iso-Britannia             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Aasia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Varmista, että **Sovellustunnus**-kentän arvo on **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Tämä arvo on kiinteä arvo.
 5. Syötä **LCS-ympäristötunnus**-kenttään LCS-ympäristösi tunnus.
@@ -152,12 +153,12 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 1. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
 2. Kirjoita **Lähetyspalvelu** -välilehdessä **Palvelun päätepisteen URL** -kenttään asianmukainen Azure-alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
 
-    | Konesalin Azure-alue | Palvelun päätepisteen URL-osoite                                                       |
+    | Konesalin Azure-alue | Palvelun päätepisteen URI-osoite                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Itä-Yhdysvallat                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Länsi-Yhdysvallat                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Pohjois-EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Länsi-EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | Yhdysvallat              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Eurooppa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Iso-Britannia             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Aasia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. Syötä **Ympäristö**-kenttään sähköisessä laskutuksessa julkaistun palveluympäristön nimi.
 4. Valitse **Tallenna** ja sulje sitten sivu.

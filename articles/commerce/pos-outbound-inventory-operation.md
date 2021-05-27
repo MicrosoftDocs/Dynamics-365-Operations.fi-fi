@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795642"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022728"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -71,7 +71,7 @@ Luotuja erätöitä käytetään epäonnistuneiden tai aikakatkaistujen asiakirj
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Edellytys: Lähtevän toiminnon lisääminen myyntipisteen näyttöasetteluun
 
-Ennen kuin organisaatio voi käyttää lähtevää toimintoa, se on määritettävä **lähtevän toiminnon** myyntipistetoiminnossa vähintään yhdessä [myyntipisteen näyttöasettelussa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ennen kuin otat uuden toiminnon käyttöön tuotantoympäristössä, varmista, että se on testattu kunnolla ja käyttäjät on koulutettu käyttämään sitä.
+Ennen kuin organisaatio voi käyttää lähtevää toimintoa, se on määritettävä **lähtevän toiminnon** myyntipistetoiminnossa vähintään yhdessä [myyntipisteen näyttöasettelussa](/dynamics365/unified-operations/retail/pos-screen-layouts). Ennen kuin otat uuden toiminnon käyttöön tuotantoympäristössä, varmista, että se on testattu kunnolla ja käyttäjät on koulutettu käyttämään sitä.
 
 ## <a name="overview"></a>Yleiskatsaus
 

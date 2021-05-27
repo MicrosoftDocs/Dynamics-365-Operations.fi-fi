@@ -2,11 +2,9 @@
 title: Varasto-oikaisu
 description: Tässä aiheessa on tietoja varaston oikaisun kirjauskansiosta ja käsittelystä, kun käytät scale uniteja.
 author: perlynne
-manager: tfehr
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSInventoryAdjustmentJournal, InventJournalCount
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: be386539ea7addf20256ac2b1f8a2a72736fcbec
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: a451816078ca2e77f30379828777209dc48bd849
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938223"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026130"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Varasto-oikaisu
 
@@ -40,7 +38,7 @@ Seuraavissa varastosovellusten työprosesseissa käytetään tällä hetkellä *
 - Inventointi
 - Rekisterikilven lataus
 
-Useita varaston tapahtumia luodaan osana pilvi- ja reunapalvelun varaston oikaisuprosessia, koska keskuksen ja scale unitin käyttöönotot jakavat varastotietueet.
+Useita varaston tapahtumia luodaan osana kutakin varaston oikaisuprosessia, koska keskuksen ja scale unitin käyttöönotot jakavat varastotietueet.
 
 ## <a name="inventory-adjustment-example"></a>Varaston oikaisun esimerkki
 

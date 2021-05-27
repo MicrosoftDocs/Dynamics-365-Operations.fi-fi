@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d29e560d0f7b2bbc2415d7a0f6fe18f2ca17dc7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801504"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020729"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Commerce-sivustonmuodostimen käyttöoikeusryhmän määrittäminen ei onnistu ensimmäisen käyttöönoton yhteydessä
 
@@ -38,7 +37,7 @@ Kun luot sähköisen kaupankäynnin komponentit osana uutta sähköisen kaupank�
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>Sähköisen kaupankäynnin valmistelu käyttäjälle oikeassa vuokraajassa
 
 1. Siirry [Azure-portaaliin](https://portal.azure.com/).
-1. Noudata [Luo perusryhmä ja lisää jäsenet Azure Active Directoryn avulla](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) -ohjeita siinä vuokraajassa, jolle sähköisen kaupankäynnin sivuston LCS-projekti valmisteltiin.
+1. Noudata [Luo perusryhmä ja lisää jäsenet Azure Active Directoryn avulla](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) -ohjeita siinä vuokraajassa, jolle sähköisen kaupankäynnin sivuston LCS-projekti valmisteltiin.
 1. Siirry [LCS](https://lcs.dynamics.com/)-palveluun ja kirjaudu sisään käyttäen tiliä, jossa on sama vuokraaja kuin juuri luomallasi Azure AD -suojausryhmällä. Tilin on oltava käyttöoikeus, jotta se voi tarkastella Azure AD -suojausryhmää.
 1. Konfiguroi sähköisen kaupankäynnin sivusto suorittamalla määritysvaiheet. Kun olet valmistellut sähköisen kaupankäynnin komponentit, suojausryhmän pitäisi nyt näkyä valintaikkunan vaihtoehtona.
 
@@ -47,6 +46,6 @@ Kun luot sähköisen kaupankäynnin komponentit osana uutta sähköisen kaupank�
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Perusryhmän luominen ja jäsenten Azure Active Directoryn avulla](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Perusryhmän luominen ja jäsenten Azure Active Directoryn avulla](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](../deploy-ecommerce-site.md)

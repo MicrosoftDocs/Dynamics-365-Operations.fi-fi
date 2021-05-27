@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 480fdd99abeea731802dbe5bc5e1da9c1ceec6b7
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 06f4a0feda82d20e5ec01fd75e4bb8a597a6d09b
+ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956879"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "5989013"
 ---
 # <a name="maintain-vendor-certification"></a>Toimittajan varmenteen ylläpitäminen
 
@@ -23,6 +23,8 @@ ms.locfileid: "5956879"
 [!include [preview banner](../includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan vaiheita, joita toimittajat voivat käyttää toimittajien varmenteiden ylläpitoon **toimittajien yhteistyötilan** avulla. Esimerkkejä varmenteista voivat olla esimerkiksi Woman Business Enterprise (WBE)- tai Leadership in Energy and Environment Design (LEED) -yritys. Toimittajien täytyy lisätä varmenteen tiedot **Toimittajatiedot**-työtilaan. Siellä toimittajat valitsevat **Lisätietoja** ja sitten **Varmenteet**.
+
+## <a name="add-a-new-certification"></a>Uuden varmenteen lisääminen
 
 Voit lisätä uuden varmenteen valitsemalla **Lisää**-painikkeen, joka sijaitsee **Varmenne**-ruudun yläpuolella **Toimittajatiedot**-työtilassa. Kirjoita seuraavat tiedot:
  
@@ -40,3 +42,10 @@ Jos tiettyyn varmenteeseen liittyy asiakirjoja, voit liittää ne valitsemalla *
 Toimittajiesi tälle sivulle syöttämille varmennuksille määritetään "Toimittaja"-lähde. Voit syöttää varmenteen tiedot toimittajan puolesta toimittajien pankkitilien kohdassa. Tiedot näkyvät tässä, ja lähde näkyy **asiakkaana**.
 
 Toimittajat voivat tarvittaessa muokata tai poistaa varmennuksiaan.
+
+## <a name="vendor-collaboration-generated-certification-records"></a>Toimittajayhteistyöllä luodut varmennetietueet 
+ 
+Kun toimittaja on lisännyt varmennetiedot, tiedot näkyvät **Toimittajayhteistyöllä luodut varmenteet** -sivulla. Voit avata sivun valitsemalla **Ostoreskontra > Kyselyt > Toimittajaraportit > Toimittajayhteistyöllä luodut varmenteet**. Oletusarvon mukaan kaikki uudet tai muokatut varmennetietueet ovat näkyvissä. Ostoreskontran kirjanpitäjä voi tarkastella muutoksia ja vahvistaa tiedot vahvistusprosessinsa kautta. Kun tiedot on vahvistettu, sivulla lueteltu varmennetietue voidaan valita ja merkitä tarkistetuksi. Tietueen merkitseminen tarkistetuksi poistaa tietueen oletusluettelosta.
+ 
+Kaikki varmennemuutokset näkyvät **Toimittajayhteistyöllä luodut varmenteet** -sivulla. Jos muutosta ei näytetä sivulla, voit tarkastella sitä muokkaamalla toimittajatilin suodattimia, voimaantulopäiväväliä tai valitsemalla, sisällytetäänkö tietoihin tarkistetut varmennemuutokset. 
+

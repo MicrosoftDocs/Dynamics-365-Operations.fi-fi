@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4891f9dcb031f4cb8dfb91f3fe1a301aad9838e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 64106cb1aeea01f1f227247d32b8b1dfdea98362
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793870"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020192"
 ---
 # <a name="commerce-inventory-management"></a>Commercen varastonhallinta
 
@@ -39,11 +39,11 @@ CSU-pohjaiset Commerce-sovellukset eivät tue seuraavia seurantadimensioita:
 
 - Myyntipistesovellus voi tarjota rajoitettua tukea seuraaville dimensioille. Myyntipiste saattaa merkitä joitakin näitä dimensioita varastotapahtumiin varaston tai myymälän asetusten määritysten perusteella. Myyntipiste ei kuitenkaan tue dimensioita täysimääräisesti siinä määrin kuin jos myyntitapahtuma vietäisiin manuaalisesti Commerce headquarters -sovellukseen. 
 
-- **Varaston sijainti** – Jos käyttäjät käyttävät myyntipisteen uutta [saapuvaa toimintoa](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) ja [lähtevää toimintoa](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), he voivat valita varaston varastosijainnin, johon nimikkeitä vastaanotetaan tai josta lähtevät siirtotilaukset lähetetään. Jos käytössä on vanhentunut **Keräys ja vastaanotto** -toiminto, vastaanoton ja lähtevien siirtojen lähettämisen yhteydessä on käytettävissä rajoitettu sijainnin hallinnan tuki. Tämä tuki on käytettävissä vain, jos **Käytä varastonhallintaprosesseja** -vaihtoehto on otettu käyttöön sekä nimikkeen osalta että myymälän varastossa. Varastosijaintia ei voi tällä hetkellä käyttää **Varaston inventointi**- ja **Varastohaku**-toimintojen kanssa.
+- **Varaston sijainti** – Jos käyttäjät käyttävät myyntipisteen uutta [saapuvaa toimintoa](./pos-inbound-inventory-operation.md) ja [lähtevää toimintoa](./pos-outbound-inventory-operation.md), he voivat valita varaston varastosijainnin, johon nimikkeitä vastaanotetaan tai josta lähtevät siirtotilaukset lähetetään. Jos käytössä on vanhentunut **Keräys ja vastaanotto** -toiminto, vastaanoton ja lähtevien siirtojen lähettämisen yhteydessä on käytettävissä rajoitettu sijainnin hallinnan tuki. Tämä tuki on käytettävissä vain, jos **Käytä varastonhallintaprosesseja** -vaihtoehto on otettu käyttöön sekä nimikkeen osalta että myymälän varastossa. Varastosijaintia ei voi tällä hetkellä käyttää **Varaston inventointi**- ja **Varastohaku**-toimintojen kanssa.
 
-- **Rekisterikilpi** – Rekisterikilvet ovat käytössä vain, kun **Käytä varastonhallintaprosesseja** -vaihtoehto on otettu käyttöön nimikkeessä ja myymälän varastossa. Jos varasto vastaanotetaan myyntipistesovelluksessa **Saapuva toiminto**- tai **Keräys ja vastaanotto** -toimintoa käyttämällä myymälävarastoon, jossa varaston hallintaprosessi on otettu käyttöön, ja jos nimikkeen vastaanottamiselle valittu sijainti on sidottu sijaintiprofiiliin, joka edellyttää rekisterikilpiohjausta, myyntipistesovellus käyttää vastaanottavan rivin rekisterikilpeä järjestelmällisesti. Myyntipistekäyttäjät eivät voi muuttaa eivätkä hallita näitä rekisterikilven tietoja. Jos rekisterikilpien hallinta on pakollista, kyseisiä nimikkeitä kannattaa hallita myymälässä [varastointisovelluksella](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) tai tausta-asiakasohjelmalla.
+- **Rekisterikilpi** – Rekisterikilvet ovat käytössä vain, kun **Käytä varastonhallintaprosesseja** -vaihtoehto on otettu käyttöön nimikkeessä ja myymälän varastossa. Jos varasto vastaanotetaan myyntipistesovelluksessa **Saapuva toiminto**- tai **Keräys ja vastaanotto** -toimintoa käyttämällä myymälävarastoon, jossa varaston hallintaprosessi on otettu käyttöön, ja jos nimikkeen vastaanottamiselle valittu sijainti on sidottu sijaintiprofiiliin, joka edellyttää rekisterikilpiohjausta, myyntipistesovellus käyttää vastaanottavan rivin rekisterikilpeä järjestelmällisesti. Myyntipistekäyttäjät eivät voi muuttaa eivätkä hallita näitä rekisterikilven tietoja. Jos rekisterikilpien hallinta on pakollista, kyseisiä nimikkeitä kannattaa hallita myymälässä [varastointisovelluksella](../supply-chain/warehousing/install-configure-warehousing-app.md) tai tausta-asiakasohjelmalla.
 
-- **Sarjanumero** – Myyntipistesovellus tukee rajoitetusti sellaisen yksittäisen sarjanumeron rekisteröintiä, joka luodaan myyntipistesovelluksessa tapahtumamyyntiriville ja joka sisältää sarjoitettuja nimikkeitä. Tätä sarjanumeroa ei ole tarkistettu varastoon jo rekisteröityjen sarjanumeroiden perusteella. Jos myyntitilaus luodaan puhelinkeskuskanavassa tai täytetään ERP-järjestelmän avulla ja yhteen myyntitilausriviin rekisteröidään useita sarjanumeroita tämän täyttämisprosessin aikana, kyseisiä sarjanumeroita ei voida käyttää tai tarkistaa, jos tilauksen palautukset käsitellään myyntipisteessä. Jos varaston vastaanottoon käytetään **saapuvien toimintoa**, käyttäjät voivat [rekisteröidä tai vahvistaa vastaanotetut sarjanumerot](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Sarjanumero** – Myyntipistesovellus tukee rajoitetusti sellaisen yksittäisen sarjanumeron rekisteröintiä, joka luodaan myyntipistesovelluksessa tapahtumamyyntiriville ja joka sisältää sarjoitettuja nimikkeitä. Tätä sarjanumeroa ei ole tarkistettu varastoon jo rekisteröityjen sarjanumeroiden perusteella. Jos myyntitilaus luodaan puhelinkeskuskanavassa tai täytetään ERP-järjestelmän avulla ja yhteen myyntitilausriviin rekisteröidään useita sarjanumeroita tämän täyttämisprosessin aikana, kyseisiä sarjanumeroita ei voida käyttää tai tarkistaa, jos tilauksen palautukset käsitellään myyntipisteessä. Jos varaston vastaanottoon käytetään **saapuvien toimintoa**, käyttäjät voivat [rekisteröidä tai vahvistaa vastaanotetut sarjanumerot](./pos-serialized-items.md).
 
 - **Erätunnus**: Myyntipistesovellus tarjoaa rajoitetusti tukea laskelman kirjaamisen aikana, jos eräohjattua nimikettä myydään, mutta myyntipisteen käyttäjät eivät voi määrittää myyntipistesovelluksen käytön kautta myydyn tai kerätyn erän tunnusta.
 
@@ -56,11 +56,11 @@ CSU-pohjaiset Commerce-sovellukset eivät tue seuraavia seurantadimensioita:
 
 ## <a name="purchase-orders"></a>Ostotilaukset
 
-Ostotilaukset luodaan Commercen pääkonttorisovelluksessa. Jos myymälän varasto sisältyy ostotilauksen otsikkoon tai ostotilausriveille, rivit voidaan vastaanottaa myymälään käyttämällä myyntipisteen [saapuvaa toimintoa](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation). 
+Ostotilaukset luodaan Commercen pääkonttorisovelluksessa. Jos myymälän varasto sisältyy ostotilauksen otsikkoon tai ostotilausriveille, rivit voidaan vastaanottaa myymälään käyttämällä myyntipisteen [saapuvaa toimintoa](./pos-inbound-inventory-operation.md). 
 
 ## <a name="transfer-orders"></a>Siirtotilaukset
 
-Siirtotilaukset voidaan luoda Commercen pääkonttorisovelluksessa tai myyntipisteessä joko [saapuvien toiminnolla](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) tai [lähtevien toiminnolla](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation). Myyntipisteen **saapuvien toiminnolla** luodaan siirtotilauspyyntö, jolla pyydetään lähettämään varastoa myymälään toisesta varasto- tai myymäläsijainnista. Myyntipisteen **lähtevien toiminnolla** luodaan siirtotilauspyyntö, jolla pyydetään lähettämään varastoa myymälästä toisesta varasto- tai myymäläsijaintiin. Kun myymälän siirtotilaus on luotu, myymälä voi hallita siirtotilauksen varaston vastaanottoa myyntipisteen **saapuvien toiminnolla**. Jos myymälä lähettää varastoa toiseen sijaintiin, kyseisen myymälän lähtevien lähetysprosessia hallitaan myyntipisteen **lähtevien toiminnolla**.
+Siirtotilaukset voidaan luoda Commercen pääkonttorisovelluksessa tai myyntipisteessä joko [saapuvien toiminnolla](./pos-inbound-inventory-operation.md) tai [lähtevien toiminnolla](./pos-outbound-inventory-operation.md). Myyntipisteen **saapuvien toiminnolla** luodaan siirtotilauspyyntö, jolla pyydetään lähettämään varastoa myymälään toisesta varasto- tai myymäläsijainnista. Myyntipisteen **lähtevien toiminnolla** luodaan siirtotilauspyyntö, jolla pyydetään lähettämään varastoa myymälästä toisesta varasto- tai myymäläsijaintiin. Kun myymälän siirtotilaus on luotu, myymälä voi hallita siirtotilauksen varaston vastaanottoa myyntipisteen **saapuvien toiminnolla**. Jos myymälä lähettää varastoa toiseen sijaintiin, kyseisen myymälän lähtevien lähetysprosessia hallitaan myyntipisteen **lähtevien toiminnolla**.
 
 ## <a name="stock-counts"></a>Varaston inventoinnit
 
@@ -68,7 +68,7 @@ Varaston inventoinnit voidaan ajoittaa tai niiden ajoitus voidaan peruuttaa. Ajo
 
 ## <a name="inventory-lookup"></a>Varastohaku
 
-Tuotteen nykyistä määrää useissa myymälöissä ja varastoissa voi tarkastella **Varastohaku**-sivulla. Nykyisen käytettävissä olevan määrän lisäksi näkyvissä on myös kunkin myymälän luvattavissa oleva määrä (ATP). Valitse ensin myymälä, jonka ATP-määritä haluat tarkastella, ja **Näytä myymälän käytettävyys**. Lisätietoja käytettävissä olevista määritysvaihtoehdoista on kohdassa [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+Tuotteen nykyistä määrää useissa myymälöissä ja varastoissa voi tarkastella **Varastohaku**-sivulla. Nykyisen käytettävissä olevan määrän lisäksi näkyvissä on myös kunkin myymälän luvattavissa oleva määrä (ATP). Valitse ensin myymälä, jonka ATP-määritä haluat tarkastella, ja **Näytä myymälän käytettävyys**. Lisätietoja käytettävissä olevista määritysvaihtoehdoista on kohdassa [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842054"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016953"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Tuotteen elinkaaren tilat ja tapahtumat
 
@@ -74,5 +74,24 @@ Seuraavat kentät ovat käytettävissä kussakin **Käyttöönotetut liiketoimin
 
 Jos muita elinkaaren tilasääntöjä lisätään mukautuksina, voit tarkastella kyseisiä sääntöjä käyttöliittymässä valitsemalla yläruudussa **Päivitä prosessit**. **Päivitä prosessit** -painike on vain järjestelmänvalvojien käytettävissä.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Vapautettujen tuotteiden ja varianttien elinkaaren tilat
+
+Jos tuotteella on variantteja (päätuotteita ja variantteja), päätuotteella on elinkaaren tila ja kullakin variantilla voi olla myös eri elinkaaren tila.
+
+Jos joko variantti tai tuote on estetty tietyissä prosesseissa, myös prosessin käyttö estetään. Järjestelmä tarkistaa, onko prosessi estetty, seuraavasti:
+
+- Suunnitteluohjatut tuotteet:
+  - Jos nykyinen suunnitteluversio on estetty, estä prosessi.
+  - Jos nykyinen variantti on estetty, estä prosessi.
+  - Jos vapautettu tuote on estetty, estä prosessi.
+- Vakiotuotteita varten:
+  - Jos nykyinen variantti on estetty, estä prosessi.
+  - Jos vapautettu tuote on estetty, estä prosessi.
+
+Oletetaan esimerkiksi, että haluat myydä vain yhden variantin (punainen) tietystä tuotteesta (t-paita) ja estät kaikkien muiden varianttien myynnin tällä hetkellä. Voit toteuttaa tämän seuraavilla asetuksilla:
+
+- Määritä tuotteelle elinkaaren tila, joka sallii prosessin. Voit esimerkiksi määrittää t-paita-tuotteelle elinkaaren tilaksi *Myytävä*, jolloin *Myyntitilaus*-liiketoimintaprosessi on mahdollinen.
+- Määritä myytävälle variantille elinkaaren tila, joka sallii prosessin. Voit esimerkiksi määrittää myös punaiselle variantille elinkaaren tilaksi *Myytävä*.
+- Kaikille muille varianteille määritetään toinen elinkaaren tila, jossa prosessi on estetty. Määritä esimerkiksi valkoiselle variantille (ja kaikille muille varianteille) elinkaaren tilaksi *Ei myytävä*, joka estää *Myyntitilaus*-liiketoimintaprosessin.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

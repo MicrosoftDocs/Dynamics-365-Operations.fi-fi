@@ -5,7 +5,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: beab7f2fc4fd96ce7a28734d2449445b3b5d4451
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750833"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018383"
 ---
 # <a name="note-integration"></a>Muistiinpanojen integrointi
 
@@ -34,7 +33,7 @@ Liiketoimintaprosessien aikana Microsoft Dynamics 365 -käyttäjät usein kerä�
 
 Asiakastiedot voidaan luokitella seuraavilla tavoilla:
 
-+ **Toiminnan perustana toimivat iedot, joita Dynamics 365 -käyttäjä käsittelee asiakkaan puolesta** – Esimerkiksi Contoso (Dynamics 365 -käyttäjä) pitää pelinäytöksen. Yksi Contoson asiakkaista (asiakas) haluaa osallistua pelinäytökseen. Asiakas pyytää Contoso-työntekijää varaamaan paikan pelinäytökseen. Varaus tehdään Contoson tapahtuman osallistujan kalenterissa.
++ **Toiminnan perustana toimivat tiedot, joita Dynamics 365 -käyttäjä käsittelee asiakkaan puolesta** – Esimerkiksi Contoso (Dynamics 365 -käyttäjä) pitää pelinäytöksen. Yksi Contoson asiakkaista (asiakas) haluaa osallistua pelinäytökseen. Asiakas pyytää Contoso-työntekijää varaamaan paikan pelinäytökseen. Varaus tehdään Contoson tapahtuman osallistujan kalenterissa.
 + **Dynamics 365 -käyttäjän tiedot toiminnan pohjaksi** – Esimerkiksi Surface-yksikköä ostava asiakas määrittää erityisohjeet, jotka ilmaisevat, että laitteen tulee olla lahjapaketissa ennen toimitusta. Nämä ohjeet ovat toimintakelpoisia tietoja, joita pakkauksesta vastaavan Contoso-työntekijän tulisi käsitellä.
 + **Ei-toimittavissa olevat tiedot** – Asiakas esimerkiksi käy Contoso-myymälässä ja ilmaisee myyjälle kiinnostuksen *Halo*-peleihin ja -pelivälineisiin. Myyjä kirjoittaa nämä tiedot muistiinpanoihin. Tämän jälkeen tuotesuositusten ohjelma antaa asiakkaalle suosituksia tiedon perusteella.
 

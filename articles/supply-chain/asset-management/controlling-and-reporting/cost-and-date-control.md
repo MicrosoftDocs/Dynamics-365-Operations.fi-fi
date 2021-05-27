@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808661"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016129"
 ---
 # <a name="cost-and-date-control"></a>Kustannusten ja päivämäärien hallinta
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-Käyttöomaisuuden hallinnassa voit laskea kustannuksia, jolloin saat yleiskuvan todellisista kustannuksista resurssien, toiminnallisten sijaintien tai työtilausten budjettikustannuksiin verrattuna. Todelliset kustannukset perustuvat kirjattuihin tapahtumiin. 
+Käyttöomaisuuden hallinnassa voit laskea kustannuksia, jolloin saat yleiskuvan todellisista kustannuksista resurssien, toiminnallisten sijaintien tai työtilausten budjettikustannuksiin verrattuna. Todelliset kustannukset perustuvat kirjattuihin tapahtumiin.
 
 Voit myös määrittää päivämäärän laskemisen, jos haluat verrata ajoitettuja alkamis- ja päättymispäiviä työtilausten todellisiin alkamis- ja päättymispäiviin.
 
@@ -46,8 +44,8 @@ Käyttöomaisuudelle, toiminnallisille sijainneille ja työtilauksille tehdyt la
 
 5. **Taso** -kentän avulla voit määrittää, miten yksityiskohtaisia kustannushallinnan riveistä haluat liittyen toiminnallisiin sijainteihin. 
 
-    Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintihierarkia, kaikki toimintosijainnin kustannusten hallinnan rivit näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. 
-    
+    Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintihierarkia, kaikki toimintosijainnin kustannusten hallinnan rivit näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista.
+
     Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki kustannusten hallinnan rivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
 
 6. Valitse **Näytä avoin sidottu kustannus** -vaihtopainikkeen arvoksi Kyllä, jos haluat sisällyttää kyseisen sarakkeen laskelmiin.
@@ -64,7 +62,7 @@ Käyttöomaisuudelle, toiminnallisille sijainneille ja työtilauksille tehdyt la
 
 10. Napsauta **Resurssien kustannusten hallinta** -sivulla **Ryhmittele**-painikkeita tuodaksesi näkyviin laskun vaaditun yksityiskohtaisuuden tason. Valitut **Ryhmittely...**-painikkeet on korostettu. Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.
 
-## <a name="example"></a>Esimerkki
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Esimerkki resurssien kustannusten hallinnan laskutuloksista
 
 Alla olevassa näyttökuvassa on esimerkki **Resurssien kustannusten hallinta** -laskennan tuloksista.
 
@@ -76,7 +74,6 @@ Alla olevassa näyttökuvassa on esimerkki **Resurssien kustannusten hallinta** 
 ![Esimerkki Resurssien kustannusten hallinnan laskutuloksista](media/02-controlling-and-reporting.png)
 
 Toinen tapa määrittää kustannuslaskennat on valita valita monta resurssia **Kaikki resurssit**- tai **Aktiiviset resurssit** -kohdassa. Valitse sitten **Yleiset**-välilehden **Kustannusten hallinta** -painike. **Resurssien kustannusten hallinta**-valintaikkunassa valitut käyttöomaisuudet lisätään automaattisesti **Sisällytettävät tietueet** -pikavälilehden **Resurssi**-kenttään. Valitse **OK**, niin valittujen käyttökohteiden kustannuslaskennat näytetään. Sama menettely voidaan tehdä toiminnallisille sijainneille kohdassa **Kaikki toiminnalliset sijainnit** tai **Aktiiviset toiminnalliset sijainnit** sekä kohdassa  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
-
 
 ## <a name="work-order-date-control"></a>Työtilausten päivämäärien hallinta
 
@@ -94,7 +91,7 @@ Tämän sivun avulla voit saada yleiskuvan suunnitelluista alkamis- ja päättym
 
 6. Valitse **Ryhmittely...**-painikkeita tuodaksesi näkyviin laskun vaaditun yksityiskohtaisuuden tason. Valitut **Ryhmittely...**-painikkeet on korostettu. Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.
 
-## <a name="example"></a>Esimerkki
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Esimerkki työtilausten päivämäärien hallinnan laskutuloksista
 
 Alla olevassa näyttökuvassa on esimerkki **Työtilauksen päivämäärien hallinta** -laskennan tuloksista.
 

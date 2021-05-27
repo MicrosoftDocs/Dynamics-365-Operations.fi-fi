@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 25f02517bf333716bdb7c74ce1decebcd4e30c6d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a1ee19a052c4a64995e6fcaa4afbe04b3e95fa55
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801888"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027549"
 ---
 # <a name="loyalty-overview"></a>Kanta-asiakkuuden yleiskatsaus
 
@@ -142,7 +142,7 @@ Jälleenmyyjät voit määrittää myös kanta-asiakaskorttikohtaisen kanta-asia
     > Järjestelmä pakottaa käyttäjät tällä hetkellä määrittämään muiden tehtävätyyppien numerosarjan, mutta se ei ole enää pakollinen vaihe tulevissa julkaisuissa. Voit määrittää numerosarjan valitsemalla **Commercen yhteiset parametrit** \> **Numerosarjat** ja valitsemalla sitten **Kanta-asiakkuuden muun tehtävätyypin tunnus** -kohdan numerosarjan.
 
 - Hyvän asiakaspalvelun tarjoamisen ja asiakkaiden kyselyjen tehokkaan ratkaisemisen kannalta on tärkeää, että kassoilla on asiakkaan täydellisen profiilin käyttöoikeus. Version 10.0 myötä kassat näkevät myyntipisteessä kanta-asiakkuuden historiatiedot liitetyn kanta-asiakasohjelman ja tason tietojen lisäksi.
-- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, versiossa 10.0 otetaan käyttöön uudenlainen toimituksen rajaan liittyvä kampanja, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen. Esimerkiksi 35 dollaria käyttämällä saa maksuttoman kahden päivän toimituksen tai kaikki kanta-asiakkaat saavat maksuttoman kahden päivän toimituksen. Tämä ominaisuus käytätä uutta edistynyttä automaattisten kulujen ominaisuutta. Lisätietoja [edistyneestä automaattisista kuluista](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Nämä edistyneet automaattiset kulut on otettava käyttöön, jotta lähetyskampanja toimisi. Ne voidaan ottaa käyttöön **Commercen parametrit** -sivun **Mukautetut tilaukset** -välilehdessä tai ottamalla käyttöön Käytä edistyneitä automaattisia kuluja -määrityksen. Koska vähittäismyyjä voi lisäksi määrittää monenlaisia veloituksia, kuten käsittely- tai asennusmaksuja, vähittäismyyjän on määritettävä, mikä veloitus on toimituskulu. Toimitusalennuksia käytetään vain tilausten toimituskuluihin. Määritä kulu toimituskuluksi siirtymällä **Maksukoodit**-lomakkeen valitsemalla ensin **Retail ja Commerce** \> **Retail ja Commerce IT** \> **Kanavan asetukset** \> **Kulut** ja sitten toivottujen kulujen Toimituskulut-valintaruudun. Siirry nyt **Toimitusraja-alennus** -lomakkeeseen ja määritä alennus.
+- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, versiossa 10.0 otetaan käyttöön uudenlainen toimituksen rajaan liittyvä kampanja, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen. Esimerkiksi 35 dollaria käyttämällä saa maksuttoman kahden päivän toimituksen tai kaikki kanta-asiakkaat saavat maksuttoman kahden päivän toimituksen. Tämä ominaisuus käytätä uutta edistynyttä automaattisten kulujen ominaisuutta. Lisätietoja [edistyneestä automaattisista kuluista](/dynamics365/unified-operations/retail/omni-auto-charges). Nämä edistyneet automaattiset kulut on otettava käyttöön, jotta lähetyskampanja toimisi. Ne voidaan ottaa käyttöön **Commercen parametrit** -sivun **Mukautetut tilaukset** -välilehdessä tai ottamalla käyttöön Käytä edistyneitä automaattisia kuluja -määrityksen. Koska vähittäismyyjä voi lisäksi määrittää monenlaisia veloituksia, kuten käsittely- tai asennusmaksuja, vähittäismyyjän on määritettävä, mikä veloitus on toimituskulu. Toimitusalennuksia käytetään vain tilausten toimituskuluihin. Määritä kulu toimituskuluksi siirtymällä **Maksukoodit**-lomakkeen valitsemalla ensin **Retail ja Commerce** \> **Retail ja Commerce IT** \> **Kanavan asetukset** \> **Kulut** ja sitten toivottujen kulujen Toimituskulut-valintaruudun. Siirry nyt **Toimitusraja-alennus** -lomakkeeseen ja määritä alennus.
 
     Tuotealennusten tavoin tämä alennus hyväksyy kaikki aiemmat vakioalennustoiminnot, kuten sen, että vähittäismyyjä voi rajoittaa näitä alennuksia kupongeilla siten, että asiakkaat saavat nämä alennukset vain kuponkia käyttämällä. Lisäksi nämä alennukset määrittää kyseisten alennusten kelpoisuuden hyödyntämällä hintaryhmätoimintoa. Vähittäismyyjä voi esimerkiksi valita näiden kampanjoiden suorittamisen vain verkkokanavissa ja/tai tiettyjen asiakasryhmien, kuten kanta-asiakkaiden, kanavissa. Kun tilausrivit, joilla on määritetty toimitustapa, vastaavat määrittyjä rajaa, toimitusalennusta käytetään ja toimitusmaksua pienennetään määritetyn alennuksen perusteella. 
 

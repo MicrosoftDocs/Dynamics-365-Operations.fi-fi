@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f062f40c9eb883d02c4a0ee06c797ed1b0b22665
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793992"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018577"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -30,7 +30,7 @@ Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kulutta
 Dynamics 365 Commerce käyttää Azure AD B2C -ratkaisua käyttäjän tunnistetietojen ja todennuksen työnkulkujen tukemisessa. Käyttäjä voi rekisteröityä, kirjautua sisään ja nollata salasanan näiden työnkulkujen avulla. Azure AD B2C tallentaa luottamukselliset käyttäjän todennustiedot, kuten käyttäjätunnuksen ja salasanan. B2C-vuokraajan käyttäjätietueeseen tallennetaan B2C:n paikallisen tilin tietue tai B2C:n yhteisöpalvelun tunnuksen tarjoajan tietue. Nämä B2C-tietueet linkitetään takaisin asiakastietueeseen Commerce-ympäristössä.
 
 > [!WARNING] 
-> Azure AD B2C poistaa vanhat käyttäjätyönkulut käytöstä 1.8.2021 mennessä. Näin ollen on hyvä suunnitella käyttäjätyönkulkujen siirtämistä uuteen suositeltuun versioon. Uudessa versiossa on ominaisuuksien pariteetti ja uusia ominaisuuksia. Commerce-version 10.0.15 tai sitä uudemman version moduulikirjastoa tulee käyttää suositeltujen B2C-käyttäjätyönkulkujen kanssa. Lisätietoja on kohdassa [Työnkulut Azure Active Directory B2C:ssä](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C poistaa vanhat käyttäjätyönkulut käytöstä 1.8.2021 mennessä. Näin ollen on hyvä suunnitella käyttäjätyönkulkujen siirtämistä uuteen suositeltuun versioon. Uudessa versiossa on ominaisuuksien pariteetti ja uusia ominaisuuksia. Commerce-version 10.0.15 tai sitä uudemman version moduulikirjastoa tulee käyttää suositeltujen B2C-käyttäjätyönkulkujen kanssa. Lisätietoja on kohdassa [Työnkulut Azure Active Directory B2C:ssä](/azure/active-directory-b2c/user-flow-overview).
  
  > [!NOTE]
  > Commerce-arviointiympäristöt tulevat esiladatun Azure AD B2C -vuokraajan kanssa esittelytarkoituksiin. Arviointiympäristöissä ei tarvitse ladata omaa Azure AD B2C -vuokraajaa alla olevia vaiheita käyttäen.
@@ -88,7 +88,7 @@ Luo B2C-sovellus seuraavasti.
 1. Ota ne käyttöön sovelluksessa valitsemalla **Implisiittinen myöntäminen** -kohdasta sekä **Käyttöoikeustunnukset** että **Tunnukset**. Valitse **Tallenna**.
 1. Siirry Azure-portaalin **Yhteenveto**-valikkoon ja kopioi **Sovelluksen (asiakasohjelman) tunnus**. Huomaa, että tämä tunnus tarvitaan myöhemmissä määritysvaiheissa (viitataan myöhemmin nimellä **Asiakasohjelman GUID**).
 
-Lisätietoja sovelluksen rekisteröinneistä Azure AD B2C:ssä on kohdassa [Azure Active Directory B2C:n uusi sovelluksen rekisteröintikokemus](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide)
+Lisätietoja sovelluksen rekisteröinneistä Azure AD B2C:ssä on kohdassa [Azure Active Directory B2C:n uusi sovelluksen rekisteröintikokemus](/azure/active-directory-b2c/app-registrations-training-guide)
 
 ### <a name="reply-urls"></a>Vastauksen URL-osoitteet
 
@@ -110,7 +110,7 @@ Azure AD B2C sisältää seuraavat kolme käyttäjän perustyönkulkutyyppiä:
 
 Voit halutessasi käyttää Azure AD:n käyttäjän oletustyönkulkua. Se näyttää AAD B2C:n isännöimän sivun. Vaihtoehtoisesti voit luoda HTML-sivun, jonka avulla hallitaan näiden käyttäjän työnkulkukokemusten ulkoasua. 
 
-Jos haluat mukauttaa Dynamics 365 Commercella luotuja käyttäjän käytäntöjen sivuja, katso [Käyttäjän sisäänkirjausten mukautettujen sivujen määrittäminen](custom-pages-user-logins.md). Lisätietoja on kohdassa [Azure Active Directory B2C:n käyttäjäkokemusten käyttöliittymän mukauttaminen](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+Jos haluat mukauttaa Dynamics 365 Commercella luotuja käyttäjän käytäntöjen sivuja, katso [Käyttäjän sisäänkirjausten mukautettujen sivujen määrittäminen](custom-pages-user-logins.md). Lisätietoja on kohdassa [Azure Active Directory B2C:n käyttäjäkokemusten käyttöliittymän mukauttaminen](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulkukäytännön luominen
 
@@ -197,15 +197,15 @@ Jos yhteisöpalveluiden tunnustietojen tarjoajan todentaminen lisätään ja kä
 
 Ennen kuin lisäät yhteisöpalvelujen tunnistetietojen tarjoajan todennusta varten, siirry tunnistetietojen tarjoajan portaaliin ja määritä tunnistetietojen tarjoajan sovellus Azure AD B2C -dokumentaatiossa määritetyllä tavalla. Alla on luettelo dokumentaation linkeistä.
 
-- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (yksi vuokraaja)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Microsoft-tili](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (yksi vuokraaja)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft-tili](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Yhteisöpalvelujen tunnistetietojen tarjoajan lisääminen ja määrittäminen
 
@@ -346,11 +346,11 @@ Voit liittää B2C-sovelluksen sivustoon ja kanavaan seuraavasti.
 
 Jos harkitset asiakastietojen siirtämistä aiemmasta tunnistetietojen tarjoajan ympäristöstä, tarkista asiakkaan siirron tarpeet Dynamics 365 Commerce -ryhmän kanssa.
 
-Lisätietoja asiakkaan siirron Azure AD B2C -dokumentaatiosta on kohdassa [Käyttäjien siirtäminen Azure Active Directory B2C -sovellukseen](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+Lisätietoja asiakkaan siirron Azure AD B2C -dokumentaatiosta on kohdassa [Käyttäjien siirtäminen Azure Active Directory B2C -sovellukseen](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Mukautetut käytännöt
 
-Lisätietoja Azure AD B2C -sovelluksen yhteydenottojen ja käytännön työnkulkujen mukauttamisesta erilaisiksi kuin B2C-standardikäytännöt on kohdassa [Azure Active Directory B2C -sovelluksen mukautetut käytännöt](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Lisätietoja Azure AD B2C -sovelluksen yhteydenottojen ja käytännön työnkulkujen mukauttamisesta erilaisiksi kuin B2C-standardikäytännöt on kohdassa [Azure Active Directory B2C -sovelluksen mukautetut käytännöt](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Toissijainen järjestelmänvalvoja
 

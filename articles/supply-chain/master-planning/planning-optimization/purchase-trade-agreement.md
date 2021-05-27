@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961702"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015898"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Pääsuunnittelu ja ostokauppasopimukset
 
@@ -67,7 +67,7 @@ Kun järjestelmä on valmisteltu edellisessä osassa kuvatulla tavalla, varmista
 1. Toista tämä toimenpide jokaiselle oleelliselle tuotteelle.
 
 > [!NOTE]
-> Suunnittelun optimointi tukee monivaluutan kauppasopimuksia. Kun järjestelmä hakee kauppasopimusta **Alhaisin yksikköhinta** -asetuksella, järjestelmä harkitsee eri valuuttoja käyttävät kauppasopimusrivit, jos kauppasopimusrivin valuutan ja yrityksen kirjanpitovaluutan välillä on määritetty vaihtokurssi. Muussa tapauksessa kauppasopimusriviä ei oteta huomioon, ja näkyviin tulee virhe pääsuunnittelun aikana. Pääsuunnittelu sisältää siis kaikkien niiden asiaankuuluvien ostosopimusrivien tiedot, joissa hinnat voidaan muuntaa kirjanpitovaluutaksi.
+> Suunnittelun optimointi tukee monivaluutan kauppasopimuksia. Kun järjestelmä hakee kauppasopimusta **Alhaisin yksikköhinta** -asetuksella, järjestelmä harkitsee eri valuuttoja käyttävät kauppasopimusrivit, jos kauppasopimusrivin valuutan ja yrityksen kirjanpitovaluutan välillä on määritetty vaihtokurssi. Muussa tapauksessa kauppasopimusriviä ei oteta huomioon, ja näkyviin tulee virhe pääsuunnittelun aikana. Pääsuunnittelu sisältää siis kaikkien niiden asiaankuuluvien ostosopimusrivien tiedot, joissa hinnat voidaan muuntaa kirjanpitovaluutaksi. On tärkeää muistaa, että pyöristyssääntöjä ei oteta huomioon kauppasopimuksen rivihinnan muuntamisen yhteydessä.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Esimerkkejä siitä, miten suunnittelun optimointi löytää toimittaja- ja läpimenoajat
 

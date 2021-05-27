@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834593"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026202"
 ---
 # <a name="set-up-postdated-checks"></a>Määritä jälkeen päin päivitetyt sekit
 
@@ -53,7 +53,11 @@ Tämä menettelyn rooli on Rahastonhoitaja. Näissä toimintaohjeissa käytetä�
     * Valitse laskun summan vähennyksessä käytettävä pankkitili.  
 18. Valitse Tallenna.
 19. Sulje sivu.
-
-
+> [!NOTE]
+> Ennen kuin voit kirjata myöhemmäksi päivätyn sekin pankkitilille, kun istunnon päivämäärä on suurempi tai yhtä suuri kuin erääntymispäivä, ota käyttöön ominaisuus **Maksukirjauskansion erääntymispäivän vahvistus myöhemmäksi päivätyillä sekeillä pankkitilille**. Tämän ominaisuuden avulla voit kirjata toimittajien tai asiakkaiden maksukirjauskansioita, joilla on myöhemmäksi päivättyjä sekkejä, kun istunnon päivämäärä on suurempi tai yhtä suuri kuin erääntymispäivä.
+> 
+> Kun määrität kohtaa **Maksutapa** (**Ostoreskontra > Maksun asetukset > Maksutavat**), älä täytä **Välitili**-kohtaa. Tällöin vastatiliksi määritetään pankkitili, joka on määritetty **Maksutapa**-kohdassa.
+>  
+> Kun toiminto on käytössä ja istunnon päivämäärä on erääntymispäivää pienempi, maksukirjauskansiota kirjattaessa näyttöön tulee seuraava virhesanoma: "Erääntymispäivämäärän on oltava yhtä suuri tai pienempi kuin istunnon päivämäärä, jos vastatilityyppinä on Pankki". Jos toiminto ei ole käytössä, voit kirjata maksukirjauskansion, jossa on myöhemmäksi päivätty sekki, kun istunnon päivämäärä on pienempi kuin erääntymispäivä.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

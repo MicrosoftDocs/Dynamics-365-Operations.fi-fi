@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792240"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027936"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Ostoskorin ja maksusivun yleiskatsaus
 
@@ -83,7 +83,7 @@ Asiakas voi suorittaa kassaprosessin valmiiksi vierailijana tai kirjautuneena k�
 
 ### <a name="order-summary"></a>Tilauksen yhteenveto
 
-Kassaprosessi näyttää ostoskorin rivinimikkeiden yhteenvedon. Asiakas voi tarkistaa tilauksen ennen sen tekemistä. Rivinimikkeitä ei voi muokata kassatyönkulun aikana. Näkyvissä on kuitenkin linkki ostoskoriin siltä varalta, että asiakas haluaa siirtyä takaisin ja muokata rivinimikkeitä.
+Kassaprosessi näyttää ostoskorin rivinimikkeiden yhteenvedon. Asiakas voi tarkistaa tilauksen ennen tilauksen tekemistä. Rivinimikkeitä ei voi muokata kassatyönkulun aikana. Näkyvissä on kuitenkin linkki ostoskoriin siltä varalta, että asiakas haluaa siirtyä takaisin ja muokata rivinimikkeitä.
 
 Kun asiakas antaa toimitus- ja laskutustiedot, tilauksen yhteenvetoon päivittyy summa kanta-asiakkuuspisteiden, lahjakorttien ja muiden maksutapojen huomioimisen jälkeen.
 
