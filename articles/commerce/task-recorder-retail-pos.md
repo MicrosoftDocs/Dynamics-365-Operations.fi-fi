@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795210"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028104"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
 
@@ -135,7 +135,7 @@ Huomautus on lisäteksti, joka lisätään vaiheeseen tallennuksen aikana. Huoma
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS:n ja pilvimyyntipisteen ohje
 
-Voit näyttää omat mukautetut tehtävätallenteet Retail Modern POS:n ja pilvimyyntipisteen ohjeruudussa niin, että niitä voidaan tarkastella tekstinä, kun tallennat tehtävätallenteet ensin omaan BPM-kirjastoon ja päivität sitten ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../fin-and-ops/get-started/help-connect.md). Retail Modern POS:n ja pilvimyyntipisteen ohje tekee haut LCS-palvelusta reaaliaikaisesti. Se tekee haun kaikista BPM-kirjastoista, jotka on valittu Commercen ohjejärjestelmän parametreissa, ja näyttää hakua vastaavat tulokset. Voit käyttää **Ohje**-valikkoa valitsemalla näytön yläosassa olevan **Ohje**-painikkeen (kysymysmerkki) kirjoittamalla hakuruutuun prosessin nimen ja painamalla hakupainiketta.
+Voit näyttää omat mukautetut tehtävätallenteet Retail Modern POS:n ja pilvimyyntipisteen ohjeruudussa niin, että niitä voidaan tarkastella tekstinä, kun tallennat tehtävätallenteet ensin omaan BPM-kirjastoon ja päivität sitten ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS:n ja pilvimyyntipisteen ohje tekee haut LCS-palvelusta reaaliaikaisesti. Se tekee haun kaikista BPM-kirjastoista, jotka on valittu Commercen ohjejärjestelmän parametreissa, ja näyttää hakua vastaavat tulokset. Voit käyttää **Ohje**-valikkoa valitsemalla näytön yläosassa olevan **Ohje**-painikkeen (kysymysmerkki) kirjoittamalla hakuruutuun prosessin nimen ja painamalla hakupainiketta.
 
 [![Ohje-painike](./media/help.jpg)](./media/help.jpg)
 

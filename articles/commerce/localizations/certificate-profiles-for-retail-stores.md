@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 66a2cc5c87f5567f0e65842638017e5127d68a13
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44042fc43fa3b43358120fb6f8f633abeae7005f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798858"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020310"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
 
@@ -79,7 +79,7 @@ Voit määrittää seuraavat kentät, kun lisäät uuden rivin **Varmenneprofiil
 - **Key Vault -varmenne** – Tämä kenttä on pakollinen, jos **Sijainnin tyyppi** -kentän arvo on **Key Vault**. Sen avulla määritetään Key Vault -varmenteen salainen koodi.
 
     > [!NOTE]
-    > Varmista ennen Key Vault -varmenteen käyttöä varmenneprofiileissa, että varmenne on ladattu avainsäilötallennukseen ja nouda ohjeita kohdassa [Azure Key Vault -asiakasohjelman määrittäminen](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
+    > Varmista ennen Key Vault -varmenteen käyttöä varmenneprofiileissa, että varmenne on ladattu avainsäilötallennukseen ja nouda ohjeita kohdassa [Azure Key Vault -asiakasohjelman määrittäminen](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 - **Myymälän nimi** – Tämä kenttä on valinnainen ja käytettävissä vain, jos **Sijainnin tyyppi** -kentän arvo on **Paikallinen varmenne**. Määritä sen avulla oletusmyymälän nimi, jolla haetaan paikallisia varmenteita.
 - **Myymälän sijainti** – Tämä kenttä on valinnainen ja käytettävissä vain, jos **Sijainnin tyyppi** -kentän arvo on **Paikallinen varmenne**. Määritä sen avulla oletusmyymälän sijainti, jolla haetaan paikallisia varmenteita.

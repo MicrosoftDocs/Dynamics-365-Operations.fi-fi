@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814293"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027791"
 ---
 # <a name="three-way-matching-policies"></a>Kolmisuuntaiset vastaavuuskäytännöt
 
@@ -37,9 +37,9 @@ Fabrikam toimii useiden yritysten ja työntekijöiden kanssa maailmanlaajuisesti
 
 Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraavissa rooleissa toimivia henkilöitä saavuttamaan nämä tavoitteet:
 
--   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Hän voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
+-   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Ken voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
 -   Paula ja April ovat laskentapäälliköitä Fabrikamin Yhdysvaltain haaran ostoreskontraosastolla. He voivat valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilaukseen sekä sen ollessa aiheellista, tuotteiden ja palveluiden vastaanottoon.
--   Tony on Fabrikamin Yhdysvaltain haaran tuotantopäällikkö. Hän ja muu tuotantohenkilöstö voi varmistaa, että nimikkeet vastaanotetaan siten, miten ne on tilattu toimittajilta ja että ne ovat seurattavissa niin, että henkilökunnalla on työnsä suorittamiseen vaadittavat resurssit.
+-   Tony on Fabrikamin Yhdysvaltain haaran tuotantopäällikkö. Tony ja muu tuotantohenkilöstö voi varmistaa, että nimikkeet vastaanotetaan siten, miten ne on tilattu toimittajilta ja että ne ovat seurattavissa niin, että henkilökunnalla on työnsä suorittamiseen vaadittavat resurssit.
 
 ### <a name="prerequisites"></a>Edellytykset
 
@@ -51,13 +51,13 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 
     | Nimiketunnus                 | Määrä | Yksikköhinta | Nettosumma | Kulujen koodi        | Kulujen arvo |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron-kone | 5        | 8 000,00   | 40 000,00  | Toimitus ja käsittely | 3 000,00      |
+    | 1500 – CNC Milicron-kone | 5        | 8 000,00   | 40 000,00  | Toimitus ja käsittely | 3,000.00      |
 
--   Arnie, Contoson myyntireskontrakäsittelijä tarkistaa viikon toimitukset. Hän lähetystapahtumat, jotka laskutetaan Fabrikamilta CNC Milicron-koneiden toimituksesta. Hän lisää lähetys- ja käsittelykulut laskulle. Fabrikam ottaa toimituskulut osaksi käyttöomaisuuden kustannusta.
+-   Arnie, Contoson myyntireskontrakäsittelijä, tarkistaa viikon toimitukset. Hän lähetystapahtumat, jotka laskutetaan Fabrikamilta CNC Milicron-koneiden toimituksesta. Hän lisää lähetys- ja käsittelykulut laskulle. Fabrikam ottaa toimituskulut osaksi käyttöomaisuuden kustannusta.
 
 ### <a name="scenario"></a>Skenaario
 
-1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
+1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä, vastaanottaa Contoson konetoimituksen kokonaismäärän. Sammy syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
     -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 Financessa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
@@ -87,7 +87,7 @@ Yhteenveto: Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. H
 Volyymi ja summat ovat pieniä, ja tiettyjen malesialaistoimittajien lähetyksissä on ollut ongelmia. Tämän vuoksi Cassie määrittää tiettyjen, Malesiasta hankittavien nimike- ja toimittajayhdistelmien hallinnan tasoksi kolmisuuntaisen vastaavuuden. 
 
 Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraavissa rooleissa toimivia henkilöitä saavuttamaan nämä tavoitteet:
--   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Hän voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
+-   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Ken voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
 -   Cassie on Fabrikamin Malesian-konttorin kirjanpitäjä. Hän voi valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilauksen riveihin sekä tuotteiden vastaanottoihin, jotka vastaavat tuotteita ja palveluita. Hän voi myös nostaa hallinnan tason kolmisuuntaiseksi vastaavuudeksi haluamilleen nimikkeille hallitakseen toiminnan kustannuksia.
 
 ### <a name="prerequisites"></a>Edellytykset

@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944410"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980946"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -58,7 +58,10 @@ Scale unitit omistavat seuraavat tiedot:
   - **Siirtotilaukset** (vain lähtevät, jossa yksinkertainen keräily- ja lastaustyö)
 
 - **Varastotilauksen vastaanoton tiedot** – näitä tietoja käytetään vain ostotilauksissa, jotka on vapautettu varastoon.
-- **Rekisterikilven tiedot** – Rekisterikilpiä voidaan luoda keskuksessa ja scale unitissa. Erillinen ristiriitojen käsittely on mahdollista. Huomaa, että nämä tiedot eivät ole varastokohtaisia.
+- **Rekisterikilven tiedot** – Rekisterikilpiä voidaan luoda sekä keskuksessa että scale uniteissa. Erillinen ristiriitojen käsittely on mahdollista. 
+
+    > [!IMPORTANT]
+    > Rekisterikilpien tiedot eivät ole varastokohtaisia. Jos saman rekisterinumeron saa luoda sekä keskuksessa että scale unitissa saman synkronointisyklin aikana, seuraava synkronointi epäonnistuu. Jos näin tapahtuu, valitse **Järjestelmänhallinta > Kyselyt > Kuormituskyselyt > Tietueiden kaksoiskappaleet**, jossa voit tarkastella ja yhdistää tietoja.
 
 ## <a name="outbound-process-flow"></a>Lähtevien käsittelyn työnkulku
 

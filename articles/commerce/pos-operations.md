@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804278"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027645"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -64,7 +64,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 642 | Toteutus - kaikki tuotteet | Määritä kaikkien rivien toimitustavaksi **Nouto liikkeestä**. | Kyllä | Kyllä | En | Kyllä\* | En |
 | 641 | Toteutus - valitut tuotteet | Määritä valittujen rivien toimitustavaksi **Nouto liikkeestä**. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 647 | Muuta toimitustapaa | Muuta esimääritettyjen lähetyksen myyntirivien toimitustapaa. | Kyllä | Kyllä | Ei | Ei| Ei |
-| 1215 | Vaihda salasana | Tämän toiminnon avulla myyntipisteen käyttäjä voi vaihtaa oman salasanansa. | Kyllä | Kyllä | Kyllä | En | En |
+| 1215 | Vaihda salasana | Tämän toiminnon avulla myyntipisteen käyttäjä voi vaihtaa oman salasanansa. | Kyllä | Kyllä | Kyllä | Nro | Nro |
 | 123 | Muuta mittayksikköä | Muuta valitun rivinimikkeen mittayksikkö. | Kyllä | Kyllä | En | Kyllä | En |
 | 639 | Poista tapahtuman oletusmyyntiedustaja | Poista provisiomyyntiryhmä (myyjä) tapahtumasta. | Kyllä | Kyllä | En | Kyllä | En |
 | 106 | Tyhjennä määrä | Palauta valitun rivin määräksi **1**. | Kyllä | Kyllä | En | Kyllä | En |

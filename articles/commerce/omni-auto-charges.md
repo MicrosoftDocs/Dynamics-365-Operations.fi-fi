@@ -1,5 +1,5 @@
 ---
-title: Monikanavaiset edistyneet automaattiset kulut
+title: Omnikanavan automaattiset etukäteisveloitukset
 description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten lisäkulujen hallintaa edistyneiden automaattisten kuluominaisuuksien avulla.
 author: hhaines
 ms.date: 03/30/2020
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3326f8740874083746c1566063ee7d265ee90faf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804670"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022704"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanavan automaattiset etukäteisveloitukset
 
@@ -29,9 +29,9 @@ ms.locfileid: "5804670"
 
 Tässä ohjeaiheessa on tietoja edistyneiden automaattisten kulujen määrittämisestä ja käyttöönottamisesta. Nämä ominaisuudet ovat käytössä Dynamics 365 for Retailin versiossa 10.0.
 
-Kun edistyneet automaattiset kuluominaisuudet on otettu käyttöön, missä tahansa tuetussa Commerce-kanavassa (myyntipiste, puhelinkeskus tai verkko) luoduissa tilauksissa voi käyttää [automaattisten kulujen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä, jotka on määritetty ERP-sovelluksessa otsikko- ja rivitason kuluille.
+Kun edistyneet automaattiset kuluominaisuudet on otettu käyttöön, missä tahansa tuetussa Commerce-kanavassa (myyntipiste, puhelinkeskus tai verkko) luoduissa tilauksissa voi käyttää [automaattisten kulujen](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä, jotka on määritetty ERP-sovelluksessa otsikko- ja rivitason kuluille.
 
-Retailin versiota 10.0 edeltävissä versioissa [automaattisen kulun](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä voitiin käyttää vain sähköisessä kaupankäynti- ja puhelinkeskuskanavissa. Versiosta 10.0 alkaen myyntipisteessä luoduissa tilauksissa voidaan käyttää automaattisten kulujen määrityksiä. Tällöin tavoin sekalaiset lisäkulut voi lisätä järjestelmällisesti myyntitapahtumiin.
+Retailin versiota 10.0 edeltävissä versioissa [automaattisen kulun](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä voitiin käyttää vain sähköisessä kaupankäynti- ja puhelinkeskuskanavissa. Versiosta 10.0 alkaen myyntipisteessä luoduissa tilauksissa voidaan käyttää automaattisten kulujen määrityksiä. Tällöin tavoin sekalaiset lisäkulut voi lisätä järjestelmällisesti myyntitapahtumiin.
 
 Kun käytössä on versiota 10.0 edeltävä versio, myyntipistekäyttäjää pyydetään lisäämään toimitusmaksu manuaalisesti myyntipisteen Lähetä kaikki- tai Lähetä valitut -tapahtuma. Vaikka sovelluksen muiden kulujen toimintoja käytetään kulujen kirjoittamiseen tilaukseen, mikään järjestelmällinen laskenta ei ole käytettävissä, sillä laskenta määrittää kulujen arvon käyttäjän antamien tietojen perusteella. Kulut voidaan lisätä vain yhtä lähetykseen liittyvänä kulukoodina eikä niitä voi juurikaan muokata tai muuttaa myyntipisteessä sen jälkeen, kun ne on luotu.
 
@@ -39,7 +39,7 @@ Lähetyskulujen lisäämiskehotuksia voi edelleen käyttää versiossa 10.0 ja s
 
 Edistyneen automaattisen kuluominaisuuden ansiosta myyntipistekäyttäjät saavat käyttöönsä järjestelmälliset, automaattisiin kulujen määritystaulukoihin perustuvat laskutoimitukset kaikille määritetyille muille kuluille. Käyttäjät voivat myös lisätä tai muokata rajoittamatonta määrää lisäkuluja ja -maksuja minkä tahansa myyntipisteen myyntitapahtuman otsikko- tai rivitasolla (kun kyse on itsepalvelutukku- tai asiakastilauksesta).
 
-## <a name="enabling-advanced-auto-charges"></a>Edistyneiden automaattisten kulujen ottaminen käyttöön
+## <a name="enable-advanced-auto-charges"></a>Edistyneiden automaattisten kulujen ottaminen käyttöön
 
 Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen parametrit** -sivulla **Asiakastilaukset**-välilehti. Määritä **Kulut**-pikavälilehdessä **Käytä edistyneitä automaattisia kuluja** -asetukseksi **Kyllä**.
 
@@ -51,9 +51,9 @@ Kun edistyneet automaattiset kulut on otettu käyttöön, aiemmin luotuja **kulj
 
 Varmista ennen tämän ominaisuuden käyttöönottoa, että olet testannut toimintoa ja kouluttanut työntekijät, sillä käyttöön otettu ominaisuus muuttaa liiketoimintaprosessia, jolla toimituskulut ja muut kulut lasketaan ja lisätään myyntipisteen myyntitilauksiin. Varmista, että tiedät, miten prosessi vaikuttaa tapahtumien luontiin myyntipisteestä. Edistyneiden automaattisten kulujen käyttöönottaminen ei juurikaan vaikuta puhelinkeskuksen ja sähköisen kaupankäynnin tilauksiin. Puhelinkeskuksen ja sähköisen kaupankäynnin sovellukset toimivat samalla tavalla kuin aiemminkin, kun kyse on tilauksen lisämaksujen laskemisesta automaattisen kulutaulukoiden avulla. Puhelinkeskuskanavan käyttäjät voivat jatkossakin muokata manuaalisesti mitä tahansa järjestelmän laskemaa automaattista kulua otsikko- tai rivitasolla tai lisätä manuaalisesti muita kuluja otsikko- ja rivitasolla.
 
-## <a name="additional-pos-operations"></a>Myyntipisteen lisätyövaiheet
+## <a name="add-pos-operations"></a>Myyntipistetoimintojen lisääminen
 
-Edistyneet automaattiset kulut toimivat myyntipistesovelluksessa odotustenmukaisesti vain, jos myyntipisteen uudet työvaiheet on lisätty. Nämä työvaiheet on lisättävä [myyntipisteen näyttöasetteluihin](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) ja otettava käyttöön myyntipistelaitteissa, kun edistyneet automaattiset kulut otetaan käyttöön. Jos näitä työvaiheita ei lisätä, käyttäjät eivät voi hallita eivätkä ylläpitää muita kuluja myyntipistetapahtumissa. He eivät voi myöskään muokata eivätkä muuttaa niiden kulujen arvoja, jotka lasketaan järjestelmällisesti automaattisten kulujen määritysten perusteella. Tämän vuoksi ainakin **Kulujen hallinta** -työvaihe on syytä ottaa käyttöön myyntipisteen asettelussa.
+Edistyneet automaattiset kulut toimivat myyntipistesovelluksessa odotustenmukaisesti vain, jos myyntipisteen uudet työvaiheet on lisätty. Nämä työvaiheet on lisättävä [myyntipisteen näyttöasetteluihin](/dynamics365/unified-operations/retail/pos-screen-layouts) ja otettava käyttöön myyntipistelaitteissa, kun edistyneet automaattiset kulut otetaan käyttöön. Jos näitä työvaiheita ei lisätä, käyttäjät eivät voi hallita eivätkä ylläpitää muita kuluja myyntipistetapahtumissa. He eivät voi myöskään muokata eivätkä muuttaa niiden kulujen arvoja, jotka lasketaan järjestelmällisesti automaattisten kulujen määritysten perusteella. Tämän vuoksi ainakin **Kulujen hallinta** -työvaihe on syytä ottaa käyttöön myyntipisteen asettelussa.
 
 Uudet työvaiheet:
 
@@ -74,7 +74,7 @@ Tämän osan esimerkkitapaukset auttavat hahmottamaan automaattisten kulujen ja 
 
 #### <a name="use-case-scenario"></a>Käyttötapausskenaario
 
-Jälleenmyyjä haluaa lisätä rahtikulut automaattisesti, kun tapahtumat luodaan jossain Commerce-kanavassa, jossa tuotteet on lähetettävä asiakkaalle. Jälleenmyyjä antaa kaksi toimitusvaihtoehto: maakuljetus ja lentorahti. Jos asiakas valitsee maakuljetuksen ja tilauksen arvo on alle 100 dollaria, jälleenmyyjä halua veloittaa asiakkaalta rahtikuluna 10 dollaria. Jos tilauksen arvo on yli 100 dollaria ja asiakas valitsee maakuljetuksen, asiakkaalta ei veloiteta rahtikuluja. Jos asiakas valitsee kaikkien tilausten toimitustavaksi lentorahdin, rahtikuluna veloitetaan kokonaisarvosta riippumatta 20,00 dollaria.
+Jälleenmyyjä haluaa lisätä rahtikulut automaattisesti, kun tapahtumat luodaan jossain Commerce-kanavassa, jossa tuotteet on lähetettävä asiakkaalle. Jälleenmyyjä antaa kaksi toimitusvaihtoehto: maakuljetus ja lentorahti. Jos asiakas valitsee maakuljetuksen ja tilauksen arvo on alle 100 dollaria, jälleenmyyjä halua veloittaa asiakkaalta rahtikuluna 10 dollaria. Jos tilauksen arvo on yli 100 dollaria ja asiakas valitsee maakuljetuksen, asiakkaalta ei veloiteta lisärahtikuluja. Jos asiakas valitsee kaikkien tilausten toimitustavaksi lentorahdin, rahtikuluna veloitetaan kokonaisarvosta riippumatta 20,00 dollaria.
 
 #### <a name="setup-and-configuration"></a>Asetukset ja määrittäminen
 
@@ -142,7 +142,7 @@ Jo kulu on toimitukseen liittyvä kulu, jota käytetään toimitusalennuksissa t
 
 Lähetä veloitukset Commercen asteikkoyksikköön/kanavatietokantaan, jotta myyntipiste voi käyttää niitä suorittamalla **1040 jakeluaikataulu** -työn.
 
-**Lisää otsikon kulut** -työvaiheen on oltava määritettynä [myyntipisteen näyttöasettelussa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), jotta käyttäjän myyntipisteestä käytettävä painike voi kutsua tämän toimenpiteen (toimenpide 141). Näyttöasettelun muutokset on jaettava kanavaan; lisäksi ne jaettava jakeluaikataulutoiminnon kautta.
+**Lisää otsikon kulut** -työvaiheen on oltava määritettynä [myyntipisteen näyttöasettelussa](/dynamics365/unified-operations/retail/pos-screen-layouts), jotta käyttäjän myyntipisteestä käytettävä painike voi kutsua tämän toimenpiteen (toimenpide 141). Näyttöasettelun muutokset on jaettava kanavaan; lisäksi ne jaettava jakeluaikataulutoiminnon kautta.
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Manuaalisten otsikon kulujen myyntikäsittely
 
@@ -164,7 +164,7 @@ Jo kulu on toimitukseen liittyvä kulu, jota käytetään toimitusalennuksissa t
 
 Lähetä veloitukset Commercen asteikkoyksikköön/kanavatietokantaan, jotta myyntipiste voi käyttää niitä suorittamalla **1040 jakeluaikataulu** -työn.
 
-**Lisää rivin kulut** -työvaiheen on oltava määritettynä [myyntipisteen näyttöasettelussa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), jotta käyttäjän myyntipisteestä käytettävä painike voi kutsua tämän toimenpiteen (toimenpide 140). Näyttöasettelun muutokset on jaettava kanavaan; lisäksi ne jaettava jakeluaikataulutoiminnon kautta.
+**Lisää rivin kulut** -työvaiheen on oltava määritettynä [myyntipisteen näyttöasettelussa](/dynamics365/unified-operations/retail/pos-screen-layouts), jotta käyttäjän myyntipisteestä käytettävä painike voi kutsua tämän toimenpiteen (toimenpide 140). Näyttöasettelun muutokset on jaettava kanavaan; lisäksi ne jaettava jakeluaikataulutoiminnon kautta.
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Manuaalisen rivin kulun myyntikäsittely
 
@@ -176,7 +176,7 @@ Samaa prosessia voidaan käyttää puhelinkeskuksessa käyttämällä kulujen yl
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Myyntipisteen myyntitapahtuman kulujen muokkaaminen
 
-**Kulujen hallinta** -työvaihe (142) on lisättävä [myyntipisteen näyttöasetteluun](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), jotta käyttäjä voi tarkastella ja muokata tai korvata järjestelmän laskeman tai manuaalisesti luodut otsikko- tai rivitason kulut. Jos työvaihetta ei lisätä, käyttäjät eivät voi säätää kulujen arvoa myyntipistetapahtumassa. He eivät voi myöskään tarkastella kulujen tietoja, kuten kuluun sidotun kulukoodin tyyppiä.
+**Kulujen hallinta** -työvaihe (142) on lisättävä [myyntipisteen näyttöasetteluun](/dynamics365/unified-operations/retail/pos-screen-layouts), jotta käyttäjä voi tarkastella ja muokata tai korvata järjestelmän laskeman tai manuaalisesti luodut otsikko- tai rivitason kulut. Jos työvaihetta ei lisätä, käyttäjät eivät voi säätää kulujen arvoa myyntipistetapahtumassa. He eivät voi myöskään tarkastella kulujen tietoja, kuten kuluun sidotun kulukoodin tyyppiä.
 
 Käyttäjä voi tarkastella myyntipisteen **Kulujen hallinta** -sivulla sekä otsikko- että rivitason kulujen tietoja. Käyttäjä voi tehdä tämän sivun **Muokkaa**-toiminnolla muutoksia summaan, joka veloitetaan tietyllä kulurivillä. Kun kulurivi ohitetaan manuaalisesti, sitä ei lasketa järjestelmällisesti uudelleen, ellei käyttäjä käynnistä **Laske kulut uudelleen** -työvaihetta.
 
@@ -197,7 +197,7 @@ Kuluja ei palauteta järjestelmällisesti Commercessa luotuihin **palautustilauk
 Seuraavat kuittielementit on lisättävä kuittiriville ja alatunnisteeseen tukemaan edistynyttä automaattisten kulujen toimintoa.
 
 - **Rivin toimituskulut** – Tällä rivitason elementillä voidaan kerrata tietyt myyntirivillä käytetyt kulujen koodit. Tässä näkyy vain ne kulujen koodit, jotka on merkitty **toimituskuluiksi** **Kulujen koodi** -sivulla.
-- **Rivin muut kulut** – Tällä rivitason elementillä voidaan kerrata kaikki muut kuin lähetyksen myyntirivillä käytetyt kulujen koodit. Ne ovat kulujen koodeja, joissa **Lähetys**-merkintää ei ole otettu käyttöön **Kulujen koodi** -sivulla.
+- **Rivin muut kulut** – Tällä rivitason elementillä voidaan kerrata kaikki muut kuin lähetyksen myyntirivillä käytetyt kulujen koodit. **Rivin muut kulut** ovat kulujen koodeja, joissa **Lähetys**-merkintää ei ole otettu käyttöön **Kulujen koodi** -sivulla.
 - **Tilauksen toimituskulujen tiedot** – Tämä alatunnistetason elementti näyttää niiden kulujen koodien kuvaukset, joita on käytetty tilaukseen, joka on merkitty **toimituskuluiksi** **Kulujen koodi** -asetussivulla.
 - **Tilauksen toimituskulut** – Tämä alatunnistetason elementti näyttää toimitukseen liittyvien kulujen dollariarvon.
 - **Tilauksen muiden kulujen tiedot** – Tämä alatunnistetason elementti näyttää niiden kulujen koodien kuvaukset, joita ei ole käytetty tilaukseen, joka on merkitty toimitukseen kuluiksi.

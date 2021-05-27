@@ -2,7 +2,6 @@
 title: Myymälän valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853414"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021461"
 ---
 # <a name="store-selector-module"></a>Myymälän valitsinmoduuli
 
@@ -62,7 +61,7 @@ Voit antaa myymälän sijainnin leveys- ja pituusasteet Commerce headquarters -s
 
 ## <a name="bing-maps-integration"></a>Bing Maps -integrointi
 
-Myymälän valitsinmoduuli on integroitu [Bing Maps REST -sovelluksen ohjelmointirajapintoihin](https://docs.microsoft.com/bingmaps/rest-services/). Niitä käytetään Bingin geokoodauksen ja automaattisten ehdotusten ominaisuuksien kanssa. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä Commercen pääkonttorisovelluksen jaettuihin parametreihin. Geokoodauksen ohjelmointirajapintaa käytetään sijainnin muuntamisessa leveys- ja pituusarvoiksi. Integrointia automaattisen ehdotuksen ohjelmointirajapinnan kanssa käytetään näytettäessä hakuehdotukset, kun käyttäjä syöttää sijainnit hakukenttään.
+Myymälän valitsinmoduuli on integroitu [Bing Maps REST -sovelluksen ohjelmointirajapintoihin](/bingmaps/rest-services/). Niitä käytetään Bingin geokoodauksen ja automaattisten ehdotusten ominaisuuksien kanssa. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä Commercen pääkonttorisovelluksen jaettuihin parametreihin. Geokoodauksen ohjelmointirajapintaa käytetään sijainnin muuntamisessa leveys- ja pituusarvoiksi. Integrointia automaattisen ehdotuksen ohjelmointirajapinnan kanssa käytetään näytettäessä hakuehdotukset, kun käyttäjä syöttää sijainnit hakukenttään.
 
 Automaattisen ehdotuksen REST-ohjelmointirajapintaa varten on varmistettava, että seuraavat URL-osoitteet ovat sallittuja sivuston sisällön suojauskäytännön (CSP) perusteella. Tämä asetus tehdään Commercen sivustonmuodostimessa lisäämällä sallitut URL-osoitteet eri CSP-direktiiveihin sivustolle (esimerkiksi **img-src**). Lisätietoja on kohdassa [Sisällön suojauskäytäntö](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Myymälän valitsinmoduuli tukee **Nouto myymälästä** -tilaa. Se näyttää n
 
 Myymälän valitsinmoduuli voidaan lisätä ostoruutumoduuliin PDP:ssä. Näin näytetään myymälät, joissa tuote on noudettavissa. Se voidaan lisätä myös ostoskoriin. Tässä tapauksessa myymälän valitsinmoduuli näyttää noutovaihtoehdot kullekin ostoskorin rivinimikkeelle. Myymälän valitsinmoduuli voidaan myös lisätä muille sivuille tai moduuleihin laajennusten ja mukautuksien kautta.
 
-Jotta tämä skenaario toimisi, tuotteet on konfiguroitava niin, että käytössä on **nouto**-toimitustapa. Muussa tapauksessa moduulia ei näytetä tuotesivuilla. Lisätietoja toimitustilan konfiguroinnista on kohdassa [Toimitustapojen määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Jotta tämä skenaario toimisi, tuotteet on konfiguroitava niin, että käytössä on **nouto**-toimitustapa. Muussa tapauksessa moduulia ei näytetä tuotesivuilla. Lisätietoja toimitustilan konfiguroinnista on kohdassa [Toimitustapojen määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Seuraavassa kuvassa on esimerkki PDP:n käytössä olevasta myymälän valitsinmoduulista.
 
 ![Esimerkki PDP:ssä käytetystä myymälän valitsinmoduulista](./media/BOPIS.PNG)
 
 > [!NOTE]
-> Versiossa 10.0.16 ja uudemmissa versioissa voidaan ottaa käyttöön uusi toiminto, jonka avulla organisaatio voi määrittää asiakkaille useita toimituksen noutovaihtoehtoja.  Jos tämä toiminto on käytössä, myymälävalitsinta ja muita sähköisen kaupan käynnin moduuleja parannetaan, jotta ostaja voi valita mahdollisesti useista noutovaihtoehdoista.  Lisätietoja tästä ominaisuudesta on [tässä ohjeessa](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> Versiossa 10.0.16 ja uudemmissa versioissa voidaan ottaa käyttöön uusi toiminto, jonka avulla organisaatio voi määrittää asiakkaille useita toimituksen noutovaihtoehtoja.  Jos tämä toiminto on käytössä, myymälävalitsinta ja muita sähköisen kaupan käynnin moduuleja parannetaan, jotta ostaja voi valita mahdollisesti useista noutovaihtoehdoista.  Lisätietoja tästä ominaisuudesta on [tässä ohjeessa](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Etsi myymälät -tila
 
@@ -157,11 +156,11 @@ Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän ohjeaiheen kuv
 
 [Ostoskorin ja kassan pikaesittely](quick-tour-cart-checkout.md)
 
-[Määritä toimitustavat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Määritä toimitustavat](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Bing Maps -karttapalvelun hallinta organisaatiossa](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST -ohjelmointirajapinta](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Maps REST -ohjelmointirajapinta](/bingmaps/rest-services/)
 
 [Kartat-moduuli](map-module.md)
 

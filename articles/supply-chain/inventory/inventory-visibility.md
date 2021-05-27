@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910422"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017003"
 ---
 # <a name="inventory-visibility-add-in"></a>Varaston näkyvyyden apuohjelma
 
@@ -41,20 +41,23 @@ Varaston näkyvyyden lisäapuohjelman asentamiseen on käytettävä Microsoft Dy
 
 Lisätietoja on kohdassa [Lifecycle Services -resurssit](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### <a name="prerequisites"></a>Edellytykset
+### <a name="inventory-visibility-add-in-prerequisites"></a>Varaston näkyvyyden apuohjelman edellytykset
 
 Ennen varaston näkyvyyden apuohjelman asentamista:
 
 - Hanki LCS-toteutusprojekti, jossa on otettu käyttöön vähintään yksi ympäristö.
 - Varmista, että kohdassa [Lisäosien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) annetut edellytykset lisäosien määrittämiselle on täytetty. Varaston näkyvyys ei edellytä kaksoiskirjoituslinkitystä.
 - Ota yhteyttä varaston näkyvyyden tiimiin [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), jotta saat seuraavat kolme vaadittua tiedostoa:
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (jos käynnissä ollut Supply Chain Managementin versio on aiempi kuin 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (jos käynnissä ollut Supply Chain Managementin versio on aiempi kuin 10.0.18)
+- Vaihtoehtoisesti ota yhteyttä varaston näkyvyyden tiimiin [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), jotta saat Package Deployer -paketit. Virallinen Package Deployer -työkalu voi käyttää näitä pakkauksia.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (tämä paketti sisältää kaikki `InventoryServiceBase`-paketin muutokset sekä muut käyttöliittymäsovelluksen komponentit)
 - Noudata seuraavassa annettuja ohjeita: [Pikaopas: Rekisteröi hakemus Microsoft identity Platformiin](/azure/active-directory/develop/quickstart-register-app) sovelluksen rekisteröimiseksi ja asiakkaan lisäämiseksi AAD:lle ylläpitosopimuksen mukaan.
-    - [Sovelluksen rekisteröinti](/azure/active-directory/develop/quickstart-register-app)
-    - [Lisää asiakasohjelman salasana](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - **Sovelluksen (asiakas) tunnuksen**, **asiakasohjelman salasanan** ja **vuokraajan tunnuksen** avulla voidaan tehdä seuraavat vaiheet.
+  - [Sovelluksen rekisteröinti](/azure/active-directory/develop/quickstart-register-app)
+  - [Lisää asiakasohjelman salasana](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - **Sovelluksen (asiakas) tunnuksen**, **asiakasohjelman salasanan** ja **vuokraajan tunnuksen** avulla voidaan tehdä seuraavat vaiheet.
 
 > [!NOTE]
 > Tällä hetkellä tuettuja maita ja alueita ovat Kanada, Yhdysvallat ja Euroopan unioni (EU).
@@ -63,18 +66,49 @@ Jos sinulla on näitä edellytyksiä koskevia kysymyksiä, ota yhteys varaston n
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Määritys Dataverse
 
-Määritä Dataverse noudattamalla seuraavia ohjeita.
+Jotta voit määrittää Dataversen käytön varaston näkyvyyden avulla, sinun on ensin valmisteltava edellytykset ja päätettävä, määritetäänkö Dataverse joko Package Deployer -työkalun avulla vai tuomalla ratkaisut manuaalisesti (molempia ei tarvitse tehdä). Asenna sitten Varaston näkyvyyden lisäapuohjelma. Seuraavissa aliosissa kuvataan, kuinka kukin tehtävä viimeistellään.
 
-1. Lisää palveluperiaate vuokraajaan:
+#### <a name="prepare-dataverse-prerequisites"></a>Dataverse-edellytysten valmisteleminen
 
-    1. Asenna Azure AD PowerShell Module v2, kuten kuvattu kohdassa [Asenna Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-    1. Suorita seuraava PowerShell-komento.
+Ennen kuin aloitat Dataversen määrittämisen, lisää vuokraajaan huoltoperiaate seuraavasti:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Asenna Azure AD PowerShell Module v2, kuten kuvattu kohdassa [Asenna Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Suorita seuraava PowerShell-komento:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>Dataversen määrittäminen Package Deployer -työkalun avulla
+
+Kun olet määrittänyt tarvittavat edellytykset, käytä seuraavaa menettelyä, jos haluat määrittää Dataversen Package Deployer -työkalun avulla. Seuraavassa osassa on tietoja ratkaisujen tuonnista manuaalisesti (älä tee molempia).
+
+1. Asenna kehittäjien työkalut kohdassa [Lataa työkalut kohteesta NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget) kuvatulla tavalla.
+
+1. Liiketoimintavaatimustesi mukaan valitse `InventoryServiceBase`- tai `InventoryServiceApplication`-paketti.
+
+1. Tuo ratkaisut:
+    1. `InventoryServiceBase`-paketille:
+        - Pura `InventoryServiceBase.PackageDeployer.zip`
+        - Etsi kansio `InventoryServiceBase`, tiedosto `[Content_Types].xml`, tiedosto `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, tiedosto `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config` ja tiedosto `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Kopioi nämä kansiot ja tiedostot `.\Tools\PackageDeployment`-hakemistoon, joka luotiin kehittäjien työkalujen asennuksen yhteydessä.
+    1. `InventoryServiceApplication`-paketille:
+        - Pura `InventoryServiceApplication.PackageDeployer.zip`
+        - Etsi kansio `InventoryServiceApplication`, tiedosto `[Content_Types].xml`, tiedosto `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, tiedosto `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config` ja tiedosto `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Kopioi nämä kansiot ja tiedostot `.\Tools\PackageDeployment`-hakemistoon, joka luotiin kehittäjien työkalujen asennuksen yhteydessä.
+    1. Suorita `.\Tools\PackageDeployment\PackageDeployer.exe`. Voit tuoda ratkaisut noudattamalla näytön ohjeita.
+
+1. Määritä käyttöoikeusroolit sovelluksen käyttäjälle.
+    1. Avaa Dataverse-ympäristön URL-osoite.
+    1. Valitse **Lisäasetukset \> Järjestelmä \> Suojaus \> Käyttäjät** ja etsi käyttäjä nimeltä **# InventoryVisibility**.
+    1. Valitse **Määritä rooli** ja valitse sitten **Järjestelmänvalvoja**. Jos saatavana on rooli nimeltä **Common Data Service -käyttäjä**, valitse myös se.
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>Määritä Dataverse manuaalisesti tuomalla ratkaisuja
+
+Kun olet määrittänyt tarvittavat edellytykset, käytä seuraavaa menettelyä, jos haluat määrittää Dataversen tuomalla ratkaisuja manuaalisesti. Edellisessä osassa on lisätietoja Package Deployer -työkalun käytöstä sen sijaan (älä tee molempia).
 
 1. Luo sovelluskäyttäjä varaston näkyvyydelle Dataversessä:
 

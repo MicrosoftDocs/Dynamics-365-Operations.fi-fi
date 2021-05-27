@@ -16,12 +16,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa845f4d41e0bd7725349a216b9e4ee79efee79d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b3db432ae10139bcd8ee400b0bbc1173e33ef206
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792412"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019808"
 ---
 # <a name="product-recommendations-faq"></a>Tuotesuositukset – usein kysytyt kysymykset
 
@@ -68,7 +68,7 @@ Jos haluat estää nimikkeen löytymisen myymälästä, muuta **Nimikelajitelma*
 
 ## <a name="how-do-i-add-a-list-to-an-e-commerce-page"></a>Miten voin lisätä luettelon sähköisen kaupankäynnin sivulle?
 
-Lisätietoja tuotesuositussivujen lisäämisestä sähköisen kaupankäynnin sivustoon on kohdassa [Tuotesuositusluetteloiden lisääminen sivuille](add-reco-list-to-page.md).
+Lisätietoja tuotesuositussivujen lisäämisestä sähköisen kaupankäynnin sivustoon on kohdassa [Tuotesuositusluetteloiden lisääminen sivuille](./product-recommendations.md).
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Miten otan käyttöön suositukset myyntipisteellä?
 

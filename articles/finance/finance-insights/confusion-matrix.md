@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818749"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028200"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Koneoppimismallien tulokset (esiversio)
 
@@ -63,8 +63,8 @@ Ota tämän kysymyksen tarkastelussa huomioon luonnollisen arvauksen tarkkuus. L
 
 Toinen näkökulma tulee ottaa huomioon. Ota huomioon skenaario, jossa potilaan sairauden havaitsemisessa käytetään lääketieteellistä testiä. Tämä ongelma on binaarinen luokitteluongelma, jossa positiivinen tulos osoittaa, että potilaalla on kyseinen sairaus. Tässä skenaariossa on otettava huomioon seuraavien virheiden vaikutus:
 
-- Virheelliset positiiviset, joissa testi osoittaa potilaan olevan sairas, mutta oikeasti hän ei ole sairas
-- Virheelliset negatiiviset, joissa testi osoittaa, että potilas ei ole sairas, vaikka tämä oikeasti on
+- Virheelliset positiiviset, joissa testi osoittaa potilaan olevan sairas, mutta oikeasti hän ei ole sairas.
+- Virheelliset negatiiviset, joissa testi osoittaa, että potilas ei ole sairas, vaikka tämä oikeasti on.
 
 On selvää, että kumpikaan tapaus ei ole toivottu tulos, mutta kumpi on pahempi? Tämä riippuu tilanteesta. Jos kysymyksessä on henkeä uhkaava sairaus, joka edellyttää nopeaa hoitoa, virheellisten negatiivisten minimoiminen (toivottavasti lisätestien jälkeen) on tärkeintä. Muissa vähemmän kriittisissä tilanteissa mallien tekijät voivat minimoida virheelliset positiiviset sen sijaan. Joka tapauksessa on perusteltua sanoa, että mallin laadun määrittäminen tehokkaasti edellyttää, että tietoja on tarkkuusmittaria enemmän.
 

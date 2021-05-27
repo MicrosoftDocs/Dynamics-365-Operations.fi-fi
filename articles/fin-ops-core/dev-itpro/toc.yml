@@ -84,7 +84,7 @@
               href: dev-tools/version-models-build.md
         - name: Tietojen integrointi
           items:
-            - name: Tietojen integrointistrategian (tuonti/vienti) valitseminen
+            - name: Finance and Operations -sovellusten ja kolmannen osapuolen palveluiden integroiminen
               href: data-entities/integration-overview.md
             - name: Prioriteettipohjainen rajoittaminen
               hreF: data-entities/priority-based-throttling.md
@@ -126,196 +126,62 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Tietueiden luonti tietuemallien avulla
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Tietojen integrointi Dataversen avulla
+                - name: Tietojen integrointiohjelma
                   items:
-                    - name: Tietojen integrointi Dataversen avulla – yleiskatsaus
-                      href: data-entities/data-integration-cds.md
-                    - name: Kaksoiskirjoituksen integrointi
+                    - name: Prospekteista käteiseksi -skenaarion määrittäminen
                       items:
-                        - name: Kaksoiskirjoituksen aloitussivu
-                          href: data-entities/dual-write/dual-write-home-page.md
-                        - name: Kaksoiskirjoituksen uudet ja muuttuneet ominaisuudet
-                          href: data-entities/dual-write/whats-new-dual-write.md
-                        - name: Kaksoiskirjoituksen yleiskatsaus
-                          href: data-entities/dual-write/dual-write-overview.md
-                        - name: Kaksoiskirjoituksen asetukset
-                          items:
-                            - name: Kaksoiskirjoituksen järjestelmävaatimukset
-                              href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Kaksoiskirjoituksen määrittämisen ohjeet
-                              href: data-entities/dual-write/connection-setup.md
-                            - name: Alustavaa synkronointia koskevia huomautuksia
-                              href: data-entities/dual-write/initial-sync-guidance.md
-                            - name: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
-                              href: data-entities/dual-write/lcs-setup.md
-                            - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
-                              items:
-                                - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
-                                  href: data-entities/dual-write/enable-dual-write.md
-                                - name: Järjestelmävaatimukset ja edellytykset
-                                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                                - name: Ympäristöjen linkittäminen kaksoiskirjoituksen ohjatun toiminnon avulla
-                                  href: data-entities/dual-write/link-your-environment.md
-                                - name: Kaksoiskirjoituksen entiteettien yhdistämismäärityksen ottaminen käyttöön
-                                  href: data-entities/dual-write/enable-entity-map.md
-                            - name: Valuuttatietotyyppien siirto kaksoiskirjoitusta varten
-                              href: data-entities/dual-write/currrency-decimal-places.md
-                            - name: Myyntitilauksen tilakenttien määrityksen ottaminen käyttöön
-                              href: data-entities/dual-write/sales-status-map.md
-                            - name: Konsernin sisäisten tilausten suodattaminen tilausten ja tilausrivien synkronoinnin välttämiseksi
-                              href: data-entities/dual-write/filtering-intercompany-orders.md
-                        - name: Kaksoiskirjoituksen hallinta
-                          items:
-                            - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
-                              href: data-entities/dual-write/customizing-mappings.md
-                            - name: Useiden entiteettikarttojen käsitteleminen
-                              href: data-entities/dual-write/multiple-entity-maps.md
-                            - name: Yrityksen muokkaaminen kaksoiskirjoituksen käyttöönoton jälkeen
-                              href: data-entities/dual-write/edit-legal-entity.md
-                            - name: Virheiden hallinta ja hälytysilmoitukset
-                              href: data-entities/dual-write/errors-and-alerts.md
-                            - name: Sovellusten elinkaaren hallinta
-                              href: data-entities/dual-write/app-lifecycle-management.md
-                        - name: Käsitteiden vastaavuudet sovellusten välillä
-                          items:
-                            - name: Integroidut asiakkaan päätiedot
-                              href: data-entities/dual-write/customer-mapping.md
-                            - name: Toimittajien integrointi
-                              items:
-                                - name: Integroidut toimittajan päätiedot
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Toimittajan mallien välillä siirtyminen
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: Kanta-asiakaskortit ja palkkiopisteet
-                              href: data-entities/dual-write/loyalty-mapping.md
-                            - name: Tuoteintegrointi
-                              items:
-                                - name: Yhtenäinen tuotekokemus
-                                  href: data-entities/dual-write/product-mapping.md
-                                - name: Integroidut toimipaikat ja varastot
-                                  href: data-entities/dual-write/sites-warehouses-mapping.md
-                            - name: Yritysten integrointi
-                              items:
-                                - name: Yrityskonsepti Dataversessä
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Yrityksen tietojen alustaminen
-                                  href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Organisaatiohierarkia Dataversessä
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Talous- ja verotiedot
-                              items:
-                                - name: Talous- ja veroviitetietojen käyttöoikeus
-                                  href: data-entities/dual-write/finance-tax-reference.md
-                                - name: Integroitu kirjanpito
-                                  href: data-entities/dual-write/ledger-mapping.md
-                                - name: Integroidut verojen päätiedot
-                                  href: data-entities/dual-write/tax-mapping.md
-                            - name: Hankinnan integrointi Supply Chain Managementissa Field Servicen kanssa
-                              href: data-entities/dual-write/scm-field-service-procurement.md
-                            - name: Synkronointi Supply Chain Managementin hinnoittelumoduulin kanssa tarvittaessa
-                              href: data-entities/dual-write/pricing-engine.md
-                            - name: Prospektista käteiseksi kaksoiskirjoituksessa
-                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Dynamics 365 Commercen hinnoittelumoduulin käyttäminen Dynamics 365 Salesin kanssa
-                              href: data-entities/dual-write/commerce-pricing.md
-                            - name: Sisäiset resurssit huoltoa varten
-                              href: data-entities/dual-write/in-house-assets.md
-                            - name: Varaston käytettävyys
-                              href: data-entities/dual-write/inventory-availability.md
-                            - name: 'Integroitu työntekijä, työ ja sijainti'
-                              href: data-entities/dual-write/integrated-hr.md
-                            - name: Osapuolen osoitekirja ja yleinen osoitekirja
-                              href: data-entities/dual-write/party-gab.md
-                            - name: Power Portalin käyttö osapuolen tietomallin kanssa
-                              href: data-entities/dual-write/party-gab-portal.md
-                            - name: Päivitä osapuolen osoitekirja ja yleinen osoitekirja
-                              href: data-entities/dual-write/upgrade-party-gab.md
-                            - name: Huomautusten integrointi
-                              href: data-entities/dual-write/notes-integration.md
-                            - name: Määritysviite
-                              href: data-entities/dual-write/mapping-reference.md
-                        - name: Kaksoiskirjoituksen tuki
-                          items:
-                            - name: Tuki Field Service- ja Project Service Automation -ratkaisuille
-                              href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Prospektista käteiseksi -tietojen siirtäminen tietojen integrointityökalusta kaksoiskirjoitukseen
-                              href: data-entities/dual-write/migrate-prospect-to-cash.md
-                            - name: Vianmääritys
-                              items:
-                                - name: Kaksoiskirjoitusmääritysten tarkistus Finance and Operations -sovelluksissa ja Dataversessä
-                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                                - name: Ongelmien vianmääritys alkumäärityksen aikana
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                                - name: Ongelmien vianmääritys synkronoinnin aikana
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Finance and Operations -sovellusten kaksoiskirjoitusongelmien vianmääritys
-                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                                - name: Live-synkronoinnin ongelmien vianmääritys
-                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                                - name: Ratkaisujen käyttäjien osaamistasoon liittyvien ongelmien vianmääritys
-                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
-                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                                - name: Yleinen vianmääritys
-                                  href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Kaksoiskirjoituksen usein kysytyt kysymykset
-                          href: data-entities/dual-write/dual-write-faq.md
-                    - name: Power Platform -integraatio
+                        - name: Prospektista käteiseksi
+                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                        - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
+                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                        - name: Tuotteiden synkronointi suoraan Finance and Operationsista Salesin tuotteisiin
+                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                        - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
+                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                        - name: Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
+                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                        - name: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
+                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                        - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
+                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                    - name: Integroinnin määrittäminen Field Servicen kanssa
                       items:
-                        - name: Prospekteista käteiseksi -skenaarion määrittäminen
-                          items:
-                            - name: Prospektista käteiseksi
-                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
-                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: Tuotteiden synkronointi suoraan Finance and Operationsista Salesin tuotteisiin
-                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
-                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                            - name: Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
-                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                            - name: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
-                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
-                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                        - name: Integroinnin määrittäminen Field Servicen kanssa
-                          items:
-                            - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
-                              href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
-                              href: ../../supply-chain/sales-marketing/field-service-product.md
-                            - name: Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin
-                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                            - name: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
-                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                            - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Finance and Operations varastotasotietojen synkronointi Field Serviceen
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                            - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
-                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                            - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
-                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Finance and Operationsin varastojen synkronointi Field Serviceen
-                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Field Servicen työtilausten ja projektin synkronointi Finance and Operationsiin
-                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                        - name: Project Service Automation -Integroinnin määrittäminen
-                          items:
-                            - name: Project Service Automationin yleiskatsaus
-                              href: /dynamics365/project-operations/prod-pma/PSA-integration
-                            - name: Project Service Automation -integrointiparametrit
-                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                            - name: Projektisopimusten ja projektien synkronointi
-                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                            - name: Projektitehtävien synkronointi
-                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                            - name: Projektin kululuokkien synkronointi
-                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                            - name: Projektin arvioiden synkronointi projektin ennusteisiin
-                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                            - name: Projektin toteutuneiden tietojen synkronointi projektin integrointikirjauskansioon
-                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
+                          href: ../../supply-chain/sales-marketing/field-service.md
+                        - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
+                          href: ../../supply-chain/sales-marketing/field-service-product.md
+                        - name: Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin
+                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                        - name: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
+                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                        - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                        - name: Finance and Operations varastotasotietojen synkronointi Field Serviceen
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                        - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
+                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                        - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
+                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                        - name: Finance and Operationsin varastojen synkronointi Field Serviceen
+                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                        - name: Field Servicen työtilausten ja projektin synkronointi Finance and Operationsiin
+                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                    - name: Project Service Automation -Integroinnin määrittäminen
+                      items:
+                        - name: Project Service Automationin yleiskatsaus
+                          href: /dynamics365/project-operations/prod-pma/PSA-integration
+                        - name: Project Service Automation -integrointiparametrit
+                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
+                        - name: Projektisopimusten ja projektien synkronointi
+                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
+                        - name: Projektitehtävien synkronointi
+                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
+                        - name: Projektin kululuokkien synkronointi
+                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
+                        - name: Projektin arvioiden synkronointi projektin ennusteisiin
+                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
+                        - name: Projektin toteutuneiden tietojen synkronointi projektin integrointikirjauskansioon
+                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Ulkoisten verkkopalveluiden käyttö
               href: data-entities/consume-external-web-service.md
             - name: Sähköiset sanomat
@@ -496,6 +362,8 @@
                       href: deployment/updateenvironment-newinfrastructure.md
                     - name: Itsepalvelun kautta käyttöönotettujen ympäristöjen vianmääritys
                       href: deployment/troubleshoot-newinfrastructure.md
+                    - name: Suunniteltu ylläpito itsepalveluympäristöissä - usein kysytyt kysymykset
+                      href: deployment/plannedmaintenance-selfservice.md
                 - name: Azure Resource Manager -perehdytyksen suorittaminen
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute ja Finance and Operations
@@ -1150,8 +1018,140 @@
           items:
             - name: Microsoft Power Platform- ja Finance and Operations -integrointi
               href: power-platform/overview.md
+            - name: Kaksoiskirjoitus
+              items:
+                - name: Kaksoiskirjoituksen aloitussivu
+                  href: data-entities/dual-write/dual-write-home-page.md
+                - name: Kaksoiskirjoituksen uudet ja muuttuneet ominaisuudet
+                  href: data-entities/dual-write/whats-new-dual-write.md
+                - name: Kaksoiskirjoituksen yleiskatsaus
+                  href: data-entities/dual-write/dual-write-overview.md
+                - name: Kaksoiskirjoituksen asetukset
+                  items:
+                    - name: Kaksoiskirjoituksen järjestelmävaatimukset
+                      href: data-entities/dual-write/dual-write-system-req.md
+                    - name: Kaksoiskirjoituksen määrittämisen ohjeet
+                      href: data-entities/dual-write/connection-setup.md
+                    - name: Alustavaa synkronointia koskevia huomautuksia
+                      href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
+                      href: data-entities/dual-write/lcs-setup.md
+                    - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
+                      items:
+                        - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
+                          href: data-entities/dual-write/enable-dual-write.md
+                        - name: Järjestelmävaatimukset ja edellytykset
+                          href: data-entities/dual-write/requirements-and-prerequisites.md
+                        - name: Ympäristöjen linkittäminen kaksoiskirjoituksen ohjatun toiminnon avulla
+                          href: data-entities/dual-write/link-your-environment.md
+                        - name: Kaksoiskirjoituksen entiteettien yhdistämismäärityksen ottaminen käyttöön
+                          href: data-entities/dual-write/enable-entity-map.md
+                    - name: Valuuttatietotyyppien siirto kaksoiskirjoitusta varten
+                      href: data-entities/dual-write/currrency-decimal-places.md
+                    - name: Myyntitilauksen tilakenttien määrityksen ottaminen käyttöön
+                      href: data-entities/dual-write/sales-status-map.md
+                    - name: Konsernin sisäisten tilausten suodattaminen tilausten ja tilausrivien synkronoinnin välttämiseksi
+                      href: data-entities/dual-write/filtering-intercompany-orders.md
+                - name: Kaksoiskirjoituksen hallinta
+                  items:
+                    - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
+                      href: data-entities/dual-write/customizing-mappings.md
+                    - name: Useiden entiteettikarttojen käsitteleminen
+                      href: data-entities/dual-write/multiple-entity-maps.md
+                    - name: Yrityksen muokkaaminen kaksoiskirjoituksen käyttöönoton jälkeen
+                      href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Virheiden hallinta ja hälytysilmoitukset
+                      href: data-entities/dual-write/errors-and-alerts.md
+                    - name: Sovellusten elinkaaren hallinta
+                      href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Käsitteiden vastaavuudet sovellusten välillä
+                  items:
+                    - name: Integroidut asiakkaan päätiedot
+                      href: data-entities/dual-write/customer-mapping.md
+                    - name: Toimittajien integrointi
+                      items:
+                        - name: Integroidut toimittajan päätiedot
+                          href: data-entities/dual-write/vendor-mapping.md
+                        - name: Toimittajan mallien välillä siirtyminen
+                          href: data-entities/dual-write/vendor-switch.md
+                    - name: Kanta-asiakaskortit ja palkkiopisteet
+                      href: data-entities/dual-write/loyalty-mapping.md
+                    - name: Tuoteintegrointi
+                      items:
+                        - name: Yhtenäinen tuotekokemus
+                          href: data-entities/dual-write/product-mapping.md
+                        - name: Integroidut toimipaikat ja varastot
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
+                    - name: Yritysten integrointi
+                      items:
+                        - name: Yrityskonsepti Dataversessä
+                          href: data-entities/dual-write/company-data.md
+                        - name: Yrityksen tietojen alustaminen
+                          href: data-entities/dual-write/bootstrap-company-data.md
+                    - name: Organisaatiohierarkia Dataversessä
+                      href: data-entities/dual-write/organization-mapping.md
+                    - name: Talous- ja verotiedot
+                      items:
+                        - name: Talous- ja veroviitetietojen käyttöoikeus
+                          href: data-entities/dual-write/finance-tax-reference.md
+                        - name: Integroitu kirjanpito
+                          href: data-entities/dual-write/ledger-mapping.md
+                        - name: Integroidut verojen päätiedot
+                          href: data-entities/dual-write/tax-mapping.md
+                    - name: Hankinnan integrointi Supply Chain Managementissa Field Servicen kanssa
+                      href: data-entities/dual-write/scm-field-service-procurement.md
+                    - name: Synkronointi Supply Chain Managementin hinnoittelumoduulin kanssa tarvittaessa
+                      href: data-entities/dual-write/pricing-engine.md
+                    - name: Prospektista käteiseksi kaksoiskirjoituksessa
+                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                    - name: Dynamics 365 Commercen hinnoittelumoduulin käyttäminen Dynamics 365 Salesin kanssa
+                      href: data-entities/dual-write/commerce-pricing.md
+                    - name: Sisäiset resurssit huoltoa varten
+                      href: data-entities/dual-write/in-house-assets.md
+                    - name: Varaston käytettävyys
+                      href: data-entities/dual-write/inventory-availability.md
+                    - name: 'Integroitu työntekijä, työ ja sijainti'
+                      href: data-entities/dual-write/integrated-hr.md
+                    - name: Osapuolen osoitekirja ja yleinen osoitekirja
+                      href: data-entities/dual-write/party-gab.md
+                    - name: Power Portalin käyttö osapuolen tietomallin kanssa
+                      href: data-entities/dual-write/party-gab-portal.md
+                    - name: Päivitä osapuolen osoitekirja ja yleinen osoitekirja
+                      href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Huomautusten integrointi
+                      href: data-entities/dual-write/notes-integration.md
+                    - name: Määritysviite
+                      href: data-entities/dual-write/mapping-reference.md
+                - name: Kaksoiskirjoituksen tuki
+                  items:
+                    - name: Tuki Field Service- ja Project Service Automation -ratkaisuille
+                      href: data-entities/dual-write/field-service-project-service-automation.md
+                    - name: Prospektista käteiseksi -tietojen siirtäminen tietojen integrointiohjelmasta kaksoiskirjoitukseen
+                      href: data-entities/dual-write/migrate-prospect-to-cash.md
+                    - name: Vianmääritys
+                      items:
+                        - name: Kaksoiskirjoitusmääritysten tarkistus Finance and Operations -sovelluksissa ja Dataversessä
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Ongelmien vianmääritys alkumäärityksen aikana
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Ongelmien vianmääritys synkronoinnin aikana
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: Finance and Operations -sovellusten kaksoiskirjoitusongelmien vianmääritys
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Live-synkronoinnin ongelmien vianmääritys
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Ratkaisujen käyttäjien osaamistasoon liittyvien ongelmien vianmääritys
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Yleinen vianmääritys
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                - name: Kaksoiskirjoituksen usein kysytyt kysymykset
+                  href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuaaliyksiköt
               items:
+                - name: Virtuaaliyksiköiden yleiskatsaus
+                  href: power-platform/virtual-entities-overview.md
                 - name: Yksikkömallinnus
                   href: power-platform/entity-modeling.md
                 - name: Sovellusten elinkaaren hallinta

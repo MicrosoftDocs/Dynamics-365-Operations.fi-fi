@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a14b98cab78896d3a6c2e567cadc1ff9a991a278
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804328"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018951"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -70,7 +70,7 @@ Luotuja erätöitä käytetään epäonnistuneiden tai aikakatkaistujen asiakirj
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Edellytys: Saapuvan toiminnon lisääminen myyntipisteen näyttöasetteluun
 
-Ennen kuin organisaatio voi käyttää saapuvaa toimintoa, se on määritettävä **saapuvan toiminnon** myyntipistetoiminnossa vähintään yhdessä [myyntipisteen näyttöasettelussa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ennen kuin otat uuden toiminnon käyttöön tuotantoympäristössä, varmista, että se on testattu kunnolla ja käyttäjät on koulutettu käyttämään sitä.
+Ennen kuin organisaatio voi käyttää saapuvaa toimintoa, se on määritettävä **saapuvan toiminnon** myyntipistetoiminnossa vähintään yhdessä [myyntipisteen näyttöasettelussa](/dynamics365/unified-operations/retail/pos-screen-layouts). Ennen kuin otat uuden toiminnon käyttöön tuotantoympäristössä, varmista, että se on testattu kunnolla ja käyttäjät on koulutettu käyttämään sitä.
 
 ## <a name="overview"></a>Yleiskatsaus
 
@@ -159,9 +159,9 @@ Käyttäjät voivat vastaanottaa Commercessa versiosta 10.0.14 alkaen tuotteen, 
 
 Tämä toiminto toimii vain ostotilauksen vastaanottamisessa. Nimikkeitä ei voi vastaanottaa siirtotilausten perusteella, jos nimikkeitä ei ole tilattu aiemmin ja lähetetty lähtevästä varastosta.
 
-Käyttäjät eivät voi lisätä uusia tuotteita ostotilaukseen myyntipisteen vastaanoton aikana, jos ostotilauksen [muutosten hallinnan työnkulku](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) on otettu käyttöön Commercen pääkonttoriversiossa (HQ). Muutosten hallinnan käyttöönotto edellyttää, että kaikki ostotilauksen muutokset on hyväksyttävä, ennen kuin vastaanotto sallitaan. Koska vastaanottaja voi tämän prosessin myötä lisätä uusia rivejä ostotilaukseen, vastaanotto epäonnistuu, jos muutosten hallinnan työnkulku on otettu käyttöön. Jos muutosten hallinta on otettu käyttöön kaikissa ostotilauksissa tai toimittaja on linkitetty ostotilaukseen, jota vastaanotetaan aktiivisesti myyntipisteessä, käyttäjä ei voi lisätä myyntipisteessä uusia tuotteita ostotilaukseen vastaanoton aikana.
+Käyttäjät eivät voi lisätä uusia tuotteita ostotilaukseen myyntipisteen vastaanoton aikana, jos ostotilauksen [muutosten hallinnan työnkulku](../supply-chain/procurement/purchase-order-approval-confirmation.md) on otettu käyttöön Commercen pääkonttoriversiossa (HQ). Muutosten hallinnan käyttöönotto edellyttää, että kaikki ostotilauksen muutokset on hyväksyttävä, ennen kuin vastaanotto sallitaan. Koska vastaanottaja voi tämän prosessin myötä lisätä uusia rivejä ostotilaukseen, vastaanotto epäonnistuu, jos muutosten hallinnan työnkulku on otettu käyttöön. Jos muutosten hallinta on otettu käyttöön kaikissa ostotilauksissa tai toimittaja on linkitetty ostotilaukseen, jota vastaanotetaan aktiivisesti myyntipisteessä, käyttäjä ei voi lisätä myyntipisteessä uusia tuotteita ostotilaukseen vastaanoton aikana.
 
-Rivien lisäämisen mahdollistavaa toimintoa ei voi käyttää keinona vastaanottaa lisää ostotilauksessa jo olevia tuotteita. Ylivastaanottoa hallitaan ostotilauksen tuoterivin [ylivastaanoton](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) vakioasetuksilla.
+Rivien lisäämisen mahdollistavaa toimintoa ei voi käyttää keinona vastaanottaa lisää ostotilauksessa jo olevia tuotteita. Ylivastaanottoa hallitaan ostotilauksen tuoterivin [ylivastaanoton](#over-receiving-validations) vakioasetuksilla.
 
 Jos **Lisää rivejä ostotilaukseen myyntipisteen vastaanoton aikana** on otettu käyttöön ja käyttäjä käyttää myyntipisteessä vastaanottoon **saapuvaa toimintoa** ja jos käyttäjä lukee tai näppäilee tuotteen viivakoodin tai tuotenumeron, jota ei tunnisteta nykyisen ostotilauksen nimikkeeksi mutta joka tunnistetaan kelvolliseksi nimikkeeksi, käyttäjä vastaanottaa ilmoituksen nimikkeen lisäämisestä ostotilaukseen. Jos käyttäjä lisää nimikkeen ostotilaukseen, **Vastaanotto nyt** -kohdassa annettua arvoa pidetään ostotilausrivin tilattuna määränä.
 

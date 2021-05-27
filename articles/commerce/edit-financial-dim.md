@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff16d8e2e75a877e5ca7de604c7915e908473da6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 381d8bb0939f6c4c163477990e49382201487375
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792702"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019904"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>Vähittäismyyntitapahtumien taloushallinnon dimensioiden muokkaaminen
 
@@ -34,7 +34,7 @@ Voit muokata vähittäismyyntitapahtumien taloushallinnon dimensioita Commerce-p
 
 1. Avaa **Integrointisovellusten taloushallinnon dimension määritykset** -sivu.
 1. Valitse aktiivinen **Oletusdimensioiden integrointi** -tietue.
-1. Varmista **Taloushallinnon dimensiot** -pikavälilehdessä, että Excel-laskentataulukon kaikki muokattavat dimensiot löytyvät **Valitut**-luettelosta. Lisätietoja on kohdassa [Tietoentiteetit](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities).
+1. Varmista **Taloushallinnon dimensiot** -pikavälilehdessä, että Excel-laskentataulukon kaikki muokattavat dimensiot löytyvät **Valitut**-luettelosta. Lisätietoja on kohdassa [Tietoentiteetit](../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md#data-entities).
 1. Lataa ja avaa Excel-tiedosto **Laskelmat**-sivulla, **Vähittäismyyntitapahtumat**-sivulla tai **Tapahtuman tarkistusvirheet** -ruudussa **Myymälän taloustiedot** -työtilassa.
 1. Jos haluat muuttaa tapahtuman taloushallinnon dimensiota, valitse **Rakenne** ja valitse sitten **Tapahtuma (tarkistettavissa)** -rivin vieressä oleva kynäsymboli.
 1. Etsi ja valitse **FinancialDimensionDisplayValue**-kenttä, valitse Excel-laskentataulukon otsikon osan solu ja valitse sitten **Lisää selite**.

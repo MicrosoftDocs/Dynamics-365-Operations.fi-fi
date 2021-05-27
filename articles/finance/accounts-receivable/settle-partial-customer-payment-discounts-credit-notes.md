@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e785d591c25669d90c91ca1b676388522da3da36
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1296dc994e43d75fd9b834acf345134494b4810
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835169"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027501"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen
 
@@ -39,7 +39,7 @@ Asiakkaalla 4035 on lasku, jonka arvo on 1 000,00, ja hyvityslasku, jonka arvo o
 | CCRN-10050 | Hyvityslasku      | 28.6.2015 | KR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Hyvityslaskun tilittäminen laskun kanssa
-Arnie avaa **Asiakastapahtumat**-sivulla **Selvitä tapahtumat** -sivun. Hän voi tilittää laskun ja hyvityslaskun **Selvitä tapahtumat** -sivulla. Hän tarkistaa tilityksen yhteydessä käteisalennuksen päivämäärät ja summat. Hän merkitsee asiakirjat ja tilittää sitten tapahtumat napsauttamalla **Kirjaa**. Hyvityslaskuun sisältyy alennus -1,00, koska Fabrikam myöntää alennuksia hyvityslaskuista.
+Arnie avaa **Asiakastapahtumat**-sivulla **Selvitä tapahtumat** -sivun. Arnie voi tilittää laskun ja hyvityslaskun **Selvitä tapahtumat** -sivulla. Arnie tarkistaa tilityksen yhteydessä käteisalennuksen päivämäärät ja summat. Arnie merkitsee asiakirjat ja tilittää sitten tapahtumat napsauttamalla **Kirjaa**. Hyvityslaskuun sisältyy alennus -1,00, koska Fabrikam myöntää alennuksia hyvityslaskuista.
 
 | Merkitse     | Käytä käteisalennusta | Tosite    | Tili | Päivämäärä      | Eräpäivä  | Lasku  | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|

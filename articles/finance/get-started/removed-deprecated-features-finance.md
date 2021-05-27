@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
-ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
+ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965307"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980894"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -35,7 +35,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Financen version 10.0.20 poistetut tai vanhentuneet ominaisuudet
 
-### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>RTIR Query Invoice Data Request (HU) -muodon konfigurointi
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>"RTIR Query Invoice Data Request (HU)" Sähköisen raportoinnin (ER) muodon konfigurointi
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -45,6 +45,15 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Huhtikuun 15.4.2022 mennessä suunnitelma ei enää tue MUODON RTIR Query Invoice Data Request (HU) -muotoa. |
 
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>"Ranskan FEC-auditointitiedosto" Sähköisen raportoinnin (ER) muoto Ranskalle "Saksan tarkistustiedostotuloste" -muodon alaisena
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella "FEC-auditointitiedosto (FR)" -muodolla |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 1.5.2022 mennessä ei enää tueta kohdetta "Ranskan FEC-auditointitiedosto" Sähköisen raportoinnin (ER) muoto Ranskalle "Saksan tarkistustiedostotuloste" -muodon alaisena. Tietojen vientimalli -kohdassa käytetään sen sijaan uutta FEC-auditointitiedostomuotoa (FR). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Financen version 10.0.17 poistetut tai vanhentuneet ominaisuudet
 

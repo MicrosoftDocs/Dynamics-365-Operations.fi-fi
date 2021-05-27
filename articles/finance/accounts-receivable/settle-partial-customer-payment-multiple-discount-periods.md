@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21600c0815da99314dcbb8f123449c2ae93a3c1a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835097"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027477"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen
 
@@ -31,7 +31,7 @@ Tässä artikkelissa kerrotaan, miten osittaiset asiakkaan maksut tilitetään, 
 Fabrikam tarjoaa asiakkaalle 4031 kaksi käteisalennuskautta. Asiakas saa 2 prosentin käteisalennuksen, jos lasku maksetaan viiden päivän kuluessa, ja 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoice"></a>Lasku
-Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4031, jonka arvo on 1.000,00. Kun hän tarkastaa tämän laskun käteisalennukset, Erik näkee, että asiakas 4031 saa 20,00 arvoisen alennuksen, jos lasku maksetaan viimeistään 30. päivänä kesäkuuta. Jos lasku maksetaan viimeistään 9. päivänä heinäkuuta, asiakas saa 10,00 arvoisen alennuksen.
+Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4031, jonka arvo on 1.000,00. Kun Erik tarkastaa tämän laskun käteisalennukset, Erik näkee, että asiakas 4031 saa 20,00 arvoisen alennuksen, jos lasku maksetaan viimeistään 30. päivänä kesäkuuta. Jos lasku maksetaan viimeistään 9. päivänä heinäkuuta, asiakas saa 10,00 arvoisen alennuksen.
 
 | Käteisalennuksen päivämäärä | Käteisalennussumma | Summa tapahtuman valuuttana |
 |--------------------|----------------------|--------------------------------|

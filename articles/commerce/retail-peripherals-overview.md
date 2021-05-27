@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857270"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018828"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
@@ -158,7 +158,7 @@ Verkossa käytettäviä kassoja, kuittitulostimia ja maksupäätteitä voi käyt
 
 ### <a name="dedicated"></a>Varattu
 
-Nykyaikaisissa POS-asiakkaissa Windowsille ja Androidille on **Erilliset** tai sisäänrakennetut laiteasemat. Nämä asiakkaat voivat kommunikoida suoraan oheislaitteiden kanssa käyttämällä sovelluksiin sisäänrakennettua liiketoimintalogiikkaa. Android- sovellus tukee vain verkkolaitteita. Lisätietoja Android-järjestelmänoheistuesta on artikkelissa [POS Hybrid -sovelluksen määrittäminen Androidille ja iOS:lle](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Nykyaikaisissa POS-asiakkaissa Windowsille ja Androidille on **Erilliset** tai sisäänrakennetut laiteasemat. Nämä asiakkaat voivat kommunikoida suoraan oheislaitteiden kanssa käyttämällä sovelluksiin sisäänrakennettua liiketoimintalogiikkaa. Android- sovellus tukee vain verkkolaitteita. Lisätietoja Android-järjestelmänoheistuesta on artikkelissa [POS Hybrid -sovelluksen määrittäminen Androidille ja iOS:lle](./dev-itpro/hybridapp.md).
 
 Kun haluat käyttää erillistä laiteasemaa, liitä laiteprofiili Modern POS Windowsia tai Android-sovellusta käyttävään kassakoneeseen. Luo sitten **Varattu**-tyyppinen laiteasema myymälälle, jossa kassakonetta käytetään. Käynnistä Modern POS -toiminto muussa kuin lokerotilassa ja ota laitteistoaseman ominaisuudet käyttöön **Hallitse laiteasemia** -toiminnon avulla. Oma laiteasema on oletusarvoisesti käytössä. Kirjaudu seuraavaksi ulos Modern POS:ista, kirjaudu takaisin sisään ja avaa vuoro. Laitteistoprofiiliin määritetyt oheislaitteet ovat käytössä. 
 
@@ -199,7 +199,7 @@ Lisätietoja on kohdassa [Modern POS:n (MPOS) määrittäminen, asentaminen ja a
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Moderni POS Androidille ja iOS:ille -sovelluksen asetus ja määritys
 
-Katso lisätietoja kohdasta [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteissa](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Katso lisätietoja kohdasta [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteissa](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-laitteen asetukset ja määrittäminen
 
@@ -494,7 +494,7 @@ Tämä määritys on yleisin perinteisissä kiinteissä myyntipisteen kassakonei
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS Androidille ja IPC-laiteasema (sisäänrakennettu)
 
-**Uudet 10.0.8** -Epson-verkkotulostimet ja näihin tulostimiin liitetyt kassalaatikot ovat nyt tuettuja Modern POS Android -sovelluksessa. Lisätietoja on artikkelissa [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteissa](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Uudet 10.0.8** -Epson-verkkotulostimet ja näihin tulostimiin liitetyt kassalaatikot ovat nyt tuettuja Modern POS Android -sovelluksessa. Lisätietoja on artikkelissa [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteissa](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Kaikki Modern POS -asiakasohjelmat, joilla on sidottu jaettu IIS-laiteasema
 
@@ -614,6 +614,9 @@ Seuraavat oheislaitteet on testattu käyttämällä Modern POS Windowsille -sove
 | Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä   |
 | Star         | mPOP     | OPOS      | Yhdistetty Bluetoothilla |
 | HP           | F7M67AA  | OPOS      | Powered USB             |
+
+> [!NOTE]
+> Star TSP 100 -tulostinta ei tueta sisäänrakennetussa laiteasemassa. Sisäänrakennettu laiteasema käyttää 64-bittistä prosessia, joka ei ole yhteensopiva aiemmin luotujen TP 100 -ohjainten kanssa. 
 
 #### <a name="bar-code-scanner"></a>Viivakoodin lukulaite
 

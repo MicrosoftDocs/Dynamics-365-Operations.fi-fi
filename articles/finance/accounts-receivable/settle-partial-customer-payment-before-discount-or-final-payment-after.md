@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835144"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027525"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 
@@ -95,7 +95,7 @@ Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 | Käytetty käteisalennus          | 3,00      |
 | Käytettävä käteisalennussumma | 7:00      |
 
-Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sillä hän ei anna asiakkaan käyttää jäljellä olevaa käteisalennusta 7,00. Tämän jälkeen Arnie kirjaa maksun. Kun Arnie avaa **Asiakastapahtumat**-sivun, hän näkee, että laskun saldo on 0,00. Hän näkee myös, että maksuja on kaksi. Toisen summa on 297,00 ja käteisalennus 3,00, ja toisen summa on 700,00.
+Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sillä hän ei anna asiakkaan käyttää jäljellä olevaa käteisalennusta 7,00. Tämän jälkeen Arnie kirjaa maksun. Kun Arnie avaa **Asiakastapahtumat**-sivun, hän näkee, että laskun saldo on 0,00. Näkyvissä on kaksi maksua. Toisen summa on 297,00 ja käteisalennus 3,00, ja toisen summa on 700,00.
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo | Valuutta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

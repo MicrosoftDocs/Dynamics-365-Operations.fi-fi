@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827336"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028224"
 ---
 # <a name="position-forecasting"></a>Toimien ennustus
 
@@ -67,9 +67,9 @@ Jaanan organisaatio tarjoaa koulutuskorvauksen, jonka määrä on viisi prosentt
 
 Jaana ei halua, että päälliköt muuttavat edun määrää. Tämän vuoksi hän valitsee **Älä salli kustannusten muutoksia** kentässä **Ennusteen toimen ohitus**. Organisaatio haluaa, että tämä kustannus kohdistetaan tasaisesti kullekin kuukaudelle. Tästä syystä Jaana valitsee **Neljännesvuosittain** kentässä **Kohdistusmenetelmä**. 
 
-Seuraavaksi Jodi lisää kustannuslaskentarivin, määrittää päivämäärät ja päätilin ja syöttää prosentiksi **5,00**. Hänen organisaatiollaan on 5.000 euron raja tälle edulle. Näin ollen Jaana syöttää tämän summan vuosittaiseksi rajaksi. 
+Seuraavaksi Jodi lisää kustannuslaskentarivin, määrittää päivämäärät ja päätilin ja syöttää prosentiksi **5,00**. Organisaatiolla on 5 000 euron raja tälle edulle. Näin ollen Jaana syöttää tämän summan vuosittaiseksi rajaksi. 
 
-Lopuksi Jaana lisää kaikki ansion kustannustasot, joita käytetään peruspalkan laskentaperusteena. Hänen budjetin kustannustasonsa on nyt valmis käytettäväksi.
+Lopuksi Jaana lisää kaikki ansion kustannustasot, joita käytetään peruspalkan laskentaperusteena. Budjetin kustannustaso on nyt valmis käytettäväksi.
 
 ### <a name="compensation-groups"></a>Kompensaatioryhmät
 
@@ -137,7 +137,7 @@ Budjetin kustannuselementin rivit on laskettava uudelleen, kun FTE-arvoa muuteta
 
 **Esimerkki** 
 
-Organisaatio harkitsee kahta vaihtoehtoa kirjanpitäjän toimen kustannusten alentamiseen. Yksi vaihtoehto on päättää toimi, kun vuotta on kulunut jonkin aikaa. Toinen vaihtoehto on muuttaa toimi osa-aikaiseksi koko vuoden ajaksi. Pekka on luonut ennusteen toimen nykyiselle kirjanpitäjän toimelle perusskenaariossa. Hän kopioi tämän perusmuotoisen ennusteen toimen skenaario A:han, määrittää päättymispäiväksi 31.5. ja suorittaa uudelleenlaskennan. Pekka kopioi sitten tämän perusmuotoisen ennusteen toimen skenaario B:hen, muuttaa FTE-arvoksi **0,50** ja suorittaa uudelleenlaskennan. Pekalla on nyt kolme versiota, joista kullakin on siihen vaihtoehtoon liittyvä kokonaiskustannus.
+Organisaatio harkitsee kahta vaihtoehtoa kirjanpitäjän toimen kustannusten alentamiseen. Yksi vaihtoehto on päättää toimi, kun vuotta on kulunut jonkin aikaa. Toinen vaihtoehto on muuttaa toimi osa-aikaiseksi koko vuoden ajaksi. Pekka on luonut ennusteen toimen nykyiselle kirjanpitäjän toimelle perusskenaariossa. Pekka kopioi tämän perusmuotoisen ennusteen toimen skenaario A:han, määrittää päättymispäiväksi 31.5. ja suorittaa uudelleenlaskennan. Pekka kopioi sitten tämän perusmuotoisen ennusteen toimen skenaario B:hen, muuttaa FTE-arvoksi **0,50** ja suorittaa uudelleenlaskennan. Pekalla on nyt kolme versiota, joista kullakin on siihen vaihtoehtoon liittyvä kokonaiskustannus.
 
 #### <a name="assigning-a-compensation-group"></a>Kompensaatioryhmän määrittäminen
 

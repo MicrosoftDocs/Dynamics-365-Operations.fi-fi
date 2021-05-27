@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920952"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021366"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Siirtotilausten verotoiminnon tuki
 
@@ -41,7 +40,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
 
 1. Valitse **Verotoiminnot**-sivun **Versiot**-välilehdestä luonnosominaisuuden versio ja valitse sitten **Muokkaa**.
 
-    ![Muokkauksen valitseminen](../media/image1.png)
+    ![Muokkauksen valitseminen](../media/tax-feature-support-01.png)
 
 2. Valitse **Verotoimintojen asetukset** -sivun **Verokoodit**-välilehdestä **Lisää** luodaksesi uusia verokoodeja. Tässä esimerkissä luodaan kolme verokoodia: **NL-Exempt**, **BE-RC-21** ja **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         4. Valitse **Prosentti**-välilehdessä **Lisää**.
         5. Vaihda **On veroton** -arvoksi **Kyllä** **Yleiset**-osassa.
 
-        ![NL-Exempt-verokoodi](../media/image2.png)
+        ![NL-Exempt-verokoodi](../media/tax-feature-support-02.png)
 
     - Kun siirtotilaus vastaanotetaan Belgian varastossa, käänteisen veloituksen menetelmää käytetään **BE-RC-21**- ja **BE-RC+21**-verokoodien avulla.
         
@@ -67,7 +66,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         6. Vaihda **On käänteinen veloitus** -arvoksi **Kyllä** **Yleiset**-osassa.
         7. Valitse **Tallenna**.
 
-        ![BE-RC-21-verokoodi käänteiselle veloitukselle](../media/image3.png)
+        ![BE-RC-21-verokoodi käänteiselle veloitukselle](../media/tax-feature-support-03.png)
         
         Luo verokoodi **BE-RC+21**.
         1. Valitse **Lisää** ja kirjoita **Verokoodi**-kenttään **BE-RC-21**.
@@ -77,7 +76,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         5. Kirjoita **Veroprosentti**-kenttään **21**.
         6. Valitse **Tallenna**.
 
-        ![BE-RC+21-verokoodi käänteiselle veloitukselle](../media/image4.png)
+        ![BE-RC+21-verokoodi käänteiselle veloitukselle](../media/tax-feature-support-04.png)
 
 3. Määritä verokoodien kohdistettavuus.
 
