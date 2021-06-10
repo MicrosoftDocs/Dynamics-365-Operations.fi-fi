@@ -1,7 +1,7 @@
 ---
 title: Nimikkeen tai raaka-aineen jäljittäminen
 description: Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvittää, miten nimikkeitä tai raaka-aineita on käytetty tai ollaan käyttämässä.
-author: pjacobse
+author: sherry-zheng
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
@@ -11,51 +11,51 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: pjacobse
+ms.author: chuzheng
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a3b2ab752089b2c60c5c5e02cb2c558c17dcf8b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e46d75ecab3ec2e94372aecfd2c29783756446
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829809"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102852"
 ---
-# <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="59ff6-103">Nimikkeen tai raaka-aineen jäljittäminen</span><span class="sxs-lookup"><span data-stu-id="59ff6-103">Trace an item or raw material</span></span>
+# <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="35d8f-103">Nimikkeen tai raaka-aineen jäljittäminen</span><span class="sxs-lookup"><span data-stu-id="35d8f-103">Trace an item or raw material</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="59ff6-104">Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvittää, miten nimikkeitä tai raaka-aineita on käytetty tai ollaan käyttämässä.</span><span class="sxs-lookup"><span data-stu-id="59ff6-104">This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used.</span></span> <span data-ttu-id="59ff6-105">Tämän menettelyn avulla voit tunnistaa nimikkeen sekä seurata sitä takaisin lähteeseen ja sitten tuotannon ja myynnin kautta lopulliseen tuotteeseen.</span><span class="sxs-lookup"><span data-stu-id="59ff6-105">With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product.</span></span> <span data-ttu-id="59ff6-106">Prosessilla voit selvittää esimerkiksi, mitä asiakkaita tai myyntitilauksia se koski.</span><span class="sxs-lookup"><span data-stu-id="59ff6-106">The process can be used to investigate the customers impacted, the sales orders affected, and more.</span></span> <span data-ttu-id="59ff6-107">Menettely käyttää USP2-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="59ff6-107">This procedure uses demo data company USP2.</span></span>
+<span data-ttu-id="35d8f-104">Tässä menettelyssä käsitellään, miten nimikkeen seurannalla voidaan selvittää, miten nimikkeitä tai raaka-aineita on käytetty tai ollaan käyttämässä.</span><span class="sxs-lookup"><span data-stu-id="35d8f-104">This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used.</span></span> <span data-ttu-id="35d8f-105">Tämän menettelyn avulla voit tunnistaa nimikkeen sekä seurata sitä takaisin lähteeseen ja sitten tuotannon ja myynnin kautta lopulliseen tuotteeseen.</span><span class="sxs-lookup"><span data-stu-id="35d8f-105">With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product.</span></span> <span data-ttu-id="35d8f-106">Prosessilla voit selvittää esimerkiksi, mitä asiakkaita tai myyntitilauksia se koski.</span><span class="sxs-lookup"><span data-stu-id="35d8f-106">The process can be used to investigate the customers impacted, the sales orders affected, and more.</span></span> <span data-ttu-id="35d8f-107">Menettely käyttää USP2-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="35d8f-107">This procedure uses demo data company USP2.</span></span>
 
 
-## <a name="trace-an-item-backwards-using-a-known-batch-number"></a><span data-ttu-id="59ff6-108">Jäljitä nimike taaksepäin tiedossa olevaan eränumeroon</span><span class="sxs-lookup"><span data-stu-id="59ff6-108">Trace an item backwards using a known batch number</span></span>
-1. <span data-ttu-id="59ff6-109">Valitse **siirtymisruudussa** **Moduulit > Inventoinnin- ja varastonhallinta > Kyselyt ja raportit > Seurantadimensiot > Nimikkeen seuranta**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-109">In the **Navigation pane**, go to **Modules > Inventory management > Inquiries and reports > Tracking dimensions > Item tracing**.</span></span>
-2. <span data-ttu-id="59ff6-110">Valitse **Nimiketunnus**-kenttään "P9100".</span><span class="sxs-lookup"><span data-stu-id="59ff6-110">In the **Item number** field, select 'P9100'.</span></span>
-3. <span data-ttu-id="59ff6-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="59ff6-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="59ff6-112">Valitse **Eteen- tai taaksepäin** -kentässä "Taaksepäin".</span><span class="sxs-lookup"><span data-stu-id="59ff6-112">In the **Forward or backward** field, select 'Backward'.</span></span>
-5. <span data-ttu-id="59ff6-113">Valitse **Eränumero**-kentässä 12-344-01.</span><span class="sxs-lookup"><span data-stu-id="59ff6-113">In the **Batch number** field, select 'as-12-344-01'.</span></span>
-6. <span data-ttu-id="59ff6-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="59ff6-114">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="59ff6-115">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-115">Click **OK**.</span></span>
+## <a name="trace-an-item-backwards-using-a-known-batch-number"></a><span data-ttu-id="35d8f-108">Jäljitä nimike taaksepäin tiedossa olevaan eränumeroon</span><span class="sxs-lookup"><span data-stu-id="35d8f-108">Trace an item backwards using a known batch number</span></span>
+1. <span data-ttu-id="35d8f-109">Valitse **siirtymisruudussa** **Moduulit > Inventoinnin- ja varastonhallinta > Kyselyt ja raportit > Seurantadimensiot > Nimikkeen seuranta**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-109">In the **Navigation pane**, go to **Modules > Inventory management > Inquiries and reports > Tracking dimensions > Item tracing**.</span></span>
+2. <span data-ttu-id="35d8f-110">Valitse **Nimiketunnus**-kenttään "P9100".</span><span class="sxs-lookup"><span data-stu-id="35d8f-110">In the **Item number** field, select 'P9100'.</span></span>
+3. <span data-ttu-id="35d8f-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="35d8f-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="35d8f-112">Valitse **Eteen- tai taaksepäin** -kentässä "Taaksepäin".</span><span class="sxs-lookup"><span data-stu-id="35d8f-112">In the **Forward or backward** field, select 'Backward'.</span></span>
+5. <span data-ttu-id="35d8f-113">Valitse **Eränumero**-kentässä 12-344-01.</span><span class="sxs-lookup"><span data-stu-id="35d8f-113">In the **Batch number** field, select 'as-12-344-01'.</span></span>
+6. <span data-ttu-id="35d8f-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="35d8f-114">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="35d8f-115">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-115">Click **OK**.</span></span>
 
-## <a name="identify-an-item-trace-it-forward-and-make-an-analysis"></a><span data-ttu-id="59ff6-116">Tunnista nimike, seuraa sitä eteenpäin ja analysoi</span><span class="sxs-lookup"><span data-stu-id="59ff6-116">Identify an item, trace it forward, and make an analysis</span></span>
+## <a name="identify-an-item-trace-it-forward-and-make-an-analysis"></a><span data-ttu-id="35d8f-116">Tunnista nimike, seuraa sitä eteenpäin ja analysoi</span><span class="sxs-lookup"><span data-stu-id="35d8f-116">Identify an item, trace it forward, and make an analysis</span></span>
 
-<span data-ttu-id="59ff6-117">Puun ylin solmu vastaa valitun nimikkeen ja erän käytettävissä olevaa määrää.</span><span class="sxs-lookup"><span data-stu-id="59ff6-117">The top node of the tree represents the on hand quantity of the selected item and batch.</span></span> <span data-ttu-id="59ff6-118">Laajenna puun nimike, jotta voit paikantaa nimikkeen, jolle seuranta tulisi suorittaa.</span><span class="sxs-lookup"><span data-stu-id="59ff6-118">You need to expand the nodes of the tree to find the item that the forward trace should be executed on.</span></span>   
-1. <span data-ttu-id="59ff6-119">Laajenna puussa "alla kuvatut solmut ja valitse sitten viimeinen solmu".</span><span class="sxs-lookup"><span data-stu-id="59ff6-119">In the tree, expand 'the nodes described below, and then select the last node'.</span></span>
+<span data-ttu-id="35d8f-117">Puun ylin solmu vastaa valitun nimikkeen ja erän käytettävissä olevaa määrää.</span><span class="sxs-lookup"><span data-stu-id="35d8f-117">The top node of the tree represents the on hand quantity of the selected item and batch.</span></span> <span data-ttu-id="35d8f-118">Laajenna puun nimike, jotta voit paikantaa nimikkeen, jolle seuranta tulisi suorittaa.</span><span class="sxs-lookup"><span data-stu-id="35d8f-118">You need to expand the nodes of the tree to find the item that the forward trace should be executed on.</span></span>   
+1. <span data-ttu-id="35d8f-119">Laajenna puussa "alla kuvatut solmut ja valitse sitten viimeinen solmu".</span><span class="sxs-lookup"><span data-stu-id="35d8f-119">In the tree, expand 'the nodes described below, and then select the last node'.</span></span>
     
-    <span data-ttu-id="59ff6-120">Laajenna: P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7.00 gal  \P9100 ● Picked ● Sales order 000072 ● 12/22/2015  ● -1 keg ● -4.00 gal ● Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 ● Production B-000050 ● 12/9/2015● 7 keg ● 27.00 gal ● Site=1,Warehouse=10,Batch number=as-12-344-01 ● Co-products: P9101 ja valitse sitten kyseinen solmu.</span><span class="sxs-lookup"><span data-stu-id="59ff6-120">Expand: 'P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7.00 gal  \P9100 ● Picked ● Sales order 000072 ● 12/22/2015  ● -1 keg ● -4.00 gal ● Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 ● Production B-000050 ● 12/9/2015● 7 keg ● 27.00 gal ● Site=1,Warehouse=10,Batch number=as-12-344-01 ● Co-products: P9101' and then select that node.</span></span>     
-2. <span data-ttu-id="59ff6-121">Laajenna puussa "alla kuvattu solmu ja valitse sitten kyseinen solmu".</span><span class="sxs-lookup"><span data-stu-id="59ff6-121">In the tree, expand 'the node described below and then select that node'.</span></span>
+    <span data-ttu-id="35d8f-120">Laajenna: P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7.00 gal  \P9100 ● Picked ● Sales order 000072 ● 12/22/2015  ● -1 keg ● -4.00 gal ● Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 ● Production B-000050 ● 12/9/2015● 7 keg ● 27.00 gal ● Site=1,Warehouse=10,Batch number=as-12-344-01 ● Co-products: P9101 ja valitse sitten kyseinen solmu.</span><span class="sxs-lookup"><span data-stu-id="35d8f-120">Expand: 'P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7.00 gal  \P9100 ● Picked ● Sales order 000072 ● 12/22/2015  ● -1 keg ● -4.00 gal ● Site=1, Warehouse=10, Batch number=as-12-344-01  \P9100 ● Production B-000050 ● 12/9/2015● 7 keg ● 27.00 gal ● Site=1,Warehouse=10,Batch number=as-12-344-01 ● Co-products: P9101' and then select that node.</span></span>     
+2. <span data-ttu-id="35d8f-121">Laajenna puussa "alla kuvattu solmu ja valitse sitten kyseinen solmu".</span><span class="sxs-lookup"><span data-stu-id="35d8f-121">In the tree, expand 'the node described below and then select that node'.</span></span>
     
-    <span data-ttu-id="59ff6-122">Laajenna valitusta solmusta lähtien "M9103 ● Tuotantorivi B-000050 ● 12/9/2015 ●-160.00 lb ● Koko=70,Väri=OK, Toimipaikka=1, Varasto=10, Eränumero=App01" ja valitse sitten kyseinen solmu.</span><span class="sxs-lookup"><span data-stu-id="59ff6-122">Starting from the node that you've just selected,  expand 'M9103 ● Production line B-000050 ● 12/9/2015  ● -160.00 lb ● Size=70, Color=OK, Site=1, Warehouse=10, Batch number=App01' and then select that node.</span></span>  
-3. <span data-ttu-id="59ff6-123">Valitse **Seuraa solmusta**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-123">Click **Trace from node**.</span></span>
-4. <span data-ttu-id="59ff6-124">Valitse **Eteenpäin**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-124">Click **Forward**.</span></span>
-5. <span data-ttu-id="59ff6-125">Valitse **toimintoruudussa** **Jäljitys**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-125">On the **Action Pane**, click **Tracing**.</span></span>
+    <span data-ttu-id="35d8f-122">Laajenna valitusta solmusta lähtien "M9103 ● Tuotantorivi B-000050 ● 12/9/2015 ●-160.00 lb ● Koko=70,Väri=OK, Toimipaikka=1, Varasto=10, Eränumero=App01" ja valitse sitten kyseinen solmu.</span><span class="sxs-lookup"><span data-stu-id="35d8f-122">Starting from the node that you've just selected,  expand 'M9103 ● Production line B-000050 ● 12/9/2015  ● -160.00 lb ● Size=70, Color=OK, Site=1, Warehouse=10, Batch number=App01' and then select that node.</span></span>  
+3. <span data-ttu-id="35d8f-123">Valitse **Seuraa solmusta**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-123">Click **Trace from node**.</span></span>
+4. <span data-ttu-id="35d8f-124">Valitse **Eteenpäin**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-124">Click **Forward**.</span></span>
+5. <span data-ttu-id="35d8f-125">Valitse **toimintoruudussa** **Jäljitys**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-125">On the **Action Pane**, click **Tracing**.</span></span>
     
-    <span data-ttu-id="59ff6-126">Seurantavaihtoehtoja on useita; ne tarjoavat tietoja asiakkaista, joihin seurattava nimike vaikuttaa sekä myyntitilauksista, jotka liittyvät nimikkeeseen, oli niitä lähetetty tai ei.</span><span class="sxs-lookup"><span data-stu-id="59ff6-126">There are several tracing options which provide information about the customers impacted by the item that you're tracing, and the sales orders related to the item which have and haven't been shipped.</span></span>   
-6. <span data-ttu-id="59ff6-127">Valitse **Asiakkaat**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-127">Click **Customers**.</span></span>
-7. <span data-ttu-id="59ff6-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="59ff6-128">Close the page.</span></span>
-8. <span data-ttu-id="59ff6-129">Valitse **toimintoruudussa** **Jäljitys**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-129">On the **Action Pane**, click **Tracing**.</span></span>
-9. <span data-ttu-id="59ff6-130">Valitse **Lähetetyt myyntitilaukset**.</span><span class="sxs-lookup"><span data-stu-id="59ff6-130">Click **Shipped sales orders**.</span></span>
-10. <span data-ttu-id="59ff6-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="59ff6-131">Close the page.</span></span>
+    <span data-ttu-id="35d8f-126">Seurantavaihtoehtoja on useita; ne tarjoavat tietoja asiakkaista, joihin seurattava nimike vaikuttaa sekä myyntitilauksista, jotka liittyvät nimikkeeseen, oli niitä lähetetty tai ei.</span><span class="sxs-lookup"><span data-stu-id="35d8f-126">There are several tracing options which provide information about the customers impacted by the item that you're tracing, and the sales orders related to the item which have and haven't been shipped.</span></span>   
+6. <span data-ttu-id="35d8f-127">Valitse **Asiakkaat**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-127">Click **Customers**.</span></span>
+7. <span data-ttu-id="35d8f-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="35d8f-128">Close the page.</span></span>
+8. <span data-ttu-id="35d8f-129">Valitse **toimintoruudussa** **Jäljitys**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-129">On the **Action Pane**, click **Tracing**.</span></span>
+9. <span data-ttu-id="35d8f-130">Valitse **Lähetetyt myyntitilaukset**.</span><span class="sxs-lookup"><span data-stu-id="35d8f-130">Click **Shipped sales orders**.</span></span>
+10. <span data-ttu-id="35d8f-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="35d8f-131">Close the page.</span></span>
 
 
 

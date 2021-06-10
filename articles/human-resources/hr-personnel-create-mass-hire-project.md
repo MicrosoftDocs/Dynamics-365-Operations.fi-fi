@@ -8,45 +8,44 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 353bfe6c9a79db91a86e612737ea7705c8cdaeb8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7254f4701d0839215e1a256aaa4ebd7ae56945ca
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800210"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056801"
 ---
-# <a name="create-a-mass-hire-project"></a><span data-ttu-id="c4735-103">Joukkotyöhönottoprojektin luominen</span><span class="sxs-lookup"><span data-stu-id="c4735-103">Create a mass hire project</span></span>
+# <a name="create-a-mass-hire-project"></a><span data-ttu-id="f9261-103">Joukkotyöhönottoprojektin luominen</span><span class="sxs-lookup"><span data-stu-id="f9261-103">Create a mass hire project</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="c4735-104">Tässä menettelyssä esitellään joukkotyöhönottoprojektin määritysprosessi.</span><span class="sxs-lookup"><span data-stu-id="c4735-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="c4735-105">Rekrytoija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.</span><span class="sxs-lookup"><span data-stu-id="c4735-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="c4735-106">Aloita tämä menettely siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Joukkotyöhönottoprojektit.</span><span class="sxs-lookup"><span data-stu-id="c4735-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="c4735-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="c4735-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="f9261-104">Tässä menettelyssä esitellään joukkotyöhönottoprojektin määritysprosessi.</span><span class="sxs-lookup"><span data-stu-id="f9261-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="f9261-105">Rekrytoija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.</span><span class="sxs-lookup"><span data-stu-id="f9261-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="f9261-106">Aloita tämä menettely siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Joukkotyöhönottoprojektit.</span><span class="sxs-lookup"><span data-stu-id="f9261-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="f9261-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="f9261-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="c4735-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c4735-108">Click New.</span></span>
-2. <span data-ttu-id="c4735-109">Syötä arvo Joukkotyöhönottoprojekti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c4735-109">In the Mass hire project field, type a value.</span></span>
-3. <span data-ttu-id="c4735-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c4735-110">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="c4735-111">Syötä Projektin alku -kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="c4735-111">In the Project start field, enter a date.</span></span>
-5. <span data-ttu-id="c4735-112">Syötä Projektin loppu -kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="c4735-112">In the Project end field, enter a date.</span></span>
-6. <span data-ttu-id="c4735-113">Valitse Avaa projekti.</span><span class="sxs-lookup"><span data-stu-id="c4735-113">Click Open project.</span></span>
-7. <span data-ttu-id="c4735-114">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="c4735-114">Click Yes.</span></span>
-8. <span data-ttu-id="c4735-115">Valitse Luo toimia.</span><span class="sxs-lookup"><span data-stu-id="c4735-115">Click Create positions.</span></span>
-9. <span data-ttu-id="c4735-116">Syötä Määrä-kenttään luotavien toimien määrä.</span><span class="sxs-lookup"><span data-stu-id="c4735-116">In the Quantity field, enter the number of positions that you want to create</span></span>
-    * <span data-ttu-id="c4735-117">Aloituspäivämäärästä tulee uusien työntekijöiden työhönottopäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="c4735-117">The Start date will become the Hire date for the new workers.</span></span>  
-    * <span data-ttu-id="c4735-118">Päätymispäivämäärästä tulee uusien työntekijöiden työsuhteen loppumispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="c4735-118">The End date will be the Termination date for the new workers.</span></span>  
-    * <span data-ttu-id="c4735-119">Määritä, ovatko uudet työntekijät työntekijöitä vai alihankkijoita.</span><span class="sxs-lookup"><span data-stu-id="c4735-119">Specify whether the new workers will be Employees or Contractors.</span></span>  
-10. <span data-ttu-id="c4735-120">Valitse avattavan valikon painike ja valitse Työ-kentässä työ, jolle toimet luodaan.</span><span class="sxs-lookup"><span data-stu-id="c4735-120">In the Job field, click the drop-down button to select the job to create the positions for.</span></span>
-11. <span data-ttu-id="c4735-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c4735-121">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="c4735-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c4735-122">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="c4735-123">Kokopäiväisten työntekijöiden oletusarvo saadaan valitusta työstä.</span><span class="sxs-lookup"><span data-stu-id="c4735-123">The default full-time equivalent value will come from the selected job.</span></span> <span data-ttu-id="c4735-124">Arvoa voi muuttaa tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="c4735-124">You can change this if needed.</span></span>  
-    * <span data-ttu-id="c4735-125">Vaihtoehtoisesti voit valita uusille toimille osaston.</span><span class="sxs-lookup"><span data-stu-id="c4735-125">Optionally, select the Department for the new positions.</span></span>  
-13. <span data-ttu-id="c4735-126">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c4735-126">Click OK.</span></span>
+1. <span data-ttu-id="f9261-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f9261-108">Click New.</span></span>
+2. <span data-ttu-id="f9261-109">Syötä arvo Joukkotyöhönottoprojekti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f9261-109">In the Mass hire project field, type a value.</span></span>
+3. <span data-ttu-id="f9261-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f9261-110">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="f9261-111">Syötä Projektin alku -kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="f9261-111">In the Project start field, enter a date.</span></span>
+5. <span data-ttu-id="f9261-112">Syötä Projektin loppu -kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="f9261-112">In the Project end field, enter a date.</span></span>
+6. <span data-ttu-id="f9261-113">Valitse Avaa projekti.</span><span class="sxs-lookup"><span data-stu-id="f9261-113">Click Open project.</span></span>
+7. <span data-ttu-id="f9261-114">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f9261-114">Click Yes.</span></span>
+8. <span data-ttu-id="f9261-115">Valitse Luo toimia.</span><span class="sxs-lookup"><span data-stu-id="f9261-115">Click Create positions.</span></span>
+9. <span data-ttu-id="f9261-116">Syötä Määrä-kenttään luotavien toimien määrä.</span><span class="sxs-lookup"><span data-stu-id="f9261-116">In the Quantity field, enter the number of positions that you want to create</span></span>
+    * <span data-ttu-id="f9261-117">Aloituspäivämäärästä tulee uusien työntekijöiden työhönottopäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="f9261-117">The Start date will become the Hire date for the new workers.</span></span>  
+    * <span data-ttu-id="f9261-118">Päätymispäivämäärästä tulee uusien työntekijöiden työsuhteen loppumispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="f9261-118">The End date will be the Termination date for the new workers.</span></span>  
+    * <span data-ttu-id="f9261-119">Määritä, ovatko uudet työntekijät työntekijöitä vai alihankkijoita.</span><span class="sxs-lookup"><span data-stu-id="f9261-119">Specify whether the new workers will be Employees or Contractors.</span></span>  
+10. <span data-ttu-id="f9261-120">Valitse avattavan valikon painike ja valitse Työ-kentässä työ, jolle toimet luodaan.</span><span class="sxs-lookup"><span data-stu-id="f9261-120">In the Job field, click the drop-down button to select the job to create the positions for.</span></span>
+11. <span data-ttu-id="f9261-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="f9261-121">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="f9261-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="f9261-122">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="f9261-123">Kokopäiväisten työntekijöiden oletusarvo saadaan valitusta työstä.</span><span class="sxs-lookup"><span data-stu-id="f9261-123">The default full-time equivalent value will come from the selected job.</span></span> <span data-ttu-id="f9261-124">Arvoa voi muuttaa tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="f9261-124">You can change this if needed.</span></span>  
+    * <span data-ttu-id="f9261-125">Vaihtoehtoisesti voit valita uusille toimille osaston.</span><span class="sxs-lookup"><span data-stu-id="f9261-125">Optionally, select the Department for the new positions.</span></span>  
+13. <span data-ttu-id="f9261-126">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f9261-126">Click OK.</span></span>
 
 
 
