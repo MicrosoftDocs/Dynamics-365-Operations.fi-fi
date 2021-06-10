@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,65 +15,65 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 67b951cccae7708f8d831ff1d83738dc49360a48
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8ea55ad7f86e0c7d5ccc6e6de0af475299b05639
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794514"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052430"
 ---
-# <a name="create-a-working-time-calendar"></a><span data-ttu-id="a3b85-103">Työaikakalenterin luominen</span><span class="sxs-lookup"><span data-stu-id="a3b85-103">Create a working time calendar</span></span>
+# <a name="create-a-working-time-calendar"></a><span data-ttu-id="6c798-103">Työaikakalenterin luominen</span><span class="sxs-lookup"><span data-stu-id="6c798-103">Create a working time calendar</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="a3b85-104">Dynamics 365 Human Resourcesin työaikakalenterissa näkyvät työntekijöiden työpäivät ja -tunnit organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="a3b85-104">A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization.</span></span> <span data-ttu-id="a3b85-105">Kun työntekijä lähettää lomapyynnön, hänen ei tarvitse huolehtia juhlapäivistä ja sulkemisista.</span><span class="sxs-lookup"><span data-stu-id="a3b85-105">When an employee submits a time-off request, they don't have to worry about holidays and closures.</span></span>
+<span data-ttu-id="6c798-104">Dynamics 365 Human Resourcesin työaikakalenterissa näkyvät työntekijöiden työpäivät ja -tunnit organisaatiossa.</span><span class="sxs-lookup"><span data-stu-id="6c798-104">A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization.</span></span> <span data-ttu-id="6c798-105">Kun työntekijä lähettää lomapyynnön, hänen ei tarvitse huolehtia juhlapäivistä ja sulkemisista.</span><span class="sxs-lookup"><span data-stu-id="6c798-105">When an employee submits a time-off request, they don't have to worry about holidays and closures.</span></span>
 
-<span data-ttu-id="a3b85-106">Jos haluat tehostaa lomapyyntöjä, määritä nämä nimikkeet organisaatiollesi:</span><span class="sxs-lookup"><span data-stu-id="a3b85-106">To streamline time-off requests, configure these items for your organization:</span></span>
+<span data-ttu-id="6c798-106">Jos haluat tehostaa lomapyyntöjä, määritä nämä nimikkeet organisaatiollesi:</span><span class="sxs-lookup"><span data-stu-id="6c798-106">To streamline time-off requests, configure these items for your organization:</span></span>
 
-- <span data-ttu-id="a3b85-107">Työaikakalenteri</span><span class="sxs-lookup"><span data-stu-id="a3b85-107">Working time calendar</span></span>
-- <span data-ttu-id="a3b85-108">Lomat ja sulkemiset</span><span class="sxs-lookup"><span data-stu-id="a3b85-108">Holidays and closures</span></span>
-- <span data-ttu-id="a3b85-109">Muu kuin työaika</span><span class="sxs-lookup"><span data-stu-id="a3b85-109">Non-work time</span></span>
+- <span data-ttu-id="6c798-107">Työaikakalenteri</span><span class="sxs-lookup"><span data-stu-id="6c798-107">Working time calendar</span></span>
+- <span data-ttu-id="6c798-108">Lomat ja sulkemiset</span><span class="sxs-lookup"><span data-stu-id="6c798-108">Holidays and closures</span></span>
+- <span data-ttu-id="6c798-109">Muu kuin työaika</span><span class="sxs-lookup"><span data-stu-id="6c798-109">Non-work time</span></span>
 
-<span data-ttu-id="a3b85-110">Voit lisätä kaksi viimeistä nimikettä työaikakalenteria määrittäessäsi.</span><span class="sxs-lookup"><span data-stu-id="a3b85-110">You can add the last two items while you're setting up a working time calendar.</span></span> <span data-ttu-id="a3b85-111">Voit myös määrittää tai päivittää ne erikseen.</span><span class="sxs-lookup"><span data-stu-id="a3b85-111">You can also configure or update them separately.</span></span>
+<span data-ttu-id="6c798-110">Voit lisätä kaksi viimeistä nimikettä työaikakalenteria määrittäessäsi.</span><span class="sxs-lookup"><span data-stu-id="6c798-110">You can add the last two items while you're setting up a working time calendar.</span></span> <span data-ttu-id="6c798-111">Voit myös määrittää tai päivittää ne erikseen.</span><span class="sxs-lookup"><span data-stu-id="6c798-111">You can also configure or update them separately.</span></span>
 
-## <a name="set-up-a-working-time-calendar"></a><span data-ttu-id="a3b85-112">Määritä työaikakalenteri</span><span class="sxs-lookup"><span data-stu-id="a3b85-112">Set up a working time calendar</span></span>
+## <a name="set-up-a-working-time-calendar"></a><span data-ttu-id="6c798-112">Määritä työaikakalenteri</span><span class="sxs-lookup"><span data-stu-id="6c798-112">Set up a working time calendar</span></span>
 
-<span data-ttu-id="a3b85-113">Määritä vähintään yksi työaikakalenteri, joka näyttää päivät ja työtunnit.</span><span class="sxs-lookup"><span data-stu-id="a3b85-113">Set up at least one working time calendar that shows your days and hours of operation.</span></span> <span data-ttu-id="a3b85-114">Jos sinulla on sijainteja useissa maissa ja tietyillä alueilla, haluat ehkä määrittää kullekin alueelle työaikakalenterin.</span><span class="sxs-lookup"><span data-stu-id="a3b85-114">If you have locations in multiple countries and regions, you might want to set up a working time calendar for each area.</span></span>
+<span data-ttu-id="6c798-113">Määritä vähintään yksi työaikakalenteri, joka näyttää päivät ja työtunnit.</span><span class="sxs-lookup"><span data-stu-id="6c798-113">Set up at least one working time calendar that shows your days and hours of operation.</span></span> <span data-ttu-id="6c798-114">Jos sinulla on sijainteja useissa maissa ja tietyillä alueilla, haluat ehkä määrittää kullekin alueelle työaikakalenterin.</span><span class="sxs-lookup"><span data-stu-id="6c798-114">If you have locations in multiple countries and regions, you might want to set up a working time calendar for each area.</span></span>
 
-1. <span data-ttu-id="a3b85-115">Valitse **Organisaation hallinto** -sivulta **Kalenterit**.</span><span class="sxs-lookup"><span data-stu-id="a3b85-115">On the **Organization administration** page, select **Calendars**.</span></span>
+1. <span data-ttu-id="6c798-115">Valitse **Organisaation hallinto** -sivulta **Kalenterit**.</span><span class="sxs-lookup"><span data-stu-id="6c798-115">On the **Organization administration** page, select **Calendars**.</span></span>
 
-2. <span data-ttu-id="a3b85-116">Valitse **Uusi** ja kirjoita kalenterisi nimi ja kuvaus.</span><span class="sxs-lookup"><span data-stu-id="a3b85-116">Select **New** and enter a name and description for your calendar.</span></span>
+2. <span data-ttu-id="6c798-116">Valitse **Uusi** ja kirjoita kalenterisi nimi ja kuvaus.</span><span class="sxs-lookup"><span data-stu-id="6c798-116">Select **New** and enter a name and description for your calendar.</span></span>
 
-3. <span data-ttu-id="a3b85-117">Valitse **Luonnin asetukset**-kohdasta organisaation työpäivät ja määritä työajat.</span><span class="sxs-lookup"><span data-stu-id="a3b85-117">Under **Generation options**, select the work days for your organization and enter work times.</span></span> 
-   - <span data-ttu-id="a3b85-118">Jos haluat lisätä loman tai sulkemisen, valitse **Lomien ja sulkemisten** vieressä oleva **Lisää**-painike.</span><span class="sxs-lookup"><span data-stu-id="a3b85-118">To add a holiday or closure, select the **Add** button next to **Holidays and closures**.</span></span>
-   - <span data-ttu-id="a3b85-119">Jos haluat lisätä muun kuin työajan, kuten lounaan tai tauon, valitse **Lisää** **Muu kuin työaika** -kohdassa ja kirjoita nimi ja aikaväli.</span><span class="sxs-lookup"><span data-stu-id="a3b85-119">To add non-work time, like lunches or breaks, select **Add** under **NON-WORK TIME** and enter the name and time range.</span></span>
+3. <span data-ttu-id="6c798-117">Valitse **Luonnin asetukset**-kohdasta organisaation työpäivät ja määritä työajat.</span><span class="sxs-lookup"><span data-stu-id="6c798-117">Under **Generation options**, select the work days for your organization and enter work times.</span></span> 
+   - <span data-ttu-id="6c798-118">Jos haluat lisätä loman tai sulkemisen, valitse **Lomien ja sulkemisten** vieressä oleva **Lisää**-painike.</span><span class="sxs-lookup"><span data-stu-id="6c798-118">To add a holiday or closure, select the **Add** button next to **Holidays and closures**.</span></span>
+   - <span data-ttu-id="6c798-119">Jos haluat lisätä muun kuin työajan, kuten lounaan tai tauon, valitse **Lisää** **Muu kuin työaika** -kohdassa ja kirjoita nimi ja aikaväli.</span><span class="sxs-lookup"><span data-stu-id="6c798-119">To add non-work time, like lunches or breaks, select **Add** under **NON-WORK TIME** and enter the name and time range.</span></span>
 
-4. <span data-ttu-id="a3b85-120">Valitse **Päivät**-kohdassa **Luo** päivien luomiseksi kalenteriin.</span><span class="sxs-lookup"><span data-stu-id="a3b85-120">Under **Days**, select **Generate** to generate the days in your calendar.</span></span> <span data-ttu-id="a3b85-121">Kirjoita kalenterin päivämääräväli ja valitse **Luo päiviä**.</span><span class="sxs-lookup"><span data-stu-id="a3b85-121">Enter the date range for your calendar and then select **Generate days**.</span></span>
+4. <span data-ttu-id="6c798-120">Valitse **Päivät**-kohdassa **Luo** päivien luomiseksi kalenteriin.</span><span class="sxs-lookup"><span data-stu-id="6c798-120">Under **Days**, select **Generate** to generate the days in your calendar.</span></span> <span data-ttu-id="6c798-121">Kirjoita kalenterin päivämääräväli ja valitse **Luo päiviä**.</span><span class="sxs-lookup"><span data-stu-id="6c798-121">Enter the date range for your calendar and then select **Generate days**.</span></span>
 
-5. <span data-ttu-id="a3b85-122">Jos haluat lisätä työaikatauluja, valitse **Työaikataulu**-kohdasta **Lisää** ja kirjoita sitten kunkin työaikataulun ajat.</span><span class="sxs-lookup"><span data-stu-id="a3b85-122">To add work schedules, under **Work schedule**, select **Add** and then enter the times for each work schedule.</span></span>
+5. <span data-ttu-id="6c798-122">Jos haluat lisätä työaikatauluja, valitse **Työaikataulu**-kohdasta **Lisää** ja kirjoita sitten kunkin työaikataulun ajat.</span><span class="sxs-lookup"><span data-stu-id="6c798-122">To add work schedules, under **Work schedule**, select **Add** and then enter the times for each work schedule.</span></span>
 
-## <a name="configure-holidays-and-closures"></a><span data-ttu-id="a3b85-123">Määritä lomat ja sulkemiset</span><span class="sxs-lookup"><span data-stu-id="a3b85-123">Configure holidays and closures</span></span>
+## <a name="configure-holidays-and-closures"></a><span data-ttu-id="6c798-123">Määritä lomat ja sulkemiset</span><span class="sxs-lookup"><span data-stu-id="6c798-123">Configure holidays and closures</span></span>
 
-<span data-ttu-id="a3b85-124">Voit lisätä tai muuttaa lomia ja sulkemisia erillään työaikakalenterista.</span><span class="sxs-lookup"><span data-stu-id="a3b85-124">You can add or change holidays and closures separately from a working time calendar.</span></span>
+<span data-ttu-id="6c798-124">Voit lisätä tai muuttaa lomia ja sulkemisia erillään työaikakalenterista.</span><span class="sxs-lookup"><span data-stu-id="6c798-124">You can add or change holidays and closures separately from a working time calendar.</span></span>
 
-1. <span data-ttu-id="a3b85-125">Valitse **Organisaation hallinto** -sivulta **Lomat ja sulkemiset**.</span><span class="sxs-lookup"><span data-stu-id="a3b85-125">On the **Organization administration** page, select **Holidays and closures**.</span></span>
+1. <span data-ttu-id="6c798-125">Valitse **Organisaation hallinto** -sivulta **Lomat ja sulkemiset**.</span><span class="sxs-lookup"><span data-stu-id="6c798-125">On the **Organization administration** page, select **Holidays and closures**.</span></span>
 
-2. <span data-ttu-id="a3b85-126">Valitse **Uusi** ja kirjoita loman tai sulkemisen nimi ja päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="a3b85-126">Select **New** and enter a name and date for the holiday or closure.</span></span>
+2. <span data-ttu-id="6c798-126">Valitse **Uusi** ja kirjoita loman tai sulkemisen nimi ja päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="6c798-126">Select **New** and enter a name and date for the holiday or closure.</span></span>
 
-## <a name="configure-non-work-time"></a><span data-ttu-id="a3b85-127">Määritä muu kuin työaika</span><span class="sxs-lookup"><span data-stu-id="a3b85-127">Configure non-work time</span></span>
+## <a name="configure-non-work-time"></a><span data-ttu-id="6c798-127">Määritä muu kuin työaika</span><span class="sxs-lookup"><span data-stu-id="6c798-127">Configure non-work time</span></span>
 
-<span data-ttu-id="a3b85-128">Voit lisätä tai muuttaa muita kuin työaikoja erillään työaikakalenterista.</span><span class="sxs-lookup"><span data-stu-id="a3b85-128">You can add or change non-work times separately from a working time calendar.</span></span>
+<span data-ttu-id="6c798-128">Voit lisätä tai muuttaa muita kuin työaikoja erillään työaikakalenterista.</span><span class="sxs-lookup"><span data-stu-id="6c798-128">You can add or change non-work times separately from a working time calendar.</span></span>
 
-1. <span data-ttu-id="a3b85-129">Valitse **Organisaation hallinto** -sivulta **Muu kuin työaika**.</span><span class="sxs-lookup"><span data-stu-id="a3b85-129">On the **Organization administration** page, select **Non-work time**.</span></span>
+1. <span data-ttu-id="6c798-129">Valitse **Organisaation hallinto** -sivulta **Muu kuin työaika**.</span><span class="sxs-lookup"><span data-stu-id="6c798-129">On the **Organization administration** page, select **Non-work time**.</span></span>
 
-2. <span data-ttu-id="a3b85-130">Valitse **Uusi** ja kirjoita vapaa-ajan nimi ja aika-alue.</span><span class="sxs-lookup"><span data-stu-id="a3b85-130">Select **New** and enter a name and time range for the non-work time.</span></span>
+2. <span data-ttu-id="6c798-130">Valitse **Uusi** ja kirjoita vapaa-ajan nimi ja aika-alue.</span><span class="sxs-lookup"><span data-stu-id="6c798-130">Select **New** and enter a name and time range for the non-work time.</span></span>
 
-<span data-ttu-id="a3b85-131">Jos olet ottanut loma- ja poissaolopäivän korjausten esikatselutoiminnon käyttöön, henkilöstöhallinto käyttää loma- ja sulkemispäiviä määrittääkseen päivien määrän, jota mukautetaan kalenteriin ilmoitettujen työntekijöiden osalta.</span><span class="sxs-lookup"><span data-stu-id="a3b85-131">If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.</span></span>
+<span data-ttu-id="6c798-131">Jos olet ottanut loma- ja poissaolopäivän korjausten esikatselutoiminnon käyttöön, henkilöstöhallinto käyttää loma- ja sulkemispäiviä määrittääkseen päivien määrän, jota mukautetaan kalenteriin ilmoitettujen työntekijöiden osalta.</span><span class="sxs-lookup"><span data-stu-id="6c798-131">If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a3b85-132">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="a3b85-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6c798-132">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="6c798-132">See also</span></span>
 
-- [<span data-ttu-id="a3b85-133">Lomien ja poissaolojen yhteenveto</span><span class="sxs-lookup"><span data-stu-id="a3b85-133">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="a3b85-134">Määritä loman ja poissaolon tyypit</span><span class="sxs-lookup"><span data-stu-id="a3b85-134">Configure leave and absence types</span></span>](hr-leave-and-absence-types.md)
+- [<span data-ttu-id="6c798-133">Lomien ja poissaolojen yhteenveto</span><span class="sxs-lookup"><span data-stu-id="6c798-133">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="6c798-134">Määritä loman ja poissaolon tyypit</span><span class="sxs-lookup"><span data-stu-id="6c798-134">Configure leave and absence types</span></span>](hr-leave-and-absence-types.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
