@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812976"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049433"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -89,13 +89,13 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Suunnitelmat, joissa käytetään järjestystä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä järjestys ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | Lokakuu 2021 – huhtikuu 2022 |
 | Tuotantoympäristö | Aloittamattomat vapautetut tuotantotilaukset, joiden aikataulutettu aloitus on ennen kuluvaa päivää: _\#_ | Tämä ominaisuus odottaa. Jos tuotantotilaus tällä hetkellä viivästyy, pääsuunnittelu olettaa, että se valmistuu saman päivän aikana. Tällä on merkitystä vapautetuille tuotantotilauksille, joiden toimituspäivä on menneisyydessä mutta joita ei ole vielä saatu valmiiksi. | Lokakuu 2021 – huhtikuu 2022 |
 | Tuotantoympäristö | Aikataulutetut resurssit, joilla on rajallinen kapasiteetti: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä rajallisella kapasiteetilla ajoitetut resurssit ohitetaan, kun suunnittelun optimointi on käytössä. Ajoittaminen tapahtuu tuotteen oletusläpimenoajan perusteella. | Rajaton: kesäkuu 2021, rajallinen: lokakuu 2021 |
-| Tuotantoympäristö | Suunnittelussa käytetyt reitit: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä reitit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Käytetään tuotteen oletusläpimenoaikaa. | 2021. kesäkuuta |
+| Tuotantoympäristö | Suunnittelussa käytetyt reitit: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä reitit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Käytetään tuotteen oletusläpimenoaikaa. | Heinäkuu 2021 |
 | Tuotantoympäristö | Hajotusta käyttävä myyntirivin varaus: _\#_ | Hajotustoimintoa käyttävä myyntirivin varaus ei ole tuettu, kun suunnittelun optimointi on käytössä. | 2021. lokakuuta |
 | Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: _\#_ | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | 2021. lokakuuta |
 | Tarjouspyyntö | Pääsuunnitelmat ja tarjouspyyntö käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tarjouspyyntöjä (RFQs) ei pidetä vaatimuksina, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Lokakuu 2021 – huhtikuu 2022 |
 | Ehdotukset | Pääsuunnitelmat, joissa ehdotukset on otettu käyttöön: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Ostoehdotukset](purchase-requisitions.md) | Tuettu |
-| Varmuusmarginaalit | Kattavuusryhmät varmuusmarginaalin kanssa: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä osittain. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) | Vastaanottomarginaali: tuetaan. Uudelleentilausmarginaali ja toimitusmarginaali: huhtikuu 2021 |
-| Varmuusmarginaalit | Pääsuunnitelmat varmuusmarginaalin kanssa: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä osittain. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) | Vastaanottomarginaali: tuetaan. Uudelleentilausmarginaali ja toimitusmarginaali: huhtikuu 2021 |
+| Varmuusmarginaalit | Kattavuusryhmät varmuusmarginaalin kanssa: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä osittain. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) | Vastaanottomarginaali: tuetaan. Uudelleentilausmarginaali ja toimitusmarginaali: huhtikuu - lokakuu 2021 |
+| Varmuusmarginaalit | Pääsuunnitelmat varmuusmarginaalin kanssa: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä osittain. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) | Vastaanottomarginaali: tuetaan. Uudelleentilausmarginaali ja toimitusmarginaali: huhtikuu - lokakuu 2021 |
 | Varmuusvaraston täyttäminen | Nimikkeiden kattavuustiedot, joissa on "täytä vähimmäisvaatimukset", poikkeavat tämän päivän päivämäärästä ja hankinta-ajasta: _\#_ | Suunnittelun optimointi käyttää aina *kuluvan päivän päivämäärää ja hankinta-aikaa*. Tämä muutos tehdään, kun halutaan valmistautua yksinkertaistettuihin suunnitteluasetuksiin tulevaisuudessa. Jos toimitusaika ei sisälly varmuusvarastoon, nykyiselle alhaiselle käytettävissä olevalle varastolle luodut suunnitellut tilaukset viivästyvät aina läpimenoajan vuoksi. Tämä voi aiheuttaa merkittäviä meluongelmia ja ei-toivottuja suunniteltuja tilauksia. Paras käytäntö on muuttaa asetusta siten, että *kuluvan päivän päivämäärää + hankinta-aikaa* käytetään. Päivitä päätiedot ja varoitusten välttämiseksi. | Ei saatavilla |
 | Myyntitarjoukset | Pääsuunnitelmat ja myyntitarjoukset käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tarjouksia ei oteta huomioon, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Lokakuu 2021 – huhtikuu 2022 |
 | Säilyvyysaika | Pääsuunnitelmat, joissa säilyvyysaika on otettu käyttöön: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä säilyvyysaikaa ei oteta huomioon, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | 2021. lokakuuta |

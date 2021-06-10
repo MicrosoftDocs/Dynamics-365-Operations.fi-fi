@@ -2,7 +2,7 @@
 title: Tallennetut näkymät
 description: Tässä aiheessa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744612"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050553"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -126,17 +126,26 @@ Julkaise näkymä seuraavien ohjeiden avulla:
 5. **Päivitys 10.0.17 tai uudempi:** Jos **(Esiversio) Organisaationäkymien käännöstuki** -toiminto on otettu käyttöön, näkymän nimen käännökset voidaan lisätä organisaation tarvitsemilla kielillä valitsemalla **Käännökset**-painike **Nimi**-kentän vieressä. Näkymän nimi näytetään sitten käyttäjille heidän valittuna olevalla kielellä. Voit myös määrittää oletuskielen määrittämään käännös, joka näytetään käyttäjille, kun heidän käyttämälleen kielelle ei ole määritetty käännöstä.
 5. Valinnainen: Anna näkymän kuvaus, joka selittää näkymän saaville käyttäjille sen tarkoituksen. 
 6. Määritä, julkaistaanko näkymä valittujen käyttäjien oletusnäkyminä. Kun näkymä määritetään oletusarvoksi, käyttäjät näkevät sen, kun he avaavat kohdesivun seuraavan kerran. Jokaisen kohdekäyttäjän yksittäinen, yleinen oletusnäkymä muuttuu. Käyttäjät voivat kuitenkin edelleen muuttaa oletusnäkymiään julkaisemisen jälkeen.
-7. Lisää käyttöoikeusroolit, jota vastaavat tämän näkymän kohteena olevia käyttäjiä. 
-8. Määritä, julkaistaanko näkymä kunkin valitun käyttöoikeusroolin aliroolille. Jos näin tehdään, valitse **Sisällytä aliroolit** -valintaruutu soveltuvien käyttöoikeusroolien rivillä. Huomaa, että tämä valintaruutu ei ole käytettävissä rooleille, joilla ei ole alirooleja.
-9. Lisää yritykset, joiden käytettävissä näkymän on tarkoitus olla. 
-10. Valitse **Julkaise**.
+
+    > [!NOTE]
+    > Ota huomioon seuraavat seikat, kun julkaiset näkymän oletusnäkymänä: 
+    > -  Jos julkaiset näkymän oletusnäkymänä joillekin tai kaikille yrityksille, voit muuttaa yksittäistä, **yleistä** oletusnäkymää jokaisen kohdekäyttäjän osalta. 
+    > -  Jos käyttäjällä on rooleja, joissa useita näkymiä julkaistaan oletusnäkyminä, viimeksi julkaistua näkymää käytetään käyttäjän oletusnäkymänä. 
+
+8. Lisää käyttöoikeusroolit, jota vastaavat tämän näkymän kohteena olevia käyttäjiä. 
+9. Määritä, julkaistaanko näkymä kunkin valitun käyttöoikeusroolin aliroolille. Jos näin tehdään, valitse **Sisällytä aliroolit** -valintaruutu soveltuvien käyttöoikeusroolien rivillä. Huomaa, että tämä valintaruutu ei ole käytettävissä rooleille, joilla ei ole alirooleja.
+10. Lisää yritykset, joiden käytettävissä näkymän on tarkoitus olla. 
+
+    > [!NOTE]
+    > Ota huomioon seuraavat odotukset, kun julkaiset näkymän yritykselle.
+    > 
+    > Jos julkaiset näkymän yritykselle, mutta et julkaise sitä oletusnäkymänä, käyttäjät näkevät näkymän näkymävalitsimessa vain tietyillä yrityksillä. Kun näkymä on ladattu ensimmäisen kerran, se on aina käyttäjän tämän sivun näkymävalitsimessa yrityksestä huolimatta.
+
+11. Valitse **Julkaise**.
 
 Huomaa, että joissakin ympäristöissä saattaa kestää jonkin aikaa (enintään tunti), ennen kuin käyttäjät näkevät julkaistun näkymän.
 
-> [!NOTE]
-> Ota huomioon seuraavat odotukset, kun julkaiset näkymän yritykselle tai kun julkaiset näkymän oletusnäkymänä.
-> - Jos julkaiset näkymän oletusnäkymänä kaikille tai joillekin yrityksille, voit muuttaa yksittäistä, yleistä oletusnäkymää jokaisen kohdekäyttäjän osalta. Jos käyttäjällä on rooleja, joissa useita näkymiä julkaistaan oletusnäkyminä, viimeksi julkaistua näkymää käytetään käyttäjän oletusnäkymänä. 
-> - Jos julkaiset näkymän yritykselle, mutta et julkaise sitä oletusnäkymänä, käyttäjät näkevät näkymän näkymävalitsimessa vain tietyillä yrityksillä. Kun näkymä on ladattu ensimmäisen kerran, se on aina käyttäjän tämän sivun näkymävalitsimessa yrityksestä huolimatta. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Julkaistun näkymän muokkaaminen
 
