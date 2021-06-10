@@ -94,7 +94,9 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (heinäkuu 2021)
+                    - name: Commerce 10.0.20 (heinäkuu 2021)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Commerce 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (toukokuu 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: Asiakasnoudon ajankohtien luominen ja päivittäminen
                   href: dev-itpro/pickup-timeslots.md
+                - name: Tuotedimensioarvojen konfiguroiminen näkymään swatch-kohteina
+                  href: dev-itpro/dimensions-swatch.md
         - name: Tuotteiden ja palveluiden myynninedistäminen
           items:
             - name: 'Luokat, tuotteet ja valikoimat'
@@ -930,11 +934,13 @@
                   href: manage-csp.md
                 - name: Verkkotehtävätapahtumien keräämisestä kieltäytyminen
                   href: web-activity-opt-out.md
-                - name: Käytä mittayksikön asetuksia
+                - name: Mittayksikön asetusten käyttäminen
                   href: unit-of-measure.md
+                - name: Tuotedimensioiden näyttöasetusten käyttäminen
+                  href: dimension-settings.md
             - name: Sivuston sisällön hallinta
               items:
-                - name: Tapoja lisästä sisältöä
+                - name: Tapoja lisätä sisältöä
                   href: add-manage-content.md
                 - name: Sivumallisanasto
                   href: page-elements-overview.md
@@ -1946,7 +1952,7 @@
                   items:
                     - name: Luotujen raporttitulosten seuraaminen ja vertaaminen perusarvoihin
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
+                    - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen parannukset perusarvoihin vertaamista varten
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Testauksen automatisointi ER:n avulla'
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Sovellusasetukset
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Site Builderin yleisen konfiguraation asetusten konfiguroiminen käyttöön otettujen ominaisuuksien perusteella
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Ympäristön asetustiedosto
                       href: e-commerce-extensibility/platform-settings.md
                     - name: Moduulimäärityksen laajentaminen
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Kehitys- ja ALM-muutokset versioissa 10.0.10–10.0.13
                   href: dev-itpro/dev-changes-10-13.md
+                - name: 'Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten'
+                  href: dev-itpro/build-pipeline.md
                 - name: Commerce- ja Finance and Operations -koontijärjestelmien yhdistäminen
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: 'Retail SDK:n siirtäminen Visual Studio 2015:stä Visual Studio 2017:ään'
@@ -2386,6 +2396,8 @@
               items:
                 - name: Myyntipisteen näyttöasettelut
                   href: pos-screen-layouts.md
+                - name: Store Commerce -sovellus Microsoft Dynamics 365 Commercessa
+                  href: dev-itpro/store-commerce.md
                 - name: URL-osoitteen avaaminen myyntipisteessä
                   href: Open-URL-in-POS.md
                 - name: Myyntipisteen asettelun suunnittelutoiminnon asentaminen
