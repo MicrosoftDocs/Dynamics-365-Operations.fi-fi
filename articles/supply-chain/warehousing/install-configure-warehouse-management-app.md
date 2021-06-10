@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908949"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049313"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -295,5 +295,9 @@ Jos laite katoaa tai vaarantuu, laitteen Supply Chain Managementin käyttöoikeu
 1. Valitse työkalurivillä **Poista**.
 1. Valitse avautuvassa vahvistussanomassa **Kyllä**.
 
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Mobiililaitteen käyttäjäasetukset](mobile-device-user-settings.md)
+- [Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

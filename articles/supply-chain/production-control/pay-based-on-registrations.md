@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c511558735e89db32e88f6efdd2d0cc88a04b61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39786323e1ea11a960332e6e0a01f6ef8de1838d
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814823"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102995"
 ---
 # <a name="pay-based-on-registrations"></a>Rekisteröinteihin perustuva palkka
 
@@ -81,7 +81,7 @@ Liukumaprofiilin mukaan aikaväli 6.00–7.00 on liukuman lisäysjakso. Jos työ
 
 #### <a name="calculation-of-flex-"></a>Liukuman vähennyksen laskenta
 
-Liukumaprofiilin mukaan liukuman vähennysjakso alkaa 14.30 ja loppuu 15.30. Jos työntekijä poistuu työpaikalta 14.45, vajeajalla jäljellä olevat 45 minuuttia (0,75 tuntia) rekisteröidään palkkatyöajaksi ja sama summa vähennetään työntekijän liukuvan työajan tililtä. 45 minuuttia sisällytetään palkkatyöaikaan, sillä työntekijälle maksetaan palkkaa vajeajassa jäljellä olevalta 45 minuutilta. Jos työntekijä on poissa liukuman vähennyskauden aikana,. työntekijän liukuvan työajan tililtä vähennetään 45 minuuttia.
+Liukumaprofiilin mukaan liukuman vähennysjakso alkaa 14.30 ja loppuu 15.30. Jos työntekijä poistuu työpaikalta 14.45, vajeajalla jäljellä olevat 45 minuuttia (0,75 tuntia) rekisteröidään palkkatyöajaksi ja sama summa vähennetään työntekijän liukuvan työajan tililtä. 45 minuuttia sisällytetään palkkatyöaikaan, sillä työntekijälle maksetaan palkkaa vajeajassa jäljellä olevalta 45 minuutilta. Jos työntekijä on poissa liukuman vähennyskauden aikana, työntekijän liukuvan työajan tililtä vähennetään 45 minuuttia.
 
 #### <a name="calculation-of-time"></a>Ajan laskenta
 
@@ -120,7 +120,7 @@ Liukumaprofiilin mukaan aikaväli 6.00–7.00 on liukuman lisäysjakso. Kello 6.
 
 #### <a name="calculation-of-flex-"></a>Liukuman vähennyksen laskenta
 
-Koska työntekijä on töissä liukuman vähennysjakson aikana, liukuman vähennystä ei lasketa. Liukuman vähennys lasketaan vain, jos työntekijä on poissa liukuman vähennysjakson aikana. Jos työntekijä työskentelee liukuman vähennysjakson aikana, hänelle myönnetään normaalille työajalle määritetty palkkio. Jos työntekijä on poissa liukuman vähennyskauden aikana,. työntekijän liukuvan työajan tililtä vähennetään 45 minuuttia.
+Koska työntekijä on töissä liukuman vähennysjakson aikana, liukuman vähennystä ei lasketa. Liukuman vähennys lasketaan vain, jos työntekijä on poissa liukuman vähennysjakson aikana. Jos työntekijä työskentelee liukuman vähennysjakson aikana, hänelle myönnetään normaalille työajalle määritetty palkkio. Jos työntekijä on poissa liukuman vähennyskauden aikana, työntekijän liukuvan työajan tililtä vähennetään 45 minuuttia.
 
 #### <a name="calculation-of-time"></a>Ajan laskenta
 
@@ -168,9 +168,9 @@ Jos haluat määrittää järjestelmän erottamaan vakiotyöajan ja ylityön sel
 
 Valitse **Laskentaparametrit**-sivulla profiilin määritystyypiksi **Ylityö** ja määritä **Palkkatyöaika**-asetuksen arvoksi **Ei** tässä kuvatulla tavalla.
 
-| Rekisterin määrittely | Profiilin määrittelylaji | Laskelma   |     | Maksettu         |     |
+| Rekisterin määrittely | Profiilin määrittelylaji | Laskelma   | Asetus | Maksettu         | Asetus |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Työaika       | Ylityö                   | Vakioaika | Kyllä | Maksetaan ajasta     | En  |
+| Työaika       | Ylityö                   | Vakioaika | Kyllä | Maksetaan ajasta     | Nro  |
 |                    |                            | Maksetaan ajasta      | Kyllä | Maksetaan ylityöstä | Kyllä |
 
 Kun laskentaparametrit on oikaistu, seuraavat palkkatapahtumat luodaan.
@@ -559,7 +559,7 @@ Jos sitä vastoin valitun poissaolokoodin **Vähennä ylityötä** -valintaruutu
 
 Seuraavassa esimerkissä näytetään, miten työntekijän liukuvan työajan tililtä voidaan tehdä vähennys muuntamalla poissaoloaika vajeajaksi.
 
-Työntekijä saapuu työpaikalle kello 8.00 ja poistuu kello 15.30. Työntekijä on sopinut esimiehensä kanssa, että hän voi lähteä viikonlopun viettoon vähentämällä kyseiset tunnit liukuvan työajan tunneista. Kun työntekijä poistuu työpaikalta 12.00, häntä pyydetään valitsemaan poissaolokoodi, koska jäljellä olevan työpäivän poissaolo-osuus on suunnitellun vajeajan ulkopuolella. Jos työpäivän jäljellä oleva osa halutaan muuntaa vajeajaksi, työntekijä voi valita liukuvan työajan tilillä määritetyn poissaolokoodin.
+Työntekijä saapuu työpaikalle kello 8.00 ja poistuu kello 15.30. Työntekijällä on sopimus, jonka mukaan hän voi olla kotona viikonloppuna, jos nämä tunnit vähennetään liukumasaldosta. Kun työntekijä poistuu työpaikalta 12.00, häntä pyydetään valitsemaan poissaolokoodi, koska jäljellä olevan työpäivän poissaolo-osuus on suunnitellun vajeajan ulkopuolella. Jos työpäivän jäljellä oleva osa halutaan muuntaa vajeajaksi, työntekijä voi valita liukuvan työajan tilillä määritetyn poissaolokoodin.
 
 Voit vähentää poissaolon työnpäivänä kirjaavien työntekijöiden liukuvan työajan tunteja valitsemalla ensin **Työajan seuranta** &gt; **Asetukset** &gt; **Ryhmät** &gt; **Poissaoloryhmät** ja sitten **Kavenna liukumaa** -valintaruudun.
 

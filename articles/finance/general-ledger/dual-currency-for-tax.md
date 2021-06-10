@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832967"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088462"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Arvonlisäveron kaksoisvaluutan tuki
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ Lisätietoja kaksoisvaluutasta on kohdassa [Kaksoisvaluutta](dual-currency.md).
 Kaksoisvaluutan tuen johdosta toimintojen hallinnassa on käytettävissä seuraavat kaksi uutta toimintoa: 
 
 - Arvonlisäveron muuntaminen (uusi versiossa 10.0.13)
+- Määritä taloushallinnon dimensiot toteutuneille valuuttaoikaisun voitto-/tappiotileille arvonlisäveron tilitystä varten (uusi versiossa 10.0.17)
 
-Arvonlisäverojen kaksoisvaluutan tuki varmistaa sen, että verot lasketaan tarkasti verovaluuttana ja että arvonlisäveron tilityksen täsmäytys lasketaan tarkasti sekä kirjanpitovaluuttana että raportointivaluuttana. 
+Arvonlisäverojen kaksoisvaluutan tuki varmistaa sen, että verot lasketaan tarkasti verovaluuttana ja että arvonlisäveron tilityksen täsmäytys lasketaan tarkasti sekä kirjanpitovaluuttana että raportointivaluuttana.
 
 ## <a name="sales-tax-conversion"></a>Arvonlisäveron muunto
 
@@ -88,6 +89,10 @@ Tämä toiminto koskee vain uusia tapahtumia. Jos verotapahtuma on jo tallennett
 
 Jos haluat estää edellä kerrotun skenaarion, suosittelemme tämän parametrin arvon muuttamista uudelle (puhtaalla) verotilityskaudella, joka ei sisällä tilittämättömiä verotapahtumia. Jos haluat muuttaa tätä arvoa veron tilityskauden aikana, suorita Tilitä ja kirjaa arvonlisävero -ohjelma nykyisellä verontilityskaudella ennen kuin muutat tämän parametrin arvoa.
 
+Tämä ominaisuus lisää kirjanpitomerkintöjä, jotka selventävät valuutanvaihdon voittoja ja tappioita. Tiedot tehdään realisoituneilla valuuttaoikaisun tulostileillä, kun uudelleenarvostus tehdään arvonlisäveron tilityksen yhteydessä. Lisätietoja on jäljempänä tässä ohjeaiheessa kohdassa [Verotilitysten automaattinen saldo raportointivaluuttana](#tax-settlement-auto-balance-in-reporting-currency).
+
+> [!NOTE]
+> Tilityksen aikana taloushallinnon dimensioiden tiedot ovat liikevaihtotilejä eli tasetilejä, jotka syötetään valuuttaoikaisun tuloslaskelmaan eli tulostilille. Koska taloushallinnon dimensioiden arvon rajoitukset eroavat tasetilien ja tulostilien rajoitusten osalta, arvonlisäveron selvitys- ja kirjaamisprosessin aikana voi esiintyä virhe. Jotta tilirakenteita ei tarvitse muokata, voit ottaa käyttöön Täytä taloushallinnon dimensiot toteutuneihin valuuttaoikaisuvoittoihin/-tappiotileihin arvonlisäveron tilittämiseksi -ominaisuuden. Tämä ominaisuus pakottaa taloushallinnon dimensioiden aktivoimisen valuuttaoikaisuvoittojen/-tappioiden tileihin. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Raportointivaluutan verosumman seuraaminen
 
@@ -114,7 +119,7 @@ Käytetään edellistä esimerkkiä tämän toiminnon esittelemiseksi ja oleteta
 | Kirjanpitovaluutta             | 100                        | 111                       | 83                       | **83.25**          |
 | Raportointivaluutta              | 100                        | 111                       | 83                       | **83**             |
 
-Kun arvonlisäveron tilitysohjelma suoritetaan kuukauden lopussa, kirjanpitomerkintä on seuraava:
+Kun arvonlisäveron tilitysohjelma suoritetaan kuukauden lopussa, kirjanpitomerkintä on seuraava.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Skenaario: arvonlisäveron muunnos = Kirjanpitovaluutta
 
 | Päätili           | Tapahtumavaluutta (Ison-Britannian puntina) | Kirjanpitovaluutta (Yhdysvaltain dollareina) | Raportointivaluutta (Ison-Britannian puntina) |

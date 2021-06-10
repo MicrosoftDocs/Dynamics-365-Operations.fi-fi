@@ -1,27 +1,21 @@
 ---
 title: Negatiiviset päivät ja dynaamiset negatiiviset päivät
 description: Tässä ohjeaiheessa on tietoja negatiivisista ja dynaamisista negatiivisista päivistä sekä siitä, miten niillä voi edistää liiketoimintaa.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907738"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097231"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatiiviset päivät ja dynaamiset negatiiviset päivät
 
@@ -45,7 +39,7 @@ Voit saada kysynnän joko suhteellisen aikaisessa vaiheessa nimikkeen läpimenok
 - DemoProduct-nimikkeen oston läpimenoaika on kuusi päivää.
 - DemoProduct-tuotteen varastotaso nollapäivänä (1. tammikuuta) on 0 (nolla).
 - Saat nollapäivänä (1. tammikuuta) DemoProduct-nimikkeen myyntitilauksen, jonka määrä on 10.
-- Seitsemäntenä päivänä (7. tammikuuta) on olemassa DemoProduct-nimikkeen ostotilaus, jonka määrä on 10.
+- Seitsemäntenä päivänä (8. tammikuuta) on olemassa DemoProduct-nimikkeen ostotilaus, jonka määrä on 10.
 
 Seuraava kuva on tämän skenaarion graafinen esitys.
 
@@ -112,7 +106,7 @@ Tarve voidaan saada jossain vaiheessa nimikkeen läpimenoajan aikana. Esimerkki 
 
 Seuraava kuva on tämän skenaarion graafinen esitys.
 
-![Skenaarion 1 graafinen esitys](./media/negative-days-8.png)
+![Skenaarion 2 graafinen esitys](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Tapaus A: negatiivisten päivien arvo on pienempi kuin nimikkeen läpimenoaika
 
@@ -219,8 +213,8 @@ Haluat ehkä määrittää negatiivisten päivien arvoksi pitkän aikarajan ja k
 - DemoProduct-nimikkeen oston läpimenoaika on kuusi päivää.
 - DemoProduct-tuotteen varasto nollapäivänä (1. tammikuuta) on 0 (nolla).
 - Saat nollapäivänä (1. tammikuuta) DemoProduct-nimikkeen myyntitilauksen, jonka määrä on 10.
-- Saat 10. päivänä (10. tammikuuta) DemoProduct-nimikkeen myyntitilauksen, jonka määrä on 10.
-- 12. päivänä (12. tammikuuta) on DemoProduct-nimikkeen ostotilaus, jonka määrä on 10.
+- Saat yhdeksäntenä päivänä (10. tammikuuta) DemoProduct-nimikkeen myyntitilauksen, jonka määrä on 10.
+- Yhdentenätoista päivänä (12. tammikuuta) on DemoProduct-nimikkeen ostotilaus, jonka määrä on 10.
 - Negatiivisten päivien arvoksi määritetään **20**, joka on paljon suurempi arvo kuin nimikkeen läpimenoaika.
 
 Seuraava kuva on graafinen esitys siitä, mitä tapahtuu.
@@ -229,7 +223,7 @@ Seuraava kuva on graafinen esitys siitä, mitä tapahtuu.
 
 Tarvesuunnittelulla saadaan seuraavat tulokset.
 
-![Tulokset](./media/negative-days-20.png)
+![Tulosesimerkki 1](./media/negative-days-20.png)
 
 Edellisessä näyttökuvassa myyntitilauksen tarvepäivä on 9. eikä 10. tammikuuta Koska kyseinen näyttökuva otettiin 2015, jolloin 10. tammikuuta oli lauantai, tilauksen tarvepäivän pitäisi olla edellinen arkipäivä, joka oli perjantai 9. tammikuuta.
 
@@ -239,7 +233,7 @@ Tulokset eivät ole virheellisiä, mutta tarvesuunnittelun suoritusaika voi pide
 
 Jos pienennät negatiivisten päivien arvon lähemmäksi nimikkeen läpimenoaikaa ja käytät dynaamisia negatiivisia päiviä, tarvesuunnittelulla saada seuraavat tulokset.
 
-![Tulokset](./media/negative-days-21.png)
+![Tulosesimerkki 2](./media/negative-days-21.png)
 
 Tarvesuunnittelu luo ensimmäiseen myyntitilaukseen liitetyn suunnitellun tilauksen. Sen jälkeen toinen myyntitilaus määritetään odotetusta aiemmin luodun myyntitilauksen perusteella negatiivisten päivien asetusten pohjalta. Myös tämä suunnittelutulos on oikein ja tarvesuunnittelun suoritusaika voi olla lyhyempi. Tässä tapauksessa ei ole välttämätöntä, että ymmärrät toimenpidesanomat ja osaat käyttää niitä.
 

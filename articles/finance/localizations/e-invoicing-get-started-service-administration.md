@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen palvelun hallinnan aloittaminen
 description: Tässä aiheessa selitetään, miten sähköisen laskutuksen käyttö voidaan aloittaa.
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980972"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092403"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Sähköisen laskutuksen palvelun hallinnan aloittaminen
 
@@ -44,18 +44,14 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Microservices-lisäosan asentaminen Lifecycle Servicesissa
 
-1. Kirjaudu LCS-tilille.
-2. Valitse **Esiversiotoiminnon hallinta** -ruutu.
-3. Valitse **Julkisen esiversion ominaisuudet** -osasta **Sähköinen laskutus**.
-4. Varmista, että **Esiversiotoiminto käytössä** -asetukseksi on valittu **Kyllä**.
-5. Valitse LCS-projektikoontinäytössä LCS-projekti.
-6. Valitse LCS-projektissa LCS-ympäristön koontinäytössä valitse LCS-käyttöönottoprojekti. LCS-käyttöönottoprojektin on oltava käynnissä.
-7. Valitse **Power Platform -integrointi** -välilehden **Ympäristön lisäosat** -kenttäryhmässä **Asenna uusi lisäosa**.
-8. Valitse **Sähköinen laskutus**.
-9. Kirjoita **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä on kiinteä arvo.
-10. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi vuokraajan tunnus.
-11. Lue ehdot ja valitse valintaruutu.
-12. Valitse **Asenna**.
+1. Kirjaudu sisään LCS-tiliiso ja LCS-koontinäytössä valitse LCS-projekti.
+2. Valitse projektissa ympäristön koontinäytössä valitse LCS-käyttöönottoprojekti. Valittavan projektin on oltava käynnissä.
+3. Valitse **Power Platform -integrointi** -välilehden **Ympäristön lisäosat** -kenttäryhmässä **Asenna uusi lisäosa**.
+4. Valitse **Sähköinen laskutus**.
+5. Kirjoita **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä on kiinteä arvo.
+6. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi vuokraajan tunnus.
+7. Lue ehdot ja valitse valintaruutu.
+8. Valitse **Asenna**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Määritä RCS-integroinnin parametrit sähköisen laskutuksen avulla

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 080b84d712a9c634611090f71b9ecca75e13cdcb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 77b4276cec5e046a19d6d001acf41fc410052fba
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837462"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049289"
 ---
 # <a name="mobile-device-user-settings"></a>Mobiililaitteen käyttäjäasetukset
 
@@ -94,3 +94,8 @@ Noudattamalla näitä ohjeita voit luoda ja hallita mobiililaitteiden merkkejä 
 
     - **Laitteen mallitunnus** – Laitteen mallitunnus, kuten *Surface Book 2*.
     - **Kuvaus** – Voit kirjoittaa kuvauksen, jonka avulla merkki erottuu helpommin muista mallitunnuksista.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen](install-configure-warehouse-management-app.md)
+- [Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen](step-icons-titles.md)

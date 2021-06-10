@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen määrittämisestä.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
+ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897717"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6075140"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 
@@ -194,6 +194,8 @@ Seuraavissa luetteloissa näkyvät sähköisen laskutuksen ominaisuuksissa käyt
 
 - Myyntilasku (ES)
 - Projektilasku (ES)
+
+Sähköisen laskutuspalvelun kanssa käytettävissä olevista ER-muotokonfiguraatioista voit luoda myös omia ER-muotokonfiguraatioita. Sähköisen laskutuksen ominaisuuksissa käytettävät muotokonfiguraatiot eivät kuitenkaan tue suoraa viittausta Financen tai Supply Chain Managementin tauluihin tai vastaaviin metatietoihin. Vain viitteitä ER-mallin määritykseen tuetaan.
 
 ### <a name="actions"></a>Toimenpiteet
 

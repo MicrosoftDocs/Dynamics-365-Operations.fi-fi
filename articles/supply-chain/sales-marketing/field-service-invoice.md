@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f3066741781bd9058e09d7f577a35df4c9b453d4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819205"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102731"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Servicen sopimuslaskujen synkronointi Supply Chain Managementin vapaatekstilaskuihin
 
@@ -100,11 +100,11 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Sopimuslaskut (Field Servicesta Supply Chain Managementiin): Laskujen otsikot
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Laskun otsikoiden tietojen integroinnin mallimääritys](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Sopimuslaskut (Field Servicesta Supply Chain Managementiin): Laskurivit
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Laskun rivien tietojen integroinnin mallimääritys](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
