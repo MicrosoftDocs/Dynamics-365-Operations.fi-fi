@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017052"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085471"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Kirjanpito- tai raportointivaluutan muuttaminen
 
@@ -31,12 +31,12 @@ Tässä ohjeaiheessa kerrotaan, miten kirjanpito- tai raportointivaluutta vaihde
 Haluat vaihtaa kirjanpito- tai raportointivaluutan tai lisätä raportointivaluutan kirjanpidon asetuksiin. Tämä tapahtuu yleensä seuraavissa tilanteissa:
 
 - Yrityksen määrityksen yhteydessä määritettiin väärä kirjanpito- tai raportointivaluutta. Haluat muuttaa tämän valuutan nyt.
-- Yrityksen määrityksen yhteydessä ei määritetty raportointivaluuttaa. (Raportointivaluutta on valinnainen.) Haluat nyt lisätä raportointivaluutan.
+- Raportointivaluutta määritettiin yrityksen määrityksen yhteydessä, mutta organisaatio haluaa nyt poistaa raportointivaluutan.
+- Organisaatio päivittää Microsoft Dynamics 365 Financen tai siirtyy käyttämään sitä ja haluaa muuttaa kirjanpito- tai raportointivaluutan.
 
 Organisaatio, joka ei aiemmin käyttänyt kaksoisvaluuttaominaisuutta, haluaa nyt alkaa käyttää sitä. Tämä virhe tapahtuu yleensä seuraavissa tilanteissa.
 
-- Raportointivaluutta määritettiin yrityksen määrityksen yhteydessä, mutta organisaatio haluaa nyt poistaa raportointivaluutan.
-- Organisaatio päivittää Microsoft Dynamics 365 Financen tai siirtyy käyttämään sitä ja haluaa muuttaa kirjanpito- tai raportointivaluutan.
+- Yrityksen määrityksen yhteydessä ei määritetty raportointivaluuttaa. (Raportointivaluutta on valinnainen.) Haluat nyt lisätä raportointivaluutan.
 
 ## <a name="resolution"></a>Ratkaisu
 

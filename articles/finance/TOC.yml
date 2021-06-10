@@ -72,6 +72,8 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.20 (heinäkuu 2021)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (heinäkuu 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (toukokuu 2021)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Alkusaldot puuttuvat tilinpäätöksestä
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Talouskirjauskansiomallien avaaminen Officessa
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Taloushallinnon raportointi
           items:
             - name: Taloushallinnon raportoinnin aloittaminen
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Tietokenttien lisääminen verointegrointiin laajennusten avulla
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Useita ALV-rekisteröintinumeroita
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Ympäristön määrittäminen päätietojen hakua varten
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Useita ALV-rekisteröintinumeroita
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Useiden ALV-rekisteröintien raportointi
+                      items:
+                        - name: Useiden ALV-rekisteröintien raportointi
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Alankomaiden raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: EU-myyntiluettelo
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: Pakolliset päivitykset
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -2388,6 +2402,20 @@
                               href: localizations/apac-ind-GST-tax-returns.md
                             - name: Usean erän käsittelyn käyttöönotto GSTR-raporteissa
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: GST-veron vianmääritys
+                          items:
+                            - name: Virheellinen verosumma laskennan jälkeen
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Verokonfiguraation virheet
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Veroa ei lasketa
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: Vahvistussääntöjen aktivoiminen kestää odotettua kauemmin
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans-kohdetta tai tositetta ei luoda
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: Verotapahtuman tunnus on väärä
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Suorat verot
                   items:
                     - name: Intian ennakonpidätys
@@ -2844,6 +2872,10 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Tarkistustiedosto (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: ALV-ilmoitus (Alankomaat)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norja
               items:
                 - name: Norja – yleiskatsaus
@@ -3380,7 +3412,7 @@
                   href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Työntekijöiden osaamisalueiden kohdentaminen
                   href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-                - name: Lisää suorituskyvyn kirjauskansioon
+                - name: Lisääminen suorituskyvyn kirjauskansioon
                   href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
                 - name: Tavoitteen luominen
                   href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
@@ -4123,7 +4155,7 @@
                   items:
                     - name: Luotujen raporttitulosten seuraaminen ja vertaaminen perusarvoihin
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
+                    - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen parannukset perusarvoihin vertaamista varten
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: 'Testauksen automatisointi ER:n avulla'
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json

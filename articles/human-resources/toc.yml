@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 20. toukokuuta 2021
+          href: hr-whats-new-2021-05-20.md
         - name: 3. toukokuuta 2021
           href: hr-whats-new-2021-05-03.md
         - name: 19. huhtikuuta 2021
@@ -785,9 +787,15 @@
           items:
             - name: Suorituksen hallinnan yleiskatsaus
               href: hr-develop-performance-management-overview.md
-            - name: Työntekijöiden osaamisalueiden kohdentaminen
-              href: hr-develop-skills.md
-            - name: Lisää suorituskyvyn kirjauskansioon
+            - name: Osaamisalueet
+              items:
+                - name: Osaamisalueiden määrittäminen
+                  href: hr-develop-skills.md
+                - name: Osaamisalueiden syöttäminen
+                  href: hr-develop-enter-skills.md
+                - name: Osaamisalueiden yhdistämismääritykset
+                  href: hr-develop-map-skills.md
+            - name: Lisääminen suorituskyvyn kirjauskansioon
               href: hr-develop-add-performance-journal.md
             - name: Tavoitteen luominen
               href: hr-develop-create-goal.md

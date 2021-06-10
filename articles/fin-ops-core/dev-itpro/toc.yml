@@ -14,11 +14,13 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
-                - name: Platform update -päivitykset 10.0.19 (heinäkuu 2021)
+                - name: Platform update -päivitykset versioon 10.0.20 (heinäkuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Platform update -päivitykset versioon 10.0.19 (kesäkuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Platform update -päivitykset 10.0.18 (toukokuu 2021)
+                - name: Platform update -päivitykset versioon 10.0.18 (toukokuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Platform update -päivitykset 10.0.17 (huhtikuu 2021)
+                - name: Platform update -päivitykset versioon 10.0.17 (huhtikuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
@@ -940,11 +942,9 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Lifecycle Servicesin uudet ja muuttuneet ominaisuudet
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Lifecycle Servicesin (LCS) poistetut tai vanhentuneet ominaisuudet
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services -käyttöopas
               href: lifecycle-services/lcs-user-guide.md
-            - name: Projektin perehdytys
+            - name: Projektin käyttöönotto
               href: lifecycle-services/project-onboarding.md
             - name: Tilauksen arviointityökalu
               href: lifecycle-services/subscription-estimator.md
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Sovellusten elinkaaren hallinta
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: Käyttäjän määrittämä ryhmän omistaja
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Kaksoiskirjoitusympäristöjen linkityksen poistaminen ja uudelleenlinkittäminen
+                      href: data-entities/dual-write/relink-environments.md
                 - name: Käsitteiden vastaavuudet sovellusten välillä
                   items:
                     - name: Integroidut asiakkaan päätiedot
@@ -1166,6 +1170,8 @@
               items:
                 - name: Apuohjelmien yleiskatsaus
                   href: power-platform/add-ins-overview.md
+            - name: Käytännöt ja tietoliikenne
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobiiliympäristö
           items:
             - name: Mobiiliympäristön resurssit

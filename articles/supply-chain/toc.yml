@@ -72,7 +72,9 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.19 (heinäkuu 2021)
+                    - name: Supply Chain Management 10.0.20 (heinäkuu 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (toukokuu 2021)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Työtilausten määrittäminen
               items:
-                - name: 'Ylläpitotöiden tyyppiluokat ja ylläpitotöiden tyypit, ylläpitotöiden tyyppien variantit, ylläpitotöiden toimialat ja ylläpidon tarkistuslistat'
+                - name: 'Ylläpitotöiden tyypit, luokat, muuttujat, kaupat ja tarkistusluettelot'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Työtilauksen elinkaaren tilat
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: Luotujen raporttitulosten seuraaminen ja vertaaminen perusarvoihin
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
+                    - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen parannukset perusarvoihin vertaamista varten
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Testauksen automatisointi ER:n avulla'
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,7 +2227,9 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Suunnitteluversiot ja suunnittelun tuoteluokat
               href: engineering-change-management/engineering-versions-product-category.md
-            - name: Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön
+            - name: Reseptien ja niiden ainesosien muutosten hallinta
+              href: engineering-change-management/manage-formula-changes.md
+            - name: Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön
               href: engineering-change-management/change-management-existing-products.md
             - name: Tuotteen elinkaaren tila ja tapahtumat
               href: engineering-change-management/product-lifecycle-state-transactions.md
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: Työtunnusten yhdistetty numerosarja
               href: production-control/unified-job-ids.md
+            - name: Prosessien automatisoinnin työnkulkujen aktivoiminen laatutilausten luontia varten
+              href: production-control/process-automation-quality-orders.md
             - name: Erillinen tuotanto
               items:
                 - name: Tuotannon päätietojen ylläpito
@@ -2337,7 +2343,7 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
                           href: production-control/production-floor-execution-use.md
-                        - name: Tuotannon käyttöliittymän ohjaustyylit
+                        - name: Tuotannon käyttöliittymän tyylin määrittäminen
                           href: production-control/production-floor-execution-styles.md
                     - name: Laitteiden työnkortin määrittäminen
                       href: production-control/config-job-card-device.md
@@ -3139,9 +3145,9 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: 'Skenaario 1 – Lähetysten konsolidointi, kun lähetykset vapautetaan varastoon käyttämällä myyntitilausten automaattista vapautusta'
+                    - name: Skenaario 1 – Varastoon myyntitilausten automaattista vapautusta käyttämällä vapautettujen lähetysten konsolidointi
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: 'Skenaario 2 – Lähetysten konsolidointi, kun lähetysten konsolidointikäytäntö ohitetaan Vapauta varastoon -sivulla'
+                    - name: 'Skenaario 2 – Lähetysten konsolidointi, kun lähetyksen konsolidointikäytäntö on ohitettu'
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
                     - name: Skenaario 3 – Lähetysten konsolidointi käyttämällä varastoon vapauttamista kuormasuunnittelun työtilasta
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
@@ -3287,9 +3293,9 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Varaston konfiguroinnin vianmääritys
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Varastonhallinnan mobiilisovelluksen asentaminen ja konfigurointi
+                - name: Warehouse Management ‑mobiilisovelluksen asentaminen ja konfigurointi
                   items:
-                    - name: Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
+                    - name: Warehouse Management ‑mobiilisovelluksen asentaminen ja yhteyden muodostaminen
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Mobiililaitteen käyttäjäasetukset
                       href: warehousing/mobile-device-user-settings.md
@@ -3297,13 +3303,15 @@
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Viivakoodien lukeminen kameran avulla varastonhallinnan mobiilisovelluksessa
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Varastonhallinnan mobiilisovelluksen kenttien konfigurointi
+                    - name: Warehouse Management ‑mobiilisovelluksen kenttien konfigurointi
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Varastotyön mobiililaitteiden määrittäminen
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Vaihekuvakkeiden ja otsikoiden määrittäminen
+                      href: warehousing/step-icons-titles.md
                     - name: Varastosovelluksen tapahtumakäsittely
                       href: warehousing/warehouse-app-events.md
-                    - name: Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
+                    - name: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3345,7 +3353,7 @@
               items:
                 - name: 'Kentän asetukset puuttuvat, kun kopioidaan nimikemalliryhmiä toiseen yritykseen'
                   href: troubleshooting/costing/copying-item-model-groups.md
-                - name: Keskeneräiset epäsuorat kustannukset -raportti sisältää poistetut tuotantotilaukset
+                - name: Keskeneräiset välilliset kustannukset -raportti sisältää poistetut tuotantotilaukset
                   href: troubleshooting/costing/indirect-costs-in-pr.md
                 - name: 'Ostojen jaksotus, joka on kirjattu nollasummalla nolla-arvoisen tuotteen vastaanotolle'
                   href: troubleshooting/costing/posting-to-purchase.md
@@ -3359,29 +3367,33 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: Valmiiksi ilmoittamisen peruuttaminen luo odottamattoman avoimen tapahtuman
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: Kirjauskansioon liitettyjä uusia huomautuksia ei voi näyttää keräysluetteloraportissa
+                - name: Keräysluetteloraportti ei näytä kirjauskansioon liitettyjä uusia huomautuksia
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: 'Aloitetun karanteenitilauksen määrää ei päivitetä, kun tilaus jaetaan'
                   href: troubleshooting/inventory/quantity-on-a-start.md
                 - name: 'Viimeinen testauspäivämäärä -kenttää ei päivitetä, kun luodaan useita laatutilauksia'
                   href: troubleshooting/inventory/the-field-last-test.md
-                - name: 'Kun todellisen painon määrää jaetaan, käytetään nimellismäärän sijaan vähimmäisarvoa'
+                - name: 'Kun todellisen painon määrä jaetaan, käytetään nimellismäärän sijaan vähimmäismäärää'
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Pääsuunnittelu
               items:
                 - name: Sisäisen tarkistuksen työnkulku käsittelee suoraan johdetut kiinteät tilaukset
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Pääsuunnittelun nimikkeitä ei voi suodattaa niihin liittyvien kattavuusryhmän arvojen mukaan
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: Pääsuunnittelu luo suunniteltuja tilauksia haamutuotteita varten
                   href: troubleshooting/planning/planned-orders-are-g.md
-                - name: 'Suunniteltu ostotilaus, joka luodaan, kun järjestelmässä on osto, jolla on negatiivinen päivien määrä'
+                - name: 'Suunniteltu ostotilaus luodaan, kun järjestelmässä on osto, jolla on negatiivinen päivien määrä'
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Kysynnän ennusteen syötön kustannushinnan lataaminen ei onnistu
+                - name: 'Ennustettua yksikkökustannusta ei voi päivittää, kun tuot kysyntäennustetietueita'
                   href: troubleshooting/planning/unable-to-upload-the.md
                 - name: Varaston kysynnän ennustedimensiota ei voi poistaa ennusteriveiltä
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 'Näyttöön tule kehote tallentaa nimikkeen kattavuusasetukset, vaikka et olisi tehnyt muutoksia'
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Hankinta
               items:
-                - name: VEL-yrityksessä ei voi laskuttaa asiakkaalla olevaa myyntitilausta
+                - name: Asiakkaalle näkyvää myyntitilausta ei voi laskuttaa
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: Ostoehdotukseen ei voi lisätä riviä muutoksen pyytämisen jälkeen
                   href: troubleshooting/procurement/purchase-requisition.md
@@ -3403,7 +3415,7 @@
                   href: troubleshooting/production/late-selection-is-no.md
                 - name: 'Käyttäjät voivat peruuttaa niiden tuotteiden materiaalirivien valinnan, jotka on ilmoitettu valmiiksi'
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: Virhe kirjattaessa Ilmoita valmiiksi -kirjauskansio
+                - name: Virhe kirjattaessa Ilmoita valmiiksi -kirjauskansiota
                   href: troubleshooting/production/posting-report-as-.md
                 - name: Keräysluettelon kirjauskansion varastoa ei päivitetä tuoterakennerivillä
                   href: troubleshooting/production/the-warehouse-in-pic.md
