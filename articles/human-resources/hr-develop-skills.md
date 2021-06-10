@@ -1,14 +1,14 @@
 ---
-title: Työvoiman osaamisalueiden kohdistaminen liiketoimintatarpeisiin
-description: Voit seurata työntekijöillä, hakijoilla tai yhteyshenkilöillä olevia osaamisalueita tai mitä osaamisalueita heillä pitäisi olla voidakseen suoriutua rooleistaan tehokkaasti. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
+title: Osaamisalueiden määritykset
+description: Voit seurata työntekijän osaamisalueita Dynamics 365 Human Resourcesissa. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
 author: andreabichsel
-ms.date: 11/01/2017
+manager: tfehr
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
@@ -16,52 +16,97 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: fc9996c31c3575ccf942907a66e59b00a344f3d1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 816822d1f3d365b4c5571c13e9f596e1c5d5e59c
+ms.sourcegitcommit: 48528233e0f02dbd47e96e030254ef65f2bb899e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793702"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6076556"
 ---
-# <a name="align-workforce-skills-with-business-needs"></a>Työvoiman osaamisalueiden kohdistaminen liiketoimintatarpeisiin
+# <a name="configure-skills"></a>Osaamisalueiden määritykset
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Voit seurata työntekijöillä, hakijoilla tai yhteyshenkilöillä olevia osaamisalueita tai mitä osaamisalueita heillä pitäisi olla voidakseen suoriutua rooleistaan tehokkaasti. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
+Voit seurata työntekijän osaamisalueita Dynamics 365 Human Resourcesissa. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
 
-Seurattavia osaamisalueita ovat esimerkiksi seuraavat:
--   Esimiestaito – kyky valvoa muiden työskentelyä.
--   Johtajuus – kyky johtaa työntekijöitä ja liiketoimintayksiköitä.
--   Suunnittelu – kaukonäköisyys - kyky nähdä eteenpäin, luoda visioita ja saattaa ne loppuun.
--   HTML-kyky kirjoittaa HTML-koodia.
+Seurattavia osaamisalueita ovat esimerkiksi:
 
-Ennen kuin voit määrittää osaamisalueen henkilölle tai työlle, luoda osaamisaluekartoitushaun tai luoda osaamisprofiilin, osaamisalueiden tiedot on lisättävä **Osaamisalueet**-sivulle. Voit valita jokaiselle osaamisalueelle osaamisaluetyypin ja arviointimallin.
+- Esimiestaito – kyky valvoa muiden työskentelyä.
+- Johtajuus – kyky johtaa työntekijöitä ja liiketoimintayksiköitä.
+- Suunnittelu – kaukonäköisyys - kyky nähdä eteenpäin, luoda visiolausekkeita ja saattaa ne loppuun.
+- HTML-kyky kirjoittaa HTML-koodia.
 
-## <a name="rating-models"></a>Arviointimallit
-Arviointimallien avulla voit arvioida henkilön osaamisalueen todellisen tason, tason joka hänen tulee saavuttaa tai tason, joka tarvitaan työssä. Voit kirjoittaa arviointimallille enintään 10 tasoa.  Kullekin arviointimallin tasolle määritetään kerroin.  Kertoimen arvoa käytetään eri luokitusmalleja käyttävien osaamisalueiden normalisointiin.  Kertoimen on oltava numero väliltä 0-9, ja kullakin tasolla on oltava yksilöllinen kerroin.  Tasoja, joilla on korkeammat kertoimen arvot, painotetaan enemmän arviointimallissa.
+Jos et ole vielä määrittänyt osaamisaluetyyppejä ja arviointimalleja, sinun on lisättävä joitakin tietoja ennen osaamisalueiden luomista.
 
-## <a name="specify-job-skills"></a>Määritä työn osaamisalueet
-Kun syötät tietoja työstä, voit määrittää osaamisalueita joita henkilöllä tulisi olla, ennen kuin hän voi toimia kyseisessä työssä.  Voi lisäksi määrittää kullekin osaamisalueelle toivotun tason sekä osaamisalueen tärkeystason. Eri töissä voidaan edellyttää saman osaamisalueen eri tärkeystasoja.
+Seuraavat henkilöt voivat määrittää työntekijälle osaamisalueita:
 
-## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Kirjoita työntekijöiden, hakijoiden tai yhteyshenkilöiden osaamisalueet.
-Määritä tavoite- tai todelliset osaamisalueet työntekijöille, hakijoille tai yhteyshenkilöille. Tavoitetaito on taito, jonka henkilö aikoo saavuttavansa. Todellisella osaamisalueella tarkoitetaan osaamista, jonka henkilöllä tällä hetkellä on.
+- Työntekijät voivat määrittää itseään varten osaamisalueita työntekijän itsepalvelussa. Nämä osaamisalueet edellyttävät esimiehen hyväksyntää.
+- Esimiehet voivat määrittää työntekijöille osaamisalueita. Voit luoda työnkulun, joka hyväksyy nämä osaamisalueet automaattisesti.
 
-## <a name="skill-mapping-and-skill-mapping-profiles"></a>Osaamisaluekartoitukset ja kartoitusprofiilit
-Voit luoda osaamisaluekartoitushaun ja etsiä työntekijän, hakijan tai yhteyshenkilön, jolla on tietyntyyppiseen tehtävään tarvittava pätevyys. Osaamisaluekartoitushaku etsii osaamisalueita, koulutusta, todistuksia, luottamustehtäviä ja projektikokemusta ja palauttaa annettuja ehtoja vastaavat tulokset.  Voi esimerkiksi olla hyödyllistä tietää organisaation työntekijöiden koulutustaso.
+## <a name="create-a-skill-type"></a>Luo osaamisaluetyyppi
 
-Osaamisaluekartoitusprofiilien avulla voit etsiä nykyisiä työntekijöitä tai hakijoita, joiden pätevyys vastaa suoraan liiketoiminnan tarpeita.  Voit esimerkiksi luoda osaamisaluekartoitusprofiileja organisaatiossa avoimena olevia toimia varten. Luomalla profiilin tietylle työlle ja kopioimalla työn osaamisalueet, koulutuksen ja todistukset profiiliin voit nopeasti hakea työntekijöitä, hakijoita ja yhteyshenkilöitä, jotka vastaavat yhtä tai useampaa profiilissa määritettyä ehtoa, ja tarkastella sellaisten hakijoiden luetteloa, joiden osaamisalueet lähimmin vastaavat työn vaatimuksia.
+Osaamisaluetyypit ovat luokkia, joihin yksittäiset osaamisalueet, kuten Hallinto tai Myynti, kuuluvat.
 
-> **Huomautus** Vain osaamisaluekartoitushakuihin valitut työntekijät, hakijat ja yhteyshenkilöt voidaan näyttää osaamisaluekartoituksen tulosluettelossa tai sisällyttää osaamisalueprofiilin. Jos haluat sisällyttää työntekijän, hakijan tai yhteyshenkilön osaamisaluekartoitushakuihin, määritä **Sisällytä osaamisaluekartoitukseen** -asetukseksi Kyllä seuraavilla sivuilla:
-> 
-> + Työntekijä
-> + Työntekijä
-> + Hakija
-> + Yhteyshenkilöt
+1. Valitse **Työntekijän kehitys** -työtilassa **Linkit**.
 
-## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Osaamiseroanalyysi ja osaamisprofiilianalyysi
-Luomalla osaamisprofiilianalyysin voit tarkastella luetteloa työntekijän, hakijan tai yhteyshenkilön osaamisalueista tiettynä päivänä. Voit luoda osaamisalueaukkoanalyysi, jotta voit verrata henkilön taitoja työhön vaadittaviin taitoihin  
+2. Valitse **Tasoasetukset**-kohdasta **Osaamisaluetyypit**.
 
+3. Valitse **Uusi**.
 
+4. Täytä seuraavat kentät:
 
+   - **Osaamisaluetyyppi**: anna osaamisaluetyypin nimi.
+   - **Kuvaus**: anna osaamisaluetyypin kuvaus.
+
+5. Valitse **Tallenna**.
+
+## <a name="create-a-rating-model"></a>Luo arvostelujärjestelmä
+
+Arviointimallien avulla voit arvioida henkilön osaamisalueen todellisen tason, tason joka hänen tulee saavuttaa tai tason, joka tarvitaan työssä. Kullekin arviointimallin tasolle määritetään kerroin.
+
+1. Valitse **Työntekijän kehitys** -työtilassa **Linkit**.
+
+2. Valitse **Osaamisasetukset**-kohdasta **Arviointimallit**.
+
+3. Valitse **Uusi**.
+
+4. Täytä seuraavat kentät:
+
+   - **Luokitus**: Kirjoita arviointimallille nimi, esimerkiksi **Osaamisalueet**.
+   - **Kuvaus**: Kirjoita arviointimallille kuvaus, esimerkiksi **Osaamisalueluokitukset**.
+
+5. Valitse **Tasot**-osassa **Uusi**. Täytä kunkin lisättävän tason kentät:
+
+   - **Taso**: Kirjoita tason nimi.
+   - **Kuvaus**: Kirjoita tason kuvaus.
+   - **Kerroin**: Syötä kerroinarvo väliltä 0-9. Kertoimet auttavat normalisoimaan eri luokitusmalleja käyttäviä taitoja. Jokaisella tasolla on oltava yksilöivä kerroin. Tasoja, joilla on korkeammat kertoimen arvot, painotetaan enemmän arviointimallissa.
+
+   Jatka tasojen lisäämistä tarvittaessa. Voit syöttää kullekin arviointimallille enintään 10 tasoa.
+
+6. Valitse **Tallenna**.
+
+## <a name="create-a-skill"></a>Luo osaamisalue
+
+Ennen kuin voit määrittää osaamisalueen, luoda osaamisaluekartoitushaun tai osaamisprofiilin, osaamisalueiden tiedot on lisättävä **Osaamisalueet**-sivulle. Voit valita jokaiselle osaamisalueelle osaamisaluetyypin ja arviointimallin.
+
+1. Valitse **Työntekijän kehitys** -työtilassa **Linkit**.
+
+2. Valitse **Tasoasetukset**-kohdasta **Osaamisalueet**.
+
+3. Valitse **Uusi**.
+
+4. Täytä seuraavat kentät:
+
+   - **Osaamisalue**: anna osaamisalueen nimi.
+   - **Kuvaus**: anna osaamisalueen kuvaus.
+   - **Arvostelu**: Valitse arvostelumalli, jota haluat käyttää tässä osaamisalueessa.
+   - **Osaamisaluetyyppi**: Valitse osaamisaluetyyppien luettelosta.
+
+5. Valitse **Tallenna**.
+
+## <a name="see-also"></a>Lisätietoja
+
+[Syötä osaamisalueet](hr-develop-enter-skills.md)<br>
+[Osaamisalueiden kartoitus](hr-develop-map-skills.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

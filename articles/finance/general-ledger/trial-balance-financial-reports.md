@@ -1,8 +1,8 @@
 ---
 title: Pääkirjan talousraportit
 description: Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816928"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103655"
 ---
 # <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816928"
 
 Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan. 
 
-<a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
------------------------------
+## <a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
 
 Talousraportointi sisältää kolme pääkirjaraporttia.
 
@@ -47,6 +46,9 @@ Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.
 | Yksityiskohtainen pääkirja – oletus               | Pääkirja - oletusarvo | Yksityiskohtainen pääkirja – oletus               |
 | Pääkirjan yhteenveto – oletus                | Pääkirja - oletusarvo | Pääkirjan yhteenveto - oletusarvo                |
 | Pääkirjan yhteenveto vuosittain – oletus | Pääkirja - oletusarvo | Pääkirjan yhteenveto vuosittain - oletusarvo |
+
+> [!NOTE] 
+> Kun suoritetaan talousraportoinnin **Pääkirjasaldo**-raportti, valitse valintaruutuja, jotka koskevat **Näytä rivit, joilla ei ole summia**, ja **näytä raportit, joilla ei ole aktiivisia rivejä** **Asetukset**-välilehdessä.
 
 ### <a name="row-definition"></a>Rivimääritys
 
@@ -94,10 +96,7 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
     -   **FD** – vain edellisen vuoden debet-tiedot sisältävät taloushallinnon tiedot
     -   **FD** – vain edellisen vuoden kredit-tiedot sisältävät taloushallinnon tiedot
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportoinnin yleiskatsaus](financial-reporting-getting-started.md)
 

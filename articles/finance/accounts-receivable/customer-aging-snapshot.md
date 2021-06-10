@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039924"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123359"
 ---
 # <a name="customer-aging-snapshots"></a>Asiakkaan erääntymistilannevedokset
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039924"
 Tässä ohjeaiheessa on tietoja asiakkaan erääntymistilannevedoksista. Erääntymistilannevedos laskee asiakasryhmän erääntyneet saldot kyseisenä ajankohtana. Voit luoda erääntymistilannevedostietueita joko kaikkia asiakkaita tai asiakaspoolin asiakkaita varten.
 
 Erääntymistilannevedostiedot näytetään **Erääntyneet saldot** -luettelosivulla ja **Perintä**-sivulla. Erääntymistilannevedos on luotava, ennen kuin **Erääntyneet saldot** -luettelosivua voi käyttää. Luettelosivulla näkyvät vain ne asiakkaat, joita varten on luotu erääntymistilannevedos.
+
+**Asiakkaan luotonvalvonta** -työtilassa näkyvät myös asiakkaan erääntymistiedot. Lisätietoja on kohdassa [Luotonvalvonnan hallinnan Power BI -sisältö](credit-collections-power-bi.md).
 
 > [!NOTE]
 > Voit lyhentää erääntymistilannevedoksen luomiseen tarvittavaa aikaa ottamalla käyttöön **Asiakkaan erääntymisen suorituskyvyn parannus** -ominaisuuden **Ominaisuuksien hallinta** -työtilassa. Älä kuitenkaan käytä asiakaspooleja, kun tämä ominaisuus on käytössä. Jos asiakaspooli on valittuna, toiminto ei toimi, mutta voit silti luoda erääntymistilannevedoksen.
@@ -62,4 +64,3 @@ On suositeltavaa ajoittaa tämä prosessi suoritettavaksi eräkäsittelyssä.
 > [!NOTE]
 > Voit parantaa erän suorituskykyä erääntymistilannevedoksia luotaessa kirjoittamalla numeron **Erätehtävien enimmäismäärä** -kenttään **Perinnän oletukset** -pikavälilehdelle **Kokoelmat**-välilehdellä **Myyntireskontran parametrit** -sivulla. **Eräännytä asiakkaan saldot** -kentässä on suositeltavaa aloittaa oletusarvolla **100** ja säätää sitten arvoa tilanteen käsittelyn optimoimiseksi.
 
-**Asiakkaan luotonvalvonta** -työtilassa näkyvät myös asiakkaan erääntymistiedot. Lisätietoja on kohdassa [Luotonvalvonnan hallinnan Power BI -sisältö](credit-collections-power-bi.md).

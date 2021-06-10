@@ -2,13 +2,12 @@
 title: Loma- ja poissaolopyyntöjen hallinta Teamsissa
 description: Tässä ohjeaiheessa käsitellään poissaolopyyntöjä Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953409"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097256"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
@@ -33,21 +32,13 @@ Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa voi tehdä nopeast
 
 Löydät Dynamics 365 Human Resources -sovelluksen Teams-kaupasta.
 
-1. Valitse Microsoft Teamsissa kolme pistettä.
-
-   ![Human Resources Teamsin lomasovelluksen kolme pistettä](./media/hr-teams-leave-app-ellipses.png)
+1. Siirry Microsoft Teamsissa sovellusluetteloon.
  
 2. Hae Dynamics 365 Human Resources ja valitse sitten **Henkilöstöhallinto**-ruutu.
 
-   ![Human Resources Teamsin lomasovelluksen HR-ruutu](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Asenna sovellus valitsemalla **Lisää**-painike.
 
-   ![Human Resources Teamsin lomasovelluksen asennus](./media/hr-teams-leave-app-in-store.png)
-
 Jos sisäänkirjautuminen ei tapahdu automaattisesti, kirjaudu sitään valitsemalla **Asetukset**-välilehti.
-
-![Human Resources Teamsin lomasovelluksen Asetukset-välilehti](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Jos kirjautumisikkuna ei ole näkyvissä, varmista, että selaimen asetukset sallivat ponnahdusikkunat. 
@@ -61,20 +52,24 @@ Jos käytössä on useita Human Resources -esiintymiä, valitse **Asetukset**-v�
 
 Kun sovellus on asennettu, näkyviin tuleva tervehdyssanoma ilmoittaa, minkälaisia toimintoja botti voi tehdä puolestasi.
 
-![Human Resources Teams -lomasovelluksen botin tervehdyssanoma](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > Kun bottia käytetään ensimmäinen kerran, sisäänkirjautuminen voi olla välttämätöntä. Jos kirjautumisikkuna ei ole näkyvissä, varmista, että selaimen asetukset sallivat ponnahdusikkunat.
 
 Botilta voi pyytää seuraavia:
 
-- Lomapyynnön käynnistäminen käyttäjän puolesta.
+- Tarkastele nykyisiä lomasaldoja. Lähetä esimerkiksi sanoma, jossa sanotaan "Näytä lomasaldot".
+
+- Lomapyynnön käynnistäminen käyttäjän puolesta. Lähetä esimerkiksi viesti "Pidä vapaata" tai "Haluan pitää vapaata ensi torstaina ja perjantaina", jotta voit tarkemmin kysyä vapaata poissaolon lomatyypille. 
 
   ![Lomapyynnön käynnistäminen Tiimit-keskustelussa](./media/hr-teams-leave-app-initiate.png)
 
 - Keskustelubotti täyttää lomapyynnön puolestasi. Valitse **Pyydä vapaata** ja muokkaa pyyntösi tietoja.
 
-  ![Lomapyynnön tietojen muokkaaminen](./media/hr-teams-leave-app-details.png)
+   Jos haluat lähettää useita lomatyyppejä koskevat lomapyynnöt samana päivänä, valitse **Lisäasetukset**-valikosta **Jaa päivä**. 
+
+   Jos valitset puoli päivää lomaa, kun pyynnön yksikkö on päiviä, voit määrittää, haluatko pyytää aamupäivän vai iltapäivän vapaata, valitsemalla **Lisäasetukset**-valikosta **Puoli päivää** -määritysvaihtoehdon.
+   
+   ![Puolen päivän määritelmät](./media/HalfDayDefinitions.png)
 
 - Kun olet muokannut lomapyyntösi tietoja, lähetä se hyväksyttäväksi valitsemalla **Lähetä**.
 
@@ -91,42 +86,36 @@ Botilta voi pyytää seuraavia:
 - Poissaolopyynnöt
 
 - Lomapyyntöluonnokset
-
-![Human Resources Teamsin lomasovelluksen Poissaolo-välilehti](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Uuden pyynnön luominen
 
 1. Uusi lomapyyntö luodaan valitsemalla **Uusi pyyntö**.
 
-   ![Human Resources Teamsin lomasovelluksen uusi pyyntö](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Anna haluamasi poissaolopäivä tai -päivät ja valitse sitten **Lisää**.
 
-   ![Human Resources Teamsin lomasovelluksen poissaolon lisääminen](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Human Resources Teamsin lomasovelluksen poissaolon lisääminen](./media/TimeOffHours.png)
 
 3. Anna tarvittaessa syykoodi. Lisää myös mahdolliset kommentit ja liitteet.
 
-4. Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi kirjoittamalla **Lähetä**. Jos haluat palata pyyntöön, voit kirjoittaa **Tallenna luonnoksena**.
+4. Valitse **Jaa päivä** -vaihtoehto **Lisäasetukset** -valikosta, jos haluat lähettää useita lomapyyntömerkintöjä samalle päivälle eri lomalajeille.
+
+5. Valitse **Puoli päivää -määritys**-vaihtoehto, kun haluat määrittää, haluatko pyytää aamupäivän vai iltapäivän vapaata. Tämä vaihtoehto on käytettävissä, kun lomapyynnön yksikkö on päivinä ja pyydetty määrä on 0,5 päivää.
+
+6. Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi valitsemalla **Lähetä**. Jos haluat palata pyyntöön, voit syöttää **Tallenna luonnoksena**.
 
 ### <a name="manage-draft-requests"></a>Pyyntöluonnosten hallinta
 
 1. Valitse **Luonnokset**-välilehti.
 
-   ![Human Resources Teamsin lomasovelluksen Luonnokset-välilehti](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Muokkaa pyyntöä valitsemalla kynäkuvake tai poista pyyntö valitsemalla roskakori.
 
 3. Tee tarvittavat muutokset. Kun tiedot on annettu, lähetä pyyntö hyväksyttäväksi kirjoittamalla **Lähetä**. Voit palata pyyntöön, jos valitset **Tallenna luonnoksena**.
-
-   ![Human Resources Teamsin lomasovelluksen luonnoksen muokkaus](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Teams-ilmoituksiin vastaaminen
 
 Kun lomapyyntöjen lähetysten hyväksyjänä olet sinä tai vaihtoehtoisesti työntekijä, saat ilmoituksen Teamsin Human Resources -sovellukseen. Voit tarkastella ilmoitusta valitsemalla sen. Ilmoitukset näkyvät myös **Keskustelu**-alueella.
 
 Jos olet hyväksyjä, voit valita ilmoituksessa **Hyväksy** tai **Hylkää**. Voit myös määrittää valinnaisen sanoman.
-
-![Human Resourcesin Teams-sovelluksen lomapyynnön ilmoitus](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Tulevien poissaolotietojen lähettäminen työtovereille
 
@@ -138,15 +127,9 @@ Kun olet asentanut Teamsin Human Resources -sovelluksen, voit lähettää työto
 
 2. Valitse jaettava lomapyyntö. Jos haluat jakaa lomapyyntöluonnoksen, valitse ensin **Luonnokset**.
 
-   ![Jaettavan tulevan lomapyynnön valitseminen](./media/hr-teams-leave-app-chat-search.png)
-
 Lomapyyntösi tulee näkyviin keskustelussa.
 
-![Human Resourcesin lomapyyntökortti](./media/hr-teams-leave-app-chat-card.png)
-
-Jos olet jakanut pyyntöluonnoksen, se tulee näkyviin luonnoksena:
-
-![Human Resourcesin lomapyyntöluonnoskortti](./media/hr-teams-leave-app-chat-draft-card.png)
+Jos olet jakanut pyyntöluonnoksen, se tulee näkyviin luonnoksena.
 
 ## <a name="view-your-teams-leave-calendar"></a>Ryhmän lomakalenterin tarkasteleminen
 
@@ -155,8 +138,6 @@ Jos olet esimies, jolla on suoria alaisia, voit tarkastella ryhmän hyväksytty�
 1. Valitse Teamsin Human Resources -sovelluksessa **Poissaolo**.
 
 2. Valitse **Ryhmän kalenteri**. Kalenterissa näkyvät suorien alaisten hyväksytyt ja hyväksyntää odottavat poissaolot.
-
-   ![Human Resourcesin Teams-sovelluksen tarkasteleminen](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Jos et näe ryhmäkalenteria, pyydä järjestelmänvalvojaasi ottamaan se käyttöön. Lisätietoja on kohdassa [Asentaminen ja määrittäminen](hr-admin-teams-leave-app.md#install-and-setup).

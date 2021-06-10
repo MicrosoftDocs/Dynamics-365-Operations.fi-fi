@@ -2,13 +2,12 @@
 title: Oikeutussääntöjen ja -asetusten määrittäminen
 description: Määritä oikeutussäännöt ja -vaihtoehdot Microsoftin Dynamics 365 Human Resourcesin etujen hallinnassa.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5ad568d2e1dd14acdfb3848cace035abfc0507
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791505"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093917"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Oikeutussääntöjen ja -asetusten määrittäminen
 
@@ -41,7 +40,7 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
 
 3. Määritä seuraavien kenttien arvot.
 
-   | Kenttä | Kuvaus |
+   | Kenttä | kuvaus |
    | --- | --- |
    | **Kelpoisuussääntö** | Kelpoisuussäännön yksilöivä tunniste. |
    | **Kuvaus** | Kelpoisuussäännön kuvaus. |
@@ -57,9 +56,9 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
    | **Rekisteröitymiskausi** | Ajanjakso, jolloin uusi työhönottoilmoitus on sallittu. Jos määrität tämän myös parametreissa, parametrien asetus ohittaa tämän asetuksen. |
    | **Käytä aiempaa työsuhteen tilaa** | Määrittää, käytetäänkö työntekijän edellistä työllisyysarvoa osana etujen oikeutussääntöä. Voit esimerkiksi määrittää oikeutussäännön, joka luopuu kattavuusodotusjaksosta kaikkien niiden työntekijöiden kohdalla, jotka ovat siirtyneet **Lomautus**-tilasta **Työssä**-tilaan 90 päivän kuluessa edellisen työsuhteen päättymisestä. |
 
-4. Valitse **Lisäehdot**-kohdasta seuraavat vaihtoehdot ja lisää tarvittavat tiedot:
+4. Valitse **Lisäehdot**-kohdasta seuraavat vaihtoehdot ja lisää tarvittavat tiedot.
 
-   | Vaihtoehto | Kuvaus |
+   | Vaihtoehto | kuvaus |
    | --- | --- |
    | **Sallittu ikä** | Määrittää kelpoisuussäännön täyttämiseen vaadittavat ikäalueet. |
    | **Sallittu osasto** | Määrittää osaston tai osastot, joihin työntekijän on kuuluttava kelpoisuussäännön täyttämiseksi. |
@@ -68,7 +67,7 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
    | **Sallittu työtehtävä** | Määrittää kelpoisuussääntöä vastaavan työtehtävän tai -tehtävät. Esimerkiksi myyntityöntekijät tai teknikot. |
    | **Sallitun työn tyyppi** | Määrittää kelpoisuussääntöä vastaavan työtyypin tai -tyypit. Esimerkiksi toimisto tai johto. |
    | **Sallittu yritys** | Määrittää yrityksen tai yritykset, jotka ovat kelvollisia kelpoisuussäännölle. Esimerkiksi Contoso Entertainment System USA. |
-   | **Hyväksytty kompensaatioalue** | Määrittää kelpoisuussäännön täyttävän työntekijän sijainnin. Syötä arvoksi esimerkiksi Keski-Yhdysvallat. |
+   | **Sallittu kompensaatioalue** | Määrittää kelpoisuussäännön täyttävän työntekijän sijainnin. Syötä arvoksi esimerkiksi Keski-Yhdysvallat. |
    | **Sallittu toimi** | Määrittää kelpoisuussääntöä vastaavan toimen tai toimet. Esimerkiksi HR-assistentti tai henkilöstöpäällikkö. |
    | **Sallittu toimen tyyppi** | Määrittää kelpoisuussääntöä vastaavan toimityypin tai -tyypit. Esimerkiksi kokoaikainen. |
    | **Sallittu tila** | Määrittää kelpoisuussääntöä vastaavat osavaltiot tai provinssit. Esimerkiksi Pohjois-Dakota USA tai Brittiläinen Kolumbia, Kanada. |
@@ -76,9 +75,9 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
    | **Sallittu järjestö** | Määrittää kelpoisuussääntöä vastaavan ammattiliiton jäsenyyden. Esimerkiksi Forklift Drivers of America. </br></br>Kun käytetään liittoon perustuvaa kelpoisuussääntöä, työntekijän ammattiliiton tietueen päättymispäivämäärä on täytettävä. Et voi jättää sitä tyhjäksi. |
    | **Kelvollinen postinumero** | Määrittää kelpoisuussääntöä vastaavat postinumerot. Esimerkki: 58104. |
 
-5. **Lisätiedot**-kohdassa voit tarkastella seuraavia lisätietoja:
+5. **Lisätiedot**-kohdassa voit tarkastella seuraavia lisätietoja.
 
-   | Kenttä | Kuvaus |
+   | Kenttä | kuvaus |
    | --- | --- |
    | **Sallittu käyttäjän kenttä** | Määrittää lisäkelpoisuussäännöt asiakkaan määrittämien kenttien perusteella. |
    | **Kelpoisuuden tyyppi** | Määrittää **lisäehdoissa** valitun ehtoluokan. |
@@ -87,6 +86,72 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
 
 6. Valitse **Tallenna**.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Mukautettujen kenttien käyttäminen oikeutussäännöissä
+
+[Mukautettuja kenttiä](hr-developer-custom-fields.md) voidaan luoda henkilöstöhallintoon lisätietojen seuraamista varten. Nämä kentät voidaan lisätä suoraan käyttöliittymään, ja sarake lisätään dynaamisesti pohjana olevaan tauluun.  
+
+Mukautettuja kenttiä voidaan käyttää oikeutusprosessissa. Oikeutussäännöt voivat määrittää työntekijän oikeuden käyttää yhtä tai useaa mukautettua kenttää.  Voit lisätä mukautetun kentän aiemmin luotuun sääntöön tai luoda uuden säännön kohdassa **Etujen hallinta > Linkit > Asetus > Oikeutussäännöt > Mukautetun kentän oikeutukset**. Tällä sivulla voit luoda säännön, joka käyttää yhtä tai useita mukautettuja kenttiä, ja voit määrittää kullekin mukautetulle kentälle useita arvoja oikeutuksen määrittämiseksi.
+
+Seuraavat taulut tukevat mukautettuja kenttiä, joita voi käyttää oikeutuksen käsittelyssä:
+
+- Työntekijä (HcmWorker)  
+- Työ (HcmJob)  
+- Toimi (HcmPosition)  
+- Toimen tiedot (HcmPositionDetail)  
+- Toimen työntekijän toimeksianto  
+- Työsuhde (HcmEmployment)  
+- EmploymentDetails (HcmEmploymentDetails)  
+- Työn tiedot (HcmJobDetails)  
+
+Seuraavia mukautettuja kenttätyyppejä tuetaan oikeutuksen käsittelyssä:
+
+- Teksti  
+- Valintaluettelo  
+- Numero  
+- Desimaali  
+- Valintaruutu  
+
+Seuraavassa taulukossa näkyvät mukautetun kentän oikeutuslomakkeen kenttätiedot.
+
+| Kenttä  | kuvaus |
+|--------|-------------|
+| Nimi | Luotavan kriteerin nimi. |
+| Taulun nimi | Oikeutussäännössä käytetyn mukautetun kentän sisältävä taulun nimi. |
+| Kentän nimi | Oikeutussäännössä käytettävä kenttä. |
+| Operaattorin tyyppi | Näyttää mukautetussa kentän oikeutuskonfiguraatiossa käytetyn operaattorin. |
+| Arvo | Näyttää mukautetussa kentän oikeutuskonfiguraatiossa käytetyn arvon. |
+
+## <a name="eligibility-logic"></a>Oikeutuslogiikka
+
+Seuraavissa osissa kuvataan, miten etujen oikeutus käsitellään.
+
+### <a name="rules-assigned-to-a-plan"></a>Suunnitelmalle määritetyt säännöt 
+Kun etusuunnitelmaan on liitetty useita oikeutussääntöjä, työntekijän on täytettävä vähintään yksi sääntö, jotta hän voi rekisteröityä etusuunnitelmaan.  Seuraavassa esimerkissä työntekijän on joko täytettävä **Työlaji**-säännön tai **Aktiiviset työntekijät** -säännön vaatimukset.
+
+![Työntekijän on joko täytettävä Työlaji-säännön tai Aktiiviset työntekijät -säännön vaatimukset.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Oikeutussäännön kriteerit 
+Säännön sisällä määritetään säännön muodostavat ehdot. Edellä olevassa esimerkissä **Työlaji**-säännön ehtona on, että työlaji on johtaja. Tämän vuoksi työntekijän on oltava johtaja, jotta hän voi olla oikeutettu. Tässä säännössä sääntö on vain yksi ehto.
+
+Voit määrittää sääntöjä, joilla on useita ehtoja. Kun määrität oikeutussääntöön useita ehtoja, työntekijän on täytettävä kaikki säännön ehdot, jotta hän voi olla oikeutettu etusuunnitelmaan. 
+
+Esimerkiksi yllä oleva **Aktiiviset työntekijät** -sääntö koostuu seuraavista ehdoista. Jotta työntekijä olisi oikeutettu **Aktiivisten työntekijöiden** säännön perusteella, työntekijän on työskenneltävä yrityksessä USMF *ja* hänen toimensa on oltava tyyppiä kokoaikainen.  
+
+![Oikeutussäännön kriteerit](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Sääntöjen sisällä useita ehtoja
+
+Sääntöjä voidaan laajentaa edelleen käyttämään useita ehtoja yhden ehdon sisällä. Työntekijän on täytettävä vähintään yksi ehto, jotta hän voi olla oikeutettu. Edellä olevan esimerkin perusteella **aktiivisten työntekijöiden** sääntö voidaan laajentaa niin, että siinä on myös osa-aikatyöntekijöitä. Tästä syystä työntekijän on oltava USMF:n työntekijä *ja* joko koko-aikainen tai osa-aikainen työntekijä.  
+
+![Sääntöjen sisällä useita ehtoja](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Mukautetun kentän ehtojen oikeutusehdot 
+Yllä kuvatut kentät muistuttavat sitä, että mukautettuja kenttiä voidaan käyttää luotaessa oikeutussääntöjä ja toimimalla samalla tavalla. Voit esimerkiksi tarjota Internet-hyvityksen Fargon ja Kööpenhaminan työntekijöille, jotka työskentelevät kotona, koska Internet-kustannukset ovat suuremmat näissä sijainneissa. Voit tehdä tämän luomalla kaksi mukautettua kenttää: **Toimiston sijainti** (valintaluettelo) ja **Työskentelee kotona** (valintaruutu). Luo sitten sääntö nimeltä **WFH-työntekijät**. Säännön ehtona on, että **Toimiston sijainti = Fargo** tai **Kööpenhamina** *ja* **Työskentelee kotoa = Kyllä**.
+
+Mukautetut oikeutussäännöt on määritettävä seuraavassa kuvassa kuvatun mukaisesti. 
+
+![Mukautetun kentän ehtojen oikeutusehdot](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Määritä niput
 
 Niput ovat liittyvien etuussuunnitelmien joukko. Etuusnippujen avulla voit ryhmitellä etuussuunnitelmia, jotka työntekijän on valittava voidakseen ilmoittautua tiettyihin etuussuunnitelmiin, jotka voivat olla riippuvaisia muista etuussuunnitelmien ilmoittautumisista. Esimerkkejä siitä, milloin nippua kannattaa käyttää, ovat esimerkiksi seuraavat:
@@ -101,7 +166,7 @@ Niput ovat liittyvien etuussuunnitelmien joukko. Etuusnippujen avulla voit ryhmi
 
 3. Määritä seuraavien kenttien arvot.
 
-   | Kenttä | Kuvaus |
+   | Kenttä | kuvaus |
    | --- | --- |
    | **Nippu** | Nipun yksilöivä tunniste. |
    | **Kuvaus** | Nipun kuvaus. |
@@ -121,9 +186,9 @@ Kaudet määrittävät, milloin etuudet ovat voimassa ja milloin työntekijät v
 
 3. Määritä seuraavien kenttien arvot.
 
-   | Kenttä | Kuvaus |
+   | Kenttä | kuvaus |
    | --- | --- |
-   | **Kausi** | Kauden yksilöivä tunniste. |
+   | **Jakso** | Kauden yksilöivä tunniste. |
    | **Voimaantulopäivämäärä ja -aika** | Aloituspäivämäärä ja -aika, jona etuuskausi on aktiivinen. |
    | **Voimassaolon päättymispäivämäärä ja -aika** | Päivämäärä ja -aika, jona etuuskausi muuttuu passiiviseksi. |
    | **Rekisteröinnin aloittaminen** | Avoimen ilmoittautumisen aloituspäivämäärä. Avoin ilmoittautuminen tarkoittaa sitä, kun työntekijä voi tehdä etuusvalintoja itsepalveluetuuksissa. |
@@ -141,9 +206,9 @@ Joustavien luotto-ohjelmien avulla voit rekisteröidä työntekijät etuuksien m
 
 2. Valitse **Kaudet**-välilehdestä **Joustoluotto-ohjelmat**.
 
-3. Valitse käytettävä joustoluotto-ohjelma. Kentät sisältävät seuraavat tiedot:
+3. Valitse käytettävä joustoluotto-ohjelma. Kentät sisältävät seuraavat tiedot.
 
-   | Kenttä | Kuvaus |
+   | Kenttä | kuvaus |
    | --- | --- |
    | Etuhyvityksen tunnus | Joustavien pisteiden ohjelman yksilöllinen tunnus. |
    | Kuvaus | Joustavien pisteiden ohjelman kuvaus. | 
@@ -165,7 +230,7 @@ Ohjelmat ovat joukko etuussuunnitelmia, joilla on yhteiset kelpoisuussäännöt.
 
 3. Määritä seuraavien kenttien arvot.
 
-   | Kenttä | Kuvaus |
+   | Kenttä | kuvaus |
    | --- | --- |
    | **Ohjelma** | Ohjelman yksilöivä tunniste. |
    | **Kuvaus** | Ohjelman kuvaus. | 

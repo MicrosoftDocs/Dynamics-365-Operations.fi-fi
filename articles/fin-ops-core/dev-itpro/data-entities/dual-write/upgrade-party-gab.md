@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018309"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112670"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirja ja yleinen osoitekirja
 
@@ -22,28 +22,29 @@ ms.locfileid: "6018309"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[Azure Data Factory -malli](https://aka.ms/dual-write-gab-adf) auttaa päivittämään aiemmin luodun **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-taulun tiedot kaksoiskirjoitusmallin osapuolen ja yleisen osoitekirjamallin avulla. Malli täsmäyttää sekä Finance and Operations- että customer engagement -sovellusten tiedot. Prosessin lopussa luodaan **osapuolen** tietueiden **osapuoli**- ja **yhteyshenkilö** kentät ja liitetään asiakkaan varaushakemusten **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueisiin. .csv-tiedosto (`FONewParty.csv`) luodaan luomaan uudet **osapuoli** tietueet Finance and Operations -sovelluksessa. Tämä ohjeaihe sisältää Data Factory -mallissa käytettävät ohjeet ja tietojen päivittämisen.
+[Microsoft Azure Data Factory -malli](https://aka.ms/dual-write-gab-adf) auttaa päivittämään aiemmin luodun **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-taulun tiedot kaksoiskirjoitusmallin osapuolen ja yleisen osoitekirjamallin avulla. Malli täsmäyttää sekä finance and operations- että customer engagement -sovellusten tiedot. Prosessin lopussa luodaan **osapuolen** tietueiden **osapuoli**- ja **yhteyshenkilö** kentät ja liitetään asiakkaan varaushakemusten **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueisiin. .csv-tiedosto (`FONewParty.csv`) luodaan luomaan uudet **osapuoli**-tietueet finance and operations -sovelluksessa. Tämä ohjeaihe sisältää Data Factory -mallissa käytettävät ohjeet ja tietojen päivittämisen.
 
 Jos mukautuksia ei ole, voit käyttää mallia niin kuin se on. Jos olet muokannut **tiliä**, **yhteyshenkilöä** ja **toimittajaa**, sinun on muokattava mallia seuraavien ohjeiden mukaisesti.
 
-> [!Note]
-> Mallin avulla voit päivittää vain **osapuolen** tiedot. Tulevat posti- ja sähköiset osoitteet sisällytetään julkaisuun.
+> [!NOTE]
+> Malli päivittää vain **osapuolen** tiedot. Tulevat posti- ja sähköiset osoitteet sisällytetään julkaisuun.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Nämä edellytykset vaaditaan:
+Seuraavien edellytysten on täytyttävä osapuolen ja yleisen osoitekirjamallin päivittämisessä:
 
 + [Azure-tilaus](https://portal.azure.com/)
 + [Mallin käyttäminen](https://aka.ms/dual-write-gab-adf)
-+ Olet aiemmin luotu kaksoiskirjoitusasiakas.
++ Sinun tulee olla aiemmin luotu kaksoiskirjoitusasiakas.
 
 ## <a name="prepare-for-the-upgrade"></a>Päivityksen valmistelu
+Päivitystä varten tarvitaan seuraavat tehtävät:
 
 + **Täysin synkronoitu**: Molemmat ympäristöt ovat täysin synkronoituja **Tilin (Asiakas)**, **Yhteyshenkilön** ja **Toimittajan** kanssa.
 + **Integrointiavaimet**: **Tili (Asiakas)**-, **Yhteyshenkilö**- ja **Toimittaja**-taulut Customer Engagement -sovelluksessa käyttävät valmiita integrointiavaimia. Jos olet mukauttanut integrointiavaimia, mukauta mallia.
 + **Osapuolinumero**: Kaikki päivitettävät **Tili (asiakas)**-, **yhteyshenkilö**- ja **toimittaja**-tietueet saavat **osapuoli** numeron. Tietueet, joissa ei ole **osapuolen** numeroa, ohitetaan. Jos haluat päivittää nämä tietueet, lisää niille **osapuolen** numero ennen päivitysprosessin käynnistämistä.
-+ **Järjestelmän käyttökomento**: Ota päivitysprosessin aikana sekä Finance and Operations- että customer engagement -ympäristöt offline-tilaan.
-+ **Tilannekuva**: Ota tilannekuvia sekä Finance and Operations- että customer engagement -sovelluksista. Voit tarvittaessa palauttaa edellisen tilan tilannekuvasten avulla.
++ **Järjestelmän käyttökomento**: Ota päivitysprosessin aikana sekä finance and operations- että customer engagement -ympäristöt offline-tilaan.
++ **Tilannekuva**: Ota tilannekuvia sekä finance and operations- että customer engagement -sovelluksista. Voit tarvittaessa palauttaa edellisen tilan tilannekuvasten avulla.
 
 ## <a name="deployment"></a>Käyttöönotto
 
@@ -78,15 +79,19 @@ Nämä edellytykset vaaditaan:
     FO Linked Service_properties_type Properties_tenant | Määritä vuokraajan tiedot (toimialueen nimi tai vuokraajan tunnus), jota hakemuksesi käyttää.
     FO Linked Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO Linked Service_properties_type Properties_service Principal Id | Määritä sovelluksen asiakkaan tunnus.
-    Dynamics Crm Linked Service_properties_type Properties_username | Dynamics-yhteyden muodostanut käyttäjänimi.
+    Dynamics Crm Linked Service_properties_type Properties_username | Dynamics 365 -yhteyden muodostanut käyttäjänimi.
 
-    Lisätietoja on ohjeaiheessa [Resource Manager -mallin manuaalinen luominen jokaiselle ympäristölle](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [linkitetyt palvelun ominaisuudet](/azure/data-factory/connector-dynamics-ax#linked-service-properties) ja [tietojen kopioiminen Azure Data Factoryn avulla](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Lisätietoja on seuraavissa aiheissa: 
+    
+    - [Resource Manager -mallin manuaalinen luominen kullekin ympäristölle](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Linkitetyt huollon ominaisuudet](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Tietojen kopioiminen Azure Data Factoryn avulla](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Tarkista käyttöönoton jälkeen tietojoukot, tietovuo ja data factoryn linkitetty palvelu.
 
    ![Tietojoukot, tietovuo ja linkitetty palvelu](media/data-factory-validate.png)
 
-11. Siirry kohtaan **Hallitse**. Valitse **Yhteydet**-kohdasta **Linkitetty palvelu**. Valitse **DynamicsCrmLinkedService**. Syötä **Muokkaa linkitettyä palvelua (Dynamics CRM)** -lomakkeeseen seuraavat arvot:
+11. Siirry kohtaan **Hallitse**. Valitse **Yhteydet**-kohdasta **Linkitetty palvelu**. Valitse **DynamicsCrmLinkedService**. Syötä **Muokkaa linkitettyä palvelua (Dynamics CRM)** -lomakkeeseen seuraavat arvot.
 
     Kenttä | Arvo
     ---|---
@@ -102,7 +107,7 @@ Nämä edellytykset vaaditaan:
 
 ## <a name="run-the-template"></a>Suorita malli
 
-1. Lopeta Finance and Operations -sovelluksen avulla seuraava **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-kaksoiskirjoitus.
+1. Lopeta Finance and Operations -sovelluksen avulla seuraava **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-kaksoiskirjoituksen yhdistelmä.
 
     + Asiakkaat V3 (accounts)
     + Asiakkaat V3 (yhteyshenkilöt)
@@ -114,7 +119,7 @@ Nämä edellytykset vaaditaan:
 
 3. Asenna [kaksoskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja](https://aka.ms/dual-write-gab) AppSourcesta.
 
-4. Jos seuraavat taulut sisältävät tietoja Finance and Operations -sovelluksessa, suorita niiden **ensimmäinen synkronointi**.
+4. Jos seuraavat taulut sisältävät tietoja finance and operations -sovelluksessa, suorita niiden **ensimmäinen synkronointi**.
 
     + Tervehdykset
     + Henkilökohtaisten luonteenpiirteiden tyypit
@@ -152,12 +157,12 @@ Nämä edellytykset vaaditaan:
     ![Käynnistimen suoritus](media/data-factory-trigger.png)
 
     > [!NOTE]
-    > Jos olet muokannut **tiliä**, **yhteyshenkilöä** ja **toimittajaa**, sinun on muokattava mallia.
+    > Jos olet muokannut **tiliä**, **yhteyshenkilöä** ja **toimittajaa**, sinun täytyy muokata mallia.
 
 8. Tuo Finance and Operations -sovelluksen uudet **osapuoli**-tietueet.
 
     + Lataa `FONewParty.csv`-tiedosto Azure blob-objektisäilöstä. Polku on `partybootstrapping/output/FONewParty.csv`.
-    + Muunna `FONewParty.csv`-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto Finance and Operations -sovellukseen.  Jos csv-tuonti toimii sinulle, voit tuoda csv-tiedoston suoraan. Tuonti saattaa kestää muutamia tunteja sen mukaan, mikä tietomäärä on käytössä. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../data-import-export-job.md).
+    + Muunna `FONewParty.csv`-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto finance and operations -sovellukseen. Jos csv-tuonti toimii sinulle, voit tuoda csv-tiedoston suoraan. Tuonti saattaa kestää muutamia tunteja sen mukaan, mikä tietomäärä on käytössä. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../data-import-export-job.md).
 
     ![Dataverse-osapuolen tietueiden tuominen](media/data-factory-import-party.png)
 
@@ -198,4 +203,4 @@ Nämä edellytykset vaaditaan:
 
 ## <a name="learn-more-about-the-template"></a>Lisätietoja mallista
 
-Malliin lisättyjä kommentteja löydät [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md)-tiedostosta.
+Mallin lisätiedot ovat ohjeaiheessa [Comments for Azure Data Factor -mallin lueminut-tiedosto](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

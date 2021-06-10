@@ -2,7 +2,7 @@
 title: Evästeen yhteensopivuus
 description: Tässä ohjeaiheessa käsitellään evästeiden yhteensopivuuden ja Microsoft Dynamics 365 Commercen oletuskäytäntöjen huomioitavia seikkoja.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908181"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088384"
 ---
 # <a name="cookie-compliance"></a>Evästeen yhteensopivuus
 
@@ -52,8 +52,7 @@ Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce
 | x-ms-cpim-trans                             | Käytetään tapahtumien seurantaan (kuluttajakauppasivustossa todennettavien avoimien välilehtien määrä), mikä sisältää myös nykyisen tapahtuman. |
 | \_msdyn365___muid_                            | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään käyttäjätunnuksena kokeilutarkoituksiin. |
 | \_msdyn365___exp_                             | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään suorituskyvyn kuormituksen tasaamisen mittarina.         |
-
-
+| d365mkt                                       | Käytetään, jos sijaintiin perustuva tunnistus käyttäjän IP-osoitteen seuraamiseksi Commercen sijaintiehdotuksille on otettu käyttöön Commercen sivustonluontityökalussa kohdassa **Sivustoasetukset > Yleiset > Ota sijaintiin perustuva kaupan tunnistus käyttöön**.      |
 
 Jos sivuston käyttäjä valitsee sivuston mahdolliset medialinkit, seuraavan taulukon evästeitä seurataan myös selaimessa.
 
