@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin 10.0.19:n esikatselu (heinäkuu 2021)
+title: Dynamics 365 Supply Chain Managementin 10.0.19:n esikatselu (kesäkuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.19 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 8bb4a7c8085b40ab3eca72675dbe7a3be412d8c1
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961678"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114972"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-july-2021"></a>Dynamics 365 Supply Chain Managementin 10.0.19:n esikatselu (heinäkuu 2021)
+# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin 10.0.19:n esikatselu (kesäkuu 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,23 +26,35 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 - **Julkaisun esiversio:** huhtikuu 2021
 - **Julkaisun yleinen saatavuus (itsepäivitys):** kesäkuu 2021
-- **Julkaisun yleinen saatavuus (automaattinen päivitys):** heinäkuu 2021
+- **Julkaisun yleinen saatavuus (automaattinen päivitys):** kesäkuu 2021
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on linkkejä liittyvään dokumentaatioon.
+Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on lisätietoja ja/tai linkkejä liittyvään dokumentaatioon.
 
 Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana.
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja |
 |---|---|---|
-| Varasto ja logistiikka | [Yhteyshenkilön tietoyksikön viennin optimointi](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | *Ei käytettävissä* |
+| Varasto ja logistiikka | [Yhteyshenkilön tietoyksikön viennin optimointi](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Kun tämä on ominaisuus käytössä, viitattuihin tietoihin tehdyt muutokset eivät aiheuta siihen liittyvien kontaktien sisällyttämistä seuraavaan lisäävään vientiin. Kun tämä on ominaisuus poistettu käytöstä, viitattuihin tietoihin tehdyt muutokset aiheuttavat siihen liittyvien kontaktien sisällyttämistä seuraavaan lisäävään vientiin. |
 | Varasto ja logistiikka | [Varastojen suoritustoimintojen asteittaiset parannukset scale uniteilla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Sanoman käsittelijän sanomat](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Varasto-oikaisu](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md) |
-| Varasto ja logistiikka | [Hakutoiminnot asiakirjan esittely- ja loppulausekentissä Myyntitarjous-sivulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | *Ei käytettävissä* |
+| Varasto ja logistiikka | [Hakutoiminnot asiakirjan esittely- ja loppulausekentissä Myyntitarjous-sivulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Tämä ominaisuus lisää hakutoiminnon **asiakirjan esittely**- ja **loppulausekentissä** **Myyntitarjous**-sivulle.<br><br>Tämä ominaisuus on oletusarvoisesti käytössä. |
 | Varasto ja logistiikka | [Varastonohjaus reunan scale uniteilla mukautetussa laitteistossa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Ota reunan scale unitit käyttöön mukautetussa laitteistossa LBD:n avulla](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Valmistus | [Tuotannonohjaus reunan scale uniteilla mukautetussa laitteistossa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Ota reunan scale unitit käyttöön mukautetussa laitteistossa LBD:n avulla](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Valmistus | [Tuotannonohjaus reunan scale uniteilla mukautetussa laitteistossa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Suunnittelu | [Suunnittelun optimoinnin ääretön kapasiteetin ajoitus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Tämä ominaisuus ottaa käyttöön kapasiteetin ajoituksen ja rajattoman kapasiteetin suunnittelun optimointia varten. Jos tätä toimintoa ei ole, suunnitellut tuotantotilaukset saavat läpimenoajan vapautetun tuotteen varaston läpimenoajasta ajoituksen aikarajasta riippumatta. |
 | Suunnittelu | Kyselypohjainen suunniteltujen tilausten vahvistaminen | [Vahvista suunnitellut tilaukset](../master-planning/planning-optimization/planned-order-firming.md) |
 | Tuotetietojen hallinta | [Muuttujaehdotukset-sivun parannukset](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Luo ennalta määriteltyjä tuotevariantteja](../pim/tasks/create-predefined-product-variants.md) |
+
+## <a name="feature-enhancements-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnon parannukset
+
+Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukset. Jokainen näistä parantaa aiemmin luotua toimintoa lisäysten avulla. Koska ne ovat vain parannuksia, niitä ei ole lueteltu [vapautussuunnitelmassa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Jos kuitenkin haluat varmistaa, että nämä parannukset eivät ole ristiriidassa aiemmin luotujen mukautuksiesi tai asetuksesi kanssa, kaikki muutokset ovat oletusarvon mukaan pois käytöstä (ellei toisin ilmoiteta). Jos haluat käyttää mitä tahansa näistä ominaisuuksista, ne on nimenomaisesti otettava käyttöön [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
+|---|---|---|
+| Myynti ja markkinointi | Myyntihistorian poistamisen suorituskyvyn parannukset | Myyntihistorian poistaminen voi kestää kauan, jos sitä ei suoriteta säännöllisesti ympäristöissä, joissa myyntipäivityksiä on paljon. Voit vähentää kestoa ja parantaa luotettavuutta ja jakaa sitten puhdistuserät, jotka suoritetaan rajoitetun keston ajan. Jos mahdollista, tietokantaominaisuudet suorituskykykertoimella voidaan vähentää lukitusta ja välttää tapahtumatauluihin liittyminen puhdistusta varten. |
+| Myynti ja markkinointi | Päivitä pyydetty vastaanottopäivämäärä vahvistetulla päivämäärällä konsernin sisäisille tilauksille | Tämän ominaisuuden avulla voit ohjata, mitä tapahtuu myynti- ja ostopäivämäärän kenttien arvoille käytettäessä konsernin sisäistä suoraa toimitusta. Voit valita, päivittääkö järjestelmä pyydetyt päivämäärät vai jättääkö se ne päivittämättä. Jos ohitat päivityksen, pyydetyt päivämäärät edustavat sitä, mitä asiakas on pyytänyt. Jos otat päivityksen käyttöön, pyydetyt päivämäärät (kun käytetään toimituspäivämäärän hallintaa) edustavat vain aluksi sitä, mitä asiakas pyysi. Jos toimituspäivän ohjaus eroaa *Ei mitään* -päivästä, se ohita alun perin pyydetyn päivämäärän. Voit asettaa tämän vaihtoehdon käyttämällä **uutta päivityspyynnön vastaanottopäivää ja Vahvistettu päivämäärä** -asetusta yrityksen sisäisissä toimittajissa tai asiakasasetuksissa.<br><br>Jos toiminto ei ole käytössä, järjestelmä korvaa alkuperäisen myyntitilauksen pyydetyn vastaanottopäivämäärän toimituspäivän valvontasäännön perusteella, mutta pyydetty lähetyspäivämäärä säilyy ennallaan. |
+| Varastonhallinta   | Pyöristä määrät alaspäin lähimpään myyntiyksikköön varastoon vapautuksen yhteydessä | Tämä ominaisuus lisää vaihtoehdon, joka voi rajoittaa vapautusten tilausmääriä varastoon. Kun avain on käytössä, tilausmäärät pyöristetään alaspäin lähimpään kokonaislukuun, ja tilaukset, joissa on vähemmän kuin yhden myyntiyksikön määriä, hylätään vapautusta varten. |
+| Varastonhallinta   | Organisaation laajuinen Työn luonti -aikataulun aaltomenetelmä | Ottamalla tämän ominaisuuden käyttöön *Ajoita työn luonti* -aaltomenetelmä määritetään toimimaan rinnakkain kaikkien yritysten välillä. Tämä vaikuttaa myös useisiin lisäasetuksiin. Täydelliset tiedot ovat kohdassa [Työn luonnin aikatauluttaminen aallon aikana](../warehousing/configure-wave-schedule-work-creation.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 

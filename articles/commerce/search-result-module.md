@@ -2,7 +2,7 @@
 title: Hakutulosmoduuli
 description: Tässä ohjeaiheessa on tietoja hakutulosmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794112"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117130"
 ---
 # <a name="search-results-module"></a>Hakutulosmoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja hakutulosmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
@@ -51,9 +52,12 @@ Seuraavassa taulukossa luetellaan hakutulosmoduulien ominaisuudet sekä niiden a
 | Piilota luokkahierarkian näyttö | **Tosi** vai **Epätosi** | Jos ominaisuuden arvoksi määritetään **Tosi**, sivulla näkyvä luokkahierarkia piilotetaan. Tämän ominaisuuden arvoksi tulee määrittää **Tosi**, jos luokkahierarkian näyttämiseen käytetään [siirtymispolkumoduulia](add-breadcrumb.md).|
 | Sisällytä tuotemääritteet hakutuloksiin | **Tosi** vai **Epätosi** | Jos ominaisuuden arvoksi määritetään **Tosi**, tuotteiden määritteet palautetaan hakutuloksissa. Vaikka nämä määritteet voidaankin näyttää Commerce-sivustossa, laajennus on pakollinen.|
 | Näytä liitoksen hinnat | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvoksi määritetään **Tosi**, tuotteiden liittyvät hinnat näkyvät tuloksissa, kun kirjautunut käyttäjä selaa sivua. |
+| Päivitä tarkentajapaneeli | **Tosi** vai **Epätosi** | Jos ominaisuuden arvoksi määritetään **Tosi**, tarkentajapaneeli päivitetään, kun tarkentajat valitaan. Tässä tilassa jotkin monivalintaiset tarkentajat käyttäytyvät kuin yhden valinnan tarkentajat, kun tarkentajapaneeli päivitetään. |
 
 > [!IMPORTANT]
-> Dynamics 365 Commerce -julkaisussa 10.0.16 ja sitä myöhemmissä versioissa **Näytä liittyvät hinnat** -konfiguraatiota voidaan käyttää liittyvien hintojen näyttämiseen sivulla.
+> Commercen versiossa 10.0.16 ja sitä myöhemmissä versioissa **Näytä liittyvät hinnat** -konfiguraatiota voidaan käyttää liittyvien hintojen näyttämiseen sivulla.
+>
+> Commerce version 10.0.20 -versiossa ja sitä myöhemmässä versiossa **päivitys tarkentajapaneeliin** -konfiguraatiota voidaan käyttää päivittämään tarkentajapaneelin valinnan aikana.
 
 ## <a name="supported-modules"></a>Tuetut moduulit
 

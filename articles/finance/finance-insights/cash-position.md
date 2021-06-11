@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811384"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123387"
 ---
 # <a name="cash-position-preview"></a>Kassatilanne (esiversio)
 
@@ -31,7 +31,7 @@ Kassatilanne on kassavirran ennuste. Se perustuu kassakuittien ennusteeseen niil
 
 Kun järjestelmä ennustaa asiakasmaksut, se käyttää maksuennusteita asiakkaan maksuennustetoiminnosta. Ilman maksuennusteita maksupäivämäärän laskemisessa käytetään keskimääräistä aika, joka vaaditaan myyntilaskun muuntamiseksi maksuksi kullekin asiakkaalle. Avoimissa asiakastilauksissa järjestelmä laskee laskupäivämäärän käyttämällä päivien keskimääräistä määrää tilausriveillä laskutettavaa asiakasta kohti. Tämän jälkeen se käyttää laskupäivämäärää syötteenä maksuennustetoiminnossa. Asiakkaan maksuennustetoiminto laskee maḱsupäivämäärän jokaiselle tilausriville. 
 
-<*Tarvitaanko Jarekilta ja Davelta tekstiä siitä, miten maksuennusteet muunnetaan tähän päivään*> Maksamattoman laskun maksupäivämäärä on [*arvioitu*] maksuennusteista valitsemalla päivämäärä, joka vastaa viidettäkymmenettä osaa kumulatiivisesta jakelutoiminnosta, joka saavutetaan ennustetun säilön todennäköisyyksistä.
+Maksamattoman laskun maksupäivämäärä on arvioitu maksuennusteista valitsemalla päivämäärä, joka vastaa viidettäkymmenettä osaa kumulatiivisesta jakelutoiminnosta, joka saavutetaan ennustetun säilön todennäköisyyksistä.
 
 Samankaltaista menetelmää käytetään toimittajille suoritettavien maksujen ennustamiseen. Järjestelmä laskee kullekin toimittajalle keskimääräisen ajan, joka vaaditaan toimittajan laskun muuntamiseen maksuksi. Tätä päivien määrää käytetään maksupäivämäärän laskemisessa. Järjestelmä laskee avoimille toimittajan tilauksille laskupäivämäärän ottamalla huomioon keskimääräisen päivien määrän, joka vaaditaan tilausrivien muuntamiseksi laskuksi kullekin toimittajalle. Järjestelmä laskee sitten maksupäivämäärän käyttämällä keskimääräistä aikaa, jonka avulla toimittajan lasku muunnetaan maksuksi.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921420"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112618"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -104,6 +104,39 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: **Kotimaan veroraportti – toimintoviite IT-00003** – ei ole enää tarkoitus tukea 1.10.2020 jälkeen. |
 
+## <a name="october-2019-deprecation-announcement"></a>Lokakuun 2019 poistoilmoitus
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Liiketoimintaprosessien mallintajan vuokaaviot
+
+<table>
+<tbody>
+<tr>
+<td><strong>Poiston tai vanhentumisen syy</strong></td>
+<td>Olemme poistamassa vuokaavioiden komponentin liiketoimintaprosessien mallintaja (BPM)-osassa, koska vanha muotoilu aiheutti vähäisen käytön.</td>
+</tr>
+<tr>
+<td><strong>Onko toinen ominaisuus korvannut?</strong></td>
+<td>Ei</td>
+</tr>
+<tr>
+<td><strong>Alueet, joihin avain vaikuttaa</strong></td>
+<td>Liiketoimintaprosessien mallintaja</td>
+</tr>
+<tr>
+<td><strong>Tila</strong></td>
+<td>Vanhentunut: vuokakaavioiden osaa BPM:ssä odotetaan poistettavaksi vuonna 2020. Seuraavat toiminnot eivät ole käytettävissä:
+<ul>
+<li>Kaikki vuokaaviot ovat vain luku -muotoisia eikä niitä voi muokata. Myöskään vuokaaviotehtäviin liitetyt muodon ominaisuudet eivät ole käytettävissä. Nämä vuokaaviot sisältävät sekä oletusarvoiset vuokaaviot, jotka luodaan automaattisesti, että mukautettuja vuokaavioita, joita muokataan näiden oletusarvoisten vuokaavioiden perusteella.</li>
+<li>Prosessivaiheet ovat vain luku -muotoisia eikä niitä voi muokata.</li>     
+<li>Vanha sovitus/aukkoanalyysiominaisuus ei ole käytettävissä. Tämän vuoksi väliluetteloa ei luoda automaattisesti eikä se ole käytettävissä vientiä varten.
+<p><strong>Huomautus:</strong> Tämä ominaisuus on aiemmin vanhentunut ja korvattu Microsoft Azure DevOps-integraatiolla.</p>
+</li>
+<li>Vuokaavion versiohistoria ei ole käytettävissä.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 ja Platform update 29
 

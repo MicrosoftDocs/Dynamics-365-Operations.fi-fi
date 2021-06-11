@@ -2,26 +2,20 @@
 title: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 description: Tässä aiheessa käsitellään kaksoiskirjoitusyhteyden määrittämistä Microsoft Dynamics Lifecycle Servicesistä (LCS).
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748538"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103566"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 
@@ -29,64 +23,48 @@ ms.locfileid: "5748538"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten kaksoiskirjoitusyhteys määritetään uuden Finance and Operations -ympäristön ja uuden Dataverse -ympäristön välille Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.
+Tässä aiheessa käsitellään kaksoiskirjoitusyhteyden käyttöön ottamista Microsoft Dynamics Lifecycle Servicesistä (LCS).
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Vain järjestelmänvalvoja voi määrittää kaksoiskirjoitusyhteyden.
+Power Platform -integrointi on suoritettava seuraavien ohjeaiheiden mukaan:
 
-+ Sinulla on oltava käyttöoikeus vuokraajaan.
-+ Sinun on oltava järjestelmänvalvoja sekä Finance and Operations- että Dataverse -ympäristössä.
++ [Power Platform -integrointi - Ota käyttöön ympäristön käyttöönoton aikana](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Power Platform -integrointi - Määritä ympäristön käyttöönoton jälkeen](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Kaksoiskirjoitusyhteyden määrittäminen
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Määritä kaksoiskirjoitus uusille Dataverse-ympäristöille
 
-Näiden ohjeiden avulla voit määrittää kaksoiskirjoitusyhteyden.
+Noudattamalla näitä ohjeita voit määrittää kaksoiskirjoituksen LCS-**ympäristön tiedot** -sivulla:
 
-1. Siirry LCS-sovelluksessa projektiin.
-2. Ota uusi ympäristö käyttöön valitsemalla **Määritä**.
-3. Valitse versio. 
-4. Valitse topologia. Jos käytettävissä on vain yksi topologia, se valitaan automaattisesti.
-5. Suorita ensimmäiset vaiheet ohjatussa **Käyttöönoton asetukset** -toiminnossa.
-6. Tee jokin seuraavista vaiheista **Dataverse** -välilehdessä:
+1. Laajenna **Power Platform -integrointi** -osa **Ympäristön tiedot** -sivulla.
 
-    - Jos Dataverse -ympäristö on jo valmisteltu vuokraajaa varten, voit valita sen.
+2. Valitse **Kaksoiskirjoitussovellus**-näppäin.
 
-        1. Määritä **Määritä Dataverse** -asetuksen arvoksi **Kyllä**.
-        2. Valitse **Käytettävissä olevat ympäristöt** -sarakkeessa Finance and Operations -tietojen kanssa integroitava ympäristö. Luettelo sisältää kaikki ympäristöt, joiden järjestelmänvalvojan oikeudet sinulla on.
-        3. Valitse **Hyväksyn**-valintaruutu, jolloin hyväksyt ehdot.
+    ![Power Platform -integrointi](media/powerplat_integration_step2.png)
 
-        ![Dataverse -välilehti, kun Dataverse -ympäristö on jo valmisteltu vuokraajaa varten](../dual-write/media/lcs_setup_1.png)
+3. Lue ehdot ja valitse valintaruutu ja valitse sitten **Määritä**.
 
-    - Jos vuokraajalla ei vielä ole Dataverse -ympäristöä, uusi ympäristö valmistellaan.
+4. Jatka valitsemalla **OK**.
 
-        1. Määritä **Määritä Dataverse** -asetuksen arvoksi **Kyllä**.
-        2. Anna Dataverse -ympäristön nimi.
-        3. Valitse alue, johon ympäristö otetaan käyttöön.
-        4. Valitse ympäristön oletuskieli ja -valuutta.
+5. Voit seurata etenemistä päivittämällä säännöllisesti ympäristön tietosivun. Asetusten määritys kestää yleensä 30 minuuttia tai vähemmän.  
 
-            > [!NOTE]
-            > Et voi muuttaa kieltä ja valuuttaa myöhemmin.
+6. Kun asetukset on tehty, näyttöön tulee sanoma, jossa näkyy, onko prosessi onnistunut tai onko siinä ollut virhe. Jos asennus epäonnistui, näyttöön tulee liittyvä virhesanoma. Virheet on korjattava ennen seuraavaan vaiheeseen siirtymistä.
 
-        5. Valitse **Hyväksyn**-valintaruutu, jolloin hyväksyt ehdot.
+7. Luo linkki Dataversen ja nykyisen ympäristön tietokantojen välille valitsemalla **Yhdistä Power Platform -ympäristöön**. Tämä kestää yleensä alle 5 minuuttia.
 
-        ![Dataverse -välilehti, kun vuokraajalla ei ole Dataverse -ympäristöä](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Yhdistä Power Platform -ympäristöön":::
 
-7. Suorita jäljellä olevat vaiheet ohjatussa **Käyttöönoton asetukset** -toiminnossa.
-8. Kun ympäristön tila on **Otettu käyttöön**, avaa ympäristön tietojen sivu. **Power Platform -integrointi** -osassa on linkitettyjen Finance and Operations- ja Dataverse -ympäristöjen nimet.
+8. Kun yhdistäminen on valmis, hyperlinkki tulee näkyviin. Linkin avulla voit kirjautua sisään kaksoiskirjoitusalueelle Finance and Operations -ympäristössä. Siellä voit tehdä entiteettien yhdistämismäärityksiä.
 
-    ![Power Platform -integrointi -osa](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Määritä kaksoiskirjoitus olemassa olevalle Dataverse-ympäristölle
 
-9. Finance and Operations -ympäristön järjestelmänvalvojan on kirjauduttava sisään LCS-sovellukseen ja valittava **Linkitä CDS for Apps -sovellukseen**, jotta linkitys on valmis. Ympäristön tietojen sivulla näkyvät järjestelmänvalvojan yhteystiedot.
+Määrittääksesi kaksoiskirjoituksen aiemmin luotuun Dataverse-ympäristöön, sinun tulee luoda Microsoft [tukipyyntö](../../lifecycle-services/lcs-support.md). Pyynnössä on oltava seuraavat tiedot:
 
-    Kun linkki on valmis, tilaksi päivitetään **Ympäristön linkitys on suoritettu onnistuneesti**.
-
-10. Voit avata **Tietojen integrointi** -työtilan Finance and Operations -ympäristössä ja hallinnoida käytettävissä olevia malleja valitsemalla **Linkitä CDS for Apps -sovellukseen**.
-
-    ![Linkitä CDS for Apps --painike Power Platform -integrointi -osassa](../dual-write/media/lcs_setup_4.png)
++ Finance and Operations -ympäristösi tunnus.
++ Lifecycle Services -ympäristösi nimi.
++ Dataverse-organisaatiotunnus tai Power Platform -ympäristötunnus Power Platform -hallintakeskuksesta. Pyydä tukipyynnössäsi, että esiintymän tunnusta voi käyttää Power Platform -integroinnissa.
 
 > [!NOTE]
 > Et voi poistaa ympäristöjen välistä linkitystä LCS-sovelluksen avulla. Jos haluat poistaa linkityksen, avaa **Tietojen integrointi** -työtila Finance and Operations -ympäristössä ja valitse sitten **Poista linkitys**.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

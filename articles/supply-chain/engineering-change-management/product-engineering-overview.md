@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947517"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115046"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -50,15 +50,20 @@ Ota toiminnot ensin käyttöön seuraavasti.
 
 1. Valitse [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtila.
 1. Tarkista päivitysten saatavuus.
-1. Ota käyttöön **Suunnittelun muutostenhallinta** -niminen toiminto.
-1. Jos haluat käyttää sitä, sinun on otettava käyttöön myös **Tuotteen dimensioversio** -niminen toiminto.
+1. Ota käyttöön *Suunnittelun muutostenhallinta* -niminen toiminto.
+1. Jos haluat käyttää sitä, sinun on otettava käyttöön myös *Tuotteen dimensioversio* -niminen toiminto.
 
 Ota seuraavaksi määritysavaimet käyttöön seuraavia vaiheita noudattamalla.
 
 1. Siirrä järjestelmä ylläpitotilaan kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
 1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
 1. **Kauppa**-solmun laajentaminen.
-1. Ota pääominaisuuden määritysavain käyttöön valitsemalla **Suunnittelun muutostenhallinta** -valintaruutu. (Solmua ei tarvitse laajentaa, ellet halua poistaa yhtä tai molempia sen aliominaisuuksista käytöstä.)
+1. Ota pääominaisuuden määritysavain käyttöön valitsemalla **Suunnittelun muutostenhallinta** -valintaruutu.
+1. Laajenna **Tekninen suunnittelun muutoksenhallinta** -solmu ja valitse tarpeen mukaan seuraavat valintaruudut tai poista niiden valinta (käytettävien ominaisuuksien mukaan):
+
+    - **Määritteen haku** – Valitsemalla tämän valintaruudun voit ottaa [määritteen hakutoiminnon](engineering-attributes-and-search.md) käyttöön. On suositeltavaa ottaa tämä toiminto käyttöön, mutta voit poistaa valintaruudun valinnan, jos et käytä sitä.
+    - **Prosessivalmistuksen muutoksenhallinta** – Valitse tämä valintaruutu, jos haluat hallita prosessivalmistuksen kaavojen muutoksia suunnittelumuutoksen hallintaominaisuuksien avulla. Jos kaavojen hallintaa ei tarvitse tehdä, tämän valintaruudun voi poistaa. Lisätietoja on kohdassa [Kaavojen ja niiden osien muutosten hallinta](manage-formula-changes.md).
+
 1. Jos haluat myös käyttää versiodimensiota, valitse myös **Tuotedimensio – Versio** -valintaruutu. (Tämä valintaruutu on luettelossa alempana, ei **Suunnittelun muutoshallinta** -solmussa.)
 1. Poista järjestelmän ylläpitotila käytöstä kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
 

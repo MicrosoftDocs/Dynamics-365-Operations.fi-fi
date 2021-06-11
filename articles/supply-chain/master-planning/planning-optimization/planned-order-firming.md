@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019491"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103625"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -77,6 +77,7 @@ Voit vahvistaa suunnitellut tilaukset manuaalisesti etsimällä ja valitsemalla 
 
     - **Ryhmittely toimittajan mukaan** – Määritä tämän asetuksen arvoksi *Kyllä* , jos haluat ryhmitellä suunnitellut ostotilaukset ja luoda yhden ostotilauksen toimittajaa kohti vahvistuksen aikana. Voit vaihtoehtoisesti luoda uuden ostotilauksen, jossa on yksi rivi kullekin suunnitellulle tilaukselle.
     - **Ryhmittely ostajaryhmän mukaan** – Määritä tämän asetuksen arvoksi *Kyllä*, kun haluat ryhmitellä suunnitellut ostotilaukset j luoda yhden ostotilauksen, jossa yhdistetään toimittaja- ja ostajaryhmät. Jos haluat käyttää tätä asetusta, sinun täytyy asettaa myös **Ryhmittely toimittajan mukaan** -vaihtoehdon arvoksi *Kyllä*.
+    - **Ryhmittele ostosopimuksen mukaan** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat ryhmitellä suunnitellut ostotilaukset, joissa on sama toimittaja kuin aiemmin luoduilla ostosopimuksilla ja luo yksi ostotilaus ostosopimusta kohden. Tämä vaihtoehto on automaattisesti käytössä, kun **Ryhmittele toimittajan mukaan** on käytössä. Jos haluat käyttää **Ostosopimus-ryhmittelyä**, **Etsi ostosopimus** -asetus on määritettävä *Kyllä* **pääsuunnittelun parametrit** -sivulla.
     - **Ryhmittely kauden mukaan** (**Ostotilaukset**-osassa) – Valitse kausi, jonka mukaan suunnitellut ostotilaukset ryhmitellään. Jos haluat käyttää tätä asetusta, sinun täytyy valita myös **Ryhmittely toimittajan mukaan** -vaihtoehto.
     - **Ryhmittely kauden mukaan** (**Siirrot**-osassa) – Valitse kausi, jonka mukaan suunnitellut siirtotilaukset ryhmitellään. Tilaukset ryhmitellään **Varastosta**- ja **Varastoon**-arvojen mukaan.
 

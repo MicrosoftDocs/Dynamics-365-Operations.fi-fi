@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923535"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111721"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -31,6 +31,19 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>Ominaisuuksien poistoilmoitus, voimassa toukokuussa 2021
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) -globalisoinnin portaali
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Globalisoinnin portaali on poistettu käytöstä LCS:ssä, koska muut LCS-pohjaiset palvelut ovat korvanneet tämän ominaisuuden. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, tämän ominaisuuden korvaa LCS:n [ongelmanhaku](../lifecycle-services/issue-search-lcs.md) ja [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
+| **Tuotealueet, joihin vaikutetaan**         | LCS:n globalisoinnin portaali|
+| **Käytön asetukset**              | Pilvikäyttöönotto |
+| **Tila**                         | Vanhentunut: suunniteltu poistopäivä toukokuussa 2022. |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Toiminto poistettiin 28. tammikuuta 2021
 
@@ -56,7 +69,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Visual Studio 2017 korvaa Visual Studio 2015:n käyttöönotettuna ja vaaditussa muodossa. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut. Päivityksen myötä edelliset X++-työkalut poistetaan Visual Studio 2015:stä eivätkä päivitetyt työkalut asennu Visual Studio 2015:een. Tällä ei ole vaikutusta isännöityihin koontiversioihin. Koontinäennäiskoneissa koontijakso (koontimääritelmä) on päivitettävä manuaalisesti muuttamaan riippuvuus MSBuild 14.0:sta (Visual Studio 2015) to MSBuild 15.0:aan (Visual Studio 2017) kohdassa [Vanhan jakson päivittäminen Azure-jaksoissa](../dev-tools/pipeline-msbuild-update.md). |
+| **Tila**                         | Vanhentunut: Päivityksen myötä edelliset X++-työkalut poistetaan Visual Studio 2015:stä eivätkä päivitetyt työkalut asennu Visual Studio 2015:een. Tällä ei ole vaikutusta isännöityihin koontiversioihin. Koontinäennäiskoneissa koontijakso (koontimääritelmä) on päivitettävä manuaalisesti muuttamaan riippuvuus MSBuild 14.0:sta (Visual Studio 2015) to MSBuild 15.0:aan (Visual Studio 2017) kohdassa [Vanhan jakson päivittäminen Azure-jaksoissa](../dev-tools/pipeline-msbuild-update.md). |
 
 ### <a name="user-avatar"></a>Käyttäjän avatar 
 
@@ -76,7 +89,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Nro |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut. Kaikki EP-koodi on ajoitettu poistettavaksi lokakuun 2021 julkaisussa. |
+| **Tila**                         | Vanhentunut: Kaikki EP-koodit on ajoitettu poistettavaksi lokakuun 2021 julkaisussa. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.15
 
@@ -88,7 +101,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Asiakkaiden kannattaa siirtyä Microsoft Edgeen.|
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki Dynamics 365 -tuotteet |
 | **Käytön asetukset**              | Kaikki|
-| **Tila**                         | Vanhentunut. Internet Explorer 11:tä ei tueta elokuun 2021 jälkeen.|
+| **Tila**                         | Vanhentunut: Internet Explorer 11:tä ei tueta elokuun 2021 jälkeen.|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio -apuohjelma metatietojen hotfix-korjausten käyttämiseen
@@ -181,7 +194,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Lisätietoja on kohdassa [Azure Active Directoryn ehdollisen käytön konfigurointi](/appcenter/general/configuring-aad-conditional-access).|
 | **Tuotealueet, joihin vaikutetaan**         | Suojaus |
 | **Käytön asetukset**              | Pilvi |
-| **Tila**                         | **Vanhentunut:** Tämä ominaisuus on täysin vanhentunut itsepalvelukäyttöönotoissa. |
+| **Tila**                         | Vanhentunut: Tämä ominaisuus on täysin vanhentunut itsepalvelukäyttöönotoissa. |
 
 ### <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -201,7 +214,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Tämä kääntäjän virhe korvaa kääntäjän varoituksen pysyvästi.  |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | **Vanhentunut:** Kääntäjävaroitus on kääntäjän virhe Finance and Operations -sovellusalustan päivityksissä versiossa 10.0.11. |
+| **Tila**                         | Vanhentunut: Kääntäjävaroitus on kääntäjän virhe Finance and Operations -sovellusalustan päivityksissä versiossa 10.0.11. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>SHA1-hajautusalgoritmin avulla luodut ohjelmistotoimittajien lisenssit
 
@@ -211,7 +224,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Luo lisenssejä Windows PowerShellin avulla. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | <strong>Vanhentunut:</strong> Ohjelmistotoimittajien käyttöoikeudet, jotka luotiin SHA1-hajautusalgoritmin avulla. Tämä algoritmi riippui MakeCert-apuohjelman avulla luoduista sertifikaateista, ja tämä apuohjelma on syrjäytetty.<p><strong>Vanhentunut:</strong> SHA1 käyttösuojaus- tai hajautustarkoituksiin. SHA1 lakkaa toimimasta vuoden 2021 alussa. Siksi sitä ei pitäisi enää käyttää.<p><strong>Poistettu:</strong> Transport Layer Securityn tuki (TLS) 1.0 ja TLS 1.1 saapuville tai lähteville pyynnöille. |
+| **Tila**                         | Vanhentunut: Ohjelmistotoimittajien käyttöoikeudet, jotka luotiin SHA1-hajautusalgoritmin avulla. Tämä algoritmi riippui MakeCert-apuohjelman avulla luoduista sertifikaateista, ja tämä apuohjelma on syrjäytetty.<br><br>Vanhentunut: SHA1 käyttösuojaus- tai hajautustarkoituksiin. SHA1 lakkaa toimimasta vuoden 2021 alussa. Siksi sitä ei pitäisi enää käyttää.<br><br>Poistettu: Transport Layer Securityn tuki (TLS) 1.0 ja TLS 1.1 saapuville tai lähteville pyynnöille. |
 
 ## <a name="platform-update-32"></a>Ympäristön update 32 -päivitys
 

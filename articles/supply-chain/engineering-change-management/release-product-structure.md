@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45763d5e602946fc3328cc3b565777fb7e549c61
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841982"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115094"
 ---
 # <a name="release-product-structures"></a>Tuoterakenteiden vapauttaminen
 
@@ -103,6 +103,7 @@ Määritä seuraavat kentät tuotteen vapautuskäytännön **Yleiset**-pikaväli
 | Kenttä | kuvaus |
 |---|---|
 | Tuotetyyppi | Valitse, käytetäänkö käytäntöä *Nimike*- vai *Palvelu*-tyypin tuotteissa. Tätä asetusta ei voi muuttaa tietueen tallentamisen jälkeen. |
+| Tuotantolaji | Tämä kenttä on näkyvissä vain, kun olet ottanut [kaavan muutoksen hallinnan](manage-formula-changes.md) käyttöön järjestelmässä. Valitse tuotannon tyyppi, jota tämä julkaisukäytäntö koskee:<ul><li>**Oheistuote** – Käytä tätä julkaisukäytäntöä, kun haluat hallita oheistuotteita. Oheistuotteita tuotetaan prosessivalmistuksen aikana, eikä niitä versioida eivätkä ne ole suunnittelutuotteita. Oheistuotteiden vapautuskäytännöt voivat varmistaa, että tärkeät asetukset, kuten **varastodimensioryhmä** ja **seurantadimensioryhmä**, määritetään käyttämällä vapautettua tuotemallia ennen niiden vapautusta yritykselle.</li><li>**Sivutuote** – Käytä tätä julkaisukäytäntöä, kun haluat hallita sivutuotteita. Sivutuotteita tuotetaan prosessivalmistuksen aikana, eikä niitä versioida eivätkä ne ole suunnittelutuotteita. Sivutuotteiden vapautuskäytännöt voivat varmistaa, että tärkeät asetukset, kuten **varastodimensioryhmä** ja **seurantadimensioryhmä**, määritetään käyttämällä vapautettua tuotemallia ennen niiden vapautusta yritykselle.</li><li>**Ei mitään** – Käytä tätä käytäntöä, kun haluat hallita vakiotuotteita, joita ei ole versioitu, tai suunnittelutuotteita, oheistuotteita tai sivutuotteita.</li><li>**Suunnittelunimike** – Tämän vapautuskäytännön avulla voit hallita prosessivalmistuksen avulla tuotettavat nimikkeet. Suunnittelunimikkeissä käytetään kaavoja. Ne muistuttavat kaavanimikkeitä, mutta niitä käytetään vain oheistuotteiden ja sivutuotteiden, ei valmiiden tuotteiden tuottamiseen.</li><li>**Tuoterakenne** – Tämän julkaisukäytännön avulla voit hallita suunnittelutuotteita, jotka eivät käytä kaavoja ja jotka tavallisesti (mutta eivät välttämättä) sisältävät tuoterakenteita.</li><li>**Kaava** – Tämän vapautuskäytännön avulla voit hallita prosessivalmistuksen avulla tuotettuja valmiita nimikkeitä. Näillä nimikkeillä on kaava, mutta ei tuoterakennetta.</li></ul> |
 | Käytä malleja | Määritä jollakin seuraavalla asetuksella, käytetäänkö tuotevapautusmalleja ja miten niitä käytetään, kun käytäntö on käytössä:<ul><li>**Aina** – Mallivapautustuote, jota on aina käytettävä vapautuksessa. Jos valitset tämän asetuksen, määritä **Kaikki tuotteet** -pikavälilehdessä malli, jota käytetään kussakin yrityksessä, johon vapautus tehdään. Jos kullekin **Kaikki tuotteet** -pikavälilehden luettelossa olevalle yritykselle ei määritetä mallia, käytäntöä tallennettaessa saadaan virhe.</li><li>**Valinnainen** – Jos mallivapautustuote määritetään **Kaikki tuotteet** -pikavälilehden luettelossa olevalle yritykselle, kyseistä mallia käytetään, kun vapautus tehdään kyseiseen yritykseen. Muussa tapauksessa mallia ei käytetä. Jos valitse tämän asetuksen, voit tallentaa käytännön ilman, että mallit määritetään kaikille yrityksille. (Varoitusta ei näytetä.)</li><li>**Ei koskaan** – Mallivapautustuotetta ei käytetä missään yrityksessä, johon vapautus tehdään, vaikka malli olisi määritetty **Kaikki tuotteet** -pikavälilehden luettelossa oleville yrityksille. Mallisarakkeet eivät ole käytettävissä.</li></ul> |
 | Aktiiviset | Tämän asetuksen avulla voi ylläpitää vapautuskäytäntöjä. Valitse *Kyllä* kaikille niille vapautuskäytännöille, joita käytät. Valitse *Ei* ilmaisemaan, että vapautuskäytäntö on passiivinen, kun sitä ei käytetä. Huomaa, että suunnittelun tuoteluokalle määritettyä vapautuskäytäntöä ei voi merkitä passiiviseksi ja että vain passiivisia vapautuskäytäntöjä voidaan poistaa. |
 

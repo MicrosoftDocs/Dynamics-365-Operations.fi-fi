@@ -2,7 +2,7 @@
 title: Myymälöiden asiakashallinta
 description: Tässä ohjeaiheessa on tietoja siitä, miten vähittäismyyjät voivat ottaa käyttöön asiakashallintatoimintoja myyntipisteessä Microsoft Dynamics 365 Commercessa.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019984"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097205"
 ---
 # <a name="customer-management-in-stores"></a>Myymälöiden asiakashallinta
 
@@ -35,7 +35,10 @@ Myyjät voivat myös siepata toissijaisia sähköpostiosoitteita ja puhelinnumer
 
 ## <a name="default-customer-properties"></a>Asiakkaan oletusominaisuudet
 
-Vähittäismyyjät voivat käyttää Commerce headquartersin **Kaikki myymälät** -sivua (**Retail ja Commerce \> Kanavat \> Myymälät**), kun halutaan liittää oletusasiakas kuhunkin myymälään. Commerce kopioi sitten oletusasiakkaalle määritetyt ominaisuudet kaikkiin uusiin asiakastietueisiin, jotka luodaan. Esimerkiksi **Luo asiakas** -valintaikkunassa näkyvät myymälään liitetyltä oletusasiakkaalta periytyvät ominaisuudet. Ominaisuuksia ovat asiakastyyppi, asiakasryhmä, kuittiasetukset, valuutta ja kieli. Myös mahdolliset liitokset (asiakkaiden ryhmittelyt) periytyvät myös oletusasiakkaalta. Taloushallinnon dimensiot periytyvät kuitenkin oletusasiakkaaseen liittyvältä asiakasryhmältä, ei itse oletusasiakkaalta.
+Vähittäismyyjät voivat käyttää Commerce headquartersin **Kaikki myymälät** -sivua (**Retail ja Commerce \> Kanavat \> Myymälät**), kun halutaan liittää oletusasiakas kuhunkin myymälään. Commerce kopioi sitten oletusasiakkaalle määritetyt ominaisuudet kaikkiin uusiin asiakastietueisiin, jotka luodaan. Esimerkiksi **Luo asiakas** -valintaikkunassa näkyvät myymälään liitetyltä oletusasiakkaalta periytyvät ominaisuudet. Ominaisuuksia ovat **asiakastyyppi**, **asiakasryhmä**, **kuittiasetus**, **kuittisähköposti** **valuutta** ja **kieli**. Myös mahdolliset **liitokset** (asiakkaiden ryhmittelyt) periytyvät myös oletusasiakkaalta. **Taloushallinnon dimensiot** periytyvät kuitenkin oletusasiakkaaseen liittyvältä asiakasryhmältä, ei itse oletusasiakkaalta.
+
+> [!NOTE]
+> **Kuittisähköposti**-arvo kopioidaan oletusasiakkaalta vain, jos juuri luoduille asiakkaille ei ole määritetty kuitin sähköpostitunnusta. Jos kuittien sähköpostitunnus on oletusasiakkaalla, kaikki sähköisen kaupan sivustosta luodut asiakkaat saavat saman kuitin sähköpostitunnuksen kuin käyttöliittymää ei ole, joka siepaisi asiakkaan sähköpostitunnuksen. On suositeltavaa pitää **kuittisähköposti**-kenttä tyhjänä myymälän oletusasiakkaalle ja käyttää sitä vain, jos käytössä on liiketoimintaprosessi, joka riippuu kuitin sähköpostiosoitteesta. 
 
 Myyjät voivat siepata useita asiakkaan osoitteita. Asiakkaan nimi ja puhelinnumero periytyvät kuhunkin osoitteeseen liittyvästä yhteyshenkilöstä. Asiakastietueen **Osoitteet**-pikavälilehdessä on **Tarkoitus**-kenttä, jota myyjät voivat muokata. Jos asiakastyyppi on **Henkilö**, oletusarvo on **Koti**. Jos asiakastyyppi on **Organisaatio**, oletusarvo on **Yritys**. Muita tämän kentän tukemia arvoja ovat **Koti**, **Toimisto**  ja **Postilokero**. Osoitteen **Maa**-kentän arvo periytyy Commerce headquartersissa **Toimintayksikkö**-sivulla (**Organisaation hallinto \> Organisaatiot \> Toimintayksiköt**) määritetystä ensisijaisista osoitteesta.
 

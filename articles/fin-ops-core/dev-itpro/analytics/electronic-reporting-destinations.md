@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893601"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085497"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -199,6 +199,34 @@ Jos luot Excel-muodossa ER-konfiguraation ja haluat muuntaa sen PDF-muotoon, voi
 > Valittua sivun suuntaa käytetään kaikissa Excel-muodossa luoduissa ER-kokoonpanoissa ja muunnetaan sitten PDF-muotoon.
 >
 > Jos Word-muotoinen ER-määritys muunnetaan PDF-muotoon, PDF-tiedoston sivun suunta otetaan Word-asiakirjasta.
+
+## <a name="output-unfolding"></a>Tulosteen avautuminen
+
+Kun konfiguroit ER-muodon **Kansio**-osan kohteen, voit määrittää, miten komponentin tuloste toimitetaan konfiguroituun kohteeseen.
+
+### <a name="make-output-unfolding-available"></a>Aseta tuotoksen avaaminen käytettäväksi
+
+Voit ottaa vaihtoehdot käyttöön nykyisessä taloushallinnassa, kun avaat **ominaisuudenhallinnan** työtilan ja otat **ER-kohteiden määrittäminen ja kansioiden sisällön lähettäminen erillisinä tiedostoina** -ominaisuuden käyttöön.
+
+### <a name="applicability"></a>Soveltuvuus
+
+Vaihtoehdon muodoksi voidaan määrittää vain **Kansio**-tyypin muotokomponentit. Kun alat konfiguroida **Kansio**-komponenttia, **Yleinen**-pikavälilehti on käytettävissä **Sähköisen raportoinnin kohde** -sivulla. 
+
+### <a name="use-the-output-unfolding-option"></a>Käytä tulosteen avaamisvaihtoehtoa
+
+Valitse **Yleinen**-pikavälilehden **Lähetä kansio nimellä** -kentästä jokin seuraavista arvoista:
+
+- **Zip-arkisto** – Toimita luotu tiedosto zip-tiedostona.
+- **Erilliset tiedostot** – Toimita jokainen luodun zip-kansion tiedosto yksittäisenä tiedostona.
+
+    > [!NOTE]
+    > Kun valitset **Erilliset tiedostot**, muodostettu tulostus kerätään muistissa zip-muodossa. Sen vuoksi [tiedoston enimmäiskokorajaa](er-compress-outbound-files.md) käytetään zip-tuotoksen yhteydessä, kun todellinen tiedostokoko saattaa ylittää tämän rajan. Tämä arvo kannattaa valita, kun myös luodun tuotoksen koon odotetaan olevan liian suuri.
+
+[![Kansion muotokomponentin kohteen konfiguroiminen](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Rajoitukset
+
+Jos määrität **Lähetä kansio muodossa** -kentän arvoksi **Erota tiedostot** **Kansio**-komponentille, joka sisältää muita sisäkkäisiä **Kansion** osia, asetusta ei käytetä uudelleen sisäkkäisiin **Kansio**-komponentteihin.
 
 ## <a name="security-considerations"></a>Tietojen suojaamisesta
 

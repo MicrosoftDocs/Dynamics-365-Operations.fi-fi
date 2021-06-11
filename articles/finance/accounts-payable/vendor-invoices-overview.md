@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841258"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111691"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
 
@@ -71,7 +73,9 @@ Seuraavilla tavoilla voi estää laskua lähtemästä työnkulkuun.
 
 - **Lasku sisältää kohdistamattomia kuluja.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan laskulla on kohdistamattomia kuluja. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos toimittajan laskussa on kohdistamattomia kuluja** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
 
-- **Lasku sisältää saman laskunumeron kuin toinen kirjattu lasku.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan löytyi lasku, jolla on sama numero. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä hälytys näytetään, kun Ostoreskontra-parametrin **Tarkista käytetty laskunumero** arvoksi on määritetty **Hylkää kaksoiskappale**. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskunumero on jo olemassa kirjatussa laskussa ja järjestelmää ei ole määritetty hyväksymään laskunumeroiden kaksoiskappaleita** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.  
+- **Lasku sisältää saman laskunumeron kuin toinen kirjattu lasku.** Laskun lähettänyt henkilö saa sanoman, jossa ilmoitetaan, että lasku, jonka numero on kaksoiskappale, löydettiin. Numeron kaksoiskappaleen voi korjata, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä hälytys näytetään, kun Ostoreskontra-parametrin **Tarkista käytetty laskunumero** arvoksi on määritetty **Hylkää kaksoiskappale**. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskunumero on jo olemassa kirjatussa laskussa ja järjestelmää ei ole määritetty hyväksymään laskunumeroiden kaksoiskappaleita** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
+
+- **Lasku sisältää rivin, jonka laskun määrä on pienempi kuin täsmäytetty tuotteen vastaanottomäärä.** Henkilö, joka lähettää laskun tai yrittää kirjata sen, saa sanoman, jonka mukaan määrät eivät täsmää. Sanoman kautta voit korjata arvot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä ominaisuus on käytettävissä, jos **Estä toimittajan laskujen kirjaaminen ja lähettäminen työnkulkuun** -parametriin on otettu käyttöön **ominaisuuden hallinta** -sivulla ja **Ostoreskontran parametrit** -sivun **Estä kirjaus ja lähetys työnkulkuparametriin** -toiminto on käytössä.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Toimittajan laskujen täsmäytys tuotteen vastaanottoihin
 
