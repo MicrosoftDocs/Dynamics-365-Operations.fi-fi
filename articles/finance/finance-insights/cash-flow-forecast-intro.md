@@ -2,7 +2,7 @@
 title: Kassavirtaennuste (esiversio)
 description: Tässä ohjeaiheessa kuvataan kassavirtaennusteominaisuutta.
 author: ShivamPandey-msft
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6e4713aa4662714d1b2a3eeb62adce8608907054
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64935db3b50e7598f2076ecbec72aba020d4f908
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811408"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186537"
 ---
 # <a name="cash-flow-forecast-preview"></a>Kassavirtaennuste (esiversio)
 
@@ -62,9 +62,5 @@ Dynamics 365 Financen kassavirtaennustetoiminnon avulla organisaatio voi muuntaa
 **Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Kassavirtaennusteet-toiminto on käytössä. 
 
 Valitse **Dimensiot**-välilehdessä suodatuksessa käytettävät dimensiot luettelosta ja siirrä ne oikeanpuoleiseen sarakkeeseen nuolinäppäinten avulla. Kassavirtaennustetietojen suodattamiseen voidaan valita vain kaksi dimensiota. 
-
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

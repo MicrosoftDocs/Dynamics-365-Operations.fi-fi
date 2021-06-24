@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814581"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188146"
 ---
 # <a name="production-process-overview"></a>Tuotantoprosessin yleiskatsaus
 
@@ -74,8 +74,7 @@ Seuraavat tuotannon elinkaaren vaiheet voivat tapahtua kaikille tilaustyypeille,
 12. **Kauden sulkeminen** – Jotkin kustannuslaskennan periaatteet, kuten kausittainen keskiarvo, jälkikustannuslaskenta, FIFO tai LIFO, edellyttävät ajoittaisia toimita, jotta varasto tai tilikausi voidaan sulkea. Yleensä järjestelmä yrittää raportoida kaikkien materiaalien ja resurssien kulutuksesta ja varaston sekä hävikin oikaisuista ennen kausien sulkemista. Tämä raportointi tehdään yleensä käyttämällä varaston siirtokirjauskansioita tai oikaisun kirjauskansioita. Tavoitteena on arvioida toimintayksiköiden taloudellista suorituskykyä kullakin kaudella. Joskus kun käytetään pitkäaikaisia tuotantotilauksia, jotka kattavat koko taloudellisen raportointijakson, tuotantokirjauskansioiden avulla voidaan raportoida tuotannon edistymisestä ja resurssien kulutuksesta kauden lopussa.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Tuotannon palaute](production-feedback.md)
 

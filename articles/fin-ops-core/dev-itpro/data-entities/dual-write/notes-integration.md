@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018383"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186783"
 ---
 # <a name="note-integration"></a>Muistiinpanojen integrointi
 
@@ -122,5 +122,9 @@ Muistiinpanojen integraatio sisältää taulukarttojen kokoelman, joita käytet�
 | [Toimittajan asiakirjaliitteet](mapping-reference.md#231) | Huomautukset | Yritykset, jotka käyttävät tavallista tekstiä ja URL-osoitteita toimittajakohtaisten tietojen keräämiseen (sekä organisaatioille että henkilöille). |
 | [Myyntitilauksen otsikkoasiakirjan liitteet](mapping-reference.md#229) | Huomautukset | Yritykset, jotka käyttävät tavallista tekstiä ja URL-osoitteita myyntitilauskohtasten tietojen sieppaamiseen. |
 | [Ostotilauksen otsikkoasiakirjan liitteet](mapping-reference.md#232) | Huomautukset | Yritykset, jotka käyttävät tavallista tekstiä ja URL-osoitteita ostotilauskohtaisten tietojen sieppaamiseen. |
+
+## <a name="limitations"></a>Rajoitukset
+
+Kun olet asentanut huomautusratkaisun, sen asennusta ei voi poistaa. 
 
 Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mapping-reference.md).

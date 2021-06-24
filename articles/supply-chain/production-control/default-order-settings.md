@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 73e6a45dedba0831c15d70ad35676c62a14acabb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e389a6af02b8ee30bc491606f72a2e8e250ef00
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809155"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193303"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
@@ -115,7 +115,7 @@ Voit määrittää tilausasetusten säännöt, joita käytetään aktiiviseen tu
 
 Tarkastellaan seuraavaa esimerkkituotetta:
 
-|                                                     |                                         |
+| Nimike                                                | Arvo                                   |
 |-----------------------------------------------------|-----------------------------------------|
 | **Tuotteen nimi**                                    | Valosähköanturi                    |
 | **Nimiketunnus**                                     | XW56                                    |

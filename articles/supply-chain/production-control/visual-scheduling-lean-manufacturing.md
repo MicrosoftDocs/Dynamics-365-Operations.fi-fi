@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c04ea34ab0e44a71f5d44582d057c3ae96a5c368
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817842"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188843"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Lean-valmistuksen visuaalinen ajoitus
 
@@ -87,8 +87,7 @@ Voit avata Kanban-aikataulun valikkokohdasta seuraavilla sivuilla:
 -   **Tuotantovirran visualisointi** -sivu
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Lean-valmistuksen kanban-työn ajoitus](lean-manufacturing-kanban-job-scheduling.md)
 

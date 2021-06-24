@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 24743bd15f77769e2d4ca81981284995ce3a576e
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941137"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129774"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -38,37 +38,52 @@ Pakolliset päivitykset, jotka julkaistaan osana kuukausittaista päivitystä, o
 Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.   
 
 |Maa tai alue|Vapautuspäivä|Julkaisuversio|Pakollinen päivitys|
-|--------------------|---------------|-------|-------|
-|      Itävalta         |   2020. syyskuuta      | 10.0.15      |   ALV-ilmoituksen muoto U30 on päivitetty vuoden 2020 raportointia varten   |
-|      Belgia         |   2020. joulukuuta      | 10.0.16      |   Belgia: "Kirjanpitotapahtumien vienti" -raportin suorituskyvyn parannukset Dynamics 365 Financessa   |   
-|      Brasilia         |   marraskuu 2020      | 10.0.15HF      |   SPED-verotuksen ICMS/IPI – tietue C176 – RS-tila   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51 - Tarkistussääntöjen käyttöönotto etukoodin yhteydessä Distrito Federalin mukaan   |
-|      Brasilia         |   Lokakuu 2020, marraskuu 2020      | 10.0.16, 10.0.15HF      |   SPED-verotus - asettelu 015   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   DRCST-ilmoituksen SC - SEF 262/2020   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   SPED-verotus, ICMS/IPI-tietue, C176   |
-|      Brasilia         |   2020. joulukuuta      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 – Digitaalisen alustan välittäjän tunnus (asettelu- ja vahvistussääntöjen päivitykset)   |
-|      Brasilia         |   Maaliskuun 2021.         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF -asettelu 1.5.1
-|      Eurooppa        |   2021. tammikuuta       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Pohjois-Irlannin protokollan vaikutus EU:n sisäisiin kaupparaportointiin EU:n jäsenvaltioissa  |
-|      Saksa        |   2021. tammikuuta       | 10.0.16HF      |   ELSTER UstVA – ALV-ennakkoilmoitusmuotoa on laajennettu kahdella uudella ruudulla 37,50 selvittämättömien velkojen poistamista varten  |
+|--------------------|---------------|-------|-------| 
+|      Brasilia         |   Toukokuu 2021, joulukuu 2020      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006 – Digitaalisen alustan välittäjän tunnus (asettelu- ja vahvistussääntöjen päivitykset)   |
+|      Brasilia         |   Maaliskuun 2021.         | 10.0.19         |    SPED REINF -asettelu 1.5.1  |
+|      Brasilia         |   Helmikuun 2021.         | 10.0.18         |    SPED Fiscal 015 - RS -säännöt |
+|      Brasilia         |   Maaliskuun 2021.         | 10.0.17 HF       |    NFS-e – Brasilian kaupungin sähköinen lasku  |
+|      Brasilia         |   Huhtikuun 2021.         | 10.0.20        |    SPED ECD -asettelu 9  |
+|      Brasilia         |   Toukokuun 2021.         | 10.0.20         |    SPED Contributions - versio-ohje 1.34  |
+|      Egypti         |   Helmikuun 2021.         | 10.0.17         |    ALV-palautuslomake ja -raportit  |
+|      Egypti        |   Helmikuun 2021.         | 10.0.17         |    Laskun asettelun konfiguraatio  |
+|      Egypti         |   Helmikuun 2021.         | 10.0.17         |    Ennakonpidätysilmoitus lomake 41  |
+|      Egypti         |   Helmikuun 2021.         | 10.0.17         |    Ennakonpidätysilmoitus lomake 11  |
+|      Egypti         |   Helmikuun 2021.         | 10.0.17         |    Viittaukset alkuperäisiin laskuihin hyvityslaskuissa  |
+|      Eurooppa        |   2021. tammikuuta       | 10.0.17      |   Brexit – Pohjois-Irlannin protokollan vaikutus EU:n sisäisiin kaupparaportointiin EU:n jäsenvaltioissa  |
+|      Ranska        |   Maaliskuun 2021.       | 10.0.18      |   Retail - Vahvistettu myyntipistejärjestelmän päivitys - Dynamics 365 Commerce  |
+|      Ranska        |   Huhtikuun 2021.       | 10.0.20      |   Ranska – tietojen arkistoinnin viennin (FEC) parannus  |
 |      Saksa        |   2021. tammikuuta       | 10.0.17      |   ELSTER-arvonlisäveron ennakkoilmoituksen XML-rakenteen muutokset (UstVA)  |
-|      Yleinen        |   2021. tammikuuta       | 10.0.16      |   Ota ALV/GST-veromallin käänteisen verovelvollisuuden mekanismi käyttöön  |
-|      Intia         |   2020. joulukuuta      | 10.0.16, HF, 10.0.15HF      |   CBDT-tiedotteeseen perustuva Sales of Goods Section 206 9(1H) -säännöksen TCS:n muutos  |
+|      Saksa        |   Maaliskuun 2021.       | 10.0.19      |   GDPDU-laajennukset käyttöomaisuuden taululle ja tapahtumille  |
+|      Saksa        |   Huhtikuun 2021.       | 10.0.20HF      |   Muutokset e-laskutusmuodossa (xRechnung) Saksassa vuoden 2021 jälkeen  |
+|      Yleinen        |   2021. tammikuuta       | 10.0.17      |   Ennakonpidätys rivitasolla  |
+|      Yleinen        |   2021. tammikuuta       | 10.0.17      |   Ennakonpidätyksen maksu  |
+|      Yleinen        |   2021. tammikuuta       | 10.0.17      |   Ennakonpidätys myyntitilauksissa  |
+|      Yleinen        |   2021. tammikuuta       | 10.0.17      |   Laskun summan ennakonpidätyksen raja-arvo  |
+|      Yleinen        |   2021. tammikuuta       | 10.0.17      |   Laskun päivämäärän lähetyksen oikeellisuustarkistus pakkausluettelon kirjaamisen jälkeen, joka on kaikkien maiden käytettävissä  |
+|      Unkari        |   Helmikuun 2021.       | 10.0.17HF, 10.0.18      |   Verkkolaskutusjärjestelmä v.3.0  |
+|      Intia         |   Helmikuun 2021.      | 10.0.17HF, 10.0.18      |   GST-e-laskut: eWay-laskutiedot  |
+|      Intia         |   Maaliskuun 2021.      | 10.0.17HF, 10.0.18HF, 10.0.19      |   GST-e-laskut: vientitilaukset, vahvistettu vienti, SEZ  |
+|      Intia         |   Maaliskuun 2021.      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Dynamicsin QR-koodi B2C-laskussa  |
+|      Italia         |   Maaliskuun 2021.      | 10.0.19      |   Laskujen tietoliikennemuodon (Esterometro) muutokset v.2.1.1  |
+|      Italia        |   Toukokuun 2021.      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Retail - Näyte verotusta varten olevan tulostimen integroinnista, päivitys XML RT 2.0 -tukeen  |
+|      Italia         |   Maaliskuun 2021.      | 10.0.19      |   Retail - Ota käyttöön vähittäismyyntikohtaiset laskut, jotka rikkovat kronologista kirjausta  |
+|      Italia         |   Helmikuun 2021.      | 10.0.19      |   Yksilöllinen sertifiointi – 2021  |
 |      Latvia         |   2020. joulukuuta      | 10.0.17      |   Intrastat-muoto päivitetään alkaen 2021  |
-|      Meksiko         |   2020. joulukuuta      | 10.0.17, 10.0.16, 10.0.15      |   Määritteen "Monto" päivitys |
-|      Alankomaat         |   2020. lokakuuta      | 10.0.16     |   Intrastat-muoto päivitetään alkaen 2021 |
-|      Alankomaat         |   2020. joulukuuta      | 10.0.167     |   Alankomaiden luokittelun uusi versio NT15 |
-|      Puola          |   2020. syyskuuta     | 10.0.15     |   Vapaaehtoisen jaetun maksun parannukset |
-|      Puola          |   marraskuu 2020     | 10.0.16, 10.0.15     |   JPK-V7M (VDEK) - Myyntiasiakirjan tyyppi FP ja RO vähittäismyyntitapahtumia varten |
-|      Puola          |   2020. syyskuuta     | 10.0.15     |   Puola: JPK-V7M (VDEK) - poista lukitus mahdollisuudesta suorittaa raportin luominen osien mukaan |
-|      Puola          |   2020. lokakuuta     | 10.0.16     |   JPK-V7M (VDEK) -raportti - Vapaaehtoinen jaettu maksu -parametrin käyttö |
-|      Puola          |   marraskuu 2020     | 10.0.16, 10.0.15HF     |   Vähittäismyynti – Vähittäismyyntiasiakkaan laskun lähettäminen pyyntökohtaisesti |
-|      Puola          |   2021. tammikuuta     | 10.0.17, 10.0.16HF, 10.0.15HF     |   Puola: JPK_KR (SAF-kirjanpitokirjat) -lisäselvitykset, voimassa tammikuusta 2021 |
-|      Venäjä          |   marraskuu 2020     | 10.0.16    |   ALV-ilmoituksen muoto päivitetään versioon 5.07 alkaen vuoden 2020 neljännen neljännesvuoden raportoinnista|
-|      Venäjä          |   2020. lokakuuta     | 10.0.16    |   PBU18 – muutokset vuoden 2020 kirjanpitoraportoinnissa|
+|      Liettua         |   Maaliskuun 2021.      | 10.0.18      |   SAF-T -raportin versio 2.01  |
+|      Meksiko         |   2020. joulukuuta      | 10.0.17      |   Määritteen "Monto" päivitys |
+|      Alankomaat         |   2020. joulukuuta      | 10.0.17     |   Alankomaiden luokittelun uusi versio NT15 |
+|      Puola          |   2021. tammikuuta     | 10.0.17     |   Puola: JPK_KR (SAF-kirjanpitokirjat) -lisäselvitykset, voimassa tammikuusta 2021 |
 |      Venäjä          |   2021. tammikuuta     | 10.0.17    |   Vuoden 2020 raportoinnin ominaisuusveroilmoituksen uusi muoto (tekninen versio 5.07 version 5.06 sijaan)|
+|      Venäjä          |   Maaliskuun 2021.     | 10.0.19    |   Vuoden 2020 omaisuusveroilmoituksessa täytyy määrittää kalustokäyttöomaisuuserien keskimääräinen vuosittainen arvo.|
+|      Venäjä          |   Maaliskuun 2021.     | 10.0.19HF    |   Vuoden 2020 voittoveroilmoituksen versio 5.09|
+|      Venäjä          |   Maaliskuun 2021.     | 10.0.19    |   Valtion säännöksen N 2200 21.12.2020 sovellus – 4 uutta muotoa vaaditaan kuljetuslaskuun|
 |      Espanja          |   marraskuu 2020     | 10.0.17    |   SII-päivityksen tarkistus ja virheet v.2.1(bis) 1.1.2021 alkaen|
-|      Iso-Britannia         |   2020. joulukuuta     | 10.0.17, 10.0.16, 10.0.15    |   Yrityksen verorekisteröinti myyntilaskuissa (Brexit – Pohjois-Irlannin protokolla)|
-|      Iso-Britannia          |   2020. joulukuuta     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit – Pohjois-Irlannin protokollan vaikutus sekä GB- että NI-alueilla tavaroita toimittaviin yrityksiin|
+|      Thaimaa          |   Helmikuun 2021.     | 10.0.17HF    |   Ennakonpidätyslomake Por Ngor Dor 53, 3 ja 2 |
+|      Yhdistyneet arabiemiirikunnat   |   Toukokuun 2021.     | 10.0.20    |   Maksukirjauskansion kirjaaminen pankkitilille – erääntyneet sekit |
+|      Iso-Britannia         |   2020. joulukuuta     | 10.0.17    |   Yrityksen verorekisteröinti myyntilaskuissa (Brexit – Pohjois-Irlannin protokolla)|
+|      Iso-Britannia          |   2020. joulukuuta     | 10.0.17    |   Brexit – Pohjois-Irlannin protokollan vaikutus sekä GB- että NI-alueilla tavaroita toimittaviin yrityksiin|
+|      Iso-Britannia          |   Maaliskuun 2021.     | 10.0.18    |   MTD VAT> sanamuodon muutoksia tulostuksen esikatselun asettelussa (ruudut 2,8,9) 2021|
 
 
 

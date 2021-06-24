@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12497e4b6dde44cc7f3701cf6e00c90f109ff16c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825371"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188170"
 ---
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
@@ -105,8 +105,7 @@ Voit määrittää menojen tarkistajat **Ostoehdotuksen kulujen tarkistajat** -s
 
 Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistajaa, määritä **Osallistujan tyyppi** -asetukseksi **Kulujen osallistujat** kyseisen työnkulun elementin **Toimeksianto**-ominaisuuksissa.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Luo kulutusehdotus](tasks/create-requisition-consumption.md)
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4216ed1d9b981eee94cfd4c621abd1da99111512
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8e863ae63466f68e763b133da9f0e9488c6cfa6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813672"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189343"
 ---
 # <a name="delays"></a>Viiveet
 
@@ -52,8 +52,7 @@ Toimenpidesanomien avulla voidaan myös tunnistaa suunnitellut tilaukset, jotka 
 
 **Suunniteltu tilaus** -sivulta **Viiveitä** -välilehdeltä löytyy **Haluttu päivämäärä** suunnitellulle tilaukselle. Suunnitellun tilauksen haluttu päivämäärä on viivästysten peruspäivä, joka on laskettu päivämäärä, joka vastaa **Vaadittua päivämäärää**, joka on laskettu kohteesta **Nettotarve**. Jos suunniteltu tilaus on Tuoterakenteen tuotantorivi tai kanban-rivi, kyseinen päivämäärä perustuu **Tarvepäivään** ja haluttua päivää ei näytetä **suunnitellun tilauksen** sivulla.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Kattavuusasetukset](coverage-settings.md)
 

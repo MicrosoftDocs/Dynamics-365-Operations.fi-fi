@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899092"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6183993"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -72,6 +72,7 @@ Seuraavat tuotannonohjauksen tehtävät voidaan tällä hetkellä suorittaa kuor
 - Ilmoita hävikki
 - Epäsuora tehtävä
 - Tauko
+- Ilmoita valmiiksi ja hyllytettäväksi (vaatii, että suoritat myös Scale Unitin varaston suorituksen kuormituksen, katso myös kohta [Ilmoita valmiiksi ja hyllytettäväksi Scale Unitille](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Tuotannonohjauksen kuormitusten käyttäminen keskuksessa
 
@@ -108,6 +109,26 @@ Scale unitissa käsiteltyjen valmistustöiden historiaa voi tarkastella kirjautu
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tuotannon keskuksesta scale unitiin viestikäsittely -työ
 
 _Tuotannon keskuksesta scale unitiin viestikäsittely_ -työ käsittelee tiedot keskuksesta scale unitiin. Tämä työ käynnistyy automaattisesti, kun tuotannonohjauksen kuormitus otetaan käyttöön. Se voidaan kuitenkin suorittaa myös manuaalisesti koska tahansa valitsemalla **Tuotannonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta \> Tuotannon keskuksesta scale unitiin viestikäsittely**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Ilmoita valmiiksi ja hyllytettäväksi Scale Unitille
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+Nykyisessä versiossa [varaston suorittamisen kuormitus](cloud-edge-workload-warehousing.md) tukee ilmoittamista valmiiksi ja hyllytettäviksi (valmiit tuotteet, rinnakkaistuotteet ja sivutuotteet) (ei valmistuksen suorituksen kuormitus). Jos siis haluat käyttää tätä toimintoa Scale Unitin yhteydessä, toimi seuraavasti:
+
+- Asenna Scale Unitiin sekä varaston suorituksen kuormitus että valmistuksen suorittamisen kuormitus.
+- Warehouse Management -mobiilisovelluksen avulla voit ilmoittaa töitä valmiiksi ja hyllytettäväksi. Tuotannon käyttöliittymä ei tällä hetkellä tue näitä prosesseja.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814992"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216785"
 ---
 # <a name="intrastat-overview"></a>Intrastat – yleiskatsaus
 
@@ -73,7 +73,7 @@ Seuraavassa taulussa luetellaan Intrastat-raportoinnin edellytykset.
 </tr>
 <tr class="odd">
 <td>Tuoteluokkahierarkia (myyntihierarkia, hankintahierarkia)</td>
-<td>Määritä luokkasolmujen Intrastat-kauppatavarakoodit <strong>Luokkahierarkia</strong>-sivun <strong>Kauppatavarakoodit</strong>-välilehdessä. Kun määrität kauppatavarakoodin pääluokkasolmulle, koodia käytetään kaikissa aliluokkasolmuissa. Valittuja kauppatavarakoodeja voi käyttää <strong>Valittu</strong>-näkymässä, kun valitset kauppatavarakoodin vapautetun tuotteen tiedoissa sekä myynti-, osto- ja siirtotilausriveillä.</td>
+<td>Määritä luokkasolmujen Intrastat-kauppatavarakoodit <strong>Luokkahierarkia</strong>-sivun <strong>Kauppatavarakoodit</strong>-välilehdessä. Kun määrität kauppatavarakoodin pääluokkasolmulle, koodia käytetään kaikissa aliluokkasolmuissa. Valittuja kauppatavarakoodeja voi käyttää <strong>Valittu</strong>-näkymässä, kun valitset kauppatavarakoodin tuotteen tiedoissa sekä myynti-, osto- ja siirtotilausriveillä.</td>
 </tr>
 <tr class="even">
 <td>Vapautetun tuotteen tiedot</td>
@@ -84,6 +84,7 @@ Seuraavassa taulussa luetellaan Intrastat-raportoinnin edellytykset.
 <li><strong>Alkuperämaa tai -alue</strong> – valitse oletusmaa tai -alue, josta tavarat kokonaisuudessaan hankittiin tai jossa ne valmistettiin.</li>
 <li><strong>Alkuperäosavaltio tai -provinssi tai määräosavaltio tai -provinssi</strong> – saapuvien oletusarvoinen määräosavaltio tai -provinssi ja lähtevien alkuperäosavaltio tai -provinssi.</li>
 <li><strong>Nettopaino kilogrammoina</strong></li>
+<li><strong>Sulje pois</strong> - Ota tämä parametri käyttöön, kun haluat, ettei tämän tuotteen tapahtumia siirretä Intrastatiin</li>
 </ul></td>
 </tr>
 <tr class="odd">

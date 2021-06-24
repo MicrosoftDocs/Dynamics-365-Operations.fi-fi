@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820981"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189090"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Toimittajan laskujen kirjanpidolliset jaot ja kirjauskansioviennit
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820981"
 
 Kirjanpidon jakoja käytetään määrittämään, miten summa käsitellään, esimerkiksi miten kulu, vara, vero tai maksu käsitellään toimittajan laskussa. Jokaisella määrällä, joka on huomioitava toimittajan laskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako. 
 
-<a name="accounting-distributions"></a>Kirjanpidolliset jaot 
--------------------------
+## <a name="accounting-distributions"></a>Kirjanpidolliset jaot 
 
 Seuraavilla Toimittajan lasku -sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin ostotilauksen summalle.
 -   **Jakosummat** – Tarkastele muokkaa yksittäisen rivin ja sen alatason rivien kirjanpidollisia jakoja, kuten veroja tai maksuja. Voit tarkastella ja muokata alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
@@ -227,8 +226,7 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 </table>
 
 
-<a name="distributing-taxes"></a>Verojen jakaminen
-------------------
+## <a name="distributing-taxes"></a>Verojen jakaminen
 
 verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista Toimittajan lasku -sivun tehtävistä:
 -   Näytä laskun summa.

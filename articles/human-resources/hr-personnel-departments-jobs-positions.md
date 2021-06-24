@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058821"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189747"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 
@@ -42,8 +42,7 @@ Seuraavassa esimerkissä on kuvattu tässä artikkelissa käytettäviä käsitte
 |**Henkilöstöhallinto**|Henkilöstöpäällikkö (Keski)|Henkilöstöpäällikkö|
 
 
- <a name="departments"></a>Osastot
-------------
+##  <a name="departments"></a>Osastot
 
 Osasto on toimintayksikkö, joka edustaa organisaation luokkaa tai toiminta-aluetta ja vastaa tietystä organisaation osa-alueesta, kuten myynnistä tai kirjanpidosta. Osastoa käytetään toiminta-alueiden raportoinnissa, ja sillä voi olla tulosvastuu. Osasto voi myös sisältää kustannuspaikkojen ryhmän. Organisaation osastoja ovat esimerkiksi myynti, kirjanpito ja henkilöstöhallinto.
 
@@ -96,8 +95,7 @@ Työtyyppien avulla voi luokitella samankaltaisia töitä. Työtyypit voidaan ty
 
 Vastuualueiden avulla voi osoittaa tietyssä toimessa toimivan työntekijän vastuulla olevat työroolit, prosessit ja tuotteet. Esimerkiksi Kirjanpitäjä-toimessa vastuualue voi olla Tuotteen A talousraportointi.
 
-<a name="positions"></a>Toimet
-----------
+## <a name="positions"></a>Toimet
 
 Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yksittäinen esiintymä. Esimerkiksi toimi Myyntipäällikkö (Itä) on vain yksi Myyntipäällikkö-työhön liittyvistä toimista. Toimet sijoittuvat osastoille, ja niitä määritetään työntekijöille.
 ### <a name="position-creation-and-maintenance"></a>Toimen luominen ja ylläpito

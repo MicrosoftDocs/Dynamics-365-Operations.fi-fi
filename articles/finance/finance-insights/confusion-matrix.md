@@ -2,7 +2,7 @@
 title: Koneoppimismallien tulokset (esiversio)
 description: Tämä ohjeaihe sisältää tietoja sekaannusmatriiseista, luokitteluongelmista ja koneoppimismallien tarkkuudesta. Tarkoitus on parantaa koneoppimisennusteiden tulosten ymmärtämistä.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028200"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193537"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Koneoppimismallien tulokset (esiversio)
 
@@ -129,16 +129,12 @@ Laskelmien yksinkertaistamiseksi on luotu mallitaulukoita, jotka vastaavat todel
 
 Lisätietoja tämän laskelman toiminnasta on tässä mallin 1 sklearn-mittareiden luokitteluraportissa. Nämä kolme tilaa (Ajoissa, Myöhässä ja Erittäin paljon myöhässä) kuvataan riveillä 1, 2 ja 3. Makron keskiarvo on f1-pisteet-sarakkeen keskiarvo.
 
-|           | tarkkuus | saanti   | f1-pisteet |
+| &nbsp;    | tarkkuus | saanti   | f1-pisteet |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Näiden kahden mallin F1-makron tarkkuuspisteet ovat lähes samat, kuten tuloksista nähdään. Tässä ja useassa muussa tapauksessa F1-tarkkuus on muita osoittimia parempi mallin ominaisuuden osoitin. Tulosten tulkinta tarkkuuden osalta edellyttää, että käyttäjä ymmärtää mallin tärkeimmät ominaisuudet.
-
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

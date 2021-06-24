@@ -2,7 +2,7 @@
 title: Verolaskenta (esiversio)
 description: Tässä ohjeaiheessa selitetään verolaskentamahdollisuuden yleinen laajuus ja ominaisuudet.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b26472e195d9bdbba340a118c106de1a4dc79b34
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9daa6e001200d03a2639974fb6de618d77ddf09d
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021929"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184098"
 ---
 # <a name="tax-calculation-preview"></a>Verolaskenta (esiversio)
 
@@ -31,6 +31,9 @@ ms.locfileid: "6021929"
 Verolaskenta on hyperskaalautuva monivuokaajapalvelu, jonka avulla Global Tax Engine voi automatisoida ja yksinkertaistaa verotuksen määritys- ja laskentaprosessia. Veromoduuli on täysin konfiguroitavissa. Määritettäviä elementtejä ovat muun muassa verotettava tietomalli, verokoodi, verojen kohdistuksen matriisi ja verolaskelmakaava. Veromoduuli toimii Microsoft Azure -ydinpalvelualustalla ja tarjoaa modernia teknologiaa ja eksponentiaalisen skaalautuvuuden.
 
 Verolaskenta integroituu Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin kanssa. Lopulta se tulee integroitumaan myös Dynamics 365 Project Operationsiin, Dynamics 365 Commerceen ja muihin ensimmäisen ja kolmannen osapuolen sovelluksiin.
+
+> [!IMPORTANT]
+> Kun otat veron laskentapalvelun käyttöön, joitakin liittyvien tietojen toimintoja voidaan suorittaa muissa tietokeskuksissa kuin palvelun tietoja ylläpitävässä tietokeskuksessa. Tarkista [ehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), ennen kuin otat veron laskentapalvelun käyttöön. Tietosuojasi on meille tärkeä. Lisätietoja on [tietosuojalausekkeessa](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Verolaskenta on mikropalvelupohjainen veromoduuli, joka tarjoaa eksponentiaalisen skaalautuvuuden. Sen avulla voit suorittaa seuraavia tehtäviä:
 

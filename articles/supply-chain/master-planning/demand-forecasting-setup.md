@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816529"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189713"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -88,8 +88,7 @@ Voit määrittää **Kohdistustunnukset**-välilehdessä kunkin kohdistustunnuks
 - **Kausivaihtelun vihje**: Anna ennustemallia varten kausivaihtelutietojen vihje ennusteen tarkkuuden parantamiseksi. Muoto: kokonaisluku, joka kuvaa niiden jaksojen pituutta, jolloin kysyntäkuvio toistuu. Syötä esimerkiksi luku 6, jos tiedot toistuvat kuuden kuukauden välein.
 - **Testijoukon koon prosenttiosuus**: Historiatietojen prosenttiosuus käytettäväksi testiaineistona ennusteen tarkkuuden laskennassa. 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
 

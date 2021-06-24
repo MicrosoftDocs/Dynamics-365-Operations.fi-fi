@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9a4897f34d016da8dd03d3108069e8aaa1369f7
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 98331fa4dcafb87789e7ea80f28a16463d7f2e3e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5959966"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188042"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -28,8 +28,7 @@ ms.locfileid: "5959966"
 
 Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää niin, että taloushallinnon resurssien hallinta onnistuu.
 
-<a name="overview"></a>Yleiskuvaus
---------
+## <a name="overview"></a>Yleiskuvaus
 
 Budjetin hallinta tukee organisaation taloudellisten resurssien hallintaa tilikarttojen, työnkulkujen, työryhmien, lähdeasiakirjojen ja -kirjauskansioiden sekä käytettävissä olevien varojen määritettävissä olevan laskelman, budjettijaksojen ja raja-arvojen avulla. Kun ohjausobjektit on määritetty, organisaatio voi suunnitella, mitata, hallita ja ennustaa taloudellisia resursseja tilikauden aikana. 
 

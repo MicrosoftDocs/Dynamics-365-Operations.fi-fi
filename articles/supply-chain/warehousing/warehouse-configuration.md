@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734246cde20f5ce76e34dae772ed0ba6b0e361a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1dc6c99a986bad767691f7cac7e0135c54e1d0b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837366"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189548"
 ---
 # <a name="warehouse-configuration-overview"></a>Varaston konfigurointi – yleiskatsaus
 
@@ -109,8 +109,7 @@ Nimen mukaisesti sijaintidirektiiveillä ohjataan työtapahtumia sopiviin varast
 
 Voit helpottaa ja nopeuttaa kuhunkin sijaintidirektiiviriviin liitettyjen toimintojen määrittämistä käyttämällä jotakin valmista strategiaa. Voit esimerkiksi hakea **Tyhjä sijainti ilman saapuvia töitä** -strategialla vapaita sijainteja varastosta. **FEFO - erän varaus** -strategialla voi puolestaan käyttää lähtevien myyntikeräykseen.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa](tasks/configure-locations-wms-enabled-warehouse.md)
 

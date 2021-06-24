@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: e6a391b10ddaef79e68f47afae7d77135a1c333a
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980894"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184122"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -65,7 +65,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
 | **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Finance-, Supply Chain Management- ja Project Operations -tuotteet|
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Suunnittelemme että Microsoft Dynamics Lifecycle Services (LCS) -tietovarastoa ei enää tueta 1.4.2022 alkaen sähköisen raportoinnin (ER) konfiguraatioiden tallennussäilönä. Uudet Microsoftin ER-konfiguraatiot julkaistaan yksinomaan yleisestä tietovarastosta ladattavaksi. Yleinen tietovarasto on käytettävissä Dynamics 365 -tuotteiden ja RCS:n kautta. Lisätietoja on kohdassa [ER-konfiguraatioiden tuonti RCS:stä](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
+| **Tila**                         | Vanhentunut: Suunnittelemme että Microsoft Dynamics Lifecycle Services (LCS) -tietovarastoa ei enää tueta 1.4.2022 alkaen sähköisen raportoinnin (ER) konfiguraatioiden tallennussäilönä. Uudet Microsoftin ER-konfiguraatiot julkaistaan yksinomaan yleisestä tietovarastosta ladattavaksi. Yleinen tietovarasto on käytettävissä Dynamics 365 -tuotteiden ja RCS:n kautta. Lisätietoja on kohdassa [ER-konfiguraatioiden tuominen RCS:stä](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) ja [Regulatory Configuration Service – Lifecycle Services -tallennustilan vanhentuminen](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Financen version 10.0.16 poistetut tai vanhentuneet ominaisuudet
 

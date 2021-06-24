@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 84ee7c82fa6aaa819798f4bc052b12b06a51c025
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f19506d66aef22099dae9396fd345c293bf559b7
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796507"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193068"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS) tai Cloud POS:n valitseminen
 
@@ -57,7 +57,7 @@ Vaikka MPOS ja CPOS ovat pääosin samanlaisia, niissä on joitakin tärkeitä e
 Windows-, iOS- tai Android-laitteessa käytettävä MPOS on sovellus, joka on pakattu ja asennettu kyseiseen laitteeseen ja jota ylläpidetään laitteessa.
 
 - **Windows** – Windows-sovelluksen MPOS sisältää kaiken sovelluskoodin ja upotetun Commerce Runtime (CRT) -ympäristön. 
-- **iOS/Android** – Näissä ympäristöissä sovellus toimii CPOS-sovelluskoodin isäntänä. Toisin sanoen sovelluskoodi saadaan CPOS-palvelimesta Microsoft Azuressa tai Commerce Scale Unit -yksiköstä. Lisätietoja on kohdassa [Commerce Store Scale Unit -yleiskatsaus](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – Näissä ympäristöissä sovellus toimii CPOS-sovelluskoodin isäntänä. Toisin sanoen sovelluskoodi saadaan CPOS-palvelimesta Microsoft Azuressa tai Commerce Scale Unit -yksiköstä. Lisätietoja on kohdassa [Commerce Store Scale Unit -yleiskatsaus](dev-itpro/retail-store-system-begin.md).
 
 #### <a name="cpos"></a>CPOS
 
@@ -79,11 +79,11 @@ Commerce Scale Unit on komponentti, joka isännöi CRT-kenttää. CRT sisältä�
 
 #### <a name="offline-mode"></a>Offline-tila
 
-Windowsin MPOS tukee offline-tilaa. Myyntipiste voi jatkaa myynnin käsittelemistä offline-tilassa, vaikka se ei olisi enää yhteydessä Commerce Scale Unit -palvelimeen. Myyntipiste voidaan synkronoida kanavatietokannan kanssa, kun yhteys on jälleen muodostettu. MPOS käyttää omaa upotettua CRT-esiintymää ja väliaikaisesti sen omaa paikallista tietolähdettä (SQL Server -offline-tietokanta). Lisätietoja offline-toiminnoista on kohdassa [Myyntipisteen offline-toiminnot](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+Windowsin MPOS tukee offline-tilaa. Myyntipiste voi jatkaa myynnin käsittelemistä offline-tilassa, vaikka se ei olisi enää yhteydessä Commerce Scale Unit -palvelimeen. Myyntipiste voidaan synkronoida kanavatietokannan kanssa, kun yhteys on jälleen muodostettu. MPOS käyttää omaa upotettua CRT-esiintymää ja väliaikaisesti sen omaa paikallista tietolähdettä (SQL Server -offline-tietokanta). Lisätietoja offline-toiminnoista on kohdassa [Myyntipisteen offline-toiminnot](pos-offline-functionality.md).
 
 ### <a name="pos-peripheralhardware-considerations"></a>Myyntipisteen oheislaitteen/laitteiston huomioon otettavia seikkoja
 
-Jälleenmyyjien on myös pohdittava, miten myyntipiste käyttää oheislaitteita, kuten tulostimia, kassoja ja maksupäätteitä. Vain Windowsin MPOS tukee suoraa viestintää näiden laitteiden kanssa. Windows Phonen, iOS:n, tai Androidin MPOS ja Cloud POS vaativat laiteaseman, jotta näihin laitteisiin voi muodostaa yhteyden. Laiteasemat voidaan varata myyntipisteen kassakoneelle tai ne voidaan jakaa myymälän kassakoneiden kesken. Lisätietoja laiteasemista kohdassa [Retail-laiteaseman määrittäminen ja asentaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Jälleenmyyjien on myös pohdittava, miten myyntipiste käyttää oheislaitteita, kuten tulostimia, kassoja ja maksupäätteitä. Vain Windowsin MPOS tukee suoraa viestintää näiden laitteiden kanssa. Windows Phonen, iOS:n, tai Androidin MPOS ja Cloud POS vaativat laiteaseman, jotta näihin laitteisiin voi muodostaa yhteyden. Laiteasemat voidaan varata myyntipisteen kassakoneelle tai ne voidaan jakaa myymälän kassakoneiden kesken. Lisätietoja laiteasemista kohdassa [Retail-laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
 
 ## <a name="implementation-considerations"></a>Toteutuksessa huomioitavaa
 
@@ -100,7 +100,7 @@ Ota seuraavat tiedot huomioon, kun suunnittelet myyntipisteen käyttöönottoa m
     Nämä kaksi vaihtoehtoa eivät sulje toisiaan pois. Jälleenmyyjät saavat luotettavimman topologian ottamalla käyttöön paikallisen RSSU. Se vähentää riippuvuutta Internet-yhteydestä tai Azuren käytettävyydestä. Sen avulla voidaan myös ottaa käyttöön myyntipisteen kassakoneita, joissa on käytössä offline-tila, jos paikallisessa palvelimessa tai verkossa on ongelmia.
 
 - **Laitteiston laitteet/oheislaitteet** – Eräs tärkeä Retail POS -järjestelmän näkökulma on myyntipisteiden oheislaitteiden, kuten tulostimien, kassojen ja maksupäätteiden, käyttäminen. Vaikka kaikissa käytettävissä olevissa myyntipisteiden vaihtoehdoissa voidaan käyttää oheislaitteita, vain Windowsin MPOS tukee niitä suoraan. Kaikki muut sovellukset vaativat vähintään yhden laiteaseman. Vaikka tämä lähestymistapa lisää joustavuutta, lisäkomponentit on otettava käyttöön, määritettävä ja ylläpidettävä.
-- **Järjestelmävaatimukset** – Myyntipistesovellusten järjestelmävaatimukset vaihtelevat. Muista tarkistaa uusimmat tiedot, ennen kuin teet valinnan. Koska esimerkiksi CPOS suoritetaan selaimessa, se tukee useampia käyttöjärjestelmiä. Lisätietoja järjestelmävaatimuksista on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
+- **Järjestelmävaatimukset** – Myyntipistesovellusten järjestelmävaatimukset vaihtelevat. Muista tarkistaa uusimmat tiedot, ennen kuin teet valinnan. Koska esimerkiksi CPOS suoritetaan selaimessa, se tukee useampia käyttöjärjestelmiä. Lisätietoja järjestelmävaatimuksista on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](../fin-ops-core/fin-ops/get-started/system-requirements.md).
 - **Käyttöönotto ja ylläpito** – Käyttöönoton ja ylläpidon monimutkaisuus voi vaihdella sovelluksen ja käyttöönottovalintojen mukaan. Esimerkiksi pilvipalvelun CPOS-käyttöönotossa asennusta ja päivitystä ei tarvitse tehdä jokaiseen laitteeseen. Siksi tämä vaihtoehto on huomattavasti yksikertaisempi ja halvempi. Jos otat käyttöön MPOS:n jokaisessa kassakoneessa ja otat käyttöön offline-tilan sekä jaetut laiteasemat, hallinnoitavien päätepisteiden lukumäärä on huomattavasti isompi.
 
 

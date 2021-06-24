@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112618"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193563"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -92,7 +92,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Italialainen lokalisointi |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: **Mustan listan raportti (IT) – toimintoviite IT-00001** – ei ole enää tarkoitus tukea 1.10.2020 jälkeen. |
+| **Tila**                         | Vanhentunut: Tätä raporttia ei ole enää tarkoitus tukea 1.10.2020 jälkeen. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Kotimaan veroraportti – toimintoviite IT-00003
 
@@ -365,6 +365,16 @@ Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja. Tämä ominaisuude
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Palkanlaskenta ja Henkilöstöhallinto Venäjällä
+Venäjän maakohtainen moduuli, jossa hallitaan henkilökunnan hallintatietoja, työntekijöiden aikaraporttitietoja, palkanlaskentaa ja palkkaraporttien luomista. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Palkanlaskentaa ei sisällytetä Dynamics 365:n -valikoiman yleiseen strategiseen keskiöön. Yhteistyökumppaneille ja ISV-toimittajille kannattaa antaa palkanlaskentatoimintoja, jotka ovat paikallisten säännösten ja veropäivitysten mukaisia.|
+| **Onko toinen ominaisuus korvannut?**   | Nro|
+| **Tuotealueet, joihin vaikutetaan**         | Palkanlaskennan ja Henkilöstöhallinnon hallinta Venäjällä |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on jokin version 10.0 tulevista päivityksistä. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 ja Platform update 15
 Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut. Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.

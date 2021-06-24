@@ -2,26 +2,21 @@
 title: Tuotannon suunnittelu
 description: Tässä aiheessa käsitellään tuotannon suunnittelua ja suunniteltujen tuotantotilausten muokkaamista tuotannon optimoinnin avulla.
 author: ChristianRytt
-ms.date: 12/15/2020
+ms.date: 06/01/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ffee79f152141297ceb24e2d7a40523eac18ffaf
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839220"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129750"
 ---
 # <a name="production-planning"></a>Tuotannon suunnittelu
 
@@ -79,11 +74,44 @@ Jos suunnitellut tuotantotilaukset sisältyvät suoritettavaan pääsuunnitteluu
 
 ## <a name="filters"></a><a name="filters"></a>Suodattimet
 
-Tuotannon sisältävissä suunnitteluskenaarioissa ei kannata käyttää suodatettuja pääsuunnitteluajoja, Jotta suunnittelun optimoinnilla on varmasti kaikki tiedot, joita tarvitaan oikean tuloksen laskemiseen, siihen on sisällyttävä kaikki tuotteet, jotka liittyvät jollain tavoin koko suunnitellun tilauksen tuoterakenteeseen.
+Jotta suunnittelun optimoinnilla on varmasti kaikki tiedot, joita tarvitaan oikean tuloksen laskemiseen, siihen on sisällyttävä kaikki tuotteet, jotka liittyvät jollain tavoin koko suunnitellun tilauksen tuoterakenteeseen. Tuotannon sisältävissä suunnitteluskenaarioissa ei siksi kannata käyttää suodatettuja pääsuunnitteluajoja,
 
-Vaikka riippuvaiset alikohteet havaitaan automaattisesti ja sisällytetään pääsuunnitteluajoihin sisäistä pääsuunnittelumoduulia käytettäessä, niin ei tapahdu suunnittelun optimoinnissa.
+Vaikka riippuvaiset alikohteet havaitaan automaattisesti ja sisällytetään pääsuunnitteluajoihin sisäistä pääsuunnittelumoduulia käytettäessä, niin ei tapahdu tällä hetkellä suunnittelun optimoinnissa.
 
-Jos esimerkiksi yhtä tuotteen A tuoterakenteen pulttia käytetään myös tuotteen B tuottamiseen, kaikkien tuotteiden A ja B tuoterakenteiden tuotteiden on sisällyttävä suodattimeen. Koska voi olla erittäin monimutkaista varmistaa, että kaikki tuotteet sisältyvät suodattimeen, suodatettuja pääsuunnitteluajoja kannattaa välttää, jos kyse on tuotantotilauksesta.
+Jos esimerkiksi yhtä tuotteen A tuoterakenteen pulttia käytetään myös tuotteen B tuottamiseen, kaikkien tuotteiden A ja B tuoterakenteiden tuotteiden on sisällyttävä suodattimeen. Koska voi olla monimutkaista varmistaa, että kaikki tuotteet sisältyvät suodattimeen, suodatettuja pääsuunnitteluajoja kannattaa välttää, jos kyse on tuotantotilauksesta. Muutoin pääsuunnittelusta saadaan ei-toivottuja tuloksia.
 
+### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Syyt, joiden vuoksi ei suositella suodattamaan pääsuunnittelun ajoja
+
+Kun suoritat tuotteelle suodatetun pääsuunnittelun, suunnittelun optimointi (toisin kuin sisäänrakennettu pääsuunnittelumoduuli) ei havaitse kaikkia tuotteen tuoterakenteen osatuotteita ja raaka-aineita eikä siksi sisällytä niitä pääsuunnitteluajoon. Vaikka suunnittelun optimointi tunnistaa tuotteen tuoterakenteen ensimmäisen tason, se ei lataa tietokannasta mitään tuoteasetuksia (kuten oletustilaustyyppiä tai nimikkeen kattavuutta).
+
+Suunnittelun optimoinnissa suorituksen tiedot ladataan etukäteen ja suodattimia käytetään. Jos tiettyyn tuotteeseen sisältyvä osatuote tai raaka-aine ei kuulu suodattimeen, sitä koskevia tietoja ei siepata ajoa varten. Jos lisäksi osatuote tai raaka-aine sisältyy myös toiseen tuotteeseen, suodatettu suoritus, joka sisältää vain alkuperäisen tuotteen ja sen komponentit, poistaa aiemmin luodun, tälle toiselle tuotteelle luodun suunnitellun kysynnän.
+
+Tämä logiikka saattaa aiheuttaa sen, että suodatetut pääsuunnittelun suoritukset aiheuttavat odottamattomia tuloksia. Seuraavissa osissa on esimerkkejä, jotka kuvaavat odottamattomia tuloksia, jotka voivat ilmetä.
+
+### <a name="example-1"></a>Esimerkki 1
+
+Valmis tuote *VT* koostuu seuraavista komponenteista:
+
+- Raaka-aine *R*
+- Osatuote *S1*, joka koostuu osatuotteesta *S2*
+
+Raaka-ainetta *R* on varastossa, mutta osatuotetta *S1* ei ole varastossa.
+
+Kun teet suodatetun pääsuunnittelun ajon valmiille tuotteelle *VT* saat suunnitellun tuotantotilauksen valmiille tuotteelle *VT*, suunnitellun ostotilauksen raaka-aineelle *R* ja suunnitellun ostotilauksen ja osatuotteelle *S1*. Tämä on ei-toivottu tulos, koska suunnittelun optimointi on ohittanut sen seikan, että raaka-aineiden *R* ja osatuote *S1* on tuotettava käyttäen osatuotetta *S2* sen sijaan, että se tilattaisiin suoraan. Näin on tapahtunut, koska suunnittelun optimoinnilla on vain valmiin tuotteen *VT* komponenttiluettelon ilman siihen liittyviä tietoja, kuten sen komponenttien tarjontaa tai oletustilausasetuksia.
+
+### <a name="example-2"></a>Esimerkki 2
+
+Edellisessä esimerkissä valmis lisätuote *VT2* käyttää myös osatuotetta *S1*. On olemassa suunniteltu tilaus valmiille tuotteelle *VT2*, ja kaikilla sen komponenteilla, myös komponentilla *S1*, on suunniteltu kysyntä.
+
+Päätät poistaa suodatetun pääsuunnittelun ei-toivotut tulokset edellisestä esimerkistä lisäämällä kaikki osatuotteet ja raaka-aineet valmiin tuotteen *VT* tuoterakenteesta suodattimeen ja suorittamalla sitten täyden uudelleenmuodostuksen.
+
+Kun suoritat täyden uudelleenluomisen, järjestelmä poistaa kaikkien sisältyvien tuotteiden kaikki tulokset ja luo sitten tulokset uudelleen uusien laskelmien perusteella. Tämä tarkoittaa, että olemassa oleva suunniteltu tarve tuotteelle *S1* poistetaan ja sen jälkeen luodaan uudelleen ottaen huomioon vain valmiin tuotteen *VT* tarpeet, kun jätetään huomioimatta valmiin tuotteen *VT2* tarpeet. Näin tapahtuu, koska kun suoritat suunnittelun optimoinnin, se ei sisällä muiden suunniteltujen tuotantotilausten suunniteltua kysyntää, vain suorituksen aikana luotua suunniteltua kysyntää käytetään.
+
+> [!NOTE]
+> Jos olemassa oleva valmiin tuotteen *VT2* suunniteltu tilaus tilassa *Hyväksytty*, hyväksytty suunniteltu kysyntä sisällytetään myös silloin, kun päätuotetta ei lisätä suodattimeen.
+
+Näin ollen jos et lisää kaikkia komponentteja valmiille tuotteelle *VT*, valmiille tuotteelle *VT2* ja muille tuotteille, joiden osia nämä komponentit ovat (omine komponentteineen), suodatettu pääsuunnittelun ajo tuottaa ei-toivotut tulokset.
+
+Koska voi olla monimutkaista varmistaa, että kaikki tuotteet sisältyvät suodattimeen, suodatettuja pääsuunnitteluajoja kannattaa välttää, jos kyse on tuotantotilauksesta.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

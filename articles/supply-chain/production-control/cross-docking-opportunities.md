@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839146"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190085"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking tuotantotilauksista lähtevien laituriin
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839146"
 
 Tässä ohjeaiheessa kerrotaan, miten valmiiksi ilmoitetun materiaalin cross docking -prosessia hallitaan tuotantolinjasta lähtevien laituriin.
 
-<a name="introduction"></a>Johdanto
-------------
+## <a name="introduction"></a>Johdanto
 
 Cross docking tuotannosta lähtevien sijaintiin on hyödyllinen valmistajille, joiden tuotantomäärät ovat suuria ja jotka haluavat lähettää valmiit tuotteet heti, kun tuotantolinja on ilmoittanut ne valmiiksi. Tuotteet on tarkoitus lähettää jakelukeskuksiin, jotka sijaitsevat asiakaskysynnän läheisyydessä, sen sijaan että varastoa koottaisiin valmistustoimipaikkaan.
 

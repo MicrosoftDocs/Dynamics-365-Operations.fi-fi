@@ -2,7 +2,7 @@
 title: Asiakkaan maksuennusteiden käyttöönotto (esiversio)
 description: Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan käyttöön ja määritetään Finance Insightsissa.
 author: ShivamPandey-msft
-ms.date: 05/27/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0f972b6f3c0c7c4fcf69b3644a5e73d863cd817d
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897353"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222582"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Asiakkaan maksuennusteiden käyttöönotto (esiversio)
 
@@ -34,10 +34,10 @@ Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan
 
 1. Muodosta yhteys ympäristön Azure SQL:n ensisijaiseen esiintymään Microsoft Dynamics Lifecycle Services (LCS) -ratkaisun ympäristösivun tietojen avulla. Suorita seuraava Transact-SQL (T-SQL) -komento, jos haluat ottaa käyttöön eristysympäristön väliversiotestaukset. (Sinun on ehkä otettava käyttöön IP-osoitteen käyttö LCS:ssä ennen etäyhteyden muodostamista Application Object Serveriin \[AOS\].)
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, PARTITION) VALUES ('PayPredEnableFeature', 1, 5637144576)`
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('PayPredEnableFeature', 1)`
 
     > [!NOTE]
-    > Jos Microsoft Dynamics 365 Finance -käyttöönotto on Service Fabric -käyttöönotto, voit ohittaa tämän vaiheen. Finance Insightsin ryhmä on todennäköisesti jo ottanyt sen käyttöön. Jos et näe ominaisuutta **Toimintojen hallinta** -työtilassa tai jos sen käyttöönotossa on ongelmia, ota yhteyttä käyttämällä osoitetta <fiap@microsoft.com>.
+    > Ohita tämä vaihe, jos käytössä on versio 10.0.20 tai myöhempi versio tai jos käytössä on Service Fabric -toteutus. Finance Insightsin ryhmä on todennäköisesti jo ottanyt sen käyttöön. Jos et näe ominaisuutta **Toimintojen hallinta** -työtilassa tai jos sen käyttöönotossa on ongelmia, ota yhteyttä käyttämällä osoitetta <fiap@microsoft.com>. 
 
 2. Ota käyttöön Asiakasmaksun tiedot -toiminto:
 
@@ -84,10 +84,5 @@ Kun toiminto on otettu käyttöön ja määritetty ja ennustemalli luotu ja toim
 Finance Insightsin julkinen esiversio on saatavilla koekäyttöönotoissa Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
 
 Julkisen esiversion ominaisuudet voidaan ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei voi siirtää tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Tietosuojatiedot
-
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

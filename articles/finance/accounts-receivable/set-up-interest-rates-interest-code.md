@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc986ea752d1482f618401058f7a0b18f13efd5f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835193"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188707"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Korkoryhmän korkoprosenttien määrittäminen
 
@@ -90,7 +90,6 @@ Määrität alueen tiedot seuraavasti.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Esimerkki 2: Korko alueen mukaan = päivät
---------------------------------------------------
 
 Määrität korkokoodin, joka arvioi koron kerran jokaista 15 päivää kohden, jonka laskun maksu on myöhässä tapahtuman eräpäivästä. Haluat laskennan perustuvan summan korkoarvoon askeleittaisten päivävälien mukaan. Koron arvo on 10,00 kutakin 15 päivää kohden 60 ensimmäisen päivän ajan, 15,00 kutakin 15 päivää kohden päivien 61–90 ajan ja 20,00 kutakin 15 päivää kohden päivän 91 ja sen jälkeisten päivien ajan. Määrität korkokoodin kenttien arvot seuraavasti.
 
@@ -111,7 +110,6 @@ Määrität alueen tiedot seuraavasti.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Esimerkki 3: Korko alueen mukaan = kuukaudet
-----------------------------------------------------
 
 Määrität korkokoodin, joka arvioi koron kerran jokaista kuukautta kohden, jonka laskun maksu on myöhässä tapahtuman eräpäivästä. Haluat laskennan perustuvan prosentuaaliseen korkoarvoon askeleittaisten kuukausivälien mukaan. Koron arvo on 1,5 prosenttia kuukaudessa eräpäivän jälkeisen kolmen ensimmäisen kuukauden ajan, 2,0 prosenttia kuukaudessa toisen kolmen kuukauden jakson ajan ja 2,5 prosenttia kuukaudessa kuuden ensimmäisen kuukauden jälkeen. Määrität korkokoodin kenttien arvot seuraavasti.
 

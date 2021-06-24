@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5544fefbbf0dfc012e868b672f80cc2be30fe7ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f80d1509c7c363e93b83cb47c1b93ab00bf67180
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020859"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193465"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -37,7 +37,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>Täyden tietojoukon luonnin aikaväli on vanhentunut
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tästä versiosta lähtien Dynamics 365 headquarters -sovelluksen **Kaupankäynnin ajoitustyökalun parametrit** -lomakkeessa **Täyden tietojoukon luonnin aikaväli päivinä** poistetaan. Tästä versiosta alkaen kenttä poistetaan visuaalisesti, jotta arvoa ei voi muokata. Tämä pysyy arvona **0**. |
 | **Onko toinen ominaisuus korvannut?**   | Nro |
@@ -49,7 +49,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11:n Dynamics 365 -tuki on vanhentunut
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Joulukuusta 2020 alkaen kaikkien Dynamics 365 -tuotteiden Microsoft Internet Explorer 11 -tuki vanhenee eikä Internet Explorer 11:tä tueta elokuun 2021 jälkeen.<br><br>Tämä vaikuttaa sellaisiin Dynamics 365 -tuotteita käyttäviin asiakkaisiin, jotka on suunniteltu käytettäviksi Internet Explorer 11 -liittymässä. Elokuun 2021 jälkeen Internet Explorer 11:tä ei tueta kyseisissä Dynamics 365 -tuotteissa. |
 | **Onko toinen ominaisuus korvannut?**   | Asiakkaiden kannattaa siirtyä Microsoft Edgeen.|
@@ -59,7 +59,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Commercen version 10.0.11 poistetut tai vanhentuneet ominaisuudet
 ### <a name="data-action-hooks"></a>Tietotoiminnon koukut
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tietotoiminnon koukkutoiminto on vanhentunut suorituskykyongelmien vuoksi. |
 | **Onko toinen ominaisuus korvannut?**   | Liiketoimintalogiikkaa kannattaa muokata tietotoimintokerroksessa [tietotoiminnon ohitusten](../e-commerce-extensibility/data-action-overrides.md) avulla.|
@@ -68,7 +68,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Tila**                         | Vanhentunut: versiosta 10.0.11 alkaen |
 
 ### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Visual Studio 2015:n Retail SDK -tuki, msbuild 14.0 ja Retail SDK\Viitekirjastot ja työkalut
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Visual Studio 2015:n Retail SDK -tuki on vanhentunut, ja se on päivitetty tukemaan versiota VS 2017, msbuild 15.0 sekä kaikki viitekirjastot ja kaupankäynnin välityspalvelimen luontityökalut RetailSDK\References-kansiossa siirrettiin NuGet-paketteihin yksinkertaistamaan laajennusmallia ja SDK-päivitysprosessia.|
 | **Onko toinen ominaisuus korvannut?**   | Järjestelmä kannattaa päivittää kohdan [Retail SDK:n siirtäminen Visual Studio 2015:sta Visual Studio 2017:ään](../dev-itpro/retail-sdk/migrate-sdk.md) ohjeiden mukaisesti. |
@@ -77,7 +77,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Tila**                         | Vanhentunut: versiosta 10.0.11 alkaen |
 
 ### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Retail Server -laajennuksessa käytössä IEdmModelExtender ja CommerceController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Retail Server -laajennus, jossa on käytössä IEdmModelExtender ja CommerceController, on vanhentunut, jotta yksinkertaistettu laajennusmalli on mahdollinen. Uudessa toteutuksessa on vain ohjainluokka ilman ylimääräistä IEdmModelExtender-luokan toteutusta. Tällä tavoin vältetään myös riippuvuus tietystä OData-versiosta (jos OData-version päivitetään, laajennukset voivat vaurioitua). |
 | **Onko toinen ominaisuus korvannut?**   |  IController-luokan laajennusmallia kannattaa käyttää tuomalla NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) -paketti. |
@@ -86,7 +86,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Tila**                         | Vanhentunut: versiosta 10.0.11 alkaen |
 
 ### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Laiteasemalaajennus IHardwareStationControllerin avulla
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | IHardwareStationControlleria käyttävä laiteasemalaajennus on vanhentunut, jotta yksinkertaistettu laajennusmalli on mahdollinen. Uudessa toteutuksessa on vain IController-luokka ilman lisäluokkien toteutuksia, jolloin ei myöskään synny riippuvuutta peruslaiteasemakirjastoista, kun aiemmin laajennuksen oli viitattava useisiin kirjastoihin.) |
 | **Onko toinen ominaisuus korvannut?**   | IController-luokan laajennusmallia kannattaa käyttää tuomalla NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) -paketti. |
@@ -96,7 +96,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Commercen version 10.0.10 poistetut tai vanhentuneet ominaisuudet
 ### <a name="pos-operation-803---picking-and-receiving"></a>Myyntipistetoiminto 803 - Keräys ja vastaanotto
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Keräilyn ja vastaanoton toimintoja ollaan poistamassa, koska uusi uudelleensuunnittelu on käytössä. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Se korvataan kahdella uudella myyntipistetoiminnolla: saapuva työvaihe (804) ja lähtevä työvaihe (805).|
@@ -107,7 +107,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Commercen version 10.0.7 poistetut tai vanhentuneet ominaisuudet
 ### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvailabilities- ja GetAvailableInventoryNearby ohjelmointirajapintaliittymät
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Uudet optimoidut ohjelmointirajapinnat on luotu korvaamaan GetProductAvailabilities- ja GetAvailableInventoryNearby-ohjelmointirajapinnat. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä: sen tilalle tulee GetEstimatedAvailabilty ja GetEstimatedProductWarehouseAvailability -ohjelmointirajapinnat. |

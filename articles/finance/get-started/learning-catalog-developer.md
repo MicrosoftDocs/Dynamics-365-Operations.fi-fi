@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9e3976eaf94f6a8440794beebae1ab7241e5aa54
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: cdc16d02f24f24e0f9933542589573ee6b5cde45
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897645"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193376"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance -kehittäjien oppimisluettelo
 
@@ -29,20 +29,20 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
-| Sisältö  | kuvaus     | Muoto     | Pituus    |
-|-------------|-----------------|-------------|------------|
-| [Finance and Operations -sovellusten käytön aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2.2 tuntia |
-| [Dynamics 365 Financen käytön aloittaminen](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Financen avulla yrityskäyttäjät voivat nopeasti sopeutua muuttuviin liiketoimintaympäristöihin. Se tarjoaa yrityksille kaiken. Sen avulla voidaan hallita taloutta ja varoja tarkasti ja milloin tahansa taloussuunnitteluun ja ennustamiseen avulla sekä pysyä ajan tasalla analytiikkatyökalujen avulla. Koska talous on kaikkien yritysten tärkein alue, on tärkeää tutustua Dynamics 365 Financen ominaisuuksiin. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
+| [Finance and Operations -sovellusten käytön aloittaminen](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2.2 tuntia |
+| [Dynamics 365 Financen käytön aloittaminen](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Financen avulla yrityskäyttäjät voivat nopeasti sopeutua muuttuviin liiketoimintaympäristöihin. Se tarjoaa yrityksille kaiken. Sen avulla voidaan hallita taloutta ja varoja tarkasti ja milloin tahansa taloussuunnitteluun ja ennustamiseen avulla sekä pysyä ajan tasalla analytiikkatyökalujen avulla. Koska talous on kaikkien yritysten tärkein alue, on tärkeää tutustua Dynamics 365 Financen ominaisuuksiin. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
 
 ## <a name="core-development-concepts"></a>Kehittämisen keskeiset käsitteet<a name="core-development-concepts"></a>
 
-| Sisältö  | kuvaus  | Muoto   | Pituus    |
-|-------------|-----------------|-------------|------------|
-| [Finance and Operations -sovellusten kehittämisen esittely](/learn/paths/introduction-develop-finance-operations/) | Finance and Operations -sovellusten parissa työskentelevänä kehittäjänä on tärkeää saada vankka käsitys tärkeimmistä arkkitehtuurin osista Dynamics 365 -ekosysteemissä ja Finance and Operations -sovelluksissa. Tieto ydinkehittäjille tarkoitetuista käsitteistä, mukaan lukien tekniset ominaisuudet, lähdekoodi, testauskehykset ja raportointityökalut, tukevat lisäponnistelujasi sellaisten kehitystaitojen kehittämisessä, joita voit käyttää Finance and Operations -sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7.75 tuntia |
-| [Finance and Operations -sovellusten luominen](/learn/paths/build-finance-operations/) | Finance and Operations -sovellusten kehittäminen edellyttää perustietoja tehtävistä, joita tarvitaan uusien elementtien luomiseen ja Finance and Operations -sovellusten mukauttamiseen. Tehtäviin sisältyvät X++-koodin ja Visual Studion ymmärtäminen sekä järjestelmän peruselementtien luominen ja muokkaaminen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 13 tuntia |
-| [Laajenna Finance and Operations -sovelluksia](/learn/paths/extending-finance-operations/) | Laajennusten avulla kehittäjät voivat tehdä muutoksia Finance and Operations -sovellusten käyttökokemukseen toteuttamalla muutoksia koodiin, joka ei vaikuta peruskoodiin. Muiden etujen ohella laajennukset antavat kehittäjien päivittää Finance and Operations -sovellukset noudattamaan liiketoimintaprosesseja ja tarvittavia muutoksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2.5 tuntia |
-| [Yhteyden muodostaminen Finance and Operations -sovelluksiin](/learn/paths/connect-finance-operations/) | Integrointi ja tietojen käyttömahdollisuus Finance and Operations -sovelluksissa ovat tärkeitä ominaisuuksia. Kehittäjät, jotka ovat oppineet rakentamaan ja laajentamaan koodia Finance and Operations -sovelluksissa voivat parantaa tietojaan kehityksestä oppimalla tietojen integroinnista ja siitä, miten tietojen yhdistäminen voi vaikuttaa käyttäjiin myönteisesti. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.75 tuntia |
-| [Tietojen siirtäminen ja Finance and Operations -sovellusten julkaisu](/learn/paths/migrate-data-go-live-finance-operations/) | Toiminnallisena konsulttina sinun on ymmärrettävä, miten voit valmistella asiakkaan tiedot siirtoa varten, käsitellä tietojen hallintaa ja suorittaa käyttäjän hyväksymistestauksen, jotta voit julkaista Finance and Operations -sovellusten avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
+| [Finance and Operations -sovellusten kehittämisen esittely](https://docs.microsoft.com/learn/paths/introduction-develop-finance-operations/) | Finance and Operations -sovellusten parissa työskentelevänä kehittäjänä on tärkeää saada vankka käsitys tärkeimmistä arkkitehtuurin osista Dynamics 365 -ekosysteemissä ja Finance and Operations -sovelluksissa. Tieto ydinkehittäjille tarkoitetuista käsitteistä, mukaan lukien tekniset ominaisuudet, lähdekoodi, testauskehykset ja raportointityökalut, tukevat lisäponnistelujasi sellaisten kehitystaitojen kehittämisessä, joita voit käyttää Finance and Operations -sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7.75 tuntia |
+| [Finance and Operations -sovellusten luominen](https://docs.microsoft.com/learn/paths/build-finance-operations/) | Finance and Operations -sovellusten kehittäminen edellyttää perustietoja tehtävistä, joita tarvitaan uusien elementtien luomiseen ja Finance and Operations -sovellusten mukauttamiseen. Tehtäviin sisältyvät X++-koodin ja Visual Studion ymmärtäminen sekä järjestelmän peruselementtien luominen ja muokkaaminen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 13 tuntia |
+| [Laajenna Finance and Operations -sovelluksia](https://docs.microsoft.com/learn/paths/extending-finance-operations/) | Laajennusten avulla kehittäjät voivat tehdä muutoksia Finance and Operations -sovellusten käyttökokemukseen toteuttamalla muutoksia koodiin, joka ei vaikuta peruskoodiin. Muiden etujen ohella laajennukset antavat kehittäjien päivittää Finance and Operations -sovellukset noudattamaan liiketoimintaprosesseja ja tarvittavia muutoksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2.5 tuntia |
+| [Yhteyden muodostaminen Finance and Operations -sovelluksiin](https://docs.microsoft.com/learn/paths/connect-finance-operations/) | Integrointi ja tietojen käyttömahdollisuus Finance and Operations -sovelluksissa ovat tärkeitä ominaisuuksia. Kehittäjät, jotka ovat oppineet rakentamaan ja laajentamaan koodia Finance and Operations -sovelluksissa voivat parantaa tietojaan kehityksestä oppimalla tietojen integroinnista ja siitä, miten tietojen yhdistäminen voi vaikuttaa käyttäjiin myönteisesti. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.75 tuntia |
+| [Tietojen siirtäminen ja Finance and Operations -sovellusten julkaisu](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | Toiminnallisena konsulttina sinun on ymmärrettävä, miten voit valmistella asiakkaan tiedot siirtoa varten, käsitellä tietojen hallintaa ja suorittaa käyttäjän hyväksymistestauksen, jotta voit julkaista Finance and Operations -sovellusten avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
 | [Finance and Operations: Kehitys-ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | Tämä TechTalk käsittelee suosittelemiamme kehityssovellusten elinkaaren hallinnan käsitteitä, työkaluja ja parhaita käytäntöjä. Me kerromme miten Lifecycle Services, Visual Studio ja Azure DevOps toimivat yhdessä mahdollistaaksesi ratkaisuisi koodausperustan jatkuvan toimittamisen liiketoimintaprosesseihin ja ympäristöjen palvelemisen. | Verkkokokouksen maksuton tallenne | 52 minuuttia |
 | [Finance and Operations: Dynamics 365 for Finance and Operationsin laajentaminen PowerAppsin (DYN558PAL2) kanssa](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Ymmärrä Microsoft PowerAppsin yksinkertaisuus ja miten se voidaan integroida Dynamics 365 for Finance and Operationsin kanssa ja digitaalisesti muuttaa yrityksiä ja lisätä käyttäjien tuottavuutta. | Verkkokokouksen maksuton tallenne | 43 minuuttia |
 | [Finance and Operations: Laajennettavuus (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Microsoft tarjoaa yleiskatsauksen ja päivityksen Microsoftin laajennettavuutta koskeviin suunnitelmiin. Keskustelemme yksityiskohtaisesti eri tavoista laajentaa ratkaisua, tutustumme syvälle metatietojen laajennettavuusominaisuuksiin sekä kykyyn lisätä ja laajentaa koodia, mukaan lukien tehokkaaseen komentoketjuominaisuuteen. | Verkkokokouksen maksuton tallenne | 50 minuuttia |
@@ -58,8 +58,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="servicing"></a>Päivitetään<a name="servicing"></a>
 
-| Sisältö  | kuvaus  | Muoto  | Pituus    |
-|-------------|-----------------|-------------|------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Tuotannon ylläpito, tukeminen ja ylläpito (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Teknisiä keskusteluja siitä, kuinka voit tehokkaasti tukea, ylläpitää ja palvella Dynamics 365 for Finance and Operations -tuotantoympäristöä. | Verkkokokouksen maksuton tallenne | 53 minuuttia |
 | [Finance and Operations: Ominaisuuksien hallinta (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Tech Talk ominaisuuksien hallinnasta. Se sisältää työtilan, jossa voit tarkastella, ottaa käyttöön, poistaa käytöstä ja ajoittaa kussakin julkaisussa toimitettuja toimintoja. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Osallistu tähän kokoukseen ja katso, mitä toimitetaan versiossa 10.0.3 ja tulevien versioiden suunnitelmat. | Verkkokokouksen maksuton tallenne | 47 minuuttia |
 | [Finance And Operations: Microsoftin hallinnoimat jatkuvat päivitykset (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Jatkuvan päivityksen rytmi Finance and Operationsille on alkanut! Liity meihin tämän tunnin aikana keskustellaksesi Microsoftin hallinnoimista jatkuvista päivityksistä, nyt jo käytettävissä olevasta Lifecycle Services -käyttökokemuksesta ja tulevista päivityksistä. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
@@ -68,16 +68,17 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="migration-and-upgrade"></a>Siirto ja päivitys<a name="migration-and-upgrade"></a>
 
-| Sisältö  | kuvaus    | Muoto  | Pituus    |
-|-------------|-----------------|-------------|------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
+| [Dynamics AX 2012:n päivittäminen Finance and Operations -sovelluksiksi](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Lue tärkeimmät elementit ja parhaat käytännöt, jotka koskevat Dynamics AX 2012 -ratkaisun päivittämistä Finance and Operations -sovelluksiksi. Tutustu tärkeimpiin eroavaisuuksien löytämiseen, päivitysprosessin aloittaminen sekä koodin ja tietojen päivitystyökalujen aloittaminen parhaisiin tapoihin suunnitella integroinnit, analysoinnit ja raportit uusimpien ominaisuuksien mukaan. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Finance and Operations: Päivittäminen versiosta 7.x versioon 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Liity meihin seuraavaan TechTalkiin, jonka aikana me kerromme päivitysprosessista versiosta 7.X versioon 8.X. Keskustelemme eri skenaarioista ja vaiheista, jotka suoritetaan koodin päivitystä ja tietojen päivitystä varten. Käsittelemme myös laajennuspyyntöskenaarioita ja niiden nostamista tarvittaessa. Osa 1/2. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
 | [Päivitys AX2012-versiosta Dynamics 365 for Operations -versioon (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tämä Tech Talk antaa yleiskuvan siitä, miten päivittää koodit ja tiedot Dynamics AX 2012 -versiosta Dynamics 365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 45 minuuttia |
 | [AX2009-versiosta Dynamics 365 for Operations -versioon siirtymisen työkalut (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Tämä istunto kattaa työkalut, jotka auttavat sinua siirtymään AX2009-versiosta D365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 55 minuuttia |
 
 ## <a name="testing"></a>Testataan<a name="testing"></a>
 
-| Sisältö  | kuvaus  | Muoto  | Pituus    |
-|-------------|-----------------|-------------|------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Hyväksyntätestikirjasto (DYN650PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-acceptance-test-library-june-20-2019) | Teknisiä keskusteluja siitä, kuinka voit tehokkaasti tukea, ylläpitää ja palvella Dynamics 365 for Finance and Operations -tuotantoympäristöä. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
 | [Finance and Operations: Regression Suite Automation Tool -- Tausta & Määritys (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Tämä on Regression Suite Automation Testing (RSAT) -testauksen ensimmäinen osa kahdesta. Tässä istunnossa käsittelemme, miten pysyt jatkuvasti päivittämään automaattisten testien avulla RSAT-testauksen kautta. Oppimiset ja suositukset luoda tehtävän nauhoituksia ja suorittaa testejä RSAT:ia käyttäen katetaan – sekä askel askeleelta -ohje läpi asennuksen ja määrityksen. | Verkkokokouksen maksuton tallenne | 70 minuuttia |
 | [Finance and Operations: Regression Suite Automation Tool --Testauksen elinkaariesittely (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Tämä on Regression Suite Automation Testing (RSAT) -testauksen toinen osa kahdesta. Tämä istunto kattaa esittelyn koko syklistä, jossa luodaan ja tallennetaan tehtävätallenteita Finance and Operationsista BPM-kirjastoon LCS:ssä. Tämä synkronoi BPM-kirjaston luodakseen testitapauksia Azure DevOpsissa ryhmittelemällä testitapaukset testikokoelmiksi ja ladatakseen ja suorittaakseen testauspaketit RSAT:issa. | Verkkokokouksen maksuton tallenne | 70 minuuttia |
@@ -89,9 +90,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="exam"></a>Tentti<a name="exam"></a>
 
-| Sisältö | kuvaus  | Muoto  |
-|-------------|-----------------|-------------|
-|[Tentti MB-500: Microsoft Dynamics 365: Finance and Operations -sovellusten kehittäjä](/learn/certifications/exams/mb-500) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: arkkitehtuurin suunnitteleminen ja ratkaisun määrittäminen, kehittäjätyökalujen käyttäminen, AOT-elementtien suunnitteleminen ja kehittäminen, koodin kehittäminen ja testaaminen, raportoinnin käyttöönottaminen, tietoratkaisujen integroiminen ja hallinta sekä tietoturvan käyttöönottaminen ja suorituskyvyn optimoiminen. | Tentti, kustannukset vaihtelevat alueittain |
-
+| Sisältö | kuvaus | Muoto |
+|---------|-------------|--------|
+|[Tentti MB-500: Microsoft Dynamics 365: Finance and Operations -sovellusten kehittäjä](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: arkkitehtuurin suunnitteleminen ja ratkaisun määrittäminen, kehittäjätyökalujen käyttäminen, AOT-elementtien suunnitteleminen ja kehittäminen, koodin kehittäminen ja testaaminen, raportoinnin käyttöönottaminen, tietoratkaisujen integroiminen ja hallinta sekä tietoturvan käyttöönottaminen ja suorituskyvyn optimoiminen. | Tentti, kustannukset vaihtelevat alueittain |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

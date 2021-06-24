@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891790"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224031"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
 
@@ -285,7 +285,7 @@ Jos haluat jatkaa, ohita seuraavat vaiheet, [Luo uusi tietomallin konfiguraatio]
 
 Tämän konfiguraation version 1 tila muutetaan **luonnoksesta** **valmiiksi**. Versiota 1 ei voi enää muuttaa. Tämä versio sisältää konfiguroidun tietomallin, ja sitä voidaan käyttää muiden ER-konfiguraatioiden pohjana. Tämän konfiguraation versio 2 luodaan, ja sen tila on **luonnos**. Voit muokata tätä versiota, jos haluat muuttaa **kyselylomakkeen** tietomallia.
 
-![Konfiguraatiosivun muokattavan ER-konfiguraation versiot](./media/er-quick-start1-model-configuration.png)
+![Konfiguraatiosivun muokattavan konfiguraation versiot](./media/er-quick-start1-model-configuration.png)
 
 Lisätietoja ER-kokoonpanojen versiotiedoista on kohdassa [sähköisen raportoinnin (ER) yleiskuvaus](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ Seuraavassa kuvassa näkyy Excel-muodossa luotu raportti, jossa kysymykset on j�
 
 Tämän konfiguraation version 1.1 tila muutetaan **luonnoksesta** **valmiiksi**. Versiota 1.1 ei voi enää muuttaa. Tämä versio sisältää määritetyn muodon, ja sitä voidaan käyttää mukautetun raportin tulostamiseen. Tämän konfiguraation versio 1.2 luodaan, ja sen tila on **luonnos**. Voit muokata tätä versiota, jos haluat muuttaa **kyselylomake**-raporttisi muotoa.
 
-![Konfiguraatiosivun muokattavan ER-konfiguraation versiot](./media/er-quick-start1-format-configuration.png)
+![Konfiguraatiosivun muokattava ER-konfiguraatio](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Konfiguroitu muoto on **kyselylomake**-raportin rakenne, eikä se sisällä mitään suhteita rahoitukseen määritettyihin esineisiin.

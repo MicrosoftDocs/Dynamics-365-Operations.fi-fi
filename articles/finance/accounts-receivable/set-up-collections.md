@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835217"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189466"
 ---
 # <a name="set-up-collections"></a>Aseta keräilyt
 
@@ -40,8 +40,7 @@ Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään. Sinun o
 
 Näitä kohtia käsitellään tarkemmin koko tämän aiheen loppuosassa. 
 
-<a name="set-up-aging-period-definitions"></a>Määritä erääntymiskausimääritykset
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Määritä erääntymiskausimääritykset
 
 Määritä erääntymiskausimääritys. Erääntymiskausimääritys määrittää sarakkeet, jotka näkyvät **Erääntyneet saldot**-, **Perintätehtävät**- ja **Perintätapaukset**-luettelosivuilla. Se määrittää myös kaudet, jotka näkyvät **Perintä**-sivulla. Jos asiakaspooli on määritetty, käytetään poolin erääntymiskausimääritystä. Jos poolia ei ole määritetty, käytetään oletuserääntymiskausimääritystä, joka on määritetty **Myyntireskontran parametrit** -sivulla. Jos oletuserääntymiskauden määritystä ei ole määritetty, käytetään **Erääntymiskausien määritykset** -sivun ensimmäistä erääntymiskausimääritystä.
 

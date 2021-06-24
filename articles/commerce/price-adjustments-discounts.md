@@ -2,7 +2,7 @@
 title: Hinnanoikaisut ja alennukset
 description: Tässä artikkelissa on tietoja Dynamics 365 Commercen hinnanoikaisuista ja alennuksista.
 author: scott-tucker
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2d3e8025c5ab28296713634094694156f9addf62
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44c03ae0a04d648e788a72d8f6dcc3671c5736c7
+ms.sourcegitcommit: 7c9d6be464db058511df9cb6ba162d21dc0554e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802788"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6240939"
 ---
 # <a name="price-adjustments-and-discounts"></a>Hinnanoikaisut ja alennukset
 
@@ -48,6 +48,13 @@ Alennuksia on useita tyyppejä:
 - **Lähetysalennus** – Alennus, jota käytetään, kun tapahtuman kokonaissumma on enemmän kuin määritetty summa ja jos tilauksessa on käytössä tietty toimitustapa (esimerkiksi kahden päivän toimitus tai toimitus yön aikana).
 
 Sekä hinnanoikaisut että alennukset voidaan yhdistää hintaryhmiin. Hintaryhmät voidaan tämän jälkeen liittää kanaviin, luetteloihin, liitoksiin ja kanta-asiakasohjelmiin.
+
+> [!NOTE]
+> Yhdistelmäalennus ja raja-alennus sisältävät ominaisuudet nimeltään "Laske ei-alennuskelpoiset tuotteet" ja "Laske ei-alennuskelpoiset tuotteet raja-arvon suhteen". Jos nämä ominaisuudet ovat käytössä, nimike, joka ei ole oikeutettu mihinkään alennukseen, voi silti auttaa hyväksymään alennustapahtuman, mutta nimike, jolle ei ole oikeutta, ei saa alennusta. 
+> 
+> Jos esimerkiksi luot yhdistelmäalennuksen, jossa on kaksi riviä A ja B, jossa asiakkaan tulee saada 10 %:n alennus molemmista nimikkeistä, mutta nimikkeen A konfiguraatiossa on "Estä kaikki alennukset" -valintaruutu, tämä yleensä lopettaisi nimikkeen A sisällyttämisen alennukseen. Jos kuitenkin Laske ei-alennuskelpoiset tuotteet -ominaisuus on käytössä, nimikettä A voidaan käyttää yhdistelmäalennuksen hyväksymiseen, mutta 10 %:n alennus koskee vain nimikettä B. Vastaava logiikka koskee raja-alennusta. 
+>
+> "Laske ei-alennuskelpoiset tuotteet raja-arvon suhteen" -ominaisuudessa on kuitenkin lisätoiminto verrattuna yhdistelmäalennusten "Laske ei-alennuskelpoiset tuotteet" -ominaisuuteen. Jos raja-alennus on käytössä ja jos jollain nimikkeellä on voimassa oleva alennus, joka estää nimikettä muista alennuksista, nimikkeelle maksettava hinta täyttää raja-arvon, mutta tämä nimike ei saa lisäalennusta.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

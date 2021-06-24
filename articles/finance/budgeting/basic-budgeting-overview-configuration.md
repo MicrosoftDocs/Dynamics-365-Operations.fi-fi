@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 9ae13ce4038346cd5b101b5c40fe3b7c5e617fbf
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960046"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187937"
 ---
 # <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960046"
 
 Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 
-<a name="overview"></a>Yleiskuvaus
---------
+## <a name="overview"></a>Yleiskuvaus
 
 Yrityksen hyväksyttyä budjettia ylläpidetään tiedostossa, joka tunnetaan nimellä *budjettitapahtuma*. Budjetin rekisterin merkintäasiakirjan rivejä kutsutaan *budjettitilin* tapahtumiksi, ja ne sisältävät taloushallinnon dimensiotiedot, päivämäärät ja summat hyväksytystä budjetista. Budjettirekisterin tapahtuma-asiakirja integroidaan taloushallinnon perusraportteihin ja kyselysivuihin, joissa kirjanpidon summia verrataan budjettisummiin. 
 

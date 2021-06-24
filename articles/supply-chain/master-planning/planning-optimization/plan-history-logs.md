@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1726d127883f9849fe87888134c0c174377ecf2b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7bba084b03f8698c8bf31d171d5e4e486ed06ad
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813024"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187244"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Suunnitelman historia- ja suunnittelulokien tarkasteleminen
 
@@ -31,19 +31,17 @@ Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 Supply Chain M
 
 Voit tarkastella suunnitelman historiaa avaamalla suunnitelman valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Suunnitelmat** \> **Pääsuunnitelmat** ja sitten **Historia**. Historiatiedoissa on luettelo kaikista valitun suunnitelman töistä. Luettelo sisältää valmiit ja aktiiviset työt.
 
-Töiden alkamisajan ja tilan lisäksi voit tarkastella tietyn työn lokia. Loki sisältää lisätietoja ja varoituksia. Kaikilla töillä ei ole lokia. Voit tarkastella työn lokia valitsemalla **Loki**.
+Suunnittelun optimoinnin pääsuunnittelun ajojen töiden historia sisältää enintään 60 tietuetta pääsuunnitelmaa kohden. Kun suoritat uuden pääsuunnittelun laskennan, tämän suunnitelman varhaisin historiatietue poistetaan.
+
+Töiden alkamisajan ja tilan lisäksi voit tarkastella tietyn työn lokia. Loki sisältää lisätietoja ja varoituksia. Kaikilla töillä ei ole lokia. Voit tarkastella työn lokia valitsemalla **Loki**. Lokimerkinnät tallennetaan vain 30 päivän ajan työn valmistumispäivämäärästä sen jälkeen, kun ne poistetaan automaattisesti.
 
 ## <a name="related-resources"></a>Liittyvät resurssit
 
-[Suunnittelun optimoinnin yleiskuvaus](planning-optimization-overview.md)
-
-[Suunnittelun optimoinnin aloittaminen](get-started.md)
-
-[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
-
-[Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
-
-[Suunnittelutyön peruuttaminen](cancel-planning-job.md)
+- [Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
+- [Suunnittelun optimoinnin aloittaminen](get-started.md)
+- [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
+- [Suodattimien käyttäminen suunnitelmaan](plan-filters.md)
+- [Suunnittelutyön peruuttaminen](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

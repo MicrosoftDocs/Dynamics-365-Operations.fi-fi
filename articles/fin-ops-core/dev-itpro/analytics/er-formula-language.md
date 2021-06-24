@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753261"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223983"
 ---
 # <a name="electronic-reporting-formula-language"></a>Sähköisen raportoinnin kaavakieli
 
@@ -38,13 +38,13 @@ ER-lausekkeet voivat sisältää joitakin seuraavia elementtejä tai kaikki seur
 - [Polut](#Paths)
 - [Toiminnot](#Functions)
 
-## <a name=""></a><a name="Constants">Vakiot</a>
+## <a name="constants"></a><a name="Constants"></a>Vakiot
 
 Voit käyttää lausekkeiden suunnittelussa tekstivakioita ja numeerisia vakioita (arvoja, joita ei lasketa). Esimerkiksi lauseke `VALUE ("100") + 20` käyttää numeerista vakiota **20** ja merkkijonovakiota **"100"** ja se palauttaa numeerisen arvon **120**.
 
 ER-kaavojen suunnittelutoimintoa tukee ohjausjaksoja. Niinpä voitkin määrittää lausekkeen merkkijonosta, jota on käsiteltävä eri tavalla. Lauseke `"Leo Tolstoy ""War and Peace"" Volume 1"` palauttaa esimerkiksi tekstimerkkijonon **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name=""></a><a name="Operators">Operaattorit</a>
+## <a name="operators"></a><a name="Operators"></a>Operaattorit
 
 Seuraavassa taulukossa on aritmeettisia operaattoreita, joita voi käyttää matemaattisten perusoperaattoreiden, kuten lisäyksen, vähennyksen sekä kerto- ja jakolaskun suorittamiseen.
 
@@ -88,9 +88,9 @@ Järjestys, jossa yhdistelmälausekkeen osat lasketaan, on tärkeä. Esimerkiksi
 
 Jos lausekkeessa on useita peräkkäisiä operaattoreita, joilla on sama tärkeysjärjestys, kyseiset operaattorit suoritetaan vasemmalta oikealle. Esimerkiksi lauseke `1 + 6 / 2 \* 3 > 5` palauttaa arvon **tosi**. Käyttämällä sulkeita lausekkeiden haluttu laskentajärjestys voidaan ilmaista selkeästi, mikä myös helpottaa lausekkeiden lukemista ja ylläpitämistä.
 
-## <a name=""></a><a name="References">Viitteet</a>
+## <a name="references"></a><a name="References"></a>Viitteet
 
-Kaikkia nykyisen ER-komponentin tietolähteitä, jotka ovat käytettävissä lausekkeen suunnittelun yhteydessä, voidaan käyttää nimettyinä viitteinä. Nykyinen ER-osa voi olla mallin yhdistämismääritys tai muoto. Esimerkiksi nykyinen ER-mallin määritys sisältää **ReportingDate**-tietolähteen, joka palauttaa *DateTime*-tietotyypin arvon. Jotta kyseinen arvo saadaan muotoiltua oikein luotavassa asiakirjassa, siihen voidaan viitata lausekkeessa seuraavasti: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Kaikkia nykyisen ER-komponentin tietolähteitä, jotka ovat käytettävissä lausekkeen suunnittelun yhteydessä, voidaan käyttää nimettyinä viitteinä. Nykyinen ER-osa voi olla mallin yhdistämismääritys tai muoto. Esimerkiksi nykyinen ER-mallin määritys sisältää **ReportingDate**-tietolähteen, joka palauttaa [*Päivämäärä/aika*](er-formula-supported-data-types-primitive.md#datetime)-tietotyypin arvon. Jotta kyseinen arvo saadaan muotoiltua oikein luotavassa asiakirjassa, siihen voidaan viitata lausekkeessa seuraavasti: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Kaikkien niiden viittaavan tietolähteen nimen merkkien, jotka eivät ole kirjaimia, edessä on oltava edessään puolilainausmerkki ('). Kaikilla viittaavan tietolähteen nimillä, jotka sisältävät ainakin yhden merkin, joka ei ole kirjain, on oltava puolilainausmerkkien sisällä. Näitä muita kuin kirjaimia voivat olla esimerkiksi välimerkit tai muut kirjoitetut merkit. Seuraavassa on muutamia esimerkkejä:
 
@@ -99,7 +99,7 @@ Kaikkien niiden viittaavan tietolähteen nimen merkkien, jotka eivät ole kirjai
 
 Jos sovelluksen tietolähteiden menetelmillä on parametreja, kyseiset menetelmät kutsutaan seuraavalla syntaksilla:
 
-- Jos **Järjestelmä**-tietolähteen, jossa *Merkkijono*-tietotyypin parametri on **EN-US**, **isLanguageRTL**-menetelmään on viitattava ER-lausekkeessa seuraavasti: `System.isLanguageRTL("EN-US")`.
+- Jos **Järjestelmä**-tietolähteen, jossa [*Merkkijono*](er-formula-supported-data-types-primitive.md#string)-tietotyypin parametri on **EN-US**, **isLanguageRTL**-menetelmään on viitattava ER-lausekkeessa seuraavasti: `System.isLanguageRTL("EN-US")`.
 - Lainausmerkit eivät ole pakollisia, kun menetelmän nimessä on vain aakkosnumeerisia merkkejä. Niitä on kuitenkin käytettävä taulun menetelmässä, jos hakasulkeet sisältyvät nimeen.
 
 Kun **Järjestelmä**-tietolähde lisätään ER-yhdistämismääritykseen, jossa on viittauksena **Yleinen**-sovellusluokka, lauseke `System.isLanguageRTL("EN-US ")` palauttaa *totuusarvon* **EPÄTOSI**. Muokattu lauseke `System.isLanguageRTL("AR")` palauttaa *totuusarvon* **tosi**.
@@ -107,9 +107,9 @@ Kun **Järjestelmä**-tietolähde lisätään ER-yhdistämismääritykseen, joss
 Voit rajoittaa tapaa, jolla arvot siirretään tämän tyyppisen menetelmän parametreihin:
 
 - Vain vakioita voi siirtää tämän tyyppisiin menetelmiin. Vakioiden arvot määritetään suunnitteluvaiheessa.
-- Tämän tyypin parametrit tukevat alkeellisia (perus) tietotyyppejä. Alkukantaisia tietotyyppejä ovat esimerkiksi *kokonaisluku*, *reaaliluku*, *totuusarvo* ja *merkkijono*.
+- Tämän tyypin parametrit tukevat [alkeellisia](er-formula-supported-data-types-primitive.md) (perus)tietotyyppejä. Alkukantaisia tietotyyppejä ovat esimerkiksi *kokonaisluku*, *reaaliluku*, *totuusarvo* ja *merkkijono*.
 
-## <a name=""></a><a name="Paths">Polut</a>
+## <a name="paths"></a><a name="Paths"></a>Polut
 
 Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaan käyttää valittaessa tietolähteen tietty primitiivinen elementti. Piste (.) -merkkiä käytetään erottamaan rakenteisen tietolähteen yksittäiset elementit. Esimerkiksi nykyinen ER-mallin määritys sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentät, joista kumpikin palautta numeerisia arvoja. Tämän vuoksi voit suunnitella seuraavan lausekkeen laskutettavan summan laskemista varten: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. `InvoiceTransactions.AmountDebit`-rakenne tässä lausekkeessa on polku, jota käytetään **AmountDebit**-kentän **InvoiceTransactions**-tietolähteen *tietueluettelo*-tyyppiin pääsemiseksi.
 
@@ -129,7 +129,7 @@ Jäljellä oleva osa absoluuttisesta polusta näkyy myös [ER kaavaeditorissa](g
 
 Lue lisätietoja kohdasta [Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Toiminnot</a>
+## <a name="functions"></a><a name="Functions"></a>Funktiot
 
 ER:n sisäänrakennettuja funktioita voidaan käyttää ER-lausekkeissa. Kaikkia lausekekontekstin (kuten nykyinen ER-mallin määritys tai ER-muoto) tietolähteitä voidaan käyttää kutsufunktioiden parametreina kutsufunktioargumenttien luettelon mukaisesti. Myös vakioita voidaan käyttää kutsufunktioiden parametreina. Esimerkiksi nykyinen ER-mallin määritys sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentät, joista kumpikin palautta numeerisia arvoja. Voit siis laskea laskutetun määrän suunnittelemalla seuraavan lausekkeen, jossa käytetään sisäänrakennettua ER-pyöristystoimintoa: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Sähköisen raportoinnin toimintoluettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
 
+[Tuetut primitiiviset tietotyypit](er-formula-supported-data-types-primitive.md)
+
+[Tuetut yhdistelmätietotyypit](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c48c4737c260004ea44109cfb2a0478a3e8653cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825864"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190061"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-siirron taulun tuki viivakoodinlukijoille
 
@@ -29,8 +29,7 @@ ms.locfileid: "5825864"
 
 Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskannerista kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen.
 
-<a name="registration-modes"></a>Rekisteröintitilat
-------------------
+## <a name="registration-modes"></a>Rekisteröintitilat
 
 **Skannerin rekisteröinti** -pikavälilehdessä voit valita rekisteröintitilan, joka ohjaa toimintoa, kun skannaat kanban-kortin numeron tai kirjoitat numeron manuaalisesti Kanban-kortin numero -kenttään.
 
@@ -42,8 +41,7 @@ Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskann
 | Valitse                | Rekisteröi Kanban-kortin numeron ja valitsee viitatun työn automaattisesti Kanban-luettelosta. |
 
  
-<a name="registration-mode-select"></a>Rekisteröintitilan valinta
-------------------------
+## <a name="registration-mode-select"></a>Rekisteröintitilan valinta
 
 Kun käytät viivakoodinlukijaa työn valintaan, kanban-taulun näyttötila muuttuu. Tässä tilassa seuraavien ehtojen on täytyttävä:
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 037b6de9c23947b8b67faa12f2fc64afa089949c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811771"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190109"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Tuoterakenteet ja kaavat
 
@@ -29,8 +29,7 @@ ms.locfileid: "5811771"
 
 Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
 
-<a name="bills-of-materials"></a>Tuoterakenteet
-------------------
+## <a name="bills-of-materials"></a>Tuoterakenteet
 
 Tuoterakenne (BOM) määrittää komponentit, joita tarvitaan, jotta tuote voidaan valmistaa. Komponentit voivat olla raaka-aineita, puolivalmiita tuotteita tai ainesosia. Joissakin tapauksissa palveluihin voidaan viitata tuoterakenteessa. Kuitenkin tuoterakenteet kuvailevat tyypillisesti tarvittavia *materiaaliresursseja*.  
 

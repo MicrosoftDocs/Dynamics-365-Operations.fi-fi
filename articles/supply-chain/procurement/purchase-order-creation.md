@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909153"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188242"
 ---
 # <a name="create-purchase-orders"></a>Ostotilausten luominen
 
@@ -80,8 +80,7 @@ Ostotilauksen voidaan määrittää edellyttämään, että budjettirahoitus koh
 
 Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehkä pyytämään lisätietoja tuotteista tai palveluista tai sinun on ehkä hankittava kulutuslupa. Tilauksen pidättämiseen on useita tapoja. Voit esimerkiksi odottaa tilauksen vahvistusta. Vaihtoehtoisesti, jos käytössä on muutoksenhallinnan työnkulku, tilausta ei lähetetä hyväksyttäväksi. Jos tietyn toimittajan kaikki tilauksen on estettävä, voit merkitä toimittajan **pitoon** päätoimittajassa käsiteltäväksi. Myös tietyt tilanteet voivat estää tilauksen käsittelyn. Käsittely voidaan esimerkiksi estää, jos luottorajat on ylitetty tai tarvittava budjettirahoitus ei ole käytettävissä.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 

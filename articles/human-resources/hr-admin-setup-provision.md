@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df06df63c28ca99bb9cb95e99b3498f70c54d97f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053656"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193721"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -56,7 +56,7 @@ Luo ensin LCS-projekti, jotta voit hallinnoida Human Resources -ympäristöjä L
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index) samalla tilillä, jota käytit tilatessasi Human Resources -sovelluksen.
 
    > [!NOTE]
-   > Onnistuneen valmistelun varmistamiseksi Human Resources -ympäristön valmisteluun käytetyn tilin on oltava määritettynä joko **Järjestelmänvalvoja**- tai **Järjestelmän mukauttaja** -roolille Power Apps -ympäristössä, joka liittyy Human Resources -ympäristöön. Kohdassa [Käyttäjäsuojauksen määrittäminen resursseille](https://docs.microsoft.com/power-platform/admin/database-security) on lisätietoa käyttöoikeusroolien määrittämisestä käyttäjille Power Platformissa.
+   > Onnistuneen valmistelun varmistamiseksi Human Resources -ympäristön valmisteluun käytetyn tilin on oltava määritettynä joko **Järjestelmänvalvoja**- tai **Järjestelmän mukauttaja** -roolille Power Apps -ympäristössä, joka liittyy Human Resources -ympäristöön. Kohdassa [Käyttäjäsuojauksen määrittäminen resursseille](/power-platform/admin/database-security) on lisätietoa käyttöoikeusroolien määrittämisestä käyttäjille Power Platformissa.
 
 2. Luo projekti valitsemalla plusmerkki (**+**).
 

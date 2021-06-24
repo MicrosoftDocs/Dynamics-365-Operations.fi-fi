@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 9707a1f8a90a615dbc8f34f4bb1f05d34d8fe7f3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908229"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188407"
 ---
 # <a name="mobile-app-home-page"></a>Mobiilisovelluksen aloitussivu
 
@@ -27,8 +27,7 @@ ms.locfileid: "5908229"
 
 Tässä ohjeaiheessa käsitellään **Finance and Operations (Dynamics 365)** -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 
-<a name="overview"></a>Yleiskuvaus
---------
+## <a name="overview"></a>Yleiskuvaus
 
 Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää mobiililaitteilla. Kun IT-järjestelmänvalvoja ottaa mobiilityötilat käyttöön organisaatiossa, käyttäjät voivat kirjautua sisään sovellukseen ja aloittaa liiketoimintaprosessien käyttämisen heti mobiililaitteillaan. Mobiilisovellukseen sisältyvät seuraavat, tuottavuutta parantavat ominaisuudet:
 

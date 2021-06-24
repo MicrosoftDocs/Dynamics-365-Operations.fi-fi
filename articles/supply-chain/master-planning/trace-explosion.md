@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f2a50c5e30155c11d653601187c36cb385aa4a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75d994db80071c4ef9e23caf24cb4cadbc1473ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839194"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189889"
 ---
 # <a name="use-tracing-for-explosion"></a>Jäljityksen käyttö hajotuksessa
 
@@ -38,8 +38,7 @@ Kun otat jäljityksen käyttöön, voit tarkastella tietoja tietyn tilauksen haj
 
 Voit tarkastella tietoja tulevasta ja valitun tilauksen toiminnoista. Jäljitystiedot ovat saatavilla **Hajotus**-sivun **Selitys**-välilehden yläruudussa. Jäljitys tapahtuu, kun tilaus hajotetaan. Aloita tilauksen jäljitys valitsemalla ensin **Päivitys** ja sitten **Ota jäljitys käyttöön** -valintaruutu. Voit hakea lokista tietoja **Etsi teksti** -kentän avulla. Hakutulokset näkyvät korostettuina puurakenteessa.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Pääsuunnitelmien yleiskatsaus](master-plans.md)
 

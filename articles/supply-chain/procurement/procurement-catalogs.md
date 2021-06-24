@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b72ccbcec1e3796917c041def19f3985668e7e1e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ac31634844ea5d82f795b2262d17a6be3a926c2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807917"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190133"
 ---
 # <a name="procurement-catalogs-overview"></a>Hankintaluettelojen yleiskatsaus
 
@@ -66,8 +66,7 @@ Päivitykset julkaistaan automaattisesti tai manuaalisesti riippuen asetuksesta,
 -   **Molemmat** – jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **staattinen**, se on päivitettävä manuaalisesti luokkien päivityksen yhteydessä. Jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **Dynaaminen**, se päivitetään automaattisesti, kun tiedot muuttuvat.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Määritä hankintaluokkahierarkia](tasks/set-up-procurement-category-hierarchy.md)
 

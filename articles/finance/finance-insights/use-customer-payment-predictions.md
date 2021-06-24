@@ -2,7 +2,7 @@
 title: Asiakkaan maksuennusteiden käyttäminen (esiversio)
 description: Tässä ohjeaiheessa kerrotaan edellytyksistä ja vaiheista, jotka Finance Insightsin kokeiluversion käyttäminen edellyttää.
 author: ShivamPandey-msft
-ms.date: 11/16/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 21c5236b6d7e7ce7bd968f1511723a3646fe7a29
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897789"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186561"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Asiakkaan maksuennusteiden käyttäminen (esiversio)
 
@@ -103,10 +103,5 @@ Jos et ole tyytyväinen tarkkuuteen, avaa AI Builder -laajennuskokemus valitsema
 Finance Insightsin julkinen esiversio on saatavilla käyttöönotoissa kokeilua varten Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
 
 Julkisen esiversion ominaisuudet voidaan ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei voi siirtää tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Tietosuojatiedot
-
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

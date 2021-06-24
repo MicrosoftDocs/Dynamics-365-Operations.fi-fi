@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826126"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188381"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826126"
 
 Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 
-<a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
------------------------
+## <a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
 
 Toimittajan, joka toimittaa EU:n sisällä tavaroita tai palveluita Euroopan Unionin (EU) sisällä sijaitseville yrityksille, on tehtävä ilmoitus EU-myynnistä (EU myyntiluettelo, ESL). Yleensä ESL on toimitettava veroviranomaisille viimeistään ESL:n kattaman ajanjakson päättymisen jälkeisen kuukauden viimeisenä päivänä. Toimittajan on ilmoitettava ESL:llä arvonlisäverotunnistenumeronsa ja sen on myös ilmoitettava asiakkaittain seuraavat tiedot:
 

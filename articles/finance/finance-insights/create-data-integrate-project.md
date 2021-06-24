@@ -2,7 +2,7 @@
 title: Tietojen integrointiprojektin luominen (esiversio)
 description: Tässä ohjeaiheessa kerrotaan, miten tietojen integrointiprojekti luodaan.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
-ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
+ms.openlocfilehash: 59f85c64ea7b1f539a245e08b76bd6a34797b0ca
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5867444"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186465"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Tietojen integrointiprojektin luominen (esiversio)
 
@@ -67,10 +67,5 @@ Tässä ohjeaiheessa kerrotaan, miten tietojen integrointiprojekti luodaan.
 
 > [!NOTE]
 > Jos pakolliset entiteetit eivät näy CDS:ssä, siirry kohtaan **Luotonvalvonta > Asetukset > Finance Insights > Finance Insights -parametrit**. Ota käyttöön Asiakasmaksun ennusteet -toiminto ja ja valitse **Luo ennustemalli**-painike. Kun tekoälymallin käyttöönotto on päättynyt (onnistunut tai epäonnistunut), integroinnin luomiseen tarvittavat CDS-entiteetit otetaan käyttöön CDS:ssä.
-
-## <a name="privacy-notice"></a>Tietosuojatiedot
-
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

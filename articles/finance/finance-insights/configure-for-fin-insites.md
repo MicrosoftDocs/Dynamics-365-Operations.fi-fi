@@ -1,8 +1,8 @@
 ---
-title: Finance Insightsin määritys (esiversio)
-description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
+title: Finance Insightsin määritys – versiot 10.0.19 asti
+description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää (versioon 10.0.19 asti).
 author: ShivamPandey-msft
-ms.date: 11/25/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941223"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186417"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Finance Insightsin määritys (esiversio)
 
@@ -30,6 +30,9 @@ ms.locfileid: "5941223"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+> [!NOTE]
+> Seuraavat Finance Insightsin määrittämisen menetelmät ovat voimassa Microsoft Dynamics 365 Financelle versioon 10.0.19 asti. Jos haluat määrittää Finance Insightsin versiolle 10.0.20 tai sitä myöhemmälle versiolle, katso [Finance Insightsin (esiversio) määritys versiosta 10.0.20 eteenpäin](configure-for-fin-insites-PubPrvw.md).
+
 Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Microsoft Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 
 ## <a name="deploy-dynamics-365-finance"></a>Dynamics 365 Financen käyttöönotto
@@ -38,11 +41,11 @@ Ota ympäristöt käyttöön näiden ohjeiden avulla.
 
 1. Luo tai päivitä Dynamics 365 Finance -ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Ympäristö edellyttää, että käytössä on sovellusversio 10.0.11/Platform update 35 -päivitys tai uudempi päivitys.
 2. Ympäristön on oltava korkean käytettävyyden ympäristö eristysympäristössä. (Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Jos käytössä ovat Contoso-esittelytiedot, asiakkaan maksuennusteiden, kassavirtaennusteiden ja budjettiennusteiden ominaisuuksien käyttäminen edellyttää lisämallitietoja. 
+3. Jos olet konfiguroimassa Finance Insightsia eristysympäristössä, tuotantotiedot on ehkä kopioitava tähän ympäristöön, jotta ennusteet toimisivat. Ennustemallissa käytetään useiden vuosien tietoja ennusteiden luomiseen. Contoso-demotiedot eivät sisällä tarpeeksi historiatietoja ennustemallin kouluttamista varten. 
 
 ## <a name="configure-dataverse"></a>Määritä Dataverse
 
-Seuraavia ohjeita noudattamalla voit määrittää Dataversen Finance insightsille.
+Seuraavia ohjeita noudattamalla voit määrittää Dataversen Finance Insightsille.
 
 1. Avaa ympäristösivu LCS:ssä ja tarkista, että **Power Platform Integrointi** -osa on jo asennettu.
     1. Jos se on jo asennettu, Dataverse-ympäristön nimi, joka on linkitetty Dynamics 365 Finance -ympäristöön, pitäisi olla luettelossa. Kopioi Dataverse-ympäristön nimi.

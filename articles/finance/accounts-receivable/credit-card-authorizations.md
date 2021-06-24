@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837126"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190306"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Luottokorttien määritys, varmennus ja sieppaaminen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837126"
 
 Tässä artikkelissa on yhteenveto luottokortin varmennuksesta Microsoft Dynamics 365 Financessa. Artikkeli sisältää tietoja maksupalvelun määrittämisestä, luottokortin lisäämisestä myyntitilaukseen ja varmennuksen mitätöinnistä.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Luottokorttien maksupalvelun määrittäminen
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Luottokorttien maksupalvelun määrittäminen
 
 Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava maksupalvelu Maksupalvelut-sivulla. Maksupalvelu toimii välittäjänä yrityksesi ja asiakkaan korttimaksut käsittelevän pankin välillä. Sinun on käytettävä luottokorttimaksun tarjoajaa, joka on saatavilla Maksuyhdistin-kentässä ja määrittää tili kyseiselle palveluntarjoajalle. Sinun on sitten määritettävä muut asetukset Maksupalvelut-sivulla, määritettävä luottokorttityypit American Express, Discover, MasterCard ja Visa -korteille Luottokorttityypit-sivulla ja aktivoitava palveluntarjoaja oletuspalveluntarjoajaksi. Sinun on myös noudatettava seuraavia vaiheita:
 -   Määritä luottokortin varmennuksessa käytettävät parametrit Myyntireskontran parametrit -sivulla.
@@ -39,13 +38,11 @@ Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava m
 ## <a name="adding-a-new-credit-card"></a>Uuden luottokortin lisääminen
 Voit luoda uudet luottokorttitietueet Asiakkaat-sivulla kohdasta Asiakas > Määritä > Luottokortti. Voit myös luoda luottokorttitietueita kirjatessasi myyntitilauksia Myyntitilaus-sivulla kohdasta Hallinta > Asiakas > Luottokortti > Rekisteröi.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Luottokortin lisääminen myyntitilaukseen
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Luottokortin lisääminen myyntitilaukseen
 
 Voit lisätä luottokortin myyntitilaukseen valitsemalla luottokortin Myyntitilaus-sivun Hinnat ja alennukset -pikavälilehden luottokorttihausta. Varmennusprosessin voit aloittaa valitsemalla toimintoruudun Hallinta-välilehdestä kohdan Luottokortti ja Varmenna.
 
-<a name="authorizing-a-credit-card"></a>Luottokortin varmennus
--------------------------
+## <a name="authorizing-a-credit-card"></a>Luottokortin varmennus
 
 Kun luottokortti varmennetaan, kortin numero ja kortin haltijan henkilöllisyys varmennetaan ja käytettävissä oleva luottosaldo tarkistetaan. Voit myös tarkistaa kortin tarkistusnumeron ja kortinhaltijan osoitteen. Laskun summa vähennetään tämän jälkeen asiakkaan käytettävissä olevasta luottosaldosta. Maksupalvelu lähettää tiedon luottokortin hyväksymisestä tai hylkäämisestä. Kun myyntitilaus laskutetaan, laskun summa veloitetaan (siepataan) luottokortilta.
 

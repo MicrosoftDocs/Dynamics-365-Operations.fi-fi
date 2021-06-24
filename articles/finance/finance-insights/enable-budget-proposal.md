@@ -2,7 +2,7 @@
 title: Budjettiehdotusten käyttöönotto (esiversio)
 description: Tässä ohjeaiheessa kerrotaan, miten budjettiehdotustoiminto otetaan käyttöön Finance Insightsissa.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e90a1a2f2a8e7808f03ce9a6ee58c027bd48d8d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 948a3e051e5964c5c773cefd90c8587cf833a450
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818701"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222531"
 ---
 # <a name="enable-budget-proposals-preview"></a>Budjettiehdotusten käyttöönotto (esiversio)
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kerrotaan, miten budjettiehdotustoiminto otetaan käyttöö
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
 
     > [!NOTE]
-    > Jos Microsoft Dynamics 365 Finance -käyttöönotto on Service Fabric -käyttöönotto, voit ohittaa tämän vaiheen. Finance Insightsin ryhmä on todennäköisesti jo ottanyt sen käyttöön. Jos ominaisuus ei ole **Toimintojen hallinta** -työtilassa tai jos sen käyttöönotossa on ongelmia, lähetä viesti [Finance Insights -sovelluksen esiversioryhmälle](mailto:fiap@microsoft.com).
+    > Ohita tämä vaihe, jos käytössä on versio 10.0.20 tai myöhempi versio tai jos käytössä on Service Fabric -toteutus. Finance Insightsin ryhmä on todennäköisesti jo ottanyt sen käyttöön. Jos et näe ominaisuutta **Toimintojen hallinta** -työtilassa tai jos sen käyttöönotossa on ongelmia, ota yhteyttä käyttämällä osoitetta <fiap@microsoft.com>.
 
 2. Avaa **Toimintojen hallinta** -työtila ja toimi seuraavasti:
 
@@ -42,9 +42,5 @@ Tässä ohjeaiheessa kerrotaan, miten budjettiehdotustoiminto otetaan käyttöö
     2. Hae **budjettiehdotus** ja ota toiminto käyttöön.
 
 3. Siirry kohtaan **Budjetointi \> Asetukset \> Perusbudjetointi \> Budjettiehdotus (esiversio)** ja valitse **Ota toiminto käyttöön**.
-
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

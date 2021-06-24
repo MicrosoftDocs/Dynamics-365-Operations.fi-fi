@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0df9177b63619787dba057e9aa532255e68bde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86fbc81de8ba59f0782bd9af5b50bfcf45d5621a
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811867"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193042"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Ajan kohdistaminen työnipun töihin
 
@@ -80,7 +80,7 @@ Seuraavassa taulukossa esitetään kaava, jolla kohdistettu aika lasketaan. Kaav
 ## <a name="net-time-allocation-key"></a>Nettoaika-kohdistusavain
 Seuraavassa taulukossa esitetään kaava, jolla kohdistettu aika lasketaan. Kaava on seuraava: Laskettu raporttikohtainen aika = nipun aika ÷ töiden määrä
 
-|                              | 09:00–10:00 (1 tunti) | 10:00–11:00 (1 tunti) | 11:00–13:00 (2 tuntia) | 13:00–15:00 (2 tuntia) | Kohdistettu aika |
+| Esimerkki                       | 09:00–10:00 (1 tunti) | 10:00–11:00 (1 tunti) | 11:00–13:00 (2 tuntia) | 13:00–15:00 (2 tuntia) | Kohdistettu aika |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Nipun työmäärä | 1                    | 3                    | 2                     | 1                     | Ei käytettävissä |
 | Työ 1                        | 1 ÷ 1 = 1 tunti       | 1 ÷ 3 = 0.33 tuntia    | Ei käytettävissä        | Ei käytettävissä        | 1,33 tuntia     |

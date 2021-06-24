@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815353"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189370"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Arvonlisäveron laskentatavat Alkuperä-kentässä
 
@@ -52,8 +52,7 @@ Jos nettosumma on 10,00, niin MAKSU 1 on 1,00 (10,00 x 10 %) ja MAKSU 2 = 2,00 (
 | Tapahtumassa voi käyttää vain yhtä verokoodia, jossa Alkuperä = Prosenttia bruttosummasta. Jos tapahtumalle määritetään useita tällaisia verokoodeja, näyttöön tulee virhesanoma, jonka mukaan arvonlisäveroa ei voi laskea. |
 
 
-<a name="percentage-of-sales-tax"></a>Arvonlisäveroprosentti
------------------------
+## <a name="percentage-of-sales-tax"></a>Arvonlisäveroprosentti
 
 Kun valitset Alkuperä-kentästä Arvonlisäveroprosentti-vaihtoehdon, arvonlisävero lasketaan prosenttina Arvonlisäveron arvonlisävero -kentässä valitusta arvonlisäverosta. Arvonlisäveron arvonlisävero -kentästä valittu arvonlisävero lasketaan ensin. Toinen arvonlisävero lasketaan sitten ensimmäisen arvonlisäverosumman perusteella.
 ### <a name="example"></a>Esimerkki
@@ -119,8 +118,7 @@ Asiakirjan/kirjauskansion asetukseksi on määritetty Summat sisältävät arvon
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Arvonlisäveroprosentit Alv-rajan peruste- ja Laskentatapa-kenttien perusteella](marginal-base-field.md)
 

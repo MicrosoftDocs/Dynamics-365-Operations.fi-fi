@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16b05bfe2a8deec365bdccf56ddbb375e9c4becd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817866"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190013"
 ---
 # <a name="operations-scheduling"></a>Työvaiheiden ajoitus
 
@@ -74,8 +74,7 @@ Kun suoritat työvaiheen ajoituksen, voit peruuttaa tiettyjä reitityksen osia. 
 ## <a name="finite-materials"></a>Rajallinen materiaali
 Jos käsittelet rajallista materiaalia, ajoitukseen vaikuttaa myös tuotantoon tarvittavien materiaalien saatavuus. Jos tuotantoon ei ole riittävästi komponentteja käytettävissä, tuotanto voi viivästyä. Ajoitus voi perustua myös materiaalien käyttöön määrittämällä tuotannolle välttämättömät materiaalit. Kun optimoit sekä resurssikapasiteetin että materiaalien saatavuuden, tuotanto lasketaan näiden rajoitusten perusteella. Tuotantotilausta ei voi ajoittaa alkamaan ennen kuin kapasiteetti ja materiaalit ovat käytettävissä samaan aikaan ja vaaditun määrän mukaisesti.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Työvaiheen ajoitusvaihtoehdot](operation-scheduling-options.md)
 

@@ -2,7 +2,7 @@
 title: Asiakkaan maksuennusteet (esiversio)
 description: Tässä ohjeaiheessa kerrotaan maksuennusteiden ominaisuudesta. Sen avulla saat lisätietoja asiakkaan tyypillisistä maksutavoista. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit ehkä aloitetaan normaalia aikaisemmin.
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 4151b56b8b385e29d3926dc7e245728158cbcd34
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898009"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186393"
 ---
 # <a name="customer-payment-predictions-preview"></a>Asiakkaan maksuennusteet (esiversio)
 
@@ -72,10 +72,5 @@ Aiemmin on yleensä ollut vaikeaa kehittää ja käyttää tekoälyratkaisuja. T
 Finance Insightsin julkinen esiversio on saatavilla käyttöönotoissa kokeilua varten Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
 
 Julkisen esiversion ominaisuudet tulee ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei ehkä siirretä tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Tietosuojatiedot
-
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

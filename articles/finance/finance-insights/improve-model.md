@@ -2,7 +2,7 @@
 title: Ennustemallin parantaminen (esiversio)
 description: Tässä ohjeaiheessa kuvataan toimintoja, joiden avulla voit parantaa ennustemallien suorituskykyä.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 197aba724ea68ef79c2d16028c23533d952329a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810006"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186639"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Ennustemallin parantaminen (esiversio)
 
@@ -77,9 +77,5 @@ Seuraavaa kenttää ei saa valita koulutukselle:
 Suodattimet eivät tällä hetkellä tue asiakkaan maksuennusteen skenaariota. Valitse tämän vuoksi **Ohita tämä vaihe** ja jatka Yhteenveto-sivulle.
 
 [![Kohdistusmalli ja suodattimet](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
-
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

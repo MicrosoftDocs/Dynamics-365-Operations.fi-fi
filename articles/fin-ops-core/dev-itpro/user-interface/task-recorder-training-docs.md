@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744160"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188072"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 
@@ -31,8 +31,7 @@ Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväo
 > [!IMPORTANT]
 > Vaikka voit tallentaa omia Dynamics 365 Human Resources -tehtäväoppaita, et voi tallentaa niitä tällä hetkellä BPM- eli liiketoimintaprosessin mallintajakirjastoon tai avata niitä Ohje-ruudusta. Voit tallentaa ne paikallisesti tai verkkosijaintiin sekä avata ja toistaa ne tehtävien tallennustoiminnolla. 
 
-<a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
--------------------------
+## <a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
 
 Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöliittymässä suoritetut toiminnot. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
 
@@ -111,8 +110,7 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Ohjejärjestelmä](../../fin-ops/get-started/help-overview.md)
 

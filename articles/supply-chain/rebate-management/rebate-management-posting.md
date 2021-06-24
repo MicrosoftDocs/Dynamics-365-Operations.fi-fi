@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020408"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216740"
 ---
 # <a name="rebate-management-posting-setup"></a>Ostohyvitysten hallinnan kirjausasetukset
 
@@ -43,7 +43,7 @@ Seuraavassa taulukossa kuvataan asetukset, jotka ovat käytettävissä kunkin os
 | kuvaus | Määritä profiilin kuvaus. |
 | Moduuli | Valitse profiiliin liitettyjen ostohyvitysten ja rojaltien tyyppi (*Asiakas* tai *Toimittaja*). |
 | Laji | Valitse profiilityyppi (*Ostohyvitys* tai *Rojalti*). |
-| Maksutyyppi | <p>Tämä kenttä määrittää kirjatun ostohyvityksen tuotoksen muodon.<p><p>Kun **Tyyppi**-kentän arvoksi on määritetty *Ostohyvitys*, seuraavat arvot ovat käytettävissä:</p><ul><li>*Ei mitään* – Oletuskirjaustyyppiä ei ole. Siksi tyyppi on määritettävä käsittelyn aikana.</li><li>*Maksa ostoreskontran avulla* – Ostohyvityksen kirjaaminen luo ostohyvityksen asiakkaassa määritetyn maksusuoritustoimittajan toimittajalaskun.</li><li>*Asiakkaan vähennykset* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li><li>*Veroalskun asiakkaan vähennykset* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan vapaatekstilasku.</li><li>*Kaupankäynnin kulut* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li><li>*Raportointi* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li></ul><p>Kun **Tyyppi**-kentän arvoksi on määritetty *Rojalti*, seuraavat arvot ovat käytettävissä:</p><ul><li>*Ei mitään* – Oletuskirjaustyyppiä ei ole. Siksi tyyppi on määritettävä käsittelyn aikana.</li><li>*Maksa ostoreskontran avulla* – Ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li><li>*Raportointi* – Ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li></ul><p>Lisätietoja on myöhemmässä [Maksutyypit](#payment-types)-osassa. |
+| Maksutyyppi | <p>Tämä kenttä määrittää kirjatun ostohyvityksen tuotoksen muodon.<p><p>Kun **Tyyppi**-kentän arvoksi on määritetty *Ostohyvitys*, seuraavat arvot ovat käytettävissä:</p><ul><li>*Maksa ostoreskontran avulla* – Asiakkaan ostohyvityksen kirjaaminen luo ostohyvityksen asiakkaassa määritetyn maksusuoritustoimittajan toimittajalaskun. Toimittajan ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li><li>*Asiakkaan vähennykset* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li><li>*Veroalskun asiakkaan vähennykset* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan vapaatekstilasku.</li><li>*Kaupankäynnin kulut* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li><li>*Raportointi* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li></ul><p>Kun **Tyyppi**-kentän arvoksi on määritetty *Rojalti*, seuraavat arvot ovat käytettävissä:</p><ul><li>*Maksa ostoreskontran avulla* – Ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li><li>*Raportointi* – Ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li></ul><p>Lisätietoja on myöhemmässä [Maksutyypit](#payment-types)-osassa. |
 | Yhtiö | Valitse yritys (oikeushenkilö), johon varaukset jaksotetaan ja joka maksaa vaatimukset. |
 
 ### <a name="payment-types"></a>Maksutyypit

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811358"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193902"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -165,7 +165,8 @@ Asiakkaat, jotka käyttävät taloushallinnon raportointia taloushallinnon konso
 - **Sujuva valuutan muunto** – Kun Financessa on tehty muutamia asetuksia, voit muuntaa taloushallinnon raportoinnin raportin yhdeksi määritetyistä raportointivaluutoista. Voit lisäksi määrittää rajoittamattoman määrän raportointivaluuttoja.
 - **Eliminointien kirjaaminen lähteessä** – Voit luoda ja tulostaa eliminointiraportin eliminointitapahtumien tarkistamista varten. Voit sitten kirjat uudet eliminoinnit tavallisina konsernin sisäisinä tapahtumina. Voit käyttää eliminointiyritystä missä tahansa tapahtumassa, jota et halua yrityksiin.
 
-## <a name="supported-consolidation-scenarios"></a>Tuetut konsolidointiskenaariot
+## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Financial Reportingin tuetut konsolidointiskenaariot
+
 Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioita:
 
 - Yksi- ja monitasoiset yritysten väliset konsolidoinnit

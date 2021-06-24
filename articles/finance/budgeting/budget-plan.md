@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822224"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188018"
 ---
 # <a name="budget-planning"></a>Budjettisuunnittelu
 
@@ -34,8 +34,7 @@ Tämän kurssin tavoite on tarjota Microsoft Dynamics 365 Financen toimintojen p
 - Budjettisuunnitelman asiakirjan tietojen oikaisu kohdistusten avulla
 - Budjettisuunnitelman asiakirjan tietojen muokkaaminen Excelissä 
 
-<a name="prerequisites"></a>Edellytykset 
-------------------
+## <a name="prerequisites"></a>Edellytykset 
 
 Tätä opasta varten sinulla on oltava Microsoft Dynamics 365 Finance -ympäristö, jossa on Contoson esittelytiedot, ja sinun on oltava esiintymän järjestelmänvalvoja. Älä käytä henkilökohtaista selaimen tilaa tällä kurssilla, vaan kirjaudu ulos muista selaimen tileistä jos tarvittaessa ja kirjaudu sisään järjestelmänvalvojan tunnistetiedoilla. Kun kirjaudut sisään, sinun **ON** valittava Pidä minut kirjautuneena -valintaruutu. Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut sisään sovellukseen käyttäen jotain muuta selainta kuin Internet Exploreria, järjestelmä kehottaa sinua sisäänkirjautumaan Excel-sovelluksen kautta. Kun valitset Kirjaudu sisään Excel-sovelluksessa, IE ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **ON** valittava Pidä minut sisäänkirjautuneena -valintaruutu. Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin välimuistin evästeet.
 

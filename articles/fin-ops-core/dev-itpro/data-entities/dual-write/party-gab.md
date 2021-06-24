@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937883"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216609"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -143,16 +143,22 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
 ## <a name="setup"></a>Luo perustiedot
 
-1. Asenna uusin versio (2.2.2.60 tai uudempi): [Kaksoiskirjoituksen sovellusorkestrointiratkaisu](https://aka.ms/dual-write-app).
+1. Avaa asiakasvuorovaikutussovelluksen ympäristö.
 
-2. Asenna [Kaksoiskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja](https://aka.ms/dual-write-gab).
+2. Asenna uusin versio (2.2.2.60 tai uudempi): [Kaksoiskirjoituksen sovellusorkestrointiratkaisu](https://aka.ms/dual-write-app).
 
-3. Pysäytä seuraavat yhdistämiset, koska niitä ei tarvita enää. Sen sijaan voit suorittaa `Contacts V2 (msdyn_contactforparties)`-kartan.
+3. Asenna [Kaksoiskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja](https://aka.ms/dual-write-gab).
+
+4. Avaa Finance and Operations -sovellus. Siirry tietojen hallintamoduuliin ja valitse Kaksoiskirjoitus-välilehti. Kaksoiskirjoitus-hallintasivu avautuu.
+
+5. Käytä molempia vaiheissa 2 ja 3 asennettuja ratkaisuja käyttäen [Käytä ratkaisua](link-your-environment.md) -toimintoa.
+
+6. Pysäytä seuraavat yhdistämiset, koska niitä ei tarvita enää. Sen sijaan voit suorittaa `Contacts V2 (msdyn_contactforparties)`-kartan.
 
     + CDS-yhteyshenkilöt V2 ja yhteyshenkilöt (viittaa asiakkaan yhteyshenkilöihin)
     + CDS-yhteyshenkilöt V2 ja yhteyshenkilöt (viittaa toimittajan yhteyshenkilöihin)
 
-4. Osapuolitoimintojen seuraavat yksiköiden yhdistämismääritykset päivitetään, joten uusin versio on otettava käyttöön näissä yhdistämismäärityksissä.
+7. Osapuolitoimintojen seuraavat yksiköiden yhdistämismääritykset päivitetään, joten uusin versio on otettava käyttöön näissä yhdistämismäärityksissä.
 
     Yhdistämismääritys | Päivitä tähän versioon | Muutokset
     ---|---|---
@@ -176,7 +182,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
 
-5. Ennen kuin voit käyttää yllä olevia karttoja, integrointiavaimet on päivitettävä manuaalisesti seuraavien ohjeiden mukaisesti. Valitse sitten **Tallenna**.
+8. Ennen kuin voit käyttää yllä olevia karttoja, integrointiavaimet on päivitettävä manuaalisesti seuraavien ohjeiden mukaisesti. Valitse sitten **Tallenna**.
 
     | Yhdistämismääritys | Avaimet |
     |-----|------|
@@ -185,7 +191,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     | Asiakkaan/toimittajan yhteyshenkilö | msdyn_contactforpartynumber [Osapuolen numeron yhteyshenkilö]<br>msdyn_associatedcompanyid.cdm_companycode [Liittyvä yritys (Yrityksen koodi)] |
     | Toimittaja | msdyn_vendoraccountnumber [Toimittajan tilinumero]<br>msdyn_company.cdm_companycode [Yritys (Yrityksen koodi)]|
 
-6. Dataversessa kaksoiskappaleiden tunnistussääntöjen merkkiraja on kasvanut 450 merkistä 700 merkkiin. Tämä raja mahdollistaa yhden tai usean avaimen lisäämisen kaksoiskappaleiden tunnistussääntöihin. Laajenna kaksoiskappaleiden tunnistussäännöt **Tilit**-taulukolle määrittämällä seuraavat kentät.
+9. Dataversessa kaksoiskappaleiden tunnistussääntöjen merkkiraja on kasvanut 450 merkistä 700 merkkiin. Tämä raja mahdollistaa yhden tai usean avaimen lisäämisen kaksoiskappaleiden tunnistussääntöihin. Laajenna kaksoiskappaleiden tunnistussäännöt **Tilit**-taulukolle määrittämällä seuraavat kentät.
 
     | Kenttä | Arvo |
     |-------|-------|
@@ -201,7 +207,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
     ![Tilien kaksoiskappaleiden sääntö](media/duplicate-rule-1.PNG)
 
-7. Laajenna kaksoiskappaleiden tunnistussäännöt **Yhteystiedot**-taulukolle määrittämällä seuraavat kentät.
+10. Laajenna kaksoiskappaleiden tunnistussäännöt **Yhteystiedot**-taulukolle määrittämällä seuraavat kentät.
 
     | Kenttä | Arvo |
     |-------|-------|
@@ -217,9 +223,9 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
     ![Yhteyshenkilöiden kaksoiskappaleiden sääntö](media/duplicate-rule-2.PNG)
 
-8. Jos käytät kaksoiskirjoitusta tällä hetkellä, noudata ohjeita kohdassa [Päivitä osapuolen osoitekirja ja yleinen osoitekirja](upgrade-party-gab.md) ja päivitä tiedot.
+11. Jos käytät kaksoiskirjoitusta tällä hetkellä, noudata ohjeita kohdassa [Päivitä osapuolen osoitekirja ja yleinen osoitekirja](upgrade-party-gab.md) ja päivitä tiedot.
 
-9. Suorita kartat seuraavassa järjestyksessä. Jos näyttöön tulee virheilmoitus, jonka mukaan "Projektin vahvistus epäonnistui. Puuttuva kohdekenttä...", avaa kartta ja valitse **Päivitä taulut**. Suorita sitten kartta.
+12. Suorita kartat seuraavassa järjestyksessä. Jos näyttöön tulee virheilmoitus, jonka mukaan "Projektin vahvistus epäonnistui. Puuttuva kohdekenttä...", avaa kartta ja valitse **Päivitä taulut**. Suorita sitten kartta.
 
     Finance and Operations -sovellus | Asiakkaiden aktivointisovellus  
     ----------------------------|------------------------

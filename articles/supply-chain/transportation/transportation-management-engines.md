@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920106"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188842"
 ---
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
@@ -43,8 +43,7 @@ Seuraavassa taulukossa on kuvattu käytettävissä olevat kuljetuksenhallintamod
 | **Rahtilaskun tyyppi**            | Standardoi rahtilaskun ja rahtikirjan rivit ja sitä käytetään automaattiseen rahtikirjan täsmäyttämiseen.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mitä laskentoja on määritettävä, jotta lähetykselle voidaan laskea hinta?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mitä laskentoja on määritettävä, jotta lähetykselle voidaan laskea hinta?
 
 Jos haluat arvioida lähetyksen käyttäen tiettyä rahdinkuljettajaa, sinun on määritettävä useita kuljetushallintamoduuleita. **Hinnan laskenta** on pakollinen, mutta muiden kuljetuksen hallinnan moduulien on ehkä tuettava **Hinnan laskenta** -moduulia. **Hinnan laskenta** -moduulia voidaan käyttää esimerkiksi tietojen noutamiseen **Kilometrien laskenta** -moduulista ja hinnan laskemiseksi lähteen ja kohteen välillä kilometrien perusteella.
 
@@ -62,8 +61,7 @@ Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit
 |  <em>MileageEngineCode</em>  |                       Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen tietokannassa.                        |
 | <em>Jako-osuuden laskenta</em> |                        Yleinen jako-osuuden laskennan yksilöivä koodi tietokannassa.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
 
 Kuljetuksenhallinnan moduulit, jotka perustuvat Supply Chain Managementissa määriteltyihin tietoihin, saattavat käyttää erilaisia tietomalleja. Kuljetuksen hallintajärjestelmä mahdollistaa, että erilaiset kuljetuksen hallintamoduulit voivat käyttää samoja yleisiä fyysisiä tietokantatauluja. Varmistaaksesi, että ajoaikainen moottorin tietojen tulkinta on täsmällistä, voit määrittää metatiedot tietokannan taulukoihin. Tämä vähentää uusien kuljetuksenhallintamoduulien rakentamiskustannuksia, koska Operations ei vaadi lisärakenteita tauluille ja lomakkeille.
 

@@ -1,8 +1,8 @@
 ---
 title: Käyttöomaisuuserien määrittäminen
 description: Tässä ohjeaiheessa on käyttöomaisuusmoduulin asetusten yleiskatsaus.
-author: ShylaThompson
-ms.date: 01/12/2018
+author: moaamer
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818533"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216583"
 ---
 # <a name="set-up-fixed-assets"></a>Käyttöomaisuuserien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on **Käyttöomaisuus**-moduulin asetusten yleiskatsaus.
+Tässä ohjeaiheessa on **Käyttöomaisuus**-moduulin asetusten yleiskatsaus. 
 
-## <a name="overview"></a>Yleiskuvaus
-
-Parametrit hallitsevat käyttöomaisuuden yleisiä toimintoja.
-
-Käyttöomaisuusryhmien avulla ryhmitellään käyttöomaisuus ja määritetään kunkin ryhmään liitetyn käyttöomaisuuden oletusmääritteet. Kirjat liitetään käyttöomaisuusryhmiin. Kirjat seuraavat käyttöomaisuuden kirjanpidollista arvoa tiettynä ajanjaksona poistoprofiilissa määritetyn poiston konfiguroinnin avulla.
+Parametrit hallitsevat käyttöomaisuuden yleisiä toimintoja. Käyttöomaisuusryhmien avulla ryhmitellään käyttöomaisuus ja määritetään kunkin ryhmään liitetyn käyttöomaisuuden oletusmääritteet. Kirjat liitetään käyttöomaisuusryhmiin. Kirjat seuraavat käyttöomaisuuden kirjanpidollista arvoa tiettynä ajanjaksona poistoprofiilissa määritetyn poiston konfiguroinnin avulla.
 
 Käyttöomaisuus liitetään ryhmään luomisen yhteydessä. Käyttöomaisuusryhmiin määritetyt kirjat liitetään tämän jälkeen oletusarvoisesti käyttöomaisuuteen. Kirjat, jotka konfiguroidaan kirjaamaan kirjanpitoon, liitetään kirjausprofiiliin. Kirjanpitotilit määritetään kullekin kirjausprofiilin kirjalle ja niitä käytetään, kun käyttöomaisuustapahtumia kirjataan.
 
@@ -49,6 +45,8 @@ Kun olet määrittänyt poistoprofiilit, sinun on luotava käyttöomaisuuden ede
 Ensisijainen poistoprofiili liitetään jokaiseen kirjaan. Kirjoilla on myös vaihtoehtoinen poistoprofiili tai lisäpoistoprofiili, jos tämä profiilityyppi on käytettävissä. Jotta käyttöomaisuuskirja sisällytetään automaattisesti poiston suoritukseen, on otettava käyttöön **Laske poisto** -vaihtoehto. Jos tätä vaihtoehtoa ei ole otettu käyttöön käyttöomaisuuserälle, poistoehdotus ohittaa käyttöomaisuuden.
 
 Voit määrittää myös johdettuja kirjoja. Määritetyt johdetut tapahtumat kirjataan ensisijaisen tapahtuman täydellisenä kopiona johdettuihin kirjoihin. Tämän vuoksi johdetut tapahtumat yleensä määritetään hankinnoille ja luovutuksille eikä poistotapahtumille. Lisätietoja on kohdassa [Arvomallien määrittäminen](tasks/set-up-value-models.md).
+
+**Käyttöomaisuusparametrit**-sivulla voit asetuksen avulla ottaa lukitustoiminnon käyttöön tai poistaa sen käytöstä. Voit ottaa tämän toiminnon käyttöön **Toimintojen hallinta** -työtilassa.
 
 ## <a name="fixed-asset-posting-profiles"></a>Käyttöomaisuuserän kirjausprofiili
 
@@ -73,6 +71,8 @@ Viimeinen vaihe on käyttöomaisuusparametrien päivittäminen.
 **Aktivointiraja**-kentässä määritetään poistetut käyttöomaisuuserät. Jos tilausrivejä on valittu käyttöomaisuuseräksi, mutta se ei vastaa määritettyä aktivointirajaa, käyttöomaisuuserä luodaan tai päivitetään, mutta **Laske poisto** -asetukseksi on määritetty **Ei**. Siksi käyttöomaisuutta ei poisteta automaattisesti poistoehdotusten osana.
 
 Tärkeä vaihtoehto on **Luo poisto-oikaisusummat automaattisesti käytöstä poistamisten kanssa**. Jos määrität tämän asetuksen arvoksi **Kyllä**, toiminto oikaisee käyttöomaisuuserän poiston automaattisesti käyttöomaisuuden poiston aikaisten poistoasetusten perusteella. Myös käteisalennukset voidaan vähentää hankintasummasta käyttöomaisuuserien hankinnan yhteydessä toimittajan laskun avulla.
+
+**Lukitse käyttöomaisuuskirjat poistokirjauskansiossa** -parametrin avulla voit lukita käyttöomaisuuskirjat poistokirjauskansiossa. Kun poistotapahtumia kirjataan, järjestelmä tarkistaa, että samaa käyttöomaisuuskirjaa ei ole lisätty useampaan kuin yhteen poistokirjauskansioon. Jos se on lisätty useampaan, käyttöomaisuuskirja lukitaan ja kirjaaminen pysähtyy. Jos käyttöomaisuuskirjan tunnus on lukitussa kirjauskansiossa, sen lukitus poistetaan automaattisesti, kun alkuperäisen kirjauskansion kirjaaminen on valmis. Voit poistaa kirjauskansion lukituksen myös manuaalisesti. 
 
 **Ostotilaukset**-pikavälilehdessä voidaan määrittää, miten käyttöomaisuuserät luodaan ostoprosessin osana. Ensimmäinen vaihtoehto on **Salli käyttöomaisuuden hankinta ostosta**. Jos määrität tämän asetuksen arvoksi **Kyllä** hankinta kirjataan käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Jos määrität tämän asetuksen arvoksi **ei**, käyttöomaisuus voidaan silti asettaa ostotilaukseen ja laskuun, mutta hankintaa ei kirjata. Se tehdään erillisessä vaiheessa käyttöomaisuuden kirjauskansiosta. **Luo käyttöomaisuus tuotteen vastaanoton tai laskun kirjaamisen aikana** -vaihtoehdolla voi luoda uusia varoja kirjauksen aikana. Tämän vuoksi varoja ei tarvitse määrittää käyttöomaisuudeksi ennen tapahtumaa. Viimeinen vaihtoehto **Tarkista käyttöomaisuuden luonti rivimäärityksen aikana** -asetus on käytettävissä vain ostoehdotuksissa.
 

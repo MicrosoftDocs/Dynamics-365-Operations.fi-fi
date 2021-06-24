@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980946"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184019"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -289,14 +289,15 @@ Seuraava taulukko sisältää tuetut varastotoimintojen ja poikkeuksien käsitte
 | Työpoolin vaihtaminen työssä                           | Kyllä | Kyllä                          |
 | Peruuta työ                                        | Kyllä | Kyllä                          |
 
-
 ### <a name="production"></a>Tuotantoympäristö
 
-Varastonhallinnan tuotantoskenaarioita ei tueta tällä hetkellä scale unitin työkuormissa, kuten seuraava taulukko osoittaa.
+Seuraavassa taulukossa esitellään, mitä varastonhallinnan tuotantoskenaarioita tuetaan (ja ei tueta) tällä hetkellä Scale Unitin työkuormissa.
 
 | Käsittele | Keskus | WES-kuormitus scale unitissa |
 |---------|-----|------------------------------|
-| <p>Kaikki tuotantoon liittyvät varastonhallintaprosessit Seuraavassa on muutamia esimerkkejä:</p><li>Vapauta varastoon</li><li>Tuotannon aallon käsittely</li><li>Raaka-aineiden keräily</li><li>Valmiiksi ilmoitettujen ja valmiiden tuotteiden poispano</li><li>Rinnakkaistuotteen ja sivutuotteen poispano</li><li>Kanban-poispano</li><li>Kanban-keräily</li><li>Käynnistä tuotantotilaus</li><li>Tuotannon hävikki</li><li>Tuotannon viimeinen kuormalava</li><li>Rekisteröi materiaalikulutus</li><li>Tyhjennä kanban</li></ul> | Kyllä | Nro |
+| Ilmoita valmiiksi ja valmiiden tuotteiden hyllytys | Kyllä | Kyllä |
+| Rinnakkaistuotteen ja sivutuotteen poispano | Kyllä | Kyllä |
+| <p>Kaikki muut tuotantoon liittyvät varastonhallintaprosessit, esim:</p><li>Vapauta varastoon</li><li>Tuotannon aallon käsittely</li><li>Raaka-aineiden keräily</li><li>Kanban-poispano</li><li>Kanban-keräily</li><li>Käynnistä tuotantotilaus</li><li>Tuotannon hävikki</li><li>Tuotannon viimeinen kuormalava</li><li>Rekisteröi materiaalikulutus</li><li>Tyhjennä kanban</li></ul> | Kyllä | Nro |
 
 ## <a name="maintaining-scale-units-for-wes"></a>WES-järjestelmän scale unitien ylläpito
 

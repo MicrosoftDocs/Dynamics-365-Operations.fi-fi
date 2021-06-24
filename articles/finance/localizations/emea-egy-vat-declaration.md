@@ -2,7 +2,7 @@
 title: Egyptin ALV-ilmoitus
 description: Tässä aiheessa kerrotaan, miten Egyptin ALV-palautuslomake konfiguroidaan ja muodostetaan.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021953"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186611"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Egyptin ALV-ilmoitus (EG-00002)
 
@@ -85,6 +85,7 @@ Näiden seuraavien hakukonfiguraatioiden avulla luokitellaan oston ja myynnin AL
 - **VATRateTypeLookup** > Sarake B: Verotyyppi
 - **VATRateTypeLookup** > Sarake C: Taulukkonimiketyyppi
 - **PurchaseOperationTypeLookup** > Sarake A: Asiakirjatyyppi
+- **CustomerTypeLookup** > Sarake A: tiedostotyyppi
 - **SalesOperationTypeLookup** > Sarake N: Toimintotyyppi
 - **SalesItemTypeLookup** > Sarake O: Nimiketyyppi
 
@@ -98,6 +99,8 @@ Seuraavia ohjeita noudattamalla voit määrittää eri hakuja, joita käytetää
 6. Toista vaiheet 3-5 kaikille käytettävissä oleville hauille.
 7. Valitse **Lisää**, jos haluat sisällyttää lopullisen tietuerivin. Valitse **Hakutulos**-sarakkeesta **Ei sovellettavissa**. 
 8. Valitse jäljellä olevissa sarakkeissa **Ei tyhjä**. 
+9. Valitse **Tila**-kentässä **Valmis**.
+10. Valitse **Tallenna** ja sulje sitten **Sovelluskohtaiset parametrit** -sivu.
 
 > [!NOTE]
 > Kun lisäät viimeisen tietueen (**Ei sovellettavissa**) määrität seuraavan säännön: Kun arvonlisäveroryhmä, nimikkeen arvonlisäveroryhmä, verokoodi ja nimi, jotka on välitetty argumentteina, eivät täytä aiempia sääntöjä, tapahtumia ei sisällytetä arvonlisäverokirjaan. Vaikka tätä sääntöä ei käytetä raportin luonnissa, sääntö auttaa välttämään raportin luonnissa virheitä, kun sääntömääritys puuttuu.
@@ -138,7 +141,7 @@ Seuraavat taulut ovat esimerkkejä kuvattujen hakukonfiguraatioiden ehdotetuista
 | Palvelut       | 7    | VAT_SERV                | *Ei tyhjä* | SaleExempt            |
 | Palvelut       | 8    | VAT_SERV                | *Ei tyhjä* | SalesExemptCreditNote |
 | Oikaisut    | 9    | *Tyhjä*                 | VAT_ADJ     | Myynti                 |
-| Oikaisut    | 10   | *Tyhjä*                 | VAT_ADJ     | Osto              |
+| Oikaisut    | 10   | *Tyhjä*                 | VAT_ADJ     | SalesCreditNote       |
 | Ei käytettävissä | 11   | *Ei tyhjä*             | *Ei tyhjä* | *Ei tyhjä*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ Seuraavat taulut ovat esimerkkejä kuvattujen hakukonfiguraatioiden ehdotetuista
 | Tavarat                  | 1    | VAT_GOODS               | *Ei tyhjä* | Osto                 |
 | Tavarat                  | 2    | VAT_GOODS               | *Ei tyhjä* | PurchaseCreditNote       |
 | Palvelut               | 3    | VAT_SERV                | *Ei tyhjä* | Osto                 |
-| Palvelut               | 4    | VAT_SERV                | *Ei tyhjä*  | PurchaseCreditNote       |
+| Palvelut               | 4    | VAT_SERV                | *Ei tyhjä* | PurchaseCreditNote       |
 | Kone ja välineistö  | 5    | VAT_M&E                 | *Ei tyhjä* | Osto                 |
 | Kone ja välineistö  | 6    | VAT_M&E                 | *Ei tyhjä* | PurchaseCreditNote       |
 | Koneiden osat         | 7    | VAT_PARTS               | *Ei tyhjä* | Osto                 |
 | Koneiden osat         | 8    | VAT_PARTS               | *Ei tyhjä* | PurchaseCreditNote       |
 | Vapautukset             | 9    | VAT_EXE                 | *Ei pankkia*  | PurchaseExempt           |
 | Vapautukset             | 10   | VAT_EXE                 | *Ei tyhjä* | PurchaseExemptCreditNote |
-| Ei käytettävissä         | 11   | *Tyhjä*                 | VAT_ADJ     | *Ei tyhjä*              |
-| Ei käytettävissä         | 12   | *Ei tyhjä*             | *Ei tyhjä* | *Ei tyhjä*              |
-| Ei käytettävissä         | 13   | *Tyhjä*                 | *Ei tyhjä* | *Ei tyhjä*              |
+| Ei käytettävissä         | 11   | *Ei tyhjä*             | *Ei tyhjä* | *Ei tyhjä*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ Seuraavat taulut ovat esimerkkejä kuvattujen hakukonfiguraatioiden ehdotetuista
 | Oikaisut    | 9    | *Tyhjä*          | VAT_ADJ     | PurchaseCreditNote       |
 | Oikaisut    | 10   | *Tyhjä*          | VAT_ADJ     | Osto                 |
 | Ei käytettävissä | 11   | *Ei tyhjä*      | *Ei tyhjä* | *Ei tyhjä*              |
+
+**CustomerTypeLookup**
+
+|    Haun tulos    | Linja | Arvonlisäveroryhmä |
+|---------------------|------|-----------------|
+| Organisaatio        |  1   | VAT_LOCAL       |
+| Organisaatio        |  2   | VAT_EXPORT      |
+| Organisaatio        |  3   | VAT_EXE         |
+| Loppukuluttaja      |  4   | VAT_FINALC      |
+| Julkinen organisaatio |  5   | VAT_PUBLIO      |
+| Ei käytettävissä      |  6   | *Ei tyhjä*     |
 
 **VATRateTypeLookup**
 

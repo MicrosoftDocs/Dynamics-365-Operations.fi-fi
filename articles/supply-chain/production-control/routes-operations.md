@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908925"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188931"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908925"
 
 Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reititys määrittää tuotteen tai tuotevariantin tuotantoprosessin. Siinä kuvaillaan tuotantoprosessin jokainen vaihe (työvaihe) ja vaiheiden suoritusjärjestys. Reitityksessä määritetään myös jokaisen vaiheen pakolliset operatiiviset resurssit, vaadittu asetus- ja ajoaika sekä kustannusten laskemistapa.
 
-<a name="overview"></a>Yleiskuvaus
---------
+## <a name="overview"></a>Yleiskuvaus
 
 Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Supply Chain Managementin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 

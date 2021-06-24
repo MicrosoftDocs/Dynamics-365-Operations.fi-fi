@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826368"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193615"
 ---
 # <a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826368"
 
 Asiakkaan kirjausprofiilit ohjaavat asiakastapahtumien kirjausta kirjanpitoon.
 
-<a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
--------------------------
+## <a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
 
 Voit määrittää asiakkaan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille asiakkaille, asiakasryhmällä tai yhdelle asiakkaalle. Näitä asetuksia käytetään, kun luot myyntitilauksia, vapaatekstilaskuja, käteismaksuja, maksukehotuksia ja korkolaskuja. Voit valita joissakin tapahtumissa eri kirjausprofiilin, joka ohittaa tällä sivulla tapahtumille määritetyn kirjausprofiilin. 
 
@@ -118,7 +117,6 @@ Jos haluat määrittää kaikille asiakastapahtumille saman kirjausprofiilin, m�
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Taulurajoitukset**
 

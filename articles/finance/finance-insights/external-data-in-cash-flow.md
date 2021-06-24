@@ -2,7 +2,7 @@
 title: Ulkoisten tietojen käyttäminen kassavirta ennusteissa (esiversio)
 description: Tässä ohjeaiheessa kuvataan määritysvaiheet, jotka on suoritettava, jotta ulkoiset tiedot voidaan syöttää tai tuoda kassavirtaennusteisiin.
 author: rcarlson
-ms.date: 05/01/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ddfc0670a5fca24d996e9ab605e267f9f3f26f19
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 66bdb8bd638859bb4fc5565e3f12a8f671addcff
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897885"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186687"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Ulkoisten tietojen käyttäminen kassavirta ennusteissa (esiversio)
 
@@ -57,9 +57,5 @@ Jos sinun on siirrettävä asetustiedot ympäristöstä toiseen, tarvittavat ase
 
 - Kassavirtaennusteen ulkoisen lähteen asetukset
 - Kassavirtaennusteen ulkoisen lähdeyrityksen asetukset
-
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
