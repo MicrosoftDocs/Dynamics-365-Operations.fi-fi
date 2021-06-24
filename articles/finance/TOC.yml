@@ -72,13 +72,11 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.20 (heinäkuu 2021)
+                    - name: Finance 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (heinäkuu 2021)
+                    - name: Finance 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (toukokuu 2021)
-                      href: get-started/whats-new-changed-10-0-18.md
-                    - name: Finance 10.0.17 (huhtikuu 2021)
                       href: get-started/whats-new-changed-10-0-17.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
@@ -1216,7 +1214,9 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Määrittäminen ja hallinta
               items:
-                - name: Taloushallinnon tietojen määrittäminen
+                - name: Finance Insightsin määrittäminen julkista esiversiota varten
+                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
+                - name: Finance Insightsin määrittäminen
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Asiakkaan maksuennusteiden ottaminen käyttöön
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1462,8 +1462,10 @@
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory configuration service – globalisointiominaisuudet
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory configuration service -pavelussa ja niiden lataaminen yleiseen säilöön
+                    - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service -palvelussa ja niiden lataaminen yleiseen säilöön
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
+                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Sähköinen laskutus
                   items:
                     - name: Sähköisen laskutuksen yleiskatsaus
@@ -1476,6 +1478,8 @@
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Azuren tallennustilin ja Key Vaultin luominen
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+                    - name: Käytön hallinnan koontinäyttö
+                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                     - name: Aloittaminen
                       items:
                         - name: Sähköisen laskutuksen palvelun hallinnan aloittaminen
@@ -2416,19 +2420,103 @@
                               href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
                             - name: Verotapahtuman tunnus on väärä
                               href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+                            - name: GSTR-raportin kenttien arvot ovat virheelliset
+                              href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+                            - name: Laskukirjauskansion tai tositteen kentän arvo on virheellinen
+                              href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+                            - name: Tositteessa on virheellinen kirjanpitotili
+                              href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+                            - name: Suunnittelutoiminnon avaaminen nykyistä verokonfiguraatiota varten
+                              href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+                            - name: Tietueet ja kentät eivät näy GSTR-raportissa
+                              href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+                            - name: Vahvistussäännön virhe veron tilityskautta määritettäessä
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
                 - name: Suorat verot
                   items:
                     - name: Intian ennakonpidätys
                       items:
-                        - name: GST-veron sisällyttäminen veroalennusten laskutoimiin
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: GST-veron sisällyttäminen verojen keruun laskutoimiin
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: Veron raja-arvojen usein kysytyt kysymykset
                           href: localizations/apac-ind-tax-thresholds.md
-                        - name: TCS tavaroiden myynnissä
-                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
-                - name: Käyttöomaisuus
+                        - name: Intian TCS-vero
+                          items:
+                            - name: TCS tavaroiden myynnissä
+                              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                            - name: GST-veron sisällyttäminen verojen keruun laskutoimiin
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                        - name: Intian TDS-vero
+                          items:
+                            - name: Intian lähteestä vähennetyn veron (TDS) yleiskatsaus
+                              href: localizations/apac-ind-TDS-India-TDS-overview.md
+                            - name: GST-veron sisällyttäminen veroalennusten laskutoimiin
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: 'TDS:n perusasetukset'
+                              items:
+                                - name: 'TDS:n parametrien määrittäminen'
+                                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                                - name: 'TDS:n kirjanpitotilien määrittäminen'
+                                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                                - name: 'TDS:n rekisteröintinumeroiden määrittäminen yrityksille'
+                                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: 'TDS:n verotyypin ennakonpidätysveroviranomaisten määrittäminen'
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: 'TDS:n verotyypin verokomponenttien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                                - name: 'TDS:n verotyypin ennakonpidätyskoodien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: 'TDS:n verotyypin ennakonpidätyksen tilityskausien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                                - name: 'TDS:n verotyypin ennakonpidätyksen raportointikoodien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                                - name: 'TDS:n verotyypin ennakonpidätyskoodien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                                - name: 'TDS:n verokoodien liittäminen TDS:n veroryhmiin ja TDS:n laskemisen kaavan määrittäminen'
+                                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                                - name: 'TDS:n toimilupasertifikaatin numeroiden tallentaminen'
+                                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                                - name: 'TDS:n parametrien määrittäminen osto- ja myyntireskontrassa'
+                                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                                - name: 'Maksusuunnitelmien määrittäminen TDS:n kohdistuksen avulla'
+                                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                                - name: 'TDS:n viranomaismaksujen maksulisien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                                - name: 'TDS:n ryhmän tietojen sekä PAN- ja TAN-tietojen määrittäminen toimittajille ja asiakkaille'
+                                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                                - name: TDS-laskelman kaavan suunnittelutoiminto ja raja-arvo
+                                  items: null
+                                - name: TDS-laskelmien kaavan suunnittelutoiminto
+                                  href: localizations/apac-ind-TDS-Formula-designer.md
+                                - name: Raja-arvo ja poikkeuksen raja-arvo
+                                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                            - name: Laskujen TDS-laskelma
+                              items:
+                                - name: Laskujen TDS-laskelma
+                                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                                - name: 'Laskujen TDS:n laskeminen kirjauskansioiden avulla'
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                                - name: 'TDS:n laskujen laskeminen ostotilaus- ja myyntitilauslomakkeen avulla'
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                                - name: Vapaatekstilasku-sivun laskujen TDS-laskelma
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                                - name: Jaetun laskun toiminnot
+                                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                            - name: Maksujen ja velkakirjojen TDS-laskelma
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                            - name: Konsernin sisäisten tapahtumien TDS-laskelma
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                            - name: 'TDS:n selvitysprosessi'
+                              items:
+                                - name: Maksujen ja velkakirjojen TDS-laskelma
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                                - name: Konsernin sisäisten tapahtumien TDS-laskelma
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                                - name: 'Kausittaisen TDS:n selvitysprosessin suorittaminen'
+                                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                                - name: 'TDS:n maksujen selvittäminen TDS:n viranomaisten toimittajille ja TDS:n challanin luominen'
+                                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                                - name: 'Kirjattujen TDS:n maksujen ja tapahtumien tarkasteleminen TDS:n selvityskaudella'
+                                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                - name: Käyttöomaisuuserät
                   items:
                     - name: Intia – käyttöomaisuuden yleiskatsaus
                       href: localizations/apac-ind-fixed-assets.md
@@ -2454,84 +2542,12 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Pääomanimikkeiden siirtäminen käyttöomaisuuteen
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: Intian TDS-vero
-                  items:
-                    - name: Intian lähteestä vähennetyn veron (TDS) yleiskatsaus
-                      href: localizations/apac-ind-TDS-India-TDS-overview.md
-                    - name: 'TDS:n perusasetukset'
+                    - name: 'TDS:n sertifikaattien numeroiden ja päivämäärien tallentaminen ja päivittäminen'
                       items:
-                        - name: 'TDS:n parametrien määrittäminen'
-                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                        - name: 'TDS:n kirjanpitotilien määrittäminen'
-                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-                        - name: 'TDS:n rekisteröintinumeroiden määrittäminen yrityksille'
-                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-                        - name: 'TDS:n verotyypin ennakonpidätysveroviranomaisten määrittäminen'
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: 'TDS:n verotyypin verokomponenttien määrittäminen'
-                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-                        - name: 'TDS:n verotyypin ennakonpidätyskoodien määrittäminen'
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: 'TDS:n verotyypin ennakonpidätyksen tilityskausien määrittäminen'
-                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-                        - name: 'TDS:n verotyypin ennakonpidätyksen raportointikoodien määrittäminen'
-                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-                        - name: 'TDS:n verotyypin ennakonpidätyskoodien määrittäminen'
-                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
-                        - name: 'TDS:n verokoodien liittäminen TDS:n veroryhmiin ja TDS:n laskemisen kaavan määrittäminen'
-                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-                        - name: 'TDS:n toimilupasertifikaatin numeroiden tallentaminen'
-                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-                        - name: 'TDS:n parametrien määrittäminen osto- ja myyntireskontrassa'
-                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-                        - name: 'Maksusuunnitelmien määrittäminen TDS:n kohdistuksen avulla'
-                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-                        - name: 'TDS:n viranomaismaksujen maksulisien määrittäminen'
-                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-                        - name: 'TDS:n ryhmän tietojen sekä PAN- ja TAN-tietojen määrittäminen toimittajille ja asiakkaille'
-                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-                    - name: TDS-laskelman kaavan suunnittelutoiminto ja raja-arvo
-                      items:
-                        - name: TDS-laskelmien kaavan suunnittelutoiminto
-                          href: localizations/apac-ind-TDS-Formula-designer.md
-                        - name: Raja-arvo ja poikkeuksen raja-arvo
-                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
-                    - name: Laskujen TDS-laskelma
-                      items:
-                        - name: Laskujen TDS-laskelma
-                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-                        - name: 'Laskujen TDS:n laskeminen kirjauskansioiden avulla'
-                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-                        - name: 'TDS:n laskujen laskeminen ostotilaus- ja myyntitilauslomakkeen avulla'
-                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-                        - name: Vapaatekstilasku-sivun laskujen TDS-laskelma
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-                        - name: Jaetun laskun toiminnot
-                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-                    - name: Maksujen ja velkakirjojen TDS-laskelma
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                    - name: Konsernin sisäisten tapahtumien TDS-laskelma
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                    - name: 'TDS:n selvitysprosessi'
-                      items:
-                        - name: Maksujen ja velkakirjojen TDS-laskelma
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                        - name: Konsernin sisäisten tapahtumien TDS-laskelma
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                        - name: 'TDS:n selvitysprosessi'
-                          items:
-                            - name: 'Kausittaisen TDS:n selvitysprosessin suorittaminen'
-                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-                            - name: 'TDS:n maksujen selvittäminen TDS:n viranomaisten toimittajille ja TDS:n challanin luominen'
-                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-                            - name: 'Kirjattujen TDS:n maksujen ja tapahtumien tarkasteleminen TDS:n selvityskaudella'
-                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
-                        - name: 'TDS:n sertifikaattien numeroiden ja päivämäärien tallentaminen ja päivittäminen'
-                          items:
-                            - name: 'TDS:n palautettavien sertifikaattien numeroiden tallentaminen'
-                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-                            - name: 'TDS:n tapahtumien sertifikaattien numeroiden ja päivämäärien päivittäminen'
-                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+                        - name: 'TDS:n palautettavien sertifikaattien numeroiden tallentaminen'
+                          href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                        - name: 'TDS:n tapahtumien sertifikaattien numeroiden ja päivämäärien päivittäminen'
+                          href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Italia
               items:
                 - name: Italia – yleiskatsaus
@@ -4165,8 +4181,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                - name: Tehokkaiden sähköisen raportoinnin ratkaisujen suunnitteleminen
+                  items:
+                    - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                    - name: Sähköisen raportoinnin kokoonpanojen suorituskykyongelmien vianmääritys
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Liiketoiminta-asiakirjojen hallinta (BDM)
                   items:
                     - name: 'BDM:n yleiskatsaus'
