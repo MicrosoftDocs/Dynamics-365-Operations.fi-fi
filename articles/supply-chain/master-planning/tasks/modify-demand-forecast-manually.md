@@ -1,5 +1,5 @@
 ---
-title: Kysynnän ennusteen manuaalinen muokkaaminen
+title: 'Opas: Kysynnän ennusteen manuaalinen muokkaaminen'
 description: Tässä ohjeaiheessa kerrotaan, miten nimikkeen ennustetta muokataan
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889021"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224007"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Kysynnän ennusteen manuaalinen muokkaaminen
+# <a name="guide-modify-a-demand-forecast-manually"></a>Opas: Kysynnän ennusteen manuaalinen muokkaaminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu tuotannon suunnittelijalle.
+Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan. Tämä menettely on tarkoitettu tuotannon suunnittelijalle.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Valitun nimikkeen ennusteen muokkaaminen
 
@@ -36,7 +36,7 @@ Valitun nimikkeen ennusteen muokkaaminen:
 1. Täytä muiden kenttien tarvittavat tiedot.
 1. Valitse toimintoruudussa **Tallenna**.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Yhden tai useamman nimikkeen ennusteen muokkaaminen Microsoft Excelissä
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Yhden tai useamman nimikkeen ennusteen muokkaaminen Microsoft Excelissä
 
 Yhden tai useamman nimikkeen ennusteen muokkaaminen Microsoft Excelissä:
 

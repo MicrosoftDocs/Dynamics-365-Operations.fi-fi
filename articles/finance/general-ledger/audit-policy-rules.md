@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821982"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187865"
 ---
 # <a name="audit-policy-rules"></a>Tilinarkastuskäytännön säännöt
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821982"
 
 Voit käyttää tarkistuskäytäntöjä kuluraporttien, toimittajan laskujen ja ostotilausten arvioimiseen, jotta voit varmistua luomiesi käytäntösääntöjen noudattamisesta. Kaikki tarkastuskäytäntöön liittyvät säännöt suoritetaan erätilassa määrittämäsi aikataulun mukaisesti.  Jokainen käytäntösääntö on käytäntösäännön tyypin esiintymä. Jokaisella käytäntösääntötyypillä voi olla kerrallaan aktiivisena vain yksi käytäntösääntö. 
 
-<a name="queries-and-query-types"></a>Kyselyt ja Kyselytyypit
------------------------
+## <a name="queries-and-query-types"></a>Kyselyt ja Kyselytyypit
 
 Kun luot tarkistuskäytännön sääntö, sinun on valittava käytäntösääntötyyppi. Käytäntösäännön tyyppi määrittää sovellusobjektipuu (AOT) -kyselyn, jota käytetään aloituskohtana käytäntösäännön luomisessa. Se määrittää myös käytäntösäännölle käytettävän kyselyn tyypin. Kysely määrittää lähdeasiakirjan, jolle käytäntösääntötyyppi tulkitaan. Se määrittää myös lähdeasiakirjan kentät, joiden avulla tunnistetaan sekä yritys että käytettävä päivämäärä, kun asiakirjoja valitaan auditointiin. Kyselytyyppi hallitsee kyselysivun ja tilintarkastuskäytäntö sääntöjen sivun oletuskenttiä. Seuraavassa taulukossa on kyselytyypit, joiden on oltava käytettävissä tarkistuksen käytäntösäännöille.
 
@@ -91,8 +90,7 @@ Kaikilla tietyn tarkastuskäytännön säännöillä on samat eräparametrit ja 
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Tarkistuskäytäntörikkomukset ja -tapaukset](audit-policy-violations-cases.md)
 [Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille](tasks/define-audit-policies-source-documents.md)

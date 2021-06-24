@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9b387be0b28564dd7ae88af33812a8bbf034c0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825419"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188282"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
@@ -83,8 +83,7 @@ Jos haluat peruuttaa ostotilausrivin koko määrän, sinun on peruutettava rivin
 
 Jos ostotilaus on muutostenhallinnan piirissä, mikä tahansa muutos, kuten tilauksen tai jäljellä olevan toimituksen peruutus, on ilmoitettava työnkulkujärjestelmälle ja hyväksyttävä, ennen kuin prosessi voidaan suorittaa loppuun ja varastotapahtumien tilaksi päivittää peruutettu.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 

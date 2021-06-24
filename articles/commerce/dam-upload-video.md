@@ -2,7 +2,7 @@
 title: Videoiden lataaminen
 description: Tässä ohjeaiheessa kerrotaan, miten videot ladataan Microsoft Dynamics 365 Commerce -sivuston luontiohjelmaan.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e3579b54c58898b79c84406480a3b58f541c4621
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799202"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224535"
 ---
 # <a name="upload-videos"></a>Videoiden lataaminen
 
@@ -35,7 +35,7 @@ Commerce-sivuston luontiohjelman mediakirjaston avulla voit ladata videoita. Lat
 Kun lataat videon, seuraavat tiedot voidaan määrittää.
 
 - **Otsikko, kuvaus, avainsanat**: Videon metatiedot.
-- **Luo automaattisesti tekstitykset**: Määrittää, luodaanko videolle automaattisesti tekstitykset.
+- **Luo automaattisesti tekstitykset**: Määrittää, luodaanko videolle automaattisesti tekstitykset (tuki vain englannille). 
 - **Tekstitys**: Määrittää käytettävät tekstitykset.
 - **Tavallinen ääni**: Määrittää käytettävän tavallisen ääniraidan.
 - **Pikkukuva**: Määrittää videon pikkukuvan. Jos tätä ei ole määritetty, se määritetään automaattisesti.

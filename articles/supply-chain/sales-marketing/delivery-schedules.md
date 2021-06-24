@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2860ffb028c2d33f84e2e0796b2971e090454c90
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3dbd66d499b5d5f9f8ef21c0ce3752031a5f4672
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840626"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193779"
 ---
 # <a name="delivery-schedules"></a>Toimitusaikataulut
 
@@ -28,11 +28,11 @@ ms.locfileid: "5840626"
 
 Toimitusaikataulujen avulla voit seurata tilausrivin määrää, kun käytät useita toimituksia yksittäistä myyntitilausta, myyntitarjousta tai ostotilausta varten.
 
-Toimitusaikataulua käytetään, kun tilauksen kokonaismäärä tai tarjousrivi pitää toimittaa useissa lähetyksissä. Toimitusrivit edustavat yksittäisiä lähetyksiä. Jos toimitusrivejä on kaksi tai useampi, ne muodostavat yhden toimitusaikataulun. Toimitusriveillä voi olla eri toimituspäiviä, määriä, toimitustapoja ja varastodimensioita, kuten toimipaikka ja varasto.  
+Toimitusaikataulua käytetään, kun tilauksen kokonaismäärä tai tarjousrivi pitää toimittaa useissa lähetyksissä. Toimitusrivit edustavat yksittäisiä lähetyksiä. Jos toimitusrivejä on kaksi tai useampi, ne muodostavat yhden toimitusaikataulun. Toimitusriveillä on eri toimituspäiviä, määriä, toimitustapoja ja varastodimensioita, kuten toimipaikka ja varasto.  
 
 **Esimerkki toimitusaikataulusta**
 
-|                                   |                                          |
+| Nimike                              | Arvo                                    |
 |-----------------------------------|------------------------------------------|
 | Kokonaistilaus (alkuperäinen tilausrivi) | 600 tuolia                               |
 | Pyydetty toimitusaikataulu       | 100 tuolia kuukaudessa                     |

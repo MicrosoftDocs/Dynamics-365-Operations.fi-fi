@@ -2,7 +2,7 @@
 title: Finance Insightsin aloitussivu (esiversio)
 description: Finance Insights sisältää määritettävät ja laajennettavat mallit, joiden avulla yrityksen kassavirta voidaan ennustaa tarkasti ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Kaikki nämä ominaisuudet perustuvat älykkäisiin koneoppimismalleihin.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086986"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222507"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance Insightsin aloitussivu (esiversio)
 
@@ -68,7 +68,9 @@ Azuren, Microsoft Dataversen ja LCS:n resurssien luonti- ja hallintakokemus autt
 
 ## <a name="configure-finance-insights"></a>Taloushallinnon tietojen määrittäminen
 
-Sinun on suoritettava joitakin määritysvaiheita, ennen kuin voit käyttää Finance Insightsia. Lisätietoja Finance Insightsin määrittämisestä on kohdassa [Finance Insightsin määrittäminen](configure-for-fin-insites.md).
+Sinun on suoritettava joitakin määritysvaiheita, ennen kuin voit käyttää Finance Insightsia. Lisätietoja Finance Insightsin määrittämisestä:
+  - Versioille 10.0.19 asti: [Finance Insightsin määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
+  - Versioille 10.0.20 ja sitä uudemmat versiot: [Finance Insightsin (esiversio) määritys versiolle 10.0.20 ja siitä eteenpäin](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Tietojen integrointiprojektin luominen
 
@@ -84,10 +86,7 @@ Jos käytät esittelytietoja asiakkaan maksuennusteiden testaamisessa, tuo lisä
 Jos haluat ottaa käyttöön asiakkaan maksuennusteet, tee sen koneoppimismallin luontivaiheet valmiiksi, joka käyttää organisaation tietoja luodessaan ennusteita siitä, milloin asiakkaat aikovat maksaa maksamattomat laskut ja milloin tietyt laskut todennäköisesti maksetaan. Lisätiedot ja tietyt suoritettavat vaiheet ovat kohdassa [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Kassavirtaennusteiden ottaminen käyttöön
-Jos haluat ottaa käyttöön kassavirtaennusteet, tee sen koneoppimismallin luontivaiheet valmiiksi, joka käyttää organisaation tietoja luodessaan kassavirtaennusteita. Lisätiedot ja tietyt suoritettavat vaiheet ovat kohdassa [Kassavirtaennusteiden käyttöönotto](enable-cash-flow-forecasting.md) 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Kassavirtaennusteiden määrittäminen ja käyttäminen
-Lisätietoja kassavirtaennusteiden määrittämisestä ja käyttämisestä on kohdassa [Kassavirtaennusteiden käyttöönotto](enable-cash-flow-forecasting.md). Lisätietoja tämän ominaisuuden käyttämisestä on kohdassa [Kassavirtaennusteet](cash-flow-forecast-intro.md).
+Jos haluat ottaa käyttöön kassavirtaennusteet, tee sen koneoppimismallin luontivaiheet valmiiksi, joka käyttää organisaation tietoja luodessaan kassavirtaennusteita. Lisätiedot ja tietyt suoritettavat vaiheet ovat kohdassa [Kassavirtaennusteiden käyttöönotto](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Budjettiehdotusten käyttöönotto
 
@@ -111,14 +110,12 @@ Kassavirtaennusteominaisuus voi auttaa kassatilanteen tarkemmassa arvioimisessa.
 
 - Lisätietoja kassavirtaennusteiden uusista ominaisuuksista on kohdassa [Kassavirtaennuste](cash-flow-forecast-intro.md).
 - Lisätietoja ulkoisten tietojen tuomisesta kassavirtaennusteeseen on kohdassa [Ulkoisten tietojen käyttäminen kassavirtaennusteissa](external-data-in-cash-flow.md). 
-- Lisätietoja tekoälymallin käyttämisessä pitkäaikaisen kassavirran ennustamisessa on kohdassa [Kassavirtaennusteiden yleiskatsaus](cash-position.md).
+- Lisätietoja tekoälymallin käyttämisessä lähitulevaisuuden kassavirran ennustamisessa on kohdassa [Kassatilanne](cash-position.md).
 - Lisätietoja kassavirtatilanteiden ja kassavirtaennusteiden tallentamisesta tilannevedoksina ja tilannevedosten vertaamisesta todelliseen tilanteeseen on kohdassa [Tilannevedosten yleiskatsaus](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Budjettiehdotuksen käyttäminen
 
 Lisätietoja budjetin luomisen nopeuttamisesta on kohdassa [Budjettiehdotukset](budget-proposals.md). 
-
-Budjettiehdotuksen esittelytiedot:
 
 ## <a name="feedback-and-support"></a>Palaute ja tuki
 

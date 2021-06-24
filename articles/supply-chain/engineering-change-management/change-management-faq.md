@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018682"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187268"
 ---
 # <a name="engineering-change-management-faq"></a>Suunnittelun muutosten hallinnan usein kysytyt kysymykset
 
@@ -46,7 +46,7 @@ Tätä vaihtoehtoa on paljon helpompi hallita, sillä jos haluat vaihtaa versios
 
 Useimmat organisaatiot valitsevat tämän vaihtoehdon, koska siinä on käytössä versio- ja muutostenhallinta, mutta ei lisää kunkin tapahtuman, varaston ja pääsuunnittelun aikana käytettävissä olevan version lisäkustannusta.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Mitkä kentät kopioidaan vapautettuun nimikemalliin?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Mitkä kentät kopioidaan vapautetusta nimikemallista?
 
 Kun suunnitteluyritys luo suunnittelutuotteen, tuote luodaan suunnitteluyrityksen vapautettuna tuotteena. Luotu vapautettu tuote perustuu valittuun *vapautettuun nimikemalliin*. (Vapautettu nimikemalli on itsekin olemassa oleva vapautettu tuote.) Vapautettua nimikemallia käytetään myös, kun tuote vapautetaan toimivaan yritykseen. Vapautetun nimikkeen malli määrittää joka tapauksessa suurimman osan vapautetun tuotteen kenttäarvoista, ja arvot tulevat liitetyltä **Vapautetun tuotteen tiedot** -sivulta.
 

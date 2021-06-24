@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941106"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219784"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Supply Chain Managementin ja Field Servicen hankinnan integrointi
 
@@ -196,23 +196,10 @@ Seuraavat malli ovat käytettävissä hankintaan liittyvien asiakirjojen integro
 
 | Toimitusketjun hallinta | Field Service | kuvaus |
 |---|---|---|
-| Ostotilausotsikko V2 | msdyn\_Purchaseorders | Tämä taulukko sisältää ostotilauksen otsikon ilmaisevia sarakkeita. |
-| Ostotilausrivin yksikkö | msdyn\_PurchaseOrderProducts | Tämä taulukko sisältää rivejä, jotka ilmaisevat ostotilauksen rivejä. Tuotenumeroa käytetään synkronointiin. Tämä määrittää tuotteen varastointiyksikkönä, mukaan lukien tuotedimensiot. Lisätietoja tuotteen integroinnista Dataversen kanssa on kohdassa [Yhtenäinen tuotekokemus](product-mapping.md). |
-| Tuotteen vastaanoton otsikko | msdyn\_purchaseorderreceipts | Tämä taulukko sisältää tuotteen vastaanoton otsikot, jotka luotiin, kun tuotteen vastaanotto kirjattiin Supply Chain Managementissa. |
-| Tuotteen vastaanottorivi | msdyn\_purchaseorderreceiptproducts | Tämä taulukko sisältää tuotteen vastaanottorivit, jotka luotiin, kun tuotteen vastaanotto kirjattiin Supply Chain Managementissa. |
-| Ostotilausrivin poistettavaksi merkitty yksikkö | msdyn\_purchaseorderproducts | Tämä taulukko sisältää tietoja poistettavaksi merkityistä ostotilausriveistä. Supply Chain Managementin ostotilausrivi voi merkitä poistettavaksi vain, kun ostotilaus on vahvistettu tai hyväksytty, jos muutostenhallinta on otettu käyttöön. Rivi on Supply Chain Management -tietokannassa ja sen merkintänä on **IsDeleted**. Koska Dataverse ei sisällä poistamisen merkintäkäsitettä, on tärkeää, että nämä tiedot synkronoidaan Dataverseen. Tällä tavoin Supply Chain Managementissa poistettavaksi merkityt rivit voidaan poistaa automaattisesti Dataversesta. Tässä tapauksessa Dataversen rivin poistamislogiikka sijaitsee Supply Chain Management Extendedissä. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Ostotilausotsikko V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Tämä taulukko sisältää ostotilauksen otsikon ilmaisevia sarakkeita. |
+| [Ostotilausrivin yksikkö](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Tämä taulukko sisältää rivejä, jotka ilmaisevat ostotilauksen rivejä. Tuotenumeroa käytetään synkronointiin. Tämä määrittää tuotteen varastointiyksikkönä, mukaan lukien tuotedimensiot. Lisätietoja tuotteen integroinnista Dataversen kanssa on kohdassa [Yhtenäinen tuotekokemus](product-mapping.md). |
+| [Tuotteen vastaanoton otsikko](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Tämä taulukko sisältää tuotteen vastaanoton otsikot, jotka luotiin, kun tuotteen vastaanotto kirjattiin Supply Chain Managementissa. |
+| [Tuotteen vastaanottorivi](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Tämä taulukko sisältää tuotteen vastaanottorivit, jotka luotiin, kun tuotteen vastaanotto kirjattiin Supply Chain Managementissa. |
+| [Ostotilausrivin poistettavaksi merkitty yksikkö](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Tämä taulukko sisältää tietoja poistettavaksi merkityistä ostotilausriveistä. Supply Chain Managementin ostotilausrivi voi merkitä poistettavaksi vain, kun ostotilaus on vahvistettu tai hyväksytty, jos muutostenhallinta on otettu käyttöön. Rivi on Supply Chain Management -tietokannassa ja sen merkintänä on **IsDeleted**. Koska Dataverse ei sisällä poistamisen merkintäkäsitettä, on tärkeää, että nämä tiedot synkronoidaan Dataverseen. Tällä tavoin Supply Chain Managementissa poistettavaksi merkityt rivit voidaan poistaa automaattisesti Dataversesta. Tässä tapauksessa Dataversen rivin poistamislogiikka sijaitsee Supply Chain Management Extendedissä. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835481"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189490"
 ---
 # <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835481"
 
 Toimittajan kirjausprofiilit ohjaavat toimittajatapahtumien kirjaamista kirjanpitoon.
 
-<a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
------------------------
+## <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
 
 Voit määrittää toimittajan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille toimittajille, toimittajaryhmälle tai yhdelle toimittajalle. Näitä asetuksia käytetään, kun luot ostotilauksia, toimittajan laskuja ja käteismaksuja. Voit valita joissakin tapahtumissa eri kirjausprofiilin, joka ohittaa tällä sivulla tapahtumille määritetyn kirjausprofiilin. Oletuskirjausprofiili määritetään **Ostoreskontran parametrit** -sivun **Kirjanpito ja arvonlisävero** -pikavälilehdessä. Oletuskirjausprofiili sisällytetään sitten automaattisesti uusien asiakirjojen otsikkoon, jossa voit vaihtaa tarvittaessa toisen kirjausprofiilin.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 33d5e831d3a631aa17e78628a4e88b5e1cfa8c73
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4109762a2db3114ad66882092d6729dd9b08364
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052861"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190205"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Työntekijöille lainattujen kohteiden hallinta
 
@@ -41,14 +41,12 @@ Työntekijät voivat heille lainattujen kohteiden tietueita Työntekijän itsepa
 
 Esimiehet voivat tarkastella suorille alaisille lainattuja kohteita. Heille voidaan myös myöntää oikeus lisätä uusia lainakohteita työntekijöiden puolesta.
 
- <a name="account-for-lost-or-misplaced-loan-items"></a>Kadonneiden tai hävinneiden lainakohteiden käsitteleminen
------------------------------------------
+##  <a name="account-for-lost-or-misplaced-loan-items"></a>Kadonneiden tai hävinneiden lainakohteiden käsitteleminen
 
 Jos kohde vahingoittuu tai häviää, sille kirjataan fiktiivinen palautustietue. Sen jälkeen kohde joko poistetaan tai jätetään yleiskatsaukseen ja muutetaan kuvausta sitten, ettei kohde ole käytettävissä.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Henkilöstö](index.md)
 

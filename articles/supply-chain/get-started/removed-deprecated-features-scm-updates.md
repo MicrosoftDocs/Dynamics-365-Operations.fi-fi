@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: a7a9fb619ce3488ad4e3e79292af7acc359b83c5
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947541"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193227"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 
@@ -38,7 +38,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="job-card-device"></a>Työkorttilaite
 
-|   |   |
+| &nbsp;  | &nbsp;  |
 |---|---|
 | **Poiston tai vanhentumisen syy** | [Työkorttilaite](../production-control/config-job-card-device.md) korvataan uudella [tuotannon käyttöliittymällä](../production-control/production-floor-execution-configure.md). |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, [työkorttilaite](../production-control/config-job-card-device.md) korvataan uudella [tuotannon käyttöliittymällä](../production-control/production-floor-execution-configure.md). |
@@ -50,7 +50,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – varastointi (varastosovellus)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Alkaen huhtikuusta 2021 *Dynamics 365 for Finance and Operations – varastointi* (varastosovellus) on vanhentunut, eikä sitä tueta huhtikuun 2022 jälkeen. Sen korvaa nyt *varastonhallinnan mobiilisovellus*, joka on julkaistu Supply Chain Managementin version 10.0.17 mukana. Uusi sovellus on täydellinen korvaava tuote, mutta käyttää samaa pohjana olevaa kehystä, mikä helpottaa siirtymistä sen käyttöön. Tarvittaessa näitä kahta sovellusta voidaan käyttää vierekkäin, jotta käyttäjät voivat asteittain opetella käyttämään uutta sovellusta.<br><br>Lisätietoja uudesta varastonhallinnan mobiilisovelluksesta on kohdissa [Varastonhallinnan mobiilisovellus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) ja [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md). |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, korvataan uudella varastonhallinnan mobiilisovelluksella. |
@@ -62,7 +62,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11:n Dynamics 365 -tuki on vanhentunut
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Joulukuusta 2020 alkaen kaikkien Dynamics 365 -tuotteiden Microsoft Internet Explorer 11 -tuki vanhenee eikä Internet Explorer 11:tä tueta elokuun 2021 jälkeen.<br><br>Tämä vaikuttaa sellaisiin Dynamics 365 -tuotteita käyttäviin asiakkaisiin, jotka on suunniteltu käytettäviksi Internet Explorer 11 -liittymässä. Elokuun 2021 jälkeen Internet Explorer 11:tä ei tueta kyseisissä Dynamics 365 -tuotteissa. |
 | **Onko toinen ominaisuus korvannut?**   | Asiakkaiden kannattaa siirtyä Microsoft Edgeen.|
@@ -72,7 +72,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-manufacturing-scenarios"></a>Supply Chain Managementin sisäisen pääsuunnittelumoduulin käyttö valmistusskenaarioissa
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Jotta suorituskyky paranisi ja SQL-tietokannan kuormitus pienenisi pääsuunnittelun aikana, sisäinen Supply Chain Managementin pääsuunnittelumoduuli korvataan suunnittelun optimoinnilla. Suunnittelun optimointi mahdollistaa nopeat suunnitteluajot, jotka voidaan suorittaa myös toimiston aukioloaikoina. Tämän ansiosta suunnittelijat voivat reagoida välittömästi kysynnän muutoksiin tai suunnitteluparametreihin. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |
@@ -84,7 +84,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>Supply Chain Managementin sisäisen pääsuunnittelumoduulin käyttö jakeluskenaarioissa
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Jotta suorituskyky paranisi ja SQL-tietokannan kuormitus pienenisi pääsuunnittelun aikana, sisäinen Supply Chain Managementin pääsuunnittelumoduuli korvataan suunnittelun optimoinnilla. Suunnittelun optimointi mahdollistaa nopeat suunnitteluajot, jotka voidaan suorittaa myös toimiston aukioloaikoina. Tämän ansiosta suunnittelijat voivat reagoida välittömästi kysynnän muutoksiin tai suunnitteluparametreihin. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |

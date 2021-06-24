@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018828"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189572"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
@@ -66,7 +66,7 @@ Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymäl�
 
 ### <a name="hardware-profile"></a>Laiteprofiili
 
-Siirtyminen: Valitse **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiilit**. Laitteistoprofiili on niiden laitteiden luettelo, jotka on määritetty myyntipisteen kassakonetta tai laiteasemaa varten. Laiteprofiili voidaan yhdistää suoraan myyntipisteen kassakoneeseen tai laiteasemaan.
+Siirtyminen: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiilit**. Laitteistoprofiili on niiden laitteiden luettelo, jotka on määritetty myyntipisteen kassakonetta tai laiteasemaa varten. Laiteprofiili voidaan yhdistää suoraan myyntipisteen kassakoneeseen tai laiteasemaan.
 
 ## <a name="devices-classes"></a>Laitteiden luokat
 Myyntipisteen oheislaitteet jaetaan tavallisesti luokkiin. Tässä osassa esitellään Modern POS -sovelluksen tukemat laitteet ja laitteiden yleiskatsaus.
@@ -536,7 +536,7 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
     -   **Isännän nimi** – Sen isäntäkoneen nimi, jolla laiteasema on käynnissä.
     -   **Kuvaus** – Teksti, jonka avulla laiteasema tunnistetaan, kuten **Palautukset** tai **Myymälän edusta**.
     -   **Portti** – Portti, jota laiteasema käyttää ollessaan yhteydessä Modern POS -asiakasohjelmaan.
-    -   **Laiteprofiili** – Jaetuissa laiteasemissa jokaisella laiteasemalla on oltava laiteprofiili. Laiteprofiilit voidaan jakaa laiteasemien kesken, mutta ne on yhdistettävä jokaiseen laiteasemaan. Lisäksi suositellaan jaettujen vuorojen käyttämistä, kun useat laitteet käyttävät samaa jaettua laiteasemaa. Voit määrittää jaetun vuoron valitsemalla **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiilit**. Valitse jokaiselle jaetulle laiteprofiilille kassa ja määritä **Jaetun vuoron kassa** -valinnan arvoksi **Kyllä**.
+    -   **Laiteprofiili** – Jaetuissa laiteasemissa jokaisella laiteasemalla on oltava laiteprofiili. Laiteprofiilit voidaan jakaa laiteasemien kesken, mutta ne on yhdistettävä jokaiseen laiteasemaan. Lisäksi suositellaan jaettujen vuorojen käyttämistä, kun useat laitteet käyttävät samaa jaettua laiteasemaa. Voit määrittää jaetun vuoron valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiilit**. Valitse jokaiselle jaetulle laiteprofiilille kassa ja määritä **Jaetun vuoron kassa** -valinnan arvoksi **Kyllä**.
     -   **EFT-myyntipisteen numero** – EFT-päätteen tunnus, jota käytetään EFT-varmennusten lähettämisen yhteydessä. Luottokortin käsittelijä toimittaa tämän tunnuksen.
     -   **Paketin nimi** – Laiteaseman paketti, jota käytetään laiteaseman käyttöönoton yhteydessä.
 
@@ -833,8 +833,7 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
     6.  Kun DLL-isännät on suljettu, käynnistä Modern POS uudelleen.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Commercen oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 

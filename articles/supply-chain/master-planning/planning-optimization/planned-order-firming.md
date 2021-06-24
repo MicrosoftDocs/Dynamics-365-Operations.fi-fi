@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103625"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193878"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -102,7 +102,7 @@ Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuu
 
 Sekä suunnittelun optimointia että sisäistä suunnittelumoduulia voi käyttää suunniteltujen tilausten automaattiseen vahvistamiseen. Niillä on kuitenkin tärkeitä eroavaisuuksiakin. Esimerkiksi siinä missä suunnittelun optimointi käyttää tilauspäivää (eli aloituspäivää) määrittämään, mitkä suunnitellut tilaukset vahvistetaan, sisäinen suunnittelumoduuli käyttää tarvepäivää (eli päättymispäivää). Seuraavassa taulukossa on erojen yhteenveto.
 
-| | Suunnittelun optimointi | Sisäinen suunnittelumoduuli |
+| Ominaisuus | Suunnittelun optimointi | Sisäinen suunnittelumoduuli |
 |---|---|---|
 | **Päivämäärän peruste** | Automaattinen vahvistus perustuu tilauspäivään (aloituspäivään). | Automaattinen vahvistus perustuu tarvepäivään (päättymispäivään). |
 | **Läpimenoaika** | Koska tilauspäivä (aloituspäivä) käynnistää vahvistuksen, läpimenoaikaa ei tarvitse sisällyttää vahvistuksen aikarajaan. | Vahvistuksen aikarajan on oltava pidempi kuin läpimenoajan, jotta voidaan varmistaa, että tilaukset vahvistetaan ajoissa. |

@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin 10.0.20:n esikatselu (heinäkuu 2021)
+title: Esiversio – Dynamics 365 Supply Chain Management 10.0.20 (elokuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.20 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c009625204ef0fdc72c381b5fee11f4d031a6a82
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: 3a35d3becbf81c51d29ef2e0f4cbf6a12cd196b8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123411"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187623"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-july-2021"></a>Dynamics 365 Supply Chain Managementin 10.0.20:n esikatselu (heinäkuu 2021)
+# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Esiversio – Dynamics 365 Supply Chain Management 10.0.20 (elokuu 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -25,8 +25,9 @@ ms.locfileid: "6123411"
 Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.20 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.886. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esiversio:** Toukokuu 2021
-- **Julkaisun yleinen saatavuus (itsepäivitys):** kesäkuu 2021
+- **Julkaisun yleinen saatavuus (itsepäivitys):** heinäkuu 2021
 - **Julkaisun yleinen saatavuus (automaattinen päivitys):** heinäkuu 2021
+
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 

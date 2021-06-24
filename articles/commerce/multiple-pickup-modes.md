@@ -2,7 +2,7 @@
 title: Useiden noutotoimitustapojen ottaminen käyttöön asiakastilauksille
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen toiminnoista, joiden avulla voit luoda asiakastilauksia noudettavaksi myymälästä.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020648"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216764"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Useiden noutotoimitustapojen ottaminen käyttöön asiakastilauksille
 
@@ -38,7 +38,7 @@ Kun olet määrittänyt **Useiden noutotoimitustapojen tuki** -ominaisuuden käy
 
 **Noutotoimitustapa**- ja **Sähköinen toimitustapa**- kentät sekä **Näytä lähetystilauksissa vain rahdinkuljettajien toimitustavat** asetus on siirretty tähän pikavälilehteen.
 
-Ennen kuin määrität muita noutotoimitustapoja, sinun on määritettävä toimitustavat. Lisää Commerce Headquarters -sovelluksen **Toimitustavat**-sivulla toimitustavat, joita voidaan pitää noutotoimitustapoina. Varmista, että kaikki määritykset on tehty. Varmista esimerkiksi, että toimitustapa on linkitetty asianmukaisiin kanaviin ja nimikkeisiin. Kun olet valmis, suorita **Käsittele toimitustavat** -työ luodaksesi toimitustapojen, kanavien ja nimikkeiden väliset suhteet. Kun työn suorittaminen on päättynyt, avaa **Jakelu aikataulu** -sivu Commerce Headquarters -sovelluksessa ja suorita **1120**- jakelutehtävä varmistaaksesi, että asianmukaiset Commerce-kanavan tietokannat päivitetään uuden toimitustavan määrityksillä.
+Ennen kuin määrität muita noutotoimitustapoja, sinun on määritettävä toimitustavat. Lisää Commerce Headquarters -sovelluksen **Toimitustavat**-sivulla toimitustavat, joita voidaan pitää noutotoimitustapoina. Varmista, että kaikki määritykset on tehty. Jos esimerkiksi tarjoat verkko-ostajille noutoa tien vierestä tietyille kaupoille sinun on luotava uusi toimitustapa tätä varten. Voit luoda tämän toimitustavan käyttäen kuvauksena "nouto tien vierestä". Tämän jälkeen haluat varmistaa, että "Nouto tien vierestä" -toimitustapa on yhdistetty kaikkiin Commerce-kanaviin, joka voi tarjota sitä, mukaan lukien verkkokaupoissa, jotka voivat tarjota tätä vaihtoehtoa, sekä yksittäisen myymälän kanaville, jotka tarjoavat tämän tilauksen täyttämistavan. Toimitustavat on myös linkitettävä tuotteisiin. Jos tässä esimerkissä on tiettyjä tuotteita, joita ei voida täyttää käyttäen "noutoa tien vierestä", on varmistettava, että nämä nimikkeet jätetään pois. Kun olet lisännyt tarvittavat uudet toimitustavat, suorita **Käsittele toimitustavat** -työ luodaksesi toimitustapojen, kanavien ja nimikkeiden väliset suhteet. Kun työ on valmis, avaa **Jakeluaikataulu** -sivu Commerce Headquarters -sovelluksessa ja suorita **1120**- jakelutehtävä varmistaaksesi, että asianmukaiset Commerce-kanavan tietokannat päivitetään uuden toimitustavan määrityksillä.
 
 ![Esimerkki toimitustavan määrityksestä tien vierestä noudolle](media/pickupmodes.png)
 

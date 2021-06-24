@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc8607e5c3c6ab63a3878b92072bde2ebb0216c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814533"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189639"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materiaalikulutuksen rekisteröinti mobiililaitteella
 
@@ -28,8 +28,7 @@ ms.locfileid: "5814533"
 
 Tässä ohjeaiheessa käsitellään työnkulkua, jolla tuotannossa kulutettavat raaka-aineet voidaan rekisteröidä kämmenlaitteella.
 
-<a name="introduction"></a>Johdanto
-------------
+## <a name="introduction"></a>Johdanto
 
 Tämä työnkulku on hyödyllinen, jos materiaalin tarkka seuranta on välttämätöntä. Näissä tilanteissa materiaalin jäljitettävyyden ylläpito edellyttää kulutuksen tarkan ajan ja määrän ilmoittamista. Tämä prosessi voidaan nähdä esi- tai jälkipoiston peilikuvana, sillä näissä toiminnoissa rekisteröinnin ajankohta ja varsinaisen kulutuksen ajankohta poikkeavat toisistaan. Tämän vuoksi automaattista kulutusstrategiaa ei voi käyttää joissakin materiaaleissa, joissa on edellytyksenä jäljitettävyys. Tarkastellaan yksinkertainen skenaariota, joka selittää, miten määritetään työnkulku tuotannossa tapahtuvan raaka-aineiden kulutuksen rekisteröintiin kämmenlaitteella. [![työnkulun määrittäminen ottamaan käyttöön raaka-aineiden kulutuksen kirjaaminen kannettavan laitteen avulla](./media/scenario3.png)](./media/scenario3.png)
 

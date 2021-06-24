@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054016"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190229"
 ---
 # <a name="set-up-training-courses"></a>Määritä koulutuskursseja
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054016"
 
 Henkilöstöhallinnon järjestelmänvalvojat ja esimiehet voivat ylläpitää tietoja työntekijöille tarjottavista kursseista kurssitoiminnoilla.
 
- <a name="set-up-prerequisites"></a>Määritä edellytykset
----------------------
+##  <a name="set-up-prerequisites"></a>Määritä edellytykset
 
 Seuraavat tiedot ovat pakollisia, ja ne on määritettävä ennen kurssien luontia.
 -   **Kurssityypit**
@@ -127,8 +126,7 @@ Seuraavassa taulukossa luetellaan mahdolliset kurssin tilat sekä toiminnot, jot
 ## <a name="course-participants"></a>Kurssin osallistujat
 Kurssin osallistujat ovat työntekijöitä, jotka osallistuvat koulutuskurssille tai tapahtumaan. Voit rekisteröidä osallistujia vain avoimille kursseille. Kurssille rekisteröitävien osallistujien vähimmäis- ja enimmäismäärä on määritetty **Kurssit**-sivun **Yleinen**-pikavälilehdessä.
 
-<a name="workflow"></a>Työnkulku
---------
+## <a name="workflow"></a>Työnkulku
 
 Työntekijät, jotka ilmoittautuvat kurssille **työntekijän itsepalvelun** sivulla, voivat saada ilmoittautumisen reititettyä hyväksynnän työnkulun kautta. Voit määrittää työnkulun kurssille **Kurssit**-sivun **Yleiset** -pikavälilehdessä.
 

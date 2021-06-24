@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
+ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838367"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "6164843"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Siirtotilausten luominen varastosovelluksesta
 
@@ -330,7 +330,6 @@ Siirtotilauksen luodaan ilman **Toimituspäivän tarkistus** -ominaisuuksia.
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Voiko sellaista rekisterikilpeä käyttää, jonka fyysinen käytettävissä oleva varasto on negatiivinen?
 
-Toiminto tukee vain positiivisia fyysisen käytettävissä olevan varaston määriä. Varmista ennen rekisterikilpien määrittämistä siirtotilaukseen, että varaston ja varaston tilatason käytettävissä olevan fyysisen varaston määrät ovat positiivisia.
-
+Ominaisuus tukee vain positiivisia fyysisiä käytettävissä olevan varaston määriä rekisterikilpitasolla, mutta voi olla fyysisiä negatiivisia käytettävissä olevia varastoja korkeammalla fyysisen varaston ja varastotilan tasolla, kun määrität siirtotilauksille rekisterikilpiä.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

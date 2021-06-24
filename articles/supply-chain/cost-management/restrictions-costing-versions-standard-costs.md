@@ -16,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdbe74f2f71d0fbd3c237cceb6b184747636e9a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d9d828e2413a20c4e61d162a31d3c2ed2b18718b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821486"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187671"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Standardikustannusten kustannuslaskelmaversioiden rajoitukset
 
@@ -39,8 +39,7 @@ Seuraavilla rajoituksilla voidaan varmistaa standardikustannuksen laskennan peri
 
 Vakiokustannusten nimikekustannustiedot voi kopioida toiseen kustannuslaskelmaversioon, joka sisältää vakiokustannuksia tai suunniteltuja kustannuksia. Suunniteltujen kustannusten nimikekustannustietoja ei kuitenkaan voi kopioida standardikustannuksia sisältävään kustannuslaskelmaversioon, koska tässä ohjeaiheessa luetellut rajoitukset eivät koskisi suunniteltuja kustannuksia.
 
-<a name="related-topics"></a>Liittyvät aiheet
---------
+## <a name="related-topics"></a>Liittyvät aiheet
 
 [Kustannuslaskelmaversiot – yleiskatsaus](costing-versions.md)
 

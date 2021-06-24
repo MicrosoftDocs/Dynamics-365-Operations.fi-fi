@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e334c6351814db191731ce94c4a704863679dd85
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0edc2fcbde536e98fa3ce3567c2c8fdf3fc864ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820880"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188779"
 ---
 # <a name="configure-accounts-payable-overview"></a>Ostoreskontran määrittäminen – yleiskatsaus
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820880"
 
 Tässä artikkelissa käsitellään sivuja, joiden avulla määritetään perus- ja valinnaiset toiminnot ostoreskontrassa. Artikkelissa kerrotaan myös ennen ostoreskontran määrittämisen aloittamista suoritettavat asetusvaiheet.
 
-<a name="prerequisites-for-accounts-payable-setup"></a>Ostoreskontra-määrityksen edellytykset
-----------------------------------------
+## <a name="prerequisites-for-accounts-payable-setup"></a>Ostoreskontra-määrityksen edellytykset
 
 Ennen ostoreskontran määrittämäistä, seuraavat asetukset on määritettävä:
 

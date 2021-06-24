@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service
 description: Tämä ohjeaihe sisältää yhteenvedon Regulatory Configuration Servicen (RCS) ominaisuuksista ja tietoja palvelun käytön ominaisuudesta.
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1eeac7217290e0583fcecdf5b4b5b9153d266240
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019391"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216559"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -59,9 +59,19 @@ RCS on yleensä käytettävissä seuraavilla alueilla:
 
 Täydellinen luettelo alueista on kohdassa [Dynamics 365 ja Power Platform: Saatavuus, tietojen sijainti, kieli ja lokalisointi](https://aka.ms/dynamics_365_international_availability_deck).
 
+## <a name="rcs-default-company"></a>RCS-oletusyritys
+
+Suunnittele RCS:ssä käytettävät aikatoiminnot, jotka jaetaan kaikille yrityksille. Yrityskohtaisia toimintoja ei ole. Siksi on suositeltavaa käyttää yhtä yritystä (**DAT**) RCS-ympäristössäsi.
+
+Joissakin tilanteissa haluat ehkä kuitenkin ER-muotojen käyttävän tiettyyn yritykseen liittyviä parametreja. Vain näissä tilanteissa on käytettävä oletusyrityksen valitsinta. Katso esimerkiksi: [Sähköisen raportoinnin muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md).
+
 ## <a name="related-rcs-documentation"></a>Aiheeseen liittyviä RCS-asiakirjoja
 
-Katso lisätietoja liittyvistä komponenteista seuraavista ohjeista:
+Katso lisätietoja liittyvistä komponenteista seuraavista aiheista:
+
+- **RCS:**
+
+    - [Sähköisen raportoinnin konfiguraatioiden luominen RCS:ssä ja niiden lataaminen yleiseen säilöön](rcs-global-repo-upload.md)
 
 - **Yleinen säilö:**
 
@@ -70,7 +80,20 @@ Katso lisätietoja liittyvistä komponenteista seuraavista ohjeista:
     - [Parannettu suodatus Global repossa](enhanced-filtering-global-repo.md)
     - [Sähköisen raportoinnin konfiguraatioiden lataaminen Global reposta](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Määritysten lopettaminen Global repossa](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen](rcs-lcs-repo-dep-faq.md)
 
 - **Globalisaatio-ominaisuus:**
 
     - [Regulatory configuration service (RCS) – globalisointiominaisuus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## <a name="troubleshooting-rcs-sign-up"></a>RCS-rekisteröinnin vianmääritys
+
+Kun rekisteröidyt RCS:ään palvelun sivulta, saatat kohdata Azure Active Directoryyn (Azure AD) liittyvän ongelman. Näyttöön avautuva virhesanoma ilmoittaa, että RCS-rekisteröityminen on poistettuna käytöstä, ja se on otettava käyttöön, ennen kuin rekisteröintiprosessi voidaan suorittaa.
+
+![RCS-rekisteröitymisen virhesanoma](media/01_RCSSignUpError.jpg)
+
+Tämä ongelma ilmenee, koska ad-hoc-tilausten rekisteröityminen on estetty ja `AllowAdHocSubscriptions`-ominaisuus on otettava käyttöön vuokraajassa. 
+
+- Jos IT-osastosi hallitsee organisaatiosi Azure-vuokraajia, ota yhteyttä tähän osastoon ja raportoi ongelma.
+- Jos vastaat Azure-vuokraajien hallinnasta, voit korjata ongelmat noudattamalla seuraavia ohjeita: [Azure Active Directory -rekisteröityminen itsepalveluna](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).
