@@ -12,9 +12,9 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Platform update -päivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
+                - name: Platform update -päivitysten aloitussivun uudet ja muuttuneet ominaisuudet
                   href: get-started/whats-new-home-page.md
-                - name: Platform update -päivitykset versioon 10.0.20 (heinäkuu 2021)
+                - name: Platform update -päivitykset versioon 10.0.20 (elokuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platform update -päivitykset versioon 10.0.19 (kesäkuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -846,16 +846,14 @@
                       href: extensibility/breaking-changes.md
                     - name: Yhteensopivuuden tarkistustyökalu
                       href: extensibility/compatibility-checker-tool.md
-            - name: Suoritustaso
+            - name: Suorituskyky
               items:
                 - name: Jäljittäminen jäljityksen jäsentimen avulla
                   href: perf-test/trace-trace-tutorial.md
-                - name: 'Yhden käyttäjän testaus tehtävien tallennustoiminnon ja suorituskyvyn SDK:n avulla'
+                - name: 'Yhden käyttäjän testaus suorituskyvyn SDK:n ja tehtävien tallennustoiminnon avulla'
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Usean käyttäjän suorituskyvyn SDK‑testaus paikallisen testauksen valvojan avulla
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja Azure DevOps -palvelun avulla'
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n avulla'
+                  href: perf-test/perfsdk-multi-user-testing.md
                 - name: 'Suorituskyvyn SDK:n avulla testaamisen vianmääritysopas'
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: 'Suorituskyvyn SDK:lla testaus ja usean käyttäjän testaus paikallisissa ympäristöissä'
@@ -1536,11 +1534,13 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Eräkäsittely ja eräpalvelimet
                   href: sysadmin/batch-server-overview.md
-                - name: Luo erätyöt
+                - name: Erätöiden luominen
                   href: sysadmin/tasks/create-batch-job.md
+                - name: Automaattisten uudelleenyritysten ottaminen käyttöön erätöissä
+                  href: sysadmin/retryable-batch.md
                 - name: Erätyön kopiointi
                   href: sysadmin/copy-batch-job.md
-                - name: Aktiiviset eräjaksot
+                - name: Aktiiviset eräkaudet
                   href: sysadmin/activeperiod.md
                 - name: Aktiivisten eräkausien kesäajan tuki
                   href: sysadmin/batch-active-period-dst.md
@@ -1588,12 +1588,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 -päivitys – päivitystä edeltävä tarkistusluettelo tietojen päivitystä varten
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä dacpac-prosessin avulla
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
-                - name: Päivittäminen kohteesta AX 2012 - SQL-tapahtuman replikointi
+                - name: 'Päivitys AX 2012:sta - SQL-tapahtuman replikointi'
                   href: database/replication-setup.md
-                - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: 'Päivitys AX 2012:sta – tietojen päivitys itsepalveluympäristöissä'
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012 -päivitys – paikalliset ympäristöt
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012 -päivitys – valmistelusiirron testaaminen

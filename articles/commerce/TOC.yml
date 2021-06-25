@@ -92,9 +92,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Commercen uudet ja muuttuneet ominaisuudet
                   items:
-                    - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
+                    - name: Commercen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.20 (heinäkuu 2021)
+                    - name: Commerce 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -244,7 +244,7 @@
                   href: arch-auth-flow.md
                 - name: Dynamics 365 Commercen komponentin versiointivaatimukset
                   href: arch-component-versioning.md
-                - name: Commerce Scale Unit -arkkitehtuuri
+                - name: Commercen headless-moduulin arkkitehtuuri
                   href: dev-itpro/retail-server-architecture.md
                 - name: Myymälän topologian valitseminen
                   href: dev-itpro/retail-in-store-topology.md
@@ -258,7 +258,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS -arkkitehtuuri
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Verkkokaupan julkaisuarkkitehtuuri
+                - name: Verkkokauppakanavan julkaiseminen
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI -sisältö
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -546,7 +546,9 @@
                       href: paypal.md
                     - name: Lompakkomaksun tuki
                       href: wallets.md
-                    - name: Maksut – usein kysytyt kysymykset
+                    - name: Parannettu maksutoiminnallisuus verkkokaupan kassalla
+                      href: dev-itpro/enhanced-sca.md
+                    - name: Maksujen usein kysytyt kysymykset
                       href: dev-itpro/payments-retail.md
                 - name: Sähköposti ja ilmoitukset
                   items:
@@ -770,10 +772,14 @@
                   href: notifications-pos.md
                 - name: Jatkuvuusohjelmien myyminen ja myyntitilausten käsitteleminen
                   href: tasks/use-continuity-program.md
-                - name: Ota käyttöön asiakkaan sisäänkuittausten ilmoitukset myyntipisteissä
+                - name: Asiakkaan sisäänkuittausilmoitusten ottaminen käyttöön myyntipisteissä
                   href: enable-customer-check-in.md
-            - name: Palautukset
+            - name: Palautukset ja hyvitykset
               items:
+                - name: Palautusten luominen myyntipisteessä
+                  href: POS-returns.md
+                - name: Sarjanumeron avulla seurattujen tuotteiden palautus myyntipisteessä
+                  href: POS-serial-returns.md
                 - name: Linkitetyt palautukset
                   href: dev-itpro/linked-refunds.md
                 - name: Myymälän valikoimaan sisältymättömien tuotteiden myynti ja palauttaminen
@@ -1228,8 +1234,10 @@
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory configuration service – globalisointiominaisuudet
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory configuration service -palvelussa ja niiden lataaminen yleiseen säilöön
+                - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service -palvelussa ja niiden lataaminen yleiseen säilöön
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Itävalta
               items:
                 - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
@@ -1238,6 +1246,8 @@
               items:
                 - name: Commercen lokalisointi – Brasilia
                   href: localizations/latam-bra-commerce-localization.md
+                - name: Commercen lokalisoinnin asennus ja käyttöönotto Brasiliaa varten
+                  href: localizations/latam-bra-deployment.md
             - name: Itä-Eurooppa
               items:
                 - name: Yleinen
@@ -1962,13 +1972,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Tehokkaiden sähköisen raportoinnin ratkaisujen suunnitteleminen
+                  items:
+                    - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Sähköisen raportoinnin kokoonpanojen suorituskykyongelmien vianmääritys
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Liiketoiminta-asiakirjojen hallinta (BDM)
                   items:
                     - name: 'BDM:n yleiskatsaus'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'BDM:n uusi asiakirjan käyttöliittymä'
+                    - name: 'BDM:n uusi asiakirjojen käyttöliittymä'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Liiketoiminta-asiakirjamallien muokkaaminen BDM:ssä'
                       items:
@@ -2392,7 +2406,7 @@
                   href: dev-itpro/retail-sdk/sdk-github.md
                 - name: 'Retail SDK:n usein kysytyt kysymykset'
                   href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: Myyntipisteen laajennettavuus
+            - name: Myyntipisteen (POS) laajennettavuus
               items:
                 - name: Myyntipisteen näyttöasettelut
                   href: pos-screen-layouts.md
