@@ -72,7 +72,7 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.20 (heinäkuu 2021)
+                    - name: Supply Chain Management 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -220,8 +220,10 @@
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory configuration service – globalisointiominaisuudet
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory configuration service -pavelussa ja niiden lataaminen yleiseen säilöön
+                    - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service -palvelussa ja niiden lataaminen yleiseen säilöön
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköinen laskutus
                   items:
                     - name: Sähköisen laskutuksen yleiskatsaus
@@ -234,6 +236,8 @@
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Azuren tallennustilin ja Key Vaultin luominen
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Käytön hallinnan koontinäyttö
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Aloittaminen
                       items:
                         - name: Sähköisen laskutuksen palvelun hallinnan aloittaminen
@@ -1383,13 +1387,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tehokkaiden sähköisen raportoinnin ratkaisujen suunnitteleminen
+                  items:
+                    - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin kokoonpanojen suorituskykyongelmien vianmääritys
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Liiketoiminta-asiakirjojen hallinta (BDM)
                   items:
                     - name: 'BDM:n yleiskatsaus'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'BDM:n uusi asiakirjan käyttöliittymä'
+                    - name: 'BDM:n uusi asiakirjojen käyttöliittymä'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Liiketoiminta-asiakirjamallien muokkaaminen BDM:ssä'
                       items:
@@ -1675,30 +1683,38 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Kysynnän ennuste
+            - name: Ennusteet
               items:
-                - name: Kysynnän ennustepalveluiden yleiskatsaus
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Kysynnän ennusteiden asetukset
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Kysynnän ennusteiden historiatietojen tuonti
-                  href: master-planning/import-historical-data.md
-                - name: Tilastollisen perusennusteen luominen
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Perusennusteen manuaalinen oikaisu
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Oikaistun ennusteen valtuuttaminen
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Ennusteen tarkkuuden seuranta
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Vähennysavaimet
-                  href: master-planning/reduction-keys.md
-                - name: Perusennusteen luominen
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Kysynnän ennusteen muokkaaminen manuaalisesti
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Kysynnän ja tarjonnan ennusteet
+                  items:
+                    - name: Varastoennusteet
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Opas: kysynnän ennusteen manuaalinen muokkaaminen'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Kysynnän ennusteet
+                  items:
+                    - name: Kysynnän ennusteiden yleiskatsaus
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Kysynnän ennusteiden asetukset
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Tilastollisen perusennusteen luominen
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Perusennusteen manuaalinen oikaisu
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Oikaistun ennusteen valtuuttaminen
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Kysynnän ennusteiden historiatietojen tuonti
+                      href: master-planning/import-historical-data.md
+                    - name: Poikkeavien arvojen poistaminen historiallisista tapahtumatiedoista kysynnän ennustetta laskettaessa
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Ennusteen tarkkuuden seuranta
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Opas: perusennusteen luominen'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Pääsuunnittelu ja ennuste
+                  items:
+                    - name: Ennusteen vähennysavaimet
+                      href: master-planning/reduction-keys.md
             - name: Pääsuunnittelun vianmääritys
               href: master-planning/troubleshoot-masterplanning.md
         - name: Mobiilisovellus
@@ -3425,6 +3441,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Myynti ja markkinointi
               items:
+                - name: Määrää ei voi pienentää myyntitilausta peruutettaessa
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: 'Järjestelmänvalvojat eivät voi poistaa tilausten pitoa, koska heillä ei ole poisto-oikeutta'
                   href: troubleshooting/sales/system-administrator.md
             - name: Kuljetustenhallinta
