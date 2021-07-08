@@ -1208,9 +1208,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Taloushallinnon raportoinnin usein kysytyt kysymykset
               href: general-ledger/financial-reporting-faq.md
-        - name: Taloushallinnon tiedot
+        - name: Finance insights
           items:
-            - name: Taloushallinnon tietojen aloitussivu
+            - name: Finance insights -kotisivu
               href: finance-insights/finance-insights-home-page.md
             - name: Määrittäminen ja hallinta
               items:
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Tietojen integrointiohjelman projektin luominen
                   href: finance-insights/create-data-integrate-project.md
-            - name: Taloushallinnon tietojen käyttäminen
+            - name: Finance insights -käyttö
               items:
                 - name: Budjettiehdotukset
                   href: finance-insights/budget-proposals.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service -palvelussa ja niiden lataaminen yleiseen säilöön
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – poista RCS-ympäristö
+                      href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Sähköinen laskutus
@@ -1524,6 +1526,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-myyntiluettelo
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Yhdistyneen kuningaskunnan raportointi
+                          items:
+                            - name: 'MTD:n integroinnin valmisteleminen ALV:tä varten'
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Pakolliset päivitykset
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -3176,6 +3182,8 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Ostosreskontran velan verorekisterit ja velan poiskirjaukset
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Myyntireskontran luottotappiovaraukset
+                      href: localizations/rus-bad-debts.md
             - name: Saudi-Arabia
               items:
                 - name: Saudi-Arabia – yleiskatsaus
@@ -3292,8 +3300,6 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Käänteisen verovelvollisuuden arvonlisäveroryhmien määrittäminen
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: 'ALV:n määrittäminen digitaaliseksi'
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Maksukäytäntöjen raportin tilastot
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Yhdysvallat
@@ -3665,6 +3671,12 @@
               items:
                 - name: Kaavan kieli
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Sähköisen raportoinnin kaavojen tuetut tietotyypit
+                  items:
+                    - name: Primitiiviset tietotyypit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Yhdistelmätietotyypit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Funktiot
                   items:
                     - name: Säilö
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: Sähköisen raportoinnin muotojen suunnitteleminen lähtevien asiakirjojen luomiseksi eri muodoissa
               items:
+                - name: Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguraatioiden suunnitteleminen lähtevien asiakirjojen luomiseksi Excel-muodossa
                   items:
                     - name: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Esimerkki raporttien luomisesta OPENXML-muodossa
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja uudelleen
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
@@ -4191,7 +4203,7 @@
                   items:
                     - name: 'BDM:n yleiskatsaus'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                    - name: 'BDM:n uusi asiakirjan käyttöliittymä'
+                    - name: 'BDM:n uusi asiakirjojen käyttöliittymä'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
                     - name: 'Liiketoiminta-asiakirjamallien muokkaaminen BDM:ssä'
                       items:
@@ -4211,12 +4223,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin kohteen luomisen delegoiminen mukautettuun kohdetehtaaseen
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                    - name: Mukautetun sijainnin käyttöönotto luoduille asiakirjoille
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Tietolähdearvojen käynnistäminen lähdekoodin USER INPUT PARAMETER -tyypistä
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobiilisovellus
