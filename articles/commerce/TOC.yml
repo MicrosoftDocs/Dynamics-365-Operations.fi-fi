@@ -100,8 +100,6 @@
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (toukokuu 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
-                    - name: Commerce 10.0.17 (huhtikuu 2021)
-                      href: get-started/whats-new-commerce-10-0-17.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -244,7 +242,7 @@
                   href: arch-auth-flow.md
                 - name: Dynamics 365 Commercen komponentin versiointivaatimukset
                   href: arch-component-versioning.md
-                - name: Commercen headless-moduulin arkkitehtuuri
+                - name: Commercen headless-arkkitehtuuri
                   href: dev-itpro/retail-server-architecture.md
                 - name: Myymälän topologian valitseminen
                   href: dev-itpro/retail-in-store-topology.md
@@ -1248,6 +1246,16 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: Commercen lokalisoinnin asennus ja käyttöönotto Brasiliaa varten
                   href: localizations/latam-bra-deployment.md
+                - name: 'NFC-e-veroasiakirjatoiminto Commerce-myyntipisteessä, Brasilia'
+                  href: localizations/latam-bra-nfce.md
+                - name: 'Asiakastietojen hallinta myyntipisteessä, Brasilia'
+                  href: localizations/latam-bra-customer-information.md
+                - name: 'NFC-e-asiakirjojen peruuttaminen ja palauttaminen Commerce-myyntipisteessä, Brasilia'
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: Offline-varasuunnitelmatilassa tehtyjen NFC-e-asiakirjojen viivytetty rekisteröinti
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: Julkaise Brasilian veroasiakirjoja vähittäismyynnin tiliotteiden avulla Commerce-pääkonttorissa
+                  href: localizations/latam-bra-retail-statements.md
             - name: Itä-Eurooppa
               items:
                 - name: Yleinen
@@ -1458,6 +1466,12 @@
               items:
                 - name: Kaavan kieli
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: Sähköisen raportoinnin kaavojen tuetut tietotyypit
+                  items:
+                    - name: Primitiiviset tietotyypit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: Yhdistelmätietotyypit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: Funktiot
                   items:
                     - name: Säilö
@@ -2002,12 +2016,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                    - name: Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Sähköisen raportoinnin kohteen luomisen delegoiminen mukautettuun kohdetehtaaseen
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Mukautetun sijainnin käyttöönotto luoduille asiakirjoille
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: Tietolähdearvojen käynnistäminen lähdekoodin USER INPUT PARAMETER -tyypistä
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365) -mobiilisovellus

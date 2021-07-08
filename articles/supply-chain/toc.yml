@@ -78,8 +78,6 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (toukokuu 2021)
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: Supply Chain Management 10.0.17 (huhtikuu 2021)
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -603,6 +601,20 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Finance and Operations -mobiilisovelluksen kustannusseurannan työtilan käyttö
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Yleinen varastokirjanpito
+          items:
+            - name: Yleisen varastokirjanpidon aloitussivu
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: Yleisen varastokirjanpidon käytön aloittaminen
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: Yleisen varastokirjanpidon tukemat yritysasiakirjat
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: 'Power BI:n ottaminen käyttöön yleisessä varastokirjanpidossa'
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Käytännöt
+              href: global-inventory-accounting/conventions.md
+            - name: Yleisen varastokirjanpidon tapahtumarekisteri
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Kustannusten hallinta
           items:
             - name: Kustannusten hallinnan aloitussivu
@@ -873,6 +885,12 @@
               items:
                 - name: Kaavan kieli
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sähköisen raportoinnin kaavojen tuetut tietotyypit
+                  items:
+                    - name: Primitiiviset tietotyypit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Yhdistelmätietotyypit
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funktiot
                   items:
                     - name: Säilö
@@ -1417,12 +1435,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Sähköisen raportoinnin kohteen luomisen delegoiminen mukautettuun kohdetehtaaseen
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mukautetun sijainnin käyttöönotto luoduille asiakirjoille
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tietolähdearvojen käynnistäminen lähdekoodin USER INPUT PARAMETER -tyypistä
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Varastonhallinta
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Varmuusmarginaalit
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Viivetoleranssi (negatiiviset päivät)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: Ostoehdotukset
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Tuotannon suunnittelu
@@ -1603,6 +1627,8 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Tuotteiden sulkeminen pois tietyistä tuotteen elinkaaren tiloista
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Täydennysmenetelmät ja määrän muokkaus
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Kattavuuden aikarajat
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Suunniteltujen tilausten hyväksyminen
@@ -3047,9 +3073,11 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin
+                - name: 'Tuo saapuvat ASN:t V2-tietoyksikön kautta'
+                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Tuotteiden laiturointi vastaanottavasta varastosta myymälöihin
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                - name: Sijaintidirektiivin määrittäminen ostotilauksen poispanolle
+                - name: Sijaintidirektiivin määrittäminen ostotilauksen hyllytykselle
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Työmallin määrittäminen ostotilauksia varten
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
@@ -3215,6 +3243,8 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Sijainnin osittaisen inventointiprosessin määrittäminen
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Inventoinnin esimerkkiskenaariot
+                      href: warehousing/cycle-counting-scenarios.md
                     - name: Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
                       href: warehousing/onhand-cleanup.md
                     - name: Varastokirjauskansiot
@@ -3241,11 +3271,57 @@
                       href: warehousing/mhax.md
                     - name: Varastotyön vianmääritys
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: Varastosovellus
+              items:
+                - name: 'Mobiililaitteiden asentaminen, määrittäminen ja käyttäminen'
+                  items:
+                    - name: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
+                      href: warehousing/whats-new-wma.md
+                    - name: Warehouse Management ‑mobiilisovelluksen asentaminen ja yhteyden muodostaminen
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Varastosovelluksen asentaminen ja yhdistäminen
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Viivakoodien lukeminen kameran avulla Warehouse Management -mobiilisovelluksessa
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Warehouse Management -mobiilisovelluksen yhteysongelmien vianmääritys
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: Kenttien ja valikoiden määrittäminen mobiililaitteille
+                  items:
+                    - name: Warehouse Management ‑mobiilisovelluksen kenttien määrittäminen
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Varastotyön mobiililaitteiden määrittäminen
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Valikkokohteen määrittäminen mobiililaitteelle keräilyrivin yleiskatsausta varten
+                      href: warehousing/pick-line-overview.md
+                    - name: Valikkokohteen luominen mobiililaitteelle rekisterikilven konsolidointia varten
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Yhdistetyn rekisterikilven vastaanotto mobiililaitteella
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Mobiililaitteen vanhimman erän kerääminen
+                      href: warehousing/pick-oldest-batch.md
+                - name: Mobiililaitteen käyttäjäasetukset
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Varastosovelluksen tapahtumakäsittely
+                  href: warehousing/warehouse-app-events.md
+                - name: Varastosovelluksen mukauttaminen
+                  items:
+                    - name: Prosessioppaan kehys
+                      href: warehousing/process-guide-framework.md
+                    - name: Vaihekuvakkeiden ja otsikoiden määrittäminen
+                      href: warehousing/step-icons-titles.md
             - name: Varaston asetukset
               items:
-                - name: Varaston konfigurointi
+                - name: Varaston määrittäminen
                   items:
-                    - name: Varaston konfiguroinnin yleiskatsaus
+                    - name: Varaston määrityksen yleiskatsaus
                       href: warehousing/warehouse-configuration.md
                     - name: Varaston määrittäminen varaston konfigurointimallin avulla
                       href: inventory/warehouse-template.md
@@ -3277,8 +3353,12 @@
                           href: warehousing/wave-execution-notifications.md
                         - name: Aallon etiketin tulostus
                           href: warehousing/configure-wave-label-printing.md
+                        - name: Etikettien tulostamisen ajoitus aallon aikana
+                          href: warehousing/configure-task-based-wave-label-printing.md
                         - name: Konttiinpakkaus
                           href: warehousing/wave-containerization.md
+                        - name: Konttien pakkausstrategiat
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Lähetysten automaattinen päivitys
                       href: warehousing/auto-update-shipment.md
                     - name: Sijaintiprofiilin luonti
@@ -3307,49 +3387,11 @@
                       href: warehousing/mobile-barcode-support.md
                     - name: Siirtotilausten varaston määrittäminen
                       href: warehousing/transfer-orders-warehouse.md
-                    - name: Varaston konfiguroinnin vianmääritys
+                    - name: Varaston määrityksen vianmääritys
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Warehouse Management ‑mobiilisovelluksen asentaminen ja konfigurointi
-                  items:
-                    - name: Warehouse Management ‑mobiilisovelluksen asentaminen ja yhteyden muodostaminen
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: Mobiililaitteen käyttäjäasetukset
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: Varastosovelluksen asentaminen ja yhdistäminen
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Viivakoodien lukeminen kameran avulla varastonhallinnan mobiilisovelluksessa
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Warehouse Management ‑mobiilisovelluksen kenttien konfigurointi
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Varastotyön mobiililaitteiden määrittäminen
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Vaihekuvakkeiden ja otsikoiden määrittäminen
-                      href: warehousing/step-icons-titles.md
-                    - name: Varastosovelluksen tapahtumakäsittely
-                      href: warehousing/warehouse-app-events.md
-                    - name: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Valikkokohteen määrittäminen mobiililaitteelle keräilyrivin yleiskatsausta varten
-                      href: warehousing/pick-line-overview.md
-                    - name: Valikkokohteen luominen mobiililaitteelle rekisterikilven konsolidointia varten
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Yhdistetyn rekisterikilven vastaanotto mobiililaitteella
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Varaston vanhojen erien näyttämisen määrittäminen mobiililaitteessa
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Mobiililaitteen vanhimman erän kerääminen
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Prosessioppaan kehys
-                      href: warehousing/process-guide-framework.md
-                    - name: Varastonhallinnan mobiilisovelluksen yhteysongelmien vianmääritys
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Päivitys ja siirto
                   items:
-                    - name: Varaston hallintaprosessien päivittäminen Microsoft Dynamics AX 2012 -sovelluksesta Finance and Operations -sovellukseksi
+                    - name: Varaston hallintaprosessien päivittäminen Microsoft Dynamics AX 2012 -sovelluksesta Finance and Operations -sovellukseen
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
                     - name: Päivityksen vianmääritys ja siirto edistyneeseen varastonhallintaan
                       href: warehousing/troubleshoot-warehouse-upgrade-migration.md
@@ -3393,7 +3435,23 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Pääsuunnittelu
               items:
-                - name: Sisäisen tarkistuksen työnkulku käsittelee suoraan johdetut kiinteät tilaukset
+                - name: 'Näyttöön tulee virheilmoitus, kun käytössä on sisäinen pääsuunnittelumoduuli'
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: Nimikkeellä ei voi olla tuoterakennetta tai kaavaa
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Pääsuunnitelman parametreja ei ole
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: Suunniteltu tuotantotilaus on ajoitettava ennen kuin se voidaan vahvistaa
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: Tuote on pidossa tapahtumia varten
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: Valittua kaavan numeroa ei ole hyväksytty erätilaukseen.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: Toimittajan koodia ei ole valtuutettu tietylle tuotteelle ja päivämäärälle
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: 'Toimittajaa ei määritetä, kun suunniteltuja tilauksia vahvistetaan'
+                  href: troubleshooting/planning/vendor-not-specified.md
+                - name: Sisäisen tarkistuksen työnkulku käsittelee suoraan johdetut vahvistetut tilaukset
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Pääsuunnittelun nimikkeitä ei voi suodattaa niihin liittyvien kattavuusryhmän arvojen mukaan
                   href: troubleshooting/planning/master-planning-batc.md
@@ -3451,6 +3509,20 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Varastonhallinta
               items:
+                - name: Peruutetut tuotteen vastaanotot eivät päivitä tapahtumien tilaa rekisteröidyksi
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: Fyysisen päivitysmäärän desimaalipyöristys on virheellinen
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: Fyysisen jäljelle jäävän määrän yksikössä on oltava muu kuin nolla
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: Kerätyt määrät eivät riitä pakkausluettelon luonnin aikana
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: Määrä ylittää ylitoimitusprosentin pakkausluettelon luonnin aikana
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: Päivitettävä määrä ylittää vastaanotettavan tai toimitetun määrän
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: Määrä ylittää alitoimitusprosentin pakkausluettelon luonnin aikana
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
                 - name: Virhe valittaessa sijaintia keräysluettelon rekisteröinnin aikana
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: Pakkausasema ei näytä tuotteen huomautuksia
