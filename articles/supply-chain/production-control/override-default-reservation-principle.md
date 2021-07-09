@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814799"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270784"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Tuotannon materiaalien oletusvarausperiaatteen ohittaminen
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 *Ohita tuotannon oletusvaraus* -toiminnolla voidaan määrittää kunkin nimikemalliryhmän oletusvarausperiaate. Niinpä kussakin tuotannon tuoterakenteen tai erätilauskaavan nimikkeessä käytetään automaattisesti eri varausperiaatetta. Voit valita, ohittaako jokainen nimikemalliryhmä tilaukselle määritetyn oletusvarausperiaatteen ja mitä varausperiaatetta käytetään sen tilalla (*manuaalinen*, *arvio*, *aikataulutus*, *vapautus* tai *aloitus*).
 
@@ -37,7 +36,7 @@ Jos esimerkiksi raaka-aineet tai ainesosat edellyttävät keräilytyötä, kysei
 Ennen kuin käytät toimintoa, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Tuotannonhallinta*
-- **Toiminnon nimi:** *(Esikatselu) Ohita tuotannon oletusvaraus*
+- **Toiminnon nimi:** *Ohita tuotannon oletusvaraus*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tuotannon varauskäytännön määrittäminen nimikemalliryhmään
 

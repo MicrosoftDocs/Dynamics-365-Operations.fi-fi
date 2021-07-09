@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: e77022bde6e612392c80cf5fe2b4c1e75ec5775d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216740"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271002"
 ---
 # <a name="rebate-management-posting-setup"></a>Ostohyvitysten hallinnan kirjausasetukset
 
@@ -41,7 +41,7 @@ Seuraavassa taulukossa kuvataan asetukset, jotka ovat käytettävissä kunkin os
 |---|---|
 | Kirjausprofiili | Anna profiilille yksilöivä nimi. |
 | kuvaus | Määritä profiilin kuvaus. |
-| Moduuli | Valitse profiiliin liitettyjen ostohyvitysten ja rojaltien tyyppi (*Asiakas* tai *Toimittaja*). |
+| Moduuli | Valitse profiiliin liitettyjen ostohyvitysten ja rojaltien moduuli (*Asiakas* tai *Toimittaja*). |
 | Laji | Valitse profiilityyppi (*Ostohyvitys* tai *Rojalti*). |
 | Maksutyyppi | <p>Tämä kenttä määrittää kirjatun ostohyvityksen tuotoksen muodon.<p><p>Kun **Tyyppi**-kentän arvoksi on määritetty *Ostohyvitys*, seuraavat arvot ovat käytettävissä:</p><ul><li>*Maksa ostoreskontran avulla* – Asiakkaan ostohyvityksen kirjaaminen luo ostohyvityksen asiakkaassa määritetyn maksusuoritustoimittajan toimittajalaskun. Toimittajan ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li><li>*Asiakkaan vähennykset* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li><li>*Veroalskun asiakkaan vähennykset* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan vapaatekstilasku.</li><li>*Kaupankäynnin kulut* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li><li>*Raportointi* – Kun ostohyvitys kirjataan, ostohyvityksen asiakkaalle luodaan asiakkaan vähennyskirjauskansio.</li></ul><p>Kun **Tyyppi**-kentän arvoksi on määritetty *Rojalti*, seuraavat arvot ovat käytettävissä:</p><ul><li>*Maksa ostoreskontran avulla* – Ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li><li>*Raportointi* – Ostohyvityksen kirjaaminen luo ostohyvityksen toimittajatilille toimittajalaskun.</li></ul><p>Lisätietoja on myöhemmässä [Maksutyypit](#payment-types)-osassa. |
 | Yhtiö | Valitse yritys (oikeushenkilö), johon varaukset jaksotetaan ja joka maksaa vaatimukset. |
@@ -66,7 +66,7 @@ Seuraavassa taulukossa on yhteenveto siitä, miten **Maksutyyppi**-kentän eri a
 > Ota huomioon seuraavat seikat, kun määrität [ostohyvitysten hallinnan sopimuksia](rebate-management-deals.md):
 >
 > - Sopimuksille, joiden **Täsmäytä mennessä** -kentän arvona *Sopimus*, et voi käyttää dynaamista sopimustiliä kirjaamisen aikana. On käytettävä määritettyä asiakas- tai toimittajatiliä.
-> - Sopimuksille, joiden **Täsmäytä mennessä** -kentän arvona on *Rivi*, voit käyttää kirjausprofiilia, joka vastakirjaa sopimusrivin dynaamisen sopimustiliin, koska asiakas määritetään sopimusriviä kohti.
+> - Sopimuksille, joiden **Täsmäytä mennessä** -kentän arvona on *Rivi*, voit käyttää kirjausprofiilia, joka vastakirjaa sopimusrivin dynaamisen sopimustiliin, koska asiakas tai toimittaja määritetään sopimusriviä kohti.
 
 ## <a name="posting-fasttab"></a>Kirjauksen pikavälilehti
 
@@ -74,15 +74,15 @@ Seuraavassa taulukossa kuvataan kentät, jotka ovat käytettävissä kunkin osto
 
 | Kenttä | kuvaus |
 |---|---|
-| Luottotyyppi | Valitse, hyvitetäänkö kirjanpitotiliä vai asiakasta tai toimittajaa. |
-| Kredit-tili | Tili, jolle hyvityssummat kirjataan ostohyvitysten yhteydessä. Tätä tiliä käytetään myös veloitustilinä, kun ostohyvitys kirjataan asiakkaalle hyvityksenä. |
+| Luottotyyppi | Valitse, hyvitetäänkö kirjanpitotiliä vai asiakasta. Jos otsikon **Maksutyyppi**-kentän arvoksi on määritetty *Verota laskujen asiakasvähennyksiä*, tämän kentän arvoksi tulee *Kirjanpitotili*. Toimittajan ostohyvitysten osalta tämän kentän arvona on *Kirjanpitotili*. |
+| Kredit-tili | Valitse tili, jolle hyvityssummat kirjataan ostohyvitysten yhteydessä. Tätä tiliä käytetään myös vastatilinä, kun ostohyvitys kirjataan asiakkaalle hyvityksenä tai kuluna toimittajalle. |
 | Kirjauskansion nimi<br>(**Varaus**-osassa) | Valitse kirjatun varauksen kirjaamisen kirjauskansion nimi. |
 | Laji | Valitse, kirjataanko ostohyvitys kirjanpitotilille vai asiakkaalle tai toimittajalle. Jos otsikon **Maksutyyppi**-kentän arvoksi on määritetty *Verota laskujen asiakasvähennyksiä*, tämän kentän arvoksi tulee *Asiakas/Toimittaja*. |
-| Käytä tilin lähdettä | <p>Valitse jokin seuraavista:</p><ul><li>*Ei mitään* – Jos valitset tämän arvon, **Ostohyvitystili**-kentässä on määritettävä tili.</li><li>*Sopimustili* – Käytä ostohyvitysrivillä määritettyä asiakas- tai toimittajatiliä. Voit valita tämän arvon vain sopimuksille, joissa **Täsmäytä mennessä** -kentän arvoksi on määritetty *Rivi* ja sopimusriveille, joissa **Tilikoodi**-kentän arvo on *Taulu*. Se ei koske asiakkaan rojaltien kirjausprofiileja.</li></ul> |
+| Käytä tilin lähdettä | <p>Valitse jokin seuraavista:</p><ul><li>*Korjattu tili* – Jos valitset tämän arvon, **Ostohyvitystili**-kentässä on määritettävä tili.</li><li>*Sopimusrivitili* – Käytä ostohyvitysrivillä määritettyä asiakas- tai toimittajatiliä. Voit valita tämän arvon vain sopimuksille, joissa **Täsmäytä mennessä** -kentän arvoksi on määritetty *Rivi* ja sopimusriveille, joissa **Tilikoodi**-kentän arvo on *Taulu*. Se ei koske myyntitilauksiin perustuvia asiakkaan maksuprofiileja tai toimittajan ostohyvitystä.</li></ul> |
 | Ostohyvitystili | Tili, jolle todellinen ostohyvityskulu kirjataan. |
-| Kirjauskansion nimi<br>(**Ostohyvitysten hallinta** -osassa) | Valitse sen kirjauskansion nimi, johon kirjataan asiakkaalle ostohyvityssumman hyvityslasku. Tämä kenttä ei ole käytettävissä, kun otsikon **Maksutyyppi**-kentän arvoksi on määritetty *Verota laskujen asiakasvähennyksiä*. |
+| Kirjauskansion nimi<br>(**Ostohyvityksen hallinta** -kenttäryhmässä) | Valitse sen kirjauskansion nimi, johon kirjataan asiakkaalle tai toimittajalle ostohyvityssumman hyvityslasku. Tämä kenttä ei ole käytettävissä, kun otsikon **Maksutyyppi**-kentän arvoksi on määritetty *Verota laskujen asiakasvähennyksiä*. Asiakkaan ostohyvitysten *Päivittäisten* kirjaustyyppien kirjauskansioiden nimet ovat käytettävissä. Asiakkaan rojaltit ja toimittajan ostohyvitykset ovat käytettävissä *Toimittajalaskun kirjauksia* -kirjauskansiotyypin kirjauskansion nimiä. |
 | Nimikkeen arvonlisäveroryhmä | Määritä, onko ostohyvitys verotettava. |
-| Kirjauskansion nimi<br>(**Kirjaa pois** -osassa) | Jos kirjattu ostohyvitys ei ole sama kuin varaus, erotus voidaan kirjata pois. Valitse kirjatun poiskirjauksen kirjaamisen kirjauskansion nimi. |
+| Kirjauskansion nimi<br>(Kohteessa **Poiskirjaus**-kenttäryhmä) | Jos kirjattu ostohyvitys ei ole sama kuin varaus, erotus voidaan kirjata pois. Valitse kirjatun poiskirjauksen kirjaamisen kirjauskansion nimi. |
 
 ## <a name="posting-by-company-fasttab"></a>Kirjaus yrityksen mukaan -pikavälilehti
 
@@ -92,6 +92,6 @@ Voit lisätä ruudukkoon yrityksiä tai poistaa niitä työkalurivin painikkeide
 
 Valitse kunkin yrityksen rivi ja syötä sitten seuraavat tiedot ruudukon alla olevia kenttiä käyttäen:
 
-- **Veloitustyyppi** – Valitse, veloitetaanko kirjanpitotiliä vai asiakasta tai toimittajaa.
+- **Veloitustyyppi** – Valitse, veloitetaanko kirjanpitotiliä vai toimittajaa. Asiakkaan ostohyvitysten ja provisioiden osalta tämän kentän arvona on *Kirjanpitotili*.
 - **Debet-tili** – Määritä tili, jolle veloitussumma kirjataan, kun ostohyvityksen varauksia tehdään.
 - **Päätili** – Valitse poiskirjausten päätili.

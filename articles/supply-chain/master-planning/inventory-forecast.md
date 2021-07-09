@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216839"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306412"
 ---
 # <a name="inventory-forecasts"></a>Varastoennusteet
 
@@ -353,20 +353,46 @@ Näiden ohjeiden avulla voit käsitellä aiemmin luotuja ennustetapahtumarivejä
 1. **Taloushallinnon dimensiot** -osassa voit päivittää ennusterivien taloushallinnon dimensiot. Valitse muutettavat taloushallinnon dimensiot ja anna sitten valittuihin dimensioihin sovellettava arvo.
 1. Ota muutokset käyttöön valitsemalla **OK**.
 
-## <a name="run-forecast-planning"></a>Ennustesuunnittelun suorittaminen
+## <a name="use-forecasts-with-master-planning"></a>Käytä ennusteita pääsuunnittelussa
 
-Kun kysyntäennuste ja/tai tarjontaennuste on syötetty, voidaan ennustesuunnittelutoiminnolla laskea materiaalien ja kapasiteetin bruttotarve sekä luoda suunnitellut tilaukset.
+Kun olet syöttänyt kysyntäennusteen ja/tai tarjontaennusteen, voit sisällyttää ennusteet pääsuunnittelun aikana odotetun kysynnän ja/tai tarjonnan huomioon ottamiseksi pääsuunnitteluajossa. Kun ennusteet sisältyvät pääsuunnitteluun, järjestelmä laskee materiaalien ja kapasiteetin bruttotarpeet ja luo suunnitellut tilaukset.
 
-1. Siirry kohtaan **Pääsuunnittelu \> Ennusteet \> Ennustesuunnittelu**.
-1. Valitse **Ennustesuunnitelma** -kentästä ennustesuunnitelma.
-1. Ota käyttöön **Seuraa käsittelyaikaa** kunkin suunnittelutehtävän käsittelyajan kirjaamista varten.
-1. Syötä **Säikeiden määrä** -kenttään arvo. (Lisätietoja on kohdassa [Paranna pääsuunnittelun suorituskykyä](master-planning-performance.md).)
-1. Kirjoita mahdolliset lisätiedot tekstinä **Kommentti**-kenttään.
-1. Rajoita nimikkeiden valintaa valitsemalla **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
-1. Määritä erän parametrit **Suorita taustalla** -pikavälilehdessä.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Pääsuunnittelun määrittäminen sisältämään varaston ennuste
+
+Pääsuunnitelma asennetaan sisältämään varaston ennuste seuraavasti.
+
+1. Siirry kohtaan **Pääsuunnittelu \> Määritykset \> Suunnitelmat \> Pääsuunnitelmat**.
+1. Valitse aiemmin luotu suunnitelma tai luo uusi suunnitelma.
+1. Valitse **Yleiset**-pikavälilehdellä seuraavat lisäkentät:
+
+    - **Ennustemalli** – Valitse käytettävä ennustemalli. Tämä malli otetaan huomioon, kun nykyiselle pääsuunnitelmalle luodaan toimitusehdotuksia.
+    - **Sisällytä tarjonnan ennuste** – Määritä vaihtoehdoksi *Kyllä*, jos haluat sisällyttää tarjonnan ennusteen nykyiseen pääsuunnitelmaan. Jos määrität vaihtoehdoksi *Ei*, tarjonnan ennusteen tapahtumia ei sisällytetä pääsuunnitelmaan.
+    - **Sisällytä kysynnän ennuste** – Määritä vaihtoehdoksi *Kyllä*, jos haluat sisällyttää kysynnän ennusteen nykyiseen pääsuunnitelmaan. Jos määrität vaihtoehdoksi *Ei*, kysynnän ennusteen tapahtumia ei sisällytetä pääsuunnitelmaan.
+    - **Ennustevaatimusten vähentämiseen käytetty menetelmä** – Valitse menetelmä, jolla ennustevaatimuksia vähennetään. Lisätietoja on [Ennusteiden vähennysavaimet](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. Voit määrittää **Aikarajat päivinä** -pikavälilehdessä seuraavat kentät määrittämään ennusteen sisältävän kauden seuraavien aikana:
+
+    - **Ennustesuunnitelma** – Määritä asetukseksi *Kyllä*, jolloin yksittäisistä kattavuusryhmistä peräisin oleva ennustesuunnitelman aikaraja ohitetaan. Määritä asetukseksi *Ei*, jolloin käytetään nykyisen pääsuunnitelman yksittäisen kattavuusryhmien arvoja.
+    - **Ennusteen ajanjakso** – jos **Ennustesuunnitelman** -asetuksena on *Kyllä*, määritä kuinka monta päivää (kuluvasta päivämäärästä) kysynnän ennustetta käytetään.
+
+    > [!IMPORTANT]
+    > **Ennustesuunnitelma**-valintaa ei vielä tueta suunnittelun optimoinnissa.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Suorita pääsuunnittelu, joka sisältää varaston ennusteen
+
+Pääsuunnitelma suoritetaan sisältämään varaston ennuste seuraavasti.
+
+1. Mene kohtaan **Pääsuunnittelu \> Työtila \> Pääsuunnittelu**.
+1. Lisää tai valitse **Pääsuunnittelu**-kentässä pääsuunnitelma, joka määritetään edellisessä menetelmässä.
+1. Valitse **Pääsuunnittelu**-ruudussa **Suorita**.
+1. Määritä **Pääsuunnittelu**-valintaikkunassa **Seuraa käsittelyaikaa** -asetuksen arvoksi *Kyllä*.
+1. Syötä **Säikeiden määrä** -kenttään numero.
+1. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
+1. Näyttöön tulee vakiokyselyeditorin valintaikkuna. Valitse **Alue**-välilehdellä rivi, jonka **Kenttä**-kentän arvona on *Nimiketunnus*.
+1. Valitse **Kriteeri**-kentästä suunnitelmaan sisällytettävä nimiketunnus.
 1. Valitse **OK**.
 
-Voit tarkastella laskettuja tarpeita avaamalla **Bruttotarve**-sivun. Valitse esimerkiksi **Vapautetut tuotteet** -sivun **Suunnitelma**-välilehden **Tarve**-osasta **Bruttotarve**.
+Voit tarkastella laskettuja tarpeita avaamalla **Bruttotarve**-sivun. Valitse esimerkiksi toimintoruudun **Vapautetut tuotteet** -sivun **Suunnitelma**-välilehden **Tarve**-ryhmästä **Bruttotarve**.
 
 Voit tarkastella luotuja suunniteltuja tilauksia kohdassa **Pääsuunnittelu \> Yhteiset \> Suunnitellut tilaukset** ja valita soveltuvan ennustesuunnitelman.
 
@@ -376,5 +402,6 @@ Voit tarkastella luotuja suunniteltuja tilauksia kohdassa **Pääsuunnittelu \> 
 - [Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
 - [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
 - [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
+- [Pääsuunnittelu ja kysynnän ennusteet](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5188fa271cd9eb24140a9edcf507a3da72b61074
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 82b8a4e6ba7ebea7df9f5dad5abc3dfc3ce2687d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020528"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270758"
 ---
 # <a name="process-review-and-post-rebates"></a>Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen
 
@@ -55,9 +55,9 @@ Kun sopimukset käsitellään, järjestelmä laskee kaikki asianmukaiset ostohyv
 1. Valitse kunkin käsiteltävän sopimuksen rivi (tai avaa käsiteltävä sopimus).
 1. Valitse toimintoruudun **Ostohyvitysten hallinnan sopimukset** -välilehden **Luo**-ryhmästä jokin seuraavista komennoista:
 
-    - **Käsittele \> Valmistele** – Valmistele jaksotusjoukko kutakin asiaankuuluvaa ostohyvityssopimusta varten, mutta älä kirjaa niitä.
+    - **Käsittele \> Valmistele** – Valmistele jaksotusjoukko kutakin asiaankuuluvaa ostohyvityssopimusta varten, mutta älä kirjaa niitä. Tämä valikkokohde ei ole käytettävissä tarjouksille, joissa **ostohyvityksen toimitus** -kentän arvoksi on määritetty *Nimike*.
     - **Käsittele \> Ostohyvityksen hallinta** – Käsittele tapahtumasarja, joka antaa ostohyvityksen arvon kullekin sopimukselle.
-    - **Käsittele \> Kirjaa pois** – Palauta aiemmin kirjatut tapahtumat ja kirjaa ne pois, jotta uudet ostohyvityksen sopimustapahtumat voidaan laskea.
+    - **Prosessi \> Poiskirjaus** – Käsittele kullekin ostohyvityssopimuksen ja määritetyn kauden lähdetapahtumalle varalle kirjattujen summien ja ostohyvitysten hallinnan välinen ero. Tämä valikkokohde ei ole käytettävissä tarjouksille, joissa **ostohyvityksen toimitus** -kentän arvoksi on määritetty *Nimike*.
 
 1. Määritä laskelman päivämääräalue asettamalla näyttöön tulevassa valintaikkunassa **Päivämäärästä**- ja **Päivämäärään**-kentät.
 1. Suorita laskenta valitsemalla **OK**.
@@ -70,9 +70,9 @@ Kun sopimukset käsitellään, järjestelmä laskee kaikki asianmukaiset ostohyv
 1. Valitse **Ostohyvityksen hallinta** -pikavälilehdessä jokaisen käsiteltävän sopimusrivin rivi.
 1. Valitse **Ostohyvityksen hallinta** -pikavälilehden työkaluriviltä jokin seuraavista komennoista. (Nämä komennot ovat käytettävissä vain sopimuksille, joissa **Täsmäytä mennessä** -kentän mukaan arvoksi määritetään *Rivi*.)
 
-    - **Käsittele \> Valmistele** – Valmistele jaksotusjoukko kutakin asiaankuuluvaa sopimusriviä varten, mutta älä kirjaa niitä.
+    - **Käsittele \> Valmistele** – Valmistele jaksotusjoukko kutakin asiaankuuluvaa sopimusriviä varten, mutta älä kirjaa niitä. Tämä valikkokohde ei ole käytettävissä tarjouksille, joissa **ostohyvityksen toimitus** -kentän arvoksi on määritetty *Nimike*.
     - **Käsittele \> Ostohyvityksen hallinta** – Käsittele tapahtumasarja, joka antaa ostohyvityksen arvon kullekin sopimusriville.
-    - **Käsittele \> Kirjaa pois** – Palauta aiemmin kirjatut tapahtumat ja kirjaa ne pois, jotta uudet ostohyvityksen sopimustapahtumat voidaan laskea.
+    - **Prosessi \> Poiskirjaus** – Käsittele kullekin ostohyvityssopimuksen ja määritetyn kauden lähdetapahtumalle varalle kirjattujen summien ja ostohyvitysten hallinnan välinen ero. Tämä valikkokohde ei ole käytettävissä tarjouksille, joissa **ostohyvityksen toimitus** -kentän arvoksi on määritetty *Nimike*. 
 
 1. Määritä laskelman päivämääräalue asettamalla näyttöön tulevassa valintaikkunassa **Päivämäärästä**- ja **Päivämäärään**-kentät.
 1. Suorita laskenta valitsemalla **OK**.
@@ -115,26 +115,26 @@ Kun käsittelet yhtä tai useita sopimuksia, järjestelmä luo tapahtumia, joita
         - **Määritä ei-vaadituiksi \> Kaikki** – Merkitse kaikki tapahtumat ei-vaadituiksi.
         - **Määritä ei-vaadituiksi \> Valitut** – Merkitse valitut tapahtumat ei-vaadituiksi.
 
-    - Voit kirjata yhden tai useita rivejä koskevat vaatimuksesi valitsemalla haluamasi rivit ja valitsemalla sitten toimintoruudusta **Kirjaa**. (**Kirjaa**-painike on käytettävissä vain ostohyvitystapahtumissa. Sitä ei voi käyttää valmistelu- ja poiskirjaustapahtumia varten.) **Kirjaa**-valintaikkunan **Päivämäärästä**- ja **Päivämäärään**-kentät määritetään automaattisesti. Määritä **Kirjauspäivämäärä** ja valitse sitten **OK**.
+    - Kirjaa vaatimus kaikille asiaankuuluville riveille valitsemalla toimintoruudusta **Kirjaa**. Jos käytät lunastusprosessia (kun **Ostohyvitysten hallinnan parametrit** -sivulla on käytössä **Käytä vaatimusprosessia** -vaihtoehto), vain ne rivit, jotka on merkitty **lunastetuiksi**, kirjataan. Muussa tapauksessa kaikki valitun ostohyvitystapahtuman lähdetapahtumat kirjataan. **Kirjaa**-painike on käytettävissä vain ostohyvitystapahtumissa. Sitä ei voi käyttää varaus- ja alennustapahtumista. **Kirjaa**-valintaikkunan **Päivämäärästä**- ja **Päivämäärään**-kentät määritetään automaattisesti. Määritä **Kirjauspäivämäärä** ja valitse sitten **OK**.
     - Voit oikaista minkä tahansa avoimen tai kirjaamattoman tapahtuman summan valitsemalla tapahtuman ja toimimalla seuraavasti:
 
         - Muokkaa **Korjattu summa** -kentän arvoa.
         - Valitse toimintoruudussa **Määritä korjaus**. Syötä sitten arvo **Korjattu summa** -kenttään näyttöön avatuvassa valintaikkunassa.
 
 > [!NOTE]
-> Kun käsittelet seuraavaa kautta, tapahtumaluettelossa ovat aiemman kirjauksen jälkeen käsittelemättömät tapahtumat sekä valitun kauden kaikki uudet tapahtumat.
+> Jos käytät lunastusprosessia, kun käsittelet seuraavaa kautta, tapahtumaluettelossa ovat aiemman kirjauksen jälkeen käsittelemättömät tapahtumat sekä valitun kauden kaikki uudet tapahtumat.
 
 ## <a name="post-rebates-transactions"></a>Kirjaa ostohyvitystapahtumat
 
-Ostohyvitysten ja vähennysten arvon kirjaamiseksi on suoritettava kirjausprosessi, ellet ole määrittänyt järjestelmääsi kirjaamaan niitä automaattisesti.
+Kirjaa käsiteltyjen varausten, ostohyvitysten hallinnan summan ja alennuksen arvo, kun suoritat kirjausprosessin. Kirjausprosessi merkitsee kirjattavat varaus-, ostohyvitysten tai -hyvitystapahtumien kirjaukset ja luo kohdetapahtuman. Jos kohdetapahtumaa ei tarvitse tarkistaa, nämä tapahtumat voidaan määrittää niin, että ne kirjataan automaattisesti.
 
-### <a name="set-up-the-system-to-post-all-transactions-automatically"></a>Määritä järjestelmä kitjaamaan kaikki tapahtumat automaattisesti
+### <a name="set-up-the-system-to-post-all-target-transactions-automatically"></a>Määritä järjestelmä kirjaamaan kaikki kohdetapahtumat automaattisesti
 
-Voit määrittää järjestelmän kirjaamaan kaikki tapahtumat heti niiden generoinnin jälkeen ottamalla käyttöön **Kirjaa kirjauskansiot automaattisesti** ja/tai **Kirjaa vapaatekstilaskut automaattisesti** -asetukset **Ostohyvityksen hallinnan parametrit** -sivulla. Lisätietoja on kohdassa [Ostohyvityksen hallinnan parametrit](rebate-management-parameters.md).
+Määritä järjestelmäsi kirjaamaan kaikki kohdetapahtumat heti, kun ne on luotu luomalla lähetysvaraus, alennusten hallinta ja poistot, ottamalla käyttöön **Kirjaa kirjauskansiot automaattisesti** ja/tai **Kirjaa vapaatekstilaskut automaattisesti** -asetukset **Ostohyvityksen hallinnan parametrit** -sivulla. Lisätietoja on kohdassa [Ostohyvityksen hallinnan parametrit](rebate-management-parameters.md).
 
 ### <a name="post-transactions-for-all-lines-for-one-or-more-deals"></a>Yhden tai useamman sopimuksen kaikkien rivien tapahtumien kirjaaminen
 
-Jos et käytä automaattista kirjausta, kun olet käsitellyt asiaankuuluvat sopimukset, tarkista ja kirjaa kaikkien rivien luodut tapahtumat yhdelle tai useammalle sopimukselle.
+Sen jälkeen, kun olet käsitellyt asiaankuuluvat sopimukset, tarkista ja kirjaa kaikkien rivien luodut tapahtumat yhdelle tai useammalle sopimukselle.
 
 1. Avaa sen sopimustyypin luettelosivu, jota haluat käsitellä, avaamalla asianmukainen [ostohyvitysten sopimusten luettelosivu](rebate-management-deals.md).
 1. Valitse kunkin kirjattavan sopimuksen rivi (tai avaa kirjattava sopimus).
@@ -149,7 +149,7 @@ Jos et käytä automaattista kirjausta, kun olet käsitellyt asiaankuuluvat sopi
 
 ### <a name="post-transactions-for-one-or-more-specific-deal-lines-for-a-selected-deal"></a>Valitun sopimuksen yhden tai useamman sopimusrivien tapahtumien kirjaaminen
 
-Jos et käytä automaattista kirjausta, kun olet käsitellyt asiaankuuluvat sopimukset, tarkista ja kirjaa kaikkien rivien luodut tapahtumat yhdelle tai useammalle valitun sopimuksen tietylle sopimusriville.
+Sen jälkeen, kun olet käsitellyt asiaankuuluvat sopimukset, tarkista ja kirjaa kaikkien rivien luodut tapahtumat yhdelle tai useammalle tietylle sopimusriville tietyssä sopimuksessa. Tämä menettely on käytettävissä vain sopimuksille, joissa **Täsmäytä mennessä** -kentän mukaan arvoksi määritetään *Rivi*.
 
 1. Avaa sen sopimustyypin luettelosivu, jota haluat käsitellä, avaamalla asianmukainen [ostohyvitysten sopimusten luettelosivu](rebate-management-deals.md).
 1. Avaa sopimus, jolla on rivi, jolle haluat kirjata tapahtumia.
@@ -174,7 +174,7 @@ Sen sijaan, että tapahtumat kirjataisiin tietyille sopimuksille tai sopimusrive
     - Kirjaa luomasi käytettävissä olevat ostohyvitystapahtumat siirtymällä kohtaan **Ostohyvitysten hallinta \> Kausittaiset tehtävät \> Kirjaa \> Ostohyvitysten hallinta**.
     - Kirjaa luomasi käytettävissä olevat poiskirjaustapahtumat siirtymällä kohtaan **Ostohyvitysten hallinta \> Kausittaiset tehtävät \> Kirjaa \> Kirjaa pois**.
 
-1. Määritä **Kirjauspäivämäärä**-kenttä **Kausi**-osan **Parametrit**-pikavälilehdessä näkyvässä valintaikkunassa. Määritä kirjattavien tapahtumien päivämääräalue asettamalla **Päivämäärästä**- ja **Päivämäärään**-kentät. 
+1. Määritä **Kirjauspäivämäärä**-kenttä **Kausi**-osan **Parametrit**-pikavälilehdessä näkyvässä valintaikkunassa. Määritä kirjattavien tapahtumien päivämääräalue asettamalla **Päivämäärästä**- ja **Päivämäärään**-kentät.
 1. Määritä kirjattavien takuiden päivämääräalue asettamalla **Takuukausi**-osassa **Päivämäärästä**- ja **Päivämäärään**-kentät.
 1. Voit määrittää **Sisällytettävät tietueet** -pikavälilehdessä suodattimia, jotka rajoittavat erätyön käsittelemää sopimusjoukkoa. Nämä asetukset toimivat samalla tavalla kuin muiden erätöiden tyypeissä.
 1. **Suorita taustalla** -pikavälilehdessä voit määrittää erätyön käsittelyn ja aikataulutuksen asetukset tarpeen mukaan. Nämä asetukset toimivat samalla tavalla kuin muiden erätöiden tyypeissä.
@@ -182,17 +182,17 @@ Sen sijaan, että tapahtumat kirjataisiin tietyille sopimuksille tai sopimusrive
 
 ## <a name="review-rebate-management-journals"></a>Ostohyvitysten hallinnan kirjauskansioiden tarkasteleminen
 
-Kun tapahtumat on kirjattu, voit tarkistaa tuloksena olevat kirjauskansiot, asiakirjat tai nimikkeet. Ostohyvitysten ja rojaltin kohdetapahtumat perustuvat maksutyyppiin, joka on määritetty kirjausprofiilissa ja ostohyvityksen tulostyypissä. Jos ostohyvityksen tuloksen arvoksi määritetään esimerkiksi *Nimike*, myyntitilaus luodaan ja sitä voidaan tarkastella kohdetapahtumien kautta. Jos maksu on määritetty käyttämään ostoreskontraa, asiakkaassa määritetty toimittajalasku toimittajalle luodaan myös asiakkaan ostohyvitystä varten.
+Kun tapahtumat on kirjattu, voit tarkistaa tuloksena olevat kirjauskansiot, asiakirjat tai nimikkeet. Ostohyvitysten ja rojaltin kohdetapahtumat perustuvat maksutyyppiin, joka on määritetty kirjausprofiilissa ja ostohyvityksen tulostyypissä. Jos ostohyvityksen tuotoksen arvoksi määritetään esimerkiksi *Nimike*, asiakkaan ostohyvitykselle luodaan myyntitilaus ja toimittajan ostohyvitykselle luodaan ostotilaus. Näitä tilauksia voi tarkastella tavoitetapahtumien kautta. Jos maksu on määritetty käyttämään ostoreskontraa, asiakkaassa määritetty toimittajalasku toimittajalle luodaan myös asiakkaan ostohyvitystä varten.
 
 Noudattamalla näitä vaiheita voit tarkistaa ostohyvitysten hallinnan sopimukseen liittyvät kirjauskansiomerkinnät.
 
 1. Avaa sen sopimustyypin luettelosivu, jota haluat käsitellä, avaamalla asianmukainen [ostohyvitysten sopimusten luettelosivu](rebate-management-deals.md).
 1. Valitse sopimus, jonka kirjauskansioiden kirjaukset tarkastetaan.
-1. Valitse toimintoruudun **Ostohyvityksen hallinnan sopimukset** -välilehden **Tapahtumat**-ryhmässä joko **Tapahtumat** tai **Osohyvitystapahtumat** sen mukaan, minkä tyyppistä tapahtumaa haluat tarkastella.
+1. Valitse toimintoruudun **Ostohyvityksen hallinnan sopimukset** -välilehden **Tapahtumat**-ryhmässä joko **Tapahtumat** tai **Takuutapahtumat** sen mukaan, minkä tyyppistä tapahtumaa haluat tarkastella.
 1. Varmista, että **Näytä**-kentän arvoksi on määritetty *Kaikki* tai *Kirjattu*.
 1. Etsi ja valitse tapahtumakokoelma, jonka haluat tarkastaa, ja valitse sitten toimintoruudusta jokin seuraavista painikkeista. (Nämä painikkeet ovat käytettävissä vain, kun valitulle tapahtumakokoelmalle on olemassa asianmukaisia kirjauksia.)
 
     - **Kohdetapahtumat** – Tarkastele valitun sopimuksen luomia kirjauskansioita ja muita tiedostotyyppejä.
-    - **Nimikkeet** – Tarkastele valitun sopimuksen luomia nimikkeitä.
+    - **Nimikkeet** – Tarkastele valitun sopimuksen luomia myynti- tai ostotilauksia.
 
 1. Näyttöön tulee luettelo kirjauskansioista, asiakirjoista tai nimikkeistä. Jos haluat lisätietoja kirjauskansiosta, asiakirjasta tai nimikkeestä, valitse sen rivi ja valitse sitten toimintoruudusta **Näytä tiedot**.

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020480"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271074"
 ---
 # <a name="rebate-management-groups"></a>Ostohyvitysten hallintaryhmät
 
 [!include [banner](../includes/banner.md)]
 
-Ostohyvitys- ja vähennyslaskelmat voidaan määrittää ryhmien perusteella. Ostohyvitysten hallintaryhmiä voi luoda asiakkaille, toimittajille ja nimikkeille. Ne voidaan liittää päätietueeseen.
+Ostohyvityksen hallintalaskelmat voidaan määrittää ryhmien perusteella. Ostohyvitysten hallintaryhmiä voi luoda asiakkaille, toimittajille ja nimikkeille. Ne voidaan liittää päätietueeseen.
 
 ## <a name="rebate-management-customer-groups"></a>Ostohyvitysten hallinnan asiakasryhmät
 
@@ -49,10 +49,9 @@ Noudattamalla seuraavia ohjeita voit tarkastella, lisätä tai poistaa valitun r
 1. Siirry kohtaan **Ostohyvitysten hallinta \> Ostohyvitysten hallintaryhmien asetukset \> Asiakasryhmät**.
 1. Valitse hallittava ryhmä.
 1. Valitse toimintoruudussa **Asiakkaat**. Näkyviin tulee **Ostohyvityksen hallintaryhmät** -sivu, joka sisältää luettelon asiakkaista, jotka kuuluvat jo valittuun ryhmään.
-1. Lisää uusi asiakas ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+1. Lisää uusi asiakas ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraava kenttä:
 
     - **Asiakastili** – Valitse asiakastilin tunnus.
-    - **Nimi** – Kirjoita asiakkaan nimi ja/tai kuvaus.
 
 1. Jos haluat poistaa asiakkaan ryhmästä, valitse asiakas ja valitse sitten toimintoruudusta **Poista**.
 
@@ -61,10 +60,9 @@ Noudattamalla seuraavia ohjeita voit tarkastella, lisätä tai poistaa valitun a
 1. Siirry kohtaan **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat**.
 1. Valitse asiakas, jonka kanssa haluat työskennellä.
 1. Valitse toimintoruudun **Asiakas**-välilehden **Ostohyvitysten hallinta** -ryhmässä **Ostohyvitysten hallintaryhmät**. Näkyviin tulee **Ostohyvityksen hallintaryhmät** -sivu, joka sisältää luettelon ryhmistä, joihin valittu asiakas jo kuuluu.
-1. Lisää asiakas uuteen ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+1. Lisää asiakas uuteen ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraava kenttä:
 
     - **Ostohyvityksen hallintaryhmä** – Valitse ryhmä, johon asiakas lisätään.
-    - **Kuvaus** – Kirjoita ryhmän kuvaus (esimerkiksi se, miksi asiakas on ryhmän jäsen).
 
 1. Jos haluat poistaa asiakkaan ryhmästä, valitse ryhmä ja valitse sitten toimintoruudusta **Poista**.
 
@@ -88,10 +86,9 @@ Noudattamalla seuraavia ohjeita voit tarkastella, lisätä tai poistaa valitun r
 1. Siirry kohtaan **Ostohyvitysten hallinta \> Ostohyvitysten hallintaryhmien asetukset \> Toimittajaryhmät**.
 1. Valitse hallittava ryhmä.
 1. Valitse toimintoruudussa **Toimittajat**. Näkyviin tulee **Ostohyvityksen hallintaryhmät** -sivu, joka sisältää luettelon toimittajista, jotka kuuluvat jo valittuun ryhmään.
-1. Lisää uusi toimittaja ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+1. Lisää uusi toimittaja ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraava kenttä:
 
     - **Toimittajatili** – Valitse toimittajatilin tunnus.
-    - **Nimi** – Kirjoita toimittajan nimi ja/tai kuvaus.
 
 1. Jos haluat poistaa toimittajan ryhmästä, valitse toimittaja ja valitse sitten toimintoruudusta **Poista**.
 
@@ -100,10 +97,9 @@ Noudattamalla seuraavia ohjeita voit tarkastella, lisätä tai poistaa valitun t
 1. Siirry kohtaan **Ostoreskontra \> Toimittajat \> Kaikki toimittajat**.
 1. Valitse toimittaja, jonka kanssa haluat työskennellä.
 1. Valitse toimintoruudun **Toimittaja**-välilehden **Ostohyvitysten hallinta** -ryhmässä **Ostohyvitysten hallintaryhmät**. Näkyviin tulee **Ostohyvityksen hallintaryhmät** -sivu, joka sisältää luettelon ryhmistä, joihin valittu toimittaja jo kuuluu.
-1. Lisää toimittaja uuteen ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+1. Lisää toimittaja uuteen ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraava kenttä:
 
     - **Ostohyvityksen hallintaryhmä** – Valitse ryhmä, johon toimittaja lisätään.
-    - **Kuvaus** – Kirjoita ryhmän kuvaus (esimerkiksi se, miksi toimittaja on ryhmän jäsen).
 
 1. Jos haluat poistaa toimittajan ryhmästä, valitse ryhmä ja valitse sitten toimintoruudusta **Poista**.
 
@@ -127,10 +123,9 @@ Noudattamalla seuraavia ohjeita voit tarkastella, lisätä tai poistaa valitun r
 1. Siirry kohtaan **Ostohyvitysten hallinta \> Ostohyvitysten hallintaryhmien asetukset \> Nimikeryhmät**.
 1. Valitse hallittava ryhmä.
 1. Valitse toimintoruudussa **Nimikkeet**. Näkyviin tulee **Ostohyvityksen hallintaryhmät** -sivu, joka sisältää luettelon nimikkeistä, jotka kuuluvat jo valittuun ryhmään.
-1. Lisää uusi nimike ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+1. Lisää uusi nimike ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraava kenttä:
 
     - **Nimikejatili** – Valitse nimiketilin tunnus.
-    - **Tuotteen nimi** – Kirjoita nimikkeen nimi ja/tai kuvaus.
 
 1. Jos haluat poistaa nimikkeen ryhmästä, valitse nimike ja valitse sitten toimintoruudusta **Poista**.
 
@@ -139,10 +134,9 @@ Noudattamalla seuraavia ohjeita voit tarkastella, lisätä tai poistaa valitun n
 1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
 1. Valitse nimike, jonka kanssa haluat työskennellä.
 1. Valitse toimintoruudun **Tuote**-välilehden **Ostohyvitysten hallinta** -ryhmässä **Ostohyvitysten hallintaryhmät**. Näkyviin tulee **Ostohyvityksen hallintaryhmät** -sivu, joka sisältää luettelon ryhmistä, joihin valittu nimike jo kuuluu.
-1. Lisää nimike uuteen ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraavat kentät:
+1. Lisää nimike uuteen ryhmään valitsemalla toimintoruudussa **Uusi**, mikä lisää rivin ruudukkoon. Määritä sitten uudelle rivillä seuraava kenttä:
 
     - **Ostohyvityksen hallintaryhmä** – Valitse ryhmä, johon nimike lisätään.
-    - **Kuvaus** – Kirjoita ryhmän kuvaus (esimerkiksi se, miksi nimike on ryhmän jäsen).
 
 1. Jos haluat poistaa nimikkeen ryhmästä, valitse ryhmä ja valitse sitten toimintoruudusta **Poista**.
 

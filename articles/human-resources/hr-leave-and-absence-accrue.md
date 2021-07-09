@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059470"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303461"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Jaksota loma- ja poissaolosuunnitelmat
 
@@ -104,11 +104,9 @@ Poista tietyn suunnitelman ja päivämäärävälin jaksotustiedot. Jaksotuspäi
 
 2. Valitse **Hallitse lomia** -kohdassa **Poista lomakertymien valvonta**.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Esikatselu) Loman jaksotustapahtuman tarkistus
+## <a name="leave-accrual-transaction-auditing"></a>Loman jaksotustapahtuman tarkistus
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Tämä esikatseluominaisuus auttaa lomien ja poissaolojen hallinnoijia ymmärtämään lomien ja poissaolojen karttumistapahtumat, jotka liittyvät työntekijän poissaolosaldoihin tietyssä poissaolotyypissä.
+Tämä ominaisuus auttaa lomien ja poissaolojen hallinnoijia ymmärtämään lomien ja poissaolojen karttumistapahtumat, jotka liittyvät työntekijän poissaolosaldoihin tietyssä poissaolotyypissä.
 
 Nähdäksesi tapahtumatietoja:
 

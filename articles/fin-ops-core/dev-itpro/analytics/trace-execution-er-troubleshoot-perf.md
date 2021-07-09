@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 description: Tässä ohjeaiheessa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944650"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295570"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 
@@ -119,12 +119,27 @@ Tietomallin ja mallin yhdistämismääritysten vastaavat versiot tuodaan automaa
 2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
 3. Toimi **Käyttäjäparametrit**-valintaikkunan **Suorituksen jäljitys** -osassa seuraavasti:
 
-    1. Valitse **Suorituksen jäljitys muoto** -kentässä **Korjaa jäljitystiedosto** -kentässä, joka alkaa keräämään tietoja ER-muodon suorittamisesta. Kun tämä arvo valitaan, suorituskyvyn jäljitys kerää seuraaviin toimiin kuluvaa aikaa koskevia tietoja:
+    1. **Suorituksen jäljitysmuoto** -kentän avulla voit määrittää sen luodun suorituskykyjäljityksen muodon, johon suoritustiedot tulee tallentaa ER-ja Mapping-elementeissä:
 
-        - Kunkin tietolähteen suorittamista mallikartoituksista, joita kutsutaan tietojen hakemiseksi
-        - Kunkin muotoilunimikkeen käsitteleminen siten, että se syöttää tietoja luotavalle tulosteelle
+        - **Virheenkorjauksen jäljitysmuoto** – Valitse tämä arvo, jos aiot suorittaa vuorovaikutteisesti ER-muodon, jolla on lyhyt suoritusaika. Tämän jälkeen aloitetaan ER-muodon suorittamista koskevat tiedot. Kun tämä arvo valitaan, suorituskyvyn jäljitys kerää seuraaviin toimiin kuluvaa aikaa koskevia tietoja:
 
-        **Suorituksen jäljitysmuoto** -kentän avulla voit määrittää sen luodun suorituskykyjäljityksen muodon, johon suoritustiedot tallennetaan ER-ja Mapping-elementeissä. Kun valitset arvoksi **Virheen korjauksen jäljitysmuodon**, pystyt analysoimaan jäljityksen sisältöä ER Operation Designerissa ja näkemään ER-muodon tai määrityselementit, jotka mainitaan jäljityksessä.
+            - Kunkin tietolähteen suorittamista mallikartoituksista, joita kutsutaan tietojen hakemiseksi
+            - Kunkin muotoilunimikkeen käsitteleminen siten, että se syöttää tietoja luotavalle tulosteelle
+
+            Jos valitset **virheenkorjauksen jäljitysmuodon** arvon, voit analysoida jäljityksen sisältöä ER:n toiminnan suunnitteluohjelmassa. Siinä voit tarkastella ER-muotoisia tai määrityselementtejä, jotka on mainittu jäljityksessä.
+
+        - **Koostettu jäljitysmuoto** – Valitse tämä arvo, jos aiot suorittaa vuorovaikutteisesti ER-muodon, jolla on pitkä suoritusaika erätilassa. Tämän jälkeen aloitetaan ER-muodon suorittamista koskevat koostetut tiedot. Kun tämä arvo valitaan, suorituskyvyn jäljitys kerää seuraaviin toimiin kuluvaa aikaa koskevia tietoja:
+
+            - Kunkin tietolähteen suorittamista mallikartoituksista, joita kutsutaan tietojen hakemiseksi
+            - Kunkin tietolähteen suorittamista muotokartoituksista, joita kutsutaan tietojen hakemiseksi
+            - Kunkin muotoilunimikkeen käsitteleminen siten, että se syöttää tietoja luotavalle tulosteelle
+
+            **Koostettu jäljitysmuoto** -arvo on käytettävissä Microsoft Dynamics 365 Financen versiossa 10.0.20 ja sitä myöhemmässä versiossa.
+
+            Voit tarkastella yhden komponentin kokonaissuorituksen aikaa ER-muodon suunnittelussa ja ER-mallin määrityksen suunnittelussa. Lisäksi jäljitys sisältää suoritusta koskevia tietoja, kuten suoritusten määrän sekä yksittäisen suorituksen vähimmäis- ja enimmäisajan.
+
+            > [!NOTE]
+            > Jäljitys kerätään jäljitettyjen komponenttien polun perusteella. Tilastot saattavat olla virheelliset, jos yksi pääkomponentti sisältää useita nimeämättömiä alikomponentteja tai jos useilla alikomponenteilla on sama nimi.
 
     2. Määritä seuraavat asetukset: **Kyllä**, jos haluat kerätä tarkempia tietoja ER-mallin kartoituksesta ja ER-muotokomponenttien suorittamisesta.
 

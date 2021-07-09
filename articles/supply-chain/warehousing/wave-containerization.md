@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019048"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292734"
 ---
 # <a name="containerization"></a>Konttiinpakkaus
 
@@ -108,6 +108,8 @@ Voit määrittää kontin muodostusmallin noudattamalla seuraavia ohjeita:
 
       - **Pakkaa kaikkiin avoimiin kontteihin** – Järjestelmä arvioi, sopiiko kohdistusrivi mihinkään konttiinpakkausjakson aikana luotuun konttiin.
       - **Pakkaa vain nykyiseen konttiin** – Järjestelmä arvioi vain, sopiiko kohdistusrivi viimeksi luotuun konttiin.
+
+    Lisätietoja ja esimerkkejä konttien pakkausstrategioiden käytöstä on kohdassa [Säilön pakkausstrategiat](container-packing-strategy-overview.md).
 
 1. Valitsemalla **Yhdistämislogiikan keskeytykset** voit määrittää sääntöjä pakkauksen kohdistusriveille konteissa. Voit esimerkiksi luoda säännön, joka antaa työntekijöiden pakata kohdistusrivejä kahdelle eri nimikkeelle samassa kontissa. Voit määrittää yhdistämissäännön seuraavasti:
 

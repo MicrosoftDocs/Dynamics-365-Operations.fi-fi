@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821246"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270656"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Managementin tallennetut vakionäkymät
 
@@ -79,16 +79,14 @@ Seuraavassa taulukossa käsitellään hankintamoduulissa käytettävissä olevia
 
 ## <a name="saved-views-for-the-production-control-module"></a>Tuotannonhallintamoduulin tallennetut näkymät
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Seuraavassa taulukossa käsitellään tuotannonhallintamoduulissa käytettävissä olevia tallennettuja näkymiä.
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Tuotantotilauksen tuoterakenne -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
-| Tuotantotilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
-| Tuotantotilauksen keräysluettelo -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
-| Tuotantotilauksen luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | (Esiversio) Tuotannonohjauksen tallennetut näkymät |
+| Tuotantotilauksen tuoterakenne -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
+| Tuotantotilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
+| Tuotantotilauksen keräysluettelo -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
+| Tuotantotilauksen luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonhallinnan tallennetut näkymät |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Myynti- ja markkinointimoduulin tallennetut näkymät
 

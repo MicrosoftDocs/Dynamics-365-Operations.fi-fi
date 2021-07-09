@@ -1,8 +1,8 @@
 ---
 title: Valmistele Human Resources
-description: Tässä artikkelissa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista.
+description: Tässä ohjeaiheessa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193721"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248818"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -28,9 +28,15 @@ ms.locfileid: "6193721"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tässä artikkelissa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. Artikkelissa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Human Resourcesin palvelusopimuksen, etkä pysty suorittamaan tämän artikkelin vaiheita, ota yhteys tukeen.
+Tässä ohjeaiheessa kerrotaan Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. Tässä aiheessa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Human Resourcesin palvelusopimuksen, etkä pysty suorittamaan tämän artikkelin vaiheita, ota yhteys tukeen.
 
 Aluksi yleisen järjestelmänvalvojan tulee kirjautua [Microsoft Dynamics Lifecycle Servicesiin](https://lcs.dynamics.com) (LCS) ja luoda uusi Human Resources -projekti. Jos Human Resourcesin käyttämistä estävä ongelma ei liity käyttöoikeuteen, tuen tai Dynamics-palvelun kehityspalvelun edustajien apua ei tarvita.
+
+## <a name="provision-a-human-resources-trial-environment"></a>Henkilöstöhallinnon koeympäristön valmistelu
+
+Ennen ensimmäisen tuotantoympäristön tai tuotantoympäristön varausta voit varata [henkilöstöhallinnon koeympäristön](https://go.microsoft.com/fwlink/p/?LinkId=2115962) henkilöstöhallinnon toimintojen tarkistamista varten. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon järjestelmänhallintakokemuksen kautta. 
+
+Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 60 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa tuotantotilauksen tai tuotantoympäristön muotoon. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
 ## <a name="plan-human-resources-environments"></a>Human Resources -ympäristöjen suunnitteleminen
 
@@ -94,8 +100,6 @@ Kun LCS-projekti on luotu, voit valmistella Human Resources -sovelluksen ympäri
 
     > [!NOTE]
     > Jos et ole vielä hyväksynyt lopullisia vaatimuksia, voit ottaa projektissa käyttöön Human Resourcesin testausesiintymän. Voit testata esiintymässä ratkaisuasi siihen asti, että hyväksyntä on tehty. Jos käytät uutta ympäristöä testaukseen, nämä menettelytavat on toistettava tuotantoympäristön luomista varten.
-
-    > Kannattaa harkita maksuttoman 60 päivän [Human Resources -kokeiluympäristön](https://go.microsoft.com/fwlink/p/?LinkId=2115962) käyttöä. Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon järjestelmänhallintakokemuksen kautta. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Niitä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Huomaa, että kun kokeiluympäristö vanhenee 60 päivän kuluttua, sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
 ## <a name="select-a-power-apps-environment"></a>Valitse Power Apps-ympäristö
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938297"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261743"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Pilven ja reunan asteikon yksiköt valmistuksen ja varaston hallinnan kuormituksia varten
 
@@ -24,7 +24,7 @@ ms.locfileid: "5938297"
 > [!IMPORTANT]
 > Microsoft Dynamics 365 Supply Chain Managementin skaalausyksikköominaisuudet ovat käytettävissäsi palvelun käyttöä säätelevillä ehdoilla. Lisätietoja on kohdassa [Microsoft Dynamicsin oikeudelliset tiedot](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjä vahvistaa ymmärtävänsä, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Lisätietoja pilvipalvelun ja reunan skaalausyksiköiden tietojenkäsittelystä on [tietojenkäsittely skaalausyksiköiden hallinnan aikana](#data-processing-management) -osassa myöhemmin tässä aiheessa.
+> Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjältä pyydetään vahvistus, että hän ymmärtää, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Lisätietoja pilvipalvelun ja reunan skaalausyksiköiden tietojenkäsittelystä on [tietojenkäsittely skaalausyksiköiden hallinnan aikana](#data-processing-management) -osassa myöhemmin tässä aiheessa.
 
 ## <a name="core-value-proposition-for-scale-units"></a>Skaalausyksiköiden ydinarvoehdotus
 

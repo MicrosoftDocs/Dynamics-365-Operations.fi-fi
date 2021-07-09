@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: lbc
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 23a517e7769dc86ebec30e4f17c62172a6ad8801
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: f3ebd47ffc85d4ca257b404579d60d679f7929b6
+ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938462"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301302"
 ---
 # <a name="you-cant-confirm-a-shipment-because-items-havent-been-picked"></a>Et voi vahvistaa lähetystä, koska nimikkeitä ei ole kerätty.
 
@@ -36,10 +36,18 @@ Kuormitusta tai lähetystä ei voi vahvistaa nykyisessä tilassaan, koska jokin 
 
 - Liittyvää työtä ei ole vielä kerätty ja siirretty lopulliseen lähetyssijaintiin.
 - Kerätyn työn määrä ei vastaa kuormitusrivillä luotua työmäärää.
+- Sijaintidirektiivi on määritetty pakkauspaikaksi lopulliseksi toimituspaikaksi aaltomallin säiliöintiä käytettäessä.
 
 ## <a name="resolution"></a>Ratkaisu
 
-Tarkista kuormituksen tai lähetyksen liittyvät myyntitilaukset tai siirtotilaukset. Varmista, että kaikki liittyvä työ on tehty loppuun lopullisessa lähetyssijainnissa ja että määrät vastaavat toisiaan.
+Kuorma tai lähetys on tilassa, jossa lähetysvahvistus epäonnistuu. Voit korjata ongelman tekemällä yhden seuraavista toimista:
+
+- Tarkista kuormarivit ja varmista, että kaikki asiaan liittyvät työt on suoritettu lopullisessa toimituspaikassa ja että määrät vastaavat.
+- Peruuta työtunnukset, jotka on luotu pakkaussijainniksi lopulliseksi toimitussijainniksi, konfiguroi sijaintitiedot uudelleen ja aseta kuormitus uudelleen.
+
+### <a name="review-your-load-lines-and-make-sure-that-all-the-related-work-has-been-completed-at-the-final-shipping-location-and-that-the-quantities-match"></a>Tarkista kuormarivit ja varmista, että kaikki asiaan liittyvät työt on suoritettu lopullisessa toimituspaikassa ja että määrät vastaavat
+
+Käytä seuraavaa menettelyä tarkistaaksesi kuormarivit ja varmistaaksesi, että kaikki asiaan liittyvät työt on suoritettu lopullisessa toimituspaikassa ja että määrät vastaavat.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
 1. Valitse kuormitus, jolle ei voi vahvistaa lähetystä.
@@ -48,3 +56,30 @@ Tarkista kuormituksen tai lähetyksen liittyvät myyntitilaukset tai siirtotilau
 1. Valitse toimintoruudun **Kuormat**-välilehden **Aiheeseen liittyvät tiedot**-ryhmässä **Työ**.
 1. Varmista, että työ on tehty valmiiksi lopullisessa lähetyssijainnissa ja että kerätyn työn määrä vastaa kuormarivin luotua työmäärää.
 1. Toista nämä vaiheet kaikille kuormariveille, kun haluat varmistaa, että kaikki ehdot täyttyvät.
+
+### <a name="cancel-the-work-ids-that-have-been-created-with-the-packing-location-as-the-final-shipping-location-reconfigure-the-location-directive-and-rerelease-the-load"></a>Peruuta työtunnukset, jotka on luotu pakkaussijainniksi lopulliseksi toimitussijainniksi, konfiguroi sijaintitiedot uudelleen ja aseta kuormitus uudelleen
+
+Noudata seuraavaa menettelyä peruuttaaksesi työtunnukset, joissa pakkauspaikka on viimeinen sijoituspaikka, kun automaattinen säilytys on paikallaan.
+
+1. Valitse **Varastonhallinta \> Kausittaiset tehtävät \> Tyhjennä \> Peruuta työ**.
+1. Näyttöön tulee **Peruuta työ** -valintaikkuna. Määritä **Työtunnus**-kenttään peruutettavan työn tunnus. Valitun työtunnuksen **työtilan** arvona on oltava *Avoin*, *Käynnissä*, *Peruutettu*, *Yhdistetty* tai *Suljettu*.
+1. Valitse **OK**.
+1. Vahvista, että haluat peruuttaa työn valitsemalla **Kyllä**.
+1. Toista nämä vaiheet tarvittaessa muille työtunnuksille.
+
+Lisätietoja on kohdassa [Varastotyön peruuttaminen poikkeuksen käsittelyä varten](../../warehousing/cancel-warehouse-work.md).
+
+Seuraavia ohjeita noudattamalla voit määrittää sijaintitiedot uudelleen, jotta pakkaussijaintia ei voi käyttää lopullisena lähetyssijainnina, kun mallille määritetään automaattinen konttimääritys.
+
+1. Valitse **Varastonhallinta \> Asetukset \> Sijaintidirektiivit**.
+1. Valitse **Työtilaustyyppi**-kentässä *Myyntitilaukset*.
+1. Valitse sijaintidirektiivi, jota käytät automaattista konttiinpakkausta varten.
+1. Valitse **Sijaintidirektiivitoiminnot**-pikavälilehden työkalupalkista **Muokkaa kyselyä**.
+1. Etsi kyselyeditorin valintaikkunassa **Alue**-välilehdestä rivi, jonka **kentän** arvoksi on määritetty *Sijaintiprofiili*, ja varmista, että rivin **kriteeri**-kenttää ei ole määritetty sijaintiprofiiliksi, jonka **sijaintityyppinä** on *Pakkaus*. Korjaa lopullinen hyllysijainti muokkaamalla **Kriteeri**-kenttää.
+
+Seuraavia ohjeita noudattamalla voit ottaa kuorman uudelleen käyttöön ja luoda työtunnukset, joilla on oikea lopullinen toimitussijainti.
+
+1. Valitse **Varastonhallinta \> Kuormat \> Kuormasuunnittelun työtila**.
+1. Etsi **Kuormitukset**-osassa vapautettava kuormitus.
+1. Vapauta valittu kuorma varastoon valitsemalla **Kuormat**-osan työkalupalkista **Vapautus \> Vapauta varastoon**.
+1. Toista nämä vaiheet tarvittaessa muille kuormituksille.

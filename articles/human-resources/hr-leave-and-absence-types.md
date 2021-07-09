@@ -2,7 +2,7 @@
 title: Määritä loman ja poissaolon tyypit
 description: Määritä Dynamics 365 Human Resourcesissa lomatyypit, joita työntekijät voivat valita.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056609"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271124"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
 
@@ -71,7 +71,7 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
    
  3. Määritä vapaan tyypiksi **Siirretty lomatyyppi**. Kun valitset tämän vaihtoehdon, kaikki siirrettävät saldot siirretään määritettyyn lomatyyppiin. Siirretyn lomatyypin on sisällyttävä myös loma- ja poissaolosuunnitelmaan. 
  
- 4. Määritä lomatyypin **vanhenemissäännöt**. Kun määrität tämän asetuksen, voit valita päivien tai kuukausien yksikön ja määrittää vanhenemisajan. Voit myös määrittää vanhentumissäännön voimaantulopäivämäärän. Voimaantulopäivämäärää käytetään määrittämään, milloin loman vanhenemisen käsittelevä erätyö käynnistetään tai milloin sääntö tulee voimaan. Vanhentuminen tapahtuu aina lomasuunnitelman alkamispäivänä, kun erätyö on määritetty käsiteltäväksi. Suunnitelman alkamispäivä voi olla esimerkiksi 1.1.2020, mutta sääntö luotiin vasta 1.6.2020. Kun voimaantulopäiväksi asetetaan 1.6.2020, sääntö käsitellään seuraavan vuoden alussa, eli 1.1.2021. Kaikki voimassaolon päättymishetkellä jäljellä olevat saldot vähennetään lomatyypistä, ja ne näkyvät lomasaldoissa. 
+4. Määritä lomatyypin **vanhenemissäännöt**. Kun määrität tämän asetuksen, voit valita päivien tai kuukausien yksikön ja määrittää vanhenemisajan. Vanhenemisajan voimaantulopäivämäärää käytetään määrittämään, milloin loman vanhenemisen käsittelevä erätyö käynnistetään tai milloin sääntö tulee voimaan. Vanhentuminen tapahtuu aina jaksotuskauden aloituspäivänä. Jos jaksotuskauden alkamispäivämäärä on esimerkiksi 3.8.2021 ja vanhentumissäännöksi on määritetty 6 kuukautta, sääntö käsitellään jaksotuskauden alkamispäivämäärän erääntymisen vastakirjauksen perusteella, joten se suoritetaan 3.2.2022. Kaikki voimassaolon päättymishetkellä jäljellä olevat saldot vähennetään lomatyypistä, ja ne näkyvät lomasaldoissa.
  
 ## <a name="see-also"></a>Lisätietoja
 
@@ -79,6 +79,7 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 - [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
 - [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
 - [Loman keskeyttäminen](hr-leave-and-absence-suspend-leave.md)
+- [Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

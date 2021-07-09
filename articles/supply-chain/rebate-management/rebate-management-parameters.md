@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: cf009e32f8c137e235793d80bf8448a5f55988bd
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dc41df33d01c3c8523afb6d8f16bfec88e0c42b8
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020432"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271026"
 ---
 # <a name="rebate-management-parameters"></a>Ostohyvitysten hallinnan parametrit
 
@@ -27,7 +27,7 @@ ms.locfileid: "6020432"
 
 **Ostohyvitysten hallinnan parametrit** -sivulla määritetään **Ostohyvityksen hallinta** -moduulissa käytettävät asetukset. Nämä asetukset vaikuttavat kirjaamiseen, tilan päivityksiin, numerosarjoihin ja muuhun toiminnallisuuteen. Tämän sivun asetukset ovat yhteisiä eri yrityksille, ja käyttäjät, joilla on tarvittavat suojauskäyttöoikeudet, voivat muokata näitä asetuksia.
 
-Voit avata **Ostohyvitysten hallinnan parametrit** -sivun kohdassa **Ostohyvitykset ja vähennykset \> Asetukset \> Ostohyvitysten hallinnan parametrit**. Määritä sitten kentät seuraavissa osioissa kuvatulla tavalla.
+Voit avata **Ostohyvitysten hallinnan parametrit** -sivun kohdassa **Ostohyvitysten hallinta \> Asetukset \> Ostohyvitysten hallinnan parametrit**. Määritä sitten kentät seuraavissa osioissa kuvatulla tavalla.
 
 ## <a name="rebate-management-tab"></a>Ostohyvitysten hallinta -välilehti
 
@@ -36,12 +36,12 @@ Seuraavassa taulukossa käsitellään kenttiä, jotka ovat käytettävissä **Os
 | Kenttä | kuvaus |
 |---|---|
 | Oletustila | Valitse kaikkien uusien sopimusten oletustila. Voit määrittää valittavissa olevien tila-arvojen joukon [**Ostohyvityksen tilat** -sivulla](rebate-statuses.md). |
-| Käsittele dimensioittain | Valitse, käsitelläänkö varaus-, ostohyvitys- ja poiskirjaustapahtumat taloushallinnon dimension mukaan. Kun tämä vaihtoehto on käytössä, järjestelmä käyttää lähdetapahtumille taloushallinnon dimensioita. |
+| Käsittele dimensioittain | Valitse, käsitelläänkö varaus-, ostohyvitys- ja poiskirjaustapahtumat taloushallinnon dimension mukaan. Kun tämä vaihtoehto on käytössä, järjestelmä käyttää lähdetapahtumille taloushallinnon dimensioita kohdetapahtumissa. |
 | Tarkista, onko aiemmin kirjattu | <p>Valitse tämä järjestelmän toimintatapa, jos kirjaamattomia ostohyvitystapahtumia käsitellään useammin kuin kerran saman kauden aikana:</p><ul><li>**Varoitus** – Järjestelmä sallii käyttäjien ohittaa alkuperäiset tapahtumarivit, mutta näyttöön tulee varoitus.</li><li>**Virhe** – Järjestelmä estää käyttäjiä ohitamasta alkuperäisiä tapahtumarivejä, ja näyttöön tulee virhesanoma. |
 | Kirjauskansioiden automaattinen kirjaaminen | Valitse, kirjaako järjestelmä ehdotetut kirjauskansiot automaattisesti. Näihin kirjauskansioihin kuuluvat kirjauskansiot, joita käytetään varauksia ja asiakkaiden vähennyksiä varten, sekä toimittajien verolaskukirjauskansiot. |
 | Kirjaa vapaatekstilaskut automaattisesti | Valitse, kirjaako järjestelmä vapaatekstilaskut automaattisesti. Tämä asetus koskee vain vapaatekstilaskuja, joissa maksutyypiksi on määritetty *Verota laskujen asiakasvähennyksiä*. |
-| Ostohyvityksen nimiketilauksen viite | Valitse ostohyvitysprosessista luoduissa myynti- ja ostotilauksissa käytettävä ostohyvitysviite (*Ei mitään*, *Ostohyvitys- ja vähennyssopimus*, *Ostohyvitys- ja vähennysnumero*, *Ostohyvitystapahtuman numero* tai *Asiakirjan huomautukset*). |
-| Käytä vaatimusprosessia | <p>Määritä tämä vaihtoehto arvoon *Kyllä*, jos haluat käyttää vaatimusprosessia. Näin voit merkitä tapahtumat, jotka ostohyvityksen hallinta luo, joko vaadituiksi tai ei-vaadituiksi, ja kirjata sitten vain vaaditut tapahtumat.</p><p>Ostohyvitykset lasketaan esimerkiksi kuukauden tapahtumien perusteella, mutta asiakas on jättänyt kaksi päivää ei-vaadituiksi. Tässä tapauksessa ei-vaaditut tapahtumat luodaan uudelleen seuraavan kerran, kun suoritat *Käsittele*-toiminnon samalle jaksolle.</p><p>Jos määrität tämän asetuksen arvoksi *Ei*, kaikki vaatimustapahtumat kirjataan.</p> |
+| Ostohyvityksen nimiketilauksen viite | Valitse ostohyvitysprosessista luoduissa myynti- ja ostotilauksissa käytettävä ostohyvitysviite (*Ei mitään*, *Ostohyvitysten hallintasopimus*, *Ostohyvitysten hallintanumero*, *Ostohyvitystapahtuman numero* tai *Asiakirjan huomautukset*). |
+| Käytä vaatimusprosessia | <p>Määritä tämä vaihtoehto arvoon *Kyllä*, jos haluat käyttää vaatimusprosessia. Näin voit merkitä tapahtumat, jotka ostohyvityksen hallinta luo, joko vaadituiksi tai ei-vaadituiksi, ja kirjata sitten vain vaaditut tapahtumat.</p><p>Ostohyvitykset lasketaan esimerkiksi kuukauden tapahtumien perusteella, mutta asiakas on jättänyt kaksi päivää ei-vaadituiksi. Tässä tapauksessa ei-vaaditut tapahtumat luodaan uudelleen seuraavan kerran, kun suoritat *Käsittele*-toiminnon seuraavalle jaksolle.</p><p>Jos määrität tämän asetuksen arvoksi *Ei*, kaikki vaatimustapahtumat kirjataan.</p> |
 | Sisällytä tilaustyypin kirjauskansio | Jos kyseessä on sopimus tai sopimusrivi, jossa tapahtumatyypiksi on määritetty *Tilaus*, tämä asetus määrittää, sisällytetäänkö *Kirjauskansio*- tyyppinen myyntitilaus. Tämä tuo joustavuutta, jos näitä tilaustyyppejä käytetään tilanteissa, joissa ostohyvitys ei ole vielä voimassa. |
 
 ## <a name="number-sequences-tab"></a>Numerosarjat-välilehti
@@ -50,8 +50,8 @@ Seuraavassa taulukossa käsitellään kenttiä, jotka ovat käytettävissä **Os
 
 | Viite | kuvaus |
 |---|---|
-| Ostohyvitys- ja vähennyssopimus | Numerosarja määrittää kullekin ostohyvityssopimukselle yksilöivän avaimen arvon. Tätä avainta käytetään, kun sopimuksia luodaan. |
-| Ostohyvitys- ja vähennysnumero | Numerosarja määrittää kullekin ostohyvitykselle yksilöivän avaimen arvon. Tätä avainta käytetään ostohyvityssuhteiden tunnistamiseen. |
+| Ostohyvitysten hallintasopimus | Numerosarja määrittää kullekin ostohyvityssopimukselle yksilöivän avaimen arvon. Tätä avainta käytetään, kun sopimuksia luodaan. |
+| Ostohyvitysten hallintanumero | Numerosarja määrittää kullekin ostohyvitykselle yksilöivän avaimen arvon. Tätä avainta käytetään ostohyvityssuhteiden tunnistamiseen. |
 | Ostohyvityksen tapahtumanumero | Numerosarja määrittää kullekin ostohyvitystapahtumalle yksilöivän avaimen arvon. Tätä avainta käytetään ostohyvitystapahtumien tunnistamiseen. |
 | Verolasku | Numerosarja määrittää kullekin ostohyvityslaskulleyksilöivän avaimen arvon. Tätä avainta käytetään, kun ostohyvityskirjauskansiot kirjataan automaattisesti. |
 

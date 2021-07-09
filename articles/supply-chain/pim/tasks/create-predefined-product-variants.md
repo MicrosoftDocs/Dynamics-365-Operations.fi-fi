@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6f78441445baecba279f96eb3935d9ebbb4ff03f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 442a5f5b321833c170cfecc4069e62a1254605cd
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021905"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270477"
 ---
 # <a name="predefined-product-variants"></a>Ennalta määritellyt tuotevariantit
 
@@ -76,8 +76,6 @@ Tuotevarianttien luonti:
 1. Valitse **Tallenna**.
 
 ## <a name="improved-variant-suggestions"></a>Parannetut muuttujaehdotukset
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 *Muuttujaehdotukset-sivun parannukset* -ominaisuus parantaa **Muuttujaehdotukset**-sivua niiden yritysten suorituskykyyn ja käytettävyyteen liittyvien ongelmien käsittelemiseksi, joilla on suuri määrä tuotedimensioyhdistelmiä. Paranneltu prosessi, jossa valitaan tuotedimensioarvot, joiden perusteella muuttujaehdotuksia luodaan, nopeuttaa ja helpottaa asianmukaisten tuotevarianttien tunnistamista ja vapauttamista.
 

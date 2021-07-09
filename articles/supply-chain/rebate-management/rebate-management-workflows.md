@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: ee342de6d069131e230120c5d65aef58da8e632a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8436842b4f07ba000649075198bdef43ad508f8f
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020383"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270954"
 ---
 # <a name="rebate-management-deal-workflows"></a>Ostohyvitysten hallintasopimuksen työnkulut
 
@@ -27,12 +27,12 @@ ms.locfileid: "6020383"
 
 Ostohyvitysten hallinnassa voit hyväksyä ostohyvityssopimuksia samalla työnkulkuympäristöllä kuin muut Finance and Operations -sovellukset. Jokaiseen työnkulkuun liittyy kaksi työprosessia:
 
-- Yksi työnkulun elementti aktivoi sopimuksen, jotta käyttäjä tai työnkulkuprosessi voi hyväksyä tapahtumat.
 - Yksi työnkulun elementeistä hyväksyy sopimuksen.
+- Yksi työnkulun elementti aktivoi sopimuksen, jotta käyttäjä tai työnkulkuprosessi voi hyväksyä tapahtumat.
 
 Ennen ostohyvityssopimuksen käyttöä sen on oltava aktiivinen **Ostohyvityksen hallinta** -moduulissa. Voit aktivoida sopimuksen luomalla ja konfiguroimalla *ostohyvityksen hallintasopimuksen työnkulun*.
 
-Kun työnkulku on aktivoitu ostohyvitysten hallinnassa, käyttäjät eivät voi hyväksyä tarjouksia manuaalisesti. Työnkulkua on käytettävä aina.
+Käyttäjät eivät voi hyväksyä tarjouksia manuaalisesti. Työnkulkua on käytettävä aina.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Ostohyvitysten hallintasopimuksen työnkulkujen luonti ja hallinta
 
@@ -42,4 +42,17 @@ Voit käyttää ostohyvityksen hallintasopimuksen työnkulkuja kohdassa **Ostohy
 
 Voit aktivoida sopimuksen työnkulun kautta avaamalla sopimuksen (esimerkiksi **Kaikki ostohyvityksen hallintasopimukset** -sivulla). Valitse siten toimintoruudussa **Työnkulku \> Lähetä**. Kun uusi sopimus on käsitelty ja hyväksytty työnkulun kautta, se on aktiivinen ja valmis käytettäväksi.
 
-Kun sopimus on aktivoitu, et voi muuttaa sen asetuksia. Jos haluat muuttaa aktiivista sopimusta, poista se käytöstä ja luo sitten uusi sopimus. Jos uusi sopimus muistuttaa vanhaa sopimusta, voit luoda sen kopioimalla vanhan sopimuksen.
+Kun sopimus on aktivoitu, et voi muuttaa useimpia sen asetuksista. Jos haluat muuttaa aktiivista sopimusta, poista se ensin käytöstä ja luo sitten uusi sopimus. Jos uusi sopimus muistuttaa vanhaa sopimusta, voit luoda sen kopioimalla vanhan sopimuksen.
+
+Voit muuttaa seuraavia sopimuksen asetuksia sen aktivoinnin jälkeen:
+
+- Täsmäytä
+- Kumulatiivinen takuu
+- Kirjausprofiili
+- Takuun kirjausprofiili
+- Tiedoston huomautukset
+- Valuutta
+- Päivämäärästä
+- Päivämäärään
+
+Lisäksi ostohyvitysrivit voidaan poistaa.

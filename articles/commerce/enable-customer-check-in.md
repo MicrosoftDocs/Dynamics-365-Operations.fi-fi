@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e4defc15d9ef198a361934d51e31016747dbb5ab
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: b42dc7766f8a69a7409c28d21b49cc96eca18dd4
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937579"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271422"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Asiakkaan sisäänkuittausilmoitusten ottaminen käyttöön myyntipisteessä
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
 

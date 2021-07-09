@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin 10.0.19:n esikatselu (kesäkuu 2021)
+title: Dynamics 365 Supply Chain Managementin version 10.0.19 uudet tai muuttuneet ominaisuudet (kesäkuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.19 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 7f98eee2a821191cefc27abbbd59373084c8b50c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114972"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271446"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin 10.0.19:n esikatselu (kesäkuu 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.19 uudet tai muuttuneet ominaisuudet (kesäkuu 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.19 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.837. Se on käytettävissä seuraavasti:
+Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.19 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.837. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esiversio:** huhtikuu 2021
 - **Julkaisun yleinen saatavuus (itsepäivitys):** kesäkuu 2021
@@ -32,7 +31,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on lisätietoja ja/tai linkkejä liittyvään dokumentaatioon.
 
-Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana.
+Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja |
 |---|---|---|

@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 418586113c038c3227f0704495a561eac319bdc9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745084"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271180"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa kerrotaan, miten [sähköisen raportoinnin konfiguraatioiden](general-electronic-reporting.md#Configuration) uusin versio ladataan [jaetusta resurssikirjastosta](../lifecycle-services/asset-library.md) Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa.
+
+> [!IMPORTANT]
+> Lifecycle Services (LCS) -palveluiden käyttö sähköisen raportoinnin (ER) konfiguraatioiden tallennusvarastona on [vanhentunut](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Lue lisätietoja kohdasta [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 1. Kirjaudu sovellukseen yhdellä seuraavista rooleista:
 

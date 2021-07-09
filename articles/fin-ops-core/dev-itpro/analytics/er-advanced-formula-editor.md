@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin kehittynyt kaavaeditori
 description: Tässä ohjeaiheessa esitellään, miten kehittynyttä kaavaeditoria voidaan käyttää lausekkeiden määrittämiseen sähköisen raportoinnin (ER) mallin yhdistämismäärityksessä ja muotokomponenteissa.
 author: NickSelin
-ms.date: 04/10/2020
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d18aeedb2f21176ffe964b926168d4bf088a093b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f7f80928e1d3f5d4892f72d4bd2fd09b70a26c1f
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751205"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270704"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Sähköisen raportoinnin kehittynyt kaavaeditori
 
@@ -45,16 +45,29 @@ Suorita seuraavat vaiheet aloittaaksesi kehittyneen kaavaeditorin käytön Micro
 2.  Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
 3.  Siirry **Käyttäjäparametrit** -dialogiruudun **Suorituksen jäljitys** -osaan ja määritä **Ota käyttöön kehittynyt kaavaeditori** -parametrin arvoksi **Kyllä**.
 
-[![Sähköisen raportoinnin konfiguroinnit -sivu](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![Käyttäjäparametrien valintaikkuna, Ota käyttöön laajennetun kaavaeditorin parametri korostettuna](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Ota huomioon, että tämä parametri on käyttäjä- ja yrityskohtainen.
+
+Microsoft Dynamics 365 Finance -versiosta 10.0.19 alkaen voit määrittää, mitä ER-kaavaeditoria tarjotaan oletusarvoisesti. Ota lisäkaavaeditori käyttöön kaikille nykyisen rahoitusinstanssin käyttäjille ja yrityksille seuraavasti.
+
+1.  Avaa **Ominaisuuksien hallinta** -työtila.
+2.  Etsi ja valitse ominaisuus **Määritä ER:n lisäkaavaeditori oletuskaavaeditoriksi luettelon kaikille käyttäjille** ja valitse sitten **Ota käyttöön nyt**.
+3.  Valitse **Organisaation hallinto** > **Sähköinen raportointi** > **Konfiguraatiot**.
+4.  Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
+5.  Etsi **Käyttäjän parametrit** -valintaikkunasta **Poista lisäkaavaeditorin lisäparametri käytöstä** ja vahvista, että sen asetus on **Ei**.
+
+[![Käyttäjäparametrien valintaikkuna, Poista laajennetun kaavaeditorin parametri korostettuna käytöstä](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+
+> [!NOTE]
+> Parametrien arvot **Ota käyttöön lisäkaavaeditori** ja **Poista lisäkaavaeditori käytöstä** pidetään erillään kullekin käyttäjälle, ja niitä tarjotaan **Käyttäjän parametrit** -valintaikkunassa sen mukaan, mikä **Aseta ER -lisäkaavaeditori oletuseditoriksi kaikille käyttäjille** -ominaisuuden tila on.
 
 ## <a name=""></a><a name="Autoformatting">Koodin automaattinen muotoilu</a>
 
 Kun kirjoitat useista koodiriveistä koostuvan monimutkaisen lausekkeen, uuden kirjoitetun rivin sisennys perustuu automaattisesti edellisen rivin sisennykseen. Voit valita rivejä ja muuttaa niiden sisennystä kirjoittamalla **Sarkain** tai **Vaihto+sarkain**.
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![ER-kaavaeditorin gif, joka näyttää rivien valinnan ja sisennyksen muuttamisen](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Automaattisen muotoilun avulla voit pitää koko lausekkeen hyvin muotoiltuna ja helpottaa sen ylläpitoa sekä yksinkertaistaa määritetyn logiikan ymmärtämistä.
 
@@ -62,7 +75,7 @@ Automaattisen muotoilun avulla voit pitää koko lausekkeen hyvin muotoiltuna ja
 
 Editori tarjoaa automaattisen tekstinsyötön auttamaan lausekkeiden nopeammassa kirjoittamisessa ja kirjoitusvirheiden välttämisessä. Kun aloitat uuden tekstin lisäämisen, editori tarjoaa automaattisesti luettelon toiminnoista, joita tuetaan syöttämäsi merkit sisältävissä ER-toiminnoissa. Voit myös käynnistää IntelliSensen missä tahansa määritetyn lausekkeen kohdassa kirjoittamalla **Ctrl+välilyönti**.
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![ER-kaavaeditorin gif, joka näyttää IntelliSense-hälytyksen käynnistäminen](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">Ennakoiva koodinsyöttö</a>
 
@@ -72,7 +85,7 @@ Editori tarjoaa automaattisesti ennakoivaa koodinsyöttöä
 - Lisäämällä toisen lainausmerkin, kun ensimmäinen on syötetty. Kohdistin pysyy lainausmerkkien välissä.
 - Lisäämällä toisen kaksoislainausmerkin, kun ensimmäinen on syötetty. Kohdistin pysyy lainausmerkkien välissä.
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![ER-kaavaeditorin gif, joka näyttää koodin valmistumisen automaattisesti](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 Kun osoitat kirjoitettua suljetta, sen pari korostetaan automaattisesti niiden tukeman rakenteen näyttämiseksi.
 
@@ -88,7 +101,7 @@ Voit esimerkiksi siirtyä riville **8** seuraavasti:
 
 - Paina **F1**, kirjoita **G**, valitse **Siirry riville**, syötä arvo **8** ja paina **Enter**.
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![ER-kaavaeditorin gif, joka näyttää, kuinka lausekkeen osia paikannetaan komentovalikoiman avulla](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">Koodin jäsentäminen</a>
 
@@ -110,7 +123,7 @@ Voit ottaa kaikki alueet näkyviin seuraavasti:
   
 - Paina **F1**, kirjoita **UN** valitse **Näytä kaikki** ja paina sitten **Enter**
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![ER-kaavaeditorin gif, joka näyttää kaavan avautumisen](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">Etsi ja korvaa</a>
 
@@ -138,13 +151,13 @@ Voit muuttaa kaikkia tietyn tekstin esiintymiä valitsemalla lausekkeen tekstin 
   
 - Paina **F1**, kirjoita **C** ja valitse sitten tarvittava vaihtoehto valitun tekstin muuttamiseksi. Syötä vaihtoehtoinen teksti.
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![ER-kaavaeditorin gif, joka näyttää etsi- ja korvaa-toiminnon](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">Tietolähteiden ja toimintojen liittäminen</a>
 
 Voit valita **Lisää tietolähde**, jolla kulloiseenkin lausekkeeseen lisätään vasemmassa **Tietolähde**-ruudussa valittuna oleva tietolähde. Voit myös valita **Lisää toiminto**, jolla kulloiseenkin lausekkeeseen lisätään oikeassa **Toiminnot**-ruudussa valittuna oleva toiminto. Jos käytät ER-muotoeditoria, valittu toiminto tai valittu tietolähde liitetään aina määritetyn lausekkeen loppuun. Kun käytät kehittynyttä ER-muotoeditoria, valittu toiminto tai valittu tietolähde voidaan liittää mihin tahansa kohtaan määritettyä lauseketta. Sinun on käytettävä kohdistinta määrittääksesi, mihin haluat liittää tiedot.
 
-[![ER-kaavaeditori](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![ER-kaavaeditorin gif, joka näyttää tietolähteen lisäämisen ja toiminnon liittämisen](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">Syntaksin värittäminen</a>
 

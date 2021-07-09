@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8f6edc848e1ed03f97e11cd4eb3fd1aaf4ee0c59
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 445360659e993451b1289091e43e4fc64e0ad228
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056705"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303217"
 ---
 # <a name="request-time-off"></a>Pyydä poissaoloaikaa
 
@@ -59,8 +59,6 @@ Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös 
 2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty loma-aika**. Voit tarkastella odottavia lomapyyntöjä valitsemalla **Loma-aika pyynnöt**.
 
 ## <a name="cancel-time-off-requests"></a>Poissaolopyyntöjen peruuttaminen
-
-[!include [Preview feature](includes/preview-feature.md)]
 
 1. Valitse **työntekijän itsepalvelu** -työtilassa **Näytä poissaoloaika** **Vapaasaldot**-ruudusta.
 

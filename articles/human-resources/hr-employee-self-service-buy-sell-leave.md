@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79115f26047c64ddb528a73e01e76891fd9b5044
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6d32abacc1539cb930ad6f1ebcfe6fa9af4befcf
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052070"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271479"
 ---
 # <a name="buy-and-sell-leave"></a>Osta ja myy lomaa
 
@@ -47,6 +47,12 @@ Saldo päivitetään joko automaattisesti tai se siirtyy hyväksyntäprosessiin 
 3. Valitse **Lähetä**, kun olet valmis lähettämään pyyntösi.
 
 Saldo päivitetään joko automaattisesti tai se siirtyy hyväksyntäprosessiin ennen päivittämistä. Toimintatapa määräytyy loman rahaksi vaihtamiskäytännön määrityksen mukaan.
+
+
+## <a name="troubleshooting"></a>Vianmääritys 
+
+Jos osto- tai myyntipyyntötyönkulku epäonnistuu, käyttäjät, joilla on **EssLeaveBuySellRequestApprover**-oikeudet, voivat tarkistaa kaikkien osto- ja myyntipyyntöjen sanomalokin. Voit tehdä tämän menemällä kohtaan **Loma ja poissaolo > Linkki > Osto- ja myyntipyynnöt > sanomaloki** (vasemmalla yläkulmassa). **Sanomaloki** näyttää käyttäjille, kuinka tapahtumat on käsitelty, sekä niihin liittyvät työnkulkuhistoriat.
+
 
 ## <a name="see-also"></a>Lisätietoja
 

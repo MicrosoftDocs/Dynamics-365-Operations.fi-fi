@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908877"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301647"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Kysynnän ennusteiden historiallisten tietojen tuominen
 
@@ -39,26 +39,6 @@ Voit käyttää tietoyksikköä, kun käytössä on historialliset kysyntätiedo
 
 Lisätietoja tietojen tuonnista sekä tietojen tyhjentämisestä tuonnin jälkeen on kohdassa [Tietojen tuonti- ja vientityöt – yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) ja siihen liittyvissä aiheissa.
 
-## <a name="example"></a>Esimerkki
-
-Voit käyttää esimerkkinä seuraavaa tiedostoa. Lataa [HistoricalDemandData](/dynamics/s-e/). Tämä tiedosto sisältää nimikkeen D0001 historialliset kysyntätiedot. Se sisältää vain seuraavat pakolliset kentät: sivusto, määrä ja kysynnän päivämäärä.
-
-1. Valitse yritys, johon historialliset kysyntätiedot tuodaan.
-2. Avaa **Tietojen hallinta** -työtila.
-3. Valitse **Tuonti**-ruutu.
-4. Syötä tuontiprojektin nimi, kuten **Nimikkeen D0001 historiallisen kysynnän tuominen**.
-5. Valitse **Lähdetietojen muoto** -kenttään tuotavan tiedoston muoto. Voit tuoda tämän esimerkin HistoricalDemandData-tiedoston valitsemalla **CSV**.
-6. Valitse **Yksikön nimi** -kenttään **Historiallinen ulkoinen kysyntä**.
-7. Tallenna tiedosto tietokoneeseen ja lataa se.
-8. Valitse **Tuo**.
-9. **Suorituksen yhteenveto** -sivu avautuu automaattisesti. Tarkista sivun tuodut tiedot.
-
-Kun historialliset kysyntätiedot on tuotu, voit luoda kysynnän ennusteen.
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-[Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)  
-[Tietojen tuonti- ja vientityöt – yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+Katso myös [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

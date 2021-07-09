@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020456"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271050"
 ---
 # <a name="rebate-management-module-overview"></a>Ostohyvitysten hallintamoduulin yleiskatsaus
 
@@ -70,7 +70,7 @@ Ostohyvitykset voidaan konfiguroida monien erilaisten parametrien perusteella. N
 
 Myös muut ostohyvitykset voivat vähentää ostohyvityksen laskentatuloksia sen mukaan, onko ostohyvitys määritetty laskemaan nettosumman perusteella.
 
-Toimittajapuolella ostohyvitykset voivat laskea hinnan FIFO-säännön, viimeisimmän ostohinnan, keskimääräisen ostohinnan tai myyntihinnan perusteella.
+Toimittajapuolella myyntitilauksiin perustuvat ostohyvitykset voivat laskea hinnan FIFO-säännön, viimeisimmän ostohinnan, keskimääräisen ostohinnan tai myyntihinnan perusteella.
 
 ## <a name="rebate-target-transactions"></a>Ostohyvityksen kohdetapahtumat
 
@@ -84,11 +84,12 @@ Nimiketulokset luovat maksuttoman nimikkeiden myyntitilauksen asiakkaan ostohyvi
 
 Liitettyjen sopimusten yhdistelmä, laskelmien tiheys, laskentaperuste ja valittu laskentamenetelmä määrittävät ostohyvityslaskelmien tarkkuuden. Ostohyvitysvarauksia voidaan käyttää kirjattujen ja vaadittujen arvojen jaksottamiseen.
 
-Varauksia voidaan hallinnoida päivittäin tai kuukausittain. Toiminto voi kuitenkin kohdistaa tai maksaa ostohyvityksen tai saada siitä maksun millä tahansa määritetyllä tiheydellä. Käyttäjät voivat helposti muuttaa tilaus- tai maksusummia milloin tahansa maksun aikana.
+Varauksia voidaan hallita päivittäin, viikoittain, kuukausittain tai mukautetun kauden mukaan. Toiminto voi kuitenkin kohdistaa tai maksaa ostohyvityksen tai vastaanottaa sen maksun määritetyllä tiheydellä, joka on sama tai pidempi kuin varausväli. Alennuksia käytetään samalla tiheydellä kuin ostohyvitystä. Käyttäjät voivat helposti muuttaa tilaus- tai maksusummia milloin tahansa maksun aikana.
 
-Käyttäjien ei enää tarvitse käsitellä sopimuksia tai varauksia kahdessa vaiheessa. Varaukset ja poiskirjaukset kirjataan suoraan kirjanpitoon. Lisäksi hyvityslaskut voidaan luoda automaattisesti. Tämän vuoksi ostoreskontraan ja myyntireskontraan on täysi integrointi. Käsittelyn aikana laskelmissa käsitellään tilitysalennuksia, maksettuja laskuja, kauppa-alennuksia ja olemassa olevia hyvityslaskuja sen varmistamiseksi, että summat ja arvot lasketaan oikein.
+Käyttäjien ei enää tarvitse käsitellä sopimuksia tai varauksia kahdessa vaiheessa. Varaukset ja poiskirjaukset kirjataan suoraan kirjanpitoon. Lisäksi hyvityslaskut voidaan luoda automaattisesti. Tämän vuoksi ostoreskontraan ja myyntireskontraan on täysi integrointi. Käsittelyn aikana laskelmissa voidaan käsitellään tilitysalennuksia, maksettuja laskuja, kauppa-alennuksia ja olemassa olevia hyvityslaskuja sen varmistamiseksi, että summat ja arvot lasketaan oikein.
 
-Kun ostohyvitykset lasketaan, prosessi luo tapahtumat, joita voidaan tarkastella ennen kirjauksen tekemistä. Tämän jälkeen voidaan luoda kirjauskansio, hyvityslasku tai veloitustapahtuma. Erillinen prosessi kirjaa ostohyvitys- ja vähennystapahtumat. Raportointi-ilmoitukset ja tapahtumaluettelot ovat saatavissa vaatimustenmukaisuuden, tehokkuuden ja läpinäkyvyyden varmistamiseksi.
+Kun ostohyvitykset lasketaan, prosessi luo tapahtumat, joita voidaan tarkastella ennen kirjauksen tekemistä. Erillinen prosessi kirjaa ostohyvityksen hallintatapahtumat. Tämän jälkeen ehdotettuihin tapahtumiin kirjauksen aikana voidaan luoda kirjauskansio, hyvityslasku- tai veloitustapahtuma. Raportointi-ilmoitukset ja tapahtumaluettelot ovat saatavissa vaatimustenmukaisuuden, tehokkuuden ja läpinäkyvyyden varmistamiseksi.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Taatut rojaltimaksut
 

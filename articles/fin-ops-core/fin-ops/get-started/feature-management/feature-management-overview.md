@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923304"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270810"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -160,8 +160,8 @@ Käytäntönä on, että kaikki uudet toiminnot on ensin hyväksyttävä 12 kuuk
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Miksi käytössä ei ole erityistä pakollista käyttöönottopäivää? 
 Päivitysjulkaisujen ajoitus vaihtelee, ympäristöpäivityksen ajoitus vaihtelee ja asiakkaat voivat halutessaan ohittaa joitakin päivityksiä. Tämän vuoksi tietyt päivämäärät ovat vaikeasti määritettävissä. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Missä on pakolliseksi muuttuvien toimintojen ohjeistus? 
-Tämä ohjeistus saadaan sovellusryhmiltä. Usein niistä on maininta [poistetuissa tai vanhentuneissa toiminnoissa](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Missä on pakollisten toimintojen ohjeistus? 
+Tämä ohjeistus saadaan kultakin Dynamics 365 -sovellusryhmältä. Nämä toiminnot mainitaan usein [asiakasohjelman ominaisuuksien päivityksissä](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) tai [poistetuissa tai vanhentuneissa ominaisuuksissa](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Onko tuotteessa käytössä sisäinen ilmoitus tai signaali, että toiminnon käyttöönotto tulee olemaan pakollista? 
 Tällä hetkellä ei ole olemassa toiminnon pakollisuuteen liittyvää ilmoitusmekanismia.

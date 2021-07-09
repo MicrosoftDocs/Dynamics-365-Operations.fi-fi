@@ -2,7 +2,7 @@
 title: Hintojen määrittäminen
 description: Hinnat Microsoft Dynamics 365 Human Resourcesissa määrittävät, kuinka paljon työnantajat ja työntekijät edistävät etua.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054977"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266654"
 ---
 # <a name="configure-rates"></a>Hintojen määrittäminen
 
@@ -46,7 +46,7 @@ Käytä useisiin tekijöihin perustuvia hintoja määrittämään, kuinka paljon
    | **Vanhentumisaika** | Hinnan päättymispäivämäärä. 12/31/2154, (joka vastaa ei koskaan -arvoa) on oletusarvo. |
    | **Käytä tasoja** | Edun hinnan laskennassa käytettävä taso. Yhden kerroksen yhden tason edun kurssi tai kaksinkertainen taso kahden tason edun osalta. Kaksinkertainen taso on esimerkiksi sukupuoleen ja ikään perustuva taso. |
    | **Maksun toistuvuus** | Maksutiheys, joka määrittää, kuinka usein etupalkkio maksetaan edun tarjoajalle. Jos esimerkiksi toimitustiheys on kuukausi, edun korko vastaa kuukausittaista maksun määrää. |
-   | **Maksutiheyden asteen pyöristys** | Hinnan pyöristyksen menetelmä: vakio tai katkaistu. |
+   | **Maksutiheyden asteen pyöristys** | Pyöristystavat ovat vakio-, katkaistu, normaali, alaspäin ja ylöspäin pyöristys. </br></br><ul><li>**Vakio** - Pyöristä aina ylöspäin. Esimerkiksi 10,611 pyöristetään 10,62:ksi. -10,231 pyöristetään -10,23:ksi. </li><li>**Katkaistu** - Pyöristä aina alaspäin. Esimerkiksi 10,619 pyöristetään 10,61:ksi. -10,231 pyöristetään -10,24:ksi. </li><li>**Normaali** - Desimaaliarvot, jotka päättyvät tai ovat suurempia kuin 5, pyöristyvät nollasta pois päin. Desimaaliarvot, jotka päättyvät enintään 4:ään pyöristetään nollaa kohti. Esimerkiksi 10,615 pyöristetään 10,62:ksi. -10,235 pyöristetään -10,24:ksi. 10,614 pyöristetään 10,61:ksi. -10,234 pyöristetään -10,23:ksi. </li><li>**Alaspäin** - Pyöristys nollaa kohti. Esimerkiksi 10,619 pyöristetään 10,61:ksi. -10,231 pyöristetään -10,23:ksi. </li><li>**Pyöristys ylös** - Pyöristys nollasta pois päin. Esimerkiksi 10,619 pyöristetään 10,62:ksi. -10,231 pyöristetään -10,24:ksi. |
    | **Tupakoimaton - työntekijän summa** | Summa, jonka edun toimittaja veloittaa tupakoimattomasta työntekijästä. Tämä on summa, jonka työnantaja maksaa edun tarjoajalle ja joka perustuu hinta-asetusten maksutiheyteen. |
    | **Tupakoimaton - työnantajan summa** | Summa, jonka edun toimittaja veloittaa tupakoimattomasta työntekijästä. Tämä on summa, jonka työnantaja maksaa edun tarjoajalle ja joka perustuu hinta-asetusten maksutiheyteen. |
    | **Tupakoitsija - työntekijän summa** | Summa, jonka edun toimittaja veloittaa tupakoivasta työntekijästä. Tämä on summa, jonka työnantaja maksaa edun tarjoajalle ja joka perustuu hinta-asetusten maksutiheyteen. |

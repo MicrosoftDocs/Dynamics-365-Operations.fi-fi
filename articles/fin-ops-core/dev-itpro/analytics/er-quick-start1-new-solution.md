@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224031"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304390"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
 
@@ -185,7 +185,7 @@ Kun [tuot uuden tietomallin määritys](#ImportDataModel) -osan vaiheet, voit tu
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Uuden tietomallimäärityksen tuominen
 
-1. Lataa [kyselylomakkeet model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeet model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
 4. Valitse toimintoruudussa **Vaihda** \> **Lataa XML-tiedostosta**.
@@ -300,7 +300,7 @@ Kun teet loppuun [tuot uuden mallin yhdistämismääritys](#ImportModelMapping) 
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Uuden mallin yhdistämismäärityksen tuominen
 
-1. Lataa [kyselylomakkeet mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeet mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
 4. Valitse toimintoruudussa **Vaihda** \> **Lataa XML-tiedostosta**.
@@ -366,7 +366,7 @@ Sinun on konfiguroitava tietolähteet, jotta voit käyttää kyselylomakkeen tie
     2. Valitse **Lisää**.
     3. Kirjoita valintaikkunan **Nimi**-kenttään **\$ResultGroup**.
     4. Valitse **Muokkaa kaavaa**.
-    5. Syötä [ER-kaavaeditorin](general-electronic-reporting-formula-designer.md) **Kaava**-kenttään **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)**, jos haluat käyttää KMCollection- ja KMQuestionResultGroup-taulujen välistä yksi-moneen-[yhteyttä](er-formula-language.md#paths).
+    5. Syötä [ER-kaavaeditorin](general-electronic-reporting-formula-designer.md) **Kaava**-kenttään **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)**, jos haluat käyttää KMCollection- ja KMQuestionResultGroup-taulujen välistä yksi-moneen-[yhteyttä](er-formula-language.md#Paths).
     6. Valitse **Tallenna** ja sulje kaavaeditori.
     7. Lisää uusi laskettu kenttä valitsemalla **OK**.
 
@@ -547,7 +547,7 @@ Tämän konfiguraation version 1.1 tila muutetaan **luonnoksesta** **valmiiksi**
 
 ER-kehys käyttää ennalta määritettyjä malleja luodakseen tiedostoja Microsoft Office -muodoissa (Excel-työkirjoissa tai Word-asiakirjoissa). Kun tarvittava raportti luodaan, malliin täytetään tarvittavat tiedot määritetyn tietovuomäärityksen mukaan. Siksi sinun on ensin suunniteltava malli mukautettua raporttia varten. Tämä malli on suunniteltava Excel-työkirjana, jonka rakenne edustaa mukautetun raportin asettelua. Sinun on annettava jokaiselle Excel-kohteelle nimi, jonka aiot täyttää vaaditulla tiedoilla.
 
-1. Lataa [kyselylomakkeiden raporttimalli.xslx](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeiden raporttimalli.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Avaa tiedosto Excelissä ja tarkista työkirjan rakenne.
 
 Kuten seuraavasta kuvasta näkyy, ladattu malli on suunniteltu tulostamaan kyselylomakkeita, joissa esitetään kyselyn kysymykset sekä asianmukaiset vastaukset.
@@ -572,7 +572,7 @@ Kun [tuot suunnitellun mallinmääritys](#FormatImport) -osan vaiheet, voit tuod
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Tuo suunniteltu muotokonfiguraatio
 
-1. Lataa [kyselylomakkeiden muoto.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeiden muoto.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
 4. Valitse toimintoruudussa **Vaihda** \> **Lataa XML-tiedostosta**.

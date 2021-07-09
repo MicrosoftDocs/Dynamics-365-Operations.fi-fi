@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103590"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301671"
 ---
 # <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
 
@@ -109,6 +109,8 @@ Yhteyden tila ilmaisee Supply Chain Managementin ja suunnittelun optimointipalve
 
 - **Kyllä** – suunnittelun optimointia käytetään pääsuunnittelussa.
 - **Ei** – Supply Chain Managementin sisäistä suunnittelumoduulia käytetään pääsuunnittelussa.
+
+Tämä asetus koskee kaikkia yrityksiä (yrityksiä). Suunnittelun optimointia ei voida käyttää joissakin yrityksissä ja sisäistä pääsuunnittelua muissa yrityksissä.
 
 > [!NOTE]
 > Jos Supply Chain Managementin sisäiselle suunnittelumoduulille aiemmin luodut suunnittelun erätyöt käynnistyvät, kun **Käytä suunnittelun optimointia** -asetuksena on **Kyllä**, kyseiset työt epäonnistuvat.
