@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f94b054d213dc2b347f4e5a7b2f4c2a51d519f57
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 626393f0c07803eb944e9066c72a24d2cf9ea0ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824001"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356218"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Tuottokirjauksen uudelleenkohdistus – skenaario 1
 
@@ -28,25 +28,25 @@ Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa kaksi m
 
 Tätä skenaariota varten **Kirjaa laskun korjaukset myyntireskontraan** ‑asetukseksi on määritetty **Ei** **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**).
 
-[![Kirjaa laskun korjaukset myyntireskontraan ‑asetuksena on Ei](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
+[![Kirjaa laskun korjaukset myyntireskontraan ‑asetuksena on Ei.](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
 
 Asiakkaalle US\_SI\_0003 luodaan myyntitilaus. Asiakas ostaa kannettavan tietokoneen (nimiketunnus S0012) ja tukipalvelun sille (nimiketunnus S0008, ”Jatkuva tekninen palvelu”). Tuotto kannettavasta tietokoneesta kirjataan välittömästi (tuottokirjausaikataulua ei ole). Tukipalvelun tuottoa lykätään ja se kirjataan 12 kuukauden aikana sopimuksen päivämäärävälin määrittämällä tavalla.
 
-[![Kannettavan tietokoneen ja tukipalvelun myyntitilausrivit](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
+[![Kannettavan tietokoneen ja tukipalvelun myyntitilausrivit.](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
 
 Myyntitilaus vahvistetaan. Koska molemmille nimikkeille on määritetty tuottohinnan kohdistus, tuottohinta lasketaan, kun myyntitilaus vahvistetaan. Voit tarkastella kirjattavaa tuottoa **Tuottohinnan kohdistus** ‑sivulla (valitse **Myyntitilaus**-sivulla toimintoruudun **Hallinta**-välilehdessä **Tuottokirjaus**-ryhmässä **Tuottohinnan kohdistus**). Kannettavan tietokoneen tuotto kirjataan tuottotilille, ja summaksi tulee 1 008,01 $. Tukipalvelun tuotto kirjataan lykätyn tuoton tilille, ja summaksi tulee 190,99 $. Tuottohintojen summan on oltava sama kuin niiden tuottohinnan kohdistusta varten määritettyjen rivien summa (1 199,00 $).
 
-[![Tuottohinnan kohdistus ‑sivu](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
+[![Tuottohinnan kohdistus ‑sivu.](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
 
 Asiakas päätti myyntihetkellä olla ostamatta asennuspalveluita (nimiketunnus S0001), mutta muutti myöhemmin mielensä. Tämän vuoksi samalle asiakkaalle syötetään toinen myyntitilaus.
 
-[![Asennuspalveluiden myyntitilausrivi](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
+[![Asennuspalveluiden myyntitilausrivi.](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
 
 Toinen myyntitilaus vahvistetaan. Koska tämä myyntitilaus sisältää vain yhden rivin, tuottohinnan kohdistusta ei tehdä, kun myyntitilaus vahvistetaan. Tuottohinnan kohdistus tapahtuu vain, jos yksilöllisiä nimikkeitä on kaksi tai enemmän ja jos kyseisille nimikkeille on määritetty tuottohinnan kohdistus.
 
 Jos tämä uusi myyntitilaus on ainoa muutos asiakkaan sopimukseen, uudelleenkohdistusprosessi voidaan nyt suorittaa. Avaa **Kohdista hinta uudelleen uusille tilausriveille** ‑sivu valitsemalla jommassakummassa myyntitilauksessa **Kohdista hinta uudelleen uusille tilausriveille**. Vaihtoehtoisesti voit valita **Tuottokirjaus \> Kausittaiset tehtävät \> Kohdista hinta uudelleen uusille tilausriveille**. Valitse kaksi myyntitilausta ja vastaavat myyntitilausrivit ja valitse sitten **Päivitä uudelleenkohdistus**. **Uudelleenkohdistettu summa** ‑sarakkeessa näkyy kunkin myyntitilausrivin uusi tuottohinta.
 
-[![Uudet tuottohinnat Kohdista hinta uudelleen uusille tilausriveille ‑sivulla](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
+[![Uudet tuottohinnat Kohdista hinta uudelleen uusille tilausriveille ‑sivulla.](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
 
 Jos valitset **Odotettu tosite**, mitään ei näytetä, koska laskuja ei ole kirjattu.
 
@@ -55,7 +55,7 @@ Viimeistele uudelleenkohdistus valitsemalla **Käsittele**. Sinua kehotetaan ant
 > [!TIP]
 > Jos haluat antaa kontekstitietoja siitä, miksi nämä lisänimikkeet näytetään, voit lisätä ruudukkoon muita sarakkeita, kuten **Uudelleenkohdistustunnus** ja **Myyntitilaus**.
 > 
-> [![Lisäsarakkeet Tuottohinnan kohdistus ‑sivulla](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+> [![Lisäsarakkeet Tuottohinnan kohdistus ‑sivulla.](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

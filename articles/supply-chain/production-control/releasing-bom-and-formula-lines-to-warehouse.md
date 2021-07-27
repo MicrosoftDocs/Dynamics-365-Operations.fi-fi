@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811675"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350543"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 
@@ -61,7 +61,7 @@ Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -e
 
 Seuraavan kuvan tuotantotilauksessa on kaksi työtä, 10 ja 20, jotka kattavat tuotantotilauksen kokoonpanon ja pakkauksen. Kumpikin työ on määritetty kuluttamaan tietty määrä materiaalia. Tässä kuvassa vapautuksen aikarajan ilmaiseva aikajanan alla oleva vihreä nuoli on sama **(LessThanDate())**-ehdoissa määritetty päivien määrä. Esimerkiksi **(LessThanDate(2))** ilmaisee, että työn on haettava vapauttamattomia määriä vain kahden päivän aikarajan ajalta.
 
-![Esimerkki kaksi erätyötä sisältävästä tuotantotilauksesta](media/bach-job-setup.PNG)
+![Esimerkki kaksi erätyötä sisältävästä tuotantotilauksesta.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Materiaalin vapauttaminen työvaiheen numeron mukaan tai suhteessa valmiiden tavaroiden määrään
 
@@ -78,7 +78,7 @@ Voit hallita työvaiheita, joihin materiaali on vapautettava, **Vapauta varastoo
 
 Seuraavan kuvan tuotantotilauksessa on kaksi työvaihetta, 10 ja 20. Jos rajoitat tässä esimerkissä vapautuksen työvaiheeseen 10, vain materiaali M9203 vapautetaan.
 
-![Esimerkki materiaalin vapauttamisesta työnumeron mukaan](media/two-operations.PNG)
+![Esimerkki materiaalin vapauttamisesta työnumeron mukaan.](media/two-operations.PNG)
 
 Jos haluat nähdä, miten voit vapauttaa materiaalia suhteessa valmiiden tuotteiden määrään, katso tämä lyhyt YouTube-video koskien [tuotantotilauksen vapautusprosessin parannuksia](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 

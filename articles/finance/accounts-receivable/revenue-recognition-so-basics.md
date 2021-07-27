@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce0879565babfbf526e1aa6864482e60cbabd377
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817218"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345593"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Tuottokirjaus myyntitilauksiin
 
@@ -34,20 +34,20 @@ Tässä aiheessa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen pe
 
 ## <a name="enter-a-sales-order"></a>Myyntitilauksen syöttäminen
 
-Seuraava myyntitilaus syötetään, ja se sisältää kolme nimikettä, jotka määritetään tuottokirjausta varten.
+Seuraava myyntitilaus syötetään. Se sisältää kolme nimikettä, jotka määritetään tuottokirjausta varten.
 
-[![Myyntitilauksen syöttäminen](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
+[![Myyntitilauksen syöttäminen.](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
 
 Tuottokirjaukselle on kaksi konseptia:
 
-- **Tuottohinnan määritys** Tuottohinta lasketaan vapautettujen tuotteiden määritysten perusteella. Tuottohinta ei koskaan näy asiakkaalle, vaan sitä käytetään vain myyntitilauksen laskun kirjanpidossa. Myyntitilausrivit ja osana myyntiä tulostetuissa asiakirjoissa näkyy edelleen yksikkö-/luettelohinta.
+- **Tuottohinnan määritys.** Tuottohinta lasketaan vapautettujen tuotteiden määritysten perusteella. Tuottohinta ei koskaan näy asiakkaalle, vaan sitä käytetään vain myyntitilauksen laskun kirjanpidossa. Myyntitilausrivit ja osana myyntiä tulostetuissa asiakirjoissa näkyy edelleen yksikkö-/luettelohinta.
 - **Määritä, milloin tuottokirjauksen pitäisi tapahtua.** Tuoton kirjaamisajankohdan määrityksessä käytetään tuottoaikataulua.
 
     Tässä esimerkissä ensimmäinen nimike, S0001, kohdistetaan **1O** (yhden esiintymän) -tuottoaikatauluun. Tämä rivi edustaa välitavoiteskenaariota, jossa tuotto kirjataan sen jälkeen, kun asennus on toteutunut tulevaisuudessa. Sen vuoksi tuottoa siirretään siihen asti, että asennus on suoritettu.
 
     Toinen nimike, S0008, on palvelunimike, joka on määritetty sopimuksenjälkeisen tuen (PCS:n) nimikkeeksi. Jatkuvat kehityspalvelut tuotetaan asiakkaalle 12 kuukauden ajan. Siten tuotteelle kohdistetaan oletusarvoisesti **12M**-tuottoaikataulu. Koska kyseessä on PCS-nimike, sopimuksen alkamis- ja päättymispäivät on määritettävä. Oletusarvoisesti sopimuksen alkamis- ja päättymispäivät löytyvät nimiketietojen Määritys-välilehdeltä. Tuottoaikataulussa asetuksen arvoksi määritetään **12M**, jolloin sopimusehdot täytetään automaattisesti seuraavan kuvan mukaisesti.
 
-    [![Tuottoaikataulut](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
+    [![Tuottoaikataulut.](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
     Kolmas nimike, S0012, on laitteistoa, eikä sille kohdisteta oletusarvoisesti tuottoaikataulua. Laitteistosta saatu tuotto kirjataan heti kun nimike laskutetaan.
 
@@ -55,7 +55,7 @@ Tuottokirjaukselle on kaksi konseptia:
 
 Lisätietoja tuottohinnasta ja tuottoaikataulusta saa käyttämällä myyntitilauksen toimintoruudun **Hallinta**-välilehden **Tuottokirjaus**-ryhmän painikkeita. Koska myyntitilausta ei ole vahvistettu tässä vaiheessa, tuottokirjausta varten käytettävät painikkeet eivät ole käytettävissä. Nämä painikkeet ovat käytettävissä tai käyttämättömissä sen mukaan, missä vaiheessa täyttämistä myyntitilaus on.
 
-[![Myyntitilauksen ylätunniste](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
+[![Myyntitilauksen ylätunniste.](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 Kolmella ensimmäisellä painikkeella saa tietoja tuottokirjausta varten määritetyn myyntitilauksen nimikkeiden tuottohinnasta.
 
@@ -70,13 +70,13 @@ Kahta viimeistä painiketta antaa tietoja niiden myyntitilauksen nimikkeiden tuo
 
 Seuraavassa esimerkissä tuottohinta kohdistettiin myyntitilauksen vahvistamisen yhteydessä. Huomaa, että vaikka tuottohinnat kohdistetaan eri tavoin, **Kirjattava tuotto** -kentän kokonaissumman on vastattava niiden myyntitilausrivien summaa, jotka laskutetaan asiakkaalta. Esimerkiksi myyntitilausrivien summa ilman veroja on 1 499 $. Siten myös **Kirjattavan tuoton** arvojen kokonaissumman on oltava 1 499 $.
 
-[![Tuottohinnan kohdistus](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
+[![Tuottohinnan kohdistus.](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
 
 Myös odotettu tuoton kirjausaikataulu luodaan. Tuottoaikataulussa siirrettävänä summana käytetään **Kirjattava tuotto** -arvoa. Nimike S0001 siirtää 321,21 dollaria 300 dollarin sijaan ja S0008 siirtää 160,61 dollaria 100 dollarin sijaan. Nimikettä S0012 ei näytetä odotetussa aikataulussa, koska tuottoa ei siirretä. Kun kirjaus tapahtuu, nimikkeellä S0012 kirjataan 1 017,18 $ suoraan tuottokirjanpitotilille.
 
-[![Odotettu tuoton kirjausaikataulu](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
+[![Odotettu tuoton kirjausaikataulu.](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
 
-## <a name="create-the-packing-slip"></a>Pakkausluettelon luonti
+## <a name="create-the-packing-slip"></a>Pakkausluettelon luominen
 
 Seuraavaksi voidaan luoda myyntitilauksen pakkausluettelo. Pakkausluettelon kirjauksen yhteydessä ei kirjata tuottoa. Jos myyntitilausta ei ole vahvistettu, pakkausluettelon kirjaaminen ei käynnistä tuottohinnan laskemista. Se ei myöskään käynnistä odotetun tai lopullisen tuoton kirjausaikataulun luontia. Jos nimikkeen malliryhmä määritetään siirtämään tuottoa pakkausluettelolle, sen kirjaaminen jatkuu kulloisenkin kirjausprofiilin kirjanpitotilejä. Tällöin ei siis käytetä uusia siirretyn tuoton tilejä, joita käytetään laskun kirjaamiseen.
 
@@ -84,17 +84,17 @@ Seuraavaksi voidaan luoda myyntitilauksen pakkausluettelo. Pakkausluettelon kirj
 
 Viimeinen vaihe on myyntitilauksen laskuttaminen. Laskun tositteesta käy ilmi, että nimikkeiden S0001 ja S0008 tuotto siirrettiin (321,21 + 160,61 $ = 481,82 $) ja että jäljellä oleva nimikkeen S0012 summa (1 017,18) kirjattiin tuotoksi. Näiden arvojen kokonaissumma on 1 499 $, joka vastaa myyntitilausrivien summaa.
 
-[![Tositetapahtumat](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
+[![Tositetapahtumat.](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
 Kun lasku on luotu, tuottokirjauksen painikkeet **Tuottohinnan kohdistus**, **Kohdista hinta uudelleen uusille tilausriveille** ja **Tuottokirjauksen aikataulu** tulevat käyttöön, mutta **Päivitä tuottohinnan kohdistus** ja **Odotettu tuoton kirjausaikataulu** eivät ole käytössä.
 
-[![Käytettävissä olevat tuottokirjauksen painikkeet](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
+[![Käytettävissä olevat tuottokirjauksen painikkeet.](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 **Tuottohinnan kohdistus**-painike on edelleen käytettävissä, jotta tuottohinnan laskemista voidaan tarkastella. Jos vahvistuksen jälkeen mikään ei ole muuttunut myyntitilauksessa, laskun kirjaus ei muuta **Kirjattava tuotto** -kentän laskettua summaa.
 
 Odotettu tuoton kirjausaikataulu poistetaan ja korvataan lopullisella tuottokirjausaikataululla. Tuottoaikataulun tietoja ylläpidetään kunkin myyntitilausrivin osalta, ja niitä käytetään siirretyn tuoton vapauttamiseen todelliseksi tuotoksi, kun sopimusvelvoitteet on täytetty.
 
-[![Lopullinen tuoton kirjausaikataulu](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+[![Lopullinen tuoton kirjausaikataulu.](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

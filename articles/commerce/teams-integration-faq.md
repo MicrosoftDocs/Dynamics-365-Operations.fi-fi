@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3fc7cff0a3f8d0fbfb196ec5951b138088afece7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 45decb55ce5cf3399f48034df367e1565ab689bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019467"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347437"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Dynamics 365 Commercen ja Microsoft Teamsin integrointi – usein kysytyt kysymykset
 
@@ -45,7 +45,7 @@ Liitä vähittäismyynnin tehtävienhallinnan rooli työntekijään Commerce hea
 
 Commerce headquartersissa jokaisen organisaation hierarkia liittyy vähintään yhteen tarkoitukseen. Varmista, että hierarkiaan, jonka haluat valmistella Microsoft Teamsiin, on liitetty **vähittäismyynnin raportoinnin** tarkoitus seuraavan esimerkkikuvan mukaisesti. 
 
-![Esimerkki organisaatiohierarkian tarkoituksesta Commerce headquartersissa](media/d365-commerce-organization-hierarchies-purpose.png)
+![Esimerkki organisaatiohierarkian tarkoituksesta Commerce headquarters -sovelluksessa.](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>Miten sallin vähittäismyynnin työntekijöiden kirjautumisen Commerce-myyntipisteeseen Azure Active Directory (Azure AD) -todennuksella?
 

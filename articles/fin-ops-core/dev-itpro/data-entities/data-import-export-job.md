@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937327"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351016"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -106,7 +107,7 @@ Järjestelmässä on kaksi määritysnäkymää: **Yhdistämismääritysten visu
 
 Voit luoda yhdistämismäärityksen sivulla valitsemalla **Luo lähteen yhdistämismääritys**. Luotu määritys toimii kuin automaattinen määritys. Tämän vuoksi yhdistämättömät kentät on yhdistettävä manuaalisesti.
 
-![Tietotyypin yhdistämismääritys](./media/dixf-map.png)
+![Tietotyypin yhdistämismääritys.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Tarkista tuonti- tai vientityön turvallisuus
 Voit rajoittaa **Tietojenhallinta**-työtilan käyttöoikeutta, jotta muut kuin järjestelmänvalvojat voivat käyttää vain tiettyjä töitä. Käyttöoikeus tietotyöhön tarkoittaa täyttä käyttöoikeutta kyseisen työn suoritushistoriaan sekä väliaikaisiin tauluihin. Sinun on siis varmistettava, että käyttöoikeudet on asetettu asianmukaisesti, kun luot tietotyön.
@@ -132,7 +133,7 @@ Voit suorittaa työn kerran valitsemalla **Tuo**- tai **Vie**-painikkeen, kun ol
 ## <a name="validate-that-the-job-ran-as-expected"></a>Vahvista, että työ suoritettiin odotetulla tavalla
 Työhistoria on käytettävissä tuonti- ja vientitöiden ongelmanratkaisuun ja tutkintaan. Historian työt on järjestetty aikajaksoille.
 
-![Työhistorian jaksot](./media/dixf-job-history.md.png)
+![Työhistorian jaksot.](./media/dixf-job-history.md.png)
 
 Kukin ajettu työ sisältää seuraavat tiedot:
 

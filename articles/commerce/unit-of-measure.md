@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 076d4a68362dbf11c5fcf223a836f075d07e27a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271398"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350325"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Käytä mittayksikön asetuksia
 
@@ -32,7 +32,7 @@ Tuote voidaan myydä eri yksikköinä, esimerkiksi "kappale", "pari" ja "tusina"
 
 Seuraavassa esimerkissä on esitetty, että Commerce-pääkonttorisovelluksen tuotteelle on määritetty myyntimittayksikkö **kpl**.
 
-![Esimerkki tuotteesta, joka on konfiguroitu mittayksiköllä Commerce-pääkonttorisovelluksessa](./media/Productunit-headquarters.PNG)
+![Esimerkki tuotteesta, joka on konfiguroitu mittayksiköllä Commerce headquarters -sovelluksessa.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Mittayksikön kohdistamisen ja näyttämisen tuki on käytettävissä Commerce-versiosta 10.0.19 alkaen.
@@ -54,11 +54,11 @@ Mittayksikköasetuksia käyttävät moduulit sisältävät ostoruudun, toiveluet
 
 Seuraavassa kuvan esimerkissä tuotetietosivu (PDP) näyttää tuotteen mittayksikön (**kpl**).
 
-![Esimerkki tuotetietosivusta, jossa on näkyvissä mittayksikkö](./media/Productunit-PDP.png)
+![Esimerkki tuotetietosivusta, jossa on näkyvissä mittayksikkö.](./media/Productunit-PDP.png)
 
 Seuraavassa kuvan esimerkissä tuotekokoelmamoduuli näyttää tuotteen mittayksikön (**kpl**).
 
-![Esimerkki tuotekokoelmamoduulista, jossa on näkyvissä mittayksikkö](./media/Productunit-productcollection.png)
+![Esimerkki tuotekokoelmamoduulista, jossa on näkyvissä mittayksikkö.](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

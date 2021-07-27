@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b79c93c4920d7f40e88aa7d463961128ea9e83c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894001"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347921"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Tulostinkohde
 
@@ -39,7 +39,7 @@ Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 36
 1. Muunna sähköisen raportoinnin lähtevät asiakirjat Microsoft Office -muodoista PDF-muotoon
 2. Asiakirjareitityksen agentti lähtevien asiakirjojen sähköisen raportoinnin kohteena
 
-[![ER-tulostinkohteen toiminnon käyttöönotto ominaisuuksien hallinnassa](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![ER-tulostinkohteen toiminnon käyttöönotto ominaisuuksien hallinnassa.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Soveltuvuus
 
@@ -55,7 +55,7 @@ Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 36
 2. Valitse **Tulostimen nimi** -kentässä asianmukainen verkkotulostin.
 3. Aseta **Tallenna tulostusarkistoon?** -asetuksen arvoksi **Kyllä**, jos haluat tallentaa luodun tulosteen tulostusarkistoon, jotta se voidaan tulostaa myös myöhemmin. Arkistoitu tuloste on myöhemmin käytettävissä kohdassa **Organisaation hallinta** \> **Kyselyt ja raportit** \> **Raporttiarkisto**.
 
-[![Tulostinkohteen käyttö](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Tulostinkohteen käyttö.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > **Muunna PDF-muotoon** -asetuksen ei tarvitse olla käytössä, kun määrität **Tulostin**-kohteen. PDF-muunnos tulostusta varten tapahtuu, vaikka asetus ei olisi käytössä.

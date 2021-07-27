@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019954"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348265"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Lahjakortti- ja hyvityslaskutoimintojen saumaton offline-tilaan vaihtaminen
 
@@ -36,7 +36,7 @@ Jos myyntipiste kuitenkin menettää yhteyden sen jälkeen, kun lahjakortti on l
 
 Jos haluat, että toiminto voi tehdä lahjakorttitapahtumat offline-tilaan siirtymisen jälkeen, siirry **Kirjaus**-välilehteen **Commerce-parametrit**-sivulla. Etsi tässä välilehdessä **Lahjakortti**-pikavälilehti ja määritä **Salli lahjakorttitapahtumien päättäminen offline-tilassa** -kohdan arvoksi **Kyllä**.
 
-![Offline-lahjakortin asetus](../media/gift.png)
+![Offline-lahjakortin asetus.](../media/gift.png)
 
 Commerce-parametrit ovat yleensä välimuistissa. Siksi tämän parametrin päivittämisen ja jakeluaikataulun kanavaan synkronoinnin aloittamisen jälkeen muutoksen voimaantulo voi kestää jopa 24 tuntia. Jos haluat, että muutos tulee voimaan heti, nollaa Microsoft Internet Information Services (IIS).
 
@@ -46,7 +46,7 @@ Hyvityslaskuja ylläpidetään keskitetysti Commerce Headquarters -sovelluksessa
 
 Jos haluat, että toiminto voi tehdä hyvityslaskutapahtumat offline-tilaan siirtymisen jälkeen, siirry **Kirjaus**-välilehteen **Commerce-parametrit**-sivulla. Etsi tässä välilehdessä **Hyvityslasku**-pikavälilehti ja määritä **Salli hyvityslaskutapahtumien päättäminen offline-tilassa** -kohdan arvoksi **Kyllä**.
 
-![Offline-hyvityslaskun asetus](../media/creditmemo.png)
+![Offline-hyvityslaskun asetus.](../media/creditmemo.png)
 
 Commerce-parametrit ovat yleensä välimuistissa. Siksi tämän parametrin päivittämisen ja jakeluaikataulun kanavaan synkronoinnin aloittamisen jälkeen muutoksen voimaantulo voi kestää jopa 24 tuntia. Jos haluat, että muutos on voimassa heti, nollaa IIS.
 

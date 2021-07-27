@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355391"
 ---
 # <a name="electronic-reporting-formula-language"></a>Sähköisen raportoinnin kaavakieli
 
@@ -117,15 +117,15 @@ Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaa
 
 Jos rakenteisen tietolähteen polku alkaa at-merkillä (@), se on suhteellinen polku. At-merkki näytetään käytettävän hierarkkisen puurakenteen absoluuttisen polun jäljellä olevan osan sijasta. Seuraavassa kuvassa on esimerkki. Tässä absoluuttinen polku `Ledger.'accountingCurrency()'` ilmaisee, että kirjanpitovaluutan arvo **kirjanpidon** tietolähteestä syötetään **AccountingCurrency**-kenttään tietomallissa.
 
-![Esimerkki absoluuttisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Esimerkki absoluuttisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Seuraavassa kuvassa oleva esimerkki osoittaa, miten suhteellinen polku on käytössä. Suhteellinen polku `@.AccountNum` ilmaisee, että **AccountNum**-kentän **Intrastat**-tietolähteen (joka näkyy tietomallin hierarkkisen puun **AccountNum**-kentän yläpuolella) käytetään syöttämään asiakkaan tai toimittajan tilinumero tietomallin **AccountNum**-kenttään.
 
-![Esimerkki relatiivisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla](./media/ER-FormulaLanguage-RelativePath1.png)
+![Esimerkki relatiivisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Jäljellä oleva osa absoluuttisesta polusta näkyy myös [ER kaavaeditorissa](general-electronic-reporting-formula-designer.md).
 
-![ER-kaavan suunnittelijasivun absoluuttisen polun jäljellä oleva osa](./media/ER-FormulaLanguage-RelativePath2.png)
+![ER-kaavan suunnittelijasivun absoluuttisen polun jäljellä oleva osa.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Lue lisätietoja kohdasta [Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa](relative-path-data-bindings-er-models-format.md).
 

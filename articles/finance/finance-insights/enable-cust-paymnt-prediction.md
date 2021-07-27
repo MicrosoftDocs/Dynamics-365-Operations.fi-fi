@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349031"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Asiakkaan maksuennusteiden käyttöönotto (esiversio)
 
@@ -51,7 +51,7 @@ Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan
 
     1. Siirry kohtaan **Luotonvalvonta \> Asetukset \> Finance Insights \> Finance Insights -parametrit**.
 
-        [![Financial Insights -parametrit -sivu ennen toiminnon määrittämistä](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Financial Insights -parametrit -sivu ennen toiminnon määrittämistä.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. Valitse **Financial Insights -parametrit** -sivun **Asiakasmaksun tiedot** -välilehdessä **Ennustemallissa käytettyjen tietokenttien tarkasteleminen** -linkki ja avaa **Ennustemallin tietokentät** -sivu. Siellä voit tarkastella oletusluetteloa kentistä, joita käytetään asiakkaan maksuennusteiden tekoälyennustemallissa.
 
@@ -77,7 +77,7 @@ Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan
 
 Kun toiminto on otettu käyttöön ja määritetty ja ennustemalli luotu ja toiminnassa, **Ennustemalli**-osa **Financial Insights -parametrit** -sivulla näyttää mallin tarkkuuden seuraavan kuvan mukaisesti.
 
-[![Financial Insights -parametrit -sivun ennustemallin tarkkuus](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Financial Insights -parametrit -sivun ennustemallin tarkkuus.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>Julkaisun tiedot
 

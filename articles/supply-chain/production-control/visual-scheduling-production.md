@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908703"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353417"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Töiden ajoittamisen Gantt-kaavio
 
@@ -45,10 +45,10 @@ Gantt-kaavion voit avata kahdessa näkymässä, jotka ovat **Tilausnäkymä** ja
 
 ## <a name="order-view"></a>Tilausnäkymä
 
-[![Tilausnäkymä](./media/orderview.png)](./media/orderview.png)
+[![Tilausnäkymä.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Resurssinäkymä
-[![Resurssinäkymä](./media/resview.png)](./media/resview.png)
+[![Resurssinäkymä.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Tehtävät
 Tehtävät näkyvät palkkeina ja järjestetään aika-asteikkoruudukossa ajoitetun aloitus- ja päättymisajan mukaan, jossa palkkien pituus näytetään suhteessa aikaan, joka tarvitaan tehtävän suorittamiseen. Tehtävät näkyvät aika-asteikon mukaan. Voit säätää valikon aika-asteikkoa, jossa voit valita aloitus ja päättymispäivämäärän ja ajan yksikön, esimerkiksi tunteet tai päivät. Säätämällä aika-asteikkoa voit määrittää aikavälin, jossa haluat hallita tehtäviä. 
@@ -102,25 +102,25 @@ Työtä ei voi ajoittaa Gantt-kaavion määritetyn aikavälin ulkopuolella. Jos 
 
 Tehtäväverkossa, kuten samaan tuotantotilaukseen kuuluvissa töissä, voit käyttää **Ajoita aiemmat työt** -toimintoa ajoittaessasi edelliset työt suhteessa valittuun työhön verkossa. Seuraavassa esimerkissä korostettu tehtävä on valittu työ. Kaavio näkyy ennen edellisen työn ajoitusta ja seuraavan työn ajoituksen jälkeen. 
 
-[![Ajoita aiempi työ](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Ajoita aiempi työ.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Ajoita seuraavat työt
 
 Voit ajoittaa tehtäväverkon valittua työtä seuraavat työt **Ajoita seuraavat työt** -toiminnolla. Seuraavassa esimerkissä korostettu tehtävä on valittu työ. Kaavio näkyy ennen seuraavan työn ajoitusta ja seuraavan työn ajoituksen jälkeen. 
 
-[![Ajoita seuraavat työ](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Ajoita seuraavat työ.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Ajoita työn ympärille
 
 Voit ajoittaa tehtäväverkon valittua työtä seuraavan ja edellisen työn **Ajoita työn ympärille** -toiminnolla. Seuraavassa esimerkissä korostettu tehtävä on valittu työ. Kaavio näkyy ennen työn ajoitusta ja työn ajoituksen jälkeen. 
 
-[![Ajoita työn ympärille](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Ajoita työn ympärille.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Järjestä työt
 
 Voit käyttää **Järjestä** -toimintoa ja ajoittaa saman resurssin valitut tehtävät. Nämä toiminnot voi olla samassa tehtäväverkossa mutta voivat kuulua myös eri verkkoihin. Kun käytät järjestä-toimintoa, valittujen tehtävien väliajat poistuvat. Tämän toiminnon avulla voit optimoida resurssien kapasiteetin käytön. Kaavio näkyy ennen työn ajoitusta ja työn ajoituksen jälkeen. 
 
-[![Järjestä työ](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Järjestä työ.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Tehtävien määrittäminen uudelleen resurssista toiseen
 

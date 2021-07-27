@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 6a9e94e282aa8f101b42c1378ef21c6c1fe0477e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5a4749e3234288927a781106dd4becebd5260084
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053488"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344661"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Suorituskyvyn optimointi automaattisten tyhjennystehtävien avulla
 
@@ -41,23 +41,23 @@ Ajoita automaattinen tehtävä, joka tyhjentää erätyöhistoriasi. Suosittelem
 
 2. Kirjoita **Haku**-palkkiin **Erätöiden historian tyhjennys**.
 
-   ![Hae erätyöhistorian tyhjennys](media/talent-batch-history-cleanup-search-bar.png)
+   ![Hae erätyöhistorian tyhjennys.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. Syötä **Historiaraja (päivinä)** -kenttään **30**.
 
-   ![Määritä historiarajaksi 30](media/talent-batch-history-cleanup-history-limit.png)
+   ![Määritä historiarajaksi 30.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Valitse **Suorita taustalla** ja sitten **Toistuminen**.
 
-   ![Määritä toistuminen](media/talent-batch-history-cleanup-recurrence.png)
+   ![Määritä toistuminen.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Valitse **Määritä toistuvuus** -osiosta **Aloituspäivä** ja **Aloitusaika** tapahtumaan ruuhka-aikojen ulkopuolella tai viikonloppuna ja valitse sitten **PÄÄTTYMISPÄIVÄ PUUTTUU**. 
 
-   ![Määritä toistuvuuden alkamispäivä ja -aika](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Määritä toistuvuuden alkamispäivä ja -aika.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Valitse **TOISTUMISEN KUVIO**, valitse **Päivät** ja määritä **TOISTA, KUN MÄÄRITETTY AIKA ON KULUNUT** -asetukseksi **7**.
 
-   ![Määritä tyhjennys toistumaan viikoittain](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Määritä tyhjennys toistumaan viikoittain.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Valitse **OK**.
 

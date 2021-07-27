@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ce246a51c75cc322f1cfea70c47f00c7dd750ea2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216609"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346617"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -41,7 +41,7 @@ Osapuolimallia käytetään usein keskitasoisten ja monimutkaisten organisaatioi
 
 Seuraavassa kuvassa näkyy osapuolen tietomalli:
 
-![Osapuolen tietomalli](media/party-gab-image1.png)
+![Osapuolen tietomalli.](media/party-gab-image1.png)
 
 > [!TIP]
 > Kun yrität luoda uutta tilitietuetta, voit etsiä tietuetta nimen perusteella **Osapuoli**-kentän avulla. Jos tietue löytyy tällä tavalla, se on vain valittava. Järjestelmä täyttää automaattisesti kaikki tiedot osapuolen tiedoilla. Kaikkia pakollisia kenttiä ei tarvitse täyttää manuaalisesti. Tämä toiminta löytyy käyttövalmiista **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-sivuilta.
@@ -58,7 +58,7 @@ Liiketoimintakontekstin mukaan henkilöllä tai organisaatiolla voi olla useita 
 
 Seuraavassa kuvassa on yleisen osoitekirjan tietomalli.
 
-![Yleisen osoitekirjan tietomalli](media/party-gab-image2.png)
+![Yleisen osoitekirjan tietomalli.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kontakti
 
@@ -94,7 +94,7 @@ Nämä suhteet tallennetaan **Osapuolen yhteyshenkilö** -tauluun. Nämä tiedot
     + Jos valitset arvon **Liitetty yhteyshenkilö**, valitset **henkilö**-tyyppiä olevan merkityn yhteyshenkilön.
     + Jos valitset arvon **Liitetty tili**- tai **Liitetty toimittaja** -kentässä, valitset organisaation.
 
-    ![Liitetyt organisaatiot -välilehti yhteyshenkilösivulla](media/party-gab-image3.png)
+    ![Liitetyt organisaatiot -välilehti yhteyshenkilösivulla.](media/party-gab-image3.png)
 
     Riippumatta valinnastasi liitos luodaan osapuolen tasolla, se koskee kaikkia osapuolen rooleja ja tallennetaan **Osapuolen yhteyshenkilö** -entiteettiin.
 
@@ -109,7 +109,7 @@ Kun avaat **Yhteyshenkilö**-rivin, jolla joko **On asiakas**- tai **On myyjä**
 
 **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-sivuilla on uusi välilehti nimeltä **Osoitteet**. Tämä välilehti tukee useita postinumeroita ruudukon avulla seuraavan kuvan mukaisesti.
 
-![Postiosoitteiden ruudukko](media/party-gab-image4.png)
+![Postiosoitteiden ruudukko.](media/party-gab-image4.png)
 
 Ruudukko sisältää seuraavat sarakkeet:
 
@@ -121,7 +121,7 @@ Voit luoda niin monta postiosoitetta kuin haluat ruudukon yläpuolella olevalla 
 
 **Tili**-sivun **Yhteenveto**-välilehden **Osoite 1**- ja **Osoite 2**-kentät vastaavat **toimitus**- ja **laskutusosoitteita**.
 
-![Postiosoitteiden Yhteenveto-välilehti](media/party-gab-image5.png)
+![Postiosoitteiden Yhteenveto-välilehti.](media/party-gab-image5.png)
 
 **Yhteyshenkilö**-sivun **Yhteenveto**-välilehden **Osoite 1**-, **Osoite 2**- ja **Osoite 3** -kentät vastaavat **yritys**-, **toimitus**- ja **laskutusosoitteita**.
 
@@ -129,7 +129,7 @@ Voit luoda niin monta postiosoitetta kuin haluat ruudukon yläpuolella olevalla 
 
 **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-sivuilla on uusi välilehti nimeltä **Sähköiset osoitteet**. Tämä välilehti tukee useita sähköisiä osoitteita ruudukon avulla seuraavan kuvan mukaisesti.
 
-![Sähköisten osoitteiden ruudukko](media/party-gab-image6.png)
+![Sähköisten osoitteiden ruudukko.](media/party-gab-image6.png)
 
 Ruudukko sisältää seuraavat sarakkeet:
 
@@ -205,7 +205,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     | Osapuolen tunnus (kenttä) | Tarkka vastaavuus |
     | Valitse (kenttä) | (tyhjä) |
 
-    ![Tilien kaksoiskappaleiden sääntö](media/duplicate-rule-1.PNG)
+    ![Tilien kaksoiskappaleiden sääntö.](media/duplicate-rule-1.PNG)
 
 10. Laajenna kaksoiskappaleiden tunnistussäännöt **Yhteystiedot**-taulukolle määrittämällä seuraavat kentät.
 
@@ -221,7 +221,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     | Osapuolen tunnus (kenttä) | Tarkka vastaavuus |
     | Valitse (kenttä) | (tyhjä) |
 
-    ![Yhteyshenkilöiden kaksoiskappaleiden sääntö](media/duplicate-rule-2.PNG)
+    ![Yhteyshenkilöiden kaksoiskappaleiden sääntö.](media/duplicate-rule-2.PNG)
 
 11. Jos käytät kaksoiskirjoitusta tällä hetkellä, noudata ohjeita kohdassa [Päivitä osapuolen osoitekirja ja yleinen osoitekirja](upgrade-party-gab.md) ja päivitä tiedot.
 
@@ -300,11 +300,11 @@ Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mappi
 + **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-lomakkeiden sähköisten osoitteiden välilehdessä määritetyt sähköiset osoitteet tulevat `msdyn_partyelectronicaddress`-taulukosta. Nämä tiedot eivät siirry liittyviin tapahtumiin, kuten myyntitilaukseen, tarjoukseen ja ostotilaukseen. Tämä ongelma aiotaan korjata asteittaisessa julkaisussa. Tili- ja yhteyshenkilötietueiden sähköisten osoitekenttien olemassa olevat tiedot toimivat edelleen myyntitilausten, tarjousten ja ostotilausten kaltaisissa tapahtumissa.
 + Finance and Operations -sovelluksissa voit luoda yhteyshenkilötietueen **Lisää yhteyshenkilö** -lomakkeesta. Kun yrität luoda uuden yhteyshenkilön **Näytä yhteyshenkilö** -lomakkeesta, toimenpide epäonnistuu. Tämä on tiedossa oleva ongelma.
 
-    ![Tunnettu Lisää yhteyshenkilö -ongelma](media/party-gab-contact-issue.png)
+    ![Tunnettu Lisää yhteyshenkilö -ongelma.](media/party-gab-contact-issue.png)
 
 + **Alkuperäinen synkronointi** ei tue **Käytettävissä alkaen**- ja **Käytettävissä saakka** -aikakenttiä kohdassa **ContactForParty**, koska DIXF muuntaa arvon merkkijonoksi kokonaisluvun sijaan. Muunto aiheuttaa virheen `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + Kun postiosoitetta käytetään useampaan kuin yhteen syyhyn, esimerkiksi yrityksen yhteysosoitteena ja laskutusosoitteena, pitäisi näkyä muodossa `Business;Invoice` seuraavan kuvan mukaisesti. Jos lisäät arvojen väliin välin, saat virheilmoituksen.
 
-    ![Tiedossa oleva osoiteongelma](media/party-gab-address-issue.png)
+    ![Tiedossa oleva osoiteongelma.](media/party-gab-address-issue.png)
 
 + Et voi syöttää postiosoitetta, jonka päivämäärä on tulevaisuudessa käyttämällä Finance and Operations -sovellusta kaksoiskirjoituksella, koska Dataverse ei tue päivämäärän voimassaoloa. Jos kirjoitat postiosoitteen, jonka päivämäärä on tulevaisuudessa, Finance and Operations -sovelluksella, se synkronoi Dataversen kanssa kokonaan ja näet osoitteen käyttöliittymässä välittömästi. Tämän tietueen päivitykset johtavat virheeseen, koska sen päivämäärä on tulevaisuudessa eikä nykyinen Finance and Operations -sovelluksessa.

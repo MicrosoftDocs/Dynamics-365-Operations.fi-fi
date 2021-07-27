@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39fae603a8ae34a7500ead1d2d1cecff6dc65f1e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 62cc0bb9d62b0ab90e212b03e6c4efd9734dadec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804038"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347413"
 ---
 # <a name="templates-and-layouts-overview"></a>Mallit ja asettelut – yleiskatsaus
 
@@ -32,9 +33,9 @@ Mallien käsitteleminen kannattaa aloittaa siitä, että ymmärtää mallien ja 
 
 Seuraavassa kuvassa on sivun mallihierarkia muodostetulla verkkosivulla.
 
-![Sivu mallikaavio](../commerce/media/page-model-diagram.png)
+![Sivu mallikaavio.](../commerce/media/page-model-diagram.png)
 
-| Kokonaisuus        | Perustoiminto |
+| Entiteetti        | Perustoiminto |
 |---------------|----------------|
 | Sapluuna      | Mallit määrittävät asettelujen ja sivuesiintymien joukon moduuliasetukset ja perusasetukset. |
 | Asettelu (layout)        | Asettelut määrittävät sivun tai sivujoukon moduulien lopullisen valinnan ja järjestyksen. |
@@ -98,7 +99,7 @@ Esimääritettyjä ja mukautettuja asetteluja muokataan muokkaustyökalujoukon e
 
 Seuraavissa kuvissa näkyvät esimääritettyjen ja mukautettujen asettelujen skenaariot.
 
-![Esimääritetyt ja mukautetut asetteluskenaariot](../commerce/media/template-figure1.png)
+![Esimääritetyt ja mukautetut asetteluskenaariot.](../commerce/media/template-figure1.png)
 
 Lisätietoja esimääritettyjen asetteluiden käyttämisen aloittamisesta on kohdassa [Esimääritettyjen asetteluiden käyttäminen](work-with-layouts.md).
 

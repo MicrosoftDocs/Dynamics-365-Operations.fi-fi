@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799176"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349599"
 ---
 # <a name="create-a-default-customer"></a>Oletusasiakkaan luominen
 
@@ -47,7 +47,7 @@ Luo asiakasryhmä noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy useista määritettyjä asiakasryhmiä.
 
-![Asiakasryhmät](media/customer-groups.png)
+![Asiakasryhmät.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Luo uusi asiakkaan osoitekirja
 
@@ -63,7 +63,7 @@ Luo osoitekirja noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy esimerkki osoitekirjasta.
 
-![Osoitekirja](media/address-book.png)
+![Osoitekirja.](media/address-book.png)
 
 ## <a name="create-a-default-customer&quot;></a>Oletusasiakkaan luominen
 
@@ -86,11 +86,11 @@ Luo oletusasiakas noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy esimerkki asiakkaan luomisesta.
 
-![Oletusasiakkaan luominen](media/default-customer-creation.png)
+![Oletusasiakkaan luominen.](media/default-customer-creation.png)
 
 Seuraavassa kuvassa näkyy oletusarvoinen asiakasmääritys.
 
-![Esimerkkiasiakkaan määritys](media/default-customer-configuration1.png)
+![Esimerkkiasiakkaan määritys.](media/default-customer-configuration1.png)
 
 Useimmat asiakastietonäytön oletusarvot voidaan säilyttää, mutta kaksi arvoa on muutettava.
 
@@ -100,13 +100,13 @@ Useimmat asiakastietonäytön oletusarvot voidaan säilyttää, mutta kaksi arvo
 
 Seuraavassa kuvassa näkyy esimerkki asiakasmäärityksestä.
 
-![Esimerkkiasiakkaan määritys](media/default-customer-configuration2.png)
+![Esimerkkiasiakkaan määritys.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

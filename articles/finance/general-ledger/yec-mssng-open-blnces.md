@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 045d0bf11b11c9a353858ce3ca82c698dbceea7c
-ms.sourcegitcommit: 817716c2e96f24af0ef1d7d5323afdeccdc602f3
+ms.openlocfilehash: 4bebf35a8959d4f72d46d4b40e5487f499b2756d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "6028561"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356649"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Alkusaldot puuttuvat tilinpäätöksestä
 
@@ -46,15 +46,15 @@ Suoritin tilinpäätöksen niin, että **Kumoa edellinen sulkeminen** -asetuksen
 
 Tarkista ensin erätyön tila. Tilinpäätös sisältää useita yksittäisiä tehtäviä. Kriittisin tehtävä on erätehtävä, jonka tehtävän kuvaus on **Vaihe 5.0.0**. Avaustapahtumien tai vaihtoehtoisesti päätöstapahtumien kirjaaminen kirjanpitoon tapahtuu tämän vaiheen aikana. 
 
-[![Erätyöhistorialuettelo](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
+[![Erätyöhistorialuettelo.](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
 
 Jos tämän vaiheen suorittaminen onnistuu, mutta alkusaldot eivät näy **Pääkirjan kysely** -sivulla (**Kirjanpito > Kyselyt ja raportit > Pääkirja**), tarkista tilinpäätöksen erätyön tuloksista, onnistuiko Muodosta saldot uudelleen -vaiheen suorittaminen.
 
-[![Tilinpäätöksen erätyön tulokset](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
+[![Tilinpäätöksen erätyön tulokset.](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
 
 Jos tämä vaihe on epäonnistunut jonkin syyn vuoksi, alkutapahtumien (tai vaihtoehtoisesti päättämistapahtumien) kirjaaminen todennäköisesti onnistui. Tarkista, että kirjanpidon tapahtumien kirjaaminen onnistui, käyttämällä **Tositetapahtumien kysely** -sivua. Sivulla määritetään tositteen numero ja kyseisen vuoden tilinpäätösvalintaikkunassa oleva päivämäärä (**Kirjanpito > Kyselyt ja raportit > Tositetapahtumat**).
 
-[![Tositetapahtumien kysely](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
+[![Tositetapahtumien kysely.](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
 
 Jos avaustapahtumien (tai vaihtoehtoisesti päätöstapahtumien) tositteet ovat näkyvissä, tilinpäätöstä ei tarvitse suorittaa uudelleen. Katso sen sijaan seuraavan osan ohjeita seuraavien toimintojen suorittamiseksi.
 
@@ -66,7 +66,7 @@ Tilinpäätöksen Muodosta saldot uudelleen -vaihe epäonnistui. Tuleeko minun s
 
 Muodosta saldot uudelleen -vaihe päivittää kirjanpidon saldot, joita käytetään pääkirjan kyselyn luomisen yhteydessä.  Se on tilinpäätösprosessin viimeinen vaihe.  Jos tämä on ainoa epäonnistunut vaihe, kirjanpitotapahtumat on kirjattu onnistuneesti.  Tilinpäätöstä ei tarvitse suorittaa uudelleen. Voit suorittaa saldojen uudelleenmuodostusprosessin manuaalisesti **Taloushallinnon dimensioyhdistelmät** -sivulla (**Kirjanpito > Tilikartta > Dimensiot > Taloushallinnon dimensioyhdistelmät**).
 
-[![Muodosta saldot uudelleen -painike Taloushallinnon dimensioyhdistelmät -sivulla](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
+[![Muodosta saldot uudelleen -painike Taloushallinnon dimensioyhdistelmät -sivulla.](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
 
 Jos tämän vaiheen käsittely kestää kauan, suosittelemme taloushallinnon dimensioyhdistelmien parhaiden käytäntöjen tarkastelemista kohdassa [Taloushallinnon dimensioyhdistelmien päivittämisen parhaat käytännöt](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/best-practices-for-updating-financial-dimension-set-dimension-sets). 
 

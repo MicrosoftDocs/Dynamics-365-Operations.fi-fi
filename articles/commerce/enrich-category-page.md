@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d9470e4d517c5fb0b49ae2e26eb14220ea17aa3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799008"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349397"
 ---
 # <a name="enrich-a-category-landing-page"></a>Luokan saapumissivun täydentäminen
 
@@ -31,7 +31,7 @@ Commerce tarjoaa oletusluokan saapumissivun, jota käytetään, kun luokkatiedot
 
 Oletusluokkasivun sijaan voidaan käyttää luokan täydennettyä saapumissivua. Siinä on enemmän sisältöä ja erityisiä elementtejä. Tyypilliseen täydennykseen voi kuulua luokkakohtaisen markkinointisisällön lisääminen luokkasivulle. Tämä sisältö voi sisältää eri luokkien tuotesijoittelua ristiinmyyntitarkoituksia, toimituksellisia luetteloita, kuvia, videoita ja muuta tekstiä varten. Voit muokata oletusluokkasivua tai määrittää tietylle luokalle toisen luokkasivun.
 
-![Täydennetty luokan saapumissivu](./media/CategoryLandingPages.png)
+![Täydennetty luokan saapumissivu.](./media/CategoryLandingPages.png)
 
 Kaupan luontityökalun **Tuoteet**-sivulla on luokkaluettelo kanavista, jotka on määritetty sivustoon. Jos luokkasivulle on valittu **Täydennetty**-tila, luokkasivua on täydennetty. Muussa tapauksessa luokassa käytetään oletusluokkasivua ja -sisältöä. Voit esikatsella sekä täydennettyjä että muita kuin täydennettyjä luokkasivuja luokassa valitsemalla luokan nimen.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797812"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347587"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
@@ -33,7 +33,7 @@ Kassamoduuli hahmontaa tiedot ostoskorin tunnuksen mukaan. Tämä ostoskorin tun
 
 Seuraavassa kuvassa on esimerkki Fabrikam-kassamoduulista maksusivulla.
 
-![Esimerkki kassamoduulista](./media/Checkout.PNG)
+![Esimerkki kassamoduulista.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Kassamoduulin ominaisuudet
 
@@ -52,13 +52,13 @@ Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittava
 
     Seuraavassa kuvassa on esimerkki toimitusosoitemoduulista maksusivulla.
 
-    ![Esimerkki toimitusosoitemoduulista](./media/ecommerce-shippingaddress.PNG)
+    ![Esimerkki toimitusosoitemoduulista.](./media/ecommerce-shippingaddress.PNG)
 
 - **Toimitusvaihtoehdot** – Tämän moduulin avulla asiakas voi valita tilauksen toimituksen tilan. Lisätietoja tästä moduulista on kohdassa [Toimitusvaihtoehdot -moduuli](delivery-options-module.md).
 
     Seuraavassa kuvassa on esimerkki toimitusvaihtoehdot-moduulista maksusivulla.
  
-    ![Esimerkki toimitusvaihtoehdot-moduulista](./media/ecommerce-deliveryoptions.PNG)
+    ![Esimerkki toimitusvaihtoehdot-moduulista.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kassa-osan säilö** – Tämä moduuli on säilö, jonka sisään asetetaan useita moduuleja. Ne luovat osan kassatyönkulun sisälle. Tähän säilöön voi asettaa esimerkiksi kaikki maksuun liittyvät moduulit, jolloin ne näkyvät yhtenä osana. Tämä moduuli vaikuttaa vain työnkulun asetteluun.
 
@@ -70,7 +70,7 @@ Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittava
 
     Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla.
 
-    ![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla](./media/ecommerce-payments.PNG)
+    ![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla.](./media/ecommerce-payments.PNG)
 
 - **Yhteystiedot** – Tämän moduulin avulla asiakas voi lisätä tai muuttaa tilauksen yhteystietoja (sähköpostiosoitetta).
 
@@ -80,7 +80,7 @@ Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittava
 
     Seuraavassa kuvassa on esimerkki käyttöehdoista maksusivulla.
 
-    ![Esimerkki käyttöehdoista kassalla](./media/ecommerce-checkout-terms.PNG)
+    ![Esimerkki käyttöehdoista kassalla.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 

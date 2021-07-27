@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0d029773d9aa59b27f80d2f670984a352e163122
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6b8e3d129c40e33aeb91e823528a3bc89d2d9568
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743868"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351863"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Testauksen automatisointi sähköisen raportoinnin avulla
 
@@ -59,7 +59,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
 - Ota käyttöön testauksen automatisointia tukeva topologia. Sinulla on oltava tämän topologiaesiintymän **Järjestelmänvalvoja**-rooli. Topologian on sisällettävä tässä esimerkissä käytettävät demotiedot. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto ja käyttäminen](../perf-test/continuous-build-test-automation.md).
 - Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT:in asentamisesta ja määrittämisestä toimimaan Finance and Operations -sovellusten ja Azure DevOpsin kanssa on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
 
-    ![RSAT-asetukset](media/GER-Configure.png "Näyttökuva RSAT-asetukset-valintaikkunasta")
+    ![RSAT-asetukset.](media/GER-Configure.png "Näyttökuva RSAT-asetukset-valintaikkunasta")
 
 - Voit varmistaa testitapausten oikean suoritusjärjestyksen järjestämällä testitapaukset sarjoiksi. Voit kerätä tällä tavoin testauksen suorituslokeja lisäraportointia ja perehtymistä varten. Tätä varten tarvitaan käyttöönotetun topologian Azure DevOpsin käyttöoikeus.
 - Tämän ohjeaiheen esimerkin suorittamista varten kannattaa ladata [RSAT-testien ER-käyttö](https://go.microsoft.com/fwlink/?linkid=874684). Tämä zip-tiedosto sisältää seuraavat tehtäväoppaat:
@@ -78,7 +78,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
     - **Maksumallin yhdistämismääritys 1611** ER-mallin yhdistämismääritys
     - **BACS (UK)** ER-muotokonfiguraatio
 
-    ![Sähköisen raportoinnin konfiguraatiot](media/GER-Configurations.png "Näyttökuva sähköisen raportoinnin Konfiguroinnit-sivusta")
+    ![Sähköisen raportoinnin konfiguraatiot.](media/GER-Configurations.png "Näyttökuva sähköisen raportoinnin Konfiguroinnit-sivusta")
 
 3. **GBSI**-demotietoyritys, sillä sen alue- tai maakonteksti on Iso-Britannia.
 4. Määritä ostoreskontran parametrit:
@@ -90,7 +90,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
         1. Määritä **Tiedostomuodot**-pikavälilehden **Yleinen sähköinen vientimuoto** -asetukseksi **Kyllä**.
         2. Valitse **Vie muotokonfiguraatio** -kentässä **BACS (UK)**.
 
-    ![Maksutavat-sivu](media/GER-APParameters.png "Näyttökuva Maksutavat-sivusta")
+    ![Maksutavat-sivu.](media/GER-APParameters.png "Näyttökuva Maksutavat-sivusta")
 
     > [!NOTE]
     > Jos sinulla on tämän ER-muodon johdettu versio, joka luotiin tukemaan mukautuksia, voit valita tämän konfiguraation **Sähköinen**-maksutavassa.
@@ -100,7 +100,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
     1. Valitse **Ostoreskontra \> Maksut \> Maksukirjauskansio**.
     2. Varmista, ettei maksukirjauskansioon ole tehty kirjausta.
 
-        ![Maksukirjauskansio-sivu](media/GER-APJournal.png "Näyttökuva Maksukirjauskansio-sivusta")
+        ![Maksukirjauskansio-sivu.](media/GER-APJournal.png "Näyttökuva Maksukirjauskansio-sivusta")
 
     3. Valitse **Rivit** ja lisää rivi, jossa on seuraavat tiedot.
 
@@ -113,7 +113,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
         | Vastatili      | GBSI OPER       |
         | Maksutapa   | Sähköinen      |
 
-    ![Toimittajan maksut -sivu](media/GER-APJournalLines.png "Näyttökuva Toimittajan maksut -sivusta")
+    ![Toimittajan maksut -sivu.](media/GER-APJournalLines.png "Näyttökuva Toimittajan maksut -sivusta")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>ER-kehyksen valmisteleminen toimittajan maksujen käsittelyn testaamiseen
 
@@ -122,7 +122,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
 1. Valitse **Organisaation hallinto \> Sähköinen raportointi \> Sähköisen raportoinnin parametrit**.
 2. Valitse **Liitteet**-välilehden **Perusrivi**-kentässä **Tiedosto** asiakirjatyypiksi, jota tiedostonhallinta- eli DM-kehys käyttää säilyttämään perustoimintoon DM-liitteinä liittyviä tiedostoja.
 
-    ![Sähköisen raportoinnin parametrit -sivu](media/GER-ERParameters.png "Näyttökuva Sähköisen raportoinnin parametrit -sivusta")
+    ![Sähköisen raportoinnin parametrit -sivu.](media/GER-ERParameters.png "Näyttökuva Sähköisen raportoinnin parametrit -sivusta")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Toimittajan maksuihin liittyvien asiakirjojen peruskopioiden luominen
 
@@ -139,7 +139,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
     - **Tiedosto**-maksutiedosto tekstimuotoisena
     - **ERVendOutPaymControlReport**-valvontaraporttitiedosto XLSX-muodossa
 
-    ![Puretut tiedostot](media/GER-APJournalProcessed.png "Näyttökuva puretuista tiedostonimissä Windowsin Resurssienhallinnassa")
+    ![Puretut tiedostot.](media/GER-APJournalProcessed.png "Näyttökuva puretuista tiedostonimissä Windowsin Resurssienhallinnassa")
 
 ### <a name="turn-on-the-er-baseline-feature"></a>ER-perusrivitoiminnon ottaminen käyttöön
 
@@ -177,7 +177,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
     3. Siirry valitsemaan paikallisesti tallennettu XLSX-muotoinen **ERVendOutPaymControlReport**-seurantatiedosto.
     4. Kirjoita **Kuvaus**-kenttään **Maksun XLSX-seurantaraportti**.
 
-    ![Toimittajan maksutiedoston ja seurantaraportin perusrivit](media/GER-BaselineAttachments.png "Näyttökuva Konfiguroinnit-sivusta, jossa valittuna Maksun XLSX-seurantaraportti")
+    ![Toimittajan maksutiedoston ja seurantaraportin perusrivit.](media/GER-BaselineAttachments.png "Näyttökuva Konfiguroinnit-sivusta, jossa valittuna Maksun XLSX-seurantaraportti")
 
 8. Sulje sivu.
 9. Määritä maksutiedoston perusrivi valitsemalla **Perusrivit**-pikavälilehdessä **Uusi**.
@@ -196,7 +196,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
     4. Jos **Tiedostonimen peite** -kentässä annetaan **\*.XLSX**, tätä perusriviä käytetään vain niissä **ERVendOutPaymControlReport**-muoto-osan tuloksissa, joiden tiedostotunniste on **.xslx**.
     5. Valitse **Perusrivi**-kentässä **Maksun XLSX-seurantaraportti**, jolloin tätä perusriviä käytetään verratessa luotua tulosta.
 
-    ![Konfigurointi-sivun Perusrivit-pikavälilehti](media/GER-BaselineRules.png "Näyttökuva Konfigurointi-sivun Perusrivit-pikavälilehdestä")
+    ![Konfiguraatiot-sivun Perusrivit-pikavälilehti.](media/GER-BaselineRules.png "Näyttökuva Konfigurointi-sivun Perusrivit-pikavälilehdestä")
 
 ## <a name="record-tests-to-validate-vendor-payment-processing"></a>Testien tallentaminen toimittajan maksujen käsittelyn tarkistamiseen
 
@@ -226,15 +226,15 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
 
 1. Käsitellyn maksurivin tilaksi määritetään **Ei mitään**.
 
-    ![Tehtävätallenteen vaiheet 3–4](media/GER-Recording1Review1.png "Näyttökuva tehtävätallenteen vaiheista 3–4")
+    ![Tehtävätallenteen vaiheet 3–4.](media/GER-Recording1Review1.png "Näyttökuva tehtävätallenteen vaiheista 3–4")
 
 2. Ota käyttäjän **Suorita virheenkorjaustilassa** -ER-parametri käyttöön.
 
-    ![Tehtävätallenteen vaiheet 9–10](media/GER-Recording1Review2.png "Näyttökuva tehtävätallenteen vaiheista 9–10")
+    ![Tehtävätallenteen vaiheet 9–10.](media/GER-Recording1Review2.png "Näyttökuva tehtävätallenteen vaiheista 9–10")
 
 3. Tyhjennä ER-virheenkorjausloki, joka sisältää luotujen tiedostojen ja perusrivien vertailutulokset.
 
-    ![Tehtävätallenteen vaiheet 13–15](media/GER-Recording1Review3.png "Näyttökuva tehtävätallenteen vaiheista 13–15")
+    ![Tehtävätallenteen vaiheet 13–15.](media/GER-Recording1Review3.png "Näyttökuva tehtävätallenteen vaiheista 13–15")
 
 ### <a name="record-the-steps-to-test-vendor-payment-processing"></a>Toimittajan maksujen käsittelyn testausvaiheiden tallentaminen
 
@@ -253,21 +253,21 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
 1. Aloita toimittajan maksujen käsittely.
 2. Valitse oikeat suorituksenaikaiset parametrit ja ota seurantaraportin luonti käyttöön.
 
-    ![Tehtävätallenteen vaiheet 3–8](media/GER-Recording2Review1.png "Näyttökuva tehtävätallenteen vaiheista 3–8")
+    ![Tehtävätallenteen vaiheet 3–8.](media/GER-Recording2Review1.png "Näyttökuva tehtävätallenteen vaiheista 3–8")
 
 3. Siirry ER-virheenkorjauslokiin kirjaamaan luotujen tulosten ja vastaavien perusrivien vertailutulokset.
 
     Vertailun tulokset näkyvät ER-virheenkorjauslokissa **Luotu teksti** -kentässä. **Muoto-osa**- ja **Lokimerkinnän aiheuttaneen muodon polku** -kentät viittaavat tiedosto-osaan, jolle luotua tulosta on verrattu perusriviin.
 
-    ![Merkinnät Sähköisen raportoinnin ajolokit -sivulla](media/GER-ERDebugLog.png "Näyttökuva Sähköisen raportoinnin ajon lokit -sivusta")
+    ![Merkinnät Sähköisen raportoinnin ajolokit -sivulla.](media/GER-ERDebugLog.png "Näyttökuva Sähköisen raportoinnin ajon lokit -sivusta")
 
 4. Nykyisen tuloksen ja perusrivin vertailu tallennetaan käyttämällä tehtävän tallennustoiminnon **Tarkista**-asetusta ja valitsemalla **Nykyinen arvo**.
 
-    ![Tarkista-asetuksen käyttäminen nykyisen arvon vertailussa](media/GER-TRRecordValidation.png "Näyttökuva Tarkista-asetuksen käyttämisestä nykyisen arvon vertailussa")
+    ![Tarkista-asetuksen käyttäminen nykyisen arvon vertailussa.](media/GER-TRRecordValidation.png "Näyttökuva Tarkista-asetuksen käyttämisestä nykyisen arvon vertailussa")
 
     Seuraava kuva osoittaa, miltä tallennetut tarkistusvaiheet näyttävät tehtävätallenteessa.
 
-    ![Tehtävätallenteen vaiheet 13–15](media/GER-Recording2Review2.png "Näyttökuva tehtävätallenteen vaiheista 13–15")
+    ![Tehtävätallenteen vaiheet 13–15.](media/GER-Recording2Review2.png "Näyttökuva tehtävätallenteen vaiheista 13–15")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Tallennettujen testien lisääminen Azure DevOpsiin
 
@@ -284,7 +284,7 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
     1. Anna testitapaukselle nimeksi **Toimittajan maksujen testaaminen käyttämällä ER-muotoa BACS (UK)**.
     2. Liitä aiemmin ladattu **Recording.xml**-tiedosto **Process**-kansiosta.
 
-    ![Valitun testisuunnitelman uudet testitapaukset](media/GER-RSAT-DevOps-Tests-Passed.png "Näyttökuva valitun testisuunnitelman uusista testitapauksista")
+    ![Valitun testisuunnitelman uudet testitapaukset.](media/GER-RSAT-DevOps-Tests-Passed.png "Näyttökuva valitun testisuunnitelman uusista testitapauksista")
 
 > [!NOTE]
 > Varmista, että testit lisätään oikeassa suoritusjärjestyksessä.
@@ -296,14 +296,14 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
 1. Avaa paikallinen RSAT-sovellus nykyisessä topologiassa.
 2. Lataa tällä hetkellä Azure DevOpsissa sijaitsevat testit RSAT-työkaluun valitsemalla **Lataa**.
 
-    ![RSAT-työkaluun ladatut testit](media/GER-RSAT-RSAT-Tests-Loaded.png "Näyttökuva RSAT-työkaluun ladatuista testeistä")
+    ![RSAT-työkaluun ladatut testit.](media/GER-RSAT-RSAT-Tests-Loaded.png "Näyttökuva RSAT-työkaluun ladatuista testeistä")
 
 ### <a name="create-automation-and-parameters-files"></a>Automaatio- ja parametritiedostojen luominen
 
 1. Valitse RSAT-työkalussa Azure DevOpsista ladatut testit.
 2. Luo RSAT-työkalun automaatio- ja parametritiedostot valitsemalla **Uusi**.
 
-    ![RSAT-työkalussa luodut automaatio- ja parametritiedostot](media/GER-RSAT-RSAT-Tests-Initiated.png "Näyttökuva RSAT-työkalussa luoduista automaatio- ja parametritiedostoista")
+    ![RSAT-työkalussa luodut automaatio- ja parametritiedostot.](media/GER-RSAT-RSAT-Tests-Initiated.png "Näyttökuva RSAT-työkalussa luoduista automaatio- ja parametritiedostoista")
 
 ### <a name="modify-the-parameters-files"></a>Parametritiedostojen muokkaaminen
 
@@ -315,7 +315,7 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
 6. Muuta avoimen Excel-työkirjan **Yleiset**-laskentataulukossa yrityksen koodiksi **GBSI**.
 7. Huomaa, että **ERFormatMappingRunLogTable**-laskentataulukon soluissa A:3 and C:3 niiden ER-virheenkorjauslokitaulun kenttien teksti, joilla tarkistettiin tuloksen ja perusrivin vertailun tulokset. Näillä teksteillä arvioidaan testin suorittamisen aikana luotavia ER-virheenkorjauslokin tietueita.
 
-    ![ERFormatMappingRunLogTable-laskentataulukko](media/GER-RSAT-RSAT-ExcelParameters.png "Näyttökuva ERFormatMappingRunLogTable-laskentataulukosta")
+    ![ERFormatMappingRunLogTable-laskentataulukko.](media/GER-RSAT-RSAT-ExcelParameters.png "Näyttökuva ERFormatMappingRunLogTable-laskentataulukosta")
 
 ## <a name="run-the-tests-and-analyze-the-results"></a>Testien suorittaminen ja tulosten analysoiminen
 
@@ -330,11 +330,11 @@ Huomaa, että testitapaukset suoritetaan automaattisesti sovelluksessa selainta 
 
 Suoritetun testin tulokset tallennetaan RSAT-työkaluun. Huomaa, että molemmat testit hyväksyttiin.
 
-![RSAT-työkalussa hyväksytyt testit](media/GER-RSAT-RSAT-Tests-Passed.png "Näyttökuva RSAT-työkalussa hyväksytyistä testeistä")
+![RSAT-työkalussa hyväksytyt testit.](media/GER-RSAT-RSAT-Tests-Passed.png "Näyttökuva RSAT-työkalussa hyväksytyistä testeistä")
 
 Huomaa, että suoritetun testin tulokset lähetetään myös Azure DevOpsiin lisäanalyyseja varten.
 
-![Suoritetun testin tulokset Azure DevOpsissa](media/GER-RSAT-DevOps-Tests-Added.png "Näyttökuva suoritetun testin tuloksista Azure DevOpsissa")
+![Suoritetun testin tulokset Azure DevOpsissa.](media/GER-RSAT-DevOps-Tests-Added.png "Näyttökuva suoritetun testin tuloksista Azure DevOpsissa")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Testien epäonnistumistilanteen simulointi
 
@@ -357,15 +357,15 @@ Huomaa, että testitapaukset suoritetaan automaattisesti sovelluksessa selainta 
 
 Suoritetun testin tulokset tallennetaan RSAT-työkaluun. Huomaa, että toinen testi epäonnistui toisen suorituksen aikana.
 
-![Epäonnistuneet testitulokset RSAT-työkalussa](media/GER-RSAT-RSAT-Tests-Failed.png "Näyttökuva epäonnistuneista testituloksista RSAT-työkalussa")
+![Epäonnistuneet testitulokset RSAT-työkalussa.](media/GER-RSAT-RSAT-Tests-Failed.png "Näyttökuva epäonnistuneista testituloksista RSAT-työkalussa")
 
 Huomaa, että suoritetun testin tulokset lähetetään myös Azure DevOpsiin lisäanalyyseja varten.
 
-![Epäonnistuneet testitulokset Azure DevOpsissa](media/GER-RSAT-DevOps-Tests-Failed.png "Näyttökuva epäonnistuneista testituloksista Azure DevOpsissa")
+![Epäonnistuneet testitulokset Azure DevOpsissa.](media/GER-RSAT-DevOps-Tests-Failed.png "Näyttökuva epäonnistuneista testituloksista Azure DevOpsissa")
 
 Pääset käyttämään kunkin testin tilaa. Pääset käyttämään myös suorituslokia, joten voit analysoida virheen syyt. Seuraavan kuvan suorituslokissa näkyy, että virhe johtui luodun maksutiedoston ja sen perusrivin sisällön välisestä erosta.
 
-![Virheiden analysointiin Azure DevOpsissa käytettävä suoritusloki](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Näyttökuva virheiden analysointiin Azure DevOpsissa käytettävästä suorituslokista")
+![Virheiden analysointiin Azure DevOpsissa käytettävä suoritusloki.](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Näyttökuva virheiden analysointiin Azure DevOpsissa käytettävästä suorituslokista")
 
 Tämän vuoksi ER-muodon toimintaa voidaan arvioida osoitetulla tavalla automaattisesti käyttämällä RSAT-työkalua testausympäristönä ja tehtävän tallennustoimintoon perustuvia testitapauksia, jotka käyttävät ER-perusrivitoimintoa.
 

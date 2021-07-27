@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025445"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353777"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Myyntipisteen varastohakutoiminto
 
@@ -45,7 +45,10 @@ Yksittäisen tuotteen varastohakutoiminto sisältää varastohakuluettelonäkym�
 
 Sijaintien luettelonäkymä sisältää kaikki myymälät ja varastot, jotka on konfiguroitu täyttämisryhmiin, joihin nykyinen myymälä on linkitetty, seuraavan esimerkin kuvan mukaisesti.
 
-![Varastohakutoiminnon luettelonäkymä](media/inventory-lookup-list-view.png)
+![Varastohakutoiminnon luettelonäkymä.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Varmista, että nykyinen myymälä sisältyy asiaan liittyviin täyttämisryhmiin.
 
 Myyntipisteen sovelluspalkissa ovat käytettävissä seuraavat toiminnot:
 
@@ -65,7 +68,7 @@ Myyntipisteen sovelluspalkissa ovat käytettävissä seuraavat toiminnot:
 - **Lisää tapahtumaan** – Tämä toiminto lisää tuotteen ostoskoriin ja ohjaa käyttäjän tapahtumanäyttöön.
 
 > [!NOTE]
-> Sijaintiin perustuvassa lajittelussa sijainnin ja nykyisen myymälän välinen etäisyys määräytyy Commercen pääkonttorisovelluksessa määritettyjen koordinaattien (leveys- ja pituusasteet) mukaan. Myymälän sijaintitiedot määritetään myymälään liittyvän toimintayksikön ensisijaisessa osoitteessa. Jos varasto ei ole myymälässä, sijaintitiedot määritetään varaston osoitteessa. Jos nykyisen myymälän koordinaatteja ei ole määritetty oikein, sijaintiin perustuva lajitteluvaihtoehto näyttää nykyisen myymälän luettelon yläosassa ja lajittelee sitten muut sijainnit nimen perusteella.
+> Sijaintiin perustuvassa lajittelussa sijainnin ja nykyisen myymälän välinen etäisyys määräytyy Commercen pääkonttorisovelluksessa määritettyjen koordinaattien (leveys- ja pituusasteet) mukaan. Myymälän sijaintitiedot määritetään myymälään liittyvän toimintayksikön ensisijaisessa osoitteessa. Jos varasto ei ole myymälässä, sijaintitiedot määritetään varaston osoitteessa. Jos nykyisen myymälän koordinaatteja ei ole määritetty, sijaintiin perustuva lajitteluvaihtoehto näyttää nykyisen myymälän luettelon yläosassa ja lajittelee sitten muut sijainnit nimen perusteella.
 
 > [!NOTE]
 > **Näytä myymälän käytettävyys**-, **Näytä myymälän sijainti**-, **Nouto myymälästä**- ja **Lähetä tuote** -toiminnot eivät ole käytettävissä muissa kuin myymälävarastoissa.
@@ -76,7 +79,7 @@ Jos päätuotteessa on variantteja, varastohakutoiminto sisältää myös dimens
 
 Seuraavassa esimerkkikuvassa näkyy myyntipisteen varastohakumatriisinäkymä.
 
-![Varastohakutoiminnon matriisinäkymä](media/inventory-lookup-matrix-view.png)
+![Varastohakutoiminnon matriisinäkymä.](media/inventory-lookup-matrix-view.png)
 
 Matriisinäkymässä kukin solu edustaa yksittäistä varianttia ja näyttää oikeassa alakulmassa käytettävissä olevan varaston (käytettävissä olevan fyysisen) arvon sekä **varatun** (fyysisen varatun) arvon ja **tilatut** (tilattu yhteensä) arvot vasemmassa yläkulmassa. Seuraavassa taulukossa selitetään eri käytettävissä olevien arvojen merkitykset.
 
@@ -103,7 +106,7 @@ Myyntipisteen käyttäjät voivat käyttää varastohakutoimintoa muilla myyntip
 
 Seuraavassa esimerkkikuvassa näkyy myyntipisteen varastohaun tulokset tuotetietosivulta.
 
-![Varastohaku tuotetietosivulta](media/inventory-lookup-from-product-details-page.png)
+![Varastohaku tuotetietosivulta.](media/inventory-lookup-from-product-details-page.png)
 
 Päätuotteen tuotetietosivulla voidaan käynnistää varaston hakumatriisinäkymä käyttämällä sovelluspalkin **Näytä kaikki muuttujat** -toimintoa, joka sisältää nykyisen myymälän varaston käytettävyystiedot tuotteen kaikkien muuttuja varten. Tuotetietosivu näyttää yksittäisen tuotteen käytettävissä olevan varaston (käytettävissä olevan fyysisen) arvon nykyisessä myymälässä. Lisäksi voit valita **Muiden myymälöiden varasto** -linkin ja käynnistää varastohakutoiminnon, jonka avulla voit tarkistaa tuotteen käytettävyyden muissa myymälöissä tai varastoissa.
 

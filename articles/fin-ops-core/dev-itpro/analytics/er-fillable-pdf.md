@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355415"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
@@ -115,11 +115,11 @@ Avaa lataamasi PDF-mallit missä tahansa PDF-katseluohjelmassa. Huomaa, että jo
 
 Seuraavassa kuvassa näkyy raportin ensimmäisen sivun PDF-malli.
 
-![Malli 1](media/rcs-ger-filloutpdf-template1.png)
+![Malli 1.](media/rcs-ger-filloutpdf-template1.png)
 
 Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
 
-![Malli 2](media/rcs-ger-filloutpdf-template2.png)
+![Malli 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. Valitse **Määritys**-sivulla **Suunnittelija**.
 2. Valitse **Lisää pääkansio**.
@@ -146,7 +146,7 @@ Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
 
 12. Valitse **OK**.
 
-    ![Tuo PDF-valintaikkunasta](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Tuo PDF-valintaikkunasta.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Laajenna puussa kohde **Tuotos**.
 
@@ -176,7 +176,7 @@ Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
 
     Huomaa, että tuotu PDF-tiedosto on liitetty muokattuun sähköisen raportoinnin muotoon.
 
-    ![PDF-liitteen esikatselu](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![PDF-liitteen esikatselu.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Jatka tämän muodon suunnittelua tuomalla toinen PDF-malli, lisäämällä tarvittavat sidokset tietolähteisiin ja niin edelleen.
 20. Valitse **Tallenna**.
@@ -215,7 +215,7 @@ Seuraavaksi tuot aiemmin lataamasi sähköisen raportoinnin esimerkkimuodon **In
 1. Valitse **Muodon suunnittelu** -sivulla **Yhdistämismääritys**-välilehti.
 2. Laajenna puussa **Sivutus \> Sivut**.
 
-    ![Kaavan suunnittelusivu, jossa mallipuuta laajennetaan](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Kaavan suunnittelusivu, jossa mallipuuta laajennetaan.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Ota seuraavat seikat huomioon:
 
@@ -238,7 +238,7 @@ Seuraavaksi tuot aiemmin lataamasi sähköisen raportoinnin esimerkkimuodon **In
 
     Huomaa, että tämän muotoelementin **Nimi**-määrite on määritetty **Correction 1**-määritteeksi. Huomaa myös, että **Nimi**-elementin nimilauseke määritetään mallilla **Paging.FldName("Correction"\@. Number)**.
 
-![Muotoilun suunnittelu, jossa yhdistämismääritys on valittuna](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Muotoilun suunnittelu, jossa yhdistämismääritys on valittuna.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Huomaa, että **Kentän** muotoiluelementin avulla täytetään täytettävän PDF-tiedoston yksittäisen kenttä, joka määritetään pää-**PDF-tiedosto**-muodon elementin malliksi. **PDF-tiedosto**-muotoelementin tai sen sisäkkäisten elementtien sidonta, jos siinä on sisäkkäisiä elementtejä, määrittää vastaaviin PDF-kenttiin kirjoitetun arvon. **Kentän** muotoiluelementin eri ominaisuuksien avulla voit määrittää, mikä PDF-kenttä täytetään yksittäisen muotoelementin avulla:
 
@@ -275,7 +275,7 @@ Seuraavaksi lataat **Intrastatin (tuonti Excelistä)** sähköisen raportoinnin 
 
     Kun **Mallin yhdistämismäärityksen** oletusarvoksi on määritetty **Kyllä**, tuotu **Intrastat (tuotu Excelistä)**-sähköisen raportoinnin muoto määritetään oletustietolähteeksi **Intrastat-raportin (PDF)** konfiguroinnin muodolle. Kun **Intrastat-raportti (PDF)**-muoto määritetään, **Intrastat (tuonti Excelistä)**-muodossa jäsennetty Excel-työkirjan sisältö simuloi ulkomaankaupan tapahtumia, jotka on raportoitu. Seuraavassa kuvassa on Excel-työkirjan esimerkki.
 
-    ![Mallitietoja sisältävä Excel-työkirja](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Mallitietoja sisältävä Excel-työkirja.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Suorita muotokonfiguraatio
 
@@ -289,11 +289,11 @@ Seuraavaksi lataat **Intrastatin (tuonti Excelistä)** sähköisen raportoinnin 
 
 Seuraavassa kuvassa näkyy esimerkki luotavan raportin ensimmäisestä sivusta.
 
-![Luodun raportin ensimmäinen sivu](media/rcs-ger-filloutpdf-generatedreport.png)
+![Luodun raportin ensimmäinen sivu.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Seuraavassa kuvassa näkyy esimerkki luotavan raportin toisesta sivusta.
 
-![Luodun raportin toinen sivu](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Luodun raportin toinen sivu.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

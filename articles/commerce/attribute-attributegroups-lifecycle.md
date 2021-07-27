@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936801"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346801"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Määritteiden ja määriteryhmien hallinta
 
@@ -70,7 +70,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
     - Anna toisen määritetyypin nimeksi **Linssin muoto** ja lisää seuraavat arvot: **Soikea**, **Neliö** ja **Suorakaide**.
     - Anna toisen määritetyypin nimeksi **Aurinkolasien merkki** ja lisää seuraavat arvot: **Ray ban**, **Aviator** ja **Oakley**.
 
-![Määritetyypit](media/AttributeType.png)
+![Määritetyypit.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Määritteen määrittäminen
 
@@ -79,7 +79,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
 3. Luo määrite, jonka nimi on **Linssi**.
 4. Määritä **Määritteen tyyppi** -kentän arvoksi **Linssin muoto**.
 
-![Ominaisuudet](media/Attribute.png)
+![Määritteet.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Määritteen metatiedot
 
@@ -134,7 +134,7 @@ Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suod
     - 200–500
     - 500 tai enemmän
 
-![Määritteen suodatusasetukset](media/AttributeFilterSettings.PNG)
+![Määritteen suodatusasetukset.](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Määriteryhmät
 
@@ -142,7 +142,7 @@ Kun määritteet on määritetty, ne voidaan määrittää määriteryhmiin *Mä
 
 Voit määrittää oletusarvot myös määriteryhmään sisältyvillä määritteille. Voit esimerkiksi lisätä värin määritteen määriteryhmään ja valita määritteen oletusarvoksi **sinisen**. Kun määriteryhmä sitten lisätään tuotteeseen, jossa väri on yksi määritteistä, **Sininen** näkyy kyseisen tuotteen oletusvärinä.
 
-![Määriteryhmät](media/AttributeGroup.png)
+![Määriteryhmät.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Luo ominaisuusryhmä
 
@@ -155,7 +155,7 @@ Voit määrittää oletusarvot myös määriteryhmään sisältyvillä määritt
 
 Vähintään yksi määriteryhmä voidaan liittää luokkasolmuihin seuraavan tyyppisiä vähittäismyynnin luokkahierarkioissa: Commerce-tuotehierarkia, Kanavan siirtymisluokkahierarkia ja Lisätuoteluokkahierarkia. Kun tuotteet sitten luokitellaan, ne perivät määriteryhmiin sisältyvät määritteet.
 
-![Tuotehierarkia – tuotemääriteryhmät](media/AGRetailProdHierarchy.PNG)
+![Tuotehierarkia – Tuotemääriteryhmät.](media/AGRetailProdHierarchy.PNG)
 
 Määritä määriteryhmät luokkiin Commerce-tuotehierarkiassa seuraavasti.
 
@@ -200,7 +200,7 @@ Vähintään yksi määriteryhmä voidaan liittää vähintään yhteen myymäl�
     3. Valitse ensin **Muodin asusteet** -luokkasolmu, sitten **Merkkiaurinkolasit**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
     4. Valitse ensin **Miesten vaatteet** -luokkasolmu, sitten **Housut**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
 
-![Kanavaluokat ja tuotemääritteet – määriteryhmät](media/CCPAttrGrp.png)
+![Kanavaluokat ja tuotemääritteet – Määriteryhmät.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Määritearvojen ohittaminen
 
@@ -214,7 +214,7 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 4. Valitse tarvittava tuote ruudukossa. Valitse sitten toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Tuotemääritteet**.
 5. Valitse määrite vasemmassa ruudussa ja päivitä sen arvo oikeassa ruudussa.
 
-![Tuotetiedot-sivu – tuotemääriteryhmät](media/ProdDetailsProdAttrValues.png)
+![Tuotetiedot-sivu – Tuotemääriteryhmät.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Luettelon tuotteiden määritearvojen ohittaminen
 
@@ -233,7 +233,7 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
     > [!NOTE]
     > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin tuotteisiin.
 
-![Luettelon tuotemääriteryhmät](media/CatalogProdAttrValues.png)
+![Luettelon tuotemääriteryhmät.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Kanavan tuotteiden määritearvojen ohittaminen
 

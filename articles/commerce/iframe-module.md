@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7b397b91d1b8a45347ef2d05f42fb7c610ab3912
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55526b34eb057abb9a8c33cbfea1807601da6577
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797067"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348211"
 ---
 # <a name="iframe-module"></a>iFrame-moduuli
 
@@ -37,7 +37,7 @@ iFrame-moduuli edellyttää kohde-URL-osoitetta. Sen jälkeen se isännöi kohde
 
 Seuraavassa kuvassa näkyy esimerkkejä iFrame-moduuleista, jotka esittelevät sivuston sivujen ulkoisia videoita.
 
-![Esimerkki iFrame-moduuleista, jotka esittelevät ulkoisia videoita](./media/ecommerce-iframe.PNG)
+![Esimerkki iframe-moduuleista, jotka esittelevät ulkoisia videoita.](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>iFrame-moduulin ominaisuudet
 

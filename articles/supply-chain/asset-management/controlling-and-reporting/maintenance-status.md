@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3d6f86c5052c845c9c8aad1e4437f4196f78b50
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b0c8b6a81fd863d66ca01689262f0ec08a94d76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808613"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354973"
 ---
 # <a name="maintenance-status"></a>Ylläpitotila
 
@@ -57,13 +57,13 @@ Resurssienhallinnassa voit laskea yhteenvedon, jossa on tietoja uusista, aktiivi
 
 Alla olevassa näyttökuvassa **Vuosi**- ja **Kuukausi**-painikkeet on aktivoitu. Kun nämä **Ryhmittely...**-asetukset on valittu, saat yleiskuvan ylläpitopyyntöihin ja työtilauksiin liittyvästä kuormituksesta ja suoritusnopeudesta kuukausittain. 
 
-![Esimerkki kuukausittaisesta kuormituksesta](media/13-controlling-and-reporting.png)
+![Esimerkki kuukausittaisesta kuormituksesta.](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Esimerkki 2
 
 Alla olevassa näyttökuvassa on lisätty tietoja toiminnallisista sijainneista. Nyt on mahdollista vertailla työmäärää ja suorituskykyä eri toiminnallisissa sijainneissa, jotka voivat edustaa maantieteellisiä sijainteja, tehtaita tai työalueita. 
 
-![Esimerkki kuukausittaisesta kuormituksesta ja toiminnallisista sijainneista](media/14-controlling-and-reporting.png)
+![Esimerkki kuukausittaisesta kuormituksesta ja toiminnallisista sijainneista.](media/14-controlling-and-reporting.png)
 
 
 

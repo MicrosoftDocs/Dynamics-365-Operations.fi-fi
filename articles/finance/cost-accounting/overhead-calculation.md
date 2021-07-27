@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187994"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355032"
 ---
 # <a name="overhead-calculation"></a>Yleiskustannuslaskenta
 
@@ -48,7 +48,7 @@ Yleiskustannusten laskenta suorittaa kustannuslaskennan käytännöt oikeassa j�
 
 Yleiskustannusten laskenta ajetaan versiosta riippumattomana. Voit siis laskea budjetin version ennen todellista versiota. Yleiskustannusten laskenta koostuu neljästä vaiheesta, jotka esitellään seuraavassa kuvassa. Kussakin vaiheessa luodaan kirjauskansion otsikko, jolla on kirjauskansiovientejä. Tämä kirjauskansion otsikko säilyttää kunkin laskentavaiheen syöttötiedot. Käytännöt ja säännöt ajetaan kullekin kirjauskansion riville, ja tuloksena luodaan kustannustapahtumia. Tämän ansiosta kaikki laskutoimitukset ovat täysin jäljitettävissä. 
 
-[![Yleiskustannuslaskenta](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Yleiskustannuslaskenta.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Laske ja kohdista sähkön yleiskustannukset
 Tietyt kustannukset, kuten sähkö, rekisteröidään kirjanpidossa kokonaissummaksi. Tarkka johdon näkymä ei täten ole saatavilla kustannuslaskennassa. Jotta kustannuslaskenta tarjoaisi oikean johdon näkymän kaikista organisaation yksiköistä ja tasoista, kustannusten on virrattava organisaation yksiköiden läpi. Tämän virran on perustuttava joko tarkkaan tietoon kulutuksesta tai perusteltuun arvioon. Sähkökustannukset voi kirjata kirjanpitoon seuraavassa taulukossa kuvatulla tavalla.
@@ -618,7 +618,7 @@ Lisätietoja on kohdassa [Yleisen laskennan suorittaminen](cost-rollup.md#perfor
 
 Kohdistuksella kustannusobjektin saldo liitetään toisiin kustannusobjekteihin käyttämällä kohdistusperustetta. Finance tukee vastavuoroista kohdistusmenetelmää. Vastavuoroisessa kohdistusmenetelmässä tunnistetaan oheiskustannusobjektien käyttämät, keskinäiset palvelut täysin. Järjestelmä määrittää oikean kohdistusjärjestyksen automaattisesti. Kustannusobjektin saldo kohdistetaan yhdellä kohdistusperusteella. Kustannusobjektien dimensiot ja niiden vastaavat jäsenet ylittävät kohdistukset ovat tuettuja. Kustannusseurantayksikkö hallitsee kohdistusjärjestystä. 
 
-[![Vastavuoroinen menetelmä](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Vastavuoroinen menetelmä.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Määritä kustannuksen kohdistus
 

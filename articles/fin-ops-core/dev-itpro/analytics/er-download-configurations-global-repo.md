@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893977"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351743"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta
 
@@ -40,7 +40,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 3. Valitse **Konfiguraation lähteet** -osassa **Microsoft**-ruutu.
 3. Valitse **Microsoft**-ruudusta **Säilöt**.
 
-    ![Sähköisen raportoinnin työtila](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Sähköisen raportoinnin työtila.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. Valitse **Konfiguraatiosäilöt**-sivun ruudukossa oleva säilö, jonka tyyppi on **Yleinen**. Jos säilöä ei ole ruudukossa, noudata seuraavia ohjeita:
 
@@ -52,7 +52,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 
 5. Valitsemalla **Avaa** voit tarkastella valitun säilön ER-konfiguraatioita.
 
-    ![Konfiguraatiosäilöjen sivu](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfiguraatiosäilöjen sivu.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Tuo yksi määritys
 
@@ -63,7 +63,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
     > [!NOTE]
     > **Tuo**-painike ei ole käytettävissä ER-määritysversioille, jotka on jo ladattu nykyiseen Finance-esiintymään.
 
-    ![Konfiguraatiosäilön sivu](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfiguraatiosäilön sivu.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Tuo suodatetut määritykset
 
@@ -77,7 +77,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 4. Lataa suodatetut konfiguraatiot yleisestä tietovarastosta nykyiseen esiintymään valitsemalla **Konfiguraatiot**-pikavälilehdessä **Tuo**.
 5. Voit tyhjentää määritetyt valintaehdot valitsemalla **Konfiguraatiot**-pikavälilehdessä **Nollaa suodatin**.
 
-    ![Konfiguraatiosäilön sivu](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfiguraatiosäilön sivu.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Ennen kuin voit käyttää tuotua konfiguraatioversiota, kyseiset ongelmat on ratkaistava. Lisätietoja saat tähän aiheeseen liittyvistä resursseista.

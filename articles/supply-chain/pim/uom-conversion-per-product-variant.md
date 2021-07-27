@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ed28928b0f07833d5906a68f780e3bb5bbe0bfe9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921214"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353537"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mittayksiköiden tuotevarianttikohtaiset muunnokset
 
@@ -56,7 +56,7 @@ Päätuote määritetään tukemaan varianttikohtaista yksikkömuunnosta seuraav
     - **Tuote** – Jos valitset tämän arvon, voit määrittää päätuotteen yksikkömuunnoksen. Tätä yksikkömuunnosta käytetään kaikkien niiden tuotevarianttien varalla olevan muunnoksena, jos mitään yksikkömuunnosta ei ole määritetty.
     - **Tuotevariantti** – Jos valitset tämän arvon, voit määrittää tietyn tuotevariantin yksikkömuunnoksen. Valitse variantti **Tuotevariantti**-kentän avulla.
 
-    ![Uuden yksikkömuunnoksen lisääminen](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")
+    ![Uuden yksikkömuunnoksen lisääminen.](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")
 
 1. Käytä muita käytettävissä olevia kenttiä yksikkömuunnoksen määrittämiseen.
 1. Tallenna uusi yksikkömuunnos valitsemalla **OK**.

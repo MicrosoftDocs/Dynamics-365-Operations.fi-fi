@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7b5f8303ea23f4f38bf27d35de0fa91ab82f4b5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028104"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354466"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
 
@@ -55,14 +55,14 @@ Näiden ohjeiden avulla voit luoda uuden tallenteen tehtävien tallennustoiminno
 1. Käynnistä Retail Modern POS tai pilvimyyntipiste ja kirjaudu sisään.
 2. Valitse **Asetukset**-sivun **Tehtävien tallennustoiminto** -osassa **Avaa tehtävien tallennustoiminto**. **Tehtävien tallennustoiminto** -ruutu avautuu. Valitse oikeassa yläkulmassa oleva **Sulje**-painike (**X**), kun haluat sulkea **Tehtävien tallennustoiminto** -ruudun ennen uuden tallenteen aloittamista. Voit avata ruudun uudelleen toistamalla vaiheen 2.
 
-    [![Tehtävien tallennustoiminto -ruutu](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Tehtävien tallennustoiminto -ruutu.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Kirjoita tallenteen nimi ja kuvaus ja valitse sitten **Aloita**. Tallennusistunto alkaa heti, kun valitset **Aloita**.
 
     > [!NOTE]
     > Jos valitset oikeassa yläkulmassa olevan **Sulje**-painikkeen (**X**) tallennuksen ollessa käynnissä, **Tehtävien tallennustoiminto** -ruutu suljetaan, mutta tallennusistuntoa ei päätetä. Voit avata Tehtävien tallennustoiminto -ruudun uudelleen valitsemalla näytön yläosassa olevan **Ohje**-painikkeen (kysymysmerkki).
     >
-    > [![Kysymysmerkki](./media/help.jpg)](./media/help.jpg)
+    > [![Kysymysmerkki.](./media/help.jpg)](./media/help.jpg)
 
 4. Kun valitset **Aloita**, tehtävien tallennustoiminto siirtyy tallennustilaan. **Tehtävien tallennustoiminto** -ruutu näyttää tallennusprosessiin liittyvät tiedot ja ohjausobjektit.
 5. Suorita toimintoja, joita haluat suorittaa Retail Modern POS:n tai pilvimyyntipisteen käyttöliittymässä.
@@ -72,7 +72,7 @@ Näiden ohjeiden avulla voit luoda uuden tallenteen tehtävien tallennustoiminno
 
 Tallennusistunnon loputtua näkyvissä on useita vaihtoehtoja, joiden avulla tallenteen voi ladata.
 
-[![Latausvalinnat](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Latausvalinnat.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Tallenna tälle tietokoneelle
 
@@ -88,9 +88,9 @@ Kehittäjät voivat käyttää käsittelemätöntä tallennetiedostoa moniin tar
 
 ## <a name="recording-controls"></a>Tallennuksen säätimet
 
-[![Tallennuksen säätimet](./media/controls.jpg)](./media/controls.jpg)
+[![Tallennuksen säätimet.](./media/controls.jpg)](./media/controls.jpg)
 
-### <a name="stop"></a>Pysäytä
+### <a name="stop"></a>Lopeta
 
 Valitse **Lopeta**, kun haluat lopettaa tallennusistunnon. Huomaa, että lopettamisen jälkeen et voi käynnistää istuntoa uudelleen. Tämän vuoksi kannattaa varmistaa, että tallenne on valmis, ennen kuin se lopetetaan.
 
@@ -117,13 +117,13 @@ Voit määrittää ryhmiteltyjen vaiheiden joukon aloituksen ja lopetuksen **Alo
 
 Huomautus on lisäteksti, joka lisätään vaiheeseen tallennuksen aikana. Huomautusten avulla voidaan esimerkiksi antaa käyttäjille lisätietoja tai ohjeita. Huomautuksia voi lisätä vaiheen edelle ja sen jälkeen. Huomautuksia voi lisätä mihin tahansa vaiheeseen **Muokkaa**-painikkeen avulla (kynäsymboli), joka löytyy vaiheen oikealta puolelta.
 
-[![Vaiheen Muokkaa-painike](./media/annotate.jpg)](./media/annotate.jpg)
+[![Vaiheen Muokkaa-painike.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Tekstit ja muistiinpanot
 
 **Tekstit**- ja **Muistiinpanot**-kenttien avulla voi lisätä tekstiä, jotka liitetään tehtäväoppaan vaiheeseen.
 
-[![Teksti- ja Muistiinpanot-kenttä](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Teksti- ja Muistiinpanot-kenttä.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Teksti
 
@@ -137,7 +137,7 @@ Huomautus on lisäteksti, joka lisätään vaiheeseen tallennuksen aikana. Huoma
 
 Voit näyttää omat mukautetut tehtävätallenteet Retail Modern POS:n ja pilvimyyntipisteen ohjeruudussa niin, että niitä voidaan tarkastella tekstinä, kun tallennat tehtävätallenteet ensin omaan BPM-kirjastoon ja päivität sitten ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS:n ja pilvimyyntipisteen ohje tekee haut LCS-palvelusta reaaliaikaisesti. Se tekee haun kaikista BPM-kirjastoista, jotka on valittu Commercen ohjejärjestelmän parametreissa, ja näyttää hakua vastaavat tulokset. Voit käyttää **Ohje**-valikkoa valitsemalla näytön yläosassa olevan **Ohje**-painikkeen (kysymysmerkki) kirjoittamalla hakuruutuun prosessin nimen ja painamalla hakupainiketta.
 
-[![Ohje-painike](./media/help.jpg)](./media/help.jpg)
+[![Ohje-painike.](./media/help.jpg)](./media/help.jpg)
 
 Kun valitset hakutuloksista tehtäväoppaan, voit tarkastella vaiheita ohjeaiheena tai viedä ne Word-asiakirjaan.
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 15466699b94c284208330d50b840c874534b879c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ce5ddf863988475550584384f4cf26f1302768aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910276"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355898"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Varastotasotietojen synkronointi Supply Chain Managementista Field Serviceen 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910276"
 
 Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
 
-[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoitaessa käsillä olevia varastotasoja Supply Chain Managementista Field Serviceen.
@@ -89,7 +89,7 @@ Voit käyttää kyselyn ja suodatuksen lisäasetusten suodattimia siten, että v
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Tuotevarasto (Supply Chain Managementista Field Serviceen): Tuotevarasto
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

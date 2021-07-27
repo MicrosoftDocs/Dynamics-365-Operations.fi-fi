@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027960"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352057"
 ---
 # <a name="account-management-pages-overview"></a>Tilinhallintasivujen yleiskatsaus
 
@@ -35,7 +36,7 @@ Kun asiakas kirjautuu sisään ja valitsee **Oma tili**, tilinhallinnan saapumis
 
 Seuraavassa kuvassa on esimerkki tilinhallinnan saapumissivusta.
 
-![Esimerkki tilinhallinnan saapumissivusta](./media/Account-Management.PNG)
+![Esimerkki tilinhallinnan saapumissivusta.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Oma profiili -sivu
 
@@ -43,7 +44,7 @@ Seuraavassa kuvassa on esimerkki tilinhallinnan saapumissivusta.
 
 Seuraavassa kuvassa on esimerkki **Oma profiili** -sivusta, joka on luotu moduulikirjaston avulla.
 
-![Esimerkki Oma profiili -sivusta](./media/Account-Management-MyProfile.PNG)
+![Esimerkki Oma profiili -sivusta.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Osoitteet-sivu
 
@@ -51,7 +52,7 @@ Seuraavassa kuvassa on esimerkki **Oma profiili** -sivusta, joka on luotu moduul
 
 Seuraavassa kuvassa on esimerkki **Osoitteet**-sivusta.
 
-![Esimerkki Osoitteet-sivusta](./media/Account-Management-Address.png)
+![Esimerkki Osoitteet-sivusta.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Tilaushistoria- ja Tilaustiedot-sivut
 
@@ -59,11 +60,11 @@ Seuraavassa kuvassa on esimerkki **Osoitteet**-sivusta.
 
 Seuraavassa kuvassa on esimerkki **Tilaushistoria**-sivusta.
 
-![Esimerkki Tilaushistoria-sivusta](./media/Account-Management-OrderHistory.PNG)
+![Esimerkki Tilaushistoria-sivusta.](./media/Account-Management-OrderHistory.PNG)
 
 Seuraavassa kuvassa on esimerkki **Tilauksen tiedot** -sivusta.
 
-![Esimerkki Tilauksen tiedot -sivusta](./media/Account-Management-OrderDetails.PNG)
+![Esimerkki Tilauksen tiedot -sivusta.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Kanta-asiakasohjelma-sivu
 
@@ -71,15 +72,15 @@ Seuraavassa kuvassa on esimerkki **Tilauksen tiedot** -sivusta.
 
 Seuraavassa kuvassa on **Kanta-asiakasohjelma** -sivun esimerkki.
 
-![Esimerkki Kanta-asiakasohjelma-sivusta](./media/Account-Management-Loyalty.PNG)
+![Esimerkki Kanta-asiakasohjelma-sivusta.](./media/Account-Management-Loyalty.PNG)
 
-### <a name="wishlist-page"></a>Toivelistasivu
+### <a name="wishlist-page"></a>Toivomuslistasivu
 
 **Toivomuslista**-sivulla on niiden nimikkeiden luettelo, jotka asiakas on lisännyt toivomuslistaansa. Sekä tuotteet että tuotevariantit voidaan lisätä toivomuslistaan. Tällä sivulla asiakas voi poistaa nimikkeen toivomuslistasta tai lisätä nimikkeen suoraan ostoskoriin.
 
 Seuraavassa kuvassa on **Toivomuslista**-sivun esimerkki.
 
-![Esimerkki Toivomuslista-sivusta](./media/Account-Management-Wishlist.PNG)
+![Esimerkki Toivomuslista-sivusta.](./media/Account-Management-Wishlist.PNG)
 
 Lisätietoja tilienhallintamoduuleista ja niiden muokkaamisesta on kohdassa [Tilinhallinta](account-management.md).
 

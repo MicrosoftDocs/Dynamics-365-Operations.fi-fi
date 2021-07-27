@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270882"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350471"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vähittäismyyntikanavien varaston käytettävyyden laskeminen
 
@@ -105,7 +105,7 @@ Commercen versiossa 10.0.9 ja vanhemmissa versioissa myyntipisteen **Varastohaku
 
 Kun kanavan laskenta on oikein määritetty ja hallittu, se voi tuottaa luotettavia arvioita myymälän nykyisestä varastosta, koska se käyttää Commerce-kanavan tietokannan tapahtumatietoja. Pääkonttori ei välttämättä vielä sisällä näitä tietoja. Jos esimerkiksi käytössä on myyntipisteen varastohakujen olemassa oleva reaaliaikainen palvelukutsu, pääkonttori ei ehkä vielä sisällä tietoja tuotteen juuri tapahtuneesta noutotukkumyynnistä. Tämän vuoksi käytettävissä oleva varastoarvo, jonka pääkonttori palauttaa tuotteelle, todennäköisesti ylittää myymälän toteutuneen käytettävissä olevan varaston yhdellä yksiköllä. Jos kuitenkin käytät kanavan laskentaa, noutotukkumyynti voidaan kohdistaa laskentaan ja vähentää näkyvillä olevasta käytettävissä olevasta varastoarvosta. Vaikka sekä kanavan laskennan että reaaliaikaisen palvelukutsun antamat arvot ovat vain arvioita käytettävissä olevasta varastosta, kanavan laskennan arvo on todennäköisemmin oikeassa nykyistä myymälää ajatellen.
 
-Kun haluat määrittää pääkonttorin myyntipisteen **Varastohaku**-toiminnon käyttämään kanavanpuoleista laskentalogiikkaa ja poistaa reaaliaikaisen huoltokutsun käytöstä, noudata seuraavia ohjeita.
+Jos haluat määrittää myyntipisteen **Varastohaku**-toiminnon Commerce-pääkonttorisovelluksessa käyttämään kanavanpuoleista laskentalogiikkaa ja poistaa reaaliaikaisen palvelukutsun käytöstä, sinun täytyy ensin ottaa **Optimoitu tuotteen saatavuuden laskenta** -ominaisuus käyttöön Commerce-pääkonttorisovelluksen **Ominaisuuksien hallinta** -työtilasta ja noudattaa sitten seuraavia ohjeita.
 
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**.
 1. Valitse toimintoprofiili.

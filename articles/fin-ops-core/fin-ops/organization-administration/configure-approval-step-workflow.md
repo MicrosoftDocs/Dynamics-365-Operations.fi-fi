@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86e8787320721a58f449abcfba21c2c4c6b4caf9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 988340d9e5fc12c9329a587c7401fe039c8e5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751773"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350691"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Hyväksyntävaiheiden lisääminen työnkulkuun
 
@@ -156,7 +156,7 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
 
     - **Yksi hyväksyjä** – Asiakirjan toimenpiteen valitsee ensimmäinen hyväksyntäpyyntöön vastaava henkilö. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue on ensimmäinen asiakirjaan reagoiva henkilö, hänen valintansa on se, jota asiakirjaan sovelletaan. Jos Sue hylkää asiakirjan, se hylätään ja lähetetään takaisin Samille. Jos Sue hyväksyy asiakirjan, se lähetetään Annille hyväksyttäväksi.
 
-        ![Työnkulku, jolla on hyväksyntäprosessi](./media/workflow_multipleusersinstep.gif)
+        ![Työnkulku, jolla on hyväksyntäprosessi.](./media/workflow_multipleusersinstep.gif)
 
     - **Suurin osa hyväksyjistä** – Asiakirjan toimenpide määräytyy sen mukaan, miten suurin osa hyväksyjistä vastaa hyväksyntäpyyntöön. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue ja Jo ovat ensimmäiset vastauksen antaneet hyväksyjät, asiakirjan toimenpide määräytyy sen mukaan, miten he vastaavat pyyntöön.
 

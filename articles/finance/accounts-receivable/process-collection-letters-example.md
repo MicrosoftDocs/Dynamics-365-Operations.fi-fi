@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021413"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347805"
 ---
 # <a name="process-collection-letters-example"></a>Käsittele maksukehotuksia – esimerkki
 
@@ -40,7 +40,7 @@ Noudata näitä vaiheita, kun olet valmis.
 
 Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksukehotussivulla**. 
 
-[![Maksukehotusjärjestyksen määrittäminen](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Maksukehotusjärjestyksen määrittäminen.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Tässä esimerkissä on nyt määritettävä kaksi parametria.
 
@@ -49,7 +49,7 @@ Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksuke
     1. Määritä **Perintä**-välilehdessä **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -arvoksi **Kyllä**.
     2. Varmista, että **Luo maksukehotus per** -kentän arvoksi on määritetty **Asiakas**.
 
-    [![Myyntireskontran parametrien määrittäminen perintää varten](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Myyntireskontran parametrien määrittäminen perintää varten.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Siirry kohtaan **Myyntireskontra \> Laskut \> Kaikki vapaatekstilaskut**, valitse **Uusi** ja noudata seuraavia ohjeita:
 
@@ -74,7 +74,7 @@ Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksuke
 5. Toista vaihe 4, mutta kirjoita **Yksikköhinta**-kenttään **-200,00**.
 6. Siirry kohtaan **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat** ja valitse asiakas **US-045**. Tämän jälkeen voit tarkistaa aiemmin kirjaamiasi asiakastapahtumia valitsemalla toimintoruudusta **Tapahtumat \> Tapahtumat**.
 
-    [![Kirjattujen asiakastapahtumien tarkistaminen](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Kirjattujen asiakastapahtumien tarkistaminen.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Asiakkaalle US-045 on nyt luotava maksukehotuksia.
 
@@ -93,7 +93,7 @@ Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksuke
 
     1. Huomaa, että sekä otsikon että tapahtumarivien maksukehotuskoodi on **Maksukehotus 1**, koska tämä maksukehotus on sarjan ensimmäinen maksukehotus. (Jos haluat tarkastella tapahtumarivejä, sinun on ehkä valittava **Tapahtumat**-pikavälilehti.)
 
-   [![Saman maksukehotuskoodin tarkistaminen otsikossa ja riveillä](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Saman maksukehotuskoodin tarkistaminen otsikossa ja riveillä.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. Valitse toimintoruudussa **Kirjaa**.
     3. Lisää **Kirjauspäivämäärä** -kenttään **19.1.2021**.
@@ -115,7 +115,7 @@ Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksuke
 
     1. Huomaa, että otsikon maksukehotuskoodi on **Maksukehotus 1**. Tapahtumarivien koodi on kuitenkin **Maksukehotus 2**.
 
-   [![Eri maksukehotuskoodien tarkistaminen otsikossa ja riveillä](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Eri maksukehotuskoodien tarkistaminen otsikossa ja riveillä.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   Koodit ovat eri, koska **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -arvoksi on määritetty **Kyllä**.
 
@@ -123,7 +123,7 @@ Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksuke
 
 11. Siirry kohtaan **Luotonvalvonta \> Asetukset \> Myyntireskontran parametrit** ja määritä sitten **Perintä**-välilehdessä **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -asetukseksi **Ei**.
 
-    [![Määritetään Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia -asetukseksi Ei](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Määritetään Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia -asetukseksi Ei.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Asiakkaalle US-045 on jälleen luotava maksukehotuksia.
 
@@ -140,6 +140,6 @@ Seuraavassa kuvassa on taulukossa näkyvät tiedot, kuten ne näkyvät **maksuke
 
 13. Siirry kohtaan **Luotonvalvonta \> Maksukehotus \> Tarkastele ja käsittele maksukehotuksia** ja huomaa, että sekä otsikon että tapahtumarivien maksukehotuskoodi on **Maksukehotus 2**.
 
-    [![Näytetään taas, että sama maksukehotuskoodi on otsikossa ja riveillä](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Näytetään taas, että sama maksukehotuskoodi on otsikossa ja riveillä.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Sama koodi on molemmissa paikoissa, koska **Ohita maksut ja hyvityslaskut laskettaessa maksukehotuskoodia** -arvoksi on määritetty nyt **Ei**.

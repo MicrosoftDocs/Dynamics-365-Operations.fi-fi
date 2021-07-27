@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9e3f2a17e182c0e3efc8b90380eff74f350c3278
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cce8cb6ef9e0cc74abf90f16ed0ee481b8274a03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804646"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352985"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Luokitusten ja arvostelujen käytön hyväksyminen
 
@@ -43,7 +43,7 @@ Voit ottaa luokitukset ja arvostelut käyttöön sivustossa seuraavasti.
 1. Määritä **Ota luokitukset ja arvostelut -palvelu käyttöön** -asetuksen arvoksi **Kyllä**.
 1. Syötä **Luokitusten ja arvostelujen valvojan AAD-käyttöoikeusryhmä (käyttöoikeusryhmän objektin tunnus)** -kenttään sen Microsoft Azure Active Directory (Azure AD) -käyttöoikeusryhmän tunnus, joka sisältää luokitusten ja arvosteluiden valvojat.
 
-    ![Osallistu käyttääksesi luokituksia ja arvosteluja](media/LCS_RnR_Preference.png)
+    ![Luokitusten ja arvostelujen käytön hyväksyminen.](media/LCS_RnR_Preference.png)
 
 1. Suorita sähköisen kaupankäynnin alustusprosessi loppuun.
 

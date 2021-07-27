@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351366"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Hyvitysmaksujen käsittely puhelinkeskuksissa
 
@@ -37,7 +37,7 @@ Soittokeskus määrittää palautustilauksessa käytettävän maksutavan alkuper
 
     Seuraavassa kuvassa esitetään skenaarion konfiguraatio, jossa asiakas palauttaa tuotteet USD-valuuttaan linkitetystä myyntitilauksesta, joka on alunperin maksettu normaali- tai sekkimaksulajin mukaan. Tässä skenaariossa asiakkaalle hyvitetään järjestelmän luoma palautussekki. **REF-CHK** -myyntireskontramaksutapa on määritetty hyvityssekin maksutyypiksi.
 
-    ![Soittokeskuksen palautustapojen konfiguroiminen alkuperäisille tavallisille ja sekkimaksuille](media/callcenterrefundmethods.png)
+    ![Soittokeskuksen palautustapojen konfiguroiminen alkuperäisille tavallisille ja sekkimaksuille.](media/callcenterrefundmethods.png)
 
 - **Luottokortti** – Kun luotu palautustilaus viittaa luottokortilla maksettuun alkuperäiseen tilaukseen, soittokeskuksen palautusmaksujen logiikka käyttää samaa alkuperäistä luottokorttia palautustilauksessa.
 - **Kanta-asiakaskortti** – Kun luotu palautustilaus viittaa kanta-asiakaskortilla maksettuun alkuperäiseen tilaukseen, soittokeskuksen palautusmaksujen logiikka kohdistaa hyvityksen samaan kanta-asiakaskorttiin.
@@ -48,7 +48,7 @@ Jos alkuperäisen tilauksen maksutyyppi on mistä tahansa syystä tuntematon tai
 
 Seuraavassa kuvassa näkyy **Maksutapa**-kenttä **RMA/Palautus**-välilehdessä **Puhelinkeskuksen parametrit** -sivulla.
 
-![Maksutapa-kenttä RMA/Palautus-välilehdessä Puhelinkeskuksen parametrit -sivulla](media/callcenterrefundparameters.png)
+![Maksutapa-kenttä RMA/Palautus-välilehdessä Puhelinkeskuksen parametrit -sivulla.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > Aiemmin kuvatut palautusten käsittelysäännöt koskevat myös tilauksia tai tilausrivejä, jotka puhelinkeskuksen käyttäjä peruuttaa Commerce Headquarters -sovelluksessa. Jos tilauksen tai tiettyjen tilausrivien peruuttaminen aiheuttaa liikamaksun, samoja sääntöjä käytetään hyvitysmaksurivien luomiseksi.
@@ -82,7 +82,7 @@ Kun korvaavan tilauksen maksut käsitellään, organisaatioilla on kaksi vaihtoe
 > [!NOTE]
 > Jos palautustilauksen korvaavaa tilausta ei ole linkitetty, **Käytä hyvitystä** -asetuksen **Kyllä**-asetuksella ei ole vaikutusta palautustilauksen maksulogiikkaan, koska tämä asetus koskee vain korvaustilauksia.
 
-![Käytä hyvitysmaksutapaa -kenttä RMA/Palautus-välilehdessä Puhelinkeskuksen parametrit -sivulla](media/callcenterrefundparameters1.png)
+![Käytä hyvitysmaksutapaa -kenttä RMA/Palautus-välilehdessä Puhelinkeskuksen parametrit -sivulla.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > Jos käyttäjät, jotka luovat korvaavat tilaukset ja käyttävät **Käytä hyvitystä** -asetusta, he eivät saa suorittaa palautustilaukselle **Valmis**-toimintoa ennen kuin **Käytä hyvitystä** -vaihtoehdon arvona on **Kyllä**. Kun **Valmis**-toiminto on suoritettu, hyvitysmaksu lasketaan ja kohdistetaan palautusmyyntitilaukseen. Jos **Käytä hyvitystä** -asetuksen arvoksi yritetään määrittää **Kyllä**, kun hyvitysmaksu on jo laskettu ja kohdistettu, hyvitysmaksun uudelleenlaskenta käynnisty, eikä **Käytä hyvitysmaksutapaa** -kentässä valittua maksutapaa käytetä. Jos tässä yhteydessä on käytettävä **Käytä hyvitystä** -asetusta, käyttäjän on poistettava korvaava tilaus ja RMA ja aloitettava sen jälkeen alusta ja luoda uusi RMA. Tällöin käyttäjän on varmistettava, että **Käytä hyvitystä** -asetuksen arvo on **Kyllä**, ennen kuin **Valmis**-toiminto suoritetaan.
@@ -91,14 +91,14 @@ Kun korvaavan tilauksen maksut käsitellään, organisaatioilla on kaksi vaihtoe
 
 Vaikka puhelukeskuksen logiikka systemaattisesti määrittää hyvitysmaksutavan aiemmin tässä ohjeaiheessa kuvatulla tavalla, käyttäjät voivat joskus haluta ohittaa nämä maksut. Käyttäjä voi esimerkiksi muokata tai poistaa aiemmin luotuja hyvitysmaksurivejä ja ottaa käyttöön uusia maksurivejä. Järjestelmän laskemia hyvitysmaksuja voivat muuttaa vain käyttäjät, joilla on oikeat ohitusoikeudet. Nämä käyttöoikeudet voidaan konfiguroida Retailin ja Commercen **Ohitusoikeudet** -sivulla. Jos haluat käyttää hyvitysmaksun ohitusta, käyttäjä on linkitettävä suojausrooliin, jossa **Salli vaihtoehtoinen maksu** -asetuksen arvo on **Kyllä** **Ohitusoikeudet**-sivulla.
 
-![Salli vaihtoehtoinen maksu -vaihtoehto Ohitusoikeudet-sivulla](media/overridepermissions.png)
+![Salli vaihtoehtoinen maksu -vaihtoehto Ohitusoikeudet-sivulla.](media/overridepermissions.png)
 
 Vaihtoehtoisesti organisaatio voi määrittää **Puhelinkeskuksen parametri** -sivun **RMA/Palautus**-välilehdessä **Salli maksun ohitus** -asetuksen arvoksi **Kyllä**. Tässä tapauksessa **Suojauksen ohituskoodi** -kentässä on valittava suojauksen ohituskoodi. Suojauksen ohituskoodi on aakkosnumeerinen koodi, jota on hallittava ulkoisesti, koska käyttäjät eivät voi tarkastella koodia Commerce Headquartersissa sen määrittämisen jälkeen. Vain muutaman organisaation luotettavan henkilön tulisi tietää suojauksen ohituskoodi. Jos **Salli maksun ohitus** -asetus on **Kyllä** ja kaikki käyttäjät, joilla ei ole oikeita roolin käyttöoikeuksia, yrittävät muuttaa palautustilauksen maksutapaa, he voivat määrittää suojauksen ohjauskoodin. Jos he eivät tiedä sitä tai esimies tai valvoja ei voi syöttää sitä sivulle, he eivät voi ohittaa palautuksen maksumenetelmää.
 
 > [!NOTE]
 > Jos suojauksen ohituskoodi häviää tai unohtuu, organisaation on palautettava koodi määrittämällä uusi suojauksen ohituskoodi **Puhelinkeskuksen parametri** -sivun **RMA/palautus**-välilehden **Suojauksen ohituskoodi** -kentässä.
 
-![Maksun ohituksen parametrit RMA/Palautus-välilehdessä Puhelinkeskuksen parametrit -sivulla](media/overridepaymentparameter.png)
+![Maksun ohituksen parametrit RMA/Palautus-välilehdessä Puhelinkeskuksen parametrit -sivulla.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Ennen kuin organisaatiot yrittävät ohittaa luottokorttimaksulajeja käyttävät hyvitysmaksut, niiden on tarkistettava, että luottokorttien käsittelijä sallii linkittämättömät palautukset. Monet käsittelijät edellyttävät, että palautukset kirjataan takaisin alkuperäiseen korttiin. Jos yrität myöntää hyvityksen kortille, jolla ei ole aiempia tapahtumia, tämä voi aiheuttaa kirjausvirheitä käsittelijässä.

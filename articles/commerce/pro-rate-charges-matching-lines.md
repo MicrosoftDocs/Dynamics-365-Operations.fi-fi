@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018603"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352177"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
 
@@ -56,9 +56,9 @@ Tämä skenaario havainnollistaa, mitä tapahtuu, kun automaattisten kulujen ase
 
 Tässä skenaariossa organisaatio on määrittänyt toimitustapasuhteiden **99** ja **11** otsikkotason kulut. Toimitustavalle **21** ei ole määritetty automaattisia kuluja.
 
-![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä](media/99_disabled.png)
+![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä.](media/99_disabled.png)
 
-![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä](media/11_disabled.png)
+![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä.](media/11_disabled.png)
 
 Myyntitilaus luodaan puhelinkeskuksessa ja toimitustavaksi määritetään **99**. Tässä tilauksessa on viisi nimikettä. Kaksi tilausriviä on määritetty käyttämään toimitustapaa **99**, kaksi riviä toimitustapaa **11** ja yksi rivi toimitustapaa **21** (katso seuraava taulukko).
 
@@ -78,9 +78,9 @@ Jos asiakas palauttaa tässä skenaariossa joitakin tilauksen nimikkeitä ja jos
 
 Tässä skenaariossa on määritetty toimitustapasuhteiden **99** ja **11** otsikkotason kulut. Näiden automaattisten kulutaulukkojen **Jaa suhteellisesti vastaaville myyntiriveille** -asetukseksi on määritetty **Kyllä**.
 
-![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön](media/99_enabled.png)
+![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön.](media/99_enabled.png)
 
-![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön](media/11_enabled.png)
+![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön.](media/11_enabled.png)
 
 Tässä skenaariossa käytetään samaa viisi riviä sisältävää myyntiriviä. Vaikka tilauksen otsikon toimitustavaksi määritetään **99**, myyntilauksen kunkin rivin toimitustapa määritetään seuraavaan taulukon mukaisesti.
 
@@ -130,9 +130,9 @@ Koska automaattinen kulumääritys on määritetty jaettavaksi suhteellisesti va
     - Tuotteen kokonaisarvo = 15 $
     - **Kulujen arvo = 0 $** (tälle asiakas- ja toimitustapayhdistelmälle ei ole määritetty automaattisia kuluja)
 
-    ![Toimitustavan 11 kulut menevät korostettuun tasoon](media/step2mode11.png)
+    ![Toimitustavan 11 kulut menevät korostettuun tasoon.](media/step2mode11.png)
 
-    ![Toimitustavan 99 kulut menevät korostettuun tasoon](media/step2mode99.png)
+    ![Toimitustavan 99 kulut menevät korostettuun tasoon.](media/step2mode99.png)
 
 3. Järjestelmä laskee kullakin rivillä käytettävän kulujen arvon sellaisen suhteelliseen jaon logiikan mukaan, joka ottaa huomion rivin suhteellisen arvon suhteessa ryhmän tuotteen kokonaisarvoon.
 
@@ -163,7 +163,7 @@ Koska automaattinen kulumääritys on määritetty jaettavaksi suhteellisesti va
 
 Tämän vuoksi tässä esimerkissä nimikkeelle 81334 määritetään rahtikuluksi 5,62 $. Voit tarkastella näitä kuluja myyntirivin **Kulujen ylläpito** -sivulla. Seuraava kuva osoittaa, miltä kyseinen sivu näyttää nimikkeelle 81334.
 
-![Nimikkeen 81334 myyntirivin suhteellisesti jaetut kulut](media/proratedlinecharge.png)
+![Nimikkeen 81334 myyntirivin suhteellisesti jaetut kulut.](media/proratedlinecharge.png)
 
 Kun tätä laskentamenetelmää käytetään osittaisen palautuksen skenaariossa, jossa kulukoodi on palautettavissa, vain osa kyseiselle riville kohdistetusta kulusta palautetaan nimikkeen palautuksen yhteydessä.
 

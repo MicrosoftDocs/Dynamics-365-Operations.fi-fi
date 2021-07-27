@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 742d49b1b7b46952d0a8bb6c8a33cde2a35d124f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1abcc4befd1277d7f08d3dfa89cb76b0ee4a6178
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791699"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354562"
 ---
 # <a name="configure-task-management"></a>Tehtävien hallinnan määrittäminen
 
@@ -44,7 +44,7 @@ Voit määrittää myymäläpäälliköiden tehtävienhallinnan käyttöoikeudet
 
 Seuraavassa kuvassa näkyy, miten myymäläpäälliköiden tehtävienhallinnan käyttöoikeudet määritetään.
 
-![Myymäläpäälliköiden tehtävienhallinnan käyttöoikeuksien määrittäminen](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Myymäläpäälliköiden tehtävienhallinnan käyttöoikeuksien määrittäminen.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Työntekijöiden käyttöoikeuksien määrittäminen
 
@@ -78,7 +78,7 @@ Voit määrittää myyntipisteen ilmoitukset tehtäville seuraavasti.
 
 Seuraavassa kuvassa on **Tehtävienhallinta**-toiminto **Myyntipistetoiminnot**-sivulla.
 
-![Tehtävienhallintatoiminto Myyntipistetoiminnot-sivulla](media/HQ-POS-Tasks-Notifications.png)
+![Tehtävienhallintatoiminto Myyntipistetoiminnot-sivulla.](media/HQ-POS-Tasks-Notifications.png)
 
 Lisärtietoja myyntipisteen ilmoitusten määrittämisestä on kohdassa [Tilausilmoitusten näyttäminen myyntipisteessä](notifications-pos.md).
 
@@ -95,7 +95,7 @@ Määritä **Tehtävät**-ruutu myyntipistesovelluksen aloitussivulla seuraavast
 
 Seuraavassa kuvassa on esimerkki **Tehtävät**-ruudusta myyntipisteen aloitussivulla.
 
-![Myyntipisteen aloitussivun Tehtävät-ruutu](media/POS-home-screen-tasks-button-image.png)
+![Myyntipisteen aloitussivun Tehtävät-ruutu.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

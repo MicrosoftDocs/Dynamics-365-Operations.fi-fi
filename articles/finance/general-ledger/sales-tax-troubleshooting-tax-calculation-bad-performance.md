@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6fce4e2cb8c5507769533a875e23ccc4531abf51
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2bb1f22c33de52f9a7bc00b450ce131d4d58d200
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020136"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352831"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>Verolaskennan suorituskyky vaikuttaa tapahtumiin
 
@@ -36,7 +36,7 @@ Seuraavaksi voit määrittää, täyttyykö jokin seuraavista ehdoista:
 - Useat istunnot käsittelevät saman tapahtumaveron laskennan samanaikaisesti.
 - Tapahtumalla on useita rivejä, ja näkymät päivitetään reaaliaikaisesti. Esimerkiksi **Kirjauskansio**-sivun **Laskettu arvonlisäverosumma** -kenttä päivitetään reaaliaikaisesti, kun rivin kenttiä muutetaan.
 
-   [![Laskettu arvonlisäveron summa -kenttä kirjauskansion tositesivulla](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Laskettu arvonlisäveron summa -kenttä kirjauskansion tositesivulla.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 Jos jokin näistä ehdoista täyttyy, viivytä veron laskentaa.
 
@@ -53,11 +53,11 @@ Tarkista kutsupinon aikajana ja määritä, esiintyykö seuraavia ongelmia. Jos 
 
 - Tapahtuma aiheuttaa järjestelmän lopettavan vastaamisen, kunnes istunto päättyy. Näin ollen tapahtuma ei voi laskea veron tulosta. Seuraavassa kuvassa näkyy vastaanottamasi Istunto päättynyt -sanomaruutu.
 
-    [![Istunto päättynyt -sanoma](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![Istunto päättynyt -sanoma.](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
 - **TaxUncommitted**-menetelmät vievät enemmän aikaa kuin muut menetelmät. Esimerkiksi seuraavassa kuvassa **TaxUncommitted::updateTaxUncommitted()**-menetelmä kestää 43,347.42 sekuntia, mutta muiden menetelmien käyttö kestää 0,09 sekuntia.
 
-    [![Menetelmän kestot](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![Menetelmän kestot.](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## <a name="customizing-and-calling-tax-calculation"></a>Veron laskennan mukauttaminen ja kutsuminen
 
