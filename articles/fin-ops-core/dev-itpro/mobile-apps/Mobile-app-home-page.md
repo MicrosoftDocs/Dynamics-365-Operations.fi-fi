@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: e13e99515d52e1e24970908a106ae99a7e8b0d80
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188407"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360813"
 ---
 # <a name="mobile-app-home-page"></a>Mobiilisovelluksen aloitussivu
 
@@ -39,7 +39,7 @@ Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää 
 ## <a name="elements-of-the-mobile-app"></a>Mobiilisovelluksen osat
 Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, työtilat, sivut ja toiminnot. 
 
-[![Mobiilisovelluksen siirtymiskonseptit](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Mobiilisovelluksen siirtymiskonseptit.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. **Koontinäyttö** aukea, kun sovellus käynnistetään.
 2. Koontinäytössä on luettelo julkaistuista **työtiloista**.
@@ -53,7 +53,7 @@ Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, ty�
 ## <a name="implementation-process"></a>Käyttöönottoprosessi
 Seuraavassa kuvassa on esitys Microsoftin toimittamien mobiilityötilojen ja mukautettujen mobiilityötilojen käyttöönottamisesta. 
 
-[![Mobiilisovellusten käyttöönottoprosessi](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Mobiilisovellusten käyttöönottoprosessi.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käyttöön sekä Microsoftin tarjoamia mobiilityötiloja että mukautettuja mobiilityötiloja. Ensimmäisen sarakkeen numerot vastaavat edellisessä kuvassa esitettyjä vaiheita.
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e066deedcdb02237d6f492047e19100255dab84e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bd33158514de149ecc7da5823c799dd567aeee13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795546"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357831"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Modern POS:n (MPOS) kuvien määrittäminen ja hallinta
 
@@ -46,11 +46,11 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
 1. Avaa Commerce HQ -portaali.
 2. Valitse **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Kanavaprofiilit**.
 
-    [![Siirtyminen](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Siirtyminen.](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. Päivitä myymäläsi MPOS:lle käyttämässä kanavaprofiilissa mediapalvelimesi tai CDN:si URL-perusosoite **Median URL-perusosoite** -kenttään. URL-perusosoite on ensimmäinen osa URL-osoitetta, jonka kaikki eri yksiköiden kuvakansiot jakavat.
 
-    [![Kanavaprofiilit-sivu](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Kanavaprofiilit-sivu.](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Määritä yksikön mediamalli
 
@@ -68,7 +68,7 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
 8. Suorita synkronointityöt uuden mallin siirtämiseen kanavan tietokantaan niin, että MPOS voi käyttää näitä kuvia mallia avulla.
 9. Kun päivität luettelokuvien mediamallin kanavapuolella, huolehdi siitä, että suoritat **Luettelotyö 1150:n** kohdassa **Retail ja Commerce IT** &gt; **Jakeluaikataulu**.
 
-    [![Mediamallin määrittäminen -valintaikkuna](./media/catalog1.png)](./media/catalog1.png)
+    [![Mediamallin määrittäminen -valintaikkuna.](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Kuvan esikatselu yksikkötasolla
 
@@ -77,7 +77,7 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
 3. Voit käyttää **Lisää** ja **Poista**-painikkeita muuttaaksesi manuaalisesti polun, joka perustuu implisiittiseen malliin ja jota käytetään määrätylle kuvalle. Lisätietoja jäljempänä tässä artikkelissa kohdassa [Yksikkönimikkeiden mediamallien korvaaminen](#overwriting-the-media-template-for-entity-items).
 4. Kun olet lopettanut kuvan esikatselun ja tarvitsemiesi muutosten tekemisen, aloita kyseisen myymälän MPOS-esiintymä ja katso, ovatko luettelokuvat näkyvissä.
 
-    [![Kuvat-valintaikkuna](./media/catalog4.png)](./media/catalog4.png)
+    [![Kuvat-valintaikkuna.](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Voit käyttää samaa menettelyä kaikille viidelle tuetulle yksikölle: Työntekijä, Asiakas, Luettelo, Luokka, ja Tuotteet. "Luettelotuotteet" (tuotteet, jotka määritetään luettelotasolla) ja "Kanavatuotteet" (tuotteet, jotka määritetään kanavatasolla) käyttävät Tuotteet-yksikölle määritettyä mediamallia. Tuotteet-mediamallissa voit valita näytettävien tuotekuvien määrän tuotekohtaisesti. Voit myös määrittää tuotteen oletuskuvan. Näin voit estää tyhjät kuvat MPOS:ssa ja hallita, mitä kuvia käytetään tuotenimikkeen oletuskuvana. Seuraavassa esimerkissä kullakin tuotteella on viisi kuvaa, ja ensimmäinen kuva määritetään oletuskuvaksi. Tuotevariantteja käsitellään samalla tavoin kuin päätuotteita. Kuvatiedostojen tiedostonimien tulee perustua tuotenumeroihin. Joitain merkkejä myös ohitetaan tiedostonimeä luotaessa. Tiedostonimi tulisi siksi tarkistaa käyttämällä **Luo kuvien URL-osoitteet Exceliin** -osiota. Katso kohta [Korvaa käyttämällä Muokkaa Excelissä -toimintoa](#overwrite-by-using-edit-in-excel) jäljempänä tässä artikkelissa.
@@ -108,7 +108,7 @@ Kuten opit edellisessä kohdassa, tietyn yksikön mediamalli tukee vain yhtä yh
 
     Voit nyt esikatsella viimeisen tallennetun mediamallin perusteella luotuja kuvien URL-osoitteita.
 
-    [![Luo kuvien URL-osoitteet Excel -pikavälilehdelle, kun Luo on valittu](./media/excel2.png)](./media/excel2.png)
+    [![Luo kuvien URL-osoitteet Excel -pikavälilehdelle, kun Luo on valittu.](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > Exceliin luodut URL-osoitteet käyttävät määritetyn mediamallin polkua ja käytäntöjä. Näihin käytäntöihin sisältyy tiedostonimiä koskevat käytännöt. Odotus on, että olet määrittänyt fyysiset kuvat Commercen ulkopuolella ja kuvat voidaan noutaa URL-osoitteista, jotka on johdettu aiemmin määrittämästäsi mediamallista. Voit korvata nämä johdetut URL-osoitteet Muokkaa Excelissä -toiminnon avulla.
@@ -117,17 +117,17 @@ Kuten opit edellisessä kohdassa, tietyn yksikön mediamalli tukee vain yhtä yh
 6. Kun Microsoft Excel -laskentataulukko avautuu, valitse pyydettäessä **Ota muokkaus käyttöön**.
 7. Kun saat tätä koskevan kehotuksen, napsauta **Luota tähän lisäosaan** oikeanpuoleisessa ruudussa ja odota lisäosan latautumisen valmistumista.
 
-    [![Luota tähän lisäosaan](./media/excel4.jpg)](./media/excel4.jpg)
+    [![Luota tähän lisäosaan.](./media/excel4.jpg)](./media/excel4.jpg)
 
 8. Jos saat kehotuksen kirjautua sisään, syötä tunnistetiedot, joita käytit kirjautuessasi pääkonttoriin.
 
-    [![Kirjautumiskehote](./media/excel5.png)](./media/excel5.png)
+    [![Kirjautumiskehote.](./media/excel5.png)](./media/excel5.png)
 
 9. Kun olet kirjautunut sisään, sinun pitäisi pystyä näkemään eri luettelonimikkeiden kuvien URL-osoitteiden luettelon.
 10. Voit muokata, lisätä tai poistaa eri yksikkönimikkeiden kuvien URL-osoitteita.
 11. Voit korvata kaikkien muiden yksiköiden kuvien URL-osoitteet paitsi Tuotteiden. Muokkaa olemassa olevaa kuvan URL-osoitetta niin, että se käyttää uutta kuvan kohde-URL:ää ja päivitä kuvatiedoston tiedostonimeksi uusi tiedostonimi. Tiedostonimien on oltava yksilöivä sen varmistamiseksi, että tietue on yksilöllinen.
 
-    [![Kuvien URL-osoitteiden korvaaminen Excelissä](./media/excel6.jpg)](./media/excel6.jpg)
+    [![Kuvien URL-osoitteiden korvaaminen Excelissä.](./media/excel6.jpg)](./media/excel6.jpg)
 
     > [!NOTE]
     > Kun korvaat Tuotteet-yksiköiden kuvien URL-osoitteita yksikkönimikkeen sivulla olevan Muokkaa Excelissä -toiminnon avulla, MPOS näyttää aina kaikki mediamallin kuvien URL-osoitteet sekä korvatut kuvien URL-osoitteet.
@@ -153,11 +153,11 @@ Lukuun ottamatta Tuote-yksiköitä, voit korvata tietyn yksikkönimikkeen kuvan 
 3. Jos haluat, että tämä kuva näytetään luettelolle MPOS:ssa, voit määrittää sen oletuskuvaksi.
 4. Napsauta **OK**. Kuvan URL-osoite päivitetään tämän luettelokuvan osalta ja näytetään kuvan esikatselu.
 
-    [![Uusi kuva -valintaikkunassa päivitetty URL-osoite](./media/preview3.png)](./media/preview3.png)
+    [![Uusi kuva -valintaikkunassa päivitetty URL-osoite.](./media/preview3.png)](./media/preview3.png)
 
 5. Voit myös esikatsella kaikkien korvattujen kuvien URL-osoitteiden kuvat **Luettelokuvat**-galleriasivulla.
 
-    [![Luettelokuvat-galleriasivu](./media/preview-4.png)](./media/preview-4.png)
+    [![Luettelokuvat-galleriasivu.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > Valikoima ei tällä hetkellä näytä kuvien esikatselua mediamallin kuvien URL-osoitteille. Luettelo-, Työntekijä-, Asiakas-, ja Luokka- yksiköiden ollessa kyseessä, jos käyttäjä antaa eksplisiittisesti URL-osoitteen tällä sivulla, suosittelemme, että ilmaiset, mikä kuva on oletuskuva, koska Commerce Scale Unitin työasemat näyttävät vain yhden kuvan kullekin Luettelolle, Asiakkaalle, Työntekijälle ja Luokalle. Jos käyttäjä ei määritä oletuskuvaa, järjestelmä määrittää oletuskuvan ja lähettää sen Commercen palvelinkutsujalle (MPOS tai Ecommerce).
@@ -172,7 +172,7 @@ Jos haluat korvata kuvien URL-osoitteet luetteloiden tuotekuville, sinun on käy
 4. Valitse **Lisää** ja korvaa kuvan URL-osoite uudella URL-osoitteella.
 5. Napsauta **OK**. Näet nyt uuden kuvan esikatselun ja voit määrittää sen oletuskuvaksi.
 
-    [![Uusi kuva -valintaikkunassa kuvan esikatselu](./media/cat3.png)](./media/cat3.png)
+    [![Uusi kuva -valintaikkunassa kuvan esikatselu.](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > Luokan kuvaliitoksen tekemisen jälkeen sinun on julkaistava kanava ja suoritettava Kanava-työ sen varmistamiseksi, että muutokset julkaistaan kanavan tietokannassa.
@@ -193,7 +193,7 @@ Tuotekuvat, joita on käytettävä offline-tilassa, voidaan määrittää lataam
 6. Kun MPOS on online-tilassa, suorita Luettelo-työ pääkonttorissa varmistaaksesi, että tiedot lähetetään ainakin kerran offline-tietokantaan.
 7. Aseta MPOS offline-tilaan. Sinun pitäisi nähdä tietylle tuotteelle lataamasi kuva pääkonttorissa.
 
-    [![Tuotteen kuva offline-tilassa](./media/offline1.png)](./media/offline1.png)
+    [![Tuotteen kuva offline-tilassa.](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Luettelo-, luokka-, työntekijä- ja asiakaskuvien määrittäminen näkymään MPOS:n offline-tilassa
 
@@ -205,7 +205,7 @@ Luettelo-, luokka-, työntekijä- ja asiakaskuvat, joita on käytettävä offlin
 4. Suorita Luettelo-työ. Tätä kuvaa käytetään nyt kyseisen luettelon offline-kuvana MPOS:ssa.
 5. Noudata samaa prosessia muille yksiköille, kuten Luokka, Työntekijä ja Asiakas.
 
-    [![Offline-kuva](./media/offline2.png)](./media/offline2.png)
+    [![Offline-kuva.](./media/offline2.png)](./media/offline2.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

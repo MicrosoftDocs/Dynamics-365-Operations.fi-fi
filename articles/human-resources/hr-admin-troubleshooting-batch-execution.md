@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: Platform update 42
-ms.openlocfilehash: d0b12908993070a41d21ac57d6fb504fc6e3b06a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f236f861434eb2eaa26eab92e25a0b83a8026972
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053512"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357334"
 ---
 # <a name="reset-stuck-batch-jobs"></a>Jumittuneiden erätöiden nollaaminen
 
@@ -46,11 +46,11 @@ Kun erätyöt ovat jumiutuneet **Suoritetaan**- tai **Peruutetaan**-tilaan, voit
 
 5. Valitse **Valitse uusi tila** -sivulla **Odottaa** ja valitse sitten **OK**.
 
-   ![Uuden erätyön tilan valinta](./media/hr-admin-reset-batch-job-status.png)
+   ![Uuden erätyön tilan valinta.](./media/hr-admin-reset-batch-job-status.png)
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Optimoi suorituskyky erätöiden määrityksellä työajan jälkeen](hr-admin-troubleshooting-batch-jobs.md)<br>
+[Suorituskyvyn optimointi erätöiden määrityksellä työajan jälkeen](hr-admin-troubleshooting-batch-jobs.md)<br>
 [Optimoi suorituskyky automaattisilla tyhjennystehtävillä](hr-admin-troubleshooting-batch-history.md)
 
 

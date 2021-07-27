@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187913"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355697"
 ---
 # <a name="budgeting-home-page"></a>Budjetoinnin aloitussivu
 
@@ -32,7 +34,7 @@ Tässä aiheessa käsitellään yleisesti budjetointitoimintojen osia, budjetoin
 
 Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelu-, budjetointi- ja ennustetehtävistä.
 
-[![Budjetointitoimintojen osat](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Budjetointitoimintojen osat.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin suunnittelun prosesseja tuetaan budjettisuunnitelman avulla. Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin. Käyttäjien määrittämien rahallisten ja määrällisten skenaarioiden määrää ei rajoiteta. Käyttäjät voivat myös määrittää budjetoinnin organisaatiohierarkian tukemaan sekä ylhäältä alaspäin että alhaalta ylöspäin suuntautuvia budjetointimenetelmiä. Kun budjetti on laadittu ja hyväksytty sovelluksessa, voit muuntaa budjettisuunnitelman budjettirekisteritapahtumaksi. Budjettirekisteritapahtumat tarjoavat työkaluja budjetin ylläpitämiseen ja summien jäljittämiseen budjettikoodien avulla. Budjettirekisteritapahtumien avulla voit korjata alkuperäisiä budjetteja, suorittaa siirtoja ja tehdä budjettisummien siirtokirjauksia edelliseltä vuodelta. Yritys voi ottaa muodostettuun budjettiin perustuvan budjetin hallinnan käyttöön. Hallinnan taso määräytyy organisaatiokulttuurin ja organisaation kypsyystason mukaan. Alhaisen kypsyystason organisaatiot voivat antaa budjetin olla koskemattomana, ja ne ehkä enemminkin reagoivat kuin toimivat ennakoivasti, jos budjetti ei vastaa odotuksia. Toiset organisaatiot voivat ottaa käyttöön budjetin hallintakäytännöt, jotka estävät käyttäjien ostot, jos budjettirahoitusta ei ole.
 
@@ -46,7 +48,7 @@ Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaati
 -   [Excelin budjettisuunnittelumallit](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budjetointityökalut
-[![Budjetointityökalut](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budjetointityökalut.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Käytettävissä on suunnittelu- ja budjetointitoimintoja, jotka on integroitu kirjanpitobudjetteihin.
 

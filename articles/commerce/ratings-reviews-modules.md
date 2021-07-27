@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 27e52a94208129aee0e33074e7fc3778de53733a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193279"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355826"
 ---
 # <a name="ratings-and-reviews-modules"></a>Luokitusten ja arvosteluiden moduulit
 
@@ -42,20 +42,20 @@ Kolme moduulia näyttävät luokitukset ja arvostelut PDP-sivujen yhteenvedoissa
  
 Seuraavassa kuvassa näytetään, miltä luokitusten ja arvosteluiden moduulit näyttävät PDP-sivulla.
 
-![Luokitusten ja arvosteluiden moduulit PDP-sivulla](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Luokitusten ja arvosteluiden moduulit PDP-sivulla.](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > Lisätietoja PDP-mallien ja -asettelujen optimoimisesta niin, että voit jakaa luokitusten ja arvosteluiden moduulien määritykset useiden PDP-sivujen kanssa sähköisen kaupankäynnin sivustossa, on kohdassa [Mallien ja asettelujen yleiskatsaus](templates-layouts-overview.md).
 
 Seuraavassa kuvassa on tietoja siitä, miten **Lisää moduuli** -valintaikkuna esittää luokitusten ja arvosteluiden moduulit Dynamics 365 Commerce -sovelluksessa.
-![Lisää moduuli -valintaikkuna](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![Lisää moduuli -valintaikkuna.](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>Kirjoita arvostelu -moduuli
 
 Kirjoita arvostelu -moduuli sisältää **Kirjoita arvostelu** -painikkeen, jonka avulla käyttäjät voivat kirjautua sisään, määrittää luokituksen ja kirjoittaa tuotetta koskevan arvostelun. Tämän moduulin avulla käyttäjät voivat myös muokata aiemmin lähettämiään luokituksia ja arvosteluita. Tämä moduuli näkyy yleensä luokitusten histogrammi -ja tuotearvosteluluettelomoduulien yläpuolella PDP-sivulla.
 Seuraavassa kuvassa on **Kirjoita arvostelu** -valintaikkuna, joka näkyy, kun asiakas valitsee **Kirjoita arvostelu** -kohdan. Asiakas voi tämän valintaikkunan avulla lähettää luokituksen ja arvostelun.
 
-![Kirjoita arvostelu -valintaikkuna](media/rnr-eCommerce-write-review-module.png)
+![Kirjoita arvostelu -valintaikkuna.](media/rnr-eCommerce-write-review-module.png)
 
 Seuraavassa taulukossa on Kirjoita arvostelu -moduulin ominaisuus, joka on määritettävä muokkaustyökalussa.
 
@@ -67,7 +67,7 @@ Seuraavassa taulukossa on Kirjoita arvostelu -moduulin ominaisuus, joka on mää
 
 Luokitusten histogrammin moduulissa on luokitusten histogrammi. Tämä moduuli tulee yleensä näkyviin Kirjoita arvostelu -moduulin ja tuotearvosteluluettelomoduulin väliin PDP-sivulla.
 Luokitusten histogrammin moduulia ei tarvitse määrittää. Moduuli on ainoastaan lisättävä PDP-malliin. Seuraavissa kuvissa näkyy, miltä PDP-malli näyttää Dynamics 365 Commerce -sovelluksessa, kun luokitusten ja arvostelujen moduulit on määritetty näytettäväksi PDP-sivuilla.
-![PDP-malli, kun luokitukset ja arvostelut on määritetty näytettäväksi PDP-sivuilla](media/rnr-eCommerce-pdp-reviews-modules.png)
+![PDP-malli, kun luokitukset ja arvostelut on määritetty näytettäväksi PDP-sivuilla.](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### <a name="product-reviews-list-module"></a>Tuotearvosteluluettelomoduuli
 
@@ -82,7 +82,7 @@ Seuraavassa taulukossa on tuotearvosteluluettelomoduulin ominaisuudet, jotka on 
 
 Tuotearvosteluluettelomoduuli sisältää paikan, jossa voit lisätä luokitusten histogrammin moduulin. Seuraavassa kuvassa näkyy, miten voit lisätä luokitusten histogrammin moduulin tuotearvosteluluettelomoduuliin Dynamics 365 Commerce -sovelluksessa.
 
-![Luokitusten histogrammin moduulin lisääminen tuotearvosteluluettelomoduuliin](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![Luokitusten histogrammin moduulin lisääminen tuotearvosteluluettelomoduuliin.](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

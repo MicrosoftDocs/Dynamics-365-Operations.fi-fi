@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814775"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360895"
 ---
 # <a name="phantom-items"></a>Haamunimikkeet
 
@@ -27,12 +27,12 @@ ms.locfileid: "5814775"
 
 Tässä ohjeaiheessa kuvataan yksityiskohtaisesti, miten haamurivityyppiä voidaan käyttää tuoterakenteen (BOM) riveillä ja lomakkeessa. Seuraavassa kuvassa (a) on tuotteen H sekä osien F ja G tuoterakenne ja (b) on tuotteen H ja osan F reititystaulukko.
 
-![Tuote H ja osa F](media/product-H-part-F.png)
+![Tuote H ja osa F.](media/product-H-part-F.png)
 
 
 Tässä kuvassa näytetään esimerkki tuoterakenteesta kahdella tasolla. Lopputuote H vastaa koneen kokoonpanon tuotetta. Koneen kokoonpanossa on kaksi osaa: sähköinen yksikkö (F), jossa on kaksi materiaalia (A ja B), ja pakkausmateriaalien ryhmä (G), jossa on myös kaksi materiaalia (C ja D). Toista materiaalia (E) käytetään koneen yleisen kokoonpanon aikana.
 
-![Tuote H ja osa F](media/product-H-part-B.png)
+![Tuote H ja osa F.](media/product-H-part-B.png)
 
 Edellinen kuva edustaa tuotteen H tuotannon tuoterakennetta. Tämä rakenne antaa hyvän yleiskatsauksen koko koneen kokoonpanon osista ja komponenteista. Vaikka tuotesuunnittelijat haluavatkin ehkä mieluummin nähdä tuoterakenteen edustettuna tällä tavoin, rakenne ei välttämättä vastaa oikein sitä tapaa, jolla kone rakennetaan työnohjauksessa. 
 
@@ -53,23 +53,23 @@ Siirtyminen tuotannon tuoterakenteen ja valmistuksen tuoterakenteen välillä on
 ## <a name="multilevel-phantom-bom-structures"></a>Monitasoiset haamutuoterakenteet
 Haamurivityyppiä voidaan käyttää monitasoisissa tuoterakenteissa seuraavassa kuvassa näytetyn mukaisesti. Tässä kuvassa (a) on tuotteen H tuoterakenne ja (b) on osien E ja F sekä tuotteen G reititystaulukko. 
 
-![Tuote G ja osa F reititystaulukoiden kanssa](media/product-G-route-sheet-G.png)
+![Tuote G ja osa F reititystaulukoiden kanssa.](media/product-G-route-sheet-G.png)
 
 
 Seuraavassa kuvassa näytetään tuloksena saatu valmistuksen tuoterakenne ja reititystaulukko, jos osien E ja F tuoterakennerivit määritetään siten, että rivityyppinä on haamu. Tässä kuvassa (a) on tuotteen G tuoterakenne ja (b) on tuotteen G reititystaulukko.
 
-![Tuote G](media/product-G.png)
+![Tuote G.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Haamu ja reititysverkko
 Haamutuoterakenteita voidaan käyttää myös tuoterakenteelle, jossa on reititysverkko. Reititysverkossa yksi tai useampi toiminto suoritetaan samanaikaisesti. Seuraavassa kuvassa näytetään esimerkki reititysverkosta, jota käytetään monitasoisessa tuoterakenteessa. Tässä kuvassa (a) on tuotteen G ja osan F tuoterakenne ja (b) on tuotteen G ja osan F reititystaulukko, jossa on reititysverkko.
 
-![Tuote G ja osa F](media/product-G-part-F.png)
+![Tuote G ja osa F.](media/product-G-part-F.png)
 
 
 Seuraavassa kuvassa (a) on tuotteen G ja osan F tuoterakenne ja (b) on tuotteen G ja osan F reititystaulukko.
 
-![Tuote G ja osa F reititystaulukoiden kanssa](media/product-G-part-F-with-route-sheet.png)
+![Tuote G ja osa F reititystaulukoiden kanssa.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347779"
 ---
 # <a name="revenue-recognition-bundles"></a>Tuottokirjauksen myyntirakenteet
 
@@ -59,15 +59,15 @@ Komponenttinimikkeille on määritetty seuraavat perusmyyntihinnat:
 
 Myyntitilaus syötetään asiakkaalle US-004, Cave Wholesales. Ainoa syötettävä rivi on Kannettava tietokone ‑myyntirakennenimikkeen rivi. Päärivin oletusyksikköhinta voidaan ottaa useasta eri paikasta, kuten kauppasopimuksesta tai perusmyyntihinnasta. Tässä esimerkissä yksikköhinnaksi syötettiin manuaalisesti 2 300 $.
 
-[![Kannettava tietokone ‑myyntirakennenimike myyntitilauksessa](./media/bundle-01.png)](./media/bundle-01.png)
+[![Kannettava tietokone ‑myyntirakennenimike myyntitilauksessa.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Koska myyntitilauksessa on myyntirakenne, se on vahvistettava. Vahvistusvalintaikkunassa näkyvät myyntirakenteen komponentit.
 
-[![Vahvista myyntitilaus ‑valintaikkuna, jossa näkyvät komponenttinimikkeet](./media/bundle-02.png)](./media/bundle-02.png)
+[![Vahvista myyntitilaus ‑valintaikkuna, jossa näkyvät komponenttinimikkeet.](./media/bundle-02.png)](./media/bundle-02.png)
 
 Tulostetussa vahvistusraportissa näkyy kuitenkin vain myyntirakenteen päänimike, koska raportti on ulospäin asiakkaalle näkyvä asiakirja.
 
-[![Vahvistusraportti, jossa näkyy vain päänimike](./media/bundle-03.png)](./media/bundle-03.png)
+[![Vahvistusraportti, jossa näkyy vain päänimike.](./media/bundle-03.png)](./media/bundle-03.png)
 
 Kun myyntitilaus on vahvistettu, päänimike näkyy edelleen myyntitilauksessa, mutta sen tilaksi on muutettu **Peruutettu**. Lisäksi nettosummaa seurataan **Myyntirakenteen nettosumma** ‑kentässä. Tämä summa tarvitaan laskun tulostamiseen, koska laskussa näkyy päänimike, eikä komponenttinimikkeitä.
 
@@ -85,7 +85,7 @@ Komponenttien summan on oltava 2 300 $, kuten se onkin (1 713,73 $ + 450,98 
 
 Jos kaikkiin komponenttinimikkeisiin on tarpeen tehdä muutoksia, päänimike voidaan poistaa. Tässä tapauksessa myös komponenttinimikkeet poistetaan. Päänimike voidaan sitten lisätä uudelleen ja tarvittavat muokkaukset voidaan tehdä, ennen kuin myyntitilaus vahvistetaan.
 
-[![Myyntirakennenimike, joka sisältää komponenttinimikkeiden muutokset](./media/bundle-04.png)](./media/bundle-04.png)
+[![Myyntirakennenimike, joka sisältää komponenttinimikkeiden muutokset.](./media/bundle-04.png)](./media/bundle-04.png)
 
 Kun myyntitilaus kerätään ja pakataan, asiakirjoihin sisältyvät vain myyntirakenteen komponentit. Pakkausluettelon ja laskun on sisällettävä kokonainen myyntirakenne. Muussa tapauksessa niitä ei voi kirjata. Tarkastellaan esimerkkiä, jossa valintaikkunassa näkyy komponenttinimikettä. Jos yrität poistaa yhden niistä, saat virhesanoman, jonka mukaan kaikki myyntirakenteen tuotteet on lähetettävä, ennen kuin ne voidaan laskuttaa.
 
@@ -95,19 +95,19 @@ Osasumman voi lähettää ja laskuttaa vain, jos kaikkien myyntirakenteen kompon
 
 Viimeinen vaihe on myyntitilauksen laskuttaminen. Laskutuksen aikana laskuvalintaikkunassa näkyvät komponenttinimikkeet.
 
-[![Laskuvalintaikkuna, jossa näkyvät komponenttinimikkeet](./media/bundle-06.png)](./media/bundle-06.png)
+[![Laskuvalintaikkuna, jossa näkyvät komponenttinimikkeet.](./media/bundle-06.png)](./media/bundle-06.png)
 
 Tulostetussa laskussa näkyy kuitenkin vain päänimike.
  
-[![Tulostettu lasku, jossa näkyy vain päänimike](./media/bundle-07.png)](./media/bundle-07.png)
+[![Tulostettu lasku, jossa näkyy vain päänimike.](./media/bundle-07.png)](./media/bundle-07.png)
 
 Kirjauksen jälkeen luotu laskukirjauskansio ei sisällä päänimikettä myyntirakenteesta, koska nimikkeen tila on **Peruutettu**.
 
-[![Laskukirjauskansio, joka ei sisällä päänimikettä](./media/bundle-08.png)](./media/bundle-08.png)
+[![Laskukirjauskansio, joka ei sisällä päänimikettä.](./media/bundle-08.png)](./media/bundle-08.png)
 
 On tärkeää, ettei laskukirjauskansioon sisällytetä päänimikettä myyntirakenteesta, koska kaikki laskun kirjaamisen jälkeen suoritettavat prosessit perustuvat tähän laskukirjauskansioon. Jos esimerkiksi luot hyvityslaskun toimintoruudun **Myynti**-välilehdessä, luotava hyvityslasku sisältää komponenttinimikkeet, mutta ei päänimikettä.
 
-[![Hyvityslasku, jossa näkyvät komponenttinimikkeet mutta ei päänimike](./media/bundle-09.png)](./media/bundle-09.png)
+[![Hyvityslasku, jossa näkyvissä ovat komponenttinimikkeet ilman päänimikettä.](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

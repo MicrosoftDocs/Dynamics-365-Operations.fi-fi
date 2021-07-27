@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361210"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-määritysten luominen Regulatory Configuration Servicesissä (RCS) ja niiden lataaminen yleiseen säilöön
 
@@ -51,7 +51,7 @@ Jos yritykseen on valmisteltu RCS-ympäristö, siirry siihen sivun URL-osoitteen
 5. Anna nimi ja kuvaus ja luo sitten uusi johdettu versio valitsemalla **Luo konfiguraatio**.
 6. Valitse juuri johdettu konfiguraatio, lisää version kuvaus ja valitse **OK**. Konfiguraation tila muuttuu ja uusi tila on **Valmis**.
 
-![Uusi RCS:n määritysversio](media/RCS_CompleteConfig.JPG)
+![Uusi RCS:n määritysversio.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Kun määrityksen tila on muuttuu, yhdistettyihin sovelluksiin liittyvä tarkistusvirhesanoma voi tulla näkyviin. Tarkistuksen voi poistaa käytöstä valitsemalla toimintoruudun **Konfiguraatiot**-välilehdessä **Käyttäjän parametrit** ja määrittämällä sitten **Ohita konfiguraation tilamuutoksen aikainen tarkistus ja perustaa uudelleen** -asetukseksi **Kyllä**. 
@@ -63,7 +63,7 @@ Uusi tai johdettu määritys jaetaan organisaatiossa lataamalla se yleiseen säi
 1. Valitse ensin määrityksen valmis versio ja sitten **Lataa säilöön**.
 2. Valitse ensin **Yleinen (Microsoft)** -vaihtoehto ja sitten **Lataa**.
 
-    ![Säilöön lataamisen asetukset](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Säilöön lataamisen asetukset.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Valitse vahvistussanomaikkunassa **Kyllä**. 
 4. Päivitä version kuvaus tarpeen mukaan ja valitse sitten **OK**. 
@@ -84,11 +84,11 @@ Suorita seuraavat vaiheet poistaaksesi määrityksen, jonka organisaatiosi on lu
 4. Etsi poistettava määritys **Suodatin**-pikavälilehdessä käyttämällä **Suodata**-toimintoa.
 5. Valitse **Versio**-pikavälilehdessä määrityksen poistettava versio ja valitse sitten **Poista**.
 
-    ![Määrityksen poistaminen yleisestä säilöstä](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Määrityksen poistaminen yleisestä säilöstä.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. Valitse vahvistussanomaikkunassa **Kyllä**.
 
-    ![Määritysversion vahvistusviestin poistaminen](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Määritysversion vahvistusviestin poistaminen.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 Määritysversio poistetaan ja vahvistusviesti näytetään. 
 

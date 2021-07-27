@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: e9f9da7d6e3ede9816757fb57f0b802ce4d41360
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 29029cfa032f36c4dc0590ff76f44417dc056ef8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348802"
 ---
 # <a name="outbound-process-overview"></a>Lähtevien prosessien yleiskuvaus
 
@@ -45,31 +47,31 @@ Lähtevien sääntöjen avulla voit määrittää, miten ohjelma toteuttaa läht
 
 Siirry kohtaan **Myyntireskontra** \> **Asetukset** \> **Myyntireskontran parametrit** ja valitse sitten **Päivitykset**-välilehdellä arvo **Keräilyreitin tila** -kenttään.
 
-[![Myyntitilausten keräilyreitin tila -kenttä](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
+[![Myyntitilausten keräilyreitin tila -kenttä.](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
 Jos **Keräilyreitin tila** -kentän arvoksi on asetettu **Valmis**, keräilyprosessi toteutetaan automaattisesti keräysluettelon muodostamisprosessin osana. Jos kentän arvo on **Aktivoitu**, keräysluettelon rivit on päivitettävä manuaalisesti.
 
 Samat asetukset koskevat siirtotilauksia. Siirry kohtaa **Varastonhallinta** \> **Asetukset** \> **Varasto ja varastonhallinnan parametrit**, ja valitse sitten **Kuljetus**-välilehden **Keräilyreitin tila** -kenttään arvo.
 
-[![Siirtotilausten keräilyreitin tila -kenttä](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
+[![Siirtotilausten keräilyreitin tila -kenttä.](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## <a name="end-output-inventory-orders"></a>Toimitustilausten lopettaminen
 
 Siirry kohtaan **Varastonhallinta** \> **Asetukset** \> **Varasto ja varastonhallinnan parametrit**, ja valitse sitten **Yleiset**-välilehden **Lopeta toimitustilaus**-vaihtoehto.
 
-[![Lopeta toimitustilaus -vaihtoehto](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
+[![Lopeta toimitustilaus -vaihtoehto.](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
 Kun varastotyöntekijä vähentää keräysluettelon määriä, vastaavat varastotilauksen määrät poistetaan lähetyksestä. Kun keräysluettelo päivitetään tiettynä ajankohtana, jäljellä olevat määrät raportoidaan takaisin tilaukseen, jos **Lopeta toimitustilaus** -asetukseksi on määritetty **Kyllä**. Jos **Lopeta toimitustilaus** -asetukseksi on määritetty **Ei**, jäljellä olevat määrät säilytetään avoimen toimitustilauksen määränä. Ne on lisättävä uuteen keräysluetteloon **Avoimet toimitustilaukset** -toiminnon osana. 
 
-[![Avoimet toimitustilaukset -komento Toiminnot-valikossa](./media/open-output-order.png)](./media/open-output-order.png)
+[![Avoimet toimitustilaukset -komento Toiminnot-valikossa.](./media/open-output-order.png)](./media/open-output-order.png)
 
-[![Toiminnot-valikko Avoimet toimitustilaukset -sivulla](./media/open-output-order-function.png)](./media/open-output-order-function.png)
+[![Toiminnot-valikko Avoimet toimitustilaukset -sivulla.](./media/open-output-order-function.png)](./media/open-output-order-function.png)
 
 ## <a name="reduce-quantity"></a>Vähennä määrää
 
 Keräysluetteloiden muodostamisprosessissa voi käyttää myös kolmatta parametria, **Vähennä määrää**. Tämän parametrin asetus toimii yhdessä **Varaus**-asetuksen kanssa, joka käynnistää varausprosessin osana varastoon vapauttamista.
 
-[![Vähennä määrää -parametri](./media/reduce-quantity.png)](./media/reduce-quantity.png)
+[![Vähennä määrää -parametri.](./media/reduce-quantity.png)](./media/reduce-quantity.png)
 
 ## <a name="example-of-an-outbound-process-for-a-sales-order"></a>Esimerkki myyntitilauksen lähtevästä prosessista
 
@@ -77,11 +79,11 @@ Tässä esimerkissä on kaksi nimikettä sisältävä myyntitilaus. Valitse ker�
 
 Varasto, jota ei ole vielä varattu, varataan keräysluettelon luonnin aikana. Ei käytettävissä olevan varaston voi joko poistaa myyntitilaukselta tai vapauttaa varastoon myöhempää käsittelyä varten, kun varasto on käytettävissä keräilyyn.
 
-[![Päivitä keräysluettelo](./media/update-picking-list.png)](./media/update-picking-list.png)
+[![Päivitä keräysluettelo.](./media/update-picking-list.png)](./media/update-picking-list.png)
 
 Kun kaikki **Keräysluettelon kirjaaminen** -sivun keräilyrivit on kerätty, liittyvä lähetys on valmis. Myyntitilausten pakkausluetteloprosessi voidaan sitten alustaa keräillyn varaston perusteella.
 
-[![Lähtevien lähetysten päivittäminen](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+[![Lähtevien lähetysten päivittäminen.](./media/outbound-shipments.png)](./media/outbound-shipments.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055097"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360589"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn Talent Hub -integrointi
 
@@ -48,7 +48,7 @@ Järjestelmänvalvojan on tehtävä määritykset, joita tarvitaan LinkedIn Tale
 
 5. Valitse **Dynamics 365 Human Resources** -sivulla ympäristö, johon LinkedIn Talent Hub linkitetään, ja valitse sitten **Linkitä**.
 
-    ![LinkedIn Talent Hubin käyttöönotto](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hubin käyttöönotto.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Linkityksen voi tehdä vain sellaisiin ympäristöihin, joissa linkittäjän käyttäjätilillä on järjestelmänvalvojan oikeudet sekä Human Resources -ympäristössä että liitetyissä Power Apps -ympäristössä. Jos Human Resourcesin linkkisivulla ei ole yhtään ympäristöä, varmista, että vuokraajan Human Resources -ympäristöillä on käyttöoikeus ja että linkkisivulle kirjautumiseen käytetyllä käyttäjällään sekä Human Resources- että Power Apps -ympäristön järjestelmänvalvojan oikeudet.
@@ -91,7 +91,7 @@ LinkedIn Talent Hub -sovittimeen on luotava sovelluskäyttäjä, jotta sovittime
 
 6. Voit vaihtaa luettelon yläpuolella olevassa avattavassa valikossa **Aktivoidut käyttäjät** -oletusnäkymän **Sovelluskäyttäjät**-näkymään.
 
-    ![Sovelluskäyttäjät-näkymä](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Sovelluskäyttäjät-näkymä.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Valitse työkalurivillä **Uusi**.
 
@@ -163,7 +163,7 @@ Kun hakija on siirtynyt työhönottoprosessin läpi ja hänet on palkattu, hakij
     - Anna **Sijainti**-kentässä sijainti, joka on työntekijän ensisijainen työpaikka.
     - Anna tai tarkista työntekijän sähköpostiosoite.
 
-![Vie HRIS-järjestelmään -ruutu LinkedIn Talent Hubissa](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Vie HRIS-järjestelmään -ruutu LinkedIn Talent Hubissa.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Käyttöönoton päättäminen Human Resourcesissa
 

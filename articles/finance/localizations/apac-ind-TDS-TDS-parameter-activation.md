@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: dda276b7d634317aae26728f7d9f51af9ccfb896
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b74a1ab6d0f17367fc16f795e1b28ff5d0c5508e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023206"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358239"
 ---
 # <a name="set-the-tds-parameters"></a>Määritä TDS-parametrit
 
@@ -34,13 +34,13 @@ Tässä aiheessa kuvataan, kuinka määritetään parametrit, jotka aktivoivat V
 3. Valitse **Lasku**-asetuksen arvoksi **Kyllä**, jos haluat ottaa käyttöön kentät, joita käytetään TDS:n laskentaan ja vähennykseen laskutasolla.
 4. Valitse **Maksu**-asetuksen arvoksi **Kyllä**, jos haluat ottaa käyttöön kentät, joita käytetään TDS:n laskentaan ja vähennykseen maksutasolla.
 
-    [![Suorat verot -välilehti](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
+    [![Suorat verot -välilehti.](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
 
 5. Etsi **Numerosarjat**-välilehdestä rivi, jonka **Viite**-kentän arvoksi on määritetty **Ennakonpidätysmaksu**. Valitse numerosarjan koodi rivin **Numerosarjan koodi** -kentässä. Numerosarjan koodin avulla luodaan tositenumerot kausittaista TDS-tilitysprosessia varten.
 
     > [!NOTE]
     > Voit suorittaa kausittaisen TDS-tilitysprosessin valitsemalla **Vero \> Ilmoitukset \> Ennakonpidätys \> Ennakonpidätysmaksu**.
 
-    [![Numerosarjat-välilehti](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
+    [![Numerosarjat-välilehti.](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
 
 6. Sulje sivu.

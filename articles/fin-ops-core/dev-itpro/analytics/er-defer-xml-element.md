@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: f89c671ae012907a4c3e07c09bdc867c1d67a101
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944482"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348066"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER-muotoisten XML-elementtien suorittamisen lykkäys
 
@@ -90,7 +90,7 @@ Ennen kuin aloitat, sinun on myös ladattava ja tallennettava seuraavat esimerkk
 6. Laajenna määrityspuussa **Malli lykättyjen elementtien oppimiseen**.
 7. Tarkista tuotujen ER-määritysten luettelo määrityspuussa.
 
-    ![Tuodut ER-määritykset määrityssivulla](./media/ER-DeferredXml-Configurations.png)
+    ![Tuodut ER-määritykset määrityssivulla.](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktivoi määrityslähde
 
@@ -119,7 +119,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - *Ryhmittely* -tyypin **Ryhmitelty**-tietolähde määritetään ryhmittelemään **Suodatettu**-tietolähteen suodatettuja verotapahtumia.
     - **Ryhmitelty**-tietolähteen **TotalSum**-koostekenttä määritetään laskemaan yhteen **Suodatettu**-tietolähteen **\$TaxAmount**-kentän arvot kaikkein kyseisen tietolähteen suodatettujen verotapahtumien osalta.
 
-        ![Muokkaa GroupBy-parametreja -sivun TotalSum koostekenttä](./media/ER-DeferredXml-GroupByParameters.png)
+        ![Muokkaa GroupBy-parametreja -sivun TotalSum koostekenttä.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Tarkista, miten määritetyt tietolähteet on sidottu tietomalliin ja miten ne näyttävät käytetyt tiedot, jotta ne ovat käytettävissä ER-muodossa:
 
@@ -127,7 +127,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - **Suodatettu**-tietolähteen **\$TaxAmount**-kenttä on sidottu tietomallin **Data.List.Value**-kenttään.
     - **Ryhmitelty**-tietolähteen **TotalSum**-kenttä on sidottu tietomallin **Data.Summary.Total**-kenttään.
 
-    ![Mallimäärityksen suunnittelun sivu](./media/ER-DeferredXml-ModelMapping.png)
+    ![Mallimäärityksen suunnittelun sivu.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Sulje sivut **Mallimäärityksen suunnittelu** ja **Mallimääritykset**.
 
@@ -143,7 +143,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - XML-elementti **Raportti \\Sanoma\\Tietue** määritetään täyttämään lähtevä asiakirja yksittäisellä tietuesolmulla, jossa näkyvät yksittäisen verotapahtuman tiedot.
     - XML-elementti **Raportti\\Sanoma\\Yhteenveto** määritetään täyttämään lähtevä asiakirja yksittäisellä yhteenvetosolmulla, joka sisältää käsiteltyjen verotapahtumien veroarvojen summan.
 
-    ![Sanoma-XML-elementti ja sisäkkäiset XML-elementit Muodon suunnittelun sivulla](./media/ER-DeferredXml-Format.png)
+    ![Sanoma-XML-elementti ja sisäkkäiset XML-elementit Muodon suunnittelun sivulla.](./media/ER-DeferredXml-Format.png)
 
 5. Tarkista seuraavat tiedot **Määritys**-välilehdessä:
 
@@ -157,14 +157,14 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - **TotalTaxAmount**-määrite on sidottu **model.Data.Summary.Total**, jotta luodaan käsiteltyjen verotapahtumien veroarvojen summa.
     - **ExecutionDateTime**-määrite luo yhteenvetosolmun lisäämisen päivän ja ajan (millisekunteihin asti).
 
-    ![Yhdistämismääritys-välilehti Muodon suunnittelu -sivulla](./media/ER-DeferredXml-Format2.png)
+    ![Yhdistämismääritys-välilehti Muodon suunnittelu -sivulla.](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Tuodun muodon suorittaminen
 
 1. Vallitse **Muodon suunnittelu** -sivulla **Suorita**.
 2. Lataa verkkoselaimen tarjoama tiedosto ja avaa se tarkistusta varten.
 
-    ![Tuodun muodon ladattu tiedosto](./media/ER-DeferredXml-Run.png)
+    ![Tuodun muodon ladattu tiedosto.](./media/ER-DeferredXml-Run.png)
 
 Huomaa, että yhteenvetosolmussa on käsiteltyjen tapahtumien veroarvojen summa. Koska muoto on määritetty käyttämään arvoa **model.Data.Summary.Total** sitovasti tämän summan palauttamista varten, summa lasketaan kutsumalla mallin yhdistämismäärityksen *GroupBy*-tyypin **Ryhmitelty**-tietolähteen **TotalSum**-kooste. Tämän koosteen laskemiseksi mallin yhdistämismääritys iteroi kaikki tapahtumat, jotka on valittu **Suodatettu**-tietolähteessä. Kun verrataan yhteenvetosolmun ja viimeisimmän tietuesolmun suoritusaikoja, voidaan päätellä, että summan laskeminen kesti 12 millisekuntia (ms). Vertaamalla ensimmäisen ja viimeisen tietuesolmun suoritusaikoja voidaan päätellä, että kaikkien tietuesolmujen luominen kesti 9 millisekuntia. Siten yhteisaika oli 21 ms.
 
@@ -178,25 +178,25 @@ Jos tapahtuman suuruus on huomattavasti suurempi kuin tässä esimerkissä, lask
 4. Määritä **Kerätyn tietoavaimen nimi** -lausekkeen arvoksi `WsColumn`.
 5. Määritä **Kerätyn tietoavaimen arvo** -lausekkeen arvoksi `WsRow`.
 
-    ![Tietue-XML-elementti Muodon suunnittelija -sivulla](./media/ER-DeferredXml-Format3.png)
+    ![Tietue-XML-elementti Muodon suunnittelija -sivulla.](./media/ER-DeferredXml-Format3.png)
 
 6. Valitse **Raportti\\Sanoma\\Tietue\\TaxAmount** -määrite.
 7. Määritä **Kerätyn tietoavaimen nimi** -lausekkeen arvoksi `SummingAmountKey`.
 
-    ![TaxAmount-määrite Muodon suunnittelija -sivulla](./media/ER-DeferredXml-Format4.png)
+    ![TaxAmount-määrite Muodon suunnittelija -sivulla.](./media/ER-DeferredXml-Format4.png)
 
     Voit katsoa tämän asetuksen virtuaalisen laskentataulukon täyttämiseksi, jossa solun A1 arvo lisätään jokaisen käsitellyn verotapahtuman verosumman arvoon.
 
 8. Valitse **Raportti\\Sanoma\\Tietue\\RunningTotal** -määrite ja sitten **Muokkaa kaava**.
 9. Määritä `SUMIF(SummingAmountKey, WsColumn, WsRow)` -lauseke käyttämällä sisäistä [SUMIF](er-functions-datacollection-sumif.md) ER -toimintoa ja valitsemalla **Tallenna**.
 
-    ![SUMIF-lauseke](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF-lauseke.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Sulje **Reseptien suunnittelu** -sivu.
 11. Valitse ensin **Tallenna** ja sitten **Suorita**.
 12. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Veroarvon muodostettu luettelo ja juokseva kokonaissumma](./media/ER-DeferredXml-Run1.png)
+    ![Veroarvon muodostettu luettelo ja juokseva kokonaissumma.](./media/ER-DeferredXml-Run1.png)
 
     Viimeinen tietuesolmu sisältää kaikille käsitellyille tapahtumille luotua tulosta tietolähteenä käyttäen lasketun veroarvojen juoksevan summan. Tämä tietolähde alkaa raportin alusta ja jatkuu viimeisimpään verotapahtumaan asti. Yhteenvetosolmu sisältää kaikkien sellaisten käsiteltyjen tapahtumien veroarvojen summan, jotka on laskettu mallin yhdistämismäärityksessä käyttämällä *GroupBy* -tyypin tietolähdettä. Huomaa, että nämä arvot ovat samat. Siksi voidaan käyttää tulokseen perustuvaa yhteenlaskua **GroupBy**-tyypin käytön sijaan. Vertaamalla ensimmäisen tietuesolmun ja yhteenvetosolmun suoritusaikoja voidaan päätellä, että kaikkien tietuesolmujen luominen ja laskeminen kesti 11 millisekuntia. Siten muokattu muoto on noin kaksi kertaa alkuperäistä muotoa nopeampi tietuesolmujen luomisessa ja veroarvojen summien laskemisessa.
 
@@ -205,7 +205,7 @@ Jos tapahtuman suuruus on huomattavasti suurempi kuin tässä esimerkissä, lask
 15. Valitse ensin **Tallenna** ja sitten **Suorita**.
 16. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Veroarvojen muodostettu luettelo muokatun kaavan avulla](./media/ER-DeferredXml-Run2.png)
+    ![Veroarvojen muodostettu luettelo muokatun kaavan avulla.](./media/ER-DeferredXml-Run2.png)
 
     Huomaa, että veroarvojen juokseva summa viimeisessä tietuesolmussa vastaa nyt yhteenvetosolmun summaa.
 
@@ -218,7 +218,7 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 3. Valitse ensin **Tallenna** ja sitten **Suorita**.
 4. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Raportin otsikon veroarvojen ladattu tiedosto](./media/ER-DeferredXml-Run3.png)
+    ![Raportin otsikon veroarvojen ladattu tiedosto.](./media/ER-DeferredXml-Run3.png)
 
     Huomaa, että yhteenvetosolmun veroarvojen summa on nyt 0 (nolla), koska tämä summa lasketaan nyt luodun tuloksen perusteella. Kun ensimmäinen tietuesolmu luodaan, luotu tulos ei vielä sisällä tietuesolmuja, joilla on tapahtumatietoja. Voit määrittää tämän muodon lykkäämään **Raportti\\Sanoma\\Yhteenveto** -sarjaelementtiä siihen asti, että **Raportti\\Sanoma\\Tietue** -sarjaelementti on suoritettu kaikkien verotapahtumien osalta.
 
@@ -227,12 +227,12 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 1. Valitse **Muodon suunnittelija** -sivun **Muoto**-välilehdessä XML-elementti **Raportti\\Sanoma\\Yhteenveto**.
 2. Määritä **Lykätty suorittaminen** -asetukseksi **Kyllä**.
 
-    ![Muodon suunnittelija -sivun XML-elementin lykätyn suorittamisen vaihtoehto](./media/ER-DeferredXml-Format5.png)
+    ![Muodon suunnittelija -sivun XML-elementin lykätyn suorittamisen vaihtoehto.](./media/ER-DeferredXml-Format5.png)
 
 3. Valitse ensin **Tallenna** ja sitten **Suorita**.
 4. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Lykätyn suorituksen ladattu tiedosto](./media/ER-DeferredXml-Run4.png)
+    ![Lykätyn suorituksen ladattu tiedosto.](./media/ER-DeferredXml-Run4.png)
 
     **Raportti\\Sanoma\\Yhteenveto** -elementti suoritetaan nyt vasta, kun kaikki muut sen pääelementin **Raportti\\Sanoma** alaiset kohteet on suoritettu. Siten se suoritetaan sen jälkeen, kun **Raportti\\Sanoma\\Tietue** -sarjaelementti on suoritettu kaikkien **model.Data.List** -tietolähteen verotapahtumien osalta. Tämä ilmenee ensimmäisen ja viimeisen tietuesolmun sekä otsikko- ja yhteenvetosolmujen suoritusajoista.
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186783"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358976"
 ---
 # <a name="note-integration"></a>Muistiinpanojen integrointi
 
@@ -51,23 +51,23 @@ Noudattamalla seuraavia ohjeita voit luoda muistiinpanon asiakasvuorovaikutussov
 1. Avaa asiakkaan tilitietue asiakasvuorovaikutussovelluksessa.
 2. Valitse **Aikajana**-ruudusta plusmerkki (**+**) ja luo muistiinpano valitsemalla **Muistiinpano**.
 
-    ![Muistiinpanon luominen asiakasvuorovaikutussovelluksessa](media/notes-ce-1.png)
+    ![Muistiinpanon luominen asiakasvuorovaikutussovelluksessa.](media/notes-ce-1.png)
 
 3. Kirjoita otsikko ja kuvaus ja valitse sitten **Lisää muistiinpano**.
 
-    ![Kirjoita otsikko ja kuvaus](media/notes-ce-2.png)
+    ![Kirjoita otsikko ja kuvaus.](media/notes-ce-2.png)
 
     Uusi muistiinpano lisätään asiakkaan aikajanaan.
 
-    ![Asiakkaan aikajanan uusi muistiinpano](media/notes-ce-3.png)
+    ![Asiakkaan aikajanan uusi muistiinpano.](media/notes-ce-3.png)
 
 4. Kirjaudu Finance and Operations -sovellukseen ja avaa sama asiakastietue. Huomaa, että oikeassa yläkulmassa oleva **Liitteet**-painike (paperiliitinsymboli) ilmaisee, että tietueella on liite.
 
-    ![Ilmoitus liitteestä](media/notes-ce-4.png)
+    ![Ilmoitus liitteestä.](media/notes-ce-4.png)
 
 5. Avaa **Liitteet**-sivu valitsemalla **Liitteet**-painike. Sinu pitäisi nähdä muistiinpano, jonka olet luonut asiakasvuorovaikutussovelluksessa.
 
-    ![Muistiinpano asiakasvuorovaikutussovelluksesta](media/notes-ce-5.png)
+    ![Muistiinpano asiakasvuorovaikutussovelluksesta.](media/notes-ce-5.png)
 
 Muistiinpanon päivitykset synkronoidaan Finance and Operations -sovelluksen ja asiakasvuorovaikutussovelluksen välillä.
 
@@ -79,21 +79,21 @@ Noudattamalla seuraavia ohjeita voit luoda muistiinpanon Finance and Operations 
 
 1. Valitse Finance and Operations -sovelluksessa **Liitteet**-sivulla **Uusi** \> **Muistiinpano**.
 
-    ![Muistiinpanon luominen Finance and Operations -sovelluksessa](media/notes-fo-1.png)
+    ![Muistiinpanon luominen Finance and Operations -sovelluksessa.](media/notes-fo-1.png)
 
 2. Kirjoita otsikko, lyhyt ohjejoukko ja valitse sitten **Tallenna**.
 
-    ![Kirjoita otsikko ja ohjeet](media/notes-fo-2.png)
+    ![Kirjoita otsikko ja ohjeet.](media/notes-fo-2.png)
 
 3. Päivitä tietue asiakasvuorovaikutussovelluksessa. Uuden muistiinpanon pitäisi olla aikajanalla.
 
-    ![Aikajanan uusi muistiinpano asiakasvuorovaikutussovelluksessa](media/notes-fo-3.png)
+    ![Aikajanan uusi muistiinpano asiakasvuorovaikutussovelluksessa.](media/notes-fo-3.png)
 
 Voit luokitella muistiinpanon sisäiseksi tai ulkoiseksi.
 
 - Avaa Finance and Operations -sovelluksessa **Liitteet**-sivulla muistiinpano ja valitse sitten **Rajoitus**-kentästä **Sisäinen** tai **Ulkoinen**.
 
-    ![Rajoituskenttä](media/notes-fo-4.png)
+    ![Rajoituskenttä.](media/notes-fo-4.png)
 
 Voit myös luoda URL-osoitteen.
 
@@ -101,13 +101,13 @@ Voit myös luoda URL-osoitteen.
 2. Kirjoita otsikko ja URL-osoite.
 3. Valitse **Rajoitus**-kentästä **Sisäinen** tai **Ulkoinen**.
 
-    ![URL-osoitteen luominen Finance and Operations -sovelluksessa](media/notes-fo-5.png)
+    ![URL-osoitteen luominen Finance and Operations -sovelluksessa.](media/notes-fo-5.png)
 
 4. Valitse **Tallenna**.
 
     Koska asiakasvuorovaikutussovelluksissa ei ole URL-tyyppiä, URL-osoite integroidaan kaksoiskirjoituksen avulla muistiinpanona.
 
-    ![URL-osoitteen näkyminen asiakasvuorovaikutussovelluksessa](media/notes-ce-6.png)
+    ![URL-osoitteen näkyminen asiakasvuorovaikutussovelluksessa.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Tiedostoliitteitä ei tueta.

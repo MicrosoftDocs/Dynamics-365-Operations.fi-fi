@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1ab19358857440e46d3df2323fbcea19a476903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837750"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360967"
 ---
 # <a name="functional-location-lifecycle-states"></a>Toiminnallisen sijainnin elinkaaren tilat
 
@@ -56,9 +56,9 @@ Kun olet luonut toiminnallisten sijaintien edellyttämät elinkaariilat, ne void
 1. Valitse **Resurssien hallinta** > **Asetukset** > **Toiminnalliset sijainnit** > **Elinkaarimallit**.
 2. Luo uusi elinkaarimalli valitsemalla **Uusi**.
 3. Lisää elinkaarimallin tunnus **Elinkaarimalli**-kenttään ja elinkaarimallin nimi **Nimi**-kenttään. **Toiminnalliset sijaintityypit**- ja **Elinkaaren tilat** -kentissä voi nähdä niiden toiminnallisten sijainti tyyppien määrän, jotka käyttävät elinkaarimallia ja elinkaarimalliin valittujen tilojen määrän.
-4. Valitse **Elinkaaren tilat** -pikavälilehdessä ne tilat, jotka sisällytetään malliin. Tämä tehdään napsauttamalla tilaa **Jäljellä olevat elinkaaren tilat** -osassa ja napsauttamalla ![eteenpäin osoittavaa nuolta](media/02-setup-for-functional-locations.png) -painiketta.
-5. Jos haluat valita mallin kaikki käytettävissä olevat tilat, napsauta ![Valitse kaikki käytettävissä olevat vaiheet](media/03-setup-for-functional-locations.png) -painiketta. Kaikki tilat siirretään **Valitut elinkaaren tilat** -osioon.
-6. Jos haluat poistaa valitun tilan mallista, valitse tila **Valitut elinkaaren tilat** -osassaja valitse sitten ![takaisin-nuoli](media/04-setup-for-functional-locations.png) -painike.
+4. Valitse **Elinkaaren tilat** -pikavälilehdessä ne tilat, jotka sisällytetään malliin. Tämä tehdään napsauttamalla tilaa **Jäljellä olevat elinkaaren tilat** -osassa ja napsauttamalla ![eteenpäin osoittava nuoli.](media/02-setup-for-functional-locations.png) -painiketta.
+5. Jos haluat valita mallin kaikki käytettävissä olevat tilat, napsauta ![valitse kaikki käytettävissä olevat vaiheet](media/03-setup-for-functional-locations.png) -painiketta. Kaikki tilat siirretään **Valitut elinkaaren tilat** -osioon.
+6. Jos haluat poistaa valitun tilan mallista, valitse tila **Valitut elinkaaren tilat** -osassa ja valitse sitten ![takaisin-nuoli](media/04-setup-for-functional-locations.png) -painike.
 7. Valitse **Elinkaaren tilan päivitykset** määrittääksesi, mitkä elinkaaren tilat voivat seurata valittua tilaa.
 
 

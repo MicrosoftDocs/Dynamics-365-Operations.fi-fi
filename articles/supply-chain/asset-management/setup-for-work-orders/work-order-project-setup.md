@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 071c73f9295ad7911037cbd10a48b46b044eebda
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 19cdc33fcc9d1293b235facbaffd1ccf62875217
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808229"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360050"
 ---
 # <a name="work-order-project-setup"></a>Työtilauksen projektiasetukset
 
@@ -69,7 +69,7 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 
     Oletusarvon mukaan aloituspäivämäärä on päivämäärä, jolloin työtilausprojekti lisätään sivulle. Sen hallinnassa on **Voimassa alkaen** -kenttä, joka on oletusarvoisesti piilotettu. Jos haluat näyttää **Voimassa alkaen** -kentän, valitse **Näytä** \> **Kaikki**. Tämän jälkeen voit käyttää **Voimassa alkaen** -kenttää yhdessä **Päättymispäivämäärä**-kentän kanssa määrittämään rajoitetun voimassaoloajan työtilausprojektille.
 
-    ![Työtilausten projektinmäärityssivu](media/17-setup-for-work-orders.png)
+    ![Työtilausten projektinmäärityssivu.](media/17-setup-for-work-orders.png)
 
 6. Valitse **Projektiryhmä**-välilehdellä **Lisää**.
 7. Valitse **Työtilaustyyppi**-kentässä työtilauksen tyyppi.
@@ -77,7 +77,7 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 9. Valitse **Projektiryhmä**-kentästä projektiryhmä, joka liittyy työtilaustyyppiin. Esimerkiksi **Ennalta ehkäisevä ylläpito** -niminen työtilaustyyppi voi liittyä projektiryhmään, jonka nimi **Enn. ylläp.** tai **Sisäinen.** Vaihtoehtoisesti **Investointi**-työtilaustyyppi, jota käytetään investointeihin ja käyttöomaisuuteen liittyviin työtilauksiin, voidaan liittää projektiryhmään, jonak nimi on **Investoi** tai **Investointi**.
 10. Valitse **Tallenna**.
 
-![Työtilausten projektinmäärityssivu, Työtilauksen lisääminen](media/18-setup-for-work-orders.png)
+![Työtilausten projektinmäärityssivu, työtilauksen lisääminen.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Aina, kun työtilausrivi luodaan, käyttöomaisuuden hallinta etsii projektiryhmää, joka liittyy työtilaustyön projektiin. Haku perustuu tässä ohjeaiheessa kuvattuihin asetuksiin. Jokaisella projektiryhmällä on siihen liittyvä projektityyppi. Projektiryhmät, joissa on **Aika ja materiaali**- tai **Kiinteähintainen** projektityyppi, ovat kelvollisia vain asiakastiliin liittyvissä resursseissa.

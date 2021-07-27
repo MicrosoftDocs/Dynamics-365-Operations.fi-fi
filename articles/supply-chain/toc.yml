@@ -246,8 +246,6 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Egyptin sähköisen laskutuksen käytön aloittaminen
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Italian sähköisen laskutuksen käytön aloittaminen
-                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Meksikon sähköisen laskutuksen käytön aloittaminen
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Sähköisen laskutuksen määrittäminen
@@ -1171,9 +1169,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfiguraatioiden suunnitteleminen raporttien luontiin Word-muodossa
                   items:
-                    - name: Uuden ER-konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa
+                    - name: Uuden sähköisen raportoinnin konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Raporttien luominen Word-muodossa käyttämällä ER-konfiguraatioita uudelleen Excel-mallien avulla
+                    - name: Raporttien luominen Word-muodossa käyttämällä sähköisen raportoinnin konfiguraatioita uudelleen Excel-mallien avulla
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Word-sisällön ohjausobjektien estäminen luoduissa raporteissa
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/supply-chain/toc.json
@@ -1195,7 +1193,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tuoterakenteen merkkien estäminen luoduissa tiedostoissa
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/supply-chain/toc.json
-            - name: 'Sovellustietojen päivittäminen ER:n avulla'
+            - name: Sovellustietojen päivittäminen sähköisen raportoinnin avulla
               items:
                 - name: Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
@@ -1243,7 +1241,7 @@
                   items:
                     - name: 'RCS:n globalisaatio-ominaisuudet'
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: ER-konfiguraatioiden lataaminen Supply Chain Managementiin
+                    - name: Sähköisen raportoinnin konfiguraatioiden lataaminen Supply Chain Managementiin
                       items:
                         - name: 'Konfiguraatioiden lataaminen RCS:stä'
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
@@ -1267,7 +1265,7 @@
               items:
                 - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Uuden ER-ratkaisun suunnitteleminen mukautetun raportin tulostamista varten
+                - name: Uuden sähköisen raportoinnin ratkaisun suunnitteleminen mukautetun raportin tulostamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisen raportoinnin ratkaisun määrittäminen mukautetun sähköisen asiakirjan luomiseksi
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/supply-chain/toc.json
@@ -1349,11 +1347,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Suurten lähtevien tiedostojen pakkaaminen
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Määritettyjen ER-komponenttien tarkastaminen
+                - name: Määritettyjen sähköisen raportoinnin komponenttien tarkastaminen
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Suhteellinen polku tietojen sidonnoissa
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER-ratkaisujen käyttäminen Supply Chain Managementissa
+            - name: Sähköisen raportoinnin ratkaisujen käyttäminen Supply Chain Managementissa
               items:
                 - name: Kehyksen määrittäminen
                   items:
@@ -1397,11 +1395,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen parannukset perusarvoihin vertaamista varten
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Testauksen automatisointi ER:n avulla'
+                    - name: Testauksen automatisointi sähköisen raportoinnin avulla
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Liiketoimintaprosessien automatisointi sähköisen raportoinnin konfiguraatioiden avulla
                   items:
-                    - name: 'Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin'
+                    - name: 'Sähköisen raportoinnin määrittäminen tietojen hakemiseksi Power BI:hin'
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
@@ -1607,6 +1605,8 @@
                   href: master-planning/planning-optimization/get-started.md
                 - name: Suunnittelun optimoinnin sopivuusanalyysi
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: 'Parametrit, joita ei käytetä suunnittelun optimoinnissa'
+                  href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Suodattimien käyttäminen suunnitelmaan
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Pääsuunnittelu ja kysynnän ennuste
@@ -1621,6 +1621,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Tuotannon suunnittelu
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Ajoitus rajattoman kapasiteetin avulla
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Varastomerkintä suunnittelun optimoinnissa
                   href: master-planning/planning-optimization/marking.md
                 - name: Konsernin sisäinen suunnittelu
@@ -1861,6 +1863,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Hyväksyntävaiheiden määrittäminen
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Menojen tarkistajien määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Manuaalisten päätösten määrittäminen
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ehdollisten päätösten määrittäminen

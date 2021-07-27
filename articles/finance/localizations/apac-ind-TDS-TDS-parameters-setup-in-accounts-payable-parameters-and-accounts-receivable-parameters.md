@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ccf1557d3c95829421b26d5f84750e3d4236c9e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023208"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358215"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Määritä myyntireskontran ja ostoreskontran TDS-parametrit
 
@@ -38,12 +38,12 @@ Tässä ohjeaiheessa on tietoja ostoreskontran ja myyntireskontran parametrien m
     - **Kehote** – Käyttäjät saavat sanoman, joka kehottaa heitä päivittämään TDS-ryhmän tilausriveille.
 4. Valitse **OK**.
 
-    [![Päivitä tilausrivit -valintaikkuna](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Päivitä tilausrivit -valintaikkuna.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Valitse **Vero \> Asetukset \> Parametrit \> Ostoreskontran parametrit**.
 6. **Yleiset**-välilehdessä **Jako toimitustietojen perusteella** -pikavälilehdessä määritä **Tuotteen vastaanotto** -kohdan asetukseksi **Kyllä**, kun haluat kirjata ja jakaa tuotteen vastaanoton, jolla on eri toimitusosoitteet ja verotilien numerot (TAN). Jos tämän asetuksen arvoksi on määritetty **Ei**, et voi kirjata oston pakkausluetteloa, jolla on eri toimitusosoitteet ja TAN-numerot.
 7. Määritä **Lasku**-asetuksen arvoksi **Kyllä**, jos haluat kirjata ja jakaa ostolaskun, jolla on eri toimitusosoitteet ja TAN-numerot.
 
-    [![Jako toimitustietojen perusteella -pikavälilehti](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Jako toimitustietojen perusteella -pikavälilehti.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Sulje sivu.

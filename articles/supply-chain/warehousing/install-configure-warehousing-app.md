@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909376"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359482"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Varastosovelluksen asentaminen ja yhdistäminen
 
@@ -64,28 +64,28 @@ Varastosovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa ed
 1. Anna sen käyttäjän nimi ja salasana, jolla on Azure‑tilauksen käyttöoikeus.
 1. Valitse Azure-portaalin vasemmassa siirtymisruudussa **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Varmista, että käytössä on Supply Chain Managementin käyttämä Azure AD -esiintymä.
 1. Valitse **Hallinta**-luettelossa **Sovelluksen rekisteröinnit**.
 
-    ![Sovelluksen rekisteröinnit](media/app-connect-azure-register.png "Sovelluksen rekisteröinnit")
+    ![Sovelluksen rekisteröinnit.](media/app-connect-azure-register.png "Sovelluksen rekisteröinnit")
 
 1. Avaa ohjattu **Sovelluksen rekisteröinti** -toiminto valitsemalla työkalurivillä **Uusi rekisteröinti**.
 1. Anna sovelluksen nimi, valitse **Vain tämän organisaatiohakemiston tilit** -vaihtoehto ja valitse sitten **Rekisteröi**.
 
-    ![Ohjattu sovelluksen rekisteröintitoiminto](media/app-connect-azure-register-wizard.png "Ohjattu sovelluksen rekisteröintitoiminto")
+    ![Ohjattu sovelluksen rekisteröintitoiminto.](media/app-connect-azure-register-wizard.png "Ohjattu sovelluksen rekisteröintitoiminto")
 
 1. Uusi sovelluksen rekisteröinti avautuu. Kirjoita **Sovelluksen (asiakasohjelman) tunnus** -kohdan arvo muistiin, sillä tarvitset sitä myöhemmin. Tätä tunnusta kutsutaan myöhemmin tässä ohjeaiheessa *asiakasohjelman tunnukseksi*.
 
-    ![Sovelluksen (asiakasohjelman) tunnus](media/app-connect-azure-app-id.png "Sovelluksen (asiakasohjelman) tunnus")
+    ![Sovelluksen (asiakasohjelman) tunnus.](media/app-connect-azure-app-id.png "Sovelluksen (asiakasohjelman) tunnus")
 
 1. Valitse **Hallinta**-luettelossa **Varmenne ja salaisuudet**. Valitse sitten jokin seuraavista painikkeista sen mukaan, miten haluat määrittää todennuksen sovelluksessa. (Lisätietoja on jäljempänä tässä ohjeaiheessa kohdassa [Todennus käyttämällä varmennetta tai asiakasohjelman salaisuutta](#authenticate).)
 
     - **Lataa varmenne** – Lataa salaisuutena käytettävä varmenne. Tätä menetelmää kannattaa käyttää, sillä se on turvallinen ja se on laajemmin automatisoitavissa. Jos varastosovellusta käytetään Windows-laitteissa, kirjoita muistiin varmenteen lataamisen jälkeen näkyvän **allekirjoituksen** arvo. Tätä arvoa tarvitaan varmenteen määrittämiseen Windows-laitteissa.
     - **Uusi asiakasohjelman salasana** – Luo avain antamalla avaimen kuvaus ja sen kesto **Salasanat**-osassa ja valitse sitten **Lisää**. Kopioi avain ja tallenna se turvalliseen paikaan.
 
-    ![Varmenne ja salaisuudet](media/app-connect-azure-authentication.png "Varmenne ja salaisuudet")
+    ![Varmenne ja salaisuudet.](media/app-connect-azure-authentication.png "Varmenne ja salaisuudet")
 
 Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä on seuraavissa resursseissa:
 
@@ -105,7 +105,7 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
     1. Luo käyttäjä.
     1. Määritä varastoinnin mobiililaitteen käyttäjä.
 
-    ![Varastoinnin mobiililaitteen käyttäjän määrittäminen](media/app-connect-app-users.png "Varastoinnin mobiililaitteen käyttäjän määrittäminen")
+    ![Määritä varastoinnin mobiililaitteen käyttäjä.](media/app-connect-app-users.png "Varastoinnin mobiililaitteen käyttäjän määrittäminen")
 
 1. Azure AD -sovelluksen liittäminen varastosovelluksen käyttäjään:
 
@@ -113,7 +113,7 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
     1. Luo rivi.
     1. Anna edellisessä osassa muistiin kirjoitettu asiakasohjelman tunnus, nimeä se ja valitse juuri luotu käyttäjä. Kaikille laitteille kannattaa antaa tunniste. Tällä tavoin kadotetun laitteen Supply Chain Managementin käyttöoikeus on helppo poistaa tällä sivulla.
 
-    ![Azure Active Directory -sovellukset](media/app-connect-aad-apps.png "Azure Active Directory -sovellukset")
+    ![Azure Active Directory -sovellukset.](media/app-connect-aad-apps.png "Azure Active Directory -sovellukset")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Todennus käyttämällä varmenteen tai asiakasohjelman salauskoodia
 
@@ -201,26 +201,26 @@ Yhteysasetukset voidaan tuoda seuraavien ohjeiden mukaisesti tiedostosta tai QR-
 1. Valitse **Yhteysasetukset**.
 1. Valitse **Käytä demotilaa** -vaihtoehdossa _Ei_.
 
-    ![Käytä demotilaa -vaihtoehto](media/app-connect-app-demo-mode.png "Käytä demotilaa -vaihtoehto")
+    ![Käytä demotilaa -vaihtoehto.](media/app-connect-app-demo-mode.png "Käytä demotilaa -vaihtoehto")
 
 1. Valitse asetusten tuontitavan mukaan **Valitse tiedosto** tai **Lue QR-koodi**.
 
     - Jos yhteysasetukset tuodaan tiedostosta, sovellus on voinut jo löytää tiedoston, joka tiedostolla on oletusnimi ja se tallennettiin oletussijaintiin. Valitse muussa tapauksessa **Valitse tiedosto**, etsi tiedosto paikallisessa laitteessa ja valitse. Jos valitse mukautetun sijainnin, sovellus tallentaa sen ja käyttää sitä automaattisesti seuraavalla kerralla.
     - Jos yhteysasetukset tuodaan lukemalla QR-koodi, valitse **Lue QR-koodi**. Sovellus pyytää laitteen kameran käyttöoikeutta. Kun käyttöoikeus on myönnetty, kamera käynnistyy ja voit käyttää sitä lukemiseen. Laitteen kameran laadun ja QR-koodin monimutkaisuuden mukaan koodin lukeminen voi olla hankalaa. Vähennä siinä tapauksessa QR-koodin monimutkaisuutta luomalla kullekin QR-koodille vain yksi yhteys. (Tällä hetkellä QR-koodin voi lukea vain laitteen kameralla.)
 
-    ![Yhteysasetusten tuominen](media/app-connect-app-select-file.png "Yhteysasetusten tuominen")
+    ![Yhteysasetusten tuominen.](media/app-connect-app-select-file.png "Yhteysasetusten tuominen")
 
 1. Kun yhteysasetukset on ladattu, valitse sivun vasemmassa yläkulmassa **Takaisin**-painike (nuoli vasemmalle).
 
-    ![Ladatut yhteysasetukset](media/app-connect-app-settings-loaded.png "Ladatut yhteysasetukset")
+    ![Ladatut yhteysasetukset.](media/app-connect-app-settings-loaded.png "Ladatut yhteysasetukset")
 
 1. Jos käytössä on Android-laite ja todennukseen käytetään varmennetta, laite pyytää valitsemaan varmenteen.
 
-    ![Varmenteen valintakehote Android-laitteessa](media/app-connect-app-choose-cert.png "Varmenteen valintakehote Android-laitteessa")
+    ![Varmenteen valintakehote Android-laitteessa.](media/app-connect-app-choose-cert.png "Varmenteen valintakehote Android-laitteessa")
 
 1. Sovellus muodostaa yhteyden Supply Chain Management -palvelimeen ja avaa kirjautumissivun.
 
-    ![Kirjautumissivu](media/app-connect-sign-in.png "Kirjautumissivu")
+    ![Kirjautumissivu.](media/app-connect-sign-in.png "Kirjautumissivu")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Sovelluksen määrittäminen manuaalisesti
 
@@ -230,11 +230,11 @@ Sovelluksen voi määrittää laitteessa manuaalisesti muodostamaan yhteyden Sup
 1. Valitse **Yhteysasetukset**.
 1. Valitse **Käytä demotilaa** -vaihtoehdossa _Ei_.
 
-    ![Käytöstä poistettu demotila](media/app-connect-app-select-file.png "Käytöstä poistettu demotila")
+    ![Käytöstä poistettu demotila.](media/app-connect-app-select-file.png "Käytöstä poistettu demotila")
 
 1. Laajenna **Valitse yhteys** -kenttää napauttamalla asetukset, jotka tarvitaan yhteyden tietojen antamiseen manuaalisesti.
 
-    ![Manuaaliset yhteyskentät](media/app-connect-manual-connect.png "Manuaaliset yhteyskentät")
+    ![Manuaaliset yhteyskentät.](media/app-connect-manual-connect.png "Manuaaliset yhteyskentät")
 
 1. Kirjoita seuraavat tiedot:
 

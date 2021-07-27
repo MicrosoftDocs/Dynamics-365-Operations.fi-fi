@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112670"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346543"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirja ja yleinen osoitekirja
 
@@ -89,7 +89,7 @@ Päivitystä varten tarvitaan seuraavat tehtävät:
 
 10. Tarkista käyttöönoton jälkeen tietojoukot, tietovuo ja data factoryn linkitetty palvelu.
 
-   ![Tietojoukot, tietovuo ja linkitetty palvelu](media/data-factory-validate.png)
+   ![Tietojoukot, tietovuo ja linkitetty palvelu.](media/data-factory-validate.png)
 
 11. Siirry kohtaan **Hallitse**. Valitse **Yhteydet**-kohdasta **Linkitetty palvelu**. Valitse **DynamicsCrmLinkedService**. Syötä **Muokkaa linkitettyä palvelua (Dynamics CRM)** -lomakkeeseen seuraavat arvot.
 
@@ -154,7 +154,7 @@ Päivitystä varten tarvitaan seuraavat tehtävät:
 
 7. Suorita malli data factoryssä valitsemalla **Käynnistys nyt** seuraavan kuvan mukaisesti. Tämä prosessi saattaa kestää joitakin tunteja tietojen määrän perusteella.
 
-    ![Käynnistimen suoritus](media/data-factory-trigger.png)
+    ![Käynnistimen suoritus.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Jos olet muokannut **tiliä**, **yhteyshenkilöä** ja **toimittajaa**, sinun täytyy muokata mallia.
@@ -164,7 +164,7 @@ Päivitystä varten tarvitaan seuraavat tehtävät:
     + Lataa `FONewParty.csv`-tiedosto Azure blob-objektisäilöstä. Polku on `partybootstrapping/output/FONewParty.csv`.
     + Muunna `FONewParty.csv`-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto finance and operations -sovellukseen. Jos csv-tuonti toimii sinulle, voit tuoda csv-tiedoston suoraan. Tuonti saattaa kestää muutamia tunteja sen mukaan, mikä tietomäärä on käytössä. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../data-import-export-job.md).
 
-    ![Dataverse-osapuolen tietueiden tuominen](media/data-factory-import-party.png)
+    ![Dataverse-osapuolen tietueiden tuominen.](media/data-factory-import-party.png)
 
 9. Ota seuraavat vaiheet käyttöön Customer Engagement -sovelluksissa:
 
@@ -199,7 +199,7 @@ Päivitystä varten tarvitaan seuraavat tehtävät:
 3. Data factory suoritetaan pilkuilla erotettujen csv-tiedostojen perusteella. Jos kenttäarvolla on pilkku, se voi sisältää tulokset, mutta ei välttämättä pilkkua. Poista pilkut.
 4. **Seuranta**-välilehdessä on tietoja kaikista vaiheista ja käsitellyistä tiedoista. Valitse tietty virheenkorjausvaihe.
 
-    ![Seuranta-välilehti](media/data-factory-monitor.png)
+    ![Seuranta-välilehti.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>Lisätietoja mallista
 

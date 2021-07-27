@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816746"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351582"
 ---
 # <a name="functional-locations-and-assets"></a>Toiminnalliset sijainnit ja resurssit
 
@@ -34,13 +34,13 @@ Tässä ohjeaiheessa kerrotaan toiminnallisista sijainneista ja resursseista res
 
 Resurssien hallinta on integroitu saumattomasti useisiin moduuleihin muiden Finance and Operations -sovellusten kanssa. Seuraavassa kuvassa näkyvät liittymät muiden moduulien kanssa.
 
-![Kaavio, jossa näkyvät resurssienhallinnan rajapinnat muihin moduuleihin](media/01-overview-image.png)
+![Kaavio, jossa näkyvät resurssienhallinnan rajapinnat muihin moduuleihin.](media/01-overview-image.png)
 
 Resurssien hallinnan avulla voit tehokkaasti hallita ja suorittaa kaikkia tehtäviä, jotka liittyvät yrityksen monentyyppisten laitteiden hallintaan ja huoltoon. Näihin laitteisiin kuuluvat koneet, tuotantolaitteet ja ajoneuvot. Resurssien hallinta tukee myös ratkaisuja monilla eri aloilla.
 
 Seuraavassa kuvassa on yleiskuvaus päätoiminnoista, jotka kuuluvat resurssien hallintaan.
 
-![Kaavio, jossa näkyy resurssienhallinnan päätoiminto](media/02-overview-image.png)
+![Kaavio, jossa näkyy resurssienhallinnan päätoiminto.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Toiminnalliset sijainnit ja resurssit
 
@@ -50,11 +50,11 @@ Resurssien kustannukset noudattavat aina resurssin sijaintia. Toisin sanoen, jos
 
 Toiminnallisten sijaintien hierarkian koontitapa riippuu yrityksesi vaatimuksista, jotka koskevat sisäisten laitteiden ylläpitoa tai asiakaslaitteiden huoltoa. Seuraavassa kuvassa on esimerkki toiminnallisista sijainneista, jotka perustuvat maantieteellisiin sijainteihin.
 
-![Kaavio, jossa näkyy toiminnallisia sijainteja maantieteellisten sijaintien perusteella](media/03-overview-image.png)
+![Kaavio, jossa näkyy toiminnallisia sijainteja maantieteellisten sijaintien perusteella.](media/03-overview-image.png)
 
 Seuraavassa kuvassa on esimerkki toiminnallisista sijainneista, jotka perustuvat asiakkaisiin.
 
-![Kaavio, jossa näkyy toiminnallisia sijainteja asiakkaiden perusteella](media/04-overview-image.png)
+![Kaavio, jossa näkyy toiminnallisia sijainteja asiakkaiden perusteella.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

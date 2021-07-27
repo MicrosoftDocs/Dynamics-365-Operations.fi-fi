@@ -2,7 +2,7 @@
 title: Evästeen yhteensopivuus
 description: Tässä ohjeaiheessa käsitellään evästeiden yhteensopivuuden ja Microsoft Dynamics 365 Commercen oletuskäytäntöjen huomioitavia seikkoja.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088384"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333066"
 ---
 # <a name="cookie-compliance"></a>Evästeen yhteensopivuus
 
@@ -33,26 +33,27 @@ Saat lisätietoja perusperiaatteista, joita Microsoft käyttää evästeiden nou
 
 Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce -sivustot tällä hetkellä sijoittavat.
 
-| Evästeen nimi                               | Käyttö                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Tallentaa Microsoft Azure Active Directoryn (Azure AD) kertakirjautumisen todentamisevästeet. Tallentaa salatut käyttäjän objektitiedot (nimen, sukunimen ja sähköpostiosoitteen). |
-| &#95;msdyn365___cart&#95;                           | Tallentaa ostoskorin tunnukset, jolla saadaan luettelo ostoskoriesiintymään lisätyistä tuotteista. |
-| &#95;msdyn365___ucc&#95;                            | Evästeiden vaatimustenmukainen hyväksynnän seuranta.                          |
-| ai_session                                  | Määrittää, kuinka moni käyttäjän tehtäväistunto on sisältänyt tiettyjä sivuja ja sovelluksen toimintoja. |
-| ai_user                                     | Määrittää, kuinka moni henkilö on käyttänyt sovellusta ja sen toimintoja. Käyttäjien laskennassa käytetään anonyymeja tunnuksia. |
-| b2cru                                       | Tallentaa uudelleenohjauksen URL-osoitteen dynaamisesti.                              |
-| JSESSESSIID                                  | Adyen-maksuyhdistin käyttää käyttäjäistunnon tallentamiseen.       |
-| OpenIdConnect.nonce.&#42;                       | Todennus                                               |
-| x-ms-cpim-cache:.&#42;                          | Käytetään pyynnön tilan ylläpitämiseen.                      |
-| x-ms-cpim-csrf                              | Jaetun julkaisuoikeuspyynnön väärentämisen (CRSF) tunnus, jota käytetään CRSF-väärennökseltä suojautumiseen.     |
-| x-ms-cpim-dc                                | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. |
-| x-ms-cpim-rc.&#42;                              | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. |
-| x-ms-cpim-slice                             | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Käytetään kertakirjautumisistunnon ylläpitämiseen.                        |
-| x-ms-cpim-trans                             | Käytetään tapahtumien seurantaan (kuluttajakauppasivustossa todennettavien avoimien välilehtien määrä), mikä sisältää myös nykyisen tapahtuman. |
-| \_msdyn365___muid_                            | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään käyttäjätunnuksena kokeilutarkoituksiin. |
-| \_msdyn365___exp_                             | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään suorituskyvyn kuormituksen tasaamisen mittarina.         |
-| d365mkt                                       | Käytetään, jos sijaintiin perustuva tunnistus käyttäjän IP-osoitteen seuraamiseksi Commercen sijaintiehdotuksille on otettu käyttöön Commercen sivustonluontityökalussa kohdassa **Sivustoasetukset > Yleiset > Ota sijaintiin perustuva kaupan tunnistus käyttöön**.      |
+| Evästeen nimi                               | Käyttö                                                        | Elinkaari |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Tallentaa Microsoft Azure Active Directoryn (Azure AD) kertakirjautumisen todentamisevästeet. Tallentaa salatut käyttäjän objektitiedot (nimen, sukunimen ja sähköpostiosoitteen). | Istunto |
+| \_msdyn365___cart_                           | Tallentaa ostoskorin tunnukset, jolla saadaan luettelo ostoskoriesiintymään lisätyistä tuotteista. | Istunto |
+| \_msdyn365___checkout_cart_                           | Tallentaa kassaostoskorin tunnuksen, jota käytetään kassaostoskorin esiintymään lisättyjen tuotteiden luettelon noutamiseen. | Istunto |
+| \_msdyn365___ucc_                            | Evästeiden vaatimustenmukainen hyväksynnän seuranta.                          | 1 vuosi |
+| ai_session                                  | Määrittää, kuinka moni käyttäjän tehtäväistunto on sisältänyt tiettyjä sivuja ja sovelluksen toimintoja. | 30 minuuttia |
+| ai_user                                     | Määrittää, kuinka moni henkilö on käyttänyt sovellusta ja sen toimintoja. Käyttäjien laskennassa käytetään anonyymeja tunnuksia. | 1 vuosi |
+| b2cru                                       | Tallentaa uudelleenohjauksen URL-osoitteen dynaamisesti.                              | Istunto |
+| JSESSESSIID                                  | Adyen-maksuyhdistin käyttää käyttäjäistunnon tallentamiseen.       | Istunto |
+| OpenIdConnect.nonce.&#42;                       | Todentaminen                                               | 11 minuuttia |
+| x-ms-cpim-cache:.&#42;                          | Käytetään pyynnön tilan ylläpitämiseen.                      | Istunto |
+| x-ms-cpim-csrf                              | Jaetun julkaisuoikeuspyynnön väärentämisen (CRSF) tunnus, jota käytetään CRSF-väärennökseltä suojautumiseen.     | Istunto |
+| x-ms-cpim-dc                                | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. | Istunto |
+| x-ms-cpim-rc.&#42;                              | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. | Istunto |
+| x-ms-cpim-slice                             | Käytetään reitittämään pyyntöjä sopivaan tuotannon todennuspalvelinesiintymään. | Istunto |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Käytetään kertakirjautumisistunnon ylläpitämiseen.                        | Istunto |
+| x-ms-cpim-trans                             | Käytetään tapahtumien seurantaan (kuluttajakauppasivustossa todennettavien avoimien välilehtien määrä), mikä sisältää myös nykyisen tapahtuman. | Istunto |
+| \_msdyn365___muid_                            | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään käyttäjätunnuksena kokeilutarkoituksiin. | 1 vuosi |
+| \_msdyn365___exp_                             | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään suorituskyvyn kuormituksen tasaamisen mittarina.         | 1 tunti |
+| d365mkt                                       | Käytetään, jos sijaintiin perustuva tunnistus käyttäjän IP-osoitteen seuraamiseksi kauppojen sijaintiehdotuksille on otettu käyttöön Commercen-sivuston luontiohjelman kohdassa **Sivustoasetukset \> Yleiset \> Ota sijaintiin perustuva kaupan tunnistus käyttöön**.      | 1 tunti |
 
 Jos sivuston käyttäjä valitsee sivuston mahdolliset medialinkit, seuraavan taulukon evästeitä seurataan myös selaimessa.
 

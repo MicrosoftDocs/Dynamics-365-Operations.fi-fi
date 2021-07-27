@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751151"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351887"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>ER-muodon parametrien määrittäminen yrityskohtaisesti
 
@@ -49,7 +49,7 @@ Tässä ohjeaiheessa olevien esimerkkien suorittaminen edellyttää jonkin seura
     
     Seuraavassa kuvassa näkyy määritykset, jotka on oltava tehtyinä, kun olet valmis.
 
-    ![Sähköisen raportoinnin konfiguroinnit -sivu](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![Sähköisen raportoinnin konfiguroinnit -sivu.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>DEMF-yrityksen parametrien määrittäminen
 
@@ -59,7 +59,7 @@ Voit määrittää ER-muodon sovelluskohtaiset parametrit ER-kehyksen avulla.
 2.  Valitse määrityspuussa muoto **LE-tietojen haun oppimismuoto**.
 3.  Valitse toimintoruudussa **Konfiguroinnit**-välilehden **Sovelluskohtaiset parametrit**-ryhmässä **Määritys**.
 
-    ![ER-sovelluskohtaiset parametrit -sivu](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![ER-sovelluskohtaiset parametrit -sivu.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Voit määrittää **Sovelluskohtaiset parametrit** -sivulla **LE-tietojen haun oppimismuoto** -muodon **Valitsin**-tietolähteen.
     
@@ -75,14 +75,14 @@ Voit määrittää ER-muodon sovelluskohtaiset parametrit ER-kehyksen avulla.
 
     Haku tuloksena on verotuskoodien luettelo valintaa varten. ER-perusmuodossa määritetty **Model.Data.Tax**-tietolähde palauttaa tämän luettelon. Koska tässä tietolähteessä on **Nimi**-kenttä, kunkin verokoodin nimi näkyy haussa.
 
-    ![ER-sovelluskohtaiset parametrit -sivu](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![ER-sovelluskohtaiset parametrit -sivu.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Valitse **VAT19**-verokoodi.
 8.  Avaa haku valitsemalla uuden tietueen **Haun tulos** -kentässä avattavan valikon nuoli. Haun tuloksena on TaxationLevel-muodon luetteloinnin arvoluettelo valintaa varten.
 
     Huomaa, että jos sen käyttäjän ensisijaiseksi kieleksi on valittu suomi, jona olet kirjautunut sisään, haun arvojen otsikot ovat suomeksi, mikäli ne on käännetty ER-perusmuodossa. Jos lisäksi haun tietolähteen otsikko on käännetty, kyseinen otsikko näkyy käyttäjän ensisijaisella kielellä **Haku**-valintalehdessä.
 
-    ![ER-sovelluskohtaiset parametrit -sivu](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![ER-sovelluskohtaiset parametrit -sivu.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Valitse **Normaali verotus** -arvo.
 
@@ -120,7 +120,7 @@ Voit määrittää ER-muodon sovelluskohtaiset parametrit ER-kehyksen avulla.
     
     Tämän viimeisen tietueen lisääminen määrittää seuraavan säännön: aina kun argumenttina välitetty verokoodi ei vastaa mitään edellisistä säännöistä, haun tietolähde palauttaa **Muu**-arvon pyydettynä verotustasona.
 
-    ![ER-sovelluskohtaiset parametrit -sivu](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![ER-sovelluskohtaiset parametrit -sivu.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. Valitse **Tila**-kentässä **Valmis**.
 
@@ -144,7 +144,7 @@ Voit määrittää ER-muodon sovelluskohtaiset parametrit ER-kehyksen avulla.
 6.  Valitse **InVAT7**-verokoodi.
 7.  Valitse toimintoruudun **Arvonlisäverokoodi**-välilehden **Kyselyt**-ryhmässä **Kirjattu arvonlisävero**. Voit sitten tarkastella tietoja veroarvosta ja käytetystä verokoodikohtaisesta veroprosentista.
 
-    ![Kirjattu arvonlisävero -sivu](./media/GER-AppSpecParms-Statement.PNG)
+    ![Kirjattu arvonlisävero -sivu.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Sulje Kirjattu arvonlisävero -sivu.
 
@@ -160,7 +160,7 @@ Voit määrittää ER-muodon sovelluskohtaiset parametrit ER-kehyksen avulla.
 
     Haun tuloksena on nyt **USMF**-yritysveron verokoodiluettelo, josta valinta tehdään.
 
-    ![ER-sovelluskohtaiset parametrit -sivu](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![ER-sovelluskohtaiset parametrit -sivu.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Valitse **EXEMPT**-verokoodi.
 9.  Valitse uuden tietuen **Haun tulos** -kentässä **Ei verotusta** -arvo.
@@ -170,7 +170,7 @@ Voit määrittää ER-muodon sovelluskohtaiset parametrit ER-kehyksen avulla.
 13. Valitse **Tila**-kentässä **Valmis**.
 14. Valitse **Tallenna**.
 
-    ![ER-sovelluskohtaiset parametrit -sivu](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![ER-sovelluskohtaiset parametrit -sivu.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Sulje **Sovelluskohtaiset parametrit** -sivu.
 
@@ -225,13 +225,13 @@ Edellisessä esimerkissä olet käyttänyt ER-muodon sovelluskohtaisia parametre
 
 1.  Käytä joko aiemmin luotua **ERSolutionAppSpecificParametersDesigner**-valikkovaihtoehtoa uudelleen tai käytä omaa **ERSolutionAppSpecificParametersDesigner**-valikkovaihtoehtoa.
 
-    ![Visual Studio -sivu](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio -sivu.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Noudata seuraavia ohjeita:
 
     1.  Luo uusi valikkovaihtoehdon painike ja linkitä se vastaavaan **ERSolutionTable**-taulukon tietueeseen määrittämällä sen **Tietolähde**-ominaisuudeksi **ERSolutionTable**.
     
-        ![Visual Studio -sivu](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio -sivu.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Luo yksinkertainen painike ja korvaa **Napsautus**-menetelmä seuraavassa esimerkissä kuvatulla tavalla.
     

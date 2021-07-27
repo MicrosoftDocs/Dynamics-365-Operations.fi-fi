@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894169"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357639"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Sähköisessä raportissa luotavien isokokoisten asiakirjojen pakkaaminen 
 
@@ -55,7 +55,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen menettelyt loppuun, seuraavien vaih
 1. [Tuodun muodon suorittaminen](er-defer-xml-element.md#run-the-imported-format)
 2. Huomaa, että luodun asiakirjan koko XML-muodossa on 3 kilotavua (kt).
 
-    ![Pakkaamattoman lähtevän asiakirjan esikatselu](./media/er-compress-outbound-files1.png)
+    ![Pakkaamattoman lähtevän asiakirjan esikatselu.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Muodon muokkaaminen luodun tulosteen pakkaamiseksi
 
@@ -80,7 +80,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen menettelyt loppuun, seuraavien vaih
     > [!NOTE] 
     > Tämän zip-tiedoston sisältämän XML-tiedoston pakkaussuhde on 87 prosenttia. Pakkaussuhde määräytyy pakattavien tietojen mukaan.
 
-    ![Pakatun lähtevän asiakirjan esikatselu](./media/er-compress-outbound-files2.png)
+    ![Pakatun lähtevän asiakirjan esikatselu.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Jos ER-[kohde](electronic-reporting-destinations.md) on määritetty tulosteen luovan muotoelementin (tässä esimerkissä **Raportti**-elementin) osalta, tulosteen pakkaus ohitetaan.

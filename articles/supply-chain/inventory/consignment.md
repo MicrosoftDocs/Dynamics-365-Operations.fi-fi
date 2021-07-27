@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015850"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360397"
 ---
 # <a name="set-up-consignment"></a>Tavaralähetyksen määrittäminen
 
@@ -61,7 +61,7 @@ Tavaralähetyksen täydennystilaus -asiakirjalla voidaan pyytää ja jäljittä�
 
 **Omistaja**-dimension avulla erotetaan toisistaan toimittajan omistaman varaston tiedot ja vastaanottavan yrityksen omistaman varaston tiedot. Tavaralähetyksen täydennyksen tilausriveillä on **Avoin tilaus** -tila niin pitkään kuin rivien koko määrää ei ole vastaanotettu tai peruutettu. Kun koko määrä on vastaanotettu tai peruutettu, tilaksi muutetaan **Valmis**. Fyysinen käytettävissä oleva varasto, joka liittyy tavaralähetyksen täydennystilaukseen, voidaan kirjata rekisteröintiprosessin tai tuotteen vastaanoton päivitysprosessin avulla. Kirjaus voidaan tehdä osana nimikkeen saapumisen kirjausprosessia tai päivittämällä tilausrivit manuaalisesti. Kun käytetään tuotteen vastaanoton päivitysprosessia, kirjaus tehdään tuotteen vastaanoton kirjauskansioon, jota voidaan käyttää tavaran vastaanoton kuittaamiseen toimittajille.
 
-[![Tavaralähetyksen täydennystilaukset](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Tavaralähetyksen täydennystilaukset.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Varaston omistajuuden muutoksen kirjauskansio
 
@@ -74,7 +74,7 @@ Vain ne varastotapahtumat luodaan, jotka liittyvät kirjattuun kirjauskansioon. 
 
 Tavaralähetyksen ostotilausten tuoterivien määrää ei voida päivittää tilauksen luonnin jälkeen.
 
-[![Varaston omistajuuden muutoksen kirjauskansio](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Varaston omistajuuden muutoksen kirjauskansio.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Toimittajayhteistyö tavaralähetysprosesseissa
 
@@ -90,13 +90,13 @@ Lisätietoja toimittajien määrittämisestä käyttämään toimittajayhteisty�
 
 Saapuvien lähetyksen fyysisen varaston kirjaamiseksi täytyy määrittää toimittajan omistaja. Tämä tehdään **varaston omistaja** -sivulla. Kun valitset **toimittajatili** tämä luo oletusarvot **nimi** ja **omistaja** -kenttiin. Arvo **omistaja**-kentässä näytetään toimittajalle, joten voit halutessasi muuttaa sitä, jos ulkoisten käyttäjien ei ole helppoa tunnistaa toimittajan tilin nimiä. Voit muokata **omistaja** -kenttää ainoastaan siihen asti, kun olet tallentanut **varaston omistaja** -tietueen. **Nimi**-kenttä täytetään sen osapuolen tiedoilla, joihin toimittajatili liittyy, eikä sitä voi muuttaa.
 
-[![Varaston omistajat](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Varaston omistajat.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Seurantadimensioryhmä
 
 Nimikkeet, jotka on tarkoitus käyttää lähetysprosesseissa, on yhdistettävä **seurantadimensioryhmään** jossa **omistaja** dimension arvo määritetään **aktiivinen**. Omistaja-dimensiossa **Varastotilanne** ja **kirjanpitovarasto** -asetukset ovat aina valittuina. **Kattavuussuunnitelma dimension mukaan** ei ole koskaan valittuna.
 
-[![Seurantadimensioryhmä](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Seurantadimensioryhmä.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271205"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360373"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -81,7 +81,7 @@ Voit vahvistaa suunnitellut tilaukset manuaalisesti etsimällä ja valitsemalla 
     - **Ryhmittely kauden mukaan** (**Ostotilaukset**-osassa) – Valitse kausi, jonka mukaan suunnitellut ostotilaukset ryhmitellään. Jos haluat käyttää tätä asetusta, sinun täytyy valita myös **Ryhmittely toimittajan mukaan** -vaihtoehto.
     - **Ryhmittely kauden mukaan** (**Siirrot**-osassa) – Valitse kausi, jonka mukaan suunnitellut siirtotilaukset ryhmitellään. Tilaukset ryhmitellään **Varastosta**- ja **Varastoon**-arvojen mukaan.
 
-    ![Parametrit-pikavälilehti Vahvistus-valintaikkunassa](./media/manual-firming.png "Parametrit-pikavälilehti Vahvistus-valintaikkunassa")
+    ![Parametrit-pikavälilehti Vahvistus-valintaikkunassa.](./media/manual-firming.png "Parametrit-pikavälilehti Vahvistus-valintaikkunassa")
 
 1. **Suorita taustalla**-pikavälilehdessä määritä työ niin, että se suoritetaan erätilassa. Ei kuitenkaan ole järkevää määrittää toistuvaa aikataulua, kun vahvistat ajoituksen manuaalisesti. Kentät toimivat samalla tavalla kuin muissakin [taustatöissä](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) Supply Chain Managementissa. Manuaalisessa vahvistuksessa erätyö käsittelee kuitenkin vain valittuna olevat suunnitellut tilaukset. Se ei käsittele tilauksia, jotka sopivat sivulla sillä hetkellä käytettäviin suodattimiin.
 1. Ota asetukset käyttöön valitsemalla **OK** ja luo vahvistetut tilaukset.
@@ -140,15 +140,15 @@ Toimi seuraavasti, kun haluat vahvistaa suunnitellun tilauksen käyttämällä k
     - **Vahvistuksen aikarajapäivät eteenpäin** – Valitse, kuinka pitkälle tulevaisuuteen pääsuunnittelun on laskettava erilaiset tarpeet ja muut huomionarvoiset seikat.
     - **Vahvistuksen aikarajapäivät taaksepäin** – Valitse, kuinka pitkälle menneeseen pääsuunnittelun on laskettava erilaiset tarpeet ja muut huomionarvoiset seikat.
 
-    ![Parametrit-pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa](./media/planned-order-firming-main-1.png "Parametrit-pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa")
+    ![Parametrit-pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa.](./media/planned-order-firming-main-1.png "Parametrit-pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa")
 
 1. Voit määrittää tilaukseen sisällytettävät tietueet valitsemalla **Suodata**-painikkeen **Sisällytettävät tietueet** -pikavälilehdeltä. Näyttöön tulee vakiokyselyvalintaikkuna, jossa voit määrittää valintaehtoja, lajitteluehtoja ja liitoksia. Kentät toimivat samalla tavalla kuin muissakin kyselyissä Supply Chain Managementissa. Tämän lomakkeen kentät ovat vain luku -kenttiä, ja ne näyttävät kyselyyn liittyviä arvoja.
 
-    ![Sisällytettävät tietueet -pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa](./media/planned-order-firming-main-2.png "Sisällytettävät tietueet -pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa")
+    ![Sisällytettävät tietueet -pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa.](./media/planned-order-firming-main-2.png "Sisällytettävät tietueet -pikavälilehti Suunniteltujen tilausten vahvistaminen -valintaikkunassa")
 
 1. Valitse **Esiversio**, jos haluat esikatsella vahvistetun tilauksen sisältöä asetusten mukaan. Luettelo suunnitelluista tilauksista, jotka on tarkoitus vahvistaa, näytetään sanomana. Voit sitten tarvittaessa muuttaa asetuksia, kunnes esikatselussa näkyy vahvistettu tilaus halutunlaisena.
 
-    ![Esimerkki vahvistetun tilauksen esikatselusta](./media/planned-order-firming-preview.png "Esimerkki vahvistetun tilauksen esikatselusta")
+    ![Esimerkki vahvistetun tilauksen esikatselusta.](./media/planned-order-firming-preview.png "Esimerkki vahvistetun tilauksen esikatselusta")
 
     > [!WARNING]
     > Tämä ominaisuus vahvistaa kaikki suodatusehtoja vastaavat suunnitellut tilaukset. Suunniteltujen tilausten kritiikitön vahvistus voi aiheuttaa sen, että luodaan runsaasti ei-toivottuja osto-, siirto- ja tuotantotilauksia. Ennen jatkamista voit vahvistaa sisällytettävät tietueet **Esiversio**-painikkeen avulla.

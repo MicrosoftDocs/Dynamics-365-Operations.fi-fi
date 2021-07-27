@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358095"
 ---
 # <a name="inventory-visibility-add-in"></a>Varaston näkyvyyden apuohjelma
 
@@ -143,7 +143,7 @@ Kun olet määrittänyt tarvittavat edellytykset, käytä seuraavaa menettelyä,
 
             Lisätietoja tästä muuttujasta on jäljempänä tässä ohjeaiheessa kohdassa [Varaston näkyvyyden integraation määrittäminen](#setup-inventory-visibility-integration).
 
-        ![Määrityksen käynnistin](media/configuration-trigger.png "Määrityksen käynnistin")
+        ![Määrityksen käynnistin.](media/configuration-trigger.png "Määrityksen käynnistin")
 
     1. Valitse **Ota käyttöön**.
 
@@ -157,7 +157,7 @@ Varaston näkyvyyden apuohjelman asentaminen:
 1. Siirry ympäristösivulla alaspäin, kunnes näet **Ympäristön lisäosat** -kohdan **Power Platform -integraatio** -kohdassa, josta löytyy Dataverse-ympäristön nimi.
 1. Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.
 
-    ![Ympäristösivu LCS:ssa](media/inventory-visibility-environment.png "Ympäristösivu LCS:ssa")
+    ![Ympäristösivu LCS:ssä.](media/inventory-visibility-environment.png "Ympäristösivu LCS:ssa")
 
 1. Valitse **Asenna uusi apuohjelma** -linkki. Käytettävissä olevien apuohjelmien luettelo avautuu.
 1. Valitse luettelosta **Vataston näkyvyys**.
@@ -166,7 +166,7 @@ Varaston näkyvyyden apuohjelman asentaminen:
     - **AAD-sovelluksen (asiakasohjelman) tunnus**
     - **AAD-vuokraajan tunnus**
 
-    ![Apuohjelman määrityssivu](media/inventory-visibility-setup.png "Apuohjelman määrityssivu")
+    ![Apuohjelman määrityssivu.](media/inventory-visibility-setup.png "Apuohjelman määrityssivu")
 
 1. Hyväksy käyttöehdot valitsemalla **Käyttöehdot**-valintaruutu.
 1. Valitse **Asenna**. Apuohjelman tilana näkyy nyt **Asennetaan**. Se on valmis, päivitä sivu, jonka jälkeen tilana on **Asennettu**.

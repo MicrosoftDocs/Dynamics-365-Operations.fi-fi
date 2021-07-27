@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d68e1b3a4dc31823ec56a525149f16bdc23c0883
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: bc1a8570e60e2b17f27c3e63c5ff847b3cb7a2dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023222"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358455"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Laskujen TDS:n laskeminen kirjauskansioiden avulla
 
@@ -31,7 +31,7 @@ Tässä aiheessa luetellaan kirjauskansioiden vaiheet Vero vähennettynä lähte
 
 Aloita avaamalla **Yleiset kirjauskansiot** -sivu (**Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot**).
 
-[![Yleiset kirjauskansiot](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
+[![Yleiset kirjauskansiot.](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
 
 1. Luo kirjauskansiorivejä taulussa lueteltujen kirjauskansiolomakkeiden avulla. Valitse tilityyppi ja vastatilin tyyppi ja kirjoita tapahtuman summa. 
 

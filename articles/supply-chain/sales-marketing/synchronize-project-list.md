@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5cb7f8b9a3107a7787c787ace71ab574457b1646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb98f266a217fc16c56c38e2480b85f529fb1862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828487"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359834"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Projektiluettelon synkronointi Supply Chain Managementista Field Serviceen
 
@@ -29,7 +29,7 @@ ms.locfileid: "5828487"
 
 Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projekteja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceeen.
 
-[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoitaessa projekteja Supply Chain Managementista Field Serviceen.
@@ -63,7 +63,7 @@ Ota muutosten seuranta käyttöön tietoyksikköprojekteissa.
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projektit (Supply Chain Managementista Field Serviceen): Projektit
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProject1.png)](./media/FSProject1.png)
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

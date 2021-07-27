@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c95704b944f86a1cfc0654f0ebf5bc7c79bbeec9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b54b58a29dc23e19f5065363c331351f24267ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808685"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360943"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Ylläpitopyynnön elinkaaritilat
 
@@ -48,7 +48,7 @@ Huoltopyynnön elinkaaritilat määrittävät vaiheet, jotka pyyntö voi käydä
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön elinkaaren tilat** -sivusta.
 
-![Ylläpitopyynnön elinkaaritilasivu](media/02-setup-for-requests.png)
+![Ylläpitopyynnön elinkaaritilasivu.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Huoltopyynnön elinkaaritilat, elinkaaren tilaryhmät ja -tyypit liittyvät toisiinsa ja niitä käytetään samalla tavalla kuin työtilauksen elinkaaritiloja, elinkaaren tilaryhmiä ja -tyyppejä. 
@@ -66,9 +66,9 @@ Kun olet luonut kunnossapitopyynnöille tarvittavat elinkaaritilat, ne voidaan j
 
 5. Valitse **Elinkaaren tilat** -pikavälilehdessä ne elinkaaren tilat, jotka sisällytetään elinkaarimalliin.
 
-    - Jos haluat lisätä elinkaaritilan elinkaarimalliin, valitse se **Jäljellä olevat elinkaaren tilat** -osiosta ja siirrä se sitten **Valitut elinkaaren tilat** -osaan valitsemalla ![oikea nuoli](media/03-setup-for-requests.png).
-    - Jos haluat lisätä kaikki käytettävissä olevat elinkaaritilat elinkaarimalliin, valitse **Valitse kaikki käytettävissä olevat tilat** -painike ![Valitse kaikki käytettävissä olevat tilat](media/04-setup-for-requests.png). Kaikki elinkaaritilat siirretään **Valitut elinkaaren tilat** -osioon.
-    - Jos haluat poistaa elinkaaritilan elinkaarimallista, valitse se **Valitut elinkaaren tilat** -osiosta ja siirrä se sitten **Jäljellä olevat elinkaaren tilat** -osaan valitsemalla ![vasen nuoli](media/05-setup-for-requests.png).
+    - Jos haluat sisällyttää elinkaaren tilan elinkaarimalliin, valitse se **Jäljellä olevat elinkaaren tilat** -osiosta ja valitse sitten oikealle osoittava nuolipainike ![Oikea nuoli.](media/03-setup-for-requests.png) siirtääksesi sen **Valitut elinkaaren tilat** -osioon.
+    - Jos haluat lisätä kaikki käytettävissä olevat elinkaaritilat elinkaarimalliin, valitse **Valitse kaikki käytettävissä olevat tilat** -painike ![Valitse kaikki käytettävissä olevat tilat.](media/04-setup-for-requests.png). Kaikki elinkaaritilat siirretään **Valitut elinkaaren tilat** -osioon.
+    - Jos haluat poistaa elinkaaren tilan elinkaarimallista, valitse se **Valitut elinkaaren tilat** -osiosta ja valitse sitten vasemmalle osoittava nuolipainike ![Vasen nuoli.](media/05-setup-for-requests.png) siirtääksesi sen **Jäljellä olevat elinkaaren tilat** -osioon.
 
 6. **Yleiset**-pikavälilehden **Päivitykset**-osion kentät ovat merkityksellisiä, jos käytät varastokorjausta.
 
@@ -77,7 +77,7 @@ Kun olet luonut kunnossapitopyynnöille tarvittavat elinkaaritilat, ne voidaan j
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön elinkaarimallit** -sivusta.
 
-![Ylläpitopyynnön elinkaarimallisivu](media/06-setup-for-requests.png)
+![Ylläpitopyynnön elinkaarimallit -sivu.](media/06-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

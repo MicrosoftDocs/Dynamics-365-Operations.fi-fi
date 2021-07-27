@@ -13,18 +13,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 227082358c59abddd63f4faa4536a8df270a4d80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24f8af4d691c3085c36018c574fa3b917a3d6953
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059085"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314210"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Palkanlaskennan kiinteän kompensaation suunnitelma
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tämä ohjeaihe sisältää tietoja ja esimerkkikyselyn palkanlaskennan kiinteän kompensaatiosuunnitelman yksiköstä Dynamics 365 Human Resourcesissa.
+Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Palkanlaskennan kiinteä kompensaatiosuunnitelma -yksikkö.
+
+### <a name="description"></a>kuvaus
+
+Tämä yksikkö tarjoaa työntekijän tietylle toimelle kohdistetun palkanlaskennan kiinteän kompensaatiosuunnitelman.
+
+Fyysinen nimi: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Ominaisuudet
 
@@ -37,11 +43,11 @@ Tämä ohjeaihe sisältää tietoja ja esimerkkikyselyn palkanlaskennan kiinteä
 | **Palkanlaskennan kiinteän kompensaatiosuunnitelman yksikkö**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Vaadittu<br>Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla kompensaatiosuunnitelma voidaan yksilöivästi tunnistaa. |
 | **Maksutiheys**<br>mshr_payfrequency<br>*Merkkijono* | Vain luku<br>Vaadittu |Kuinka usein työntekijälle maksetaan palkkoja.  |
 | **Voimassaolo päättyy**<br>mshr_validto<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Päivämäärä, johon asti työntekijän kiinteä kompensaatio on voimassa. |
-| **Toimen tunnus**<br>mshr_positionid<br>*Merkkijono* | Vain luku <br>Vaadittu | Työntekijän ja kiinteän kompensaatiosuunnitelman rekisteröintiin liittyvä postitustunnus. |
+| **Toimen tunnus**<br>mshr_positionid<br>*Merkkijono* | Vain luku <br>Vaadittu | Työntekijään ja kiinteän kompensaation suunnitelman rekisteröintiin liittyvän toimen tunnus. |
 | **Valuutta**<br>mshr_currency<br>*Merkkijono* | Vain luku <br>Vaadittu |Kiinteälle kompensaatiosuunnitelmalle määritetty valuutta   |
 | **Henkilöstönumero**<br>mshr_personnelnumber<br>*Merkkijono* | Vain luku<br>Vaadittu |Työntekijän yksilöivä henkilökuntanumero.  |
 
-**Kysely**
+## <a name="example-query"></a>Esimerkkikysely
 
 **Pyyntö**
 
@@ -53,18 +59,24 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollfixedcompensationplanentities?$f
 
 ```json
 {
-            "mshr_planid": "GradeC",
-            "mshr_personnelnumber": "000041",
-            "mshr_payrate": 75200,
-            "mshr_positionid": "000276",
-            "mshr_validfrom": "2011-04-05T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_payfrequency": "Annual",
-            "mshr_currency": "USD",
-            "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
-            "_mshr_fk_payroll_id_value": null
+    "mshr_planid": "GradeC",
+    "mshr_personnelnumber": "000041",
+    "mshr_payrate": 75200,
+    "mshr_positionid": "000276",
+    "mshr_validfrom": "2011-04-05T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_payfrequency": "Annual",
+    "mshr_currency": "USD",
+    "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
+    "_mshr_fk_payroll_id_value": null
 }
 ```
+
+## <a name="see-also"></a>Lisätietoja
+
+[Palkanlaskennan integroinnin ohjelmointirajapinnan esittely](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
