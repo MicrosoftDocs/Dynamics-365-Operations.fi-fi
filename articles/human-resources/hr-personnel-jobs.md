@@ -2,11 +2,11 @@
 title: Työn komponenttien määrittäminen
 description: Tässä artikkelissa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
 ms.author: anbichse
 ms.search.scope: Human Resources
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dc3cec4880fdcb4d4f8d54b03037f738d2a57a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d4e24e64f3fece0807df8fbf4fb206c4588c9332
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056566"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333090"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Työn komponenttien määrittäminen
 
@@ -35,7 +35,7 @@ Jotkin työtä koskevat tiedot, kuten ammattinimike, tyyppi ja toiminto, ovat p�
 ## <a name="job-titles"></a>Ammattinimikkeet
 Ennen kuin voit luoda töitä, on määritettävä kyseisten töiden otsikot. Toimet perivät ammattinimikkeet töiltä, joihin toimet liittyvät. 
 
-Ylläpidä ammattinimikkeitä käyttäen **Tittelit**-sivua, jonka voit avata käyttämällä hakutoimintoa. Anna **Tittelit**-sivulla tittelit, joita aiot käyttää töihisi.
+Ylläpidä ammattinimikkeitä käyttäen **Tittelit**-sivua, jonka voit avata käyttämällä hakutoimintoa. Syötä **Tittelit** -sivulle tittelit, joita aiot käyttää töillesi.
 
 ## <a name="job-types"></a>Työtyypit
 Työtyyppien avulla voi luokitella samankaltaisia töitä. Työtyypit eivät ole pakollisia. Kuitenkin jos aiot käyttää työtyyppejä, kun määrität oikeutussäännöt kompensaationhallintaan, sinun tulee määrittää työtyypit ennen töiden määrittämistä. Työtyypit ovat: kokopäiväinen ja osa-aikainen sekä kuukausipalkka tai tuntipalkka. Voit ylläpitää työtyyppejä **Työtyypit**-sivulla. Anna **Työtyypit**-sivulla työtyypin nimi ja lyhyt kuvaus. Valitse **Vapautustila**-kentässä jokin seuraavista asetuksista ja ilmaistaksesi Fair Labor Standards Act (FLSA) -vapautustilan tämän työtyypin töille:
@@ -43,6 +43,11 @@ Työtyyppien avulla voi luokitella samankaltaisia töitä. Työtyypit eivät ole
 -   **Vapautus** – Työt on vapautettu ylitöistä FLSA-säädösten mukaisesti.
 -   **Ei vapautusta** – Töitä ei ole vapautettu ylitöistä FLSA-säädösten mukaisesti.
 -   **Ei koske** – FLSA-kattavuus ei ole käytössä.
+
+## <a name="job-family"></a>Työluokka
+Työluokka on ryhmä samankaltaisia töitä, jotka vaativat samankaltaista koulutusta, taitoja, tietämystä ja osaamista. Työluokka voidaan linkittää työhön **Työt**-sivun **Työn luokittelu** -pikavälilehdestä ja **Kaikki toimet** -sivun **Yleiset**-pikavälilehdestä. Työluokat voivat olla yleisiä tai tarkkoja, riippuen liiketoiminta- ja raportointivaatimuksistasi. Yleisiä työluokkia ovat esimerkiksi **Ammattitaitoiset työt** ja **Ammattitaidottomat työt**. Tarkkoja työluokkia ovat esimerkiksi **Kirjanpito**, **Valmistus** ja **Myynti**.
+
+Ylläpidä työluokkia **Työluokka**-sivulta, jonka voit avata käyttämällä hakutoimintoa. Syötä **Työluokka**-sivulle luokan yksilöivä nimi ja kirjoita yksityiskohtainen kuvaus, jota aiot käyttää töillesi.
 
 ## <a name="job-functions"></a>Työtehtävät
 Työtehtävät kuvaavat toiminnalliset luokat korkealla tasolla ja yhdistävät korkean tason velvollisuudet. Työtehtävät eivät ole pakollisia. Voit käyttää työtehtäviä yhdessä työtyyppien kanssa suodattaaksesi kompensaatiosuunnitelmia tiettyihin töihin. Voit liittää työtehtävät ja työtyypit kompensaatiosuunnitelmiin määrittämällä oikeutussäännöt **Oikeutussäännöt**-sivulla. Sitten voit liittää kompensaatiosuunnitelmaan tasojoukon, jota käytetään tietyssä oikeutussäännön kautta määritetyssä työtyypin ja -tehtävän yhdistelmässä. (Nämä ominaisuudet koskevat sekä kiinteitä kompensaatiosuunnitelmia että muuttuvia kompensaatiosuunnitelmia). Jos kuitenkin aiot käyttää työtehtäviä, kun määrität oikeutussäännöt kompensaationhallinnalle, sinun tulee määrittää työtehtävät ennen kuin määrität työt. Seuraavassa taulukossa on joitakin esimerkkejä työtehtävistä.
@@ -53,6 +58,14 @@ Työtehtävät kuvaavat toiminnalliset luokat korkealla tasolla ja yhdistävät 
 | Kirjanpitäjä    | Ammattilaiset        |
 
 Voit ylläpitää työtehtäviä **Työtehtävät**-sivulla. Anna **Työtehtävät**-sivulla työtehtävän tunnistekoodi ja lyhyt kuvaus.
+
+## <a name="compensation"></a>Kompensaatio
+Jos haluat kohdistaa kiinteän kompensaatiosuunnitelman työntekijälle, jolla on toimi työssä, sinun täytyy määrittää työlle kompensaatiotasot. Kompensaatiotasoa käytetään, kun vähimmäis-, keskipiste- ja enimmäissummat on määritetty kompensaatiorakenteessa (kompensaatioruudukko). Kun kiinteä kompensaatiosuunnitelma luodaan, kompensaatiorakenne valitaan. Kompensaatiorakenne sisältää myös kompensaatiotason. Kun valitset työntekijälle kiinteää kompensaatiosuunnitelmaa, valittavissa olevat kompensaatiotasot riippuvat työstä, johon työntekijän toimi on liitetty. Lisätietoja kompensaation määrittämisestä on kohdassa [Kompensaatiosuunnitelmat](hr-compensation-overview.md).
+
+## <a name="job-skills"></a>Työ osaamisalueet
+Työn osaamisalueet kuvaavat työn suorittamiseen tarvittavia taitoja. Jokaiseen osaamisalueeseen täytyy liittää osaamistaso. Osaamistasot ovat käyttäjien määrittämiä. Ne ilmaisevat osaamisalueen edellyttämän tietämyksen tai osaamisen tason. Yritykset voivat esimerkiksi määrittää numeerisia tasoja, kuten 1–5, jossa **1** tarkoittaa aloittelijaa ja **5** asiantuntijaa. Vaihtoehtoisesti yritykset voivat määrittää tasoja, joilla on otsikot **Aloittelija**, **Keskitaso** tai **Asiantuntija**. Kun osaamistaso on määritetty, myös osaamisen tärkeys voidaan määrittää. Jos esimerkiksi kirjanpitäjältä edellytetään vahvaa tietämystä Microsoft Excelistä, voit luoda osaamisalueen nimeltään **Excel-taidot**. Osaamistasoksi voidaan määrittää **Keskitaso** ja tärkeydeksi voidaan määrittää **Tärkein**.
+
+Työhön sisältyviä osaamisalueita voidaan käyttää osaamisaluekartoituksessa. Osaamisaluekartoitus voi verrata työn edellyttämää osaamisalueiden joukkoa ja työntekijään liittyviä osaamisalueita. Sen jälkeen se voi määrittää vastaavuuden prosentteina yhteensopivien osaamisalueiden perusteella. Lisätietoja osaamisaluekartoituksesta on kohdassa [Osaamisalueiden määrittäminen](hr-develop-skills.md). 
 
 ## <a name="job-tasks"></a>Työtehtävät
 Työtehtävät kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä. Sama työtehtävä voidaan lisätä useisiin töihin, ja sellaisten töiden toimiin, jotka käyttävät näitä työtehtäviä. Seuraavassa taulukossa on joitakin esimerkkejä työtehtävistä.

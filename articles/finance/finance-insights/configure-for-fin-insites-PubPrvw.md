@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222609"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309662"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Finance Insightsin konfigurointi – julkinen esiversio (esiversio) - versio 10.0.20 ja sitä myöhemmät
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222609"
 Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet Dynamics 365 Finance -versiossa 10.0.20 on suoritettava, jotta Finance Insightsin julkisen esiversion ominaisuuksia voi käyttää.
 
 > [!NOTE]
-> Tässä ohjeaiheessa kuvatut konfigurointivaiheet koskevat vain Finance-versiota 10.0.20 ja sitä myöhempiä. Jos haluat määrittää Finance Insightsin versiolle 10.0.19 tai sitä aikaisemmalle versiolle, katso [Finance Insightsin määritys versioon 10.0.18 asti](configure-for-fin-insites.md).
+> Tässä ohjeaiheessa kuvatut konfigurointivaiheet koskevat vain Finance-versiota 10.0.20 ja sitä myöhempiä. Jos haluat määrittää Finance Insightsin versiolle 10.0.19 tai sitä aikaisemmalle versiolle, katso [Finance Insightsin määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Ota Finance käyttöön
 
@@ -748,6 +748,8 @@ Noudattamalla näitä ohjeita voit asentaa Finance Insights -lisäosan.
 2. Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.
 3. Valitse **Finance Insights** -lisäosa.
 4. Hyväksy ehdot ja valitse **Asenna**.
+
+Apuohjelman asentaminen voi kestää useita minuutteja.
 
 ## <a name="feedback-and-support"></a>Palaute ja tuki
 

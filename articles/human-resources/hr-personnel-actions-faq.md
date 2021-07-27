@@ -2,7 +2,7 @@
 title: Henkilöstötoiminnot – usein kysytyt kysymykset
 description: Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a458800788d8e0df6c1f937a639eff31dcbb2c06
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054545"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333016"
 ---
 # <a name="personnel-actions-faq"></a>Henkilöstötoiminnot – usein kysytyt kysymykset
 
@@ -42,7 +42,7 @@ Henkilöstötoimintoja on kahta eri tyyppiä.
 ## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Mitä henkilöstötoimintojen tilat tarkoittavat?
 Henkilöstötoimenpiteillä voi olla seuraavia tiloja:
 
-- **Luonnos** – Jos työnkulkua käytetään, toimintoa ei ole lähetetty. Jos työnkulkua ei käytetä, ei toimenpidettä ole vielä suoritettu.
+- **Luonnos** – Jos työnkulkua käytetään, toimintoa ei ole lähetetty. Jos työnkulkua ei käytetä, toimintoa ei ole vielä suoritettu.
 - **Tarkistuksessa** – Henkilöstötoiminto on lähetetty työnkulkuun, mutta työnkulku ei ole valmis.
 - **Hyväksytty ja odottaa**– Työnkulku on valmis, mutta muutoksia toteutetaan vielä. Peruutettu – Työnkulku tai henkilöstötoimenpide peruutettiin. Hylätty – Hyväksyjä hylkäsi toimintopyynnön.
 - **Käsittelytoiminto** – Toimintopyyntö on hyväksytty ja muutoksia toteutetaan parhaillaan.
@@ -51,7 +51,7 @@ Henkilöstötoimenpiteillä voi olla seuraavia tiloja:
 - **Hylätty** – Hyväksyjä hylkäsi toimintopyynnön.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Voinko poistaa henkilökohtaisen toimenpiteen?
-Kyllä, voit poistaa henkilöstötoimenpiteet, joiden tilana on **Luonnos**, **Virhe**, **Ei hyväksytty** tai **Peruutettu**.
+Kyllä, voit poistaa henkilöstötoimenpiteet, joiden tilana on **Luonnos**, **Virhe**, **Ei hyväksytty** tai **Peruutettu**. Voit poistaa **Valmis**-tilassa olevia henkilöstötoimintoja vain, jos olet määrittänyt **Salli valmiiden työntekijätoimintojen poistaminen** -asetukseksi **Kyllä** **Henkilöstöhallinnon jaetut parametrit** -sivulla.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Mikä on nopein tapa tarkistaa henkilöstötoimintopyynnön tila?
 Avaa mikä tahansa henkilöstötoimintojen luettelosivuista ja valitse henkilöstötoiminto.
@@ -66,9 +66,9 @@ Jos henkilökunnan toimenpidepyyntö epäonnistuu, noudata seuraavia vaiheita ra
 > 3. Korjaa virhe ja valitse sitten **Valmis** tai **Lähetä**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Mitä tapahtuu työnkulkua käyttävälle henkilöstötoiminnolle, kun lopullinen hyväksyntä on valmis?
-Jos virheitä ei ole, henkilökunnan toimenpide on vain lukukelpoinen. (Voit tarkastella historiatietoja **Kaikki työntekijätoiminnot** -luettelosivulla, mutta et voi muuttaa henkilöstötoimenpidettä.) Kun henkilöstötoimenpiteen tila on **Valmis**, toimi tai työntekijä on jo päivitetty. Voit tarkastella tehtyjä muutoksia avaamalla **Toimet**- tai **Työntekijät**-luettelosivun.
+Jos virheitä ei ole, henkilökunnan toimenpide on vain lukukelpoinen. (Voit tarkastella historiatietoja **Kaikki työntekijätoiminnot** -luettelosivulla, mutta et voi muuttaa henkilöstötoimintoa). Kun henkilöstötoiminnon tila on **Valmis**, toimi- tai työntekijätietue on jo päivitetty. Voit tarkastella tehtyjä muutoksia avaamalla **Toimet**- tai **Työntekijät**-luettelosivun.
 
-## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Miksi tulee seuraava virhe, kun syötän nollasta poikkeavan arvon palkkiokenttään? Arvo ei ole sallitulla alueella. Sen on oltava 0,00–0,00.
+## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Miksi tulee seuraava virhe, kun syötän nollasta poikkeavan arvon palkkiokenttään? "Arvo ei ole sallitulla alueella. Sen on oltava 0,00–0,00."
 Saat tämän ilmoituksen, koska työlomakkeen tasokenttä on tyhjä valittuun toimeen liitetyn työn kohdalla.
 
 Korjaa tämä virhetilanne seuraavien ohjeiden avulla:
@@ -80,10 +80,10 @@ Korjaa tämä virhetilanne seuraavien ohjeiden avulla:
 > 5. Valitse Taso-kentässä taso.
 > 6. Sulje Työ-sivu.
 > 7. Sulje Toimi-sivu.
-> 8. Palaa Työntekijä-sivun Kompensaatio-välilehteen ja valitse Kiinteä kompensaatio.  Valitse uusi ja anna työtekijän toimi Toimi-kenttään.  Anna ensin arvo Suunnitelma-kentässä ja sitten työntekijän kompensaatio Palkkio-kenttä.
+> 8. Palaa Työntekijä-sivun Kompensaatio-välilehteen ja valitse Kiinteä kompensaatio.  Valitse Uusi ja syötä työtekijän toimi Toimi-kenttään.  Syötä arvo Suunnitelma-kenttään ja syötä sitten työntekijän kompensaatio Palkkio-kenttä.
 
-## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Miksi en voi muuttaa voimaantulopäivää työntekijätietolomakkeen otsikossa?
-Et voi muuttaa voimaantulopäivää, koska kenttään on täytetty toimenpidetyypin kaikkein loogisin päivämäärä.
+## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Miksi en voi muuttaa voimaantulopäivää työntekijätoimintolomakkeen ylätunnisteessa?
+Et voi muuttaa voimaantulopäivää, koska kenttään on täytetty toimintotyypin loogisin päivämäärä.
 
 Esimerkiksi:
 

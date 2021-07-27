@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
-ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
+ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261907"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338226"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance Insightsin aloitussivu (esiversio)
 
@@ -29,9 +31,8 @@ ms.locfileid: "6261907"
 
 Finance Insights sisältää määritettävät ja laajennettavat mallit, joiden avulla yrityksen kassavirta voidaan ennustaa tarkasti ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Kaikki nämä ominaisuudet perustuvat älykkäisiin koneoppimismalleihin. Kun nämä uudet ominaisuudet yhdistetään automaation kanssa toimittajan maksuissa ja perinnöissä, saadaan aikaan monipuolinen ja älykäs talousjärjestelmä. Se auttaa päätöstenteossa ja nykyisten ja odotettavissa olevien liiketoimintahaasteiden tehokkaassa käsittelemisessä.
 
-Finance Insights -esiversio on saatavilla koekäyttöönotoissa Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
-
-Esiversio-ominaisuudet voidaan ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei voi siirtää tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> Finance Insightsin esiversio on saatavilla käyttöön otettavaksi Yhdysvalloissa, Kanadassa, Yhdistyneessä kuningaskunnassa, Euroopassa, Aasian ja Tyynenmeren alueella, Australiassa ja Uudessa-Seelannissa. Microsoft lisää tukea jatkuvasti myös muilla alueilla. Jos haluat ottaa Finance Insightsin käyttöön tuotantoympäristöissä, [Vie Data Lakeen](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) -ominaisuudet tulee ottaa ensin käyttöön tuotantoympäristössä.
 
 > [!NOTE]
 > Tätä toimintoa tarjotaan esikatselutoimintojen joukkona. Esiversiotoimintoa ei tule käyttää tuloksena syntyneissä koneoppimismalleissa, jotka edistävät tai vaikuttavat liiketoimintapäätöksiin tai budjetointiehdotuksiin. Tämän ominaisuuden käyttö määräytyy [Täydentävien käyttöehtojen](https://go.microsoft.com/fwlink/?linkid=2105274) mukaan.
@@ -46,7 +47,7 @@ Voit hakea esiversio-ohjelman käyttäjäksi täyttämällä [Finance Insightsin
 
 ### <a name="system-requirements"></a>Järjestelmävaatimukset
 
-Finance Insightsin esikatselu edellyttää Taso 2 -eristysympäristön (useita paketteja) käyttämistä. Ympäristöjen taustatietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+Finance Insightsin esikatselu edellyttää Taso 2 -ympäristön (useita paketteja) käyttämistä. Ympäristöjen taustatietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Version vaatimukset
 
@@ -55,8 +56,6 @@ Tämä asiakirja koskee Finance and Operations -sovellusten (Platform update 35)
 ### <a name="historical-data-requirements"></a>Aiemmat tietovaatimukset
 
 Asiakkaan maksuennusteet -toiminnossa käytettävän koneoppimismallin onnistunut kouluttaminen edellyttää myyntilaskuja vähintään vuoden ajalta.
-
-Näytetiedot ovat käytettävissä esittelyjärjestelmissä, joissa on Contoso-esittelytietojoukko.
 
 ### <a name="role-and-permission-requirements"></a>Rooli- ja käyttöoikeusvaatimukset
 
@@ -72,7 +71,7 @@ Azuren, Microsoft Dataversen ja LCS:n resurssien luonti- ja hallintakokemus autt
 ## <a name="configure-finance-insights"></a>Taloushallinnon tietojen määrittäminen
 
 Sinun on suoritettava joitakin määritysvaiheita, ennen kuin voit käyttää Finance Insightsia. Lisätietoja Finance Insightsin määrittämisestä:
-  - Versioille 10.0.19 asti: [Finance Insightsin määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
+  - Versioille 10.0.19 asti: [Finance Insightsin (esiversio) määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
   - Versioille 10.0.20 ja sitä uudemmat versiot: [Finance Insightsin (esiversio) määritys versiolle 10.0.20 ja siitä eteenpäin](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Tietojen integrointiprojektin luominen
