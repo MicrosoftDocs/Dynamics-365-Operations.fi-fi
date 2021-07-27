@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348239"
 ---
 # <a name="create-and-update-store-hours"></a>Myymälän tuntien luominen ja päivittäminen
 
@@ -49,14 +49,14 @@ Jos haluat konfiguroida myymälän aukioloajat, noudata seuraavia vaiheita.
     > [!NOTE]
     > Voit luoda useita malleja, joiden alkamis- ja päättymispäivämäärät ovat päällekkäiset. Näin voit esimerkiksi määrittää myymälän aukioloajat eri aikavyöhykkeillä oleville myymälöille.
 
-    ![Lisää alue -valintaikkuna](../dev-itpro/media/Storehours1.png "Lisää alue -valintaikkuna")
+    ![Lisää alue -valintaikkuna.](../dev-itpro/media/Storehours1.png "Lisää alue -valintaikkuna")
 
 4. Liitä myymälätuntien malli myymälöihin, joissa sitä käytetään. Valitse **Valitse organisaatiosolmut** -valintaikkunassa ne myymälät, alueet ja organisaatiot, joihin malli liitetään.
 
     - Kuhunkin myymälään voidaan liittää vain yksi myymälän tuntimalli.
     - Valitse myymälät, alueet tai organisaatiot nuolipainikkeiden avulla. Kalenteri on myymälöiden tai myymäläryhmien käytettävissä, ja se näkyy viitteenä myyntipisteessä.
 
-    ![Valitse organisaatiosolmujen valintaikkuna](../dev-itpro/media/Storehours2.png "Valitse organisaatiosolmujen valintaikkuna")
+    ![Valitse organisaatiosolmujen valintaikkuna.](../dev-itpro/media/Storehours2.png "Valitse organisaatiosolmujen valintaikkuna")
 
 5. Suorita **Jakeluaikataulu**-sivulla työt **1070** ja **1090**, jotta myymälätunnit ovat käytettävissä myyntipisteessä.
 
@@ -75,7 +75,7 @@ Seuraavia ohjeita noudattamalla voit lisätä myymälätunteja tulostetuihin myy
 
 Myyntipsiteen kuiteissa on nyt myymälän tunnit. Jos malliin sisältyy vapaapäiviä, ne näkyvät kuitissa.
 
-![Kuitin esimerkki](../dev-itpro/media/Storehours3.png "Kuitin esimerkki")
+![Kuitin esimerkki.](../dev-itpro/media/Storehours3.png "Kuitin esimerkki")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

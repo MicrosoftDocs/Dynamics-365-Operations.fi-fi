@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c42a11055e98da59e0428a156ca127529589abab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1538b806a60a9a9950f54c29bd19447c66ac9ec2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812927"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359098"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Poissulkevan konfiguraation määritepohjaiset myyntihinnat
 
@@ -33,7 +33,7 @@ Oletusvaluutan määrittäminen:
 1. Avaa **Rajoituspohjaiset tuotekonfiguraatiomallit** -välilehti
 1. Avaa avattava **Oletusvaluutta**-luettelo ja valitse valuutta.
 
-    ![Rajoituspohjaisen tuotekonfiguraation oletusvaluutan määrittäminen](media/prod-config-currency.png "Rajoituspohjaisen tuotekonfiguraation oletusvaluutan määrittäminen")
+    ![Rajoituspohjaisen tuotekonfiguraation oletusvaluutan määrittäminen.](media/prod-config-currency.png "Rajoituspohjaisen tuotekonfiguraation oletusvaluutan määrittäminen")
 
 1. Jos halut liittää Excel-tiedoston, jossa on tilauksen kaikkien rivien tai tarjousrivien hintaerittely, määritä **Hintamalli**-osassa **Liitä**-asetukseksi *Kyllä*.
 
@@ -60,7 +60,7 @@ Seuraavassa esimerkissä on perushinta, jonka staattinen luku on 899,95 euroa. T
 - Jos kaapin palisanteriviimeistely, lisää 119,95 euroa.
 - Lisää 12,95 euroa jokaiseen, kaiutinta varten korotettuun osaan.
 
-![Hintamalliesimerkki](media/prod-config-rules-example.png "Hintamalliesimerkki")
+![Hintamalliesimerkki.](media/prod-config-rules-example.png "Hintamalliesimerkki")
 
 ## <a name="add-support-for-multiple-currencies"></a>Usean valuutan tuen lisääminen
 
@@ -81,7 +81,7 @@ Nimenomaisten hintojen lisääminen lisävaluutassa:
 
 Seuraavassa esimerkiksi _EUR_ on oletusvaluutta ja _USD_ on lisätty lisävaluuttana.
 
-![Esimerkki useita valuuttoja sisältävästä mallista](media/prod-config-rules-currency-example.png "Esimerkki useita valuuttoja sisältävästä mallista")
+![Esimerkki useita valuuttoja sisältävästä mallista.](media/prod-config-rules-currency-example.png "Esimerkki useita valuuttoja sisältävästä mallista")
 
 > [!NOTE]
 > Et voi lisätä vain muulle kuin oletusvaluutalle kuuluvia lausekesääntöjä. Jos haluat lausekesääntöjä, jotka koskevat vain muuta kuin oletusvaluuttaa, määritä oletusvaluutan hintalausekkeen arvoksi nolla. Määritä sitten sopiva lauseke muulle kuin oletusvaluutalle.
@@ -93,11 +93,11 @@ Voit testata myyntihintojen käyttöä määritysistunnossa avaamalla hintamalli
 - Valitse tuotevaihtoehdot käytössä olevilla määritysasetuksilla ja tarkastele sitten, miten ne vaikuttavat **Hinta ja lähetyspäivä** -kohdassa näkyviin arvoihin.
 - Valitsemalla **Näytä hintaerittely** voit ladata Excel-tiedoston, jossa on tarkat tiedot hinnan laskemisesta.
 
-![Tuotemallin testaaminen](media/prod-config-test.png "Tuotemallin testaaminen")
+![Tuotemallin testaaminen.](media/prod-config-test.png "Tuotemallin testaaminen")
 
 Ladatussa laskentataulukossa näkyy sekä absoluuttinen arvo että kunkin aktiivisen hintaelementin prosenttiosuus. Jos **Liitä**-hintamalliasetus on määritetty **Tuotetietojen hallintaparametrit** -sivulla, tämä Excel-taulukko liitetään tilaus- tai tarjousriville.
 
-![Hintaerittelyn sisältävä Excel-taulukko](media/prod-config-excel-example.png "Hintaerittelyn sisältävä Excel-taulukko")
+![Hintaerittelyn sisältävä Excel-taulukko.](media/prod-config-excel-example.png "Hintaerittelyn sisältävä Excel-taulukko")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Hintamallien valintaehtojen määrittäminen
 
@@ -116,7 +116,7 @@ Hintamallien valintaehtojen määrittäminen:
     - **Voimassaolo alkaa** – määritä ensimmäinen päivä, jolloin kyselyä käytetään.
     - **Vanhentuu** – määritä viimeinen päivä, jolloin kyselyä käytetään.
 
-    ![Hintamalliehdot](media/prod-config-price-model-criteria.png "Hintamalliehdot")
+    ![Hintamalliehdot.](media/prod-config-price-model-criteria.png "Hintamalliehdot")
 
 1. Valitse kyselylle määritettävä rivi ja valitse sitten **toimintoruudussa** **Muokkaa**. Kyselyn suunnitteluohjelman valintaikkuna avautuu. Se toimii samalla tavoin useimmat kyselyn suunnitteluohjelmat Supply Chain Managementissa. Voit määrittää siinä ehdot, joiden mukaan valitun rivin hintamallia käytetään.
 
@@ -137,7 +137,7 @@ Viimeiseksi määritetään tuotemalliversion määritepohjaiset myyntihinnat. T
 1. Valitse kohdetuotekonfiguraatiomalli.
 1. Avaa toimintoruudussa **Malli**-välilehti ja valitse **Tuotemallin tiedot** -ryhmässä **Versiot**.
 1. **Versiot** -sivu avautuu. Varmista, että **Hinnoittelumenetelmä**-asetuksena on **Määritepohjainen**.
-    ![Hinnoittelumenetelmän määrittäminen määritepohjaiseksi](media/prod-config-versions.png "Hinnoittelumenetelmän määrittäminen määritepohjaiseksi")
+    ![Hinnoittelumenetelmän määrittäminen määritepohjaiseksi.](media/prod-config-versions.png "Hinnoittelumenetelmän määrittäminen määritepohjaiseksi")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

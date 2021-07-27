@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897305"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360685"
 ---
 # <a name="financial-dimensions-and-posting"></a>Taloushallinnon dimensiot ja kirjaaminen 
 
@@ -71,29 +71,29 @@ Usein kysytään, missä järjestyksessä eri komponentit suoritetaan. Dimensioi
 
 Seuraavassa kuvassa on kiinteä oletusdimensio, joka on määritetty päätilillä 401100.
 
-[![Taloushallinnon oletusdimensiot](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Taloushallinnon oletusdimensiot.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 Tässä yksinkertaisessa esimerkissä lisätään kirjauskansio, jossa Osasto-dimensio on määritetty käyttämään oletusarvoa **023** (Toiminnot). Kirjapitotili annetaan ja kirjataan. Seuraavassa kuvassa on oletusarvoinen taloushallinnon dimension kirjanpidon otsikossa.
 
-[![Yleiset kirjauskansiot](./media/general-journal.png)](./media/general-journal.png)
+[![Yleiset kirjauskansiot.](./media/general-journal.png)](./media/general-journal.png)
 
 Kirjauskansion otsikon oletusdimensio aiheuttaa sen, että osastoa 023 käytetään oletusarvoisesti myyntitilirivillä. Seuraavassa kuvassa on kirjauskansiorivi, jossa on käytetty otsikon oletusdimension arvoa **023**.
 
-[![Kirjaustosite](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Kirjaustosite.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Riviä kirjatessa käytetään kuitenkin kiinteää dimensiota ja rivi kirjataan osastolle 022. Seuraavassa kuvassa on kirjattu tosite, jossa kiinteää dimensiota käytetään myyntitilille.
 
-[![Kiinteään dimensioon liittyvät tositetapahtumat](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Kiinteään dimensioon liittyvät tositetapahtumat.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Esimerkki 2
 
 Tässä esimerkissä käytetään samoja asetuksia kuin ensimmäisessä esimerkissä. Nyt kuitenkin lisätään toinen komponentti ja käytetään Osasto-dimensiota täsmäyttävänä dimensiona. Seuraavassa kuvassa **Osasto** on määritetty USMF-kirjanpidon täsmäyttäväksi taloushallinnon dimensioksi.
 
-[![Kuva, jossa osasto näkyy täsmäyttävänä taloushallinnon dimensiona](./media/ledger.png)](./media/ledger.png)
+[![Kuva, jossa osasto näkyy täsmäyttävänä taloushallinnon dimensiona.](./media/ledger.png)](./media/ledger.png)
 
 Kun käytetään samoja kirjauskansion otsikon asetuksia ja sama tapahtuma kirjataan, käytetään ensin kiinteää dimensiota. Tämän jälkeen käytetään täsmäytyslogiikkaa varmistamaan, että jokaisella osastolla on täsmätty merkintä. Seuraavassa kuvassa on täsmäytysmerkinnän sisältävät tositetapahtumat, kun kiinteä dimensiota on käytetty.
 
-[![Tositetapahtumat täsmäyttävän kirjauksen jälkeen](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Tositetapahtumat täsmäyttävän kirjauksen jälkeen.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Esimerkki 3
 
@@ -101,11 +101,11 @@ Tässä esimerkissä lisätään lisäsääntö. Lisäsääntö määrittää, e
 
 Tämä esimerkki on tärkeä, siinä on mukana järjestys. Tilirakenne määritetään päätilin antamisen jälkeen. Jos viittaat tilirakenteen määritykseen, järjestelmä voi päätellä, että päätili, liiketoimintayksikkö, osasto ja kustannuspaikka tarvitaan. Tässä vaiheessa lisäsääntö ei ole käynnistynyt, koska kiinteitä dimensioita ei käytetä, ennen kuin oletusdimensioita on käytetty kirjauskansiotositteeseen kirjauksen aikana. Asiakas-segmentti ei näy seuraavassa kuvassa, koska lisäsäännön ehdot eivät täyttyneet.
 
-[![Kirjanpitotili](./media/drop-down.png)](./media/drop-down.png)
+[![Kirjanpitotili.](./media/drop-down.png)](./media/drop-down.png)
 
 Kirjaus ei onnistu, koska kiinteää dimensiota käytettiin prosessin lopussa. Dimension oikeellisuustarkistus määrittää, että Asiakas-segmenttiä tarvitaan, jos päätili on 401100 ja osasto 022. Kirjausta ei voi tehdä oikeellisuustarkistusvirheen vuoksi. Seuraavassa kuvassa on sanoma, joka avautuu, dimension oikeellisuustarkistus määrittää, että Asiakas on pakollinen segmentti.
 
-[![Sanoman tiedot](./media/message.png)](./media/message.png)
+[![Sanoman tiedot.](./media/message.png)](./media/message.png)
 
 Tässä esimerkissä oletusarvo on korvattava siten, että lisäsääntö käynnistyy ja voit antaa Asiakas-segmentin. Tätä ratkaisua ei kuitenkaan voi aina käyttää, ja osa käyttäjistä ei ole edes tietoinen kirjaussäännöistä. Tämän vuoksi on tärkeää, että tiedät tilikarttaa määritettäessä, missä järjestyksessä oletusdimensioita käytetään.
 

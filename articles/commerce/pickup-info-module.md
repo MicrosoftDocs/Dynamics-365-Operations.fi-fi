@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804402"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353801"
 ---
 # <a name="pickup-information-module"></a>Noudon tiedot -moduuli
 
@@ -40,7 +40,7 @@ Jos useista myymälöistä noutoa varten on valittu useita nimikkeitä, noudon t
 
 Seuraavassa kuvassa on esimerkki aikavälin valinnasta kassasivun noutotietomoduulin kautta.
 
-![Esimerkki noutotietomoduulista kassasivulla](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Esimerkki noutotietomoduulista kassasivulla.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
@@ -56,7 +56,7 @@ Lisätietoja noutotietomoduulin lisäämisestä kassasivulle ja tarvittavien omi
 
 Seuraavassa kuvassa on esimerkki sähköisen kaupankäynnin kassasivusta, joka sisältää aikavälit noudettaville rivinimikkeille.
 
-![Esimerkki sähköisen kaupankäynnin kassasivusta, joka sisältää aikavälit noudettaville rivinimikkeille](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Esimerkki sähköisen kaupankäynnin kassasivusta, joka sisältää aikavälit noudettaville rivinimikkeille.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

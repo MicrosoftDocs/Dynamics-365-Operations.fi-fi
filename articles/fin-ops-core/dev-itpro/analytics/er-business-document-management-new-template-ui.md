@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881033"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350181"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office -tyylin käyttöliittymä liiketoiminta-asiakirjan hallinnassa
 
@@ -51,18 +51,18 @@ Noudata seuraavia ohjeita ottaaksesi tämän ominaisuuden käyttöön kaikille y
 
 1. Valitse **Liiketoiminta-asiakirjan hallinta** -työtilassa **Uusi asiakirja**.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtila](./media/BDM_overview_new_template1.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtila.](./media/BDM_overview_new_template1.png)
 
 2. Valitse **Valitse**-valintaruudussa mallina käytettävä asiakirja ja sitten **Luo tiedosto**.
 
-    ![Liiketoiminta-asiakirjojen valintaruutu](./media/BDM_overview_new_template2.png)
+    ![Liiketoiminta-asiakirjojen valintaruutu.](./media/BDM_overview_new_template2.png)
 
 3. Vaihda otsikkoa uuden valintaruudun **Otsikko**-kentässä tarpeesi mukaan. Otsikkotekstin avulla voit nimetä automaattisesti luotavan uuden ER-muotomäärityksen. Huomaa, että tämän määrityksen luonnosta (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, käytetään suorittamaan tämä ER-muoto nykyiselle käyttäjälle. ER-perusmuotomäärityksen alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen kaikille muille käyttäjälle.
 4. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
 5. Päivitä huomautukset **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin uuden version huomautukset.
 6. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
-    ![Tiedoston luonnin valintaruutu](./media/BDM_overview_new_template3.png)
+    ![Tiedoston luonnin valintaruutu.](./media/BDM_overview_new_template3.png)
 
 **Uusi asiakirja** -painiketta käytetään luomaan ja muokkaamaan mallia toisen toimittajan toimittamassa ER-muotomäärityksessä. Tässä esimerkissä toimittajana on Microsoft. Kun valitset **Uusi tiedosto**, näet kaikki nykyisen toimittajan tai muiden toimittajien omistamat mallit. Kun olet valinnut mallin, se avautuu muokattavaksi. Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
 
@@ -71,16 +71,16 @@ Noudata näitä ohjeita, kun haluat antaa tarvittavat tiedot ennen mallin lataam
 
 1. Valitse **Liiketoiminta-asiakirjan hallinta** -työtilassa **Uusi asiakirja**.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtila](./media/BDM_overview_new_template1.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtila.](./media/BDM_overview_new_template1.png)
     
 2. Valitse **Luo uusi malli** -sivun **Palvelimeen lataaminen** -välilehden **Malli**-välilehdestä **Etsi selaamalla** ja valitse malliksi käytettävä Excel-tiedosto. **Malli**-osan **Otsikko**- ja **Kuvaus**-kentät täytetään automaattisesti. Ne määrittävät uuden automaattisesti luotavan ER-muotokonfiguraation nimen ja kuvauksen. Voit muokata näitä kenttiä tarpeen mukaan.
 3. Määritä **Tiedostotyyppi**-osan **Nimi**-kenttään liiketoimintatiedoston tyyppi. Tätä arvoa käytetään oikean tietolähteen haussa (ER-mallin konfiguraatiossa).
 
-    ![Mallivälilehti](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Malli-välilehti.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. Valitse **Tietolähde**-välilehden **Suodatin**-pikavälilehdestä **Käytä suodatinta**. **Tietolähde**-osassa **Nimi**-kenttä täytetään automaattisesti. Voit myös valita arvon manuaalisesti. Voit etsiä tietolähteen nimeä nimen, kuvauksen, maa-/aluekoodin ja liiketoimintatiedostotyypin perusteella suodattimen avulla.
 
-    ![Tietolähde-välilehti](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Tietolähde-välilehti.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > **Suodatin**-pikavälilehteä käytetään oikean tietolähteen haussa (ER-mallin konfiguraatiossa). Voit etsiä lataatavalle tiedostolle sopivimman tietolähteen muokkaamalla kaikkia suodatinkenttiä.
@@ -89,7 +89,7 @@ Noudata näitä ohjeita, kun haluat antaa tarvittavat tiedot ennen mallin lataam
     
 5. Valitse **Yhdistämismääritys**-välilehdessä **Automaattinen havainnointi**. **Juurimääritys**-kenttä täytetään automaattisesti. Voit myös valita arvon manuaalisesti. Tässä välilehdessä näytetään mallin ja mallin elementtien lopetusmääritys.
 
-    ![Määritys-välilehti](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Määritys-välilehti.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > **Mallirakenne**-osan määrityksessä käytetään täysin tietolähteen otsikoita tai kuvauksia käyttäjän kielellä ja mallin matkapuhelinnimessä.
@@ -102,11 +102,11 @@ Jos sähköisessä raportoinnissa ei ole toimittajaa, voit luoda sen. Jos aktiiv
 
 - Jos haluat luoda tarjoajan, muuta tarjoajan nimi **Nimi**-kentässä, päivitä uuden tarjoajan **Internet-osoite** kenttään ja vahvista valitsemalla **OK**.
 
-    ![Uuden tarjoajan luominen BDM:ssä](./media/bdm_create_provider.png)
+    ![Uuden tarjoajan luominen BDM:ssä.](./media/bdm_create_provider.png)
     
 - Voit aktivoida aiemmin luodun tarjoajan valitsemalla **Konfigurointipalvelu**-kentästä tarjoajan nimen ja valitsemalla **OK**, jos haluat määrittää tarjoajan aktiiviseksi.
 
-    ![Tarjoajan aktivoiminen BDM:ssä](./media/bdm_choose_provider.png)
+    ![Tarjoajan aktivoiminen BDM:ssä.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Kunkin BDM-malli viittaa palveluntarjoajaan kokoonpanon tekijänä. Siksi mallissa tarvitaan aktiivista toimittajaa.

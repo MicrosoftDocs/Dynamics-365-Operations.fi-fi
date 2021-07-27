@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0af3e1d589fd99cc722d8aedeb9596388a9e2e8c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 629662d274d88d59c9b73a9d6b0d5c178331fe73
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018283"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351911"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER-muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
 
@@ -78,17 +78,17 @@ Tässä esimerkissä luodaan määritys esimerkkiyritykselle Litware, Inc. Ennen
 
     **Parametrisoitujen kutsujen oppimismuoto** -ER-muoto on suunniteltu muodostamaan XML-muotoinen veroilmoitus, joka sisältää useita verotustasoja (normaali, alennettu ja ei mitään). Tasoilla olevien yksityiskohtien määrä vaihtelee.
 
-    ![Useita ER-muodon tasoja, muoto, joka parametrisoituja kutsuja](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Useita ER-muodon tasoja, muoto, joka oppii parametrisoituja kutsuja.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  Laajenna **Yhdistämismääritys**-välilehdessä **Malli**, **Tiedot** ja **Yhteenveto**.
 
     **Model.Data.Summary**-tietolähde palauttaa verotapahtumien luettelon. Tapahtumien yhteenveto tehdään verokoodin mukaan. Tässä tietolähteessä laskettu **Model.Data.Summary.Level**-kenttä on määritetty palauttamaan kunkin summatun tietueen verotason koodin. Jos verokoodi voidaan noutaa suorituksenaikaisesti **Model.Data.Summary**-tietolähteestä, laskettu kenttä sisältää verotustason koodin (**Normaali**, **Alennettu**, **Ei mitään** tai **Muu**) tekstiarvona. Lasketun **Model.Data.Summary.Level**-kentän avulla suodatetaan **Model.Data.Summary**-tietolähteen tietueet ja annetaan suodatetut tiedot kussakin verotason ilmaisevassa XML-elementissä käyttämällä kenttiä **Model.Data2.Level1**, **Model.Data2.Level2** ja **Model.Data2.Level3**.
 
-    ![Model.Data.Summary-tietolähde – verotapahtumien luettelo](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Model.Data.Summary-tietolähde – verotapahtumien luettelo.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Laskettu **Model.Data.Summary.Level**-kenttä on määritetty sisältämään ER-lauseke. Verokoodit (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** ja **InVAT0**) on koodattu pysyvästi tähän määritykseen. Tämän vuoksi tämä ER-muoto määräytyy sen yrityksen mukaan, jossa nämä verokoodit on määritetty.
 
-    ![Laskettu Model.Data.Summary.Level-kenttä ja kovakoodatut verokoodit](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Laskettu Model.Data.Summary.Level-kenttä ja kovakoodatut verokoodit.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Toimi seuraavasti, jos haluat, että kussakin yrityksessä tuetaan eri verokoodijoukkoa:
 
@@ -128,7 +128,7 @@ Seuraavaksi lisätään uusi ER-muodon luettelointi. Tämän muodon luetteloinni
 12. Valitse **Lisää** uudelleen.
 13. Kirjoita **Nimi**-kenttään **Muu**.
 
-    ![Uusi tietue Muoto-valintalistasivulla](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Uusi tietue Muoto-valintalistasivulla.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Koska yrityskäyttäjät voivat käyttää eri kieliä yrityskohtaisten verokoodijoukkojen määrittämiseen, tämän luetteloinnin arvot kannattaa kääntää niille kielille, jotka on määritetty kyseisten käyttäjien ensisijaisiksi kieliksi Financessa.
 
@@ -141,7 +141,7 @@ Seuraavaksi lisätään uusi ER-muodon luettelointi. Tämän muodon luetteloinni
 20. Kirjota **Käännetty teksti** -kenttään **Ei verotusta**.
 21. Valitse **Käännä**.
 
-    ![Tekstin käännöksen esiin tuleva osa](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Tekstin käännöksen esiin tuleva osa.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Valitse **Tallenna**.
 23. Sulje **Muodon luetteloinnit** -sivu.
@@ -168,13 +168,13 @@ Seuraavaksi lisätään uusi tietolähde määrittämään, miten yrityskäyttä
 10. Valitse **Model.Data.Tax.Code**.
 11. Valitse **Lisää**-painike (oikea nuoli).
 
-    ![Sarakkeiden esiin tuleva osa](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Sarakkeiden esiin tuleva osa.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Määritit juuri, että yrityskäyttäjän on valittava yksi verokoodi kunkin tässä tietolähteessä verotustason tunnistukseen määritettävän säännön ehdoksi. **Model.Data.Tax**-tietolähde palauttaa sen verokoodiluettelon, jonka yrityskäyttäjä voi valita. Koska tässä tietolähteessä on **Nimi**-kenttä, verokoodin nimi näytetään jokaiselle verokoodin arvolle, jonka haku näyttää yrityskäyttäjälle.
     
 12. Valitse **OK**.
 
-    ![Valintojen suunnittelusivu](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Valintojen suunnittelusivu.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Yrityskäyttäjät voivat lisätä useita sääntöjä tietueina tähän tietolähteeseen. Kukin tietueen numerona on rivikoodi. Säännöt arvioidaan nousevan rivinumeron perusteella.
 
@@ -188,13 +188,13 @@ Seuraavaksi lisätään uusi tietolähde määrittämään, miten yrityskäyttä
 
     Huomaa, että lisäämäsi uusi tietolähde palauttaa verotustason muodon luetteloinnin **Verotustasojen luettelo** -arvon mille tahansa tietolähteeseen välitetylle verokoodille **Merkkijono**-tietotyypin **Koodi**-parametrin argumenttina.
     
-    ![Muodon suunnittelusivu ja uusi tietolähde](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Muodon suunnittelusivu ja uusi tietolähde.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Määritettyjen sääntöjen arviointi määräytyy niiden kenttien tietotyypin mukaan, jotka on valittu määrittämään kyseisten sääntöjen ehtoja. Kun valitset kentän, joka on määritetty joko **Numeerinen**- tai **Päivämäärä**-tietotyypin kentäksi, ehdot poikkeavat edellä käsitellyn **Merkkijono**-tietotyypin ehdoista. **Numeerinen**- ja **Päivämäärä**-kenttien säännöt on määritettävä arvoalueena. Säännön ehdon katsotaan sitten toteutuvan, kun tietolähteeseen välitetty arvo on määritetyllä alueella.
     
     Seuraavassa kuvassa on esimerkki tämän tyyppisestä määrityksestä. **Merkkijono**-tietotyypin **Model.Data.Tax.Code**-kentän lisäksi **Reaaliluku**-tietotyypin **Model.Tax.Summary.Base**-kenttää käytetään määrittämään haun tietolähteen ehtoja.
     
-    ![Valintojen suunnittelusivu ja lisäsarakkeet](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Valintojen suunnittelusivu ja lisäsarakkeet.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Koska tämän haun tietolähteeksi on valittu **Model.Data.Tax.Code**- ja **Model.Tax.Summary.Base**-kentät, jokainen tämän tietolähteen sääntö määritetään seuraavasti:
     
@@ -223,7 +223,7 @@ Koska yrityskäyttäjät voivat käyttää eri kieliä yrityskohtaisten verokood
 9.  Valitse **Käännä**.
 10. Valitse **OK**.
 
-    ![Tietolähteen ominaisuuksien esiin tuleva osa](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Tietolähteen ominaisuuksien esiin tuleva osa.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Uuden kentän lisääminen käyttämään määritettyä hakua
 
@@ -236,12 +236,12 @@ Koska yrityskäyttäjät voivat käyttää eri kieliä yrityskohtaisten verokood
 7.  Kirjoita **Kaava**-kenttään **Model.Selector(Model.Data.Summary.Code)**.
 8.  Valitse **Tallenna**.
 
-    ![Model.Selector(Model.Data.Summary.Code)-kohteen lisääminen kaavan suunnittelusivulle](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Model.Selector(Model.Data.Summary.Code)-kohteen lisääminen kaavan suunnittelusivulle.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Sulje **Kaavaeditori**-sivu.
 10. Valitse **OK**.
 
-    ![Muodon suunnittelusivu ja kaava lisätty](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Muodon suunnittelusivu ja uusi lisätty kaava.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Huomaa, että lisäämäsi laskettu **LevelByLookup**-kenttä palauttaa verotustason kunkin summatun verotapahtumatietueen muodon luetteloinnin **Verotustasojen luettelo** -arvona. Tietueen verokoodi välitetään haun **Model.Selector**-tietolähteeseen, ja oikea verotustaso valitaan kyseisen tietolähteen sääntöjoukon avulla.
 
@@ -269,7 +269,7 @@ Seuraavaksi muokataan aiemmin luotua laskettua kenttää siten, että se käytt�
 
 4.  Lisää **Kaava**-kenttään **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Regular", TaxationLevel.'Reduced taxation', "Reduced", TaxationLevel.'No taxation', "None", "Other")**.
 
-    ![ER-toiminnon suunnittelutoiminnon sivu](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![ER-toiminnon suunnittelutoiminnon sivu.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Huomaa, että **Model.Data.Summary.Level**-kentän lauseke palauttaa nyt verotustason nykyisen tietueen verokoodin ja sen sääntöjoukon perusteella, jonka yrityskäyttäjä määrittää haun **Model.Data.Selector**-tietolähteessä.
     

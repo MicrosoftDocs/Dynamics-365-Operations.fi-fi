@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795712"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352419"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Uuden tuotteen luominen Commercessa
 
@@ -49,13 +49,13 @@ Tuote määritetään ensisijaisesti tuotenumeron, nimen ja kuvauksen perusteell
 
 Seuraavassa kuvassa näkyy esimerkkituotteen lisääminen.
 
-![Tuotteen luominen](media/create-new-product.png)
+![Tuotteen luominen.](media/create-new-product.png)
 
 Kun tuote on lisätty, sille voidaan määrittää lisää tietoja. Näitä ovat esimerkiksi **Tuotekuvaus**, **Varianttiryhmät**, **Dimensioryhmät**, **Tuotemääritteet** ja **Liittyvät tuotteet**.
 
 Seuraavassa kuvassa esitetään tuotteen lisätiedot.
 
-![Tuotteen tiedot](media/create-new-product-2.png)
+![Tuotteen tiedot.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Luo tuotevariantit
 
@@ -74,23 +74,23 @@ Tuote on ensin vapautettava yritykselle, jotta se voidaan myydä.
 
 1. Valitse tuotesivulla **Vapauta tuotteita**.
 
-    ![Tuotteen vapautus](media/create-new-product-3.png)
+    ![Tuotteen vapauttaminen.](media/create-new-product-3.png)
 
 1. Valitse vapautettava tuote ja sitten **Seuraava**.
 
-    ![Vapautettavan tuotteen valitseminen](media/create-new-product-4.png)
+    ![Vapautettavan tuotteen valitseminen.](media/create-new-product-4.png)
 
 1. Valitse vapautettavien tuotevarianttien joukko ja valitse sitten **Seuraava**.
 
-    ![Vapautettavien varianttien valitseminen](media/create-new-product-5.png)
+    ![Vapautettavien varianttien valitseminen.](media/create-new-product-5.png)
 
 1. Valitse yritys ja sitten **Seuraava**.
 
-    ![Valitse yritys/oikeushenkilö](media/create-new-product-6.png)
+    ![Yrityksen valitseminen.](media/create-new-product-6.png)
 
 1. Valitse **Valmis**.
 
-    ![Tuotteen vapautuksen viimeistely](media/create-new-product-7.png)
+    ![Tuotteen vapautuksen viimeistely.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Määritä vapautettu tuote
 
@@ -105,13 +105,13 @@ Kun tuote on vapautettu, se edellyttää lisämääritystä, johon kuuluu hinnan
 
 Seuraavassa kuvassa on esimerkki vapautetun tuotteen asetusten määrityksistä.
 
-![Vapautetun tuotteen määritys](media/create-new-product-8.png)
+![Vapautetun tuotteen määritys.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Yritysten luominen](channels-legal-entities.md)
+[Luo oikeushenkilöt](channels-legal-entities.md)
 
-[Luo varianttiryhmä](create-variant-group.md) 
+[Varianttiryhmän luominen](create-variant-group.md) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

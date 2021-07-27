@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224088"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355343"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Sähköisen raportoinnin kaavan tukemat yhdistelmätietotyypit
 
@@ -43,11 +43,11 @@ ER-[määrityksen](general-electronic-reporting.md#data-model-and-model-mapping-
 
 Seuraavassa kuvassa kerrotaan, miten **Luokka**-tyypin **Järjestelmätiedot(xInfo)**-tietolähde lisätään. Näin **xInfo**-sovellusluokan esiintymä luodaan ja kutsutaan sen **productName()**-menetelmää valitun sovelluksen nimen saamiseksi. Nykyisen sovelluksen nimi haetaan ajonaikaisesta ER-tietomallin **Ohjelmiston nimi(SoftwareName)** -kenttään määritetyn `xInfo.productName`-sidonnan suorituksesta. Tämä sidonta kutsuu **xInfo**-sovellusluokan `productName()`-menetelmää, jota käytetään nykyisessä mallimäärityksessä **Järjestelmätiedot(xInfo)**- tietolähteenä.
 
-[![Luokka-tietolähteen määrittäminen ER-mallin yhdistämismäärityksen suunnittelijassa](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Luokka-tietolähteen määrittäminen ER-mallin yhdistämismäärityksen suunnittelijassa.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 Seuraavassa kuvassa havainnollistetaan, miten ER-muoto on määritetty laittamaan sovelluksen nimen luotuihin tiedostoihin. Käytetyn tietomallin **Ohjelmiston nimi(SoftwareName)** -kenttä sidottiin ER-muodon XML-elementtiin **softwareUsed** upotettuun **Merkkijono**-komponenttiin. Siten nykyisen sovelluksen nimi sijoitetaan ajon aikana XML-elementtiin **softwareUsed** XML-muodossa olevaan luotuun dokumenttiin.
 
-[![Sähköisen lähtevän asiakirjan rakenteen konfiguroiminen ER-muodon suunnitteluohjelmassa](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Sähköisen lähtevän asiakirjan rakenteen konfiguroiminen ER-muodon suunnitteluohjelmassa.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Säilö
 
@@ -60,7 +60,7 @@ Seuraavassa kuvassa havainnollistetaan, miten ER-muoto on määritetty laittamaa
 
 Seuraavassa kuvassa havainnollistetaan, miten *Säilö*-tyypin **Bittikartta(Image)** -kenttä on sidottu **Myyntilasku**-mallin määrityksen **Säilö**-tyypin tietomallin **Logo**-kenttään. Tämä sidonta mahdollistaa yrityksen logon käytön missä tahansa **SalesInvoice**-juurimääritykseen suunnitellussa ER-muodossa, joka käyttää tätä mallimääritystä ajon aikana.
 
-[![Säilö-tyypin kentän sitominen ER-mallin määrityksen suunnittelutoiminnossa](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Säilö-tyypin kentän sitominen ER-mallin määrityksen suunnittelutoiminnossa.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Tallenna
 
@@ -109,7 +109,7 @@ Lisätietoja *tietueluettelo*-arvojen muuntamisesta on [luetteloluokan ER-toimin
 
 Seuraavassa kuvassa osoitetaan *Objekti*-tyypin **ReportDataContract**-tietolähde lisätään välittämään tietoja luodusta laskusta lähdekoodista **Projektilasku**-mallimääritykseen. Esimerkiksi laskuinstanssin teksti välitetään suorituskontekstin osana. Tämä teksti otetaan lähdekoodista ajon aikana ER-tietomallin **Huomautus**-kenttään konfiguroidun `ReportDataContract.parmInvoiceInstanceText`-sidonnan suorituksessa. Tämä sidonta kutsuu **PSAProjInvoiceContract**-sovellusluokan `parmInvoiceInstanceText()`-menetelmää, jota käytetään nykyisessä mallimäärityksessä **ReportDataContract**-tietolähteenä.
 
-[![Objekti-tietolähteen määrittäminen ER-mallin yhdistämismäärityksen suunnittelijassa](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Objekti-tietolähteen määrittäminen ER-mallin yhdistämismäärityksen suunnittelijassa.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Tietoja suorituskontekstin tietojen siirtäminen lähdekoodista käynnissä olevalle ER-ratkaisulle on kohdassa [Kehitä sovelluksen artefaktit kutsumaan suunniteltua raporttia](er-quick-start1-new-solution.md#DevelopCustomCode).
 

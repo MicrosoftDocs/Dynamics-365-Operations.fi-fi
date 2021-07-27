@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820808"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350643"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Toimittajan maksatusehdotusten automatisointi
 
@@ -97,11 +97,11 @@ Suosittelemme, että arvioit tarpeittesi mukaan, onko automaatio hyödyllinen or
 
 Kun toimittajan maksatusehdotuksen automaatiosarja on tehty, kunkin suorituksen esiintymät näkyvät prosessiautomaation viikkonäkymässä. Toimittajamaksuissa prosessiautomaation viikkonäkymä on lisätty sekä **Toimittajamaksu**-työtilaan että **Prosessiautomaatio**-sivulle.
 
-[![Toimittajamaksu-työtilan prosessiautomaation viikoittainen näkymä](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Toimittajamaksut-työtilan prosessiautomaation viikoittainen näkymä.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 **Toimittajamaksut**-työtilan prosessiautomaation viikkonäkymä näyttää vain toimittajien maksuehdotusten automaatiot. Se näyttää kaikki nykyisen viikon maksujen esiintymät kaikille yrityksille, joihin kirjautuneen käyttäjän suojausoikeudet on määritetty. Jos esimerkiksi ostoreskontran työntekijä vastaa USMF- ja USSI-yritysten maksuista, hän näkee toimittajan maksuehdotuksen automatisoinnin esiintymät näille kahdelle yritykselle, mutta ei muille yrityksille.
 
-[![Prosessiautomaation viikkonäkymä USMF- ja USSI-yrityksille](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Prosessiautomaation viikkonäkymä USMF- ja USSI-yrityksille.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Kukin esiintymä näyttää yrityksen, johon kirjauskansio on luotu tai tullaan luomaan. Jos maksuja luodaan keskitettyjen maksuerien avulla, näytettävä yritys on yritys, jolle maksu suoritetaan. Tapahtuma ei välttämättä näytä, mitkä yritysten laskut maksetaan.
 

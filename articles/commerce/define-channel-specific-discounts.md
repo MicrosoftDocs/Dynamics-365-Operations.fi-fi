@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4003bd78e400994f3c164d2f7e8e3aa5ce93146
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76b8111ddc9e634ce689999da7b8621f550afc5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802066"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349573"
 ---
 # <a name="define-channel-specific-discounts"></a>Kanavakohtaisten alennusten määrittäminen
 
@@ -37,7 +37,7 @@ Commerce määrittää kanavakohtaiset alennukset hintaryhmien avulla. Hintaryhm
 
 ## <a name="price-groups"></a>Hintaryhmät
 
-[![Hintaryhmät](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Hintaryhmät.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Edellä olevassa kaaviossa on kuva tapahtumassa mahdollisesti olevien yksikköjen suhteesta (kanava, luettelo, liitos, asiakas, kanta-asiakaskortti) ja erilaisista määritettävistä alennustyypeistä. Kaikki tapahtumat tapahtuvat kanavassa, joten kanava on varmasti mukana tapahtumassa. Muut yksiköt ovat valinnaisia. Jokaisella päätietosivulla on linkki liittyvään hintaryhmäsivuun, jossa voit tarkastella hintaryhmiä ja lisätä niitä tarvittaessa. Hintaryhmän avulla neljä eri tyyppistä yksikköä liitetään alennuksiin, hinnanoikaisuihin ja kauppasopimuksiin. On suositeltavaa, että suunnittelet hintaryhmille nimeämisstrategian, jotta ne pysyvät järjestyksessä. Tyypit voi erottaa toisistaan käyttämällä etu- tai jälkiliitteenä kirjainta tai numeroa. Esimerkiksi 1-xxxxx voi viitata kanavan hintaryhmään ja 2-xxxxx luettelon hintaryhmään. Kullakin kaupankäynnin myyntiyksiköllä, joihin voidaan liittää alennuksia, on neljä kyselysivua.
 

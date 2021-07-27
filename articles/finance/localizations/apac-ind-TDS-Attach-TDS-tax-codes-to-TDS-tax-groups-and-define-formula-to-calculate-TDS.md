@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023217"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358479"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Liitä TDS-verokoodit TDS-veroryhmiin ja määritä TDS:n laskentakaava
 
@@ -33,7 +33,7 @@ Seuraavia ohjeita noudattamalla voit määrittää TDS-veroryhmän, liittää si
 
 1. Siirry kohtaan **Vero \> Välilliset verot \> Ennakonpidätys \> Ennakonpidätysryhmät**.
 
-    [![Ennakonpidätysryhmät-sivu](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Ennakonpidätysryhmät-sivu.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. Valitse toimintoruudusta **Uusi**, jos haluat luoda TDS:lle ennakonpidätysryhmän, ja syötä tarvittavat tiedot.
 3. Valitse **Verotyyppi**-kentästä **TDS**.
@@ -43,7 +43,7 @@ Seuraavia ohjeita noudattamalla voit määrittää TDS-veroryhmän, liittää si
 7. Valitse **Veroton**-valintaruutu, jos haluat estää veroryhmän laskemisen tapahtumissa.
 8. Avaa kaavan suunnittelutoiminto valitsemalla toimintoruudusta **Suunnittelutoiminto**, jotta voit määrittää kaavan TDS:n laskemiseksi TDS-veroryhmälle. **Suunnittelutoiminto**-sivulla **Verot**-välilehdessä näkyvät TDS-verokoodit, jotka on valittu TDS-veroryhmälle.
 
-    [![Suunnittelutoiminto-sivu](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Suunnittelutoiminto-sivu.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. Luo rivi valitsemalla **Laskelma**-välilehdessä **Alt+N**. **Tunnus**-kentässä näkyy automaattisesti luotu TDS-laskennan prioriteettitunnus.
 10. Valitse **Verokoodi**-kentässä TDS-verokoodi, jolle kaava määritetään. Kaikki TDS-verokoodit, jotka on valittu TDS-veroryhmälle, ovat valittavissa tässä kentässä.

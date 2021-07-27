@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804426"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352297"
 ---
 # <a name="enable-personalized-recommendations"></a>Kohdennettujen suositusten ottaminen käyttöön
 
@@ -50,7 +50,7 @@ Mukautukset otetaan käyttöön seuraavasti.
 1. Valitse **Kohdennetut tuotesuositukset** -ominaisuus.
 1. Valitse **Kohdennetut tuotesuositukset** -ominaisuusruudussa **Ota käyttöön nyt**.
 
-![Mukautusten ottaminen käyttöön](./media/FeatureManagement_Personalized.PNG)
+![Mukautusten ottaminen käyttöön.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Kun mukautus otetaan käyttöön, mukautettujen tuotesuositusluetteloiden luontiprosessi aloitetaan. Enintään yksi päivä saattaa olla tarpeen, ennen kuin nämä luettelot ovat käytettävissä ja näkyvissä verkossa ja POS-sovelluksessa.
@@ -73,7 +73,7 @@ Ennen kuin Poiminnat sinulle -luettelo voi näkyä verkkokaupan sivulla, seuraav
 
 Seuraavassa kuvassa on esimerkki verkkokaupan sivulla olevasta Poiminnat sinulle -luettelosta.
 
-![Poiminnat sinulle -luettelot verkosta](./media/picksforyou.png)
+![Poiminnat sinulle -luettelot verkosta.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>Suositeltava asiakkaalle-luettelot POS-sovelluksessa
 
@@ -81,7 +81,7 @@ Vähittäiskauppiaat voivat mukauttaa aiemmin luotuja asiakastietosivuja ja lis�
 
 Seuraavassa kuvassa on esimerkki kassapäätteessä olevasta Suositeltu asiakkaalle -luettelosta.
 
-![Suositeltava asiakkaalle -luettelot POS-sovelluksessa](./media/picksonpos.png)
+![Suositeltava asiakkaalle -luettelot POS-sovelluksessa.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Käytä mukauttamista aiemmin luotuihin suositusluetteloihin
 
@@ -89,7 +89,7 @@ Jälleenmyyjät voivat soveltaa mukauttamista aiemmin luotuihin suositusluettelo
 
 Esimerkiksi kirjautuneena oleva käyttäjä on jo ostanut mustan kellon ja ruskeat työsaappaat, jotka näkyvät seuraavassa kuvassa Trendit - oletus -luettelossa. Siksi käyttäjä näkee uusia tuotteita näiden tuotteiden sijasta, kuten Trendit - mukautettu -luettelossa näkyy.
 
-![Mukauttamisen ottaminen käyttöön](./media/applypersonalization.png)
+![Mukauttamisen ottaminen käyttöön.](./media/applypersonalization.png)
 
 Jos haluat käyttää mukauttamista aiemmin luotuun suositusluetteloon Commercen sivustonluontityökalussa, toimi seuraavasti.
 
@@ -99,7 +99,7 @@ Jos haluat käyttää mukauttamista aiemmin luotuun suositusluetteloon Commercen
 1. Valitse luettelotyyppi **Valitse tuoteluettelon konfigurointi** -valintaikkunan **Tyyppi**-kohdasta.
 1. Valitse **Käytä mukauttamista** -valintaruutu ja valitse sitten **OK**.
 
-    ![Mukauttamisen kohdistaminen trendiluetteloon](./media/ApplyPersonalizationToTrending.PNG)
+    ![Mukauttamisen kohdistaminen trendiluetteloon.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Tallenna sivu, lopeta sen muokkaus ja sitten julkaise se. Kun sivu on julkaistu, kirjautuneet käyttäjät näkevät mukautetut trendiluettelot.
 

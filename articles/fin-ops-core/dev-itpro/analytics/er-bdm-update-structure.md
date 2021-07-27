@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750481"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350253"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen 
 
@@ -58,7 +58,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 
     Uusi malli avataan muokkaamista varten mallieditori-sivun upotetussa Excel Online -ohjausobjektissa.
 
-[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen liiketoiminta-asiakirjan mallin muokkaamiseen](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen liiketoiminta-asiakirjan mallin muokkaamiseen.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Muokattavan mallin nykyisen rakenteen tarkasteleminen
 
@@ -68,7 +68,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 4. Laajenna **Mallin rakenne** -ruudussa **Raportti \> Lasku \> rptHeader \> rptHeaderPart1**.
 5. Huomaa, että Finances mallirakenteessa **rptHeaderCompLogo** -nimike esitetään **Report \> Invoice \> rptHeader \> rptHeaderPart1** -nimikkeen alielementtinä.
 
-[![Liiketoiminta-asiakirjojen hallinnan työtilan käyttäminen muokattavan mallin nykyisen rakenteen tarkasteluun](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Liiketoiminta-asiakirjojen hallinnan työtilan käyttäminen muokattavan mallin nykyisen rakenteen tarkasteluun.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen poistamalla kuva
 
@@ -85,7 +85,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 4. Laajenna **Mallin rakenne** -ruudussa **Raportti \> Lasku \> rptHeader \> rptHeaderPart1**.
 5. Huomaa, että **rptHeaderCompLogo**-nimike ei enää sisälly Financen mallirakenteeseen.
 
-[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan poistamiseen liiketoiminta-asiakirjan mallista](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan poistamiseen liiketoiminta-asiakirjan mallista.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen lisäämällä kuva
 
@@ -97,7 +97,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 6. Laajenna **Mallin rakenne** -ruudussa **Raportti \> Lasku \> rptHeader \> rptHeaderPart1**.
 7. Huomaa, että uusi kuva sisältyy nyt nimikkeenä Financen mallirakenteeseen.
 
-[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan lisäämiseen liiketoiminta-asiakirjan malliin](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan lisäämiseen liiketoiminta-asiakirjan malliin.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Liittyvät linkit
 

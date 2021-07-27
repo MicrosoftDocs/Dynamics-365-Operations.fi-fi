@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 5f96302735e8aa1acf5c81992cb4cb49ff4a03ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352491"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä
 
@@ -54,7 +54,7 @@ BOPIS-skenaariot, joihin liittyy luottokorttimaksu, edellyttävät laitteistoase
 4. Valitse **Lataa** ja valitse sitten **Retail Modern POS**. 
 5. Kun **ModernPOSSetup.exe**-tiedoston lataus on päättynyt, valitse **Avaa tiedosto**.
 
-    ![Avaa tiedosto](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Avaa tiedosto.](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Valitse **Seuraava**, jos haluat käydä läpi asennusprosessin. Kun asennus on päättynyt, valitse **Sulje**.
 

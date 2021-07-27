@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b7e8a37e31201845b94547850b8979a103f0729e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800418"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352661"
 ---
 # <a name="cloud-powered-search-overview"></a>Pilvipohjaisen haun yleiskatsaus
 
@@ -41,7 +41,7 @@ Hakurelevanssi ja suorituskyky ovat tärkeitä tekijöitä monikanavakokemuksess
 
 Seuraavassa kuvassa on esimerkki tyypillisestä selaus- ja hakutoiminnosta.
 
-![Aloitussivun haku](./media/SearchLanding.png)
+![Aloitussivun haku.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Kohdistetun siirtymisen ja valinnan yhteenveto 
 
@@ -51,7 +51,7 @@ Kohdistetun siirtymisen avulla voi määrittää erilaisia tarkenteita eri termi
 
 Seuraavassa kuvassa on esimerkki kohdistetun siirtymisen käytöstä haussa.
 
-![Valinnan yhteenveto](./media/ChoiceSummary.png)
+![Valinnan yhteenveto.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Mukaansatempaava automaattinen ehdotustoiminto
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce tukee myös eri luokkiin kuuluvien avainsanavastaavuuksien
 
 Seuraavassa kuvassa näkyy esimerkki, jossa käytetään mukaansatempaavaa automaattista ehdotustoimintoa.
 
-![Mukaansatempaava automaattinen ehdotustoiminto](./media/ImmersiveAutoSuggestUX.png)
+![Mukaansatempaava automaattinen ehdotustoiminto.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Lajittele
 
@@ -69,11 +69,11 @@ Dynamics 365 Commercen parannellun lajittelun avulla asiakkaat voivat lajitella,
 
 >[!NOTE]
 >Nämä pilvipohjaiset hakutoiminnot ovat saatavilla versiosta 10.0.8 alkaen. Varmista, että valikossa **Kaupan parametrit > Määrityksen parametrit** on merkintä ProductSearch.UseAzureSearch set to 'true'. 
-![Määrityksen parametrit pilvipohjaiselle haulle](./media/CloudPoweredSearchConfigurationParameters.png)
+![Määrityksen parametrit pilvipohjaiselle haulle.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
+[Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
 
 [SEO-metatietojen hallinta](manage-seo-metadata.md)
 

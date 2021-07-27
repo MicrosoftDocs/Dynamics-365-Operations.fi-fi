@@ -2,7 +2,7 @@
 title: Kampanjabannerimoduuli
 description: Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3158916f96522bec6e7511f2d9daf61d36ffe8c6
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796243"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479349"
 ---
 # <a name="promo-banner-module"></a>Promopalkkimoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
@@ -46,7 +47,7 @@ Alennusmyynnit ennen koulujen alkamista. Osta nyt.
 
 Seuraavassa kuvassa on esimerkki kampanjabannerista.
 
-![Esimerkki kampanjabannerimoduulista](./media/ecommerce-Promobanner.PNG)
+![Esimerkki kampanjabannerimoduulista.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Kampanjabannerimoduulin ominaisuudet
 
@@ -59,6 +60,10 @@ Seuraavassa kuvassa on esimerkki kampanjabannerista.
 | Näytä karusellin valitsin     | **Tosi** vai **Epätosi**              | Arvo, joka ilmaisee, näytetäänkö karusellin valitsimet, jotta asiakkaan voivat kierrättää useita bannerikohteita manuaalisesti. |
 | Tekstin tasaus            | **Oikealla**, **vasemmalla** tai **keskellä** | Tekstin kohdistus kampanjabannerimoduulissa. |
 | Linkitä                      | URL-osoite                              | Vapaavalintaisen linkin URL-osoite. |
+|Tekstin tasaus             | **Oikealla**, **vasemmalla** tai **keskellä** | Tämä ominaisuus on käytettävissä teemalaajennuksena Adventure Works -teemassa. Sen avulla käyttäjä voi määrittää kampanjabannerin tekstin tasauksen. |
+
+> [!IMPORTANT]
+> Adventure Works -teema on käytettävissä Dynamics 365 Commerce -versiosta 10.0.20 eteenpäin.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Kampanjabannerimoduulin lisääminen sivulle 
 
@@ -78,7 +83,6 @@ Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominai
 
 > [!NOTE]
 > Kampanjabanneria käytetään yleensä sivun ylätunniste- ja alaotsikkopaikassa.
-
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

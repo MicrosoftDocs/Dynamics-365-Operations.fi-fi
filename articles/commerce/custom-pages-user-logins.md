@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936777"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349647"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
 
@@ -40,7 +40,7 @@ Mukautetut Commerce-sivut voidaan luoda käyttämällä sisäänkirjauksen, reki
 
 Kun olet määrittänyt Azure AD:n kuluttajakaupan vuokraajan ja liittänyt sen Commerce-ympäristöön, siirry **Azure AD:n kuluttajakauppa** -sivulla Azure-portaalissa ja valitse sitten **Käytännöt**-kohdassa **Käyttäjän työnkulut (käytännöt)**.
 
-![Käyttäjän työnkulut (käytännöt) -komento valikossa](./media/B2C_CustomPage_PoliciesMenu.png)
+![Käyttäjän työnkulut (käytännöt) -komento valikossa.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Nyt voit määrittää käyttäjän Rekisteröinti ja sisäänkirjaus-, Profiilin muokkaus ja Salasanan nollaus -työnkulut.
 
@@ -54,13 +54,13 @@ Voit määrittää Rekisteröinti ja sisäänkirjaus -käytännön seuraavasti.
 1. Valitse **Kerää määrite** -sarakkeessa **Sähköpostiosoite**-, **Etunimi**- ja **Sukunimi**-valintaruudut.
 1. Valitse **Palauta vaatimus** -sarakkeessa **Sähköpostiosoitteet**-, **Etunimi**-, **Tunnistetietojen tarjoaja**-, **Sukunimi**- ja **Käyttäjän objektin tunnus** -valintaruudut.
 
-    ![Valitut määritteet ja vaatimukset](./media/B2C_SignInSignUp_Attributes.png)
+    ![Valitut määritteet ja vaatimukset.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Valitse **OK**, kun haluat luoda käytännön.
 1. Kaksoisnapsauta uuden käytännön nimeä ja valitse siirtymisruudussa **Ominaisuudet**.
 1. Määritä **Ota JavaScriptia käyttävä sivun asettelu käyttöön (esikatselu)** -asetuksen arvoksi **Käytössä**.
 
-    ![Uuden käytännön Ominaisuudet-sivu](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Uuden käytännön Ominaisuudet-sivu.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Käytännön nimeen viitataan täysin Commerce-ympäristössä. (**B2C\_1\_**-etuliite sisällytetään viitteeseen.) Käytäntöjä ei voi nimetä uudelleen luomisen jälkeen. Jos korvaat Commerce-ympäristön olemassa olevan käytännön, voit poistaa alkuperäisen käytännön ja luoda uuden käytännön, jolla on sama nimi. Vaihtoehtoisesti, jos ympäristö on jo valmisteltu, voit lähettää uuden käytännön nimen palvelupyynnön kautta.
@@ -150,7 +150,7 @@ Voit päivittää Rekisteröinti ja sisäänkirjaus -käytännön mukautetun siv
     1. Valitse **Sähköpostiosoite**-, **Etunimi**- ja **Sukunimi**-määritteille **Ei**-arvo **Valinnainen**-sarakkeessa.
 1. Valitse **Tallenna**.
 
-    ![Paikallisen tilin rekisteröinti -sivun käytännön määrittäminen](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Paikallisen tilin rekisteröinti -sivun käytännön määrittäminen.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Profiilin muokkaus -käytännön päivittäminen mukautetun sivun tiedoilla
 
@@ -188,11 +188,11 @@ Moduulikirjastossa sisäänkirjausmoduulit täytetään etukäteen otsikoiden ja
 
 Esimerkiksi unohtuneen salasanan oletusteksti on **Unohtuiko salasana?** Alla näkyy sisäänkirjaussivun oletusteksti.
 
-![Sisäänkirjaussivun oletusteksti unohtunutta salasanaan varten](./media/B2C_SignUp_ModuleFace.png)
+![Unohtuneen salasanan oletusteksti kirjautumissivulla.](./media/B2C_SignUp_ModuleFace.png)
 
 Voit kuitenkin muokata moduulikirjaston kirjautumismoduulin global.json-tiedoston tekstin muotoon **Unohtuiko salasanasi?**, kuten seuraavassa kuvassa näkyy.
 
-![Sisäänkirjauksen päivitetty linkkiteksti moduulin global.json-tiedostossa](./media/B2C_CustomizingStringsForModule.png)
+![Linkin päivitetty teksti sisäänkirjautumismoduulin global.json-tiedostossa.](./media/B2C_CustomizingStringsForModule.png)
 
 Kun olet päivittänyt global.json-tiedoston ja julkaissut muutokset, uusi linkkiteksti näkyy sisäänkirjausmoduulissa sekä Commercessa että julkaistulla sisäänkirjaussivulla.
 

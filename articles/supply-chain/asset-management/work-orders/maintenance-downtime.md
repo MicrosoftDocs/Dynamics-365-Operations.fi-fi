@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344613"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Työtilausten ylläpidon käyttökatko
 
@@ -45,7 +45,7 @@ Voit luoda ylläpidon käyttökatkojen rekisteröintejä työtilauksessa valitul
 
 Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon syykoodit** -sivusta.
 
-![Kuva 1](media/15-work-orders.png)
+![Kuva 1.](media/15-work-orders.png)
 
 Kun olet luonut ylläpidon käyttökatkon syykoodit, joita haluat käyttää, voit luoda työtilauksille ja käyttöomaisuudelle ylläpidon käyttökatkorekisteröintejä.
 
@@ -71,15 +71,15 @@ Kun olet luonut ylläpidon käyttökatkon syykoodit, joita haluat käyttää, vo
 
 Alla olevassa kuvassa näkyy esimerkki ylläpidon käyttökatkon rekisteröinnistä.
 
-![Kuva 2](media/16-work-orders.png)
+![Kuva 2.](media/16-work-orders.png)
 
 Ylläpidon käyttökatkojen rekisteröintien laskennassa käytettävä kalenteri määräytyy resurssi- ja parametriasetusten valinnan mukaan. Jos resurssi on valittuna resurssille **Kaikki resurssit** -sivun **Käyttöomaisuus**-pikavälilehden **Resurssi**-kentässä, käytetään liittyvän resurssiryhmän kalenteria, joka näkyy seuraavassa kuvassa.
 
-![Kuva 3](media/17-work-orders.png)
+![Kuva 3.](media/17-work-orders.png)
 
 Jos käyttöomaisuudelle ei ole valittu resurssia, käytetään **Resurssienhallinnan parametrit** -sivulla valittua vakiokalenteria seuraavassa kuvassa esitetyllä tavalla.
 
-![Kuva 4](media/18-work-orders.png)
+![Kuva 4.](media/18-work-orders.png)
 
 Näet yhteenvedon kaikista ylläpidon käyttökatkojen rekisteröinneistä valitsemalla **Resurssienhallinta** > **Kyselyt** > **Ylläpidon käyttökatko**.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a3b9a8b5775d2001f3384480e2f9593f2dfa8b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752409"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356316"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 3 – Raportin suunnittelu)
 
@@ -92,7 +92,7 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 59. Valitse Lisää määrite.
 60. Kirjoita Nimi-kenttään. "Kuv."
 61. Valitse OK.
-![ER-toimintojen suunnittelutoiminnon sivu](../media/er-financial-dimensions-guides-format1.png)
+![ER-toimintojen suunnittelutoiminnon sivu.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Yhdistä raportin osat tietolähteisiin
 1. Valitse Yhdistämismääritys-välilehti.
@@ -141,7 +141,7 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 44. Valitse Sido.
 45. Valitse Tallenna.
 46. Sulje sivu.
-![ER-toimintojen suunnittelutoiminnon sivu](../media/er-financial-dimensions-guides-format2.png)
+![ER-toimintojen suunnittelutoiminnon sivu.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

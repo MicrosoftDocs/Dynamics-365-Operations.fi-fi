@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3da447c298993794afa49a0fbaddb1c21cf6231a
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 46e59c8253ae5e4de54d56a45a142194ce38cf54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271302"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357855"
 ---
 # <a name="apply-inventory-settings"></a>Varastoasetusten käyttäminen
 
@@ -68,15 +68,15 @@ Ostolaatikko, toivelista, myymälänvalitsin, ostoskori ja ostoskorin kuvakemodu
 
 Seuraavan kuvan esimerkissä PDP näyttää Varastossa (Käytettävissä) -sanoman.
 
-![Esimerkki PDP-moduulista, jossa on varastossa oleva sanoma](./media/pdp-InStock.png)
+![Esimerkki PDP-moduulista, jossa on Varastossa-sanoma.](./media/pdp-InStock.png)
 
 Seuraavan kuvan esimerkissä PDP näyttää Loppunut varastosta (Käytettävissä) -sanoman.
 
-![Esimerkki PDP-moduulista, jossa on loppunut varastosta -sanoma](./media/pdp-outofstock.png)
+![Esimerkki PDP-moduulista, jossa on Loppunut varastosta -sanoma.](./media/pdp-outofstock.png)
 
 Seuraavan kuvan esimerkissä ostoskori näyttää Varastossa (Käytettävissä) -sanoman.
 
-![Esimerkki ostoskorimoduulista, jossa on varastossa oleva sanoma](./media/cart-instock.png)
+![Esimerkki ostoskorimoduulista, jossa on Varastossa-sanoma.](./media/cart-instock.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

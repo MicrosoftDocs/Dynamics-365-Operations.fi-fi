@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 026a549bfb856abc56eeaab21c681a8271ce4f44
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797644"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347506"
 ---
 # <a name="content-block-module"></a>Sisältölohkomoduuli
 
@@ -46,15 +46,15 @@ Teema voi lisäksi tuoda esille kunkin asettelun erilaisia ominaisuuksia. Teeman
 
 Seuraavassa kuvassa on esimerkki hero-asettelua käyttävästä sisältölohkomoduulista.
 
-![Esimerkki hero-moduulista](./media/Hero.PNG)
+![Esimerkki hero-moduulista.](./media/Hero.PNG)
 
 Seuraavassa kuvassa on esimerkki ominaisuusasettelua käyttävästä sisältölohkomoduulista.
 
-![Esimerkkejä ominaisuusmoduuleista](./media/Feature.PNG)
+![Esimerkkejä ominaisuusmoduuleista.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Sisältölohkomoduulin ominaisuudet
 
-| Ominaisuuden nimi  | Arvot | Kuvaus |
+| Ominaisuuden nimi  | Arvot | kuvaus |
 |----------------|--------|-------------|
 | Kuva          | Kuvatiedosto | Kuvan avulla voidaan esitellä tuotetta tai kampanjaa. Kuvan voi ladata kuvavalikoimaan. Myös olemassa olevaa kuvaa voi käyttää. |
 | Otsikko        | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Jokaisella hero-moduulilla voi olla otsikko. Oletusarvoisesti otsikossa käytetään **H2**-otsikkotunnusta. Tunnuksen voi kuitenkin muuttaa, jotta helppokäyttötoimintojen vaatimukset täyttyvät. |

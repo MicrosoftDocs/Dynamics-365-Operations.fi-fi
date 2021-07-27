@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.custom: 268444
+ms.custom:
+- "268444"
+- intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345029"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
@@ -119,7 +121,7 @@ Jotta suurinta osaa laitteista voidaan käyttää Commercen kanssa, myyntipistet
 -   **Ohjausobjekti** – Laiteluokan (kuten rivinäytön) ohjausobjekti sisältää ohjelman liittymän. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tarjoaa vakiojoukon OPOS-ohjausobjekteja, jota kutsutaan myös yhteisiksi ohjausobjekteiksi (CCO). Commercen myyntipisteen komponentti testataan yhteisten ohjausobjektien avulla. Testaamisen avulla voidaan varmistaa, että jos Commerce tukee laiteluokkaa OPOS:n kautta, useita laitetyyppejä voidaan tukea, jos valmistaja tarjoaa OPOS:lle muodostetun palveluobjektin. Jokaista laitetyyppiä ei tarvitse testata eksplisiittisesti.
 -   **Palveulobjekti** – Palveluobjekti mahdollistaa ohjausobjektin ja laitteen välisen yhteydenpidon. Laitteen valmistaja tarjoaa yleensä laitteen palveluobjektin. Joissakin tapauksissa palveluobjekti on kuitenkin ladattava valmistajan sivustosta. Saatavana voi olla esimerkiksi uudempi palveluobjekti. Valmistajan sivuston osoite löytyy laitteen dokumentaatiosta.
 
-[![Ohjausobjekti ja palveluobjekti](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Myyntipisteen OLE:n OPOS-toteutuksen tuki auttaa varmistamaan, että laitteiden valmistajat ja myyntipisteen julkaisijat ottavat standardin käyttöön oikein. Myyntipisteiden järjestelmät ja tuetut laitteet voivat toimia yhdessä, vaikka niitä ei olisi aiemmin testattu yhdessä. 
+[![Ohjausobjekti ja palveluobjekti.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Myyntipisteen OLE:n OPOS-toteutuksen tuki auttaa varmistamaan, että laitteiden valmistajat ja myyntipisteen julkaisijat ottavat standardin käyttöön oikein. Myyntipisteiden järjestelmät ja tuetut laitteet voivat toimia yhdessä, vaikka niitä ei olisi aiemmin testattu yhdessä. 
 
 > [!NOTE]
 > OPOS-tuki ei takaa sitä, että kaikkia OPOS-ohjaimen sisältäviä laitteita tuetaan. Commercen on ensin tuettava tätä laitetyyppiä tai -luokkaa OPOS:n kautta. Lisäksi palveluobjekteja ei ehkä aina ole päivitetty uusimman ohjausobjektiversion mukaisesti. Ota huomioon, että yleensä palveluobjektien laatu vaihtelee.

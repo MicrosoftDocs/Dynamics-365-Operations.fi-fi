@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e4a61383c790b63aa1c07f7004f264495171441a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3a1fbd6a71c8d00e862183c32fb9f7e17dcc5bd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792216"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351985"
 ---
 # <a name="product-details-pages-overview"></a>Tuotetietosivujen yleiskatsaus
 
@@ -31,7 +32,7 @@ PDP-sivulla on tuotteen eritellyt tiedot. Sen avulla asiakkaat voivat valita tuo
 
 Seuraavassa kuvassa on esimerkki PDP-sivusta.
 
-![Esimerkki tuotetietosivusta](./media/pdp.PNG)
+![Esimerkki tuotetietosivusta.](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Ylä- ja alatunnistemoduulit
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41313dd1fde51cb84bc971bb7bb98841222259b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce10817d677f7e48194272b5ebb91b95d657441f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754823"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360279"
 ---
 # <a name="action-search"></a>Toimintohaku
 
@@ -31,7 +31,7 @@ Tässä artikkelissa käsitellään toimintohakutoimintoa. Toimintohaku auttaa s
 
 Sivuilla näytetään ensisijaisesti toimintoruutujen komennot sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkaluriveillä, jotka näkyvät sivun eri osissa. Aiemmissa versioissa Päävihjeet-toiminnon avulla pystyit nopeasti käyttämään mitä tahansa toimintoruudun painiketta painamalla Alt-näppäintä ja sitten sarjan kirjaimia.
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 Toimintohakutoiminto korvaa päävihjeet, jotka eivät ole enää käytettävissä. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
 
@@ -45,7 +45,7 @@ Suorita seuraavat vaiheet, kun haluat käyttää toimintohaku-ominaisuutta:
 
 Kun painike on suoritettu, huomio palautuu viimeiseen toimeesi sivulla niin, että voit jatkaa työskentelyä.
 
-[![action-search-field](./media/action-search-field.png)](./media/action-search-field.png)
+[![action-search-field.](./media/action-search-field.png)](./media/action-search-field.png)
 
 Voit myös aloittaa toiminnon painamalla näppäinyhdistelmää Ctrl+/ tai Alt+Q. Paina pikanäppäintä uudelleen palataksesi edelliseen toimeesi sivulla.
 
@@ -61,11 +61,11 @@ Usein on tiedettävä sekä painikkeen sijainti että konteksti, jotta ymmärtä
 
 Kirjoitit esimerkiksi **yht** **toimintohaku**-kenttään ja tarkastelet nyt tulosluetteloa. Ensimmäinen tulosluettelon painike **Summat** näkyy korostettuna. Näet myös painikkeen, jonka polku on **Sales**&gt;**Näytä**. Polun **Myyntitilaus**-osa vastaa toimintoruudun **Myyntitilaus**-välilehteä, ja polun **Näytä**-osa vastaa kyseisen välilehden **Näytä**-ryhmää. Vastaavasti painikkeen **Kokonaisalennus**-polku (**Myy** &gt; **Laske**) ilmoittaa, että tämä painike sijaitsee **Laske**-ryhmässä toimintoruudun **Myy**-välilehdessä. Tämän vuoksi näiden tietojen avulla voit ymmärtää täsmälleen mikä painike suoritetaan toimintohaun toimesta (jos valitset kyseisen painikkeen tulosten luettelossa).
 
-[![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![action-search-field-with-data.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta toimintoruudusta sivun yläreunassa. Toimintohaku kuitenkin näyttää tulokset myös näkyvillä olevista työkaluriveistä, jotka ovat muualla sivulla. Haettavana on esimerkiksi **Käytettävissä oleva varasto** -painike, joka on **Myyntitilausrivit**-pikavälilehdessä. Tässä tapauksessa tulosten luettelossa painikkeen polku (**Myyntitilausrivit** &gt; **Varasto** &gt; **Näytä**) ilmoittaa, että tämä painike on **Näytä**-otsikossa **Varasto**-valikkopainikkeessa **Myyntitilausrivit**-pikavälilehdessä.
 
-[![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![on-hand-inventory.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Jotkin painikkeet eivät näy toimintohaussa. Näitä ovat valintaikkunan ja alilomakkeiden painikkeet. 

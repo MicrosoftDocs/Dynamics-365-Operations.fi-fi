@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796363"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345157"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -36,7 +36,7 @@ Tuotehaku tehdään oletusarvoisesti myymälän valikoimassa. Tällaista hakua k
 
 Työntekijät voivat valita minkä tahansa myymälän tai hakea tuotteita kaikista myymälöistä helposti **Vaihda luettelo** -sivulla.
 
-![Luettelon muuttaminen](./media/Changecatalog.png "Luettelon muuttaminen")
+![Luettelon muuttaminen.](./media/Changecatalog.png "Luettelon muuttaminen")
 
 Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 
@@ -59,7 +59,7 @@ Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 - Vähittäismyyjät voivat määrittää tuotehaun näyttämään hakuehdotuksia käyttäjien kirjoittaessa tuotenimiä. Tämän toiminnon uusi asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Asetuksen nimi on **Näytä hakuehdotukset kirjoittamisen aikana**. Työntekijät voivat käyttää tätä toimintoa löytämään etsimänsä tuotteet nopeasti, koska koko tuotenimeä ei tarvitse kirjoittaa.
 - Tuotehaun algoritmi etsii hakusanoja nyt myös tuotteen **Hakunimi**-ominaisuudesta.
 
-![Tuote-ehdotukset](./media/Productsuggestions.png "Tuote-ehdotukset")
+![Tuote-ehdotukset.](./media/Productsuggestions.png "Tuote-ehdotukset")
 
 ## <a name="customer-search"></a>Asiakashaku
 
@@ -83,7 +83,7 @@ Työntekijät voivat suorittaa yleisen haun valitsemalla **Suodata tuloksia** -p
 
 Tuloksissa ei näytetä muiden yritysten asiakkaiden asiakastunnusta, koska näillä asiakkailla ei ole asiakastunnusta nykyisessä yrityksessä. Jos työntekijä kuitenkin avaa asiakkaan tietosivun, järjestelmä luo automaattisesti osapuolelle asiakastunnuksen ja liittää myymälän osoitekirjan asiakkaaseen. Tällöin asiakas näkyy myöhemmin tehtävissä paikallisissa hauissa.
 
-![Globaali asiakashaku](./media/Globalcustomersearch.png "Globaali asiakashaku")
+![Globaali asiakashaku.](./media/Globalcustomersearch.png "Globaali asiakashaku")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Paikalliset asiakkaiden lisähakutoiminnot
 
@@ -94,11 +94,11 @@ Kun käyttäjä hakee puhelinnumeroa, järjestelmä ohittaa erikoismerkit (kuten
 
 Perinteinen asiakashaku voi kestää kauan, koska haku kohdistuu useisiin kenttiin. Kassat voivat sen sijaan tehdä haun asiakkaan yhden ominaisuuden perusteella käyttämällä esimerkiksi nimeä, sähköpostiosoitetta tai puhelinnumeroa. Asiakkaan hakualgoritmin käyttämiä ominaisuuksia kutsutaan *asiakashaun ehdoiksi*. Järjestelmänvalvoja voi määrittää kätevästi vähintään yhden hakuehdon myyntipisteessä näkyväksi pikavalinnaksi. Koska haussa käytetään vain yhtä ehtoa, vain hakua vastaavat tulokset näytetään. Tämän vuoksi haku on tehokkaampi kuin tavallinen asiakashaku. Seuraavassa kuvassa on myyntipisteen asiakashaun pikavalinnat.
 
-![Asiakashaun pikakuvakkeet](./media/SearchShortcutsPOS.png "Asiakashaun pikakuvakkeet")
+![Asiakashaun pikakuvakkeet.](./media/SearchShortcutsPOS.png "Asiakashaun pikakuvakkeet")
 
 Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **Commercen parametrit** -sivun Commercessa ja valitsemalla sitten **Myyntipisteen hakuehdot** -välilehdessä kaikki pikavalintoina näytettävät ehdot.
 
-![Määritä haun pikakuvakkeet](./media/ConfigureShortcutsAX.png "Määritä haun pikakuvakkeet")
+![Määritä haun pikakuvakkeet.](./media/ConfigureShortcutsAX.png "Määritä haun pikakuvakkeet")
 
 > [!NOTE]
 > Jos lisäät liian monta pikavalintaa, myyntipisteen hakuruudun avattava valikko muuttuu sekavaksi, mikä voi vaikuttaa työntekijän hakukokemukseen. Tämän vuoksi vain tarvittavat pikavalinnat kannattaa lisätä.

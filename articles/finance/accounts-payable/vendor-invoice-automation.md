@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 217c5d6d6df88eccf377fbf604eb0a1eb0ba7c9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841234"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344803"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Skannattujen tiedostojen laskujen automatisointi
 
@@ -34,7 +34,7 @@ Laskuautomaatioratkaisu tuo käyttöön vakiokäyttöliittymän, joka sisällytt
 
 Seuraavassa kuvassa on esimerkkitilanne integroinnista, jossa Contoso on tehnyt yhteistyötä OCR-palveluntarjoajan kanssa toimittajan laskun käsittelyä varten. Contoson palveluntarjoajat lähettävät laskuja palveluntarjoajalle sähköpostitse. Palveluntarjoajan luo OCR-käsittelyn avulla laskun metatiedot (otsikon ja/tai rivit) ja skannatun kuvan laskusta. Integrointitaso muuntaa sitten nämä artefaktit yhteensopivaan muotoon.
 
-![Esimerkkiskenaario integroinnista](media/vendor_invoice_automation_01.png)
+![Esimerkkiskenaario integroinnista.](media/vendor_invoice_automation_01.png)
 
 Edellisestä skenaariosta on useita mahdollisia versioita, jos laskun integrointi on pakollinen. Toinen käyttöliittymän käyttötapa on tietojen siirtäminen laskujen ja liitteiden luomiseksi.
 
@@ -92,7 +92,7 @@ Skenaarioissa, joissa toimittajalaskut tulevat Finance and Operationsiin integro
 
 Uusi laskun poikkeusten luettelosivu on kohdassa **Ostoreskontra** > **Laskut** > **Epäonnistuneet tuonnit** > **Toimittajan laskut, joiden tuonti epäonnistui**. Tällä sivulla näkyvät kaikki toimittajalaskujen otsikkotietueet Toimittajan laskun otsikko ‑tietoyksikön väliaikaisesta taulukosta. Huomaa, että voit tarkastella samoja tietueita **Tietojen hallinta** -työtilassa. **Tietojen hallinta** -työtilassa voit myös suorittaa samat toiminnot, jotka ovat käytössä poikkeusten käsittelytoiminnossa. Poikkeusten käsittelytoiminto on optimoitu toiminnalliselle käyttäjälle, mikä helpottaa käyttöä.
 
-![Poikkeusluettelo-sivu](media/vendor_invoice_automation_02.png)
+![Poikkeusluettelo-sivu.](media/vendor_invoice_automation_02.png)
 
 Tämä luettelosivulta sisältää seuraavat kentät, jotka saadaan syötteen kautta:
 
@@ -136,7 +136,7 @@ Poikkeusluettelo-sivu tukee vakiotyyppisiä suojausrakenteita, joita **Tietojen 
 + Käyttäjäkohtainen
 + Yrityskohtainen
 
-![Tuontityö, joka on suojattu käyttäjärooli- ja yrityskohtaisesti](media/vendor_invoice_automation_04.png)
+![Tuontityö, joka on suojattu käyttäjärooli- ja yrityskohtaisesti.](media/vendor_invoice_automation_04.png)
 
 Jos suojaus on konfiguroitu laskun tuontityötä varten, poikkeusluettelosivu noudattaa kyseisiä asetuksia. Käyttäjät näkevät ainoastaan ne laskun poikkeustietueet, jotka tämä asetus sallii.
 

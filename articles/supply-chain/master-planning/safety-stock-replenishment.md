@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: d80c754b7aa154d9636bb0d9fbfb448987d01e48
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cc9273cc46e2549765dec4b2bbc9a3030753791d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841788"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353513"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Nimikkeiden varmuusvaraston täyttäminen
 
@@ -72,37 +72,50 @@ Seuraava skenaario näyttää, miten tätä parametria käytetään ja mitä ero
 > [!NOTE]
 > Kaikissa tämän aiheen kuvissa x-akseli vastaa varastoa, y-akseli päiviä, palkit varastotasoa ja nuolet tapahtumia, kuten myyntitilausrivejä, ostotilausrivejä tai suunniteltuja tilauksia.
 
-[![Yleinen varmuusvaraston täyttöskenaario](./media/Scenario1.png)](./media/Scenario1.png) **Täytä vähimmäisarvo** -parametrilla voi olla seuraavat arvot:
+[![Varmuusvaraston täyttämisen yleinen skenaario.](./media/Scenario1.png)](./media/Scenario1.png)
+**Täytä vähimmäisarvo** -parametrillä voi olla seuraavat arvot:
 ### <a name="todays-date"></a>Tämän päivän päivämäärä 
 Määritetty minimimäärä saavutetaan päivänä, jolloin pääsuunnittelu suoritetaan. Järjestelmä yrittää täyttää varmuusvarastorajan mahdollisimman nopeasti, vaikka se ei olisi realistista läpimenoajan vuoksi. 
-[![Tarve tämän päivän päivämääränä](./media/TodayReq.png)](./media/TodayReq.png) Suunniteltu tilaus P1 luodaan kuluvalle päivälle nostamaan varastosaatavuus varmuusvarastotason yläpuolelle kyseisenä päivänä. Myyntitilausrivit S1–S3 pienentävät edelleen varastotasoa. Pääsuunnittelu luo suunnitellut tilaukset P2–P4 palauttamaan varastotaso varmuusvarastorajalle kunkin myyntitilaustarpeen jälkeen.
+[![Tarve tämän päivän päivämääränä.](./media/TodayReq.png)](./media/TodayReq.png)
+Suunniteltu tilaus P1 luodaan kuluvalle päivälle nostamaan varastosaatavuus varmuusvarastotason yläpuolelle kyseisenä päivänä. Myyntitilausrivit S1–S3 pienentävät edelleen varastotasoa. Pääsuunnittelu luo suunnitellut tilaukset P2–P4 palauttamaan varastotaso varmuusvarastorajalle kunkin myyntitilaustarpeen jälkeen.
 Kun **Tarve**-kattavuuskoodia käytetään, useita suunniteltuja tilauksia luodaan. Usein kysytyille nimikkeille ja materiaaleille kannattaa käyttää joko **Kausi**- tai **Min./Maks.**-kattavuutta luomaan täydennyksen myyntirakenne. Seuraavassa kuvassa on esimerkki **Kausi**-kattavuuskoodista.
-[![Kausi. Tämän päivän päivämäärä](./media/TodayPeriod.png)](./media/TodayPeriod.png) Seuraavassa kuvassa on esimerkki **Min./Maks.**-kattavuuskoodista.
-[![MinMax. Tämän päivän päivämäärä](./media/TodayMinMax.png)](./media/TodayMinMax.png)
+[![Kausi. Tämän päivän päivämäärä.](./media/TodayPeriod.png)](./media/TodayPeriod.png)
+Seuraavassa kuvassa on esimerkki **Min./Maks**-kattavuuskoodista.
+[![MinMax. Tämän päivän päivämäärä.](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### <a name="todays-date--procurement-time"></a>Tämän päivän päivämäärä + hankinta-aika 
 Määritetty minimimäärä saavutetaan päivänä, jolloin pääsuunnittelu suoritetaan ja johon on lisätty oston tai tuotannon läpimenoaika. Tämä aika sisältää varmuusmarginaalit. Jos nimikkeeseen liittyy kauppasopimus ja olet valinnut **Pääsuunnittelun parametrit**-sivulla **Etsi kauppasopimukset** -valintaruudun, kauppasopimuksen toimitusläpimenoaikaa ei oteta huomioon. Läpimenoajat haetaan nimikkeen kattavuudesta tai nimikkeestä.
 Tämä täyttämistila luo suunnitelmiin vähemmän viiveitä ja suunniteltuja tilauksia nimikkeen kattavuusryhmäasetuksista riippumatta. Seuraavassa kuvassa on suunnitelman lopputulos, jos kattavuuskoodi on **Tarve** tai **Kausi**.  
-[![Tarve. Kausi. Tämän päivän päivämäärä ja läpimenoaika](./media/TodayPLTReq.png)](./media/TodayPLTReq.png) Seuraavassa kuvassa on suunnitelman lopputulos, jos kattavuuskoodi on **Min/Maks.**  
-[![MinMax. Tämän päivän päivämäärä ja läpimenoaika](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
+[![Tarve. Kausi. Tämän päivän päivämäärä ja läpimenoaika.](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+Seuraavassa kuvassa on suunnitelman lopputulos, jos kattavuuskoodi on **Min./Maks**.  
+[![MinMax. Tämän päivän päivämäärä ja läpimenoaika.](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### <a name="first-issue"></a>Ensimmäinen varasto-otto 
 Määritetty minimimäärä saavutetaan päivänä, jolloin varastosaatavuus alittaa minimitason, kuten seuraavassa kuvassa. Vaikka varastosaatavuus alittaa minimitason pääsuunnittelun suorituspäivänä, **Ensimmäinen varasto-otto** ei yritä kattaa sitä ennen seuraavan tarpeen saapumista.
 Seuraavassa kuvassa on esimerkki **Tarve**-kattavuuskoodista.
-[![**Tarve**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) Seuraavassa kuvassa on esimerkki **Kausi**-kattavuuskoodista.
-[![**Kausi**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) Seuraavassa kuvassa on esimerkki **Min./Maks.**-kattavuuskoodista.
-[![**MinMax**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) Jos varastosaatavuus alittaa jo pääsuunnittelun suorituspäivänä varmuusvarastorajan, **Tämän päivän päivämäärä** ja **Tämän päivän päivämäärä + hankinta-aika** käynnistävät täydennyksen välittömästi. **Ensimmäinen varasto-otto** odottaa nimikkeen muuta varasto-ottoa, kuten myyntitilauksen ja tuoterakennerivin tarvetta, jonka jälkeen se käynnistää täydennyksen kyseisenä tapahtumapäivänä. Jos varastosaatavuus alittaa varmuusvarastorajan pääsuunnitelman suorituspäivänä, **Tämän päivän päivämäärä** ja **Ensimmäinen varasto-otto** tuottavat täsmälleen saman tuloksen, kuten seuraavassa kuvassa. 
+[![**Tarve**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu.](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
+Seuraavassa kuvassa on esimerkki **Kausi**-kattavuuskoodista.
+[![**Kausi**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu.](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
+Seuraavassa kuvassa on esimerkki **Min./Maks**-kattavuuskoodista.
+[![**MinMax**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu.](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
+Jos varastosaatavuus alittaa varmuusvarastorajan jo pääsuunnittelun suorituspäivänä, **Tämän päivän päivämäärä** ja **Tämän päivän päivämäärä + hankinta-aika** käynnistävät täydennyksen välittömästi. **Ensimmäinen varasto-otto** odottaa nimikkeen muuta varasto-ottoa, kuten myyntitilauksen ja tuoterakennerivin tarvetta, jonka jälkeen se käynnistää täydennyksen kyseisenä tapahtumapäivänä. Jos varastosaatavuus alittaa varmuusvarastorajan pääsuunnitelman suorituspäivänä, **Tämän päivän päivämäärä** ja **Ensimmäinen varasto-otto** tuottavat täsmälleen saman tuloksen, kuten seuraavassa kuvassa. 
 
-[![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) Jos varastosaatavuus ei alita varmuusvarastorajaa pääsuunnittelun suorituspäivänä, **Tämän päivän päivämäärä + hankinta-aika** tuottaa seuraavan tuloksen, sillä siirtää täyttämisen hankinnan läpimenoajan loppuun.
-![**Tarve**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu](./media/ReqTodayLT.png)
+[![NotUnderLimit.](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+Jos varastosaatavuus ei alita varmuusvarastorajaa pääsuunnittelun suorituspäivänä, **Tämän päivän päivämäärä + hankinta-aika** tuottaa seuraavan tuloksen, sillä siirtää täyttämisen hankinnan läpimenoajan loppuun.
+![**Tarve**-kattavuuskoodia ja **Ensimmäinen varasto-otto** -täyttämistä käyttävän nimikkeen suunnittelu.](./media/ReqTodayLT.png)
 ### <a name="coverage-time-fence"></a>Kattavuuden aikarajat
 Määritetty minimimäärä saavutetaan **Kattavuuden aikarajat** -kentässä määritetyn ajanjakson aikana. Tämä asetus on kätevä silloin, kun pääsuunnittelu ei salli varastosaatavuuden käyttöä todellisissa tilauksissa, kuten myynnissä tai siirroissa, varmuustason ylläpidon vuoksi. Tätä täydennystapaa ei kuitenkaan tarvita tulevissa versioissa ja tämä asetus vanhentuu.
 ## <a name="plan-safety-stock-replenishment-for-first-expired-first-out-fefo-items"></a>FEFO-nimikkeiden varmuusvaraston täydennyksen suunnittelu
 Varmuusvarastossa käytetään aina vanhentumispäivältään viimeisintä varastoonottoa, jotta todellinen kysyntä, kuten myyntirivit tai tuoterakennerivit, voidaan täyttää FEFO-järjestyksessä.
 Seuraava skenaario osoittaa, mitä tämä tarkoittaa käytännössä.
-[![FEFOScenario](./media/FEFOScenario.png)](./media/FEFOScenario.png) Kun suunnittelu suoritetaan, se kattaa ensimmäisen myyntitilauksen käsillä olevasta varastosta ja lisäostotilauksen jäljellä olevalle määrälle.
-[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png) Suunniteltu tilaus luodaan varmistamaan, että varastosaatavuus palautetaan varmuustasolle.
-[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png) Kun toista myyntitilausta suunnitellaan, sen määrä katetaan varmuusvaraston kattavasta aiemmin luodusta suunnitellusta tilauksesta. Näin ollen varmuusvarasto vaihtuu jatkuvasti.
-[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png) Lopuksi luodaan vielä yksi suunniteltu tilaus kattamaan varmuusvarasto.
-[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png) Kaikki erät vanhentuvat vastaavasti ja suunnitellut tilaukset luodaan täyttämään varmuusvarasto vanhentumisen jälkeen.
+[![FEFOScenario.](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+Kun suunnittelu suoritetaan, se kattaa ensimmäisen myyntitilauksen käsillä olevasta varastosta ja lisäostotilauksen jäljellä olevalle määrälle.
+[![FEFO1.](./media/FEFO1.png)](./media/FEFO1.png)
+Suunniteltu tilaus luodaan varmistamaan, että varastosaatavuus palautetaan varmuustasolle.
+[![FEFO2.](./media/FEFO2.png)](./media/FEFO2.png)
+Kun toista myyntitilausta suunnitellaan, sen määrä katetaan varmuusvaraston kattavasta aiemmin luodusta suunnitellusta tilauksesta. Näin ollen varmuusvarasto vaihtuu jatkuvasti.
+[![FEFO3.](./media/FEFO3.png)](./media/FEFO3.png)
+Lopuksi luodaan vielä yksi suunniteltu tilaus kattamaan varmuusvarasto.
+[![FEFO4.](./media/FEFO4.png)](./media/FEFO4.png)
+Kaikki erät vanhentuvat vastaavasti ja suunnitellut tilaukset luodaan täyttämään varmuusvarasto vanhentumisen jälkeen.
 
 ## <a name="how-master-planning-handles-the-safety-stock-constraint"></a>Pääsuunnittelun tapa käsitellä varmuusvaraston rajoitusta
 

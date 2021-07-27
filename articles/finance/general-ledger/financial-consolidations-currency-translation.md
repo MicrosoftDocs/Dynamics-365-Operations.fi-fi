@@ -9,16 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193902"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345377"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -66,13 +67,13 @@ Konsolidointi verkossa tukee esimerkiksi seuraavia konsolidointiskenaarioita:
 ## <a name="legal-entity-setup"></a>Yrityksen määritys
 Yritys on määritettävä ennen konsolidoinnin käsittelyä. Voit suorittaa konsolidoinnin niin monta kertaa kuin on tarpeellista ja kaikki tiedot muunnetaan lähdeyrityksen kirjanpitovaluutasta konsolidointiyritykselle määritettyyn valuuttaan. Niinpä jos seuraavassa organisaatiorakenteessa kaikkien pohjoisamerikkalaisten yritysten valuutta on ensin muutettava Yhdysvaltain dollareiksi (USD) ja sitten euroiksi (EUR), mikä on emoyrityksen valuutta, tarvitset ainakin kaksi konsolidointiyritystä.
 
-![Organisaatiorakenne](./media/organizational-structure.png "Organisaatiorakenne")
+![Organisaatiorakenne.](./media/organizational-structure.png "Organisaatiorakenne")
 
 Edellisessä organisaatiorakenteessa tarvitset yrityksen Pohjois-Amerikan konsolidointia varten, koska konsolidoinnit konsolidoivat aina lähdeyrityksen kirjanpitovaluutasta konsolidointiyrityksen valuutaksi. Jos esimerkissä kaikki yritykset sisällytetään yhteen konsolidointiin, meksikolainen tytäryhtiö muunnetaan Meksikon pesoista (MXN) euroiksi (EUR) eikä pesoista dollareiksi (USD) ja sitten euroiksi.
 
 Kun luot yrityksen, voit määrittää, käytetäänkö yritystä sekä konsolidointi- että eliminointiprosessiin tai vain toiseen prosessiin. Seuraavassa kuvassa yritystä käytetään kumpaankin prosessiin. Huomaa, ettet voi kirjata päivittäisiin kirjauskansioihin konsolidointiryrityksessä mutta voit kirjata ne eliminointiyrityksessä. Tämän vuoksi erillinen eliminointiyritys voi olla hyvä vaihtoehto.
 
-![Sekä konsolidointiin että eliminointiin käytetty yritys](./media/sep-elimination-company.png "Sekä konsolidointiin että eliminointiin käytetty yritys")
+![Sekä konsolidointiin että eliminointiin käytetty yritys.](./media/sep-elimination-company.png "Sekä konsolidointiin että eliminointiin käytetty yritys")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Päätilit ja konsolidointitiliryhmät
 Sinun on valittava, miten tilikartat konsolidoidaan. Sinulla on konsolidointiprosessin aikana kolme vaihtoehtoa päätilien konsolidointiin.
@@ -81,11 +82,11 @@ Ensimmäinen vaihtoehto lähdeyritysten päätilien käyttäminen. Siinä tapauk
 
 Toinen vaihtoehto on oletusarvoisen konsolidointilin määrittäminen **Päätilit**-sivulla. Tili yhdistetään sitten konsolidointitiliin. Tämä vaihtoehto voi olla hyödyllinen, jos tilikarttoja on useita tai yhdistäminen on tehtävä pääkonttorin määrittämään tilikarttaan.
 
-![Päätilit-sivulla määritetty konsolidointitili](./media/main-accounts.png "Päätilit-sivulla määritetty konsolidointitili")
+![Päätilit-sivulla määritetty konsolidointitili.](./media/main-accounts.png "Päätilit-sivulla määritetty konsolidointitili")
 
 Kolmas vaihtoehto on konsolidointitiliryhmien käyttäminen. Voit määrittää tarvittavan määrän konsolidointitiliryhmiä. Voit sitten yhdistää **Lisäkonsolidointitilit**-sivulla tilikartan päätilin ryhmän tarvitsemaan tiliin.
 
-![Yhdistäminen Lisäkonsolidointitilit-sivulla](./media/additional-consolidation-accounts.png "Yhdistäminen Lisäkonsolidointitilit-sivulla")
+![Yhdistäminen Lisäkonsolidointitilit-sivulla.](./media/additional-consolidation-accounts.png "Yhdistäminen Lisäkonsolidointitilit-sivulla")
 
 ## <a name="consolidating-online"></a>Konsolidointi verkossa
 Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).
@@ -97,7 +98,7 @@ Konsolidoinnin tarkasteluvaihtoehtoja on useita:
 - Tarkastele **Pääkirja**-luettelosivua konsolidointiyrityksessä.
 - Tarkastele **Konsolidoinnit**-sivun konsolidointiluettelossa saldoja, jotka on luotu päivämäärän mukaan kunkin lähdeyrityksen jokaiselle kaudelle.
 
-    ![Konsolidointitapahtumat Konsolidoinnit-sivulla](./media/managing-consolidation-transactions.png "Konsolidointitapahtumat Konsolidoinnit-sivulla")
+    ![Konsolidointitapahtumat Konsolidoinnit-sivulla.](./media/managing-consolidation-transactions.png "Konsolidointitapahtumat Konsolidoinnit-sivulla")
 
 Voit suorittaa konsolidoinnin uudelleen käsittelemällä sen. Vaihtoehtoisesti voit valita ensin **Poista tapahtumat** **Konsolidoinnit**-sivulla.
 Jos konsolidointitilin saldot eivät ole oikein, nämä saldot voidaan korjata käyttämällä **Lopetuskauden oikaisut** -sivua.
@@ -118,7 +119,7 @@ Eliminointiasetukset ovat **Konsolidoinnit**-moduulin **Asetukset**-alueelta. Ku
 
 Voit määrittää tarpeiden mukaisen päivämäärän, jolloin eliminointisääntö otetaan käyttöön, ja päivämäärän, jolloin se vanhenee. Jos haluat, että eliminointisääntö käytettävissä eliminoinnin ehdotusprosessissa, valitse **Aktiivinen**-asetukseksi **Kyllä**. Valitse kirjauskansion nimeksi **Eliminointi**-tyyppi.
 
-![Eliminointisäännön perusominaisuudet](./media/ledger-elimination-rule-journal.png "Eliminointisäännön perusominaisuudet")
+![Eliminointisäännön perusominaisuudet.](./media/ledger-elimination-rule-journal.png "Eliminointisäännön perusominaisuudet")
 
 Kun olet määritellyt perusominaisuudet, määritä todelliset käsittelysäännöt valitsemalla **Rivit**. Eliminointivaihtoehtoja on kaksi: voit eliminoida nettomuutossumman tai määrittää kiinteän summan.
 
@@ -126,7 +127,7 @@ Valitse lähdetilit. Voit käyttää tähteä (\*) yleismerkkinä. Esimerkiksi *
 
 Kun olet valinnut lähdetilin, käytä **Tilin määrittely** -kenttää määrittämään käytettävä tili kohdeyrityksestä. Valitse **Lähde**, jos haluat käyttää samaa, lähdetilissä määritettyä päätiliä. Jos valitset **Käyttäjän määrittämä**, sinun on määritettävä kohdetili.
 
-![Kirjanpidon eliminointisääntörivi -sivu](./media/ledger-elimination-rule-line.png "Kirjanpidon eliminointisääntörivi -sivu")
+![Kirjanpidon eliminointisääntörivi -sivu.](./media/ledger-elimination-rule-line.png "Kirjanpidon eliminointisääntörivi -sivu")
 
 **Dimension määrittely** -kenttä toimii samalla tavoin kuin **Tilin määrittely** -kenttä. Valitse **Lähde**, jos haluat käyttää samoja dimensioita kohde- ja lähdeyrityksessä. Jos valitset **Käyttäjän määrittämä**, sinun on määritettävä kohdeyrityksen dimensiot valitsemalla **Kohdedimensiot**. Valitse sitten lähdedimensiot ja taloushallinnon dimensiot sekä eliminoinnin lähteenä käytettävät arvot.
 

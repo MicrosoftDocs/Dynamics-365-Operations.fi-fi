@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352033"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Ostoskorin ja maksusivun yleiskatsaus
 
@@ -37,7 +38,7 @@ Ostoskorisivu toimii ostoskassina. Se sisältää kaikki ostoskoriin lisätyt ni
 
 Seuraavassa kuvassa on esimerkki ostoskorisivusta, joka on luotu verkon moduulikirjaston ja Fabrikam-teeman avulla.
 
-![Esimerkki ostoskorisivusta](./media/cart2.PNG)
+![Esimerkki ostoskorisivusta.](./media/cart2.PNG)
 
 Ostoskorisivun päätekstiosassa näkyvät kaikki nimikkeet, jotka asiakas on lisännyt koriin. Kaikki käytettävissä olevat alennukset ovat esillä. Nämä alennukset sisältävät monimutkaisia alennuksia. Esimerkkejä ovat Osta 3 nimikettä ja saat 10 % alennusta tai Osta pullo ja reppu ja saat 10 % alennusta. Tilauksen yhteenvedon moduulissa on esimerkiksi alennusten, toimituksen ja verojen jälkeen maksettavaksi jäävä summa. Tarjouskoodimoduulin avulla asiakas voi käyttää tarjouskoodeja tai poistaa niitä.
 
@@ -53,7 +54,7 @@ Kassasivulla asiakkaat syöttävät tilauksen tekemisessä vaadittavat tiedot.
 
 Seuraavassa kuvassa on esimerkki kassasivusta, joka on luotu moduulikirjaston avulla.
 
-![Esimerkki kassasivusta](./media/Checkout.PNG)
+![Esimerkki kassasivusta.](./media/Checkout.PNG)
 
 Kassasivun päätekstiosa kerää tilauksen tiedot. Näitä tietoja ovat toimitusosoite, toimitusvaihtoehdot ja maksutiedot. Kassalle siirtyminen on vaiheittainen työnkulku, koska tiedot on syötettävä tietyssä järjestyksessä. Esimerkiksi toimitusosoite on syötettävä ennen toimituskustannusten laskemista ja maksun hyväksymistä.
 

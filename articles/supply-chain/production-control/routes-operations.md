@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188931"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350495"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -45,7 +45,7 @@ Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työv
 
 Yksinkertaiset reititykset ovat peräkkäisiä. Reitityksellä on vain yksi aloituspiste.  
 
-[![Yksinkertainen reititys](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Yksinkertainen reititys.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Supply Chain Management luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
 
@@ -53,7 +53,7 @@ Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset rei
 
 Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reittiverkostoja, voit määrittää useita aloituspisteitä ja rinnakkain suoritettavia työvaiheita sisältävät reititykset.  
 
-[![Reittiverkosto](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Reittiverkosto.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
@@ -64,7 +64,7 @@ Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reitti
 
 Joskus työvaiheen suorittaminen vaatii useita erilaisia ominaisuuksia omaavien operatiivisten resurssien yhdistelmän. Esimerkiksi kokoonpanotyövaihe saattaa vaatia koneen, työkalun ja yhden työvaihetta valvovan työntekijän joka toiselle koneelle. Tämä esimerkki voidaan mallintaa käyttämällä rinnakkaisia työvaiheita, joissa yksi työvaihe on määritetty ensisijaiseksi työvaiheeksi ja muut toissijaisiksi.  
 
-[![Reititys, jolla on ensisijainen työvaihe ja toissijaisia työvaiheita](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Reititys, jolla on ensisijainen työvaihe ja toissijaisia työvaiheita.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Yleensä ensisijainen työvaihe edustaa pullonkaularesurssi. Se määrittää toissijaisten työvaiheiden ajoajan. Jos kapasiteetti kuitenkin on rajallinen, sekä ensisijaiselle työvaiheelle että toissijaisille työvaiheille ajoitettujen resurssien on oltava käytettävissä ja niillä on oltava vapaata kapasiteettia samanaikaisesti.  
 

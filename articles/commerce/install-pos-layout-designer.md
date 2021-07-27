@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4d18d6fcf54fc74382f0d7d344de2aa74252ae4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac1495f12a51d72a90ad88fc2d8e0a574418467
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796993"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345131"
 ---
 # <a name="install-the-pos-layout-designer"></a>Myyntipisteen asettelun suunnittelutoiminnon asentaminen
 
@@ -40,7 +40,7 @@ MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan as
 5. Kun asennus on päättynyt, anna kaupan käyttäjänimesi ja salasanasi **Kirjaudu sisään** -sivulla ja aloita sitten suunnittelutoiminto valitsemalla **Kirjaudu sisään**.
 6. Kun tunnistetietosi on tarkistettu ja suunnittelutoiminta alkaa, voit aloittaa oman asettelun suunnittelun tai aiemmin luodun asettelun muokkaamisen.
 
-    [![Asettelu yhdenklikkauksen suunnitteluohjelmassa](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+    [![Asettelu yhden napsautuksen suunnitteluohjelmassa.](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Asettelun suunnittelutoiminto asennuksen vianmääritys
 

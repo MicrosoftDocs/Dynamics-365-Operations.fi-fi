@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826008"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354758"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulut
 
@@ -55,7 +55,7 @@ Voit luoda varastokirjauskansion hyväksyntätyönkulun seuraavasti:
     - **Varaston tuoterakenteen kirjauskansio**
     - **Varaston oikaisukirjauskansio**
 
-    ![Luo työnkulku -valintaikkuna](media/journal-workflow-create-workflow.png "Luo työnkulku -valintaikkuna")
+    ![Luo työnkulku -valintaikkuna.](media/journal-workflow-create-workflow.png "Luo työnkulku -valintaikkuna")
 
 1. Työnkulkueditorisovellus käynnistyy koneessa. (Sinua voidaan pyytää hyväksymään tämä toiminto.) Sen avulla voit suunnitella työnkulun tarpeen mukaan. Lisätietoja työnkulkueditorin käyttämisestä on kohdassa [Työnkulkujärjestelmän yleiskatsaus](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Kun olet tallentanut ja sulkenut työnkulkueditorisovelluksen, sinun on määritettävä, aktivoidaanko tämä työnkulkuversio vai pidetäänkö se passiivisena.
@@ -73,7 +73,7 @@ Voit liittää varastokirjauskansion työnkulun varastokirjauskansion nimeen seu
 1. Valitse luettelosarakkeesta kirjauskansion nimi ja avaa sen asetussivu.
 1. Määritä **Yleinen**-pikavälilehden **Hyväksyntätyönkulku**-asetukseksi **Kyllä**. Jos järjestelmä pyytää vahvistamaan toiminnon, valitse **Kyllä**.
 
-    ![Työnkulun liittäminen kirjauskansion nimeen](media/journal-workflow-journal-name.png "Työnkulun liittäminen kirjauskansion nimeen")
+    ![Työnkulun liittäminen kirjauskansion nimeen.](media/journal-workflow-journal-name.png "Työnkulun liittäminen kirjauskansion nimeen")
 
 1. Avaa avattava **Työnkulku**-luettelo ja valitse soveltuva työnkulku. Luettelossa näkyvät kaikki aktiiviset työnkulut, jotka olet luonut käyttämällä työnkulkueditorisovellusta.
 
@@ -87,7 +87,7 @@ Kun olet liittänyt varastokirjauskansion nimen sen vastaavaan varastokirjauskan
 1. Viimeistele kirjauskansio tarpeen mukaan.
 1. Kun luot tai avaat varastokirjauskansion, johon on liitetty hyväksyntätyönkulku, **Työnkulku**-painike on aktiivinen toimintoruudussa. Kun olet valmis lähettämään kirjauskansion hyväksyttäväksi, valitse **Työnkulku**-painike ja avaa avattava valintaikkuna. Valitse lopuksi **Lähetä**. Tämän jälkeen hyväksyntäpyyntö reititetään asiaankuuluvalle hyväksyjälle, joka saa hälytyksen työnkulkua varten konfiguroidun ilmoitusmenetelmän avulla.
 
-    ![Lähetä kirjauskansio hyväksyttäväksi](media/journal-workflow-inventory-journal.png "Lähetä kirjauskansio hyväksyttäväksi")
+    ![Lähetä kirjauskansio hyväksyttäväksi.](media/journal-workflow-inventory-journal.png "Lähetä kirjauskansio hyväksyttäväksi")
 
 Voit peruuttaa hyväksyntäpyynnön avaamalla asiaankuuluvan kirjauskansion, valitsemalla **Työnkulku**-painikkeen ja valitsemalla sitten **Peruuta**. Tämä nollaa työnkulun.
 

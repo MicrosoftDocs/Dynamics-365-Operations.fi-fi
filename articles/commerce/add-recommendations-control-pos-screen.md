@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 219b82809087e3f5f185bc92836ca300d064fc71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797476"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348341"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Suositusten lisääminen tapahtumanäyttöön
 
@@ -43,7 +43,7 @@ Voit näyttää tuotesuosituksia myyntipisteen laitteessa, kun käytät Commerce
 6. Kun kirjaudut, tulee sivu, joka on samanlainen kuin alla oleva. Asettelu on erilainen riippuen oman myymälän tekemistä mukautuksista.
 
 
-    [![Asettelun suunnittelutoiminto](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Asettelun suunnittelutoiminto.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Näyttöasetuksen valitseminen
 
@@ -58,11 +58,11 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 1. Pienennä tapahtumarivien erittelyalueen korkeutta niin, että se on samalla korkeudella kuin vasemmalla puolella oleva asiakaspaneeli.
 
 
-    [![Tapahtumarivien erittelyalueen korkeutta vähennetty](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Tapahtumarivien erittelyalueen korkeutta vähennetty.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Vasemmanpuoleisesta valikosta vedä ja pudota suosituksien ohjausobjekti Tapahtumarivin tiedot -alueen ja painikeruudukon väliin näytön alareunassa keskellä. Muuta ohjausobjektin kokoa, jotta se mahtuu kyseiseen tilaan.
 
-    [![Suositusten ohjaus lisätty asetteluun](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Suositusten ohjaus lisätty asetteluun.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Valitse **X**, jotta tallennat ja poistut asettelun suunnittelutoiminnosta.
@@ -77,13 +77,13 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 
 2. Valitse **Mukauta**.
 
-    [![Mukautus - Välilehden ohjausvalintaikkuna](./media/pic-5.png)](./media/pic-5.png)
+    [![Mukautus - Välilehden ohjausvalintaikkuna.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Valitse **Uusi välilehti**.
 4. Etsi juuri lisäämäsi uusi välilehti. Näyttöä on ehkä vieritettävä alaspäin.
 5. Valitse avattavassa **Sisältö**-valikossa **Suositellut tuotteet**.
 
-    [![Suositeltujen tuotteiden valinta Sisältö-valikossa](./media/pic-6.png)](./media/pic-6.png)
+    [![Suositeltujen tuotteiden valinta Sisältö-valikossa.](./media/pic-6.png)](./media/pic-6.png)
 
 6. Kirjoita **Otsikko**-kenttään suositusten välilehden nimi. Kirjoita esimerkiksi Suositellut tuotteet.
 7. Valitse **Kuva**-kentässä välilehdessä näytettävä kuva.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224089"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355319"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Sähköisen raportoinnin kaavan tukemat primitiiviset tietotyypit
 
@@ -112,13 +112,13 @@ Sovelluksen *luettelointia* voidaan käyttää minkä tahansa ER-mallimäärityk
 
 Seuraavassa kuvassa kerrotaan, miten voit lisätä **CustVendCorrectiveReasonCode**-mallin listan muokattavaan ER-tietomalliin.
 
-[![Mallin luetteloinnin määritys ER-tietomallin suunnittelussa](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Mallin luetteloinnin määritys ER-tietomallin suunnittelussa.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 Mallien *luettelointia* voidaan käyttää minkä tahansa ER-mallin määrityksen ja ER-muodon lausekkeissa, jotka on luotu tietomallissa, jossa *luettelointi* on otettu käyttöön.
 
 Seuraavassa kuvassa kerrotaan, miten **Luonnollisen käänteisen kulun alaluokkien Luettelo** -muodon luettelointi voidaan lisätä muokattavaan ER-muotoon.
 
-[![Muodon luetteloinnin määritys ER-muodon suunnittelussa](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Muodon luetteloinnin määritys ER-muodon suunnittelussa.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 Muodon *luettelointia* voi käyttää vain sen ER-muodon lausekkeissa, jossa *luettelointi* on otettu käyttöön.
 
@@ -126,15 +126,15 @@ Käytä ER-tietolähteiden soveltuvaa tyyppiä, jotta määritetty luettelointi 
 
 - Sovelluksen luettelointeja voi käyttää käyttämällä **Dynamics 365 for Operations \ Luettelointi**- ja **Yleinen \ Käyttäjän syöteparametrit** -tietolähteitä. Seuraavassa kuvassa kerrotaan, miten voit lisätä muokattavaan ER-muotoon **appenumNoYes**- ja **uipNoYes**-tietolähteet, jotka viittaavat **NoYes**-sovelluksen luettelointiin.
 
-    [![Sovelluksen luettelointitietolähteiden lisääminen ER-muodon suunnittelussa](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Sovelluksen luettelointitietolähteiden lisääminen ER-muodon suunnittelussa.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Tietomallin luettelointeja voi käyttää käyttämällä **Tietomalli \ Luettelointi**- ja **Yleinen \ Luetteloinnin käyttäjän syöteparametrit** -tietolähteitä. Seuraavassa kuvassa kerrotaan, miten voit lisätä muokattavaan ER-muotoon **CustVendCorrectiveReasonCode**-tietolähteen joka viittaa **CustVendCorrectiveReasonCode**-tietomallin luettelointiin.
 
-    [![Mallin luettelointitietolähteiden lisääminen ER-muodon suunnittelussa](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Mallin luettelointitietolähteiden lisääminen ER-muodon suunnittelussa.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - Muodon luettelointeja voi käyttää käyttämällä **Muoto \ Luettelointi**- ja **Muoto \ Luetteloinnin käyttäjän syöteparametrit** -tietolähteitä. Seuraavassa kuvassa kerrotaan, miten voit lisätä muokattavaan ER-muotoon **NaturaReverseCharge**-tietolähteen, joka viittaa **Luonnollisen käänteisen kulun alaluokat** -muodon luettelointiin.
 
-    [![Muodon luettelointitietolähteiden lisääminen ER-muodon suunnittelussa](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Muodon luettelointitietolähteiden lisääminen ER-muodon suunnittelussa.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 *luettelointi* ei muunnu epäsuorasti. Voit kuitenkin muuntaa *luetteloinnin* [TEX](er-functions-text-text.md)-muuntotoiminnon avulla tekstimerkkijonoksi. Tämä muunnos ei riipu kielestä. Tietoja *luettelointi*-arvon ja asianmukaisten kielikohtaisten otsikkojen käytöstä on [LISTOFFIELDS](er-functions-list-listoffields.md)- ja [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md)-funktioiden käyttöesimerkeissä.
 

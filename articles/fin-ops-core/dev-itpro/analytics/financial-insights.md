@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193747"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345809"
 ---
 # <a name="financial-analysis"></a>Talousanalyysi
 
@@ -60,7 +60,7 @@ Jokaiselle päätilille on määritettävä päätililuokka, sillä muuten ne ei
 ## <a name="entity-store"></a>Yksikkösäilö
 **Talousanalyysissa** olevat tiedot noudetaan yksikkösäilöstä (**Järjestelmänvalvoja** \> **Asetukset** \> **Yksikkösäilö**). Jos avaat **Talousjohtajan yhteenveto**- tai **Talousanalyysi** -työtilan ja seuraava varoitussanoma avautuu visualisoinneissa, yksiköt on päivitettävä.
 
-![Varoitus](./media/Cantdisplay.png)
+![Varoitus.](./media/Cantdisplay.png)
 
 Seuraavat yksiköt on päivitettävä, jos haluat nähdä **Talousanalyysi** -työtilojen tiedot:
 
@@ -124,7 +124,7 @@ Käyttäjät voivat suodattaa raportin vasemmalla olevan **Suodatus**-ruudun avu
 - **Visualisointitason suodattimet** – Näitä suodattimia käytetään vain valitussa visualisoinnissa. Näitä suodattimia käytetään sivutason suodattimien ohella.
 - **Porautumissuodatin** – Tämä suodatin suodattaa nykyiseen visualisointiin käytettävästä lähdevisualisoinnista, kun poraudut lähdevisualisoinnista nykyiseen visualisointiin.
 
-![Suodatusasetukset](./media/filter.png)
+![Suodatusasetukset.](./media/filter.png)
 
 Voit poistaa tietyn suodatusarvon valitsemalla sen vieressä pyyhinsymbolin. Älä poista suodatinta valitsemalla X. Jos valitse X, suodatettava kenttä poistetaan suodatusvaihtoehdoista. Jos poistat kentän vahingossa suodattimesta, sulje työtila ja avaa se sitten uudelleen. Oletussuodatusasetukset otetaan uudelleen käyttöön.
 
@@ -169,25 +169,25 @@ Power BI:n kautta on käytettävissä erilaisia poraustasoja. Jokaisella tasolla
 
 Seuraavassa kuvassa **Pääkirja**-raportti on tiivistetty rivihierarkian ylimmälle tasolle päätilin tyyppiin.
 
-![Alustava saldo -ilmoitus](./media/trial-balance.png)
+![Alustava saldo -ilmoitus.](./media/trial-balance.png)
 
 Voit tarkastella hierarkian seuraavaa tasoa eli pääkirjan luokkia, valitsemalla **Poraudu**-kentässä ensin **Rivit** ja sitten **Laajenna**-painikkeen (Poraudu-kentän kolmas painike). Näet nyt kaikki päätilin luokat laajennettuina. Power BI:ssä ei voi tällä hetkellä laajentaa yhtä riviä tai saraketta siten, että kaikki muut rivit tai sarakkeet olisivat näkyvissä.
 
-![Alustava saldo porautuminen riveihin](./media/trial-balance2.png)
+![Alustava saldo porautuminen riveihin.](./media/trial-balance2.png)
 
 Jos haluat laajentaa kaikkien rivien päätileihin, valitse uudelleen **Laajenna**-painike. Jos kuitenkin haluat porautua vain yhden rivin päätileihin, valitse ensin **Poraudu**-painike (alanuoli oikealla ikkunassa) ja sitten rivi, johon haluat porautua. Seuraavassa kuvassa näkee, mitä tapahtuu, kun **Myynti**-rivi on valittu **Poraudu**-painikkeen valinnan jälkeen.
 
-![Alustava saldo -laajennuspainike](./media/trial-balance3.png)
+![Alustava saldo -laajennuspainike.](./media/trial-balance3.png)
 
 Kun olet porautunut yhteen riviin, koko pääkirjaan palaaminen edellyttää useita napsautuksia. **Poraudu ylöspäin** -painikkeella (ensimmäinen painike **Poraudu**-kentän jälkeen) poraudutaan **Myynti**-luokassa ylöspäin seuraavan kuvan osoittamalla tavalla.
 
-![Alustava saldo poraudu ylöspäin -painike](./media/trial-balance4.png)
+![Alustava saldo poraudu ylöspäin -painike.](./media/trial-balance4.png)
 
 Voit palata rivien yhteenvedon korkeimmalle tasolla jatkamalla **Poraudu**-painikkeen käyttöä.
 
 Power BI:ssä on myös painike, jolla voit siirtyä hierarkian seuraavalle tasolle (toinen painike **Poraudu**-kentän jälkeen). Tämä painikkeen vaikutus on toinen kuin **Laajenna**-painikkeessa (kolmas painike **Poraudu**-kentän jälkeen), koska sitä käytetään hierarkian laajentamiseen. Kun laajennat hierarkian, hierarkiaa ylläpidetään raportissa. Jos esimerkiksi laajennat edellä näytetyllä tavalla päätilin tyypin, näet edelleen päätilin tyypin pääraportissa. Kun hierarkiassa sen sijaan siirrytään seuraavalle tasolle, raportti ei enää näytä ylätasoa hierarkiassa. (Katso seuraava kuva.)
 
-![Alustava saldo poraudu takaisin -painike](./media/trial-balance5.png)
+![Alustava saldo poraudu takaisin -painike.](./media/trial-balance5.png)
 
 Jos haluat nähdä tapahtumatiedot, joihin yhteenvetosaldot perustuvat, voit valita joitakin summia, joissa haluat porautua takaisin Financial and Operationsiin.
 
@@ -226,7 +226,7 @@ Raportit eivät tällä hetkellä tue organisaatiohierarkioita, joista voisi koo
 ## <a name="data-limitations"></a>Tietojen rajoitukset
 Raportin visualisoinneissa voi näytettävien rivien määrä on rajallinen. Tällä hetkellä rajaksi on määritetty 30 000. Jos tämä raja ylittyy, visualisointi ilmoittaa siitä varoitussymbolilla.
 
-![Tietojen rajoitukset](./media/data-limit.png)
+![Tietojen rajoitukset.](./media/data-limit.png)
 
 Jos enimmäismäärä ylitetään, raportissa näkyvät kokonaissummat ovat virheellisiä, koska kaikkia rivejä ei ole ladattu visualisointiin.
 
