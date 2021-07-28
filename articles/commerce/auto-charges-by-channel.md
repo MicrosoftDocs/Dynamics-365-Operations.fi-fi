@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799906"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349695"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan
 
@@ -66,7 +66,7 @@ Voit määrittää organisaation hierarkian käyttötarkoituksen oletushierarkia
 1. Valitse toimintoruudussa **Suorita nyt**.
 1. Suorita **1070** (**Kanavan määritys**)- ja **1110** (**Yleinen määritys**) -työt toistamalla edelliset kaksi vaihetta.
 
-![Vähittäismyynnin automaattisen latauksen organisaatiohierarkian tarkoituksen määrittäminen](media/Auto-charges-org-hierarchy-purpose.png)
+![Vähittäismyynnin automaattisen latauksen organisaatiohierarkian tarkoituksen määrittäminen.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Määritä automaattiset veloitukset kanavan mukaan
 
@@ -86,7 +86,7 @@ Jos haluat määritellä automaattiset veloitukset kanavassa, noudata seuraavia 
 1. Valitse toimintoruudussa **Suorita nyt**.
 1. Suorita **1070** (**Kanavan määritys**)- ja **1110** (**Yleinen määritys**) -työt toistamalla edelliset kaksi vaihetta.
     
-![Kanavan mukaan määritetyt automaattiset veloitukset](media/Auto-charges-line-charge-by-channel.png)
+![Kanavan mukaan määritetyt automaattiset veloitukset.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
@@ -94,7 +94,7 @@ Seuraavassa esimerkissä kuvataan vaiheet, jotka tarvitaan tuotteen määrittäm
 
 Organisaatio määrittää kulujen koodin, joka on nimeltään **KIERRÄTÄ**, kuten seuraavasta kuvasta näkyy.
 
-![KIERRÄTÄ kulujen koodi](media/Auto-charges-charge-code.png)
+![Kulujen KIERRÄTÄ-koodi.](media/Auto-charges-charge-code.png)
 
 Automaattinen veloitus luodaan rivitasolla. Sillä on seuraavat määritykset:
 
@@ -112,13 +112,13 @@ Järjestelmä luo automaattisen kulujen rivin. Sillä on seuraavat määritykset
 - **Luokkaa**-kentän tilaksi määritetään **Korjattu**.
 - **Veloitukset**-kentän tilaksi on määritetään **$6,25**.
 
-![Rivitason automaattisen latauksen määritys ja automaattisten kulujen rivi](media/Auto-charges-recyclingfee-line-fee.png)
+![Rivitason automaattisen kulun määritys ja automaattisten kulujen rivi.](media/Auto-charges-recyclingfee-line-fee.png)
 
 Myyntitilaus luodaan POS-sovelluksessa **San Francisco**-myymäläkanavalla. **Veloitukset**-rivillä näkyy kierrätysmaksu **$6,25**.
 
 Valitsemalla **Tapahtumavaihtoehdot \> Veloitukset \> Hallitse veloituksia** POS-sovelluksessa, voit tarkastella kierrätysmaksun kulukoodia ja kuvausta.
 
-![Kierrätysmaksu POS-sovelluksessa](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Kierrätysmaksu POS-sovelluksessa.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

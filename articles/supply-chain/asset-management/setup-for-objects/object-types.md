@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825707"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347161"
 ---
 # <a name="asset-types"></a>Resurssityypit
 
@@ -45,9 +45,9 @@ Ensin määritetään tarvittavat resurssityypit. Seuraavaksi luodaan resurssima
 7. Valitse **Tallenna**.
 8. Valitse **Ylläpitotyön tyypit**-pikavälilehdessä ylläpitotyötyypit, jotka liittyvät resurssityyppiin:
 
-    - Jos haluat valita ylläpitotyötyypin , valitse se **Jäljellä olevat ylläpitotyötyypit** -kentässä ja valitse sitten oikea nuolipainike ![Oikealle osoittava nuolipainike](media/29-setup-for-objects.png) siirtääksesi sen **Valitut ylläpitotyötyypit** -osioon.
-    - Jos haluat valita kaikki käytettävissä olevat ylläpitotyötyypit, valitse ![Siirrä kaikki -nuolipainike](media/30-setup-for-objects.png). Kaikki ylläpitotyötyypit siirretään **Jäljellä olevat ylläpitotyötyypit** -kentästä **Valitut ylläpitotyötyypit** -kenttään.
-    - Jos peruuttaa ylläpitotyötyypin valinnan, valitse se **Valitut ylläpitotyötyypit** -kentässä ja valitse sitten vasen nuolipainike ![Vasemmalle osoittava nuolipainike](media/31-setup-for-objects.png) siirtääksesi sen **Jäljellä olevat ylläpitotyötyypit** -osioon.
+    - Jos haluat valita työtyypin, valitse se **Jäljellä olevat ylläpitotyötyypit** -kentästä ja valitse sitten oikealle osoittava nuolipainike ![Oikealle osoittava nuolipainike.](media/29-setup-for-objects.png) siirtääksesi sen **Valitut työtyypit** -osioon.
+    - Jos haluat valita kaikki käytettävissä olevat ylläpitotyötyypit, valitse ![Siirrä kaikki -nuolipainike](media/30-setup-for-objects.png) -painike. Kaikki ylläpitotyötyypit siirretään **Jäljellä olevat ylläpitotyötyypit** -kentästä **Valitut ylläpitotyötyypit** -kenttään.
+    - Jos peruuttaa ylläpitotyötyypin valinnan, valitse se **Valitut ylläpitotyötyypit** -kentästä ja valitse sitten vasemmalle osoittava nuolipainike ![Vasemmalle osoittava nuolipainike.](media/31-setup-for-objects.png) siirtääksesi sen **Jäljellä olevat ylläpitotyötyypit** -kenttään.
 
 9. Voit myös valita laskurit, jotka liittyvät kyseiseen resurssityyppiin. Tee valinnat **Laskurit**-pikavälilehdessä käyttämällä menetelmiä, jotka on kuvattu ylläpitotyötyypeille vaiheessa 8. Lisätietoja laskureiden määrityksestä esitetään kohdassa [Laskurit](counters.md).
 10. Voit myös valita määritetyypit, jotka liittyvät kyseiseen resurssityyppiin. Tee valinnat **Määritetyypit** -pikavälilehdessä käyttämällä menetelmiä, jotka on kuvattu ylläpitotyötyypeille vaiheessa 8. Luo sitten haluamasi määritetyyppien järjestys valitsemalla määriteyyppi **Valitut määritetyypit** -kentässä ja siirrä sitä ylä- ja alanuolen avulla. Määritetyyppien järjestys näkyy resursseille, jotka käyttävät tätä resurssilajia. Lisä tietoja resurssimääritteistä on kohdassa [Ylläpidon määritetyypit](../setup-for-functional-locations/specification-types.md).

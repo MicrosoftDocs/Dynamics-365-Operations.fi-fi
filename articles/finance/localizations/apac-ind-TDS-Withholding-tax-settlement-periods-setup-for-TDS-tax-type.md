@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023195"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348906"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Ennakonpidätyksen täsmäytyskausien määrittäminen TDS-verotyypille
 
@@ -31,7 +31,7 @@ Tässä aiheessa kuvataan, miten Vero vähennettynä lähteissä (TDS) -tilitysk
 
 1. Siirry kohtaan **Vero \> Välilliset verot \> Ennakonpidätys \> Ennakonpidätyksen tilityskaudet**.
 
-    [![Ennakonpidätyksen tilityskaudet -sivu](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Ennakonpidätyksen tilityskaudet -sivu.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. Valitse **Verotyyppi**-kentässä **TDS**, jos haluat määrittää ennakonpidätyksen tilityskaudet TDS-verotyypille.
 3. Valitse **Uusi** luodaksesi rivin.
@@ -47,6 +47,6 @@ Tässä aiheessa kuvataan, miten Vero vähennettynä lähteissä (TDS) -tilitysk
     > [!NOTE]
     > Voit suorittaa kausittaisen TDS-tilitysprosessin valitsemalla **Kirjanpito \> Kausittainen \> Ennakonpidätys \> Ennakonpidätysmaksu**.
 
-    [![Ennakonpidätysmaksu-sivu](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Ennakonpidätysmaksu-sivu.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Sulje sivu.

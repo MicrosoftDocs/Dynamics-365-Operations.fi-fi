@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093917"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351654"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Oikeutussääntöjen ja -asetusten määrittäminen
 
@@ -137,20 +137,20 @@ Voit määrittää sääntöjä, joilla on useita ehtoja. Kun määrität oikeut
 
 Esimerkiksi yllä oleva **Aktiiviset työntekijät** -sääntö koostuu seuraavista ehdoista. Jotta työntekijä olisi oikeutettu **Aktiivisten työntekijöiden** säännön perusteella, työntekijän on työskenneltävä yrityksessä USMF *ja* hänen toimensa on oltava tyyppiä kokoaikainen.  
 
-![Oikeutussäännön kriteerit](media/CriteriaWithinAnEligibilityRule.png) 
+![Oikeutussäännön kriteerit.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Sääntöjen sisällä useita ehtoja
 
 Sääntöjä voidaan laajentaa edelleen käyttämään useita ehtoja yhden ehdon sisällä. Työntekijän on täytettävä vähintään yksi ehto, jotta hän voi olla oikeutettu. Edellä olevan esimerkin perusteella **aktiivisten työntekijöiden** sääntö voidaan laajentaa niin, että siinä on myös osa-aikatyöntekijöitä. Tästä syystä työntekijän on oltava USMF:n työntekijä *ja* joko koko-aikainen tai osa-aikainen työntekijä.  
 
-![Sääntöjen sisällä useita ehtoja](media/MultipleConditionsWithinCriteria.png) 
+![Sääntöjen sisällä useita ehtoja.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Mukautetun kentän ehtojen oikeutusehdot 
 Yllä kuvatut kentät muistuttavat sitä, että mukautettuja kenttiä voidaan käyttää luotaessa oikeutussääntöjä ja toimimalla samalla tavalla. Voit esimerkiksi tarjota Internet-hyvityksen Fargon ja Kööpenhaminan työntekijöille, jotka työskentelevät kotona, koska Internet-kustannukset ovat suuremmat näissä sijainneissa. Voit tehdä tämän luomalla kaksi mukautettua kenttää: **Toimiston sijainti** (valintaluettelo) ja **Työskentelee kotona** (valintaruutu). Luo sitten sääntö nimeltä **WFH-työntekijät**. Säännön ehtona on, että **Toimiston sijainti = Fargo** tai **Kööpenhamina** *ja* **Työskentelee kotoa = Kyllä**.
 
 Mukautetut oikeutussäännöt on määritettävä seuraavassa kuvassa kuvatun mukaisesti. 
 
-![Mukautetun kentän ehtojen oikeutusehdot](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Mukautetun kentän ehtojen oikeutusehdot.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Määritä niput
 

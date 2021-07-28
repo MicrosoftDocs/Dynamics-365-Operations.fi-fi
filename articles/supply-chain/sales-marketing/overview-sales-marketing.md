@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188122"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359858"
 ---
 # <a name="sales-and-marketing-overview"></a>Myynnin ja markkinoinnin yleiskuvaus
 
@@ -29,18 +31,18 @@ Voit käyttää myyntiä ja markkinointia myyntivirran erityyppisten tietojen ha
 
 ## <a name="marketing"></a>Markkinointi
 
-Voit etsiä markkinointikampanjoihin ja -toimintoja avulla mahdollisiin asiakkaisiin ja luoda heihin suhteita niin, että ensimmäiset yhteydenotot muuttuvat myyntisuhteiksi. Seuraava prosessikuva näyttää markkinoinnin liiketoimintaprosessin. [![Markkinoinnin liiketoimintaprosessi](./media/marketing01.jpg)](./media/marketing01.jpg)
+Voit etsiä markkinointikampanjoihin ja -toimintoja avulla mahdollisiin asiakkaisiin ja luoda heihin suhteita niin, että ensimmäiset yhteydenotot muuttuvat myyntisuhteiksi. Seuraava prosessikuva näyttää markkinoinnin liiketoimintaprosessin. [![Markkinoinnin liiketoimintaprosessi.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Suhteet
 
-Myynnissä ja markkinoinnissa ensikosketus mahdollisiin asiakkaisiin voi tapahtua monenlaisissa tilanteissa. Voit löytää mahdollisen asiakkaan esimerkiksi messuilla tai asiakas voi muuttua mahdolliseksi liidiksi organisaation massapostituskampanjan jälkeen. On erittäin tärkeää tiedostaa osapuolen yksikkö, ennen kuin yksiköstä tulee asiakas. Seuraavassa kuvassa on yksikkösuhteet, kun mahdollisesta asiakkaasta tulee varsinainen asiakas. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+Myynnissä ja markkinoinnissa ensikosketus mahdollisiin asiakkaisiin voi tapahtua monenlaisissa tilanteissa. Voit löytää mahdollisen asiakkaan esimerkiksi messuilla tai asiakas voi muuttua mahdolliseksi liidiksi organisaation massapostituskampanjan jälkeen. On erittäin tärkeää tiedostaa osapuolen yksikkö, ennen kuin yksiköstä tulee asiakas. Seuraavassa kuvassa on yksikkösuhteet, kun mahdollisesta asiakkaasta tulee varsinainen asiakas. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampanjat
 
 Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Voit luoda Supply Chain Managementissä monenlaisia kampanjoita, kuten puhelinmarkkinointi-, postitus- ja sähköpostikampanjoita, joilla asiakaspotentiaali voidaan maksimoida. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
 
 ## <a name="sales"></a>Myynti
-Myyntitoimintoa käytetään tarjousten, lisämyynnin ja ristiin myynnin luomiseen uusille ja nykyisille asiakkaille, myyntitilausten luomiseen ja asiakkaiden myyntilaskujen luomiseen. Seuraava prosessikuva näyttää myynnin liiketoimintaprosessin. [![Myynnin liiketoimintaprosessi](./media/sales01.jpg)](./media/sales01.jpg)
+Myyntitoimintoa käytetään tarjousten, lisämyynnin ja ristiin myynnin luomiseen uusille ja nykyisille asiakkaille, myyntitilausten luomiseen ja asiakkaiden myyntilaskujen luomiseen. Seuraava prosessikuva näyttää myynnin liiketoimintaprosessin. [![Myynnin liiketoimintaprosessi.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Myyntitarjoukset
 

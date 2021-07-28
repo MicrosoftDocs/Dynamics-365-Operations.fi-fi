@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745686"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343931"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten ohjekokemuksen määrittäminen
 
@@ -32,7 +32,7 @@ Tässä ohjeaiheessa on Finance and Operations -sovellusten, kuten Microsoft Dyn
 
 Finance and Operations -sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
 
-[![Ohjearkkitehtuuri](./media/help-architecture.png)](./media/help-architecture.png)
+[![Ohjearkkitehtuuri.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Tuotteen ohjejärjestelmä hakee artikkeleita docs.microsoft.comista ja muista yhdistetyistä sivustoista. Se hakee myös liiketoimintaprosessien mallintajaan Microsoft Dynamics Lifecycle Servicesissä (LCS) tallennetuista tehtäväoppaista.
 
@@ -47,14 +47,14 @@ Järjestelmänvalvojat voivat määrittää **Järjestelmän parametrit** -sivul
 > - Ohjeen määrittämistä varten kirjauduttava tilille sinä vuokraajana, jossa sovellus on otettu käyttöön.
 > - LCS-kirjastoon ei voi muodostaa yhteyttä sovelluksen siitä esiintymästä, jota käytetään paikallisella virtuaalikiintolevyllä (VHD).
 
-[![Järjestelmäparametrit-lomake ja ohjeen asetukset](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Järjestelmäparametrit-lomake ja ohjeen asetukset.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Ratkaisun tehtäväoppaiden määrittämisohjeet ovat **Järjestelmän parametrit** -sivulla.
 
 > [!IMPORTANT]
 > Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja hae **Järjestelmäparametrit**-sivu valitsemalla **OK**.
 >
-> [![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Muodosta yhteys LCS:ään")](./media/connect-to-lcs-crop.png)
+> [![Yhdistäminen LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Yhdistäminen LCS:ään."](./media/connect-to-lcs-crop.png)
 
 1. Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.

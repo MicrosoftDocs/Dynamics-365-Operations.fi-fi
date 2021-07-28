@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804476"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352321"
 ---
 # <a name="payment-module"></a>Maksumoduuli
 
@@ -46,9 +46,9 @@ Adyen-yhdistin tukee myös asiakkaan vahvaa todennusta (SCA). Osa Euroopan union
 
 Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuudesta ja Adyen-maksumoduuleista maksusivulla.
 
-![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, Adyen-maksumoduuleista maksusivulla](./media/ecommerce-payments.PNG)
+![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, Adyen-maksumoduuleista maksusivulla.](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 -maksuyhdistin PayPalia varten
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector PayPalia varten
 
 Commerce-versiosta 10.0.14 alkaen maksumoduuli on integroitu myös Dynamics 365:n PayPal-maksuyhdistimen kanssa. Lisätietoja tämän maksuyhdistimen asentamisesta ja määrittämisestä on kohdassa [Dynamics 365 -maksuyhdistin Paypalille](paypal.md).
  
@@ -59,10 +59,10 @@ Kun maksumoduuli on määritetty käyttämään PayPal-maksuliitintä, kassasivu
 PayPal-maksuyhdistin ei edellytä laskutusosoitemoduulia, koska PayPal käsittelee kaikki laskutukseen liittyvät tiedot iframen sisällä. Toimitusosoite- ja toimitusvaihtoehdot -moduulit ovat kuitenkin pakollisia.
 
 Seuraavassa kuvassa on esimerkki kahdesta maksumoduulista kassasivulla, joista toinen on määritetty Adyen-maksuyhdistimellä ja toinen PayPal-maksuyhdistimellä.
-![Esimerkki Adyen- ja PayPal-maksumoduuleista maksusivulla](./media/ecommerce-paypal.png)
+![Esimerkki Adyen- ja PayPal-maksumoduuleista maksusivulla.](./media/ecommerce-paypal.png)
 
 Seuraavassa kuvassa on esimerkki PayPal-iframesta, joka on käynnistetty PayPal-painikkeen avulla. 
-![Esimerkki Paypal-iframesta kassasivulla](./media/ecommerce-paypal-iframe.png)
+![Esimerkki Paypal-iframesta kassasivulla.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Maksumoduulin ominaisuudet
 
@@ -76,7 +76,7 @@ Seuraavassa kuvassa on esimerkki PayPal-iframesta, joka on käynnistetty PayPal-
 |On ensisijainen maksu|  **Tosi** vai **Epätosi** | Jos arvo on **Tosi**, kaikki virhe sanomat luodaan kassasivun ensisijaisesta maksuliitännästä. Jos sekä Adyen- että PayPal-maksuyhdistimet on määritetty, määritä Adyen-arvoksi **Tosi**, joka lisättiin Commerce-versioon 10.0.14.|
 
 Seuraavassa kuvassa on esimerkki **Tuetut maksuvälinetyypit** -arvosta "PayPal" Commerce Headquarters -sovelluksen maksuyhdistinmäärityksissä.
-![Esimerkki tuetuista maksuvälinetyypeistä Commerce Headquarters -sovelluksessa](./media/ecommerce-paymenttendertypes.png)
+![Esimerkki tuetuista maksuvälinetyypeistä Commerce Headquarters -sovelluksessa.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Laskutusosoite
 

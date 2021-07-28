@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ccc2cbf11e405facf310d93e5458cfe12a43146d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c75525749d9015387cc112beda104238a93698e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020216"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346689"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Myymälöiden ja tiimien yhdistämismääritykset, jos Microsoft Teamsissa on ennestään tiimejä
 
@@ -57,7 +57,7 @@ Tee myymälöiden ja vastaavien ryhmien määritys Commerce headquarters -sovell
 
 Seuraavassa esimerkkikuvassa on Commercen **Vie Teamsin määritys** -ryhmä, jossa **Lisää yksikkö** -elementit ja viedyn CSV-tiedoston otsikot korostettuina.
 
-![Commercen Vie Teamsin määritys -ryhmä, jossa Lisää yksikkö -elementit ja viedyn CSV-tiedoston otsikot korostettuina](media/d365-commerce-data-mgmt-export-entity.png)
+![Commercen Vie Teamsin määritys -ryhmä, jossa Lisää yksikkö -elementit ja viedyn CSV-tiedoston otsikot korostettuina.](media/d365-commerce-data-mgmt-export-entity.png)
 
 > [!NOTE]
 > Kun olet suorittanut edelliset vaiheet, synkronoi tehtävänhallinta noudattamalla ohjetta [Synkronoi tehtävänhallinta Microsoft Teamsin ja myyntipisteen välillä](synchronize-tasks-teams-pos.md). 

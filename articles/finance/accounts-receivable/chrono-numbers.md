@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838858"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350069"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Tiedostojen ja tositteiden numeroiminen aikajärjestyksessä
 
@@ -69,7 +69,7 @@ Voit määrittää numerosarjat kohdassa **Organisaation hallinta** > **Numerosa
 
 Määritä kullekin numerosarjalle yritys. Numerosarjojen segmentit on määritettävä niin, että ne antavat kausien aikajärjestyksen. Segmenttien nimet voivat esimerkiksi sisältää erityisen etuliitteen, joka yksilöi tietyn kauden.
 
-![Numerosarjojen määritys](media/chrono-num-sequence.jpg)
+![Numerosarjojen määritys.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Numerosarjaryhmien määrittäminen
 
@@ -77,7 +77,7 @@ Voit määrittää numerosarjaryhmiä kohdassa **Myyntireskontra** > **Määrity
 
 Valitse kullekin ryhmälle **Viite**-osasta jokin tuetuista tiedostoviitteistä ja viittaa **Numerosarjan koodi** -kentässä numerosarjaan, joka oli aiemmin luotu kyseiselle jaksolle.
 
-![Numerosarjaryhmän määritys](media/chrono-num-sequence-group.jpg)
+![Numerosarjaryhmän määritys.](media/chrono-num-sequence-group.jpg)
 
 Konfiguroi numerosarjaryhmät samalla tavalla **Ostoreskontra**- ja **Projektinhallinta ja kirjanpito** -moduuleissa.
 
@@ -85,7 +85,7 @@ Konfiguroi numerosarjaryhmät samalla tavalla **Ostoreskontra**- ja **Projektinh
 
 Voit määrittää numerosarjaryhmien kronologian kohdassa **Organisaation hallinto** > **Numerosarjat** > **Kronologiset numerosarjaryhmät**. Määritä numerosarjaryhmien käytettävyysehdot.
 
-![Kronologisten numeroiden asetukset](media/chrono-num-sequence-group-period.jpg)
+![Kronologisten numeroiden asetukset.](media/chrono-num-sequence-group-period.jpg)
 
 | Kenttä            | kuvaus                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ Voit määrittää numerosarjaryhmien kronologian kohdassa **Organisaation halli
 ## <a name="document-posting"></a>Asiakirjan kirjaaminen
 Kun kirjaat tiedoston, tiedostolle määritetään asianmukainen numerosarjaryhmä, joka perustuu asiakirjan kirjauspäivämäärään. Sen jälkeen tiedostonumero luodaan tunnistetun numerosarjan perusteella. Järjestelmä antaa viestin numerosarjaryhmän määritykseen liittyen.
 
-![Asiakirjan numero](media/chrono-num-sequence-fti.jpg)
+![Asiakirjan numero.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > Joissakin maissa asiakirjanumeroinnissa on käytössä erityinen logiikka. Tällöin maakohtainen logiikka korvaa **Kronologinen numerointi** -toiminnon.

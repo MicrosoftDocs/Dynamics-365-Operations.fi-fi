@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798984"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349325"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Kokeilut Dynamics 365 Commercessa
 Dynamics 365 Commercen kokeilujen avulla voi vahvistaa sähköisten kaupankäyntisivujen tehokkuutta koskevia hypoteeseja ja tehdä tietoihin perustuvia päätöksiä. Commerce tukee sivujen, moduulien ja osien A/B-testausta sekä antaa mahdollisuuden mitata sivustoon ehdotettujen muutosten vaikutusta.
@@ -39,7 +39,7 @@ Voit luoda, muokata ja hallita käsiteltyä sivua ja sisältöä eli **variaatio
 ## <a name="experimentation-lifecycle"></a>Kokeilun elinkaari
 Kokeen määrittäminen, variaatioiden luominen ja kokeen suorittaminen on iteratiivinen prosessi. Seuraavassa kaaviossa näkyy kokeilun elinkaari Commercessa ja kolmannen osapuolen palvelussa. 
 
-[ ![Kokeilun elinkaari](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Kokeilun elinkaari.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Lisätietoja kokeiluprosessin kustakin vaiheesta on seuraavissa ohjeaiheissa:
 - [Kokeilun hypoteesin ja mittarien määrittäminen](experimentation-identify.md)

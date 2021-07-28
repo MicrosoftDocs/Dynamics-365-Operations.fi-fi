@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813746"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347113"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
@@ -56,7 +56,7 @@ Voidaan ajoittaa vain työtilaukset, joissa on työtilauksen elinkaaritila, joka
 
 *Esimerkki:* Alla olevassa kuvassa **Odotettu alku** -kenttään lisätty kaava luo työtilausten aikataulutuksen kaikille työtilauksille, joiden odotettu alkamispäivä on viikko tästä lähtien ja myöhemmin. Tämä kaava voi olla hyödyllinen, kun suoritat työtilausten ajoitusta jatkuvasti, mutta haluat varmistaa, että seuraaville 5-6 päivälle ajoitettuja työtilauksia ei ajoiteta uudelleen.
 
-![Kuva 1](media/03-work-order-scheduling.png)
+![Kuva 1.](media/03-work-order-scheduling.png)
 
 Työtilauksiin liittyvä työtilaustyyppi voi määrittää yhden kunnossapitotyöntekijän ajoituksen (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Työtilaustyypit** > **Yksi ylläpitotyöntekijä** -valintanäppäimeksi määritetty "Kyllä"). Tämä tarkoittaa, että jos työtilaustyyppiä käytetään työtilauksessa, **Yksi ylläpitotyöntekijä** -vaihtopainikkeen arvoksi tulee automaattisesti "Kyllä" **Kaikki työtilaukset** -tietosivun **Otsikko**-näkymän **Ajoita**-pikavälilehdessä. Työtilauksen ajoituksen aikana kaikki työtilaukseen luodut työtilaustyöt ajoitetaan myöhemmin samalle kunnossapitotyöntekijälle. Voit tarvittaessa muokata **Yksi ylläpitotyöntekijä** -valintaa **Kaikki työtilaukset** -kohdassa, jolloin useiden työntekijöiden tai yhden työntekijän työtilaustöiden ajoittaminen sallitaan.
 

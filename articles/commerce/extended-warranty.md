@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792460"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353825"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Laajennettujen takuiden luominen ja määrittäminen
 
@@ -81,7 +81,7 @@ Takuunimike luodaan Commercessa seuraavasti:
 
     Esimerkiksi kahden vuoden takuussa **Ajan yksikkö** -kentän arvoksi määritetään **Vuotta** ja **Kesto**-kentän arvoksi **2**. Vaihtoehtoisesti **Ajan yksikkö** -kentän arvoksi voi määrittää **Kuukautta** ja **Kesto**-kentän arvoksi **24**, kuten seuraavassa kuvassa.
 
-    ![Takuunimikkeen Tuotteen tiedot -sivu](./media/ew-time-properties.png)
+    ![Takuunimikkeen Tuotteen tiedot -sivu.](./media/ew-time-properties.png)
 
 1. Tallenna takuunimike valitsemalla **Tallenna**.
 1. Vapauta takuutuote yritykseen, jotta sitä voidaan myydä. Lisätietoja on kohdassa [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md).
@@ -94,7 +94,7 @@ Takuunimike luodaan Commercessa seuraavasti:
 
     Seuraavassa kuvassa on esimerkiksi **Perushinta-alue**-kenttä, jossa on valittu **Perushinta** ja jossa **Alaraja** -kentän arvona 500 $ ja **Yläraja**-kentän arvona 1 000 $.
     
-    ![Takuunimikkeen Vapautetun tuotteen tiedot -sivu](./media/ew-release-product-details.png)
+    ![Takuunimikkeen Vapautetun tuotteen tiedot -sivu.](./media/ew-release-product-details.png)
 
 1. Lisää takuunimike sen kanavan valikoimaan, jossa sitä myydään. Lisätietoja on kohdassa [Valikoimien määrittäminen](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ Myyjät voivat käyttää kahta myyntipistetoimintoa takuunimikkeiden myyntiin a
 
 Seuraavassa kuvassa on esimerkki kassapäätesivusta, jossa on kehote lisätä takuunimike nykyiseen takuunalaisen nimikkeen ostoon.
 
-![Esimerkki kehotteesta lisätä takuunimike nykyiseen ostoon](./media/ew-sell-warranty.png)
+![Esimerkki kehotteesta lisätä takuunimike nykyiseen ostoon.](./media/ew-sell-warranty.png)
 
 Seuraavassa kuvassa on esimerkki toiminnosta, jolla lisätään takuunimike aiemmin myytyyn takuunalaiseen nimikkeeseen.
 
-![Esimerkki toiminnosta, jolla lisätään takuunimike aiemmin myytyyn takuunalaiseen nimikkeeseen](./media/ew-add-warranty-existing.png)
+![Esimerkki toiminnosta, jolla lisätään takuunimike aiemmin myytyyn takuunalaiseen nimikkeeseen.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Käsittele takuutapahtumat
 

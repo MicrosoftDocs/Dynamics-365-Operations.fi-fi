@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261693"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347755"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Täydennysmenetelmät ja määrän muokkaus
 
@@ -34,15 +34,15 @@ Suunnittelun optimoinnissa voidaan käyttää seuraavia kattavuuskoodeja:
 
 - **Kausi** – Täydennysmenetelmä, joka yhdistää kausikohtaisen kysynnän tuotteen yhteen tilaukseen. Tilaus suunnitellaan kauden ensimmäiselle päivälle, ja sen määrä täyttää määritetyn kauden nettotarpeet. Kausi alkaa tuotteen ensimmäisestä kysynnästä ja kattaa määritetyn ajanjakson. Seuraava kausi alkaa tuotteen seuraavista tarpeista. *Kauden* kattavuuskoodia käytetään usein ei-ennustettavissa olevan varaston asettaan, vuodenajan vaikutteille tai suurille kustannuksille. Seuraavassa kuvassa on esimerkki.
 
-    ![Esimerkki kauden kattavuuskoodin käytöstä](./media/coverage-code-period.png "Esimerkki kauden kattavuuskoodin käytöstä")
+    ![Esimerkki kauden kattavuuskoodin käytöstä.](./media/coverage-code-period.png "Esimerkki kauden kattavuuskoodin käytöstä")
 
 - **Vaatimus** – Täydennysmenetelmä, jossa järjestelmä luo nimikkeelle tarpeen mukaan suunnitellun osto-, siirto- tai tuotantotilauksen. Tätä menetelmää käytetään kalliita tuotteita varten, joilla on ajoittainen kysyntä. *Vaatimuksen* kattavuuskoodia käytetään usein konfiguroitavissa tuotteissa tai valmistus tilattaessa -tapauksissa. Seuraavassa kuvassa on esimerkki.
 
-    ![Esimerkki vaatimuksen kattavuuskoodin käytöstä](./media/coverage-code-requirement.png "Esimerkki vaatimuksen kattavuuskoodin käytöstä")
+    ![Esimerkki vaatimuksen kattavuuskoodin käytöstä.](./media/coverage-code-requirement.png "Esimerkki vaatimuksen kattavuuskoodin käytöstä")
 
 - **Min./Maks.** – Täydennysmenetelmä perustuu varastotasoon. Se määrittää varaston täydennyksen tietylle tasolle, kun arvioitu käytettävissä olevan varaston taso alittaa tietyn raja-arvon. Täydennysmäärä on enimmäistason ja ennustetun käytettävissä olevan tason välinen erotus. *Min./maks.* -kattavuuskoodia käytetään usein ennustettavissa olevan varaston laatimiseen, korkean tason tai vähemmän kalliiden tuotteiden osalta. Seuraavassa kuvassa on esimerkki.
 
-    ![Esimerkki min.-/maks.-kattavuuskoodin käytöstä](./media/coverage-code-min-max.png "Esimerkki min.-/maks.-kattavuuskoodin käytöstä")
+    ![Esimerkki min.-/maks.-kattavuuskoodin käytöstä.](./media/coverage-code-min-max.png "Esimerkki min.-/maks.-kattavuuskoodin käytöstä")
 
 - **Manuaalinen** –Täydennysmenetelmä, jossa järjestelmä ei ehdota tuotteelle osto-, siirto- tai tuotantotilauksia. Sen sijaan tuotteen suunnittelu vastaa tarvittavien tilausten luomisesta tuotteen täydentämiseen. *Manuaalista* kattavuuskoodia käytetään usein niiden tuotteiden yhteydessä, joista järjestelmän luomia suunniteltuja tilauksia ei ole tarkoitus luoda.
 

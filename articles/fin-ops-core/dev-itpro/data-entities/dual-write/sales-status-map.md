@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750711"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346567"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Myyntitilauksen tilasarakkeiden yhdistämismäärityksen ottaminen käyttöön
 
@@ -100,7 +100,7 @@ Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
 1. Siirry selaimessa osoitteeseen `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Korvaa **\<test-name\>** yrityksesi Sales-linkillä.
 2. Etsi avatulla sivulla **organizationid** ja kirjoita arvo muistiin.
 
-    ![organizationid-arvon etsiminen](media/sales-map-orgid.png)
+    ![organizationid-arvon etsiminen.](media/sales-map-orgid.png)
 
 3. Avaa selainkonsoli Salesissa ja suorita seuraava komentosarja. Käytä vaiheen 2 **organizationid**-arvoa.
 
@@ -119,33 +119,33 @@ Voit ottaa **IsSOPIntegrationEnabled**-määritteen käyttöön seuraavasti.
     );
     ```
 
-    ![JavaScript-koodi selainkonsolissa](media/sales-map-script.png)
+    ![JavaScript-koodi selainkonsolissa.](media/sales-map-script.png)
 
 4. Varmista, että **IsSOPIntegrationEnabled**-arvona on **tosi**. Tarkista arvo vaiheen 1 URL-osoitteen avulla.
 
-    ![IsSOPIntegrationEnabled-arvona on tosi](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled-arvona on tosi.](media/sales-map-integration-enabled.png)
 
 Voit ottaa **isIntegrationUser**-määritteen käyttöön seuraavasti.
 
 1. Valitse Salesissa **Asetus \> Mukauttaminen \> Järjestelmän mukauttaminen**, valitse **Käyttäjätaulu** ja avaa sitten **Lomake \> Käyttäjä**.
 
-    ![Käyttäjälomakkeen avaaminen](media/sales-map-user.png)
+    ![Käyttäjälomakkeen avaaminen.](media/sales-map-user.png)
 
 2. Etsi kenttähaussa **Integrointikäyttäjän tila** ja lisää se lomakkeeseen kaksoisnapsauttamalla. Tallenna muutos.
 
-    ![Integrointikäyttäjän tila -sarakkeen lisääminen lomakkeeseen](media/sales-map-field-explorer.png)
+    ![Integrointikäyttäjän tila -sarakkeen lisääminen lomakkeeseen.](media/sales-map-field-explorer.png)
 
 3. Siirry Salesissa kohtaan **Asetus \> Suojaus \> Käyttäjät** ja vaihda näkymästä **Käytössä olevat käyttäjät** näkymään **Sovelluksen käyttäjät**.
 
-    ![Näkymän vaihtaminen käytössä olevista käyttäjistä sovelluksen käyttäjiin](media/sales-map-enabled-users.png)
+    ![Näkymän vaihtaminen käytössä olevista käyttäjistä sovelluksen käyttäjiin.](media/sales-map-enabled-users.png)
 
 4. Valitse kohdan **DualWrite IntegrationUser** kaksi merkintää.
 
-    ![Sovelluksen käyttäjien luettelo](media/sales-map-user-mode.png)
+    ![Sovelluksen käyttäjien luettelo.](media/sales-map-user-mode.png)
 
 5. Muuta **Integrointikäyttäjän tila** -sarakkeen arvoksi **Kyllä**.
 
-    ![Integrointikäyttäjän tila -sarakkeen arvon muuttaminen](media/sales-map-user-mode-yes.png)
+    ![Integrointikäyttäjän tila -sarakkeen arvon muuttaminen.](media/sales-map-user-mode-yes.png)
 
 Myyntitilauksillesi on nyt suoritettu yhdistämismääritys.
 

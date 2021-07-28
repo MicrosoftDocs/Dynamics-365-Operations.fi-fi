@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085497"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351149"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -62,7 +62,7 @@ Jos määrität **Eräkäsittely**-asetukseksi **Kyllä**, ER-muoto suoritetaan 
 > [!NOTE]
 > Työn kuvauksessa ilmoitetaan ER-muotomäärityksen suoritus. Lisäksi se sisältää suoritettavan ER-osan nimen.
 
-[![ER-muodon käyttö](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![ER-muodon käyttö.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 Tietoja tästä työstä on useissa paikoissa:
 
@@ -74,17 +74,17 @@ Tietoja tästä työstä on useissa paikoissa:
 
 - Valitse **Sähköisen raportoinnin työt** -sivulla **Näytä tiedostot**, jos haluat nähdä luettelon töiden suorituksen aikana luoduista virheistä ja varoituksista.
 
-    [![ER-töiden luettelon tarkasteleminen](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![ER-töiden luettelon tarkasteleminen.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>Käyttäjän määrittämä toiminta
 
 **Sähköisen raportoinnin kohde** -sivulla voit ohittaa määrityksen oletusarvoisen toiminnan. Tuotuja määrityksiä ei näytetä tällä sivulla, ennen kuin valitset **Uusi** ja valitset sitten **Viittaus**-kentässä määrityksen, jolle kohdeasetukset luodaan.
 
-[![Määrityksen valitseminen viitekenttään](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Määrityksen valitseminen viitekenttään.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 Kun olet luonut viitteen, voit luoda tiedostokohteen kullekin viitatun ER-muodon **Kansio**- tai **Tiedosto**-tuloskomponentille.
 
-[![Tiedostokohteen luonti](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Tiedostokohteen luonti.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Voit sitten ottaa tiedostokohteen yksittäiset kohteet käyttöön tai poistaa ne käytöstä **Kohdeasetukset**-valintaruudussa. **Asetukset**-painikkeella voidaan hallita kaikki valitun tiedostokohteen kohteita. Voit hallita **Kohdeasetukset**-valintaikkunassa kutakin kohdetta erikseen valitsemalla sen kohdalla **käytössä**.
 
@@ -92,7 +92,7 @@ Voit sitten ottaa tiedostokohteen yksittäiset kohteet käyttöön tai poistaa n
 
 Tämän ominaisuuden avulla voit esimerkiksi määrittää tiedostojen kohteet tiedostokomponentille, jota käytetään lähtevän asiakirjan luomiseen Excel-muodossa. Yksi kohde ([Arkisto](er-destination-type-archive.md)) voidaan määrittää tallentamaan alkuperäinen Excel-tiedosto ER-tehtävien arkistoon ja toinen kohde ([Sähköposti](er-destination-type-email.md)) voidaan määrittää samanaikaisesti [muuntamaan](#OutputConversionToPDF) Excel-tiedosto PDF-muotoon ja lähettämään PDF-tiedosto sähköpostitse.
 
-[![Useiden kohteiden määrittäminen yksittäistä muotoelementtiä varten](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Useiden kohteiden määrittäminen yksittäistä muotoelementtiä varten.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 Kun ER-muoto suoritetaan, kaikki muodon osille määritetyt kohteet suoritetaan aina. Lisäksi Finance **versiossa 10.0.17 ja sitä uudemmissa versioissa**, ER-kohteiden toimintoa on parannettu, ja sillä voi nyt määrittää erilaisia kohdejoukkoja yhdelle ER-muodolle. Tämä määritys merkitsee kunkin joukon tietylle käyttäjätoiminnolle määritetyksi. ER-ohjelmointirajapintaa on [laajennettu](er-apis-app10-0-17.md) siten, että käyttäjä suorittaa annetun toiminnon suorittamalla ER-muodon. Annettu toimintokoodi välitetään ER-kohteeseen. ER-muodon eri kohteita voidaan suorittaa annetun toimintokoodin perusteella. Lisätietoja on kohdassa [Toiminnosta riippuvaisten ER-kohteiden määrittäminen](er-action-dependent-destinations.md).
 
@@ -116,11 +116,11 @@ Voit määrittää kohteet vain tuoduissa ER-määrityksissä ja voit käyttää
 
 Kun määrität valitun muodon tiedostokohteita, määrität ne koko muotoa varten.
 
-[![Määrityslinkki](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Määrityslinkki.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 Samalla sinulla voi olla useita [versioita](general-electronic-reporting.md#component-versioning) siitä muodosta, joka on tuotu kulloiseenkin Finance-esiintymään. Voit tarkastella niitä valitsemalla **Määritys**-linkin, joka tarjotaan, kun valitset **Viite**-kentän.
 
-[![Määritysversiot](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Määritysversiot.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 Oletusarvoisesti määritettyjä kohteita käytetään vain, kun suoritat ER-muotoversion, jonka tila on joko **Valmis** tai **Jaettu**. Sinun on kuitenkin joskus käytettävä määritettyjä kohteita, kun suoritetaan ER-muodon luonnosversio. Saatat esimerkiksi muokata muotosi luonnosversiota ja haluta käyttää määritettyjä kohteita sen testaamiseksi, miten luotu tulos toimitetaan. Seuraavia vaiheita noudattamalla sovellat kohteita ER-muodolle, kun suoritetaan luonnosversio.
 
@@ -128,7 +128,7 @@ Oletusarvoisesti määritettyjä kohteita käytetään vain, kun suoritat ER-muo
 2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
 3. Määritä **Käytä kohteita luonnostilassa** -asetuksen arvoksi **Kyllä**.
 
-[![Käytä kohteita luonnostilassa -asetus](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Käytä kohteita luonnostilassa -asetus.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 Käyttääksesi ER-muodon luonnosversiota sinun on merkittävä ER-muoto vastaavasti.
 
@@ -136,11 +136,11 @@ Käyttääksesi ER-muodon luonnosversiota sinun on merkittävä ER-muoto vastaav
 2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
 3. Määritä **Suorita asetus** -vaihtoehdoksi **Kyllä**.
 
-[![Suorita asetus -vaihtoehto](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Suorita asetus -vaihtoehto.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 Kun olet suorittanut tämän määrityksen, **Suorita luonnos** -vaihtoehto on käytettävissä muokattavien ER-muotojen yhteydessä. Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat alkaa käyttää muodon luonnosversiota, kun se suoritetaan.
 
-[![Suorita luonnos -vaihtoehto](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Suorita luonnos -vaihtoehto.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Kohdevirheiden käsittely
 
@@ -148,7 +148,7 @@ Yleensä ER-muoto suoritetaan tietyn liiketoimintaprosessin puitteissa. ER-muodo
 
 Voit esimerkiksi määrittää toimittajan maksukäsittelyn siten, että ER-muoto **ISO20022-tilisiirto** suoritetaan maksutiedoston ja täydentävien asiakirjojen (esimerkiksi lähetekirje ja valvontaraportti) luomista varten. Jos maksu on tarkoitus katsoa onnistuneesti käsitellyksi vain, jos lähetekirje toimitetaan onnistuneesti sähköpostitse, sinun on valittava **Lopeta käsittely virheestä** -valintaruutu **CoveringLetter** -komponentin osalta asianmukaisessa tiedostokohteessa seuraavan kuvan mukaisesti. Tällöin maksun tila, joka valitaan käsittelyä varten vaihtuu tilasta **Ei mitään** tilaksi **Lähetetty** vain, kun Finance-esiintymässä määritetty sähköpostipalvelujen tarjoaja on hyväksynyt luodun lähetekirjeen toimitettavaksi.
 
-[![Prosessikäsittelyn määrittäminen tiedostokohdevirheelle](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![Prosessikäsittelyn määrittäminen tiedostokohdevirheelle.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 Jos tyhjennät **Lopeta käsittely virheestä** -valintaruudun **CoveringLetter**-komponentin osalta kohteessa, maksu katsotaan onnistuneesti käsitellyksi, vaikka lähetekirjettä ei toimitettaisi onnistuneesti sähköpostin kautta. Maksun tila muuttuu tilasta **Ei mitään** tilaksi **Lähetetty**, vaikka lähetekirjettä ei voida lähettää johtuen esimerkiksi puuttuvasta tai virheellisestä vastaanottajan tai lähettäjän sähköpostiosoitteesta.
 
@@ -160,7 +160,7 @@ Voit muuntaa PDF-muunnosasetuksella tuloksen Microsoft Office (Excel tai Word) -
 
 Ota PDF-muunnosasetus käyttöön kulloisessakin Finance-esiintymässä avaamalla **Ominaisuuksien hallinta** -työtila ja ottamalla toiminto **Muunna sähköisen raportoinnin lähtevät asiakirjat Microsoft Office -muodoista PDF -muotoon** käyttöön.
 
-[![Lähtevien asiakirjojen PDF-muunnostoiminnon käyttöönotto Ominaisuuksien hallinta](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![Lähtevien asiakirjojen PDF-muunnostoiminnon käyttöönotto ominaisuuksien hallinnassa.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### <a name="applicability"></a>Soveltuvuus
 
@@ -185,13 +185,13 @@ Sellaisten tulosten muuntamisessa, jotka eivät sisällä upotettuja fontteja, k
 
 Ota PDF-muunnos käyttöön tiedostokohteen osalta valitsemalla **Muunna PDF-muotoon** -valintaruutu.
 
-[![PDF-muunnoksen käyttöönotto tiedostokohteen osalta](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![PDF-muunnoksen käyttöönotto tiedostokohteen osalta.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Sivun suunnan valitseminen PDF-muunnosta varten</a>
 
 Jos luot Excel-muodossa ER-konfiguraation ja haluat muuntaa sen PDF-muotoon, voit määrittää PDF-tiedoston sivun suunnan. Kun valitset **Muunna PDF -muotoon** -valintaruudun ja otat PDF-muunnoksen käyttöön tiedostokohteelle, joka tuottaa tulostetiedoston Excel-muodossa, **Sivun suunta** -kenttä on käytettävissä **PDF-muunnosasetukset** -pikavälilehdessä. Valitse **Sivun suunta** -kentästä haluamasi suunta.
 
-[![Sivun suunnan valitseminen PDF-muunnosta varten](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Sivun suunnan valitseminen PDF-muunnosta varten.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > Jos haluat valita PDF-sivun suunnan, sinun on asennettava Financen versio 10.0.10 tai uudempi.
@@ -222,7 +222,7 @@ Valitse **Yleinen**-pikavälilehden **Lähetä kansio nimellä** -kentästä jok
     > [!NOTE]
     > Kun valitset **Erilliset tiedostot**, muodostettu tulostus kerätään muistissa zip-muodossa. Sen vuoksi [tiedoston enimmäiskokorajaa](er-compress-outbound-files.md) käytetään zip-tuotoksen yhteydessä, kun todellinen tiedostokoko saattaa ylittää tämän rajan. Tämä arvo kannattaa valita, kun myös luodun tuotoksen koon odotetaan olevan liian suuri.
 
-[![Kansion muotokomponentin kohteen konfiguroiminen](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Kansion muotokomponentin kohteen konfiguroiminen.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>Rajoitukset
 

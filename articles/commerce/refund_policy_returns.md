@@ -2,7 +2,7 @@
 title: Kanavan palautus- ja hyvityskäytännön luominen ja päivittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten kanavan palautus- ja hyvityskäytäntö määritetään.
 author: ShalabhjainMSFT
-ms.date: 02/03/2020
+ms.date: 07/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: e23291130d55fdfb5c2e2077b78c221866d72c5d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792072"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345105"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
 
@@ -34,14 +34,14 @@ Tämän käytännön soveltamisala rajoittuu tällä hetkellä siihen, että voi
 - Jos osto on tehty käyttämällä lahjakorttia, myymäläkäytännöllä on tarkoitus käsitellä palautuksia vain uuteen lahjakorttiin tai tallentaa myymäläluottoa. 
 - Jos myynti tehdään käteisellä, hyvityksen sallitut vaihtoehdot ovat käteinen, lahjakortti ja asiakastili, mutta ei luottokorttia. 
 
-
 ## <a name="enable-return-policy"></a>Ota käyttöön palautuskäytäntö
 
 Voit ottaa kanavan palautuksen käytäntötoiminnon käyttöön seuraavasti:
 
 1. Avaa **Ominaisuuksien hallinta** -työtilaan Dynamics 365 Commercessa.
-2. Etsi ominaisuuksien nimien luettelosta **Ota käyttöön kanavan palautuksen käytännöt** -toiminto.
-3. Valitse **Ota käyttöön nyt**. 
+1. Etsi ominaisuuksien nimien luettelosta **Ota käyttöön kanavan palautuksen käytännöt** -toiminto.
+1. Valitse **Ota käyttöön nyt**.
+1. Suorita **1110** (Yleinen konfigurointi) -työ **Jakeluaikataulu**-sivulta jakaaksesi ominaisuuden muutoksen. 
 
 ## <a name="configure-return-policy"></a>Määritä palautuskäytäntö
 
@@ -49,56 +49,56 @@ Noudattamalla näitä ohjeita voit määrittää jälleenmyyntimyymälän tai on
 
 1. Siirry kohtaan **Retail ja Commerce** \> **Kanava-asetukset** \> **Palautukset** \> **Kanavan palautuskäytäntö**.
 
-2. Valitse **Uusi** luodaksesi uuden palautuskäytännön mallin. Jos haluat käyttää aiemmin luotua mallia, valitse malli vasemmanpuoleisesta ruudusta. Lisää uusille malleille nimi ja kuvaus, joiden avulla voit tunnistaa käytännön, kun sitä käytetään kanavassa.
+1. Valitse **Uusi** luodaksesi uuden palautuskäytännön mallin. Jos haluat käyttää aiemmin luotua mallia, valitse malli vasemmanpuoleisesta ruudusta. Lisää uusille malleille nimi ja kuvaus, joiden avulla voit tunnistaa käytännön, kun sitä käytetään kanavassa.
 
-   ![Uuden palautuskäytännön lisääminen](media/Return-policy-page1.png "Uuden palautuskäytännön lisääminen")
+   ![Uuden palautuskäytännön lisääminen.](media/Return-policy-page1.png)
      
    
-3. Määritä **Sallittu palautuksen maksutapa** -osassa **Sallitut** palautusmaksutarjoukset, jotka koskevat kutakin maksutapaa.
-   ![Lisää maksutavat](media/Return-policy-page2.PNG "Määritä sallitut toimitustavat maksutyypeittäin")
+1. Määritä **Sallittu palautuksen maksutapa** -osassa **Sallitut** palautusmaksutarjoukset, jotka koskevat kutakin maksutapaa.
+   ![Määritä sallitut toimitustavat maksutyypeittäin.](media/Return-policy-page2.png)
    
     > [!IMPORTANT]
     > - Maksut johdetaan organisaatiolle määritetyistä toimitustavoista.
     > - Kun lisäät sallitun palautusmaksuvälinetyypin jokaiselle luetellulle maksutavalle, voit varmistaa, että palautusmaksuvälinetyyppiin voidaan tehdä palautus.
     
-4. Liitä palautuskäytäntömalli myymälöihin, joissa sitä käytetään. Valitse **Lisää** **vähittäismyyntikanavat** -välilehdestä ja liitä käytettävissä olevat kanavat. 
+1. Liitä palautuskäytäntömalli myymälöihin, joissa sitä käytetään. Valitse **Lisää** **vähittäismyyntikanavat** -välilehdestä ja liitä käytettävissä olevat kanavat. 
 
     - Valitse **Valitse organisaatiosolmut** -valintaikkunassa ne myymälät, alueet ja organisaatiot, joihin malli liitetään.
     - Kuhunkin myymälään voidaan liittää vain yksi myymälän palautuskäytäntömalli.
     - Valitse myymälät, alueet tai organisaatiot nuolipainikkeiden avulla.
     - Käytännön voimaan tulopäivämäärä on aika, jolloin käytäntöjä käytetään kanavissa, ja kanavatyöt suoritetaan. 
 
-    ![Valitse organisaatiosolmujen valintaikkuna](media/Return-policy-page3.PNG "Valitse organisaatiosolmujen valintaikkuna")
+    ![Valitse organisaatiosolmujen valintaikkuna.](media/Return-policy-page3.png)
 
-5. Suorita **1070**-työ **Jakeluaikataulu**-sivulla, jotta kanavan palautuskäytäntö tulisi käytettäväksi POS:issa.
+1. Suorita **1070**-työ **Jakeluaikataulu**-sivulla, jotta kanavan palautuskäytäntö tulisi käytettäväksi POS:issa.
 
 ## <a name="preview-the-channel-return-policy-in-the-pos"></a>Kanavien palauttamisen käytännön esikatselu POS-sovelluksessa
 
 Voit tarkastella myyntipisteen sallittuja palautuksen maksuvälinetyyppejä noudattamalla jommankumman seuraavan esimerkin ohjeita.
 
 1. Kirjaudu POS-sovellukseen kassaksi tai projektipäälliköksi.
-2. Valitse **Vaihto ja laatikko** -kohdasta **Näytä kirjauskansio**.
-3. Valitse tapahtuma, joka on osa palautusta. 
-4. Valitse palautettavat nimikkeet ja valitse maksutapa.  
-- Jos valittu maksuväline on palautusmaksuvälinetyyppien sallittu-luettelossa, kassanhoitaja voi suorittaa tapahtuman loppuun.
-- Jos valittu maksuväline ei ole sallittu, näyttöön tulee virhesanoma.
-- Valitse **Maksettava summa**, joka näyttää kaikkien sallittujen palautusten maksuvälinetyyppien luettelon.
+1. Valitse **Vaihto ja laatikko** -kohdasta **Näytä kirjauskansio**.
+1. Valitse tapahtuma, joka on osa palautusta. 
+1. Valitse palautettavat nimikkeet ja valitse maksutapa.  
+    - Jos valittu maksuväline on palautusmaksuvälinetyyppien sallittu-luettelossa, kassanhoitaja voi suorittaa tapahtuman loppuun.
+    - Jos valittu maksuväline ei ole sallittu, näyttöön tulee virhesanoma.
+    - Valitse **Maksettava summa**, joka näyttää kaikkien sallittujen palautusten maksuvälinetyyppien luettelon.
 
 -tai-
 
 1. Kirjaudu POS-sovellukseen kassaksi tai projektipäälliköksi.
-2. Valitse **Palauta tapahtuma** ja syötä kuitin tunnus viivakoodin tarkistuksen tai manuaalisen merkinnän avulla. 
-3. Valitse tapahtuma, joka on osa palautusta. 
-4. Valitse palautettavat nimikkeet ja valitse maksutapa.  
-- Jos valittu maksuväline on palautusmaksuvälinetyyppien sallittu-luettelossa, kassanhoitaja voi suorittaa tapahtuman loppuun.
-- Jos valittu maksuväline ei ole sallittu, näyttöön tulee virhesanoma.
-- Valitse **Maksettava summa**, joka näyttää kaikkien sallittujen palautusten maksuvälinetyyppien luettelon.
+1. Valitse **Palauta tapahtuma** ja syötä kuitin tunnus viivakoodin tarkistuksen tai manuaalisen merkinnän avulla. 
+1. Valitse tapahtuma, joka on osa palautusta. 
+1. Valitse palautettavat nimikkeet ja valitse maksutapa.  
+    - Jos valittu maksuväline on palautusmaksuvälinetyyppien sallittu-luettelossa, kassanhoitaja voi suorittaa tapahtuman loppuun.
+    - Jos valittu maksuväline ei ole sallittu, näyttöön tulee virhesanoma.
+    - Valitse **Maksettava summa**, joka näyttää kaikkien sallittujen palautusten maksuvälinetyyppien luettelon.
 
-![Palautus ei sallittu](media/Return-policy-page6.png "Palautustyyppi ei sallittu")
+![Palautustyyppi ei ole sallittu.](media/Return-policy-page6.png)
 
 
 
-![Maksutapaluettelo](media/Return-policy-page5.PNG "Palautustyypit eivät ole sallittuja")
+![Sallitut palautustyypit.](media/Return-policy-page5.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

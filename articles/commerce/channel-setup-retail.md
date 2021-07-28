@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937531"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346055"
 ---
 # <a name="set-up-a-retail-channel"></a>Vähittäismyyntikanavan määrittäminen
 
@@ -50,11 +50,11 @@ Varmista ennen vähittäismyyntikanavan luontia, että [kanavan edellytykset](ch
 
 Seuraavassa kuvassa näytetään, miten uusi vähittäismyyntikanava luodaan.
 
-![Uusi vähittäismyyntikanava](media/channel-setup-retail-1.png)
+![Uusi vähittäismyyntikanava.](media/channel-setup-retail-1.png)
 
 Seuraavassa kuvassa on esimerkki vähittäismyyntikanavasta.
 
-![Vähittäismyyntikanavan esimerkki](media/channel-setup-retail-2.png)
+![Vähittäismyyntikanavan esimerkki.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Muut asetukset
 
@@ -64,7 +64,7 @@ Lisätietoja näytön oletusasettelun määrittämisestä **Näytön asettelu** 
 
 Seuraavassa kuvassa on esimerkki vähittäismyyntikanavan asetusten määrityksistä.
 
-![Vähittäismyyntikanavan määritysesimerkki](media/channel-setup-retail-3.png)
+![Vähittäismyyntikanavan määritysesimerkki.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Lisäkanavan määrittäminen
 
@@ -74,7 +74,7 @@ Verkkokanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen, kassa
 
 Seuraavassa kuvassa on erilaisia vähittäismyyntikanavan määritysvaihtoehtoja **Asetukset**-välilehdessä.
 
-![Kanavan määrittäminen](media/channel-setup-retail-4.png)
+![Kanavan määrittäminen.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
 
@@ -89,7 +89,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavasta](media/channel-setup-retail-5.png)
+![Esimerkki maksutavoista.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Kassatilityksen määrittäminen
 
@@ -98,7 +98,7 @@ Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
 Seuraavassa kuvassa näkyy esimerkki kassatilityksestä.
 
-![Kassatilitysten määrittäminen](media/channel-setup-retail-6.png)
+![Kassatilitysten määrittäminen.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
@@ -112,7 +112,7 @@ Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
 
-![Määritä toimitustavat](media/channel-setup-retail-7.png)
+![Määritä toimitustavat.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Tulo- ja kulutilin määrittäminen
 
@@ -129,7 +129,7 @@ Voit määrittää tulo- ja kulutilin noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa on esimerkki tulo- ja kulutilistä.
 
-![Tulo- ja kulutilien määrittäminen](media/channel-setup-retail-8.png)
+![Tulo- ja kulutilien määrittäminen.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Osien määrittäminen
 
@@ -155,7 +155,7 @@ Voit määrittää täytäntöönpanoryhmän määrityksen noudattamalla seuraav
 
 Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määrittämisestä.
 
-![Täytäntöönpanoryhmän määritysten määrittäminen](media/channel-setup-retail-9.png)
+![Täytäntöönpanoryhmän määritysten määrittäminen.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Säilöjen määrittäminen
 

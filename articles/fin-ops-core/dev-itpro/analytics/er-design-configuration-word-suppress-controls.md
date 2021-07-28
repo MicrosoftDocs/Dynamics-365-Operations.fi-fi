@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753597"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348041"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Piilota Word-sisällön ohjausobjektit luoduissa raporteissa
 
@@ -63,7 +63,7 @@ Lisäksi malliraporttia varten on ladattava ja tallennettava seuraava malli:
     > [!NOTE]
     > Toistuvan sisällön ohjausobjekti on koodattu **SummaryLines**-avaimella, joka vastaa sen mukautetun XML-osan kenttää, johon se on yhdistetty.
 
-    ![Word-mallin asettelu](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Word-mallin asettelu.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Aiemmin luodun ER-raporttimäärityksen valitseminen
 
@@ -98,7 +98,7 @@ Tällä hetkellä Word-muotoisen raportin luonnissa käytetään mallina SampleV
 7. Valitse **OK**.
 8. Valitse **Sähköisen raportin parametrit** -valintaikkunassa **OK** ja analysoi luotu tuloste.
 
-    ![Toimittajan maksut -sivulla käsiteltävät maksut](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Toimittajan maksut -sivulla käsiteltävät maksut.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Tuloste esitetään Word-muodossa, ja se sisältää yhteenveto-osan.
 
@@ -149,7 +149,7 @@ Jos haluat piilottaa yhteenveto-osan luodussa tiedostossa tämän ER-muodon suor
 
 9. Tallenna muokattavan muodon muutokset valitsemalla **Tallenna**.
 
-    ![Word-muotoinen luotu tuloste](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Word-muotoinen luotu tuloste.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Word-asiakirjan luovan muokatun muodon suorittaminen
 
@@ -163,7 +163,7 @@ Jos haluat piilottaa yhteenveto-osan luodussa tiedostossa tämän ER-muodon suor
 8. Valitse **Sähköisen raportoinnin parametrit** -valintaikkunan **Piilota yhteeneveto-osa** -kentässä **Kyllä**.
 9. Valitse **OK** ja analysoi luotu tuloste.
 
-    ![Word-muotoinen luotu tuloste](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Word-muotoinen luotu tuloste.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Huomaa, että tuloste ei sisällä yhteenveto-osaa, koska se on piilotettu.
 

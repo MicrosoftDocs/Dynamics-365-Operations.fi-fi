@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a9cdd16f0a1592690547a687a731de83a720018
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce87f14c17aa44d73de22e7f1711794a499c67de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830121"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352709"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Painotettu keskiarvo sekä fyysinen arvo ja merkintä
 
@@ -65,7 +65,7 @@ Seuraavien kohtien skenaariossa on kirjattu vastaanotto ja varastostaotto, jotka
 
 Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysperiaatteen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. 
 
-![Painotettu keskiarvo - suora maksu - fyysistä arvoa ei sisällytetä](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![Painotettu keskiarvo - suora maksu - fyysistä arvoa ei sisällytetä.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
@@ -99,7 +99,7 @@ Seuraavat tapahtumat on havainnollistettu oheisessa kuvassa:
 
 Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. 
 
-![Painotettu keskiarvo - maksun yhteenveto - fyysistä arvoa ei sisällytetä](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Painotettu keskiarvo - maksun yhteenveto - fyysistä arvoa ei sisällytetä.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
@@ -128,7 +128,7 @@ Alapuolella olevassa graafisessa esityksessä on kuvattu seuraavat tapahtumat:
 
 Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja suoran täsmäytysperiaatteen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehto on käytössä. 
 
-![Painotettu keskiarvo - suora maksu - fyysinen arvo sisällytetään](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Painotettu keskiarvo - suora maksu - fyysinen arvo sisällytetään.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
@@ -161,7 +161,7 @@ Seuraavat tapahtumat on havainnollistettu oheisessa kuvassa:
 
 Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun Sisällytä fyysinen arvo -vaihtoehtoa ei käytetä. 
 
-![Painotettu keskiarvo - maksun yhteenveto - fyysinen arvo sisällytetään](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![Painotettu keskiarvo - maksun yhteenveto - fyysinen arvo sisällytetään.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
@@ -209,7 +209,7 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 
 Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon varastomallin ja merkinnän käyttämisen vaikutus tähän tapahtumien sarjaan. 
 
-![Painotettu keskiarvo merkinnän kanssa](./media/weightedaveragewithmarking.gif) 
+![Painotettu keskiarvo merkinnän kanssa.](./media/weightedaveragewithmarking.gif) 
 
 **Kaavion selite**
 - Pystysuorat nuolet kuvaavat varastotapahtumia.

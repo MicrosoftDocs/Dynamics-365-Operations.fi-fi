@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 682910350832e441ed13c716c0c18200a3b7865d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351070"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Haun tietolähteiden määrittäminen ER-sovelluskohtaisten parametrien käyttämiseksi 
 
@@ -44,38 +44,38 @@ Voit konfiguroida seuraavantyyppisiä **haku** tietolähteitä sen mukaan, mink�
 
 Seuraavassa kuvassa esitetään, miten muodon valintalista voidaan konfiguroida ER-mallimuodossa.
 
-   ![Muodon valintalistan näyttäminen konfiguroitujen hakutietojen lähteen pohjana](./media/er-lookup-data-sources-img1.gif)
+   ![Muodon valintalistan näyttäminen konfiguroitujen hakutietojen lähteen pohjana.](./media/er-lookup-data-sources-img1.gif)
 
 Seuraavassa kuvassa esitetään muodon komponentit, jotka on konfiguroitu raportoimaan erityyppiset verot luodun raportin eri osassa.
 
-   ![Erilaisten verojen erityyppisten verojen erillisen raportin näyttäminen muotoilun osissa](./media/er-lookup-data-sources-img2.png)
+   ![Erilaisten verojen erityyppisten verojen erillisen raportin näyttäminen muotoilun osissa.](./media/er-lookup-data-sources-img2.png)
 
 Seuraavassa kuvassa havainnollistaa, kuinka ER Operations -suunnittelu sallii **muotoile luettelo\haku** -tyypin tietolähteen lisäyksen.  Lisätty tietolähde on määritetty palauttamaan `List of taxation levels`- muodon valintalistan arvo.
 
-   ![Muotoile luettelo\haku-tyypin ER-tietolähteen lisääminen](./media/er-lookup-data-sources-img3.gif)
+   ![Muotoile luettelo\haku-tyypin ER-tietolähteen lisääminen.](./media/er-lookup-data-sources-img3.gif)
 
 Seuraavassa kuvassa havainnollistetaan, miten lisätty tietolähde on konfiguroitu käyttämään mallitietolähteen **Koodi**-kenttää. **Mallin** tietolähteen **Model.Data.Tax**-tietue on määritetty parametriksi jokaista konfiguroitua sääntöä varten.
 
-![Muotoile luettelo\haku-tyypin lisätyn tietolähteen parametrien konfiguroiminen](./media/er-lookup-data-sources-img4.gif)
+![Muotoile luettelo\haku-tyypin lisätyn tietolähteen parametrien konfiguroiminen.](./media/er-lookup-data-sources-img4.gif)
 
 Lisätty `Model.Data.Tax`-tietolähde määritetään määrittämään verokoodi jokaiselle konfiguroitulle säännölle käyttämällä **TaxTable**-sovellustaulun tietueita.
 
-   ![Mallin muokkaaminen\haku-tyypin yhden yrityksen hakutietolähteen tarkastelu](./media/er-lookup-data-sources-img5.gif)
+   ![Mallin muokkaaminen\haku-tyypin yhden yrityksen hakutietolähteen tarkastelu.](./media/er-lookup-data-sources-img5.gif)
 
 Voit määrittää valitun ER-muodon hakusäännöt käyttämällä käyttöliittymää, joka on automaattisesti kohdistettu konfiguroidun valitun tietolähteen rakenteen kanssa. Tämä käyttöliittymä edellyttää, että jokaiselle säännölle on määritettävä palautusarvo `List of taxation levels`-muodon valintalista-arvoksi sekä verokoodi parametriksi.
 
-   ![Konfiguroidun tietolähteen sääntöjen määrittäminen](./media/er-lookup-data-sources-img6.gif)
+   ![Konfiguroidun tietolähteen sääntöjen määrittäminen.](./media/er-lookup-data-sources-img6.gif)
 
 Seuraavassa kuvassa havainnollistetaan, miten **lasketun kenttä** tyypin `Model.Data.Summary.LevelByLookup`-tietolähteen voi konfiguroida niin, että se kutsui määritettyä **haku** tietolähdettä ja antaa tarvittavat parametrit. Voit käsitellä tätä puhelua ajon aikana ER käy läpi määritetyssä järjestyksessä määritettyjen sääntöjen luettelon ja etsii ensimmäisen säännön, joka täyttää määritetyt ehdot. Tässä esimerkissä sääntö, joka sisältää annettua verokoodia vastaavat verokoodit. Näin saadaan selville, mikä sääntö on sopivin ja mikä on sääntöä varten konfiguroitu valintalista-arvo, jonka tämä tietolähde palauttaa.
 
 > [!NOTE]
 > Poikkeus ilmenee, jos sovellettavaa sääntöä ei löydy. Voit estää nämä poikkeukset määrittämällä sääntöluettelon lopussa lisää sääntöjä, jotka käsittelevät tapauksia, joissa annetaan ei-konfiguroitu arvo tai arvoa ei ole. Käytä **\*Ei tyhjä\***- ja **\*Tyhjä\***-asetuksia vastaavasti.  
 >
-> ![Määritetyn hakutietolähteen kutsuminen tietolähteen lisäämiseksi](./media/er-lookup-data-sources-img7.png)
+> ![Määritetyn hakutietolähteen kutsuminen tietolähteen lisäämiseksi.](./media/er-lookup-data-sources-img7.png)
 
 Kun määrität **Yritysten välinen**-asetuksen arvoksi **Kyllä** muokattavalle hakutietolähteelle, lisäät uuden pakollisen **yritys**-parametrin tämän tietolähteen parametrijoukkoon. **Yritys**-parametrin arvo on määritettävä ajon aikana, kun hakutietolähdettä kutsutaan. Kun yrityskoodi määritetään ajon aikana, ohjelma käyttää tälle yritykselle määritettyjä sääntöjä sopivimman säännön etsimisessä ja vastaava arvo palautetaan. Seuraavassa kuvassa kerrotaan, miten tämä voidaan tehdä ja miten muokattavissa olevia tietolähdettä muutetaan.
 
-   ![Mallin muokkaaminen\haku-tyypin yritysten välisen hakutietolähteen tarkastelu](./media/er-lookup-data-sources-img8.gif)
+   ![Mallin muokkaaminen\haku-tyypin yritysten välisen hakutietolähteen tarkastelu.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Valitse jokainen yritys erikseen, jos haluat määrittää tämän hakutietolähteen sääntöjoukon muokattavassa ER-muodossa. Poikkeus tulee suorituspalvelussa, kun yritystenvälistä hakua kutsutaan sen yrityksen koodilla, jonka hakuasetusta ei ole tehty loppuun.
@@ -84,7 +84,7 @@ Kun määrität **Yritysten välinen**-asetuksen arvoksi **Kyllä** muokattavall
 
 Versiosta 10.0.19 alkaen **haku**-tietolähteiden laajennetut toiminnot ovat käytettävissä. Kun määrität muokattavan hakutietolähteen **Laajennettu**-asetuksen arvoksi **Kyllä**, konfiguroitu hakutietolähde muunnetaan rakenteeksi tietolähteeksi, joka tarjoaa lisätoimintoja konfiguroitujen sääntöjoukon analysoimista varten. Seuraavassa kuvassa näkyy tämä muunnos.
 
-   ![Mallin muokkaaminen\haku-tyypin jäsennellyn hakutietolähteen tarkastelu](./media/er-lookup-data-sources-img9.gif)
+   ![Mallin muokkaaminen\haku-tyypin jäsennellyn hakutietolähteen tarkastelu.](./media/er-lookup-data-sources-img9.gif)
 
 - **Haku**-alinimike on suunniteltu toimintoksi, joka löytää sopivimman säännön parametrijoukon perusteella konfiguroitavien sääntöjen joukkoa joukon perusteella.
 - **IsLookupResultSet**-alinimike on suunniteltu toimintoksi, joka hyväksyy peruslistatietolähteen määritetyn arvon ja palauttaa *totuusarvon* **Tosi**, kun sääntöjoukko sisältää vähintään yhden säännön, jolle annettu valintalista-arvo on määritetty palautetuksi arvoksi. Tämä toiminto palauttaa *totuusarvon* **Epätosi**, kun ei ole sääntöjä, jotka palauttavat määritetyn valintalista-arvon.

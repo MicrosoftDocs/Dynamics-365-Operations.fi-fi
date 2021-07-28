@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5f7ae0888656dd452af17e33d600f7894b801b1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893953"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351719"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Tuo päivitetyt versiot sähköisen raportoinnin konfiguraatioista
 
@@ -41,11 +41,11 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit**-osassa **Tuo konfiguraatioversioiden päivitykset**-ruutu.
 
-    ![Lokalisoinnin konfiguraatiot -sivu](./media/er-download-updated-versions-global-repo1.png)
+    ![Lokalisoinnin konfiguraatiot -sivu.](./media/er-download-updated-versions-global-repo1.png)
 
 4. Valitse **Tuo sähköisen raportoinnin konfiguraatioversioiden päivitykset** -valintaikkunan **Suoritustila** -kentässä **Näytä vain saatavilla olevat päivitykset**. Valitse sitten **OK**. 
 
-    ![Suoritustila-kentän asetus on Näytä vain saatavilla olevat päivitykset](./media/er-download-updated-versions-global-repo2.png)
+    ![Suoritustila-kentän asetus on Näytä vain saatavilla olevat päivitykset.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Tarkista saamasi sanomat. Nämä sanomat antavat seuraavia tietoja sähköisen raportoinnin konfiguraatioista nykyisessä Finance-esiintymässä ja vertaa niitä yleisen säilön sisältöön:
 
@@ -72,14 +72,14 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
 4. Valitse **Tuo sähköisen raportoinnin konfiguraatioversioiden päivitykset** -valintaikkunan **Suoritustila**-kentässä **Tuo viimeisimmät päivitykset** tuodaksesi sähköisen raportoinnin konfiguraatioiden viimeisimmät versiot yleisestä säilöstä nykyiseen Finance-esiintymään.
 5. Voit ajastaa erätyön tuonnille **Suorita taustalla** -pikavälilehdessä määrittämällä **Eräkäsittely**-asetukseksi **Kyllä**. Jos haluat toistaa tuonnin säännöllisesti, määritä tarvittava toistuminen.
 
-    ![Suoritustila-kentän asetukseksi on määritetty Tuo viimeisimmät päivitykset](./media/er-download-updated-versions-global-repo5.png)
+    ![Suoritustila-kentän asetukseksi on määritetty Tuo viimeisimmät päivitykset.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Valitse **OK**.
 7. Jos haluat tietää, mitä konfiguraatioversioita on tuotu, noudata jotakin näistä ohjeista:
 
     - Jos suoritat tuonnin interaktiivisesti erätyön käyttämisen sijaan, tarkista saamasi sanomat.
 
-        ![Interaktiivisen tuonnin suorittamisen aikana saadut sanomat](./media/er-download-updated-versions-global-repo6.png)
+        ![Interaktiivisen tuonnin suorittamisen aikana saadut sanomat.](./media/er-download-updated-versions-global-repo6.png)
 
     - Jos suoritat tuonnin erätilassa, noudata näitä ohjeita:
 
@@ -87,7 +87,7 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
         2. Etsi ja valitse **Tuo sähköisen raportoinnin konfiguraatioversioiden päivitykset** -työ ja valitse sitten toimintoruudun **Erätyö**-välilehdessä **Erätyöhistoria** nähdäksesi työhistorian.
         3. Valitse **Erätyöhistoria**-sivulla **Loki**. Valitse sitten saamassasi sanomassa **Sanoman tiedot** -linkki nähdäksesi työn lokin.
 
-        ![Työloki](./media/er-download-updated-versions-global-repo7.png)
+        ![Työloki.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Emme suosittele ajoittamaan toistuvaa erätyötä tuomaan sähköisen raportoinnin konfiguraatioiden päivitettyjä versioita suoraan yleisestä säilöstä tuotantoympäristöön, sillä tuodut versiot tulevat välittömästi saataville. Käytä sen sijaan tätä lähestymistapaa ottaaksesi sähköisen raportoinnin konfiguraatioiden versiot käyttöön eristysympäristössä. Tällöin ne voidaan arvioida eristysympäristössä ennen niiden käyttöönottoa tuotantoympäristössä.

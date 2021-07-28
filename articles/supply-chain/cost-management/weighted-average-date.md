@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821294"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343697"
 ---
 # <a name="weighted-average-date"></a>Painotetun keskiarvon päivämäärä
 
@@ -39,7 +39,7 @@ Painotettu keskiarvo = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1
 
 Varaston sulkemisen aikana laskenta suoritetaan päivittäin seuraavan kuvan esittämällä tavalla. 
 
-![Painotetun keskiarvon päivämäärän päivittäislaskentamalli](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Painotetun keskiarvon päivämäärän päivittäislaskentamalli.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Varasto-otoista lähtevät varastotapahtumat, mukaan lukien myyntitilaukset, varastokirjauskansiot, ostohyvityslaskut ja tuotantotilaukset, tapahtuvat kirjauspäivämääränä ja arvioidun kustannushinnan mukaisina. Tähän arvioituun kustannushintaan viitataan myös termillä kustannushinnan käyttökeskiarvo. Varaston sulkupäivämääränä järjestelmä analysoi edellisten kausien, edellisten päivien ja kuluvan päivän varastotapahtumat. Tämän analyysin avulla määritetään, kumpaa seuraavista sulkemisperiaatteista käytetään:
 
@@ -72,7 +72,7 @@ Seuraavassa on kuvattu näitä tapahtumia:
 -   2b. Varaston taloudellinen varastostaotto päivitetty määrälle 2 yksikkökustannuksen ollessa 10,00 USD.
 -   3. Varaston sulkeminen toteutettiin käyttämällä suoran selvityksen menetelmää varaston taloudellisen vastaanoton ja varaston taloudellisen varastostaoton väliseen selvitykseen.
 
-![Painotetun keskiarvon päivämäärän suora selvitys ilman Sisällytä fyysinen arvo -asetusta](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Painotetun keskiarvon päivämäärän suora selvitys ilman Sisällytä fyysinen arvo -asetusta.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Kuvan selitys:**
 
@@ -126,7 +126,7 @@ Järjestelmä luo ja kirjaa yhteenvetovarastosiirron tapahtuman. Lisäksi järje
 
 Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun **Sisällytä fyysinen arvo** -vaihtoehtoa ei käytetä. 
 
-![Painotetun keskiarvon päivämäärän yhteenvetoselvitys ilman Sisällytä fyysinen arvo -asetusta](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Painotetun keskiarvon päivämäärän yhteenvetoselvitys ilman Sisällytä fyysinen arvo -asetusta.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Kuvan selitys:**
 
@@ -175,7 +175,7 @@ Voit merkitä varastostaottotapahtuman vastaanottoon kirjauksen jälkeen. Voit t
 
 Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon päivämäärän varastomallin ja merkinnän käyttämisen vaikutus tähän tapahtumien sarjaan.
 
-![Painotetun keskiarvon päivämäärä käyttäen merkintää](./media/weightedaveragedatewithmarking.gif) 
+![Painotetun keskiarvon päivämäärä käyttäen merkintää.](./media/weightedaveragedatewithmarking.gif) 
 
 **Kuvan selitys:**
 

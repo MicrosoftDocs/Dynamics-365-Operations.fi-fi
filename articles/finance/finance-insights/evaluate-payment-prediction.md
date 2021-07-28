@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186735"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349007"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Asiakkaan alkuperäisen maksuennustemallin arvioiminen (esiversio)
 
@@ -33,32 +33,32 @@ Tässä ohjeaiheessa kerrotaan, miten ennustemalli arvioidaan sen jälkeen, kun 
 
 **Finance Insights -parametrit** -sivulla Microsoft Dynamics 365 Financessa tarkkuuspisteiden vieressä on **Paranna mallin tarkkuutta** -linkki.
 
-[![Paranna mallin tarkkuutta -linkki](./media/prediction-model.png)](./media/prediction-model.png)
+[![Paranna mallin tarkkuutta -linkki.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Tämä linkki vie AI Builderiin, josta saat lisätietoja nykyisestä mallista. Voit myös parantaa mallia siellä. Seuraavassa kuvassa on näyttöön avautuva sivu.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Avautuva sivu sisältää seuraavat tiedot:
 
 - **Suorituskyky**-osan mallin suorituskykyluokka kertoo mallin laadusta. Lisätietoja tästä luokasta on kohdassa [Ennustemallin suorituskyky](/ai-builder/prediction-performance) AI Builderin dokumentaatiossa.
 - **Vaikuttavimmat tiedot** -osassa näkyy, miten tärkeitä tietojen eri syöttötyypit olivat mallille. Voit arvioida tämän luettelon ja vastaavat prosenttiosuudet ja määrittää, ovatko tiedot yhdenmukaisia yrityksen ja markkinoiden kanssa.
 
-    [![Ennustemallin Suorituskyky- ja Vaikuttavimmat tiedot -osat](./media/models.png)](./media/models.png)
+    [![Ennustemallin Suorituskyky- ja Vaikuttavimmat tiedot -osat.](./media/models.png)](./media/models.png)
 
 - Valitse **Suorituskyky**-osassa **Katso tiedot**, jos haluat lisätietoja luokasta ja muista kohdista. Seuraavassa kuvassa nähdään, että malli käyttää vähemmän tietoja kuin suositellaan. Siksi järjestelmä on luonut varoitussanoman.
 
-    [![Mallin suorituskykyyn liittyviä varoituksia](./media/details.png)](./media/details.png)
+    [![Mallin suorituskykyyn liittyviä varoituksia.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Lisätietoja
 
 Vaikka tarkkuus on hyvä aloituskohta mallin arvioinnissa, ja suorituskyvyn luokka tarjoaa näkökulman, AI Builder sisältää yksityiskohtaisempia mittareita arviointia varten. Jos haluat ladata tiedot, valitse **Suorituskyky**-osassa kolmen pisteen painike (**...**) **Käytä mallia** -painikkeen vieressä. Valitse sitten **Lataa yksityiskohtaiset mittarit**.
 
-[![Lataa yksityiskohtaiset mittarit -komento](./media/performance.png)](./media/performance.png)
+[![Lataa yksityiskohtaiset mittarit -komento.](./media/performance.png)](./media/performance.png)
 
 Seuraavassa kuvassa näkyy muoto, josta tiedot voidaan ladata.
 
-[![Ladattujen tietojen muoto](./media/data-format.png)](./media/data-format.png)
+[![Ladattujen tietojen muoto.](./media/data-format.png)](./media/data-format.png)
 
 Tulosten tarkempi analyysi on hyvä aloittaa tarkastelemalla sekaannusmatriisimittaria. Tässä on esimerkiksi tietoja, jotka näkyvät kyseiselle mittarille edellisessä kuvassa.
 

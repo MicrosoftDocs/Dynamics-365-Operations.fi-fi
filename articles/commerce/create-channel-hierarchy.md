@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951905"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352467"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Vähittäismyyntikanavan siirtymishierarkian luominen
 
@@ -49,7 +49,7 @@ Voit luoda kanavan siirtymishierarkian seuraavasti.
 
 Seuraavassa kuvassa näkyy esimerkki pääsolmusta.
 
-![Pääsolmun esimerkki](media/create-channel-hierarchy-1.png)
+![Pääsolmun esimerkki.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Siirtymisluokkasolmujen luominen
 
@@ -65,7 +65,7 @@ Seuraavien ohjeiden avulla voit luoda lisää siirtymisluokkasolmuja edustamaan 
 
 Seuraavassa kuvassa näkyy esimerkki valmiista kanavan siirtymishierarkiasta.
 
-![Kanavan hierarkian esimerkki](media/create-channel-hierarchy-2.png)
+![Kanavan hierarkian esimerkki.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Lisää tuotteita luokkasolmuihin
 
@@ -81,7 +81,7 @@ Voit lisätä tuotteita luokkasolmuihin noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy esimerkkisolmu, johon on lisätty tuotteita.
 
-![Luokkasolmuun lisätyt tuotteet](media/create-channel-hierarchy-3.png)
+![Luokkasolmuun lisätyt tuotteet.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Tuotemääriteryhmien lisääminen luokkasolmuihin
 
@@ -97,7 +97,7 @@ Voit lisätä tuotteen määriteryhmän luokkasolmuun seuraavien ohjeiden avulla
 
 Seuraavassa kuvassa näkyy esimerkkisolmu, johon on lisätty tuotemääriteryhmiä.
 
-![Tuotemääriteryhmiä solmussa](media/create-channel-hierarchy-4.png)
+![Tuotemääriteryhmiä solmussa.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

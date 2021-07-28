@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189941"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356924"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Täydennys ja otto-kanbanit
 
@@ -35,7 +35,7 @@ Otto-kanbaneja voi käyttää yhden nimikkeen kanbanin siirtämiseen varastojen 
 
 Seuraavassa skenaariossa on imuohjattu täydennysjärjestelmä, jossa imusignaali käynnistää tuotantoprosessin täydennysmateriaalin kanbanin luonnin. 
 
-[![Imusignaali käynnistää tuotantoprosessin täydennysmateriaalin kanbanin luonnin](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Imusignaali käynnistää tuotantoprosessin täydennysmateriaalin kanbanin luonnin.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Otto-kanban
 2.  Varastotyön kanbanin lähtö- ja poispanosijainti
@@ -72,7 +72,7 @@ Jos varastosijainnit ja tuotannon varastoinnin sijainnit eivät ole kaukana tois
 
 Seuraavassa skenaariossa otto-kanbanin siirtotehtävä on määritetty siirtymään kahden sijainnin välillä samassa varastossa. Otto-kanbanin siirtotehtävä on määritetty siten, että se valmistuu automaattisesti. 
 
-[![Siirtotehtävä valmistuu automaattisesti, kun kanban-keräystyö käsitellään](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Siirtotehtävä valmistuu automaattisesti, kun kanban-keräystyö käsitellään.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Raaka-aineiden ja tuotannon jaettu varasto
 2.  Raaka-aineiden varastosijainnit

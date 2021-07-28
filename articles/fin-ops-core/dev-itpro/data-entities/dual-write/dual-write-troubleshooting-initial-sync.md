@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941052"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350809"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Ongelmien vianmääritys synkronoinnin aikana
 
@@ -38,7 +38,7 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 
 Kun otat yhdistämismallit käyttöön, karttojen tilan on oltava **Käytössä**. Jos tila on **ei käynnissä**, alkuperäisen synkronoinnin aikana ilmeni virheitä. Voit tarkastella virheitä valitsemalla **kaksoiskirjoitus**-sivun **ensimmäiset synkronointitiedot**-välilehden.
 
-![Virhe Alkuperäisen synkronoinnin tiedot -välilehdessä](media/initial_sync_status.png)
+![Virhe Alkuperäisen synkronoinnin tiedot -välilehdessä.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Alkuperäistä synkronointia ei voi suorittaa loppuun: 400 virheellinen pyyntö
 
@@ -85,7 +85,7 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 1. Kirjautuminen Finance and Operations -sovellukseen.
 2. Poista **Azure Active Directory -sovellukset** -sivulla **DtAppID**-asiakasohjelma ja lisää se sitten uudelleen.
 
-![DtAppID-asiakasohjelma Azure AD -sovellusten luettelossa](media/aad_applications.png)
+![DtAppID-asiakasohjelma Azure AD -sovellusten luettelossa.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Itseensä viittaus- tai kehäviittausvirheet ensimmäisen synkronoinnin aikana
 
@@ -115,11 +115,11 @@ Jos toimittajataulun rivien **PrimaryContactPersonId**- ja **InvoiceVendorAccoun
     2. Käytä hakusanaa **primarycontactperson** ja etsi **PrimaryContactPersonId**-lähdesarake.
     3. Valitse ensin **Toiminnot** ja sitten **Poista**.
 
-        ![PrimaryContactPersonId-sarakkeen poistaminen](media/vend_selfref3.png)
+        ![PrimaryContactPersonId-sarakkeen poistaminen.](media/vend_selfref3.png)
 
     4. Poista **InvoiceVendorAccountNumber**-sarake samalla tavalla.
 
-        ![InvoiceVendorAccountNumber-sarakkeen poistaminen](media/vend-selfref4.png)
+        ![InvoiceVendorAccountNumber-sarakkeen poistaminen.](media/vend-selfref4.png)
 
     5. Tallenna yhdistämismäärityksen muutokset.
 
@@ -129,11 +129,11 @@ Jos toimittajataulun rivien **PrimaryContactPersonId**- ja **InvoiceVendorAccoun
     2. Valitse **Toimittajat V2**-taulu.
     3. Valitse toimintoruudussa **Vaihtoehdot** ja valitse sitten **Muutosten seuranta**.
 
-        ![Muutosten seuranta -vaihtoehdon valitseminen](media/selfref_options.png)
+        ![Muutosten seuranta -vaihtoehdon valitseminen.](media/selfref_options.png)
 
     4. Valitse **Poista muutosten seuranta käytöstä**.
 
-        ![Muutosten seurannan käytöstä poistamisen valinta](media/selfref_tracking.png)
+        ![Muutosten seurannan käytöstä poistamisen valinta.](media/selfref_tracking.png)
 
 3. Suorita **Toimittajat V2 (msdyn\_vendors)** -yhdistämismäärityksen ensimmäinen synkronointi. Ensimmäisen synkronoinnin pitäisi onnistua ilman virheitä.
 4. Suorita **CDS-yhteyshenkilöt V2 (yhteyshenkilöt)** -yhdistämismäärityksen ensimmäinen synkronointi. Tämä yhdistämismääritys on synkronoitava, jos haluat synkronoida toimittajataulun ensisijaisen yhteyshenkilösarakkeen, koska ensimmäinen synkronointi on tehtävä myös yhteyshenkilörivien osalta.
@@ -162,11 +162,11 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
     2. Käytä hakusanaa **contactperson** ja etsi **ContactPersonID** lähdesarake.
     3. Valitse ensin **Toiminnot** ja sitten **Poista**.
 
-        ![ContactPersonID-sarakkeen poistaminen](media/cust_selfref3.png)
+        ![ContactPersonID-sarakkeen poistaminen.](media/cust_selfref3.png)
 
     4. Poista **InvoiceAccount**-sarake samalla tavalla.
 
-        ![InvoiceAccount-sarakkeen poistaminen](media/cust_selfref4.png)
+        ![InvoiceAccount-sarakkeen poistaminen.](media/cust_selfref4.png)
 
     5. Tallenna yhdistämismäärityksen muutokset.
 
@@ -176,11 +176,11 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
     2. Valitse **Asiakkaat V3** -taulu.
     3. Valitse toimintoruudussa **Vaihtoehdot** ja valitse sitten **Muutosten seuranta**.
 
-        ![Muutosten seuranta -vaihtoehdon valitseminen](media/selfref_options.png)
+        ![Muutosten seuranta -vaihtoehdon valitseminen.](media/selfref_options.png)
 
     4. Valitse **Poista muutosten seuranta käytöstä**.
 
-        ![Muutosten seurannan käytöstä poistamisen valinta](media/selfref_tracking.png)
+        ![Muutosten seurannan käytöstä poistamisen valinta.](media/selfref_tracking.png)
 
 3. Suorita **Asiakkaat V3 (tilit)** -yhdistämismäärityksen ensimmäinen synkronointi. Ensimmäisen synkronoinnin pitäisi onnistua ilman virheitä.
 4. Suorita **CDS-yhteyshenkilöt V2 (yhteyshenkilöt)** -yhdistämismäärityksen ensimmäinen synkronointi.
@@ -196,7 +196,7 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
 
         Seuraavassa kuvassa on projekti, joka päivittää **CustomerAccount**- ja **ContactPersonId**-määritteet.
 
-        ![CustomerAccount- ja ContactPersonId-määritteet päivittävä tietojen integrointiprojekti](media/cust_selfref6.png)
+        ![CustomerAccount- ja ContactPersonId-määritteet päivittävä tietojen integrointiprojekti.](media/cust_selfref6.png)
 
     2. Lisää yrityksen ehdot suodattimen Dataversen puolelle, jotta vain suodatusehtoja vastaavat rivit päivitetään Finance and Operations -sovelluksessa. Lisää suodatin valitsemalla suodatinpainike. Voit sitten lisätä **Muokkaa kyselytä** -valintaikkunassa suodatinkyselyn, kuten **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -204,7 +204,7 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
 
         Jos suodatinkyselyä **\_msdyn\_company\_value** ei määritetä, kaikki rivit synkronoidaan.
 
-        ![Suodatinkyselyn lisääminen](media/cust_selfref7.png)
+        ![Suodatinkyselyn lisääminen.](media/cust_selfref7.png)
 
     Rivien ensimmäinen synkronointi on nyt valmis.
 

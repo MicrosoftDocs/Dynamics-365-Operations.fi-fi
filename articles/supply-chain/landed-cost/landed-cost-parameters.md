@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 3340ea07414eb92997ab4a9d6fa46cd075f8f9db
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ea0f60424ff1ee40a4231aa9cc129bb942fca519
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021004"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353561"
 ---
 # <a name="landed-cost-parameters-setup"></a>Aiheutuneen kustannuksen parametrien määritys
 
@@ -31,7 +31,7 @@ ms.locfileid: "6021004"
 
 Voit käyttää parametreja kohdassa **Aiheutunut kustannus \> Määritys \> Aiheutuneen kustannuksen parametrit** ja määrittää sitten kentät seuraavissa aliosissa kuvatulla tavalla.
 
-![Aiheutuneen kustannuksen parametrit -sivu](media/landed-cost-parameters.png "Aiheutuneen kustannuksen parametrit -sivu")
+![Aiheutuneen kustannuksen parametrit -sivu.](media/landed-cost-parameters.png "Aiheutuneen kustannuksen parametrit -sivu")
 
 ## <a name="general-tab"></a>Yleinen-välilehti
 

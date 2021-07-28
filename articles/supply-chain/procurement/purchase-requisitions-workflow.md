@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188170"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353465"
 ---
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
@@ -51,7 +51,7 @@ Seuraava esimerkki näyttää kuinka hankintapyyntö voi mennä työnkulun tarka
 -   **Hankintaedustaja** – käyttäjä, joka tekee hankintatarkistuksen ja voi hyväksyä asiakirjan.
 -   **Pyytäjän esimies** – käyttäjä, joka tekee johtotason tarkistuksen ja voi hyväksyä asiakirjan.
 
-![Ostoehdotustyönkulun tarkasteluprosessi](./media/purchreqworkflowoverview_submission.gif)  
+![Ostoehdotustyönkulun tarkasteluprosessi.](./media/purchreqworkflowoverview_submission.gif)  
 Tässä esimerkissä hankintapyyntöjen työnkulkuprosessi sisältää seuraavat vaiheet:
 
 1.  Valmistelija lähettää hankintapyynnön tarkistettavaksi.
@@ -74,7 +74,7 @@ Tässä esimerkissä, seuraavat roolit sisältyvät työnkulkuun:
 -   **Osaston esimies** – käyttäjä, joka tekee menojen tarkistuksen ja voi hyväksyä asiakirjan.
 -   **Ryhmän esimies** – käyttäjä, jolla on nimenkirjoitusoikeus tarkistuksessa ja joka voi hyväksyä asiakirjan.
 
-![Ostoehdotusrivin työnkulun tarkasteluprosessi](./media/purchreqlineworkflowoverview.gif)  
+![Ostoehdotusrivin työnkulun tarkasteluprosessi.](./media/purchreqlineworkflowoverview.gif)  
 Tässä esimerkissä hankintapyyntölinjojen työnkulkuprosessi sisältää seuraavat vaiheet:
 
 1.  Valmistelija lähettää hankintapyynnön tarkistettavaksi. Jokainen rivi reititetään tarkistajalle, joka on määrätty vastaanottajaksi työnkulkuprosessissa.

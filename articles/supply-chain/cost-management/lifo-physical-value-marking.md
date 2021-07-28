@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344541"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO-merkintä ja fyysinen arvo
 
@@ -53,7 +53,7 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 
 Uusi kustannushinnan käyttökeskiarvo (15,00 USD) on laskettu taloudellisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan LIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. 
 
-![LIFO - fyysistä arvoa ei sisällytetä](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO-päivämäärä ilman Sisällytä fyysinen arvo -asetusta.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -89,7 +89,7 @@ Tapahtuma 6a oikaistaan vastaanottotapahtuman 4b mukaiseksi. Järjestelmä ei t�
 
 Seuraavassa kuvassa havainnollistamme LIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus on käytössä. 
 
-![LIFO - fyysinen arvo sisällytetään](./media/lifowithincludephysicalvalue.gif) 
+![LIFO-päivämäärä ja Sisällytä fyysinen arvo.](./media/lifowithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -133,7 +133,7 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 
 Seuraavassa kuvassa havainnollistetaan LIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. 
 
-![LIFO merkinnän kanssa    ](./media/lifowithmarking.gif) 
+![LIFO merkinnän kanssa.](./media/lifowithmarking.gif) 
 
 **Kaavion selite**
 

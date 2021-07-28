@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794160"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352225"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -46,7 +46,7 @@ Sellaisenaan hintaryhmä on vain nimi, kuvaus ja mahdollisesti hinnoittelun prio
 
 Seuraavassa kuvassa esitellään hintaryhmien käyttöä. Huomaa, että tässä kuvassa hintaryhmä on kirjaimellisesti hinnoittelun ja alennuksen hallinnan keskellä. Vasemmalla puolella on ne kaupan yksiköt, joilla hintoja ja alennuksia hallitaan, kun taas todelliset hinta- ja alennustietueet ovat oikealla.
 
-![Hintaryhmät](./media/PriceGroups.png "Hintaryhmät")
+![Hintaryhmät.](./media/PriceGroups.png "Hintaryhmät")
 
 Kun luotat hintaryhmiä, älä käytä samaa hintaryhmää useille kaupan yksikkötyypeille. Jos teet niin, voi olla vaikea päätellä, miksi tiettyä hintaa tai alennusta käytetään tapahtumassa.
 

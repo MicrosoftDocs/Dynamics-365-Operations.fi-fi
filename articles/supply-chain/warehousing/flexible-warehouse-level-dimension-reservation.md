@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103043"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343771"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Joustava varastotason dimensioiden varauskäytäntö
 
@@ -58,7 +58,7 @@ Vaikka *Erä alla\[sijainti\]* -varaushierarkia palvelee yrityksen liiketoiminta
 
 Jotta haluttu erävarauksen joustavuus mahdollistetaan nimikkeille, joilla on *Erä alla\[sijainti\]* -varastonvaraushierarkia, varastopäällikköjen on valittava **Salli varaus kysyntätilauksessa** -valintaruutu **Eränumero** -tasolla sivulla **Varastonvaraushierarkiat**.
 
-![Varastovarausten hierarkian joustavoittaminen](media/Flexible-inventory-reservation-hierarchy.png)
+![Varastovarausten hierarkian joustavoittaminen.](media/Flexible-inventory-reservation-hierarchy.png)
 
 Kun hierarkian **Eränumero**-taso on valittuna, kaikki kyseisen tason yläpuolella olevat dimensiot aina **Sijainti**-tasolle valitaan automaattisesti. (Oletusarvoisesti kaikki **Sijainti**-tason yläpuolella olevat dimensiot on esivalittu.) Tämä toiminta perustuu logiikkaan, jossa myös kaikki eränumeron ja sijainnin välisen alueen dimensiot varataan automaattisesti, kun varaat tietyn eränumeron tilausrivillä.
 
@@ -145,7 +145,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
 
 6. Valitse **Erävaraus**-sivulla erän **B11** rivi ja sitten **Varaa rivi**. Sijaintien ja rekisterikilpien määritykselle ei ole omaa logiikkaansa automaattisen varauksen aikana. Voit syöttää määrän manuaalisesti **Varaus**-kenttään. Huomaa, että **Lähderiviin sidotut eränumerot**-pikavälilehdessä erän **B11** arvona on **Sidottu**.
 
-    ![Tietyn eränumeron sitominen myyntitilausriviin erävaraussivulla](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Tietyn eränumeron sitominen myyntitilausriviin erävaraussivulla.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Myyntitilausrivin määrä voidaan varata eri eristä. Myös samaa erää voidaan varata useiden sijaintien ja rekisterikilpien perusteella (jos rekisterikilvet on sallittu sijainneille).
@@ -154,7 +154,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
 
 7. Siirry kohtaan **Tuotetietojen hallinta** \> **Tuotteet** \> **Vapautetut tuotteet**. Valitse nimikkeesi ja sitten **Hallitse varastoa** \> **Näytä** \> **Tapahtumat**.
 
-    ![Tilaussidonnainen varaus varastotapahtumatyyppinä](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Tilaussidonnainen varaus varastotapahtumatyyppinä.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Tarkista nimikkeen varastotapahtumat, jotka liittyvät myyntitilausrivin varaukseen.
 
@@ -172,7 +172,7 @@ Esittelytietojen on oltava asennettuna tätä esimerkkiä varten, ja sinun on k�
     - Järjestelmä käyttää työn luomisessa työmalleja, mutten sijaintidirektiivejä. Kaikkia työmalleille määritettyjä vakioasetuksia, kuten keräilyrivien tai tietyn mittayksikön enimmäismäärää, käytetään sen määrittämisessä, milloin uusi työ luodaan. Keräilysijaintien tunnistamisen sijaintidirektiiveihin liittyviä sääntöjä ei kuitenkaan oteta huomioon, koska tilaussidonnaisessa varauksessa määritetään jo kaikki varastodimensiot. Nämä varastodimensiot sisältävät varastosäilytystason dimensiot. Siten työ perii kyseiset dimensiot ilman sijaintidirektiivien käyttöä.
     - Eränumeroa ei näytetä keräilyrivillä (kuten työrivillä, joka luodaan nimikkeelle, johon liittyy *Erä yllä\[sijainti\]*-varaushierarkia). Sen sijaan kohteesta-eränumero ja kaikki muut varastodimensiot näkyvät työrivin työvarastotapahtumassa, joka perustuu tähän liittyviin varastotapahtumiin.
 
-        ![Varaston varastotapahtuma töille, jotka perustuvat tilaussidonnaiseen varaukseen](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Varaston varastotapahtuma töille, jotka perustuvat tilaussidonnaiseen varaukseen.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - Kun työ on luotu, nimikkeen varastotapahtuma, jossa **Viite**-kentän arvona on **Tilaussidonnainen varaus**, poistetaan. Varastotapahtuma, jossa **Viite**-kentän arvona on **Työ**, sisältää nyt kaikkien määrän varastodimensioiden fyysisen varauksen.
 
@@ -207,7 +207,7 @@ Ennen kuin voit käyttää joustavaa rekisterikilpien varausta, kaksi ominaisuut
 
 Jos haluat ottaa käyttöön rekisterikilven varauksen tilauksessa, valitse **Salli varaus kysyntätilauksessa** -valintaruutu **Rekisterikilpi**-tasolla **Varaston varaushierarkiat** -sivulla hierarkialle, joka on liitetty tiettyyn nimikkeeseen.
 
-![Joustavan rekisterikilven varaushierarkian Varaston varaushierarkiat -sivu](media/Flexible-LP-reservation-hierarchy.png)
+![Joustavan rekisterikilven varaushierarkian Varaston varaushierarkiat -sivu.](media/Flexible-LP-reservation-hierarchy.png)
 
 Voit ottaa rekisterikilven varauksen käyttöön tilauksessa missä tahansa käyttöönoton vaiheessa. Tämä muutos ei vaikuta varauksiin tai avoimiin varastotöihin, jotka on luotu ennen muutosta. **Salli varaus kysyntätilauksessa** -valintaruutua ei kuitenkaan voi tyhjentää, jos avointen lähtevien varastotapahtumien varasto-ottotyyppi on *Tilauksessa*, *Varattu tilattu* tai *Varattu fyysinen* on olemassa vähintään yhteen kyseessä olevaan varaushierarkiaan liittyvän nimikkeen osalta.
 
@@ -227,7 +227,7 @@ Kun varaston toiminnot ovat käsitelleet tilaussidonnaista rekisterikilven varau
 
 Jos varaston työnimike sisältää rivejä, jotka vastaavat kokonaista lavaa ja joilla on rekisterikilpisidonnaisia määriä, voit optimoida keräysprosessin käyttämällä mobiililaitteen valikon vaihtoehtoa, jossa **Käsittele rekisterikilven mukaan** -vaihtoehdon arvoksi on määritetyt *Kyllä*. Varastotyöntekijä voi sitten skannata rekisterikilven ja viimeistellä keräilyn sen sijaan, että työn nimikkeet skannattaisiin yksitellen.
 
-![Mobiililaitteen valikon vaihtoehto, jossa Käsittele rekisterikilven mukaan -asetuksen arvoksi on määritetty Kyllä](media/Handle-by-LP-menu-item.png)
+![Mobiililaitteen valikon vaihtoehto, jossa Käsittele rekisterikilven mukaan -asetuksen arvoksi on määritetty Kyllä.](media/Handle-by-LP-menu-item.png)
 
 Koska **Käsittele rekisterikilven mukaan** -toiminto ei tue työtä, joka koskee useita lavoja, eri rekisterikilville on paras olla erilliset työnimikkeet. Jos haluat käyttää tätä menetelmää, lisää **Tilaussidonnaisen rekisterikilven tunnus** -kenttää työn otsikon katkaisuna **Työmalli**-sivulla.
 
@@ -249,7 +249,7 @@ Tässä skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Suppl
 1. Anna nimi **Nimi**-kenttään arvo (esimerkiksi *JoustavaRK*).
 1. Anna kuvaus **Kuvaus**-kenttään arvo (esim. *Joustavan RK:n varaus*).
 1. Valitse **Valittu**-luettelossa **Eränumero**, **Sarjanumero** ja **Omistaja**.
-1. Valitse **Poista**-painike ![taaksepäin osoittava nuoli](media/backward-button.png), jos haluat siirtää valitut tietueet **käytettävissä olevien** luetteloon.
+1. Valitse **Poista**-painike ![taaksepäin osoittava nuoli.](media/backward-button.png) siirtääksesi valitut tietueet **Käytettävissä**-luetteloon.
 1. Valitse **OK**.
 1. Valitse **Rekisterikilpi**-dimension tasolla valintaruutu **Salli varaus kysyntätilauksessa**. **Sijainti**-taso valitaan automaattisesti, etkä voi tyhjentää sen valintaruutua.
 1. Valitse **Tallenna**.

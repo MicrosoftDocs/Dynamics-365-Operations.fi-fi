@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049361"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344492"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen
 
@@ -25,7 +25,7 @@ Tässä aiheessa kuvataan, miten määritetään Warehouse Managementin mobiilis
 
 Seuraavissa kuvissa näytetään, miten vaihekuvakkeet ja otsikot näkyvät Warehouse Management -mobiilisovelluksessa.
 
-![Esimerkki vaihekuvakkeesta ja vaiheen otsikosta Warehouse Management -mobiilisovelluksessa](media/step-icon-example.png "Esimerkki vaihekuvakkeesta ja vaiheen otsikosta Warehouse Management -mobiilisovelluksessa")
+![Esimerkki vaihekuvakkeesta ja vaiheen otsikosta Warehouse Management -mobiilisovelluksessa.](media/step-icon-example.png "Esimerkki vaihekuvakkeesta ja vaiheen otsikosta Warehouse Management -mobiilisovelluksessa")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Tämän toiminnon ottaminen käyttöön järjestelmässä
 
@@ -350,13 +350,13 @@ Tässä esimerkissä kerrotaan, miten mukautetun tehtävän työnkulun vaihekuva
 
 Seuraavassa kuvassa näkyy tämä tehtävätyönkulku.
 
-![Tehtävän työnkulkukaavio](media/step-icons-example-task-flow.png "Tehtävän työnkulkukaavio")
+![Tehtävän työnkulkukaavio.](media/step-icons-example-task-flow.png "Tehtävän työnkulkukaavio")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Vaiheluokan luominen säilön syöttösivulle
 
 Säilön syöttösivun avulla työntekijä voi skannata tai määrittää säilön tunnuksen.
 
-![Säilön syöttösivu](media/step-icons-example-container-input.png "Säilön syöttösivu")
+![Säilön syöttösivu.](media/step-icons-example-container-input.png "Säilön syöttösivu")
 
 Säilön syöttö -sivulla syöttökentän ohjausobjektinimi on `ContainerId`. Koska tätä ohjausobjektin nimeä ei ole [vaihetunnusten luettelossa](#step-ids-classes), siihen perustuvaa vaihetta ei etsitä. Siksi sinun on luotava vaiheluokka, joka edustaa vaihetta. Esimerkki:
 
@@ -382,7 +382,7 @@ Jos haluat määrittää vaihekuvakkeen, aseta `defaultStepIcon` jollekin kuvake
 
 Painon syöttö -sivulla työntekijä voi määrittää painon.
 
-![Painon syöttösivu](media/step-icons-example-weight-input.png "Painon syöttösivu")
+![Painon syöttösivu.](media/step-icons-example-weight-input.png "Painon syöttösivu")
 
 Painon syöttösivulla syöttökentän ohjausobjektinimi on `Weight`, joka on [vaihetunnusten luettelossa](#step-ids-classes). Jos voit hyväksyä `WHSMobileAppStepWeight`-luokassa määritetyn vaihekuvakkeen ja otsikon, sinun ei tarvitse muuttaa mitään tätä vaihetta varten.
 
