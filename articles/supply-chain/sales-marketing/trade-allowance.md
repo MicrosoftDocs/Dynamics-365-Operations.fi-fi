@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 35ceb14d4d048959ae6a1740791bd4d57f33b34c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102803"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359530"
 ---
 # <a name="trade-allowance-management"></a>Myynninedistämispalkkioiden hallinta
 
@@ -59,7 +59,7 @@ Myynninedistämispalkkiosopimus on kannustinohjelma, jossa suoritusperusteista r
 
 Myynninedistämissopimuksiin kohdistetut varat kirjataan **Varat**-sivulla. Avaa **Varat**-sivu valitsemalla **Myynti ja markkinointi** \> **Myynninedistämispalkkiot** \> **Varat** \> **Varat**.
 
-![Varat-sivu](./media/trade-allowance-management-funds-page.png "Varat-sivu")
+![Varat-sivu.](./media/trade-allowance-management-funds-page.png "Varat-sivu")
 
 Voit tarkastella **Varat**-sivulla kampanjan varojen tietoja.
 
@@ -75,7 +75,7 @@ Kun rahoituksen määritys on tehty, kampanjasuunnittelun seuraava vaihe on kamp
 
 Myynninedistämisen palkkiosopimuksen kirjataan **Myynninedistämisen palkkiosopimukset** -sivulla. Avaa **Myynninedistämisen palkkiosopimukset** -sivu ja valitse **Myynti ja markkinointi** \> **Myynninedistämispalkkiot** \> **Myynninedistämisen palkkiosopimukset**.
 
-![Myynninedistämispalkkiosopimukset-sivu](./media/trade-allowance-management-agreements-page.png "Myynninedistämispalkkiosopimukset-sivu")
+![Myynninedistämispalkkiosopimukset-sivu.](./media/trade-allowance-management-agreements-page.png "Myynninedistämispalkkiosopimukset-sivu")
 
 #### <a name="header"></a>Otsikko
 
@@ -103,7 +103,7 @@ Siirry rivinäkymän valitsemalla seuraavaksi **Rivit**.
 
 Kun valitse myynninedistämistapahtuman ja **Summat**-välilehden, tapahtuman tiedot ovat näkyvissä.
 
-![Myynninedistämispalkkiosopimuksen rivit](./media/trade-allowance-management-agreements-lines.png "Myynninedistämispalkkiosopimuksen rivit")
+![Myynninedistämispalkkiosopimuksen rivit.](./media/trade-allowance-management-agreements-lines.png "Myynninedistämispalkkiosopimuksen rivit")
 
 **Myynninedistämispalkkiorivit**-osassa määritetään määrä- tai summa-alueet, jotka asiakkaan on määritysten mukaan saavutettava palkkion saadakseen.
 

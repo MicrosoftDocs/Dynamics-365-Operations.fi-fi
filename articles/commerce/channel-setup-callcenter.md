@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800660"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351197"
 ---
 # <a name="set-up-a-call-center-channel"></a>Puhelinkeskuskanavan määrittäminen
 
@@ -54,11 +54,11 @@ Voit luoda ja määrittää uuden puhelinkeskuskanavan seuraavasti.
 
 Seuraavassa kuvassa näytetään, miten uusi puhelinkeskuskanava luodaan.
 
-![Uusi puhelinkeskuskanava](media/channel-setup-callcenter-1.png)
+![Uusi puhelinkeskuskanava.](media/channel-setup-callcenter-1.png)
 
 Seuraavassa kuvassa on esimerkki puhelinkeskuskanavasta.
 
-![Esimerkki puhelinkeskuskanavasta](media/channel-setup-callcenter-2.png)
+![Esimerkki puhelinkeskuskanavasta.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Lisäkanavan määrittäminen
 
@@ -66,7 +66,7 @@ Puhelinkeskuskanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen
 
 Seuraavassa kuvassa on **Asetukset**-välilehden **Toimitustavat**- ja **Maksutavat**-asetusvaihtoehdot.
 
-![Puhelinkeskuskanavan lisämääritykset](media/channel-setup-callcenter-3.png)
+![Puhelinkeskuskanavan lisämääritykset.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
 
@@ -81,7 +81,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavasta](media/channel-setup-callcenter-payments.png)
+![Esimerkki maksutavoista.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
@@ -97,7 +97,7 @@ Voit muuttaa toimitustapaa tai lisätä sen ja liittää puhelinkeskuskanavaan s
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
 
-![Määritä toimitustavat](media/channel-setup-retail-7.png)
+![Määritä toimitustavat.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Kanavan käyttäjien määrittäminen
 

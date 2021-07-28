@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792336"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352129"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Tuotesuositusten lisääminen myyntipisteessä
 
@@ -39,7 +39,7 @@ Tuotteen suosituksia on käytössä seuraavissa myyntipisteskenaarioissa. Ne ova
 
     - Jos myyjä käy **Tuotteen tiedot** -sivulla tarkastellessaan aiempia tapahtumia eri kanavissa, suosituspalvelu ehdottaa muita nimikkeitä, jotka todennäköisesti voi ostaa yhdessä.
 
-    [![Tuotetiedot-sivun suositukset](./media/proddetails.png)](./media/proddetails.png)
+    [![Tuotetiedot-sivun suositukset.](./media/proddetails.png)](./media/proddetails.png)
 
 2. **Tapahtuma**-sivulla:
 
@@ -48,7 +48,7 @@ Tuotteen suosituksia on käytössä seuraavissa myyntipisteskenaarioissa. Ne ova
     > [!NOTE]
     > Jotta suositukset voitaisiin näyttää **Tapahtuma**-sivulla, vähittäismyyjän pitää päivittää näytön asettelu Dynamics 365 Commercessa. **Suositukset**-ohjausobjekti on pudotettava **Tapahtuma**-sivulle.
 
-    [![Tapahtumasivun suositukset](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Tapahtumasivun suositukset.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Commercen määrittäminen ottamaan käyttöön myyntipisteen suositukset
 

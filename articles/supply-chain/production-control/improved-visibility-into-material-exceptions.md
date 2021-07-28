@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: beacff21c6468e9c4b387a654e95f25572c0ede9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348365"
 ---
 # <a name="visibility-into-material-exceptions"></a>Materiaalipoikkeusten näkyvyys
 
@@ -37,7 +37,7 @@ Vapauttamaton tuoterakenne- tai reseptirivi on otettava huomioon, jos rivin raak
 
 Seuraavassa kuvassa sininen palkki vastaa tuotantotyötä, joka on aikataulutettu resurssissa. Työ on ajoitettu alkamaan 1. toukokuuta 2019 (1.5.2017). Tämä päivämäärä raaka-aineen päivämäärä. Toisin sanoen työlle tuoterakenne- tai reseptirivillä määritettyjen materiaalien on oltava valmiina kyseisenä päivänä. Kuvan toinen päivämäärä, 6. toukokuuta (5.6.2017) vastaa työtilan päivämäärää. Tässä esimerkissä raaka-aineen päivämäärä on aiempi kuin työtilan päivämäärä. Näin ollen päivämäärä, jolloin raaka-aineen kulutuksen oli tarkoitus alkaa, on ohitettu ja tuoterakenne- ja reseptirivit vastaavat huomion vaatimisen ehtoja.
 
-![Esimerkki tuotantotyöstä, jossa raaka-aineen päivämäärä on aiempi kuin työtilan päivämäärä](./media/improved-visibility.png)
+![Esimerkki tuotantotyöstä, jossa raaka-aineen päivämäärä on aiempi kuin työtilan päivämäärä.](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Vapauttamattomat materiaalirivit, jotka vaativat huomiota
 

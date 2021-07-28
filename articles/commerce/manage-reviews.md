@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794256"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352395"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hallitse luokituksia ja arvosteluja
 
@@ -45,7 +45,7 @@ Commerce-sivustonmuodostimessa voi lukea arvostelun seuraavasti.
 
 Lisäsuodattimien avulla voit rajoittaa arvosteluita kauden, arvioinnin, kanavan tai vaikutuksen tila (poistettu, vastattu tai raportoitu).
 
-![Valvonnan aloitussivu](media/rnr-moderation-home.png) 
+![Valvonnan aloitussivu.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Arvosteluun vastaaminen 
 
@@ -59,7 +59,7 @@ Commerce-sivustonmuodostimessa voi vastata arvostelun seuraavasti.
 1. Kirjoita vastauksen teksti ja nimi, jonka haluat näkyvän vastaajan kohdalla. Vastaajan oletusnimi on **valvoja**.
 1. Kun olet valmis, valitse **Kirjaa vastaus**.
 
-![Arvosteluun vastaaminen](media/rnr-moderation-response.png) 
+![Arvosteluun vastaaminen.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Arvostelun poistaminen 
 
@@ -82,7 +82,7 @@ Commerce-sivustonmuodostimessa voi etsiä asiakkaan tietoja ja poistaa niitä se
 1. Jos asiakkaalla on arvosteluaktiviteetteja (esimerkiksi arvostelun lähetyksiä, äänestyksiä toisen asiakkaan arvosteluista tai kommentteja toisen asiakkaan arvostelusta), näkyvissä on tuloksia. Jokaisen nimikkeen kohdalla on **Poista**-painike.
 1. Valitse jokaisen poistettavan nimikkeen kohdalla **Poista**. Kun sinulta kysytään vahvistusta, valitse **Kyllä**. 
     
-![Asiakkaan tietojen poistaminen](media/rnr-moderation-delete-reviews.png) 
+![Asiakkaan tietojen poistaminen.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Tietojen poistaminen kokonaan järjestelmästä voi kestää jopa seitsemän päivää. Valvojien tulee ilmoittaa asiakkaille tästä viivästyksestä.
@@ -106,25 +106,25 @@ Commerce-sivustonmuodostimessa voi tarkastella luokitus- ja arvostelutrendejä s
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Raportointi**.
 1. Lataa malli valitsemalla **PowerBI-malli**.
 
-    ![Power BI -mallin lataaminen](media/rnr-moderation-reports.png) 
+    ![Power BI -mallin lataaminen.](media/rnr-moderation-reports.png) 
 
 1. Avaa ladattu malli käyttämällä Power BI -sovellusta. Sulje näyttöön avautuva **Verkkosisällön käyttöoikeus** -valintaikkuna ja sulje sitten näyttöön tuleva Päivitys-virhesanoma.
 1. Siirry kohtaan **Aloitus**, valitse **Muokkaa kyselyitä** ja valitse sitten **Tietolähteen asetukset**.
 1. Valitse **Tietolähteen asetukset** -valintaikkunassa **Muuta lähdettä**.
 1. Syötä **URL-osoite**-kenttään edellisessä proseduurissa ladattujen arvostelujen tietojen polku (esimerkiksi **c:\\reviews\\ReviewsData.csv**).
 
-    ![URL-osoite-kenttä CSV-valintaikkunassa](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-osoite-kenttä CSV-valintaikkunassa.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Valitse **OK** ja valitse sitten **Käytä muutoksia**. Muutokset otetaan käyttöön tietolähteessä muutaman minuutin kuluessa.
 1. Valitse **Trendien taulukko**, jos haluat tarkastella luokitusten ja arvostelujen trendejä.
 
-    ![Luokitusten ja arvostelujen trendit](media/rnr-powerbi-dashboard-template.png) 
+    ![Luokitusten ja arvostelujen trendit.](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
 
-[Osallistu käyttääksesi luokituksia ja arvosteluja](opt-in-ratings-reviews.md)
+[Luokitusten ja arvostelujen käytön hyväksyminen](opt-in-ratings-reviews.md)
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 

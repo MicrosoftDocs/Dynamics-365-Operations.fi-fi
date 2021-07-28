@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306386"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358590"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -33,15 +33,15 @@ Jos liiketoiminnan ekosysteemi muodostuu Dynamics 365 -sovelluksista, kuten Fina
 
 Salesin tuotetietomalli.
 
-![CE-tuotetietomalli](media/dual-write-product-4.jpg)
+![CE-tuotetietomalli.](media/dual-write-product-4.jpg)
 
 Finance and Operations -sovellusten tuotetietomalli.
 
-![Tuotetietomalli Finance and Operationsissa](media/dual-write-products-5.jpg)
+![Tuotetietomalli Finance and Operationsissa.](media/dual-write-products-5.jpg)
 
 Nämä kaksi tuotetietomallia on integroitu Dataversessä seuraavan kuvan osoittamalla tavalla.
 
-![Dynamics 365 -sovellusten tuotetietomalli](media/dual-write-products-6.jpg)
+![Dynamics 365 -sovellusten tuotetietomalli.](media/dual-write-products-6.jpg)
 
 Tuotteiden kaksoiskirjoituksen taulukartat on suunniteltu vain yksisuuntaista tiedonkulkua varten, ja tieto kulkee Finance and Operations -sovelluksista Dataverseen lähes reaaliaikaisesti. Tuoteinfrastruktuuri on kuitenkin avoin, joten se voidaan tarvittaessa muuttaa kaksisuuntaiseksi. Vaikka voit mukauttaa sitä omalla vastuullasi, Microsoft ei suosittele tätä lähestymistapaa.
 
@@ -86,7 +86,7 @@ Koska tuote ilmaista varastointiyksikkönä, käsitteet erilliset tuotteet, pä�
 - **Päätuotteita** käytetään yleisinä tuotteina, joissa olevat säännöt ja määritelmä määrittävät liiketoimintaprosessien toiminnan. Näiden määritelmien perusteella voidaan luoda tuotevarianteiksi kutsuttuja erillisiä tuotteita. Esimerkiksi t-paita on päätuote, jonka dimensioita väri ja koko voivat olla. Julkaistavissa varianteissa voi olla erilaisia dimensioyhdistelmiä, kuten s-kokoinen sininen t-paita tai m-kokoinen vihreä t-paita. Integroinnissa tuotetauluun kullekin variantille luodaan yksi rivi. Tämä rivi sisältää varianttikohtaiset tiedot, kuten eri dimensiot. Tuotteen yleiset tiedot tallennetaan **msdyn\_sharedproductdetails**-tauluun. (Nämä yleiset tiedot on tallennettu päätuotteeseen.) Päätuotteen tiedot synkronoidaan Dataverseen heti, kun vapautettu päätuote luodaan (mutta ennen varianttien vapauttamista).
 - **Erillisillä tuotteilla** tarkoitetaan kaikkia tuotteiden alatyypin tuotteita ja kaikkia tuotevariantteja. 
 
-![Tuotteiden tietomalli](media/dual-write-product.png)
+![Tuotteiden tietomalli.](media/dual-write-product.png)
 
 Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon, jossa on sama valuutta. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. Jos ilmoitetulla valuutalla ei ole hinnastoa, hinnasto luodaan automaattisesti ja tuote määritetään siihen. 
 
@@ -112,7 +112,7 @@ Tuotteet synkronoidaan Finance and Operations -sovelluksesta Dataverseen. Tämä
 
 Tuotedimensiot ovat ominaisuuksia, joilla voidaan tuotevariantti tunnistetaan. Neljä tuotedimensiota (väri, koko, tyyli ja konfiguraatio) yhdistetään myös Dataverseen määrittämää tuotevariantteja. Seuraavassa kuvassa on Väri-tuotedimension tietomalli. Samaa mallia käytetään myös kokojen, tyylien ja konfiguraatioiden osalta. 
 
-![Tuotedimensioiden tietomalli](media/dual-write-product-two.png)
+![Tuotedimensioiden tietomalli.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikke
 
 Mittayksikkö ja sen muunnos ovat käytettävissä Dataversessa seuraavassa kuvassa olevan tietomallin mukaisesti.
 
-![Mittayksikön tietomalli](media/dual-write-product-three.png)
+![Mittayksikön tietomalli.](media/dual-write-product-three.png)
 
 Mittayksikkökäsite on integroitu Finance and Operations- ja muiden Dynamics 365 -sovellusten välillä. Kullekin Finance and Operations -sovelluksen yksikköluokalle luodaan Dynamics 365 -sovelluksessa yksikköryhmä, joka sisältää yksikköluokkaan kuuluvat yksiköt. Jokaiselle yksikköryhmälle luodaan myös oletusarvoinen perusyksikkö. 
 

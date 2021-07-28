@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 5b4899cad01a0ed2424dcc5d29e9fb5cca65a6a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944703"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351094"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Käytä sähköisen raportoinnin (ER) mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja useista sovellustaulukoista
 
@@ -69,7 +69,7 @@ Etukäteen on myös ladattava ja tallennettava seuraavat ER-mallimääritystiedo
 | **Sisällön kuvaus**  | **Tiedostonimi**   |
 |--------------------------|-----------------|
 | Esimerkeissä tietolähteenä käytettävä **ER-tietomalli**-konfiguraatiotiedosto.| [Model to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
-| Esimerkissä käytettävä **ER-mallimääritys**-konfiguraatiotiedosto, joka soveltaa ER-tietomallia esimerkkeihin. | [Mapping to learn JOIN data sources.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Esimerkissä käytettävä **ER-mallimääritys**-konfiguraatiotiedosto, joka soveltaa ER-tietomallia esimerkkeihin. | [Mapping to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/9/2/f/92f339ca-41fc-4f5e-b458-6983c957d3dd/MappingtolearnJOINdatasources.version.1.1.xml)|
 | Esimerkissä käytettävä **ER-muoto**-konfiguraatiotiedosto. Tässä tiedostossa kuvataan tiedot, joilla täytetään esimerkkien ER-muotokomponentti. | [Format to learn JOIN data sources.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktivoi konfiguraatiolähde
@@ -78,7 +78,7 @@ Etukäteen on myös ladattava ja tallennettava seuraavat ER-mallimääritystiedo
 2. Siirry kohtaan **Organisaation hallinto \> Työtilat \> Sähköinen raportointi**.
 3. Varmita **Lokalisointimääritykset**-sivun osassa **Määritysten tarjoajat**, että määritysten tarjoaja esimerkkiyritykselle [Litware, Inc.](http://www.litware.com) on luettelossa ja merkitty **Aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita menettelyn [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
 
-    ![Sähköisen raportoinnin työtila](./media/GER-JoinDS-ActiveProvider.PNG)
+    ![Sähköisen raportoinnin työtila.](./media/GER-JoinDS-ActiveProvider.PNG)
 
 ### <a name="import-sample-er-configuration-files"></a>ER-mallikonfiguraatiotiedostojen tuonti
 
@@ -101,7 +101,7 @@ Etukäteen on myös ladattava ja tallennettava seuraavat ER-mallimääritystiedo
 5. Laajenna konfiguraatioiden puurakenteessa nimike **Mallinnus JOIN-tietolähteiden selvittämiseksi** sekä muut mallinimikkeet (jos käytettävissä).
 6. Pane merkille puurakenteen ER-konfiguraatioiden luettelo sekä **Versiot**-pikavälilehden versiotiedot. Niitä käytetään malliraporttisi tietolähteenä.
 
-    ![Sähköisen raportoinnin konfiguraatiosivu](./media/GER-JoinDS-ConfigurationsTree.PNG)
+    ![Sähköisen raportoinnin konfiguraatiosivu.](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Suorituksen jäljitysasetusten käyttöönotto
 
@@ -109,7 +109,7 @@ Etukäteen on myös ladattava ja tallennettava seuraavat ER-mallimääritystiedo
 2. Valitse **Käyttäjän parametrit**.
 3. Määritä suorituksen jäljitysparametrit alla esitetyn näyttökuvan mukaisesti.
 
-    ![Sähköisen raportoinnin käyttäjän parametrien sivu](./media/GER-JoinDS-Parameters.PNG)
+    ![Sähköisen raportoinnin käyttäjän parametrien sivu.](./media/GER-JoinDS-Parameters.PNG)
 
     Kun nämä parametrit ovat käytössä, suorituksen jäljitys luodaan jokaiselle tuodun ER-muototiedoston suoritukselle. Luodun suorituksen jäljityksen tietojen avulla voit analysoida ER-muodon ja ER-mallin yhdistämismäärityksen komponenttien suorituksen. Lisätietoja sähköisen raportoinnin suorituksen jäljitystoiminnosta saat sivulta [Sähköisen raportoinnin muodon suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md).
 
@@ -128,13 +128,13 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
     3. Sitova **ConfigurationTitle: String = @.'>Relations'.Solution.Name** ilmaisee, että ER-konfiguraation nimi perustuu **Nimi**-kenttään taulukossa **ERSolutionTable**, joka vuorostaan perustuu monta yhteen -suhteeseen (**'>Relations'**) taulukkojen **ERSolutionVersionTable** ja **ERSolutionTable** välillä. Kulloisenkin sovellusesiintymän ER-konfiguraatioiden nimet esitetään **Konfiguraatiot**-sivun konfiguraatioiden puurakenteessa.
     4. Sitova **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** tarkoittaa, että kulloisenkin konfiguraation omistava konfiguraatiolähde perustuu **Nimi**-kenttään taulukossa **ERVendorTable**, joka vuorostaan perustuu monta yhteen -suhteeseen taulukkojen **ERSolutionTable** ja **ERVendorTable** välillä. ER-konfiguraatiolähteiden nimet esitetään konfiguraatioiden puurakenteessa **Konfiguraatiot**-sivun jokaisessa konfiguraation sivuotsikossa. Koko luettelo ER-konfiguraatiolähteistä esitetään taulukkosivulla **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraation lähde**.
 
-    ![ER-mallimäärityksen suunnittelun sivu, luettelo sidotun tietomallin nimikkeistä](./media/GER-JoinDS-Set1Review.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu, luettelo sidotun tietomallin nimikkeistä.](./media/GER-JoinDS-Set1Review.PNG)
 
 6. Laajenna tietomallinimike **Set1.Summary** konfiguraatioiden puurakenteessa:
 
     1. Sitova **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** ilmaisee, että nimike **Set1.Summary.VersionsNumber** on sidottu **GroupBy**-tyypin **VersionsSummary**-tietolähteen koostekenttään **VersionsNumber**, joka määritettiin palauttamaan **ERSolutionVersionTable**-taulukon tietuemäärä **Versiot**-tietolähteen kautta.
 
-    ![Ryhmittelyparametrien muokkaussivu](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Ryhmittelyparametrien muokkaussivu.](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Sulje sivu.
 
@@ -144,18 +144,18 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
 
 1. Laajenna konfiguraatioiden puurakenteessa tietomallinimikkeet **Set2** ja **Set2.Details**. Sitova **Details: Record list = Details** ilmaisee, että nimike **Set2.Details** on sidottu **Tiedot**-tietolähteeseen, joka on määritetty **Liitä**-tyypin tietolähteeksi.
 
-    ![ER-mallimäärityksen suunnittelun sivu, jossa näkyy laajennettu Set2:Record-tietomallin nimikkeet](./media/GER-JoinDS-Set2Review.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu, jossa näkyy laajennettu Set2:Record-tietomallin nimikkeet.](./media/GER-JoinDS-Set2Review.PNG)
 
     **Liitä**-tietolähde voidaan lisätä valitsemalla **Toiminnot\Liitä**-tietolähde:
 
-    ![ER-mallimäärityksen suunnittelun sivu, Liitä tietolähteen tyyppi](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu, Liitä tietolähteen tyyppi.](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Valitse **Tiedot**-tietolähde.
 3. Valitse **Muokkaa** **Tietolähteet**-ruudussa.
 4. Valitse **Muokkaa liitä**.
 5. Valitse **Näytä tiedot**.
 
-    ![JOIN-tietolähteen parametrisivu](./media/GER-JoinDS-JoinDSEditor.PNG)
+    ![JOIN-tietolähteen parametrisivu.](./media/GER-JoinDS-JoinDSEditor.PNG)
 
     Tätä sivua käytetään **Liitä**-tyypin pakollisen tietolähteen suunnittelemiseen. Suorituksen aikana tämä tietolähde luo yksittäisen yhteenliitetetyn tietueluettelon **Liitettyjen luettelo** -ruudukon tietolähteistä. Tietueiden liitos alkaa tietolähteestä **ConfigurationProviders**, joka on ruudukossa ensimmäisenä (**Tyyppi**-sarake on tyhjänä sen osalta). Muiden tietolähteiden tietueet liitetään sen jälkeen päätietolähteen tietueisiin kyseisen ruudukon mukaisessa järjestyksessä. Jokainen liitettävä tietolähde on määritettävä kohdetietolähteen alaiseksi tietolähteeksi (`1Versions`-tietolähde on tietolähteen `1Configurations` alainen; `1Configurations`-tietolähde on tietolähteen **ConfigurationProviders** alainen). Kunkin määritetyn tietolähteen on sisällettävä liitoksen ehdot. Tässä **Liitä**-tyypissä määritetään seuraavat liitokset:
 
@@ -178,7 +178,7 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
     - Sitova **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** ilmaisee, että nimike **Set2.Summary.VersionsNumber** on sidottu **GroupBy**-tyypin **DetailsSummary**-tietolähteen koostekenttään **VersionsNumber**, joka määritettiin palauttamaan **Liitä**-tyypin **Tiedot**-tietolähteen liitettyjen tietueiden määrä.
     - **Suorita**-sijaintiasetuksen arvoksi määritetään **Kysely**, mikä tarkoittaa, että tämä **GroupBy**-tietolähde suoritetaan suorituksen aikana tietokannan tasolla suoran SQL-kutsun muodossa. Tämä toiminnallisuus on mahdollista, koska perustietolähde **Tiedot**, jonka tyyppi on **Liitä**, on määritetty suoritettavaksi tietokannan tasolla.
 
-    ![GROUPBY-tietolähteen parametrisivu](./media/GER-JoinDS-Set2GroupByReview.PNG)
+    ![GROUPBY-tietolähteen parametrisivu.](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
 9. Sulje sivu.
 10. Valitse **Peruuta**.
@@ -196,21 +196,21 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
 
     Tämä muotoilu on suunnitelty täyttämään luotava tekstitiedosto uudella rivillä kutakin ER-konfiguraation versiota kohden (**Versio**-sekvenssiä). Kukin luotu rivi sisältää sen konfiguraatiolähteen nimen, joka omistaa kulloisenkin konfiguraation, konfiguraation nimen sekä konfiguraation version puolipistein eroteltuna. Luodun tiedoston viimeinen rivi sisältää havaittujen ER-konfiguraatioiden versioiden määrän (**Yhteenveto**-sekvenssi).
 
-    ![ER-muodon suunnittelutoiminnon sivu, Muoto-välilehti](./media/GER-JoinDS-FormatReview.PNG)
+    ![ER-muodon suunnittelutoiminnon sivu, Muoto-välilehti.](./media/GER-JoinDS-FormatReview.PNG)
 
     Tietolähteitä **Tiedot** ja **Yhteenveto** käytetään täyttämään konfiguraatioversion tiedot luodussa tiedostossa:
 
     - Tietomallin **Set1** tietoja käytetään, kun valitset **Ei** **Valitsija**-tietolähteen osalta käyttäjän valintaikkunasivulla ER-muodon suorittamisen aikana.
     - Tietomallin **Set2** tietoja käytetään, kun valitset **Kyllä** **Valitsija**-tietolähteen osalta käyttäjän valintaikkunasivulla ER-muodon suorittamisen aikana.
 
-    ![ER-muodon suunnittelutoiminnon sivu, Määritys-välilehti](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![ER-muodon suunnittelutoiminnon sivu, Määritys-välilehti.](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Valitse **Suorita**.
 10. Valitse valintaikkunasivulla **Ei** kentässä **Käytä JOIN-tietolähdettä**.
 11. Valitse **OK**.
 12. Tarkista luotu tiedosto.
 
-    ![Sähköisten raporttiparametrien muodostettu tiedosto, joka ei käytä JOIN-tietolähdettä](./media/GER-JoinDS-Set1Run.PNG)
+    ![Sähköisten raporttiparametrien muodostettu tiedosto, joka ei käytä JOIN-tietolähdettä.](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>ER-muodon suorituksen jäljityksen analysointi
 
@@ -224,7 +224,7 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
     - **ERSolutionTable**-taulukon kutsumäärä vastaa konfiguraatioversioiden tietuiden määrää **ERSolutionVersionTable**-taulukossa, ja tällaisten kutsujen määrän vähentämisellä voidaan parantaa suorituskykyä.
     - **ERVendorTable**-taulukon kutsumäärä on kaksinkertainen niihin konfiguraatioversioiden tietueiden määrään nähden, jotka havaittiin **ERSolutionVersionTable**-taulukossa, ja myös tällaisten kutsujen määrän vähentämisellä voidaan parantaa suorituskykyä.
 
-    ![ER-mallin yhdistämismäärityksen suunnitteluohjelman sivun suoritustilastot](./media/GER-JoinDS-Set1Run2.PNG)
+    ![ER-mallin yhdistämismäärityksen suunnitteluohjelman sivun suoritustilastot.](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Sulje sivu.
 
@@ -236,7 +236,7 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
 4. Valitse **OK**.
 5. Tarkista luotu tiedosto.
 
-    ![Sähköisten raporttiparametrien muodostettu tiedosto, joka käyttää JOIN-tietolähdettä](./media/GER-JoinDS-Set2Run.PNG)
+    ![Sähköisten raporttiparametrien muodostettu tiedosto, joka käyttää JOIN-tietolähdettä.](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> ER-muodon suorituksen jäljityksen analysointi
 
@@ -249,11 +249,11 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
 
     - Sovellustietokantaa on kutsuttu kerran, jotta saadaan tietueita taulukoista **ERVendorTable**, **ERSolutionTable** ja **ERSolutionVersionTable** pakollisia kenttiä varten.
 
-    ![ER-mallin yhdistämismäärityksen suunnitteluohjelman sivun suorituskyvyn tilastotiedot](./media/GER-JoinDS-Set2Run2.PNG)
+    ![ER-mallin yhdistämismäärityksen suunnitteluohjelman sivun suorituskyvyn tilastotiedot.](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Sovellustietokantaa on kutsuttu kerran konfiguraatioversioiden laskemiseksi käyttämällä liitoksia, jotka konfiguroitiin **Tiedot**-tietolähteessä.
 
-    ![ER-mallin yhdistämismäärityksen suunnitteluohjelman sivu, jossa näkyvät sovellustietokannan kutsut](./media/GER-JoinDS-Set2Run3.PNG)
+    ![ER-mallin yhdistämismäärityksen suunnitteluohjelman sivu, jossa näkyvät sovellustietokannan kutsut.](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Rajoitukset
 

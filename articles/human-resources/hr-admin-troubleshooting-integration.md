@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053392"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357286"
 ---
 # <a name="integration-with-finance-faq"></a>Financeen integroinnin usein kysytyt kysymykset
 
@@ -37,7 +37,7 @@ Nro Jos muokkaat Human Resourcesin sovelluskäyttäjää, Human Resourcesin ja D
 | --- | --- | --- | --- |
 | Dynamics 365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Talentin sovelluskäyttäjän oletusasetukset](media/DynamicsApplicationUser.png)
+![Talentin sovelluskäyttäjän oletusasetukset.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkronoidaanko kaikki tiedot vai vain tietyt tietoyksiköt?
 
@@ -57,7 +57,7 @@ Dataverse -ratkaisussa ei ole tällä hetkellä taloushallinnon dimensioita, jot
 
 Jos Financessa on sellaisia tietoja, joita ei ole Human Resourcesissa, voit linkittää järjestelmät yhteen Human Resourcesin **linkkien määrittämisen** avulla.
 
-![Määritä taloushallinnon dimensiot](media/MapFinancialDimensions.png)
+![Määritä taloushallinnon dimensiot.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Kun tuon työntekijöitä, ne päätyvät joskus Financen passiivisiin työntekijöihin. Miksi?
 
@@ -71,14 +71,14 @@ Tietojen synkronointi noudattaa suoritusaikataulua. Integrointi noutaa tietueen,
 
 Kyselyn lisäasetusten avulla voit suodattaa ja muokata lähdetietoja, ennen kuin ne siirretään kohteeseen.
 
-![Aktiivisten työntekijöiden tarkennettu kysely](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Aktiivisten työntekijöiden tarkennettu kysely.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Voinko määrittää, mitkä tietyn yksikön kentät lähetetään Financeen?
 
 Kenttiä voi lisätä integrointitehtävään tai poistaa niitä siitä. Kaikkia Dataverse-taulukossa olevia tietokenttiä ei täytetä Human Resourcesista.
 Lisätiedot voidaan täyttää Power Appsin kautta.
 
-![Lisää tai poista kenttiä integrointitehtävään tai -tehtävästä](media/SpecifyFieldsIncludedInIntegration.png)
+![Lisää tai poista kenttiä integrointitehtävään tai -tehtävästä.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Määritän integroinnin erätyönä, mutta Human Resourcesin yhteys kohdejärjestelmään katkesi. Miten voi lähettää saman muutosjoukon kohdejärjestelmään?
 
@@ -126,21 +126,21 @@ Jäljitä aika tietojen integrointiohjelman suoritushistoriasta ja etsi Financen
 
 1. Taltioi tehtäväindeksi tietojen integrointiohjelmasta (tässä esimerkissä se on 9).
 
-    ![Tehtäväindeksin taltiointi tietojen integrointiohjelmasta](media/CaptureTaskIndex.png)
+    ![Tehtäväindeksin taltiointi tietojen integrointiohjelmasta.](media/CaptureTaskIndex.png)
 
 2. Jäljitä projektin suoritusaika.
 
-    ![Projektin suoritusajan jäljitys](media/CaptureTimeOfExecution.png)
+    ![Projektin suoritusajan jäljitys.](media/CaptureTimeOfExecution.png)
 
 3. Etsi Financesta indeksi -1. Tässä esimerkissä projekti, jonka jälkiliite on 8, ja projekti, jonka indeksin suoritusaika on 0, vastaa vaiheen 2 suoritusaikaa.
 
-    ![Indeksin tunnistaminen](media/IdentifyIndex.png)
+    ![Indeksin tunnistaminen.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Kun olen integroinut Human Resourcesin ja Financen, en näe Human Resources -tietojani Financessa. Mitä teen seuraavaksi?
 
 Integrointi Financeen tapahtuu kahdessa vaiheessa. Tarkista ensin, että Human Resourcesin tiedot on päivitetty ja käytettävissä Dataversessä. Tämä synkronointi tapahtuu lähes reaaliaikaisesti, ja se voidaan tarkistaa Power Appsissa katsomalla tietotaulukoiden tietoja.
 
-![Tiedot Dataversessä](media/DataInCDS.png)
+![Tiedot Dataversessä.](media/DataInCDS.png)
 
 Jos tiedot eivät näy odotetusti Dataversessä, tarkista, että yksikön integrointia tuetaan. Jos Dataverseen halutaan sisällyttää lisätietoja, se edellyttää muutosta Microsoftin puolella.
 
@@ -165,7 +165,7 @@ Varmista myös, että valitset liitetylle yhteysjoukolle oikeat yritykset.
 
 Päivitä Financen tietoyksiköt valitsemalla **Tietojen hallinta \> Kehikkoparametrit \> Yksikön asetukset \> Päivitä yksikköluettelo.** Tämä voi kestää muutaman minuutin, jonka jälkeen yhdistämismääritysten pitäisi olla näkyvissä. Tämä ongelma ilmenee uusia projekteja luotaessa.
 
-![Puuttuva kenttämääritys](media/MissingFieldMapping.png)
+![Puuttuva kenttämääritys.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

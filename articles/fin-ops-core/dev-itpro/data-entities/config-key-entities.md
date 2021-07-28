@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: bdb90f8d629a026a84f8c65e7e95b589169a3e4d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a9e5204c2bb9c0a58b2e4e223a4a3d2d09d53659
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752333"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356260"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurointiavaimet ja tietoyksiköt
 
@@ -52,24 +52,24 @@ Seuraavassa taulussa on yhteenveto tavoista, joilla objektin taustalla olevien e
 ### <a name="entity-list-refresh"></a>Yksikköluettelon päivitys
 Kun yksikköluettelo päivitetään, tietojen hallintakehys muodostaa konfigurointiavaimen metatiedot suorituksenaikaista käyttöä varten. Nämä metatiedot muodostetaan edellä kuvan logiikan mukaisesti. Kannattaa ehdottomasti odottaa yksikköluettelon päivittymistä ennen tietojen hallintakehysten töiden ja yksiköiden käyttämistä. Jos et odota, konfigurointiavaimen metatiedot eivät ehkä ole ajan tasalla, mikä voi aiheuttaa odottamattomia tuloksia. Kun yksikköluetteloa päivitetään, yksikköluettelosivulla on seuraava sanoma.
 
-![Yksikköluettelon päivitys](./media/Entity_refresh_list.png)
+![Yksikköluettelon päivitys.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Tietoyksikköluettelon sivu
 Yksiköiden konfigurointiavainasetukset näkyvät Tietojenhallinnan työtilan tietoyksikköluettelon sivulla. Voit aloittaa tältä sivulta sen selvittämisen, miten konfigurointiavaimet vaikuttavat tietoyksikköön.
 
 Nämä tiedot voidaan näyttää yksikön päivityksen aikana muodostettujen metatietojen avulla. Konfigurointiavaimen sarakkeessa on tietoyksikköön liitetyn konfigurointiavaimen nimi. Jos sarake on tyhjä, tietoyksikköön ei ole liitetty konfigurointiavainta. Konfigurointiavaimen tilasarakkeessa näytetään konfigurointiavaimen tila. Jos siinä on valintamerkki, avain on otettu käyttöön Jos se on tyhjä, avain on joko poistettu käytetty tai yhtään avainta ei ole liitetty.
 
-![Yksikköluettelon sivu](./media/Data_entity_list_page.png)
+![Yksikköluettelon sivu.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Kohdekentät
 Seuraavaksi poraudutaan tietoyksikköön tarkastelemaan, miten konfigurointiavaimet vaikuttavat tauluihin ja kenttiin. Tietoyksikön kohdekenttälomake sisältää konfigurointiavaimen ja tietoyksikön liittyviin tauluihin ja kenttiin liittyvät avaimen tilatiedot. Jos itse tietoyksikön konfigurointiavain on poistettu käytöstä, avautuva varoitussanoma ilmoittaa, että tämän yksikön kohdekenttälomakkeen taulut ja kentät eivät lainkaan käytettävissä riippumatta siitä, mikä niiden konfigurointiavaimen tila on.
 
-![Kohdekentät](./media/Target_fields_1.png)
+![Kohdekentät.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Aliyksiköt 
 Tietyissä yksiköissä on muita yksikköjä tietolähteinä tai ne ovat yhdistelmätietoyksiköitä: näiden yksiköiden konfigurointiavaimen tiedot näytetään aliyksiköiden lomakkeessa. Käytä tätä lomaketta samoin kuin edellä kuvattua yksikköluettelosivua. Aliyksikön kohdekenttälomake toimii myös edellä kuvatulla tavalla.
 
-![Kohdekentät](./media/Target_fields_2.png)
+![Kohdekentät.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Tietoyksiköiden käyttäminen
 Kun tiedät, miten konfigurointiavaimet mahdollisesti vaikuttavat tietoyksiköihin, joita haluat käyttää, voit nyt siirtyä käyttämään tietoyksiköitä lisäämällä tietoprojekteihin. 
@@ -91,7 +91,7 @@ Suoritustenaikaiset oikeellisuustarkistukset suoritetaan seuraavissa käyttötil
 ### <a name="managing-configuration-key-changes"></a>Konfigurointiavainten muutosten hallinta
 Aina kun päivität konfigurointiavaimet yksikkö-, taulu- tai kenttätasolla, tietojen hallintakehyksen yksikköluettelo on päivitettävä. Tämä prosessi varmistaa, että kehys poimii kaikki uusimmat konfigurointiavainasetukset. Seuraava sanoma näkyy yksikköluettelosivulla siihen saakka, että yksikköluettelo päivitetään. Päivitetyt konfigurointiavainmuutokset tulevat voimaan heti, kun yksikköluettelo on päivitetty. Aiemmin luodut tietoprojektit ja työt kannattaa tarkistaa ja varmistaa, että ne toimivat odotetusti sen jälkeen, kun konfigurointiavainmuutokset on otettu käyttöön.
 
-![Kohdekentät](./media/Target_fields_3.png)
+![Kohdekentät.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

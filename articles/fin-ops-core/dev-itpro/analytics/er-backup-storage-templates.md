@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b41760bb58cbef66146b3f1af6f30c6a35a18727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 305576b79fdb11f29de9207662de0fe4b4dd6eb5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743844"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351839"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-mallien varmuuskopion tallennustila
 
@@ -65,19 +65,19 @@ Määritä **Suorita rikkoutuneiden mallien palautusmenettely automaattisesi er�
 > [!NOTE]
 > Tämä parametri määritetään sovelluksen käyttäjänä ja se on koskee sitä yritystä, johon on kirjauduttu.
 
-![Sähköisen raportoinnin konfiguroinnit -sivu](./media/GER-BackupTemplates-1.png)
+![Sähköisen raportoinnin konfiguroinnit -sivu.](./media/GER-BackupTemplates-1.png)
 
 Seuraavassa kuvassa on esimerkki sanomasta, joka avautuu, kun **Suorita rikkoutuneiden mallien palautusmenettely automaattisesi eränä** -parametrin arvoksi on määritetty **Käytössä**.
 
-![Toimittajan maksukirjauskansio -sivu](./media/GER-BackupTemplates-2.png)
+![Toimittajan maksukirjauskansio -sivu.](./media/GER-BackupTemplates-2.png)
 
 Seuraavassa kuvassa on **Erätyö**-sivun **Palauta rikkoutuneet mallit sisäisestä tietokannan varmuuskopiosta** -eräprosessi.
 
-![Erätyö-sivu](./media/GER-BackupTemplates-3.png)
+![Erätyö-sivu.](./media/GER-BackupTemplates-3.png)
 
 Suoritetun **Palauta rikkoutuneet mallit sisäisestä tietokannan varmuuskopiosta** -eräprosessin suoritusloki sisältää tietoja malleista, jotka on palautettu varmuuskopion tallennussijainnista ensisijaiseen tallennussijaintiin.
 
-![Erätyöhistoria-sivu](./media/GER-BackupTemplates-4.png)
+![Erätyöhistoria-sivu.](./media/GER-BackupTemplates-4.png)
 
 ER-muodon määrityksessä olevien mallien automaattisen varmuuskopioiden luontiprosessi on oletusarvoisesti otettu käyttöön. Voit lopettaa mallin varmuuskopioinnin määrittämällä **Sähköisen raportoinnin parametrit** -sivun **Liitteet**-välilehdessä **Lopeta mallien varmuuskopiointi** -asetukseksi **Kyllä**. Voit avata sivun **Sähköinen raportointi** -työtilassa.
 
@@ -85,7 +85,7 @@ Jos määrität **Lopeta mallien varmuuskopiointi** -asetukseksi **Kyllä** etk�
 
 Jos päivität ympäristön Finance and Operationsin versioon 10.0.5 (lokakuu 2019) ja haluat siirtyä uuteen suoritettavia ER-muodon määrityksiä sisältävään ympäristöön, valitse **Täytä varmuuskopioinnin tallennustila** **Sähköisen raportoinnin parametrit** -sivulla ennen kuin siirto tehdään. Tämä painike aloittaa prosessin, jolla kaikki käytettävissä olevat mallit varmuuskopioidaan, jotta ne voidaan tallentaa mallien ER-varmuuskopioinnin tallennussijaintiin.
 
-![Sähköisen raportoinnin parametrit -sivu](./media/GER-BackupTemplates-5.png)
+![Sähköisen raportoinnin parametrit -sivu.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuaalinen palautus
 

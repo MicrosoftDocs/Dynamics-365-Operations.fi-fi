@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023203"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358167"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Verokomponenttien määrittäminen TDS-verotyypille
 
@@ -33,7 +33,7 @@ Määritä TDS-komponentit seuraavasti.
 
 1. Siirry kohtaan **Vero \> Asetukset \> Ennakonpidätys \> Ennakonpidätyksen komponentit**.
 
-    [![Ennakonpidätyksen komponentit -sivu](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Ennakonpidätyksen komponentit -sivu.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. Valitse **Verotyyppi**-kentässä **TDS**, haluat määrittää ennakonpidätyksen komponentit TDS-verotyypille.
 3. Valitse toimintoruudussa **Uusi** ja luo rivi.
@@ -50,7 +50,7 @@ Määritä TDS-komponentit seuraavasti.
 
     Jos poikkeusrajan summa on esimerkiksi 5 000, TDS lasketaan tietylle laskuriville, jos laskurivin summa ylittää 5 000 (toisin sanoen on 5 001 tai suurempi).
 
-    [![Raja-arvo-sivu](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Raja-arvo-sivu.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Poikkeusraja-arvon summan on oltava pienempi tai yhtä suuri kuin raja-arvon summa.
@@ -66,6 +66,6 @@ Määritä TDS-komponentit seuraavasti.
 
 14. Valitse **OK**, kun haluat kopioida ja luoda TDS-komponentit toiselle TDS-komponenttiryhmälle **Ennakonpidätyksen komponentit** -sivulla.
 
-    [![Ennakonpidätyksen komponenttien kopioiminen -valintaikkuna](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Ennakonpidätyksen komponenttien kopioiminen -valintaikkuna.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Sulje sivu.

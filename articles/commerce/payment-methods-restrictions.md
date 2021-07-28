@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804524"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352345"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Maksutapojen rajoittaminen kuitittomille palautuksille
 
@@ -38,7 +38,7 @@ Maksutapojen määrittämistä varten on suoritettava seuraavat tehtävät.
 3. Määritä myymälän maksutavat. Liitä maksutavat kuhunkin myymälään ja määritä sitten myymäläkohtaiset asetukset kullekin myymälän maksutavalle.
 4. Aseta liikkeille korttimaksutavat. Suorita korttimaksujen määritys loppuun kaikille korttimaksutavoille, jotka hyväksyt liikkeessä.
 
-![Myymälän asetukset](media/NoReceiptReturns1.png "Retail POS -asetukset") 
+![Myymälän asetukset.](media/NoReceiptReturns1.png "Retail POS -asetukset") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Maksutapojen rajoittaminen kuitittomille palautuksille
@@ -49,12 +49,12 @@ Vaihtokytkimen oletusarvo on **Ei**, mikä varmistaa, että maksutapa sallitaan 
 
 Kun **Rajoitus kuitittomille palautuksille** -asetukseksi on valittu **Kyllä**, valittua maksutapaa ei sallita palautuksille. 
 
-![Myymälän maksutapa](media/NoReceiptReturns3.png "Vähittäismyymälän maksutapa") 
+![Myymälän maksutapa.](media/NoReceiptReturns3.png "Vähittäismyymälän maksutapa") 
 
 > [!NOTE]
 > Kun kassa valitsee kuitittomien palautusten rajoitetun maksutavan, avautuva sanoma pyytää varmistamaan hyväksytyt maksutavat.
 
-![Hyväksyttävät maksutavat](media/NoReceiptReturns4.png "Hyväksyttävät maksutavat") 
+![Hyväksyttävät maksutavat.](media/NoReceiptReturns4.png "Hyväksyttävät maksutavat") 
 
 Jos tapahtuma on sekä kuitillinen että kuititon palautus, rajoitusehtojen noudattamista ei pakoteta, koska tapahtuma palautetaan työnkulkuun kuitillisena. 
 

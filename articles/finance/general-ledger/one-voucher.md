@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897765"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356700"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
@@ -33,18 +33,18 @@ Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjaus
 
 - Määritä kirjauskansion nimi (**Kirjanpito** \> **Kirjauskansion asetukset** \> **Kirjauskansioiden nimet**) siten, että **Uusi tosite** -kentän valintana on **Vain yksi tositenumero**. Jokainen kirjauskansioon lisätty rivi sisällytetään nyt samaan tositteeseen. Tämän vuoksi tosite voidaan kirjata usean rivin tositteena, saman rivin tilinä/vastatilinä tai niiden yhdistelmänä.
 
-    [![Yksi rivi](./media/same-line.png)](./media/same-line.png)
+    [![Yksi rivi.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Yhden tositteen määritelmä **ei** koske tapauksia, joissa kirjauskansion nimet on määritetty **vain yhdeksi tositenumeroksi** mutta käyttäjä kirjaa sitten tositteen, joka sisältää vain kirjanpitotilityyppejä. Tässä ohjeaiheessa yksi tosite tarkoittaa, että yhdessä tositteessa on enemmän kuin yksi toimittaja, asiakas, pankki, käyttöomaisuuserä tai projekti.
 
 - Syötä usean rivin tosite, jossa ei ole vastatiliä.
 
-    [![Useita rivejä sisältävä tosite](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Useita rivejä sisältävä tosite.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Syötä tosite, jossa sekä tili että vastatili sisältävät alareskontran tilityypin, kuten **toimittaja**/**toimittaja**, **asiakas**/**asiakas**, **toimittaja**/**asiakas** tai **pankki**/**pankki**.
 
-    [![Alareskontran tosite](./media/subledger.png)](./media/subledger.png)
+    [![Alareskontran tosite.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Yhden tositteen toiminnallisuuden ongelmat
 
@@ -52,11 +52,11 @@ Yhden tositteen toiminto aiheuttaa ongelmia esimerkiksi tilityksen, arvonlisäve
 
 Voit esimerkiksi kirjata seuraavan useita rivejä sisältävän tositteen.
 
-[![Esimerkki monirivitositteesta](./media/example.png)](./media/example.png)
+[![Esimerkki monirivitositteesta.](./media/example.png)](./media/example.png)
 
 Voit sitten luoda **Toimittajakohtaiset kulut** -raportin **Taloushallinnon tiedot** -työtilassa. Tässä raportissa kulutilin saldot ryhmitetään toimittajaryhmän ja sitten toimittajan mukaan. Raporttia luotaessa järjestelmä ei voi määrittää, mitkä toimittajaryhmät tai toimittajat aiheuttivat kulun 250,00. Koska tapahtuman tiedot puuttuvat, järjestelmä olettaa, että koko kulu 250,00 on tositteen ensimmäisen toimittajan aiheuttama. Tämän vuoksi Päätilin 600120 saldoon sisältyvä kulu 250,00 näytetään kyseisen toimittajaryhmän tai toimittajan kohdalla. On kuitenkin todennäköistä, että tositteen ensimmäinen toimittaja ei ole oikea toimittaja. Tämän vuoksi raportti on todennäköisesti virheellinen.
 
-[![Toimittajakohtaiset kulut -raportti](./media/expenses.png)](./media/expenses.png)
+[![Toimittajakohtaiset kulut -raportti.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Yksi tosite jatkossa
 

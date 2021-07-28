@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21481
+ms.custom:
+- "21481"
+- intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 62b4285f2f5ad93e0a888dd47d22ab5f2caa184c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897985"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355553"
 ---
 # <a name="fixed-assets-home-page"></a>Käyttöomaisuuden aloitussivu
 
@@ -30,7 +32,7 @@ Käyttöomaisuus on arvonimike, joka ovat henkilön tai organisaation omistukses
 
 Voit määrittää ja syöttää käyttöomaisuuden hankintatiedot ja hallita omaisuutta tekemällä käyttöomaisuuden poistoja ja määrittämällä aktivointirajan poiston määrittämistä varten. Voit laskea käyttöomaisuuserille oikaisut ja myös poistaa niitä. Jos käytät kirjanpitoa käyttöomaisuuserien yhteydessä, voit tarkastella kaiken käyttöomaisuuden nykyistä arvoa. Käyttöomaisuuserien käsittelytavan on vastattava sekä kansainvälisiä kirjanpidon säännöksiä että kunkin maan tai alueen kirjanpitoon liittyvää lainsäädäntöä. Vaatimuksiin saattaa sisältyä sääntöjä, jotka koskevat käyttöomaisuuserien hankinta- ja poistotapahtumien kirjaamista, poistoja, elinkaarta, korotuksia ja alennuksia. Monet näistä standardeista ja säännöistä sisältyvät käyttöomaisuuserien toiminnallisuuteen.
 
-[![Liiketoimintaprosessi](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Liiketoimintaprosessi.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 

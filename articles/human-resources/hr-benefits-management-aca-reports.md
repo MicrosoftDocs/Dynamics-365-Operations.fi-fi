@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b8a83982ad36abfe9032cae50fe4f09339985dc8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052261"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353659"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>ACA-raporttien luominen etujen hallinnassa
 
@@ -48,11 +48,11 @@ Affordable Care -kattavuusryhmien avulla voit hallita näitä tietoja useille ty
 
 1. Valitse **Etujen hallinta** -työtilasta **Affordable Care -kattavuusryhmä**.
 
-    ![Affordable Care -kattavuusryhmän valinta](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Affordable Care -kattavuusryhmän valinta.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Valitse **Uusi**, jos haluat luoda uuden Affordable Care -kattavuusryhmän tai muuta aiemmin luotua ryhmää valitsemalla **Muokkaa**.
 
-    ![Valitse Uusi tai Muokkaa](./media/hr-benefits-management-aca-new.png)
+    ![Valitse Uusi tai Muokkaa.](./media/hr-benefits-management-aca-new.png)
 
 3. Määritä seuraavat kentät.
 
@@ -67,7 +67,7 @@ Affordable Care -kattavuusryhmien avulla voit hallita näitä tietoja useille ty
     | Ryhmän ensimmäinen voimassaolopvm | Tietueen ensimmäinen voimassaolopäivä. |
     | Ryhmän viimeinen voimassaolopvm | Tietueen viimeinen voimassaolopäivä. Jos erääntymispäivää ei ole, valitse **Ei koskaan**. |
 
-    ![Kattavuusryhmän luominen](./media/hr-benefits-management-aca-new-group.png)
+    ![Kattavuusryhmän luominen.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Valitse **Tallenna**.
 
@@ -77,11 +77,11 @@ Affordable Care -kattavuusryhmien avulla voit hallita näitä tietoja useille ty
 2. Valitse ryhmä, johon työntekijät määritetään.
 3. Valitse **Joukkomääritys**.
 
-    ![Valitse Joukkomääritys](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Valitse Joukkomääritys.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Valitse työntekijät luettelosta ja valitse sitten **Määritä**.
 
-    ![Määritetään työntekijät ryhmään](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Valittujen työntekijöiden määrittäminen ryhmään.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Kattavuusvaihtoehtojen useiden versioiden ylläpitäminen
 
@@ -111,12 +111,12 @@ Jos haluat määrittää poikkeuksia Affordable Care -kattavuusryhmän arvoille,
 2. Valitse luettelosta työntekijä.
 3. Valitse **Työsuhde**-välilehden **Lisätiedot**-osasta **Affordable Care -kattavuus**.
 
-    ![Yhden työntekijän asetusten muuttaminen](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Yhden työntekijän asetusten muuttaminen.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Valitse **Muokkaa**.
 5. Valitse jokaiselle muutosta edellyttävälle kuukaudelle **Ohita oletus** -valintaruutu ja muuta sitten muita arvoja tarpeen mukaan.
 
-    ![Oletusarvojen ohitus](./media/hr-benefits-management-aca-override-default.png)
+    ![Oletusarvojen ohitus.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Valitse **Tallenna**.
 
@@ -131,7 +131,7 @@ Seuraavia ohjeita noudattamalla voit määrittää, onko etusuunnitelma raportoi
 3. Valitse **Muokkaa**.
 4. Määritä **Raportoidaan Affordable Care Act -lain mukaan** -arvoksi **Kyllä**.
 
-    ![Terveydenhuollon kattavuuden raportointi](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Terveydenhuollon kattavuuden raportointi.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Valitse **Tallenna**.
 
@@ -147,23 +147,23 @@ Voit luoda ACA:n 1095-B- ja 1095-C-lomakkeita ja jakaa ne työntekijöille. Voit
     > [!NOTE]
     > Jos tulostat 1095-C-lomakkeet yli 500 työntekijälle, PDF-tiedostoja on useita. **Tiedostonhallinnan parametrit** -sivun **Tiedoston enimmäiskoko megatavuina** -kentän arvo on suositeltavaa suurentaa arvoksi **150**. (Voit avata sivun nopeasti siirtymispalkin hakukentän avulla.)
     >
-    > ![Tiedoston enimmäiskoon muuttaminen](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Tiedoston enimmäiskoon muuttaminen.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Voit tarkistaa raporttien tilan ja tarkastella niitä avaamalla **Sähköisen raportoinnin työt** -sivun siirtymispalkin hakukentän avulla.
 
-    ![Sähköisen raportoinnin työt -sivun hakeminen](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Sähköisen raportoinnin työt -sivun hakeminen.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Valitse näytettävä raportti ja valitse sitten **Näytä tiedostot**.
 
-    ![Näytetään tiedostot](./media/hr-benefits-management-aca-show-files.png)
+    ![Tiedostojen näyttäminen.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Valitse **Avaa**.
 
-    ![Tiedoston avaaminen](./media/hr-benefits-management-aca-open-file.png)
+    ![Tiedoston avaaminen.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Avaa zip-tiedosto ja valitse raportti selaimen ikkunan alaosassa näkyvästä ilmoitusrivistä. Voit tarkastella tai tulostaa PDF-tiedoston.
 
-    ![Esimerkki 1095-C-lomakkeesta](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Esimerkki 1095-C-lomakkeesta.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>ACA-kattavuustietojen tarkasteleminen
 
@@ -178,7 +178,7 @@ Näitä tietoja voi tarkastella seuraavasti.
 1. Valitse **Etujen hallinta** -työtilasta **Työntekijöiden Affordable Care -kattavuus**.
 2. Valitse **Ryhmän nimi**-kentässä ryhmä.
 
-    ![ACA-kattavuuden tarkasteleminen](./media/hr-benefits-management-aca-view-coverage.png)
+    ![ACA-kattavuuden tarkasteleminen.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Jos jokin Affordable Care -kattavuusryhmän oletusarvoista on korvattu, muutetun arvon vieressä näkyy tähtimerkki. Jos jokaisen 12 kuukauden arvo on sama eikä sitä ole korvattu, arvo näkyy **Kaikki 12 kuukautta** -sarakkeessa.
 
@@ -198,11 +198,11 @@ Voit viedä minkä tahansa luettelon Microsoft Exceliin seuraavien ohjeiden muka
 
 Jos sinun on raportoitava kattavuuteen kuuluvat henkilöt itsevakuutettujen kattavuuden vuoksi, voit tarkastella huollettavia, jotka on katettu **ACA-raportoitaviksi** merkityissä etusuunnitelmissa. Valitse toimintoruudussa **Näytä huollettavien kattavuus**.
 
-![Huollettavien kattavuuden tarkasteleminen](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Huollettavien kattavuuden tarkasteleminen.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Näkyviin tulee työntekijän huollettavien kattavuustiedot.
 
-![Huollettavan kattavuus](./media/hr-benefits-management-aca-dependents.png)
+![Huollettavan kattavuus.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Sivulla näkyvät vain ne edut, jotka on merkitty **ACA-raportoitaviksi**.

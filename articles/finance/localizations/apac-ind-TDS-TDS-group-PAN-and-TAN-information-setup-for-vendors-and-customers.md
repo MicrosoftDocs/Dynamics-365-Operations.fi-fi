@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023209"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358263"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Asiakkaiden ja toimittajien TDS-ryhmä-, PAN- ja TAN-tietojen määrittäminen
 
@@ -31,7 +31,7 @@ Tässä aiheessa kerrotaan, miten määritetään toimittajien ja asiakkaiden Ve
 
 1. Valitse **Ostoreskontra \> Toimittajat \> Kaikki toimittajat** tai **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat**.
 
-    [![Kaikki toimittajat -sivu](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Kaikki toimittajat -sivu.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. Valitse toimintoruudusta **Uusi**, jos haluat luoda toimittajan tai asiakkaan, ja syötä tarvittavat tiedot. Vaihtoehtoisesti voit valita aiemmin luodun toimittajan tai asiakkaan.
 3. Määritä **Lasku ja toimitus** -pikavälilehden **Ennakonpidätys**-osassa **Laske ennakonpidätys** -asetuksen arvoksi **Kyllä**, kun haluat laskea toimittajan tai asiakkaan ennakonpidätyksen, TDS:n tai Lähteessä kerätyn veron (TCS).
@@ -60,7 +60,7 @@ Tässä aiheessa kerrotaan, miten määritetään toimittajien ja asiakkaiden Ve
     - Paikallinen viranomainen
     - Muut
 
-    [![Verotiedot-pikavälilehti](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Verotiedot-pikavälilehti.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. Toimintoruudun **Toimittaja**-välilehdessä **Rekisteröinti**-ryhmässä valitse **Rekisteröintitunnukset** avataksesi **Osoitteiden hallinta** -sivun.
 10. Valitse **Osoitteiden hallinta** -sivulla **Verotiedot**-pikavälilehdellä **Lisää** tai **Muokkaa** avataksesi **Verotietojen hallinta** -sivun, jossa voit ylläpitää verorekisteröintimerkintää.

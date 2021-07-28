@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: 48e54c0f7d4bd1b4e1661a5bd1d4c11fd9cec986
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951982"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351118"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 
@@ -54,11 +54,11 @@ ER-tietomallia, ER-mallimääritystä tai ER-muotoa suunnitellessa **Käännä**
 
 Seuraavassa kuvassa näytetään, miten käännös tehdään muokattavassa ER-tietomallissa. Tässä esimerkiksi muokattavan **laskumallin** **Ostotilaus**-kentän **Kuvaus**-määrite käännetään Itävallan saksaksi (DE-AT) ja japaniksi (JA).
 
-![ER-selitteen kääntäminen ER-tietomallin suunnittelutoiminnossa](./media/er-multilingual-labels-refer.png)
+![ER-selitteen kääntäminen ER-tietomallin suunnittelutoiminnossa.](./media/er-multilingual-labels-refer.png)
 
 Vain muokattavassa ER-osassa olevien selitteiden selitetekstin voi kääntää. Jos esimerkiksi valitset ER-mallimäärityksen tietolähteen selitemääritteessä **Käännä** ja valitset sitten ER-selitteen, joka ylätason ER-tietomallissa, selitteen sisältö on näkyvissä, mutta sitä ei voi muuttaa. Tällaisissa tapauksissa **Käännetty teksti** -kenttä ei ole käytettävissä, kuten seuraavasta kuvasta huomataan.
 
-![ER-selitteen annetun käännöksen tarkistaminen ER-mallimäärityksen suunnittelutoiminnossa](./media/er-multilingual-labels-refer-mapping.png)
+![ER-selitteen annetun käännöksen tarkistaminen ER-mallimäärityksen suunnittelutoiminnossa.](./media/er-multilingual-labels-refer-mapping.png)
 
 > [!NOTE]
 > Suunnittelutoimintoja ei voi käyttää muokattavassa ER-osassa annetun selitteen poistamiseen.
@@ -71,19 +71,19 @@ ER-selitteisiin voidaan viitata useissa ER-osien käännettävissä määritteis
 
 ER-tietomallin määrityksen yhteydessä siihen voidaan lisätä ER-selitteitä. Mallinimikkeen **Selite**- ja **Kuvaus**-määritteet, jokaisen mallin kenttä ja jokaisen <a id="LinkModelEnum"></a> mallin luettelointiarvo voidaan linkittää ER-tietomalliin lisättävään ER-selitteeseen.
 
-![Kuvaus-määritteen käännöksen antaminen ER-tietomallin suunnittelutoiminnossa](./media/er-multilingual-labels-refer.png)
+![Kuvaus-määritteen käännöksen antaminen ER-tietomallin suunnittelutoiminnossa.](./media/er-multilingual-labels-refer.png)
 
 Kun ER-tietomalli määritetään tällä tavoin, sen sisältö näytetään ER-tietomallin suunnittelutoiminnon käyttäjille kunkin käyttäjän valitsemalla kielellä. Tämä myös yksinkertaistaa mallin ylläpitoa. Seuraavissa kuvissa näytetään, miten toimintoa toimii käyttäjillä, joiden valittuna kielenä on DE-AT ja JA.
 
-![ER-tietomallin suunnittelutoiminnon asettelu, kun käyttäjän valitsema kieli on DE-AT](./media/er-multilingual-labels-refer-de.png)
+![ER-tietomallin suunnittelutoiminnon asettelu, kun käyttäjän valitsema kieli on DE-AT.](./media/er-multilingual-labels-refer-de.png)
 
-![ER-tietomallin suunnittelutoiminnon asettelu, kun käyttäjän valitsema kieli on JA](./media/er-multilingual-labels-refer-ja.png)
+![ER-tietomallin suunnittelutoiminnon asettelu, kun käyttäjän valitsema kieli on JA.](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>Mallimääritysosa
 
 Koska ER-mallimääritys perustuu ER-tietomalliin, viitattavien tietomallielementtien selitteet näkyvät käyttäjän valitsemalla kielellä mallimäärityksen suunnittelutoiminnossa. Seuraava kuva osoittaa, miten **Ostotilaus**-kenttä selitetään muokattavassa mallimäärityksessä käyttämällä määritettyyn tietomalliin lisättyä **Kuvaus**-määritteen selitettä. Huomaa, että tämä malli näkyy käyttäjän valitsemalla kielellä (tässä esimerkissä DE-AT).
 
-![ER-mallimäärityksen suunnittelutoiminnon asettelu, kun käyttäjän valitsema kieli on DE-AT](./media/er-multilingual-labels-show-mapping.png)
+![ER-mallimäärityksen suunnittelutoiminnon asettelu, kun käyttäjän valitsema kieli on DE-AT.](./media/er-multilingual-labels-show-mapping.png)
 
 Jos **Käyttäjän syöttöparametri** -tietolähteen **Selite**-määrite on määritetty ER-selitteeseen linkitettynä, käyttäjät näkevät kyseistä tietolähdettä vastaavan parametrikentän käyttäjän valintaikkunassa suorituksen aikana valitsemallaan kielellä.
 
@@ -100,21 +100,21 @@ Koska ER-muoto perustuu ER-tietomalliin, selitteet, joihin viitataan tietomallie
 
 Jos **Käyttäjän syöttöparametri** -tietolähteen **Selite**-määrite on linkitetty ER-selitteeseen, käyttäjä näkee kyseistä parametria vastaavan kentän käyttäjän valintaikkunassa suorituksen aikana kehotteena. Seuraavissa kuvissa näytetään, miten **Käyttäjän syöttöparametri** -tietolähteen **Selite**-määrite linkitetään suunnitteluvaiheessa ER-selitteeseen siten, että parametria pyydetään käyttäjältä käyttäjän valitsemilla eri kielillä suorituksen aikana (kuvissa kielinä Yhdysvaltain englanti (EN-US) ja DE-AT).
 
-![Käyttäjän syöteparametrin määritteiden käännösten antaminen ER-toiminnon suunnittelutoiminnossa](./media/er-multilingual-labels-refer-format.png)
+![Käyttäjän syöteparametrin määritteiden käännösten antaminen ER-toiminnon suunnittelutoiminnossa.](./media/er-multilingual-labels-refer-format.png)
 
-![ER-toimittajan maksun käsittely suorituksen aikana, kun käyttäjän valitsema kieli on EN-US](./media/er-multilingual-labels-show-runtime-en.png)
+![ER-toimittajan maksun käsittely suorituksen aikana, kun käyttäjän valitsema kieli on EN-US.](./media/er-multilingual-labels-show-runtime-en.png)
 
-![ER-toimittajan maksun käsittely suorituksen aikana, kun käyttäjän valitsema kieli on DE-AT](./media/er-multilingual-labels-show-runtime-de.png)
+![ER-toimittajan maksun käsittely suorituksen aikana, kun käyttäjän valitsema kieli on DE-AT.](./media/er-multilingual-labels-show-runtime-de.png)
 
 ### <a name="expressions"></a>Lausekkeet
 
 Jos ER-[lausekkeessa](er-formula-language.md) halutaan käyttää selitettä, käytettävän syntaksin on oltava **@"GER\_LABEL:X"**, jossa etuliite **@** ilmaisee, että operandi viittaa selitteeseen, **GER\_LABEL** ilmaisee, että kyse on ER-selitteestä ja että **X** on ER-selitteen tunnus.
 
-![ER-selitteen sisältävän ER-lausekkeen määrittäminen ER-muodon suunnittelutoiminnossa](./media/er-multilingual-labels-expression1.png)
+![ER-selitteen sisältävän ER-lausekkeen määrittäminen ER-muodon suunnittelutoiminnossa.](./media/er-multilingual-labels-expression1.png)
 
 Järjestelmän (sovelluksen) selitteeseen viitataan käyttämällä syntaksia **@"X"**, jossa etuliite **@** ilmaisee selitteeseen viittaavan operandin ja **X** on järjestelmän selitteen tunnus.
 
-![Sovelluksen selitteen sisältävän ER-lausekkeen määrittäminen ER-muodon suunnittelutoiminnossa](./media/er-multilingual-labels-expression2.png)
+![Sovelluksen selitteen sisältävän ER-lausekkeen määrittäminen ER-muodon suunnittelutoiminnossa.](./media/er-multilingual-labels-expression2.png)
 
 #### <a name="model-mapping"></a>Mallin määritys
 
@@ -126,19 +126,19 @@ Jos viitatussa selitteessä ei ole mallimäärityksen kutsuvan muodon suoritusko
 
 ER-muodon ER-lauseke voidaan määrittää selitteiden avulla. Kun lähtevä asiakirja luodaan suorittamalla muoto, suorituskonteksti sisältää kielikoodin. Määritetty lausekeselite täytetään kyseisen selitetekstillä, joka on määritetty kyseisen kontekstin kielelle.
 
-![Muokattavan ER-lausekkeen ER-selitteen käännöksen antaminen ER-muodon suunnittelutoiminnossa](./media/er-multilingual-labels-refer-in-expression.png)
+![Muokattavan ER-lausekkeen ER-selitteen käännöksen antaminen ER-muodon suunnittelutoiminnossa.](./media/er-multilingual-labels-refer-in-expression.png)
 
-![Näyte ER-selitteeseen viittaavasta tietojen sidonnasta ER-toiminnon suunnittelutoiminnossa](./media/er-multilingual-labels-refer-in-binding.png)
+![Näyte ER-selitteeseen viittaavasta tietojen sidonnasta ER-toiminnon suunnittelutoiminnossa.](./media/er-multilingual-labels-refer-in-binding.png)
 
 ER-muodon **TIEDOSTO**-osan voi määrittää luomaan raportin käyttäjän valitsemalla kielellä.
 
-![TIEDOSTO-osan määrittäminen ER-toiminnon suunnittelutoiminnossa luomaan raportti käyttäjän valitsemalla kielellä](./media/er-multilingual-labels-language-context-user.png)
+![TIEDOSTO-osan määrittäminen ER-toiminnon suunnittelutoiminnossa luomaan raportti käyttäjän valitsemalla kielellä.](./media/er-multilingual-labels-language-context-user.png)
 
 Jos ER-muoto määritetään tällä tavoin, raportti luodaan käyttämällä vastaavaa ER-selitteiden tekstiä. Seuraavissa kuvissa on esimerkkejä raporteista, jossa käyttäjän kielenä on EN-US-ja DE-AT.
 
-![Esikatselu raportista, jossa luonnissa on käytetty käyttäjän valitsemaa kieltä EN-US](./media/er-multilingual-labels-report-preview-en.png)
+![Esikatselu raportista, jossa luonnissa on käytetty käyttäjän valitsemaa kieltä EN-US.](./media/er-multilingual-labels-report-preview-en.png)
 
-![Esikatselu raportista, jossa luonnissa on käytetty käyttäjän valitsemaa kieltä DE-AT](./media/er-multilingual-labels-report-preview-de.png)
+![Esikatselu raportista, jossa luonnissa on käytetty käyttäjän valitsemaa kieltä DE-AT.](./media/er-multilingual-labels-report-preview-de.png)
 
 Jos viitatussa selitteessä ei ole muodon suorituskontekstin kielistä käännöstä, selitetekstissä käytetään sen sijaan kieltä EN-US.
 
@@ -148,16 +148,16 @@ ER tukee erilaisia tapoja määrittää luodun raportin kieli. **Muoto**-välile
 
 - **Yrityksen asetukset** – luo raportin yrityksen määrittämällä kielellä.
 
-    ![Yrityksen valitseman kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa](./media/er-multilingual-labels-language-context-company.png)
+    ![Yrityksen valitseman kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa.](./media/er-multilingual-labels-language-context-company.png)
 
 - **Käyttäjän asetukset** – luokan raportin käyttäjän valitsemalla kielellä.
 - **Määritetty erikseen** – luo raportin suunnitteluvaiheessa määritetyllä kielellä.
 
-    ![Suunnitteluvaiheessa määritetyn kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa](./media/er-multilingual-labels-language-context-fixed.png)
+    ![Suunnitteluvaiheessa määritetyn kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa.](./media/er-multilingual-labels-language-context-fixed.png)
 
 - **Määritetty suorituksen aikana** – Luo raportin suorituksen aikana määritetyllä kielellä. Jos valitset tämän arvon, määritä **Kieli**-kentässä ER-lauseke, joka palauttaa kielen kielikoodin, kuten vastaavan asiakkaan kielen.
 
-    ![Suorituksen aikana määritetyn kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa](./media/er-multilingual-labels-language-context-runtime.png)
+    ![Suorituksen aikana määritetyn kielen määrittäminen luodun raportin kieleksi ER-toiminnon suunnittelutoiminnossa.](./media/er-multilingual-labels-language-context-runtime.png)
 
 ## <a name="culture-specific-formatting"></a>Kulttuurikohtainen muotoilu
 
@@ -165,15 +165,15 @@ ER tukee erilaisia tapoja määrittää luodun raportin kulttuuri. Siksi päivä
 
 - **Käyttäjän asetukset** – Muotoile arvot käyttäjän ensisijaisen kulttuurin mukaisesti. Kulttuuri määritetään **Päivämäärä-, kellonaika- ja numeromuoto** -kentässä **Asetukset**-välilehdessä **Käyttäjän asetukset** -sivulla.
 
-    ![Käyttäjän ensisijaisen kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa](./media/er-multilingual-labels-culture-context-user-preferred.png)
+    ![Käyttäjän ensisijaisen kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa.](./media/er-multilingual-labels-culture-context-user-preferred.png)
 
 - **Määritetty erikseen** – Muotoile arvot suunnittelun aikana määritetyn kulttuurin mukaan.
 
-    ![Suunnittelun aikana määritetyn kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa](./media/er-multilingual-labels-culture-context-fixed.png)
+    ![Suunnittelun aikana määritetyn kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa.](./media/er-multilingual-labels-culture-context-fixed.png)
 
 - **Määritetty suorituksen aikana** – Muotoile arvot suorituksen aikana määritetyn kulttuurin mukaan. Jos valitset tämän arvon, määritä **Määritys**-välilehden **Päivämäärä-, kellonaika- ja numeromuoto** -kenttään ER-lauseke, joka palauttaa kyseisen kulttuurin koodin, kuten vastaavan asiakkaan kulttuurin.
 
-    ![Suorituksen aikana määritetyn kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa](./media/er-multilingual-labels-culture-context-runtime.png)
+    ![Suorituksen aikana määritetyn kulttuurin määrittäminen luodun raportin kulttuurina ER-toiminnon suunnittelussa.](./media/er-multilingual-labels-culture-context-runtime.png)
 
 > [!NOTE]
 > ER-komponentti, jota varten määrität tietyn kulttuurin, voi sisältää ali-ER-komponentteja, jotka on konfiguroitu täyttämään tekstiarvo. Oletusarvon mukaan pääkomponentin kulttuuria käytetään näiden komponenttien arvojen muotoiluun. Seuraavien sisäänrakennettujen ER-toimintojen avulla voit konfiguroida näiden komponenttien siteet ja käyttää vaihtoehtoista kulttuuria arvon muotoiluun:
@@ -196,19 +196,19 @@ Kun ER-selite lisätään **Tekstin käännös** [-ruutuun](#TextTranslationPane
 
 ER-osan määritys tehdään sen ER-määrityksen luonnosversiossa, jossa muokattava ER-osa on.
 
-![ER-määrityssivulla voi käyttää määrityksen Luonnos-tilaista versiota](./media/er-multilingual-labels-configurations.png)
+![ER-määrityssivulla voi käyttää määrityksen Luonnos-tilaista versiota.](./media/er-multilingual-labels-configurations.png)
 
 Tarvittavat ER-selitteet voidaan lisätä ER-osaan aiemmin tässä ohjeaiheessa kuvatulla tavalla. Tällä tavoin voit määrittää ER-selitteiden tekstin, joiden kieli on EN-US. Tämän jälkeen ER-osan selitteet viedään sisäisellä ER-toiminnolla. Valitse muokattavan ER-osan sisältävän ER-määrityksen luonnosversio ja valitse **Vaihto \> Vie käyttöliittymätekstit**.
 
-![ER-määrityssivu, josta voi viedä ER-selitteitä valitusta määritysversiosta](./media/er-multilingual-labels-export.png)
+![ER-määrityssivu, josta voi viedä ER-selitteitä valitusta määritysversiosta.](./media/er-multilingual-labels-export.png)
 
 Voit viedä joko kaikki selitteet tai viennin aluksi määritettävän yhden kielen selitteet. Selitteet viedään XML-tiedostot sisältävänä zip-tiedostona. Kussakin XML-tiedostossa on yhden kielen selitteet.
 
-![Esimerkki viedystä tiedostosta, joka sisältää kielen DE-AT ER-selitteet](./media/er-multilingual-labels-in-xml.png)
+![Esimerkki viedystä tiedostosta, joka sisältää kielen DE-AT ER-selitteet.](./media/er-multilingual-labels-in-xml.png)
 
 Tämä muotoa käytetään, kun ulkopuoliset palvelut, kuten [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md), kääntävät selitteet automaattisesti. Voit tuoda vastaanotetut käännetyt selitteet takaisin sen ER-määrityksen luonnosversioon, joka sisältää kyseiset selitteet omistavat ER-osat. Valitse muokattavan ER-osan sisältävän ER-määrityksen luonnosversio ja valitse sitten **Vaihto \> Lataa käyttöliittymätekstit**.
 
-![ER-määrityssivu, jossa voi tuoda ER-selitteitä valittuun määritysversioon](./media/er-multilingual-labels-load.png)
+![ER-määrityssivu, jossa voi tuoda ER-selitteitä valittuun määritysversioon.](./media/er-multilingual-labels-load.png)
 
 Käännetyt selitteet tuodaan valittuun ER-määritykseen. Tässä ER-määrityksessä jo olevat käännetyt selitteet korvataan. Jos ER-määrityksestä puuttuu jokin käännetty selite, se liitetään määritteeseen.
 

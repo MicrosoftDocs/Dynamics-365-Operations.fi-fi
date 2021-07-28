@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: ab063c66712b43818f58eee1493ec168771ae97a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941026"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350956"
 ---
 # <a name="company-concept-in-dataverse"></a>Yrityksen käsite Dataversessa
 
@@ -43,7 +43,7 @@ Koska liiketoimintayksikkö ja yritys eivät ole vastaavia käsitteitä, ei ole 
 
 Seuraavassa kuvassa on esimerkki tästä tietojen määrityksestä Dataversessa.
 
-![Tietojen määritys Dataversessa](media/dual-write-company-1.png)
+![Tietojen määritys Dataversessa.](media/dual-write-company-1.png)
 
 Tämän määrityksen vuoksi kaikki USMF-yritykseen liittyvät rivit omistaa ryhmä, joka on linkitetty USMF-liiketoimintayksikköön Dataversessa. Tämän vuoksi jokainen käyttäjä, jolla on liiketoimintayksikön käyttöoikeusrooli, joka on määritetty liiketoimintayksikkötason näkyvyydelle, voi nyt nähdä kyseiset rivit. Seuraavassa esimerkissä kerrotaan, miten ryhmiä voidaan käyttää antamaan kyseisille riveille oikeat käyttöoikeudet.
 
@@ -52,21 +52,21 @@ Tämän määrityksen vuoksi kaikki USMF-yritykseen liittyvät rivit omistaa ryh
 + USMF Sales -tiimi on linkitetty aiemmin mainittuun USMF-liiketoimintayksikköön.
 + Tämän vuoksi USMF Sales -tiimin jäsenet näkevät minkä tahansa tilin, jonka omistaa USMF DW, joka olisi tullut USMF-yrityksen taulusta Finance and Operationsissa.
 
-![Miten ryhmiä voidaan käyttää](media/dual-write-company-2.png)
+![Miten ryhmiä voidaan käyttää.](media/dual-write-company-2.png)
 
 Kuten edellä olevassa kuvassa näkyy, tämä 1:1-yhteys liiketoimintayksikön, yrityksen ja tiimin välillä on vain lähtökohta. Tässä esimerkissä uusi Europe-liiketoimintayksikkö luodaan manuaalisesti Dataversessa sekä DEMF:n että ESMF:n ylätasona. Tämä uusi pääliiketoimintayksikkö ei liity kaksoiskirjoittamiseen. Sen avulla voidaan kuitenkin antaa "EUR Sales"-tiimin jäsenille pääsy tilitietoihin sekä DEMF:ssä että ESMF:ssä asettamalla tietojen näkyvyydeksi **Ylätaso/aliliiketoimintayksikkö** liittyvässä käyttöoikeusroolissa.
 
 Viimeinen käsiteltävä aihe on, miten kaksoiskirjoitus määrittää, mihin omistajaryhmään sen tulisi liittää tilejä. Tätä toiminnallisuutta ohjaa **Oletusomistajaryhmä**-sarake kohdassa cdm\_Yrityksen rivi. Kun cdm\_Yrityksen rivillä on otettu käyttöön kaksoiskirjoitus, laajennus luo automaattisesti liittyvän liiketoimintayksikön ja omistajaryhmän (jos sitä ei vielä ole) ja määrittää **Oletusomistajaryhmä**-sarakkeen. Järjestelmänvalvoja voi muuttaa sarakkeen arvoksi eri arvon. Järjestelmänvalvoja ei kuitenkaan voi tyhjentää saraketta niin kauan kuin taulu on kaksoiskirjoitustilassa.
 
 > [!div class="mx-imgBorder"]
-![Oletusomistajaryhmä-taulu](media/dual-write-default-owning-team.jpg)
+![Oletusomistajaryhmä-sarake.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Yrityksen tietojen omistajuus ja esilataus
 
 Dataverse -integrointi tuo yrityksen pariteetin käyttämällä yritystunnusta tietojen omistajuuden ilmaisemiseen. Kuten seuraavassa kuvassa näkyy, kaikkia yrityskohtaisia tauluja laajennetaan siten, että niillä on monta-yhteen (N:1)-suhde cdm\_Yritys-taulun kanssa.
 
 > [!div class="mx-imgBorder"]
-![N:1-suhde yrityskohtaisen taulun ja cdm_Company-taulun välillä](media/dual-write-bootstrapping.png)
+![N:1-suhde yrityskohtaisen taulukon ja cdm_Company-taulukon välillä.](media/dual-write-bootstrapping.png)
 
 + Kun yritys on lisätty ja tallennettu, arvo riveillä muuttuu vain luku -arvoksi. Siksi käyttäjien tulee varmistaa, että he valitsevat oikean yrityksen.
 + Vain rivit, joilla on yritystietoja, voivat olla kaksoiskirjoituskelpoisia sovelluksen ja Dataversen välillä.
@@ -98,7 +98,7 @@ Yrityksen nimi voidaan täyttää automaattisesti usealla eri tavalla asiakkaide
 
 Voit käyttää mukautettujen lomakkeiden yrityskontekstiin tai vakiolomakkeisiin lisättyihin mukautettuihin valintasarakkeisiin perustuvaa suodatusta avaamalla lomakkeen ja ottamalla yrityssuodatuksen käyttöön **Liittyvien tietueiden suodatus** -osassa. Tämä asetus on määritettävä jokaiselle valintasarakkeelle, joka suodatetaan tietyn rivin taustalla olevan yrityksen perusteella. Seuraavassa kuvassa on tämä asetus **Tili**-lomakkeessa.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Yrityskontekstin käyttäminen":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Yrityskontekstin käyttäminen.":::
 
 
 

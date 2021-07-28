@@ -2,7 +2,7 @@
 title: Ylätunnistemoduuli
 description: Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799905"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479253"
 ---
 # <a name="header-module"></a>Ylätunnistemoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 
@@ -33,7 +34,7 @@ Ylätunnistemoduuli sisältää sivuston logon, linkit siirtymishierarkiaan, lin
 
 Seuraavassa kuvassa on esimerkki otsikkomoduulista kotisivulla.
 
-![Esimerkki otsikkomoduulista](./media/ecommerce-header.png)
+![Esimerkki otsikkomoduulista.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Ylätunnistemoduulin ominaisuudet
 
@@ -58,9 +59,16 @@ Seuraavia moduuleja voi käyttää ylätunnistemoduulissa:
 - **Myymälän valitsin** – Myymälän valitsinmoduuli voidaan sisällyttää otsikon myymälän valitsinpaikkaan. Sen avulla käyttäjät voivat selata ja etsiä lähellä olevia myymälöitä. Käyttäjät voivat määrittää myös ensisijaisen myymälän. Kyseinen myymälä näytetään sitten otsikossa. Jos myymälän valitsinmoduuli sisältyy otsikkomoduuliin, sen **Tila**-ominaisuudeksi on määritettävä **Etsi myymälät**. Lisätietoja on kohdassa [Myymälän valitsinmoduuli](store-selector.md).
 
 > [!NOTE]
-> - Otsikkomoduulien kortin kuvakemoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.11.
-> - Otsikkomoduulien toimipaikan valitsinmoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.14.
-> - Otsikkomoduulien myymälän valitsinmoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.15.
+> - Ostoskorikuvakemoduulin käyttämistä otsikkomoduuleissa tuetaan Dynamics 365 Commerce -version 10.0.11 julkaisusta eteenpäin.
+> - Sivuston valitsinmoduulin käyttämistä otsikkomoduuleissa tuetaan Dynamics 365 Commerce -version 10.0.14 julkaisusta eteenpäin.
+> - Myymälän valitsinmoduulin käyttämistä otsikkomoduuleissa tuetaan Dynamics 365 Commerce -version 10.0.15 julkaisusta eteenpäin.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Otsikkomoduuli Adventure Works -teemassa
+
+Otsikkomoduuli tukee **Mobiililogo**-ominaisuutta Adventure Works -teemassa. Tämä ominaisuus sallii logon määrittämisen mobiililaitteiden näyttöjä varten. **Mobiililogo**-ominaisuus on käytettävissä moduulimääritelmän laajennuksena.
+
+> [!IMPORTANT]
+> Adventure Works -teema on käytettävissä Dynamics 365 Commerce -versiosta 10.0.20 eteenpäin.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Sivun otsikko-osan luominen
 

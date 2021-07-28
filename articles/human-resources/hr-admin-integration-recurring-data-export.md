@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4a963bcfe5932f5642b43751ccd96c472fec0d9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055001"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361219"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Toistuvien tietovientien sovelluksen luomisen
 
@@ -63,13 +63,13 @@ Tämän harjoituksen lopussa sinulla on Human Resources -ympäristöösi ja OneD
 
 Valmis logiikkasovellus muistuttaa seuraavaa kuvaa.
 
-![Logiikansovelluksen yleiskuva](media/integration-logic-app-overview.png)
+![Logiikkasovelluksen yleiskuva.](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Vaihe 1: Luo tietojen vientiprojekti Human Resourcesissa
 
 Luo Human Resourcesissa tietojen vientiprojekti, joka vie työntekijöitä. Anna projektille nimi **Vie työntekijät** ja varmista, että asetuksen **Luo tietopaketti** arvona on **Kyllä**. Lisää projektiin yksittäinen yksikkö (**Työntekijä**) ja valitse muoto, jossa vienti suoritetaan. (Tässä oppaassa käytetään Microsoft Excel -muotoa.)
 
-![Vie työntekijät -tietoprojekti](media/integration-logic-app-export-workers-project.png)
+![Vie työntekijät -tietoprojekti.](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Muista tietojen vientiprojektin nimi. Tarvitset sitä, kun luot logiikkasovelluksen seuraavassa vaiheessa.
@@ -80,12 +80,12 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
 
 1. Luo logiikkasovellus Azure-portaalissa.
 
-    ![Logiikkasovelluksen luontisivu](media/integration-logic-app-creation-1.png)
+    ![Logiikkasovelluksen luontisivu.](media/integration-logic-app-creation-1.png)
 
 2. Aloita Logic Apps Designer tyhjällä logiikkasovelluksella.
 3. Lisää [Toistuvan aikataulun käynnistin](/azure/connectors/connectors-native-recurrence) suorittamaan sovellus 24 tunnin välein (tai valitsemasi aikataulun mukaan).
 
-    ![Toistuvuuden valintaikkuna](media/integration-logic-app-recurrence-step.png)
+    ![Toistuvuuden valintaikkuna.](media/integration-logic-app-recurrence-step.png)
 
 4. Kutsu [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API aikatauluttamaan tietopakettisi vienti.
 
@@ -97,7 +97,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
         > [!NOTE]
         > Human Resources -palvelussa ei vielä ole yhdistintä, joka saisi näkyviin kaikki DMF-paketin REST API:t (esim. **ExportToPackage**). Sen sijaan ohjelmointirajapintoja on kutsuttava raaoilla HTTP-pyynnöillä HTTP ja Azure AD -yhdistimen kautta. Tämä yhdistin käyttää Azure Active Directorya (Azure AD) Human Resources -todennukseen ja valtuutukseen.
 
-        ![HTTP ja Azure AD -yhdistin](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP ja Azure AD -yhdistin.](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Kirjaudu Human Resources -ympäristöösi HTTP ja Azure AD -yhdistimen kautta.
     3. Määritä HTTP:n **KIRJAA**-pyyntö kutsuaksesi DMF REST API:n **ExportToPackage**.
@@ -116,21 +116,21 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
             }
             ```
 
-        ![Aktivoi HTTP-pyyntötoiminto](media/integration-logic-app-export-to-package-step.png)
+        ![Aktivoi HTTP-pyyntötoiminto.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Sinun saattaa kannattaa nimetä kukin vaihe uudelleen, jotta se on merkityksellisempi kuin oletusnimi **Aktivoi HTTP-pyyntö**. Voit esimerkiksi nimetä tämän vaiheen uudelleen muotoon **ExportToPackage**.
 
 5. [Alusta muuttuja](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) tallentaaksesi **ExportToPackage**-pyynnön suoritustilan.
 
-    ![Alusta muuttujatoiminto](media/integration-logic-app-initialize-variable-step.png)
+    ![Alusta muuttujatoiminto.](media/integration-logic-app-initialize-variable-step.png)
 
 6. Odota, kunnes tietojen viennin suoritustila on **Onnistui**.
 
     1. Lisää [Kunnes-silmukka](/azure/logic-apps/logic-apps-control-flow-loops#until-loop), joka toistuu, kunnes **ExecutionStatus**-muuttujan arvo on **Onnistui**.
     2. Lisää **Viive**-toiminto, joka odottaa viisi sekuntia, ennen kuin se kysyy viennin kulloistakin suoritustilaa.
 
-        ![Kunnes-silmukan kontti](media/integration-logic-app-until-loop-step.png)
+        ![Kunnes-silmukan kontti.](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Määritä raja-arvoksi **15**, jos haluat odottaa enintään 75 sekuntia (15 toistoa × 5 sekuntia) viennin valmistumiseen. Jos vientisi vaatii enemmän aikaa, säädä raja-arvoa sen mukaan.        
@@ -146,9 +146,9 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
             > [!NOTE]
             > Sinun on ehkä syötettävä **Pyynnön teksti** -arvo joko suunnitteluohjelman koodinäkymässä tai toimintoeditorissa.
 
-        ![Aktivoi HTTP-pyyntötoiminto 2](media/integration-logic-app-get-execution-status-step.png)
+        ![Aktivoi HTTP-pyyntötoiminto 2.](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Muuttujatoiminnon määrittäminen](media/integration-logic-app-set-variable-step.png)
+        ![Muuttujatoiminnon määrittäminen.](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > **Määritä muuttuja** -toiminnon arvo (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) eroaa **Aktivoi HTTP-pyyntö 2** -tekstin arvosta, vaikka suunnitteluohjelma näyttää arvot samalla tavalla.
@@ -161,7 +161,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
         - **Pyynnön URL-osoite:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Pyynnön teksti:** {"executionId": body('GetExportedPackageURL')?['value']}
 
-        ![GetExportedPackageURL-toiminto](media/integration-logic-app-get-exported-package-step.png)
+        ![GetExportedPackageURL-toiminto.](media/integration-logic-app-get-exported-package-step.png)
 
 8. Lataa viety paketti.
 
@@ -173,7 +173,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
             > [!NOTE]
             > Sinun on ehkä syötettävä **URI**-arvo joko suunnitteluohjelman koodinäkymässä tai toimintoeditorissa.
 
-        ![HTTP HAE -toiminto](media/integration-logic-app-download-file-step.png)
+        ![HTTP GET -toiminto.](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > Tämä pyyntö ei edellytä lisätodennusta, **getexportdpackageurl**-API:n palauttama URL-osoite sisältää jaetun käytön allekirjoitustunnuksen, joka myöntää käyttöoikeuden ladattuun tiedostoon.
@@ -187,7 +187,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
         - **Tiedoston nimi:** työntekijä\_package.zip
         - **Tiedoston sisältö:** Edellisen vaiheen teksti (dynaaminen sisältö)
 
-        ![Luo tiedosto -toiminto](media/integration-logic-app-create-file-step.png)
+        ![Luo tiedosto -toiminto.](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>Vaihe 3: Testaa logiikkasovelllus
 
@@ -197,7 +197,7 @@ Jos jossakin vaiheessa ilmenee virhe, valitse kyseinen vaihe suunnitteluohjelmas
 
 Seuraavassa kuvassa näytetään, miltä Logic Apps Designer näyttää, kun kaikki logiikkasovelluksen vaiheet suoritetaan onnistuneesti.
 
-![Onnistunut logiikkasovelluksen suoritus](media/integration-logic-app-successful-run.png)
+![Onnistunut logiikkasovelluksen suoritus.](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>Yhteenveto
 

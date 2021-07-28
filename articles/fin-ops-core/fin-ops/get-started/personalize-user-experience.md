@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944530"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348676"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -85,7 +85,7 @@ Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytett�
 
 Lisäksi mukauttamisen yleisimmät tyypit saa käyttöön napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Mukauta**. (Huomaa, että kaikkia sivun elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, elementin *ominaisuusikkuna* tulee näkyviin.
 
-![Elementin ominaisuuksien mukauttaminen](./media/cli-element-property-window.png)
+![Elementin ominaisuuksien mukauttaminen.](./media/cli-element-property-window.png)
 
 Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
@@ -107,7 +107,7 @@ Jos haluat tehdä useita muutoksia sivulle tai muutoksia, jotka eivät ole käyt
 - Valitse **Mukauta tätä sivua** minkä tahansa sivun toimintoikkunan **Asetukset**-välilehden **Mukauttaminen**-ryhmässä.
 - Valitse **Asetukset**-painike siirtymispalkissa ja valitse sitten **Mukauta**.
 
-[![Mukauttamisen työkalurivi](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Mukauttamisen työkalurivi.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Siirtyminen sivulla
 
@@ -147,7 +147,7 @@ Joillakin luetteloja sisältävillä sivuilla on käytettävissä **Lisää työ
 > [!NOTE]
 > Jos [Tallennetut näkymät](saved-views.md) -toiminto on käytössä, työtilaan siirrettävä sisältö on linkitetty suoraan näkymään. Näkymän kyselyä käytetään tietojen noutamiseen työtilassa ja vastaavaa työtilan ruutu tai linkki avaa kyseisen näkymän sivun, jolloin näkymän kyselyä ja mukautuksia sovelletaan siihen. Jos näkymä päivitetään, vastaavat työtilan elementit mukautetaan uuteen näkymän määritykseen.
 
-[![Lisää työtilaan](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Lisää työtilaan.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Voit lisätä luettelon työtilaan lajittelemalla tai suodattamalla luettelon ensin sivulla niin, että tiedot näkyvät siinä muodossa kuin haluat niiden näkyvän työtilassa. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Luettelo**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit valita työtilan luettelossa näytettävät sarakkeet. Voit myös määrittää työtilan luettelossa käytettävän otsikon.
 - Voit lisätä ruudun työtilaan suodattamalla ensin sivun luettelon niin, että se näyttää vain tiedot, joista tehdään yhteenveto tai joita haluat käyttää nopeasti. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Ruutu**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää työtilan ruudussa käytettävän otsikon. Voit myös määrittää, näytetäänkö määrä ruudussa. Kun ruutu on lisätty työtilaan voit valita, että se avaa kulloisenkin sivun työtilasta. Sen jälkeen voit tarkastella ruutuun liittyvää suodatettua luetteloa.

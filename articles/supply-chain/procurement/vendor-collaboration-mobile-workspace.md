@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ad4ba2781c1b1086f2b554ec1db0f0f970d2d671
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351438"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötila
 
@@ -120,12 +120,12 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 4.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
 5.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
-    [![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Päivittäminen vetämällä.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötilan käyttäminen
 Kun valitset **Toimittajayhteistyö**-työtilan, näet seuraavat vaihtoehdot.
 
-![Toimittajayhteistyön mobiilityötila](./media/vendor-collaboration-mobile-app.png)
+![Toimittajayhteistyön mobiilityötila.](./media/vendor-collaboration-mobile-app.png)
 
 **Toimittajayhteistyö**-työtila sisältää seuraavat sivut.
 

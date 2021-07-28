@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8c2ae3368db47363a65e8ecd6317bb0432829802
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748822"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350737"
 ---
 # <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
@@ -44,16 +44,16 @@ Kun olet asentanut paketin käyttöönottajatyökalun, asenna ratkaisupaketti no
 
 1. Lataa uusin ratkaisupakettitiedosto kohteesta Yammer.com. Kun paketin zip-tiedosto on ladattu, napsauta sitä hiiren kakkospainikkeella ja valitse **Ominaisuudet**. Valitse **Poista esto** -valintaruutu ja valitse sitten **Käytä**. Jos et näe **Poista esto** -valintaruutua, zip-tiedosto on jo avattu ja voit ohittaa tämän vaiheen.
 
-    ![Ominaisuudet -valintaikkuna](media/unblock_option.png)
+    ![Ominaisuudet-valintaikkuna.](media/unblock_option.png)
 
 2. Pura paketin zip-tiedosto ja kopioi kaikki tiedostot **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** -kansioon.
 
-    ![Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438-kansion sisältö](media/extract_package.png)
+    ![Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438-kansion sisältö.](media/extract_package.png)
 
 3. Liitä kaikki kopioidut tiedostot paketin käyttöönottajan **Työkalu**-kansioon. 
 4. Valitse Dataverse -ympäristö ja asenna ratkaisut suorittamalla **PackageDeployer.exe**-asiakirja.
 
-    ![Työkalut-kansion sisältö](media/paste_copied_files.png)
+    ![Työkalut-kansion sisältö.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Ota käyttöön laajennuksena toimiva jäljitysloki Dataversessä virheen tietojen tarkastelemiseksi
 

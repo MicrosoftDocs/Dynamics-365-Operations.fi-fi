@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821606"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355994"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
 
@@ -51,7 +51,7 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 
 Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen tapahtumien keskiarvoa. Seuraavissa kuvissa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. 
 
-![FIFO - fyysistä arvoa ei sisällytetä](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO - fyysistä arvoa ei sisällytetä.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -83,7 +83,7 @@ Jos **Sisällytä fyysinen arvo** -valintaruutu on valittuna nimikkeen **nimikem
 
 Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ottotapahtumalle tehdään –11,25 Yhdysvaltain dollarin (USD) oikaisu. Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus on käytössä. 
 
-![FIFO - fyysinen arvo sisällytetään](./media/fifowithincludephysicalvalue.gif) 
+![FIFO - fyysinen arvo sisällytetään.](./media/fifowithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -115,7 +115,7 @@ Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ott
 
 Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan FIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. 
 
-![FIFO merkinnän kanssa](./media/fifowithmarking.gif) 
+![FIFO merkinnän kanssa.](./media/fifowithmarking.gif) 
 
 **Kaavion selite**
 

@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794346"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351270"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus
 
@@ -31,7 +31,7 @@ Tässä ohjeaiheessa on luokan oletussaapumis- ja oletushakutulossivun yleiskats
 
 Luokan oletussaapumissivu on sivu, jolle sivustojen käyttäjät yleensä siirretään, kun he valitsevat siirtymishierarkiassa luokan. Luokka-sivulla voit selata ja myös lajitella ja tarkentaa luokiteltuja tuotteita.
 
-![Luokan oletussaapumissivu](./media/SimpleCategoryLandingDressCategory.png)
+![Luokan oletussaapumissivu.](./media/SimpleCategoryLandingDressCategory.png)
 
 Sivun yläosassa on ylätunniste, jossa näkyvät kaikki tuoteluokat ja muut sivut, jotka myynninedistämispäällikkö on luokitellut. Määritys tehdään kanavan siirtymishierarkian määrityksen osana. Sivun alaosassa on alatunniste, joka sisältää pikalinkkejä erilaisiin ostajaa mahdollisesti kiinnostaviin aiheisiin.
 
@@ -55,7 +55,7 @@ Seuraavat komponentit ovat olennaisia luokassa:
 
 Jos haluat, että luokan saapumissivun tietyllä luokalla on paljon räätälöityä kokemusta, voit täydentää kyseisen luokan saapumissivua. Voit esimerkiksi lisätä markkinointivideon ja joitakin luokan tarinoita, joiden avulla saat ostajan huomion. Lisätietoja on kohdassa [Luokan saapumissivun täydentäminen](enrich-category-page.md).
 
-![Täydennetty luokan saapumissivu](./media/CategoryLandingPages.png)
+![Täydennetty luokan saapumissivu.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automaattisten ehdotusten ja hakutulosten sivut
 
@@ -69,11 +69,11 @@ Seuraavassa on joitakin ehdotuksia, jotka saattavat tulla näkyviin:
 - **Tuotteet** sisältävät suorat linkit tuotetietosivulle.
 - **Luokkahakualueen ehdotukset** tuovat näyttöön eri luokkia. Niiden avulla käyttäjät voivat hakea tietyn luokan avainsanoja.
 
-![Mukaansatempaava automaattinen ehdotustoiminto](./media/ImmersiveAutoSuggestUX.png)
+![Mukaansatempaava automaattinen ehdotustoiminto.](./media/ImmersiveAutoSuggestUX.png)
 
 Kun käyttäjät valitsevat jonkin avainsanan tai luokkahakualueen ehdotukset tai kun hakutermillä ei saada ehdotuksia, käyttäjät siirretään hakutulossivulle. Käyttäjät voivat tämän jälkeen selata, lajitella ja tarkentaa hakutulosluetteloa löytääksesi haluamasi nimikkeen.
 
-![Aloitussivu](./media/SearchLanding.png)
+![Haun saapumissivu.](./media/SearchLanding.png)
 
 Seuraavat osat ovat olennaisia hakutulossivulla:
 
@@ -94,7 +94,7 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 
 >[!NOTE]
 >Nämä pilvipohjaiset hakutoiminnot ovat saatavilla versiosta 10.0.8 alkaen. Varmista, että valikossa **Kaupan parametrit > Määrityksen parametrit** on merkintä ProductSearch.UseAzureSearch set to 'true'. 
-![Määrityksen parametrit pilvipohjaiselle haulle](./media/CloudPoweredSearchConfigurationParameters.png)
+![Määrityksen parametrit pilvipohjaiselle haulle.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

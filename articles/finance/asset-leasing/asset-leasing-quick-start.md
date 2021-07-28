@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892430"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360733"
 ---
 # <a name="asset-leasing-get-started"></a>Omaisuuden leasingin aloittaminen
 
@@ -35,7 +37,7 @@ Lisätietoja tilinpäätösstandardeista on IFRS 16- ja US GAAP ASC 842 -standar
 ## <a name="asset-leasing-elements"></a>Käyttöomaisuuden leasing-elementit
 Seuraavassa kaaviossa on vuokrasopimusten liiketoimintaprosessin tärkeimmät elementit.
 
-[![Käyttöomaisuuden leasing-elementit](./media/overview-01.png)](./media/overview-01.png)
+[![Käyttöomaisuuden leasing-elementit.](./media/overview-01.png)](./media/overview-01.png)
 
 Vuokratun omaisuuden pääkomponentit:
 
@@ -54,7 +56,7 @@ Omaisuuden leasing tekee vuokrasopimuksen tietojen, maksusuunnitelmien, alkamis-
 
 Seuraavassa kaaviossa on vuokrasopimuskirja, vuokrasopimus, laskettu maksusuunnitelma, vuokrasopimusten ja vuokrasopimuskirjojen luokittelutestit sekä vastaavat kirjanpitotapahtumat.
 
-[![Leasing, vuokrasopimuskirja ja maksusuunnitelma](./media/overview-02.png)](./media/overview-02.png)
+[![Leasing, vuokrasopimuskirja ja maksusuunnitelma.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Vuokrasopimuskirja** – Vuokrasopimuskirja sisältää kaikki vuokrasopimuksen tiedot, kuten vuorka-ajan, käyvän arvon ja vuokrat. Se sisältää myös käytettävän kirjanpitostandarding, vuokrasopimustyypin ja raja-arvot, jotka otetaan huomioon vuokrasopimuksen luokittelutestissä. Vuokrasopimuskirja sisältää myös vuokratapahtumat, jotka kirjataan kirjanpitoon. 
   
@@ -117,7 +119,7 @@ Ensimmäisen kauden alussa on kausi nolla, jos annuiteetin tyyppi on erääntyv�
 
 Luokittelutestejä ovat esimerkiksi omistajuuden siirto, ostovaihtoehto, vuokra-aika, nykyinen nettoarvo ja ainutlaatuinen omaisuus. Seuraava kaavio selventää vuokrasopimuksen luokittelutestejä.
 
-[![Vuokrasopimuksen luokittelutestit](./media/overview-03.png)](./media/overview-03.png)
+[![Vuokrasopimuksen luokittelutestit.](./media/overview-03.png)](./media/overview-03.png)
 
 Kukin vuokrasopimustyyppi käsittelee kirjanpitoa eri tavoin eri vuokratapahtumien osalta. Tapahtumat sisältävät alkuperäisen kirjaamisen, korkokulut, erääntyvät vuokrat ja vuokrapoistot, ja ne perustuvat käytössä olevaan kirjanpitostandardiin (IFRS 16 tai ASC 842). Kirjanpitotilit määritetään vuokrasopimuksen kirjausprofiilissa kummallekin tapahtumatyypille ja kirjanpitojärjestelmälle.
 
@@ -232,7 +234,7 @@ Luo uusi vuokrasopimus seuraavien ohjeiden mukaan.
 
    **Maksusuunnitelma**-sivulla on vuokrasopimuksen tunnuksen mukainen luettelo tulevista maksusuunnitelmista. Valitsemalla **Vahvista aikataulu** voit kirjata **Alkuperäinen kirjaus** -tapahtumat. 
 
-[![Alkuperäinen kirjaus -toiminto](./media/overview-13.png)](./media/overview-13.png)
+[![Alkuperäinen kirjaus -toiminto.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Luo alkuperäisen kirjauksen kirjauskansio valitsemalla **Alkuperäinen kirjaus**. 
 
@@ -246,7 +248,7 @@ Luo uusi vuokrasopimus seuraavien ohjeiden mukaan.
 
    Valitun vuokrasopimustunnuksen poistotapahtumat näkyvät **Omaisuuden poistosuunnitelma** -sivulla. 
 
-   [![Käyttöoikeusomaisuuserän tapahtumat -sivu](./media/overview-20.png)](./media/overview-20.png)
+   [![Käyttöoikeusomaisuuserän tapahtumat -sivu.](./media/overview-20.png)](./media/overview-20.png)
 
    Alkuperäinen kirjaus, kumuloituntu poisto ja omaisuuden saldo näkyvät **Käyttöoikeusomaisuuserän tapahtumat** -sivulla. 
 

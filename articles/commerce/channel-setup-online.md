@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dc76c3c8c3da11202ebb29f4c5c0df72892c094a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936941"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351173"
 ---
 # <a name="set-up-an-online-channel"></a>Online-kanavan määrittäminen
 
@@ -55,11 +55,11 @@ Voit luoda ja määrittää uuden verkkokanavan seuraavasti.
 
 Seuraavassa kuvassa näytetään, miten uusi verkkokanava luodaan.
 
-![Uusi verkkokanava](media/channel-setup-online-1.png)
+![Uusi verkkokanava.](media/channel-setup-online-1.png)
 
 Seuraavassa kuvassa on esimerkki verkkokanavasta.
 
-![Esimerkki verkkokanavasta](media/channel-setup-online-2.png)
+![Esimerkki verkkokanavasta.](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Kielien määrittäminen
 
@@ -75,7 +75,7 @@ Verkkokanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen, toimi
 
 Seuraavassa kuvassa on **Asetukset**-välilehden **Toimitustavat**-, **Maksutavat**- ja **Täytäntöönpanoryhmän määritys** -asetusvaihtoehdot.
 
-![Verkkokanavan lisämääritykset](media/channel-setup-online-3.png)
+![Verkkokanavan lisämääritykset.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
 
@@ -90,7 +90,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavasta](media/channel-setup-retail-5.png)
+![Esimerkki maksutavoista.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
@@ -104,7 +104,7 @@ Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
 
-![Määritä toimitustavat](media/channel-setup-retail-7.png)
+![Määritä toimitustavat.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Täytäntöönpanoryhmän määrityksen määrittäminen
 
@@ -118,13 +118,13 @@ Voit määrittää täytäntöönpanoryhmän määrityksen noudattamalla seuraav
 
 Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määrittämisestä.
 
-![Täytäntöönpanoryhmän määrityksen määrittäminen](media/channel-setup-retail-9.png)
+![Täytäntöönpanoryhmän määrityksen määrittäminen.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
 
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
 

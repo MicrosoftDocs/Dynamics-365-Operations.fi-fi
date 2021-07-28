@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019443"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350399"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Sähköisen kaupan kehitysympäristön määrittäminen Tier 1 Retail Server -näennäiskoneen virheenkorjausta varten
 
@@ -38,11 +38,11 @@ Kun teet virheenkorjausta Tier 1 -ympäristössä, koska sivusto kutsuu nyt eri 
 
 Seuraavassa kuvassa on esimerkki virheestä, joka voi ilmetä, kun variantti valitaan tuotteen tietosivulla.
 
-![Virhe, kun variantti valitaan tuotteen tiedot -sivulla](media/unhandled-rejection-error.jpg)
+![Virhe, kun variantti valitaan tuotteen tiedot -sivulla.](media/unhandled-rejection-error.jpg)
 
 Seuraavassa kuvassa on esimerkki samanlaisesta virheestä selaimen virheenkorjaustyökaluissa (F12 Developer Tools). Virhesanomassa mainitaan sisällön suojauskäytännön direktiivin rike.
 
-![Virheenkorjaustyökalujen virhe](media/debugger-tools-error.JPG)
+![Virheenkorjaustyökalujen virhe.](media/debugger-tools-error.JPG)
 
 ## <a name="resolution"></a>Ratkaisu
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356827"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
@@ -38,7 +38,7 @@ Kun sähköisen kaupankäynnin ympäristöä valmistellaan [Microsoft Dynamics L
 
 Seuraavassa kuvassa on LCS:n sähköisen kaupankäynnin valmistelunäyttö, jossa on **Tuetut isäntänimet** -ruutu korostettuna. 
 
-![LCS:n sähköisen kaupankäynnin valmistelunäyttö ja **Tuetut isäntänimet** -ruutu korostettuna](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS:n sähköisen kaupankäynnin valmistelunäyttö ja **Tuetut isäntänimet** -ruutu korostettuna.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Voit luoda palvelupyynnön lisätoimialueiden lisäämiseksi ympäristöön, jos valmistelu on jo tapahtunut. Jos haluat luoda palvelupyynnön LCS:ssä, siirry ympäristössäsi kohtaan **Tuki \> Tukea vaativat ongelmat** ja valitse **Lähetä tapaus**.
 
@@ -56,7 +56,7 @@ Kun määrität sivuston ensimmäisen kerran sivuston luontiohjelmassa, **Määr
 
 Seuraavassa kuvassa näkyy Oletus-nimisen sivuston **Määritä sivusto** -valintaruutu, kun käytät sivustoa ensimmäisen kerran sivuston luontiohjelmassa.
 
-![**Määritä sivusto** -valintaruutu](./media/Domains_SetupyoursiteScreen.png)
+![**Määritä sivusto** -valintaruutu.](./media/Domains_SetupyoursiteScreen.png)
 
 **Valitse toimialue** -ruudussa voit liittää yhden sivustolle LCS:ssä annetuista tuetuista isäntänimistä sivuston luontiohjelmassa.
 
@@ -79,11 +79,11 @@ Kun sivustosi on määritetty poluksi, kaikki sivuston luontiohjelman sivuihin l
 
 Seuraavassa kuvassa näkyy **Uusi URL-osoite**-valintaruutu sivuston luontiohjelmassa sekä URL-osoitteen esimerkkipolku korostettuna. 
 
-![**Uusi URL-osoite**-valintaruutu sivuston luontiohjelmassa](./media/Domains_PageSetup2a.png)
+![**Uusi URL-osoite** -valintaruutu sivuston luontiohjelmassa.](./media/Domains_PageSetup2a.png)
 
 Seuraavassa kuvassa näkyy **URL-osoitteet**-sivu sivuston luontiohjelmassa sekä URL-osoite korostettuna luettelossa.
 
-![Käyttäjän työnkulku -vaihtoehdon suorittaminen käytännön työnkulussa](./media/Domains_URLsInSiteBuilder2a.png)
+![Käyttäjän työnkulku -vaihtoehdon suorittaminen käytännön työnkulussa.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Toimialueet sivuston luontiohjelmassa
 

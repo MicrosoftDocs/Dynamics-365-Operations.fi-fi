@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f00ca2748c3c8f7ec839069f21a5846377b6be04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802042"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349549"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
@@ -78,7 +78,7 @@ Siinä missä kanavatasolla määritetty laiteasema sisältää esiintymäkohtai
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS, johon on liitetty oheislaitteita
 
-[![Perinteinen kiinteä myyntipiste](./media/traditional-300x279.png)](./media/traditional.png)
+[![Perinteinen kiinteä myyntipiste.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Jos haluat liittää MPOS:n myyntipisteen oheislaitteisiin perinteistä kiinteää myyntipistettä käytettäessä, siirry ensin kassakoneeseen ja määritä sille laiteprofiili. Pääset myyntipisteen kassakoneisiin valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan määritys** &gt; **Myyntipisteen määritykset** &gt; **Kassakoneet**. 
 
@@ -97,7 +97,7 @@ Valitse lopuksi MPOS:ssä **Valitse laiteasema** -toiminnolla **localhost**-lait
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS tai Cloud POS ja erillinen laiteasema
 
-[![Jaetut oheislaitteet](./media/shared-300x254.png)](./media/shared.png)
+[![Jaetut oheislaitteet.](./media/shared-300x254.png)](./media/shared.png)
 
 Tässä skenaariossa MPOS- ja Cloud POS -asiakasohjelmat jakavat laiteaseman. Tämä skenaario edellyttää laiteaseman luontia määrittämään ladattavan paketti, portti ja laiteaseman käyttämä laiteprofiili. Pääset laiteaseman profiiliin valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen määritys** &gt; **Myyntipisteprofiilit** &gt; **Laiteaseman profiilit**. 
 

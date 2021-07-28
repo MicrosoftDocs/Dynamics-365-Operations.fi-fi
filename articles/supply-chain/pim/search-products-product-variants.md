@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b99f668061f429baf56cddb957049833bd74939
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8867eabde5fb0999e0a67f11cfa29e1e4fbc6855
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359978"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
 
@@ -58,7 +58,7 @@ Jos kirjoitat "kaiu 05", haku ei löydä yhtään tulosta. Tämä johtuu siitä,
 Voit rajoittaa hakutulosten lukumäärää käyttämällä **Tulosten määrä**-kenttää **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit** -sivulla. Jos tämän kentän arvoksi määritetään 0, kaikki hakutulokset palautetaan. Jos esimerkiksi määrität arvoksi 10, toiminto palauttaa enintään 10 hakutulosta.
 
 ## <a name="configure-the-product-search"></a>Tuotehaun määrittäminen
-Ennen kuin voit käyttää tuote- ja tuotevarianttihakua, määritä tuotehakutoiminto seuraavasti. [![tuotehaun määrittämisen 3 vaihetta\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
+Ennen kuin voit käyttää tuote- ja tuotevarianttihakua, määritä tuotehakutoiminto seuraavasti. [![Tuotehaun määrittämisen 3 vaihetta\_AXAppFall.](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
 ### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Vaihe 1: Sisällytä kaikki tarvittavat tuotteen ja tuotevariantin tunnukset ja dimensiot hakuehtoihin
 

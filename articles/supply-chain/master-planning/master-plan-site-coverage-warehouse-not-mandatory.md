@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b306fec702f608d00c3459cecd957eb251361c0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: e94deffb928704ff96491174a7bf31a823c7a38d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187575"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357068"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Pääsuunnittelu – toimipaikan kattavuus, varasto ei pakollinen
 
@@ -41,7 +41,7 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 -   Varastolle on määritetty täydennyssuhteet. Valitse **Inventoinnin- ja varastonhallinta &gt; Asetukset &gt; Varastoerittely &gt; Varastot** Valitse **Pääsuunnittelu**-välilehdessä **Päävarasto**-kenttäryhmä.
 -   Oletustilauksen tyypiksi on määritetty Tuotanto, Ostotilaus tai Kanban. Valitse **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Valitse nimike ja valitse sitten **Suunnitelma &gt; Tilauksen oletusasetukset**. Tarkista **Tilauksen oletusasetukset** -lomakkeesta **Oletusarvoinen tilaustyyppi** -kenttä.
 
-![Toimipaikan kattavuuden kysyntä, varasto ei pakollinen    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
+![Toimipaikan kattavuuden kysyntä, varasto ei pakollinen.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
 
 

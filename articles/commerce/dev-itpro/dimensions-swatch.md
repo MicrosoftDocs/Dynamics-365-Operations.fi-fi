@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117220"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353859"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Tuotedimensioarvojen konfiguroiminen näkymään väriruutuina
 
@@ -39,11 +39,11 @@ Dimensioiden näyttödimensioiden avulla Commerce voi käyttää heksadesimaalik
 
 Seuraavassa kuvassa on esimerkki, jossa värit näkyvät Commercen PDP:ssä väriruutuina.
 
-![Esimerkki tuotteen tietosivulla väriruutuina näkyvistä väreistä](../dev-itpro/media/swatch_pdp.png)
+![Esimerkki tuotetietosivulla väriruutuina näkyvistä väreistä.](../dev-itpro/media/swatch_pdp.png)
 
 Seuraavassa kuvassa on esimerkki, jossa värit näkyvät Commercen hakutulosluettelusivulla väriruutuina.
 
-![Esimerkki hakutulosluettelosivulla väriruutuina näkyvistä väreistä](../dev-itpro/media/swatch_searchresults.PNG)
+![Esimerkki hakutulosluettelosivulla väriruutuina näkyvistä väreistä.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Näyttödimensioiden ottaminen käyttöön väriruutuominaisuuksina Commerce headquarters -sovelluksessa
 
@@ -57,15 +57,15 @@ Konfiguraation voi tehdä seuraavilla tasoilla:
 
 - **Dimensio** – Avaa Commerce Headquartersissa dimension sivu etsimällä **väriä**, **kokoa** tai **tyyliä**. Ruudukossa näkyvät kunkin sivun dimensioarvot. Voit hallita näyttöjärjestystä, heksakoodia ja kuvan URL-arvoja. Seuraavassa kuvassa on esimerkki **Värit** -sivun määrityksestä.
 
-    ![Esimerkki dimensiomäärityksestä Värit-sivulla](../dev-itpro/media/swatch_Color.PNG)
+    ![Esimerkki dimensiomäärityksestä Värit-sivulla.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Dimensioryhmä** – Dynamics 365 Commercessa voit käyttää **RefinerGroup**-ominaisuutta dimensioryhmien luomiseen. Jos dimensioryhmät on määritetty, avaa haluamasi sivu etsimällä **Väriryhmä**, **Kokoryhmä** tai **Tyyliryhmä**. Jokaisella sivulla voit hallita heksakoodia, kuvan URL-osoitetta ja tarkentajaryhmän arvoja. Seuraavassa kuvassa on esimerkki **Väriryhmät**-sivun määrityksestä.
 
-    ![Esimerkki dimensiomäärityksestä Väriryhmät-sivulla](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Esimerkki dimensiomäärityksestä Väriryhmät-sivulla.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Tuotedimensio (tuotteen luonnin aikana)** – Kun luot uuden tuotteen, voit syöttää dimensioarvot **Tuotedimensiot**-sivulla. Aiemmin luotujen tuotteiden osalta **Heksakoodi**-, **URL-osoite**- (kuvia varten) ja **RefinerGroup**-kentät on ehkä jo määritetty. Voit kuitenkin muuttaa arvoja tarpeen mukaan. Seuraavassa kuvassa on esimerkki **Tuotedimensiot**-sivun määrityksestä.
 
-    ![Esimerkki dimensiomäärityksestä Tuotedimensiot-sivulla](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Esimerkki dimensiomäärityksestä Tuotedimensiot-sivulla.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > Heksakoodin ja kuvan URL-konfiguraatioiden hallintaprosessi noudattaa samaa kaavaa, jota käytetään dimensioiden näyttöjärjestyksen hallinnassa.
@@ -76,7 +76,7 @@ Useimpien väridimensioiden dimensioille on annettava heksakoodin väriarvo Comm
 
 Seuraavassa kuvassa on esimerkki siitä, missä väridimensiot on konfiguroitu heksakoodiarvoja käyttäen.
 
-![Esimerkki dimensiomäärityksestä, joka käyttää heksakoodeja](../dev-itpro/media/swatch_color_hexcode.png)
+![Esimerkki dimensiomäärityksestä, joka käyttää heksakoodeja.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Dimensioarvojen konfiguroiminen kuvan URL-osoitteita käyttämällä
 
@@ -86,13 +86,13 @@ Jokainen kuva on ladattava Commercen sivustonmuodostimeen ja julkaistava. Kirjoi
 
 Seuraavassa kuvassa on esimerkki, jossa käytetään kuvan URL-osoitteita **Värit** -sivun määrityksessä.
 
-![Esimerkki dimensiomäärityksestä, joka käyttää kuvan URL-osoitteita](../dev-itpro/media/swatch_color_urls.PNG)
+![Esimerkki dimensiomäärityksestä, joka käyttää kuvan URL-osoitteita.](../dev-itpro/media/swatch_color_urls.PNG)
 
 Mediamallin avulla voit määrittää kuvien URL-osoitteita, aivan samoin kuin tuote- ja luokkakuvien osalta. Kun kuvia ladataan sivustonmuodostajaan, tiedostonimeä kuvaavien käytäntöjen ja tiedostopolkujen on oltava yhdenmukaisia.
 
 Seuraavassa kuvassa on esimerkki, jossa käytetään kuvan URL-osoitteita mediasisältömallin määrityksessä.
 
-![Esimerkki mediamallin määrityksestä](../dev-itpro/media/swatch_media_template.PNG)
+![Esimerkki mediamallin määrityksestä.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Dimensioarvojen konfiguroiminen sekä heksakoodeja että kuvan URL-osoitteita käyttämällä
 
@@ -100,7 +100,7 @@ Useimpien väridimensioiden osalta voit määrittää sekä heksakoodeja että k
 
 Seuraavassa kuvassa on esimerkki, jossa käytetään sekä heksakoodeja että kuvan URL-osoitteita **Värit** -sivun määrityksessä.
 
-![Esimerkki dimensiomäärityksestä, joka käyttää sekä heksakoodeja että kuvan URL-osoitteita](../dev-itpro/media/swatch_color_hexandimage.png)
+![Esimerkki dimensiomäärityksestä, joka käyttää sekä heksakoodeja että kuvan URL-osoitteita.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Tarkentajaryhmien määrittäminen
 
@@ -110,7 +110,7 @@ Jos väridimensioarvot ovat esimerkiksi sininen, siniruudullinen, vaalean sinine
 
 Seuraavassa kuvassa on esitetty Commerce headquarters -kohteen **Väri**- ja **RefinerGroup**-ominaisuuksien suhde.
 
-![Esimerkki tarkentajaryhmän hallinnasta](../dev-itpro/media/swatch_refiner_group.png)
+![Esimerkki tarkentajaryhmän hallinnasta.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Hallitse kuvia Commercen sivuston muodostimessa
 
@@ -118,7 +118,7 @@ Jos dimensioarvoissa käytetään kuvien URL-osoitteita, vastaavat kuvat on lada
 
 Seuraavassa kuvassa on esimerkki, jossa palvelimeen **lataa tiedostoja** -valintaikkunaa käytetään kuvien lataamiseen sivustonmuodostimen mediakirjastoon. Se korostaa **Koko**-, **Väri**- ja **Tyyli**-luokat, jotka ovat valittavissa.
 
-![Esimerkki kuvatiedostoluokista lataamisen aikana sivuston muodostimen mediakirjastoon lataamisen aikana](../dev-itpro/media/swatch_sitebuilder.png)
+![Esimerkki kuvatiedostoluokista lataamisen aikana sivuston muodostimen mediakirjastoon lataamisen aikana.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Ota käyttöön väriruutunäyttö sähköisen kaupankäynnin -verkkosivustoilla
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937303"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358830"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ Muussa tapauksessa arvonlisäveron suunta on Saatava arvonlisävero.
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat projektitileille](media/Sales-Tax-Direction-Vendor.jpg)
+![Verojen mahdolliset suunnat projektitileille.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Tilin tyyppi on Toimittaja
 
@@ -73,7 +73,7 @@ Muussa tapauksessa arvonlisäveron suunta on Saatava arvonlisävero.
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat toimittajatileille](media/Sales-Tax-Direction-Vendor.jpg)
+![Verojen mahdolliset suunnat toimittajatileille.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Tilin tyyppi on Asiakas
 
@@ -89,7 +89,7 @@ Muussa tapauksessa arvonlisäveron suunta on Maksettava arvonlisävero.
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat asiakastileille](media/Sales-Tax-Direction-Customer.jpg)
+![Verojen mahdolliset suunnat asiakastileille.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Tilin tyyppi on Kirjanpito
 
@@ -103,7 +103,7 @@ Muussa tapauksessa, jos kirjauskansion summa on debet (positiivinen), arvonlisä
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat kirjanpitotileille](media/Sales-Tax-Direction-Ledger.jpg)
+![Verojen mahdolliset suunnat kirjanpitotileille.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Korvaa arvonlisäveron suunta
 
@@ -115,7 +115,7 @@ Siirry kohtaan **Kirjanpito \> Tilikartta \> Tilit \> Päätilit** ja valitse **
 
 Tässä osiossa kuvataan, miten arvonlisäveron summan etumerkki lasketaan.
 
-![Arvonlisäverotapahtumat-sivu](media/sales-tax-amount-sign.jpg)
+![Arvonlisäverotapahtumat-sivu.](media/sales-tax-amount-sign.jpg)
 
 Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonlisäveron suunnan ja summien etumerkin väliaikaisessa arvonlisäveron taulussa.
 

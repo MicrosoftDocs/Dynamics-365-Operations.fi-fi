@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9634612bcffbcf71b77dbb184e71367c67bac10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09dd9e2d648bec32d1504175dbb1470751e5c915
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822924"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355176"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimensioiden luonti ja dimensiojäsenten tuonti
 
@@ -36,7 +36,7 @@ Kustannuslaskenta on riippumaton moduuli, joka edellyttää muiden moduulien tie
 
 Seuraavassa kaaviossa kuvataan kustannuslaskennassa käytettävät dimensiot.
 
-[![Kustannuslaskennan dimensiot](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Kustannuslaskennan dimensiot.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 Kun tiedot tuodaan kustannuslaskentaan, voit luoda sen avulla eri näkökulmia, jotka avustavat organisaation kaikkien tasojen johtajia. Seuraavissa ohjeaiheissa on tietoja dimensioiden luomisesta ja dimension jäsenten tuonnista. 
 

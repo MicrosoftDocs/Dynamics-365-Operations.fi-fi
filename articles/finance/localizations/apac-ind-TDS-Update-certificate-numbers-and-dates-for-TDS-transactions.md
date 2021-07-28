@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a698a8ccc781167060400068dc4011d318b5fe53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023204"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360208"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Päivitä sertifikaattinumerot ja päivämäärät TDS-tapahtumille
 
@@ -33,7 +33,7 @@ Päivitä TDS-tapahtumien todistusnumerot ja -päivämäärät noudattamalla seu
 
 1. Valitse **Vero \> Ilmoitukset \> Ennakonpidätys \> Päivitä todistus**.
 
-    [![Päivitä todistus -sivu](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Päivitä todistus -sivu.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. Valitse **Päivitä todistus** -sivun **Valitse**-osassa **Verotyyppi**-kentässä **TDS**.
 3. Valitse **Todistusnumero**-kentässä asiakkaan tai toimittajan TDS-todistuksen numero.
@@ -60,4 +60,4 @@ Päivitä TDS-tapahtumien todistusnumerot ja -päivämäärät noudattamalla seu
 8. Valitse **Päivitä** päivittääksesi **Todistusnumero**- ja **Todistuspäivämäärä**-kentät TDS-tapahtumille alemmassa ruudukossa.
 10. Valitse **Vero \> Välilliset verot \> Ennakonpidätys \> Palautustodistus** ja valitse **Kysely**, jos haluat tarkastella päivitettyjä tapahtumarivejä, joissa on uudet todistusnumerot **Todistustapahtumat**-sivulla.
 
-    [![Todistustapahtumat-sivu](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Todistustapahtumat-sivu.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

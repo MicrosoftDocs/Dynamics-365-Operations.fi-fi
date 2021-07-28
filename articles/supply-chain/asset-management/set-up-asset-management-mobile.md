@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351510"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Resurssien hallinnan mobiilityötilan määrittäminen
 
@@ -47,7 +47,7 @@ Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dy
 1. Valitse Supply Chain Managementissa **Asetukset**-painike (rataskuvake oikeassa yläkulmassa) ja valitse sitten valikossa **Mobiilisovellus**.
 1. Etsi **Mobiilisovelluksen hallinta** -valintaikkunassa **Resurssien hallinta** -ruutu. Jos siinä on teksti Metatiedoissa – ei julkaistu, työtilaa ei ole vielä julkaistu. Jos siinä on teksti Metatiedoissa – julkaistu, työtila on jo julkaistu ja tämän menettelyn muut vaiheet voidaan ohittaa.
 
-    ![Mobiilisovelluksen hallinta -valintaikkuna](media/mobile-workspaces.png "Mobiilisovelluksen hallinta -valintaikkuna")
+    ![Mobiilisovelluksen hallinta -valintaikkuna.](media/mobile-workspaces.png "Mobiilisovelluksen hallinta -valintaikkuna")
 
 1. Valitse ensin **Resurssien hallinta** -ruutu ja sitten työkalurivillä **Julkaise**. Muutaman sekunnin kuluttua pitäisi avautua ilmoitus, jonka mukaan työtilan julkaisu on onnistunut. Lisäksi ruudussa olevan tekstin pitäisi olla nyt Metatiedoissa – julkaistu.
 
@@ -60,22 +60,22 @@ Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dy
 
 1. Avaa Finance and Operations (Dynamics 365) -sovellus. Kirjautumissivun pitäisi avautua. Anna **Kirjaudu sisään** -kentässä Supply Chain Managementin URL-osoite tai valitse viimeaikainen URL-osoite **Viimeisimmät ympäristöt** -luettelo ja valitse sitten **Yhdistä**.
 
-    ![Kirjautumissivu](media/mobile-app-sign-in.png "Kirjautumissivu")
+    ![Kirjautumissivu.](media/mobile-app-sign-in.png "Kirjautumissivu")
 
 1. Jos yhteys pyydetään vahvistamaan, valitse **Ymmärrän**-valintaruutu ja valitse sitten **Yhdistä**.
 1. Kirjaudu mobiilisovellukseen käyttämällä **Valitse tili** -sivulla Microsoft-tiliä.
 
     **Työtilat**-sivu avautuu. Siinä on luettelo kaikista mobiilityötiloista, jotka Supply Chain Management -esiintymä on julkaissut.
 
-    ![Työtilojen luettelo](media/mobile-app-workspaces.png "Työtilojen luettelo")
+    ![Työtilojen luettelo.](media/mobile-app-workspaces.png "Työtilojen luettelo")
 
 1. Jos yritystä (yhtiötä) on vaihdettava, napauta vasemmassa yläkulmassa Valikko-painiketta (siinä useita allekkaisia viivoja) ja valitse sitten **Vaihda yritys**.
 
-    ![Yrityksen vaihtaminen](media/mobile-app-change-comp.png "Yrityksen vaihtaminen")
+    ![Yrityksen vaihtaminen.](media/mobile-app-change-comp.png "Yrityksen vaihtaminen")
 
 1. Avaa **Työtilat**-sivulla työtila, jota haluat käyttää, valitsemalla se.
 
-    ![Resurssien hallinnan mobiilityötila](media/mobile-app-asset-workspace.png "Resurssien hallinnan mobiilityötila")
+    ![Resurssien hallinnan mobiilityötila.](media/mobile-app-asset-workspace.png "Resurssien hallinnan mobiilityötila")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Resurssien hallinnan mobiilityötilan käyttäminen
 

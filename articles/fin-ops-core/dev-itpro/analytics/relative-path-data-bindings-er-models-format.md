@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350157"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa
 
@@ -31,20 +31,20 @@ Sähköisellä raportointityökalun (ER) avulla käyttäjät voivat määrittä�
 
 ER-yhdistämismääritysten suunnitteluohjelmien käytettävyyttä parantamaan on julkaistu [suhteellisen polun](er-formula-language.md#relative-path) ominaisuus. Suhteellisen polun esitysvaihtoehto on oletusarvoisesti otettu käyttöön sovelluksen kaikissa uusissa esiintymissä, joissa ER-suunnittelukokemus on otettu käyttöön (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Suhteellisen polun parametri on toteutettu, jotta käyttäjät voivat jatkaa täydellisen polun käyttämistä, kun he käsittelevät ER-sidontojen tätä esitystä.
 
-[![Käyttäjän parametrit](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![Käyttäjän parametrit.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 Kun suhteellisen polun käyttöparametri on otettu käyttöön, yksi @-merkki korvaa polun päänimikkeeseen nykyisen mallielementin sidonnassa. Koko sidontapolku lyhenee, mikä selkeyttää koko yhdistämismääritystä ja helpottaa ymmärtämistä. Useimmissa tapauksissa ER-suunnitteluohjelmassa ei tarvita erillistä vieritystä kaikkien tietomallin sidontojen näyttämiseen.
 
-[![Mallin yhdistämismäärityksen suunnitteluohjelma](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![Mallin yhdistämismäärityksen suunnitteluohjelma.](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 Kun aloitat uuden ER-lausekkeen suunnittelun, tarvitset sidonnan määrittämiseen päänimikkeen kenttään vain yhden merkin.
 
-[![Reseptien suunnittelu](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![Kaavojen suunnittelutoiminto.](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 Jos päätät muuttaa päämallinimikkeen tietolähdettä, absoluuttisessa polussa tämä mallinimike ja kaikki sisäkkäiset nimikkeet on sidottava uudelleen manuaalisesti uuteen tietolähteeseen. Kun suhteellisen polun käyttö on otettu käyttöön ja valitset uuden päänimikkeeseen sidottavan tietolähteen, saat mahdollisuuden sitoa kaikki päänimikkeen sisäkkäiset elementit automaattisesti uudelleen yhdellä napsautuksella.
 
-[![Aiemmin luodun polun sanoman korvaaminen](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![Aiemmin luodun polun sanoman korvaaminen.](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 Jos vahvistat sisäkkäisten nimikkeiden uudelleensidonnan, uusi päänimike sijoitetaan kunkin aiemmin luodun päänimikkeen sisältävän sisäkkäisen nimikkeen polkuun.
 Tämä toiminto ei katkaise ER-kehyksen yhteensopivuutta aiempien versioiden kanssa. Kaikkia aiemmin suunniteltuja ER-määrityksiä voi käyttää tämän uuden toiminnon kanssa eikä päivityksiä tai muuntoja tarvita.

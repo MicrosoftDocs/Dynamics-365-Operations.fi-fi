@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357999"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
 
@@ -53,14 +53,14 @@ Seuraavassa skenaariossa näytetään, miten varastonhallintaa käyttävä nimik
 1. Määritä **Tilinumero**-arvoksi *1001*.
 1. Määritä **Numero** tätä harjoitusta varten tunnistamasi ostotilauksen numeroon.
 
-    ![Nimikkeen saapumisen kirjauskansio](../media/item-arrival-journal-header.png "Nimikkeen saapumisen kirjauskansio")
+    ![Nimikkeen saapumisen kirjauskansio.](../media/item-arrival-journal-header.png "Nimikkeen saapumisen kirjauskansio")
 
 1. Luo kirjauskansion otsikko valitsemalla **OK**.
 1. Valitse **Kirjauskansion rivit**  -osasta **Lisää rivi** ja kirjoita seuraavat tiedot:
     - **Nimikenumero** – määritä arvoksi *M9200*. **Toimipaikka**, **Varasto** ja **Määrä** asetetaan 10 kuormalavan (1 000 kpl) varastotapahtumatietojen perusteella.
     - **Sijainti** – Määritä arvoksi *001*. Tämä tietty sijainti ei seuraa rekisterikilpiä.
 
-    ![Nimikkeen saapumisen kirjauskansion rivi](../media/item-arrival-journal-line.png "Nimikkeen saapumisen kirjauskansion rivi")
+    ![Nimikkeen saapumisen kirjauskansion rivi.](../media/item-arrival-journal-line.png "Nimikkeen saapumisen kirjauskansion rivi")
 
     > [!NOTE]
     > **Päivämäärä**-kenttä määrittää päivämäärän, jolloin tämän nimikkeen käytettävissä oleva määrä rekisteröidään varastoon.  

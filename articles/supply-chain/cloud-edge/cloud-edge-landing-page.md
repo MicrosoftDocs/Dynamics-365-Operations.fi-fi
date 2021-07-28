@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261743"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354806"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Pilven ja reunan asteikon yksiköt valmistuksen ja varaston hallinnan kuormituksia varten
 
@@ -41,7 +41,7 @@ Kuormituksen ominaisuuksia vapautetaan jatkuvasti lisäparannusten avulla.
 
 Scale unitit laajentavat Supply Chain Management -keskusympäristöä lisäämällä erillisestä käsittelykapasiteettia. Scale unitit voidaan suorittaa pilvessä. Vaihtoehtoisesti ne voidaan suorittaa reunapalveluna, paikallisena omissa tiloissa.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 ja scale unitit":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 ja scale unitit.":::
 
 Skaalausyksiköt tarjoavat määritetyn kuormituksen sietokykyä, luotettavuutta ja skaalaamista. Edge scale unitit voidaan väliaikaisesti irrottaa pilvikeskuksen ympäristöstä, ja työntekijät jatkavat työskentelyä reunalla määritetyissä kuormituksissa.
 
@@ -157,7 +157,7 @@ Skaalausyksiköitä on saatavilla useassa varastointiyksikössä (SKUs) ja hinno
 
 Lähtötason SKU on *Perustaso* ja sitä suorituskykyisempää SKU:ta kutsutaan *vakiotasoksi*. Jokaiselle SKU:lle on esiladattu tietty määrä kuukausitapahtumia. Voit kuitenkin suurentaa kuukausittaista tapahtumabudjettia lisäämällä kullekin SKU:lle ylitysapuohjelmia.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Cloud Scale Unitin apuohjelmat":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Cloud Scale Unitin apuohjelmat.":::
 
 > [!TIP]
 > Tunnista tarpeisiisi parhaiten sopiva koko toimimalla kumppanisi ja Microsoftin kanssa ymmärtääksesi tarvitsemasi kuukausittainen tapahtumakoko.
@@ -181,11 +181,11 @@ Jos toivottu vuokraaja ei ole luettelossa, siirry [LCS:hen](https://lcs.dynamics
 
 Käyttöönoton tila näkyy kunkin luettelossa olevan vuokraajan kohdalla.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Vuokralaisten luettelo Dynamics 365 -vuokralaiset -välilehdessä":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Vuokraajien luettelo Dynamics 365 -vuokraajat -välilehdessä.":::
 
 Valitse **Napsauta tästä aloittaaksesi** pyytääksesi käyttöönoton LCS-vuokraajalle. Käyttöehdot on hyväksyttävä. Lisäksi on annetta yrityksen sähköpostiosoite, johon Microsoft voi lähettää käyttöönottoprosessiin liittyviä viestejä.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Vuokraajan rekisteröitymisen lähettäminen":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Vuokraajan rekisteröitymisen lähettäminen.":::
 
 Microsoft tarkistaa pyynnön ja ilmoittaa seuraavista vaiheista lähettämällä sähköpostia rekisteröitymislomakkeessa annettuun osoitteeseen. Microsoft tekee tiivistä yhteistyötä, jotta skaalausyksiköt voidaan ottaa käyttöön hybriditopologiassa liiketoimintaskenaariossa.
 
@@ -195,13 +195,13 @@ Kun käyttöönottosi on valmis, voit konfiguroida skaalausyksiköt ja kuormituk
 
 Siirry [Scale Unit -hallintaportaaliin](https://aka.ms/SCMSUM) ja käytä kirjautumiseen vuokraajan tiliä. Voit lisätä keskusympäristön **Määritä scale unitit** -sivulla, jos se ei ole vielä luettelossa. Voit sitten valita keskuksen, johon haluat määrittää scale unitit ja kuormitukset.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unitin ja kuormituksen hallintakokemus":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unitin ja kuormituksen hallintakokemus.":::
 
 Jos haluat lisätä vähintään yhden tilauksessa olevan skaalausyksikön, valitse **Lisää skaalausyksiköitä**.
 
 Lisää varastonhallinnan kuormitus yhteen scale unitiin valitsemalla **Määritetyt kuormitukset** -välilehdessä **Luo kuormitus** -painike. Kunkin kuormituksen osalta on määritettävä kuormituksen omistamien prosessien konteksti. Varastonhallinnan kuormituksissa konteksti on tietyn toimipaikan ja yrityksen tietty varasto.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Kuormituksen luominen":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Kuormituksen luominen.":::
 
 > [!TIP]
 > Ajan mittaan skaalausyksikköjen hallintakokemukseen lisätään lisäparannuksia, jotka helpottavat elinkaarenhallinnan toimintoja. Nykyisen julkaisun erityisominaisuudet on dokumentoitu mukana olevassa käyttökirjassa, joka on niiden asiakkaiden käytettävissä, jotka ovat mukana mukana jaetussa hybriditopologiassa Supply Chain Managementia varten. <!-- KFM: Add a link to the handbook when it is published -->

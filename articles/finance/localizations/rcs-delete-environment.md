@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 637962cf63bfd8c2330726f33545f939ec91d58d
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: cf82abbe5493eac9665323738441fa016205e9ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295815"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355004"
 ---
 # <a name="regulatory-configuration-service-rcs---delete-an-rcs-environment"></a>Regulatory Configuration Service (RCS) ‑ poista RCS-ympäristö
 
@@ -38,11 +38,11 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheet, seuraavien edellytysten on
 1. Avaa RCS ja valitse **Sähköinen raportointi** -työtilaruutu.
 2. Valitse **Aiheeseen liittyviä linkkejä** -osassa **Poista RCS-ympäristö**.
 
-    ![Poista RCS-ympäristön linkki Aiheeseen liittyviä linkkejä -osassa](media/01_RCS-Delete-Environ-Related-Link.PNG)
+    ![Poista RCS-ympäristön linkki Aiheeseen liittyviä linkkejä -osassa.](media/01_RCS-Delete-Environ-Related-Link.PNG)
 
 3. Tarkista näyttöön tulevassa valintaikkunassa ympäristön poistoalueen sanomat.
 
-    ![Sanomat Poista RCS-ympäristö -valintaikkunassa](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
+    ![Sanomat Poista RCS-ympäristö -valintaikkunassa.](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
 
     > [!IMPORTANT]
     > RCS-ympäristön poistoa ei voi peruuttaa.

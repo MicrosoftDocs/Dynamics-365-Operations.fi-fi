@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4c9c9463162f21cdaf40f1c4ed6d5ae51e97cb88
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4dbfa96e6393bae6ad4ffa642b39a5d04c596c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799080"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349373"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Kokeen yhdistäminen ja variaatioiden muokkaaminen
 
@@ -28,7 +28,7 @@ Tässä ohjeaiheessa käsitellään kokeen yhdistämistä Commercessa ja muutost
 
 Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä ohjeaiheissa.
 
-[ ![Kokeilun käyttäjän siirtymä – yhdistäminen ja muokkaaminen](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Kokeilun käyttäjän siirtymä – yhdistäminen ja muokkaaminen.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Sen jälkeen kun [koe on määritetty](experimentation-setup.md) kolmannen osapuolen palvelussa, koe yhdistetään Dynamics 365 Commercessa, jossa muokataan kokeen variaatioita.
 
