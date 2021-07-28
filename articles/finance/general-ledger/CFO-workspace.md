@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360709"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Taloushallinnon dimensioiden lisääminen talousjohtajan työtilaan
 
@@ -45,14 +45,14 @@ Tässä ohjeaiheessa kerrotaan, miten taloushallinnon dimensiot lisätään talo
 11. Vaihda **Ristisuodatus**-arvoksi **Yksittäinen**.
 12. Valitse ensin sekä **Tee tästä suhteesta aktiivinen** että **Oleta viite-eheys**, sitten **OK** ja lopuksi **Sulje**.
 
-    [![Suhteen luominen](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Suhteen luominen.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. **Kentät**-luettelossa pitäisi olla taulu ja käytettävissä olevat taloushallinnon dimensiot. Vedä sopivat taloushallinnon dimensiot raporttitason suodattimiin.
 14. Tallenna muutokset.
 15. Napsauta sovellusobjektipuussa (AOT) hiiren kakkospainikkeella projektia ja valitse sitten **Synkronoi**.
 16. Luo projekti ja tarkastele sitten tuloksia avaamalla sovellus.
 
-    [![Valmis työtila](./media/workspace.png)](./media/workspace.png)
+    [![Valmis työtila.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

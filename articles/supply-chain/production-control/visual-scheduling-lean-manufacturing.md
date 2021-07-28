@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c91de72f32f70fba09c6b7e3ca284553d0c858b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188843"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353441"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Lean-valmistuksen visuaalinen ajoitus
 
@@ -47,7 +47,7 @@ Voit aikatauluttaa ainoastaan **Prosessi**-tyyppisiä töitä. Kanban-työ ja se
 ## <a name="kanban-schedule-board"></a>Kanban-aikataulu
 **Kanban-aikataulu** -sivulla on seitsemän pääelementtiä, jotka esitetään oheisessa kuvassa. 
 
-![Kanban-aikataulu](./media/kanban-schedule-board-1024x554.png)
+![Kanban-aikataulu.](./media/kanban-schedule-board-1024x554.png)
 1.  Toimintoruutu
 2.  Kenttien suodatus
 3.  Suunnittelemattomat työt -painike
@@ -71,7 +71,7 @@ Voit parantaa Kanban-aikataulun yhteenvetoa väreillä, jotka erottavat kanban-t
 ## <a name="plan-unplanned-jobs"></a>Suunnittele suunnittelemattomat työt
 Voit aikatauluttaa suunnittelemattomat kanban-työt **Suunnittele suunnittelemattomat työt** -valintaikkunassa. Avaa valintaikkuna valitsemalla **suunnittelemattomat työt** -painike, joka näyttää suunnittelemattomien töiden määrän. Vaihtoehtoisesti napsauta **Suunnittele suunnittelemattomat työt** **Taulu** välilehdellä toimintoruudussa. Valintaikkunassa näkyy työsolun suunnittelemattomien kanban-töiden luettelo. Voit suodattaa kaikki ruudukon kentät **Suodatin**-kentän avulla. Voit esimerkiksi suodattaa tietyn tuotteen kanban-työt. Kun olet suodattanut ajoitettavien töiden luettelon, valitse ne luettelosta ja valitse sitten **OK**. Jos haluat käyttää töiden ajoittamiseen automaattista suunnittelua, määritä **Automaattinen suunnittelu** -asetukseksi **Kyllä**. Tässä tapauksessa työt ajoitetaan tietylle kaudelle eräpäivän mukaan. Voit myös ajoittaa töitä kausittain. Valitse kausi **Kausi**-kentästä. Seuraavassa kuvassa on esimerkki **SSuunnittele suunnittelemattomat työt** -valintaikkunasta. 
 
-![Suunnittele suunnittelemattomat työt -valintaikkuna](./media/plan-unplanned-jobs-1024x564.png)
+![Suunnittele suunnittelemattomat työt -valintaikkuna.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Saman kauden kanban-töiden järjestäminen
 Voit muuttaa kauden valittujen projektien numerosarjan. Tämä ominaisuus on hyödyllinen, jos haluat priorisoida joitakin töitä kauden aikana. Vaihtoehtoisesti voit halutessasi järjestää työt saman työmääritteen perusteella optimoidaksesi työn suorituksen. Voit muuttaa järjestystä vetämällä ja pudottamalla tai käyttämällä **Taaksepäin**- ja **Eteenpäin** -valikkovaihtoehtoja **Taulu**-välilehdessä toimintoruudussa.

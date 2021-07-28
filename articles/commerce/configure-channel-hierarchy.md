@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 94d38c5c3a091263b310f346f839e1a67d6c0609
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 79054573fa6f86bea5c4fe014233d71c01020348
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796121"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352587"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
 
@@ -45,7 +45,7 @@ Voit määrittää kanavan kanavan siirtymishierarkian käyttöä varten noudatt
 
 Seuraavassa kuvassa esitetään, miten kanava määritetään kanavan siirtymishierarkian käyttöä varten.
 
-![Kanavan esimerkkimääritys](media/configure-channel-hierarchy-1.png)
+![Kanavan esimerkkimääritys.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Määritä määritteen metatiedot
 
@@ -61,7 +61,7 @@ Määritä määritteen metatiedot seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa näkyy esimerkkijoukko kanavan tuotemääritteitä, jotka on määritetty kanavan luokkasolmussa.
 
-![Kanavamääritteet kanavaluokkasolmussa](media/configure-channel-hierarchy-2.png)
+![Kanavamääritteet kanavaluokkasolmussa.](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>Julkaise muutokset
 
@@ -74,11 +74,11 @@ Julkaise muutokset seuraavien ohjeiden avulla.
 
 Seuraavassa kuvassa näkyy, miten kanavapäivitykset julkaistaan.
 
-![Julkaise kanavan päivitykset](media/configure-channel-hierarchy-3.png)
+![Julkaise kanavan päivitykset.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Luo kanavan siirtymishierarkia](create-channel-hierarchy.md)
+[Vähittäismyyntikanavan siirtymishierarkian luominen](create-channel-hierarchy.md)
 
 
 

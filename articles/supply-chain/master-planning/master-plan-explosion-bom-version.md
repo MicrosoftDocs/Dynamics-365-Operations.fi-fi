@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17e5d8638dc02d92a0c67364790353833551250f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 7c4f1306faa2c0ae02fee48449839db4ff0907ff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187407"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348389"
 ---
 # <a name="explosion-of-a-bom-version"></a>Tuoterakenneversion hajottaminen
 
@@ -34,7 +34,7 @@ Tuoterakenneversion kysynnän hajotus luo kysynnän kullekin tuoterakennerivin n
 -   Toimipaikkadimensio on pakollinen ja se on määritettävä tarvetapahtumalle.
 -   Toimipaikkadimensio on yhdenmukainen. Näin ollen alemman tason tarpeen toimipaikka on sama kuin alkuperäisen tarvetapahtuman toimipaikka.
 
-Seuraava kuva ilmaisee, miten pääsuunnittelun kysynnän hajotus etenee. ![Kysynnän hajottaminen tuoterakenneversion avulla](./media/multisitedemandexplosionscenariousingbomversion.gif)
+Seuraava kuva ilmaisee, miten pääsuunnittelun kysynnän hajotus etenee. ![Kysynnän hajottaminen tuoterakenneversion avulla.](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c398579a0a408e7f5625a3e801a967955c4b1e5b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c731e0284b720394059384e21deea1ea4407718c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020112"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352807"
 ---
 # <a name="tax-isnt-calculated-or-the-tax-amount-is-zero"></a>Veroa ei lasketa tai veron summa on nolla.
 
@@ -32,17 +32,17 @@ Jos tapahtuma ei valitse oikeita verokoodeja tai jos se ei valitse mitään vero
 
 1. Varmista tapahtumarivin **Rivitiedot**-pikavälilehden **Asetukset**-välilehden **Arvonlisävero**-osassa, että oikeat veroryhmät ovat valittuina **Nimikkeen arvonlisäveroryhmä**- ja **Arvonlisäveroryhmä**-kentissä. Jos oikeat veroryhmät eivät ole valittuina, valitse ne.
 
-    [![Nimikkeen arvonlisäveroryhmä- ja Arvonlisäveroryhmä-kentät](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+    [![Nimikkeen arvonlisäveroryhmä- ja Arvonlisäveroryhmä-kentät.](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
 2. Siirry kohtaan **Vero** \> **Välilliset verot** \> **Arvonlisävero** \> **Arvonlisäveroryhmät**.
 3. Valitse haluamasi arvonlisäveroryhmä ja tee sitten huomautus **Arvonlisäverokoodi**-kentän verokoodista **Asetukset**-pikavälilehdessä.
 
-    [![Arvonlisäveroryhmät-sivu](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+    [![Arvonlisäveroryhmät-sivu.](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
 4. Siirry kohtaan **VeroTax** \> **Välilliset verot** \> **Arvonlisävero** \> **Arvonlisäveroryhmät**.
 5. Valitse asianmukainen nimikkeen arvonlisäveroryhmä ja varmista **Asetukset**-pikavälilehdessä, että **Arvonlisäverokoodi**-kentän verokoodi vastaa arvonlisäveroryhmän verokoodia.
 
-    [![Nimikkeiden arvonlisäveroryhmät -sivu](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+    [![Nimikkeiden arvonlisäveroryhmät -sivu.](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
 6. Jos verokoodit eivät täsmää, päivitä yhden ryhmän arvonlisäverokoodi.
 
@@ -53,12 +53,12 @@ Jos verokoodit ovat vapautettuja tai jos veroprosentti on 0 (nolla), veron laske
 1. Siirry kohtaan **Vero** \> **Välilliset verot** \> **Arvonlisävero** \> **Arvonlisäveroryhmät**.
 2. Valitse haluamasi arvonlisäveroryhmä ja varmista sitten **Asetukset**-pikavälilehdessä, että **Vapautus**-valintaruutua ei ole. Jos se on valittuna, poista valinta.
 
-    [![Arvonlisäveroryhmät-sivun Vapautus-valintaruutu](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
+    [![Arvonlisäveroryhmät-sivun Vapautus-valintaruutu.](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
 3. Valitse **Vero** \> **Välilliset verot** \> **Arvonlisävero** \> **Arvonlisäverokoodit**.
 4. Valitse asianmukainen arvonlisäverokoodi ja varmista sitten, että **Arvo**-kentän veroprosenttiarvo ei ole 0 (nolla). Jos arvo on 0, päivitä kenttä niin, että sen arvoksi on määritetty oikea veroprosentti.
 
-    [![Arvonlisäverokoodin arvot -sivun Arvo-kenttä](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+    [![Arvonlisäverokoodin arvot -sivun Arvo-kenttä.](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
 ## <a name="determine-whether-zero-is-the-correct-tax-amount"></a>Määritä, onko oikea verosumma nolla
 
@@ -67,7 +67,7 @@ Joissakin tilanteissa verosumma 0 (nolla) on oikea. Seuraavia ohjeita noudattama
 1. Siirry kohtaan **Kirjanpito** \> **Kirjanpidon asetukset** \> **Kirjanpitoparametrit**.
 2. **Arvonlisävero**-välilehden **Laskentatapa**-kentässä vahvista, että **Yhteensä** on valittuna.
 
-    [![Kirjanpitoparametrit-sivun Laskentatapa-kenttä](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+    [![Kirjanpitoparametrit-sivun Laskentatapa-kenttä.](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
 3. Valitse **Vero** \> **Välilliset verot** \> **Arvonlisävero** \> **Arvonlisäverokoodit**.
 4. Valitse asianmukainen arvonlisäverokoodi, valitse **Laskenta** \> **Alv-rajan peruste** ja vahvista, että alv-rajan perusteen arvona on **Laskun saldon nettosumma** tai **Laskun loppusumma muut arvonlisäverosummat mukaan luettuna**. Lisätietoja on kohdassa [Laskun loppusumma muut arvonlisäverosummat mukaan luettuna](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts).

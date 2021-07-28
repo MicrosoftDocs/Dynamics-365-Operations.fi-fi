@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102684"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359882"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Asiakasportaalin mukauttaminen ja käyttäminen
 
@@ -27,7 +27,7 @@ Tässä ohjeaiheessa esitellään eri sivut, jotka ovat valmiina käytettäviss�
 
 Asiakasportaali tarjoaa joitakin valmiita verkkosivuja ja toimintoja. Seuraavassa sivustokartassa on yleiskatsaus kyseisistä verkkosivuista ja toiminnoista sekä tehtävistä, jotka voivat suorittaa toimenpiteet.
 
-![Asiakkaan portaalisivuston sivustokartta](media/customer-portal-site-map.png "Asiakkaan portaalisivuston sivustokartta")
+![Asiakasportaalin sivustokartta.](media/customer-portal-site-map.png "Asiakkaan portaalisivuston sivustokartta")
 
 ## <a name="typical-customizations"></a>Tyypilliset mukautukset
 
@@ -61,12 +61,12 @@ Tässä ovat vakiovaiheet tilauksen lähettämiselle asiakasportaalista.
     - **Hankintanumero** – Syötä tilauksen tilausnumero. Tämä kenttä ei ole pakollinen.
     - **Toimita maahan/alueelle** – Määritä maa tai alue, johon nimikkeet toimitetaan. Tämä kenttä määritetään automaattisesti muille kuin järjestelmänvalvoja-käyttäjille.
 
-    ![Tilauksen tiedot -sivu](media/customer-portal-order-information.png "Tilauksen tiedot -sivu")
+    ![Tilauksen tiedot -sivu.](media/customer-portal-order-information.png "Tilauksen tiedot -sivu")
 
 1. Valitse **Seuraava**.
 1. Valitse **Nimikkeet**-sivulla **Lisää nimike**.
 
-    ![Tuotesivu](media/customer-portal-items.png "Tuotesivu")
+    ![Nimikkeet-sivu.](media/customer-portal-items.png "Tuotesivu")
 
 1. **Tuotetieto**-valintaikkunassa kuvaillaan seuraavat kentät:
 
@@ -75,14 +75,14 @@ Tässä ovat vakiovaiheet tilauksen lähettämiselle asiakasportaalista.
     - **Yksikkö** – Määritä mittayksikkö (esimerkiksi **kpl**, **kg** tai **laatikko**).
     - **Arvioitu nettosumma** – Arvo lasketaan nimikkeen arvioituna hintana valitun yksikkömäärän mukaan.
 
-    ![Tuotetieto-valintaikkuna](media/customer-portal-item-information.png "Tuotetieto-valintaikkuna")
+    ![Tuotetieto-valintaikkuna.](media/customer-portal-item-information.png "Tuotetieto-valintaikkuna")
 
 1. Lisää nimike tilaukseen valitsemalla **Lähetä**.
 1. Toista vaiheet 4 - 6, kunnes olet lisännyt kaikki tilattavat nimikkeet.
 1. Kun olet lisännyt haluamasi nimikkeet, valitse **Nimikkeet**-sivulta **Seuraava**.
 1. **Tilauksen tiedot** -sivulla on tilauksen yhteenveto. Tarkista tilauksen sisältö ja toimitustiedot. Jos kaikki näyttää oikealta, lähetä tilaus valitsemalla **Lähetä**.
 
-    ![Valmis Tilauksen tiedot -sivu](media/customer-portal-order-submit.png "Valmis Tilauksen tiedot -sivu")
+    ![Valmis Tilauksen tiedot -sivu.](media/customer-portal-order-submit.png "Valmis Tilauksen tiedot -sivu")
 
 ### <a name="standard-data-setup"></a>Tietojen vakioasetus
 
@@ -147,19 +147,19 @@ Kaikki asiakasportaalin ohjausobjektit ovat sisäänrakennettuja Power Apps -por
 
 Vain asiakasportaalin mallipohjaan sisältyvää mukautettua ohjausobjektia käytetään luotaessa ruutuja kotisivulle.
 
-![Kotisivun ruudut](media/customer-portal-home-page-tiles.png "Kotisivun ruudut")
+![Kotisivun ruudut.](media/customer-portal-home-page-tiles.png "Kotisivun ruudut")
 
 Voit muokata ruutuja seuraavasti.
 
 1. Avaa [Portaalin hallintasovellus](/powerapps/maker/portals/configure/configure-portal).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivumallit**.
 
-    ![Portaalinhallinnan siirtymisruutu](media/customer-portal-nav.png "Portaalinhallinnan siirtymisruutu")
+    ![Portaalinhallinnan siirtymisruutu.](media/customer-portal-nav.png "Portaalinhallinnan siirtymisruutu")
 
 1. Valitse sivupohja, jonka nimi on **Koti**.
 1. Avaa sivun lähdekoodi valitsemalla **Verkkomalli**-kentässä **Koti**-linkki.
 
-    ![Verkkomallin kenttä](media/customer-portal-web-template.png "Verkkomallin kenttä")
+    ![Verkkomalli-kenttä.](media/customer-portal-web-template.png "Verkkomallin kenttä")
 
 1. Sinun pitäisi nyt nähdä koko kotisivun lähdekoodi ja voi muokata sitä kuin tarvitset.
 

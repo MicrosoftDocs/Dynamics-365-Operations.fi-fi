@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840410"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360421"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -179,7 +179,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Etsi kyselyeditorin valintaikkunan ruudukon **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Asiakastili*, ja määritä kyseisen rivin **Ehdot**-kentän aseetukseksi *US-001*.
 1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Lisää**:
@@ -214,7 +214,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Määritä **Avoimien lähetysten konsolidointi** -asetukseksi *Kyllä*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Laajenna ja valitse kyselyeditorin valintaruudun **Liitokset**-välilehdessä **Taulut \> Kuorman tiedot**.
 1. Valitse **Lisää taulun liitos**.
@@ -251,9 +251,9 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Määritä **Avoimien lähetysten konsolidointi** -asetukseksi *Kyllä*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena on *Asiakkaan tilaus*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
 1. Valitse **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Asiakastili*, ja määritä kyseisen rivin **Ehdot**-kentän asetukseksi *US-001*.
 1. Sulje valintaikkuna valitsemalla **OK**.
@@ -283,7 +283,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Lisää kyselyeditoriin valintaikkunassa seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue**-välilehdessä **Lisää**:
 
@@ -317,7 +317,7 @@ Yleensä tämä liiketoimintatapaus otetaan huomioon käyttämällä [skenaarios
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -kentässä rivi, jossa **Kentän nimi** -kentän asetuksena on *Toimitustapa*.
-1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
+1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Varasto*, ja määritä kyseisen rivin **Ehdot**-kentän asetukseksi *61, 63*.
 1. Sulje valintaikkuna valitsemalla **OK**.

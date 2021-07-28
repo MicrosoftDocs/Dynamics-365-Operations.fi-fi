@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056345"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360541"
 ---
 # <a name="set-up-reason-codes"></a>Määritä syykoodit
 
@@ -56,15 +56,15 @@ Tammikuussa 2021 syykoodit siirretään **Etujen hallinta** -työtilan sijaan **
 
 1. Valitsemalla **Syykoodit** saat lisätietoja siirron tilasta.
 
-   [![Syykoodit](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Syykoodit.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Valitse syykoodi, joka ei siirtynyt.
 
-   [![Syykoodin siirron tila](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Syykoodin siirron tila.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Valitse **Siirrä syykoodi**.
 
-   [![Siirrä syykoodi](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Siirrä syykoodi.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. **Edun syykoodin siirto** -ruudussa on kaksi vaihtoehtoa, joissa voit tehdä määrityksen henkilöstöhallinnan syykoodiin:
 
@@ -73,10 +73,10 @@ Tammikuussa 2021 syykoodit siirretään **Etujen hallinta** -työtilan sijaan **
      > Voit käyttää henkilöstöhallinnassa aiemmin luotua syykoodia vain, jos siihen ei ole vielä siirtynyt toista etujen hallinnan syykoodia.
    - Voit luoda uuden syykoodin henkilöstöhallinnassa kirjoittamalla uuden syykoodin **Uusi syykoodi** -kenttään ja kirjoittamalla sitten kuvauksen kohtaan **Uusi kuvaus**.
 
-   [![Yhdistä henkilöstönhallinnan syykoodiin](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Yhdistä henkilöstönhallinnan syykoodiin.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 Kun syykoodit siirtyvät henkilöstöhallintaan, niiden käytön asetus etujen hallinnassa on automaattisesti **Kyllä**.
 
-[![Syykoodin käyttö Etujen hallinnassa](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Syykoodin käyttö Etujen hallinnassa.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

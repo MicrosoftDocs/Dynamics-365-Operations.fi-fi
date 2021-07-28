@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796145"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352611"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Määritä puhelinkeskuksen toimitustavat ja kulut
 
@@ -65,11 +65,11 @@ Kulut voidaan määrittää niin, että niitä käytetään tietylle toimitustav
 
 Yritykset määrittävät usein kulut eri tasoille. Tällöin summa, jonka asiakkaat maksavat toimitusta varten, perustuu tilauksen arvoon. Voit määrittää kulutasot kirjoittamalla arvot **Summasta**- ja **Summaan**-kenttiin sen lisäksi, että määrität itse kulun **Kulujen arvo** -kenttään. Esimerkiksi tilauksille, joiden arvo on pienempi kuin 50 dollaria, kauppa veloittaa 5,95 dollaria maakuljetustoimituksesta. Tilauksista, joiden arvo on vähintään 50 dollaria mutta pienempi kuin 100 dollaria, myyjä veloittaa 7,95 dollaria. Lopuksi, tilauksista, joiden arvo on vähintään 100 dollaria, myyjä tarjoaa ilmaisen toimituksen. Seuraavassa kuvassa on tällaisten kulujen määritys.
 
-![Esimerkki: kiinteät kulut tasoittain](media/fixedtieredcharges.png)
+![Esimerkki: kiinteät kulut tasoittain.](media/fixedtieredcharges.png)
 
 Voit käyttää luokkien yhdistelmiä kuluille liiketoiminnan tarpeiden mukaan. Esimerkiksi kaikille tilauksille, joiden arvo on pienempi kuin 100 dollaria, veloitetaan kiinteä 9,95 dollaria toimituksesta. Tällöin tilauksille, joiden arvo vähintään 100 dollaria, toimituksen kuluiksi lasketaan 5 prosenttia tilauksen arvosta. Seuraavassa kuvassa on tällaisten kulujen määritys.
 
-![Esimerkki: kulutasojen yhdistelmä](media/mixedtieredcharges.png)
+![Esimerkki: kulutasojen yhdistelmä.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Käytä toimitustapoja puhelinpalvelukeskuksen tilausta syötettäessä
 

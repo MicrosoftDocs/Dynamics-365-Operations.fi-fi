@@ -1,6 +1,6 @@
 ---
-title: Finance Insightsin määritys – versiot 10.0.19 asti
-description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää (versioon 10.0.19 asti).
+title: Finance Insightsin määritys – ennen versiota 10.0.19
+description: Tässä ohjeaiheessa kerrotaan määritysvaiheet, jotka sallivat järjestelmäsi käyttää Finance Insightsin ominaisuuksia 10.0.19-versiota vanhemmissa versioissa.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 6b578962839a34a1e2ce0311f7d8e7ee57a10927
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186417"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357435"
 ---
-# <a name="configuration-for-finance-insights-preview"></a>Finance Insightsin määritys (esiversio)
+# <a name="configuration-for-finance-insights-for-private-preview-preview---before-version-10019"></a>Finance Insightsin määritys yksityiselle esikatselulle (esiversio) - ennen versiota 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "6186417"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Seuraavat Finance Insightsin määrittämisen menetelmät ovat voimassa Microsoft Dynamics 365 Financelle versioon 10.0.19 asti. Jos haluat määrittää Finance Insightsin versiolle 10.0.20 tai sitä myöhemmälle versiolle, katso [Finance Insightsin (esiversio) määritys versiosta 10.0.20 eteenpäin](configure-for-fin-insites-PubPrvw.md).
+> Seuraavat Finance Insightsin määritystavat toimivat Microsoft Dynamics 365 Finance -versiota 10.0.19 vanhemmille versiolle. Jos haluat määrittää Finance Insightsin versiolle 10.0.20 tai sitä myöhemmälle versiolle, katso [Finance Insightsin (esiversio) määritys versiosta 10.0.20 eteenpäin](configure-for-fin-insites-PubPrvw.md).
 
 Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Microsoft Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 
@@ -59,7 +59,7 @@ Seuraavia ohjeita noudattamalla voit määrittää Dataversen Finance Insightsil
 
     1. Avaa **Ympäristöt**-sivu.
 
-        [![Ympäristöt-sivu](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Ympäristöt-sivu.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. Valitse yllä luotu Dataverse-ympäristö ja valitse sitten **Asetukset**.
     3. Valitse **Resurssit \> Kaikki vanhat asetukset**.
@@ -792,6 +792,8 @@ Apuohjelma asennetaan muutamassa minuutissa.
     | CDS-organisaation URL-osoite                                     | Dataverse-organisaation URL-osoite, joka on kopioitu yllä olevasta kohteesta. |
     | CDS-organisaation tunnus                                               | Dataverse-organisaation tunnus, joka on kopioitu yllä olevasta kohteesta. |
 5. Ota käyttöön **Onko tämä oletusympäristö vuokralaiselle**.
+
+Apuohjelman asentaminen voi kestää useita minuutteja.
     
 ## <a name="configure-the-entity-store"></a>Yksikkösäilön määrittäminen
 

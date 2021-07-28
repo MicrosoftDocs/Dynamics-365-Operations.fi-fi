@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791676"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354610"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronoi tuoteluokitukset Dynamics 365 Commercessa
 
@@ -59,7 +59,7 @@ Seuraavalla tavalla voit tarkistaa, että **RetailProductRating**-alityö on ole
 
 Seuraavassa kuvassa on esimerkki Commerce-sovelluksen alityön tiedoista.
 
-![RetailProductRating-alityön tiedot](media/rnr-hq-ratings-sub-job.png)
+![RetailProductRating-alityön tiedot.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Jos et löydä **RetailProductRating**-alityötä, **Synkronoi tuoteluokitukset** -työ on jo ehkä suoritettu ja **1040 CDX**-työ on jo ehkä suoritettu ennen Commerce-ajastuksen alustusta. Tässä tapauksessa suorita **Tietojen täydellinen synkronointi** -työ seuraavasti.
@@ -83,7 +83,7 @@ Voit tuoda tuoteluokitukset Commerce-sovelluksiin luokitusten ja arvostelujen pa
 
 Seuraavassa kuvassa on esimerkki Commerce-sovelluksen erätyön määrityksestä.
 
-![Synkronoi tuoteluokitukset -erätyön määritys](media/rnr-hq-batchjob-recurrence.png)
+![Synkronoi tuoteluokitukset -erätyön määritys.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Varmista, että tuoteluokituksen synkronoinnin erätyö onnistui
 
@@ -95,7 +95,7 @@ Seuraavalla tavalla voit varmistaa, että **Synkronoi tuoteluokitukset** -eräty
 
 Seuraavassa kuvassa on esimerkki erätyön tiedoista Commerce-sovelluksessa, kun erätyö on ajoitettu suoritettavaksi kahden tunnin välein.
 
-![Synkronoi tuoteluokitus -erätyön tiedot](media/rnr-hq-batchjob-status-checking.png)
+![Synkronoi tuoteluokitus -erätyön tiedot.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Määritä tuoteluokitukset käytettäviksi myyntipisteessä
 
@@ -113,21 +113,21 @@ Voit ottaa tuoteluokitukset käyttöön myyntipisteessä seuraavasti.
 
 Seuraavassa kuvassa on esimerkki Commerce-parametrien määrityksestä, joita käytetään myyntipisteen tuotteiden luokitusten käyttöönotossa.
 
-![Myyntipisteen tuoteluokitusten Commerce-parametrien määritys](media/rnr-hq-enable-ratings-in-pos.png)
+![Myyntipisteen tuoteluokitusten Commerce-parametrien määritys.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Seuraavassa kuvassa on esimerkki myyntipisteen tuoteluokituksista.
 
-![Myyntipisteen tuoteluokitukset](media/rnr-pos-catalog-ratings.png)
+![Myyntipisteen tuoteluokitukset.](media/rnr-pos-catalog-ratings.png)
 
 Seuraavassa kuvassa on esimerkki puhelinkeskuskanavien tuoteluokituksista.
 
-![Puhelinkeskuskanavan tuoteluokitukset](media/rnr-call-center-ratings.png)
+![Puhelinkeskuskanavan tuoteluokitukset.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
 
-[Osallistu käyttääksesi luokituksia ja arvosteluja](opt-in-ratings-reviews.md)
+[Luokitusten ja arvostelujen käytön hyväksyminen](opt-in-ratings-reviews.md)
 
 [Hallitse luokituksia ja arvosteluja](manage-reviews.md)
 

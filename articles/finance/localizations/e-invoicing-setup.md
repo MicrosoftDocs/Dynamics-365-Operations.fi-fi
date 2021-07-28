@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890828"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348483"
 ---
 # <a name="set-up-electronic-invoicing"></a>Sähköisen laskutuksen määrittäminen
 
@@ -37,7 +37,7 @@ Sähköisen laskutuksen toiminto on sen resurssin yleinen nimi, joka määritet�
 
 Seuraavassa kuvassa näkyvät sähköisen laskutuksen toiminnon keskeisimmät osat.
 
-![Sähköisen laskutuksen toiminnon yleiskatsaus](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Sähköisen laskutuksen toiminnon yleiskatsaus.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Laskumuotojen ja toimintokulkujen vaihtelun vuoksi toiminnon määritys voi vaihdella maan tai alueen tai liiketoiminnan vaatimusten mukaan.
 
@@ -50,7 +50,7 @@ Määritysprosessi on suoritettava RCS-ympäristössä. Voit luoda uuden sähkö
 3. Valitse **Sähköisen laskutuksen toiminnot** sivulla **Tuo** tuodaksesi ER-tietomallin määrityksen yleisestä säilöstä.
 4. Valitse **Lisää** luodaksesi sähköisen laskutuksen toiminnon. Voit joko luoda toiminnon tyhjästä tai johtaa sen aiemmin luodusta sähköisen laskutuksen toiminnosta.
 
-    ![Sähköisen laskutuksen toiminnon lisääminen](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Sähköisen laskutuksen toiminnon lisääminen.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Kun luot uuden sähköisen laskutuksen toiminnon, sillä on versionumero ja sen oletustilaksi on määritetty **Luonnos**.
@@ -63,21 +63,21 @@ Voit lisätä ER-muotoja sähköisen laskutuksen toimintoon noudattamalla seuraa
 
 1. Valitse **Sähköisen laskutuksen toiminnot**-sivun **Määritykset**-välilehdessä **Lisää** lisätäksesi ER-tiedostomuotomäärityksiä sähköisen laskutuksen toimintoa varten.
 
-    ![Sähköisen laskutuksen toiminnon määritysten lisääminen](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Sähköisen laskutuksen toiminnon määritysten lisääminen.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Kun luot sähköisen laskutuksen toiminnon alusta alkaen, sinun on lisättävä kaikki ER-tiedostomuotomääritykset manuaalisesti. Kun johdat sähköisen laskutuksen toiminnon aiemmin luodusta toiminnosta, ER-tiedostomuotomääritykset luodaan automaattisesti, koska ne pohjautuvat alkuperäiseen sähköisen laskutuksen toimintoon.
 
 2. Valitse **Muokkaa** avataksesi **Muodon suunnittelija** -sivun, jolla voit muokata ER-tiedostomuotomääritystä.
 
-    ![Sähköisen laskutuksen toiminnon määritysten muokkaaminen](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Sähköisen laskutuksen toiminnon määritysten muokkaaminen.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Kun muokkaat muotoa, määritysversion tilaksi määritetään **Luonnos**.
 
 3. Käytä **Muodon suunnittelija** -sivua muuttaaksesi tiedostomuotomääritystä. Lisätietoja on kohdassa [Sähköisten asiakirjojen määritysten luominen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-    ![Muodon suunnittelutoiminto -sivu](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Muodon suunnittelutoiminto -sivu.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Toimintojen määritykset
 
@@ -87,18 +87,18 @@ Voit lisätä toimintomääritykset laskutuksen toimintoon noudattamalla seuraav
 
 1. Valitse **Sähköisen laskutuksen toiminnot**-sivun **Määritykset**-välilehdessä **Lisää** lisätäksesi toimintomäärityksiä sähköisen laskutuksen toimintoa varten.
 
-    ![Sähköisen laskutuksen toiminnon määritysten lisääminen](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Sähköisen laskutuksen toiminnon määritysten lisääminen.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Kun luot sähköisen laskutuksen toiminnon alusta alkaen, sinun on lisättävä kaikki tarvittavat toimintomääritykset manuaalisesti. Kun johdat sähköisen laskutuksen toiminnon aiemmin luodusta toiminnosta, kaikki toimintomääritykset luodaan automaattisesti, koska ne pohjautuvat alkuperäiseen sähköisen laskutuksen toimintoon.
 
 2. Muokkaa toimintoversiomääritystä valitsemalla **Muokkaa**.
 
-    ![Sähköisen laskutuksen toiminnon määritysten muokkaaminen](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Sähköisen laskutuksen toiminnon määritysten muokkaaminen.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. **Toimintoversion määritykset** -sivulla voit määrittää toimia, soveltuvuussääntöjä ja muuttujia.
 
-    ![Toimet, soveltuvuussäännöt ja muuttujat](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Toimet, soveltuvuussäännöt ja muuttujat.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Toimenpiteet
 
@@ -113,7 +113,7 @@ Noudata toista sivun **Toimintoversioiden määritys** -sivun **Toimet**-välile
 - Valitse **Uusi** tai **Poista**, jos haluat lisätä uusia toimia tai poistaa aiemmin luotuja toimia.
 - Valitsemalla **Ylös** tai **Alas** voit siirtää valittuja toimia ylös- tai alaspäin ruudukossa ja siten muuttaa niiden suoritusjärjestystä. Toimet suoritetaan siinä järjestyksessä, jossa ne ovat ruudukossa alhaalta ylöspäin.
 
-![Toimien hallinta](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Toimien hallinta.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 Seuraavassa taulukossa käsitellään **Toimet**-pikavälilehdessä valittavina olevat kentät.
 
@@ -129,7 +129,7 @@ Seuraavassa taulukossa käsitellään **Toimet**-pikavälilehdessä valittavina 
 
 **Parametrit**-pikavälilehdessä on luettelo sen toimen parametreista, joka on valittuna **Toimet**-pikavälilehdessä.
 
-![Parametrien pikavälilehti](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Parametrit-pikavälilehti.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 Seuraavassa taulukossa käsitellään **Parametrit**-pikavälilehdessä valittavina olevat kentät.
 
@@ -259,20 +259,20 @@ Soveltuvuussääntöjen avulla voit luoda loogisia sääntöjä, jotka määrä�
 
 1. Valitse **Toimintoversion määritys** -sivun **Soveltuvuussäännöt**-välilehdessä **Uusi** lisätäksesi soveltuvuussäännön.
 
-    ![Soveltuvuussääntöjen hallinta](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Soveltuvuussääntöjen hallinta.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. Valitse ruudukosta lausekkeet, jotka ryhmitellään.
 3. Valitse **Ryhmittele lauseke**.
 
-    ![Lausekkeiden ryhmittely](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Lausekkeiden ryhmittely.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Kun lausekkeita ryhmitellään, ruudukkoon lisästään uusi sarake. Tämä sarake määrittää ryhmiteltyjen lausekkeiden loogisen operaattorin.
 
-    ![Ryhmiteltyjen lausekkeiden looginen operaattori](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Ryhmiteltyjen lausekkeiden looginen operaattori.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Voit purkaa lausekkeiden ryhmittelyn valitsemalla halutut lausekkeet ja valitsemalla sitten **Poista lausekkeen ryhmittely**.
 
-![Lausekkeiden ryhmittelyn poisto](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Lausekkeiden ryhmittelyn poisto.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Kun purat lausekkeen ryhmittelyn, aloita aina sisimmästä ryhmittelytasosta.
@@ -294,7 +294,7 @@ Voit luoda muuttujia ja käyttää niitä tietyn toimen parametrin syötearvona.
 
 - Voit hallita muuttujia valitsemalla **Toimintoversion määritys** -sivun **Muuttujat**-välilehdessä **Uusi** tai **Poista**.
 
-    ![Muuttujien hallinta](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Muuttujien hallinta.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 Seuraavassa taulukossa käsitellään **Muuttujat**-välilehdessä valittavina olevat kentät.
 
@@ -310,7 +310,7 @@ Seuraavassa taulukossa käsitellään **Muuttujat**-välilehdessä valittavina o
 
 - Voit vahvistaa version määrityksen valitsemalla **Toimintoversion määritys** -sivun toimintoruudussa **Vahvista**.
 
-   ![Vahvistuspainikkeen valitseminen](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Vahvista-painikkeen valitseminen.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Vahvistus tarkistaa koko määrityksen yhdenmukaisuuden. Jos esimerkiksi toimen tietty parametri on pakollinen, mutta sen arvo pysyy tyhjänä, vahvistus havaitsee tämän ristiriidan ja näyttöön tulee varoitus.
 
@@ -323,7 +323,7 @@ Näiden ohjeiden avulla voit ottaa käyttöön sähköisen laskutuksen ympärist
 1. Valitse **Sähköisen laskutuksen toiminnot**-sivun **Ympäristöt**-välilehdessä **Ota käyttöön** lisätäksesi sähköisen laskutuksen ympäristön.
 2. Syötä **Voimaantulo**-kenttään päivämäärä, jona uusi ympäristö otetaan käyttöön.
 
-![Sähköisen laskutuksen ympäristön käyttöönotto](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Sähköisen laskutuksen ympäristön käyttöönotto.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisaatiot
 

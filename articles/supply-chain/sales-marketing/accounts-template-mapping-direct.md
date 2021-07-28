@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: fff9171966045e9dad5f2c70087a568cfa075e43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 270d83552a3e35042c32cb85888439d40068ff0c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908129"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355946"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin
 
@@ -38,7 +38,7 @@ Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tilejä 
 
 Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa.  Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Supply Chain Managementin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
-[![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Prospektista käteiseksi -ratkaisun tiedonkulku.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
@@ -99,7 +99,7 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 > [!NOTE]
 > Yhdistämismääritys osoittaa, minkä sarakkeen tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
-![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/accounts-direct-template-mapping-data-integrator-1.png)
+![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Liittyvät aiheet
 

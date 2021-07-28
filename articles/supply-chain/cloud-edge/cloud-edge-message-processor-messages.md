@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271098"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350567"
 ---
 # <a name="message-processor-messages"></a>Sanoman käsittelijän sanomat
 
@@ -88,15 +88,15 @@ Tässä esimerkissä **Kun liiketoimintatapahtuma ilmenee** -arvon käyttö *Mic
 
 1. Kohdassa [Power Automate](https://preview.flow.microsoft.com) luo uusi automaattinen pilvityönkulku työnkulun käynnistimelle **Kun liiketoimintatapahtuma ilmenee - Fin & Ops App (Dynamics 365)** ja sen jälkeen **Jäsennä JSON**- ja **Lähetä sähköpostiviesti** -vaiheet seuraavassa kuvassa esitetyllä tavalla.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automaten automaattinen pilvityönkulku":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automaten automaattinen pilvityönkulku.":::
 
 1. **Kun liiketoimintatapahtuma ilmenee** -vaiheessa voit etsiä tai syöttää keskuksen **Esiintymä**-kohdan, sitten **Luokka** ja sitten **Liiketoimintatapahtuma** *Sanoman käsittelijän sanoma käsitelty* seuraavassa kuvassa esitetyllä tavalla.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Kun liiketoimintatapahtuma ilmenee -vaihe":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automaten Kun liiketoimintatapahtuma ilmenee -vaihe.":::
 
 1. **Jäsennä JSON** -vaiheessa anna **Rakenne**, joka määrittää laajennetut kentät. Voit käyttää *Lataa rakenne*-vaihtoehtoa **Liiketoimintatapahtumien luettelo** -sivulla Supply Chain Managementissa tai aloittaa liittämällä esimerkkirakenteen tekstin. Tämä esimerkkiteksti annetaan seuraavan kuvan jälkeen.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Jäsennä JSON -vaihe":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automaten Jäsennä JSON -vaihe.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ Tässä esimerkissä **Kun liiketoimintatapahtuma ilmenee** -arvon käyttö *Mic
 
 1. Voit valita **Lähetä sähköpostiviesti** -kohdasta yksittäiset kentät tai aloittaa liittämällä sähköpostin perustekstiesimerkin **Perusteksti**-kenttään. Tämä esimerkki annetaan seuraavan kuvan jälkeen.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate Lähetä sähköpostiviesti -vaihe":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automaten Lähetä sähköpostiviesti -vaihe.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

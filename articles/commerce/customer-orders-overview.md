@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936727"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349623"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Myyntipisteen asiakastilaukset
 
@@ -44,7 +46,7 @@ Ennen kuin yrität käyttää asiakastilaustoimintoja myyntipisteessä, varmista
 
 Jos haluat käyttää asiakastilauksia, sinun on määritettävä toimitustavat myymäläkanavan käyttöä varten. Sinun on määritettävä vähintään yksi toimitustapa, jota käytetään toimitettaessa tilausrivit myymälästä asiakkaalle. Sinun on määritettävä myös vähintään yksi noudon toimitustapa, jota käytetään, kun tilausrivit ovat noudettavissa myymälästä. Toimitustavat määritetään Commerce Headquarters -sovelluksen **Toimitustavat**-sivulla. Lisätietoja toimitustilan määrittämisestä Commerce-kanaville on kohdassa [Toimitustapojen määrittäminen](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Toimitustavat-sivu](media/customer-order-modes-of-delivery.png)
+![Toimitustavat-sivu.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Täytäntöönpanoryhmien määrittäminen
@@ -53,7 +55,7 @@ Jotkin myymälät tai varastosijainnit eivät ehkä pysty täyttämään asiakas
 
 Commercen versiossa 10.0.12 ja uudemmissa versioissa organisaatiot voivat määrittää, käytetäänkö täytäntöönpanoryhmissä määritettyä varastoa tai varaston ja myymälän yhdistelmää toimituksessa, noudossa tai sekä toimituksessa että noudossa. Tämä mahdollistaa joustavan määrityksen, jonka avulla yritys voi määrittää, mitä varastoja voidaan valita, kun nimikkeiden toimitusta varten luodaan asiakastilaus sekä mitkä myymälät voidaan valita luotaessa asiakastilaus nimikkeiden noutoa varten. Jos haluat käyttää näitä määritysvaihtoehtoja, ota käyttöön **Mahdollisuus määrittää sijainniksi Toimitus tai Nouto on otettu käyttöön täytäntöönpanoryhmissä** -ominaisuus. Jos myymälässä ei ole täytäntöönpanoryhmään linkitettyä varastoa, se voidaan määrittää vain toimitussijainniksi. Sitä ei voi käyttää, kun noudon tilaukset on määritetty myyntipisteessä.
 
-![Täytäntöönpanoryhmät-sivu](media/customer-order-fulfillment-group.png)
+![Täytäntöönpanoryhmät-sivu.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Kanavan asetusten määrittäminen
 
@@ -65,7 +67,7 @@ Jotkin myyntikanavan asetukset on tarkistettava, kun asiakastilauksia käsitell�
 - **Käytä kohteeseen perustuvaa veroa** – Tämä vaihtoehto osoittaa, käytetäänkö toimitusosoitetta sen veroryhmän määrittämisessä, joka kohdistetaan asiakkaan osoitteeseen toimitettaviin tilausriveihin.
 - **Käytä asiakkaaseen perustuvaa veroa** – Tämä vaihtoehto osoittaa, käytetäänkö asiakkaan toimitusosoitteelle määritettyä veroryhmää myyntipisteessä luoduissa asiakkaan kotiin toimitettavien asiakastilausten verotuksessa.
 
-![Myymälän kanavan asetukset Myymälät-sivulla](media/customer-order-all-stores.png)
+![Myymälän kanavan asetukset Myymälät-sivulla.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Asiakastilausten parametrien määrittäminen
 
@@ -80,7 +82,7 @@ Ennen kuin yrität luoda asiakastilauksia myyntipisteessä, määritä soveltuva
 - **Toimitusmaksun koodi** – Jos **Käytä automaattisia lisäveloituksia** -asetukseksi on määritetty **Kyllä**, tämän parametrin asetuksella ei ole vaikutusta. Jos tämän asetuksen arvoksi on määritetty **Ei**, käyttäjiä pyydetään syöttämään toimituskulu manuaalisesti, kun he luovat asiakastilauksia myyntipisteessä. Tämän parametrin avulla voit määrittää tilausten myyntireskontran kulukoodin. Sitä käytetään, kun käyttäjä syöttää toimitusmaksun. Kulukoodi määrittää toimitusmaksun taloushallinnon kirjauslogiikan.
 - **Käytä automaattisia lisäveloituksia** – Määritä asetukseksi **Kyllä**, jos haluat käyttää järjestelmän laskemiasi automaattisia veloituksia, kun asiakastilaukset luodaan myyntipisteessä. Näitä automaattisia veloituksia voidaan käyttää toimituskulujen tai muiden tilaukseen tai nimikkeeseen liittyvien kulujen maksamisessa. Lisätietoja automaattisten lisäveloitusten määrittämisestä ja käyttämisestä on kohdassa [Monikanavaiset edistyneet automaattiset veloitukset](./omni-auto-charges.md).
 
-![Asiakastilaukset-välilehti kaupan parametrien sivulla](media/customer-order-parameters.png)
+![Asiakastilaukset-välilehti Kaupan parametrit -sivulla.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Tapahtumanäytön asetteluiden päivittäminen myyntipisteessä
 
@@ -95,7 +97,7 @@ Varmista, että myyntipiste [näyttöasettelu](./pos-screen-layouts.md) on mää
 - **Muuta toimitustapaa** – Tämän toiminnon avulla voi muuttaa toimitusta varten määritettyjen rivien toimitustavan nopeasti. Käyttäjän ei tarvitse palata Lähetä kaikki tuotteet- tai Lähetä valitut tuotteet -toimintoon.
 - **Talletuksen ohitus** – Tämän toiminnon avulla voi muuttaa asiakkaan valitusta asiakastilauksesta maksaman talletussumman.
 
-![Myyntipisteen tapahtumanäytön toiminnot](media/customer-order-screen-layout.png)
+![Myyntipisteen tapahtumanäytön toiminnot.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Asiakastilausten käsitteleminen myyntipisteessä
 

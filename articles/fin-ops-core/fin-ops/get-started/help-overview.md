@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom: 16381
+ms.custom:
+- "16381"
+- intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
+ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923443"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "6373364"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -35,7 +37,7 @@ Seuraavien sovellusten käyttäjät voivat käyttää tilannekohtaista ohjetta j
 
 Tuotekohtaista ohjetta käytetään kaikissa näissä sovelluksissa **Ohje**-ruudussa.
 
-![Ohje-ruutu](./media/help-pane-ops-help.png)
+![Ohje-ruutu.](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
@@ -46,12 +48,23 @@ Docs.microsoft.com -sivusto ([docs.microsoft.com/dynamics365/](/dynamics365/)) o
 
 Docs.microsoft.com-sivuston sisältöä voi etsiä millä tahansa hakukoneella. Parhaat tulokset saa käyttämällä sivustohaku, kuten **site:docs.microsoft.com dynamics 365 "hakusana"**.
 
-## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
+<!--## Get notified about changes through an RSS feed
 
-Saat kaikki docs.microsoft.com-sivuston sisällön päivitykset tilaamalla RSS (Really Simple Syndication) -syötteen. Tee tilaus avaamalla seuraava linkki:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
-[RSS-syöte](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
+> [!NOTE]
+> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+
+Alternatively, you can subscribe to an RSS feed by app:
+
+- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
+- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
+- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
 ### <a name="leave-us-feedback"></a>Jätä meille palautetta
 
 Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
@@ -60,7 +73,7 @@ Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 
 2. Kirjoita kommentit ja valitse sitten **Lähetä palautetta**.
 
-    ![Julkaise kommentti](./media/feedback.png)
+    ![Julkaise kommentti.](./media/feedback.png)
 
 > [!NOTE]
 > Jos haluat lähettää palautetta dokumentaatiosta, käytä kirjautumiseen GitHub-tiliä. Lisätietoja on kohdassa [GitHub-profiilin määritys ja hallinta](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -84,11 +97,11 @@ Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti te
 
 Microsoft julkaisi tuoteversioiden tehtäväopaskirjastoa joulukuun 2017 Dynamics 365 for Finance and Operations -versioon saakka. Tämän ohjeaiheen kohdassa [Tehtäväoppaiden käyttö ohjeruudusta](#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
 
-![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
+![Tehtäväoppaan lukunäkymä.](./media/task-guide-ops.png)
 
 Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävän ohjaus** **Ohje**-ruudun alareunassa. Musta osoitin osoittaa, mihin siirrytään ensimmäiseksi. Noudata käyttöliittymän ohjeita ja anna tiedot ohjeiden mukaisesti.
 
-![Tehtäväoppaan vaiheen ohje](./media/task-guide-step-1-ops.png)
+![Tehtäväoppaan vaiheen ohje.](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > Tehtäväoppaan toiston aikana annettavat tiedot ovat todellisia. Jos olet tuotantoympäristössä, tiedot annetaan käytössä olevassa yrityksessä.
@@ -101,7 +114,7 @@ Joissakin kentissä on kuvauksia, joiden avulla käyttäjät pystyvät jatkamaan
 
 Ohjesisältö avautuu valitsemalla ensin **Ohje**-painike (**?**) ja sitten **Ohje**. Vaihtoehtoinen tapa avata ohje on näppäinyhdistelmä **Ctrl+Vaihto+?**. Kumpikin menetelmä avaa **Ohje**-ruudun. **Ohje**-ruudussa voi avata käsitteellisiä aiheita tai tehtäväoppaita, jotka liittyvät käytössä olevaan tuotteen alueeseen.
 
-![Ohje-ruutu](./media/help-pane-ops-help.png)
+![Ohje-ruutu.](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Ohjeaiheiden käyttö ohjeruudusta
 
@@ -118,13 +131,13 @@ Tehtäväoppaita ei voi käyttää **Ohje**-ruudussa, ennen kuin järjestelmänv
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -132,7 +145,7 @@ On the **System parameters** page, follow these steps:
 
 Kun järjestelmänvalvoja on suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtäväoppaat**-välilehden, jossa näkyy on avointa sivua käsittelevät tehtäväoppaat. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla. Kun valitse tehtäväoppaan **Ohje**-ruudussa, vaiheittaiset ohjeet tulevat näkyviin **Ohje**-ruutuun ja voit toistaa tehtävän ohjauksen.
 
-![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
+![Tehtäväoppaan lukunäkymä.](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Missä Microsoft-kirjastojen käännetyt tehtäväoppaat sijaitsevat?
 

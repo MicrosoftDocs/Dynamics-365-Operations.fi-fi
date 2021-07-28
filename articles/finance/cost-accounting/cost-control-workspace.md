@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833039"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355224"
 ---
 # <a name="cost-control-workspace"></a>Kustannusseurannan työtila 
 
@@ -116,7 +116,7 @@ Kustannuslaskija päättää **Budjetoitujen kustannusten näytettävät sarakke
 
 Käyttäjien, kuten esimiesten, käytettävissä olevien raporttien luetteloa hallitaan valitsemalla **Kustannusseurannan työtilan konfiguraatiot** -sivulla **Julkaistu**-vaihtoehto.
 
-![Raportti, jonka käyttäjät näkevät Kustannusseuranta-työtilassa](./media/report-cost-control.png)
+![Raportti, jonka käyttäjät näkevät Kustannusseuranta-työtilassa.](./media/report-cost-control.png)
 
 Esimies voi valita tarkasteltavan kirjanpidon vuosikalenterin. Istunnon päivämäärä määrittää oletusarvoisen nykyisen kauden.
 
@@ -140,7 +140,7 @@ Kahdessa kaaviossa on yhteenveto toteutuneen ja budjetoidun vertailusta sekä bu
 
 Käyttäjät voivat porautua tarvittaessa merkinnän tietoihin valitsemalla **Kustannusmerkinnät**.
 
-![Kustannusmerkinnät](./media/cost-entries.png)
+![Kustannusmerkinnät.](./media/cost-entries.png)
 
 Esimerkiksi vuokra on meno, joka jaetaan kustannuspaikoille. Käyttäjän, joka haluaa tiedostaa oman kustannuspaikan vuokrakustannuksen, on porauduttava alas tarkistamaan, miten vuokra on laskettu.
 
@@ -148,7 +148,7 @@ Jos käyttäjät valitsevat **Kohdistusperuste** **Kustannusmerkinnät**-sivulla
 
 Seuraavassa esimerkissä kohdistusperusteen tyyppi on **Kaavan kohdistusperuste** ja kaava näytetään. Kaavan määrittämät kertoimet ovat luettelossa. Ruudukossa näkyy myös kustannusobjektikohteisesti tehdyt laskelmat.
 
-![Kustannusobjektikohtaiset laskelmat](./media/cost-entries-allocation-base.png)
+![Kustannusobjektikohtaiset laskelmat.](./media/cost-entries-allocation-base.png)
 
 Lisäresurssit 
 

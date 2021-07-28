@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32093f4e47fe3d9ca691b70e15adfc3199e65beb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e51c6914aab7261862a7ce180376b67d01711e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754261"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359456"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen
 
@@ -42,11 +42,11 @@ Power BI -sisällön omistajan on tehtävä seuraavat toimet täyttääkseen kä
 3. Paikanna **kustannuslaskennan analyysin** Power BI -sisällön tietojoukko.
 4. Avaa Suojaus-välilehti.
 
-    ![Suojaus-välilehden avaaminen](./media/CA-picture-1.png)
+    ![Suojaus-välilehden avaaminen.](./media/CA-picture-1.png)
 
 5. **Kustannusobjektin vastuuhenkilö** -rooli on jo luotu. Lisätä muut kustannuslaskennan käyttöoikeustason organisaatiohierarkian jäsenet.
 
-    ![Jäsenten lisääminen](./media/CA-picture-2.png)
+    ![Jäsenten lisääminen.](./media/CA-picture-2.png)
 
 Käyttäjät, joille lisätään **Kustannusobjektin vastuuhenkilö** -rooli näkevät vain ne tiedot, joihin heillä on käyttöoikeus sen mukaan, miten kustannuslaskennan käyttöoikeustason organisaatiohierarkia on määritetty.
 

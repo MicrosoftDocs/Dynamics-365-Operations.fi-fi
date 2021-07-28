@@ -2,7 +2,7 @@
 title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,21 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dce3c8adcd2926e60d001bddb5c278fac6860268
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 307c9876aa0fed77778fcf81903f9c52e3f5be67
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796219"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479229"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
-Termi *ostoruutu* viittaa yleensä tuotetietojen sivun alueeseen, joka on sivun yläosassa ja joka isännöi kaikkein tärkeimpiä tuotteen ostamisessa tarvittavia tietoja. (Alue, joka näkyy, kun sivu ladataan ensimmäisen kerran. Näin käyttäjien ei tarvitse vierittää sivua alaspäin nähdäkseen tiedot.)
+Termi *ostoruutu* viittaa yleensä tuotetietosivun (PDP) alueeseen, joka on sivun yläosassa ja joka isännöi kaikkein tärkeimpiä tuotteen ostamisessa tarvittavia tietoja. (Alue, joka näkyy, kun sivu ladataan ensimmäisen kerran. Näin käyttäjien ei tarvitse vierittää sivua alaspäin nähdäkseen tiedot.)
 
 Ostoruutumoduuli on erityinen säilö, jota käytetään kaikkien tuotetietosivun ostoruutualueella näkyvien moduulien isännöinnissä.
 
@@ -35,7 +36,7 @@ Tuotetietosivun URL-osoite sisältää tuotteen tunnuksen. Kaikki ostoruudun hah
 
 Seuraavassa kuvassa näkyy esimerkki ostoruutumoduulista tuotetietosivulla.
 
-![Esimerkki ostoruutumoduulista](./media/ecommerce-pdp-buybox.PNG)
+![Esimerkki ostoruutumoduulista.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Ostoruutumoduulin ominaisuudet ja paikat 
 
@@ -67,14 +68,16 @@ Seuraavat ostoruutumoduuliasetukset voidaan määrittää valitsemalla **Sivusto
 
 - **Ostoskorin rivien maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
 - **Varasto** – lisätietoja varastoasetusten ottamisesta käyttöön on kohdassa [Varastoasetusten käyttäminen](inventory-settings.md).
-- **Lisää tuote ostoskoriin** - Tämän ominaisuuden avulla määritetään, mitä tapahtuu, kun nimike on lisätty ostoskoriin. Mahdolliset arvot ovat **Siirry ostoskorisivulle**, **Älä siirry ostoskorisivulle** ja **Näytä ilmoitus**. Kun arvoksi on määritetty **Siirry ostoskorisivulle**, käyttäjät lähetetään ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Älä siirry ostoskorisivulle**, käyttäjiä ei lähetetä ostoskorisivulle, kun he lisäävät nimikkeen. Kun arvoksi on määritetty **Näytä ilmoitus**, käyttäjille näytetään vahvistusilmoitus ja he voivat jatkaa selaamista tuotteen tiedot -sivulla. 
+- **Lisää tuote ostoskoriin** – Katso lisätietoja **Lisää tuote ostoskoriin** -asetusten käyttöönotosta kohdasta [Lisää tuote ostoskoriin -asetukset](add-cart-settings.md).
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Ostoruutumoduulin määritelmälaajennukset Adventure Works -teemassa
+
+Adventure Works -teeman tarjoamalla ostosuruutumoduulilla on moduulin määritelmälaajennus, joka tukee tuotemääritysmoduulin toteutusta PDP-sivun ostosruudun haitarimoduulissa. Jos haluat esitellä tuotemääritysten määritteitä PDP-sivun ostoruudussa, lisää tuotemääritysmoduuli ostoruudun haitarimoduulin paikkaan.
+
 
 > [!IMPORTANT]
-> **Lisää tuote ostoskoriin** -sivuton asetukset ovat käytettävissä Dynamics 365 Commercen versiossa 10.0.11. Jos päivität vanhemmasta Dynamics 365 Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeet appsettings.json-tiedoston päivittämiseen: [SDK:n ja moduuliskirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Adventure Works -teema on käytettävissä Dynamics 365 Commerce -versiosta 10.0.20 eteenpäin.
 
-Seuraavassa kuvassa on esimerkki Siirretty ostoskoriin -vahvistusilmoituksesta Fabrikam-sivustolla.
-
-![Esimerkki ilmoitusmoduulista](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
@@ -127,6 +130,8 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 [Alatunnistemoduuli](author-footer-module.md)
 
 [Yhteisöpalvelujakamisen moduuli](social-share-module.md)
+
+[Lisää tuote ostoskoriin -asetukset](add-cart-settings.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
 

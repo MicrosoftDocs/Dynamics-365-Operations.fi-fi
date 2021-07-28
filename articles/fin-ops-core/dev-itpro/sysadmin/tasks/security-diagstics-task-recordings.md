@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745762"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358546"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Tehtävätallenteiden suojausdiagnostiikka
 
@@ -39,7 +39,7 @@ Tässä ohjeaiheessa on tietoja siitä, miten voidaan analysoida ja hallita teht
 
 4. Valitse käyttäjä **Käyttäjätunnus**-kentässä. Jos käyttäjällä ei ole joidenkin valikkovaihtoehtojen käyttöoikeuksia, **Puuttuvat käyttöoikeudet** -kentän arvoksi päivittyy **Kyllä**.
   
-  ![Suojausvalikkokohteen tiedot -sivu](../media/Security-Menu-Item-Details.png)
+  ![Suojausvalikkokohteen tiedot -sivu.](../media/Security-Menu-Item-Details.png)
 
 5. Valitse **Lisää viite**, jos haluat nähdä luettelon suojausobjekteista, kuten rooleista, velvollisuuksista ja oikeuksista, jotka myöntävät puuttuvan käyttöoikeuden.
 6. Valitse luettelosta suojausobjekti:
