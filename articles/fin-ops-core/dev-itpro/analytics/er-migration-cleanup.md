@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750883"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351046"
 ---
 # <a name="er-migration-cleanup"></a>Sähköisen raportoinnin siirron siivous 
 
@@ -30,11 +30,11 @@ Finance-esiintymiä hallittaessa nykyinen esiintymäsi voidaan päättää siirt
 
 Jos yrität luoda liiketoiminta-asiakirjoja suorittamalla mallia käyttävän ER-muodon, tapahtuukin poikkeus ja saat ilmoituksen puuttuvasta mallista. Sinut myös ohjataan käyttämään ER-siirron puhdistusvaihtoehtoa sekä poistamaan ja tuomaan uudelleen mallin sisältävä ER-muodon määritys.
 
-[![ER-muodon käyttö](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![ER-muodon käyttö.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Näyttöön tulee samanlainen virhe, jos siirryt **Konfiguraatiot**-sivulle (**Organisaation hallinta** \> **Sähköinen raportointi** \> **Konfiguraatiot**) ja konfiguraatiot-puuhun, kun yrität poistaa mallia käyttävän ER-muotokonfiguraation.
 
-[![ER-muodon poistaminen](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![ER-muodon poistaminen.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Ratkaise sellaisten ER-mallien ongelmat, joita et voi käyttää, suorittamalla seuraavat vaiheet.
 
@@ -50,7 +50,7 @@ Ratkaise sellaisten ER-mallien ongelmat, joita et voi käyttää, suorittamalla 
 >
 > Kun käytät **Siirron uudelleenjärjestäminen** -vaihtoehtoa ER-muodon konfiguraation poistamiseen, kun viitattu malli on Blob-tallennustilassa, poistat vain sovellustietokannan konfigurointiartefakteja koskevat mallit. BLOB-tallennustilan mallin fyysinen tiedosto säilyy. BLOB-tallennustilan korvaaminen ei ole enää sallittua. Lisätietoja on kohdassa [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Tämän lisäksi et voi enää tuoda poistettuja konfiguraatioita uudelleen käyttämällä siirron siivousta tässä ympäristössä. Tämän ongelman ratkaiseminen edellyttää, että löydät vastaavan tiedoston Blob-tallennuksessa ja poistat sen manuaalisesti.
 
-[![ER-muodon tuominen](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![ER-muodon tuominen.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Samankaltainen ongelma voi ilmetä, jos siirrät sovellusinstanssin toiseen sijaintiin, jota on käytetty siirtokohteena useammin kuin kerran ja jossa Blob-säilö sisältää jo ER-mallitiedostoja.
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8bbb78f0b20ec12fe59dfb3c656b3177b2464004
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356074"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Italian sähköisen laskutuksen käytön aloittaminen
 
@@ -59,7 +61,7 @@ RCS:n määrityksen aikana suoritat seuraavat tehtävät:
 
 4. Valitse **Sähköisten laskujen vienti (IT)** -toiminto ja sitten **Tuo**.
 
-![Sähköisten laskujen vienti (IT) -toiminnon tuominen](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![Sähköisten laskujen vienti (IT) -toiminnon tuominen.](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
 Kun tuot **Sähköisten laskujen vienti (IT)** -toiminnon yleisestä säilöstä, myös kaikki seuraavissa osissa kuvatut asetukset tuodaan.
 
@@ -67,13 +69,13 @@ Kun tuot **Sähköisten laskujen vienti (IT)** -toiminnon yleisestä säilöstä
 
 1. Valitse **Sähköisen laskutuksen toiminnot** -sivun **Versiot**-välilehdellä **Uusi**. 
 
-    ![Uuden sähköisen laskutuksen toiminnon version lisääminen](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![Uuden sähköisen laskutuksen toiminnon version lisääminen.](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
     Seuraavaksi määritetään sähköisen raportoinnin (ER) muodot, jotka liittyvät sähköisen laskutuksen toimintoon.
 
 2. Hallitse märitysversioita valitsemalla **Määritykset**-välilehdessä **Lisää**.
 
-    ![Sähköisen laskutuksen toiminnon määritysversioiden hallinta](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+    ![Sähköisen laskutuksen toiminnon määritysversioiden hallinta.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
     Tässä vaiheessa lisätään ja määritetään italialaisten sähköisten laskujen viemisessä käytettävien eri tiedostojen ER-muotoja. Italialaisissa sähköisissä FatturaPA-laskuissa käytetään joko seuraavia vakiomäärityksiä tai ajantasaisia mukautettuja määrityksiä, joita käytät sähköisessä laskutuksessa:
 
@@ -85,17 +87,17 @@ Kun tuot **Sähköisten laskujen vienti (IT)** -toiminnon yleisestä säilöstä
 3. Valitse tietty tiedoston ER-muodon määritys.
 4. Avaa **Muodon suunnittelija** -sivu valitsemalla **Muokkaa** tai **Näytä**.
 
-    ![Muodon suunnittelija -sivun avaaminen](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+    ![Muodon suunnittelija -sivun avaaminen.](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
 5. Käytä **Muodon suunnittelija** -sivua muokataksesi ja tarkastellaksesi ER-muodon tiedostomäärityksiä.
 
-    ![Muodon suunnittelutoiminto -sivu](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+    ![Muodon suunnittelutoiminto -sivu.](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Sähköisen laskutuksen toiminnon määritysten hallinta
 
 - Voit hallita sähköisen laskutuksen toiminnon määrityksiä valitsemalla **Sähköisen laskutuksen toiminnot** -sivun **Määritykset**-välilehdessä **Lisää**, **Poista** tai **Muokkaa**.
 
-![Sähköisen laskutuksen toiminnon määritysten hallinta](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+![Sähköisen laskutuksen toiminnon määritysten hallinta.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
 Tässä vaiheessa määritetään sähköisiin laskuihin sovellettavat tapahtumat, kuten XML-tulostetiedostojen luonti **FatturaPA**-muodossa ja digitaalinen allekirjoitus (tarvittaessa).
 
@@ -105,20 +107,20 @@ Tässä vaiheessa määritetään sähköisiin laskuihin sovellettavat tapahtuma
 2. Valitse **Muokkaa**.
 3. Voit hallita toimiluetteloa valitsemalla **Toimintoversion määritys** -sivulla **Toimet**-välilehti. Toimet määrittävät luettelon toiminnoista, jotka on suoritettava peräkkäisessä järjestyksessä, jotta toiminto suoritetaan kokonaisuudessaan.
 
-    ![Toimet-välilehti](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+    ![Toimet-välilehti.](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
     | Toimenpiteen tunnus | Toiminnon nimi        | Toiminnon kuvaus                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | Muunna asiakirja | Luo sähköisen laskun XML-tiedosto **fatturaPA**-muodossa. |
+    | 1         | Muunna tiedosto | Luo sähköisen laskun XML-tiedosto **fatturaPA**-muodossa. |
     | 2         | Allekirjoita tiedosto      | Käytä XML-tiedostossa digitaalista allekirjoitusta.             |
 
 4. Voit tarkastella ja hallita soveltuvuusääntöjä valitsemalla **Soveltuvuussäännöt**-välilehden. Soveltuvuussäännöt määrittävät kontekstin, jossa toimi suoritetaan.
 
-    ![Soveltuvuussääntöjen välilehti](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
+    ![Soveltuvuussäännöt-välilehti.](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. Voit tarkastella ja hallita muuttujia valitsemalla **Muuttujat**-välilehden.
 
-    ![Muuttujat-välilehti](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![Muuttujat-välilehti.](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
 6. Määritä julkiset muuttujat, jotka tarvitaan toimien suorittamiseen.
 
@@ -133,7 +135,7 @@ Vaiheet ja asetukset, joita tarvitaan **Projektilasku** -toiminnon määrittämi
 3. Valitse **Voimaantulo**-kentässä päivämäärä, jona uusi ympäristö on tarkoitus ottaa käyttöön.
 4. Valitse **Ota käyttöön**. 
 
-![Sähköisen laskutuksen ympäristön käyttöönotto](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![Sähköisen laskutuksen ympäristön käyttöönotto.](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
 ## <a name="publish-the-e-invoicing-feature"></a>Sähköisen laskutuksen toiminnon julkaiseminen
 
@@ -149,7 +151,7 @@ Voit julkaista sähköisen laskutuksen toiminnon muuttamalla version tilaksi **V
 1. Valitse **Sähköisen laskutuksen toiminnot** -sivun **Versiot**-välilehdessä se sähköisen laskutuksen toiminto, jonka tilana on **Valmis**.
 2. Valitse **Muuta tilaa \> Julkaise**.
 
-![Sähköisen laskutuksen toiminnon tilan muuttaminen](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![Sähköisen laskutuksen toiminnon tilan muuttaminen.](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Sähköisen laskutuksen integroinnin määritys Financessa
 
@@ -170,7 +172,7 @@ Financen määrityksen aikana suoritat seuraavat tehtävät:
 1. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
 2. Valitse **Toiminnot**-välilehdellä **Käytössä** -valintaruutu toimintoviitteen **IT00036** rivillä.
 
-![FatturaPA-toiminnon käyttöönotto](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
+![FatturaPA-toiminnon käyttöönotto.](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
 #### <a name="configure-electronic-documents"></a>Sähköisten asiakirjojen määrittäminen
 
@@ -185,7 +187,7 @@ Financen määrityksen aikana suoritat seuraavat tehtävät:
     - Valitse kohdassa **Asiakkaan laskukirjauskansio** **Asiakkaan laskukonteksti**.
     - Valitse kohdassa **Projektilasku** **Projektilaskun konteksti**.
 
-![Vastaustyyppien määrittäminen](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![Vastaustyyppien määrittäminen.](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## <a name="electronic-invoice-processing"></a>Sähköisen laskun käsittely
 
@@ -207,13 +209,13 @@ Voit lähettää asiakirjat manuaalisesti riippuen sähköisten laskujen asiakir
 2. Kun mikä tahansa asiakirja lähetetään ensimmäistä kertaa, määritä **Lähetä asiakirjat uudelleen** -asetukseksi **Ei**. Jos sinun on lähetettävä asiakirja uudelleen palvelun kautta, määritä asetukseksi **Kyllä**.
 3. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** avataksesi **Kysely**-valintaruudun, jossa voit muodostaa kyselyn lähetettävien asiakirjojen valitsemista varten.
 
-![Sähköisten asiakirjojen lähettämisen valintaruutu](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![Sähköisten asiakirjojen lähettämisen valintaruutu.](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
 #### <a name="filter-query"></a>Suodatinkysely
 
 1. Määritä **Kysely**-valintaruudussa sekä myynti- että projektilaskujen suodatusehdot tai jätä ehdot tyhjiksi, jos haluat sisällyttää kaikki lähettämättömät laskut.
 
-    ![Lähetyksen suodatusehtojen määrittäminen](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![Lähetyksen suodatusehtojen määrittäminen.](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. Valitse **OK**, jotta voit sulkea **Kysely**-valintaikkunan.
 3. Lähetä valitut asiakirjat valitsemalla **OK**.
@@ -227,13 +229,13 @@ Voit tarkastella kaikkien lähetettyjen asiakirjojen lähetyslokeja.
 1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Sähköisen asiakirjan lähetysloki**.
 2. Valitse **Asiakirjatyyppi**-kentässä **Asiakkaan laskukirjauskansio** tai **Projektilasku** suodattaaksesi vaadittavat sähköiset asiakirjat.
 
-    ![Asiakirjatyypin valinta lähetyslokien tarkastelua varten](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![Asiakirjatyypin valinta lähetyslokien tarkastelua varten.](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     **Lähetystila** -sarakkeessa näkyvä arvo edustaa lähetysprosessin tilaa. Se ilmaisee, suoritettiinko prosessi määrityksen mukaisesti ja tarvitaanko lisätoimia.
 
 3. Valitse toimintoruudussa **Kyselyt \> Lähetystiedot** tarkastellaksesi lähetyksen toteutuslokien tietoja.
 
-    ![Lähetyslokitietojen tarkastelu](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
+    ![Lähetyslokitietojen tarkastelu.](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. **Käsittelytoimet** -pikavälilehdessä näkyy RCS:ssä määritetyssä toimintoversiossa määritettyjen toimien suoritusloki. **Tila**-sarakkeessa näkyy, suoritettiinko toimi onnistuneesti.
 5. **Toimitiedostot**-pikavälilehdessä näkyvät välitiedostot, jotka luotiin toimien suorittamisen aikana. Voit valita **Näytä** ladataksesi tulote-XML-tiedoston **FatturaPA**-muodossa ja tarkastellaksesi sen sisältöä.

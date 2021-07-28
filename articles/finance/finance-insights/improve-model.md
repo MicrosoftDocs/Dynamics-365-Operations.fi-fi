@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186639"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355673"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Ennustemallin parantaminen (esiversio)
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa kuvataan toimintoja, joiden avulla voit parantaa ennustemal
 
 Valitse vähintään yksi kolmesta laskun mahdollisesta lopputuloksesta: **Ajoissa**, **Myöhässä** ja **Erittäin paljon myöhässä**. Valitse kaikki kolme tulosta. Jos poistat jonkin tuloksen valinnan, laskut suodatetaan pois koulutusprosessista ja ennusteen tarkkuus vähenee.
 
-[![Tulosten vahvistaminen](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Tulosten vahvistaminen.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Jos organisaatio vaatii vain kaksi tulosta, muuta **Myöhässä**- ja **Erittäin paljon myöhässä** -kohtien rajoiksi 0 (nolla) päivää. Näin voit tehokkaasti kutistaa ennusteen binaariseen **Ajoissa**- tai **Myöhässä**-tilaan.
 
@@ -51,7 +51,7 @@ Seuraavissa osissa näkyvät laskussa ja asiakasentiteeteissä käytettävissä 
 
 Seuraavassa kuvassa ovat laskutaulukolle käytettävissä olevat kentät.
 
-[![Laskutaulukon käytettävissä olevat kentät](./media/available-fields.png)](./media/available-fields.png)
+[![Laskutaulukon käytettävissä olevat kentät.](./media/available-fields.png)](./media/available-fields.png)
 
 Seuraavia kenttiä ei saa valita koulutukselle:
 
@@ -66,7 +66,7 @@ Seuraavia kenttiä ei saa valita koulutukselle:
 
 Seuraavassa kuvassa ovat asiakastaulukolle käytettävissä olevat kentät.
 
-[![Asiakastaulukon käytettävissä olevat kentät](./media/related-entities.png)](./media/related-entities.png)
+[![Asiakastaulukon käytettävissä olevat kentät.](./media/related-entities.png)](./media/related-entities.png)
 
 Seuraavaa kenttää ei saa valita koulutukselle:
 
@@ -74,8 +74,8 @@ Seuraavaa kenttää ei saa valita koulutukselle:
 
 ## <a name="filters"></a>Suodattimet
 
-Suodattimet eivät tällä hetkellä tue asiakkaan maksuennusteen skenaariota. Valitse tämän vuoksi **Ohita tämä vaihe** ja jatka Yhteenveto-sivulle.
+Voit suodattaa koulutuksessa käytettäviä laskuja määrittämällä suodatusehtoja laskun tai asiakastaulukoiden kentille. Voit esimerkiksi määrittää kynnysarvon sisällyttääksesi mukaan vain laskut, joiden kokonaissumma on yhtä suuri kuin tai suurempi kuin tietty summa. Voit myös jättää pois laskut, jotka liittyvät tietyn asiakasryhmän asiakkaisiin.
 
-[![Kohdistusmalli ja suodattimet](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Lisätietoja tietojen suodattamisesta on kohdassa [Ennustemallin luominen](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

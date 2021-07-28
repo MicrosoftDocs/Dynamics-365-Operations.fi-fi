@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 037c9fb8dfc7aca4535540d92aae3e0ce0f8c638
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802764"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352153"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Asiakkaan tilausten noutojen käsitteleminen myyntipisteessä
 
@@ -32,7 +32,7 @@ Jos olet myymälän käyttäjä, voit suorittaa noudon joko myyntipisteen **Peru
 
 Jos valittuja tilauksia tai tilausrivejä ei ole konfiguroitu noutoon tässä myymälässä tai jos tilaus on jo kerätty kokonaan, **noutotoiminto** ei ole käytettävissä.
 
-![Noutotoiminto](media/pickupoperation.png)
+![Noutotoiminto.](media/pickupoperation.png)
 
 Microsoft Dynamics 365 Commercen versiossa 10.0.17 ja sitä myöhemmissä versioissa **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus voidaan ottaa käyttöön Commerce headquarters -ohjelmassa toimintohallinnan avulla. Jos tämä toiminto on poissa käytöstä, käyttäjät eivät voi valita noutomääriä. Riville tilattu koko määrä on oletusarvoisesti noudettava määrä. Tämä kokemus voi olla ongelmallinen, koska käyttäjät voivat unohtaa valita joitakin nimikkeitä noutoa varten, kun he tekevät noudon tilauksen täyttämisen kautta.
 
@@ -40,13 +40,13 @@ Microsoft Dynamics 365 Commercen versiossa 10.0.17 ja sitä myöhemmissä versio
 
 Kun **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus on otettu käyttöön ja **Nouto**-toiminto valitaan, näkyviin tulee **Nouto**-valintaikkuna. Siinä voit valita noudettavat nimikkeet ja määrät. Oletusarvon mukaan kaikki tilattu määrä, jonka varasto on kerätyssä tai pakatussa tilassa, katsotaan olevan sopiva noutoon. Oletusarvon mukaan tämä määrä määritetään noutomääräksi. Voit muuttaa syötettyä määrää, jos määrän arvo ei ole nolla eikä se ylitä valitun rivin avointa (ei-laskutettua) kokonaismäärää.
 
-![Nouto-valintaikkuna](media/pickupselect.png)
+![Nouto-valintaikkuna.](media/pickupselect.png)
 
 Kun olet valinnut noudettavat määrät ja valinnut sitten **Nouto**, esiin tulee tapahtumasivu. Jos [monikanavamaksut](omni-channel-payments.md)-ominaisuus on otettu käyttöön ja tiedostossa on ennalta hyväksyttyjä luottokorttimaksuja, maksu on kohdistettava.
 
 Tapahtumasivulla järjestelmä laskee erääntyvät summat laskemalla valittujen noutonimikkeiden erääntymissumman ja vähentämällä sitten aiemmin maksetut talletukset tai hyväksytyt luottokorttimaksut. Sinun on käsiteltävä maksu noutotapahtuman viimeistelemiseksi. Jos tapahtumasivun [näyttöasettelu](pos-screen-layouts.md) on määritetty siten, että se sisältää **Päätä tapahtuma** -työvaiheen eikä summaa eräänny, voit suorittaa tapahtuman valitsematta maksutapaa. Jos **Päätä tapahtuma** -toiminto ei ole käytettävissä, voit valita **Summat**-ruudusta **Maksettavaa 0,00 $** -linkin, jos haluat päättää tapahtuman valitsematta maksutapaa.
 
-![Asiakkaan tilauksen noutotapahtuman tapahtumasivu](media/pickupcart.png)
+![Asiakkaan tilauksen noutotapahtuman tapahtumasivu.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Noutorivien tai -määrien muuttaminen
 
@@ -54,7 +54,7 @@ Jos noutomäärää on muutettava sen jälkeen, kun noudettavat nimikkeet on val
 
 **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus on otettu käyttöön, organisaatiot voivat lisätä **Muuta noutorivejä** -toiminnolle painikkeen tapahtumasivun näyttöasetteluun. Kun olet luonut noutotapahtuman ostoskorin myyntipisteessä ja valinnut nimikkeet, voit valita **Muuta noutorivejä**, jos sinun on muutettava noutonimikkeitä, mutta et halua mitätöidä koko tapahtumaa. Näyttöön tulevassa **Muuta noutorivejä** -valintaikkunassa voit muuttaa noutonimikkeitä ja -määriä. Tapahtuman ostoskori päivitetään vastaamaan muutoksiasi.
 
-![Muuta noutonimikkeitä -valintaikkuna](media/pickupchange.png)
+![Muuta noutonimikkeitä -valintaikkuna.](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

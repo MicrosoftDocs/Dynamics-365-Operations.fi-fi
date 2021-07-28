@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810483"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351414"
 ---
 # <a name="outbound-workload-visualization"></a>Lähtevän kuormituksen visualisointi
 
@@ -60,7 +60,7 @@ Lähtevän kuormituksen visualisointi määritetään seuraavasti:
     - **Sisällytettävät päivä** – anna niiden päivien määrä menneisyydessä, joille kaavio luodaan.
     - **Työtilauksen tyyppi** – valitse suodatusperusteena käytettävät työtilauksen tyypit.
 
-    ![Määritä suodattimet -sivu](media/work-viz-filters-1.png "Määritä suodattimet -sivu")
+    ![Määritä suodattimet -sivu.](media/work-viz-filters-1.png "Määritä suodattimet -sivu")
 
 1. Palaa **Lähtevän kuormituksen visualisoinnit** -sivulle sulkemalla **Määritä suodattimet** -sivu.
 
@@ -70,11 +70,11 @@ Lähtevän kuormituksen visualisointi määritetään seuraavasti:
     - **Päivitetty viimeksi** – tässä kentässä päivämäärä ja aika, jolloin kaavion tiedot viimeksi päivitettiin.
     - **Arvioitu tai toteutunut aika** – Jos järjestelmään on määritetty työn standardit, määritä asetukseksi *Kyllä*, jolloin kertyneet keräilyaika-arviot näytetään kaavion kunkin sarakkeen yläosassa. Jos työn standardeja ei käytetä, tämä vaihtoehto ei ole käytettävissä.
 
-    ![Esimerkkivisualisointi](media/work-viz-chart.png "Esimerkkivisualisointi")
+    ![Esimerkkivisualisointi.](media/work-viz-chart.png "Esimerkkivisualisointi")
 
 1. Näytä liitetyn työrivin tiedot valitsemalla jokin kaavion palkki.
 
-    ![Työrivin tiedot](media/work-viz-work-details.png "Työrivin tiedot")
+    ![Työrivin tiedot.](media/work-viz-work-details.png "Työrivin tiedot")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Esimerkki: vyöhykkeiden lähtevän kuormituksen visualisointi
 
@@ -92,7 +92,7 @@ Tässä esimerkissä määritetään visualisointi näyttämään kunkin vyöhyk
 
 Seuraavassa kuvassa on esimerkki tuloksena saatavasta kaaviosta.
 
-![Vyöhykkeen ja työn tilan vertailun visualisointi](media/work-viz-chart.png "Vyöhykkeen ja työn tilan vertailun visualisointi")
+![Vyöhykkeen ja työn tilan vertailun visualisointi.](media/work-viz-chart.png "Vyöhykkeen ja työn tilan vertailun visualisointi")
 
 Kaaviossa on kaksi vyöhykettä, **TUOTANTO** ja **MÄÄRÄ**, sekä **Tyhjä**-niminen vyöhyke. **Tyhjä**-vyöhyke ilmaisee kaikki työrivit, jotka eivät ole vyöhykkeiden jäseniä. Kaavio näyttää aina kaikki ei-liittyvät suodatut tiedot **tyhjänä**, sillä näin saadaan mahdollisimman suuri näkyvyys. **TUOTANTO**-vyöhykkeen osalta kaavio näyttää kolme suljettua riviä ja neljä avointa riviä. **MÄÄRÄ**-vyöhykkeen osalta kaavio näyttää neljä suljettua riviä, yhden avoimen rivin ja 24 peruutettua riviä. Kaaviossa on vielä kahdeksan suljettua riviä, jotka eivät kuulu mihinkään vyöhykkeeseen ja jotka ovat siksi **Tyhjä**-vyöhykkeessä.
 

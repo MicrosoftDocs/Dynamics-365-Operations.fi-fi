@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359360"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 
@@ -40,7 +40,7 @@ Noudattamalla näitä ohjeita voit määrittää kaksoiskirjoituksen LCS-**ympä
 
 2. Valitse **Kaksoiskirjoitussovellus**-näppäin.
 
-    ![Power Platform -integrointi](media/powerplat_integration_step2.png)
+    ![Power Platform -integrointi.](media/powerplat_integration_step2.png)
 
 3. Lue ehdot ja valitse valintaruutu ja valitse sitten **Määritä**.
 
@@ -52,7 +52,7 @@ Noudattamalla näitä ohjeita voit määrittää kaksoiskirjoituksen LCS-**ympä
 
 7. Luo linkki Dataversen ja nykyisen ympäristön tietokantojen välille valitsemalla **Yhdistä Power Platform -ympäristöön**. Tämä kestää yleensä alle 5 minuuttia.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Yhdistä Power Platform -ympäristöön":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Yhdistä Power Platform -ympäristöön.":::
 
 8. Kun yhdistäminen on valmis, hyperlinkki tulee näkyviin. Linkin avulla voit kirjautua sisään kaksoiskirjoitusalueelle Finance and Operations -ympäristössä. Siellä voit tehdä entiteettien yhdistämismäärityksiä.
 

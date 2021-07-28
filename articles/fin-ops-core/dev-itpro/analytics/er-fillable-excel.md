@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893905"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359026"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -39,7 +39,7 @@ Kun Excel-työkirjamuotoisen lähtevän tiedoston luontia varten lisätään uus
 
 Määrityksen Er-muoto-osa määritetään valitsemalla toimintoruudussa **Suunnitteluohjelma** ja avaamalla ER-muoto-osa muokattavaksi ER-toiminnon suunnitteluohjelmassa.
 
-![Konfiguroinnit-sivu](./media/er-excel-format-add-format.png)
+![Konfiguraatiot-sivu.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Excel-tiedosto-osa
 
@@ -47,14 +47,14 @@ Määrityksen Er-muoto-osa määritetään valitsemalla toimintoruudussa **Suunn
 
 **Excel\\Tiedosto**-osa on lisättävä määritettyyn ER-muotoon luomaan lähtevä tiedosto Excel-muodossa.
 
-![Excel\Tiedosto-osa](./media/er-excel-format-add-file-component.png)
+![Excel\Tiedosto-osa.](./media/er-excel-format-add-file-component.png)
 
 Lähtevän tiedoston asettelu määritetään liittämällä Excel-työkirja, jossa on .xlsx-tunniste, **Excel\\Tiedosto**-osaan lähtevien tiedostojen mallina.
 
 > [!NOTE]
 > Jos malli liitetään manuaalisesti, käytettävän [tiedostotyypin](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) on oltava määritetty tätä tarkoitusta varten [ER-parametreissa](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Liitteen lisääminen Excel\Tiedosto-osaan](./media/er-excel-format-add-file-component2.png)
+![Liitteen lisääminen Excel\Tiedosto-osaan.](./media/er-excel-format-add-file-component2.png)
 
 Voit määrittää tavan, jolla liitetty malli täytetään määritettyä ER-muotoa suoritettaessa, lisäämällä sisäkkäiset **Taulukko**-, **Alue**- ja **Solu**-osat **Excel\\Tiedosto**-osaan. Kukin sisäkkäinen osa on liitettävä Excelin nimettyyn kohteeseen.
 
@@ -62,7 +62,7 @@ Voit määrittää tavan, jolla liitetty malli täytetään määritettyä ER-mu
 
 Uusi malli voidaan tuoda tyhjään ER-muotoon valitsemalla **Tuo Excelistä** toimintoruudun **Tuonti**-välilehdessä. Tässä esimerkissä **Excel\\Tiedosto**-osa luodaan automaattisesti ja tuotu malli liitetään siihen. Myös kaikki pakolliset ER-osat luodaan automaattisesti löydetyn Excelin nimettyjen kohteiden luettelon perusteella.
 
-![Tuo Excelistä -toiminnon valinta](./media/er-excel-format-import-template.png)
+![Tuo Excelistä -toiminnon valinta.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Jos muokattavaan ER-muotoon halutaan luoda valinnainen **Taulukko**-elementti, määritä **Luo Excel-taulukkomuotoinen elementti** -asetukseksi **Kyllä**.
@@ -79,7 +79,7 @@ ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Taul
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Tosi** tai jos mitään lauseketta ei ole määritetty, sopiva laskentataulukko asetetaan luotuun tiedostoon.
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Epätosi**, luotu tiedosto ei sisällä laskentataulukkoa.
 
-![Esimerkki Taulukko-osasta](./media/er-excel-format-sheet-component.png)
+![Esimerkki Taulukko-osasta.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Alue-osa
 
@@ -182,7 +182,7 @@ Päivitetty malli voidaan tuoda muokattavaan ER-muotoon valitsemalla **Päivitä
 >
 > Jos muokattavassa ER-muoto sisälsi alun perin **Taulukko**-elementtejä, määritä **Luo Excel-taulukkomuotoinen elementti** -asetukseksi **Kyllä** päivitettyä mallia tuotaessa. Muussa tapauksessa kaikki alkuperäisen **Taulukko**-elementin sisäkkäiset elementit luodaan alusta. Tämän vuoksi kaikki uudelleenluotujen muotoelementtien sidonnat menetetään päivitetyssä ER-muodossa.
 
-![Luo Excel-taulukkomuotoinen elementti -vaihtoehto Päivitä Excelistä -valintaikkunassa](./media/er-excel-format-update-template.png)
+![Luo Excel-taulukkomuotoinen elementti -vaihtoehto Päivitä Excelistä -valintaikkunassa.](./media/er-excel-format-update-template.png)
 
 Lisätietoja tästä toiminnosta on kohdan [Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja uudelleen](modify-electronic-reporting-format-reapply-excel-template.md) ohjeissa.
 
@@ -190,7 +190,7 @@ Lisätietoja tästä toiminnosta on kohdan [Sähköisen raportoinnin muotojen mu
 
 Muokattavaa ER-muotoa vahvistettaessa tehdään yhdenmukaisuustarkistus, jolla varmistetaan, että Excel-nimi esiintyy käytettävässä Excel-mallissa. Saat ilmoituksen mahdollisista ristiriidoista. Joidenkin ristiriitojen osalta tarjotaan mahdollisuutta korjata ongelmat automaattisesti.
 
-![Vahvistusvirhesanoma](./media/er-excel-format-validate.png)
+![Vahvistusvirhesanoma.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Excel-kaavojen laskemisen hallinta
 
@@ -209,7 +209,7 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 1. Käyttämällä ER-konfiguraatioita voit [luoda](er-generate-printable-fti-forms.md) tulostettavan vapaatekstilaskun (FTI) asiakirjan.
 2. Tarkista luodun tiedoston alatunniste. Huomaa, että sivu sisältää tietoja nykyisestä sivunumerosta ja asiakirjan sivujen kokonaismäärästä.
 
-    ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa](./media/er-fillable-excel-footer-1.gif)
+    ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa.](./media/er-fillable-excel-footer-1.gif)
 
 3. [Avaa](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) ER-muodon suunnittelijassa tarkistettavaksi ER-esimerkkimuoto.
 
@@ -222,7 +222,7 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 
     - Toinen **merkkijono**-komponentti lisää tekstin, joka sisältää nykyisen sivunumeron ja nykyisen asiakirjan sivujen kokonaismäärän.
 
-    ![Alatunnisteen ER-muotokomponentin tarkistus Muodon suunnittelija -sivulla](./media/er-fillable-excel-footer-2.png)
+    ![Alatunnisteen ER-muotokomponentin tarkistus Muodon suunnittelija -sivulla.](./media/er-fillable-excel-footer-2.png)
 
 4. Muokkaa nykyisen sivun alatunnistetta mukauttamalla ER-esimerkkimuotoa:
 
@@ -237,20 +237,20 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
         1. Lisää **merkkijono**-komponentti, joka tasaa käsittelypäivämäärän oikealle ja esittää sen 8 pisteen "Segoe UI Regular" -fontilla (**"&R&"Segoe UI,Regular"&8"**).
         2. Lisää **merkkijono**-komponentti, joka täyttää käsittelypäivämäärän mukautetussa muodossa (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Alatunnisteen ER-muotokomponentin tarkistus Muodon suunnittelija -sivulla](./media/er-fillable-excel-footer-3.png)
+        ![Alatunnisteen ER-muotokomponentin tarkistus Muodon suunnittelija -sivulla.](./media/er-fillable-excel-footer-3.png)
 
     4. [Viimeistele](er-quick-start2-customize-report.md#CompleteDerivedFormat) johdetun **Vapaatekstilasku (Excel) mukautettu** -ER-muodon luonnosversio.
 
 5. [Määritä](er-generate-printable-fti-forms.md#configure-print-management) tulostuksenhallinta käyttämään johdettua **Vapaatekstilasku (Excel) mukautettu** -ER-muotoa ER-esimerkkimuodon sijaan.
 6. Luo tulostettava FTI-tiedosto ja tarkista luodun tiedoston alatunniste.
 
-    ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa](./media/er-fillable-excel-footer-4.gif)
+    ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 
-[Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa](tasks\er-design-reports-openxml-2016-11.md)
+[Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa](tasks\er-design-reports-openxml-2016-11.md)
 
 [Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja](modify-electronic-reporting-format-reapply-excel-template.md)
 

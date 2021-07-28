@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799514"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349719"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Kanavien välisen jakamisen ottaminen käyttöön ja käyttäminen
 
@@ -48,15 +48,15 @@ Kanavienvälinen jakaminen otetaan käyttöön Commercen sivustonmuodostimessa s
 1. Valitse **Sivuston asetukset \> Ominaisuudet**.
 1. Määritä **Kanavienvälinen**-ominaisuuden asetukseksi **Käytössä**.
 
-    ![Kanavienvälinen-asetuksena Käytössä Commerce-sivustonmuodostimessa](./media/enabling-cross-channel-sharing.png)
+    ![Kanavienvälinen-asetus käytössä Commerce-sivuston luontiohjelmassa.](./media/enabling-cross-channel-sharing.png)
 
 Kun kanavienvälinen jakaminen on otettu käyttöön, kanavienväliset tiedot näkyvät **Kanavat**-osan kohdassa **Sivuston asetukset \> Ominaisuudet**, kuten seuraavassa kuvassa.
 
-![Kanavat tiedot näkyvissä kanavienvälisen jakamisen käyttöönoton jälkeen](./media/channels-cross-channel.png)
+![Kanavat tiedot näkyvissä kanavienvälisen jakamisen käyttöönoton jälkeen.](./media/channels-cross-channel.png)
 
 Lisäksi sen jälkeen kun kanavienvälinen jakaminen on otettu käyttöön, **Kanava**-kenttä Commerce-sivustonmuodostimen oikeassa yläkulmassa sisältää **Kanavienvälinen verkkokauppa** vaihtoehdon, jolla voi hallita kanavienvälistä sisältöä seuraavassa kuvassa näytetyllä tavalla.
 
-![Kanavienvälinen verkkokauppa -vaihtoehto Kanavat-kentässä kanavienvälisen jakamisen käyttöönoton jälkeen](./media/cross-channel-dropdown.png)
+![Kanavienvälinen verkkokauppa -vaihtoehto Kanavat-kentässä kanavienvälisen jakamisen käyttöönoton jälkeen.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Kanavienvälisen sisällön luominen ja käyttäminen
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748894"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350785"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-synkronoinnin ongelmien vianmääritys
 
@@ -73,21 +73,21 @@ Jos molemmilla puolilla on tietoja ja olet vahvistanut, että ongelma ei liity t
 
 Näyttöön saattaa tulla "virheellinen pyyntö" -virhesanoma, joka muistuttaa seuraavaa esimerkkiä, kun luot tietoja Finance and Operations -sovelluksessa.
 
-![Esimerkki virheellisen pyynnön virhesanomasta](media/error_record_id_source.png)
+![Esimerkki virheellisen pyynnön virhesanomasta.](media/error_record_id_source.png)
 
 Ongelman korjaaminen edellyttää, että määrität oikean käyttöoikeusroolin yhdistetyn Dynamics 365 Sales- tai Dynamics 365 Customer Service -liiketoimintayksikön ryhmälle, jotta puuttuva oikeus voidaan ottaa käyttöön.
 
 1. Etsi Finance and Operations -sovelluksessa liiketoimintayksikkö, joka on yhdistetty tietojen integroinnin yhteysjoukkoon.
 
-    ![Organisaation yhdistämismääritys](media/mapped_business_unit.png)
+    ![Organisaation yhdistämismääritys.](media/mapped_business_unit.png)
 
 2. Kirjaudu sisään ympäristöön Dynamics 365 -ohjelman mallipohjaisen sovelluksen avulla, siirry kohtaan **Asetus \> Suojaus** ja etsi yhdistetyn liiketoimintayksikön ryhmä.
 
-    ![Yhdistetyn liiketoimintayksikön ryhmä](media/setting_security_page.png)
+    ![Yhdistetyn liiketoimintayksikön ryhmä.](media/setting_security_page.png)
 
 3. Avaa ryhmän sivu muokkausta varten ja valitse sitten **Ryhmän roolit** avataksesi **Hallitse ryhmän rooleja** -valintaikkunan.
 
-    ![Roolien hallinta -painike](media/manage_team_roles.png)
+    ![Roolien hallinta -painike.](media/manage_team_roles.png)
 
 4. Delegoi rooli, jolla on liittyvien taulujenn luku- ja kirjoitusoikeudet, ja valitse sitten **OK**.
 

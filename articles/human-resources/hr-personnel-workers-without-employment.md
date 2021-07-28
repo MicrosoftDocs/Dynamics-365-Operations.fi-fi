@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6fbada6feb55b8627b1aa1ddfe367177edb7a0a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 71cb119e533e64b14badf65f55e8c4d5aa4c4b2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051710"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356581"
 ---
 # <a name="workers-without-employment"></a>Työntekijät, joilla ei työsuhdetta
 
@@ -42,13 +42,13 @@ Voit poistaa **Työntekijät, joilla ei ole työsuhdetta** -luettelossa olevat h
 
 2. Suodata **Oikeudet**-välilehdessä **Oikeudet**-luettelo ja **Ylläpidä työntekijöitä**.
 
-   [![Suodata Oikeudet-luettelo](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+   [![Suodata Oikeudet-luettelo.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. Valitse **viitteet**-sarakkeesta **Näytä valikon vaihtoehdot**.
 
 4. Valitse **Näytä valikon vaihtoehdot**-sarakkeesta **HcmWorkersWithoutEmployment**.
 
-   [![Valitse lomake](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![Valitse lomake.](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. Määritä **Poisto**-oikeudeksi **Myönnä**.
 
@@ -56,6 +56,6 @@ Voit poistaa **Työntekijät, joilla ei ole työsuhdetta** -luettelossa olevat h
 
 7. Valitse **Julkaise kaikki**.
 
-   [![Julkaise muutokset](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
+   [![Julkaise muutokset.](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

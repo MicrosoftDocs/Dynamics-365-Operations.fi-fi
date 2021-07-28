@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92b44532dfae70f03d6686ca1d2f8b6f74345ee6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce7b1ad5472a6e276d356ff4e814defcc5af1f9d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752457"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359384"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 1 – Tietomallin suunnittelu)
 
@@ -104,7 +104,7 @@ Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn v
 69. Valitse Tallenna.
 70. Sulje sivu.
 
-![ER-tietomallin suunnittelutoiminnon sivu](../media/er-financial-dimensions-guides-data-model.png)
+![ER-tietomallin suunnittelutoiminnon sivu.](../media/er-financial-dimensions-guides-data-model.png)
 
 
 

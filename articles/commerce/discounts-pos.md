@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792844"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356875"
 ---
 # <a name="show-discounts-in-pos"></a>Alennusten näyttäminen myyntipisteessä
 
@@ -33,7 +33,7 @@ Kampanjat ovat tärkeä osa ostopäätöksiä tekevien asiakkaiden motivoinnissa
 
 Commerce sisältää toiminnon, jonka nimi on Näytä kaikki alennukset. Tämä toiminto näyttää kaikki myymälässä parhaillaan suoritettavat alennukset. Näytä kaikki alennukset -toiminto voidaan yhdistää painikkeeseen myyntipisteessä. Tämä painike voidaan lisätä **aloitussivulle** tai **Tapahtuma**-sivulle. Seuraavassa kuvassa on esimerkki avoinna olevasta **Kaikki alennukset** -sivusta.
 
-![Kaikki alennukset -sivu](./media/View_all_discounts.png "Kaikki alennukset -sivu")
+![Kaikki alennukset -sivu.](./media/View_all_discounts.png "Kaikki alennukset -sivu")
 
 Jos haluat näyttää alennukset, järjestelmä etsii kaikki alennukset, jotka vastaavat yhtä tai useampaa seuraavista ehdoista:
 
@@ -61,11 +61,11 @@ Seuraavissa kuvissa näkyy logiikka, joka määrittää, mitkä alennukset näyt
 
 Seuraavassa kuvassa on logiikka, jota käytetään alennuksen samanaikaisuuden ohjausobjektiksi on määritetty **Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken**.
 
-![Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa](./media/Model_1.png "Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa.").
+![Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa.](./media/Model_1.png "Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa.").
 
 Seuraavassa kuvassa on logiikka, jota käytetään alennuksen samanaikaisuuden ohjausobjektiksi on määritetty **Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken**.
 
-![Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa](./media/Model_2.png "Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.").
+![Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.](./media/Model_2.png "Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.").
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

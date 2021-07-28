@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9a85cd2590bd9c6cabcd0001d5de81746c1d4f63
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 7618bb202dac3295c948d74c482900b0aeae8bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907836"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353935"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Asiakasportaali Dynamics 365 Supply Chain Managementin yhteenvedoksi
 
@@ -63,7 +64,7 @@ Asiakasportaali toimitetaan Power Apps -portaalien mallina. Se on riippuvainen P
 
 [Kaksoiskirjoitus](/powerapps/maker/portals/overview) on valmis infrastruktuurituote, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja Finance and Operations -sovellusten välillä. Kaksoiskirjoitus sisältää kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Microsoft Dataversen välillä. Tästä syystä tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa. Asiakasportaali määräytyy niiden taulukoiden mukaan, jotka on synkronoitu kaksoiskirjoituksella. Ennen kuin Supply Chain Managementin tiedot voidaan tuoda esiin asiakasportaalissa, kaksoiskirjoitus on otettava käyttöön kaikissa soveltuvissa taulukoissa.
 
-![Asiakasportaalin riippuvuudet](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
+![Asiakasportaalin riippuvuudet.](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 
 Asiakasportaali toimii lähtökohtana organisaatioille, jotka haluavat käyttää Power Apps -portaaleja, joiden on tarkoitus muodostaa ulkoinen verkkosivusto, joka käyttää Supply Chain Managementin asennuksen tietoja. Sen avulla organisaatiot voivat yhdistää kaksoiskirjoituksen, Supply Chain Managementin ja Power Apps -portaalit.
 

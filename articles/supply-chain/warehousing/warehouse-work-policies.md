@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838127"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353369"
 ---
 # <a name="work-policies"></a>Työkäytännöt
 
@@ -200,7 +200,7 @@ Ostotilaus on nyt vastaanotettu, mutta siihen ei ole liitetty työtä. Käytett�
 
 Seuraavassa esimerkissä on kaksi tuotantotilausta, jotka ovat *PRD-001* ja *PRD-002*. Tuotantotilaus *PRD-001* sisältää *Kokoonpano*-työvaiheen, jolla tuote *SC1* raportoidaan valmiiksi sijainnissa *001*. Tuotantotilaus *PRD-002* sisältää *Maalaus*-työvaiheen ja käyttää tuotetta *SC1* sijainnista *001*. Tuotantotilaus *PRD-002* käyttää myös raaka-ainetta *RM1* sijainnissa *001*. Raaka-ainetta *RM1* varastoidaan varastosijaintiin *BULK-001*, josta raaka-ainekeräilyn varastotyö kerää sen sijaintiin *001*. Keräilytyö luodaan, kun tuotanto *PRD-002* vapautetaan.
 
-[![Varaston työkäytännöt](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Varaston työkäytännöt.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Kun suunnittelet tämän skenaarion mukaista varastotyön konfigurointia, ota huomioon seuraavat seikat:
 

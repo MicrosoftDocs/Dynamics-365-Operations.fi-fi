@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b2162621968c5b1c3957ea1a1639e71439000918
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9d024a5096b499b986ec2d5c38c0d6a2b7794d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837822"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356485"
 ---
 # <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
@@ -40,7 +40,7 @@ Kun kunnossapitoseisokkirekisteröinnissä on valittu käyttöomaisuudet, kaikki
 
 Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin toimintoihin liittyviä tietoja valitsemalla **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot**. Avaa tietonäkymä napsauttamalla **Ylläpidon käyttökatkojen toiminnot** -sarakkeen linkkiä. Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -luettelosta.
 
-![Kuva 1](media/19-preventive-maintenance.png)
+![Kuva 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Kunnossapitoseisokkien toiminnon luominen
@@ -61,7 +61,7 @@ Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin
 
 Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tietonäkymästä.
 
-![Kuva 2](media/20-preventive-maintenance.png)
+![Kuva 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Valittuihin käyttökohteisiin liittyvät työtilauksen ylläpitotyöt ja ylläpitoaikataulurivit päivitetään automaattisesti, jos uusia työtilauksia tai ylläpitoaikataulurivejä luodaan huoltoseisokkien luomisen jälkeen. Jos esimerkiksi ajoitat ylläpitosuunnitelmia tai kunnossapitokierroksia liittyville käyttöomaisuuksille kaksi päivää huoltoseisokkien toiminnon luomisen jälkeen, kunnossapitoseisokkitoimintoon lisätään automaattisesti uudet ylläpitoaikataulurivit.
@@ -72,7 +72,7 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 10. Aloita laskenta valitsemalla **OK**. Tuntien kokonaismäärä näkyy **Kapasiteetin kuormitus** -yhteenvedossa. Valitse **Kapasiteetin kuormitus** -välilehden **Ryhmittely...**-toimintoruuturyhmissä painikkeet, joilla saadaan tarkka yleiskatsaus ennustettujen tuntien kohdistuksesta. Alla oleva kuva näyttää **Kapasiteetin kuormitus** -laskennan tulokset.
 
-![Kuva 3](media/21-preventive-maintenance.png)
+![Kuva 3.](media/21-preventive-maintenance.png)
 
 11. Kun olet saanut yleiskuvan kapasiteetin kuormituksesta ja haluat tehdä muutoksia työtilausten ylläpitotöihin tai ylläpitoaikatauluriveihin, palaa **Ylläpidon käyttökatkojen toiminnot** -tietonäkymään ja valitse oikaistavat rivit **Tuloksena olevat työtilauksen ylläpitotyöt**- ja **Ylläpitoaikataulun rivit** -pikavälilehdissä.
 
@@ -89,7 +89,7 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 16. Aloita laskenta valitsemalla **OK**. Nimike-ennusteiden kokonaismäärä näkyy **Nimike-ennuste** -yhteenvedossa. Valitse **Nimike-ennuste** -välilehden **Ryhmittely...**-toimintoruuturyhmissä painikkeita, joilla saadaan yleiskatsaus ennustettujen nimikkeiden kohdistuksesta. Alla olevassa kuvassa on **Nimike-ennuste**-laskennan tuloksia.
 
-![Kuva 4](media/22-preventive-maintenance.png)
+![Kuva 4.](media/22-preventive-maintenance.png)
 
 - Voit kopioida käyttökohteita yhdestä huoltoseisokkitehtävästä toiseen. Valitse **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Kopioi ylläpidon käyttökatkojen toiminnot** -painike ja tee valinnat **Ylläpidon käyttökatkojen toiminnoista**- ja **Ylläpidon käyttökatkojen toimintoihin** -kentissä ja valitse **OK**.
 - Napsauta **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Ylläpitoaikataulun rivit**- tai **Aktiiviset työtilaukset**-painike ja avaa liittyvät luettelot ja tarkastele valittuun kunnossapitoseisokin toimintoon liittyviä rivejä.

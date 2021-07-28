@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 06ddad1f2df895da4819a06e3552acab8e9aff78
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5ce0da7eb99d6da876362bb7e3f2cfbb9e561cfd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744730"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358938"
 ---
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
@@ -78,7 +78,7 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
 4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
-[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Päivittäminen vetämällä.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.

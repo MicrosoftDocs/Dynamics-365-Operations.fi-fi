@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944289"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359408"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Excel-malleja sisältävien ER-määritysten käyttäminen uudelleen Word-muotoisten raporttien luontiin
 
@@ -54,14 +54,14 @@ Nämä menettelyt koskevat toimintoa, joka lisättiin Dynamics 365 for Operation
 5. Valitse **Suunnittelu**.
 6. Huomaa, että **Muodon suunnittelija** -sivulla oleva juuren muotoelementin otsikko ilmaisee, että käytössä on Excel-malli.
 
-![Aiemmin luodun määrityksen valitseminen](../media/er-design-configuration-word-2016-11-image01.gif)
+![Aiemmin luodun määrityksen valitseminen.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Ladatun Word-mallin tarkasteleminen
 
 1. Avaa Wordin työpöytäsovelluksessa aiemmin ladattu **SampleVendPaymDocReport.docx**-mallitiedosto.
 2. Tarkista, että mallissa on vain sen asiakirjan asettelu, jonka haluat luoda ER-raporttina.
 
-![Word-mallin asettelu työpöytäsovelluksessa](../media/er-design-configuration-word-2016-11-image02.png)
+![Word-mallin asettelu työpöytäsovelluksessa.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Excel-mallin korvaaminen Word-mallilla ja mukautetun XML-osan lisääminen
 
@@ -84,7 +84,7 @@ Tällä hetkellä OPENXML-muotoisen raportin luonnissa käytetään mallina Exce
 
 9. Huomaa, että juuren muotoelementin otsikko ilmaisee käytössä olevan Word-malli.
 
-    ![Excel-mallin korvaaminen Word-mallilla ja mukautetun XML-osan lisääminen](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Excel-mallin korvaaminen Word-mallilla ja mukautetun XML-osan lisääminen.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Valitse **Muoto **-välilehdestä** Liitteet**.
 
@@ -110,7 +110,7 @@ Jos olet suunnitellut aiemminkin Word-asiakirjoja lomakkeina, jotka sisältävä
 1. Avaa Wordin työpöytäsovelluksessa **SampleVendPaymDocReportBounded.docx**-mallitiedosto.
 2. Tarkista, että mallissa on sen asiakirjan asettelu, jonka haluat luoda ER-raporttina. ER:n tähän malliin suorituksen aikana lisäävien tietojen paikkamerkkeinä käytetyt sisällön ohjausobjektit perustuvat yhdistämismäärityksiin, jotka määritetään mukautetun **Raportti**-XML-osan ja Word-asiakirjan sisällön ohjausobjektien elementtien välille.
 
-![Word-mallin esikatselu työpöytäsovelluksessa](../media/er-design-configuration-word-2016-11-image04.png)
+![Word-mallin esikatselu työpöytäsovelluksessa.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Sellaisen Word-mallin lataaminen, jossa mukautettu XML-osa on yhdistetty sisällön ohjausobjekteihin
 
@@ -144,7 +144,7 @@ Muokattavissa olevan muodon luonnosversion suorittaminen edellyttää, että se 
 3. Valitse **Toimittajan maksut** -sivulla kaikki ruudukon rivit.
 4. Valitse **Maksun tila** \> **Ei mitään**.
 
-    ![Toimittajan maksut -sivulla käsiteltävät maksut](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Toimittajan maksut -sivulla käsiteltävät maksut.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. Valitse toimintoruudussa **Luo maksut**.
 6. Toimi seuraavasti avautuvassa valintaikkunassa:
@@ -156,11 +156,11 @@ Muokattavissa olevan muodon luonnosversion suorittaminen edellyttää, että se 
 7. Valitse **Sähköisen raportin parametrit** -valintaikkunasta **OK**.
 8. Luotu tuloste on Word-muotoinen ja että siinä on käsiteltyjen maksujen tiedot. Analysoi luotu raportti.
 
-    ![Word-muotoinen luotu tuloste](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Word-muotoinen luotu tuloste.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Uuden ER-määrityksen suunnitteleminen luomaan Word-muotoisia raportteja](../er-design-configuration-word.md)
+- [Uuden ER-konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa](../er-design-configuration-word.md)
 - [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
 
 

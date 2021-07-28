@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a2bac914330058400a7e4d7d355bd4a00a4522f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86d85d280b32834c36691535a019ef6d5141bf93
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816793"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356018"
 ---
 # <a name="inbound-and-outbound-assets"></a>Saapuvat ja lähtevät resurssit
 
@@ -42,7 +42,7 @@ Resurssien hallinnan asetukset määrittävät, voiko saapuvia ja lähteviä res
 3. Valitse **Päivitä ylläpitopyynnön tila**.
 4. Valitse **Saapuva** (tai muu elinkaaren tila, jonka olet luonut saapuville resursseille) ja valitse sitten **OK**.
 
-![Rekisteröi resurssit saapuviksi](media/07-manage-maintenance-requests.png)
+![Rekisteröi resurssit saapuviksi.](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Rekisteröi saapuvat resurssit vastaanotetuiksi
 
@@ -51,7 +51,7 @@ Resurssien hallinnan asetukset määrittävät, voiko saapuvia ja lähteviä res
 3. Valitse **Vastaanota resurssit**.
 4. Määritä päivämäärä ja kellonaika **Vastaanotettu**-kentässä. Valitse sitten **OK**. Tietue poistetaan **Saapuvat resurssit** -luettelosivulta.
 
-![Rekisteröi saapuvat resurssit vastaanotetuiksi](media/08-manage-maintenance-requests.png)
+![Rekisteröi saapuvat resurssit vastaanotetuiksi.](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Rekisteröi resurssit lähteviksi
 

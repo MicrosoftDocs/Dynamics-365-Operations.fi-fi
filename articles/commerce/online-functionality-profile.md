@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: be78b92858979b8bb009a4699eff96379ef7cef3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 45df6566a24cd519ccaad67c5d47abd9b7af7aee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791099"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353033"
 ---
 # <a name="create-an-online-functionality-profile"></a>Luo online-toimintoprofiili
 
@@ -42,9 +42,9 @@ Seuraavassa kuvataan, miten online-toimintoprofiili luodaan Commerce Headquarter
 
 Seuraavassa kuvassa on esimerkki verkkotoimintoprofiilista.
   
-![Verkon toimintoprofiiliesimerkki](media/online-functionality-profile.png)
+![Verkon toimintoprofiiliesimerkki.](media/online-functionality-profile.png)
 
-## <a name="functions"></a>Toiminnot
+## <a name="functions"></a>Funktiot
 
 - **Koostetuotteet**: Kun tämä toiminto on käytössä, ostoskärry voi päivittää määrän, kun sama nimike lisätään useita kertoja.
 - **Salli uloskuittaus ilman maksuja**: Kun tämä toiminto on käytössä, se käsittelee skenaarion, kun ostoskärryyn lisätyistä nimikkeistä veloitetaan hinta 0,00 $.

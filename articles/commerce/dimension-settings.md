@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b901622bbfc8d6b3066879f6456a4ab618ca4076
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: d6854c11822e07ff06426b7a35eac86cdc0e9b06
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117221"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356899"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Tuotedimensioiden näyttöasetusten kohdistaminen
 
@@ -33,7 +33,7 @@ Dynamics 365 Commerce tukee koko-, tyyli- ja väridimensioita, jotta tuotemuuttu
 
 Commercen sivustotyökalussa dimensioasetukset määritetään kohdassa **Sivuston asetukset \> Laajennukset \> Dimensioasetukset**. Seuraavassa kuvassa on esimerkki sivustonmuodostuksen dimensioasetuksista.
 
-![Esimerkki Commercen sivustonmuodostustyökalun sivustoasetuksista](./dev-itpro/media/swatch_site_settings.PNG)
+![Esimerkki Commercen sivustonmuodostustyökalun sivustoasetuksista.](./dev-itpro/media/swatch_site_settings.PNG)
 
 Käytettävissä on kaksi dimensioasetusta:
 
@@ -41,13 +41,13 @@ Käytettävissä on kaksi dimensioasetusta:
 
     Seuraavassa kuvassa on esimerkki, jossa sähköisen kauppasivuston PDP sisältää väri- ja kokoväriruudut. Tässä esimerkissä väridimensiolle on konfiguroitu heksadesimaalikoodi. Näin ollen väriruudut näytetään väreinä. Kokodimensiolle ei kuitenkaan ole määritetty heksadesimaalikoodia eikä kuvan URL-osoitetta. Näin ollen näkyvissä on teksti.
 
-    ![Esimerkki sähköisen kaupan tuotetietosivulla väriruutuina näkyvistä väridimensioista](./dev-itpro/media/swatch_pdp.png)
+    ![Esimerkki sähköisen kaupan tuotetietosivulla väriruutuina näkyvistä väridimensioista.](./dev-itpro/media/swatch_pdp.png)
 
 - **Tuotekortissa näytettävät dimensiot** – Määritä, mitkä dimensiot näkyvät luetteloissa ja luettelosivuilla näkyvissä tuotekorteissa. Ennen kuin dimensio voidaan näyttää tuotekortissa, tämän asetuksen on oltava käytössä dimensiolle. Myös **Kuvana näytettävät dimensiot** -asetus tulisi ottaa käyttöön. Tuotekorttien väriruudun valinta on optimoitu väridimension mukaan. Muiden dimensioiden osalta saattaa olla tarpeen käyttää näkymän alanumeroa, jotta valintaa voidaan mukauttaa.
 
     Seuraavassa kuvassa on esimerkki, jossa sähköisen kauppasivuston luettelosivu sisältää tuotekortteja, joilla on väriruudut.
 
-    ![Esimerkki sähköisen kaupan luettelosivulla väriruutuina näkyvistä väridimensioista](./dev-itpro/media/swatch_searchresults.PNG)
+    ![Esimerkki sähköisen kaupan luettelosivulla väriruutuina näkyvistä väridimensioista.](./dev-itpro/media/swatch_searchresults.PNG)
 
 Lisätietoja tuotedimensioiden konfiguroinnista niin, että ne näkyvät verkkosivuilla väriruutuina, on kohdassa [Tuotedimension arvojen konfiguroiminen näkymään väriruutuina](./dev-itpro/dimensions-swatch.md).
 

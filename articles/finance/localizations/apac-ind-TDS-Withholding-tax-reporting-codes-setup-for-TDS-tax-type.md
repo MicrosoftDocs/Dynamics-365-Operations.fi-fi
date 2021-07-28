@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1f9325d182f89b98e8b943ae047c55e7e1aeb02f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c74132af95f088ea88155b722a8270861fba50e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023218"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361283"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>Ennakonpidätyksen raportointikoodien määrittäminen TDS-verotyypille
 
@@ -31,7 +31,7 @@ Ennakonpidätyksen raportointikoodien avulla luodaan lomakkeen 26Q ja lomakkeen 
 
 1. Siirry kohtaan **Vero \> Asetukset \> Ennakonpidätys \> Ennakonpidätyksen raportointikoodit**.
 
-    [![Ennakonpidätyksen raportointikoodit -sivu](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![Ennakonpidätyksen raportointikoodit -sivu.](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
 2. Valitse **Verotyyppi**-kentässä **TDS** määrittääksesi ennakonpidätyksen raportointikoodit TDS-verotyypille.
 3. Valitse **Ennakonpidätyksen komponentti** -kentässä TDS-komponentti, jota varten määrität ennakonpidätyksen raportointikoodin. **Ennakonpidätyksen komponenttiryhmä** -kentässä näkyy TDS-komponenttiryhmä, joka on määritetty määrittämällesi TDS-komponentille.

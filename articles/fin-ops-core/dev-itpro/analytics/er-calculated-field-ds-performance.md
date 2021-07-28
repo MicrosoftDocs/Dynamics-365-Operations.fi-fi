@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349181"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Paranna sähköisen raportoinnin ratkaisujen suorituskykyä lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
 
@@ -56,7 +56,7 @@ Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimitta
     2. Valitse soveltuva sähköisen raportoinnin konfiguraation tiedosto XML-muodossa valitsemalla **Selaa**.
     3. Valitse **OK**.
 
-![Konfiguraatiot-sivun tuodut konfiguraatiot](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Konfiguraatiot-sivun tuodut konfiguraatiot.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Sähköisen raportoinnin näyteratkaisun tarkistaminen
 
@@ -76,7 +76,7 @@ Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimitta
 
     Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen ja Financessa suoritettujen sähköisen raportoinnin muotojen perustietomallia. Tämän vuoksi **Trans**-tietolähteen sisältö näkyy sähköisen raportoinnin muodoissa, esimerkiksi abstrakteina **mallitietolähteinä**.
 
-    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Trans-tietolähde](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Trans-tietolähde.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Sulje **Mallimäärityksen sunnittelun** sivu.
 5. Sulje **Malli tietolähteen yhdistämismääritystä varten** -sivu.
@@ -90,7 +90,7 @@ Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimitta
 
     Tämä sähköisen raportoinnin muoto on suunniteltu toimittajatapahtumien raportin luomiseksi XML-muodossa.
 
-    ![Muootile tietolähteet ja määritetyt muotoiluelementtien sidokset Muodon suunnittelutoiminto -sivulla](media/er-calculated-field-ds-performance-format.png)
+    ![Muodon tietolähteet ja määritetyt muotoelementtien sidokset Muodon suunnittelutoiminto -sivulla.](media/er-calculated-field-ds-performance-format.png)
 
 5. Sulje **Muodon suunnittelija** -sivu.
 
@@ -103,7 +103,7 @@ Ajatellaan, että olet suunnitellut sähköisen raportoinnin ratkaisun ensimmäi
 1. Valitse **DEMF**-yritys.
 2. Seuraa [ER-suorituskykyjäljityksen ottaminen käyttöön](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) -kohdan ohjeita ja luo suorituskykyjäljitys sähköisen raportoinnin muotoilun suorituksen aikana.
 
-    ![Käyttäjän parametrit -valintaikkuna](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Käyttäjän parametrit -valintaikkuna.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Suorita ER-muoto
 
@@ -124,7 +124,7 @@ Joidenkin nykyisen mallin yhdistämismääritysten tietolähdenimikkeiden käyte
 - Tietolähteen avulla tietoja haettaessa käytetty todellinen aika
 - Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko mallin määrityksen suorittamiseen.
 
-![Mallin yhdistämismäärityksen suunnittelu -sivun suoritusajan tiedot](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Mallin yhdistämismäärityksen suunnittelu -sivun suoritusajan tiedot.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 **Suorituskyvyn tilastotiedot** -ruudukossa on tieto, että **Trans**-tietolähde kutsuu VendTrans-taulua kerran. Arvo **\[265\]\[Q:265\]** **Trans**-tietolähteessä osoittaa, että 265 toimittajatapahtumaa on noudettu sovelluksen taulusta ja palautettu tietomallille.
 
@@ -137,7 +137,7 @@ Joidenkin nykyisen mallin yhdistämismääritysten tietolähdenimikkeiden käyte
 
 - Toimittajan taulua kutsutaan jokaista iteroitua toimittajatapahtumaa kohden, vaikka noudetut tapahtumat on kirjattu vain viidelle toimittajalle. 530 kutsusta 525 on kaksoiskappaleita. Seuraavassa kuvassa näkyy sanoma, joka ilmaisee, että kutsut ovat päällekkäisiä kutsuja (tietokantapyyntöjä).
 
-![Virheilmoitus tietokantapyyntöjen kaksoiskappaleista mallin yhdistämismäärityksen suunnittelusivulla](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Virheilmoitus tietokantapyyntöjen kaksoiskappaleista mallin yhdistämismäärityksen suunnittelusivulla.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Ota huomioon, että yli 80 prosenttia (noin kuusi sekuntia) mallin yhdistämismäärityksen kokonaissuoritusajasta on kulunut VendTable-sovellustaulun arvojen hakemiseen. Tämä prosenttiosuus on liian suuri viiden toimittajan kahdelle määritteelle verrattuna VendTrans-sovellustaulun tietojen määrään.
 
@@ -172,7 +172,7 @@ Näiden ohjeiden avulla voit käyttää **Laskettu kenttä** -tyyppistä tietol�
     3. Anna valintaikkunan **Nimi**-kenttään **Box**-arvo.
     3. Valitse **OK**.
 
-    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Box-tietolähde](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Box-tietolähde.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Lisää **Laskettu kenttä** -tyyppinen parametrisoitu tietolähde seuraavasti:
 
@@ -208,7 +208,7 @@ Näiden ohjeiden avulla voit käyttää **Laskettu kenttä** -tyyppistä tietol�
 
 9. Valitse **Tallenna**.
 
-    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Vend-tietolähde](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Vend-tietolähde.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Sulje **Mallimäärityksen sunnittelun** sivu.
 11. Sulje **Mallimääritykset**-sivu.
@@ -232,11 +232,11 @@ Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aihe
 
 Huomaa, että mallimääritykseen tehdyt oikaisut ovat poistaneet tietokannasta päällekkäisiä kyselyitä. Tämän mallimäärityksen tietokantataulukoihin ja tietolähteisiin tehtyjen kutsujen määrä on myös vähennetty.
 
-![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 1 jäljitystiedot](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 1 jäljitystiedot.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Suorituksen kokonaisaikaa on vähennetty noin 20 kertaa (noin 8 sekunnista noin 400 millisekuntiin). Näin ollen koko sähköisen raportoinnin ratkaisun suorituskykyä on parannettu.
 
-![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 2 jäljitystiedot](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 2 jäljitystiedot.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Liite 1: Microsoftin sähköisen raportoinnin näyteratkaisun komponenttien lataaminen
 

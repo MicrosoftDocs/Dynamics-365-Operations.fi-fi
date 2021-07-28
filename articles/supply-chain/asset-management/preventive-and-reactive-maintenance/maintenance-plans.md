@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839604"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361111"
 ---
 # <a name="maintenance-plans"></a>Ylläpitosuunnitelmat
 
@@ -145,23 +145,23 @@ Alla on esimerkkejä aikapohjaisten ja laskuripohjaisten ylläpitosuunnitelmariv
 
 **Esimerkki 1 – aikapohjainen huoltosuunnitelma rivi:** Voitelutyö voidaan määrittää säännöllisin kiintein väliajoin, kerran viikossa. Tätä tarkoitusta varten valitse **Välin tyyppi** -kentässä "Toistetaan suunnitelman päivämäärästä". Katso esimerkki seuraavasta kuvasta.
 
-![Määritetyllä palvelutyöllä on kiinteä esiintymisväli kerran viikossa](media/02-preventive-maintenance.png "Määritetyllä palvelutyöllä on kiinteä esiintymisväli kerran viikossa")
+![Määritetyllä palvelutyöllä on kiinteä esiintymisväli kerran viikossa.](media/02-preventive-maintenance.png "Määritetyllä palvelutyöllä on kiinteä esiintymisväli kerran viikossa")
 
 **Esimerkki 2 – aikapohjainen huoltosuunnitelmarivi:** Tarkastustyö voidaan määrittää tehtäväksi noin kerran viikossa. Tätä tarkoitusta varten valitse **Välin tyyppi** -kentässä "Toistetaan viimeisestä työtilauksesta". Katso esimerkki seuraavasta kuvasta.
 
-![Noin kerran viikossa tehtäväksi määritetty tarkastustyö](media/03-preventive-maintenance.png "Noin kerran viikossa tehtäväksi määritetty tarkastustyö")
+![Noin kerran viikossa tehtäväksi määritetty tarkastustyö.](media/03-preventive-maintenance.png "Noin kerran viikossa tehtäväksi määritetty tarkastustyö")
 
 **Esimerkki 3 – laskuripohjainen ylläpitosuunnitelmarivi:** Seuraavassa kuvassa on tuntilaskuri, jolle uusi huoltoaikataulurivi luodaan joka kerta, kun 250 tuntia on kulunut. Tämän laskuripohjaisen rivin välityyppi on "Toistetään aloituspäivämäärästä". Aloituspäivämäärä on liittyvien resurssien aloituspäivämäärä kohdassa **Kaikki resurssit** \> **Resurssien ylläpitosuunnitelmat** -pikavälilehti \> **Aloituspäivämäärä**-kenttä tai kohdassa **Toiminnallinen sijainti** \> **Ylläpitosuunnitelmat** -pikavälilehti \> **Aloituspäivämäärä**-kenttä. Tämä on esimerkki *ennaltaehkäisevästä* huoltosuunnitelmasta, koska huoltoaikataulurivi luodaan automaattisesti aina, kun kynnysarvo (+ 250) saavutetaan.
 
-![Säännöllisesti ylläpitosuunnitelman rivit luova tuntilaskuri](media/04-preventive-maintenance.png "Säännöllisesti ylläpitosuunnitelman rivit luova tuntilaskuri")
+![Säännöllisesti ylläpitosuunnitelman rivit luova tuntilaskuri.](media/04-preventive-maintenance.png "Säännöllisesti ylläpitosuunnitelman rivit luova tuntilaskuri")
 
 **Esimerkki 4 – laskuripohjainen huoltosuunnitelmarivi:** Seuraavassa kuvassa on laskuriarvon vähennys, joka mittaa jarrupalojen kulumista. Huoltoaikataulurivi luodaan, kun jarrupalalle luodaan laskurikirjaus, joka on alle 20 millimetriä. Tämän laskuripohjaisen rivin aikavälityyppi on "Kerran, kun alittaa" tai "Kerran viimeisestä aloituspäivämäärästä". Tämä on esimerkki *reaktiivisesta* huoltosuunnitelmasta, koska huoltoaikatauluriviä ei luoda ennen kuin rekisteröidään alle 20 mm mittaus rekisteröidään.
 
-![Jarrupalojen kulumista mittaava laskuriarvon vähennys](media/05-preventive-maintenance.png "Jarrupalojen kulumista mittaava laskuriarvon vähennys")
+![Jarrupalojen kulumista mittaava laskuriarvon vähennys.](media/05-preventive-maintenance.png "Jarrupalojen kulumista mittaava laskuriarvon vähennys")
 
 **Esimerkki 5 – Laskuripohjainen ylläpitosuunnitelmarivi:** Seuraavassa kuvassa on laskuri, jonka raja on -18°C. Huoltoaikataulu rivi luodaan, kun laskurikirjaus on tehty yli -18 celsiusasteen mittauksesta. Tämän laskuripohjaisen rivin välityyppi on "Kerran, kun ylittää". Tämä on esimerkki *reaktiivisesta* huoltosuunnitelmasta, koska huoltoaikatauluriviä ei luoda ennen kuin rekisteröidään yli -18°C mittaus rekisteröidään.
 
-![Laskuri, jonka raja on –18 °C](media/06-preventive-maintenance.png "Laskuri, jonka raja on –18 °C")
+![Laskuri, jonka raja on –18 °C.](media/06-preventive-maintenance.png "Laskuri, jonka raja on –18 °C")
 
 - Kun luot uuden käyttöomaisuuserän ja käyttöomaisuuserä käyttää huoltosuunnitelmaan liittyvää käyttöomaisuustyyppiä, ylläpitosuunnitelma lisätään automaattisesti **Kaikki objektit \> Resurssien ylläpitosuunnitelmat** -pikavälilehteen. **Ylläpitosuunnitelmat**-pikavälilehden **Resurssin oletustyypit** -kohtaan lisätään automaattisesti liittyvät huoltosuunnitelmat.
 - Jos lisäät tai poistat käyttöomaisuustyyppejä tai toiminnallisia sijaintityyppejä kohdassa **Ylläpitosuunnitelmat**, muutos vaikuttaa vain uusiin resurssiehin, jotka on luotu muutoksen tekemisen jälkeen.
@@ -169,7 +169,7 @@ Alla on esimerkkejä aikapohjaisten ja laskuripohjaisten ylläpitosuunnitelmariv
 
 Seuraavassa kuvassa on esimerkki **Ylläpitosuunnitelmat**-sivun "Truck service" -nimisestä huoltosuunnitelmasta.
 
-![Esimerkki kuorma-auton huollon ylläpitosuunnitelmasta](media/07-preventive-maintenance.png "Esimerkki kuorma-auton huollon ylläpitosuunnitelmasta")
+![Esimerkki kuorma-auton huollon ylläpitosuunnitelmasta.](media/07-preventive-maintenance.png "Esimerkki kuorma-auton huollon ylläpitosuunnitelmasta")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Huoltosuunnitelman lisääminen resurssiin
 
@@ -187,11 +187,11 @@ Seuraavassa kuvassa on esimerkki **Ylläpitosuunnitelmat**-sivun "Truck service"
 
 Seuraavassa kuvassa on esimerkki **Kaikki resurssit**-sivulla resurssille määritetyistä huoltosuunnitelmista.
 
-![Esimerkki resurssille määritetyistä ylläpitosuunnitelmista](media/08-preventive-maintenance.png "Esimerkki resurssille määritetyistä ylläpitosuunnitelmista")
+![Esimerkki resurssille määritetyistä ylläpitosuunnitelmista.](media/08-preventive-maintenance.png "Esimerkki resurssille määritetyistä ylläpitosuunnitelmista")
 
 <a id="counter-based-maintenance"></a>
 
-## <a name="counter-based-maintenance-enhancements"></a>Laskuripohjaiset ylläpidon parannukset
+## <a name="counter-based-maintenance-enhancements"></a>Vastaperusteiset ylläpitoparannukset
 
 *Laskuripohjaiset ylläpidon parannukset* -toiminto ottaa käyttöön seuraavat toiminnallisuudet:
 

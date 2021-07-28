@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193974"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360517"
 ---
 # <a name="enter-skills"></a>Syötä osaamisalueet
 
@@ -45,17 +45,17 @@ Jos haluat määrittää osaamisalueita ilman hyväksyntää, sinun on luotava t
 
 4. Valitse **Luo työnkulku** -ruudusta **Työntekijän osaamisalueet**.
 
-   [![Työntekijän osaamisaluetyönkulun valinta](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Työntekijän osaamisalueet -työnkulun valinta.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. Valitse **Avataanko tämä tiedosto** -valintaruudusta **Avaa**. Kirjoita tunnistetietosi, kun näet kehotteen.
 
 6. Valitse työnkulun editorissa **Hyväksy osaamisalueet** -työnkulun elementti ja vedä se pohjaan perustuvaan sovellukseen.
 
-   [![Valitse Osaamisaluetyönkulun elementin hyväksyminen](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Valitse Hyväksy osaamisalueet -työnkulkuelementti.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Liitä **Aloitus**-elementti **Hyväksy osaamisalueet 1** -elementtiin ja liitä sitten **Hyväksy osaamisalueet 1** -elementti **Loppu**-elementtiin. Sinun on ehkä siirryttävä alaspäin, jos haluat nähdä **Loppu**-elementin. Voit vetää sitä lähemmäksi muita elementtejä.
 
-   [![Yhdistä työnkulun elementit](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Yhdistä työnkulun elementit.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Kaksoisnapsauta **Hyväksy osaamisalueet 1** -työnkulkuelementtiä ja napsauta **vaiheen 1** elementtiä hiiren kakkospainikkeella. Napsauta **vaiheen 1** elementtiä hiiren kakkospainikkeella ja valitse **Ominaisuudet**.
 
@@ -65,7 +65,7 @@ Jos haluat määrittää osaamisalueita ilman hyväksyntää, sinun on luotava t
 
 11. Valitse **Lisää ehto**. Valitse **Missä**-ehdon jälkeen **Työntekijän itsepalvelun osaamisalueet** ja valitse sitten **Työntekijän itsepalvelun osaamisalueet.Henkilö**. Valitse arvon **on** jälkeen **kenttä** ja valitse sitten **Käyttäjä suhteeseen.Henkilö**.
 
-    [![Määritä ehto](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Määritä ehto.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Valitse **Määritys** vasemmalla puolella olevasta valikosta.
 
@@ -73,7 +73,7 @@ Jos haluat määrittää osaamisalueita ilman hyväksyntää, sinun on luotava t
 
 14. Valitse **Hierarkian valinta** -välilehden **Hierarkiatyyppi:** -kentässä **Hallintahierarkia**.
 
-    [![Hallintahierarkian asetukset](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Hallintahierarkian asetukset.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Valitse **Sulje**, valitse **Työnkulku** kaavan polusta ja valitse sitten **Tallenna ja sulje**.
 

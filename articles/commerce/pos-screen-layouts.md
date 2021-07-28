@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b617ce4358a6b6aaacea9069d8db40c4aa82b7ed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 01797b5a1c29ee608e7796319a18d6402b542409
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798702"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353751"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 
@@ -32,15 +32,15 @@ Microsoft Dynamics 365 Commerce -myyntipistekäyttöliittymät (POS) voidaan mä
 
 Seuraava kuva esittää eri yksiköiden suhteita, jotka muodostavat määriteltäviä aspekteja POS-käyttöliittymien välillä.
 
-![POS-näytön asettelun yksikkö](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![Myyntipisteen näytön asettelun yksiköt.](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuaalinen profiili
 
 Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja. Jokainen käyttäjä, joka kirjautuu kassakoneeseen, näkee samat teemat, asettelun, värit ja kuvat.
 
-![Myyntipisteen (POS) vaalea Tervetuloa-teema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Myyntipisteen tervetulonäyttö vaalealla teemalla.](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![Myyntipisteen (POS) tapahtuman näytössä tumma teema](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Myyntipisteen tapahtumanäyttö tummalla teemalla.](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **Profiilinumero** – profiilinumero on visuaalisen profiilin yksilöivä tunnus.
 - **Kuvaus** – kuvauksen avulla voit määrittää kuvaavan nimen, joka auttaa tunnistamaan oikean profiilin tilanteen mukaan.
@@ -65,15 +65,15 @@ Sinun on suoritettava jakelun aikataulutustehtävä **1090** ( **Rekisterit**), 
 
 Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen **Tervetuloa**-näytössä ja **Tapahtuma**-näytössä.
 
-![Myyntipisteen näytön asettelun näkymä](../commerce/media/POS-Screen-Layout-View.png)
+![Myyntipisteen näytön asettelun näkymä.](../commerce/media/POS-Screen-Layout-View.png)
 
 - **Tervetuloa-näyttö** – Tervetuloa-näyttö on yleensä sivu, jonka käyttäjät näkevät, kun he ensin kirjautuvat myyntipisteeseen. Tervetuloa-näyttö voi koostua tavaramerkin kuvasta painikeruudukoista, jotka tarjoavat pääsyn myyntipisteen toimintoihin. Toiminnot, jotka eivät liity nykyiseen tapahtumaan sijoitetaan yleensä tähän näyttöön.
 
-    ![Myyntipisteen aloitusnäyttö](../commerce/media/POS-Welcome-Screen.png)
+    ![Myyntipisteen tervetulonäyttö.](../commerce/media/POS-Welcome-Screen.png)
 
 - **Tapahtumanäyttö** – **Tapahtumanäyttö** – on POS-sovelluksen päänäyttö myyntitapahtumien ja tilausten käsittelyyn. Sisältö ja asettelu on määritetty näytön asettelun suunnittelutoiminnon avulla.
 
-    ![Myyntipisteen tapahtumanäyttö](../commerce/media/POS-Transaction-Screen.png)
+    ![Myyntipisteen tapahtumanäyttö.](../commerce/media/POS-Transaction-Screen.png)
 
 - **Oletusaloitusnäyttö** – jotkin vähittäismyyjät haluavat, että kassa siirtyy suoraan **Tapahtumanäyttöön** kirjautumisen jälkeen. **Oletusarvoisen aloitusnäytön** asetuksien avulla voit määrittää oletusarvoisen näytön, joka näkyy kirjautumisen jälkeen kussakin näyttöasettelussa.
 
@@ -89,7 +89,7 @@ Suurin osa POS-käyttöliittymän aspekteista on herkästi reagoivia ja asettelu
 
 Käynnistettäessä POS-sovellus valitsee automaattisesti lähimmän laitteeseen määritellyn asettelun koon. Näytön asettelu voi sisältää myös sekä vaaka- että pystytilat sekä täysikokoisen ja tiivistetyn konfiguraatiot. Tämän vuoksi käyttäjät voidaan määrittää yhteen näyttöasetteluun, joka toimii myymälän erikokoissa ja erityyppisissä laitteissa.
 
-![Myyntipisteen asettelukoot](../commerce/media/POS-Screen-Layout-Sizes.png)
+![Myyntipisteen asettelukoot.](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **Nimi** – Määritä kuvaava nimi, joka yksilöi näytön koon.
 - **Asettelutyyppi** – POS-sovelluksessa voidaan näyttää sen käyttöliittymän erilaisia tiloja, että voidaan taata paras mahdollinen käyttäjäkokemus tietyllä laitteella.
@@ -102,7 +102,7 @@ Käynnistettäessä POS-sovellus valitsee automaattisesti lähimmän laitteeseen
 > [!TIP]
 > Löydät vaaditun asettelun koon, jota POS-näytön tarkkuus vaatii tarkastelemalla resoluutiota sovelluksessa. Käynnistä Myyntipiste ja siirry **Asetukset \> Istuntotietoja**. POS näyttää tällä hetkellä ladatun näyttöasettelun, asettelun koon ja sovellusikkunan resoluution.
 
-![POS-istunnon tietosivu, joka näyttää tällä hetkellä ladatun näytön asettelun, asettelun koon ja sovellusikkunan resoluution](../commerce/media/POS-Session-Information.png)
+![Myyntipisteen istunnon tietosivu, joka näyttää tällä hetkellä ladatun näytön asettelun, asettelun koon ja sovellusikkunan resoluution.](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Painikeruudukot
 
@@ -112,7 +112,7 @@ Koko myyntipisteen asetteluissa painikeruudukoiden sijoittelu on määritetty n�
 
 Kompakteissa myyntipisteiden asetteluissa painikeruudukot on aseteltu automaattisesti ylhäältä alas, pienimmästä numerosta (Tervetuloa-näyttö 1) suurimpaan numeroon. Niitä voidaan käyttää **Toimenpiteet**-valikossa.
 
-![Kompaktit asettelun painikeruudukot](../commerce/media/Compact-View-Button-Grids.png)
+![Kompaktin asettelun painikeruudukot.](../commerce/media/Compact-View-Button-Grids.png)
 
 > [!NOTE]
 > Suunnitteluohjelman painikkeiden koot sovitetaan ikkunan kokoon, joten ne eivät välttämättä vastaa myyntipistesovelluksessa muodostuvia painikkeita. Voit simuloida painikeruudukon asettelun säätämällä suunnitteluikkunoihin saman koon kuin myyntipisteessä.
@@ -132,7 +132,7 @@ Näytön asettelun suunnittelutoiminnon avulla voit määrittää myyntipisteen 
 
 Koko asettelun suunnittelutoiminnon avulla käyttäjät voivat vetää POS-käyttöliittymän ohjausobjekteja **tapahtuma**-näyttöön ja määrittää näiden ohjainten asetuksia.
 
-![Myyntipisteen asettelun täysi suunnittelutoiminto (vaaka-tila)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![Myyntipisteen asettelun täysi suunnittelutoiminto (vaaka-tila).](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **Tuo asettelu ja Vie asettelu** – voit viedä ja tuoda myyntipisteen näytön asettelun suunnitelmat XML-tiedostoina, jotta voit käyttää niitä uudelleen ja jakaa ympäristöissä. On tärkeää, että tuot asettelusuunnitelmista oikean kokoiset asettelumallit. Muussa tapauksessa käyttöliittymän osat eivät ehkä näy oikein näytössä.
 - **Vaaka/pysty** – Mikäli käyttäjät voivat käyttää myyntipisteen laitteen avulla sekä vaaka- että pystymallia, näyttöasettelu on määritettävä kullekin tilalle. Myyntipiste tunnistaa automaattisesti näytön suunnan ja näyttää oikean asettelun.
@@ -140,11 +140,11 @@ Koko asettelun suunnittelutoiminnon avulla käyttäjät voivat vetää POS-käyt
 - **Suunnittelijazoomaus** – voit suurentaa tai pienentää kohdetta suunnittelutyökalulla tarkastellaksesi paremmin sisältöä POS-näytössä. Tämä ominaisuus on hyödyllinen, kun näytön resoluutio myyntipisteessä eroaa suuresti suunnittelussa käytetyn näytön tarkkuudesta.
 - **Näytä tai piilota siirtymispalkki** – koko myyntipisteen asetteluja varten voit valita, näkyykö vasen siirtymispalkki **Tapahtuma**-näytössä. Tämä toiminto on hyödyllinen näytöissä, joissa on pienempi tarkkuus. Määritä näkyvyys hiiren kakkospainikkeella suunnittelutyökalun siirtymispalkissa ja valitse tai poista **Aina näkyvissä** -valintaruutu. Jos siirtymispalkki on piilotettu, myyntipisteen käyttäjät voivat löytää sen vasemman yläkulman valikon avulla.
 
-    ![Näytä / piilota siirtymispalkki](../commerce/media/Navigation-Bar.PNG)
+    ![Näytä/piilota siirtymispalkki.](../commerce/media/Navigation-Bar.PNG)
 
 - **Myyntipisteen ohjaimet** – Myyntipisteen asettelun suunnittelutoiminto tukee seuraavia ohjaimia. Voit määrittää useita ohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa.
 
-    ![Myyntipisteen käyttöliittymän ohjausobjektit](../commerce/media/POS-UI-Controls.png)
+    ![Myyntipisteen käyttöliittymän ohjausobjektit.](../commerce/media/POS-UI-Controls.png)
 
     - **Numeronäppäimistö** – Numeronäppäimistö on tärkein syöttötapa myyntipisteen **Tapahtuma**-näytössä. Voit määrittää hallinnan siten, että koko numeronäppäimistö on näkyvissä. Tämä valinta on ihanteellinen kosketusnäyttölaitteille. Vaihtoehtoisesti voit määrittää sen niin, että vain syöttökenttä näytetään. Tällöin fyysistä näppäimistöä käytetään tietojen syöttämiseen. Numeronäppäimistön asetukset ovat käytettävissä vain täydellisessä asettelussa. Tiiviissä asetteluissa koko numeronäppäimistö näkyy aina **Tapahtuma**-näytössä.
     - **Summapaneeli** - Summapaneeliin voidaan määrittää joko yksi tai kaksi saraketta näyttämään arvot kuten rivin määrä, alennussumma, kulut, välisumma ja ALV. Tiivistetyt asettelut tukevat ainoastaan yksittäisiä sarakkeita.
@@ -159,13 +159,13 @@ Koko asettelun suunnittelutoiminnon avulla käyttäjät voivat vetää POS-käyt
 
 Kuten täyden asettelun suunnittelutoiminnonkin, kompaktin suunnittelutoiminnon avulla voit määrittää myyntipisteen näyttöasettelun puhelimille ja pienille tableteille. Tässä tapauksessa itse asettelu on korjattu. Voit määrittää useita asetteluohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa. Et kuitenkaan voi käyttää vedä ja pudota -toimintoja ylimääräistä sisältöä varten.
 
-![Kompakti näytön asettelun suunnittelutoiminto](../commerce/media/Compact-Layout-Designer.png)
+![Kompaktin asettelun suunnittelutoiminto.](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Painikeruudukon suunnittelutoiminto
 
 Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita, joita käytetään myyntipisteen Tervetuloa-näytössä ja **Tapahtuma**-näytön täydellisille sekä kompakteille asetteluille. Samaa painikeruudukkoa voidaan käyttää eri asetteluissa ja asettelutyypeissä. Näytön asettelun suunnittelutoiminto käyttää ClickOnce-käyttöönottoteknologiaa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan. Muista tarkistaa ClickOnce-käyttöönottoteknologiaa koskevat selainvaatimukset. Jotkut selaimet, kuten Google Chrome, edellyttävät laajennuksia.
 
-![Painikeruudukon suunnittelutoiminto](../commerce/media/Button-Grid-Designer.png)
+![Painikeruudukon suunnittelutoiminto.](../commerce/media/Button-Grid-Designer.png)
 
 - **Uusi painike** – Napsauttamalla tätä voit lisätä uuden painikkeen painikeruudukkoon. Oletusarvoisesti uudet painikkeet ovat ruudukon vasemmassa yläkulmassa. Voit järjestää painikkeiden asettelua vetämällä.
 
@@ -178,7 +178,7 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
     > [!IMPORTANT]
     > Jotkin painikeruudukon asetukset vaikuttavat vain yritysportaalin POS-sovellukseen, eivätkä Modern POS-sovellukseen tai Cloud POS-sovellukseen.
 
-    ![Painikeruudukon painikeominaisuudet](../commerce/media/Button-grid-button-properties.png)
+    ![Painikeruudukon painikkeiden ominaisuudet.](../commerce/media/Button-grid-button-properties.png)
 
     - **Toiminnot** – käytettäessä myyntipisteen toimintoja valitse listasta toiminto, joka suoritetaan, kun painiketta napsautetaan myyntipisteessä.
 
@@ -190,7 +190,7 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
     - **Työkaluvihje** – Määritä näytettävä lisäohjeteksti, joka näkyy, kun käyttäjä vie hiiren painikkeen päälle.
     - **Sarakkeiden koko / rivien koko** – Voit määrittää, kuinka pitkä ja leveä painike on.
 
-        ![Myyntipisteen painikkeiden koot riveillä ja sarakkeissa](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![Myyntipisteen painikkeiden koot riveillä ja sarakkeissa.](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **Mukautettu fontti** – Kun valitset **Ota käyttöön mukautettu fontti myyntipisteelle** -valintaruudun, voit määrittää jonkun muun kuin järjestelmän oletusfontin myyntipisteessä.
     - **Mukautettu teema** – Oletusarvoisesti myyntipisteen painikkeissa käytetään visuaalisen profiilin korostusväriä. Kun valitset **Käytä mukautettua teemaa** -valintaruudun, voit määrittää muita värejä.
@@ -200,7 +200,7 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 
     - **Painikkeen kuva** – painikkeet voivat sisältää kuvia tai kuvakkeita. Valitse käytettävissä olevista kuvista, jotka on määritetty kohdassa **Retail ja Commerce \> Kanavan asetukset \> Myyntipisteen asetukset \> Myyntipisteen \> kuvia**.
 
-![Esimerkki painikeruudukosta myyntipisteessä](../commerce/media/Example-Button-Grid-In-POS.png)
+![Esimerkki painikeruudukosta myyntipisteessä.](../commerce/media/Example-Button-Grid-In-POS.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

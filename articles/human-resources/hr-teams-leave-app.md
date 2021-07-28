@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097256"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356509"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
@@ -61,7 +61,7 @@ Botilta voi pyytää seuraavia:
 
 - Lomapyynnön käynnistäminen käyttäjän puolesta. Lähetä esimerkiksi viesti "Pidä vapaata" tai "Haluan pitää vapaata ensi torstaina ja perjantaina", jotta voit tarkemmin kysyä vapaata poissaolon lomatyypille. 
 
-  ![Lomapyynnön käynnistäminen Tiimit-keskustelussa](./media/hr-teams-leave-app-initiate.png)
+  ![Lomapyynnön käynnistäminen Teams-keskustelussa.](./media/hr-teams-leave-app-initiate.png)
 
 - Keskustelubotti täyttää lomapyynnön puolestasi. Valitse **Pyydä vapaata** ja muokkaa pyyntösi tietoja.
 
@@ -69,11 +69,11 @@ Botilta voi pyytää seuraavia:
 
    Jos valitset puoli päivää lomaa, kun pyynnön yksikkö on päiviä, voit määrittää, haluatko pyytää aamupäivän vai iltapäivän vapaata, valitsemalla **Lisäasetukset**-valikosta **Puoli päivää** -määritysvaihtoehdon.
    
-   ![Puolen päivän määritelmät](./media/HalfDayDefinitions.png)
+   ![Puolen päivän määritelmät.](./media/HalfDayDefinitions.png)
 
 - Kun olet muokannut lomapyyntösi tietoja, lähetä se hyväksyttäväksi valitsemalla **Lähetä**.
 
-  ![Lomapyynnön lähettäminen](./media/hr-teams-leave-app-submit.png)
+  ![Lomapyynnön lähettäminen.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Lomien ja poissaolojen hallinta Teamsissa
 
@@ -93,7 +93,7 @@ Botilta voi pyytää seuraavia:
 
 2. Anna haluamasi poissaolopäivä tai -päivät ja valitse sitten **Lisää**.
 
-   ![Human Resources Teamsin lomasovelluksen poissaolon lisääminen](./media/TimeOffHours.png)
+   ![Human Resources Teamsin lomasovelluksen poissaolon lisääminen.](./media/TimeOffHours.png)
 
 3. Anna tarvittaessa syykoodi. Lisää myös mahdolliset kommentit ja liitteet.
 
@@ -123,7 +123,7 @@ Kun olet asentanut Teamsin Human Resources -sovelluksen, voit lähettää työto
 
 1. Valitse ryhmässä tai Teams-keskustelussa Human Resources -painike keskusteluikkunan alapuolella.
 
-   ![Human Resources -painike keskusteluikkunan alla](./media/hr-teams-leave-app-chat-button.png)
+   ![Human Resources -painike keskusteluikkunan alla.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Valitse jaettava lomapyyntö. Jos haluat jakaa lomapyyntöluonnoksen, valitse ensin **Luonnokset**.
 
@@ -173,11 +173,11 @@ Jos käännökset eivät näy odotetulla tavalla, varmista, että Teamsissa vali
 
 Tarkasta Teamsissa **Sovelluksen kieli** -asetus **Asetukset**-osiosta.
 
-![Teams-asetukset](./media/hr-teams-leave-app-settings.png)
+![Teams-asetukset.](./media/hr-teams-leave-app-settings.png)
 
 Valitse Human Resources -sovelluksesta **Asetukset** ja sitten **Käyttäjän asetukset**. Varmista, että **Kieli**-kenttä vastaa Teamsin **Sovelluksen kieli** -kenttää.
 
-![Human Resources -sovelluksen Käyttäjän asetukset -osio](./media/hr-teams-leave-app-user-options.png)
+![Human Resources -sovelluksen Käyttäjän asetukset -osio.](./media/hr-teams-leave-app-user-options.png)
 
 Jos sinulla edelleen ilmenee käännöksiin liittyviä ongelmia, kerro niistä meille. Lisätietoja on kohdassa [Tuen pyytäminen Finance and Operations -sovelluksia tai Lifecycle Services (LCS) -sovellusta varten](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

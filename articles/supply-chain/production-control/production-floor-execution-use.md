@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907714"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349767"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -32,7 +32,7 @@ Ennen kuin työntekijät voivat aloittaa laitteen käytön, työnjohtajan tai te
 
 Kun laite on valmisteltu, kirjautumissivu avautuu. Tällä sivulla on tietoja paikallisen työsolun töiden tilasta. Nämä tiedot päivitetään säännöllisesti. Työntekijät kirjautuvat sivulla käyttämällä nimilappunsa tunnusta. Vaikka työntekijöillä ei tarvitse olla Supply Chain Managementin käyttäjätiliä, heillä on oltava *aikarekisteröidyn työntekijän* tili, jolla he kirjautuvat sisään.
 
-![Tuotannon käyttöliittymän kirjautumissivu](media/pfei-sign-in-page.png "Tuotannon käyttöliittymän kirjautumissivu")
+![Tuotannon käyttöliittymän kirjautumissivu.](media/pfei-sign-in-page.png "Tuotannon käyttöliittymän kirjautumissivu")
 
 Tämän ohjeaiheen muissa osissa käsitellään tapoja, joilla työntekijät käyttävät liittymää.
 
@@ -40,7 +40,7 @@ Tämän ohjeaiheen muissa osissa käsitellään tapoja, joilla työntekijät kä
 
 **Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu*, *Pysäytetty* tai *Aloitettu*. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
 
-![Kaikki työt -välilehti](media/pfei-all-jobs-tab.png "Kaikki työt -välilehti")
+![Kaikki työt -välilehti.](media/pfei-all-jobs-tab.png "Kaikki työt -välilehti")
 
 Työluettelossa on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
 
@@ -59,7 +59,7 @@ Työluettelossa on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa k
 
 **Aktiiviset työt** -välilehdissä on luettelo kaikista töistä, jotka kirjautunut työntekijä on jo aloittanut. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
 
-![Aktiiviset työt -välilehti](media/pfei-active-jobs-tab.png "Aktiiviset työt -välilehti")
+![Aktiiviset työt -välilehti.](media/pfei-active-jobs-tab.png "Aktiiviset työt -välilehti")
 
 Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
@@ -76,7 +76,7 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 **Oma kone** -välilehdessä työntekijät voivat valita resurssin, joka on liitetty koneresurssiin **Kaikki työt** -välilehdessä määritetyssä suodattimessa. Työntekijät voi sitten tarkastella valitun resurssin tilaa ja kuntoa lukemalla enintään neljän valitun laskurin arvot sekä viimeaikaisten ylläpitopyyntöjen ja rekisteröityjen seisokkien luetteloita. Työntekijät voi myös pyytää valitun resurssin ylläpitoa sekä rekisteröidä ja muokata koneen seisokkeja. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
  
-![Oma kone -välilehti](media/pfei-my-machine-tab.png "Oma kone -välilehti")
+![Oma kone -välilehti.](media/pfei-my-machine-tab.png "Oma kone -välilehti")
 
 **Oma kone** -välilehdessä on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
 
@@ -87,7 +87,7 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 1. **Asetukset** – Valitse rataskuvake ja avaa valintaikkuna, jossa voidaan valita, mitä valitun koneresurssin laskureita tarkastellaan. Näiden laskureiden arvot näytetään **Resurssien hallinta** -välilehden yläosassa. (Seuraavassa näyttökuvassa olevassa) **Asetukset**-valikossa voi ottaa käyttöön enintään neljä laskuria. Valitse kukin käyttöönotettava laskuri käyttämällä ruudun yläosassa olevaa hakukenttää. Hakukentässä on luettelo kaikista valittuun resurssiin liitetyistä laskurista. Resurssi valittiin **Resurssien hallinta** -sivun yläosassa. Määritä kukin laskuri seuraamaan joko **Koottu**-arvoa ja laskurin uusinta **Toteutunut**-arvoa. Jos määritetty laskuri esimerkiksi seuraa, kuinka monta tuntia kone on ollut käytössä, määrityksenä on oltava **Koottu**. Jos laskuri määritetään seuraamaan viimeksi päivitettyä lämpötilaa tai painetta, määrityksenä on oltava **Toteutunut**. Valitse **OK** tallentaaksesi asetukset ja sulje valintaikkuna.
 
-    ![Oma kone -välilehden asetukset](media/pfei-my-machine-tab-settings.png "Oma kone -välilehden asetukset")
+    ![Oma kone -välilehden asetukset.](media/pfei-my-machine-tab-settings.png "Oma kone -välilehden asetukset")
 
 1. **Yläpitopyyntö** – Tämän painikkeen valinta avaa valintaikkunan, jossa voidaan luoda ylläpitopyyntö. Pyynnölle voi antaa kuvauksen ja lisätä huomautuksen. Pyyntö tulee Supply Chain Management -käyttäjän näkyville, ja tämä käyttäjä voi sitten muuntaa ylläpitopyynnön ylläpidon työtilaukseksi.
 1. **Rekisteröi seisokki** – Tämän painikkeen valinta avaa valintaikkunan, jossa voi rekisteröidä koneen seisokin. Seisokille voidaan valita syykoodi ja antaa seisokin ajankohta ja kesto. Koneen seisokkirekisteröinnin avulla lasketaan koneresurssin tehokkuus.
@@ -98,7 +98,7 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 Työntekijä aloittaa tuotantotyön valitsemalla työn **Kaikki työt** -välilehdessä ja avaamalla **Aloita työ** -valintaikkunan sitten valitsemalla **Aloita työ**.
 
-![Aloita työ -valintaikkuna](media/pfei-start-job-dialog.png "Aloita työ -valintaikkuna")
+![Aloita työ -valintaikkuna.](media/pfei-start-job-dialog.png "Aloita työ -valintaikkuna")
 
 Työntekijät vahvistavat **Aloita työ** -valintaikkunassa tuotannon määrän ja aloittavat sitten työn. Työntekijät voivat säätää määrää valitsemalla **Määrä**-kentän ja käyttämällä avautuvaa numeronäppäimistöä. Työntekijät aloittavat sitten työn tekemisen valitsemalla **Aloita**. **Aloita työ** -valintaikkuna suljetaan ja työ lisätään **Aktiiviset työt** -välilehteen.
 
@@ -108,13 +108,13 @@ Työntekijät voivat aloittaa työn riippumatta siitä, mikä sen tila on. Jos t
 
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida tuotetut hyväksyttävät määrät valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Raportointi on meneillään**. Tämän jälkeen työntekijä antaa **Raportointi on meneillään** -valintaikkunassa hyväksyttyjen määrän numeronäppäimistössä. Määrä on oletusarvoisesti tyhjä. Työntekijä voi määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä*, *Pysäytetty* tai *Valmis*.
 
-![Raportointi on meneillään -valintaikkuna](media/pfei-report-progress-dialog.png "Raportointi on meneillään -valintaikkuna")
+![Raportointi on meneillään -valintaikkuna.](media/pfei-report-progress-dialog.png "Raportointi on meneillään -valintaikkuna")
 
 ## <a name="reporting-scrap"></a>Hävikin raportointi
 
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida hävikin valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Hävikin raportointi**. Tämän jälkeen työntekijä antaa **Hävikin raportointi** -valintaikkunassa hävikin määrän numeronäppäimistöllä. Työntekijä valitsee myös syyn (*Ei yhtään*, *Kone*, *Käyttäjä* tai *Materiaali*).
 
-![Hävikin raportointi -valintaikkuna](media/pfei-report-scrap-dialog.png "Hävikin raportointi -valintaikkuna")
+![Hävikin raportointi -valintaikkuna.](media/pfei-report-scrap-dialog.png "Hävikin raportointi -valintaikkuna")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Työn valmistuminen ja uuden työn aloittaminen
 

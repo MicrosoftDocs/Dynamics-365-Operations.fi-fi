@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 9c26b45fc94d9983157eef9af5c0af6845d24056
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356748"
 ---
 # <a name="set-up-fixed-assets"></a>Käyttöomaisuuserien määrittäminen
 
@@ -32,7 +32,7 @@ Parametrit hallitsevat käyttöomaisuuden yleisiä toimintoja. Käyttöomaisuusr
 
 Käyttöomaisuus liitetään ryhmään luomisen yhteydessä. Käyttöomaisuusryhmiin määritetyt kirjat liitetään tämän jälkeen oletusarvoisesti käyttöomaisuuteen. Kirjat, jotka konfiguroidaan kirjaamaan kirjanpitoon, liitetään kirjausprofiiliin. Kirjanpitotilit määritetään kullekin kirjausprofiilin kirjalle ja niitä käytetään, kun käyttöomaisuustapahtumia kirjataan.
 
-![Käyttöomaisuuskomponentit](./media/FAComponents_Updated.png)
+![Käyttöomaisuuskomponentit.](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Poistoprofiilit
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82332a8ac8a68f5a9092ae08a094514827f39113
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d351066b0092318275491d933b7b90089c6855b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812712"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359930"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Tuotekonfiguraation Solver-strategia
 
@@ -50,7 +50,7 @@ Todellisia asiakastoteutuksia koskevat tutkimukset ovat osoittaneet, että tuote
 
 Voit vaihtaa Solver-strategian valitsemalla **Tuotekonfiguraation mallit** -sivun toimintoruudussa **Mallin ominaisuudet**. Valitse sitten **Muokkaa mallin tietoja** -valintaikkunassa Solver-strategia.
 
-[![Solver-strategian vaihtaminen](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![Solver-strategian vaihtaminen.](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 Tällä hetkellä mikään logiikka ei tunnista automaattisesti, mikä on tehokkain poissulkevan tuotekonfiguraation Solver-strategia. Tämän vuoksi Solver-strategioita on kokeiltava yksi kerrallaan.
 

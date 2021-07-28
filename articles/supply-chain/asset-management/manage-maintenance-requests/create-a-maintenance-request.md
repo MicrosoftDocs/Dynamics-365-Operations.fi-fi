@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 861899e4cd7565309ba513408346912642b7fa9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102971"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354902"
 ---
 # <a name="create-maintenance-requests"></a>Luo ylläpitopyyntöjä
 
@@ -52,7 +52,7 @@ Ylläpitopyyntöjä voidaan käyttää, jos huoltotyöntekijät tai tuotannon ty
 11. Kirjoita **Huomautukset**-kenttään tarvittavat lisähuomautukset.
 12. Valitse **OK**.
 
-![Luo ylläpitopyyntö](media/03-manage-maintenance-requests.png)
+![Luo ylläpitopyyntö.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Kunnossapitopyyntöjen myöhempi käsittely
 
@@ -67,7 +67,7 @@ Tiedot-näkymässä voit päivittää erilaisia tietoja. Seuraavassa on muutamia
 - Valitse kunnossapitotyön tyyppi ja, jos nämä tiedot ovat merkityksellisiä, liittyvä kunnossapitotyön variantti ja työn toimiala.
 - Kirjoita **Leveysaste**- ja **Pituusaste**-kenttiin maantieteelliset koordinaatit. Kaikki ylläpitopyyntöön lisätyt koordinaatit siirretään automaattisesti liittyvään työtilaukseen. 
 
-![Ylläpitopyynnön päivitys](media/04-manage-maintenance-requests.png)
+![Ylläpitopyynnön päivitys.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Jos valitset resurssin, kun luot ylläpitopyynnön, voit lisätä resurssiin yhden virheen. Kun kunnossapitopyyntö on luotu, voit lisätä vikoja, kuten tarvitset. Jos haluat lisätä vikoja, valitse **Resurssin vika** **Kaikki ylläpito pyynnöt** -sivulla.

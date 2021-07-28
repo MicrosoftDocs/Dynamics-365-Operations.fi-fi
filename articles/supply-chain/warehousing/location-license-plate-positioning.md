@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831382"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359760"
 ---
 # <a name="location-license-plate-positioning"></a>Toimipaikan rekisterikilpien paikannus
 
@@ -88,7 +88,7 @@ Toiminto on otettava käyttöön kaikkien niiden toimipaikkojen sijaintiprofiile
 1. Kun **Rekisterikilpi** on valittuna, valitse **Lisää taulun liitos**.
 1. Valitse näyttöön tulevan taululuettelon **Suhde**-sarakkeesta **Toimipaikan rekisterikilpien paikannus (Rekisterikilpi)**. Lisää sitten kohta **Toimipaikan rekisterikilpien paikannus** taulukon **Varaston dimensiot** liitokseen valitsemalla **Valitse**.
 
-    ![Taulun liitokset](media/LpTableJoin.png "Taulun liitokset")
+    ![Taulun liitokset.](media/LpTableJoin.png "Taulun liitokset")
 
 1. Vahvista päivitetyt liitetyt taulut valitsemalla **OK** ja sulje kyselyeditori.
 1. Avaa kyselyeditori uudelleen valitsemalla **Sijaintidirektiivin toiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
@@ -100,7 +100,7 @@ Toiminto on otettava käyttöön kaikkien niiden toimipaikkojen sijaintiprofiile
     - **Kenttä:** *LP-sijainti*
     - **Ehdot:** *1*
 
-    ![Uusi alue](media/LpPositionCriteria.png "Uusi alue")
+    ![Uusi alue.](media/LpPositionCriteria.png "Uusi alue")
 
 1. Vahvista muutokset valitsemalla **OK** ja sulje kyselyeditori.
 
@@ -275,7 +275,7 @@ Kun *Toimipaikan rekisterikilven paikannus* -toiminto on määritetty ja varasto
 1. Valitse **Skannaa työn tunnus/rekisterikilven tunnus** sivulla **Tunnus**-kenttä ja kirjoita siihen työn tunnus myyntiriviltä.
 1. Huomaa, että keräystyö ohjaa sinut keräämään nimikkeen *A0002* toimipaikasta *01A01R1S2B*. Tämä ohje tulee näyttöön, koska nimike *A0002* on kirjattu rekisterikilpeen, joka on tämän toimipaikan sijainnissa *1*.
 
-    ![Sijainti 1 toimipaikassa](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
+    ![Sijainti 1 toimipaikassa.](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
 
 1. Kirjoita toimipaikalle luomasi rekisterikilven tunnus ja kerää myyntitilaus noudattamalla kehotteita.
 

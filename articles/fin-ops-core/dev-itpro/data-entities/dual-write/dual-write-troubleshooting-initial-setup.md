@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753987"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350833"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
@@ -42,7 +42,7 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 
 **Asennuslinkki Dataverseen** -sivulla olevat virheet johtuvat yleensä puutteellisista määritys- tai käyttöoikeusongelmista. Varmista, että koko terveystarkistus siirtyy **Asennuslinkillä Dataverseen**, kuten seuraavasta kuvasta käy ilmi. Kaksoiskirjoittamista ei voi linkittää, ellei koko terveystarkistus ole ohi.
 
-![Onnistunut kuntotarkistus](media/health_check.png)
+![Onnistunut kuntotarkistus.](media/health_check.png)
 
 Sinulla on oltava Azure AD -vuokralaisen järjestelmänvalvojan käyttöoikeudet Finance and Operations- ja Dataverse -ympäristöjen linkittämiseen. Kun olet linkittänyt ympäristöt, käyttäjät voivat kirjautua sisään käyttämällä tilinsä tunnistetietoja ja päivittää aiemmin luotua taulujen yhdistämiskarttaa.
 
@@ -77,7 +77,7 @@ Jos haluat varmistaa, että kaksoiskirjoitus toimii oikein, konfiguroinnin aikan
 4. Valitse yritys, joka on linkitetty kaksoiskirjoituksen määrityksen yhteydessä.
 5. Varmista, että **Omistavan oletusryhmän** -sarakkeessa on arvo. Seuraavassa kuvassa **Omistavan oletusryhmän** -sarakkeen arvoksi on määritetty **USMF-kaksoiskirjoitus**.
 
-    ![Omistavan oletusryhmän tarkistaminen](media/default_owning_team.png)
+    ![Omistavan oletusryhmän tarkistaminen.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Kaksoiskirjoittamiseen liittyvien lakitaulujen tai yritysten määrän rajoittaminen
 

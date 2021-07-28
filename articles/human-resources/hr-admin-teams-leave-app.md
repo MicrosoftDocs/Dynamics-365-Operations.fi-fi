@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053560"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357358"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053560"
 
 Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovelluksen avulla työntekijät voivat tehdä nopeasti poissaolopyyntöjä ja tarkastella poissaolosaldonsa tietoja Microsoft Teamsissa. Työntekijät voivat pyytää tietoja botin avustuksella. **Poissaolo**-välilehdessä on lisätietoja. Lisäksi lähettää tietoja tulevista poissaoloista voidaan lähettää ryhmissä ja keskusteluissa Human Resources -sovelluksen ulkopuolella.
 
-![Human Resources Teamsin lomasovelluksen botti](./media/hr-teams-leave-app-bot.png)
+![Human Resources Teamsin lomasovelluksen botti.](./media/hr-teams-leave-app-bot.png)
 
-![Human Resources Teamsin lomasovelluksen Poissaolo-välilehti](./media/hr-teams-leave-app-timeoff-tab.png)
+![Human Resources Teamsin lomasovelluksen Poissaolo-välilehti.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Human Resourcesin lomapyyntökortti](./media/hr-teams-leave-app-chat-card.png)
+![Human Resourcesin lomapyyntökortti.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Asentaminen ja määrittäminen
 
@@ -57,11 +57,11 @@ Jos haluat, että käyttäjät voivat vastaanottaa lomapyyntöjen ilmoituksia Te
 
 4. Määritä **Yleistä**-välilehdessä **Ota käyttöön Teams-sovelluksen ilmoitukset** -kohdan arvoksi **Kyllä**.
 
-   ![Teams-sovelluksen ilmoitusten käyttöönotto järjestelmäparametreissa](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Teams-sovelluksen ilmoitusten käyttöönotto järjestelmäparametreissa.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Jos haluat ottaa Teams-ilmoitukset käyttöön kaikille käyttäjille, valitse **Kyllä** pyydettäessä.
 
-   ![Teams-ilmoitusten käyttöönotto kaikille käyttäjille](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Teams-ilmoitusten käyttöönotto kaikille käyttäjille.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Teams-ilmoitusten ottaminen käyttöön tai poistaminen käytöstä yksittäisille käyttäjille
 
@@ -77,7 +77,7 @@ Kun olet ottanut ilmoitukset käyttöön Dynamics 365 Human Resources Teams -sov
 
 5. Määritä **Teams-sovelluksen Salli ilmoitukset** -kohdan arvoksi **Kyllä**, jos haluat ottaa ilmoitukset käyttöön käyttäjälle. Valitse **Ei**, jos haluat poistaa käyttäjän ilmoitukset käytöstä.
 
-   ![Teams-sovelluksen ilmoitusten käyttöönotto käyttäjän asetusten Työnkulku-välilehdessä](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Teams-sovelluksen ilmoitusten käyttöönotto käyttäjän asetusten Työnkulku-välilehdessä.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Valitse **Tallenna**.
 

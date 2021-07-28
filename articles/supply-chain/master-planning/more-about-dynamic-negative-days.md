@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: 0fd573ab1676af292174efce562b010bcbeb6514
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097231"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354734"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatiiviset päivät ja dynaamiset negatiiviset päivät
 
@@ -43,7 +43,7 @@ Voit saada kysynnän joko suhteellisen aikaisessa vaiheessa nimikkeen läpimenok
 
 Seuraava kuva on tämän skenaarion graafinen esitys.
 
-![Skenaarion 1 graafinen esitys](./media/negative-days-1.jpg)
+![Skenaarion 1 graafinen esitys.](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Tapaus A: negatiivisten päivien arvo on pienempi kuin nimikkeen läpimenoaika
 
@@ -51,11 +51,11 @@ Jos määrität negatiivisten päivien arvoksi määrän, joka on pienempi kuin 
 
 Seuraavassa kuvassa näyttökuva tästä tapauksesta.
 
-![Näyttökuva skenaarion 1 tapauksesta A](./media/negative-days-2.png)
+![Näyttökuva skenaarion 1 tapauksesta A.](./media/negative-days-2.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 1 tapauksen A graafinen esitys](./media/negative-days-3.png)
+![Skenaarion 1 tapauksen A graafinen esitys.](./media/negative-days-3.png)
 
 Jos otetaan huomioon MRP-suorituskyky ja suunnitelman ailahtelevuus, tapaus ei suoriutunut hyvin. MRP-suunnittelun on luotava uusi suunniteltu tilaus ja laskettava viiveet ja toimenpiteet. Nämä tehtävät vievät paljon aikaa. Tämä tapaus lisää myös kaksi muuta tapahtumaa suunnitelmaan. Toisaalta myyntitilaus viivästyy vain kuusi eikä seitsemän päivää.
 
@@ -73,11 +73,11 @@ dynaamisen negatiivisen päivän aikaraja = oston läpimenoaika + negatiivisten 
 
 Dynaamisia negatiivisia päiviä käytettäessä aikaraja, jota tarvesuunnittelu käyttää vastaanottojen hakemiseen, on nyt 6 + 2 + 0 = 8 päivää. Tarvesuunnittelu etsii aiemmin luodun ostotilauksen ja määrittää myyntitilauksen sen perusteella. Uusia suunniteltuja tilauksia ei luoda. Tämän vuoksi tarvesuunnittelun suoritusaika on lyhyempi. Seuraavassa kuvassa on DemoProduct-nimikkeen nettotarpeet.
 
-![Skenaarion 1 tapauksen C nettotarpeet](./media/negative-days-4.png)
+![Skenaarion 1 tapauksen C nettotarpeet.](./media/negative-days-4.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 1 tapauksen C graafinen esitys](./media/negative-days-5.png)
+![Skenaarion 1 tapauksen C graafinen esitys.](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Tapaus D: vain dynaamisten negatiivisten päivien käyttäminen
 
@@ -85,11 +85,11 @@ Jos määrität negatiivisten päivien arvoksi **0** (nolla) ja käytät vain dy
 
 Seuraavassa kuvassa on näyttökuva tästä tapauksesta.
 
-![Näyttökuva skenaarion 1 tapauksesta D](./media/negative-days-6.png)
+![Näyttökuva skenaarion 1 tapauksesta D.](./media/negative-days-6.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 1 tapauksen D graafinen esitys](./media/negative-days-7.png)
+![Skenaarion 1 tapauksen D graafinen esitys.](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Tapaus E: sekä arvoltaan nimikkeen läpimenoaikaa suuremman negatiivisten päivien että dynaamisten negatiivisten päivien aikarajan käyttäminen
 
@@ -106,7 +106,7 @@ Tarve voidaan saada jossain vaiheessa nimikkeen läpimenoajan aikana. Esimerkki 
 
 Seuraava kuva on tämän skenaarion graafinen esitys.
 
-![Skenaarion 2 graafinen esitys](./media/negative-days-8.png)
+![Skenaarion 2 graafinen esitys.](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Tapaus A: negatiivisten päivien arvo on pienempi kuin nimikkeen läpimenoaika
 
@@ -114,11 +114,11 @@ Jos määrität negatiivisten päivien arvoksi määrän, joka on pienempi kuin 
 
 Seuraavassa kuvassa on näyttökuva tästä tapauksesta.
 
-![Näyttökuva skenaarion 2 tapauksesta A](./media/negative-days-9.png)
+![Näyttökuva skenaarion 2 tapauksesta A.](./media/negative-days-9.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 2 tapauksen A graafinen esitys](./media/negative-days-10.png)
+![Skenaarion 2 tapauksen A graafinen esitys.](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Tapaus B: negatiivisten päivien arvo on suurempi kuin nimikkeen läpimenoaika
 
@@ -130,11 +130,11 @@ Tämä tapaus muistuttaa skenaarion 1 tapausta C, koska dynaamiset negatiiviset 
 
 Seuraavassa kuvassa näyttökuva tästä tapauksesta.
 
-![Näyttökuva skenaarion 2 tapauksesta C](./media/negative-days-11.png)
+![Näyttökuva skenaarion 2 tapauksesta C.](./media/negative-days-11.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 2 tapauksen C graafinen esitys](./media/negative-days-12.png)
+![Skenaarion 2 tapauksen C graafinen esitys.](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Tapaus D: vain dynaamisten negatiivisten päivien käyttäminen
 
@@ -155,7 +155,7 @@ Voit saada kysynnän nimikkeen läpimenoajan jälkeen. Esimerkki tästä skenaar
 
 Seuraava kuva on tämän skenaarion graafinen esitys.
 
-![Skenaarion 3 graafinen esitys](./media/negative-days-13.png)
+![Skenaarion 3 graafinen esitys.](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Tapaus A: negatiivisten päivien arvo on pienempi kuin nimikkeen läpimenoaika
 
@@ -163,11 +163,11 @@ Jos negatiivisten päivien määritetty arvo on pienempi kuin nimikkeen läpimen
 
 Seuraavassa kuvassa näyttökuva tästä tapauksesta.
 
-![Näyttökuva skenaarion 3 tapauksesta A](./media/negative-days-14.png)
+![Näyttökuva skenaarion 3 tapauksesta A.](./media/negative-days-14.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 3 tapauksen A graafinen esitys](./media/negative-days-15.png)
+![Skenaarion 3 tapauksen A graafinen esitys.](./media/negative-days-15.png)
 
 > [!NOTE]
 > Edellisessä näyttökuvassa ostotilauksen tarvepäivä on 12. tammikuuta. Koska kyseinen näyttökuva otettiin 2015, jolloin 11. tammikuuta oli sunnuntai, tarvesuunnittelu muutti tarvepäivän seuraavaan arkipäivään, joka oli maanantai 12. tammikuuta. Ostotilauksen toimituspäivä on kuitenkin 11. tammikuuta.
@@ -178,11 +178,11 @@ Jos määrität negatiivisten päivien arvon suuremmaksi kuin nimikkeen läpimen
 
 Seuraavassa kuvassa näyttökuva tästä tapauksesta.
 
-![Näyttökuva skenaarion 3 tapauksesta B](./media/negative-days-16.png)
+![Näyttökuva skenaarion 3 tapauksesta B.](./media/negative-days-16.png)
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 3 tapauksen B graafinen esitys](./media/negative-days-17.png)
+![Skenaarion 3 tapauksen B graafinen esitys.](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Tapaus C: nimikkeen läpimenoajan automaattinen korrelaatio negatiivisten päivien aikarajaan
 
@@ -192,7 +192,7 @@ Dynaamisten negatiivisten päivien aikaraja on 6 + 2 – 7 = 1 päivä. Tässä 
 
 Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
-![Skenaarion 3 tapauksen C graafinen esitys](./media/negative-days-18.png)
+![Skenaarion 3 tapauksen C graafinen esitys.](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Tapaus D: vain dynaamisten negatiivisten päivien käyttäminen
 
@@ -219,11 +219,11 @@ Haluat ehkä määrittää negatiivisten päivien arvoksi pitkän aikarajan ja k
 
 Seuraava kuva on graafinen esitys siitä, mitä tapahtuu.
 
-![Esimerkin graafinen esitys](./media/negative-days-19.png)
+![Esimerkin graafinen esitys.](./media/negative-days-19.png)
 
 Tarvesuunnittelulla saadaan seuraavat tulokset.
 
-![Tulosesimerkki 1](./media/negative-days-20.png)
+![Tulosesimerkki 1.](./media/negative-days-20.png)
 
 Edellisessä näyttökuvassa myyntitilauksen tarvepäivä on 9. eikä 10. tammikuuta Koska kyseinen näyttökuva otettiin 2015, jolloin 10. tammikuuta oli lauantai, tilauksen tarvepäivän pitäisi olla edellinen arkipäivä, joka oli perjantai 9. tammikuuta.
 
@@ -233,7 +233,7 @@ Tulokset eivät ole virheellisiä, mutta tarvesuunnittelun suoritusaika voi pide
 
 Jos pienennät negatiivisten päivien arvon lähemmäksi nimikkeen läpimenoaikaa ja käytät dynaamisia negatiivisia päiviä, tarvesuunnittelulla saada seuraavat tulokset.
 
-![Tulosesimerkki 2](./media/negative-days-21.png)
+![Tulosesimerkki 2.](./media/negative-days-21.png)
 
 Tarvesuunnittelu luo ensimmäiseen myyntitilaukseen liitetyn suunnitellun tilauksen. Sen jälkeen toinen myyntitilaus määritetään odotetusta aiemmin luodun myyntitilauksen perusteella negatiivisten päivien asetusten pohjalta. Myös tämä suunnittelutulos on oikein ja tarvesuunnittelun suoritusaika voi olla lyhyempi. Tässä tapauksessa ei ole välttämätöntä, että ymmärrät toimenpidesanomat ja osaat käyttää niitä.
 

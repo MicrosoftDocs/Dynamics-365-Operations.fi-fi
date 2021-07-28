@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2406df379084fefd4e1ca33c271b69f4dafeb5b5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189199"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358902"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
@@ -136,7 +136,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
 1.  Korvaa URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu.](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
 3.  Valitse työtila ja sitten **Muokkaa**
@@ -145,7 +145,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 6.  Valitse **Valmis**.
 7.  Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**. Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa. 
 
-    [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla.](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  Lisää tarvittavat sarakkeet luettelosivulta, joka on näytettävä käyttäjille mobiilisivulla. Kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. Tämän skenaarion vaatimusten mukaan seuraavat kahdeksan kenttää ovat pakollisia. Joidenkin käyttäjien mielestä kahdeksan kenttää mobiililaitteessa saattaa kuitenkin olla liikaa. Siksi näytämme vain tärkeimmät kentät mobiilissa luettelonäkymässä. Muut kentät näkyvät tietonäkymässä, jonka suunnittelemme myöhemmin. Nyt lisäämme seuraavat kentät. Napsauta plus-merkkiä (**+**) sarakkeissa lisätäksesi ne mobiilisivulle.
     - Toimittajan nimi
@@ -156,7 +156,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
     Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
     
-    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Sivu kenttien lisäämisen jälkeen.](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.
     - Näytä Suorita-tehtävä
@@ -175,7 +175,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
 Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. 
 
-[![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![Työnkulku-sivu.](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. Korvaa URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen
 
@@ -212,7 +212,7 @@ Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeader
 
 11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.
     
-    [![Kuva, jossa näkyy lisättyjä kenttiä](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Kuva, jossa näkyy lisättyjä kenttiä.](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Valitse **Valmis** poistuaksesi muokkaustilasta.
 
@@ -322,7 +322,7 @@ Käytä **VendMobileInvoiceHeaderDetails**-sivua lisätäksesi työnkulkutoimint
 
 4. Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
    
-   ![Tiedoston hallinta](./media/docmanagement-216x300.png)
+   ![Tiedoston hallinta.](./media/docmanagement-216x300.png)
 
 5. Valitse **Valmis** poistuaksesi muokkaustilasta.
 
@@ -339,7 +339,7 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 
 1.  Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Sivun, joka näkyy, on muistutettava seuraavaa kuvaa.
 
-    [![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Kaikki jaot -sivu.](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
 

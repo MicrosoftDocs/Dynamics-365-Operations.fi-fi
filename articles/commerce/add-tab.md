@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c865d5e055e3fadf2dda225b49f13a163974768f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e7d2cd7b7ce9446d77eff66433739c8ea6b1f309
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797452"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348293"
 ---
 # <a name="tab-module"></a>Välilehtimoduuli
 
@@ -34,7 +34,7 @@ Jokaisessa välilehtimoduulissa voidaan lisätä yksi tai useampia välilehtimod
 
 Seuraavassa kuvassa on esimerkki välilehtimoduulista sivuston sivulla. Tässä esimerkissä valittu **Toimitus**-välilehti on valittuna.
 
-![Esimerkki välilehtimoduulista](./media/ecommerce-tab.PNG)
+![Esimerkki välilehtimoduulista.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Välilehtimoduulin ominaisuudet
 

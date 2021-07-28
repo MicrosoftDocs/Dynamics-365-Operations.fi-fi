@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 45f776238fbb8e028e8d5b2f342b7d27009c686d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193428"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353611"
 ---
 # <a name="benefits-management-workspace"></a>Etujen hallinnan työtila
 
@@ -31,7 +31,7 @@ ms.locfileid: "6193428"
 Tässä aiheessa kuvataan Dynamics 365 Human Resources -sovellukseen sisältyvä **etujen hallinnan työtila**.
 
 > [!NOTE]
-> Jos haluat nähdä **etujen hallinnan työtilan**, sinun täytyy ottaa **(Esikatselu) Etujen hallinnan työtila** -ominaisuus käyttöön ominaisuuksien hallinnasta. Lisätietoja esiversiotoimintojen käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br><br>![Etujen hallinnan työtilan käyttöönotto](./media/hr-benefits-management-workspace-enable.png)
+> Jos haluat nähdä **etujen hallinnan työtilan**, sinun täytyy ottaa **(Esikatselu) Etujen hallinnan työtila** -ominaisuus käyttöön ominaisuuksien hallinnasta. Lisätietoja esiversiotoimintojen käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br><br>![Etujen hallinnan työtilan käyttöönotto.](./media/hr-benefits-management-workspace-enable.png)
 
 **Etujen hallinnan työtilan** avulla voit katsastaa nopeasti etujen nimikkeet, jotka vaativat huomiotasi. Tällä sivulla näytetään seuraavat tiedot:
 
@@ -43,13 +43,13 @@ Tässä aiheessa kuvataan Dynamics 365 Human Resources -sovellukseen sisältyvä
 - Työntekijät, joilla on aktiivisia elinkaaritapahtumia
 - Työntekijät, joilla on avoimia rekisteröitymisiä, jotka eivät ole valinneet yhtään suunnitelmaa
 
-![Etujen hallinnan työtila](./media/hr-benefits-management-workspace.png)
+![Etujen hallinnan työtila.](./media/hr-benefits-management-workspace.png)
 
 ## <a name="view-action-items"></a>Toimintonimikkeiden tarkasteleminen
 
 Voit tarkastella toimintonimikkeitä valitsemalla ruudun tai välilehden. Jos valitset välilehden, voit tarkastella ja valita työntekijöitä suoraan työtilan sivulta.
 
-![Toimintonimikkeet](./media/hr-benefits-management-workspace-action-items.png)
+![Toimintonimikkeet.](./media/hr-benefits-management-workspace-action-items.png)
 
 Jos valitset ruudun, siirryt kyseiselle sivulle. Esimerkiksi seuraavien ruutujen valitseminen näyttää **Työntekijän etuussuunnitelmat** -sivun, joka on suodatettu näyttämään toimenpiteitä vaativat työntekijät:
 
@@ -58,21 +58,21 @@ Jos valitset ruudun, siirryt kyseiselle sivulle. Esimerkiksi seuraavien ruutujen
 - **Rekisteröity etuihin**
 - **Uutta työntekijää ei ole rekisteröity**
 
-![Työntekijän etusuunnitelmat](./media/hr-benefits-management-workspace-plans.png)
+![Työntekijän etusuunnitelmat.](./media/hr-benefits-management-workspace-plans.png)
 
 **Aktiiviset elinkaaritapahtumat**- tai **Tulevat elinkaaritapahtumat** -ruutujen valitseminen sinut aktiivisten tai tulevien elinkaaritapahtumien luetteloon.
 
-![Elinkaaritapahtumat](./media/hr-benefits-management-workspace-life-events.png)
+![Elinkaaritapahtumat.](./media/hr-benefits-management-workspace-life-events.png)
 
 ## <a name="processing"></a>Käsittely
 
 Jos haluat käsitellä rekisteröintikelpoisuutta, elinkaaritapahtumia tai hintamuutosten päivityksiä, valitse asiaankuuluva nimike siirtymispalkista.
 
-![Käsittely](./media/hr-benefits-management-workspace-processing.png)
+![Käsittely.](./media/hr-benefits-management-workspace-processing.png)
 
 Voit tarkastaa prosessin tulokset valitsemalla **Prosessin tulokset** -sivun.
 
-![Prosessin tulokset](./media/hr-benefits-management-workspace-process-results.png)
+![Prosessin tulokset.](./media/hr-benefits-management-workspace-process-results.png)
 
 Lisätietoja etujen käsittelystä on kohdissa:
 
@@ -86,13 +86,13 @@ Lisätietoja etujen käsittelystä on kohdissa:
 
 Jos haluat tarkastella etuja toiselta ajanjaksolta, valitse se **Kausi**-pudotusvalikosta.
 
-![Ajanjakson muuttaminen](./media/hr-benefits-management-workspace-period.png)
+![Ajanjakson muuttaminen.](./media/hr-benefits-management-workspace-period.png)
 
 ## <a name="view-more-options"></a>Lisävaihtoehtojen tarkasteleminen
 
 Jos haluat nähdä lisätietoja ja muita tehtäviä toimenpiteitä, valitse **Linkit**.
 
-![Linkit](./media/hr-benefits-management-workspace-links.png)
+![Linkit.](./media/hr-benefits-management-workspace-links.png)
 
 ## <a name="see-also"></a>Lisätietoja
 

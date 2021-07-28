@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7ff6d8ee7e526e45975cfa500b5e6d6079054dc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f20b5c36b45fc0d242edb4e5305a4195d6dfbe94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800684"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351222"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Kanavan lisääminen organisaatiohierarkiaan
 
@@ -44,7 +44,7 @@ Valitse hierarkia seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa on valitun hierarkian organisaatiohierarkian tiedot.
 
-![Valitun hierarkian organisaatiohierarkian tiedot](media/channel-add-to-org-hierarchy-1.png)
+![Valitun hierarkian organisaatiohierarkian tiedot.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Kanavan lisääminen hierarkiasolmuun
 
@@ -58,17 +58,17 @@ Voit lisätä kanavan hierarkiasolmuun seuraavasti.
 
 Seuraava kuva osoittaa, miten hierarkiasolmuun lisättävä kanava valitaan.
 
-![Hierarkiasolmuun lisättävän kanavan valitseminen](media/channel-add-to-org-hierarchy-2.png)
+![Hierarkiasolmuun lisättävän kanavan valitseminen.](media/channel-add-to-org-hierarchy-2.png)
 
 Seuraavassa kuvassa on hierarkia, johon on lisätty useita kanavia.
 
-![Hierarkia, johon on lisätty erilaisia kanavia](media/channel-add-to-org-hierarchy-3.png)
+![Hierarkia, johon on lisätty erilaisia kanavia.](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
 
 [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 

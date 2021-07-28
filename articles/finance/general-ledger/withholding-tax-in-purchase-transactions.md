@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816880"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356673"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>Ennakonpidätys ostotapahtumissa
 
@@ -64,15 +64,15 @@ Ennakonpidätysryhmän ja nimikkeen ennakonpidätysryhmän oletusarvo tulee rive
 
 Ennakonpidätyksen väliaikainen summa on käytettävissä **Ostotilaus**-sivun **Summat**-välilehden **Oikaistu ennakonpidätys** -kentässä.
 
-![Ennakonpidätys sisältyy ostotilaukseen](media/withholding-tax-adjusted.png)
+![Ennakonpidätys sisältyy ostotilaukseen.](media/withholding-tax-adjusted.png)
 
 Ennakonpidätys lasketaan **toimittajan maksukirjauskansiossa**. Voit oikaista sovellettavia ennakonpidätyskoodeja sekä todellisia ennakonpidätyksen summia manuaalisesti **Ennakonpidätys** -välilehdessä **Tapahtumien selvitys** -sivulla.
 
-![Ennakonpidätyksen voi muuttaa manuaalisesti Tapahtumien selvitys -sivulla](media/withholding-tax-vendor-payment-tab.png)
+![Ennakonpidätyksen voi muuttaa manuaalisesti Tapahtumien selvitys -sivulla.](media/withholding-tax-vendor-payment-tab.png)
 
 Johdettu ennakonpidätyksen summa vähennetään toimittajan maksusta ja kirjataan **ennakonpidätystilille** liittyvässä tositteessa.
 
-![Ennakonpidätystili, jossa näkyy liittyvä tosite](media/withholding-tax-adjusted.png)
+![Ennakonpidätystili, jossa näkyy liittyvä tosite.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

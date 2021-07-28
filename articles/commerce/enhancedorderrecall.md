@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799103"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349421"
 ---
 # <a name="recall-order-operation-in-pos"></a>Myyntipisteen Peruuta tilaus -toiminto
 
@@ -29,7 +29,7 @@ Ota tämä toiminto käyttöön ottamalla **Parannettu tilauksen peruutustoimint
 
 **Peruuta tilaus** -toimintopainikkeen määritys antaa organisaatioille mahdollisuuden ottaa toiminnon käyttöön siten, että näyttö määritetty valmiiksi.
 
-![Painikeruudukon määritykset](media/recallorderbuttongrid.png)
+![Painikeruudukon määritykset.](media/recallorderbuttongrid.png)
 
 Näyttöasetukset:
 - **Ei mitään** – Tällä asetuksella toiminto otetaan käyttöön ilman tiettyä näyttöä. Kun käyttäjä avaa toiminnon tällä määrityksellä, häntä pyydetään hakemaan tilaukset tai tekemään valinnan esimääritetystä tilaussuodattimesta.
@@ -42,11 +42,11 @@ Jos **Peruuta tilaus** -toiminto käynnistetään myyntipisteessä ja jos näyt�
 - Valitse sovelluspalkissa **Hae tilaukset**- tai **Hae ja suodata** -kuvake. Tällä tavoin voit käyttää suodatusmekanismia suodatusehtoja vastaavien tilausten paikantamiseen.
 - Valitse jokin esimääritetty suodatin avattavassa **Näytä tilaukset** -valikossa (täytettävät tilaukset, poimittavat tilaukset tai lähetettävät tilaukset).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 Kun ehtojen mukainen haku on tehty, sovellus näyttää vastaavien myyntitilausten luettelon. Haku- tai suodatusasetuksia käytettäessä on tärkeää muistaa, että haettujen tilausten ei tarvitse olla käyttäjän nykyiseen myymälään linkitettyjä tilauksia. Tämä hakuprosessi hakee ja näyttää kaikki hakuehtoja vastaavat asiakastilaukset, vaikka tilaus olisi luotu tai määritetty toisen myymälän/kanavan tai varaston sijainnin avulla.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 Käyttäjä voi valita luettelossa tilauksen ja katsoa lisätietoja. Näytön oikealla puolella on tietopaneeli, jossa on tietoja valitusta tilauksesta, kuten tilausrivin tiedot, toimituksen tiedot ja täyttämistiedot.
 

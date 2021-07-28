@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 067d7035cdb9c8f4bcb2bdac9cf0a33cd4e01079
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2fa602d01cadecbf24c2433360f7b2a8ebb0854a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811434"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355152"
 ---
 # <a name="cost-element-dimensions"></a>Kustannustason dimensiot
 
@@ -63,7 +63,7 @@ Kustannustasoja on kahdenlaisia: ensisijaiset ja toissijaiset kustannustasot. Se
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kustannustason dimensiot ja kustannustason dimension jäsenet
 Kustannustasoja kutsutaan *kustannustasodimensioiksi* . Yksittäisiä dimensioarvoja kutsutaan *kustannusluokkien dimensiojäseniksi*. Esimerkki: US tilikartan rakennetta (COA) käytetään lakisääteinen raportoinnin perustana. Tätä tilikarttaa käytetään kustannustason dimensiona. Tilit, jotka ovat ensisijaisia kustannustasoja, esitetään kustannustason dimensiojäseninä kustannuslaskennassa. Seuraavassa kuvankaappauksessa on esimerkki päätileistä kustannustasodimensioina ja toteutuneista päätileistä kustannustasodimension jäseninä. 
 
-[![Näyttökuva päätileistä kustannustason dimensiona](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Näyttökuva päätileistä kustannustason dimensiona.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Kustannustason dimension jäsenten tuominen tietoyhdistimillä
 Voit helpottaa kustannustason dimension jäsenten asetusta kustannuslaskennassa käyttämällä valmiita tai mukautettuja tietoyhdistimiä, joilla haetaan ensisijaiset kustannustasot yhdestä tai useammasta lähdejärjestelmästä.

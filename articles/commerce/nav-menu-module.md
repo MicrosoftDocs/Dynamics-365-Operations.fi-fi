@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798750"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353105"
 ---
 # <a name="navigation-menu-module"></a>Siirtymisvalikkomoduulit
 
@@ -33,7 +33,7 @@ Siirrymisvalikkomoduulien ensisijainen tarkoitus on antaa sivuston käyttäjille
 Navigointivalikkomoduuli voidaan lisätä sivun ylätunnistemoduuliin. Fabrikam-teeman siirtymisvalikossa on näkyvissä kaksi tasoa oletusarvoisesti. Starter (aloitus) -teeman siirtymisvalikossa on näkyvissä kolme tasoa oletusarvoisesti. Jos haluat vaihtaa tasojen määrän, teemalle on määritettävä näkymän laajennus.
 
 Seuraavassa kuvassa on esimerkki Fabrikam-sivuston siirtymisvalikosta, jossa on kaksi luokkahierarkian tasoa ja joitakin staattisia valikon vaihtoehtoja.
-![Esimerkki siirtymisvalikkomoduulista](./media/ecommerce-header.png)
+![Esimerkki siirtymisvalikkomoduulista.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Siirtymisvalikkomoduulin ominaisuudet
 
@@ -50,7 +50,7 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston siirtymisvalikosta, jossa on 
 | Päävalikko | merkkijono | Tällä ominaisuudella voi määrittää mukautetun juuren teksti, jos **Näytä päävalikko** -ominaisuudeksi on määritetty **Tosi**. |
 
 Seuraavassa kuvassa näkyy esimerkki Fabrikam-sivuston siirtymisvalikossa näkyvästä luokan kuvasta.
-![Esimerkki siirtymisvalikkomoduulista ja luokan kuvista](./media/ecommerce-categoryimages.PNG)
+![Esimerkki siirtymisvalikkomoduulista ja luokan kuvista.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Siirtymisvalikkomoduulin lisääminen ylätunnistemoduuliin
 

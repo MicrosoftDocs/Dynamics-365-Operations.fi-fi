@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: 7521
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b6ace2ce83c668e83ec1b433f8062148a6dfaf4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2f3a5583400b21aa11e88ba48b67e56fdbb05c3f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059061"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353635"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskuvaus
 
@@ -42,7 +42,7 @@ Jos haluat käyttää demotietoja, sinun on otettava eristysympäristösi uudell
 
 >[!NOTE]
 >Voit nyt mukauttaa etujen hallinnan lomakkeita. Voit nyt lisätä kattavuusprosentteihin liittyviä mukautettuja kenttiä etusuunnitelmien **Kattavuusvaihtoehto** -lomakkeeseen. Lisätietoja mukautettujen kenttien käyttämisestä on kohdassa [Mukautetut kentät](hr-developer-custom-fields.md).
->![Etujen hallinnan mukautetut kentät](media/hr-benefits-management-custom-fields.png)
+>![Etujen hallinnan mukautetut kentät.](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Etujen hallinnan käyttöönotto
 
