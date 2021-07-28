@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52baa707c36f3468263782dc8ec735e44af88e38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 422b1f7f8dc99e1c96da9e266cadcdc09e7aac71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804230"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347463"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Määritä ja suorita työ laskelmien kirjaamiseksi
 
@@ -31,9 +31,9 @@ Tässä menettelyssä kerrotaan, miten toistuva erätyö määritetään ja suor
 2. Napsauta Laskelmien kirjaaminen eräajona.
     * Valitse organisaatiohierarkia ja sitten organisaatiosolmujen puu. Valitse yksittäinen myymälä tai solmu. Valitse solmu, jos haluat luoda myymäläryhmän erätyön.  
     * Lisää valinta nuolen avulla.  
-3. Valitse Suorita taustalla -välilehti. ![Suorita taustalla](../dev-itpro/media/runbackground.png "Suorita taustalla") 
+3. Valitse Suorita taustalla -välilehti. ![Suorita taustalla.](../dev-itpro/media/runbackground.png "Suorita taustalla") 
 4. Valitse Eräkäsittely-valintaruutu tai poista sen valinta.
-![Eräkäsittely](../dev-itpro/media/batchprocessing.png "Eräkäsittely & toistuvuus") 
+![Eräkäsittely.](../dev-itpro/media/batchprocessing.png "Eräkäsittely & toistuvuus") 
 5. Valitse Toistuminen.
 6. Syötä päivämäärä Aloituspäivä-kenttään.
 7. Syötä Aloitusaika-kenttään aika.

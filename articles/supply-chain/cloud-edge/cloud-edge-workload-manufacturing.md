@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270532"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352733"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -44,7 +44,7 @@ Tässä aiheessa käsitellään tuotannonohjauksen kuormitusten käyttöä pilvi
 
 Valmistuksen elinkaari jaetaan seuraavan kuvan osoittamalla tavalla kolmeen osaan: *suunnittelu*, *toteutus* ja *viimeistely*.
 
-[![Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö](media/mes-phases.png "Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö")](media/mes-phases-large.png)
+[![Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö](media/mes-phases.png "Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö."](media/mes-phases-large.png)
 
 _Suunnittelu_-vaihe sisältää tuotannon määrittelyn, suunnittelun, tilauksen luonnin ja aikatauluttamisen sekä vapautuksen. Vapautusvaihe ilmaisee siirtymisen _Suunnittelu_-vaiheesta _Toteutus_-vaiheeseen. Kun tuotantotilaus vapautetaan, tuotantotilauksen työt tulevat näkyviin tuotannossa ja ovat valmiita toteuttamiseen.
 
@@ -54,7 +54,7 @@ Kun tuotantotyö merkitään valmiiksi, se siirtyy _Suorita_-vaiheesta _Viimeist
 
 Kuten seuraavassa kuvassa osoitetaan, scale uniteja käytettäessä _Toteutus_-vaihe jaetaan erilliseksi kuormitukseksi.
 
-[![Valmistuksen toteutusvaiheet scale uniteja käytettäessä](media/mes-phases-workloads.png "Valmistuksen toteutusvaiheet scale uniteja käytettäessä")](media/mes-phases-workloads-large.png)
+[![Valmistuksen toteutusvaiheet scale uniteja käytettäessä](media/mes-phases-workloads.png "Valmistuksen toteutusvaiheet scale uniteja käytettäessä."](media/mes-phases-workloads-large.png)
 
 Malli siirtyy nyt yhden esiintymän asennuksesta keskukseen ja scale uniteihin perustuvaan mallin. _Suunnittelu_- ja _Viimeistely_-vaiheet suoritetaan taustatoimintoina keskuksessa ja tuotannonohjauksen kuormitus suoritetaan scale uniteina. Tietoja siirretään asynkronisesti keskuksen ja scale unitien välillä.
 
@@ -87,7 +87,7 @@ Vaikka työ suoritetaan yleensä automaattisesti, se voidaan suorittaa manuaalis
 
 Rekisteröinnin käsittelylokia voi tarkastella kirjautumalla keskukseen ja valitsemalla **Tuotannonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta \> Lähdetietojen rekisteröinnin käsittelyloki**. **Lähdetietojen rekisteröinnin käsittelyloki** -sivulla on luettelo käsitellyistä lähdetietojen rekisteröinneistä ja kunkin rekisteröinnin tila.
 
-![Lähdetietojen rekisteröinnin käsittelyloki -sivu](media/mes-processing-log.png "Lähdetietojen rekisteröinnin käsittelyloki -sivu")
+![Lähdetietojen rekisteröinnin käsittelyloki -sivu.](media/mes-processing-log.png "Lähdetietojen rekisteröinnin käsittelyloki -sivu")
 
 Luettelossa olevaa rekisteröintiä voi käsitellä valitsemalla ensin se ja sitten jompikumpi seuraavista painikkeista toimintoruudussa:
 

@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a537509fe034d85f8f4f441dc82d54efd3ed4f28
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818303"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348882"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>ALV-/GST-mallin käänteinen veloitusmekanismi
 
@@ -121,7 +121,7 @@ Kun käänteisen veron sisältävä ostolasku kirjataan, kirjanpitoon luodaan ka
 
 Seuraavassa näyttökuvassa yhdessä tapahtumassa suuntana on **Saatava arvonlisävero** ja toisessa **Maksettava arvonlisävero**. 
 
-![Kirjattu arvonlisävero](media/apac-sau-posted-sales-tax.png)
+![Kirjattu arvonlisävero.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Ota ALV/GST-veromalliominaisuuden käänteisen verovelvollisuuden mekanismi käyttöön
 Hae ominaisuus **Ominaisuuksien hallinta** -työtilassa ja valitse **Ota käyttöön**.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054905"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346271"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimoi Dataversen virtuaalitaulukoiden kyselyt
 
@@ -50,11 +50,11 @@ Tämä vaikutus voi olla esimerkiksi kyselyissä työntekijää (**mshr_hcmworke
 - **Kyselyn aikakatkaisu**: Kysely voi aikakatkaisua ja palauttaa seuraavan virheen: "ATunnuksen avulla soitettiin Finance and Operationsiin, mutta Finance and Operations palautti InternalServerError-tyypin virheen."
 - **Odottamaton virhe**: Kysely saattaa palauttaa virhetyypin 400. Näyttöön tulee seuraava sanoma: Odottamaton virhe.
 
-  ![Virhetyyppi 400 HcmWorkerBaseEntityssä](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Virhetyyppi 400 HcmWorkerBaseEntity-yksikössä.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Ylikuormitus** Kysely voi käyttää palvelinresursseja liian paljon, ja siitä tulee vain osa välityspalvelinta. Tässä tapauksessa kysely palauttaa seuraavan virheen: "Tunnus haettiin Finance and Operationskutsua varten, mutta Finance and Operations palautti virheen, tyyppi 429." Lisätietoja henkilöstöhallinnon rajoittamisesta on kohdassa [rajoitusten usein kysytyt kysymykset](./hr-admin-integration-throttling-faq.md).
 
-  ![Virhetyyppi 429 HcmWorkerBaseEntityssä](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Virhetyyppi 429 HcmWorkerBaseEntity-yksikössä.](./media/HcmWorkerBaseEntityErrorType429.png)
 
 ## <a name="resolution"></a>Ratkaisu
 
@@ -96,7 +96,7 @@ Jos Power BI -raportin luominen Dataverse-virtuaalitauluun hidastaa suorituskyky
 2. Kirjoita **Hae tiedot** -ikkunassa hakuruutuun **Common Data Service** ja valitse **Common Data Service** -liitin ja valitse **Yhdistä**.
 3. Kirjoita Common Data Service -ikkunan **Palvelimen URL** -kenttään Dataverse-ympäristösi organisaatio-URI ja valitse **OK**.
   
-   ![Anna Dataverse -ympäristösi URI](./media/PowerBIDataverseURLSetup.png)
+   ![Anna Dataverse-ympäristösi URI.](./media/PowerBIDataverseURLSetup.png)
   
 4. Laajenna Navigointi-ikkunanssa **Yksiköt**-solmu.
 5. Kirjoita hakuruutuun **mshr_hcmworkerbaseentity** ja valitse yksikkö.
@@ -113,7 +113,7 @@ Jos Power BI -raportin luominen Dataverse-virtuaalitauluun hidastaa suorituskyky
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Kyselyn päivittäminen Power Query -editorin laajennetulla editorilla](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Kyselyn päivittäminen Power Query -editorin laajennetulla editorilla.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Valitse **Valmis**.
 
@@ -138,7 +138,7 @@ Jos jokin sovellukseen sisältyvän sivun tietokentistä esimerkiksi viittaa toi
 
 [Power Apps -valvontaruudulla](/powerapps/maker/monitor-overview) voit varmistaa, että kyselyyn sisällytetään vain tarvitsemiasi sarakkeita, kun Power App -sovelluksen tiedot hankitaan. Kun tarkastelet getRows-toimintoon suunniteltua URL-osoitetta, voit varmistaa, että sovelluksesi sarakkeet noudetaan mahdollisimman helposti.
 
-![GetData-toiminnon analysoiminen Power Apps Monitorin avulla](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![GetData-toiminnon analysoiminen Power Apps Monitorin avulla.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Tietokyselyn suodattaminen
 

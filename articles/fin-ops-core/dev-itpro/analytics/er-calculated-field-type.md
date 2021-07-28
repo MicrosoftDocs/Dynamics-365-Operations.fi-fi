@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749486"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349157"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 
@@ -86,7 +86,7 @@ Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi o
 
     Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen ja Finance and Operationsissa suoritettujen ER-muotojen perustietomallia. Tämän vuoksi **Tax**- ja **Gr**-tietolähteiden sisältö näkyy ER-muodoissa abstrakteina tietolähteinä.
 
-    ![Tax- ja Gr-tietolähteet näkyvät mallimäärityksen suunnittelusivulla](media/er-calculated-field-type-01.png)
+    ![Tax- ja Gr-tietolähteet näkyvät mallimäärityksen suunnittelusivulla.](media/er-calculated-field-type-01.png)
 
 5.  Sulje **Mallimäärityksen sunnittelun** sivu.
 6.  Sulje **Mallimääritys**-sivu.
@@ -101,21 +101,21 @@ Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi o
     - Seuraavien verotustasojen näyttäminen veroilmoituksessa: normaali, alennettu ja ei mitään.
     - Useiden tietojen näyttäminen kustakin verotustasosta siten, että kunkin tason tiedoilla on eri numero.
 
-    ![Muodon suunnittelutoiminto -sivu](media/er-calculated-field-type-02.png)
+    ![Muodon suunnittelutoiminto -sivu.](media/er-calculated-field-type-02.png)
 
 4. Valitse **Määritys**.
 5. Laajenna **Malli**, **Tiedot** ja **Yhteenveto**. 
 
     Laskettu **Model.Data.Summary.Level** -kenttä sisältää lausekkeen, joka palauttaa verotustason koodin (**Normaali**, **Alennettu**, **Ei mitään** tai **Muu**) sellaisen verokoodin tekstiarvona, joka voidaan suorituksenaikaisesti noutaa **Model.Data.Summary**-tietolähteestä.
 
-    ![Model to learn parameterized calls -tietomallin tiedot muodon suunnittelusivulla](media/er-calculated-field-type-03.png)
+    ![Model to learn parameterized calls -tietomallin tiedot muodon suunnittelusivulla.](media/er-calculated-field-type-03.png)
 
 6. Laajenna **Model**.**Data2**.
 7. Laajenna **Model**.**Data2.Summary2**.
    
     **Model**.**Data2.Summary2**-tietolähde on määritetty ryhmälle, jonka **Model.Data.Summary**-tietolähdetapahtuma erittelee verotustason mukaan (joka saadaan lasketusta **Model.Data.Summary.Level**-kentästä) ja laskee koosteet.
 
-    ![Model.Data2.Summary2-tietolähteen tiedot muodon suunnittelusivulla](media/er-calculated-field-type-04.png)
+    ![Model.Data2.Summary2-tietolähteen tiedot muodon suunnittelusivulla.](media/er-calculated-field-type-04.png)
 
 8. Tarkista lasketut **Model**.**Data2.Level1**, **Model**.**Data2.Level2**- ja **Model**.**Data2.Level3**-kentät. **Model**.**Data2.Summary2**-tietueluettelo suodatetaan näiden laskettujen kenttien avulla palauttamaan vain tiettyä verotustasoa vastaavat tietueet.
 9. Sulje **Muodon suunnittelija** -sivu.
@@ -155,7 +155,7 @@ Voit parantaa annettua muotoa lisäämällä yhden lasketun kentän suodattamaan
 
     Yhdelle lasketulle kentälle voi määrittää enintään 8 parametria.
 
-    ![Parametrin tietolähdeluettelo](media/er-calculated-field-type-05.png)
+    ![Parametrin tietolähdeluettelo.](media/er-calculated-field-type-05.png)
 
 5. Valitse **OK**.
 
@@ -165,7 +165,7 @@ Tämän parametrin lisääminen määrittää ehdon, joka on oltava käytössä,
 
    Määritetty parametri on käytettävissä tämän lasketun kentän tietolähdeluettelossa. Voit lisätä parametrin määritettyyn lausekkeeseen valitsemalla **Lisää tietolähde**.
 
-   ![Tietolähdekentät](media/er-calculated-field-type-06.png)
+   ![Tietolähdekentät.](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Lasketun kentän lisäämän lausekkeen määrittäminen
 
@@ -181,7 +181,7 @@ Tämän parametrin lisääminen määrittää ehdon, joka on oltava käytössä,
 
 5. Valitse **Tallenna**.
 
-    ![Tietolähdekentän tiedot](media/er-calculated-field-type-07.png)
+    ![Tietolähdekentän tiedot.](media/er-calculated-field-type-07.png)
 
 6. Sulje **Reseptien suunnittelu** -sivu.
 
@@ -191,7 +191,7 @@ Tämän parametrin lisääminen määrittää ehdon, joka on oltava käytössä,
 
 **Reseptien suunnittelu** -sivulla oleva määritetty parametrisoitu laskettu **Tasot**-kenttä edellyttää **Merkkijono**-argumenttia.
 
-![Laajennettu lasketun kentän tasoluettelo](media/er-calculated-field-type-08.png)
+![Laajennettu lasketun kentän tasoluettelo.](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Muodon elementtien sitominen määritetyn lasketun kentän avulla
 
@@ -220,7 +220,7 @@ Parametrisoidun lasketun kentän toistuvia kutsuja ei tueta.
 
 Voit valita **Muokkaa reseptiä** ja muuta valitussa sidonnassa olevan parametrisoidun lasketun kentän oletusarvoista kohdistusta. Jos tämä argumentti puuttuu, seurauksena voi olla suorituksenaikaisia virheitä; käyttäjille ilmoitetaan tällaisesta tilanteesta, kun nykyinen muoto vahvistetaan.
 
-![Vahvistuksen varoitusilmoitus](media/er-calculated-field-type-10.png)
+![Vahvistuksen varoitusilmoitus.](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Tietueen palauttavan parametrisoidun lasketun kentän luominen
 Kun parametrisoitu laskettu kenttä palauttaa tietueen, tämän tietueen yksittäisten kenttien tukemista muotoelementteihin on tuettava. Tällaisissa tapauksissa ei ole pääsidontaa, joka sisältää parametrisoidun lasketun kentän kutsuvan argumentin arvon. Tämä arvo on määritettävä yksittäisen tietuen kentässä.
@@ -272,7 +272,7 @@ Kun parametrisoitu laskettu kenttä palauttaa tietueen, tämän tietueen yksitt�
 8. Valitse **Muokkaa kaavaa**.
 9. Muuta lauseke muotoon **Model.Data2.LevelRecord("Ei mitään").aggregated.Base**.
 
-![Päivitetty lauseke](media/er-calculated-field-type-11.png)
+![Päivitetty lauseke.](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Käyttämättömien laskettujen kenttien poistaminen
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5bf8ce93d2c804325305672d79b633210a790cf0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814677"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347659"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän suunnitteleminen
 
@@ -32,7 +32,7 @@ Kunkin tuotannon käyttöliittymän käyttämän määrityksen käyttöliittymä
 
 Kukin välilehti on jaettu neljään osaan, kuten seuraavassa kuvassa.
 
-![Välilehden asettelu](media/pfe-tab-layout.png "Välilehden asettelu")
+![Välilehden asettelu.](media/pfe-tab-layout.png "Välilehden asettelu")
 
 Kuvassa näkyy seuraavat elementit:
 
@@ -47,7 +47,7 @@ Uusi välilehti luodaan ja määritetään seuraavasti:
 
 1. Avaa **Suunnittele välilehtiä** -sivu valitsemalla toimintoruudussa **Suunnittele välilehtiä**.
 
-    ![Suunnittele välilehtiä -sivu](media/pfe-design-tabs.png "Suunnittele välilehtiä -sivu")
+    ![Suunnittele välilehtiä -sivu.](media/pfe-design-tabs.png "Suunnittele välilehtiä -sivu")
 
 1. Valitse toimintoruudussa **Uusi**.
 
@@ -67,7 +67,7 @@ Kun kaikki tarvittavat välilehdet on suunniteltu, voit liittää ne määrityks
 
 1. Valitse **Tuotannonhallinta \> Asetukset \> Tuotannonohjaus \> Määritä tuotantoliittymä**.
 
-    ![Määritä tuotannon suoritus](media/pfe-config-prod-floor-execution.png "Määritä tuotannon suoritus")
+    ![Määritä tuotannon suoritus.](media/pfe-config-prod-floor-execution.png "Määritä tuotannon suoritus")
 
 1. Valitse **Välilehtivalinta**-pikavälilehdessä **Lisää**.
 

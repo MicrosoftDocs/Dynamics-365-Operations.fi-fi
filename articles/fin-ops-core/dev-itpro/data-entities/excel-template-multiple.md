@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 001795914c683a6182b885b79be7e225ad80e5cd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fcf9f45eb7f3ef111d66c2c30ec529269b0685b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750561"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352909"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Useita laskentataulukoita sisältävät tietomallit
 
@@ -32,13 +32,13 @@ Esimerkkinä voisi olla tilanne, jossa yhdessä Excel-tiedostossa on **Toimipaik
 
 Jos lisäät toisen yksikön, **Varastot**, lähtemättä **Lisää tiedosto** -lomakkeesta, laskentataulukkohaku antaa valita **Varasto**-laskentataulukon ilman, että tiedosto on ladattava uudelleen. Uusi tiedosto tarvitsisi ladata vain, jos **Varastot**-tiedot olisivat eri tiedostossa.
 
-![Useita laskentataulukoita](./media/AddFileMultipleWorkSheets.png)
+![Useita laskentataulukoita.](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Laskentataulukon korjaaminen yksikön yhdistämismääritykseen
 
 Laskentataulukon yhdistämismääritys tuontityön tietoyksikköön voidaan korjata ruudukossa. Ruudukon **Laskentataulukko**-sarake sisältää yhdistetyn tiedoston laskentataulukot. Voit valita toisen laskentataulukon avattavasta valikosta. Jos valittu laskentataulukko on jo yhdistetty yksikköön tietoprojektissa, järjestelmä pyytää vahvistamaan muutoksen. Kaikki yhdistämismääritykset kannattaa korjata ruudukossa.
 
-![Laskentataulukon yhdistämispäivityksen päivitys](./media/UpdateMappings.png)
+![Laskentataulukon yhdistämismäärityksen päivitys.](./media/UpdateMappings.png)
 
 ## <a name="re-map-to-a-new-file"></a>Uudelleenyhdistäminen uuteen tiedostoon
 

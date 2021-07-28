@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023196"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358383"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Tallenna TDS-huojennustodistuksen numerot
 
@@ -33,7 +33,7 @@ Tässä aiheessa kuvataan, miten toimittajille myönnetyt Vero vähennettynä l�
 2. Valitse **Verotyyppi**-kentässä **TDS**, jos haluat tallentaa huojennustodistukset TDS-verotyypille.
 3. Luo rivi valitsemalla **Yhteenveto**-välilehdessä **Alt+N**.
 
-    [![Uuden rivin otsikko](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Uuden rivin otsikko.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. Valitse **Ennakonpidätyskoodi**-kentässä TDS-verokoodi, jota varten toimittajan huojennustodistukset on myönnetty. **Ennakonpidätyskoodin nimi** -kentässä näkyy TDS-verokoodin nimi.
 5. Määritä **Päivämäärästä**- ja **Päivämäärään**-kenttiin sen huojennustodistuksen voimassaolokausi, joka laskee toimittajan TDS:n huojennuksen perusteella TDS-verokoodin avulla.
@@ -50,6 +50,6 @@ Tässä aiheessa kuvataan, miten toimittajille myönnetyt Vero vähennettynä l�
 
 11. Kirjoita **Todistus**-kenttään TDS-huojennustodistuksen numero.
 
-    [![Sertifikaatti-pikavälilehti](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Todistus-pikavälilehti.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Sulje sivu.

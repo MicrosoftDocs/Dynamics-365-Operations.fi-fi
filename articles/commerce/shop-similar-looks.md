@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795378"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357759"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Vastaavien tuotteiden ostosuositusten ottaminen käyttöön
 
@@ -68,7 +68,7 @@ Jos haluat ottaa käyttöön "Osta samankaltaisia tyylejä" -suositukset-toiminn
 
 Seuraavassa kuvassa näkyy **Osta samankaltaisia tyylejä** -ominaisuus, joka sijaitsee Commerce Headquarters -sovelluksen **toimintojen hallinta** -sivulla.
 
-![Commerce headquartersin toimintojen hallinta -sivun Osta samankaltaisia tyylejä -ominaisuus](./media/enableshopsimilarlooks.png)
+![Commerce headquartersin Ominaisuuksien hallinta -sivun Osta samankaltaisia tyylejä -ominaisuus.](./media/enableshopsimilarlooks.png)
 
 Kun edeltävät tehtävät on suoritettu, POS-päätteisiin päivittyy automaattisesti asiayhteyteen liittyvä **Osta samankaltaisia tuotteita** - paneeli. Kun valitset **Näytä lisää**, POS-päätteen käyttäjät voidaan viedä erityiseen "Osta samankaltaisia tyylejä" -sivulle, jota voidaan suodattaa edelleen.
 
@@ -88,7 +88,7 @@ Noudata seuraavia ohjeita **Osta samankaltaisia tyylejä** -painikkeen lisäämi
 
 Seuraavassa kuvassa on **Ota käyttöön Osta samankaltaisia tyylejä -linkki** -valintaruutu ja **Osta samankaltaisia lookkeja** -painike esimerkiksi PDP:n sivustomuodostimessa.
 
-![Ota käyttöön Osta samankaltaisia tyylejä -linkki -valintaruutu ja Osta samanlaisia lookkeja -painike PDP:n sivustomuodostimessa](./media/SSLecomtooling.png)
+![Ota käyttöön Osta samankaltaisia tyylejä -linkin valintaruutu ja Osta samanlaisia tyylejä -painike tuotetietosivulla sivuston luontiohjelmassa.](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

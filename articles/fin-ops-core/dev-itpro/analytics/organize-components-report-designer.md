@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb3e09ad849b250ed3f1d7aec910b44d591cb88e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e1672ee1777150a7f78c03d07dc79df118a3632f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751629"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347873"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Järjestä Report Designerin raporttiosat
 
@@ -47,7 +47,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 ### <a name="create-a-report-group"></a>Raporttiryhmän luonti
 
 1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2. Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit vaihtoehtoisesti napsauttaa työkalurivillä **Raporttiryhmä**-painiketta ![Raporttiryhmä](media/report-group.gif "Raporttiryhmä").
+2. Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit myös napsauttaa **Raporttiryhmä**-painiketta ![Raporttiryhmä.](media/report-group.gif "Raporttiryhmä"). työkaluriviltä.
 3. Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisissä raporttimäärityksissä** -valintaruutu. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
 4. Jos haluat luoda useita raportointivaluutan näyttäviä raportteja, valitse **Sisällytä kaikki raportointivaluutat** -valintaruutu. Voit sitten käyttää useita näkymiä valitsemalla **Valuutta**-painikkeen verkkokatseluohjelmassa, kun katsot raporttia.
 5. Valitse raporttiryhmään sisällytettävät raportit valitsemalla **Ryhmän raportit** -kentässä **Lisää**. Jos haluat valita useita raportteja **Lisää**-valintaikkunassa, pidä Ctrl-näppäintä painettuna valitessasi raportteja. Kun olet valinnut raportit, valitse **OK**.
@@ -58,7 +58,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2. Kaksoisnapsauta muokattavaa raporttiryhmää.
 3. Tee tarvittavat muutokset **Raporttiryhmä**-välilehdessä.
-4. Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikossa **Tallenna**. Vaihtoehtoisesti voi napsauttaa työkalurivillä **Tallenna**-painiketta ![Tallenna](media/save.gif "Tallenna").
+4. Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikosta **Tallenna**. Voit myös napsauttaa **Tallenna**-painiketta ![Tallenna](media/save.gif "Tallenna") työkaluriviltä.
 
 > [HUOMAUTUS] Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
 
@@ -66,7 +66,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 
 1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2. Avaa luotava raporttiryhmä.
-3. Luo raportteja napsauttamalla **Luo raportti** -painiketta ![Luo raportti](media/generate-report.gif "Luo raportti").
+3. Napsauta **Luo raportti** -painiketta ![Luo raportti.](media/generate-report.gif "Luo raportti") luodaksesi raportteja.
 
 ### <a name="delete-a-report-group"></a>Raporttiryhmän poistaminen
 

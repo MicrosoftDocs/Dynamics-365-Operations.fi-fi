@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058557"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360565"
 ---
 # <a name="payroll-integration-api-introduction"></a>Palkanlaskennan integroinnin ohjelmointirajapinnan esittely
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058557"
 
 Tässä ohjeessa kuvataan Dynamics 365 Human Resources -palkanlaskenta-integroinnin sovellusliittymää. Ohjelmointirajapinta mahdollistaa virtaviivaisen päästä päähän -integraation henkilöstöhallinnon ja kumppanuuspalkkajärjestelmien välillä. Integroitu kokemus alkaa henkilöstöhallinnosta työntekijän profiili-, palkka- ja vähennystieto- ja osallistumistiedoilla. Kun työntekijä palkataan ja tarvittavat profiilitiedot ja palkkatiedot otetaan henkilöstöhallintoon, palkanlaskentajärjestelmä ottaa käyttöön nämä tiedot, joita käytetään palkanlaskentaa käsiteltäessä. Työntekijään tehdyt tai maksutiedot päivitetään myös käytettäväksi myöhemmin maksuajoissa.
 
-![Palkanlaskennan integroinnin työnkulku](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Palkanlaskennan integroinnin työnkulku.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 Integroinnin mahdollistamiseksi Human Resourcesiin kuuluvat seuraavat komponentit:
 
@@ -60,7 +60,7 @@ Lisätietoja virtuaalitaulujen luomisesta liittymää varten on kohdassa [Datave
 
 Seuraava kaavio kuvaa suhteita API:n sisällä. Useilla tyypeillä on viiteavaimet muihin Human Resourcesin aiemmin luotuihin yksiköihin, joita ei ole kuvattu tässä. Tässä asiakirjassa on tietoja yksiköistä, jotka liittyvät erityisesti palkanlaskennan integrointiskenaarioihin. Dataverse-www-ohjelmointirajapinnassa on kuitenkin useita muita yksiköitä henkilöstöhallinnolle, jotka voivat myös olla oleellisia integrointisi kannalta. Joihinkin näistä yksiköistä viitataan viiteavainsuhteissa tai siirtymisominaisuuksissa.
 
-![Palkanlaskennan integroinnin API-tietomalli](media/hr-admin-payroll-api-data-model.png)
+[![Palkanlaskennan integroinnin API-tietomalli.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Palkanlaskennan työntekijä ja liittyvät entiteetit
 
@@ -68,7 +68,8 @@ Yksiköt:
 
 - [Palkanlaskennan työntekijä](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Palkanlaskennan työntekijän osoite](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Palkanlaskennan kiinteän kompensaation suunnitelma](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Palkanlaskennan kiinteän kompensaation suunnitelma](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Palkanlaskennan muuttava kompensaatiosuunnitelma](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Palkanlaskennan työ](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Palkanlaskennan toimi](hr-admin-integration-payroll-api-payroll-position.md)
 

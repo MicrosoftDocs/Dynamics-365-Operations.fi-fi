@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751653"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359002"
 ---
 # <a name="generate-printable-fti-forms"></a>Tulostettavien FTI-lomakkeiden luominen
 
@@ -77,7 +77,7 @@ Voit luoda FTI-lomakkeita ER-kehyksen avulla käyttämällä ER-muotoja samalla 
 3. Määritä soveltamisala valitsemalla asiakirjataso laskujen käsittelyä varten.
 4. Valitse ER-muoto määrätyn asiakirjatason mukaan
 
-![Tulostuksenhallinnan asetukset](media/FTIbyGER-PMSetting.png)
+![Tulostuksenhallinta-asetukset.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Vain ER-muodot, jotka käyttävät **FreeTextInvoice**-juuren kuvaajaa **CustomersInvoicing** -tietomallia näkyvät **Raportin muodon haku** -kentässä valitulle muodolle.
@@ -87,9 +87,9 @@ FTI-lomakkeet luodaan käyttämällä ER-muotoja samaan tapaan kuin SSRS-raporti
 
 Luodaksesi FTI-lomakkeita, voit valita laskut joko alueen tai valinnan mukaan. 
 
-![Laskuvalinta](media/FTIbyGER-InvoiceSelection.png)
+![Laskuvalinta.](media/FTIbyGER-InvoiceSelection.png)
 
-![Laskun esikatselu](media/FTIbyGER-InvoiceExcelPreview.png)
+![Laskun esikatselu.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 Kun käytät ER-muotoja tulostamalla FTI-lomakkeita tällä tavalla, käytetään oletusarvoisia ER-tiedostojen kohteita. Et voi muuttaa kohdetta. Lisätietoja ER-muotojen ER-kohteiden määrittämisestä on kohdassa [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md).
 
@@ -101,9 +101,9 @@ Voit myös luoda FTI-lomakkeita, kun lähetät FTI:n, laittamalla valinnan **Tul
 > - **Nimi:** ERFormatDestinationRuntimeMaintain
 > - **Otsikko:** Ylläpidä sähköisen raportoinnin muodon kohdetta ajon aikana
 
-![Sähköisen raportoinnin kohde](media/FTIbyGER-ERFileDestinationSetting.png)
+![Sähköisen raportoinnin kohde.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Sähköisen raportoinnin muodon kohde](media/FTIbyGER-ERFileDestinationUsage.png)
+![Sähköisen raportoinnin muodon kohde.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 ER-kehys tukee tällä hetkellä seuraavia kohteita tuotetuille asiakirjoille:
 
@@ -128,7 +128,7 @@ Voit ladata esimerkkejä ER-kokoonpanoista käytettäväksi mallina FTI-ratkaisu
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Ominaisuuksia, jotka ovat käytössä ER-esimerkkimuodossa
 ER-formaatin näytteessä Excel-tiedostoa käytetään mallina FTI-lomakkeiden luomiseen.
 
-![Muodon suunnittelija](media/FTIbyGER-ERFormat.png)
+![Muodon suunnittelija.](media/FTIbyGER-ERFormat.png)
 
 Tällä hetkellä tämä ER-muoto tukee seuraavia ominaisuuksia luoda FTI-lomakkeita:
 
@@ -179,7 +179,7 @@ Luotujen laskujen lomakkeen lisäksi Giron rahansiirtolomakkeita voidaan tuottaa
 - Sellaiselle oikeushenkilölle, joka käyttää maata/aluekonttoria Suomelle ja jolla on vähintään yksi pankkitili, joka on merkitty nimellä **Giro-tili** ja **Pankkikoodi**. 
 - Laskusta, joka on merkitty vaaditulla tavalla **suomalainen** liittyvä maksuliike.
 
-![Tilisiirtolomake](media/FTIbyGER-GiroSlip.PNG)
+![Tilisiirtolomake.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > Esimerkki ER-muodosta on konfiguroitu valinnaisesti generoimaan Giron rahansiirtoliput erillisessä laskentataulukossa.
@@ -194,7 +194,7 @@ Käytä seuraavia elementtejä ER-muotoa sähköpostiosoitteiden määrittämise
 - Sähköpostiaiheen tekstiä voi käyttää seuraavan ER-lausekkeen kautta: **Emailing.TxtToUse.Subject**.
 - Sähköpostielimen tekstiä voi käyttää seuraavan ER-lausekkeen kautta: **Emailing.TxtToUse.Body**.
 
-![Kohdeasetukset](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Kohdeasetukset.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Sähköpostin aiheen ja kehon oletusteksti on määritetty ER-mallinäytteessä. Kieli määräytyy lomakkeen etiketeistä. Tätä oletustekstiä käytetään sähköpostiviesteissä, jos muokattua organisaation sähköpostimallia, jolla on ennalta määritetty **ERFTITMP**-tunnus, ei ole lisätty..
 
@@ -203,9 +203,9 @@ Sähköpostin aiheen ja kehon oletusteksti on määritetty ER-mallinäytteessä.
 
 Jos organisaation sähköpostimalli on ennalta määritetty **ERFTITMP** ID-tunnus on lisätty oikeushenkilölle, jolle käsittelyt laskut on, sähköpostiviestin mallia ja kehon tekstiä käytetään sähköpostin luomiseen. 
 
-![Organisaation sähköpostimallit](media/FTIbyGER-EmailTemplate.png)
+![Organisaation sähköpostimallit.](media/FTIbyGER-EmailTemplate.png)
 
-![Lataa sähköpostimalli](media/FTIbyGER-EmailTemplateBody.png)
+![Lataa sähköpostimalli.](media/FTIbyGER-EmailTemplateBody.png)
 
 **Emailing.TxtToUse.Subject**-näytteen ER-muotoinen ER-lauseke on määritetty korvaamaan paikkamerkin %1 mahdolliset esiintymät käsittelylaskun tunnuksella.
 
@@ -218,7 +218,7 @@ Jos organisaation sähköpostimalli on ennalta määritetty **ERFTITMP** ID-tunn
 - %5 korvataan yrityksen yhteyshenkilön tittelillä.
 - %6 korvataan yrityksen yhteyshenkilön sähköpostiosoitteella.
 
-![Sähköposti](media/FTIbyGER-Email.PNG)
+![Sähköpostiosoite.](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)

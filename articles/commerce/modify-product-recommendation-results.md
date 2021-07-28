@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796967"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346665"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-pohjaisten tuotesuositustulosten muokkaaminen
 
@@ -51,7 +51,7 @@ Liiketoiminnasta riippuen Myydyimmät-luettelossa voi olla eri tulokset kuin Suo
 
 Myydyimmät-tuoteluettelossa on yksi parametri, jonka voi muuttaa:
 
-![Esimerkki Myydyimmät-luettelon oletusparametrista](./media/examplebestsellingparameters.PNG)
+![Esimerkki Myydyimmät-luettelon oletusparametrista.](./media/examplebestsellingparameters.PNG)
 
 1. **Sisällytä myynti X päivän ajalta** - Myyntitapahtumia, jotka ovat tapahtuneet tiettyjä päiviä ennen kuluvaa päivää, voidaan käyttää tuotteiden tilaamisessa. Yllä oleva oletusarvo viittaa siihen, että kaikkia edellisten 30 päivän aikaisia tuoteostoja voidaan käyttää tuotteen sijoituksen määrittämisessä myydyimpien tuotteiden luetteloa varten. 
 
@@ -65,13 +65,13 @@ Myydyimmät-tuoteluettelossa on yksi parametri, jonka voi muuttaa:
 1.  Voit lisätä tuotteita taulukkoon valitsemalla **Lisää rivi**. 
 1.  Etsi tuotesarakkeesta tuotteen **Nimi** tai **Tuotenumero.**
 
-    ![Esimerkki tuotteen etsimisestä uudesta tuoteluettelosta](./media/examplenewlistconfiguration1.png)
+    ![Esimerkki tuotteen etsimisestä uudesta tuoteluettelosta.](./media/examplenewlistconfiguration1.png)
 
 1.  Valitse Rivityyppi-sarakkeesta jompikumpi seuraavista vaihtoehdoista:
     -   **Sisällytä** – Pakottaa tuotteen luettelon alkuun
     -   **Jätä pois** – Estää tuotetta näkymästä luettelossa
     
-    ![Esimerkki tuotteen sisällytysluettelosta tai poisjättämisestä uuden tuoteluettelon avulla](./media/examplenewlistconfiguration2.png)
+    ![Esimerkki tuotteen sisällytysluettelosta tai poisjättämisestä uuden tuoteluettelon avulla.](./media/examplenewlistconfiguration2.png)
 
 1.  Jos **näyttöjärjestystä** muutetaan, **Sisällytä**-merkinnän saaneiden tuotteiden järjestys luettelossa muuttuu.
     - Jos kahdella tuotteilla on sama **näyttöjärjestyksen** arvo, näiden kahden tuloksen lopullinen järjestys voi poiketa taustasovelluksen järjestyksestä.
@@ -87,11 +87,11 @@ Ostetaan usein yhdessä- tai Ihmiset pitävät myös -luetteloiden kontekstissa 
 Seuraavia ohjeita noudattamalla voit lisätä alkutuotteen tuloksia tai poistaa niitä:
 1.  Valitse **Alkutuote**. 
 1.  Valitse **Tuote**-sarakkeessa ominaisuutta **nimellä** tai **tuotenumerolla.**
-![Esimerkki tuotteen hakemisesta Ostetaan usein yhdessä -luettelosta](./media/exampleFBTlistconfiguration1.png)
+![Esimerkki tuotteen hakemisesta Ostetaan usein yhdessä -luettelosta.](./media/exampleFBTlistconfiguration1.png)
 1. Valitse **Rivityyppi**-sarakkeesta jompikumpi seuraavista vaihtoehdoista:
     - **Sisällytä** – Pakottaa tuotteen luettelon alkuun
     - **Jätä pois** – Estää tuotetta näkymästä luettelossa     
-![Esimerkki tuotteen sisällyttämisestä Ostetaan usein yhdessä -luetteloon tai sen sulkemisesta pois luettelosta](./media/exampleFBTlistconfiguration2.png)
+![Esimerkki tuotteen sisällyttämisestä Ostetaan usein yhdessä -luetteloon tai sen sulkemisesta pois luettelosta.](./media/exampleFBTlistconfiguration2.png)
 1.  Voit poistaa tuotteita taulukosta valitsemalla poistettavan rivin ja valitsemalla sitten Poista.
 
 

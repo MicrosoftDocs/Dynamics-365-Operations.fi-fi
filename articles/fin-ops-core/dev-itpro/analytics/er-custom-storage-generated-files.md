@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894145"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348137"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
 
@@ -41,7 +41,7 @@ Kaikki tämän aiheen tehtävät voidaan suorittaa **USMF**-yrityksessä.
 
 Voit luoda asiakirjat, jotka aiot lisätä mukautettuun varastosijaintiin [tuomalla](er-download-configurations-global-repo.md) **Kiinteiden resurssien eteenpäin siirtyvän** ER-muotomäärityksen nykyiseen topologiaan.
 
-![Konfiguraatiosäilön sivu](./media/er-custom-storage-generated-files-import-format.png)
+![Konfiguraatiosäilön sivu.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Suorita Kiinteiden resurssien eteenpäin siirtyvä raportti
 
@@ -52,7 +52,7 @@ Voit luoda asiakirjat, jotka aiot lisätä mukautettuun varastosijaintiin [tuoma
 5. Valitse **Muodon yhdistämismääritys**-kentässä **Kiinteiden resurssien eteenpäin siirtyvä**.
 6. Valitse **OK**.
 
-![Ajonaikainen dialogiruutu Kiinteiden resurssien eteenpäin siirtyvälle raportille](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Ajonaikainen dialogiruutu Kiinteiden resurssien eteenpäin siirtyvä -raportille.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 Tarkista Microsoft Excelissä asiakirja, joka on luotu ja ladattavissa. Tämä on [oletusarvoinen toimintatapa](electronic-reporting-destinations.md#default-behavior) ER-muodolle, jolle ei ole määritetty [kohteita](electronic-reporting-destinations.md) ja jota suoritetaan vuorovaikutteisessa tilassa.
 

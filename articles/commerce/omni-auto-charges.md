@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022704"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353057"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanavan automaattiset etukäteisveloitukset
 
@@ -43,7 +43,7 @@ Edistyneen automaattisen kuluominaisuuden ansiosta myyntipistekäyttäjät saava
 
 Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen parametrit** -sivulla **Asiakastilaukset**-välilehti. Määritä **Kulut**-pikavälilehdessä **Käytä edistyneitä automaattisia kuluja** -asetukseksi **Kyllä**.
 
-![Edistyneet automaattiset kulut -parametri](media/advancedchargesparameter.png)
+![Edistyneet automaattiset kulut -parametri.](media/advancedchargesparameter.png)
 
 Kun edistyneet automaattiset kulut on otettu käyttöön, käyttäjiä ei enää pyydetä lisäämään lähetyskulua manuaalisesti kassapäätteessä Lähetä kaikille- tai Lähetä valituilla -asiakastilausta luotaessa. Myyntipisteen tilauskulut lasketaan ja lisätään järjestelmällisesti myyntipistetapahtumaan (jos luotavan tilauksen ehtoa vastaava automaattisten kulujen taulukko löytyy). Käyttäjät voivat lisätä tai ylläpitää otsikko- tai rivitason kuluja myös manuaalisesti juuri lisättyjen myyntipisteen toimintojen kautta. Tämä ominaisuus voidaan lisätä myyntipisteen näyttöasetteluihin.
 
@@ -86,7 +86,7 @@ Määritä kaksi erilaista otsikkotason automaattista kulua. Määritä toinen m
 
 Määritä maakuljetuksen toimituskuluiksi **Automaattiset kulut** -sivun riviosassa kulu, jota käytetään, kun tilauksen arvo on 0,01–100 dollaria. Tässä tapauksessa toimituskuluksi määritetään 10,00 dollaria. Luo toinen kulurivi ilmaisemaan, että tilauksilla, joiden arvo on yli 100,01 dollaria, ei ole kuluja.
 
-![Esimerkki kahdesta automaattisesta veloitustaulukosta](media/headerchargesexample.png)
+![Esimerkki kahdesta automaattisesta veloitustaulukosta.](media/headerchargesexample.png)
 
 Määritä lentorahdin toimituskuluiksi automaattisten kulujen lomakkeessa 20 dollaria. Tätä kulua käytetään kaikissa tilauksissa (joiden arvo 0,01–9 999 999 dollaria).
 
@@ -116,7 +116,7 @@ Valitse **Myyntireskontra \> Kulujen määritys \> Automaattiset kulut**.
 
 Valitse avattavassa **Taso**-valikossa **Rivi** ja uusi automaattisten kulujen tietue, joka koskee kaikkia asiakkaita sekä tiettyä tuotetta tai tuoteryhmää, jossa asennusmaksut veloitetaan.
 
-![Esimerkki yhden rivitason automaattisesta kulut-taulusta](media/linechargesexample.png)
+![Esimerkki yhden rivitason automaattisesta kulut-taulusta.](media/linechargesexample.png)
 
 Lähetä veloitukset Commercen asteikkoyksikköön/kanavatietokantaan, jotta myyntipiste voi käyttää niitä suorittamalla **1040 jakeluaikataulu** -työn.
 
@@ -136,7 +136,7 @@ Jälleenmyyjä tekee poikkeuksen tyypillisiin prosesseihin tarjoamalla tuotteide
 
 Varmista, että tässä skenaariossa käytettävä kulukoodi on määritetty oikein, valitsemalla **Myyntireskontra \> Kulujen määritys \> Kulut** ja määritä skenaarioon sopiva kulukoodi.
 
-![Esimerkki kuluista](media/chargesexample.png)
+![Esimerkki kuluista.](media/chargesexample.png)
 
 Jo kulu on toimitukseen liittyvä kulu, jota käytetään toimitusalennuksissa tai -kampanjoissa, valitse kulukoodin **Toimitusmaksu**-asetukseksi **Kyllä**. Jos tämä kulu voidaan palauttaa järjestelmällisesti, kun palautustapahtumaa käsitellään myyntipistesovelluksessa, valitse **Palautettava**-asetukseksi **Kyllä**. **Palautettava**-merkintää käytetään vain, kun **Käytä edistyneitä automaattisia kuluja** -parametrin asetuksena on **Kyllä**.
 

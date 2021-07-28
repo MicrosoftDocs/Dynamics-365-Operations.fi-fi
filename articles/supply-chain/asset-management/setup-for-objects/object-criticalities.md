@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2da2d58b7f98fad80d0ea63bf4445ec4d08163
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: baf2c279a656bd67a0850ef9178e1bc984bb9b8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808349"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351486"
 ---
 # <a name="asset-criticality-types"></a>Resurssin kriittisyystyypit
 
@@ -40,7 +40,7 @@ Voit määrittää kriittisyyden määrittämällä ensin kriittisyystyypit, joi
 4. Kirjoita **Nimi**-kenttään kriittisyystyypin nimi.
 5. Syötä **Kerroin**-kenttään kerroin. Tätä kerrointa käytetään työtilausten ajoittamisen laskennassa, kun määritetään käytettävä kriittisyystietue. (Tietuetta, jonka kerroin on korkein, käytetään aina.) Tämä asetus on merkityksellinen, jos, kuten seuraavasta kuvasta näkyy, luodaan kriittisyysrivejä, joilla on sama kriittisyysarvo.
 
-    ![Kriittisyyden tyyppisivu](media/23-setup-for-objects.png)
+    ![Kriittisyystyypit-sivu.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Määritetä resurssin kriittisyydet.
 

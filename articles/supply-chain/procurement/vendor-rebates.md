@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822464"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344217"
 ---
 # <a name="vendor-rebates"></a>Toimittajan ostohyvitykset
 
@@ -53,7 +53,7 @@ Toimittajan ostohyvityssopimus on sopimustietue, joka määrittää toimittajan 
 
 Avaa **Toimittajan ostohyvityssopimukset** -sivu ja valitse **Hankinta** &gt; **Toimittajan ostohyvitykset** &gt; **Ostohyvityssopimukset**.
 
-![Ostosopimus](media/purchase-agreement.PNG)
+![Ostosopimus.](media/purchase-agreement.PNG)
 
 **Toimittajan ostohyvityssopimukset** -sivulla voit tarkastella tietoja toimittajasopimuksessa sovituista ehdoista.
 
@@ -129,7 +129,7 @@ Kun saatavat on hyväksytty, ne voidaan käsitellä ostoreskontrassa (A/P). Hyvi
 
     Vaatimuksen summalle kirjataan Ostohyvityksen jaksotuskirjauskansio. Kirjaus veloittaa kertyneiden toimittajan ostohyvitysten saatavatililtä odotetun toimittajan maksun ja siirtää kertyneiden toimittajan ostohyvityssaatavien välitilille odotetun voiton.
 
-    ![Viesti](media/message.png)
+    ![Sanoma.](media/message.png)
 
 5. Valitse ostohyvitysluettelossa rivi ja valitse sitten toimintoruudussa **Ostohyvitystapahtumat**, jos haluat tarkastella ja siirtyä tämän ostohyvityksen kertymäkirjauksen kirjauskansion eränumeroon.
 

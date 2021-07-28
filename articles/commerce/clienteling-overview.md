@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937009"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352685"
 ---
 # <a name="clienteling-overview"></a>Asiakashallinnan yleiskuvaus
 
@@ -68,7 +70,7 @@ Ota asiakashallintatoiminnot käyttöön ympäristössä seuraavien ohjeiden muk
 
 1. Suodata toimintoja **Toimintojen hallinta** -työtilassa **Vähittäismyynti ja kauppa** -moduulin perusteella.
 
-    ![Asiakashallinta Commerce-moduulin toimintoluettelossa](./media/Enable_clienteling.png "Asiakashallinta Vähittäismyynti ja kauppa -moduulin toimintoluettelossa")
+    ![Asiakashallinta Commerce-moduulin toimintoluettelossa.](./media/Enable_clienteling.png "Asiakashallinta Vähittäismyynti ja kauppa -moduulin toimintoluettelossa")
 
 2. Ota **Asiakashallinta**-toiminto käyttöön valitsemalla **Ota käyttöön nyt**.
 3. Valitse **Commercen parametrit** -sivun **Numerosarja**-välilehdessä **Asiakaskirjan tunniste** -rivi. Valitse sitten numerosarja **Numerosarjan koodi** -kentässä. Järjestelmä määrittää asiakaskirjojen tunnuksen tämän numerosarjan perusteella.
@@ -83,7 +85,7 @@ Ota asiakashallintatoiminnot käyttöön ympäristössä seuraavien ohjeiden muk
 
 6. Valitse **Commercen parametrit** -sivun **Asiakashallinta**-välilehden **Asiakaskirjan määriteryhmä** -kentässä juuri luotu määriteryhmä.
 
-    ![Asiakaskirjan määriteryhmä valittuna](./media/Client%20book%20attributes.png "Asiakaskirjan määriteryhmä valittuna")
+    ![Asiakaskirjan määriteryhmä valittuna.](./media/Client%20book%20attributes.png "Asiakaskirjan määriteryhmä valittuna")
 
 7. Jos haluat tallentaa myyntipisteessä tapahtuvia tehtäviä, määritä tehtävätyypit **Tehtävätyypit**-sivulla (**Retail ja Commerce \> Asiakkaat \> Tehtävätyypit**).
 
@@ -95,7 +97,7 @@ Ota asiakashallintatoiminnot käyttöön ympäristössä seuraavien ohjeiden muk
 
 Kun olet suorittanut tämän menettelyn, myyjät voivat avata asiakastietosivun myyntipisteessä ja lisätä asiakkaita omaan asiakaskirjaansa, tarkastella ja tallentaa asiakkaita koskevia tehtäviä ja huomautuksia sekä tehdä kohdistuksia asiakkaille suodattamalla asiakaskirjaa asiakkaan ja asiakaskirjan määritteillä. Seuraavassa kuvassa on esimerkki asiakaskirjassa.
 
-![Esimerkki asiakaskirjasta](./media/client_book.png "Esimerkki asiakaskirjasta")
+![Esimerkki asiakaskirjasta.](./media/client_book.png "Esimerkki asiakaskirjasta")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Customer Insightsin ja Commercen integroinnin ottaminen käyttöön
 

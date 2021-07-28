@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051734"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356557"
 ---
 # <a name="understand-date-and-time-fields"></a>Ymmärrä päivämäärä- ja kellonaikakenttiä
 
@@ -36,13 +36,13 @@ ms.locfileid: "6051734"
 
 Kun tiedot näytetään **Päivämäärä ja aika** -kentässä, henkilöstöhallinto mukauttaa päivämäärää ja aikaa **Käyttäjän asetukset** -lomakkeessa (**Yleinen > Asetukset > Käyttäjän asetukset**) määritettyjen käyttäjän aikavyöhykkeen perusteella. Kenttään annetut päivämäärä- ja aikatiedot eivät välttämättä ole samat kuin tietokantaan kirjoitettavat tiedot.
 
-[![Käyttäjän asetukset -lomake](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Käyttäjän asetukset -lomake.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Tietoja lomakkeiden Päivämäärä ja aika -kentistä 
 
 Näytössä näkyvät **Päivämäärä ja aika** -tiedot eivät ole samoja kuin tietokantaan tallennetut tiedot, jos käyttäjän vyöhykkeeksi ei ole määritetty UTC (Coordinated Universal Time) -aika. **Päivämäärä ja aika** -kenttien tiedot tallennetaan aina UTC-aikana.
 
-[![Työntekijä-lomake – UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Työntekijä-lomakkeen UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Tietoja tietokannan Päivämäärä ja aika -kentistä 
 
@@ -52,7 +52,7 @@ Edellä olevassa esimerkissä aloitusaika on ajankohta, ei tietty päivämäär�
   
 Jäljempänä olevassa esimerkissä työntekijän 000724 työsuhde aktivoituu samaan aikaan aikavyöhykkeestä riippumatta. Työntekijä aktivoituu 04/30/2019 GMT-aikavyöhykkeellä, mikä on sama kuin 05/01/2019 GMT+12:00 -aikavyöhykkeellä. Kumpikin viittaa samaan ajankohtaan eikä tiettyyn päivämäärään. 
 
-[![Työntekijä-lomake – GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Työntekijä-lomakkeen GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Data Management Frameworkin, Excelin, Dataversen ja Power BI:n päivämäärä ja aikatiedot 
 
@@ -68,27 +68,27 @@ Kun tietojen katsomiseen ja luomiseen käytetään ulkoisia lähteitä, kuten DM
 
 **Henkilöstöhallinto, kun käyttäjän aikavyöhykkeeksi on määritetty UTC**
 
-[![Työntekijä-lomake, jonka ajaksi on määritetty UTC](./media/worker-form3.png)](./media/worker-form3.png)
+[![Työntekijä-lomake, jonka ajaksi on määritetty UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Henkilöstöhallinto, kun käyttäjän aikavyöhykkeeksi on määritetty GMT +12:00** 
 
-[![Työntekijä-lomake, jonka ajaksi on määritetty GMT](./media/worker-form4.png)](./media/worker-form4.png)
+[![Työntekijä-lomake, jonka ajaksi on määritetty GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel ODatan kautta**
 
-[![Excel ODatan kautta](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel ODatan kautta.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF-vaiheet**
 
-[![DMF-vaiheet](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF-vaiheet.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF-vienti**
 
-[![DMF-vienti](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-vienti.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel Dataversen kautta**
 
-[![Excel Dataversen kautta](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel Dataversen kautta.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Lisätietoja
 

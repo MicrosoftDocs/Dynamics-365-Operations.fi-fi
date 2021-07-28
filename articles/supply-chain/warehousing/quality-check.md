@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838223"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358047"
 ---
 # <a name="quality-check"></a>Laaduntarkistus
 
@@ -310,7 +310,7 @@ Kun ostotilaus on luotu, se voidaan vastaanottaa käyttämällä **Ostotilausriv
 
     Näkyviin tulevalla **Laaduntarkistus**-sivulla ei ole syöttökenttiä. Se sisältää vain vahvistuksen (valintamerkin) painikkeen sivun alaosassa ja valikkopainikkeen (**≡**) sivun yläosassa. (Valikkopainiketta kutsutaan joskus neljän viivan painikkeeksi tai hampurilaispainikkeeksi.) Laaduntarkistusprosessin nopeuttamiseksi käyttäjä voi vahvistaa **Laaduntarkistus**-sivun kuormalavan läpäistyä laaduntarkistuksen.
 
-    ![Laaduntarkistus-sivu](media/quality-check.png "Laaduntarkistus-sivu")
+    ![Laaduntarkistus-sivu.](media/quality-check.png "Laaduntarkistus-sivu")
 
 1. Valitse vahvistuspainike, jos haluat hyväksyä rivin 1 kuormalavan 1 laaduntarkistuksen.
 

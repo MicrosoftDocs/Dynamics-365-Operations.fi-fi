@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356122"
 ---
 # <a name="revenue-recognition-reallocation"></a>Tuottokirjauksen uudelleenkohdistus
 
@@ -48,7 +48,7 @@ Koska uudelleenkohdistus voidaan tehdä osittain tai kokonaan laskutetulle myynt
 
 Organisaation on päätettävä, päivittääkö korjaus vain kirjanpidon vai päivittääkö se myös myyntireskontran. Tehty päätös määrittää oikean **Kirjaa laskun korjaukset myyntireskontraan** ‑asetuksen **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**). Sopiva asetus riippuu kyseessä olevasta skenaariosta. Saat lisätietoja mahdollisista skenaarioista jäljempänä tässä ohjeaiheessa olevan [Uudelleenkohdistusskenaariot](#scenarios-for-reallocation)-osan linkeistä.
 
-[![Kirjanpitoparametrit-sivun Tuottokirjaus-välilehti](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Kirjanpitoparametrit-sivun Tuottokirjaus-välilehti.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Jos **Kirjaa laskujen korjaukset myyntireskontraan** -asetuksena on **Kyllä**, uudelleenkohdistusprosessi tuottaa seuraavan tuloksen:
 
@@ -76,7 +76,7 @@ Voit siis päivittää vain kirjanpidon tai sekä kirjanpidon että myyntireskon
 
 Voit käynnistää uudelleenkohdistusprosessin valitsemalla **Uudelleenkohdista hinta uusilla tilausriveillä** missä tahansa myyntitilauksessa, joka on kohdistettava uudelleen. Vaihtoehtoisesti voit siirtyä kohtaan **Tuottokirjaus \> Kausittaiset tehtävät \> Uudelleenkohdista hinta uusilla tilausriveillä** ja syöttää sitten tarvittavat suodattimet, kuten asiakastilin.
 
-[![Uudelleenkohdista hinta uusilla tilausriveillä ‑sivu](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Uudelleenkohdista hinta uusilla tilausriveillä ‑sivu.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 **Uudelleenkohdista hinta uusilla tilausriveillä** ‑sivun ylemmän ruudukon nimi on **Myynti**. Siinä on lueteltu asiakkaan myyntitilaukset. Valitse myyntitilaukset, jotka on kohdistettava uudelleen. Projektin myyntitilauksia ei voi valita, koska projektin myyntitilauksia ei voi kohdistaa uudelleen. Et myöskään voi valita myyntitilauksia, joilla on jo uudelleenkohdistustunnus, koska muut kuin projektin myyntitilaukset voidaan kohdistaa uudelleen vain kerran. Jos myyntitilauksella on uudelleenkohdistustunnus, toinen käyttäjä on jo merkinnyt sen uudelleenkohdistettavaksi.
 
@@ -86,11 +86,11 @@ Kun olet valinnut tarvittavat myyntitilausrivit, käytä toimintoruudun painikke
 
 - **Päivitä uudelleenkohdistus** – laske valittujen myyntitilausrivien uudet tuottohintasummat. Jos jokin rivi on poistettu tai peruutettu, uudelleenkohdistus tehdään vain valitsemillesi olemassa oleville riveille. Seuraavassa kuvassa on esimerkki myyntitilausriveistä ennen uudelleenkohdistuksen päivittämistä.
 
-    [![Myyntitilausrivit ennen uudelleenkohdistuksen päivittämistä](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Myyntitilausrivit ennen uudelleenkohdistuksen päivittämistä.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     Uudet tuottohintasummat näkyvät **Rivit**-ruudukon **Uudelleenkohdistettu summa** -sarakkeessa. Tässä vaiheessa uudelleenkohdistus on käsitelty, mutta sitä ei ole vielä laskettu. Seuraavassa kuvassa on esimerkki myyntitilausriveistä uudelleenkohdistuksen päivittämisen jälkeen.
 
-    [![Myyntitilausrivit uudelleenkohdistuksen päivittämisen jälkeen](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Myyntitilausrivit uudelleenkohdistuksen päivittämisen jälkeen.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Käsittele** – käsittele tai kirjaa uudelleenkohdistetut tuottohinnat. Kun olet valinnut tämän painikkeen, uudelleenkohdistusta ei voi peruuttaa. Jos et ole valinnut **Päivitä uudelleenkohdistus** -painiketta ennen **Käsittele**-painikkeen valitsemista, uudelleenkohdistus suoritetaan automaattisesti.
 
@@ -100,7 +100,7 @@ Kun olet valinnut tarvittavat myyntitilausrivit, käytä toimintoruudun painikke
 - **Odotettu tosite** – näytä laskutetuille myyntitilausriveille luotujen kirjanpitomerkintöjen esikatselu. Jos yhtään riviä ei ole laskutettu, mitään ei näytetä. Jos et ole valinnut **Päivitä uudelleenkohdistus** -painiketta ennen **Odotettu tosite** ‑painikkeen valitsemista, uudelleenkohdistus suoritetaan automaattisesti.
 - **Tuoton uudelleenkohdistus** – avaa sivu, jossa näkyy kaikkien valittujen rivien tuottohinnan kohdistus. Et voi muuttaa sivulla olevia tietoja. Siinä näkyvät uudelleenkohdistuksessa käytetyt rivisummat.
 
-    [![Uudelleenkohdistuksessa käytetyt rivisummat](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Uudelleenkohdistuksessa käytetyt rivisummat.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Tyhjennä valitun asiakkaan tiedot** – jos uudelleenkohdistusprosessi on aloitettu, mutta se ei ole valmistunut, tyhjennä uudelleenkohdistustaulun tiedot vain valitun asiakkaan osalta. Tällainen on esimerkiksi tilanne, jossa merkitset useita myyntitilausrivejä uudelleenkohdistusta varten ja jätät sivun auki valitsematta **Käsittele**, minkä jälkeen sivu aikakatkaistaan. Tällöin myyntitilausrivit säilyvät merkittyinä eivätkä ne ole toisen käyttäjän käytettävissä uudelleenkohdistusprosessin viimeistelyä varten. Sivu saattaa jopa olla tyhjä, kun se avataan. Tässä tilanteessa voit tyhjentää käsittelemättömät myyntitilaukset **Tyhjennä valitun asiakkaan tiedot** -painikkeen avulla, jotta toinen käyttäjä voi viimeistellä uudelleenkohdistusprosessin.
 

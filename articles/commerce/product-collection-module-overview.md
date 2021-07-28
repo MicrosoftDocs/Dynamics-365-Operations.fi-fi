@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 222bb25b6851fe60f3d872e5d7431094ac916dd4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 206f0096f481fc37d05a8258535c016e2834e732
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352201"
 ---
 # <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
 
@@ -40,7 +40,7 @@ Tuotekokoelmien lähteet voivat olla seuraavien neljän tyyppisiä luetteloita:
 
 Seuraavassa kuvassa näkyvät erityyppiset tuotekokoelmat, joita käytetään sähköisen kaupankäynnin sivustossa.
 
-![Esimerkki erityyppisistä tuotekokoelmista sähköisen kaupankäynnin sivustossa](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Esimerkki erityyppisistä tuotekokoelmista sähköisen kaupankäynnin sivustossa.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Käytä aina tuotekokoelmamoduuleita samankaltaisten tuoteryhmien kanssa.

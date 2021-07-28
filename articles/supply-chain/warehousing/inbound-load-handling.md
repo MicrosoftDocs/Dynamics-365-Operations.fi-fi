@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103165"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359784"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Ostotilausten saapuvien kuormien varastokäsittely
 
@@ -30,7 +30,7 @@ Jokaisessa saapuvassa kuormassa järjestelmässä on jo oltava liittyvä myyntit
 
 Seuraavassa kuvassa näkyy tyypillinen kulku, jolla käsitellään saapuvia kuormia, joilla on ostotilausmääriä, kun ne saapuvat varastoosi.
 
-![Saapuvan kuorman käsittelyprosessi](media/inbound-process.png "Saapuvan kuorman käsittelyprosessi")
+![Saapuvan kuorman käsittelyprosessi.](media/inbound-process.png "Saapuvan kuorman käsittelyprosessi")
 
 1. **Toimittaja vahvistaa ostotilauksen.**
 
@@ -293,7 +293,7 @@ Tässä osassa luodaan mobiililaitteen valikkovaihtoehto ja lisätään se aiemm
 
     Voit jättää kaikki muut asetukset oletusarvoihinsa.
 
-    ![Mobiililaitteen valikkovaihtoehtoasetukset](media/inbound-mobile-menu-items.png "Mobiililaitteen valikkovaihtoehtoasetukset")
+    ![Mobiililaitteen valikkovaihtoehtoasetukset.](media/inbound-mobile-menu-items.png "Mobiililaitteen valikkovaihtoehtoasetukset")
 
     Lisätietoja mobiililaitteiden valikkokohteiden määrittämisestä on kohdassa [Mobiililaitteiden määrittäminen varastotyötä varten](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ Tässä menettelyssä luodaan manuaalisesti ostotilaus ja siihen liittyvä kuorm
     - **Kuorma**-pikavälilehden **Kuorman tila** -kentän arvoksi tulee _Avoin_.
     - **Kuormarivit**-osassa on yksi rivi, jolla **Määrä** -kentän arvoksi on asetettu _10_ ja **Työn luontimäärä** -kentän arvoksi on määritetty _0_ (nolla).
 
-    ![Kuorman tiedot](media/inbound-load-details.png "Kuorman tiedot")
+    ![Kuorman tiedot.](media/inbound-load-details.png "Kuorman tiedot")
 
 1. Valitse toimintoruudun **Lähetä ja vastaanota** -välilehdellä **Vahvista \> Saapuva lähetys**. Huomaa, että **Kuorman tilaksi** on vaihdettu _Toimitettu_.
 1. Merkitse **Kuorman tunnuksen** arvo muistiin, jotta voit käyttää sitä seuraavassa menettelyssä.

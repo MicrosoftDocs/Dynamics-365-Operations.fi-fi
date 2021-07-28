@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d56a23f7af7633e1761a8a7c48f71381d6f14df2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 57de382c6d363a6c1d87cf734e9aedb32d6009a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023220"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349925"
 ---
 # <a name="set-up-withholding-tax-codes-for-the-tds-tax-type"></a>Ennakonpidätyskoodien määrittäminen TDS-verotyypille
 
@@ -31,7 +31,7 @@ Tässä aiheessa kerrotaan, miten Vero vähennettynä lähteissä (TDS) -verokoo
 
 1. Siirry kohtaan **Vero \> Välilliset verot \> Ennakonpidätys \> Ennakonpidätyskoodit**.
 
-    [![Ennakonpidätyskoodit-sivu](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
+    [![Ennakonpidätyskoodit-sivu.](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
 
 2. Valitse toimintoruudusta **Uusi**, jos haluat luoda TDS:lle ennakonpidätyskoodin, ja syötä tarvittavat tiedot.
 3. Valitse **Yleinen**-pikavälilehden **Verotyyppi**-kentästä **TDS**, jos haluat luokitella verokoodin TDS-verokoodiksi.

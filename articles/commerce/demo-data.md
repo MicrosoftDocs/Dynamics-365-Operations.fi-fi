@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a3daa2286eb444d3aaad1fd29eb6be5737415a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c3670cc1f690e8b65b53beb9128554216b2a95f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801971"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350423"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS:n) ja pilvimyyntipisteen esittelytietojen näyttöasettelut
 
@@ -33,13 +33,13 @@ Tässä ohjeaiheessa on tietoja Dynamics 365 Commerce -sovelluksen myyntipisteid
 
 Commerce-demotietoihin sisältyvissä mallinäyttöasetteluissa on sisältöä, joka on optimoitu useita vähittäismyyntisegmenttejä, myymälän työntekijöiden rooleja ja laitteita varten. Yksi asettelu voi sisältää useita painikeruudukoiden asettelukokoja ja -yhdistelmiä. Näin myymälän työntekijät voiva siirtyä laitteiden ja asemien välillä. Tässä ohjeaiheessa käsitellään näiden asetteluiden välisiä eroja, asetteluiden työvaiheita ja niiden mahdollistamia yleisiä käyttökokemuksia.
 
-![Laitteiden välisten demotietojen asettelut](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Laitteiden välisten demotietojen asettelut.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Näyttöasettelun tunnuksen rakenne
 
 Retail-sovelluksen näyttöasettelut ovat kohdassa **Retail ja Commerce** \> **Kanavan asetukset** \> **Myyntipisteen asetukset** \> **Myyntipiste** \> **Näyttöasetukset**.
 
-![Näytön asettelusivu](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Näytön asettelusivu.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Näyttöasetteluiden tunnuksissa voi olla enintään 10 merkkiä. Tunnus on merkkijono, joka sisältää seuraavat kolme tietoa tässä järjestyksessä:
 
@@ -47,13 +47,13 @@ Näyttöasetteluiden tunnuksissa voi olla enintään 10 merkkiä. Tunnus on merk
 2. Asetteluversio
 3. Henkilötyyppi
 
-### <a name="company"></a>Yritys 
+### <a name="company"></a>Yhtiö
 
-| Kirje | Yritys          |
+| Kirje | Yhtiö         |
 |--------|-----------------|
 | A      | Adventure Works |
-| P      | Fabrikam:        |
-| Y      | Contoso         |
+| F      | Fabrikam        |
+| K      | Contoso         |
 
 ### <a name="layout-version"></a>Asetteluversio
 
@@ -79,7 +79,7 @@ F4MGR
 
 Seuraavassa kuvassa on esimerkki Fabrikamin myymäläpäällikön aloitusnäytöstä.
 
-![Fabrikam myymäläpäällikön aloitusnäyttö](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Fabrikamin myymäläpäällikön aloitusnäyttö.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Asettelukoot
 
@@ -108,7 +108,7 @@ Seuraavassa taulukossa ovat tavallisissa näyttöjen resoluutioissa käytettävi
 > [!TIP]
 > Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
 
-![Näyttöasettelut ja asettelun resoluutiot/koot Commerce-ohjelmassa ja myyntipisteessä](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Näyttöasettelut ja asettelun resoluutiot/koot Commercessa ja myyntipisteessä.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Yritykset ja tuotemerkit
 
@@ -133,7 +133,7 @@ Seuraavissa kuvissa ovat kolmen kuvitteellisen yrityksen aloitussivut ja tapahtu
 
 ![Adventure Worksin demotietojen tapahtumasivu.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
-### <a name="fabrikam"></a>Fabrikam:
+### <a name="fabrikam"></a>Fabrikam
 
 ![Fabrikamin demotietojen aloitussivu.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
@@ -141,7 +141,7 @@ Seuraavissa kuvissa ovat kolmen kuvitteellisen yrityksen aloitussivut ja tapahtu
 
 ### <a name="contoso"></a>Contoso
 
-![Contoso demotietojen asettelut](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Contoson demotietojen asettelut.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Käyttäjän sisäänkirjausmatriisi
 
@@ -168,7 +168,7 @@ Käyttäjien käytettävissä on erilaisia näyttöasetteluita. Näytöt voi ott
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 

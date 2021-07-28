@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051806"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359674"
 ---
 # <a name="recruit-job-candidates"></a>Ehdokkaiden työhönotto
 
@@ -61,13 +61,13 @@ Voit lisätä organisaation mahdolliset useat sijainnit, jotta pyytäjät voivat
 
 3. Syötä **Työhönottopyynnön sijainti** -kenttään sijainnin nimi.
 
-   ![Työhönottopyynnön sijainnin lisääminen](./media/hr-recruit-0a-add-location.png)
+   ![Työhönottopyynnön sijainnin lisääminen.](./media/hr-recruit-0a-add-location.png)
 
 4. Syötä **Kuvaus**-kohtaan sijainnin kuvaus.
 
 5. Valitse **Sijainti**-kohdassa **Lisää**. Jos **Uusi osoite** -ponnahdusikkuna tulee näkyviin, syötä sijainnin osoite.
 
-   ![Anna osoite](./media/hr-recruit-0b-address.png)
+   ![Anna osoite.](./media/hr-recruit-0b-address.png)
 
 6. Syötä **Yhteyshenkilön tiedot** -kohtaan sijainnin yhtyshenkilön tiedot.
 
@@ -83,11 +83,11 @@ Esimiehet voivat lähettää työhönottopyyntöjä Human Resourcesissa. Jos kä
 
 3. Valitse **Työhönottopyyntö**.
 
-   ![Työhönottopyynnön aloittaminen](./media/hr-recruit-1-request-to-recruit.png)
+   ![Työhönottopyynnön aloittaminen.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Täytä **Kuvaus**-, **Työ**- ja **Arvioitu alkamispäivämäärä** -kentät.
 
-   ![Työhönottopyynnön suorittaminen](./media/hr-recruit-2-request-to-recruit.png)
+   ![Työhönottopyynnön suorittaminen.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Valitse **Jatka**. Sijainnin työhönottopyyntö tulee näkyviin.
 
@@ -95,7 +95,7 @@ Esimiehet voivat lähettää työhönottopyyntöjä Human Resourcesissa. Jos kä
 
 7. Muuta **Työ**-kohdassa tarvittavat tiedot ja valitse **Luo tiedot työstä**.
 
-   ![Luo tiedot työstä](./media/hr-recruit-3-create-details-from-job.png)
+   ![Luo tiedot työstä.](./media/hr-recruit-3-create-details-from-job.png)
 
    Muut työhönottopyynnön kentät täytetään käyttämällä annetun työn oletustietoja.
 
@@ -103,13 +103,13 @@ Esimiehet voivat lähettää työhönottopyyntöjä Human Resourcesissa. Jos kä
 
 9. Valitse **Toimet**-kohdassa **Lisää** ja valitse tämän työhönottopyynnön toimi.
 
-   ![Toimen lisääminen](./media/hr-recruit-4-select-position.png)
+   ![Toimen lisääminen.](./media/hr-recruit-4-select-position.png)
 
 10. Valitse **Taidot**-kentässä **Lisää** ja valitse sitten taito.
 
 11. Valitse **Koulutusvaatimukset** -kohdassa **Lisää** ja valitse sitten avattavat **Koulutus**- ja **Koulutustaso**-luettelot.
 
-   ![Lisävaatimusten lisääminen](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Lisävaatimusten lisääminen.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Lisää **Kommentti**-kohtaan tarvittavat kommentit.
 
@@ -117,7 +117,7 @@ Esimiehet voivat lähettää työhönottopyyntöjä Human Resourcesissa. Jos kä
 
 14. Kun työhönottopyyntö on valmis ja haluat aloittaa työhönottoprosessin, valitse valikkorivillä **Aktivoi**.
 
-   ![Työhönottopyynnön aktivoiminen](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Työhönottopyynnön aktivoiminen.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Valitse **Tallenna**.
 
@@ -131,7 +131,7 @@ Tee seuraavasti, jos olet esimies ja haluat tarkastella omia pyyntöäsi:
 
 3. Valitse **Oman ryhmän tiedot** -kohdan **Työhönottopyynnöt**-välilehti.
 
-   ![Valitse Työhönottopyynnöt-välilehti](./media/hr-recruit-7-recruiting-requests.png)
+   ![Valitse Työhönottopyynnöt-välilehti.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Voit tarkastella tai muokata työhönottopyyntöä valitsemalla sen ruudukosta.
 
@@ -141,7 +141,7 @@ Tee seuraavasti, jos olet HR-ammattilainen ja haluat tarkastella kaikkia työhö
 
 2. Valitse **Työhönottopyynnöt**.
 
-   ![Työhönottopyyntöjen tarkasteleminen henkilöstöhallinnossa](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Työhönottopyyntöjen tarkasteleminen henkilöstöhallinnossa.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Voit tarkastella tai muokata työhönottopyyntöä valitsemalla sen ruudukosta.
 
@@ -155,7 +155,7 @@ Jos organisaatio on integroitu toiseen sovellukseen työhönottopyyntöjen halli
 
 3. Valitse **Työhönotto**-kohdassa **Ehdokkaat**.
 
-   ![Ehdokkaiden tarkasteleminen](./media/hr-recruit-9-candidates.png)
+   ![Ehdokkaiden tarkasteleminen.](./media/hr-recruit-9-candidates.png)
 
 4. Voit lisätä ehdokkaan valitsemalla **Uusi**. Jos haluat muokata aiemmin luotua ehdokasta, valitse ehdokas luettelosta ja valitse sitten **Muokkaa**. Ehdokasprofiili tulee näkyviin.
 
@@ -163,7 +163,7 @@ Jos organisaatio on integroitu toiseen sovellukseen työhönottopyyntöjen halli
 
 6. **Valitse työhönottopyyntö** -kohdassa työhönottopyyntö, johon ehdokas linkitetään. Täytä sitten soveltuvat **Arvioitu aloituspäivämäärä**-, **Työhön ottava esimies**-, **Toimi**- ja **Kuvaus**-kentät.
 
-   ![Työhönottopyynnön linkki](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Työhönottopyynnön linkki.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Täytä kaikki ne seuraavien alueiden tiedot, jotka haluat sisällyttää ehdokkaan tietueeseen:
    - **Huomautukset**
@@ -182,11 +182,11 @@ Kun olet valmis ehdokkaan työhönottoa varten, siirrä ehdokas työntekijäksi 
 
 1. Valitse ehdokkaan lomakkeesta **Työhönotto**.
 
-   ![Ehdokkaan työhönotto](./media/hr-recruit-11-hire.png)
+   ![Ehdokkaan työhönotto.](./media/hr-recruit-11-hire.png)
 
 2. Täytä kaikki kentät **Palkkaa uusi työntekijä** -lomakkeen **Tiedot**-kohdassa.
 
-   ![Uuden työntekijän tietojen syöttäminen](./media/hr-recruit-12-hire-new-worker.png)
+   ![Uuden työntekijän tietojen syöttäminen.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Tarkista **Position tiedot** -kohdan tiedot ja muuta niitä tarvittaessa.
 
@@ -203,7 +203,7 @@ Jos päätät olla ottamatta ehdokasta töihin, noudata näitä toimintoja ja po
 
 1. Valitse ehdokkaan lomakkeessa **Älä ota töihin** -kohta.
 
-   ![Ehdokkaan työhönoton peruminen](./media/hr-recruit-13-do-not-hire.png)
+   ![Ehdokkaan työhönoton peruminen.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Valitse **Syykoodi** ja lisää mahdolliset kommentit.
 
@@ -215,7 +215,7 @@ Tarvittaessa voit hylätä ehdokkaan työhönoton jälkeen. Ehdokas voi esimerki
 
 - Valitse ehdokkaan lomakkeessa **Hylkää ehdokas** -kohta.
 
-  ![Hylkää ehdokas](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Hylkää ehdokas.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Lisätietoja
 

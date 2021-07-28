@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ace62319bbfa38bcf4be7157882dd0c8989e25bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 530cb77ccbca1b6946b5a96cee4e6226ed3467e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838742"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361255"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Servicesin yleisen säilön sähköisen raportoinnin (ER) määritysten jakaminen ulkoisten organisaatioiden kanssa
 
@@ -47,7 +47,7 @@ Tarkista seuraavien ohjeiden avulla, että jaettava määritys on jo ladattu yle
 
 1. Valitse **Sähköinen raportointi** -työtilassa oman määrityspalvelun **Säilöt**.
 
-    ![Konfiguraation lähteet](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfiguraation tarjoajat.](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Valitse **Yleinen säilö** \> **Avaa**.
 3. Hae jaettava määritys. Voit tarkentaa hakua suodatinkentän avulla. Jos määritystä ei löydy yleisestä säilöstä, noudata ohjeita kohdassa [Sähköisen raportoinnin (ER) määrityksen uuden version luominen ja lataaminen](rcs-global-repo-upload.md).
@@ -61,11 +61,11 @@ Kun määritys on luotu määrityspalvelussa, voit jakaa sen suoraan ulkoisten o
 3. Valitse jaettava määritys.
 4. Valitse **Jaettu**-pikavälilehdessä **Organisaatio**.
 
-    ![Jaettu-pikavälilehti](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Jaettu-pikavälilehti.](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. Anna valintaikkunassa ulkoisen organisaation toimialueen nimi ja valitse sitten **OK**.
 
-    ![Jaa määritysversio ulkoisen organisaation kanssa -valintaikkuna](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Jaa määritysversio ulkoisen organisaation kanssa -valintaikkuna.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Määritys jaetaan ulkoisen organisaation kanssa, ja se on kyseisen organisaation käytettävissä yleisessä säilössä. Se voidaan tuoda sieltä organisaation RCS-esiintymään tai Finance and Operations -sovellusten esiintymiin.
 

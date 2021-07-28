@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936827"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346825"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisällön toimitusverkoston (CDN) tuen lisääminen
 
@@ -74,11 +74,11 @@ Voit määrittää Azure Front Door Service -palvelun taustapoolin seuraavasti.
 
 Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa sekä annettu taustan isäntänimi.
 
-![Taustapooli-valintaikkunan lisääminen](./media/CDN_BackendPool.png)
+![Taustapooli-valintaikkunan lisääminen.](./media/CDN_BackendPool.png)
 
 Seuraavassa kuvassa näkyy **Lisää taustapooli** -valintaikkuna Azure Front Door Service -palvelussa sekä kuormituksen tasauksen oletusarvot.
 
-![Taustapooli-valintaikkunan lisääminen, jatkuu](./media/CDN_BackendPool_2.png)
+![Taustapooli-valintaikkunan lisääminen, jatkuu.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Varmista, että poistat **Kuntotutukimukset**, kun määrität omaa Azure Front Door -palvelua Commercelle.
@@ -107,13 +107,13 @@ Jos toimialueesi on uusi, eikä se ole aiemmin määritetty julkaistu toimialue,
 
 Seuraavassa kuvassa näkyy **CNAME-määritys**-valintaikkuna Azure Front Door Service -palvelussa.
 
-![CNAME-määritys-valintaikkuna](./media/CNAME_Configuration.png)
+![CNAME-määritys-valintaikkuna.](./media/CNAME_Configuration.png)
 
 Voit käyttää Azure Front Door Service -palvelua varmenteen hallinnassa tai voit käyttää omaa varmennetta mukautetussa toimialueessa.
 
 Seuraavassa kuvassa näkyy **Mukautetun toimialueen HTTPS**-valintaikkuna Azure Front Door Service -palvelussa.
 
-![Mukautetun toimialueen HTTPS -valintaikkuna](./media/Custom_Domain_HTTPS.png)
+![Mukautetun toimialueen HTTPS -valintaikkuna.](./media/Custom_Domain_HTTPS.png)
 
 Lisätietoja mukautetun toimialueen lisäämisestä Azure Front Door -palveluun on kohdassa [Mukautetun toimialueen lisääminen Front Door -palveluun](/azure/frontdoor/front-door-custom-domain).
 

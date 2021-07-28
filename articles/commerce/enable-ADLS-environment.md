@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 61f96dae0643e3383afd91864e4c145f3b5c04c8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9ac440362379475b05c6a37019c25e3a96be3739
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792604"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349493"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä
 
@@ -59,7 +59,7 @@ Lisätietoja Azure Data Lake Storage -lisäosan käyttöön tarvittavista vaihei
 
 Seuraavassa kuvassa näkyy esimerkki Azure Data Lake Storage -määrityksessä.
 
-![Esimerkki Azure Data Lake Storage -määrityksestä](./media/exampleADLSConfig1.png)
+![Esimerkki Azure Data Lake Storage -määrityksestä.](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Azure Data Lake Storage -yhteyden testaaminen
 
@@ -79,7 +79,7 @@ Ota yksikkötallennustilan päivitys käyttöön seuraavia vaiheita noudattamall
 
 Seuraavassa kuvassa näkyy esimerkki yksikkösäilöstä, jossa automaattinen päivitys on käytössä.
 
-![Esimerkki yksikkötallennustilasta, jossa automaattinen päivitys on käytössä](./media/exampleADLSConfig2.png)
+![Esimerkki yksikkötallennustilasta, jossa automaattinen päivitys on käytössä.](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage on nyt määritetty ympäristölle. 
 

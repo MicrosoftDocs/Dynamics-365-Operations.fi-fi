@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c043ac9c19a810d1718f0d4907cd5e9d651d778f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5038a1a1b3fa4c32f54ea87b03f886504e0b004f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055289"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357385"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Hakijan seurantajärjestelmän integroinnin sovellusliittymän esittely
 
@@ -26,7 +26,7 @@ ms.locfileid: "6055289"
 
 Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin hakijan seurantajärjestelmän (ATS) integraation API. API-liittymän tarkoituksena on ottaa käyttöön tehokkaat integroinnit Dynamics 365 Human Resourcesin ja ATS-kumppanisovellusten välillä.
 
-![ATS-integroinnin työnkulku](media/hr-admin-integration-ats-api-introduction-flow.png)
+![ATS-integroinnin työnkulku.](media/hr-admin-integration-ats-api-introduction-flow.png)
 
 Integroitu kokemus alkaa Human Resourcesista, kun työhönottopäällikkö luo työhönottopyynnön. Kun pyyntö aktivoidaan, ATS tuo työhönottoprojektin luontipyynnön tiedot. Tämän jälkeen rekrytointiputken avulla voit valita ja palkata hakijan toimia varten. Lopuksi ATS suorittaa integraaton takaisin lähettämällä valitun hakijan tietueen Human Resourcesiin. Tämän jälkeen hakijatietue voi luoda työntekijätietueen käymällä läpi lisää rekorytoinnin oikeellisuustarkistuksia ja työnkulkuja.
 
@@ -69,7 +69,7 @@ Tietomalli on keskitetty kahden pääyksikön ympärille:
 
 Seuraava kaavio kuvaa suhteita API:n sisällä. Useilla tyypeillä on viiteavaimet muihin Human Resourcesin aiemmin luotuihin yksiköihin, joita ei ole kuvattu tässä. Tässä asiakirjassa on tietoja yksiköistä, jotka liittyvät erityisesti rekrytoinnnin integrointiskenaarioihin. Dataverse-verkkoliittymässä on kuitenkin useita muita yksiköitä Dynamics 365 Human Resourcesille, jotka voivat myös olla oleellisia integrointisi kannalta. Voit esimerkiksi tarvita yksityiskohtaisia tietoja myös työntekijöistä, töistä, toimista tai muista yksiköistä, joita ei ole määritetty tässä. Moniin näistä yksiköistä viitataan viiteavainsuhteissa tai siirtymisominaisuuksissa.
 
-![ATS-integroinnin API-tietomalli](media/hr-admin-integration-ats-api-data-model.png)
+![ATS-integroinnin API-tietomalli.](media/hr-admin-integration-ats-api-data-model.png)
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>Työhönottopyyntö ja siihen liittyvät entiteetit ja asetusjoukot
 

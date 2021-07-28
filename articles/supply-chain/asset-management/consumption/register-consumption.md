@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837894"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346223"
 ---
 # <a name="register-consumption"></a>Kulutuksen rekisteröinti
 
@@ -54,7 +54,7 @@ Joissakin tapauksissa voit lisätä tai poistaa työtilauksen ennusterivejä. Ty
 
 Alla oleva kuvakaappaus näyttää esimerkin tunti- ja nimikerekisteröinneistä työtilaukselle kohdassa **Työtilauksen kirjauskansiot**.
 
-![Kuva 1](media/01-consumption.png)
+![Kuva 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Jaa työtilausten tunnit useisiin työtilaustöihin
@@ -73,13 +73,13 @@ Jos työtilaus sisältää useita työtilaustöitä, voit rekisteröidä työtun
 
 6. Lisää jaettavat työtunnit **Tunnit** -kenttään.
 
-    ![Kuva 2](media/02-consumption.png)
+    ![Kuva 2.](media/02-consumption.png)
 
 7. Valitse **OK**.
 
 *Esimerkki:* Alla olevassa kuvakaappauksessa näytetään kolme työtilaustyötä sisältävän työtilauksen kirjauskansiorivit. Ensimmäinen rivi, joka sisältää kolme työtuntia, on jaettu, ja kullekin työtilaustyölle rekisteröidään yksi työtunti. Kun kolmen tunnin kirjausrivit on luotu, voit päättää, mitä haluat tehdä alkuperäiselle tuntikirjausriville (esimerkin ensimmäinen rivi). Voit pitää sen sellaisena kuin se on tai poistaa sen. 
 
-![Kuva 3](media/03-consumption.png)
+![Kuva 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Kulutusrekisteröintien taloushallinnon dimensiot
 

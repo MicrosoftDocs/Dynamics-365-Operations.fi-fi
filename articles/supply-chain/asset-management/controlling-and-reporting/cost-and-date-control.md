@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016129"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354950"
 ---
 # <a name="cost-and-date-control"></a>Kustannusten ja päivämäärien hallinta
 
@@ -58,7 +58,7 @@ Käyttöomaisuudelle, toiminnallisille sijainneille ja työtilauksille tehdyt la
 
     Alla olevassa kuvassa on esimerkki **Resurssien kustannusten hallinta** -valintaikkunasta.
 
-    ![Resurssien kustannusten hallinnan valintaikkuna](media/01-controlling-and-reporting.png)
+    ![Resurssien kustannusten hallinta -valintaikkuna.](media/01-controlling-and-reporting.png)
 
 10. Napsauta **Resurssien kustannusten hallinta** -sivulla **Ryhmittele**-painikkeita tuodaksesi näkyviin laskun vaaditun yksityiskohtaisuuden tason. Valitut **Ryhmittely...**-painikkeet on korostettu. Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.
 
@@ -71,7 +71,7 @@ Alla olevassa näyttökuvassa on esimerkki **Resurssien kustannusten hallinta** 
 - **Avoin sidottu kustannus** -kentässä näkyvät sitoumukset maksaa nimikkeistä, tunneista ja palveluista, jotka olet tilannut tai vastaanottanut mutta joita ei ole vielä maksettu. 
 - **Toteutunut kustannus** -kentässä näkyvät asiaan liittyvät kulut, kun kaikki kulutusrekisteröinnit on kirjattu.
 
-![Esimerkki Resurssien kustannusten hallinnan laskutuloksista](media/02-controlling-and-reporting.png)
+![Esimerkki resurssien kustannusten hallinnan laskutuloksista.](media/02-controlling-and-reporting.png)
 
 Toinen tapa määrittää kustannuslaskennat on valita valita monta resurssia **Kaikki resurssit**- tai **Aktiiviset resurssit** -kohdassa. Valitse sitten **Yleiset**-välilehden **Kustannusten hallinta** -painike. **Resurssien kustannusten hallinta**-valintaikkunassa valitut käyttöomaisuudet lisätään automaattisesti **Sisällytettävät tietueet** -pikavälilehden **Resurssi**-kenttään. Valitse **OK**, niin valittujen käyttökohteiden kustannuslaskennat näytetään. Sama menettely voidaan tehdä toiminnallisille sijainneille kohdassa **Kaikki toiminnalliset sijainnit** tai **Aktiiviset toiminnalliset sijainnit** sekä kohdassa  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
@@ -99,7 +99,7 @@ Alla olevassa näyttökuvassa on esimerkki **Työtilauksen päivämäärien hall
 - **Keskim. lopetuksen viive** -kentässä näkyy työtilauksen suunnitellun lopetuspäivän välinen ero suhteessa todelliseen lopetuspäivämäärään. Jos todellinen lopetuspäivä on esimerkiksi kolme päivää ajoitetun lopetuspäivän jälkeen, kentässä näkyy "3".  
 - **Esiintymiskerrat**-kentissä näkyy, kuinka monta kertaa poikkeama esiintyy suhteessa ajoitettuun ja todelliseen alkamispäivämäärään sekä työtilauksen ajoitettuun ja todelliseen päättymispäivämäärään.
 
-![Esimerkki Työtilausten päivämäärien hallinnan laskutuloksista](media/03-controlling-and-reporting.png)
+![Esimerkki työtilausten päivämäärien hallinnan laskutuloksista.](media/03-controlling-and-reporting.png)
 
 
 

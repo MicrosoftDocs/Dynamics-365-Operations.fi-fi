@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ac7eec69bda7ad2fa41a7311a71a969eddeafb6
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a34c9f265a3adbbe938d90f2aa7f5d02b7201c05
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021485"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344979"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Ajan ja läsnäolon hallinta Retailissa
 
@@ -97,7 +97,7 @@ Lisätietoja määritysvaiheista on kohdassa [Työajan seurannan määrittämine
         </tbody>
         </table>
 
-        [![Aikatilat](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Aikatilat.](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Tarkastele vahvistussanomaa ja vahvista, että nykyinen merkinnän aika on oikea.
 - Lokikirja:

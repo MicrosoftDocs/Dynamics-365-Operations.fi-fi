@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754595"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354442"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 
@@ -54,11 +54,11 @@ Lisää .pbix-tiedosto Visual Studio -projektin artefaktina.
 3. Valitse **Lisää uusi nimike** -valintaikkunan **Toimintojen artefaktit** -kohdassa **Resurssi**-malli.
 4. Anna nimi, jolla viitataan X++-metatietojen raporttiin ja valitse sitten **Lisää**.
 
-    ![Lisää uusi nimike -valintaikkuna](media/analytical-workspace-add.png)
+    ![Lisää uusi nimike -valintaikkuna.](media/analytical-workspace-add.png)
 
 5. Etsi analyysiraportin määritelmän sisältävä .pbix-tiedosto ja valitse sitten **Avaa**.
 
-    ![Valitse resurssitiedosto -valintaikkuna](media/analytical-workspace-select-resource.png)
+    ![Valitse resurssitiedosto -valintaikkuna.](media/analytical-workspace-select-resource.png)
 
 Nyt kun .pbix-tiedosto on lisätty Dynamics 365 -resurssina, voit upottaa raportteja työtiloihin ja lisätä suoria linkkejä valikkovaihtoehtojen avulla.
 
@@ -67,7 +67,7 @@ Tässä esimerkissä Kuljetuskaluston hallinta -mallin **Varausten hallinta** -t
 
 Seuraavassa kuvassa näytetään, miltä **FMClerkWorkspace**-lomake näyttää Microsoft Visual Studion suunnittelutoiminnossa.
 
-![FMClerkWorkspace-lomake ennen muutoksia](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-lomake ennen muutoksia.](media/analytical-workspace-definition-before.png)
 
 Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeiden mukaisesti.
 
@@ -92,7 +92,7 @@ Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeid
 
 Seuraava kuva osoittaa, miltä rakenne näyttää muutosten jälkeen.
 
-![FMClerkWorkspace muutosten jälkeen](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace muutosten jälkeen.](media/analytical-workspace-definition-after.png)
 
 Nyt kun työtilan raportin upottamiseen käytettävät lomakkeen ohjausobjektit on lisätty, pääohjausobjektin koko on määritettävä asetteluun sopivaksi. Oletusarvoisesti sekä **Suodatinruutu**-sivu että **Välilehti**-sivu näkyvät raportissa. Voit kuitenkin muuttaa näiden ohjausobjektien näkyvyyttä raportin kohdekäyttäjän mukaan.
 
@@ -142,7 +142,7 @@ Lisää näiden ohjeiden mukaisesti liiketoimintalogiikka, joka käynnistää **
 
 Olet nyt suorittanut tehtävän, jolla upotetun raportin katseluohjelman ohjausobjektin käynnistävä liiketoimintalogiikka lisätään. Seuraava kuva osoittaa, miltä työtila näyttää muutosten jälkeen.
 
-![Työtilaan upotettu raportti](media/analytical-workspace-final.png)
+![Työtilaan upotettu raportti.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Voit käyttää aiemmin luotua toimintonäkymää käyttämällä sivun otsikkoon kuuluvia työtilan välilehtiä.

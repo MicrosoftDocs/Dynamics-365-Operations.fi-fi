@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837942"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360122"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Resurssien hallinnan mobiilityötilan käyttäminen
 
@@ -60,7 +60,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
-    ![Työtilan valitseminen](media/am-mobile-01.png "Työtilan valitseminen")
+    ![Työtilan valitseminen.](media/am-mobile-01.png "Työtilan valitseminen")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Määritettyjen työtilauksen töiden tarkastelu kalenterinäkymässä
 
@@ -72,7 +72,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Saat työn tiedot näkyviin valitsemalla työtilauksen työn luettelossa: resurssin ja toiminnallisen sijainnin tiedot sekä muut siirtymislinkit, joilla voi avata seuraavat kohdat: **Liitteet**, **Tarkistusluettelot**, **Työkalut**, **Resurssilaskurit**, **Huomautukset** ja **Kirjauskansiot**.
 
-    ![Määritettyjen työtilauksen töiden tarkastelu kalenterinäkymässä](media/am-mobile-02.png "Määritettyjen työtilauksen töiden tarkastelu kalenterinäkymässä")
+    ![Määritettyjen työtilauksen töiden tarkastelu kalenterinäkymässä.](media/am-mobile-02.png "Määritettyjen työtilauksen töiden tarkastelu kalenterinäkymässä")
 
 ## <a name="create-a-work-order-job"></a>Työtilauksen työn luominen
 
@@ -90,7 +90,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Valitse **Valmis**.
 
-    ![Rivin lisäysnäyttö](media/am-mobile-03.png "Rivin lisäysnäyttö")
+    ![Rivin lisäysnäyttö.](media/am-mobile-03.png "Rivin lisäysnäyttö")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Liitteen lisääminen työtilauksen työhön
@@ -112,7 +112,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Valitse **Valmis**.
 
-    ![Työtilauksen työn liitteiden näyttäminen ja lisääminen](media/am-mobile-04.png "Työtilauksen työn liitteiden näyttäminen ja lisääminen")
+    ![Työtilauksen työn liitteiden näyttäminen ja lisääminen.](media/am-mobile-04.png "Työtilauksen työn liitteiden näyttäminen ja lisääminen")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Työtilauksen työn ylläpidon tarkistuslistan tarkasteleminen
 
@@ -129,7 +129,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Palaa edelliselle sivulle valitsemalla Edellinen (**<**) -painike.
 
-    ![Ylläpidon tarkistuslista ja rivin tiedot](media/am-mobile-05.png "Ylläpidon tarkistuslista ja rivin tiedot")
+    ![Ylläpidon tarkistuslista ja rivin tiedot.](media/am-mobile-05.png "Ylläpidon tarkistuslista ja rivin tiedot")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>Resurssilaskurien näyttäminen ja päivittäminen työtilauksen työssä
 
@@ -146,7 +146,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Anna laskurin uusi arvo ja valitse **Valmis**.
 
-    ![Resurssilaskureiden näyttäminen ja päivittäminen](media/am-mobile-06.png "Resurssilaskureiden näyttäminen ja päivittäminen")
+    ![Resurssilaskureiden näyttäminen ja päivittäminen.](media/am-mobile-06.png "Resurssilaskureiden näyttäminen ja päivittäminen")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Kulutuksen rekisteröinti työtilaus työssä
 
@@ -178,7 +178,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
     1. Anna kulurekisteröintien **Kustannushinta**.
     1. Valitse **Valmis**.
 
-    ![Työtilauksen kirjauskansion päivittäminen](media/am-mobile-07.png "Työtilauksen kirjauskansion päivittäminen")
+    ![Työtilauksen kirjauskansion päivittäminen.](media/am-mobile-07.png "Työtilauksen kirjauskansion päivittäminen")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Työtilauksen elinkaaren tilan päivittäminen
 
@@ -194,7 +194,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Valitse **Valmis**.
 
-    ![Työtilauksen elinkaaren tilan päivittäminen](media/am-mobile-08.png "Työtilauksen elinkaaren tilan päivittäminen")
+    ![Työtilauksen elinkaaren tilan päivittäminen.](media/am-mobile-08.png "Työtilauksen elinkaaren tilan päivittäminen")
 
 ## <a name="create-a-maintenance-request"></a>Luo ylläpitopyyntö
 
@@ -216,7 +216,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Valitse **Valmis**.
 
-    ![Luo ylläpitopyyntö](media/am-mobile-09.png "Luo ylläpitopyyntö")
+    ![Luo ylläpitopyyntö.](media/am-mobile-09.png "Luo ylläpitopyyntö")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Liitteen lisääminen ylläpitopyyntöön
 
@@ -236,7 +236,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 1. Valitse **Valmis**.
 
-    ![Liitteen lisääminen ylläpitopyyntöön](media/am-mobile-10.png "Liitteen lisääminen ylläpitopyyntöön")
+    ![Liitteen lisääminen ylläpitopyyntöön.](media/am-mobile-10.png "Liitteen lisääminen ylläpitopyyntöön")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

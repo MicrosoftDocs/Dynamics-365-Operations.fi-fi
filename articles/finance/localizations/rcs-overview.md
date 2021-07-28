@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RCS, Regulatory Configuration Services, Localization
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216559"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358119"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -41,7 +43,7 @@ RCS tarjoaa seuraavat ominaisuudet:
 
 Voit rekisteröityä tai kirjautua sisään RCS-palveluun [Regulatory Configuration Service -sivulla](https://marketing.configure.global.dynamics.com/).
 
-![RCS:n rekisteröityminen/sisäänkirjaus](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![RCS:n rekisteröityminen/sisäänkirjaus.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 Tarkista ja hyväksy **Regulatory Configuration Service** -sivulla palvelun käytön lisäehdot ja -ehdot ja valitse sitten jokin seuraavista painikkeista:
 
@@ -91,7 +93,7 @@ Katso lisätietoja liittyvistä komponenteista seuraavista aiheista:
 
 Kun rekisteröidyt RCS:ään palvelun sivulta, saatat kohdata Azure Active Directoryyn (Azure AD) liittyvän ongelman. Näyttöön avautuva virhesanoma ilmoittaa, että RCS-rekisteröityminen on poistettuna käytöstä, ja se on otettava käyttöön, ennen kuin rekisteröintiprosessi voidaan suorittaa.
 
-![RCS-rekisteröitymisen virhesanoma](media/01_RCSSignUpError.jpg)
+![RCS-rekisteröitymisen virhesanoma.](media/01_RCSSignUpError.jpg)
 
 Tämä ongelma ilmenee, koska ad-hoc-tilausten rekisteröityminen on estetty ja `AllowAdHocSubscriptions`-ominaisuus on otettava käyttöön vuokraajassa. 
 

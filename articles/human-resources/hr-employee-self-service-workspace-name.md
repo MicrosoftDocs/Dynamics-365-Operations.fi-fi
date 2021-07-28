@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f0339f5ef5bf5655d0471394539aee56437bb26f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d3fbcdfde48af0b14237ead22a4b94e73e5aa4df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055649"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357140"
 ---
 # <a name="change-employee-self-service-workspace-name"></a>Työntekijän itsepalvelutyöntilan nimen muuttaminen
 
@@ -37,7 +37,7 @@ Jos organisaatiossa on vapaaehtoisia tai muita ei-työntekijöitä, haluat ehkä
 
 3. Valitse **Näyttönimi**-kohdassa **Itsepalvelu**.
 
-   ![Työntekijän itsepalvelutyöntilan nimen muuttaminen itsepalveluksi](./media/hr-employee-self-service-workspace-name.png)
+   ![Työntekijän itsepalvelutyöntilan nimen muuttaminen itsepalveluksi.](./media/hr-employee-self-service-workspace-name.png)
 
 4. Valitse **Tallenna**.
 
