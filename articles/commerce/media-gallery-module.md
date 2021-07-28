@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271277"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346713"
 ---
 # <a name="media-gallery-module"></a>Mediavalikoimamoduuli
 
@@ -41,7 +41,7 @@ Tässä on joitakin mediavalikoimamoduulien käyttöesimerkkejä:
 
 Seuraavassa esimerkissä PDP:n ostoruutu isännöi tuotekuvia mediavalikoimamoduulin avulla.
 
-![Esimerkki ostoruudusta tuotetietosivulla, joka isännöi tuotekuvia mediavalikoimamoduulin avulla](./media/ecommerce-pdp-buybox.PNG)
+![Esimerkki ostoruudusta tuotetietosivulla, joka isännöi tuotekuvia mediavalikoimamoduulin avulla.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Mediavalikoiman ominaisuudet
 
@@ -59,11 +59,11 @@ Seuraavassa esimerkissä PDP:n ostoruutu isännöi tuotekuvia mediavalikoimamodu
 
 Seuraavassa kuvassa on esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä.
 
-![Esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä](./media/ecommerce-media-zoom.png)
+![Esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä.](./media/ecommerce-media-zoom.png)
 
 Seuraavassa kuvassa on esimerkki mediavalikoimamoduulista, jossa on kuratoituja kuvia (eli määritettyjä kuvia, jotka eivät riipu tuotetunnuksesta tai sivun kontekstista).
 
-![Esimerkki mediavalikoimamoduulista, jossa on kuratoituja kuvia](./media/ecommerce-media-curated.PNG)
+![Esimerkki mediavalikoimamoduulista, jossa on kuratoituja kuvia.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ceacdbe36cc946b64d13b3faff2b3b1ca59afbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822828"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345473"
 ---
 # <a name="year-end-activities-faq"></a>Tilinpäätöstehtävien usein kysytyt kysymykset 
 
@@ -29,7 +29,7 @@ Tämä ohjeaihe on koottu avuksi tilinpäätöstehtävissä. Tämän ohjeaiheen 
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Kirjanpito: mistä tietää, että on suorittamassa tilinpäätöstä eikä kumoamassa sitä?
 Organisaatiot ovat saattaneet yrittää suorittaa tilinpäätöstä, mutta ovatkin olleet kumoamassa tilinpäätöstä. Jos tilinpäätöksen suorittaminen vaikuttaa tapahtuvan todella nopeasti tai se ei tuota alkusaldoja, tarkista **Kumoa edellinen sulkeminen** ‑asetus kohdassa **Tilikauden lopetus** (**Kirjanpito > Kauden sulkeminen > Tilikauden lopetus > Suorita tilikauden lopetus**). 
 
-[![Tilinpäätöksen suorittaminen verrattuna sen peruuttamiseen](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
+[![Tilinpäätöksen suorittaminen verrattuna sen peruuttamiseen.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 Jos **Kumoa edellinen sulkeminen** ‑asetukseksi on valittu **Kyllä**, edellinen tilinpäätös peruutetaan. Kun kumoaminen suoritetaan, kaikki loppusaldo- ja alkusaldomerkinnät poistetaan, ikään kuin tilinpäätöstä ei olisi missään vaiheessa suoritettukaan. Tositteet poistetaan. Tilinpäätöstä ei suoriteta uudelleen automaattisesti. Prosessi on aloitettava uudelleen siten, että **Kumoa edellinen sulkeminen** ‑asetuksen arvoksi muutetaan **Ei**. 
 
@@ -39,11 +39,11 @@ Jos **Kumoa edellinen sulkeminen** ‑asetukseksi on valittu **Kyllä**, edellin
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>Kirjanpito: mitä eroa on tilinpäätöksen kumoamis- ja sulkemisparametreilla?
 Joillekin voi aiheuttaa hämmennystä, mitä eroa on parametreilla **Kumoa edellinen sulkeminen**, joka sijaitsee **Tilikauden lopetus** ‑valintaikkunassa, ja **Poista päätöstapahtumat siirron yhteydessä**, joka on kirjanpidossa (**Kirjanpito > Kauden sulkeminen > Tilikauden lopetus > Suorita tilikauden lopetus**).  
 
-[![Tilinpäätöksen kumoamis- ja sulkemisparametrien välinen ero](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![Tilinpäätöksen kumoamis- ja sulkemisparametrien välinen ero.](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Valitsemalla tilinpäätöksen suorittamisen yhteydessä avattavasta valikosta **Kumoa edellinen sulkeminen** voit poistaa kaikki loppusaldo- ja alkusaldomerkinnät, ikään kuin tilinpäätöstä ei olisi missään vaiheessa suoritettu. Tositteet poistetaan. Tilinpäätöstä ei suoriteta uudelleen automaattisesti. Tilinpäätöksen suorittamiseksi tämä prosessi on aloitettava uudelleen siten, että **Kumoa edellinen sulkeminen** ‑asetuksen arvoksi muutetaan **Ei** (**Kirjanpito > Kirjanpidon asetukset > Kirjanpitoparametrit**). 
 
-[![Kirjanpidon parametrin määrittäminen](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
+[![Kirjanpidon parametrin määrittäminen.](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
 Kirjanpidon **Poista päätöstapahtumat siirron yhteydessä** ‑parametria käytetään vain suoritettaessa (ei kumottaessa) tilinpäätöstä (**Kumoa edellinen sulkeminen** ‑asetukseksi on määritetty **Ei**). Jos parametrin arvoksi määritetään **Kyllä**, kaikki loppusaldo- ja alkusaldomerkinnät poistetaan ja tilinpäätös suoritetaan uudelleen. Tätä prosessia käytetään, kun organisaatio haluaa kirjata kaikki tapahtumat, mukaan lukien edellisen tilinpäätöksen jälkeiset oikaisut, yhteen kirjanpitomerkintään loppusaldo- ja alkusaldomerkinnöissä. 
 
@@ -60,7 +60,7 @@ Tilinpäätöksen suorittamisen yhteydessä kunkin dimensioyhdistelmän saldo mu
 
 Tarpeettomat dimensioyhdistelmät vaikuttavat myös **BudgetDimensionFocusInitializeBalance**-erätyöhön (**Kirjanpito > Tilikartta > Dimensiot > Taloushallinnon dimensioyhdistelmät**).
 
-[![Taloushallinnon dimensioyhdistelmät](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
+[![Taloushallinnon dimensioyhdistelmät.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Tilinpäätösmallin määritykset
 Tilinpäätösmallin avulla organisaatio voi valita ylläpidettävän taloushallinnon dimension tason siirtäessään tulossaldoja jakamattomiin voittoihin. Asetusten avulla organisaatio voi ylläpitää yksityiskohtaisia taloushallinnon dimensioita (**Sulje kaikki**) siirtäessään saldoja jakamattomiin voittoihin tai tehdä summista yhteenvedon yksittäiseen dimensioarvoon (**Sulje yksittäinen**). Tämän voi määrittää kullekin taloushallinnon dimensiolle. Lisätietoja näistä asetuksista on ohjeaiheessa [Tilinpäätös](year-end-close.md).
@@ -72,14 +72,14 @@ Jos olet tehnyt päivityksen versioon 10.0.13 tai sitä uudempaan versioon sen j
  
 ## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Kirjanpito – mitä Kauden sulkeminen – Tilikauden lopetus ‑ominaisuus tekee?
  
-[![Kauden sulkeminen, tilikauden lopetus](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Kauden sulkeminen, tilikauden lopetus.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Taloushallinnon dimensioyhdistelmien uudelleenmuodostuksen suorituskykyparannukset (uusi ominaisuus)
 Versioon 10.0.16 lisätty uusi ominaisuus parantaa tilinpäätös- ja konsolidointiprosessien suorituskykyä. Ominaisuuden nimi on ”Taloushallinnon dimensioyhdistelmien uudelleenmuodostuksen suorituskykyparannukset”. Tämä ominaisuus muuttaa dimensioyhdistelmien uudelleenmuodostustapaa niin, että ne muodostetaan uudelleen vain olennaisen aikavälin ajaksi. Edellisissä versioissa dimensioyhdistelmät muodostettiin uudelleen kaikille päivämäärille. Jos olet esimerkiksi sulkemassa vuotta 2020, järjestelmä muodostaa uudelleen vain tilikauden 2020 tapahtumien saldot. Jos olet suorittamassa konsolidointia päivämäärävälille 1.11.2020–30.11.2020, järjestelmä muodostaa uudelleen vain kyseisen päivämäärävälin saldot.
 
 Koska tämä ominaisuus katsotaan tärkeäksi muutokseksi, sinun on otettava se käyttöön käyttämällä **Ominaisuuksien hallinta** ‑työtilaa.
  
-[![Tilikauden lopetus](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+[![Tilikauden lopetus.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Ostoreskontra: mitä muutoksia vuodelle 2020 on tehty vuoden lopun 1099-raportoinnin tueksi?
 
@@ -88,7 +88,7 @@ Vuonna 2020 on lisätty kaksi uutta säädöksiin liittyvää ominaisuutta vuode
 Toinen säädöksiin liittyvä ominaisuus, **1099-raporttien päivitys vuoden 2020 verolakia varten**, sisältää seuraavat muutokset.
 
 - 1099-OID – IRS on muuntanut lomakkeen jatkuvaan käyttöön soveltuvaksi.
-   - Raportointivuoden 3. ja 4. numero on täytettävä tulostettaessa. Käytä **Raportointivuosi**-kentän 3. ja 4. numeroa **Valmisteveron tulostusvalinnat** ‑lomakkeesta. 
+   - Raportointivuoden 3. ja 4. numero on täytettävä tulostettaessa. Käytä **Raportointivuosi**-kentän 3. ja 4. numeroa **Valmisteveron (1099) tulostusvalinnat** ‑lomakkeesta. 
 
 - 1099-NEC – uusi lomake vuodelle 2020. Tähän kirjataan muun kuin työntekijän kompensaatio. 
 
@@ -108,21 +108,21 @@ Tulojen raportointiin ja lomakkeen ruutunumeroihin tehdyt muutokset on lueteltu 
 ## <a name="accounts-payable-1099--how-do-i-change-the-1099-box-and-values-for-a-vendor-that-wasnt-tracking-1099-information-throughout-the-year"></a>Ostoreskontra: 1099 – kuinka muutan sellaisen toimittajan 1099-ruutua ja -arvoja, joka ei ole seurannut 1099-tietoja koko vuoden ajan?
 Käytä Päivitä valmistevero ‑toimintoa (**Ostoreskontra > Toimittajat > Kaikki toimittajat > Valitse toimittaja > Toimittaja-välilehti valintanauhassa > Päivitä valmistevero**), jos haluat käydä aiemmin maksetut laskutapahtumat läpi ja määrittää 1099-tiedot uudelleen **Toimittaja**-sivun **Valmistevero (1099)** ‑välilehden asetusten mukaisesti.
 
-## <a name="can-i-run-the-update-1099-for-all-my-vendors-at-once"></a>Voinko suorittaa Päivitä valmistevero ‑toiminnon kaikille toimittajille yhdellä kertaa?
-Et voi. Päivitä valmistevero ‑toiminto suoritetaan yhdelle toimittajalle kerrallaan. Jos organisaatiollasi on tällainen tarve, äänestä ideaa [Toimittajan 1099-tietojen päivittämisen eräprosessi](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
+## <a name="can-i-run-the-update-1099-for-all-my-vendors-at-once"></a>Voinko suorittaa Päivitä valmistevero (1099) ‑toiminnon kaikille toimittajille yhdellä kertaa?
+Et voi. Päivitä valmistevero (1099) ‑toiminto suoritetaan yhdelle toimittajalle kerrallaan. Jos organisaatiollasi on tällainen tarve, äänestä ideaa [Toimittajan 1099-tietojen päivittämisen eräprosessi](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
 ## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Ostoreskontra: 1099 – Päivitä valmistevero ‑työkalun vaihtoehdot ”Laske aiemmin määritetyt valmisteverosummat (1099) uudelleen” ja ”Päivitä kaikki”.
 **Laske aiemmin määritetyt valmisteverosummat (1099) uudelleen** -valintaruutu palauttaa 1099-summan maksettujen arvojen kokonaissummaksi, kun sitä käytetään yhdessä **Päivitä kaikki** ‑valintaruudun kanssa. 
 
-[![Valmisteverotapahtumat: ennen päivitysrutiinin suorittamista](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![Valmisteverotapahtumat (1099): ennen päivitysrutiinin suorittamista.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
 **Laske aiemmin määritetyt valmisteverosummat (1099) uudelleen** ‑valintaruutu tulee käyttöön vain, kun laskussa on osa osittaisia 1099-arvoja tai jos sitä on muutettu Valmistevero (1099) ‑lomakkeessa. Oletetaan esimerkiksi, että sinulla on lasku, jonka arvo on 1 000,00 $, mutta käyttäjä kirjoittaa laskulle manuaalisesti 1099-summan 500,00 $.
 
-[![Valmisteverotapahtumat: sekä Päivitä kaikki- että Laske aiemmin määritetyt valmisteverosummat (1099) uudelleen ‑valintaruutujen valitseminen](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![Valmisteverotapahtumat: sekä Päivitä kaikki- että Laske aiemmin määritetyt valmisteverosummat (1099) uudelleen ‑valintaruutujen valitseminen.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
 Kun tämä maksetaan, maksettava 1099-summa on 500,00 $. Jos suoritat uudelleenlaskentarutiinin, järjestelmä muuttaa 1099-summaksi 1 000,00 $, joka on maksettu kokonaissumma.
 
-[![Valmisteverotapahtumat: 1099-rutiinin suorittamisen jälkeen](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
+[![Valmisteverotapahtumat: 1099-rutiinin suorittamisen jälkeen.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Ostoreskontra: 1099 – 1099-tapahtumien luominen manuaalisesti
 Organisaation voi olla tarpeen luoda manuaalisesti 1099-tapahtumia, joita ei ole liitetty laskuun. Voit lisätä 1099-tapahtumia manuaalisesti valitsemalla **Ostoreskontra > Kausittaiset tehtävät > Valmistevero (1099) > Toimittajien tilitykset valmisteveroja (1099) varten**. Valitse **Manuaaliset 1099-tapahtumat** -painike. 

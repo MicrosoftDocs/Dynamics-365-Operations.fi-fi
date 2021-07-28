@@ -9,17 +9,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: rhaertle
-ms.custom: 62303
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be65f8c49d5a4fb87f7d859c1e012d53515ad073
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bc81c7eed4724f9f68b592b23818781e1b047ebf
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893495"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6340298"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusdokumentaatio
 
@@ -40,7 +40,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 <td>
 <h3><a href="get-started/before-you-buy.md">Ennen ostamista</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Kokeiluversion tilaaminen</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Käyttöönottovaihtoehdon valinta</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Käyttöönottovaihtoehdon valitseminen</a></p>
  <p><a href="get-started/purchase-on-premises.md">Osta Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Toteutuksen elinkaari</a></h3>
@@ -80,7 +80,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Julkinen sektori</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Aluekohtaiset pakolliset ominaisuudet</a></p>
 
-<h3><a href="hr/hr-landing-page.md">Henkilöstöhallinto</a></h3>
+<h3><a href="hr/hr-landing-page.md">Human Resources</a></h3>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Edut</a></p>
 <p><a href="../../human-resources/hr-develop-performance-management-overview.md">Työntekijän kehitys ja koulutus</a></p>
 <p><a href="../../human-resources/hr-learning-questionnaires.md">Kyselylomakkeet</a></p>

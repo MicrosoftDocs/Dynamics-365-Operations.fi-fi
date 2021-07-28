@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187695"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343647"
 ---
 # <a name="production-order-cost-analysis"></a>Tuotantotilauksen kustannusanalyysi
 
@@ -41,7 +41,7 @@ Variansseissa näkyy tuotantonimikkeen ilmoitettujen tuotantotehtävien ja vakio
 
 Seuraavassa kaaviossa esitellään neljä varianssia, joissa näkyy tuotantotilauksen toteutuneiden kustannusten ja laskettujen kustannusten ero nimikkeen kustannustietueessa, kun tuotantotilaus on päätetty. 
 
-![Valmiin tuotantotilauksen erot selittävä varianssi](./media/control.jpg) 
+![Valmiin tuotantotilauksen erot selittävä varianssi.](./media/control.jpg) 
 
 Voit analysoida tuotannon variansseja **Varianssit**-sivulla tai **Tuotannon varianssi** -raportissa. Näyttöasetusten avulla voit tarkastella eriteltyjä varianssitietoja nimikkeen ja operatiivisen resurssin tai kustannusryhmän mukaan. Varastoparametrien kustannuserittelymenettely määrittää, seurataanko variansseja kustannusryhmän mukaan. Voit myös tarkastella varianssien yhteenvetoja **Yksittäinen**-, **Monitasoinen**- ja **Yhteensä** -näyttöasetusten avulla. Varianssin eritellyt tiedot auttavat ymmärtämään kunkin varianssin alkuperän. Jos haluat ennakoida varianssit ennen tuotantotilauksen päättämistä, analysoi **Ennakko- ja jälkilaskelmat** -raportin eritellyt tiedot.
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99fd4b816b1a3a1fe3c2d1579be45b43fdc3d385
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 89fe41d7ce57b584be34b156696b4044c4571afe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020753"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347269"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Palautustilauksen palautus on hylätty
 
@@ -34,7 +34,7 @@ Hyvitys hylätään, kun palautustilauksen laskussa käytetty luottokortti eroaa
 
 Maksun varmennustiedot sisältävät seuraavan virhesanoman: "Adyen-yhdyskäytävän SendRequest() epäonnistui. Tila: 'InternalServerError'.22144; Adyen palautti tyhjän vastauksen.(22001);"
 
-![Hylätty palautustilauksen palautus -virhe](media/refund-order-decline.jpg)
+![Hylätty palautustilauksen palautus -virhe.](media/refund-order-decline.jpg)
 
 ## <a name="resolution"></a>Ratkaisu
 

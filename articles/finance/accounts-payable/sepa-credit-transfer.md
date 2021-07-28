@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 03732ecd5a0cd59d15fa1f9f0691571bd0a19606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897159"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346447"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA-tilisiirron yleiskatsaus
 
@@ -30,7 +32,7 @@ Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisäl
 
 ## <a name="what-is-a-credit-transfer-message"></a>Mikä on tilisiirron sanoma?
 Tilisiirron sanoma on pyyntö, jonka aloittava osapuoli (oma yrityksesi) lähettää siirtääkseen varoja omalta tililtään velkojan tilille. Tilisiirron sanomille on useita maa/aluekohtaisia ja pankkikohtaisia toteutuksia. Jotkin niistä käytetään yhden maan/alueen sisällä, ja joistakin on muodostumassa standardeja. Yksi vakiintunut yleinen standardi on ISO 20022 ja sen aloitussanomat, kuten Tilisiirto. Seuraavassa kuvassa esitetään valittujen tilisiirron sanomien suhteet ja kattavuus. 
-![Tilisiirto](./media/credit-transfer.jpg) Tilisiirron sanomat 
+![Tilisiirto.](./media/credit-transfer.jpg) Tilisiirron sanomat 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Mitä SEPA- ja ISO 20022 -maksut ovat?
 Euroopan komissio loi yhtenäinen euromaksualueen (SEPA:n) ja sen perusteella kaikkia sähköisiä maksuja pidetään kotimaan maksuina riippumatta siitä, missä maassa tai millä alueella henkilö, yritys tai organisaatio ja pankki sijaitsevat. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacossa ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava. Euroopan komissio määritti SEPA-maksujen oikeudellisen perustan maksupalveludirektiivin avulla. Euroopan maksuneuvosto (EPC) tukee SEPA-aluetta seuraavilla toimilla:

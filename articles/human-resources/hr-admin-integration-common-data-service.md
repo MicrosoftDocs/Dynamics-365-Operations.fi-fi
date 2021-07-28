@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1a1ee5345e2d6b3736d45e233a59ac4009a9f1c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052454"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344685"
 ---
 # <a name="configure-dataverse-integration"></a>Määritä Dataverse -integraatio
 
@@ -48,15 +48,15 @@ Integrointi voi kannattaa poistaa käytöstä seuraavissa tilanteissa:
 
 1. Valitse siinä Human Resources -esiintymässä, jossa haluat tarkastella tai määrittää Dataversen kanssa integroinnin asetuksia, **Järjestelmän hallinta** -ruutu.
 
-    [![Järjestelmän hallinta -ruutu](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Järjestelmän hallinta -ruutu.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Valitse **Linkit**-välilehti.
 
-    [![Linkit-välilehti](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Linkit-välilehti.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. Valitse **Integroinnit**-kohdassa **Dataversen määritys**.
 
-    [![Dataversen määrityslinkki](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataversen määrityslinkki.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Human Resourcesin ja Dataversen tietojen integroinnin käyttöönotto ja käytöstä poistaminen
 
@@ -67,7 +67,7 @@ Integrointi voi kannattaa poistaa käytöstä seuraavissa tilanteissa:
 
 - Voit poistaa integroinnin käytöstä määrittämällä asetukseksi **Ei**.
 
-[![Dataverse -integroinnin käyttöönotto tai käytöstä poisto](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Dataverse-integroinnin käyttöönotto tai käytöstä poisto.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > On suositeltavaa, että Dataverse -integrointi poistetaan käytöstä, kun tiedonsiirtotehtäviä suoritetaan. Suurten tietomäärien lataaminen voi vaikuttaa suorituskykyyn paljon. Esimerkiksi 2 000 työntekijän tietojen lataaminen voi kestää useita tunteja, jos integrointi on käytössä. Jos se ei ole käytössä, aikaa voi kulua alle tunti. Tässä esimerkissä annetut numerot ovat vain esittelytarkoituksia varten. Tietojen tuomiseen kuluvat tarkka aikamäärä voi vaihdella paljon. Se riippuu useista tekijöistä.
@@ -98,7 +98,7 @@ Jos kohtaat ongelmia Human Resourcesin ja Dataversen välisen tietojen synkronoi
 
 - Jos haluat poistaa liitoksen Human Resources -tietueen ja Dataverse-rivin väliltä, valitse taulukko **Dataverse-taulukko** -kentästä ja valitse sitten **Tyhjennä seurantatiedot**.
 
-[![Seurantatietojen tyhjennys](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Seurantatietojen tyhjennys.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 Katso seuraava menettely, jos haluat suorittaa taulukolle täydellisen synkronoinnin seurannan tyhjentämisen jälkeen.
 
@@ -116,13 +116,13 @@ Voit suorittaa täyden synkronoinnin taulukolle Human Resourcesin ja Dataversen 
 
 2. Valitse **Synkronoi nyt**.
 
-[![Täyden synkronoinnin suoritus](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Täyden synkronoinnin suoritus.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>Lisätietoja
 
 [Dataverse-taulut](hr-developer-entities.md)<br>
 [Määritä Dataverse -virtuaalitaulukot](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Human Resourcesin virtuaalitaulut – usein kysytyt kysymykset](hr-admin-virtual-entity-faq.md)<br>
+[Human Resources -virtuaalitaulukoiden usein kysytyt kysymykset](hr-admin-virtual-entity-faq.md)<br>
 [Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiapäivitykset](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893273"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345885"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Tavujärjestysmerkkejä luoduissa tiedostoissa estävien ER-määritysten suunnitteleminen
 
@@ -29,14 +29,14 @@ ms.locfileid: "5893273"
 > [!NOTE]
 > Jos muodon sisältämän koodauksen nimi on virheellinen, seurauksena on virhe, kun muutokset tallennetaan muotoasetuksiin.
 
-![Juurielementin lisääminen Muodon suunnittelija -sivulla](./media/er-suppress-bom-characters-image1.gif)
+![Juurielementin lisääminen Muodon suunnittelija -sivulla.](./media/er-suppress-bom-characters-image1.gif)
 
 Jos koodaukseksi määritettään **UTF-8**, **UTF-16** tai **UTF-32**, **Estä tavujärjestysmerkit**-vaihtoehto on käytettävissä. Kun asetuksena on **Kyllä**, [tavujärjestysmerkit](/globalization/encoding/byte-order-mark) estetään lähtevissä tiedostoissa, jotka luodaan suorituksen aikana suoritettaessa muokattavaa ER-muotoa.
 
 > [!NOTE]
 > Jos **Koodaus**-kenttä jätetään tyhjäksi, **UTF-8**-oletuskoodausta käytetään.
 
-![Estä tavujärjestysmerkit -vaihtoehdon määrittäminen Muodon suunnittelija -sivulla](./media/er-suppress-bom-characters-image2.gif)
+![Estä tavujärjestysmerkit -vaihtoehdon määrittäminen Muodon suunnittelija -sivulla.](./media/er-suppress-bom-characters-image2.gif)
 
 Toiminnon tarkastelu suorituksen aikana edellyttää soveltuvan menettelyn suorittamista. Voit noudattaa esimerkiksi aiheen [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) ohjeissa. Kun kyseisen aiheen kohdan [Muodon muokkaaminen siten, että laskeminen perustuu luotuun tulokseen](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) vaiheet on suoritettu, tee seuraavat lisävaiheet:
 
@@ -59,7 +59,7 @@ Toiminnon tarkastelu suorituksen aikana edellyttää soveltuvan menettelyn suori
 
     Ensimmäinen ero on nähtävissä tiedoston otsikossa. SampleXmlReport.xml-tiedosto sisältää tavujärjestysmerkin, mutta sitä ei ole SampleXmlReport (1).xml-tiedostossa.
 
-    ![Luotujen tiedostojen vertaaminen tiedostovertailun apuohjelmalla](./media/er-suppress-bom-characters-image3.png)
+    ![Luotujen tiedostojen vertaaminen tiedostovertailun apuohjelmalla.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Lisätietoja
 

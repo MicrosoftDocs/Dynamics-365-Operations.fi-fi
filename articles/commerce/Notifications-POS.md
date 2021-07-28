@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796483"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345205"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Tilausilmoitusten näyttäminen myyntipisteessä (POS)
 
@@ -72,14 +72,14 @@ POS-painikkeissa voi nyt näkyä lukua, joiden avulla työntekijöiden on helppo
 
 Seuraavassa kuvassa on live-sisällön asetukset painikeruudukon suunnittelutoiminnossa.
 
-![Live Content -asetukset painikeruudukon suunnittelussa](./media/ButtonGridDesigner.png "Live Content -asetukset painikeruudukon suunnittelussa")
+![Live Content -asetukset painikeruudukon suunnittelussa.](./media/ButtonGridDesigner.png "Live Content -asetukset painikeruudukon suunnittelussa")
 
 Jos haluat näyttää ilmoitusten määrän painikkeessa, varmista, että oikea näyttöasettelu päivitetään. Voit määrittää POS-sovelluksen käyttämän näytön asettelun valitsemalla **Asetukset**-kuvakkeen oikeasta yläkulmasta ja huomaamalla **Näytön asettelun tunnuksen** ja **Asettelun tarkkuuden**. Nyt käytettäessä Edge-selainta, siirry **Näytön asettelu** -sivulle, etsi **Näytön asettelun tunnus** ja **Asettelun resoluutio**, jotka on tunnistettu edellä ja valitse **Ota käyttöön Live-sisältö** -valintaruutu. Siirry **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu** ja suorita 1090 (Rekisterit) -työ, joka synkronoi asettelun muutokset.
 
-![POS-järjestelmän käyttämän näyttöasettelun etsiminen](./media/Choose_screen_layout.png "Etsi näyttöasettelut")
+![POS-järjestelmän käyttämän näyttöasettelun etsiminen.](./media/Choose_screen_layout.png "Etsi näyttöasettelut")
 
 Seuraavassa kuvassa näytetään, miten **Sisällön tasaus** -kentän **Ylös oikealle**- tai **Keskelle**-vaihtoehdon valinta vaikuttaa eri kokoisiin painikkeisiin.
 
-![Live-sisältö POS-painikkeilla](./media/ButtonsWithLiveContent.png "Live-sisältö POS-painikkeilla")
+![Live-sisältö POS-painikkeilla.](./media/ButtonsWithLiveContent.png "Live-sisältö POS-painikkeilla")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

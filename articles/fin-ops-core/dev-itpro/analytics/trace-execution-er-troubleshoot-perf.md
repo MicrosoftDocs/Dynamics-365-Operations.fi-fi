@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344879"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 
@@ -56,14 +56,14 @@ Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti.
 
 Jokainen sovelluksessa luotu ER-suorituskykyjäljitys tallennetaan suorituslokitietueen liitteenä. Näiden liitteiden hallinnassa käytetään tiedostojen hallinnan (DM) kehystä. Sinun on määritettävä ER-parametrit etukäteen ja määritettävä DM-tiedosto tyyppi, jota käytetään suorituskykyjälkien liittämiseen. Valitse **Sähköinen raportointi** -työtilasta **Sähköisen raportoinnin parametrit**. Valitse sitten **Sähköisen raportoinnin parametrit** -sivun **Liitteet**-välilehden **Muut**-kentästä suorituskyvyn jäljille käytettävä DM-tiedostotyyppi.
 
-![Sähköisen raportoinnin parametrit -sivu](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Sähköisen raportoinnin parametrit -sivu.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 Jos haluat olla käytettävissä **Muut** -hakukentässä, DM-tiedostotyyppi on konfiguroitava seuraavalla tavalla **Asiakirjatyypit**-sivulla (**Organisaation hallinta \> Asiakirjan hallinta \> Asiakirjatyypit**):
 
 - **Luokka:** Liitä tiedosto
 - **Ryhmä:** Tiedosto
 
-![Asiakirjatyypit-sivu](./media/GER-PerfTrace-DM-DocumentType.png)
+![Tiedostotyypit-sivu.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > Valitun tiedostotyypin on oltava käytettävissä kaikissa nykyisen esiintymän yrityksissä, koska DM-liitteet ovat yrityskohtaisia.
@@ -72,7 +72,7 @@ Jos haluat olla käytettävissä **Muut** -hakukentässä, DM-tiedostotyyppi on 
 
 Luodut ER-suorituskykyjäljet tuodaan RCS:ään analysointia varten käyttämällä ER Format Designeria ja ER Mapping Designeria. Koska ER-suorituskykyjäljet tallennetaan ER-muotoon liittyvän suorituslokitietueen liitteinä, RCS-parametrit on määritettävä etukäteen, jotta voidaan määrittää DM-tiedostotyyppi, jota käytetään suorituskykyjälkien liittämiseen. Valitse yrityksellesi määritetyn RCS-esiintymän **Sähköisen raportoinnin** -työtilassa **Sähköiset raportointiparametrit**. Valitse sitten **Sähköisen raportoinnin parametrit** -sivun **Liitteet**-välilehden **Muut**-kentästä suorituskyvyn jäljille käytettävä DM-tiedostotyyppi.
 
-![Sähköisen raportoinnin parametrit -sivu RCS:ssä](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Sähköisen raportoinnin parametrit -sivu RCS:ssä.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 Jos haluat olla käytettävissä **Muut** -hakukentässä, DM-tiedostotyyppi on konfiguroitava seuraavalla tavalla **Asiakirjatyypit**-sivulla (**Organisaation hallinta \> Asiakirjan hallinta \> Asiakirjatyypit**):
 
@@ -92,7 +92,7 @@ Oletetaan, että olet aloittanut uuden ER-ratkaisun suunnittelun, joka luo toimi
     2. Valitse haluamasi ER-kokoonpanon tiedosto XML-muodossa valitsemalla **Selaa**.
     3. Valitse **OK**.
 
-    ![Konfiguroinnit-sivu RCS:ssä](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Konfiguroinnit-sivu RCS:ssä.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>ER-ratkaisun suorittaminen jäljityksen suorittamista varten
 
@@ -109,7 +109,7 @@ Oletetaan, että olet suunnitellut ER-ratkaisun ensimmäisen version. Nyt haluat
     3. Valitse **Konfiguraatiot**-pikavälilehdessä **Suorituskyvyn jäljitysmuodon** konfiguraatio.
     4. Valitse **Versiot**-pikavälilehdellä valitun konfiguraation versio **1.1** ja valitse sitten **Tuo**.
 
-    ![Konfiguraatiosäilön sivu](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Konfiguraatiosäilön sivu.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 Tietomallin ja mallin yhdistämismääritysten vastaavat versiot tuodaan automaattisesti valmiiksi tuodun ER-muodon konfiguroinnin edellytyksinä.
 
@@ -156,7 +156,7 @@ Tietomallin ja mallin yhdistämismääritysten vastaavat versiot tuodaan automaa
     > [!NOTE]
     > **Käyttäjäparametrit** -valintaikkunan parametrit koskevat käyttäjää ja nykyistä yritystä.
 
-    ![Käyttäjän parametrit -valintaikkuna](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![Käyttäjän parametrit -valintaikkuna.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Suorita ER-muoto
 
@@ -177,11 +177,11 @@ Suorituskykyjäljet irrotetaan lähde-ER-muodosta, ja ne voidaan sarjoittaa ulko
 2. Valitse **Sähköisen raportoinnin ajon lokit** -sivun vasemmanpuoleisen ruudun **Konfiguration nimi** -kentässä **Suorituskyvyn jäljitysmuoto** jos haluat löytää lokitiedostot, jotka on luotu **Suoritus kyvyn jäljitysmuodon** konfiguraatiolle.
 3. Valitse **Liitteet**-painikkeen sivun oikeassa yläkulmassa (paperiliitinsymboli) tai paina **Ctrl+Shift+A**.
 
-    ![Liitteet-painike Sähköisen raportoinnin ajolokit -sivulla](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Liitteet-painike Sähköisen raportoinnin ajolokit -sivulla.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. **Valitse sähköisen raportoinnin ajon lokit** -sivun toimintoruudussa **Avaa**, jos haluat saada suorituskyvyn jäljityksen zip-tiedostona ja tallentaa sen paikallisesti.
 
-    ![Sähköisen raportoinnin ajolokien liitteet](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Sähköisen raportoinnin ajolokien liitteet.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > Luotu jäljitys viittaa lähde-ER-raporttiin yksilöivän raporttitunnuksen avulla vain **GUID**-muodossa. Muodon versionumerointia ei oteta huomioon.
@@ -198,7 +198,7 @@ Huomaa, että suoritetun ER-muodon ja ER-mallikartoituksen muodostaman suoritusk
 6. Valitse **Selaa** valitaksesi aiemmin viemäsi zip-tiedoston.
 7. Valitse **OK**.
 
-    ![Suorituskyvyn jäljitystulosten asetukset -valintaikkuna RCS-kohteessa](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Suorituskyvyn jäljitystulosten asetukset -valintaikkuna RCS-kohteessa.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>Suorituskyvyn seurannan käyttäminen RCS – Format -suoritusanalyysissä
 
@@ -209,7 +209,7 @@ Huomaa, että suoritetun ER-muodon ja ER-mallikartoituksen muodostaman suoritusk
     - Todellinen aika, joka käytettiin tietojen syöttämiseen luotuun tulosteeseen kohteen muotoilun avulla
     - Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko tuotoksen tuottamiseen.
 
-    ![Muodon suunnittelutoiminto -sivu RCS:ssä](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Muodon suunnittelutoiminto -sivu RCS:ssä.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Sulje **Muodon suunnittelutoiminto** -sivu.
 
@@ -232,7 +232,7 @@ Huomaa, että ER ilmoittaa, että nykyisen mallin yhdistämismääritys kopioi t
 - Yksi kutsu tehdään tietomallin kunkin tapahtuman tietojen syöttämiseen määritettyjen sidosten perusteella.
 - Yksi kutsu tehdään, kun toimittaja määrittää lasketun määrän tapahtumia toimittajakohtaisesti tietomallissa.
 
-![Virheilmoitus tietokantapyyntöjen kopioista RCS-mallin malli kartoituksen suunnittelusivulla](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Virheilmoitus tietokantapyyntöjen kopioista RCS-mallin malli kartoituksen suunnittelusivulla.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 Arvo **\[Q:530\]** ilmaisee, että VendTrans-taulua kutsuttiin 530 kertaa palauttamaan kyseisessä taulussa oleva tietue VendTable/\<Relations/VendTrans. VendTable\_AccountNum-tieto lähteeseen. Arvo **\[530\]** ilmaisee, että VendTable/\<Relations/VendTrans. VendTable\_AccountNum-tietolähdettä kutsuttiin 530 kertaa palaamaan, jolloin tietue palautetaan kyseiseen tietolähteeseen ja sen tiedot syötetään tietomalliin.
 
@@ -240,7 +240,7 @@ Suosittelemme, että käytät VendTable/\<Relations/VendTrans. VendTable\_Accoun
 
 Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen tehtyjen kutsujen määrää. Tätä tietolähdettä käytetään liittämään kaikki **lLedgerTransType**-luetteloinnin arvot sen otsikkoon. Käyttämällä tätä tietolähdettä voit löytää asianmukaisen tunnisteen ja syöttää sen kunkin toimittajatapahtuman tietomalliin. Tähän tietolähteeseen soitettujen kutsujen määrä (9 027) on melko suuri 265-tapahtumissa.
 
-![Mallin määrityksen suunnittelijasivu RCS:ssä näyttää 9 027 puhelua tietolähteeseen](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Mallin määrityksen suunnittelijasivu RCS:ssä näyttää 9 027 puhelua tietolähteeseen.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>Paranna mallin määritystä suorituksen jälkeisten tietojen perusteella
 
@@ -253,7 +253,7 @@ Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen te
     3. Laajenna **VendTable**-nimike, laajenna VendTable-tietolähde ( **\<Suhde**-nimike), yksi-moneen-suhteiden luettelo ja valitse **VendTrans.VendTable\_AccountNum**-nimike
     4. Valitse **Välimuisti**.
 
-    ![Asetusten tallentaminen välimuistiin, jotta kaksinkertaiset kutsut voidaan estää](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Asetusten tallentaminen välimuistiin, jotta kaksinkertaiset kutsut voidaan estää.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Siirrä LedgerTransTypeList-tietolähde VendTable-tietolähteen käyttöalueeseen seuraavasti:
 
@@ -274,7 +274,7 @@ Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen te
     3. Valitse **VendTable.\$TransType**-nimike.
     4. Valitse **Välimuisti**.
 
-    ![$TransType-kentän asetusten tallentaminen välimuistiin](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![$TransType-kentän asetusten tallentaminen välimuistiin.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Näiden vaiheiden avulla voit muuttaa **\$TransTypeRecord**-kenttää siten, että se alkaa käyttää välimuistissa olevaa **\$TransType**-kenttää:
 
@@ -329,19 +329,19 @@ Suorita aiemmin tämän ohjeaiheen [Suorituskyvyn seurannan käyttäminen RCS:ss
 
 Huomaa, että mallimääritykseen tehdyt oikaisut ovat poistaneet tietokannasta päällekkäisiä kyselyitä. Tämän mallimäärityksen tietokantataulukoihin ja tietolähteisiin tehtyjen kutsujen määrä on myös vähennetty. Näin ollen koko ER-ratkaisun suorituskyky on parantunut.
 
-![Jäljitä tietoja VendTable-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Jäljitä tietoja VendTable-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 Jäljitystiedoissa VendTable-tietolähteen arvo **\[12\]** ilmaisee, että tätä tietolähdettä kutsuttiin 12 kertaa. Arvo **\[Q:6\]** ilmaisee, että tietokantakutsuille on käännetty kuusi kutsua VendTable-tauluun. Arvo **\[C:6\]** ilmaisee, että tietokannasta noudetut tiedot tallennettiin välimuistiin ja kuusi muuta kutsua käsiteltiin välimuistin avulla.
 
 Huomaa, että LedgerTransTypeList-tietolähteeseen soitettujen kutsujen määrä on vähentynyt 9 027:sta 240:een.
 
-![Jäljitä tietoja LedgerTransTypeList-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Jäljitä tietoja LedgerTransTypeList-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>Tarkasta suorituksen jäljitys sovelluksessa
 
 RCS:n lisäksi jotkin versiot voivat tarjota ER-kehyssuunnittelijakokemuksen ominaisuuksia. Näissä versioissa on **Ota käyttöön suunnittelutila** -vaihtoehto, joka voidaan ottaa käyttöön. Tämä vaihtoehto löytyy **Sähköisen raportoinnin parametrit** -sivun **Yleiset**-välilehdestä, jonka voit avata **Sähköisen raportoinnin** työtilassa.
 
-![Ota käyttöön suunnittelutila -vaihtoehto Sähköisen raportoinnin parametrit- sivulla](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Ota käyttöön suunnittelutila -vaihtoehto Sähköisen raportoinnin parametrit -sivulla.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 Jos käytät jotakin näistä versioista, voit analysoida luotuja suorituskyvyn jäljityksiä suoraan sovelluksessa. Sinun ei tarvitse viedä niitä sovelluksesta ja tuoda niitä RCS:ään.
 
@@ -359,7 +359,7 @@ Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aihe
 
 Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa. Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla.
 
-![Suorituskyvyn jäljitystiedot PerfView-muodossa](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Suorituskyvyn jäljitystiedot PerfView-muodossa.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Tietokantakyselyjä sisältävän suorituksen jäljityksen tarkastelemisen arviointi ulkoisilla työkaluilla
 
@@ -375,7 +375,7 @@ ER-kehykseen tehtyjen parannusten ansiosta PerfView-muodossa luotu suorituskyvyn
     - Määritä **Kerää kyselytilastot** -asetukseksi **Kyllä**.
     - Määritä **Jäljitä kysely** -asetukseksi **Kyllä**.
 
-    ![Suorituksen jäljitys -osa, Käyttäjän parametrit -valintaruutu](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Suorituksen jäljitys -osa, Käyttäjän parametrit -valintaruutu.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Suorita ER-muoto
 
@@ -383,7 +383,7 @@ Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aihe
 
 Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa. Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla. Tämä jäljitys sisältää nyt tiedot SQL-tietokannan käytöstä ER-muodon suorittamisen aikana.
 
-![Suoritetun ER-muodon jäljitystiedot PerfView-muodossa](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Suoritetun ER-muodon jäljitystiedot PerfView-muodossa.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

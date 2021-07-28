@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838247"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345231"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Varastotapahtumien tuotesuodattimien määrittäminen
 
@@ -46,11 +46,11 @@ Tuotesuodattimessa voi olla enintään 10 **Suodattimen otsikko** -ominaisuutta,
 1. Valitse **Suodattimen otsikko** -kenttään arvo.
 1. Anna **Suodatinkoodi**-kenttään arvo.
 
-    ![Tuotesuodattimen määrittäminen](media/Product_Filters10.png "Tuotesuodattimen määrittäminen")
+    ![Tuotesuodattimen määrittäminen.](media/Product_Filters10.png "Tuotesuodattimen määrittäminen")
 
 1. Anna koodi nimi **Kuvaus**-kentässä. Esimerkiksi *Koodi 2* voi viitata toimittajiin. Tämän jälkeen tietylle toimittajalle tai toimittajaryhmällä voidaan luoda tuotesuodatin. Lisätietoja on jäljempänä tämän aiheen kohdassa [Toimittajan suodatinkoodien määrittäminen](#vendor-product-filters).
 
-    ![Tuotesuodattimien joukko](media/Product_Filters.png "Tuotesuodattimien joukko")
+    ![Tuotesuodattimien joukko.](media/Product_Filters.png "Tuotesuodattimien joukko")
 
 ## <a name="set-up-product-filter-groups"></a>Tuotesuodatinryhmien määrittäminen
 
@@ -69,7 +69,7 @@ Suodatinryhmät määritetään seuraavasti:
 1. Valitse **Nimikeryhmä**-kentässä nimikeryhmä, jossa tuotesuodatinta käytetään.
 1. Valitse ryhmässä käytettävät suodatinkoodit tarpeen mukaan kentissä **Koodi 1**–**Koodi 10**.
 
-    ![Nimikeryhmä](media/ProdFilterGroup.png "Nimikeryhmä")
+    ![Nimikeryhmä.](media/ProdFilterGroup.png "Nimikeryhmä")
 
 > [!NOTE]
 > Jos virhesanoma avautuu, kun sivu suljetaan, koodimääritys saattaa puuttua. Nimikeryhmän koodeista voidaan tehdä pakollisia valitsemalla **Nimikeryhmät**-sivulla valintaruudut **Määritä nimikeryhmälle suodatinkoodi 1**, **Määritä nimikeryhmälle suodatinkoodi 2** ja niin edelleen.
@@ -88,7 +88,7 @@ Suodatinkoodit määritetään nimikeryhmissä seuraavasti:
 
     Päivitä vapautettu tuote avaamalla tuotteen **Vapautetun tuotteen tiedot** -sivu ja valitsemalla sitten toimintoruudussa **Muokkaa**. Koodeihin liitetyt suodattimet ovat tämän jälkeen käytettävissä **Varasto**-pikavälilehdessä.
 
-    ![Nimikeryhmät](media/ItemGroup10.png "Nimikeryhmät")
+    ![Nimikeryhmät.](media/ItemGroup10.png "Nimikeryhmät")
 
 1. Valitse **Nimikeryhmän suodatin** -osassa niiden suodattimien valintaruudut, joiden on vastattava, jotta suodatinryhmä voi olla nimikkeen oletussuodatinryhmä.
 

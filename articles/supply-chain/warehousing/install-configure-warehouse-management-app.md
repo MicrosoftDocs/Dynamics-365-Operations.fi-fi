@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: 5aa67673fe05394f498d0844b8e58ba6f0ec1d85
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049313"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346079"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -78,28 +78,28 @@ Varastonhallinnan mobiilisovelluksen käyttö tietyn Supply Chain Management -pa
 1. Anna sen käyttäjän nimi ja salasana, jolla on Azure‑tilauksen käyttöoikeus.
 1. Valitse Azure-portaalin vasemmassa siirtymisruudussa **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Varmista, että käytössä on Supply Chain Managementin käyttämä Azure AD -esiintymä.
 1. Valitse **Hallinta**-luettelossa **Sovelluksen rekisteröinnit**.
 
-    ![Sovelluksen rekisteröinnit](media/app-connect-azure-register.png "Sovelluksen rekisteröinnit")
+    ![Sovelluksen rekisteröinnit.](media/app-connect-azure-register.png "Sovelluksen rekisteröinnit")
 
 1. Avaa ohjattu **Sovelluksen rekisteröinti** -toiminto valitsemalla työkalurivillä **Uusi rekisteröinti**.
 1. Anna sovelluksen nimi, valitse **Vain tämän organisaatiohakemiston tilit** -vaihtoehto ja valitse sitten **Rekisteröi**.
 
-    ![Ohjattu sovelluksen rekisteröintitoiminto](media/app-connect-azure-register-wizard.png "Ohjattu sovelluksen rekisteröintitoiminto")
+    ![Ohjattu sovelluksen rekisteröintitoiminto.](media/app-connect-azure-register-wizard.png "Ohjattu sovelluksen rekisteröintitoiminto")
 
 1. Uusi sovelluksen rekisteröinti avautuu. Kirjoita **Sovelluksen (asiakasohjelman) tunnus** -kohdan arvo muistiin, sillä tarvitset sitä myöhemmin. Tätä tunnusta kutsutaan myöhemmin tässä ohjeaiheessa *asiakasohjelman tunnukseksi*.
 
-    ![Sovelluksen (asiakasohjelman) tunnus](media/app-connect-azure-app-id.png "Sovelluksen (asiakasohjelman) tunnus")
+    ![Sovelluksen (asiakasohjelman) tunnus.](media/app-connect-azure-app-id.png "Sovelluksen (asiakasohjelman) tunnus")
 
 1. Valitse **Hallinta**-luettelossa **Varmenne ja salaisuudet**. Valitse sitten jokin seuraavista painikkeista sen mukaan, miten haluat määrittää todennuksen sovelluksessa. (Lisätietoja on jäljempänä tässä ohjeaiheessa kohdassa [Todennus käyttämällä varmennetta tai asiakasohjelman salaisuutta](#authenticate).)
 
     - **Lataa varmenne** – Lataa salaisuutena käytettävä varmenne. Tätä menetelmää kannattaa käyttää, sillä se on turvallinen ja se on laajemmin automatisoitavissa. Jos varastonhallinnan mobiilisovellusta käytetään Windows-laitteissa, kirjoita muistiin varmenteen lataamisen jälkeen näkyvän **allekirjoituksen** arvo. Tätä arvoa tarvitaan varmenteen määrittämiseen Windows-laitteissa.
     - **Uusi asiakasohjelman salasana** – Luo avain antamalla avaimen kuvaus ja sen kesto **Salasanat**-osassa ja valitse sitten **Lisää**. Kopioi avain ja tallenna se turvalliseen paikaan.
 
-    ![Varmenne ja salaisuudet](media/app-connect-azure-authentication.png "Varmenne ja salaisuudet")
+    ![Varmenne ja salaisuudet.](media/app-connect-azure-authentication.png "Varmenne ja salaisuudet")
 
 Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä on seuraavissa resursseissa:
 
@@ -119,7 +119,7 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
     1. Luo käyttäjä.
     1. Määritä varastoinnin mobiililaitteen käyttäjä.
 
-    ![Varastoinnin mobiililaitteen käyttäjän määrittäminen](media/app-connect-app-users.png "Varastoinnin mobiililaitteen käyttäjän määrittäminen")
+    ![Määritä varastoinnin mobiililaitteen käyttäjä.](media/app-connect-app-users.png "Varastoinnin mobiililaitteen käyttäjän määrittäminen")
 
 1. Azure AD -sovelluksen liittäminen varastonhallinnan mobiilisovelluksen käyttäjään:
 
@@ -127,7 +127,7 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
     1. Luo rivi.
     1. Anna edellisessä osassa muistiin kirjoitettu asiakasohjelman tunnus, nimeä se ja valitse juuri luotu käyttäjä. Kaikille laitteille kannattaa antaa tunniste. Tällä tavoin kadotetun laitteen Supply Chain Managementin käyttöoikeus on helppo poistaa tällä sivulla.
 
-    ![Azure Active Directory -sovellukset](media/app-connect-aad-apps.png "Azure Active Directory -sovellukset")
+    ![Azure Active Directory -sovellukset.](media/app-connect-aad-apps.png "Azure Active Directory -sovellukset")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Todennus käyttämällä varmenteen tai asiakasohjelman salauskoodia
 
@@ -213,30 +213,30 @@ Yhteysasetukset voidaan tuoda seuraavien ohjeiden mukaisesti tiedostosta tai QR-
 
 1. Käynnistä varastonhallinnan mobiilisovellus mobiililaitteessa. Kun sovellus käynnistetään ensimmäisen kerran, näkyviin tulee tervetulosanoma. Valitse **Valitse yhteys**.
 
-    ![Tervetuloviesti](media/app-configure-welcome-screen.png "Tervetuloviesti")
+    ![Tervetuloviesti.](media/app-configure-welcome-screen.png "Tervetuloviesti")
 
 1. Jos yhteysasetukset tuodaan tiedostosta ja tiedostoa tallennettaessa käytettiin oletusnimeä ja -sijaintia, sovellus on voinut jo löytää tiedoston. Siirry siinä tapauksessa vaiheeseen 4. Valitse muussa tapauksessa **Määritä yhteys** ja jatka vaiheeseen 3.
 
-    ![Määritä yhteys](media/app-configure-set-up-connection.png "Määritä yhteys")
+    ![Määritä yhteys.](media/app-configure-set-up-connection.png "Määritä yhteys")
 
 1. Valitse **Yhteysasetukset**-valintaikkunassa **Lisää tiedostosta** tai **Lisää QR-koodista**. Tee valinta sen perusteella, miten haluat tuoda asetukset:
 
     - Jos yhteysasetukset tuodaan tiedostosta, valitse **Lisää tiedostosta**, siirry tiedostoon paikallisessa asemassa ja valitse se. Jos valitse mukautetun sijainnin, sovellus tallentaa sen ja käyttää sitä automaattisesti seuraavalla kerralla.
     - Jos yhteysasetukset tuodaan lukemalla QR-koodi, valitse **Lisää QR-koodista**. Sovellus pyytää laitteen kameran käyttöoikeutta. Kun käyttöoikeus on myönnetty, kamera käynnistyy ja voit käyttää sitä lukemiseen. Laitteen kameran laadun ja QR-koodin monimutkaisuuden mukaan koodin lukeminen voi olla hankalaa. Vähennä siinä tapauksessa QR-koodin monimutkaisuutta luomalla kullekin QR-koodille vain yksi yhteys. (Tällä hetkellä QR-koodin voi lukea vain laitteen kameralla.)
 
-    ![Yhteysasetukset-valikko](media/app-configure-connection-setup-flyout.png "Yhteysasetukset-valikko")
+    ![Yhteysasetukset-valikko.](media/app-configure-connection-setup-flyout.png "Yhteysasetukset-valikko")
 
 1. Kun yhteysasetusten lataaminen onnistuu, valittu yhteys tulee näkyviin.
 
-    ![Ladatut yhteysasetukset](media/app-configure-select-connection.png "Ladatut yhteysasetukset")
+    ![Ladatut yhteysasetukset.](media/app-configure-select-connection.png "Ladatut yhteysasetukset")
 
 1. Jos käytössä on Android-laite ja todennukseen käytetään varmennetta, laite pyytää valitsemaan varmenteen.
 
-    ![Varmenteen valintakehotteen valitseminen Android-laitteessa](media/app-configure-select-certificate.png "Varmenteen valintakehotteen valitseminen Android-laitteessa")
+    ![Varmenteen valintakehotteen valitseminen Android-laitteessa.](media/app-configure-select-certificate.png "Varmenteen valintakehotteen valitseminen Android-laitteessa")
 
 1. Sovellus muodostaa yhteyden Supply Chain Management -palvelimeen ja avaa kirjautumissivun.
 
-    ![Kirjautumissivu](media/app-configure-sign-in-page.png "Kirjautumissivu")
+    ![Kirjautumissivu.](media/app-configure-sign-in-page.png "Kirjautumissivu")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Sovelluksen määrittäminen manuaalisesti
 
@@ -246,15 +246,15 @@ Sovelluksen voi määrittää laitteessa muodostamaan yhteyden manuaalisesti Sup
 1. Jos sovellus käynnistetään **esittelytilassa**, valitse **Yhteysasetukset**. Jos **kirjautumissivu** avautuu, kun sovellus käynnistetään, valitse **Muuta yhteys**.
 1. Valitse **Määritä yhteys**.
 
-    ![Määritä yhteys](media/app-configure-set-up-connection.png "Määritä yhteys")
+    ![Määritä yhteys.](media/app-configure-set-up-connection.png "Määritä yhteys")
 
 1. Valitse **Manuaalinen syöttö**.
 
-    ![Yhteysasetukset-valikko](media/app-configure-connection-setup-flyout.png "Yhteysasetukset-valikko")
+    ![Yhteysasetukset-valikko.](media/app-configure-connection-setup-flyout.png "Yhteysasetukset-valikko")
 
     Avautuvalla **Uusi yhteys** -sivulla on näkyvissä asetukset, jotka tarvitaan yhteyden tietojen antamiseen manuaalisesti.
 
-    ![Manuaaliset yhteyskentät](media/app-configure-input-manually.png "Manuaaliset yhteyskentät")
+    ![Manuaaliset yhteyskentät.](media/app-configure-input-manually.png "Manuaaliset yhteyskentät")
 
 1. Kirjoita seuraavat tiedot:
 

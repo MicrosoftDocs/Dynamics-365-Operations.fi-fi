@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190085"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347683"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross docking tuotantotilauksista lähtevien laituriin
 
@@ -42,7 +42,7 @@ Tuote ilmoitetaan valmiiksi tuotannon tuotossijaintiin (3) ja trukin kuljettaja 
 -   Jos perävaunu on jo määritetty lastausovelle, kuorma-auton kuljettaja ohjataan lataamaan tuote suoraan perävaunuun.
 -   Jos tuotteen siirrolle ei ole suunniteltua tehtävää, trukin kuljettaja ohjataan viemään tuote sisäiseen varastosijaintiin (5).
 
-[![opportunistinen cross-docking](./media/scenario1.png)](./media/scenario1.png)
+[![opportunistinen cross-docking.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Cross docking -määritys
 Voit määrittää cross docking -prosessin **työkäytännöissä**. Työkäytäntö sisältää työtilaustyypin, paikan ja tuotteen. Seuraavassa esimerkissä cross docking määritetään tuotteelle X ja sijaintiin Y.

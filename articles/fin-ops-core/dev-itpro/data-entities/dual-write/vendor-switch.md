@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 5a18fed2eac4c120dca20a1d7797d047639275b9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 70904ee716aabd019210e92895a894810bde27fb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750591"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346517"
 ---
 # <a name="switch-between-vendor-designs"></a>Toimittajan mallien välillä siirtyminen
 
@@ -48,14 +48,14 @@ Noudata näitä vaiheita, kun haluat luoda uusia työnkulkuprosesseja työnkulun
 
 1. Luo uusi työnkulkuprosessi **Toimittaja**-taululle ja valitse **Luo toimittajia Tilit-taulussa** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Tilli**-taulun toimittajan luontiskenaarion.
 
-    ![Toimittajien luonti Tilit-taulun työnkulkuprosessissa](media/create_process.png)
+    ![Toimittajien luonti Tilit-taulun työnkulkuprosessissa.](media/create_process.png)
 
 2. Luo uusi työnkulkuprosessi **Toimittaja**-taululle ja valitse **Päivitä toimittajia Tilit-taulussa** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Tili**-taulun toimittajan päivitysskenaarion.
 3. Luo uusi työnkulkuprosessi **Tili**-taululle ja valitse **Luo toimittajia Toimittajat-taulussa** -työnkulun prosessimalli.
 4. Luo uusi työnkulkuprosessi **Tili**-taululle ja valitse **Päivitä toimittajia Toimittajat-taulussa** -työnkulun prosessimalli.
 5. Voit määrittää työnkulut vaatimuksistasi riippuen joko reaaliaikaisiksi työnkuluiksi tai taustatyönkuluiksi. Jos haluat määrittää työnkulun taustatyönkuluksi, valitse **Muunna taustatyönkuluksi**.
 
-    ![Muunna taustatyönkuluksi -painike](media/background_workflow.png)
+    ![Muunna taustatyönkuluksi -painike.](media/background_workflow.png)
 
 6. Aktivoi **Tili**- ja **Toimittaja**-tauluissa luodut työnkulut, jotta voit alkaa käyttää **Tili**-taulua **Organisaatio**-tyyppisten toimittajien tietojen tallentamiseen.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 06859fc123e53ad58120bae6f936176176009ee1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944434"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345711"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
 
@@ -53,12 +53,12 @@ Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
 1. Konfiguroi **Tiedostonhallintaparametrit**-sivulla SharePoint Serve -käyttöoikeudet, joita käytetään yrityksessä, johon olet kirjautunut (DEMF tässä esimerkissä).
 2. Testaa yhteys varmistaaksesi, että sinulle myönnetty SharePoint Server -käyttöoikeudet.
 
-    [![Asiakirjahallinnan parametrisivu](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
+    [![Asiakirjahallinnan parametrisivu.](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. Avaa määritetty SharePoint-sivusto. Luo uusi kansio, johon ER tallentaa Excel-tiedostot, jotka sisältävä liiketoimintatietoja, joita Power BI -raportit tarvitsevat Power BI -tietojoukkojen lähteenä.
 4. Voit luoda **Tiedostotyypit**-sivulla uuden tiedostotyypin, jota käytetään juuri luomaasi SharePoint-kansioon kirjauduttaessa. Kirjoita **Tiedosto** **Ryhmä**-kenttään ja **SharePoint** **Sijainti**-kenttään ja kirjoita SharePoint-kansion osoite.
 
-    [![Tiedostotyypit-sivu](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
+    [![Tiedostotyypit-sivu.](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
 ## <a name="configure-er-parameters"></a>Konfiguroi ER-parametrit
 1. **Sähköinen raportointi** -työtilassa valitse **Sähköisen raportoinnin parametrit** -linkki.
@@ -68,23 +68,23 @@ Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>ER-tietomallin käyttö tietolähteenä
 ER-tietomallin täytyy olla liiketoimintatietolähteenä, jota käytetään Power BI -raporteissa. Tämä tietomalli ladataan ER-konfiguraatiot-tietovarastosta. Lisätietoja on kohdassa [Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md) tai **ER Tuo kokoonpano Lifecycle Services -palvelusta** -tehtäväoppaasta. Valitse **Intrastat** tietomalliksi joka ladataan valitusta ER-konfiguraatiot-tietovarastosta. (Tässä esimerkissä käytetään mallin 1 versiota.) Tämän jälkeen voit käyttää **Intrastatin** ER-mallin kokoonpanoa **Konfiguroinnit**-sivulla.
 
-[![Intrastat ER -mallin määritys Konfiguroinnit-sivulla](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Intrastat ER -mallin määritys Konfiguroinnit-sivulla.](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Suunnittele ER-muotokonfiguraatio
 Sinun on luotava uusi ER-muotokonfiguraatio, joka käyttää **Intrastat**-tietomallia liiketoimintatietolähteenä. Tämän muotokonfiguraation on luotava tulosteet sähköisinä asiakirjoina OpenXML (Excel-tiedosto) -muodossa. Lisätietoja on **Sähköisen raportoinnin OPENXML-muotoisten raporttimääritysten luonti** -tehtäväoppaassa. Nimeä uusi konfiguraatio **Tuonti-/vientitoiminnot** (Tuonti-/vientitoiminnot) kuvassa esitetyllä tavalla. Käytä Excel-tiedostoa [ER-tiedot - tuonnin ja viennin tiedot](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) mallina suunniteltaessa ER-muotoa. (Lisätietoja muotomallin tuomisesta on tehtäväoppassa.)
 
-[![Tuonti- tai vientitehtävien määritys](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
+[![Tuonti- tai vientitehtävien määritys.](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
 Voit muokata **Tuonti-/vientitoiminnot** muotokonfiguraatiota seuraavasti.
 
 1. Valitse **Suunnittelutoiminto**.
 2. **Muoto**-välilehdellä anna tämän muodon tiedostoelementille nimi **Excel-tulostustiedosto**.
 
-    [![Excel-tulostiedoston elementti](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
+    [![Excel-tulostiedoston elementti.](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
 
 3. Määritä **Määritys**-välilehdessä Excel-tiedoston nimi, joka luodaan aina, kun tämä muoto suoritetaan. Määritä liittyvä lauseke palauttamaan arvon **Tietojen tuonti ja vienti** (Tuodut ja viedyt tiedot) (.xlsx-tiedostotunniste lisätään automaattisesti).
 
-    [![Muodon suunnittelija](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
+    [![Muodon suunnittelija.](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
 
 4. Lisää uusi tietolähdenimike tälle muodolle. (Tätä numerointia tarvitaan myöhempää tietojen sidontaa varten.)
 
@@ -92,19 +92,19 @@ Voit muokata **Tuonti-/vientitoiminnot** muotokonfiguraatiota seuraavasti.
     2. Valitse **Tietomallin luettelointi** tietolähdetyypiksi.
     3. Lisätietoja on kohdassa **Suunta**-tietomallin luettelointi.
 
-    [![direction_enum](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
+    [![direction_enum.](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
 
 5. Suorita **Intrastat**-tietomallin elementtien ja suunnitellun muodon elementtien sidonta kuvassa esitetyllä tavalla.
 
-    [![Sidonnan viimeistely](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
+    [![Sidonnan viimeistely.](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
 
 Kun se on suoritettu, ER-muoto luo tulosteen Excel-muodossa. Se lähettää Intrastat-tapahtumien tiedot tulosteeseen ja erottaa ne tapahtumina, jotka kuvaavat tuonti- tai vientitehtäviä. Valitsemalla **Suorita** voit testata Intrastat-tapahtumaluettelon uuden ER-muodon **Intrastat**-sivulla (**Vero** &gt; **Ilmoitukset** &gt; **Ulkomaankauppa** &gt; **Intrastat**).
 
-[![Intrastat-sivu](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
+[![Intrastat-sivu.](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
 
 Seuraava tuloste luodaan. Tiedoston nimi on **Import and export details.xlsx**, kuten määritit muodon asetuksissa.
 
-[![Import and export details.xlsx](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
+[![Import and export details.xlsx.](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
 
 ## <a name="configure-the-er-destination"></a>ER-kohteiden määrittäminen
 Sinun on määritettävä ER-kehys uuden ER-muotokonfiguraation tulosteen lähettämiseksi erityistavalla.
@@ -126,35 +126,35 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
 1. **Konfiguroinnit**-sivulla (**Organisaation hallinto** &gt; **Sähköinen raportointi** &gt; **Konfiguroinnit**) konfiguraatioiden puurakenteessa, valitse **Tuonti-/vientitoiminnot**-konfiguraatio, jonka loit aiemmin.
 2. Vaihda version 1.1 tila **Luonnos**-tilasta **Valmis** -tilaan, jotta voit ottaa tämän muodon käyttöön.
 
-    [![Toimintojen tuonti-/vientikonfiguraatio Konfiguroinnit-sivulla](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Toimintojen tuonti-/vientikonfiguraatio Konfiguroinnit-sivulla.](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Valitse valmis versio **Tuonti-/vientitoiminnot**-konfiguraatiosta ja valitse sitten **Suorita**. Huomaa, että konfiguroitua kohdetta sovelletaan tulosteeseen, joka luodaan Excel-muodossa.
 4. Määritä **Eräkäsittely**-asetukseksi **Kyllä** raportin suorittamiseksi valvomattomassa tilassa.
 5. Valitse **Toistuminen** ja ajoita eräajon suorittamisen pakollinen toistuminen. Toistuminen määrittää, kuinka usein päivitetyt tiedot siirretään Power BI:hin.
 
-    [![Sähköisen raportin parametrit -valintaikkuna](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
+    [![Sähköisen raportin parametrit -valintaikkuna.](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
 
 6. Kun se on määritetty, ER-raportin suoritustyö löytyy **Erätyöt**-sivulla (**Järjestelmän hallinta &gt; Kyselyt &gt; Erätyöt**).
 
-    [![Erätyöt-sivu](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
+    [![Erätyöt-sivu.](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
 
 7. Kun tämä työ suoritetaan ensimmäisen kerran, kohde luo uuden Excel-tiedoston, jolle on määritetty nimi valitussa SharePoint-kansiossa. Myöhemmin joka kerta, kun työ suoritetaan, kohde luo Excel-tiedostosta uuden version.
 
-    [![Excel-tiedoston uusi versio](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+    [![Excel-tiedoston uusi versio.](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Power BI -tietojoukon luominen käyttämällä ER-muodon tulostetta
 1. Kirjaudu Power BI:hin ja avaa aiemmin luotu Power BI -ryhmä (työtila) tai luo uusi ryhmä. Napsauta **Lisää** kohdassa **Tiedostot** **Tuo tai yhdistä tietoihin** -osassa tai napsauta plus-merkkiä (**+**) **Tietojoukot**-kohdan vieressä vasemmassa ruudussa.
 
-    [![Tietojoukon luonti](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
+    [![Tietojoukon luonti.](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
 2. Valitse **SharePoint - ryhmäsivustot** -vaihtoehto ja kirjoita polku, jota käytät SharePoint Serverissä (esimerkissä `https://ax7partner.litware.com`).
 3. Siirry **/Shared Documents/GER data/PowerBI**-kansioon ja valitse Excel-tiedosto, jonka olet luonut uuden Power BI -tietojoukon tietojen lähteeksi.
 
-    [![Excel-tiedoston valitseminen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
+    [![Excel-tiedoston valitseminen.](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
 
 4. Valitse **Yhdistä** ja valitse **Tuo**. Luodaan uusi tietojoukko, joka perustuu valittuun Excel-tiedostoon. Tietojoukko voidaan lisätä myös automaattisesti äsken luotuun raporttinäkymään.
 
-    [![Tietojoukko koontinäytössä](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
+    [![Tietojoukko koontinäytössä.](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
 5. Määritä päivitysaikataulu tälle tietojoukolle kausittainen päivityksen pakottamiseksi Kausittaiset päivitykset mahdollistavat uusien liiketoimintatietojen käytön ER-raportin kausittaisen suorittamisen ansiosta SharePoint Serverille luodun Excel-tiedoston uuden version avulla.
 
@@ -168,17 +168,17 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
 
 3. Tallenna Power BI -raportti **Tuodut ja viedyt tiedot -raporttina**.
 
-    [![Tuonnin ja viennin tietojen raportti](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
+    [![Tuonnin ja viennin tietojen raportti.](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
     Huomaa, että kartassa näkyvät maat/alueet, jotka on mainittu Excel-tiedostosta (Itävalta ja Sveitsi tässä esimerkissä). Nämä maat/alueet näkyvät värillisinä ja osoittavat laskutettujen summien osuuden.
 
 4. Päivitä Intrastat-tapahtumien luettelo. Vientitapahtuma, joka on peräisin Italiasta, lisätään.
 
-    [![Intrastat-tapahtumien luettelo](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)
+    [![Intrastat-tapahtumien luettelo.](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)
 
 5. Odota ER-raportin seuraavaa ajoitettua suorittamista ja Power BI -tietojoukon seuraavaa ajoitettua päivitystä. Käy läpi Power BI -raportti (valitse vain tuotujen tapahtumien näyttö). Päivitetyssä kartassa näkyy nyt Italia.
 
-    [![Päivitetty määritys](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+    [![Päivitetty määritys.](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>Power BI -raportin käyttö Financessa
 Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -integroinnin määrittäminen työtiloille](configure-power-bi-integration.md).
@@ -187,7 +187,7 @@ Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -i
 2. Valitse **Tuodut ja viedyt tiedot** Power BI -raportti, jonka olet luonut, jotta raportti näytetään valitun sivun toimintonimikkeenä.
 3. Valitse toimintonimike, joka avaa sivun, jossa näkyy Power BI:ssa suunniteltu raportti.
 
-    [![Tuonnin ja viennin tietojen raportti, joka on suunniteltu Power BI:ssä](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Tuonnin ja viennin tietojen raportti, joka on suunniteltu Power BI:ssä.](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

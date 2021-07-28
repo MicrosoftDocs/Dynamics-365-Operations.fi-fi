@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908564"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344267"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Dynamics 365 Supply Chain Managementin (Resurssien hallinta) integrointi Dynamics 365 Guidesin kanssa
 
@@ -56,38 +56,38 @@ Seuraa näitä ohjeita, oppaan ja ylläpidon tarkistuslistamallin kytkemiseksi.
     1. Valitse **Ylläpidon tarkistuslistarivit** -pikavälilehdessä rivi, johon haluat liittää oppaan.
     1. Valitse **Liittyvät Oppaat** -pikavälilehdessä **Lisää opas**.
 
-        ![Oppaan ja ylläpidon tarkistuslistarivin kytkeminen](media/am-guides-integration-add-guide.png "Oppaan ja ylläpidon tarkistuslistarivin kytkeminen")
+        ![Oppaan ja ylläpidon tarkistuslistarivin kytkeminen.](media/am-guides-integration-add-guide.png "Oppaan ja ylläpidon tarkistuslistarivin kytkeminen")
 
     1. Valitse **Nimi**-kentässä opas ja valitse sitten **Tallenna**.
 
-        ![Valitse opas nimikentästä](media/am-guides-integration-select-guide.png "Valitse opas nimikentästä")
+        ![Valitse opas Nimi-kentästä.](media/am-guides-integration-select-guide.png "Valitse opas nimikentästä")
 
 1. Työtyypin ja ylläpidon tarkistuslistamallin kytkeminen:
 
     1. [Luo ylläpitotöiden tyyppi](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type) tai valitse aiemmin luotu ylläpitotyön tyyppi.
     1. Valitse toimintoruudun **Ylläpitotöiden tyypin oletusasetukset**.
 
-        ![Ylläpitotyön tyyppien oletusten painike](media/am-guides-integration-job-defaults.png "Ylläpitotyön tyyppien oletusten painike")
+        ![Ylläpitotyön tyyppien oletukset -painike.](media/am-guides-integration-job-defaults.png "Ylläpitotyön tyyppien oletusten painike")
 
     1. Luo rivi ja valitse **Tallenna**.
 
-        ![Luo rivi](media/am-guides-integration-add-line.png "Luo rivi")
+        ![Luo rivi.](media/am-guides-integration-add-line.png "Luo rivi")
 
     1. Valitse toimintoruudussa **Ylläpidon tarkistuslista**.
 
-        ![Ylläpidon tarkistuslistapainike](media/am-guides-integration-maintenance-checklist.png "Ylläpidon tarkistuslistapainike")
+        ![Ylläpidon tarkistuslista -painike.](media/am-guides-integration-maintenance-checklist.png "Ylläpidon tarkistuslistapainike")
 
     1. Lisää **ylläpidon tarkistuslistarivit** -pikavälilehdessä rivi ja muuta sitten **Tyyppi**-kentän arvoksi **Malli**.
 
-        ![Muuta tyypin arvo](media/am-guides-integration-checklist-lines.png "Muuta tyypin arvo")
+        ![Muuta Tyyppi-arvoa.](media/am-guides-integration-checklist-lines.png "Muuta tyypin arvo")
 
     1. Valitse **Rivitiedot**-pikavälilehden **Malli**-kentässä malli, johon opas on liitetty, ja valitse sitten **Tallenna**.
 
-        ![Valitse malli](media/am-guides-integration-checklist-line-details.png "Valitse malli")
+        ![Valitse malli.](media/am-guides-integration-checklist-line-details.png "Valitse malli")
 
 1. [Luo työtilaus](work-orders/manually-created-workorders.md#create-work-order) ja valitse sitten ylläpitotyön tyyppi, joka käyttää oppaaseen liitettyä ylläpidon tarkistuslistamallia. Opas liitetään automaattisesti työtilaukseen.
 
-    ![Valitse ylläpitotyön tyyppi](media/am-guides-integration-create-work-order.png "Valitse ylläpitotyön tyyppi")
+    ![Valitse ylläpitotyön tyyppi.](media/am-guides-integration-create-work-order.png "Valitse ylläpitotyön tyyppi")
 
 1. Näytä työtilaukseen ja työntekijöihin liittyvä opas:
 
@@ -95,11 +95,11 @@ Seuraa näitä ohjeita, oppaan ja ylläpidon tarkistuslistamallin kytkemiseksi.
     1. [Avaa työtilauksen ylläpidon tarkistuslista](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job).
     1. Valitse tarkistuslistarivi tarkastellaksesi liittyvää opasta.
 
-        ![Tarkistuslistariviin liittyvä opas](media/am-guides-integration-show-guide.png "Tarkistuslistariviin liittyvä opas")
+        ![Tarkistuslistariviin liittyvä opas.](media/am-guides-integration-show-guide.png "Tarkistuslistariviin liittyvä opas")
 
     1. Avaa HoloLens-tehtäväopas.
 
-        ![Avaa HoloLens-tehtäväopas](media/am-guides-integration-hololens-select.png "Avaa HoloLens-tehtäväopas")
+        ![Avaa HoloLens-tehtäväopas.](media/am-guides-integration-hololens-select.png "Avaa HoloLens-tehtäväopas")
 
 > [!NOTE]
 > Voit liittää oppaan myös suoraan työtilauksen tai työlajin ylläpidon tarkistuslistaan.

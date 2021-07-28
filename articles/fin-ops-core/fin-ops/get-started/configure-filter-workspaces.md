@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d92427c1aeee92921b5b817b67530cf8aeddbbfb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29b9e920744296d458e74ff3990191bde72b9e58
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744024"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344294"
 ---
 # <a name="configure-and-filter-workspaces"></a>Määritä työtiloja ja suodata niitä
 
@@ -32,11 +32,11 @@ Tämä artikkeli sisältää työtilojen määrittämisen ja suodattamisen yleis
 
 Voit muuttaa joidenkin työtilojen ulkoasua ja toimintaa päivittämällä koko työtilaa koskevat asetukset. Kun työtilaa voi määrittää, toimintoruudussa on painike, jonka avulla määrityksiä voi muuttaa. Esimerkiksi seuraavassa kuvassa painikkeen nimeksi on annettu **Määritä oma työtila**.
 
-[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![configure-and-filter-workspaces.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Kun napsautat painiketta, voit muokata avautuvassa valintaikkunassa työtilan ennalta määritettyjä asetuksia. Valintaikkunassa olevat erikoisasetukset vaihtelevat työtilan mukaan. Ne riippuvat työtilan erityisistä ohjausobjekteista ja liiketoimintatiedoista.
 
-[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![configure-my-workspace.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Työtilan suodattaminen
 
@@ -46,11 +46,11 @@ Useiden työtilojen sisältöä voi suodattaa. Käytettävissä olevien ohjausob
 
 Voit suodattaa koko työtilan työtilakohtaisen suodattimen avulla. Työtilakohtainen suodatin löytyy työtilan vasemmasta yläkulmasta. Kun avattavasta luettelosta valitaan arvo, työtilan sisältö suodatetaan valinnan mukaan.
 
-[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![workspace-filter.](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Kun avaat suodattimen, esiin tulee useita vaihtoehtoja.
 
-[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![workspace-filter-expanded.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Valitse asetus, jonka perusteella työtila suodatetaan.
 
@@ -58,7 +58,7 @@ Valitse asetus, jonka perusteella työtila suodatetaan.
 
 Jos työtilan yksittäisillä osilla on suodattimia, voit suodattaa kunkin osan erikseen. Seuraavassa kuvassa suodatin (kenttä, jossa lukee Suodatin) on esimerkki vapaatekstikentän suodattimesta.
 
-[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![workspace-section-filters.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Suodata osan sisältö valitsemalla tai antamalla arvo samalla tavalla kuin työtilakohtaisessa suodattimessa.
 

@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830759"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344143"
 ---
 # <a name="work-split"></a>Työn jako
 
@@ -51,7 +51,7 @@ Ota seuraavaksi *Työn jako* -toiminto, joka ilmaistaan seuraavasti:
 - **Jaa työ** – jaa nykyinen työtunnus useiksi pieniksi työtunnuksiksi, joita eri työntekijät voivat käsitellä.
 - **Peruuta työn jakoistunto** – peruuta työn jakoistunto ja anna mahdollisuus työn käsittelyyn.
 
-![Jaa työ- ja Peruuta työn jakoistunto -painikkeet](media/Work_split_buttons.png "Jaa työ- ja Peruuta työn jakoistunto -painikkeet")
+![Jaa työ- ja Peruuta työn jakoistunto -painikkeet.](media/Work_split_buttons.png "Jaa työ- ja Peruuta työn jakoistunto -painikkeet")
 
 > [!IMPORTANT]
 > **Jaa työ** -painike ei ole käytettävissä, jos jokin seuraavista ehdoista toteutuu.
@@ -94,7 +94,7 @@ Työ jaetaan seuraavasti:
 
     Nykyisen työn **Työn eston syy** -kentän asetukseksi määritetään *Jaa työ* ja työ estetään.
 
-    ![Eston syy](media/Blocking_reason.png "Eston syy")
+    ![Eston syy.](media/Blocking_reason.png "Eston syy")
 
 1. Valitse nykyisestä työtunnuksesta poistettavat rivit ja lisää uusi työtunnus. Seuraavat tapahtumat:
 

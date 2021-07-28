@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893198"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345735"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 
@@ -80,7 +80,7 @@ On suositeltavaa, että ER-määritykset suunnitellaan kehitysympäristössä Fi
 
 Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot voidaan [ladata](#data-persistence-consideration) testiympäristöön konfiguraation arviointia (oikea prosessi-integraatio, tulosten oikeellisuus, suorituskyky) ja laadunvarmistusta (roolipohjaisten käyttöoikeuksien oikeellisuus, tehtävien eriyttäminen jne.) varten. Tähän tarkoitukseen voidaan käyttää toimintoja, jotka sallivat sähköisen raportoinnin konfiguraatioiden vaihdon. Testatut sähköisen raportoinnin konfiguraatiot voidaan ladata joko LCS:ään, jakaa palvelun tilaajille, tai [tuoda](#data-persistence-consideration) tuotantoympäristöön sisäiseen käyttöön.
 
-![ER-konfiguraation elinkaari](./media/ger-configuration-lifecycle.png)
+![ER-konfiguraation elinkaari.](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Tietojen pysyvyyden huomioon ottaminen
 

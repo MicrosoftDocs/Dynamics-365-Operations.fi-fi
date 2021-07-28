@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814509"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344469"
 ---
 # <a name="replenishment-strategies"></a>Täydennysstrategiat
 
@@ -45,7 +45,7 @@ Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäs
 
 Voit käyttää malleja valitsemalla **Varastonhallinta \> Asetukset \> Täydennys \> Täydennysmallit** Valitse tai luo aallon kysynnän täydennysmalli **Yleiskuvaus**-osa kohdassa, jossa **Täydennystyyppi**-kentän asetuksena on *Aallon kysyntä*. Määritä sitten täydennysmallin rivit **Täydennysmallin tiedot** -osassa. Valitse kunkin rivin **Täydennysstrategia**-kentässä käytettävä strategia.
 
-![Täydennysmallit-sivu](media/ReplenTempWaveDmdMaxLocCap.png "Täydennysmallit-sivu")
+![Täydennysmallit-sivu.](media/ReplenTempWaveDmdMaxLocCap.png "Täydennysmallit-sivu")
 
 Jos **Täydennysstrategia**-sarake ei ole näkyvissä **Täydennysmallin tiedot** -osan ruudukossa, varmista, että toiminto on otettu käyttöön ja että valitun täydennysmallin täydennystyyppi on *Aallon kysyntä*.
 
@@ -85,7 +85,7 @@ Jos täydennysstrategiaksi määritetään kuitenkin *Sijainnin enimmäiskapasit
 - **Täydennystyö 1:** kerää 4 laatikkoa bulkkisijainnista ja aseta ne sijaintiin keräily-001.
 - **Täydennystyö 2:** kerää 5 laatikkoa bulkkisijainnista ja aseta ne sijaintiin keräily-002.
 
-[![Esimerkki 1](media/ReplenTemp_example_1.png "Esimerkki 1")](media/ReplenTemp_example_1_large.png)
+[![Esimerkki 1.](media/ReplenTemp_example_1.png "Esimerkki 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Esimerkki 2
 
@@ -109,7 +109,7 @@ Täydennyksen keräilyn sijaintidirektiivien **Salli jakaminen** -asetuksen peru
 
 Tulosten ero perustuu työtä luotaessa käytettävissä oleviin tietoihin. Kun täydennyksen keräilyn sijaintidirektiivien **Salli jakaminen** -asetuksena on *Kyllä*, löydetyt 160 kpl ovat tiedossa. Niinpä työ luodaan kyseiselle määrälle. Jos **Salli jakaminen** -asetuksena on kuitenkin *Ei*, tiedossa ei ole, että nimikkeitä on 160 kpl. Koska täydennettävä ylimäärä on 3 laatikkoa, kyseinen ylimäärä jätetään pois ja alkuperäistä määrää yritetään uudelleen.
 
-[![Esimerkki 2](media/ReplenTemp_example_2.png "Esimerkki 2")](media/ReplenTemp_example_2_large.png)
+[![Esimerkki 2.](media/ReplenTemp_example_2.png "Esimerkki 2")](media/ReplenTemp_example_2_large.png)
 
 Tämän vuoksi täydennyssijainteihin saadaan enimmäismäärä, kun täydennyksen keräilyn sijaintidirektiivien **Salli jakaminen** -asetukseksi on määritetty *Kyllä*.
 

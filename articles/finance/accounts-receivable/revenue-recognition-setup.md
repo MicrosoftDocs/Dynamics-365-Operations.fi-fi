@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837150"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345623"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
@@ -72,7 +72,7 @@ Tuottokirjauksen asetukset määritetään **Kirjanpitoparametrit** -sivun **Tuo
     - Kun tämän asetuksen arvona on **Ei**, korjaavan tapahtuman kirjaaminen rajoitetaan kirjanpitoon. Kun tämän asetuksen arvona on **Ei**, myyntireskontrassa ei luoda lisäasiakirjoja sisäisen kirjanpidon korjausta varten. Kun lasku maksetaan, tilitysprosessissa käytetään vanhaa kirjanpitomerkintää mahdollisten käteisalennusten, toteutuneen voiton tai toteutuneen tappion kirjaukseen.
     - Kun tämän asetuksen arvo on **Kyllä**, myyntireskontrassa luodaan automaattisesti takaisinkirjausasiakirja ja uusi lasku korjaavaa tapahtumaa varten. Koska tämä korjaus on sisäisen kirjanpidon korjaus, uusia asiankirjoja ei lähetetä tai ilmoiteta asiakkaalle. Takaisinkirjausasiakirja tilitetään alkuperäiselle laskulle ja asiakas maksaa uuden korjatun laskun. Huomaa, että kaikki kolme asiakirjaa näkyvät raporteissa, kuten asiakkaan tiliotteessa.
 
-[![Määritystiedot](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Määritystiedot.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Tuottoaikataulut
 
@@ -82,7 +82,7 @@ Jos tuotto kirjataan välitavoitteiden mukaan, suosittelemme tuottokirjausaikata
 
 Tuottoaikataulut luodaan **Tuottoaikataulut** -sivulla (**Tuottokirjaus \> Määritys \> Tuottoaikataulut**).
 
-[![Tuottoaikataulut](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Tuottoaikataulut.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia lisäasetuksia käytetään tuottoaikataulun luomiseen, kun lasku kirjataan.
 
@@ -104,7 +104,7 @@ Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia li
 
 Valitse **Tuottoaikataulun tiedot** -painike tarkastellaksesi yleisiä kausia ja prosenttiosuuksia, jotka kirjataan kunkin kauden aikana. Oletusarvoisesti **Kirjausprosentti** -arvo jaetaan tasan kausimäärän kesken. Jos kirjausperusteen arvoksi on asetettu joko **Kuukausittain** tai **Esiintymät**, kirjausprosenttia voidaan muuttaa. Kun muutat kirjausprosenttia, saat varoitusviestin siitä, että kokonaismäärä ei ole 100 prosenttia. Jos saat viestin, voit jatkaa rivien muokkaamista. Kokonaismäärän on kuitenkin oltava 100 prosenttia ennen sivun sulkemista.
 
-[![Tuottoaikataulun tiedot](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+[![Tuottoaikataulun tiedot.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Varaston määritys
 
@@ -139,7 +139,7 @@ Nimikeryhmiä ja vapautettuja tuotteita voidaan määrittää käyttäen joko me
 
 Kun vapautetun tuotteen asetukset on määritetty, tuottohinta on määritettävä manuaalisesti antamalla käyvä hinta tai mediaanihinta (jos käytetään mediaanihintamenetelmää) **Tuottohinnat**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston määritys \> Vapautetut tuotteet** ja valitse sitten **Tuottohinnat** **Tuottokirjaus** -ryhmän **Myy**-välilehden toimintoruudussa).
 
-[![Tuottohinnat](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Tuottohinnat.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Tällä sivulla manuaalisesti määritettyä tuottohintaa käytetään tuottohintakohdistuksen määrittämiseen kussakin myyntitilauksessa määritettyjen ehtojen perusteella. Kukin ehto yhdistetään myyntitilaukseen sen tuottohinnan määrittämiseksi, jota käytetään kohdistusprosessissa.
 
@@ -179,9 +179,9 @@ Nippunimikettä määritettäessä on määritettävä kaksi **Vapautetut tuotte
 - Nimike on määritettävä tuoterakenteen nimikkeeksi **Tuotantotyyppi**-kentän **Kehittäjä**-pikavälilehdessä.
 - **Nippu**-kentän **Yleistä**-pikavälilehdessä nimike on merkittävä nippunimikkeeksi.
 
-Sen jälkeen komponentit on kohdistettava nipun/tuoterakenteen päänimikkeelle **Tuoterakenteen versiot**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet** ja valitse sitten **Tuoterakenteen versiot** **Tuoterakenne**-ryhmän **Kehittäjä**-välilehden toimintoruudussa). Lisätietoja esitetään tuoterakenteen nimikkeiden määritysasiakirjoissa.
+Sen jälkeen komponentit on kohdistettava nipun/tuoterakenteen päänimikkeelle **Tuoterakenteen versiot**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet** ja valitse sitten **Tuoterakenteen versiot** **Tuoterakenne**-ryhmän **Kehittäjä**-välilehden toimintoruudussa). Lisätietoja esitetään tuoterakenteiden määritysasiakirjoissa.
 
-[![Vapautetut tuotteet, tuoterakenteen aikataulut](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Vapautetut tuotteet, tuoterakenteen aikataulut.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Jos nipun päänimikkeet ja nipun komponentit on asetettu kohdistukselle, nipun tuottohinta jaetaan komponenteille niiden tuottoprosenttiosuuksien perusteella.
 

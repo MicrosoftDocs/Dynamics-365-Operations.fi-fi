@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894121"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348161"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
 
@@ -39,7 +39,7 @@ Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden.
 
 [Luo uusi ER-muoto](tasks/er-format-configuration-2016-11.md) nykyisessä topologiassa ja muodosta asiakirjoja, joille aiot lisätä mukautetun tallennussijainnin. Vaihtoehtoisesti voit [tuoda aiemmin luodun ER-muodon tähän topologiaan](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Muodon suunnittelutoiminto -sivu](media/er-extend-file-storages-format.png)
+![Muodon suunnittelutoiminto -sivu.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Luotavassa tai tuotavassa ER-muodossa on oltava vähintään yksi seuraavista muotoelementeistä:
@@ -58,7 +58,7 @@ ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määrite
 3. Määritä **Luokka**-kentässä **Liitä tiedosto**.
 4. Määritä **Ryhmä**-kentässä **Tiedosto**.
 
-![Asiakirjatyypit-sivu](media/er-extend-file-storages-document-type.png)
+![Tiedostotyypit-sivu.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Asiakirjatyypit ovat yrityskohtaisia. Jos haluat käyttää ER-muotoa, jossa on määritetty kohde, useissa yrityksissä, kullekin yritykselle on määritettävä oma asiakirjatyyppi.
@@ -113,14 +113,14 @@ public DocuRef insertFile(
 - **Arkisto** – Kun tätä kohdetta käytetään, suoritettavan ER-muodon uusi tietue luodaan ERFormatMappingRunJobTable-taulukossa. Tämän tietueen **Arkistoitu**-kentän arvoksi määritetään **Epätosi**. Jos ER-muodon suorittaminen onnistuu, muodostettu asiakirja liitetään tähän tietueeseen ja **AttachingFile()**-tapahtuma muodostetaan. Tässä ER-kohteessa valittu asiakirjatyyppi määrittää liitetyn tiedoston tallennussijainnin (Microsoft Azuren tallennus tai Microsoft SharePoint -kansio).
 - **Työarkisto** – Kun tätä kohdetta käytetään, suoritettavan ER-muodon uusi tietue luodaan ERFormatMappingRunJobTable-taulukossa. Tämän tietueen **Arkistoitu**-kentän arvoksi määritetään **Tosi**. Jos ER-muodon suorittaminen onnistuu, muodostettu asiakirja liitetään tähän tietueeseen ja **AttachingFile()**-tapahtuma muodostetaan. ER-parametreissa määritetty asiakirjatyyppi määrittää liitetyn tiedoston tallennussijainnin (Azuren tallennus tai SharePoint-kansio).
 
-![Sähköisen raportoinnin parametrit -sivu](media/er-extend-file-storages-parameters.png)
+![Sähköisen raportoinnin parametrit -sivu.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>ER-kohteen määrittäminen
 
 1. Määritä luodun tai tuodun ER-muodon yhden edellä mainitun elementin (tiedosto, kansio, yhdistämistoiminto tai liite) arkistokohde. Lisätietoja on kohdassa [ER Kohteiden määrittäminen](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Käytä asiakirjatyyppiä, jonka lisäsit määritetylle kohteelle aiemmin. (Tämä ohjeaiheen esimerkissä asiakirjatyyppi on **FileX**.)
 
-![Kohdeasetukset-valintaikkuna](media/er-extend-file-storages-destination.png)
+![Kohdeasetukset-valintaikkuna.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Lähdekoodin muokkaaminen
 

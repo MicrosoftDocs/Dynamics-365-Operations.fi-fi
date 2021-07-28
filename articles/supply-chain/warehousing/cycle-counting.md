@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d86c16ecd2105a7f118cf77aa078f553feb2d933
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838343"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345255"
 ---
 # <a name="cycle-counting"></a>Inventointi
 
@@ -34,7 +34,7 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 2.  **Inventoinnin käsittely** – kun inventointityö on luotu, voit suorittaa sen laskemalla varastosijainnin nimikkeet ja kirjaamalla tuloksen Dynamics 365 Supply Chain Managementiin mobiililaitteella. Vaihtoehtoisesti voit laskea varastosijainnin nimikkeet inventointityötä luomatta. Tätä prosessia kutsutaan nimellä *spot-inventointi*.
 3.  **Lasketussa arvossa ilmenevien erojen selvittäminen** – inventoinnin jälkeen nimikkeillä, joiden lasketussa arvossa on eroja, työn tilana on **Odottaa tarkistusta** **Kaikki työ** -sivulla. Voit selvittää erot **Tarkistusta odottava inventointityö** -sivulla.
 
-Seuraavassa kuvassa on esitetty inventointiprosessi. ![Inventointiprosessin kulku](./media/performcyclecountinginawarehouselocation.jpg)
+Seuraavassa kuvassa on esitetty inventointiprosessi. ![Inventointiprosessin kulku.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Inventoinnin edellytykset
 Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen inventointia.

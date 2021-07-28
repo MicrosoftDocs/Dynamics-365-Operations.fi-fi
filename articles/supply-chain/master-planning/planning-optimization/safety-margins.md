@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908290"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347731"
 ---
 # <a name="safety-margins"></a>Varmuusmarginaalit
 
@@ -41,7 +41,7 @@ Varmuusmarginaalityyppejä on seuraavat kolme:
 
 Seuraavassa kuvassa näkyy, miten näitä varmuusmarginaaleja käytetään ajan kuluessa.
 
-![Varmuusmarginaalit](media/safety-margins-1.png)
+![Varmuusmarginaalit.](media/safety-margins-1.png)
 
 Kaikki marginaalit määritetään päivinä. Oletusarvo, joka on *0* (nolla), osoittaa, että marginaalia ei ole käytetty. Jos määrität useita marginaaleja, ne kaikki lisätään kokonaisaikaan tarjonnan *tilauspäivämäärästä* kysynnän *tarvepäivämäärään*. Ajatellaan, että määrityksellä ei ole läpimenoaikaa, ja jokaisen kolmen marginaalityypin arvoksi on määritetty yksi päivä. Tässä tapauksessa tarjonnan tilauspäivämäärän ja kysynnän tarvepäivämäärän välillä on kolme päivää. Jos siis tilauspäivämäärä on 1.7., tarvepäivämäärän tulisi olla 4.7.
 
@@ -51,7 +51,7 @@ Vastaanottomarginaali on todennäköisesti eniten käytetty kolmesta varmuusmarg
 
 Seuraavassa kuvassa näkyy vastaanottomarginaali.
 
-![Vastaanottomarginaali](media/safety-margins-2.png)
+![Vastaanottomarginaali.](media/safety-margins-2.png)
 
 Vastaanottomarginaalia käytetään yleensä puskurina. Se varmistaa ajan varastoinnin rekisteröintiä tai muita aikaa vieviä prosesseja varten. Niitä ei tallenneta yleisen läpimenoajan osana järjestelmässä. Ostojen osalta eräs etu on se, että ostotilauksen *toimituspäivämäärää* siirretään eteenpäin vastaavasti. Jos lisäät läpimenoaikaa varmuusmarginaalin käyttämisen sijaan, toimittaja voi yhä pyytää viime hetken toimituksia.
 
@@ -66,7 +66,7 @@ Huomaa, että vastaanottomarginaalia ei käytetä, kun käytettävissä olevaa v
 
 Seuraavassa kuvassa näkyy uudelleentilausmarginaali.
 
-![Uudelleentilausmarginaali](media/safety-margins-3.png)
+![Uudelleentilausmarginaali.](media/safety-margins-3.png)
 
 Uudelleentilausmarginaali lisätään ennen nimikkeen läpimenoaikaa kaikille suunnitelluille tilauksille pääsuunnittelun aikana. Näin se varmistaa, että toimitustilauksen asettamiselle on käytettävissä lisäaikaa. Tätä marginaalia käytetään yleensä puskurina, jotta voidaan varmistaa riittävä aika toimitustilausten luonnin aikana tarvittaville hyväksymisprosesseille ja muille sisäisille prosesseille. Uusintatilausmarginaali asetetaan toimituksen *tilauspäivämäärän* ja *alkupäivämäärän* välille.
 
@@ -77,7 +77,7 @@ Uudelleentilausmarginaali lisätään ennen nimikkeen läpimenoaikaa kaikille su
 
 Seuraavassa kuvassa näkyy toimitusmarginaali.
 
-![Toimitusmarginaali](media/safety-margins-4.png)
+![Toimitusmarginaali.](media/safety-margins-4.png)
 
 Toimitusmarginaali vähennetään kysynnän tarvepäivämäärästä pääsuunnittelun aikana. Sen avulla voit varmistaa, että käyttäjällä on aikaa reagoida saapuviin kysyntätilauksiin ja lähettää ne. Tätä marginaalia käytetään yleensä puskurina, joka varmistaa ajan lähetyksille ja liittyville lähteville varastoprosesseille.
 
@@ -165,7 +165,7 @@ Seuraavassa kuvassa on matriisi, jossa on yhteenveto siitä, mitä kalentereita 
 - **Varasto:** Keltainen
 - **Toimittaja:** Sininen
 
-[![Kalenterin asetusten yhteenvedon matriisi](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Kalenterin asetusten yhteenvedon matriisi.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Viiveiden laskeminen
 
@@ -173,7 +173,7 @@ Kaikki varmuusmarginaalien kolme tyyppiä otetaan huomioon, kun järjestelmä m�
 
 Esimerkiksi nimikkeen läpimenoaika on yksi päivä ja vastaanottomarginaali on kolme päivää. Tämän nimikkeen myyntitilaus vaaditaan tänään. Tässä tapauksessa viive lasketaan seuraavasti: *läpimenoaika* + *vastaanottomarginaali* = neljä päivää. Jos siis tänään on 14.8., neljän päivän viive tuottaa tulokseksi 18.8. Seuraavassa kuvassa on esimerkki tästä tapauksesta.
 
-![Esimerkki viiveen laskennasta](media/safety-margins-delays.png)
+![Esimerkki viiveen laskennasta.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

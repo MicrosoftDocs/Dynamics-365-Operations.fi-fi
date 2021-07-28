@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1fce2570e1b0cc334fc0e92e5e83c53a4566b4a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345981"
 ---
 # <a name="warehouse-set-up"></a>Varaston määrittäminen
 
@@ -45,7 +45,7 @@ Varaston toimipaikka määritetään noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa on esimerkki varaston toimipaikasta.
 
-![Esimerkki varaston toimipaikasta](media/warehouse-site.png)
+![Esimerkki varaston toimipaikasta.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Varaston määrittäminen
 
@@ -98,7 +98,7 @@ Voit määrittää varaston varastosijainnit standardivarastolle, vaurioituneell
     
 Seuraavassa kuvassa on San Franciscon varaston varastosijaintiasetukset.
 
-![Esimerkki varastosijainnin asetuksista](media/warehouse-inventory-locations.png)
+![Esimerkki varastosijainnin asetuksista.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Varaston määrityksen viimeistely
 
@@ -121,11 +121,11 @@ Viimeiste varaston määritys noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa on määritetyn varaston tiedot.
 
-![Esimerkki määritetystä varastosta](media/warehouse-sample.png)
+![Esimerkki määritetystä varastosta.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Varastonhallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
+[Varastohallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Kanavien yleiskatsaus](channels-overview.md)
 

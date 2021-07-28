@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944362"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345687"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -101,7 +103,7 @@ Muotokomponentin avulla tietyt raporttitulostuksessa käytettäviä tiedostoja v
 
 Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
 
-[![Lähtevien muotokomponenttien tiedonkulku](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Lähtevien muotokomponenttien tiedonkulku.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 Voit suorittaa yksittäisen sähköisen raportoinnin muotomäärityksen ja luoda lähtevän sähköisen asiakirjan tunnistamalla muotomääritysten yhdistämismääritykset.
 
@@ -115,7 +117,7 @@ Muotokomponentti on saapuvan asiakirjan malli, joka tuodaan suorituksen aikana. 
 
 Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
 
-[![Saapuvien muotokomponenttien tiedonkulku](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Saapuvien muotokomponenttien tiedonkulku.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Jos haluat tuoda saapuvan sähköisen asiakirjan tietoja suorittamalla sähköisen raportoinnin muotomääritykset, sinun on tunnistettava muotomäärityksen toivotut yhdistämismääritykset sekä mallin yhdistämismääritysten integrointikohta. Voit käyttää saman mallin yhdistämismäärityksiä ja kohteita yhdessä erityyppisten saapuvien asiakirjojen erilaisten muotojen kanssa.
 
@@ -290,7 +292,7 @@ Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimp�
 
 Financen ER-määritysten luetteloa päivitetään jatkuvasti. Tällä hetkellä tuettujen ER-määritysten luetteloa voi tarkastella avaamalla [yleisen tietovaraston](er-download-configurations-global-repo.md). **Käytöstä poistamisen tiedot** -pikavälilehdessä voi tarkastella tietoja määrityksistä, jotka on poistettu käytöstä tai joita ei enää ylläpidetä. 
 
-![Yleisen tietovaraston sisällön suodattaminen Konfiguraatiosäilö-sivulla](./media/er-overview-03.gif)
+![Yleisen tietovaraston sisällön suodattaminen Konfiguraatiosäilö-sivulla.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

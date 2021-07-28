@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91b19598075871dcfaed3ad9978aa8fe8181aa6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9440471d6983136971878c8ee9e327d4dd407833
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836659"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346151"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Suunnittelun muutostenhallintatoiminnon esittely
 
@@ -57,7 +57,7 @@ Suunnitteluorganisaatio omistaa suunnittelutiedot sekä vastaa tuotesuunnittelus
     - **Suunnitteluorganisaatio:** *DEMF*
     - **Organisaation nimi:** *Contoso Entertainment System Germany*
 
-    ![Suunnitteluorganisaation lisääminen](media/engineering-org.png "Suunnitteluorganisaation lisääminen")
+    ![Suunnitteluorganisaation lisääminen.](media/engineering-org.png "Suunnitteluorganisaation lisääminen")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>Version tuotedimensioryhmän määrittäminen
 
@@ -67,7 +67,7 @@ Suunnitteluorganisaatio omistaa suunnittelutiedot sekä vastaa tuotesuunnittelus
 1. Tallenna uusi dimensio ja lataa arvot **Tuotedimensiot**-pikavälilehteen valitsemalla **Tallenna**.
 1. Määritä **Tuotedimensiot**-pikavälilehdessä **Versio** aktiiviseksi tuotedimensioksi.
 
-    ![Tuotedimensioryhmän lisääminen](media/product-dimension-groups.png "Tuotedimensioryhmän lisääminen")
+    ![Tuotedimensioryhmän lisääminen.](media/product-dimension-groups.png "Tuotedimensioryhmän lisääminen")
 
 ### <a name="set-up-product-lifecycle-states"></a>Tuotteen elinkaaren tilojen määrittäminen
 
@@ -82,7 +82,7 @@ Suunnittelutuotteen elinkaaren eri vaiheissa on tärkeää, että kussakin elink
 1. Tallenna uusi elinkaaren tila ja lataa arvot **Käyttöönotetut liiketoimintaprosessit** -pikavälilehteen valitsemalla **Tallenna**.
 1. Valitse **Käyttöönotetut liiketoimintaprosessit** -pikavälilehdessä liiketoimintaprosessit, joiden on oltava käytettävissä. Jätä tässä esimerkissä **Käytäntö**-kentän asetukseksi *Käytössä* kaikkien liiketoimintaprosessien osalta.
 
-    ![Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön](media/product-lifecycle-states-1.png "Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön")
+    ![Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön.](media/product-lifecycle-states-1.png "Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön")
 
 1. Lisää toinen elinkaaren tila valitsemalla **Uusi** ja määritä sitten seuraavat arvot:
 
@@ -92,7 +92,7 @@ Suunnittelutuotteen elinkaaren eri vaiheissa on tärkeää, että kussakin elink
 1. Tallenna uusi elinkaaren tila ja lataa arvot **Käyttöönotetut liiketoimintaprosessit** -pikavälilehteen valitsemalla **Tallenna**.
 1. Valitse **Käyttöönotetut liiketoimintaprosessit** -pikavälilehdessä liiketoimintaprosessit, joiden on oltava käytettävissä. Määritä tässä esimerkissä **Käytäntö**-kentän asetukseksi *Käytössä mutta varoitus* kaikkien liiketoimintaprosessien osalta.
 
-    ![Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön (sisältää varoituksia)](media/product-lifecycle-states-2.png "Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön (sisältää varoituksia)")
+    ![Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön (sisältää varoituksia).](media/product-lifecycle-states-2.png "Elinkaaren tilan liiketoimintaprosessien ottaminen käyttöön (sisältää varoituksia)")
 
 ### <a name="set-up-a-version-number-rule"></a>Versionumerosäännön määrittäminen
 
@@ -103,7 +103,7 @@ Suunnittelutuotteen elinkaaren eri vaiheissa on tärkeää, että kussakin elink
     - **Numerosääntö:** *Automaattinen*
     - **Muoto:** *V-\#\#*
 
-    ![Tuoteversion numerosäännön lisääminen](media/version-number-rule.png "Tuoteversion numerosäännön lisääminen")
+    ![Tuoteversion numerosäännön lisääminen.](media/version-number-rule.png "Tuoteversion numerosäännön lisääminen")
 
 ### <a name="set-up-a-product-release-policy"></a>Tuotteen vapautuskäytännön määrittäminen
 
@@ -135,7 +135,7 @@ Suunnittelutuotteen elinkaaren eri vaiheissa on tärkeää, että kussakin elink
     - **Kopioi reitin hyväksyntä:** valitse tämä valintaruutu.
     - **Kopioi reitin aktivointi:** valitse tämä valintaruutu.
 
-    ![Tuotteen vapautuskäytännön lisääminen](media/product-release-policy.png "Tuotteen vapautuskäytännön lisääminen")
+    ![Tuotteen vapautuskäytännön lisääminen.](media/product-release-policy.png "Tuotteen vapautuskäytännön lisääminen")
 
 ### <a name="set-up-an-engineering-product-category"></a>Suunnittelun tuoteluokan määrittäminen 
 
@@ -160,7 +160,7 @@ Suunnittelun tuoteluokat muodostavat perustan suunnittelutuotteiden luonnille (e
 1. Määritä **Vapautuskäytäntö**-pikavälilehdessä **Tuotteen vapautuskäytäntö** -asetukseksi *Osat*.
 1. Valitse **Tallenna**.
 
-    ![Suunnittelun tuoteluokan lisääminen](media/product-category-details.png "Suunnittelun tuoteluokan lisääminen")
+    ![Suunnittelun tuoteluokan lisääminen.](media/product-category-details.png "Suunnittelun tuoteluokan lisääminen")
 
 ### <a name="set-up-product-acceptance-conditions"></a>Tuotteen hyväksyntäehtojen määrittäminen
 
@@ -168,7 +168,7 @@ Suunnittelun tuoteluokat muodostavat perustan suunnittelutuotteiden luonnille (e
 1. Valitse **Suunnittelun muutostenhallinta &gt; Määritys &gt; Suunnittelun muutostenhallinnan parametrit**.
 1. Määritä **Vapauta hallinta** -välilehden **Tuotteen hyväksyntä** -osassa **Tuotteen hyväksyntä** -kentän asetukseksi *Manuaalinen*.
 
-    ![Tuotteen hyväksyntäehtojen määrittäminen](media/engineering-change-management-parameters.png "Tuotteen hyväksyntäehtojen määrittäminen")
+    ![Tuotteen hyväksyntäehtojen määrittäminen.](media/engineering-change-management-parameters.png "Tuotteen hyväksyntäehtojen määrittäminen")
 
 ## <a name="create-a-new-engineering-product"></a>Uuden suunnittelutuotteen luominen
 
@@ -187,23 +187,23 @@ Suunnittelutuote on tuote, jota versioidaan ja hallitaan suunnittelun muutostenh
     - **Tuotenumero:** *Z0001*
     - **Tuotteen nimi:** *Kaiutinsarja*
 
-    ![Suunnittelutuotteen lisääminen](media/new-product-dialog.png "Suunnittelutuotteen lisääminen")
+    ![Suunnittelutuotteen lisääminen.](media/new-product-dialog.png "Suunnittelutuotteen lisääminen")
 
     Huomaa, että **Versio**-kenttä määritetään automaattisesti käyttämällä aiemmin määritettyä tuoteversion numerosääntöä.
 
 1. Valitse **OK** luodaksesi tuotteen. Sulje valintaikkuna.
 1. Uuden tuotteen tietosivu avautuu. Huomaa, että joidenkin kenttien arvot on jo täytetty. Tällaisia kenttiä ovat esimerkiksi **Varastodimensioryhmä**, **Seurantadimensioryhmä** ja/tai **Nimikemalliryhmä**. Nämä kentät määritettiin automaattisesti, koska tuote vapautetaan *DEMF*-yrityksessä ja tuotteen vapautuskäytäntönä on *Osat*, mikä on liitetty suunnittelutuotteen *Osat*-luokkaan. Koska aiemmin käytettiin nimikettä *D0006* mallina *DEMF*-yrityksen rivin määrittämiseen, täytetyt arvot otettiin nimikkeestä *D0006*.
 
-    ![Vapautetun tuotteen tiedot](media/product-details.png "Vapautetun tuotteen tiedot")
+    ![Vapautetun tuotteen tiedot.](media/product-details.png "Vapautetun tuotteen tiedot")
 
 1. Voit tarkastella tuotteen versioita valitsemalla toimintoruudun **Suunnittele**-välilehden **Suunnittelun muutostenhallinta** -ryhmässä **Suunnitteluversiot**.
 
-    ![Suunnitteluversiot](media/engineering-versions-list.png "Suunnitteluversiot")
+    ![Suunnitteluversiot.](media/engineering-versions-list.png "Suunnitteluversiot")
 
 1. Huomaa, että **Suunnitteluversiot**-sivulla on vain yksi tuotteen versio, joka on aktiivinen.
 1. Voit tarkastella version tietoja valitsemalla sen.
 
-    ![Suunnitteluversion tiedot](media/engineering-version-details.png "Suunnitteluversion tiedot")
+    ![Suunnitteluversion tiedot.](media/engineering-version-details.png "Suunnitteluversion tiedot")
 
 1. Valitse **Suunnitteluversio**-sivun **Tuoterakenne**-pikavälilehdessä **Luo tuoterakenne**.
 1. Määritä **Luo tuoterakenne** -valintaikkunassa seuraavat arvot:
@@ -212,25 +212,25 @@ Suunnittelutuote on tuote, jota versioidaan ja hallitaan suunnittelun muutostenh
     - **Nimi**: Kaiutinsarja
     - **Toimipaikka:** 1
 
-    ![Tuoterakenteen luominen](media/create-bom.png "Tuoterakenteen luominen")
+    ![Tuoterakenteen luominen.](media/create-bom.png "Tuoterakenteen luominen")
 
 1. Lisää tuoterakenne valitsemalla **OK** ja sulje valintaikkuna.
 1. Valitse **Tuoterakenne**-pikavälilehdessä **Tuoterakenne**.
 1. Lisää **Tuoterakenne**-sivun **Tuoterakennerivit**-pikavälilehdessä kolme riviä, yksi kullekin nimiketunnukselle *D0001*, *D0003* ja *D0006*.
 
-    ![Tuoterakennerivien lisääminen](media/bom.png "Tuoterakennerivien lisääminen")
+    ![Tuoterakennerivien lisääminen.](media/bom.png "Tuoterakennerivien lisääminen")
 
 1. Valitse **Tallenna**.
 1. Sulje sivu.
 1. Valitse **Suunnitteluversio**-sivun **Tuoterakenne**-pikavälilehdessä **Hyväksy**.
 1. Valitse avautuvassa valintaikkunassa **OK**.
 
-    ![Tuoterakenteen hyväksyminen](media/approve-dialog.png "Tuoterakenteen hyväksyminen")
+    ![Tuoterakenteen hyväksyminen.](media/approve-dialog.png "Tuoterakenteen hyväksyminen")
 
 1. Valitse **Suunnitteluversio**-sivun **Tuoterakenne**-pikavälilehdessä **Aktivoi**.
 1. Huomaa, että tuoterakenteen **Aktiivinen**- ja **Hyväksytty**-valintaruudut on valittu.
 
-    ![Aktiivinen ja hyväksytty tuoterakenne](media/approved-bom.png "Aktiivinen ja hyväksytty tuoterakenne")
+    ![Aktiivinen ja hyväksytty tuoterakenne.](media/approved-bom.png "Aktiivinen ja hyväksytty tuoterakenne")
 
 1. Sulje sivu.
 
@@ -244,25 +244,25 @@ Suunnitteluosasto on nyt suunnitellut tuotteen. Tässä esimerkissä tuote on pr
 1. Avaa ohjattu **Vapauta tuotteet** -toiminto valitsemalla toimintoruudun **Tuote**-välilehden **Ylläpito**-ryhmässä **Vapauta tuoterakenne**.
 1. Valitse **Valitse vapautettavat suunnittelutuotteet** -sivulla tuotteen *Z0001* **Valitse**-valintaruutu.
 
-    ![Vapautettavien suunnittelutuotteiden valitseminen](media/select-eng-product-to-release.png "Vapautettavien suunnittelutuotteiden valitseminen")
+    ![Vapautettavien suunnittelutuotteiden valitseminen.](media/select-eng-product-to-release.png "Vapautettavien suunnittelutuotteiden valitseminen")
 
 1. Valitse **Vapauta tiedot**.
 1. Voit tarkastella avautuvalla **Tuotteen vapautustiedot** -sivulla vapautettavan tuotteen tietoja ja sen tuoterakennetta. Huomaa, että **Lähetä tuoterakenne** -asetuksena on *Kyllä*. Niinpä sekä tuote *Z0001* että kaikki sen alinimikkeet vapautetaan tuoterakenteesta.
 
     Voit tarkastella alinimikkeiden tietoja valitsemalla sen vasemmassa ruudussa. Jos alinimikkeellä on tuoterakenne, voit valita myös kyseisen nimikkeen tuoterakenteen vapauttamisen.
 
-    ![Tuotteen vapautustietojen tarkistaminen](media/product-release-details.png "Tuotteen vapautustietojen tarkistaminen")
+    ![Tuotteen vapautustietojen tarkistaminen.](media/product-release-details.png "Tuotteen vapautustietojen tarkistaminen")
 
 1. Palaa ohjattuun **Vapauta tuotteet** -toimintoon sulkemalla sivu.
 1. Avaa **Valitse vapautettava tuote** -sivu valitsemalla **Seuraava**. Jos olit valinnut jonkin vakiotuotteen (ei suunnitellun tuotteen), ne näkyisivät tällä sivulla. Huomaa, että kun vapautat vakiotuotteen valitsemalla **Vapauta tuotteen rakenne**, myös sen tuoterakenne ja reitti vapautetaan.
 
-    ![Vapautettavien vakiotuotteiden valitseminen](media/select-std-product-to-release.png "Vapautettavien vakiotuotteiden valitseminen")
+    ![Vapautettavien vakiotuotteiden valitseminen.](media/select-std-product-to-release.png "Vapautettavien vakiotuotteiden valitseminen")
 
 1. Avaa **Valitse vapautettavat tuotevariantit** -sivu valitsemalla **Seuraava**. Tässä esimerkissä ei ole variantteja.
 1. Avaa **Valitse yhtiöt** -sivu valitsemalla **Seuraava**.
 1. Valitse yhtiöt, joille tuote on vapautettava. Valitse tässä esimerkissä **USMF**-valintaruutu.
 
-    ![Niiden yhtiöiden valinta, joita vapautus koskee](media/select-release-companies.png "Niiden yhtiöiden valinta, joita vapautus koskee")
+    ![Niiden yhtiöiden valinta, joita vapautus koskee.](media/select-release-companies.png "Niiden yhtiöiden valinta, joita vapautus koskee")
 
 1. Avaa **Vahvista valinta** -sivu valitsemalla **Seuraava**.
 1. Valitse **Valmis**.
@@ -280,7 +280,7 @@ Tuote arvioidaan ja vapautetaan *USMF*-yhtiöön seuraavasti:
 
     **Avoimet tuotevapautukset** -sivulla on tuote *Z0001*, jonka tila on *Odottaa hyväksyntää*.
 
-    ![Avaa tuotevapautukset](media/open-product-releases.png "Avaa tuotevapautukset")
+    ![Avaa tuotevapautukset.](media/open-product-releases.png "Avaa tuotevapautukset")
 
 1. Avaa **Tuotteen vapautustiedot** -sivu valitsemalla arvo **Tuotenumero**-sarakkeessa. Ota seuraavat seikat huomioon:
 
@@ -288,7 +288,7 @@ Tuote arvioidaan ja vapautetaan *USMF*-yhtiöön seuraavasti:
     - **Vapauta tiedot** -pikavälilehdessä on tietoja tuotteesta ja vapautetusta versiosta. Täällä voi muokata asetuksia, kuten voimassaolopäivämääriä.
     - **Reitti**-pikavälilehdessä on tuotteen reitti. Tässä esimerkissä reittejä ei kuitenkaan vapautettu.
 
-    ![Tuotejulkaisun tiedot](media/product-release-details-2.png "Tuotejulkaisun tiedot")
+    ![Tuotejulkaisun tiedot.](media/product-release-details-2.png "Tuotejulkaisun tiedot")
 
 1. Kun tiedot on tarkistettu, olet valmis hyväksymään tuotteen ja siten myös vapauttamaan sen *USMF*-yhtiössä. Valitse toimintoruudussa **Toiminnot &gt; Hyväksy**
 1. Tuote on nyt vapautettu *USMF*-yhtiössä. Mene **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Nimikkeen *Z0001* pitäisi olla näkyvissä.
@@ -304,7 +304,7 @@ Tuote arvioidaan ja vapautetaan *USMF*-yhtiöön seuraavasti:
 1. Valitse sitten toimintoruudun **Tuote**-välilehden **Elinkaaren tila** -ryhmässä **Vaihda elinkaaren tila**.
 1. Määritä avattavassa **Vaihda elinkaaren tila** -valintaikkunassa **Tila**-kentän asetukseksi *Prototyyppi* ja valitse sitten **OK**.
 
-    ![Elinkaaren tilan muuttaminen](media/change-lifecycle-state.png "Elinkaaren tilan muuttaminen")
+    ![Elinkaaren tilan muuttaminen.](media/change-lifecycle-state.png "Elinkaaren tilan muuttaminen")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Suunnittelutuotteen lisääminen myyntitilaukseen
 
@@ -318,7 +318,7 @@ Tuote voidaan nyt myydä asiakkaalle. Tuote lisätään myyntitilaukseen seuraav
 
     Avautuva varoitussanoma ilmoittaa, että nimikkeen tila on *Prototyyppi*. Koska sanoma on kuitenkin vain varoitus, myyntitilaus luodaan siitä huolimatta.
 
-    ![Suunnittelutuotteen myyntitilaus](media/sales-order-eng-product.png "Suunnittelutuotteen myyntitilaus")
+    ![Suunnittelutuotteen myyntitilaus.](media/sales-order-eng-product.png "Suunnittelutuotteen myyntitilaus")
 
 ## <a name="request-changes-in-the-engineering-product"></a>Muutosten pyytäminen suunnittelutuotteessa
 
@@ -328,7 +328,7 @@ Tuote lähetettiin asiakkaalle mutta asiakas ei ollut siihen täysin tyytyväine
 1. Etsi ja avaa edellisessä harjoituksessa luotu myyntitilaus.
 1. Valitse **Myyntitilausrivit**-pikavälilehdessä **Suunnittelun muutostenhallinta &gt; Uusi suunnittelun muutospyyntö**.
 
-    ![Suunnittelun muutospyynnön luominen myyntitilauksesta](media/sales-order-eng-change-request.png "Suunnittelun muutospyynnön luominen myyntitilauksesta")
+    ![Suunnittelun muutospyynnön luominen myyntitilauksesta.](media/sales-order-eng-change-request.png "Suunnittelun muutospyynnön luominen myyntitilauksesta")
 
 1. Täytä suunnittelun muutospyyntö asiakkaan palautteen perusteella. Määritä tässä esimerkissä seuraavat arvot:
 
@@ -341,7 +341,7 @@ Tuote lähetettiin asiakkaalle mutta asiakas ei ollut siihen täysin tyytyväine
 1. Lisää huomautus ruudukkoon valitsemalla **Tiedot**-pikavälilehdessä **Uusi &gt; Huomautus**.
 1. Ilmaise uuden huomautuksen **Kuvaus**-kentässä, että nimike *D0003* on poistettava tuoterakenteesta. Jos huomautukseen on lisättävä muita tietoja, tekstiä voi kirjoittaa **Huomautukset**-kenttään.
 
-    ![Suunnittelun muutospyyntö](media/eng-change-request.png "Suunnittelun muutospyyntö")
+    ![Suunnittelun muutospyyntö.](media/eng-change-request.png "Suunnittelun muutospyyntö")
 
 1. Valitse toimintoruudussa **Tallenna**.
 1. Huomaa, että nimi on lisätty automaattisesti **Tuotteet**-pikavälilehteen ja että suunnittelun muutospyynnön lähde (myyntitilaus) on lisätty **Lähde**-pikavälilehteen.
@@ -370,26 +370,26 @@ Suunnittelija tarkistaa nyt asiakkaan pyynnön ja luo tuotteelle muutostilauksen
     - **Tuote:** *Z0001*
     - **Vaikutuksen kohteet:** *Uusi versio*
 
-    ![Suunnittelun muutostilauksen luominen](media/eng-change-order.png "Suunnittelun muutostilauksen luominen")
+    ![Suunnittelun muutostilauksen luominen.](media/eng-change-order.png "Suunnittelun muutostilauksen luominen")
 
 1. Huomaa, että koska **Vaikutuksen kohteet** -kentän asetuksena on *Uusi versio*, **Tuotteen tiedot** -pikavälilehden **Tiedot**-välilehden **Uusi versio** -kentässä näkyy tuleva uusi versionumero (tässä esimerkissä *V-02*).
 
-    ![Suunnittelun muutostilauksen tuotetiedot](media/eng-change-order-product-details.png "Suunnittelun muutostilauksen tuotetiedot")
+    ![Suunnittelun muutostilauksen tuotetiedot.](media/eng-change-order-product-details.png "Suunnittelun muutostilauksen tuotetiedot")
 
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Tuotteen tiedot** -pikavälilehden **Tuoterakenne**-välilehdessä **Rivit**. Tuotteen *Z0001* version *V-01* tuoterakenne avautuu.
 
-    ![Suunnittelutuotteen tuoterakennerivit](media/eng-product-bom-lines.png "Suunnittelutuotteen tuoterakennerivit")
+    ![Suunnittelutuotteen tuoterakennerivit.](media/eng-product-bom-lines.png "Suunnittelutuotteen tuoterakennerivit")
 
 1. Valitse nimiketunnuksen *D0003* rivi ja valitse sitten toimintoruudussa **Poista**. Tämän rivin **Muuta tyyppi** -kentän arvo muuttuu arvoksi *Poistettu*.
 1. Valitse toimintoruudussa **Tallenna**.
 
-    ![Muokatut suunnittelutuotteen tuoterakennerivit](media/eng-product-bom-lines-modified.png "Muokatut suunnittelutuotteen tuoterakennerivit")
+    ![Muokatut suunnittelutuotteen tuoterakennerivit.](media/eng-product-bom-lines-modified.png "Muokatut suunnittelutuotteen tuoterakennerivit")
 
 1. Palaa **Suunnittelun muutostilaus** -sivun **Tuoterakennerivi**-sivulle.
 1. Huomaa, että **Tuotteen tiedot** -pikavälilehden **Tuoterakenne**-välilehden tuoterakenteen *Z0001* **Muuta tyyppi** -kentän arvo on nyt *Muutettu*.
 
-    ![Muutetun tuoterakenteen sisältävä suunnittelun muutostilaus](media/eng-change-order-changed-bom.png "Muutetun tuoterakenteen sisältävä suunnittelun muutostilaus")
+    ![Muutetun tuoterakenteen sisältävä suunnittelun muutostilaus.](media/eng-change-order-changed-bom.png "Muutetun tuoterakenteen sisältävä suunnittelun muutostilaus")
 
     Tilaus on nyt hyväksyttävä, jonka jälkeen muutokset voidaan käsitellä. Kun muutokset on käsitelty, tuotteet päivitetään suunnittelun muutostilaukseen sisältyneillä muutoksilla. Tässä esimerkissä hyväksyjäksi on määritetty henkilö, joka luo suunnittelun muutostilauksen.
 

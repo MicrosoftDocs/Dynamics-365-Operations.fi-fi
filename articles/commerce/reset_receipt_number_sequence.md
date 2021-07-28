@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: cabce32a43e55f3a3f19bc2d78547d9bab0d89a2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a08d14369057ceb9b23e9d6f9a79847c6175f88e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792046"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345079"
 ---
 # <a name="reset-receipt-numbers"></a>Kuittinumeroiden nollaaminen 
 
@@ -55,7 +55,7 @@ Nollaus otetaan käyttöön seuraavasti.
 1. Valitse **Nollaa vastaanottotyyppi** -kentässä **Vain kerran** tai **Vuosittain**.
 1. Valitse **OK**.
 
-![Vastaanoton palautuspäivämäärän valitseminen](media/Enable_receipt_reset.png "Vastaanoton palautuspäivämäärän valitseminen")
+![Vastaanoton palautuspäivämäärän valitseminen.](media/Enable_receipt_reset.png "Vastaanoton palautuspäivämäärän valitseminen")
 
 Kun olet valinnut päivän, se näkyy **Seuraava kuitin numeron nollauspäivämäärä** -sarakkeessa. Palautuspäivämäärää voi soveltaa kaikkiin vastaanottotapahtumatyyppeihin. Tämän vuoksi vastaanoton numerosarja palautetaan kaikille kuittityypeille.
 

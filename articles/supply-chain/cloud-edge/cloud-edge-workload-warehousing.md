@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184019"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345497"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -73,7 +73,7 @@ Keskus omistaa seuraavat tiedot:
 
 Scale unitit omistavat varsinaisen aalloin käsittelyn (kuten työn kohdistamisen, täydennystyön ja kysynnän työn luonnin) aallon vapautuksen jälkeen. Niinpä varastotyöntekijät voivat käsitellä lähtevän työn käyttämällä Scale Unitiin yhdistettyä varastonhallinnan mobiilisovellusta.
 
-![Aallon käsittelyn työnkulku](./media/wes-wave-processing-ga.png "Aallon käsittelyn työnkulku")
+![Aallon käsittelyn työnkulku.](./media/wes-wave-processing-ga.png "Aallon käsittelyn työnkulku")
 
 ### <a name="process-work-and-ship"></a>Työn käsittely ja lähetys
 
@@ -81,7 +81,7 @@ Kun lopullinen työprosessi laittaa varaston lopulliseen toimitussijaintiin (las
 
 Kun keskus on päivittänyt tapahtumat *Kerätty*-tilaan, se voi käsitellä lähtevän lähetyksen vahvistuksen ja siihen liittyvän myynnin pakkausluettelon tai siirtotilauksen lähetyksen kuormaa varten.
 
-![Lähtevien käsittelyn työnkulku](./media/WES-outbound-processing-19.png "Lähtevien käsittelyn työnkulku")
+![Lähtevien käsittelyn työnkulku.](./media/WES-outbound-processing-19.png "Lähtevien käsittelyn työnkulku")
 
 ## <a name="inbound-process-flow"></a>Saapuvien käsittelyn työnkulku
 
@@ -107,11 +107,11 @@ Työntekijä voi suorittaa vastaanottoprosessin käyttämällä Scale Unitiin yh
 
 Jos *varastoon vapauttamisen* prosessi ei ole käytössä, jolloin myöskään *varastotilaukset* eivät ole käytössä, keskus voi käsitellä varaston vastaanoton ja työn käsittelyn erillään scale uniteista.
 
-![Saapuvien käsittelyn työnkulku](./media/wes-inbound-ga.png "Saapuvien käsittelyn työnkulku")
+![Saapuvien käsittelyn työnkulku.](./media/wes-inbound-ga.png "Saapuvien käsittelyn työnkulku")
 
 Kun suoritat saapuvan rekisteröinnin varastosovelluksen vastaanottoprosessin avulla scale unitin varastotilauksen perusteella, scale unitin kuormitus antaa merkin keskukselle päivittää asiaan liittyvät ostotilausrivin tapahtumat tilaan *Rekisteröity*. Kun tämä on valmis, voit suorittaa sen jälkeen ostotilausten tuotevastaanoton.
 
-![Saapuvien käsittelyn työnkulku](./media/WES-inbound-processing-19.png "Saapuvien käsittelyn työnkulku")
+![Saapuvien käsittelyn työnkulku.](./media/WES-inbound-processing-19.png "Saapuvien käsittelyn työnkulku")
 
 ## <a name="supported-processes-and-roles"></a>Tuetut prosessit ja roolit
 
