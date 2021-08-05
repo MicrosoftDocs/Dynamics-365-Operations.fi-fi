@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platform update -päivitykset versioon 10.0.19 (kesäkuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Platform update -päivitykset versioon 10.0.18 (toukokuu 2021)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -366,6 +364,8 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Suunniteltu ylläpito itsepalveluympäristöissä - usein kysytyt kysymykset
                       href: deployment/plannedmaintenance-selfservice.md
+                    - name: Liiketoiminnan jatkuvuus ja järjestelmäpalautus
+                      href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Azure Resource Manager -perehdytyksen suorittaminen
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute ja Finance and Operations
@@ -374,8 +374,10 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Päivitysten käyttöönotto pilviympäristöissä
                   href: deployment/apply-deployable-package-system.md
-                - name: Päivitysten ja laajennuksien käyttäminen Commerce Scale Unitissa (pilvi)
+                - name: Päivitysten ja laajennuksien käyttöönotto Commerce Scale Unitissa (pilvi)
                   href: deployment/Update-retail-channel.md
+                - name: Commerce Scale Unitin (pilvi) automaattinen päivitys
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Commerce Scale Unitin alustaminen (pilvi)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Kanavien siirtäminen toiseen Commerce Scale Unitiin
@@ -392,6 +394,8 @@
                       href: deployment/on-premises-overview.md
                     - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
                       href: deployment/plan-onprem-deployment.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) tuettu ohjelmisto
+                      href: deployment/onprem-compatibility.md
                     - name: Laitteiston kokovaatimukset
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Dynamics 365 Finance + Operations (on-premises) – todennus
@@ -502,8 +506,6 @@
                   href: dev-tools/access-instances.md
                 - name: Kattavien kehitysympäristöjen määrittäminen
                   href: dev-tools/configure-developer-vm.md
-                - name: Uusien käyttäjien luominen kehittämiskoneissa
-                  href: dev-tools/enable-development-machine.md
                 - name: 'Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Paikallisten ympäristöjen nimeäminen uudelleen Azure DevOps -palvelun käyttämistä varten
@@ -1112,13 +1114,13 @@
                       href: data-entities/dual-write/in-house-assets.md
                     - name: Varaston käytettävyys
                       href: data-entities/dual-write/inventory-availability.md
-                    - name: 'Integroitu työntekijä, työ ja sijainti'
+                    - name: 'Integroitu työntekijä, työ ja asema'
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Osapuolen osoitekirja ja yleinen osoitekirja
                       href: data-entities/dual-write/party-gab.md
-                    - name: Power Portalin käyttö osapuolen tietomallin kanssa
+                    - name: Microsoft Power Apps -portaalien käyttö osapuolen tietomallin kanssa
                       href: data-entities/dual-write/party-gab-portal.md
-                    - name: Päivitä osapuolen osoitekirja ja yleinen osoitekirja
+                    - name: Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
                       href: data-entities/dual-write/upgrade-party-gab.md
                     - name: Huomautusten integrointi
                       href: data-entities/dual-write/notes-integration.md
@@ -1598,13 +1600,15 @@
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012 -päivitys – päivityksen jälkeiset tehtävät
                   href: migration-upgrade/app-validation-process.md
-                - name: AX 2012 -päivitys – toimintotestauksen suorittaminen hyväksytysti
+                - name: AX 2012 -päivitys – toiminnalliset testikierrokset
                   href: migration-upgrade/upgrade-functional-validation.md
                 - name: AX 2012 -päivitys – julkistamisen valmistelu
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012 -päivitys – käyttöönotto
                   href: migration-upgrade/2012-upgrade-cutover.md
-                - name: 'Muutokset, jotka vaikuttavat AX 2012:n päivitykseen'
+                - name: Päivitys versiosta AX 2012 - Tietojen päivityksen usein kysytyt kysymykset
+                  href: migration-upgrade/upgrade-faq.md
+                - name: 'Muutokset, jotka vaikuttavat päivitykseen versiosta AX 2012'
                   items:
                     - name: Tilikartan erottimen muuttaminen yksilöiväksi
                       href: migration-upgrade/chart-accounts-delimiter-unique.md

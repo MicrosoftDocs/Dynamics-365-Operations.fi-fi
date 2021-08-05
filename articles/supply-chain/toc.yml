@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: Supply Chain Management 10.0.18 (toukokuu 2021)
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -1399,7 +1397,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Liiketoimintaprosessien automatisointi sähköisen raportoinnin konfiguraatioiden avulla
                   items:
-                    - name: 'Sähköisen raportoinnin määrittäminen tietojen hakemiseksi Power BI:hin'
+                    - name: 'Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin'
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
@@ -2001,11 +1999,9 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Luo ostotilaus kertatoimittajalle
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: Oston vapautustilauksen luominen ostotilausta luotaessa
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: Vapautustilauksen luominen ostosopimuksesta
+                - name: Ostosopimuksen käyttö ostotilausta luotaessa
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
-                - name: Ostopalautustilauksen luonti
+                - name: Ostopalautustilauksen luominen
                   href: procurement/tasks/create-purchase-return-order.md
                 - name: Projektin ostotilauksen luominen
                   href: procurement/tasks/create-project-purchase-order.md

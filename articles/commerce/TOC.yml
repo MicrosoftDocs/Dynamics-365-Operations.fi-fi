@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (toukokuu 2021)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -900,6 +898,8 @@
                   href: set-up-B2C-tenant.md
                 - name: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
                   href: custom-pages-user-logins.md
+                - name: Ota käyttöön käyttäjätietueiden automaattinen linkitys asiakastileihin
+                  href: identity-record-linking.md
                 - name: Useiden kuluttajakaupan vuokraajien määrittäminen Commerce-ympäristössä
                   href: configure-multi-B2C-tenants.md
                 - name: Toimialueet Dynamics 365 Commercessa
@@ -1022,11 +1022,13 @@
                   items:
                     - name: Adventure Works -teeman yleiskatsaus
                       href: adventure-works-theme.md
+                    - name: Adventure Works -teeman asentaminen
+                      href: install-adventure-works.md
             - name: Digitaalisten resurssien hallinta
               items:
                 - name: Digitaalisten resurssien hallinnan yleiskatsaus
                   href: dam-overview.md
-                - name: Kuvien lataaminen palveluun
+                - name: Kuvien lataaminen
                   href: dam-upload-images.md
                 - name: Videon lataaminen palveluun
                   href: dam-upload-video.md

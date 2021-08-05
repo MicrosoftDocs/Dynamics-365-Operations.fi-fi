@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (kesäkuu 2021)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (toukokuu 2021)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -1562,10 +1560,12 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Pakkausmateriaalimaksut
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: ALV-lauseke
+                - name: ALV-ilmoitus
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Kansainväliset palvelut -raportti
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Ostoverot
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
               items:
                 - name: Bahrain – yleiskatsaus
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: EU Intrastat -ilmoituksen luominen
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Ranskan Intrastat
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Italian Intrastat
+                      href: localizations/emea-ita-intrastat.md
                 - name: Varastokirjauskansioiden raportit
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Laskun kirjoittamisen määräajat
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'ALV-ilmoitus ja rekisterit (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Valmistaudu JPK-V7M-raportointiin
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M-raportointi
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: JPK-V7M-raportin yksityiskohtaiset tiedot tietyistä liiketoimintaskenaarioista
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Qatar – yleiskatsaus
@@ -3200,10 +3210,12 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Nimelliskulujen rekisterit
                       href: localizations/rus-rated-expenses-registers.md
-                    - name: Ostosreskontran velan verorekisterit ja velan poiskirjaukset
+                    - name: Ostoreskontran velan verorekisterit ja velan poiskirjaukset
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Myyntireskontran luottotappiovaraukset
                       href: localizations/rus-bad-debts.md
+                    - name: Verovarojen ja verovelvollisuusrekisterien laskeminen
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Saudi-Arabia – yleiskatsaus
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Upotettuja kuvia sisältävien raporttien luominen Office-muodoissa
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: ER-muodon suunnittelu Excel-raportin luomiseksi ja kuvien upottamiseksi sivun ylä- ja alatunnisteisiin
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Tuoterakenteen merkkien estäminen luoduissa tiedostoissa

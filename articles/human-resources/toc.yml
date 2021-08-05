@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 12. heinäkuuta 2021
+          href: hr-whats-new-2021-07-12.md
         - name: 22. kesäkuuta 2021
           href: hr-whats-new-2021-06-22.md
         - name: 20. toukokuuta 2021
@@ -255,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Julkistamisen usein kysytyt kysymykset
           href: hr-admin-go-live-faq.md
+        - name: Human Resources -infrastruktuurin yhdistämisen usein kysytyt kysymykset
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentaatioresurssit
           items:
             - name: Ohjejärjestelmä
@@ -691,6 +695,8 @@
               href: hr-compensation-define-process.md
             - name: Kompensaatiosuunnitelmien käsittely
               href: hr-compensation-process.md
+            - name: Työntekijän merkitseminen maksuvalmiiksi
+              href: hr-compensation-payroll.md
         - name: Etujen hallinta
           items:
             - name: Etujen hallinta
@@ -715,11 +721,11 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Elämäntapahtumatyyppien määrittäminen
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Suunnitelmantyyppien luominen
+                    - name: Suunnitelman tyypin yleiskatsaus
                       href: hr-benefits-setup-plan-types.md
-                    - name: Määritä syykoodit
+                    - name: Syykoodien määrittäminen
                       href: hr-benefits-setup-reason-codes.md
-                    - name: Määritä tasokoodit
+                    - name: Tasokoodien määrittäminen
                       href: hr-benefits-setup-tier-codes.md
                     - name: Hintojen määrittäminen
                       href: hr-benefits-setup-rates.md
@@ -807,7 +813,9 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Ryhmä- ja yrityskalenterien tarkasteleminen
               href: hr-employee-self-service-calendar.md
-            - name: Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi
+            - name: Poissaolopäällikön roolin määrittäminen
+              href: hr-configure-absence-manager.md
+            - name: Loman rahaksi tai lomapalkan vapaaksi vaihtamisen käytäntöjen hallinta
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen
               href: hr-leave-and-absence-buy-sell-workflow.md
