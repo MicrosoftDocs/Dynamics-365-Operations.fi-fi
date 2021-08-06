@@ -2,7 +2,7 @@
 title: Oikeutussääntöjen ja -asetusten määrittäminen
 description: Määritä oikeutussäännöt ja -vaihtoehdot Microsoftin Dynamics 365 Human Resourcesin etujen hallinnassa.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,31 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351654"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558366"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Oikeutussääntöjen ja -asetusten määrittäminen
+# <a name="configure-eligibility-rules-and-options"></a>Oikeutussääntöjen ja -asetusten määrittäminen 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Kun olet määrittänyt Microsoft Dynamics 365 Human Resourcesin etujen hallinnan edellyttämät parametrit, voit luoda oikeutussääntöjä, nippuja, kausia ja ohjelmia, jotka liität hyötysuunnitelmiisi.
+Kun olet määrittänyt Etujen hallinnan edellyttämät parametrit, voit luoda oikeutussäännöt, paketteja, kausia ja ohjelmia etupaketteihin liitettäviksi.
+
+Kelpoisuussääntöjen avulla määritetään, ovatko työntekijät oikeutettuja palvelupakettiin. Työntekijän on täytettävä vähintään yhden säännön edellytys, jotta hänen voidaan katsoa olevan oikeutettu etuuteen. Palvelupakettiin voi esimerkiksi sisältyä kaksi sääntöä. Ensimmäisessä säännössä (rivi 1) todetaan, että työntekijätyypin on oltava **Työntekijä**. Toisessa säännössä (rivi 2) todetaan, että työntekijän on oltava kokopäiväisessä työsuhteessa. Näin ollen työntekijät, jotka täyttävät säännön 1, täyttävät kelpoisuusvaatimukset, vaikka he olisivat vain osa-aikaisia.
+
+Voit kuitenkin määrittää yhden säännön, jolla on useita ehtoja. Tässä tapauksessa työntekijän on täytettävä kaikki säännön ehdot, jotta hänen voidaan katsoa olevan oikeutettu etuuteen. Sinulla on esimerkiksi sääntö, jonka nimi on **Kokopäivätyöntekijä**. Tämän säännön mukaan työntekijätyypin on oltava **Työntekijä** ja työntekijän on oltava *kokopäivätyössä*. Siten työntekijöiden on täytettävä säännön molemmat ehdot ollakseen tukikelpoisia.
+
+> [!IMPORTANT]
+> Jokaiseen etuussuunnitelmaan on liityttävä vähintään yksi kelpoisuussääntö. Voit liittää etuun useita sääntöjä.
 
 ## <a name="create-an-eligibility-rule"></a>Luo kelpoisuussääntö
 
 Oikeutussäännöissä määritetään, ketkä työntekijät voivat ilmoittautua kuhunkin etuussuunnitelmaan. Kun olet määrittänyt oikeutussäännöt, voit määrittää ne etuussuunnitelmiin. Tämän jälkeen voit käsitellä rekisteröinnin kelpoisuutta nähdäksesi, mitkä työntekijät ovat oikeutettuja kuhunkin suunnitelmaan. 
 
-Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jos ne eivät ole oikeutettuja etuusjärjestelyyn, joka perustuu kelpoisuussääntöihin sen jälkeen, kun ne on jo rekisteröity, niitä ei automaattisesti poisteta. Kun suunnitelman kelpoisuuteen vaikuttava elämäntapahtuma tapahtuu, järjestelmä aloittaa rekisteröintikauden, jonka aikana työntekijä voi valita suunnitelmat, joihin on oikeutettu. 
+Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jos he eivät ole oikeutettuja etuusjärjestelyyn, joka perustuu kelpoisuussääntöihin sen jälkeen, kun heidät on jo rekisteröity, heitä ei automaattisesti poisteta. Kun suunnitelman kelpoisuuteen vaikuttava elämäntapahtuma tapahtuu, järjestelmä aloittaa rekisteröintikauden, jonka aikana työntekijä voi valita suunnitelmat, joihin on oikeutettu. 
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Oikeutussäännöt ja -asetukset**.
 
@@ -48,11 +55,11 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
    | **Voimassaolon päättymispäivämäärä ja -aika** | Kelpoisuussäännön lopetuspäivämäärä. |
    | **Käyttäjän työntekijätyyppi** | Määrittää, käytetäänkö työntekijän työntekijätyyppiä edun oikeutussäännössä. |
    | **Työntekijätyyppi** | Työntekijän tyyppi, jos **Käytä työntekijätyyppiä** -vaihtoehdon arvoksi on määritetty **Kyllä**. |
-   | **Käytä työntekijän tilaa** | Määrittää, käytetäänkö työntekijän tilaa edun oikeutussäännössä. |
+   | **Käytä työntekijän tilaa** | Määrittää, käytetäänkö työntekijän työsuhteen tilaa edun oikeutussäännössä. |
    | **Tila** | Työntekijän tila, jos **Käytä työntekijän tilaa** -vaihtoehdon arvoksi on määritetty **Kyllä**. Jos **Käytä työntekijän tilaa** -vaihtoehdon arvoksi on määritetty **Ei**, kenttää ei käytetä. |
    | **Käytä työsuhdeluokkaa** | Määrittää, käytetäänkö työntekijän **Työllisyysluokka**-arvoa osana edun oikeutussääntöä. | 
    | **Työsuhdeluokka** | Työntekijän työsuhdeluokka, jos **Käytä työsuhdetta** -luokan vaihtoasetus on **Kyllä**. |
-   | **Käytä uutta työhönottosääntöä** | Määrittää, käytetäänkö uuden vuokrauksen uutta työhönottokauden arvoa osana etuuksien oikeutussääntöä. |
+   | **Käytä uutta työhönottosääntöä** | Määrittää, käytetäänkö uuden työntekijän uutta työhönottokauden arvoa osana etuuksien oikeutussääntöä. |
    | **Rekisteröitymiskausi** | Ajanjakso, jolloin uusi työhönottoilmoitus on sallittu. Jos määrität tämän myös parametreissa, parametrien asetus ohittaa tämän asetuksen. |
    | **Käytä aiempaa työsuhteen tilaa** | Määrittää, käytetäänkö työntekijän edellistä työllisyysarvoa osana etujen oikeutussääntöä. Voit esimerkiksi määrittää oikeutussäännön, joka luopuu kattavuusodotusjaksosta kaikkien niiden työntekijöiden kohdalla, jotka ovat siirtyneet **Lomautus**-tilasta **Työssä**-tilaan 90 päivän kuluessa edellisen työsuhteen päättymisestä. |
 
@@ -72,7 +79,7 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
    | **Sallittu toimen tyyppi** | Määrittää kelpoisuussääntöä vastaavan toimityypin tai -tyypit. Esimerkiksi kokoaikainen. |
    | **Sallittu tila** | Määrittää kelpoisuussääntöä vastaavat osavaltiot tai provinssit. Esimerkiksi Pohjois-Dakota USA tai Brittiläinen Kolumbia, Kanada. |
    | **Sallitut työehdot** | Määrittää kelpoisuussäännön täyttävät työntekijän työehdot. Esimerkiksi halutessaan tai ryhmäsopimus. |
-   | **Sallittu järjestö** | Määrittää kelpoisuussääntöä vastaavan ammattiliiton jäsenyyden. Esimerkiksi Forklift Drivers of America. </br></br>Kun käytetään liittoon perustuvaa kelpoisuussääntöä, työntekijän ammattiliiton tietueen päättymispäivämäärä on täytettävä. Et voi jättää sitä tyhjäksi. |
+   | **Sallittu järjestö** | Määrittää kelpoisuussääntöä vastaavan ammattiliiton jäsenyyden. Esimerkiksi Forklift Drivers of America.</br></br>Kun käytetään liittoon perustuvaa kelpoisuussääntöä, työntekijän ammattiliiton tietueen päättymispäivämäärä on täytettävä. Et voi jättää sitä tyhjäksi. |
    | **Kelvollinen postinumero** | Määrittää kelpoisuussääntöä vastaavat postinumerot. Esimerkki: 58104. |
 
 5. **Lisätiedot**-kohdassa voit tarkastella seuraavia lisätietoja.
@@ -170,7 +177,7 @@ Niput ovat liittyvien etuussuunnitelmien joukko. Etuusnippujen avulla voit ryhmi
    | --- | --- |
    | **Nippu** | Nipun yksilöivä tunniste. |
    | **Kuvaus** | Nipun kuvaus. |
-   | **Päärahtikirja** | Ilmaisee, kuuluuko jokin nipun suunnitelmista merkitä pääsuunnitelmaksi. Pääsuunnitelma on valittava avoimen rekisteröinnin yhteydessä osana pakettia, ennen kuin hyödyt-järjestelmänvalvoja voi vahvistaa työntekijän etuvalinnat. |
+   | **Päärahtikirja** | Ilmaisee, kuuluuko jokin nipun suunnitelmista merkitä pääsuunnitelmaksi. Pääsuunnitelma on valittava avoimen rekisteröinnin yhteydessä osana pakettia, ennen kuin etujen järjestelmänvalvoja voi vahvistaa työntekijän etuvalinnat. |
    | **Voimaantulopäivämäärä ja -aika** | Päivämäärä ja aika, jolloin nipusta tulee aktiivinen. |
    | **Voimassaolo päättyy** | Nipun vanhentumisen päivämäärä. Oletusarvo on 12/31/2154, joka vastaa ei koskaan -arvoa. |
 
@@ -200,7 +207,7 @@ Kaudet määrittävät, milloin etuudet ovat voimassa ja milloin työntekijät v
 
 ## <a name="use-a-flex-credit-program"></a>Joustavan luotto-ohjelman käyttäminen
 
-Joustavien luotto-ohjelmien avulla voit rekisteröidä työntekijät etuuksien mukaan ennalta määrätyn määrän joustavia luottohyvityksiä. Työntekijät voivat valita, miten he kohdistavat joustopisteensä. Jos työntekijä esimerkiksi kuuluu puolisonsa terveyenhoitosuunnitelman piiriin, hän saattaa haluta käyttää muuten terveydenhoitoon käyttämänsä pisteet muihin etuihin.
+Joustavien luotto-ohjelmien avulla voit rekisteröidä työntekijät etuuksien mukaan ennalta määrätyn määrän joustavia luottohyvityksiä. Työntekijät voivat valita, miten he kohdistavat joustopisteensä. Jos työntekijä esimerkiksi kuuluu puolisonsa terveydenhoitosuunnitelman piiriin, hän saattaa haluta käyttää muuten terveydenhoitoon käyttämänsä pisteet muihin etuihin.
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Oikeutussäännöt ja -asetukset**.
 
@@ -218,7 +225,7 @@ Joustavien luotto-ohjelmien avulla voit rekisteröidä työntekijät etuuksien m
    | Suhteellisen jaon sääntö | Sääntö, jota käytetään joustavien pisteiden suhteelliseen laskentaan, kun työntekijä palkataan keskellä joustavien pisteiden jaksoa. </br></br><ul><li>**Ei yhtään** – Työntekijä ei saa joustavia pisteitä, jos hänet palkataan joustavien pisteiden ohjelmajakson alkamisen jälkeen.</li><li>**Täydet pisteet** – Työntekijä saa täyden määrän joustavia pistetiä riippumatta hänen palkkaushetkestään.</li><li>**Suhteellinen** – Työntekijä saa aloituspäiväänsä perustuvan suhteellisen määrän joustavia pisteitä.</li></ul> |
    | Joustavien pisteiden suhteellisen laskennan kaava | Sääntö, jota käytetään joustavien pisteiden suhteelliseen laskentaan, kun työntekijä palkataan keskellä joustavien pisteiden ohjelman etuusjaksoa. Suhteellinen laskenta perustuu työsuhteen alkamispäivään. Tämä kenttä on käytettävissä vain, jos valitset **Suhteellinen** kentässä **Suhteellisuussääntö**. </br></br><ul><li>**Päivittäin** – Laskee työntekijän saamien joustavien pisteiden suhteellisen määrän päivätasolla. Joustavien pisteiden kokonaismäärä jaetaan jakson päivien määrällä. Jos etuusjakso esimerkiksi on 400 päivää, järjestelmä jakaa joustavien pisteiden kokonaismäärän luvulla 400 laskeakseen työntekijöiden päivittäin saamien joustavien pisteiden määrän.</li><li>**Kuluva kuukausi** – Laskee työntekijän saamien joustavien pisteiden suhteellisen määrän kuukausitasolla kuluvaan kuukauteen pyöristettynä. Joustavien pisteiden kokonaismäärä jaetaan jakson kuukausien määrällä. Jos etuusjakso esimerkiksi on 15 kuukautta, järjestelmä jakaa joustavien pisteiden kokonaismäärän luvulla 15 laskeakseen työntekijöiden kuukausittain saamien joustavien pisteiden määrän.</li><li>**Seuraava kuukausi** – Laskee työntekijän saamien joustavien pisteiden suhteellisen määrän kuukausitasolla seuraavaan kuukauteen pyöristettynä. Joustavien pisteiden kokonaismäärä jaetaan jakson kuukausien määrällä. Jos etuusjakso esimerkiksi on 15 kuukautta, järjestelmä jakaa joustavien pisteiden kokonaismäärän luvulla 15 laskeakseen työntekijöiden kuukausittain saamien joustavien pisteiden määrän.</li></ul> |
    
-   Varmista, että kukin etuussuunnitelma on rekisteröity vain yhteen joustoluotto-ohjelmaan kutakin etuusjaksoa kohden. Muussa tapauksessa järjestelmä ei tiedä, mitä joustoluotto-ohjelmaa tulee käyttää joustoluottohyvitysten myöntämiseen, ja kohtaat ongelmia. 
+   Varmista, että kukin etuussuunnitelma on rekisteröity vain yhteen joustoluotto-ohjelmaan kutakin etuusjaksoa kohden. Muussa tapauksessa järjestelmä ei tiedä, mitä joustopisteohjelmaa tulee käyttää joustohyvitysten myöntämiseen, ja kohdataan ongelmia. 
 
 ## <a name="configure-programs"></a>Ohjelmien määrittäminen
 

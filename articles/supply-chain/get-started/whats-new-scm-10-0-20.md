@@ -1,5 +1,5 @@
 ---
-title: Esiversio – Dynamics 365 Supply Chain Management 10.0.20 (elokuu 2021)
+title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.20. (elokuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.20 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301743"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641053"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Esiversio – Dynamics 365 Supply Chain Management 10.0.20 (elokuu 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.20. (elokuu 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.20 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.886. Se on käytettävissä seuraavasti:
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.20 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.886. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esiversio:** Toukokuu 2021
 - **Julkaisun yleinen saatavuus (itsepäivitys):** heinäkuu 2021
 - **Julkaisun yleinen saatavuus (automaattinen päivitys):** elokuu 2021
 
-
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
 Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on lisätietoja ja/tai linkkejä liittyvään dokumentaatioon.
 
-Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä. Osa luettelon ominaisuuksista on vielä esiversioita, kun taas toiset ovat yleisesti saatavana.
+Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja |
 |---|---|---|
@@ -49,7 +47,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukse
 
 | Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
-| Pääsuunnittelu | Negatiiviset päivät suunnittelun optimoinnissa | Tämän esikatselutoiminnon avulla suunnittelun optimointi voi ottaa huomioon viivetoleranssin, joka perustuu kattavuusryhmissä määritettyihin **negatiivisten päivien** parametreihin. |
+| Pääsuunnittelu | Negatiiviset päivät suunnittelun optimoinnissa | Tämän toiminnon avulla Suunnittelun optimointi voi ottaa huomioon viivetoleranssin, joka perustuu kattavuusryhmissä määritettyyn **Negatiiviset päivät** -parametriin. |
 | Pääsuunnittelu | Oikaistun kysynnän ennusteen rinnakkainen valtuuttaminen | Tämä ominaisuus sallii oikaistun tarve-ennusteen rinnakkaisen valtuuttamisen **oikaistun kysynnän ennuste** -sivulta. Tämän ominaisuuden tarkoituksena on parantaa suorituskykyä, kun suuri määrä ennusteita on valtuutettu. Valtuutettaessa käyttäjä voi määrittää **säikeiden määrän** valtuuttamisen valintaikkunassa. |
 | Pääsuunnittelu | (Esiversio) Suunniteltujen bulkki- ja pakkauserätilausten eräkelpoinen vahvistaminen ja konsolidointi | Tämän ominaisuuden avulla voit käyttää erätöitä bulkki- ja pakkaustilausten vahvistamiseen ja konsolidointiin. |
 | Tuotannonhallinta | Kopioi yleiset reitit | Tämä ominaisuus parantaa reitityskopioita, jotta käyttäjät voivat kopioida reitityksiä, jotka eivät ole nimikekohtaisia. Sen avulla järjestelmä voi päivittää kaikki merkitykselliset tiedot (kuten toimipaikka, reititysryhmä, resurssivaatimukset ja eri ajat) sen jälkeen, kun kopiointireititystoimintoa on käytetty korvaamaan nimikkeeseen vielä käyttämättä olevan reitityksen. |
@@ -75,7 +73,7 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (kesäkuu 2021) käyttöympäristön päivitysversio 10.0.20](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (kesäkuu 2021) käyttöympäristön päivitysversio 10.0.20](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

@@ -2,7 +2,7 @@
 title: Loma- ja poissaolopyyntöjen hallinta Teamsissa
 description: Tässä ohjeaiheessa käsitellään poissaolopyyntöjä Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356509"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639435"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
@@ -166,6 +166,10 @@ Jos sinulla on vaikeuksia Dynamics 365 Human Resources Teams -sovellukseen kirja
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kirjautuminen Human Resources -sovelluksen ei onnistu Teamsissa
 
 Jos et voi kirjautua sovellukseen, Microsoft Teamsiin kirjautumiseen käytettyä tiliä ei ehkä ole liitetty työntekijätietueeseen Dynamics 365 Human Resourcesissa. Ota yhteys järjestelmänvalvojaan ja varmista, että työntekijätietue on liitetty oikein.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Ympäristöä Dynamics 365 Human Resources ei löydy Asetuksista
+
+Jos et voi valita oikeaa Dynamics 365 -ympäristöä, käyttäjätietuetta ei ehkä ole synkronoitu oikein. Ota yhteyttä järjestelmänvalvojaan, jos haluat luoda käyttäjätietueen uudelleen ja liittää sen käyttäjän tunnistetietoihin. Yritä sitten kirjautua Human Resources -sovellukseen Microsoft Teamsille muutaman minuutin kuluttua.
 
 ### <a name="translations-dont-display-correctly"></a>Käännökset eivät näy oikein
 

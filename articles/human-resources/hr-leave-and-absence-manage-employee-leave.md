@@ -2,7 +2,7 @@
 title: Työntekijän loman hallinta
 description: Hallinnoi työntekijän lomia Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055625"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639459"
 ---
 # <a name="manage-employee-leave"></a>Työntekijän loman hallinta
 
@@ -44,12 +44,11 @@ Voit hallita työntekijän lomaa lomatyypin mukaan. Tämä koskee vanhentuvia lo
 
 Voit sisällyttää syykoodin ja kommentin, kun säädät työntekijän lomasaldoa. 
 
->[!IMPORTANT]
->Lomasaldojen lisätietojen tarkasteleminen esikatselussa. Se on otettava käyttöön **eristysympäristössä**. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br>
->Kun mikä tahansa lomasaldo valitaan osoittamalla, näkyvissä ovat nyt seuraavat tiedot:<br>
->- **Saatavilla**: Yhteensä tänä vuonna - Otto tänä vuonna
->- **Yhteensä tänä vuonna**: Kaikki tämän vuoden kertymät, oikaisut ja siirtokirjaukset
->- **Otetut tänä vuonna**: Hyväksytyt poissaolot yhteensä
+Kun siirrät hiiren minkä tahansa lomasaldon päälle, seuraavat tiedot näytetään:
+
+- **Saatavilla** – **Tämän vuoden kokonaisarvo** vähennettynä **Käytetty tänä vuonna** -arvolla.
+- **Tämän vuoden kokonaisarvo** – Kaikki tämän vuoden kertymät, oikaisut ja siirtokirjaukset.
+- **Käytetty tänä vuonna** – Hyväksytyt poissaolot yhteensä
 
 ## <a name="see-also"></a>Lisätietoja
 

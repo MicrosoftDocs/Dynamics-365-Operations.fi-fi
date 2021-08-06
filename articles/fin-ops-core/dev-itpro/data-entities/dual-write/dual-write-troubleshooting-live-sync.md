@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350785"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542512"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-synkronoinnin ongelmien vianmääritys
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista Finance and Operations -sovellusten ja Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
 
@@ -81,7 +79,7 @@ Ongelman korjaaminen edellyttää, että määrität oikean käyttöoikeusroolin
 
     ![Organisaation yhdistämismääritys.](media/mapped_business_unit.png)
 
-2. Kirjaudu sisään ympäristöön Dynamics 365 -ohjelman mallipohjaisen sovelluksen avulla, siirry kohtaan **Asetus \> Suojaus** ja etsi yhdistetyn liiketoimintayksikön ryhmä.
+2. Kirjaudu ympäristöön sisään asiakasvuorovaikutussovelluksessa, siirry kohtaan **Asetus \> Tietoturva** ja etsi yhdistetyn liiketoimintayksikön ryhmä.
 
     ![Yhdistetyn liiketoimintayksikön ryhmä.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Näyttöön saattaa tulla seuraava virhesanoma, kun luot tietoa Finance and Oper
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Hyötykuormaa ei voida luoda yksikölle CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Hyötykuorman luonti epäonnistui, väärä URI: URI on tyhjä."}\],"isErrorCountUpdated":true}*
 
-Tässä on virhe, joka näyttää Dynamics 365:n mallipohjaisen sovelluksen.
+Virhe näyttää tältä asiakasvuorovaikutussovelluksessa:
 
 *Odottamaton virhe ISV-koodista. (ErrorType = ClientError) Odottamaton poikkeus laajennuksesta (Suorita): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: yksikön tilin käsittely epäonnistui - (yhteysyritys epäonnistui, koska yhdistetty osapuoli ei vastannut oikein tietyn ajanjakson jälkeen tai muodostettu yhteys epäonnistui, koska liitetty isäntä ei vastannut*
 
@@ -125,6 +123,5 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 
 3. Varmista, että **externalenvironmentURL**-sarakkeessa on oikea Dataverse- tai sovelluksen URL-osoite. Poista kaikki rivien kaksoiskappaleet, jotka viittaavat väärään Dataverse -URL-osoitteeseen. Poista vastaavat rivit DUALWRITEPROJECTFIELDCONFIGURATION- ja DUALWRITEPROJECTCONFIGURATION-tauluista.
 4. Pysäytä taulun yhdistäminen ja käynnistä se sitten uudelleen
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

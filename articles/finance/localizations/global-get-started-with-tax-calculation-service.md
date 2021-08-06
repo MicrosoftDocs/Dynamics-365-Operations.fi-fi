@@ -2,7 +2,7 @@
 title: Verolaskennan aloittaminen
 description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskennan.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336653"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644971"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Verolaskennan (esiversio) käytön aloittaminen
 
@@ -58,15 +58,16 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritettava tämä toiminto vain kerran, ja voit suorittaa sen missä tahansa RCS:n oikeushenkilössä.
 
 1. Kirjaudu sisään [RCS:ään](https://marketing.configure.global.dynamics.com/).
-2. Valitse **Sähköinen raportointi** -työtila, lisää uusi määrityspalvelu. Käytä yrityksesi nimeä palveluntarjoajan nimenä. Lisätietoja on kohdassa [Määrityspalvelujen luonti ja merkitseminen aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Valitse juuri luomasi määrityspalvelu ja valitse sitten **Aseta aktiiviseksi**.
-4. Valitse **Microsoft**-määrityspalvelu ja valitse sitten **Säilöt**.
-5. Kirjoita **Tyyppi**-kenttään **Yleinen**.
-6. Valitse **Avaa**.
-7. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys**.
-8. Valitse uusin versio ja valitse sitten **Tuo**.
-9. Palaa **Globalisaatio-ominaisuudet (esiversio)** -työtilaan, valitse **Ominaisuudet**, valitse **Verolaskelma**-ruutu ja valitse sitten **Lisää**.
-10. Valitse jokin seuraavista ominaisuustyypeistä:
+2. Valitse ja ota käyttöön **Ominaisuuksien hallinta** -työtilan ominaisuus **Globalisaatio-ominaisuudet**.
+3. Valitse **Sähköinen raportointi** -työtila, lisää uusi määrityspalvelu. Käytä yrityksesi nimeä palveluntarjoajan nimenä. Lisätietoja on kohdassa [Määrityspalvelujen luonti ja merkitseminen aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Valitse juuri luomasi määrityspalvelu ja valitse sitten **Aseta aktiiviseksi**.
+5. Valitse **Microsoft**-määrityspalvelu ja valitse sitten **Säilöt**.
+6. Kirjoita **Tyyppi**-kenttään **Yleinen**.
+7. Valitse **Avaa**.
+8. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys**.
+9. Valitse uusin versio ja valitse sitten **Tuo**.
+10. Palaa **Globalisaatio-ominaisuudet** -työtilaan, valitse **Ominaisuudet**, valitse **Verolaskelma**-ruutu ja valitse sitten **Lisää**.
+11. Valitse jokin seuraavista ominaisuustyypeistä:
 
     - **Uusi ominaisuus** – Luo ominaisuusasetus, jonka sisältö on tyhjä.
     - **Aiemmin luodun ominaisuuden perusteella** – Luo ominaisuus aiemmin luodusta ominaisuudesta ja kopioi sisältö aiemmin luoduista ominaisuusasetuksista.

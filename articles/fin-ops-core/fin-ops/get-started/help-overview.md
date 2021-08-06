@@ -2,7 +2,7 @@
 title: Ohjejärjestelmä
 description: Tämä ohjeaihe sisältää Finance and Operations -sovellusten ohjejärjestelmän yleiskatsauksen.
 author: edupont04
-ms.date: 04/14/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6f4c9ad36eb2f1abfc9225f1e62e635cebacd47
-ms.sourcegitcommit: 42a93a96565c56c9c64642ed6e6e302b3fbfcd85
+ms.openlocfilehash: e0ba083c64c840e17bf2fba982b2686c8a47e097
+ms.sourcegitcommit: 5c9a5bfef507ed36f0f849ab56fa0aa8abb78d54
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "6373364"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6646510"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -30,7 +30,7 @@ ms.locfileid: "6373364"
 
 Seuraavien sovellusten käyttäjät voivat käyttää tilannekohtaista ohjetta ja muuta samaan ohjejärjestelmään perustuvaa sisältöä:
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
@@ -48,23 +48,23 @@ Docs.microsoft.com -sivusto ([docs.microsoft.com/dynamics365/](/dynamics365/)) o
 
 Docs.microsoft.com-sivuston sisältöä voi etsiä millä tahansa hakukoneella. Parhaat tulokset saa käyttämällä sivustohaku, kuten **site:docs.microsoft.com dynamics 365 "hakusana"**.
 
-<!--## Get notified about changes through an RSS feed
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
+Jos haluat tilata kaikkien docs.microsoft.com-sisältöön Finance and Operations -sovelluksissa tehtyjen päivitysten RSS-syötteen, käytä seuraavaa linkkiä:
 
-[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
+[RSS-syöte](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+> RSS-syöte palauttaa luettelon 100 viimeksi päivitetystä aiheesta. Luetteloa ei ole järjestetty päivämäärän mukaan.  
 
-Alternatively, you can subscribe to an RSS feed by app:
+Voit vaihtoehtoisesti tilata RSS-syötteen sovelluksella:
 
 - [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
 - [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
 - [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
-- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
-COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
+- [Toimitusketju](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Kyky](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+
 ### <a name="leave-us-feedback"></a>Jätä meille palautetta
 
 Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.

@@ -2,7 +2,7 @@
 title: Tietovaraston osajoukon usein kysytyt kysymykset
 description: Tämä ohjeaihe sisältää vastauksia eräisiin usein kysyttyihin tietovaraston osajoukon kysymyksiin.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266606"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638264"
 ---
 # <a name="data-mart-resets-faq"></a>Tietovaraston osajoukon usein kysytyt kysymykset
 
@@ -37,6 +37,9 @@ Jos jokin seuraavista lausekkeista on voimassa tilanteessasi, organisaatiosi voi
 
 - Sovellustietokanta palautettiin.
 - Tukipalvelupyyntö on avattu ja tukihenkilö on ohjeistanut nollaamaan tietovaraston vianmääritysvaiheen osana.
+ 
+> [!NOTE]
+> Tietojen tarjoajan nollausprosessiin vaikuttaa tietokannassa olevien pääkirjanpito- ja budjettitapahtumien määrä. Järjestelmäsi tapahtumien määrän mukaan tietojen tarjoajan nollaus voi kestää jopa ainoastaan 15 minuuttia tai enintään neljä tuntia. Jos nollaus kestää yli neljä tuntia, suosittelemme, että otat yhteyttä tukeen.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Milloin tietovaraston osajoukon palautus ei kannata?
 

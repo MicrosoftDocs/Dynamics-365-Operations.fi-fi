@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
+ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
+ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314282"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6538851"
 ---
 # <a name="payroll-employee"></a>Palkanlaskennan työntekijä
 
@@ -32,15 +32,19 @@ Fyysinen nimi: mshr_payrollemployeeentity.
 
 Tämä yksikkö tarjoaa tietoja työntekijästä. Sinun täytyy määrittää [palkanlaskennan integraation parametrit](hr-admin-integration-payroll-api-parameters.md) ennen tämän yksilön käyttämistä.
 
+>[!IMPORTANT] 
+>**FirstName**, **MiddleName**, **LastName**, **NameValidFrom** ja **NameValidTo** -kenttiä ei ole enää saatavilla tässä entiteetissä. Näin varmistetaan, että tämän entiteetin taustalla on vain yksi päivämääräperusteinen tietolähde, joka on **HcmEmployment**, jossa on **EmploymentStartDate** ja **EmploymentEndDate** -kentät.
+
+>Nämä kentät ovat käytettävissä **DirPersonNameHistoricalEntity** ssä, joka julkaistiin Platform-päivityksessä 43. Kohteesta **PayrollEmployeeEntity** on OData-suhde kohteeseen **DirPersonNameHistoricalEntity** kentässä **Person**. Vaihtoehtoisesti **DirPersonNameHistoricalEntity**-entiteettiä voidaan kysellä suoraan ODatan kautta käyttämällä julkista nimeä **PersonHistoricalNames**.
+
+
 ## <a name="properties"></a>Ominaisuudet
 
 | Ominaisuus<br>**Fyysinen nimi**<br>**_Laji_** | Käytä | kuvaus |
 | --- | --- | --- |
 | **Henkilöstönumero**<br>mshr_personnelnumber<br>*Merkkijono* | Vain luku<br>Vaadittu | Työntekijän yksilöivä henkilökuntanumero. |
 | **Ensisijainen kenttä**<br>mshr_primaryfield<br>*Merkkijono* | Vaadittu<br>Järjestelmän luoma |  |
-| **Sukunimi**<br>mshr_lastname<br>*Merkkijono* | Vain luku<br>Vaadittu | Työntekijän sukunimi. |
 | **Oikeushenkilön tunnus**<br>mshr_legalentityID<br>*Merkkijono* | Vain luku<br>Vaadittu | Määrittää oikeushenkilön (yrityksen). |
-| **Voimassaolo alkaa**<br>mshr_namevalidfrom<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Päivämäärä, josta alkaen työntekijän tiedot ovat voimassa.  |
 | **Sukupuoli**<br>mshr_gender<br>[mshr_hcmpersongender-asetusjoukko](hr-admin-integration-payroll-api-gender.md) | Vain luku<br>Vaadittu | Työntekijän sukupuoli. |
 | **Palkanlaskennan työntekijän yksikön tunnus**<br>mshr_payrollemployeeentityid<br>*GUID* | Vaadittu<br>Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla työntekijä voidaan yksilöivästi tunnistaa. |
 | **Työsuhteen alkamispäivä**<br>mshr_employmentstartdate<br>*Päivämäärä aika siirros* | Vain luku<br>Vaadittu | Työntekijän työsuhteen alkamispäivämäärä. |
@@ -50,8 +54,6 @@ Tämä yksikkö tarjoaa tietoja työntekijästä. Sinun täytyy määrittää [p
 | **Voimassaolo päättyy**<br>mshr_namevalidto<br>*Päivämäärä aika siirros* |  Vain luku<br>Vaadittu | Päivämäärä, johon asti työntekijän tiedot ovat voimassa. |
 | **Syntymäpäivämäärä**<br>mshr_birthdate<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Työntekijän syntymäpäivä |
 | **Tunnusnumero kohteeseen**<br>mshr_identificationnumber<br>*Merkkijono* | Vain luku <br>Vaadittu |Työntekijälle määritetty tunnusnumero.  |
-| **Etunimi**<br>mshr_firstname<br>*Merkkijono* | Vain luku<br>Vaadittu | Työntekijän etunimi. |
-| **Toinen nimi**<br>mshr_middlename<br>*Merkkijono* | Vain luku<br>Vaadittu |Työntekijän toinen nimi.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Esimerkkikysely palkanlaskennan työntekijälle
 
@@ -69,11 +71,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_personnelnumber": "000041",
     "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
     "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-    "mshr_firstname": "Cassie",
-    "mshr_middlename": "Lassie",
-    "mshr_lastname": "Hicks",
-    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-    "mshr_namevalidto": "2154-12-31T23:59:59Z",
     "mshr_birthdate": "1987-09-12T00:00:00Z",
     "mshr_gender": 200000002,
     "mshr_identificationtypeid": "SSN",

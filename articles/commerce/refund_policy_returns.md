@@ -2,7 +2,7 @@
 title: Kanavan palautus- ja hyvityskäytännön luominen ja päivittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten kanavan palautus- ja hyvityskäytäntö määritetään.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345105"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558294"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
 
@@ -36,12 +36,21 @@ Tämän käytännön soveltamisala rajoittuu tällä hetkellä siihen, että voi
 
 ## <a name="enable-return-policy"></a>Ota käyttöön palautuskäytäntö
 
-Voit ottaa kanavan palautuksen käytäntötoiminnon käyttöön seuraavasti:
+Jos haluat ottaa käyttöön kanavanpalautuskäytäntötoiminnon Commerce headquarters -sovelluksessa, toimi seuraavasti.
 
 1. Avaa **Ominaisuuksien hallinta** -työtilaan Dynamics 365 Commercessa.
 1. Etsi ominaisuuksien nimien luettelosta **Ota käyttöön kanavan palautuksen käytännöt** -toiminto.
 1. Valitse **Ota käyttöön nyt**.
-1. Suorita **1110** (Yleinen konfigurointi) -työ **Jakeluaikataulu**-sivulta jakaaksesi ominaisuuden muutoksen. 
+1. Suorita **1110** (Yleinen konfigurointi) -työ **Jakeluaikataulu**-sivulta jakaaksesi ominaisuuden muutoksen.
+
+## <a name="initialize-the-commerce-scheduler"></a>Commerce-ajastuksen alustaminen
+
+Kun kanavan **Ota kanavan palautuskäytännöt käyttöön** -ominaisuus on käytössä, Commerce-ajastus on alustettava, jotta uudet ominaisuustietokannan muutokset voidaan lisätä Commerce Data Exchange (CDX) -synkronoinnin avulla. 
+
+Voit määrittää Commerce-ajoitustoiminnon Commerce Headquarters -sovelluksessa seuraavasti.
+
+- Siirry kohtaan **Retail ja Commerce \> Headquarters-asetukset \> Commerce-ajastus \> Alusta Commerce-ajastus**. Vaihtoehtoisesti voit tehdä haun käyttämällä Alusta Commerce -ajoitustoiminto -lausetta.
+- Varmista **Alusta Commerce-ajoitustoiminto** -valintaikkunassa, että **Poista olemassa oleva määritys** -vaihtoehdon arvoksi on määritetty **Ei**. Valitse sitten **OK**.
 
 ## <a name="configure-return-policy"></a>Määritä palautuskäytäntö
 

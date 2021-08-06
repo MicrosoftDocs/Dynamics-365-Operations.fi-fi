@@ -2,7 +2,7 @@
 title: Lomien ja poissaolojen yhteenveto
 description: Dynamics 365 Human Resourcesin lomien ja poissaolojen työtila on joustava kehikko uusien lomasuunnitelmien luomiseen. Se sisältää työkulut pyyntöjen hallintaan ja intuitiivisen itsepalvelusivun, jossa työntekijät voivat pyytää vapaata.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339712"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639483"
 ---
 # <a name="leave-and-absence-overview"></a>Lomien ja poissaolojen yhteenveto
 
@@ -34,7 +34,8 @@ Ennen lomasuunnitelmien luomista työntekijöillesi, sinun on tehtävä muutama 
 
 - [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md)
 - [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
-- [Luo lomapyyntötyönkulku](hr-leave-and-absence-workflow.md)
+- [Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md)
+- [Poissaolopäällikön roolin määrittäminen](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Luo ja hallitse lomasuunnitelmia
 
@@ -50,8 +51,9 @@ Ennen kuin luot lomasuunnitelmia työntekijöille, sinun on luotava loma- ja poi
 
 Työntekijät voivat lähettää lomapyyntöjä ja hallita niitä **Työntekijän itsepalvelu** -työtilassa.
 
-[Poissaolopyyntö](hr-employee-self-service-request-time-off.md)
-[Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
+- [Pyydä vapaata](hr-employee-self-service-request-time-off.md)
+- [Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
+- [Poissaolopäällikön roolin määrittäminen](hr-configure-absence-manager.md)
 
 
 

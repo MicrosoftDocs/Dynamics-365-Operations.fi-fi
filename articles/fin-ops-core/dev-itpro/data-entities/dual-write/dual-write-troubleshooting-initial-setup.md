@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350833"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542412"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
@@ -71,7 +71,7 @@ Voit antaa sovelluksen suostumuksen noudattamalla seuraavia ohjeita.
 
 Jos haluat varmistaa, että kaksoiskirjoitus toimii oikein, konfiguroinnin aikana valitsemasi yritykset luodaan Dataverse -ympäristöön. Oletusarvon mukaan nämä yritykset ovat vain luku -tilassa ja **IsDualWriteEnable**-ominaisuuden arvo on **True**. Lisäksi luodaan oletusarvon mukainen liiketoimintayksiköiden omistaja ja ryhmä ja lisätään yrityksen nimi. Ennen kuin otat kartat käyttöön, varmista, että ryhmän oletusomistaja on määritetty. Voit etsiä **Yritykset (CDM\_Yritys)** -taulukon seuraavasti.
 
-1. Valitse Dynamics 365:n mallipohjaisen sovelluksen oikeasta yläkulmasta suodatin.
+1. Valitse suodatin asiakasvuorovaikutussovelluksen oikeasta yläkulmasta.
 2. Valitse avattavasta luettelosta **Yritys**.
 3. Voit tarkastella tuloksia valitsemalla **Suorita**.
 4. Valitse yritys, joka on linkitetty kaksoiskirjoituksen määrityksen yhteydessä.

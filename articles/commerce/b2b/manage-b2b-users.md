@@ -2,24 +2,24 @@
 title: Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvojat voivat lisätä, muokata ja poistaa yritysten välisten (B2B) verkkokauppasivustojen liikekumppanikäyttäjiä.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936653"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655603"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 
@@ -67,7 +67,7 @@ Noudattamalla seuraavia ohjeita voit hyväksyä ja määrittää liikekumppanin 
 
 1. Siirry kohtaan **Retail ja Commerce IT \> Jakeluaikataulu** ja suorita työ **1010** (**Asiakkaat**) työntääksesi uudet asiakas- ja asiakashierarkiatietueet kanavatietokantaan.
 
-Kun pyyntö on hyväksytty ja asiakas- ja asiakashierarkiatietueet synkronoidaan kanavatietokantaan, pyytäjä voi kirjautua B2B-verkkokauppasivustoon käyttäen heidän pyynnön mukana toimittamaansa sähköpostiosoitetta. Käyttäjät voivat kirjautumisvirran avulla määrittää tilinsä salasanan.
+Kun pyyntö on hyväksytty ja asiakas- ja asiakashierarkiatietueet synkronoidaan kanavatietokantaan, pyytäjä voi kirjautua B2B-verkkokauppasivustoon käyttäen heidän pyynnön mukana toimittamaansa sähköpostiosoitetta. Käyttäjät voivat kirjautumisvirran avulla määrittää tilinsä salasanan. Jos haluat sallia tunnistetietojen tarjoajan (Azure AD B2C) tietueen linkittämiseen yritysten väliseen asiakastietueeseen, joka luotiin rekisteröitymisen tai sisäänkirjautumisen aikana, seuraa ohjeita kohdassa [Salli tunnistetietueiden automaattinen linkitys asiakkaiden tileihin](../identity-record-linking.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Lisäliikekumppanikäyttäjien perehdyttäminen
 
@@ -83,7 +83,7 @@ Noudattamalla seuraavia ohjeita voit ottaa lisäliikekumppanikäyttäjiä mukaan
 
 1. Synkronoi uusi liikekumppanin käyttäjä kanavatietokantaan suorittamalla työ **1010** **(Asiakkaat)**.
 
-Kun asiakastietue on synkronoitu, B2B-verkkokauppasivuston käyttäjän tilaksi tulee **Aktiivinen**, ja uusi käyttäjä voi kirjautua B2B-verkkokauppasivustoon sähköpostiosoitteensa avulla. Käyttäjät voivat kirjautumisvirran avulla määrittää tilinsä salasanan.
+Kun asiakastietue on synkronoitu, B2B-verkkokauppasivuston käyttäjän tilaksi tulee **Aktiivinen**, ja uusi käyttäjä voi kirjautua B2B-verkkokauppasivustoon sähköpostiosoitteensa avulla. Käyttäjät voivat kirjautumisvirran avulla määrittää tilinsä salasanan. Jos haluat sallia tunnistetietojen tarjoajan (Azure AD B2C) tietueen linkittämiseen yritysten väliseen asiakastietueeseen, joka luotiin rekisteröitymisen tai sisäänkirjautumisen aikana, seuraa ohjeita kohdassa [Salli tunnistetietueiden automaattinen linkitys asiakkaiden tileihin](../identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Liikekumppanikäyttäjän tietojen muokkaaminen
 

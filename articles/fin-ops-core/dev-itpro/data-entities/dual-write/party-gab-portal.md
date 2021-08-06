@@ -1,6 +1,6 @@
 ---
-title: Power Portalin käyttö osapuolen tietomallin kanssa
-description: Tässä ohjeaiheessa kuvataan Power Portalin verkkorooleihin kaksoiskirjoituksen osapuolen tietomallin vuoksi tehdyt muutokset.
+title: Microsoft Power Apps -portaalien käyttö osapuolen tietomallin kanssa
+description: Tässä ohjeaiheessa kuvataan Microsoft Power Apps -portaalien verkkorooleihin kaksoiskirjoituksen osapuolen tietomallin vuoksi tehdyt muutokset.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358614"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542560"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Power Portalin käyttö osapuolen tietomallin kanssa
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Microsoft Power Apps -portaalien käyttö osapuolen tietomallin kanssa
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Voit luoda nämä uudet taulukon käyttöoikeudet seuraavasti:
 
     Sinun on luotava kolme uutta käyttöoikeutta:
 
-    + Yhteyshenkilö-Osapuoli-yhteys
-    + Osapuoli-Tili-yhteys
-    + Tili-Tilaus-yhteys
+    + **Yhteyshenkilö**- ja **Osapuoli**-taulun yhteys
+    + **Osapuoli**- ja **Tili**-taulun yhteys
+    + **Tili**- ja **Järjestys**-taulun yhteys
 
 4. Luo ja tallenna Yhteyshenkilö-Osapuoli-yhteyden uusi käyttöoikeus ja määritä nämä parametrit:
 
-    + **Nimi**: Osapuoli-Tili-yhteys (tai valintasi)
+    + **Nimi**: **Osapuoli**- ja **Tili**-taulun yhteys (tai valintasi)
     + **Taulukon nimi**: msdyn_contactforparty
     + **Sivusto**: Asiakasportaali
     + **Laajuus**: Yhteyshenkilö

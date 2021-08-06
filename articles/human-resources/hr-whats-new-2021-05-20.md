@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afa64474e8eaf4c7b73e4f76d85e379f77b570a7
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: c7b7f71cf084a05bb0278f5df4ddb022ef3d640f
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111564"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560047"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-20-2021"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet 20. toukokuuta 2021
 
@@ -70,7 +70,7 @@ Seuraavat uudet ominaisuudet ovat esiversioita. Lisätietoja ominaisuuksien otta
 | Etujen hallinnan työtila | [Etujen hallinnan työtila (esikatselu)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Etujen hallinnan työtila](hr-benefits-management-workspace.md) |
 | Loma- ja poissaolotyönkulun parannukset | [Loma- ja poissaolotyönkulun parannukset](https://go.microsoft.com/fwlink/?linkid=2147528) | [Pyydä vapaata](hr-employee-self-service-request-time-off.md)|
 | Ota käyttöön palkanlaskennan yksinkertaistettu integrointi (Palkanlaskennan integroinnin ohjelmointirajapinnat) | [Yksinkertaisen integroinnin käyttöönotto palkanlaskennan palveluntarjoajien kanssa](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Palkanlaskennan integroinnin ohjelmointirajapinta](hr-admin-integration-payroll-api-introduction.md)|
-| Loman jaksotustapahtuman tarkistus | - | [Loman jaksotustapahtuman tarkistus](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Loman jaksotustapahtuman tarkistus | - | [Loman jaksotustapahtuman tarkistus](hr-leave-and-absence-accrue.md)|
 
 ## <a name="coming-soon"></a>Tulossa pian
 

@@ -2,7 +2,7 @@
 title: Adventure Works -teeman yleiskatsaus
 description: Tässä aiheessa on yleiskatsaus Adventure Works -teemasta ja sen käyttämisestä sivuston sivuilla Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479446"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655629"
 ---
 # <a name="adventure-works-theme-overview"></a>Adventure Works -teeman yleiskatsaus
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa on yleiskatsaus Adventure Works -teemasta ja sen käyttämisestä sivuston sivuilla Microsoft Dynamics 365 Commercessa.
 
 Dynamics 365 Commerce sisältää sähköisen kaupankäynnin teeman, jonka nimi on Adventure Works. Adventure Works -teema esittelee urheilutuotteita ja vapaa-ajan tuotteita, ja se on optimoitu monipuolista ja paranneltua tarinoidenkerrontaa varten. Se tarjoaa modernin ulkoasun, uusia asetteluita ja animaatiotehosteita, joiden avulla voit luoda sähköisen kaupan asiakkaille houkuttelevan ja mukaansatempaavan verkko-ostoskokemuksen.
 
-Adventure Works -teema tarjoaa seuraavat uudet työnkulut:
+## <a name="trial-environments-in-commerce"></a>Commerce-kokeiluympäristöt
 
-- Videotoistinmoduuli tukee nyt otsikoita, kappaleita ja linkkejä parempaa tarinankerrontaa varten.
-- Lisää ostoskoriin -toiminto avaa pienoiskorin ilmoituksen näyttämisen sijaan.
+Jos haluat nähdä, miltä Adventure Works -teema näyttää, kun se otetaan kuluttajakaupan ja yritystenvälisen kaupan sivustoilla, vieraile seuraavilla kokeilusivustoilla:
+
+- [Adventure Works -kuluttajakaupan sivusto](https://www.adventure-works.com/)
+- [Adventure Works -yritysten välisen kaupan sivusto](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Teeman ominaisuudet
+
+Adventure Works -teema tarjoaa seuraavat uudet ominaisuudet:
+
+- Videotoistinmoduuli tukee nyt otsikoita, kappaleita ja linkitystä parempaa tarinankerrontaa varten.
+- Sisältöjen siirtymät ovat parempia animaatioiden ansiosta.
+- "Lisää ostoskoriin" -toiminto avaa pienoiskorin ilmoituksen näyttämisen sijaan.
 - Pikanäkymämoduuli on ruutu, joka liukuu sekä tietokoneen että mobiililaitteen näytöllä.
-- Tyhjä ostoskori voi nyt esitellä kampanjoita.
+- Sivuston sivuilla on uusia asetteluita. 
+- Markkinointisisällön voi konfiguroida kärryä ja minikärryä varten, kun ne ovat tyhjiä.
+- Minikärryssä voi näkyä kampanjasanomia, kuten "Ilmainen toimitus yli $50 arvoisille tilauksille".
+- Kuvauskortit hahmonnetaan haku- ja luokkasivuilla.
 
-Adventure Works -teema sisältää seuraavat tarinankerrontamoduulit Commerce-moduulikirjastossa:
+Adventure Works -teema sisältää nyt seuraavat tarinankerrontamoduulit Commerce-moduulikirjastossa:
 
-- Ruutuluettelomoduuli
-- Interaktiivinen ominaisuusmoduuli
-- Tilausmoduuli
-- Aktiivinen kuvamoduuli
-- Kuvaluettelomoduuli
+- [Ruutuluettelomoduuli](tile-list-module.md)
+- [Vuorovaikutteinen ominaisuusmoduuli](interactive-feature-module.md)
+- [Aktiivinen kuvamoduuli](active-image-module.md)
+- [Allekirjoitusmoduuli](subscribe-module.md)
+- [Kuvaluettelomoduuli](image-list-module.md)
 
 Adventure Works -teema on täysin responsiivinen, ja se tarjoaa optimoidun käyttökokemuksen tietokoneiden, mobiililaitteiden ja tablettien näytöille.
 
@@ -77,6 +89,10 @@ Adventure Works -teema sisältää useita teemalaajennuksia, kuten **näkymälaa
 Muut moduulit sisältävät myös moduulimääritelmän laajennuksia. Esimerkiksi [ostoskorikuvakemoduuli](cart-icon-module.md) sisältää kaksi ylimääräistä **Tyhjä ostoskori**- ja **Kampanjasisältö**-paikkaa, jotka on toteutettu käyttämällä moduulimääritelmän laajennuksia. Lisäksi otsikkomoduuliin on lisätty uusi **Mobiililogo**-ominaisuus, joka tukee logoa mobiililaitteiden näytöillä. Tämä ominaisuus on toteutettu otsikkomoduulin määritelmän laajennuksena.
 
 Lisätietoja teemalaajennuksista on kohdassa [Teemalaajennukset](e-commerce-extensibility/theme-module-extensions.md).
+
+## <a name="install-the-adventure-works-theme"></a>Adventure Works -teeman asentaminen
+
+Lisätietoja Adventure Works -teeman asentamisesta on [Adventure Works -teeman asennuksessa](install-adventure-works.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

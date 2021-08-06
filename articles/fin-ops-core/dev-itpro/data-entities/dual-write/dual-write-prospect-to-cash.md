@@ -4,30 +4,21 @@ description: Tässä ohjeaiheessa on tietoja prospektista käteiseksi -kaksoiski
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361386"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542268"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Useimpien yritysten tärkeä tavoite on muuntaa prospektit asiakkaiksi ja ylläpitää sitten jatkuvaa liikesuhdetta kyseisiin asiakkaisiin. Microsoft Dynamics 365 -sovelluksissa prospektista käteiseksi -prosessi tapahtuu tarjousten tai tilaustenkäsittelytyönkulkujen kautta. Myyntitiedot täsmäytetään ja kirjataan. Prospektista käteiseksi -kaksoiskirjoituksen integrointi luo työnkulun. Se käyttää tarjousta ja tilausta, joka saadaan Dynamics 365 Salesista tai Dynamics 365 Supply Chain Managementista ja määrittää tarjouksen ja tilauksen käytettäväksi molemmissa sovelluksissa.
 
@@ -70,6 +61,7 @@ Myyntitarjoukset luodaan Salesissa tai Supply Chain Managementissa. Jos luot tar
 + **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-sarakkeet eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden sarakkeiden määrittämistä varten on määritettävä arvon yhdistämismääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä taulu synkronoidaan.
 
 Jos käytät myös Field Service -ratkaisua, muista ottaa **Tarjousrivin pikakäynnistys** -parametri uudelleen käyttöön. Kun parametri otetaan uudelleen käyttöön, voit jatkaa tarjousrivien luomista pikaluontitoiminnon avulla.
+
 1. Siirry Dynamics 365 Sales -sovellukseen.
 2. Valitse yläreunan siirtymispalkista Asetukset-kuvake.
 3. Valitse **Lisäasetukset**.
@@ -121,43 +113,25 @@ Prospektista käteiseksi -toiminto sisältää perustaulukarttojen kokoelman, jo
 
 | Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset | kuvaus |
 |-----------------------------|-----------------------------------|-------------|
-| Myyntilaskun otsikot V2    | laskut                          | Finance and Operations -sovelluksen Myyntilaskun otsikot V2 -taulu sisältää myyntitilausten laskut ja vapaatekstilaskut. Dataversessa käytetään kaksoiskirjoituksen suodatinta, joka suodattaa pois vapaatekstilaskuasiakirjat. |
-| Myyntilaskun rivit V2      | invoicedetails                    |             |
-| CDS-myyntitilauksien otsikot     | salesorders                       |             |
-| CDS-myyntitilausrivit       | salesorderdetails                 |             |
-| Myyntitilausten alkuperän koodit    | msdyn\_salesorderorigins          |             |
-| CDS-myyntitarjouksen otsikko  | tarjoukset                            |             |
-| CDS-myyntitarjousrivit   | quotedetails                      |             |
+[Kaikki tuotteet](mapping-reference.md#138) | msdyn_globalproducts | |
+[Asiakkaat V3](mapping-reference.md#101) | tilit | |
+[Asiakkaat V3](mapping-reference.md#116) | yhteyshenkilöt | |
+[Yhteyshenkilöt V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[CDS-myyntitilauksien otsikot](mapping-reference.md#217) | salesorders | |
+[CDS-myyntitilausrivit](mapping-reference.md#216) | salesorderdetails | |
+[CDS-myyntitarjouksen otsikko](mapping-reference.md#215) | tarjoukset | |
+[CDS-myyntitarjousrivit](mapping-reference.md#214) | quotedetails | |
+[Vapautetut tuotteet V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Myyntilaskun otsikot V2](mapping-reference.md#118) | laskut | Finance and Operations -sovelluksen Myyntilaskun otsikot V2 -taulu sisältää myyntitilausten laskut ja vapaatekstilaskut. Dataversessa käytetään kaksoiskirjoituksen suodatinta, joka suodattaa pois vapaatekstilaskuasiakirjat. |
+[Myyntilaskun rivit V2](mapping-reference.md#117) | invoicedetails | |
+[Myyntitilausten alkuperän koodit](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Tässä ovat prospektista käteiseksi -toiminnon liittyvät perustaulukartat.
-
-+ [Asiakkaat V3 tileille](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS Contacts V2 yhteyshenkilöihin](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Asiakkaat V3 yhteyshenkilöihin](customer-mapping.md#customers-v3-to-contacts)
-+ [msdyn_sharedproductdetails-yksikköön vapautetut tuotteet V2](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Kaikki tuotteet kohteeseen msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Hinnasto](product-mapping.md)
+Lisätietoja hinnastoista on kohdassa [Yhtenäinen tuotekokemus](product-mapping.md).
 
 ## <a name="limitations"></a>Rajoitukset
+
 - Palautustilauksia ei tueta.
 - Hyvityslaskuja ei tueta.
-- Taloushallinnon dimensiot on määritettävä päätiedoille, kuten asiakkaalle ja toimittajalle. Kun asiakas lisätään tarjoukseen tai myyntitilaukseen, asiakastietueeseen liitetyt taloushallinnon dimensiot siirtyvät automaattisesti tilaukseen. Kaksoiskirjoitus ei sisällä tällä hetkellä päätietojen taloushallinnon dimensioiden tietoja. 
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
+- Taloushallinnon dimensiot on määritettävä päätiedoille, kuten asiakkaalle ja toimittajalle. Kun asiakas lisätään tarjoukseen tai myyntitilaukseen, asiakastietueeseen liitetyt taloushallinnon dimensiot siirtyvät automaattisesti tilaukseen. Kaksoiskirjoitus ei sisällä tällä hetkellä päätietojen taloushallinnon dimensioiden tietoja.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

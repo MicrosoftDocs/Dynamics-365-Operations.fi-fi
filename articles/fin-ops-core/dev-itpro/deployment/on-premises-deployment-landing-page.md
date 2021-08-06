@@ -2,7 +2,7 @@
 title: Paikallisen käyttöönoton aloitussivu – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
 author: sericks007
-ms.date: 03/22/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ef19a154b4e18246c88adea48ee2709af17f039f
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f5ecc71326892683e0a49685262aae0db4a49ea9
+ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338927"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617067"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -33,6 +33,7 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Paikallinen käyttöönotto – yleiskatsaus](on-premises-overview.md)
 - [Paikallisten käyttöönottojen suunnittelu ja valmistelu](plan-onprem-deployment.md)
 - [Paikallisten käyttöönottojen järjestelmävaatimukset](../../fin-ops/get-started/system-requirements-on-prem.md)
+- [Microsoft Dynamics 365 Finance + Operations (on-premises) tuettu ohjelmisto](onprem-compatibility.md)
 - [Laitteiston kokovaatimukset paikallisissa ympäristöissä](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Osta Finance and Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Pilvipalvelun ja paikallisten ominaisuuksien vertailu](../../fin-ops/get-started/cloud-prem-comparison.md)

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae444b4d208804364333bd3d6e4704500da85470
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: c2f362e71832d6f7b17e06ad98142019ced4df14
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303559"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560071"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet 22.6.2021
 
@@ -44,7 +44,7 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 | --- | --- | --- |
 | Ilmoita käyttäjille työntekijöistä, joilla ei ole työsuhdetoimintoa - Kun lisäkäyttö on käytössä ja kun **Näytä kaikki työntekijät, joilla ei ole työsuhdetta** on poistettu käytöstä ominaisuudenhallinnassa, työntekijöissä, joilla ei ole työsuhdetta näkyy lippu. Lippu ohjaa käyttäjän ottamaan käyttöön **Näytä kaikki työntekijät ilman työsuhdetta** -toiminnon. | Ei käytettävissä| [Työntekijät, joilla ei työsuhdetta](/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Etujen hallinnan kelpoisuussääntöjen mukautettujen kenttien tuki | [Mukautetun kentän tuki kelpoisuuskäsittelylle](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Oikeutussääntöjen määrittäminen](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
-| Loman jaksotustapahtuman tarkistus | Ei käytettävissä | [Loman jaksotustapahtuman tarkistus](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Loman jaksotustapahtuman tarkistus | Ei käytettävissä | [Loman jaksotustapahtuman tarkistus](hr-leave-and-absence-accrue.md)|
 | Loma- ja poissaolotyönkulun parannukset | [Loma- ja poissaolotyönkulun parannukset](https://go.microsoft.com/fwlink/?linkid=2147528) | [Pyydä vapaata](hr-employee-self-service-request-time-off.md)|
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset

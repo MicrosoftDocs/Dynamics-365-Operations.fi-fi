@@ -2,7 +2,7 @@
 title: Ryhmän kalenterin luominen
 description: Tarkastele ja luo ryhmän kalentereita Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cedff4031c6455b446af9c56a770a00f3b2efc80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052094"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639387"
 ---
 # <a name="view-team-and-company-calendars"></a>Ryhmä- ja yrityskalenterien tarkasteleminen
 
@@ -30,7 +30,7 @@ Voit tarkastella ryhmä- ja yrityskalentereita Dynamics 365 Human Resourcesissa.
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Työryhmän kalenterin tarkasteleminen työntekijänä
 
-1. Valitse **Työntekijän itsepalvelu** -työtilassa **Tiimin poissaolokalenteri** **Yhteenveto**-kohdassa.
+- Valitse **Työntekijän itsepalvelu** -työtilassa **Tiimin poissaolokalenteri** **Yhteenveto**-kohdassa.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Työryhmän kalenterin tarkasteleminen esimiehenä
 
@@ -39,6 +39,21 @@ Voit tarkastella ryhmä- ja yrityskalentereita Dynamics 365 Human Resourcesissa.
 2. Valitse **Loma ja poissaolo** ja valitse sitten **Näytä esimiehen poissaolokalenteri**.
 
 Esimiehet voivat myös käyttää tiimikalenteria **Tiimin odottavista lomapyynnöistä**, **Hyväksytyistä lomista** ja **Lomapyynnöistä**. 
+
+## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Poissaolopäällikön kalenterin tarkasteleminen poissaolopäällikkönä
+
+> [!NOTE]
+> Jos haluat tarkastella poissaolopäällikön kalenteria, sinun on ensin otettava käyttöön **(Esiversio) Poissaolopäällikkö hallinnoi poissaoloja**, jotta voit hallita ominaisuutta ominaisuuksien hallinnassa. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
+
+Poissaolopäällikkö-roolin käyttäjät voivat tarkastella poissaolopyyntöjä kalenterissaan. Voit käyttää vapaa-aikakalenteria seuraavien ohjeiden mukaisesti.
+
+1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolopäällikkö** ja sitten **Poissaolopäällikön kalenteri**.
+
+2. Syötä **Päivämäärä**-kenttään halutut päivämäärät.
+
+3. Päivitä näkymän asetukset tarpeen mukaan.
+
+Poissaolopäällikön kalenterissa näkyvät kaikki poissaolopäällikölle raportoivien työntekijöiden tietueet Vapaa-hierarkiassa.
 
 ## <a name="view-a-company-calendar"></a>Yrityksen kalenterin tarkasteleminen
 
@@ -64,13 +79,11 @@ Loma- ja poissaoloparametrien kalenterimääritykset määrittävät käytettäv
 
 Voit myös suodattaa kalentereita esimiehen tai osaston mukaan. Ensisijainen toimen määritys määrittää näytettävät työntekijät, kun nämä suodattimet on määritetty. 
 
->[!IMPORTANT]
->Loman ja poissaolon tarkasteleminen yrityksissä tapahtuu nyt esikatselussa. Se on otettava käyttöön **eristysympäristössä**. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br><br>
->Tämän jälkeen ominaisuus on otettava käyttöön **Human Resourcesin jaetut parametrit** -kohdassa, jos haluat näyttää yrityksen suodattimen kalentereissa. Lisätietoja on kohdassa [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md).<br><br>
->Voit suodattaa kalenterin yrityksen mukaan. Jos haluat nähdä kaikki työntekijät riippumatta yrityksestä, yyhjennä suodatinruutu ja valitse Enter-näppäin. 
+> [!IMPORTANT]
+> Voit ottaa **Yritysten välinen lomanäkymä** -ominaisuuden käyttöön ominaisuuksien hallinnassa. Tämän jälkeen ominaisuus on otettava käyttöön **Henkilöstöhallinnon jaetut parametrit** -sivulla, jos haluat näyttää yrityksen suodattimen kalentereissa. Lisätietoja on kohdassa [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md).
+> 
+> Voit suodattaa kalenterin yrityksen mukaan. Jos haluat nähdä kaikki työntekijät riippumatta yrityksestä, yyhjennä suodatinruutu ja valitse **Enter**-näppäin. 
 
 Lisätietoja kalenteriasetuksista on ohjeaiheessa [Kalenteriparametrien määrittäminen](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

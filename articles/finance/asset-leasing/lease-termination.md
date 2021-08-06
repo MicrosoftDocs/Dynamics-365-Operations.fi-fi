@@ -2,7 +2,7 @@
 title: Vuokrasopimuksen irtisanomisen ehdotus
 description: Tässä ohjeaiheessa kerrotaan, miten ehdotetaan vuokran päättämistä.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b32f9e8f80827e04269ac8cb6a4fbb5a13af8bc
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 003eaa3f9e5ad653daed2e973044f384972b0331
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881105"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638485"
 ---
 # <a name="propose-a-lease-for-termination"></a>Vuokran ehdottaminen irtisanomista varten
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Jos vuokra päätetään etuajassa, käyttöomaisuuden vuokraus voi kirjata irtisanomisen kirjauskansiomerkinnän, joka poistaa vuokravelkaa, käyttöoikeutta (ROU) sekä kertyneitä poistoja, sekä kirjata voiton tai tappion. Varhaisen irtisanomisen prosessi päättää vuokra-ajan ja siihen liittyvät vuokrakirjat. Se ei päätä yksittäisiä vuokrakirjoja. Tässä aiheessa kuvataan toimintoja, jotka mahdollistaa vuokrasopimuksen ehdottamisen irtisanomista varten ja vuokran päättymisen kirjauskansion merkinnän käsittelemisen.
 

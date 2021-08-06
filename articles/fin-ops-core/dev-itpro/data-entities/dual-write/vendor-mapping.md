@@ -4,24 +4,17 @@ description: Tässä aiheessa kuvataan alihankkijatietojen integraatiota Finance
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36cfed92535c1df3ba55fd56bc8aa2f9eccf3003
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346493"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542436"
 ---
 # <a name="integrated-vendor-master"></a>Integroidut toimittajan päätiedot
 
@@ -29,9 +22,7 @@ ms.locfileid: "6346493"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
-Termi *toimittaja* viittaa toimittajaorganisaatioon tai elinkeinonharjoittajaan, joka toimittaa tavaroita tai palveluja yrityksille. Vaikka *toimittaja* on vakiintunut käsite Microsoft Dynamics 365 Supply Chain Management -sovelluksessa, toimittajan konseptia ei ole muissa mallipohjaisissa sovelluksissa Dynamics 365:ssa. Voit kuitenkin ylikuormittaa **Tili/yhteyshenkilö**-taulukon toimittajatietojen tallentamista varten. Integroitu toimittajan perustyyli sisältää eksplisiittisen toimittajan konseptin Dynamics 365 -malleissa, joissa käytetään mallipohjaisia sovelluksia. Voit käyttää uuden toimittajan rakennetta tai tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-taulukkoon. Kaksoiskirjoitus tukee molempia lähestymistapoja.
+Termi *toimittaja* viittaa toimittajaorganisaatioon tai elinkeinonharjoittajaan, joka toimittaa tavaroita tai palveluja yrityksille. Vaikka *toimittaja* on vakiintunut käsite Microsoft Dynamics 365 Supply Chain Management issa, toimittajan konseptia ei ole muissa asiakasvuorovaikutussovelluksissa. Voit kuitenkin ylikuormittaa **Tili/yhteyshenkilö**-taulukon toimittajatietojen tallentamista varten. Integroitu päätoimittaja esittelee eksplisiittisen toimittajan käsitteen asiakasvuorovaikutussovelluksiin. Voit käyttää uuden toimittajan rakennetta tai tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-taulukkoon. Kaksoiskirjoitus tukee molempia lähestymistapoja.
 
 Molemmissa tapauksessa toimittajatiedot on integroitu Dynamics 365 Supply Chain Managementiin, Dynamics 365 Salesiin, Dynamics 365 Field Serviceen ja Power Apps -portaaliin. Toimitusketjun hallinnassa tiedot ovat käytettävissä työnkuluissa, kuten ostoehdotuksissa ja ostotilauksissa.
 
@@ -52,27 +43,17 @@ Jos haluat edelleen tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-tau
 
 Toimittajan tiedot sisältävät kaikki toimittajan tiedot, kuten toimittajaryhmän, osoitteet, yhteystiedot, maksuprofiilin ja laskutusprofiilin. Taulukarttojen kokoelma toimii yhdessä toimittajatietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset     | kuvaus
+Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
 ----------------------------|-----------------------------|------------
-Toimittaja V2                   | Tili                     | Yritykset, jotka käyttävät Tili-taulukkoa toimittajatietojen tallentamiseen, voivat jatkaa sen käyttämistä samalla tavalla. Ne voivat myös hyödyntää eksplisiittistä toimittajan toiminnallisuutta, joka on tulossa Finance and Operations -sovellusten integroinnin ansiosta.
-Toimittaja V2                   | Msdyn\_vendors              | Yritykset, jotka käyttävät mukautettua toimittajaratkaisua, voivat hyödyntää käyttövalmista toimittajakäsitettä, joka otetaan käyttöön Dataversessä Finance and Operations -sovellusten integroinnin ansiosta. 
-Toimittajaryhmät               | msdyn\_vendorgroups         | Tämä malli synkronoi toimittajaryhmän tiedot.
-Toimittajan maksutapa       | msdyn\_vendorpaymentmethods | Tämä malli synkronoi toimittajan maksutavan tiedot.
-CDS-yhteyshenkilöt V2             | yhteyshenkilöt                    | [Yhteyshenkilöt](customer-mapping.md#cds-contacts-v2-to-contacts)-malli synkronoi kaikki sekä asiakkaiden että toimittajien ensisijaiset, toissijaiset ja kolmannentason yhteystiedot
-Maksusuunnitelmarivit      | msdyn\_paymentschedulelines | [Maksusuunnitelmarivit](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines)-malli synkronoi sekä asiakkaiden että toimittajien viitetiedot.
-Maksuaikataulu            | msdyn\_paymentschedules     | [Maksusuunnitelmat](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules)-malli synkronoi sekä asiakkaiden että toimittajien maksusuunnitelman viitetiedot.
-CDS V2 -maksupäivärivit    | msdyn\_paymentdaylines      | [Maksupäivärivit](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines)-malli synkronoi asiakkaiden ja toimittajien maksupäivärivien viitetiedot.
-CDS-maksupäivät            | msdyn\_paymentdays          | [Maksupäivät](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays)-malli synkronoi sekä asiakkaiden että toimittajien maksupäivien viitetiedot.
-Maksuehdot            | msdyn\_paymentterms         | [Maksuehdot](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms)-malli synkronoi sekä asiakkaiden että toimittajien maksuehtojen viitetiedot.
-Nimen jälkiliitteet                | msdyn\_nameaffixes          | [Nimen jälkiliitteet](customer-mapping.md#name-affixes-to-msdyn_nameaffixes)-malli synkronoi sekä asiakkaiden että toimittajien nimen jälkiliitteiden viitetiedot.
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
-
-[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
-
-[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
+[CDS-yhteyshenkilöt V2](mapping-reference.md#115) | yhteyshenkilöt | Tämä malli synkronoi kaikki sekä asiakkaiden että toimittajien ensisijaiset, toissijaiset ja kolmannentason yhteystiedot
+[Nimen jälkiliitteet](mapping-reference.md#155) | msdyn_nameaffixes | Tämä malli synkronoi sekä asiakkaiden että toimittajien nimen jälkiliitteiden viitetiedot.
+[CDS V2 -maksupäivärivit](mapping-reference.md#157) | msdyn_paymentdaylines | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksusuunnitelmarivien viitetiedot.
+[CDS-maksupäivät](mapping-reference.md#158) | msdyn_paymentdays | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksupäivien viitetiedot.
+[Maksusuunnitelmarivit](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkronoi sekä asiakkaiden että toimittajien maksusuunnitelmarivien viitetiedot.
+[Maksusuunnitelma](mapping-reference.md#160) | msdyn_paymentschedules | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksusuunnitelman viitetiedot.
+[Maksuehdot](mapping-reference.md#161) | msdyn_paymentterms | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksuehtojen (maksuehdot) viitetiedot.
+[Toimittajat V2](mapping-reference.md#202) | msdyn_vendors | Yritykset, jotka käyttävät mukautettua toimittajaratkaisua, voivat hyödyntää käyttövalmista toimittajakäsitettä, joka otetaan käyttöön Dataversessä Finance and Operations -sovellusten integroinnin ansiosta.
+[Toimittajaryhmät](mapping-reference.md#200) | msdyn_vendorgroups | Tämä malli synkronoi toimittajaryhmän tiedot.
+[Toimittajan maksutapa](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Tämä malli synkronoi toimittajan maksutavan tiedot.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f80458de69a77846259c9a0707c05098d13e12a
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: ecffbfa00aee1dd3197aeeab3b292aba8aafd82f
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115070"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641153"
 ---
 # <a name="product-readiness"></a>Tuotteen valmius
 
@@ -177,8 +177,6 @@ Valmiuskäytäntö määritetään tuotesuunnitteluluokalle seuraavasti:
 <a name="standard-products"></a>
 
 ## <a name="readiness-checks-on-standard-products"></a>Vakiotuotteiden valmiustarkistukset
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Voit ottaa käyttöön tuotteiden valmiustarkistukset vakiotuotteille (ei-suunnittelu) ottamalla *tuotevalmiuden tarkistukset* -ominaisuus käyttöön toiminnonhallinnassa. Tämän ominaisuuden avulla valmiustarkistusjärjestelmään tehdään muutamia muutoksia, jotta se tukee vakiotuotteita.
 

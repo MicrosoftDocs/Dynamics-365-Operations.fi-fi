@@ -1,8 +1,8 @@
 ---
-title: Suunnitelmantyyppien luominen
+title: Palvelupaketin tyypin yleiskatsaus
 description: Microsoft Dynamics 365 Human Resourcesin suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kullakin suunnitelmatyypillä on suunnitelmatyypin koodi, joka määrittää suunnitelmatyypin säännöt.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb4746425c2faa3c0b1bd3940bf2e03cf7f9595c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057859"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558270"
 ---
-# <a name="create-plan-types"></a>Suunnitelmantyyppien luominen
+# <a name="plan-type-overview"></a>Palvelupaketin tyypin yleiskatsaus
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resourcesin suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kullakin suunnitelmatyypillä on suunnitelmatyypin koodi, joka määrittää suunnitelmatyypin säännöt. Esimerkiksi suunnitelmatyypillä Peruselinaika olisi suunnitelmatyyppikoodi Elämä, koska se on eräänlainen henkivakuutussuunnitelma ja on noudatettava Elämä-suunnitelmatyyppikoodille vahvistettuja sääntöjä. Toinen suunnitelmatyyppi voi olla täydentävä elämä, myös suunnitelmatyyppikoodilla Elämä.
+Suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kullakin suunnitelmatyypillä on suunnitelmatyypin koodi, joka määrittää suunnitelmatyypin säännöt. Erimerkiksi palvelupakettityypillä **Perushenkivakuutus** on **Henkivakuutus**-palvelupakettityypin koodi, koska se on henkivakuutuspalvelupaketin tyyppiä ja sen on noudatettava sääntöjä, jotka on määritetty **Henkivakuutus**-palvelupaketin tyyppikoodille. Toinen palvelupakettityyppi voi olla **Lisähenkivakuutus**. Tällä palvelupakettityypillä on myös **Henkivakuutus**-palvelupaketin tyyppikoodi.
 
 Kukin suunnitelmatyyppi ilmaisee, voiko työntekijä ilmoittautua yhteen tai useaan sen tyypin suunnitelmaan. Työntekijä voi esimerkiksi ilmoittautua sekä peruselämään että täydentävään elämään Elämä-suunnitelmatyypissä. Työntekijän todennäköisesti sallitaan rekisteröityä vain yhden tyyppiseen lääketieteelliseen käytäntöön.
 
 Jos suunnitelmatyyppiin kuuluu kontakteja, suunnitelmatyyppi ilmaisee, ovatko kontaktit edunsaajia vai riippuvaisia. Esimerkiksi peruselämän suunnitelmatyypillä olisi edunsaajat, kun taas lääketieteellisellä perussuunnitelmatyypillä olisi riippuvaisia. Joissakin tapauksissa suunnitelmalla ei ehkä ole henkilökohtaisia yhteyshenkilöitä. Esimerkiksi joustava kulutustili tai pysäköintikorvaus.
 
 Suunnitelmatyyppi voi määrittää kattavuusasetukset. Kattavuusasetukset määritetään kattavuusasetuslomakkeessa. Kattavuusasetus voi määrittää sen edun tai niiden yhteyshenkilöiden määrän, jotka ovat oikeutettuja suunnitelmatyyppiin. Jos kontaktityyppi on esimerkiksi edunsaaja, kattavuusasetuksen avulla voidaan määrittää ehdot, jotka edunsaaja voi saada, kun etua hyödynnetään. Jos yhteyshenkilön tyyppi on riippuvainen, kattavuusasetuksen tulee määrittää riippuvaisen ja työntekijän välinen suhde. 
+
+> [!IMPORTANT]
+> Lomake sisältää keskeiset tiedot, jotka vaikuttavat uuden etuuspaketin luonnissa käytettävissä oleviin vaihtoehtoihin:
+>
+> - **Palvelupaketin tyyppikoodi** – Tämä kenttä vaikuttaa siihen, mitä **Määritys**-välilehdessä näkyy, kun todellinen etu on määritetty.  
+> - **Samanaikainen rekisteröinti** – Tämä kenttä määrittää, sallitaanko useita rekisteröintejä. (Lääketieteellisessä palvelupaketissa tämä kenttä on yleensä asetettu arvoksi **Yksi rekisteröinti** .)
+> - **Yhteyshenkilötyyppi** – Tämän kentän avulla huollettavat tai edunsaajat voidaan lisätä suunnitelmaan. Jos asetuksena on **Ei mitään**, etuuksiin rekisteröitynellä työntekijällä ei ole mahdollisuutta valita edunsaajaa tai huollettavaa.
+> - **Kattavuusvaihtoehdot** – Tämän kentän avulla voit linkittää kattavuusvaihtoehdot palvelupakettityyppeihin. Se määrittää joko henkilöt, jotka kuuluvat tämän palvelupakettityypin piiriin, tai kattavuussummat, jotka ovat käytettävissä tälle palvelupakettityypille. Voit esimerkiksi määrittää, että lääketieteellisen palvelupaketin tyypin kattavuus on vain työntekijän, työntekijän ja yhden muun henkilön tai työntekijän ja hänen perheensä käytettävissä.
+
+## <a name="create-plan-types"></a>Suunnitelmantyyppien luominen
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Suunnitelmatyypit**.
 
