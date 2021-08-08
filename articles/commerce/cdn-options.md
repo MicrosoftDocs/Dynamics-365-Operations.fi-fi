@@ -2,7 +2,7 @@
 title: Sisällöntoimitusverkon käyttöönottoasetukset
 description: Tässä aiheessa on tietoja sisällöntoimitusverkoston (CDN) käyttöönottovaihtoehdoista, joita voidaan käyttää Microsoft Dynamics 365 Commerce -ympäristöissä. Nämä vaihtoehdot ovat alkuperäiset, Commercen tarjoamat Azure Front Door -esiintymät sekä asiakkaiden omistuksessa olevat Azure Front Door -esiintymät.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351246"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657116"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Sisällöntoimitusverkon käyttöönottoasetukset
 
@@ -50,7 +50,7 @@ Seuraavassa taulukossa luetellaan Commercen mukana tulevan Azure Front Door -esi
 
 | Hyvät puolet | Huonot puolet |
 |------|------|
-| <ul><li>Instanssi sisältyy Commerce-kustannukseen.</li><li>Koska Commerce-tiimi hallitsee instanssia, ylläpitoa on vähemmän ja määritysvaiheet ovat yhteisiä.</li><li>Azuren ylläpitämä infrastruktuuri on skaalattava, suojattu ja luotettava.</li><li>SSL (Secure Sockets Layer) -varmenne edellyttää kerta-asetuksen, ja se uusitaan automaattisesti.</li><li>Commerce-tiimi valvoo virheiden ja poikkeamien varalta.</li></ul> | <ul><li>WAFia ei tueta.</li><li>Ei erityisiä mukautuksia tai asetusten muutoksia.</li><li>Esiintymä riippuu Commerce -tiimin päivityksistä tai muutoksista.</li><li>Apex-toimialueita varten on käytettävä erillistä Azure Front Door -esiintymää, jotta Apex-toimialueet voidaan integroida Azure DNS -järjestelmän kanssa.</li><li>Asiakkaalle ei toimiteta telemetriaa vastauksia sekunnissa (RPS) -tiedoista tai virhetasosta.</li></ul> |
+| <ul><li>Instanssi sisältyy Commerce-kustannukseen.</li><li>Koska Commerce-tiimi hallitsee instanssia, ylläpitoa on vähemmän ja määritysvaiheet ovat yhteisiä.</li><li>Azuren ylläpitämä infrastruktuuri on skaalattava, suojattu ja luotettava.</li><li>SSL (Secure Sockets Layer) -varmenne edellyttää kerta-asetuksen, ja se uusitaan automaattisesti.</li><li>Commerce-tiimi valvoo virheiden ja poikkeamien varalta.</li></ul> | <ul><li>WAF:ia ei tueta.</li><li>Ei erityisiä mukautuksia tai asetusten muutoksia.</li><li>Esiintymä riippuu Commerce -tiimin päivityksistä tai muutoksista.</li><li>Apex-toimialueita varten on käytettävä erillistä Azure Front Door -esiintymää, jotta Apex-toimialueet voidaan integroida Azure DNS -järjestelmän kanssa.</li><li>Asiakkaalle ei toimiteta telemetriaa vastauksia sekunnissa (RPS) -tiedoista tai virhetasosta.</li></ul> |
 
 Seuraavassa kuvassa esitetään Commercen toimittaman Azure Front Door -esiintymän arkkitehtuuri.
 
@@ -74,7 +74,7 @@ Seuraavassa taulukossa on lueteltu ulkoisen CDN-palvelun käyttämisen hyvät ja
 
 | Hyvät puolet | Huonot puolet |
 |------|------|
-| <ul><li>Tästä vaihtoehdosta on hyötyä, jos olemassa olevaa toimialuetta jo isännöidään ulkoisessa CDN-palvelussa.</li><li>Kilpailijan CDN-palveluilla (esimerkiksi Akamai) voi olla enemmän WAF-ominaisuuksia.</li></ul> | <ul><li>Erillinen sopimus ja lisäkustannukset tarvitaan.</li><li>SSL-suojaus voi aiheuttaa lisäkustannuksia.</li><li>Koska palvelu on erillinen Azure-pilvipalvelurakenteesta, on hallittava lisää lisäinfrastruktuuria.</li><li>Palvelu saattaa edellyttää pidempiä aikainvestointeja päätepisteen ja suojauksen määritykseen.</li><li>Palvelua hallitaan itse.</li><li>Palvelua valvotaan itse.</li></ul> |
+| <ul><li>Tästä vaihtoehdosta on hyötyä, jos olemassa olevaa toimialuetta jo isännöidään ulkoisessa CDN-palvelussa.</li><li>WAF: Riippuu ulkoisesta palveluntarjoajasta.</li></ul> | <ul><li>Erillinen sopimus ja lisäkustannukset tarvitaan.</li><li>SSL-suojaus voi aiheuttaa lisäkustannuksia.</li><li>Koska palvelu on erillinen Azure-pilvipalvelurakenteesta, on hallittava lisää lisäinfrastruktuuria.</li><li>Palvelu saattaa edellyttää pidempiä aikainvestointeja päätepisteen ja suojauksen määritykseen.</li><li>Palvelua hallitaan itse.</li><li>Palvelua valvotaan itse.</li></ul> |
 
 Seuraavassa kuvassa on Commercen infrastruktuuri, joka sisältää ulkoisen CDN-palvelun.
 

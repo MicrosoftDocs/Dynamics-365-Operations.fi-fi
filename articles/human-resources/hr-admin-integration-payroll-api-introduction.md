@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a1e94067e2dcca59f03e01520f16a09da1bd4f52
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360565"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559987"
 ---
 # <a name="payroll-integration-api-introduction"></a>Palkanlaskennan integroinnin ohjelmointirajapinnan esittely
 
@@ -30,8 +30,8 @@ Tässä ohjeessa kuvataan Dynamics 365 Human Resources -palkanlaskenta-integroin
 
 Integroinnin mahdollistamiseksi Human Resourcesiin kuuluvat seuraavat komponentit:
 
-- Toiminto, jonka avulla voidaan merkitä, että työntekijälle voidaan maksaa
-- Integroinnin API-sovellusliittymä, joka avaa uudet toiminnot integroiduille sovelluksille
+- [Toiminto, jonka avulla voidaan merkitä, että työntekijälle voidaan maksaa.](hr-compensation-payroll.md)
+- Integroinnin API-sovellusliittymä, joka avaa uudet toiminnot integroiduille sovelluksille.
 
 ## <a name="microsoft-dataverse"></a>Microsoft Dataverse
 
