@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7ba42df021eddccbae389321b38828c7a92e50c8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 5b8a1beae80ad63f26cd1b532d1d6026a5b38a8701c9c1d0aadfee5da8965477
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716489"
 ---
 # <a name="rebate-management-deals"></a>Ostohyvitysten hallintasopimukset
 
@@ -102,6 +102,7 @@ Kun olet luonut sopimuksen edellisessä osassa kuvatulla tavalla, voit avata sen
         - *Kaikki* – sopimusrivi koskee kaikkia nimikkeitä.
 
     - **Nimikkeen suhde** – Jos olet valinnut *Taulu* tai **Nimikekoodi**-kentässä, valitse nimike, jota sopimusrivi koskee. Jos valitsit *Ryhmä*-vaihtoehdon, valitse nimikeryhmä. Jos valitsit *Kaikki*, tämä kenttä ei ole käytettävissä.
+    - **Yksikkötyyppi** – Valitse yksikkötyyppi, jota käytetään sopimusrivillä (*Varastoyksikkö* tai *todellisen painon yksikkö*). Huomaa, että tämä kenttä voi olla tyhjä vanhempia tietueita varten. Tässä tapauksessa käytetään *varastoyksikön* arvoa.
     - **(Varastonhallinnan parametrit)** – Määritä sopimusrivin jäljellä olevien kenttien varastonhallinnan parametreille arvot, joita käytetään sopimukseen sisältyvien nimikkeiden määrittämiseen (kuten nimikkeen koko, väri, tyyli, toimipaikka ja varasto). Voit lisätä dimensioita tai poistaa niitä valitsemalla toimintoruudusta **Näytä dimensiot**.
 
 1. Valitse toimintoruudussa **Tallenna**.
