@@ -2,7 +2,7 @@
 title: Mediavalikoimamoduuli
 description: Tässä ohjeaiheessa on tietoja mediavalikoimamoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733194"
 ---
 # <a name="media-gallery-module"></a>Mediavalikoimamoduuli
 
@@ -56,6 +56,10 @@ Seuraavassa esimerkissä PDP:n ostoruutu isännöi tuotekuvia mediavalikoimamodu
 | Kuvat | Kuvat, jotka on valittu sivustonmuodostimen mediakirjastosta | Kuvia voidaan hahmontaa tuotteesta. Niitä voidaan kuratoida myös mediavalikoimamoduulista. Nämä kuvat lisätään käytettävissä oleviin tuotekuviin. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.12. |
 | Pikkukuvan suunta | **Pysty** tai **vaaka** | Tämä ominaisuus määrittää, näytetäänkö pikkukuvat pysty- vai vaakanauhassa. |
 | Muuttujan päätuotekuvien piilottaminen | **Tosi** vai **Epätosi** | Jos ominaisuuden arvoksi määritetään **Tosi**, kun muuttuja valitaan, päätuotteen kuvat piilotetaan, ellei muuttujalla ole kuvia. Tämä ominaisuus ei vaikuta tuotteisiin, joissa ei ole muuttujia. |
+| Median päivittäminen dimension valinnassa | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvoksi on määritetty **Tosi**, mediakirjaston kuvat päivitetään, kun jokin dimensio (kuten väri, tyyli tai koko) valitaan ja jos kuva on saatavana. Tämä ominaisuus yksinkertaistaa selauskokemusta, koska jokaista tuotevarianttidimensiota ei tarvitse valita vastaavaa päivitettävää kuvaa varten. Tämä ominaisuus on käytettävissä **Lisäasetukset**-välilehdessä. |
+
+> [!IMPORTANT]
+> **Päivitä media dimensiota valittaessa** -ominaisuus on saatavana Commercen versiossa 10.0.21. Se edellyttää Commercen moduulikirjastopaketin 9.31 asentamista.
 
 Seuraavassa kuvassa on esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä.
 

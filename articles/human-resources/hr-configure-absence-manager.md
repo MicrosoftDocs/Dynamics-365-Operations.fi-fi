@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732342"
 ---
 # <a name="configure-the-absence-manager-role"></a>Poissaolopäällikön roolin määrittäminen
 
@@ -89,16 +89,21 @@ Poissaolopäällikön rooli on määritettävä työntekijöille, jotta he voiva
 
 ## <a name="absence-manager-workspace"></a>Poissaolojen esimiehen työtila
 
-**Työntekijän omatoimisessa työtilassa** **Poissaolopäällikkö**-välilehdessä näkyvät poissaolotiedot työntekijöistä, jotka on määritetty poissaolopäällikölle Vapaa-hierarkiassa.
+**Työntekijän omatoimisessa** työtilassa **Poissaolojen hallinta**-välilehdessä näkyvät poissaolotiedot työntekijöistä, jotka on määritetty poissaolopäällikölle lomahierarkiassa. Poissaolopäällikön käytössä on useita vaihtoehtoja: 
+ - Poissaolopyyntöjen tarkasteleminen.</br>
+ - Poissaolopyynnön lähettäminen työntekijän puolesta.</br>
+ - Kaikkien lomahierarkian osan itselle määritettyjen työntekijöiden tarkasteleminen.</br>
+ - Poissaolopäällikön kalenterin tarkasteleminen.</br>
 
-**Loma ja poissaolo** -välilehdessä seuraavat vaihtoehdot ovat käytettävissä kullekin työntekijälle:
-
-- **Vapaa-aika** – Tarkastele valitun työntekijän saldoja, hyväksyttyjä vapaa-aikapyyntöjä ja vapaa-aikapyyntöjä.
-- **Vapaasaldot** – Tarkastele valitun työntekijän eri lomasuunnitelmien saldojen luetteloa.
+**Poissaolojen hallinnan** työtilassa on kaksi välilehteä:
+ - **Poissaolopyynnöt**: Tässä välilehdessä on luettelo kaikista odottavista poissaolopyynnöistä, jotka poissaolopäällikkö voi hyväksyä. Poissaolopäällikkö voi valita useita tietueita ja käsitellä ne samanaikaisesti. Jos yritystenvälinen lomanäkymä on otettu käyttöön, tässä luettelossa näkyy kaikkien niiden yritysten odottavat poissaolopyynnöt, joiden käyttöoikeus poissaolopäälliköllä on. Muussa tapauksessa näkyvissä on valitun yritykset poissaolopyynnöt. </br>
+ - **Kaikki työntekijät**: Tässä välilehdessä on luettelo kaikista työntekijöistä, jotka on määritetty poissaolopäällikölle lomahierarkiassa. Kunkin työntekijän kohdalla on käytettävissä kaksi vaihtoehtoa:
+    - **Poissaolopyyntö** – uuden valitun työntekijän poissaolopyynnön lähettäminen.</br>
+    - **Vapaa-aika** – Tarkastele valitun työntekijän saldoja, hyväksyttyjä vapaa-aikapyyntöjä ja vapaa-aikapyyntöjä.</br>
 
 ## <a name="approve-time-off-requests"></a>Poissaolopyyntöjen hyväksyminen
 
-Poissaolopäälliköt voivat hyväksyä tai hylätä työntekijöiden lomapyynnöt. He voivat myös luoda pyyntöjä työntekijöiden puolesta tarpeen mukaan.
+Poissaolopäälliköt voivat hyväksyä tai hylätä työntekijöiden lomapyynnöt. 
 
 > [!IMPORTANT]
 > Ennen kuin poissaolopäälliköt voivat hyväksyä tai estää lomapyyntöjä, lomapyynnön työnkulku on määritettävä määrittämään lomapyynnön työnimikkeet heille tarkistettaviksi.
@@ -109,15 +114,13 @@ Poissaolopäälliköt voivat hyväksyä tai hylätä työntekijöiden lomapyynn�
 >
 > Lisätietoja lomapyyntöjen työnkulun luomisesta on kohdassa [Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md).
 
-1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolopäällikkö**-välilehti.
+1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolojen hallinta**-välilehti.
 
-2. Valitse **Poissaolopäällikkö**-välilehdessä haluamasi työntekijä.
+2. Valitse **Poissaolopyynnöt**-välilehdessä käsiteltävät poissaolopyynnöt. Tässä luettelonäkymässä voidaan valita useita tietueita.
 
-3. Valitse **Tiedot** ja sitten **Vapaa-aika**.
+3. Ruudukon yläreunassa on toimintopainikkeet poissaolopyynnön hyväksymiseen, hylkäämiseen ja delegointiin. 
 
-4. Etsi vapaa-aikapyyntö ja valitse **Hyväksy**-vaihtoehto. Tämän jälkeen voit valita vaihtoehdon, joka hyväksyy tai peruuttaa vapaa-aikapyynnön.
-
-**Peruuta**-tila tarkoittaa, että pyyntö on hylätty. **Valmis**-tila tarkoittaa, että pyyntö on hyväksytty.
+Käyttäjä voi vaihtoehtoisesti vasemmalla olevaa **Poissaolopyynnöt**-ruutua ja siirtyä kaikki poissaolopyyntöjen työkohteet sisältävään luetteloon. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Vapaa-ajan tarkasteleminen kalenterissa
 
@@ -126,7 +129,7 @@ Poissaolopäällikkö-roolin käyttäjät voivat tarkastella poissaolopyyntöjä
 > [!IMPORTANT]
 > Järjestelmänvalvojan on määritettävä poissaolojen hallinnan kalenterin näkymäasetukset. **Loma- ja poissaoloparametrit**-sivun **Kalenteri**-välilehdessä on vaihtoehtoja, joilla syntymäpäivät, poissaolot ilman tietoja, poissaolot ja odottavat lomapyynnöt piilotetaan tai näytetään. Voit myös suodattaa kalenterinäkymän vaihtoehdon työntekijätyypin mukaan.
 
-1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolopäällikkö** ja sitten **Poissaolopäällikön kalenteri**.
+1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolojen hallinta** ja sitten **Poissaolopäällikön kalenteri**.
 
 2. Syötä **Päivämäärä**-kenttään halutut päivämäärät.
 
