@@ -2,7 +2,7 @@
 title: Finance and Operations -sovellusten tai elinkaaripalveluiden (LCS) tuen saaminen
 description: Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713331"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations -sovellusten tai elinkaaripalveluiden (LCS) tuen saaminen
 
@@ -48,7 +48,7 @@ Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft 
 <td>Voit etsiä <a href="https://lcs.dynamics.com/">LCS</a>-sivustossa <strong>Ongelmanhaku</strong>-työkalun avulla nopeasti Microsoft Knowledge Base (KB) -artikkeleita, hotfix-korjauksia ja ilmoitettujen ongelmien ratkaisuehdotuksia. Näet, mitä ilmoitettuja ongelmia korjataan parhaillaan tai mitkä on jo korjattu tiettyjen toiminta-alueiden osalta. Lisätietoja on kohdassa <a href="issue-search-lcs.md">Ongelmahaku (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Hanki sovelluksen tuki.</td>
+<td>Hae tukea Finance and Operations -sovelluksessa.</td>
 <td>Valitse sovelluksen oikeasta yläkulmasta <strong>Ohje</strong>-painike (<strong>?</strong>) ja valitse sitten <strong>Tuki</strong>. Ongelmista ilmoitetaan LCS:n <strong>Aktiiviset ongelmat</strong> -välilehdessä. Siellä järjestelmänvalvojat voivat määrittää, haluavatko he tarjota sisäistä tukea vai lähettää ongelmat Microsoftille.</td>
 </tr>
 <tr>
