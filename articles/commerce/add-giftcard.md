@@ -2,7 +2,7 @@
 title: Lahjakorttimoduuli
 description: Tässä ohjeaiheessa on tietoja lahjakorttimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7fc35c67a2d9b641f03f11ed5d06913e10d8e25b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728336"
 ---
 # <a name="gift-card-module"></a>Lahjakorttimoduuli
 
@@ -48,11 +48,17 @@ Seuraavassa kuvassa on esimerkki lahjakorttimoduulista maksusivulla.
 
 - **Näytä lisäkentät** – Tämä ominaisuus määrittää, mitkä lahjakorttien kentät näytetään aina oletusarvoisesti näytettävän lahjakortin numeron lisäksi. Esimerkiksi jotkin lahjakortit tukevat henkilökohtaista tunnuslukua (PIN), ja toiset tukevat PIN-koodin ja vanhentumispäivämäärän näyttämistä. Vaihtoehtoisesti tämän ominaisuuden arvoksi voi määrittää "Ei mitään", jolloin näytetään vain lahjakortin numero eikä muita kenttiä näy.
 
-Tuetut arvot:
--   PIN-koodi
--   Vanhentumispäivä
--   PIN-koodi ja vanhentumispäivä 
--   None
+    Seuraavia arvoja tuetaan:
+
+    - PIN-koodi
+    - Vanhentumispäivä
+    - PIN-koodi ja vanhentumispäivä 
+    - None
+
+- **Ota käyttöön vierailijoille** – Kun tämä ominaisuus on otettu käyttöön, vierailijat voivat lunastaa tai tarkistaa lahjakorttien saldon. Tämä ominaisuus edellyttää, että lahjakorttien anonyymi (vierailija) käyttöoikeus on otettu käyttöön Commerce-pääkonttorisovelluksessa. Lisätietoja on kohdassa [Lahjakorttimaksujen käyttöönotto vieraan uloskuittausta varten](#enable-gift-card-payments-for-guest-checkout).
+
+> [!IMPORTANT]
+> **Ota käyttöön vierailijoille** -ominaisuus on saatavana Commercen versiosta 10.0.21 alkaen. Se edellyttää Commercen moduulikirjastopaketin 9.31 asentamista.
 
 ## <a name="site-settings-for-gift-card-modules"></a>Lahjakorttimoduulien toimipaikan asetukset
 

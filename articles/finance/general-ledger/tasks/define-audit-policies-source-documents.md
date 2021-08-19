@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62ebe3d6ba1208bd5f9a2082969b1960c413c152
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836958"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722668"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille
 
@@ -39,9 +39,9 @@ Tässä aiheessa kuvataan, miten tarkistuskäytännön säännöt määritetää
 11. Valitse **Uusi**.
 12. Kirjoita arvo **Nimi**-kenttään.
 13. Laajenna **Käytäntöorganisaatiot**-osa.
-14. Valitse puussa solmu **Contoso Entertainment System USA** ja sitten **Lisää**.
-15. Valitse puussa solmu **Contoso Consulting USA** ja sitten **Lisää**.
-16. Valitse puussa solmu **Contoso Retail USA** ja sitten **Lisää**.
+14. Valitse puussa **Contoso Entertainment System USA** ja sitten **Lisää**.
+15. Valitse puussa **Contoso Consulting USA** ja sitten **Lisää**.
+16. Valitse puussa **Contoso Retail USA** ja sitten **Lisää**.
 17. Tiivistä **Käytäntöorganisaatiot**-osa.
 18. Laajenna **Käytäntösäännöt**-osa.
 19. Etsi ja valitse luettelosta aiemmin luotu käytäntösääntö.

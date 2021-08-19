@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270656"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728624"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Managementin tallennetut vakionäkymät
 
@@ -77,6 +77,18 @@ Seuraavassa taulukossa käsitellään hankintamoduulissa käytettävissä olevia
 | Ostotilauksen tiedot | Taloushallinto | Tämä yksinkertaistettu näkymä on optimoitu taloushallintoon liittyvien tehtävien suorittamiseen, kuten laskutukseen sekä hintojen, yhteissummien ja kulujen tarkistamiseen. | Ostotilausten tallennetut näkymät |
 | Ostotilauksen tiedot | Tilauksen hyväksyntä | Tämä yksinkertaistettu näkymä on optimoitu ostotilausten hyväksymiseen. | Ostotilausten tallennetut näkymät |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Tuotetietohallintamoduulin tallennetut näkymät
+
+Seuraavassa taulukossa käsitellään tuotetietohallintamoduulissa käytettävissä olevia tallennettuja näkymiä.
+
+| Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
+|---|---|---|---|
+| Julkaistujen tuotteiden luettelo | Tuotteen luonti | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden luonnin aikana. | Julkaistujen tuotteiden tallennetut näkymät |
+| Vapautetun tuotteen tiedot | Tuotteen luonti | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden luonnin aikana. | Julkaistujen tuotteiden tallennetut näkymät |
+| Vapautetun tuotteen tiedot | Logistiikkatietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden logistiikkatietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät |
+| Vapautetun tuotteen tiedot | Ostotietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden ostotietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät |
+| Vapautetun tuotteen tiedot | Myyntitietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden myyntiin liittyvien tietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Tuotannonhallintamoduulin tallennetut näkymät
 
 Seuraavassa taulukossa käsitellään tuotannonhallintamoduulissa käytettävissä olevia tallennettuja näkymiä.
@@ -110,7 +122,7 @@ Seuraavassa taulukossa käsitellään varastonhallintamoduulissa käytettäviss�
 | Kaikki lähetykset | Saapuvien käsittely | Tämä yksinkertaistettu näkymä sisältää vain saapuvien lähetysten käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät lähetyksen käsittelyä varten |
 | Kaikki lähetykset | Lähtevien käsittely | Tämä yksinkertaistettu näkymä sisältää vain lähtevien lähetysten käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät lähetyksen käsittelyä varten |
 | Kaikki aallot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä aallon käsittelyä varten |
-| Kuormasuunnittelun työtila | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Työsuunnittelun työtilan tallennettu näkymä |
+| Kuormasuunnittelun työtila | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä kuormasuunnittelun työtilaa varten |
 | Työn tiedot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Työn tietosivun tallennettu näkymä |
 
 

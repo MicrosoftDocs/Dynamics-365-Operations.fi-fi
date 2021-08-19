@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c088f6e3fea7c218cfd2108d0f279bccf1292772
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728838"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Määritä toimittajan laskutuskäytännöt
 
@@ -56,7 +56,7 @@ Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutusk�
 2. Valitse **Uusi**.
 3. Kirjoita arvot **Nimi**- ja **Kuvaus**-kenttiin.
 4. Laajenna tai tiivistä **Käytännön organisaatiot** -osa.
-5. Valitse puussa solmu **Contoso Entertainment System USA**.
+5. Valitse puussa **Contoso Entertainment System USA**.
 6. Valitse **Lisää**.
 7. Laajenna tai tiivistä **Käytäntösäännöt**-osa.
 8. Valitse **Luo käytäntösääntö**.

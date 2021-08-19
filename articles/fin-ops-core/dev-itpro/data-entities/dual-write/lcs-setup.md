@@ -1,8 +1,8 @@
 ---
 title: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 description: Tässä aiheessa käsitellään kaksoiskirjoitusyhteyden määrittämistä Microsoft Dynamics Lifecycle Servicesistä (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729040"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 
@@ -66,5 +66,18 @@ Määrittääksesi kaksoiskirjoituksen aiemmin luotuun Dataverse-ympäristöön,
 
 > [!NOTE]
 > Et voi poistaa ympäristöjen välistä linkitystä LCS-sovelluksen avulla. Jos haluat poistaa linkityksen, avaa **Tietojen integrointi** -työtila Finance and Operations -ympäristössä ja valitse sitten **Poista linkitys**.
+
+## <a name="linking-mismatch"></a>Linkitysristiriita
+
+On mahdollista, että LCS-ympäristö on linkitetty yhteen Dataverse-esiintymään samalla, kun kaksoiskirjoitusympäristö on linkitetty toiseen Dataverse-esiintymään. Linkitysristiriita voi aiheuttaa odottamatonta toimintaa, ja tämän seurauksena on mahdollista, että tiedot lähetetään väärään ympäristöön. Kaksoiskirjoituksessa käytettävä suositusympäristö on se, joka luotiin Power Platform -integroinnin osana, ja pitkällä aikavälillä tämä on ainoa tapa muodostaa linkki ympäristöjen välille.
+
+Jos ympäristössä on linkitysristiriita, LCS näyttää ympäristön tietosivulla seuraavankaltaisen varoituksen: Microsoft on havainnut, että ympäristö on linkitetty kaksoiskirjoituksella muuhun kuin Power Platform -integroinnissa määritettyyn kohteeseen, mikä ei ole suositeltavaa.
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform -integroinnin linkkiristiriita":::
+
+Jos tämä virhe esiintyy, valittavissa on tarpeiden mukaan kaksi vaihtoehtoa:
+
++ [Kaksoiskirjoitusympäristöjen linkityksen poistaminen ja uudelleenlinkittäminen (linkityksen palauttaminen tai muuttaminen)](relink-environments.md#scenario-reset-or-change-linking) LCS-ympäristön tietosivun määrityksen mukaisesti. Tämä on paras vaihtoehto, koska se voidaan suorittaa ilman Microsoftin tukea.  
++ Jos kaksoiskirjoituksen linkki halutaan säilyttää, Microsoftin tukea voidaan pyytää muuttaa Power Platform -integrointi käyttämään aiemmin luotua Dataverse-ympäristöä edellisessä osassa käsitellyllä tavalla.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
