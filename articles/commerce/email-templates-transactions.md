@@ -2,7 +2,7 @@
 title: Tapahtumasidonnaisten tapahtumien sähköpostimallien luominen
 description: Tässä ohjeaiheessa käsitellään tapahtumasidonnaisten tapahtumien sähköpostimallien luontia, lataamista ja määrittämistä Microsoft Dynamics 365 Commercessa.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718704"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tapahtuman tapahtumien sähköpostimallien luominen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään tapahtumasidonnaisten tapahtumien sähköpostimallien luontia, lataamista ja määrittämistä Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce on valmis ratkaisu sellaisten sähköpostien lähettämiseen, jotka ilmoittavat asiakkaille tapahtumasidonnaisista tapahtumista (kuten tilauksen tekemisestä, noutamista odottavasta tilauksesta tai lähetetystä tilauksesta). Tässä ohjeaiheessa on ohjeet tapahtumasidonnaisten sähköpostiviestien lähettämiseen käytettyjen sähköpostimallien luomiseen, päivittämiseen ja määrittämiseen.
 
@@ -79,26 +77,33 @@ Seuraavilla paikkamerkeillä noudetaan ja näytetään tiedot, jotka on määrit
 | Paikkamerkin nimi     | Paikkamerkin arvo                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | Tilauksen tehneen asiakkaan nimi.               |
-| salesid              | Tilauksen myyntitunnus.                                   |
-| deliveryaddress      | Lähetettyjen tilausten toimitusosoite.                     |
 | customeraddress      | Asiakkaan osoite.                                 |
 | customeremailaddress | Sähköpostiosoite, jonka asiakas on antanut uloskuittauksen aikana.     |
+| salesid              | Tilauksen myyntitunnus.                                   |
+| orderconfirmationid  | Tilauksen luonnin yhteydessä luotu kanavien välinen tunnus. |
+| channelid            | Sen vähittäismyynti- tai verkkokanavan tunnus, jonka kautta tilaus tehtiin. |
+| deliveryname         | Toimitusosoitteeksi määritetty nimi.        |
+| deliveryaddress      | Lähetettyjen tilausten toimitusosoite.                     |
 | deliverydate         | Toimituspäivä.                                           |
 | shipdate             | Lähetyspäivä.                                               |
 | modeofdelivery       | Tilauksen toimitustapa.                              |
+| ordernetamount       | Tilauksen kokonaissumma ilman veroja.         |
+| alennus             | Tilauksen kokonaisalennus.                            |
 | kulut              | Tilauksen kokonaiskulut.                             |
 | vero                  | Tilauksen verot yhteensä.                                 |
 | yhteensä                | Tilauksen kokonaissumma.                              |
-| ordernetamount       | Tilauksen kokonaissumma ilman veroja.         |
-| alennus             | Tilauksen kokonaisalennus.                            |
 | storename            | Sen myymälän nimi, jossa tilaus tehtiin.            |
 | storeaddress         | Tilauksen tehneen myymälän osoite.              |
 | storeopenfrom        | Tilauksen tehneen myymälän avaamisaika.         |
 | storeopento          | Tilauksen tehneen myymälän sulkemisaika.         |
-| pickupstorename      | Sen myymälän nimi, josta tilaus noudetaan.     |
-| pickupstoreaddress   | Sen myymälän osoite, josta tilaus noudetaan.  |
-| pickupopenstorefrom  | Sen myymälän avaamisaika, josta tilaus noudetaan. |
-| pickupopenstoreto    | Sen myymälän sulkemisaika, josta tilaus noudetaan. |
+| pickupstorename      | Sen myymälän nimi, josta tilaus noudetaan.\* |
+| pickupstoreaddress   | Sen myymälän osoite, josta tilaus noudetaan.\* |
+| pickupopenstorefrom  | Sen myymälän avaamisaika, josta tilaus noudetaan.\* |
+| pickupopenstoreto    | Sen myymälän sulkemisaika, josta tilaus noudetaan.\* |
+| pickupchannelid      | Se määritetty myymälän kanavatunnus, kun toimitustapana on nouto.\* |
+| packingslipid        | Sen pakkausluettelon tunnus, joka luotiin, kun tilauksen rivit pakattiin.\* |
+
+\* Nämä paikkamerkit palauttavat tietoja vain, kun niitä käytetään **Tilaus valmis noudettavaksi** -ilmoitustyypissä. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Tilausrivin paikkamerkit (myyntirivitaso)
 
@@ -106,7 +111,10 @@ Seuraavilla paikkamerkeillä noudetaan ja näytetään myyntitilauksen yksittäi
 
 | Paikkamerkin nimi               | Paikkamerkin arvo |
 |--------------------------------|-------------------|
-| productid                      | Rivin tuotetunnus. |
+| productid                      | <p>Tuotteen tunnus. Tämä on varianttien tunnus.</p><p><strong>Huomautus:</strong> tämä paikka on merkki on vanhentunut, ja sen tilalla on **lineproductrecid**.</p> |
+| lineproductrecid               | Tuotteen tunnus. Tämä on varianttien tunnus. Se tunnistaa nimikkeen yksilöivästi varianttitasolla. |
+| lineitemid                     | Tuotteen tuotantotason tunnus. (Tämä ei ole varianttien tunnus.) |
+| lineproductvariantid           | Tuotevariantin tunnus. |
 | lineproductname                | Tuotteen nimi. |
 | lineproductdescription         | Tuotteen kuvaus. |
 | linequantity                   | Riville tilattujen yksikköjen määrä sekä mittayksikkö (kuten **kpl** tai **pari**). |
@@ -125,6 +133,8 @@ Seuraavilla paikkamerkeillä noudetaan ja näytetään myyntitilauksen yksittäi
 | linedeliverydate               | Rivin toimituspäivä. |
 | linedeliverymode               | Rivin toimitustapa. |
 | linedeliveryaddress            | Rivin toimitusosoite. |
+| linepickupdate                 | Asiakkaan määrittämä noutopäivämäärä tilauksille, joissa toimitustapana on nouto. |
+| linepickuptimeslot             | Asiakkaan määrittämä noutoaikaväli tilauksille, joissa toimitustapana on nouto. |
 | giftcardnumber                 | Lahjakortin numero, kun kyseessä on lahjakorttityypin tuotteet. |
 | giftcardbalance                | Lahjakortin saldo, kun kyseessä on lahjakorttityypin tuotteet. |
 | giftcardmessage                | Lahjakortin viesti, kun kyseessä on lahjakorttityypin tuotteet. |

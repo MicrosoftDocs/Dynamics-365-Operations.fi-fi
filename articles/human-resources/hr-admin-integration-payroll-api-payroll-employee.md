@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768188"
 ---
 # <a name="payroll-employee"></a>Palkanlaskennan työntekijä
 
@@ -33,27 +33,25 @@ Fyysinen nimi: mshr_payrollemployeeentity.
 Tämä yksikkö tarjoaa tietoja työntekijästä. Sinun täytyy määrittää [palkanlaskennan integraation parametrit](hr-admin-integration-payroll-api-parameters.md) ennen tämän yksilön käyttämistä.
 
 >[!IMPORTANT] 
->**FirstName**, **MiddleName**, **LastName**, **NameValidFrom** ja **NameValidTo** -kenttiä ei ole enää saatavilla tässä entiteetissä. Näin varmistetaan, että tämän entiteetin taustalla on vain yksi päivämääräperusteinen tietolähde, joka on **HcmEmployment**, jossa on **EmploymentStartDate** ja **EmploymentEndDate** -kentät.
-
->Nämä kentät ovat käytettävissä **DirPersonNameHistoricalEntity** ssä, joka julkaistiin Platform-päivityksessä 43. Kohteesta **PayrollEmployeeEntity** on OData-suhde kohteeseen **DirPersonNameHistoricalEntity** kentässä **Person**. Vaihtoehtoisesti **DirPersonNameHistoricalEntity**-entiteettiä voidaan kysellä suoraan ODatan kautta käyttämällä julkista nimeä **PersonHistoricalNames**.
-
+>**FirstName**, **MiddleName**, **LastName**, **NameValidFrom** ja **NameValidTo** -kentät eivät ole enää saatavana tässä entiteetissä. Näin varmistetaan, että tämän entiteetin taustalla on vain yksi voimassaolopäivät ilmaiseva tietolähde.
+>Nämä kentät ovat käytettävissä **DirPersonNameHistoricalEntity** ssä, joka julkaistiin Platform-päivityksessä 43. Kohteesta **PayrollEmployeeEntity** on OData-suhde kohteeseen **DirPersonNameHistoricalEntity** kentässä **Person**. 
 
 ## <a name="properties"></a>Ominaisuudet
 
 | Ominaisuus<br>**Fyysinen nimi**<br>**_Laji_** | Käytä | kuvaus |
 | --- | --- | --- |
-| **Henkilöstönumero**<br>mshr_personnelnumber<br>*Merkkijono* | Vain luku<br>Vaadittu | Työntekijän yksilöivä henkilökuntanumero. |
-| **Ensisijainen kenttä**<br>mshr_primaryfield<br>*Merkkijono* | Vaadittu<br>Järjestelmän luoma |  |
-| **Oikeushenkilön tunnus**<br>mshr_legalentityID<br>*Merkkijono* | Vain luku<br>Vaadittu | Määrittää oikeushenkilön (yrityksen). |
-| **Sukupuoli**<br>mshr_gender<br>[mshr_hcmpersongender-asetusjoukko](hr-admin-integration-payroll-api-gender.md) | Vain luku<br>Vaadittu | Työntekijän sukupuoli. |
+| **Henkilöstönumero**<br>mshr_personnelnumber<br>*Merkkijono* | Vain luku | Työntekijän yksilöivä henkilökuntanumero. |
+| **Ensisijainen kenttä**<br>mshr_primaryfield<br>*Merkkijono* | Vain luku<br>Järjestelmän luoma |  |
+| **Oikeushenkilön tunnus**<br>mshr_legalentityID<br>*Merkkijono* | Vain luku | Määrittää oikeushenkilön (yrityksen). |
+| **Sukupuoli**<br>mshr_gender<br>[mshr_hcmpersongender-asetusjoukko](hr-admin-integration-payroll-api-gender.md) | Vain luku | Työntekijän sukupuoli. |
 | **Palkanlaskennan työntekijän yksikön tunnus**<br>mshr_payrollemployeeentityid<br>*GUID* | Vaadittu<br>Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla työntekijä voidaan yksilöivästi tunnistaa. |
-| **Työsuhteen alkamispäivä**<br>mshr_employmentstartdate<br>*Päivämäärä aika siirros* | Vain luku<br>Vaadittu | Työntekijän työsuhteen alkamispäivämäärä. |
-| **Tunnustyypin tunnus**<br>mshr_identificationtypeid<br>*Merkkijono* |Vain luku<br>Vaadittu | Työntekijälle määritetty tunnustyyppi. |
-| **Työsuhteen päättymispäivämäärä**<br>mshr_employmentenddate<br>*Päivämäärä aika siirros* | Vain luku<br>Vaadittu |Työntekijän työsuhteen päättymispäivämäärä.  |
-| **Tietoalueen tunnus**<br>mshr_dataareaid_id<br>*GUID* | Vaadittu <br>Järjestelmän luoma | Järjestelmän luoma GUID-tunnus, joka yksilöi oikeushenkilön (yrityksen). |
-| **Voimassaolo päättyy**<br>mshr_namevalidto<br>*Päivämäärä aika siirros* |  Vain luku<br>Vaadittu | Päivämäärä, johon asti työntekijän tiedot ovat voimassa. |
-| **Syntymäpäivämäärä**<br>mshr_birthdate<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Työntekijän syntymäpäivä |
-| **Tunnusnumero kohteeseen**<br>mshr_identificationnumber<br>*Merkkijono* | Vain luku <br>Vaadittu |Työntekijälle määritetty tunnusnumero.  |
+| **Työsuhteen alkamispäivä**<br>mshr_employmentstartdate<br>*Päivämäärä aika siirros* | Vain luku | Työntekijän työsuhteen alkamispäivämäärä. |
+| **Tunnustyypin tunnus**<br>mshr_identificationtypeid<br>*Merkkijono* |Vain luku | Työntekijälle määritetty tunnustyyppi. |
+| **Työsuhteen päättymispäivämäärä**<br>mshr_employmentenddate<br>*Päivämäärä aika siirros* | Vain luku |Työntekijän työsuhteen päättymispäivämäärä.  |
+| **Tietoalueen tunnus**<br>mshr_dataareaid_id<br>*GUID* | Vain luku <br>Järjestelmän luoma | Järjestelmän luoma GUID-tunnus, joka yksilöi oikeushenkilön (yrityksen). |
+| **Voimassaolo päättyy**<br>mshr_namevalidto<br>*Päivämäärä aika siirros* |  Vain luku | Päivämäärä, johon asti työntekijän tiedot ovat voimassa. |
+| **Syntymäpäivämäärä**<br>mshr_birthdate<br>*Päivämäärä aika siirros* | Vain luku | Työntekijän syntymäpäivä |
+| **Tunnusnumero kohteeseen**<br>mshr_identificationnumber<br>*Merkkijono* | Vain luku |Työntekijälle määritetty tunnusnumero.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Esimerkkikysely palkanlaskennan työntekijälle
 
