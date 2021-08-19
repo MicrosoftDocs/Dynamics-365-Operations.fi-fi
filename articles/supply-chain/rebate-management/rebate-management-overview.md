@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720249"
 ---
 # <a name="rebate-management-module-overview"></a>Ostohyvitysten hallintamoduulin yleiskatsaus
 
@@ -91,10 +91,9 @@ Käyttäjien ei enää tarvitse käsitellä sopimuksia tai varauksia kahdessa va
 
 Kun ostohyvitykset lasketaan, prosessi luo tapahtumat, joita voidaan tarkastella ennen kirjauksen tekemistä. Erillinen prosessi kirjaa ostohyvityksen hallintatapahtumat. Tämän jälkeen ehdotettuihin tapahtumiin kirjauksen aikana voidaan luoda kirjauskansio, hyvityslasku- tai veloitustapahtuma. Raportointi-ilmoitukset ja tapahtumaluettelot ovat saatavissa vaatimustenmukaisuuden, tehokkuuden ja läpinäkyvyyden varmistamiseksi.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Taatut rojaltimaksut
 
-Ostohyvitysten hallinnassa automaattinen maksujen luonti mahdollistaa rojaltien nopean ja helpon hallinnan, vaikka käytettäisiin taattuja vähimmäissummia. 
+Ostohyvitysten hallinnassa automaattinen maksujen luonti mahdollistaa rojaltien nopean ja helpon hallinnan, vaikka käytettäisiin taattuja vähimmäissummia.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Kulujen maksimointi ja ostohyvitykset
 

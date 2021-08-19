@@ -2,7 +2,7 @@
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,38 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720081"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="2070"></a>2.0.7.0
+
+### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Uudet ominaisuudet, korjaukset ja parannukset versiossa 2.0.7.0
+
+- Lisätty osa **Tietoja**-sivulle, joka tarkistaa sovelluksen viimeisimmän julkaistun version.
+- Tämä helpottaa sivujen välistä selaamista ja lukemista.
+- Muuttaa työluettelon nousevan/laskevan painikkeen kuvaketta.
+- Pienentää **Erittely**-kortin marginaalit, jotta siihen sopii enemmän tietoja.
+- Käytetään useita suorituskyvyn parannuksia, jotka vähentävät sovelluksen hidastumisongelmaa ajan mittaan.
+- Jos ohjausobjekteja on enemmän kuin näytölle mahtuu, mikä johtaa sivuttamiseen, askellusruutu ei enää vieri samalla tavalla kuin sivu.
+- Aseta etusijalle viimeksi skannatun arvon näyttäminen tehtävän otsikon näyttämisen suhteen, joten jos ne ovat päällekkäisiä, tehtävän otsikko katkaistaan.
+- Korjattu useita ongelmia, jotka saivat järjestelmän lopettamaan vastaamisen.
+- Teksti ei ole enää katkaistuna kaikilla kielillä.
+- Sovellus suoritetaan nyt oletusarvoisesti koko näytön tilassa.
+- Kiinteä ongelma, joka toisinaan aiheuttaa sen, että tarkistukset ohitetaan pääsivulla tietyillä laitteilla.
+
+### <a name="known-issues-in-version-2070"></a>Tiedossa olevat virheet versiossa 2.0.7.0
+
+- Kun käynnistät sovelluksen tai aloitat tehtävän, näyttöön tulee joissakin laitteilla seuraava virhesanoma: "Sopivaa näkymää ei pystytä näyttämään määritetylle koolle". Jos näet tämän virhesanoman laitteellasi, sinun on alennettava varastonhallinnan mobiilisovelluksen versioon 2.0.6.0 ja odotettava, kunnes sovelluksen seuraava versio julkaistaan.
 
 ## <a name="version-2060"></a>Versio 2.0.6.0
 
