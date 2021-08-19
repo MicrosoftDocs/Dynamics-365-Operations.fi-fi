@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730007"
 ---
 # <a name="planned-cross-docking"></a>Suunniteltu cross-docking
 
@@ -117,6 +117,9 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
     - **Järjestysnumero:** *1*
     - **Toimituslähde:** *Ostotilaus*
 
+> [!NOTE]
+> Voit määrittää kyselyn ohjaamaan, milloin määritettyä cross-docking-mallia käytetään. Cross docking-mallien kyselyssä on vain *InventTable* (nimikettä) -taulukko ja sen sisäliitos *WHSInventTable* (WHS-nimikkeet) -taulukko. Jos haluat lisätä kyselyyn muita tauluja, voit liittää ne käyttämällä vain *olemassa olevat liitoksia* tai *ei olemassa olevia liitoksia*. Kun suodatat yhdistetyt taulut, päätaulun tietue haetaan kutakin yhdistetyn taulun täsmäytystietuetta varten. Jos liitostyyppi *liitos on olemassa*, haku päättyy sen jälkeen, kun ensimmäinen vastaavuus on löydetty. Jos esimerkiksi liität myyntitilausrivitaulun nimiketauluun, järjestelmä tarkistaa ja palauttaa nimikkeet, joiden osalta vähintään yhdellä myyntitilausrivillä on määritetty ehto. Tiedot haetaan päätaulukosta (nimikkeet), ei alitaulukosta (myyntitilausrivi). Näin ollen ruudusta ei voi tehdä suodatusta lähdeasiakirjojen, kuten myyntitilausrivien tai asiakkaiden, mukaan.
+
 ### <a name="create-a-work-class"></a>Työluokan luominen
 
 1. Valitse **Varastonhallinta \> Asetukset \> Työ \> Työluokka**.
@@ -151,6 +154,9 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
     - **Työluokan tunnus:** *CrossDock*
 
 1. Valitse **Tallenna** ja vahvista, että *51 Cross Dock* -mallille on valittu **Kelvollinen**-valintaruutu .
+1. Valinnainen: Valitse **Muokkaa kyselyä**, jos haluat määrittää ehdot, milloin ja missä työmallia käytetään.
+
+    Voit määrittää kyselyn ohjaamaan, milloin tiettyä työmallia käytetään. Voit esimerkiksi määrittää, että mallia voi käyttää vain tietyssä sijainnissa. Jos haluat käyttää cross docking -työmallia tietyssä sijainnissa, **Aloitussijainti**-kentän, ei **Sijainti**-kentän, suodattaminen on suodatettava, koska saapuvien prosessien (osto, cross docking ja täydennys) luonti alkaa hyllytysriviltä. Kun työ luodaan, sijaintia koskeva asetus määrittää **Sijainti**-kentän arvoksi aseta sijainti. Poimintapaikka tallennetaan kuitenkin **Aloitussijainti**-kenttään.
 
 > [!NOTE]
 > *Poiminta*- ja *Hhyllytys*-työtyyppien työluokkien tunnusten on oltava samat.

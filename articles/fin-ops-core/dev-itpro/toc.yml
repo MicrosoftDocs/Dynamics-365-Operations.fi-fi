@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Platform update -päivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Platform update -päivitysten aloitussivun uudet ja muuttuneet ominaisuudet
+                - name: Ympäristön päivitysten aloitussivun uudet ja muuttuneet ominaisuudet
                   href: get-started/whats-new-home-page.md
-                - name: Platform update -päivitykset versioon 10.0.20 (elokuu 2021)
+                - name: Ympäristön päivitykset versioon 10.0.21 (lokakuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-21.md
+                - name: Ympäristön päivitykset versioon 10.0.20 (elokuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Platform update -päivitykset versioon 10.0.19 (kesäkuu 2021)
+                - name: Ympäristön päivitykset versioon 10.0.19 (kesäkuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
@@ -446,6 +448,8 @@
                       href: deployment/onprem-adfscompatibility.md
                     - name: Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat
                       href: lifecycle-services/pre-post-scripts.md
+                    - name: Paikallisen edustajan käyttöönoton konfiguraatiot
+                      href: deployment/onprem-localagent-options.md
                     - name: Paikallisen edustajan päivittäminen
                       href: lifecycle-services/update-local-agent.md
                 - name: Vianmääritys
