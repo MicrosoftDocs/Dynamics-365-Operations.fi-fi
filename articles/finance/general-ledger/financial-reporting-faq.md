@@ -2,7 +2,7 @@
 title: Taloushallinnon raportoinnin usein kysytyt kysymykset
 description: Tämä ohjeaihe sisältää vastauksia eräisiin usein kysyttyihin talousraportoinnin kysymyksiin.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266630"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733608"
 ---
 # <a name="financial-reporting-faq"></a>Taloushallinnon raportoinnin usein kysytyt kysymykset
 
@@ -77,5 +77,29 @@ Sanoma ilmaisee, että virhe tapahtui, kun järjestelmä yritti hakea taloushall
 
 - Tarkista tietojen integroinnin tila menemällä Report Designerin kohtaan **Työkalut \> Integroinnin tila**. Jos integrointi on kesken, odota sen valmistumista. Yritä sen jälkeen uudelleen sitä, mitä teit saadessasi sanoman.
 - Ota yhteyttä tukeen, jotta ongelma voidaan tunnistaa ja käsitellä. Järjestelmässä saattaa olla epäyhtenäisiä tietoja. Tuki-insinöörit auttavat palvelimella olevan ongelman tunnistamisessa ja etsivät erityiset tiedot, jotka saattavat vaatia päivittämistä.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Miten historiallisten vaihtokurssien muunnokset vaikuttavat raportin suorituskykyyn?
+
+Historiallista korkoa käytetään tyypillisesti kertyneiden voittovarojen, omaisuuden, käyttöomaisuuden ja oman pääoman kanssa. Historiallinen kurssi saattaa olla pakollinen Yhdysvaltain tilinpäätösstandardeista vastaavan elimen (FASB) ohjeiden tai yleisesti hyväksyttyjen kirjanpitoperiaatteiden (GAAP) perusteella. Lisätietoja on kohdassa [Valuuttaominaisuudet taloushallinnon raportoinnissa](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Kuinka monta valuuttakurssityyppiä on olemassa?
+
+Tyyppejä on kolmenlaisia:
+
+- **Nykyinen kurssi** – Tätä tyyppiä käytetään yleensä tasetileille. Se tunnetaan yleensä *avistakurssina* ja se voi olla kuukauden viimeisen päivän tai toisen ennalta määritetyn päivämäärän kurssi.
+- **Keskimääräinen kurssi** – Tätä tyyppiä käytetään yleensä tuloslaskelmatilien (voitto/tappio) yhteydessä. Voit määrittää keskimääräisen koron joko yksinkertaiseksi tai painotetuksi keskiarvoksi.
+- **Historiallinen korko** – Tätä tyyppiä käytetään tyypillisesti kertyneiden voittovarojen, omaisuuden, käyttöomaisuuden ja oman pääoman kanssa. Nämä tilit saattavat olla pakollisia FASB- tai GAAP-ohjeiden mukaan.
+
+## <a name="how-does-historical-currency-translation-work"></a>Miten valuutan historiallinen muunnos toimii?
+
+Hinnat määräytyvät tapahtumapäivämäärän mukaan. Näin ollen jokainen tapahtuma muunnetaan yksitellen lähimpään vaihtokurssiin perustuen.
+
+Historiallisen valuuttamuunnon yhteydessä voidaan käyttää ennalta laskettuja kauden saldoja yksittäisten tapahtumatietojen asemesta. Tämä toiminta poikkeaa nykyisen kurssin muunnoskäytännöstä.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Miten valuutan historiallinen muunnos vaikuttaa suorituskykyyn?
+
+Kun raporteissa esitetyt tiedot päivitetään, saattaa esiintyä viivettä, koska summat on laskettava uudelleen tarkistamalla tapahtumatiedot. Viive käynnistyy aina, kun hinnat päivitetään tai uusia tapahtumia kirjataan. Jos esimerkiksi tuhansia tilejä on määritetty historiallista muunnosta varten pari kertaa päivässä, raportin tietojen päivittäminen saattaa kestää jopa tunnin. Toisaalta, jos tiettyjä tilejä on vähemmän, raporttitietojen päivitysten käsittelyajat voidaan lyhentää minuutteihin tai alle minuutiksi.
+
+Niin ikään silloin kun raportteja luodaan käyttämällä valuuttamuunnosta historiatyyppisille tileille, suoritetaan ylimääräisiä tapahtumakohtaisia laskelmia. Raporttien luontiaika voi tilien lukumäärästä riippuen yli kaksinkertaistua.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

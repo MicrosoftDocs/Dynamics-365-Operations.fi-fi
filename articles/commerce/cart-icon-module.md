@@ -2,7 +2,7 @@
 title: Ostoskorikuvakemoduuli
 description: Tässä ohjeaiheessa käsitellään ostoskorimoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6637998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735675"
 ---
 # <a name="cart-icon-module"></a>Ostoskorikuvakemoduuli
 
@@ -35,9 +35,14 @@ Seuraavassa kuvassa näkyy esimerkki ostoskorin kuvakemoduulista, jossa näkyy p
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
-- **Näytä pienoiskori** – Jos valinta on tosi, tämä ominaisuus mahdollistaa ostoskorin yhteenvedon (pienoiskorin) näyttämisen, kun hiiri viedään ostoskorin kuvakkeen yli. Tätä toimintoa tuetaan vain työpöydän näkymäporteissa.
+- **Näytä pienoiskori** – Jos ominaisuuden arvoksi määritetään **Tosi**, ostoskorin yhteenvedon (pienoiskorin) näytetään, kun käyttäjä siirtää kohdistimen ostoskorikuvakkeen päälle. Tätä toimintoa tuetaan vain työpöydän näkymäporteissa.
+- **Salli anonyymi siirtyminen kassalle** – Jos ominaisuuden arvoksi on määritetty **Tosi**, pienoiskori sallii käyttäjien, jotka eivät ole kirjautuneet sisään, siirtyä kassalle vieraana. Ominaisuus on saatavana Commercen versiossa 10.0.21 Commercen moduulikirjastopaketin osana.
+- **Nimikkeiden järjestys** – Tämä ominaisuus määrittää järjestyksen, jossa nimikkeet näkyvät pienoiskorissa. Kun **Uudet nimikkeet lisätään luetteloon ensimmäiseksi** -vaihtoehto valitaan, uudet ostokoriin lisättävät nimikkeet näkyvät ensimmäisenä pienoiskorin nimikeluettelossa. Kun **Uudet nimikkeet lisätään luetteloon viimeiseksi** -oletusvaihtoehto valitaan, uudet ostokoriin lisättävät nimikkeet näkyvät viimeisenä pienoiskorin nimikeluettelossa. Ominaisuus on saatavana Commercen versiosta 10.0.21 alkaen Commercen moduulikirjastopaketin osana.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Moduulin ominaisuudet Adventure Works -teemassa
+> [!IMPORTANT]
+> **Salli anonyymi siirtyminen kassalle**- ja **Nimikkeiden järjestys** -ominaisuudet ovat saatavana Commercen versiosta 10.0.21 alkaen. Niitä varten on asennettava Commercen moduulikirjastopaketin versio 9.31.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Moduulin ominaisuudet ja paikat Adventure Works -teemassa
 
 Adventure Works -teeman ostoskorikuvakemoduuli sisältää kaksi ylimääräistä paikkaa pienoiskoria varten. Nämä paikat ovat moduulimääritelmän laajennuksia.
 
