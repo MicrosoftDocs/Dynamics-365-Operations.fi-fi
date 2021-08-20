@@ -2,7 +2,7 @@
 title: Tuotedimensioarvojen konfiguroiminen näkymään väriruutuina
 description: Tässä aiheessa kuvataan, miten tuotedimensioarvot voidaan konfiguroida väriruutuina Microsoft Dynamics 365 Commerce -pääkonttorissa.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764611"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Tuotedimensioarvojen konfiguroiminen näkymään väriruutuina
 
@@ -46,7 +46,7 @@ Seuraavassa kuvassa on esimerkki, jossa värit näkyvät Commercen hakutulosluet
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Näyttödimensioiden ottaminen käyttöön väriruutuominaisuuksina Commerce headquarters -sovelluksessa
 
-Voit ottaa näyttödimensiot väriruutuina -ominaisuuden käyttöön Commerce-pääkonttorissa menemällä kohtaan **Työtilat \> Ominaisuuksien hallinta** ja ottamalla käyttöön **Ota käyttöön tuotedimensioarvojen kuvatuki** -ominaisuus. Kun tämä ominaisuus on käytössä, kullekin dimensiolle lisätään kolme uutta kenttää Commerce-pääkonttorissa: **Heksakoodi**, **URL-osoite** (kuvia varten) ja **RefinerGroup**.
+Näyttödimensiot otetaan käyttöön väriruutuominaisuutena Commerce-pääkonttoriominaisuudessa valitsemalla **Työtilat \> Ominaisuuksien hallinta** ja ottamalla käyttöön **Ota käyttöön mekanismi ilmaisemaan dimensiot väriruutuna** -ominaisuus. Kun tämä ominaisuus on käytössä, kullekin dimensiolle lisätään kolme uutta kenttää Commerce-pääkonttorissa: **Heksakoodi**, **URL-osoite** (kuvia varten) ja **RefinerGroup**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Dimensioarvojen konfiguroiminen Commerce headquarters -sovelluksessa
 
@@ -125,9 +125,22 @@ Ennen kuin väriruudut voivat näkyä verkkokaupan verkkosivuilla, jotka edellyt
 
 Lisäksi sinun tulisi ottaa käyttöön **Sisällytä tuotemääritteet hakutuloksiin** -ominaisuus hakutulosmoduuleille. Jos sivustosi käyttää mukautettuja luokkasivuja, sinun on päivitettävä näillä sivuilla käytettävät hakutulosmoduulit niin, että **Sisällytä tuotemääritteet hakutulosominaisuuksiin** -ominaisuus on käytössä. Lisätietoja on kohdassa [Hakutulokset-moduuli](../search-result-module.md).
 
+## <a name="inventory-awareness-on-swatches"></a>Väriruutujen varastotietoisuus
+
+Väriruuduissa on valinnainen ominaisuus, joilla näytetään tuotevariantin värin tai dimension varastosaatavuus. Tuotetta myydään esimerkiksi erikokoisena, mutta jotkin koot ovat loppuneet varastosta. Tässä tapauksessa varastosta loppuneiden tuotteiden väriruudut hahmonnetaan eri tavalla, mikä ilmaisee, ettei niitä ole saatavana. Tämä ominaisuus auttaa vähentämään napsautuksia, jotka asiakkaiden on tehtävä tuotteen saatavuuden selvittämiseksi.
+
+Väriruudun varastosaatavuuden ominaisuus voidaan määrittää käyttämään sekä PDP- että haku- tai luokkaluettelosivuja, joissa väriruudut näytetään. Se aktivoidaan määrittämällä **Päivitä media dimensiota valittaessa** -ominaisuuden arvoksi **Tosi** [mediavalikoimamoduulissa](../media-gallery-module.md). Tämä asetus antaa mahdollisuuden mediavalikoiman kuvien päivittämiseen, kun dimensiot valitaan. 
+
+> [!IMPORTANT]
+> Väriruudun varastosaatavuusominaisuus on saatavana Commercen versiosta 10.0.21 alkaen. Se edellyttää Commercen moduulikirjastopaketin 9.31 asentamista.
+
+Seuraavassa kuvassa on esimerkki varastotietoisuudesta PDP-sivun kokoväriruuduissa.
+
+![Esimerkki varastotietoisuudesta PDP-sivun kokoväriruuduissa](../dev-itpro/media/swatch_inventory.png)
+
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Väriruutujen näyttäminen myyntipisteissä ja muissa kanavissa
 
-Commercella ei tällä hetkellä ole käytössä valmiita paketteja, jotka tukisivat myyntipisteen (POS) ja muiden kanavien väriruutujen näyttämistä. Voit kuitenkin ottaa käyttöön väriruutunäyttötoiminnon laajennuksena, jonka ansiosta kanavan API:t palauttavat heksakoodit ja kuvan URL-osoitteet, jotka ovat pakollisia muodostuksen jälkeen.
+Commercella ei tällä hetkellä ole käytössä valmiita paketteja, jotka tukisivat myyntipisteen ja muiden kanavien väriruutujen näyttämistä. Väriruutujen näyttötoiminto voidaan toteuttaa laajennuksena, koska kanavan ohjelmointirajapinnat palauttavat heksakoodit ja kuvan URL-osoitteet, jotka ovat pakollisia muodostuksen jälkeen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
