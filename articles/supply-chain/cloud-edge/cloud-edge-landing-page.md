@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780671"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Pilven ja reunan asteikon yksiköt valmistuksen ja varaston hallinnan kuormituksia varten
 
@@ -102,7 +102,7 @@ Nykyisen tuotantoympäristön on oltava merkitty **itsepalvelu**-tyyppiin LCS:ss
 > [!IMPORTANT]
 > Ympäristötyyppejä, jotka suorittavat infrastruktuurin palveluna (IaaS) ei tueta. Nämä ympäristöt on tyypillisesti merkitty **Microsoftin hallitsemiksi** tyypeiksi LCS:ssä. Jos käytössä on tämän tyyppisiä ympäristöjä, ota yhteys Microsoftin yhteyshenkilöön ja ota huomioon siirron aikajana **itsepalvelu**-tyypiksi.
 
-Microsoft on siirtämässä kaikki Supply Chain Managementin pilviympäristöt IaaS-mallista topologiaan, joka sijaitsee Service Fabricissa. Tämä siirto helpottaa skaalattavuutta ja helpottaa huoltohallintaa. Tämän vuoksi käyttöönotto- ja ylläpitotoiminnot ovat nopeampia. Samoin palvelukomponentteja siirretään mikropalveluiden käsitteeseen, ja palvelun isännöintimalli [siirtyy](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) näennäiskonemallista (VM) kevyeen säilöjä käyttävään arkkitehtuurimalliin.
+Microsoft on siirtämässä kaikki Supply Chain Managementin pilviympäristöt IaaS-mallista topologiaan, joka sijaitsee Service Fabricissa. Tämä siirto helpottaa skaalattavuutta ja helpottaa huoltohallintaa. Tämän vuoksi käyttöönotto- ja ylläpitotoiminnot ovat nopeampia. Samoin palvelukomponentteja siirretään mikropalveluiden käsitteeseen, ja palvelun isännöintimalli [siirtyy](/virtualization/windowscontainers/about/containers-vs-vm) näennäiskonemallista (VM) kevyeen säilöjä käyttävään arkkitehtuurimalliin.
 
 Lopulta sama Service Fabriciin perustuva säilöjen käyttöön perustuva palveluinstanssi tehostaa sekä pilvipalvelu- että reunaesiintymiä riippumatta siitä, onko esiintymä pilvipalvelussa vai skaalausyksikössä vai reunalla.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773292"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Yleisen varastokirjanpidon käytön aloittaminen
 
@@ -42,7 +42,7 @@ Yleinen varastolaskenta ei tällä hetkellä tue kaikkia Supply Chain Management
 > [!IMPORTANT]
 > Jotta voit käyttää yleistä varastokirjanpitoa, sinulla on oltava LCS-yhteensopiva korkean käytettävyyden ympäristö (ei OneBox-ympäristö). Lisäksi käytössä tulee olla Supply Chain Managementin versio 10.0.19 tai sitä myöhempi.
 
-Jos haluat rekisteröityä yleisen varastokirjanpidon julkiseen esiversioon, lähetä LCS-ympäristötunnus sähköpostitse [yleiselle varastokirjanpitotiimille](mailto:GlobalInventoryAccounting@service.microsoft.com). Kun olet hyväksynyt ohjelman, tiimi lähettää sinulle seurantasähköpostiviestin, joka sisältää yleisen varastokirjanpidon beta-avaimen ja huollon päätepisteet. Kun olet saanut beta-avaimen, [voit asentaa lisäosan](#install).
+Jos haluat rekisteröityä yleisen varastokirjanpidon julkiseen esiversioon, lähetä LCS-ympäristötunnus sähköpostitse [yleiselle varastokirjanpitotiimille](mailto:GlobalInvAccount@microsoft.com). Kun olet hyväksynyt ohjelman, tiimi lähettää sinulle seurantasähköpostiviestin, joka sisältää yleisen varastokirjanpidon beta-avaimen ja huollon päätepisteet. Kun olet saanut beta-avaimen, [voit asentaa lisäosan](#install).
 
 ## <a name="licensing"></a>Käyttöoikeudet
 

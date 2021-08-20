@@ -1,8 +1,8 @@
 ---
 title: Myyntipisteen asiakastilaukset
-description: Tässä ohjeaiheessa on tietoja myyntipisteen asiakkaan työnkulusta. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
+description: Tässä aiheessa on tietoja myyntipisteen asiakastilauksista. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755080"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Myyntipisteen asiakastilaukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja myyntipisteen asiakkaan työnkulun luomisesta ja hallinnoimisesta. Asiakastilauksia voi käyttää myynnin tallentamisessa silloin, kun ostajat haluavat noutaa tuotteet myöhemmin, noutaa ne eri sijainnista tai valita nimikkeiden toimituksen. 
+Tässä ohjeaiheessa on tietoja asiakastilauksen luomisesta ja hallinnasta myyntipistesovelluksessa. Asiakastilauksia voi käyttää myynnin tallentamisessa silloin, kun ostajat haluavat noutaa tuotteet myöhemmin, noutaa ne eri sijainnista tai valita nimikkeiden toimituksen. 
 
 Monikanavaisessa kaupan maailmassa monet vähittäiskauppiaat tarjoavat asiakastilausten eli erikoistilausten mahdollisuuden täyttääkseen erilaisia eri tuote- ja palveluvaatimuksia. Seuraavassa on joitakin tyypillisiä skenaarioita:
 
@@ -132,6 +132,10 @@ Vähittäismyyntitilaukset, jotka luodaan online- tai myymäläkanavassa, voidaa
 > [!IMPORTANT]
 > Kaikkia vähittäismyyntitilauksia ei voi muokata myyntipistesovelluksessa. Puhelinkeskuskanavassa luotuja tilauksia ei voi muokata myyntipisteessä, jos [Ota käyttöön tilausten viimeistely](./set-up-order-processing-options.md#enable-order-completion) -asetus on otettu käyttöön puhelinkeskuskanavassa. Voit varmistaa oikean maksuprosessin puhelinkeskuskanavan tilauksille, joissa on käytössä Ota käyttöön tilausten viimeistely -toiminto, muokkaamalla niitä puhelinkeskussovelluksessa Commerce Headquarters -sovelluksessa.
 
+> [!NOTE]
+> Myyntipisteessä ei kannata muokata tilauksia ja tarjouksia, jotka muu kuin puhelinkeskuskäyttäjä loi Commerce-pääkonttorisovelluksessa. Nämä tilaukset ja tarjoukset eivät käytä Commercen hinnoittelumoduulia, joten jos niitä muokataan myyntipisteessä, Commercen hinnoittelumoduuli hinnoittelee ne uudelleen.
+
+
 Versiossa 10.0.17 ja sitä myöhemmissä versioissa käyttäjät voivat muokata hyväksyttäviä tilauksia myyntipistesovelluksen kautta, vaikka tilaus olisi osittain täytetty. Kokonaan laskutettuja tilauksia ei kuitenkaan vielä voi muokata myyntipisteessä. Jos haluat ottaa käyttöön tämän ominaisuuden, ota **Ota käyttöön osittain täytettyjen tilausten muokkaaminen myyntipisteessä** -toiminto käyttöön **Ominaisuuksien hallinta** -työtilassa. Jos tämä toiminto ei ole käytössä tai käytössä on versio 10.0.16 tai aiempi versio, käyttäjät voivat muokata asiakastilauksia myyntipisteessä vain, jos tilaus on kokonaan avoin. Lisäksi, jos ominaisuus on käytössä, voit rajoittaa, mitkä myymälät voivat muokata osittain täytettyjä tilauksia. Tämän toiminnon poistaminen käytöstä tietyissä myymälöissä voidaan konfiguroida **toimintoprofiilin** avulla **Yleiset**-pikavälilehdessä.
 
 
@@ -142,7 +146,23 @@ Versiossa 10.0.17 ja sitä myöhemmissä versioissa käyttäjät voivat muokata 
 5. Viimeistele muokkausprosessi valitsemalla maksutapahtuma.
 6. Jos haluat poistua muokkausprosessista tallentamatta muutoksia, voit käyttää **Mitätöi tapahtuma** -toimintoa.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Hinnoittelun vaikutus tilauksia muokattaessa
 
+Kun tilaukset tehdään myyntipisteessä tai Commercen sähköisessä kaupankäyntisivustossa, asiakkaat vahvistavat summan. Tämä summa sisältää hinnan, ja se voi sisältää myös alennuksen. Asiakkaalla, joka tekee tilauksen ja muuttaa sitten myöhemmin tilausta (esimerkiksi lisäämällä toisen nimikkeen) ottamalla yhteyttä puhelinkeskukseen, on tiettyjä odotuksia alennusten käytöstä. Vaikka aiemmin luotujen tilausrivien kampanjat olisivat päättyneet, asiakas odottaa, että kyseisillä riveillä alun perin käytetyt alennukset pysyvät voimassa. Jos alennus ei kuitenkaan ollut vielä voimassa, kun tilaus alun perin tehtiin, mutta on tullut voimaan sen jälkeen, asiakas odottaa, että uutta alennusta käytetään muuttuneeseen tilaukseen. Muussa tapauksessa asiakas saattaa peruuttaa aiemmin luodun tilauksen ja luoda sitten uuden tilauksen, jossa uutta alennusta käytetään. Tämä skenaario osoittaakin, että asiakkaan vahvistamat hinnat ja alennukset on säilytettävä. Myyntipisteen ja puhelinkeskuksen käyttäjien kuitenkin voitava myös joustavasti laskea tarvittaessa myyntitilausrivien hinnat ja alennukset uudelleen.
+
+Kun tilauksia peruutetaan ja muokataan myyntipisteessä, aiemmin luotujen tilausrivien hintoja ja alennuksia pidetään lukittuina. Ne eivät toisin sanoen muutu, vaikka osa tilausriveistä peruttaisiin, niitä muutettaisiin tai uusia tilausrivejä lisättäisiin. Myyntipisteen käyttäjä voi muuttaa aiemmin luotujen myyntirivien hintoja ja alennuksia valitsemalla **Laske uudelleen**. Hintalukitus poistetaan silloin aiemmin luoduilta tilausriveiltä. Tämä ominaisuus ei kuitenkaan ollut käytettävissä puhelinkeskuksessa ennen Commercen versiota 10.0.21. Tilausriveille tehdyt muutokset aiheuttivat sen sijaan hintojen ja alennusten laskemisen uudelleen.
+
+Commercen versiossa 10.0.21 on uusi **Ominaisuuksien hallinta** -työtilassa käytettävissä oleva ominaisuus, **Estä kaupankäynnin tilausten tahaton hinnan laskenta**. Tämä ominaisuus on otettu oletusarvoisesti käyttöön. Kun ominaisuus on otettu käyttöön, kaikissa sähköisen kaupankäynnin tilauksissa voi käyttää **Hinta lukittu** -ominaisuutta. Kun missä tahansa kanavassa tehdyn tilauksen sieppaus on valmis, tämä ominaisuus otetaan automaattisesti käyttöön (eli valintaruutu on valittuna) kaikilla tilausriveillä. Commercen hinnoittelumoduuli jättää tämän jälkeen kyseiset tilausrivit pois kaikista hinta- ja alennuslaskelmista. Niinpä tilausta muokattaessa tilausrivit jätetään oletusarvoisesti pois hinnoittelu- ja alennuslaskelmista. Puhelinkeskuksen käyttäjät voivat kuitenkin poistaa omaisuuden käytöstä (eli poistaa valintaruudun valinnan) millä tahansa tilausrivillä ja valita sitten **Laske uudelleen**, jolloin aiemmin luodut tilausrivit ovat mukana hintalaskelmissa.
+
+Vaikka puhelinkeskuksen käyttäjät käyttäisivät manuaalista alennusta aiemmin luodulla tilausrivillä, myyntirivin **Hinta lukittu** -ominaisuus on silti poistettava käytöstä ennen manuaalisen alennuksen käyttöä.
+
+Puhelinkeskuksen käyttäjät voivat käyttää myös tilausrivien **Hinta lukittu** -ominaisuuden joukkokäytöstäpoistoa valitsemalla **Poista hinnan lukitus** **Myyntitilaus**-sivun toimintoruudun **Myynti**-välilehden **Laske**-ryhmässä. Hinnan lukitus poistetaan tässä tapauksessa kaikilta muilta tilausriveiltä lukuun ottamatta rivejä, joita ei voi muokata (eli rivejä, joiden tila on **Osittain laskutettu** tai **Laskutettu**). Sen jälkeen kun tilaukseen tehtävät muutokset ovat valmiita ja ne on lähetty, hinnan lukitus otetaan uudelleen käyttöön kaikilla tilausriveillä.
+
+> [!IMPORTANT]
+> Kun **Estä kaupankäynnin tilausten tahaton hinnan laskenta** -ominaisuus on otettu käyttöön, kauppasopimuksen arviointimääritykset ohitetaan hinnoittelutyönkuluissa. Toisin sanoen kauppasopimuksen arviointi-ikkunassa ei näy **Hintaan liittyvä** -osaa. Tämä johtuu siitä, että sekä kauppasopimuksen arviointimäärityksellä että hinnan lukitusominaisuudella on sama tarkoitus: estää tahattomat hinnan muutokset. Kauppasopimuksen arvioinnin käyttökokemus ei kuitenkaan skaalaudu hyvin suurissa tilauksissa, joissa käyttäjän on valittava uudelleenhinnoittelua varten yksi tilausrivi tai useita rivejä.
+
+> [!NOTE]
+> **Hinta lukittu** -ominaisuus voidaan poistaa yhdeltä tai usealta riviltä vain **Puhelinkeskus**-moduulia käytettäessä. Myyntipisteen toiminta ei muutu. Myyntipisteen käyttäjät eivät voi avata valittujen tilausrivien hintojen lukitusta. He voivat kuitenkin poistaa hinnan lukituksen kaikista aiemmin luoduista tilausriveistä valitsemalla **Laske uudelleen**.
 
 ### <a name="cancel-a-customer-order"></a>Asiakastilauksen peruuttaminen
 

@@ -1,8 +1,8 @@
 ---
 title: Varastoinventoinnin syykoodit
 description: Tässä ohjeaiheessa käsitellään inventointitehtävin syykoodin määrittämistä ja käyttämistä.
-author: Mirzaab
-ms.date: 03/15/2017
+author: perlynne
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,22 @@ ms.reviewer: kamaybac
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a6b8a686b6aee6b52b3f43caf8acae9f371f8804
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: 4510ed7033e7c4e5187905906dcbef63f05a130bafcb7d9f19bbb360a7298119
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838199"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7012088"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Varastoinventoinnin syykoodit
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Syykoodien avulla voit analysoida inventointiprosessin tuloksia ja prosessin aikana mahdollisesti esiintyviä ristiriitoja. Voit määrittää inventoinnin syyn, kuten vioittuneen kuormalavan tai varasto-otantaan perustuvan varasto-oikaisun.
+Syykoodien avulla voit analysoida inventointiprosessin tuloksia ja prosessin aikana mahdollisesti esiintyviä ristiriitoja. Voit määrittää inventoinnin syyn, kuten vioittuneen kuormalavan tai varasto-otantaan perustuvan varasto-oikaisun. Oikaisutoiminnon avulla voit samalla kirjata käytettävissä olevan varaston oikaisujen arvon asianmukaiselle vastatilille kunkin varasto-oikaisun syyn perusteella.
 
 ## <a name="recommendation"></a>Suositus
 
@@ -35,17 +36,32 @@ Ennen järjestelmän määrittämistä kannattaa määrittää syykoodien käytt
 - Pitäisikö syykoodien olla pakollisia varastoissa?
 - Pitäisikö syykoodien käytön olla pakollista vai valinnaista joidenkin nimikkeiden kanssa?
 - Kuinka monta syykoodia tarvitaan?
+- Onko oikaisuille ennalta valittava rajallinen syykoodien luettelo?
 - Pitäisikö viivakoodinlukijoiden käyttäjien käyttää syykoodeja? Pitäisikö syykoodien olla ennalta valittuja, pakollisia tai ei-muokattavissa?
 - Tarvitsevatko varastotyöntekijät syykoodin, jotka toimivat eri tavalla mobiililaitteissa? Jos vastaus on myönteinen, voit luoda lisää valikkokohteita ja määrittää ne eri henkilöille.
+- Tuleeko syykoodien käyttää kirjanpidon vastatilikirjauksia?
 
-## <a name="where-reason-codes-apply"></a>Syykoodien käyttökohteet
+## <a name="turn-on-reason-code-features-in-your-system"></a>Syykoodiominaisuuksien käyttöönottaminen järjestelmässä
 
-Voit luoda useita syykoodikäytäntöjä. Kullakin syykoodikäytännöllä voi olla kaksi inventoinnin syykoodikäytäntöä. Inventoinnin syykoodikäytäntöjä voidaan käyttää varasto- tai nimiketasolla.
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
-## <a name="set-up-reason-code-policies"></a>Syykoodikäytäntöjen määrittäminen
+Jos et näe kaikkia tässä aiheessa kuvattuja ominaisuuksia järjestelmässäsi, sinun on todennäköisesti otettava käyttöön *Kirjaa varastosta -oikaisut käyttämällä konfiguroitavissa olevia syykoodeja, jotka on liitetty vastatili* -toiminto. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
-1. Valitse **Inventoinnin- ja varastonhallinta** \> **Asetukset** \> **Varasto** \> **Inventoinnin syykoodin käytännöt** ja luo uusi syykoodin käytäntö.
-2. Valitse **Inventoinnin syykoodin tyyppi** -kentässä joko **Pakollinen** tai **Valinnainen**. Voit määrittää tällä tavoin, onko syykoodin valinta valinnaista vai pakollista jossakin seuraavista inventointikirjauskansioissa:
+- **Moduuli:** *Varastonhallinta*
+- **Ominaisuuden nimi:** *Kirjaa käyttökelpoisia oikaisuja käyttäen vastatileihin liitettyjä konfiguroitavissa olevia syykoodeja*
+
+## <a name="set-up-reason-codes"></a>Syykoodien määrittäminen
+
+### <a name="set-up-reason-code-policies"></a>Syykoodikäytäntöjen määrittäminen
+
+Voit luoda useita syykoodien käytäntöjä, jotka ohjaavat sitä, milloin ja miten inventoinnin syykoodit otetaan käyttöön. Jokaisella syykoodikäytännön syykoodityypillä voi olla kaksi eri inventoinnin syykoodityyppiä (*Valinnainen* tai *pakollinen*). Inventoinnin syykoodikäytäntöjä voidaan käyttää varasto- tai nimiketasolla.
+
+Voit luoda syykoodikäytännön noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Varastonhallinta** \> **Määritys** \> **Varasto** \> **Inventoinnin syykoodikäytännöt**.
+1. Lisää ruudukkoon uusi käytäntö valitsemalla toimintoruudussa **Uusi**.
+1. Määritä uuden käytännön **Nimi**-kenttä.
+1. Valitse **Inventoinnin syykoodin tyyppi** -kentässä joko *Pakollinen* tai *Valinnainen*. Voit määrittää tällä tavoin, onko syykoodin valinta valinnaista vai pakollista jossakin seuraavista varastonoikaisuprosesseissa:
 
     - Inventointi (mobiililaite)
     - Pistoinventointi (mobiililaite)
@@ -53,34 +69,63 @@ Voit luoda useita syykoodikäytäntöjä. Kullakin syykoodikäytännöllä voi o
     - Oikaisu sisään (mobiililaite)
     - Oikaisu ulos (mobiililaite)
     - Inventointikirjauskansio (raskas asiakas)
+    - Määrän oikaisu/Online-inventointi (raskas asiakas)
 
-Voit määrittää syykoodit myös yksittäisille varastoille ja tuotteille. Tuotteiden syykoodiasetukset voivat ohittaa varastojen asetukset.
+Voit määrittää syykoodit sekä yksittäisille varastoille että tuotteille. Tuotteen syykoodiasetukset voivat ohittaa tuotteen varastoasetukset.
 
-## <a name="mandatory-reason-codes"></a>Pakolliset syykoodit
+> [!NOTE]
+> Varastoille ja tavaroille, joissa **laskentasyykoodin käytäntö** -kenttä on *Pakollinen*, laskentapäiväkirjaa ei voida täyttää ja sulkea ennen kuin syykoodi on annettu. Lisätietoja on seuraavassa osassa.
 
-Jos **Pakollinen**-parametri on määritetty varastojen tai nimikkeiden syykoodeissa, inventointikirjauskansiota ei voi viimeistellä ja sulkea, ennen kuin syykoodi on annettu.
+### <a name="assign-counting-reason-code-policies-to-warehouses"></a>Määritä inventoinnin syykoodikäytännöt varastoille
 
-### <a name="set-up-reason-codes-for-warehouses"></a>Varastojen syykoodien määrittäminen
+Voit määrittää varastolle inventoinnin syykoodikäytännön noudattamalla seuraavia ohjeita.
 
-1. Valitse **Varastonhallinta** \> **Asetukset** \> **Varastoerittely** \> **Varastot**.
-2. Valitse **Varasto**-välilehden **Inventoinnin syykoodin käytäntö** -kentässä jokin seuraavista vaihtoehdoista:
+1. Mene kohtaan **Varastonhallinta** \> **Asetukset** \> **Inventaarioanalyysi** \> **Varastot**.
+1. Valitse luetteloruudusta varasto.
+1. Valitse toimintoruudun **Varasto**-välilehden **Määritys**-ryhmässä **Inventoinnin syykoodikäytäntö**. Tee sitten jokin **Määritä Inventoinnin syykoodikäytäntö** -valintaikkunassa olevista vaihtoehdoista:
 
-    - **Tyhjä** – nimikkeelle määritetty parametri määrittää, ovatko inventointikirjauskansiot pakollisia tuotteelle.
-    - **Pakollinen** – varaston inventointikirjauskansiossa on aina käytettävä syykoodia.
-    - **Valinnainen** – syykoodi ei ole pakollinen varaston inventointikirjauskansiossa.
+    - Määritä kunkin nimikkeen käytäntöasetusten avulla, ovatko inventointikirjauskansiot pakollisia, syöttäen ei arvoa (tai poistamalla olemassa olevaa arvoa).
+    - Jos haluat vaatia varaston inventointikirjauskansioiden syykoodin, valitse syykäytäntö, jonka mukaan **Inventoinnin syykoodin tyyppi** -kentän arvoksi on määritetty *Pakollinen*.
+    - Jos varaston inventointikirjauskansioiden syykoodi on valinnainen, valitse syykäytäntö, jonka mukaan **Inventoinnin syykoodin tyyppi** -kentän arvoksi on määritetty *Valinnainen*.
 
-### <a name="set-up-reason-codes-for-products"></a>Tuotteiden syykoodien määrittäminen
+### <a name="assign-counting-reason-code-policies-to-products"></a>Määritä inventoinnin syykoodikäytännöt tuotteille
 
-1. Valitse **Tuotetietojen hallinta** \> **Tuotteet** \> **Vapautetut tuotteet**.
-2. Valitse ensin **Tuote**-välilehdessä **Inventoinnin syykoodin käytäntö** ja sitten jokin seuraavista vaihtoehdoista:
+Voit määrittää tuotteelle inventoinnin syykoodikäytännön noudattamalla seuraavia ohjeita.
 
-    - **Tyhjä** – varastolle määritetty parametri määrittää, ovatko inventointikirjauskansiot pakollisia tuotteelle.
-    - **Pakollinen** – Tuotteen inventointikirjauskansiossa on aina käytettävä syykoodia. Tämä asetus ohittaa varastotason syykoodiasetuksen.
-    - **Valinnainen** – syykoodi ei ole pakollinen tuotteen inventointikirjauskansiossa. Tämä asetus ohittaa varastotason syykoodiasetuksen.
+1. Siirry kohtaan **Tuotetietojen hallinta** \> **Tuotteet** \> **Vapautetut tuotteet**.
+1. Valitse tuote ruudukossa.
+1. Valitse toimintoruudun **Tuote**-välilehden **Määritys**-ryhmässä **Inventoinnin syykoodikäytäntö**. Tee sitten jokin **Määritä Inventoinnin syykoodikäytäntö** -valintaikkunassa olevista vaihtoehdoista:
 
-### <a name="use-reason-codes-in-counting-journals"></a>Syykoodien käyttäminen inventointikirjauskansioissa
+    - Määritä varaston käytäntöasetusten avulla, ovatko inventointikirjauskansiot pakollisia tuotteelle, syöttäen ei arvoa (tai poistamalla olemassa olevaa arvoa).
+    - Jos haluat vaatia tuotteen inventointikirjauskansioiden syykoodin, valitse syykäytäntö, jonka mukaan **Inventoinnin syykoodin tyyppi** -kentän arvoksi on määritetty *Pakollinen*. Tämä asetus ohittaa varastotason syykoodiasetuksen.
+    - Jos tuotteen inventointikirjauskansioiden syykoodi on valinnainen, valitse syykäytäntö, jonka mukaan **Inventoinnin syykoodin tyyppi** -kentän arvoksi on määritetty *Valinnainen*. Tämä asetus ohittaa varastotason syykoodiasetuksen.
 
-Voit lisätä inventointikirjauskansiossa syykoodit seuraaville inventointityypeille:
+### <a name="set-up-counting-reason-codes"></a>Inventoinnin syykoodien määrittäminen
+
+Voit määrittää inventoinnin syykoodit seuraavasti.
+
+1. Siirry kohtaan **Varastonhallinta** \> **Määritys** \> **Varasto** \> **Inventoinnin syykoodit**.
+1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi**.
+1. Määritä uuden rivin **Inventoinnin syykoodi**- ja **Kuvaus**-kentät.
+1. Voit määrittää vastatilin kirjoittamalla tai valitsemalla arvon **Vastatili**-kentässä.
+
+    > [!NOTE]
+    > Jos vastatili liitetään inventoinnin syykoodiin, inventointikirjauskansion käytössä on inventoinnin syykoodi, arvo kirjataan määritetylle vastatilille varaston kirjauksen oletusprofiilitilin asemesta.
+
+### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Inventoinnin syykoodiryhmien määrittäminen
+
+*Inventoinnin syykoodiryhmiä* voidaan käyttää Warehouse Management -mobiilisovelluksen *oikaisu*- ja *korjaus*-valikkojen nimikkeissä inventoinnin syykoodien luettelon rajoittamiseksi. (Lisätietoja inventoinnin syykoodiryhmistä on kohdassa [Määritä kannettavan laitteen valikkovaihtoehdot oikaisua ja korjausta varten](#setup-adjustment-in-out) jäljempänä tässä ohjeaiheessa.)
+
+1. Siirry kohtaan **Varastonhallinta** \> **Määritys** \> **Varasto** \> **Inventoinnin syykoodiryhmät**.
+1. Lisää ryhmä valitsemalla toimintoruudussa **Uusi**.
+1. Määritä uuden ryhmän **Inventoinnin syyryhmä**- ja **Ryhmän kuvaus** -kentät.
+1. Valitse toimintoruudussa **Tallenna**.
+1. Valitse **Tiedot**-osassa työkaluriviltä **Uusi** lisätäksesi ruudukkoon rivin. Määritä sitten uuden rivin **Inventoinnin syykoodi** -kenttä. 
+1. Lisää koodeja tarpeen mukaan toistamalla edellinen vaihe. Jos sinun on poistettava koodi ryhmästä, valitse koodi ja valitse sitten työkaluriviltä **Poista**.
+
+### <a name="set-up-reason-codes-for-mobile-device-menu-items"></a>Mobiililaitteen valikkovaihtoehtojen syykoodien asettaminen
+
+Syykoodit voidaan konfiguroida seuraaville varastojen oikaisutyypeille:
 
 - Inventointi
 - Pistoinventointi
@@ -88,59 +133,92 @@ Voit lisätä inventointikirjauskansiossa syykoodit seuraaville inventointityype
 - Oikaisu sisään
 - Oikaisu ulos
 
-Syykoodit lisätään **Inventointikirjauskansio**-tyypin inventointikirjauskansioiden riveille.
-
-1. Valitse **Inventoinnin- ja varastonhallinta** \> **Kirjauskansioviennit** \> **Inventointi** \> **Inventointi**.
-2. Valitse vaihtoehto inventointikirjauskansion tietojen **Inventoinnin syykoodi** -kentässä.
-
-### <a name="view-the-counting-history-as-its-recorded-by-reason-codes"></a>Inventointihistorian näyttäminen syykoodien mukaan kirjattuna
-
-- Valitse ensin **Inventoinnin- ja varastonhallinta** \> **Kyselyt ja raportit** \> **Inventointihistoria** ja sitten tarkastele sitten **Inventoinnin syykoodi** -kentässä syykoodin kautta kirjattua inventointihistoriaa.
-
-### <a name="use-a-reason-code-for-a-quantity-adjustment"></a>Määrän muutoksen syykoodin käyttäminen
-
-1. Valitse **Käytettävissä oleva varasto** -sivulla **Säädä määrää**. Voit avata **Käytettävissä oleva varasto** -sivu useilla eri tavoilla. Valitse esimerkiksi **Inventoinnin- ja varastonhallinta** \> **Kyselyt ja raportit** \> **Käytettävissä oleva varasto**.
-2. Valitse ensin **Säädä määrää** ja sitten **Inventoinnin syykoodi** -kentässä syykoodi.
-
-### <a name="configure-reason-codes-for-mobile-device-menu-items"></a>Mobiililaitteen valikkovaihtoehtojen syykoodien määrittäminen
-
-Voit määrittää syykoodit mille tahansa mobiililaitteen valikkoehdon inventointityypille. Mobiililaitteen valikkovaihtoehdon määritys sisältää seuraavat tiedot:
+Useimmissa tapauksissa voit määrittää seuraavat tiedot kullekin asiaankuuluvalle kannettavan laitteen valikkokohteelle:
 
 - Syykoodin mahdollinen näyttäminen mobiililaitteen käyttäjälle inventoinnin aikana.
 - Mobiililaitteen valikkovaihtoehdossa näytettävä oletussyykoodi.
 - Käyttäjän tekemä syykoodin mahdollinen muokkaus.
 
-### <a name="set-up-reason-codes-on-a-mobile-device"></a>Syykoodien määrittäminen mobiililaitteessa
+#### <a name="set-up-mobile-device-menu-items-for-a-counting-process"></a>Mobiililaitteen valikkovaihtoehtojen inventointiprosessin asettaminen
 
-1. Valitse **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
-2. Valitse **Inventointi**-välilehdessä **Inventointi**.
-3. Määritä **Inventoinnin oletussyykoodi** -kentässä oletussyykoodi, joka on kirjattava, kun inventointi tehdään käyttämällä mobiililaitteen valikkovaihtoehtoa.
-4. Valitse **Näytä inventoinnin syykoodi** -kentässä **Rivi** näyttämään syykoodi, kun kukin varianssi on kirjattu. Vaihtoehtoisesti voit valita **Piilota**, jos syykoodia ei näytetä.
-5. Valitse **Muokkaa inventoinnin syykoodia** -asetukseksi joko **Kyllä** tai **Ei**. Jos valitse tässä asetuksessa **Kyllä**, työntekijä voi muokata syykoodia, kun se näytetään mobiililaitteessa inventoinnin aikana.
+Määritä mobiililaitteen valikkovaihtoehto inventointiprosessia varten seuraavasti.
+
+1. Siirry kohtaan **Warehouse management** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
+1. Valitse haluamasi valikkokohde luetteloruudusta tai luo uusi valikkokohde.
+1. Valitse toimintoruudussa **Inventointi**.
+1. Määritä **Inventoinnin oletussyykoodi** -kentässä oletussyykoodi, joka on kirjattava, kun mobiililaitteen valikkokohdetta käytetään inventointiin.
+1. Valitse **Näytä inventoinnin syykoodi** -kentästä jokin seuraavista arvoista:
+
+    - *Rivi* – Näytä syykoodi kunkin varianssin kirjaamisen jälkeen.
+    - *Piilota* – Älä näytä syykoodia.
+
+1. Aseta **Muokkaa inventoinnin syykoodia** -asetukseksi *Kyllä*, jotta työntekijä voi muokata syykoodia, kun se näkyy mobiililaitteessa laskennan aikana. Määritä arvoksi *Ei*, jos haluat estää työntekijää muokkaamasta koodia.
 
 > [!NOTE]
-> **Inventointi**-painike voidaan ottaa käyttöön missä tahansa mobiililaitteen valikkovaihtoehdossa, jos inventointi voidaan tehdä. Esimerkissä on pistoinventoinnin, käyttäjän ohjaaman työn ja järjestelmän ohjaaman työn valikkovaihtoehtoja.
+> **Inventointi**-painike voidaan ottaa käyttöön missä tahansa mobiililaitteen valikkovaihtoehdossa, jos inventointi voidaan tehdä. Esimerkeissä on pistoinventoinnin, käyttäjän ohjaaman työn ja järjestelmän ohjaaman työn valikkovaihtoehtoja.
 
-## <a name="cycle-count-approvals"></a>Inventoinnin hyväksynnät
+#### <a name="set-up-mobile-device-menu-items-for-adjustment-in-and-adjustment-out"></a><a name="setup-adjustment-in-out"></a>Mobiililaitteen Oikaisu sisään- ja Oikaisu ulos -valikkovaihtoehdon määrittäminen
 
-Käyttäjä voi muuttaa inventointiin liitettyä syykoodia ennen inventoinnin hyväksymistä. Kun inventointi on hyväksytty, syykoodi annetaan inventointikirjauskansion riveille.
+Määritä mobiililaitteen Oikaisu sisään- ja Oikaisu ulos -valikkovaihtoehto seuraavasti.
 
-### <a name="modify-cycle-count-approvals"></a>Inventoinnin hyväksymisten muokkaaminen
+1. Siirry kohtaan **Warehouse management** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
+1. Luo valikkonimike valitsemalla toimintoruudussa **Uusi**.
+1. Määritä uuden valikkovaihtoehdon **Mobiilinimikkeen nimi**- ja **Otsikko**-kentät.
+1. Määritä **Tila**-kentän arvoksi *Työ*.
+1. Valitse **Käytä nykyistä työtä** -vaihtoehdossa *Ei*.
+1. Valitse **Työn luontiprosessi** -kentässä *Oikaisu sisään* tai *Oikaisu ulos*.
+1. Valitse **Yleiset**-pikavälilehdellä seuraavat lisäkentät. (Kaikki nämä kentät lisätään, kun valitset **Työn luontiprosessi** -kentässä *Oikaisu sisään* tai *Oikaisu ulos*.)
 
-1. Valitse **Varastonhallinta** \> **Inventointi** \> **Tarkistusta odottava inventointityö**.
-2. Valitse ensin **Inventointi** ja sitten **Syykoodi**-kentässä uusi syykoodi.
+    - **Käytä prosessiopasta** – Jos olet luomassa *Oikaisu ulos*-prosessia, varmista, että määrität tämän asetuksen arvoksi *Kyllä*. Jos olet luomassa *Oikaisu ulos* -prosessia, tämän vaihtoehdon asetuksena on aina *Kyllä*.
+    - **Inventoinnin oletussyykoodi** – Määritä kentässä oletussyykoodi, joka on kirjattava, kun mobiililaitteen valikkokohdetta käytetään inventointiin.
+    - **Näytä inventoinnin syykoodi** – Valitse kentästä jokin seuraavista arvoista:
 
-### <a name="modify-the-mobile-device-menu-item-for-adjustment-in-and-adjustment-out"></a>Mobiililaitteen Oikaisu sisään- ja Oikaisu ulos -valikkovaihtoehdon muokkaaminen
+        - *Rivi* – Näytä syykoodi kunkin varianssin kirjaamisen jälkeen.
+        - *Piilota* – Älä näytä syykoodia.
 
-1. Valitse ensin **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot** ja sitten **Oikaisu sisään ja ulos**.
-2. Valitse **Käytä nykyistä työtä** -vaihtoehdossa **Ei**.
-3. Valitse **Työn luontiprosessi** -kentässä **Oikaisu sisään**.
+    - **Muokkaa inventoinnin syykoodia** – Aseta asetukseksi *Kyllä*, jotta työntekijä voi muokata syykoodia, kun se näkyy mobiililaitteessa laskennan aikana. Määritä arvoksi *Ei*, jos haluat estää työntekijää muokkaamasta koodia.
+    - **Inventoinnin syykoodiryhmä** – Valitse syykoodiryhmä, jos haluat rajoittaa työntekijöille esiteltyjen asetusten luetteloa. Lisätietoja syykoodiryhmien määrittämisestä on tässä ohjeaiheessa aiemmin olevassa [Inventoinnin syykoodiryhmien määrittäminen](#reason-groups) -osassa. 
 
-Seuraavat kentät lisätään mobiililaitteen valikkovaihtoehtoon, kun **Oikaisu sisään** tai **Oikaisu ulos** valitaan työn luontiprosessin aikana:
+> [!NOTE]
+> Kun liität inventoinnin syykoodiryhmän *Oikaisu sisään*- ja *Oikaisu ulos* -valikkokohteisiin, joissa **Käytä prosessiopasta** -asetus on *Kyllä*, voit saada rajoitetun luettelon inventoinnin syykoodeista osana käsittelyä Warehouse Management-mobiilisovelluksessa.
+>
+> **Käytä prosessiopasta** -vaihtoehdon avulla voit myös estää vahingossa tapahtuvien suurten oikaisujen määrän. (Työntekijä voi esimerkiksi skannata vahingossa nimiketunnuksen viivakoodin määräarvon asemesta.) Voit määrittää tämän toiminnon valitsemalla **Käytä prosessiopasta** -asetusta *Kyllä* jokaiselle asianmukaiselle valikkokohteelle. Siirry sitten kohtaan **Warehouse management \> Asennus \> Työntekijä** ja määritä kullekin asiaankuuluvalle varastotyöntekijälle **Oikaisumäärän raja** -kenttä, jonka työntekijä voi rekisteröidä.
 
-- Inventoinnin oletussyykoodi
-- Näytä inventoinnin syykoodi
-- Muokkaa inventoinnin syykoodia
+## <a name="processing-that-uses-counting-reason-codes"></a>Inventoinnin syykoodeja käyttävä käsittely
 
+Kun työntekijät käyttävät Warehouse Management -mobiilisovellusta, syykoodit tallennetaan. Jos inventoinnin hyväksymisprosessia ei ole määritetty, tallennettuja syykoodeja käytetään heti osana seuraavia inventointikirjauskansion kirjauksia.
+
+### <a name="cycle-count-approvals"></a>Inventoinnin hyväksynnät
+
+Työntekijä voi muuttaa inventointiin liitettyä syykoodia ennen inventoinnin hyväksymistä. Kun inventointi on hyväksytty, syykoodi annetaan inventointikirjauskansion riveille.
+
+#### <a name="modify-reason-codes-for-cycle-count-approvals"></a>Syklin inventointihyväksyntöjen syykoodien muokkaaminen
+
+Voit määrittää syklin inventointihyväksynnät seuraavasti.
+
+1. Mene kohtaan **Varastonhallinta** \> **Inventointi** \> **Tarkistusta odottava inventointityö**.
+1. Valitse inventointimäärä ruudukossa.
+1. Valitse toimintoruudun **Työ**-välilehdessä **Inventointi**. Valitse uusi syykoodi **Syykoodi** -kentässä.
+
+Syykoodit lisätään *Inventointikirjauskansio*-tyypin inventointikirjauskansioiden riveille.
+
+1. Valitse **Varastonhallinta** \> **Kirjauskansioviennit** \> **Inventointi** \> **Inventointi**.
+2. Valitse inventointikirjauskansion riviyksiköstä **Inventoinnin syykoodi** -kentässä syykoodi, joka vastaa nykyistä tilannetta.
+
+### <a name="view-the-reason-codes-recorded-in-the-counting-history"></a>Näytä inventointihistoriassa tallennetut syykoodit
+
+Voit tarkastella inventointihistoriaan tallennettuja syykoodeja noudattamalla seuraavia vaiheita.
+
+1. Siirry kohtaan **Varastonhallinta** \> **Kyselyt ja raportit** \> **Inventointihistoria**.
+1. Valitse luetteloruudusta nimikkeiden inventointitietue.
+1. Näytä **Inventoinnin syykoodi** -kentässä inventointihistoria, joka on tallennettu syykoodin avulla.
+
+### <a name="use-reason-codes-for-quantity-adjustment-or-online-counting"></a>Syykoodien käyttäminen määrän oikaisussa tai online-inventoinnissa
+
+Jos haluat käyttää syykoodia määrän oikaisussa tai online-inventoinnissa, noudata seuraavia ohjeita.
+
+1. Siirry kohtaan **Varastonhallinta \> Kyselyt ja raportit \> Käytettävissä olevien luettelo**.
+1. Valitse toimintoruudussa **Määrän oikaisu**.
+1. Valitse ensin **Määrän oikaisu** ja sitten **Inventoinnin syykoodi** -kentässä syykoodi.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
