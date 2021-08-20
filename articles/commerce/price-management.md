@@ -2,7 +2,7 @@
 title: Vähittäismyynnin hintojen hallinta
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
-ms.date: 05/28/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352225"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759282"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -40,21 +40,21 @@ Ohjeaiheessa käytetään seuraavia termejä.
 
 ## <a name="price-groups"></a>Hintaryhmät
 
-Hintaryhmät ovat olennaisia Commercen hinnan ja alennuksen hallinnassa. Hintaryhmien avulla hinnat ja alennukset määritetään kaupan yksiköihin (eli kanaviin, luetteloihin, liitoksiin ja kanta-asiakkuusohjelmiin). Koska hintaryhmiä käytetään kaikessa hinnoittelussa ja alennuksissa, niiden käyttö on suunniteltava huolellisesti ennen aloittamista.
+Hintaryhmät ovat olennaisia Commercen hinnan ja alennuksen hallinnassa. Hintaryhmien avulla hinnat ja alennukset määritetään Commercen yksiköihin (eli kanaviin, luetteloihin, liitoksiin ja kanta-asiakasohjelmiin). Koska hintaryhmiä käytetään kaikessa hinnoittelussa ja alennuksissa, niiden käyttö on suunniteltava huolellisesti ennen aloittamista.
 
-Sellaisenaan hintaryhmä on vain nimi, kuvaus ja mahdollisesti hinnoittelun prioriteetti. Hintaryhmistä on muistettava ennen kaikkea, että niiden avulla hallitaan monesta moneen -suhteita, joita alennuksilla ja hinnoilla on kaupan yksiköiden kanssa.
+Sellaisenaan hintaryhmä on vain nimi, kuvaus ja mahdollisesti hinnoittelun prioriteetti. Hintaryhmistä on muistettava ennen kaikkea, että niiden avulla hallitaan monesta moneen -suhteita, joita alennuksilla ja hinnoilla on Commercen yksiköiden kanssa.
 
-Seuraavassa kuvassa esitellään hintaryhmien käyttöä. Huomaa, että tässä kuvassa hintaryhmä on kirjaimellisesti hinnoittelun ja alennuksen hallinnan keskellä. Vasemmalla puolella on ne kaupan yksiköt, joilla hintoja ja alennuksia hallitaan, kun taas todelliset hinta- ja alennustietueet ovat oikealla.
+Seuraavassa kuvassa esitellään hintaryhmien käyttöä. Huomaa, että tässä kuvassa hintaryhmä on kirjaimellisesti hinnoittelun ja alennuksen hallinnan keskellä. Vasemmalla puolella on ne Commercen yksiköt, joilla hintoja ja alennuksia hallitaan, kun taas todelliset hinta- ja alennustietueet ovat oikealla.
 
 ![Hintaryhmät.](./media/PriceGroups.png "Hintaryhmät")
 
-Kun luotat hintaryhmiä, älä käytä samaa hintaryhmää useille kaupan yksikkötyypeille. Jos teet niin, voi olla vaikea päätellä, miksi tiettyä hintaa tai alennusta käytetään tapahtumassa.
+Kun luotat hintaryhmiä, älä käytä samaa hintaryhmää useille Commercen yksikkötyypeille. Jos teet niin, voi olla vaikea päätellä, miksi tiettyä hintaa tai alennusta käytetään tapahtumassa.
 
 Kuvassa oleva punainen katkoviiva osoittaa, että Commerce ei tue asiakkaaseen suoraan perustuvaa hintaryhmää, joka Microsoft Dynamics 365:n perustoiminto. Tässä tapauksessa saat vain myyntihinnan kauppasopimukset. Jos haluat käyttää asiakaskohtaisia hintoja, hintaryhmien määrittämistä suoraan asiakkaan perusteella ei suositella. Käytä sen sijaan liitoksia. 
 
 Huomaa, että jos hintaryhmä on määritetty asiakkaalle, tämä hintaryhmä liitetään tälle asiakkaalle luotujen tilausten myyntitilauksen otsikkoon. Jos käyttäjä muuttaa tilausotsikon hintaryhmää, vanha hintaryhmä korvataan uudella hintaryhmällä vain nykyisessä tilauksessa. Esimerkiksi vanha hintaryhmä ei vaikuta nykyiseen tilaukseen, mutta se liitetään edelleen asiakkaaseen tulevia tilauksia varten.
 
-Seuraavissa osissa on lisätietoja niistä kaupan yksiköistä, joilla voit määrittää erilliset hinnat, kun hintaryhmiä käytetään. Hintojen ja alennusten näiden kohteiden määritysten kahdessa vaiheessa. Näiden vaiheiden suorittamisjärjestyksellä ei ole merkitystä. Loogista on kuitenkin määrittää ensin yksiköiden hintaryhmät, koska tämä vaihe tehdään todennäköisesti vain kerran käyttöönoton yhteydessä. Voit sitten määrittää hintaryhmät luotaville hinnoille ja alennuksille yksi kerrallaan.
+Seuraavissa osissa on lisätietoja niistä Commercen yksiköistä, joilla voit määrittää erilliset hinnat, kun hintaryhmiä käytetään. Hintojen ja alennusten näiden kohteiden määritysten kahdessa vaiheessa. Näiden vaiheiden suorittamisjärjestyksellä ei ole merkitystä. Loogista on kuitenkin määrittää ensin yksiköiden hintaryhmät, koska tämä vaihe tehdään todennäköisesti vain kerran käyttöönoton yhteydessä. Voit sitten määrittää hintaryhmät luotaville hinnoille ja alennuksille yksi kerrallaan.
 
 ### <a name="channels"></a>Kanavat
 
@@ -214,20 +214,21 @@ Dynamics 365:ssä määritettävissä myyntihinnoissa ei määritetä, sisältä
 
 Jos käsittelet sekä arvonlisäveron sisältäviä että sen pois jättäviä tyyppejä, hintojen määrittäminen oikein on tärkeää, koska asiakkaan maksama kokonaissumma muuttuu, jos kanavan **arvolisäveron sisältävän hinnan** asetusta muutetaan.
 
-## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Vähittäismyynnin hinnoittelun ja muun kuin vähittäismyynnin hinnoittelun väliset erot
+## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>Commercen hinnoittelun ja muun kuin Commercen hinnoittelun väliset erot
 
-Samalla hinnoittelumoduulilla lasketaan kaikkien kanavien hinnat: puhelinkeskus, myymälä ja verkkokauppa. Tämä auttaa ottamaan käyttöön yhtenäiset kaupankäyntiskenaariot.
+Samalla hinnoittelumoduulilla lasketaan kaikkien kanavien hinnat: puhelinkeskus, myymälä ja verkkokauppa. Tämä auttaa ottamaan käyttöön yhtenäiset Commerce-skenaariot.
 
-Hinnoittelu on suunniteltu toimimaan vähittäismyynnin yksiköiden eikä muiden kuin vähittäismyynnin yksiköiden kanssa. Se on suunniteltu nimenomaan määrittämään hinnat myymälöittäin eikä varastoittain.
+Hinnoittelu on suunniteltu toimimaan Commercen yksiköiden eikä muiden kuin Commercen yksiköiden kanssa. Se on suunniteltu nimenomaan määrittämään hinnat myymälöittäin eikä varastoittain.
 
-Hinnoittelumoduuli **ei tue** seuraavia hinnoitteluominaisuuksia:
+Commercen hinnoittelumoduuli **ei tue** seuraavia hinnoitteluominaisuuksia:
 
 - Hintojen määrittämistä toimipaikan tai toimipaikan ja varaston varastodimensioiden mukaan ei tueta. Jos määrität kauppasopimuksille vain toimipaikan dimension, hinnoittelumoduuli ohittaa sivuston ja soveltaa kauppasopimusta kaikkiin sivustoihin. Jos määrität sekä toimipaikan että varaston, toiminta on määrittämätön/testaamaton, koska on odotettavissa, että vähittäismyyjät käyttävät myymälän hintaryhmiä kunkin myymälän/varaston hintojen hallintaan.
 - Määriteperusteista hinnoittelua ei tueta.
 - Toimittajan alennuksen läpivientiä ei tueta.
+- Yleistä valuuttaominaisuutta ei tueta, eli vaikka **Sisällytä yleinen valuutta** olisi otettu käyttöön kauppasopimuksessa, kyseinen kauppasopimus otetaan huomioon vain, kun kyse on kauppasopimuksessa määritetystä valuutasta.
 - Supply Chain Managementin perushinnoittelumoduuli tukee hinnoittelun laskemista, joka perustuu "pyydetty lähetyspäivämäärä"- ja "pyydetty vastaanottopäivämäärä" -kohtaan sekä nykyiseen päivään. Vähittäismyyntihinnoittelu ei kuitenkaan tällä hetkellä tue näitä arvoja. Syynä on se, että B2C-skenaarioiden asiakkaat eivät odota, että pyydetty toimituspäivämäärä vaikuttaisi nimikkeen hintaan. Joissakin tapauksissa vähittäismyyjillä on sekä B2B- että B2C-toimintoja. B2B-toiminnoissa on tavallista muuttaa hintoja toimituspäivämäärien perusteella. Nämä jälleenmyyjät voivat käyttää B2B-liiketoimintaan Supply Chain Managementin hinnoittelua ja vähittäismyyntihinnoittelua B2C-liiketoimintansa osalta. Retail-hinnoittelu tulee voimaan vain, jos sovelluskäyttäjä on lisätty Call Center -käyttäjänä, joten vähittäismyyjät voivat määrittää tietyille käyttäjille, joille sopii Supply Chain Managementin hinnoittelu ja määrittää muutamia, jotka toimivat Retail-hinnoittelulla, eli nämä käyttäjät on lisättävä Call Center -käyttäjiksi. Lisäksi **Käytä kuluvaa päivää hintojen laskemiselle** -ominaisuus kohdassa **Commercen parametrit > hinnoittelu ja alennukset > Muut** -osa on otettava käyttöön. Näin he voivat jatkaa myyntireskontran parametriarvon käyttöä pyydetyn lähetyspäivämäärän tai pyydetyn vastaanottopäivämäärän osalta Supply Chain Managementin hinnoittelussa, mutta vähittäismyyntihinnoittelussa käytetään kuluvan päivän päivää hinnoittelun laskennassa.
 
-Lisäksi **vain** hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
+Lisäksi **vain** Commercen hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 
 - Hinta perustuu tuotedimensioihin seuraavassa järjestyksessä: tarkin varianttihinta, vähiten tarkin varianttihinta ja päätuotteen hinta. Kahta tuotedimensiota (kuten väriä ja kokoa) käyttämällä määritettyä hintaa käytetään ennen hintaa, joka on määritetty käyttämällä vain yhtä tuotedimensiota (kuten kokoa).
 - Hinnoittelua ja alennuksia voidaan ohjata samalla hintaryhmällä.
@@ -236,7 +237,7 @@ Lisäksi **vain** hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 
 Hinta on yksi tärkeimmistä tekijöistä, jotka ohjaavat monien asiakkaiden ostopäätöksiä, ja monet asiakkaat vertailevat hintoja eri sivustoilla ennen kuin ostavat. Vähittäiskauppiaat tarkkailevat kilpailijoitaan huolellisesti ja toteuttavat usein kampanjoita varmistaakseen, että tarjoavat kilpailukykyiset hinnat. Jotta nämä vähittäismyyjät voisivat houkutella asiakkaita, on erittäin tärkeää, että tuotehaku, selaustoiminto, luettelot ja tuotetietosivut näyttävät tarkat hinnat.
 
-Tulevassa Commerce-versiossa **GetActivePrices**-ohjelmointirajapinta (API) palaa hintoihin, joissa on yksinkertaisia alennuksia (esimerkiksi yksirivinen alennus, joka ei riipu muista ostoskorin nimikkeistä). Tällä tavoin näytettävät hinnat ovat lähellä todellista määrää, jonka asiakkaat maksavat nimikkeistä. Tämä ohjelmointirajapinta käsittää kaikki yksinkertaisten alennusten tyypit: kumppanuuteen, uskollisuuteen ja luetteloon perustuvat sekä kanavapohjaiset alennukset. Lisäksi ohjelmointirajapinta antaa käyttöön sovellettavien alennusten nimet ja voimassaolotiedot, jotta jälleenmyyjät voivat antaa hinnan tarkemman kuvauksen ja luoda kiireellisyyden, jos alennuksen voimassaoloaika umpeutuu pian.
+Commercen **GetActivePrices**-ohjelmointirajapinta palauttaa hinnat, joissa on yksinkertaisia alennuksia (esimerkiksi yksirivinen alennus, joka ei riipu muista ostoskorin nimikkeistä). Tällä tavoin näytettävät hinnat ovat lähellä todellista määrää, jonka asiakkaat maksavat nimikkeistä. Tämä ohjelmointirajapinta sisältää kaikki yksinkertaiset alennustyypit: kumppanuuteen, kanta-asiakkuuteen ja luetteloon perustuvat sekä kanavapohjaiset alennukset. Lisäksi ohjelmointirajapinta palauttaa sovellettavien alennusten nimet ja voimassaolotiedot, jotta jälleenmyyjät voivat antaa hinnan tarkemman kuvauksen ja luoda kiireellisyyden, jos alennuksen voimassaoloaika umpeutuu pian.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

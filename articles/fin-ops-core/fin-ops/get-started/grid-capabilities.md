@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775239"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -158,6 +158,13 @@ Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa
  ```this.forceLegacyGrid();```
 
 Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Jos jokin ongelma edellyttää tämän ohjelmointirajapinnan käyttöä, ilmoita siitä Microsoftille.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Sivun pakottaminen käyttämään uutta ruudukkoa sen jälkeen, kun ruudukon käyttöä ei hyväksytty aiemmin
+Jos yksittäinen sivu on jätetty pois uudesta ruudukosta, uusi ruudukko halutaan ehkä myöhemmin ottaa uudelleen käyttöön, kun taustalla olevat ongelmat on ratkaistu. Se tehdään yksinkertaisesti poistamalla `forceLegacyGrid()`-kutsu. Muutos tulee voimaan vasta, kun jokin seuraavista tapahtuu:
+
+- **Ympäristön ottaminen uudelleen käyttöön**: kun ympäristö päivitetään ja otetaan uudelleen käyttöön, ne sivut sisältävä taulukko, jotka eivät ole ottaneet uutta taulukkoa (FormControlReactGridState) käyttöön, tyhjennetään automaattisesti.
+
+- **Taulukon manuaalinen tyhjentäminen**: Kehitysskenaarioissa FormControlReactGridState-taulukon tyhjentämiseen ja AOS:n uudelleenkäynnistämiseen on käytettävä SQL:ää. Tämä toimintojen yhdistelmä nollaa niiden sivujen välimuistiin tallennuksen, jotka eivät ole ottaneet uutta ruudukkoa käyttöön:  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Kehittäjä] Size-to-available-width -sarakkeet
 Jos sovellu kehittäjä määrittää **widthmode**-ominaisuuden arvoksi **SizeToAvailable** uudessa ruudukossa oleville sarakkeille, näillä sarakkeilla on aluksi sama leveys kuin niillä olisi, jos ominaisuuden arvona olisi **SizeToContent**. Ne kuitenkin venyvät käyttämään kaiken ruudukon sisällä olevan leveyden. Jos useiden sarakkeiden ominaisuuden arvoksi on määritetty **SizeToAvailable**, kyseiset sarakkeet jakavat ruudukossa käytettävissä olevan tilan. Jos käyttäjä kuitenkin muuttaa jonkin tällaisen sarakkeen kokoa manuaalisesti, sarake muuttuu staattiseksi. Se pysyy samanlevyisenä eikä enää laajene käyttämään ruudukossa olevaa ylimäärästä leveyttä.  
