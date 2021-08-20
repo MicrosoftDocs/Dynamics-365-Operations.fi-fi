@@ -72,6 +72,8 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.21 (lokakuu 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (kesäkuu 2021)
@@ -252,7 +254,7 @@
                       href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Verolaskenta
                   items:
-                    - name: Verolaskennan esiversio
+                    - name: Verolaskennan yleiskatsaus
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Verolaskennan aloittaminen
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
@@ -1601,6 +1603,8 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Suunnittelun optimoinnin aloittaminen
                   href: master-planning/planning-optimization/get-started.md
+                - name: Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
+                  href: master-planning/planning-optimization/release-process.md
                 - name: Suunnittelun optimoinnin sopivuusanalyysi
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: 'Parametrit, joita ei käytetä suunnittelun optimoinnissa'
@@ -1631,6 +1635,8 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Kattavuuden aikarajat
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Nettotarpeet ja tarvekohdistustiedot suunnittelun optimoinnin avulla
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Suunniteltujen tilausten hyväksyminen
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Vahvista suunnitellut tilaukset
@@ -1709,6 +1715,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: Nettotarpeet ja tarvekohdistustiedot sisäänrakennetun pääsuunnittelun avulla
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: Ennusteet
               items:
                 - name: Kysynnän ja tarjonnan ennusteet
@@ -1967,6 +1975,8 @@
                   href: procurement/request-quotations.md
                 - name: Luo tarjouspyyntö
                   href: procurement/tasks/create-request-quotation.md
+                - name: Sinetöidyt tarjoukset tarjouspyyntöihin
+                  href: procurement/sealed-bidding.md
                 - name: 'Luo ehdotus, joka käyttää tarjouspyyntöä'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Luo tarjouspyyntöjen pisteytystapa
@@ -2281,6 +2291,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Vapauta tuoterakenne
               href: engineering-change-management/release-product-structure.md
+            - name: Muuttujien muodostaminen suunnittelutuotteita varten
+              href: engineering-change-management/engineering-variants.md
             - name: Suunnittelun muutosten hallinnan usein kysytyt kysymykset
               href: engineering-change-management/change-management-faq.md
         - name: Tuotannonhallinta
@@ -2603,6 +2615,8 @@
               href: rebate-management/rebate-management-overview.md
             - name: Ostohyvitysten hallintamoduulin määrittäminen ja konfiguroiminen
               items:
+                - name: Ota järjestelmäsi ostohyvitysten hallintamoduuli käyttöön
+                  href: rebate-management/rebate-management-enable.md
                 - name: Ostohyvitysten hallinnan parametrit
                   href: rebate-management/rebate-management-parameters.md
                 - name: Ostohyvitysten hallintasopimuksen työnkulut
@@ -2619,6 +2633,8 @@
               href: rebate-management/rebate-management-deals.md
             - name: 'Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen'
               href: rebate-management/process-review-post.md
+            - name: Vähennysten hallinta vähennyksen työtilan avulla
+              href: rebate-management/deduction-workbench.md
         - name: Myynti ja markkinointi
           items:
             - name: Myynnin ja markkinoinnin yleiskatsaus
@@ -3057,6 +3073,8 @@
               href: landed-cost/in-transit-processing.md
             - name: Yli-/alitapahtumien käsittely
               href: landed-cost/over-under-transactions.md
+            - name: Hyllytyksen päivitysseuranta
+              href: landed-cost/update-tracking-putaway.md
             - name: Aiheutuneiden kustannusten kyselyt
               href: landed-cost/landed-cost-inquiries.md
             - name: Aiheutuneiden kustannusten raportit
@@ -3117,6 +3135,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Järjestelmäohjattu klusterikeräily
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Myyntitilausten ja siirtotilausten keräilyn ylitys
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: Eri dimensioiden määrittäminen pakkausta ja varastointia varten
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: Erän ja rekisterikilven tiedot
@@ -3509,6 +3529,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Varastonhallinta
               items:
+                - name: 'Et voi vahvistaa lähetystä, koska asiakas on pidossa'
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: 'Et voi vahvistaa lähetystä, koska kuormitusrivien määrä on nolla'
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: 'Kuormitusriviä ei voi päivittää, koska vapautettu määrä on negatiivinen'
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Peruutetut tuotteen vastaanotot eivät päivitä tapahtumien tilaa rekisteröidyksi
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Fyysisen päivitysmäärän desimaalipyöristys on virheellinen

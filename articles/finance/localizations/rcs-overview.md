@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4ee68b691bba7f3314b5278b0bcc26504c1583335914a1e7c645abd5303f02c6
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358119"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7012010"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -49,6 +49,9 @@ Tarkista ja hyväksy **Regulatory Configuration Service** -sivulla palvelun käy
 
 - **Rekisteröityminen**, jos olet palvelun ensimmäinen käyttäjä ja käytät yrityksen sähköpostiosoitetta organisaatiosi palveluympäristön järjestämiseen
 - **kirjaudu sisään**, jos olet aiemmin rekisteröitynyt palveluun ja haluat käyttää organisaatioympäristöäsi
+
+> [!NOTE] 
+> Rekisteröitymisen jälkeen RCS-ympäristöön kannattaa lisätä toinen SysAdmin-käyttäjä. Tämä käyttäjä valmistellaan ympäristön rinnakkaisjärjestelmänvalvojaksi. Tämä tuo vakautta RCS-ympäristön käytölle, sillä SysAdmin-rooli on kyseisen ympäristön käyttäjien hallinta. Käyttäjiä voidaan lisätä valitsemalla **RCS-työtila > Järjestelmän hallinta**.
 
 ## <a name="regional-availability"></a>Paikallinen käytettävyys
 
