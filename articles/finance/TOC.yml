@@ -72,6 +72,8 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.21 (lokakuu 2021)
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (kesäkuu 2021)
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Talouskirjauskansiomallien avaaminen Officessa
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Miksi tätä tapahtumaa ei voi palauttaa?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: Taloushallinnon raportointi
           items:
             - name: Taloushallinnon raportoinnin aloittaminen
@@ -1498,24 +1502,32 @@
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Uuden sähköisen laskutusominaisuuden luominen
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Brasilian sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Egyptin sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Meksikon sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Sähköisen laskutuspalvelun avulla voit tuoda toimittajan laskuja
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Sähköisen laskutuksen määrittäminen
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen laskutuksen usein kysytyt kysymykset
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Verolaskenta
                   items:
-                    - name: Verolaskennan esiversio
+                    - name: Verolaskennan yleiskatsaus
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Verolaskennan aloittaminen
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                    - name: Arvonlisäveron käytettävyys ja arvonlisäveroryhmän määrityslogiikka
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Verotoimintojen tuen määrittäminen
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Veron laskeminen hinnan päälle, kun hinnat sisältävät verot on otettu käyttöön'
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                     - name: Tietokenttien lisääminen verokonfiguraatioihin
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Tietokenttien lisääminen verointegrointiin laajennusten avulla
@@ -1528,6 +1540,10 @@
                       items:
                         - name: Useiden ALV-rekisteröintien raportointi
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Ranskan raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Alankomaiden raportointi
                           items:
                             - name: ALV-ilmoitus
@@ -1544,6 +1560,8 @@
               items:
                 - name: Australia – yleiskatsaus
                   href: localizations/australia.md
+                - name: Australian pankkien pankkitiedostomuodot
+                  href: localizations/apac-aus-bank-file-formats.md
                 - name: Liiketoimintaraportti (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: Raporttiruutujen lisääminen ja liiketoimintaraportin luominen
@@ -1552,6 +1570,8 @@
                   href: localizations/apac-aus-low-value-pool-depreciation.md
                 - name: Liiketoimintaraportin syykoodien määrittäminen
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: Maksuaikojen raportointirakenne
+                  href: localizations/apac-aus-payment-times-report.md
             - name: Itävalta
               items:
                 - name: Itävalta – yleiskatsaus
@@ -1794,7 +1814,7 @@
                       href: localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
             - name: Kanada
               items:
-                - name: GST/HST-Internet-tiedostonsiirto
+                - name: GST-veron/HST-veron Internet-tiedostonsiirto
                   href: localizations/can-gst-hst-internet-file-transfer.md
             - name: Kiina
               items:
@@ -1802,6 +1822,8 @@
                   href: localizations/china.md
                 - name: Finance and Operations – 21Vianet ylläpitää Kiinassa
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: Kiinalaisten tositetyyppien tiliryhmien valitseminen
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: Tuoterakennevertailu
                   href: localizations/apac-chn-bom-comparison.md
                 - name: Tilikartan hierarkia – Kiina
@@ -1866,10 +1888,14 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Raporttien ja asiakirjojen summien esitysmuodon päivittäminen
                   href: localizations/emea-amount-printing-forms.md
-                - name: ALV-ilmoitus
+                - name: VAT-ilmoitus
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: ALV-ilmoitus (Tšekin tasavalta)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Pankkitilien pankkisymbolit
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: Yhteisön sisäinen alv
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: Tilinpäätös
                   href: localizations/emea-cze-hun-year-end.md
             - name: Tanska
@@ -1992,10 +2018,6 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: EU Intrastat -ilmoituksen luominen
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: Ranskan Intrastat
-                      href: localizations/emea-fra-intrastat.md
-                    - name: Italian Intrastat
-                      href: localizations/emea-ita-intrastat.md
                 - name: Varastokirjauskansioiden raportit
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Laskun kirjoittamisen määräajat
@@ -2120,6 +2142,8 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: Vekselit ja velkakirjat
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+                - name: Ranskan Intrastat
+                  href: localizations/emea-fra-intrastat.md
                 - name: NAF-koodit ja siret-numerot
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: Määritä NAF-koodit ja siret-numerot
@@ -2138,6 +2162,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Päivitä asiakkaan maksutapa
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: ALV-ilmoitus
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: DAS-2-raportti
                   href: localizations/emea-fra-das2-report.md
             - name: Saksa
@@ -2162,6 +2188,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: ALV-ilmoituksen antaminen sähköisesti (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Saksalainen Intrastat
+                  href: localizations/emea-deu-intrastat.md
                 - name: Saksan ALV-ilmoitus
                   href: localizations/emea-de-vat-declaration.md
                 - name: Asiakkaiden sähköiset laskut -raportti
@@ -2170,6 +2198,8 @@
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Sähköisten veroilmoitusten määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: Erillisen etiketin tulostaminen myynnistä peräisin oleville hyvityslaskuille
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: Unkari
               items:
                 - name: Unkari – yleiskatsaus
@@ -2616,6 +2646,8 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Pankkitietojen käytettävyyden parannus
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
+                - name: Italian Intrastat
+                  href: localizations/emea-ita-intrastat.md
                 - name: Muut kulut kilogrammalta Intrastat-ilmoituksessa
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Aiesopimukset – laskutuksen tavalliset viejät
@@ -2820,7 +2852,7 @@
                   href: localizations/emea-invoices-packing-slips-numbering.md
                 - name: Luonnonvarojen verotusraportti
                   href: localizations/emea-lva-tax-natural-resources.md
-                - name: ALV-laskelman tiedot
+                - name: ALV-ilmoituksen tiedot
                   href: localizations/emea-lva-vat-statement-details.md
             - name: Liettua
               items:
@@ -2830,12 +2862,14 @@
                   href: localizations/emea-ltu-fixed-asset-repair-statement.md
                 - name: Käyttöomaisuuden varastojen välisen siirron asiakirjan luominen
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: ALV-laskelman tiedot
+                - name: ALV-ilmoituksen tiedot
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: Liettuan i.SAF-raportointi
                   href: localizations/emea-ltu-isaf.md
                 - name: Verotuksen perustarkistustiedosto (SAF-T) – Liettua
                   href: localizations/emea-ltu-saf-t.md
+                - name: Siirtoasiakirjojen määrittäminen tavaroiden siirrolle yrityksen sisällä
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: Malesia
               items:
                 - name: Malesia – yleiskatsaus
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Osto- ja myyntireskontran kurssieron jakaminen
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: Puolan PkWiU-koodien määrittäminen ja käyttäminen
+                  href: localizations/emea-pol-pkwiu-code.md
                 - name: 'ALV-ilmoitus ja rekisterit (JPK_V7M, VDEK)'
-                  href: localizations/emea-pol-vdek.md
-                - name: Valmistaudu JPK-V7M-raportointiin
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: JPK-V7M-raportointi
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: JPK-V7M-raportin yksityiskohtaiset tiedot tietyistä liiketoimintaskenaarioista
-                  href: localizations/emea-pol-vdek-scenarios.md
+                  items:
+                    - name: 'ALV-ilmoitusten ja rekisterien (JPK_V7M, VDEK) -yleiskatsaus'
+                      href: localizations/emea-pol-vdek.md
+                    - name: Valmistaudu JPK-V7M-raportointiin
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: JPK-V7M-raportointi
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: JPK-V7M-raportin yksityiskohtaiset tiedot tietyistä liiketoimintaskenaarioista
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Qatar – yleiskatsaus
@@ -3200,6 +3238,8 @@
                       href: localizations/rus-reporting-deferrals.md
                 - name: Verotuksen kirjanpito
                   items:
+                    - name: Verorekisterien ja verorekisterin kirjauskansion luominen
+                      href: localizations/rus-profit-tax-registers.md
                     - name: Kulu- ja tulokoodit
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Omaisuusverorekisterit
@@ -3216,6 +3256,10 @@
                       href: localizations/rus-bad-debts.md
                     - name: Verovarojen ja verovelvollisuusrekisterien laskeminen
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+                    - name: Tavaroiden siirtoverorekisterit
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: Muut verorekisterit
+                      href: localizations/rus-other-tax-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Saudi-Arabia – yleiskatsaus
@@ -3304,8 +3348,6 @@
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Myynnin ALV-raportti
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: Ostotapahtumien keskimääräinen ALV
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Ennakonpidätys
                   href: localizations/apac-tha-withholding-tax.md
             - name: Yhdistyneet arabiemiirikunnat

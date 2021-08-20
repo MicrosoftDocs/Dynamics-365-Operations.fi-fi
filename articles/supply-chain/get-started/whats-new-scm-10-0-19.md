@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773534"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.19 uudet tai muuttuneet ominaisuudet (kesäkuu 2021)
 
@@ -35,6 +35,7 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja |
 |---|---|---|
+| Varasto&nbsp;ja&nbsp;logistiikka | [Toimittajan lähettäneen pankin tietojen hyväksyminen ja tallentaminen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Toimittajan pankkitilin tietojen ylläpitäminen](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Varasto ja logistiikka | [Yhteyshenkilön tietoyksikön viennin optimointi](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Kun tämä on ominaisuus käytössä, viitattuihin tietoihin tehdyt muutokset eivät aiheuta siihen liittyvien kontaktien sisällyttämistä seuraavaan lisäävään vientiin. Kun tämä on ominaisuus poistettu käytöstä, viitattuihin tietoihin tehdyt muutokset aiheuttavat siihen liittyvien kontaktien sisällyttämistä seuraavaan lisäävään vientiin. |
 | Varasto ja logistiikka | [Varastojen suoritustoimintojen asteittaiset parannukset scale uniteilla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Sanoman käsittelijän sanomat](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Varasto-oikaisu](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Varasto ja logistiikka | [Hakutoiminnot asiakirjan esittely- ja loppulausekentissä Myyntitarjous-sivulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Tämä ominaisuus lisää hakutoiminnon **asiakirjan esittely**- ja **loppulausekentissä** **Myyntitarjous**-sivulle.<br><br>Tämä ominaisuus on oletusarvoisesti käytössä. |

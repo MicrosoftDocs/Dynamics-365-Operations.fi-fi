@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773510"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.20. (elokuu 2021)
 
@@ -47,7 +47,6 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukse
 
 | Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
-| Pääsuunnittelu | Negatiiviset päivät suunnittelun optimoinnissa | Tämän toiminnon avulla Suunnittelun optimointi voi ottaa huomioon viivetoleranssin, joka perustuu kattavuusryhmissä määritettyyn **Negatiiviset päivät** -parametriin. |
 | Pääsuunnittelu | Oikaistun kysynnän ennusteen rinnakkainen valtuuttaminen | Tämä ominaisuus sallii oikaistun tarve-ennusteen rinnakkaisen valtuuttamisen **oikaistun kysynnän ennuste** -sivulta. Tämän ominaisuuden tarkoituksena on parantaa suorituskykyä, kun suuri määrä ennusteita on valtuutettu. Valtuutettaessa käyttäjä voi määrittää **säikeiden määrän** valtuuttamisen valintaikkunassa. |
 | Pääsuunnittelu | (Esiversio) Suunniteltujen bulkki- ja pakkauserätilausten eräkelpoinen vahvistaminen ja konsolidointi | Tämän ominaisuuden avulla voit käyttää erätöitä bulkki- ja pakkaustilausten vahvistamiseen ja konsolidointiin. |
 | Tuotannonhallinta | Kopioi yleiset reitit | Tämä ominaisuus parantaa reitityskopioita, jotta käyttäjät voivat kopioida reitityksiä, jotka eivät ole nimikekohtaisia. Sen avulla järjestelmä voi päivittää kaikki merkitykselliset tiedot (kuten toimipaikka, reititysryhmä, resurssivaatimukset ja eri ajat) sen jälkeen, kun kopiointireititystoimintoa on käytetty korvaamaan nimikkeeseen vielä käyttämättä olevan reitityksen. |
