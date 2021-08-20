@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 description: Tässä ohjeaiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 Finance -ratkaisussa.
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767776"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 
@@ -82,20 +82,34 @@ Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot void
 
 ![ER-konfiguraation elinkaari.](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Tietojen pysyvyyden huomioon ottaminen
+## <a name="data-persistence-consideration"></a>Tietojen pysyvyyden huomioon ottaminen
 
 Voit [tuoda](tasks/er-import-configuration-lifecycle-services.md) eri [versioita](general-electronic-reporting.md#component-versioning) ER-[konfiguraatiosta](general-electronic-reporting.md#Configuration) yksitellen Finance-instanssiisi. Kun tuot uuden ER-konfiguraation version, järjestelmä ohjaa tämän konfiguraation luonnosversion sisältöä:
 
-   - Kun tuotu versio on pienempi kuin nykyisen taloustietoinstanssin tämän konfiguraation ylin versio, tämän konfiguraation luonnosversion sisältö pysyy muuttumattomana.
-   - Kun tuotu versio on suurempi kuin mikään muu tämän konfiguroinnin versio nykyisessä taloustietoinstanssissa, tuodun version sisältö kopioidaan tämän konfiguraation luonnosversioon, jotta voit jatkaa viimeisen valmiin version muokkausta.
+- Kun tuotu versio on pienempi kuin nykyisen taloustietoinstanssin tämän konfiguraation ylin versio, tämän konfiguraation luonnosversion sisältö pysyy muuttumattomana.
+- Kun tuotu versio on suurempi kuin mikään muu tämän konfiguroinnin versio nykyisessä taloustietoinstanssissa, tuodun version sisältö kopioidaan tämän konfiguraation luonnosversioon, jotta voit jatkaa viimeisen valmiin version muokkausta.
 
 Jos tämän konfiguraation [omistaa](general-electronic-reporting.md#Provider) tällä hetkellä aktivoitu konfiguraatiopalvelu, konfiguraation luonnosversio näkyy konfiguroinnit-sivun **Versiot**-pikavälilehdillä **Määritykset**-sivulla (**Organisaation hallinta** > **Sähköinen raportointi** > **Määritykset**). Voit valita konfiguraation luonnosversion ja [muokata](er-quick-start2-customize-report.md#ConfigureDerivedFormat) sen sisältöä käyttämällä ER-suunnittelutoimintoa. Kun olet muokannut ER-kokoonpanon luonnosversiota, sen sisältö ei enää vastaa tämän kokoonpanon korkeimman version sisältöä nykyisessä Finance-ilmentymässä. Jos haluat estää muutosten menettämisen, järjestelmä näyttää virheen, jota tuonti ei voi jatkua, koska tämän konfiguraation versio on suurempi kuin nykyisen taloustietoinstanssin tämän konfiguraation korkein versio. Jos esimerkiksi muodon määritys on **X**, **muodon X-versio ei ole valmis** -virhe ilmestyy näkyviin.
 
 Voit peruuttaa luonnosversiossa tekemäsi muutokset valitsemalla ER-konfiguraation suurimman valmiin tai jaetun version **Versiot**-pikavälilehdissä ja valitsemalla sitten **Hae tämä versio**  -vaihtoehdon. Valitun version sisältö kopioidaan luonnosversioon.
 
+## <a name="applicability-consideration"></a>Soveltuvuudessa huomioonotettavaa
+
+Kun ER-määrityksen uusi versio suunnitellaan, sen [riippuvuus](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) muihin ohjelmiston osiin voidaan määrittää. Tämä vaihe on edellytys tämän määrityksen version sähköisen raportoinnin säilöstä tai ulkoisesta XML-tiedostosta latauksen hallinnan ja muiden tämän version käyttötarkoitusten edellytys. Kun ER-määrityksen uusi versio yritetään tuoda, järjestelmä hallitsee version tuontia määritettyjen edellytysten avulla.
+
+Joissakin tapauksissa saatetaan edellyttää, että järjestelmä ohittaa määritetyn edellytykset ER-määritysten uusia versioita tuotaessa. Järjestelmä saadaan ohittamaan edellytykset tuonnin aikana seuraavasti:
+
+1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Konfiguraatiot**.
+2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
+3. Määritä **Ohita tuotepäivitykset ja version edellytystarkistus tuonnin aikana** -asetukseksi **Kyllä**.
+
+    > [!NOTE]
+    > Tämä parametri on käyttäjä- ja yrityskohtainen.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 
+[Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

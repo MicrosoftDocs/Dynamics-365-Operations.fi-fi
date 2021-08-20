@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen määrittämisestä.
 author: gionoder
-ms.date: 05/19/2021
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
-ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
+ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6075140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757971"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 
@@ -46,21 +46,13 @@ Toiminnot tukevat myös skenaarioita, joissa tiedostomuotomääritysten säänn�
 
 Toiminnot tukevat sanomien vaihtoa ulkoisten Internet-palvelujen kanssa, joita joko veroviranomainen tai jokin valtuutettu osapuoli isännöi, jotta voidaan pyytää valtuutusta tai hyväksyntäleimaa tai sähköiseen laskuun.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Sähköisten laskutusominaisuuksien käytettävyys
+## <a name="availability-of-electronic-invoicing-features"></a>Sähköisten laskutusominaisuuksien käytettävyys
 
 Sähköisten laskutusominaisuuksien käytettävyys määräytyy maan tai alueen mukaan. Vaikka jotkin toiminnot ovat yleisesti saatavilla, jotkin ovat esiversio-ominaisuuksia.
 
-#### <a name="generally-available-features"></a>Yleisesti käytettävissä olevat toiminnot
+### <a name="generally-available-features"></a>Yleisesti käytettävissä olevat toiminnot
 
 Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat yleisesti saatavilla.
-
-| Maa tai alue | Toiminnon nimi                         | Yritysasiakirja |
-|----------------|--------------------------------------|-------------------|
-| Egypti          | Egyptin sähköinen lasku (EG) | Myyntilaskut ja projektilaskut |
-
-#### <a name="preview-features"></a>Esiversio-ominaisuudet
-
-Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat esiversiona.
 
 | Maa tai alue | Toiminnon nimi                         | Yritysasiakirja |
 |----------------|--------------------------------------|-------------------|
@@ -68,29 +60,39 @@ Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat es
 | Belgia        | Belgian sähköinen lasku (BE)      | Myyntilaskut ja projektilaskut |
 | Brasilia         | Brasilian NF-e (BR)                  | Veroasiakirjamalli 55, oikaisukirjeet, peruutukset ja hylkäämiset |
 | Brasilia         | Brasilian NFS-e ABRASF Curitiba (BR) | Palvelun veroasiakirjat |
+| Brasilia         | Brasilian NF-e-tuonti sähköpostista (BR) | Mallin 55 veroasiakirja |
 | Tanska        | Tanskan sähköinen lasku (DK)       | Myyntilaskut ja projektilaskut |
+| Egypti          | Egyptin sähköinen lasku (EG)     | Myyntilaskut ja projektilaskut |
 | Viro        | Viron sähköinen lasku (EE)     | Myyntilaskut ja projektilaskut |
 | Suomi        | Suomen sähköinen lasku (FI)      | Myyntilaskut ja projektilaskut |
 | Ranska         | Ranskan sähköinen lasku (FR)       | Myyntilaskut ja projektilaskut |
 | Saksa        | Saksan sähköinen lasku (DE)       | Myyntilaskut ja projektilaskut |
 | Italia          | FatturaPA (IT)                       | Myyntilaskut ja projektilaskut |
-| Meksiko         | Meksikon CFDI (MX)                    | Myyntilaskut, pakkausluettelot, varastosiirrot, maksutäydennykset ja peruutukset |
 | Alankomaat    | Alankomaiden sähköinen lasku (NL)        | Myyntilaskut ja projektilaskut |
 | Norja         | Norjan sähköinen lasku (NO)    | Myyntilaskut ja projektilaskut |
 | Espanja          | Espanjan sähköinen lasku (ES)      | Myyntilaskut ja projektilaskut |
 | Eurooppa         | Sähköinen PEPPOL-lasku            | PEPPOL-myyntilaskut ja -projektilaskut |
+| Eurooppa         | Toimittajan PEPPOL-lasku                | Toimittajan laskujen PEPPOL-tuonti |
+
+### <a name="preview-features"></a>Esiversio-ominaisuudet
+
+Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat esiversiona.
+
+| Maa tai alue | Toiminnon nimi                         | Yritysasiakirja |
+|----------------|--------------------------------------|-------------------|
+| Meksiko         | Meksikon CFDI (MX)                    | Myyntilaskut, pakkausluettelot, varastosiirrot, maksutäydennykset ja peruutukset |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Sähköisen laskutuksen ominaisuuksien konfiguroitavissa olevat komponentit
 
 Sähköisen laskutuksen ominaisuudet koostuvat seuraavista konfiguroitavissa olevien komponenttien ryhmistä:
 
-- **Muodot** – Muotojen avulla voit määrittää, mitä sähköisen laskutuksen on luotava, kun sähköisestä asiakirjasta tulee sähköinen lasku. Muotoja ovat sähköisen laskun muotomääritys sekä tiedostojen ja sanomien muoto, joita käytetään pyyntöjen lähettämiseen ja vastausten vastaanottamiseen, kun ulkoisen Internet-palvelun kanssa tarvitaan viestintää.
-- **Toiminnot** – Toimintojen avulla voit määrittää, miten sähköinen laskutus luo sähköisen tiedoston muuntamisen, jonka Finance ja Supply Chain Management ovat lähettäneet sähköiseksi laskuksi.
-- **Käytettävyyssäännöt** – Käytettävyyssääntöjen avulla voit konfiguroida kontekstin, jonka sähköisen laskutuksen on otettava huomioon käsiteltäessä sähköisen laskutuksen ominaisuutta.
-- **Muuttujat** – Muuttujien avulla voit määrittää konfiguraatiologiikan rakenteen tuen. Muuttujia voidaan käyttää arvojen syötteenä tietyn toiminnon suorittamiseen. Vaihtoehtoisesti ne voivat toimia arvojen vaihdossa Financen ja Supply Chain Managementin sekä sähköisen laskutuksen välillä.
-- **Sähköisen tiedostomallin määritys** – Sähköisen asiakirjamallin määrityksen avulla voit konfiguroida ER-mallimäärityksen. Mallimääritys määrittää abstraktin laskun tietomäärityksen, joka integroidaan sähköiseen laskutukseen sähköisiä tiedostoja lähetettäessä.
-- **Laskun kontekstimalli** – Laskun kontekstimallin avulla voit konfiguroida ER-laskun kontekstimallin ja määrittää sähköisen laskutusominaisuuden kontekstin.
-- **Vastaustyypit** – Vastaustyyppien avulla voit konfiguroida, mitä sähköisen laskutuksen on päivitettävä Financessa ja Supply Chain Managementissa sähköisen laskun käsittelyn tuloksena.
+- **Muodot**: Muotojen avulla voidaan määrittää, mitä sähköisen laskutuksen on luotava, kun sähköisestä asiakirjasta tulee sähköinen lasku. Muotoja ovat sähköisen laskun muotomääritys sekä tiedostojen ja sanomien muoto, joita käytetään pyyntöjen lähettämiseen ja vastausten vastaanottamiseen, kun ulkoisen Internet-palvelun kanssa tarvitaan viestintää.
+- **Toiminnot**: toimintojen avulla voidaan määrittää, miten sähköinen laskutus luo sähköisen tiedoston muuntamisen, jonka Finance ja Supply Chain Management ovat lähettäneet sähköiseksi laskuksi.
+- **Käytettävyyssäännöt**: käytettävyyssääntöjen avulla voidaan määrittää konteksti, jonka sähköisen laskutuksen on otettava huomioon käsiteltäessä sähköisen laskutuksen ominaisuutta.
+- **Muuttujat**: Muuttujien avulla voidaan määrittää määrityslogiikan rakenteen tuen. Muuttujia voidaan käyttää arvojen syötteenä tietyn toiminnon suorittamiseen. Vaihtoehtoisesti ne voivat toimia arvojen vaihdossa Financen ja Supply Chain Managementin sekä sähköisen laskutuksen välillä.
+- **Sähköisen tiedostomallin määritys**: sähköisen asiakirjamallin määrityksen avulla voidaan määrittää ER-mallimääritys. Mallimääritys määrittää abstraktin laskun tietomäärityksen, joka integroidaan sähköiseen laskutukseen sähköisiä tiedostoja lähetettäessä.
+- **Laskun kontekstimalli**: laskun kontekstimallin avulla voidaan määrittää ER-laskun kontekstimalli ja määrittää sähköisen laskutusominaisuuden konteksti.
+- **Vastaustyypit**: vastaustyyppien avulla voidaan määrittää, mitä sähköisen laskutuksen on päivitettävä Financessa ja Supply Chain Managementissa sähköisen laskun käsittelyn tuloksena.
 
 ### <a name="formats"></a>Muodot
 
@@ -204,10 +206,10 @@ Seuraavassa taulukossa on lueteltu käytettävissä olevat toiminnnot sekä tied
 | Toimenpide                                        | kuvaus                                                                  | Käytettävyys         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Muunna asiakirja                            | Muunna tiedosto suorittamalla sähköinen raportointimuoto.                   | Yleisesti saatavilla  |
-| Allekirjoita XML-tiedosto                             | Allekirjoita XML-tiedostoja digitaalisella allekirjoituksella.                                   | Esiversiossa           |
-| Allekirjoita JSON-asiakirja Egyptin veroviranomaiselle | Allekirjoita JSON-asiakirjoja Egyptin veroviranomaiselle digitaalisella allekirjoituksella.       | Yleisesti saatavilla  |
+| Allekirjoita XML-tiedosto                             | Allekirjoita XML-tiedostoja digitaalisella allekirjoituksella.                                   | Yleisesti saatavilla  |
+| Allekirjoita json-asiakirja Egyptin veroviranomaista varten | Allekirjoita JSON-asiakirjoja Egyptin veroviranomaiselle digitaalisella allekirjoituksella.       | Yleisesti saatavilla  |
 | Integroi Egyptin ETA-palvelun kanssa           | Viestintä Egyptin veroviranomaisen kanssa.                                     | Yleisesti saatavilla  |
-| Brasilian SEFAZ-palvelun kutsuminen                  | Integroi Brasilian SEFAZ-palvelun kanssa veroasiakirjojen lähetystä varten.       | Esiversiossa           |
+| Brasilian SEFAZ-palvelun kutsuminen                  | Integroi Brasilian SEFAZ-palvelun kanssa veroasiakirjojen lähetystä varten.       | Yleisesti saatavilla  |
 | Kutsu Meksikon PAC-palvelua                      | Integroi Meksikon PAC-palvelun kanssa CFDI-lähetystä varten.                      | Esiversiossa           |
 | Käsittele vastaus                              | Analysoi verkkopalvelukutsusta saatu vastaus.                     | Yleisesti saatavilla  |
 | Käytä MS Power Automatea                         | Integroi Microsoft Power Automatella luodun työnkulun kanssa.                       | Esiversiossa           |
