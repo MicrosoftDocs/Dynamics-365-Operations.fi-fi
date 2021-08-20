@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740836"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
@@ -52,9 +52,9 @@ Human Resources -tietokannan kopioinnin yhteydessä tapahtuu seuraavaa:
 
 - Microsoft Azure Blob -tallennustilassa olevia asiakirjoja ei kopioida ympäristöstä toiseen. Tämän vuoksi liitettyjä asiakirjoja ja malleja ei kopioida, ja ne jäävät lähdeympäristöön.
 
-- Mitkään käyttäjät, paitsi järjestelmänvalvojakäyttäjä ja muut sisäisen palvelun käyttäjätilit eivät ole käytettävissä. Järjestelmänvalvojakäyttäjä voi poistaa tietoja tai piilottaa niitä näkyvistä, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
+- Mitkään käyttäjät, paitsi käyttäjät, joilla on järjestelmänvalvojan käyttöoikeusrooli ja muu sisäisen palvelun käyttäjätili, eivät ole käytettävissä. Järjestelmänvalvojakäyttäjä voi poistaa tietoja tai piilottaa niitä näkyvistä, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
 
-- Järjestelmänvalvojakäyttäjän on suoritettava vaadittavat muutokset määrityksiin, kuten yhdistettävä integroinnin päätepisteet uudelleen tiettyihin palveluihin tai URL-osoitteisiin.
+- Käyttäjän, jolla on järjestelmänvalvojan käyttöoikeusrooli, on suoritettava vaadittavat muutokset määrityksiin, kuten yhdistettävä integroinnin päätepisteet uudelleen tiettyihin palveluihin tai URL-osoitteisiin.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources -tietokannan kopiointi
 
@@ -111,7 +111,7 @@ Osaa näistä elementeistä ei kopioida, koska ne ovat ympäristökohtaisia. Esi
 
 Myös seuraavat tilat muuttuvat, kun esiintymä kopioidaan:
 
-- Kaikkien käyttäjien tilaksi järjestelmänvalvojaa lukuun ottamatta asetetaan **Pois käytöstä**.
+- Kaikille muille käyttäjille paitsi käyttäjille, joilla on järjestelmänvalvojan käyttöoikeusrooli, määritetään asetukseksi **Ei käytössä**.
 
 - Kaikki erätyöt joitakin järjestelmätöitä lukuun ottamatta asetetaan tilaan **Pidätä**.
 

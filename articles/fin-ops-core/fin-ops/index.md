@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc81c7eed4724f9f68b592b23818781e1b047ebf
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 0746b420d770896ee6010c0e5f5fe17d2e6e52bf0b5d10bf831df7901060c983
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6340298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739428"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusdokumentaatio
 
@@ -89,7 +89,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Toimitusketjun hallinta</a></h3>
+<h3><a href="../../supply-chain/index.md">Supply chain management</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Kustannushintojen hallinta</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Varastonhallinta</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Pääsuunnittelu</a></p>
