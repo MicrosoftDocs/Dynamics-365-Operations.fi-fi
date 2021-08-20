@@ -2,7 +2,7 @@
 title: Taloushallinnon raportoinnin yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia.
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748207"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial reportingin aloittaminen 
 
@@ -47,10 +47,10 @@ Yrityksen talousraporttien luontia ja muodostamista varten kyseiselle yrityksen 
 -   Tilikartta
 -   Valuutta
 -   Tapahtuman kirjaaminen vähintään yhdelle tilille
--   Päätili näkyy valitussa sarakkeessa kohdassa **Kirjanpito > Kirjanpidon asetukset > Financial Reportingin asetukset**
+-   Päätili näkyy **Taloushallinnon raportoinnin asetukset** -sivun **Valitut**-sarakkeessa (**Kirjanpito > Kirjanpidon asetukset > Taloushallinnon raportoinnin asetukset**)
 
-## <a name="granting-security-access-to-financial-reporting"></a>Financial Reporting -käyttöoikeuksien myöntäminen
-Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöoikeusroolin kautta, voivat käyttää talousraportointitoimintoja. Seuraavissa osissa käsitellään nämä oikeudet ja tehtävät sekä niihin liitetyt roolit.
+## <a name="granting-security-access-to-financial-reporting"></a>Taloushallinnon raportoinnin käyttöoikeuksien myöntäminen
+Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöoikeusroolin kautta, voivat käyttää taloushallinnon raportoinnin toimintoja. Seuraavissa osissa käsitellään nämä oikeudet ja tehtävät sekä niihin liitetyt roolit.
 
 ### <a name="duties"></a>Velvollisuudet
 
@@ -79,7 +79,7 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 | Luo raportit            | Luo raportit            | Toimitusjohtaja, Talousjohtaja, Kirjanpitäjä                                                            |
 | Näytä raportit                | Arvioi taloudellista suorituskykyä          | Ei määritetty                                                                   |
 
-Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla käyttäjän käytettävissä muutamassa minuutissa. 
+Kun käyttäjä on lisätty tai rooli on muuttunut, taloushallinnon raporttien pitäisi olla käyttäjän käytettävissä muutamassa minuutissa. 
 
 > [!NOTE]
 > Järjestelmänvalvojan rooli lisätään kaikkiin rooleihin taloudellisessa raportoinnissa.
@@ -160,15 +160,52 @@ Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
 Ongelma 2: Käyttäjälle ei ole määritetty Financial Reportingin käyttöön tarvittavia oikeuksia. 
 
 * Voit tarkistaa, onko käyttäjällä oikeuksia valitsemalla **Kyllä** seuraavan virheen yhteydessä: Yhteyden muodostaminen Financial Reporting -palvelimeen ei onnistu. Valitse Kyllä, jos haluat jatkaa, ja määritä toinen palvelimen osoite. Valitse sitten **Testaa yhteys**. Jos oikeuksia ei ole, seuraava sanoma avautuu: Yhteyden muodostaminen epäonnistui. Käyttäjällä ei ole palvelinyhteyttä varten tarvittavia käyttöoikeuksia. Ota yhteyttä järjestelmänvalvojaan.
-* Tarvittavien oikeuksien luettelo on kohdassa [Financial Reporting -käyttöoikeuksien myöntäminen](#granting-security-access-to-financial-reporting). Financial Reportingin suojaus perustuu näihin oikeuksiin. Käyttö ei ole mahdollista ellei näitä oikeuksia (tai muuta nämä oikeudet sisältävää käyttöoikeusroolia) ole määritetty. 
+* Tarvittavien oikeuksien luettelo on kohdassa [Taloushallinnon raportoinnin käyttöoikeuksien myöntäminen](#granting-security-access-to-financial-reporting). Taloushallinnon raportoinnin suojaus perustuu näihin oikeuksiin. Käyttö ei ole mahdollista ellei näitä oikeuksia (tai muuta nämä oikeudet sisältävää käyttöoikeusroolia) ole määritetty. 
 * **Yrityskäyttäjäpalvelu yritykseen** -integrointitehtävä (joka vastaa käyttäjäintegraatiota ja tiedetään sellaiseksi) suoritetaan 5 minuutin välein. Oikeusmuutosten voimaantulo Financial Reportingissa voi kestää 10 minuuttia. 
   Jos toinen käyttäjä voi avata Report Designerin, valitse ensin **Työkalut** ja sitten **Integroinnin tila**. Varmista, että integrointimääritys Yrityksen käyttäjäpalvelu yritykseen on suoritettu, koska sinulle on määritetty oikeus käyttää Financial Reportingia. 
 * On mahdollista, että jokin muu virhe on estänyt **Dynamics-käyttäjästä Financial Reporting -käyttäjään integroinnin** valmistumisen. On myös mahdollista, että datamart-nollaus on käynnistetty muttei vielä päättynyt tai että tapahtui toinen järjestelmävirhe. Yritä suorittaa prosessi uudelleen myöhemmin. Jos ongelma jatkuu, ota yhteys järjestelmänvalvojaan.
 
-Ongelma 3: ClickOnce Report Designerin kirjautumissivulta päästään etenemään mutta kirjautuminen Report Designeriin ei onnistu. 
+Ongelma 3: **ClickOnce Report Designerin** kirjautumissivulta päästään etenemään mutta kirjautuminen Report Designeriin ei onnistu. 
 
-* Paikallisessa tietokoneessa olevan ajan kirjautumistietoja annettaessa on oltava viiden minuutin sisällä Financial Reporting -palvelimen ajasta. Jos ero on yli viisi minuuttia, järjestelmä ei salli kirjautumista. 
-* Tässä tapauksessa kannattaa ottaa käyttöön Windows-asetus, joka määrittää tietokoneen ajan automattisesti. 
+* Paikallisessa tietokoneessa olevan ajan on järjestelmään kirjauduttaessa oltava viiden minuutin sisällä taloushallinnon raportointipalvelimen ajasta. Jos ero on yli viisi minuuttia, järjestelmä ei salli kirjautumista. 
+* Jos tietokoneessa oleva aika poikkeaa taloushallinnon raportointipalvelimen ajasta, tietokoneen ajan automaattisesti määrittävä Windows-asetus kannattaa ottaa käyttöön. 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>Report Designerin ongelmien vianmääritys tapahtumien katseluohjelmassa
+
+Tapahtumien katseluohjelmassa voi analysoida joitakin taloushallinnon raportoinnin käyttöön liittyviä ongelmia. 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Mitä tapahtuu, kun taloushallinnon raportoinnissa on yhteysongelmia? 
+
+Seuraavien vaiheiden ansiosta yhteydenotto Microsoftin tukeen tehostuu ja ongelman ratkaiseminen nopeutuu. 
+ 
+Seuraavat ohjeet selittävät, miten tapahtuvien katseluohjelman sanomat otetaan käyttöön taloushallinnon raportoinnissa. Tapahtumien katseluohjelman luomat lokit auttavat teknikoita määrittämään yhteysongelman syyn nopeasti. Lähetä näiden lokien kopiot yhdessä palvelupyynnön kanssa, kun otat yhteyden tukeen.
+
+> 1.    Kopioi RegisterETW.zip-tiedosto asiakasohjelman työasemaan (ensisijaisesti pöytäkoneeseen) ja pura [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+
+> 2.    Varmista, että Windowsin tapahtumien katseluohjelma on suljettu.
+
+> 3.    Avaa järjestelmänvalvojan PowerShell-komentorivi ja siirry hakemistoon, jossa RegisterETW.ps1 sijaitsee.
+
+> 4.    Suorita seuraava komento: .\RegisterETW.ps1
+   
+   Onnistunut PowerShell-tuloste vahvistetaan sanomalla **RegisterETW-komentosarja valmis**.
+Avaa tapahtumien katseluohjelma uudelleen, jolloin seuraavat lokit ovat kohdassa **Microsoft > Dynamics**: * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Toisinna ongelma Report Designerissa.
+   
+> 6. Vie MR-Logger-tapahtumat tapahtumien katseluohjelmassa.
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Taloushallinnon raportoinnin yhdistämisongelmien vianmääritys
+
+Ongelma: vastaanotettiin virhe, jonka mukaan taloushallinnon raportointipalvelimeen ei voi muodostaa yhteyttä.
+
+* Määritä, esiintyykö ongelma Chrome- ja Edge-selaimissa.
+* Jos ongelma esiintyy vain yhdessä selaimessa, kyse voi olla ClickOnce-ongelmassa. 
+* Kun yhteysvirhesanoma annetaan, testaa yhteyttä valitsemalla **Testi** ja katso, mikä sanoma avautuu. 
+* Ongelman syy voi olla se, että toisella käyttäjällä ei ole taloushallinnon raportoinnin käyttöoikeutta. Jos käyttäjällä ei ole käyttöoikeutta, avautuva sanoma ilmoittaa, ettei heillä ole käyttöoikeutta.
+* Jos ongelma esiintyy useissa selaimissa, varmista, että työaseman kellon määrityksenä on Automaattinen.
+* Tee yhteistyötä käyttäjän kanssa, jolla on suojauksenvalvojan oikeudet Dynamics 365 Financessa ja järjestelmänvalvojan oikeudet verkkotoimialueella, työasemaan kirjautumisessa. Näin voidaan tarkistaa, voidaanko yhteys muodostaa. Jos yhteydenmuodostus onnistuu, ongelma voi liittyä verkko-oikeuksiin.
+* Poista palomuuri tilapäisesti käytöstä työasemassa. Jos yhteys voidaan nyt muodostaa Report Designeriin, ongelma liittyy palomuuriin. Ratkaise ongelma yhteistyössä organisaation IT-osaston kanssa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Näytä raportit](view-financial-reports.md)
