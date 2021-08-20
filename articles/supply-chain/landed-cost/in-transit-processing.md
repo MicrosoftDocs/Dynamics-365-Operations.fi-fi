@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744795"
 ---
 # <a name="goods-in-transit-processing"></a>Kuljetettavien tuotteiden käsittely
 
@@ -104,6 +104,7 @@ Voit vastaanottaa tavaroita myös luomalla saapumisen kirjauskansion. Voit luoda
 1. Avaa merikuljetus, kontti tai pakkaus.
 1. Valitse **Hallinta**-välilehden **Toiminnot**-ryhmän toimintoruudussa **Luo saapumisten kirjauskansio**.
 1. Aseta **Luo saapumisten kirjauskansio** -valintaikkunassa seuraavat arvot:
+
     - **Alusta määrä** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat määrittää määrän kuljetusmäärästä. Jos tämän asetuksen arvoksi on määritetty *Ei*, kuljetettavien tuotteiden riveiltä ei aseteta oletusmäärää.
     - **Luo kuljetettavista tuotteista** - Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat ottaa määrät valituilta kuljetettavien tuotteiden riveiltä valittua merikuljetusta, konttia tai pakkausta varten.
     - **Luo tilausriveiltä** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat määrittää saapumisen kirjauskansion oletusmäärän ostotilausriveiltä. Saapumisen kirjauskansion oletusmäärä voidaan määrittää tällä tavalla vain, jos ostotilausrivin määrä vastaa kuljetettavien tuotteiden tilauksen määrää.
@@ -140,4 +141,21 @@ Aiheutunut kustannus lisää uuden työtilaustyypin, jonka nimi on *Kuljetettava
 
 ### <a name="work-templates"></a>Työmallit
 
+Tässä osassa kuvataan toimintoja, joita **Aiheutuneet kustannukset** -moduuli lisää työmalleihin.
+
+#### <a name="goods-in-transit-work-order-type"></a>Kuljetettavan työtilauksen tyyppi
+
 Aiheutunut kustannus lisää uuden työtilaustyypin, jonka nimi on *Kuljetettavat tavarat*, **Työmallit**-sivulle. Tämä työtilaustyyppi tulee konfiguroida samalla tavalla kuin [ostotilauksen työmallit](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Työn otsikoiden katkaisut
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Työmallit, joissa on työtilaustyyppinä *Kuljetettavat tavarat*, voidaan konfiguroida jakamaan työotsikot. Seuraa **Työmallit**-sivulla jotakin näistä vaiheista:
+
+- Määritä mallin **Yleiset**-välilehdessä työotsikon enimmäisarvot. Enimmäismäärät toimivat samalla tavalla kuin ostotilausten työmallit. (Lisätietoja on kohdassa [ostotilauksen työmallit](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- Määritä **Työn otsikoiden katkaisut** -painikkeella, milloin järjestelmän on luotava uudet työotsikot, perustuen kenttiin, joita käytetään lajitteluun. Kullekin konttinumerolle esimerkiksi luodaan työotsikko valitsemalla toimintoruudussa **Muokkaa kyselyä** ja lisäämällä sitten **Konttinumero**-kenttä kyselyeditorin **Lajittelu**-välilehteen, **Lajittelu**-välilehteen lisätyt kentät ovat valittavissa *ryhmittelykenttinä*. Määritä ryhmittelykenttä valitsemalla toimintoruudussa **Työotsikon katkaisut** ja valitse sitten jokaiselle ryhmittelykenttänä käytettävälle kentälle valintaruutu **Ryhmittele tämän kentän mukaan** -sarakkeessa.
+
+Lasketut kustannukset [luovat ylitapahtuman](over-under-transactions.md), jos rekisteröity määrä ylittää alkuperäisen tilauksen määrän. Kun työotsikko on valmis, järjestelmä päivittää päätilausmäärän varastotapahtumien tilan. Ensin kuitenkin ylitapahtumaan linkitetty määrä päivitetään sen jälkeen, kun pääoma on ostettu kokonaan.
+
+Jos peruutat jo rekisteröidyn ylitapahtuman työotsikon, ylitapahtumasta vähennetään ensin peruutettu määrä. Kun ylitapahtuman määräksi vähennetään 0 (nolla), tietue poistetaan ja kaikki lisämäärät poistetaan päätilausmäärää vastaan.

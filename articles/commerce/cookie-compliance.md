@@ -2,7 +2,7 @@
 title: Evästeen yhteensopivuus
 description: Tässä ohjeaiheessa käsitellään evästeiden yhteensopivuuden ja Microsoft Dynamics 365 Commercen oletuskäytäntöjen huomioitavia seikkoja.
 author: BrianShook
-ms.date: 07/01/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747694"
 ---
 # <a name="cookie-compliance"></a>Evästeen yhteensopivuus
 
@@ -54,6 +54,10 @@ Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce
 | \_msdyn365___muid_                            | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään käyttäjätunnuksena kokeilutarkoituksiin. | 1 vuosi |
 | \_msdyn365___exp_                             | Käytetään, jos kokeilu on aktivoitu ympäristölle. Käytetään suorituskyvyn kuormituksen tasaamisen mittarina.         | 1 tunti |
 | d365mkt                                       | Käytetään, jos sijaintiin perustuva tunnistus käyttäjän IP-osoitteen seuraamiseksi kauppojen sijaintiehdotuksille on otettu käyttöön Commercen-sivuston luontiohjelman kohdassa **Sivustoasetukset \> Yleiset \> Ota sijaintiin perustuva kaupan tunnistus käyttöön**.      | 1 tunti |
+| \_msdyn365___tuid_                           | Käytetään vain, jos ympäristöön aktivoitu kokeilu luo käyttäjätunnuksena toimivan GUID-tunnuksen. Arvo muuttuu, jos käyttäjän kirjautumisen tila muuttuu.      | 1 vuosi |
+| \_msdyn365___aud_0                          | Tallentaa kohdennuksen käyttämät segmenttiarvot, ja sitä käytetään vain, jos kohdennus on määritetty sivuston käyttäjän pyytämällä sivulla tai pyytämässä katkelmassa. Eväste sijoitetaan vain silloin, kun segmentin arvo tulee kolmannen osapuolen segmentointipalvelusta.      | 7 päivää |
+| \_msdyn365___aud_1                           | Tallentaa kohdennuksen käyttämät segmenttiarvot, ja sitä käytetään vain, jos kohdennus on määritetty sivuston käyttäjän pyytämällä sivulla tai pyytämässä katkelmassa. Eväste sijoitetaan vain silloin, kun segmentin arvo tulee kolmannen osapuolen segmentointipalvelusta.      | 7 päivää |
+| \_msdyn365___aud_2                           | Tallentaa kohdennuksen käyttämät segmenttiarvot, ja sitä käytetään vain, jos kohdennus on määritetty sivuston käyttäjän pyytämällä sivulla tai pyytämässä katkelmassa. Eväste sijoitetaan vain silloin, kun segmentin arvo tulee kolmannen osapuolen segmentointipalvelusta.      | 7 päivää |
 
 Jos sivuston käyttäjä valitsee sivuston mahdolliset medialinkit, seuraavan taulukon evästeitä seurataan myös selaimessa.
 

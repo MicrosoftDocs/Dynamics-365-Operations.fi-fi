@@ -13,12 +13,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06a56a694f7a80d65cb46d08744e78d8361cee3b
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 933efff1be545816504ab31f7a3135bf79996d7b8a50dac9fcc5b994e57a8965
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747958"
 ---
 # <a name="create-and-process-nonconformances"></a>Määrityksistä poikkeamisten luonti ja käsittely
 
