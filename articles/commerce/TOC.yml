@@ -256,7 +256,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS -arkkitehtuuri
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Verkkokauppakanavan julkaiseminen
+                - name: Verkkokaupan kuvaston julkaiseminen
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI -sisältö
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -1268,6 +1268,26 @@
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Sähköisen raportoinnin määritysten lataaminen Commerceen
+                  items:
+                    - name: 'Määritysten lataaminen RCS:stä'
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Konfiguraatioiden tuonti RCS:stä'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                - name: Yleinen tietovarasto (GR)
+                  items:
+                    - name: 'Konfiguraatioiden tuonti GR:stä'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
+                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Lataa konfiguraatiot GR-järjestelmään
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Määritysten jakaminen GR:ssä'
+                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
+                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Itävalta
               items:
                 - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
@@ -1315,6 +1335,12 @@
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-fra-cash-registers.md
                 - name: Kassakoneiden käyttöönotto-ohjeet
+                  href: localizations/emea-fra-fi-deployment.md
+                - name: Veroarkisto ja tietojen eheyden tarkistus
+                  href: localizations/emea-fra-fiscal-archive.md
+                - name: Siirtyminen Ranskan vanhoista toiminnoista
+                  href: localizations/emea-fra-fi-migration.md
+                - name: Kassakoneiden käyttöönotto-ohjeet (vanha)
                   href: localizations/emea-fra-deployment.md
             - name: Saksa
               items:
@@ -1350,9 +1376,11 @@
               items:
                 - name: Commercen lokalisointi – Venäjä
                   href: localizations/rus-commerce-localization.md
+                - name: 'Yksinkertaistettu asiakkaan osoitemuoto Commerce-myyntipisteessä, Venäjä'
+                  href: localizations/rus-simplified-address.md
                 - name: Commercen lokalisointi – Venäjä -määritys
                   href: localizations/rus-commerce-setup.md
-                - name: Ennakkomaksut Commerce for Russia -kaupassa
+                - name: Ennakkomaksut Commercessa – Venäjä
                   href: localizations/rus-commerce-prepayments.md
             - name: Ruotsi
               items:
@@ -1856,34 +1884,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Konfiguraatioiden tuonti LCS:stä'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Konfiguraatioiden lataaminen LCS:stä'
+                    - name: 'Määritysten lataaminen LCS:stä'
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfiguraatioiden tuonti (LBD)
+                    - name: Määritysten tuonti (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory service (RCS)
-                  items:
-                    - name: 'RCS:n globalisaatio-ominaisuudet'
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                    - name: Sähköisen raportoinnin konfiguraatioiden lataaminen Commerceen
-                      items:
-                        - name: 'Konfiguraatioiden lataaminen RCS:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Konfiguraatioiden tuonti RCS:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Yleinen tietovarasto (GR)
-                      items:
-                        - name: 'Konfiguraatioiden tuonti GR:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Lataa konfiguraatiot GR-järjestelmään
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Jaa kokoonpanot GR:ssä'
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Pika-aloitusoppaat
               items:
                 - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
@@ -2112,7 +2116,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: Avaa Excelissä -kokemusten luominen
+            - name: Avaa Excelissä -kokemusten usein kysytyt kysymykset
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: Mallien lisääminen Avaa-riveille Excelin valikossa
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -2360,6 +2364,8 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Azure Key Vaultin määrittäminen turvallista avaintenhallintaa varten
                       href: e-commerce-extensibility/set-up-key-vault.md
+                    - name: Pyynnön jakson liitännäiskoukun luominen
+                      href: e-commerce-extensibility/request-pipeline-hook.md
                 - name: Tietotoimintojen kehittäminen
                   items:
                     - name: Tietotoimintojen yleiskatsaus
@@ -2422,6 +2428,12 @@
                   items:
                     - name: Yhdistimien määrittäminen ja ottaminen käyttöön
                       href: e-commerce-extensibility/connectors.md
+                - name: Suorituskyky
+                  items:
+                    - name: Sivun välimuistiin tallentamisen määrittäminen
+                      href: e-commerce-extensibility/page-caching.md
+                    - name: Tietotoiminnon esiintymien välimuisti
+                      href: e-commerce-extensibility/instance-cache.md
                 - name: Telemetria ja analytiikka
                   items:
                     - name: Telemetrian kirjaustoiminto

@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sähköisen raportoinnin konfiguraatioiden lataaminen Supply Chain Managementiin
+                      items:
+                        - name: 'Määritysten lataaminen RCS:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Konfiguraatioiden tuonti RCS:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Yleinen tietovarasto (GR)
+                      items:
+                        - name: 'Konfiguraatioiden tuonti GR:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Lataa konfiguraatiot GR-järjestelmään
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: 'Määritysten jakaminen GR:ssä'
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköinen laskutus
                   items:
                     - name: Sähköisen laskutuksen yleiskatsaus
@@ -260,7 +280,7 @@
                       href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Verotoimintojen tuen määrittäminen
                       href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Tietokenttien lisääminen verokonfiguraatioihin
+                    - name: Tietokenttien lisääminen veromäärityksiin
                       href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tietokenttien lisääminen verointegrointiin laajennusten avulla
                       href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
@@ -1233,34 +1253,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Konfiguraatioiden tuonti LCS:stä'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Konfiguraatioiden lataaminen LCS:stä'
+                    - name: 'Määritysten lataaminen LCS:stä'
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfiguraatioiden tuonti (LBD)
+                    - name: Määritysten tuonti (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory service (RCS)
-                  items:
-                    - name: 'RCS:n globalisaatio-ominaisuudet'
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Sähköisen raportoinnin konfiguraatioiden lataaminen Supply Chain Managementiin
-                      items:
-                        - name: 'Konfiguraatioiden lataaminen RCS:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: 'Konfiguraatioiden tuonti RCS:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Yleinen tietovarasto (GR)
-                      items:
-                        - name: 'Konfiguraatioiden tuonti GR:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Lataa konfiguraatiot GR-järjestelmään
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: 'Jaa kokoonpanot GR:ssä'
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Pika-aloitusoppaat
               items:
                 - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
@@ -1574,7 +1570,19 @@
             - name: Arkiston varastotapahtumat
               href: inventory/archive-inventory-transactions.md
             - name: Varaston näkyvyyden apuohjelma
-              href: inventory/inventory-visibility.md
+              items:
+                - name: Varaston näkyvyyden apuohjelman yleiskatsaus
+                  href: inventory/inventory-visibility.md
+                - name: Varaston näkyvyyden apuohjelman määrittäminen
+                  href: inventory/inventory-visibility-setup.md
+                - name: Varaston näkyvyyden määrittäminen
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Varaston näkyvyyden varaukset
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Varaston näkyvyyden Power App
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Varaston näkyvyyden julkiset ohjelmointirajapinnat
+                  href: inventory/inventory-visibility-api.md
         - name: IoT-analyysi
           items:
             - name: IoT-analyysi – aloitussivu
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: Suunnittelun optimoinnin sopivuusanalyysi
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametrit, joita ei käytetä suunnittelun optimoinnissa'
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Suodattimien käyttäminen suunnitelmaan
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Avaa Excelissä -kokemusten luominen
+            - name: Avaa Excelissä -kokemusten usein kysytyt kysymykset
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Mallien lisääminen Avaa-riveille Excelin valikossa
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,8 +1985,6 @@
                   href: procurement/request-quotations.md
                 - name: Luo tarjouspyyntö
                   href: procurement/tasks/create-request-quotation.md
-                - name: Sinetöidyt tarjoukset tarjouspyyntöihin
-                  href: procurement/sealed-bidding.md
                 - name: 'Luo ehdotus, joka käyttää tarjouspyyntöä'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Luo tarjouspyyntöjen pisteytystapa
@@ -3301,6 +3309,8 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Varastosovelluksen asentaminen ja yhdistäminen
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Mobiililaitteiden viivakoodituki
+                      href: warehousing/mobile-barcode-support.md
                     - name: Viivakoodien lukeminen kameran avulla Warehouse Management -mobiilisovelluksessa
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Warehouse Management -mobiilisovelluksen yhteysongelmien vianmääritys
@@ -3311,6 +3321,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Varastotyön mobiililaitteiden määrittäminen
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Varastosovelluksen tapahtumakäsittely
                   href: warehousing/warehouse-app-events.md
-                - name: Varastosovelluksen mukauttaminen
+                - name: Varaston mobiililaiteprosessien laajennus
                   items:
                     - name: Prosessioppaan kehys
                       href: warehousing/process-guide-framework.md
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Mobiililaitteiden viivakoodituki
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1-viivakoodit ja QR-koodit
+                      href: warehousing/gs1-barcodes.md
                     - name: Siirtotilausten varaston määrittäminen
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Varaston määrityksen vianmääritys
